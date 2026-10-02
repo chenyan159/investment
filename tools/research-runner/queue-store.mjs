@@ -27,7 +27,7 @@ const TOKEN_COUNTER_KEYS = [
   "totalTokens",
 ];
 
-export const DEFAULT_REASONING_EFFORT = "high";
+export const DEFAULT_REASONING_EFFORT = "max";
 export const SUPPORTED_REASONING_EFFORTS = Object.freeze([
   "low",
   "medium",

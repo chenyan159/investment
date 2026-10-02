@@ -19,8 +19,8 @@ function baseItem(overrides = {}) {
   };
 }
 
-test("queue items default to high reasoning", () => {
-  assert.equal(normalizeQueueItem(baseItem()).reasoningEffort, "high");
+test("queue items default to max reasoning", () => {
+  assert.equal(normalizeQueueItem(baseItem()).reasoningEffort, "max");
 });
 
 test("reasoning aliases normalize and Sol-specific levels remain available", () => {

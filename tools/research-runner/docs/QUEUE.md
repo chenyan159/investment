@@ -15,7 +15,7 @@
 
 支持的状态：`pending`、`running`、`retry_pending`、`done`、`failed`。
 
-`reasoningEffort` 支持 `low`、`medium`、`high`、`xhigh`、`max` 和 `ultra`，缺省值为 `high`。完成记录包含累计 token 使用量和线程汇总；旧归档可能仍包含历史 `verification` 字段。
+`reasoningEffort` 支持 `low`、`medium`、`high`、`xhigh`、`max` 和 `ultra`，缺省值为 `max`。完成记录包含累计 token 使用量和线程汇总；旧归档可能仍包含历史 `verification` 字段。
 
 ## 查看和校验
 

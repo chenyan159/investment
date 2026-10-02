@@ -49,7 +49,7 @@ const LOG_RETENTION_RUNS = 50;
 const LOCK_PATH = path.join(TOOL_DIR, "runner.lock");
 const PROMPT_DEBUG_DIR = path.join(TOOL_DIR, "prompt-debug");
 
-const CODEX_MODEL = "gpt-6-astra";
+const CODEX_MODEL = "gpt-6.1-sol";
 const DEFAULT_TIMEOUT_MINUTES = 120;
 const DEFAULT_CLAIM_TIMEOUT_MINUTES = 15;
 const DEFAULT_MAX_ATTEMPTS = 7;
