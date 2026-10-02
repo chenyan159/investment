@@ -1,0 +1,609 @@
+# 行业调研：光DSP、TIA与CDR芯片——2026年1.6T放量、线性光学分流与CPO重构
+
+> **研究日期：**2026-07-10  
+> **信息快照：**公开资料截至 2026-07-10；金额均为美元。  
+> **研究对象：**数据中心短距 PAM4 光 DSP、相干/Coherent-lite DSP、跨阻放大器（TIA）、模块侧时钟数据恢复（CDR）及其向 LRO/LPO/CPO/NPO/光 I/O 的价值迁移。  
+> **核心口径：**市场规模只计算模块/光引擎内的 DSP、独立 TIA/配套模拟前端、离散 CDR，以及 CPO/NPO 中等价的电接口芯片价值；不把光模块整机、激光器、PIC、交换 ASIC、NIC 或主机侧 SerDes 重复相加。  
+> **证据等级：**A＝公司财报/订单/正式产品页/标准组织；B＝多家公司演示或权威行业机构交叉验证；C＝本文模型推导；U＝单一传闻，仅列观察名单、不进入基准预测。  
+> **项目内资料边界：**仅使用 `行业调研/产业背景/` 内资料及 `行业索引.md` 的目录映射；未读取、引用或继承公司调研、日度资料、特征量化及其他项目目录内容。
+
+## 一、结论先行：这是高增长行业，但并非“所有DSP/CDR都同样受益”
+
+### 1.1 一句话投资判断
+
+**2026—2027 年是高速光电芯片收入最快的两年之一：800G 全年扩量、1.6T 从验证转大批量、200G/lane TIA 进入供不应求区间，且 Rubin、MI450、Trainium3、Ironwood、MTIA 等平台同时提高网络端口密度。最好的长期资产不是单一旧式 CDR，而是能够跨越 FRO→LRO/LPO→CPO 的“高速 SerDes/DSP 算法 + TIA/Driver 模拟前端 + 固件遥测 + 客户验证”平台。**
+
+关键判断按确定性排序：
+
+1. **最确定的量：800G FRO 与 1.6T FRO。**LightCounting 在 2026 年 2 月更新中预计，2026 年 800G 模块出货再次增长一倍以上，1.6T 从小基数增至“数千万端口”，仅 1.6T 芯片组销售额就将超过 **20 亿美元**；完全重定时（FRO）仍是预测期内最大的美元增量来源。[LightCounting，2026-02-26](https://www.lightcounting.com/newsletter/en/february-2026-pam4-and-coherent-dsps-updated-april-2026-381)
+2. **最强的单位价值上移：100G/lane→200G/lane。**1.6T 模块通常从 8×100G/800G 走向 8×200G，DSP 转向 3/4/5nm、TIA 从约 56GBaud 升至约 112GBaud，FEC、ADC/DAC、DFE、遥测和系统级测试复杂度上升，早期 ASP 与毛利均高于成熟 800G。
+3. **最强的架构对冲：TIA。**FRO 需要 TIA，LRO/LPO 仍需要更高线性、更低噪声的 TIA，CPO/NPO/光 I/O 也需要接收模拟前端；DSP 会被线性光学或 CPO 分流，TIA 的 attach 更耐久。因此 **TIA 的长期量弹性优于离散 CDR，也比只押一种模块 DSP 架构更稳健**。
+4. **CDR 是结构分化而非全面高增长。**FRO 已把 CDR/均衡/FEC 集成进 DSP；LPO 把时钟恢复与均衡推回主机 ASIC；CPO 缩短电通道。独立 CDR 的高增长机会主要在旧速率替换、LRO/TRO/特定 AOC 与专用低延迟链路，而不是“每个 1.6T 模块新增一颗独立 CDR”。
+5. **CPO 已从路线图进入早期生产，但尚不能机械替代所有可插拔。**NVIDIA 于 2026-05-31 称 Spectrum-X Ethernet Photonics CPO 已在生产，CoreWeave、Lambda、OCI 为早期采用者；这对 2027 年价值分配意义很大，但 2026 年按端口仍是小比例。[NVIDIA，2026-05-31](https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory)
+6. **供应紧张是真实的。**上海剑桥科技 2026-06-04 的港交所公告称，800G/1.6T DSP、100/200G/lane 硅光芯片及 70–200mW CW 激光器均短缺，交期明显拉长且需要预付款锁产能，公司拟把约 **80%** 配售净额用于战略备货。这比渠道传闻更接近真实采购行为。[CIG 港交所公告，2026-06-04](https://www.hkexnews.hk/listedco/listconews/sehk/2026/0604/2026060402543.pdf)
+7. **真正的反证在 2027 ASP，不在 2026 订单。**2026 的订单和扩产已经很强；若 2027 激光、光模块、先进节点及测试产能同时释放，而网络拓扑变平、CPO/LPO 侵蚀 DSP attach，800G DSP ASP 可能下降 **15%–30%**，利润向新一代 1.6T/400G-lane、TIA 和 CPO 光 I/O 迁移。
+
+### 1.2 全行业信号链芯片市场三情景总表
+
+以下“3个月”指 **2026-07-10 至 2026-10-09 的累计销售额**；“1年”指未来 12 个月累计；“2年”指第 13—24 个月的年度化销售额，而非 24 个月累计。区间包含 PAM4、相干、TIA/CDR 和早期 CPO 电接口芯片，不含光模块整机。
+
+| 情景 | 未来3个月 | 未来1年 | 第2年年度化 | 第2年相对未来1年中值增长 | 核心假设 |
+|---|---:|---:|---:|---:|---|
+| **基准** | **$1.3–2.0B** | **$5.8–8.5B** | **$8.3–12.7B** | **约 +47%** | 800G 量增但 ASP 年降 10%–20%；1.6T 成为最大增量；LPO/LRO 温和渗透；CPO 2027 才形成可见份额 |
+| **乐观** | **$1.8–2.7B** | **$8.0–11.6B** | **$12.8–19.3B** | **约 +64%** | AI 网络端口量比行业原预测高 20%–35%；1.6T 认证提速；供给持续偏紧；CPO 增量大于对 FRO 的替代 |
+| **极度超预期乐观** | **$2.6–3.8B** | **$11.5–17.1B** | **$21.8–33.1B** | **约 +92%** | 百万 XPU 集群、光 scale-up 与多园区 scale-across 同时启动；1.6T/3.2T/CPO 供应不成为硬上限；行业仍能维持高端溢价 |
+
+**交叉验证：**TrendForce 预计 AI 光模块/CPO 整体市场从 2025 年 **$16.5B** 增至 2026 年 **$26B**、同比超过 **57%**；LightCounting 给出相同的 $26B 量级，并称 Top 5 云厂商的 AI 光学采购约占其 2026 CapEx 的 **3.1%**。本文基准模型对应信号链芯片约占 AI 光学整机收入的中十几至二十几个百分点，再加入非 AI/相干 DCI，量级可自洽。[TrendForce，2026-04-20](https://www.trendforce.com/presscenter/news/20260420-13017.html)；[LightCounting，2026-01](https://www.lightcounting.com/newsletter/en/january-2026-optics-for-ai-clusters-366)
+
+### 1.3 投资优先级
+
+| 优先级 | 子方向 | 2026–2027 判断 | 主要受益者 | 最大风险 |
+|---:|---|---|---|---|
+| 1 | **1.6T 200G/lane PAM4 DSP** | 2026H2—2027 主放量；单位价值与毛利最高 | Marvell、Broadcom、Cisco/Acacia、MaxLinear、Credo | CPO/LPO 提前、客户双供压价、3nm/4nm良率 |
+| 2 | **200G/lane TIA/Driver 模拟前端** | 跨 FRO/LRO/LPO/CPO，最强架构对冲 | Marvell、Semtech、MACOM、MaxLinear、Coherent、Broadcom | 模块厂自研/垂直整合、SiGe 同质化、封装寄生 |
+| 3 | **CPO/NPO/光 I/O 电接口芯片** | 2026 初产、2027–2028 高弹性 | NVIDIA/Broadcom、Marvell/Celestial AI、Credo/DustPhotonics、Cisco/Acacia、Ayar Labs、Ranovus | 现场可靠性、可维护性、外置激光与良率 |
+| 4 | **800G FRO DSP** | 量仍大、现金流强，但 2027 ASP/份额承压 | Marvell、Broadcom、MaxLinear、Cisco/Acacia | 800G 峰值、LPO 替代、库存 |
+| 5 | **800G/1.6T coherent 与 coherent-lite DSP** | 多园区训练和 DCI 拉动，2027 开始加速 | Marvell、Cisco/Acacia、Ciena、Nokia、ZTE | 功耗、标准、成本、客户自有线路架构 |
+| 6 | **离散 CDR** | 稳定但不是最强 AI beta；新价值更多被 DSP/SerDes 集成 | Semtech、Renesas、MACOM及集成式 DSP 厂 | LPO 将 CDR 移至主机、功能被整合、旧速率 ASP 下降 |
+
+## 二、技术与价值链：DSP、TIA、CDR各自做什么
+
+### 2.1 一条高速光链路的功能分工
+
+**发送侧：**主机/交换 ASIC SerDes →（可选 CDR/重定时）→ DSP/gearbox/FEC/均衡 → Driver → EML/SiPho/TFLN/VCSEL。  
+**接收侧：**PD → TIA →（可选 CDR 或 DSP 的 ADC/均衡/FEC/重定时）→ 主机 SerDes。
+
+- **光 DSP：**补偿电/光通道损伤，完成 PAM4 均衡、ADC/DAC、FEC、gearbox、时钟恢复、诊断和遥测。优点是互操作、良率与距离裕量高；缺点是约占高端模块功耗和成本的大头。
+- **TIA：**把光电二极管的微弱电流转换成电压并放大。核心指标是带宽、输入噪声、线性度、动态范围、群时延、功耗、通道间串扰及 PD 共封装寄生。速率越高，TIA 越难被“普通模拟芯片”替代。
+- **CDR：**从数据流恢复时钟并重采样，抑制抖动、重置链路预算。现代 FRO 中它通常是 DSP/SerDes 的一部分；只有部分低功耗 CDR-only、旧速率或特定 LRO/TRO/AOC 仍形成独立芯片。
+
+### 2.2 五种架构对三类芯片的影响
+
+| 架构 | 模块内 DSP | 模块内 TIA | 模块内 CDR | 功耗/成本 | 2026 状态 | 对本行业的净影响 |
+|---|---|---|---|---|---|---|
+| **FRO 全重定时** | Tx+Rx 完整 DSP/FEC | 必需 | 集成在 DSP | 最高，但最稳健 | 800G 主流；1.6T 大批量起步 | DSP 与 TIA 同时受益；独立 CDR 价值小 |
+| **LRO/TRO 半重定时** | 仅发送侧 DSP/retimer；接收线性 | 必需，线性要求更高 | Tx 侧功能集成，Rx 侧推至主机 | 比 FRO 低约一档 | 2026 采样/早期量产 | DSP attach/价值约减半，TIA 价值不降反升 |
+| **LPO 全线性可插拔** | 无 | 必需且指标最严 | 无，推至主机 ASIC | 可比 FRO 降功耗/成本约 30%–60%，但系统调试难 | 800G 已有部署；1.6T 互通加速 | 侵蚀模块 DSP/CDR，显著增加高性能 TIA/Driver 价值 |
+| **CPO/NPO/光 I/O** | 模块 DSP 被交换 ASIC/短距电接口或光引擎内处理取代 | 必需，趋向 chiplet/共封装 | 多在主机/光引擎内集成 | 最低 pJ/bit 潜力；可维护性最难 | 2026 初产 | 侵蚀独立 DSP/CDR，催生 TIA/Driver/控制器和光 I/O 芯片新 TAM |
+| **相干/ZR/ZR+/coherent-lite** | 高复杂度相干 DSP | 差分 TIA/ICR 前端 | 集成在相干 DSP | 单位价值最高，距离 20–1000km+ | 400/800G 放量；1.6T 采样 | 多园区 AI 提高高价值 DSP/TIA 需求 |
+
+Nokia 对架构的定义可用于校准：LRO 只保留 Tx 重定时，Rx 线性并把均衡/时钟恢复交给主机；LPO 的 Tx/Rx 均无模块重定时。[Nokia，2026-03](https://www.nokia.com/blog/evolving-pluggable-optics-to-reduce-power-consumption/)
+
+### 2.3 为什么 200G/lane 是 2026 的核心，而 400G/lane 仍是前瞻
+
+- 1.6T 标准主路径是 **8×200G 电接口 + 8×200G 光接口**，所需 224G-class SerDes 与约 112GBaud PAM4 模拟前端已在 OFC 2026 完成广泛多厂商互通。
+- 2025 年 12 月首轮 224G plugfest 的全组合链路建立成功率约 **90%**，说明已从“能否工作”转向“怎样提高良率、裕量和现场可靠性”。[Ethernet Alliance，2026-03-31](https://ethernetalliance.org/blog/2026/03/31/from-plugfest-to-progress-key-lessons-from-the-2025-hsn-plugfest/)
+- 但 IEEE P802.3dj 在 2026-06 才进入 D3.1 首次 SA 再循环投票；量产先于最终标准，固件/FEC/互通仍可能返工。[IEEE 802.3 ballot status](https://www.ieee802.org/3/ballots/announce.html)
+- 400G/lane 在 2026 年仍处于 IEEE Study Group 和早期器件阶段。Broadcom Taurus 已把 8×200G 电接口 gearbox 成 4×400G 光接口，适合 1.6T DR4/FR4；但真正 3.2T 的 8×400G 电接口、连接器、FEC、光学、测试和 204.8T switch 生态更可能在 2028 前后规模化。[Broadcom Taurus 产品说明](https://docs.broadcom.com/doc/83640-DIE-PB)；[IEEE 400G/lane Study Group，2026-05](https://www.ieee802.org/3/400GPL/public/2605/index.html)
+
+## 三、AI芯片路径映射：为什么2026—2027网络端口需求不是线性增长
+
+### 3.1 项目内头部AI芯片基准
+
+本节芯片数量、代际与系统路径仅来自获准的项目内产业背景资料：[《头部AI芯片全景与2026/2027产能释放》](../产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md)。外部搜索只用于验证光互联芯片与网络端产品，不用于重建这份 Top AI 芯片排名。
+
+| 2026+2027Q1绑定价值序位 | AI芯片/平台 | 项目内2026出货当量 | 主要互联路径 | 对光DSP/TIA/CDR的含义 |
+|---:|---|---:|---|---|
+| 1 | NVIDIA B200/GB200 | 2.4–3.9m GPU | NVLink 铜 scale-up；400/800G、部分1.6T scale-out | 800G FRO 的最大存量驱动，1.6T 在交换侧开始导入 |
+| 2 | NVIDIA B300/GB300 | 1.6–3.0m | NVLink5 + 800G/1.6T 光 scale-out | 2026H2 同时拉动 800G 与 1.6T；高带宽端口更重视 DSP 可靠性 |
+| 3 | NVIDIA Rubin/Vera Rubin | 0.35–0.75m（2026） | ConnectX-9 1.6Tb/s/GPU；Spectrum-X 200G SerDes/CPO | 2027 最大增量；1.6T、200G TIA、CPO 均受益，传统模块 DSP share 被分流 |
+| 4 | NVIDIA H100/H200 | 0.8–1.5m | 400G/800G；成熟可插拔 | 旧代 400/800G DSP 现金流，ASP/数量逐步转弱 |
+| 5 | AMD MI450/MI455X、Helios | 0.25–0.65m | UALink/Infinity Fabric + 开放以太网；800G/1.6T | 增加非 NVIDIA 1.6T 需求，利好开放、多供应商 DSP/TIA |
+| 6 | AWS Trainium3 | 0.6–1.7m | NeuronLink scale-up + EFA/以太网 scale-out | 自研 ASIC 颗数高、单位平台价低，但端口节点多，利好 800G/1.6T 芯片组 |
+| 7 | Google Ironwood TPU7 | 0.8–2.0m | ICI + OCS + 800G/1.6T scale-out | OCS 可能减少中间 O/E/O，却提高高速端口与可靠性要求 |
+| 8 | Huawei Ascend 910C/Atlas900 | 0.5–1.2m 卡当量 | HCCS/超节点 + 国产400/800G光互联 | 中国 DSP/TIA 国产替代需求强，但高端供应与良率限制上限 |
+| 9 | AWS Trainium2 | 0.6–1.4m | NeuronLink/EFA；400/800G | 2026 仍贡献量，随后被 Trainium3 替换 |
+| 10 | AMD MI350/MI355X | 0.3–0.8m | Infinity Fabric + Ethernet/IB；400/800G | 成熟 800G 需求，1.6T 由下一代 Helios 接棒 |
+| 观察 | Google TPU8t/8i、Meta MTIA300/400 | 0.1–0.45m；0.6–1.8m | 超大 pod/以太网/光互联 | 2027 端口数上行期权；按颗数比按芯片美元更重要 |
+
+### 3.2 网络乘数
+
+项目内背景估计，大型 scale-out 集群每颗加速器等效 **1.5–3.0 个高速 optical endpoint**；这不是每颗 GPU 直接插 1.5–3 个模块，而是计入链路两端、多层 Clos、冗余和交换层级后的端点等效数。[《AI数据中心建设规模与产业链订单映射》](../产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+
+本文进一步采用以下增量因子：
+
+- **带宽代际：**Hopper 400/800G → Blackwell 800G → Rubin 1.6T，每 XPU 外部带宽约提高 1.5–2×；NVIDIA 官方明确 ConnectX-9 在 Rubin NVL72 中为每 GPU 提供 **1.6Tb/s** 网络带宽。[NVIDIA 技术说明](https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/)
+- **ASIC 颗数：**Trainium/TPU/MTIA 的芯片单位成本低于 GPU，但按颗数与网络节点可能更高，因此光芯片需求不应只跟 NVIDIA 收入线性挂钩。
+- **拓扑抵消：**OCS、网络扁平化、rack 内铜缆与 CPO 可减少部分可插拔模块；本文在基准情景中对“端口按算力线性增长”打 **0.65–0.85×** 折扣。
+- **scale-across 增量：**园区电力受限、AI 训练跨楼宇/跨园区，使 20km coherent-lite 与 800/1600ZR 需求从 2027 起提高；该部分不是传统 500m–2km PAM4 的简单替代。
+
+### 3.3 2026最可能的技术路径
+
+| 概率排序 | 2026路径 | 年内状态判断 | 原因 |
+|---:|---|---|---|
+| 1 | **800G 100G/lane FRO** | 最大出货量和成熟现金流 | 已有大规模供应链、模块认证与现场数据；2026 出货仍翻倍级增长 |
+| 2 | **1.6T 8×200G FRO** | 最快收入增量，H2 大幅爬坡 | Marvell Ara 已称大批量出货；AOI 获 >$200M 量产订单；102.4T switch 可订购 |
+| 3 | **1.6T LRO/TRO** | 采样到早期量产 | 在降低功耗和保留 Tx 信号完整性之间折中，较 LPO 更容易先过客户认证 |
+| 4 | **800G/1.6T LPO** | 受控网络/单一客户域扩大 | 省 DSP 功耗/成本，但主机 SerDes、链路训练、反射与多厂商互通更难 |
+| 5 | **Spectrum-X/Broadcom 等 CPO** | 初始生产，端口份额仍低 | 技术已进生产，不再是纯 demo；但 field repair、外置激光、光纤布线和良率仍待验证 |
+| 6 | **400G/lane IMDD / 1.6T DR4** | 样品与早期客户设计 | 可减少光 lane 数，Broadcom Taurus 已可用；但标准和 400G 光学/测试仍早期 |
+| 7 | **3.2T 8×400G** | 研发/互通前期 | 400G/lane 电接口生态与 204.8T switch 尚未成熟，不是 2026 主出货路线 |
+
+## 四、已经开始放量的关键产品：规模、渗透率、增长与利润率
+
+### 4.1 量产/早期量产产品与一手证据
+
+| 细分 | 已放量/进入生产的产品 | 公司证据 | 2026阶段判断 |
+|---|---|---|---|
+| 800G PAM4 DSP | Spica Gen2、Keystone、Sian2/Sian2M、Acacia 800G平台 | Marvell 早已量产；MaxLinear 称 Keystone 已出货数百万颗；Broadcom 200G VCSEL 已有 5000万+ channel 现场基础 | 大规模量产，2026 仍是出货主力 |
+| 1.6T 200G/lane FRO DSP | Marvell Ara/Nova、Broadcom Sian3、Acacia Kibo；Rushmore/Cardinal 开始客户导入 | Marvell 称 Ara 已面向全球客户大批量出货；Broadcom Sian3 自 2025Q3 爬坡；Kibo 为 3nm 1.6T；Rushmore/Cardinal 为采样/商业导入 | Marvell/Broadcom 先发，Acacia/MaxLinear/Credo 扩大多供 |
+| 1.6T TIA/Driver | Marvell IN11264/CB11269、LPO chipset；Semtech GN183x/GN18xx；MACOM 200G/lane；Coherent CHR1074；MaxLinear Washington | Semtech 称 FiberEdge 1.6T 收入已开始叠加；Marvell LPO TIA/driver 已 GA；Washington 计划 2026H2 量产 | 200G/lane 模拟前端是 2026 硬瓶颈之一 |
+| LRO/TRO | Marvell Ara T、Acacia Kibo TRO、Credo Cardinal LRO、MaxLinear Rushmore LRO | 多厂 OFC 互通，产品已采样；Cardinal LRO 目标模块功耗 <15W | 早期量产，2027 才是主要放量年 |
+| 800G/1.6T LPO | Marvell LPO TIA/driver、Semtech DirectEdge、MACOM PURE DRIVE、模块厂 LPO | 1.6T LPO 现场演示，OIF/LPO MSA 工作持续；受控客户已有部署 | 量不如 FRO，但模拟 IC 收入已形成 |
+| 离散 CDR/CDR+TIA | Semtech Tri-Edge GN255x、ClearEdge；Renesas/MACOM 等旧速率产品 | Semtech 产品页显示 200/400G PAM4 CDR 与 10/25/100G NRZ CDR 长期供货 | 成熟、稳定，AI 增量弱于 DSP/TIA |
+| 400/800G coherent DSP | Marvell Orion/Canopus/Deneb、Cisco/Acacia、Ciena WaveLogic、Nokia PSE/ICE-X | 800ZR/ZR+ 已商业部署；LightCounting 称 2025 相干 chipset 销售增长约16% | 稳步放量，scale-across 提供上行 |
+| CPO 200G/lane 光引擎电接口 | NVIDIA Spectrum-X Ethernet Photonics、Broadcom TH6 CPO | NVIDIA 称“now in production”；Broadcom 在 OFC 2026 展示 102.4T CPO | 生产起步，尚未形成可插拔同等级端口量 |
+
+主要产品来源：[Marvell 1.6T 平台，2026-03-12](https://www.marvell.com/company/newsroom/marvell-1-6t-optical-dsp-ai-data-center-connectivity.html)；[Broadcom Sian3/Sian2M](https://investors.broadcom.com/news-releases/news-release-details/broadcom-extends-200glane-dsp-phy-leadership-next-generation-ai)；[Acacia Kibo](https://acacia-inc.com/product/pam4-dsp-product/)；[MaxLinear Rushmore](https://investors.maxlinear.com/press-releases/detail/602/maxlinear-to-showcase-nextgeneration-1-6t-rushmore-dsp)；[Credo Cardinal](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Introduces-Cardinal-A-LowPower-1-6T-Optical-DSP-Family-Engineered-for-MassiveScale-AI-Fabrics/default.aspx)；[Semtech 224G IC](https://www.semtech.com/company/press/semtech-launches-224-gbps-ic-family-for-linear-optics-era)。
+
+### 4.2 分产品市场规模三情景
+
+单位：十亿美元。每格依次为 **基准 / 乐观 / 极度超预期乐观**。FRO 行只计 DSP；TIA 行只计可插拔中的独立 TIA/配套模拟前端；CPO 行计共封装光引擎中的等价模拟/接口芯片，避免重复。
+
+| 产品/细分 | 未来3个月 | 未来1年 | 第2年年度化 | 基准渗透路径与增长解释 |
+|---|---:|---:|---:|---|
+| 400/800G FRO PAM4 DSP | 0.45–0.60 / 0.58–0.78 / 0.75–1.05 | 1.70–2.20 / 2.10–2.80 / 2.80–3.80 | 1.40–2.00 / 1.90–2.70 / 2.80–4.20 | 模块量仍增，DSP ASP 年降 12%–25%，收入在基准下趋平/回落 |
+| 1.6T 200G/lane FRO DSP | 0.35–0.55 / 0.50–0.75 / 0.70–1.00 | 1.70–2.40 / 2.40–3.40 / 3.30–4.80 | 2.80–4.00 / 4.20–5.80 / 6.50–9.00 | 1.6T 在高速端口中的份额由约25%–35%升至60%–72%，ASP 高于 800G |
+| LRO/TRO发送侧DSP/gearbox | 0.08–0.13 / 0.12–0.19 / 0.18–0.28 | 0.35–0.60 / 0.55–0.90 / 0.90–1.50 | 0.75–1.25 / 1.30–2.20 / 2.40–4.00 | 功耗折中路线；从低个位数份额升至约12%–25% |
+| 可插拔 TIA/配套模拟前端 | 0.22–0.32 / 0.30–0.42 / 0.42–0.60 | 0.95–1.35 / 1.30–1.80 / 1.80–2.60 | 1.35–1.95 / 2.10–2.90 / 3.50–5.20 | FRO/LRO/LPO 均 attach；200G/lane ASP 和 lane 数抵消年度降价 |
+| 离散 CDR/CDR+TIA combo | 0.05–0.08 / 0.06–0.10 / 0.08–0.14 | 0.18–0.30 / 0.24–0.40 / 0.35–0.60 | 0.18–0.32 / 0.30–0.50 / 0.55–0.90 | 旧速率衰退与专用低延迟增量互抵；不跟 1.6T 总端口一比一增长 |
+| 400/800G coherent DSP/前端 | 0.15–0.25 / 0.20–0.32 / 0.30–0.45 | 0.70–1.10 / 1.00–1.50 / 1.50–2.30 | 1.05–1.65 / 1.60–2.40 / 2.50–3.80 | 800ZR/ZR+ 量产，多园区 AI 增加端口；高 ASP、低单位数百万颗量级 |
+| CPO/NPO/光I/O电接口芯片 | 0.04–0.10 / 0.08–0.16 / 0.15–0.28 | 0.22–0.50 / 0.40–0.80 / 0.80–1.50 | 0.75–1.50 / 1.40–2.80 / 3.50–6.00 | 2026 初产；基准 2028 前端口等效份额 8%–15%，极度乐观达25%–40% |
+| **合计** | **1.34–2.03 / 1.84–2.72 / 2.58–3.80** | **5.80–8.45 / 7.99–11.60 / 11.45–17.10** | **8.28–12.67 / 12.80–19.30 / 21.75–33.10** | 与总表四舍五入一致；均为逐行加总 |
+
+### 4.3 渗透率路径
+
+| 指标 | 基准：3月/1年/2年 | 乐观：3月/1年/2年 | 极度乐观：3月/1年/2年 |
+|---|---|---|---|
+| 1.6T 占 ≥800G 高速模块端口 | 25%–35% / 40%–55% / 60%–72% | 35%–45% / 55%–68% / 72%–82% | 45%–55% / 65%–78% / 80%–90% |
+| FRO DSP attach，占高速可插拔 | 82%–90% / 70%–82% / 50%–65% | 78%–88% / 62%–75% / 38%–55% | 70%–82% / 50%–65% / 25%–40% |
+| LRO/LPO，占高速可插拔 | 8%–15% / 15%–25% / 25%–38% | 12%–20% / 22%–35% / 35%–50% | 18%–28% / 32%–48% / 45%–65% |
+| CPO/NPO，占高速端口等效数 | 1%–3% / 3%–7% / 8%–15% | 2%–5% / 5%–12% / 15%–25% | 4%–8% / 10%–20% / 25%–40% |
+| 400G optical lane，占1.6T端口 | <1% / 2%–5% / 8%–15% | 1%–3% / 5%–10% / 15%–25% | 3%–6% / 10%–20% / 25%–40% |
+| coherent/coherent-lite，占2–20km园区链接 | 1%–3% / 5%–10% / 12%–20% | 2%–5% / 8%–15% / 18%–30% | 4%–8% / 15%–25% / 30%–45% |
+
+### 4.4 产品级利润率三情景
+
+公司通常不披露单品利润率，以下为 **产品毛利率模型**；“当前”用 2026 最新公司非 GAAP 毛利作边界校验：Marvell **58.9%**、Credo **68.3%**、MaxLinear **59.5%**、MACOM **58.5%**、Semtech **53.0%**。Broadcom 含软件，不适合作单纯芯片比较；Coherent 的垂直光学/模块组合毛利约 **39.6%**，也低于纯 IC。[Marvell Q1FY27](https://investor.marvell.com/news-events/press-releases/detail/1023/marvell-technology-inc-reports-first-quarter-of-fiscal-year-2027-financial-results)；[Credo FY26Q4](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Financial-Results/default.aspx)；[MaxLinear 2026Q1](https://investors.maxlinear.com/press-releases/detail/607/maxlinear-inc-announces-first-quarter-2026-financial)；[MACOM FY26Q2](https://ir.macom.com/news-releases/news-release-details/macom-reports-fiscal-second-quarter-2026-financial-results)；[Semtech FY27Q1](https://investors.semtech.com/news/semtech-announces-first-quarter-of-fiscal-year-2027-results/0634b869-19f6-4e90-9a0b-110fecf1d2db)。
+
+| 产品 | 当前估算毛利 | 基准 / 乐观 / 极度乐观未来12月毛利 | 成熟后产品EBIT率 | 定价逻辑 |
+|---|---:|---:|---:|---|
+| 800G FRO DSP | 58%–68% | 55%–65% / 62%–72% / 68%–78% | 18%–32% | 量大但年度 price-down；固件与认证保护份额 |
+| 1.6T FRO DSP | 62%–75% | 58%–70% / 67%–78% / 74%–84% | 22%–40% | 先进节点、FEC/SerDes、供给与 qualification 溢价；早期可比 800G 高 5–12ppt |
+| LRO/TRO DSP | 60%–72% | 58%–69% / 65%–75% / 72%–82% | 20%–36% | 少通道/低功耗但需系统级 co-design；价值低于 FRO、毛利未必低 |
+| 200G/lane TIA/Driver | 50%–65% | 50%–62% / 58%–70% / 65%–76% | 15%–30% | 带宽、噪声、寄生、PD pitch 和封装共设计形成差异；短缺时溢价强 |
+| 离散 CDR | 52%–66% | 48%–60% / 55%–66% / 60%–72% | 12%–25% | 成熟 IP/客户锁定，但功能整合与旧速率降价压制上限 |
+| coherent DSP | 60%–76% | 58%–72% / 66%–78% / 73%–84% | 22%–40% | 复杂算法、PCS/FEC、功耗与系统互通壁垒最高，单位售价高 |
+| CPO/光I/O芯片 | 35%–55%（初产） | 45%–60% / 55%–68% / 62%–76% | 初期可亏损，规模后18%–35% | 初期良率/NRE 压毛利；一旦进入 XPU/switch package，切换成本和平台绑定极高 |
+
+**重要限制：**小型公司即使单颗毛利高，也可能因 3/4nm NRE、软件团队、验证和 stock compensation 而保持负营业利润；不能把“产品毛利 70%”直接等同“公司净利 70%”。
+
+## 五、在研与即将快速增长的关键产品
+
+### 5.1 成熟与放量时间三情景
+
+| 技术/产品 | 2026-07状态 | 基准成熟/放量 | 乐观 | 极度超预期乐观 | 关键证据或门槛 |
+|---|---|---|---|---|---|
+| 1.6T 3/4nm 200G/lane DSP 多供 | Marvell/Broadcom量产；Acacia/MaxLinear/Credo导入 | 2026H2成熟，2027全年量 | 2026Q3多家大批量 | 2026Q3即持续供不应求 | 102.4T switch、AOI订单、Ara量产、Sian3 ramp |
+| 1.6T LRO/TRO | Ara T/Cardinal/Kibo/Rushmore采样 | 2027H1放量 | 2026Q4规模导入 | 2026Q3受功耗约束快速替代FRO | Tx DSP 与 host Rx 互通、现场 BER、诊断能力 |
+| 1.6T 224G LPO | 多厂演示；CEI-224G-Linear仍在OIF current work | 2027H2受控放量 | 2027H1 | 2026Q4单一 hyperscaler 大规模部署 | 主机 SerDes 裕量、反射/串扰、链路训练、可换模块 |
+| 400G/lane 1.6T DR4 | Broadcom Taurus可用，MACOM/Lumentum/Coherent有400G光器件演示 | 2027H2小规模，2028量产 | 2027H1 | 2026Q4早期项目 | 400G EML/TFLN/SiPho、PD/TIA、FEC和测试 |
+| 3.2T 8×400G | 400G/lane Study Group/部件演示 | 2028H2–2029 | 2028H1 | 2027H2 | 204.8T switch、400G电接口、连接器和热设计 |
+| 1.6T 2nm coherent ZR/ZR+ | Marvell Electra/Libra计划2026H2采样 | 2027H2量产 | 2027H1 | 2026Q4小批 | 1600ZR/ZR+ IA、32–40W功耗、IC-TROSA/测试 |
+| 1.6T coherent-lite 2–20km | Aquila/Aquila M采样 | 2027H1–H2 | 2026Q4 | 2026Q3重点园区 | O-band色散/链路预算、成本必须优于完整coherent |
+| CPO/NPO交换侧 | NVIDIA已生产，Broadcom等平台展示 | 2027形成可见份额，2028扩大 | 2026H2多个客户 | 2026Q3百万XPU项目启动 | field reliability、外置激光、光纤维护、package yield |
+| XPU/内存光I/O chiplet | Celestial AI并入Marvell；Ayar/Ranovus等导入 | 2027H2初收入，2028规模 | 2027H1 | 2026Q4特定XPU | Marvell预计 FY2028H2 才有初始收入，最强约束是客户封装周期 |
+
+Marvell 对 Celestial AI 的正式财务预期是：初始收入在其 FY2028 下半年出现，FY2028Q4 达约 **$500M 年化**，FY2029Q4 目标约 **$1B 年化**；这为“光 I/O 在 2027H2 才进入显著收入”提供了少见的一手时间锚。[Marvell/Celestial AI](https://investor.marvell.com/news-events/press-releases/detail/1000/marvell-to-acquire-celestial-ai-accelerating-scale-up-connectivity-for-next-generation-data-centers)
+
+### 5.2 在研产品市场规模
+
+下表是对应技术的**子集收入**，已包含在第四章总市场中，不可再次相加。每格为基准 / 乐观 / 极度超预期乐观，单位十亿美元。
+
+| 在研子方向 | 未来3个月 | 未来1年 | 第2年年度化 | 利润率路径 |
+|---|---:|---:|---:|---|
+| 400G/lane IMDD DSP+driver（先1.6T DR4，后3.2T） | 0.01–0.04 / 0.03–0.08 / 0.08–0.18 | 0.10–0.30 / 0.25–0.60 / 0.70–1.30 | 0.60–1.40 / 1.30–2.50 / 3.00–5.50 | 初期 35%–55%，认证后 60%–75%；先发可有高溢价但良率风险大 |
+| 1.6T 2nm coherent ZR/ZR+ DSP | <0.02 / 0.02–0.05 / 0.05–0.10 | 0.10–0.30 / 0.25–0.55 / 0.60–1.10 | 0.55–1.20 / 1.10–2.00 / 2.20–3.80 | 量产后 65%–80%，但 2nm NRE/封装/高速测试推高盈亏平衡点 |
+| 1.6T coherent-lite DSP | <0.01 / 0.01–0.03 / 0.03–0.07 | 0.05–0.18 / 0.15–0.35 / 0.35–0.75 | 0.30–0.80 / 0.70–1.30 / 1.50–2.50 | 55%–72%；能否形成“低成本20km”品类决定定价 |
+| 224G线性TIA/Driver（LPO/LRO/NPO/CPO） | 0.08–0.16 / 0.13–0.25 / 0.22–0.40 | 0.35–0.75 / 0.65–1.15 / 1.20–2.00 | 0.85–1.60 / 1.50–2.70 / 3.00–4.80 | 早期 50%–65%，紧缺/客户定制可达 65%–75% |
+| 448G TIA/Driver 与3.2T前端 | <0.01 / <0.02 / 0.02–0.05 | 0.02–0.08 / 0.06–0.18 / 0.20–0.50 | 0.20–0.60 / 0.50–1.20 / 1.40–2.80 | 量很小、单价高；2027 前营业利润大概率为负 |
+| CPO/NPO/光I/O模拟与接口芯片 | 0.04–0.10 / 0.08–0.16 / 0.15–0.28 | 0.22–0.50 / 0.40–0.80 / 0.80–1.50 | 0.75–1.50 / 1.40–2.80 / 3.50–6.00 | 初期 yield/NRE 压制；客户 package 锁定后长期 ROIC 可能最高 |
+
+### 5.3 2026—2028技术迁移图
+
+```text
+2026主收入：800G FRO ───────────────┐
+                 1.6T FRO快速爬坡 ├─→ 2027主收入：1.6T FRO + LRO/LPO
+                 200G TIA全面受益 ┘                 │
+                                                    ├─→ 2028：1.6T/3.2T + CPO/NPO/光I/O并行
+2026早期：Spectrum-X CPO、400G/lane样品 ────────────┘
+
+独立CDR：旧速率稳定/下降 → 功能并入DSP或主机SerDes → 仅特定低延迟/半重定时应用保留增长
+```
+
+## 六、供给侧：地区、公司、工艺、瓶颈与成本
+
+### 6.1 产能结构
+
+| 环节 | 主要地区 | 主要公司/工艺 | 集中度与判断 |
+|---|---|---|---|
+| 高端 PAM4/相干 DSP 设计 | 美国为主，欧洲/中国补充 | Broadcom、Marvell、Cisco/Acacia、MaxLinear、Credo；Ciena/Nokia；ZTE/Huawei/OrangeCore | 算法、SerDes、FEC、firmware 高度集中；全球可做 1.6T 全功能 DSP 的公司为个位数 |
+| DSP 晶圆 | 台湾、韩国为主 | 3/4/5nm CMOS；TSMC 为主要先进 foundry，MaxLinear Rushmore 明确采用 Samsung 技术 | 先进节点与 mask/NRE 是小公司最大门槛；Rushmore 提供难得的 foundry 二供 |
+| TIA/Driver 晶圆 | 美国、欧洲、台湾/亚洲 | SiGe BiCMOS、先进 CMOS、SOI/专有硅工艺；MaxLinear Washington 明确为 SiGe；MACOM/Coherent 有内部/专有工艺能力 | 节点不必最先进，但模拟模型、低噪声、带宽和高良率更重要 |
+| 光电器件 | 美国、中国、英国/欧洲、日本 | Coherent、Lumentum、Broadcom、MACOM、Semtech/HieFo、Sumitomo、Mitsubishi、Source Photonics 等；InP/GaAs/SiPho/TFLN | 激光/PD不是本报告收入范围，却决定 TIA/DSP 能否转成模块出货 |
+| 封装与测试 | 台湾、中国、马来西亚、新加坡、泰国、美国 | ASE、Amkor、SPIL、KYEC、TSMC backend、Fabrinet、模块厂自有线 | 高速裸 die、flip-chip、PD-TIA贴装、光耦合、老化和 BER 测试构成真实瓶颈 |
+| 模块系统集成 | 中国、泰国、马来西亚、美国/墨西哥 | Innolight、Eoptolink、Coherent、Lumentum/Cloud Light、Fabrinet、AOI、CIG、Accelink、Hisense、Source Photonics | 模块厂集中采购 DSP/TIA，客户认证与备货行为决定芯片厂季度波动 |
+
+Marvell 最新 10-Q 显示，其多数产品由台湾 foundry 制造，其他来源在中国、德国、韩国、新加坡和美国；多数 assembly/test 位于中国、马来西亚、新加坡、台湾和加拿大，并签有 **4–10年** 产能预留安排。[Marvell 10-Q，2026-05-02](https://www.sec.gov/Archives/edgar/data/1835632/000183563226000019/mrvl-20260502.htm) Broadcom 也披露多数前道外包给 TSMC，assembly/test 使用 TSMC、ASE、Foxconn、Amkor、SPIL 等，同时保留 GaAs/InP 激光等专有内部产线。[Broadcom 年报](https://www.sec.gov/Archives/edgar/data/1730168/000119312525044131/d886393dars.pdf)
+
+### 6.2 供给瓶颈：至少十条
+
+1. **3/4nm wafer、mask 和 NRE。**一颗 1.6T DSP 的全套设计、IP、mask、验证和固件投入可达 **$100M–300M** 模型区间；若年销量不足百万颗，NRE 摊销迅速侵蚀毛利。先进节点排产还与 XPU、NIC、switch ASIC 竞争。
+2. **200G/lane TIA 的带宽—噪声—线性三角。**约 112GBaud 下，TIA 要同时保持低输入噪声、高饱和、平坦群时延、AGC/RSSI 和低功耗；PD-TIA bump、走线和封装寄生足以让“单芯片测试合格”变成“模块失败”。
+3. **ADC/DAC、FEC 与功耗。**FRO DSP 在 1.6T 模块 20–25W 的热预算内完成八通道 224G；Broadcom Sian3 的目标为 sub-23W 1.6T，MaxLinear Rushmore 为 sub-25W，功耗超标会直接导致模块或交换机降密度。
+4. **激光/PD 与 InP 供给。**TrendForce 指出 EML、CW laser 和高精度光对准是扩产主要瓶颈；NVIDIA 分别向 Coherent 和 Lumentum 投资 **$2B** 并附带多年、数十亿美元级采购/产能权利，反向证明光源供给的战略性。[NVIDIA–Coherent](https://www.coherent.com/news/press-releases/nvidia-and-coherent-announce-strategic-partnership)；[NVIDIA–Lumentum](https://investor.lumentum.com/financial-news-releases/news-details/2026/NVIDIA-Announces-Strategic-Partnership-With-Lumentum-to-Develop-State-of-the-Art-Optics-Technology/default.aspx)
+5. **光电共封装/高精度贴装。**PD/TIA、EML/Driver、SiPho/PIC 的微米级对准、光耦合、热应力和返修良率决定整套 chipset 实际可卖数量；高价 DSP 不是唯一瓶颈。
+6. **224G 多厂商互通与标准未最终冻结。**90% 链路建立率仍意味着约 10% 组合需要调试；FEC、CMIS、链路训练、Tx/Rx 均衡和 module-host 配对会拉长客户 qualification。
+7. **客户认证和 AVL。**从 sample→module EVT/DVT→switch/NIC interoperability→高低温/老化→fleet canary→量产通常需要 **6–18个月**；单一 hyperscaler firmware 变更即可让收入跨季度移动。
+8. **高速测试时间与设备。**224/448G BERT、采样示波器、wafer probe、ATE、光功率/BER、温度循环和 system-level test 昂贵；Keysight、Anritsu、Advantest、Teradyne、VIAVI、EXFO、MultiLane 等设备与熟练测试工程师是隐形产能。
+9. **裸 die/known-good-die 与封装良率。**高端 DSP、TIA 常以裸片销售；一颗坏 die 可能报废整套高价值 optical engine，因此 wafer sort 覆盖率、probe 接触和故障诊断直接决定客户是否换供应商。
+10. **地缘与客户集中。**DSP 设计在美国、先进晶圆在台湾/韩国、封测在亚洲、模块大比例在中国/东南亚、客户集中北美；出口管制、关税或单一大客户砍单都会使供需从短缺快速转库存。
+11. **现场可靠性与可维护性。**FRO 可在模块内隔离问题；LPO/CPO 把故障域扩大到 host SerDes、交换 ASIC、光引擎和外置激光。没有 fleet telemetry、hot-swap/repair 和冗余，demo 不能转大规模订单。
+12. **光纤拓扑与施工。**CPO/OCS/scale-up optics 会把模块价值转成更多 fiber attach、连接器、外置激光和布线；端口芯片已到货不等于现场 fiber plant 可交付。
+
+### 6.3 单位成本与模块BOM模型
+
+#### 6.3.1 单芯片/芯片组 ASP 模型
+
+| 产品 | 2026 ASP模型 | 2027典型年降 | 早期短缺溢价 | 备注 |
+|---|---:|---:|---:|---|
+| 800G FRO DSP | $45–85/颗 | -12%至-25% | +10%–20% | 成熟5nm/多供，功能/集成driver不同 |
+| 1.6T 200G/lane FRO DSP | $100–180/颗 | -8%至-18% | +20%–40% | 3/4/5nm、FEC、high-swing driver、客户定制决定上限 |
+| 1.6T LRO/TRO DSP | $50–105/颗 | -10%至-20% | +15%–30% | 通道/功能减少，但低功耗与系统 co-design 有溢价 |
+| 100G/lane quad/octal TIA | $15–35/组 | -10%至-18% | +10%–25% | 800G attach |
+| 200G/lane quad/octal TIA | $30–70/组 | -8%至-15% | +20%–35% | 1.6T/LPO/CPO 共用，高线性版本更贵 |
+| CDR/CDR+TIA combo | $8–30/颗/组 | -10%至-20% | +5%–15% | 速率和集成度差异大，旧产品价格下降明显 |
+| 400/800G coherent DSP/前端 | $180–600/套 | -8%至-15% | +15%–30% | 距离、MACsec、PCS/FEC、集成模块模式差异大 |
+| CPO/光I/O chiplet | $0.03–0.10/Gbps 等价值 | 学习曲线快 | 首批可+30%–60% | 最终按 package/带宽/合同定价，不宜套用单模块 ASP |
+
+以上为本文根据市场规模、模块 ASP、公司产品定位和集成度反推的 C 级模型，不是公开价目表。
+
+#### 6.3.2 模块BOM占比
+
+| 成本项 | 800G FRO | 1.6T FRO | 1.6T LPO/LRO | 定价/毛利影响 |
+|---|---:|---:|---:|---|
+| DSP/retimer/gearbox | 12%–22% | 14%–24% | LPO 0%；LRO 7%–14% | 高端 DSP 最能定价；成熟代际年度降价最快 |
+| TIA/Driver/PMD模拟前端 | 6%–12% | 7%–14% | 15%–25% | 线性架构把价值从 DSP 转到模拟前端 |
+| Laser/PD/PIC/SiPho | 25%–38% | 24%–38% | 28%–45% | 当前实物瓶颈；原料/良率上涨可向模块价传导 |
+| 光学封装、耦合与高精度组装 | 15%–24% | 18%–28% | 18%–30% | 良率、自动化、返修率决定模块厂毛利 |
+| PCB、连接器、控制器、EEPROM/电源 | 8%–14% | 7%–13% | 8%–14% | 相对商品化，受低损耗材料和224G SI影响 |
+| 散热/壳体 | 5%–10% | 6%–11% | 4%–8% | FRO DSP 功耗越高，机械/热成本越高 |
+| 测试、老化、良率损失、质保 | 10%–18% | 12%–22% | 12%–24% | 新代际早期最大隐性成本，量产良率改善后释放毛利 |
+
+### 6.4 价格传导机制
+
+1. **短缺阶段：**DSP/TIA/laser 厂要求不可取消订单、预付款/LTA；模块厂把价格上调或减少年度降价幅度传给 hyperscaler。CIG 的战略备货公告证明 2026 已处于这一阶段。
+2. **量产学习阶段：**wafer yield、封装 UPH、测试时间改善，芯片成本下降；大客户以年度 price-down 分享 10%–20% 成本红利，但新代际 mix 可使供应商收入/毛利仍上升。
+3. **架构替代阶段：**LRO/LPO 去掉全部或部分 DSP，模块总价下降；高线性 TIA/Driver、host SerDes、遥测和测试价值上升。不能把模块 ASP 下降等同整个信号链利润消失。
+4. **CPO阶段：**独立模块售价不再是核心；价值按 switch/XPU package、optical engine、external laser 与多年平台合同捕获。进入 package 的供应商切换成本高，但早期返修/质保责任也大。
+5. **产能过剩阶段：**若 2027 端口增速低于 30% 且 lead time 降至 8 周以内，成熟 800G DSP/TIA 先降价；1.6T/CPO 高端品仍可保持 premium，但组合毛利下滑。
+
+## 七、竞争格局与可量化壁垒
+
+### 7.1 市场结构
+
+公开公司不披露足够细的产品收入，以下集中度为依据产品量产状态、模块 design-in、财报增量和厂商名单反推的模型，不冒充审计市占率。
+
+| 子市场 | 2026集中度估计 | 主要公司 | 置信度 |
+|---|---:|---|---|
+| 800G/1.6T PAM4 DSP | CR2 **55%–70%**；CR5 **90%–97%** | Marvell、Broadcom、Cisco/Acacia、MaxLinear、Credo | 中；新产品多但客户份额不披露 |
+| 1.6T已量产 DSP | CR2 **65%–80%**；CR5 >**95%** | Marvell、Broadcom先发；Acacia/MaxLinear/Credo追赶 | 中；Ara/Sian3状态最清晰 |
+| 100/200G TIA/Driver | CR5 **60%–75%** | Marvell、Semtech、MACOM、Coherent、MaxLinear、Broadcom | 中低；垂直自用和定制IC难统计 |
+| 离散光CDR | CR3 **65%–80%** | Semtech、Renesas、MACOM；其余集成在 DSP | 低；市场定义随集成而变化 |
+| merchant/coherent DSP | CR4 **75%–90%** | Marvell、Cisco/Acacia、Ciena、Nokia；ZTE/Huawei内部 | 中低；merchant 与 captive 口径差异大 |
+| CPO/光I/O | 尚无稳定份额 | NVIDIA/Broadcom、Marvell/Celestial、Credo/Dust、Cisco/Acacia、Ayar、Ranovus | 低；2026 是平台验证年 |
+
+### 7.2 壁垒清单：为什么能定价
+
+| 壁垒 | 量化代理 | 为什么能定价 |
+|---|---|---|
+| 高速 mixed-signal/DSP IP | 3/4nm tapeout、8×224G SerDes、ADC/DAC、FEC、DFE；数百工程年 | 模拟/数字/封装任一环失误都导致重流片；客户愿为一次成功与低功耗付费 |
+| 现场可靠性数据 | 百万颗/千万 channel、FIT、BER、link flap、温漂 | AI 集群单链路故障会使昂贵 GPU 空闲；“少坏一点”可创造远高于芯片价的价值 |
+| 固件与遥测 | CMIS、PRBS、loopback、eye/SNR、predictive telemetry | 缩短集群 time-to-stability、降低排障人力并提高 GPU 利用率，形成软件式黏性 |
+| 规模/NRE | 3/4nm全项目 $100M–300M 模型；百万颗以上才好摊销 | 龙头可更快迭代并在价格战中维持研发，小厂难以持续多代竞争 |
+| 客户 qualification | 6–18个月、多个 module/switch/NIC 组合 | 换芯片会重做固件、SI、光学与可靠性测试，切换成本可达数季收入损失 |
+| foundry/封测 capacity | 4–10年容量预留、先进节点/高速test slot | 短缺时交付能力本身就是产品；客户会付预付款和 premium 保证 supply |
+| 模拟前端/封装共设计 | PD pitch、flip-chip、寄生、TIA/driver/laser配对 | datasheet 性能不能替代 module-level BER；与模块厂共同调优后难更换 |
+| 标准与生态 | IEEE/OIF/IBTA/UEC、Ethernet Alliance plugfest | 参与标准让产品早于量产窗口冻结，并通过多厂互通降低客户采用风险 |
+| 渠道/客户锁定 | hyperscaler direct、module AVL、switch/NIC reference design | 一旦进入头部模块和交换机 BOM，订单量大且生命周期跨多代 |
+| 供应安全/地域二供 | TSMC+Samsung、美国/亚洲封装、多个TIA工艺 | AI客户愿为地域与产能冗余付费；Rushmore 的 Samsung 路线就是差异化卖点 |
+
+### 7.3 哪一层最可能长期高ROIC/高毛利
+
+1. **第一名：跨代 DSP/SerDes/FEC/firmware IP 平台。**Fabless、单位价值高、NRE 可跨多产品摊销、客户切换成本高；Broadcom/Marvell/Acacia 最接近。风险是 LPO/CPO 把功能移出模块，因此必须同时进入 switch/XPU/optical engine。
+2. **第二名：高性能 TIA/Driver 与光电共设计。**不需要最先进逻辑节点、资产强度可控，而且 FRO/LRO/LPO/CPO 都需要；MACOM/Semtech/Marvell/Coherent/MaxLinear 的 200G/448G 路线最值得跟踪。风险是客户自研和 specialty foundry 竞争。
+3. **潜在第一但尚未验证：CPO/光 I/O chiplet 平台。**一旦 co-packaged 到 XPU/switch，平台锁定和带宽按 Gbps 计价可形成极高 ROIC；但 2026–2027 尚处于高 NRE、低良率、质保责任重的阶段。
+4. **中等：相干 DSP。**算法壁垒最高、ASP 高，但量小于 PAM4，客户更集中，开发成本极高。
+5. **较弱：纯模块代工与纯离散 CDR。**模块装配资本和价格竞争更强；CDR 功能持续被 DSP/host SerDes 集成。除非拥有差异化低功耗架构或绑定 TIA/Driver，否则长期 ROIC 低于平台型 IC。
+
+## 八、2026关键变化：三个行业拐点与最可能放量方向
+
+### 拐点一：1.6T从“可演示”转“有量产订单”
+
+- Marvell 2026-03 称 Ara 已向全球客户 mass volume shipping。
+- AOI 2026-03 获某长期 hyperscaler 的首个 1.6T volume order，金额 **>$200M**，预计 2026Q3 初开始发货、Q4 完成；公司目标年末 800G+1.6T 合计产能 **>500k只/月**。[AOI，2026-03-09](https://investors.ao-inc.com/news-releases/news-release-details/aoi-receives-first-volume-order-16t-data-center-transceivers)
+- Celestica 102.4T/64×1.6TbE DS6000 已于 2026-04-29 可订购；Arista 64×1.6T 7060XE7 计划 2026Q4 可用。[Celestica](https://corporate.celestica.com/news-releases/news-release-details/celestica-accelerates-ai-scale-networking-ds6000-series-16tbe)；[Arista](https://www.arista.com/en/company/news/press-release/24102-pr-20260609)
+
+**最可能放量：**3/4nm 1.6T FRO DSP、200G TIA、OSFP224 模块、高速测试。  
+**反证：**Q4 switch 延期、AOI/模块厂订单取消、1.6T lead time 快速降至 <8周。
+
+### 拐点二：LRO/LPO从实验路径变成正式产品线
+
+- Marvell 推出 Ara T 发送重定时 DSP；Credo Cardinal 同时覆盖 FRO/LRO，LRO 目标 <15W；Semtech、MACOM、MaxLinear、Coherent 同时发布 224G 线性 TIA/Driver。
+- OIF 仍把 CEI-224G-Linear 与 EEI-224G-RTLR 列为 current work，说明技术可用但跨厂规范仍在收敛。[OIF current work](https://www.oiforum.com/technical-work/current-work/)
+
+**最可能放量：**LRO 先于全 LPO；TIA/Driver 价值占比上升。  
+**反证：**host SerDes margin 不足、跨模块互通失败、客户回到 FRO。
+
+### 拐点三：CPO第一次具备“生产”证据
+
+- NVIDIA 表示 Spectrum-X CPO 已生产并有首批生态采用者；Broadcom 展示 TH6/Davisson CPO；Lumentum/Coherent 获 NVIDIA 巨额投资与产能权利。
+- 这说明 CPO 不再只是 2028 路线图，但“生产”仍不等于数百万端口。2026 基准只给 CPO **1%–3%** 高速端口等效份额。
+
+**最可能放量：**交换侧 CPO、外置激光、CPO TIA/driver/控制器、fiber attach。  
+**反证：**field replacement、laser redundancy、package yield 或光纤施工使客户回退 pluggable。
+
+## 九、2027关键变化：三个行业拐点与最可能放量方向
+
+### 拐点一：Rubin与开放ASIC把1.6T变成主流端口
+
+Rubin ConnectX-9 每 GPU 1.6Tb/s、TPU/Trainium/MTIA 按颗数扩张、MI450/Helios 引入第二套开放机架生态，基准情景下 1.6T 占 ≥800G 端口在两年内达到 **60%–72%**。1.6T DSP/TIA 收入超过 800G，同一供应商的产品 mix 向高 ASP 迁移。
+
+**最可能放量：**1.6T FRO、LRO、200G TIA、102.4T switch、800/1600ZR campus/scale-across。
+
+### 拐点二：价值从“模块DSP”向“可编程链路平台”迁移
+
+随着 LRO/LPO/CPO 增加，DSP attach 下降，但 link telemetry、firmware、host SerDes、TIA、光 I/O 和 fleet reliability 的价值增加。能同时卖 DSP、TIA、SerDes、switch/NIC/CPO 或 telemetry 的公司份额上升；只卖一颗旧 DSP 的公司会被年度降价挤压。
+
+**最可能放量：**Marvell RELIANT 类遥测、Credo PILOT 类诊断、CPO/NPO analog chiplets、外置激光控制、系统级验证。
+
+### 拐点三：2nm coherent与400G/lane启动下一轮，但3.2T尚未全面替代
+
+Marvell Electra/Libra 计划 2026H2 采样，2027 进入 1.6T ZR/ZR+；Broadcom Taurus、MACOM 448G Driver、Lumentum/Coherent 400G EML/PD 形成 400G/lane 生态。基准下 400G optical lane 在 1.6T 端口份额到第2年仅 **8%–15%**；它首先用于减少 lane 数的 1.6T DR4，再为 3.2T 做准备。
+
+**最可能放量：**1.6T DR4/FR4 400G-lane 小批、1.6T coherent、coherent-lite；3.2T 的真正高量更偏 2028。
+
+## 十、头部公司全景：大小公司、技术与产能优势
+
+### 10.1 PAM4/模块侧DSP
+
+| 公司 | 核心产品/能力 | 阶段 | 优势 | 主要风险 |
+|---|---|---|---|---|
+| **Broadcom** | Sian2/Sian2M、Sian3 200G/lane、Taurus BCM83640 400G/lane；switch/SerDes/CPO全栈 | Sian3量产；Taurus可用/早期 | TH6/102.4T reference、3nm、laser/PD/VCSEL垂直能力、客户生态 | 收入不拆分、客户集中；CPO内部替代可插拔DSP |
+| **Marvell** | Spica、Nova、Ara、Ara T/X、Petra、Perseus；TIA/driver/SiPho/coherent/telemetry | Ara mass volume；新型号采样 | 多代量产、产品最全、Inphi遗产、从5m到1000km覆盖 | foundry/客户集中；高并购与研发投入；Broadcom竞争 |
+| **Cisco/Acacia** | Kibo 3nm 1.6T PAM4、SiPho optical engine、coherent DSP | Kibo产品化/导入 | DSP算法+SiPho+Cisco系统/客户；TRO支持 | 对外merchant战略与Cisco内部优先级、份额披露少 |
+| **MaxLinear** | Keystone 5nm 400/800G、Rushmore 1.6T、Topanga/Washington TIA | Keystone百万颗；Rushmore采样/商业导入 | Samsung foundry二供、高摆幅driver、DSP+TIA共设计 | 公司规模小、客户集中、Rushmore量产执行 |
+| **Credo** | Cardinal 3nm 1.6T FRO/LRO、ZeroFlap optics、PILOT；DustPhotonics SiPho | Cardinal sampling | 低功耗、诊断、AEC客户关系、DSP+SiPho垂直化 | 光业务爬坡尚待验证、收购整合、客户集中 |
+| **上海橙科微** | S800 等国产 PAM4 DSP，50G以上向400/800G推进 | 展会列示/量产状态透明度有限 | 中国国产替代、团队有海外头部经验 | 先进节点、功耗、固件、hyperscaler认证尚无充分公开证据 |
+| **Huawei/HiSilicon** | 自用高速SerDes/光电DSP/超节点配套 | captive | 系统级共设计与中国市场 | 制程、出口管制、对外merchant不可得 |
+
+### 10.2 相干与coherent-lite DSP
+
+| 公司 | 产品/路线 | 技术优势 | 2026–2027判断 |
+|---|---|---|---|
+| **Marvell** | Orion/Canopus/Deneb、Aquila/Aquila M、Electra/Libra、COLORZ | merchant coherent、2nm 1.6T、MACsec、20–1000km覆盖 | 800G放量；1.6T H2 2026采样、2027放量 |
+| **Cisco/Acacia** | Jannu/相关coherent DSP、800ZR/ZR+、1.6T client/Kibo | merchant coherent出货与SiPho集成；Cisco订单/渠道 | Acacia 2026订单强，继续扩展1.6T |
+| **Ciena** | WaveLogic 6 Extreme/Nano、1600ZR/ZR+路线 | PCS/FEC、长距性能、垂直系统 | embedded 1.6T与pluggable并行，scale-across受益 |
+| **Nokia（含Infinera）** | PSE-6s、ICE-X 800、1.6T-capable coherent pluggable | 5nm/3nm DSP、SiPho、长距/海缆/系统 | 800G成熟，1.6T标准与产品2026H2–2027推进 |
+| **ZTE Microelectronics/ZTE** | 自研800G coherent DSP、130GBd ADC、C+L系统 | 中国运营商现网与系统共设计 | 800G已商用/现网；1.6T处技术开发 |
+| **Huawei** | 自研相干 DSP/OptiX 系统 | 系统、光器件、运营商客户 | 中国 captive 强，全球可获得性受限制 |
+| **NTT Electronics、eFFECT Photonics** | coherent DSP/PIC/模块平台 | 专用小型化、低功耗、PIC协同 | 在特定 DCI/接入市场有技术价值，规模低于前五 |
+
+### 10.3 TIA、Driver与模拟前端
+
+| 公司 | 产品/能力 | 优势/产能 | 判断 |
+|---|---|---|---|
+| **Marvell** | IN/CB 56/112GBaud TIA、1.6T LPO chipset | DSP+TIA+driver协同，GA产品 | 200G TIA核心供应商之一 |
+| **Semtech** | FiberEdge GN1832/34/36、DirectEdge 224G、GN187x/188x；Tri-Edge | 线性光学产品最完整之一；FY27Q1称1.6T收入叠加、backlog强 | LPO/LRO受益度高；公司毛利低于纯DSP |
+| **MACOM** | 200G/lane TIA/PD stack、PURE DRIVE、448G MZM/EML Driver | 专有/高量硅与光电工艺、器件跨度大、美国/欧洲产能 | 1.6T模拟前端现实受益，3.2T高弹性 |
+| **MaxLinear** | Topanga 100G、Washington 200G quad TIA | SiGe、750mW/四通道、pad兼容、H2 2026量产计划 | 新进入者，DSP+TIA共设计有份额机会 |
+| **Coherent** | CHR1074 224G quad TIA、CHR1094等、PD/laser/PIC | 6-inch InP和垂直光学，但开放merchant IC仍在扩大 | 产能/客户强，IC外售份额需验证 |
+| **Broadcom** | DSP集成driver、PD/VCSEL/EML与内部模拟前端 | 从switch到laser全栈、量产channel数据 | 内部集成强，merchant TIA透明度低 |
+| **Cisco/Acacia** | DSP+SiPho optical engine+模拟前端 | optical engine共同优化 | 主要通过Acacia生态捕获而非独立TIA品牌 |
+| **Renesas、Analog Devices、Microchip** | TIA/driver/CDR/limiting amp等接口IC | 长期模拟IP、工业/通信客户 | 在低速/特定telecom仍重要，高端1.6T份额低于头部 |
+| **优迅股份/武汉芯智光联** | 单波100G TIA/Driver送样；单波200G、LPO/NPO TIA/Driver研发 | 中国前端电芯片量产经验；募投800G+项目 | 800G尚在客户验证，1.6T样品阶段；属于国产替代期权而非已量产龙头 |
+| **上海橙科微、ZTE/Huawei内部团队** | DSP配套driver/TIA/AFE | 本地系统/模块协同 | 公开量产与外售数据有限，需按U/C级处理 |
+
+优迅股份 2025 年报称 400/800G 单波100G PAM4 芯片完成回片并向主流模块厂送样，1.6T 单波200G进入研发；其募投项目预计持续至 2029，不能把“研发”写成 2026 已大规模量产。[优迅股份年报摘要，2026-04-10](https://paper.cnstock.com/html/2026-04/10/content_2198032.htm)
+
+### 10.4 离散CDR、retimer与链路调理
+
+| 公司 | 能力 | 市场位置 |
+|---|---|---|
+| **Semtech** | ClearEdge NRZ CDR、Tri-Edge PAM4 CDR+TIA/Driver，200/400G模块/AOC | 独立光 CDR 最明确的头部之一；低功耗低延迟，但代际偏成熟 |
+| **Broadcom、Marvell、Cisco/Acacia、MaxLinear、Credo** | CDR集成于DSP、retimer、host/line SerDes | 实际控制高端 CDR 功能价值，但不形成单独 CDR 收入披露 |
+| **Renesas、MACOM、Microchip、Analog Devices** | 光/电 retimer、CDR、limiting amp | 旧速率、telecom、backplane、特定模块保有份额 |
+| **Point2、Credo、Astera Labs、Alphawave/Qualcomm、Socionext** | 高速电/光边界 SerDes/retimer/IP | 更偏 AEC/PCIe/CXL/scale-up 或IP，属于相邻市场而非纯光模块CDR |
+
+Semtech 产品目录显示，其 Tri-Edge 仍以 4×56G CDR+TIA/Driver 为主，适用于 200/400G；这正说明 **1.6T 的高增长已迁向 224G DSP/TIA，而不是沿用旧式离散 CDR 的简单八倍扩张**。[Semtech CDR产品页](https://www.semtech.com/products/clock-and-data-recovery)
+
+### 10.5 CPO/NPO/光I/O与新型光引擎
+
+| 公司/团队 | 技术 | 竞争优势 | 预计放量 |
+|---|---|---|---|
+| NVIDIA | Spectrum-X Ethernet Photonics、200G SerDes CPO | Rubin全栈、首批生产和云伙伴 | 2026初产，2027扩大 |
+| Broadcom | TH6/Davisson CPO、XPU-CPO、OCI MSA、Taurus/Sian | switch/XPU/SerDes/optics垂直整合 | 2026–2027 |
+| Marvell + Celestial AI + Polariton | 16T Photonic Fabric chiplet、TIA/driver/SerDes集成、TFLN | custom XPU/UALink/optical DSP全栈 | 2027H2初收入，2028规模 |
+| Credo + DustPhotonics | DSP、SerDes、SiPho PIC、ZeroFlap | 低功耗与hyperscaler客户；FY27光收入目标>$500M（含模块/PIC/DSP） | 2026–2027 |
+| Cisco/Acacia | Kibo DSP+SiPho optical engine、coherent | PIC/DSP/系统一体 | 2026–2027 |
+| Coherent、Lumentum | 激光、PD、PIC、光引擎、CPO制造 | 最大光器件产能与NVIDIA多年投资/采购 | 2026–2028 |
+| Ayar Labs | TeraPHY optical I/O chiplet、SuperNova光源 | 近封装光I/O先发、XPU生态 | 2027–2028 |
+| Ranovus | Odin CPO optical engine | 多波长CPO、系统演示 | 2027–2028 |
+| Xscape Photonics | ChromX等可扩展光连接 | startup速度、先进光子集成 | 2027以后 |
+| Nubis Communications | 低功耗光引擎/线性接口 | rack/scale-up低延迟 | 2027以后 |
+| Lightmatter | Passage光互联平台 | package/board级光网络 | 2027以后 |
+| POET Technologies | Optical Interposer/1.6T engines | 被动对准与低成本集成 | 2026小量、2027放大待验 |
+| OpenLight、HyperLight、Silith、Hyper Photonix、Terahop | SiPho/TFLN/224–448G器件与IP | 专项器件/开放生态 | 样品到小批，需客户订单验证 |
+
+### 10.6 下游模块、系统与测试：虽然不是本行业收入，但决定谁能放量
+
+- **模块/光器件：**Coherent、Lumentum/Cloud Light、Innolight、Eoptolink、Fabrinet、AOI、CIG Shanghai、Accelink、Hisense Broadband、Source Photonics、HG Genuine、Sumitomo、Mitsubishi。
+- **交换/NIC/系统：**NVIDIA、Broadcom、Marvell、Arista、Cisco、Celestica、HPE、Dell、Juniper；其 reference design 决定 DSP/TIA 进入哪一套生态。
+- **云/XPU客户：**Microsoft、AWS、Google、Meta、Oracle、CoreWeave、xAI、OpenAI及中国云/运营商；客户集中使单次资格认证价值极高。
+- **晶圆/封测：**TSMC、Samsung Foundry、GlobalFoundries、Tower、ASE、Amkor、SPIL、KYEC、Fabrinet。
+- **测试：**Keysight、Anritsu、Teledyne LeCroy、VIAVI、EXFO、MultiLane、Advantest、Teradyne、FormFactor、Technoprobe。
+
+## 十一、公司订单、财报与高管信号：近半年证据表
+
+| 日期 | 公司/组织 | 一手信息 | 对行业的含义 | 证据等级 |
+|---|---|---|---|---|
+| 2026-02-26 | LightCounting | 800G 2026出货再翻倍以上；1.6T至数千万ports；1.6T chipset >$2B | 总量与1.6T拐点硬锚 | B（行业数据，多公司验证） |
+| 2026-03-02 | NVIDIA/Coherent、Lumentum | NVIDIA分别投资$2B，并含多年数十亿美元采购/产能权利 | 光源/光网络产能是战略瓶颈；CPO供应链被提前锁定 | A |
+| 2026-03-09 | AOI | 首个1.6T hyperscaler volume order >$200M；Q3–Q4交付 | 1.6T从demo转订单 | A |
+| 2026-03-11/12 | Broadcom | Taurus 400G/lane DSP可用；OFC展示102.4T CPO | 400G/lane与CPO进入实物阶段 | A |
+| 2026-03-12 | Marvell | Ara已mass volume；Ara T/X、Petra、Aquila M Q1采样 | 1.6T产品谱最完整，LRO/coherent-lite并行 | A |
+| 2026-03-16 | Semtech | 发布224G TIA/Driver；FRO/LRO/LPO/CPO多架构 | 模拟前端跨架构受益 | A |
+| 2026-03-17 | Credo | Cardinal 3nm FRO/LRO采样，LRO <15W目标 | 新DSP竞争、低功耗LRO加速 | A |
+| 2026-04-13 | Credo/DustPhotonics | 收购；预计FY27 DSP/PIC/光模块合计光收入 >$500M | 电/光垂直整合、CPO/NPO准备 | A（公司目标） |
+| 2026-04-29 | Celestica | 64×1.6T、102.4T switch可订购 | 1.6T主机端已可采购 | A |
+| 2026-04-30 | MaxLinear | Washington 4通道200G/lane TIA样品，H2量产；750mW典型 | 新TIA多供与SiGe工艺成熟 | A |
+| 2026-05-05/06 | Lumentum/Coherent | 数据中心需求强、扩产；Coherent季度收入$1.81B、毛利39.6% | 模块/器件需求确认，但整机毛利低于纯IC | A |
+| 2026-05-26 | Semtech | FY27Q1 $291M，称FiberEdge/CopperEdge 1.6T收入叠加、bookings/backlog强 | 1.6T模拟前端已开始贡献 | A |
+| 2026-05-27 | Marvell | Q1FY27 $2.418B；data center $1.833B；exceptional AI bookings；上调FY27/28 | 800G/1.6T、CPO/NPO、DCI与XPU需求同步 | A |
+| 2026-05-31 | NVIDIA | Rubin/CPO生产，CoreWeave/Lambda/OCI早期采用 | CPO成为现实替代项 | A |
+| 2026-06-01 | Credo | FY26Q4 $437M、+157% YoY、毛利68.3% | 高速连接可实现高毛利和经营杠杆 | A |
+| 2026-06-03 | Broadcom | AI半导体收入$10.8B、+143%；下一季指引$16B | XPU+AI networking需求强，但未拆DSP | A |
+| 2026-06-04 | CIG Shanghai | DSP/SiPho/CW laser缺货、交期延长、需预付款；80%配售资金备货 | 芯片短缺和渠道金融行为的直接证据 | A |
+| 2026-06-09 | Arista | 64×1.6T产品Q4 2026可用；液冷版Q1 2027 | 1.6T端口在2026Q4—2027进入系统量产 | A |
+| 2026-06-16 | Coherent/美国商务部 | 拟$50M CHIPS支持6-inch InP，厂房面积翻倍、wafer产能4× | 中期供给扩张，2027以后ASP需警惕 | A（LOI，非已拨款） |
+
+### 11.1 财务信号的正确解释
+
+- Broadcom AI 半导体收入包含 custom XPU 与 networking，不能把 **$10.8B** 全算成光 DSP。
+- Marvell data center 收入包含 XPU、switch、storage、electro-optics，不能直接等同 DSP TAM。
+- Credo 收入大部分仍可能来自 AEC/retimer；FY27“>$500M optical revenue”包含 transceiver、DSP 和 SiPho，不能全计 DSP。
+- Coherent/Lumentum/AAOI 收入是模块/器件/系统口径，毛利与纯 IC 不可横比。
+- 订单、backlog、产能和预付款是需求强度证据，但只有交付/验收才形成芯片收入。
+
+## 十二、投资框架：基准、乐观、极度乐观与反证
+
+### 12.1 三情景驱动器
+
+| 变量 | 基准 | 乐观 | 极度超预期乐观 |
+|---|---|---|---|
+| AI基础设施 | 按项目产业背景：2027 AI CapEx继续增长，网络订单高于总CapEx弹性 | Rubin/ASIC/Agent同时放量 | 百万XPU、多园区协同、光scale-up成为标准 |
+| 800G端口 | 量增、ASP -15%左右 | 量高于预期20%、ASP仅-10% | 800G和1.6T都缺货，ASP几乎不降 |
+| 1.6T端口 | 2026H2爬坡，2027主流 | 提前1–2季度 | 数千万端口预测再上修>30% |
+| FRO/LRO/LPO | FRO仍主导，LRO/LPO温和渗透 | LRO/LPO达三成以上 | 线性光学过半但总端口大到DSP仍增长 |
+| CPO | 2026低个位数，2027可见 | 2027端口15%–25% | 2027达25%–40%，新增scale-up大于替代 |
+| 毛利 | 成熟800G下滑，高端mix抵消 | 短缺/认证溢价维持 | 高端持续供不应求，DSP/TIA GM上探70%+ |
+
+### 12.2 公司类型与风险收益
+
+| 类型 | 代表 | 上行来源 | 下行风险 | 最适合跟踪指标 |
+|---|---|---|---|---|
+| 全栈平台 | Broadcom、Marvell、Cisco/Acacia | DSP+SerDes+switch/XPU+CPO；跨架构捕获 | 业务混杂、客户集中、估值与光学收入难拆 | AI networking收入、1.6T ports、CPO量产、gross margin |
+| 高弹性DSP挑战者 | MaxLinear、Credo | 新1.6T design win、份额提升、低功耗 | 量产/客户集中/NRE；大厂价格战 | optical revenue、客户数、Rushmore/Cardinal量产、GM |
+| 模拟前端 | MACOM、Semtech、Coherent | TIA跨FRO/LPO/CPO；200G/448G升级 | 模块厂自研、SiGe竞争、混合业务毛利 | 1.6T TIA revenue、book-to-bill、design wins、capacity |
+| 中国国产替代 | 优迅、橙科微、ZTE/Huawei内部 | 本地供应安全、国内模块/系统客户 | 先进节点、功耗、固件、量产和国际认证差距 | 回片→送样→认证→量产四阶段、实际客户/收入 |
+| 纯CDR/旧速率 | Semtech部分产品、传统模拟厂 | 稳定长尾、低功耗专用场景 | 功能被DSP/host整合、旧速率ASP下行 | CDR revenue而非总公司AI叙事、attach与ASP |
+
+### 12.3 十个反证条件
+
+1. 800G/1.6T 高速端口连续两季同比增速低于 **30%**。
+2. 1.6T 模块 lead time 降至 **≤8周**，同时至少两家模块厂库存周转显著恶化。
+3. 成熟 800G DSP ASP 同比下降 **>25%**，1.6T DSP 也下降 **>20%**。
+4. AOI 的 >$200M 订单延期/取消，或 Arista/Celestica 1.6T switch 量产推迟两个季度以上。
+5. 224G 多厂商 link establishment/BER 不能从约90%继续提高，客户大规模回退 112G。
+6. CPO 只停留在“production announcement”，到 2027H1 仍无客户、端口量和 field reliability 数据。
+7. LPO/LRO 现场 link flap、温漂或换模块失败率明显高于 FRO，导致 attach 低于10%。
+8. InP/EML/CW laser 新产能利用率低于 **80%**，同时价格同比跌 >20%，说明上游开始过剩。
+9. AI项目通电/验收延后，使 optical endpoint 已备货但 switch/rack 不上线，芯片渠道库存累积。
+10. 网络扁平化、OCS、rack内铜和CPO使每 XPU 可插拔 optical endpoint 比本文模型低 **>30%**。
+
+### 12.4 最值得每季更新的仪表盘
+
+| 指标 | 乐观阈值 | 中性 | 反证阈值 | 来源 |
+|---|---:|---:|---:|---|
+| 800G/1.6T port增速 | >50% | 30%–50% | <30% | LightCounting/模块公司 |
+| 1.6T占≥800G mix | >45%（2027H1） | 30%–45% | <25% | 模块/交换机公司 |
+| DSP/TIA lead time | >12周 | 8–12周 | ≤8周 | 模块厂、分销/公告 |
+| 高端chipset ASP年降 | <10% | 10%–20% | >20% | 公司/模型反推 |
+| 224G interop成功率 | >97% | 90%–97% | <90% | Ethernet Alliance/OIF |
+| CPO端口等效份额 | >10%（2027） | 3%–10% | <3% | NVIDIA/Broadcom/客户 |
+| 高速光芯片厂GM | >65% | 55%–65% | <50% | Marvell/MaxLinear/Credo/MACOM/Semtech |
+| 模块厂产能利用率 | >90% | 80%–90% | <80% | Coherent/Lumentum/AAOI/CIG |
+
+## 十三、最终结论
+
+1. **2026 最强主线是“1.6T FRO DSP + 200G TIA”，不是3.2T，也不是独立CDR。**800G仍是最大量，1.6T是最大增量；两代重叠让收入比单纯换代更强。
+2. **TIA 是最好的架构对冲。**即使 LPO/CPO 比预期快，接收模拟前端仍存在且指标更高；因此 TIA/Driver 的长期可服务市场比模块 DSP attach 更稳。
+3. **DSP 龙头仍有高定价权，但必须能跨架构。**Broadcom、Marvell、Acacia具备全栈；MaxLinear/Credo的机会来自低功耗、foundry二供和新客户份额，而不是市场自然增长自动兑现。
+4. **离散 CDR 不应被包装成“1.6T端口数×一颗CDR”。**其功能被 DSP/SerDes 集成，真正的增长在 LRO/TRO、低延迟专用链路和配套模拟前端。
+5. **CPO 是2027价值重构，不是2026全替代。**NVIDIA“已生产”使其不可忽视，但基准情景仍应要求端口量、客户、现场可靠性和维修数据后才上修。
+6. **极度乐观情景物理上可实现，但要求三件事同时成立：**XPU/AI CapEx持续超预期；224G/1.6T供应链不被晶圆、激光、封装测试卡住；新增光scale-up/scale-across端口大于 LPO/CPO 对传统 DSP 的替代。
+7. **行业最大的交易风险在2027成熟品ASP与库存。**2026 的短缺、预付款和扩产将把供给推高；若 AI rack 上线或端口 attach 不及预期，成熟 800G DSP/TIA 可能先出现价格压力。因此投资上应优先选择能把收入迁移到 1.6T、TIA、coherent、CPO/光 I/O 的公司，而不是只看 2026 订单同比。
+
+## 十四、主要资料与交叉验证索引
+
+### 14.1 项目内获准产业背景
+
+1. [头部AI芯片全景与2026/2027产能释放](../产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md)：Top 12 AI芯片、出货当量、光互联路径。
+2. [AI数据中心建设规模与产业链订单映射](../产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)：800G/1.6T订单池、endpoint attach与三情景倍率。
+3. [AI产业链瓶颈与反证指标总表](../产业背景/AI产业链瓶颈与反证指标总表_2026-07-10.md)：光互联供需、ASP/lead-time阈值、CPO验证纪律。
+4. [全球AI需求与Token经济框架](../产业背景/全球AI需求与Token经济框架_2026-07-10.md)：2026–2028 AI CapEx、IT power与网络需求三情景。
+
+### 14.2 市场、标准与论坛
+
+- [LightCounting：PAM4与coherent DSP，2026-02](https://www.lightcounting.com/newsletter/en/february-2026-pam4-and-coherent-dsps-updated-april-2026-381)
+- [LightCounting：AI cluster optics，2026-01](https://www.lightcounting.com/newsletter/en/january-2026-optics-for-ai-clusters-366)
+- [TrendForce：AI optical transceiver $26B，2026-04-20](https://www.trendforce.com/presscenter/news/20260420-13017.html)
+- [TrendForce：Google/TPU与800G+ share，2026-02-10](https://www.trendforce.com/presscenter/news/20260210-12919.html)
+- [Ethernet Alliance OFC 2026](https://ethernetalliance.org/event/ofc-2026/)
+- [Ethernet Alliance 224G plugfest，2026-03-31](https://ethernetalliance.org/blog/2026/03/31/from-plugfest-to-progress-key-lessons-from-the-2025-hsn-plugfest/)
+- [OIF OFC 2026 interoperability](https://www.oiforum.com/meetings-events/oif-ofc-2026/)
+- [OIF current work：CEI-224G-Linear/RTLR](https://www.oiforum.com/technical-work/current-work/)
+- [IEEE P802.3dj ballot status](https://www.ieee802.org/3/ballots/announce.html)
+- [IEEE 400G/lane Study Group](https://www.ieee802.org/3/400GPL/public/2605/index.html)
+- [LPO MSA FAQ](https://www.lpo-msa.org/home/faqs.html)
+
+### 14.3 公司产品、订单与财报
+
+- [Marvell 1.6T DSP portfolio，2026-03-12](https://www.marvell.com/company/newsroom/marvell-1-6t-optical-dsp-ai-data-center-connectivity.html)
+- [Marvell PAM4 DSP产品页](https://www.marvell.com/products/pam-dsp.html)
+- [Marvell 1.6T LPO TIA/Driver](https://www.marvell.com/company/newsroom/marvell-introduces-1-6-tbps-lpo-chipset.html)
+- [Marvell 1.6T/2nm coherent，2026-03-05](https://investor.marvell.com/news-events/press-releases/detail/1010/marvell-extends-zrzr-leadership-with-industry-first-1-6t-zrzr-pluggable-and-2nm-coherent-dsps-for-secure-ai-scale-across-interconnects)
+- [Marvell Q1FY27](https://investor.marvell.com/news-events/press-releases/detail/1023/marvell-technology-inc-reports-first-quarter-of-fiscal-year-2027-financial-results)
+- [Broadcom Sian3/Sian2M](https://investors.broadcom.com/news-releases/news-release-details/broadcom-extends-200glane-dsp-phy-leadership-next-generation-ai)
+- [Broadcom Taurus，2026-03-11](https://investors.broadcom.com/news-releases/news-release-details/broadcom-delivers-industrys-first-400glane-optical-dsp-next)
+- [Broadcom FY26Q2](https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial)
+- [Cisco/Acacia Kibo 1.6T](https://acacia-inc.com/product/pam4-dsp-product/)
+- [MaxLinear Rushmore，OFC 2026](https://investors.maxlinear.com/press-releases/detail/602/maxlinear-to-showcase-nextgeneration-1-6t-rushmore-dsp)
+- [MaxLinear Washington TIA，2026-04-30](https://investors.maxlinear.com/press-releases/detail/608/maxlinear-announces-availability-of-washington-200g-tia-for)
+- [MaxLinear 2026Q1](https://investors.maxlinear.com/press-releases/detail/607/maxlinear-inc-announces-first-quarter-2026-financial)
+- [Credo Cardinal，2026-03-17](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Introduces-Cardinal-A-LowPower-1-6T-Optical-DSP-Family-Engineered-for-MassiveScale-AI-Fabrics/default.aspx)
+- [Credo收购DustPhotonics，2026-04-13](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Agrees-to-Acquire-DustPhotonics-Accelerating-Expansion-into-Silicon-Photonics-and-Next-Generation-Optical-Connectivity/default.aspx)
+- [Credo FY26Q4](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Financial-Results/default.aspx)
+- [Semtech DirectEdge 224G，2026-03-16](https://www.semtech.com/company/press/semtech-launches-224-gbps-ic-family-for-linear-optics-era)
+- [Semtech OFC 2026总结](https://blog.semtech.com/ofc-2026-semtech-advances-the-future-of-ai-data-center-optical-and-active-copper-interconnects)
+- [Semtech FY27Q1](https://investors.semtech.com/news/semtech-announces-first-quarter-of-fiscal-year-2027-results/0634b869-19f6-4e90-9a0b-110fecf1d2db)
+- [MACOM OFC 2026](https://www.macom.com/updates/news/2026/macom-to-showcase-innovative-connectivity-solutions-at-ofc-2026)
+- [MACOM 448G Driver](https://ir.macom.com/news-releases/news-release-details/macom-announces-two-new-448g-lane-drivers-32t-data-center/)
+- [MACOM FY26Q2](https://ir.macom.com/news-releases/news-release-details/macom-reports-fiscal-second-quarter-2026-financial-results)
+- [Coherent 224G TIA](https://www.coherent.com/news/press-releases/Coherent-launches-224gbps-quad-tia)
+- [Coherent OFC 2026 1.6T/3.2T](https://www.coherent.com/news/press-releases/coherent-demonstrates-next-gen-pluggable-transceiver-ofc-2026)
+- [Coherent FY26Q3](https://www.coherent.com/news/press-releases/third-quarter-fiscal-year-2026-results)
+- [NVIDIA Rubin/CPO production，2026-05-31](https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory)
+- [AOI 1.6T $200M+订单](https://investors.ao-inc.com/news-releases/news-release-details/aoi-receives-first-volume-order-16t-data-center-transceivers)
+- [Celestica 64×1.6T switch](https://corporate.celestica.com/news-releases/news-release-details/celestica-accelerates-ai-scale-networking-ds6000-series-16tbe)
+- [Arista 1.6T portfolio](https://www.arista.com/en/company/news/press-release/24102-pr-20260609)
+- [CIG Shanghai DSP短缺与备货](https://www.hkexnews.hk/listedco/listconews/sehk/2026/0604/2026060402543.pdf)
+- [ZTE 2025年报：自研800G相干DSP](https://www.zte.com.cn/content/dam/zte-site/investorrelations/cn_annual_report/2025%E5%B9%B4%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A.pdf)
+
+### 14.4 模型限制
+
+1. DSP/TIA/CDR 单品收入、ASP、单位出货和客户份额大多不披露；本文区间是以模块出货、公司产品阶段、财报和订单反推，不是审计数据。
+2. “芯片组”在不同来源中可能包含 DSP、TIA、Driver、retimer、SiPho PIC 或 coherent frontend；本文已尽量按功能拆分，但跨公司口径仍有误差。
+3. CPO 的“端口等效”与可插拔 module unit 不完全可比；本文只用于价值迁移分析。
+4. 极度乐观情景是可证伪的上界，不代表最高概率；其前提是 AI 需求、光学端口密度和供给同时超预期。
+5. 本报告不含个股实时价格、估值或目标价，投资价值判断仅针对产业位置、增长、壁垒和利润结构。

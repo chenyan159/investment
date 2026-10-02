@@ -1,0 +1,665 @@
+# TE：T1 Energy Inc. 公司全面尽调——美国光伏组件、国产 TOPCon 电池、BESS 与 AI 数据中心期权（2026-07-12）
+
+> 研究截止：2026-07-12（America/Los_Angeles）。美股周末不开市，股价与市值采用 2026-07-10 收盘；最新已披露财报为 2026Q1。金额均为美元，除非另有说明。  
+> 研究边界：项目内只使用了 `行业调研/` 的相关产业资料；未读取其他本地资料，未读取或继承 `特征量化/`，未读取同目录既有公司报告。联网证据以 SEC、公司 IR、IRS/BIS、行业协会、产品资料和技术路线图为主。  
+> 预测口径：本文所有“基准/乐观/极度乐观”均为本报告模型，不是公司指引；区间不可把内部交易、子集软件收入和资产出售收入机械相加。本文不是投资建议。
+
+## 一、先给结论：TE 不是成熟的 AI 数据中心公司，而是“高补贴敏感的美国光伏制造商 + 三个尚待兑现的期权”
+
+### 1.1 一句话判断
+
+截至 2026-07-12，T1 Energy 的可核验经营事实仍是：**一家单一分部、几乎全部收入来自 G1_Dallas 光伏组件、2026Q1 又几乎全部卖给关联方 Trina Group 的美国制造商**。市场正在给它三层未来价值：
+
+1. **G1 组件由进口电池片过渡到 G2 美国自产 TOPCon 电池片**，争取 45X、48E 国内含量溢价和进口替代利润；
+2. **待收购 KORE Power/NRI**，进入公用事业 BESS、控制软件和可能的数据中心能源系统集成；
+3. **Mo i Rana 50MW 临时电力分配**，把原挪威电池厂房转为 AI 数据中心 powered shell/合资资产。
+
+这三层中，只有 G1 已经产生收入；G2 尚未产出电池片，KORE 截至截止日未见交割公告，Mo i Rana 最早 2027Q2 才可能带载。因此把 TE 直接按“AI 数据中心基础设施平台”估值，会提前确认尚未签客户、尚未融资或尚未交割的价值。
+
+### 1.2 投资判断摘要
+
+| 维度 | 结论 | 核心证据 |
+|---|---|---|
+| 当前业务质量 | **中低** | 2026Q1 净销售额 $177.6M、毛利率 16.4%，但 99.9% 为关联方销售；单一客户占收入和应收账款约 100% |
+| 增长能见度 | **中等，订单口径混杂** | 2026 有 3GW 固定毛利/成本加成合同，覆盖产量指引 3.1—4.2GW 的 71%—97%；2027—2028“意向需求超过 100% 产能”不是 firm backlog |
+| 资产负债表 | **偏弱、依赖再融资** | 2026Q1 经营现金流 -$72.9M、资本开支 -$60.7M；4 月再融资后 G2 Phase 1 仍称需约 $225M，且公司原定 Q2 完成综合融资，截止日未见公告 |
+| 盈利质量 | **高度依赖 45X** | Q1 政府补助应收增加 $41.4M，而当季 GAAP 毛利仅 $29.1M；近似剔除该项后组件制造毛利为负，尽管确认时点并不完全等同 |
+| 技术位置 | **路线主流、技术不垄断** | TOPCon 是 2025—2026 晶硅主流；T1 的优势是美国稀缺产能、合规和时间窗口，不是独有电池结构或独占专利 |
+| AI 暴露 | **当前直接收入约 0；间接需求真实；未来期权高** | 光伏组件经公用事业/开发商间接服务新增负荷；KORE/NRI 与 Mo i Rana 尚未形成 TE 已确认的 AI 客户收入 |
+| 风险收益特征 | **高波动、高执行风险、高政策弹性** | 股本一年增 41.3%，两批可转债转股价约 $6.80/$6.93，接近 $6.85 股价；同时 G2 若按期投产，利润跃迁可能很大 |
+
+### 1.3 最关键的多空分界
+
+- **多头成立条件**：G2 剩余融资以可承受的债务/项目资本完成；Q4 2026 真正出片，2027 上半年达到可销售良率；45X/PFE 资格无追溯争议；把“超过 100% 的意向”转为除 Treaty Oak 外的长期合同；KORE 完成交割并披露可验证订单。
+- **空头成立条件**：G2 继续延迟或再大额摊薄；45X 被否、需要重述或回吐；关联方订单无法转换为独立客户现金回款；First Solar/ITC 或 CBP 事项限制进口电池片；KORE 只是低价收购困境资产、未带来真实数据中心订单。
+- **最重要的事实核验点**：未来 90 天不是看“AI 叙事”，而是看 `G2 financing close → 设备到场/钢结构/cleanroom → 首片与良率`、KORE closing、非关联方销量、45X 现金变现和第二个 2027 长协。
+
+## 二、整体业务、投资者定位与近三年重大变化
+
+### 2.1 今天的公司是什么
+
+T1 Energy 前身是 FREYR Battery。公司在 2025 年改名后，经营重心已由“建设欧美锂电池超级工厂”彻底转成“美国光伏组件制造 + 上游国产电池片”。[2025 10-K](https://www.sec.gov/Archives/edgar/data/1992243/000199224326000007/t1-20251231.htm)明确：公司只有一个可报告分部，收入来自制造和销售光伏组件；G1_Dallas 位于得州 Wilmer，名义年产能 5GW、7 条线，其中约 4.5GW 面向公用事业，0.5GW 面向 C&I/住宅。
+
+产业链位置如下：
+
+`Hemlock 美国多晶硅 → Corning 美国硅片 → G2_Austin TOPCon 电池片（在建） → G1_Dallas 组件 → 公用事业/IPP/开发商 → 光伏电站/电网 → 数据中心等终端负荷`
+
+待 KORE 交割后，会再增加：
+
+`外购电芯 → KORE DC Block/机架 → NRI 设计、控制、安装、运维 → 公用事业 BESS/微电网/潜在数据中心园区`
+
+因此，T1 现在处于光伏制造链的**中下游组件装配**；G2 成功后上移到稀缺的美国晶硅电池片；KORE/NRI 则向储能系统集成和软件服务横向扩张。它不生产逆变器、PCS、变压器、GPU、机柜、光模块，也不是电力开发商或数据中心运营商。
+
+### 2.2 投资者心中的公司：两种互相冲突的画像
+
+**乐观画像**是“美国能源再工业化期权”：现成 5GW 自动化工厂、45X 每瓦 $0.07、G2 再叠加电池片每瓦 $0.04、美国电池片严重短缺、AI 拉动快速电源采购，最终从普通组件厂变成国内含量稀缺供应商。公司在 2026 年 1 月参加第 28 届 Needham Growth Conference，6 月又由 CTO 参加 [PV ModuleTech USA 2026](https://www.pvtechconferences.com/pv-moduletech-usa/agenda/) 的“美国组件可得性”讨论；会议议题本身印证渠道最关心的是合规、质量、采购和可交付时间。
+
+**谨慎画像**是“政策补贴、关联方和融资驱动的高贝塔制造商”：TOPCon 不独家，全球组件过剩；G1 技术、销售、服务、部分供应和历史保修仍深度依赖 Trina；45X 约占每瓦收入的重大比例；G2、KORE 和 Mo i Rana 都需要资本和客户兑现。2026 年 5—6 月，持有空头仓位的 Fuzzy Panda 发布多篇报告，质疑 PFE/FEOC、Trina 控制和收入确认。相关指控**尚非监管结论**，公司也未见逐项公开反驳；但 SEC 已公开的关联方采购、销售、服务费和内控重大缺陷足以要求投资者提高证据门槛，而不能把空头报告简单忽略。[空头披露与指控原文](https://fuzzypandaresearch.com/t1-energy-te-whistleblower-series-part-1-the-solar-cell-invoices/)
+
+### 2.3 近三年重大转型、收购和资产变化
+
+| 时间 | 事件 | 业务含义与尽调判断 |
+|---|---|---|
+| 2023 | 从卢森堡迁册至 Delaware | 为美国资本市场和产业投资重构法律主体；仍以 FREYR Battery 为名 |
+| 2024 | 暂停/退出挪威 Giga Arctic 与美国 Georgia Giga America 电芯扩产逻辑；终止 24M SemiSolid 许可 | 原电池制造主线失效，历史投入转为待售/停用资产 |
+| 2024-11 至 2024-12 | 宣布并于 2024-12-23 完成收购 Trina Solar US Holding；最终购买价分摊口径约 $406.8M | 获得 G1_Dallas，立即从研发/项目公司变为有收入的组件制造商；同时承接债务、关联交易、客户合同和供应链依赖。[SEC 10-K](https://www.sec.gov/Archives/edgar/data/1992243/000199224326000007/t1-20251231.htm) |
+| 2025-02 | FREYR Battery 改名 T1 Energy；Georgia 土地以 $50M 售出并归还 $20M 政府补助 | 正式放弃美国电芯旧方案，聚焦得州光伏；Georgia 不再是未来产能 |
+| 2025 | G1 从爬坡到 Q4 满产；全年生产 2.79GW、收入 $755.3M | 证明工厂能跑，但全年毛利率仅 7.4%，且 Q4 清理不合规电池片库存导致毛利率 -4.5% |
+| 2025 | G2 从 5GW/$850M 一次性方案改成 2.1GW Phase 1（$400—425M）+ 3.2GW Phase 2；12 月开工 | 降低首期融资门槛；同时说明此前方案过大。Phase 1 目标仍为 2026Q4 首片 |
+| 2025-10 至 2025-12 | 投资 Talon PV $5M SAFE；与 Nextpower 签美国钢框架协议；与 Treaty Oak 签 900MW/三年国内电池片组件合同 | 完善国内链，但 Talon 是少数股权、Nextpower 是采购、Treaty Oak 才是可量化 2027—2029 长协 |
+| 2025-12 | 通过还债、IP 转让至 Evervolt、供应商认证等方式重构 PFE/FEOC 合规 | 公司称符合 2026 45X；这是公司分析与供应商认证，不等于政府预先批准。[公司合规更新](https://ir.t1energy.com/news-releases/news-release-details/update-t1-energy-feoc-compliance-efforts) |
+| 2026-03 | Mo i Rana 获 50MW N-0 临时电力至 2033，最早 2027Q2 带载 | 从待售电池厂房变成 powered-site 期权；当前无运营商、租约、GPU 客户或数据中心收入。[公司公告](https://ir.t1energy.com/news-releases/news-release-details/t1-energy-secures-50mw-grid-allocation-nordic-data-center-asset) |
+| 2026-04 | 完成 $184M 4% 2031 可转债，净募约 $174.7M | 延长现金跑道，但增加约 27.0M 股潜在摊薄；G2 剩余融资仍约 $225M。[4 月融资条款](https://ir.t1energy.com/news-releases/news-release-details/t1-energy-announces-pricing-upsized-public-offering-convertible) |
+| 2026-06 | 签约收购 KORE Power，EV 约 $32M，核心为 NRI；公司预计 2027 EBITDA $15—20M | 为 BESS/数据中心市场买入口而非买美国电芯厂；原定 Q2 交割，截至 7 月 12 日未见完成公告。[交易 8-K](https://www.sec.gov/Archives/edgar/data/1992243/000121390026065997/ea0293886-8k_t1energy.htm) |
+| 2026-06 | 股东批准授权普通股从 500M 增至 1B | 不等于立即发行，但为 G2、KORE、可转债/优先股转换和后续融资提供大幅空间。[年度股东会 8-K](https://www.sec.gov/Archives/edgar/data/1992243/000121390026069670/ea0295062-8k_t1energy.htm) |
+| 2026-07-09 | 约 24.6M 份行权价 $11.50 的公私募 warrants 到期 | 因股价低于行权价，未形成对应现金和股份；消除一块高价潜在摊薄，是小幅正面。[到期 8-K](https://www.sec.gov/Archives/edgar/data/1992243/000121390026072832/ea0295645-8k_t1energy.htm) |
+
+欧洲业务尚未真正退出：收购协议要求六个月内处置，否则每月约 $2M 费用；截至 2026Q1 累计估计费用已由 2025 年末 $26.8M 增至 $35.2M，Q1 discontinued operations 净亏损 $24.3M。这使“旧业务已清空”并不成立。
+
+## 三、最新股价、估值、利润率与资产负债表
+
+### 3.1 2026-07-10 市场快照
+
+由于 2026-07-12 为周日，以下采用上一交易日收盘。[StockAnalysis/S&P Global 数据页](https://stockanalysis.com/stocks/te/statistics/)显示数据在 2026-07-12 更新，估值和财务数字存在供应商口径差异，故与 SEC 口径并列。
+
+| 指标 | 最新值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | **$6.85**；盘后 $6.87 | 2026-07-10 收盘 | 一日 -5.65%；高波动，不用单日走势证明基本面 |
+| 市值 | **$1.91B** | 2026-07-10，279.27M 股 | 与 $6.85×279.27M 一致 |
+| 企业价值 | **$2.42B** | 2026-07-12 数据页 | 反映净债务/其他索偿权 |
+| TTM PE | **N/M** | TTM 归属普通股口径净亏损约 $385.1M | 亏损企业无有效 PE |
+| Forward PE | **71.1×** | 供应商调整后 EPS 口径 | 主要基于未来盈利而非 2026 GAAP；不应与成熟组件厂 PE 直接比较 |
+| P/S | **2.18×** | 市值 / TTM 收入 $879.5M | 对当前 7.6% TTM 毛利率并不便宜 |
+| Forward P/S | **1.92×** | 共识 2026 收入 | 若 G2 延期或 45X 有争议，倍数会被动上升 |
+| TTM 收入 | **$879.5M** | 截至 2026Q1 | 几乎全部为光伏组件 |
+| 最新季度收入增速 | **+232% YoY** | 2026Q1 vs 重述后 2025Q1 | 主要是 G1 爬坡；不是同店自然增速的干净比较 |
+| FY2026 共识收入 | **$932.8M，+23.5%** | 共识截至 2026-06-16 | 高/低约 $1.00B/$889.2M；未含可验证的完整 KORE 贡献 |
+| FY2027 共识收入 | **$1.37B，+47.2%** | 同上 | 隐含 G2 国内化、G1 利用率和可能的新业务兑现。[共识页](https://stockanalysis.com/stocks/te/forecast/) |
+| TTM 毛利率 | **7.60%** | 截至 2026Q1 | 受 2025Q4 库存清理和 45X 影响 |
+| TTM 营业利润率 | **-20.08%** | 同上 | SG&A、历史业务、交易/法律成本高 |
+| TTM 净利率 | **-42.30%** | 同上 | 包含持续/终止经营、衍生品和非现金项目 |
+| 2026Q1 毛利率 | **16.37%** | SEC：$29.1M / $177.6M | 合同 mix 改善，但含 45X 对 COGS 的抵减 |
+| 2026Q1 合并净利率 | **-11.49%** | -$20.4M / $177.6M | continuing operations 净利 $3.9M 含 $30.4M 认股权/衍生品公允价值收益，不代表经营净利 |
+| Short interest | **46.2M 股；占流通股 23.7%** | 2026-06-15 附近口径 | 多空分歧极大；不是基本面结论 |
+
+### 3.2 资产负债表：账面流动比率尚可，真正可自由支配的流动性偏薄
+
+2026Q1 [10-Q](https://www.sec.gov/Archives/edgar/data/1992243/000199224326000014/t1-20260331.htm)的关键数据如下：
+
+| 项目 | 2026-03-31 | 尽调含义 |
+|---|---:|---|
+| 总资产 | $1.337B | 包含 PP&E $346.0M、无形资产 $169.1M、goodwill $57.4M、使用权资产 $162.8M |
+| 总负债 | $1.028B | 负债/资产约 76.9%，资本结构重 |
+| 普通股权益 | $236.7M | 另有可赎回优先股 $72.5M；P/B 约 8× |
+| 流动资产 / 流动负债 | $584.7M / $465.9M | 流动比率 **1.25×**、营运资本 $118.8M |
+| 速动比率 | 约 **0.48×** | 现金之外，大量是关联方应收、45X 应收、库存和预付供应商款 |
+| 不受限现金 | **$46.4M** | 真正可自由支配缓冲远小于“现金+受限现金” $123.7M |
+| 受限现金 | $77.3M | 不应等同日常运营现金 |
+| 关联方应收 | $100.0M | 单一客户/关联方回款集中 |
+| 政府补助应收 | $77.8M | 主要与 45X 有关，存在变现折价、时间与资格风险 |
+| 存货 / 供应商预付款 | $128.9M / $139.1M | 对电池片和供应链占用大；完成品只有 $5.3M，主要是原料/WIP |
+| Q1 经营现金流 | **-$72.9M** | 利润表改善没有转成现金；应收、补助应收、存货和预付均占用现金 |
+| Q1 资本开支 | **-$60.7M** | 主要推进 G2；单季 OCF+capex 现金流约 -$133.6M |
+| 2026-03-31 债务本金 | $404.5M | 含 $65M Trina reservation fee、$178.5M senior secured、$161M 2030 可转债 |
+| 4 月后 pro forma 债务本金 | 约 **$588.5M** | 加 $184M 2031 可转债，未扣后续偿还；供应商数据总债务为 $549.8M，口径含折价/租赁差异 |
+| 2026 剩余到期本金 | $32.7M | 2027/2028/2029/2030 分别约 $51.6M/$72.0M/$87.2M/$161.0M；另有 2031 可转债 |
+
+**健康度结论：4/10，偏弱但不是立即破产。** 4 月 $174.7M 净募资显著缓解 12 个月流动性；3GW 合同和 45X 也提供现金来源。但 Q1 的自由现金消耗、G2 尚缺约 $225M、欧洲每月费用、关联方集中、可转债和优先股共同说明：公司仍是**资本市场可用性决定产能兑现**的企业，而不是靠经营现金流自融资的成熟制造商。
+
+### 3.3 稀释与资本结构要按 fully diluted 看
+
+- 普通股由 2025Q1 约 155.9M 增至 2026Q1 279.0M；数据供应商给出一年 **+41.3%**，不同起点会得到更高增幅。
+- $161M 2030 可转债初始转股价约 **$6.93**，对应约 **23.2M** 股；$184M 2031 可转债转股价约 **$6.80**，对应约 **27.0M** 股。两者都接近 7 月 10 日 $6.85 股价。
+- Series B/B-1 优先股截至 Q1 潜在转换约 **36.6M** 股，转换价主要为 $1.70/$1.90；另有 Trina 反稀释权。
+- KORE 交易另有约 $9.6M closing stock、$9.6M 业绩 earn-out 和特定应收回款触发的最高 $5.5M 股票。
+- 授权股本升至 1B 只是容量，不是已发行股；但 G2 融资缺口意味着继续发行的概率不能忽视。
+
+## 四、最新及最近四次财报：五季度经营、订单与交期复盘
+
+### 4.1 五季度核心表
+
+| 财报季度 | 净销售额 / QoQ | 毛利 / 毛利率 | 合并净亏损；普通股净亏损 | Adjusted EBITDA | 组件生产 | 业务收入与关联方占比 | Backlog / bookings / 交期 / 取消信号 | 可识别 AI 数据中心收入占比 |
+|---|---:|---:|---:|---:|---:|---|---|---:|
+| **2026Q1（最新）** | **$177.6M / -50.5%**；YoY +232% | **$29.1M / 16.37%** | -$20.4M；-$21.4M | **+$9.1M** | **683.3MW**；4 月年化约 3.4GW | 100% 为组件；关联方净销售 $177.4M，**99.9%** | 维持 3GW 2026 firm contracts；2027—28 G1/G2“意向”>100% 产能；deferred revenue $90.0M。未披露正式 backlog、bookings、book-to-bill、lead time 或取消率 | **0% 直接可识别**；仅称服务 hyperscaler 电力需求 |
+| **2025Q4** | **$358.6M / +70.3%** | **-$16.1M / -4.49%** | -$189.1M；-$190.0M | **-$50.5M**（新定义重述口径） | **1.13GW**；outbound 1.34GW | 100% 组件；关联方净销售 $346.9M，**96.8%** | 公布 3GW 2026 fixed-margin/cost-plus；Treaty Oak 900MW/三年、2027 起；新增两家大型 merchant 客户。Q4 低毛利来自在 2026 PFE 规则前清理旧电池片库存 | **0% 直接可识别** |
+| **2025Q3** | **$210.5M / +58.6%** | **$21.1M / 10.05%** | -$130.6M；-$140.8M | **-$14.6M** | 约 **689MW**（由 Q4 +64% 反推） | 100% 组件；关联方净销售 $120.1M，**57.1%** | 一长期 offtake 客户延后 Q3 量至 Q4，引发 $53.2M 客户合同无形资产减值；是取消/履约风险的真实反例。G2 仍是高级谈判，不是订单 | **0% 直接可识别** |
+| **2025Q2** | **$132.8M / +148.4%** | **$32.8M / 24.68%** | -$31.9M；-$32.8M | 约 **$0.0M**（由九个月和 Q1/Q3 反推） | 约 **528MW**（由 FY 2.79GW 减 Q1/Q3/Q4 反推） | 100% 组件；关联方净销售 $66.3M，**49.9%** | 与大型美国 utility 签 **473MW**（新闻标题误写 437MW）并称按 2.6GW 低端“售罄”；58.8GW commercial pursuit funnel 是销售机会池，绝非 backlog。[Q2 演示](https://www.sec.gov/Archives/edgar/data/1992243/000121390025078694/ea025386501ex99-2_t1energy.htm) | **0% 直接可识别** |
+| **2025Q1** | **$53.5M / N/M** | **$17.8M / 33.27%** | -$16.2M；-$17.1M | **-$4.0M** | **443MW**；销售 250MW | 100% 组件；关联方占 **100%** | 新签美国开发商 253MW，称 2025 已签约 1.75GW；因贸易不确定性、PERC→TOPCon 改线和最高 800MW 潜在库存，把产量指引从 3.4GW 下调至 2.6—3.0GW | **0% 直接可识别** |
+
+来源：[2026Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1992243/000199224326000014/t1-20260331.htm)、[2026Q1 业绩](https://ir.t1energy.com/news-releases/news-release-details/t1-energy-reports-first-quarter-2026-results)、[2025Q4/FY 业绩](https://ir.t1energy.com/news-releases/news-release-details/t1-energy-reports-fourth-quarter-and-full-year-2025-results)、[2025Q3](https://ir.t1energy.com/news-releases/news-release-details/t1-energy-reports-third-quarter-2025-results)、[2025Q2](https://ir.t1energy.com/news-releases/news-release-details/t1-energy-reports-second-quarter-2025-results)、[2025Q1](https://ir.t1energy.com/news-releases/news-release-details/t1-energy-reports-first-quarter-2025-results)。
+
+**重要口径提示**：2025Q1 初报曾列收入 $64.6M、毛利 $29.0M；后续购买价分摊/有利客户合同摊销重述为收入 $53.5M、毛利 $17.8M。上表使用 2026Q1 10-Q 的最新比较口径。公司还在 2025Q4 重定义 Adjusted EBITDA 并重述历史，因此 Q1—Q3“当时报告值”和 Q4 新定义不能完全无缝比较。
+
+### 4.2 五季度读出的真实趋势
+
+1. **量已证明，利润未证明**：生产由 443MW 升至 Q4 的 1.13GW，说明工厂可达高节拍；但毛利率从 33.3% 降到 -4.5%，再回到 16.4%，主要受合同 mix、库存清理、供应链费用和 45X 影响。
+2. **Q1 2026 经营盈利改善是真的，但 GAAP continuing net income 不是纯经营利润**：Adjusted EBITDA +$9.1M；然而 continuing net income $3.9M 含 warrant fair-value gain $10.4M 和 derivative gain $20.0M，不能年化。
+3. **关联方集中重新恶化**：非关联方占比在 Q2/Q3 一度提升，Q4 和 Q1 又回到 3.2%/0.1%。公司说在拓展 utility、IPP、developer，但发票证据仍主要指向 Trina。
+4. **订单质量曾经破裂**：Q3 客户量延后最终演化为 RWE 诉讼；公司在 2026 年反诉并寻求执行最高 $100M 担保。合同不等于无风险现金流。
+5. **AI 叙事没有进入分部披露**：五个季度全部是组件收入。不存在可验证的“AI 数据中心收入占比”，正确答案是直接占比约 0%，而不是把美国新增电力需求按 AI 比例分摊给 TE。
+
+## 五、2026 最新指引、收入占比与重点产品
+
+### 5.1 2026Q1 后有效指引
+
+[2026Q1 演示材料](https://ir.t1energy.com/static-files/a7f6d22f-8995-44ba-9064-492a8b104bae)给出的有效指引很窄，投资者不能自行补成完整 P&L：
+
+| 指引项 | 公司口径 | 本报告判断 |
+|---|---|---|
+| 2026 G1 组件产量 | **3.1—4.2GW**；因新供应商 qualification 和电池片采购，信心偏向高端 | 3GW firm contracts 覆盖低端约 97%、高端约 71%；余量取决于 merchant 需求、合规电池片、Section 232 和 safe-harbor 节奏 |
+| 2026 收入 | **未给正式区间** | 以 Q4 outbound/Q1 production 口径约 $0.26—0.27/W 为锚，3.1—4.2GW 对应约 $0.81—1.13B；国内含量/关税溢价可上修，合同 mix 可下修 |
+| 2026 Adjusted EBITDA | **未给正式区间**，待 Section 232 结果和 swing factors 收敛 | 不宜用 Q1 $9.1M×4；季度 mix、45X 变现和 G2 开支差异大 |
+| G2 Phase 1 | 2.1GW；资本开支 $400—425M；目标 **2026Q4 首片** | Q1 已完成 ground/concrete/IFC 等里程碑；设备原定 6—8 月到场。真正可销售良率通常晚于“首片” |
+| G2 剩余融资 | 4 月融资后约 **$225M**；公司称目标 Q2 完成综合、以债为主方案 | 截至 7 月 12 日未见公告，已越过原时间窗；这是目前最大的单点执行风险 |
+| 2027 集成 EBITDA run-rate | G1 5GW + G2 Phase 1 2.1GW：**$375—450M** | 是“完全爬坡后的年化”而非 FY2027 保证值；不等同 2027 实际 EBITDA |
+| 完整 5GW/5GW | 年化 Adjusted EBITDA **$650—700M** | Phase 2 尚无融资、FID 或确定投产日，估值时须重折现 |
+| KORE | 若交割，2026 正 EBITDA；2027 EBITDA **$15—20M** | 未披露收入、订单、毛利率或客户项目清单；交易未见完成公告，先按 0 当前贡献处理 |
+| Mo i Rana | 50MW 最早 2027Q2 带载 | 当前没有收入指引；先安装 UPS、降压变压器和数据中心配套，并需运营商/客户/资本 |
+
+### 5.2 2026Q1 真实业务收入占比
+
+| 业务 | 2026Q1 收入 | 占比 | 同比增长 | 说明 |
+|---|---:|---:|---:|---|
+| G1_Dallas 光伏组件 | **$177.6M** | **100%** | **+232%** | 唯一报告分部；其中关联方净销售 $177.4M |
+| G2_Austin 电池片 | $0 | 0% | N/M | 在建；未来主要内供 G1，内部转移不形成合并收入 |
+| KORE/NRI BESS | $0 | 0% | N/M | 交易 6 月签署，尚未见 closing |
+| KAMS 软件/资产管理 | $0 | 0% | N/M | 属 KORE 子集，不能在交易完成前归入 TE |
+| Mo i Rana 数据中心资产 | $0 | 0% | N/M | 只有电力分配和既有建筑，无租户收入 |
+| 可识别 AI 数据中心直接收入 | **$0** | **0%** | N/M | 公司没有披露 hyperscaler、GPU cloud 或数据中心客户发票 |
+
+### 5.3 产品与型号：重点、潜力小产品及跳过项
+
+| 业务/产品 | 产品、型号与规格 | 当前销售规模 | 估计利润率/增速 | 状态与交叉验证 | AI 相关性 |
+|---|---|---:|---|---|---|
+| **G1 公用事业 TOPCon 组件** | **NEG19RC.20**：132 片半切 N-type、双面双玻、30mm 框；可取得的 Trina 继承规格为 **570—600W、最高 22.2%、2384×1134×30mm、33.7kg**，12 年产品/30 年功率保证。[继承型号数据表](https://static.trinasolar.com/sites/default/files/DT-M-0071Datasheet_Vertex_NEG19RC.20_NA_EN_2023_A.pdf) | 几乎全部 $879.5M TTM 收入的主体 | Q1 分部 GM 16.4%；本报告估计 merchant 单瓦毛利从负值到低双位数，fixed-margin/cost-plus 含 45X 可到 12%—20%；2026 量 +11%—51% vs 2025 2.79GW | 5GW 工厂、3GW 2026 firm contracts；Intertek CEA A 级。不是独家技术 | **间接中等**：为电网/园区提供电量，不是数据中心内 BOM |
+| **G1 大版型组件** | **DEG21C.20**：132 片半切、双面双玻；10-K 称可用 PERC/TOPCon。T1 官网另营销 **620W 与 720W** utility 规格，但未把 720W 与 SEC 型号一一对应，也未公开 T1-branded 完整数据表。[T1 技术页](https://t1energy.com/technology/) | 未拆分 | 720W 可降低 BOS，但 2026 ITRPV 已显示行业可到约 730W，高功率本身不形成明显溢价 | 720W 是应跟踪的小产品；需看到 UL/IEC、PVEL/银行可融资和客户 shipment，而非只看网页 | 间接中等 |
+| **G2 TOPCon 电池片** | Phase 1 2.1GW；国内多晶硅/硅片 → texture/diffusion/tunnel oxide/poly-Si/passivation/metallization → 电池片 → G1 组件 | 当前 $0；内部收入不应确认 | 单独 cell 毛利未披露；集成价值来自进口替代、$0.04/W 45X、48E 国内含量溢价和减少合规风险。若按期爬坡，是利润增量最大产品 | Corning/Hemlock、Laplace PLE、Yates；首片目标 Q4 2026，融资仍缺约 $225M | **间接偏高**：国内电池片是快速扩展美国光伏供给的瓶颈 |
+| **KORE 750 LFP DC Block** | 750kWh、LFP；成套 enclosure、BMS、HVAC、消防，可组成 AC turnkey | 对 TE 当前 $0；KORE 私有收入未披露 | 本报告估计硬件 GM 12%—22%、系统集成 EBITDA 8%—12%；行业增长高，但采购电芯价格传导强 | 产品已商业发布；KORE 网站称美国组装，电芯历史上在中国制造。交易和新订单均待核验 | **潜在高**：适合园区/电网侧 1—4h BESS，不等同机架 UPS |
+| **KORE 1340 NMC DC Block** | 1.34MWh/1.34MW，1—4h，最多 4 block/5.3MWh string，288kWh/m²；K¹55 NMC 205Wh cell、6.51kWh module、110.7kWh reference rack | 对 TE 当前 $0 | NMC 空间密度高、消防与保险成本也高；估计 GM 12%—22% | 适合空间受限项目；公开资料中的 rack 容量存在 110.7/225/335kWh 多种口径，采购前必须核 UL file 与 final BOM。[产品页](https://korepower.com/energy-storage/1340-nmc-dc-block) | 潜在高，尤其空间受限园区；仍非 GPU 直接产品 |
+| **KORE P2/P1/M1 机架** | P2 750 LFP、P1 “335” NMC、M1 110 NMC；官网总表又把 P1 容量列为 225kWh，P1 页面另列 335kWh，底层 reference rack 为 110.7kWh | 对 TE 当前 $0 | 规模未知；标准化机架有集成毛利，但资料不一致会增加工程/认证成本 | **小产品不能漏，但需降置信度**；型号命名似按功率/系列而非统一能量口径。[KORE 产品总表](https://korepower.com/energy-storage) | 园区 BESS/微电网中等；没有证据用于服务器 BBU |
+| **NRI 设计/安装/运维** | 方案设计、部件集成、集装箱化、现场施工、调试和 O&M；公司称约 1,100 个项目、50 年经验 | 对 TE 当前 $0；历史项目包括 VELCO 1.2MWh、U.S. Navy/EPRI 2.5MWh、Today’s Power 26MWh | 轻资产工程/服务毛利可能高于硬件；本报告估计 EBITDA 8%—15%，取决于 EPC 风险和项目规模 | KORE 收购的真正核心，而非已取消的 Arizona 电芯厂。[VELCO 项目](https://korepower.com/applications/pinnacle-ridge-solar-and-storage) | **潜在很高**：有机会承接数据中心 BESS/微电网，但尚无 TE 名下 hyperscaler 项目 |
+| **KAMS 软件** | 远程监控、AI 分析、实时安全/性能、资产管理 | 对 TE 当前 $0；KORE 未拆收入 | 本报告估计软件/服务 GM 50%—70%，但基数可能很小；一年后收入模型 $5—35M，是容易漏掉的小业务 | 需要验证付费设备数、ARR、续约率、网络安全和跨品牌接入，而不是仅看功能页面 | **潜力中高**：能源调度和 VPP 比单一电池柜更贴近 AI 园区价值 |
+| **Mo i Rana powered site** | 926,000 平方英尺既有建筑；50MW N-0 临时电力至 2033；仍排队 396MW，另有争议 60MW | 当前 $0 | 若出售/JV/出租，资产利润率可高但不经常；若自营，资本开支与运营风险大 | 需 UPS、降压、网络、冷却、消防、客户验收；最早 2027Q2。不是“已建成 50MW 数据中心” | **直接期权很高，当前兑现度低** |
+| **T1 品牌保修/银行可融资性** | Intertek CEA A 级是 T1 品牌组件的重要 prerequisite；公司原计划 Q2 2026 建立第三方保修保险框架 | 独立收入 $0，是销售使能项 | 可降低客户融资折价和对 Trina 品牌依赖，经济价值体现在 ASP/中标率 | A 级已完成；截至截止日未找到保修保险正式落地公告 | 间接中等 |
+
+### 5.4 明确跳过或降权的非重点业务
+
+| 跳过/降权项 | 原因 |
+|---|---|
+| NE09RH.05 / 官网 445W 住宅组件、0.5GW C&I/住宅线 | 住宅市场 2026 预计下降，且公司当前主攻 utility；没有分部收入和高增长证据 |
+| 旧 PERC 库存与低效率型号 | 公司已转换至 TOPCon，Q4 2025 清库存已造成负毛利；不是未来利润主线 |
+| Norway Giga Arctic 原电池制造、Georgia Giga America | 原制造计划已停止/出售；只保留 Mo i Rana 建筑的数据中心再利用期权 |
+| KORE KOREPlex Arizona 6—12GWh 电芯厂 | 2025 已取消并出售场地；不能计入收购后的美国电芯产能。[行业调查](https://www.energy-storage.news/us-bess-startup-kore-power-no-longer-building-arizona-cell-gigafactory/) |
+| KORE/NOMAD 移动 BESS | KORE 在 T1 交易后另行签约出售该子公司；预计不属于 T1 的核心收购价值。[2026-06-16 行业报道](https://www.energy-storage.news/us-roundup-virginias-biggest-standalone-bess-cypress-creek-raises-us3-5-billion-and-kore-sells-mobile-battery-business/) |
+| KORE e-mobility/EV charging | 与当前 AI 数据中心和公用事业储能主线弱相关，交易公告也把 NRI 作为核心 |
+| GPU/AI 加速卡、光模块/optical port、服务器 BBU、机架 UPS、变压器/PCS | **TE 不生产也未披露转售这些产品**；不能因服务 AI 用电就虚构直接 BOM。KORE/NRI 最多做园区 BESS 的选型/集成 |
+| Talon PV 4.8GW 项目 | T1 只有 $5M SAFE 少数投资，不可把 Talon 未来产能、收入或订单并入 TE |
+| Hemlock/Corning/Nextpower 产品 | 是关键供应商投入，不是 TE 对外销售产品；其收入不能重复计入 T1 |
+
+## 六、AI 基建映射：当前、间接使能与长期期权必须分层
+
+### 6.1 项目内行业资料给出的需求锚
+
+项目内 [AI 数据中心建设规模与订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)的务实情景估计：2026 年完成调试的 AI IT load 约 **7—9GW**，全栈资本约 **$44—65M/MW**；现场能源与电网增量约 **$2—10M/MW**。参考 GB300 NVL72 为约 **142kW/架、72 GPU/架**，约 507 GPU/MW IT。
+
+项目内 [自备发电与微电网](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-07-10.md)明确：太阳能/风电+BESS 可快速部署、降低边际成本，但单独不能提供 24×7 firm power；[UPS 与电池储能](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-07-10.md)又显示，数据中心 BESS 正由绿色配套变成并网和速度资产，但 UPS、BBU、园区 BESS 与长时储能是不同时间尺度。
+
+外部行业数据与本地结论一致：SEIA/Wood Mackenzie 报告称 2026Q1 美国新增 7.8GWdc 光伏，utility 合同量同比 **+15%**，由科技公司为 AI 电力采购推动；同时光伏+储能占新增发电容量 91%。[SEIA 2026Q2 Solar Market Insight 摘要](https://seia.org/news/solar-and-storage-provide-over-90-of-new-power-in-q1/)
+
+### 6.2 TE 在 AI 技术栈中的四层暴露
+
+| 层次 | TE 当前收入 | 技术栈位置 | 证据强度 | 正确估值方式 |
+|---|---:|---|---|---|
+| **直接 AI 收入** | **$0 可识别** | 无 GPU、机柜、UPS、数据中心租赁客户发票 | 高 | 当前不给 AI 专属收入倍数 |
+| **间接电力使能** | 包含在 $879.5M 组件收入中，但比例未知 | utility 光伏给公共电网/园区供能，终端可能含数据中心 | 中 | 按实际组件出货、客户、ASP、毛利估值，不按 AI CapEx 比例硬分摊 |
+| **待收购的直接能源系统能力** | $0 | NRI BESS 设计/安装/控制、KAMS 软件，可能进入数据中心园区 | 中低 | KORE closing 后，看订单、客户、项目 MW/MWh、收入和 EBITDA |
+| **长期数据中心资产期权** | $0 | Mo i Rana 50MW powered shell；最早 2027Q2 | 中低 | 用概率加权资产/JV价值，不把 50MW 直接按已出租 ARR 计入 |
+
+**核心判断**：AI 电力需求对 TE 是“行业需求加速器”，不是当前客户归因。即使 AI 建设超预期，G1 也可能因美国组件供给过剩而没有定价权；真正稀缺的是合规的美国电池片、可融资的国内含量产品、BESS/并网工程能力和已经获得可用电力的地点。
+
+## 七、每个高增长或关键产品的当前贡献、重要性与议价力
+
+评分 1—5：5 代表对 AI 栈最关键/最紧急/最供不应求/垄断或溢价能力最强。供需紧张分数越高越乐观。收入为 TE 合并口径；G2 内供、KAMS 子集不能与母业务重复相加。
+
+| 关键业务 | 当前 TE 收入贡献 | 当前收入增速 | 可观察利润率 | AI 重要性 | 时间紧迫 | 供需紧张 | 垄断能力 | 溢价能力 | 结论 |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---|
+| G1 utility TOPCon 组件 | **TTM $879.5M；2026Q1 $177.6M** | Q1 +232% YoY；2026 共识 +23.5% | TTM GM 7.6%；Q1 GM 16.4%（含 45X） | 3 | 4 | 2 | 1 | 2—3 | 可快速增加电量，但美国模块名义产能过剩；国内合规与交期可取得局部 premium |
+| G2 2.1GW TOPCon 电池片 | **$0**；未来内供 | N/M | 未披露；公司集成 EBITDA run-rate 指引很高 | 4 | 5 | 5 | 2 | 4 | 美国国内晶硅电池片是短缺层；但 TOPCon 技术非独家、其他厂在扩产 |
+| KORE/NRI BESS 硬件与系统集成 | **$0**（未交割） | KORE 未披露 | 本报告推算 EBITDA 8%—12%；公司只给 2027 $15—20M EBITDA | 4 | 5 | 4 | 2 | 3 | BESS 行业强，但系统集成竞争激烈；NRI 经验和国内控制软件是差异化，不是垄断 |
+| KAMS 软件/资产管理 | **$0**；KORE 子集 | 未披露 | 本报告估计 GM 50%—70%，规模未知 | 4 | 4 | 3 | 2 | 4 | 若能跨品牌、接 VPP/utility dispatch，利润质量可能最好；当前没有 ARR 证据 |
+| Mo i Rana 50MW powered site | **$0** | N/M | 无；开发/出售模式未定 | 5 | 5 | 5 | 3 | 4 | 可用电力地点稀缺，地理/电力具有局部垄断；但客户、资本、网络和冗余均未落实 |
+| T1 品牌保修/银行可融资性 | $0，使能收入 | N/M | 体现在 ASP/中标率 | 3 | 4 | 2 | 1 | 2 | Intertek A 解决质量门槛，不解决 PFE、融资或销售集中 |
+
+### 7.1 45X 是目前利润的核心，而不是边角补贴
+
+《45X》法定额度为组件 **$0.07/W**、电池片 **$0.04/W**、硅片 $12/m²，2030 起逐步下降。[2025 10-K 的法定额度说明](https://www.sec.gov/Archives/edgar/data/1992243/000199224326000007/t1-20251231.htm)
+
+- 5GW G1 满产的组件 45X 理论上限约 **$350M/年**。
+- G2 Phase 1 2.1GW 满产的电池片 45X 理论上限约 **$84M/年**；与组件叠加为 **$110k/MW**，但需满足资格、关联方/出售和 PFE 条件。
+- 2026Q1 政府补助应收由 $36.4M 升至 $77.8M，增加约 **$41.4M**；同期毛利仅 $29.1M。若把增加额粗略视为当季 45X 生成，剔除后毛利约 **-$12.3M、毛利率约 -6.9%**。该计算受生产/销售/应收确认时点影响，但足以说明底层制造经济性仍弱。
+- 2025 年公司出售 $160M 45X credits，现金价格为每 $1 credit **$0.91**，即约 $145.6M；9% 折价是变现成本。[45X 出售公告](https://ir.t1energy.com/news-releases/news-release-details/t1-executes-first-sale-section-45x-tax-credits)
+
+因此，T1 的“定价权”不只是向客户提价，还包括政策把每瓦 $0.07/$0.04 的价值转给制造商。PFE 资格若失效，毛利结构不是小幅下修，而可能由正转负。
+
+### 7.2 PFE/FEOC 不能用一份供应商证明一锤定音
+
+IRS 2026-02-12 的 [Notice 2026-15 摘要](https://www.irs.gov/newsroom/treasury-irs-provide-guidance-for-certain-energy-tax-credits-regarding-material-assistance-provided-by-prohibited-foreign-entities-under-the-one-big-beautiful-bill)说明，45X、45Y、48E 都要计算 material-assistance cost ratio，并允许在后续表格发布前采用 interim safe harbors。公司称其股权、债务、covered officer、IP 和供应商认证符合规则；但它仍对 Trina 有大量销售、采购、技术服务、销售代理、历史保修、费用和反稀释关系。2026Q1 向 Trina Group 采购 **$119.0M**，并产生 **$8.5M** commission/royalty/other selling cost。
+
+空头报告关于电池片来源、Evervolt 和收入确认的材料目前只是带利益立场的指控；但正确的验证方式是取得：供应商 legal entity、生产地、invoice/BoL、wafer/cell trace、PFE certification、IP beneficial ownership、45X buyer diligence 和审计底稿，而不是只接受公司或空头的结论。
+
+## 八、一年后收入贡献：基准、乐观、极度乐观三情景
+
+### 8.1 情景定义
+
+| 假设 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| G2 | 融资延后，2027H1 才形成 0.8GW 年化可用产能 | 2026Q4 首片、2027H1 爬到 2.1GW 名义产能 | 按时高良率，Phase 2 获 FID/预付款，国内 premium 扩大 |
+| G1 | 4.4—4.7GW 出货，ASP $0.28—0.31/W | 4.9—5.1GW，ASP $0.33—0.37/W | 5.2—5.4GW，ASP $0.38—0.42/W；需高于名义利用率和强关税/短缺 |
+| 45X/PFE | 保持资格，按约 $0.91/$ 变现 | 保持资格，变现折价收窄 | 完全合规且 Section 232 形成更高国内溢价 |
+| KORE | 2026Q3 才交割、温和整合 | 近期交割，NRI pipeline 转成 utility/数据中心订单 | 迅速获 hyperscaler/utility 大单、软件 attach 提升 |
+| Mo i Rana | 无客户、无收入 | 50MW 中一部分签 JV/租约 | 50MW 全部签约且 60MW 争议容量推进，形成开发费/租赁 |
+
+### 8.2 各关键业务一年后贡献
+
+| 业务 | 基准：一年后收入/增速 | 乐观：一年后收入/增速 | 极度乐观：一年后收入/增速 | AI重要性/紧迫性 | 未来供需紧张（基/乐/极） | 垄断/溢价判断 |
+|---|---|---|---|---|---|---|
+| **G1 集成组件** | **$1.25—1.45B**；较 TTM +42%—65% | **$1.65—1.90B**；+88%—116% | **$2.00—2.25B**；+127%—156% | 3/4 | 2/3/4 | 技术垄断 1；国内合规、可融资和交期使溢价由 2 升至 4 |
+| **G2 电池片** | 合并外部收入 **$0**；内嵌增量 EBITDA/毛利价值约 **$50—100M** | $0；内嵌 **$180—275M** | $0；内嵌 **$275—350M** | 4/5 | 4/5/5 | 美国 cell 稀缺使议价 4；但内部转移不能再加一遍收入 |
+| **KORE/NRI（含硬件/工程）** | **$125—160M**；TE 基数为 0，N/M | **$180—230M** | **$250—320M** | 4/5 | 3/4/5 | 垄断 2、溢价 3；以官方 2027 EBITDA $15—20M 和本报告 8%—12% EBITDA margin 反推，非公司收入指引 |
+| **KAMS 软件**（KORE 子集） | **$5—10M** | **$10—20M** | **$20—35M** | 4/4 | 3/4/4 | 若形成跨品牌平台，溢价 4；没有 ARR/续约率则仅是功能 |
+| **Mo i Rana** | **$0** | **$10—25M** | **$30—60M** | 5/5 | 4/5/5 | 局部 powered-land 垄断 3、溢价 4；可能是一次性开发/出售，不等同经常性收入 |
+| **公司合计可加总项** | **约 $1.38—1.61B** | **约 $1.84—2.16B** | **约 $2.28—2.63B** | — | — | 只加 G1 + KORE母业务 + Mo i Rana；不重复加 G2/KAMS |
+
+公司合计相对 FY2026 共识 $932.8M 的增长分别约 **+48%—73% / +97%—132% / +144%—182%**。极度乐观情景需要多个低概率条件同时成立，不能当目标价基准；市场当前 2027 共识 $1.37B 更接近本报告基准下沿。
+
+### 8.3 未来评分如何变化
+
+| 产品 | 基准一年后 | 乐观一年后 | 极度乐观一年后 | 需要出现的可观察事实 |
+|---|---|---|---|---|
+| G1 组件 | 重要性3、紧迫4、供需2、溢价3 | 3/4/3/4 | 4/5/4/4 | 非关联方长协、国内电池片 shipment、ASP 与 gross margin 同升 |
+| G2 cell | 4/5/4/4 | 4/5/5/4 | 5/5/5/5 | 融资 close、设备到场、first cell、良率、UL/客户 qualification、45X 现金化 |
+| NRI BESS | 4/4/3/3 | 4/5/4/4 | 5/5/5/4 | closing 后披露客户名、MWh、金额、交付窗、margin、取消条款 |
+| KAMS | 3/3/2/3 | 4/4/3/4 | 4/5/4/4 | ARR、连接 MWh、付费 attach、续约率、utility/VPP integration |
+| Mo i Rana | 4/4/4/3 | 5/5/5/4 | 5/5/5/5 | 具约束力租约/JV、客户信用、UPS/降压/网络 capex、50MW energization |
+
+## 九、BOM、真实单位内容量与价格传导链
+
+本节把“AI 用电”还原成物理量。**TE 的组件或 BESS 不在 GPU、机柜或光口的直接 BOM 中**；以下 `/rack`、`/GPU` 数值是满足相应负载的能源系统等价值，不是设备厂向每台服务器采购的零部件数量。光伏也不能单独保障 24×7 供电，必须与电网、可调度电源、UPS/BESS 和输变电共同使用。
+
+### 9.1 G1 600W 公开规格基准：每块、每 MW 与每个 AI 负载的内容量
+
+T1 官网当前营销 620W/720W utility 产品和最高 23% 效率，但没有在同一页面给出可核验的完整机械/BOM 数据表；因此本节不用 620W 营销数字硬套旧规格，而采用可取得的 NEG19RC.20 **600W** 数据表作物理基准。若未来发布 T1-branded 620W/720W datasheet，应按真实尺寸、重量、cell count 和证书重算。[T1 当前技术页](https://t1energy.com/technology/)
+
+| 单位 | 物理内容量 | 组件销售额内容量 | 45X 内容量 | 口径与限制 |
+|---|---:|---:|---:|---|
+| 1 块 600W 组件 | 132 个半片；约 2.70m²；33.7kg | 按 $0.26—0.34/W 为 **$156—204** | 组件 credit **$42/块** | 参数来自 NEG19RC.20 570—600W 数据表；实际 ASP 未披露，本报告采用美国 utility 国内组件情景区间 |
+| 1MWdc | **1,667 块**；约 220,000 个半片；4,506m²；56.2 吨 | **$260k—340k/MWdc** | 组件 **$70k/MW**；若使用 G2 cell，再有 cell **$40k/MW** | 不含 tracker、逆变器、变压器、EPC、土地、并网和融资 |
+| 1MW IT 连续负载 | PUE 1.20 时设施负载 1.20MW；在 25%—30% 净容量因子下需 **4.0—4.8MWdc** | **$1.04—1.63M**；6,667—8,000 块 | $280k—336k 组件 credit；G2 cell 再加 $160k—192k | 是年电量等价，不是全天候容量；夜间/天气仍需电网、firm power 与储能 |
+| 1 个 142kW IT rack | 设施功率 170.4kW；年电量等价需 **0.568—0.682MWdc** | **$148k—232k/rack**；947—1,136 块 | $39.8k—47.7k 组件 credit | 采用项目内基准 `142kW/rack、72 GPU/rack` |
+| 1 GPU | 年电量等价需 **7.9—9.5kWdc** | **$2.05k—3.22k/GPU**；13.1—15.8 块组件 | $553—663 组件 credit | 能源等价；不表示 GPU 厂商采购组件 |
+| 1 optical port | **直接内容量为 0** | **$0 直接 BOM** | $0 | 光口数量不能在没有网络拓扑、端口速率、超配比和 PUE 的情况下可靠换算成光伏采购 |
+
+上述组件 ASP 是本报告用于情景建模的假设，不是公司披露值。其合理性要用未来季度的 `收入 ÷ 实际出货 W` 核验；目前公司只披露 production/outbound，不稳定披露 sold watts，且关联方 fixed-margin/cost-plus 合同会使简单 ASP 失真。
+
+### 9.2 组件 BOM：什么环节获得多少价值
+
+IRS 对 ground-mount tracking 项目的 domestic-content direct-cost safe harbor，把组件计为项目合格直接成本的 **65.8%**；组件内部又可拆成下表。这不是 T1 实际成本表，而是税务安全港权重，适合检查价格传导和国内含量，而不适合直接计算 GAAP 毛利。[IRS 2026-11 IRB / Notice 2026-15](https://www.irs.gov/irb/2026-11_IRB)
+
+| 组件/工序 | 项目直接成本权重 | 占“组件 65.8%”的比例 | T1 当前控制程度 | 价格/政策传导 |
+|---|---:|---:|---|---|
+| 晶硅电池片 | **38.0%** | **57.8%** | 当前进口采购；G2 计划内制 | 最大单项；关税、PFE、Section 232 与 $0.04/W 45X 直接影响毛利和可融资性 |
+| 铝框 | 6.0% | 9.1% | 外采；与 Nextpower 有美国钢框架安排，非同一种 BOM | 铝/钢价格和 domestic content 传给组件/项目 |
+| 正面玻璃 | 6.0% | 9.1% | 外采 | 大尺寸双玻运输和破损率影响成本 |
+| 正面封装胶膜 | 3.8% | 5.8% | 外采 | EVA/POE 价格；双玻/高湿热可靠性影响保修 |
+| 背面材料/背板 | 3.8% | 5.8% | 外采 | 双玻产品主要是背面玻璃；税务分类不等于具体设计 |
+| 接线盒 | 1.0% | 1.5% | 外采 | 电气安全和现场失效率关键，金额较小 |
+| 边封、灌封材料 | 0.6% | 0.9% | 外采 | 低金额、高可靠性敏感 |
+| 焊带 | 1.5% | 2.3% | 外采 | 银/铜价、栅线设计影响损耗 |
+| 旁路二极管 | 0.4% | 0.6% | 外采 | 热失效风险高于成本占比 |
+| 组件生产 | **4.7%** | **7.1%** | G1 控制 | T1 现有制造护城河主要在自动化装配、质量、交付和 45X，而非独家材料 |
+| **合计组件** | **65.8%** | **100%** | — | G2 的意义是把 38.0% 的最大材料从进口/关联方风险转入美国制造 |
+
+每 1MW 的政策—价格链可简化为：
+
+`多晶硅/硅片价格 → 进口或 G2 cell 成本 → 电池片 $40k/MW 45X → G1 转化成本与良率 → 组件 $70k/MW 45X → 国内含量/PFE 可融资 premium → 客户 ASP → 45X 以约 $0.91/$ 变现 → GAAP 毛利与现金流`
+
+在本报告 $0.26—0.34/W 的组件 ASP 下，G1+G2 两层 **$0.11/W** 45X 等于销售额的约 **32%—42%**。这说明政策价值远大于普通制造净利率；但其中 G2 credit 尚未开始产生，credit 也有资格、时间差、折价和潜在审查风险。
+
+### 9.3 KORE/NRI BESS：每 MWh、每 MW 与每 rack 的内容量
+
+KORE 官网同时保留多个代际和营销口径，P1 NMC rack 曾出现约 110.7/225/335kWh 等不同配置；下表只在可以由公开规格换算时给出结果，**不能把所有代际相加为产能或销量**。[KORE 1340 NMC DC Block](https://korepower.com/energy-storage/1340-nmc-dc-block)；[KORE Energy Storage 产品页](https://korepower.com/energy-storage)
+
+| 单位/产品 | 真实能量内容量 | 数量换算 | 销售额内容量 | 对数据中心的含义 |
+|---|---:|---:|---:|---|
+| 205Wh NMC cell | 0.205kWh | **4,878 cells/MWh** | 未披露 | 电芯由亚洲供应商采购；不是美国自产 cell |
+| 6.51kWh NMC module | 6.51kWh | **153.6 modules/MWh** | 未披露 | module/rack 配置需以项目 submittal 为准 |
+| 110.7kWh NMC rack | 110.7kWh | **9.03 racks/MWh** | 未披露 | KORE 旧/现行网页口径不一致，项目尽调必须锁定 SKU |
+| 750kWh LFP DC Block | 0.75MWh | **1.33 blocks/MWh** | 未披露 | LFP 安全/循环寿命更适合 stationary；仍需 PCS、EMS、HVAC、消防 |
+| 1.34MWh NMC DC Block | 1.34MWh | **0.746 blocks/MWh** | 未披露 | 能量密度较高；热失控隔离和保险要求更敏感 |
+| 1MW/4h BESS | 4MWh | 约 5.33 个 750kWh LFP block 或 2.99 个 1.34MWh NMC block | 按 turnkey **$150—250/kWh** 假设为 **$0.60—1.00M** | 还需 PCS/变压器、开关设备、控制、EPC、并网；KORE/NRI 未必获得全部合同额 |
+| 1 个 142kW rack、4h 全负载 | PUE1.2 后为 **0.682MWh** | 约 0.91 个 LFP block 或 0.51 个 NMC block | **$102k—170k/rack** 的 turnkey 储能等价 | 园区 BESS 通常服务整站，不是一 rack 一套；真实容量按 UPS ride-through、峰谷、备用和并网叠加设计 |
+| 1 GPU、4h | **9.47kWh/GPU** | — | **$1.42k—2.37k/GPU** | 能源等价，不是服务器 BOM |
+| 1 rack、5—10min ride-through | **14.2—28.4kWh** | 远小于 4h 配置 | $2.1k—7.1k turnkey 等价 | 短时 UPS/BBU 与 2—4h 园区 BESS 是不同产品；KORE 的主产品不能自动替代 server BBU |
+| 1 optical port | **直接内容量 0** | 0 | $0 | BESS 由功率、持续时间和可靠性等级决定，不由光口数直接决定 |
+
+Turnkey $150—250/kWh 是本报告对美国 utility/C&I 系统交付的情景假设，不是 KORE 报价。KORE/NRI 可能只供应 DC block、集成、EPC 或软件中的一部分，因此 **KORE revenue/MWh 必须等交割后用项目合同反推**，不能把全站 EPC 金额全部归给 TE。
+
+本报告采用的 4h BESS 工程价值链基准如下；区间随时长、并网电压、消防、土建和合同边界变化，不能逐项取上限后相加：
+
+| BOM/服务层 | Turnkey 价值占比基准（情景范围） | KORE/T1 可捕获范围 | 主要价格传导 |
+|---|---:|---|---|
+| 电芯、module、rack | **50%（45%—55%）** | KORE 目前主要依赖外部/海外 cell；可在 module/rack 设计和采购上捕获部分 | lithium/carbonate、LFP/NMC、cell vendor、海运、关税/PFE → $/kWh |
+| DC block enclosure、BMS、HVAC、消防 | **15%（12%—18%）** | KORE block/assembly 的核心硬件价值 | 钢材、制冷、消防规范、UL/AHJ → block premium 与 warranty reserve |
+| PCS/inverter | **10%（8%—12%）** | 通常外采；NRI 做选型/集成 | SiC/IGBT、功率、grid-forming、效率 → $/kW，非单纯 $/kWh |
+| 升压变压器、开关/保护 | **7%（5%—10%）** | NRI 可纳入系统合同，设备多外采 | 铜/电工钢、长交期、并网电压 → $/MW 与交期 premium |
+| EMS/SCADA/KAMS | **3%（2%—5%）** | KAMS 的直接可捕获层；后续 O&M/订阅可另计 | 调度收益、可用率、网络安全、VPP 接口 → 软件费/站点或 $/MW-year |
+| EPC、土建、并网、commissioning | **15%（12%—20%）** | NRI 的核心服务价值，取决于是否总包 | labor、liquidated damages、许可、interconnection → 项目 margin/风险准备 |
+
+价格链为：`外部 cell $/kWh + 关税/PFE → module/rack 良率与保修 → DC block + BMS/热管理/消防 → PCS $/kW → 变压器/并网长交期 → NRI EPC/commissioning → KAMS/O&M`。若 cell 价格下跌，客户通常要求硬件降价；NRI 的工程、交期和性能保证以及 KAMS 的订阅价值，才可能减弱这种 pass-through。
+
+### 9.4 Mo i Rana 50MW：从电力分配到可出租 AI 容量
+
+| 项目 | 换算结果 | 关键缺口 |
+|---|---:|---|
+| 当前电力分配 | **50MW，N-0 临时安排至 2033** | 数据中心通常需要 N+1/N+2；N-0 不能等同 hyperscaler-ready |
+| PUE 1.20 的 IT 容量 | **41.7MW IT** | 需降压、开关设备、UPS、备用电源、冷却、网络与 commissioning |
+| 142kW/rack | 约 **293 racks** | 高密度 rack 数取决于液冷、机房布局和实际 PUE |
+| 72 GPU/rack | 约 **21,100 GPUs** | 只是功率容量换算；没有客户、GPU 型号、租约或采购承诺 |
+| 926,000ft² 建筑 | 每 MW IT 约 22,200ft² | 面积充足不代表适配；改造成本和可用率未披露 |
+| 争议中的额外容量 | **60MW** | 尚非可用权利，不应计入 110MW backlog 或估值基数 |
+
+T1 公告称最早 2027Q2 可交付，故当前“内容量”只是 powered-shell option。只有签署具约束力租约/JV、披露 $/MW 开发成本、网络延迟、冗余和 energization 条件后，才能把它转换为每 MW 年租金或资产出售价值。[Mo i Rana 公告](https://ir.t1energy.com/news-releases/news-release-details/t1-energy-secures-50mw-grid-allocation-nordic-data-center-asset)
+
+## 十、当前产能、供应链采纳与认证阶段
+
+### 10.1 当前可交付能力：名义产能不等于可销售产能
+
+| 业务 | 2026-07-12 名义/公开能力 | 美元计年产能 | 实际利用/可交付证据 | 供应链采纳阶段 | 结论 |
+|---|---:|---:|---|---|---|
+| **G1 组件** | **5.0GW/年** nameplate | 按 $0.26—0.34/W 为 **$1.30—1.70B/年**；45X 理论 $350M/年 | 2025 产 2.79GW；2026Q1 683.3MW；4 月节拍年化约 3.4GW | 已量产；3GW 2026 firm contracts；Intertek CEA A；2025 有 utility/merchant 交付 | 已通过“厂能生产”验证，尚未通过“非关联方、满产、稳定正现金毛利”验证 |
+| **G2 Phase 1 cell** | **2.1GW/年** nameplate；当前商业产出 **0** | cell 内嵌价值按 $0.04/W credit 即 $84M/年；若按 cell transfer price $0.08—0.13/W，物理产值约 **$168—273M/年**，但合并收入为 0 | 地基/混凝土/IFC 推进；设备原定 6—8 月到场；融资仍缺约 $225M | Treaty Oak 900MW 合同是未来含美国产 cell 组件的首个量化采纳；没有第二个已披露长期合同 | 工程建设/客户预采纳，尚未到 first cell、良率或量产 qualification |
+| **KORE DC blocks/NRI 集成** | KORE 官网称超过 **2GWh/年**；公司公告经地方媒体转述称 Vermont 装配能力由 60MWh 扩至约 **3.4GWh/年**；美国 cell 产能 **0** | 按 $150—250/kWh 全系统等价值为 **$300—850M/年**，但实际可归属 KORE 的收入显著低于或等于此范围 | Arizona 12GWh cell 厂已取消；Vermont 是 pack/assembly；公开实际年出货和 backlog 缺失 | NRI 称约 1,100 个项目/50 年经验；有 VELCO、U.S. Navy、Today’s Power 案例 | 交割前无法确认资产边界、在手订单、工厂利用率和客户 warranty 接受度。[KORE 认证/产能页](https://korepower.com/certifications)；[地方行业报道](https://www.waterburyroundabout.org/business-archive/bellows-named-ceo-at-kore-power-as-company-halts-arizona-expansion) |
+| **KAMS** | 连接 MWh/站点数未披露 | ARR/美元 capacity 无法可靠估计 | 有产品与控制能力描述，无可审计 ARR/续约率 | 作为 KORE/NRI 项目附着，跨品牌能力未量化 | 技术存在、商业规模未验证 |
+| **Mo i Rana** | 50MW grid allocation；当前 IT 可交付 **0MW** | 当前收入能力 **$0** | 最早 2027Q2；无客户/合同/机电改造完成证据 | powered-site 开发前期 | 资源权利已前进一步，尚非 operating data center |
+
+KORE 产能口径来自企业网页与行业报道，二者不一致，且**装配 GWh ≠ 美国自产 cell GWh ≠ 已售 GWh**。Arizona cell gigafactory 取消、Nomad 移动储能业务已出售，意味着 TE 若完成收购，获得的是一个缩小后的 stationary BESS/集成/软件资产组合，而不是原先宣传的垂直一体化美国电芯平台。[KORE Arizona 厂取消报道](https://www.energy-storage.news/us-bess-startup-kore-power-no-longer-building-arizona-cell-gigafactory/)；[Nomad 出售报道](https://www.energy-storage.news/us-roundup-virginias-biggest-standalone-bess-cypress-creek-raises-us3-5-billion-and-kore-sells-mobile-battery-business/)
+
+### 10.2 认证、银行可融资与客户 qualification
+
+| 产品 | 已公开阶段 | 尚缺的关键门槛 | 对收入的意义 |
+|---|---|---|---|
+| G1 NEG19RC.20 | 继承产品规格与量产历史；2026-06 获 Intertek CEA bankability **A** | T1 品牌对应 SKU 的完整 UL/IEC certificate、PVEL/RETC 结果、BOM 变更控制、长期 field failure/warranty reserve | A 级提高贷款人接受度，但不是单一项目的最终 bankability approval，也不保证 ASP premium。[Intertek CEA 公告](https://www.globenewswire.com/news-release/2026/06/17/3313397/0/en/T1-Energy-Receives-A-Grade-in-Bankability-Assessment-from-Intertek-CEA.html) |
+| G1 720W 营销规格 | 官网出现 720W | 精确型号、datasheet、UL/IEC、可靠性和实际 shipment | 未完成证据闭环前，只列潜力小产品，不计独立收入 |
+| G2 TOPCon cell | 工艺/设备和 Treaty Oak 商务路线明确 | factory acceptance、first cell、效率分布、yield/OEE、客户 BOM qualification；cell 通常随成品组件做 UL/BOM 认证 | “first cell”不等于 2.1GW 可售；BOM 改变可能触发模块认证/贷款人复核 |
+| KORE NMC/LFP DC blocks | 官网矩阵列示 **UL 1973、IEC 62619**；cell/module/rack 做 **UL 9540A** 测试 | 具体 SKU/证书编号、UL 9540 system listing、NFPA 855/AHJ、PCS/EMS 兼容、消防/保险、项目并网 | UL 9540A 是热失控测试方法，不等于整个 BESS 系统已获所有项目许可。[KORE certifications](https://korepower.com/certifications) |
+| KAMS/NRI | 项目案例和控制能力 | NERC-CIP/网络安全、utility SCADA/VPP 接口、SLA、第三方渗透测试、跨设备认证 | 对数据中心/utility 客户，网络安全与 availability 会决定软件 attach |
+| Mo i Rana | 50MW 电力分配 | 具约束力 energization、N+1、Tier/客户设计、消防/建筑许可、网络、环境与 commissioning | 没有这些门槛，不应称“认证中的 50MW 数据中心” |
+
+## 十一、一年后产能、采纳与认证：三情景
+
+“一年后”指 **2027-07 前后的可用年化能力**，不是从现在到那时的累计收入。美元产能采用产品层收入/等价值区间；内供 G2 不重复计入合并销售。
+
+| 业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| **G1 可销售产能** | 4.4GW；按 $0.28—0.31/W 为 **$1.23—1.36B/年** | 5.0GW；$0.33—0.37/W 为 **$1.65—1.85B/年** | 5.3GW；需 OEE/加班突破名义产能，$0.38—0.42/W 为 **$2.01—2.23B/年** |
+| **G1 采纳/认证** | 3GW 续约大部兑现；第二非关联长协仍小；A 级维持 | 两个以上 2027—28 长协、T1 SKU 完整认证/可靠性数据 | hyperscaler/utility 直接签约、国内含量 premium 被多个项目贷款人认可；720W 量产 shipment |
+| **G2 可用 cell 能力** | 0.8GW 年化；物理产值等价 **$64—104M**；45X $32M | 2.1GW；**$168—273M**；45X $84M | Phase 1 2.1GW 高良率 + Phase 2 已 FID/在建；可签产能 3—5GW，但 2027-07 不假设 Phase 2 全产 |
+| **G2 采纳/认证** | Treaty Oak qualification 进行中，少量内部 shipment | Treaty Oak 批量、第二客户签约；G1 新 BOM 获主要贷款人批准 | 2027—28 产能预售、效率/良率达一线 TOPCon 水平、PFE/45X diligence 无保留 |
+| **KORE/NRI 可交付量** | 0.6GWh/年；全系统等价 **$90—150M** | 1.5GWh；**$225—375M** | 2.5GWh；**$375—625M**；仍低于 3.4GWh 理论 assembly ceiling |
+| **KORE/NRI 采纳/认证** | legacy 项目续单；产品 SKU/证书清理 | 至少一个 >100MWh utility/C&I 或数据中心园区项目；UL9540/AHJ 路线清晰 | 多个具名项目、KAMS 高 attach；获得 hyperscaler/大型 utility vendor approval |
+| **KAMS** | 连接 0.6GWh 项目，但 ARR 仍低 | 跨 1.5GWh、公布 ARR/续约率 | 跨 2.5GWh + 第三方资产，形成独立软件订阅 |
+| **Mo i Rana** | 可交付 0MW；仍开发 | 50MW 电力和一期机电达到 customer-ready；部分预租 | 50MW 全部签约/带载准备，额外 60MW 权利推进；不假设 110MW 已带载 |
+
+### 11.1 情景概率与先后关系
+
+- **基准 55%**：G2 融资晚于计划、首片后慢爬坡；G1 仍靠现有合同，KORE 温和交割整合；Mo i Rana 不贡献现金收入。
+- **乐观 30%**：G2 融资/设备/良率连续达标，国内 cell premium 被 Treaty Oak 和第二客户验证；KORE 把历史项目能力转成可披露订单。
+- **极度乐观 15% 以下**：Section 232/PFE 同时抬高国内价格，G2 高良率，KORE 获数据中心大单，Mo i Rana 签客户；多个条件相关且依赖同一资本市场，不能简单相乘后仍给高概率。
+
+认证的正确事件链是：`设备 FAT/SAT → first cell → 效率/良率分布 → G1 新 BOM 小批 → UL/BOM/可靠性复核 → 客户/贷款人 qualification → 批量 shipment → 现场失效率`。公司只公布 first cell 或某一证书，尚不足以证明这条链已经完成。
+
+## 十二、订单积压、供给与未来一年业务增速
+
+### 12.1 公司没有披露可审计 backlog；可用的代理指标如下
+
+| 指标 | 当前读数 | 能算什么 | 不能算什么 |
+|---|---:|---|---|
+| 2026 firm contracts | **3.0GW** | 覆盖 3.1—4.2GW 指引的 **71.4%—96.8%**；按 $0.26—0.34/W 粗算 billing pool **$780M—1.02B** | 合同金额、季度排程、客户终端、取消条款、实际 ASP 和毛利未披露；不能直接叫 GAAP backlog |
+| Treaty Oak | **900MW，2027—2029** | 平均约 300MW/年；按 $0.30—0.40/W 粗算总值 **$270—360M**、年均 $90—120M | 实际年度分布、take-or-pay、cell qualification、终止权未披露 |
+| 2027—28 indication | 公司称需求 **>100% G1/G2 capacity** | 说明营销兴趣和国内含量需求 | 非约束 indication，不是 booking/backlog，更不是收入 |
+| Q2 2025 commercial pursuit funnel | **58.8GW** | 顶层销售机会池 | 不能乘 ASP 得“订单金额”；没有胜率、阶段和去重口径 |
+| 2026Q1 deferred revenue | **$90.0M** | 客户预付款/合同负债提供部分履约能见度；当季从期初 deferred revenue 认列约 $52.2M | 不等于未来总合同额，也不能判断取消率 |
+| 2025Q3 客户延后 | 导致 $53.2M customer-contract intangible impairment | 证明排程变化能造成真实会计损失 | 不是已披露取消率，但应进入情景 haircut |
+| KORE/NRI | 未披露 backlog/bookings/B2B | 只能用历史项目和官方 2027 EBITDA 目标做边界 | 2—3.4GWh 工厂数字不能替代订单；未交割不能并表 |
+| Mo i Rana | 50MW allocation | 是稀缺资源权利 | 没有客户时不是 50MW 数据中心 backlog |
+
+公司未披露标准化 **bookings、book-to-bill、lead time、cancellation rate 或 backlog roll-forward**。因此本报告拒绝给出伪精确 B2B；建议下一季直接向公司索要 `期初 backlog + 新签 + 取消/价格调整 - 当季收入 = 期末 backlog`，并按关联方/非关联方、fixed-margin/cost-plus、merchant 和年度拆分。
+
+### 12.2 渠道、会议与供应侧验证
+
+- **需求侧强**：SEIA/Wood Mackenzie 称 2026Q1 utility solar 合同量同比 +15%，科技公司为 AI 电力采购是驱动之一；美国储能 Q1 新装 **9.7GWh、+32% YoY**，其中 utility 7.8GWh，预计 2030 前累计超过 610GWh。[SEIA 储能摘要](https://seia.org/news/largest-q1-on-record-for-energy-storage/)
+- **模块供应不紧**：2026Q1 全美平均 module price 约 **$0.34/Wdc**，较上年 $0.43/Wdc 下降约 21%；7 月的 OPIS 渠道数据又显示美国组装组件 Q2 约 **$0.30/W**、大致持平。ITRPV 2026 路线图显示全球组件名义产能约 **1,460GW**、shipment 约 **706GW**，TOPCon 已成主流，高功率并无普遍显著 premium。[Q1 市场数据转述](https://pv-magazine-usa.com/2026/06/10/u-s-q1-solar-installations-decline-27-year-over-year/)；[Q2 OPIS 渠道价格](https://pv-magazine-usa.com/2026/07/10/u-s-assembled-module-prices-steady-at-0-30-w/)；[VDMA ITRPV](https://vdma.eu/en-GB/international-technology-roadmap-photovoltaic)
+- **美国 cell 才紧**：SEIA 2026 年 3 月资料显示美国组件制造约 **66GW operational**，而 operating cell 仅 **3.2GW**，另有约 **25GW cell** 在建。G2 处在短缺环节，但正在与 Qcells、Suniva/Heliene、ES Foundry 等同时扩产。[SEIA 2025 年度数据表](https://seia.org/wp-content/uploads/2025/12/SolarCheatSheet_2025_YIR.pdf)
+- **业内会议关心“可融资和可交付”，不是只看峰值瓦数**：PV ModuleTech USA 2026 的核心议题包括美国供应可得性、可靠性、采购与融资，T1 CTO 参会。这与 Intertek A、PFE traceability 和新 BOM qualification 的重要性一致。[PV ModuleTech 议程](https://www.pvtechconferences.com/pv-moduletech-usa/agenda/)；[会议技术综述](https://www.pv-tech.org/meeting-americas-energy-challenge-pv-module-supply-quality-and-reliability-in-focus-at-pv-moduletech-usa-2026/)
+- **政策供给约束未落地为已知税率**：BIS 的 polysilicon/imported derivatives Section 232 调查仍列为调查事项；截至本报告截止日，未在 BIS 官方状态页找到最终措施，不能把潜在关税当既成 ASP。[BIS Section 232 调查页](https://www.bis.gov/about-bis/bis-leadership-and-offices/sies/section-232-investigations)
+- **公司转换证据偏弱**：原称 G2 综合融资和 KORE 交易均在 Q2 完成，截止 7 月 12 日均未见公司公告；2027 除 Treaty Oak 外也未披露第二个定量长期客户。这使强行业需求不能自动等于 TE 高增长。
+
+### 12.3 未来 12 个月交付模型
+
+这里的“未来 12 个月”是约 **2026-07 至 2027-06 的累计 GAAP 收入**，区别于第八节“一年后年化能力”。取消率不是公司披露值，而是对合同延期、融资和 qualification 的模型 haircut。
+
+| 假设/结果 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| G1 可交付量 | 3.6—4.1GW | 4.3—4.8GW | 4.8—5.2GW |
+| G1 实现 ASP | $0.275—0.298/W | $0.314—0.358/W | $0.375—0.408/W |
+| 合同取消/延后 haircut | **8%—12%** | **3%—6%** | **0%—3%** |
+| **G1 收入** | **$0.99—1.22B** | **$1.35—1.72B** | **$1.80—2.12B** |
+| KORE/NRI 收入 | **$60—100M** | **$150—220M** | **$250—320M** |
+| Mo i Rana/其他 | **$0** | **$0—15M** | **$20—50M** |
+| **合计收入** | **$1.05—1.32B** | **$1.50—1.95B** | **$2.07—2.49B** |
+| 较 TTM $879.5M | **+19%—50%** | **+71%—122%** | **+135%—183%** |
+| 最关键约束 | G2 延期、G1 ASP 低、KORE 整合 | 国内 cell qualification、第二长协 | 5GW 物理上限、同时获得高 ASP 和高利用率 |
+
+极度乐观上沿要求接近满产且 ASP 升至 $0.40/W 左右，还要 KORE 快速并表；这与当前全球模块过剩相冲突，只有美国贸易壁垒、PFE 合规短缺和高国内含量 premium 同时出现才可能。基准的真正下行尾部则是：G2 延后、客户把排程再后移、45X/PFE 受查，届时收入可能仍增长但现金毛利恶化。
+
+### 12.4 交期推断而非公司披露
+
+| 产品 | 本报告推断 lead time | 为什么 | 需要核实 |
+|---|---|---|---|
+| 已认证 G1 BOM 的 merchant module | **1—2 个季度** | 工厂已有节拍，主要受 cell/玻璃/物流和客户项目排程约束 | PO 日、生产 release、FCA/FOB、现场交付日 |
+| 新供应商/新国内 cell 的 G1 module | **2—4 个季度** | 要完成 cell qualification、BOM 变更、可靠性和贷款人复核 | qualification lot、UL engineering notice、客户 acceptance |
+| G2 从 first cell 到稳定可销售量 | **2—6 个季度** | ramp、效率分布、良率、OEE 和新 BOM 批量验证均晚于首片 | weekly yield、bin distribution、scrap、产线 uptime |
+| NRI/KORE utility BESS | **3—8 个季度** | 设计、采购、PCS/EMS、AHJ、并网、EPC 与 commissioning | 具名项目、MWh、Notice to Proceed、LD、COD 和取消条款 |
+| Mo i Rana | **至少至 2027Q2** | 公司自己给出的 earliest delivery，且机电/客户尚缺 | lease/JV、network、N+1、permit、energization |
+
+## 十三、竞争格局、替代技术与客户切换成本
+
+### 13.1 每个关键业务的竞争位置
+
+| 业务 | 主要竞争者/替代供应 | T1 的相对优势 | T1 的相对弱点 | 垄断判断 |
+|---|---|---|---|---|
+| **G1 美国 utility 晶硅组件** | Qcells、JinkoSolar、Canadian Solar、Illuminate USA、SEG Solar、Waaree、Mission Solar；进口 Trina/JA Solar/LONGi 等；薄膜替代为 First Solar | 已运行的 5GW Dallas 自动化厂、美国上市/管理控制、45X、2026 3GW 合同、Intertek A | TOPCon/BOM 非独家；2025—26 大部分销售/采购仍与 Trina 相关；保修历史短；全球和美国 module capacity 充裕 | **无技术垄断**；国内合规、排产和 bankability 只形成项目级稀缺 |
+| **G2 美国 TOPCon cell** | Qcells Georgia；Suniva + Heliene；ES Foundry；其他在建美国 cell 项目；合规进口 cell | 美国 operating cell 明显少于 module capacity；与 G1 共址链条短；Corning/Hemlock 国内材料路线；Treaty Oak 预采纳 | Phase 1 未融资完成、未首片；工艺设备可采购，TOPCon 非专有；同行扩产会在 2027—28 释放 | **短期供给瓶颈，不是持久技术垄断**；溢价取决于资格、良率、税务和同行投产速度 |
+| **G1/G2 集成国内含量组件** | Qcells 全链、Suniva/Heliene 组合、First Solar CdTe 全美制造路线 | 一旦 G2 量产，可同时获得 cell+module 45X，且帮助客户满足 48E domestic content | 对外购 wafer、多种辅材仍有依赖；PFE trace 和关联方安排复杂；第一代全链产品需重新 bankability | 可能有 **12—24 个月窗口型溢价**；随着美国 cell 扩产，溢价会收窄 |
+| **KORE DC block/NRI 系统集成** | Tesla Megapack、Fluence、Sungrow、CATL/BYD、Canadian Solar e-STORAGE、Wärtsilä；另有大型 EPC/集成商 | NRI 设计/现场经验、Vermont assembly、KAMS、可按项目组合多部件；低收购价降低回报门槛 | 缺少自产 cell、规模采购和全球 bankability；KORE 历史战略收缩；实际 backlog/收入/利用率未披露 | **无硬件垄断**；可在美国控制、工程经验和定制速度上获得中等溢价 |
+| **KAMS 软件** | Tesla Autobidder、Fluence Mosaic/Nispera、Wärtsilä GEMS、Stem Athena、Power Factors 等 | 能与自家 block/NRI 工程结合，理论上形成 install-base 数据闭环 | ARR、连接 MWh、续约、跨品牌能力和网络安全均未披露；规模远小于成熟平台 | 若只配自家设备，锁定能力中等；若开放跨品牌并接 utility/VPP，才可能形成数据/工作流护城河 |
+| **Mo i Rana powered site** | 挪威/瑞典/芬兰已获电力和光纤的数据中心园区，如 atNorth、Green Mountain、Bulk、EcoDataCenter 等；客户也可选择美国园区 | 既有 926k ft² 建筑、低温环境、50MW 电力权利，地点资源不可复制 | N-0、临时至 2033；网络/冗余/运营商/客户/capex 未落实；偏远地点延迟和人才约束 | **地点级局部稀缺**，不是运营能力垄断；客户签约前 option value 高、可兑现度低 |
+
+### 13.2 TOPCon 是主流，但“主流”不等于护城河
+
+ITRPV 2026 显示 crystalline silicon 仍占约 98% 市场，TOPCon 已成为主流量产路线；因此 T1 选择 TOPCon **方向正确、工艺成熟、融资接受度较高**。反面是设备和工艺广泛可得，竞争最后落到 cell efficiency/yield、银耗、双面率、衰减、可靠性、产线 OEE、国内含量和成本，而不是技术名称。
+
+| 替代技术 | 相对 TOPCon 优点 | 对 TE 的风险时点 | T1 的应对 |
+|---|---|---|---|
+| **BC/背接触** | 正面无栅线、效率高、外观好 | 2027—30 在高效市场份额上升；若效率差扩大，会压 TOPCon ASP | G2 设备/工艺能否升级未披露；保持 720W/高效率 BOM 而非只比版型 |
+| **HJT** | 低温系数、高双面率、工艺步骤较少 | 银/设备成本下降后可争夺 utility 高端 | 需要不同产线，G2 专用 TOPCon 会有转换资本成本 |
+| **钙钛矿-硅 tandem** | 理论效率显著更高 | ITRPV 预计 2027 后开始小规模，耐久/量产良率仍是门槛 | 不应现在停建 TOPCon；但 Phase 2 必须保留升级空间，避免 20 年资产完全锁死 |
+| **CdTe 薄膜** | 高温/弱光性能、供应链与晶硅不同；First Solar 美国制造/回收体系强 | 已是当前替代，不是远期概念；大型 utility 客户可直接切换 | T1 只能靠国内 cell+module 成本、效率、交期和客户多元化竞争 |
+| **进口低价组件** | 成本低、全球供给巨大 | PFE/关税放松或供应可追溯后，国内 premium 快速压缩 | 降低无补贴成本；不能把 $0.11/W credit 当永久制造效率 |
+
+**720W 不是单独护城河。** 更大尺寸/更高功率可减少单位 MW 的组件、夹具、线缆和人工，但如果重量、风载、tracker 兼容、运输或可靠性变差，BOS 节省会被抵消。只有同等面积效率、完整认证和实际项目 LCOE 改善，才能带来 premium。
+
+### 13.3 BESS 与 AI 电力替代方案
+
+- **LFP 是 stationary storage 的主流低成本/高循环路线**；KORE 750 LFP 顺应主流，但电芯外购意味着主要成本和供应安全由 cell vendor 决定。
+- **NMC 的价值是体积能量密度**，适合空间受限地点；其热安全、消防和保险成本更高。KORE 1340 若能用更小 footprint 获得项目许可，会有细分价值，但不是行业唯一产品。
+- **2—4h BESS 不能替代 24×7 firm generation**。数据中心可用燃气轮机/往复式发动机、燃料电池、核电/PPA、电网双路接入、长时储能或需求响应；BESS 更擅长 UPS bridge、峰谷、并网排队、黑启动/微网和短时备用。
+- **长时替代**包括铁空气、液流、钠离子和热储能。若 AI 园区需要 8—100h 断网自治，普通 LFP/NMC 的成本会随时长线性增加，KORE 当前 DC block 不具结构性优势。
+- **软件替代成本低于硬件重装成本**：成熟 PCS/EMS 若采用开放协议，客户可在续约时切换优化软件；KAMS 必须通过控制性能、收益提升和安全合规，而不是专有锁定来留客。
+
+### 13.4 客户切换成本：签约前低、投运后高
+
+| 产品/阶段 | 切换成本 | 典型代价 | 对 T1 议价力的含义 |
+|---|---|---|---|
+| G1：项目前期/未锁 BOM | **低—中** | 重做报价、轻量设计和采购；同尺寸/认证 SKU 可替换 | 全球供给过剩时难提价；合同质量比“funnel”重要 |
+| G1：贷款人批准/现场已装 | **高** | 重做 energy model、认证/保修/融资审查；已装更换含拆装、停运和索赔 | 已交付客户 sticky，但保修责任也随之长期存在 |
+| G2 cell：组件 BOM qualification 前 | **中** | 客户可选另一国内 cell 或进口合规 cell | 首片阶段没有锁定；需效率、良率和价格取胜 |
+| G2 cell：G1/客户/贷款人批准后 | **中—高** | 更换 cell 会改变组件电性能、可靠性和税务追溯，可能触发认证复核 | 国内 cell 可形成 1—3 年规格锁定，仍非永久垄断 |
+| BESS：项目 NTP 前 | **中** | 重做 layout、报价、PCS/EMS 接口和许可材料 | Tesla/Fluence等替代多；KORE 很难凭硬件提价 |
+| BESS：设计冻结/commission 后 | **高** | 重新做消防、AHJ、并网、SCADA、保修和现场调试；停机损失 | NRI/KAMS 可通过 O&M/软件获得持续收入，但客户会要求长期支持能力 |
+| Mo i Rana：租约前 | **低** | hyperscaler 可把负载迁到其他 powered site | 没有签约前 50MW 只是招商资产 |
+| Mo i Rana：客户投入机电/GPU 后 | **很高** | 迁移 GPU、网络、冷却和数据；停机与重建成本巨大 | 若先获得信用良好的长租，地点可形成强现金流；T1 需先承担开发兑现风险 |
+
+## 十四、风险矩阵与证伪指标
+
+Q1 10-Q 集中披露了现金、债务、关联方、海关、诉讼和重大内控缺陷，是本节优先证据；空头材料只作为待核线索，不当作已经证实的事实。[2026Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1992243/000199224326000014/t1-20260331.htm)
+
+| 风险 | 概率/影响 | 已知事实 | 观察到什么才改善 | 触发什么则恶化 |
+|---|---|---|---|---|
+| **G2 融资/工期** | 高/极高 | 4 月融资后仍缺约 $225M；目标 Q2 完成，截止日未公告；首片目标 Q4 | 具约束力综合融资、用途/利率/担保清晰；设备 SAT、首片和良率按月披露 | 再延一季、设备款拖欠、capex 上修或高折价股权融资 |
+| **45X/PFE/FEOC** | 中高/极高 | Q1 政府补助应收增量约 $41.4M，高于当季毛利；关联方/IP/供应 trace 复杂 | 独立税务意见、45X 买方完成 diligence、供应商逐层 PFE certification、现金回款 | IRS/买方保留、credit 折价扩大、追溯调整或 restatement |
+| **客户与关联方集中** | 高/高 | Q1 一个关联方客户约占 100% 收入和应收；向 Trina Group 采购 $119.0M | 非关联方收入连续两个季度 >50%，应收回款与 shipment 对应 | 关联方应收上升、内部条款调整、延期或净额确认争议 |
+| **组件 ASP/全球过剩** | 高/高 | TOPCon 标准化、全球名义产能远高于 shipment；美国 Q1 module price 下降 | ASP、出货和剔除 45X 毛利同时改善 | 出货增长但毛利/现金流恶化；高库存或价格保护赔付 |
+| **供应链/贸易** | 中高/高 | G1 仍需进口 cell；Section 232 未定；PFE/关税/CBP 可改变可用供应 | 多个已 qualification 非 PFE 供应商；G2 cell 稳定内供 | 进口扣留、供应商失格、cell 短缺或成本无法传给客户 |
+| **CBP/关税** | 中/中高 | 公司披露约 **$31.7M** 相关潜在/应付事项，并就 IEEPA 关税提出约 **$33.5M** 退款主张 | 退款/结案且无新增 detention | 退款失败、补税/罚款、货物受限 |
+| **RWE 合同诉讼** | 中/高 | 客户延期后发生诉讼；公司反诉并寻求执行最高 **$100M** 担保 | 和解回款且产能转售、不影响客户信誉 | 败诉、担保不可执行、额外减值或销售 pipeline 受损 |
+| **First Solar 专利/ITC** | 中/高 | 晶硅 TOPCon 行业面临 First Solar 专利主张；公司披露相关程序风险 | 无禁令、和解成本可控、供应商 indemnity 有效 | ITC exclusion/order、许可费或产品重设计影响 shipment |
+| **内控和重述** | 高/高 | 重大缺陷未修复；2025/季度口径有重述，warrant/derivative/终止业务复杂 | 审计师验证 remediation；准时准确申报；非 GAAP bridge 稳定 | 再重述、延迟 filing、审计师变更或 credit revenue 调整 |
+| **DOJ/SEC 调查事项** | 中/高 | 公司与一名高管/董事在 2025-11 收到 DOJ grand-jury subpoenas，涉及该人士 2023H2 股票出售；SEC 随后提出类似自愿文件要求。公司称交易源于获批质押贷款，结果未知 | DOJ/SEC 结案且无指控、罚款或治理变更 | indictment/enforcement、更多传票、管理层离任或披露控制问题 |
+| **流动性与摊薄** | 高/高 | Q1 OCF -$72.9M、capex -$60.7M；4 月 2031 可转债本金 $184M；授权股升至 1B | G1 经营现金转正、项目融资 non-recourse、capex 在预算内 | 再发行可转债/优先股/普通股、利息资本化或 covenant 压力 |
+| **可转债压顶** | 中高/中高 | 2025/2026 convert 初始转股约 $6.80/$6.93，接近 $6.85 股价 | 股价上涨来自盈利、公司用现金/低摊薄方式管理 | 大量转换/对冲压制、股价下跌后再融资更贵 |
+| **KORE 交易/资产质量** | 高/高 | EV 约 $32M；原定短期 closing 未见完成；Arizona cell 厂取消、Nomad 出售；订单未知 | closing 8-K/财务报表、purchase-price allocation、具名 backlog/MWh、客户保修和 2026 正 EBITDA | 延期/终止、隐藏 warranty/working-capital 缺口、关键人员/客户流失 |
+| **KORE 电芯与认证** | 中高/高 | 美国自产 cell 为 0；产品网页规格不一致；系统级认证需项目确认 | 锁定供应商、证书编号、UL9540/AHJ、保险和安全记录 | cell vendor/PFE 失格、事故/召回、项目许可失败 |
+| **Mo i Rana 开发** | 高/中高 | 50MW 是 N-0 临时分配，无客户；最早 2027Q2 | 信用客户长租/JV、capex/电价/网络/冗余披露 | 60MW 争议失败、50MW 条件变化、改造超支或招商失败 |
+| **欧洲退出与持续费用** | 高/中高 | G1 收购安排要求处置欧洲资产；延迟产生约 $2M/月费用，2026Q1 discontinued operations 净亏损 $24.3M | Mo i Rana/其他资产出售或 JV close，月费终止且现金回收清晰 | 再延长、减值、环境/拆除/员工负债增加，数据中心改造反而扩大资本需求 |
+| **保修/银行可融资历史** | 中/高 | 工厂/品牌控制时间短；历史产品/服务与 Trina 关系深 | T1 自有 warranty reserve、保险和多年 field data | 大规模 PID/裂纹/接线盒/玻璃问题或贷款人拒绝新 BOM |
+| **空头指控与监管关注** | 中/高 | Fuzzy Panda 有空头利益，指控未成为监管结论；公开 SEC 数据仍显示高关联方/内控风险 | 公司逐项用 invoice/BoL/供应链/审计证据反驳，无 SEC/IRS 调查 | 监管问询、审计证据支持指控、管理层/董事离任 |
+
+### 14.1 90/180/365 天监测仪表盘
+
+| 时间窗 | 绿灯 | 黄灯 | 红灯 |
+|---|---|---|---|
+| **未来 90 天** | G2 剩余融资 close；KORE closing 且交付 audited financials；Q2 非关联方收入明显提升；设备按计划到场 | 延期但给出资金来源和新硬日期；KORE 仅签 amendment | 无融资、KORE 终止/再延期、Q2 现金继续 >$100M 级消耗、再重述 |
+| **未来 180 天** | G2 first cell + 效率/良率；第二个 2027 长协；45X 新一批以 ≥$0.91/$ 变现 | 只公布首片照片、没有 yield/客户 qualification | 首片跨到 2027、45X 无法出售、供应/法律限制 shipment |
+| **未来 365 天** | G2 1.5—2.1GW 年化良率；G1 剔除 credit 后毛利改善；KORE 具名 >100MWh 项目；Mo i Rana 签客户 | 产量有但现金毛利弱；KORE 只讲 pipeline | Phase 1 再融资/再延期、KORE EBITDA 未转正、Mo i Rana 电力权利弱化 |
+
+最容易被市场误读的指标是“首片”“年化节拍”“pipeline”和“allocated MW”。本报告只把 `合格批量 shipment、客户验收、现金回款、具约束合同、可重复毛利` 当作完成。
+
+## 十五、估值含义与综合结论
+
+### 15.1 当前估值在买什么
+
+按 2026-07-10 股价 $6.85、约 $1.91B 市值、$2.42B EV，市场支付的不只是 2026 共识 $932.8M 收入，还预付了部分 G2、政策 credit、KORE 和 AI powered-site 价值。若价格和净债务不变，不同 NTM 收入情景对应：
+
+| 情景 | NTM 收入 | 当前市值/收入 | 当前 EV/收入 | 必须兑现的利润条件 |
+|---|---:|---:|---:|---|
+| 基准 | $1.05—1.32B | **1.45—1.82×** | **1.83—2.30×** | 45X 保持、G1 现金毛利转正、KORE 不吞噬现金 |
+| 乐观 | $1.50—1.95B | **0.98—1.27×** | **1.24—1.61×** | G2 qualification/国内 premium、KORE 订单和非关联客户同时改善 |
+| 极度乐观 | $2.07—2.49B | **0.77—0.92×** | **0.97—1.17×** | 接近满产仍有高 ASP，且 KORE/Mo i Rana 快速贡献；概率低 |
+
+这些倍数**没有计入未来摊薄、追加债务、KORE purchase accounting 或 Mo i Rana capex**，只能说明当前价格对收入路径的敏感性。对 TE 更重要的是 EV/可持续 EBITDA，而当前 EBITDA 高度依赖 45X、合同 mix 和 accounting timing；用 forward PE 71.1×做主锚并不稳健。
+
+### 15.2 综合评分
+
+| 维度 | 评分（1—5） | 判断 |
+|---|---:|---|
+| 终端行业需求 | **4** | 美国电力、光伏和 BESS 需求强，AI 是增量驱动之一 |
+| 当前产品竞争力 | **3** | G1 已量产、A 级 bankability；但 TOPCon 普通、供应和客户集中 |
+| 未来产品稀缺性 | **4** | 美国 cell、BESS 工程和 powered site 都有稀缺性，但尚未完成 |
+| 当前技术护城河 | **2** | 工艺/硬件可替代；真正护城河尚需从交付、数据、客户和低成本形成 |
+| 订单可见度 | **3** | 2026 3GW 较强；2027 只有 900MW 可量化，其他是 indication/funnel |
+| 盈利质量 | **2** | 45X 大于当季毛利量级；GAAP 净利受衍生品公允价值影响 |
+| 资产负债表 | **2** | 4 月融资缓冲，但自由现金消耗、G2 缺口、可转债/摊薄显著 |
+| 执行记录 | **2** | G1 ramp 成功；G2 融资时间窗、KORE closing 和历史项目均有延迟/重构 |
+| 当前直接 AI 暴露 | **1** | 可识别收入约 $0 |
+| AI/能源平台期权 | **4** | KORE/NRI、KAMS、Mo i Rana 和电力需求构成实质期权 |
+
+### 15.3 最终投资判断
+
+**T1 Energy 不是一家已经完成转型的 AI 基础设施公司，而是一家用已量产的美国组件厂去融资三个期权的事件驱动型制造商。** 现有 G1 证明了生产能力和收入规模，却尚未证明剔除 45X 后的可持续毛利；G2 位于美国供应链最紧的 cell 环节，是价值最大的单点；KORE/NRI 提供进入 BESS/微电网的低价入口；Mo i Rana 提供真实但早期的 powered-land 期权。
+
+- **基准判断**：公司能继续增长，但 2026—27 仍依赖外部资本和政策，合理跟踪方式是 milestone-based，而非把 2027 完全爬坡 EBITDA 直接折现为当前利润。
+- **最强多头证据**不是 AI 新闻，而是：G2 non-dilutive/低摊薄融资、2.1GW 可销售良率、第二个非关联长期客户、45X 稳定现金化、KORE 具名 MWh 订单和正经营现金流。
+- **最强空头证据**也不是单一空头文章，而是：再融资/首片继续延迟、PFE/45X 证据不闭环、关联方销售不退、剔除 credit 仍负毛利、KORE 交易无法关闭或需要追加营运资金。
+- **AI 结论**：当前 AI 直接收入按 **0** 处理；G1 是间接电力供应，G2 是合规供应链瓶颈，KORE 是待交割的能源系统入口，Mo i Rana 是 2027+ 地点期权。四者必须分别估值。
+
+因此，TE 适合被视为“**高上行、高摊薄/执行/政策风险的美国能源制造平台期权**”，不适合被视为已验证的高毛利复利公司。任何仓位都应围绕上表红绿灯调整，而不是围绕管理层的总可服务市场或 AI 标签调整。
+
+## 十六、资料来源、估算方法与问题映射
+
+### 16.1 证据层级和关键来源
+
+| 层级 | 本报告采用的资料 | 用途 |
+|---|---|---|
+| **A：监管/法定原文** | [2026Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1992243/000199224326000014/t1-20260331.htm)、[2025 10-K](https://www.sec.gov/Archives/edgar/data/1992243/000199224326000007/t1-20251231.htm)、KORE/融资/股本相关 8-K、[IRS Notice 2026-15](https://www.irs.gov/newsroom/treasury-irs-provide-guidance-for-certain-energy-tax-credits-regarding-material-assistance-provided-by-prohibited-foreign-entities-under-the-one-big-beautiful-bill)、BIS Section 232 状态 | 财务报表、债务、关联方、法律事项、交易条款、税收资格和调查状态 |
+| **B：公司一手资料** | [2026Q1 业绩公告](https://ir.t1energy.com/news-releases/news-release-details/t1-energy-reports-first-quarter-2026-results)、[Q1 演示](https://ir.t1energy.com/static-files/a7f6d22f-8995-44ba-9064-492a8b104bae)、[2025Q4/FY 公告](https://ir.t1energy.com/news-releases/news-release-details/t1-energy-reports-fourth-quarter-and-full-year-2025-results)、Q2/Q3/Q1 公告、[KORE 交易公告](https://ir.t1energy.com/news-releases/T1_Energy_Enters_Battery_and_Data_Center_Infrastructure_Markets)、Mo i Rana 公告、T1/KORE 产品页 | 指引、产量、产品、管理层目标、工程里程碑和案例；对未审计预测降权 |
+| **C：产业/技术资料** | SEIA/Wood Mackenzie 2026Q2 市场摘要、VDMA **ITRPV 2026**、PV ModuleTech USA 2026 议程/技术综述、Intertek CEA assessment、KORE certifications | 行业需求、产能/价格、技术路线、会议渠道、银行可融资和产品认证 |
+| **D：市场/媒体/利益相关来源** | [StockAnalysis TE statistics](https://stockanalysis.com/stocks/te/statistics/)、[forecast](https://stockanalysis.com/stocks/te/forecast/)、Energy-Storage.news、Fuzzy Panda | 7 月 10 日市场快照、共识、KORE 历史和待核指控；均用 A/B 级来源交叉核验或明确标注不确定性 |
+
+### 16.2 项目内行业资料的使用边界
+
+本报告只读取了任务允许的 `行业调研/` 相关产业资料，并用于建立 AI 电力的单位口径和产业边界：
+
+- [AI 数据中心建设规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)：2026/2027 AI IT load、每 MW full-stack/电力层价值量、142kW/72 GPU 参考 rack。
+- [数据中心电力接入与高压变电](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-07-10.md)：并网、变电和 energization 的真正瓶颈。
+- [数据中心自备发电与微电网](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-07-10.md)：太阳能+BESS 与 24×7 firm power 的边界。
+- [数据中心 UPS 与电池储能](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-07-10.md)：UPS/BBU/园区 BESS 不同时间尺度和每 MW 价值量。
+
+没有调用 `特征量化/`，也没有读取或继承其他公司的正式调研报告；公司事实、财务和市场数据均从本次联网搜索重新建立。
+
+### 16.3 估算规则与数据质量
+
+- **市场数据截止**：股价/市值/倍数以最近交易日 **2026-07-10** 为快照；公司/行业事件搜索截止 **2026-07-12**。
+- **报告季度**：最新季度为 2026Q1；2026Q2 尚未发布。五季度表中的生产反推值、净利润反推值均明确标注，未伪装为公司披露。
+- **收入不重复**：G2 内供和 KAMS 子集不与 G1/KORE 母业务重复相加；KORE 未交割、Mo i Rana 未签客户时当前贡献均按 $0。
+- **AI 收入口径**：只有发票/合同可指向数据中心客户才算直接 AI；公用事业电站可能给数据中心供电，只算间接使能。
+- **BOM 口径**：组件实物来自公开 datasheet；IRS 权重是 safe harbor，不等于 T1 实际成本；rack/GPU 是能源等价；optical-port 直接内容量为 0。
+- **订单口径**：firm contracts、deferred revenue、indication、funnel、grid allocation 分开；没有公司披露便不制造 backlog/B2B/取消率。
+- **情景区间**：ASP、取消率、KORE revenue/MWh、利润率和 Mo i Rana 收入均为本报告模型假设，必须用后续 shipment、合同和报表更新。
+- **法律/空头事项**：SEC 披露事实与利益相关方指控分开；没有监管/法院结论时不作定罪式判断。
+
+### 16.4 用户九项问题的对应位置
+
+| 要求 | 报告位置 |
+|---|---|
+| 1. 整体业务、投资人画像、三年变动、产业链、估值、资产负债表 | 第一至三节 |
+| 2. 最新及最近四次财报、订单/交期、业务/利润/AI 占比 | 第四节五季度表 |
+| 3. 2026 最新指引、业务占比、产品型号、重点/潜力小产品和跳过项 | 第五节 |
+| 4. 当前关键业务收入、增速、AI 重要性、紧迫、供需、垄断/溢价 | 第六、七节 |
+| 5. 一年后基准/乐观/极度乐观贡献和评分 | 第八节 |
+| 6. BOM、每 MW/rack/GPU/optical port、当前产能/采纳/认证 | 第九、十节 |
+| 7. 一年后产能/采纳/认证三情景 | 第十一节 |
+| 8. 真实订单/供给推断未来一年增速、渠道/客户/交付/取消 | 第十二节 |
+| 9. 竞争者、技术主流性、风险、替代方案、客户切换成本 | 第十三、十四节 |
+
+> 本报告用于研究，不构成投资建议。TE 的估值对税务资格、融资、关联方合同和产线良率高度敏感；任何单一新闻都不足以替代现金流、客户验收和审计证据。

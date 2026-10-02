@@ -1,0 +1,378 @@
+# 行业调研：EDA工具、接口IP与Chiplet IP（2026-06-11）
+
+> 研究对象：EDA工具、接口IP与Chiplet IP。  
+> 报告日期：2026-06-11。  
+> 项目内资料边界：本报告仅使用 `基本面/行业调研/产业背景/` 下的产业背景资料，并以 `行业调研/行业索引.md` 确认标准行业名和正式分类目录；未读取、引用或继承 `公司调研/`、`日度资料/`、`特征量化/` 或其他项目目录。  
+> 外部资料范围：优先使用 2026 年以来头部公司财报、投资者材料、标准组织公告、产业会议、技术会议与公司产品公告；行业报告数字只作为交叉验证，不作为单一依据。  
+> 金额口径：除特别注明外，均为美元。`未来3个月` 指 2026-06-11 后约一个季度的订单、收入或年化 run-rate 观察窗口；`一年` 指 2027 年中附近；`两年` 指 2028 年中附近。预测数字为本报告模型估计，不等同公司指引。
+
+## 0. 核心结论
+
+EDA工具、接口IP与Chiplet IP不是单一行业，而是 AI 芯片军备竞赛的三层“设计税”和“复杂度税”：第一层是 EDA 工具，覆盖验证、仿真、形式验证、布局布线、Signoff、3DIC/封装协同、多物理场、EDA Cloud 与 Agentic EDA；第二层是接口 IP，覆盖 HBM3E/HBM4、PCIe 6/7/8、CXL、UCIe、112G/224G/448G SerDes、DDR5/LPDDR6/GDDR7、NoC 与 Cache Coherent Fabric；第三层是 Chiplet IP 与使能平台，覆盖 Die-to-Die PHY/Controller、KGD/DFT/SLM、安全根、Chiplet 封装参考流、光电 I/O 与可复用 Subsystem。
+
+本报告的最重要判断是：2026 年 AI 数据中心建设越乐观，EDA/IP/Chiplet 的单位价值占比反而越可能上升。原因不是 AI 加速卡数量线性增加，而是每一代 AI 芯片都在同时推高五个复杂度变量：先进制程、HBM 带宽、2.5D/3D 封装、Scale-up/Scale-out 互联、机柜级功耗与热设计。项目内产业背景对 2026 年 AI 基础设施采用乐观假设：全球 AI 加速器及强绑定价值链 2026 年基准约 3750-5200 亿美元，乐观 5200-7200 亿美元，极度超预期乐观 7200-9600 亿美元；美国 AI 数据中心建设 2026 年基准约 3100-3900 亿美元，乐观 4200-5200 亿美元，2027 年基准约 4300-5600 亿美元，乐观 6200-7800 亿美元。在这个背景下，EDA/IP 的收入弹性虽然滞后于芯片出货，但利润质量和确定性更好。
+
+2026 年最可能放量的技术路径不是“开放 Chiplet 市场一夜成熟”，而是更现实的六条路径：
+
+1. HBM3E 向 HBM4 的控制器、PHY、VIP、封装协同与 Signoff 迁移。
+2. 3DIC/2.5D CoWoS、EMIB、Foveros、RDL/桥接封装的热-电-机械协同设计。
+3. PCIe 6.0 服务器部署、PCIe 7.0 验证、PCIe 8.0 256GT/s 预研共同拉动 SerDes、Retimer、VIP 与测试工具。
+4. UCIe 3.0 进入 2026 设计窗口，但 2026-2027 收入主要来自闭环大客户平台和半开放生态，真正通用 Chiplet 交易市场仍偏 2028+。
+5. Agentic EDA 从 demo 转为付费模块，优先落在验证、覆盖率闭环、约束生成、ECO、SI/PI debug 和 3DIC 检查。
+6. AI ASIC 定制化放量，Broadcom、Marvell、Arm、Arteris、Rambus、Alphawave/Qualcomm、Synopsys、Cadence 等接口 IP 与子系统供应商的设计 win 价值上升。
+
+投资价值排序上，长期 ROIC 与毛利最优的层级依次是：Signoff/Verification/3DIC EDA、HBM/PCIe/CXL/UCIe/SerDes 硅验证接口 IP、NoC/Coherent Fabric 与安全管理 IP、AI 辅助 EDA 软件平台、Chiplet KGD/SLM/测试软件；硬件型 Retimer、Switch、光电 I/O 芯片也具备高增长，但资本开支、库存周期和客户集中风险更高。纯封装产能和通用 Chiplet 市场平台的毛利和定价权相对弱，需要绑定先进封装、标准认证、软件工具链和关键客户才能获得高 ROIC。
+
+## 1. 2026-2027 AI 计算中心建设下的机遇、挑战与技术路径
+
+### 1.1 行业机会：AI 芯片从单芯片竞争变为系统级设计竞争
+
+2026 年的 AI 计算中心建设已经不是单独采购 GPU，而是采购“AI Factory”级系统：GPU/ASIC、CPU、HBM、封装、Retimer、Scale-up Fabric、NIC/DPU、液冷、电源、存储和软件栈一起交付。对 EDA、接口 IP 和 Chiplet IP 来说，机会来自四个增量：
+
+| 增量来源 | 对 EDA/IP 的直接拉动 | 2026-2027 观察点 |
+|---|---|---|
+| 高端 AI 芯片代际加速 | 每一代 HBM、SerDes、NoC、DFT、SLM、验证 IP 都要重做或大幅升级 | Blackwell Ultra、Rubin、MI350/MI400、TPU、Trainium、Maia、MTIA、Broadcom/Marvell Custom ASIC |
+| 先进封装面积扩大 | 传统 die-level EDA 不够，必须做 package-aware、thermal-aware、power-aware、mechanical-aware signoff | CoWoS 月产能、interposer 面积、HBM 堆叠数、封装良率、基板与测试瓶颈 |
+| Scale-up 网络复杂度上升 | NVLink、UALink、PCIe/CXL、Ethernet、Retimer、Switch 共同推高高速接口 IP/VIP 与测试需求 | PCIe 6/7/8、112G/224G/448G SerDes、1.6T/3.2T 光模块、CPO |
+| 定制 AI ASIC 增多 | Hyperscaler 自研 ASIC 需要可复用 CPU/NoC/HBM/PCIe/CXL/UCIe/安全 IP 和参考流 | Broadcom AI 半导体收入、Marvell Custom XPU、Arm CSS/Total Design、Arteris 客户数 |
+
+外部第一手信息与项目内背景互相印证：SEMI ESD Alliance 披露 2025Q4 电子系统设计收入 54.66 亿美元，同比增 10.3%，其中 SIP 收入 20.83 亿美元，同比增 18.3%；Cadence 2026Q1 收入 13.84 亿美元，同比增 28.9%，并给出 2026 年收入 59.0-59.7 亿美元、非 GAAP 经营利润率 44.75%-45.75% 的区间；Arm FY2026 年收入达到约 40 亿美元，Q4 收入 12.4 亿美元，同比增 34%；Rambus 2026Q1 收入 1.722 亿美元，同比增 46%，产品收入 8970 万美元，同比增 94%；Arteris 2026Q1 收入 1420 万美元，同比增 10%，ACV plus royalties 达 6300 万美元，同比增 18%。这些数字说明：即使半导体周期内部出现分化，EDA/IP 层仍在通过 AI、HBM、数据中心和定制 ASIC 获得超行业增速。
+
+### 1.2 挑战：开放 Chiplet 叙事很强，但 2026 真实瓶颈更多在验证、良率和责任边界
+
+Chiplet 不是把多个 die 摆在一起那么简单。2026 年的真实挑战集中在七个环节：
+
+1. **硅验证成本**：HBM4、UCIe 3.0、PCIe 7/8、224G/448G SerDes 都需要 test chip、真实封装、真实板级环境和长期可靠性验证。
+2. **KGD 与良率责任**：Chiplet 生态必须回答“哪个 die 坏了、谁负责返修、谁承担封装报废”，这会直接影响商业化速度。
+3. **热-电-机械耦合**：AI 加速器功耗进入 1kW-5kW 级系统讨论，Interposer、HBM、VRM、液冷和板级通道互相影响。
+4. **标准成熟与客户锁定的矛盾**：UCIe 3.0 规格增强到 64GT/s、管理与安全能力，但 2026-2027 大客户仍倾向闭环优化，完全开放互换不会很快到来。
+5. **IP 版本风险**：接口 IP 一旦出错会导致 tapeout 延误，客户更愿意选 silicon-proven 供应商，后进入者需要更长验证周期。
+6. **EDA 工具链碎片化**：Die、Package、Board、Thermal、Optics、Firmware 过去分属不同团队，AI 机柜级设计要求跨域收敛。
+7. **出口管制和地缘替代**：美国、欧洲、台湾、韩国、日本和中国大陆在 EDA、IP、先进封装、HBM、测试设备上角色不同，国产替代会增加局部机会，也会增加验证和生态成本。
+
+### 1.3 2026-2027 出货量最大 AI 芯片技术路径对 EDA/IP 的映射
+
+以下 AI 芯片路径来自项目内 `产业背景` 资料，本报告未从项目其他目录读取信息。这里的重点不是复述芯片本身，而是提取它们对 EDA、接口 IP 与 Chiplet IP 的需求。
+
+| 2026-2027 关键 AI 芯片/平台 | 技术路径背景 | 对 EDA/IP/Chiplet 的拉动 |
+|---|---|---|
+| NVIDIA B200/GB200、B300/GB300 Blackwell Ultra | HBM3E、CoWoS-L、NVLink/NVSwitch、液冷 rack-scale | HBM3E PHY/Controller/VIP、3DIC signoff、热/电/机械协同、NVLink 生态周边高速互联、先进封装良率建模 |
+| NVIDIA Vera Rubin/Rubin | 2026H2 伙伴供货、2027 主放量；HBM4、NVLink 6、ConnectX-9、BlueField-4、Spectrum-6 | HBM4 IP、224G/更高速 SerDes、CPO/光电 I/O、机柜级 EDA、多 die power integrity 与 thermal-aware floorplan |
+| AMD MI350/MI355X、MI400/Helios | 3nm/HBM3E 向 HBM4、UALink/open ecosystem 迁移 | HBM4、PCIe/CXL/UALink 周边 IP、开放 scale-up fabric 验证、Chiplet package co-design |
+| Google TPU v7 Ironwood | 大规模 Pod、HBM、高带宽互联、自研 ASIC | 定制 AI ASIC 参考流、NoC/Coherent Fabric、HBM 接口、验证平台、SLM |
+| AWS Trainium2/Trainium3 | UltraServer、HBM3E/HBM4 趋势、自研加速器 | 自研 ASIC IP 复用、HBM/PCIe/CXL、云内 scale-out fabric、DFT/SLM |
+| Microsoft Maia 200 后续平台 | TSMC 先进制程、HBM3E、云工作负载优化 | HBM、NoC、验证、热设计、firmware-aware EDA |
+| Meta MTIA 300/400/后续 | 推理优化、自研 ASIC、HBM/片上 SRAM 组合 | 低功耗 AI ASIC 流、片上互联、HBM/DDR、编译器与硬件协同验证 |
+| Broadcom 定制 AI ASIC/XPU | 2026 AI 半导体收入高速增长，深度绑定 hyperscaler | 高速 SerDes、HBM、Chiplet/封装 IP、客户定制 SoC 平台化 |
+| Marvell Custom XPU/AI networking | 数据中心定制芯片、互联、光电、存储网络 | SerDes、PCIe/CXL、Ethernet、DSP、Chiplet 互联与封装协同 |
+| 区域性/专用 AI 加速器：Ascend、Cerebras、Groq 等 | 国产替代、wafer-scale、LPU、推理专用架构 | 本地 EDA/IP 替代、特殊封装/互联、编译器与架构协同验证 |
+
+### 1.4 新技术成熟和放量时间：三情景预测
+
+| 技术方向 | 2026 基准 | 2026 乐观 | 2026 极度超预期乐观 | 2027 基准 | 2027 乐观/极度超预期 |
+|---|---|---|---|---|---|
+| HBM4 Controller/PHY/VIP | Rubin/MI400/定制 ASIC 设计窗口锁定，收入以授权和 NRE 为主 | 2026H2 test chip 与真实客户 tapeout 明显增加 | HBM4 供给改善，多个 hyperscaler 追单，IP 价格和 NRE 上行 | 高端 AI 新 tapeout 主流采用，量产收入开始可见 | HBM4/HBM4E 成为高端默认配置，接口 IP 进入多项目复用红利 |
+| 3DIC/2.5D EDA | CoWoS、EMIB、Foveros、桥接封装 signoff 成刚需 | EDA 从 die/package 协同扩大到 rack thermal/power | Top 20 AI 芯片团队强制引入统一 3DIC 数字孪生 | 3DIC EDA 收入增速高于传统 EDA | 封装容量扩张和大 interposer 推高工具 ASP |
+| UCIe 3.0 D2D | 设计导入，标准互操作仍有限 | 64GT/s、管理、安全、lane repair 促成更多 test chip | 开放 chiplet 生态获得 hyperscaler 背书 | 部分 AI/网络/CPU 平台量产，收入从 IP 授权扩到验证/测试 | 2028 前置设计窗口，通用 Chiplet 市场雏形出现 |
+| PCIe 7/8 与 224G/448G SerDes | PCIe 6 部署、PCIe 7 验证、PCIe 8 预研 | Retimer、Switch、VIP、T&M 预算同步增加 | AI rack 互联瓶颈使 PCIe 8/448G 项目提前 | PCIe 7 高端平台验证，224G 更普遍 | 448G、PCIe 8 设计 win 成 2028 量产前哨 |
+| Agentic EDA | 验证/覆盖率/ECO/约束生成先付费 | 与企业 EDA 合同绑定，座席/云算力一起涨价 | Top 客户使用内部设计数据训练专用 agent，工具厂商价值定价 | 从功能模块变为端到端 flow assistant | 设计周期缩短被验证后，合同续约 ASP 明显上行 |
+| 光电 I/O/CPO/光 Chiplet | 仍以网络侧和示范平台为主 | 1.6T 光模块与 CPO 原型增加 | 部分 scale-up fabric 开始采用光 I/O | AI rack 光电协同设计预算上升 | 2028 量产前，光 I/O IP 与封装 EDA 形成高溢价小市场 |
+
+## 2. 已开始放量的关键产品：市场规模、渗透率与利润率预测
+
+### 2.1 已放量产品总表
+
+| 已放量产品/子方向 | 2026 当前状态 | 未来3个月市场规模区间 | 一年市场规模区间 | 两年市场规模区间 | 渗透率路径 | 毛利率/利润率预测 |
+|---|---:|---:|---:|---:|---|---|
+| 核心 EDA：验证、仿真、形式验证、Signoff、P&R | 全球 EDA/SIP 2025Q4 年化约 219 亿美元，2026 继续双位数增长 | 基准 58-66 亿；乐观 65-75 亿；极度乐观 75-85 亿季度年化 | 基准 260-300 亿；乐观 300-350 亿；极度乐观 350-420 亿年化 | 基准 310-370 亿；乐观 380-470 亿；极度乐观 480-600 亿 | Top AI/先进制程团队几乎 100%；中小 ASIC 80%+ | 软件毛利 80%-90%；龙头非 GAAP 经营利润率 35%-46%；极度乐观下通过云算力和平台合同提价 |
+| AI 辅助/Agentic EDA 模块 | 从演示转为验证、覆盖率、ECO、SI/PI 付费模块 | 基准 2.5-7 亿；乐观 6-12 亿；极度乐观 12-20 亿订单/ARR run-rate | 基准 15-30 亿；乐观 30-55 亿；极度乐观 55-90 亿 | 基准 35-70 亿；乐观 75-130 亿；极度乐观 130-220 亿 | Top 50 硅团队 2026 付费渗透 20%-35%，2027 40%-65%，2028 65%-85% | 毛利 80%-90%；增量经营利润率高，但云算力成本会压低早期毛利 2-5pct |
+| HBM3E/HBM4 Controller、PHY、VIP | HBM3E 已放量，HBM4 进入 2026H2/2027 设计窗口 | 基准 2.0-3.5 亿；乐观 3.0-5.5 亿；极度乐观 5.5-8.0 亿 | 基准 9-14 亿；乐观 14-22 亿；极度乐观 22-35 亿 | 基准 16-26 亿；乐观 28-45 亿；极度乐观 45-70 亿 | 高端 AI 新 tapeout HBM IP 渗透 85%-95%；HBM4 在新高端设计中 2027 达 25%-45%、2028 达 50%-75% | License/royalty 毛利 85%-95%；硅验证领先者有 10%-30% 溢价；稀缺 HBM4 PHY 可更高 |
+| PCIe 6/7 Controller/PHY/VIP 与 CXL IP | PCIe 6 部署，PCIe 7 1.0 已发布，PCIe 8 Draft 0.5 开始 | 基准 2.0-3.5 亿；乐观 3.5-5.5 亿；极度乐观 5.5-8.5 亿 | 基准 10-16 亿；乐观 16-25 亿；极度乐观 25-40 亿 | 基准 18-30 亿；乐观 32-50 亿；极度乐观 50-80 亿 | AI 服务器/加速卡 PCIe 6 渗透 2026 20%-35%，2027 35%-60%；PCIe 7 2027 以验证为主 | IP 毛利 80%-90%；VIP 和合规工具毛利接近软件；高速 PHY 需承担 test chip 成本 |
+| 112G/224G SerDes、Ethernet/Retimer/Switch IP | 112G 成熟，224G 部署，448G 预研 | 基准 4-7 亿；乐观 6-10 亿；极度乐观 10-15 亿 | 基准 20-32 亿；乐观 32-50 亿；极度乐观 50-75 亿 | 基准 35-60 亿；乐观 65-100 亿；极度乐观 100-150 亿 | AI 机柜高速互联相关芯片 2026 224G 设计渗透 30%-50%，2027 50%-70% | IP 毛利 80%+；硬件芯片毛利 55%-76%；供不应求产品可维持高 ASP |
+| PCIe/CXL Retimer 与 Fabric Switch 芯片 | Astera 等已证明 AI 服务器 attach rate 与毛利 | Retimer 基准 3-5 亿；乐观 5-7 亿；极度 7-10 亿。Fabric Switch 基准 2-4 亿；乐观 4-7 亿；极度 7-12 亿 | Retimer 基准 13-20 亿；乐观 20-27 亿；极度 27-35 亿。Fabric Switch 基准 11-18 亿；乐观 18-30 亿；极度 30-50 亿 | Retimer 基准 20-32 亿；乐观 32-50 亿；极度 50-75 亿。Fabric Switch 基准 20-40 亿；乐观 40-80 亿；极度 80-120 亿 | 高端 AI 服务器 Retimer attach 2026 25%-40%，2027 40%-65%，2028 55%-80% | 领先产品毛利 65%-76%；客户集中和库存周期是主要折扣风险 |
+| NoC、Cache Coherent Fabric、SoC Interconnect IP | AI ASIC 定制化提升片上互联复杂度 | 基准 1.8-3.0 亿；乐观 3-4.5 亿；极度 4.5-7 亿 | 基准 8-13 亿；乐观 13-20 亿；极度 20-32 亿 | 基准 14-24 亿；乐观 25-40 亿；极度 40-65 亿 | 高端定制 AI ASIC 2026 渗透 50%-70%，2027 65%-80%，2028 75%-90% | IP 毛利 80%-90%；有 cache coherency 与安全管理能力的供应商溢价更高 |
+| 3DIC/Chiplet 封装协同 EDA 与 Signoff | 已在 CoWoS/EMIB/3DFabric/2.5D 项目中刚需化 | 基准 3-5 亿；乐观 5-7 亿；极度 7-10 亿 | 基准 19-25 亿；乐观 22-30 亿；极度 26-36 亿 | 基准 25-38 亿；乐观 40-60 亿；极度 60-85 亿 | 高端 AI/HPC 2.5D 项目 2026 渗透 70%-85%，2027 85%-95% | 软件毛利 80%-90%；与签核责任绑定后 ASP 提升最明确 |
+| DFT、BIST、Silicon Lifecycle Management、KGD 软件 | Chiplet 良率责任使测试和监控价值上升 | 基准 2-3 亿；乐观 3-4.5 亿；极度 4.5-6.5 亿 | 基准 10-14 亿；乐观 12-18 亿；极度 16-24 亿 | 基准 15-22 亿；乐观 22-35 亿；极度 35-50 亿 | 2.5D/Chiplet 设计 2026 渗透 40%-60%，2027 60%-75%，2028 70%-85% | 软件/IP 毛利 75%-90%；测试设备相关硬件毛利 45%-65% |
+
+### 2.2 对已放量产品的解释
+
+**EDA 主工具的增长不是来自新增座席数量，而是来自平台合同 ASP、云算力、先进节点 signoff 责任和多物理场扩展。** Cadence 2026Q1 给出的收入和利润率区间显示龙头 EDA 已经具备“软件公司毛利 + 半导体必要成本”的组合特征。Synopsys、Cadence、Siemens EDA 的核心优势不是单点工具，而是与 foundry PDK、IP、VIP、验证数据库、客户 flow 和 signoff liability 的绑定。
+
+**接口 IP 的供需更紧。** HBM4 PHY、PCIe 7/8、UCIe 3.0、224G/448G SerDes 都不是纯 RTL 授权，必须有模拟前端、封装模型、test chip、VIP、合规测试和现场支持。2026 年 AI 芯片团队为了赶 Rubin、MI400、Trainium3、TPU、Maia、MTIA 与定制 XPU 的窗口，会更愿意支付高 NRE 和高单价选择 silicon-proven IP。
+
+**硬件 Retimer/Fabric Switch 是接口 IP 的下游验证器。** Astera 2026Q1 收入 3.08361 亿美元，同比增 93%，GAAP 毛利率 76.3%，说明 AI 服务器互联瓶颈已经能转化为高毛利芯片收入。对 EDA/IP 行业而言，这意味着 PCIe/CXL/SerDes IP、VIP、合规工具和测试仪器的需求也会同步增加。
+
+## 3. 在研和早期放量关键产品：成熟时间、市场区间与利润率
+
+### 3.1 在研/早期产品总表
+
+| 在研/早期产品 | 技术成熟状态 | 未来3个月市场规模区间 | 一年市场规模区间 | 两年市场规模区间 | 渗透率路径 | 利润率预测 |
+|---|---|---:|---:|---:|---|---|
+| UCIe 3.0 64GT/s D2D PHY/Controller/VIP | 2026 年规格增强，设计导入增加，互操作生态仍早 | 基准 0.8-1.5 亿；乐观 1.5-2.5 亿；极度 2.5-4 亿 | 基准 5-8 亿；乐观 8-13 亿；极度 13-22 亿 | 基准 12-20 亿；乐观 22-38 亿；极度 38-65 亿 | 标准化 D2D 在高端新设计中 2026 <10%-15%，2027 15%-35%，2028 30%-60%；闭环 D2D 高得多 | IP 毛利 85%-95%；早期客户支持成本高，但标准锁定后溢价强 |
+| PCIe 8.0 256GT/s 与 448G SerDes pathfinding | PCIe 8 Draft 0.5；2028 final 目标；448G 仍验证/实验 | 基准 0.5-1.2 亿；乐观 1.2-2.5 亿；极度 2.5-5 亿 | 基准 4-8 亿；乐观 8-15 亿；极度 15-28 亿 | 基准 12-25 亿；乐观 25-45 亿；极度 45-80 亿 | 2026 主要是前沿客户预研；2027 高端 switch/ASIC 设计导入；2028 后量产 | IP/VIP 毛利 80%-90%；T&M 与 test chip 成本高，领先供应商有时间窗口溢价 |
+| HBM4E、HBM custom base die、near-memory compute 支持 IP | HBM4 刚进入客户窗口，HBM4E/自定义 base die 偏 2027-2028 | 基准 0.5-1 亿；乐观 1-2 亿；极度 2-3.5 亿 | 基准 3-7 亿；乐观 7-12 亿；极度 12-20 亿 | 基准 10-20 亿；乐观 22-40 亿；极度 40-70 亿 | 2027 高端设计采纳，2028 若 HBM 供给释放可快速上升 | 毛利 85%-95%；如果绑定内存厂/Foundry/大客户，NRE 溢价很强 |
+| 光 I/O、光 Chiplet、CPO EDA/IP | 1.6T 光模块放量，CPO/光 Chiplet 在 AI scale-up 中试点 | 基准 0.3-0.8 亿；乐观 0.8-1.5 亿；极度 1.5-3 亿 | 基准 2-4 亿；乐观 4-8 亿；极度 8-15 亿 | 基准 6-12 亿；乐观 14-28 亿；极度 28-55 亿 | 2026 低个位数渗透，2027 高端平台试点，2028 才可能明显放量 | IP/EDA 毛利 80%+；光芯片硬件毛利 45%-65%；封装良率决定利润 |
+| Chiplet Marketplace 与可复用 Chiplet Subsystem | 生态叙事强，商业责任边界未完全解决 | 基准 0.3-0.7 亿；乐观 0.7-1.5 亿；极度 1.5-3 亿 | 基准 2-5 亿；乐观 5-10 亿；极度 10-20 亿 | 基准 8-18 亿；乐观 20-45 亿；极度 45-90 亿 | 2026 主要是联盟/参考设计；2027 半开放客户平台；2028+ 才可能进入规模交易 | 纯平台毛利可高，但成交抽佣弱；绑定 IP/EDA/测试/认证后才有高 ROIC |
+| 3DIC 数字孪生与机柜级 EDA | 从 package signoff 扩展到 board/rack/power/cooling | 基准 0.5-1.5 亿；乐观 1.5-3 亿；极度 3-5 亿 | 基准 4-8 亿；乐观 8-15 亿；极度 15-30 亿 | 基准 12-25 亿；乐观 28-55 亿；极度 55-100 亿 | Top AI 机柜平台 2026 渗透 10%-20%，2027 25%-45%，2028 45%-70% | 软件毛利 75%-90%；云仿真成本高但价值定价空间大 |
+| 安全根、Die-to-Die 管理、Chiplet attestation | UCIe 3.0 强化 manageability 与 security，客户开始预算 | 基准 0.2-0.5 亿；乐观 0.5-1 亿；极度 1-2 亿 | 基准 1.5-3 亿；乐观 3-6 亿；极度 6-12 亿 | 基准 5-10 亿；乐观 10-22 亿；极度 22-45 亿 | 2026 低渗透；2027 与云安全/供应链追踪绑定；2028 成 Chiplet 高端默认模块 | IP 毛利 80%-95%；安全认证和客户信任可带来强定价权 |
+
+### 3.2 哪些新产品最可能快速增长
+
+**第一梯队：HBM4 IP、3DIC Signoff、Agentic Verification。** 这些产品已经处在客户 tapeout 关键路径上，且短期不会被开源或内部工具替代。HBM4 是 Rubin、MI400/Helios、下一代 TPU/Trainium/定制 ASIC 的共同需求；3DIC signoff 是 CoWoS/EMIB/桥接封装变大的必要条件；Agentic Verification 是 EDA AI 中最容易量化 ROI 的场景，因为它直接影响 bug 发现速度、覆盖率收敛和 tapeout 风险。
+
+**第二梯队：UCIe 3.0、NoC/Coherent Fabric、DFT/KGD/SLM。** UCIe 3.0 的问题不是需求不足，而是商业生态和互操作责任边界尚需时间。NoC/Coherent Fabric 的确定性来自定制 AI ASIC 增多。DFT/KGD/SLM 的确定性来自 Chiplet 良率责任，尤其是多个 die 和 HBM 封装后，任何单 die 缺陷都会放大报废成本。
+
+**第三梯队：光 I/O、CPO、Chiplet Marketplace。** 它们的上限很大，但 2026 主要是技术验证和少数平台导入。极度乐观情景下，若 2027 AI rack 的电互联功耗、距离、带宽或散热问题同时恶化，光 I/O 和 CPO 的设计 win 会显著提前。
+
+## 4. 供给侧：产能结构、瓶颈、成本与价格传导
+
+### 4.1 产能结构
+
+| 供给层级 | 主要地区 | 主要公司/组织 | 关键产能或能力 |
+|---|---|---|---|
+| 核心 EDA 软件 | 美国为核心，欧洲/以色列/印度/中国有重要研发 | Synopsys、Cadence、Siemens EDA、Ansys、Keysight EDA、Silvaco、Altair、Zuken、华大九天、概伦电子、芯和半导体、思尔芯、芯华章等 | 验证、Signoff、P&R、DFT、SLM、SI/PI、3DIC、EDA Cloud、AI EDA |
+| Interface IP | 美国、英国、加拿大、以色列、中国、台湾 | Synopsys、Cadence、Rambus、Arm、Arteris、Alphawave/Qualcomm、Broadcom、Marvell、Credo、Ceva、Imagination、SiFive、Andes、VeriSilicon 等 | HBM、PCIe/CXL、UCIe、SerDes、DDR/LPDDR/GDDR、NoC、CPU/GPU/NPU 子系统 |
+| 先进封装与 Foundry flow | 台湾、美国、韩国、日本、新加坡、马来西亚 | TSMC、Intel Foundry、Samsung、ASE、Amkor、JCET、SPIL、Ibiden、Unimicron、Shinko 等 | CoWoS、3DFabric、EMIB、Foveros、I-Cube/X-Cube、基板、桥接、测试 |
+| HBM 与内存接口生态 | 韩国、美国、日本、台湾 | SK hynix、Samsung、Micron、Rambus、Synopsys、Cadence、Keysight、Advantest 等 | HBM3E/HBM4 供给、控制器/PHY、测试与验证 |
+| 标准与合规 | 全球产业联盟 | PCI-SIG、CXL Consortium、UCIe Consortium、JEDEC、OCP、UALink、UEC、IEEE 等 | 规格、互操作、合规测试、生态协调 |
+| 测试、量测、SLM | 美国、日本、德国、中国台湾 | Keysight、Tektronix、Rohde & Schwarz、Anritsu、Advantest、Teradyne、FormFactor、PDF Solutions、proteanTecs、Synopsys、Siemens、Cadence | 高速接口测试、ATE、Probe、DFT、在线监控、良率分析 |
+
+### 4.2 主要供给瓶颈
+
+1. **高速模拟/混合信号人才**：HBM PHY、224G/448G SerDes、UCIe D2D、PCIe 7/8 的核心是模拟前端和封装通道，顶级工程师培养周期常常超过 5-10 年。
+2. **Test chip 与先进节点资源**：硅验证接口 IP 必须在 5nm/4nm/3nm/2nm、先进封装和真实板级通道上验证，MPW、mask、封装和测试资源都稀缺。
+3. **HBM4 真实生态可得性**：控制器和 PHY 需要与内存厂、Foundry、封装厂共同调试。没有真实 HBM4 堆叠和封装数据，仿真可信度不足。
+4. **3DIC 数据模型不完整**：Die、Interposer、RDL、基板、VRM、散热、液冷、CPO 的模型属于不同供应商，数据权限和精度会限制 signoff。
+5. **标准合规与互操作时间**：PCIe、CXL、UCIe、JEDEC 的版本迭代快，标准发布不等于客户平台立即采用，合规测试和 debug 会拖长收入确认。
+6. **客户设计窗口集中**：Hyperscaler 和 GPU/ASIC 头部客户每一代 tapeout 窗口高度集中，供应商现场支持能力成为隐性产能。
+7. **出口管制与区域替代**：先进 EDA、IP、GPU 和制造资源受管制，区域替代会带来本土 EDA/IP 机会，但也会增加验证和兼容成本。
+8. **EDA Cloud 算力成本**：AI 辅助 EDA 和大规模仿真需要云算力、数据存储和安全隔离，短期会侵蚀软件毛利，但可通过平台合同转嫁。
+
+### 4.3 成本结构和毛利决定因素
+
+| 产品层 | 成本构成 | 毛利决定因素 | 价格传导机制 |
+|---|---|---|---|
+| EDA 软件 | 研发人力 35%-45% 收入口径、销售/FAE 15%-25%、云算力和数据成本上升 | Signoff 责任、Foundry 认证、客户 flow 锁定、AI 模型能力、云仿真效率 | 多年订阅、企业许可、token/云算力计费、平台合同、按模块扩展 |
+| Semiconductor IP | RTL/模拟设计、test chip、mask、封装、验证、VIP、FAE | 是否 silicon-proven、先进节点覆盖、标准合规、客户 tapeout 风险、royalty 条款 | 前置 license、NRE、per-project、per-chip royalty、维护费 |
+| HBM/SerDes PHY | 模拟团队、先进节点硅验证、封装/板级通道、实验室测试 | 速率、功耗、误码率、兼容性、PPA、客户支持能力 | 高 NRE + 高 license，供不应求时可价值定价 |
+| Retimer/Switch 芯片 | 晶圆、封装、测试、库存、客户认证、固件 | Attach rate、客户集中度、供应紧张、功耗和延迟 | 芯片 ASP、平台认证、长单、绑定软件/固件 |
+| 3DIC/SLM/KGD 工具 | 多物理场研发、客户数据接入、测试接口、云计算 | 良率改善可量化程度、封装报废成本、签核责任 | 软件 license、按设计/封装项目收费、与测试设备或 IP bundle |
+
+毛利率上，EDA 与纯 IP 是最优资产：成熟软件/IP 毛利通常在 80%-90% 以上；Cadence 2026 年非 GAAP 经营利润率指引约 44.75%-45.75%，说明规模和定价已足以覆盖高研发投入。高速接口硬件芯片毛利低于纯软件/IP，但若处于 AI 服务器互联瓶颈位置，毛利也可达到 60%-76% 区间。低壁垒封装服务、通用外包设计和低速 IP 的毛利更容易被客户压价。
+
+## 5. 竞争格局与壁垒：为什么能定价
+
+### 5.1 市场结构
+
+EDA 核心市场高度集中，Synopsys、Cadence、Siemens EDA 在验证、Signoff、P&R、DFT、封装协同等关键环节拥有长期优势，合计控制核心 EDA 大部分价值池。Ansys 的多物理场能力、Keysight 的高速信号与量测能力、Silvaco 的 TCAD/器件工具、Zuken/Altium 等板级工具在特定环节有重要位置。中国 EDA 公司在国产替代链条中增长更快，但在最先进节点、signoff liability、高速接口和全球生态上仍需持续验证。
+
+Semiconductor IP 市场比 EDA 分散，但高端接口 IP 仍集中在少数 silicon-proven 供应商。Synopsys、Cadence、Rambus、Arm、Arteris、Alphawave/Qualcomm、Broadcom、Marvell、Credo 等在 HBM、PCIe/CXL、UCIe、SerDes、NoC、CPU/Coherent Fabric 或高速互联上各自占据高壁垒环节。越靠近先进节点和真实硅验证，集中度越高。
+
+Chiplet IP 生态表面参与者众多，但短期价值捕获仍偏向三类公司：有闭环平台的大芯片公司，如 NVIDIA、AMD、Intel、Broadcom、Marvell、Qualcomm；有封装和工艺生态的 Foundry/OSAT，如 TSMC、Intel Foundry、Samsung、ASE、Amkor；有可复用 IP、验证和工具链的 EDA/IP 供应商，如 Synopsys、Cadence、Siemens、Arm、Rambus、Arteris、Alphawave。
+
+### 5.2 可量化壁垒清单
+
+| 壁垒 | 为什么能定价 | 可观察指标 |
+|---|---|---|
+| Foundry/PDK/Signoff 认证 | 客户 tapeout 必须获得 foundry 认可，错误代价可达数千万到数亿美元 | PDK 支持节点、signoff reference flow、先进节点客户 tapeout 数 |
+| Silicon-proven IP | 接口 IP 错误会导致整颗芯片延误；客户宁愿多付费降低失败概率 | Test chip、量产客户、节点覆盖、误码率、功耗、合规认证 |
+| 验证数据库与调试工作流 | 长期积累的 assertion、coverage、VIP、bug database 难以迁移 | VIP 覆盖协议数、仿真/形式验证渗透率、客户续约率 |
+| 多年企业合同和客户 flow 锁定 | EDA/IP 嵌入客户设计方法学，切换会重训团队和重验证脚本 | Backlog、current RPO、企业 license 年限、设计团队座席数 |
+| 高速模拟人才与实验室 | SerDes/HBM PHY 需要稀缺模拟人才和真实测试设备，不能靠纯软件快速复制 | 224G/448G/HBM4 tapeout、实验室能力、FAE 人数 |
+| 标准与合规生态 | PCIe/CXL/UCIe/JEDEC 的互操作测试决定客户采用风险 | 标准组织成员、compliance workshop 通过记录、VIP 市占 |
+| 先进封装协同数据 | 3DIC signoff 需要工艺、封装、热、机械、板级模型，数据获取本身是壁垒 | Foundry/OSAT 合作、package reference flow、thermal/PI/SI 一体化能力 |
+| 客户现场支持 | 高端客户 tapeout 窗口集中，FAE 能否实时解决问题决定选型 | Top 客户数、现场支持团队、NRE 单价 |
+
+### 5.3 价值链中最可能拥有长期高 ROIC 的层级
+
+长期高 ROIC 排序如下：
+
+1. **Signoff、Verification、DFT、SLM、3DIC EDA**：软件毛利高，客户切换成本高，责任链条强，AI 芯片复杂度越高越受益。
+2. **HBM、PCIe/CXL、UCIe、SerDes 等 silicon-proven 高速接口 IP**：需求由 AI 芯片代际强制驱动，客户付费意愿高，供应商少。
+3. **NoC/Coherent Fabric、安全管理和 Chiplet 管理 IP**：定制 AI ASIC 增多后，片上互联和安全管理成为平台化复用资产。
+4. **Agentic EDA 与 EDA Cloud**：若能用客户私有数据形成专用 agent，平台定价和续约能力强。
+5. **高速 Retimer/Fabric Switch/Optical I/O 芯片**：增速高、毛利可观，但库存、客户集中和硬件周期风险更高。
+6. **先进封装服务和通用 Chiplet 市场**：空间大，但资本密集和责任边界复杂；只有绑定 EDA/IP/测试/认证的玩家才能获得长期高 ROIC。
+
+## 6. 2026 关键变化：行业拐点与最可能放量子方向
+
+### 6.1 拐点一：Agentic EDA 从“功能演示”进入“付费生产流”
+
+2026 年 DATE、DesignCon、Chiplet Summit 等会议都把 AI for Design、Agentic EDA、system-level design 放在核心议题。真正放量的路径不是让 AI 自动完成整颗芯片，而是在可控环节提高生产率：规格解析、testbench 生成、coverage closure、formal property、ECO 建议、timing/debug、SI/PI 问题定位、3DIC 规则检查。基准情景下，2026 年 Agentic EDA 仍是 EDA 合同中的增量模块；乐观情景下，Top 50 芯片团队会把内部设计数据接入私有化 agent；极度乐观情景下，它会成为 EDA 合同涨价的主要理由之一。
+
+### 6.2 拐点二：HBM4 和 3DIC Signoff 进入下一代 AI 芯片强制窗口
+
+NVIDIA Vera Rubin、AMD MI400/Helios、下一代 TPU、Trainium、Maia、MTIA 和定制 XPU 都会把 HBM4、封装面积、power integrity、thermal signoff 推到更高难度。HBM4 IP、3DIC EDA、先进封装验证、KGD/SLM 是 2026 年最确定的高价值子方向。即便 HBM4 真正大规模出货更偏 2027，IP 授权、NRE、VIP、test chip 和 EDA flow 采购会提前发生。
+
+### 6.3 拐点三：PCIe 7/8、UCIe 3.0 和 224G/448G 形成高速互联预研预算
+
+PCI-SIG 2026 年推进 PCIe 8.0 Draft 0.5，目标 256GT/s 和 x16 双向 1TB/s；PCIe 7.0 已在 2025 年发布 1.0 规格；UCIe 3.0 在 2026 年强化 64GT/s、管理、安全和合规能力。DesignCon 2026 也显示 224G 已经进入部署，448G 正在 pathfinding。AI rack 内外互联瓶颈会把预算从单纯网络芯片扩散到 IP、VIP、合规测试、SI/PI、多物理场 EDA 和高速量测设备。
+
+### 6.4 2026 最可能放量的子方向排序
+
+1. HBM3E/HBM4 IP、VIP 与 PHY 验证。
+2. 3DIC/2.5D Signoff、封装协同与 thermal/power integrity。
+3. PCIe 6/7、CXL、Retimer/Fabric Switch 相关 IP/VIP。
+4. Agentic Verification 与 EDA Cloud。
+5. NoC/Coherent Fabric、AI ASIC 子系统 IP。
+6. UCIe 3.0 D2D IP 与 Chiplet KGD/SLM。
+7. 224G SerDes 与 448G pathfinding。
+8. 光 I/O/CPO 相关 EDA/IP 早期项目。
+
+## 7. 2027 关键变化：行业拐点与最可能放量子方向
+
+### 7.1 拐点一：Rubin、MI400、Trainium3、TPU 后续平台推动 HBM4 成为高端默认配置
+
+2027 年最大的变化是 HBM4 从设计导入走向更多生产平台。若项目内乐观 AI 基建假设成立，HBM4 供给、CoWoS/先进封装扩张和 hyperscaler 自研 ASIC 会共同推高 HBM4 IP、HBM PHY、封装协同、测试和热设计需求。基准情景下，HBM4 在高端新设计中达到 25%-45% 渗透；乐观情景达 45%-60%；极度超预期情景可达 60%-75%。
+
+### 7.2 拐点二：开放 Scale-up 生态与 NVLink Fusion 形成双轨竞争
+
+2027 年的 scale-up 竞争会从单一 GPU interconnect 变为 NVLink Fusion、UALink、PCIe/CXL fabric、Ethernet-based scale-up、custom XPU fabric 的多轨竞争。对投资来说，最优位置不是押单一标准，而是押共同需要的高速 SerDes、Retimer/Switch、VIP、合规测试、NoC、SLM 和多物理场 EDA。
+
+### 7.3 拐点三：Chiplet 从“封装项目”走向“可管理、可验证、可追责的系统”
+
+2027 年 Chiplet 价值会从 UCIe PHY 扩展到管理、安全、attestation、KGD、DFT、SLM、thermal monitoring、field telemetry。通用 Chiplet Marketplace 仍可能慢于市场叙事，但半开放平台和客户内复用会明显增加。最受益的公司不是只提供一个 die 的公司，而是能提供 IP + 验证 + 封装参考流 + 测试/监控 + 生态认证的供应商。
+
+### 7.4 2027 最可能放量的子方向排序
+
+1. HBM4/HBM4E IP、HBM PHY 与 HBM 系统级验证。
+2. Rubin/MI400/定制 ASIC 相关 3DIC EDA 和 advanced package signoff。
+3. UCIe 3.0、D2D security/manageability、KGD/SLM。
+4. PCIe 7 高端平台验证与 PCIe 8/448G 预量产设计。
+5. NoC/Coherent Fabric 与 AI ASIC Subsystem。
+6. Agentic EDA 从验证扩展到 physical implementation、ECO 与 system planning。
+7. 光 I/O、CPO 和 Silicon Photonics packaging EDA。
+
+## 8. 头部公司与细分技术地图
+
+### 8.1 EDA 与多物理场工具
+
+| 细分领域 | 头部/优势公司 | 备注 |
+|---|---|---|
+| 综合、P&R、Signoff、验证 | Synopsys、Cadence、Siemens EDA | 核心 EDA 三强，客户 flow 和 foundry reference flow 壁垒最高 |
+| 形式验证、仿真、调试 | Synopsys、Cadence、Siemens、Aldec、OneSpin/Siemens | AI 芯片验证复杂度提升，Agentic EDA 最先落地 |
+| 硬件仿真/原型验证 | Cadence Palladium/Protium、Synopsys ZeBu/HAPS、Siemens Veloce | 大型 AI ASIC 和软件栈联调强需求 |
+| DFT、BIST、SLM | Synopsys、Siemens Tessent、Cadence Modus、proteanTecs、PDF Solutions | Chiplet KGD 和现场监控使价值上升 |
+| 3DIC/封装协同 | Cadence Integrity/Allegro/Clarity/Celsius、Synopsys 3DIC Compiler/Ansys、Siemens Innovator3D IC/Calibre/Xpedition、Keysight、Zuken | 2026-2027 高增长方向 |
+| SI/PI/高速系统 | Keysight、Cadence、Synopsys/Ansys、Siemens、Rohde & Schwarz、Tektronix | PCIe 7/8、224G/448G 和 CPO 拉动 |
+| 器件/工艺 TCAD | Synopsys、Silvaco、培风图南/国内 TCAD 厂商等 | 先进节点与功率器件相关 |
+| 中国本土 EDA | 华大九天、概伦电子、广立微、芯和半导体、思尔芯、芯华章、行芯、鸿芯微纳等 | 国产替代空间大，但先进节点 signoff 和全球生态仍需持续验证 |
+
+### 8.2 接口 IP 与 SoC 子系统
+
+| 细分领域 | 头部/优势公司 | 关键判断 |
+|---|---|---|
+| HBM/DDR/LPDDR/GDDR Controller/PHY | Synopsys、Cadence、Rambus、Innosilicon、VeriSilicon、Montage 生态相关公司 | HBM4 是 2026-2027 最硬需求之一；Rambus 数据中心产品收入高增验证需求 |
+| PCIe/CXL Controller/PHY/VIP | Synopsys、Cadence、Rambus、Alphawave/Qualcomm、Mobiveil、Avery/Siemens 生态、Keysight | PCIe 6 部署、PCIe 7 验证、PCIe 8 预研三层叠加 |
+| UCIe/D2D IP | Synopsys、Cadence、Alphawave/Qualcomm、Arm、Intel、AMD、Eliyan、Kandou、Blue Cheetah、Marvell、Broadcom | 2026 设计导入，2027 半开放平台加速 |
+| 112G/224G/448G SerDes | Broadcom、Marvell、Synopsys、Cadence、Alphawave/Qualcomm、Credo、Rambus、Kandou、eTopus、Silicon Creations | 高速模拟人才和 test chip 是核心壁垒 |
+| NoC/Coherent Fabric | Arm、Arteris、Synopsys、Cadence、Siemens 生态、Sonics/历史 IP 生态 | AI ASIC 定制化越高，NoC 价值越高 |
+| CPU/GPU/NPU Subsystem IP | Arm、SiFive、Andes、MIPS、Imagination、Ceva、Synopsys ARC、Cadence Tensilica、VeriSilicon | Chiplet 和定制 ASIC 需要更多可复用 subsystem |
+| 安全与管理 IP | Rambus、Synopsys、Cadence、Arm、Crypto Quantique、Intrinsic ID、Dover Microsystems 等 | Chiplet attestation 和云供应链安全可带来新需求 |
+
+### 8.3 Chiplet、先进封装、光电 I/O 与测试生态
+
+| 细分领域 | 头部/优势公司 | 关键判断 |
+|---|---|---|
+| Foundry/先进封装平台 | TSMC、Intel Foundry、Samsung | TSMC CoWoS/3DFabric 是 AI 芯片主战场；Intel EMIB/Foveros 具备 Chiplet 路线优势 |
+| OSAT 与封装服务 | ASE、Amkor、JCET、SPIL、Powertech、TFME、UTAC | 受益封装外溢，但纯服务毛利和定价权低于 EDA/IP |
+| Chiplet 平台和闭环生态 | NVIDIA、AMD、Intel、Broadcom、Marvell、Qualcomm、Arm Total Design 生态 | 2026-2027 商业化更多发生在闭环或半开放平台 |
+| 光 I/O/CPO/光 Chiplet | Broadcom、Marvell、NVIDIA Spectrum-X/CPO 生态、Ayar Labs、Lightmatter、Celestial AI、Ranovus、Intel Silicon Photonics、Cisco、Coherent、Lumentum | 2026 以试点为主，2027-2028 看 scale-up 瓶颈是否提前 |
+| Retimer/Fabric Switch | Astera Labs、Broadcom、Marvell、Microchip、Parade、Montage、Credo、Texas Instruments、Renesas | AI 服务器 attach rate 是核心变量 |
+| 测试仪器和合规 | Keysight、Tektronix、Rohde & Schwarz、Anritsu、Teledyne LeCroy、Advantest、Teradyne、FormFactor | PCIe/CXL/UCIe/SerDes 版本越快，测试价值越高 |
+| 标准组织 | PCI-SIG、CXL Consortium、UCIe Consortium、JEDEC、OCP、UALink、UEC、IEEE | 标准方向决定生态速度，但客户闭环优化仍会长期存在 |
+
+## 9. 投资价值判断：哪些环节最值得跟踪
+
+### 9.1 最优先跟踪的 12 个量化指标
+
+1. SEMI EDMD 总收入和 SIP 收入增速：若 SIP 持续高于 EDA 总体，说明接口 IP 和 Chiplet IP 正在加速。
+2. Cadence、Synopsys、Siemens EDA 的 backlog、RPO、非 GAAP 经营利润率和 IP 增速。
+3. Rambus 数据中心产品收入和 HBM4 IP 设计 win。
+4. Arteris ACV plus royalties、客户数、RPO 和 AI/automotive/enterprise SoC 渗透。
+5. Broadcom AI 半导体收入和下一季度指引：验证 custom ASIC 需求强度。
+6. Marvell 数据中心与 custom XPU 收入：验证第二大定制 ASIC/互联链条。
+7. Astera 收入、毛利率、Scorpio X/P 系列客户和 H2 2026 ramp：验证 PCIe/CXL fabric 放量。
+8. PCIe 7/8、UCIe 3.0、CXL 3.x 标准进度和 compliance workshop 结果。
+9. HBM4 供给、HBM4E 路线、SK hynix/Samsung/Micron 认证进度。
+10. TSMC CoWoS/先进封装产能和大 interposer 良率。
+11. DesignCon、Chiplet Summit、DATE、ISSCC、GTC、Hot Chips、OCP Global Summit 中的第一手技术路线。
+12. 大客户 AI capex、数据中心上电、HBM 订单和 AI 芯片出货是否同步上修。
+
+### 9.2 三情景行业收入弹性
+
+| 收入池 | 2026 基准 | 2026 乐观 | 2026 极度超预期 | 2027 基准 | 2027 乐观 | 2027 极度超预期 |
+|---|---:|---:|---:|---:|---:|---:|
+| 全球 EDA + SIP + 相关服务 | 240-270 亿 | 270-310 亿 | 310-360 亿 | 270-320 亿 | 330-390 亿 | 400-500 亿 |
+| AI/HPC 直接相关 EDA/IP | 70-100 亿 | 100-140 亿 | 140-200 亿 | 100-150 亿 | 160-230 亿 | 240-350 亿 |
+| HBM/PCIe/CXL/UCIe/SerDes 高速接口 IP | 35-55 亿 | 55-80 亿 | 80-120 亿 | 50-80 亿 | 85-130 亿 | 130-210 亿 |
+| 3DIC/Chiplet EDA/IP/SLM/KGD | 25-35 亿 | 35-50 亿 | 50-70 亿 | 35-55 亿 | 55-85 亿 | 85-130 亿 |
+| Agentic EDA 增量模块 | 10-25 亿 | 25-45 亿 | 45-80 亿 | 20-45 亿 | 50-90 亿 | 90-160 亿 |
+
+这里最需要强调的是：极度超预期情景不是假设 EDA/IP 收入与 GPU 出货同比例增长，而是假设 AI capex、HBM4、先进封装、定制 ASIC 和机柜级互联同时加速，导致客户愿意为更快 tapeout、更低失败率和更短验证周期支付显著溢价。
+
+## 10. 风险与反证指标
+
+1. **AI capex 放缓**：若 hyperscaler 下修 2026H2/2027 capex，EDA/IP 仍有设计粘性，但高增长接口 IP、Retimer、Chiplet 项目会被推迟。
+2. **HBM/CoWoS 继续成为硬瓶颈**：短期会抬高 HBM4 IP 与 3DIC EDA 价值，但若供给释放慢于预期，会推迟芯片量产和 royalty。
+3. **UCIe 生态商业化慢于叙事**：如果大客户持续使用私有 D2D，通用 UCIe IP 市场会慢于预期，但 closed platform IP 仍增长。
+4. **Agentic EDA ROI 难以量化**：若客户无法证明设计周期缩短或 bug 率下降，AI EDA 只能作为已有合同功能，不形成高 ASP。
+5. **客户自研工具/IP 替代**：超大客户可能自研部分 flow、NoC 和接口模块，但高速 PHY、signoff、VIP 和合规仍难完全内化。
+6. **出口管制升级**：会影响高端 EDA/IP 出货区域，但同时推动本土替代。全球龙头收入或受限，区域供应商机会增加。
+7. **硬件库存周期**：Retimer、Switch、光芯片等硬件环节可能因客户拉货和库存波动出现季度波动，不应简单外推。
+8. **Foundry/标准组织进度延期**：先进节点 PDK、PCIe/CXL/UCIe 规格和 compliance 延误会推迟设计导入。
+
+## 11. 结论：2026 年最值得押注的不是“所有 Chiplet”，而是“可验证的复杂度”
+
+对 EDA工具、接口IP与Chiplet IP 行业，2026 年最强投资主线是 AI 基础设施建设带来的可验证复杂度上升。NVIDIA Blackwell Ultra/Rubin、AMD MI350/MI400、Google TPU、AWS Trainium、Microsoft Maia、Meta MTIA、Broadcom/Marvell custom ASIC 都在推动相同的底层需求：更快的 HBM、更复杂的 2.5D/3D 封装、更高速的 PCIe/CXL/UCIe/SerDes、更复杂的 NoC、更多 DFT/KGD/SLM、更强 EDA 自动化。
+
+基准情景下，这个行业仍会以高于半导体总体的速度增长，核心 EDA/IP 收入保持双位数，AI/HPC 相关子方向增速 20%-40%。乐观情景下，HBM4、CoWoS、定制 ASIC 与 Agentic EDA 同时打开，核心子方向增速可达 40%-70%。极度超预期乐观情景下，若 2026H2-2027 AI 数据中心建设、HBM4、先进封装和 custom ASIC 同时上修，则高速接口 IP、3DIC EDA、Agentic EDA、NoC/SLM 和 Retimer/Fabric Switch 可以出现 70%-120% 的局部增长。
+
+最优投资暴露不是低壁垒封装产能或纯概念型 Chiplet 平台，而是拥有以下特征的公司：硅验证接口 IP、Foundry 认证、客户 flow 锁定、高速模拟人才、标准合规位置、AI ASIC 设计 win、可量化缩短 tapeout 周期的软件能力。这个组合最可能在 2026-2027 年同时获得高收入增长、高毛利和高 ROIC。
+
+## 12. 资料与来源
+
+### 12.1 项目内产业背景资料（仅限允许目录）
+
+- `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- `行业调研/产业背景/全球AI需求与Token经济框架_2026-06-11.md`
+- `行业调研/产业背景/顶级会议信息/chiplet_summit_2026_update.md`
+- `行业调研/产业背景/顶级会议信息/designcon_2026_conference_update.md`
+- `行业调研/产业背景/顶级会议信息/date_2026_conference_research.md`
+- `行业调研/产业背景/顶级会议信息/pci_sig_devcon_2026_update.md`
+- `行业调研/产业背景/顶级会议信息/isscc_2026_ai_ic_soc_research.md`
+- `行业调研/产业背景/顶级会议信息/nvidia_gtc_2026_research.md`
+
+### 12.2 外部第一手和交叉验证来源
+
+- SEMI ESD Alliance，2025Q4 EDMD 收入与 SIP 数据：<https://www.semi.org/en/semi-press-release/esd-alliance-reports-electronic-system-design-industry-posts-5.5-billion-dollars-in-revenue-in-q4-2025>
+- Cadence 2026Q1 财报与 2026 指引：<https://investor.cadence.com/news/news-details/2026/Cadence-Reports-First-Quarter-2026-Financial-Results/default.aspx>
+- Synopsys FY2025 财报与 2026 相关财务资料：<https://investor.synopsys.com/news/news-details/2025/Synopsys-Posts-Financial-Results-for-Fourth-Quarter-and-Fiscal-Year-2025/>
+- Synopsys 2026Q2 财务资料：<https://investor.synopsys.com/news/news-details/2026/Synopsys-Posts-Financial-Results-for-Second-Quarter-Fiscal-Year-2026/>
+- Cadence AI IP / Protocol IP 产品页：<https://www.cadence.com/en_US/home/tools/silicon-solutions/ai-ip-platform/protocol-ip-ai.html>
+- Synopsys HBM4 IP 技术资料：<https://www.synopsys.com/blogs/chip-design/worlds-first-hbm4-ip-test-chip-ai-hpc-validation.html>
+- Arm FY2026 财报：<https://newsroom.arm.com/news/arm-holdings-plc-reports-results-for-the-fourth-quarter-and-fiscal-year-ended-2026>
+- Arteris 2026Q1 财报：<https://arteris.com/2026/05/05/arteris-announces-financial-results-for-the-first-quarter-2026-and-estimated-second-quarter-and-full-year-2026-guidance/>
+- Rambus 2026Q1 财报：<https://investor.rambus.com/news-releases/news-release-details/rambus-reports-first-quarter-2026-financial-results>
+- Rambus HBM4 Controller IP 与 HBM4 PHY 产品资料：<https://www.rambus.com/interface-ip/hbm4-controller/>、<https://www.rambus.com/interface-ip/hbm4-phy/>
+- Broadcom FY2026Q2 财报：<https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial>
+- Marvell FY2027Q1 财报：<https://investor.marvell.com/news-events/press-releases/detail/1023/marvell-technology-inc-reports-first-quarter-of-fiscal-year-2027-financial-results>
+- Astera Labs 2026Q1 财报：<https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-reports-first-quarter-2026-financial-results>
+- Qualcomm 收购 Alphawave Semi 公告：<https://www.qualcomm.com/news/releases/2025/06/qualcomm-to-acquire-alphawave-semi>
+- UCIe Consortium 官网：<https://uciexpress.org/>
+- UCIe 3.0 规格发布信息：<https://www.design-reuse.com/news/202529142-ucie-consortium-introduces-3-0-specification-with-64-gt-s-performance-and-enhanced-manageability/>
+- PCI-SIG Developers Conference 2026：<https://pcisig.com/pci-sig-developers-conference-2026>
+- PCIe 8.0 Draft 0.5 公告：<https://pcisig.com/blog/pcier-80-specification-draft-05-now-available-track-2560-gts-transfer-speeds-2028>
+- PCIe 7.0 规格信息：<https://pcisig.com/specifications/pcie-70-specification-version-03-now-available-members>
+- Chiplet Summit 2026 Program：<https://chipletsummit.com/2026-program-at-a-glance/>
+- Chiplet Summit 2026 Keynotes：<https://chipletsummit.com/2026-keynotes-and-special-presentations-2/>
+- Chiplet Summit 2026 Best of Show：<https://chipletsummit.com/2026-best-of-show-awards/>
+- DesignCon 2026 行业报道与议程信息：<https://connectorsupplier.com/designcon-2026/>、<https://www.signalintegrityjournal.com/articles/4262-designcon-2026-ai-driven-infrastructure-and-system-level-design>
+- DATE 2026 官网：<https://www.date-conference.com/>
+- ISSCC 2026 Advance Program：<https://submissions.mirasmart.com/ISSCC2026/PDF/ISSCC2026AdvanceProgram.pdf>
+- NVIDIA Vera Rubin 平台信息：<https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform>
+- NVIDIA Vera Rubin Pod 技术文章：<https://developer.nvidia.com/blog/nvidia-vera-rubin-pod-seven-chips-five-rack-scale-systems-one-ai-supercomputer/>
+- NVIDIA 与 Marvell NVLink Fusion 信息：<https://nvidianews.nvidia.com/news/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion>

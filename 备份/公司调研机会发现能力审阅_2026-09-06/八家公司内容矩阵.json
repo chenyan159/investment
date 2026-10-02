@@ -1,0 +1,50 @@
+﻿[
+  {
+    "company": "GOOGL",
+    "existing": "Waymo已有运营规模、单位贡献与密度机制；Wiz有回报门槛，TPU有服务/系统分拆。",
+    "gap": "远期城市/车队路径、各新业务净增贡献及融资后归属未完整展开；多产品经济弹性归并进Cloud/Services中心。",
+    "evidence": "[Waymo](<D:/drive/Investment/基本面/公司调研/云算力_IDC_AI软件平台/GOOGL_Alphabet_Inc_公司调研_2026-09-06.md:243>)；[经营工作点](<D:/drive/Investment/基本面/公司调研/云算力_IDC_AI软件平台/GOOGL_Alphabet_Inc_公司调研_2026-09-06.md:342>)"
+  },
+  {
+    "company": "MU",
+    "existing": "工厂时点、有效供给公式、SCA上下限、价格回落及现金压力清楚。",
+    "gap": "位元交付指数主要是工作假设；产能超预期、再度涨价、下一代产品净溢价的联动缺少独立路径和证据权重。",
+    "evidence": "[供给](<D:/drive/Investment/基本面/公司调研/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-09-06.md:187>)；[两路径](<D:/drive/Investment/基本面/公司调研/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-09-06.md:296>)"
+  },
+  {
+    "company": "SNDK",
+    "existing": "NBM、位元/价格指数、HBF和3D Matrix的技术阶段均覆盖。",
+    "gap": "HBF未形成分用途条件经济规模；第二代HBF端侧路线未展开；远期量化以价格回落压力为主。",
+    "evidence": "[HBF](<D:/drive/Investment/基本面/公司调研/AI服务器_存储_EMS/SNDK_SanDisk_公司调研_2026-09-06.md:207>)；[远期压力](<D:/drive/Investment/基本面/公司调研/AI服务器_存储_EMS/SNDK_SanDisk_公司调研_2026-09-06.md:416>)"
+  },
+  {
+    "company": "CRWV",
+    "existing": "2027平均容量、价格/计费、合同约束与融资分析深入。",
+    "gap": "跨云软件、研究自动化、非GPU/HPC、旧设备复用改变资本效率的路径仍主要定性；没有形成可归属的净增经济范围。",
+    "evidence": "[软件等机会](<D:/drive/Investment/基本面/公司调研/云算力_IDC_AI软件平台/CRWV_CoreWeave_公司调研_2026-09-06.md:170>)；[供给与合同](<D:/drive/Investment/基本面/公司调研/云算力_IDC_AI软件平台/CRWV_CoreWeave_公司调研_2026-09-06.md:241>)"
+  },
+  {
+    "company": "SMCI",
+    "existing": "DCBBS/软件的非线性机制明确，同一损益下有现金改善和恶化三分支。",
+    "gap": "系统责任如何成为稳定溢价、客户/产品组合如何使利润率超预期，未得到与现金压力同等深度的量化。",
+    "evidence": "[DCBBS/软件](<D:/drive/Investment/基本面/公司调研/AI服务器_存储_EMS/SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-06.md:131>)；[经营参考区间](<D:/drive/Investment/基本面/公司调研/AI服务器_存储_EMS/SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-06.md:241>)"
+  },
+  {
+    "company": "GNRC",
+    "existing": "数据中心订单与能力包络、ecobee每连接收入示例均存在。",
+    "gap": "第二大客户、扩产后连续新增订单、整户能源收入以及付费连接规模的独立路径不足。",
+    "evidence": "[ecobee](<D:/drive/Investment/基本面/公司调研/电力_发电_能源_储能/GNRC_Generac_Holdings_公司调研_2026-09-06.md:212>)；[数据中心队列](<D:/drive/Investment/基本面/公司调研/电力_发电_能源_储能/GNRC_Generac_Holdings_公司调研_2026-09-06.md:246>)"
+  },
+  {
+    "company": "AVGO",
+    "existing": "有延期、工作中心、达到管理层目标三条完整经营路径；CPO、Private AI等机制有覆盖。",
+    "gap": "主要围绕管理层目标兑现，超出管理层目标的公司机制未充分独立检验；CPO净内容量/软件新收费被合并入大池。",
+    "evidence": "[CPO](<D:/drive/Investment/基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/AVGO_Broadcom_公司调研_2026-09-06.md:174>)；[三条经营路径](<D:/drive/Investment/基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/AVGO_Broadcom_公司调研_2026-09-06.md:254>)"
+  },
+  {
+    "company": "CRDO",
+    "existing": "OmniConnect已给5万颗×2,000美元条件收入；ALC/Omni在2028合并模型有70M。",
+    "gap": "两个新路线的金额分配、对旧连接的替代、增量利润、资本需求和多客户跃迁仍未对账。",
+    "evidence": "[OmniConnect](<D:/drive/Investment/基本面/公司调研/AI网络_光互联_连接器/CRDO_Credo_Technology_Group_公司调研_2026-09-06.md:203>)；[FY2028](<D:/drive/Investment/基本面/公司调研/AI网络_光互联_连接器/CRDO_Credo_Technology_Group_公司调研_2026-09-06.md:365>)"
+  }
+]

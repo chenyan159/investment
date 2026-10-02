@@ -1,0 +1,173 @@
+# 公司收入传导与价值传导评估：FormFactor（FORM）
+
+报告日期：2026-06-12。  
+正式输出目录：`分析报告/公司评估/`。  
+本报告只评估 FormFactor 从行业和产品需求到 NTM 收入、利润和经营质量的传导，不做公司排序，不给投资评级，不判断股价区间，不使用估值倍数作为经营证据。  
+本地资料边界：使用 `公司调研/封测_检测_计量_光罩/FORM_FormFactor_公司调研_2026-06-11.md`，以及 `行业调研/` 下探针卡、ATE、HBM、先进封装和 AI 芯片先进封装相关报告；未读取、引用或继承 `特征量化/`、Signals、回归、评分或模型比较内容。  
+外部资料边界：优先使用 FormFactor 2026Q1 earnings release、2026Q1 Supplemental Information、2026Q1 Investor Presentation、2026Q1 10-Q、FY2025 10-K、2026 Investor Day 材料和公司产品/新闻资料。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即 FY2026Q2 至 FY2027Q1 的未来四季度经营窗口；FY2026、FY2027、2030 目标模型、CPO 长期平台机会只作为补充口径，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：FY2025 收入 7.850 亿美元；TTM 至 FY2026Q1 收入约 8.398 亿美元；FY2026Q1 收入 2.261 亿美元，同比增长 32.0%；FY2026Q2 公司正式指引为 2.40 亿美元 +/- 500 万美元，non-GAAP gross margin 49.5% +/- 1.5pp，non-GAAP diluted EPS 0.61 美元 +/- 0.04。
+- 重要产品/业务线：HBM/DRAM advanced probe cards；Foundry & Logic HPC/networking probe cards；TRITON/SiPh/CPO optical-electrical wafer test；legacy probe stations/thermal/RF/cryogenic systems；Flash probe cards；FICT/advanced substrate supply-chain enablement 作为产能使能项，不作为并表收入产品。
+- NTM 公司收入四情景：悲观 8.8-9.4 亿美元；基准 10.0-10.8 亿美元；乐观 11.2-12.8 亿美元；极度乐观 13.5-15.5 亿美元。基准的核心含义是 Q2 指引兑现、HBM/DRAM 与 F&L probe-card 动能延续，但 CPO 不被当作主收入来源。
+- 利润或 EBITDA 四情景：以 non-GAAP 经营口径为主。悲观经营利润率 13%-17%；基准 20%-24%；乐观 25%-29%；极度乐观 31%-36%。GAAP 利润在 2026 仍会受 restructuring charges、factory start-up costs 和设施整合影响，不能机械外推 Q1 GAAP 毛利率。
+- 最大传导瓶颈：不是 AI 服务器总 CapEx，而是 HBM4/HBM3E test intensity、HBM 客户认证、HPC/networking design-specific probe-card 复购、Farmers Branch 扩产和加州制造整合能否按时转化为可交付 probe-card 产能。
+- 最大利润率变量：Probe Cards mix 与利用率。FY2026Q1 Probe Cards segment gross margin 50.5%，Systems 38.0%；若 DRAM/HBM ramp 伴随低良率、加急成本或上游 substrate 紧缺，收入可以增长但毛利率未必继续扩张。
+- 最大现金流变量：高端 probe-card 需求带来的营运资本和扩产支出。FY2026Q1 operating cash flow 4,496 万美元、free cash flow 3,070 万美元，但库存增加、应收增加、Farmers Branch 和整合成本会决定 NTM FCF 是否跟上利润。
+- 可信度：基准为中高；乐观为中；极度乐观为低到中。原因是 Probe Cards 有 A/B 级财报和指引证据，但 FORM 不披露正式 backlog/bookings，CPO 仍偏 C/D 级 NTM 期权。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| HBM/DRAM advanced probe cards | FY2026Q1 DRAM revenue 8,293 万美元；Q1 年化约 3.32 亿美元；公司披露 record DRAM revenue，由 HBM 应用和 non-HBM 需求共同驱动 | Q1 收入 36.7% | NTM 最大增量之一；SK hynix Q1 占收入 29.5%，指向 HBM 客户暴露 | A/B | 进入基准；用 DRAM segment revenue 和 Q2 强需求指引作为主锚 | HBM4E/16H、custom HBM、HBM5 只进乐观上限或附录跟踪 |
+| Foundry & Logic HPC/networking probe cards | FY2026Q1 Foundry & Logic revenue 1.112 亿美元；Q1 年化约 4.45 亿美元；公司披露 significant increase driven by networking applications | Q1 收入 49.2% | NTM 另一条主线；NVIDIA Q1 占收入 10.2%，Taiwan revenue 强 | A/B | 进入基准；以 F&L revenue、客户披露和 Q2 指引为主锚 | Rubin/多云厂 ASIC 同步超预期进入乐观/极度乐观 |
+| TRITON/SiPh/CPO optical-electrical wafer test | 当前估计仍为 Systems 小部分；公司报告口径估计 2026 CPO revenue 为 1,000-2,000 万美元级或更高端区间 | Q1 低个位数估计；无法可靠量化 | 小基数但可能改变 Systems 结构；CPO/SiPh 从 engineering validation 向 early HVM 过渡 | C/D | 基准只纳入很小比例；不能把 CPO 叙事直接转成 NTM 收入 | 若 CPO HVM 提前，可能在 2027 后变成 Systems 增长曲线 |
+| Legacy probe stations、thermal、RF、cryogenic systems | FY2026Q1 Systems revenue 2,789 万美元；2025 Systems revenue 1.471 亿美元 | Q1 收入 12.3%；2025 占 18.7% | 当前收入不可忽略，但 Q1 YoY -19.9%，legacy demand 下滑 | A/B | 进入基准，但按低增长或恢复处理；不把 quantum/cryogenic 作为 AI 主线 | quantum、cryogenic、RF turnkey 是长期/非 AI 主线机会 |
+| Flash probe cards | FY2026Q1 Flash revenue 414 万美元；2025 Flash revenue 2,060 万美元 | Q1 收入 1.8%；2025 占 2.6% | 规模小，主要是抵消项或低权重业务 | A | 基准纳入低个位数收入；不作为增长引擎 | 无明显 NTM 远期期权 |
+| FICT/advanced substrate supply-chain enablement | 2025 获得 FICT 20% equity interest；不并表为产品收入 | 不适用 | 对 high-end probe card 交付、space transformer/substrate 供应有使能意义 | B/C | 不作为收入产品进入基准；只作为产能、良率和交期校准项 | 若 substrate 短缺加剧，FICT 价值体现为交付能力和利润率保护 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不评估 FORM 份额、收入确认或利润率。需求单位优先使用产品可解释指标：HBM/DRAM 和 F&L 用高端 probe-card 订单、design release、wafer sort/KGD/test insertion、客户项目数和行业市场规模；Systems 用 CPO/SiPh wafer-test line adoption、probe-station/thermal system 采购和 legacy replacement；Flash 用存储 wafer-test 需求。当前预期锚点是 FY2026Q1 实际分市场收入、FY2026Q2 正式指引、2026-06-11 本地行业报告的市场需求口径，以及公司对 DRAM/HBM 和 F&L networking 强需求的披露。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| HBM/DRAM advanced probe cards | FY2026Q1 DRAM revenue 8,293 万美元；行业报告将 HBM/AI probe card + contactor 当前年化机会估为 8-14 亿美元，高端 HBM/DRAM test 已处高利用 | HBM3E pull-in 消化或 HBM4 qualification 延后；DRAM probe demand 回落到约 7,500-8,500 万美元/Q 的需求强度 | HBM3E 12H 全年高位，HBM4 2026H2 qualification，需求维持约 8,500 万-1.05 亿美元/Q 的 FORM 可参与需求池 | HBM4/Rubin/MI400/ASIC 需求前置，三大 HBM 客户同时拉货，需求池上修到约 1.1-1.4 亿美元/Q | 测试成为 HBM 交付硬瓶颈，probe replacement、加急和多插入同步提高，需求池可达约 1.5 亿美元/Q 以上 | 悲观仍可能高于 FY2025 平均，但低于 Q2 指引隐含路径；乐观/极度为每季 +2,000 万至 +6,000 万美元级需求池上修 | 基准符合当前强需求预期；乐观和极度要求 HBM4/4E 时间表提前 | 正向：record DRAM revenue、SK hynix 29.5%、行业 HBM4 test intensity。反证：HBM ASP/客户验收降温、HBM4良率或资格认证延迟、客户库存消化 |
+| Foundry & Logic HPC/networking probe cards | FY2026Q1 F&L revenue 1.112 亿美元；Q1 YoY +30.4%；公司披露 networking applications 驱动 | AI/HPC design release 延后、客户 tape-out 或 foundry 排产推迟，需求回到约 9,500 万-1.05 亿美元/Q | Networking、HPC microprocessor 和 AI ASIC probe-card 需求保持强，需求约 1.10-1.25 亿美元/Q | NVIDIA/ASIC/TPU/Trainium/Broadcom 等项目数增加，需求约 1.30-1.50 亿美元/Q | 多个 N3/N2/HBM4 base die 和 custom ASIC 同时 ramp，需求约 1.55 亿美元/Q 以上 | 相对 Q1 当前锚，悲观为 -500 万至 -1,600 万美元/Q；乐观为 +2,000 万至 +4,000 万美元/Q | 基准略高于当前 run-rate，乐观需要客户项目扩散证据 | 正向：NVIDIA Q1 10.2%、Taiwan revenue强、行业 AI SoC test 强。反证：设计流片推迟、客户多供压价、advanced node ramp 节奏不及预期 |
+| TRITON/SiPh/CPO optical-electrical wafer test | 当前需求仍处 early adoption；CPO/optical I/O test 2026 更接近 pilot/initial HVM，2027 才可能扩大 | CPO HVM 推迟到 2027/2028，NTM 只有工程验证和少数系统需求 | 少量 CPO/SiPh line adoption，客户为 1.6T/3.2T 网络和 optical chiplet 准备产线 | TRITON/Keystone attach 增强，CPO 从工程线进入初始生产线复制 | CPO 被头部网络客户标准化，光电混合 wafer test 在 NTM 内出现非线性订单 | 从每季低个位数百万美元需求到乐观 1,000 万美元+/Q；极度仍是上限 | 当前预期是小基数增长，不能作为基准主收入 | 正向：公司 Investor Day 强调 CPO/Systems 长期机会、Keystone optical probing、MeasureOne生态。反证：CPO可维护性、coupling yield、客户架构选择和量产时间不确定 |
+| Legacy probe stations、thermal、RF、cryogenic systems | FY2026Q1 Systems revenue 2,789 万美元，YoY -19.9%；2025 Systems revenue 1.471 亿美元 | Legacy probe station 和 cryogenic demand 继续疲弱，热控/RF 不能抵消，下探到约 2,000-2,500 万美元/Q | Legacy 稳住，thermal、RF、CPO 小量抵消，需求约 2,600-3,400 万美元/Q | Thermal/high-power probe station、RF MeasureOne 和 CPO 共同改善，需求约 3,500-4,500 万美元/Q | Systems 从 legacy 过渡到 CPO/thermal/quantum 多线共振，需求约 5,000 万美元/Q 以上 | 悲观低于 Q1；基准接近 Q1至2025平均；乐观恢复到 2025 高位以上 | 基准为稳定，不是强增长 | 正向：高功率、SiPh、RF test 需求。反证：legacy 下滑、CPO未量产、Systems 工厂利用率低 |
+| Flash probe cards | FY2026Q1 Flash revenue 414 万美元；2025 Flash revenue 2,060 万美元 | Flash test demand 回落，Baldwin Park 调整后规模下降 | 维持低个位数百万美元/Q | NAND/存储周期修复带来小幅恢复 | 小基数弹性，但不影响公司主线 | 绝对变化通常仅数百万美元/Q | 相对当前预期影响小 | 正向：存储周期修复。反证：业务低占比、战略权重下降 |
+| FICT/advanced substrate supply-chain enablement | 高端 probe-card substrate/space transformer 是 supply bottleneck；FICT 不形成 FORM 并表收入 | substrate 供应改善有限，不能缓解交期或成本 | 作为供应链伙伴降低部分交付风险 | 紧缺下保障关键客户高端卡交付，提升份额保持能力 | 若高端 substrate 成全行业瓶颈，FICT 使 FORM 获得明显交付优势 | 不体现为收入需求池，而体现为可交付能力和毛利保护 | 基准只作使能，不作为收入 | 正向：FICT 20% equity interest。反证：权益投资不等于控制产能，良率和交付仍需验证 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断外部需求中哪些可进入 FORM 的 NTM 收入表，以及当前可收入化基数；不预测增长，不判断利润率扩张。A 级证据为已披露收入、分部收入或正式财务指引；B 级为披露订单、客户项目、明确交付时间表或客户超过 10% 收入；C 级为 design win、认证、产能规划或管理层可验证披露；D/E 级不得进入 NTM 基准收入。FORM 未披露 formal backlog/bookings，因此 backlog 不能作为主锚，Q2 正式指引、Q1 收入、客户集中度、deferred revenue、地理收入和产品线收入是主要收入确认证据。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| HBM/DRAM advanced probe cards | FY2026Q1 DRAM revenue 8,293 万美元；2025 DRAM revenue 2.474 亿美元；SK hynix Q1 29.5% | 直接收入 | Probe Cards 高利用率，但 DRAM 产品通常低于 F&L margin；HBM高复杂度可改善 mix | 当前可确认低位年化 3.2-3.5 亿美元 | Q1实际+Q2强需求可见路径 3.6-4.3 亿美元 | 多客户 HBM4/3E ramp 4.5-5.5 亿美元 | NTM 上限 6.0-7.2 亿美元 | 基准符合当前强需求和Q2指引；乐观高于当前预期 | A/B | 是 | 分市场收入、正式指引、客户超过10%、行业 HBM test 强需求 | 基准主收入线；HBM4E/16H 超出 NTM 的部分移入附录跟踪 |
+| Foundry & Logic HPC/networking probe cards | FY2026Q1 F&L revenue 1.112 亿美元；2025 F&L revenue 3.699 亿美元；NVIDIA Q1 10.2% | 直接收入 | 通常高于 DRAM 的产品/客户 mix；受客户定制工程和利用率影响 | 当前可确认低位年化 4.0-4.4 亿美元 | Q1实际+Q2路径 4.5-5.1 亿美元 | AI logic/networking 扩散 5.2-6.0 亿美元 | NTM 上限 6.2-7.2 亿美元 | 基准略高于 FY2026Q1 run-rate；乐观需要更多AI ASIC项目 | A/B | 是 | 分市场收入、正式指引、NVIDIA客户披露、Taiwan需求信号 | 基准主收入线；多客户 ASIC 上修进入乐观 |
+| TRITON/SiPh/CPO optical-electrical wafer test | Systems 中未单独披露；公司报告估计当前低个位数百万美元/Q；Keystone和TRITON提供产品路径 | 直接收入，但当前小 | 初期毛利取决于系统配置、服务、良率和利用率；短期可能受启动成本压制 | 500-1,000 万美元 NTM | 1,000-2,500 万美元 NTM | 2,500-5,000 万美元 NTM | 6,000 万-1.0 亿美元 NTM | 当前预期是小基数收入，不是主线 | C/D | 小比例进入 | 产品/平台披露、Investor Day、Keystone acquisition；但无分项收入披露 | 基准只纳入保守小比例；无量产客户披露前不得上调为主收入 |
+| Legacy probe stations、thermal、RF、cryogenic systems | FY2026Q1 Systems revenue 2,789 万美元；2025 Systems revenue 1.471 亿美元 | 直接收入 | Q1 Systems gross margin 38.0%，低于 Probe Cards；利用率敏感 | 9,000 万-1.05 亿美元 NTM | 1.0-1.25 亿美元 NTM | 1.25-1.6 亿美元 NTM | 1.6-2.2 亿美元 NTM | 基准低于2025年化但高于悲观；乐观需要 thermal/RF/CPO同时改善 | A/B | 是 | Systems segment revenue、产品组合、行业高功率测试需求 | 基准纳入，但按恢复/稳定而非高速增长处理 |
+| Flash probe cards | FY2026Q1 Flash revenue 414 万美元；2025 Flash revenue 2,060 万美元 | 直接收入 | 小规模、战略权重低；毛利无法可靠量化 | 800-1,200 万美元 NTM | 1,200-1,800 万美元 NTM | 1,800-2,800 万美元 NTM | 3,000-4,000 万美元 NTM | 当前预期低，变动对公司影响小 | A | 是，小比例 | 分市场收入 | 基准低权重纳入，作为抵消/补充项 |
+| FICT/advanced substrate supply-chain enablement | FICT 20% equity interest，不披露并表产品收入；供应 high-end probe card substrate/PCB 能力 | 间接 | 影响交付、良率、成本和库存，不直接形成 segment revenue | 不计入收入 | 不计入收入 | 不计入收入 | 不计入收入 | 不作为收入预期 | B/C | 否 | 权益投资和供应链逻辑 | 不进入 NTM 收入；只在第五步校准产能与利润可信度 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第三步需求和第四步可收入化基数出发，评估每个重要产品在 NTM 内可能贡献的收入和利润。产品级利润贡献以毛利贡献为主，因为 FORM 不披露产品级 OpEx、产品级 EBITDA 或产品级净利润；产品级净利无法可靠量化。公司层面经营利润率在第 6 节统一汇总。所有数字为报告模型估算，非公司指引。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| HBM/DRAM advanced probe cards | 悲观 | 3.3-3.6 亿美元 | 毛利约 1.35-1.65 亿美元；经营贡献仍正但利用率下降 | 低于 Q1/Q2 隐含高位；毛利率约 41%-46% | 低于当前预期 | HBM需求仍有基数，但HBM4或客户节奏低于预期 | 保留为悲观 | HBM pull-in结束、HBM4 qualification延后、客户库存消化 |
+| HBM/DRAM advanced probe cards | 基准 | 3.9-4.4 亿美元 | 毛利约 1.9-2.3 亿美元 | 保持高利用率；毛利率约 48%-52% | 符合当前强需求 | Q1 record DRAM、Q2强需求指引、SK hynix 29.5% | 保留为基准 | DRAM mix低于F&L；ramp成本和substrate短缺 |
+| HBM/DRAM advanced probe cards | 乐观 | 4.7-5.6 亿美元 | 毛利约 2.45-3.15 亿美元 | mix和利用率上行；毛利率约 52%-56% | 高于当前预期 | HBM4/3E多客户共振、test insertion增加 | 保留为乐观 | 三大HBM客户不一定同时给FORM份额；ASP/加急费未披露 |
+| HBM/DRAM advanced probe cards | 极度乐观 | 6.0-7.2 亿美元 | 毛利约 3.3-4.4 亿美元 | 非线性扩张；毛利率约 55%-61% | 明显高于当前预期，只作上限 | HBM测试成为硬瓶颈、replacement缩短、客户接受高配置 | 下移为乐观上限 | 缺少backlog和客户量化订单；极度情景需要需求、份额、产能、利润同时突破 |
+| Foundry & Logic HPC/networking probe cards | 悲观 | 4.0-4.4 亿美元 | 毛利约 1.85-2.2 亿美元 | 仍优于公司平均但低于Q1强势；毛利率约 46%-50% | 低于当前预期 | F&L Q1基数高，但AI/networking项目可后移 | 保留为悲观 | 客户tape-out推迟、foundry排产变化、多供压价 |
+| Foundry & Logic HPC/networking probe cards | 基准 | 4.55-5.1 亿美元 | 毛利约 2.3-2.8 亿美元 | 结构稳定；毛利率约 50%-55% | 符合至略高于当前预期 | Q1 F&L 1.112亿、NVIDIA 10.2%、networking应用披露 | 保留为基准 | design-specific，季度波动大；客户项目不可见 |
+| Foundry & Logic HPC/networking probe cards | 乐观 | 5.2-6.0 亿美元 | 毛利约 2.85-3.6 亿美元 | 利用率和复杂度上行；毛利率约 54%-60% | 高于当前预期 | AI ASIC项目数增加、Rubin/GB300/networking并行 | 保留为乐观 | F&L总需求不能直接等于FORM收入；同业和客户自研/多供 |
+| Foundry & Logic HPC/networking probe cards | 极度乐观 | 6.2-7.2 亿美元 | 毛利约 3.7-4.7 亿美元 | 高端MEMS/thermal/space transformer稀缺；毛利率约 58%-65% | 显著高于当前预期，只作上限 | 多客户AI ASIC同时量产，FORM保持关键份额 | 下移为乐观上限 | 无正式backlog；极度乐观需要多客户同时兑现 |
+| TRITON/SiPh/CPO optical-electrical wafer test | 悲观 | 500-1,000 万美元 | 毛利约 100-300 万美元；可能被工程支持费用吞噬 | 低利用率，毛利率约 20%-35% | 低于CPO叙事预期 | 产品存在但量产需求后移 | 保留为悲观 | CPO生态、coupling yield、客户量产线复制不确定 |
+| TRITON/SiPh/CPO optical-electrical wafer test | 基准 | 1,000-2,500 万美元 | 毛利约 400-1,000 万美元 | 初始量产/服务组合；毛利率约 35%-45% | 符合小基数预期 | TRITON、Keystone、Investor Day系统机会 | 保留为基准小项 | 无分项收入披露；不能替代Probe Cards主线 |
+| TRITON/SiPh/CPO optical-electrical wafer test | 乐观 | 2,500-5,000 万美元 | 毛利约 1,100-2,500 万美元 | 配置和服务attach提升；毛利率约 45%-50% | 高于当前预期 | 少数CPO/SiPh产线从验证进入HVM | 保留为乐观 | 客户采用时间表仍不清晰 |
+| TRITON/SiPh/CPO optical-electrical wafer test | 极度乐观 | 6,000万-1.0亿美元 | 毛利约 3,000-5,500 万美元 | 若标准化量产，毛利率约 50%-55% | 极高上限，不代表当前预期 | CPO optical-electrical wafer test被头部网络客户标准化 | 移入附录/仅作跟踪 | 缺少NTM正式客户、产线复制和收入确认路径 |
+| Legacy probe stations、thermal、RF、cryogenic systems | 悲观 | 9,000万-1.05亿美元 | 毛利约 2,700-3,800 万美元 | 低利用率；毛利率约 30%-36% | 低于当前预期 | Q1 Systems YoY -19.9% | 保留为悲观 | legacy probe station需求弱、工厂利用率低 |
+| Legacy probe stations、thermal、RF、cryogenic systems | 基准 | 1.0-1.25 亿美元 | 毛利约 3,700-5,000 万美元 | 稳定；毛利率约 37%-40% | 符合当前预期 | Q1 Systems revenue、thermal/RF/CPO部分抵消 | 保留为基准 | Systems产品过渡期，无法确认新平台贡献 |
+| Legacy probe stations、thermal、RF、cryogenic systems | 乐观 | 1.25-1.6 亿美元 | 毛利约 5,000-7,200 万美元 | 利用率恢复；毛利率约 40%-45% | 高于当前预期 | thermal、RF、SiPh需求改善 | 保留为乐观但低权重 | 非AI主线，容易被Probe Cards吸收注意力和资源 |
+| Legacy probe stations、thermal、RF、cryogenic systems | 极度乐观 | 1.6-2.2 亿美元 | 毛利约 7,000万-1.05亿美元 | Systems结构明显升级；毛利率约 44%-48% | 高于当前预期，上限 | CPO/thermal/RF/quantum同时改善 | 下移为乐观上限 | 多条小线同时超预期缺证据 |
+| Flash probe cards | 悲观 | 800-1,200 万美元 | 毛利无法可靠量化；估计 300-500 万美元 | 小规模，毛利方向中性偏弱 | 低于当前预期 | Q1仅414万美元 | 保留为悲观小项 | 业务低权重、战略收缩 |
+| Flash probe cards | 基准 | 1,200-1,800 万美元 | 毛利无法可靠量化；估计 500-800 万美元 | 稳定 | 符合当前预期 | 分市场收入可见 | 保留为基准小项 | 存储周期和客户切换 |
+| Flash probe cards | 乐观 | 1,800-2,800 万美元 | 毛利无法可靠量化；估计 800-1,300 万美元 | 小幅恢复 | 略高于当前预期 | 存储周期改善 | 保留为乐观小项 | 绝对金额小 |
+| Flash probe cards | 极度乐观 | 3,000-4,000 万美元 | 毛利无法可靠量化；估计 1,300-2,000 万美元 | 小基数弹性 | 高于当前预期但不改变公司 | 存储复苏+客户项目 | 下移为乐观上限 | 对公司总收入和利润影响有限 |
+| FICT/advanced substrate supply-chain enablement | 悲观 | 不计入收入 | 影响毛利和交期，不单独量化 | 供应支持有限 | 低于供应链使能预期 | 权益投资非控制性 | 仅作跟踪 | 不并表、无收入确认 |
+| FICT/advanced substrate supply-chain enablement | 基准 | 不计入收入 | 降低部分高端卡交付风险 | 毛利保护而非毛利扩张 | 符合当前预期 | FICT作为substrate/PCB关键供应链 | 仅作跟踪 | 交付和良率仍需验证 |
+| FICT/advanced substrate supply-chain enablement | 乐观 | 不计入收入 | 支撑更多Probe Cards收入确认和更少加急成本 | 间接改善 | 高于当前预期 | 高端substrate紧缺时优先保障 | 仅作跟踪 | 无直接收入证据 |
+| FICT/advanced substrate supply-chain enablement | 极度乐观 | 不计入收入 | 若substrate成为硬瓶颈，价值体现为份额和margin保护 | 间接改善上限 | 上限 | 供应链瓶颈显著 | 移入附录 | 不能把权益投资转成FORM收入 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为 FORM 的 NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。主表第一个表固定为公司收入和利润四情景。毛利率和经营利润率主要采用 non-GAAP 经营口径，以剔除 2026 restructuring charges 对经营传导的噪音；GAAP 口径仍需单独跟踪。NTM 总收入不是各产品最高值相加，已扣除客户预算、同一客户项目、产能和时间表重叠。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 8.8-9.4 亿美元 | 较 FY2025 +12%-20%；低于 Q2 指引年化 9.6 亿美元路径 | 低于当前指引/强需求路径；Q2兑现后H2回落 | non-GAAP GM 43%-46%；GAAP受重组仍可能更低 | 13%-17% | non-GAAP net income约 1.0-1.35 亿美元；GAAP无法可靠量化，受重组影响 | FCF仍可能为正但低于Q1年化；约 5,000万-1.0 亿美元 | 中 | HBM pull-in结束、F&L项目后移、Systems低利用率、重组扰动 |
+| 基准公司 | 10.0-10.8 亿美元 | 较 FY2025 +27%-38%；高于TTM 8.398亿和Q1年化 9.05亿 | 符合当前Q2指引和强需求正常兑现；不假设CPO大规模放量 | non-GAAP GM 48%-51% | 20%-24% | non-GAAP net income约 1.9-2.4 亿美元；EBITDA无法可靠量化但方向明显改善 | FCF约 1.2-1.8 亿美元，受库存和capex影响 | 中高 | Q2后持续订单、HBM/DRAM mix、Farmers Branch前期成本、客户集中 |
+| 乐观公司 | 11.2-12.8 亿美元 | 较 FY2025 +43%-63% | 高于当前预期；HBM/DRAM与F&L同时上修，Systems小幅恢复 | non-GAAP GM 51%-54% | 25%-29% | non-GAAP net income约 2.7-3.4 亿美元；EBITDA方向强 | FCF约 2.0-2.8 亿美元，但营运资本需求上升 | 中 | HBM4提前、AI ASIC项目数、substrate/space transformer交付、良率和客户认证 |
+| 极度乐观公司 | 13.5-15.5 亿美元 | 较 FY2025 +72%-97% | 显著高于当前预期；多个核心环节同时突破 | non-GAAP GM 54%-57% | 31%-36% | non-GAAP net income约 4.0-5.2 亿美元；GAAP仍受一次性项目影响 | FCF约 3.2-4.5 亿美元，前提是扩产不吞噬现金 | 低到中 | 需要HBM测试硬瓶颈、F&L多客户同时放量、CPO初始量产、产能和成本执行全部成立 |
+
+汇总检查：
+
+- 重复计算检查：HBM/DRAM probe cards 与 F&L probe cards 分属 FormFactor revenue by market，不重叠；TRITON/CPO 与 legacy Systems 都在 Systems segment 内，已在公司汇总时压低高端合计以避免 Systems 内部重复；FICT 不计入收入。
+- 一次性项目检查：FY2026Q1 GAAP gross margin 38.4% 包含 cost of revenues restructuring；第 6 节利润率使用 non-GAAP 主口径，并在现金流中保留重组和扩产执行风险。
+- 传统业务抵消：Flash 低权重；legacy Systems 下滑会抵消 CPO/thermal 小基数增长，不能把 Systems 全部视作 AI 高增长业务。
+- 低毛利 pass-through 检查：Probe-card 收入不是低毛利 pass-through，但高端 DRAM/HBM ramp 可能有初期良率、加急、tariff 和材料成本；收入上修不自动等于利润同幅上修。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。校准动作只使用保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次：需求风险放第三节，收入确认风险放第四节，份额/价格/成本风险放第五节，公司组合风险放第六节，可信度放本节。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026Q2 revenue 指引 2.40 亿美元 +/-500 万美元 | 公司汇总、收入基数 | 抬高悲观下限；支持 NTM 基准 10 亿美元以上 | Q2 non-GAAP GM 49.5% 指引支持基准毛利率 | Q2若兑现，H2订单能见度提高 | 保留基准；悲观不得低到无视Q2正式指引 |
+| FY2026Q1 Probe Cards revenue 1.982 亿美元，segment GM 50.5% | 产品贡献、利润质量 | 支持 HBM/DRAM 和 F&L 进入基准 | 高利用率和产品mix支持利润扩张 | 需要继续投入营运资本和产能 | 保留基准和乐观 |
+| DRAM record revenue、SK hynix Q1 29.5% | 需求、收入基数 | HBM/DRAM NTM 贡献可作为主线 | DRAM通常低于F&L，但HBM复杂度和高利用率改善 | 客户集中导致波动 | 保留基准；客户集中风险只在收入/执行层处理一次 |
+| NVIDIA Q1 10.2%、F&L Q1 YoY +30.4% | 需求、产品贡献 | 支持 F&L HPC/networking 进入基准 | F&L通常有较好mix | design-specific导致季度波动 | 保留基准；乐观需要更多客户扩散 |
+| FORM 不披露 formal backlog/bookings | 收入确认、可信度 | 限制所有乐观/极度乐观收入确认可信度 | 无法确认未来订单margin | 当季订单和交付依赖高 | 乐观保留但可信度中；极度乐观下移为上限 |
+| Systems Q1 revenue 2,789 万美元、YoY -19.9% | 产品贡献、公司组合 | 限制 Systems 基准增长 | Systems GM 38.0%，低于 Probe Cards | 低利用率可能拖累费用吸收 | 保留悲观；基准按稳定处理；CPO不主线化 |
+| TRITON/Keystone/SiPh/CPO | 远期期权、产品贡献 | 可提高 Systems 上限，但当前收入路径不足 | 若量产可能改善 mix，初期也可能费用重 | 客户验证和产线复制风险高 | 基准小比例保留；极度乐观移入附录/仅作跟踪 |
+| Farmers Branch 2026Q4末投产、2027爬坡 | 执行、产能 | 对NTM后半段有边际贡献，主要影响2027 | 短期start-up costs，长期利用率改善 | capex、招聘、良率和转移执行 | 基准只给小贡献；乐观给产能释放；不过度提前 |
+| Carlsbad/Baldwin Park整合与2026 restructuring | 利润率、现金流 | 可能短期影响交付和Flash/Systems收入 | GAAP毛利和经营利润受重组费用影响 | 现金/非现金费用、搬迁和良率风险 | GAAP利润可信度下调；non-GAAP经营主口径保留 |
+| 高端probe-card市场集中和客户认证壁垒 | 份额、价格 | 支持 FORM 捕获行业增量 | 支持高端产品定价和服务收入 | 切换成本高，客户粘性强 | 保留基准和乐观 |
+| AI CapEx/AI rack acceptance 放缓 | 需求 | 若发生，测试订单先于服务器收入回落 | 利用率下降放大margin压力 | 库存、应收和capex回收放慢 | 只作为悲观触发，不重复惩罚基准 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Q2后需求回落，NTM收入 8.8-9.4 亿美元，non-GAAP经营利润率 13%-17% | Q2正式指引和Q1记录收入使悲观下限不能太低 | backlog不披露、客户集中、Systems下滑、重组执行 | 保留 | 低于当前预期但仍高于FY2025 | 中 | 客户集中只在收入波动和执行可信度处理，不再重复压低毛利率和现金流 |
+| 基准 | Q2指引兑现，HBM/DRAM与F&L正常延续，NTM收入 10.0-10.8 亿美元，经营利润率 20%-24% | Q1 226.1M、Q2 240M指引、Probe Cards GM 50.5%、SK hynix/NVIDIA客户证据 | 无正式backlog；CPO仍小基数；GAAP受重组影响 | 保留 | 最可能情景 | 中高 | backlog缺失只限制乐观/极度，不把已披露Q1和Q2指引从基准中排除 |
+| 乐观 | HBM4/AI ASIC上修，NTM收入 11.2-12.8 亿美元，经营利润率 25%-29% | HBM/HPC测试强需求、行业高端probe-card集中、客户切换成本高 | 多客户同时兑现和产能释放证据不足；FORM份额不披露 | 保留 | 有证据的上行情景 | 中 | AI行业景气不能直接当FORM收入，必须通过DRAM/F&L/Systems分项传导 |
+| 极度乐观 | HBM、F&L、CPO、产能和利润同时突破，NTM收入 13.5-15.5 亿美元，经营利润率 31%-36% | 若测试成为硬瓶颈且客户接受高配置/加急/更高replacement，FORM具备高端卡位置 | 缺少NTM backlog、CPO量产客户和Farmers Branch提前爬坡证据 | 下移 | 仅保留为可验证上限；部分CPO与FICT因素移入附录/仅作跟踪 | 低到中 | CPO远期期权不能和HBM/F&L乐观收入简单相加 |
+
+可信度分层：
+
+- 高可信：FY2025收入、FY2026Q1收入、分市场收入、分部毛利率、Q2指引、现金流、客户超过10%披露。
+- 中高可信：HBM/DRAM和F&L probe-card作为NTM主线，因为有财报、客户和行业需求共同支持，但缺少bookings/backlog。
+- 中可信：乐观情景的产品级收入贡献，依赖客户项目节奏、FORM份额、交付能力和margin假设。
+- 低可信：CPO在NTM内成为大收入项、FICT显著改变收入确认、Systems极度乐观同步兑现。
+
+## 8. 结论
+
+- 最可能情景：基准。FORM 的 NTM 经营传导最可能落在 10.0-10.8 亿美元收入、48%-51% non-GAAP gross margin、20%-24% non-GAAP operating margin 的区间。核心不是 CPO，而是 HBM/DRAM advanced probe cards 与 Foundry & Logic HPC/networking probe cards 正常兑现 Q2 指引后的四季度延续。
+- 乐观情景成立条件：Q2 2026 达到或超过 2.40 亿美元中点且 non-GAAP GM 维持 49%+；DRAM revenue 连续保持 8,500 万美元/Q 以上并向 1.0 亿美元/Q 逼近；F&L revenue 保持 1.10 亿美元/Q 以上并由 NVIDIA/ASIC/networking 多客户驱动；Systems 不再拖累；tariff、重组和start-up costs 对毛利的拖累可控。
+- 极度乐观情景成立条件：HBM4/Rubin/MI400/TPU/Trainium/多客户 ASIC 在 NTM 内同步提前；客户把测试视为硬瓶颈并接受更高配置、加急交付和更频繁 replacement；Farmers Branch 或现有产线提前释放高端 probe-card 产能；TRITON/SiPh/CPO出现可验证 production customer；non-GAAP GM进入 54%+ 并非一次性。
+- 悲观情景触发条件：Q3/Q4 指引回落到 2.30 亿美元以下；DRAM revenue 低于 7,000 万美元/Q 且 F&L 低于 1.0 亿美元/Q；SK hynix或NVIDIA占比显著下降且未被其他客户替代；Systems继续低利用率；重组和产能转移影响交付；库存上升但收入不兑现。
+- 后续跟踪数据：Q2 2026实际 revenue、non-GAAP GM和EPS；DRAM/F&L/Systems/Flash分市场收入；SK hynix、NVIDIA、Samsung、Micron、TSMC等超过10%客户变化；South Korea/Taiwan revenue；deferred revenue和inventory；Farmers Branch投产节点；CPO/TRITON是否出现正式 production revenue；tariff和restructuring对GAAP/non-GAAP bridge的影响。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：FormFactor FY2025 10-K 截至 2025-12-27；FY2026Q1 10-Q 与 earnings release 截至 2026-03-28；FY2026Q2 指引为截至 2026-06-27 季度的公司 2026-04-29 指引；本报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - FY2025 revenue 7.84993 亿美元；2025 revenue by market：Foundry & Logic 3.69897 亿美元、DRAM 2.47397 亿美元、Flash 2,060 万美元、Systems 1.47095 亿美元；来源为 FormFactor FY2025 10-K。
+  - FY2026Q1 revenue 2.26144 亿美元；Q1 revenue by market：Foundry & Logic 1.112 亿美元、DRAM 8,290 万美元、Flash 410 万美元、Systems 2,790 万美元；来源为 Q1 2026 Supplemental Information。
+  - FY2026Q1 customers over 10% revenue：SK hynix 29.5%，NVIDIA 10.2%；来源为 Q1 2026 Supplemental Information。
+  - FY2026Q1 Probe Cards revenue 1.98257 亿美元、segment gross margin 50.5%；Systems revenue 2,788.7 万美元、segment gross margin 38.0%；来源为 FY2026Q1 10-Q 与 Supplemental Information。
+  - FY2026Q2 指引：revenue 2.40 亿美元 +/-500 万美元，GAAP gross margin 46.6% +/-1.5pp，non-GAAP gross margin 49.5% +/-1.5pp，GAAP EPS 0.46 +/-0.04，non-GAAP EPS 0.61 +/-0.04；来源为 FY2026Q1 earnings release。
+  - FY2026Q1 cash flow：operating cash flow 4,496 万美元，free cash flow 3,070 万美元；cash, cash equivalents and marketable securities 3.033 亿美元；来源为 FY2026Q1 earnings release 和 10-Q。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026Q2 指引年化约 9.6 亿美元，只是当前 run-rate，不等于全年或NTM预测。
+  - FORM 本地公司报告的一年后 run-rate 模型给出 2027Q2 基准 2.65-2.90 亿美元/Q、乐观 3.05-3.35 亿美元/Q、极度乐观 3.60-4.20 亿美元/Q；本报告不直接沿用该一年后季度 run-rate，而将 NTM 作为 FY2026Q2-FY2027Q1 四季度主表。
+  - CPO/TRITON、HBM4E/16H、custom HBM、FICT供应链优势和 quantum/cryogenic 系统主要为 2027 以后弹性，除有明确NTM收入确认路径外，只能进入乐观上限、附录或后续跟踪。
+- 主要来源：
+  - FormFactor FY2026Q1 earnings release, 2026-04-29: https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-first-quarter-results
+  - FormFactor FY2026Q1 Supplemental Financial Information, 2026-04-29: https://investors.formfactor.com/static-files/599ca1f9-f7ee-4701-b044-ec37752aba20
+  - FormFactor FY2026Q1 Investor Presentation, 2026-04-29: https://investors.formfactor.com/static-files/b97c313e-f460-43a8-8e33-d3a2b1f2c396
+  - FormFactor FY2026Q1 10-Q, period ended 2026-03-28: https://www.sec.gov/Archives/edgar/data/1039399/000103939926000023/form-20260328.htm
+  - FormFactor FY2025 10-K, period ended 2025-12-27: https://www.sec.gov/Archives/edgar/data/1039399/000103939926000009/form-20251227.htm
+  - FormFactor Investor Day 2026 presentation, 2026-05-11: https://investors.formfactor.com/static-files/29f1154b-e1e4-4b57-afbd-f296b3f36504
+  - `公司调研/封测_检测_计量_光罩/FORM_FormFactor_公司调研_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`

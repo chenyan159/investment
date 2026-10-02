@@ -1,0 +1,454 @@
+# Comfort Systems USA（FIX）公司调研：AI数据中心 MEP、模块化交付与工程产能尽调（2026-06-11）
+
+报告日期：2026-06-11  
+公司：Comfort Systems USA, Inc.  
+股票代号：FIX  
+所属目录：`公司调研/机电_冷却_工程_水处理_边缘工业AI/`  
+资料边界：项目内只使用 `行业调研/AI园区电力_机电_冷却/` 与 `行业调研/产业背景/` 相关资料；未读取、引用或继承 `特征量化/`、`日度资料/`、`tmp/` 或其他项目目录内容。公司数据来自联网的一手披露、IR材料、SEC文件和明确标注的二级估值来源。  
+核心口径：FIX 是 AI 数据中心物理交付链中的 MEP / 模块化 / 现场施工 / 调试产能供应商，不是 GPU、冷板、CDU、UPS、开关柜或光模块制造商。报告中所有“AI数据中心相关收入”均按证据等级估算，不把全部 technology 收入机械等同 AI 数据中心收入。
+
+## 0. 一页结论
+
+1. **FIX 当前在投资人心中的定位已经从传统 HVAC/MEP 承包商重估为“AI 数据中心 pick-and-shovel 工程产能股”。** 2026Q1 收入 `28.65亿美元`、同比 `+56.5%`，backlog `124.55亿美元`、同比 `+80.8%`；Q1 technology 客户收入占比 `56%`，其中公司口径把 data centers 与 chip manufacturing 同列为最强市场。
+2. **真正的产品不是单台设备，而是可上电、可冷却、可验收的工程交付能力。** FIX 的高价值业务包括：数据中心 MEP 安装、Electrical 安装、EAS/TAS 模块化 off-site construction、central/utility plant、air handling unit、data hall、electrical solutions、building automation、commissioning 与服务。
+3. **过去 3 年的核心变化是 mix、规模和模块化能力同步升级。** 年收入从 2023 年 `52.07亿美元` 到 2025 年 `91.02亿美元`，2026Q1 TTM 收入约 `101.36亿美元`；backlog 从 2024 年末 `59.94亿美元` 增至 2026Q1 `124.55亿美元`；technology 客户收入占比从 2025 年 `45%` 增至 2026Q1 `56%`。
+4. **AI 数据中心暴露很高，但不能当成纯设备股。** 2026Q1 technology 收入约 `16.05亿美元`；扣除 chip manufacturing、半导体厂房和非 AI 技术项目后，本报告估算 Q1 AI 数据中心直接/近邻收入约 `10-13亿美元`，约占总收入 `35-45%`，证据等级为中等。
+5. **订单能见度极强。** 2026Q1 期末 backlog / TTM revenue 约 `1.23x`，相当于约 `14.7个月` 的 TTM 收入；用“期末 backlog - 期初 backlog + 当季收入”粗估，2026Q1 gross bookings 约 `33.75亿美元`，即使在 revenue burn 加快后 backlog 仍继续上升。
+6. **利润率处于超常上行阶段。** Q1 毛利率 `26.3%`、经营利润率约 `17.0%`、净利率 `12.9%`；TTM 毛利率约 `25.1%`、TTM 净利率约 `12.1%`。这对工程承包商很高，来自 technology 项目 mix、模块化、执行效率、规模化采购和 labor 稀缺。
+7. **资产负债表非常健康。** 2026-03-31 现金 `10.50亿美元`，总债务 `0.39亿美元`，净现金约 `10.11亿美元`，Debt / TTM EBITDA `0.02x`，流动比率约 `1.24x`；财务杠杆不是当前风险点，主要风险在项目执行、固定价合同、劳动力和客户/项目周期。
+8. **估值已经按高增长基础设施稀缺资产定价。** 2026-06-11 盘中/延时报价约 `$1,843.42`，市值约 `$649.8亿`，TTM PE 约 `53.2x`，按公司 IR/LSEG 2026 EPS 均值 `$43.08` 计算 forward PE 约 `42.8x`，按 TTM 收入估算 PS 约 `6.4x`。估值容错很低。
+9. **未来一年基准情景仍是高增，但增速大概率从 2025-2026 的爆发式转向受产能约束的高位增长。** 基准情景：2026Q2-2027Q1 收入 `122-135亿美元`、同比约 `+20-33%`；乐观 `135-150亿美元`；极度乐观 `150-170亿美元`。限制不是需求，而是熟练工、模块化工厂、现场调试、长交期设备和客户项目节奏。
+
+## 1. 公司整体业务、投资人认知、产业链位置与财务快照
+
+### 1.1 业务定义
+
+Comfort Systems USA 是美国全国性 commercial / industrial / institutional 建筑系统服务商，核心业务是机械、电气、管道、暖通、控制和模块化交付。公司 2026Q1 IR 材料描述其为全国性 MEP installation and service provider，拥有 `197` 个地点、覆盖 `143` 个城市、员工 `23,000+`，年化收入已超过 `100亿美元`。
+
+公司业务可以按三种维度拆分：
+
+| 维度 | 2026Q1 / 2025 披露 | 投资含义 |
+|---|---:|---|
+| 按专业 | 2026Q1 revenue：Mechanical `72%`，Electrical `28%`；gross profit：Mechanical `73%`，Electrical `27%` | Mechanical 仍是主干，但 Electrical 在 AI 数据中心、电力接入、配电、工厂扩建中增速更高。 |
+| 按客户行业 | 2026Q1 technology `56%`，manufacturing `19%`，healthcare `8%`，government `5%`，education `4%`，retail `3%`，office `3%`，other `2%` | Technology 已成为第一大客户行业，且从 2025 全年 `45%` 继续上升。 |
+| 按交付类型 | 2026Q1 new construction `57%`，existing construction `15%`，modular `17%`，service projects `5%`，service & maintenance `6%` | 新建 AI 数据中心和高端制造主导；模块化占比已达到可单独跟踪的规模。 |
+
+### 1.2 投资人心中的公司：从周期承包商到 AI 物理交付瓶颈
+
+过去市场通常把 FIX 看成 HVAC / MEP specialty contractor：收入受建筑周期、劳动力、材料和项目执行影响，估值不应太高。2024-2026 以后，投资人更倾向把它看成 AI 数据中心、电力密集制造、药厂、食品加工和美国制造回流的工程产能平台。
+
+这次重估的原因不是“AI 概念”，而是财报中的真实订单：
+
+| 指标 | 2024 | 2025 | 2026Q1 / TTM |
+|---|---:|---:|---:|
+| 年收入 | `70.27亿美元` | `91.02亿美元` | TTM 约 `101.36亿美元` |
+| 年 EPS | `$14.60` | `$28.88` | TTM EPS 约 `$34.64` |
+| 年末/季末 backlog | `59.94亿美元` | `119.45亿美元` | `124.55亿美元` |
+| Technology 收入占比 | 外部/市场口径约 `33%` | 公司 IR 披露 `45%` | 2026Q1 `56%` |
+| 毛利率 | 2024 全年约 `22.3%` | 2025 全年约 `24.1%` | 2026Q1 `26.3%` |
+
+### 1.3 最近 3 年重大变化、转型与收购
+
+| 时间 | 事件 | 战略意义 |
+|---|---|---|
+| 2023-2024 | 技术、制造、能源和大型工业项目占比提升；backlog 从 2023 年末 `51.57亿美元` 到 2024 年末 `59.94亿美元` | 开始摆脱普通商业 HVAC 周期，进入更高复杂度的工业/技术项目。 |
+| 2024 | 收购 Summit Industrial Construction、J&S Mechanical 等区域/专业公司 | 增强工业机械、管道、电气和区域履约能力；支持高端制造、数据中心和工厂项目。 |
+| 2025 | 收购 Right Way、Century 等；2025Q3 后又收购 Feyen Zylstra 与 Meisner Electric，二者合计预计贡献年收入 `2亿美元+`、EBITDA `1500-2000万美元` | 明显补强 Electrical 与工业能力，尤其是西密歇根和南佛州区域。 |
+| 2025-2026 | 模块化 / off-site construction 占收入 `17-18%`；EAS/TAS 成为模块化核心平台 | 数据中心和高端制造需要更短工期、更少现场人工、更强质量控制，模块化能力变成关键壁垒。 |
+| 2026Q1 | Technology 收入占比升至 `56%`；backlog 升至 `124.55亿美元`；现金 `10.50亿美元`、总债务仅 `0.39亿美元` | 进入“高增长 + 净现金 + 高 backlog”的稀缺状态，但估值也显著上修。 |
+
+### 1.4 在 AI 数据中心产业链中的位置
+
+项目内 `行业调研/AI园区电力_机电_冷却/` 的结论是，2026-2027 AI 数据中心瓶颈从 GPU allocation 扩散到 time-to-power、time-to-cool、time-to-commission。FIX 正处在这条链的工程交付层：
+
+```text
+GPU/ASIC rack
+-> 高密度机架供电/冷却需求
+-> 电力设备、冷却设备、管路、母线、UPS、开关柜、泵阀、CDU、BMS/DCIM
+-> MEP 设计协同、模块化预制、现场安装、联调、commissioning
+-> 可上电、可冷却、可验收的数据厅 / AI factory
+```
+
+FIX 不制造 GPU、冷板、CDU、UPS 或开关柜，但负责把这些设备和系统按客户设计落地。它的单位经济来自：
+
+- 稀缺熟练工：电工、管工、焊工、BAS/controls、调试工程师、项目经理。
+- 项目经验：高密度数据中心、半导体/药厂、生命科学、食品加工等复杂工艺系统。
+- 模块化：EAS/TAS 通过工厂预制减少现场工时、返工和安全风险。
+- 客户认证：大型客户更重视准时交付和可靠性，而不是最低报价。
+
+### 1.5 最新估值和财务快照
+
+估值日期：2026-06-11；股价/市值为盘中或延时市场快照，后续会变化。
+
+| 指标 | 最新值 | 日期 / 口径 | 备注 |
+|---|---:|---|---|
+| 股价 | `$1,843.42` | 2026-06-11，web finance 快照 | 当日盘中/延时数据。 |
+| 市值 | `约649.8亿美元` | 2026-06-11，web finance 快照 | 对应股价和约 `3526万` 股稀释股附近。 |
+| TTM PE | `约53.2x` | 2026-06-11，web finance 快照 | TTM EPS 约 `$34.64`。 |
+| Forward PE | `约42.8x` | 股价 / 公司 IR LSEG 2026 EPS 均值 `$43.08` | 若用 Yahoo 2026-06-10 快照，forward PE 约 `39.1x`；差异来自股价波动和 EPS 口径。 |
+| PS | `约6.4x` | 市值 / TTM 收入 `101.36亿美元` | Yahoo 2026-06-10 快照约 `6.0x`。 |
+| 最新季度收入增速 | `+56.5% YoY` | 2026Q1 | 收入 `28.65亿美元` vs 2025Q1 `18.31亿美元`。 |
+| TTM 收入增速 | `约+38.4% YoY` | TTM 至 2026Q1 | 用 2025 全年 + 2026Q1 - 2025Q1 计算。 |
+| 最新季度毛利率 | `26.3%` | 2026Q1 | 毛利 `7.544亿美元`。 |
+| 最新季度净利率 | `12.9%` | 2026Q1 | 净利润 `3.704亿美元`。 |
+| TTM 毛利率 | `约25.1%` | TTM 至 2026Q1 | 估算。 |
+| TTM 净利率 | `约12.1%` | TTM 至 2026Q1 | 估算。 |
+| 现金 | `10.50亿美元` | 2026-03-31 | 公司 Q1 披露。 |
+| 总债务 | `0.39亿美元` | 2026-03-31 | 现金显著大于债务。 |
+| 净现金 | `约10.11亿美元` | 2026-03-31 | 现金 - 总债务。 |
+| Debt / TTM EBITDA | `0.02x` | 2026Q1 IR | 财务杠杆极低。 |
+| 流动比率 | `约1.24x` | 2026-03-31 | current assets `45.01亿美元` / current liabilities `36.31亿美元`。 |
+
+### 1.6 资产负债表健康度
+
+结论：**非常健康，但营运资本和项目会计仍需跟踪。**
+
+| 项目 | 2026-03-31 | 解读 |
+|---|---:|---|
+| 现金及等价物 | `10.50亿美元` | 相当于总债务约 `26.9x`。 |
+| 总资产 | `69.38亿美元` | 其中 goodwill `10.26亿美元`、无形资产净额 `4.65亿美元`，收购积累明显但未构成压力。 |
+| 当前资产 | `45.01亿美元` | 主要是应收账款、现金和合约资产。 |
+| 当前负债 | `36.31亿美元` | 包含 billings in excess / deferred revenue `23.45亿美元`，这是工程业务的正常客户预收/进度款结构。 |
+| 总负债 | `41.23亿美元` | 负债中大量是项目相关流动负债，不是金融债。 |
+| 股东权益 | `28.15亿美元` | ROE 高，但一部分来自高利润周期和轻资本模式。 |
+| 经营现金流 | 2026Q1 `3.888亿美元` | Q1 现金流显著好于 2025Q1 `-0.880亿美元`。 |
+| 自由现金流 | 2026Q1 `2.422亿美元` | Q1 capex 较高，反映扩产和模块化能力投资。 |
+
+风险点：
+
+- 工程收入采用 cost-to-cost 进度法，项目估算偏差会影响利润确认。
+- 固定价合同在人工、材料、设计变更和调试延误下有毛利回撤风险。
+- backlog 很大不等于无风险收入；公司安全港披露也明确提示 backlog 可能调整、取消或不能转化为利润。
+
+## 2. 最近五次财报：收入、利润、backlog、bookings 与 AI 数据中心暴露
+
+说明：FIX 不按“AI 数据中心”单独披露收入，也不披露 bookings、lead time、取消率。下表中 bookings 为近似值：
+
+```text
+粗估 gross bookings = 期末 backlog - 期初 backlog + 当季 revenue
+```
+
+该指标会受到收购并表、项目范围调整、变更单和取消的影响，只用于判断订单动量。
+
+| 财报季度 | 收入 | YoY | 毛利率 | 经营利润率 | 净利率 / EPS | 期末 backlog | 粗估 bookings / book-to-burn | 订单、交期、取消率判断 | 业务收入与 AI 数据中心相关性 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|---|
+| 2026Q1，最新 | `28.65亿美元` | `+56.5%` | `26.3%` | `约17.0%` | `12.9% / $10.51` | `124.55亿美元` | `33.75亿美元 / 1.18x` | backlog 同比 `+80.8%`；管理层称需求、recent bookings 和 pipeline 强，backlog 在 burn rate 提升后仍增加。lead time 未披露，按 AI MEP/模块化大项目推测从订单到收入多为 `6-18个月+`。取消率未披露，当前无明显取消证据。 | Mechanical `72%`，Electrical `28%`；technology `56%`，约 `16.05亿美元`；估算 AI DC 直接/近邻 `10-13亿美元`。 |
+| 2025Q4 | `26.46亿美元` | `+41.7%` | `25.5%` | `约16.1%` | `12.5% / $9.37` | `119.45亿美元` | `52.14亿美元 / 1.97x` | Q4 backlog 环比从 `93.77亿美元` 到 `119.45亿美元`，是全年最强订单季度；公司称 backlog 近乎年初翻倍，第三个连续 same-store backlog 增量超过 `10亿美元`。 | 2025 全年 technology `45%`、modular `18%`；Q4 按全年和9M趋势估算 AI DC 直接/近邻约 `8-11亿美元`。 |
+| 2025Q3 | `24.51亿美元` | `+35.2%` | `24.8%` | `15.5%` | `11.9% / $8.25` | `93.77亿美元` | `37.07亿美元 / 1.51x` | Q3 backlog 环比从 `81.21亿美元` 到 `93.77亿美元`；公司称在 significant burn 后仍实现第二个连续 same-store backlog 增量 `10亿美元+`。 | Q3 YTD technology `42%`、modular `17%`；AI DC 直接/近邻估算 `6-9亿美元`。 |
+| 2025Q2 | `21.73亿美元` | `+20.1%` | `23.5%` | `13.8%` | `10.6% / $6.53` | `81.21亿美元` | `34.00亿美元 / 1.56x` | Q2 backlog 首次超过 `80亿美元`，同比 `+40.7%`；顺序增加包含 Right Way 收购 backlog `1.376亿美元`，same-store 增加约 `11.0亿美元`。 | 技术/制造/模块化继续拉动；单季 AI DC 未披露，估算占总收入 `30-40%`。 |
+| 2025Q1 | `18.31亿美元` | `+19.1%` | `22.0%` | `11.4%` | `9.2% / $4.75` | `68.94亿美元` | `27.31亿美元 / 1.49x` | Q1 backlog 较 2024Q4 `59.94亿美元` 增长；公司称项目 pipeline 支撑 2025 和 2026 成功。Q1 经营现金流为 `-0.880亿美元`，主要是营运资本正常化。 | AI DC 和技术项目已经开始贡献，但公司未披露单季占比；估算 AI DC 直接/近邻 `25-35%`。 |
+
+### 2.1 五季度趋势解读
+
+1. **收入加速**：YoY 从 2025Q1 `+19.1%` 到 2026Q1 `+56.5%`，说明 backlog 正在快速转 revenue，而不是只堆订单。
+2. **毛利率持续提升**：从 2025Q1 `22.0%` 到 2026Q1 `26.3%`，MEP 行业中很少见，暗示 project mix、模块化、执行效率和价格/成本传导共同改善。
+3. **backlog 增长快于 revenue burn**：五季度期末 backlog 从 `68.94亿美元` 到 `124.55亿美元`，表明订单补充仍强。
+4. **Q4 2025 是订单阶跃季度**：粗估 bookings `52亿美元+`，可能包含大型 data center / technology / manufacturing 项目、变更单和新收购贡献。
+5. **AI 数据中心暴露不能精确拆分**：公开披露只到 technology、modular、segment 层。因 technology 包含 data centers 和 chip manufacturing，本报告对 AI DC 使用估算区间而非精确值。
+
+## 3. 最新财报指引、业务收入占比、重点产品与跳过业务
+
+### 3.1 2026Q1 指引和管理层表述
+
+FIX 没有给出传统意义的全年收入/EPS正式指引。2026Q1 管理层表述是：recent bookings、persistent demand 和 strong pipelines 让公司对未来几个季度乐观。公司 IR 的 LSEG 分析师 EPS 均值如下：
+
+| 财年 | EPS 均值 | 高值 | 低值 | 估算含义 |
+|---|---:|---:|---:|---|
+| 2026E | `$43.08` | `$44.66` | `$41.40` | 较 2025 EPS `$28.88` 增长约 `+49%`。 |
+| 2027E | `$53.44` | `$59.38` | `$42.79` | 较 2026E 增长约 `+24%`。 |
+| 2028E | `$67.27` | `$75.15` | `$59.38` | 远期覆盖较少，需降权。 |
+
+### 3.2 2026Q1 收入占比与美元化
+
+| 业务/客户口径 | 收入占比 | 2026Q1 对应收入 | 增长判断 |
+|---|---:|---:|---|
+| Mechanical | `72%` | `约20.63亿美元` | 核心规模最大，受 HVAC、工艺管道、冷却水、plumbing、process piping 拉动。 |
+| Electrical | `28%` | `约8.02亿美元` | 增速大概率高于 Mechanical；AI 数据中心和高端制造需要电力、配电、raceway、低压/中压系统安装。 |
+| Technology | `56%` | `约16.05亿美元` | 最突出业务；包含 data centers 与 chip manufacturing，不能全算 AI DC。 |
+| Manufacturing | `19%` | `约5.44亿美元` | 制造回流、食品加工、工业设施；AI 间接性弱于 technology。 |
+| Healthcare | `8%` | `约2.29亿美元` | 稳定但低于 AI DC 增速。 |
+| Government / Education | `9%` 合计 | `约2.58亿美元` | 公共机构项目，非本次重点。 |
+| Retail / Office / Other | `8%` 合计 | `约2.29亿美元` | 低增速、低 AI 相关性，报告降权。 |
+| New construction | `57%` | `约16.33亿美元` | AI data center / chip fab / industrial 主要载体。 |
+| Existing construction | `15%` | `约4.30亿美元` | retrofit 和扩建；未来 AI inference / liquid-ready retrofit 有弹性。 |
+| Modular | `17%` | `约4.87亿美元` | 最值得单独跟踪的小业务/高弹性业务。 |
+| Service projects | `5%` | `约1.43亿美元` | 小项目和改造，可能高毛利。 |
+| Service & maintenance | `6%` | `约1.72亿美元` | 稳定现金流，但 AI 弹性较低。 |
+
+### 3.3 公司“产品/型号”：FIX 是工程交付商，产品是交付包
+
+FIX 没有类似 GPU 型号或冷机型号的标准 SKU。其“产品”应理解为项目交付包和模块化解决方案：
+
+| 产品/交付包 | 官方/业务内容 | AI 数据中心相关性 | 利润率与增长判断 |
+|---|---|---|---|
+| Data center MEP installation | HVAC、mechanical、electrical、plumbing、piping、controls 的安装、改造、扩建、维护 | 最高；直接决定 time-to-power、time-to-cool、time-to-commission | 2026Q1 已反映在 technology `56%`、new construction `57%`、backlog `124.55亿美元`。毛利率可高于普通商业项目。 |
+| Modular off-site construction | 由 EAS 和 TAS Energy 主导，六个设施、合计 `110万平方英尺+`；可做 central energy plants、central utility plants、penthouses、air handling units、immersion cooling、electrical solutions、data centers、edge data centers、data halls、super skids、utility infrastructure、turbine inlet chilling | 最高；AI 项目缺现场工、赶工期，模块化价值高 | Q1 modular `17%`、约 `4.87亿美元`；年化接近 `19.5亿美元`，但需按项目节奏降权。 |
+| Electrical installation / electrical rooms | 电力系统安装、开关设备和配电设备现场集成、conduit/raceway、低压/中压配电接口、UPS/发电机/BESS接口、controls | 很高；AI DC 第一瓶颈是电力 | Q1 electrical `28%`，约 `8.02亿美元`；2025 electrical revenue `24.28亿美元`，同比高增。 |
+| Building automation / controls / monitoring / energy management | BAS、监控、安全、能源管理、控制集成 | 中高；AI DC 需要 BMS/DCIM/热电联动，但 FIX 更偏安装和集成 | 收入占比不单披露；毛利率可能高于纯施工，但规模小。 |
+| Service / maintenance / retrofit | 维护、on-demand service、retrofit、service projects | 中；AI 机房上电后会带来服务，但当前主要 growth 来自新建 | Q1 service projects + service maintenance 合计 `11%`，约 `3.15亿美元`。 |
+
+### 3.4 跳过或降权的业务
+
+本报告后续不重点展开以下业务：
+
+| 业务 | 跳过原因 |
+|---|---|
+| Retail / office 普通 HVAC | 2026Q1 收入占比合计约 `6%`，AI 相关性低，增长弹性弱。 |
+| Education / government 普通楼宇项目 | 收入稳定，但不决定 AI 数据中心订单弹性。 |
+| 普通低密度 HVAC 维护 | 现金流好，但估值弹性远低于 technology / modular / data center MEP。 |
+| 单纯医疗/商业服务项目 | 对公司防守性有价值，但不是本次 AI 基建主线。 |
+| FIX 不生产的设备 | GPU、服务器、冷板、CDU、UPS、开关柜、母线槽、光模块等属于供应商设备；FIX 可能安装/集成，但不拥有这些产品 ASP。 |
+
+## 4. 当前关键业务：收入贡献、增速、AI 基建重要性、供需与定价权
+
+评分：1 低，5 高。美元贡献为 2026Q1 或 TTM 估算。
+
+| 高增长/关键业务 | 当前收入贡献 | 增速证据 | AI 技术栈重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 判断 |
+|---|---:|---|---:|---:|---:|---:|---|
+| AI 数据中心 MEP / technology construction | Q1 technology `16.05亿美元`；AI DC 直接/近邻估算 `10-13亿美元` | Q1 revenue `+56.5%`，technology 占比从 2025 `45%` 到 Q1 `56%` | 5 | 5 | 5 | 4 | AI DC 没有 MEP 就不能上电/冷却/验收，是确定性最高的主线。 |
+| Electrical installation / power path integration | Q1 `约8.02亿美元`；2025 electrical `24.28亿美元` | 2025 electrical revenue 比 2024 `14.999亿美元` 增 `+61.9%`；Q1 electrical占比 `28%` | 5 | 5 | 5 | 4 | 电力是 AI DC 第一瓶颈，FIX 不卖开关柜但能捕获安装和集成价值。 |
+| Modular off-site construction / EAS / TAS | Q1 `约4.87亿美元`，2025 全年 `约16.38亿美元` | Q1 modular `17%`，2025 `18%`；模块化是公司明确趋势 | 5 | 5 | 4 | 4 | 工厂预制减少现场工时，直接解决 AI 项目抢工期问题。 |
+| Existing construction / retrofit / service projects | Q1 existing + service projects `约5.73亿美元` | Q1 existing `15%`，service projects `5%` | 3 | 4 | 3 | 3 | 2027 企业/colo inference retrofit 可能放量；当前不是最大收入弹性。 |
+| Building automation / controls / commissioning | 未单列；估算占收入低个位数到中个位数 | BMS/DCIM/热电联动行业高增，但 FIX 不单披露 | 4 | 4 | 3 | 3 | 小业务可能被低估；若与模块化交付绑定，利润率有上行空间。 |
+| Advanced manufacturing / chip fab MEP | Q1 manufacturing `约5.44亿美元`，technology 内也含 chip manufacturing | 美国制造回流、半导体/药厂建设强 | 4 | 4 | 4 | 3 | 与 AI 数据中心共享熟练工和洁净/工艺能力，是重要 adjacent business。 |
+
+## 5. 未来一年三情景预测：各关键业务收入、重要性、供需与定价
+
+预测窗口：2026Q2 至 2027Q1，非公司指引。
+
+### 5.1 公司整体收入情景
+
+| 情景 | 未来一年收入 | 同比/TTM增速 | 毛利率 | EPS/盈利方向 | 关键假设 |
+|---|---:|---:|---:|---|---|
+| 基准 | `122-135亿美元` | `+20-33%` | `24.5-26.5%` | EPS 维持高双位数增长 | backlog 转化顺利，technology mix 保持高位，但 growth 从 Q1 爆发式回落。 |
+| 乐观 | `135-150亿美元` | `+33-48%` | `25.5-27.5%` | EPS 继续显著超预期 | AI data center 和 chip fab 项目加速，模块化产能利用率高，Electrical 加速。 |
+| 极度乐观 | `150-170亿美元` | `+48-68%` | `26.0-29.0%` | EPS 可能接近或超过 2027E 均值提前兑现 | 大型 AI campus 批量 NTP，客户愿为交付确定性支付溢价，模块化工厂和人力扩张不掉链子。 |
+
+### 5.2 关键业务情景
+
+| 业务 | 基准：一年后收入贡献 | 乐观：一年后收入贡献 | 极度乐观：一年后收入贡献 | AI 重要性 / 紧急性 / 供需 / 定价 |
+|---|---:|---:|---:|---|
+| AI 数据中心 MEP / technology construction | 年化 `55-70亿美元` technology，其中 AI DC 直接/近邻 `38-52亿美元` | technology `70-85亿美元`，AI DC `52-68亿美元` | technology `85-105亿美元`，AI DC `68-88亿美元` | 重要性 5；紧急性 5；供需 5；定价 4。 |
+| Electrical installation / power path | 年化 `34-40亿美元` | `40-50亿美元` | `50-65亿美元` | 重要性 5；紧急性 5；供需 5；定价 4。 |
+| Modular / off-site construction | 年化 `20-25亿美元` | `25-34亿美元` | `34-45亿美元` | 重要性 5；紧急性 5；供需 4-5；定价 4-5。 |
+| Retrofit / service / maintenance | 年化 `15-20亿美元` | `20-24亿美元` | `24-30亿美元` | 重要性 3-4；紧急性 3-4；供需 3；定价 3。 |
+| Controls / commissioning / automation | 年化 `5-8亿美元` 相关收入池 | `8-12亿美元` | `12-18亿美元` | 重要性 4；紧急性 4；供需 3-4；定价 3-4。 |
+| Advanced manufacturing / chip fab MEP | 年化 `22-30亿美元` | `30-38亿美元` | `38-50亿美元` | 重要性 4；紧急性 4；供需 4；定价 3-4。 |
+
+解释：上述业务之间有重叠，不能简单相加。例如 technology revenue 可能包含 modular、electrical 和 mechanical；modular 也可能用于 data centers 或 manufacturing。
+
+## 6. BOM、单位内容量、价格传导、产能能力、供应链采纳与认证
+
+### 6.1 按每 MW / 每 rack / 每 GPU / 每 optical port 的 FIX 内容量
+
+因为 FIX 是安装与模块化交付商，本表测算的是 FIX 可捕获的工程收入，不是全套设备 BOM。
+
+| 计量单位 | AI 数据中心总物理口径 | FIX 可捕获内容量：基准 | 乐观 | 极度乐观 | 说明 |
+|---|---:|---:|---:|---:|---|
+| 每 MW IT load | 项目内行业模型：facility-heavy CapEx 约 `$10-22M/MW`，建筑/MEP约占 AI DC CapEx `8-14%` | `$1.5-3.0M/MW` | `$3.0-4.5M/MW` | `$4.5-6.5M/MW` | 取决于 FIX 是单一分包、MEP 主承包、还是含模块化 plant / skid / data hall。 |
+| 每 rack | 2026 AI rack density 务实 `60-160kW/rack`，即 `6-17 racks/MW` | `$90k-500k/rack` | `$180k-750k/rack` | `$300k-1.0M/rack` | 高值对应 liquid-ready、高电力密度、模块化冷却/电力房和更复杂 commissioning。 |
+| 每 GPU | NVL72 类 rack 72 GPUs/rack；不同 ASIC/rack 差异大 | `$1.2k-7k/GPU` | `$2.5k-10k/GPU` | `$4k-14k/GPU` | 只是 facility / MEP / modular 分摊，不包含 GPU、服务器、网络设备。 |
+| 每 optical port | 光端口属于网络设备/光模块供应链 | `$0` 核心硬件内容量；若含桥架/线缆通道/低压布线，可分摊 `$50-300/port` | `$100-500/port` | `$200-800/port` | FIX 不卖 optical transceiver；只有在低压布线、raceway、data hall physical pathway 里有间接工程内容。 |
+
+### 6.2 AI 数据中心 MEP 的 BOM/成本分层
+
+| 层级 | 真实 BOM / 工程内容 | FIX 角色 | 价格传导 |
+|---|---|---|---|
+| 电力路径 | utility/substation 接入、switchgear、transformer、UPS、generator/BESS接口、busway、PDU、接地、raceway | 安装、集成、项目管理、调试协同；设备多由客户/OEM指定 | 电力设备交期长，现场电工短缺；FIX 可通过 labor scarcity、schedule certainty 和项目复杂度传导价格。 |
+| 冷却路径 | chiller / cooling tower / dry cooler、facility water loop、piping、pump skid、CDU接口、过滤/冲洗、leak detection | 机械安装、管路、焊接、模块化 plant/skid、commissioning | rack density 提升导致 MEP 复杂度上升；模块化能减少现场工期，具备溢价。 |
+| 白区/数据厅 | data hall、机柜布局、吊装、穿线、管路、fire protection、BMS/DCIM接口 | MEP施工和集成 | 客户为 time-to-revenue 付费，延误成本远高于普通工价差。 |
+| 模块化 | central energy/utility plant、air handling unit、electrical solution、data hall、edge data center、super skid | EAS/TAS 设计、预制、工厂测试、运输、现场连接 | 工厂产能、FAT、质量和交付时间是主要定价源。 |
+| 控制/服务 | BAS、监控、energy management、维护、retrofit | 集成与服务 | 服务合同更可持续，但大客户也会压价。 |
+
+### 6.3 当前产能能力（美元计）
+
+| 产能项目 | 当前可观察能力 | 美元能力估算 | 采纳程度 | 认证/验证阶段 |
+|---|---|---:|---|---|
+| 公司总履约能力 | 2026Q1 年化 revenue `114.6亿美元`，TTM revenue `101.36亿美元`，员工 `23,000+` | 当前年收入能力 `100-115亿美元+` | 高；backlog `124.55亿美元` 已验证客户采纳 | 以客户 prequalification、项目获奖、施工许可证、保险/安全体系和 site acceptance 为主。 |
+| Technology / data center 交付能力 | Q1 technology `56%`，约 `16.05亿美元` | 年化 technology revenue `64亿美元`；AI DC 直接/近邻 `40-52亿美元` 估算 | 高；technology 已是最大客户行业 | 客户名称和项目认证未披露；证据为收入 mix 与 backlog。 |
+| Modular/offsite | 官方披露 EAS/TAS 六个设施、`110万平方英尺+`，Q1 modular `17%` | Q1 年化 `约19.5亿美元`；稳态估算 `18-25亿美元` | 高；data center / modular产品页明确覆盖 data centers、data halls、edge data centers、central utility plants | 产品级 UL/NFPA/OCP 认证未逐项披露；多数认证随设备/OEM/项目 code compliance 和 commissioning 完成。 |
+| Electrical | Q1 electrical `28%`，约 `8.02亿美元` | 年化 `32亿美元+`；若新增收购并表和AI项目持续，`35-45亿美元` | 高；2025 electrical收入同比 `+61.9%` | 电力设备本体认证由OEM承担；FIX承担安装、现场质量、安全、客户验收。 |
+| Service/controls | Q1 service + maintenance `约3.15亿美元` | 年化 `12-15亿美元` | 中高；跟随已安装基数增长 | 以服务资质、BAS/controls平台集成能力、客户运维认证为主。 |
+
+### 6.4 当前供应链采纳程度
+
+高采纳证据：
+
+- 2026Q1 technology revenue 占比 `56%`，说明客户已经把 FIX 作为高端 technology / data center / chip manufacturing 项目供应商。
+- Backlog `124.55亿美元`，且在 revenue burn 增加后继续上升。
+- Modular/offsite 官方产品已经覆盖 data centers、data halls、edge data centers、central energy/utility plants、electrical solutions 和 immersion cooling。
+- Q1 IR 强调 unmatched modular capabilities，且公司已把 modular 列为四大趋势之一。
+
+低透明度：
+
+- 公司不披露具体 hyperscaler、AI cloud、chip fab 客户名称。
+- 不披露 AI data center 独立收入、backlog、bookings、取消率。
+- 不披露每个项目的 MW、rack、GPU 或交付窗口。
+
+## 7. 一年后产能能力、采纳程度和认证阶段预测
+
+| 业务 | 基准：一年后 | 乐观：一年后 | 极度乐观：一年后 |
+|---|---|---|---|
+| 总履约能力 | 年收入 run-rate `120-135亿美元`；员工继续扩张；backlog维持 `120-145亿美元` | run-rate `135-150亿美元`；backlog `145-170亿美元` | run-rate `150-170亿美元`；backlog `170-220亿美元` |
+| Technology / AI DC | technology 维持 `50-56%`；AI DC 直接/近邻 `38-52亿美元` 年收入 | technology `55-60%`；AI DC `52-68亿美元` | technology `60%+`；AI DC `68-88亿美元` |
+| Modular/offsite | `20-25亿美元` 收入能力；EAS/TAS产线利用率高 | `25-34亿美元`；客户可能提前锁产能 | `34-45亿美元`；模块化能力成为主要瓶颈和溢价来源 |
+| Electrical | `34-40亿美元` | `40-50亿美元` | `50-65亿美元` |
+| 供应链采纳 | 继续作为大型 technology / industrial 客户的合格 MEP 和 modular 供应商 | 大客户更多项目复用 FIX 标准化模块和项目团队 | 进入更多 multi-campus / repeatable block 级别项目，客户可能用预付款或长期协议锁定产能 |
+| 认证/验证 | 仍以项目级验收、客户AVL、施工许可、安全和质量体系为主 | 模块化 plant/skid 工厂 FAT 和现场 SAT 更标准化 | 若数据中心客户推动 OCP/Open DC for AI/液冷接口标准，FIX 的角色是安装和项目验证，不是标准制定方 |
+
+## 8. 基于订单积压和供给预测未来一年业务增速
+
+### 8.1 Backlog 转收入模型
+
+关键事实：
+
+- 2026Q1 backlog：`124.55亿美元`。
+- 2026Q1 TTM revenue：约 `101.36亿美元`。
+- Backlog / TTM revenue：约 `1.23x`。
+- Q1 粗估 bookings：`33.75亿美元`，book-to-burn `1.18x`。
+- 2025Q4 粗估 bookings：`52.14亿美元`，book-to-burn `1.97x`。
+
+模型：
+
+```text
+未来一年收入
+= 当前 backlog 可转化部分
++ 新 bookings 当年转化部分
++ 小项目/service revenue
++ 收购并表贡献
+- 项目延期/取消/客户供货/劳动力约束
+```
+
+### 8.2 三情景业务增速
+
+| 情景 | backlog 转化假设 | 新 bookings 假设 | 供给假设 | 未来一年收入增速 |
+|---|---|---|---|---:|
+| 基准 | `55-65%` 当前 backlog 在一年内转收入 | 每季度 bookings `28-35亿美元`，book-to-burn `1.0-1.25x` | 人力、模块化和现场调试限制增速，毛利率小幅回落或持平 | `+20-33%` |
+| 乐观 | `60-72%` 当前 backlog 转收入 | 每季度 bookings `35-45亿美元`，book-to-burn `1.2-1.5x` | data center / chip fab NTP 顺利；模块化产能利用率高 | `+33-48%` |
+| 极度乐观 | `70-80%` 当前 backlog 转收入 | 每季度 bookings `45-60亿美元`，book-to-burn `1.5x+` | 多个大型 AI campus 同时开工，客户为确定性支付溢价，劳动力/模块化扩张超预期 | `+48-68%` |
+
+### 8.3 渠道验证和取消率推断
+
+公开渠道不能验证客户项目名和订单金额，因此本报告采用“证据链”推断：
+
+| 维度 | 当前证据 | 推断 |
+|---|---|---|
+| 客户项目名 | 公司不披露 | 无法点名 hyperscaler / AI cloud；只能通过 technology 和 data center/chip manufacturing 披露判断。 |
+| 订单金额 | backlog 和季度粗估 bookings 可估 | 2025Q4 和 2026Q1 均为强订单期，且 backlog 在 burn 后仍上升。 |
+| 交付窗口 | 未披露 | 传统项目常见 6-9 个月；AI campus / MEP / 电力和冷却项目可能 12-30 个月。 |
+| 取消率 | 未披露 | 目前未见取消信号；若 Q2/Q3 backlog 环比下降且收入未同步加速，才需要上调取消/延期风险。 |
+| 供应约束 | 员工、技工、模块化工厂、设备交期、调试 | FIX 的瓶颈更像工程产能，而不是市场需求。 |
+
+## 9. 竞争格局、技术主流性、替代风险和客户替换成本
+
+### 9.1 主要竞争对手
+
+| 层级 | 竞争对手 | 与 FIX 对比 |
+|---|---|---|
+| 大型美国 MEP / specialty contractor | EMCOR、IES Holdings、MYR Group、Quanta Services、MasTec、Rosendin、Faith Technologies、Helix Electric、Southland Industries | EMCOR 规模和客户广度强；IES/EME 在数据中心电气/MEP也强；FIX 的差异点是 mechanical + electrical + modular + 分散区域运营。 |
+| 数据中心总包/建筑 | Turner、DPR、Holder、Mortenson、Whiting-Turner、Skanska、HITT、JE Dunn、Clayco | 这些更多是总包；FIX可作为核心MEP/模块化承包商参与。 |
+| 模块化/prefab | Vertiv、Schneider、ABB、Siemens、Rittal、Flex、PCX、TAS/EAS体系、Compass/QTS/Aligned生态供应商 | 设备型供应商卖标准模块和电力/冷却设备；FIX/TAS/EAS更偏工程化、项目化、MEP集成。 |
+| HVAC / cooling platform | Trane、Carrier、Johnson Controls、Modine/Airedale、Vertiv、Schneider、AAON/BASX、Munters | 这些多是设备和系统供应商；FIX可安装、集成、调试，也可能与其合作。 |
+| 电力设备 / prefab electrical | Eaton、Schneider、Vertiv、Powell、ABB、Siemens、nVent、Legrand | 这些卖设备或电力模块；FIX的价值是安装和项目执行。 |
+
+### 9.2 FIX 的新技术/新产品是否是主流
+
+结论：**模块化/off-site、BIM/VDC、industrialized construction、MEP prefab 是 AI 数据中心建设的主流方向之一，不是边缘技术。**
+
+项目内行业资料显示，2026-2027 AI 数据中心建设从传统地产项目变为工业基础设施复制；最稀缺的是 time-to-power、time-to-cool、time-to-commission。模块化和预制化能解决三个问题：
+
+1. 减少现场工时，缓解电工/管工短缺。
+2. 工厂 FAT 提前发现质量问题，降低现场返工。
+3. 将 12.5MW / 25MW / 50MW 或 data hall block 标准化，提高复制速度。
+
+因此，FIX 的 EAS/TAS 模块化能力处在主流技术方向上。风险不是方向错，而是客户可能把更多价值让设备 OEM 或总包平台捕获。
+
+### 9.3 替代方案和风险
+
+| 风险/替代 | 对 FIX 的影响 | 概率 | 监控指标 |
+|---|---|---:|---|
+| 大客户自建内部 MEP / modular 队伍 | 降低外部承包商份额，但大型项目仍需要区域承包和专业产能 | 中 | Hyperscaler 自建工厂、招聘施工团队、总包内化。 |
+| 总包/EPC 向上整合 MEP | FIX 可能被压价或变成分包 | 中 | Turner/DPR/Holder 等自营 MEP 扩张。 |
+| 设备 OEM 提供更完整 prefab modules | 设备商捕获更多工程价值，FIX只剩安装 | 中高 | Vertiv/Schneider/Eaton/ABB/Siemens 的 turnkey block 订单。 |
+| AI CapEx 放缓或 GPU 利用率差 | 新项目 NTP 推迟，backlog转收入变慢 | 中 | 云厂 CapEx 下修、NeoCloud融资收紧、GPU租赁价格下行。 |
+| 电力/许可延误 | MEP订单可能延后，但长期需求未消失 | 高 | interconnection queue、变压器 lead time、PPA、社区诉讼。 |
+| fixed-price 项目误估 | 毛利率下修 | 中 | gross margin 连续两个季度下滑、cost in excess上升、坏账/争议披露。 |
+| 劳动力短缺 | 收入无法按订单速度扩张 | 高 | 员工增长、subcontractor 成本、项目延期。 |
+| OCP/标准化压低部分模块毛利 | 标准件降价，但复制需求上升 | 中 | 客户RFP标准化、设备多供应商认证。 |
+
+### 9.4 客户替换成本
+
+客户替换 FIX 的成本较高，原因包括：
+
+- AI 数据中心项目中，MEP 承包商深度参与 BIM/VDC、采购、模块化、现场顺序、调试和保修责任；中途替换会造成工期、责任和保险风险。
+- 大客户更看重安全记录、质量、工期和可用性。单次延误的机会成本可能远高于 MEP 报价差异。
+- 模块化组件若由 EAS/TAS 设计/预制，现场安装计划、运输、接口和 commissioning 已经绑定。
+- 但长期项目之间仍可竞争，FIX 的壁垒不是专利垄断，而是 scale、客户信任、区域团队、模块化工厂和执行记录。
+
+## 10. 估值判断与投资跟踪清单
+
+### 10.1 当前估值隐含什么
+
+2026-06-11 附近市值约 `650亿美元`，forward PE 约 `40x+`。这个估值隐含：
+
+- 市场相信 AI 数据中心和 technology backlog 可以持续数年。
+- 市场相信 2025-2026 的高毛利率不是一次性项目结算，而是结构性 mix 改善。
+- 市场给 FIX 的估值更接近高增长稀缺基础设施服务平台，而非普通 contractor。
+
+主要下行场景：
+
+1. Technology 占比或 backlog 不再上升。
+2. 毛利率从 `26%` 附近回落到 `22-23%`。
+3. 大客户项目延期导致收入增速降到 `10-15%`。
+4. 市场重新按工程承包商而不是 AI 基建稀缺产能定价。
+
+### 10.2 后续跟踪指标
+
+| 频率 | 指标 | 上修信号 | 下修信号 |
+|---|---|---|---|
+| 每季度 | Backlog、same-store backlog、粗估 bookings | backlog继续环比增长，book-to-burn `>1.2x` | backlog环比降且收入未加速，说明项目延期/取消。 |
+| 每季度 | Technology revenue占比 | 维持 `50%+` 或上升 | 回落到 `45%` 以下。 |
+| 每季度 | Modular占比和capex | modular `18%+` 且毛利不降 | 扩产导致毛利下滑，或模块化占比下降。 |
+| 每季度 | Mechanical/Electrical mix | Electrical继续高增且利润率不弱 | Electrical增长靠低毛利项目。 |
+| 每季度 | Gross margin / operating margin | 毛利率 `25%+` 稳定 | 毛利率跌破 `23%` 且 backlog仍高，说明定价或执行恶化。 |
+| 每季度 | 经营现金流和合约资产/负债 | OCF随利润同步上升 | 应收/合同资产堆积，现金转化变差。 |
+| 事件驱动 | 数据中心项目、AI CapEx、PPA、电力接入 | hyperscaler capex上修、PPA和变电站投运 | 云厂capex下修、NeoCloud融资恶化。 |
+
+## 11. 主要来源
+
+### 11.1 公司一手来源
+
+- Comfort Systems USA Q1 2026 results：https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-first-quarter-2026-results
+- Comfort Systems USA Q1 2026 investor presentation：https://investors.comfortsystemsusa.com/static-files/ae41d154-b88b-468a-b0eb-291d2419fd78
+- Comfort Systems USA Q4/FY2025 results：https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-fourth-quarter-and-full-year-2025
+- Comfort Systems USA Q4 2025 investor presentation：https://investors.comfortsystemsusa.com/static-files/68c9e72e-c2e1-4f29-aed2-d26ad360bb15
+- Comfort Systems USA Q3 2025 results：https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-third-quarter-2025-results
+- Comfort Systems USA Q3 2025 investor presentation：https://investors.comfortsystemsusa.com/static-files/95a62b8a-576b-4694-8ecc-9eba6c726d54
+- Comfort Systems USA Q2 2025 results：https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-second-quarter-2025-results
+- Comfort Systems USA Q2 2025 investor presentation：https://investors.comfortsystemsusa.com/static-files/0a956a45-61f3-49bb-944f-719e68f59985
+- Comfort Systems USA Q1 2025 results：https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-first-quarter-2025-results
+- Comfort Systems USA Q1 2025 earnings summary：https://investors.comfortsystemsusa.com/static-files/81e74fde-2cc3-427a-a0d4-0e53ebab5ac8
+- Comfort Systems USA 2025 Form 10-K：https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm
+- Comfort Systems USA earnings estimates page：https://investors.comfortsystemsusa.com/earnings-estimates
+- Comfort Systems USA modular construction：https://comfortsystemsusa.com/what-we-do/modular-construction/
+- Comfort Systems USA off-site construction products：https://comfortsystemsusa.com/what-we-do/modular-construction/off-site-construction-products/
+- Comfort Systems USA off-site construction services：https://comfortsystemsusa.com/what-we-do/modular-construction/offsite-construction-services/
+- Comfort Systems USA TAS acquisition：https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-announces-acquisition-9
+- Comfort Systems USA EAS acquisition：https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-announces-acquisition-0
+
+### 11.2 市场和估值来源
+
+- web finance 快照：FIX stock price, market cap, TTM PE（2026-06-11）
+- Yahoo Finance FIX quote（2026-06-10 快照）：https://finance.yahoo.com/quote/FIX/
+- Forbes FIX valuation snapshot：https://www.forbes.com/companies/comfort-systems-usa/
+- FinanceCharts FIX PE/forward PE：https://www.financecharts.com/stocks/FIX/value/pe-ratio
+- Investors.com 2026-06 coverage of FIX stock and AI data-center demand：https://www.investors.com/research/ibd-stock-of-the-day/comfort-systems-stock-fix-pullback-entry-ai-data-centers/
+
+### 11.3 项目内行业资料
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+

@@ -1,0 +1,372 @@
+# Ecolab（ECL）公司调研：水处理复合龙头向 AI 数据中心冷却与半导体高纯水平台升级
+
+报告日期：2026-06-11  
+公司：Ecolab Inc.  
+股票代码：ECL / NYSE  
+归档目录依据：`公司调研/公司索引.md` 中 `ECL | Ecolab | 半导体材料_化学品_基板/`。  
+项目内资料边界：本报告只参考 `基本面/行业调研/` 下当前版行业资料，并使用联网搜索的一手公司披露、SEC/IR 文件和公开行业资料；未读取、引用或继承 `特征量化/`、`日度资料/` 或既有公司旧报告。
+
+## 0. 核心结论
+
+1. **Ecolab 在投资人心中的主标签仍是“防御性高质量复合增长股”：水处理、卫生清洁、食品安全、感染预防、现场服务和数字监测，收入以耗材、服务和长期客户关系为主，定价权强，经营杠杆清晰。** 2025 年公司销售额 `160.8 亿美元`，调整后 EPS `$7.53`，调整后经营利润率约 `18.0%`，并继续给出 2026 年 `$8.43-8.63` 调整后 EPS 指引。
+2. **过去 3 年最大变化是业务重心从“广义水/卫生”向“高科技水与冷却平台”倾斜。** 2024 年剥离 Global Surgical Solutions，2025 年收购 Ovivo Electronics 超纯水业务，2026 年宣布以约 `47.5 亿美元`现金收购 CoolIT Systems。CoolIT 是 AI 数据中心 direct-to-chip 液冷硬件商，预计未来 12 个月销售约 `5.5 亿美元`；Ovivo Electronics 2025 年预期销售约 `5 亿美元`。二者把 Ecolab 的 Global High-Tech 从 2025 年约 `4 亿美元`，推向 2026 年 pro forma 约 `15 亿美元`的平台。
+3. **Ecolab 的 AI 暴露不是 AI 芯片公司，也不是数据中心总包，而是两个“水/流体 gatekeeper”位置：** 一是半导体 fab / HBM / advanced packaging 的超纯水、水回用和化学流体系统；二是 AI 数据中心液冷的冷板/CDU/loop/manifold、冷却液健康、腐蚀/微生物/颗粒控制、3D TRASAR 监测和现场服务。
+4. **CoolIT 交易价格很高，但战略含义强。** 交易估值约 `29x` 未来 12 个月调整后 EBITDA、`24x` 2027 调整后 EBITDA；反推 CoolIT 未来 12 个月 EBITDA 约 `1.64 亿美元`、EBITDA margin 约 `30%`。如果 CoolIT 只被当作冷板/CDU 制造商，估值偏贵；如果它成为 Ecolab Cooling-as-a-Service 的硬件锚点，绑定 Ecolab 的化学品、数字监测、全球服务和水回用，则可以把一次性硬件订单变成更高 ROIC 的生命周期收入。
+5. **短期财务健康仍良好，但并购会把杠杆从舒适区推高。** 2026Q1 公司现金约 `5.20 亿美元`，总债务约 `84.96 亿美元`，净债务/调整后 EBITDA 为 `2.0x`；若 CoolIT 以新增债务支付，pro forma 净债务/调整后 EBITDA 粗略会升至 `约 3.0x`。这仍可管理，但会压低回购空间，并提高 CoolIT 执行失败的估值惩罚。
+6. **AI 相关收入占比当前仍不高，但增速和边际叙事重要。** 2026 年 pro forma Global High-Tech 约 `15 亿美元`，约占 2026E 销售额 `8-9%`；其中数据中心冷却和半导体超纯水各约 `6-9 亿美元` run-rate 级别。相比 `160 亿美元+` 公司体量，这不是短期主收入，但可能是公司未来 3 年增速、估值和并购溢价的主要变量。
+7. **最值得跟踪的高增长产品不是传统清洁剂，而是：CoolIT direct-to-chip 液冷硬件、Ecolab 3D TRASAR direct-to-chip 冷却液监测、数据中心 CaaS、Ovivo 超纯水/水回用、半导体高纯水服务、Ecolab Digital / ECOLAB3D。** Pest、Life Sciences 也是高质量增长引擎，但与 AI 基建直接关系弱，本报告只做财务和竞争位置说明，不展开 AI BOM。
+8. **最大风险：估值高、CoolIT 交易价格高、AI 数据中心液冷硬件可能被 OEM/JDM/Vertiv/Schneider/Eaton/Boyd/Delta 等多源压价，且 hyperscaler 会强推第二来源。** Ecolab 真正的护城河不在“有冷板”，而在“通过客户资格认证后，用水化学、过滤、监测、服务和事故责任边界锁住生命周期收入”。
+
+## 1. 整体业务、市场定位与产业链位置
+
+### 1.1 公司是什么生意
+
+Ecolab 是全球水、卫生和感染预防解决方案公司，2025 年报披露其报表分为四个主要 segment：
+
+| 业务分部 | 2025 固定汇率销售额 | 2025 固定汇率经营利润 | 2025 经营利润率 | 核心客户/产品 | AI 相关性 |
+|---|---:|---:|---:|---|---|
+| Global Water | `$7.68B` | `$1.26B` | `16.5%` | 工业水处理、食品饮料、造纸、能源、数据中心水处理、半导体水系统 | 最高，包含 Global High-Tech、数据中心水/冷却、Ovivo 超纯水 |
+| Global Institutional & Specialty | `$5.96B` | `$1.36B` | `22.8%` | 餐饮、酒店、医院、QSR、食品零售清洁消毒、洗碗机租赁/耗材 | 低，主要是防御性现金流 |
+| Global Pest Elimination | `$1.22B` | `$0.24B` | `19.4%` | 商业灭虫、数字 pest intelligence | 低到中，数字服务属性好，但非 AI 基建 |
+| Global Life Sciences | `$0.71B` | `$0.12B` | `17.1%` | 制药/个人护理清洁、污染控制、生物工艺相关 | 间接，高质量但非 AI 数据中心 |
+
+Ecolab 的商业模式不是一次性设备销售为主，而是“化学品/耗材 + 现场服务 + 数字监测 + 客户运营结果”的组合。客户在食品、酒店、工业、水处理、医疗、生命科学、数据中心和半导体 fab 等场景中，通常把 Ecolab 当作降低水耗、能耗、污染、停机和合规风险的运营伙伴。
+
+### 1.2 投资人心中的公司形象
+
+| 维度 | 投资人通常如何看 Ecolab | 2026 新变化 |
+|---|---|---|
+| 质量属性 | 高 ROIC、强定价权、抗周期、服务网络密集、品牌强 | 仍成立，但并购提高资产和杠杆强度 |
+| 增长属性 | 中个位数销售增长，靠定价、交叉销售、效率和小并购驱动双位数 EPS | Global High-Tech、Ecolab Digital、Life Sciences、Pest 成为高增速组合 |
+| 估值属性 | 长期高于普通化工/水处理公司估值 | AI 数据中心和半导体水处理叙事支撑 premium，但交易拥挤 |
+| 风险属性 | 原材料、汇率、餐饮/工业周期、并购整合 | CoolIT 高价交易、液冷技术路线、hyperscaler 压价、杠杆上升 |
+
+### 1.3 最近 3 年重大业务变动
+
+| 日期 | 事件 | 金额/影响 | 业务含义 |
+|---|---:|---:|---|
+| 2024-08-01 | 出售 Global Surgical Solutions 给 Medline | 约 `$950M` 现金；该业务此前仍在 Institutional & Specialty 中披露 | 降低低协同医疗耗材暴露，回收资本，突出水/卫生/高增长平台 |
+| 2025-12-16 | 完成收购 Ovivo Electronics 超纯水业务 | 市场披露交易约 `$1.8B`；Ovivo Electronics 2025E 销售约 `$500M` | Ecolab 从“厂务水处理服务商”进入半导体超纯水系统和水回用核心设备层 |
+| 2026-02-10 | 扩大 One Ecolab 重组计划 | 预计到 2027 年底重组成本 `$334M`、special charges `$91M` | 通过组织整合和效率提升支撑 2027 年 `20%+` 经营利润率目标 |
+| 2026-03-20 | 宣布收购 CoolIT Systems | 约 `$4.75B` 现金；CoolIT NTM 销售约 `$550M`；预计 2026Q3 close | 把数据中心液冷硬件锚点纳入 Ecolab，Global High-Tech TAM 从 `$5B` 扩至 `$10B` |
+| 2026-06 | 投资者材料强调 Global High-Tech | 2026 pro forma 销售约 `$1.5B`，目标销售 CAGR `>20%`、OI margin `>20%` | AI 水/冷却从边缘叙事变成正式增长引擎 |
+
+### 1.4 产业链位置
+
+Ecolab 处在 AI 产业链的“基础设施流体与水化学”层，而不是芯片、服务器、网络或云服务层：
+
+```text
+AI 模型 / 推理需求
+-> GPU/ASIC、HBM、advanced packaging、AI 数据中心建设
+-> 半导体 fab / HBM 厂 / 封装厂：超纯水、废水回用、化学流体、污染控制
+-> AI 数据中心：direct-to-chip 液冷、CDU、冷板、manifold、冷却液、水处理、过滤、在线监测、现场服务
+-> Ecolab / Ovivo / CoolIT / Nalco Water / 3D TRASAR
+```
+
+它的价值不来自“每颗 GPU 高美元含量”，而来自：
+
+- 高密 AI rack 上架前的冷却可靠性和验收；
+- 半导体 fab 的水权、UPW、废水回用和污染控制；
+- 液冷系统长期运行中的腐蚀、微生物、颗粒、pH、电导率、乙二醇浓度、泄漏、压差和维护责任；
+- 用全球现场服务和数字监测把一次性硬件变成 recurring service。
+
+## 2. 最新估值、利润率和资产负债表
+
+### 2.1 估值与交易快照
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | `$263.43` | 2026-06-11 18:36 UTC，NYSE 实时报价 | 当日区间 `$258.97-264.64` |
+| 市值 | `$74.74B` | 2026-06-11 | 基于最新股价 |
+| TTM EPS / P/E | EPS `$7.39`；P/E `35.65x` | 2026-06-11 | GAAP 口径，市场数据源 |
+| Forward P/E | `约 30-31x` | 2026-06-11 附近第三方一致预期口径 | Yahoo/StockAnalysis/GuruFocus 等口径有差异 |
+| P/S | `约 4.5x` | 市值 / TTM 销售约 `$16.45B` | 第三方口径约 `4.4-4.6x` |
+| EV/Sales | `约 5.0x` | 市值 + 净债务 / TTM 销售 | 反映高质量和并购溢价 |
+| 最新季度收入增速 | Reported sales `+10%` YoY；organic sales `+4%` | 2026Q1 | Ovivo 贡献、汇率与有机增长共同推动 |
+| 2026Q1 GAAP 毛利率 | `43.6%` | 2026Q1 | 调整后毛利率 `43.8%` |
+| 2026Q1 GAAP 净利率 | `10.6%` | `$432.6M / $4.066B` | Q1 季节性和 special charges 后口径 |
+| TTM GAAP 净利率 | `约 12.9%` | TTM 净利润约 `$2.12B` / TTM 销售约 `$16.45B` | 更能体现全年盈利能力 |
+
+### 2.2 资产负债表健康程度
+
+| 指标 | 2026Q1 | 2025Q4 | 判断 |
+|---|---:|---:|---|
+| 现金及等价物 | `$519.8M` | `$646.2M` | 现金不高，但经营现金流强 |
+| 短期债务 | `$1.57B` | `$0.87B` | Q1 短债上升，需要再融资和经营现金覆盖 |
+| 长期债务 | `$6.92B` | `$7.37B` | 总债务约 `$8.50B` |
+| 总债务/总资本 | `45.9%` | `45.7%` | 稳定 |
+| 净债务/EBITDA | `2.1x` | `2.0x` | 未并入 CoolIT 前健康 |
+| 净债务/调整后 EBITDA | `2.0x` | `1.9x` | 公司级别仍有投资级弹性 |
+| 2026Q1 经营现金流 | `$445.9M` | 2025 全年 `$2.95B` | 强现金生成 |
+| 2026Q1 CapEx | `$348.5M` | 2025 全年 `$1.05B` | 投资强度提高，符合高科技平台扩张 |
+
+**结论：**未并入 CoolIT 前，Ecolab 资产负债表健康，杠杆在 `2x` 左右，经营现金流稳定。CoolIT 若全额新增债务融资，净债务可能从约 `$8.0B` 提高到 `$12.7B`，叠加 CoolIT NTM EBITDA 约 `$0.16B`，pro forma 净债务/调整后 EBITDA 粗略升至 `约 3.0x`。这不是危险杠杆，但会降低安全垫：如果 AI 液冷订单放缓或 CoolIT 被压价，市场会同时惩罚高估值和高杠杆。
+
+## 3. 最近 5 个财报季度复盘
+
+说明：Ecolab 不披露传统 backlog、book-to-bill 或取消率；公司收入以短周期耗材/服务为主，只有 Ovivo/CoolIT 这类项目型高科技业务更接近 backlog 驱动。因此下表的“订单/交期”栏明确区分已披露事实和推断。
+
+| 财报季度 | Consolidated sales / 增速 | Adjusted EPS | 毛利率 / OI margin | 分部收入与利润 | 订单、交期、backlog 与取消率 | AI/高科技相关收入占比判断 |
+|---|---:|---:|---:|---|---|---|
+| 2026Q1，披露 2026-04-28 | GAAP sales `$4.066B`，YoY `+10%`；organic sales `$3.957B`，YoY `+4%` | `$1.70`，YoY `+13%` | GAAP GM `43.6%`；adjusted OI `$679.7M`，margin `16.7%`；organic OI margin `16.8%` | Global Water fixed sales `$2.035B`，organic `$1.940B`，organic OI `$277M`；Institutional & Specialty `$1.508B`，OI `$348M`；Pest `$310M`，OI `$52M`；Life Sciences `$201M`，OI `$38M` | 无公司级 backlog；Global Water 受 Ovivo 收购影响，acq/div 对 Water sales 贡献约 `$95M`；公司称 Global High-Tech organic `>20%`，microelectronics 和 data centers 均强。取消率未披露，项目型取消风险主要在客户 AI capex 和 fab 延迟 | Global High-Tech pro forma 年化约 `$1.5B`，但 Q1 报表仅并入 Ovivo，不并入 CoolIT；Q1 AI/高科技报表占比估计 `5-7%`，pro forma 后约 `8-9%` |
+| 2025Q4，披露 2026-02 | GAAP sales `$4.196B`，YoY `+5%`；organic sales `$4.002B`，YoY `+3%` | `$2.08`，YoY `+15%` | GAAP GM `44.0%`；organic OI `$741M`，margin `18.5%` | Water `$2.017B`，organic OI `$360M`；I&S `$1.499B`，OI `$335M`；Pest `$307M`，OI `$62.5M`；Life Sciences `$191M`，OI `$32.6M` | 无 backlog；公司称 Water `+2%`，Global High-Tech 继续强双位数增长，Food & Beverage 加速；Ovivo 于 2025-12 close，仅 Q4 并入极少，2026 才完整进入 | 2025 Global High-Tech 销售约 `$400M`；占全年销售约 `2.5%`，但增速远高于公司平均 |
+| 2025Q3，披露 2025-10 | GAAP sales `$4.165B`，YoY `+4%`；organic sales `$3.966B`，YoY `+3%` | `$2.07`，YoY `+13%` | GAAP GM `44.8%`；organic OI `$742.5M`，margin `18.7%` | Water `$1.954B`，organic OI `$331M`；I&S `$1.545B`，OI `$365M`；Pest `$323M`，OI `$67M`；Life Sciences `$171M`，OI `$28M` | 无 backlog；Water 底层表现强，但 Basic Industries 和 Paper 拉低 organic OI 增长；Ecolab Digital sales `$96M`，同比 `+25%`，软件和硬件订阅双位数增长 | High-Tech 仍是 Water 中最强子业务之一；未披露金额，按全年 `$400M` run-rate 估算季度 `~$100M` |
+| 2025Q2，披露 2025-07 | GAAP sales `$4.025B`，YoY `+1%`；organic sales `$3.882B`，YoY `+3%` | `$1.89`，YoY `+13%` | GAAP GM `44.8%`；organic OI `$711M`，margin `18.3%` | Water `$1.909B`，organic OI `$304M`；I&S `$1.512B`，OI `$360M`；Pest `$311M`，OI `$61M`；Life Sciences `$177M`，OI `$35M` | 无 backlog；公司强调新业务赢单、价值定价和 trade surcharge 用于抵消环境不确定性；Ecolab Digital sales `$95M`，同比 `+29%` | AI/高科技仍小，但数据中心和 microelectronics 是 Water 中的强增长项 |
+| 2025Q1，披露 2025-04 | GAAP sales `$3.695B`，YoY `-2%`，受 surgical divestiture 和汇率影响；organic sales `$3.626B`，YoY `+3%` | `$1.50`，YoY `+12%` | GAAP GM `44.2%`；organic OI `$579M`，margin `16.0%` | Water `$1.801B`，organic OI `$258M`；I&S `$1.407B`，OI `$299M`；Pest `$278M`，OI `$46M`；Life Sciences `$167M`，OI `$25M` | 无 backlog；从 2025Q1 起已剔除 surgical 业务影响以保持 organic 可比；高科技增长体现在 Water 的 Light & Heavy 子业务，但金额未单列 | High-Tech 约 `$80-100M/quarter` run-rate，AI 数据中心贡献仍处早期 |
+
+### 3.1 五季度趋势
+
+- **收入：**2025Q1 因业务出售和汇率显示 GAAP 下滑，但 organic sales 保持 `+3%`；2026Q1 在 Ovivo 并入和高科技增长下 GAAP 增速升至 `+10%`。
+- **利润率：**毛利率在 2025Q2-Q3 达 `44.8%` 高点，2026Q1 因 commodity cost 和 mix 回落至 `43.6%`；公司预计价格在 Q2 后更充分覆盖成本，H2 organic sales 加速到 `6-7%`。
+- **分部结构：**Water 稳定占公司一半左右销售，但利润率低于 I&S；I&S 是最大利润池，Pest 和 Life Sciences 是高质量中小增长引擎。
+- **高科技：**2025 年 Global High-Tech 销售约 `$400M`，2026 pro forma with Ovivo + CoolIT 约 `$1.5B`；这是整个公司增速最强但仍未成为最大利润池的业务。
+
+## 4. 2026 指引、收入占比和重点业务
+
+### 4.1 最新 2026 指引
+
+| 指引项 | 公司指引 | 解读 |
+|---|---:|---|
+| Reported sales growth | `+9% to +11%` | 包含 Ovivo，未包含 CoolIT 交易影响 |
+| Organic sales growth | 1H `约 +4%`；2H `+6% to +7%` | 定价加强、volume 继续增长、H2 加速 |
+| Adjusted OI margin | `约 19%` | 向 2027 年 `20%+` 目标推进 |
+| Adjusted OI growth | `+14% to +16%` | 利润增长高于收入增长 |
+| Adjusted diluted EPS | `$8.43 to $8.63`，YoY `+12% to +15%` | 指引排除 pending CoolIT 影响 |
+| CoolIT 影响 | 预计 2026Q3 close；不含在指引中 | 2026 可能有交易费用、融资利息和非现金摊销压力；2028 起排除摊销后 EPS accretive |
+
+### 4.2 2026Q1 业务收入占比
+
+使用 2026Q1 固定汇率 segment sales 计算：
+
+| 分部 | 2026Q1 固定汇率销售额 | 占比 | Organic growth | 重点 |
+|---|---:|---:|---:|---|
+| Global Water | `$2.035B` | `50.2%` | `+2%` organic；fixed currency `+7%` | 最重要的 AI/高科技载体；Ovivo 并入；Global High-Tech `>20%` organic |
+| Global Institutional & Specialty | `$1.508B` | `37.2%` | `+4%` 左右，Institutional `+2%`，Specialty `+9%` | 稳定高利润，餐饮/酒店/QSR/食品零售 |
+| Global Pest Elimination | `$310M` | `7.6%` | `+7%` | 高质量服务业务，数字 pest intelligence |
+| Global Life Sciences | `$201M` | `5.0%` | `+11%` | 生物制药/污染控制，长期高毛利潜力 |
+
+### 4.3 跳过的低 AI 相关产品和业务
+
+以下业务对公司现金流重要，但与 AI 数据中心或 AI 芯片制造的直接投资弹性弱，本报告不做 BOM 深拆：
+
+| 业务/产品 | 为什么跳过深拆 | 仍需跟踪的财务点 |
+|---|---|---|
+| Institutional 洗碗、洗衣、地面清洁、手部卫生、医院感染预防 | 与 AI 基建无直接量价传导 | I&S 经营利润率 `22%+`，是估值安全垫 |
+| Specialty QSR / food retail 清洁与食品安全 | 强客户粘性但非 AI | Specialty organic `+9%`，高于餐饮终端趋势 |
+| Pest Elimination / Pest Intelligence | 数字化和服务属性好，但不是 AI 数据中心核心 BOM | 目标增长 `+7-8%`，OI margin 目标 `22%` |
+| Paper 水处理与工艺助剂 | 2025 仍受软产量拖累 | 低增长、低 AI 相关；不应给予 AI multiple |
+| Basic Industries / Downstream 普通工业水处理 | 间接受益能源/制造，但波动取决于工业周期 | 作为 Global Water 底盘，不作为 AI 弹性核心 |
+
+### 4.4 重点和潜力小业务清单
+
+| 重点业务/产品 | 当前贡献估计 | 2026-2027 增速 | 为什么重要 |
+|---|---:|---:|---|
+| Global High-Tech 总平台 | 2026 pro forma `~$1.5B` | 目标 `>20% CAGR` | 半导体超纯水 + 数据中心液冷 + 数字监测，成为估值重估核心 |
+| CoolIT direct-to-chip 液冷硬件 | NTM sales `~$550M` | 高双位数，取决于 GB300/Rubin/ASIC rack | 把 Ecolab 从水处理/化学品推到冷板、CDU、loop、rack manifold 硬件层 |
+| Ecolab CaaS / 3D TRASAR D2C | 当前估计 `$50-150M` run-rate，嵌在 Global High-Tech | `>20-40%` | 液冷生命周期收入、监测、化学品、服务 attach，高毛利潜力 |
+| Ovivo Electronics UPW / water circularity | 2025E sales `~$500M`；Q1 2026 对 Water sales 贡献约 `$95M` | mid-teens 到 `20%+`，随 advanced fab/HBM 扩建 | AI 芯片制造端的水权/UPW gatekeeper |
+| Ecolab Digital / ECOLAB3D | 年化约 `$400M` | 目标 `>20%`，OI margin `>>20%` | 横跨水、餐饮、pest、数据中心；不是纯 AI，但可把服务数字化 |
+| Life Sciences contamination control | 2025 sales `$748M` public currency；Q1 organic `+11%` | 2026F `+12%` | 生物制药质量控制，长期好业务，但与 AI 基建弱相关 |
+
+## 5. 高增长/关键产品当前贡献、增速和战略评分
+
+评分：1 = 低，5 = 极高。收入贡献为本报告估算，除非公司明确披露。
+
+| 关键产品/业务 | 当前公司收入贡献 | 当前增速 | 对 AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| CoolIT direct-to-chip 液冷硬件：CDU、cold plate、liquid loop、rack manifold | CoolIT NTM sales `~$550M`；ECL 尚未并表，预计 2026Q3 close | 高双位数，官方称 rapid sales growth；未披露 backlog | 5 | 5 | 4 | 3.5 | 直接绑定 GB200/GB300/Rubin/ASIC 高密 rack；硬件会多源化，真正利润靠资格认证和服务 attach |
+| Ecolab Cooling-as-a-Service + 3D TRASAR D2C coolant monitoring | 已有数据中心水处理/CaaS，估计 `$100-200M` run-rate；CoolIT close 后可大幅 attach | `>20%`，随液冷 rack 增长 | 5 | 5 | 4 | 4 | 小业务但潜力大；监测/化学/现场服务比单纯 coolant 更有定价权 |
+| Ovivo Electronics / semiconductor UPW 与水回用 | Ovivo 2025E sales `~$500M`；Q1 2026 Water acq contribution约 `$95M` | mid-teens 到 `20%+`，取决于 fab/HBM 项目 | 4 | 4 | 3.5 | 4 | AI 芯片制造端关键设施；不是每个 GPU 高 BOM，但 fab 水权和良率重要 |
+| Legacy Global High-Tech microelectronics water/chemistry | 2025 GHT sales `~$400M`，含 data centers 和 microelectronics；不含 Ovivo/CoolIT | 2025 强双位数；2026Q1 organic `>20%` | 4 | 4 | 3.5 | 4 | 与 Ovivo/CoolIT 组合后从小业务变平台 |
+| Ecolab Digital / ECOLAB3D / Water Quality IQ | 年化 `~$400M`，公司级数字业务 | 目标 `>20%` | 3 | 3 | 3 | 4 | 可提升水/冷却/pest/foodservice 的软件化毛利；AI 数据中心只是其中一部分 |
+| Life Sciences contamination control / Purolite 相关 | 2025 fixed sales `$706M`，Q1 2026 `$201M` | Q1 organic `+11%`；2026F `+12%` | 1.5 | 3 | 3 | 4 | 好业务但不是 AI 基建核心，不宜给 AI 数据中心溢价 |
+
+## 6. 一年后收入贡献三情景
+
+### 6.1 关键假设
+
+- CoolIT 交易于 2026Q3 完成，不发生监管或融资意外。
+- 2026-2027 AI 数据中心主路径仍是单相 direct-to-chip，而不是浸没式冷却大规模替代。
+- Ecolab 能把 CoolIT 硬件、3D TRASAR、冷却液管理、过滤、服务和水回用打包，而不是只并表一个硬件制造商。
+- 半导体 capex 没有大幅下修，HBM/advanced packaging/fab UPW 项目继续推进。
+
+| 产品/业务 | 基准：1 年后贡献与增速 | 乐观：1 年后贡献与增速 | 极度乐观：1 年后贡献与增速 | AI 重要性变化 | 供需/溢价变化 |
+|---|---:|---:|---:|---|---|
+| CoolIT D2C 液冷硬件 | 年化 sales `$650-800M`，YoY `+20-45%` | `$850M-1.1B`，YoY `+55-100%` | `$1.2-1.6B`，YoY `+120-190%` | 从“增长点”变成 ECL 最核心 AI 产品 | 基准仍紧，乐观出现 CDU/cold plate 交期和优先级溢价；极乐观需扩产和代工能力 |
+| Ecolab CaaS + 3D TRASAR D2C | `$150-250M`，YoY `+30-60%` | `$250-400M`，YoY `+80-150%` | `$450-700M`，YoY `+200%+` | 从监测/服务叠加项升级为 rack acceptance 条件 | 溢价能力高于硬件，前提是被客户写进运行规范 |
+| Ovivo / semiconductor UPW | `$550-700M`，YoY `+10-30%` | `$700-900M`，YoY `+35-70%` | `$0.9-1.2B`，YoY `+80%+` | AI 芯片制造瓶颈显性化 | 受 fab 项目和水许可驱动，供给紧在工程/认证/现场施工 |
+| Legacy GHT microelectronics & data center water | `$450-550M`，YoY `+10-25%` | `$550-700M`，YoY `+25-60%` | `$700-900M`，YoY `+60-100%` | 与 Ovivo/CoolIT 交叉销售 | 高，尤其数据中心水处理、回用水和冷却塔/闭式回路 |
+| Ecolab Digital / ECOLAB3D | `$480-550M`，YoY `+20-35%` | `$550-700M`，YoY `+35-75%` | `$700M-1.0B`，YoY `+75-150%` | 数据中心可成为新 vertical | 软件毛利高，但数据接入和客户 IT/OT 集成限制速度 |
+| Life Sciences | `$850-950M` public sales run-rate | `$950M-1.1B` | `$1.1-1.3B` | 与 AI 弱相关 | 溢价来自制药质量体系，不来自 AI |
+
+### 6.2 公司整体增速推断
+
+| 情景 | 未来一年公司销售增速 | 主要驱动 | 限制 |
+|---|---:|---|---|
+| 基准 | Reported `+8-11%`；organic `+5-7%` | Ovivo 全年并入、H2 pricing、CoolIT 部分并入、High-Tech `>20%` | 传统 I&S/Water 低个位数；CoolIT 只并入部分年份 |
+| 乐观 | Reported `+12-16%`；organic/pro forma `+7-9%` | CoolIT 快速放量、CaaS attach、高科技交叉销售 | 融资利息和摊销影响 EPS；高科技仍小于 10% 体量 |
+| 极度乐观 | Reported `+17-22%`；pro forma organic `+10%+` | GB300/Rubin/ASIC liquid cooling 提前爆发，CoolIT backlog 转收入，Ovivo 大客户加速 | 需要 hyperscaler capex、液冷接受度、供应链和认证全部向上 |
+
+## 7. BOM、每 MW / rack / GPU / optical port 内容量与价格传导
+
+本节为投资研究估算，不是公司披露。Ecolab 没有披露每 rack 或每 MW 定价。本报告采用 AI 高密 rack 口径：`1MW IT load ≈ 8-12 个 80-125kW rack`；NVIDIA NVL72 类机柜按 `72 GPU/rack` 粗略测算，即 `1MW ≈ 576-864 GPU`。不同 OEM、CDU 容量、设施水路和冷却架构会导致差异很大。
+
+### 7.1 Direct-to-chip 数据中心液冷：CoolIT + Ecolab CaaS
+
+| BOM 层级 | 真实内容 | Ecolab/CoolIT 可捕获内容 | 当前含量估算 | 价格传导 |
+|---|---|---|---:|---|
+| 每 GPU | GPU cold plate、软管/快接、局部 loop、泄漏风险责任；CPU/NVSwitch/HBM 区域也可能液冷 | CoolIT cold plate / loop / manifold 的一部分；Ecolab coolant health 是系统级分摊 | `$300-1,200/GPU` 直接硬件内容；Ecolab 服务/化学分摊 `$20-150/GPU/year` | GPU 热流密度上升 -> 冷板复杂度上升 -> 客户愿意为热阻、压降、泄漏率和验收速度付费 |
+| 每 rack | 72 GPU rack 的冷板、manifold、hose、UQD、传感器、泄漏检测、rack/row CDU 分摊、coolant fill/flush | CoolIT 硬件 + Ecolab 3D TRASAR / chemistry / monitoring / service | 硬件 `$50k-180k/rack`；CaaS/化学/监测初装 `$5k-30k/rack`；年度服务 `$3k-20k/rack/year` | `80-250kW/rack` 越高，cooling BOM 从低个位数 IT capex 升到关键 gating item |
+| 每 MW IT load | 8-12 rack、1-2 个 row/in-rack CDU 或 2MW CDU 分摊、coolant/flush/filter/monitoring | CoolIT 可捕获 `$0.5-1.8M/MW` 硬件；Ecolab 可捕获 `$50k-250k/MW` 初装服务 + `$25k-150k/MW/year` recurring | 总计当前 `$0.6-2.0M/MW`，高端液冷/服务 attach 可更高 | 数据中心每 MW all-in capex `$35-65M/MW`；Ecolab/CoolIT 含量通常 `1-4%`，但影响上架和 uptime |
+| 每 optical port | 光模块/交换端口本身没有 Ecolab 直接 BOM | 仅在交换机或网络 rack 液冷时，冷却系统按 rack/MW 间接分摊 | 直接 `$0`；若按 800G/1.6T 高密网络 rack 分摊，可能 `<$1-5/port/year` 服务级别 | 不应把 Ecolab 视为 optical port 供应商；其价值在冷却交换 ASIC/GPU rack 的系统可靠性 |
+
+### 7.2 半导体 UPW / 水回用：Ovivo + Nalco Water
+
+| BOM 层级 | 真实内容 | Ecolab/Ovivo 可捕获内容 | 当前含量估算 | 价格传导 |
+|---|---|---|---:|---|
+| 每先进 fab | 原水预处理、RO/EDI、UV、离子交换、UF、TOC/颗粒/金属监测、UPW loop、废水回用 | Ovivo UPW 系统、水回用设备；Ecolab 化学品、服务、数字水管理 | 每个先进 fab / HBM P&T 项目可为数千万到数亿美元订单；本报告按 fab capex 的 `1-3%` 估算 UPW/水回用相关可寻址 | 水权、良率、HBM/CoWoS 扩产 -> UPW/reuse 成为投产前置条件 |
+| 每 wafer start | 清洗/CMP/湿法刻蚀/封装前清洗的 UPW 和废水处理分摊 | 系统折旧 + 药剂 + 服务 | 不适合公开精确拆分；可按厂务水系统 capex / 月产能摊销 | 先进节点工艺步骤增加 -> UPW purity 和 reuse 难度提高 |
+| 每 AI GPU | 通过 TSMC/HBM/CoWoS 产线间接分摊 | 间接，不进入数据中心 BOM | 粗略可能是个位数到数十美元/GPU 的 look-through capex/耗材摊销，不可直接与 GPU BOM 相加 | AI 芯片出货越高，fab 扩建和 water circularity 订单越强 |
+| 每 MW 数据中心 | 不是数据中心现场 BOM，而是上游芯片制造 BOM | 间接 | 直接 `$0`，除非 Ecolab 同时供应数据中心水处理/冷却 | 不应把 Ovivo UPW 乘以数据中心 MW；应按 fab/packaging capex 建模 |
+
+### 7.3 数据中心水处理、冷却液健康和数字监测
+
+| 产品 | 内容 | 2026 当前公司能力 | 毛利/价格特点 |
+|---|---|---|---|
+| 3D TRASAR D2C | 监测 coolant 温度、pH、电导率、腐蚀/乙二醇健康、污染和泄漏相关指标，帮助降低过热和 downtime 风险 | 已作为 Ecolab data center CaaS 的核心产品；公司强调 site-to-chip integrated cooling | 硬件小，但数据和服务高毛利；若被写入客户 O&M 规范，粘性强 |
+| Data center cooling water | 冷却塔、chiller、闭式回路、direct evaporative / adiabatic cooling 的腐蚀、结垢、微生物、水安全 | Nalco Water 全球服务网络，已有 SAP 等公开 case | 传统水处理毛利中等，但全球服务和 uptime 责任提高议价 |
+| Water Quality IQ / ECOLAB3D | 多站点水系统数据可视化、节水项目量化、远程监测 | 与 Global Intelligence Center 结合，可 24/7/365 监测 | 软件/服务毛利高，但客户数据权限和 OT 集成是 adoption 约束 |
+
+## 8. 当前产能、供应链采纳和认证阶段
+
+| 产品/业务 | 当前产能能力（美元计） | 供应链采纳程度 | 认证/qualification 阶段 | 主要瓶颈 |
+|---|---:|---|---|---|
+| CoolIT D2C 液冷硬件 | 官方 NTM sales `~$550M` 可视为当前收入/产能 run-rate；真实产能未披露 | 公司称服务全球大型 hyperscale 和 colocation 客户，并有 end-to-end CDUs/cold plates/D2C 能力 | 客户级认证未逐项公开；应视为已进入主要客户 design-in / deployment 阶段，但 hyperscaler 会要求多供应商 | CDU/冷板产能、良率、漏液责任、GB300/Rubin/OEM 资格、交付窗口 |
+| Ecolab CaaS / 3D TRASAR D2C | 现有 data center 水处理和监测服务能力，美元产能估计 `$100-200M+` run-rate | Ecolab 称已有超过 `1,000` 个数据中心触达；CaaS 从 facility 到 server cooling | 现场 service / O&M 规范认证阶段；不等同于芯片级硬件认证 | 客户是否把冷却液监测标准化；与 CDU/BMS/DCIM 互操作 |
+| Ovivo Electronics UPW | 2025E sales `~$500M`；Q1 2026 acquisition/divestiture 对 Water sales 贡献约 `$95M`，年化接近 `$380M`，季节/项目节奏会波动 | 面向 microelectronics/semiconductor 超纯水，已被 Ecolab 作为 high-tech 平台核心 | fab 级 qualification 通常 12-36 个月；现有客户基础强，但新增大客户仍需项目验证 | 高纯施工、膜/树脂/仪表供应、客户 fab 延迟、水许可 |
+| Legacy Nalco Water / data center water | 2025 Global Water sales `$7.68B`；其中 high-tech 2025 约 `$400M` | 工业/数据中心/食品饮料广泛采用 | 水化学和现场服务通常低于芯片级资格难度，但关键数据中心会有严格 O&M SLA | 现场工程师、客户水系统差异、服务质量一致性 |
+| Ecolab Digital | 年化约 `$400M` | 食品、pest、水、数据中心多场景 | IT/OT 接入、网络安全、客户数据协议 | 平台集成速度、客户愿意为软件单独付费 |
+
+### 8.1 一年后产能、采纳和认证三情景
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| CoolIT D2C | 年化收入/产能 `$650-800M`；客户多源采购中保持核心供应商地位；认证从 GB200/GB300 扩到更多 OEM rack | `$850M-1.1B`；GB300/Rubin/ASIC rack 设计锁定增加；交付窗口 `2-4` 季度可见 | `$1.2-1.6B+`；CoolIT 成为多个 hyperscaler / colo 的优先 supplier；需要新增制造/代工 |
+| CaaS / 3D TRASAR | `$150-250M`；成为部分液冷项目的 service attach | `$250-400M`；被写入客户 O&M 或 warranty 条款，服务 attach 明显提高 | `$450-700M`；液冷 field failure 推动客户把监测/化学/服务强制化 |
+| Ovivo UPW | `$550-700M`；现有 fab 项目按期推进 | `$700-900M`；HBM/advanced packaging/fab water reuse 大单增加 | `$0.9-1.2B`；AI chip fab 扩建和缺水监管同步加速 |
+| Ecolab Digital | `$480-550M`；继续跨业务渗透 | `$550-700M`；data center intelligence 成新 vertical | `$700M-1.0B`；与 CaaS 打包并形成单独高毛利软件收入 |
+
+## 9. 订单、backlog、供给与未来一年业务增速
+
+### 9.1 公司未披露 backlog，如何推断
+
+Ecolab 传统业务不适合用工业设备 backlog 分析，因为清洁、水处理和 pest 以短周期耗材/服务为主。真正需要 backlog 推断的是 Global High-Tech：
+
+| 线索 | 已披露事实 | 推断 |
+|---|---|---|
+| CoolIT NTM sales | 官方称 CoolIT 未来 12 个月预计销售约 `$550M` | 已有客户部署和订单可见度，不太可能完全是未签约 pipeline |
+| CoolIT 交易倍数 | `$4.75B`，`29x` NTM EBITDA，`24x` 2027 EBITDA | Ecolab 支付了明显成长溢价，隐含其相信 2027 EBITDA 继续增长 |
+| Global High-Tech | 2025 sales `~$400M`；2026 pro forma `~$1.5B`；市场机会 `$10B+` | Ovivo + CoolIT 立刻把收入体量放大；organic `>20%` 是核心验证点 |
+| Q1 2026 Water acquisition contribution | Q1 Water acq/div 贡献约 `$95M` sales，主要来自 Ovivo | Ovivo 并表后的项目收入开始进入财报，但项目季节性强 |
+| 行业需求 | 项目内行业资料给出 2026 数据中心液冷、冷却液/水处理/过滤/commissioning 需求强增长，2026-2027 AI IT load 和液冷 rack 增长明显 | AI 数据中心液冷并非“概念”，而是 GB200/GB300/Rubin/ASIC rack 验收条件 |
+
+### 9.2 订单和交付风险
+
+| 风险项 | 当前判断 | 取消/延期概率 |
+|---|---|---|
+| Hyperscaler AI capex 下修 | 2026 上半年仍强；最大风险在 GPU 利用率、融资和电力延迟 | 基准低到中，极端情况下中高 |
+| 液冷 field failure | 漏液、腐蚀、颗粒堵塞、维护不成熟可能导致客户放慢部署 | 中；但若发生，反而利好 Ecolab 的监测/服务，利空纯硬件 |
+| OEM/JDM 多源化压价 | hyperscaler 必然推动二供三供 | 高；CoolIT 硬件毛利长期可能回落 |
+| Ovivo fab 项目延迟 | 半导体 fab 建设周期长，水许可、施工和客户 capex 会拖延 | 中 |
+| CoolIT 交易整合 | 跨文化、硬件制造、快速扩产、债务融资 | 中；这是股票最直接风险 |
+
+### 9.3 未来一年业务增速情景：按真实订单与供给推断
+
+| 情景 | CoolIT/CaaS 增速 | Ovivo/UPW 增速 | Global High-Tech 总增速 | 公司总 sales 增速 | 判断 |
+|---|---:|---:|---:|---:|---|
+| 基准 | `+30-50%` pro forma | `+10-25%` | `+20-30%` | `+8-11% reported` | 已签订单和行业需求支撑，但 CoolIT close 只贡献部分年份 |
+| 乐观 | `+60-100%` | `+30-60%` | `+35-55%` | `+12-16%` | GB300/Rubin 和 liquid-ready colo 加速，CaaS attach 提高 |
+| 极度乐观 | `+120%+` | `+70%+` | `+70%+` | `+17-22%` | 需要 CoolIT 快速扩产、客户预付款/长约、Ovivo 大型 fab 项目同时兑现 |
+
+## 10. 竞争格局、替代方案和客户替换成本
+
+### 10.1 数据中心液冷与冷却水竞争
+
+| 层级 | Ecolab/CoolIT 竞争对手 | Ecolab 优势 | 风险/替代 |
+|---|---|---|---|
+| Direct-to-chip cold plate / CDU / rack loop | Vertiv、Schneider/Motivair、Eaton/Boyd、Delta、Modine/Airedale、Supermicro/Dell/HPE/Lenovo 体系、nVent、台系液冷供应商 | CoolIT 纯液冷经验；Ecolab 全球水化学和服务可做差异化 | 冷板/CDU 硬件可被多源压价；OEM/JDM 可内化 |
+| Coolant chemistry / monitoring | Kurita、Veolia、Xylem/Evoqua、Solenis、Chem-Aqua、Dober、Donaldson/Pall/Parker 等滤材/流体控制链 | 3D TRASAR、Nalco Water、全球现场服务、化学/数字/水处理组合 | 客户可能把 chemistry 拆给本地水处理商；标准化降低溢价 |
+| Data center facility water | Veolia、Xylem、Kurita、Suez/WTS 体系、Pentair、DuPont Water、区域水处理服务商 | 跨行业现场服务密度高，能从 cooling tower 到 D2C loop 一体化 | 大型 hyperscaler 自建工程标准，供应商被工具化 |
+| Immersion / dielectric fluids | Chemours、Solstice、Syensqo、Daikin、Shell、Engineered Fluids、LiquidStack 等 | Ecolab 当前主线不是浸没液体；可通过 CaaS 服务参与 | 若浸没或二相路线提前成为主流，CoolIT D2C 硬件相对受压 |
+
+**主流性判断：**2026-2027 基准路线仍是单相 direct-to-chip，不是浸没式。项目内行业资料与外部产品发布均指向 GB200/GB300/Rubin/MI350/TPU/Trainium 等高密 rack 采用 cold plate + CDU + facility loop 路径。浸没式更像 2027+ 可选项，适合特殊高密、edge、retrofit 或水权受限场景。
+
+### 10.2 半导体 UPW / 水回用竞争
+
+| 层级 | 竞争对手 | Ecolab/Ovivo 优势 | 风险 |
+|---|---|---|---|
+| UPW turnkey / recycle / wastewater | Kurita、Organo、Nomura Micro Science、Veolia、Xylem/Evoqua、DuPont Water、Gradiant、Aquatech、本地工程商 | Ovivo Electronics 带来半导体超纯水项目能力；Ecolab 带来化学/服务/客户网络 | 亚洲日系和本地厂务商强；项目毛利受施工风险影响 |
+| 高纯水化学与服务 | Kurita、Solenis、Veolia、Xylem、区域水处理商 | Ecolab 原有 Nalco Water 服务能力强 | 客户可多源；价格敏感 |
+| 数字水管理 | Xylem、Veolia Hubgrade、Schneider/AVEVA、各类 DCIM/BMS | ECOLAB3D 与 3D TRASAR 垂直 know-how | 客户 IT/OT 标准化后，软件层可能被平台商吃掉 |
+
+**客户替换成本：**  
+数据中心冷却液和 fab UPW 一旦进入客户 specification，替换成本高于普通化学品。原因是材料兼容、腐蚀、颗粒、微生物、保修、现场运维文档和停机风险都会进入 qualification。冷板/CDU 硬件客户会保留多供应商，但已经通过大客户验证的供应商更容易拿到后续 rack/pod 订单。UPW 项目替换成本在施工期和 ramp 期尤其高；进入长期 O&M 后客户可能局部引入二供，但不会轻易更换核心系统和水质标准。
+
+## 11. 产品级风险与反证指标
+
+| 产品/业务 | 反证指标 | 影响 |
+|---|---|---|
+| CoolIT D2C | GB300/Rubin 液冷 rack 验收慢；OEM/JDM 把冷板/CDU 价格打到低毛利；客户推迟交付窗口；Ecolab 披露 CoolIT 增长低于预期 | 高，直接打击 AI 增长叙事和并购回报 |
+| CaaS / 3D TRASAR | 客户只采购硬件，不购买 Ecolab 服务；液冷标准化后第三方水处理商足以满足需求 | 中高，影响交易协同和高毛利 attach |
+| Ovivo UPW | advanced fab/HBM/packaging capex 延迟；水回用项目被客户推迟；工程毛利被固定价合同侵蚀 | 中 |
+| Global Water core | Paper/basic industries 持续疲软；commodity cost 不能通过 pricing 覆盖 | 中 |
+| I&S / Specialty | 餐饮客流弱、医院低毛利业务退出拖累收入 | 低到中，利润率仍强 |
+| 整体估值 | Forward P/E 仍在 `30x+`，若 2026 H2 organic sales 未加速，估值收缩 | 高，ECL 没有低估值保护 |
+
+## 12. 投资判断框架
+
+### 12.1 牛熊分歧
+
+| 观点 | 牛方论据 | 熊方论据 |
+|---|---|---|
+| CoolIT 是否值 `$4.75B` | NTM sales `$550M`、EBITDA margin 约 `30%`，AI 液冷主线加速；Ecolab 可把硬件变服务 | `29x` NTM EBITDA 很贵；液冷硬件多源化；可能买在 AI capex 情绪高点 |
+| Ecolab 是否是 AI 基建核心股 | 半导体 UPW + data center liquid cooling 都是水/流体 gatekeeper；Global High-Tech 从 `$400M` 到 `$1.5B` | Pro forma 也只有公司收入 `8-9%`，传统业务仍决定大部分利润 |
+| 利润率能否上 20% | 2026 指引约 `19%`，2027 目标 `20%+`；I&S/Pest/Digital 高利润 | CoolIT 摊销、融资利息、commodity cost、硬件 mix 可能拖累 |
+| 估值是否合理 | 高质量复合增长 + AI optionality + 稳定现金流 | `35x` TTM PE / `30x+` forward PE，容错率低 |
+
+### 12.2 未来 4 个季度最重要跟踪项
+
+1. CoolIT 交易是否按 2026Q3 关闭，以及 Ecolab 是否给出并表后的销售、EBITDA、订单或客户指标。
+2. 2026H2 organic sales 是否如指引加速到 `6-7%`。
+3. Global High-Tech 是否维持 `>20%` 增速，并披露 microelectronics vs data center 的拆分。
+4. CoolIT 硬件毛利和 CaaS attach 是否能抵消交易债务利息和摊销。
+5. Ovivo 并入后 Water segment 的 margin 是否被项目型收入稀释。
+6. 数据中心液冷行业是否出现 field failure、交付延迟或客户推迟 high-density rack。
+7. Hyperscaler/NeoCloud CapEx、AI rack 交付和电力并网是否维持强势。
+
+## 13. 资料来源
+
+### 13.1 公司披露和市场数据
+
+- Ecolab 2026Q1 Earnings Presentation，2026-04-28：`https://s204.q4cdn.com/218790897/files/doc_financials/2026/q1/Q1-2026-Earnings-Presentation-2.pdf`
+- Ecolab 2025Q4 Earnings Presentation，2026-02：`https://s204.q4cdn.com/218790897/files/doc_financials/2025/q4/Q4-2025-Earnings-Presentation.pdf`
+- Ecolab 2025Q3 Earnings Presentation：`https://s204.q4cdn.com/218790897/files/doc_financials/2025/q3/Q3-2025-Earnings-Presentation.pdf`
+- Ecolab 2025Q2 Earnings Presentation：`https://s204.q4cdn.com/218790897/files/doc_financials/2025/q2/Q2-2025-Earnings-Presentation.pdf`
+- Ecolab 2025Q1 Earnings Presentation：`https://s204.q4cdn.com/218790897/files/doc_financials/2025/q1/Q1-2025-Earnings-Presentation.pdf`
+- Ecolab 2025 Annual Report / Form 10-K：`https://s204.q4cdn.com/218790897/files/doc_financials/2025/ar/2025-Annual-Report.pdf`
+- Ecolab June 2026 Investor Presentation：`https://s204.q4cdn.com/218790897/files/doc_presentations/2026/Jun/01/Ecolab-Investor-Presentation-June.pdf`
+- Ecolab to Acquire CoolIT Systems，2026-03-20：`https://www.ecolab.com/news/2026/03/ecolab-to-acquire-coolit-systems-a-global-leader-in-advanced-liquid-cooling-for-next-gen-ai-data-ce`
+- Ecolab CoolIT acquisition presentation，2026-03：`https://s204.q4cdn.com/218790897/files/doc_downloads/2026/03/Ecolab-to-Acquire-CoolIT-Systems.pdf`
+- Ecolab Strengthens Integrated Cooling Program for Data Centers，2025-11-14：`https://investor.ecolab.com/news/news-details/2025/Ecolab-Strengthens-Integrated-Cooling-Program-for-Data-Centers/default.aspx`
+- Ecolab 3D TRASAR for Direct-to-Chip Liquid Cooling：`https://www.ecolab.com/offerings/3d-trasar-technology-for-direct-to-chip-liquid-cooling`
+- Ecolab Data Center Cooling System Management：`https://www.ecolab.com/offerings/data-center-cooling-system-management`
+- Ecolab Closes Acquisition of Ovivo Electronics Ultra-Pure Water Business，2025-12-16：`https://investor.ecolab.com/news/news-details/2025/Ecolab-Closes-Acquisition-of-Ovivos-Electronics-Ultrapure-Water-Business/default.aspx`
+- NYSE ECL 市场报价快照：2026-06-11 18:36 UTC，股价 `$263.43`，市值 `$74.74B`，P/E `35.65x`。
+
+### 13.2 项目内行业资料
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体高纯水、气体与化学流体系统_2026-06-11.md`
+

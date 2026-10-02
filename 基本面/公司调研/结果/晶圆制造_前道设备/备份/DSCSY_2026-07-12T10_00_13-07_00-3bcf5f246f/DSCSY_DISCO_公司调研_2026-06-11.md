@@ -1,0 +1,443 @@
+# DISCO（DSCSY）公司调研：AI/HBM 薄晶圆切割与研磨设备龙头（2026-06-11）
+
+> 本报告对象：DISCO Corporation（株式会社ディスコ），美国 OTC ADR 代码 DSCSY，日本主股 6146.T。  
+> 本报告本地资料仅使用 `基本面/行业调研/` 下与先进封装、AI 芯片前道、HBM、玻璃/TGV 相关资料；未读取、引用或继承 `特征量化/`、`日度资料/` 或既有公司调研旧稿。  
+> 日期口径：财务最新实绩为 DISCO FY2025 4Q，季度覆盖 2026-01 至 2026-03，发布时间 2026-04-22；截至 2026-06-11，FY2026 1Q 仍是公司指引，尚不是实绩。
+
+## 0. 核心结论
+
+DISCO 是 AI 半导体供应链里“卖铲子但不卖 GPU”的高质量设备公司。公司核心不是光刻、刻蚀或封装代工，而是切割、研磨、抛光和相关耗材，覆盖 `Kiru / Kezuru / Migaku`，即切、削、磨。AI 相关性主要来自 HBM、先进逻辑、CoWoS/2.5D、超薄晶圆、低损伤切割、SDBG/DBG 和高端封装切单，不是来自数据中心机柜直接 BOM。
+
+投资人通常把 DISCO 看成日本半导体设备里的高 ROIC、高毛利、净现金、强耗材复购的“稀缺质量成长股”。FY2025 全年收入 4,368.9 亿日元，同比增长 11.1%；毛利率 70.1%，营业利润率 42.3%，净利率 31.0%。FY2025 4Q 单季收入 1,330.6 亿日元，同比增长 10.2%，环比增长 21.7%；营业利润率 44.2%，净利率 32.2%。这个盈利质量非常强，但估值也很贵：2026-06-11 DSCSY OTC 报价约 46.11 美元，市值约 473 亿美元，TTM PE 约 55.5 倍，PS 约 17.2 倍。
+
+公司最重要的 AI 增量来自四条线：1）grinders / polishers / wafer thinning，用于 HBM 和先进逻辑超薄晶圆；2）dicing saws 与 laser saws，用于低损伤切割、低 k 介质 grooving、SDBG 和先进封装切单；3）dicing blades、grinding wheels、dry polishing wheels 等耗材，随客户产线稼动率复购；4）KABRA、玻璃/TGV、GaN/diamond 等未来材料加工可选项。当前最实质的是前两项和耗材，玻璃/TGV 仍处于试产、认证、设备导入前夜，不应把它当成 2026 主收入。
+
+DISCO 不披露 backlog、bookings、取消率，官方季度表里订单和 backlog 项从 FY2022 以后以 `-` 处理。因此，本报告把订单判断分为两层：官方可验证的是 shipment figures、1Q FY2026 指引、产品 shipment basis 的 QoQ 指引；模型推断的是 HBM/CoWoS/先进逻辑项目对 grinder、laser saw、dicing 和耗材的订单压力。最乐观结论不能直接写成“已锁定订单”，更合理写法是“AI/HBM 产能扩张驱动的可见交付压力高，但未披露真实 backlog”。
+
+## 1. 整体业务、投资人认知与产业链位置
+
+### 1.1 公司业务
+
+DISCO 是半导体和电子元件制造用精密加工设备与精密加工工具供应商。公司产品从设备到耗材一体化，设备卖给晶圆厂、存储厂、OSAT、IDM、功率半导体厂和电子元件厂；耗材随设备安装基数和客户稼动率复购。
+
+| 业务/产品族 | 官方产品 | AI/HBM/先进封装关联 | 收入属性 | 重要结论 |
+|---|---:|---|---|---|
+| 切割设备 | Dicing Saws、Laser Saws | wafer dicing、low-k grooving、package singulation、SDBG、先进逻辑/HBM 切割 | 设备，项目驱动 | FY2025 dicing saws including laser saws 约占收入 32%，是最大单项产品族之一 |
+| 研磨/抛光设备 | Grinders、Polishers、Surface Planer | HBM 薄 die、先进逻辑 backside、超薄晶圆、warpage/TTV 控制 | 设备，高价值 mix | FY2025 占收入约 27%，FY2025 4Q 占比升至 31%，AI/HBM 弹性最高 |
+| 周边设备 | Wafer Mounter、Inspection systems、Die Separator、Accessory Equipment | 与薄晶圆搬运、贴膜、检查、分离配套 | 设备/周边 | AI 相关但披露较少，通常作为工艺方案的一部分 |
+| 精密加工工具 | Dicing Blades、Grinding Wheels、Dry Polishing Wheels | 随晶圆切割、研磨、抛光利用率消耗 | 耗材，复购强 | FY2025 约占收入 22%，稳定性强，是估值溢价的重要来源 |
+| 技术/工艺方案 | Blade Dicing、Laser Dicing、Grinding、Polishing、DBG/SDBG、KABRA | 低损伤、超薄、SiC/GaN/diamond、未来玻璃/TGV | 工艺绑定 | 提高客户替换成本，不只是单机销售 |
+
+### 1.2 投资人心中的公司形象
+
+DISCO 的投资者标签可以概括为：高毛利半导体设备、AI/HBM 先进封装受益、耗材复购、净现金、高估值、订单披露不透明。它不像 ASML 那样拥有单一不可替代主设备，也不像 Applied Materials / Lam / TEL 那样覆盖全前道平台；DISCO 的稀缺性在于切割、研磨、抛光的工艺 Know-how、设备与 blades/wheels 耗材闭环，以及客户在良率、TTV、chipping、warpage、低 k 损伤、薄 die 处理上的长期认证。
+
+当前市场愿意给高估值的原因：AI/HBM 把“薄”和“低损伤”变成关键瓶颈；HBM3E/HBM4 需要更薄 die、更稳定堆叠、更高良率；CoWoS/2.5D/SoIC 推高 package singulation 和先进封装切单复杂度；DISCO 既卖设备，又通过 blades/wheels/dry polishing wheels 捕获产线利用率。主要担心是估值过高、公司不披露订单、客户 capex 周期波动、台湾/韩国/中国区域集中、以及替代工艺风险。
+
+### 1.3 近三年重大业务变化、转型与收购
+
+| 时间 | 事件 | 对投资判断的意义 |
+|---|---|---|
+| 2023-2026 | AI/HBM、先进逻辑和先进封装复杂度上升，DISCO 财报持续强调 generative-AI-related products、memory、logic、高附加值产品 | 公司从普通半导体切磨设备周期股，进一步被市场定价为 AI/HBM 先进封装设备受益股 |
+| 2025-2027 | 公司披露 Haneda R&D Center、Hiroshima Works 新工厂等资本开支；FY2026 CAPEX 预测约 330 亿日元，包含 rationalization investment、Haneda R&D、new plant | 扩研发与制造能力，不是一次性并购型扩张；利于中长期产能和工艺响应 |
+| 2025-12 | 开发三款 laser saw：DFL7162、DFL7363、DFL7563；DFL7563 计划 2026-01 左右发布，DFL7363 计划 FY2026 下半年，DFL7162 计划 2027-04 左右 | 激光切割产品线从补充 blade dicing 转向更多后道/先进封装/低损伤场景 |
+| 2026-02 | Laser saw 累计出货超过 4,000 台；2020 年累计 2,000 台，六年新增 2,000 台，官方称出货节奏较 2020 年前接近三倍 | 验证激光切割应用扩大，和 HBM、advanced logic、SDBG、SiC/GaN/diamond 可选项相关 |
+| 2026-04 | FY2025 全年收入 4,368.9 亿日元，毛利率 70.1%，营业利润率 42.3%；FY2026 1Q 指引收入 1,061 亿日元，shipment figures 1,320 亿日元 | 实绩高质量，FY2026 1Q 指引显示 shipments 仍强，但收入确认与验收节奏可能造成季度波动 |
+
+未发现过去三年有改变公司业务边界的大型并购。DISCO 更像有机扩产和产品迭代型公司。官方股东回报/资金表中保留“技术收购，包括 M&A”的资金口径，但当前投资主线不是并购整合，而是 AI/HBM 推动的高附加值设备和耗材扩张。
+
+### 1.4 产业链位置
+
+DISCO 位于 AI 芯片制造链的“关键加工设备与耗材”环节：
+
+| 上游/下游位置 | 主要公司/客户类型 | DISCO 对应价值 |
+|---|---|---|
+| 晶圆制造前道后段/背面处理 | 先进逻辑 foundry、IDM、HBM DRAM 厂 | thinning、grinding、polishing、backside/超薄晶圆处理 |
+| HBM 制造 | SK hynix、Samsung、Micron 等 HBM 厂，客户名为行业推断，非 DISCO 披露 | HBM die thinning、low-damage dicing、SDBG、wheels/blades |
+| 先进封装/OSAT | TSMC CoWoS/SoIC、OSAT、IDM 封装线，客户名为行业推断 | package singulation、dicing、laser dicing、薄 die 搬运相关周边 |
+| 功率/化合物半导体 | SiC、GaN、diamond 材料链 | KABRA ingot slicing、laser processing、hard/brittle material dicing |
+| 未来玻璃/TGV | substrate、panel、glass core 设备和工艺验证链 | dicing/chipping/edge crack 控制，当前更偏小规模验证 |
+
+本地行业资料的关键结论是：2026 年先进封装设备最大收入不是纯粹 hybrid bonding 主机，而是“混合键合前夜”的现实设备，包括 TCB、临时键合/解键合、薄晶圆处理、grinding/dicing、inspection/metrology。DISCO 正好处在薄晶圆处理和切割耗材这条确定性更高的路径上。
+
+### 1.5 估值、股价和财务健康度快照
+
+| 指标 | 数值 | 日期/来源口径 | 解读 |
+|---|---:|---|---|
+| DSCSY OTC 价格 | 46.11 美元 | 2026-06-11 15:57 EST，StockAnalysis 页面嵌入报价 | ADR 场外交易，流动性弱于日本主股 |
+| 6146.T 日本主股收盘价 | 70,030 日元 | 2026-06-11，Yahoo Finance chart/TSE | 主股更适合观察流动性和市场定价 |
+| 市值 | 473.3 亿美元 | 2026-06-11，StockAnalysis/S&P Global | 对一家年收入约 29 亿美元公司，估值非常高 |
+| EV | 455.6 亿美元 | 2026-06-11，StockAnalysis/S&P Global | 净现金公司，EV 小于市值 |
+| TTM PE | 55.5x | 2026-06-11，StockAnalysis | 贵，隐含市场对 AI/HBM 增长持续性要求高 |
+| Forward PE | 约 42-43x；部分页面为 n/a | 2026-06-10 Yahoo 显示 42.73x；2026-06-11 MarketBeat 显示 42.57x；StockAnalysis 为 n/a | 一致预期口径分歧，低于 TTM PE 但仍贵 |
+| PS | 17.2x | 2026-06-11，StockAnalysis | 半导体设备公司中很高 |
+| TTM 收入 | 27.48 亿美元 | 2026-06-11，StockAnalysis；对应 FY2025 4,368.9 亿日元 | FY2025 收入同比 +11.1% |
+| TTM 净利润 | 8.52 亿美元 | 2026-06-11，StockAnalysis；对应 FY2025 净利 1,355.2 亿日元 | 净利率约 31% |
+| 毛利率 | 70.15% | 2026-06-11，StockAnalysis；FY2025 官方 70.1% | 工艺和耗材闭环带来的高质量利润 |
+| 营业利润率 | 42.12% | 2026-06-11，StockAnalysis；FY2025 官方 42.3% | 设备行业里极高 |
+| 净利率 | 31.02% | 2026-06-11，StockAnalysis；FY2025 官方 31.0% | 净利率稳定在高位 |
+| 现金及等价物 | 17.90 亿美元；官方 2,845.8 亿日元 cash/deposits | 2026-06-11 StockAnalysis；FY2025 期末官方 | 现金厚，抗周期能力强 |
+| 总债务 | 第三方显示 n/a；官方非流动负债仅 8.26 亿日元 | FY2025 期末官方 | 基本净现金/低杠杆 |
+| 流动比率 | 3.20x | FY2025 期末官方/StockAnalysis | 短期偿债能力强 |
+| 权益比率 | 约 79.1% | FY2025 期末：净资产 5,881.3 亿日元/总资产 7,434.1 亿日元 | 资产负债表健康 |
+
+财务健康度结论：非常健康。FY2025 期末现金 2,845.8 亿日元，流动资产 4,945.7 亿日元，流动负债 1,544.6 亿日元，非流动负债只有 8.3 亿日元，净资产 5,881.3 亿日元。主要风险不是破产或债务，而是高估值对应的订单/收入失速风险。
+
+## 2. 最新财报与最近五个季度
+
+### 2.1 财报口径说明
+
+DISCO 财年为当年 4 月至次年 3 月。FY2025 4Q 是 2026-01 至 2026-03；FY2026 1Q 是 2026-04 至 2026-06，目前只有指引。官方从 FY2022 后不再给订单和 backlog 数字，季度表中 `Order` 与 `Order Backlog` 为 `-`，因此本节的 backlog/bookings/lead time 只能做推断。
+
+### 2.2 最近五个季度核心表
+
+单位：十亿日元，除非另有说明。产品收入按官方“Segment Contribution to Consolidated Net Sales”占比乘以当季收入估算，因官方在 Excel 中给的是占比，不是绝对分项收入。
+
+| 财报季度 | 发布时间/期间 | 收入 | 收入 QoQ / YoY | 毛利率 | 营业利润 / OPM | 净利润 / 净利率 | Shipment figures | Dicing saws incl. laser | Grinders & polishers | Precision tools | AI/HBM 相关收入估计 | 订单/交期/取消率判断 |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|
+| FY2025 4Q | 2026-04-22；2026-01 至 03 | 133.1 | +21.7% / +10.2% | 70.9% | 58.8 / 44.2% | 42.9 / 32.2% | 121.7 | 39.9，30% | 41.2，31% | 25.3，19% | 约 600-800 亿日元，占比 45-60%，模型估算 | backlog 未披露；收入和利润创新高；AI 设备 shipment grew，Q1 shipment 指引更高，交期压力偏紧；取消率未披露，AI/HBM 项目估计低 |
+| FY2025 3Q | 2026-01-21；2025-10 至 12 | 109.3 | +4.5% / +16.8% | 71.4% | 47.3 / 43.3% | 36.7 / 33.6% | 113.7 | 30.6，28% | 32.8，30% | 25.1，23% | 约 490-660 亿日元，占比 45-60%，模型估算 | AI/HBM 相关设备和工具持续高位；耗材高说明客户稼动率强；bookings 未披露 |
+| FY2025 2Q | 2025-10-29；2025-07 至 09 | 104.6 | +16.4% / +8.7% | 69.5% | 44.4 / 42.4% | 32.1 / 30.7% | 96.4 | 34.5，33% | 26.2，25% | 23.0，22% | 约 420-575 亿日元，占比 40-55%，模型估算 | 设备验收和 shipment 季度错位；耗材增长支持真实利用率；取消率未披露 |
+| FY2025 1Q | 2025-07-17；2025-04 至 06 | 89.9 | -25.5% / +8.6% | 68.1% | 34.5 / 38.3% | 23.8 / 26.4% | 111.1 | 31.5，35% | 19.8，22% | 20.7，23% | 约 315-450 亿日元，占比 35-50%，模型估算 | shipment 高于收入，说明验收/收入确认节奏影响明显；不是需求消失 |
+| FY2024 4Q | 2025-04-17；2025-01 至 03 | 120.7 | +29.0% / +15.7% | 69.8% | 51.7 / 42.9% | 38.6 / 32.0% | 92.5 | 39.8，33% | 38.6，32% | 19.3，16% | 约 480-665 亿日元，占比 40-55%，模型估算 | FY2024 末已经受 AI/HBM 设备拉动；订单/backlog 不披露 |
+
+### 2.3 五个季度的关键信息
+
+1. FY2025 4Q 是最新实绩，收入、营业利润和净利润均为高位。毛利率 70.9%，营业利润率 44.2%，说明高附加值设备 mix 和耗材组合仍强。
+2. FY2025 4Q grinders & polishers 占收入 31%，对应收入约 412.5 亿日元，接近 dicing/laser 的 399.2 亿日元。对 HBM/先进逻辑而言，grinder 的边际重要性正在上升。
+3. FY2025 3Q 毛利率 71.4% 为近五季最高，说明高价值 mix 并非单季度偶发。
+4. FY2025 1Q shipment figures 1,111 亿日元，而收入只有 899 亿日元；FY2026 1Q 指引 shipment figures 1,320 亿日元，而收入指引 1,061 亿日元。DISCO 的收入确认和客户验收节奏会放大季度波动，不能只看单季收入 QoQ。
+5. Precision tools 在 FY2025 2Q-4Q 均在 230-253 亿日元区间，说明客户产线稼动率真实，不只是一次性设备拉货。
+
+### 2.4 Backlog、Bookings、B2B、Lead Time 和取消率
+
+官方披露状态：
+
+| 指标 | 官方状态 | 可用替代指标 | 当前判断 |
+|---|---|---|---|
+| Backlog | 不披露；Excel 表为 `-` | shipment figures、1Q forecast、产品 shipment basis QoQ | 不能声称有多少已锁订单；可判断 AI/HBM 设备交付压力高 |
+| Bookings / Orders | 不披露；FY2022 后为 `-` | 收入、shipment、产品 shipment forecast | FY2026 1Q shipment forecast 1,320 亿日元，高于 FY2025 4Q 1,216.6 亿日元 |
+| B2B | 不披露 | 无直接替代 | 不适合给确定数值 |
+| Lead time | 不披露 | 工艺认证周期、客户扩产窗口、行业供需 | 关键设备通常受客户验收、工艺认证和交付窗口约束；模型用 2-4 个季度可见性，不作为官方数字 |
+| 取消率 | 不披露 | AI/HBM 扩产紧迫性、耗材稼动率 | AI/HBM/先进逻辑项目取消率估计低，更多是验收/交期调整；成熟产品和中国相关需求取消/推迟风险更高 |
+
+## 3. FY2026 1Q 指引、业务占比和产品筛选
+
+### 3.1 最新指引
+
+截至 2026-06-11，FY2026 1Q 是公司最新可用指引，不是实绩。公司在 2026-04-22 披露 FY2026 1Q 指引：
+
+| 指标 | FY2026 1Q 指引 | 对 FY2025 4Q | 对 FY2025 1Q | 解读 |
+|---|---:|---:|---:|---|
+| 收入 | 1,061 亿日元 | -20.3% | +18.0% | 环比下降主要是验收/季节性/产品 mix；同比仍增长 |
+| 营业利润 | 420 亿日元 | -28.5% | +21.8% | OPM 指引 39.6%，仍高 |
+| 经常利润 | 423 亿日元 | -27.7% | +24.4% | 汇率假设 USD/JPY 157，EUR/JPY 181 |
+| 净利润 | 295 亿日元 | -31.2% | +24.1% | 净利率指引 27.8% |
+| Shipment figures | 1,320 亿日元 | +8.5% | +18.8% | 关键，说明交付/出货不弱 |
+
+公司还给了 FY2026 1Q 的 shipment basis 产品指引：
+
+| 产品 | FY2026 1Q shipment basis QoQ 指引 | AI/HBM 解释 |
+|---|---:|---|
+| Blade dicers | +15% | 传统切割仍有增长，和 package singulation/wafer dicing 相关 |
+| Laser saws | +15% | 低损伤、low-k grooving、SDBG、HBM/先进逻辑/功率材料受益 |
+| Dicers overall | +15% | 先进封装切单和晶圆切割共同驱动 |
+| Grinders | +25% | 最强指引，指向薄晶圆、HBM、先进逻辑和背面处理 |
+| Accessory equipment | +15% | 薄晶圆搬运、贴膜、检测、分离配套 |
+| Precision processing equipment | +20% | 设备端强于收入端 |
+| Precision processing tools | 0% | 耗材高位平稳，非衰退信号 |
+| Others | -20% | 非核心产品弱，不影响 AI 主线 |
+
+最突出的业务是 grinders 和 laser/dicing 设备，最侧重的是高附加值设备和 AI/HBM/先进逻辑相关应用。FY2026 1Q 指引里 grinders +25% 是最值得关注的数字。
+
+### 3.2 当前业务收入占比
+
+| 口径 | FY2025 全年收入占比 | FY2025 4Q 收入占比 | FY2025 4Q 收入估算 | 变化方向 |
+|---|---:|---:|---:|---|
+| Precision processing equipment | 63% | 66% | 878 亿日元 | 设备 mix 上升 |
+| Dicing saws incl. laser saw | 32% | 30% | 399 亿日元 | 季度占比略低，但金额高 |
+| Grinders & polishers | 27% | 31% | 412 亿日元 | 最重要的 AI/HBM 弹性 |
+| Accessory equipment | 4% | 4% | 53 亿日元 | 与设备配套 |
+| Precision processing tools | 22% | 19% | 253 亿日元 | 高位稳定，FY2025 全年仍是大块收入 |
+| 其他/差额 | 约 15% | 约 15% | 约 200 亿日元 | 服务、其他产品、四舍五入口径等 |
+
+### 3.3 产品、型号与增长判断
+
+| 产品/业务 | 官方产品/型号 | 收入规模 | 利润率判断 | 增长判断 | AI 数据中心相关性 |
+|---|---|---:|---|---|---|
+| Grinders / polishers / thinning | Grinders、Polishers、Surface Planer、Grinding Wheels、Dry Polishing Wheels | FY2025 约 1,180 亿日元；FY2025 4Q 约 412 亿日元 | 高于公司平均或接近最高，原因是高附加值设备和工艺绑定 | FY2026 1Q grinder shipment 指引 +25% QoQ，最高 | HBM 薄 die、advanced logic backside、warpage/TTV 控制，最关键 |
+| Dicing saws incl. laser saws | Dicing Saws、Laser Saws；DFL7162、DFL7363、DFL7563 | FY2025 约 1,398 亿日元；FY2025 4Q 约 399 亿日元 | 高，laser 和先进工艺更高 | FY2026 1Q blade dicers +15%，laser saws +15% | HBM/先进逻辑低损伤切割、low-k grooving、SDBG、先进封装切单 |
+| Precision tools | Dicing Blades、Grinding Wheels、Dry Polishing Wheels | FY2025 约 961 亿日元；FY2025 4Q 约 253 亿日元 | 高且稳定，随稼动率复购 | FY2026 1Q 指引 0%，但在高位 | 设备安装基数和 AI/HBM 产线利用率的复购指标 |
+| Accessory / wafer handling / inspection | Wafer Mounter、Inspection systems、Die Separator、Accessory Equipment | FY2025 约 175 亿日元以上，另有其他未拆项 | 中高，依赖配套方案 | FY2026 1Q accessory +15% | 薄晶圆搬运、贴膜、检查、分离 |
+| KABRA / SiC / GaN / diamond | KABRA ingot slicing，laser processing | 未单列，当前小 | 认证后可高，但材料周期不同 | 中期可选项 | AI 电源/功率链边际相关，非核心 GPU/HBM 主线 |
+| 玻璃/TGV/玻璃基板切割 | laser/dicing/edge crack 控制相关 | 当前很小或未披露 | 未量产，估值可选项 | 2026-2027 更多是 pilot/qualification | 未来 chiplet substrate 路线可选项，2026 不能高估 |
+
+跳过或低权重业务：普通电子元件切割、低端 mature node 非 AI 需求、通用 wafer mounter、waterjet saw、非 AI 消费电子、成熟功率器件普通切割。它们有收入，但不是本报告的核心增长来源。
+
+需要特别注意的小业务：laser saw 新型号、KABRA、glass/TGV 切割和 chipping 控制、accessory equipment 中与薄晶圆搬运和 inspection 相关的产品。这些目前可能小，但如果 HBM4/16Hi、CPO/光电共封装、玻璃基板或 chiplet 大尺寸封装进入量产，可能变成增量弹性。
+
+## 4. 关键产品当前贡献、AI 重要性、紧迫性、供需和定价权
+
+评分：5 为最高。收入贡献为 FY2025 4Q 单季估算和 FY2025 全年估算。
+
+| 关键产品/业务 | FY2025 4Q 收入贡献 | FY2025 全年收入贡献 | 当前增速/信号 | AI 基建重要性 | 时间紧迫性 | 供需紧张 | 垄断/溢价能力 | 结论 |
+|---|---:|---:|---|---:|---:|---:|---:|---|
+| Grinders / polishers / wafer thinning | 约 412 亿日元，约 2.6 亿美元 | 约 1,180 亿日元，约 7.6 亿美元 | FY2025 4Q 占比 31%；FY2026 1Q grinder shipment 指引 +25% QoQ | 5.0 | 5.0 | 4.5 | 4.5 | HBM/先进逻辑薄化是当前最强弹性，客户切换成本高 |
+| Dicing saws incl. laser saws | 约 399 亿日元，约 2.5 亿美元 | 约 1,398 亿日元，约 9.0 亿美元 | Laser saw 累计出货 4,000 台；FY2026 1Q dicers/laser saws +15% QoQ | 4.5 | 4.0 | 4.0 | 4.3 | 切割是基础能力，laser/SDBG 提升高端弹性 |
+| Precision tools 耗材 | 约 253 亿日元，约 1.6 亿美元 | 约 961 亿日元，约 6.2 亿美元 | FY2025 3Q/4Q 高位稳定；耗材反映产线稼动率 | 4.0 | 4.0 | 3.8 | 4.2 | 稳定复购，收入可见性强于单机设备 |
+| Accessory / thin wafer handling / inspection | 约 53 亿日元以上，另有未拆分其他项 | 约 175 亿日元以上 | FY2026 1Q accessory +15% QoQ | 3.5 | 3.5 | 3.5 | 3.5 | 单项小，但在薄晶圆方案中重要 |
+| KABRA / SiC / GaN / diamond | 未披露，估计当前小于全年收入 5% | 小于约 200 亿日元，低置信度 | 官方称 KABRA 在 SiC 广泛采用，并扩展到 GaN/diamond | 2.5 | 2.5 | 3.0 | 4.0 | 功率材料可选项，不是 2026 AI 主线 |
+| Glass/TGV 相关加工 | 未披露，当前很小 | 未披露 | 本地行业资料指向 2028 前后有限量产可能 | 2.5 | 2.0 | 2.5 | 3.5 | 需要跟踪，不应提前计入主收入 |
+
+## 5. 一年后关键产品三情景预测
+
+时间窗口：从 2026-06-11 往后 12 个月，近似覆盖 FY2026 后三季度与 FY2027 1Q。美元换算用 1 美元 = 157 日元附近，近似公司 FY2026 1Q 指引汇率。
+
+### 5.1 产品收入贡献预测
+
+| 产品/业务 | 当前 FY2025 全年基数 | 基准情景，一年后 | 乐观情景，一年后 | 极度乐观情景，一年后 | 核心触发条件 |
+|---|---:|---:|---:|---:|---|
+| Grinders / polishers / wafer thinning | 约 1,180 亿日元 | 1,400-1,550 亿日元，+19-31% | 1,700-1,900 亿日元，+44-61% | 2,100-2,400 亿日元，+78-103% | HBM4/HBM3E 12H/16H、advanced logic backside、CoWoS/SoIC 扩产 |
+| Dicing saws incl. laser saws | 约 1,398 亿日元 | 1,550-1,650 亿日元，+11-18% | 1,750-1,900 亿日元，+25-36% | 2,050-2,250 亿日元，+47-61% | Laser saw/SDBG、advanced logic low-k、package singulation、玻璃/TGV 初期导入 |
+| Precision tools 耗材 | 约 961 亿日元 | 1,050-1,150 亿日元，+9-20% | 1,200-1,350 亿日元，+25-40% | 1,450-1,600 亿日元，+51-66% | AI/HBM 产线稼动率、安装基数扩张、客户利用率 |
+| Accessory / wafer handling / inspection | 约 175 亿日元以上 | 200-250 亿日元 | 300-400 亿日元 | 450-600 亿日元 | 薄晶圆搬运、贴膜、检测、分离配套从选配变成必配 |
+| KABRA / SiC / GaN / diamond | 小于 200 亿日元，低置信度 | 小幅增长，<250 亿日元 | 250-350 亿日元 | 400 亿日元以上 | SiC/GaN capex 恢复、AI 电源链投资、diamond 早期验证 |
+| Glass/TGV 相关 | 很小 | <50 亿日元 | 50-100 亿日元 | 100-200 亿日元 | 玻璃基板试产线、TGV 设备认证、边缘裂纹控制成为良率瓶颈 |
+
+### 5.2 产品重要性、紧迫性、供需与定价权三情景
+
+| 产品/业务 | 情景 | AI 基建重要性 | 时间紧迫性 | 供需紧张 | 溢价能力 | 一年后判断 |
+|---|---|---:|---:|---:|---:|---|
+| Grinders / wafer thinning | 基准 | 5 | 5 | 4 | 4 | HBM 和先进逻辑保持高景气，DISCO 继续吃 mix |
+| Grinders / wafer thinning | 乐观 | 5 | 5 | 5 | 5 | HBM4 量产和 16H/更薄 die 推高 grinder 认证与交付压力 |
+| Grinders / wafer thinning | 极度乐观 | 5 | 5 | 5 | 5 | 薄化成为 HBM/先进封装扩产硬瓶颈，设备交期和客户优先级进一步上升 |
+| Dicing / laser saw | 基准 | 4 | 4 | 4 | 4 | package singulation 和 low-damage dicing 稳步扩张 |
+| Dicing / laser saw | 乐观 | 5 | 4 | 4 | 4 | Laser saw 新型号进入 FY2026/FY2027 销售窗口，SDBG 和低 k 场景拉动 |
+| Dicing / laser saw | 极度乐观 | 5 | 5 | 5 | 5 | HBM4、CPO/光子、玻璃/TGV 或更复杂 package 使低损伤切割进入供不应求 |
+| Precision tools | 基准 | 4 | 4 | 3 | 4 | 安装基数带动 blades/wheels 稳健复购 |
+| Precision tools | 乐观 | 4 | 4 | 4 | 4 | AI/HBM 产线稼动率高，耗材成为收入稳定器 |
+| Precision tools | 极度乐观 | 5 | 5 | 4 | 4 | 设备安装基数与稼动率同时扩张，耗材高位再上台阶 |
+| Accessory / handling | 基准 | 3 | 3 | 3 | 3 | 配套增长 |
+| Accessory / handling | 乐观 | 4 | 4 | 4 | 4 | 薄晶圆搬运和检测成为良率关键 |
+| Accessory / handling | 极度乐观 | 4 | 5 | 4 | 4 | 薄 die、warpage、贴膜/分离步骤复杂化，方案价值上升 |
+| Glass/TGV/KABRA | 基准 | 2 | 2 | 2 | 3 | 仍是可选项 |
+| Glass/TGV/KABRA | 乐观 | 3 | 3 | 3 | 4 | 试产线认证推进，DISCO 获得早期工具份额 |
+| Glass/TGV/KABRA | 极度乐观 | 4 | 4 | 4 | 4 | 玻璃基板/新材料进入早期量产，laser/KABRA/dicing 价值显性化 |
+
+## 6. BOM 与真实内容量：每 MW、每 rack、每 GPU、每 optical port
+
+### 6.1 重要前提
+
+DISCO 的产品不是服务器机柜里的直接 BOM。GPU 服务器客户不会在每台服务器里采购 DISCO 部件。DISCO 捕获的是上游制造 capex 和耗材：AI capex -> GPU/ASIC/HBM 订单 -> foundry/HBM/OSAT 扩产 -> grinders/dicers/laser saws/accessory equipment 采购 -> blades/wheels 耗材复购。所谓“每 rack / 每 GPU 内容量”只能通过制造设备折旧和耗材摊销建模，不是公开 BOM。
+
+### 6.2 AI 服务器链条中的价格传导
+
+| 环节 | 决策者 | 传导到 DISCO 的方式 | 传导滞后 |
+|---|---|---|---|
+| Hyperscaler AI capex | AWS、Microsoft、Google、Meta、xAI、Oracle 等 | 提高 GPU/ASIC/HBM 需求 | 0-2 个季度 |
+| GPU/ASIC 平台 | NVIDIA、AMD、Broadcom/custom ASIC、Marvell/custom ASIC 等 | 推高 HBM stacks、advanced package、CoWoS/SoIC、logic die 需求 | 1-4 个季度 |
+| Foundry/HBM/OSAT 扩产 | TSMC、SK hynix、Samsung、Micron、OSAT 等，客户名为行业推断 | 采购 grinder、dicer、laser saw、wafer handling、consumables | 2-6 个季度 |
+| DISCO 出货/验收 | DISCO 与客户 fabs | shipment 先行，收入按验收/交付确认 | 当季至数季 |
+| 耗材复购 | 客户产线 | blades/wheels/dry polishing wheels 随稼动率消耗 | 持续 |
+
+### 6.3 建模假设和内容量估计
+
+假设一台高端 AI rack 类似 72 GPU 级别配置，每 GPU 搭载约 8 颗 HBM stacks，则每 rack 约 576 颗 HBM stacks。不同平台差异很大，以下只用于数量级估计。
+
+| 口径 | DISCO 相关真实内容 | 基准估计 | 乐观估计 | 极度乐观估计 | 说明 |
+|---|---|---:|---:|---:|---|
+| 每 HBM stack | DRAM die thinning、dicing/SDBG、grinding/polishing 耗材、设备折旧摊销 | 1-8 美元 | 5-15 美元 | 10-25 美元 | 不含 HBM 本身售价，只是 DISCO 可能捕获的制造设备/耗材摊销量级 |
+| 每 GPU | 8 颗 HBM stack + GPU/logic die/package 切割/薄化摊销 | 10-75 美元 | 60-180 美元 | 120-300 美元 | 高端 HBM4/16H、复杂封装下上限提高 |
+| 每 72-GPU rack | 576 HBM stacks + GPU/package 摊销 | 1,000-6,000 美元 | 5,000-15,000 美元 | 10,000-25,000 美元 | 与服务器 ASP 相比很小，但对交付良率极关键 |
+| 每 MW IT load | 约 6-8 个 120-150kW 级 AI racks | 6,000-50,000 美元 | 30,000-120,000 美元 | 80,000-250,000 美元 | 取决于 rack 功耗和 HBM 内容 |
+| 每 optical port | 常规 pluggable optical port 直接关联很低 | <0.05-0.50 美元 | 0.10-1.00 美元 | 0.50-3.00 美元 | CPO/硅光/光子封装上量后，die dicing 和低损伤加工才会更明显 |
+
+以上估计不应和芯片/服务器 BOM 混用。DISCO 的商业模式更像“单位产能 capex + 耗材”，不是“每台服务器固定零件”。它的杠杆在于当 HBM/先进封装产能扩张时，客户必须提前买设备并通过工艺认证。
+
+## 7. 当前产能能力、供应链采纳和认证阶段
+
+### 7.1 当前产能能力，按收入/出货能力估计
+
+| 指标 | 当前值 | 美元等价 | 解读 |
+|---|---:|---:|---|
+| FY2025 全年收入 | 4,368.9 亿日元 | 约 27.8 亿美元，按 157 | 已确认收入能力 |
+| FY2025 全年 shipment figures | 4,428.2 亿日元 | 约 28.2 亿美元 | 出货能力略高于收入，验收节奏影响收入 |
+| FY2025 4Q 收入年化 | 5,322.4 亿日元 | 约 33.9 亿美元 | 高峰 run-rate，不应直接年化为确定收入 |
+| FY2026 1Q shipment 指引年化 | 5,280 亿日元 | 约 33.6 亿美元 | 说明当前交付能力/需求强度仍在高位 |
+| FY2026 CAPEX 指引 | 约 330 亿日元 | 约 2.1 亿美元 | 包含 Haneda R&D、Hiroshima new plant 等 |
+
+当前可合理认为 DISCO 具备 5,000 亿日元级别年化出货能力，且正通过研发和制造设施扩张提高上限。但公司没有披露按 grinder、laser saw、dicer 的机台产能，因此不能把每条产品线产能写成确定金额。
+
+### 7.2 供应链采纳和认证
+
+| 产品/业务 | 当前采纳程度 | 当前认证/发布阶段 | 关键证据 |
+|---|---|---|---|
+| Grinders / polishers / thinning | 已被半导体制造和封装客户广泛采用 | HBM/advanced logic 客户具体认证不披露 | FY2025 4Q grinder/polisher 约 31% 收入；FY2026 1Q grinder shipment +25% 指引 |
+| Dicing saws / blade dicing | 极成熟，主流工艺 | 已大规模生产 | dicing saw incl. laser FY2025 约 32% 收入 |
+| Laser saws | 采用加速，累计出货 >4,000 台 | 2026-02 累计出货；新型号陆续进入销售/测试 | 官方称从 2020 年 2,000 台到 2026 年 4,000 台 |
+| DFL7563 | 新 laser saw | 计划 2026-01 左右销售发布 | 官方 2025-12 新品页 |
+| DFL7363 | Stealth Dicing laser saw | test cuts；销售发布计划 FY2026 下半年 | 官方 2025-12 新品页 |
+| DFL7162 | 300mm ablation laser saw | test cuts；销售发布计划 2027-04 左右 | 官方 2025-12 新品页 |
+| Precision tools | 随安装基数广泛采用 | 持续量产供应 | FY2025 全年 22% 收入，FY2025 4Q 约 253 亿日元 |
+| Glass/TGV 加工 | 早期 | pilot/qualification | 本地行业资料显示玻璃/TGV 2026-2027 仍以验证为主，有限量产更可能在 2028 前后 |
+
+### 7.3 一年后产能能力和认证三情景
+
+| 情景 | 公司总收入/产能能力估计 | Grinders 认证/采纳 | Laser/dicing 认证/采纳 | Tools/耗材 | Glass/TGV/KABRA |
+|---|---:|---|---|---|---|
+| 基准 | 年收入 4,850-5,150 亿日元，约 31-33 亿美元；出货能力 5,300-5,700 亿日元 | HBM3E/HBM4 量产客户继续扩张，grinder 成为高价值 mix | DFL7563 初步贡献，DFL7363 进入销售窗口 | 高位稳定，随设备安装基数增长 | 以试产和验证为主 |
+| 乐观 | 年收入 5,500-6,000 亿日元，约 35-38 亿美元；出货能力 6,000-6,800 亿日元 | HBM4、16H/更薄 die 拉动客户加单 | Laser saw 新型号导入顺利，SDBG/low-k 场景扩大 | 耗材与设备同步放量 | 玻璃/TGV 部分客户进入小批量设备采购 |
+| 极度乐观 | 年收入 6,400-7,200 亿日元，约 41-46 亿美元；出货能力 7,200-8,000 亿日元 | HBM/先进逻辑薄化成为瓶颈，交期和认证优先级上升 | 激光切割成为低损伤高端封装关键瓶颈之一 | 耗材利用率和装机双升 | 玻璃/TGV、GaN/diamond 超预期导入 |
+
+## 8. 基于真实订单积压和供给的未来一年增速推断
+
+### 8.1 可验证事实
+
+1. DISCO 不披露真实 backlog，不披露 bookings，不披露取消率。
+2. FY2025 4Q 实绩收入 1,330.6 亿日元，shipment figures 1,216.6 亿日元。
+3. FY2026 1Q 指引收入 1,061 亿日元，shipment figures 1,320 亿日元。
+4. FY2026 1Q 产品 shipment basis 指引：grinders +25%，precision processing equipment +20%，dicers/laser saws/blade dicers/accessory +15%。
+5. 官方 FY2025 4Q 表述中，generative AI、memory、logic、高附加值产品、先进封装复杂度是明确驱动。
+
+### 8.2 推断订单状态
+
+| 项目 | 真实披露 | 推断 |
+|---|---|---|
+| AI/HBM grinders | 没有订单金额 | FY2026 1Q grinder shipment +25% 指引强烈暗示客户交付窗口充足；HBM/advanced logic 是最强可见需求 |
+| Laser saws | 没有订单金额；累计出货 4,000 台 | 2025-12 三款新型号和 2026-02 4,000 台新闻说明应用扩大；新型号销售节奏可带来 FY2026 下半年增量 |
+| Dicing saws | 没有订单金额 | package singulation 和常规 wafer dicing 的基础需求稳定，AI/先进封装提高低损伤/精度要求 |
+| Precision tools | 没有 backlog | 高位收入说明客户产线利用率强，取消风险低于单机设备 |
+| Glass/TGV | 没有订单金额 | 2026-2027 更可能是样机、试产、认证，不应纳入主订单模型 |
+
+### 8.3 未来一年收入增速情景
+
+| 情景 | 公司未来一年收入增速 | 关键产品增速 | 供给/产能约束 | 取消率/推迟风险 | 判断 |
+|---|---:|---|---|---|---|
+| 基准 | +11% 至 +18%，收入 4,850-5,150 亿日元 | Grinders +20-30%；dicing/laser +10-20%；tools +10-20% | 有扩产，但收入受客户验收节奏影响 | AI/HBM 取消 0-5%，成熟/中国相关推迟 5-15% | 最合理主线，FY2026 1Q 同比增长和 shipment 指引支持 |
+| 乐观 | +26% 至 +37%，收入 5,500-6,000 亿日元 | Grinders +45-60%；dicing/laser +25-36%；tools +25-40% | grinder/laser saw 交付偏紧，耗材供应随装机扩张 | AI/HBM 取消 0-3%，更多是交付排队 | HBM4 和 CoWoS 扩产超预期，DISCO 高价值 mix 再上台阶 |
+| 极度乐观 | +46% 至 +65%，收入 6,400-7,200 亿日元 | Grinders +80-100%；dicing/laser +47-61%；tools +50-66% | 产能和验收成为硬约束，公司需要加速新厂/R&D/供应链 | 取消很低，但验收推迟概率高 | 需要 AI capex、HBM4、CoWoS、glass/TGV 或 CPO 多条线共振，概率低但上行很大 |
+
+### 8.4 为什么不能把“无 backlog”理解为“无需求”
+
+DISCO 的官方 Excel 把 `Order` 和 `Order Backlog` 留空，不代表没有订单，而是公司不披露。对这类公司，最好的替代指标是：shipment figures、产品 shipment forecast、耗材收入、毛利率、地区出货和资本开支。FY2026 1Q 指引中，收入环比下降但 shipment figures 环比上升，说明需求和交付并不弱，只是收入确认可能受客户验收节奏影响。
+
+## 9. 竞争格局、替代方案和客户替换成本
+
+### 9.1 主要竞争对手与替代路径
+
+| DISCO 业务 | 竞争对手/替代方案 | 竞争重点 | DISCO 相对优势 | 主要风险 |
+|---|---|---|---|---|
+| Dicing saws / blade dicing | Tokyo Seimitsu/Accretech、ADT/K&S 相关切割设备、部分本土化设备商 | 切割精度、throughput、chipping、耗材成本、服务 | 长期装机基数、blades 耗材、工艺 Know-how | 低端产品本土替代；客户双供应商策略 |
+| Laser saws | 激光设备商、stealth dicing、plasma dicing、机械 blade 替代 | 低损伤、low-k、MEMS、SDBG、复杂材料 | 累计 4,000 台出货，新 DFL 系列，设备+工艺组合 | 替代激光方案、客户内部工艺改变、新技术成熟慢 |
+| Grinders / polishers | Okamoto、Tokyo Seimitsu/Accretech、Ebara、Shibaura Mechatronics 等 | TTV、warpage、薄化极限、良率、throughput | 在薄晶圆和精密加工领域品牌强，和耗材/工艺闭环 | 更强前道设备商向 backside/薄化延伸 |
+| Precision tools | 其他 blades/wheels 供应商、客户自制/替代耗材 | 寿命、良率、kerf、成本 | 与设备和工艺参数绑定，复购粘性高 | 客户成本压力、耗材国产化 |
+| Glass/TGV/新材料加工 | LPKF、Coherent、TRUMPF、Via Mechanics、Ushio、SCREEN、其他激光/TGV 设备商 | TGV、玻璃切割、edge crack、metallization 配合 | DISCO 在切割/低损伤加工有可迁移能力 | Glass substrate 路线可能延后，或由其他设备路线主导 |
+
+### 9.2 新技术是否会成为主流
+
+最有机会成为主流的是“更薄、更低损伤、更高精度”的加工方向，而不是某一个单独型号。HBM4/16H、先进逻辑 backside、CoWoS 大尺寸封装、SoIC/混合键合前段，都在提高对 wafer thinning、dicing、laser grooving、warpage/TTV 控制的要求。DISCO 的技术趋势是顺风。
+
+但需要分清近期和远期：
+
+| 路线 | 2026 可见性 | 对 DISCO 的意义 |
+|---|---|---|
+| HBM3E/HBM4 + 2.5D/CoWoS | 高 | 研磨、切割、耗材的确定性主线 |
+| HBM4 16H / 更薄 die | 中高 | grinder、SDBG、laser saw 的弹性上升 |
+| SoIC / hybrid bonding | 中 | DISCO 不是 bonding 主机，但薄化和切割前后工艺受益 |
+| 玻璃基板/TGV | 中低，偏验证 | 可选项，短期收入不要高估 |
+| CPO/硅光 | 中低 | optical port 直接内容量低，等光子 die/package 大规模后才明显 |
+| SiC/GaN/diamond | 中 | KABRA 和 laser processing 有材料加工可选项，但 AI 数据中心相关性弱于 HBM |
+
+### 9.3 客户替换成本
+
+DISCO 的客户替换成本高，原因不是单机价格，而是认证和良率：
+
+1. 切割和研磨直接影响 die crack、chipping、kerf loss、TTV、warpage、yield。
+2. HBM 和先进封装的良率损失价值很高，客户对已认证 recipe 和耗材不愿轻易替换。
+3. DISCO 同时提供设备、blades/wheels/dry polishing wheels 和应用服务，客户替换需要重新验证设备、耗材、recipe、maintenance、操作参数。
+4. 新产品如 DFL7363、DFL7162 仍需要 test cuts 和客户验证，认证周期也是壁垒。
+
+替换成本排序：HBM/先进逻辑 grinder 最高，laser/SDBG 次高，precision tools 中高，低端普通 dicing 最低。
+
+## 10. 风险清单
+
+| 风险 | 影响 | 观察指标 |
+|---|---|---|
+| 估值风险 | PE/PS 已反映强增长，订单稍弱可能压估值 | DSCSY/6146.T PE、PS、FY2026 指引变化 |
+| Backlog 不透明 | 市场只能通过 shipment 和耗材推断需求，容易误判 | shipment figures、产品 shipment forecast、耗材收入 |
+| AI/HBM capex 波动 | HBM/CoWoS 扩产放缓将影响 grinder/dicing/laser saw | TSMC CoWoS、SK hynix/Samsung/Micron HBM capex |
+| 客户区域集中 | 台湾、韩国、中国需求变化影响大 | 出货地区结构、出口管制 |
+| 中国替代/出口限制 | 中低端设备和耗材可能被替代，高端也有政策风险 | 中国收入、设备限制、国产替代进展 |
+| 替代工艺 | plasma dicing、其他激光路线、panel/glass 工艺可能改变设备价值 | 客户技术路线、认证结果 |
+| 验收/收入确认波动 | shipment 与收入不完全同步，造成单季度波动 | shipment vs revenue 差额 |
+| 汇率 | 日元收入、美元估值、海外销售利润受汇率影响 | USD/JPY、EUR/JPY；公司 FY2026 1Q 假设 USD/JPY 157 |
+
+## 11. 投资判断框架
+
+### 11.1 多头逻辑
+
+1. AI/HBM/先进封装确实提高了对薄晶圆、低损伤切割和高精度研磨的需求。
+2. DISCO 的 FY2025 财务质量极强，70% 毛利率、42% 营业利润率、31% 净利率，净现金资产负债表。
+3. FY2026 1Q 指引中，grinders +25%、precision equipment +20%、laser saws +15% 的 shipment basis 指引，对 AI/HBM 主线很有力。
+4. 耗材业务提供复购和装机基数杠杆，不完全依赖一次性设备订单。
+5. Laser saw 4,000 台出货和 DFL 新型号使高端切割有新产品周期。
+
+### 11.2 空头/谨慎逻辑
+
+1. 市值约 473 亿美元、PE 约 55x、PS 约 17x，容错率低。
+2. 公司不披露真实订单和 backlog，市场容易用 shipment 指引过度外推。
+3. FY2026 1Q 收入指引环比下降 20.3%，若后续验收不顺，可能引发“AI 需求放缓”交易。
+4. DISCO 不是 HBM、CoWoS 或 GPU 的主承包商，内容量是上游制造设备摊销，不能按服务器 BOM 线性放大。
+5. 玻璃/TGV、CPO、diamond 等远期可选项仍在验证期，短期收入贡献很小。
+
+### 11.3 当前最该跟踪的 8 个变量
+
+| 变量 | 为什么重要 |
+|---|---|
+| FY2026 1Q 实绩收入与 shipment figures 是否兑现 | 验证 1,061 亿日元收入和 1,320 亿日元 shipment 指引 |
+| Grinders shipment 增速 | 直接验证 HBM/先进逻辑薄化需求 |
+| Precision tools 收入 | 验证客户产线稼动率，而非单纯设备前置采购 |
+| Laser saw 新型号进展 | DFL7563、DFL7363、DFL7162 是否按计划销售/认证 |
+| 毛利率是否维持 70% 附近 | 判断高附加值 mix 是否持续 |
+| TSMC CoWoS/SoIC 与 HBM4 扩产节奏 | DISCO AI 增长的上游订单来源 |
+| 台湾/韩国/中国出货结构 | 区域集中和政策风险 |
+| 公司 CAPEX 与新厂进度 | 判断产能上限和交付能力 |
+
+## 12. 资料来源与口径
+
+### 12.1 官方与行情来源
+
+| 来源 | 用途 |
+|---|---|
+| DISCO IR：https://www.disco.co.jp/eg/ir/ | 最新财报、IR 新闻入口 |
+| DISCO FY2025 4Q Presentation：https://www.disco.co.jp/eg/ir/library/doc/film/20260422.pdf | FY2025 4Q 实绩、FY2026 1Q 指引、CAPEX、产品 shipment forecast |
+| DISCO Consolidated Financial Information Excel：https://www.disco.co.jp/eg/ir/library/doc/fr/fr20260422.xlsx | 最近季度收入、利润、资产负债表、shipment figures、产品收入占比 |
+| DISCO FY2025 3Q Presentation：https://www.disco.co.jp/eg/ir/library/doc/film/20260121.pdf | FY2025 3Q 财报与需求描述 |
+| DISCO FY2025 2Q Presentation：https://www.disco.co.jp/eg/ir/library/doc/film/20251029.pdf | FY2025 2Q 财报与半年度口径 |
+| DISCO FY2025 1Q Presentation：https://www.disco.co.jp/eg/ir/library/doc/film/20250717.pdf | FY2025 1Q 财报 |
+| DISCO Laser Saw Shipments Exceed 4,000 Units：https://www.disco.co.jp/eg/news/corp/20260302.html | Laser saw 累计出货、SDBG、KABRA、HBM/AI 相关描述 |
+| DISCO Development of Three Laser Saws：https://www.disco.co.jp/eg/news/corp/20251215_2.html | DFL7162、DFL7363、DFL7563 型号与销售/测试阶段 |
+| StockAnalysis DSCSY statistics：https://stockanalysis.com/quote/otc/DSCSY/statistics/ | 2026-06-11 DSCSY 价格、市值、PE、PS、TTM 利润率、现金等 |
+| Yahoo Finance chart API | 6146.T 2026-06-11 日本主股收盘价、DSCSY 最近日 K 交叉验证 |
+| Yahoo Finance DSCSY quote | Forward PE 约 42.73x，口径低置信度 |
+| MarketBeat DSCSY page | Forward PE 约 42.57x，口径低置信度 |
+
+### 12.2 行业与本地资料来源
+
+| 来源 | 用途 |
+|---|---|
+| `基本面/行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md` | 先进封装设备、混合键合前夜、HBM 薄晶圆、TCB/TBDB/研磨切割定位 |
+| `基本面/行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md` | WFE、300mm、AI/HBM/先进逻辑 capex 背景 |
+| `基本面/行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md` | CoWoS/2.5D/HBM/advanced package 设备需求 |
+| `基本面/行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md` | HBM3E/HBM4、12H/16H、HBM 市场和制造成本结构 |
+| `基本面/行业调研/晶圆制造_设备_材料_测试/行业调研_玻璃基板、TGV与玻璃检测_2026-06-11.md` | 玻璃/TGV、edge crack、dicing/chipping、2026-2028 量产节奏 |
+| SEMI 300mm Fab Outlook 2026 新闻稿 | 2026/2027 300mm 设备开支增长背景 |
+| TSMC 2026 Technology Symposium 页面 | 3DFabric、CoWoS、SoIC、先进封装路线背景 |
+
+### 12.3 估算口径
+
+1. 日元到美元换算在报告主体中主要使用 1 美元约 157 日元，接近 DISCO FY2026 1Q 指引汇率；历史 FY2025 平均换算会有偏差。
+2. AI/HBM 相关收入占比、BOM 含量、每 rack/MW/GPU 内容量、未来三情景均为模型估算，不是公司披露。
+3. 产品收入金额按官方产品收入占比乘以当季/全年收入估算；由于官方 Excel 提供的是占比，细分金额存在四舍五入误差。
+4. 客户名如 TSMC、SK hynix、Samsung、Micron 是行业链条推断，不代表 DISCO 披露具体客户订单。
+5. 由于 DISCO 不披露 backlog/bookings/取消率，相关判断以 shipment figures、产品 shipment forecast、耗材收入和行业扩产计划交叉验证。

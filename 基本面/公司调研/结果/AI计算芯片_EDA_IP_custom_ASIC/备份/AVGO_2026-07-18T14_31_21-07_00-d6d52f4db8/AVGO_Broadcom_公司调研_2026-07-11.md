@@ -1,0 +1,762 @@
+# 公司：AVGO Broadcom（博通）公司调研
+
+> 研究日期：2026-07-11（美国太平洋时间）  
+> 最新股价日期：2026-07-10 美股收盘  
+> 最新财报：FY2026 Q2，季度截至 2026-05-03，发布于 2026-06-03  
+> 预测区间：“未来一年”统一指 2026-07-11 至 2027-07-10，而不是完整 FY2027  
+> 金额单位：除特别说明外均为美元；B=十亿美元，M=百万美元  
+> 研究边界：公司事实以 SEC、Broadcom IR、客户/合作方公告及过去半年产品发布为主；本地资料只采用“行业调研”中的 AI ASIC、以太网 Fabric、光互联、CPO、开放 Scale-up、先进封装等产业模型，不调用其他目录的公司结论。
+
+## 结论先行
+
+Broadcom 已不再只是“苹果射频芯片供应商”或“并购型半导体公司”。截至 FY2026 Q2，它更准确的投资标签是：
+
+1. **AI 定制加速器的头部实现平台**：把 Google、OpenAI、Meta 等客户的体系结构，转化为可在先进制程、HBM 和先进封装上量产的 XPU/TPU/MTIA，并提供 SerDes、封装、验证、供应保障和部分机架级整合。
+2. **AI 以太网的收费站**：Tomahawk、Jericho、Thor、Taurus、PHY、PCIe/CXL、光 DSP、激光器及 CPO 覆盖 scale-up、scale-out、跨数据中心和光链路。即使客户使用 NVIDIA/AMD GPU 而非 Broadcom XPU，Broadcom 仍可销售网络硅。
+3. **VMware 驱动的高利润软件现金流平台**：VCF 订阅化、捆绑化与客户聚焦显著抬升利润和合同可见度，但也引发价格、渠道和欧洲反垄断风险。
+4. **仍有大额非 AI 防守盘**：Apple 于 2026-07-08 宣布与 Broadcom 达成超过 $30B 的多年美国芯片协议，覆盖 FBAR 射频滤波器及定制无线连接组件，证明无线业务不是可以忽略的“夕阳资产”。
+
+最强多头证据是：FY2026 Q2 AI 半导体收入 $10.8B、同比 +143%，当季 AI bookings 超过 $30B；FY2026 AI 收入指引 $56B、FY2027 超过 $100B；截至 2026-05-03 的公司 RPO 达 $164.6B，其中约 30%预计在未来 12 个月确认。最强空头证据是：估值已达约 66.6 倍 TTM PE；前五大终端客户约占收入 45%；TSMC 占外包晶圆约 95%；FY2027–FY2028 不可撤销采购承诺合计 $128.1B；AI 机架融资安排的最大回购/租赁 backstop 敞口为 $29B。增长是真实的，但供应承诺、客户融资和高估值使错误成本也非常高。
+
+**综合判断**：经营质量 A、流动性 A-、传统财务杠杆 B+、包括采购承诺和机架 backstop 后的风险调整杠杆 B-、有形资产质量 C+、AI 竞争地位 A。Broadcom 是目前少数能够同时捕获“定制计算 + scale-up + scale-out + 光互联”的平台型供应商；核心风险并非短期需求不足，而是 2027 年多客户同时爬坡时，功率、HBM、先进封装、客户融资与合同兑现能否同步。
+
+## 一、公司整体业务、投资者定位与产业链位置
+
+### 1.1 当前业务结构
+
+Broadcom 只有两个报告分部，但半导体内部横跨五个终端市场。FY2026 Q2 的正式分部收入及 AI 穿透如下。
+
+| 分部/业务 | FY2026 Q2 收入 | 占总收入 | 同比 | 主要产品与角色 |
+|---|---:|---:|---:|---|
+| Semiconductor Solutions | $15.009B | 67.6% | +79% | 定制 AI XPU、以太网交换/路由、NIC、PHY、PCIe/CXL、光 DSP/激光器、无线 RF/连接、宽带、存储控制器、工业芯片及 IP |
+| 其中：AI semiconductor | $10.800B | 48.7% | +143% | 定制 XPU/TPU/MTIA，以及 AI 交换、路由、NIC、DSP、光器件和连接硅；不是纯 ASIC 收入 |
+| 其中：AI networking（公司称“接近 40%”AI 收入） | 约 $4.2–4.3B | 约 19% | 公司未给精确同比；Q1 为 +60%，Q2 明显加速 | Tomahawk 6/Ultra、Jericho、Thor、PHY、DSP、激光器、PCIe/CXL、CPO |
+| 其中：定制 XPU（残差推算） | 约 $6.5B | 约 29% | 约 +145%估算 | Google TPU、OpenAI Jalapeño、Meta MTIA及其他定制平台；包含实现、封装和相关硅价值 |
+| 非 AI semiconductor | 约 $4.2B | 18.9% | +6% | Apple RF/无线、宽带、存储、工业和传统企业网络 |
+| Infrastructure Software | $7.178B | 32.4% | +9% | VMware Cloud Foundation、vSphere、Tanzu、Avi、vDefend、主机软件、Symantec、FC SAN 等 |
+
+资料来源：[FY2026 Q2 财报](https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial)、[FY2026 Q2 电话会](https://www.fool.com/earnings/call-transcripts/2026/06/03/broadcom-avgo-q2-2026-earnings-transcript/)。XPU 为 AI 收入减去“接近 40%”网络收入的残差，不是公司单独披露分部。
+
+### 1.2 投资者心中的 Broadcom
+
+Broadcom 的估值框架经历了三次迁移：
+
+- **2023 年以前：高毛利、强定价、成熟品类的半导体整合者**。核心心智是 Hock Tan 通过并购获得寡头产品，压低非核心研发和销售费用，以自由现金流还债、分红。
+- **2023–2024 年：半导体 + 基础设施软件双引擎**。VMware 交易让软件收入从 FY2023 的约 $7.6B 量级跃升为 FY2025 的 $27.0B；VCF 订阅和多年合同改善经常性收入与利润，但客户对捆绑、最低承诺和价格上调的反弹也成为新风险。
+- **2025–2026 年：定制 AI 计算与以太网平台**。Google TPU 的长期合作、OpenAI 10GW 项目、Meta MTIA、Anthropic TPU 容量及两名新增 XPU 客户，使市场不再只按软件现金流或 Apple 周期估值，而是按“非 NVIDIA AI 算力的主要实施商 + AI Ethernet 平台”估值。
+
+因此，Broadcom 不是 NVIDIA 的简单替代品。它与 NVIDIA 的关系是“部分竞争、部分补充”：定制 XPU 抢占特定训练/推理工作负载；Tomahawk/Jericho/光互联又能服务使用 NVIDIA、AMD 或自研 XPU 的集群。
+
+### 1.3 最近三年的重大业务变动
+
+| 日期 | 变动 | 财务/战略影响 |
+|---|---|---|
+| 2023-11-22 | 完成 VMware 收购 | FY2025 10-K 列示总购买对价约 $86.3B，其中现金约 $30.8B、股票约 $53.4B；形成约 $54.2B goodwill 与 $45.6B 可辨认无形资产。Broadcom 从半导体公司变成软硬件双平台 |
+| 2024-07-01 | 将 VMware End-User Computing 出售给 KKR | 现金对价约 $3.5B，剥离非核心终端计算；保留并聚焦 VCF、vSphere/Tanzu、网络安全、主机和 FC SAN |
+| 2024–2025 | VMware 从永久许可/单品转向订阅和 VCF 套件 | 提高 ARR、TCV 和分部利润率；同时造成渠道退出、客户迁移和监管风险 |
+| 2025-06 至 2026-03 | Tomahawk 6 从样片进入 102.4Tbps 量产 | 2026-03 Broadcom 宣布生产量出货，成为 800G/1.6T AI Fabric 的关键交换 ASIC |
+| 2025-08 | 第四名 XPU 客户完成 qualification 并下达超过 $10B 的 XPU 机架订单 | 从“三大 hyperscaler”扩展到更多 frontier-model 客户；收入自 FY2026 H2 起爬坡 |
+| 2025-10 | OpenAI 与 Broadcom 公布 10GW 定制加速器及全以太网机架合作 | 2026 H2 开始部署、目标 2029 年底完成，确立 Broadcom 在 OpenAI 自研芯片中的实现与网络角色 |
+| 2025-11/12 | AI backlog 升至超过 $73B，AI switch backlog 超过 $10B | 订单覆盖 XPU、switch、DSP 和 laser，预期约 18 个月交付；不是全部可无条件确认的 GAAP 收入 |
+| 2026-04 | 与 Google 签署未来多代 TPU 长期协议和网络供应保障，最长至 2031；Anthropic 获约 3.5GW 扩展容量 | 把 Google TPU 和相关网络的可见度延伸到 2031；Anthropic 消费量仍以其商业成功为条件 |
+| 2026-04 | Meta 公布多代 2nm MTIA 合作 | 初始超过 1GW，Broadcom 负责硅实现、先进封装和端到端网络，预计 2027 H2 明显出货 |
+| 2026-06 | Apollo、Blackstone 与 Broadcom 建立 AI XPU Platform | 计划支持 2028 年前超过 20GW；首批融资约 $35B、超过 1GW；Broadcom 同时承担最高 $29B 的五年客户租赁 backstop |
+| 2026-06-24 | OpenAI/Broadcom 发布 Jalapeño 推理芯片 | 工程样片达到生产频率和功耗目标；计划 2026 年底初始部署，证明 OpenAI 项目已从意向转为实物验证 |
+| 2026-07-08 | Apple 宣布超过 $30B 多年美国芯片协议 | 生产超过 15B 颗美国制造芯片；Broadcom 在 Fort Collins 投资 $1.5B，覆盖 FBAR 和先进无线连接，稳住非 AI 现金流 |
+
+来源：[FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm)、[Google/Anthropic 8-K](https://investors.broadcom.com/static-files/c906d370-921b-4bc2-bb7b-57877dfcf1ae)、[OpenAI 10GW 公告](https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/)、[OpenAI Jalapeño 公告](https://openai.com/index/openai-broadcom-jalapeno-inference-chip/)、[AI XPU Platform](https://investors.broadcom.com/news-releases/news-release-details/broadcom-apollo-and-blackstone-establish-landmark-strategic)、[Meta 公告](https://www.broadcom.com/company/news/product-releases/64236)、[Apple 公告](https://www.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/)。
+
+### 1.4 产业链位置
+
+Broadcom 的关键价值不是单一芯片，而是位于“客户体系结构”和“可量产 AI 系统”之间：
+
+1. Google、OpenAI、Meta 等客户定义模型、软件、芯片体系结构与目标 TCO。
+2. Broadcom 提供芯片实现、先进 SerDes、接口 IP、物理设计、验证、封装协同、供应链保障以及 scale-up/scale-out 网络。
+3. TSMC 负责约 95% 的外包晶圆；HBM 由存储厂商供给；CoWoS/3.5D、ABF、测试与板卡构成量产约束。
+4. Celestica、Accton、Arista、Nokia、UfiSpace 等系统/网络伙伴把硅转化为板卡、交换机、路由器和机架。
+5. hyperscaler、模型公司和融资伙伴最终部署数据中心、电力、冷却及租赁容量。
+
+这种位置带来两种护城河。第一，定制 XPU 的切换需要重新验证芯片、封装、HBM、软件和良率，通常为 18–36 个月并消耗数亿美元 NRE。第二，Broadcom 可以对同一客户进行“XPU + switch + NIC/PHY + optical + PCIe”的多层销售，单客户内容量随网络复杂度提高而增加。
+
+## 二、股价、估值与资产负债表
+
+### 2.1 最新市场与财务快照
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | $399.97 | 2026-07-10 收盘 | 盘后约 $400.40 |
+| 市值 | $1.902T | 2026-07-10 | 约 4.76B 股流通 |
+| 企业价值 | 约 $1.95T | 2026-07-11 数据更新 | 含净债务 |
+| TTM PE | 66.57x | 2026-07-11 | 基于 TTM GAAP EPS $6.01 |
+| Forward PE | 25.40x | 2026-07-11 | 市场一致预期，非公司指引 |
+| TTM PS | 25.22x | 2026-07-11 | TTM 收入 $75.47B |
+| Forward PS | 13.42x | 2026-07-11 | 市场一致预期 |
+| TTM 收入增速 | +32.29% | 截至 FY2026 Q2 的 TTM | Q2 单季同比 +47.87% |
+| TTM 毛利率 | 76.28% | 截至 FY2026 Q2 | 数据商口径；包含软件高毛利结构 |
+| TTM 净利率 | 38.85% | 截至 FY2026 Q2 | TTM 净利润 $29.32B |
+| TTM 自由现金流 | $32.76B | 截至 FY2026 Q2 | FCF margin 43.41% |
+
+市场数据来源：[StockAnalysis，2026-07-11 更新](https://stockanalysis.com/stocks/avgo/statistics/)、[收入历史](https://stockanalysis.com/stocks/avgo/revenue/)、[CompaniesMarketCap，2026-07-10](https://companiesmarketcap.com/broadcom/marketcap/)。股价和估值随市场变化；forward 指标依赖分析师预测。
+
+**估值含义**：66.6x TTM PE 和 25.2x sales 已不是成熟半导体估值。市场实际上在支付 FY2027 超过 $100B AI 收入、软件保持约 79%分部经营利润率以及订单顺利兑现的预期。Forward PE 明显低于 TTM PE，反映一致预期把未来盈利增速放得很高；若 AI 增长只达到普通周期股水平，PS 倍数压缩会比 EPS 下修更具杀伤力。
+
+### 2.2 资产负债表
+
+| 项目 | 2026-05-03 | 判断 |
+|---|---:|---|
+| 现金及等价物 | $19.628B | 流动性充足 |
+| 应收账款 | $10.830B | 随 AI 规模上升；需观察账期与客户融资 |
+| 存货 | $4.328B | 较 2025-11-02 的 $2.270B 增加 91%；成品从 $0.682B 升至 $1.858B |
+| 流动资产 / 流动负债 | $42.213B / $18.862B | 流动比率 2.24x，短期偿付能力强 |
+| 短期债务 / 长期债务账面值 | $2.252B / $62.655B | 债务期限分散；贷款本金合计约 $66.7B |
+| 净债务 | 约 $45.3B | 约为 TTM FCF 的 1.38 倍 |
+| Debt/EBITDA | 1.54x | 现金流覆盖良好 |
+| 利息保障倍数 | 10.6x | 传统偿债压力低 |
+| goodwill | $97.801B | VMware 等并购形成 |
+| 无形资产 | $28.333B | 需持续摊销并有减值风险 |
+| goodwill + 无形资产 / 总资产 | $126.134B / $179.158B = 70.4% | 资产质量明显弱于账面权益表象 |
+| 股东权益 | $87.691B | 扣除 goodwill 和无形资产后，有形权益约 -$38.4B |
+| FY2027–FY2028 不可撤销采购承诺 | $55.214B + $72.870B = $128.084B | 主要为库存/供应；不是债务，但若需求延迟会转化为现金和存货风险 |
+| AI 机架租赁 backstop 最大敞口 | $29B | 五年期限；客户违约时可接管或出售机架，但残值和再部署并非无风险 |
+
+来源：[FY2026 Q2 10-Q](https://www.sec.gov/Archives/edgar/data/1730168/000173016826000054/avgo-20260503.htm)。
+
+**健康度评估**：
+
+- **好的一面**：TTM FCF $32.8B、净债务/FCF 仅约 1.4x、流动比率 2.24x、利息保障 10.6x，VMware 并购债务在经营现金流下可控。Q2 单季 FCF $10.262B，足以支持分红、回购和偿债。
+- **需要降级看待的一面**：有形权益为负；存货半年接近翻倍；FY2027–FY2028 采购承诺 $128.1B 是现金 $19.6B 的 6.5 倍；$29B backstop 把客户信用/算力租赁风险部分带回 Broadcom。它们不应与银行借款简单相加，但在压力测试中必须视为“经营性准债务”。
+- **结论**：传统财务报表下健康；加入供应承诺和客户融资后，Broadcom 已从轻资产 fabless 模式部分转向“以长期合同和资产融资保障 AI 交付”的模式。只要客户消耗、供电和部署按计划发生，这种锁产能会放大利润；若项目延后，则会放大存货、预付款和租赁残值风险。
+
+## 三、最新及最近四次财报：五季度纵向分析
+
+### 3.1 收入、利润与 AI 结构
+
+| 财报季度 | 总收入 / 同比 | 半导体收入 / 同比 | 软件收入 / 同比 | AI 半导体收入 / 同比 | AI 占总收入 / 半导体 | AI networking / XPU 估计 | 非 AI 半导体 | GAAP 净利润 | FCF / 调整后 EBITDA |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| FY2025 Q2（2025-05-04） | $15.004B / +20% | $8.408B / +17% | $6.596B / +25% | >$4.4B / +46% | 29.3% / 52.3% | 网络约 $1.76B；XPU 约 $2.64B | 约 $4.01B，约 -5% | $4.965B | $6.411B / $10.001B |
+| FY2025 Q3（2025-08-03） | $15.952B / +22% | $9.166B / +26% | $6.786B / +17% | $5.2B / +63% | 32.6% / 56.7% | 未披露；模型：网络 $1.8–2.1B、XPU $3.1–3.4B | $3.966B | $4.140B | $7.024B / $10.702B |
+| FY2025 Q4（2025-11-02） | $18.015B / +28% | $11.072B / +35% | $6.943B / +19% | 约 $6.5B / +74% | 36.1% / 58.7% | 未披露；模型：网络 $2.0–2.3B、XPU $4.2–4.5B | 约 $4.57B / +2% | $8.518B | $7.466B / $12.218B |
+| FY2026 Q1（2026-02-01） | $19.311B / +29% | $12.515B / +52% | $6.796B / +1% | $8.4B / +106% | 43.5% / 67.1% | 网络约 $2.8B；XPU 约 $5.6B | 约 $4.12B / 近持平 | $7.349B | $8.010B / $13.128B |
+| FY2026 Q2（2026-05-03） | $22.187B / +48% | $15.009B / +79% | $7.178B / +9% | $10.8B / +143% | 48.7% / 72.0% | 网络约 $4.2–4.3B；XPU 约 $6.5B | 约 $4.21B / +6% | $9.310B | $10.262B / $15.244B |
+
+注：
+
+- FY2025 Q2 公司称网络约占 AI 收入 40%；FY2026 Q1 为约三分之一；FY2026 Q2 为“接近 40%”。XPU 是 AI 总额减网络的残差，Broadcom 没有正式单列。
+- FY2025 Q3/Q4 网络与 XPU 拆分采用 35%–40%及 30%–35%网络占比的行业/趋势模型，只用于防止把全部 AI 收入误称为 ASIC。
+- GAAP 净利润 Q4 FY2025 含一项约 $2.1B 非现金税务收益，不能直接外推。
+- 数据来自各季度 Broadcom 财报：[Q2 FY2025](https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2025-financial)、[Q3 FY2025](https://www.broadcom.com/company/news/financial-releases/63416)、[Q4 FY2025](https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-fourth-quarter-and-fiscal-year-2025)、[Q1 FY2026](https://www.broadcom.com/company/news/financial-releases/63976)、[Q2 FY2026](https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial)。
+
+### 3.2 分部利润率
+
+公司不披露 XPU、switch、optics 等产品线利润率；下表采用 SEC 分部 operating income / segment revenue。Q4 FY2025 利润是 FY2025 全年减去前三季度的可审计推算。
+
+| 财报季度 | 半导体分部经营利润率 | 软件分部经营利润率 | 观察 |
+|---|---:|---:|---|
+| FY2025 Q2 | 57.2% | 75.6% | AI 增长但软件仍提供更高利润率 |
+| FY2025 Q3 | 56.9% | 77.2% | VCF 合同收入与订阅化推动软件杠杆 |
+| FY2025 Q4 | 58.7%（全年减前三季推算） | 78.0%（同法推算） | AI、无线季节性和软件组合改善 |
+| FY2026 Q1 | 60.0%（半年数据减 Q2 推算） | 78.3%（同法推算） | 半导体规模效应开始明显 |
+| FY2026 Q2 | 61.8% | 78.7% | 半导体收入 +79%，经营费用增速远低于收入 |
+
+Q2 FY2026 非 GAAP 口径下，半导体 gross margin 约 70%、软件 gross margin 约 93%、合并 gross margin 77.1%。Q3 指引合并 gross margin 约 74%，主要是较低毛利的 XPU 占比上升，而非单个半导体产品突然降价。SEC 分部数据来源：[Q3 FY2025 10-Q](https://www.sec.gov/Archives/edgar/data/1730168/000173016825000098/avgo-20250803.htm)、[FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm)、[Q2 FY2026 10-Q](https://www.sec.gov/Archives/edgar/data/1730168/000173016826000054/avgo-20260503.htm)。
+
+### 3.3 订单、积压、book-to-bill、交期与取消
+
+| 财报季度 | Backlog / RPO / Bookings | 可计算 B2B | 交期与取消信息 | 含义 |
+|---|---|---:|---|---|
+| FY2025 Q2 | 未给统一 backlog；AI 收入 >$4.4B；软件继续签多年 VCF | 不可算 | 公司未披露标准 lead time 或取消率 | AI 需求已强，但证据主要是收入和下季 AI 指引 $5.1B |
+| FY2025 Q3 | 公司 consolidated backlog 达 $110B；一名新 XPU 客户完成 qualification，并下达 >$10B 生产订单 | 不可算 | 电话会问题提到约 40 周 lead time，但公司未把它确认为统一口径；取消率未披露 | 订单首次从传统三客户扩展，预计 FY2026 H2 开始出货 |
+| FY2025 Q4 | 总 backlog $162B；AI backlog >$73B、约 18 个月交付；其中 AI switch backlog >$10B；软件 backlog $73B；软件 TCV bookings $10.4B | 无统一 shipments/bookings 分母 | 订单含 XPU、switch、DSP、laser；公司明确提示 $73B 不等于同额 18 个月收入 | 网络供不应求从叙事变成 >$10B 订单池 |
+| FY2026 Q1 | 软件 TCV bookings >$9.2B；公司称已保障至 2028 的关键部件能力 | AI 未披露 | 订单提前，正式取消率仍未披露 | 供应保障开始与多客户 2027 爬坡绑定 |
+| FY2026 Q2 | AI bookings >$30B，对应 AI shipments $10.8B；非 AI 半导体 bookings >$6B、收入约 $4.2B；RPO $164.6B，其中约 30%预计未来 12 个月确认 | AI proxy >2.78x；非 AI proxy >1.43x | AI 可见度延伸至 2028；精确 lead time/取消率未披露 | 最强需求证据，但 bookings、backlog、RPO 三者定义不同，不能相加 |
+
+#### 四种口径必须分开
+
+1. **Bookings**：当季接单；Q2 FY2026 的 >$30B 对 $10.8B 只能称“当季 bookings/shipments proxy”，不是公司标准化 B2B 指标。
+2. **Backlog**：尚未交付订单；Q4 FY2025 的 $73B AI backlog 包含 XPU、switch、DSP 和 laser，其中部分机架金额可能不由 Broadcom 全额确认。
+3. **RPO**：符合会计定义的剩余履约义务。2026-05-03 为 $164.6B，约 30%即约 $49.4B 预计在未来 12 个月确认；它排除可随意终止且客户尚未承诺的合同，也排除部分期限不超过一年的安排。
+4. **采购承诺**：Broadcom 对供应商的不可撤销义务；FY2027 和 FY2028 合计 $128.1B，是供给保障，不是客户收入。
+
+取消率没有正式披露。软件合同负债中存在 termination-for-convenience 条款，公司称客户通常不行使；AI XPU 合同的取消权更依客户逐项协议。后文情景模型采用 2%–10%延期/取消假设，均为研究假设而非公司事实。
+
+## 四、FY2026 最新指引、收入占比与突出业务
+
+### 4.1 FY2026 Q3 指引
+
+| 指标 | Q3 FY2026 指引 | 同比 | 占指引收入 |
+|---|---:|---:|---:|
+| 总收入 | 约 $29.4B | +84% | 100% |
+| 半导体 | 约 $20.5B | +124% | 69.7% |
+| AI 半导体 | 约 $16.0B | 超过 +200% | 54.4% |
+| 非 AI 半导体 | 约 $4.5B | +12% | 15.3% |
+| 基础设施软件 | 约 $8.9B | +31% | 30.3% |
+| 非 GAAP gross margin | 约 74% | 低于 Q2 的 77.1% | XPU 占比提高导致组合变化 |
+| 非 GAAP operating margin | 约 67% | 公司指引 | 规模效应抵消 gross-margin mix |
+| Adjusted EBITDA margin | 约 68% | 公司指引 | 仍为极高水平 |
+
+**最突出业务**显然是 AI 半导体：从 Q2 的 $10.8B 跳至 Q3 指引 $16B，单季环比约 +48%，且将超过总收入一半。公司同时把 FY2026 AI 收入指引维持在 $56B、同比约 +180%，FY2027 指引为超过 $100B。H1 FY2026 已实现约 $19.2B，Q3 指引 $16B，因此为达到 $56B，Q4 隐含约 $20.8B；H2 约 $36.8B，接近 H1 的 1.9 倍。
+
+软件并非低增长废料：Q3 指引 $8.9B、同比 +31%，比 Q2 明显加速，VCF 多年许可/订阅确认和 ARR 是第二利润支柱。非 AI 半导体虽仅 +12%，Apple 新的 >$30B 协议使其具有现金流和客户关系价值。
+
+### 4.2 重点产品、型号、状态与经济性
+
+| 业务 | 重点产品/项目 | 2026-07 状态 | 收入/增长交叉验证 | 估计毛利率 | 判断 |
+|---|---|---|---|---:|---|
+| 定制 AI XPU | Google TPU 当前及未来多代；OpenAI Jalapeño；Meta 2nm MTIA；两名其他客户 | Google 长约最长至 2031；Jalapeño 工程样片、2026 年底初部署；Meta 初始 >1GW、2027 H2 爬坡；另两客户已有约 $6B PO | Q2 XPU 残差约 $6.5B；Q3 AI 总额 $16B；FY2027 AI >$100B | 50%–68%行业模型 | 最大收入驱动；毛利低于纯网络硅，但绝对利润和锁定周期巨大 |
+| 先进封装/实现平台 | 2nm 3.5D XDSiP、face-to-face chiplet、SerDes/IP/NRE | 已为 Fujitsu 交付首批 2nm 3.5D compute SoC；更广 XPU 客户预计 2026 H2 出货 | 单独收入不披露，嵌入 XPU ASP/NRE；决定 HBM4/大芯粒良率 | 嵌入 XPU；IP/NRE 部分可高于 70% | 容易被忽略但战略性极高的小业务；是 Broadcom 从“设计服务”升级为系统实现平台的关键 |
+| Scale-out Ethernet | Tomahawk 6 BCM78910（102.4T、200G SerDes）、Tomahawk 5；Jericho4（3.2T HyperPort、100km+） | TH6 2026-03 已生产量出货；Jericho4 于 2025-08 客户 sampling，生态伙伴已公开设计采用 | Q4 FY2025 AI switch backlog >$10B；Q2 FY2026 AI 网络约 $4.3B | 70%–80%模型 | 商用交换 ASIC 龙头；GPU/XPU 均可受益 |
+| Scale-up Ethernet | Tomahawk Ultra BCM78920（51.2T、约 250ns）、开放 SUE/UEC 方案 | 2025-07 开始出货；2026 为早期商用，2027 多客户规模化 | 网络占 AI 收入由 Q1 约 33%升至 Q2 接近 40% | 68%–78%模型 | 直接挑战 NVLink 域；开放生态是优点，软件/集体通信成熟度是短板 |
+| AI NIC/PHY/PCIe | Thor Ultra 800G NIC、200G SerDes、PHY、PCIe 6/CXL switch 与 retimer | Thor Ultra 2025-10 发布；与 switch/开放 scale-up 一起认证 | 未单列，计入约 $4.3B Q2 AI 网络；每 XPU 连接数提高形成内容量 | 60%–75%模型 | 单项小但“每 GPU/XPU 必需”，有跨平台潜力 |
+| 光 DSP/激光器 | Taurus BCM83640，400G/lane、1.6T 8:4 DSP、集成 laser driver；CW/EML 激光器 | 2026-03 可用；服务 1.6T/3.2T 链路 | Q4 $73B AI backlog 明确包含 DSP 和 laser；收入未单列 | 60%–75%模型 | 高速率升级直接提高每端口 ASP；Marvell/Inphi 是强敌 |
+| CPO | Tomahawk 6-Davisson，102.4T、16×6.4T optical engine、可更换 ELSFP | early-access sampling；未证明多客户大规模生产 | 管理层称 CPO 收入何时显著仍难精确预测 | 45%–60%早期模型 | 潜力大但不是 2026 主收入；可靠性、维修、良率决定 2027–2028 |
+| 私有云/AI 软件 | VMware Cloud Foundation 9.1、vSphere、Tanzu、Avi、vDefend、Private AI | VCF 9.1 于 2026-05 发布，支持 NVIDIA/AMD/Intel 和生产推理/agentic AI | Q2 软件 $7.178B、+9%，ARR +17%；Q3 指引 $8.9B、+31% | 非 GAAP GM 约 93%；分部 OP margin 78.7% | 高利润现金流，不应把其全部收入贴成“AI”；AI 功能主要提升留存和客单价 |
+| Apple RF/无线 | FBAR filters、先进无线连接、定制芯片 | 2026-07 新签 >$30B 多年协议、>15B 颗美国制造芯片；Fort Collins capex $1.5B | 包含在非 AI 半导体；合同平均金额约 $2/颗只是总金额/数量的粗算，不能当作真实 ASP | 45%–60%模型 | 增长不如 AI，但稳定规模和制造壁垒重要；客户集中度仍高 |
+
+产品来源：[Tomahawk 6 量产](https://www.broadcom.com/company/news/product-releases/64031)、[Tomahawk Ultra](https://www.broadcom.com/company/news/product-releases/63341)、[Jericho4](https://investors.broadcom.com/news-releases/news-release-details/broadcom-ships-jericho4-enabling-distributed-ai-computing-across)、[Thor Ultra](https://www.broadcom.com/company/news/product-releases/63641)、[Taurus](https://www.broadcom.com/company/news/product-releases/64016)、[TH6-Davisson](https://www.broadcom.com/company/news/product-releases/63626)、[3.5D XDSiP](https://www.broadcom.com/company/news/product-releases/63946)、[VCF 9.1](https://www.broadcom.com/company/news/product-releases/64326)。
+
+### 4.3 可跳过的低增长/非 AI 产品，以及不应漏掉的小业务
+
+**本报告不做深度预测但列明的业务**：
+
+- 传统 broadband：机顶盒 SoC、PON/Cable、家庭网关；Wi-Fi 8/50G PON 有 edge-AI 叙事，但目前不是核心 AI 收入。
+- 传统 storage：HDD/SSD 控制器、SAS/SATA、非 AI FC HBA；FC SAN 的利润并入软件分部但增长不是本报告主线。
+- industrial：光耦、编码器、传感器、工控连接；稳定但规模和增速不突出。
+- 传统 enterprise switching/routing 和 service-provider ASIC：技术可复用到 AI，但无法从公司披露中拆出增量 AI 收入。
+- 主机软件、Symantec/Carbon Black、传统应用管理：高利润但与 AI 基建的直接内容量弱。
+- 手机触控、感应充电、普通 Wi-Fi/Bluetooth：除 Apple 新协议外，不做产品级预测。
+
+**不能漏掉的潜力小业务**：
+
+- 2nm 3.5D face-to-face XDSiP：当前单列收入小，却可能解决 2nm 大芯片、HBM4 和 chiplet 互连的上限。
+- Taurus 400G/lane DSP 与自有 EML/CW laser：从 800G 到 1.6T/3.2T，每端口硅价值提升。
+- TH6-Davisson CPO：2026 仍是验证期，但若 224G/400G 电接口功耗失控，2027–2028 可从可选项变成必需。
+- Thor Ultra 800G NIC、PCIe 6/CXL switch/retimer：在 GPU、XPU、存储和主机之间都能销售，不依赖单一计算架构。
+- 开放 scale-up Ethernet：目前收入小于 scale-out，但若 SUE/UEC/OCI MSA 成为多供应商标准，Broadcom 可把交换硅优势延伸进机架内。
+- Tanzu/VCF 9.1 的私有推理与 agent 平台：不是 AI 芯片收入，却可能降低 VMware 客户迁移率并抬升软件 ARR。
+
+### 4.4 过去半年论坛、会议与技术验证信号
+
+| 日期/场合 | 技术/产业信号 | 对 Broadcom 的验证 | 仍未解决的问题 |
+|---|---|---|---|
+| 2026-03，OFC 2026 | 400G/lane DSP、1.6T/3.2T 光链路、CPO 和可替换外置激光成为核心议题 | Taurus BCM83640、TH6-Davisson、EML/CW laser 与产业升级方向一致 | 400G/lane 模块良率、CPO 现场维修与多客户量产数据不足 |
+| 2026-03，Tomahawk 6 production-volume 发布 | 102.4T、200G SerDes 从样片阶段进入生产量出货 | 证明 TH6 不是只停留在 roadmap；Q4 switch backlog >$10B 有实物承接 | switch silicon 量产不代表 1.6T optics 和整机均无瓶颈 |
+| 2026-03，Optical Scale-up Consortium | AMD、Broadcom、Meta、Microsoft、NVIDIA、OpenAI 等推动开放 optical scale-up 规范 | Broadcom 有机会把 switch/SerDes/optics 组合扩展到机架内 | 联盟成立与规范发布不等于互操作、collective software 和生产认证完成 |
+| 2026-04，Google/Anthropic 与 Meta 协议 | 客户从季度采购转向多代、多 GW、最长至 2031 的供应保障 | 验证定制 XPU、先进封装和端到端网络的长期需求 | Anthropic 消费量有商业成功条件；Google 和 Meta 均有多供/自研能力 |
+| 2026-05，VCF 9.1 | 私有云开始把推理、agent、Kubernetes 与硬件选择整合成正式产品 | 软件可用 AI 功能提高套件价值和续约黏性 | 公司没有拆分“AI 软件收入”，客户价格/捆绑争议仍在 |
+| 2026-06，OpenAI Jalapeño 实物发布 | 工程样片已达到生产频率和功耗目标，进入系统化和量产验证 | 将 2025 年 10GW 合作从意向推进到 silicon evidence | 尚缺大规模生产良率、持续负载可靠性和实际 token/$ 数据 |
+| 2026 上半年，Broadcom/Meta CPO 实验数据 | 公司披露累计约 1M 个 400G-equivalent port-device-hours、零 link flap，光学功耗较可插拔方案低约 65% | 为 CPO 可靠性和功耗提供早期证据 | 属厂商/合作方实验口径，不是多云客户独立现场认证 |
+
+以上会议/实验信息主要用于判断“技术是否从 roadmap 进入验证/生产”，不据此单独增加收入。OFC/OCP 演示、联盟规范和实验室 port-hours 的证据等级低于已出货收入、不可撤销 PO 和 SEC RPO。
+
+## 五、关键产品当前贡献、增速与战略评分
+
+评分均为 1–5，5 代表最重要、最紧急、最紧张或最强。收入为 Broadcom 口径；子产品标有“网络子集”或“XPU 子集”的项目不可再次加总。
+
+| 关键产品/业务 | 当前收入贡献 | 当前增速 | AI 技术栈重要性 | 时间紧急性 | 供需紧张度 | 垄断/控制力 | 溢价能力 | 证据与解释 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| 定制 XPU 平台 | Q2 约 $6.5B；年化 run-rate 约 $25.9B | 约 +145%同比推算 | 5.0 | 5.0 | 5.0 | 4.5 | 4.0 | Google 多代 TPU、OpenAI、Meta 及其他客户同时爬坡；转换实现伙伴需重新流片、封装与软件验证 |
+| AI Ethernet 总体 | Q2 约 $4.2–4.3B；年化约 $17.3B | Q1 +60%；Q2 模型约 +140% | 5.0 | 5.0 | 4.5 | 4.5 | 4.5 | Q4 FY2025 switch backlog >$10B；网络既绑定 Broadcom XPU，也服务 GPU/其他 XPU |
+| 交换/路由核心硅 | Q2 约 $2.4–3.1B，属于 AI Ethernet 子集 | 约 +90%至 +160%模型 | 5.0 | 5.0 | 4.5 | 4.5 | 4.5 | TH6 102.4T 首发量产；Jericho4 和 TH Ultra 补齐 scale-across/scale-up |
+| NIC/PHY/PCIe/CXL | Q2 约 $0.7–1.1B，网络子集 | +50%至 +120%模型 | 4.5 | 4.5 | 4.0 | 3.5 | 3.5 | 每个 accelerator 都需要端点和 I/O；竞争比交换 ASIC 更分散 |
+| 光 DSP/laser | Q2 约 $0.5–0.9B，网络子集 | +60%至 +140%模型 | 4.5 | 4.5 | 4.0 | 3.5 | 4.0 | 1.6T、400G/lane 推高价值；Q4 backlog 明确包含 DSP/laser |
+| CPO/optical engine | Q2 估计低于 $0.2B，网络子集 | 基数小，可能 >+100% | 3.5（2026）/5.0（2028） | 3.5 | 3.0 | 3.5 | 3.5 | Davisson 仍是 early access；CPO 的必要性取决于功耗和可维修性 |
+| 3.5D XDSiP/先进封装 IP | 无独立收入；嵌入 XPU，研究估计 Q2 支持价值 $0.3–0.8B | 可能 >+100% | 4.5 | 4.5 | 4.5 | 4.0 | 4.0 | 首个 2nm 3.5D 客户已出货；HBM4 和大芯粒使其价值上升 |
+| Infrastructure Software/VCF | Q2 $7.178B；年化 $28.7B | 收入 +9%，ARR +17%；Q3 指引 +31% | 2.5（物理基建）/4.0（企业私有 AI） | 3.0 | 1.5 | 4.0 | 4.5 | 迁移成本高、分部 OP margin 78.7%，但监管和客户反弹强 |
+| Apple RF/无线 | 未披露；研究估计年收入 $5–8B，属于非 AI 半导体 | 近期低个位至低双位数 | 1.0 | 2.5 | 2.5 | 4.0 | 3.5 | 新协议 >$30B、>15B 颗；FBAR 有工艺壁垒，但客户集中和 Apple 自研风险高 |
+
+### 5.1 为什么 XPU 与网络都重要
+
+Q2 的 AI 网络占比接近 40%，是阶段高点；管理层认为随着 XPU 放量，长期更可能回到约 30%。这不意味着网络收入下降，而是 XPU 增长更快。例如，若 FY2027 AI 收入为 $105B、网络占 30%，网络仍是约 $31.5B，比 Q2 年化 $17.3B 增长约 82%。
+
+Broadcom 的独特优势在于双重捕获：
+
+- 自研 XPU 客户：收取 XPU 实现/芯片价值，同时销售 scale-up、scale-out、PCIe 和光互联。
+- NVIDIA/AMD GPU 客户：即使不买 Broadcom XPU，也可能买 Tomahawk/Jericho、NIC、PHY、DSP 或 CPO。
+
+因此，不能把 Broadcom 的 AI 论点简化成“Google TPU 代工”，也不能把 $10.8B 全部算成 ASIC。
+
+## 六、未来一年三情景：收入、增速与竞争力
+
+### 6.1 产品级预测
+
+预测以 Q2 FY2026 年化 run-rate 为比较基准，而不是把低基数 FY2025 当基数。重要性等评分表示未来 12 个月的情景状态。XPU、AI Ethernet、软件和非 AI 半导体可用于公司加总；光/PCIe/CPO/3.5D/Apple 均为相应母业务的子集。
+
+| 产品/业务 | 情景 | 未来 12 个月收入 | 对当前 run-rate 增速 | 重要性 | 紧急性 | 供需紧张度 | 垄断/溢价 | 关键假设 |
+|---|---|---:|---:|---:|---:|---:|---|---|
+| 定制 XPU | 基准 | $55–65B | +112%至 +151% | 5.0 | 5.0 | 4.5 | 4.5/4.0 | FY2026 Q4 隐含加速，Google/Anthropic 和 OpenAI 先行；Meta 主要在期末贡献 |
+| 定制 XPU | 乐观 | $68–80B | +163%至 +209% | 5.0 | 5.0 | 5.0 | 4.5/4.2 | 10GW 计划按时、更多供电提前、两个新增客户 PO 快速转收入 |
+| 定制 XPU | 极度乐观 | $82–100B | +217%至 +287% | 5.0 | 5.0 | 5.0 | 4.8/4.5 | 2027 H1 已接近管理层 FY2027 后半年的出货速度，HBM4/封装无重大瓶颈 |
+| AI Ethernet 总体 | 基准 | $27–32B | +56%至 +85% | 5.0 | 5.0 | 4.5 | 4.5/4.5 | 网络占 AI 约 30%–35%；TH6 量产、1.6T 光链路正常爬坡 |
+| AI Ethernet 总体 | 乐观 | $33–40B | +91%至 +131% | 5.0 | 5.0 | 5.0 | 4.6/4.7 | Broadcom 同时赢得 XPU 与 GPU fabric，开放 scale-up 提前放量 |
+| AI Ethernet 总体 | 极度乐观 | $42–50B | +143%至 +189% | 5.0 | 5.0 | 5.0 | 4.8/4.8 | 102.4T/1.6T 成为 hyperscaler 标配，竞争对手供给或软件成熟度落后 |
+| NIC/PHY/PCIe/CXL（网络子集） | 基准 | $5–7B | 约 +35%至 +75% | 4.5 | 4.5 | 4.0 | 3.5/3.5 | 每 XPU 端口数稳定、Thor Ultra 和 PCIe 6 开始量产 |
+| NIC/PHY/PCIe/CXL（网络子集） | 乐观 | $7–10B | +75%至 +150% | 4.5 | 5.0 | 4.5 | 3.8/3.8 | 800G NIC 与开放 scale-up 获多客户采用 |
+| NIC/PHY/PCIe/CXL（网络子集） | 极度乐观 | $10–14B | +150%至 +250% | 5.0 | 5.0 | 5.0 | 4.0/4.2 | 端点、retimer、switch 全套绑定，铜互联距离瓶颈推高 retimer 数量 |
+| 光 DSP/laser（网络子集） | 基准 | $4–6B | +35%至 +100% | 4.5 | 4.5 | 4.0 | 3.5/4.0 | 1.6T 从资格验证转为批量，400G/lane 小规模 |
+| 光 DSP/laser（网络子集） | 乐观 | $6–9B | +100%至 +200% | 4.8 | 5.0 | 4.5 | 3.8/4.2 | Taurus、EML/CW laser 同时赢单，DSP ASP 上升 |
+| 光 DSP/laser（网络子集） | 极度乐观 | $9–13B | +200%至 +330% | 5.0 | 5.0 | 5.0 | 4.2/4.5 | 1.6T 供不应求并提前切换 3.2T，Broadcom 获得高捆绑率 |
+| CPO（网络子集） | 基准 | $0.8–1.8B | 基数小 | 3.5 | 3.5 | 3.5 | 3.5/3.5 | Davisson 完成 1–2 个客户现场验证，仍以 pluggable 为主 |
+| CPO（网络子集） | 乐观 | $2–4B | 基数小 | 4.5 | 4.5 | 4.0 | 4.0/4.0 | 102.4T 交换功耗迫使部分新集群采用 CPO |
+| CPO（网络子集） | 极度乐观 | $4–7B | 基数小 | 5.0 | 5.0 | 4.5 | 4.2/4.5 | 可维修 ELS、良率和现场可靠性均通过，CPO 成为 200G/lane 主流 |
+| 3.5D XDSiP（XPU 子集） | 基准 | 支持 $8–15B XPU 收入 | 不单列 | 4.5 | 4.5 | 4.5 | 4.0/4.0 | Fujitsu 后扩展到 1–2 名 XPU 客户 |
+| 3.5D XDSiP（XPU 子集） | 乐观 | 支持 $15–25B XPU 收入 | 不单列 | 5.0 | 5.0 | 5.0 | 4.2/4.2 | 2nm/HBM4 设计大量采用 face-to-face |
+| 3.5D XDSiP（XPU 子集） | 极度乐观 | 支持 $25–40B XPU 收入 | 不单列 | 5.0 | 5.0 | 5.0 | 4.5/4.5 | 成为 Broadcom 大型 XPU 的默认封装平台 |
+| Infrastructure Software | 基准 | $34–38B | +18%至 +32% | 3.5 | 3.0 | 1.5 | 4.0/4.5 | Q3 $8.9B 指引兑现，ARR 持续中双位增长 |
+| Infrastructure Software | 乐观 | $39–43B | +36%至 +50% | 3.8 | 3.5 | 2.0 | 4.2/4.7 | 多年 VCF 合同提前确认、私有 AI 提高核心数与套件渗透 |
+| Infrastructure Software | 极度乐观 | $44–49B | +53%至 +71% | 4.0 | 4.0 | 2.0 | 4.5/4.8 | 大客户续约无流失，监管不改变 bundling，VCF AI 需求爆发 |
+| Apple RF/无线（非 AI 子集） | 基准 | $4.5–7B | 约 0%至 +15% | 1.0 | 2.5 | 2.5 | 4.0/3.5 | >$30B 多年合同按常规 5–7 年摊开，手机需求平稳 |
+| Apple RF/无线（非 AI 子集） | 乐观 | $7–9B | +15%至 +35% | 1.0 | 3.0 | 3.0 | 4.2/3.8 | Broadcom 获更多定制连接内容、美国制造溢价 |
+| Apple RF/无线（非 AI 子集） | 极度乐观 | $9–12B | +35%至 +70% | 1.0 | 3.5 | 3.5 | 4.5/4.0 | 新无线代际和多产品扩张使合同前置确认；概率较低 |
+
+### 6.2 公司级收入桥
+
+| 未来 12 个月 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| 定制 XPU | $55–65B | $68–80B | $82–100B |
+| AI Ethernet | $27–32B | $33–40B | $42–50B |
+| **AI 半导体合计** | **$82–97B** | **$101–120B** | **$124–150B** |
+| 非 AI 半导体 | $18–20B | $20–23B | $24–28B |
+| Infrastructure Software | $34–38B | $39–43B | $44–49B |
+| **公司总收入** | **$134–155B** | **$160–186B** | **$192–227B** |
+| 相对当前 TTM $75.47B | **+78%至 +105%** | **+112%至 +147%** | **+154%至 +201%** |
+
+这组结果看似激进，但 Q3 FY2026 单季指引已经是 $29.4B；FY2026 Q4 为满足 $56B AI 指引，AI 单季隐含约 $20.8B。基准情景相当于 Q3/Q4 FY2026 快速上台阶后，FY2027 H1 继续增但不立即达到 2027 年后半段的 10GW 峰值。极度乐观情景要求供电、融资、HBM、封装与客户验收全部提前，不能当作目标价模型的默认值。
+
+## 七、BOM、真实内容量与价格传导链
+
+Broadcom 不公开每颗 XPU 或每个端口 ASP。以下“真实内容量”由公司披露的产品结构、电话会每 GW 讨论以及本地行业 BOM 模型建立；它是可审计的工程估算，不是报价单。必须区分：
+
+- **系统 BOM**：客户购买完整 XPU、HBM、封装、板卡、光模块和机架的成本。
+- **Broadcom 可捕获内容**：Broadcom 可能确认的芯片、IP、网络和部分系统收入。
+- **平台融资金额**：包含机架、数据中心融资或租赁，不能全部算作 Broadcom 收入。
+
+### 7.1 定制 XPU：每颗、每 rack、每 MW
+
+#### 当前 3nm + HBM3E XPU 典型 BOM
+
+| BOM 项 | 单颗成本 | 占比 | Broadcom 收入关联 |
+|---|---:|---:|---|
+| 逻辑 compute/I/O KGD | $2.5–5.5K | 20%–30% | 包含 Broadcom 实现/IP 及 TSMC 晶圆价值 |
+| 144–216GB HBM3E | $1.2–3.2K | 18%–30% | 多数为存储厂商价值，但可进入 Broadcom 完整芯片采购成本/售价 |
+| CoWoS/先进封装 | $1.3–3.0K | 12%–20% | Broadcom 负责协同和供应保障，制造价值在封装商 |
+| 基板/TIM/被动件 | $0.6–1.5K | 6%–12% | 供应约束会传导至 ASP 和交付 |
+| wafer/package test、SLT | $0.5–1.3K | 4%–9% | 大芯片良率和 burn-in 关键 |
+| 板卡/NIC/attach 分摊 | $0.9–2.5K | 8%–15% | Broadcom 可额外捕获网络/PCIe |
+| NRE/IP 摊销 | $0.3–1.3K | 3%–8% | 毛利率高，但随出货量摊薄 |
+| 保修/返工/供应储备 | $0.5–1.5K | 4%–10% | 爬坡早期较高 |
+| **总制造 BOM** | **$8–18K** | **100%** | — |
+| **客户内部平台/采购价值** | **$14–30K/颗** | — | 最接近 Broadcom XPU 收入内容量的模型区间 |
+
+#### 下一代 2nm + 288GB HBM4 + 3.5D
+
+| BOM 项 | 单颗成本 |
+|---|---:|
+| 2nm compute/I/O die | $4.5–9.0K |
+| HBM4 | $3.0–6.5K |
+| 3.5D face-to-face/先进封装 | $2.5–6.0K |
+| 基板与机械/热设计 | $1.2–2.8K |
+| 测试与系统级验证 | $0.9–2.2K |
+| NRE/IP 摊销 | $0.6–2.5K |
+| 保修、良率与供应储备 | $0.8–2.0K |
+| **总 BOM** | **$15–32K** |
+| **平台采购价值** | **$25–50K+/颗** |
+
+#### 内容量换算
+
+假设 72 颗 XPU/rack、每颗平均 1.25–2.0kW 的 IT 功率，则约 500–800 颗 XPU/MW。
+
+| 单位 | 当前代内容量 | 下一代内容量 | 说明 |
+|---|---:|---:|---|
+| 每 XPU | $14–30K | $25–50K+ | XPU 平台采购价值，不等于纯裸 die ASP |
+| 每 72-XPU rack：XPU 部分 | $1.01–2.16M | $1.80–3.60M+ | 不含 CPU、内存、整机电源/冷却 |
+| 每 MW：XPU 部分 | $7–24M | $12.5–40M | 受每颗功率和配置影响 |
+| 每 GW：Broadcom 管理层历史讨论锚 | $15–20B | 可稳定或提高 | 电话会分析师引用的历史口径；项目差异大，不能机械乘以 10GW 当作当年收入 |
+
+管理层认可每 GW 内容量会随代际保持或上升，但 10GW × $15–20B = $150–200B 是平台/芯片内容上限锚，不等于 FY2027 会确认 $150–200B。10GW 在 2027 年后半段加速，且客户融资、机架和非 Broadcom 部件会造成口径差异。
+
+### 7.2 Scale-up 网络：每 rack、每 XPU、每 MW
+
+以 72-XPU 开放 scale-up rack 为例：
+
+| 网络 BOM 项 | 供应商发票价值/rack | Broadcom 可捕获比例模型 |
+|---|---:|---:|
+| XPU 端点 SerDes/接口 | $75–160K | 35%–70%，若 Broadcom XPU 则更高 |
+| 8–12 颗 switch ASIC | $100–230K | 50%–80% |
+| retimer/gearbox/clock | $80–190K | 25%–60% |
+| AEC/DAC/连接器 | $140–330K | 10%–35% |
+| switch board/tray | $150–320K | 低；主要由 ODM 捕获 |
+| 软件、测试、保修 | $60–140K | 10%–30% |
+| **总 scale-up 网络** | **$0.60–1.37M/rack** | **Broadcom 可捕获约 $0.25–0.65M/rack** |
+
+换算：
+
+- 每 XPU 的完整 scale-up 网络 BOM 为约 $8.3–19.0K；Broadcom 可捕获约 $3.5–9.0K。
+- 500–800 XPU/MW 时，完整网络 BOM 为约 $4.2–15.2M/MW；Broadcom 可捕获约 $1.8–7.2M/MW。
+- 如果是 Broadcom XPU + Broadcom switch/PHY/retimer 的高捆绑项目，内容量接近区间上端；如果是第三方 GPU 加竞争对手 NIC，则接近下端。
+
+### 7.3 Scale-out、NIC 与每 optical port
+
+典型 AI 节点使用 1–2 个高速 NIC，并通过 leaf/spine 多级网络形成约 1.5–3 个交换端口等价量。光模块按链路两端计费，不能把一条链路只算一个 module。
+
+| 内容单元 | 800G | 1.6T | Broadcom 可捕获内容 |
+|---|---:|---:|---|
+| 可插拔光模块 ASP | $280–420/端 | $750–1,150/端 | Broadcom 通常不确认整个模块 ASP |
+| DSP/gearbox/driver | $70–150 | $150–320 | Taurus 等直接内容 |
+| EML/CW laser/光器件 | $40–120 | $100–300 | 取决于 Broadcom 激光器渗透 |
+| switch ASIC 端口摊销 | $60–160 | $125–300 | TH5/TH6 端口价值 |
+| NIC/PHY endpoint | $180–500 | $300–800 | Thor/PHY/SerDes |
+| **Broadcom 每端口可捕获** | **约 $250–750** | **约 $575–1,700** | 若仅卖一种芯片则低于此范围；全套绑定才到上端 |
+
+按每 XPU 1–2 个 NIC、1.5–3 个交换端口等价和 2–4 个光模块端：
+
+- Broadcom scale-out 网络硅内容约 $0.6–2.0K/XPU。
+- 500–800 XPU/MW 对应约 $0.3–1.6M/MW。
+- 这部分低于 XPU 和 scale-up rack，但覆盖所有 GPU/XPU 架构，客户基数更宽。
+
+#### 每 GPU / 每 XPU 的 Broadcom 可捕获内容量对照
+
+| 计算节点类型 | Broadcom 计算内容/颗 | Broadcom scale-up 内容/颗 | Broadcom scale-out/光内容/颗 | Broadcom 合计/颗 | 72 节点 rack 合计 |
+|---|---:|---:|---:|---:|---:|
+| Broadcom 实现的定制 XPU | $14–30K | $3.5–9.0K | $0.6–2.0K | **$18.1–41.0K/XPU** | **$1.30–2.95M/rack** |
+| 第三方 GPU + 专有 scale-up（如主要使用 NVLink） | $0 | $0–1.0K | $0.3–2.0K | **$0.3–3.0K/GPU** | **$0.02–0.22M/rack** |
+| 第三方 GPU + 开放 Ethernet scale-up | $0 | $3.5–9.0K | $0.6–2.0K | **$4.1–11.0K/GPU** | **$0.30–0.79M/rack** |
+
+这里的“第三方 GPU”仅计算 Broadcom 网络/连接内容，不把 NVIDIA/AMD GPU 本体算给 Broadcom。第一行的 XPU 内容含平台采购价值，可能包含 HBM/封装的转售或成本传导；因此它高于 Broadcom 纯设计 IP 的净增加值。
+
+### 7.4 CPO：每 switch 与每端口
+
+TH6-Davisson 把 102.4Tbps switch 与 16 个 6.4T optical engine 共封装。基于同等级 102.4T CPO 架构的工程 BOM：
+
+| CPO BOM 项 | 单台 102.4T switch 模型 |
+|---|---:|
+| switch ASIC/package | 约 $12K |
+| 16 个 6.4T optical engine 等价 | 约 $30–36K |
+| fiber attach unit / ELS | 约 $9–12K |
+| optical shuffle、连接器、光纤 | 约 $18–24K |
+| PCB、电源、冷却、机箱、测试 | 约 $15–30K |
+| **完整 BOM** | **约 $75–110K** |
+| **系统售价模型** | **约 $120–180K** |
+| **每 1.6T 端口等价售价** | **约 $1.9–2.8K** |
+
+Broadcom 若同时出售 switch ASIC、optical engine、laser 与参考平台，可捕获 $60–130K/台；但 early-access 阶段的良率、返修和现场服务会压低毛利。CPO 的经济性只有在“省下的 pluggable 功耗/故障率”高于“共封装制造和维修成本”时成立。
+
+### 7.5 VCF 与 Apple：非物理 BOM 的内容量
+
+- **VCF**：按 core/socket/subscription 授权，无法诚实换算成每 GPU 或每 MW。其 AI 内容量是管理层、虚拟化、Kubernetes、网络安全和私有模型服务的年度合同价值；报告不把软件收入硬塞入机架 BOM。
+- **Apple**：> $30B / >15B 颗得到约 $2/颗的合同平均值，但合同包含多种 FBAR、无线/定制芯片、研发及不同年份的数量结构，因此约 $2 不是单一器件 ASP。真正价格传导取决于每台设备的滤波器数量、频段复杂度、良率和 Apple 的双供策略。
+
+### 7.6 价格传导链
+
+Broadcom AI 收入可概括为：
+
+**可上线 MW × 每 MW XPU 数 × 每 XPU 内容量 + optical ports × 每端口 Broadcom 内容 + NRE/IP/软件**。
+
+传导顺序为：
+
+1. 模型 token 需求和客户资本成本决定愿意采购的 GW。
+2. 电力、并网、数据中心和融资决定 GW 能否在目标季度上线。
+3. XPU 体系结构和功耗决定每 MW 芯片数、HBM 容量、网络 radix 及光端口数。
+4. Broadcom 用长期客户合同锁定需求，再以 TSMC/HBM/封装采购承诺锁定供给。
+5. N3/N2、HBM、CoWoS/3.5D、ABF 或 laser 紧张时，交期延长和 ASP 支撑增强；但 Broadcom 也承担不可撤销采购风险。
+6. XPU 占比升高会压低合并 gross margin；网络、光 DSP、IP 和软件占比升高会抬升 gross margin。
+
+因此，单看 XPU 颗数会低估 Broadcom 内容，单看 GW 又会把供电未完成或融资平台金额误算成收入。
+
+## 八、当前产能、供应链采用与认证阶段
+
+这里的“产能（美元计）”指 Broadcom 在既定产品结构下可实现的年化出货能力，不是 TSMC 晶圆厂的物理产值，也不等于已确认收入。
+
+### 8.1 当前出货能力
+
+| 产品/业务 | Q2 FY2026 实际年化能力 | Q3 FY2026 指引隐含能力 | 当前采用/认证阶段 | 瓶颈 |
+|---|---:|---:|---|---|
+| 定制 XPU | 约 $25.9B（$6.5B×4） | 约 $38–45B（AI $16B 中 60%–70%） | Google TPU 已量产；OpenAI 工程样片；Meta 2nm 设计/初始订单；其他客户已 production PO | N3/N2、HBM3E/4、CoWoS/3.5D、ABF、SLT、客户软件 |
+| AI Ethernet 总体 | 约 $17.3B（$4.3B×4） | 约 $19–26B（AI $16B 中 30%–40%） | TH6 生产量出货；TH Ultra 已出货；Jericho4 客户 sampling；多 ODM/网络商设计采用 | 200G/400G SerDes、1.6T optics、laser、交换系统验收 |
+| NIC/PHY/PCIe/CXL | 研究估计 $3–5B，属网络子集 | $5–7B | Thor Ultra/PCIe 6 开始平台验证 | NIC firmware、RoCE/UEC 软件、retimer 功耗 |
+| 光 DSP/laser | 研究估计 $2–4B，属网络子集 | $3–6B | Taurus 400G/lane 于 2026-03 发布并可用；1.6T 进入量产爬坡 | DSP 良率、EML/CW laser、光组件封装 |
+| CPO | 低于 $0.8B，属网络子集 | 低于 $1.5B | TH6-Davisson early-access sampling | optical engine 良率、ELS 可维护性、现场故障模式 |
+| 3.5D XDSiP | 不单列；支持 XPU | 支持更高 XPU 产出 | Fujitsu 2nm 3.5D SoC 已交付；更广 XPU 预计 2026 H2 | 2nm 良率、F2F bonding、热设计、HBM4 |
+| Infrastructure Software | $28.7B 年化 | $35.6B 年化（Q3 $8.9B×4） | VCF 9.1 已发布，订阅/多年合同规模化 | 销售执行、客户续约和监管，不受晶圆约束 |
+| Apple RF/无线 | 研究估计 $5–8B/年 | 合同尚未给季度节奏 | 多年量产项目；Fort Collins 将投入 $1.5B | FBAR 良率、苹果双供/自研、手机周期 |
+
+Q3 的 AI 分拆采用管理层所述网络长期约 30%、Q2 高点接近 40%的区间。实际季度会因 XPU tape-out、网络交付和客户验收而波动。
+
+### 8.2 客户项目与产品资格
+
+| 项目 | 当前阶段（2026-07-11） | 已披露规模 | 交付窗口 | 资格/风险 |
+|---|---|---:|---|---|
+| Google TPU | 多代量产 + 新长期协议 | 金额未披露；TPU 和网络供应保障最长至 2031 | 持续至 2031 | 最成熟；Google 明确会保持多来源，Broadcom 不是唯一架构/供应选择 |
+| Anthropic/Google TPU | 首批容量建设 + 扩展合同 | 约 3.5GW 自 2027 开始；初始融资平台 >1GW、约 $35B | 2026 中开始首批；2027 扩展 | 消费取决于 Anthropic 持续商业成功；数据中心、融资和云调度均需到位 |
+| OpenAI Jalapeño | 工程样片已交付，达到生产频率/功耗目标 | 总合作 10GW；电话会称 2027 约 1.3GW 起步 | 2026 年底初部署；至 2029 年底扩展 | 从 silicon validation 进入系统/软件/量产验证；Celestica 负责板卡/机架 |
+| Meta MTIA | 多代 2nm 共同开发；初始订单/部署 | 官方称初始 >1GW、未来 multi-GW；电话会称约 3GW 至 2028 年底 | 2027 H2 主要出货，延伸至 2029 | 需通过 Meta 推荐/推理负载、封装和网络整机验证 |
+| 其他两名 XPU 客户 | 已下 PO，晚 2026 开始 | 合计约 $6B PO | 2026 年末至 2027 加速 | 客户名、取消条款和具体产品未披露，可信度低于具名项目 |
+| Tomahawk 6 | production volume | 102.4T；512×200G 或 1024×100G SerDes | 2026 已量产 | 已越过样片阶段，主要风险转为系统/光学供给 |
+| Tomahawk Ultra | shipping | 51.2T、约 250ns | 2025 H2 起 | 开放 scale-up 初期；需要 collective/RDMA 软件生态成熟 |
+| Jericho4 | 客户 sampling/系统设计采用 | 单系统 36,000 个 3.2T HyperPort，目标 1M+ XPU | 2026–2027 | Accton、Arista、Nokia、DriveNets 等公开支持；大规模现场数据仍有限 |
+| Taurus BCM83640 | available | 400G/lane，1.6T 8:4，支持向 3.2T 演进 | 2026–2027 | 模块厂认证和 laser/光器件供应决定放量 |
+| TH6-Davisson CPO | early access | 102.4T、16×6.4T optical engine | 2026 验证，2027+可能放量 | 尚不能与 TH6 电口版“生产量出货”混为一谈 |
+| 开放 scale-up 标准 | 规范/联盟与早期验证 | ESUN 1.0、OCI MSA、UALink 2.0 于 2026 发布/推进 | 2026 初始、2027 多厂商 | 规范发布不等于互操作量产；需 NIC、switch、cable、collective software 全栈认证 |
+
+Meta、OpenAI、Anthropic 和 Google 的项目规模存在重叠：例如 Anthropic 使用 Google TPU，不能再把“Google TPU 总量”和“Anthropic 3.5GW”作为两个完全独立的 Broadcom 项目相加。OpenAI 10GW 是至 2029 的总部署，不是未来 12 个月全部交付。
+
+### 8.3 供应链是否真正支持高增长
+
+正面证据：
+
+- Q2 AI bookings >$30B，而出货 $10.8B，需求明显超过当季供给。
+- Broadcom 称关键部件产能已规划/保障至 2028。
+- 截至 2026-05-03，FY2027 采购承诺 $55.2B、FY2028 $72.9B，说明公司已把供应保障写入不可撤销合同。
+- Q2 存货 $4.328B，较 FY2025 年末增加 91%；inventory days 约 86 天，高于 Q1 的约 68 天，符合 H2 放量前备货。
+- TSMC、HBM、封装及融资伙伴均进入长期安排，而不是只依靠 spot 供给。
+
+反面验证：
+
+- 采购承诺增长远快于过去收入；若客户数据中心或融资延期，存货和现金风险先落在 Broadcom。
+- Broadcom H1 FY2026 约 95% 外包晶圆由 TSMC 生产，且超过 75%的制造材料来自五家供应商；单点故障高度集中。
+- 公司 Q2 10-Q 的 contract assets 为 $10.399B、contract liabilities 为 $14.242B，合同复杂度和预付/履约错配上升。
+- 供给并非只由芯片决定。管理层明确指出电力、并网和整体基础设施也是客户提前下单的原因；有晶圆不等于机架能够上线。
+
+## 九、未来一年产能与认证三情景
+
+### 9.1 2027 年中退出年化产能
+
+“退出产能”指 2027 年中单季出货节奏乘四，因此通常高于未来 12 个月实际收入。
+
+| 产品/业务 | 当前 Q2 年化 | 基准退出产能 | 乐观退出产能 | 极度乐观退出产能 | 2027 年中资格状态判断 |
+|---|---:|---:|---:|---:|---|
+| 定制 XPU | $25.9B | $70–85B | $90–105B | $110–130B | 基准：Google/Anthropic/OpenAI 量产、Meta 预量产；乐观：Meta 提前；极乐观：六客户并行量产 |
+| AI Ethernet 总体 | $17.3B | $36–44B | $45–55B | $58–70B | TH6 全面量产；TH Ultra 多客户；Jericho4 从 sampling 进入生产系统 |
+| NIC/PHY/PCIe/CXL（子集） | $3–5B估计 | $7–10B | $10–14B | $15–20B | 基准为 800G/PCIe6 通过主流平台；极乐观为开放 scale-up 标配 |
+| 光 DSP/laser（子集） | $2–4B估计 | $5–8B | $8–12B | $12–18B | 1.6T 量产；极乐观开始 400G/lane/3.2T 大规模资格 |
+| CPO（子集） | <$0.8B估计 | $2–4B | $5–8B | $9–14B | 基准 1–2 客户；极乐观多客户 production、现场可维修性通过 |
+| 3.5D XDSiP（XPU 子集） | 不单列 | 支持 $20–35B XPU | 支持 $35–55B XPU | 支持 $55–75B XPU | 2nm/HBM4 客户数从 1 扩至 2–4 |
+| Infrastructure Software | $28.7B | $38–42B | $44–49B | $50–56B | 续约/订阅，不受物理产能限制 |
+| Apple RF/无线（非 AI 子集） | $5–8B估计 | $6–8B | $8–10B | $10–13B | Fort Collins 扩产逐步上线 |
+| **AI 总退出产能** | **约 $43B** | **$106–129B** | **$135–160B** | **$168–200B** | 与管理层 FY2027 >$100B 及约 10GW 后半段出货方向一致 |
+
+### 9.2 情景所需的认证与供应条件
+
+| 情景 | 客户/产品认证 | 供应条件 | 失败信号 |
+|---|---|---|---|
+| 基准 | Jalapeño 2026 年底小规模上线；Meta 2027 H2；TH6/1.6T 量产；Davisson 完成有限试点 | N3/HBM3E/CoWoS 足够，N2/HBM4 小规模；采购承诺按计划兑现 | AI revenue 低于 FY2026 $56B；inventory days >100 且出货不升；客户数据中心延期 |
+| 乐观 | OpenAI/Anthropic 提前；Meta 2027 H1 预量产；Jericho4、Thor、Taurus 多客户认证 | 先进封装和 HBM4 提前，1.6T optics 良率改善，供电/融资不构成约束 | 网络占比下降不是因 XPU 更快，而是竞争丢单；gross margin 大幅低于 74% |
+| 极度乐观 | 六名核心 XPU 客户同时生产；CPO 多客户 production；开放 scale-up 互操作成熟 | N2、HBM4、3.5D、laser、ABF 和数据中心电力全部无实质约束 | 任何一个大客户改用第二实现伙伴、融资 backstop 扩大或出现机架转售 |
+
+极度乐观不是“需求很强”这么简单，它要求所有供应链和项目管理变量同时成功，联合概率远低于单项概率。
+
+## 十、用订单、供给与客户项目推断未来一年增速
+
+### 10.1 可验证订单与项目
+
+| 证据 | 数量/金额 | 窗口 | 能否直接当收入 | 取消/延期风险 |
+|---|---:|---|---|---|
+| Q2 FY2026 AI bookings | >$30B | 当季新增订单 | 否；需交货、验收并排除机架非 Broadcom 价值 | 条款未披露 |
+| Q4 FY2025 AI backlog | >$73B | 约 18 个月 | 否；含 XPU、switch、DSP、laser 和部分 rack 表述 | 公司明确提示不可按 $73B 机械确认 |
+| Q4 FY2025 AI switch backlog | >$10B | 约 18 个月内为主 | 较接近硅收入，但仍需交付 | 低于 XPU 项目风险，仍受 optics/系统验收影响 |
+| 2026-05-03 RPO | $164.6B；约 30%即 $49.4B 预计 12 个月确认 | 多年 | 是最接近会计可见度的口径，但仅含符合定义的承诺 | 非承诺/可便利终止合同不在 RPO |
+| Google TPU/网络 LTA | 金额未披露 | 最长至 2031 | 交付后确认 | Google 将保持供应多样化 |
+| Anthropic/Google | 约 3.5GW 扩展；首批平台 >1GW/$35B融资 | 2026–2027+ | $35B 是平台融资，不是 Broadcom 收入 | 以 Anthropic 商业成功、融资和上线为条件 |
+| OpenAI | 总计 10GW；Jalapeño 已有工程样片 | 2026 H2–2029 | 只能按年度交付确认 | 系统/软件/数据中心与融资延迟 |
+| Meta | 初始 >1GW，目标 multi-GW | 2027 H2–2029 | 按芯片/网络交付确认 | MTIA 性能、软件利用率、Meta 自研与多供 |
+| 另两名 XPU 客户 | 合计约 $6B PO | 2026 年末开始 | 较高可信度但客户/条款未知 | 无法核对取消权和终端项目 |
+| Apple | >$30B、>15B 颗 | 多年 | 按组件交付确认 | 产品组合、双供、手机周期 |
+| Broadcom 采购承诺 | FY2027–FY2028 $128.1B | 未来两财年 | 是供给，不是收入 | 需求延期时成为存货/现金压力 |
+
+### 10.2 取消率、交付率与一年增长模型
+
+Broadcom 没有披露 AI 取消率。本报告把“取消”定义为合同取消、数量减少或超过 12 个月的延期，避免假装有精确渠道数据。
+
+| 假设 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| AI bookings/backlog 的 12 个月取消或延期 | 5%–10% | 2%–5% | <2% |
+| 合格供给兑现率 | 85%–92% | 93%–97% | 98%–100% |
+| 客户电力/融资按时率 | 80%–90% | 90%–97% | 接近 100% |
+| XPU 收入 | $55–65B | $68–80B | $82–100B |
+| AI 网络收入 | $27–32B | $33–40B | $42–50B |
+| AI 总收入 | $82–97B | $101–120B | $124–150B |
+| AI 相对 Q2 年化 $43.2B | +90%至 +125% | +134%至 +178% | +187%至 +247% |
+| 公司总收入 | $134–155B | $160–186B | $192–227B |
+| 公司相对 TTM $75.47B | +78%至 +105% | +112%至 +147% | +154%至 +201% |
+
+#### 基准情景的季度路径
+
+| 季度 | 总收入模型 | AI 收入模型 | 关键驱动 |
+|---|---:|---:|---|
+| FY2026 Q3 | $29.4B 公司指引 | $16.0B 公司指引 | XPU + TH6/AI 网络 |
+| FY2026 Q4 | $32–35B | 约 $20.8–22B | 为 FY2026 $56B AI 指引补足；Jalapeño/新客户初始 |
+| FY2027 Q1 | $34–39B | $22–27B | Google/Anthropic、OpenAI 和网络继续爬坡 |
+| FY2027 Q2 | $36–43B | $24–30B | 2027 约 10GW 计划开始向后半年加速 |
+| **四季合计** | **$131–146B** | **$82.8–95B** | 与产品级基准范围一致 |
+
+公司级基准表采用 $134–155B，略宽于季度中枢，以覆盖软件合同确认和非 AI 季节性。
+
+### 10.3 为什么订单强仍不能把预测推到无限高
+
+- $30B bookings 是一个季度新增订单，不等于每季度都能重复。
+- $164.6B RPO 同时包含半导体和软件，也包含多年 custom AI 合同；不能再加 $73B AI backlog。
+- 10GW 主要后半段加速，2027 年中的未来 12 个月窗口不会吃到完整 FY2027。
+- $35B AI XPU Platform 首批融资包含机架/租赁/基础设施；Broadcom Q2 电话会明确当前收入是芯片而不是整台机架。
+- 合同需求强并不能创造电力。并网、变压器、冷却和施工延期会把芯片交付推后，即使客户不取消订单。
+
+## 十一、竞争格局、主流技术与替代方案
+
+### 11.1 产品级竞争
+
+| Broadcom 业务 | 主要竞争者/替代方案 | Broadcom 优势 | 对手优势/替代风险 | 未来是否主流 |
+|---|---|---|---|---|
+| 定制 XPU 实现 | Marvell、MediaTek、Alchip、GUC、客户全自研；NVIDIA GPU、AMD Instinct、AWS Trainium、Google 多实现伙伴 | 先进 SerDes/IP、TSMC/封装协同、量产纪录、网络捆绑、六客户规模 | 客户掌握体系结构，可多供；NVIDIA CUDA 通用性和 time-to-market 强；低量项目可能不值得定制 | **是，但与 GPU 共存**。高稳定量、专用推理/训练最适合 ASIC，前沿探索仍偏 GPU |
+| Scale-out switch/router | NVIDIA Spectrum-X、Cisco Silicon One、Marvell Teralynx/Prestera；定制 switch | TH6 首发 102.4T、Jericho 深缓存/scale-across、广泛 ODM/NOS 生态 | NVIDIA 可把 GPU、NIC、switch、软件成套优化；Cisco/Marvell 可在特定客户价格竞争 | **以太网是主流之一**，尤其多供应商 scale-out；不会消灭 InfiniBand/NVLink |
+| Scale-up Ethernet | NVIDIA NVLink/NVSwitch/NVLink Fusion、UALink、专有互连 | Tomahawk Ultra、开放标准、可跨 XPU 厂商，降低锁定 | NVLink 在 NVIDIA GPU 集体通信、软件和实装规模领先；开放标准碎片化 | **有望主流，但 2026 仍早期**。2027–2028 的互操作与 collective 性能决定胜负 |
+| NIC/PHY/PCIe/CXL | NVIDIA/Mellanox、AMD Pensando、Intel、Marvell、Credo | 端到端 SerDes/PHY、与 Broadcom switch/XPU 同设计 | NIC 市场更分散，软件/telemetry 可胜过纯硅规格 | **必需品，竞争较强** |
+| 光 DSP/laser | Marvell/Inphi、Credo、MaxLinear、MACOM、Coherent、Lumentum | DSP + driver + laser + switch 联动，400G/lane 路线 | Marvell 在高速 DSP 强，光器件厂有材料/制造优势 | 1.6T pluggable **已成主流升级**；400G/lane/3.2T 是下一阶段 |
+| CPO | NVIDIA、Marvell、Intel Silicon Photonics、Cisco/Acacia；pluggable、LPO、AEC 是替代 | 第三代 CPO、TH6 集成、可更换 external laser | 良率、现场维修、laser 寿命和多供应商标准未解决；pluggable 生态成熟 | **不是 2026 全面主流**；高 radix/高功耗端口可能在 2027–2028 先采用 |
+| 3.5D XDSiP | TSMC SoIC/CoWoS、Intel Foveros/EMIB、Marvell/AMD chiplet、客户自建封装 | 芯片实现与网络 IP 一体，已交付 2nm 客户 | 基础封装能力主要受 foundry/OSAT 控制，Broadcom 并不垄断物理产线 | 高端 XPU 的 3D/chiplet **将主流化**，具体品牌不一定由 Broadcom独占 |
+| VCF/私有云 | Nutanix AHV、Microsoft Hyper-V/Azure Local、Red Hat OpenShift/KVM、Proxmox、公有云 | installed base、迁移复杂、计算/存储/网络一体、强销售执行 | 捆绑与价格上调促使客户迁移；2026 CISPE 已向欧盟提出竞争投诉 | 私有云长期存在，但 VCF 份额取决于客户价值而非只靠锁定 |
+| Apple RF/无线 | Qorvo、Skyworks、Murata、Qualcomm、Apple 自研 | FBAR 工艺、长期联合设计、美国本土产能 | 单一大客户议价强，Apple 有内化和双供能力 | 仍为关键射频技术，但不是 AI 成长主线 |
+
+本地行业模型估计 Broadcom 在先进 custom-silicon 实现服务中的份额约 45%–60%，在高端 merchant AI fabric ASIC 中约 60%–70%。这些是产业估算，不是公司披露市场份额。
+
+### 11.2 客户替换成本
+
+| 替换对象 | 典型时间 | 直接成本/复杂度 | 替换成本等级 |
+|---|---:|---|---:|
+| Broadcom XPU 实现伙伴 | 18–36 个月 | 重新物理设计、流片、封装、HBM、软件、良率；NRE 可达数亿美元至 >$1B | 5/5 |
+| TSMC/先进制程与封装路线 | 24–48 个月 | PDK、IP、设计规则、封装和良率全部重做 | 5/5 |
+| HBM 供应商 | 2–6 个季度 | stack、PHY、热/功耗、封装和 firmware 认证 | 4/5 |
+| Switch ASIC/NOS | 2–4 个季度 | PCB、SDK、NOS、telemetry、故障运维和 fabric 验证 | 4/5 |
+| Scale-up 协议/拓扑 | 2–6 个季度以上 | NIC、switch、cable、collective library、训练稳定性共同认证 | 4.5/5 |
+| Pluggable DSP/光模块 | 1–3 个季度 | 模块、FEC、温度、功耗和链路预算 | 3/5 |
+| CPO 平台 | 4–8 个季度 | 整机光/电/热/维修架构改变，无法简单插拔替换 | 5/5，但也提高客户采用门槛 |
+| VCF 大型环境 | 12–36 个月 | VM/应用迁移、网络/存储重构、人员培训、合规与停机风险 | 4.5/5 |
+| Apple RF 供应商 | 18–36 个月 | filter design、封装、射频认证、手机整机量产 | 4/5 |
+
+高替换成本不是永久垄断。客户会在下一代设计窗口引入第二来源，以牺牲部分短期效率换取议价权；Google 管理层/协议语境已经明确体现多来源预期。
+
+### 11.3 技术方向判断
+
+- **定制 XPU**：会成为 hyperscaler 和大型模型公司的主流补充，尤其是稳定、规模巨大、对成本/瓦敏感的推理与特定训练；不会在一年内全面替代 GPU。
+- **Ethernet scale-out**：已经是大规模 AI fabric 主流之一。102.4T、200G SerDes、800G/1.6T 端口正处于紧迫升级周期。
+- **开放 Ethernet scale-up**：技术方向合理，经济上能降低专有锁定，但 2026 的实际规模仍小；2027 的多供应商互操作、collective 通信和尾延迟是关键验证点。
+- **CPO**：物理上越来越必要，商业上尚未完全成熟。2026 应按 option 估值，不能按 TH6 电口版本的量产状态直接外推。
+- **3.5D/chiplet/HBM4**：几乎确定成为高端加速器主流；Broadcom 的价值在整合与实现，不在独占封装产线。
+- **VCF 私有 AI**：会受益于数据主权和企业推理，但目前 Broadcom AI semiconductor 收入不应与 VCF AI 功能混在一起。
+
+## 十二、核心风险与反证指标
+
+| 风险 | 当前事实 | 需要监控的反证指标 |
+|---|---|---|
+| 客户集中 | FY2026 H1 前五大终端客户约占 45%；一家客户历史上可占很大比例 | 前五大占比继续上升；Google/Apple/Meta 任一项目降量 |
+| TSMC/供应集中 | 外包晶圆约 95%来自 TSMC；五家供应商占 >75%制造材料 | N3/N2/CoWoS 延期、地缘事件、采购承诺无法转成出货 |
+| AI 合同口径过度乐观 | bookings、backlog、RPO、GW 和平台融资常被市场相加 | RPO 12 个月转化低于约 30%；bookings/shipments 回落但收入不跟进 |
+| 客户融资与循环风险 | AI rack lease backstop 最高 $29B；首批平台融资约 $35B | 客户违约、Broadcom 接管/转售机架、信用损失或 backstop 扩大 |
+| 采购承诺风险 | FY2027–FY2028 $128.1B | inventory days >100、成品继续增长、减记或毛利折让 |
+| 毛利率组合下行 | Q2 非 GAAP GM 77.1%，Q3 指引约 74% | 低于 73%且不是暂时 XPU mix；半导体分部 OP margin 停止上升 |
+| XPU 客户多供/自研 | Google 明确预期供应多样化；客户掌握体系结构 | 新一代 TPU/MTIA/OpenAI 设计转给其他实现伙伴 |
+| NVIDIA/专有互连 | NVLink/CUDA 软件和整机优化领先 | 开放 scale-up 性能/稳定性不达标，Broadcom 仅剩 scale-out |
+| CPO 商业化 | Davisson 尚 early access | 2027 仍无 production 客户、现场可靠性/维修不通过 |
+| VMware 客户和监管 | 订阅/捆绑抬升利润；CISPE 2026-03 向欧盟投诉，称价格和最低承诺伤害云服务商 | VCF ARR/TCV 放缓、续约流失、监管迫使拆包/降价 |
+| 无形资产 | goodwill + intangible 占资产 70.4%，有形权益为负 | 软件增长不达预期导致减值 |
+| 库存与执行 | 存货半年 +91%、成品增长 172% | Q3/Q4 出货不及指引、存货周转继续恶化 |
+| 估值 | TTM PE 66.6x、PS 25.2x | FY2027 AI 指引下修或 forward EPS 不兑现导致双重压缩 |
+| SBC/稀释 | Q2 SBC $2.092B；未确认 SBC 约 $20.106B、预计约三年摊销 | 股份数持续增长、GAAP 与 non-GAAP 利润差距扩大 |
+| 出口/地缘 | 先进 AI 芯片、TSMC 和客户部署受政策影响 | 新出口限制、区域客户取消或供应链重新布局 |
+
+软件监管参考：[CISPE 2026-03-19 竞争投诉](https://www.cispe.cloud/cispe-files-competition-complaint-against-broadcom)。该来源代表投诉方观点，不是欧盟最终裁决。
+
+## 十三、投资判断与关键跟踪表
+
+### 13.1 多头、基准与空头判据
+
+| 观点 | 成立条件 |
+|---|---|
+| 多头 | FY2026 AI $56B 达成；FY2027 >$100B 可见度继续提高；AI bookings/shipments 维持 >1.5x；半导体 OP margin ≥60%；软件 ARR 中双位增长；inventory days 在放量后回落 |
+| 基准 | Q3 $29.4B 和 Q4 隐含 AI $20.8B 大体兑现；网络占 AI 30%–40%；Google/OpenAI/Anthropic 按时、Meta 2027 H2；gross margin 因 mix 下至约 74%但 operating leverage 保持 |
+| 空头 | FY2026 AI 低于 $50B；客户项目延迟使采购承诺转为库存；$29B backstop 出现实际损失；Google 多供份额下降；VCF ARR/TCV 放缓且监管要求拆包；估值先于盈利下修 |
+
+### 13.2 每季度应检查的十个数字
+
+1. AI semiconductor revenue 及其同比/环比。
+2. AI networking 占 AI 收入比例，区分“占比下降因为 XPU 更快”还是实际丢单。
+3. AI bookings / shipments proxy，以及新增订单是否重复包含长期合同。
+4. RPO 总额、未来 12 个月预计确认比例和实际转化。
+5. XPU 客户数量、每个项目的 qualification/production 阶段。
+6. TH6、Taurus、Jericho4、Thor Ultra、Davisson 的 production 客户数。
+7. inventory、inventory days、finished goods 与合同资产。
+8. FY2027/FY2028 purchase commitments 与季度出货的匹配。
+9. 非 GAAP gross margin、半导体 segment operating margin。
+10. VCF ARR、TCV bookings、续约/迁移和监管进度。
+
+### 13.3 最终判断
+
+Broadcom 的 AI 基建逻辑具有少见的广度和可验证订单：Q2 $10.8B AI 收入、>$30B bookings、$164.6B RPO、FY2027 >$100B 指引以及多名具名客户，使其不再是“远期 AI optionality”。定制 XPU 与 AI Ethernet 目前都是直接收入，而且网络能够跨越 Broadcom 自有 XPU、NVIDIA GPU 和其他架构，降低单一计算路线风险。
+
+真正的瓶颈已经从“Broadcom 有没有产品”转移为“客户能否把 2027 年约 10GW 的电力、融资、机架、软件和供应链同时上线”。公司用 $128.1B 采购承诺和 $29B backstop 主动承担这条链中的更多风险，换取了至 2028–2031 的可见度。若项目兑现，规模效应足以让利润和 FCF 跃升；若上线延期，高库存、高承诺和高估值会同时反向作用。
+
+在产品层面，未来一年应按优先级关注：
+
+1. **定制 XPU**：最大绝对收入和最强增长。
+2. **Tomahawk/Jericho/TH Ultra AI Ethernet**：最强寡头地位和跨计算平台收入。
+3. **Taurus/laser/Thor/PCIe 连接硅**：容易漏掉、但每端口和每 XPU 内容量上升。
+4. **3.5D XDSiP 与 CPO**：前者已进入商业交付，后者仍为高价值验证期 option。
+5. **VCF**：利润和现金流重要，但不能用“AI”标签掩盖客户与监管风险。
+6. **Apple RF/无线**：非 AI、增速较低，却因 >$30B 合同而成为重要防守盘。
+
+## 十四、口径、推算与资料来源
+
+### 14.1 推算规则
+
+- “约”表示由公司披露数字直接计算；例如 XPU = AI semiconductor − AI networking。
+- “研究估计/模型”表示公司没有产品级拆分，使用产业 BOM、端口数量、份额和产品状态推算。
+- 子产品收入均明确标记为 XPU 或 AI Ethernet 子集，不与母业务重复加总。
+- Google TPU 与 Anthropic 使用的 Google TPU 容量存在包含关系；OpenAI 10GW 为至 2029 总计划；Meta multi-GW 为多年计划，均未重复计入未来一年。
+- 毛利率模型不是公司产品报价。唯一公司可核对基准为 Q2 FY2026 半导体非 GAAP gross margin 约 70%、软件约 93%，以及 SEC 分部 operating margin。
+- 三情景不是目标价，也未假设估值倍数；极度乐观用于压力测试产能上限。
+
+### 14.2 主要公司与监管资料
+
+- [Broadcom FY2026 Q2 财报](https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial)
+- [Broadcom FY2026 Q2 10-Q](https://www.sec.gov/Archives/edgar/data/1730168/000173016826000054/avgo-20260503.htm)
+- [Broadcom FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm)
+- [Broadcom FY2025 Q3 10-Q](https://www.sec.gov/Archives/edgar/data/1730168/000173016825000098/avgo-20250803.htm)
+- [FY2026 Q2 电话会文字记录](https://www.fool.com/earnings/call-transcripts/2026/06/03/broadcom-avgo-q2-2026-earnings-transcript/)
+- [FY2026 Q1 电话会文字记录](https://www.fool.com/earnings/call-transcripts/2026/03/04/broadcom-avgo-q1-2026-earnings-call-transcript/)
+- [FY2025 Q4 电话会文字记录](https://www.fool.com/earnings/call-transcripts/2025/12/12/broadcom-avgo-q4-2025-earnings-call-transcript/)
+- [Google/Anthropic 长期协议 8-K](https://investors.broadcom.com/static-files/c906d370-921b-4bc2-bb7b-57877dfcf1ae)
+- [Anthropic 扩展 TPU 容量公告](https://www.anthropic.com/news/google-broadcom-partnership-compute)
+- [OpenAI/Broadcom 10GW 合作](https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/)
+- [OpenAI Jalapeño 产品公告](https://openai.com/index/openai-broadcom-jalapeno-inference-chip/)
+- [Broadcom/Apollo/Blackstone AI XPU Platform](https://investors.broadcom.com/news-releases/news-release-details/broadcom-apollo-and-blackstone-establish-landmark-strategic)
+- [Meta MTIA 合作](https://www.broadcom.com/company/news/product-releases/64236)
+- [Apple/Broadcom >$30B 美国芯片协议](https://www.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/)
+- [CISPE 对 Broadcom/VMware 的 2026 竞争投诉](https://www.cispe.cloud/cispe-files-competition-complaint-against-broadcom)
+
+### 14.3 产品、会议与技术资料
+
+- [Tomahawk 6 BCM78910 生产量出货](https://www.broadcom.com/company/news/product-releases/64031)
+- [Tomahawk 6 初始发布](https://www.broadcom.com/company/news/product-releases/63146)
+- [Tomahawk Ultra BCM78920](https://www.broadcom.com/company/news/product-releases/63341)
+- [Jericho4](https://investors.broadcom.com/news-releases/news-release-details/broadcom-ships-jericho4-enabling-distributed-ai-computing-across)
+- [Thor Ultra 800G AI Ethernet NIC](https://www.broadcom.com/company/news/product-releases/63641)
+- [Taurus BCM83640 400G/lane DSP](https://www.broadcom.com/company/news/product-releases/64016)
+- [Tomahawk 6-Davisson CPO](https://www.broadcom.com/company/news/product-releases/63626)
+- [2nm 3.5D XDSiP](https://www.broadcom.com/company/news/product-releases/63946)
+- [Broadcom OFC 2026 光互联发布](https://www.broadcom.com/company/news/product-releases/64036)
+- [Open Compute Project 2025 AI networking 展示](https://www.broadcom.com/company/news/product-releases/63621)
+- [Optical Scale-up Consortium](https://www.broadcom.com/company/news/product-releases/optical-scale-up-consortium-established-to-create-an-open-specification-for-ai-infrastructure)
+- [VMware Cloud Foundation 9.1](https://www.broadcom.com/company/news/product-releases/64326)
+
+### 14.4 市场数据与允许的本地行业基准
+
+- [AVGO 估值与财务统计，StockAnalysis](https://stockanalysis.com/stocks/avgo/statistics/)
+- [AVGO TTM 收入与增长，StockAnalysis](https://stockanalysis.com/stocks/avgo/revenue/)
+- [AVGO 市值与 2026-07-10 收盘价，CompaniesMarketCap](https://companiesmarketcap.com/broadcom/marketcap/)
+- [云厂自研 AI ASIC 行业调研](../../行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI%20ASIC_2026-07-10.md)
+- [AI 以太网交换系统与 Fabric 芯片行业调研](../../行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-07-10.md)
+- [800G/1.6T 可插拔光模块行业调研](../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md)
+- [光 DSP、TIA 与 CDR 行业调研](../../行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-07-10.md)
+- [CPO/NPO 与交换侧光引擎行业调研](../../行业调研/AI网络_光互联_铜互联/行业调研_CPO_NPO与交换侧光引擎_2026-07-10.md)
+- [开放 Scale-up 互联行业调研](../../行业调研/AI网络_光互联_铜互联/行业调研_开放Scale-up互联_2026-07-10.md)
+- [PCIe/CXL 高速 I/O 交换与 Retimer 行业调研](../../行业调研/AI网络_光互联_铜互联/行业调研_PCIe／CXL高速I／O交换与Retimer_2026-07-10.md)
+- [先进逻辑晶圆代工和封装行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-07-10.md)
+
+> 免责声明：本报告用于研究，不构成证券买卖建议。产品级收入、BOM、产能和情景预测包含明确标识的研究估算；Broadcom 未披露的数据不应被视为公司指引。

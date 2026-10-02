@@ -1,0 +1,179 @@
+# 公司收入传导与价值传导评估：Onto Innovation
+
+公司代号：ONTO  
+公司名称：Onto Innovation  
+报告日期：2026-06-12  
+主口径：NTM，即 2026Q2-2027Q1 附近的未来 12 个月经营收入、利润和现金流传导。  
+资料边界：使用 `公司调研/` 与 `行业调研/`，并用 Onto Innovation 官方 IR、SEC 10-Q/10-K、产品新闻稿和行业一手资料刷新。未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、模型比较、排序结果或市场定价数据。  
+重要限制：本报告只评估经营传导，不给投资评级，不判断股价区间，不做估值倍数判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM 经营窗口，补充口径只用于解释 2026 全年管理层目标、2027 产能 run-rate、Rigaku/X-ray 和 panel/glass 远期期权。
+- 当前收入基准、指引和 run-rate：2026Q1 收入 2.919 亿美元；2026Q2 指引 3.20-3.30 亿美元；管理层在 2026Q1 后给出 2026 年收入增长超过 30%、收入超过 13 亿美元、advanced packaging 增长超过 50%、advanced nodes 增长约 25% 的经营锚。Q1 systems and software 2.472 亿美元，占 84.7%；parts 2655 万美元，占 9.1%；services 1824 万美元，占 6.2%。
+- 重要产品/业务线：Dragonfly G5/G3 + 3Di/EchoScan advanced packaging inspection/metrology；Atlas G6/Atlas OCD/Iris advanced-node metrology；Semilab FAaST/CnCV/MBIR materials and surface-charge metrology；JetStep + Firefly panel-level packaging；Discover/Ai Diffract/parts/services；Rigaku X-ray/CD-SAXS 合作；其他 specialty/mature-node 系统。
+- NTM 公司收入四情景：悲观 12.4-13.3 亿美元；基准 13.8-15.0 亿美元；乐观 15.2-16.8 亿美元；极度乐观 17.0-19.0 亿美元。基准不是把 AI/HBM 行业增速直接套到 ONTO，而是把 Q2 指引、HBM VPA、G5 qualification、Semilab 并表、advanced nodes 订单节奏和客户验收折成收入确认路径。
+- 利润或 EBITDA 四情景：以 non-GAAP operating income 作为可比经营利润主代理。悲观约 3.0-3.6 亿美元；基准约 3.9-4.5 亿美元；乐观约 4.6-5.4 亿美元；极度乐观约 5.5-6.6 亿美元。GAAP 净利润会被 Semilab 摊销、重组、交易费用、Rigaku/融资相关事项扰动，不能直接等同产品利润质量。
+- 最大传导瓶颈：Dragonfly G5/3Di 从 qualification 和 VPA 转为按季度可确认收入；HBM4、2.5D logic、CoWoS-like 和 advanced-node 客户的实际 ramp 节奏；precision optics、detector/stage、field service 和客户 recipe 认证。
+- 最大利润率变量：advanced packaging mix、G5/3Di 配置和软件 attach、Semilab inventory step-up 与摊销消退、region-for-region 制造效率、KLA/Camtek/Nova 竞争价格压力。
+- 最大现金流变量：应收账款和存货随 Q2-H2 ramp 上升；Q1 经营现金流为 2632 万美元，低于净利润加回非现金项的能力，主要受营运资本消耗影响。Rigaku 7.10 亿美元股权投资是资本配置和融资变量，不是 NTM 产品收入证据。
+- 可信度：基准为中高，乐观为中，极度乐观为低到中。最硬证据集中在 Dragonfly/3Di 的 HBM VPA、G5 2.5D/HBM qualification、Semilab Q1 收入和 Q2 指引；最弱证据集中在 Rigaku/X-ray、panel-level、glass/CPO 的 NTM 收入确认。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Dragonfly G5/G3 + 3Di/EchoScan advanced packaging inspection/metrology | 2026Q1 advanced packaging 估算约 1.07 亿美元；NTM 基准 5.0-5.8 亿美元 | Q1 约 37%；NTM 基准约 34-40% | ONTO 最大收入和利润弹性，直接承接 HBM4、2.5D logic、CoWoS-like、micro-bump 和 RDL inspection | B，高可信订单和 qualification；产品收入为估算 | 进入基准，按 VPA、G5 发货和 Q2/H2 ramp 保守确认 | HBM4E、更多 OSAT/foundry tool-of-record、CPO/optical I/O packaging inspection |
+| Atlas G6/Atlas OCD/Iris advanced-node metrology | 2026Q1 advanced nodes 约 8000 万美元，其中 memory 约 60%；NTM 基准 3.0-3.6 亿美元 | Q1 约 27%；NTM 基准约 22-25% | GAA、DRAM/HBM、N2/N3、3D NAND 的前道 metrology 底盘 | B/C，advanced nodes 披露较清楚，产品细分需估算 | 进入基准，按 +20-25% 左右正常兑现 | High-NA/GAA/HBM4 custom base die、OCD + X-ray hybrid metrology |
+| Semilab FAaST/CnCV/MBIR materials and surface-charge metrology | 2026Q1 Semilab USA 收入 2710 万美元，经营利润 1340 万美元；NTM 基准 1.30-1.45 亿美元 | Q1 约 9%；NTM 基准约 9-10% | 材料、污染、表面电荷和 subsurface metrology 补强 ONTO 产品组合 | A，SEC 披露并表收入和利润；交叉销售为 C | 进入基准，按年收入超过 1.30 亿美元折算 | Hybrid bonding、GAA、HBM4E 对 surface/contamination 的增量需求 |
+| JetStep + Firefly panel-level packaging / AICS / glass / CPO adjacent | 当前产品收入未单独披露；NTM 基准 0.25-0.50 亿美元 | NTM 基准约 2-4% | 当前小，可能改变 2027-2029 收入结构 | C/D，qualification 和 SAM 线索强于样品，但缺明确 NTM 大订单 | 只以小额已可见业务进入基准，panel/glass 主放量不进基准 | CoPoS、glass core、large organic panel、CPO/optical I/O 封装 |
+| Discover / Ai Diffract / parts / services / installed-base support | 2026Q1 parts+services 4480 万美元；systems software 未拆分；NTM 基准 1.9-2.3 亿美元 | Q1 parts+services 15.3%；NTM 基准约 13-16% | 高毛利、客户锁定和现金流稳定器 | A for parts/services；C for standalone software split | 进入基准，按装机增长和升级维修需求确认 | Ai Diffract attach、defect library、fleet analytics 提升 attach rate |
+| Rigaku X-ray/CD-SAXS + Ai Diffract strategic partnership | 2026 不并表；NTM 基准直接收入 0-0.2 亿美元 | NTM 基准 0-1% | 长期技术期权，不是 NTM 主收入 | C，两个客户选择 integrated offering；收入确认路径仍弱 | 不进入基准主收入，只允许极小 licensing/协同；大部分移入附录 | X-ray + optical hybrid metrology、buried 3D structures、GAA/HBM4/advanced packaging |
+| 其他 specialty / mature-node systems | 2026Q1 specialty devices 中非 AP 部分估算 2500-4000 万美元；NTM 基准 1.2-1.6 亿美元 | NTM 基准约 8-11% | 底盘收入和周期抵消项 | B/C，分部可见但产品拆分不完整 | 进入基准，但不按 AI 主题上修 | SiC/power/RF/MEMS/CIS 等周期恢复 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 ONTO 份额、收入确认或利润率。当前需求锚来自行业调研、客户 capex/产能路线、公司披露的订单/qualification 和 2026 管理层指引隐含需求。金额或增速为需求池和采购强度判断，不直接等同 ONTO 收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Dragonfly G5/G3 + 3Di/EchoScan advanced packaging inspection/metrology | HBM3E/HBM4、2.5D logic、CoWoS-like 和 OSAT/foundry advanced packaging 的 inspection/metrology 需求；ONTO 2026 AP 增长预期已上修到 >50% | AP inspection 需求仍增长，但 HBM4/Rubin/MI400 或 OSAT 二供 ramp 后移，需求强度低于当前 AP >50% 路径 | HBM3E 12H 继续出货、HBM4 2026H2 导入，2.5D/CoWoS-like 正常扩产，inspection passes 和 3D bump metrology 按当前节奏提升 | HBM4、GB300/Rubin、MI350/MI400、TPU/Trainium/custom ASIC 同步拉动，客户为了 time-to-yield 提前下单 | HBM4/4E 和 CoWoS-like 同时短缺，客户预定 2027 产能，inspection/metrology 成为明确瓶颈 | 悲观仍可能 +15-25%；基准 +35-55%；乐观 +60-85%；极度乐观 +90%+ | 基准符合当前预期；乐观高于当前预期；反证为 CoWoS lead time 回落、HBM capex 下修、Camtek/KLA 抢走 tool-of-record |
+| Atlas G6/Atlas OCD/Iris advanced-node metrology | Advanced nodes 2026 约 +25%；DRAM/HBM、GAA、N2/N3、3D NAND 的 OCD/thin-film/metrology intensity 上升 | WFE 或 memory fab 节奏推迟，advanced nodes 需求只小幅增长或部分项目延后 | DRAM/HBM 和 logic 客户正常扩产，Atlas/Iris/OCD demand 按 +20-25% 附近兑现 | GAA、HBM4 base die、DRAM/HBM layer count、High-NA 前置准备共同推高 metrology attach | 多个先进 fab 同步开工，OCD/films/integrated metrology 成为先进节点短缺环节 | 悲观 +0-10%；基准 +15-25%；乐观 +30-45%；极度 +50%+ | 基准符合当前预期；乐观需要客户订单和份额证据；反证为 KLA/Nova/ASML-HMI 在关键客户压制 ONTO |
+| Semilab materials/surface-charge metrology | Q1 Semilab 并表 2710 万美元；原产品组合过去多年增长，GAA/HBM/hybrid bonding 对 contamination/surface charge 更敏感 | 并购整合或客户交叉销售慢，需求只来自原 Semilab 客户和存量订单 | 原客户正常交付，ONTO 渠道带来有限交叉销售，年收入超过 1.30 亿美元路径兑现 | Surface charge、contamination、materials metrology 成为 HBM/GAA/advanced package 量产痛点，更多 ONTO 客户采用 | Hybrid bonding/HBM4E 对 surface/contamination 的 tolerance 明显收紧，Semilab 方案进入多个高端客户 POR | 悲观 1.05-1.25 亿美元需求可收入化池；基准 1.30-1.45 亿；乐观 1.6-2.0 亿；极度 2.1 亿+ | 基准符合当前预期；乐观高于预期但需客户交叉销售证据；反证为 Semilab 年收入低于 1.20 亿美元 |
+| JetStep + Firefly panel-level packaging / glass / AICS | Panel/glass/CoPoS/CPO 处于 pilot、qualification 和设备材料订单期；2026 主流 AI package 仍靠 CoWoS/ABF/硅中介层 | Panel/glass 继续后移，只有 pilot 线和少量 tool qualification | 两家 packaging suppliers qualification 逐步转小额收入，2026 不是主线，2027 有 ramp | CoPoS、glass core、large organic panel 或 CPO package 在 2027 前置，新增 JetStep/Firefly 订单 | 一个以上 hyperscaler/custom ASIC 明确 design-in panel/glass，客户提前采购 pilot/HVM 工具 | 悲观 0.1-0.25 亿美元需求；基准 0.25-0.50 亿；乐观 0.7-1.2 亿；极度 1.5 亿+ | 基准低于主题热度但符合收入证据；乐观需订单而非路线图；反证为 2027H1 仍无客户 qualification/production prep |
+| Discover / Ai Diffract / parts / services / installed-base support | Q1 parts+services 4480 万美元；装机增长、升级维修、defect library 和 recipe 绑定支持低双位数需求 | 工具出货放缓、客户减少 upgrades，服务需求低于 run-rate | 装机增长和 field support 正常扩大，parts/services 年化 1.9-2.3 亿美元，software attach 稳定 | G5/Atlas/Semilab 装机增加，defect classification 和 fleet analytics attach 提升 | 软件和 service package 随紧缺工具捆绑，Ai Diffract/Discover 形成高端客户默认配置 | 悲观 +0-8%；基准 +10-18%；乐观 +20-35%；极度 +40%+ | 基准符合 installed base 增长；反证为服务毛利下降或 upgrades 延后 |
+| Rigaku X-ray/CD-SAXS + Ai Diffract | 两个客户选择 integrated offering；交易预计 2026H2 close；2026 仍主要是战略合作和 evaluation | X-ray throughput 或客户认证慢，需求停留在研发/nearline 评估 | 只形成少量 Ai Diffract licensing、联合 evaluation 和 Atlas pull-through | 多家 memory/logic/advanced packaging 客户进入 qualification | X-ray + optical hybrid metrology 成为部分 buried/3D structure 的 production recipe | 悲观 0；基准 0-0.2 亿；乐观 0.3-0.8 亿；极度 1.0 亿+ | 基准只作跟踪；乐观需客户、产品、时间表；反证为交易推迟、throughput 不足或没有 12-18 个月客户验证 |
+| 其他 specialty / mature-node systems | Specialty devices 中非 AP 部分、power/RF/MEMS/CIS/industrial 和成熟节点工具 | 客户 capex 恢复慢，传统业务拖累 mix | 稳定底盘收入，不因 AI 主题上修 | SiC/power/RF 或 regional capex 恢复，抵消 AP 波动 | 多个 specialty 市场同时恢复，但不是 ONTO 核心非线性来源 | 悲观 1.0-1.3 亿；基准 1.2-1.6 亿；乐观 1.5-1.9 亿；极度 2.0 亿左右 | 基准符合当前预期；不把普通 specialty 当 AI 需求；反证为成熟节点价格/出口管制/客户预算削减 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求能进入 ONTO NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入。A/B 证据进入基准；C 级只有客户、产品和时间表清楚时小比例进入；D/E 级不进基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Dragonfly G5/G3 + 3Di/EchoScan advanced packaging inspection/metrology | 2026Q1 AP 估算约 1.07 亿美元；HBM VPA >2.40 亿美元覆盖 2027 扩产；G5 HBM/2.5D qualification；Q2/Q3 发货上升 | 直接 | 系统毛利高，3Di/software/service attach 提升利润质量；precision optics 和 field support 是成本约束 | 3.8-4.6 亿美元 | 5.0-5.8 亿美元 | 6.0-7.4 亿美元 | 8.0-10.0 亿美元 | 基准符合 AP >50% 增长和 H2 ramp；悲观低于当前预期 | B | 是 | VPA、qualification、Q2 指引上修、advanced packaging 增长目标 | 基准主收入，乐观取决于追加订单和 tool-of-record 扩散 |
+| Atlas G6/Atlas OCD/Iris advanced-node metrology | 2026Q1 advanced nodes 约 8000 万美元；memory 约 60%；2026 advanced nodes 预计 +25% | 直接 | 光学/OCD/thin film 毛利高，但竞争强，价格和份额弹性低于 AP | 2.7-3.2 亿美元 | 3.0-3.6 亿美元 | 3.8-4.8 亿美元 | 5.5-7.0 亿美元 | 基准符合当前 advanced nodes 目标；乐观需份额证据 | B/C | 是 | Q1 分部口径、管理层增长目标、DRAM/HBM/GAA 需求 | 基准纳入，极度乐观需多客户 advanced-node 订单 |
+| Semilab FAaST/CnCV/MBIR materials and surface-charge metrology | 2026Q1 Semilab USA 收入 2710 万美元、经营利润 1340 万美元；公司目标年收入 >1.30 亿美元 | 直接 | 并购资产 Q1 operating income margin 高；GAAP 受 inventory step-up 和 intangibles amortization 压制 | 1.05-1.25 亿美元 | 1.30-1.45 亿美元 | 1.60-1.95 亿美元 | 2.10-2.60 亿美元 | 基准符合当前收入目标；乐观高于当前目标 | A | 是 | SEC 披露并表收入/利润，管理层收入目标 | 基准纳入；交叉销售上修只进乐观 |
+| JetStep + Firefly panel-level packaging / glass / AICS | 当前收入未单独披露；两家 packaging suppliers qualification；约 2 亿美元 SAM 分多年 | 直接 | 小基数、设备毛利可高，但 pilot/定制化会增加支持成本 | 0.10-0.25 亿美元 | 0.25-0.50 亿美元 | 0.70-1.20 亿美元 | 1.50-2.00 亿美元 | 基准低于主题热度；乐观高于当前收入锚 | C/D | 小比例进入 | 已有 qualification 和既有产品，但缺 NTM 大额订单披露 | 小额基准；panel/glass 主要作为乐观和附录跟踪 |
+| Discover / Ai Diffract / parts / services / installed-base support | 2026Q1 parts 2655 万美元、services 1824 万美元；systems software 未拆分 | 直接 | Parts/services 和软件毛利较高，现金流属性好；但 disclosure 不透明 | 1.75-2.05 亿美元 | 1.90-2.30 亿美元 | 2.30-2.80 亿美元 | 3.20-3.80 亿美元 | 基准符合装机增长；乐观需 attach rate 提升 | A for parts/services；C for software | 是 | Q1 收入表、installed base、系统软件附着 | 基准纳入；Ai Diffract 大幅上修不进基准 |
+| Rigaku X-ray/CD-SAXS + Ai Diffract | 2026 不并表；战略合作、两个客户选择 integrated offering；拟 7.10 亿美元收购 27% 股权 | 主要间接，少量 software licensing 可能直接 | 软件 licensing 高毛利；Rigaku 股权收益/公允价值不是产品收入；X-ray 工具不并表 | 0 | 0-0.20 亿美元 | 0.30-0.80 亿美元 | 1.00-1.50 亿美元 | 基准只代表小额协同；大部分低于可收入化标准 | C/D | 不进入基准主线 | 没有明确 NTM 交付和收入确认路径；不并表 | 移入附录/极度乐观上限，不能替代 NTM 主收入 |
+| 其他 specialty / mature-node systems | Specialty devices 非 AP、成熟节点和 legacy systems 未单独披露；Q1 specialty+AP 合计约 1.60 亿美元 | 直接 | 周期性和价格压力较高，毛利低于高端 AP/metrology | 1.30-1.80 亿美元 | 1.20-1.60 亿美元 | 1.50-1.90 亿美元 | 2.00-2.20 亿美元 | 基准不因 AI 题材上修 | B/C | 是 | 历史底盘收入和现有客户 | 作为底盘和抵消项，不作为主要超预期来源 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求和可收入化基数出发，评估每个重要产品在 NTM 内对 ONTO 的收入和经营利润质量贡献。利润贡献以 gross profit 和 non-GAAP operating contribution 的方向性判断为主；公司未披露产品级毛利率，产品利润金额为区间估算，不等同 GAAP 净利润。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Dragonfly G5/G3 + 3Di/EchoScan advanced packaging inspection/metrology | 悲观产品 | 3.8-4.6 亿美元 | gross profit 约 2.0-2.5 亿美元；经营利润贡献弱于预期 | 持平到小幅下行，低利用率和客户验收拖累 | 低于当前 AP >50% 增长预期 | HBM/2.5D 需求仍在，但订单 push-out | 保留为悲观 | HBM4/Rubin/MI400 延迟，VPA delivery 后移，Camtek/KLA 抢份额 |
+| Dragonfly G5/G3 + 3Di/EchoScan advanced packaging inspection/metrology | 基准产品 | 5.0-5.8 亿美元 | gross profit 约 2.8-3.4 亿美元；带动公司 non-GAAP OM 上行 | 上行，G5/3Di mix 和 software attach 改善 | 符合当前预期 | >2.40 亿美元 HBM VPA，G5 HBM/2.5D qualification，Q2 指引上修 | 保留基准 | precision optics、detector/stage、field service、客户 recipe |
+| Dragonfly G5/G3 + 3Di/EchoScan advanced packaging inspection/metrology | 乐观产品 | 6.0-7.4 亿美元 | gross profit 约 3.5-4.5 亿美元；经营杠杆明显 | 上行，配置和服务包提高 ASP | 高于当前预期 | 新增 HBM/OSAT/foundry 客户、G5 成为更多 POR | 保留为乐观 | 需要“谁买、买什么、何时确认”的订单证据 |
+| Dragonfly G5/G3 + 3Di/EchoScan advanced packaging inspection/metrology | 极度乐观产品 | 8.0-10.0 亿美元 | gross profit 约 4.8-6.2 亿美元；可能成为公司主要利润增量 | 大幅上行，但必须保持定价权 | 显著高于预期 | HBM4/4E、CoWoS-like、ASIC 二供和 OSAT 同时前拉 | 下移为上限，不作为基准 | 接近局部产能和客户吸收上限，不能只靠行业 beta |
+| Atlas G6/Atlas OCD/Iris advanced-node metrology | 悲观产品 | 2.7-3.2 亿美元 | gross profit 约 1.4-1.8 亿美元 | 持平或下行 | 低于 advanced nodes +25% 预期 | 部分 advanced-node 项目延后 | 保留悲观 | KLA/Nova/ASML-HMI 在关键客户压制，memory fab timing 推迟 |
+| Atlas G6/Atlas OCD/Iris advanced-node metrology | 基准产品 | 3.0-3.6 亿美元 | gross profit 约 1.7-2.1 亿美元 | 稳定到小幅上行 | 符合当前预期 | Q1 advanced nodes 8000 万美元，memory/logic demand 清楚 | 保留基准 | 产品拆分未披露，份额假设需保守 |
+| Atlas G6/Atlas OCD/Iris advanced-node metrology | 乐观产品 | 3.8-4.8 亿美元 | gross profit 约 2.2-2.8 亿美元 | 上行 | 高于当前预期 | GAA/DRAM/HBM4 base die 和 advanced logic 多客户上修 | 保留乐观 | 需客户选择和多供应商份额证据 |
+| Atlas G6/Atlas OCD/Iris advanced-node metrology | 极度乐观产品 | 5.5-7.0 亿美元 | gross profit 约 3.2-4.1 亿美元 | 上行但竞争压制可能限制扩张 | 显著高于预期 | High-NA/GAA/HBM4 metrology 前置采购 | 下移为极度上限 | 前道 process-control 龙头竞争强，不能自动给非线性份额 |
+| Semilab FAaST/CnCV/MBIR materials and surface-charge metrology | 悲观产品 | 1.05-1.25 亿美元 | operating contribution 约 0.35-0.50 亿美元，GAAP 受摊销压制 | 下行，整合费用和摊销拖累 | 低于 >1.30 亿美元目标 | 既有客户收入仍可见 | 保留悲观 | 交叉销售慢，客户不把 surface charge 放入 NTM priority |
+| Semilab FAaST/CnCV/MBIR materials and surface-charge metrology | 基准产品 | 1.30-1.45 亿美元 | operating contribution 约 0.55-0.75 亿美元，non-GAAP 质量较好 | 稳定到上行 | 符合当前预期 | Q1 Semilab USA 2710 万美元收入、1340 万美元 operating income | 保留基准 | 并购整合、客户支持和 amortization |
+| Semilab FAaST/CnCV/MBIR materials and surface-charge metrology | 乐观产品 | 1.60-1.95 亿美元 | operating contribution 约 0.75-1.05 亿美元 | 上行 | 高于当前目标 | ONTO 渠道交叉销售、HBM/GAA/advanced package 客户扩散 | 保留乐观 | 需更多客户和 order conversion |
+| Semilab FAaST/CnCV/MBIR materials and surface-charge metrology | 极度乐观产品 | 2.10-2.60 亿美元 | operating contribution 约 1.0-1.4 亿美元 | 大幅上行 | 显著高于预期 | hybrid bonding/HBM4E surface/contamination 成为关键良率变量 | 下移为上限 | NTM 内材料/表面量测从 lab/nearline 到 inline 的速度不确定 |
+| JetStep + Firefly panel-level packaging / glass / AICS | 悲观产品 | 0.10-0.25 亿美元 | 低到小额正贡献，定制成本高 | 下行或低位 | 低于当前小额期望 | 仍有 pilot/qualification | 保留悲观 | Panel/glass/CoPoS 后移，没有量产客户 |
+| JetStep + Firefly panel-level packaging / glass / AICS | 基准产品 | 0.25-0.50 亿美元 | gross profit 约 0.10-0.25 亿美元 | 稳定，小基数 | 符合保守预期 | 两家 packaging suppliers qualification，既有产品组合 | 保留基准但小权重 | 缺大额订单和收入确认披露 |
+| JetStep + Firefly panel-level packaging / glass / AICS | 乐观产品 | 0.70-1.20 亿美元 | gross profit 约 0.30-0.65 亿美元 | 上行，若 tool package 标准化 | 高于当前预期 | CoPoS/glass/panel pilot 前置，客户新增产线 | 保留乐观 | 需客户、交付和验收时间表 |
+| JetStep + Firefly panel-level packaging / glass / AICS | 极度乐观产品 | 1.50-2.00 亿美元 | gross profit 约 0.70-1.10 亿美元 | 上行但执行风险高 | 显著高于预期 | panel-level 转小规模 HVM，JetStep/Firefly 成产线组合 | 下移为极度上限/附录 | 2026-2027 主流 AI package 仍可能由 CoWoS/ABF 支配 |
+| Discover / Ai Diffract / parts / services / installed-base support | 悲观产品 | 1.75-2.05 亿美元 | gross profit 稳定，但增长慢 | 稳定 | 低于装机扩张预期 | Q1 parts/services 4480 万美元 | 保留悲观 | 工具出货放缓、客户减少 upgrades |
+| Discover / Ai Diffract / parts / services / installed-base support | 基准产品 | 1.90-2.30 亿美元 | 高毛利稳定器，支撑现金流 | 稳定到上行 | 符合当前预期 | parts/services run-rate、installed base 扩大 | 保留基准 | 软件独立披露弱，attach rate 需估算 |
+| Discover / Ai Diffract / parts / services / installed-base support | 乐观产品 | 2.30-2.80 亿美元 | 高毛利贡献扩大，支持 non-GAAP OM | 上行 | 高于当前预期 | G5/Atlas/Semilab 装机和 defect analytics attach 提升 | 保留乐观 | 客户自研或 KLA/Applied 软件打包 |
+| Discover / Ai Diffract / parts / services / installed-base support | 极度乐观产品 | 3.20-3.80 亿美元 | 高毛利软件/服务成为利润率主要拉动 | 大幅上行 | 显著高于预期 | Discover/Ai Diffract 成高端客户默认配置 | 下移为上限 | 需要可验证 attach rate，不可只按软件叙事上修 |
+| Rigaku X-ray/CD-SAXS + Ai Diffract | 悲观产品 | 0 | 无 NTM 产品利润 | 无法可靠量化 | 低于潜在协同 | 交易/客户评估仍在 | 保留悲观 | 交易推迟、throughput 不足、客户认证慢 |
+| Rigaku X-ray/CD-SAXS + Ai Diffract | 基准产品 | 0-0.20 亿美元 | licensing 小额高毛利；不并表 | 无法可靠量化 | 符合保守预期 | 两个客户选择 integrated offering | 移入附录/小额跟踪 | 不并表，缺交付路径 |
+| Rigaku X-ray/CD-SAXS + Ai Diffract | 乐观产品 | 0.30-0.80 亿美元 | licensing + Atlas pull-through，利润率好但金额小 | 上行 | 高于当前基准 | 多家 customer evaluation 转 qualification | 仅作跟踪 | 客户和时间表必须明确 |
+| Rigaku X-ray/CD-SAXS + Ai Diffract | 极度乐观产品 | 1.00-1.50 亿美元 | 高毛利软件和 pull-through，但概率低 | 上行 | 显著高于预期 | X-ray hybrid metrology early production qualification | 移入附录 | NTM 内不应把 5 年 >10 亿美元 TAM 当收入 |
+| 其他 specialty / mature-node systems | 悲观产品 | 1.30-1.80 亿美元 | 毛利率较低或周期性强 | 下行 | 可能低于底盘 | 存量客户 | 保留悲观 | 成熟节点价格、出口限制、客户 capex 削减 |
+| 其他 specialty / mature-node systems | 基准产品 | 1.20-1.60 亿美元 | 稳定底盘 | 稳定 | 符合当前预期 | 历史底盘业务 | 保留基准 | 不是 AI 非线性来源 |
+| 其他 specialty / mature-node systems | 乐观产品 | 1.50-1.90 亿美元 | 有小幅利润贡献 | 小幅上行 | 高于当前底盘 | power/RF/MEMS/CIS 等复苏 | 保留乐观 | 不能重复计入 AP 或 advanced nodes |
+| 其他 specialty / mature-node systems | 极度乐观产品 | 2.00-2.20 亿美元 | 利润贡献有限 | 小幅上行 | 高于预期但非核心 | 多个 specialty 市场同步恢复 | 保留下限权重 | 周期业务不应驱动极度乐观公司情景 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为 ONTO NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。汇总时剔除重复：Semilab 不再重复计入 advanced nodes；parts/services 与系统软件分开；Rigaku 大部分不并表；panel/glass 远期期权不替代 NTM 基准。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 12.4-13.3 亿美元 | 较 2025 年收入 10.053 亿美元约 +23-32% | 低于管理层 >13 亿美元和 H2 ramp 隐含路径，或只略高于下限 | GAAP 49-52%；non-GAAP 53.5-55.5% | non-GAAP 24-27%；GAAP 10-15% | non-GAAP operating income 约 3.0-3.6 亿美元；GAAP 净利润无法可靠量化，可能受 amortization/transaction costs 压制 | 经营现金流为正但营运资本消耗大；FCF 低于利润 | 中 | VPA 交付后移、G5 发货慢、advanced nodes 验收慢、Semilab 低于 1.20 亿美元 |
+| 基准公司 | 13.8-15.0 亿美元 | 较 2025 年约 +37-49% | 符合当前指引、G5 ramp、Semilab 并表和 AP >50% 增长正常兑现 | GAAP 51-54%；non-GAAP 55.5-57.0% | non-GAAP 28-30%；GAAP 14-18% | non-GAAP operating income 约 3.9-4.5 亿美元；GAAP 净利润方向改善但受摊销扰动 | 经营现金流为正；应收和存货上升使 FCF 转化率中等 | 中高 | G5/3Di 客户验收、precision optics 供应、客户集中和季度收入波动 |
+| 乐观公司 | 15.2-16.8 亿美元 | 较 2025 年约 +51-67% | 高于当前预期，且不是单一小基数项目造成 | GAAP 53-55%；non-GAAP 56.5-58.0% | non-GAAP 30-32%；GAAP 17-21% | non-GAAP operating income 约 4.6-5.4 亿美元；净利润质量随 mix 改善 | 经营现金流改善，但营运资本仍可能吸收 0.5-1.0 亿美元 | 中 | 多客户追加订单、G5 成为更多 POR、Atlas/Semilab 同步上修 |
+| 极度乐观公司 | 17.0-19.0 亿美元 | 较 2025 年约 +69-89% | 显著高于当前预期，接近管理层长期 20 亿美元 run-rate 能力 | GAAP 54-57%；non-GAAP 57.5-60.0% | non-GAAP 32-35%；GAAP 20-25% | non-GAAP operating income 约 5.5-6.6 亿美元；GAAP 净利润仍需扣除并购/摊销/融资影响 | FCF 可显著改善，但应收、库存和客户验收周期会放大波动 | 低到中 | HBM4/4E、CoWoS-like、GAA/HBM base die、Semilab、panel/Rigaku 多环节同时兑现 |
+
+汇总检查：
+
+| 检查项 | 处理 |
+| --- | --- |
+| 产品重复计算 | Advanced packaging、advanced nodes、Semilab、services、other specialty 分开估算；软件仅计 standalone/服务 attach，避免重复加总系统软件 |
+| 一次性项目 | Semilab purchase accounting 不作为经营增长质量；Rigaku 交易不并表，不作为 NTM 基准收入 |
+| 传统业务抵消 | 其他 specialty/mature-node 只作为底盘，不上修为 AI 收入 |
+| 低毛利 pass-through | ONTO 主要是设备/软件/服务，非 pass-through；但定制化、inventory step-up 和低利用率会压 GAAP 毛利 |
+| 客户预算重叠 | HBM、CoWoS、OSAT、advanced nodes 同属 AI chip capex，基准中按客户确认节奏折扣，避免把同一客户 capex 多次上修 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测，只校准前四步。校准动作只使用保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 2.919 亿美元，Q2 指引 3.20-3.30 亿美元 | 公司汇总 | 支撑 NTM 基准从 Q1 run-rate 上修到 13.8-15.0 亿美元 | Q2 non-GAAP GM/OM 指引支撑经营杠杆改善 | Q2/H2 ramp 会拉高应收和存货 | 保留基准 |
+| Dragonfly G5 在 HBM 与领先 2.5D logic 客户 qualification | 产品贡献 | AP 基准收入进入 5.0-5.8 亿美元区间，乐观有追加空间 | 高端配置和 3Di attach 支撑毛利 | 客户验收和 field support 是执行瓶颈 | 保留基准，上移乐观 |
+| >2.40 亿美元 HBM VPA 覆盖 2027 扩产 | 收入基数 | B 级订单锚，强化 AP 可收入化 | 规模和服务 attach 支撑利润 | 交付窗口比取消风险更重要 | 保留基准 |
+| Semilab Q1 收入 2710 万美元、operating income 1340 万美元 | 收入基数/利润 | Semilab 1.30-1.45 亿美元基准有 A 级证据 | non-GAAP 利润质量好，但 GAAP 摊销压制 | 并购整合和 working capital 需跟踪 | 保留基准 |
+| Advanced nodes Q1 约 8000 万美元、2026 约 +25% 目标 | 产品贡献 | Atlas/Iris 基准 3.0-3.6 亿美元 | 毛利稳定，但份额和价格受竞争限制 | fab timing 影响验收 | 保留基准 |
+| Customer concentration：Q1 三个客户各超过 10% 收入，前几大客户和地区集中在 Taiwan/South Korea/US | 执行可信度 | 放大季度波动和 push-out 风险 | 客户议价可能影响 ASP | 应收账款集中，Q1 两个客户应收合计约 27% | 保留风险，不重复惩罚 |
+| Q1 operating cash flow 2632 万美元，working capital 消耗明显 | 现金流 | 不改变收入情景 | 不改变毛利判断 | FCF 转化率低于利润，H2 ramp 可能继续吸收现金 | 保留基准但下修 FCF 质量 |
+| Rigaku 7.10 亿美元 27% 股权投资和 X-ray partnership | 远期期权/现金流 | 不并表，不进 NTM 基准主收入 | 可能提升长期 Ai Diffract/Atlas pull-through | 交易和融资影响现金结构 | 移入附录/仅作跟踪 |
+| JetStep/Firefly panel/glass qualification | 产品贡献 | 小额进入基准，主要在乐观/极度乐观 | 量产前定制支持成本高 | 客户 qualification 和 2027 production prep 是关键 | 保留小额基准，远期期权仅作跟踪 |
+| Camtek/KLA/Nova 竞争加强 | 产品贡献/利润率 | 限制 AP 和 advanced nodes 乐观上限 | 可能压 ASP 或要求更高配置 | 客户多供应商策略增加验证成本 | 保留为产品层反证 |
+| HBM4/Rubin/MI400/ASIC ramp 延迟 | 需求 | 下修 AP、Semilab 和 advanced nodes 需求上沿 | 利用率和 mix 下滑 | 订单 push-out、应收/库存周转变慢 | 保留悲观触发条件 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 12.4-13.3 亿美元，AP/advanced nodes 低于当前上修路径 | 即使悲观也有 Q2 guide、Semilab 并表和 AP VPA 支撑 | HBM4/2.5D push-out、Camtek/KLA 抢份额、Semilab 低于 1.20 亿美元、working capital 消耗 | 保留 | 悲观下限 | 中 | 同一个客户 push-out 只在收入确认和现金流处理一次，不再重复压需求和利润 |
+| 基准 | NTM 13.8-15.0 亿美元，当前预期正常兑现 | Q1/Q2 run-rate、AP >50%、advanced nodes +25%、Semilab A 级收入、VPA/qualification | 产品级拆分不完整、客户集中、Q1 FCF 转化低 | 保留 | 最可能情景 | 中高 | Semilab 摊销只影响 GAAP 利润，不重复压 non-GAAP 产品利润 |
+| 乐观 | NTM 15.2-16.8 亿美元，AP/G5 和 Atlas/Semilab 同步上修 | HBM4/2.5D customer expansion、G5 new product adoption、growing backlog、software/service attach | 缺新增大额客户订单披露；竞争对手也拿单 | 保留 | 乐观但需新增订单验证 | 中 | 行业 HBM 增速不能直接替代 ONTO 份额；只在需求层使用一次 |
+| 极度乐观 | NTM 17.0-19.0 亿美元，接近 20 亿美元 run-rate 能力 | 多产品组合具备技术期权，management 提到制造体系可支撑更高 run-rate | 任一核心环节缺证据；Rigaku/panel/glass 多数仍非 NTM 主收入 | 下移 | 极度乐观上限/附录跟踪并列 | 低到中 | Rigaku 五年 TAM、glass/panel 2028 机会不得重复计入 NTM 收入 |
+
+## 8. 结论
+
+- 最可能情景：基准。ONTO 的 NTM 主线是“已披露指引和订单正常兑现”：Q2 收入 3.20-3.30 亿美元、H2 继续上台阶，Dragonfly/3Di/AP 贡献最大，Atlas/Iris 形成 advanced-node 底盘，Semilab 贡献超过 1.30 亿美元年化收入，parts/services 带来高毛利稳定器。基准 NTM 收入 13.8-15.0 亿美元，non-GAAP operating margin 28-30%，经营现金流为正但受营运资本吸收。
+- 乐观情景成立条件：G5/3Di 在 Q2/Q3 发货不只是逐季增加，而且新增 HBM/2.5D/OSAT/foundry volume purchase；AP 2026 增长继续高于 >50% 目标；Atlas/Iris 随 DRAM/HBM/GAA 订单上修；Semilab 交叉销售超过 1.60 亿美元年化；non-GAAP GM 保持 56.5-58%。
+- 极度乐观情景成立条件：HBM4/4E、Rubin/MI400/custom ASIC、CoWoS-like 二供、advanced-node metrology、Semilab surface/contamination、JetStep/Firefly panel/glass 和 Rigaku/Ai Diffract 中至少四条同时在 NTM 内出现可确认订单或交付。没有客户、产品、时间表和收入确认路径的机会只能留在附录，不能进入基准。
+- 悲观情景触发条件：G5 Q2/Q3 发货未按管理层节奏爬坡；HBM VPA 交付窗口推迟；advanced packaging 指引从 >50% 下修；advanced nodes 客户验收慢；Camtek/KLA/Nova 披露的 AI/HBM inspection/metrology 订单明显强于 ONTO；Semilab 年收入低于 1.20 亿美元；应收和存货持续上升但收入未兑现。
+- 后续跟踪数据：Q2 实际收入和 Q3 指引；Dragonfly G5 发货台数/客户新增；HBM VPA 交付节奏；advanced packaging revenue growth 是否维持 >50%；advanced nodes memory/logic mix；Semilab 季度收入和 operating contribution；non-GAAP GM 是否维持 56% 以上；Q2/Q3 operating cash flow、DSO、inventory；Rigaku closing 后是否出现 Ai Diffract/X-ray 客户 qualification；JetStep/Firefly 是否获得更多 panel/glass/CoPoS 订单。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：最新正式财务数据为 Onto Innovation 2026Q1，期末 2026-03-31，新闻稿和 10-Q 发布/提交于 2026-05-05；本地公司和行业研究资料主要日期为 2026-06-11；本报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Onto Innovation Q1 2026 Results，2026-05-05：https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2026-First-Quarter-Results/default.aspx
+  - Onto Innovation 2026Q1 Form 10-Q：https://www.sec.gov/Archives/edgar/data/704532/000119312526206707/onto-20260331.htm
+  - Onto Innovation Dragonfly G5 launch，2026-03-16：https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Launches-Dragonfly-G5-Inspection-System/default.aspx
+  - Onto Innovation Dragonfly G5 2.5D AI packaging qualification，2026：https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovations-Dragonfly-G5-System-Qualified-for-Applications-in-2-5D-AI-Packaging/default.aspx
+  - Onto Innovation / Rigaku strategic partnership，2026-04-20：https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Announces-Strategic-Partnership-With-Leading-X-Ray-Provider-Rigaku-To-Advance-Next-Generation-Process-Control-Solutions/default.aspx
+  - Onto Innovation Q4/FY2025 Results，2026-02-19：https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2025-Fourth-Quarter-and-Full-Year-Results/default.aspx
+- 本地正式资料：
+  - `公司调研/封测_检测_计量_光罩/ONTO_Onto Innovation_公司调研_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_玻璃基板、TGV与玻璃检测_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 管理层口径：收入超过 13 亿美元、同比超过 30%，advanced packaging 增长超过 50%，advanced nodes 增长约 25%，Semilab 年收入目标超过 1.30 亿美元。
+  - NTM 基准高于 FY2026 下限，是因为 NTM 包含 2027Q1 且假设 G5/3Di、Semilab 和 advanced nodes 在 2026H2 之后继续正常兑现。
+  - 长期 run-rate：公司制造体系据本地公司调研整理可支撑约 20 亿美元 revenue run-rate；本报告只在极度乐观中作为上限约束，不作为基准。
+  - Rigaku/X-ray：2026 不并表，大部分为远期期权；只在 NTM 基准中允许 0-0.2 亿美元小额 licensing/协同，不把 5 年 TAM 当作收入。
+  - Panel/glass/CPO：2026-2027 仍处 qualification/pilot/production-prep，基准只给小额 JetStep/Firefly 收入；大规模 glass/panel 和 CPO 封装检测放入乐观、极度乐观或后续跟踪。
+- 主要来源：
+  - SEMI 300mm fab equipment forecast：https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027
+  - SEMI equipment sales forecast：https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-projected-to-reach-a-record-of-156-billion-dollars-in-2027-semi-reports
+  - TSMC 2026 Technology Symposium：https://pr.tsmc.com/english/news/3302
+  - ASE 310mm panel-level packaging：https://www.aseglobal.com/press-room/310x310
+  - SEMI/GNC glass core substrate report：https://www.semi.org/en/semi-press-release/semi-and-global-net-corp-release-new-report-on-glass-core-substrate-market-and-development-trends-for-semiconductors

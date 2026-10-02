@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "batches": [
+    {
+      "batchId": "cid-us-2026-08-19-24",
+      "sourceDate": "2026-08-19",
+      "marketScope": "美国上市股票、美元定价、美国投资者定价环境；包括在美国交易的 TSM ADR",
+      "subjects": [
+        "TEL",
+        "CMI",
+        "AVGO",
+        "AMKR",
+        "CARR",
+        "HPE",
+        "NVDA",
+        "TSM",
+        "META",
+        "EME",
+        "POWL",
+        "MKSI",
+        "NVT",
+        "MU",
+        "ALAB",
+        "CRDO",
+        "LITE",
+        "ANET",
+        "GEV",
+        "BE",
+        "STX",
+        "WDC",
+        "NBIS",
+        "CRWV"
+      ],
+      "snapshotFile": "金融资料/市场状态/美国股票市场状态快照_2026-08-19.md",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663"
+    }
+  ]
+}

@@ -1,0 +1,3731 @@
+{
+  "asof": "2026-09-09",
+  "selection": "AI乐观发展下兼顾已形成的现金流、估值与增长的主观组合优先级；非概率模型或唯一数学最优解",
+  "iv_definition": "same-expiry clean near-ATM call source annualized implied volatility",
+  "snapshot_path": "D:\\drive\\Investment\\金融资料\\每日金融数据\\每日金融数据_2026-09-09.md",
+  "snapshot_sha256": "fd93f8dd515fd392896b99a0c848be7fad26e53e1b8bccfe19ff146c0ed20ef2",
+  "scenario_source_path": "D:\\drive\\Investment\\备份\\20家公司投资价值与多维图谱_2026-09-09\\market_scenario_data.json",
+  "scenario_source_sha256": "1bb97c8a2ac4f6fe3eb5b629285e22e0e7bf1d5350a08c5bc297dd5a647df622",
+  "rows": [
+    {
+      "rank": 1,
+      "ticker": "MU",
+      "name": "美光",
+      "sector": "AI服务器_存储_EMS",
+      "price": 1027.77,
+      "price_date": "2026-09-09",
+      "pe": 23.25,
+      "forward_pe": 6.63,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 935.8900146484375,
+          "adjclose": 935.74609375,
+          "volume": 73448600,
+          "target": "2026-06-09",
+          "return": 9.81739135084978
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 389.32000732421875,
+          "adjclose": 389.0966796875,
+          "volume": 35547200,
+          "target": "2026-03-09",
+          "return": 163.99105637129293
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 135.24000549316406,
+          "adjclose": 135.02328491210938,
+          "volume": 20705000,
+          "target": "2025-09-09",
+          "return": 659.9600401169389
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜9.6%至37.4%｜低",
+          "percent_values": [
+            9.6,
+            37.4
+          ],
+          "source_line": 515,
+          "low": 9.6,
+          "high": 37.4,
+          "mid": 23.5,
+          "annual_low": 9.600000000000009,
+          "annual_high": 37.40000000000001,
+          "positive": true,
+          "rebased_low": 6.666370880644501,
+          "rebased_high": 33.72225692518755
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜33.3%至62.5%｜低",
+          "percent_values": [
+            33.3,
+            62.5
+          ],
+          "source_line": 515,
+          "low": 33.3,
+          "high": 62.5,
+          "mid": 47.9,
+          "annual_low": 10.055068845243875,
+          "annual_high": 17.566734386037865,
+          "positive": true,
+          "rebased_low": 29.732000350272926,
+          "rebased_high": 58.15041303015267
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜184.6%至273.2%｜低",
+          "percent_values": [
+            184.6,
+            273.2
+          ],
+          "source_line": 515,
+          "low": 184.6,
+          "high": 273.2,
+          "mid": 228.89999999999998,
+          "annual_low": 184.60000000000002,
+          "annual_high": 273.2,
+          "positive": true,
+          "rebased_low": 176.98220029773196,
+          "rebased_high": 263.21067164832596
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜249.9%至344.5%｜低",
+          "percent_values": [
+            249.9,
+            344.5
+          ],
+          "source_line": 515,
+          "low": 249.9,
+          "high": 344.5,
+          "mid": 297.2,
+          "annual_low": 51.814987268941515,
+          "annual_high": 64.42098859237197,
+          "positive": true,
+          "rebased_low": 240.5343355030795,
+          "rebased_high": 332.6022067194022
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜152.4%至216.5%｜低",
+          "percent_values": [
+            152.4,
+            216.5
+          ],
+          "source_line": 515,
+          "low": 152.4,
+          "high": 216.5,
+          "mid": 184.45,
+          "annual_low": 36.15380523164413,
+          "annual_high": 46.822034621799816,
+          "positive": true,
+          "rebased_low": 145.64408768498788,
+          "rebased_high": 208.02834291718963
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-45.6%至-36.4%｜中",
+          "percent_values": [
+            -45.6,
+            -36.4
+          ],
+          "source_line": 515,
+          "low": -45.6,
+          "high": -36.4,
+          "mid": -41.0,
+          "annual_low": -18.366897961653038,
+          "annual_high": -14.002523960859092,
+          "positive": false,
+          "rebased_low": -47.056107884059664,
+          "rebased_high": -38.10236142327563
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MU_经营情景市场状态投资决策_2026-09-08.md",
+      "report_sha256": "88cbbc4f98008267dee1a14f3cac771a1c87d2553475f9582750f0a77f1870ab",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 1000.26,
+      "iv_percent": 65.9884993,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:27.779300-07:00",
+      "iv_contract": {
+        "contractSymbol": "MU261016C01030000",
+        "lastTradeDate": "2026-09-09T19:59:48.000Z",
+        "strike": 1030.0,
+        "lastPrice": 84.49,
+        "bid": 84.15,
+        "ask": 85.8,
+        "change": 8.220001,
+        "percentChange": 10.777503,
+        "volume": 124.0,
+        "openInterest": 456,
+        "impliedVolatility": 0.659884993,
+        "inTheMoney": false,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 0.21697461494303294,
+      "iv_relative_bid_ask_spread_percent": 1.941747572815524,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/MU/options/?date=1792108800",
+      "option_raw_sha256": "c0a0069ffa67bef098568419caec2efc65801587d5c659c6d7fbfeaed45177c7",
+      "optional_paired_call_put_iv_percent": 64.769334245,
+      "defense_basis": "HBM、DRAM及存储制造技术；现有利润和现金积累",
+      "growth_business": "HBM扩容、DRAM定价、AI服务器内存含量提升",
+      "failure_mechanism": "周期、资本开支和价格回落；低Forward PE可能是高景气利润的倒数"
+    },
+    {
+      "rank": 2,
+      "ticker": "ADBE",
+      "name": "Adobe",
+      "sector": "云算力_IDC_AI软件平台",
+      "price": 254.86,
+      "price_date": "2026-09-09",
+      "pe": 14.59,
+      "forward_pe": 9.27,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 237.8800048828125,
+          "adjclose": 237.8800048828125,
+          "volume": 6747400,
+          "target": "2026-06-09",
+          "return": 7.138050600575863
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 282.44000244140625,
+          "adjclose": 282.44000244140625,
+          "volume": 4728400,
+          "target": "2026-03-09",
+          "return": -9.764906600695788
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 354.05999755859375,
+          "adjclose": 354.05999755859375,
+          "volume": 4324900,
+          "target": "2025-09-09",
+          "return": -28.01784958555704
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "建议投资",
+          "text": "建议投资｜46.5%—92.3%｜中",
+          "percent_values": [
+            46.5,
+            92.3
+          ],
+          "source_line": 442,
+          "low": 46.5,
+          "high": 92.3,
+          "mid": 69.4,
+          "annual_low": 46.50000000000001,
+          "annual_high": 92.30000000000001,
+          "positive": true,
+          "rebased_low": 46.50000000000001,
+          "rebased_high": 92.30000000000001
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜81.6%—133.6%｜中",
+          "percent_values": [
+            81.6,
+            133.6
+          ],
+          "source_line": 442,
+          "low": 81.6,
+          "high": 133.6,
+          "mid": 107.6,
+          "annual_low": 22.003404007861228,
+          "annual_high": 32.685748737349925,
+          "positive": true,
+          "rebased_low": 81.59999999999998,
+          "rebased_high": 133.6
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "建议投资",
+          "text": "建议投资｜140.3%—220.1%｜低",
+          "percent_values": [
+            140.3,
+            220.1
+          ],
+          "source_line": 442,
+          "low": 140.3,
+          "high": 220.1,
+          "mid": 180.2,
+          "annual_low": 140.3,
+          "annual_high": 220.1,
+          "positive": true,
+          "rebased_low": 140.3,
+          "rebased_high": 220.1
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜199.1%—287.8%｜低",
+          "percent_values": [
+            199.1,
+            287.8
+          ],
+          "source_line": 442,
+          "low": 199.1,
+          "high": 287.8,
+          "mid": 243.45,
+          "annual_low": 44.08058760789633,
+          "annual_high": 57.10955610759563,
+          "positive": true,
+          "rebased_low": 199.09999999999997,
+          "rebased_high": 287.8
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜151.3%—232.0%｜低",
+          "percent_values": [
+            151.3,
+            232.0
+          ],
+          "source_line": 442,
+          "low": 151.3,
+          "high": 232.0,
+          "mid": 191.65,
+          "annual_low": 35.955723764592506,
+          "annual_high": 49.18071851783281,
+          "positive": true,
+          "rebased_low": 151.29999999999998,
+          "rebased_high": 231.99999999999997
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "不建议投资",
+          "text": "不建议投资｜-46.8%—-40.0%｜低",
+          "percent_values": [
+            -46.8,
+            -40.0
+          ],
+          "source_line": 442,
+          "low": -46.8,
+          "high": -40.0,
+          "mid": -43.4,
+          "annual_low": -18.971609809561063,
+          "annual_high": -15.65673346982508,
+          "positive": false,
+          "rebased_low": -46.8,
+          "rebased_high": -40.0
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ADBE_经营情景市场状态投资决策_2026-09-09.md",
+      "report_sha256": "79906452350d4b00840a1bfc22f12520393fd5ef274a83aa8842e1c4daeff0cf",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 254.86,
+      "iv_percent": 54.40109076,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:27.779300-07:00",
+      "iv_contract": {
+        "contractSymbol": "ADBE261016C00255000",
+        "lastTradeDate": "2026-09-09T19:39:46.000Z",
+        "strike": 255.0,
+        "lastPrice": 17.55,
+        "bid": 16.05,
+        "ask": 19.0,
+        "change": -1.4000015,
+        "percentChange": -7.387871,
+        "volume": 47,
+        "openInterest": 281,
+        "impliedVolatility": 0.5440109076,
+        "inTheMoney": false,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 0.05493211959506361,
+      "iv_relative_bid_ask_spread_percent": 16.833095577746075,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/ADBE/options/?date=1792108800",
+      "option_raw_sha256": "2671b147fd7a9703814de1874be31c7e9a39c05867cacc82c32d49fe837b0dc2",
+      "optional_paired_call_put_iv_percent": 52.21300229000001,
+      "defense_basis": "创意和文档订阅、专业工作流与客户续费；当前估值较低",
+      "growth_business": "Firefly商业化、企业内容自动化、Acrobat AI和付费升级",
+      "failure_mechanism": "AI工具替代与定价权下降；AI行业增长不自动等于Adobe增长"
+    },
+    {
+      "rank": 3,
+      "ticker": "MSFT",
+      "name": "微软",
+      "sector": "云算力_IDC_AI软件平台",
+      "price": 491.65,
+      "price_date": "2026-09-09",
+      "pe": 27.42,
+      "forward_pe": 20.86,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 403.4100036621094,
+          "adjclose": 402.6520080566406,
+          "volume": 35317300,
+          "target": "2026-06-09",
+          "return": 21.873527065977072
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 409.4100036621094,
+          "adjclose": 407.757568359375,
+          "volume": 30131900,
+          "target": "2026-03-09",
+          "return": 20.087441831481033
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 498.4100036621094,
+          "adjclose": 494.34271240234375,
+          "volume": 14410500,
+          "target": "2025-09-09",
+          "return": -1.3563138003731323
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "中性",
+          "text": "中性 / 等待｜-11.0%至+32.3%｜低",
+          "percent_values": [
+            -11.0,
+            32.3
+          ],
+          "source_line": 395,
+          "low": -11.0,
+          "high": 32.3,
+          "mid": 10.649999999999999,
+          "annual_low": -10.999999999999998,
+          "annual_high": 32.3,
+          "positive": false,
+          "rebased_low": -10.999999999999998,
+          "rebased_high": 32.3
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "中性",
+          "text": "中性 / 等待｜+7.5%至+55.8%｜低",
+          "percent_values": [
+            7.5,
+            55.8
+          ],
+          "source_line": 395,
+          "low": 7.5,
+          "high": 55.8,
+          "mid": 31.65,
+          "annual_low": 2.4399807259133155,
+          "annual_high": 15.928215594669282,
+          "positive": false,
+          "rebased_low": 7.499999999999996,
+          "rebased_high": 55.79999999999998
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "建议投资",
+          "text": "建议投资｜+80.2%至+183.8%｜低",
+          "percent_values": [
+            80.2,
+            183.8
+          ],
+          "source_line": 395,
+          "low": 80.2,
+          "high": 183.8,
+          "mid": 132.0,
+          "annual_low": 80.2,
+          "annual_high": 183.8,
+          "positive": true,
+          "rebased_low": 80.2,
+          "rebased_high": 183.8
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜+117.1%至+233.3%｜低",
+          "percent_values": [
+            117.1,
+            233.3
+          ],
+          "source_line": 395,
+          "low": 117.1,
+          "high": 233.3,
+          "mid": 175.2,
+          "annual_low": 29.485143120523773,
+          "annual_high": 49.3751787139777,
+          "positive": true,
+          "rebased_low": 117.10000000000002,
+          "rebased_high": 233.3
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜+63.6%至+148.2%｜低",
+          "percent_values": [
+            63.6,
+            148.2
+          ],
+          "source_line": 395,
+          "low": 63.6,
+          "high": 148.2,
+          "mid": 105.89999999999999,
+          "annual_low": 17.831416834500512,
+          "annual_high": 35.39436582138193,
+          "positive": true,
+          "rebased_low": 63.60000000000001,
+          "rebased_high": 148.20000000000002
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-59.1%至-47.7%｜中",
+          "percent_values": [
+            -59.1,
+            -47.7
+          ],
+          "source_line": 395,
+          "low": -59.1,
+          "high": -47.7,
+          "mid": -53.400000000000006,
+          "annual_low": -25.770858795637842,
+          "annual_high": -19.431137971244517,
+          "positive": false,
+          "rebased_low": -59.099999999999994,
+          "rebased_high": -47.70000000000001
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MSFT_经营情景市场状态投资决策_2026-09-09.md",
+      "report_sha256": "3ca632279db702593f81c72c8d76e84916cf1b2077ebd8c55660d51ad92b0b45",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 491.65,
+      "iv_percent": 28.336287929999997,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:27.779300-07:00",
+      "iv_contract": {
+        "contractSymbol": "MSFT261016C00490000",
+        "lastTradeDate": "2026-09-09T19:57:43.000Z",
+        "strike": 490.0,
+        "lastPrice": 18.39,
+        "bid": 18.15,
+        "ask": 18.5,
+        "change": -1.0600014,
+        "percentChange": -5.449878,
+        "volume": 118,
+        "openInterest": 7676,
+        "impliedVolatility": 0.2833628793,
+        "inTheMoney": true,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 0.33560459676599264,
+      "iv_relative_bid_ask_spread_percent": 1.9099590723056015,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/MSFT/options/?date=1792108800",
+      "option_raw_sha256": "ae9bc709a3232d018e5d484d25583aea7e0ffc3cbbfc79821f72a1a55b724f36",
+      "optional_paired_call_put_iv_percent": 26.613587875,
+      "defense_basis": "企业合同、Office/身份/安全/云平台和经常性收入",
+      "growth_business": "Azure AI、Copilot、代理及企业AI预算转为可持续利润",
+      "failure_mechanism": "巨额资本开支、折旧、模型及能源成本"
+    },
+    {
+      "rank": 4,
+      "ticker": "NVDA",
+      "name": "英伟达",
+      "sector": "AI计算芯片_EDA_IP_custom_ASIC",
+      "price": 223.67,
+      "price_date": "2026-09-09",
+      "pe": 28.31,
+      "forward_pe": 14.41,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 208.19000244140625,
+          "adjclose": 208.19000244140625,
+          "volume": 180962500,
+          "target": "2026-06-09",
+          "return": 7.43551437487997
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 182.64999389648438,
+          "adjclose": 182.427490234375,
+          "volume": 177213600,
+          "target": "2026-03-09",
+          "return": 22.458257582402897
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 170.75999450683594,
+          "adjclose": 170.53286743164062,
+          "volume": 157548400,
+          "target": "2025-09-09",
+          "return": 30.985012412287194
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "不建议投资",
+          "text": "不建议投资｜-18.5% 至 -5.0%｜中低",
+          "percent_values": [
+            -18.5,
+            -5.0
+          ],
+          "source_line": 611,
+          "low": -18.5,
+          "high": -5.0,
+          "mid": -11.75,
+          "annual_low": -18.500000000000007,
+          "annual_high": -5.000000000000004,
+          "positive": false,
+          "rebased_low": -17.749385255063277,
+          "rebased_high": -4.125050297313015
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "不建议投资",
+          "text": "不建议投资｜-2.1% 至 +12.3%｜低",
+          "percent_values": [
+            -2.1,
+            12.3
+          ],
+          "source_line": 611,
+          "low": -2.1,
+          "high": 12.3,
+          "mid": 5.1000000000000005,
+          "annual_low": -0.7049579795299299,
+          "annual_high": 3.9425224804711556,
+          "positive": false,
+          "rebased_low": -1.1983413063888837,
+          "rebased_high": 13.334282648544725
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+134.2% 至 +203.0%｜低",
+          "percent_values": [
+            134.2,
+            203.0
+          ],
+          "source_line": 611,
+          "low": 134.2,
+          "high": 203.0,
+          "mid": 168.6,
+          "annual_low": 134.19999999999996,
+          "annual_high": 202.99999999999997,
+          "positive": true,
+          "rebased_low": 136.35698126704514,
+          "rebased_high": 205.79062905172796
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+194.8% 至 +271.5%｜低",
+          "percent_values": [
+            194.8,
+            271.5
+          ],
+          "source_line": 611,
+          "low": 194.8,
+          "high": 271.5,
+          "mid": 233.15,
+          "annual_low": 43.3867957525514,
+          "annual_high": 54.87676642584211,
+          "positive": true,
+          "rebased_low": 197.51510707739084,
+          "rebased_high": 274.9215138373496
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜+60.9% 至 +89.0%｜低",
+          "percent_values": [
+            60.9,
+            89.0
+          ],
+          "source_line": 611,
+          "low": 60.9,
+          "high": 89.0,
+          "mid": 74.95,
+          "annual_low": 17.179600949056063,
+          "annual_high": 23.63855899425671,
+          "positive": true,
+          "rebased_low": 62.38188849644566,
+          "rebased_high": 90.7406894085036
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-83.8% 至 -82.5%｜中低",
+          "percent_values": [
+            -83.8,
+            -82.5
+          ],
+          "source_line": 611,
+          "low": -83.8,
+          "high": -82.5,
+          "mid": -83.15,
+          "annual_low": -45.4863822150358,
+          "annual_high": -44.06555289593016,
+          "positive": false,
+          "rebased_low": -83.65079805069969,
+          "rebased_high": -82.33882505476818
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\NVDA_经营情景市场状态投资决策_2026-09-08.md",
+      "report_sha256": "1bbe8079d5d488bf95385479951f9f0574e6fc337961f1a6e553cf54c27760d9",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 225.73,
+      "iv_percent": 36.1700719,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:27.779300-07:00",
+      "iv_contract": {
+        "contractSymbol": "NVDA261016C00225000",
+        "lastTradeDate": "2026-09-09T19:59:20.000Z",
+        "strike": 225.0,
+        "lastPrice": 9.5,
+        "bid": 9.5,
+        "ask": 9.65,
+        "change": -1.3999996,
+        "percentChange": -12.844034,
+        "volume": 5264,
+        "openInterest": 20852,
+        "impliedVolatility": 0.361700719,
+        "inTheMoney": false,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 0.59462601153486,
+      "iv_relative_bid_ask_spread_percent": 1.5665796344647556,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/NVDA/options/?date=1792108800",
+      "option_raw_sha256": "fa5354bf8353cdea9a5c6cd11f6f5a1c5bd03d55c73f1953364dd65b9eb0c33d",
+      "optional_paired_call_put_iv_percent": 34.625897890000005,
+      "defense_basis": "CUDA生态、系统与网络能力、已实现盈利和现金",
+      "growth_business": "训练与推理计算、整机系统、网络，以及平台租金持续",
+      "failure_mechanism": "客户资本开支周期、定制芯片、集中度；强业务护城河不等于股价有底"
+    },
+    {
+      "rank": 5,
+      "ticker": "META",
+      "name": "Meta",
+      "sector": "云算力_IDC_AI软件平台",
+      "price": 653.69,
+      "price_date": "2026-09-09",
+      "pe": 24.61,
+      "forward_pe": 18.7,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 584.5900268554688,
+          "adjclose": 584.0487060546875,
+          "volume": 16977400,
+          "target": "2026-06-09",
+          "return": 11.820244952898463
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 647.3900146484375,
+          "adjclose": 646.2373046875,
+          "volume": 13489700,
+          "target": "2026-03-09",
+          "return": 0.9731360090537988
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 765.7000122070312,
+          "adjclose": 763.1986083984375,
+          "volume": 10999000,
+          "target": "2025-09-09",
+          "return": -14.628445921553123
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "不建议投资",
+          "text": "不建议投资｜-16.3%～15.3%｜中",
+          "percent_values": [
+            -16.3,
+            15.3
+          ],
+          "source_line": 349,
+          "low": -16.3,
+          "high": 15.3,
+          "mid": -0.5,
+          "annual_low": -16.300000000000004,
+          "annual_high": 15.300000000000002,
+          "positive": false,
+          "rebased_low": -16.300000000000004,
+          "rebased_high": 15.300000000000002
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "不建议投资",
+          "text": "不建议投资｜2.8%～36.5%｜中",
+          "percent_values": [
+            2.8,
+            36.5
+          ],
+          "source_line": 349,
+          "low": 2.8,
+          "high": 36.5,
+          "mid": 19.65,
+          "annual_low": 0.9247552497784639,
+          "annual_high": 10.928775019696735,
+          "positive": false,
+          "rebased_low": 2.8000000000000025,
+          "rebased_high": 36.5
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "建议投资",
+          "text": "建议投资｜58.5%～137.0%｜低",
+          "percent_values": [
+            58.5,
+            137.0
+          ],
+          "source_line": 349,
+          "low": 58.5,
+          "high": 137.0,
+          "mid": 97.75,
+          "annual_low": 58.5,
+          "annual_high": 137.0,
+          "positive": true,
+          "rebased_low": 58.5,
+          "rebased_high": 137.0
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜92.6%～177.3%｜低",
+          "percent_values": [
+            92.6,
+            177.3
+          ],
+          "source_line": 349,
+          "low": 92.6,
+          "high": 177.3,
+          "mid": 134.95,
+          "annual_low": 24.418633630363452,
+          "annual_high": 40.491469954898875,
+          "positive": true,
+          "rebased_low": 92.6,
+          "rebased_high": 177.3
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜54.6%～115.7%｜中",
+          "percent_values": [
+            54.6,
+            115.7
+          ],
+          "source_line": 349,
+          "low": 54.6,
+          "high": 115.7,
+          "mid": 85.15,
+          "annual_low": 15.629814749591088,
+          "annual_high": 29.20620826625109,
+          "positive": true,
+          "rebased_low": 54.6,
+          "rebased_high": 115.7
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-64.5%～-57.7%｜中",
+          "percent_values": [
+            -64.5,
+            -57.7
+          ],
+          "source_line": 349,
+          "low": -64.5,
+          "high": -57.7,
+          "mid": -61.1,
+          "annual_low": -29.19301248914986,
+          "annual_high": -24.933392504956874,
+          "positive": false,
+          "rebased_low": -64.5,
+          "rebased_high": -57.70000000000001
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\META_经营情景市场状态投资决策_2026-09-09.md",
+      "report_sha256": "989dd186372e3f70cd799dc307960f0bf7aec9b1bf851c5900ef24ce06873287",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 653.69,
+      "iv_percent": 41.41599112,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.102775-07:00",
+      "iv_contract": {
+        "contractSymbol": "META261016C00655000",
+        "lastTradeDate": "2026-09-09T19:59:48.000Z",
+        "strike": 655.0,
+        "lastPrice": 33.45,
+        "bid": 33.0,
+        "ask": 33.75,
+        "change": 17.900002,
+        "percentChange": 115.11256,
+        "volume": 9296.0,
+        "openInterest": 703,
+        "impliedVolatility": 0.4141599112,
+        "inTheMoney": false,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 0.2004008016031955,
+      "iv_relative_bid_ask_spread_percent": 2.247191011235955,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/META/options/?date=1792108800",
+      "option_raw_sha256": "78a202711b8879649d455910dd1fa89368462a0288ccc84b8d436dcae63a0a34",
+      "optional_paired_call_put_iv_percent": 40.14799843,
+      "defense_basis": "广告现金流、用户网络和推荐分发规模",
+      "growth_business": "AI广告转化率、商业消息、应用使用和变现效率",
+      "failure_mechanism": "广告周期、监管及AI资本开支"
+    },
+    {
+      "rank": 6,
+      "ticker": "BABA",
+      "name": "阿里巴巴",
+      "sector": "云算力_IDC_AI软件平台",
+      "price": 109.4,
+      "price_date": "2026-09-09",
+      "pe": 24.7,
+      "forward_pe": 11.78,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 119.69999694824219,
+          "adjclose": 118.61067962646484,
+          "volume": 11871000,
+          "target": "2026-06-09",
+          "return": -8.604843116826366
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 132.63999938964844,
+          "adjclose": 131.43292236328125,
+          "volume": 10072400,
+          "target": "2026-03-09",
+          "return": -17.521109391276234
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 147.10000610351562,
+          "adjclose": 145.76133728027344,
+          "volume": 32792300,
+          "target": "2025-09-09",
+          "return": -25.62882701512995
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜+18.6%～+57.5%｜低",
+          "percent_values": [
+            18.6,
+            57.5
+          ],
+          "source_line": 496,
+          "low": 18.6,
+          "high": 57.5,
+          "mid": 38.05,
+          "annual_low": 18.599999999999994,
+          "annual_high": 57.49999999999999,
+          "positive": true,
+          "rebased_low": 18.599999999999994,
+          "rebased_high": 57.49999999999999
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜+42.6%～+82.9%｜低",
+          "percent_values": [
+            42.6,
+            82.9
+          ],
+          "source_line": 496,
+          "low": 42.6,
+          "high": 82.9,
+          "mid": 62.75,
+          "annual_low": 12.557172586016652,
+          "annual_high": 22.29383620653298,
+          "positive": true,
+          "rebased_low": 42.599999999999994,
+          "rebased_high": 82.90000000000002
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "建议投资",
+          "text": "建议投资｜+184.6%～+273.8%｜低",
+          "percent_values": [
+            184.6,
+            273.8
+          ],
+          "source_line": 496,
+          "low": 184.6,
+          "high": 273.8,
+          "mid": 229.2,
+          "annual_low": 184.60000000000002,
+          "annual_high": 273.8,
+          "positive": true,
+          "rebased_low": 184.60000000000002,
+          "rebased_high": 273.8
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜+239.0%～+333.7%｜低",
+          "percent_values": [
+            239.0,
+            333.7
+          ],
+          "source_line": 496,
+          "low": 239.0,
+          "high": 333.7,
+          "mid": 286.35,
+          "annual_low": 50.221893814598715,
+          "annual_high": 63.07841209583253,
+          "positive": true,
+          "rebased_low": 239.0,
+          "rebased_high": 333.7
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜+152.7%～+215.0%｜低",
+          "percent_values": [
+            152.7,
+            215.0
+          ],
+          "source_line": 496,
+          "low": 152.7,
+          "high": 215.0,
+          "mid": 183.85,
+          "annual_low": 36.20772753638304,
+          "annual_high": 46.58972088782376,
+          "positive": true,
+          "rebased_low": 152.70000000000002,
+          "rebased_high": 215.0
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-66.8%～-60.2%｜中",
+          "percent_values": [
+            -66.8,
+            -60.2
+          ],
+          "source_line": 496,
+          "low": -66.8,
+          "high": -60.2,
+          "mid": -63.5,
+          "annual_low": -30.7564442737296,
+          "annual_high": -26.44237631598897,
+          "positive": false,
+          "rebased_low": -66.8,
+          "rebased_high": -60.199999999999996
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\BABA_经营情景市场状态投资决策_2026-09-09.md",
+      "report_sha256": "25755fea03ace8ee0a73b99042c6848e2f4cb7ef85cc9aa63ca324257aafe1e1",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 109.4,
+      "iv_percent": 43.77497632,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.110874-07:00",
+      "iv_contract": {
+        "contractSymbol": "BABA261016C00110000",
+        "lastTradeDate": "2026-09-09T19:47:27.000Z",
+        "strike": 110.0,
+        "lastPrice": 5.67,
+        "bid": 5.5,
+        "ask": 5.8,
+        "change": -2.2799997,
+        "percentChange": -28.679241,
+        "volume": 298.0,
+        "openInterest": 3695,
+        "impliedVolatility": 0.4377497632,
+        "inTheMoney": false,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 0.5484460694698212,
+      "iv_relative_bid_ask_spread_percent": 5.309734513274333,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/BABA/options/?date=1792108800",
+      "option_raw_sha256": "3724abfb7fb56d98a4169ba3d450e54d1443e271492de5c2bb7364a4222365dd",
+      "optional_paired_call_put_iv_percent": 41.443456665,
+      "defense_basis": "电商存量业务、客户及商家生态、回购分配能力",
+      "growth_business": "阿里云AI、模型与企业服务增长转为现金利润",
+      "failure_mechanism": "竞争补贴、资本开支、监管与股东价值传导"
+    },
+    {
+      "rank": 7,
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "sector": "云算力_IDC_AI软件平台",
+      "price": 330.65,
+      "price_date": "2026-09-09",
+      "pe": 16.59,
+      "forward_pe": 22.26,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 364.260009765625,
+          "adjclose": 364.0260314941406,
+          "volume": 29535100,
+          "target": "2026-06-09",
+          "return": -9.226928255794709
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 306.3599853515625,
+          "adjclose": 305.98040771484375,
+          "volume": 29312100,
+          "target": "2026-03-09",
+          "return": 7.928585915214592
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 239.6300048828125,
+          "adjclose": 239.0084228515625,
+          "volume": 38061000,
+          "target": "2025-09-09",
+          "return": 37.98355517361003
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "不建议投资",
+          "text": "不建议投资｜-27.6%—2.9%｜低",
+          "percent_values": [
+            -27.6,
+            2.9
+          ],
+          "source_line": 416,
+          "low": -27.6,
+          "high": 2.9,
+          "mid": -12.350000000000001,
+          "annual_low": -27.6,
+          "annual_high": 2.8999999999999915,
+          "positive": false,
+          "rebased_low": -25.911797973688177,
+          "rebased_high": 5.299392106456979
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "不建议投资",
+          "text": "不建议投资｜-12.8%—20.2%｜低",
+          "percent_values": [
+            -12.8,
+            20.2
+          ],
+          "source_line": 416,
+          "low": -12.8,
+          "high": 20.2,
+          "mid": 3.6999999999999993,
+          "annual_low": -4.462876379299663,
+          "annual_high": 6.324860737668847,
+          "positive": false,
+          "rebased_low": -10.76669590201118,
+          "rebased_high": 23.002788446998345
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜74.5%—164.3%｜低",
+          "percent_values": [
+            74.5,
+            164.3
+          ],
+          "source_line": 416,
+          "low": 74.5,
+          "high": 164.3,
+          "mid": 119.4,
+          "annual_low": 74.50000000000001,
+          "annual_high": 164.29999999999998,
+          "positive": true,
+          "rebased_low": 78.56893996673222,
+          "rebased_high": 170.46287010433994
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜108.9%—207.5%｜低",
+          "percent_values": [
+            108.9,
+            207.5
+          ],
+          "source_line": 416,
+          "low": 108.9,
+          "high": 207.5,
+          "mid": 158.2,
+          "annual_low": 27.833931770338705,
+          "annual_high": 45.41695287977243,
+          "positive": true,
+          "rebased_low": 113.77106910630576,
+          "rebased_high": 214.67019507031608
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜36.1%—95.9%｜低",
+          "percent_values": [
+            36.1,
+            95.9
+          ],
+          "source_line": 416,
+          "low": 36.1,
+          "high": 95.9,
+          "mid": 66.0,
+          "annual_low": 10.820313669656677,
+          "annual_high": 25.125207875362033,
+          "positive": true,
+          "rebased_low": 39.27353999697567,
+          "rebased_high": 100.46793890821112
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-71.7%—-63.8%｜中",
+          "percent_values": [
+            -71.7,
+            -63.8
+          ],
+          "source_line": 416,
+          "low": -71.7,
+          "high": -63.8,
+          "mid": -67.75,
+          "annual_low": -34.34585572653862,
+          "annual_high": -28.73064032798397,
+          "positive": false,
+          "rebased_low": -71.04010887645546,
+          "rebased_high": -62.95589898684408
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\GOOGL_经营情景市场状态投资决策_2026-09-08.md",
+      "report_sha256": "3ea0cfcf1ac51ccc49226602d62083ea7055db7aea45509803362ac021d85e61",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 338.36,
+      "iv_percent": 32.477481870000005,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.112883-07:00",
+      "iv_contract": {
+        "contractSymbol": "GOOGL261016C00330000",
+        "lastTradeDate": "2026-09-09T19:59:46.000Z",
+        "strike": 330.0,
+        "lastPrice": 13.85,
+        "bid": 13.65,
+        "ask": 13.95,
+        "change": -4.75,
+        "percentChange": -25.537634,
+        "volume": 4452,
+        "openInterest": 1718,
+        "impliedVolatility": 0.3247748187,
+        "inTheMoney": true,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 0.19658248903673403,
+      "iv_relative_bid_ask_spread_percent": 2.173913043478253,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/GOOGL/options/?date=1792108800",
+      "option_raw_sha256": "ed7887070175bce1ecbf964f3ccc2770f8e82298366715d33959a2cb5453114a",
+      "optional_paired_call_put_iv_percent": 30.751730085000002,
+      "defense_basis": "搜索、YouTube与广告现金流，云平台和分发入口",
+      "growth_business": "Gemini、Google Cloud、TPU及AI搜索的收入与成本效率",
+      "failure_mechanism": "搜索被替代、监管、资本开支；TTM利润含投资公允价值影响"
+    },
+    {
+      "rank": 8,
+      "ticker": "AMZN",
+      "name": "亚马逊",
+      "sector": "云算力_IDC_AI软件平台",
+      "price": 252.4,
+      "price_date": "2026-09-09",
+      "pe": 20.29,
+      "forward_pe": 24.27,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 244.19000244140625,
+          "adjclose": 244.19000244140625,
+          "volume": 44425400,
+          "target": "2026-06-09",
+          "return": 3.3621350081946
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 213.49000549316406,
+          "adjclose": 213.49000549316406,
+          "volume": 54642900,
+          "target": "2026-03-09",
+          "return": 18.225674975722384
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 238.24000549316406,
+          "adjclose": 238.24000549316406,
+          "volume": 27033800,
+          "target": "2025-09-09",
+          "return": 5.943583856760037
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "不建议投资",
+          "text": "不建议投资｜-20.7%至+10.2%｜低",
+          "percent_values": [
+            -20.7,
+            10.2
+          ],
+          "source_line": 427,
+          "low": -20.7,
+          "high": 10.2,
+          "mid": -5.25,
+          "annual_low": -20.699999999999996,
+          "annual_high": 10.20000000000001,
+          "positive": false,
+          "rebased_low": -20.699999999999996,
+          "rebased_high": 10.20000000000001
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "不建议投资",
+          "text": "不建议投资｜-4.2%至+29.7%｜低",
+          "percent_values": [
+            -4.2,
+            29.7
+          ],
+          "source_line": 427,
+          "low": -4.2,
+          "high": 29.7,
+          "mid": 12.75,
+          "annual_low": -1.4200705464087582,
+          "annual_high": 9.055270345031264,
+          "positive": false,
+          "rebased_low": -4.200000000000004,
+          "rebased_high": 29.699999999999992
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+63.9%至+131.6%｜低",
+          "percent_values": [
+            63.9,
+            131.6
+          ],
+          "source_line": 427,
+          "low": 63.9,
+          "high": 131.6,
+          "mid": 97.75,
+          "annual_low": 63.9,
+          "annual_high": 131.6,
+          "positive": true,
+          "rebased_low": 63.9,
+          "rebased_high": 131.6
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+100.0%至+175.8%｜低",
+          "percent_values": [
+            100.0,
+            175.8
+          ],
+          "source_line": 427,
+          "low": 100.0,
+          "high": 175.8,
+          "mid": 137.9,
+          "annual_low": 25.99210498948732,
+          "annual_high": 40.237691458074984,
+          "positive": true,
+          "rebased_low": 100.0,
+          "rebased_high": 175.8
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜+41.9%至+93.1%｜低",
+          "percent_values": [
+            41.9,
+            93.1
+          ],
+          "source_line": 427,
+          "low": 41.9,
+          "high": 93.1,
+          "mid": 67.5,
+          "annual_low": 12.372695503312103,
+          "annual_high": 24.5262064261518,
+          "positive": true,
+          "rebased_low": 41.900000000000006,
+          "rebased_high": 93.10000000000001
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-57.7%至-42.0%｜中",
+          "percent_values": [
+            -57.7,
+            -42.0
+          ],
+          "source_line": 427,
+          "low": -57.7,
+          "high": -42.0,
+          "mid": -49.85,
+          "annual_low": -24.933392504956874,
+          "annual_high": -16.604490845973928,
+          "positive": false,
+          "rebased_low": -57.70000000000001,
+          "rebased_high": -41.99999999999999
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AMZN_经营情景市场状态投资决策_2026-09-09.md",
+      "report_sha256": "4be4c998533990e8d095672e03b3b59b09ecfc704d9fdca36e6c64ee8e6fbd02",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 252.4,
+      "iv_percent": 33.57000024,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.179386-07:00",
+      "iv_contract": {
+        "contractSymbol": "AMZN261016C00250000",
+        "lastTradeDate": "2026-09-09T19:57:56.000Z",
+        "strike": 250.0,
+        "lastPrice": 11.82,
+        "bid": 11.75,
+        "ask": 11.95,
+        "change": -2.83,
+        "percentChange": -19.317406,
+        "volume": 1456,
+        "openInterest": 10228,
+        "impliedVolatility": 0.3357000024,
+        "inTheMoney": true,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 0.9508716323296418,
+      "iv_relative_bid_ask_spread_percent": 1.6877637130801628,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/AMZN/options/?date=1792108800",
+      "option_raw_sha256": "2ddb62a3b0f23cdf4f58b954e019df2594afbdca54b7e3696d7461871ae2c230",
+      "optional_paired_call_put_iv_percent": 31.684032775,
+      "defense_basis": "AWS、广告和零售履约基础，业务组合多样",
+      "growth_business": "AWS AI、Trainium、广告及零售效率改善",
+      "failure_mechanism": "建设和投资承诺、资本开支及利润到现金的差异；TTM含投资估值影响"
+    },
+    {
+      "rank": 9,
+      "ticker": "ASML",
+      "name": "阿斯麦",
+      "sector": "晶圆制造_前道设备",
+      "price": 1729.52,
+      "price_date": "2026-09-09",
+      "pe": 58.69,
+      "forward_pe": 28.76,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 1777.77001953125,
+          "adjclose": 1775.4737548828125,
+          "volume": 3151400,
+          "target": "2026-06-09",
+          "return": -2.7140754428951475
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 1357.4200439453125,
+          "adjclose": 1352.712158203125,
+          "volume": 1808900,
+          "target": "2026-03-09",
+          "return": 27.41229273240926
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 805.1300048828125,
+          "adjclose": 799.8616333007812,
+          "volume": 1324100,
+          "target": "2025-09-09",
+          "return": 114.81251344641335
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "中性",
+          "text": "中性 / 等待｜-15.5%至+11.9%｜中",
+          "percent_values": [
+            -15.5,
+            11.9
+          ],
+          "source_line": 531,
+          "low": -15.5,
+          "high": 11.9,
+          "mid": -1.7999999999999998,
+          "annual_low": -15.500000000000004,
+          "annual_high": 11.899999999999999,
+          "positive": false,
+          "rebased_low": -13.773865003006625,
+          "rebased_high": 14.18585214394743
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "不建议投资",
+          "text": "不建议投资｜-0.8%至+29.7%｜低",
+          "percent_values": [
+            -0.8,
+            29.7
+          ],
+          "source_line": 531,
+          "low": -0.8,
+          "high": 29.7,
+          "mid": 14.45,
+          "annual_low": -0.26738095522708116,
+          "annual_high": 9.055270345031264,
+          "positive": false,
+          "rebased_low": 1.2264212035709265,
+          "rebased_high": 32.34946401313656
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "建议投资",
+          "text": "建议投资｜+76.3%至+142.9%｜低",
+          "percent_values": [
+            76.3,
+            142.9
+          ],
+          "source_line": 531,
+          "low": 76.3,
+          "high": 142.9,
+          "mid": 109.6,
+          "annual_low": 76.29999999999998,
+          "annual_high": 142.90000000000003,
+          "positive": true,
+          "rebased_low": 79.90139171562049,
+          "rebased_high": 147.86187208011472
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜+109.2%至+184.4%｜低",
+          "percent_values": [
+            109.2,
+            184.4
+          ],
+          "source_line": 531,
+          "low": 109.2,
+          "high": 184.4,
+          "mid": 146.8,
+          "annual_low": 27.895096340327186,
+          "annual_high": 41.6804292665649,
+          "positive": true,
+          "rebased_low": 113.47346084462741,
+          "rebased_high": 190.20961885378603
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜+44.5%至+92.3%｜低",
+          "percent_values": [
+            44.5,
+            92.3
+          ],
+          "source_line": 531,
+          "low": 44.5,
+          "high": 92.3,
+          "mid": 68.4,
+          "annual_low": 13.054871932802104,
+          "annual_high": 24.35400056230115,
+          "positive": true,
+          "rebased_low": 47.45179298302418,
+          "rebased_high": 96.22823384522871
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-65.7%至-60.6%｜中",
+          "percent_values": [
+            -65.7,
+            -60.6
+          ],
+          "source_line": 531,
+          "low": -65.7,
+          "high": -60.6,
+          "mid": -63.150000000000006,
+          "annual_low": -30.000000000000004,
+          "annual_high": -26.689630698146637,
+          "positive": false,
+          "rebased_low": -64.99933218465239,
+          "rebased_high": -59.79515125583978
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ASML_经营情景市场状态投资决策_2026-09-09.md",
+      "report_sha256": "58b8be519d3b7dc0181dd59828f627a31329a55288a5480038368607e67fc429",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 1764.85,
+      "iv_percent": 48.55398126,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.275117-07:00",
+      "iv_contract": {
+        "contractSymbol": "ASML261016C01720000",
+        "lastTradeDate": "2026-09-09T19:33:19.000Z",
+        "strike": 1720.0,
+        "lastPrice": 105.75,
+        "bid": 100.6,
+        "ask": 111.1,
+        "change": -31.220001,
+        "percentChange": -22.793312,
+        "volume": 3.0,
+        "openInterest": 46,
+        "impliedVolatility": 0.4855398126,
+        "inTheMoney": true,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 0.5504417410611029,
+      "iv_relative_bid_ask_spread_percent": 9.919697685403873,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/ASML/options/?date=1792108800",
+      "option_raw_sha256": "d4550582b9af04a7625e5945dcd85085b69303b3c3ef0eb7546673f6c88ecd73",
+      "optional_paired_call_put_iv_percent": 47.89824136000001,
+      "defense_basis": "EUV设备技术地位、服务安装基数与切换成本",
+      "growth_business": "EUV/High-NA及先进节点投入",
+      "failure_mechanism": "估值、晶圆厂资本开支周期和出口限制"
+    },
+    {
+      "rank": 10,
+      "ticker": "TSM",
+      "name": "台积电",
+      "sector": "晶圆制造_前道设备",
+      "price": 435.36,
+      "price_date": "2026-09-09",
+      "pe": 32.2,
+      "forward_pe": 19.86,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 427.9200134277344,
+          "adjclose": 426.92022705078125,
+          "volume": 21199500,
+          "target": "2026-06-09",
+          "return": 1.738639544495646
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 348.70001220703125,
+          "adjclose": 346.9078063964844,
+          "volume": 19182800,
+          "target": "2026-03-09",
+          "return": 24.85230420396909
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 250.9199981689453,
+          "adjclose": 248.17530822753906,
+          "volume": 13443400,
+          "target": "2025-09-09",
+          "return": 73.50550102701283
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "不建议投资",
+          "text": "不建议投资｜-29.6% 至 -11.5%｜中",
+          "percent_values": [
+            -29.6,
+            -11.5
+          ],
+          "source_line": 501,
+          "low": -29.6,
+          "high": -11.5,
+          "mid": -20.55,
+          "annual_low": -29.600000000000005,
+          "annual_high": -11.5,
+          "positive": false,
+          "rebased_low": -29.01139287026828,
+          "rebased_high": -10.760060639470781
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "不建议投资",
+          "text": "不建议投资｜-14.8% 至 +4.8%｜中",
+          "percent_values": [
+            -14.8,
+            4.8
+          ],
+          "source_line": 501,
+          "low": -14.8,
+          "high": 4.8,
+          "mid": -5.0,
+          "annual_low": -5.198938928360519,
+          "annual_high": 1.575061562654012,
+          "positive": false,
+          "rebased_low": -14.087651598676953,
+          "rebased_high": 5.676221977214269
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+66.7% 至 +117.9%｜低",
+          "percent_values": [
+            66.7,
+            117.9
+          ],
+          "source_line": 501,
+          "low": 66.7,
+          "high": 117.9,
+          "mid": 92.30000000000001,
+          "annual_low": 66.7,
+          "annual_high": 117.90000000000003,
+          "positive": true,
+          "rebased_low": 68.09376148474826,
+          "rebased_high": 119.72183939728045
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+103.4% 至 +159.6%｜低",
+          "percent_values": [
+            103.4,
+            159.6
+          ],
+          "source_line": 501,
+          "low": 103.4,
+          "high": 159.6,
+          "mid": 131.5,
+          "annual_low": 26.702052286723355,
+          "annual_high": 37.43633416208494,
+          "positive": true,
+          "rebased_low": 105.10060639470784,
+          "rebased_high": 161.77048879088574
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜+26.6% 至 +57.3%｜低",
+          "percent_values": [
+            26.6,
+            57.3
+          ],
+          "source_line": 501,
+          "low": 26.6,
+          "high": 57.3,
+          "mid": 41.95,
+          "annual_low": 8.179400048235985,
+          "annual_high": 16.29906973810744,
+          "positive": true,
+          "rebased_low": 27.65848952590959,
+          "rebased_high": 58.615169055494306
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-60.4% 至 -53.5%｜中",
+          "percent_values": [
+            -60.4,
+            -53.5
+          ],
+          "source_line": 501,
+          "low": -60.4,
+          "high": -53.5,
+          "mid": -56.95,
+          "annual_low": -26.56579537950037,
+          "annual_high": -22.526891050042174,
+          "positive": false,
+          "rebased_low": -60.06890848952591,
+          "rebased_high": -53.11121830209482
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\TSM_经营情景市场状态投资决策_2026-09-09.md",
+      "report_sha256": "2737d6445c5116be4f02669672feee5831df789d3a1a5f4ebe8db30803efb067",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 439.0,
+      "iv_percent": 37.232073,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.281763-07:00",
+      "iv_contract": {
+        "contractSymbol": "TSM261016C00440000",
+        "lastTradeDate": "2026-09-09T19:58:06.000Z",
+        "strike": 440.0,
+        "lastPrice": 17.89,
+        "bid": 17.7,
+        "ask": 18.45,
+        "change": -2.880001,
+        "percentChange": -13.8661585,
+        "volume": 284,
+        "openInterest": 3369,
+        "impliedVolatility": 0.37232073,
+        "inTheMoney": false,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 1.065784638000733,
+      "iv_relative_bid_ask_spread_percent": 4.149377593360995,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/TSM/options/?date=1792108800",
+      "option_raw_sha256": "c41ade4c5d5789f80c26191d989aacc667d38e338b57d0e7c6dda4d4313573e9",
+      "optional_paired_call_put_iv_percent": 36.15786499,
+      "defense_basis": "先进制程制造能力、客户与良率积累",
+      "growth_business": "先进节点、CoWoS和AI芯片制造需求",
+      "failure_mechanism": "再投资强度、客户集中、地缘尾部风险"
+    },
+    {
+      "rank": 11,
+      "ticker": "AVGO",
+      "name": "博通",
+      "sector": "AI计算芯片_EDA_IP_custom_ASIC",
+      "price": 364.38,
+      "price_date": "2026-09-09",
+      "pe": 46.42,
+      "forward_pe": 18.79,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 392.1600036621094,
+          "adjclose": 391.5403137207031,
+          "volume": 37026900,
+          "target": "2026-06-09",
+          "return": -7.083844196932699
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 345.75,
+          "adjclose": 344.48101806640625,
+          "volume": 40605800,
+          "target": "2026-03-09",
+          "return": 5.388286334056391
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 336.6700134277344,
+          "adjclose": 334.22113037109375,
+          "volume": 26972300,
+          "target": "2025-09-09",
+          "return": 8.230607261437473
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "不建议投资",
+          "text": "不建议投资｜-28.6%—-10.8%｜低",
+          "percent_values": [
+            -28.6,
+            -10.8
+          ],
+          "source_line": 358,
+          "low": -28.6,
+          "high": -10.8,
+          "mid": -19.700000000000003,
+          "annual_low": -28.6,
+          "annual_high": -10.799999999999999,
+          "positive": false,
+          "rebased_low": -27.780931994072123,
+          "rebased_high": -9.77673856962511
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "不建议投资",
+          "text": "不建议投资｜-12.0%—+6.5%｜低",
+          "percent_values": [
+            -12.0,
+            6.5
+          ],
+          "source_line": 358,
+          "low": -12.0,
+          "high": 6.5,
+          "mid": -2.75,
+          "annual_low": -4.171602858744317,
+          "annual_high": 2.1213473122856374,
+          "positive": false,
+          "rebased_low": -10.990504418464242,
+          "rebased_high": 7.721719084472256
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "建议投资",
+          "text": "建议投资｜+53.3%—+97.3%｜低",
+          "percent_values": [
+            53.3,
+            97.3
+          ],
+          "source_line": 358,
+          "low": 53.3,
+          "high": 97.3,
+          "mid": 75.3,
+          "annual_low": 53.29999999999999,
+          "annual_high": 97.29999999999998,
+          "positive": true,
+          "rebased_low": 55.05858718919809,
+          "rebased_high": 99.56333497996597
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜+90.2%—+137.0%｜低",
+          "percent_values": [
+            90.2,
+            137.0
+          ],
+          "source_line": 358,
+          "low": 90.2,
+          "high": 137.0,
+          "mid": 113.6,
+          "annual_low": 23.89967605074763,
+          "annual_high": 33.32638852716767,
+          "positive": true,
+          "rebased_low": 92.38188704100116,
+          "rebased_high": 139.71875514572702
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜+36.4%—+68.1%｜低",
+          "percent_values": [
+            36.4,
+            68.1
+          ],
+          "source_line": 358,
+          "low": 36.4,
+          "high": 68.1,
+          "mid": 52.25,
+          "annual_low": 10.90167956795456,
+          "annual_high": 18.902021368726917,
+          "positive": true,
+          "rebased_low": 37.964718151380424,
+          "rebased_high": 70.02836599154729
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-86.0%—-84.3%｜低",
+          "percent_values": [
+            -86.0,
+            -84.3
+          ],
+          "source_line": 358,
+          "low": -86.0,
+          "high": -84.3,
+          "mid": -85.15,
+          "annual_low": -48.07505898148896,
+          "annual_high": -46.05309287890408,
+          "positive": false,
+          "rebased_low": -85.83939843021022,
+          "rebased_high": -84.11989681102145
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AVGO_经营情景市场状态投资决策_2026-09-08.md",
+      "report_sha256": "40706b8fe3b1ed9b8656165878db012c8033d41a53e38ec1334cbcfe4d767508",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 368.56,
+      "iv_percent": 39.8596102,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.314549-07:00",
+      "iv_contract": {
+        "contractSymbol": "AVGO261016C00360000",
+        "lastTradeDate": "2026-09-09T19:46:13.000Z",
+        "strike": 360.0,
+        "lastPrice": 20.3,
+        "bid": 19.8,
+        "ask": 20.6,
+        "change": -3.0,
+        "percentChange": -12.875537,
+        "volume": 487.0,
+        "openInterest": 3207,
+        "impliedVolatility": 0.398596102,
+        "inTheMoney": true,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 1.202041824468958,
+      "iv_relative_bid_ask_spread_percent": 3.960396039603963,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/AVGO/options/?date=1792108800",
+      "option_raw_sha256": "228e0d3d76ffaed0e83e483aa07b2b827f7c1011a06f79ca8da4099a794d15bd",
+      "optional_paired_call_put_iv_percent": 39.13177324,
+      "defense_basis": "定制芯片和网络客户关系、软件现金流",
+      "growth_business": "AI ASIC、以太网及软件效率",
+      "failure_mechanism": "客户集中、项目周期、负债与资本分配"
+    },
+    {
+      "rank": 12,
+      "ticker": "ET",
+      "name": "Energy Transfer",
+      "sector": "电力_发电_能源_储能",
+      "price": 21.68,
+      "price_date": "2026-09-09",
+      "pe": 14.85,
+      "forward_pe": 12.39,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 19.059999465942383,
+          "adjclose": 18.746482849121094,
+          "volume": 8068900,
+          "target": "2026-06-09",
+          "return": 13.746068244855936
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 18.59000015258789,
+          "adjclose": 17.973968505859375,
+          "volume": 15589700,
+          "target": "2026-03-09",
+          "return": 16.621838741523387
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 17.170000076293945,
+          "adjclose": 15.973633766174316,
+          "volume": 10979100,
+          "target": "2025-09-09",
+          "return": 26.266743760431677
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜27.7%至65.1%｜中",
+          "percent_values": [
+            27.7,
+            65.1
+          ],
+          "source_line": 366,
+          "low": 27.7,
+          "high": 65.1,
+          "mid": 46.4,
+          "annual_low": 27.699999999999992,
+          "annual_high": 65.09999999999998,
+          "positive": true,
+          "rebased_low": 26.698662361623615,
+          "rebased_high": 63.80539667896679
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜56.9%至97.0%｜中",
+          "percent_values": [
+            56.9,
+            97.0
+          ],
+          "source_line": 366,
+          "low": 56.9,
+          "high": 97.0,
+          "mid": 76.95,
+          "annual_low": 16.200406641129472,
+          "annual_high": 25.358968148154972,
+          "positive": true,
+          "rebased_low": 55.669695571955735,
+          "rebased_high": 95.45525830258306
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "建议投资",
+          "text": "建议投资｜81.0%至142.6%｜低",
+          "percent_values": [
+            81.0,
+            142.6
+          ],
+          "source_line": 366,
+          "low": 81.0,
+          "high": 142.6,
+          "mid": 111.8,
+          "annual_low": 81.0,
+          "annual_high": 142.60000000000002,
+          "positive": true,
+          "rebased_low": 79.58071955719561,
+          "rebased_high": 140.6976937269373
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜122.1%至189.9%｜低",
+          "percent_values": [
+            122.1,
+            189.9
+          ],
+          "source_line": 366,
+          "low": 122.1,
+          "high": 189.9,
+          "mid": 156.0,
+          "annual_low": 30.471659460379243,
+          "annual_high": 42.58792152928046,
+          "positive": true,
+          "rebased_low": 120.35844095940962,
+          "rebased_high": 187.626798892989
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜95.2%至142.6%｜中",
+          "percent_values": [
+            95.2,
+            142.6
+          ],
+          "source_line": 366,
+          "low": 95.2,
+          "high": 142.6,
+          "mid": 118.9,
+          "annual_low": 24.975995390524865,
+          "annual_high": 34.36833390403422,
+          "positive": true,
+          "rebased_low": 93.66937269372696,
+          "rebased_high": 140.6976937269373
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "不建议投资",
+          "text": "不建议投资｜-43.6%至-19.1%｜中",
+          "percent_values": [
+            -43.6,
+            -19.1
+          ],
+          "source_line": 366,
+          "low": -43.6,
+          "high": -19.1,
+          "mid": -31.35,
+          "annual_low": -17.378507743346482,
+          "annual_high": -6.821401513732406,
+          "positive": false,
+          "rebased_low": -44.042250922509204,
+          "rebased_high": -19.734363468634687
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ET_经营情景市场状态投资决策_2026-09-08.md",
+      "report_sha256": "e27f88df6bed7b73b3d5a0fb11337a00dbfa8c0bb635ea56c22f90d6505dbf5b",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 21.51,
+      "iv_percent": 20.02033105,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.419656-07:00",
+      "iv_contract": {
+        "contractSymbol": "ET261016C00022000",
+        "lastTradeDate": "2026-09-09T19:58:39.000Z",
+        "strike": 22.0,
+        "lastPrice": 0.4,
+        "bid": 0.38,
+        "ask": 0.41,
+        "change": 0.06999999,
+        "percentChange": 21.212118,
+        "volume": 998,
+        "openInterest": 19688,
+        "impliedVolatility": 0.2002033105,
+        "inTheMoney": false,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 1.4760147601476037,
+      "iv_relative_bid_ask_spread_percent": 7.594936708860751,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/ET/options/?date=1792108800",
+      "option_raw_sha256": "1f75c155f79534365024b662214b01963130775b5c79efcec669109b53acab40",
+      "optional_paired_call_put_iv_percent": 19.092605955,
+      "defense_basis": "管网基础设施、合同及现金分配",
+      "growth_business": "数据中心电力需求带来的天然气运输和基础设施需求",
+      "failure_mechanism": "AI传导间接、杠杆和项目资本开支；分配不保证且税后回报因账户而异"
+    },
+    {
+      "rank": 13,
+      "ticker": "SNDK",
+      "name": "闪迪",
+      "sector": "AI服务器_存储_EMS",
+      "price": 1764.17,
+      "price_date": "2026-09-09",
+      "pe": 23.94,
+      "forward_pe": 6.66,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 1646.5400390625,
+          "adjclose": 1646.5400390625,
+          "volume": 16221600,
+          "target": "2026-06-09",
+          "return": 7.144069269307041
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 588.72998046875,
+          "adjclose": 588.72998046875,
+          "volume": 21205500,
+          "target": "2026-03-09",
+          "return": 199.6568984979087
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 70.51000213623047,
+          "adjclose": 70.51000213623047,
+          "volume": 3364300,
+          "target": "2025-09-09",
+          "return": 2402.0138229346453
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "不建议投资",
+          "text": "不建议投资｜-22.8%～-1.0%｜中",
+          "percent_values": [
+            -22.8,
+            -1.0
+          ],
+          "source_line": 351,
+          "low": -22.8,
+          "high": -1.0,
+          "mid": -11.9,
+          "annual_low": -22.799999999999997,
+          "annual_high": -1.0000000000000009,
+          "positive": false,
+          "rebased_low": -23.94563562468469,
+          "rebased_high": -2.469144130100842
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "不建议投资",
+          "text": "不建议投资｜-7.2%～+16.4%｜中",
+          "percent_values": [
+            -7.2,
+            16.4
+          ],
+          "source_line": 351,
+          "low": -7.2,
+          "high": 16.4,
+          "mid": 4.6,
+          "annual_low": -2.4600207785337336,
+          "annual_high": 5.1923910316379995,
+          "positive": false,
+          "rebased_low": -8.577137123973323,
+          "rebased_high": 14.672642659154157
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+169.0%～+271.0%｜低",
+          "percent_values": [
+            169.0,
+            271.0
+          ],
+          "source_line": 351,
+          "low": 169.0,
+          "high": 271.0,
+          "mid": 220.0,
+          "annual_low": 169.0,
+          "annual_high": 271.0,
+          "positive": true,
+          "rebased_low": 165.00808312124113,
+          "rebased_high": 265.49441947204633
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+230.4%～+343.1%｜低",
+          "percent_values": [
+            230.4,
+            343.1
+          ],
+          "source_line": 351,
+          "low": 230.4,
+          "high": 343.1,
+          "mid": 286.75,
+          "annual_low": 48.940684766902166,
+          "annual_high": 64.24818658529945,
+          "positive": true,
+          "rebased_low": 225.49691696378468,
+          "rebased_high": 336.5244670298214
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+110.9%～+177.8%｜中",
+          "percent_values": [
+            110.9,
+            177.8
+          ],
+          "source_line": 351,
+          "low": 110.9,
+          "high": 177.8,
+          "mid": 144.35000000000002,
+          "annual_low": 28.240595657247415,
+          "annual_high": 40.57585937329049,
+          "positive": true,
+          "rebased_low": 107.77027780769428,
+          "rebased_high": 173.67749253189885
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-60.5%～-51.6%｜中",
+          "percent_values": [
+            -60.5,
+            -51.6
+          ],
+          "source_line": 351,
+          "low": -60.5,
+          "high": -51.6,
+          "mid": -56.05,
+          "annual_low": -26.627660787572182,
+          "annual_high": -21.4857558946031,
+          "positive": false,
+          "rebased_low": -61.08617366807054,
+          "rebased_high": -52.31824824138263
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\SNDK_经营情景市场状态投资决策_2026-09-08.md",
+      "report_sha256": "a531660eb65bf18752e46cd81a620880bfcbef457b47ad3eb838055e080c833f",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 1737.99,
+      "iv_percent": 77.26615752000001,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.479349-07:00",
+      "iv_contract": {
+        "contractSymbol": "SNDK261016C01760000",
+        "lastTradeDate": "2026-09-09T19:59:18.000Z",
+        "strike": 1760.0,
+        "lastPrice": 174.1,
+        "bid": 173.1,
+        "ask": 176.1,
+        "change": 5.650009,
+        "percentChange": 3.3541164,
+        "volume": 193.0,
+        "openInterest": 106,
+        "impliedVolatility": 0.7726615752,
+        "inTheMoney": true,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 0.23637177822999345,
+      "iv_relative_bid_ask_spread_percent": 1.718213058419244,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/SNDK/options/?date=1792108800",
+      "option_raw_sha256": "3fcbcb192bff49a690d8f180fb93050788d424ac49c0b7abdc6ad9f728254b5a",
+      "optional_paired_call_put_iv_percent": 75.73304601999999,
+      "defense_basis": "已兑现存储利润、现金流及NBM相关合同",
+      "growth_business": "AI存储需求、NAND景气、企业SSD与利润率",
+      "failure_mechanism": "高度周期性；不能只因6倍Forward PE就认定有强下行保护"
+    },
+    {
+      "rank": 14,
+      "ticker": "APH",
+      "name": "安费诺",
+      "sector": "AI网络_光互联_连接器",
+      "price": 81.34,
+      "price_date": "2026-09-09",
+      "pe": 40.67,
+      "forward_pe": 25.04,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 77.03500366210938,
+          "adjclose": 76.91896057128906,
+          "volume": 30864200,
+          "target": "2026-06-09",
+          "return": 5.588363903730298
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 68.02999877929688,
+          "adjclose": 67.79352569580078,
+          "volume": 17510200,
+          "target": "2026-03-09",
+          "return": 19.56489998461337
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 58.39500045776367,
+          "adjclose": 57.999656677246094,
+          "volume": 28191600,
+          "target": "2025-09-09",
+          "return": 39.29274657482389
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "不建议投资",
+          "text": "不建议投资｜-28.7%～-6.3%｜中",
+          "percent_values": [
+            -28.7,
+            -6.3
+          ],
+          "source_line": 500,
+          "low": -28.7,
+          "high": -6.3,
+          "mid": -17.5,
+          "annual_low": -28.699999999999992,
+          "annual_high": -6.2999999999999945,
+          "positive": false,
+          "rebased_low": -28.331841652323575,
+          "rebased_high": -5.816179001721167
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "不建议投资",
+          "text": "不建议投资｜-13.3%～11.0%｜中",
+          "percent_values": [
+            -13.3,
+            11.0
+          ],
+          "source_line": 500,
+          "low": -13.3,
+          "high": 11.0,
+          "mid": -1.1500000000000004,
+          "annual_low": -4.6458280403687935,
+          "annual_high": 3.5398805448406234,
+          "positive": false,
+          "rebased_low": -12.852323580034419,
+          "rebased_high": 11.573149741824462
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "建议投资",
+          "text": "建议投资｜46.4%～94.9%｜低",
+          "percent_values": [
+            46.4,
+            94.9
+          ],
+          "source_line": 500,
+          "low": 46.4,
+          "high": 94.9,
+          "mid": 70.65,
+          "annual_low": 46.4,
+          "annual_high": 94.9,
+          "positive": true,
+          "rebased_low": 47.15593803786575,
+          "rebased_high": 95.90636833046473
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜78.1%～131.1%｜低",
+          "percent_values": [
+            78.1,
+            131.1
+          ],
+          "source_line": 500,
+          "low": 78.1,
+          "high": 131.1,
+          "mid": 104.6,
+          "annual_low": 21.214518260677306,
+          "annual_high": 32.21071334937486,
+          "positive": true,
+          "rebased_low": 79.0196213425129,
+          "rebased_high": 132.2932874354561
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜23.1%～58.7%｜低",
+          "percent_values": [
+            23.1,
+            58.7
+          ],
+          "source_line": 500,
+          "low": 23.1,
+          "high": 58.7,
+          "mid": 40.900000000000006,
+          "annual_low": 7.173155452472457,
+          "annual_high": 16.64307913164693,
+          "positive": true,
+          "rebased_low": 23.735628227194503,
+          "rebased_high": 59.519449225473345
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-58.6%～-47.3%｜中",
+          "percent_values": [
+            -58.6,
+            -47.3
+          ],
+          "source_line": 500,
+          "low": -58.6,
+          "high": -47.3,
+          "mid": -52.95,
+          "annual_low": -25.46960086279164,
+          "annual_high": -19.226257592560536,
+          "positive": false,
+          "rebased_low": -58.386230636833034,
+          "rebased_high": -47.02788296041308
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\APH_经营情景市场状态投资决策_2026-09-08.md",
+      "report_sha256": "4439f1398a15d6cf194d02d221c7bb2ee0c1cdea177dcbc58abcb2b2613817d3",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 81.76,
+      "iv_percent": 44.80035669,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.550685-07:00",
+      "iv_contract": {
+        "contractSymbol": "APH261016C00082500",
+        "lastTradeDate": "2026-09-09T19:53:43.000Z",
+        "strike": 82.5,
+        "lastPrice": 4.0,
+        "bid": 3.8,
+        "ask": 4.1,
+        "change": -0.5,
+        "percentChange": -11.111111,
+        "volume": 35.0,
+        "openInterest": 2034,
+        "impliedVolatility": 0.4480035669,
+        "inTheMoney": false,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 1.4261126137201874,
+      "iv_relative_bid_ask_spread_percent": 7.594936708860756,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/APH/options/?date=1792108800",
+      "option_raw_sha256": "b9712e61f67b3a6ec25715bcfc4c1c4b7ebb1cc2f4f938b110b988fb47ea4b0e",
+      "optional_paired_call_put_iv_percent": 43.54304504499999,
+      "defense_basis": "连接器制造、客户设计导入、多终端市场与切换成本",
+      "growth_business": "高速互连、AI服务器单机价值量及网络升级",
+      "failure_mechanism": "并购负债、生命周期与ROIC、客户压价及高估值"
+    },
+    {
+      "rank": 15,
+      "ticker": "TEL",
+      "name": "TE Connectivity",
+      "sector": "AI网络_光互联_连接器",
+      "price": 204.68,
+      "price_date": "2026-09-09",
+      "pe": 20.05,
+      "forward_pe": 15.86,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 210.91000366210938,
+          "adjclose": 210.0896759033203,
+          "volume": 3298600,
+          "target": "2026-06-09",
+          "return": -2.953868263209658
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 206.24000549316406,
+          "adjclose": 204.64678955078125,
+          "volume": 1948900,
+          "target": "2026-03-09",
+          "return": -0.7564029536528349
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 208.64999389648438,
+          "adjclose": 206.4056396484375,
+          "volume": 1232300,
+          "target": "2025-09-09",
+          "return": -1.9027050144338697
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "中性",
+          "text": "中性 / 等待｜-17.7% 至 +25.7%｜中低",
+          "percent_values": [
+            -17.7,
+            25.7
+          ],
+          "source_line": 409,
+          "low": -17.7,
+          "high": 25.7,
+          "mid": 4.0,
+          "annual_low": -17.700000000000003,
+          "annual_high": 25.70000000000001,
+          "positive": false,
+          "rebased_low": -17.575351768614432,
+          "rebased_high": 25.890380105530596
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "中性",
+          "text": "中性 / 等待｜-0.2% 至 +48.8%｜中低",
+          "percent_values": [
+            -0.2,
+            48.8
+          ],
+          "source_line": 409,
+          "low": -0.2,
+          "high": 48.8,
+          "mid": 24.299999999999997,
+          "annual_low": -0.06671116055976256,
+          "annual_high": 14.16534946769723,
+          "positive": false,
+          "rebased_low": -0.04884698065272808,
+          "rebased_high": 49.025366425640016
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "建议投资",
+          "text": "建议投资｜+31.2% 至 +103.8%｜低",
+          "percent_values": [
+            31.2,
+            103.8
+          ],
+          "source_line": 409,
+          "low": 31.2,
+          "high": 103.8,
+          "mid": 67.5,
+          "annual_low": 31.200000000000006,
+          "annual_high": 103.80000000000003,
+          "positive": true,
+          "rebased_low": 31.398710181747113,
+          "rebased_high": 104.10866718780537
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+60.0% 至 +142.0%｜低",
+          "percent_values": [
+            60.0,
+            142.0
+          ],
+          "source_line": 409,
+          "low": 60.0,
+          "high": 142.0,
+          "mid": 101.0,
+          "annual_low": 16.96070952851465,
+          "annual_high": 34.257468891731335,
+          "positive": true,
+          "rebased_low": 60.24232948993551,
+          "rebased_high": 142.36652335352744
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜+26.1% 至 +89.3%｜低",
+          "percent_values": [
+            26.1,
+            89.3
+          ],
+          "source_line": 409,
+          "low": 26.1,
+          "high": 89.3,
+          "mid": 57.7,
+          "annual_low": 8.036795875479253,
+          "annual_high": 23.70394163943843,
+          "positive": true,
+          "rebased_low": 26.290985929255427,
+          "rebased_high": 89.58670607777994
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-46.3% 至 -20.2%｜中低",
+          "percent_values": [
+            -46.3,
+            -20.2
+          ],
+          "source_line": 409,
+          "low": -46.3,
+          "high": -20.2,
+          "mid": -33.25,
+          "annual_low": -18.718552607046423,
+          "annual_high": -7.245647697835866,
+          "positive": false,
+          "rebased_low": -46.21866816494039,
+          "rebased_high": -20.079138166894662
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\TEL_经营情景市场状态投资决策_2026-09-09.md",
+      "report_sha256": "2cad18182d8b0ab828a9fb2f7c88187e1ff8d176655f2eedefb1984a6c10d127",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 204.99,
+      "iv_percent": 42.04769867,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.565847-07:00",
+      "iv_contract": {
+        "contractSymbol": "TEL261016C00200000",
+        "lastTradeDate": "2026-09-03T19:19:19.000Z",
+        "strike": 200.0,
+        "lastPrice": 14.9,
+        "bid": 10.5,
+        "ask": 13.3,
+        "change": 0.0,
+        "percentChange": 0.0,
+        "volume": 1,
+        "openInterest": 66,
+        "impliedVolatility": 0.4204769867,
+        "inTheMoney": true,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 2.2864959937463403,
+      "iv_relative_bid_ask_spread_percent": 23.529411764705888,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/TEL/options/?date=1792108800",
+      "option_raw_sha256": "9f1c7094c9c69ac0f54a66b31d8de39208ef52f3217a60e209c2e028dfbb29ff",
+      "optional_paired_call_put_iv_percent": 37.83936673,
+      "defense_basis": "汽车、工业、电力及连接业务分散，既有现金利润",
+      "growth_business": "数据中心连接、电力及AI互连内容量",
+      "failure_mechanism": "汽车/工业周期，新增收入的净利润和现金转化可能下降"
+    },
+    {
+      "rank": 16,
+      "ticker": "JBL",
+      "name": "捷普",
+      "sector": "AI服务器_存储_EMS",
+      "price": 311.37,
+      "price_date": "2026-09-09",
+      "pe": 38.92,
+      "forward_pe": 18.49,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 362.3800048828125,
+          "adjclose": 362.3017272949219,
+          "volume": 1194400,
+          "target": "2026-06-09",
+          "return": -14.076385064156138
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 247.4600067138672,
+          "adjclose": 247.35069274902344,
+          "volume": 1429500,
+          "target": "2026-03-09",
+          "return": 25.826392771430974
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 209.22000122070312,
+          "adjclose": 208.97900390625,
+          "volume": 781600,
+          "target": "2025-09-09",
+          "return": 48.824203318658974
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "不建议投资",
+          "text": "不建议投资｜-21.1%—+2.0%｜中",
+          "percent_values": [
+            -21.1,
+            2.0
+          ],
+          "source_line": 546,
+          "low": -21.1,
+          "high": 2.0,
+          "mid": -9.55,
+          "annual_low": -21.10000000000001,
+          "annual_high": 2.0000000000000018,
+          "positive": false,
+          "rebased_low": -20.856739570286166,
+          "rebased_high": 2.3144811638886154
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "不建议投资",
+          "text": "不建议投资｜-6.2%—+20.0%｜低",
+          "percent_values": [
+            -6.2,
+            20.0
+          ],
+          "source_line": 546,
+          "low": -6.2,
+          "high": 20.0,
+          "mid": 6.9,
+          "annual_low": -2.110912651352448,
+          "annual_high": 6.265856918261115,
+          "positive": false,
+          "rebased_low": -5.910800655169101,
+          "rebased_high": 20.36997783986896
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "建议投资",
+          "text": "建议投资｜+57.7%—+110.6%｜低",
+          "percent_values": [
+            57.7,
+            110.6
+          ],
+          "source_line": 546,
+          "low": 57.7,
+          "high": 110.6,
+          "mid": 84.15,
+          "annual_low": 57.699999999999996,
+          "annual_high": 110.6,
+          "positive": true,
+          "rebased_low": 58.18621254456113,
+          "rebased_high": 111.24931110897003
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜+91.3%—+151.3%｜低",
+          "percent_values": [
+            91.3,
+            151.3
+          ],
+          "source_line": 546,
+          "low": 91.3,
+          "high": 151.3,
+          "mid": 121.30000000000001,
+          "annual_low": 24.138070277976343,
+          "annual_high": 35.955723764592506,
+          "positive": true,
+          "rebased_low": 91.88980633972442,
+          "rebased_high": 152.0747952596589
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜+42.8%—+84.4%｜低",
+          "percent_values": [
+            42.8,
+            84.4
+          ],
+          "source_line": 546,
+          "low": 42.8,
+          "high": 84.4,
+          "mid": 63.6,
+          "annual_low": 12.609769403291192,
+          "annual_high": 22.62724526150073,
+          "positive": true,
+          "rebased_low": 43.24027362944405,
+          "rebased_high": 84.96853261393198
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-60.4%—-49.1%｜低",
+          "percent_values": [
+            -60.4,
+            -49.1
+          ],
+          "source_line": 546,
+          "low": -60.4,
+          "high": -49.1,
+          "mid": -54.75,
+          "annual_low": -26.56579537950037,
+          "annual_high": -20.156556173089257,
+          "positive": false,
+          "rebased_low": -60.27790731284324,
+          "rebased_high": -48.94306773292225
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\JBL_经营情景市场状态投资决策_2026-09-08.md",
+      "report_sha256": "718d8198f43fd89c74f27bae573787a9563bb1c269ea0fb6caa0174cef65e08a",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 312.33,
+      "iv_percent": 59.4028718,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.569739-07:00",
+      "iv_contract": {
+        "contractSymbol": "JBL261016C00310000",
+        "lastTradeDate": "2026-09-09T15:03:30.000Z",
+        "strike": 310.0,
+        "lastPrice": 25.8,
+        "bid": 22.8,
+        "ask": 25.4,
+        "change": 2.0999985,
+        "percentChange": 8.860753,
+        "volume": 4.0,
+        "openInterest": 29,
+        "impliedVolatility": 0.594028718,
+        "inTheMoney": true,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 0.43999100748306486,
+      "iv_relative_bid_ask_spread_percent": 10.78838174273858,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/JBL/options/?date=1792108800",
+      "option_raw_sha256": "528a819baec3ce4e81bad7df3535c6c6e1bd8e60522f243166ee5aab00a0d0ab",
+      "optional_paired_call_put_iv_percent": 57.39636109999999,
+      "defense_basis": "客户交付与工程能力、非AI业务及既有产能",
+      "growth_business": "AI服务器、机柜、电力与散热配套工程",
+      "failure_mechanism": "薄利润率、营运资本、资本开支和股权薪酬侵蚀股东现金"
+    },
+    {
+      "rank": 17,
+      "ticker": "NTAP",
+      "name": "NetApp",
+      "sector": "AI服务器_存储_EMS",
+      "price": 184.74,
+      "price_date": "2026-09-09",
+      "pe": 26.13,
+      "forward_pe": 16.79,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 165.0,
+          "adjclose": 164.50038146972656,
+          "volume": 2725700,
+          "target": "2026-06-09",
+          "return": 11.963636363636375
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 100.61000061035156,
+          "adjclose": 99.79419708251953,
+          "volume": 1862300,
+          "target": "2026-03-09",
+          "return": 83.61991738323525
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 123.12000274658203,
+          "adjclose": 121.00235748291016,
+          "volume": 2000800,
+          "target": "2025-09-09",
+          "return": 50.048729596157045
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "不建议投资",
+          "text": "不建议投资｜-30.4% 至 -13.2%｜低",
+          "percent_values": [
+            -30.4,
+            -13.2
+          ],
+          "source_line": 470,
+          "low": -30.4,
+          "high": -13.2,
+          "mid": -21.799999999999997,
+          "annual_low": -30.400000000000006,
+          "annual_high": -13.200000000000001,
+          "positive": false,
+          "rebased_low": -28.746086391685633,
+          "rebased_high": -11.137360614918279
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "不建议投资",
+          "text": "不建议投资｜-16.6% 至 +2.4%｜低",
+          "percent_values": [
+            -16.6,
+            2.4
+          ],
+          "source_line": 470,
+          "low": -16.6,
+          "high": 2.4,
+          "mid": -7.1000000000000005,
+          "annual_low": -5.87130950663286,
+          "annual_high": 0.7936839915898553,
+          "positive": false,
+          "rebased_low": -14.618155245209508,
+          "rebased_high": 4.8333441593590765
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "建议投资",
+          "text": "建议投资｜+33.9% 至 +90.3%｜低",
+          "percent_values": [
+            33.9,
+            90.3
+          ],
+          "source_line": 470,
+          "low": 33.9,
+          "high": 90.3,
+          "mid": 62.099999999999994,
+          "annual_low": 33.9,
+          "annual_high": 90.3,
+          "positive": true,
+          "rebased_low": 37.08188264588066,
+          "rebased_high": 94.82212298365266
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜+63.2% 至 +126.1%｜低",
+          "percent_values": [
+            63.2,
+            126.1
+          ],
+          "source_line": 470,
+          "low": 63.2,
+          "high": 126.1,
+          "mid": 94.65,
+          "annual_low": 17.735306337666735,
+          "annual_high": 31.25026454973132,
+          "positive": true,
+          "rebased_low": 67.07814225397854,
+          "rebased_high": 131.4728429143661
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜+32.8% 至 +72.2%｜低",
+          "percent_values": [
+            32.8,
+            72.2
+          ],
+          "source_line": 470,
+          "low": 32.8,
+          "high": 72.2,
+          "mid": 52.5,
+          "annual_low": 9.917293201900268,
+          "annual_high": 19.860950049271953,
+          "positive": true,
+          "rebased_low": 35.955743206668785,
+          "rebased_high": 76.2920103929847
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-71.5% 至 -67.6%｜低",
+          "percent_values": [
+            -71.5,
+            -67.6
+          ],
+          "source_line": 470,
+          "low": -71.5,
+          "high": -67.6,
+          "mid": -69.55,
+          "annual_low": -34.19155634758606,
+          "annual_high": -31.317145446800076,
+          "positive": false,
+          "rebased_low": -70.82275089314713,
+          "rebased_high": -66.83007469957778
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\NTAP_经营情景市场状态投资决策_2026-09-08.md",
+      "report_sha256": "e6fb369f896bc3c28ffd5a20d436c1a893dba85879c2ad08975314a4753801c6",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 189.13,
+      "iv_percent": 48.71877454,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.713634-07:00",
+      "iv_contract": {
+        "contractSymbol": "NTAP261016C00185000",
+        "lastTradeDate": "2026-09-09T18:07:10.000Z",
+        "strike": 185.0,
+        "lastPrice": 11.7,
+        "bid": 9.8,
+        "ask": 11.3,
+        "change": -2.46,
+        "percentChange": -17.37288,
+        "volume": 13.0,
+        "openInterest": 452,
+        "impliedVolatility": 0.4871877454,
+        "inTheMoney": false,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 0.14073833495722443,
+      "iv_relative_bid_ask_spread_percent": 14.218009478672986,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/NTAP/options/?date=1792108800",
+      "option_raw_sha256": "6097037f45c0a1ec79436b8a03f050b4dfa8b21b68e8de58f2eec8d75b58604b",
+      "optional_paired_call_put_iv_percent": 48.383084534999995,
+      "defense_basis": "ONTAP、企业续费、安装基数和多云渠道",
+      "growth_business": "企业AI数据管理、混合云和存储需求",
+      "failure_mechanism": "AI需求未必转成超额利润，存储周期、再投资及SBC"
+    },
+    {
+      "rank": 18,
+      "ticker": "IBM",
+      "name": "IBM",
+      "sector": "云算力_IDC_AI软件平台",
+      "price": 239.94,
+      "price_date": "2026-09-09",
+      "pe": 21.31,
+      "forward_pe": 18.23,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 277.489990234375,
+          "adjclose": 275.51361083984375,
+          "volume": 9007900,
+          "target": "2026-06-09",
+          "return": -13.532016128819402
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 253.3300018310547,
+          "adjclose": 249.68797302246094,
+          "volume": 6126600,
+          "target": "2026-03-09",
+          "return": -5.285596547693727
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 259.1099853515625,
+          "adjclose": 252.54461669921875,
+          "volume": 4931100,
+          "target": "2025-09-09",
+          "return": -7.398396987886247
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "不建议投资",
+          "text": "不建议投资｜-17.7%至+0.9%｜中",
+          "percent_values": [
+            -17.7,
+            0.9
+          ],
+          "source_line": 490,
+          "low": -17.7,
+          "high": 0.9,
+          "mid": -8.4,
+          "annual_low": -17.700000000000003,
+          "annual_high": 0.8999999999999897,
+          "positive": false,
+          "rebased_low": -17.700000000000003,
+          "rebased_high": 0.8999999999999897
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "不建议投资",
+          "text": "不建议投资｜-0.6%至+19.4%｜中",
+          "percent_values": [
+            -0.6,
+            19.4
+          ],
+          "source_line": 490,
+          "low": -0.6,
+          "high": 19.4,
+          "mid": 9.399999999999999,
+          "annual_low": -0.20040133869024812,
+          "annual_high": 6.08845115109895,
+          "positive": false,
+          "rebased_low": -0.6000000000000005,
+          "rebased_high": 19.399999999999995
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+58.0%至+102.1%｜低",
+          "percent_values": [
+            58.0,
+            102.1
+          ],
+          "source_line": 490,
+          "low": 58.0,
+          "high": 102.1,
+          "mid": 80.05,
+          "annual_low": 58.00000000000001,
+          "annual_high": 102.1,
+          "positive": true,
+          "rebased_low": 58.00000000000001,
+          "rebased_high": 102.1
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+89.9%至+138.2%｜低",
+          "percent_values": [
+            89.9,
+            138.2
+          ],
+          "source_line": 490,
+          "low": 89.9,
+          "high": 138.2,
+          "mid": 114.05,
+          "annual_low": 23.83449998609033,
+          "annual_high": 33.55103324604567,
+          "positive": true,
+          "rebased_low": 89.9,
+          "rebased_high": 138.19999999999996
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜+39.8%至+71.7%｜中",
+          "percent_values": [
+            39.8,
+            71.7
+          ],
+          "source_line": 490,
+          "low": 39.8,
+          "high": 71.7,
+          "mid": 55.75,
+          "annual_low": 11.8155979188878,
+          "annual_high": 19.744828149363713,
+          "positive": true,
+          "rebased_low": 39.79999999999999,
+          "rebased_high": 71.7
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-65.7%至-61.7%｜低",
+          "percent_values": [
+            -65.7,
+            -61.7
+          ],
+          "source_line": 490,
+          "low": -65.7,
+          "high": -61.7,
+          "mid": -63.7,
+          "annual_low": -30.000000000000004,
+          "annual_high": -27.37832560062031,
+          "positive": false,
+          "rebased_low": -65.7,
+          "rebased_high": -61.7
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\IBM_经营情景市场状态投资决策_2026-09-09.md",
+      "report_sha256": "b317dba9823fde827e6d1a81fc44c3caa1c41dbeb35bfa712e8b0902d8f88b74",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 239.94,
+      "iv_percent": 38.66638483,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.729017-07:00",
+      "iv_contract": {
+        "contractSymbol": "IBM261016C00240000",
+        "lastTradeDate": "2026-09-09T19:57:51.000Z",
+        "strike": 240.0,
+        "lastPrice": 11.6,
+        "bid": 11.15,
+        "ask": 11.75,
+        "change": 4.7500005,
+        "percentChange": 69.34308,
+        "volume": 433.0,
+        "openInterest": 3225,
+        "impliedVolatility": 0.3866638483,
+        "inTheMoney": false,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 0.02500625156289793,
+      "iv_relative_bid_ask_spread_percent": 5.24017467248908,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/IBM/options/?date=1792108800",
+      "option_raw_sha256": "e368ce9fce1ec65fe1c10bfb13b6cb7317cb90563385931132b2343af0d11651",
+      "optional_paired_call_put_iv_percent": 37.094745270000004,
+      "defense_basis": "混合云、Red Hat、主机与企业软件的延续收入",
+      "growth_business": "企业AI、软件增长和咨询效率带来的可持续现金",
+      "failure_mechanism": "有机增长、咨询工时替代、现金流正常化；量子计算不是主要估值支柱"
+    },
+    {
+      "rank": 19,
+      "ticker": "SMCI",
+      "name": "超微电脑",
+      "sector": "AI服务器_存储_EMS",
+      "price": 38.93,
+      "price_date": "2026-09-09",
+      "pe": 11.94,
+      "forward_pe": 7.31,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 40.63999938964844,
+          "adjclose": 40.63999938964844,
+          "volume": 51851100,
+          "target": "2026-06-09",
+          "return": -4.207675726697968
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 31.979999542236328,
+          "adjclose": 31.979999542236328,
+          "volume": 27705300,
+          "target": "2026-03-09",
+          "return": 21.732334450426528
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 42.91999816894531,
+          "adjclose": 42.91999816894531,
+          "volume": 37459000,
+          "target": "2025-09-09",
+          "return": -9.296361461245983
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜+28.3% 至 +55.8%｜低",
+          "percent_values": [
+            28.3,
+            55.8
+          ],
+          "source_line": 437,
+          "low": 28.3,
+          "high": 55.8,
+          "mid": 42.05,
+          "annual_low": 28.29999999999999,
+          "annual_high": 55.79999999999998,
+          "positive": true,
+          "rebased_low": 32.68322630362186,
+          "rebased_high": 61.1227331107115
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "谨慎建议投资",
+          "text": "谨慎建议投资｜+57.3% 至 +86.0%｜低",
+          "percent_values": [
+            57.3,
+            86.0
+          ],
+          "source_line": 437,
+          "low": 57.3,
+          "high": 86.0,
+          "mid": 71.65,
+          "annual_low": 16.29906973810744,
+          "annual_high": 22.98089464640998,
+          "positive": true,
+          "rebased_low": 62.67397893655276,
+          "rebased_high": 92.3544824043154
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+158.7% 至 +238.1%｜低",
+          "percent_values": [
+            158.7,
+            238.1
+          ],
+          "source_line": 437,
+          "low": 158.7,
+          "high": 238.1,
+          "mid": 198.39999999999998,
+          "annual_low": 158.7,
+          "annual_high": 238.09999999999997,
+          "positive": true,
+          "rebased_low": 167.53819676342147,
+          "rebased_high": 249.65080914461848
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+220.9% 至 +307.0%｜低",
+          "percent_values": [
+            220.9,
+            307.0
+          ],
+          "source_line": 437,
+          "low": 220.9,
+          "high": 307.0,
+          "mid": 263.95,
+          "annual_low": 47.49928181207332,
+          "annual_high": 59.660739481149385,
+          "positive": true,
+          "rebased_low": 231.8631903416388,
+          "rebased_high": 320.9047007449268
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+149.4% 至 +199.3%｜低",
+          "percent_values": [
+            149.4,
+            199.3
+          ],
+          "source_line": 437,
+          "low": 149.4,
+          "high": 199.3,
+          "mid": 174.35000000000002,
+          "annual_low": 35.612217147717004,
+          "annual_high": 44.1126947036907,
+          "positive": true,
+          "rebased_low": 157.9204726432057,
+          "rebased_high": 209.52525044952478
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-69.4% 至 -65.9%｜中",
+          "percent_values": [
+            -69.4,
+            -65.9
+          ],
+          "source_line": 437,
+          "low": -69.4,
+          "high": -65.9,
+          "mid": -67.65,
+          "annual_low": -32.613358991946676,
+          "annual_high": -30.13631972181894,
+          "positive": false,
+          "rebased_low": -68.35458515283844,
+          "rebased_high": -64.73501155920884
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\SMCI_经营情景市场状态投资决策_2026-09-08.md",
+      "report_sha256": "2faf3bd869a42b9f87207dafa9a05e2c08bcacb79b74ec21b3943de209785380",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 40.26,
+      "iv_percent": 73.09597217,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.762227-07:00",
+      "iv_contract": {
+        "contractSymbol": "SMCI261016C00039000",
+        "lastTradeDate": "2026-09-09T19:58:33.000Z",
+        "strike": 39.0,
+        "lastPrice": 3.64,
+        "bid": 3.5,
+        "ask": 3.65,
+        "change": -1.01,
+        "percentChange": -21.72043,
+        "volume": 145,
+        "openInterest": 599,
+        "impliedVolatility": 0.7309597217,
+        "inTheMoney": false,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 0.17980991523247614,
+      "iv_relative_bid_ask_spread_percent": 4.195804195804193,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/SMCI/options/?date=1792108800",
+      "option_raw_sha256": "a2b9083e2f708f2588674cb63ebf535f9183c8d79965f312232e2d498f212a9c",
+      "optional_paired_call_put_iv_percent": 70.87431470000001,
+      "defense_basis": "客户交付和规模形成一定业务价值，估值较低",
+      "growth_business": "AI服务器、整机机柜与液冷交付",
+      "failure_mechanism": "利润与经营现金流明显分离，营运资本和融资需求；仅适合小权重"
+    },
+    {
+      "rank": 20,
+      "ticker": "BDC",
+      "name": "Belden",
+      "sector": "AI网络_光互联_连接器",
+      "price": 117.78,
+      "price_date": "2026-09-09",
+      "pe": 19.12,
+      "forward_pe": 11.72,
+      "returns": {
+        "3m": {
+          "date": "2026-06-09",
+          "close": 110.1500015258789,
+          "adjclose": 110.10201263427734,
+          "volume": 581700,
+          "target": "2026-06-09",
+          "return": 6.926916358079649
+        },
+        "6m": {
+          "date": "2026-03-09",
+          "close": 122.9000015258789,
+          "adjclose": 122.79664611816406,
+          "volume": 465400,
+          "target": "2026-03-09",
+          "return": -4.165989798462933
+        },
+        "1y": {
+          "date": "2025-09-09",
+          "close": 127.98999786376953,
+          "adjclose": 127.78166961669922,
+          "volume": 221100,
+          "target": "2025-09-09",
+          "return": -7.977184181717767
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "scenario": "基准",
+          "months": 12,
+          "label": "不建议投资",
+          "text": "不建议投资｜-8.5%至+12.5%｜低",
+          "percent_values": [
+            -8.5,
+            12.5
+          ],
+          "source_line": 446,
+          "low": -8.5,
+          "high": 12.5,
+          "mid": 2.0,
+          "annual_low": -8.499999999999996,
+          "annual_high": 12.5,
+          "positive": false,
+          "rebased_low": -5.18275598573611,
+          "rebased_high": 16.578578706062164
+        },
+        "基准_36m": {
+          "scenario": "基准",
+          "months": 36,
+          "label": "中性",
+          "text": "中性 / 等待｜+17.0%至+39.1%｜低",
+          "percent_values": [
+            17.0,
+            39.1
+          ],
+          "source_line": 446,
+          "low": 17.0,
+          "high": 39.1,
+          "mid": 28.05,
+          "annual_low": 5.372824302963108,
+          "annual_high": 11.628659622939953,
+          "positive": false,
+          "rebased_low": 21.24172185430464,
+          "rebased_high": 44.14293598233996
+        },
+        "突破_12m": {
+          "scenario": "突破",
+          "months": 12,
+          "label": "建议投资",
+          "text": "建议投资｜+107.6%至+174.7%｜低",
+          "percent_values": [
+            107.6,
+            174.7
+          ],
+          "source_line": 446,
+          "low": 107.6,
+          "high": 174.7,
+          "mid": 141.14999999999998,
+          "annual_low": 107.59999999999997,
+          "annual_high": 174.7,
+          "positive": true,
+          "rebased_low": 115.12633723892,
+          "rebased_high": 184.65898284938024
+        },
+        "突破_36m": {
+          "scenario": "突破",
+          "months": 36,
+          "label": "建议投资",
+          "text": "建议投资｜+157.0%至+227.8%｜低",
+          "percent_values": [
+            157.0,
+            227.8
+          ],
+          "source_line": 446,
+          "low": 157.0,
+          "high": 227.8,
+          "mid": 192.4,
+          "annual_low": 36.97596680026398,
+          "annual_high": 48.54897166915837,
+          "positive": true,
+          "rebased_low": 166.31728646629313,
+          "rebased_high": 239.68407199864154
+        },
+        "乐观_36m": {
+          "scenario": "乐观",
+          "months": 36,
+          "label": "强烈建议投资",
+          "text": "强烈建议投资｜+103.1%至+141.3%｜中",
+          "percent_values": [
+            103.1,
+            141.3
+          ],
+          "source_line": 446,
+          "low": 103.1,
+          "high": 141.3,
+          "mid": 122.2,
+          "annual_low": 26.639729575100723,
+          "annual_high": 34.127894527177084,
+          "positive": true,
+          "rebased_low": 110.4631940906775,
+          "rebased_high": 150.04809814909157
+        },
+        "悲观_36m": {
+          "scenario": "悲观",
+          "months": 36,
+          "label": "强烈不建议投资",
+          "text": "强烈不建议投资｜-86.8%至-79.4%｜低",
+          "percent_values": [
+            -86.8,
+            -79.4
+          ],
+          "source_line": 446,
+          "low": -86.8,
+          "high": -79.4,
+          "mid": -83.1,
+          "annual_low": -49.083566303405114,
+          "annual_high": -40.940594163755115,
+          "positive": false,
+          "rebased_low": -86.32144676515537,
+          "rebased_high": -78.65316692137884
+        }
+      },
+      "report_file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\BDC_经营情景市场状态投资决策_2026-09-08.md",
+      "report_sha256": "b29fa5293dd72315aaa813eebc040ab9cd2f71fd2343776360fff865854be493",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 122.05,
+      "iv_percent": 55.090781129999996,
+      "iv_type": "near-ATM call source impliedVolatility, annualized",
+      "iv_expiry": "2026-10-16",
+      "iv_dte_calendar": 37,
+      "iv_collected_at": "2026-09-09T18:22:28.798616-07:00",
+      "iv_contract": {
+        "contractSymbol": "BDC261016C00115000",
+        "lastTradeDate": "2026-09-08T19:15:51.000Z",
+        "strike": 115.0,
+        "lastPrice": 10.9,
+        "bid": 7.1,
+        "ask": 9.6,
+        "change": 0.0,
+        "percentChange": 0.0,
+        "volume": 1.0,
+        "openInterest": 2,
+        "impliedVolatility": 0.5509078113,
+        "inTheMoney": true,
+        "contractSize": "REGULAR",
+        "currency": "USD"
+      },
+      "iv_strike_distance_percent": 2.360332823908984,
+      "iv_relative_bid_ask_spread_percent": 29.940119760479046,
+      "iv_quote_timestamp": null,
+      "iv_source_url": "https://finance.yahoo.com/quote/BDC/options/?date=1792108800",
+      "option_raw_sha256": "84b58c14470abd63c0191061846846d1f5e68e55e611b5ea5bae3608d56ac417",
+      "optional_paired_call_put_iv_percent": null,
+      "defense_basis": "工业连接和客户设计导入",
+      "growth_business": "Ruckus、网络/数据中心业务整合与现金转化",
+      "failure_mechanism": "收购后净负债和整合风险大，原报告悲观情景损失很深；仅适合小权重"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+# 公司收入传导与价值传导评估：NetApp（NTAP）
+
+报告日期：2026-06-12  
+公司代号：NTAP  
+公司名称：NetApp, Inc.  
+主口径：NTM 经营窗口。因 NetApp FY2026 已于 2026-04-24 结束，本报告用 FY2027 管理层指引和未来四个季度作为 NTM 主锚；FY2026、FY2027全年指引和更长期 AI 数据平台机会只作补充口径。  
+资料边界：项目内只使用 `公司调研/` 与 `行业调研/` 的事实层资料，并用公司官方 IR、财报新闻稿、业绩演示、业绩电话会文字稿和官方产品/合作公告校准最新日期；未读取、引用或继承 `特征量化/`、Signals、全公司排序、回归或模型比较资料。  
+排除边界：本报告不输出投资评级、目标价、股价区间或估值倍数判断；金融市场价格和估值数据不作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，约等于 FY2027 经营窗口；核心比较锚是 FY2027 收入指引 73.25-75.75 亿美元，中点 74.50 亿美元，约较 FY2026 收入 69.25 亿美元增长 8%。FY2026 实际、Q4 FY2026 run-rate、RPO、deferred revenue、Keystone TCV、AI/data preparation wins 和 AFX/STX 发布节奏只用于校准 NTM 可兑现性。
+- 当前收入基准、指引和 run-rate：FY2026 收入 69.25 亿美元，其中 Hybrid Cloud 62.37 亿美元、Public Cloud 6.88 亿美元；FY2026 all-flash array net revenue 41.78 亿美元，Q4 all-flash 12.16 亿美元、同比增长 18%；FY2026 deferred revenue 48.5 亿美元、RPO 56.5 亿美元、unbilled RPO 8.07 亿美元；FY2027 收入指引中点 74.50 亿美元、非 GAAP 毛利率中点约 69.0%、非 GAAP 经营利润率中点约 29.6%、非 GAAP EPS 中点约 8.85 美元。
+- 重要产品/业务线：Product / all-flash ONTAP systems，Support / installed-base services，Public Cloud storage services，Professional and Other / Keystone STaaS，Hybrid-flash/FAS/StorageGRID residual，以及 AI Data Platform（AFX、AI Data Engine、AIPod、STX/CMX）作为嵌入式增量和远期期权。
+- NTM 公司收入四情景：悲观 70.5-73.0 亿美元；基准 73.3-75.8 亿美元；乐观 77.5-81.0 亿美元；极度乐观 83.0-89.0 亿美元。基准情景基本等于公司 FY2027 指引正常兑现，乐观要求 all-flash、Public Cloud、Keystone 和 AI 数据平台转化至少两个环节同时强于当前预期，极度乐观不进入主判断。
+- 利润或 EBITDA 四情景：NetApp 未给出可直接核验的 FY2027 EBITDA 指引，本报告以非 GAAP operating income、non-GAAP net income 和 free cash flow 方向替代。基准情景非 GAAP 经营利润约 21.3-22.8 亿美元、非 GAAP 净利润约 17.0-18.2 亿美元、FCF 约 17.5-20.5 亿美元；乐观情景需要高毛利 Support/Public Cloud 占比和 all-flash 产品毛利不被组件成本吞噬。
+- 最大传导瓶颈：从 AI/data preparation wins、Google Distributed Cloud、NVIDIA DGX SuperPOD/AFX 认证、STX/CMX 合作到 NetApp NTM 可确认收入之间仍有合同、交付、验收、云市场确认和订阅收入递延环节；不能把 AI 基础设施需求池直接等同于 NTAP 收入。
+- 最大利润率变量：Product gross margin 与业务 mix。FY2026 Product 毛利率约 56.3%，Support 毛利率约 92.5%，Public Cloud 毛利率约 83.6%；如果新增收入主要来自硬件系统、NAND/SSD/供应链成本上升或竞争性大客户项目，收入上修未必转成利润上修。
+- 最大现金流变量：billings、RPO/unbilled RPO、Keystone TCV、deferred revenue 和 working capital。Keystone/订阅型业务提升可见性，但收入确认延后；大型系统项目若拉高库存或应收账款，也可能压低短期 FCF 转化。
+- 可信度：基准为高；悲观为中；乐观为中；极度乐观为低到中。最可信的经营结论是 FY2027 指引附近正常兑现，并带有 Public Cloud、Support 和 all-flash mix 的利润质量支撑；AI Data Platform 是乐观和极度乐观变量，不是基准大额新增收入。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Product / all-flash ONTAP systems（AFF/ASA/EF/AFX、含部分 FAS/StorageGRID 产品销售） | FY2026 Product revenue 31.94 亿美元；all-flash array net revenue 41.78 亿美元为产品 mix/需求锚，不能与 Product revenue 简单相加 | Product 约 46.1%；all-flash 净收入约 60.3% 的 FY2026 总收入 | 当前最大收入传导载体，AI、企业刷新和数据平台需求主要先进入硬件/系统收入 | A | 进入基准；以 FY2027 指引、Q4 run-rate、all-flash 增速和供应链约束保守纳入 | AFX/AI Data Engine/STX 带来的非线性放量只进乐观/极度乐观 |
+| Support / installed-base services | FY2026 Support revenue 26.36 亿美元 | 约 38.1% | 最高利润质量业务，体现 installed base、维护续约和产品附加价值 | A | 进入基准；按 installed base、deferred revenue/RPO 和正常续约节奏处理 | AI 系统安装基数扩张后的支持收入滞后释放 |
+| Public Cloud storage services | FY2026 Public Cloud revenue 6.88 亿美元；ex-Spot +18%，first-party/marketplace storage +30% | 约 9.9% | 高毛利、云原生存储与企业数据管道的重要利润传导层 | A | 进入基准；按云服务增长和 marketplace 采用正常兑现 | GenAI 数据服务、云端 ONTAP 扩展和 Google/云厂商合作加速 |
+| Professional and Other / Keystone STaaS | FY2026 Professional and Other Services 4.07 亿美元；Keystone revenue 未单独披露，FY2026 约 +65%，TCV 约 3 亿美元、+34% | Professional/Other 约 5.9%；Keystone 单独占比无法可靠量化 | 订阅化、STaaS 与大型客户项目兑现层，改善可见性但收入递延 | A/B | 进入基准，但 Keystone 只通过已披露服务收入、RPO、TCV 和确认节奏保守纳入 | Keystone 成为 AI/混合云容量采购主路径时可上移到乐观 |
+| Hybrid-flash / FAS / capacity object / StorageGRID residual | Hybrid Cloud 62.37 亿美元减 all-flash 41.78 亿美元，粗略 residual 约 20.59 亿美元；包含多种口径，不是单一产品收入 | 约 29.7% 的 FY2026 总收入为粗略 residual 口径 | 传统/容量/对象存储底盘，既可能受 AI 冷温数据需求支撑，也可能被 all-flash 和云服务替代 | A | 作为抵消项和稳定项进入基准；不作为高增长核心 | StorageGRID/对象存储在 AI 数据湖、归档和合规场景中可能改善下滑斜率 |
+| AI Data Platform：AFX / AI Data Engine / AIPod / STX-CMX | 无单独收入披露；FY2026 AI/data preparation wins 超过 1,100 个，Q4 约 500 个；有约 2,000 万美元金融客户案例、Google Distributed Cloud、NVIDIA DGX SuperPOD/AFX、European government SuperPOD、neo cloud 等证据 | 当前单独占比无法可靠量化 | 改变增长叙事和 mix 的关键新品/平台，但 NTM 大额可确认收入仍需验证 | C/D | 不作为独立大额收入进入基准；少量已签客户/项目转化嵌入 Product、Public Cloud 或 Keystone | STX/CMX、AI Data Engine 和 AFX 标准化采用可形成远期期权或极度乐观上限 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估产品或服务的外部需求池和客户预算强弱，不判断 NTAP 份额、收入确认、利润率或公司层面汇总。所有情景均相对当前需求锚和 FY2027 指引隐含路径判断，绝对变化为 NTM 需求或可观察业务量级的方向性变化；无法用同一单位可靠量化时标注“无法可靠量化”。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Product / all-flash ONTAP systems | FY2026 all-flash 41.78 亿美元、+11%；Q4 12.16 亿美元、+18%；FY2027 公司收入指引中点隐含总收入 +8% | all-flash 需求仅持平至中个位数增长，企业刷新放缓或 AI 项目延后 | all-flash 需求高个位数至低双位数增长，企业刷新、SAN/NAS 更新和 AI 数据准备正常延续 | all-flash 需求 +15%-25%，AI 数据平台、Google/云边缘项目和企业刷新同时加速 | all-flash 需求 +30% 以上，AFX/AI Data Engine 成为多行业 AI 数据层采购标准 | 相对 FY2026 all-flash，需求池约从 +0.0-0.2 十亿美元到 +1.3 十亿美元以上 | 悲观低于当前预期；基准符合当前预期；乐观/极度乐观高于当前预期 | 正向：Q4 all-flash +18%、AI/data wins 增加、行业 AI-native 存储/KV/对象存储需求扩张。反证：大客户采购可能项目化，NAND/SSD 紧张推高成本，Pure/Dell/HPE/VAST/WEKA/DDN 和云原生替代竞争 |
+| Support / installed-base services | FY2026 Support 26.36 亿美元、毛利率 92.5%；deferred revenue 48.5 亿美元、RPO 56.5 亿美元 | 续约率或附加服务需求低于正常，硬件出货转弱导致后续 attach 放缓 | installed base 正常续约，随 all-flash 和混合云装机温和增长 | 大型系统项目和云/Keystone 采用提升服务 attach，支持收入高个位数增长 | AI/Keystone/混合云标准化项目大幅扩大 installed base，支持需求双位数以上增长 | NTM 服务需求约 +0.05-0.45 十亿美元 | 基准符合 RPO/deferred revenue 可见性；乐观要求新增装机和高 attach 率 | 正向：Support 高毛利、递延收入/RPO 支撑。反证：客户优化支出、第三方维护、硬件增速放缓对后续服务形成滞后拖累 |
+| Public Cloud storage services | FY2026 Public Cloud 6.88 亿美元、+3%；ex-Spot +18%；first-party/marketplace storage +30%；毛利率 83.6% | 云优化和 Spot 相关拖累继续，核心云存储增长降至中个位数 | ex-Spot 业务保持中高双位数，云上 ONTAP、备份、数据服务和 hyperscaler marketplace 正常渗透 | 云存储/数据服务 +30%-40%，GenAI 数据管道和 Google/云市场合作超预期 | 云端数据层成为 AI 应用标准组件，收入需求 +50% 以上 | NTM 需求约 +0.05-0.45 十亿美元，极度乐观可更高 | 基准高于 FY2026 reported +3%，但符合 ex-Spot 与管理层叙述；乐观高于当前预期 | 正向：core cloud storage 增长快、毛利高。反证：Public Cloud 总体基数仍小，云厂商自研服务、客户 FinOps 和 NetApp 退出/收缩低质量 Spot 业务影响 reported growth |
+| Professional and Other / Keystone STaaS | FY2026 Professional/Other 4.07 亿美元、+14.6%；Keystone revenue +65%，TCV 约 3 亿美元、+34%；unbilled RPO 8.07 亿美元、+88% | STaaS 客户采用低于计划，项目验收或收入确认延后 | Keystone 和专业服务随大型客户/AI/混合云项目正常增长，但收入确认分期 | Keystone 成为企业容量采购重要方式，TCV 与 RPO 继续高增 | STaaS 对传统采购形成明显替代，大型 AI/混合云客户采用非线性加速 | 服务/订阅需求约 +0.05-0.45 十亿美元，极度乐观可能更高但收入递延 | 基准符合当前订单和 TCV；乐观需要订单到收入节奏更快 | 正向：Keystone 增速和 TCV/RPO 证据较强。反证：订阅化增加可见性但拉长确认，不能把 TCV 全部当 NTM 收入 |
+| Hybrid-flash / FAS / capacity object / StorageGRID residual | FY2026 Hybrid Cloud 62.37 亿美元；粗略 residual 20.59 亿美元，FY2025 对应 residual 约 21.44 亿美元，约 -4% | 传统混合闪存/FAS 继续中高个位数下滑，all-flash 和云替代加速 | residual 低个位数下滑至持平，容量/对象存储需求部分抵消传统压力 | StorageGRID、对象存储和冷温数据湖需求使 residual 稳定或低个位数增长 | AI 数据积累显著提升对象/容量存储预算，residual 高个位数增长 | 约 -0.2 至 +0.2 十亿美元，极度乐观仍非核心增长池 | 基准为低于公司总增长的抵消项；乐观仅改善下滑斜率 | 正向：AI 数据积累和合规归档提升容量层需求。反证：该口径混杂、披露不足，且传统业务可能被 all-flash/cloud cannibalize |
+| AI Data Platform：AFX / AI Data Engine / AIPod / STX-CMX | FY2026 AI/data preparation wins 超 1,100；Q4 约 500；AFX 与 NVIDIA DGX SuperPOD 认证，STX/CMX 合作目标 H2 2026 伙伴可用 | wins 主要停留在 PoC/小规模项目，NTM 大额采购延后 | 已有客户和认证带来少量项目转化，嵌入 Product/Public Cloud/Keystone | AFX/AI Data Engine 在企业 AI 数据准备、RAG、agentic workflows 中形成可复制订单 | STX/CMX 和 AFX 成为 AI inference/context memory 标准架构，多个大客户项目 NTM 内确认 | 单独需求无法可靠量化；可观察量为 wins、认证、百万/千万美元级项目数量 | 基准只承认小额嵌入式转化；乐观/极度乐观显著高于当前可确认收入路径 | 正向：NVIDIA/Google/金融/政府/neo cloud 案例。反证：STX 伙伴可用性偏 H2 2026，非 NetApp 独家，商业收入确认路径仍不充分 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断哪些需求能进入 NetApp NTM 收入表，以及当前可收入化基数是多少；不预测增长、不判断利润率。公司能参与某个需求池不等于能在 NTM 确认收入。基准优先使用 A/B 级证据；C 级只有客户、产品和时间表较清楚时小比例纳入；D/E 级不进入基准 NTM 收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Product / all-flash ONTAP systems | FY2026 Product revenue 31.94 亿美元；all-flash 41.78 亿美元作为产品 mix 和需求锚；Q4 Product 9.32 亿美元、all-flash 12.16 亿美元 | 直接 | 硬件/系统毛利中等，附带后续 Support 和服务利润；Product 毛利率 FY2026 约 56.3% | 31.0-32.5 亿美元 | 33.5-35.5 亿美元 | 36.5-39.5 亿美元 | 42.0-47.0 亿美元 | 基准符合 FY2027 指引隐含路径；乐观高于当前预期 | A | 是 | 已披露分部收入、all-flash 收入、Q4 run-rate、FY2027 指引 | 基准纳入；AFX/AI Data Engine 只以已转化项目嵌入，不单独加总 |
+| Support / installed-base services | FY2026 Support revenue 26.36 亿美元；deferred revenue 48.5 亿美元、RPO 56.5 亿美元 | 直接 | 高毛利、续约型、现金流质量高；FY2026 Support 毛利率约 92.5% | 26.8-27.6 亿美元 | 27.8-29.0 亿美元 | 29.5-31.0 亿美元 | 31.5-33.5 亿美元 | 基准符合 installed base 与 RPO；乐观需新增系统 attach 更强 | A | 是 | 已披露收入、递延收入和 RPO | 基准纳入，是利润质量核心 |
+| Public Cloud storage services | FY2026 Public Cloud revenue 6.88 亿美元；ex-Spot +18%；first-party/marketplace +30% | 直接 | 高毛利软件/云服务属性；FY2026 Public Cloud 毛利率约 83.6% | 7.0-7.6 亿美元 | 7.8-8.6 亿美元 | 9.0-10.5 亿美元 | 11.5-13.5 亿美元 | 基准略高于 reported growth，但符合核心云服务增长；乐观高于当前预期 | A | 是 | 已披露分部收入、毛利率和 core cloud 增长 | 基准纳入；Spot 低质量收入不外推 |
+| Professional and Other / Keystone STaaS | FY2026 Professional/Other 4.07 亿美元；Keystone revenue 未披露，FY2026 +65%；TCV 约 3 亿美元、+34% | 直接/间接 | 专业服务毛利低于 Support/Public Cloud；Keystone 订阅改善可见性但递延确认 | 4.2-4.8 亿美元 | 5.0-6.2 亿美元 | 6.5-8.5 亿美元 | 9.5-12.5 亿美元 | 基准按服务收入和 RPO 正常确认；乐观要求 Keystone 订单到收入加速 | A/B | 是，但 Keystone 不单独全额计入 | 已披露服务收入、Keystone 增速、TCV、RPO/unbilled RPO | 基准保守纳入；TCV 不等同 NTM 收入 |
+| Hybrid-flash / FAS / capacity object / StorageGRID residual | 由 Hybrid Cloud 与 all-flash 口径推算 residual 约 20.59 亿美元；非独立披露分部 | 直接/间接 | 既含硬件也含容量/对象存储，利润属性混杂；对公司增长多为抵消项 | 19.0-20.0 亿美元 | 19.5-20.8 亿美元 | 20.8-21.8 亿美元 | 22.0-24.0 亿美元 | 基准低于公司整体增长；乐观只代表下滑放缓 | A 级总收入，产品拆分为估算 | 是，作为 Product/Hybrid Cloud 内部抵消项 | 分部收入与 all-flash 差额推算，需避免与 Product/Support 重复 | 纳入基准但不作为高增长驱动 |
+| AI Data Platform：AFX / AI Data Engine / AIPod / STX-CMX | 无单独收入；wins、认证、客户案例和产品发布时间表可见 | 主要间接，少量项目可直接 | 如果转为软件/服务/高端系统 mix，利润属性较好；如果为竞争性硬件项目，利润可能一般 | 无法可靠量化；仅承认已确认项目中小额转化 | 嵌入式 1.0-2.5 亿美元，不作为独立增量与 Product/Cloud/Keystone 重复相加 | 嵌入式 3.0-6.0 亿美元 | 嵌入式 8.0-12.0 亿美元 | 基准只承认小额可见转化；乐观/极度乐观为高于当前预期的上限 | C/D | 不作为独立大额收入进入基准 | 客户案例、认证、产品发布、H2 2026 STX 可用性；缺少单独收入和大规模确认表 | 基准仅嵌入；单独大额收入进入乐观、极度乐观或附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第一步需求和第二步收入基数出发，判断每个重要产品在 NTM 内能给 NetApp 贡献多少收入和利润。Product、Support、Public Cloud、Professional/Other 是主要可加总财务口径；Hybrid residual 和 AI Data Platform 是用于解释 mix、抵消项和催化剂的非完全可加总标签，避免与 Product/Public Cloud/Keystone 重复计算。利润贡献优先用毛利或非 GAAP operating income 方向描述；单独产品经营利润缺少披露时填“无法可靠量化”。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Product / all-flash ONTAP systems | 悲观 | 31.0-32.5 亿美元 | Product 毛利约 16.7-18.0 亿美元 | 低于 FY2026 Product 毛利率或仅持平 | 低于指引隐含路径 | 企业刷新放缓、Google/大项目拉动不可持续、组件成本压力 | 保留为下行情景 | all-flash 仍强但不能完全抵消传统产品与价格/成本压力 |
+| Product / all-flash ONTAP systems | 基准 | 33.5-35.5 亿美元 | Product 毛利约 18.5-20.0 亿美元 | 毛利率大体稳定，受 NAND/SSD 成本压制 | 符合当前预期 | FY2027 指引、Q4 all-flash +18%、Product revenue +5% | 保留为主情景 | AI 项目贡献多数仍嵌入系统收入，无法单独高估 |
+| Product / all-flash ONTAP systems | 乐观 | 36.5-39.5 亿美元 | Product 毛利约 20.5-22.8 亿美元 | 高端 all-flash/AI mix 改善，毛利小幅上行 | 高于当前预期 | AFX/Google/金融/政府/neo cloud 项目转化，多行业数据准备项目增加 | 保留但需新增订单证据 | 大客户项目可能压价；竞争对手和云厂商自研替代 |
+| Product / all-flash ONTAP systems | 极度乐观 | 42.0-47.0 亿美元 | Product 毛利约 24.0-28.0 亿美元 | 只有高端系统和软件 attach 足够强才显著扩张 | 显著高于当前预期 | AFX/AI Data Engine 成为企业 AI 数据层标准路径 | 下移为上限情景 | STX/CMX 非独家且 H2 2026 才进入伙伴可用期，NTM 大额确认证据不足 |
+| Support / installed-base services | 悲观 | 26.8-27.6 亿美元 | 毛利约 24.6-25.5 亿美元 | 仍高但增速放缓 | 略低于当前预期 | installed base 续约支撑，但新增装机放缓 | 保留 | Support 滞后于 Product，下行通常较缓 |
+| Support / installed-base services | 基准 | 27.8-29.0 亿美元 | 毛利约 25.7-26.9 亿美元 | 稳定在 92% 左右 | 符合当前预期 | deferred revenue、RPO、installed base | 保留 | attach 率和续约率未单独披露 |
+| Support / installed-base services | 乐观 | 29.5-31.0 亿美元 | 毛利约 27.3-28.8 亿美元 | 高毛利收入占比提高 | 高于当前预期 | all-flash 装机、Keystone/混合云项目拉动服务 attach | 保留 | 收入确认与服务合同开始时间滞后 |
+| Support / installed-base services | 极度乐观 | 31.5-33.5 亿美元 | 毛利约 29.2-31.2 亿美元 | 高毛利显著拉升公司 mix | 显著高于当前预期 | AI/Keystone 大客户部署扩大 installed base | 保留为低可信上限 | 需要多个大项目同步上线和高 attach，证据不足 |
+| Public Cloud storage services | 悲观 | 7.0-7.6 亿美元 | 毛利约 5.8-6.4 亿美元 | 高毛利但增长弱 | 低于核心云服务预期 | 云优化、Spot 拖累、客户 FinOps | 保留 | reported Public Cloud FY2026 仅 +3%，基数小 |
+| Public Cloud storage services | 基准 | 7.8-8.6 亿美元 | 毛利约 6.5-7.3 亿美元 | 毛利率约 83%-85% | 符合 ex-Spot 与 marketplace 增长路径 | ex-Spot +18%、first-party/marketplace +30% | 保留 | 云厂商自研服务和客户预算优化 |
+| Public Cloud storage services | 乐观 | 9.0-10.5 亿美元 | 毛利约 7.6-9.0 亿美元 | 高毛利 mix 改善公司利润率 | 高于当前预期 | Google/云市场、AI 数据管道、云端 ONTAP 扩展 | 保留 | 增量收入需要真实 workload 迁移而非渠道发布 |
+| Public Cloud storage services | 极度乐观 | 11.5-13.5 亿美元 | 毛利约 9.8-11.7 亿美元 | 非常有利于利润率 | 显著高于当前预期 | 云端数据层成为 GenAI 标准组件 | 下移为上限情景 | NTM 内云服务采用速度和收入确认证据不足 |
+| Professional and Other / Keystone STaaS | 悲观 | 4.2-4.8 亿美元 | 毛利约 1.2-1.6 亿美元；Keystone 单独利润无法可靠量化 | 项目成本和递延确认压制 | 低于当前预期 | 项目验收、订阅递延、服务交付成本 | 保留 | TCV 不等于收入；专业服务毛利较低 |
+| Professional and Other / Keystone STaaS | 基准 | 5.0-6.2 亿美元 | 毛利约 1.6-2.3 亿美元 | 随规模温和改善 | 符合当前预期 | FY2026 service +14.6%、Keystone +65%、TCV +34% | 保留 | Keystone revenue 未披露，拆分需估算 |
+| Professional and Other / Keystone STaaS | 乐观 | 6.5-8.5 亿美元 | 毛利约 2.3-3.5 亿美元 | STaaS mix 改善但仍受交付成本影响 | 高于当前预期 | unbilled RPO +88%、大客户偏好订阅/按需容量 | 保留 | 订阅化收入确认慢，现金与收入节奏不一致 |
+| Professional and Other / Keystone STaaS | 极度乐观 | 9.5-12.5 亿美元 | 毛利约 3.6-5.5 亿美元 | 规模效应显著但需高利用率 | 显著高于当前预期 | Keystone 成为 AI/混合云容量采购主路径 | 下移为上限情景 | 需要 TCV、RPO、交付能力和确认节奏同时突破 |
+| Hybrid-flash / FAS / capacity object / StorageGRID residual | 悲观 | residual 约 19.0-20.0 亿美元；已在 Product/Support 内部体现 | 单独利润无法可靠量化 | 负 mix 或低增速抵消项 | 低于当前预期 | 传统业务下滑、all-flash/cloud cannibalization | 保留 | 该口径由差额推算，不能独立加总 |
+| Hybrid-flash / FAS / capacity object / StorageGRID residual | 基准 | residual 约 19.5-20.8 亿美元；主要为稳定/小幅下滑 | 单独利润无法可靠量化 | 对公司毛利率影响中性到轻微负面 | 符合当前预期 | AI 数据积累支撑容量/对象层，传统替代仍存在 | 保留 | StorageGRID 未单独披露收入 |
+| Hybrid-flash / FAS / capacity object / StorageGRID residual | 乐观 | residual 约 20.8-21.8 亿美元 | 单独利润无法可靠量化 | 下滑放缓，mix 拖累减轻 | 略高于当前预期 | 对象存储、冷温数据湖和合规归档需求 | 保留 | 不是 NetApp 高增长主引擎 |
+| Hybrid-flash / FAS / capacity object / StorageGRID residual | 极度乐观 | residual 约 22.0-24.0 亿美元 | 单独利润无法可靠量化 | 若软件/对象存储占比高则改善 | 高于当前预期但低可信 | AI 数据湖和长期归档需求超预期 | 下移为附录跟踪 | 无独立披露和客户确认路径 |
+| AI Data Platform：AFX / AI Data Engine / AIPod / STX-CMX | 悲观 | 独立增量无法可靠量化；嵌入式增量低于 1 亿美元 | 利润无法可靠量化 | 研发/销售投入先行，短期利润贡献有限 | 低于当前叙事预期 | wins 未转成大规模订单，STX 延后 | 保留 | 不能用 NVIDIA/AI 需求池替代 NTAP 收入确认 |
+| AI Data Platform：AFX / AI Data Engine / AIPod / STX-CMX | 基准 | 嵌入式 1.0-2.5 亿美元，已包含在 Product/Public Cloud/Keystone | 利润无法可靠量化；高端系统和软件 attach 有正向 mix | 小幅正向 | 符合可见证据 | >1,100 AI/data wins、Q4 约 500 wins、认证和客户案例 | 保留但不单独加总 | 缺少单独收入、价格、交付和确认披露 |
+| AI Data Platform：AFX / AI Data Engine / AIPod / STX-CMX | 乐观 | 嵌入式 3.0-6.0 亿美元，推高 Product/Public Cloud/Keystone | 利润取决于软件/服务 attach；若以硬件项目为主则利润弹性有限 | 正向但需验证 | 高于当前预期 | 金融 2,000 万美元级案例、Google Distributed Cloud、NVIDIA SuperPOD/AFX | 保留 | 需要回答谁买、买什么、何时确认、NetApp 为何捕获 |
+| AI Data Platform：AFX / AI Data Engine / AIPod / STX-CMX | 极度乐观 | 嵌入式 8.0-12.0 亿美元；不作为基准 | 只有软件/服务化和高端系统定价权同时成立才显著改善 | 可能显著正向 | 显著高于当前预期 | STX/CMX、AI Data Engine 与 AFX 形成 AI inference/context memory 标准架构 | 下移为低可信上限 | STX 伙伴众多、非独家、H2 2026 可用，NTM 收入证据不足 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把可加总的 Product、Support、Public Cloud、Professional/Other 贡献合成为公司 NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向；Hybrid residual 与 AI Data Platform 只作为 mix、抵消项和上修/下修变量处理，避免重复计算。所有情景先与 NetApp FY2027 指引中点 74.50 亿美元、非 GAAP 毛利率中点约 69.0%、非 GAAP 经营利润率中点约 29.6% 比较，再判断经营质量。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 70.5-73.0 亿美元 | 较 FY2026 +1.3 至 +3.8 亿美元，约 +2%-5% | 低于 FY2027 指引中点约 2%-5%；Q1 额外一周和大项目拉动不足以延续 | 非 GAAP GM 66.5%-68.0% | 非 GAAP OPM 26.5%-28.0% | EBITDA 无法可靠量化；非 GAAP operating income 约 18.7-20.4 亿美元；非 GAAP net income 约 14.5-16.0 亿美元 | FCF 约 13.5-16.5 亿美元，working capital 和库存/应收压力上升 | 中 | all-flash 增速放缓、Public Cloud reported growth 受拖累、Keystone 递延确认、组件成本和大客户项目压价 |
+| 基准公司 | 73.3-75.8 亿美元 | 较 FY2026 +4.0 至 +6.5 亿美元，约 +6%-9% | 基本符合 FY2027 指引 73.25-75.75 亿美元；当前预期正常兑现 | 非 GAAP GM 68.5%-69.5% | 非 GAAP OPM 29.1%-30.1% | EBITDA 无法可靠量化；非 GAAP operating income 约 21.3-22.8 亿美元；非 GAAP net income 约 17.0-18.2 亿美元 | FCF 约 17.5-20.5 亿美元，仍维持高现金转化 | 高 | 需要 Product 增长、Support 续约、Public Cloud 核心增长和 Keystone 确认节奏共同正常 |
+| 乐观公司 | 77.5-81.0 亿美元 | 较 FY2026 +8.3 至 +11.8 亿美元，约 +12%-17% | 高于 FY2027 指引中点约 4%-9%；不是单一小基数项目造成 | 非 GAAP GM 69.5%-70.5% | 非 GAAP OPM 30.0%-31.5% | EBITDA 无法可靠量化；非 GAAP operating income 约 23.3-25.5 亿美元；非 GAAP net income 约 18.5-20.5 亿美元 | FCF 约 20.5-23.5 亿美元，billings/RPO 和高毛利 mix 改善 | 中 | all-flash、Public Cloud、Keystone 至少两个环节超预期，同时产品成本不能吞噬价格/mix 改善 |
+| 极度乐观公司 | 83.0-89.0 亿美元 | 较 FY2026 +13.8 至 +19.8 亿美元，约 +20%-29% | 高于 FY2027 指引中点约 11%-19%；只代表 NTM 上限 | 非 GAAP GM 70.0%-72.0% | 非 GAAP OPM 31.5%-33.5% | EBITDA 无法可靠量化；非 GAAP operating income 约 26.1-29.8 亿美元；非 GAAP net income 约 20.5-23.5 亿美元 | FCF 约 23.0-28.0 亿美元，但执行和营运资本波动大 | 低到中 | 需求、NetApp 捕获、软件/服务 mix、供应链、STX/AFX 客户采用和收入确认必须同时突破；任一环节不足即下移 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。正向证据只提升其实际影响层级，反证只限制其实际影响环节，同一风险不在多个步骤重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2027 收入指引 73.25-75.75 亿美元、非 GAAP GM 68.5%-69.5%、非 GAAP OPM 29.1%-30.1% | 公司汇总 | 锚定基准公司收入，不允许把行业热度直接上修为基准 | 锚定基准利润率，收入增长不自动带来更高经营杠杆 | 提供经营兑现基线 | 基准保留 |
+| FY2026 RPO 56.5 亿美元、deferred revenue 48.5 亿美元、unbilled RPO 8.07 亿美元 | 收入基数/执行 | 支撑 Support、Keystone、云/订阅收入可见性 | 高毛利续约和订阅服务有利于 mix | 提高可见性但收入确认分期 | 基准保留，乐观需新增 RPO/billings |
+| all-flash FY2026 41.78 亿美元、Q4 +18% | 需求/产品贡献 | 支撑 Product 基准增长和乐观上修 | 高端 all-flash mix 正向，但组件成本可能抵消 | 需要供应链、交付和验收正常 | 基准保留，乐观保留 |
+| Public Cloud ex-Spot +18%、first-party/marketplace +30%、毛利率 83.6% | 产品贡献/公司利润 | 支撑 Public Cloud 从 reported +3% 回到核心增长 | 高毛利，对公司 GM/OPM 有正向贡献 | 云服务收入现金质量较好，但受客户 FinOps 影响 | 基准保留，乐观保留 |
+| Keystone revenue +65%、TCV 约 3 亿美元 +34%、unbilled RPO +88% | 收入基数/现金流 | 支撑 STaaS 进入基准，但 TCV 不等于 NTM 收入 | 长期有利于订阅 mix，短期受服务成本和折旧/交付影响 | 可见性提高，收入递延 | 基准保留，极度乐观下移 |
+| AI/data preparation wins 超 1,100、Q4 约 500、金融客户约 2,000 万美元案例 | 需求/产品贡献 | 支撑 AI 数据平台少量嵌入式基准和乐观上限 | 利润率取决于系统、软件、服务 mix | 需要从 wins 到订单、交付、验收和收入确认 | 乐观保留，基准小比例保留 |
+| AFX、AI Data Engine、NVIDIA DGX SuperPOD 认证、STX/CMX 合作 | 需求/技术位置 | 强化远期和乐观收入路径，但 STX H2 2026 可用性限制 NTM | 若形成软件/高端系统 attach 才显著提升利润 | 伙伴生态、客户认证和产品可用性仍需跟踪 | 极度乐观下移，部分移入附录 |
+| NAND/SSD/eSSD 供应紧张和组件成本上行 | 产品利润/现金流 | 不必直接压低需求，但可能限制交付或价格竞争力 | 压制 Product GM，收入上修可能低质量 | 可能增加库存、预付款和 working capital | 悲观保留；不重复惩罚 Support/Public Cloud |
+| 竞争：Pure、Dell、HPE、VAST、WEKA、DDN、云厂商自研和 NVIDIA 生态多伙伴 | 公司捕获/价格 | 限制 NetApp 对 AI 存储/KV/context memory 需求池的捕获率 | 可能导致大客户项目压价或更低硬件毛利 | 影响订单胜率和客户认证周期 | 乐观保留但设约束，极度乐观下移 |
+| Google Distributed Cloud、大型金融/政府/neo cloud 客户项目 | 收入确认/执行 | 支撑具体客户路径，不能把客户总预算全额当收入 | 大项目利润率取决于定价、服务和支持 attach | 需观察是否拉动后续 repeat orders | 乐观保留，基准只纳入可确认部分 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | FY2027 收入低于指引，Product 增长、Public Cloud 核心增长或 Keystone 确认弱于预期；利润率受成本和 mix 拖累 | Support/RPO/deferred revenue 使收入下行有缓冲 | all-flash Q4 +18%、FY2027 指引仍为增长，悲观不能假设所有业务同时失速 | 保留 | 下行情景；收入 70.5-73.0 亿美元、OPM 26.5%-28.0% | 中 | NAND/SSD 成本压力只在 Product 利润和 working capital 处理，不再重复压低 Support/Public Cloud |
+| 基准 | FY2027 指引正常兑现，Product、Support、Public Cloud、Keystone 按当前可见路径贡献 | FY2027 指引、RPO/deferred revenue、all-flash 和 core cloud 增长证据均为 A/B 级 | AI Data Platform 单独收入不足，不能额外上修基准 | 保留 | 主情景；收入 73.3-75.8 亿美元、OPM 29.1%-30.1% | 高 | AI/STX 证据不足只限制新增上修，不重复否定已披露 Product/Cloud/Support 基准 |
+| 乐观 | all-flash、Public Cloud、Keystone 和 AI 数据平台至少两个环节超预期，收入和利润率同步改善 | AI/data wins、Google/金融/政府/neo cloud 案例、Public Cloud 高毛利、Keystone 高增 | 订单到收入确认、非独家生态和竞争压价仍需验证 | 保留 | 上行情景；收入 77.5-81.0 亿美元、OPM 30.0%-31.5% | 中 | 大客户项目压价只限制 Product/AI 项目利润，不重复压低 Public Cloud 高毛利 |
+| 极度乐观 | AI 数据平台、STX/CMX、AFX、Keystone、Public Cloud 同时非线性突破，收入和 mix 显著好于预期 | NVIDIA/AFX/STX 方向性强，行业 AI-native 存储和 context memory 需求长期空间大 | STX H2 2026 可用、非独家、多伙伴竞争、无单独收入披露，NTM 大额确认证据不足 | 下移 | 仅作为低可信 NTM 上限；STX/CMX 单独大额贡献移入附录跟踪 | 低到中 | 缺少 STX 收入证据只限制极度乐观，不重复惩罚基准 all-flash 与 Public Cloud 收入 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入最可能落在 73.3-75.8 亿美元，基本对应 FY2027 指引区间；非 GAAP 经营利润率约 29.1%-30.1%，非 GAAP operating income 约 21.3-22.8 亿美元，FCF 约 17.5-20.5 亿美元。经营价值传导来自 all-flash/Product 正常增长、Support 高毛利续约、Public Cloud 核心云服务增长和 Keystone/RPO 可见性，而不是来自 AI 题材的一次性重估。
+- 乐观情景成立条件：Q1-Q2 FY2027 billings 和 product orders 明显强于指引；all-flash 增长保持或超过 Q4 FY2026 的强势节奏；Public Cloud ex-Spot 和 first-party/marketplace 继续高增；Keystone TCV/RPO 转为更快收入确认；AI/data wins 出现更多千万美元级 repeat orders，并能看到 Product、Public Cloud 或 Keystone 的明确确认路径。
+- 极度乐观情景成立条件：AFX/AI Data Engine/STX/CMX 在 NTM 内不仅发布或认证，而且成为多个大客户标准化采购架构；NetApp 在 NVIDIA/AI 存储生态中获得可验证份额；新增收入具有高端系统、软件、Support 或云服务 attach，而不是低毛利 pass-through；供应链、交付、验收、营运资本和毛利率同时不构成约束。
+- 悲观情景触发条件：FY2027 Q1/Q2 指引或订单显示 Google/大客户项目拉动不可持续；Product revenue 增速回落到低个位数或负增长；Public Cloud reported growth 继续被优化/退出业务拖累；Keystone 只贡献 TCV/RPO 而不贡献 NTM 收入；NAND/SSD 成本、竞争压价或库存/应收导致毛利率和 FCF 明显低于指引。
+- 后续跟踪数据：季度 Product revenue、all-flash array net revenue、Public Cloud reported 与 ex-Spot 增速、Support revenue 和毛利率、Keystone revenue/TCV/RPO、billings、RPO/unbilled RPO、deferred revenue、AI/data wins 的金额化披露、AFX/AI Data Engine 客户案例、STX/CMX 实际可用时间和客户采用、Product gross margin、inventory/receivables 与 FCF 转化。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：FY2026 财年结束日为 2026-04-24；NetApp Q4/FY2026 业绩公告日期为 2026-05-28；本报告日期为 2026-06-12。NTM 主口径采用 FY2027 指引和未来四个季度。
+- 主要收入、订单、指引和利润率来源：
+  - NetApp 官方业绩新闻稿：`NetApp Reports Fourth Quarter and Fiscal Year 2026 Results`，披露 FY2026 收入 69.25 亿美元、Q4 收入 19.48 亿美元、FY2027 收入指引 73.25-75.75 亿美元、FY2027 非 GAAP 毛利率和经营利润率指引。链接：https://investors.netapp.com/news/news-details/2026/NetApp-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Results/default.aspx
+  - NetApp Q4/FY2026 earnings presentation，披露 revenue、billings、RPO、deferred revenue、all-flash array、Public Cloud、Hybrid Cloud、product/support/services gross margin 等口径。链接：https://s21.q4cdn.com/371534297/files/doc_earnings/2026/q4/presentation/q4-presentation.pdf
+  - NetApp Q4/FY2026 earnings transcript，披露 AI/data preparation wins、Google Distributed Cloud、多年协议、Keystone、Public Cloud ex-Spot 和 FY2027 经营讨论。链接：https://s21.q4cdn.com/371534297/files/doc_financials/2026/q4/NTAP-Q4-and-FY2026-Earnings-Transcript.pdf
+  - NetApp 官方 STX/AI Data Engine 合作公告。链接：https://www.netapp.com/newsroom/press-releases/news-rel-20260316-181478/
+  - NetApp EF-Series 官方发布。链接：https://investors.netapp.com/news/news-details/2026/NetApp-Unveils-New-High-Performance-EF-Series-Models/default.aspx
+  - NVIDIA BlueField-4 STX 官方公告，披露 STX/CMX、context memory、H2 2026 partner availability 和生态伙伴。链接：https://nvidianews.nvidia.com/news/nvidia-launches-bluefield-4-stx-storage-architecture-with-broad-industry-adoption
+- 项目内公司资料：
+  - `公司调研/AI服务器_存储_EMS/NTAP_NetApp_公司调研_2026-06-11.md`：用于收入分部、all-flash、Public Cloud、Keystone、AI/data wins、AFX/AI Data Engine、客户案例、指引和利润率整理。
+- 项目内行业资料：
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md`：用于 AI-native 存储、KV cache/context memory、AI 数据平台需求池和 STX/CMX 行业位置判断。
+  - `行业调研/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-06-10.md`：用于 PCIe Gen5/Gen6、QLC/eSSD、NAND/SSD 供需和组件成本约束判断。
+  - `行业调研/AI服务器_存储_芯片/行业调研_HDD、对象存储与冷温数据存储_2026-06-11.md`：用于对象存储、冷温数据和 StorageGRID/容量层需求判断。
+  - `行业调研/AI网络_光互联_铜互联/行业调研_网卡、DPU与SmartNIC_2026-06-11.md`：用于 DPU/SmartNIC、BlueField、STX/CMX 生态和 2026H2/2027 采用节奏判断。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 是已披露实际基数，不代表 NTM 自动增长率。
+  - FY2027 指引是 NTM 主锚，不等同长期 run-rate。
+  - AFX、AI Data Engine、AIPod、STX/CMX 的长期机会可能显著，但缺少单独收入披露、客户规模化确认和 NTM 交付/验收节奏，不能作为基准大额收入；本报告仅在乐观、极度乐观和附录跟踪中处理。
+  - AI-native 存储和 KV/context memory 行业需求池不是 NetApp 收入池；需要经过客户选择、竞争份额、产品交付、价格、验收、收入确认和利润留存之后，才构成 NTAP 经营价值。
+- 主要排除项：
+  - 未使用 `特征量化/`、Signals、结构化评分、回归结论、模型比较或全公司排序。
+  - 未使用市场价格、估值倍数、目标价或投资评级作为经营传导证据。
+  - 未把客户总预算、AI TAM、NVIDIA 生态公告或同业高增直接写成 NetApp NTM 收入。

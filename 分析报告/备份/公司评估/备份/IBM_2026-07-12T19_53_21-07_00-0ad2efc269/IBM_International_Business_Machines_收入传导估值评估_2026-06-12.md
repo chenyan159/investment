@@ -1,0 +1,170 @@
+# 公司收入传导与价值传导评估：International Business Machines（IBM）
+
+> 生成日期：2026-06-12  
+> 主口径：NTM，定义为 2026Q2-2027Q1 四个季度。  
+> 最新财务锚点：IBM 2026Q1，季度截至 2026-03-31，发布于 2026-04-22。  
+> 资料边界：使用 `公司调研/`、`行业调研/` 及 IBM 官方财报、公告和产品资料校准；未读取、引用或继承 `特征量化/`、Signals、回归结论、排序结果或市场估值表。  
+> 排除项：本文不做全公司排序，不给投资评级，不判断股价区间，不使用市场价格或估值倍数作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口，即 2026Q2-2027Q1；FY2026 指引、FY2027 远期、Confluent/HashiCorp 整合协同、ServiceNow 联合方案、z17 长周期和量子计算只作为补充或远期期权，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：IBM FY2025 收入 675 亿美元，2026Q1 收入 159 亿美元；以 FY2025 + 2026Q1 - 2025Q1 估算，最新 TTM 收入约 689 亿美元。管理层在 2026Q1 后维持 FY2026 固定汇率收入增长超过 5%、自由现金流同比增加约 10 亿美元的指引。当前预期锚点不是 AI 题材，而是软件 10%+、咨询低到中个位数、基础设施全年低个位数下降的组合兑现。
+- 重要产品/业务线：Red Hat / OpenShift / Red Hat AI，IBM Consulting GenAI，Data / watsonx / Confluent / DataStax，Automation / HashiCorp / Ansible / FinOps，IBM Z / z17 / Transaction Processing，以及非 AI 咨询、Distributed Infrastructure、Financing 等抵消项。
+- NTM 公司收入四情景：悲观 690-710 亿美元；基准 725-740 亿美元；乐观 750-775 亿美元；极度乐观 785-810 亿美元。基准相当于相对最新 TTM 增长约 5-7%，基本符合管理层当前预期；乐观需要软件和 GenAI 咨询同时强于当前预期；极度乐观需要 Confluent、OpenShift AI、HashiCorp、z17 与 Consulting 转化全部同步突破，可信度较低。
+- 利润或 EBITDA 四情景：悲观为调整后 EBITDA 180-190 亿美元、自由现金流 135-148 亿美元；基准为调整后 EBITDA 200-210 亿美元、自由现金流 153-160 亿美元；乐观为调整后 EBITDA 215-230 亿美元、自由现金流 162-172 亿美元；极度乐观为调整后 EBITDA 235-250 亿美元、自由现金流 175 亿美元以上。利润弹性主要来自高毛利软件 mix，而不是低毛利咨询工时。
+- 最大传导瓶颈：IBM 能参与企业 AI 需求池，但只有进入已签合同、ARR、咨询 backlog、主机周期或可交付软件订阅的部分才能进入 NTM 收入。企业 AI 预算、GPU CapEx 和数据中心建设规模不能直接当作 IBM 收入。
+- 最大利润率变量：软件收入占比、Confluent/HashiCorp 并购整合费用与交叉销售速度、Consulting GenAI 项目利用率、z17 主机硬件和 Transaction Processing 软件的 stack multiplier。
+- 最大现金流变量：自由现金流能否在 Confluent 现金收购、融资应收变化、股息和软件并购整合费用后维持 150 亿美元以上；若咨询项目拉长、客户付款周期延后或并购整合成本超预期，收入增长不一定转化为 FCF 增量。
+- 可信度：公司层基准为中高，因 FY2026 指引、2026Q1 分部收入和利润、Software ARR / OpenShift ARR / Consulting backlog 均有可见证据；乐观为中，因需要产品级交叉销售和项目交付假设；极度乐观为低到中，因部分机会仍处产品发布、preview、客户导入或 2026H2 才可用阶段。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Red Hat / OpenShift / Red Hat AI | OpenShift ARR 约 20 亿美元；Red Hat 精确收入未单独披露，归入 Software；Software 2026Q1 收入 70.52 亿美元 | OpenShift 约占最新 TTM 收入 3%；Software 合计占 2026Q1 收入 44.3% | 企业混合云、Kubernetes、AI 推理运行时、VMware 替代和企业支持的核心入口 | A/B：Software 收入、Red Hat 增速、OpenShift ARR 和已发布托管服务 | OpenShift 和 Red Hat 基础订阅进入基准；Red Hat AI Inference 进入基准的小额增量和乐观上修项 | llm-d / 私有推理集群事实标准化、Red Hat AI 成为企业推理控制层 |
+| IBM Consulting GenAI | Consulting 2026Q1 收入 52.72 亿美元；GenAI 超过 Consulting revenue 20%，年化收入已超过 40 亿美元；GenAI 约占 Consulting backlog 30%、signings 约 40% | Consulting 合计占 2026Q1 收入 33.1%；GenAI 年化约占最新 TTM 收入 6%+ | AI 从 POC 到生产化的交付通道，拉动软件、数据、自动化和主机现代化 | A/B：分部收入、backlog/signings/revenue 占比、历史 GenAI book of business | GenAI 咨询进入基准，但按交付节奏折扣；不能把全部 backlog 当 NTM 收入 | ServiceNow 联合方案、行业 agent 大规模落地、咨询自动化带来的 margin expansion |
+| Data / watsonx / Confluent / DataStax / StreamSets / webMethods | IBM Data 子类未披露绝对收入；2026Q1 Data 固定汇率增长 16%；Confluent 已于 2026-03 完成收购，拥有 6500+ 企业客户和 40% Fortune 500 渗透 | 精确占比无法可靠量化；纳入 Software 44.3% 之内 | 企业 AI 的数据层、实时流、向量/NoSQL、lakehouse、治理和 agent 上下文 | A/B/C：Data 增速、Confluent 正式完成并购、DataStax/StreamSets 产品路径；部分 watsonx 新功能为 C/D | 既有 Data 和 Confluent 可进入基准；新 agent data / MCP / OpenRAG 只小额进入或作为乐观项 | 企业 agent 实时数据基础设施、ServiceNow Workflow Data Fabric 联合销售 |
+| Automation / HashiCorp / Ansible / FinOps / Instana / Turbonomic / Apptio | Automation 2026Q1 固定汇率增长 7%；HashiCorp 已于 2025-02 完成收购，EV 64 亿美元；精确产品收入未拆 | 精确占比无法可靠量化；纳入 Software 44.3% 之内 | 多云基础设施、secrets、IaC、FinOps、可观测性和 AI ops 的控制层 | A/B/C：Automation 分部增长、HashiCorp 正式并购、Terraform/Vault/Ansible 产品组合 | Automation 既有 ARR 进入基准；HashiCorp 协同按中等折扣纳入；Infragraph 等 preview 只进乐观/附录 | AI agent 运行环境、主权 AI、多云秘密管理和自动 remediation |
+| IBM Z / z17 / Transaction Processing / LinuxONE / Storage | Infrastructure 2026Q1 收入 33.26 亿美元；IBM Z 固定汇率增长 48%；Transaction Processing 纳入 Software，2026Q1 固定汇率增长 2% | Infrastructure 占 2026Q1 收入 20.9%；IBM Z 精确占比未披露 | 高粘性核心交易系统、主机周期、z17 内置 AI 推理、软件/维护 stack multiplier | A/B：分部收入、IBM Z 增速、z17 发布和 Spyre/Telum II 产品资料 | z17 周期和已有 TP 软件进入基准；Spyre/主机 GenAI 只作为乐观小额附加 | 主机内低延迟 AI、交易欺诈/风控推理、数据不出域的监管型 AI |
+| 非 AI 咨询、Distributed Infrastructure、Financing、Other 抵消项 | 剩余收入大头；Consulting 非 GenAI、Distributed Infrastructure、Infrastructure Support、Financing 均有正式收入表 | 仍占公司收入过半 | 决定成长业务能否真正拉动公司层增速和利润率 | A：正式分部披露 | 必须进入公司汇总，用来抵消成长业务；不作为 AI 上修来源 | 若传统业务意外稳定或被 AI modernize 项目重新拉动，可改善基准质量 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只判断外部需求池，不判断 IBM 份额、收入确认、利润率或公司层收入。需求单位按产品选择：OpenShift/Red Hat AI 用企业 Kubernetes/推理运行时订阅和支持需求；Consulting GenAI 用生产化项目、签约和 backlog 转化需求；Data/Confluent 用实时数据流、AI-ready data、向量/RAG/治理需求；Automation/HashiCorp 用 IaC、secrets、FinOps、AIOps 和混合云自动化需求；z17 用主机 MIPS、核心交易刷新、z17 AI attach 和 TP 软件需求。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Red Hat / OpenShift / Red Hat AI | OpenShift ARR 约 20 亿美元且高 20% 增长；行业资料显示开源运行时、Kubernetes、KServe/llm-d、企业支持正在从工程工具变成 AI 工厂控制层 | 需求仍增 10-15%，但企业 AI 私有云标准化慢，托管云原生 Kubernetes 和 NVIDIA 软件栈挤压 | 需求增 20-30%，符合当前 OpenShift 增速和 VMware 替代、混合云、企业 AI 生产化节奏 | 需求增 35-50%，Red Hat AI Inference、OpenShift Virtualization 和 llm-d 进入更多企业推理项目 | 需求增 60%+，企业私有推理运行时突然成为标准采购 | 从 ARR 约 20 亿美元的产品需求池向 25-30 亿美元级别扩张，乐观可更高 | 基准为符合当前预期；乐观高于当前预期 | 正向：生产级推理需要治理、SLA、成本控制；反证：客户直接用 AWS/Azure/GCP 原生服务或 NVIDIA AI Enterprise，绕过 OpenShift |
+| IBM Consulting GenAI | GenAI 已占 Consulting revenue 20%+、backlog 约 30%、signings 约 40%；企业从 POC 到生产化需要数据治理、应用现代化和流程重构 | 项目需求增速降到 0-15%，客户预算审批和 ROI 评估拉长，咨询总需求只低个位数 | GenAI 项目需求增 20-35%，符合 backlog 正常转化和 Consulting 低到中个位数整体增长 | GenAI 项目需求增 40-60%，客户把应用现代化和 agent 流程改造提前 | GenAI 项目需求增 80%+，大企业全面加速、预算从传统 IT 和流程外包迁移 | GenAI 年化需求从 40 亿美元以上向 50-60 亿美元级别扩张 | 基准为正常兑现；乐观需要 signings/backlog 继续提升 | 正向：backlog 和 signings 已可见；反证：AI 自动化可能压缩咨询工时，客户项目延期或压价 |
+| Data / watsonx / Confluent / DataStax | IBM Data 2026Q1 固定汇率 +16%；Confluent 已完成并购，实时数据是企业 AI 上线瓶颈；行业资料强调 agent/RAG 需要 live、governed、continuously flowing data | 需求增 5-10%，客户先整理数据但不扩大平台预算，云厂原生数据流替代 | 需求增 15-25%，符合 Data 子类增长、Confluent 存量客户和 AI-ready data 需求 | 需求增 30-45%，Confluent 通过 IBM 大客户渠道加速交叉销售 | 需求增 60%+，实时数据流/向量/RAG/agent 上下文成为企业 AI 必配 | 可识别数据层需求从低个位数十亿美元向中个位数十亿美元扩张 | 基准略高于传统软件，符合当前预期；乐观高于当前预期 | 正向：Confluent 6500+ 企业客户、40% Fortune 500；反证：AWS/MSFT/GCP、Snowflake、Databricks 抢走数据平台预算 |
+| Automation / HashiCorp / Ansible / FinOps | Automation 2026Q1 固定汇率 +7%；HashiCorp Terraform/Vault 已并入 IBM Automation；AI 集群和混合云提高 IaC、secrets、FinOps、observability 需求 | 需求持平到 +5%，Terraform/OpenTofu、云原生工具和价格压力限制增量 | 需求 +8-15%，符合 Automation 当前增长和 HashiCorp 初期整合 | 需求 +20-35%，Vault/Terraform/Ansible/ServiceNow 联合进入 AI ops 和虚拟化迁移 | 需求 +45%+，多云 AI、主权 AI 和 agent 安全治理集中爆发 | 从当前 high-single 增长需求上移至 low-double，乐观进入 20%+ | 基准为符合当前预期；乐观需交叉销售证据 | 正向：混合云复杂度上升；反证：OpenTofu、Pulumi、云原生 IaC、独立 observability 厂商替代 |
+| IBM Z / z17 / Transaction Processing | IBM Z 2026Q1 固定汇率 +48%，z17 周期启动；Spyre/Telum II 支持主机内 AI 推理；TP 软件增长低个位数 | z17 前期强需求正常回落，Infrastructure H2 低个位数下滑，AI attach 只影响小客户群 | 主机刷新按计划兑现，z17 硬件强但全年 Infrastructure 仍接近低个位数下降，TP 软件稳定 | z17 周期长于预期，银行/支付/政府把欺诈、风控、客服推理放回主机域 | 主机内 AI 成为监管行业重要路线，z17 新 MIPS 和 TP stack multiplier 同时突破 | 需求从硬件周期高点逐步转向软件/维护 stack；极乐观为小概率结构上修 | 基准为符合管理层整体预期；乐观高于当前预期 | 正向：替换成本高、数据不出域；反证：主机周期天然回落，通用 GPU/云推理仍是主流 |
+| 非 AI 咨询与传统/分布式业务抵消项 | Consulting 非 GenAI、Distributed Infrastructure、Infrastructure Support、Financing 占收入大头；2026 指引隐含传统业务抵消成长 | 需求下降 2-5%，传统咨询项目缩量，Distributed/Support 下滑 | 需求大体持平到低个位数，传统业务拖累但不失控 | 需求小幅改善，传统系统现代化被 AI 项目带动 | 需求明显改善，但缺少 NTM 公司特定证据 | 对公司总收入可造成 -10 亿到 +10 亿美元级摆动 | 基准为符合当前预期；乐观只作公司组合改善 | 正向：AI modernize 拉动；反证：宏观 IT 服务预算收缩、硬件周期消退 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断外部需求中哪些能进入 IBM NTM 收入表，以及当前可收入化基数。A 级为已披露分部收入、ARR 或正式指引；B 级为 backlog、RPO、正式合同、完成并购并有客户基础；C 级为产品发布、管理层可验证披露或明确交付时间表；D/E 级不进入 NTM 基准，只作乐观、极度乐观或远期期权。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Red Hat / OpenShift / Red Hat AI | Software 2026Q1 收入 70.52 亿美元；OpenShift ARR 约 20 亿美元；Red Hat 2026Q1 固定汇率 +10%；Red Hat AI Inference 2026-05 GA | 直接软件订阅、支持、托管服务；AI 需求通过平台层间接进入 | 高毛利软件，增量利润率高于咨询；但销售、支持、研发和云托管成本影响经营利润 | OpenShift/AI 相关 NTM 约 21-24 亿美元，Red Hat AI 新服务小额 | OpenShift/AI 相关 NTM 约 25-28 亿美元； broader Red Hat 只按 Software 指引处理 | 30-34 亿美元 | 36 亿美元以上，仅代表上限 | 基准符合当前 ARR 增速；乐观高于当前预期 | A/B/C | 是，Red Hat/OpenShift 进入基准；Red Hat AI 小额折扣纳入 | ARR、Software 收入、服务 GA 时间表 | 可确认收入来自订阅/支持/托管服务，不来自 GPU CapEx；乐观需要客户数或 ARR 披露 |
+| IBM Consulting GenAI | Consulting 2026Q1 收入 52.72 亿美元；GenAI revenue 20%+、backlog 30%、signings 40%；2025 年底 GenAI book of business 超 125 亿美元 | 直接服务收入；也间接拉动软件 pull-through | 毛利率低于软件；若项目模板化和 Consulting Advantage 提高利用率，利润质量改善 | 38-45 亿美元 | 48-58 亿美元 | 60-75 亿美元 | 80-100 亿美元，仅作上限 | 基准为 backlog 正常转化；悲观低于预期；乐观需 signings 持续高增 | A/B | 是，但不能把 backlog 全额当收入 | 已确认收入占比、backlog/signings 占比、历史 book | 进入基准的只有 NTM 可交付项目；客户预算和交付产能是约束 |
+| Data / watsonx / Confluent / DataStax | Data 子类 2026Q1 固定汇率 +16%；Confluent 2026-03 完成并购，EV 约 110 亿美元；DataStax、StreamSets、webMethods 已进入组合 | 直接软件订阅、云消费、支持；间接通过 Consulting 和 ServiceNow 联合方案 | 软件毛利高，但 Confluent 并购摊销、SBC、整合成本和云托管成本压经营利润 | 可识别 AI 数据层 NTM 22-30 亿美元；Data 大盘增长放缓 | 32-46 亿美元，含 Confluent 正常并表和 IBM Data 正常增长 | 50-65 亿美元 | 70 亿美元以上，仅上限 | 基准略高于当前 Data 增速但受并购支持；乐观需交叉销售 | A/B/C | 是，既有 Data/Confluent 进入基准；新 agent data 功能小额或乐观 | Data 增速、Confluent 完成并购、产品整合路径 | 可收入化强于一般 AI 题材，但 exact Data 收入不披露，需保持区间 |
+| Automation / HashiCorp / Ansible / FinOps | Automation 2026Q1 固定汇率 +7%；HashiCorp 2025-02 完成并购，EV 64 亿美元；Terraform/Vault/Ansible/Instana/Turbonomic/Apptio 组合可交叉销售 | 直接软件订阅、支持、FinOps/observability；间接拉动混合云和咨询 | 软件属性较强；但开源替代和整合成本压制价格 | 可识别 AI/hybrid automation NTM 16-22 亿美元 | 24-32 亿美元 | 35-45 亿美元 | 50 亿美元以上，仅上限 | 基准符合 Automation 当前增长并小幅纳入 HashiCorp；乐观需大单 | A/B/C | 是，既有 Automation 和 HashiCorp 成熟产品进入基准 | Automation 增速、HashiCorp 正式并购、Terraform/Vault 已可售 | NTM 基准不纳入仅 preview 的 Infragraph 大额收入 |
+| IBM Z / z17 / Transaction Processing | Infrastructure 2026Q1 收入 33.26 亿美元；IBM Z 固定汇率 +48%；Transaction Processing 2026Q1 固定汇率 +2%；Spyre 2025-10 GA | 直接硬件、软件、维护、融资；AI attach 是间接增强 | 主机硬件周期性，但 TP 软件/维护高粘性高利润；z17 可带 stack multiplier | z17/TP 相关可识别 NTM 80-95 亿美元，Infrastructure 高基数回落 | 95-115 亿美元；Infrastructure 全年仍保守 | 120-140 亿美元 | 145 亿美元以上，仅上限 | 基准符合 z17 正常周期；极乐观需 AI attach 显著 | A/B/C | 是，z17 周期和 TP 稳定收入进入基准；Spyre AI 小额 | 分部收入、IBM Z 增速、z17/Spyre 产品时间表 | 可确认收入来自主机刷新和软件维护，不来自通用 AI 数据中心 |
+| 非 AI 咨询与传统/分布式抵消项 | 剩余公司收入，包括非 GenAI Consulting、Distributed Infrastructure、Infrastructure Support、Financing、Other | 直接收入，但多为抵消项 | 利润率低于软件或周期性更强；Financing 利润高但规模小 | 410-430 亿美元 | 430-445 亿美元 | 445-455 亿美元 | 460 亿美元以上 | 基准为稳定抵消；悲观导致公司低于指引 | A | 是，必须进入公司汇总 | 正式收入表和管理层分部指引 | 这是防止把成长业务重复计算的去重层 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从需求和可收入化基数出发，判断每个产品/业务线在 NTM 内的收入和利润贡献。表内金额是经营估算区间，使用 IBM 披露收入、ARR、backlog、分部利润率、管理层指引和本地行业资料校准；不能与其他公司或行业 TAM 直接相加。若 IBM 未披露产品绝对收入，表内使用“可识别贡献区间”，并在约束列说明不确定性。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Red Hat / OpenShift / Red Hat AI | 悲观产品 | 21-24 亿美元 | 高毛利但增量有限；对公司 EBITDA 贡献低于当前期待 | 软件利润率稳定或小降 | 低于当前预期 | OpenShift ARR 已可见，但云原生和 NVIDIA 软件栈竞争 | 保留为悲观 | 企业直接使用 AWS/Azure/GCP 或 NVIDIA AI Enterprise，OpenShift AI attach 不及预期 |
+| Red Hat / OpenShift / Red Hat AI | 基准产品 | 25-28 亿美元 | 支撑 Software segment 29-30%+ 利润率；增量利润质量高 | 稳定到小幅上行 | 符合当前预期 | OpenShift ARR 约 20 亿美元，Red Hat 固定汇率 +10%，托管服务 2026-05/06 可用 | 保留 | 新服务仍早期，不能把全部运行时行业需求算给 IBM |
+| Red Hat / OpenShift / Red Hat AI | 乐观产品 | 30-34 亿美元 | 高毛利软件拉动公司毛利率和经营利润率 | 上行 | 高于当前预期 | VMware 替代、OpenShift Virtualization、Red Hat AI Inference、llm-d 生态 | 保留为乐观 | 需要披露客户/ARR/订单，不应只用产品发布推算 |
+| Red Hat / OpenShift / Red Hat AI | 极度乐观产品 | 36 亿美元以上 | 若平台成为企业私有推理默认层，利润弹性强 | 明显上行 | 显著高于当前预期 | 企业推理运行时需求强、开源企业支持模式成熟 | 下移为乐观上限 | NTM 内缺少足够客户收入披露，部分属于远期期权 |
+| IBM Consulting GenAI | 悲观产品 | 38-45 亿美元 | 项目毛利被人力成本、客户延期和 AI 自动化压缩 | 持平到下行 | 低于当前预期 | Consulting 总体增长仅低个位数，客户 ROI 审批可能变慢 | 保留 | backlog erosion、签约周期拉长、客户压价 |
+| IBM Consulting GenAI | 基准产品 | 48-58 亿美元 | 利润贡献中等；若模板化交付，项目毛利好于普通咨询但仍低于软件 | 小幅上行 | 符合当前预期 | GenAI revenue 20%+、backlog 30%、signings 40%；咨询低到中个位数指引 | 保留 | 不能把 125 亿美元 GenAI book 全额计入 NTM；交付产能是硬约束 |
+| IBM Consulting GenAI | 乐观产品 | 60-75 亿美元 | 高利用率和软件 pull-through 带来利润率改善 | 上行 | 高于当前预期 | ServiceNow、Confluent、HashiCorp、主机现代化组合带动项目扩大 | 保留 | 乐观收入必须对应具体客户项目和确认时间 |
+| IBM Consulting GenAI | 极度乐观产品 | 80-100 亿美元 | 若大量项目标准化，利润可改善，但咨询仍有工时天花板 | 上行但不非线性 | 显著高于当前预期 | 企业 AI 工作流全面生产化 | 下移为乐观上限/附录 | 任一环节缺客户预算、交付人员或验收证据，不能进入基准 |
+| Data / watsonx / Confluent / DataStax | 悲观产品 | 22-30 亿美元 | 软件毛利高，但并购整合成本和云原生竞争压利润 | 稳定到下行 | 低于当前预期 | Data 增速仍正，但 Confluent cross-sell 延迟 | 保留 | AWS/MSFT/GCP、Snowflake、Databricks 替代；Confluent 续约或整合不顺 |
+| Data / watsonx / Confluent / DataStax | 基准产品 | 32-46 亿美元 | 高毛利软件贡献，但扣除并购摊销/SBC 后经营利润改善温和 | 稳定到小幅上行 | 符合当前预期 | Data 固定汇率 +16%；Confluent 完成并购并有 6500+ 客户 | 保留 | IBM 未披露 Data 绝对收入，区间需保守 |
+| Data / watsonx / Confluent / DataStax | 乐观产品 | 50-65 亿美元 | 若实时数据流进入 agent/RAG 平台预算，利润质量高 | 上行 | 高于当前预期 | Confluent + watsonx.data + IBM Z + ServiceNow 数据织物联动 | 保留 | 需看到联合客户、ARR 或订单，而非只看技术整合 |
+| Data / watsonx / Confluent / DataStax | 极度乐观产品 | 70 亿美元以上 | 高毛利软件可明显改善公司结构 | 明显上行 | 显著高于当前预期 | 企业 agent 生产化要求 live governed data | 下移为乐观上限 | NTM 内产品和销售整合时间不足，部分收入应放入 FY2027+ |
+| Automation / HashiCorp / Ansible / FinOps | 悲观产品 | 16-22 亿美元 | 利润被开源替代、销售整合和价格压力压制 | 稳定或小降 | 低于当前预期 | Automation +7% cc，不是高爆发起点 | 保留 | OpenTofu/Pulumi/云原生 IaC，独立 observability 厂商竞争 |
+| Automation / HashiCorp / Ansible / FinOps | 基准产品 | 24-32 亿美元 | 软件利润率健康，FinOps/observability 可改善客户粘性 | 稳定到小幅上行 | 符合当前预期 | HashiCorp 已并入，Terraform/Vault 可与 Ansible/OpenShift 组合销售 | 保留 | HashiCorp 大额协同不能无证据提前计入 |
+| Automation / HashiCorp / Ansible / FinOps | 乐观产品 | 35-45 亿美元 | 多云安全、secrets、AI ops 拉动高毛利订阅 | 上行 | 高于当前预期 | Vault 2.0、Infragraph、ServiceNow IT workflows、OpenShift virtualization | 保留 | 需要客户采用和价格证明 |
+| Automation / HashiCorp / Ansible / FinOps | 极度乐观产品 | 50 亿美元以上 | 若成为 AI agent / 多云治理控制层，利润弹性强 | 明显上行 | 显著高于当前预期 | 混合云复杂度和安全治理需求上升 | 下移为乐观上限 | preview/新功能证据等级不足，不能进基准 |
+| IBM Z / z17 / Transaction Processing | 悲观产品 | 80-95 亿美元 | 硬件周期回落，TP 软件稳定但不足以抵消 | 下行 | 低于当前预期 | 管理层指引 Infrastructure 全年低个位数下降 | 保留 | z17 高增不可外推全年；主机 AI attach 适用面有限 |
+| IBM Z / z17 / Transaction Processing | 基准产品 | 95-115 亿美元 | 主机硬件 + TP 软件/维护支撑高质量现金流 | 稳定到上行 | 符合当前预期 | IBM Z +48% cc；z17 已进入客户部署；TP +2% cc | 保留 | 精确 IBM Z 收入未披露；不能把主机 AI 当通用 GPU 市场 |
+| IBM Z / z17 / Transaction Processing | 乐观产品 | 120-140 亿美元 | z17 stack multiplier 和 TP 软件使利润质量高 | 上行 | 高于当前预期 | 金融/政府核心系统刷新、低延迟 AI 推理、数据不出域 | 保留 | 需看到 MIPS、placement、TP 附加销售继续强 |
+| IBM Z / z17 / Transaction Processing | 极度乐观产品 | 145 亿美元以上 | 若主机内 AI 成为监管行业标准，利润弹性高但范围窄 | 明显上行 | 显著高于当前预期 | Spyre/Telum II 可支持主机内 LLM/推理 | 下移为乐观上限 | 应用场景垂直，NTM 内不应按通用 AI 需求外推 |
+| 非 AI 咨询与传统/分布式抵消项 | 悲观产品 | 410-430 亿美元 | 低增或下滑拖累公司利润率和现金转换 | 下行 | 低于当前预期 | 咨询客户决策周期、基础设施周期回落 | 保留 | 宏观 IT 预算收缩、传统项目延期 |
+| 非 AI 咨询与传统/分布式抵消项 | 基准产品 | 430-445 亿美元 | 稳定现金流，抵消成长业务波动 | 稳定 | 符合当前预期 | 分部指引和 run-rate 支持 | 保留 | 仍需去重，不可与 AI 项目重复计算 |
+| 非 AI 咨询与传统/分布式抵消项 | 乐观产品 | 445-455 亿美元 | 若传统现代化被 AI 拉动，利润拖累减少 | 小幅上行 | 略高于当前预期 | AI modernization 可带动 legacy app 改造 | 保留但低权重 | 证据不如软件/GenAI 强 |
+| 非 AI 咨询与传统/分布式抵消项 | 极度乐观产品 | 460 亿美元以上 | 公司组合改善，但缺少独立催化 | 小幅上行 | 高于当前预期 | 全面 IT spending 改善 | 下移为乐观上限 | 缺少 NTM 公司特定证据 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品贡献合成为公司 NTM 总收入、毛利率、经营利润率、调整后 EBITDA、经营性净利润和自由现金流方向。经营利润率使用 IBM 常用 operating non-GAAP pre-tax margin 近似口径；2025 GAAP 净利受税务事项影响，不作为 NTM 主锚。所有公司层情景均先与 IBM 自身管理层指引、TTM run-rate、分部收入结构和可见 backlog/ARR 比较，不与市场估值或股价比较。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 690-710 亿美元 | 相对最新 TTM 约 +0-3% | 低于 FY2026 固定汇率 +5%+ 指引；Software/GenAI 咨询不及预期，z17 周期回落更快 | GAAP 57.0-58.5%；经营口径 58.0-59.0% | 16.5-17.8% | 调整后 EBITDA 180-190 亿美元；经营性净利润约 95-105 亿美元 | 135-148 亿美元，低于管理层约 157 亿美元隐含目标 | 中 | Consulting backlog 转化慢、Confluent/HashiCorp 整合成本、传统咨询和 Infrastructure 回落 |
+| 基准公司 | 725-740 亿美元 | 相对最新 TTM 约 +5-7% | 接近管理层 FY2026 指引和当前 run-rate；Software 10%+、Consulting 低到中个位数、Infrastructure 小幅回落正常兑现 | GAAP 58.5-59.5%；经营口径 59.5-60.5% | 18.5-19.5% | 调整后 EBITDA 200-210 亿美元；经营性净利润约 112-120 亿美元 | 153-160 亿美元，基本符合 FCF 同比 +10 亿美元 | 中高 | 成长软件正常扩张，但咨询和传统业务限制公司总增速 |
+| 乐观公司 | 750-775 亿美元 | 相对最新 TTM 约 +9-12% | 高于当前预期；Red Hat/OpenShift、Confluent/Data、HashiCorp/Automation 和 GenAI 咨询至少两项明显超预期 | GAAP 59.5-60.8%；经营口径 60.5-61.5% | 19.5-20.8% | 调整后 EBITDA 215-230 亿美元；经营性净利润约 122-132 亿美元 | 162-172 亿美元，软件 mix 和收款质量改善 | 中 | 需要高毛利软件占比上升，而不是低毛利咨询或一次性硬件拉动 |
+| 极度乐观公司 | 785-810 亿美元 | 相对最新 TTM 约 +14-18% | 显著高于当前预期；需求、公司捕获、利润质量和执行质量同时突破 | GAAP 60.8-62.0%；经营口径 61.5-62.5% | 21.0-22.5% | 调整后 EBITDA 235-250 亿美元；经营性净利润约 135-150 亿美元 | 175 亿美元以上，但需高现金转换 | 低到中 | Confluent/ServiceNow/Red Hat AI/HashiCorp/z17/Consulting 同时爆发，NTM 证据不足 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测收入，而是校准前四步情景。正向证据只提升它实际影响的层级；同一风险只处理一次。校准动作仅使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 固定汇率收入增长超过 5%、FCF 同比增加约 10 亿美元的管理层指引 | 公司汇总 | 支持基准 725-740 亿美元 | 支持经营口径利润率维持或小幅扩张 | 支持 FCF 153-160 亿美元 | 基准保留 |
+| 2026Q1 Software 收入 70.52 亿美元、固定汇率 +7.9%，segment margin 29.8% | 公司利润、软件产品 | 支持 Software 作为主要增长层 | 高毛利 mix 改善公司利润质量 | 订阅/ARR 提高现金流可见度 | 基准保留，乐观需更多 ARR/订单 |
+| OpenShift ARR 约 20 亿美元、Red Hat AI Inference 2026-05 GA、OpenShift Virtualization Service 预计 2026-06 GA | 产品需求、收入基数 | 支持 Red Hat/OpenShift 基准和小额乐观 | 软件属性较强，利润率较高 | 托管服务需要客户采用和云成本控制 | 基准保留；极度乐观下移 |
+| Consulting GenAI 已占收入 20%+、backlog 30%、signings 40% | 收入基数、产品贡献 | 支持 GenAI 咨询进入基准 | 利润率改善有限，仍受工时和交付影响 | backlog 转收入取决于客户验收和人员产能 | 基准保留，乐观保留 |
+| Confluent 完成并购，6500+ 企业客户、40% Fortune 500，day-one integration 覆盖 watsonx.data、MQ、webMethods、IBM Z | 收入基数、产品贡献 | 支持 Data/Confluent 基准，并提供乐观上修 | 软件毛利高，但并购成本和云托管成本压经营利润 | 整合节奏、续约和交叉销售影响 FCF | 基准保留，乐观保留 |
+| HashiCorp 完成并购，Terraform/Vault 与 Ansible/OpenShift/ServiceNow 有组合路径 | 产品贡献、执行可信度 | 支持 Automation 小幅上修 | 软件利润率高，但开源替代压价 | 协同兑现需销售整合和客户采用 | 基准保留，极度乐观下移 |
+| z17 与 IBM Z 2026Q1 +48% cc，Spyre/Telum II 支持主机内 AI | 产品贡献、公司组合 | 支持 Infrastructure 上半年和 TP stack 稳定 | 主机和 TP 软件利润质量较高 | 周期性强，H2 回落可能抵消 | 基准保留，乐观保留，极度乐观下移 |
+| 行业资料显示 AI 运行时/推理调度、企业数据治理和 FinOps 是 2026-2027 软件利润池 | 产品需求 | 支持 Red Hat/Data/Automation 外部需求强 | 纯软件和企业支持毛利高 | 行业需求需转成 IBM ARR/合同才可确认 | 需求层乐观保留，收入层保守 |
+| 行业资料强调 AI 收入、token、utilization、GPU 租价和客户 ROI 是反证核心 | 需求可信度 | 限制把 AI CapEx 直接映射到 IBM | 若客户 ROI 不清，咨询和软件续费受压 | 可导致项目延期和收款放慢 | 悲观保留，不重复惩罚到所有层级 |
+| 传统咨询、Distributed Infrastructure 和 Infrastructure Support 可能抵消成长业务 | 公司组合 | 限制公司总收入上修 | 低毛利或周期性业务压公司利润率 | 项目延期影响现金转换 | 公司层处理一次，产品层不重复惩罚 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Software 和 GenAI 咨询低于当前预期，z17 回落更快，NTM 收入 690-710 亿美元 | IBM 已有高软件毛利和 FCF 底盘，降低深度下行概率 | Consulting 客户延期、Confluent/HashiCorp 整合、传统业务抵消、云原生竞争 | 保留 | 下行情景 | 中 | 咨询延期只在收入确认和公司组合处理一次，不再重复压软件需求 |
+| 基准 | 管理层指引正常兑现，NTM 收入 725-740 亿美元，FCF 153-160 亿美元 | FY2026 指引、2026Q1 分部收入、Software ARR/OpenShift、GenAI backlog、z17 周期 | 部分产品绝对收入未披露，需要区间估算；Confluent 整合仍早期 | 保留 | 最可能情景 | 中高 | Confluent 整合成本只在利润率/现金流处理一次，不重复压收入基数 |
+| 乐观 | 软件和 GenAI 咨询至少两项超预期，NTM 收入 750-775 亿美元 | Data + Confluent、OpenShift AI、HashiCorp、ServiceNow、z17 stack 都有公司特定证据 | 需要订单、客户、ARR 或收入披露确认，不可只靠行业 beta | 保留 | 上行情景 | 中 | AI 行业需求强只提升需求层，不能自动提升收入确认 |
+| 极度乐观 | 多个核心传导环节同时突破，NTM 收入 785-810 亿美元 | 企业 AI 生产化、实时数据、混合云、主机内 AI 都有方向性证据 | NTM 内客户/产品/确认路径不足；部分机会 2026H2 或 FY2027 才显性 | 下移 | 乐观上限/附录跟踪 | 低到中 | 产品发布、preview、合作新闻不能重复算成基准收入和利润 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。IBM 的 NTM 经营结果最可能是收入 725-740 亿美元、相对最新 TTM 增长约 5-7%、自由现金流 153-160 亿美元。这个结论来自 FY2026 管理层指引、2026Q1 Software/Consulting/Infrastructure 分部 run-rate、OpenShift ARR、GenAI 咨询 backlog 以及 z17 周期的可见性。
+- NTM 收入结论：IBM 的 AI 相关收入不是 GPU、HBM、光模块、服务器或液冷设备收入，而是企业 AI 生产化所需的软件、数据、治理、自动化、咨询和主机现代化收入。进入基准的收入必须来自 Software ARR/分部收入、Consulting 可交付 backlog、Confluent/HashiCorp 已完成并购和 z17/TP 已可确认周期；仅有行业 AI CapEx、客户总预算或合作新闻的项目不进入基准。
+- 利润/现金流结论：利润质量取决于软件 mix，而不是咨询收入规模本身。Red Hat、Data/Confluent、Automation/HashiCorp 和 TP 软件能改善毛利率和经营利润率；Consulting GenAI 能带来收入和软件 pull-through，但毛利率天然低于软件。现金流基准仍可维持 150 亿美元以上，但并购现金支出、融资应收、整合成本和客户付款周期是需要跟踪的执行变量。
+- 主要传导瓶颈：第一，AI 需求必须从“客户想做 AI”变成“IBM 软件订阅、咨询合同、数据平台合同或主机升级”；第二，Confluent/HashiCorp 必须从并购资产变成 IBM 大客户中的交叉销售；第三，z17 主机周期不能被误读成通用 AI 基建周期；第四，传统咨询和分布式基础设施不能持续抵消软件增量。
+- 乐观情景成立条件：OpenShift ARR 继续高 20%+ 增长并披露 Red Hat AI / virtualization 客户证据；Consulting GenAI revenue/backlog/signings 维持或上升；Confluent 与 watsonx.data、IBM Z、ServiceNow 出现明确联合客户和订单；HashiCorp incremental ARR 扩大；Software segment margin 不被并购和云托管成本稀释。
+- 极度乐观情景成立条件：企业 agent 生产化在 NTM 内非线性加速，Confluent 实时数据成为 IBM 大客户 AI 数据标准，Red Hat AI 成为私有推理运行时事实标准之一，HashiCorp/Ansible/Instana/Apptio 变成 AI ops 控制层，z17 AI attach 显著提高 stack multiplier，并且这些增量都能在 2026Q2-2027Q1 确认收入和利润。
+- 悲观情景触发条件：Consulting GenAI backlog erosion 或项目验收延期；Software 固定汇率增长跌回中个位数以下；Confluent/HashiCorp 只贡献并购收入、不贡献交叉销售；OpenShift ARR 增速降到低 teens；Infrastructure 在 z17 高基数后回落超过管理层预期；自由现金流低于 150 亿美元且并非一次性营运资本扰动。
+- 后续跟踪数据：2026Q2 财报中的 Software growth、Data/Automation/Red Hat 增速、OpenShift ARR、Consulting backlog 与 GenAI revenue/backlog/signings、Confluent 并表贡献、HashiCorp incremental ARR、IBM Z 增速、Transaction Processing 增速、segment margin、adjusted EBITDA、free cash flow、融资应收变化、ServiceNow 联合方案 2026H2 客户证据。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：IBM 最新正式财务数据为 2026Q1，季度截至 2026-03-31，发布于 2026-04-22；FY2025 全年数据发布于 2026-01-28；本报告生成日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - IBM 1Q 2026 earnings release：收入 159 亿美元、Software 70.52 亿美元、Consulting 52.72 亿美元、Infrastructure 33.26 亿美元、Software segment margin 29.8%、Consulting 10.6%、Infrastructure 15.8%、FY2026 收入固定汇率增长超过 5%、FCF 同比增加约 10 亿美元。
+  - IBM 4Q 2025 / FY2025 earnings release：FY2025 收入 675 亿美元、自由现金流 147 亿美元、FY2026 初始指引、GenAI book of business 超 125 亿美元。
+  - IBM 2025 Annual Report：FY2025 软件约占 IBM 总收入 45%，Software 固定汇率 +9%，Consulting 固定汇率持平，Infrastructure 固定汇率 +10%，FCF 147 亿美元。
+  - IBM 本地公司调研：`公司调研/云算力_IDC_AI软件平台/IBM_International Business Machines_公司调研_2026-06-12.md`。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 公司层基准用管理层固定汇率增长超过 5%、FCF 同比增加约 10 亿美元校准；NTM 比 FY2026 多包含 2027Q1，因此使用区间而非单点。
+  - ServiceNow 联合方案预计 2026H2 可用，属于乐观或极度乐观校准因素，不作为基准大额收入。
+  - Red Hat AI Inference 2026-05 GA、OpenShift Virtualization Service 预计 2026-06 GA，可作为 NTM 小额基准和乐观上修因素，但需客户和 ARR 证据。
+  - Quantum、长期主权 AI、企业 agent 大规模治理、主机内 LLM 大规模采用均列为远期期权或附录跟踪，不进入 NTM 基准收入。
+- 项目内行业资料：
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+  - `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+  - `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- 主要外部来源：
+  - IBM 1Q 2026 Earnings Announcement: https://www.ibm.com/investor/events/earnings-1q26
+  - IBM releases first-quarter 2026 results: https://newsroom.ibm.com/2026-04-22-IBM-RELEASES-FIRST-QUARTER-RESULTS
+  - IBM 4Q 2025 Earnings Announcement: https://www.ibm.com/investor/events/earnings-4q25
+  - IBM releases fourth-quarter 2025 results: https://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS
+  - IBM 2025 Annual Report: https://www.ibm.com/investor/financial-reporting
+  - IBM completes acquisition of Confluent: https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent%2C-making-real-time-data-the-engine-of-enterprise-ai-and-agents
+  - IBM completes acquisition of HashiCorp: https://newsroom.ibm.com/2025-02-27-ibm-completes-acquisition-of-hashicorp%2C-creates-comprehensive%2C-end-to-end-hybrid-cloud-platform
+  - IBM to acquire DataStax: https://newsroom.ibm.com/2025-02-25-ibm-to-acquire-datastax%2C-deepening-watsonx-capabilities-and-addressing-generative-ai-data-needs-for-the-enterprise
+  - IBM Red Hat AI Inference and OpenShift Virtualization Service on IBM Cloud: https://newsroom.ibm.com/2026-05-12-ibm-announces-red-hat-ai-inference-and-red-hat-openShift-virtualization-service-on-ibm-cloud
+  - IBM Think 2026 announcements: https://www.ibm.com/new/announcements/ibm-announcements-at-think-2026
+  - IBM and ServiceNow expanded collaboration: https://newsroom.ibm.com/2026-06-11-ibm-and-servicenow-expand-collaboration-to-unlock-enterprise-data-for-ai-at-scale
+  - IBM Spyre Accelerator and Telum II Processor: https://www.ibm.com/new/announcements/ibm-spyre-accelerator-and-telum-ii-processor-capturing-ai-value-at-a-trusted-enterprise-level
+- 关键估算说明：
+  - 最新 TTM 收入约 689 亿美元，按 FY2025 675 亿美元 + 2026Q1 159 亿美元 - 2025Q1 145 亿美元估算。
+  - 公司层 NTM 情景不是市场一致预期或估值模型，而是经营传导区间：用最新 TTM、FY2026 指引、分部 run-rate、产品 ARR/backlog 和产品级可收入化路径推导。
+  - 产品级收入贡献中，IBM 未披露绝对收入的子产品均使用“可识别贡献区间”并标注无法可靠量化的部分；这些区间用于情景判断，不应机械相加为公司收入。
+  - 本报告没有使用股价、市值、PE、EV/EBITDA 或其他市场估值数据作为经营价值传导证据。

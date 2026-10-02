@@ -1,0 +1,20 @@
+{
+  "completedAt": "2026-07-23T21:17:30.4838197-07:00",
+  "physicalTargets": [
+    "D:\\drive\\Investment\\分析报告",
+    "D:\\drive\\Investment\\金融资料"
+  ],
+  "compatibilityLinks": [
+    {
+      "path": "D:\\drive\\Investment\\基本面\\分析报告",
+      "target": "D:\\drive\\Investment\\分析报告",
+      "attributes": "Hidden, System, Directory, ReparsePoint"
+    },
+    {
+      "path": "D:\\drive\\Investment\\基本面\\日度资料",
+      "target": "D:\\drive\\Investment\\金融资料",
+      "attributes": "Hidden, System, Directory, ReparsePoint"
+    }
+  ],
+  "rebuiltInternalJunctions": 24
+}

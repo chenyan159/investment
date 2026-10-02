@@ -1,0 +1,326 @@
+# ASML - ASML Holding NV（阿斯麦）公司调研（2026-06-11）
+
+> 股票代码：ASML（Nasdaq ADR / Euronext Amsterdam）  
+> 报告日期：2026-06-11  
+> 本地资料范围：仅使用 `基本面/行业调研/` 下相关产业资料；未读取 `特征量化/`，未读取或继承同目录公司旧报告。  
+> 汇率口径：ECB 2026-06-11 参考汇率 `EUR 1 = USD 1.1537`。文中美元估算以此换算，除非另有说明。  
+> 关键结论：ASML 不是 AI 数据中心设备供应商，而是 AI 芯片制造产能的瓶颈供应商。它的直接客户是 TSMC、Samsung、Intel、SK hynix、Micron 等晶圆厂/存储厂；AI 需求通过先进逻辑、HBM/先进 DRAM、CoWoS/先进封装和装机升级传导为 EUV、DUV、服务升级、量测/检测订单。
+
+## 一、公司业务、投资人认知和产业链定位
+
+### 1.1 公司整体业务
+
+ASML 是全球最关键的半导体光刻设备公司，收入由四条主线构成：
+
+| 业务/产品族 | 代表产品 | 2025 收入/规模 | 2026Q1 信号 | 投资含义 |
+|---|---:|---:|---:|---|
+| EUV 光刻系统 | `TWINSCAN NXE:3600D/3800E/3800F`，High-NA `EXE:5000/5200B` | 2025 EUV 系统销售 `€11.6bn`，确认 48 台 EUV/EXE | 2026Q1 EUV 系统收入 `>€4.1bn`，含 2 台 High-NA；系统收入中 EUV 占 66% | 先进逻辑、HBM/DRAM EUV 化、AI ASIC/N3/N2 扩产的核心瓶颈 |
+| DUV 光刻系统 | ArF immersion `NXT:2150i/2100i/2050i`，KrF/i-line，先进封装 `XT:260` | 2025 DUV 系统销售 `€12.0bn`，确认 279 台，47% 为 immersion | 2026Q1 non-EUV 系统收入 `>€2.1bn`；公司把 2026 non-EUV 从“类似 2025”上调为“增长” | 先进节点非关键层、成熟/准先进节点、中国路线、先进封装光刻的基本盘 |
+| Installed Base Management（IBM） | 服务、备件、field options、PEP 升级、吞吐/overlay 升级 | 2025 `€8.2bn`，同比 +26% | 2026Q1 `€2.49bn`，高于指引，毛利贡献高 | 最稳现金流；客户在设备交期紧时更愿意购买升级包提高 wafer output |
+| Metrology & Inspection / 计算光刻 | YieldStar、HMI eScan、e-beam、多束检测、Holistic Lithography 软件 | 2025 `€825mn`，同比 +28% | 2026Q1 系统销售中约 2% | AI 芯片良率、High-NA、GAA/N2、HBM4 增强工艺控制强度 |
+
+ASML 的本质是“半导体制程缩放的单点基础设施”。投资人通常把它看成：
+
+- **EUV 垄断公司**：先进逻辑 7nm/5nm/3nm/2nm 和先进 DRAM 的关键层离不开 ASML EUV；EUV 没有可规模替代供应商。
+- **先进制程 capex 的弹性放大器**：客户每次把 AI/HPC 芯片从 N5/N4 推到 N3/N2、把 DRAM 推到 HBM4/先进节点，光刻层数、overlay、CD/EPE、缺陷控制和升级服务都会增加。
+- **高毛利设备平台 + 高毛利服务组合**：2026Q1 总毛利率 53.0%，净利率 31.4%；IBM 中高毛利 field options 是利润率韧性的关键。
+- **中国出口管制风险标的**：2024-2025 中国贡献强，但 2026 公司已明确预计中国收入显著下降；当前估值更依赖韩国/台湾/美国的 AI/HBM/先进逻辑扩产。
+
+### 1.2 最近三年重大业务变化、转型和投资
+
+| 时间 | 事件 | 业务意义 | 对投资判断的影响 |
+|---|---|---|---|
+| 2024-2025 | High-NA EUV 从 R&D 进入客户安装/验收；EXE:5000 后进入 EXE:5200B | High-NA 0.55NA、8nm resolution，用于 sub-2nm logic 和先进 DRAM，减少部分多重曝光 | 2026-2027 先是验证/小量收入，2028 后才可能成为主流 HVM 工具 |
+| 2025Q3 | 首台 `TWINSCAN XT:260` 发货，进入 3D Integration / advanced packaging | i-line scanner，面向 interposer、RDL、TSV、hybrid-bond keep-out 等封装图形化，号称相对现有方案最高 4x productivity | 小业务但不应漏掉，ASML 从前道光刻延伸到先进封装光刻 |
+| 2025 | ASML 投资 Mistral AI，约 11% fully diluted stake，金额约 `€1.3bn` | 不是收入并购，而是把 LLM/AI 用于软件开发、holistic lithography、运维和客户支持 | 强化软件/算法/计算光刻，不改变主业收入结构 |
+| 2025Q4 | 2026-2028 新回购计划最高 `€12bn`；Technology / IT 组织精简，约 1,700 个岗位 | 把资源向工程与创新聚焦 | 盈利和资本回报友好，但不是成本削减故事，核心仍是产能与产品路线 |
+| 2026Q1 | 2026 收入指引从 `€34-39bn` 上调至 `€36-40bn`；低 NA EUV 2026 output 至少 60 台，2027 至少 80 台 | AI 相关先进逻辑/Memory 客户提高 short/medium-term 需求，订单 intake 继续强 | 2026 增长确定性抬高，2027 低 NA EUV output 成最重要跟踪指标 |
+
+过去三年 ASML 没有大规模收入并表式收购；业务变化主要来自产品代际、产能扩张、服务/升级收入占比提升、先进封装入口和 AI 软件化。
+
+### 1.3 产业链位置
+
+AI 数据中心价值链的传导路径如下：
+
+`Hyperscaler/NeoCloud CapEx` -> `NVIDIA / AMD / Broadcom / Marvell / Google / AWS / Microsoft / Meta AI 芯片订单` -> `TSMC / Samsung / Intel / SK hynix / Micron wafer starts 与 HBM/DRAM 扩产` -> `ASML EUV/DUV/IBM/量测订单` -> `系统 shipment + site acceptance` -> `ASML 收入确认 + 长期服务/升级`。
+
+ASML 对 AI 基建的重要性不在“每台服务器里有 ASML 零件”，而在“没有足够 ASML 工具，就没有足够 N3/N2/HBM4/先进 DRAM/先进封装产能”。本地 `行业调研_AI芯片前道制造设备_2026-06-11.md` 的结论与公司披露一致：2026 年最大确定性来自低 NA EUV、ArF immersion DUV、服务升级和 process control，2027 年真正改变增量的是 Rubin/MI400/Trainium3/TPU/ASIC/HBM4 对 N3/N2、GAA、BSPDN、High-NA ecosystem 的同步拉动。
+
+## 二、估值、财务健康和资产负债表
+
+### 2.1 最新市场数据
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | `US$1,899.30` | 2026-06-11，NASDAQ ADR 收盘快照 | 价格源之间存在延迟差异，本文采用实时行情快照 |
+| 市值 | `US$698.8bn` | 2026-06-11，行情快照 | 与 StockAnalysis / Yahoo 不同时间点的 `~US$669-699bn` 区间一致 |
+| TTM P/E | `约 56-58x` | 2026-06-09 至 2026-06-11，多源区间 | FinanceCharts 2026-06-11 `56.37x`，Yahoo 约 `58.2x` |
+| Forward P/E | `约 47x` | 2026-06-11，Yahoo/GuruFocus 区间 | Yahoo `46.95x`；估值已提前反映 2026-2027 AI/HBM/EUV 上修 |
+| P/S（TTM） | `约 17.3x` | 2026-06-11，Yahoo | 以设备股历史看极高，市场给的是 EUV 产能瓶颈溢价 |
+| 2026Q1 收入增速 | `+13.2% YoY` | `€8.767bn` vs 2025Q1 `€7.742bn` | 同期净利 `+17.1%`，毛利率 53.0% |
+| 2025 全年收入增速 | `+15.6% YoY` | 2025 `€32.667bn` vs 2024 `€28.263bn` | 2025 毛利率 52.8%，净利率 29.4% |
+| 2026 全年收入指引 | `€36-40bn` | 2026-04-15 上调后 | 对 2025 增长 `+10.2%` 至 `+22.4%`，中点 `+16.3%` |
+| 2026Q1 毛利率 / 净利率 | `53.0% / 31.4%` | 2026Q1 | IBM 高毛利组件和 EUV mix 支撑 |
+| 2025 毛利率 / 净利率 | `52.8% / 29.4%` | 2025 全年 | 2025 净利润 `€9.609bn` |
+
+估值判断：当前不是“便宜设备股”，而是“EUV 产能期权 + AI/HBM 扩产 bottleneck”的高溢价资产。若低 NA EUV output 从 2026 至少 60 台走向 2027 至少 80 台，且渠道判断的 90-110+ 台中期产能被订单验证，估值可以维持高位；若 2026H2 云厂 capex 或 HBM/CoWoS/TSMC 先进节点扩产下修，P/E 容易回到历史中枢 35-45x。
+
+### 2.2 资产负债表和财务健康
+
+| 项目 | 2025Q4 | 2026Q1 | 变化 | 解读 |
+|---|---:|---:|---:|---|
+| Cash + short-term investments | `€13.322bn` | `€8.376bn` | `-€4.946bn` | Q1 FCF 为负主要由 down payment timing 驱动，不代表盈利恶化 |
+| Accounts receivable + finance receivables | `€3.649bn` | `€5.232bn` | `+€1.583bn` | Q1 收入确认和收款节奏 |
+| Inventories | `€11.429bn` | `€11.711bn` | `+€0.282bn` | 高端系统长周期在制品；与 2026H2 收入权重一致 |
+| Total assets | `€50.567bn` | `€48.061bn` | `-€2.506bn` | 仍保持轻资产高回报特征，但在制品和供应链占款很大 |
+| Current liabilities | `€24.264bn` | `€20.288bn` | `-€3.976bn` | 包含客户预付款/合同负债等周期项 |
+| Non-current liabilities | `€6.691bn` | `€6.943bn` | `+€0.252bn` | 长债压力不大 |
+| Shareholders' equity | `€19.612bn` | `€20.830bn` | `+€1.218bn` | 盈利能力持续增厚权益 |
+| Free cash flow | 2025Q4 `€10.940bn` | 2026Q1 `-€2.608bn` | 季节性/预付款节奏 | 2025 全年 FCF `€11.028bn`，现金生成能力强 |
+
+健康程度：**很健康**。ASML 的压力不在偿债，而在产能、关键供应链、出口管制和客户扩产节奏。2026Q1 现金减少和 FCF 转负主要是 down payment timing；2025Q4 高 FCF 与 2025 全年 `€11bn+` FCF 说明业务本身仍是高现金回报模型。风险点是存货和在制品绝对额高，若客户 push-out 或出口管制变化，收入确认和现金流会出现季度波动。
+
+## 三、最近五次财报：订单、交付、业务收入和 AI 暴露
+
+> 注：ASML 2026Q1 未再以 2025 年相同图表口径披露 quarterly net bookings。下表中 2026Q1 bookings/backlog 只写官方披露的“order intake very strong”和可验证渠道订单，不把推断数字伪装成公司披露。
+
+| 财报季度 | 总收入 / YoY | 系统收入 / IBM | 毛利率 / 净利率 | 系统销售结构 | 订单、backlog、交期 | AI/HPC/HBM 相关判断 |
+|---|---:|---:|---:|---|---|---|
+| 2026Q1 | `€8.767bn`，`+13.2% YoY` | 系统 `€6.279bn`；IBM `€2.488bn` | `53.0% / 31.4%` | 技术：EUV 66%、ArFi 23%、KrF 6%、ArF dry 2%、i-line 1%、M&I 2%；终端：Logic 49%、Memory 51%；区域：韩国 45%、台湾 23%、中国 19%、美国 12% | 未披露季度 net bookings；管理层称 order intake 继续很强，客户上调 short/medium-term 需求；2026 low-NA EUV output 至少 60 台，2027 至少 80 台 | 直接数据中心收入 0；look-through AI 暴露很高。EUV `>€4.1bn`，含 2 台 High-NA；Memory 51% 反映 HBM/DRAM EUV 化 |
+| 2025Q4 | `€9.718bn`，`+4.9% YoY` | 系统 `€7.584bn`；IBM `€2.134bn` | `52.2% / 29.2%` | 技术：EUV 48%、ArFi 40%、KrF 5%、ArF dry 2%、i-line 1%、M&I 4%；终端：Logic 70%、Memory 30%；区域：中国 36%、韩国 22%、美国 17%、台湾 13%、日本 10% | Net bookings `€13.158bn`，其中 EUV `€7.4bn`；bookings 终端 Memory 56%、Logic 44%；年末 backlog `€38.797bn`，65% EUV、60% Logic、40% Memory | Q4 是订单拐点：客户对 AI demand 可持续性更乐观，medium-term capacity plans step-up；High-NA 两台收入确认 |
+| 2025Q3 | `€7.516bn`，`+0.7% YoY` | 系统 `€5.554bn`；IBM `€1.962bn` | `51.6% / 28.3%` | 技术：EUV 38%、ArFi 52%、KrF 3%、ArF dry 2%、i-line 1%、M&I 4%；终端：Logic 65%、Memory 35%；区域：中国 42%、台湾 30%、韩国 18% | Net bookings `€5.399bn`，其中 EUV `€3.6bn`；bookings Logic 53%、Memory 47% | AI 投资动能开始扩散到 leading-edge Logic 和 advanced DRAM；首次发货 `XT:260`，进入先进封装 |
+| 2025Q2 | `€7.692bn`，`+23.2% YoY` | 系统 `€5.596bn`；IBM `€2.096bn` | `53.7% / 29.8%` | 技术：EUV 48%、ArFi 43%、KrF 4%、ArF dry 2%、i-line 1%、M&I 2%；终端：Logic 69%、Memory 31%；区域：台湾 35%、中国 27%、韩国 19% | Net bookings `€5.541bn`，其中 EUV `€2.3bn`；bookings Logic 84%、Memory 16% | NXE:3800E 继续推动 DRAM litho intensity；首台 EXE:5200B 发货，High-NA 从 R&D 迈向 production-capable |
+| 2025Q1 | `€7.742bn`，高于 2024Q1 `€5.290bn` | 系统 `€5.740bn`；IBM `€2.001bn` | `54.0% / 30.4%` | 技术：EUV 56%、ArFi 33%、KrF 5%、ArF dry 2%、i-line 1%、M&I 3%；终端：Logic 58%、Memory 42%；区域：韩国 40%、中国 27%、台湾 16%、美国 16% | Net bookings `€3.936bn`，其中 EUV `€1.2bn`；bookings Logic 60%、Memory 40% | 第五台 High-NA 已出货，三家客户拥有 High-NA；AI 是行业主要增长驱动，但关税/宏观带来不确定性 |
+
+### 3.1 订单积压和交期
+
+ASML 官方定义 backlog 为“已接受书面授权、尚未确认为收入的系统订单及通胀调整”。2025 年末 backlog 为 `€38.797bn`，约等于 2025 全年收入的 `1.19x`、2026 指引中点的 `1.02x`。Backlog 结构中 EUV 占 65%，Logic 60%、Memory 40%，说明订单池主要锁在先进节点。
+
+交期判断：
+
+- **EUV/High-NA**：真实交期可以按 `12-24个月` 理解；Q4 2025 新增订单“多数对应 2027”这一渠道说法与 2026/2027 output 计划一致。
+- **低 NA EUV**：2026 至少 60 台 output，2027 至少 80 台；近期分析师上调目标价的核心逻辑是 ASML 可能在不新增主要厂房的情况下把低 NA EUV 年产能从市场假设的约 90 台抬到 110+ 台。
+- **High-NA**：2026 是 product wafer / qualification 年，High-NA 系统 site acceptance 后才收入确认；Imec 预计 EXE:5200 到 2026Q4 fully qualified。
+- **取消率**：ASML 未披露取消率。最大取消/延后风险来自中国出口许可、客户 capex 递延和 High-NA 采用时点，而非客户信用。
+
+## 四、2026 最新指引、业务占比和重点产品
+
+### 4.1 2026 指引
+
+| 口径 | 指引 |
+|---|---:|
+| 2026Q2 总收入 | `€8.4-9.0bn` |
+| 2026Q2 IBM sales | 约 `€2.5bn` |
+| 2026Q2 毛利率 | `51-52%` |
+| 2026Q2 R&D / SG&A | R&D 约 `€1.2bn`，SG&A 约 `€0.3bn` |
+| 2026 全年总收入 | `€36-40bn` |
+| 2026 全年毛利率 | `51-53%` |
+| 2026 effective tax rate | 约 17% |
+
+收入占比按 2026Q1 run-rate 近似：
+
+| 业务 | 2026Q1 收入 | 占总收入 | 增长/变化 | 重点程度 |
+|---|---:|---:|---|---|
+| EUV 系统 | `>€4.1bn` | `约 47%+` | Q1 系统收入中 66%；公司称 2026 EUV revenue 将显著增长 | 最高 |
+| Non-EUV 系统（DUV + M&I + AP） | `>€2.1bn` | `约 24%` | 此前预计 2026 类似 2025，Q1 后改为增长 | 高 |
+| IBM 服务/field options | `€2.488bn` | `28.4%` | 2025 +26%，2026 继续显著增长 | 最高现金流质量 |
+| Metrology & Inspection | Q1 系统收入约 2%，即 `~€0.13bn` | `~1.4%` | 2025 +28%；高端良率需求上升 | 小而关键 |
+| XT:260 / 先进封装光刻 | 未单独披露，估计仍小 | `<1%` | 2025Q3 首台发货 | 潜力小业务 |
+
+### 4.2 被跳过的低增速/非重点业务
+
+这些业务仍赚钱，但不是本次 AI/高增长分析重点：
+
+- 传统 KrF 与常规 i-line 光刻：Q1 2026 系统收入占比分别 6% / 1%，主要服务成熟节点和非先进制造。例外是 i-line `XT:260`，因 advanced packaging 被列入重点小业务。
+- Refurbished PAS/TWINSCAN legacy systems：ASML 机器寿命长、几乎仍在客户产线，但收入弹性和 AI 相关性低。
+- 中国成熟节点相关 DUV/服务：2024-2025 曾强，但 2026 公司明确预计中国 total net sales 显著下降，且出口管制不确定性高。
+
+## 五、高增长或关键产品：当前贡献、重要性和供应紧张度
+
+评分：5 = 最高。收入贡献为当前年化/最近季度估算；直接数据中心收入均为 0，表中为 AI/HPC/HBM look-through 贡献。
+
+| 产品/业务 | 当前收入贡献（美元） | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Low-NA EUV（NXE:3800E/3800F） | 2026Q1 EUV 总收入 `>€4.1bn = >$4.7bn`；其中 Low-NA 为主。2026 年化估计 `$18-24bn` | 2026 显著增长；2027 output 至少 80 台 | 5 | 5 | 5 | 5 | 当前最核心产品，AI GPU/ASIC/HBM 先进节点的真实瓶颈 |
+| High-NA EUV（EXE:5000/5200B/5200C） | Q1 收入确认 2 台，估计 `$0.7-0.8bn`；2026 年化估计 `$2-4bn` | 从小基数高速增长 | 4（2026）/5（2028+） | 3 | 4 | 5 | 2026 是验证，2027-2028 决定是否成为新一轮 EUV 升级周期 |
+| ArF immersion DUV（NXT 系列） | Q1 ArFi 占系统 23%，约 `€1.44bn = $1.66bn`；2026 年化 `$7-9bn` | 2026 从“持平”上修为增长 | 4 | 4 | 4 | 4 | 先进节点非 EUV 层、多重图形化和中国/成熟节点共同支撑 |
+| IBM 服务/field options | Q1 `€2.488bn = $2.87bn`；2026 年化 `$11-13bn` | 2025 +26%，2026 继续显著增长 | 5 | 5 | 4 | 5 | 最高质量利润池，客户买时间和产能，毛利率高 |
+| Metrology & Inspection / eScan / YieldStar | 2025 `€825mn = $0.95bn`；2026 估计 `$1.1-1.4bn` | 2025 +28%，2026 继续增长 | 4 | 4 | 3 | 3 | 小但随 High-NA、GAA、HBM4、良率压力增厚 |
+| XT:260 先进封装 i-line scanner | 2025Q3 首台，2026 估计 `$0.1-0.4bn` | 小基数高增长 | 3 | 3 | 3 | 3 | 不应漏掉的小业务，进入 2.5D/3D 封装图形化 |
+
+## 六、一年后收入贡献预测：基准、乐观、极度乐观
+
+时间窗口：2026-06 至 2027-06 的滚动 12 个月；美元按 `1 EUR = 1.1537 USD` 估算。
+
+| 产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| Low-NA EUV | 收入 `$22-26bn`；2027 至少 80 台 output；重要性 5、紧急性 5、供需 5、溢价 5 | 收入 `$27-32bn`；客户提前锁 2028 产能，80 台以上向 90-100 台靠拢 | 收入 `$34-40bn`；渠道所谓 110+ 台能力被订单/交付验证，EUV 交期继续延长 |
+| High-NA EUV | 收入 `$4-5.5bn`；10-14 台级别；仍处 qualification/early product wafer | 收入 `$6-8bn`；Intel/SK hynix/Samsung/Micron/imec 验证顺利，2027 HVM 试生产扩大 | 收入 `$8-10bn+`；TSMC 或更多客户提前 design-in，High-NA 从争议工具变成抢产能工具 |
+| ArF immersion DUV | 收入 `$8-10bn`；先进节点非 EUV 层和中国成熟节点消化 | 收入 `$10-12bn`；N3/N2、HBM/DRAM、国产路线继续 pull-in | 收入 `$12-15bn`；EUV 产能不足导致 DUV 多重图形化和 advanced packaging DUV 共同拉升 |
+| IBM 服务/field options | 收入 `$12-13bn`；EUV installed base 扩大，PEP/upgrade 保持高毛利 | 收入 `$14-15bn`；客户普遍用升级包抢短期 wafer output | 收入 `$16bn+`；EUV 交期紧张，field option 成为短期增产唯一现实路径 |
+| Metrology & Inspection | 收入 `$1.3-1.6bn`；YieldStar/eScan 随复杂节点增长 | 收入 `$1.7-2.2bn`；High-NA/GAA/HBM4 量测密度上升 | 收入 `$2.5bn+`；e-beam 多束/overlay/defect inspection 成先进节点瓶颈 |
+| XT:260 / advanced packaging lithography | 收入 `$0.3-0.6bn`；多客户验证 | 收入 `$0.7-1.0bn`；CoWoS-like / RDL / interposer 客户采用 | 收入 `$1.5bn+`；先进封装 lithography 从小众工具变成标准采购项 |
+
+## 七、BOM、每 GPU/rack/MW 内容量和价格传导链
+
+### 7.1 ASML 的“每 MW / 每 rack / 每 GPU”口径必须重定义
+
+ASML 不卖数据中心设备，因此没有像电力、光模块、冷却那样的物理 BOM。真实可用口径是：
+
+`每 GPU / rack / MW 的 ASML 内容量 = AI 芯片制造所消耗的 ASML 工具 capex + 服务/升级折旧摊销`。
+
+估算关键假设：
+
+- 一个高端 AI GPU/ASIC die 对应先进逻辑 wafer；B200/GB200/B300/GB300 这类大 die，按良率和 die size 粗略为 `每片 300mm wafer 50-80 个可用加速器 die`。
+- 一个 72 GPU rack 约对应 `0.9-1.4 片先进逻辑 wafer`；若含 HBM3E/HBM4，另需 `8-15 片级别 DRAM/HBM wafer 等效`，取决于每 GPU HBM stack 数、die 面积和良率。
+- 每 MW 约 `7-10 个 100-140kW AI rack`，即 `500-720 个 GPU`，视 GB200/GB300/MI400/ASIC 机架功率而变。
+- ASML capex 内容不等于晶圆代工售价，也不等于 ASML 当期收入；它是设备销售和服务在多年产能中的摊销。
+
+| 产品/业务 | BOM/价值构成 | 每 GPU ASML 内容量估算 | 每 72-GPU rack 内容量估算 | 每 MW 内容量估算 | 价格传导 |
+|---|---|---:|---:|---:|---|
+| Low-NA EUV | 光源/CO2 laser、锡滴源、collector、反射光学、reticle/wafer stages、真空、metrology、控制软件、服务 | `$40-120/GPU`（逻辑 die + HBM DRAM EUV 摊销） | `$3k-9k/rack` | `$25k-85k/MW` | AI 芯片供不应求 -> TSMC/SK hynix 扩产 -> ASML 系统订单/预付款 -> site acceptance 收入 |
+| High-NA EUV | 0.55NA anamorphic optics、EXE stages、高功率 source、mask/overlay ecosystem、thin resist/process integration | 2026 当前 `$0-20/GPU`；2028 后可升至 `$20-80/GPU` | 2026 `<$1.5k/rack`；成熟后 `$1.5k-6k/rack` | 2026 很小；成熟后 `$10k-50k/MW` | 只有被客户纳入关键层 HVM 后才真正进入成本栈；目前更像未来节点期权 |
+| ArFi DUV | 193nm immersion scanner、dual-stage、1.35NA optics、overlay/focus、immersion fluid control、laser | `$20-60/GPU` | `$1.5k-4k/rack` | `$12k-40k/MW` | 先进节点非 EUV 层数量大，EUV 紧缺时 DUV 多重图形化价值上升 |
+| IBM 升级/服务 | 备件、field option、PEP、source power、overlay、software、uptime contract | `$25-80/GPU` | `$2k-6k/rack` | `$15k-55k/MW` | 客户为缩短交付周期和提高 installed base output 付费，通常比新系统更快转收入 |
+| Metrology & Inspection | YieldStar optical metrology、HMI eScan、多束 e-beam、算法/recipe | `$5-25/GPU` | `$0.4k-1.8k/rack` | `$3k-18k/MW` | 良率损失远大于量测工具成本，High-NA/GAA/HBM4 提高覆盖率 |
+| XT:260 / advanced packaging lithography | i-line scanner、RDL/interposer/TSV/封装图形化、厚胶/非平坦层处理 | `$1-10/GPU`，视 CoWoS-like 路线 | `$0.1k-0.7k/rack` | `$1k-7k/MW` | CoWoS/SoIC/CoWoS-like 扩产 -> 后段光刻吞吐瓶颈 -> 采购 XT:260/替代 AP lithography |
+
+### 7.2 产能能力、供应链采纳和认证阶段
+
+| 产品/业务 | 当前产能能力（美元计） | 供应链采纳 | 认证/阶段 |
+|---|---:|---|---|
+| Low-NA EUV | 2026 至少 60 台 output，按 ASP `€220-260mn` 估算为 `$15-18bn` 系统产能；若含高端配置和升级可更高 | TSMC/Samsung/Intel/DRAM 客户 HVM 标配 | HVM fully adopted；NXE:3800E PEP1-E 已释放，吞吐 220->230 WPH |
+| High-NA EUV | 2026 约 `$2-4bn` early revenue capacity | Intel 14A、imec lab、Samsung/TSMC/存储客户 R&D/验证；TSMC 对成本谨慎 | EXE:5200B 已客户 site acceptance；imec EXE:5200 预计 2026Q4 fully qualified；2027-2028 客户 insertion |
+| ArFi DUV | 2025 DUV `€12.0bn = $13.8bn`；2026 预计增长 | 全球成熟/先进 fab 全覆盖；中国对 DUV 依赖高但受管制 | HVM 成熟；Nikon 是 ArF immersion 低价替代威胁但切换成本高 |
+| IBM | 2026 Q1 run-rate `$11.5bn` | 绑定 ASML installed base；客户无现实替代 | field option / PEP 客户逐项验收，转收入快于新系统 |
+| Metrology & Inspection | 2025 `$0.95bn`，2026 估计 `$1.1-1.4bn` | YieldStar/eScan 在先进节点逐步扩大 | 多束 e-beam adoption increasing；eScan 1100 面向 3nm 及以后 in-line defect inspection |
+| XT:260 | 2026 估计 `$0.1-0.4bn` | 刚进入 3D Integration/advanced packaging | 2025Q3 首台 shipped；2026-2027 看 package line qualification 和复购 |
+
+## 八、一年后产能能力、采纳和认证阶段预测
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| Low-NA EUV | 2027 output 至少 80 台；美元产能 `$21-25bn`；客户持续锁单 | output 向 90-100 台靠拢；客户接受更高预付款和升级包 | 110+ 台中期能力被订单验证，EUV 交期维持 18-24 个月以上 |
+| High-NA EUV | 2027 10-14 台；imec fully qualified 后客户 product wafer 扩大；Intel/SK hynix lead | 15-20 台；DRAM/Logic 各出现可量产 critical layer case | 20-25 台；TSMC 或大型客户提前 design-in，High-NA 订单从研发预算转 capex 主预算 |
+| ArFi DUV | 年收入/产能 `$9-11bn`；中国下降被台湾/韩国/美国抵消 | `$11-13bn`；EUV 紧缺和先进 DRAM 增强多重曝光 | `$13-15bn+`；Nikon 低价竞争有限，ASML 继续拿主要 high-end immersion |
+| IBM | `$12-13bn`；服务和 PEP 稳增 | `$14-15bn`；客户普遍用升级缓解短缺 | `$16bn+`；installed base 升级变成抢产能主渠道 |
+| Metrology & Inspection | `$1.3-1.6bn`；eScan/YieldStar 稳步扩大 | `$1.7-2.2bn`；High-NA/GAA/HBM4 认证加速 | `$2.5bn+`；量测/检测成为 AI 芯片良率瓶颈 |
+| XT:260 | `$0.3-0.6bn`；2-3 家客户复购 | `$0.7-1.0bn`；CoWoS-like 和 RDL 光刻进入标准设备清单 | `$1.5bn+`；先进封装 lithography 供应紧张，ASML 在后段建立新平台 |
+
+## 九、基于订单积压和供给推断未来一年业务增速
+
+### 9.1 总公司收入情景
+
+| 情景 | 2026-06 至 2027-06 滚动收入预测 | 对 2025 收入口径增速 | 核心依据 | 反证指标 |
+|---|---:|---:|---|---|
+| 基准 | `€40-43bn`（`$46-50bn`） | 约 `+22-32%` vs 2025 | 2026 指引 `€36-40bn`，2027 low-NA 至少 80 台，IBM 继续增长 | 2026Q2/Q3 gross margin <51%、EUV shipment 不达计划、客户 push-out |
+| 乐观 | `€44-48bn`（`$51-55bn`） | 约 `+35-47%` vs 2025 | SK hynix 大单、Memory bookings 强、TSMC/Intel/Samsung/DRAM 扩产上修，DUV 同步增长 | HBM/CoWoS 交付改善但 wafer demand 不兑现，订单转收入慢 |
+| 极度乐观 | `€50-55bn`（`$58-63bn`） | 约 `+53-68%` vs 2025 | 低 NA EUV 产能 100-110+ 台被验证，High-NA 客户提前 design-in，IBM 升级爆发 | 这是接近 2030 模型低端的提前兑现，需要连续两个季度订单和产能证据 |
+
+### 9.2 真实订单和渠道验证
+
+| 证据 | 日期 | 数字/事实 | 对 ASML 的意义 |
+|---|---|---|---|
+| ASML Q4 2025 net bookings | 2026-01-28 披露 | `€13.158bn`，其中 EUV `€7.4bn`，Q4 bookings Memory 56% | 订单从 Logic 单边转向 Memory/HBM/DRAM；对应 2027 交付窗口 |
+| 2025 年末 backlog | 2026-01-28 披露 | `€38.797bn`，EUV 65%，Logic 60%、Memory 40% | 2026 收入可见度很高，且 EUV 在 backlog 中占主导 |
+| ASML Q1 2026 口径 | 2026-04-15 披露 | 客户上调 short/medium-term demand；2026 low-NA output 至少 60 台，2027 至少 80 台 | 供给侧紧张从订单表转为产能计划上修 |
+| SK hynix EUV 大单 | 2026-03 报道/监管披露 | 约 `11.95tn won / $7.9-8.0bn`，至 2027 年底完成，估计约 30 台 EUV | HBM/先进 DRAM 是 ASML Memory 订单最强锚点 |
+| SEMI Q1 2026 equipment billings | 2026-06-04 | 全球半导体设备 billings `US$36.55bn`，同比 +14%，创纪录；AI-related investment、leading-edge logic、DRAM、advanced packaging 驱动 | 外部行业数据验证 ASML 不是孤立增长 |
+| SEMI 2025 year-end equipment forecast | 2025-12 | WFE 2025 `US$115.7bn`，2027 `US$135.2bn`；foundry/logic WFE 2027 `US$75.2bn` | 中期设备 TAM 足以支撑 ASML 2027 高位交付 |
+
+订单取消/延后判断：在基准和乐观情景下，取消率应低；主要是 export control 导致特定客户许可/出货受限，或客户把 2027 系统 push-out。ASML 的客户是少数头部晶圆厂，信用风险低，真正风险是 geopolitics 和 capex timing。
+
+## 十、竞争格局、替代方案和客户切换成本
+
+### 10.1 竞争对手和替代路线
+
+| 领域 | ASML 位置 | 竞争/替代 | 2026 判断 |
+|---|---|---|---|
+| EUV / Low-NA | 唯一 HVM 供应商 | 无规模竞争对手；中国 EUV 仍远；Substrate X-ray / Lace atom-beam 等仍远期 | ASML 垄断最强，客户无法替代 |
+| High-NA EUV | 唯一供应商 | 竞争不是其他 vendor，而是客户是否继续用 Low-NA 多重曝光替代 High-NA | 2026-2027 是 adoption timing 风险，不是供应商竞争 |
+| ArF immersion DUV | 市占主导 | Nikon 计划用更低价格重夺 ArF immersion，Canon 主要在 KrF/i-line/NIL | Nikon 能影响价格谈判，但短期难撼动高端 TWINSCAN installed base |
+| KrF/i-line | 领先但竞争更多 | Nikon、Canon、中国本土供应商 | 成熟节点价格竞争更强，不是 ASML 高估值来源 |
+| Nanoimprint Lithography（NIL） | 非 ASML 主线 | Canon NIL、Prinano 等 | 对 photonics/重复结构/存储某些层有潜力，但 defect/overlay/throughput 使其短期不能替代先进逻辑 EUV |
+| Metrology & Inspection | 强但不是绝对垄断 | KLA、Onto、Applied、Camtek 等 | ASML 的优势是与 scanner/holistic lithography 绑定；独立检测领域 KLA 仍强 |
+| 先进封装光刻 | 新进入者 | SUSS、EVG、Canon/Nikon/TEL/传统后段设备生态 | XT:260 有潜力，但还不是垄断业务 |
+
+### 10.2 新技术是否会成为主流
+
+| 技术 | 是否主流 | 时间表 | 风险 |
+|---|---|---|---|
+| Low-NA EUV 继续升级 | 已是主流 | 2026-2030 | source power、吞吐、供应链产能 |
+| High-NA EUV | 大概率成为部分先进节点主流，但节奏分客户 | 2027-2028 early HVM，2029 后更清晰 | 机器 >$350-400mn，TSMC 对成本谨慎；resist、mask、pellicle、DOF、半场曝光、生态成熟度 |
+| DUV 多重图形化 | 仍是主流补充 | 长期存在 | 工艺步骤多、cycle time 长、良率和成本压力 |
+| Nanoimprint | 小众/特定层潜力 | 2027+ niche | 缺陷率、overlay、模板寿命、量产吞吐 |
+| X-ray / atom-beam / Beyond EUV | 远期可选项 | 2029 后 pilot 概念 | 工程化、吞吐、mask/source、安全、生态几乎都未验证 |
+
+### 10.3 客户替换成本
+
+客户切换成本极高，来自五层：
+
+1. **工艺 recipe 绑定**：曝光、光刻胶、etch、metrology、OPC、mask correction 与 ASML tool model 深度绑定。
+2. **良率风险**：先进节点 wafer 和 HBM/AI die 价值高，客户不会为小幅设备折扣承担良率重验证风险。
+3. **吞吐和 uptime**：EUV/DUV 的有效 wafer output 比设备标称价格更重要；ASML IBM 与现场服务是可卖溢价的原因。
+4. **资本项目排期**：EUV/High-NA 装机、site acceptance、厂务、cleanroom、track/metrology 共同排程，替换会影响量产窗口。
+5. **供应商生态**：ZEISS optics、Cymer source、Trumpf laser、MKS/VAT/Edwards/ASML supply chain 与客户 fab 认证多年沉淀。
+
+## 十一、投资结论和跟踪清单
+
+### 11.1 结论
+
+ASML 2026 的投资核心不是“AI 数据中心直接收入”，而是“AI 基建扩张正在把先进逻辑、HBM/DRAM 和先进封装的产能瓶颈推到光刻设备”。2026Q1 指引上调、2025Q4 订单爆发、SK hynix 近 `$8bn` EUV 大单、SEMI Q1 2026 设备 billings 创纪录，互相验证了行业不是单一公司口径的乐观。
+
+最强业务排序：
+
+1. **Low-NA EUV**：当前收入贡献最大、供需最紧、垄断最强，2027 至少 80 台 output 是核心指标。
+2. **IBM 服务/field options**：毛利和现金流质量最高，客户抢短期产能时升级包价值上升。
+3. **ArF immersion DUV**：不是叙事最强，但 advanced nodes 非 EUV 层、DRAM、成熟节点和中国路线都需要。
+4. **High-NA EUV**：最大长期期权，2026 是验证，不宜把 2028 以后收入提前全额贴现。
+5. **Metrology/eScan/YieldStar 与 XT:260**：收入小，但分别对应良率瓶颈和先进封装新入口，不能漏掉。
+
+估值风险同样清楚：ASML 已在 `US$670-700bn` 市值区间，TTM P/E 约 `56-58x`、forward P/E 约 `47x`，需要 2026H2 和 2027 的 EUV output、High-NA 验证、IBM 增长、gross margin 维持来不断确认。若 AI capex 或 HBM/CoWoS 供给链出现反证，股价对估值压缩会很敏感。
+
+### 11.2 未来 12 个月跟踪清单
+
+| 指标 | 看多信号 | 看空/反证 |
+|---|---|---|
+| Low-NA EUV output | 2026 ≥60 台按季兑现，2027 ≥80 台有订单支撑 | shipment/site acceptance 低于计划，供应链卡在 optics/source/stage |
+| Q2/Q3 2026 指引 | 收入接近或高于上沿，gross margin >52% | Q2/Q3 毛利 <51%，IBM 不及预期 |
+| Backlog / order commentary | 继续披露“very strong order intake”，SK hynix 后出现更多 Memory/Logic 大单 | 订单不披露且管理层措辞转弱 |
+| China impact | 中国下降被韩国/台湾/美国先进节点完全抵消 | 新 DUV 管制扩大，许可/已下订单出现取消 |
+| High-NA qualification | Imec 2026Q4 fully qualified；Intel/SK hynix/Samsung product wafers 成功 | TSMC 延后、客户认为 cost-of-ownership 不划算 |
+| IBM / field options | PEP/upgrade 持续高增长，高毛利支撑 | 客户利用率下降，升级需求后移 |
+| 外部 WFE | SEMI billings、TSMC/Samsung/Intel/SK hynix capex 上修 | hyperscaler capex、HBM、CoWoS、TSMC N3/N2 出现下修 |
+
+## 十二、主要信息来源
+
+### 12.1 公司与官方资料
+
+- ASML Q1 2026 results press release, 2026-04-15: `https://www.asml.com/en/news/press-releases/2026/q1-2026-financial-results`
+- ASML Q1 2026 investor presentation / transcript, 2026-04-15: `https://www.asml.com/en/investors/financial-results/q1-2026`
+- ASML Q4 2025 and FY2025 results press release, 2026-01-28: `https://www.asml.com/en/news/press-releases/2026/q4-2025-financial-results`
+- ASML 2025 Annual Report / Financials: `https://www.asml.com/investors/annual-report/2025`
+- ASML Q2/Q3/Q1 2025 financial results pages and investor presentations.
+- ASML product pages: EUV systems, DUV systems, EXE:5200B, NXE:3800E, XT:260, HMI eScan 1100, Metrology & Inspection.
+
+### 12.2 行业、会议和渠道资料
+
+- SEMI Q1 2026 Worldwide Semiconductor Equipment Market Statistics, 2026-06-04.
+- SEMI Year-End Total Semiconductor Equipment Forecast, 2025-12.
+- Imec, `EXE:5200 High NA EUV` installation and Q4 2026 qualification target, 2026-03-18.
+- IBM Research, SPIE 2026 High-NA EUV process capability for below-2nm patterning.
+- SK hynix EUV purchase from ASML through 2027, March 2026 regulatory/news reports.
+- SPIE Advanced Lithography + Patterning 2026 related ASML/IBM/imec materials.
+- ECB EUR/USD reference rate, 2026-06-11.
+- Yahoo Finance / FinanceCharts / GuruFocus / StockAnalysis market data snapshots, 2026-06-09 to 2026-06-11.
+
+### 12.3 本地行业资料
+
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_存储前道制造设备_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_硅片、光刻胶与前道材料_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_高端光罩与先进封装掩模_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体设备子系统与真空_RF_流体模块_2026-06-11.md`
+- `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+- `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`

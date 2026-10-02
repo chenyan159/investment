@@ -1,0 +1,295 @@
+# 公司：CAMT Camtek 公司调研 2026-06-11
+
+报告日期：2026-06-11  
+正式目录：`公司调研/封测_检测_计量_光罩/`  
+本地资料边界：仅使用 `行业调研/` 下与半导体检测量测、AI 芯片先进封装、先进封装设备与混合键合、HBM 与存储测试设备相关资料；未读取、引用或继承 `特征量化/`、`日度资料/` 或既有公司调研正文。  
+核心结论：Camtek 是 AI/HPC 先进封装和 HBM 晶圆级检测量测的小而高弹性设备公司。公司不是 AI 数据中心服务器 BOM 里的直接零部件供应商，而是上游 HBM、CoWoS-like、chiplet、hybrid bonding、RDL、micro-bump 和已知良品芯片（KGD）良率释放工具供应商。投资逻辑不在“每台服务器装多少 Camtek”，而在“每一代 AI 加速器封装复杂度上升，会迫使 IDMs、OSAT、HBM 厂和 foundry 采购更多高端 inspection/metrology 工具”。
+
+## 1. 公司整体业务、市场印象和财务快照
+
+### 1.1 业务定位
+
+Camtek Ltd. 总部在以色列 Migdal Ha'Emek，开发、制造并销售高端半导体晶圆级检测和计量设备。公司系统覆盖前道、mid-end、后道到 post-dicing 早期阶段，服务 IDMs、OSATs、foundries、HBM/存储厂、CMOS image sensor、compound semiconductor、MEMS 和 RF 客户。公司 2026 年披露的制造设施在以色列和德国，全球有 8 个办公室。
+
+Camtek 的核心不是通用 ATE，也不是封装代工，而是“inspection + 3D metrology + software/AI classification”的过程控制设备。公司工具的作用是：
+
+- 在 wafer、RDL、micro-bump、TSV、interposer、fan-out、CoWoS-like、HBM、chiplet、hybrid bonding 前后做缺陷检测、尺寸/高度/overlay/warpage/TTV/厚度量测。
+- 支持 100% die 或 wafer-level 检测，把昂贵 AI package 进入下一道工序前尽量变成 KGD/KGSD。
+- 用 recipe、AI defect classification、data analytics 降低 false positives，提高 throughput 和 root-cause learning。
+
+产业链位置：Camtek 位于半导体设备链的“先进封装 process-control”环节，客户下游是 TSMC/OSAT/HBM/IDM 等封装与制造产能，上游是光学、精密运动、传感器、软件算法、机器视觉、系统集成。它的收入受 AI 芯片实际出货影响，但更直接受 HBM/CoWoS-like/OSAT capex 和客户 qualification/order timing 影响。
+
+### 1.2 投资人心中的 Camtek
+
+投资人通常把 Camtek 看成三类资产的叠加：
+
+1. **AI 先进封装/HBM 设备纯度高的小盘弹性标的**：2025 年公司约 50% 收入来自 AI-related products，另约 20% 来自其他 advanced packaging，合计约 70% 收入与 advanced packaging 相关。
+2. **比传统 OSAT 更高毛利的过程控制设备公司**：2025 年 non-GAAP gross margin 51.6%，non-GAAP operating margin 30.0%；这比 OSAT 封装服务本身的毛利率更接近高端设备/软件属性。
+3. **高估值、高订单敏感度公司**：市值约 84 亿美元，而 2025 年收入 4.96 亿美元；估值依赖 2026H2/2027 订单转收入，若订单 push-out 或 AI capex 降温，股价弹性会反向放大。
+
+### 1.3 最近三年重大业务变动
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2023-11 | 完成收购 FormFactor 的 FRT Metrology 业务，现金约 1 亿美元 | 把 Camtek 从 wafer inspection 扩展到更完整的 3D surface/topography/metrology，增加 MicroProf 系列、德国制造和 surface/warpage/TTV 能力。 |
+| 2024-09 至 2025-02 | 推出 Eagle G5 和 Hawk 两条新平台 | Eagle G5 面向 multi-RDL、FOWLP、2.5D、CIS，较前代强调更高吞吐和检测灵敏度；Hawk 面向 HBM、chiplet、hybrid bonding、500M+ micro-bumps，是公司 2026-2027 最关键产品。 |
+| 2024-11 | Hawk 在正式发布前拿到超过 5000 万美元初始订单，2025 年交付 | 说明产品不是概念发布，而是客户预订；Hawk 进入真实产线导入周期。 |
+| 2025-09 | 发行 4.25 亿美元 0% convertible senior notes due 2030，同时回购大部分旧 2021 可转债 | 拉长债务期限，现金/证券大幅增加；GAAP Q3 2025 因债务回购相关一次性损失出现净亏损，non-GAAP 经营质量未同步恶化。 |
+| 2026-02 | tier-1 IDM 对 Hawk 累计下单 4500 万美元，2026 年交付 | 直接验证 Hawk 在 AI 应用中的客户接受度。 |
+| 2026-03 | Q1 2026 来自领先 OSAT 的订单超过 9000 万美元，其中 3100 万美元订单主要用于 CoWoS-like AI 封装，2026 年交付 | OSAT 从后段跟随者变成 AI 先进封装扩产主体，Camtek 获得 2026H2 收入能见度。 |
+| 2026-04 | 宣布收购 Visual Layer，增强 visual AI / analytics 能力 | 不是短期收入并表核心，重点是把机器视觉 AI、缺陷分类、吞吐和软件收入选项嵌入 Camtek 工具。 |
+| 2026-06 | 获得超过 1.05 亿美元 2027 交付订单：5500 万美元来自 tier-1 OSAT，超过 5000 万美元 Hawk 订单来自领先 HBM 厂 | 订单能见度延伸到 2027，Hawk 与 HBM/2.5D/3D AI device 绑定度上升。 |
+
+### 1.4 最新估值和财务数据
+
+市场数据快照：2026-06-11 Nasdaq regular close，Yahoo Finance chart API；市值按 2025-12-31 outstanding shares 45.828M 粗算，实际数据商口径会因稀释股数/盘后价略有差异。
+
+| 指标 | 最新值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | $184.15 | 2026-06-11 收盘 | 当日区间约 $169.79-$184.33。 |
+| 市值 | 约 $8.44B | 2026-06-11，价格 × 2025-12-31 股数 | 数据商若用不同 share count，可能约 $8.3B-$8.5B。 |
+| TTM 收入 | $499.1M | 2025Q2-2026Q1 | Q2 123.3 + Q3 126.0 + Q4 128.1 + Q1 121.7。 |
+| P/S | 约 16.9x | 市值 / TTM 收入 | 高于传统设备周期股，定价的是 AI/AP/HBM 增长。 |
+| GAAP TTM 净利 | $48.0M | 2025Q2-2026Q1 | 被 2025Q3 可转债回购一次性 $89M 损失压低。 |
+| GAAP P/E | 约 176x | 市值 / GAAP TTM 净利 | 不适合作为单独估值锚。 |
+| non-GAAP TTM 净利 | $155.7M | 2025Q2-2026Q1 | 更接近经营性盈利。 |
+| non-GAAP P/E | 约 54x | 市值 / non-GAAP TTM 净利 | 仍是明显成长溢价。 |
+| forward P/E | 约 48-58x | 本报告估算 2026E non-GAAP EPS/NI | 取决于 2026H2 是否按管理层“较 H1 +25%+”兑现。 |
+| FY2025 收入增速 | +15.6% | 2025 $496.1M vs 2024 $429.2M | 公司口径约 +16%。 |
+| 2026E 最低收入增速 | 至少约 +14.2% | Q1 $121.7M + Q2 midpoint $130M + H2 > H1 ×1.25 | 管理层未给全年精确值，本报告按 Q2 midpoint 和 H2 指引下限推算。 |
+| GAAP gross margin | 50.1% | 2026Q1 | 2025 全年 50.5%。 |
+| non-GAAP gross margin | 51.0% | 2026Q1 | 2025 全年 51.6%。 |
+| GAAP net margin | 26.0% | 2026Q1 | $31.6M / $121.7M。 |
+| non-GAAP net margin | 29.0% | 2026Q1 | $35.3M / $121.7M。 |
+
+资产负债表健康程度：健康，且具备扩产/并购/研发缓冲。2026-03-31，公司现金、短期/长期存款和有价证券合计 $849.7M；2025-12-31 可转债账面约 $519.8M，若假设 Q1 未大幅变化，净现金约 $330M。2025-12-31 总资产 $1.260B、总负债 $642.8M、股东权益 $617.0M。主要风险不是偿债压力，而是：高现金来自可转债融资，未来稀释/转换价、订单周期、以色列运营风险和客户集中度。
+
+## 2. 最近五个季度财报、订单和业务结构
+
+Camtek 不按 Hawk/Eagle/FRT/AI 逐季披露收入，以下表格将“披露数字”与“估算/推断”分开。AI/advanced packaging 占比来自公司 2025/2026 投资者材料与电话会口径：AI-related products 约 50%，other advanced packaging 约 20%，其他应用约 30%。
+
+| 财报季度 | 收入与增速 | 利润率与净利 | 指引/订单/交期 | 收入结构与 AI 暴露 | 关键信息 |
+|---|---:|---|---|---|---|
+| 2026Q1 | $121.7M，YoY +2.5% | GAAP GM 50.1%；non-GAAP GM 51.0%；GAAP op margin 22.4%；non-GAAP op margin 25.5%；GAAP NI $31.6M；non-GAAP NI $35.3M | Q2 指引 $129-$131M；管理层称年初 incoming orders “unprecedented”；预计 2026H2 收入较 H1 +25% 以上；Q1 OSAT orders 已超过 $90M | 电话会口径约 50% AI-related、约 20% other AP、约 30% other apps；AI 侧主要是 HBM、CoWoS-like、2.5D/3D、chiplets | Q1 收入平缓不是需求坏，而是 2026 年收入节奏 H2 weighted；订单和 2027 可见度明显强于当季收入。 |
+| 2025Q4 | $128.1M，YoY +9% | GAAP GM 50.0%；non-GAAP GM 51.1%；GAAP NI $35.9M；non-GAAP NI $40.7M；OCF $61.2M | Q1 2026 指引约 $120M；2026 double-digit growth；2026-02 又披露 tier-1 IDM 累计 Hawk 订单 $45M | FY2025 收入 $496.1M；产品销售 $468.5M、服务费 $27.6M；AI-related 约 50%、other AP 约 20% | 2025 达到半十亿美元收入里程碑；2026 成长主要看 AI/HBM/AP 工具订单转收入。 |
+| 2025Q3 | $126.0M，YoY +12% | GAAP GM 50.0%；non-GAAP GM 51.5%；GAAP op margin 25.3%；non-GAAP op margin 29.9%；GAAP net loss -$53.2M；non-GAAP NI $40.9M | Q4 指引约 $127M；管理层称 2026 收入预计 H2 weighted；OCF $34.3M | AI/HPC demand 是主要驱动；先进封装和 HBM 继续拉动 | GAAP 亏损来自可转债置换相关一次性 $89M loss，不能简单解读为经营恶化。 |
+| 2025Q2 | $123.3M，YoY +20% | GAAP GM 50.8%；non-GAAP GM 51.9%；GAAP op margin 25.9%；non-GAAP op margin 30.3%；GAAP NI $33.7M；non-GAAP NI $38.8M | Q3 指引约 $125M；健康 order flow/pipeline；G5/Hawk 市场反馈良好 | 增长主要由 AI HPC advanced packaging 带动 | 管理层明确说 advanced packaging 快速演进，新要求将触发新一代 inspection/metrology 工具 upgrade cycle。 |
+| 2025Q1 | $118.6M，YoY +22% | GAAP GM 51.0%；non-GAAP GM 52.1%；GAAP op margin 27.6%；non-GAAP op margin 31.5%；GAAP NI $34.3M；non-GAAP NI $38.7M | Q2 指引 $120-$123M；未看到关税导致实质延迟或取消 | 增长主线是 advanced packaging，尤其 HPC/AI；提到 HBM3E 向 HBM4、下一代 CoWoS/CoWoS-like 过渡 | Eagle G5 和 Hawk 均被客户良好接受，是 2025-2026 产品周期的起点。 |
+
+订单与 backlog 推断：
+
+- Camtek 不披露标准 backlog 数字，管理层使用 backlog、pipeline、orders、customer discussions 来支撑 Q2 和 H2 指引。
+- 已公开的 2026 订单信号非常强：2026-02 tier-1 IDM Hawk 累计 $45M，2026 年交付；2026-03 Q1 leading OSAT orders 超过 $90M，主要 CoWoS-like AI 封装且 2026 年交付；2026-06 新增超过 $105M，2027 年交付。
+- 仅这些公开订单就覆盖约 $240M 以上订单金额，其中 2026 交付至少 $135M 级别，2027 交付超过 $105M。相对 2025 全年收入 $496M，这已经是很高可见度。
+- 取消率：公司未披露量化取消率；2025Q1 管理层称未经历实质 delays/order cancellations，2026 年订单公告也未提示取消风险。风险主要是客户验收/交付窗口后移，而非已披露取消。
+
+## 3. 2026 指引、业务收入占比和产品交叉验证
+
+### 3.1 2026 最新指引
+
+2026Q1 实际收入 $121.7M；Q2 指引 $129-$131M，取 midpoint $130M，则 2026H1 约 $251.7M。管理层称 2026H2 收入预计较 H1 增长超过 25%，则 H2 至少约 $314.6M，全年至少约 $566.3M，同比 2025 年 $496.1M 至少 +14.2%。若 H2 订单转换更顺，全年更合理区间是 $575M-$625M；极度乐观要看到更多 2026 交付订单提前或 Q3/Q4 指引上修。
+
+### 3.2 业务收入占比
+
+| 口径 | 2025/2026 披露或估算 | 2026 增长判断 | 说明 |
+|---|---:|---|---|
+| AI-related products | 约 50% 收入，2025 约 $248M；2026E 约 $285M-$340M | +15% 至 +37% | HBM、CoWoS-like、chiplet、2.5D/3D、hybrid bonding inspection/metrology。 |
+| Other advanced packaging | 约 20% 收入，2025 约 $99M；2026E 约 $105M-$125M | +5% 至 +25% | Fan-out、multi-RDL、advanced interconnect packaging、部分非 AI HPC/consumer/auto AP。 |
+| Other applications | 约 30% 收入，2025 约 $149M；2026E 约 $145M-$165M | -3% 至 +10% | CIS、compound semiconductors、MEMS、RF、front-end/general 2D 等。 |
+| Products | 2025 $468.5M，占 94.4% | 随设备交付增长 | 工具销售是主收入。 |
+| Service fees | 2025 $27.6M，占 5.6% | 高单位数至双位数增长 | 随装机基数增加；潜在软件/AI recurring 仍早期。 |
+
+重点和突出产品：
+
+1. **Hawk**：2026-2027 最重要产品。面向 HBM、chiplets、hybrid bonding、FE applications、500M micro-bumps wafer；公开指标包括 down to 0.1um defect sensitivity、x2 throughput vs Eagle G5、sub-10um bump pitch、sub-5um bump CD、IR Gen2 optics、real-time ML EDC。公开订单已经包括 2024 初始 >$50M、2026 IDM $45M、2026/2027 HBM player >$50M。
+2. **Eagle G5 / Eagle family**：公司现金牛和装机基础。G5 相对上一代强调 higher throughput、optimized optics、higher resolution、multi-RDL/FOWLP/2.5D/CIS、Clear-Sight；2024-11 初始订单 $20M，主要用于 AP fan-out 2D inspection。
+3. **Eagle AP / AP Plus / 360°Scan**：先进封装 wafer bump、copper pillar、RDL、TSV、height/co-planarity、CD/overlay、layer thickness、backside/edge 等，承接大量 CoWoS-like/HBM3E/legacy AP 需求。
+4. **MicroProf / FRT metrology**：先进封装、front-end、Si/SiC、surface/topography/TTV/warp/bow/panel metrology；与 Hawk/Eagle 形成 inspection + metrology 组合。
+5. **ADC / Compass / Visual Layer AI software**：当前收入占比很小，但能提高 defect classification、data quality、recipe learning、throughput 和客户粘性，是未来 recurring software/data analytics 的选项。
+
+跳过或降权的产品/业务：
+
+- CMOS image sensor、RF、MEMS、compound semiconductor/power、general 2D inspection、传统 panel/Golder Eagle、普通 front-end macro inspection：这些仍贡献收入和装机基数，但不是本报告 AI/HBM/CoWoS 主线的高增长核心，除非客户把它们迁移到 AI edge、SiC power 或 CPO/光学封装流程。
+
+## 4. 高增长/关键产品当前贡献与战略评分
+
+评分：5 = 最强/最紧急/最供不应求/最高溢价；1 = 弱。
+
+| 产品/业务 | 2025-2026 当前收入贡献估算 | 当前增速/订单证据 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 判断 |
+|---|---:|---|---:|---:|---:|---:|---|
+| Hawk: HBM/chiplet/hybrid bonding inspection/metrology | 2025 已有 >$50M 初始订单交付；2026 已披露 IDM $45M，2027 已披露 HBM player >$50M；2026E Hawk/高端 AI tool revenue 约 $90M-$160M | 2026 年公开订单密集，且客户为 tier-1 IDM、leading HBM player、OSAT | 5 | 5 | 5 | 4 | 最强产品周期；若 Hawk 成为 HBM4/CoWoS-like POR，收入可跨 2026-2027 持续上修。 |
+| Eagle G5 / Eagle family advanced packaging | 2025-2026E 可能 $180M-$260M 级别，含 legacy Eagle/AP/G5 | G5 初始 $20M；Eagle family 装机和 AP 需求稳定 | 4 | 4 | 4 | 4 | 现金牛和客户基础；G5 负责 throughput/sensitivity upgrade，Hawk 负责最高端应用。 |
+| CoWoS-like / OSAT advanced packaging tool set | 2026 已披露 leading OSAT Q1 orders >$90M，含 $31M 单笔；2027 OSAT 新订单 $55M | OSAT 从跟随扩产进入 AI 封装第二供应链 | 5 | 5 | 5 | 4 | 这是 2026H2 指引的关键验证点，也是订单从 TSMC 链外溢到 OSAT 的证据。 |
+| MicroProf/FRT 3D surface metrology | 2025E 估 $30M-$60M，2026E $40M-$75M | FRT 2023 收购；德国资产占比和 MicroProf 产品线验证 | 4 | 3 | 3 | 3 | 与 Hawk/Eagle 互补，尤其 warpage/TTV/topography/hybrid bonding surface；短期收入弹性低于 Hawk。 |
+| ADC/Compass/Visual Layer software/AI | 2026E 直接收入可能 <$10M；间接拉动硬件 ASP/throughput | 2026-04 收购 Visual Layer；Q1 管理层称已在 detection/metrology/classification 中展现突破 | 4 | 3 | 3 | 4 | 当前不是收入核心，但可能提高 tool stickiness、服务毛利和未来 recurring revenue。 |
+
+## 5. 一年后产品收入贡献情景
+
+这里的“一年后”指 2027Q2 附近的滚动年化 run-rate，不等同 FY2027 全年。
+
+| 产品/业务 | 基准情景：一年后收入贡献 | 乐观情景 | 极度乐观情景 | AI 重要性/紧急性/供需/溢价变化 |
+|---|---:|---:|---:|---|
+| Hawk | $150M-$210M run-rate，YoY +40% 以上 | $220M-$300M，YoY +80% 以上 | $320M-$420M，YoY +150% 以上 | 基准已是核心；乐观要求 HBM4/HBM4E 和 OSAT CoWoS-like 继续加单；极度乐观要求 Hawk 被多个 HBM 厂/POR 采用且 2027 交付订单继续 $100M+ 级别。 |
+| Eagle G5 / Eagle family AP | $230M-$280M，YoY +10%-20% | $280M-$340M，YoY +25%-40% | $350M-$430M，YoY +50%+ | 重要性稳定，紧急性略低于 Hawk；溢价来自装机基数、recipe 和客户切换成本。 |
+| OSAT CoWoS-like tool set | $120M-$170M，YoY +25%+ | $180M-$250M | $260M-$350M | 供需取决于 ASE/Amkor/其他 OSAT 是否成为真实第二供应链；若 TSMC CoWoS 持续紧，OSAT 工具订单向上。 |
+| MicroProf/FRT | $50M-$85M，YoY +15%-35% | $85M-$120M | $120M-$170M | 若 hybrid bonding surface/warpage/TTV 成为 HVM 关键，FRT 弹性上修；否则维持配套工具属性。 |
+| Software/Visual AI | $5M-$15M 直接收入；更多体现为硬件 attach | $15M-$35M | $35M-$75M，开始形成 recurring software | 真正乐观需要客户愿意为 analytics/ADC 单独付费，而不是只作为硬件功能内含。 |
+
+## 6. BOM、单位内容量、价格传导链与当前产能/认证
+
+### 6.1 先说清楚：Camtek 没有直接装机 BOM 内容量
+
+Camtek 不是 GPU、光模块、电源、液冷、服务器、rack 的物理 BOM。每 MW、每 rack、每 GPU、每 optical port 的“真实内容量”只能按制造端设备摊销来折算：
+
+云厂 AI capex -> GPU/ASIC/HBM/CoWoS 需求 -> foundry/HBM/OSAT 扩产 capex -> inspection/metrology tool PO -> Camtek 工具 ASP、服务费、软件/AI attach。
+
+因此，Camtek 的价值不是“每台服务器装一个部件”，而是“每片 HBM/CoWoS/chiplet wafer 要经过更多检测量测步骤，且缺陷漏检会毁掉更高价值封装”。这使客户愿意为 throughput、sensitivity、false positive control 和 recipe lock-in 支付溢价。
+
+### 6.2 单位内容量折算模型
+
+公开锚点：Camtek 2026 投资者材料给出工具 ASP 约 $1M，Hawk 指标包含 10 WPH @ 1um sensitivity、500M+ bumps/wafer；实际 throughput 取决于 recipe、分辨率、scan 次数、wafer 类型和客户验收标准。
+
+| 折算对象 | 基准 | 乐观 | 极度乐观 | 解释 |
+|---|---:|---:|---:|---|
+| 每个 AI accelerator/GPU package 的 Camtek 间接设备收入 | $8-$18 | $18-$40 | $40-$75 | 按 Camtek AI/AP 工具收入除以被其客户产线覆盖的高端 AI package/HBM wafer 规模估算；不是硬件 BOM。 |
+| 72-GPU rack | $576-$1,296 | $1,296-$2,880 | $2,880-$5,400 | 只折算 accelerator package 相关检测量测，不含普通服务器/光模块测试。 |
+| 每 MW AI rack | $4,800-$10,800 | $10,800-$24,000 | $24,000-$45,000 | 假设 120kW/rack，约 8.3 racks/MW；若 200kW/rack，则每 MW rack 数下降，单位 MW content 下降。 |
+| 每个 HBM stack | $0.5-$2.0 | $2-$5 | $5-$10 | 对 HBM wafer/stack inspection/metrology 的摊销；受 HBM4/16H、probe/test insertion、良率要求影响。 |
+| 每个 optical port | 当前约 $0 | $0-$0.5 | $0.5-$2 | 当前 Camtek 不是光模块 BOM。只有 CPO/optical I/O wafer/package inspection 真正放量后才可能有间接摊销。 |
+
+### 6.3 产品 BOM/成本结构拆分
+
+Camtek 工具自身 BOM 大致由以下部分构成，具体比例公司未披露：
+
+| 工具成本模块 | Hawk/Eagle 中的重要性 | 供应链/毛利含义 |
+|---|---|---|
+| 光学系统、illumination、detectors、IR optics | 最高 | 决定 sensitivity、false alarm、throughput；高端光学/探测器是毛利护城河之一。 |
+| 精密运动平台、wafer handling、EFEM、洁净系统 | 高 | 决定 tool matching、throughput、可维护性；供应扩张受精密组件和服务工程能力限制。 |
+| 3D metrology sensors：triangulation/confocal/interferometry/CLIP 等 | 高 | 绑定 bump height、co-planarity、TTV、warp/bow、layer thickness。 |
+| 算法、ADC、Visual AI、recipe、data analytics | 逐年提高 | 直接提高软件附着率和客户切换成本；毛利高于硬件。 |
+| Field service、spares、calibration、客户应用工程 | 高 | 高端 AP/HBM 客户导入周期长，服务网络是客户粘性核心。 |
+
+### 6.4 当前产能能力和客户采纳
+
+| 产品/业务 | 当前产能能力（美元计） | 客户采纳程度 | 认证/qualification 阶段 |
+|---|---:|---|---|
+| Hawk | 2026 可支撑 $100M+ 级别交付，2027 已有 >$50M HBM Hawk 订单；若供应链顺利，2027 run-rate 可上 $200M+ | tier-1 IDM、leading HBM player、OSAT 已公开下单 | 已从预发布订单进入量产交付订单；对 HBM/player 和 OSAT 属生产采用/扩产阶段，不只是 lab demo。 |
+| Eagle G5 / Eagle family | 2025 年公司总收入 $496M、工具 ASP 约 $1M，说明年化数百台工具级产能；Eagle 是主力平台 | 多客户、装机基数大；G5 初始 $20M 订单 | G5 已商业订单，Eagle family 是成熟平台。 |
+| OSAT CoWoS-like tool set | 2026 disclosed OSAT orders >$90M，2027 $55M | leading OSAT 明确下单；OSAT 正切入 AI 先进封装 | 订单用于 2026/2027 交付，属于 customer production ramp。 |
+| MicroProf/FRT | 收购 FRT 后德国制造和产品线并入；估算年化 $40M-$80M 潜力 | advanced packaging、Si/SiC、surface metrology 客户 | 成熟产品线，关键在与 Camtek channel 协同。 |
+| ADC/Visual AI | 当前直接收入小，主要随工具销售内含 | Camtek 与 Visual Layer 合作一年以上后并购；已集成进 offerings | AI detection/metrology/classification 处 near-term impact 阶段，商业软件单独收费仍需验证。 |
+
+## 7. 一年后产能能力与认证情景
+
+| 产品/业务 | 基准：一年后产能/采纳 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| Hawk | 年化收入能力 $180M-$240M；继续获得 HBM/IDM/OSAT 复购；HBM4/HBM4E 客户进入更多 production recipes | $250M-$350M；至少两家 HBM/leading AI package 客户重复下单，2027 backlog 再扩 | $400M+；Hawk 成为 HBM4/CoWoS-like 多客户 tool-of-record，Camtek 需扩产/外协/服务团队快速放大 |
+| Eagle G5 / Eagle family | 年化 $230M-$280M；G5 成为 fan-out/multi-RDL upgrade 主力 | $300M-$350M；G5 与 Hawk 分层清晰，客户既换代又扩产 | $400M+；Eagle G5 也被 AI/AP 大量拉动，而不是被 Hawk 替代 |
+| OSAT CoWoS-like | 2027 交付 $55M 订单进入收入；2026 OSAT订单转为高基数 | OSAT 二供扩产继续，单一季度再次出现 $50M+ PO | 多家 OSAT 获云厂/NVIDIA/ASIC 认证，Camtek 订单从 OSAT 侧连续超过 $100M/年 |
+| MicroProf/FRT | 年化 $60M-$90M；与 Hawk/Eagle 打包销售 | $100M-$140M；hybrid bonding surface/warpage/TTV 检测成为 HVM 必需 | $150M+；FRT 产品成为先进封装计量第二曲线 |
+| Visual AI/software | 单独收入 $10M-$20M；更多是提高 hardware win-rate | $30M-$50M，开始以 subscription/service attach 出现 | $75M+；形成跨工具 AI/yield analytics recurring business |
+
+## 8. 基于订单积压、供给和扩产的未来一年业务增速预测
+
+### 8.1 订单与供给约束
+
+可验证订单：
+
+- 2026-02：tier-1 IDM Hawk 订单累计 $45M，2026 年交付。
+- 2026-03：Q1 2026 leading OSAT orders 超过 $90M，多数用于 CoWoS-like AI applications，预计 2026 年交付。
+- 2026-06：tier-1 OSAT $55M + leading HBM player >$50M Hawk，合计 >$105M，预计 2027 年交付。
+
+供给能力：
+
+- 2025 全年收入 $496.1M；2026 指引下限约 $566M，说明公司已有年化 $550M-$600M 级别交付能力。
+- 工具 ASP 约 $1M，意味着 2025 年大致是数百台系统交付量级。Hawk/G5 的高端配置 ASP 可能高于均值，但公司未披露。
+- 主要瓶颈可能不是厂房产能，而是高端光学/传感器/精密运动供应、客户 recipe/qualification、field service 和验收节奏。
+
+### 8.2 公司未来一年收入增速情景
+
+| 情景 | 未来一年收入预测 | 增速 | 订单假设 | 毛利/利润假设 | 风险 |
+|---|---:|---:|---|---|---|
+| 基准 | 2026E $575M-$600M；2026Q2-2027Q1 rolling $610M-$650M | FY2026 +16%-21%；rolling +22%-30% | 2026 已披露 $135M+ 交付订单顺利确认；2027 >$105M 订单进入 backlog | non-GAAP GM 51%-52%，op margin 27%-30% | H2 ramp 执行、客户验收、供应链交付。 |
+| 乐观 | 2026E $610M-$650M；rolling $680M-$760M | FY2026 +23%-31%；rolling +36%-52% | OSAT/HBM/IDM 继续追加，2027 PO 再出现 $100M 级别；部分交付提前 | GM 52%-54%，op margin 30%+ | 需要 Hawk/G5 mix 提升和服务团队跟上。 |
+| 极度乐观 | 2026E $680M-$730M；rolling $800M-$950M | FY2026 +37%-47%；rolling +60%-90% | HBM4/CoWoS-like 供不应求加剧，Hawk 成为多客户 POR，订单连续超预期 | GM 54%+，op margin 32%-35% | 估值、交付、客户集中和订单不可线性外推；任何 AI capex 消化都会压缩倍数。 |
+
+## 9. 竞争格局、替代方案和客户切换成本
+
+### 9.1 主要竞争对手
+
+| 竞争层级 | 公司 | 与 Camtek 的关系 |
+|---|---|---|
+| 综合 process-control 龙头 | KLA | 最强 process control 平台，覆盖 wafer inspection、reticle、metrology、analytics、advanced packaging；资源和客户锁定更强，但体量大、Camtek 在 AP/HBM 细分弹性更高。 |
+| Advanced packaging inspection/metrology 直接竞品 | Onto Innovation | Dragonfly G5/3Di 与 HBM/2.5D 高度相关，是 Camtek 在先进封装/HBM 的最直接公开竞品之一。 |
+| 以色列/计量竞品 | Nova | optical/materials/chemical metrology 强，在 DRAM/HBM 前道和 advanced packaging materials metrology 竞争/互补。 |
+| X-ray/材料/3D 量测 | Bruker/Rigaku/Thermo Fisher/Zeiss/Nikon 等 | 更偏材料/FA/X-ray/3D analysis，部分工序可替代或补充 optical inspection。 |
+| 先进封装设备相邻 | BESI、ASMPT、EVG、SUSS、Applied、TEL、DISCO | 不直接替代 Camtek，但其工艺路线决定 Camtek 的检测量测需求；如果 hybrid bonding/TCB/CoWoS route 变化，检测点和价值量会变化。 |
+| 国产/亚洲替代 | 中科飞测、精测电子、Toray、SCREEN、Koh Young、Nordson、Takano 等 | 在成熟/区域客户和部分先进封装有替代可能，高端 HBM4/CoWoS-like 客户认证仍是长期壁垒。 |
+
+### 9.2 Camtek 的新技术是否是主流
+
+Hawk 和 Eagle G5 所押注的方向是主流：HBM3E/HBM4、CoWoS-like、chiplet、2.5D/3D、micro-bumps、hybrid bonding、multi-RDL、AI defect classification。项目内行业资料也把 advanced packaging inspection/metrology 列为 2026-2027 AI 芯片供给链最确定的设备增量之一。
+
+但要区分“技术主流”和“Camtek 独占”：
+
+- HBM/CoWoS-like/AP inspection 必然是主流需求。
+- Hawk/Eagle G5 是否成为 tool-of-record，取决于客户 qualification、throughput、sensitivity、false alarm、service、recipe compatibility。
+- 客户通常会多源采购以降低工艺风险，Camtek 很难完全垄断一个大客户全部检测量测步骤。
+- 一旦工具进入量产 recipe，替换成本高。原因是客户要重新验证缺陷库、recipe、tool matching、SPC、data format、yield correlation、service response；这类替换以季度到年度计，不是按低价随时切换。
+
+### 9.3 风险和替代路线
+
+| 风险 | 影响 | 反证指标 |
+|---|---|---|
+| AI capex 消化或客户推迟 GB300/Rubin/ASIC rack 验收 | HBM/CoWoS/OSAT capex 后移，Camtek 订单确认延迟 | NVIDIA/AMD/Broadcom/TSMC/HBM 厂连续两个季度指引低于预期。 |
+| HBM4/Hybrid bonding 节奏慢于市场预期 | Hawk/FRT 的极度乐观情景下修 | HBM4E/16H 仍大量维持 TCB/MR-MUF，HB 相关工具订单不足。 |
+| Onto/KLA/Nova 等竞争加剧 | ASP/份额承压 | 客户订单转向 Dragonfly/KLA/Nova，Camtek 新订单频率下降。 |
+| 订单集中和交付窗口错配 | 单季收入波动 | large order push-out、acceptance 延迟、Q2/Q3 指引不兑现。 |
+| 中国/出口管制/地缘风险 | 中国 2025 收入 $243.9M，占总收入约 49%；以色列制造运营也有区域风险 | 中国设备出口限制、客户制裁、物流/战争风险。 |
+| 估值过高 | 基本面仍增长但股票回撤 | P/S 近 17x、non-GAAP P/E 50x+，任何增长率从 30% 下修到 teens 都会压缩倍数。 |
+
+## 10. 总结判断
+
+Camtek 的核心投资判断可以压缩成一句话：**它是 HBM/CoWoS-like/chiplet 先进封装良率控制的高弹性小型设备公司，2026 年订单已经从叙事变成公开金额，2027 可见度也开始形成；但估值已经预付了较高增长，必须用 2026H2 收入 ramp 和 2027 >$100M 级订单连续性来验证。**
+
+本报告对 Camtek 的评级框架：
+
+- 业务质量：高。产品毛利、客户粘性、recipe/data/service 护城河强。
+- AI 相关性：高但间接。不是数据中心硬件 BOM，而是 AI 芯片制造产能释放工具。
+- 订单能见度：2026 明显增强，2027 开始增强。
+- 财务健康：强。净现金、经营现金流和 50%+ 毛利提供缓冲。
+- 估值容错：低。当前约 17x TTM sales、约 54x non-GAAP TTM earnings，要求订单继续上修。
+- 最关键跟踪项：2026Q2/Q3 实际收入和 H2 指引、Hawk 追加订单、leading HBM player 是否复购、OSAT CoWoS-like 订单是否继续、毛利率是否因新平台保持 51%+、Visual Layer 是否带来软件 attach 或 throughput 改善。
+
+## 11. 来源与本地资料
+
+### 公司一手资料
+
+- Camtek Q1 2026 results, 2026-05-12: https://www.camtek.com/news-and-events/camtek-announces-results-for-the-first-quarter-of-2026/
+- Camtek Q4/FY2025 results, 2026-02-18: https://www.camtek.com/news-and-events/camtek-announces-record-results-for-the-fourth-quarter-full-year-2025/
+- Camtek Q3 2025 results, 2025-11-10: https://www.camtek.com/news-and-events/camtek-announces-record-results-for-the-third-quarter-of-2025/
+- Camtek Q2 2025 results, 2025-08-05: https://www.camtek.com/news-and-events/camtek-announces-record-results-for-the-second-quarter-of-2025/
+- Camtek Q1 2025 results, 2025-05-13: https://www.camtek.com/news-and-events/camtek-announces-record-results-for-the-first-quarter-of-2025/
+- Camtek 2025 Form 20-F, filed 2026-03-19: https://www.sec.gov/Archives/edgar/data/1109138/000117891326001561/zk2634678.htm
+- Camtek February 2026 investor presentation: https://www.camtek.com/wp-content/uploads/Camtek_Investors_FEB26.pdf
+- Camtek Hawk product page: https://www.camtek.com/products/hawk/
+- Camtek Eagle G5 product page: https://www.camtek.com/products/eagle-g5/
+- Camtek Eagle AP Plus product page: https://www.camtek.com/products/eaglet-ap-plus/
+- Camtek FRT/MicroProf wafer metrology page: https://www.camtek.com/solution/frt-fully-automated-wafer-metrology/
+- Camtek ADC product page: https://www.camtek.com/solution/adc/
+- Camtek Compass product page: https://www.camtek.com/solution/compass/
+- Camtek Visual Layer acquisition, 2026-04-13: https://www.camtek.com/news-and-events/camtek-announces-acquisition-of-visual-layer-to-deepen-its-visual-ai-capabilities-in-its-inspection-and-metrology-offering/
+- Camtek $31M OSAT order, 2026-03-30: https://www.camtek.com/news-and-events/camtek-receives-31-million-multi-system-order-from-a-leading-osat/
+- Camtek $45M IDM Hawk orders, 2026-02-10: https://www.camtek.com/news-and-events/camtek-receives-multiple-hawk-systems-order-of-approximately-25-million-from-an-idm-for-ai-applications/
+- Camtek >$105M OSAT/HBM orders, 2026-06-02: https://www.camtek.com/news-and-events/camtek-receives-over-105-million-multi-system-orders-from-a-tier-1-osat-and-a-leading-hbm-manufacturer/
+- Camtek FRT acquisition closing, 2023-11-01: https://www.camtek.com/news-and-events/camtek-announces-the-closing-of-its-acquisition-of-frt-metrology/
+- Camtek Intel EPIC Supplier Award, 2025-04-08: https://www.camtek.com/news-and-events/camtek-earns-intels-2025-epic-supplier-award/
+
+### 本地行业资料
+
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+- `行业调研/行业索引.md`
+- `公司调研/公司索引.md` 仅用于确认正式输出目录，不用于公司内容复用。

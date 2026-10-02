@@ -1,0 +1,542 @@
+# 公司：STX Seagate Technology（希捷科技）
+
+> **报告日期：2026-07-11；公司财务资料截止：2026-04-28 发布的 FY2026 Q3；市场数据截止：2026-07-10 美股收盘。**  
+> 除特别说明外，金额均为美元；EB=Exabyte，1 EB=10亿 GB。本文把数据分成三类：**披露值**（公司/监管文件直接给出）、**研究推算**（写明公式或上下界）、**情景预测**（不是公司指引）。Seagate 只有一个可报告经营分部，Data Center/Edge IoT 是市场口径而不是会计分部；公司不披露狭义 AI 收入、产品毛利率、bookings、B2B 或正式 backlog。
+
+## 核心结论
+
+1. **公司已从传统 PC 硬盘周期股，转成由云端 nearline HDD、HAMR 面密度升级和供给纪律驱动的“AI 数据持久层稀缺资产”。** FY2026 Q3 数据中心收入 25.00 亿美元、占收入 80%，同比增长 55%；nearline 出货 175 EB、同比增长 47%；非 GAAP 毛利率达到 47.0%。但“数据中心收入”不等于“AI 收入”：本文估算当季狭义 AI 训练、推理、RAG 和 agentic context 相关收入约 8.7亿—12.4亿美元，即总收入 28%—40%，其余仍包括普通云、备份、对象存储和企业容量扩张。
+2. **订单最强证据不是传统 backlog，而是产能分配和 build-to-order（BTO）合同。** 管理层称 nearline 产能几乎已分配至 2027 年末，并已把 FY2027 的配置、价格和数量写入 BTO 计划；这把需求可见性从过去 1—2 个季度拉长到约 18—21 个月。不过历史采购订单可取消，公司没有披露取消率，因此不能把“产能已分配”机械等同于不可撤销收入。
+3. **技术领先来自 Mozaic/HAMR，而不是 AI 芯片。** Seagate 不销售 GPU、ASIC 或网络芯片；它提供 AI 数据生命周期中容量最大、时延容忍度较高的持久存储层。Mozaic 4+ 达到 4TB 以上/盘片、单盘最高 44TB，已在两家头部 hyperscaler 完成认证并量产；公司预计 2026 年末 HAMR 占 nearline EB 的多数，FY2027 年末约 70%。
+4. **盈利改善不是纯价格上涨。** 更高 TB/盘片使同样的磁头、盘片、马达和机箱卖出更多容量；公司保持机械盘单位产能基本不扩，主要用面密度、良率和产品组合增加 EB。Q3 FY2026 数据中心收入/nearline EB 的粗略“收入密度”为 14.3美元/TB；44TB 产品按此口径约 629美元/盘，而真实 ASP 会因客户、CMR/SMR、系统收入混入而上下浮动。
+5. **资产负债表已由脆弱转为健康，但估值极端。** 2026-04-03 现金 11.46 亿美元、债务 38.63 亿美元、净债务约 27.17 亿美元；过去九个月偿债 11.32 亿美元，Q3 自由现金流 9.53 亿美元。流动比率 1.33、净杠杆约 0.73 倍，经营安全性明显改善。反面是 2026-07-10 股价 910.34 美元、TTM PE 约 86 倍、P/S 约 18.7 倍；市场已预付相当多的 FY2027 增长与 HAMR 成功，基本面正确并不自动意味着当前价格安全。
+6. **一年后基准情景**：FY2027/未来四季度收入 155亿—168亿美元，同比增长约 29%—40%；nearline 能力 850—920 EB/年，对应约 120亿—135亿美元收入能力；HAMR 占 nearline EB 60%—70%。乐观情景为 172亿—188亿美元；极度乐观为 195亿—215亿美元，但后者要求单位产能也增加 5%—10%、Mozaic 4+ 良率快速成熟且客户不推迟数据中心项目，概率显著低于前两种。
+
+## 1. 整体业务、投资人认知、三年变动与产业链位置
+
+### 1.1 业务结构
+
+Seagate 的核心能力是设计、制造和销售 HDD，并向上延伸到高密度存储机箱、对象存储服务和数据管理。公司在会计上是**单一经营分部**；从 FY2026 起，为了贴近终端需求，把市场披露重组为 Data Center 与 Edge IoT。[FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1137789/000113778925000157/stx-20250627.htm) 与 [FY2026 Q3 补充资料](https://s24.q4cdn.com/101481333/files/doc_financials/2026/q3/STX-FQ3-26-Supplemental.pdf) 是下表口径来源。
+
+| 市场/业务 | 主要客户与用途 | 主要产品 | FY2026 Q3 收入 | 占比 | 投资意义 |
+|---|---|---|---:|---:|---|
+| Data Center | hyperscaler、云服务商、VIA、大型企业；对象存储、数据湖、备份、AI 训练数据、推理上下文 | Exos nearline HDD、Mozaic 3+/4+ HAMR、CMR/SMR、Exos X/E、CORVAULT、Lyve Cloud | 25.00 亿 | 80.3% | 当前增长、毛利和现金流的绝对核心 |
+| Edge IoT | NAS、视频监控、PC、游戏、消费外置盘、传统企业任务关键存储 | IronWolf/SkyHawk/Exos E、BarraCuda、One Touch、Expansion、LaCie、消费 SSD | 6.12 亿 | 19.7% | 现金流补充；多数终端增长和议价弱于数据中心 |
+| 狭义 AI（研究口径，包含于 Data Center） | 直接由训练数据、checkpoint、RAG、agentic context、推理日志引出的 HDD/系统/云服务 | 高容量 nearline、HAMR、JBOD、对象层、Lyve | 约 8.7亿—12.4亿 | 约 28%—40% | 公司不披露；不能把 80% Data Center 全算作 AI |
+
+产业链位置可概括为：
+
+**上游材料/设备与零部件 → Seagate 垂直整合的盘片、磁头、HAMR 激光/NFT、固件和整盘制造 → JBOD/对象存储系统 → hyperscaler/云与企业 → AI 训练、推理、归档。**
+
+Seagate 不是 GPU 机架的直接 BOM 厂商，而是 GPU 集群之外的**共享数据持久层**。GPU 的 HBM、机内 NVMe 和网络化 SSD 负责高带宽热数据，nearline HDD 负责价格敏感、容量极大的温/冷数据。项目内行业研究也采用“SSD 喂 GPU、HDD 保存长期 AI 记忆”的分层框架，参见[《HDD、对象存储与冷温数据存储》](../../行业调研/AI服务器_存储_芯片/行业调研_HDD、对象存储与冷温数据存储_2026-07-10.md)。
+
+### 1.2 投资人心中的公司：认知发生了什么变化
+
+- **旧认知：** PC/消费电子周期、寡头但低增长、库存与价格波动大、通常只配低倍数。
+- **2023—2024 过渡认知：** 行业深度去库存、减产和重组，三家 HDD 厂商开始以价值而非单位数争夺份额。
+- **2025—2026 新认知：** hyperscaler 容量需求恢复，AI 增加长期数据量；Seagate HAMR 率先规模化，BTO/LTA 把量价可见性拉长，供给不再随短期价格迅速扩张。因此市场把它视作“AI 存储基础设施 + HAMR 技术溢价 + 现金流去杠杆”的稀缺标的。
+- **仍不能忽略的旧属性：** 客户集中、资本品采购可推迟、HDD/SSD 相对成本会变化；供给纪律一旦被打破，毛利仍会周期性回落。FY2025 有一名客户约占总收入 10%，并非无客户集中风险。
+
+### 1.3 最近三年的重大变动、转型和收购
+
+| 时间 | 事项 | 数字与事实 | 对商业模式的影响 |
+|---|---|---|---|
+| 2023 | 周期底部重组、产品路线简化 | 管理层提出额外至少 2 亿美元年化 COGS/费用节省，减少盘型配置和容量节点转换；FY2023 计入 1.02 亿美元重组费用 | 降低固定成本与认证复杂度，为后续供给纪律奠基；不是增长型收购 |
+| 2023 | BIS/Huawei 和解 | 就 2020-08 至 2021-09 对 Huawei 的 HDD 销售争议支付 3 亿美元，2023-10 起每季 1,500 万美元、五年支付，并接受三次合规审计 | 现金流拖累仍在，但已计提；暴露出口管制和单一客户合规风险。[SEC Q3 FY2026 10-Q](https://www.sec.gov/Archives/edgar/data/1137789/000113778926000088/stx-20260403.htm) |
+| 2024-04 | 出售内部 SoC 业务给 Broadcom | 总对价 6 亿美元，Seagate FY2024 确认约 3.13 亿美元税前处置收益；同时重构长期采购协议 | 退出资本和研发密集的内部控制器设计，把 SoC 变为外购；释放现金但增加对 Broadcom 等外部芯片供应的依赖 |
+| 2024—2025 | 由“抢单位”转向 BTO/价值优先 | 不增加机械盘单位产能，Capex 维持收入约 4%—6%，靠 TB/盘、良率和 mix 扩 EB | 将行业供给弹性压低；在需求上行时显著放大 ASP、毛利和 FCF |
+| 2025-03-31 | 收购 Intevac | 总对价 1.19 亿美元；Intevac 是薄膜沉积设备商，交易对短期合并利润不重大 | 垂直整合盘片薄膜加工关键设备和工艺，降低 HAMR 扩产/设备路线风险。[交易公告](https://investors.seagate.com/news/news-details/2025/Seagate-Announces-Agreement-to-Acquire-Intevac/default.aspx) |
+| 2025—2026 | Mozaic/HAMR 商业化 | Mozaic 3+ 规模出货；Mozaic 4+ 最高 44TB，在两家头部 hyperscaler 量产；公司称已累计出货数百万只 HAMR 盘 | 把竞争维度从单位数转为面密度、良率、功耗/TB 与认证速度 |
+| FY2026 | 市场披露重组 | Data Center/Edge IoT 取代 Mass Capacity/Legacy/Other 口径 | 更清楚显示数据中心已占约 80%，但也使跨期分业务比较需要桥接 |
+
+### 1.4 最新股价、估值与盈利快照
+
+市场数据采用 2026-07-10 收盘，因为 2026-07-11 为周六。价格和市值来自最新行情快照；倍数、TTM 利润率来自 [StockAnalysis 统计页](https://stockanalysis.com/stocks/stx/statistics/)，因此会随供应商股数及盘后口径略有差异。
+
+| 指标 | 最新值 | 日期/计算口径 | 解读 |
+|---|---:|---|---|
+| 股价 | 910.34 美元 | 2026-07-10 收盘；日内 860.00—926.51 美元 | 过去一年重估幅度远大于盈利增幅，波动风险高 |
+| 市值 | 2,084.7 亿美元 | 2026-07-10 行情源；另一统计源约 2,059.7 亿美元 | 差异来自稀释股数/更新时间 |
+| 企业价值 EV | 约 2,090 亿美元 | 2026-07-10 | 净债务相对市值已很小 |
+| TTM PE | 约 86.2—86.4 倍 | TTM EPS 约 10.54—10.56 美元 | 已不是传统 HDD 周期股估值 |
+| Forward PE | 36.87 倍 | 市场一致预期 | 需要 FY2027 EPS 大幅增长才能消化 |
+| TTM P/S | 18.71 倍 | TTM 收入 110.10 亿美元 | 对硬件制造商异常昂贵 |
+| Forward P/S | 13.31 倍 | 市场一致预期 | 隐含未来收入约 155亿—158亿美元 |
+| TTM 收入增速 | 28.9% | Q4 FY2025—Q3 FY2026 对比上年 | Q3 单季加速至 44.1% |
+| TTM 毛利率 | 41.57% | GAAP | Q3 单季已达 46.5% |
+| TTM 净利率 | 21.60% | GAAP；TTM 净利润约 23.8 亿美元 | 对 HDD 历史区间非常高 |
+| TTM 自由现金流 | 24.12 亿美元 | 四季 FCF 相加 | FCF yield 仅约 1.2%，再次说明估值昂贵 |
+
+市场 FY2026/FY2027 一致预期约为：收入 120.5 亿/167.3 亿美元、同比 +32.5%/+38.8%；EPS 14.89/27.39 美元。它们是卖方共识而不是公司指引，来源为[分析师预测汇总](https://stockanalysis.com/stocks/stx/forecast/)。
+
+### 1.5 资产负债表健康度
+
+| 项目 | 2026-04-03 | 2025-06-27 | 变化/判断 |
+|---|---:|---:|---|
+| 现金及等价物 | 11.46 亿 | 8.91 亿 | 增加 2.55 亿 |
+| 应收账款 | 11.97 亿 | — | 与单季 31.12 亿收入相称 |
+| 存货 | 15.30 亿 | 14.40 亿 | +0.90 亿；在制品 8.38 亿升至 10.35 亿，符合 HAMR ramp，但需观察良率/滞销 |
+| 流动资产 | 42.99 亿 | — |  |
+| 流动负债 | 32.41 亿 | — | 流动比率 1.33 |
+| 现金+应收/流动负债 | 0.72 倍 | — | 速动覆盖不足 1，仍依赖持续出货和库存变现 |
+| 总债务 | 38.63 亿 | 49.95 亿 | 九个月下降 11.32 亿 |
+| 净债务 | 27.17 亿 | 41.04 亿 | 快速去杠杆 |
+| 总资产/总负债 | 88.92 亿/77.97 亿 | — | 负债占资产 87.7%，绝对比例仍高 |
+| 股东权益 | +10.95 亿 | -4.53 亿 | 盈利和可转债/偿债使权益转正 |
+| 九个月 CFO/Capex | 23.69 亿/3.82 亿 | — | FCF 约 19.87 亿，现金创造很强 |
+| Q3 单季 CFO/FCF | 11.14 亿/9.53 亿 | — | FCF margin 30.6% |
+| 净债务/LTM 调整 EBITDA | 约 0.73 倍 | — | 以 LTM 调整 EBITDA 37.21 亿估算 |
+| 利息覆盖 | 约 11—13 倍 | — | 目前偿息充足；债务加权利率约 6.5% |
+| 未使用循环额度 | 约 13 亿 | — | 加现金总流动性约 24 亿 |
+
+**健康度结论：经营面 8.5/10，结构面 6.5/10，综合约 7.5/10。** 强项是毛利、FCF 和去杠杆；弱项是速动比率低、总负债率高、仍需支付 BIS 和解款，以及供应商融资应付款从 2,000 万美元升至约 3.68 亿美元，后者改善表面经营现金流却增加短期供应链融资依赖。另有约 2.40 亿美元法律和解应计负债、约 4.22 亿美元长期无条件采购义务。Fitch 于 2026-03-24 将长期评级由 BB+ 上调至 BBB-、展望 Stable，[公司债权人评级页](https://investors.seagate.com/creditor-relations/agency-ratings-and-resources/default.aspx)确认其投资级状态；这支持信用质量改善，但不能消除行业周期。
+
+## 2. 最新及最近四次财报：五季度数字、订单与交期
+
+### 2.1 五季度损益、业务与容量
+
+下表以 [Q3 FY2026 补充资料](https://s24.q4cdn.com/101481333/files/doc_financials/2026/q3/STX-FQ3-26-Supplemental.pdf) 统一重列；Q3/Q4 FY2025 的 Data Center/Edge 是公司后续提供的可比口径。旧口径增长用于弥补重列后同比不足。
+
+| 财报季度（期末） | 收入/同比 | Data Center 收入/占比/同比 | Edge IoT 收入/占比/同比 | nearline EB/同比 | 总 EB | 非 GAAP 毛利率/营业率 | 非 GAAP 净利/EPS | 狭义 AI 收入占比：研究估算 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| FY2025 Q3（2025-03-28） | 21.60 亿 / +30.5% | 16.15 亿 / 74.8% / 未重列同比；旧 Mass Capacity 17.49 亿、+48% | 5.45 亿 / 25.2%；旧 Legacy 2.54 亿、-15%，Systems/SSD/Other 1.57 亿、-11% | 120 EB / +55% | 144 EB | 36.2% / 23.5% | 4.07 亿 / 1.90 | 15%—25%（3.2亿—5.4亿） |
+| FY2025 Q4（2025-06-27） | 24.44 亿 / +29.5% | 18.63 亿 / 76.2%；旧 Mass Capacity 20.12 亿、+40% | 5.81 亿 / 23.8%；旧 Legacy 2.70 亿、-7%，Systems/SSD/Other 1.63 亿、+2% | 137 EB / +52% | 162 EB | 37.9% / 26.2% | 5.56 亿 / 2.59 | 18%—28%（4.4亿—6.8亿） |
+| FY2026 Q1（2025-10-03） | 26.29 亿 / +21.2% | 21.14 亿 / 80.4% / +34% | 5.15 亿 / 19.6% / -12% | 159 EB / +39% | 182 EB | 40.1% / 29.0% | 5.83 亿 / 2.61 | 20%—32%（5.3亿—8.4亿） |
+| FY2026 Q2（2026-01-02） | 28.25 亿 / +21.5% | 22.24 亿 / 78.7% / +28% | 6.01 亿 / 21.3% / +2% | 165 EB / +31% | 190 EB | 42.2% / 31.9% | 7.02 亿 / 3.11 | 25%—35%（7.1亿—9.9亿） |
+| **FY2026 Q3（2026-04-03）** | **31.12 亿 / +44.1%** | **25.00 亿 / 80.3% / +55%** | **6.12 亿 / 19.7% / +12%** | **175 EB / +47%** | **199 EB** | **47.0% / 37.5%** | **9.34 亿 / 4.10** | **28%—40%（8.7亿—12.4亿）** |
+
+AI 估算方法：先取 Data Center，再剔除普通云存储、传统企业容量、VIA 与备份，最后按各季度公开的 AI 需求加速、HAMR 客户渗透和 inference/context 技术项目给出区间。它不是客户逐单标记，不能用于精确会计归因。
+
+公司不披露 Data Center/Edge IoT 分业务毛利。为了满足跨季度业务盈利比较，下表用业务 mix 对公司非 GAAP 毛利率作加权反推，并以 nearline 的容量/价格、HAMR ramp 和 Edge 产品成熟度校准；它是**研究估算的毛利率区间**，不是会计分部数据。
+
+| 财报季度 | Data Center 毛利率估算 | Edge IoT 毛利率估算 | 公司非 GAAP 毛利率：披露 | 反推含义 |
+|---|---:|---:|---:|---|
+| FY2025 Q3 | 38%—42% | 22%—28% | 36.2% | 供给仍受限、HAMR 早期成本较高 |
+| FY2025 Q4 | 40%—44% | 22%—28% | 37.9% | high-capacity mix 和定价改善 |
+| FY2026 Q1 | 42%—46% | 23%—29% | 40.1% | Mozaic 规模化、Data Center 占比升至 80% |
+| FY2026 Q2 | 44%—48% | 26%—32% | 42.2% | BTO 量价与面密度同时贡献 |
+| **FY2026 Q3** | **49%—54%** | **26%—34%** | **47.0%** | **Data Center/HAMR 是毛利率升至历史高位的主因** |
+
+### 2.2 现金流、资本开支与杠杆
+
+| 财报季度 | CFO | Capex | FCF | 期末现金 | 期末债务 | FCF margin | 观察 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| FY2025 Q3 | 2.59 亿 | 0.43 亿 | 2.16 亿 | 8.14 亿 | 51.46 亿 | 10.0% | 供给约束导致约 2 亿美元需求顺延 |
+| FY2025 Q4 | 5.08 亿 | 0.83 亿 | 4.25 亿 | 8.91 亿 | 49.95 亿 | 17.4% | 毛利和回款改善，偿债开始加速 |
+| FY2026 Q1 | 5.32 亿 | 1.05 亿 | 4.27 亿 | 11.12 亿 | 49.94 亿 | 16.2% | HAMR ramp 增加 Capex/在制品 |
+| FY2026 Q2 | 7.23 亿 | 1.16 亿 | 6.07 亿 | 10.46 亿 | 44.99 亿 | 21.5% | 价格、容量和组合共同改善 |
+| **FY2026 Q3** | **11.14 亿** | **1.61 亿** | **9.53 亿** | **11.46 亿** | **38.63 亿** | **30.6%** | 单季偿债 6.41 亿；经营杠杆最强 |
+
+### 2.3 Backlog、bookings、B2B、交期与取消：披露边界和替代指标
+
+Seagate 不披露标准化 backlog/bookings/B2B。它的 hyperscale 业务使用滚动预测、采购订单、长期供应协议和 BTO；因此最可审计的替代指标是**产能已分配时间、客户认证、价格/配置是否锁定、以及未满足需求是否顺延**。[各季电话会入口](https://investors.seagate.com/financials/quarterly-results/default.aspx) 与 FY2025 10-K 的订单条款支持下表。
+
+| 财报季度 | 正式 backlog/bookings/B2B | 产能覆盖与订单证据 | lead time/交付窗口 | 取消/顺延 | 研究判断 |
+|---|---|---|---|---|---|
+| FY2025 Q3 | 均未披露 | 2025 年可见性高，部分客户已看到 2026 上半年；需求高于供给 | 管理层问答指向 52 周以上；约 2 亿美元需求因临时供应限制移到以后季度 | 无客户取消率；约 2 亿是顺延而非丢单 | 隐含 bookings/revenue >1，但不能量化 |
+| FY2025 Q4 | 未披露 | 产能大体排至 2026 年中，下半年能见度增加 | 客户规划比过去提前 6—9 个月；零部件交期接近一年 | 未披露 | 供需已从恢复期进入紧平衡 |
+| FY2026 Q1 | 未披露 | nearline 生产大部分承诺至 CY2026，开始看到 CY2027 | HAMR 每盘 wafer 内容提高，交期阶段性拉长 | 未披露 | 技术 ramp 与需求同时挤压关键工序 |
+| FY2026 Q2 | 未披露 | CY2026 容量基本全部分配；CY2027 数量已谈，2026 各季已有 PO、量价明确；讨论 CY2028 | 约 12—24 个月规划窗口 | 未披露 | 未来四季收入覆盖度很高，但非不可撤销 |
+| **FY2026 Q3** | **未披露** | **nearline 产能几乎全分配至 CY2027；几乎所有主要 cloud/hyperscale 都有 EB 级协议；FY2027 BTO 的配置、价格、数量已完成** | **约 18—21 个月供给可见性，客户讨论延伸至 CY2028+** | **未披露；公司称未来四季“绝大多数”已分配但不是 100%** | **量价可见性为五季最强；不是 GAAP backlog** |
+
+取消率必须保守处理：FY2025 10-K 说明，历史上多数客户 PO 可无罚取消；自 FY2024 起部分长期承诺包含潜在取消费，但不能完全消除延期或取消。本文在第 8 节把未来一年 Data Center 取消/延期设为基准 0%—5%、乐观 0%—3%、极度乐观 0%—2%，这是情景假设而非历史披露。
+
+## 3. 2026 年最新财报指引、业务占比与产品交叉验证
+
+### 3.1 FY2026 Q4 指引及隐含全年
+
+[FY2026 Q3 财报发布](https://investors.seagate.com/news/news-details/2026/Seagate-Technology-Reports-Fiscal-Third-Quarter-2026-Financial-Results/default.aspx) 和[电话会](https://investors.seagate.com/events/event-details/2026/Seagate-Technology-Fiscal-Third-Quarter-2026-Conference-Call/default.aspx)给出的下一季指引如下：
+
+| 指标 | FY2026 Q4 公司指引/研究推算 | 同比/环比与含义 |
+|---|---:|---|
+| 收入 | 34.50 亿 ±1.00 亿 | 中点同比 +41.2%，环比 +10.9% |
+| 非 GAAP 营业利润率 | “lower forties”，研究取 41%—43% | 显著高于 Q3 的 37.5% |
+| 非 GAAP Opex | 约 2.95 亿 | 占收入中点 8.6% |
+| 隐含非 GAAP 毛利率 | 约 49.6%—51.6% | 营业率 + Opex/收入；是推算而非直接指引 |
+| 非 GAAP EPS | 5.00 ±0.20 | 中点较 Q3 +22% |
+| 税率 | 约 16% |  |
+| 稀释股数 | 约 2.31 亿 | 包含约 300 万可转债稀释股 |
+| FY2026 收入中点 | 120.16 亿 | 三季实际 85.66 亿 + Q4 34.50 亿；同比 FY2025 +32.1% |
+| FY2026 非 GAAP EPS 中点 | 14.82 | 2.61+3.11+4.10+5.00 |
+
+按 Q3 结构和产品排产推算，Q4 Data Center 约 27.8亿—28.5亿美元、占 81%—83%，Edge IoT 约 6.0亿—6.7亿美元、占 17%—19%；公司没有给出该拆分指引。
+
+### 3.2 最新收入占比、增长与公司侧重点
+
+| 业务 | 最新季度收入/占比 | 同比 | FY2026 Q4 中点推算 | 公司侧重点 |
+|---|---:|---:|---:|---|
+| Data Center | 25.00 亿 / 80.3% | +55% | 27.8亿—28.5亿 | 第一优先：nearline、HAMR、hyperscale BTO |
+| Edge IoT | 6.12 亿 / 19.7% | +12% | 6.0亿—6.7亿 | 供给优先级低于高容量产品；维持渠道和现金流 |
+| 狭义 AI（包含于 Data Center） | 8.7亿—12.4亿 / 28%—40% | 研究估算约 +60%—100% | 10亿—15亿 | 重点不是“AI 标签”，而是 AI 数据量、RAG 和持久 context 对 EB 的拉动 |
+
+最突出的业务是高容量 nearline HDD；公司最侧重的是**Mozaic/HAMR 面密度提升 + BTO 配置/价格锁定 + 不扩单位产能**。这三个条件共同决定收入增速和毛利，而不是单纯销量。
+
+### 3.3 重点产品、型号、规模、增速与利润率
+
+产品收入和产品毛利率均非公司分部披露。下表用 Q3 Data Center 25.00 亿美元、Q4 FY2025 最后一次单列的 Systems/SSD/Other 1.63 亿美元、出货 EB、HAMR 量产进度和公开 SKU 做交叉估算；产品存在包含关系，**不可把所有行相加**。
+
+| 产品/平台 | 型号与真实状态 | FY2026 Q3 收入贡献：研究估算 | 销售增速/规模验证 | 当前毛利率：研究估算 | AI 相关性 |
+|---|---|---:|---|---:|---|
+| Nearline HDD 总体 | Exos X/Xz；24—32TB 公开渠道，hyperscale 定制更高；CMR/SMR/HAMR 混合 | 22.8亿—23.4亿/季；年化 91亿—94亿 | nearline 175 EB、+47%；Data Center +55% | 48%—56% | AI 数据持久层核心，但同时服务普通云 |
+| Mozaic 3+/HAMR | Exos Mozaic 30—36TB；公开支持含 ST36000NM001M 36TB、ST32000NM001F 32TB、ST30000NM011F 30TB | 6.0亿—8.5亿/季 | 2025-09 季度已超 100 万只；截至 Q3 累计数百万只；五大云客户此前已认证 | 46%—54% | 当前 HAMR 收入主体 |
+| **Mozaic 4+** | 4TB+/盘片、最高 44TB；两家头部 hyperscaler 已认证且量产；40—44TB 多为定制，不能把 44TB 当成全渠道 SKU | Q3 因 3 月末才开始收入出货，估计 <0.5 亿；Q4 快速放量 | 同样盘片/磁头数量下容量较第一代 HAMR 高 30%+；[官方发布](https://investors.seagate.com/news/news-details/2026/Seagate-Delivers-Industrys-Highest-Capacity-Hard-Drives-with-Next-Generation-Mozaic-4/default.aspx) | ramp 初期 42%—50%，成熟可 52%—60% | 未来 12 个月最重要产品 |
+| 高容量 PMR/SMR | 24TB CMR、28—32TB SMR/CMR，含 ST25000NM000E 等 | 14亿—17亿/季 | 仍是绝大多数成熟客户基础；收入正增长但 EB 份额被 HAMR 替代 | 48%—56% | AI/云当前部署不可缺，技术溢价弱于 HAMR |
+| Exos/CORVAULT 系统 | CORVAULT 4U106、5U84；Exos X/E 5U84；JBOD、控制器、ADAPT/ADR | 1.6亿—2.2亿/季，含企业 SSD 和其他 | 最后单列季度 1.63 亿、同比 +2%；现阶段估计 0%—15% 增长 | 硬件 25%—40%；软件/服务 mix 高时更高 | 把盘卖成系统，提高每客户内容量；规模仍小 |
+| Lyve Cloud | S3 对象存储；标准 7.99美元/TB/月、低频 4.99美元/TB/月，无 egress/API 费 | 独立收入不披露；合理上限 <1.0 亿/季，包含于系统/其他 | 研究估计 +15%—35%，基数小 | 55%—70% | AI 数据湖与归档的小而高毛利期权 |
+| NVIDIA/Supermicro 混合 AI 存储 | DGX Spark、Supermicro NVMe JBOF、Seagate HDD JBOD、BlueField-3/4、NVIDIA Dynamo | 当前近零或包含于系统试用；无已披露订单金额 | 2026-03 GTC 展示，官方称 commercially available、production-ready；尚无命名客户量产 | 初期系统毛利 25%—40% | 有潜力的小业务，连接 KV cache 与 HDD 持久层 |
+| Mozaic 5 | 约 50TB，目标 2027 年末送样认证；更长期走向 10TB/盘片、100TB/盘 | 当前 0 | 未来一年仍以工程样品/认证为主 | 不适用 | 长期技术期权，不应计入 FY2027 主收入 |
+| 五盘片约 20TB Mozaic 4 衍生品 | 面向 edge/企业的低盘片数高容量盘 | 当前可忽略；管理层因高端需求优先而推迟 | 小 BOM、低功耗潜力，但被 nearline 资源挤出 | 成熟后或高于传统 edge | 不要漏掉，但未来一年优先级低 |
+
+[Exos 公开产品页](https://www.seagate.com/gb/en/products/enterprise-drives/exos/)目前主要展示 24—32TB；[Mozaic 4+ 公告](https://investors.seagate.com/news/news-details/2026/Seagate-Delivers-Industrys-Highest-Capacity-Hard-Drives-with-Next-Generation-Mozaic-4/default.aspx)的 44TB 是 hyperscale 批量供货平台上限。两者并不矛盾，而是渠道 SKU 与定制云产品的差别。
+
+### 3.4 明确跳过的低增长/非 AI 业务
+
+以下产品并非无收入，而是对未来一年 AI 主线、公司增量或利润率弹性较弱，因此只保留风险监测，不逐一建模：
+
+- PC 3.5 英寸 desktop HDD、2.5 英寸 notebook HDD；
+- DVR/set-top box 硬盘；
+- BarraCuda 消费 HDD/SSD、FireCuda 游戏 SSD；
+- Seagate Ultra Touch、One Touch、Expansion、Basics、LaCie 外置盘；
+- Xbox/PlayStation 扩展存储；
+- 传统 10K RPM mission-critical HDD（最高约 2.4TB）；
+- 低容量 NAS、普通监控和渠道库存业务；
+- 已出售给 Broadcom 的 SoC 业务——它已不是 Seagate 收入，只是采购链的一部分。
+
+仍需保留的 edge 小产品是低盘片数 Mozaic 衍生盘，因为它可能把 HAMR 成本优势下沉；但公司当前明确优先满足 nearline，未来一年收入不是主驱动。
+
+## 4. 当前高增长/关键产品：收入、AI 重要性、紧迫性、供需与议价
+
+评分均为 1—5，5 最高。“垄断力”衡量技术/认证/寡头壁垒，不表示法律意义的垄断。当前贡献使用 Q3 FY2026 年化，嵌套产品不可相加。
+
+| 关键业务/产品 | 当前收入贡献 | 当前收入增速 | AI 栈重要性 | 时间紧迫性 | 供需紧张 | 垄断/壁垒 | 溢价能力 | 核心依据 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| Nearline HDD 总体 | 91亿—94亿/年 | EB +47%；相关 Data Center 收入 +55% | 4.5 | 5.0 | 5.0 | 4.0 | 4.5 | 产能几乎分配至 2027 年末；三家寡头、认证长 |
+| HAMR/Mozaic 总体 | 26亿—37亿/年 | 研究估算 +80%—150% | 5.0 | 5.0 | 5.0 | 4.5 | 4.5 | Seagate 唯一已在规模部署 HAMR；但 WDC HAMR 2027 追赶 |
+| Mozaic 4+ | Q3 年化不足 2 亿；Q4 起陡增 | 新产品，不适用 | 5.0 | 5.0 | 5.0 | 4.5 | 5.0 | 两家 hyperscaler 认证量产；最高 44TB、最小 BOM 增量 |
+| 高容量 PMR/SMR | 56亿—68亿/年 | 约 +15%—30% | 4.0 | 4.0 | 4.5 | 3.5 | 4.0 | 认证成熟、供给受限；WDC/Toshiba 替代更多 |
+| Exos/CORVAULT/JBOD | 6.4亿—8.8亿/年 | 约 0%—15% | 4.0 | 3.0 | 3.0 | 2.5 | 2.5 | 可拉高单客内容，但面对 Dell/HPE/NetApp/白盒 |
+| Lyve Cloud | <4 亿/年 | 研究估算 +15%—35% | 3.5 | 2.5 | 2.0 | 1.5 | 2.0 | S3 兼容、无 egress 费有差异，但云对象存储竞争激烈 |
+| GTC 混合 KV-cache/HDD 方案 | 当前接近 0 | 从零起步 | 4.5 | 3.5 | 2.5 | 2.5 | 2.5 | 技术验证重要；尚无命名客户、订单或标准化 SKU |
+| Mozaic 5/50TB | 0 | 不适用 | 5.0 | 2.0 | 2.0 | 4.0 | 4.0 | 认证最早 2027 年末，未来一年不是收入项 |
+
+**结论：** 当前真正供不应求的是 nearline 产能与通过认证的高容量盘，而不是 Seagate 所有产品。Mozaic 4+ 的溢价来自客户少装盘、机箱、机架、网络口和电力，而不只是单盘 TB；系统和 Lyve 是有战略价值的小业务，但没有证据支持把它们估成短期数十亿美元主线。
+
+## 5. 一年后高增长/关键产品：三情景收入与竞争力
+
+### 5.1 公司总量情景
+
+基准锚是 FY2026 指引中点 120.16 亿美元和 Q3 年化收入 124.48 亿美元。以下“未来一年”近似 FY2027/截至 2027 年中未来四季度；不是目标价模型。
+
+| 情景 | 公司收入 | 同比 FY2026E | Data Center | Edge IoT | 非 GAAP 毛利率 | 成立条件 |
+|---|---:|---:|---:|---:|---:|---|
+| 基准 | 155亿—168亿 | +29%—40% | 128亿—140亿 | 25亿—28亿 | 48%—52% | nearline EB +20%—28%；Mozaic 4 良率按计划；价格/mix 温和上升；延期/取消 0%—5% |
+| 乐观 | 172亿—188亿 | +43%—56% | 147亿—162亿 | 25亿—29亿 | 52%—56% | hyperscaler AI 数据量加速；HAMR 更快渗透；价格 +5%—10%；系统收入开始放量 |
+| 极度乐观 | 195亿—215亿 | +62%—79% | 168亿—188亿 | 28亿—35亿 | 55%—60% | EB +45%—60%、单位产能 +5%—10%、良率跃升、项目无明显推迟；低概率且最易受估值反噬 |
+
+### 5.2 产品收入情景
+
+表内 Nearline、HAMR、Mozaic 4、PMR 是层层包含；Lyve 和混合方案也包含于系统/服务，不能横向求和。五项评分顺序为 **AI 重要性/紧迫性/供需紧张/垄断壁垒/溢价能力**。
+
+| 产品 | 情景 | 一年后收入贡献 | 对当前年化增速 | 五项评分 | 推断 |
+|---|---|---:|---:|---|---|
+| Nearline HDD 总体 | 基准 | 118亿—128亿 | +28%—38% | 4.5/4.5/4.5/4.0/4.5 | 面密度提供绝大多数 EB 增量 |
+|  | 乐观 | 136亿—150亿 | +46%—62% | 4.7/5.0/5.0/4.1/4.8 | AI 数据湖、对象层和普通云同时扩容 |
+|  | 极度乐观 | 163亿—183亿 | +75%—98% | 5.0/5.0/5.0/4.3/5.0 | 需要突破公司“不扩单位”的常态约束 |
+| HAMR/Mozaic 总体 | 基准 | 72亿—88亿 | 约 +100%—190% | 5.0/5.0/4.5/4.5/4.7 | HAMR 占 nearline EB 60%—70% |
+|  | 乐观 | 100亿—120亿 | 约 +180%—300% | 5.0/5.0/5.0/4.5/4.8 | 占比 70%—78%，更多客户提前切换 |
+|  | 极度乐观 | 130亿—155亿 | 约 +260%—400% | 5.0/5.0/5.0/4.6/5.0 | 占比 80%—85%，制造良率必须非常好 |
+| Mozaic 4+（HAMR 子集） | 基准 | 50亿—65亿 | 新品，倍数增长 | 5.0/5.0/4.8/4.6/4.9 | 4—6 家主要 CSP 量产；40—44TB 成主力 |
+|  | 乐观 | 75亿—95亿 | 新品，倍数增长 | 5.0/5.0/5.0/4.7/5.0 | 6—8 家主要 CSP，提前替换 Mozaic 3 |
+|  | 极度乐观 | 105亿—130亿 | 新品，倍数增长 | 5.0/5.0/5.0/4.8/5.0 | 几乎所有头部客户快速切换，低概率 |
+| 高容量 PMR/SMR | 基准 | 35亿—48亿 | -37% 至 -14% | 4.0/3.5/4.0/3.5/3.8 | 绝对出货仍大，份额被 HAMR 替代 |
+|  | 乐观 | 30亿—40亿 | -46% 至 -29% | 3.8/3.0/3.8/3.4/3.5 | HAMR 切换更快 |
+|  | 极度乐观 | 25亿—35亿 | -55% 至 -38% | 3.5/2.5/3.5/3.3/3.3 | 产品结构变化，不代表需求崩塌 |
+| Exos/CORVAULT/JBOD | 基准 | 9亿—12亿 | +20%—50% | 4.0/3.0/3.0/2.5/2.5 | 盘密度提高带动系统升级 |
+|  | 乐观 | 13亿—18亿 | +60%—130% | 4.3/3.5/3.5/2.7/2.8 | GTC 混合架构获若干客户 |
+|  | 极度乐观 | 20亿—30亿 | +150%—300% | 4.5/4.0/4.0/3.0/3.2 | 需要从部件商跃迁为方案商 |
+| Lyve Cloud（系统/服务子集） | 基准 | 2.5亿—4.5亿 | 约 +20%—50% | 3.5/2.5/2.5/1.5/2.0 | 维持差异化定价 |
+|  | 乐观 | 4亿—6.5亿 | +50%—100% | 3.8/3.0/3.0/1.7/2.2 | AI 数据湖和跨云迁移增长 |
+|  | 极度乐观 | 7亿—10亿 | +150%+ | 4.0/3.5/3.5/2.0/2.5 | 需大客户和更多区域，当前证据不足 |
+| GTC 混合 AI 方案（系统子集） | 基准 | 0.5亿—1.5亿 | 从零起步 | 4.5/3.5/2.5/2.5/2.5 | 2—5 个试点/小规模部署 |
+|  | 乐观 | 2亿—5亿 | 从零起步 | 4.7/4.0/3.0/2.7/2.8 | 5—15 个部署、形成参考架构 |
+|  | 极度乐观 | 6亿—10亿 | 从零起步 | 5.0/4.5/4.0/3.0/3.2 | 20+ 部署或一个 hyperscale 设计赢单 |
+| Mozaic 5/50TB | 三情景 | 0—0.5 亿 | 不适用 | 5.0/2.0/2.0/4.0/4.0 | 未来一年以样品/认证为主，不能提前资本化 |
+
+极度乐观情景的主要用途是显示上限和隐含条件，不应当作为基本估值锚。当前股价对应的远期收入倍数已接近该情景才容易解释的水平。
+
+## 6. BOM、每 MW/机架/GPU/端口内容量、价格传导、当前产能与认证
+
+### 6.1 高容量 HAMR HDD 的 BOM
+
+Seagate 未披露单盘标准成本。下表是基于 HDD 工艺、项目行业研究和 10—12 盘片 nearline 结构建立的**制造成本占比模型**；范围反映产品容量、良率、CMR/SMR 与垂直整合差异。HAMR 的关键不是简单增加一颗激光器，而是磁头、近场换能器（NFT）、介质材料、写入控制和量产良率同时升级。
+
+| BOM/制造环节 | HAMR 成本中枢 | 合理范围 | 关键内容 | 当前瓶颈与价格传导 |
+|---|---:|---:|---|---|
+| 磁头、HAMR 激光与 NFT | 26% | 25%—32% | 激光、集成光子、写磁头、读磁头、NFT、slider | 最关键；良率下降会同时损失昂贵磁头和整盘产能 |
+| 盘片、玻璃/铝基板与磁性介质 | 21% | 20%—27% | 10—12 盘片、润滑层、薄膜沉积、热稳定介质 | 面密度核心；Intevac 设备收购强化这一环 |
+| 主轴马达与轴承 | 8% | 7%—10% | spindle motor、流体轴承 | 供应商集中，单位盘变化小 |
+| 执行器、悬架、VCM | 9% | 8%—12% | actuator、suspension、voice coil motor | 轨道精度越高，机械公差和测试越严 |
+| 控制器、read channel、preamp、DRAM/NAND、PCB | 10% | 9%—13% | Broadcom 等 SoC、缓存、固件 | 出售 SoC 后更多外购；芯片涨价会传入 HDD 成本 |
+| 机壳、氦气、密封、连接器 | 7% | 6%—9% | 3.5 英寸氦封机壳、SATA/SAS | 盘片更多时密封、振动和散热要求提高 |
+| 组装、burn-in、测试、折旧与良率损失 | 13% | 12%—20% | Thailand/China 等整盘组装、长时测试 | HAMR ramp 初期最大变量；良率提升直接释放美元产能 |
+| 物流、保修、工厂间接费用 | 6% | 6%—9% | 运输、质量准备金、制造间接费用 | 客户认证和现场故障会改变保修成本 |
+| **合计** | **100%** | — | — | — |
+
+项目内[HDD 行业研究](../../行业调研/AI服务器_存储_芯片/行业调研_HDD、对象存储与冷温数据存储_2026-07-10.md)给出的主要生产节点包括：北爱尔兰 Springtown 和 Minnesota 的磁头/研发、无锡零部件与整盘、Johor 基板、新加坡介质、Thailand Korat/Teparuk 的组装和零部件。垂直整合提高技术壁垒，也意味着某一自有工序良率不足时无法迅速外包替代。
+
+### 6.2 价格传导链与每盘/每 EB 经济性
+
+价格传导链为：
+
+**激光/NFT、盘片、磁头、SoC、马达等成本 → Seagate HDD 的美元/TB 和每盘 ASP → JBOD/对象系统的原始容量 → 纠删码后的可用容量 → CSP 内部对象存储成本或 Lyve 的美元/TB/月 → AI 训练、RAG、推理上下文的每 token/每查询成本。**
+
+Q3 FY2026 可复算锚点：
+
+- Data Center 收入 25.00 亿美元 ÷ nearline 175 EB = **14.29 美元/TB**，即每 1 EB 约 1,429 万美元；
+- 这个值混入存储系统、VIA 和非 nearline 收入，因而是“收入密度上限代理”，不是公司披露的 HDD ASP；
+- 按该代理，30TB/40TB/44TB 每盘收入约 **429/572/629 美元**；
+- 1 EB 原始容量需要 30TB 盘 33,333 只、40TB 盘 25,000 只、44TB 盘 22,727 只；
+- 44TB 相对 30TB 仅按盘数减少 31.8%。Seagate 宣称 1EB 部署可减少约 47% 基础设施、少约 100 平方英尺、每年少约 80 万 kWh，47% 还包含机箱、机架、网络和配电，而不只是盘数。[Mozaic 4+ 官方数据](https://investors.seagate.com/news/news-details/2026/Seagate-Delivers-Industrys-Highest-Capacity-Hard-Drives-with-Next-Generation-Mozaic-4/default.aspx)
+
+Mozaic 4+ 的利润弹性由此产生：如果从 30TB 提到 40—44TB 仍使用相近数量的盘片、磁头、马达和机壳，TB 增长 33%—47%，BOM 增幅却远低于容量增幅，新增收入的增量毛利率可以明显高于公司平均值。反过来，若 HAMR 激光/NFT 或介质良率不达标，损失会通过报废和 burn-in 时间迅速放大。
+
+### 6.3 “每 GPU/机架/MW”没有固定 HDD BOM：真实边界与可复算规划量
+
+**事实边界：** NVIDIA GB200/GB300 计算机架并不固定安装 Seagate nearline HDD；HDD 通常位于独立存储机架和共享对象池。因而不存在像 HBM、光模块那样的“每 GPU 必配 X 美元 STX”真实固定 BOM。任何单值都必须先假设模型数据量、checkpoint 保留、RAG corpus、复制/纠删码、热冷分层和利用率。
+
+项目内[AI 产业链口径字典](../../行业调研/产业背景/AI产业链全局图谱与口径字典_T03_2026-07-09.md)给出 GB300 基准：72 GPU/计算机架、约 142kW/机架、每 IT MW 约 7.04 个机架和 507 张 GPU；机架本地高速缓存约 576TB，即每 IT MW 约 4.06PB。这 4.06PB 是本地 SSD/NVMe 类容量，不是 Seagate HDD 收入。
+
+下面把**共享持久 HDD 池**按计算负载归一化。容量是假设的原始容量；40TB 盘数和收入含量由上述 14.29美元/TB 代理计算，属于规划模型而非公司指引。
+
+| 共享持久层情景 | HDD 原始容量/IT MW | 机架等效容量 | 每 GPU 等效容量 | 40TB 盘/IT MW | 40TB 盘/机架等效 | Seagate 收入含量/IT MW | 每机架/每 GPU 收入含量 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 基准 | 10—25 PB | 1.42—3.55 PB | 19.7—49.3 TB | 250—625 | 35.5—88.8 | 14.3万—35.7万美元 | 2.03万—5.08万美元 / 282—705美元 |
+| 乐观 | 25—50 PB | 3.55—7.10 PB | 49.3—98.6 TB | 625—1,250 | 88.8—177.6 | 35.7万—71.5万美元 | 5.08万—10.15万美元 / 705—1,410美元 |
+| 极度乐观 | 50—100 PB | 7.10—14.20 PB | 98.6—197.2 TB | 1,250—2,500 | 177.6—355.1 | 71.5万—142.9万美元 | 10.15万—20.30万美元 / 1,410—2,820美元 |
+
+“机架等效”只把共享存储池分摊到计算机架，**不表示把 36—355 只 HDD 装进 GPU 机架**。2026/2027 AI 数据中心存储资本开支的项目行业模型为：2026 年 SSD/HDD/系统 240亿—270亿美元、2027 年 320亿—370亿美元；其中 HDD/对象层约占 AI 存储价值 30%—45%，参见[《AI 数据中心建设规模与订单映射》](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)。
+
+### 6.4 每 optical port 的真实内容量
+
+- **光学器件直接 STX 内容量：0 美元/port。** Seagate 不销售光模块、光纤或交换 ASIC。
+- 如果按 Exos X 5U84 存储机箱归一化，该系统有 84 个盘位、双控制器每个最多 4 个 SAS/25G iSCSI/32G FC 主机端口，即最多 8 个主机端口。[Exos X 5U84 产品页](https://www.seagate.com/product-tours/data-storage-systems/exos-x-5u84/)
+- 满配 40—44TB 时理论原始容量 3.36—3.696PB，平均为 **10.5 只盘/端口、420—462TB/端口**，对应 HDD 收入密度约 6,000—6,600 美元/端口。
+- 该数字是机箱归一化，不是 AI 网络标准 BOM：真实系统可能少开端口、使用端口聚合、跨多台 JBOF/JBOD，或由 DPU/交换机共享。CORVAULT 4U106 的 mini-SAS 端口也不是 optical port。
+
+### 6.5 最新技术报告提供的“真实测试配置”
+
+2026-06 Seagate 与 SK hynix 的[KV-cache offloading 白皮书](https://www.seagate.com/content/dam/seagate/assets/resources/enabling-inference-at-massive-scale-with-hybrid-storage-for-kv-cache-offloading/files/kv-caching-white-paper.pdf)给出一套可审计实验，而不是概念图：
+
+| 层级 | 实验硬件 | 容量 | 对应关系 |
+|---|---|---:|---|
+| GPU server | 1× NVIDIA H100 80GB PCIe、2TB DDR5 | — | 单 GPU 实验服务器 |
+| SSD cache server | 4× SK hynix PS1010 3.84TB | 15.36TB | NVMe-oF/SPDK/LVM 热缓存 |
+| HDD backing server | 12× Seagate Exos 30TB | 360TB | 长上下文/KV cache 持久层 |
+
+因此该测试的**实测硬件含量是 360TB HDD/H100 实验服务器**，按 14.29美元/TB 代理约 5,144 美元 HDD。它不能线性乘以 72 张 GPU 得出生产机架 BOM，因为生产环境会多 GPU、多租户共享存储并使用缓存命中。官方博客称混合架构相对重新生成 context 可把 time-to-first-token 改善最高约 95%；这是特定 benchmark，不是普遍 SLA。[GTC 联合方案说明](https://www.seagate.com/blog/scaling-the-context-wall/)
+
+另需避免代码混淆：NVIDIA 把某套 scale-up storage 架构也称为“STX”，那是 NVIDIA 架构缩写，不等于 NASDAQ: STX，也不代表 Seagate 自动成为其全部存储供应商。本文只计入 Seagate、NVIDIA、Supermicro 明确公布的独立联合演示。
+
+### 6.6 当前产能、美元能力、采用度和认证
+
+| 产品/能力 | 当前物理/美元能力 | 当前供应链采用 | 认证阶段 | 判断 |
+|---|---:|---|---|---|
+| Nearline 总体 | Q3 175 EB/季，年化约 700 EB；Data Center 年化 100 亿，nearline 硬件约 91亿—94亿 | 未来四季绝大多数产能已分配；覆盖几乎所有主要云客户 | 各型号按客户逐代认证 | 接近满负荷；EB 增量主要来自密度而非盘数 |
+| HAMR/Mozaic 总体 | 研究估计 45—65 EB/季、年化收入能力 26亿—37亿 | 已累计数百万只；Q3 时约 75% 的头部全球云客户已有 Mozaic 收入出货 | 多客户量产；其余两家目标在 FY2026 Q4 完成，尚未公开确认 | 已越过实验阶段，但 ramp mix 不透明 |
+| Mozaic 4+ 40—44TB | Q3 末才开始，当前季度能力无法从披露精确拆分 | 两家头部 hyperscaler 批量出货，其他认证进行中 | **2 家已认证并量产** | 未来四季最重要的良率/认证变量 |
+| 高容量 PMR/SMR | 估计 110—130 EB/季；年化 56亿—68亿 | 广泛采用，成熟认证 | 大量客户量产 | 短期稳定器，长期被 HAMR 替代 |
+| CORVAULT 4U106 | 106 盘位；公开系统 2.1—2.5PB，若未来用 40—44TB 理论原始 4.24—4.664PB | 企业/数据中心已商用，但收入规模小 | UL/CSA/CE/IEC 62368-1 等系统安全认证；驱动器另做兼容认证 | 容量计算不等于当前可订购配置 |
+| Exos X 5U84 | 84 盘位，可串联 4 箱、336 盘 | 商用 | SAS/iSCSI/FC、ADAPT 等成熟 | 系统差异化中等 |
+| Lyve Cloud | 公司不披露物理 EB 和收入能力 | 多区域 S3 商用 | 安全与合规按区域/服务执行 | 小规模服务期权，不能用 HDD 产能反推收入 |
+| GTC 混合 AI 方案 | 当前演示/早期商用，收入接近零 | NVIDIA+Supermicro 参考架构；无命名量产客户 | 官方称 production-ready；**尚无公开 hyperscaler 认证或订单** | 技术采纳证据强于商业采纳证据 |
+| Mozaic 5/50TB | 工程阶段，商业能力 0 | 未采用 | 目标 2027 年末送样/认证 | 不计未来一年主体收入 |
+
+## 7. 一年后产能、采用度与认证：三情景
+
+Seagate 明确不以扩大 spindle/unit 数为基准策略；因此基准和乐观情景主要来自 TB/盘、HAMR 良率、SMR mix 和停机时间改善。极度乐观情景额外假设单位能力增加 5%—10%。
+
+| 指标 | 基准（一年后） | 乐观（一年后） | 极度乐观（一年后） |
+|---|---|---|---|
+| Nearline 物理能力 | 850—920 EB/年 | 950—1,050 EB/年 | 1,100—1,200 EB/年 |
+| Nearline 美元能力 | 120亿—135亿 | 140亿—158亿 | 170亿—190亿 |
+| 相对当前 700 EB 年化 | +21%—31% | +36%—50% | +57%—71% |
+| HAMR 占 nearline EB | 60%—70% | 70%—78% | 80%—85% |
+| HAMR 物理能力 | 510—644 EB/年 | 665—819 EB/年 | 880—1,020 EB/年 |
+| Mozaic 4+ 物理能力 | 400—520 EB/年 | 550—700 EB/年 | 750—900 EB/年 |
+| Mozaic 4+ 客户采用 | 4—6 家主要 CSP 量产 | 6—8 家，覆盖绝大多数头部 CSP | 几乎全部头部 CSP，并进入更多 enterprise/VIA |
+| Mozaic 4+ 认证 | 现有两家持续放量，其余 2—4 家通过 | 全球主要客户提前通过 | 认证周期明显缩短；低概率 |
+| Mozaic 3+ | 仍占 HAMR 30%—40%，逐步退出 | 份额快速降到 20%—30% | 仅保留特定配置 |
+| 高容量 PMR/SMR | 约 250—340 EB/年 | 210—300 EB/年 | 165—240 EB/年 |
+| 系统/JBOD 美元能力 | 9亿—12亿 | 13亿—18亿 | 20亿—30亿 |
+| GTC 混合 AI 方案 | 2—5 个试点/小规模部署 | 5—15 个部署、形成参考客户 | 20+ 部署或一个 hyperscale 设计赢单 |
+| Mozaic 5/50TB 认证 | 工程盘，最早临近送样 | 少数客户提前验证 | 1—2 家进入早期资格测试；仍不应有大收入 |
+
+美元能力使用 14—16美元/TB 的容量、价格和系统 mix 区间，不是单纯用今日收入密度外推。供应链采纳的“家数”是研究估计，因为公司以“leading global cloud customers”表述、没有公布完整客户名单和分母。
+
+对认证最重要的观察不是新闻稿，而是四个连续节点：**工程样品 → 客户 qualification → revenue shipment → 多季度 volume production**。Mozaic 4+ 已处于最后一阶段的客户只有两家；“剩余客户目标在某季完成”不能提前写成已认证。
+
+## 8. 真实订单、供给和未来一年业务增速
+
+### 8.1 过去半年公司、会议、论坛与技术证据
+
+| 日期 | 证据 | 订单/采用含义 | 局限 |
+|---|---|---|---|
+| 2026-01-27 | [FY2026 Q2 财报](https://investors.seagate.com/news/news-details/2026/Seagate-Technology-Reports-Fiscal-Second-Quarter-2026-Financial-Results/) | CY2026 nearline 产能基本分配；CY2027 数量已有协议，讨论延伸到 CY2028 | 未公布客户名和订单金额 |
+| 2026-03-03 | [Mozaic 4+ 发布](https://investors.seagate.com/news/news-details/2026/Seagate-Delivers-Industrys-Highest-Capacity-Hard-Drives-with-Next-Generation-Mozaic-4/default.aspx) | 两家头部 hyperscaler 已认证并批量出货，最高 44TB | 两家未命名；没有合同金额 |
+| 2026-03-16 | [NVIDIA GTC 联合方案](https://www.seagate.com/blog/scaling-the-context-wall/) | Seagate HDD JBOD 被放进 NVIDIA DPU/Dynamo + Supermicro NVMe 的 production-ready 多层架构 | 参考架构/演示不等于采购订单 |
+| 2026-03-31 | [TrendForce 2Q26 内存调查](https://www.trendforce.com/presscenter/news/20260331-12995.html) | NAND 合约价预计环比 +70%—75%，enterprise SSD 2026 明显短缺、有效扩产可能到 2027H2/2028；短期有利于 HDD 的美元/TB 相对优势 | SSD 紧缺也会延误整套 AI 系统，不全是 HDD 利好 |
+| 2026-04-28 | [FY2026 Q3 财报/电话会](https://investors.seagate.com/events/event-details/2026/Seagate-Technology-Fiscal-Third-Quarter-2026-Conference-Call/default.aspx) | nearline 几乎分配至 2027 年末；FY2027 BTO 配置、量、价基本完成；约 75% 头部云客户已有 Mozaic 收入 | 不是 GAAP backlog；PO 可延期 |
+| 2026 OCP EMEA | [“Redefining Storage for the AI Era”](https://www.opencompute.org/events/past-events/2026-ocp-emea-summit) | Seagate 以 VP 级别向 OCP 社区推广 AI 存储；说明技术进入行业采购讨论 | 会议演讲不是订单 |
+| 2026-06 | [Seagate/SK hynix KV-cache 白皮书](https://www.seagate.com/content/dam/seagate/assets/resources/enabling-inference-at-massive-scale-with-hybrid-storage-for-kv-cache-offloading/files/kv-caching-white-paper.pdf) | 30TB Exos 在 H100+NVMe-oF 实验中承担 360TB backing tier，证明 HDD 可进入 inference context 数据路径 | 单 GPU 实验，不是生产规模认证 |
+| 2026-06-11 | [TrendForce 企业 SSD 调查](https://www.trendforce.com/presscenter/news/20260611-13092.html) | 1Q26 企业 SSD 厂商收入 184.6 亿美元、环比 +86.1%，合同价约 +80%；确认 AI 存储总需求和供应紧张 | SSD 同时是 Seagate 的替代品与互补 cache |
+| 2026-07-09 | [Backblaze Q1 2026 Drive Stats](https://www.backblaze.com/cloud-storage/resources/hard-drive-test-data) | 341,263 只盘、季度 AFR 1.24%，说明大规模 HDD fleet 仍可管理 | 多为旧代/较低容量盘，不能证明 40—44TB HAMR 的长期可靠性 |
+
+### 8.2 能否推断 backlog 金额
+
+不能把 BTO 产能覆盖直接列为公司 backlog，但可以建立**被订单/协议覆盖的收入包络**：
+
+1. Q3 Data Center 年化收入为 100 亿美元；
+2. 管理层说未来四季“绝大多数”nearline 容量已分配，并且 FY2027 的产品配置、数量和价格已经完成；
+3. 按 90%—95% 覆盖、容量/价格提升和系统收入计，未来十二个月有证据支持的 Data Center 收入覆盖包络约 **100亿—125亿美元**；
+4. 这不是未履约履约义务，不应加到收入预测上，而是对 128亿—140亿美元基准 Data Center 预测提供 71%—98% 的可见性；
+5. 剩余部分依赖后续良率、临时订单、价格调整和 Edge/系统业务。
+
+公司没有公布可核验的客户项目名、单笔订单金额或取消率。最具体的“客户项目”仅是两家未命名 hyperscaler 的 Mozaic 4+ 量产，以及 NVIDIA/Supermicro 技术方案；后者没有订单金额。任何声称某家特定云客户给了多少亿美元订单的说法，目前都超出公开证据。
+
+### 8.3 供给约束与扩产能力
+
+| 约束 | 当前状态 | 可扩方式 | 对一年增速的约束 |
+|---|---|---|---|
+| 盘片面密度/薄膜介质 | HAMR ramp 中 | Mozaic 4+ 4TB+/盘片、Intevac 设备/工艺、良率学习 | 最主要正向杠杆，也可能成为报废瓶颈 |
+| 磁头、激光/NFT | 单盘 wafer/磁头工艺内容上升 | 提高 wafer 良率、产线节拍，不能快速外购替代 | 决定 HAMR 上限 |
+| 整盘单位数 | 公司基准不扩 spindle units | 减少停机、mix 优化；极乐观情景才假设 +5%—10% | 限制极端 EB 增长 |
+| 盘片数/盘与机械公差 | 10—12 盘片平台 | 盘片更多或每盘片 TB 更高 | 盘片数提高会增加材料和测试复杂度 |
+| 客户认证 | 两家 Mozaic 4+ 已量产，其他进行中 | 提前送样、复用平台/固件、减少容量节点 | 认证慢会把需求顺延而非立即丢失 |
+| 关键外购 SoC/电机/悬架 | SoC 已更多外购 | BTO 锁量、供应协议、多季度备料 | 组件涨价或缺料可抑制出货 |
+| 数据中心电力/网络/SSD | 外部于 Seagate | 客户项目协调 | GPU/电力/SSD 延迟会推迟 HDD 需求 |
+
+### 8.4 基于订单覆盖、供给和取消的未来一年增速
+
+| 情景 | 订单/协议覆盖 | nearline EB 增长 | 价格/mix | 延期/取消假设 | Data Center 增速 | 公司总收入增速 | 可信度 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 基准 | 未来四季 90%—95% 容量有分配/协议 | +20%—28% | +4%—8% | 0%—5% | +28%—40% | +29%—40% | **最高**；与当前卖方共识接近 |
+| 乐观 | >95%，新认证客户即时补满 | +35%—50% | +6%—12% | 0%—3% | +45%—62% | +43%—56% | 需要 HAMR 良率和认证同步超预期 |
+| 极度乐观 | 近 100%，供给始终被抢购 | +57%—71% | +8%—15% | 0%—2% | +68%—88% | +62%—79% | **低**；要求单位产能扩张且无项目延误 |
+
+收入增速不等于 EB 增速，公式为：
+
+**收入增长 ≈ EB 增长 + 每 TB 价格/产品 mix 增长 + 系统/服务增长 − 取消与延期 − 组合重叠。**
+
+基准情景最重要的非线性是：Mozaic 4+ 用接近的 BOM 提供更多 TB，既增加收入能力又扩毛利；极度乐观情景最脆弱的假设则是单位产能和客户数据中心建设都不受限制。
+
+## 9. 竞争格局、技术主流性、替代风险与客户替换成本
+
+### 9.1 HDD 与存储系统竞争
+
+项目行业研究估算 2025 年 nearline EB 份额约为 WDC 47%、Seagate 42%、Toshiba 11%，CR3=100%、HHI 约 4,094，属于高度集中寡头。份额因季度、客户和收入/EB 口径会变化，但“三家供应、没有第四家快速进入”是稳定事实。
+
+| 竞争者/替代者 | 2026—2027 技术和产品 | 相对 Seagate 优势 | 相对 Seagate 弱点/Seagate 防线 |
+|---|---|---|---|
+| Western Digital（WDC） | 40TB UltraSMR ePMR 正在两家 hyperscaler 认证，计划 2026H2 量产；HAMR 在两家认证、目标 2027 ramp；高带宽双执行器、低功耗盘；路线至 100TB+ | EB 份额领先；ePMR 可复用成熟平台，客户迁移平滑；双技术路线降低自身风险 | Seagate HAMR 已规模量产、Mozaic 4+ 先发约 12—18 个月；但 WDC 40TB 会压缩 Seagate 44TB 独占窗口。[WDC Innovation Day](https://investor.wdc.com/news-releases/news-release-details/western-digital-accelerates-storage-innovation-ai-era) |
+| Toshiba | 28TB MA11 SMR；12 盘片 + MAMR，目标 2027 年 40TB | 盘片数创新、部分客户作为第三来源 | 规模/份额较小、HAMR 商业进度落后；但可限制双寡头定价。[Toshiba 2026 技术报告](https://www.global.toshiba/content/dam/toshiba/jp/technology/corporate/review/2026/02/4-2.pdf) |
+| Samsung/SK hynix-Solidigm/Micron/Kioxia/SanDisk 企业 SSD | 高性能 TLC/QLC，122TB/245TB 级大容量盘；NVMe、低延迟、高 IOPS | 每机架容量/功耗和性能更好，直接进入 GPU 数据路径 | 美元/TB 通常显著高于 HDD；2026 NAND/企业 SSD 严重紧缺。最佳架构更可能是 SSD cache + HDD backing，而非全替代 |
+| Tape/LTO | 极低美元/TB、长保存 | 最冷数据成本和断电保存 | 恢复时延高，不适合在线 RAG/context；补充而非 nearline 完全替代 |
+| Dell/HPE/NetApp/IBM/Pure/VAST/WEKA/DDN/Cloudian/MinIO/Ceph | 存储系统、对象软件、全闪或混合架构 | 客户关系、软件、数据服务和性能调优更强 | Seagate 可作为其底层盘供应商；自身 CORVAULT/Lyve 规模与软件壁垒较弱 |
+
+### 9.2 HAMR 是未来主流吗
+
+**结论：在 40TB 以上 nearline 的中长期路线中，HAMR 很可能成为主流，但 2026—2027 不是唯一主流。**
+
+- Seagate 证明 HAMR 可规模制造，Mozaic 4+ 已有两家量产客户，这是最强商业验证；
+- WDC 用 ePMR+UltraSMR 仍能做到 40TB，并计划 2026H2 量产，说明成熟能量辅助/编码技术可延长；
+- Toshiba 用 MAMR+12 盘片目标 40TB，说明增加盘片数也能换取一代容量；
+- 因此 HAMR 的真正不可替代性更可能在 **50TB—100TB** 路线上显现，而不是“任何 40TB 盘都只能用 HAMR”；
+- SMR 是逻辑记录方式，可与 PMR/HAMR 组合；host-managed SMR 的采用还取决于云客户软件栈；
+- 双执行器/高带宽 HDD 改善 IOPS/TB，但增加 BOM 和固件复杂度；
+- QLC SSD 若美元/TB 快速下降会蚕食温数据层，不过 2026 SSD 供给紧、价格大涨，未来一年不是最强替代窗口。
+
+### 9.3 客户替换成本
+
+| 客户/产品 | 物理替换难度 | 认证/软件/数据迁移成本 | 综合替换成本 | 说明 |
+|---|---:|---:|---:|---|
+| Hyperscaler Mozaic/HAMR | 中 | 极高 | **高—极高** | 需数月到一年以上可靠性、振动、功耗、固件、SMR host stack 和 fleet qualification；EB 数据重建昂贵 |
+| 成熟 PMR nearline | 低—中 | 高 | **中—高** | SATA/SAS 标准化，但客户仍需型号和固件认证；三家可多源 |
+| CORVAULT/Exos 系统 | 中 | 高 | **高** | ADAPT/ADR、控制器、管理工具和数据布局增加粘性 |
+| Lyve Cloud | 低 | 中—高 | **中** | S3 API 降低接口锁定，但 PB/EB 数据迁移时间和 egress 组织成本高 |
+| 消费/PC/外置盘 | 低 | 低 | **低** | 品牌、价格和渠道主导 |
+
+客户通常会维持第二来源来控制供应风险，所以高替换成本带来议价，却不等于客户只能买 Seagate。BTO 将配置和价格前置，也可能在技术节点错过时把份额锁给竞争对手。
+
+### 9.4 主要风险、替代方案和监测指标
+
+| 风险 | 概率 | 影响 | 替代/缓释 | 最早监测信号 |
+|---|---|---|---|---|
+| Mozaic 4+ 激光/NFT、介质或整盘良率不达标 | 中 | 极高 | PMR/Mozaic 3 延寿、客户延后切换 | HAMR EB 占比、Capex/在制品、Q4 毛利未达 50% |
+| WDC 40TB ePMR 2026H2 顺利量产 | 高 | 高 | Seagate 44TB、4TB+/盘片和更低 TCO | WDC 两家认证转 volume、价格差 |
+| WDC HAMR 2027 追平 | 中—高 | 高 | Mozaic 5/50TB 加速、BTO 提前锁定 | WDC HAMR qualification 数、Seagate FY2028 合同 |
+| QLC SSD 美元/TB 大幅下降 | 中 | 高 | HDD+SSD 分层、提高容量/功耗优势 | eSSD 合约价、245TB QLC 成本、CSP 全闪温层采用 |
+| AI 数据中心电力/GPU/网络项目延期 | 中 | 高 | 普通云、备份、企业对象存储需求 | CSP Capex、MW 上电、Seagate 客户 push-out |
+| 客户订单延期/取消 | 中 | 高 | 取消费、跨客户换量、BTO | “allocated”措辞转弱、未满足需求不再顺延 |
+| 三家厂商恢复单位扩产、供给纪律破裂 | 低—中 | 极高 | 密度领先、降低成本 | 行业 Capex、spindle units、渠道价格 |
+| 客户集中/单客份额丢失 | 中 | 高 | 多家 CSP 认证、VIA/enterprise 扩展 | 10% 客户披露、认证客户数量 |
+| SoC 外购和关键部件通胀 | 中 | 中 | 长协、BTO 价格传导、垂直整合其他工序 | 供应商融资、采购义务、GM bridge |
+| BIS/出口管制升级 | 低—中 | 高 | 合规审计、客户区域分散 | denial order 条件、监管公告 |
+| 当前估值倍数压缩 | **高** | **极高** | 只有持续超预期 EPS/FCF 可消化 | Forward PE、FY2027 EPS 修正、实际收入低于 155 亿 |
+
+## 投资结论与未来四季跟踪框架
+
+**公司基本面结论：强。股票风险收益结论：高度依赖进入价格。** Seagate 已经用五个连续季度证明收入、EB、毛利和 FCF 同时改善，并且当前 nearline 产能可见度远强于传统周期。Mozaic 4+ 是真实量产而非实验室故事，AI 对持久存储的拉动也有 GTC、OCP 和 KV-cache 实验支持。与此同时，公司不披露狭义 AI 收入或正式 backlog，系统/服务仍小，且 WDC 40TB ePMR 很快进入量产窗口。
+
+最关键的投资判断不是“AI 会不会产生更多数据”，而是：
+
+1. Seagate 能否把 Mozaic 4+ 从两家量产客户扩至大多数头部 CSP；
+2. FY2026 Q4 非 GAAP 毛利率能否按推算达到约 50%—52%；
+3. 2026 年末 HAMR 是否真正成为 nearline EB 多数、FY2027 年末是否接近 70%；
+4. nearline 年化能力能否由 700 EB 提到基准 850—920 EB，同时仍不扩单位产能；
+5. BTO 的“已分配”能否转化为收入，是否出现延期、换量或取消；
+6. WDC 40TB ePMR 在 2026H2 的两家 hyperscaler 认证是否按时转量；
+7. Data Center 收入/EB 是否继续高于约 14美元/TB，还是客户通过 mix/竞争压价；
+8. 债务是否继续下降、供应商融资应付款是否回落；
+9. 系统、Lyve 和混合 AI 方案是否首次出现可量化订单，而不只是技术演示；
+10. FY2027 收入若仅达到 155亿—168亿美元基准区间，当前约 37 倍 forward PE 是否仍能维持。
+
+在没有估值约束时，Seagate 是当前 AI 数据基础设施中**业务质量和供需可见性明显改善、技术领先得到客户验证**的公司；在 18.7 倍 TTM P/S、86 倍 TTM PE 下，它同时也是**对任何认证、良率、客户延期或竞争追赶都非常敏感**的股票。合理做法是把 nearline EB、HAMR mix、毛利率和 FY2027 BTO 转化率放在同一张跟踪表中，而不是只追踪“AI”新闻。
+
+## 数据口径与主要来源
+
+### 公司与监管原始资料
+
+- [Seagate FY2026 Q3 财报发布，2026-04-28](https://investors.seagate.com/news/news-details/2026/Seagate-Technology-Reports-Fiscal-Third-Quarter-2026-Financial-Results/default.aspx)
+- [FY2026 Q3 Supplemental Financial Information](https://s24.q4cdn.com/101481333/files/doc_financials/2026/q3/STX-FQ3-26-Supplemental.pdf)
+- [FY2026 Q3 电话会、补充资料与 transcript 入口](https://investors.seagate.com/events/event-details/2026/Seagate-Technology-Fiscal-Third-Quarter-2026-Conference-Call/default.aspx)
+- [FY2026 Q3 Form 10-Q，截至 2026-04-03](https://www.sec.gov/Archives/edgar/data/1137789/000113778926000088/stx-20260403.htm)
+- [FY2025 Form 10-K，截至 2025-06-27](https://www.sec.gov/Archives/edgar/data/1137789/000113778925000157/stx-20250627.htm)
+- [FY2026 Q2 财报](https://investors.seagate.com/news/news-details/2026/Seagate-Technology-Reports-Fiscal-Second-Quarter-2026-Financial-Results/)
+- [FY2026 Q1 财报](https://investors.seagate.com/news/news-details/2025/Seagate-Technology-Reports-Fiscal-First-Quarter-2026-Financial-Results/default.aspx)
+- [FY2025 Q4/FY2025 财报](https://investors.seagate.com/news/news-details/2025/Seagate-Technology-Reports-Fiscal-Fourth-Quarter-and-Fiscal-Year-2025-Financial-Results/)
+- [FY2025 Q3 财报](https://investors.seagate.com/news/news-details/2025/Seagate-Technology-Reports-Fiscal-Third-Quarter-2025-Financial-Results/default.aspx)
+- [Mozaic 4+、44TB、两家 hyperscaler 量产公告](https://investors.seagate.com/news/news-details/2026/Seagate-Delivers-Industrys-Highest-Capacity-Hard-Drives-with-Next-Generation-Mozaic-4/default.aspx)
+- [Exos 产品页](https://www.seagate.com/gb/en/products/enterprise-drives/exos/)
+- [CORVAULT 4U106 产品与数据表](https://www.seagate.com/gb/en/products/storage/data-storage-systems/corvault/4U106/)
+- [Lyve Cloud 对象存储及公开价格](https://lyve.seagate.com/object-storage-service)
+
+### 行业、竞争、会议与技术资料
+
+- [Seagate/NVIDIA/Supermicro：Scaling the Context Wall，2026-03-16](https://www.seagate.com/blog/scaling-the-context-wall/)
+- [Seagate/SK hynix：KV Cache Offloading White Paper，2026-06](https://www.seagate.com/content/dam/seagate/assets/resources/enabling-inference-at-massive-scale-with-hybrid-storage-for-kv-cache-offloading/files/kv-caching-white-paper.pdf)
+- [OCP EMEA 2026：Redefining Storage for the AI Era](https://www.opencompute.org/events/past-events/2026-ocp-emea-summit)
+- [Western Digital Innovation Day 2026](https://investor.wdc.com/news-releases/news-release-details/western-digital-accelerates-storage-innovation-ai-era)
+- [Toshiba 12-platter/MAMR 40TB 技术报告](https://www.global.toshiba/content/dam/toshiba/jp/technology/corporate/review/2026/02/4-2.pdf)
+- [TrendForce：2Q26 DRAM/NAND 供需与价格](https://www.trendforce.com/presscenter/news/20260331-12995.html)
+- [TrendForce：1Q26 企业 SSD 收入与供需](https://www.trendforce.com/presscenter/news/20260611-13092.html)
+- [Backblaze Q1 2026 Drive Stats](https://www.backblaze.com/cloud-storage/resources/hard-drive-test-data)
+- [本项目：HDD、对象存储与冷温数据存储](../../行业调研/AI服务器_存储_芯片/行业调研_HDD、对象存储与冷温数据存储_2026-07-10.md)
+- [本项目：AI 产业链全局图谱与口径字典](../../行业调研/产业背景/AI产业链全局图谱与口径字典_T03_2026-07-09.md)
+- [本项目：AI 数据中心建设规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+
+### 市场数据
+
+- [STX 估值、利润率、资产负债率统计](https://stockanalysis.com/stocks/stx/statistics/)
+- [STX 分析师收入/EPS 预测汇总](https://stockanalysis.com/stocks/stx/forecast/)
+
+> 研究边界：本报告只使用 Seagate/SEC/产品原始资料、过去半年公开行业与技术资料，以及项目内“行业调研”中相关产业文件；未读取或继承其他公司报告，也未使用“特征量化”“日度资料”“tmp”或备份目录内容。情景预测和产品拆分已明确标记，不能替代公司披露或投资建议。

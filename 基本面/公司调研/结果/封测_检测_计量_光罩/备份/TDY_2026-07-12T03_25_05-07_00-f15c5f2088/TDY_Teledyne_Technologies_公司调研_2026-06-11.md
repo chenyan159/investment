@@ -1,0 +1,472 @@
+# TDY_Teledyne Technologies 公司调研_2026-06-11
+
+报告日期：2026-06-11  
+公司：Teledyne Technologies Incorporated  
+股票代码：TDY / NYSE  
+正式归属目录：`公司调研/封测_检测_计量_光罩/`  
+资料边界：项目内仅使用 `行业调研/` 目录下与高速互连测试、半导体检测量测、AI 网络、AI 芯片和 AI 数据中心产业链相关资料；未读取或继承 `特征量化/`、`日度资料/`、旧版 TDY 报告或其他公司报告。  
+结论口径：TDY 是高端传感、成像、仪器、国防电子和系统工程平台公司。AI 数据中心直接敞口主要在 Teledyne LeCroy / Xena 的高速协议、示波器和以太网流量测试，以及 Digital Imaging 中 MEMS / 机器视觉 / 半导体检测的间接受益；它不是 GPU、光模块、交换机、液冷或电力链的直接大宗 BOM 公司。
+
+## 0. 高浓度结论
+
+1. **TDY 在投资人心中的形象**：高质量工业科技复合体，靠小众高壁垒传感器、成像、测试仪器和国防电子积累现金流，再通过 disciplined M&A 扩展产品线。市场给它的估值更接近高质量工业/国防/测试测量平台，而不是纯半导体设备或 AI 基建高 beta 标的。
+2. **2026 最新基本面**：2026Q1 收入 `$1.560B`，同比 `+7.6%`；GAAP EPS `$4.85`，non-GAAP EPS `$5.80`；GAAP operating margin `18.9%`，non-GAAP operating margin `22.6%`；RPO / firm backlog `$4.867B`，其中 `71%` 预计 12 个月内转收入。Q1 book-to-bill `1.16`，连续第 10 个季度 >1；Digital Imaging book-to-bill 约 `1.38`。
+3. **业务重心**：2026Q1 收入结构为 Digital Imaging `52.4%`、Instrumentation `23.2%`、Aerospace and Defense Electronics `17.8%`、Engineered Systems `6.7%`。2025 全年结构为 Digital Imaging `52%`、Instrumentation `24%`、A&D Electronics `17%`、Engineered Systems `7%`。
+4. **过去 3 年的转型/变动**：2023 收购 Xena Networks，把 LeCroy 从传统示波器/协议分析扩展到 Terabit Ethernet traffic generation；2025 收购 Qioptiq / Excelitas select aerospace-defense electronics，强化光学和国防电子；2025 收购 Micropac、TransponderTech、Maretron；2026Q1 收购 DD-Scientific，加强气体传感。FLIR 虽是 2021 大收购，但仍是当前投资人理解 TDY 的核心：红外、国防、无人系统、CBRNE 和热成像平台。
+5. **AI 数据中心判断**：直接 AI 数据中心收入占比很低，当前估计公司收入 `1-3%`。但高速测试验证是 AI 网络升级的前置环节：1.6T、224G、PCIe 6/7、CXL、CPO/CPX、AI fabric workload emulation 都需要示波器、协议分析、流量发生、BERT/VNA、软件和一致性测试。TDY 的 LeCroy / Xena 是该链条中有真实产品但收入基数不大的“卖铲子”。
+6. **最值得跟踪的小业务**：Teledyne LeCroy Summit M616 / WaveMaster 8000HD / Xena Z1608 Edun、MEMS micromirrors for optical switching / high-speed networking、工业机器视觉/半导体检测相机、FLIR Defense 的 Black Hornet / Rogue 1 / counter-drone 红外子系统。
+7. **财务健康**：截至 2026Q1，现金 `$521M`，总债务 `$2.476B`，净债务 `$1.955B`；公司称 quarter-end consolidated leverage ratio `1.3x`，且季后偿还 `$450M` 到期债务。TTM FCF 约 `$1.05B+`，资产负债表健康，M&A 和扩产空间仍在。
+8. **投资风险**：AI 相关收入小，不能按纯 AI 供应链高 beta 给估值；Instrumentation 中高毛利 test & measurement 2026Q1 反而同比下滑 `3.7%`，当前增长由 marine、defense、infrared、unmanned、space sensing 拉动更多；若 1.6T/PCIe/CXL 采用节奏慢，TDY 的 AI test 选项会推迟。
+
+## 1. 公司整体业务、定位和估值
+
+### 1.1 公司是什么
+
+Teledyne Technologies 是一个高度分散但技术壁垒较强的工业科技集团。2025 年报将公司分为四个 reportable segments：
+
+| 业务板块 | 2025 收入 | 2025 占比 | 2025 segment operating income | 2025 segment OI margin | 核心产品与产业链位置 |
+|---|---:|---:|---:|---:|---|
+| Digital Imaging | `$3.164B` | `52%` | `$528M` | `16.7%` | 可见光/红外/紫外/X-ray 传感器、相机、FLIR 热像、空间成像、工业机器视觉、MEMS、高可靠 ADC/DAC、无人系统；位于传感器、成像、国防感知和工业检测上游 |
+| Instrumentation | `$1.457B` | `24%` | `$400M` | `27.5%` | Marine instrumentation、environmental instrumentation、electronic test & measurement、harsh environment interconnect；其中 test & measurement 是 AI 网络/高速 I/O 验证相关 |
+| Aerospace and Defense Electronics | `$1.059B` | `17%` | `$262M` | `24.8%` | 防务电子、光学系统、恶劣环境互连、飞机数据采集/通信、卫星通信、general aviation batteries；位于国防电子/航空航天供应链中游 |
+| Engineered Systems | `$436M` | `7%` | `$47M` | `10.7%` | Defense、space、environmental、energy 系统工程、集成、软件与制造；更多是项目制工程业务 |
+| 合计 | `$6.115B` | `100%` | `$1.237B` | `20.2%` | 多元化工业科技平台 |
+
+TDY 的核心不是单一产品，而是“高可靠传感器 + 高端仪器 + 国防电子 + 小型并购整合”。公司通常进入的不是低价标准件市场，而是客户愿意为可靠性、认证、测量精度、field support 和生命周期支持付费的细分市场。
+
+### 1.2 投资人如何看 TDY
+
+| 投资人认知 | 具体含义 |
+|---|---|
+| 高质量 compounder | 过去长期通过内生增长、价格、成本控制和 M&A 复利；不以高成长叙事为主 |
+| 国防和红外/传感受益者 | FLIR、Black Hornet、Rogue 1、counter-drone、space sensing、maritime surveillance 使 defense exposure 更突出 |
+| 工业测试/成像隐形供应商 | LeCroy、e2v、DALSA、FLIR、MEMS、机器视觉等分散嵌入客户研发和生产流程 |
+| AI 数据中心“间接受益、小体量” | 高速测试验证、protocol analyzer、1.6T traffic test、MEMS optical switching、机器视觉半导体检测有潜力，但不是当前收入主线 |
+| M&A 平台 | Qioptiq、Micropac、DD-Scientific、TransponderTech 等强化原有细分；财务杠杆低，仍可继续买小而高质量资产 |
+
+### 1.3 最近 3 年重大业务变动、转型和收购
+
+| 时间 | 事项 | 金额/规模 | 所属板块 | 战略含义 |
+|---|---|---:|---|---|
+| 2023-10 | 宣布收购 Xena Networks | 未披露 | Instrumentation / LeCroy | Xena 是 high-speed Terabit Ethernet validation、QA 和 production test 供应商，使 TDY 进入 800G/1.6T 以太网流量测试和网络验证 |
+| 2024 | 完成两项小型收购 | 2025 年报披露为 2024/2025 acquisitions 的一部分 | Digital Imaging / Instrumentation | 扩展成像、仪器和传感组合 |
+| 2025Q1 | 收购 Micropac | `$51.2M` | A&D Electronics | 加入军工/航天/医疗用 microelectronic circuits、optoelectronic components、sensor/display assemblies |
+| 2025Q1 | 收购 Qioptiq / Excelitas select OS & AES businesses | `$702.8M` | A&D Electronics | 大幅扩充光学系统和高级电子系统，推高 A&D Electronics 收入和 backlog |
+| 2025Q3 | 收购 Maretron assets | 未重大披露 | Digital Imaging | 补强商业/休闲海事连接和监控产品线 |
+| 2025Q4 | 收购 TransponderTech | `$58.2M` | Digital Imaging | 获得 AIS、VDES、GNSS 等 connected commercial maritime portfolio |
+| 2026Q1 | 收购 DD-Scientific | `$53.4M` | Instrumentation | 补强 industrial safety、healthcare、environmental compliance 用高性能气体传感器 |
+
+三年变化的实质：TDY 没有从传统业务突然转向 AI，而是继续围绕“高可靠感知、测试、国防电子、环境/海洋仪器”做拼图式扩展。AI 相关变化主要来自 Xena / LeCroy 对高速网络验证的增强，以及 Digital Imaging 中 MEMS / 机器视觉在 optical switching、semiconductor inspection 中的需求改善。
+
+### 1.4 产业链位置
+
+| 产业链层级 | TDY 参与方式 | 重要性 | 是否 AI 数据中心直接收入 |
+|---|---|---:|---:|
+| 高速 I/O 与 AI 网络验证 | Teledyne LeCroy oscilloscopes、PCIe/CXL protocol analyzers、Xena Ethernet traffic generators/analyzers | 高，属于研发、认证和生产验证前置环节 | 是，但收入占比小 |
+| 半导体/工业检测 | DALSA/e2v/Vision Research/FLIR 等机器视觉、X-ray、传感器 | 中高，服务半导体检测和工业自动化 | 间接 |
+| Optical switching / MEMS | MEMS foundry、micromirrors for optical switching / high-speed networking | 中，潜在绑定 AI optical fabric / OCS | 小体量、未披露客户 |
+| 国防无人系统和红外感知 | Black Hornet、Rogue 1、红外探测器/相机/子系统、counter-drone | 高，是当前增长主线之一 | 非 AI 数据中心 |
+| Space sensing / specialty semiconductors | visible/IR detectors、specialty semis for space | 高，双位数增长 | 非 AI 数据中心 |
+| Marine/environmental instrumentation | 海洋、环境、气体检测、AUV/UUV、offshore interconnect | 中，现金流和防务/能源相关 | 非 AI 数据中心 |
+| Engineered Systems | Defense/space/energy 项目工程 | 中低，项目制 | 非 AI 数据中心 |
+
+### 1.5 最新股价、估值和利润率
+
+估值日期：2026-06-11。股价和市值使用 MarketWatch 盘中报价：2026-06-11 09:59 EDT TDY `615.03 美元`，市值约 `$27.86B`，shares outstanding 约 `46.33M`。TTM 财务口径用 2025Q2-2026Q1 公司披露数据自算；forward 口径用公司 2026 指引。
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | `$615.03` | 2026-06-11 09:59 EDT | MarketWatch 盘中报价；当日价格波动较大 |
+| 市值 | `$27.86B` | 2026-06-11 | MarketWatch / 报价页 |
+| TTM 收入 | `$6.226B` | 2025Q2-2026Q1 | `1.5137 + 1.5395 + 1.6123 + 1.5601` |
+| TTM 净利润 | `$933M` | 2025Q2-2026Q1 | GAAP net income attributable to Teledyne |
+| TTM EPS 估算 | `$19.94` | 2025Q2-2026Q1，按 46.8M diluted shares 近似 | 与公开行情 EPS 口径会因加权股数和最新价格略有差异 |
+| PE | `30.8x` | 股价 `$615.03` / TTM EPS `$19.94` | 公开行情页给出的 P/E 约 `30-32x` 区间 |
+| Forward PE | `25.6x` | 股价 / FY2026 non-GAAP EPS midpoint `$24.00` | Yahoo 2026-06-10 forward P/E 约 `26.67x`；管理层 non-GAAP 口径略低 |
+| Forward PE, GAAP | `30.4x` | 股价 / FY2026 GAAP EPS midpoint `$20.26` | 更保守，包含摊销等 |
+| PS, TTM | `4.48x` | 市值 / TTM 收入 | 高质量工业/仪器平台估值 |
+| Forward PS | `4.34x` | 市值 / FY2026 sales guide `$6.415B` | 2026 指引收入增速约 `+4.9%` |
+| 最新季度收入增速 | `+7.6% YoY` | 2026Q1 | organic growth `6.9%`；ex acquisitions `5.3%` |
+| 2025 全年收入增速 | `+7.9% YoY` | 2025 vs 2024 | `$6.115B` vs `$5.670B` |
+| 2026Q1 毛利率 | `43.2%` | GAAP，收入-COGS | `($1.560B - $0.886B)/$1.560B` |
+| 2026Q1 净利率 | `14.5%` | GAAP net income / revenue | `$226.8M / $1.560B` |
+| 2026Q1 GAAP operating margin | `18.9%` | 公司披露 | YoY `+100bps` |
+| 2026Q1 non-GAAP operating margin | `22.6%` | 公司披露 | YoY `+60bps` |
+
+### 1.6 资产负债表和财务健康
+
+| 指标 | 2026Q1 | 2025 年末 | 判断 |
+|---|---:|---:|---|
+| Cash and equivalents | `$521.4M` | `$352.4M` | 现金增加，季内 OCF `$234M` |
+| Total current assets | `$3.323B` | `$3.056B` | 当前资产覆盖短债和运营需求 |
+| Inventories | `$1.122B` | `$1.043B` | Q1 增加 `$78M`，反映备货/产能投入；需跟踪是否转收入 |
+| Total assets | `$15.493B` | `$15.285B` | 资产以 goodwill/intangibles 为大头 |
+| Goodwill + acquired intangibles | `$10.735B` | `$10.788B` | 占总资产约 `69%`，M&A 平台常态；并购整合和减值是长期风险 |
+| Current liabilities | `$1.892B` | `$1.860B` | 包含 `$450M` current debt |
+| Total debt | `$2.476B` | `$2.475B` | 公司季后偿还 `$450M` 到期债务 |
+| Net debt | `$1.955B` | `$2.123B` | Q1 净债务下降 `$168M` |
+| Stockholders' equity | `$10.704B` | `$10.514B` | 资本结构稳健 |
+| RPO / firm backlog | `$4.867B` | `$4.612B` | Q1 增加 `$256M`；71% 预计 12 个月内确认 |
+| Consolidated leverage ratio | `1.3x` | `1.4x` | 公司披露，降到 5 年低位 |
+
+财务健康判断：**健康，且偏保守**。TDY 现金流强、净杠杆低、RPO 高、没有明显流动性压力。风险不在短期偿债，而在两点：第一，goodwill/intangibles 占资产比重高，需要持续证明收购资产能贡献现金流；第二，RPO 和库存增加需要按期转化成收入和毛利，尤其 defense / imaging 的产能投入不能变成过剩库存。
+
+## 2. 最近 5 次财报对比
+
+说明：TDY 不像设备公司那样详细披露 bookings、cancellations、lead time 和每个产品 backlog。下表中 `RPO` 是公司披露的 firm orders remaining performance obligations，不等同全部商业 backlog；`AI DC收入占比` 是估算。
+
+| 财报季度 | 发布/期间 | 总收入 / YoY | 毛利率 / 净利率 | 分部收入与占比 | 分部 operating margin | 订单、RPO、交期、取消率 | AI 数据中心相关收入占比估算 | 重要信息 |
+|---|---:|---:|---:|---|---|---|---:|---|
+| 2026Q1 | 截至 2026-03-29；2026-04-22 发布 | `$1.560B` / `+7.6%` | GM `43.2%`；NM `14.5%` | Digital Imaging `$816.9M` / `52.4%`; Instrumentation `$361.4M` / `23.2%`; A&D Electronics `$277.5M` / `17.8%`; Engineered Systems `$104.3M` / `6.7%` | DI `17.3%` GAAP / `23.2%` non-GAAP; Instrumentation `24.5%` GAAP; A&D `25.7%` GAAP / `27.9%` non-GAAP; ES `11.2%` | RPO `$4.867B`; 71% 12 个月内转收入；book-to-bill `1.16`; Digital Imaging BTB `1.38`; Instrumentation 略高于 `1`; 公司称某些领域需求大于产能并加大 CapEx | `1-3%` 公司收入；主要是 LeCroy/Xena test、MEMS optical switching、机器视觉半导体检测 | 红外探测器、space、unmanned、counter-drone 强；MEMS `+20%+`; electronic test & measurement `-3.7%`，但示波器增长、protocol analyzers 下滑 |
+| 2025Q4 | 截至 2025-12-28；2026-01-21 发布 | `$1.612B` / `+7.3%` | NM `17.1%`; Q4 COGS 未在摘要表单独列出 | DI `$850.5M` / `52.8%`; Instrumentation `$382.6M` / `23.7%`; A&D `$275.9M` / `17.1%`; ES `$103.3M` / `6.4%` | DI `19.2%` GAAP / `24.7%` non-GAAP; Instrumentation `28.0%`; A&D `25.2%` GAAP / `27.2%` non-GAAP; ES `11.1%` | RPO `$4.612B`; net debt `$2.123B`; Q4 repurchased `$400M` stock; consolidated leverage `1.4x`; no cancellation disclosure | `1-3%` | Digital Imaging 受 infrared components/subsystems、surveillance、unmanned defense 拉动；Instrumentation electronic T&M `+1.2M`; A&D 受 Qioptiq acquisition 推动 |
+| 2025Q3 | 截至 2025-09-28；2025-10-22 发布 | `$1.540B` / `+6.7%` | GM `42.8%`; NM `14.3%` | DI `$785.4M` / `51.0%`; Instrumentation `$363.6M` / `23.6%`; A&D `$275.5M` / `17.9%`; ES `$115.0M` / `7.5%` | DI `15.7%`; Instrumentation `27.2%`; A&D `25.6%`; ES `10.6%` | RPO 未在 release 摘要披露；net debt `$2.005B`; available revolver `$1.169B`; no cancellation disclosure | `1-3%` | Digital Imaging：commercial infrared、unmanned air systems、industrial automation imaging up；unmanned ground lower；Instrumentation electronic T&M `+0.4M`; A&D acquisitions added `$69.0M` |
+| 2025Q2 | 截至 2025-06-29；2025-07-23 发布 | `$1.514B` / `+10.2%` | GM `42.6%`; NM `13.9%` | DI `$771.0M` / `50.9%`; Instrumentation `$367.6M` / `24.3%`; A&D `$264.8M` / `17.5%`; ES `$110.3M` / `7.3%` | DI `15.5%`; Instrumentation `27.6%`; A&D `25.2%`; ES `11.0%` | no explicit backlog in release; Q2 OCF `$226.6M`; net debt in balance sheet remained manageable; no cancellation disclosure | `1-3%` | Instrumentation `+10.2%`，其中 electronic T&M `+4.0M`; A&D `+36.2%`，recent acquisitions added `$64.3M`; DI up on unmanned air systems and commercial infrared |
+| 2025Q1 | 截至 2025-03-30；2025-04-23 发布 | `$1.450B` / `+7.4%` | GM `42.7%`; NM `13.0%` | DI `$757.0M` / `52.2%`; Instrumentation `$343.3M` / `23.7%`; A&D `$242.5M` / `16.7%`; ES `$107.1M` / `7.4%` | DI `16.2%`; Instrumentation `27.0%`; A&D `23.0%`; ES `10.1%` | Q1 完成 `$757.6M` acquisitions；net debt `$2.503B`; no cancellation disclosure | `1-2%` | A&D acquisition contribution `$42.3M`; Instrumentation electronic T&M `+1.1M`; Digital Imaging higher commercial IR and surveillance, X-ray lower |
+
+### 2.1 财报趋势解读
+
+1. **收入增长由 defense / imaging / acquisitions 驱动，AI test 不是主要收入解释变量。** 2026Q1 的高质量增长来自 Digital Imaging、A&D Electronics 和 defense-backed demand。Instrumentation 虽增长 `5.3%`，但更高毛利的 electronic test & measurement 同比下降。
+2. **订单最强在 Digital Imaging。** Q1 2026 book-to-bill `1.16`，Digital Imaging `1.38`，说明红外、FLIR、DALSA/e2v、空间/防务感知的供需强于测试仪器。
+3. **RPO 转收入能见度高。** 2026Q1 RPO `$4.867B`，71% 预计 12 个月内确认，约 `$3.46B`，覆盖 2026 sales guide `$6.415B` 的 `54%`。这对于多元工业公司是较强可见度。
+4. **取消率无法从披露直接得出。** 公司没有披露 cancellations；连续 10 个季度 book-to-bill >1、RPO 增长和客户 advances 增加，当前没有明显取消信号。
+5. **交期/产能紧张是局部而非全公司。** 管理层称需求大于某些区域产能，正在加大 CapEx 和 R&D。高概率集中在 defense imaging、unmanned、space sensing、specialty semis、部分高端 test / protocol 产品，而不是全组合短缺。
+
+## 3. 2026 最新指引、业务占比和产品梳理
+
+### 3.1 2026 指引
+
+| 项目 | 指引 / 管理层表述 | 含义 |
+|---|---:|---|
+| FY2026 revenue | 约 `$6.415B` | 较 2025 `$6.115B` 增长约 `+4.9%` |
+| FY2026 organic growth | 约 `4%` | 管理层 Q1 call 口径 |
+| FY2026 acquisition contribution | 约 `0.9%` | 2025/2026 small acquisitions |
+| FY2026 non-GAAP EPS | `$23.85-$24.15` | midpoint `$24.00`; Q1 后上调约 `$0.35` |
+| FY2026 GAAP EPS | `$20.08-$20.44` | midpoint `$20.26` |
+| Q2 2026 non-GAAP EPS | `$5.70-$5.80` | Q2 outlook |
+| Q2 2026 GAAP EPS | `$4.75-$4.90` | Q2 outlook |
+| 2026 free cash flow | 管理层预计 `> $1B` | 即使库存和 CapEx 较高，现金流仍强 |
+| Segment growth | A&D Electronics `>6%`; Digital Imaging `~5%`; FLIR `~6.5%` | 最高增长仍在 defense/imaging |
+
+### 3.2 2026Q1 业务收入占比和增速
+
+| 板块 | 2026Q1 收入 | 占比 | YoY | 主要增长/拖累 | 是否重点业务 |
+|---|---:|---:|---:|---|---|
+| Digital Imaging | `$816.9M` | `52.4%` | `+7.9%` | 红外探测器、components/subsystems、defense/commercial IR、surveillance、unmanned air systems；MEMS `+20%+` | 是，最重要 |
+| Instrumentation | `$361.4M` | `23.2%` | `+5.3%` | Marine `+8.3%`; environmental `+6.7%`; electronic T&M `-3.7%`; DD-Scientific added `$5.0M` | 是，但 AI 相关只在其中一小块 |
+| Aerospace and Defense Electronics | `$277.5M` | `17.8%` | `+14.4%` | Defense electronics + organic `8.4%`; Qioptiq acquisition contribution `$20.3M` | 是，高增长 |
+| Engineered Systems | `$104.3M` | `6.7%` | `-2.6%` | 工程产品和能源系统略降；margin 改善 | 非重点，跳过大部分 |
+
+### 3.3 产品地图：重点和跳过项
+
+| 板块 | 产品/型号/线索 | 2026 重要性 | AI 数据中心相关性 | 报告处理 |
+|---|---|---:|---:|---|
+| Instrumentation / LeCroy | WaveMaster 8000HD，高达 `65GHz`、`320GS/s`、`12-bit` oscilloscope | 高速电/光接口验证 | 中高，PCIe/CXL/224G/448G/1.6T 研发验证 | 重点 |
+| Instrumentation / LeCroy | Summit M616 PCIe 6.0 / CXL 3.x protocol analyzer / exerciser | PCIe/CXL 服务器、AI、network card、storage 验证 | 中高 | 重点 |
+| Instrumentation / Xena | Z1608 Edun 1.6T / 224G SerDes Ethernet traffic generator | 1.6T Ethernet、UEC、AI/HPC 网络互操作 | 中高 | 重点 |
+| Digital Imaging / MEMS | MEMS foundry、micromirrors for optical switching / high-speed networking | 小业务但 Q1 `+20%+` | 中，潜在 OCS/optical switching | 重点小业务 |
+| Digital Imaging | Industrial machine vision cameras / sensors for semiconductor inspection | 工业/半导体检测恢复增长 | 间接，先进封装/晶圆检测需求 | 重点小业务 |
+| Digital Imaging / FLIR Defense | Black Hornet nano-drone、Rogue 1 loitering munition、IR cameras/subsystems、counter-drone sensors | Defense growth driver | 非 AI 数据中心 | 重点，但分开分析 |
+| Digital Imaging / Space | visible/IR detectors、specialty semiconductors for space | 双位数增长 | 非 AI 数据中心 | 重点 |
+| A&D Electronics | Qioptiq optical systems、Micropac microelectronics、harsh environment interconnects | 2025-2026 增长显著 | 非 AI 数据中心，少量卫星/通信间接 | 重点 |
+| Instrumentation / Marine | UUV/AUV、marine instruments、offshore interconnect | 防务/海洋增长 | 非 AI 数据中心 | 简述 |
+| Instrumentation / Environmental | gas detection、ambient air monitoring、DD-Scientific sensors | 稳定增长 | 非 AI 数据中心 | 简述 |
+| Engineered Systems | defense/space/environmental/energy project engineering | 小占比、项目制 | 非 AI 数据中心 | 跳过大部分 |
+| 健康/生命科学 X-ray、lab instruments | 部分恢复但非 AI 重点 | 低 | 非 AI 数据中心 | 跳过大部分 |
+| commercial aerospace electronics | Q1 tough comp 略降 | 中低 | 非 AI 数据中心 | 跳过大部分 |
+
+### 3.4 AI 数据中心相关收入占比估算
+
+TDY 没有披露 AI data center revenue。按公开产品和分部拆分估算：
+
+| 组成 | 2025/当前收入基数 | 可归因 AI DC 的比例估算 | 当前 AI DC 相关收入估算 | 置信度 |
+|---|---:|---:|---:|---|
+| Test & Measurement Instrumentation | 2025 `$310.4M` | `25-45%` 与高速数据中心/PCIe/CXL/以太网相关；真正 AI DC 可能 `15-30%` | `$45-95M/年` | 中低 |
+| Xena / Ethernet traffic testing | 未单独披露，包含在 T&M | 1.6T/224G、AI/HPC 网络相关度高 | `$15-50M/年` | 低 |
+| MEMS micromirrors / optical switching | 未披露；Q1 MEMS `+20%+` | 可能部分用于 optical switching / high-speed networking | `$10-40M/年` | 低 |
+| Machine vision / semiconductor inspection | 未披露 | 与 AI 芯片制造/检测间接相关 | `$30-100M/年` | 低 |
+| 合计 | 公司 2026E `$6.415B` | -- | `$100-200M/年`，约 `1.5-3.1%` | 低到中 |
+
+关键判断：即使极度乐观，AI 数据中心相关收入也很难在 2026 立刻超过公司收入的 `5%`。TDY 的 AI 期权价值来自“高利润、小基数、标准升级驱动”，不是“每 MW 大额装机”。
+
+## 4. 当前关键产品/业务评估
+
+评分：5 = 很高，1 = 很低。收入贡献为本报告估算，非公司披露。
+
+| 产品/业务 | 当前收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 评估 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| LeCroy / Xena 高速互连与协议测试 | `$90-150M/年`，其中 AI DC 直接相关 `$60-120M` | Q1 T&M `-3.7%`，但管理层预计全年增长；行业 1.6T/224G/PCIe/CXL test `25-70%` 增长 | 4 | 4 | 3 | 4 | AI 网络和 PCIe/CXL 验证前置；当前收入不强但 2026H2-2027 可加速 |
+| Summit M616 PCIe 6.0 / CXL 3.x protocol analyzer | 包含在上项 | protocol analyzers Q1 下滑，但数据中心新协议采用拉动 | 4 | 4 | 3 | 4 | PCIe 6 / CXL 3.x 在 AI 服务器、storage、network card、GPU/ASIC 周边验证关键 |
+| WaveMaster 8000HD / high bandwidth oscilloscope | 包含在上项；oscilloscopes Q1 增长 | 增长 | 3 | 4 | 3 | 3 | 65GHz、12-bit、320GS/s；224G/PCIe6/USB4v2 等研发验证受益 |
+| Xena Z1608 Edun 1.6T Ethernet traffic test | 包含在上项；小基数 | 高潜在增长 | 4 | 4 | 3 | 3 | 1.6T Ethernet、UEC、AI/HPC 网络互操作测试；竞争有 VIAVI/Keysight |
+| MEMS micromirrors / optical switching | `$50-100M/年` 级别估算，AI networking 部分更小 | Q1 `+20%+` | 3 | 3 | 3 | 3 | 潜在受益 OCS / optical switching，但没有披露 hyperscaler BOM 或客户 |
+| Machine vision / semiconductor inspection sensors | `$200-350M/年` 级别估算 | Q1 恢复 YoY 增长 | 3 | 3 | 2 | 3 | 半导体检测、工业自动化受 AI 芯片良率需求间接拉动 |
+| FLIR Defense / IR / unmanned systems | `$1.2-1.6B/年` 级别高增长池估算 | FLIR defense 2026E `~+9%`; drones/counter-drone 强 | 1 | 5 | 4 | 4 | TDY 当前最强基本面之一，但不是 AI 数据中心 |
+| A&D Electronics / Qioptiq / Micropac | 2025 `$1.059B`; 2026Q1 `$277.5M` | Q1 `+14.4%`; organic defense electronics `+8.4%` | 1 | 4 | 3 | 3 | 光学、防务电子、卫星/航空互连，订单可见度强 |
+| Marine / UUV / harsh interconnect | 2025 Marine Instrumentation `$680.1M` | Q1 marine `+8.3%`; UUV `+20%+` | 1 | 3 | 3 | 3 | 防务海洋和 offshore energy，非 AI |
+
+## 5. 关键产品/业务未来一年三情景
+
+### 5.1 高速互连与协议测试：LeCroy / Xena
+
+| 情景 | 未来一年收入贡献 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 触发条件 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 基准 | `$120-180M` | `+20-35%` | 4 | 4 | 3 | 4 | PCIe 6/CXL 3.x、1.6T Ethernet validation 正常推进；protocol analyzer 从 Q1 低点恢复 |
+| 乐观 | `$170-240M` | `+45-75%` | 4 | 5 | 4 | 4 | 1.6T/224G production test、AI fabric traffic emulation、CXL memory/retimer qualification 明显加速 |
+| 极度乐观 | `$250-330M` | `+90-140%` | 5 | 5 | 5 | 5 | 2027 3.2T/448G pathfinding 提前、测试设备交期拉长、LeCroy/Xena 进入多个 hyperscaler / module / switch 认证环境 |
+
+### 5.2 MEMS micromirrors / optical switching
+
+| 情景 | 未来一年收入贡献 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 触发条件 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 基准 | `$65-110M` | `+20-35%` | 3 | 3 | 3 | 3 | 光通信、industrial、specialty MEMS 稳定增长；optical switching 小量增加 |
+| 乐观 | `$90-150M` | `+45-70%` | 3 | 4 | 4 | 3 | OCS / optical switching 试点增加，MEMS foundry 被更多光网络客户采用 |
+| 极度乐观 | `$150-250M` | `+100%+` | 4 | 4 | 5 | 4 | Google/AWS/Meta 或设备商推动 MEMS optical switching 进入 AI fabric 规模导入；需看到客户名或大额订单 |
+
+### 5.3 Machine vision / semiconductor inspection imaging
+
+| 情景 | 未来一年收入贡献 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 触发条件 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 基准 | `$250-400M` | `+10-18%` | 3 | 3 | 2 | 3 | industrial automation 和 semiconductor inspection 继续复苏 |
+| 乐观 | `$330-480M` | `+25-40%` | 3 | 4 | 3 | 3 | HBM/advanced packaging/wafer inspection 带动更多高速成像需求 |
+| 极度乐观 | `$450-650M` | `+50-80%` | 4 | 4 | 4 | 4 | 高端机器视觉成为 advanced packaging / semiconductor inspection bottleneck，TDY 获得关键 design-in |
+
+### 5.4 FLIR Defense / IR / unmanned / counter-drone
+
+| 情景 | 未来一年收入贡献 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 触发条件 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 基准 | `$1.4-1.8B` | `+10-15%` | 1 | 5 | 4 | 4 | FLIR defense `~+9%`，Black Hornet、Rogue 1、counter-drone 红外子系统延续 |
+| 乐观 | `$1.7-2.2B` | `+20-30%` | 1 | 5 | 5 | 4 | NATO / U.S. defense procurement、counter-UAS 和 low-cost drone orders 放量 |
+| 极度乐观 | `$2.3-3.0B` | `+50%+` | 1 | 5 | 5 | 5 | 大规模冲突/补库存推动小型无人系统、红外、counter-drone 进入紧急采购；不应计入 AI data center |
+
+### 5.5 A&D Electronics / Qioptiq / Micropac
+
+| 情景 | 未来一年收入贡献 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 触发条件 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 基准 | `$1.15-1.25B` | `+8-12%` | 1 | 4 | 3 | 3 | Qioptiq 整合、defense electronics organic `+8%` 左右 |
+| 乐观 | `$1.25-1.40B` | `+15-22%` | 1 | 4 | 4 | 4 | 光学系统、卫星通信、electronic countermeasures、defense interconnect orders 强 |
+| 极度乐观 | `$1.45-1.65B` | `+30-40%` | 1 | 5 | 5 | 4 | defense budget / urgent procurement 加速，Qioptiq 成本与产能释放超预期 |
+
+## 6. BOM、每 MW / 每 rack / 每 GPU / 每 optical port 内容量和价格传导
+
+### 6.1 重要边界
+
+TDY 的 AI 数据中心相关产品多数是**研发、认证、生产测试设备**，不是装进每个数据中心 rack 的标准 BOM。因此：
+
+- 对 hyperscaler 运营商的每 MW / 每 rack / 每 GPU 直接内容量通常接近 `0`，除非其内部实验室采购 LeCroy/Xena 设备。
+- 对 switch / NIC / retimer / optical module / server OEM / semiconductor supplier 的内容量更真实，表现为每个研发实验室、认证实验室、生产线的测试仪器、模块、软件和服务。
+- 真实经济传导链是：GPU/ASIC 代际升级 -> 800G/1.6T/PCIe/CXL/224G/448G 链路复杂度上升 -> 研发/认证/production test 时间增加 -> 测试设备、协议分析、流量发生、示波器、夹具、软件和校准服务 ASP 上升。
+
+### 6.2 LeCroy / Xena 高速测试验证 BOM
+
+| 项目 | 单站/单系统估算 | 每 optical port / GPU / rack / MW 内容量 | 价格传导 |
+|---|---:|---|---|
+| High-bandwidth oscilloscope, WaveMaster 8000HD 类 | `$0.3-1.5M/台`，取决于 bandwidth、probes、software options | 每 rack/GPU 无直接装机；研发/认证实验室每个平台 `1-数台`；摊到早期 1.6T port 可达 `$10-100/port`，高量产后 `$1-10/port` | 新速率越高，客户越愿意为带宽、12-bit 分辨率、jitter/SI 软件付费 |
+| PCIe/CXL protocol analyzer / exerciser, Summit M616 类 | `$0.2-0.8M/系统` | 每个 AI server / storage / NIC / retimer 客户实验室按平台配置；每 GPU 无直接装机 | PCIe 6/CXL 3.x 认证失败成本高，debug 时间价值大于仪器成本 |
+| 1.6T traffic generator/analyzer, Xena Z1608 Edun 类 | `$50-200k/port` 或更高，按端口/模块/软件配置 | 光模块/交换机/NIC 研发和产测端口；每 1.6T optical port 生产摊销 `$2-30`，早期低量 `$20-100` | 1.6T/224G/UEC/AI fabric 互操作越复杂，line-rate traffic test 需求越强 |
+| 软件、协议 decode、compliance、jitter/SI/AI traffic models | 硬件价的 `15-50%` attach | 按 license / maintenance / lab seat；不是物理 BOM | 毛利最高；标准变化带来持续升级 |
+| 校准、FAE、现场支持 | 年化硬件价的 `5-15%` | 高端客户实验室持续支出 | 产线停机/认证延迟成本高，服务议价强 |
+
+### 6.3 按 AI 数据中心容量折算的内容量
+
+以下是将上游测试设备摊到下游 AI 数据中心建设的粗略“look-through”口径，不是 TDY 披露收入。
+
+| 口径 | 假设 | TDY 可捕获内容量估算 | 解释 |
+|---|---|---:|---|
+| 每 GPU / ASIC | 项目内产业背景给出高速端口等效 `0.6-1.4 port/GPU`；TDY 测试设备摊销 `$2-30/port` | `$1-42/GPU` look-through | 只适用于经过 LeCroy/Xena 相关测试链的产品；不是每个 GPU 都付给 TDY |
+| 每 rack | 每 rack `72-144 GPU`，高速 port `50-200` 个等效 | `$100-6,000/rack` look-through | 绝大多数体现在供应商研发/产测 amortization，不在运营商 rack BOM |
+| 每 MW | 每 MW `300-1,000+ GPU`，视 rack density | `$0.3k-42k/MW` look-through | 相比 GPU/电力/液冷是极小项，但高毛利 |
+| 每 1.6T optical port | 研发/认证/产测设备摊销 | `$2-30/port` 常态；早期低量 `$20-100/port` | 测试时间长、良率低时上升 |
+
+结论：TDY 的 AI 数据中心业务不是“每 MW 大额内容量”逻辑，而是“每代协议升级都先买工具”的高毛利小基数逻辑。
+
+### 6.4 MEMS optical switching / micromirror BOM
+
+| 项目 | 当前状态 | 每 optical port / rack 内容量 | 价格传导 |
+|---|---|---:|---|
+| MEMS micromirror die / foundry service | 公司披露 MEMS Q1 `+20%+`，主要因 optical switching / high-speed networking demand；未披露客户和产品 | 若作为 foundry die，可能是每通道/每光路 `$1-20` 的制造价值；若进入完整 OCS，系统价值由设备商捕获，TDY 只捕获晶圆/器件份额 | AI optical fabric 对低延迟、低功耗、reconfigurable topology 的需求会拉动，但需要客户 design-in |
+| OCS / optical switching 系统 | TDY 未公开作为完整 OCS 系统供应商 | 当前对 TDY 每 rack 内容量应按 `0` 处理，除非确认其 MEMS 被采纳 | 若客户认证，foundry/design-in 粘性较强，但替代包括 Lumentum MEMS、Coherent/Polatis、Google internal optical switching、硅光方案 |
+
+### 6.5 Machine vision / semiconductor inspection BOM
+
+| 项目 | 当前状态 | 每 GPU / wafer / package 内容量 | 价格传导 |
+|---|---|---:|---|
+| 高速工业相机、line-scan/area-scan sensors、X-ray sensors | 2026Q1 industrial machine vision cameras/sensors for semiconductor inspection YoY 增长 | 不按每 GPU 装机；按 inspection tool / production line 配置。每台检测设备可能含 `$1k-50k+` 成像模组 | AI 芯片良率价值高，检测设备客户愿意为速度、分辨率、低噪声、可靠供货付费 |
+| 半导体检测系统中的 TDY 组件 | 未单独披露 | 每 wafer/package 的摊销通常是 cents 到数美元级，取决于工具价格和产量 | 若进入 KLA/Onto/Camtek/OSAT/Fab 工具供应链，客户切换成本中等偏高 |
+
+### 6.6 当前产能能力、采纳程度和认证
+
+| 产品/业务 | 当前产能能力，美元计 | 被供应链采纳程度 | 认证/标准阶段 |
+|---|---:|---|---|
+| LeCroy / Xena 高速测试 | 2025 Test & Measurement revenue `$310.4M`; AI/high-speed 相关估算 `$90-150M/年` | 高端实验室/协议测试市场已有地位；Xena 是 Ethernet traffic test 增量 | Summit M616 面向 PCIe 6.0 / CXL 3.x；CXL Consortium test event 生态；Xena 参与 1.6T / UEC / Ethernet testing |
+| WaveMaster 8000HD | 包含在 T&M；供应能力随高端模拟前端和制造 capacity | 高速示波器市场头部之一，但 Keysight/Tektronix/R&S/Anritsu 竞争强 | PCIe 6、USB4v2、PAM4/SI 等验证 |
+| MEMS micromirrors | 未披露；当前 small business | 被 optical switching / high-speed networking 客户采用，但客户名未披露 | 无公开 hyperscaler certification |
+| Machine vision / semiconductor inspection | 未披露；属于 Digital Imaging 重要子线 | 工业视觉/半导体检测客户已采用 | 工具级客户 qualification，非公开标准认证 |
+| FLIR Defense / Rogue 1 / Black Hornet | 高增长 defense production；Marine Corps Rogue 1 contract `$42.5M`，counter-drone orders tens of millions | 国防客户采纳度高 | LASSO / Marine Corps / defense program 认证和采购流程 |
+
+## 7. 未来一年产能、采纳和认证三情景
+
+| 产品/业务 | 基准：产能/采纳/认证 | 乐观：产能/采纳/认证 | 极度乐观：产能/采纳/认证 |
+|---|---|---|---|
+| LeCroy / Xena 高速测试 | 产能支持 `$120-180M` revenue；CXL/PCIe 6/1.6T lab adoption 增加；成为更多 compliance / interoperability 测试工具之一 | 产能扩至 `$170-240M`; 1.6T production test 和 AI fabric validation 进入更多 module/switch/NIC 客户；UEC/PCI-SIG/CXL 相关客户引用增加 | 产能扩至 `$250-330M`; 3.2T/448G/PCIe7 pathfinding 提前，客户排队；成为若干 hyperscaler golden validation setup |
+| WaveMaster / high bandwidth scopes | 65GHz 平台持续销售；软件 attach 提高 | 100GHz+ / 145GHz+ ecosystem 需求拉动升级周期 | 若 3.2T/400G lane 客户 qual 提前，高端 scope 交期拉长 |
+| MEMS optical switching | `$65-110M` 级产能；更多 optical switching / networking 客户试产 | `$90-150M`; OCS/optical switching design win 增加 | `$150-250M`; AI fabric optical switching 大客户认证，但目前需要新证据 |
+| Machine vision / semicon inspection | `$250-400M`; 工业检测和半导体 inspection 持续恢复 | `$330-480M`; advanced packaging / HBM inspection 需求加速 | `$450-650M`; AI chip inspection 供应链将高端成像列为瓶颈 |
+| FLIR Defense / unmanned | `$1.4-1.8B`; existing defense programs 扩产 | `$1.7-2.2B`; Rogue 1/Black Hornet/counter-drone 多项目进入加速交付 | `$2.3-3.0B`; wartime/urgent procurement 使产能成为核心约束 |
+| A&D Electronics / Qioptiq | `$1.15-1.25B`; acquisition integration 稳定 | `$1.25-1.40B`; optical systems / defense electronics design wins | `$1.45-1.65B`; urgent defense procurement 和 space sensing demand 叠加 |
+
+## 8. 根据订单积压和供给预测未来一年增速
+
+### 8.1 当前订单信号
+
+| 信号 | 数字 | 含义 |
+|---|---:|---|
+| RPO / firm backlog | `$4.867B` as of 2026-03-29 | firm orders 未完成部分，不含 IDIQ 未行使选项 |
+| 12 个月内预计转收入 | `71%`，约 `$3.46B` | 覆盖 FY2026 guide `$6.415B` 的约 `54%` |
+| Q1 book-to-bill | `1.16` | Q1 bookings 近似 `$1.81B`，超过当季收入 |
+| 连续 book-to-bill >1 | `10` 个季度 | 订单不是单季噪音 |
+| Digital Imaging book-to-bill | `~1.38` | 当前最强订单来自 imaging / FLIR / DALSA/e2v |
+| Instrumentation book-to-bill | 略高于 `1` | test/marine/environmental 混合；T&M Q1 收入弱但订单不差 |
+| CapEx | Q1 `$29.7M` vs 2025Q1 `$18.0M` | 公司正在扩产/投资，管理层称某些区域需求大于产能 |
+| 合同负债 | 2026Q1 `$437.0M` vs 2025YE `$403.2M` | 客户 advances 增加，支持 backlog 质量 |
+
+### 8.2 未来一年业务增速预测
+
+| 业务 | 基准增速 | 乐观增速 | 极度乐观增速 | 订单和供给逻辑 |
+|---|---:|---:|---:|---|
+| 公司整体 | `+5-6%` | `+7-9%` | `+10-13%` | FY guide 已是 `+4.9%`; RPO 和 BTB 支持略上行；产能是局部约束 |
+| Digital Imaging | `+6-8%` | `+10-13%` | `+15-20%` | BTB `1.38`，FLIR/space/unmanned/MEMS 强；若产能释放更快可上修 |
+| Instrumentation | `+3-5%` | `+6-9%` | `+10-15%` | Marine/environmental 稳定；T&M 若 1.6T/PCIe/CXL 回暖则弹性大 |
+| Electronic T&M / AI high-speed test | `+20-35%` | `+45-75%` | `+90-140%` | 小基数；取决于 protocol analyzer rebound、Xena 1.6T adoption、测试设备交期 |
+| MEMS optical switching | `+20-35%` | `+45-70%` | `+100%+` | Q1 `+20%+` 是强线索，但需客户订单验证 |
+| A&D Electronics | `+8-12%` | `+15-22%` | `+30-40%` | Qioptiq / defense electronics organic `+8.4%`; defense orders强 |
+| Engineered Systems | `-3% to +2%` | `+2-6%` | `+8-12%` | NASA/energy/engineered products 项目波动，不是增长核心 |
+
+### 8.3 渠道验证和客户项目线索
+
+| 线索 | 客户/项目 | 金额/窗口 | 对预测的作用 |
+|---|---|---:|---|
+| Rogue 1 Marine Corps OPF-L | U.S. Marine Corps | 2025-12 公布 `$42.5M`，>600 systems | 证明 loitering munition 已进入正式采购 |
+| Rogue 1 / LASSO | U.S. Army LASSO | 2026 选择/评估批次线索 | 支持 FLIR Defense 上行，但订单节奏仍需跟踪 |
+| Counter-drone IR cameras/subsystems | 未披露防务客户 | Q1 and early Q2 orders `tens of millions` | 支持 Q2-Q4 Digital Imaging / FLIR orders |
+| Q1 BTB | 全公司 | `1.16`; Digital Imaging `1.38` | backlog 增长和 2026 guide 上调的核心依据 |
+| LeCroy / Xena AI data center | hyperscaler、semiconductor suppliers、data center device customers | 未披露金额 | 目前只能以产品和行业需求推断，缺客户项目名 |
+| DD-Scientific | industrial safety / healthcare / environmental compliance customers | 2026Q1 acquisition `$53.4M`; Q1 incremental environmental sales `$5.0M` | 支持 Instrumentation 小幅增长，不是 AI |
+
+### 8.4 取消率和交付窗口
+
+公司未披露 cancellations。当前可得信号更偏正面：RPO 从 2025 年末 `$4.612B` 升至 2026Q1 `$4.867B`，book-to-bill 连续 10 季 >1，contract liabilities 增加。风险在于：部分 defense/NASA/space program 预算可能延期；test & measurement 是短周期业务，若 1.6T/PCIe/CXL 客户 qual 推迟，订单会从某个季度后移，不一定取消。
+
+## 9. 竞争格局、替代风险和客户替换成本
+
+### 9.1 高速互连与协议测试
+
+| 子市场 | TDY 产品/位置 | 主要竞争对手 | 竞争格局 | 客户替换成本 |
+|---|---|---|---|---|
+| 高端示波器 / SI debug | WaveMaster 8000HD, SDA series | Keysight、Tektronix、Rohde & Schwarz、Anritsu | CR5 高；Keysight 更强在 end-to-end optical/EDA ecosystem，Tek/R&S/Anritsu 各有高端优势 | 中高：脚本、校准、golden correlation、工程师习惯形成粘性 |
+| PCIe/CXL protocol analyzer/exerciser | Summit M616 / M64 / M5x | Keysight、VIAVI Xgig、Synopsys/Cadence validation ecosystem、GRL/UNH-IOL labs | Teledyne LeCroy 是 PCIe protocol analyzer 强品牌；标准切换期受益 | 高：协议 decode、bug database、validation workflow、compliance 流程不易替换 |
+| Ethernet traffic generation / AI fabric test | Xena Z1608 Edun, Xena / SierraNet | VIAVI TestCenter、Keysight/Ixia、EXFO、VeEX、Spirent assets now VIAVI | VIAVI/Keysight 更大，Xena 小而专业；AI workload emulation 仍在重洗牌 | 中：traffic profiles、automation scripts、interop setup 有粘性 |
+| 光模块生产测试 | TDY 较弱，偏 protocol/traffic/oscilloscope | VIAVI、Keysight、EXFO、Anritsu、MultiLane、Quantifi、Yokogawa | 模块厂常多供应商；TDY 不占全栈主导 | 中 |
+
+新技术是否主流：1.6T Ethernet、224G、PCIe 6/7、CXL、UEC、AI fabric validation 是主流方向；CPO/CPX/OCS 是 2027-2028 重要方向但标准仍分裂。TDY 的测试工具受益于标准升级，但不一定是最大赢家。Keysight/VIAVI 的全栈能力、客户规模和 optical test breadth 是 TDY 的主要压力。
+
+### 9.2 MEMS optical switching
+
+| 项目 | 判断 |
+|---|---|
+| 技术前景 | AI fabric 和 hyperscale 网络对低功耗、低延迟、重构拓扑有需求；Google TPU / Apollo OCS 等行业信号说明 optical switching 是真实方向 |
+| TDY 位置 | 目前更像 MEMS foundry / component enabler，不是公开 OCS 系统供应商 |
+| 竞争对手 | Lumentum MEMS/OCS、Coherent/Polatis、CALIENT、Google internal、硅光/集成光子方案、电子交换和 packet switching |
+| 替代风险 | 如果 optical switching 被硅光、coherent-lite 或传统电交换/packet scheduling 替代，MEMS 需求低于预期 |
+| 客户替换成本 | 一旦 MEMS die/process 被客户 design-in，替换成本中高；但未 design-in 前竞争充分 |
+
+### 9.3 Machine vision / semiconductor inspection
+
+| 项目 | 判断 |
+|---|---|
+| TDY 位置 | 传感器/相机/高速成像组件供应商，可能进入检测设备、工业自动化、半导体 inspection |
+| 竞争对手 | Sony sensor、onsemi、Hamamatsu、Basler、Cognex、Keyence、Omron、KLA/Onto/Camtek 内部成像链、国内工业相机厂 |
+| 新技术主流性 | AI 芯片良率、HBM/advanced packaging 和高速检测都需要更高性能成像；趋势主流 |
+| 风险 | 客户自研、传感器 commoditization、检测设备商垂直整合、半导体 capex 周期 |
+| 替换成本 | 进入检测工具后中高；单独相机/传感器模块则中等 |
+
+### 9.4 FLIR Defense / unmanned / IR
+
+| 项目 | 判断 |
+|---|---|
+| 竞争对手 | RTX/Raytheon、L3Harris/Wescam、Leonardo DRS、BAE、Safran、Elbit、Anduril、AeroVironment、Skydio、Parrot、Uvision、AeroVironment Switchblade |
+| 新产品主流性 | 小型 ISR drone、loitering munition、counter-drone IR sensing 是 2026 防务主流方向 |
+| 风险 | 国防预算、program timing、出口管制、战场反馈、低成本商业无人机替代 |
+| 客户替换成本 | 高：军方认证、训练、维修、软件、载荷、供应链安全和战术流程 |
+
+### 9.5 A&D Electronics / Qioptiq
+
+| 项目 | 判断 |
+|---|---|
+| 竞争对手 | L3Harris、Curtiss-Wright、Moog、TransDigm、Crane、HEICO、Amphenol/TE harsh interconnect、Safran/Thales optics |
+| 优势 | 光学系统、恶劣环境互连、防务电子、卫星通信和认证积累 |
+| 风险 | program delay、fixed-price contract cost overrun、整合 Qioptiq、采购预算波动 |
+| 客户替换成本 | 中高：qualification、export compliance、platform lifecycle 形成粘性 |
+
+## 10. 需要持续跟踪的 15 个硬指标
+
+1. TDY quarterly book-to-bill 是否继续 >1，特别是 Digital Imaging 是否维持 >1.2。
+2. RPO 是否继续从 `$4.867B` 增长，且 12 个月转收入比例是否维持 `70%+`。
+3. Electronic test & measurement 是否从 2026Q1 `-3.7%` 转正。
+4. 管理层是否开始单独提及 1.6T、PCIe 6/7、CXL、AI data center test orders。
+5. Xena Z1608 / 1.6T Ethernet traffic test 是否出现客户名、认证实验室或 production test 订单。
+6. Summit M616 是否在 CXL / PCI-SIG / server OEM certification 中获得更多正式背书。
+7. MEMS `+20%+` 是否延续，以及 optical switching / high-speed networking 是否从表述变为订单。
+8. 工业机器视觉和 semiconductor inspection 是否连续增长。
+9. FLIR Defense growth 是否达到管理层约 `+9%` 目标。
+10. Rogue 1 / Black Hornet / counter-drone 是否有更多 program award 和交付窗口。
+11. Qioptiq acquisition 毛利是否改善，A&D Electronics margin 是否维持 `25%+`。
+12. Inventory 是否随产能投入转化为收入，而不是积压。
+13. CapEx 增加是否带来产能释放和 second-half sales。
+14. 1.6T optical module / CPO / PCIe/CXL 行业实际出货是否按项目内行业资料兑现。
+15. 估值是否仍按 `25-27x` forward non-GAAP EPS 支撑；若 AI 期权不兑现而 defense 增速回落，估值弹性有限。
+
+## 11. 资料来源和交叉验证
+
+### 11.1 公司一手和财务资料
+
+- Teledyne 2026Q1 earnings release: https://www.teledyne.com/en-us/investors/Documents/2026%20Q1%20-%20Teledyne%20Earnings%20Release.pdf
+- Teledyne 2026Q1 Form 10-Q / SEC: https://www.sec.gov/Archives/edgar/data/1094285/000109428526000030/tdy-20260329.htm
+- Teledyne 2025 Annual Report: https://www.teledyne.com/en-us/investors/Documents/2025%20Teledyne%20Annual%20Report.pdf
+- Teledyne 2025Q4 earnings release: https://www.teledyne.com/en-us/investors/Documents/2025%20Q4%20-%20Teledyne%20Earnings%20Release.pdf
+- Teledyne 2025Q3 earnings release: https://www.teledyne.com/en-us/investors/Documents/2025%20Q3%20-%20Teledyne%20Earnings%20Release.pdf
+- Teledyne 2025Q2 earnings release: https://www.teledyne.com/en-us/investors/Documents/2025%20Q2%20-%20Teledyne%20Earnings%20Release.pdf
+- Teledyne 2025Q1 earnings release / SEC exhibit: https://www.sec.gov/Archives/edgar/data/1094285/000109428525000062/q1-2025earningsrelease.htm
+- Teledyne Q1 2026 earnings call transcript, The Motley Fool: https://www.fool.com/earnings/call-transcripts/2026/04/22/teledyne-tdy-q1-2026-earnings-call-transcript/
+- Teledyne Q1 2026 earnings call transcript, Investing.com: https://www.investing.com/news/transcripts/earnings-call-transcript-teledyne-technologies-beats-q1-2026-forecasts-93CH-4630118
+
+### 11.2 产品和技术资料
+
+- Teledyne LeCroy AI / hyperscale test page: https://www.teledynelecroy.com/serialdata/artificial_intelligence
+- Teledyne LeCroy Summit M616 protocol analyzer: https://www.teledynelecroy.com/protocolanalyzer/summit-m616-analyzer
+- Teledyne LeCroy WaveMaster 8000HD: https://www.teledynelecroy.com/oscilloscope/wavemaster-hd
+- Teledyne LeCroy WaveMaster 8000HD press release: https://www.teledynelecroy.com/pressreleases/document.aspx?capid=107&mid=554&news_id=2210
+- Teledyne to acquire Xena Networks: https://www.teledyne.com/en-us/news/Pages/teledyne-to-acquire-xena-networks.aspx
+- Xena Z1608 Edun 1.6T / 224G Ethernet testing: https://xenanetworks.com/edun-1600g-pam4-ethernet-testing-224gbps-serdes/
+- Xena Terabit Ethernet / UEC page: https://xenanetworks.com/solutions/tbps/
+- CXL Consortium / Teledyne LeCroy M616 CXL 3.x demo: https://computeexpresslink.org/blog/teledyne-lecroy-to-demonstrate-protocol-analyzer-and-protocol-exerciser-for-cxl-3-x-at-devcon-2025-3829/
+- Teledyne Imaging MEMS: https://www.teledyneimaging.com/en/mems/
+- Teledyne e2v industrial machine vision: https://www.teledyne-e2v.com/en-us/markets/industrial-machine-vision
+- Teledyne FLIR Rogue 1: https://defense.flir.com/defense-products/rogue-1/
+- U.S. Marine Corps Rogue 1 contract: https://www.teledyne.com/en-us/news/Pages/teledyne-flir-defense-awarded-42-5-million-drone-contract-for-us-marine-corps-organic-precision-fires-light-program.aspx
+- U.S. Army LASSO Rogue 1 selection: https://defense.flir.com/about/news/u.s.-army-selects-teledyne-flir-defense-rogue-1-loitering-munition-system-for-lasso-program/
+
+### 11.3 行情和估值资料
+
+- MarketWatch TDY quote page, 2026-06-11 盘中报价: https://www.marketwatch.com/investing/stock/tdy
+- Yahoo Finance TDY quote page, 2026-06-10 forward P/E / market cap snapshot: https://finance.yahoo.com/quote/TDY/
+- Google Finance TDY quote page, 2026-06-11 intraday snapshot: https://www.google.com/finance/quote/TDY:NYSE
+
+### 11.4 项目内行业资料
+
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_PCIe_CXL高速IO交换与Retimer_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+

@@ -1,0 +1,395 @@
+# PH Parker-Hannifin 公司调研：工业流体控制、航空系统与 AI 数据中心液冷部件的复合型龙头
+
+报告日期：2026-06-11  
+公司：Parker-Hannifin Corporation  
+股票代码：PH  
+交易所：NYSE  
+会计年度：6 月末财年；本文所称 FY2026 Q3 为截至 2026-03-31 的季度。  
+资料边界：公司侧使用 Parker-Hannifin 官方公告、10-Q/10-K、投资者材料、产品页、近期行业会议/论坛公开信息及行情数据；项目内只使用 `行业调研/` 下 AI 园区电力、机电、冷却相关资料。未读取 `特征量化/`，未修改 `公司调研/公司索引.md`。  
+
+## 0. 核心结论
+
+Parker-Hannifin 是一家高质量、强现金流、强并购整合能力的工业与航空运动控制公司，不是纯 AI 数据中心公司。投资人通常把 PH 看成“工业复合增长器”：核心是 Win Strategy 驱动的利润率提升、周期波动中的工业组合韧性、Meggitt 并购后航空业务占比和利润率上行，以及自由现金流持续转化。AI 数据中心对 PH 的意义不是 GPU 或服务器主设备，而是液冷流体连接、软管/管路、阀、密封、过滤、热界面/EMI 材料和备用燃气发电过滤等“高可靠小部件”。这些部件在 AI 基建 BOM 中金额占比不大，但在漏液风险、停机风险、维护便利性和认证切换成本上很关键。
+
+截至 2026-06-11 14:20 PT，PH 股价约 902.37 美元，市值约 1138 亿美元，TTM PE 约 33.3x；截至 2026-06-10/11 的第三方统计口径，forward PE 约 25.5-25.8x、PS 约 5.4x、TTM 收入约 209.9 亿美元、TTM 净利率约 16.6%、毛利率约 37.4%。估值已经反映了高质量工业股、航空复合增长和并购增厚预期，短期风险在于 FY2026 已经接近高利润率区间、Filtration Group 92.5 亿美元收购将抬升债务、AI 数据中心收入披露少且可能被市场高估。
+
+FY2026 Q3 是最新一次财报：销售额 54.86 亿美元，同比 +10.6%、有机 +6.3%；调整 EPS 8.17 美元，同比 +13%；调整分部经营利润率 26.7%；订单同比 +9%；期末 backlog 124.79 亿美元。公司上调 FY2026 指引至全年销售增长约 +7.0%、有机增长约 +5.5%、调整分部经营利润率约 27.2%、调整 EPS 31.20 美元。航空系统是最强确定性增长引擎，Q3 销售 18.14 亿美元，同比 +15.5%，调整经营利润率 29.5%，backlog 84.14 亿美元且交付周期 12-18 个月。工业北美和国际合计 Q3 销售 36.72 亿美元，增长更温和，但 AI 数据中心液冷/过滤机会主要藏在 Flow Control 与 Filtration & Engineered Materials 里。
+
+对 AI 数据中心的判断需要克制：PH 未披露数据中心收入，也未披露液冷 backlog。基于公司产品页、2025-2026 数据中心会议露出、项目内行业测算和公开渠道，本文估计 PH 当前 AI 数据中心直接相关收入大概率仍是 1-3 亿美元级别，约占公司收入 0.5%-1.5%；若把工业冷却、电源过滤、密封材料等更宽口径纳入，可能达到 2-5 亿美元级别，但仍不是公司主收入来源。真正的投资弹性来自：2026-2027 AI 机柜从风冷/后门换热向 direct-to-chip 液冷加速时，UQD/BMQC/NSP/NSG/CDT 快速接头、Parflex PCT/CVH01/SP2P 管路、密封/过滤/阀和传感器被更多 CDU、机柜、服务器和 hyperscaler 标准件平台采纳。
+
+## 1. 公司整体业务、定位与财务健康
+
+### 1.1 公司是什么
+
+Parker-Hannifin 是运动与控制技术公司，业务横跨工业和航空两大终端市场。公司的核心能力不是单一产品，而是把液压、气动、电动执行、流体连接、过滤、密封、工程材料、航空燃油/液压/飞控/热管理等产品打包成高可靠系统和部件组合。其产品通常占客户整机 BOM 比例不高，但一旦进入平台设计、认证、维护手册和供应链体系，替换成本较高。
+
+公司 FY2025 全年销售额 198.5 亿美元，按分部大致为：
+
+| 分部 | FY2025 销售额 | 收入占比 | 业务本质 |
+|---|---:|---:|---|
+| Diversified Industrial North America | 80.53 亿美元 | 40.6% | 北美工业运动控制、流体连接、过滤、密封、工程材料 |
+| Diversified Industrial International | 57.39 亿美元 | 28.9% | 国际工业运动控制、流体连接、过滤、密封、工程材料 |
+| Aerospace Systems | 60.63 亿美元 | 30.5% | 商用/军用航空 OEM 和 aftermarket 的飞控、燃油、液压、发动机与热管理系统 |
+
+按工业技术平台与航空终端市场拆分，FY2025 工业端中 Motion Systems 为 33.41 亿美元、Flow Control 为 45.18 亿美元、Filtration & Engineered Materials 为 58.06 亿美元；航空端中 commercial OEM 为 19.15 亿美元、commercial aftermarket 为 22.14 亿美元、defense OEM 为 11.38 亿美元、defense aftermarket 为 9.18 亿美元。
+
+### 1.2 投资人心中的 PH
+
+投资人对 PH 的典型认知是：
+
+- 高质量工业股：收入随制造业、航空、能源、工程机械、交通、电气化和数据中心资本开支波动，但长期通过价格、产品组合、并购整合和运营效率提升利润率。
+- Win Strategy 复合器：公司多年强调精益运营、去中心化业务责任、现金流和资本配置。2024 Investor Day 给出的 FY2029 目标是有机收入 CAGR 4%-6%、调整分部经营利润率 28%-30%、调整 EPS CAGR 10%+、自由现金流转化 100%+。
+- 航空业务再评级载体：Meggitt 并购后，航空系统占比上升，commercial aftermarket 和 defense aftermarket 带来更高可见度和利润率。
+- AI 数据中心不是主线但有可选项：PH 在液冷接头、管路、阀、密封、过滤和备用燃气发电过滤中有真实产品，但未披露规模。市场若把 PH 当作“AI 液冷核心股”会过度简化；更准确的定位是“AI 液冷和数据中心电力可靠性供应链中的多品类小部件平台”。
+
+### 1.3 最近三年重大业务变动、转型和收购
+
+| 时间 | 事件 | 交易/规模 | 对业务结构的意义 |
+|---|---|---:|---|
+| 2022 | 完成 Meggitt 收购 | 约 63 亿英镑企业价值口径 | 航空系统规模和 aftermarket 暴露显著提高；PH 从工业周期股更像“工业+航空复合股” |
+| 2024-11 | Investor Day 更新长期目标 | FY2029 有机 CAGR 4%-6%、调整分部利润率 28%-30% | 市场锚定利润率扩张和 EPS CAGR 10%+，估值上限被抬高 |
+| 2025-09 | 宣布收购 Curtis Instruments | 约 10 亿美元现金；Curtis FY2025E 收入约 3.2 亿美元 | 增强电气化控制器、仪表和电源转换能力，主要面向物料搬运、越野车辆、特种移动平台 |
+| 2025-11 | 宣布收购 Filtration Group | 约 92.5 亿美元现金；目标 FY2025E 收入约 20 亿美元、调整 EBITDA margin 约 23.5% | 大幅加码过滤、生命科学、HVAC/R 和工业技术；若顺利完成，将提高 recurring consumables 暴露，但短期加杠杆 |
+| 2025-2026 | 数据中心液冷和电力可靠性产品密集露出 | Data Center World 2026、COMPUTEX 2026、SC25、OCP/CoolIT 论坛等 | 显示 PH 正把 Flow Control、Parflex、密封、过滤、热界面/EMI 等产品组合推向 AI 数据中心；目前仍未披露收入 |
+
+### 1.4 产业链定位
+
+PH 在传统产业链中处于高可靠运动控制和流体控制供应商位置：
+
+- 工业设备链：向工程机械、工厂自动化、过程工业、能源、交通、半导体设备、数据中心和一般制造客户供应液压/气动/电动执行、软管、接头、阀、过滤器、密封、传感和控制部件。
+- 航空链：向飞机 OEM、发动机厂、军工平台和 MRO/aftermarket 供应飞控、燃油、液压、发动机相关和热管理系统。
+- AI 数据中心链：位于 GPU/server 之外的基础设施层，主要是 liquid cooling loop 和 power reliability 的小部件：quick disconnect、blind-mate coupling、hose/tubing、fitting、seal、gasket、valve、filter、coolant management、thermal interface、EMI shielding、gas turbine air intake filtration。PH 不是 CDU 主机、冷板主机、整柜服务器或 GPU 供应商。
+
+### 1.5 最新股价、估值与盈利能力快照
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | 902.37 美元 | 2026-06-11 14:20 PT | 实时报价快照 |
+| 市值 | 约 1138 亿美元 | 2026-06-11 14:20 PT | 实时报价快照 |
+| TTM PE | 约 33.3x | 2026-06-11 | 实时报价/EPS TTM 口径 |
+| Forward PE | 约 25.5-25.8x | 2026-06-10/11 第三方统计 | 取 StockAnalysis/Yahoo 附近口径 |
+| PS | 约 5.4x | 2026-06-10/11 第三方统计 | 市值/TTM 收入 |
+| TTM 收入 | 约 209.9 亿美元 | 截至 FY2026 Q3 TTM | FY2026 前三季度 157.44 亿美元 + FY2025 Q4 52.43 亿美元 |
+| TTM 收入增速 | 约 +6.9% | 2026-06-10 第三方统计 | 与公司 FY2026 有机增长趋势一致 |
+| 毛利率 | 约 37.4% TTM；FY2026 前三季度约 38.4% | TTM/10-Q | Q3 FY2026 单季 gross profit 21.16 亿美元，sales 54.86 亿美元 |
+| 净利率 | 约 16.6% TTM；FY2026 Q3 单季约 16.5% | TTM/10-Q | Q3 净利润 9.04 亿美元 |
+| FY2026 调整 EPS 指引 | 31.20 美元 | 2026-04-30 指引 | 公司上调后的全年指引 |
+| FY2026 销售增长指引 | 约 +7.0%；有机约 +5.5% | 2026-04-30 指引 | 收购 +1.0%、剥离 -1.0%、汇率 +1.5% |
+| FY2026 调整分部经营利润率指引 | 约 27.2% | 2026-04-30 指引 | 接近长期 28%-30% 目标下沿 |
+
+估值结论：PH 的估值已经是高质量复合工业股价格，forward PE 25x+ 对应市场预期为：航空强劲、工业复苏、并购协同、现金流去杠杆和长期利润率上行。若 AI 数据中心液冷贡献被重新定价，会提供额外弹性；但在披露层面，AI 贡献还不足以独立支撑当前估值。
+
+### 1.6 资产负债表和财务健康
+
+截至 2026-03-31，PH 资产负债表核心数据：
+
+| 项目 | 数值 |
+|---|---:|
+| 现金及等价物 | 4.69 亿美元 |
+| 应收账款 | 37.90 亿美元 |
+| 存货 | 35.60 亿美元 |
+| 流动资产 | 83.08 亿美元 |
+| 流动负债 | 49.70 亿美元 |
+| 总资产 | 319.92 亿美元 |
+| 短债/一年内到期及短期借款 | 3.68 亿美元 |
+| 长期债务 | 99.98 亿美元 |
+| 总债务估计 | 103.66 亿美元 |
+| 股东权益 | 141.97 亿美元 |
+| 流动比率 | 约 1.67x |
+| 净债务 | 约 98.97 亿美元 |
+| 债务/资本 | 约 42% |
+
+财务健康程度：健康但并购后杠杆需要关注。PH 的 FY2025 operating cash flow 为 32 亿美元，约占销售额 16.1%；自由现金流 27 亿美元，约占销售额 13.8%，现金转化很强。现有流动性和现金流足以支撑运营、分红和常规并购整合。但如果 Filtration Group 92.5 亿美元现金收购完成，短期净债务会显著上升，去杠杆节奏、协同兑现和利息成本将成为估值敏感项。
+
+## 2. 最新和最近四次财报：收入、订单、backlog 与 AI 数据中心暴露
+
+重要说明：PH 披露总订单增长、总 backlog 和分部收入/利润，但不单独披露 AI 数据中心收入、液冷订单或液冷 backlog。下表中的 AI 数据中心收入占比是本文基于产品组合、行业容量、公开会议露出和工业分部规模做的估计，不是公司披露值。
+
+| 财季 | 公告日期 | 销售额与增长 | 调整 EPS / 利润率 | 订单、backlog 与交期 | 分部收入与增长 | 业务利润率 | AI 数据中心相关估计 |
+|---|---:|---:|---:|---|---|---|---|
+| FY2026 Q3，止 2026-03-31 | 2026-04-30 | 54.86 亿美元；reported +10.6%，organic +6.3% | 调整 EPS 8.17 美元，+13%；segment margin 23.4%，adjusted 26.7% | 订单同比 +9%；期末 backlog 124.79 亿美元；工业 backlog 约 3 个月，航空 backlog 约 12-18 个月 | 工业北美 21.41 亿美元，+5.4%，organic +2.8%；工业国际 15.31 亿美元，+12.7%，organic +3.3%；航空 18.14 亿美元，+15.5%，organic +14.2% | 工业北美 adjusted 25.4%；工业国际 adjusted 26.0%；航空 adjusted 29.5% | 估计 0.7-1.6 亿美元单季宽口径，约 1%-3% 销售额；直接液冷小部件更可能 0.3-0.8 亿美元 |
+| FY2026 Q2，止 2025-12-31 | 2026-01-29 | 51.74 亿美元；reported +9.1%，organic +6.6% | 调整 EPS 7.65 美元，+10%；segment margin 21.4%，adjusted 26.0% | 订单同比 +7%；期末 backlog 117 亿美元 | 工业北美 19.86 亿美元，+3.0%，organic +2.5%；工业国际 14.82 亿美元，+11.8%，organic +4.6%；航空 17.06 亿美元，+14.5%，organic +13.5% | 工业北美 adjusted 25.4%；工业国际 adjusted 26.0%；航空 adjusted 30.2% | 估计 0.6-1.4 亿美元单季宽口径；液冷产品处于更多样机/设计导入和小批量交付阶段 |
+| FY2026 Q1，止 2025-09-30 | 2025-10-30 | 50.84 亿美元；reported +3.7%，organic +5.0% | 调整 EPS 7.22 美元，+15%；segment margin 23.9%，adjusted 26.4% | 订单同比 +4%；期末 backlog 113 亿美元 | 工业北美 20.44 亿美元，-2.7%，organic +2.1%；工业国际 13.99 亿美元，+3.2%，organic +1.0%；航空 16.41 亿美元，+13.3%，organic +12.8% | 工业北美 adjusted 25.4%；工业国际 adjusted 25.0%；航空 adjusted 30.9% | 估计 0.5-1.2 亿美元单季宽口径；SC25/OCP 等渠道显示产品推介加强，但未见公司披露大单 |
+| FY2025 Q4，止 2025-06-30 | 2025-08-07 | 52.43 亿美元；reported +1.1%，organic +2.1% | 调整 EPS 7.69 美元，+15%；segment margin 25.2%，adjusted 26.4% | 订单同比 +4%；期末 backlog 110 亿美元 | 公司未在摘要页提供完整同比分部表；FY2025 全年工业北美 80.53 亿美元、工业国际 57.39 亿美元、航空 60.63 亿美元 | FY2025 全年 adjusted segment margin 26.3%；Q4 adjusted segment margin 26.4% | 估计 0.5-1.1 亿美元单季宽口径；AI 液冷仍处产品验证和早期部署 |
+| FY2025 Q3，止 2025-03-31 | 2025-05-01 | 49.60 亿美元；reported 约持平到小幅负增长 | 调整 EPS 6.94 美元；segment margin 23.7%，adjusted 26.4% | 订单同比 +1%；期末 backlog 105 亿美元 | 工业北美约 20 亿美元，reported -2.9%，organic -0.5%；工业国际约 14 亿美元，reported -2.9%，organic +0.4%；航空约 16 亿美元，reported +6.6%，organic +6.9% | 工业北美 adjusted 25.8%；工业国际 adjusted 24.1%；航空 adjusted 29.6% | 估计 0.3-0.8 亿美元单季宽口径；数据中心液冷不是当季披露主线 |
+
+### 2.1 Backlog 与 bookings 的含义
+
+FY2026 Q3 backlog 从 FY2026 Q2 的 117.07 亿美元升至 124.79 亿美元，单季增加约 7.71 亿美元。以 Q3 销售额 54.86 亿美元粗算，单季总 bookings 约为销售额 + backlog 增量，即约 62.57 亿美元，book-to-bill 约 1.14x。这与公司披露订单同比 +9% 一致，说明需求并非只靠价格或汇率支撑。
+
+分部看，FY2026 Q3 backlog 中航空为 84.14 亿美元，占总 backlog 67.4%；工业北美 25.11 亿美元、工业国际 15.54 亿美元，合计 40.65 亿美元。航空 Q3 销售额 18.14 亿美元，对应 backlog/revenue 约 4.6 个季度，且公司明确说航空 backlog 转化周期 12-18 个月；工业 Q3 销售额 36.72 亿美元，对应 backlog/revenue 约 1.1 个季度，公司称工业 backlog 约 3 个月。因此未来一年增长确定性主要在航空，AI 液冷若成单，更多体现为工业订单 mix 和小部件供需紧张，而不是已披露的独立 backlog。
+
+## 3. FY2026 最新指引、业务收入占比与产品线
+
+### 3.1 FY2026 最新指引
+
+公司在 2026-04-30 上调 FY2026 指引：
+
+| 指标 | FY2026 指引 |
+|---|---:|
+| 全年销售增长 | 约 +7.0% |
+| 有机销售增长 | 约 +5.5% |
+| 收购贡献 | 约 +1.0% |
+| 剥离影响 | 约 -1.0% |
+| 汇率影响 | 约 +1.5% |
+| 分部经营利润率 | 约 23.9% |
+| 调整分部经营利润率 | 约 27.2% |
+| GAAP EPS | 约 27.10 美元 |
+| 调整 EPS | 约 31.20 美元 |
+
+### 3.2 FY2026 Q3 业务收入占比
+
+| 分部/平台 | Q3 FY2026 收入 | 占 Q3 销售额 | 同比增长 | 重点判断 |
+|---|---:|---:|---:|---|
+| Diversified Industrial North America | 21.41 亿美元 | 39.0% | +5.4% | 北美工业已恢复到低中个位数增长；AI 数据中心液冷、过滤和电力可靠性主要藏在这里 |
+| Diversified Industrial International | 15.31 亿美元 | 27.9% | +12.7% | 汇率和收购帮助，但 organic +3.3%；欧洲/亚洲工业复苏仍温和 |
+| Aerospace Systems | 18.14 亿美元 | 33.1% | +15.5% | 最强增长与最高利润率分部；OEM 和 aftermarket 同时强 |
+| 工业 Motion Systems | 9.19 亿美元 | 16.8% | +11.0% | 运动控制和液压/电动执行；AI 数据中心直接性较弱 |
+| 工业 Flow Control | 12.20 亿美元 | 22.2% | +6.9% | AI 液冷最相关：接头、阀、软管、管路、流体连接 |
+| 工业 Filtration & Engineered Materials | 15.33 亿美元 | 28.0% | +7.9% | 数据中心空气/液体过滤、密封、热界面、EMI、工程材料相关 |
+| Aerospace commercial OEM | 6.01 亿美元 | 11.0% | +22.0% | 飞机产量和内容量驱动 |
+| Aerospace commercial aftermarket | 6.47 亿美元 | 11.8% | +13.9% | 高利润、高可见度，受航空利用率和机队老化驱动 |
+| Aerospace defense OEM | 3.24 亿美元 | 5.9% | +13.3% | 国防平台增长 |
+| Aerospace defense aftermarket | 2.42 亿美元 | 4.4% | +8.2% | 稳定但增速低于 commercial |
+
+### 3.3 产品、型号和 AI 数据中心相关度
+
+| 业务/产品族 | 对应产品和型号 | AI 数据中心相关度 | 收入/利润率判断 |
+|---|---|---|---|
+| 液冷快速接头与盲插连接 | UQD/UQDB universal quick disconnect，ORV BMQC blind-mate quick coupling，NSP1 dry-break quick coupling，NSG flat-face liquid cooling coupling，CDT high-flow dry-break coupling | 高。直接用于 direct-to-chip、rack manifold、冷板/服务器维护接口、CDU/机柜回路 | 单价不高但可靠性要求高；毛利率估计 35%-55%，认证后价格韧性好 |
+| 液冷软管、管路与连接件 | Parflex PCT liquid cooling tubing，CVH01 convoluted PTFE hose，SP2P liquid cooling hose，fittings，valves | 高。连接 CDU、rack manifold、服务器托盘、冷板和设施侧回路 | 量随液冷 rack 数增长；毛利率估计 30%-50%；替换成本来自材料兼容、泄漏测试和平台认证 |
+| 密封、O-ring、gasket、TIM、EMI shielding | Seals/O-rings/gaskets，thermal interface materials，EMI shielding | 中高。用于服务器、液冷接口、电源和高功率电子模块 | 单机价值小但 SKU 多；设计导入后稳定，毛利率可达 35%-55% |
+| 过滤与 coolant/fluid management | 液体过滤、颗粒控制、离子交换/水质管理、传感监测、Clearcurrent PRO filters | 中高。冷却液清洁度、水质、腐蚀控制、维护可靠性是 liquid cooling 扩容瓶颈之一 | 数据中心宽口径增长高；Parker 过滤能力强，Filtration Group 完成后更强 |
+| 数据中心备用燃气发电空气过滤 | Gas turbine filterhouse、evaporative cooler、silencer、gas-phase filtration | 中高。AI 数据中心受电网接入限制，临时/长期燃气发电项目增加 | 订单大但项目型，毛利率估计 25%-40%；aftermarket 滤芯带来复购 |
+| 航空 flight control/fuel/hydraulic/thermal systems | 飞控、燃油、液压、发动机与热管理系统 | 低，非 AI | 高确定性增长，高利润；是公司最大和最稳增长引擎 |
+| Curtis electrification controls | 电机控制器、仪表、电源转换 | 低到中。更偏物料搬运和 off-highway 电气化 | 收购后约 3.2 亿美元收入基数，增长视电气化周期；与 AI 数据中心叉车/物流只有间接相关 |
+
+### 3.4 明确跳过或降权的低 AI 相关业务
+
+下列业务仍可能盈利好，但在本报告的 AI 数据中心重点分析中降权：
+
+- 传统工业液压缸、普通气动元件、一般工业软管和低压接头：收入基数大，但与 AI 数据中心增量不直接。
+- 传统工程机械、农业、矿业、油气设备用运动控制：周期性强，AI 相关度低。
+- 航空 OEM/aftermarket：公司增长和利润核心，但非 AI 基建产品；本文单独保留为关键业务，不纳入 AI BOM。
+- Curtis 面向物料搬运和越野车辆的电气化控制：中长期不错，但不是 AI 数据中心主线。
+
+## 4. 当前高增长或关键业务：收入贡献、增速、紧急性、供需与溢价
+
+评分说明：重要性、紧急性、供需紧张、垄断/溢价能力均为 1-5 分，5 最高。
+
+| 关键业务/产品 | 当前收入贡献估计 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Aerospace Systems | 年化约 72.5 亿美元，Q3 18.14 亿美元 | Q3 +15.5%；organic +14.2% | 1 | 3 | 4 | 4 | 非 AI，但是真正支撑公司 FY2026 增长和利润率的核心业务；backlog 84.14 亿美元，12-18 个月可见度 |
+| Commercial aerospace aftermarket | 年化约 25-27 亿美元，Q3 6.47 亿美元 | Q3 +13.9% | 1 | 4 | 4 | 4 | 高毛利、高粘性；机队利用率、备件、维修周期驱动 |
+| AI 数据中心液冷连接与流体控制 | 直接收入估计 1.0-2.5 亿美元年化；宽口径 2-4 亿美元 | 估计 +30%-80% | 5 | 5 | 4 | 3 | PH 产品线齐全，但标准化会压低单件溢价；关键在被 hyperscaler/OEM/OCP 平台认证 |
+| AI 数据中心软管、管路、密封、TIM/EMI | 估计 0.8-2.0 亿美元年化 | 估计 +25%-70% | 4 | 5 | 3 | 3 | 液冷 rack 放量会推升小部件数量；Parker Parflex、seal 和 engineered materials 有组合优势 |
+| 数据中心过滤与 coolant/fluid management | 估计 0.5-1.5 亿美元年化，Filtration Group 完成后上限抬升 | 估计 +20%-60% | 4 | 4 | 3 | 3 | 冷却液可靠性、清洁度和维护从“辅料”变为 uptime 要素；PH/Filtration Group 有交叉销售潜力 |
+| 数据中心燃气发电空气过滤 | 已见 hyperscale Texas 项目；单项目模型估计 1500-7000 万美元设备内容量 | 项目型，可能 +50% 以上 | 3 | 4 | 3 | 3 | 电力短缺使 behind-the-meter gas power 增多；PH 过滤可切入，但订单不连续 |
+| Curtis electrification controls | 收购标的 FY2025E 收入 3.2 亿美元 | 估计中个位数到低双位数 | 1-2 | 2 | 2 | 3 | 对 PH 电气化能力有战略意义，但与 AI 数据中心弱相关 |
+
+当前最突出业务是 Aerospace Systems；最值得跟踪的小业务是 AI 数据中心液冷连接/软管/密封/过滤，因为收入基数小、品类适配度高、行业在 2026-2027 处于 rack 级液冷标准化和大规模导入阶段。
+
+## 5. 一年后收入贡献三情景
+
+假设区间为未来 12 个月，即大致到 2027 年中。下表为模型估计，不代表公司指引。
+
+| 业务/产品 | 当前年化收入估计 | 基准情景：一年后收入/增速 | 乐观情景：一年后收入/增速 | 极度乐观情景：一年后收入/增速 | AI 重要性变化 | 供需/溢价变化 |
+|---|---:|---:|---:|---:|---|---|
+| Aerospace Systems | 约 72.5 亿美元 | 78-82 亿美元，+8%-13% | 82-86 亿美元，+13%-19% | 86-90 亿美元，+19%-24% | 非 AI | 供应链仍紧，价格和 aftermarket mix 支撑利润率 |
+| Commercial aerospace aftermarket | 约 25-27 亿美元 | 28-30 亿美元，+8%-14% | 30-32 亿美元，+14%-22% | 32-34 亿美元，+22%-30% | 非 AI | 备件和维修粘性强，溢价能力高 |
+| AI 液冷 quick disconnect / blind-mate coupling / valves | 0.8-1.8 亿美元 | 1.25-3.0 亿美元，+40%-70% | 2.5-6.0 亿美元，+100%-200% | 5-10 亿美元，+250%-500% | 5，进入更多 GB300/ASIC rack 和 CDU 标准设计 | 标准件供给偏紧；若进入 hyperscaler AVL，溢价 12-24 个月较强 |
+| AI 液冷 hose/tubing/fitting/seal/TIM/EMI | 0.8-2.0 亿美元 | 1.2-3.0 亿美元，+35%-60% | 2.2-5.0 亿美元，+90%-160% | 4-8 亿美元，+250%-400% | 4-5，从样机/小批量转向批量 rack BOM | 供应紧张低于 coupling，但高洁净度材料和验证件有溢价 |
+| Coolant/fluid filtration and monitoring | 0.5-1.5 亿美元 | 0.8-2.2 亿美元，+30%-60% | 1.5-3.5 亿美元，+100%-160% | 3-6 亿美元，+250%-400% | 4，数据中心运维可靠性提升 | 过滤耗材复购带来 recurring，若与 Filtration Group 协同则上限提高 |
+| 数据中心燃气发电空气过滤 | 0.4-1.2 亿美元 | 0.75-2.0 亿美元，+40%-80% | 1.5-4.0 亿美元，+100%-250% | 3-7 亿美元，+300%-600% | 3，受电力接入瓶颈驱动 | 项目制波动大；若多地复制 Texas hyperscale gas project，短期爆发 |
+| Curtis electrification controls | 3.2 亿美元收购基数 | 3.4-3.7 亿美元，+5%-15% | 3.7-4.2 亿美元，+15%-30% | 4.2-5.0 亿美元，+30%-55% | 1-2 | 非 AI；取决于物料搬运和 off-highway 电气化周期 |
+
+极度乐观情景的前提非常苛刻：PH 必须进入多个 hyperscaler、GPU OEM、CDU、rack manifold 或 ORV/OCP 标准件平台，并且液冷 rack 在 2026-2027 年没有明显推迟；同时 Filtration Group 成功完成并快速把 HVAC/R、life sciences 和 industrial filtration 客户渠道导入数据中心。若只是普通工业订单复苏，AI 相关收入很难在一年内超过 10 亿美元。
+
+## 6. BOM、每 MW/每 rack/每 GPU/每 optical port 内容量、产能与认证
+
+### 6.1 AI 液冷 BOM 中 PH 的真实内容量
+
+项目内行业调研显示，2026-2027 AI 高密度 rack 的主流路线是 single-phase direct-to-chip cold plate + rack/row CDU + blind-mate quick disconnect + rack manifold + pump/valve/sensor/control + hybrid air residual heat。严格口径下，全球 direct liquid cooling 供应商收入 2026E 约 75-115 亿美元，2027E 约 130-220 亿美元；AI 高密度 rack 小组件/流体控制订单池 2026E 约 80-180 亿美元，2027E 约 180-350 亿美元。PH 可参与的是后者中的一部分。
+
+以下以 1 MW IT load、每 rack 150 kW、约 6.7 个 rack/MW、每 rack 72 个 GPU 或 AI ASIC 加速器为基准估算。
+
+| PH 可供应部件 | 每 rack 内容量估计 | 每 MW 内容量估计 | 每 GPU 内容量估计 | 每 optical port 内容量 | 价格传导链 | 可信度 |
+|---|---:|---:|---:|---:|---|---|
+| UQD/UQDB、ORV BMQC、NSP1、NSG、CDT quick disconnect / blind-mate coupling | 500-8000 美元 | 0.3-5.4 万美元 | 7-110 美元 | 0-2 美元，仅液冷光模块/交换机相关 | PH -> CDU/冷板/服务器/rack manifold OEM -> ODM/系统集成 -> hyperscaler | 中 |
+| Parflex PCT tubing、CVH01 PTFE hose、SP2P hose、fittings | 1000-10000 美元 | 0.7-6.7 万美元 | 14-139 美元 | 通常 0；若光模块液冷可有少量管路分摊 | PH -> hose/tubing assembly -> rack/CDU/服务器 OEM -> 数据中心客户 | 中 |
+| Valves、sensors、leak mitigation、flow control | 500-7000 美元 | 0.3-4.7 万美元 | 7-97 美元 | 0-1 美元 | PH -> CDU/rack manifold/设施侧集成商 -> 数据中心客户 | 低到中 |
+| Seals、O-rings、gaskets、TIM、EMI shielding | 500-5000 美元 | 0.3-3.3 万美元 | 7-69 美元 | 0.1-3 美元，取决于交换机/光模块设计 | PH -> 服务器/交换机/电源/冷却组件 OEM -> hyperscaler | 低到中 |
+| Liquid filtration、coolant conditioning、skid/filter/ion exchange | 500-7000 美元 | 0.3-4.7 万美元 | 7-97 美元 | 0 | PH -> CDU/设施水系统/运维服务商 -> 数据中心客户 | 低到中 |
+| PH 全套可获得内容量，低/中/高 | 3000-30000 美元/rack | 2-20 万美元/MW | 40-420 美元/GPU | 0-5 美元/port | 取决于是否拿到整套连接、管路、密封、过滤和阀，而非单一 SKU | 中 |
+
+关键解释：一个 150 kW 液冷 rack 全系统价值量可能为 8-30 万美元/rack；若纳入设施侧和工程，可能达到 20-80 万美元/rack。PH 如果只供 quick disconnect 或 hose，实际内容量可能低于 5000 美元/rack；如果在某一客户平台中同时供 coupling、hose/tubing、seal、valve、filter 和部分 thermal/EMI 材料，内容量可上升到 1-3 万美元/rack。
+
+### 6.2 数据中心备用燃气发电过滤内容量
+
+2025 年 10 月公开渠道显示，Parker Filtration Group 获得 Texas hyperscale data center 近 30 台 aeroderivative gas turbines 空气进气系统相关合同；另一公开信息显示 GE Vernova 将向 Texas Abilene/Stargate AI data center 供应 29 台 LM2500XPRESS 燃气轮机，总容量约 1.015 GW，设备自 2026 Q3 起交付。PH 未披露订单金额，以下为模型估计。
+
+| 内容量口径 | 估计 |
+|---|---:|
+| 每台燃气轮机 filterhouse、evaporative cooler、silencer、gas-phase filtration 初始设备内容量 | 50-250 万美元/台 |
+| 29 台燃气轮机项目 PH 初始设备金额 | 1500-7000 万美元 |
+| 每 MW 发电容量 PH 初始内容量 | 1.5-7.0 万美元/MW |
+| 每 150 kW AI rack 折算内容量 | 2250-10500 美元/rack |
+| 每 GPU 折算内容量，按 72 GPU/rack | 31-146 美元/GPU |
+| recurring filter/service | 约初始设备金额的 3%-10%/年，取决于运行小时、粉尘、气候和维护合同 |
+
+这类订单与液冷不同，核心驱动不是 GPU 冷却，而是数据中心电力可用性。AI 数据中心建设受电网排队、变压器交期、输电接入和备用电源冗余制约，behind-the-meter gas power 会阶段性放大过滤系统需求。但该业务项目制强，订单可见度低于航空 aftermarket。
+
+### 6.3 当前产能能力、采纳与认证
+
+| 业务/产品 | 当前产能能力，美元计估计 | 被供应链采纳程度 | 认证/标准阶段 | 主要不确定性 |
+|---|---:|---|---|---|
+| UQD/UQDB quick disconnect | 0.5-1.5 亿美元/年 | 已在 Intel UQD interface 生态中被列为 approved supplier；可与其他 Intel-approved suppliers 互换 | Intel UQD interface approved supplier；OCP/ORV 相关生态可参考 | 互换性提高后，价格和份额受 CPC、Stäubli、CEJN 等压制 |
+| ORV BMQC blind-mate coupling | 0.3-1.0 亿美元/年 | 面向 ORV/OCP-inspired rack liquid cooling，适合 blind mate 高密度机柜 | OCP-inspired ORV 设计，具体客户认证未披露 | 是否进入 hyperscaler 的标准 rack BOM |
+| NSP1/NSG/CDT couplings | 0.5-1.5 亿美元/年 | 数据中心、超级计算、电子冷却、电动车等多市场 | dry-break、flat-face、high-flow 等产品级认证/规格；客户认证未披露 | 数据中心专用 SKU 是否被大规模锁定 |
+| Parflex PCT/CVH01/SP2P hose/tubing | 0.5-2.0 亿美元/年 | 与 UQD/BMQC、rack manifold 和冷板系统适配 | CVH01、SP2P 等材料阻燃/耐温/洁净度规格公开；客户认证未披露 | 高洁净度产能、材料兼容和组装渠道 |
+| Seals/TIM/EMI | 0.5-2.0 亿美元/年 | Parker 工程材料平台覆盖服务器、电源、高功率电子 | 客户平台认证为关键，公开少 | 单件金额小，容易被分散供应 |
+| Coolant filtration/fluid management | 0.5-1.5 亿美元/年；Filtration Group 完成后上限显著抬升 | 数据中心水质/冷却液管理需求上升，但 PH 直接份额未披露 | 需通过 CDU、设施水系统、运维标准认证 | 竞争者多，客户可能用水处理和过滤专门厂商 |
+| Gas turbine air intake filtration | 1-3 亿美元/年可服务数据中心/能源项目 | 已有 hyperscale Texas 项目公开验证 | 项目工程认证，按 turbine/OEM/EPC 客户规格 | 项目制波动，是否重复复制 |
+
+## 7. 一年后产能、采纳与认证三情景
+
+| 产品/业务 | 基准情景：一年后产能/采纳/认证 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| Liquid cooling quick disconnect / BMQC | 年产能 2-4 亿美元；进入更多 CDU、rack manifold、服务器托盘客户 AVL；仍以项目和客户认证为主 | 年产能 4-8 亿美元；进入 2-3 个 hyperscaler 或 GPU/rack 平台标准 BOM；UQD/BMQC 出货显著放量 | 年产能 8-15 亿美元；多个 GB300/ASIC 液冷 rack 平台批量采用；短期交期拉长、价格韧性强 |
+| Hose/tubing/fitting/seal/TIM/EMI | 年产能 2-5 亿美元；随液冷 rack 放量稳步爬坡 | 年产能 5-10 亿美元；与 coupling 形成套包销售，ODM/CDU 客户多点采用 | 年产能 10-15 亿美元；PH 成为多个平台的 preferred fluid path package supplier |
+| Coolant filtration/fluid management | 年产能 1.5-3 亿美元；进入部分设施侧和 CDU 运维包 | 年产能 3-6 亿美元；Filtration Group 完成后带来 HVAC/R、life sciences、industrial filtration 渠道协同 | 年产能 6-10 亿美元；液冷数据中心将冷却液清洁度纳入强制运维标准，耗材复购形成 recurring |
+| Gas turbine air intake filtration | 年产能 2-5 亿美元；Texas 项目按 2026 Q3 后交付节奏确认 | 年产能 5-10 亿美元；多个 AI 数据中心复制 behind-the-meter gas power | 年产能 10-15 亿美元；燃气轮机/燃机发电成为 AI 数据中心电力瓶颈的主流解决之一，PH 过滤方案进入多项目 |
+| Aerospace Systems | 年产能/交付收入 78-82 亿美元；backlog 支撑 12-18 个月 | 82-86 亿美元；commercial aftermarket 和 defense OEM 同时强 | 86-90 亿美元；供应链瓶颈改善，OEM 交付恢复更快 |
+
+认证结论：AI 液冷不是简单“有产品就有收入”。真正决定收入弹性的是进入客户 AVL、OCP/ORV rack 设计、Intel UQD/互换标准、CDU/冷板/rack manifold 厂商认证和 hyperscaler 平台验证。PH 的优势是 SKU 齐、工程经验强、可靠性品牌好；劣势是竞争对手也能提供标准化接头和管路，且 hyperscaler 会压价并倾向多供。
+
+## 8. 基于 backlog、订单和供给的未来一年业务增速推断
+
+### 8.1 公司整体
+
+公司披露 FY2026 全年销售增长约 +7.0%，organic +5.5%。截至 Q3，前九个月销售额 157.44 亿美元；若全年按指引实现，FY2026 销售额大约 212-213 亿美元。未来一年，即 FY2027 上半年前后，基准增速应接近中高个位数：航空高双位数或低双位数增长，工业中个位数增长，收购提供额外外延增长。如果 Filtration Group 在 2026 年内完成，报告口径收入会有明显跳升，但有机增速不应混同。
+
+| 业务 | 当前订单/供给证据 | 基准增速 | 乐观增速 | 极度乐观增速 | 取消率/风险判断 |
+|---|---|---:|---:|---:|---|
+| Aerospace Systems | Q3 backlog 84.14 亿美元，交付周期 12-18 个月；Q3 organic +14.2% | +8%-13% | +13%-18% | +18%-22% | 取消率低；主要风险是 OEM 供应链、质量、交付节奏 |
+| 工业整体 | 工业 backlog 40.65 亿美元，约 3 个月；Q3 工业收入合计 +8.3% reported | +3%-6% | +6%-10% | +10%-15% | 周期性较高；PMI、资本开支和渠道库存影响明显 |
+| AI 液冷流体连接 | 未披露 backlog；会议露出和产品页增加；行业小组件池 2026E 80-180 亿美元、2027E 180-350 亿美元 | +40%-70% | +100%-200% | +250%-500% | 取消率中等；客户可延后数据中心或改用多供应商 |
+| Coolant filtration/fluid management | 未披露 backlog；行业 narrow pool 2026E 25-50 亿美元、2027E 40-85 亿美元 | +30%-60% | +100%-160% | +250%-400% | 取消率中等；运维标准和责任边界未完全统一 |
+| Gas turbine air filtration | Texas hyperscale 项目公开，设备 2026 Q3 后交付；金额未披露 | +40%-80% | +100%-250% | +300%-600% | 项目取消率低于一般工业订单，但新增项目波动大 |
+| Curtis electrification controls | 收购标的收入约 3.2 亿美元，预计 2025 年底前后完成 | +5%-15% | +15%-30% | +30%-55% | 与 AI 低相关；工业车辆电气化周期影响 |
+
+### 8.2 PH AI 数据中心收入的推断路径
+
+PH 未披露 AI 数据中心 backlog，因此本文用三条路径交叉验证：
+
+1. 行业需求池：项目内行业调研估算 AI 高密度 rack 小组件/流体控制订单池 2026E 80-180 亿美元，2027E 180-350 亿美元；若 PH 拿 1%-3% 份额，对应 2026 年 0.8-5.4 亿美元潜在订单池，2027 年 1.8-10.5 亿美元。
+2. 产品适配度：PH 同时覆盖 coupling、hose/tubing、fitting、valve、seal、filter、thermal/EMI，理论上可吃到单 rack 3000-30000 美元内容量；但现实中客户会分拆给 CPC/Stäubli/CEJN/Amphenol/TE/Swagelok/Vertiv/CoolIT 等供应商，PH 实际内容量可能只有理论值的一部分。
+3. 公开渠道验证：2025-2026 Parker 出现在 Data Center World、COMPUTEX、SC25 和 OCP/CoolIT 论坛，且展示产品与 AI 液冷直接相关；同时 Texas hyperscale gas turbine filtration 项目提供了数据中心电力侧订单验证。这证明机会存在，但还不足以证明公司已有十亿美元级 AI backlog。
+
+因此，未来 12 个月 PH AI 数据中心直接收入的最合理区间是：
+
+| 口径 | 收入区间 | 关键假设 |
+|---|---:|---|
+| 基准 | 2.5-6 亿美元 | 多个产品线增长，但主要仍是零散 design win、早期批量和项目交付 |
+| 乐观 | 6-12 亿美元 | 进入 2-3 个大客户标准设计，液冷 rack 扩容加速，gas power filtration 有新增大项目 |
+| 极度乐观 | 12-25 亿美元 | PH 拿到成套 fluid path 供应地位，Filtration Group 协同快速释放，多个 hyperscaler 同时批量采购 |
+
+## 9. 竞争格局、主流技术判断、替代风险与客户切换成本
+
+### 9.1 液冷流体连接和小部件竞争
+
+| 领域 | PH 主要竞争对手 | PH 优势 | PH 风险 |
+|---|---|---|---|
+| Quick disconnect / blind-mate coupling | Dover/CPC、Stäubli、CEJN、Danfoss、Amphenol、TE Connectivity、Molex、Swagelok | UQD/BMQC/NSP/NSG/CDT 产品线完整，品牌可靠，工业流体经验深 | OCP/Intel UQD 标准化降低差异化；客户多供压价 |
+| Hose/tubing/fitting | Gates、Swagelok、Danfoss、Eaton、Saint-Gobain、Trelleborg、Freudenberg、地方组装商 | Parflex 高洁净度和多材料能力，能与 coupling/seal 打包 | 单件壁垒较低，区域组装和价格竞争强 |
+| Seal/gasket/TIM/EMI | Trelleborg、Freudenberg、3M、Henkel、Parker 内部工程材料竞争对手、Laird/DuPont 等 | SKU 广、可按高功率电子平台定制 | 单机价值小且容易多供应商 |
+| Coolant filtration/water/fluid management | Donaldson、Pall/Danaher、Ecolab/CoolIT、Pentair、Evoqua/Xylem、3M、MANN+HUMMEL | Filtration 平台强，若 Filtration Group 完成后品类更完整 | 数据中心水处理生态分散，PH 不一定是主承包商 |
+| CDU/rack/设施集成 | Vertiv、Schneider/Motivair、CoolIT/Ecolab、nVent、Modine/Airedale、Boyd/Eaton、Delta、Supermicro | PH 可作为部件供应商进入多家平台，不押注单一系统商 | 若系统商垂直整合或锁定竞争部件，PH 份额受限 |
+
+技术主流判断：2026-2027 年，direct-to-chip single-phase liquid cooling 是 AI 高密度 rack 最现实的主流路线；immersion cooling 更像特定场景；two-phase direct-to-chip 仍需材料、维护、压力和供应链验证。PH 主要受益于 single-phase direct-to-chip 和混合液冷，因为这些路线需要大量可靠 fluid path 部件和可维护连接。
+
+### 9.2 航空系统竞争
+
+PH 航空系统的竞争对手包括 Honeywell Aerospace、RTX/Collins、Safran、Eaton Aerospace、Moog、Woodward、TransDigm、Crane、Triumph、Liebherr 等。PH 优势是平台认证、aftermarket 粘性、Meggitt 组合、飞控/燃油/液压/热管理能力。客户替换成本高，因为航空部件牵涉认证、可靠性记录、维修手册、备件库存和长期合同。风险是 OEM 交付节奏、质量问题、国防预算时点和供应链瓶颈。
+
+### 9.3 数据中心电力过滤竞争
+
+燃气轮机空气过滤和 gas-phase filtration 的竞争者包括 Donaldson、Camfil/AAF、MANN+HUMMEL、Pall/Danaher、3M 及 EPC/本地过滤系统供应商。PH 的优势是过滤工程经验、能源/燃机应用积累和项目执行能力；风险是订单项目制、客户集中度高、燃气发电政策/许可/燃料供应约束，以及未来电网接入改善后临时发电需求下降。
+
+### 9.4 替代方案和风险
+
+- 液冷标准化风险：Intel UQD、OCP/ORV 等标准提高互换性，有利于市场放大，但会降低单一供应商垄断性。
+- 价值量风险：PH 产品是关键小部件，但可能只占 rack BOM 的低个位数。市场若按整套液冷系统价值给 PH 估值，会高估。
+- 客户内制和平台锁定：CDU、冷板、rack manifold 或服务器 ODM 可能锁定自有供应链，PH 未必能进入核心 BOM。
+- AI capex 节奏风险：GPU 供给、变压器、并网、电力价格、数据中心审批都可能影响液冷部署节奏。
+- Filtration Group 收购风险：92.5 亿美元现金收购提高债务和整合复杂度，若协同不达预期，EPS accretion 和 ROIC 目标会受压。
+- 估值风险：PH 在 2026-06-11 已约 33x TTM PE、25x+ forward PE；如果工业复苏放缓或航空增速从高双位数回落，估值可能压缩。
+
+客户切换成本分层：
+
+| 领域 | 切换成本 | 原因 |
+|---|---|---|
+| 航空系统 | 很高 | 认证、维修手册、平台寿命、可靠性记录和长协 |
+| 数据中心 quick disconnect / BMQC | 中高 | 泄漏测试、流阻、材料兼容、维护流程、客户 AVL；但标准化提高可替换性 |
+| Hose/tubing/fitting | 中 | 材料、洁净度、弯曲半径、阻燃和组装认证；多供更容易 |
+| Filter/coolant management | 中 | 运维标准、颗粒/腐蚀责任边界、耗材替换流程 |
+| Gas turbine filtration | 中高 | 项目工程规格、turbine/OEM/EPC 认证和现场维护 |
+
+## 10. 投资跟踪清单
+
+未来 6-12 个月最值得跟踪的事实信号：
+
+1. FY2026 Q4 和 FY2027 初始指引中，订单增长是否继续高于销售增长，backlog 是否继续上行。
+2. 航空 backlog 是否维持 12-18 个月，commercial aftermarket 是否继续双位数增长。
+3. Filtration Group 交易是否按计划完成，融资成本、净杠杆和协同节奏如何。
+4. 公司是否首次量化 data center、liquid cooling、thermal management 或 AI infrastructure 收入。
+5. Parker 在 OCP、ORV、Intel UQD、GB300/ASIC rack、CDU、rack manifold、hyperscaler AVL 中是否有明确客户认证或 design win。
+6. Texas hyperscale gas turbine filtration 项目是否转化为更多同类订单，交付是否从 2026 Q3 开始确认。
+7. 液冷行业中 direct-to-chip 的部署节奏是否继续快于 immersion/two-phase；若 D2C 放缓，PH AI 弹性会明显下降。
+
+## 11. 结论
+
+PH 当前最可靠的投资逻辑不是 AI，而是航空系统高可见增长、工业温和复苏、Win Strategy 利润率提升和现金流。AI 数据中心液冷提供的是高弹性但低披露的可选项：产品真实、行业需求真实、会议和产品露出真实，但收入规模和 backlog 不透明。以 2026 年中信息看，合理的框架是把 PH 的 AI 数据中心相关收入视为数亿美元级别，而不是十亿美元级确定性业务。
+
+如果未来 12 个月 PH 披露或被渠道验证进入多个 hyperscaler 液冷 rack 标准 BOM，或者 Filtration Group 与数据中心过滤/冷却液管理协同明显，市场会重新评估其 Flow Control 和 Filtration & Engineered Materials 的增长上限。反之，如果 AI 液冷订单只停留在产品展示和小批量项目，PH 仍是一只高质量工业/航空复合股，但 AI 溢价不应过高。
+
+## 12. 主要资料来源
+
+### 公司公告、财报和投资者资料
+
+- Parker FY2026 Q3 results press release，2026-04-30：https://investors.parker.com/news-events/press-releases/detail/506/parker-reports-fiscal-2026-third-quarter-results
+- Parker FY2026 Q3 Form 10-Q，quarter ended 2026-03-31：https://investors.parker.com/sec-filings/all-sec-filings/content/0000076334-26-000073/ph-20260331.htm
+- Parker FY2026 Q2 results press release，2026-01-29：https://investors.parker.com/news-events/press-releases/detail/502/parker-reports-fiscal-2026-second-quarter-results
+- Parker FY2026 Q1 results press release，2025-10-30：https://investors.parker.com/news-events/press-releases/detail/497/parker-reports-fiscal-2026-first-quarter-results
+- Parker FY2025 Q4 and full-year results press release，2025-08-07：https://investors.parker.com/news-events/press-releases/detail/487/parker-reports-fiscal-2025-fourth-quarter-and-full-year
+- Parker FY2025 Q3 results press release，2025-05-01：https://investors.parker.com/news-events/press-releases/detail/483/parker-reports-fiscal-2025-third-quarter-results
+- Parker FY2025 Annual Report：https://investors.parker.com/sec-filings/annual-reports/content/0000076334-25-000042/0000076334-25-000042.pdf
+- Parker Investor Day 2024 press release：https://investors.parker.com/news-events/press-releases/detail/459/parkers-promising-future-highlighted-at-investor-day
+- Parker to acquire Curtis Instruments，2025-09-02：https://investors.parker.com/news-events/press-releases/detail/493/parker-to-acquire-curtis-instruments-inc-a-leader-in
+- Parker to acquire Filtration Group，2025-11-03：https://investors.parker.com/news-events/press-releases/detail/496/parker-to-acquire-filtration-group-corporation
+
+### 产品、会议和行业渠道
+
+- Parker data center industry page：https://ph.parker.com/us/en/industries/data-centers
+- Parker liquid cooling thermal management for data centers：https://ph.parker.com/us/en/product-list/liquid-cooling-thermal-management-solutions-for-data-centers
+- Parker liquid cooling fittings, valves and connectors：https://ph.parker.com/us/en/product-list/liquid-cooling-fittings-valves-and-connectors
+- Parker UQD/UQDB couplings：https://ph.parker.com/us/en/product-list/universal-quick-disconnect-couplings-uqd-uqdb-series
+- Parker ORV BMQC blind-mate quick coupling：https://ph.parker.com/us/en/product-list/orv-series-blind-mate-quick-coupling-for-liquid-cooling-bmqc
+- Parker NSP1 quick couplings：https://ph.parker.com/us/en/product-list/flat-face-hydraulic-liquid-cooling-quick-connect-couplings-nsp-series
+- Parker NSG liquid cooling couplings：https://ph.parker.com/us/en/product-list/flat-face-liquid-cooling-quick-connect-couplings-nsg-series
+- Parker CDT high-flow liquid cooling coupling：https://ph.parker.com/us/en/product-list/high-flow-liquid-cooling-quick-coupling-cdt-series
+- Parker PCT liquid cooling tubing：https://ph.parker.com/us/en/product-list/liquid-cooling-tubing-pct-series
+- Parker CVH01 liquid cooling PTFE hose：https://ph.parker.com/us/en/product-list/liquid-cooling-convoluted-ptfe-hose-cvh01-series
+- Parker SP2P liquid cooling hose：https://ph.parker.com/us/en/product-list/liquid-cooling-hose-sp2p-series
+- Parker Data Center World 2026：https://discover.parker.com/data-center-world-2026
+- Parker COMPUTEX 2026：https://discover.parker.com/computex-2026
+- Parker SC25：https://discover.parker.com/sc25
+- OCP event, CoolIT and Parker liquid cooling innovation：https://connect.opencompute.org/events/6930b223-7a4c-482a-930f-0bd07698f83a
+- Automation.com, Parker hyperscale data center gas turbine air intake systems，2025-10：https://www.automation.com/en-us/articles/october-2025/parker-secures-major-contract-hyperscale-center
+- Data Center Dynamics, GE Vernova to supply 29 gas turbines to Stargate AI data center in Texas，2025-10：https://www.datacenterdynamics.com/en/news/ge-vernova-to-supply-29-gas-turbines-to-stargate-ai-data-center-in-texas/
+
+### 项目内行业资料
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-06-11.md`

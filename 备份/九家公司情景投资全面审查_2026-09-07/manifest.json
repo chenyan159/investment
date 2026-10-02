@@ -1,0 +1,65 @@
+[
+  {
+    "ticker": "MU",
+    "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MU_经营情景市场状态投资决策_2026-09-07.md",
+    "bytes": 97853,
+    "lines": 882,
+    "sha256": "7ee5620f959851b55ba9b8cf01f5ef8fe180978f58be0d21d255ab8526fc4bfb"
+  },
+  {
+    "ticker": "SNDK",
+    "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\SNDK_经营情景市场状态投资决策_2026-09-07.md",
+    "bytes": 98550,
+    "lines": 720,
+    "sha256": "3efe163ec0380f077f991b0c2498e1e3b2a631eac8e3244e9a89d81e24a3fcf7"
+  },
+  {
+    "ticker": "CRDO",
+    "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\CRDO_经营情景市场状态投资决策_2026-09-07.md",
+    "bytes": 93086,
+    "lines": 898,
+    "sha256": "f17e73b7c3a7f534a3ef84e1befc9a912187c56194abb920163ac1a580ec3be3"
+  },
+  {
+    "ticker": "GNRC",
+    "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\GNRC_经营情景市场状态投资决策_2026-09-07.md",
+    "bytes": 82148,
+    "lines": 601,
+    "sha256": "c85100f6d42b769581bcaac4cda288ecd015bded1c6571fc87089dc6ad4fec84"
+  },
+  {
+    "ticker": "LWLG",
+    "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\LWLG_经营情景市场状态投资决策_2026-09-07.md",
+    "bytes": 86043,
+    "lines": 635,
+    "sha256": "4696ebc82676ecd50060b9a0e35b9418af3ddf9231bac15af6f0fd5663428e92"
+  },
+  {
+    "ticker": "SPACEX",
+    "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\SPACEX_经营情景市场状态投资决策_2026-09-07.md",
+    "bytes": 89414,
+    "lines": 624,
+    "sha256": "8faf63113ae72183b209ac0af99676533fe70d769ea382afff506a5c9bf467ae"
+  },
+  {
+    "ticker": "GOOGL",
+    "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\GOOGL_经营情景市场状态投资决策_2026-09-07.md",
+    "bytes": 106871,
+    "lines": 1480,
+    "sha256": "1c92cf3cb4f4ca1fb058421193b31ecb73fb734365935d6d612dae53b0101d5e"
+  },
+  {
+    "ticker": "AMZN",
+    "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AMZN_经营情景市场状态投资决策_2026-09-07.md",
+    "bytes": 115878,
+    "lines": 1585,
+    "sha256": "ba4567e1119eebc141f945c6e7f15c5aaea18241fe567e9621c72d5839b8ec12"
+  },
+  {
+    "ticker": "BE",
+    "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\BE_经营情景市场状态投资决策_2026-09-07.md",
+    "bytes": 85220,
+    "lines": 673,
+    "sha256": "0c6c1b60ba04a2b238eeb01a2115e73e6689447ba98ff94ddecf4f7bca368167"
+  }
+]

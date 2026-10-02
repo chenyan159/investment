@@ -1,0 +1,320 @@
+# PLAB / Photronics 公司调研：高端光罩的 AI 设计迭代期权，当前仍是周期型 Merchant Mask Shop
+
+报告日期：2026-06-11  
+研究对象：Photronics, Inc. / NASDAQ: PLAB  
+正式归属目录：`公司调研/封测_检测_计量_光罩/`  
+本次本地交叉验证范围：仅使用 `行业调研/` 下的高端光罩、AI 芯片前道制造、AI 芯片先进封装、HBM 与高带宽内存等相关产业资料；未读取 `特征量化/`、`日度资料/` 或既有公司报告。
+
+## 0. 结论摘要
+
+Photronics 是全球独立商用 photomask / reticle 供应商，业务分为集成电路 IC 光罩和 FPD 显示光罩。它不是 AI 数据中心服务器、GPU、光模块或电力链的直接 BOM 公司；它的 AI 相关性来自更上游的设计迭代：AI GPU、AI ASIC、HBM、先进封装、OLED/IT 显示等产品每一次新平台、换节点、改版、respins、区域化备份和客户资格认证，都会产生 mask set 和工程光罩需求。
+
+投资人心中的 PLAB 更像“现金很厚、负债极低、周期性较强的独立光罩厂”，而不是纯 AI 高速增长股。其优势是 11 个制造设施、美国/亚洲区域覆盖、IC 和 FPD 双产品线、净现金约 6.34 亿美元、能够在高端 mask mix 好的时候维持较高利润率；短板是订单能见度很短、客户 tape-out 时间波动大、顶尖 EUV/High-NA 生态很大部分仍由晶圆厂自有 mask shop、DNP/Tekscend/TOPPAN 等日系和 captive 体系掌握。
+
+最新一季 FY2026 Q2（截至 2026-05-03）收入 2.099 亿美元，同比 -0.5%、环比 -6.7%；IC 1.475 亿美元，同比 -5%、环比 -11%；FPD 6243 万美元，同比 +13%、环比 +4%。更细拆分看，Q2 高端 IC 5666 万美元，同比 -4.5%，高端 FPD 5283 万美元，同比 +21.1%。这说明最新季度真正撑住增长的是高端 FPD，而不是 AI 芯片光罩；高端 IC 在 Q1 创纪录后 Q2 被设计释放延迟、晶圆厂高利用率、memory 约束和地缘不确定性拖累。
+
+AI 结论：PLAB 是 AI 产业链“设计迭代和先进制程/先进封装节奏”的间接受益者，AI 数据中心收入占比公司未披露。按 2026Q2 产品拆分，最可归因于 AI/HPC 的当季收入应主要藏在高端 IC 5666 万美元和少量先进封装/RDL/硅光相关 mask 中，模型估算 AI/HPC 直接驱动收入约 1000-2500 万美元/季，置信度低；乐观情景必须看到 Allen/Boise/Korea 新能力进入客户量产资格、lead time 拉长、Q3/Q4 指引上修，而不是仅看到 AI capex 增长。
+
+## 1. 公司业务、产业链位置与三年变化
+
+### 1.1 整体业务
+
+Photronics 制造 IC 与 FPD photomasks。光罩是高精度石英或玻璃板，上面承载电路或显示面板图形，作为晶圆或显示基板曝光时的母版。公司收入不是随每颗芯片出货线性计费，而是在客户新设计、换节点、改版、工艺验证、respins、资格认证和后续补充 mask 需求中确认。
+
+| 业务 | FY2026 Q2 收入 | 占比 | 同比 | 核心定义 | 投资意义 |
+|---|---:|---:|---:|---|---|
+| IC 高端光罩 | 5666 万美元 | 27.0% | -4.5% | 公司定义为 IC 28nm 及以下节点光罩；不等同于全部 EUV/3nm/2nm 顶尖层 | 最接近 AI GPU/ASIC/HBM/先进节点的业务，但 Q2 被设计释放延迟拖累 |
+| IC 主流光罩 | 9085 万美元 | 43.3% | -5.9% | IC 28nm 以上节点，覆盖模拟、MCU、功率、成熟逻辑、传感等 | 现金流和产能利用率底盘，增速低但利润率不一定差 |
+| FPD 高端光罩 | 5283 万美元 | 25.2% | +21.1% | AMOLED、G10.5+、LTPS 等显示用光罩 | Q2 最大亮点；与 AI 数据中心无直接关系，但 Korea G8.6 AMOLED 写入机是小型高端增长点 |
+| FPD 主流光罩 | 961 万美元 | 4.6% | -16.5% | G8 及以下 LCD 等成熟显示光罩 | 低优先级、周期性强、价格压力高 |
+
+### 1.2 产业链位置
+
+PLAB 位于设计公司/晶圆厂/面板厂和 lithography 曝光之间：EDA/OPC 数据完成后，mask shop 将设计图形写入石英/玻璃基板，经蚀刻、清洗、检查、修复、pellicle/包装后交付客户。上游包括 HOYA、AGC、Shin-Etsu、S&S、Schott 等 mask blank，NuFlare、IMS、JEOL、Mycronic 等 mask writer，KLA、Lasertec、ZEISS、Bruker 等检测/修复/计量工具；下游包括 foundry、IDM、memory、display panel 厂和部分 fabless/design house。
+
+项目内高端光罩行业资料给出的核心判断是：光罩不是 AI 数据中心资本开支中金额最大的环节，但在 2026-2027 年 AI 芯片迭代中是“设计速度和先进封装图形转移”的关键门。AI 需求向 PLAB 的传导路径不是“每 MW 多少美元光罩”，而是“更多 AI ASIC/GPU/HBM/先进封装平台 -> 更多 mask set/respins/qualification -> 高端 IC 或先进封装 mask 收入”。
+
+### 1.3 最近三年重大变化
+
+| 时间 | 事件 | 对业务的意义 |
+|---|---|---|
+| 2024-2026 | 高端 IC 和区域化产能投资加速，2026 年计划 capex 约 3.30 亿美元，主要在亚洲和美国 | 由存量成熟光罩厂向高端 IC、区域化/可信供应链、先进显示能力升级；短期压低 FCF，长期提升高端 mix |
+| 2025-08 | Boise, Idaho 安装美国 merchant 市场首台 multi-beam mask writer | 支持美国政府可信与商业 advanced photomask，能写复杂 curvilinear IC mask、EUV/nanoimprint mask；当前仍需客户 pilot 和 qualification |
+| 2025Q4-2026Q1 | 管理层多次提到高端 IC 收入创纪录，美国客户预测支持美国投资，韩国能力扩展有助于接触 leading-edge chip designs | 高端 IC 是公司最想强调的长期增长点 |
+| 2026-03 | 韩国工厂收到先进 FPD mask writer，计划 FY2026 Q2 安装，可支持 G8.6 AMOLED photomasks | 高端 FPD 从 LCD 周期转向 AMOLED/IT OLED；可能服务韩国/中国新世代 IT OLED 产能 |
+| 2026Q2 | IC 设计释放延迟、memory 约束、地缘政治不确定性导致 Q2 低于 Q1 和原先预期 | 证明 PLAB 的“订单能见度短 + 设计驱动”属性；AI 需求不能简单线性外推到当季收入 |
+
+未发现过去三年有改变公司性质的重大并购。公司转型主要是资本开支、工具升级、产品 mix 和地域能力升级，而不是通过收购切入新业务。
+
+## 2. 最新估值、经营指标和资产负债表
+
+估值和市场数据口径：StockAnalysis / S&P Global Market Intelligence，最后检查 2026-06-11；股价为 2026-06-11 美股收盘。季度财务数据以公司 2026-05-28 Q2 FY2026 公告和 2026Q2 10-Q 为准。
+
+| 指标 | 最新值 | 日期/口径 | 评价 |
+|---|---:|---|---|
+| 股价 | 30.73 美元 | 2026-06-11 收盘 | Q2 miss 后从高位大幅回落，估值重新压缩 |
+| 市值 | 18.1 亿美元 | 2026-06-11 | 小盘半导体材料/设备链公司 |
+| 企业价值 EV | 10.8 亿美元 | 2026-06-11 | 大量净现金使 EV 明显低于市值 |
+| Trailing PE | 11.26x | 2026-06-11 | 低估值，但反映低增长和周期不确定 |
+| Forward PE | 16.39x | 2026-06-11 | 市场预期未来 EPS 较过去 12 个月回落 |
+| PS | 1.98x | 2026-06-11 | 绝对不贵；若增长不恢复则不具备高 rerating 基础 |
+| TTM 收入 | 8.6117 亿美元 | 截至 2026-05-03，数据商口径 | 同比 +0.52%，基本停滞 |
+| FY2025 收入 | 8.4929 亿美元 | 截至 2025-10-31 | 同比 -2.04% |
+| TTM 毛利率 | 33.77% | 2026-06-11 数据商 | Q2 单季下滑到 31.3%，需看后续高端 mix 恢复 |
+| TTM 经营利润率 | 22.91% | 2026-06-11 数据商 | 历史上已不错，但固定成本结构使收入短缺时弹性向下 |
+| TTM 净利率 | 18.47% | 2026-06-11 数据商 | 税项/汇兑会扰动 GAAP 净利 |
+| 现金和短投 | 6.3767 亿美元 | 2026-05-03 | 其中大量在海外和 JV，仍是核心安全垫 |
+| 总债务 | 386 万美元 | 2026-05-03 | 几乎无债 |
+| 净现金 | 6.338 亿美元 | 2026-05-03 | 约等于市值的 35%，每股净现金约 10.75 美元 |
+| Current ratio | 5.05x | 2026-06-11 | 短债和流动性风险很低 |
+| FY2026 capex 计划 | 约 3.30 亿美元 | 2026Q2 10-Q | 大幅高于 FY2025 的 1.881 亿美元，短期压 FCF，长期押注高端与区域化 |
+
+资产负债表健康程度：非常健康。PLAB 的主要风险不是偿债，而是周期性、客户 design release 延迟、capex 后产能利用率不足、海外现金/合资公司分红节奏、汇率和地缘限制。2026Q2 总资产 19.31 亿美元、总权益 16.93 亿美元，长期债务仅 385 万美元；即使 FY2026 capex 提升到 3.30 亿美元，公司仍有足够现金、经营现金流和短投承受。
+
+## 3. 最近五个季度财报对比
+
+说明：PLAB 不披露 bookings、book-to-bill、取消率，也没有传统硬 backlog。公司 10-Q 披露通常需要短周期交付，IC 光罩 backlog 一般 1-2 周、FPD 2-3 周；某些 IC 产品需求超出常规时，可延长到 2-3 个月。下表的“订单/交期”用公司披露、财报电话会和收入指引做代理，不把它当作确认订单积压。
+
+| 财报季度 | 收入/增速 | IC 收入和拆分 | FPD 收入和拆分 | 利润率/EPS | 订单、交期、取消率 | AI/数据中心相关判断 |
+|---|---:|---:|---:|---:|---|---|
+| FY2026 Q2，截至 2026-05-03 | 2.099 亿美元，同比 -0.5%，环比 -6.7% | IC 1.475 亿美元，同比 -5%，环比 -11%；高端 IC 5666 万，主流 IC 9085 万 | FPD 6243 万美元，同比 +13%，环比 +4%；高端 FPD 5283 万，主流 FPD 961 万 | 毛利率 31.3%，经营利润率 20.1%，GAAP EPS 0.54，non-GAAP EPS 0.42 | 公司称设计释放延迟，原因包括晶圆厂高利用率、memory 供应/成本压力、地缘不确定性；未披露取消率 | AI 相关未披露；高端 IC 被拖累，不能证明 AI 订单加速；模型估算 AI/HPC 驱动约 1000-2500 万/季 |
+| FY2026 Q1，截至 2026-02-01 | 2.251 亿美元，同比 +6.1%，环比 +4.3% | IC 1.653 亿美元，同比 +7%，环比 +5%；高端 IC 7128 万，主流 IC 9401 万 | FPD 5980 万美元，同比 +3%，环比 +3%；高端 FPD 4695 万，主流 FPD 1283 万 | 毛利率 35.0%，经营利润率 24.4%，GAAP EPS 0.74，non-GAAP EPS 0.61 | 管理层称高端 IC 连续第二季创新高；typical backlog 仅 1-3 周 | 这是 AI/advanced node 叙事最强一季；但随后 Q2 说明订单时点波动大 |
+| FY2025 Q4，截至 2025-10-31 | 2.158 亿美元，同比 -3.1%，环比 +2.6% | IC 1.574 亿美元，同比 -4%，环比 +7% | FPD 5830 万美元，同比 -1%，环比 -7% | 毛利率 35.0%，经营利润率 24.1%，GAAP EPS 1.07，non-GAAP EPS 0.60 | 公司称 record high-end revenue，美国需求强，韩国 capability extension 将增加 leading-edge exposure | 高端 IC 强，但未量化 AI 占比；美国高端/可信供应链能力是 AI ASIC 潜在受益点 |
+| FY2025 Q3，截至 2025-08-03 | 2.104 亿美元，同比 -0.3%，环比 -0.3% | IC 1.478 亿美元，同比 -5%，环比 -5% | FPD 6260 万美元，同比 +14%，环比 +14% | 毛利率 33.7%，经营利润率 22.9%，GAAP EPS 0.39，non-GAAP EPS 0.51 | Q4 指引 2.01-2.09 亿美元；董事会追加 2500 万美元回购授权 | AI 传导仍不清晰；FPD 才是环比改善主因 |
+| FY2025 Q2，截至 2025-05-04 | 2.110 亿美元，同比 -3%，环比 -1% | IC 1.559 亿美元，同比 -3%，环比 +1%；高端 IC 5930 万，主流 IC 9658 万 | FPD 5510 万美元，同比 -2%，环比 -5%；高端 FPD 4361 万，主流 FPD 1150 万 | 毛利率 36.9%，经营利润率 26.4%，GAAP EPS 0.15，non-GAAP EPS 0.40 | Q3 指引 2.00-2.08 亿美元；Q2 GAAP EPS 受 FX 影响明显 | 仍是低增长周期位置；AI 对收入的直接带动未在披露中体现 |
+
+### 3.1 最新五季最重要的变化
+
+1. 高端 IC 不是线性上升：FY2026 Q1 高端 IC 7128 万美元，但 FY2026 Q2 降至 5666 万美元，环比 -20.5%。这与公司“设计释放延迟”的说法一致。
+2. FPD 高端在 FY2026 Q2 意外强：高端 FPD 5283 万美元，同比 +21.1%，占公司总收入 25.2%。这与韩国 G8.6 AMOLED mask writer 和 IT OLED/AMOLED 升级逻辑一致，但不是 AI 数据中心主线。
+3. 毛利率对收入和 mix 很敏感：FY2025 Q2 毛利率 36.9%，FY2026 Q2 降至 31.3%。Q2 的主要压力来自收入低于预期、人工/福利、材料和制造成本上升，固定成本结构明显。
+4. backlog 不能当成传统订单积压看：1-3 周交付属性使 PLAB 的真实订单能见度很短。更有用的领先指标是 high-end mask set 数量、工具 qualification、客户 design release 节奏、lead time 是否从 1-3 周拉长到 2-3 个月。
+
+## 4. 2026 最新指引、收入占比与产品拆分
+
+### 4.1 FY2026 Q3 指引
+
+公司在 2026-05-28 给出的 FY2026 Q3 指引：
+
+| 指标 | 指引 |
+|---|---:|
+| 收入 | 2.07-2.15 亿美元，中点 2.11 亿美元 |
+| 经营利润率 | 18%-20% |
+| non-GAAP diluted EPS | 0.39-0.45 美元 |
+
+这份指引低于 FY2026 Q1 的收入水平，也低于市场此前对“高端 IC + AI 相关设计”顺畅恢复的预期。它说明 Q2 的问题不是单纯春节季节性，而是客户设计释放和下游 memory/地缘约束仍有不确定性。
+
+### 4.2 FY2026 Q2 业务占比
+
+| 业务 | FY2026 Q2 收入 | 占公司收入 | 同比 | 环比 | 重要性 |
+|---|---:|---:|---:|---:|---|
+| 高端 IC | 5666 万美元 | 27.0% | -4.5% | -20.5% | 最关键 AI/先进节点暴露，但 Q2 下滑 |
+| 主流 IC | 9085 万美元 | 43.3% | -5.9% | -3.4% | 最大收入底盘，低增长但利润率不必然差 |
+| 高端 FPD | 5283 万美元 | 25.2% | +21.1% | +12.5% | 最新季度亮点，G8.6 AMOLED 是潜在小高增 |
+| 主流 FPD | 961 万美元 | 4.6% | -16.5% | -25.1% | 可跳过的低优先级业务 |
+
+### 4.3 产品与型号/能力映射
+
+PLAB 的“型号”不是标准化 SKU，而是按客户设计数据生成的 custom photomask。更合适的拆法是按工艺节点、基板尺寸、写入工具和应用拆分。
+
+| 产品/能力 | 对应业务 | 具体内容 | 2026 状态 | 是否重点 |
+|---|---|---|---|---|
+| 高端 IC photomasks，28nm 及以下 | 高端 IC | advanced DUV / EUV-adjacent / critical layer mask，含复杂 OPC/curvilinear 设计，客户定制 mask set | Boise multi-beam writer 已安装；美国 merchant high-end 能力被公司重点宣传 | 是，AI ASIC/GPU/HBM 间接暴露核心 |
+| 8nm 及以下能力扩展 | 高端 IC | 公司电话会提到 Allen, Texas 和 Korea 投资，未来几个季度增加 8nm 及以下 capability | 资格认证和初始收入仍在推进，2027 贡献更大 | 是，最重要的未来增量 |
+| EUV/nanoimprint mask 写入能力 | 高端 IC | multi-beam system 可写最细分辨率 EUV 和 nanoimprint masks | 仍需客户 pilot/qualify；顶尖 EUV 主量仍多在 captive/DNP/Tekscend | 是，但不能等同于已拿到大规模 N3/N2 EUV 订单 |
+| 先进封装/RDL/interposer/硅光相关 mask | 高端 IC/主流 IC 边界 | CoWoS/RDL/interposer、fan-out、玻璃/面板级封装、硅光/光 I/O 需要的图形转移 mask | 公司不单独披露；行业资料显示先进封装是 2026-2027 光罩小但高增的方向 | 是，小业务但不能漏 |
+| G8.6 AMOLED/IT OLED FPD photomasks | 高端 FPD | Korea 先进 FPD mask writer，支持 G8.6 AMOLED mask sizes、更高精度/稳定性/分辨率 | FY2026 Q2 高端 FPD +21.1%，工具安装在 Q2 | 是，非 AI 但高增长 |
+| G10.5+ / LTPS / AMOLED 既有高端 FPD | 高端 FPD | 大尺寸/高分辨率显示用 photomask | 周期性强，客户项目节奏决定收入 | 次重点 |
+| 主流 IC masks | 主流 IC | 28nm 以上成熟逻辑、模拟、MCU、功率、传感 | 收入最大，增速低 | 保留但不作为 AI 主线 |
+| 主流 LCD/G8 以下 FPD | 主流 FPD | 成熟 LCD/显示 | Q2 仅 961 万美元，同比和环比下降 | 跳过 |
+
+### 4.4 可以跳过的低增速业务
+
+主流 FPD、低世代 LCD、一般消费电子显示 mask、成熟主流 IC 中与 AI/HPC 无关的模拟/MCU/功率/消费类低端需求，都不是本次 AI 基建相关的核心驱动。它们对公司产能利用率和现金流重要，但不应作为 PLAB 的高成长逻辑。
+
+## 5. 关键产品当前贡献、AI 重要性、紧缺度和溢价能力
+
+下表收入贡献为模型估算，除公司披露的高端/主流拆分外，AI/HPC 归因并非公司披露。估算原则：以 FY2026 Q2 实际分业务收入为基底，将 high-end IC 中可能服务 AI GPU/ASIC/HBM/先进节点的部分按 20%-45% 归因；先进封装/RDL/硅光 mask 因未单列，作为 high-end/mainstream IC 中的小型叠加项。
+
+| 关键产品/业务 | 当前收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 |
+|---|---:|---:|---|---|---|---|
+| 高端 IC photomasks，28nm 及以下 | 披露 Q2 5666 万美元；年化约 2.27 亿美元 | Q2 同比 -4.5%，Q1 曾创纪录 | 中高：AI ASIC/GPU/HBM controller/先进节点需要 mask set，但 PLAB 不是最顶尖 EUV captive 主供应 | 中高：新平台 tape-out 一旦释放，交期短、客户要快 | 中：Q2 没有供不应求证据，反而设计延迟；部分产品 backlog 可延到 2-3 个月 | 中：高端资格认证和 TAT 有溢价，但 DNP/Tekscend/captive 竞争强 |
+| Allen/Boise/Korea 8nm 及以下和 multi-beam 能力 | 当前收入主要包含在高端 IC；新增贡献估算仍小于 1000 万美元/季 | 资格期，收入贡献偏早期 | 高：若能承接美国/区域化 AI ASIC 和 advanced mask，战略价值高 | 高：美国可信供应链、AI ASIC 本地化需求有时间压力 | 中高潜力：若客户 qualification 通过，领先 merchant 能力稀缺 | 中高：美国 merchant high-end 能力稀缺，但不是没有替代 |
+| 先进封装/RDL/interposer/硅光 mask | 估算 Q2 500-1500 万美元；年化 2000-6000 万美元 | 估算同比 +10%-30%，公司未披露 | 中高：CoWoS、RDL、fan-out、硅光/CPO 都需要图形转移，但价值量远低于 HBM/封装服务 | 中高：HBM4、Rubin/MI400、custom ASIC 带动 2026-2027 图形复杂度 | 中高：先进封装 mask 能力和客户 qualification 可能紧 | 中：直接写入/maskless 在低量封装有替代；大规模高精度仍需要 mask |
+| 高端 FPD / G8.6 AMOLED mask | 披露 Q2 5283 万美元；年化约 2.11 亿美元 | Q2 同比 +21.1%，环比 +12.5% | 低到中：不是数据中心 AI；与 AI PC/IT OLED 终端升级有关 | 中：G8.6 AMOLED 产线建设和新 mask writer 安装窗口明确 | 中高：高端 FPD mask writer 稀缺，项目节奏集中 | 中高：首装先进 FPD writer 和高端显示精度提供一定溢价 |
+| 主流 IC photomasks | 披露 Q2 9085 万美元；年化约 3.63 亿美元 | Q2 同比 -5.9% | 低到中：AI 服务器周边电源/管理/传感可能有少量间接需求 | 低 | 低到中：成熟节点总体竞争更充分 | 中低：客户替换成本有，但价格竞争更明显 |
+
+## 6. 一年后三情景预测：收入贡献、重要性和供需
+
+预测区间为未来 12 个月，即大致 FY2026 Q3-FY2027 Q2。所有情景都以公司 Q3 指引 2.07-2.15 亿美元作为短期锚。
+
+| 关键产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| 高端 IC photomasks | 年收入 2.30-2.60 亿美元，增速 0%-10%；Q2 延迟项目逐步恢复但不爆发；AI 重要性中高，供需中性偏紧，溢价中 | 年收入 2.70-3.10 亿美元，增速 15%-30%；AI ASIC/GPU/HBM4 tape-out 恢复，high-end mask set ASP 拉动；供需偏紧，溢价中高 | 年收入 3.20-3.70 亿美元，增速 35%-60%；多客户 AI ASIC、美国可信供应链和先进节点 qualification 同时落地；部分产品 lead time 扩到 2-3 个月，溢价高 |
+| Allen/Boise/Korea 8nm 及以下能力 | 新增收入 2000-4000 万美元/年；部分 qualification，2027 更明显 | 新增收入 5000-9000 万美元/年；多个客户进入重复订单，区域化需求强 | 新增收入 1.0-1.5 亿美元/年；美国 merchant 高端能力成为稀缺资源，客户愿意为 TAT/可信供应链支付溢价 |
+| 先进封装/RDL/interposer/硅光 mask | 年收入 3000-7000 万美元，增速 10%-30%；重要性中高但规模小 | 年收入 7000 万-1.1 亿美元，增速 40%-80%；CoWoS/HBM4/RDL 和硅光平台验证变密集 | 年收入 1.2-1.8 亿美元，增速 100%+；先进封装 mask 成为小瓶颈，PLAB 获得多个大客户资格 |
+| 高端 FPD/G8.6 AMOLED | 年收入 2.0-2.4 亿美元，增速 0%-15%；IT OLED 项目逐步放量 | 年收入 2.5-3.0 亿美元，增速 20%-40%；韩国新 writer 产能顺利爬坡，AMOLED/IT OLED 订单集中 | 年收入 3.1-3.6 亿美元，增速 45%-70%；G8.6 AMOLED 多客户拉货，FPD 高端 mask 稀缺 |
+| 主流 IC | 年收入 3.50-3.80 亿美元，增速 -5%-5%；现金流底盘 | 年收入 3.80-4.10 亿美元，增速 5%-12%；成熟节点库存恢复 | 年收入 4.10-4.50 亿美元，增速 12%-25%；区域化和国产替代带动多区域补充需求 |
+
+公司整体未来一年收入情景：
+
+| 情景 | 收入预测 | 增速 | 毛利率/经营杠杆 | 触发条件 |
+|---|---:|---:|---|---|
+| 基准 | 8.80-9.30 亿美元 | +2%-8% | 毛利率 32%-35%，经营利润率 19%-23% | Q3 接近指引中点，Q4/Q1 小幅恢复；高端 IC 逐步消化延迟 |
+| 乐观 | 9.50-10.4 亿美元 | +10%-20% | 毛利率 35%-38%，经营利润率 23%-27% | high-end IC 和高端 FPD 同时改善，Allen/Korea 资格开始贡献 |
+| 极度乐观 | 10.8-12.0 亿美元 | +25%-40% | 毛利率 38%-41%，经营利润率 28%+ | AI ASIC/HBM4/先进封装 mask set 爆发，部分产品交期从周级拉到月级，新增工具高利用率 |
+
+## 7. BOM、单位含量和价格传导链
+
+### 7.1 先纠偏：PLAB 不是服务器直接 BOM
+
+对 PLAB 做每 MW、每 rack、每 GPU、每 optical port 的单位含量时，必须把“直接 BOM”和“设计/工艺 NRE 摊销”分开。光罩是设计和制造流程资产，不是装进服务器的零件。
+
+| 单位 | 直接 PLAB 含量 | 真实经济含量 | 价格传导链 |
+|---|---:|---|---|
+| 每 MW 数据中心 | 0 美元直接 BOM | 只有当该 MW 对应的新 GPU/ASIC 平台触发新 mask set/respins 时才有间接摊销；通常极低且无法从 MW 直接推算 | 云 capex -> GPU/ASIC 需求 -> 芯片平台 tape-out -> foundry/mask shop mask set -> PLAB 收入 |
+| 每 rack | 0 美元直接 BOM | rack 数本身不产生光罩；新平台和设计改版才产生光罩 | rack 代际升级 -> GPU/ASIC/网卡/硅光芯片升级 -> mask 需求 |
+| 每 GPU/ASIC | 不是逐颗计费 | 高端芯片 mask set 可从数十万美元到数百万/更高不等，视节点/层数/是否 EUV 而定；PLAB 是否参与取决于客户和工艺层 | mask set 成本 / 有效 wafer starts / 良品 die 数，摊到每颗芯片可能从美分到数美元，量越大越低 |
+| 每 optical port | 0 美元直接 BOM | 若硅光/CPO/光 I/O 芯片或封装 RDL 使用 PLAB mask，摊销可能为每 port 约 0.01-0.10 美元级别，置信度低 | 光互联端口增长 -> 硅光/驱动/封装平台 -> mask set/respins |
+| 每高端 2.5D/3D package | 非直接 BOM | RDL/interposer/fan-out/glass substrate mask 摊销可能为每颗封装数美分到数美元，取决于 mask 价格、面板/晶圆利用率和产量 | CoWoS/HBM/ASIC 封装扩产 -> RDL/interposer/面板级工艺 -> photomask |
+
+### 7.2 BOM 分拆：AI 服务器到 PLAB 的可触发项目
+
+| AI 基建模块 | 主要 BOM | 可能触发的 PLAB 需求 | PLAB 价值量判断 |
+|---|---|---|---|
+| GPU/AI ASIC | advanced logic die、HBM、interposer、substrate、power、retimer/NIC | logic die mask set、PHY/IO die mask、HBM controller/logic base die、respins | 高端 IC 中最相关，但顶尖 EUV 可能由 captive/DNP/Tekscend 主导；PLAB 机会在 merchant、regional backup、部分层和客户项目 |
+| HBM | DRAM die、base die、TSV、microbump、interposer | HBM 相关 memory/logic mask、测试和封装图形 mask | 间接，PLAB 未披露 memory/HBM 客户；行业约束会影响 AI 设计释放节奏 |
+| 先进封装 | CoWoS/RDL/interposer/fan-out/glass、ABF substrate | RDL/interposer/面板级封装 mask，检测/资格用 mask | 小而快，2026-2027 有潜力，但不是公司当前披露大项 |
+| CPO/硅光 | silicon photonics die、driver/TIA、laser、interposer | silicon photonics mask、coupler/waveguide 图形、封装 RDL mask | 潜在小业务，当前无公司量化披露 |
+| 电源/管理芯片 | PMIC、driver、MCU、BMC、sensor | 成熟/主流 IC mask | 收入可进主流 IC，但 AI 属性弱 |
+
+## 8. 当前与一年后产能、供应链采纳和认证
+
+### 8.1 当前产能能力
+
+PLAB 拥有 11 个制造设施，覆盖亚洲、欧洲和北美；2026Q2 10-Q 披露公司计划 FY2026 capex 约 3.30 亿美元，主要投向亚洲和美国，用于高端与主流产能、效率和能力升级。以 FY2026 Q2 收入年化 8.40 亿美元、TTM 收入 8.61 亿美元、FY2025 收入 8.49 亿美元为基准，当前可兑现收入能力大致在 8.5-9.5 亿美元/年；若高端工具和客户资格顺利爬坡，未来 12-18 个月可向 9.5-11.5 亿美元收入能力扩展。该“美元计产能”是模型估算，不是公司披露。
+
+### 8.2 供应链采纳程度
+
+| 能力 | 当前采纳程度 | 认证/资格阶段 |
+|---|---|---|
+| 高端 IC 28nm 及以下 | 已有量产收入，FY2026 Q1 高端 IC 创纪录，Q2 仍有 5666 万美元 | 已有客户资格；更先进节点/新区域 capacity 仍需逐客户认证 |
+| Boise multi-beam writer | 公司称多客户正在 pilot/qualify；支持美国政府可信与商业 advanced photomask | pilot/qualification 阶段；需观察 2026H2 是否转化为重复订单 |
+| Allen, Texas / Korea 8nm 及以下扩展 | 公司称扩产和能力延伸正在推进，未来几季增加 capacity/capability | 工具安装、工艺验证、客户 qualification，收入更可能在 2027 放大 |
+| Korea G8.6 AMOLED FPD writer | 2026-03 到货、FY2026 Q2 安装；Q2 高端 FPD 已强 | 安装/爬坡；客户项目可能在 2026H2-2027 放大 |
+| 先进封装/RDL/硅光 mask | 行业需求强，但公司未单列披露 | 若服务客户项目，需按封装厂/foundry/OSAT 逐项资格认证 |
+
+### 8.3 一年后产能、采纳和认证三情景
+
+| 情景 | 产能能力（美元计） | 供应链采纳 | 认证阶段 |
+|---|---:|---|---|
+| 基准 | 9.5-10.5 亿美元/年 | 既有高端 IC 客户恢复，G8.6 AMOLED 小规模贡献 | Boise/Allen/Korea 部分客户 qualification 完成，仍未全面放量 |
+| 乐观 | 10.5-11.5 亿美元/年 | 多个 AI ASIC/先进节点客户和 AMOLED 客户进入重复订单 | 8nm 及以下能力通过更多客户认证，advanced packaging mask 开始被明确采用 |
+| 极度乐观 | 11.5-13.0 亿美元/年 | PLAB 成为美国/区域化 merchant 高端 mask 关键备份，先进封装和 OLED 同时强 | 多客户量产认证，lead time 拉长，部分高端产品定价改善 |
+
+## 9. Backlog、订单积压和未来一年业务增速
+
+PLAB 的 backlog 不适合用传统设备公司方法分析。公司披露 IC backlog 一般 1-2 周、FPD 2-3 周，有时某些 IC 产品可延长到 2-3 个月；财报电话会也强调 typical backlog 仅 1-3 周，能见度有限。它的“订单挤压”更接近客户 tape-out 时间、工程 mask set 数量、工具 qualification 和 TAT 紧张，而不是半年或一年已锁定订单。
+
+### 9.1 当前订单真实状态
+
+| 线索 | 读法 |
+|---|---|
+| FY2026 Q3 指引 2.07-2.15 亿美元 | 短期没有显著供不应求；公司仍谨慎 |
+| FY2026 Q2 高端 IC 环比 -20.5% | AI/先进节点设计 release 有延迟，不能确认订单爆发 |
+| 高端 FPD Q2 同比 +21.1% | AMOLED/IT OLED 项目更强，可能有短周期高端显示订单 |
+| 2026 capex 3.30 亿美元、资本承诺约 1.72 亿美元 | 管理层仍押注中长期高端与区域化需求 |
+| 多客户 pilot/qualify multi-beam | 订单转收入前仍需认证，不等于已确认 backlog |
+
+### 9.2 未来一年业务增速推断
+
+| 情景 | 订单和供给假设 | 未来一年收入增速 |
+|---|---|---:|
+| 基准 | design release 在 2026H2 温和恢复；G8.6 AMOLED 有贡献；Allen/Boise/Korea 仍处资格期 | +2%-8% |
+| 乐观 | AI ASIC/HBM4/Rubin/MI400/custom XPU tape-out 增加；部分先进封装 mask 小爆发；高端 FPD 保持强 | +10%-20% |
+| 极度乐观 | backlog 从周级拉到月级；美国 high-end merchant 能力被多个客户采用；AI 先进节点和 AMOLED 同时抢产能 | +25%-40% |
+
+极度乐观情景的关键前提很苛刻：memory 和 HBM 约束不能继续推迟 OEM 新产品；foundry 高利用率不能阻碍新产品导入；客户必须让 PLAB 参与更多 high-end mask set，而不是由 captive mask shop 或日系竞争者消化。
+
+## 10. 竞争格局、主流性、替代方案和客户替换成本
+
+### 10.1 主要竞争对手
+
+| 类别 | 竞争者 | 对 PLAB 的影响 |
+|---|---|---|
+| 大型 merchant / 独立光罩厂 | Tekscend Photomask / TOPPAN、DNP、Taiwan Mask、S&S Tech、Compugraphics、清溢光电、路维光电等 | 高端和区域市场竞争；日系在高端 EUV/先进 mask 生态更强 |
+| captive mask shops | TSMC、Samsung、Intel、SK hynix、Micron、SMIC 等内部 mask shop | 顶尖节点和关键客户内部化，限制 PLAB 在最先进 EUV/High-NA 的可得市场 |
+| 上游工具/材料生态 | NuFlare、IMS、JEOL、Mycronic、KLA、Lasertec、ZEISS、Bruker、HOYA、AGC 等 | PLAB 的能力受工具交付、blank、检测/修复瓶颈约束 |
+| 潜在替代技术 | direct-write/maskless、nanoimprint、先进封装低量直接写入 | 在低量/工程/部分先进封装场景替代 photomask，但大规模、高良率、高精度制造仍离不开 mask |
+
+### 10.2 新技术是否未来主流
+
+高端 IC multi-beam mask writing、curvilinear mask、EUV/nanoimprint 支持能力是先进光罩主流方向；G8.6 AMOLED/IT OLED 高端 FPD mask 也是显示升级主流方向。但 PLAB 不是唯一甚至不是绝对领先的主流定义者。真正最先进的 EUV/High-NA 量产链条，会围绕 ASML、ZEISS、Lasertec/KLA、HOYA/AGC、DNP/Tekscend、晶圆厂 captive mask shop 共同推进。PLAB 的主流性更体现在“merchant 可用、高端但非绝对最顶尖、区域化/可信供应链补位”。
+
+### 10.3 风险和替代方案
+
+1. captive 内部化：TSMC/Samsung/Intel 等对关键层有强内部 mask shop 能力，AI GPU/ASIC 最先进节点不一定外包给 PLAB。
+2. 日系竞争：DNP/Tekscend/TOPPAN 在高端 EUV/先进 mask 技术和客户关系上深厚。
+3. 中国本土化：成熟/中端光罩可能受清溢、路维等中国本土供应链价格竞争影响；同时地缘限制也可能影响跨境订单。
+4. 设计 release 延迟：2026Q2 已验证，AI 最终需求强不代表当季 mask 订单强。
+5. 固定成本和 capex 风险：FY2026 capex 3.30 亿美元，如果高端产能爬坡慢，毛利率和 FCF 会承压。
+6. 技术替代：direct-write/maskless 在部分低量 advanced packaging、研发或面板场景可能替代传统 mask，但在大规模量产的成本/吞吐/一致性上仍有限。
+7. High-NA 节奏：High-NA EUV 2026 仍更偏研发和早期导入，不能把 2026 收入过度建立在 High-NA mask 爆发上。
+
+### 10.4 客户替换成本
+
+高端 mask 客户替换成本中高。原因是 mask shop 需要客户设计数据、OPC/MDP 数据处理、工艺窗口匹配、缺陷检查、修复、洁净物流和交付周期配合；一旦某供应商通过 qualification 并与 fab 流程稳定匹配，客户不会轻易替换。但客户也会主动 dual-source，尤其在地缘和区域化供应链下。替换成本排序：高端 IC critical layers 最高，先进封装/RDL 中等，高端 FPD 中等偏高，主流 IC/主流 FPD 中等或偏低。
+
+## 11. 投资判断和监控清单
+
+### 11.1 投资判断
+
+PLAB 当前最有价值的是“净现金安全垫 + 高端 IC/FPD 工具升级 + 美国/韩国区域化供应链 option”。但它不是 AI 数据中心直接 BOM 公司，也不是 HBM、CoWoS、光模块或先进封装服务的核心瓶颈资产。它更像一个在 AI 芯片设计迭代周期中可被带动的上游辅助环节：当新平台密集 tape-out、客户需要更快 TAT、更高端 mask set 和区域化备份时，PLAB 会受益；当 memory、foundry 利用率、地缘或客户项目节奏推迟时，PLAB 收入会马上体现波动。
+
+以 2026-06-11 股价 30.73 美元、市值 18.1 亿美元、净现金 6.34 亿美元看，估值并不贵；但便宜的理由也明确：TTM 收入增速仅 +0.52%，FY2026 Q2 高端 IC 下滑，Q3 指引低于高成长预期。如果后续季度只能维持 2.1 亿美元附近收入，PLAB 更适合按低估值周期股看；如果高端 IC 重新创纪录、先进封装 mask 开始被明确披露、lead time 拉长到月级、Allen/Boise/Korea 资格转量产，它才有重估空间。
+
+### 11.2 未来 6-12 个月监控清单
+
+| 监控项 | 乐观信号 | 警惕信号 |
+|---|---|---|
+| FY2026 Q3/Q4 收入 | 高于指引上限，重回 2.20 亿美元以上 | 继续在 2.05-2.15 亿美元徘徊 |
+| 高端 IC 收入 | 从 Q2 的 5666 万美元回升到 7000 万美元以上 | 继续低于 6000 万美元 |
+| 毛利率 | 回到 35%-37% | 维持 31%-33%，说明固定成本/材料/利用率压力 |
+| Allen/Boise/Korea | 披露客户 qualification 完成、初始量产收入、8nm 及以下工具利用率 | 只讲长期机会，不给收入/客户进展 |
+| Backlog/lead time | 某些 IC 产品 2-3 个月 backlog 从个例变更多客户 | 仍只有 1-3 周，说明没有供需紧张 |
+| 高端 FPD | G8.6 AMOLED writer 带来持续订单 | Q2 只是一次性项目，Q3 回落 |
+| AI/HPC 归因 | 管理层开始明确提到 AI ASIC、advanced packaging、silicon photonics、HBM 客户项目 | 仍只使用“long-term drivers”模糊表述 |
+| Capex 效率 | 3.30 亿美元 capex 逐步转收入 | capex 高、收入不动、FCF 转弱 |
+
+## 12. 信息来源
+
+### 12.1 项目内行业资料
+
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_高端光罩与先进封装掩模_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`
+- `行业调研/行业索引.md`
+
+### 12.2 公司公告、财报和市场数据
+
+- Photronics FY2026 Q2 results, 2026-05-28: https://photronicsinc.gcs-web.com/news-releases/news-release-details/photronics-reports-second-quarter-2026-results
+- Photronics FY2026 Q1 results, 2026-02-25: https://photronicsinc.gcs-web.com/news-releases/news-release-details/photronics-reports-first-quarter-fiscal-2026-results
+- Photronics FY2025 Q4/full-year results, 2025-12-10: https://photronicsinc.gcs-web.com/news-releases/news-release-details/photronics-reports-full-year-and-fourth-quarter-fiscal-2025
+- Photronics FY2025 Q3 results, 2025-08-27: https://photronicsinc.gcs-web.com/news-releases/news-release-details/photronics-reports-third-quarter-fiscal-2025-financial-results
+- Photronics FY2025 Q2 results, 2025-05-28: https://photronicsinc.gcs-web.com/news-releases/news-release-details/photronics-reports-second-quarter-fiscal-2025-results-and
+- Photronics FY2026 Q2 10-Q mirror / SEC filing data: https://www.stocktitan.net/sec-filings/PLAB/10-q-photronics-inc-quarterly-earnings-report-360cd32a3caa.html
+- StockAnalysis PLAB statistics and valuation, checked 2026-06-11: https://stockanalysis.com/stocks/plab/statistics/
+- StockAnalysis PLAB revenue history: https://stockanalysis.com/stocks/plab/revenue/
+- Photronics Q2 FY2026 earnings transcript, Motley Fool: https://www.fool.com/earnings/call-transcripts/2026/05/29/photronics-plab-q2-2026-earnings-transcript/
+
+### 12.3 行业会议、业内信息和技术资料
+
+- Photronics advanced FPD mask writer for G8.6 AMOLED, 2026-03-31: https://photronicsinc.gcs-web.com/news-releases/news-release-details/photronics-receives-advanced-mask-writer-expanding-amoled
+- Photronics U.S. merchant multi-beam mask writer, 2025-08-08: https://photronicsinc.gcs-web.com/news-releases/news-release-details/photronics-extends-capability-first-installation-merchant-multi
+- SPIE Photomask Technology 2026: https://spie.org/PUV/conferencedetails/photomask-technology
+- SPIE Photomask Technology + EUV Lithography overview: https://spie.org/conferences-and-exhibitions/photomask-technology-and-extreme-ultraviolet-lithography
+- SEMI Photomask Characterization Market Report: https://www.semi.org/en/products-services/market-data/photomask-characterization
+- Photomask Japan 2026 / imec: https://www.imec-int.com/en/events/photomask-japan-2025-imec
+- Photomask Japan 2026 invited speakers: https://smartconf.jp/content/pmj2026/keynote_Invited_speakers
+- eBeam Initiative news and survey context: https://www.ebeam.org/news_and_events/

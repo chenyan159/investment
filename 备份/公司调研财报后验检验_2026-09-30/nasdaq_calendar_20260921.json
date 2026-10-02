@@ -1,0 +1,68 @@
+{
+  "data": {
+    "asOf": "Mon, Sep 21, 2026",
+    "headers": {
+      "time": "Time",
+      "symbol": "Symbol",
+      "name": "Company Name",
+      "eps": "EPS",
+      "surprise": "% Surprise",
+      "marketCap": "Market Cap",
+      "fiscalQuarterEnding": "Fiscal Quarter Ending",
+      "epsForecast": "Consensus EPS* Forecast",
+      "noOfEsts": "# of Ests"
+    },
+    "rows": [
+      {
+        "eps": "($1.71)",
+        "surprise": "-58.33",
+        "time": "time-not-supplied",
+        "symbol": "ABVX",
+        "name": "Abivax SA",
+        "marketCap": "$8,480,311,800",
+        "fiscalQuarterEnding": "Jun/2026",
+        "epsForecast": "($1.08)",
+        "noOfEsts": "2"
+      },
+      {
+        "eps": "($0.11)",
+        "surprise": "76.09",
+        "time": "time-not-supplied",
+        "symbol": "ANAB",
+        "name": "AnaptysBio, Inc.",
+        "marketCap": "$1,491,379,200",
+        "fiscalQuarterEnding": "Jun/2026",
+        "epsForecast": "($0.46)",
+        "noOfEsts": "2"
+      },
+      {
+        "eps": "$0.37",
+        "surprise": "N/A",
+        "time": "time-not-supplied",
+        "symbol": "EBF",
+        "name": "Ennis, Inc.",
+        "marketCap": "$568,199,170",
+        "fiscalQuarterEnding": "Aug/2026",
+        "epsForecast": "",
+        "noOfEsts": "N/A"
+      },
+      {
+        "eps": "$0.18",
+        "surprise": "N/A",
+        "time": "time-not-supplied",
+        "symbol": "TULP",
+        "name": "Bloomia Holdings, Inc.",
+        "marketCap": "$14,009,799",
+        "fiscalQuarterEnding": "Jun/2026",
+        "epsForecast": "",
+        "noOfEsts": "N/A"
+      }
+    ]
+  },
+  "message": null,
+  "status": {
+    "rCode": 200,
+    "bCodeMessage": null,
+    "developerMessage": null
+  }
+}

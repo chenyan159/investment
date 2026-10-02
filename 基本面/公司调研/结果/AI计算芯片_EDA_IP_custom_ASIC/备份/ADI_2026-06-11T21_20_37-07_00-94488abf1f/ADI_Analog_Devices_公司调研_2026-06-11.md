@@ -1,0 +1,473 @@
+# 公司：ADI Analog Devices 公司调研（2026-06-11）
+
+报告日期：2026-06-11（America/Los_Angeles）  
+公司：Analog Devices, Inc.  
+股票代码：ADI（Nasdaq）  
+正式目录：`基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/`，依据 `公司调研/公司索引.md`。  
+资料边界：项目内只读取 `行业调研/` 及 `公司调研/公司索引.md`；未读取、引用或继承 `特征量化/`、`日度资料/`、既有公司调研报告或其他目录内容。联网资料优先使用 ADI 官方财报、10-Q、电话会纪要、产品页、收购公告和行业技术资料。  
+
+关键口径说明：ADI 不按产品线披露收入、毛利或 backlog；Data Center 是 Communications 内部子业务，ADI 只在电话会中披露比例、增速和定性订单。因此本报告将“官方披露数”与“估算/反推数”分开标注。所有估算优先用公司披露的 end market、data center 占比、同比增速、order/book-to-bill、channel inventory 和项目内行业 BOM 口径交叉验证。
+
+## 0. 高密度结论
+
+1. **ADI 是模拟/混合信号龙头，不是 GPU 或 ASIC 公司；投资人把它看成“高毛利、长生命周期、强现金流、工业/汽车/通信多周期叠加”的优质模拟半导体资产。** 它的核心价值在于把现实世界的电压、电流、光、温度、运动、射频、音频等信号转成可计算、可控制的系统变量。产品包括数据转换器、放大器、电源管理、RF/微波、隔离、传感、时钟、DSP/嵌入式处理、汽车连接和电池管理。
+2. **2026 年 ADI 的边际故事已经从“工业周期复苏”升级为“AI 数据中心 power + optical 附加弹性”。** FY2026Q2 公司收入 `$3.623B`，同比 `+37%`；Communications 收入 `$555M`、同比 `+79%`；其中 Data Center 已占 Communications 的约 `75%`，即约 `$416M/季度`、同比约 `+90%`。管理层明确说该增长由 power 与 optical 两条线“几乎相同增速”共同驱动。
+3. **AI 数据中心当前直接收入占比约 11%-12%，但利润率和估值叙事权重明显高于收入占比。** Q2 Data Center 约 `$416M`，对应年化 `$1.66B`；若按 power/optical 各半估算，data center power 与 optical control/power 各约 `$0.8B+` 年化。Communications（含 Data Center）被管理层称为“高于公司平均毛利”的业务。
+4. **ADI 对 AI 基建的真正卡位不是 GPU 算力，而是“从 grid/rack 到 XPU core 的电源控制”和“光模块/OCS 周边控制”。** 关键产品包括 digital power system management、multiphase controller、smart power stage、μModule regulator、48/54V intermediate bus converter、hot-swap/eFuse/telemetry、TEC/laser/photodiode 周边控制、precision monitoring，以及 Empower 的 IVR 与 silicon capacitor。
+5. **Empower Semiconductor 是 2026 年最重要的业务动作。** ADI 于 2026-05-19 宣布以 `$1.5B` 现金收购 Empower，预计 2026H2 完成；Empower silicon capacitor 已量产，IVR 项目正在与头部 hyperscaler 和 AI silicon provider 协作。短期收入不重大，但管理层预计 2027 年开始出现显著需求，是 ADI 切入 vertical power delivery / near-XPU power 的关键拼图。
+6. **订单和 backlog：公司没有披露绝对 backlog，但订单信号很强。** FY2026Q2 披露 B2B 市场（Industrial、Automotive、Communications）record bookings；FY2026Q1 披露 Data Center record orders，Industrial book-to-bill well above 1；FY2025Q4 披露 channel inventory 约 6 周；FY2026Q1 channel inventory 在 6-7 周区间且未见 restocking 证据；FY2026Q2 管理层说 lead times “pretty good”，内部产能较疫情前已 more than doubled。
+7. **估值很贵，财务很健康。** 2026-06-11 08:48 PT Yahoo chart 实时价约 `$401.82`；用约 `488M` 基本股数估算市值约 `$196B`。TTM GAAP PE 约 `59x`，forward PE 约 `32x`，TTM PS 约 `15.4x`。FY2026Q2 GAAP gross margin `67.3%`、adjusted gross margin `73.0%`、GAAP net margin `32.5%`；TTM FCF `$4.565B`、FCF margin `36%`。现金和短投 `$3.4B`，总债务 `$8.77B`，净债务约 `$5.37B`，净债务/TTM FCF 约 `1.2x`，资产负债表稳健。
+8. **风险在于市场可能把 ADI 当成“AI power pure-play”定价。** 目前 AI 数据中心仍只是低双位数收入占比；公司大部分收入仍来自工业、汽车、消费和无线/传统通信。若 2027 vertical power design-in 延后、800V/HVDC 架构慢于预期、AI 光模块 ASP 下行、工业订单回归常态，估值会比基本面更敏感。
+
+## 1. 公司整体业务、投资人认知和产业链位置
+
+### 1.1 ADI 做什么
+
+ADI 是全球模拟、混合信号、数字信号处理和高性能电源管理半导体供应商。它的产品通常不是整机主芯片，而是系统中“决定真实世界信号质量、功耗、可靠性、认证和可维护性”的器件。
+
+| 层级 | ADI 产品/能力 | 典型应用 | 投资含义 |
+|---|---|---|---|
+| Signal Chain | ADC/DAC、precision amplifier、instrumentation amplifier、isolation amplifier、sensor interface | 工业测量、ATE、医疗、航空航天、汽车传感、光模块监测 | 高毛利、长生命周期、替换成本高 |
+| Power | μModule regulator、multiphase controller、smart power stage、power system management、hot-swap/eFuse、battery management、isolated power | AI server、data center power、汽车 BMS、工业电源、通信设备 | AI 数据中心边际弹性最大 |
+| Connectivity / RF | RF/microwave、clocking、wireless transceiver、GMSL、A2B、E2B、SerDes/高速接口周边 | 基站、雷达、卫星、ADAS、车载娱乐、光通信周边 | 工程壁垒高，但周期和客户项目驱动明显 |
+| Sensing / Edge | MEMS、惯导、环境/健康传感、音频、嵌入式处理与算法 | 工业机器人、航空、防务、消费 wearables、医疗 | 长期“physical intelligence”叙事 |
+
+ADI 的典型竞争优势不是单颗芯片算力，而是：客户系统知识、reference design、长期供货、质量认证、低噪声/高精度/高效率工艺、软件工具（LTspice、LTpowerPlay 等）和多代 design-in 关系。
+
+### 1.2 投资人心中的 ADI
+
+投资人一般把 ADI 归为“高质量模拟半导体复合器”：
+
+| 维度 | 认知 |
+|---|---|
+| 正面 | 毛利率/FCF margin 高；工业和汽车产品生命周期长；客户替换成本高；Linear Technology 与 Maxim 整合后电源和汽车产品更完整；资本回报纪律强；AI 数据中心给原本成熟的 analog franchise 加了新增长期权 |
+| 负面 | 周期性仍明显，2024 曾受客户去库存压制；估值长期高于一般模拟/功率器件公司；AI 直接收入占比仍不大；产品极分散导致外部很难逐个验证订单质量 |
+| 当前市场定价 | 市场已经开始把 ADI 从“工业/汽车 analog recovery”重新定价为“AI infrastructure enabler”，尤其是 power density、optical control 和 ATE/HBM4 test 相关机会 |
+
+### 1.3 最近 3 年重大业务变化、转型和收购
+
+| 时间 | 事件 | 对业务的影响 |
+|---|---|---|
+| 2023-2024 | 行业去库存，工业/通信/汽车客户消化库存，ADI 进入周期低谷后逐季恢复 | 2024 是收入和利润低谷期；2025 起开始恢复，FY2025 收入 `$11.0B`、同比 `+17%` |
+| 2024-2025 | 继续整合 Linear Technology 与 Maxim 资产 | 电源管理、μModule、digital power、BMS、GMSL/A2B、汽车安全电源成为公司高质量增长来源；虽然两笔大收购早于 3 年窗口，但过去三年的收益集中释放 |
+| 2025 | Data Center 在 Communications 内成为最快增长子业务 | FY2025Q4 Data Center 年化 run rate 超 `$1B`；FY2025 全年 Communications 是最快增长 end market，主要由 Data Center 拉动 |
+| 2025-2026 | 工业 ATE、能源、航空防务创高 | ATE 受 AI SoC、memory test、HBM4 transition 影响成为 Industrial 内高增长点；Energy 受电网、储能和数据中心电力拉动 |
+| 2026-05-19 | 宣布以 `$1.5B` 现金收购 Empower Semiconductor | 补齐 IVR、silicon capacitor、vertical power delivery；2027 年可能进入 AI XPU/GPU/CPU 近端供电收入曲线 |
+| 2026 | Hybrid manufacturing、内部产能提升和 channel lean 策略 | 管理层称内部产能较疫情前 more than doubled，lead times 总体良好；渠道库存维持 6-7 周，避免把短期收入建立在 restocking 上 |
+
+### 1.4 在产业链中的位置
+
+ADI 位于半导体供应链的“高性能模拟/混合信号器件层”，向下依赖成熟/特色工艺晶圆、封测、模块封装和分销，向上服务 OEM、ODM、Tier 1、hyperscaler、AI silicon、汽车、工业、航空防务和通信设备客户。
+
+```text
+晶圆制造/封测/材料
+  -> ADI: precision analog + power + RF + sensing + control IC
+  -> 模块/板卡/系统: AI server tray、power shelf、optical module、ATE、ADAS ECU、BMS、工业控制
+  -> OEM/ODM/hyperscaler/汽车/工业客户
+```
+
+在 AI 基建里，ADI 的位置更具体：
+
+```text
+园区电力 / rack power / 48V-54V / 800VDC
+  -> ADI power control、PSM、hot-swap、sensor、isolation、IBC、μModule
+  -> XPU/GPU/CPU core rails，未来 Empower IVR + silicon capacitor 更靠近 die/package
+
+AI optical module / OCS / network
+  -> ADI precision control、TEC、laser/photodiode 周边、monitoring、compact power
+  -> 800G/1.6T 模块、coherent / direct-detect、OCS 周边
+
+AI SoC/HBM/ATE
+  -> ADI high-speed data converter、precision signal chain、power/RF/mixed-signal
+  -> ATE 和 system-level test
+```
+
+## 2. 最新股价、估值和财务健康度
+
+### 2.1 市场与估值快照
+
+| 指标 | 数值 | 日期/口径 |
+|---|---:|---|
+| 股价 | `$401.82` | 2026-06-11 08:48 PT，Yahoo chart intraday |
+| 市值 | `约 $196B` | 2026-06-11，用 `$401.82` × 约 `488M` 基本股数估算；不同数据商口径会随股价和股本更新 |
+| TTM Revenue | `$12.740B` | 截至 FY2026Q2（2026-05-02）四季度收入，ADI Q2 发布稿 |
+| TTM 收入增速 | `约 +29.8%` | FY2026Q2 TTM `$12.740B` 对 FY2025Q2 TTM `$9.819B` |
+| 最新季度收入增速 | `+37% YoY` | FY2026Q2 |
+| GAAP PE | `约 59x` | 2026-06-11，按 TTM GAAP EPS 约 `$6.76` 估算 |
+| Forward PE | `约 32x` | 2026-06-11，按 FY2026/NTM EPS 约 `$12.4-$12.6` 区间估算；Yahoo/第三方近期口径约 32x |
+| TTM PS | `约 15.4x` | 2026-06-11，按估算市值 `$196B` / TTM revenue `$12.740B` |
+| FY2026Q2 GAAP gross margin | `67.3%` | FY2026Q2 |
+| FY2026Q2 adjusted gross margin | `73.0%` | FY2026Q2 |
+| FY2026Q2 GAAP net margin | `32.5%` | FY2026Q2 |
+| TTM net margin | `约 26%` | 截至 FY2026Q2，第三方/TTM 口径与公司净利反推一致 |
+| TTM FCF / FCF margin | `$4.565B` / `36%` | 截至 FY2026Q2 |
+
+估值结论：ADI 当前定价已经不只是“模拟周期复苏”，而是在折现 AI 数据中心 power/optical、工业 ATE、Empower 2027 年收入和高毛利恢复。若只按传统 analog 低双位数增速，`~32x forward PE` 与 `~15x sales` 很贵；若 Data Center 从 `$1.6B` 年化上升到 `$3B-$5B` 且毛利高于公司平均，估值才有更强支撑。
+
+### 2.2 资产负债表和现金流健康度
+
+| 指标 | 数值 | 解读 |
+|---|---:|---|
+| 现金、现金等价物和短投 | `$3.4B` | FY2026Q2 10-Q；其中约 `$2.2B` 在美国 |
+| 总债务 | `$8.767B` | FY2026Q2 10-Q，含 `$0.55B` commercial paper 与多个 senior notes |
+| 净债务 | `约 $5.37B` | 总债务减现金/短投 |
+| TTM operating cash flow | `$5.106B` | 截至 FY2026Q2 |
+| TTM free cash flow | `$4.565B` | 截至 FY2026Q2 |
+| 净债务 / TTM FCF | `约 1.2x` | 很可控 |
+| 总债务 / TTM FCF | `约 1.9x` | 对 ADI 的现金流质量而言不紧 |
+| Accounts receivable | `$2.052B`，DSO `43` 天 | 随收入增长上升，但 DSO 稳定 |
+| Inventory | `$1.848B`，days cost of sales in inventory `139` 天 | 公司主动为增长应用建立 buffer；不是典型库存失控 |
+| Channel inventory | FY2025Q4 约 `6` 周；FY2026Q1 `6-7` 周 | 管理层仍称 lean |
+| Capital return | Q2 单季回购+股息 `$1.309B`；TTM cash return `$5.043B` | 公司继续把 FCF 大量返还股东 |
+
+财务健康度判断：**强。** ADI 有高毛利、高 FCF、低净杠杆、长期债务期限分散和充足回购授权。主要财务风险不是偿债，而是高估值下增长预期过高；另一个风险是为 Empower 和 AI power 加速投入后，如果 design-in 转收入慢，短期 ROIC 会被摊薄。
+
+## 3. 最新和最近 4 次财报：收入、订单、业务和 AI 数据中心估算
+
+### 3.1 五个季度总表
+
+| 财报季度 | 披露日期 | 收入 / YoY | GAAP GM / Adj GM | Adj OM / Adj EPS | End market 收入 | 订单、backlog、lead time 与库存信号 | AI 数据中心收入占比估算 |
+|---|---:|---:|---:|---:|---|---|---|
+| FY2026Q2，季度截至 2026-05-02 | 2026-05-20 | `$3.623B` / `+37%` | `67.3%` / `73.0%` | `49.0%` / `$3.09` | Industrial `$1.799B` `+56%`；Automotive `$872M` `+2%`；Communications `$555M` `+79%`；Consumer `$398M` `+23%` | B2B markets record bookings；Data Center 强订单；Q3 指引强；管理层称 lead times 总体良好；Q3 假设 channel inventory weeks flat | Data Center 约 Communications `75%` = `$416M`，占总收入 `11.5%`，同比约 `+90%`；power/optical 约各半 |
+| FY2026Q1，季度截至 2026-01-31 | 2026-02-18 | `$3.160B` / `+30%` | `64.7%` / `71.2%` | `45.5%` / `$2.46` | Industrial `$1.497B` `+38%`；Automotive `$810M` `+8%`；Communications `$455M` `+63%`；Consumer `$398M` `+27%` | Data Center record orders；Industrial book-to-bill well above 1；未见 restocking 证据；channel inventory 在 `6-7` 周 | Communications 由 Data Center 领涨，估算 Data Center `$320M-$340M`，占总收入 `10%-11%` |
+| FY2025Q4，季度截至 2025-11-01 | 2025-11-25 | `$3.076B` / `+26%` | `63.1%` / `69.8%` | `43.5%` / `$2.26` | Industrial 约 `$1.44B` `+34%`；Automotive 约 `$0.86B` `+19%`；Communications 约 `$0.39B` `+37%`；Consumer 约 `$0.40B` `+7%` | Healthy bookings；Industrial 与 Communications 强；Data Center 年化 run rate 超 `$1B`；channel inventory 约 `6` 周，库存仍 lean | Data Center 超 `$250M/季`，约占 Communications `~2/3`、总收入 `8%-9%`；同比 `>50%` 且连续 3 季 |
+| FY2025Q3，季度截至 2025-08-02 | 2025-08-20 | `$2.880B` / `+25%` | `62.1%` / `69.2%` | `42.2%` / `$2.05` | Industrial `$1.285B` `+23%`；Automotive `$851M` `+22%`；Consumer `$372M` `+21%`；Communications `$372M` `+40%` | Continued backlog growth；healthy bookings，尤其 Industrial；Q4 指引继续增长 | Data Center 未给绝对数；按 Communications 结构和后续披露估算 `$230M-$260M`，占总收入 `8%-9%` |
+| FY2025Q2，季度截至 2025-05-03 | 2025-05-22 | `$2.640B` / `+22%` | `61.0%` / `69.4%` | `41.2%` / `$1.85` | Industrial `$1.158B` `+17%`；Automotive `$850M` `+24%`；Consumer `$318M` `+30%`；Communications `$315M` `+32%` | Bookings accelerated across all end markets and regions；sequential backlog growth；公司认为处于 cyclical upturn | 由 FY2026Q2 `+90%` 反推，Data Center 约 `$210M-$225M`，占总收入 `8%` 左右 |
+
+### 3.2 分业务利润率判断
+
+ADI 不披露按 end market 的毛利率或营业利润率，因此不能给出精确 segment margin。可用的官方线索和估算如下：
+
+| 业务 | 官方线索 | 利润率判断 |
+|---|---|---|
+| Industrial | FY2026Q1 电话会称 Industrial 是公司“most profitable business”；FY2026Q2 Industrial 占收入 50% | 高于公司平均；估算 gross margin `75%+`，取决于 ATE/A&D/precision mix |
+| Communications / Data Center | FY2026Q2 电话会称含 Data Center 的 Communications 高于公司平均 | AI data center power/optical mix 高；估算 gross margin `73%-78%`，可能高于公司 adjusted GM `73%` |
+| Automotive | 受 GMSL/A2B/BMS/functional safe power 支撑，但车规供应链价格压力更大 | 中高；估算略低或接近公司平均 |
+| Consumer | Wearables、premium handset、gaming、audio；生命周期短，客户集中 | 低于 Industrial/Comms；波动大 |
+
+## 4. 最新指引、2026 收入占比和公司最侧重业务
+
+### 4.1 FY2026Q3 指引
+
+ADI 对 FY2026Q3（截至 2026-08-01 左右）指引：
+
+| 指标 | 指引 |
+|---|---:|
+| Revenue | `$3.9B +/- $100M` |
+| Reported operating margin | `约 39.0% +/-150 bps` |
+| Adjusted operating margin | `约 49.0% +/-100 bps` |
+| Reported EPS | `$2.60 +/- $0.15` |
+| Adjusted EPS | `$3.30 +/- $0.15` |
+
+业务含义：Q3 指引中 Data Center 被管理层称为最快 sequential grower；Industrial、Automotive、Communications 仍维持 B2B 订单强度，Consumer 可能受季节性和消费环境影响较弱。Q3 revenue midpoint `$3.9B` 相对 Q2 `$3.623B` 约 `+7.6% QoQ`，相当于年化 run rate `$15.6B`。
+
+### 4.2 FY2026Q2 业务收入占比
+
+| End market | FY2026Q2 收入 | 占比 | YoY | 关键驱动 |
+|---|---:|---:|---:|---|
+| Industrial | `$1.799B` | `50%` | `+56%` | ATE、aerospace & defense、ETM、broad market、能源/自动化恢复 |
+| Automotive | `$872M` | `24%` | `+2%` | GMSL、A2B、functional safe power、ADAS 内容提升；BMS 恢复同比增长 |
+| Communications | `$555M` | `15%` | `+79%` | Data Center 约 `75%`，power 与 optical 两条线强；wireless 也恢复 |
+| Consumer | `$398M` | `11%` | `+23%` | Wearables、premium handset、gaming、audio/acoustics |
+
+最突出业务：**Industrial 的绝对收入最大，Data Center 的边际增速和估值弹性最大。** 公司最侧重的不是单一 GPU 芯片，而是三条交叉链：
+
+1. AI 数据中心 power：从 rack/board 到 XPU core 的电源密度、效率、telemetry 和保护。
+2. AI 光互联 optical control/power：围绕 laser、DSP、photodiode 的精密控制、温控、监测和小型化电源。
+3. Industrial ATE：AI SoC、HBM4、memory/SoC test 拉动高性能信号链。
+
+### 4.3 产品映射：重点产品与跳过产品
+
+| 业务 | 重点产品/型号举例 | 为什么重要 |
+|---|---|---|
+| Data Center Power Control | LTC3888/LTC3888-1/LTC3888-2（dual loop 8-phase digital power controller）、LTC7051 smart power stage、LTC297x power system managers、LTM4678/LTM4680/LTM4681 μModule regulators、LTC4281/LTC4282 hot-swap/power monitor、ADM127x hot-swap、LTC7821 hybrid step-down controller、isolated current/voltage sensing | AI rack 功率密度提升，48/54V、12V/6V/<1V 多级转换、PMBus telemetry、故障保护、power sequencing 都是必需品 |
+| Data Center Vertical Power / IVR | Empower FinFast IVR、silicon capacitor、near-XPU integrated voltage regulator；ADI existing smart power stage 与 vertical/lateral μModule | 把电源更靠近 GPU/CPU/ASIC，缩短 PDN、降低损耗、提升瞬态响应；2027 年潜在收入曲线 |
+| Optical Control / Power | AD1030 optical module controller/TEC integration、ADN8831/ADN8834/ADN8835 TEC controllers、MAX8520/MAX8521 TEC drivers、precision integrated controllers、high-voltage converters、linear/log amps、load switches、compact power regulators/μModules | 800G/1.6T、coherent、OCS/CPO 周边需要温控、激光控制、监测和低噪声电源；ADI 不一定卖主 DSP，但卖“让模块稳定工作的控制神经系统” |
+| Industrial ATE / HBM4 Test | high-speed ADC/DAC、precision amplifier、RF/mmWave signal chain、power/sensor/clocking components | AI SoC、memory/HBM4、advanced packaging test 设备复杂度上升，ADI 在 ATE 创纪录 |
+| Automotive ADAS Connectivity | GMSL、A2B、E2B、functional safe power、signal processing、安全电源 | 长周期车规 design-in，内容量增长；但 2026Q2 YoY 只有 `+2%`，不是当前最高增速 |
+| Energy / Grid / Battery Storage | metering、BMS、isolated sensing、power control、grid management signal chain | 受电网、储能和数据中心电力间接拉动；收入弹性不如 data center power 直接 |
+
+本报告不深入展开的低优先级产品/业务：
+
+| 跳过项 | 原因 |
+|---|---|
+| 普通 consumer audio、gaming、legacy handset power | 有增长但客户集中、生命周期短，AI 基建相关性弱 |
+| 传统 wireless base station 周期恢复 | 有复苏和软件定义基站新产品，但不是 AI 数据中心主线 |
+| 普通工业 broad market / legacy automation | 收入大且复苏，但单品分散、AI 弹性弱于 ATE/data center power |
+| 传统 EV BMS 宽口径 | ADI 是强者，但 2026 车端周期不够强；只保留 BMS 恢复和 ADAS/GMSL 内容提升 |
+| 普通 RF/微波和航空防务全谱 | 利润好、A&D 创高，但与 AI 数据中心主线较远 |
+
+## 5. 关键产品和业务：当前收入贡献、增速、重要性、紧急性、供需与定价权
+
+### 5.1 当前贡献与质量评分
+
+评分：5=最高。收入为 FY2026Q2 或年化 run rate 估算。
+
+| 关键产品/业务 | 当前收入贡献 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 依据 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Data Center power portfolio（power control、PSM、μModule、smart power、hot-swap） | Q2 约 `$200M-$215M`；年化 `$0.8B-$0.9B` | Data Center 整体 `+90% YoY`，power 与 optical 近似同速 | 5 | 5 | 4 | 4 | AI rack 功率密度和电源效率是交付瓶颈；Q1 披露 DC power control 占 data center power 收入约 1/3 |
+| Empower IVR + silicon capacitor / vertical power | ADI 当前 `0`；Empower 已 small revenue，闭合后 2026H2 不重大 | 2027 才进入 surge | 5 | 5 | 4 | 4-5 | silicon capacitor 已生产，IVR 与 hyperscaler/AI silicon provider 协作；ADI 认为 time is of the essence |
+| Optical control and compact power for data center optics | Q2 约 `$200M-$215M`；年化 `$0.8B-$0.9B` | Data Center 整体 `+90% YoY`，optical 与 power 近似同速 | 4 | 4 | 4 | 3-4 | 800G/1.6T、OCS、coherent、CPO/NPO 周边控制复杂度上升 |
+| Industrial ATE / AI SoC-HBM test signal chain | 估算 Q2 `$250M-$400M`，具体未披露；A&D+ATE 合计约 Industrial 的 1/3 量级 | FY2026Q1 ATE record；Q2 guide 时 ATE `>30% QoQ` | 4 | 4 | 3-4 | 4 | AI SoC、memory、HBM4 test 和 advanced packaging test 推动 ATE |
+| Precision timing / synchronizer / clock tree | 估算年化 `<$100M-$200M` 的 AI 相关贡献，ADI 不披露 | 中高，但基数小 | 3 | 3 | 3 | 3-4 | AD954x、HMC7044 等在 AI network/timing 相邻；但很多 timing 被 NIC/switch 内化 |
+| Automotive GMSL/A2B/functional safe power | Q2 Auto `$872M`，相关产品未拆；车端占总收入 24% | Q2 Auto `+2% YoY`，低于公司平均 | 2（对 AI DC）/4（对公司长期） | 2 | 2-3 | 4 | 强车规 design-in 和替换成本；但非 AI 数据中心主线 |
+| Energy/grid/battery storage signal chain | 未披露；在 Industrial 内部，FY2025 energy 是最快增长工业子段 | 中高 | 3 | 3 | 3 | 3-4 | 数据中心电力、储能、grid management 间接受益 |
+
+### 5.2 当前收入推导
+
+Data Center 当前收入估算：
+
+```text
+FY2026Q2 Communications revenue = $554.728M
+Data Center share disclosed ≈ 75%
+=> Data Center revenue ≈ $416M
+Data Center YoY growth disclosed ≈ 90%
+Power and optical growth rates “pretty much equally” driven
+=> Power ≈ $200M-$215M / quarter
+=> Optical ≈ $200M-$215M / quarter
+```
+
+Power control 子集：
+
+```text
+Q1 transcript: roughly one-third of data center power revenue comes from DC power control
+若 Q2 data center power ≈ $208M
+=> DC power control ≈ $65M-$75M / quarter
+=> 年化 ≈ $260M-$300M
+```
+
+## 6. 未来一年收入贡献三情景
+
+时间窗口：从 2026-06-11 到 2027-06 左右。收入贡献为年化 run rate 或未来 12 个月收入区间估算。
+
+| 关键产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| Data Center power portfolio | 未来 12 个月收入 `$1.0B-$1.2B`；增长 `+35%-50%`；继续由 48/54V、PSM、IBC、hot-swap、smart power、μModule 拉动；重要性 5、紧急性 5、供需 4、溢价 4 | `$1.3B-$1.7B`；增长 `+60%-90%`；GB300/Rubin/ASIC rack 的 power control attach 上升，ADI 拿到更多 DC/DC 和 power control socket；供需 4-5 | `$2.0B+`；增长 `+100%+`；AI rack 交付、电力限制和 high-current power design win 同时放量；需看到公开客户 design win 或 data center revenue 连续超预期 |
+| Empower IVR + silicon capacitor | 2026H2 closing 后收入很小；2027 上半年 run rate `$100M-$250M`，主要是 silicon capacitor + IVR early production/design-in | 2027 run rate `$300M-$600M`；至少 1-2 个头部 AI silicon/hyperscaler IVR 项目转量产；成为 ADI data center power 增速第二曲线 | 2027 run rate `$800M-$1.2B`；VPD/IVR 在下一代 XPU/rack 成为主流 socket；该情景需要极强客户认证和 ADI 快速扩产，不应作为基准 |
+| Optical control/power | 未来 12 个月收入 `$1.0B-$1.2B`；增长 `+30%-45%`；800G 高位、1.6T 导入，ADI 内容量稳定 | `$1.3B-$1.6B`；增长 `+60%-80%`；1.6T、OCS、coherent-lite、CPO/NPO pilot 让 control/TEC/power content 提升 | `$1.8B+`；增长 `+100%`；1.6T 缺货、OCS/CPO 供应链锁单、ADI 控制/电源进入更多模块白名单 |
+| Industrial ATE / HBM4 test | `$1.1B-$1.5B` 量级年化贡献；增长 `+20%-35%`；HBM4 和 AI SoC test 维持强度 | `$1.5B-$2.0B`；增长 `+40%-60%`；ATE 客户 capex 扩张和 AI memory test 同时拉动 | `$2.0B+`；增长 `+70%+`；HBM4/advanced packaging/system-level test 成为 2027 强瓶颈 |
+| Precision timing / sync | AI 相关 `$0.1B-$0.2B`；增长 `+15%-30%` | `$0.2B-$0.35B`；PCIe Gen7、1.6T、PTP/SyncE design-in 扩大 | `$0.5B+`；需要 AI cluster timing 被 hyperscaler 明确采购为 GPU utilization 工程项目 |
+| Automotive GMSL/A2B/safe power | `$3.4B-$3.8B` Auto 全 end market 年化区间；增长 `+0%-8%` | `$3.8B-$4.3B`；ADAS 内容提升抵消车市 | `$4.5B+`；中国/全球 ADAS 平台和 GMSL 多摄像头渗透超预期；与 AI 数据中心无直接关系 |
+
+## 7. BOM 拆分、每 MW / 每 rack / 每 GPU / 每 optical port 内容量和价格传导
+
+### 7.1 Data Center power portfolio
+
+ADI 不卖完整 power shelf，也不是 PSU/BBU 系统商；它卖的是电源控制和高性能转换/监测器件。因此不能把机柜级供电 BOM 全算给 ADI。
+
+| 层级 | AI rack 供电内容 | ADI 可捕获内容 | ADI 内容量估算 |
+|---|---|---|---:|
+| 每 GPU / XPU | core rail 多相控制、smart power stage、current sensing、PSM、near-load regulators，未来 IVR/silicon capacitor | LTC3888/LTC7051、μModule、power monitor、Empower IVR | 当前 `$25-$120/GPU`；VPD/IVR 成功后 `$80-$250/GPU` |
+| 每 72-GPU rack | 50V busbar、server tray DC/DC、12V/6V/<1V 转换、hot-swap/eFuse、telemetry、power sequencing | 控制器、μModule、hot-swap、电流/电压/温度监控、隔离、软件工具 | 当前 `$2k-$10k/rack`；VPD/IVR 成功后 `$8k-$25k/rack` |
+| 每 MW IT load | 约 6.5-8.3 个 120-155kW rack | ADI 按 rack 和 GPU content 叠加 | 当前 `$20k-$80k/MW`；VPD/IVR 成功后 `$80k-$250k/MW`，极端可更高 |
+| 价格传导链 | Hyperscaler/OEM 规格 -> ODM/board/power shelf 设计 -> power IC/socket win -> 分销/直销发货 | ADI 的 ASP 由效率、瞬态响应、PMBus telemetry、可靠性和客户认证决定 | 高端控制 IC/μModule 毛利可高于普通功率器件 |
+
+当前产能能力（美元计）：公司未披露 data center power 专项产能。以 Q2 run rate `$0.8B-$0.9B` 年化、Q3 指引继续增长、lead times 良好、内部产能较疫情前 more than doubled 推断，当前供应能力至少可支撑 `$1.0B+` 年化 data center power revenue；若外包和 die bank 继续释放，2027 可支撑 `$1.3B-$1.8B`，Empower 另计。
+
+供应链采纳/认证：已被 AI data center 客户采用并形成 record orders，但未披露 NVIDIA、AMD、Google、AWS、Microsoft、Meta 的具体 socket 或认证阶段。按行业规则，power controller/PSM/hot-swap 需要 OEM/ODM/hyperscaler 板级 qualification，周期通常 2-6 个季度；一旦进入设计，替换率很低。
+
+### 7.2 Empower IVR / silicon capacitor / vertical power
+
+| 层级 | 内容 | ADI/Empower 机会 | 内容量估算 |
+|---|---|---|---:|
+| 每 GPU/XPU | IVR、silicon capacitor、near-die/near-package decoupling、high-speed transient power | FinFast IVR、silicon capacitor、ADI smart power/control 组合 | early `$10-$50/GPU`；量产优化 `$50-$150/GPU`；极高端可 `$200+` |
+| 每 rack | 72 GPU/XPU plus CPU/NIC/switch 的 near-load power | 若进入主 GPU/ASIC socket，rack 内容量非线性上升 | `$1k-$5k/rack` early；`$5k-$20k/rack` 量产；极端 `$25k+` |
+| 每 MW | 6.5-8.3 rack / MW，且下一代 rack 功率更高 | 由 XPU 数量和 VPD attach 决定 | `$10k-$150k/MW` 宽区间 |
+| 价格传导 | AI silicon power spec -> package/board architecture -> IVR/Cap qual -> hyperscaler/OEM BOM | 价值来自降低 PDN 损耗、提升电源密度、减少板面积、加快瞬态响应 | 早期 ASP 和毛利可能高，但量产良率和客户认证是变量 |
+
+当前产能能力：ADI 尚未完成收购，当前贡献不并表。Empower silicon capacitor 已在生产，IVR 在客户协作阶段。2026H2 后 ADI 的制造和客户渠道是放大器，但 2027 前半年的产能更可能是 `$100M-$250M` 量级，而不是立即数十亿美元。
+
+认证阶段：silicon capacitor 已生产；IVR programs 与 leading hyperscalers and AI silicon providers 协作中，属于 design-in / qualification 向 early production 过渡阶段。未见公开客户型号认证。
+
+### 7.3 Optical control / compact power
+
+ADI 的 optical 不是 Broadcom/Marvell 那类 3nm optical DSP 主芯片，而是围绕光模块和光系统的控制、温控、监测、电源和模拟前端。
+
+| 层级 | Optical BOM | ADI 内容 | 内容量估算 |
+|---|---|---|---:|
+| 每 optical port / module | DSP、laser/EML、driver、TIA/PD、TEC、MCU、power regulators、monitoring、connectors | TEC controller、laser/photodiode control、precision monitor、compact power、high-voltage converter、load switch、linear/log amp | 800G/1.6T pluggable `$5-$25/port`；coherent/OCS/CPO 周边 `$15-$50/port` |
+| 每 rack | 外部 scale-out/scale-across 光模块、OCS、switch/NIC optics | 随端口数和模块复杂度增加 | `$1k-$8k/rack`；CPO/OCS 放大后 `$5k-$20k/rack` |
+| 每 MW | 由 rack 数、网络 radix、800G/1.6T attach 决定 | ADI 不捕获模块整机 ASP，只捕获控制/电源小比例 | `$7k-$60k/MW`；乐观 `$40k-$150k/MW` |
+| 价格传导 | AI fabric port speed -> optical module design -> laser/TEC/power/control BOM -> module qualification -> hyperscaler order | 1.6T/CPO/OCS 提高 ADI 内容量；普通 800G 模块 ASP 下行会压缩部分空间 | ADI content 小但粘性高 |
+
+当前产能能力：Q2 optical data center 估算年化 `$0.8B-$0.9B`。若 1.6T/OCS/CPO 继续爬坡，2027 支撑 `$1.2B-$1.6B` 年化并不激进；极度乐观需证明 ADI 内容量随端口速度提升而不是被模块集成商压价。
+
+认证阶段：光模块需要模块厂、DSP/laser/PD 组合、switch/NIC host、hyperscaler 的多层 qualification。ADI 未披露具体客户白名单；收入和订单增长说明其已进入量产供应链。
+
+### 7.4 Industrial ATE / AI SoC-HBM test
+
+ATE 不是 AI rack 部署 BOM，而是 AI 芯片和 HBM 进入量产前的资本设备/测试链 BOM。
+
+| 层级 | 内容 | ADI 内容 | 内容量估算 |
+|---|---|---|---:|
+| 每 ATE tester / instrument | 高速 ADC/DAC、precision amplifier、RF/mmWave、clocking、power、isolation | signal chain + power + RF/mixed-signal | 单台设备可从数千美元到数万美元 ADI content，取决于 channel count |
+| 每 GPU/HBM | 测试设备折旧/耗材摊销 | ADI 不直接按 GPU 出货收钱 | 摊薄到每 GPU 可能 `<$1-$10`，但对良率和交付节奏重要 |
+| 价格传导 | AI chip/HBM4 需求 -> ATE OEM 订单 -> signal-chain BOM -> ADI 发货 | ATE 订单领先终端芯片量产 | 高毛利，但周期性强 |
+
+当前产能能力：ADI 披露 ATE record quarter，但不披露产能；该业务受 ATE OEM 资本开支和客户交付节奏约束。2026-2027 HBM4/AI SoC test 继续扩张时，ADI 供给风险低于终端 ATE 交付风险。
+
+### 7.5 Precision timing / synchronization
+
+| 层级 | 内容 | ADI 内容 | 内容量估算 |
+|---|---|---|---:|
+| 每 rack | PCIe/SerDes reference clock、jitter cleaner、DPLL、network synchronizer、PTP/SyncE 周边 | AD954x、HMC7044、clock distribution / synchronizer | 若进入 socket，`$50-$300/rack`；高端同步系统可更高 |
+| 每 optical port | CDR/DSP 通常由其他主芯片捕获，ADI 只在 clock/control 周边 | clock/monitoring/power | `<$1-$3/port` 常见 |
+| 每 MW | 6.5-8.3 rack 估算 | 小但高毛利 | `$500-$3k/MW`，若高端 time-card/sync 采用可更高 |
+
+## 8. 未来一年产能能力、采纳程度和认证阶段三情景
+
+| 业务 | 基准：2027-06 前 | 乐观：2027-06 前 | 极度乐观：2027-06 前 |
+|---|---|---|---|
+| Data Center power | 产能/供应能力支撑 `$1.0B-$1.3B` 年化；48/54V、PSM、hot-swap、μModule 在现有客户中扩散；认证为既有客户量产+新平台 qualification | 支撑 `$1.5B-$2.0B`；更多 GPU/ASIC rack 和 ODM 采用 ADI power control；部分 vertical power socket 进入量产 | 支撑 `$2.5B+`；下一代 rack power 架构显著提高 ADI content；需看到交期拉长或公司上修 Data Center 指引 |
+| Empower IVR / silicon cap | 并表后 `$100M-$250M` run rate；silicon cap 继续生产，IVR 处于 early production/design-in | `$300M-$600M` run rate；1-2 个头部 AI silicon/hyperscaler 项目通过 qualification | `$800M+` run rate；VPD 成为 2027 新 XPU 默认方案之一；最大风险是认证和良率 |
+| Optical control/power | 支撑 `$1.0B-$1.2B` 年化；800G/1.6T pluggable 为主 | `$1.3B-$1.6B`；1.6T、OCS、coherent 和 CPO/NPO 早期项目提高内容量 | `$1.8B+`；1.6T/CPO/OCS 缺货或客户锁单使 ASP/内容量都提升 |
+| Industrial ATE | 支撑 `$1.1B-$1.5B` 相关年化；客户采纳主要是现有 ATE OEM 平台扩容 | `$1.5B-$2.0B`；HBM4/AI SoC tester demand 加速，ADI signal chain socket 稳固 | `$2.0B+`；test 成为 AI 芯片交付瓶颈，ATE capex 非线性上修 |
+| Timing/sync | `$0.1B-$0.2B` AI 相关 run rate；多为 socket 级采纳 | `$0.2B-$0.35B`；PCIe Gen7/1.6T/SyncE/PTP 提高内容量 | `$0.5B+`；需要 hyperscaler 明确采购高精度 timing 以提升 utilization |
+
+## 9. 基于订单积压和供给的未来一年增速预测
+
+### 9.1 已知订单和供给事实
+
+| 事实 | 含义 |
+|---|---|
+| FY2026Q2 record bookings across B2B markets | Industrial、Automotive、Communications 不是单一消费补库存 |
+| FY2026Q1 record orders for Data Center | AI data center 是真实订单来源 |
+| Industrial book-to-bill well above 1，positive book-to-bill across industrial sectors/geographies | 工业复苏不仅来自 ATE；但 ATE/A&D 是高端拉动 |
+| FY2026Q1 未见 restocking 证据，sell-in/sell-through 假设平衡 | 需求质量较好 |
+| Channel inventory 6-7 周 | 渠道 lean；如果需求继续强，后续有补库弹性，但公司当前没有把它作为核心假设 |
+| Lead times in pretty good shape；内部产能较疫情前 more than doubled | 供给不是当前主要瓶颈；若订单再上修，可能更多使用 external manufacturing |
+| Q3 revenue guide `$3.9B`，较 Q2 `+7.6%` QoQ | 管理层对近端可交付需求有较高可见度 |
+
+### 9.2 未来一年业务增速三情景
+
+| 情景 | 公司总收入 | Data Center power | Data Center optical | Industrial / ATE | 关键假设 |
+|---|---:|---:|---:|---:|---|
+| 基准 | 未来 12 个月 `$15.0B-$16.2B`，同比/TTM `+18%-27%` | `+35%-50%` | `+30%-45%` | Industrial `+15%-25%`，ATE `+20%-35%` | Q3 指引兑现；Q4 低个位数季节性增长；2027 上半年不出现大幅客户取消；Empower 初期不重大 |
+| 乐观 | `$16.5B-$18.0B`，增长 `+30%-40%` | `+60%-90%` | `+60%-80%` | ATE `+40%-60%` | GB300/Rubin/ASIC rack 订单顺利；1.6T/OCS 光模块拉动；Industrial ex-ATE 继续恢复；channel inventory 从 lean 转为适度补库 |
+| 极度乐观 | `$19B+`，增长 `+45%+` | `+100%+` | `+100%` | ATE `+70%+` | AI data center power/optical 同时供不应求；Empower IVR 提前量产；客户为避免供应风险提前下长单；公司外包和内部产能都能跟上 |
+
+取消率/订单风险推断：ADI 未披露 cancellation rate。当前更像“订单上修+渠道 lean”，而不是 2021-2022 式过度下单。风险在 2027：若 hyperscaler CapEx 放缓、GPU/rack 验收延后、光模块 ASP 下降、汽车/工业宏观走弱，则 B2B bookings 可能从 record 回落到正常水平。由于 ADI 产品生命周期长、design-in 后替换率低，取消风险更可能体现为新订单节奏变慢，而不是已交付项目大规模取消。
+
+## 10. 竞争格局、替代风险和客户替换成本
+
+### 10.1 Data Center power
+
+| 竞争对手 | 位置 | 与 ADI 的差异 |
+|---|---|---|
+| Texas Instruments | 模拟、电源、隔离、800VDC reference、BAW/timing | 规模和模拟广度强，300mm 制造成本强；ADI 在 Linear/Maxim μModule、PSM 和高端系统 power 生态上更强 |
+| Monolithic Power Systems | AI GPU/ASIC VRM、modules、power stage | MPS 更像高增长 AI power pure-play，弹性更高；ADI 更分散、更稳、系统范围更广 |
+| Infineon | power stage、TLVR、SiC/GaN、server VRM、800V/AI data center | 高压/功率器件和车规强；ADI 更偏 precision control、PSM、signal chain 和系统级 power |
+| Vicor | factorized power、48V direct-to-load、current multiplier、power-on-package | 技术集中、单品弹性大；ADI 产品组合更宽，收购 Empower 后增强 VPD/IVR |
+| Renesas、Microchip、onsemi、ST、Power Integrations、Navitas、ROHM | 控制器、PMIC、SiC/GaN、hot-swap、data center power | 细分竞争激烈；ADI 的差异是客户信任、长周期 design-in 和组合销售 |
+
+是否未来主流：48/54V 到 load、digital power telemetry、hot-swap/eFuse、PSM 是 2026 主流；800VDC/HVDC 是 2027+ 架构导入；vertical power / IVR 是高密 XPU 的潜在主流，但认证和封装/热/可靠性是门槛。ADI 的 Empower 是正确方向，但不能默认立刻垄断。
+
+替换成本：高。一旦 power controller、PSM、hot-swap 和 μModule 通过 OEM/ODM/hyperscaler 认证，替换会影响 board layout、firmware、PMBus telemetry、failure mode、thermal validation 和现场可靠性。管理层称 ADI 产品获得 design-in 后 competitive substitution effectively zero；这句话对高端工业/汽车/电源尤其重要。
+
+### 10.2 Optical control / power
+
+| 竞争对手 | 位置 | ADI 风险 |
+|---|---|---|
+| Broadcom、Marvell、Cisco/Acacia | Optical DSP、SerDes、coherent DSP、switch/ASIC 生态 | 若主 DSP vendor 集成更多 power/control，ADI 外挂内容可能被压缩 |
+| Semtech、MACOM、MaxLinear | TIA、driver、linear optics、CDR/gearbox | 在高速模拟前端更直接；ADI 若不进入 224G/400G 前端主链，只能吃 control/power |
+| MPS、TI、Renesas、Microchip | optical module power、monitor、MCU、TEC/power | 模块厂可能二供压价 |
+| Coherent、Lumentum、Innolight、Eoptolink 等 | 模块/光器件垂直整合 | 垂直整合可能把部分控制/电源设计内部优化，但仍会采购高性能 IC |
+
+是否未来主流：800G/1.6T pluggable、LRO/TRO/LPO、OCS、CPO/NPO 会并存。ADI 最受益的不是“某一种 form factor 独赢”，而是所有路线都需要更复杂的 temperature control、power density、monitoring 和 reliability。
+
+替换成本：中高。单颗 TEC controller 或 regulator 理论上可替换，但光模块高温、功耗、BER、RMA 和客户认证使得通过验证后的 BOM 变动成本很高。
+
+### 10.3 Industrial ATE
+
+| 竞争对手 | 位置 | ADI 优势/风险 |
+|---|---|---|
+| TI、Microchip、Renesas、onsemi | 精密模拟、电源、clocking | 部分 socket 可二供；ADI 在 high-performance converter/amplifier/domain expertise 强 |
+| Keysight、R&S、Anritsu 等 | 仪器系统与测试方案 | 不是 ADI 直接同类，但决定上游需求强度 |
+| ATE OEM 自研 ASIC/模块 | 系统级集成 | 长期可能压缩通用器件 ASP，但高精度模拟仍难完全内部化 |
+
+是否主流：AI SoC/HBM4/advanced packaging 让测试复杂度上升是确定方向；但 ATE capex 周期很强，不能线性外推。
+
+### 10.4 Automotive GMSL / A2B / BMS / safe power
+
+| 竞争对手 | 位置 | 替代风险 |
+|---|---|---|
+| TI、NXP、Infineon、ST、onsemi、Renesas、Rohm | 汽车模拟、电源、MCU、连接、BMS | 车规平台更换慢，替换成本高；但价格谈判和车型周期会压制短期增长 |
+| SerDes/Ethernet 替代路线 | 车载摄像头/传感连接 | GMSL/A2B/E2B 需要持续证明成本、线束、功耗和可靠性优势 |
+
+汽车不是本报告 AI 主线，但它决定 ADI 的底盘稳定性。若车市弱，Data Center 的增量会被部分抵消。
+
+## 11. 投资判断
+
+### 11.1 ADI 的核心投资逻辑
+
+1. **高质量基本盘**：Industrial + Automotive 长生命周期，产品分散，客户替换成本高，现金流强。
+2. **AI 数据中心真实但占比仍低**：FY2026Q2 Data Center 约 `$416M/季`，占总收入约 `11.5%`；增速和利润率高，已经足以影响估值，但还不是公司全部。
+3. **Power 是最大上修点**：48/54V、PSM、multiphase、μModule、hot-swap 是已兑现主线；Empower IVR/silicon capacitor 是 2027 期权。
+4. **Optical 是隐性高毛利周边**：ADI 不需要成为 optical DSP 龙头，也能通过 control、TEC、monitoring、compact power 吃到 800G/1.6T/OCS 复杂度上升。
+5. **ATE 是 AI 芯片供应链前置受益者**：AI SoC、HBM4、advanced packaging test 的复杂度提升给 ADI Industrial 增长质量加分。
+
+### 11.2 需要防止的误判
+
+| 误判 | 更合理口径 |
+|---|---|
+| 把 ADI 当成 AI 芯片公司 | ADI 是 AI power/optical/ATE 的模拟混合信号供应商，不卖 GPU/ASIC |
+| 把所有 Communications 增长都算 AI | Communications 里 Data Center 是主体，但 wireless 也在恢复 |
+| 把 Empower 2026 立即贡献大收入 | 公司明确说 2026H2 并表收入不重大，2027 才可能显著 |
+| 把 backlog 当作已知硬数据 | ADI 未披露 backlog 数额；只能用 record bookings、book-to-bill、channel inventory、guide 和 lead time 推断 |
+| 把 AI data center 毛利无限上修 | Q2 adjusted GM 已 73%，管理层称近端 gross margin 可能接近当前水平；更多收入上行可能需要更多外包，毛利不一定继续线性扩张 |
+
+### 11.3 关键跟踪指标
+
+| 频率 | 指标 | 触发判断 |
+|---|---|---|
+| 季度 | Communications revenue、Data Center 占 Communications 比例、Data Center YoY | 验证 AI 直接收入是否从 `$1.6B` 年化走向 `$3B+` |
+| 季度 | 管理层对 power vs optical 的拆分 | 判断 power 是否因 Empower/IVR 加速超过 optical |
+| 季度 | Industrial ATE commentary、HBM4/AI SoC test 需求 | 验证 AI 前置测试链强度 |
+| 季度 | channel inventory weeks、book-to-bill、lead time | 判断增长来自真实消耗还是库存/提前下单 |
+| 事件 | Empower closing、IVR design-in、silicon capacitor production expansion | 2027 data center power 第二曲线 |
+| 事件 | NVIDIA/AMD/Google/AWS/Meta/Microsoft/OCP power architecture 公开 reference | 验证 ADI power content 的架构位置 |
+| 事件 | 1.6T/OCS/CPO/NPO 模块和客户认证 | 验证 optical control/power 内容量提升 |
+
+## 12. 主要来源
+
+### 12.1 公司一手资料
+
+| 来源 | 日期 | 用途 | 链接 |
+|---|---:|---|---|
+| ADI FY2026Q2 earnings release | 2026-05-20 | Q2 收入、分市场收入、margin、cash flow、Q3 指引 | https://investor.analog.com/news-releases/news-release-details/analog-devices-reports-record-fiscal-second-quarter-2026 |
+| ADI FY2026Q2 earnings call transcript | 2026-05-20 | Data Center 占比、power/optical 同速、pricing、lead time、Empower 时间表 | https://investor.analog.com/static-files/74245ffb-8308-4b7d-bdc4-db7abf2ce11b |
+| ADI FY2026Q1 earnings release | 2026-02-18 | Q1 收入、Q2 指引、record Data Center orders | https://investor.analog.com/news-releases/news-release-details/analog-devices-reports-fiscal-first-quarter-2026-financial |
+| ADI FY2026Q1 earnings call transcript | 2026-02-18 | AI data center power/optical 产品解释、channel inventory、book-to-bill、restocking 判断 | https://investor.analog.com/static-files/6040f10c-669c-487e-bfa8-60eb1db6c369 |
+| ADI FY2025Q4 earnings release | 2025-11-25 | FY2025 和 Q4 财务、Q1 指引 | https://investor.analog.com/news-releases/news-release-details/analog-devices-reports-strong-fourth-quarter-and-fiscal-2025 |
+| ADI FY2025Q4 earnings call transcript | 2025-11-25 | Data Center annual run rate、工业/ATE/能源、汽车 GMSL/A2B、channel inventory | https://investor.analog.com/static-files/956acee7-5343-4e21-b695-8dda8251dc84 |
+| ADI FY2025Q3 earnings release | 2025-08-20 | Q3 财务和 end market 表 | https://investor.analog.com/news-releases/news-release-details/analog-devices-reports-fiscal-third-quarter-2025-financial |
+| ADI FY2025Q2 earnings release | 2025-05-22 | Q2 FY2025 财务、bookings/backlog 线索 | https://investor.analog.com/news-releases/news-release-details/analog-devices-reports-fiscal-second-quarter-2025-financial |
+| ADI FY2026Q2 Form 10-Q | 2026-05-20 | 资产负债表、现金、债务、营运资本、渠道收入、流动性 | https://investor.analog.com/static-files/f8b4d945-6385-400d-a93c-dce7bda80c46 |
+| ADI 2025 Annual Report | 2025-11-25 | 公司定位、FY2025 end market、长期战略 | https://www.sec.gov/Archives/edgar/data/6281/000119312526020138/d75638dars.pdf |
+| ADI to acquire Empower Semiconductor | 2026-05-19 | Empower 交易、IVR、silicon capacitor、AI power thesis | https://investor.analog.com/news-releases/news-release-details/analog-devices-acquire-empower-semiconductor-expanding-its-next |
+| ADI Data Center Solutions | 2026 检索 | data center 产品范围 | https://www.analog.com/en/solutions/data-center.html |
+| ADI Optical Networking Solutions | 2026 检索 | optical control/power 产品范围 | https://www.analog.com/en/solutions/data-center/optical-networking.html |
+| ADI Power Management products | 2026 检索 | power portfolio、digital power、μModule、PMBus | https://www.analog.com/en/product-category/power.html |
+
+### 12.2 项目内允许行业资料
+
+| 项目内资料 | 用途 |
+|---|---|
+| `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md` | 供应商收入、CapEx、rack/GPU/port 口径去重 |
+| `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` | AI rack/GW/GPU equivalent 与订单映射 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md` | 48/50V、800VDC、power shelf、BBU、VRM、每 rack 电源 BOM |
+| `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md` | 电源控制、保护、SiC/GaN、800V/HVDC 背景 |
+| `行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md` | 800G/1.6T、LPO/LRO/TRO、CPO/NPO、光芯片价值链 |
+| `行业调研/AI网络_光互联_铜互联/行业调研_LPO_LRO线性光模块_2026-06-11.md` | 线性光模块和 host tuning/控制复杂度 |
+| `行业调研/AI服务器_存储_芯片/行业调研_AI服务器CPU与控制平面芯片_2026-06-11.md` | AI rack 控制平面、时钟/电源/telemetry、BMC/MCU/PMIC attach |
+| `行业调研/AI服务器_存储_芯片/行业调研_精密时钟与同步芯片_2026-06-10.md` | timing/sync、每 rack timing content 和竞争格局 |
+| `行业调研/产业背景/顶级会议信息/conference_update_apec_2026_2026-06-10.md` | APEC 2026 对 VPD、800VDC、AI power telemetry 的行业信号 |
+| `行业调研/产业背景/顶级会议信息/designcon_2026_conference_update.md` | AI 数据中心物理层、1.6T、PCIe 7/8、power/thermal 和测试瓶颈 |
+
+### 12.3 估算方法摘要
+
+1. Data Center 收入：用 FY2026Q2 Communications `$554.728M` × 管理层披露 `75%` 得到约 `$416M`。
+2. Data Center power/optical 拆分：管理层披露 data center `+90%` 由 power 和 optical “pretty much equally” 驱动，因此暂用各半估算。
+3. 每 rack / GPU / optical port 内容量：用项目内 AI rack power、optical module 和 timing 行业报告的 BOM 区间，叠加 ADI 的实际产品位置，只估 ADI 可捕获 IC/control/power content，不把整机 PSU、BBU、光模块或 rack PDU 全额归给 ADI。
+4. Backlog：不构造绝对 backlog 数字；用 record bookings、book-to-bill、channel inventory、lead time 和 Q3 指引推断未来一年增长。
+5. 利润率：只使用公司披露的公司级 GAAP/adjusted margin；分产品/业务利润率均标注为方向性估算。

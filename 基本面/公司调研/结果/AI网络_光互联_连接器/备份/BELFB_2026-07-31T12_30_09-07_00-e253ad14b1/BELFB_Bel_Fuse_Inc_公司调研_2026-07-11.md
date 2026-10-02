@@ -1,0 +1,536 @@
+# 公司：BELFB + Bel Fuse Inc. 全面尽调（2026-07-11）
+
+> 研究截止：2026-07-11；股票与估值快照采用 2026-07-10 美股收盘。最新已公布财报为 2026Q1，2026Q2 尚未公布。金额若无特别说明均为美元。本文只使用项目内正式的相关行业资料与联网公开资料；未读取其他公司报告、日度资料、特征量化、备份或临时目录。
+
+## 核心结论
+
+Bel Fuse 已经不再是过去投资人印象中的“小型、低增长、产品杂乱的电子元件厂”。2021 年以来的提价、退出低回报订单、工厂整合和管理层重组，把毛利率从 2021 年的 24.7% 提升到 2025 年的 39.1%；2024 年收购 Enercon 又把公司重心明显推向高毛利、长认证周期、常为单一供应商的航天国防电源与连接系统。2026Q1 收入同比增长 17.2%，期末 backlog 达 5.313 亿美元、环比增加 21.0%，由 backlog 变动反推的季度 bookings 为 2.707 亿美元、B2B 约 1.52 倍，订单加速非常明确。
+
+但市场对 BELFB 的 AI 定价明显走在收入事实之前：
+
+- 2025 年公司能够明确识别的 AI 初创客户销售额只有约 1,400 万美元，占全年收入 2.1%；公司明确表示没有直接 hyperscaler 客户。
+- 更宽口径的 Data Solutions——包括企业网络、数据中心、高性能计算所用电源、磁性器件、MagJack、铜 SFP 等——2025 年约 1.53 亿美元，占收入约 22.7%；2026Q1 约 4,080 万美元、同比约 +30.4%，其中 Data Solutions 电源约 2,260 万美元、同比 +27%，管理层称增长“大部分由 AI 驱动”。这是更合理的 AI 基建相关上限，但不能全部等同为 AI 收入。
+- 公司 2026 年 6 月推出的 TET6000 是性能良好的 6kW、54.5V 前端电源，峰值效率 97.5%，适用于服务器、交换机和数据中心；然而 OCP 2026 年 6 月的新 HPR V2 规格已经是 6×12kW、N+1 可用 60kW 的电源架，Delta 与 Lite-On 也已经展示 90–110kW 电源架及 800VDC 路线。Bel 当前是 54V/ORV3 过渡架构的参与者，不是已经验证的 800V 原生领导者。
+- Bel 的 MagJack/ICM 最高公开速率为 10GBASE-T，主要用于机柜管理、OOB、企业网络和工业以太网；没有公开的 800G/1.6T 光模块、AEC、DAC 或 224G 高速连接器。因此，不能把 AI 网络中每个 800G/1.6T 光口的高价值内容量归给 Bel。
+
+基本面判断是“订单、利润率、资产负债表都强；AI 暴露真实但边界窄；A&D 才是利润与壁垒核心；估值已经很贵”。按 2026-07-10 的 BELFB 收盘价 272.58 美元，屏幕口径 GAAP TTM P/E 约 62.2 倍；考虑 2026 年 5 月新发 150 万股后的双类别经济市值约 37.86 亿美元，经济一致口径 TTM P/E 约 68.8 倍、P/S 约 5.40 倍。2026E 调整后 EPS 共识 7.61 美元对应 forward P/E 35.8 倍。这个估值需要公司把 backlog 转成收入、把 AI 相关电源从 4.8/6kW 推向 12kW/高压直流、并维持 A&D 的高增长，容错率不高。
+
+## 1. 公司全貌、投资人定位与产业链位置
+
+### 1.1 整体业务
+
+Bel Fuse 创立于 1949 年，核心能力可以概括为 power、protect、connect：把交流或高压直流转换为服务器/设备所需直流电，把电路中的过流风险切断，并通过磁性器件、连接器、线缆和收发器传输信号。公司不是芯片厂，也不是整机服务器厂，而是位于 OEM/ODM 与上游半导体、铜材、磁材之间的电源转换、保护和互连组件层。
+
+2026Q1 起公司从三个产品组改成两个面向终端市场的报告分部：[2026 年业务重组公告](https://www.belfuse.com/resources/news/bel-announces-strategic-organizational-realignment-to-accelerate-growth-and-innovation)与[分部重述 8-K](https://ir.belfuse.com/static-files/dcafff1b-03b6-4dca-a7d7-91fcdfab95e8)给出的范围如下：
+
+| 新分部 | 主要旧业务 | 2025 收入 | 2025 占比 | 产业链位置与商业特征 |
+|---|---:|---:|---:|---|
+| Aerospace, Defense & Rugged Solutions（ADRS） | 旧 Connectivity + Enercon 的定制电源、PDU、UPS、军用网络；Cinch、Stratos、Fibreco 等高可靠连接与线缆 | 3.689 亿 | 54.6% | 进入飞机、导弹、雷达、地面车辆、舰船、卫星等平台；认证长、设计嵌入深、常为 sole source，换型成本最高 |
+| Industrial Technology & Data Solutions（ITDS） | 旧 Power Solutions & Protection + Magnetic Solutions；前端/板载电源、机架电源、保险丝、MagJack、变压器、电感、dataMate | 3.066 亿 | 45.4% | 进入服务器、交换机、存储、企业网络、工业自动化、交通和医疗；设计周期较短、一般有 2–3 家供应商，价格竞争更强 |
+
+客户路径约为 OEM 74%、分销 26%。Digi-Key/Mouser 是工程师小批量选型和设计导入入口，Arrow/Avnet 承接放量；A&D 还使用专门分销商。公司自身没有 hyperscaler 规模，AI 数据中心产品通常先卖给企业网络 OEM、服务器/交换机客户或初创系统商，再随下游产品进入最终数据中心。
+
+### 1.2 投资人眼中的公司已经改变
+
+| 阶段 | 市场印象 | 财务/经营事实 |
+|---|---|---|
+| 2021 年以前 | 家族控制、小市值、产品线零散、增长和利润率均低于同业 | 2021 毛利率仅 24.7%，管理层后来承认公司过去十年剔除并购后的有机增长能力不足 |
+| 2021–2024 | 运营改善与提价故事 | 清理低毛利收入、工厂整合、采购和自动化、按盈利门槛接单；毛利率 2023/2024 分别升至 33.7%/37.8% |
+| 2024Q4–2026 | 高质量工业成长 + A&D 并购平台 + AI/networking 期权 | Enercon 令 A&D 成为最大终端；2025 收入 +26.3%、调整后 EBITDA margin 21.2%；2026Q1 backlog/B2B 显著加速；Data Solutions 与 AI 电源开始放量 |
+| 当前估值叙事 | 从“元件股”重估为“A&D + AI 电源/网络基础设施” | 叙事有事实支撑，但明确 AI 客户收入仍仅为低个位数占比，且当前电源路线落后于 12kW/800VDC 领先者 |
+
+换句话说，Bel 已经完成利润率修复，正在证明能否完成有机增长修复。2026 年管理层才开始用统一 CRM 追踪机会、win rate 和输单原因，因此高增长是否可持续仍缺少长周期数据。
+
+### 1.3 最近三年的重大变化、转型和收购
+
+| 时间 | 事项 | 金额/规模 | 战略与财务影响 |
+|---|---|---:|---|
+| 2023 | 出售/整合非核心欧洲资产并继续工厂合理化；投资 Innolectric | 初始投资约 880 万 | Innolectric 是 e-mobility/DC charging 期权，但业务没有达到预期，2025Q4 对股权与贷款合计计提 1,310 万非现金减值；证明公司并购并非全部成功 |
+| 2024-11-14 | [收购 Enercon Technologies 80%](https://ir.belfuse.com/news-releases/news-release-details/bel-closes-its-previously-announced-acquisition-enercon) | 现金 3.20 亿，另有最多 1,000 万 earnout；剩余 20% 计划 2027 年初处理 | Enercon 2025 收入 1.366 亿；收购时 LTM 毛利率约 47%，通常是 sole source；把 Bel 的 A&D 暴露、利润率、以色列/印度/美国制造与定制电源能力一次性抬高 |
+| 2025-05 | Farouq Tuweiq 接任 CEO，Lynn Hutkin 任 CFO | — | 从利润率修复转向增长、统一销售、数据化和并购；管理层承认有机增长是下一阶段短板 |
+| 2025 | 完成更多工厂整合、定价和 ERP/自动化动作 | FY25 capex 约 1,200 万 | 2025 毛利率 39.1%，较 2023 高 540bp；但中国仍占制造面积约 56%，供应链集中没有消失 |
+| 2026-03-05 | [收购 dataMate](https://ir.belfuse.com/news-releases/news-release-details/bel-fuse-inc-announces-acquisition-datamate-advanced-ethernet) | 1,600 万，其中 100 万递延；年收入约 1,800 万 | 买入铜 SFP+、G.hn、SPE 等以太网/宽带模块；收购价约 0.9×销售额，利润率与 Bel 公司平均相当，立即增厚；补充美国制造/R&D |
+| 2026-03-31 | 从 product-centric 重组为 ADRS/ITDS | — | 按客户终端而非产品组织，推动 Cinch+Enercon 捆绑、交叉销售和 share-of-wallet；旧产品组数据此后不再直接披露 |
+| 2026-05 | [增发 150 万股 BELFB，价格 266 美元](https://ir.belfuse.com/news-releases/news-release-details/bel-fuse-inc-announces-pricing-upsized-public-offering-class-b) | 毛额 3.99 亿；承销折扣后、其他发行费前约 3.840 亿；另有 22.5 万股超额配售权 | 约 11.8% 基础股本稀释，但可清偿 2.045 亿债务、支付 Enercon 剩余 20% 或继续 M&A，资产负债表由净负债快速转向净现金 |
+| 2026-06-26 | 发布 [TET6000 6kW 前端电源](https://www.belfuse.com/products/power-supplies/ac-dc-converters/tet6000-ac-dc-hvdc-series) | 6kW、最高 97.5% 效率 | 是最明确的 AI/HPC 产品升级；但仍输出 42–58V、额定 HVDC 输入 240–380V，不是 NVIDIA 所说的原生 800VDC 架构 |
+
+## 2. 最新股价、估值、增长与盈利能力
+
+### 2.1 2026-07-10 收盘快照
+
+Bel 有 Class A（BELFA，主要有投票权）与 Class B（BELFB，非投票/低投票但每股分红至少高约 5%）两类股票。只用 BELFB 流通股数会低估整个公司的经济市值，因此下表同时给出屏幕口径和双类别口径。[行情与分析师共识页](https://stockanalysis.com/stocks/belfb/forecast/)显示 BELFB 2026-07-10 收盘 272.58 美元、BELFA 同日收盘 229.55 美元；[发行前官方股本](https://www.sec.gov/Archives/edgar/data/729580/000121390026056738/ea029078301-424b5_belfuse.htm)为 A 股 211.53 万、B 股 1,060.74 万，基础发行后 B 股为 1,210.74 万。
+
+| 指标 | 数值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| BELFB 股价 | 272.58 美元 | 2026-07-10 收盘 | 用户指定股票；52 周高波动，当前已反映显著成长预期 |
+| BELFA 股价 | 229.55 美元 | 2026-07-10 收盘 | 用于计算双类别经济市值 |
+| 经济市值 | 37.86 亿 | 2026-07-10；A 股 211.53 万 + 基础发行后 B 股 1,210.74 万 | 若 22.5 万股 greenshoe 全部行使，约 38.47 亿；部分数据终端显示约 29.6 亿，主要因漏计 A 股或尚未更新增发 |
+| TTM 收入 | 7.017 亿 | 2025Q2–2026Q1 | 2025 全年 6.755 亿 − 2025Q1 1.522 亿 + 2026Q1 1.785 亿 |
+| 最新季度收入增速 | +17.2% | 2026Q1 YoY | ADRS +20.1%，ITDS +13.8% |
+| TTM 收入增速 | 约 +25.5% | 截至 2026Q1 YoY | 含 Enercon 全年化和有机复苏，不等于纯有机增长 |
+| TTM 毛利率 | 39.2% | 截至 2026Q1 | TTM 毛利 2.752 亿；2025 全年 39.1% |
+| TTM 归母净利率 | 7.8% | 截至 2026Q1 | TTM 归母净利约 5,504 万；被 2025Q4 的 1,310 万 Innolectric 减值和 NCI 压低 |
+| TTM 调整后 EBITDA margin | 约 20.9% | 截至 2026Q1 | TTM Adjusted EBITDA 约 1.465 亿 |
+| 屏幕 GAAP TTM P/E | 约 62.2× | 272.58 / 4.38 美元 TTM EPS | 未完全体现新股稀释；不同终端因 EPS 更新时间不同可见约 55–62× |
+| 经济一致口径 TTM P/E | 约 68.8× | 37.86 亿 / 5,504 万归母净利 | 更适合双类别、增发后的公司整体估值；greenshoe 全行使约 69.9× |
+| 2026E forward P/E | 35.8× | 272.58 / 7.61 美元调整后 EPS 共识 | 共识截至 2026-06-15；增发后的加权股数若未完全更新，实际可更高 |
+| TTM P/S | 5.40× | 经济市值 / 7.017 亿 TTM 收入 | 屏幕若仅使用 B 股市值会低估 |
+| 2026E forward P/S | 4.80× | 经济市值 / 7.886 亿收入共识 | 共识收入增速 +16.8%；高/低端 7.987/7.804 亿 |
+
+估值结论：BELFB 当前不是传统元件股估值，而是按照高质量 A&D/AI 基础设施成长股估值。若 2026E 调整后 EPS 7.61 美元兑现，P/E 仍为 35.8 倍；若用经济市值除以共识净利润 9,356 万美元，则约 40.5 倍。市场已经要求 Bel 继续把 20% 左右 EBITDA margin、双位数增长和并购复利同时兑现。
+
+## 3. 资产负债表与财务健康度
+
+### 3.1 2026-03-31 实际状态
+
+[2026Q1 10-Q](https://ir.belfuse.com/static-files/c07cb178-b71b-4ca5-8d47-5a8ac47033f7)显示：
+
+| 项目 | 2026-03-31 | 判断 |
+|---|---:|---|
+| 现金及现金等价物 | 5,945 万 | 其中约 79% 在美国境外；调回可能有税务/流动性摩擦 |
+| 应收账款 | 1.200 亿 | 与收入增长方向一致，未见异常跳升 |
+| 存货 | 1.812 亿 | 环比增加 1,396 万、+8.3%；约为 TTM 收入 25.8%，是资产负债表最需要跟踪的运营项目 |
+| 流动资产 / 流动负债 | 3.972 亿 / 1.247 亿 | 流动比率 3.18×，速动比率约 1.44×，短期偿债充足 |
+| 有息债务 | 2.045 亿 | 主要信贷期限至 2028-09-01；Q1 利息费用约 253 万 |
+| 净债务 | 1.451 亿 | 净债务/TTM 调整后 EBITDA 约 0.99×；总债务/EBITDA 约 1.40×，增发前也不危险 |
+| 总负债 / 归母权益 | 4.162 亿 / 4.389 亿 | 总负债/权益约 0.95×；有息债务/权益约 0.47× |
+| 可赎回少数股东权益 | 9,677 万 | 主要对应 Enercon 剩余 20%；不是普通负债，但未来现金流出不能忽略 |
+| 商誉与无形资产 | 约 4.39 亿 | 约占总资产 46%，来自并购；若 Enercon/其他资产不达标，仍有减值风险 |
+| Q1 经营现金流 / capex / 近似 FCF | 1,383 万 / 264 万 / 1,119 万 | 盈利有现金支撑；capex 强度低，Bel 不是重资产扩产型公司 |
+
+### 3.2 2026 年 5 月增发后的 pro forma
+
+150 万股发行按 266 美元定价，承销折扣后、其他费用前净得约 3.840 亿。若公司先偿还 2.045 亿债务，则在支付其他发行费和 Enercon 剩余权益前，可留下约 1.795 亿新增资金；叠加季末现金，理论 gross cash 约 2.39 亿、无债务。Enercon 剩余 20% 的最终价格未锁死为 8,000 万，仍可能随约定估值调整，因此不能把全部余额视为永久净现金。
+
+财务健康评级：强，约 8.5/10。
+
+- 正面：增发后基本可清债；流动比率高；backlog 强、经营现金流正；到期结构不紧。
+- 中性：增发产生约 11.8% 基础股本稀释，若 greenshoe 全行使约 13.6%；EPS 增厚需要 M&A 或有机增长追回。
+- 风险：存货较高、商誉/无形资产占比高、Enercon 剩余 20% 有现金义务；以色列运营、人民币/谢克尔/墨西哥比索、金铜和 PCB 涨价均会影响利润率。
+
+## 4. 最新五个财报季度
+
+### 4.1 收入、利润率、订单与 backlog
+
+2026 年新分部的历史季度数据来自[分部重述 8-K](https://ir.belfuse.com/static-files/dcafff1b-03b6-4dca-a7d7-91fcdfab95e8)；各季利润来自官方 [2025Q1](https://ir.belfuse.com/news-releases/news-release-details/bel-reports-first-quarter-2025-results)、[2025Q2](https://ir.belfuse.com/news-releases/news-release-details/bel-reports-second-quarter-and-first-half-2025-results)、[2025Q3](https://ir.belfuse.com/news-releases/news-release-details/bel-reports-third-quarter-2025-results)、[2025Q4](https://ir.belfuse.com/news-releases/news-release-details/bel-reports-fourth-quarter-and-full-year-2025-results)及[2026Q1](https://ir.belfuse.com/node/18386/pdf)材料。Bookings 与 B2B 为本文用“收入 + 期末 backlog − 期初 backlog”反推，因公司没有逐季直接披露；可能受外汇、订单调整和口径变化轻微影响。
+
+| 财报季度 | 总收入 / YoY | ADRS 收入 / YoY / GM | ITDS 收入 / YoY / GM | 总 GM | GAAP 归母净利 | Adj. EBITDA / margin | 期末 backlog | 推算 bookings / B2B |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2025Q1 | 1.522 亿 / +18.9% | 8,312 万 / +53.1% / 40.1% | 6,912 万 / -6.4% / 37.3% | 38.6% | 1,787 万 | 3,091 万 / 20.3% | 3.957 亿 | 1.663 亿 / 1.09× |
+| 2025Q2 | 1.683 亿 / +26.3% | 9,183 万 / +58.8% / 41.4% | 7,647 万 / +1.4% / 36.6% | 38.7% | 2,690 万 | 3,519 万 / 20.9% | 4.140 亿 | 1.866 亿 / 1.11× |
+| 2025Q3 | 1.790 亿 / +44.8% | 9,630 万 / +72.8% / 41.1% | 8,268 万 / +21.7% / 38.0% | 39.7% | 2,225 万 | 3,920 万 / 21.9% | 4.150 亿 | 1.800 亿 / 1.01× |
+| 2025Q4 | 1.759 亿 / +17.4% | 9,761 万 / +33.0% / 41.2% | 7,833 万 / +2.4% / 38.0% | 39.4% | -545 万；含 1,310 万 Innolectric 减值 | 3,759 万 / 21.4% | 4.391 亿 | 2.000 亿 / 1.14× |
+| 2026Q1 | 1.785 亿 / +17.2% | 9,982 万 / +20.1% / 41.5% | 7,867 万 / +13.8% / 36.6% | 39.0% | 1,138 万；non-GAAP 2,277 万 | 3,448 万 / 19.3% | 5.313 亿 | 2.707 亿 / 1.52× |
+
+五季变化最重要的不是单季收入，而是 bookings 从 1.66–2.00 亿跳升到 2.71 亿，Q1 backlog 环比增加 9,220 万。按 2025 年末两个分部 backlog 及公司披露的 Q1 增幅反推：
+
+- ADRS backlog：约从 2.687 亿增至 3.144 亿，+17.0%。
+- ITDS backlog：约从 1.704 亿增至 2.169 亿，+27.3%。
+- 5.313 亿 backlog 相当于 TTM 收入的 0.76 倍；2025 年末仅为全年收入的 0.65 倍。
+
+### 4.2 Data Solutions、AI 口径、交期和取消率
+
+公司没有按季度披露“AI 收入”，2026 年起还明确表示企业网络产品最终是否用于 AI 越来越难追踪。因此下表把可验证的广义 Data Solutions、明确 AI floor 和渠道/交期分开。带“估”的数字不是公司指引。
+
+| 季度 | 广义 Data Solutions 收入 / 占总收入 | 明确 AI 客户收入 / 占比 | 订单与交期信息 | 取消/退货 |
+|---|---:|---:|---|---|
+| 2025Q1 | 约 3,125 万 / 20.5%（由 2026Q1 +30.4%反推） | 估 250–300 万 / 1.6–2.0% | B2B 1.09×；Enercon 首个完整 Q1；渠道仍在恢复 | 未披露取消率 |
+| 2025Q2 | 估 3,400–3,800 万 / 20–23% | 估 300–350 万 / 1.8–2.1% | 公司称 on-time shipments 与 intra-quarter turns 改善；B2B 1.11× | 未披露 |
+| 2025Q3 | 估 4,000–4,500 万 / 22–25% | 估 350–400 万 / 2.0–2.2% | 企业网络和分销持续反弹；B2B 约 1.01× | 未披露 |
+| 2025Q4 | 估 4,000–4,500 万 / 23–26% | 估 350–450 万 / 2.0–2.6% | B2B 1.14×；年末 backlog +15.1% | 未披露 |
+| 2026Q1 | 约 4,075 万 / 22.8%，+30.4%；其中电源约 2,258 万、+27% | 估 400–600 万 / 2.2–3.4% | 管理层称除 transportation 外各子市场 B2B 均 robust；backlog 延伸到 Q3/Q4；交期仅“小幅拉长”，多数 backlog 增量来自真实需求 | 未披露；本文正常情景假定延迟/取消 2–5% |
+
+2025 全年公司可明确识别的 AI 初创客户收入约 1,400 万；季度分配仅用于说明规模，不可视为披露值。[2026-05-04 Oppenheimer 会议](https://stockanalysis.com/stocks/belfa/transcripts/660060-oppenheimer-21st-annual-industrial-growth-virtual-conference/)中 CFO 明确说：没有直接 hyperscaler 业务、AI 初创客户是小业务、订单正在抬升；交期虽略升，但 backlog 增长“大部分来自需求”。
+
+公司通常按 firm orders 和客户预计用量生产。取消和退货按交易或合同约定，多数定制订单有 NCNR 或补偿机制，但公司没有公开取消率。本文后续情景采用：正常延迟/取消 2–5%、乐观 1–3%、压力情景 8–12%；这是模型假设，不是公司事实。
+
+## 5. 2026Q1 最新财报指引、收入结构与业务侧重
+
+### 5.1 2026Q2 指引
+
+2026Q1 财报给出的 Q2 指引为：
+
+| 指标 | 2026Q2 指引 | 中点及含义 |
+|---|---:|---|
+| 收入 | 1.95–2.15 亿 | 中点 2.05 亿，环比 +14.9%、同比 +21.8%；远高于 Q1，dataMate 只贡献其中很小一部分 |
+| 毛利率 | 38–40% | 中点 39%，与 Q1 持平；收入杠杆被金、铜、PCB、汇率和工资上涨抵消 |
+| 主要驱动 | Defense、commercial aerospace、Data Solutions | Q1 backlog 中已有计划在 Q2 交付的订单，其他订单延伸到 Q3/Q4 |
+| 价格传导 | Q1 已对新订单提价，Q2 开始小部分体现 | 旧 backlog 仍按原价，较完整的成本转嫁预计 Q3/Q4 出现 |
+
+指引可信度较高的原因是 5.313 亿 backlog 与 Q1 1.52× B2B；主要风险不是没有订单，而是供应、交付节奏、输入成本和季节性。Q2 指引中点年化为 8.20 亿，已经高于当前 7.017 亿 TTM 收入约 16.8%。
+
+### 5.2 2026Q1 业务收入占比与增长
+
+以下终端市场金额由公司披露的同比增减额和增速反推，四舍五入会导致约 50 万美元差异；分部收入与毛利率是直接披露值。
+
+| 分部/终端 | 2026Q1 收入 | 占总收入 | YoY | GM/盈利特征 | 判断 |
+|---|---:|---:|---:|---|---|
+| ADRS 总计 | 9,982 万 | 55.9% | +20.1% | GM 41.5%，+140bp | 最大、利润率最高、最具嵌入壁垒 |
+| ├ Defense | 约 5,967 万 | 33.4% | +18.7% | Enercon/定制电源与高可靠连接器通常高于公司平均 | 当前最重要增长与 backlog 来源 |
+| ├ Commercial aerospace | 约 2,383 万 | 13.4% | +21.4% | 随大型 OEM 新机 build rate 与售后件增长 | 周期复苏 + 平台嵌入 |
+| └ Rugged/space 等 | 约 1,646 万 | 9.2% | +23.2%（rugged 披露） | 小批量、高规格、高测试成本 | Space 规模小但有期权价值 |
+| ITDS 总计 | 7,867 万 | 44.1% | +13.8% | GM 36.6%，-70bp | AI/网络增长被 transport 下滑和材料成本抵消 |
+| ├ Data Solutions | 约 4,075 万 | 22.8% | +30.4% | 估 GM 30–38%；组合包含电源、磁性器件、连接和 dataMate | ITDS 最突出、公司最侧重的有机增长业务 |
+| │ ├ Data Solutions power | 约 2,258 万 | 12.6% | +27% | 估 GM 28–38%，高功率/定制产品较高 | 管理层称大部分增长由 AI 驱动 |
+| │ └ 非电源 Data Solutions | 约 1,817 万 | 10.2% | 约 +35%（反推） | MagJack/磁性器件和 dataMate；dataMate 只并表约一个月 | 企业网络复苏 + 新并购 |
+| ├ Industrial technology | 约 3,005 万 | 16.8% | +16.7% | 产品异质，利润率中等 | 增长不错，但 AI 紧缺度低，本文只作次重点 |
+| └ Transportation | 约 841 万 | 4.7% | -33.3% | rail/e-mobility 仍低迷 | 明确跳过深度乐观建模 |
+
+2025 年旧产品组收入和毛利率可用于交叉验证：Power Solutions & Protection 约 3.568 亿、占 52.8%；Connectivity 2.322 亿、占 34.4%；Magnetic 8,636 万、占 12.8%。其中 Magnetic 2025 年同比 +25.4%、GM 约 27.6%；front-end power 由披露增量反推约 7,390 万、同比 +32.9%；fuse 约 2,280 万、同比 +32.5%。这三项与 Q1 Data Solutions +30.4% 的方向一致。
+
+## 6. 产品地图：重点、高增长、小业务与明确跳过项
+
+### 6.1 AI/数据中心高功率电源与电源架
+
+| 产品/型号 | 关键规格 | 收入/增速交叉验证 | 利润率判断 | AI 价值与边界 |
+|---|---|---|---|---|
+| [TET6000-48-069RA](https://www.belfuse.com/media/datasheets/products/power-supplies/ds-BPS-TET6000-ac-dc-series.pdf) | 6kW；54.5V、可编程 42–58V；全功率 200–277VAC 或 240–380VDC；最高 97.5%；66W/in³；CAN、热插拔、并联均流；UL/CSA/IEC 62368-1、CE | 2026-06-26 新产品，尚无单独收入；是从 4.8kW 升级的最强增量 SKU | 新品估 GM 28–38%；通过高功率密度、遥测和定制可高于成熟标准电源 | 适合当前 54V AI/企业服务器和交换机，但不是 800V 原生输入，也不是 OCP 12kW HPR V2 PSU |
+| TET4800-48-069RA | 4.8kW；48V/100A；90–300VAC 或 192–400VDC | Mouser 小批量价 1,605.95 美元、工厂交期 20 周；说明仍有较长交付周期 | 成熟量产、估 GM 25–35% | 当前 SPSTET4V3 的主力兼容模块；N+1 时每 6 模块可用约 24kW |
+| TET4000-48-069RA/H | 4kW；48V；峰值效率 >97%；OCP/CORD/数据中心应用 | front-end power 2025 约 7,390 万、+32.9%，包含本系列及其他前端电源 | 成熟产品，价格压力更高 | 当前量产基础；功率密度落后 6/8.5/12kW 新路线 |
+| [SPSTET4V3-01/01C](https://www.belfuse.com/products/power-supplies/power-shelves-racks/spstet4v3-01) | ORV3 1OU 架；6 个 PSU；标称 28.86kW；5+1 或 3+3；50V/440A；NAC 可选；多架可管理 | 电源架收入未单列；与 2025/2026 Data Solutions power 增长交叉验证 | 架体、控制与服务提高整机 GM，估 28–38% | Bel 网站将 TET6000 标为可配产品，但现有 shelf 数据页仍只列 TET4000/4800；需把“网页兼容”与完整系统认证分开 |
+| TET3000-12-054 / TET2500 | 48/54V 转 12V，3kW/2.5kW；TET3000 半载效率约 95% | 收入未单列 | 标准 DC/DC，估 GM 25–35% | 服务当前 48/54V→12V 传统链路；800V→12V/核心电压高变比路线会改变价值位置 |
+
+近端判断：TET6000 是值得重点跟踪的新 SKU，但不能仅凭发布就假定大规模客户认证。公司没有公开客户名称或 NVIDIA MGX 认证；本次对 OCP 产品库和公司资料的检索也未找到 TET6000/SPSTET4V3 的 OCP Accepted 记录或 12kW 路线。2026 年 OCP EMEA 上 Bel 展示电源架、热插拔模块与遥测，说明在积极争取设计，但展会展示不是量产订单。
+
+### 6.2 网络磁性器件、MagJack、SFP 与 dataMate
+
+| 产品/型号 | 技术与价格证据 | 当前规模/增速 | 利润率判断 | AI 价值与边界 |
+|---|---|---:|---|---|
+| MagJack ICM 1G/2.5G/5G/10G | 把 RJ45、隔离变压器、共模扼流圈、EMI 屏蔽集成；支持 PoE 30/60/100W，最多 16 端口；与 Broadcom、Marvell、Aquantia PHY 配套。渠道单价约 5–26 美元 | 2025 Magnetic 总收入 8,636 万、+25.4%；网络为主要驱动 | Magnetic 2025 GM 27.6%；高规格 ICM 估 28–36% | 适合 BMC/OOB、管理网络、企业交换机、工业边缘；最高公开 10GBASE-T，不是 800G/1.6T GPU fabric |
+| G23-21YR-010/112、G10-1GHT-012E | 10GBASE-T；Mouser 小批价约 18–26 美元；部分型号交期 20–24 周，部分 non-stocked | 作为 ICM 高端结构之一，未单列 | 设计验证后有一定黏性，但行业标准 footprint 限制垄断 | 供需偏紧可由渠道 12–30 周交期验证；不能由此推断所有型号短缺 |
+| Bel 铜 SFP | 1G/10G Base-T 与管理连接 | 未单列 | 估 GM 25–35% | 不含 400/800G 光电转换能力 |
+| dataMate DM7052/DM7053 | SFP+ 铜收发器；10G over Cat6a 30m，2.5/5G over Cat5e 100m；灰色渠道 DM7053 约 96–225 美元 | 收购时年收入约 1,800 万；管理层预期增长 | 公司称 operating margin 与公司平均相当；估 GM 35–45%、op margin 15–20% | NVIDIA 开发者论坛 2026 年 4 月确认 DM7053 出现在 ConnectX-7 支持模块清单，但具体 NIC/10G 模式仍需验证；这是管理/兼容用途，不是高速 scale-out 主链路 |
+| dataMate DM7809/7808/7806 | G.hn Wave-2 SFP；电话线/同轴/电力线复用，净速率最高约 1.7Gbps，AES-128 | 包含在 1,800 万 run-rate | 小批高功能模块，估 GM 35–45% | 宽带和楼宇改造价值高，AI 数据中心关联弱 |
+| dataMate 10BASE-T1L/SPE、DM7980 | 单对以太网可把数据和供电延伸到约 1km；适合传感器、楼宇、工业；PoE→SPoE | 尚未披露收入，是“小而有潜力”产品 | 初期 NRE/认证拖累，放量后估 GM 38–48% | 对 AI 机房传感/设施管理有间接价值，不是 GPU 网络；更大的 TAM 在工业自动化和 smart building |
+
+[NVIDIA Developer Forum 的 DM7053 讨论](https://forums.developer.nvidia.com/t/connectx-7-with-10gbase-t-sfp/365519)是有价值的渠道验证：模块被列为支持的第三方模块，但发帖者继续质疑某具体 ConnectX-7 型号是否真正支持 10Gbps。结论应是“存在生态认证迹象”，而不是“已经获得 AI 高速网络大单”。
+
+### 6.3 A&D、商业航天、rugged 与小型 space 业务
+
+| 产品/业务 | 代表产品/应用 | 规模与增长 | 利润率/壁垒 | 潜力判断 |
+|---|---|---:|---|---|
+| Enercon 定制电源/UPS/PDU | M4012 300W VPX VITA62、M183 1kW 三相 AC/DC、M9201 3.6kW AC/DC、M9517 16 通道 PDU、M359-1 2kW naval UPS | 2025 收入 1.366 亿；2026Q1 ADRS +20.1%，防务 +18.7% | 收购时 GM 47%；常为 sole source；平台认证和换型成本高 | 公司最强的利润与护城河来源，受导弹防御、雷达、补库存和欧洲国防支出驱动 |
+| Enercon/MILTECH 网络 | MILTECH 918 8×1G 全管理军用交换机、嵌入式交换、路由器/USB | 包含于 Enercon；不单列 | 军规环境和平台定制带来溢价 | 不是 AI 网络，但高可靠通信需求强；可能与 Cinch 连接/线缆捆绑 |
+| Cinch/Stratos/Fibreco rugged connectivity | expanded-beam fiber、铜缆/RF/微波连接器、线束、燃油量指示系统等 | 2025 ADRS 剔除 Enercon 后约 2.323 亿；2026Q1 commercial air +21.4%、rugged +23.2% | ADRS GM 41.5%；长认证、平台寿命长 | 航空 build rate 与 defense replenishment 双驱动；第一笔 Cinch+Enercon 捆绑设计已获得 |
+| Space | 卫星/运载器用连接器、线缆、磁性器件与电源 | 最近年度约 1,000 万、约 250 个客户；较 2023 年约 450 万已翻倍以上 | 小批、多客户、认证深，估 GM 45–55% | 当前收入小但分散度高，发射率和星座建设可带来非线性增长；不能漏掉 |
+
+Enercon 官方公开的客户/平台示例包括 General Dynamics、Raytheon、Lockheed Martin、Northrop Grumman、L3Harris、BAE、Collins、Elbit，以及 NASAMS、Iron Dome、F-16、Eurofighter、737 MAX 等；这些示例说明历史 field-proven 资历，不等于当前新增订单金额。2026Q1 公司披露斯洛伐克两项 defense design win 正处最终认证、预计 Q2 完成，并取得首个 Cinch+Enercon 捆绑设计。现有/改型产品从 award 到明显收入一般需 12–18 个月，全新技术更久。
+
+### 6.4 电路保护/保险丝
+
+2025 年 fuse 收入由公司披露增量反推约 2,280 万、同比 +32.5%，规模小但增速高。TET6000 数据表显示每台模块在 L 与 N 两条线上均放置 2×25A 并联输入保险丝，即可见 BOM 至少 4 只；但公司未说明是否由内部 Bel Circuit Protection 供应，不能把所有交叉销售视为已实现。保险丝同时进入工业、汽车、充电、电池和通信设备，AI 直接占比没有披露。
+
+### 6.5 明确跳过或降级处理的产品/业务
+
+| 跳过/降级项 | 原因 |
+|---|---|
+| Rail、e-mobility | 2026Q1 transportation -33.3%；e-mobility 年收入已从接近 3,000 万降到最近年度不足 1,000 万；需求仍低迷 |
+| Innolectric EV/DC charging | 2025Q4 已对股权与贷款计提 1,310 万减值，不再作为成长支柱 |
+| 低功率外置适配器、消费/广播、普通变压器 | 成熟、竞争充分、AI 内容量低；只保留在公司总收入情景的“其他”项中 |
+| 医疗、一般工业 | 业务健康但非 AI 紧缺层；industrial technology Q1 +16.7%，仍需跟踪，但不做逐型号极乐观模型 |
+| 800G/1.6T 光模块、AEC/DAC、224G 高速连接器 | 没有可信的 Bel 公开产品证据；对 Bel 的当前收入和每 optical port 内容量按 0 处理 |
+| 800V 原生 rack/DC-DC | TET6000 额定 HVDC 仅 240–380V、最大连续 400V；公司没有公开 800V→48/12V 产品或 NVIDIA 800V 合作伙伴身份，不能提前计入收入 |
+
+## 7. 每个关键业务当前收入贡献、增速与竞争力评分
+
+口径说明：当前贡献优先使用 TTM 或最新年化；无法精确拆分时给出区间。Space 是 legacy ADRS 的子集，不能与其他行相加。评分 1–5，5 为 AI/任务链最关键、最紧急、最紧缺或最强垄断/溢价。
+
+| 关键业务 | 当前收入贡献 | 当前增速证据 | 估计产品 GM | AI/任务重要性 | 时间紧急性 | 供需紧张 | 垄断/独占 | 溢价能力 |
+|---|---:|---|---:|---:|---:|---:|---:|---:|
+| Data-center/HPC 前端电源 + shelves | TTM/当前 run-rate 8,200–8,800 万；其中明确 AI floor 约 1,800–2,500 万 | Q1 Data Solutions power 2,258 万、+27%；2025 front-end power 约 7,390 万、+32.9% | 28–38% | 5.0 | 5.0 | 4.0 | 2.0 | 2.5 |
+| 网络磁性器件/MagJack/铜 SFP，不含 dataMate | 6,200–7,500 万 | Magnetic 2025 +25.4%；Q1 非电源 Data Solutions 反推约 +35%，但含 dataMate 一个月 | 28–36% | 2.0；OOB 而非 fabric | 3.0 | 3.5 | 3.0 | 2.5 |
+| dataMate | 年化约 1,800 万；2026 并表贡献预计约 1,500 万 | 收购前趋势未披露；管理层明确按增长收购，新美国厂已运行 | GM 35–45%；op 15–20% | 1.5 | 2.5 | 2.0 | 2.5 | 2.5 |
+| Circuit protection/fuses | 2,400–2,700 万 TTM 估值 | 2025 约 +32.5% | 35–45% | 3.0 | 3.5 | 3.0 | 2.5 | 2.5 |
+| Enercon A&D 定制电源/网络 | 1.45–1.55 亿 TTM/年化估值 | 2026Q1 defense +18.7%；ADRS +20.1% | 约 45–50%；收购时 GM 47% | 5.0（任务关键）；AI 1.0 | 5.0 | 4.0 | 4.0 | 4.5 |
+| Legacy A&D/commercial air/rugged connectors & cables | 2.45–2.60 亿 TTM 估值 | Q1 commercial air +21.4%、rugged +23.2% | 40–50% | 4.5（任务关键）；AI 1.0 | 4.5 | 3.5 | 3.5 | 4.0 |
+| Space 小业务（上行的子集） | 900–1,200 万 | 2023 约 450 万→最近年度约 1,000 万；客户约 250 家 | 45–55% | 4.5（任务关键）；AI 1.0 | 4.0 | 3.5 | 3.5 | 4.0 |
+
+最值得投资人区分的两种壁垒：Enercon/航空连接器的壁垒来自客户平台、军规/航规认证和失效成本；ITDS 电源/磁性器件的壁垒来自效率、可靠性、PHY/EMI 验证和交付，但通常有 2–3 家供应商。前者是真正的高 switching cost，后者更接近“合格供应商名单内竞争”。
+
+## 8. 一年后收入贡献：基准、乐观、极度乐观
+
+### 8.1 产品级收入情景
+
+以下预测指约 2027Q2 的 12 个月 run-rate，排除尚未宣布的新大型并购；若公司用增发资金完成并购，报告收入会高于本表但不属于当前业务有机兑现。
+
+| 关键业务 | 当前中点 | 基准：一年后收入 / 增速 | 乐观：一年后收入 / 增速 | 极度乐观：一年后收入 / 增速 | 核心触发条件 |
+|---|---:|---:|---:|---:|---|
+| AI/data-center 电源与 shelves | 8,500 万 | 1.10 亿 / +29% | 1.32 亿 / +55% | 1.60 亿 / +88% | TET6000 完成更多 OEM/架级验证；电源架订单由 enterprise/startup 扩至 Tier-1；无重大 IC/磁材瓶颈 |
+| 网络磁性器件/MagJack/铜 SFP | 6,850 万 | 8,500 万 / +24% | 1.00 亿 / +46% | 1.18 亿 / +72% | 企业网络复苏持续、10G/PoE 管理端口放量、20–30 周交期转成有效出货而非重复下单 |
+| dataMate | 1,800 万 | 2,100 万 / +17% | 2,500 万 / +39% | 3,100 万 / +72% | Bel 分销交叉销售、DM7053 平台验证扩张、SPE/G.hn 新设计转量产 |
+| Fuses/circuit protection | 2,550 万 | 2,900 万 / +14% | 3,400 万 / +33% | 4,200 万 / +65% | 高功率电源/储能/工业需求与内部交叉销售；价格覆盖金属成本 |
+| Enercon A&D power/network | 1.50 亿 | 1.75 亿 / +17% | 1.95 亿 / +30% | 2.25 亿 / +50% | 国防补库存、导弹/雷达项目交付、斯洛伐克本地化认证、无以色列停工 |
+| Legacy A&D/aero/rugged connectivity | 2.525 亿 | 2.85 亿 / +13% | 3.10 亿 / +23% | 3.45 亿 / +37% | 商业飞机 build rate、Cinch+Enercon bundle、defense replenishment 与产能扩张 |
+| Space（上行子集，不另加总） | 1,050 万 | 1,300 万 / +24% | 1,700 万 / +62% | 2,400 万 / +129% | 发射/卫星节奏、250 客户中多个项目同步爬坡；基数小导致百分比高 |
+
+### 8.2 一年后的重要性、紧缺和定价评分
+
+下表每格为“基准 / 乐观 / 极度乐观”，评分仍为 1–5。
+
+| 关键业务 | AI/任务重要性 | 时间紧急性 | 供需紧张 | 垄断/独占 | 溢价能力 | 判断依据 |
+|---|---:|---:|---:|---:|---:|---|
+| AI 电源/shelves | 5/5/5 | 5/5/5 | 4/4.5/5 | 2/2.5/3 | 2.5/3/3.5 | 2026 的 54V rack 仍需大量前端电源；若 12kW/800V 迁移更快而 Bel 未跟进，重要性高但份额不一定高 |
+| MagJack/铜 SFP | 2/2.5/3 | 3/3.5/4 | 3/4/4.5 | 3/3/3.5 | 2.5/3/3.5 | 端口量随设备增长，但 OOB 单价和带宽有限；PHY/EMI 验证提高黏性，标准 footprint 限制定价 |
+| dataMate | 1.5/2/2.5 | 2.5/3/3.5 | 2/2.5/3 | 2.5/3/3.5 | 2.5/3/3.5 | SPE/G.hn 是工业与楼宇增量；在 AI compute 主链地位仍低 |
+| Fuses | 3/3.5/4 | 3.5/4/4.5 | 3/3.5/4.5 | 2.5/3/3 | 2.5/3/3.5 | 每台高功率 PSU 都需要保护，认证后替换不随意，但 Littelfuse/Eaton/Mersen 可替代 |
+| Enercon | 5/5/5（任务） | 5/5/5 | 4/4.5/5 | 4/4.5/4.5 | 4.5/4.5/5 | sole-source、平台认证、战备补库；订单节奏取决于政府/prime 采购而非消费需求 |
+| Legacy A&D/rugged | 4.5/5/5（任务） | 4.5/5/5 | 3.5/4/4.5 | 3.5/4/4.5 | 4/4.5/4.5 | 失效代价和再认证成本高，bundle 可提高单个平台内容量 |
+| Space | 4.5/5/5（任务） | 4/4.5/5 | 3.5/4/4.5 | 3.5/4/4 | 4/4.5/5 | 小批高可靠、发射后无法维修；增长高但单个项目波动也高 |
+
+极度乐观并不等于最可能。特别是 AI 电源的 1.60 亿情景需要 Bel 在一年内把 TET6000 从新发布推进到多个高量平台，并在 12kW/800V 架构到来前取得足够 54V design wins；当前没有公开客户订单金额支持把它当作基准。
+
+## 9. BOM、每 MW/机柜/GPU/端口内容量与价格传导链
+
+### 9.1 数据中心电源：从模块到机柜
+
+项目内[机柜级供电与服务器电源架构研究](../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md)给出的行业 BOM 基准为：高功率 PSU 中功率半导体约 18–25%、磁性器件 14–20%、电容/传感 8–12%、PCB/数字控制 8–12%、连接器/结构/风冷 12–18%、装配测试 10–15%、物流 4–7%；电源架另含 busbar、PDB、监控和认证/NRE。Bel 没有披露自身 BOM，以下是以公开规格和渠道价格做的工程估算。
+
+| 内容量单位 | 物理数量 | Bel 内容量估算 | 算法与边界 |
+|---|---:|---:|---|
+| 单个 4.8kW TET4800 | 1 PSU | 渠道小批价约 1,606 美元 | Mouser MOQ 8、工厂交期 20 周；大客户量价应更低 |
+| 单个 6kW TET6000 | 1 PSU | 估 1,800–2,500 美元 | 新品暂无公开成交价；以 TET4800 和行业 5.5–12kW 单价外推 |
+| 单个 SPSTET4V3 shelf | 6 PSU + shelf/NAC/busbar | 估 1.3–2.2 万 | 4.8kW 配置毛模块约 9,636 美元；加架体、控制、连接、测试与渠道；TET6000 版本是否完成系统级验证尚未公开 |
+| 100kW AI rack，N+1 | 4.8kW：5 shelves/30 PSU；6kW：4 shelves/24 PSU | 约 5.5–9.0 万 | 4.8kW 5+1 每架可用 24kW；6kW 假设 5+1 可用 30kW |
+| 142kW rack，N+1 | 4.8kW：6 shelves/36 PSU；6kW：5 shelves/30 PSU | 约 7.0–11.0 万 | 接近 GB300 NVL72 的行业功率等级；未表示 Bel 已获该平台认证 |
+| 227kW rack，N+1 | 4.8kW：10 shelves/60 PSU；6kW：8 shelves/48 PSU | 约 11–18 万 | 需要多 power zones；54V 铜排/架位压力显著上升 |
+| 每 1MW IT，N+1 | 约 34 个 6kW shelf 或 42 个 4.8kW shelf | 约 45–75 万/MW | 假设 Bel 独供从 AC/HVDC 到 48/54V 的 PSU+shelf；不含 UPS、PDU、母线、BBU、服务器板级 VRM |
+| 每 GPU（NVL72，142kW） | 142kW rack 内容量 / 72 | 约 970–1,530 美元/GPU | 只用于统一内容量比较；实际采购按 rack/shelf，不按 GPU 计价 |
+| 每 optical port | — | 0 美元核心光口内容量 | Bel 无公开 800G/1.6T 光模块、DSP、激光器或 AEC；管理端 RJ45 不能算入光口 BOM |
+
+价格传导链为：GaN/SiC/硅 MOSFET、控制 IC、铜/磁芯、电容 → PSU 模块 → shelf/NAC/busbar → OEM/ODM rack → 数据中心。Bel 2026Q1 已对新订单调价，但不轻易重开旧 backlog，因此材料涨价先压 Q1/Q2 GM，价格收益主要在 Q3/Q4。行业成熟 PSU 通常年降价 3–8%；全新高功率 SKU 可因效率/功率密度提高获得 10–30% 的每瓦溢价；短缺时可有 10–20% 紧急溢价，但 Bel 在 ITDS 罕有 sole source，持续垄断定价不现实。
+
+### 9.2 MagJack、dataMate 与 fuse 的单位内容量
+
+| 产品 | 单位 BOM/售价 | 每 rack / GPU / port / MW 内容量 | 价格与供需证据 |
+|---|---|---|---|
+| MagJack ICM | RJ45 外壳/触点、1–4 颗隔离变压器/共模扼流圈、屏蔽、LED；单端口约 5–15 美元，双端/10G 约 18–26 美元 | AI rack 假设 8–32 个 1/10G 管理/OOB 端口，则 50–800 美元/rack、约 1–11 美元/GPU；每 1MW、4–7 racks 约 0.2–5.6 千美元；每 800G optical port 核心内容量 0 | Mouser 多型号工厂交期 12–30 周；部分 10G 型号 non-stocked，显示局部紧张而非绝对缺货 |
+| DM7052/DM7053 铜 SFP+ | PHY、磁性器件、RJ45、SFP 结构、电源/固件；灰色渠道约 96–225 美元/模块 | 每 10G copper port 约 100–225 美元；只有部署管理/铜接入才产生，不能按每 GPU 或每 800G 光口普遍分摊 | NVIDIA/Onyx 支持清单提供生态验证，但具体 NIC、固件和速率仍需逐平台验证 |
+| DM780x G.hn / SPE | PHY/AFE、隔离、surge、SFP/工业结构、固件；估 150–500 美元 | 按工业/楼宇节点计价；AI rack、GPU 和 optical port 直接内容量近似 0 | 需求由旧线改造、传感和 smart-building 项目驱动，不由 GPU 数量线性驱动 |
+| PSU 内部 fuse | TET6000 可见 4×25A input fuse；估 1–8 美元/只 | 约 4–32 美元/PSU；含 N+1 时按 1MW 约 200–250 个 PSU 计约 0.8–8.0 千美元/MW；是否内部 Bel 供货未知 | 保险丝需安全/可靠性验证，但竞争者多，单位价值远低于 PSU |
+
+### 9.3 A&D/rugged 的 BOM 与真实计价单位
+
+A&D 产品不能合理换算为 MW、AI rack、GPU 或 optical port，正确单位是每个 LRU、平台或军用网络端口。硬套 AI 单位会制造虚假 TAM。
+
+| 业务 | 典型 BOM | 真实内容量估算 | 价格传导与毛利 |
+|---|---|---|---|
+| Enercon AC/DC、DC/DC、UPS/PDU | 功率半导体 15–22%；磁性器件 12–18%；PCB/控制 10–15%；机械/热/EMI 15–25%；连接/线缆 8–15%；测试、认证、NRE 15–25% | 单板/模块约 0.5–5 万；复杂 PDU/UPS/电源系统约 5–50 万；按平台总内容量可更高 | 原材料只是价值的一部分，环境、EMI、热、长期供货和认证决定溢价；收购时 GM 47% 证明 NRE/sole-source 价值 |
+| MILTECH 918/军用网络 | 交换芯片、PHY、隔离电源、rugged connector、机箱、固件、测试 | 估 0.8–3 万/8-port switch，即 1,000–4,000 美元/军用端口 | 平台验证和军规环境带来高价；不能与普通 10G SFP 的每端口价格直接比较 |
+| Cinch/expanded-beam/航空线束 | 精密触点、光纤/铜缆、镀层、密封、壳体、应力消除、100% 测试与可追溯性 | 单连接端约 100–2,000 美元；复杂线束/平台 bundle 约 1–25 万，项目差异极大 | 金、铜和人工上涨可传导，但合同/backlog 造成时滞；换供应商需重新 EMI、环境和平台认证 |
+| Space | 高可靠连接器、线缆、磁性器件、电源、筛选/烧机/可追溯 | 估每卫星/任务 2–20 万 Bel 内容；没有统一标准，区间只用于容量级别 | 发射后不可维修使可靠性溢价最高；小批量和项目波动使预测误差也最大 |
+
+## 10. 当前产能、供应链采纳与认证阶段
+
+Bel 在八个国家拥有约 15 个制造设施、约 190 万平方英尺制造面积；中国约占制造面积 56%，而 Enercon 扩展了以色列、美国和印度能力。2025 capex 仅约 1,200 万、2026Q1 264 万，说明产能提升主要来自人员、良率、自动化、转移/外包、产品组合与多厂复制，而不是新建大型 fab。以下“美元产能”是用当前收入、Q2 指引年化、backlog 和合理利用率估算，不是公司披露。
+
+| 关键业务 | 当前年化收入能力 | 估计当前利用率 | 被供应链采纳程度 | 当前认证/验证阶段 | 置信度 |
+|---|---:|---:|---|---|---|
+| AI/data-center PSU+shelf | 1.10–1.40 亿 | 60–80% | 中等：已向企业网络 OEM、数据设备客户及 AI 初创出货；无直接 hyperscaler；公司称在增加多厂 capacity | TET6000 已有 UL/CSA/IEC 62368-1、CE；SPSTET4V3 为 ORV3 结构/接口产品；本次检索未找到这两款产品的 OCP Accepted、NVIDIA MGX 或 12kW HPR V2 认证 | 中低 |
+| MagJack/网络磁性器件 | 0.95–1.20 亿 | 60–75% | 高：成熟分销、与 Broadcom/Marvell/Aquantia PHY 兼容；企业网络长期量产 | IEEE 802.3 10/100/1G/2.5/5/10G、802.3af/at/bt；UL/RoHS；具体平台仍需 PHY/EMI 验证 | 中高 |
+| dataMate | 2,500–3,000 万 | 60–72% | 中低：老客户和产品已有基础，迁入新的美国工厂后已运行；Bel 分销交叉销售刚开始 | DM7052 IEEE 802.3bz/SFP MSA；DM7053 有 NVIDIA/Onyx 支持清单迹象；SPE 产品处早期设计导入 | 中 |
+| Fuses | 3,500–4,500 万 | 55–75% | 高：成熟目录/分销和多行业认证；AI 电源内部交叉销售比例未知 | UL/IEC/汽车/工业认证因系列不同；TET6000 内部来源未披露 | 中低 |
+| Enercon | 1.80–2.10 亿 | 70–85% | 高：300+ 客户/历史平台，收购时通常 sole source；导弹、雷达、航空等 field-proven | 典型 MIL-STD-704/810/461、VITA62、客户平台认证；斯洛伐克两项设计在 2026Q2 最终认证阶段 | 中 |
+| Legacy A&D/rugged | 2.85–3.20 亿 | 78–88% | 高：商业航空 OEM、defense prime、多平台嵌入；首个 Cinch+Enercon bundled win | 客户/平台专属环境、EMI、航规/军规批准；认证迁厂可能耗时 | 中 |
+| Space（子集） | 1,500–2,000 万 | 50–75% | 中：约 250 个客户降低单一项目风险，但规模小 | 每个卫星/发射项目独立 qualification；没有可统一列示的单一认证 | 低 |
+
+渠道交期是补充验证而不是公司产能等价物：TET4800 为 20 周；1G/2.5G/10G MagJack 多为 12–30 周；公司又披露部分 IC 因 AI 需求延长。库存 1.812 亿环比增加说明公司正在为 backlog 备料，但也可能在需求回落时成为去库存风险。
+
+## 11. 一年后产能、供应链采纳与认证三情景
+
+| 关键业务 | 基准产能 / 采纳与认证 | 乐观产能 / 采纳与认证 | 极度乐观产能 / 采纳与认证 |
+|---|---|---|---|
+| AI PSU+shelf | 1.40 亿；TET6000 在现有 enterprise/network 客户通过更多 AVL，SPSTET 系统验证完成 | 1.75 亿；新增 1–2 个 Tier-1 OEM/ODM，TET6000 大批量；公开 OCP/客户级认证之一 | 2.15 亿；进入多家高量 AI rack 平台，并发布 12kW 或 800V→48/12V DVT 产品；这是尚无公开证据的上行情景 |
+| MagJack/网络磁性器件 | 1.20 亿；恢复正常交期，10G/PoE 在 OOB/企业网络扩量 | 1.45 亿；更多 10G、100W PoE 和 data-center management 平台采纳 | 1.75 亿；AI 设备端口与企业升级同时超预期，但仍不进入 800G fabric 核心 |
+| dataMate | 3,000 万；美国厂稳定、Bel 分销全面上架，现有 DM705x/G.hn 扩量 | 3,600 万；DM7053 新平台认证、SPE 两个以上量产 design win | 4,500 万；SPE/smart-building 获头部客户并规模量产；不假设成为 GPU 网络产品 |
+| Fuses | 4,500 万；随公司电源和工业订单增长 | 5,500 万；内部 cross-sell 和外部储能/电源设计增加 | 7,000 万；AI power/BBU/工业电气同时短缺、公司有效提价 |
+| Enercon | 2.20 亿；斯洛伐克认证完成、现有订单稳步爬坡 | 2.55 亿；欧洲/以色列补库存加速，Cinch bundle 多平台复制 | 3.00 亿；多个导弹/雷达/防空项目同时急单，新增班次与多厂复制成功 |
+| Legacy A&D/rugged | 3.30 亿；商业航空 build rate 和 defense 稳健 | 3.75 亿；新平台 + bundle + aftermarket 同时增长 | 4.30 亿；prime 供应链极度紧张、Bel 作为已认证供应商拿到显著 share gain |
+| Space（子集） | 2,200 万；现有客户项目爬坡 | 3,000 万；多个星座/发射客户量产 | 4,000 万；发射率与客户内容量同步超预期；高波动、低置信度 |
+
+未来认证最重要的观察点不是普通 UL/CE，而是：TET6000 是否出现在正式 OCP Accepted/客户 AVL、是否有 12kW HPR V2 或 800VDC 产品；斯洛伐克 defense 设计是否按 Q2 完成；dataMate DM7053 是否在更多 NVIDIA/交换平台的正式兼容清单出现；SPE 是否从 Alliance/标准符合进入命名客户量产。
+
+## 12. 用真实 backlog、供给与渠道信号预测未来一年增速
+
+### 12.1 订单真实性与可见度
+
+| 证据层 | 已知事实 | 对未来收入的含义 | 限制 |
+|---|---|---|---|
+| 公司总订单 | 2025 bookings 7.329 亿、同比 +75.8%；Power 3.799 亿、+172%，Connectivity 2.538 亿、+19.7%，Magnetic 9,930 万、+52.8% | 订单加速覆盖 power、networking 与 A&D，不是单一产品偶发 | 2025 Power 增长含 Enercon 并购，因此不能全部视为有机 AI |
+| Q1 backlog | 2026-03-31 为 5.313 亿，较 2025-12-31 增 9,220 万、+21%；ADRS 约 +17%，ITDS 约 +27.3% | 两个分部同时强，ITDS backlog 增长快于收入，支持 H2 Data Solutions | 未披露产品级 backlog、客户名、订单金额和取消率 |
+| 交付窗口 | 公司估计 2026-01-31 backlog 的 80–85% 可在 2026 年内发货；Q1 call 称订单已排到 Q3/Q4 | 当前 backlog 覆盖 2026 大部分增长，Q2 指引可见度高 | backlog 不是固定交付承诺；供应困难、客户排程和新设计均可延后 |
+| 交期 | CFO 2026-05-04 称交期只“小幅”延长，backlog 增长大部分来自需求；TET4800 渠道 20 周，MagJack 多为 12–30 周 | 排除“客户仅因交期拉长而提前下单”是全部增长来源 | 分销商 lead time 是型号/数量特定，不代表公司整体平均 |
+| AI 客户 | 2025 可识别 AI 初创客户收入约 1,400 万，订单开始增加；Q1 Data Solutions power +27% | AI 是 real floor，且企业网络客户还有间接 AI 需求 | 无直接 hyperscaler、无命名 AI 项目、无订单金额；上限不可从 1,400 万简单倍增 |
+| A&D 项目 | 斯洛伐克两项 design win 处最终认证；客户验厂后取得 POs；首个 Cinch+Enercon 以色列 bundle win | 说明并购协同已从概念进入订单；12–18 个月后放量 | 公司未披露客户、平台或金额；历史 NASAMS/Iron Dome 等平台不能自动等同为当前 backlog |
+| Space | 最近年度约 1,000 万、250 个客户 | 客户分散，小基数可随发射率增长 | 项目延迟对季度波动大，具体订单不披露 |
+| 采购承诺 | 2025 年末 material purchase obligations 约 8,150 万；Q1 存货环比 +1,396 万 | 公司已为订单备料，支持交付 | 若客户延期，较高库存会反向压现金和价格 |
+
+没有足够公开信息建立“客户 A、项目 B、金额 C”的数据中心订单清单。最诚实的做法是把 5.313 亿公司 backlog、分部增幅、产品收入增速、渠道交期和公司匿名客户描述做交叉验证，而不是编造 hyperscaler 名称。A&D 也只把官方公开的 Slovakia/bundled design wins 当新增证据；Enercon 官网列出的历史平台只证明能力和 qualification，不作为新增订单。
+
+### 12.2 公司未来十二个月三情景
+
+基准为截至 2026Q1 的 TTM 收入 7.017 亿。预测期可理解为约 2026Q2–2027Q1；排除尚未公告的新并购。
+
+| 情景 | 公司收入 | YoY 增速 | ADRS 收入 / 增速 | ITDS 收入 / 增速 | 当前 backlog 在一年内转化 | 延迟/取消假设 | 所需产能与条件 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 基准 | 8.30 亿 | +18.3% | 4.45 亿 / +15.4% | 3.85 亿 / +21.8% | 约 80%，即约 4.25 亿 | 2–5% | Q2 中点年化 8.20 亿基本维持；新订单补足约 4.05 亿当期交付；Q3/Q4 季节性正常 |
+| 乐观 | 9.10 亿 | +29.7% | 4.80 亿 / +24.5% | 4.30 亿 / +36.0% | 约 85%，即约 4.52 亿 | 1–3% | 公司有效产能较当前 Q2 年化提高约 11%；AI power、networking 与 defense 同时扩产/提效，价格传导不损失份额 |
+| 极度乐观 | 10.20 亿 | +45.4% | 5.30 亿 / +37.5% | 4.90 亿 / +55.0% | 约 90%，即约 4.78 亿 | 1–2% | 有效产能较 Q2 年化提高约 24%；TET6000 获多个高量平台、A&D 急单、供应不断料；很可能还需要新增班次、外包或小型并购能力 |
+
+基准并不是保守衰退情景：它已要求全年维持接近 Q2 指引中点的运行率。Q1 1.52× B2B 若简单年化会得到超过 10 亿 bookings，但单季可能包含项目批量 PO、客户提前锁料和防务排程，不能直接拿来作为 2027 收入。更合理的判断是 B2B 会从 1.52× 回落，但 backlog 绝对额仍可增长或保持高位。
+
+### 12.3 分部收入桥
+
+基准 8.30 亿可由以下互不重复的主要业务大致组成：AI/data-center power 1.10 亿、networking magnetics/铜连接 0.85 亿、dataMate 0.21 亿、fuses 0.29 亿、Enercon 1.75 亿、legacy ADRS 2.85 亿、其他工业/医疗/低增长产品约 1.25 亿。乐观/极度乐观分别约 9.10/10.20 亿。这个桥与第 8 节产品情景一致，Space 已包含于 legacy ADRS，不能重复加总。
+
+## 13. 技术路线、行业会议与过去半年关键信号
+
+### 13.1 过去半年时间线
+
+| 日期 | 报告/会议/技术信号 | 对 BELFB 的意义 |
+|---|---|---|
+| 2026-02-17 | 2025Q4/FY25 财报：收入 +26.3%、GM 39.1%、bookings 7.329 亿 | 利润率修复和订单增长已被财报确认；Q4 GAAP 亏损主要是 Innolectric 减值 |
+| 2026-03-05 | dataMate 收购 | 小额、低倍数补充以太网/SPE/G.hn，提供潜在小业务，不是 AI fabric 大并购 |
+| 2026-03-16–19 | [Lite-On 在 NVIDIA GTC 2026 展示 110kW shelf 和 800VDC rack](https://www.liteon.com/en/news/press-center/content/liteon-gtc-qct-2026) | 直接竞争者已把 Rubin/800V 合作和大功率架公开化，Bel 的 28.86kW/54V 路线相对落后 |
+| 2026-03-31 | ADRS/ITDS 重组 | 管理层从产品销售转为按终端解决方案交叉销售；同时降低了外部按产品追踪透明度 |
+| 2026-04-29 | 2026Q1 财报；backlog 5.313 亿 | 订单加速、AI-related Data Solutions +30.4%、Q2 指引跳升 |
+| 2026-04-29–30 | [OCP EMEA Summit 2026](https://www.belfuse.com/lp/bel-to-exhibit-at-the-ocp-emea-summit) | Bel 展示高效率 PSU、shelf、热插拔、telemetry、connectivity/magnetics；证明销售投入，但没有披露 design win 金额 |
+| 2026-05-04 | Oppenheimer 会议 | 明确 AI 客户 2025 年仅 1,400 万、无直接 hyperscaler；交期略升但 backlog 主要是需求；是判断 AI 边界最关键的管理层信息 |
+| 2026-05-13 | 150 万股 BELFB 增发，266 美元 | 大幅去杠杆并给 M&A 资金，也造成两位数股本稀释 |
+| 2026-06-02–05 | [Delta COMPUTEX 2026](https://landing.deltaww.com/en-US/landing/Computex-2026) | Delta 展示 90kW 800V→低压架、110kW AC/DC shelf、12kW board，说明行业领先功率档已明显高于 Bel |
+| 2026-06-12 | [OCP HPR V2 72kW shelf 1.0 规格](https://www.opencompute.org/documents/open-rack-v3-hpr-v2-72kw-power-shelf-spec-v1-0-0-pdf) | 1OU、6×12kW、N+1 60kW 成为开放规格方向；Bel 6kW 是中间档，不是规格终点 |
+| 2026-06-26 | TET6000 数据表 Revision A | Bel 从 4.8kW 迈向 6kW，规格真实且新，但仍需客户/系统级量产认证 |
+
+### 13.2 54V 与 800V：Bel 的技术是主流吗
+
+项目内[中压直流、800VDC 与固态变压器研究](../../行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-07-10.md)和[机柜级供电研究](../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md)的共同结论是：2026 年实际收入仍主要来自 50/54V、高功率 PSU 和 72–110kW shelf；800V 更多处于 DVT/系统验证，较大规模收入偏向 2027 以后。因此 TET6000/SPSTET4V3 在未来 12 个月仍有窗口，并非已经过时。
+
+但长期方向对 Bel 有明显挑战。[NVIDIA 800VDC 架构](https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/)计划从 2027 年起服务 1MW 及以上 rack，通过 800V 配电降低电流、铜材和转换级数；公开合作伙伴包括 Delta、Flex、Lite-On、Megmeet 等，Bel 不在名单。传统 54V 架构在超过 200kW 时面临铜排、空间和维护压力。
+
+结论分三层：
+
+- 2026–2027 近端：Bel 的 4.8/6kW、54V、ORV3 shelf 是现实可售主流之一，尤其适合企业网络、HPC、非 hyperscale rack 和过渡改造。
+- 2027 以后高端：12kW PSU、60–110kW shelf、800VDC row/rack 和高变比 DC/DC 更接近新主流。Bel 必须推出产品或建立合作，否则 TAM 会逐步被架构迁移侵蚀。
+- 投资含义：TET6000 是 bridge product，而不是已经锁定下一代标准的“垄断品”。新品成功可带来 1–2 年高增长窗口；缺少 12kW/800V roadmap 是最重要技术风险。
+
+## 14. 竞争格局、替代方案与客户换型成本
+
+| 关键业务 | 主要竞争者 | Bel 优势 | 替代/技术风险 | 客户换型成本 |
+|---|---|---|---|---|
+| Data-center PSU/shelf | Delta、Lite-On、AcBel、Flex、Advanced Energy/Artesyn、OmniOn、Murata、Vicor、Megmeet | 可靠性、广泛定制、完整 power/protection/magnetics、分销、6kW 高效率与 ORV3 架 | 对手规模更大、与 hyperscaler/NVIDIA 更近；12kW/110kW/800V 产品领先；客户通常保持 2–3 家供应商 | 中高：需效率、热、瞬态、固件、PMBus/CAN、安全和 rack 验证，约 9–18+ 月；但有标准接口时仍可 second-source |
+| MagJack/磁性器件 | Pulse/Yageo、Halo、TE、Molex、Würth、Abracon、Amphenol | 产品目录宽、集成 7+ 离散元件、PHY 配套、定制和长期分销关系 | 标准 RJ45/ICM footprint、离散 magnetics 或其他供应商可替代；最高仅 10G | 中：重新做 PHY、EMI、surge、PoE 与板级验证；行业标准 footprint 降低锁定 |
+| dataMate 铜 SFP/G.hn/SPE | Cisco/Juniper OEM 与通用 SFP 厂、Broadcom/Marvell PHY 生态、MaxLinear G.hn、ADI/TI/Microchip SPE | DM705x 历史兼容、紧凑模块、美国工程/制造、Bel 渠道 | 10G copper 可被光纤/AOC/DAC 或低价兼容模块替代；SPE 标准尚在早期、多家芯片厂推动 | 低到中：SFP 可插拔降低替换成本；固件/兼容清单和现场稳定性提供一定黏性 |
+| Fuses | Littelfuse、Eaton Bussmann、Mersen、Schurter、Bourns | 可与内部电源设计协同、目录和认证广 | 多家 pin/规格兼容产品；单位价值低 | 中：安全认证和故障模式验证带来成本，但非独占 |
+| Enercon custom power/network | VPT/Vicor、Crane、Collins/RTX、Astronics、SynQor、XP Power、Mercury、Curtiss-Wright、TT Electronics | 40+ 年 field-proven、客户定制、常 sole-source、以美/以色列/印度/欧洲交付，且可捆绑 Cinch | 平台新立项时 prime 可选竞争者；预算/战争节奏、以色列运营风险；技术上可由其他军规电源替代 | 很高：MIL-STD/航规、环境、EMI、可靠性、文档和平台再认证，通常 12–24+ 月；在役平台可能持续多年 |
+| Rugged connectors/cables | Amphenol、TE Connectivity、Glenair、Carlisle、Radiall、Smiths Interconnect | Cinch/Stratos/Fibreco 品牌、expanded-beam、RF/copper/fiber 组合、平台历史 | 新平台会多源；开放/标准连接器降低独占；金铜成本 | 高：几何接口、EMI、密封、振动、线束和平台批准均需重做；失效成本高 |
+| Space | Glenair、TE、Amphenol、Smiths、Radiall、Crane/VPT 等 | 250 客户分散、small-batch engineering 与现有产品组合 | 单项目延期、辐射/发射环境、客户自研、快速迭代 | 很高：qualification 和飞行履历最重要，发射后不可维修 |
+
+### 14.1 高速网络的替代风险
+
+项目内[高速连接器与结构化布线研究](../../行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-07-10.md)、[AEC/DAC 研究](../../行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-07-10.md)与[800G/1.6T 光模块研究](../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md)表明，AI scale-out/scale-up 的高价值内容集中在 112/224G 连接器、DAC/AEC 和 800G/1.6T optics。Bel 公开网络产品集中于 10GBASE-T、RJ45、SFP copper 与工业/管理以太网，因此：
+
+- AI rack 数量增长会增加管理端口和电源需求，Bel 可以受益；
+- 每 GPU 产生 1.5–3 个高速网络 endpoint 的行业 TAM，不能直接乘以 Bel 的 MagJack 价格；
+- 每 800G/1.6T optical port 的 Bel 直接核心内容量当前为 0；
+- 若服务器管理网由板载 PHY、低成本 discrete magnetics 或其他 ICM 替代，Bel 的 AI 网络内容量会下降；反之，更多遥测/OOB、安全隔离和 10G management 会提高小额内容量。
+
+### 14.2 定价权排序
+
+Enercon sole-source 定制电源/网络 > 航天国防/space rugged connectors > 定制 AI power shelf > 认证 fuse/10G ICM > 标准 PSU/普通 MagJack > 可插拔铜 SFP/通用工业产品。Bel 的综合毛利率提高，主要由产品组合、纪律和 A&D 收购共同驱动，不能把 39% 公司毛利率视为每个 AI PSU 的固有毛利率。
+
+## 15. 主要风险、催化剂与跟踪清单
+
+### 15.1 主要风险
+
+1. **估值压缩。** 约 69× 经济口径 TTM P/E、36× 调整后 forward P/E 已经计入持续高增长；B2B 或 GM 略低于预期都可能引发多重压缩。
+2. **AI 收入误读。** 明确 AI 客户仅约占 2025 收入 2.1%，Data Solutions 22–23% 才是广义暴露；若市场按纯 AI 电源/高速互连公司定价，会高估 TAM 与壁垒。
+3. **电源路线落后。** 6kW/28.86kW 对 12kW/72–110kW、800VDC 的差距已经公开；Bel 不在 NVIDIA 800V 合作伙伴名单。
+4. **订单转化与重复下单。** backlog 强，但产品级客户、取消率和交付金额不披露；渠道 20–30 周交期可能诱发部分提前下单。
+5. **输入成本/汇率。** 金、铜、PCB、IC、人民币、谢克尔、墨西哥比索都在 Q1 压 ITDS GM；旧 backlog 提价有时滞。
+6. **并购与商誉。** 约 4.39 亿商誉/无形资产；Innolectric 已证明投资可失败；Enercon 剩余 20% 和下一次 M&A 可能消耗增发资金。
+7. **运营集中。** 中国制造面积占比高；Enercon 又增加以色列地缘风险。多厂复制需要客户重新批准，不能立即切换。
+8. **稀释和双类别治理。** 基础增发稀释约 11.8%，greenshoe 全用约 13.6%；BELFB 缺少与 BELFA 相同的投票权，家族/内部人治理影响更大。
+9. **库存和现金转换。** 存货环比 +8.3%、占 TTM 收入约 25.8%；若排程延后，库存、应收和现金流会先恶化。
+
+### 15.2 未来 2–4 个季度必须验证的指标
+
+| 指标 | 健康阈值 | 预警阈值 |
+|---|---|---|
+| 2026Q2 收入/GM | 收入接近或高于 2.05 亿中点，GM 约 39% | 收入低于 1.95 亿或 GM <38%，且不是一次性原因 |
+| Backlog/B2B | backlog 维持 >5 亿，B2B 正常化后仍 ≥1.0× | 连续两季 B2B <1、backlog 快速下降或延迟/取消上升 |
+| Data Solutions | 继续 >20% 增长，power 保持 >20% | 企业网络再次去库存、power 增速跌至个位数 |
+| AI 透明度 | 披露明确 AI 销售、客户层级或 design win 增量 | 只讲 AI 市场、不再提供任何收入/订单证据 |
+| TET6000/roadmap | 命名 OEM/AVL/OCP 认证、量产订单；公布 12kW 或 800V 产品 | 一年后仍只有 6kW 发布，无客户或下一代产品证据 |
+| ITDS GM | 提价在 Q3/Q4抵消材料/FX，回到 37–39% | GM 持续 <36%、价格无法覆盖成本 |
+| Enercon/ADRS | 两项 Slovakia 认证完成，bundle win 增加；ADRS >15% 增长 | 认证延期、以色列供应中断、defense backlog 下滑 |
+| 现金/资金用途 | 清债后保持净现金，M&A 估值与回报纪律清楚 | 新增发资金很快投入高倍数/低协同收购，商誉再大增 |
+| 存货 | 收入增长快于存货，inventory turns 改善 | 存货继续双位数增长而收入/订单放缓 |
+
+### 15.3 催化剂
+
+- Q2 收入达到 2.15 亿上端、GM 保持 39–40%，证明 backlog 能高质量转化。
+- TET6000 获正式 OCP/客户认证、公开高量 design win，或公司发布 12kW/800V roadmap。
+- Data Solutions power 维持 25–40% 增长，同时 ITDS GM 因提价回升。
+- Enercon Slovakia 认证完成、Cinch+Enercon bundle 复制，A&D backlog/收入继续 >15%。
+- 增发资金清债后完成小额、低倍数、立即增厚且补足 800V/高速互连能力的收购。
+- Space 从约 1,000 万进入 1,500–2,000 万 run-rate，同时保持客户分散。
+
+## 16. 最终判断
+
+Bel Fuse 的投资逻辑不是“它拥有 AI 数据中心最关键的光互连或下一代 800V 垄断产品”，而是三层组合：
+
+1. **已经兑现的核心：** 高毛利 A&D/rugged 平台、Enercon sole-source 定制电源、商业航空复苏和强 backlog。这一层贡献大部分收入、利润和换型壁垒。
+2. **正在兑现的增量：** 企业网络复苏、Data Solutions power +27%、Magnetic +25%、TET6000/SPSTET4V3、fuse 和 dataMate。AI 是其中重要驱动，但通过 OEM/企业客户间接进入，直接可识别收入仍小。
+3. **尚未证明的期权：** 12kW PSU、72–110kW shelf、800VDC/高变比 DC/DC、更多 hyperscale/Tier-1 认证，以及 dataMate SPE 大规模放量。当前股价已经给这层期权较高价值。
+
+业务质量评估：8/10；资产负债表 8.5/10；订单可见度 8/10；A&D 护城河 8/10；AI 直接收入确定性 4/10；下一代 AI 电源技术位置 5/10；当前估值安全边际 3/10。
+
+在基准情景中，公司未来十二个月收入约 8.30 亿、增长约 18%，仍是一家优秀成长工业电子公司；乐观 9.10 亿需要 ITDS 与 ADRS 同时强；极度乐观 10.20 亿则需要高量 AI 电源认证、A&D 急单和扩产全部成功。最大的向上 surprise 是 TET6000/后续 12kW 或 800V 产品获得命名平台；最大的向下 surprise 是市场发现“AI 标签”对应的直接收入仍停留在低个位数占比，同时估值从 AI 倍数回落到普通工业电子倍数。
+
+## 17. 研究口径、关键来源与置信度
+
+### 17.1 数据等级
+
+- **直接披露：** 财报收入、分部 GM、backlog、全年 bookings、Q2 指引、dataMate/Enercon 交易金额、TET6000 规格、发行股数。
+- **可复算：** bookings/B2B、TTM 财务、双类别经济市值、Data Solutions power 前期基数、终端市场金额、分部 backlog。
+- **模型估算：** 产品级收入区间、GM、美元产能、单位内容量、取消率、未来一年三情景。所有这类数字均以区间或“估”标注，不代表公司指引。
+
+### 17.2 公司与监管文件
+
+- [Bel Fuse 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/729580/000143774926005354/belfb20251231d_10k.htm)
+- [Bel Fuse 2026Q1 Form 10-Q](https://ir.belfuse.com/static-files/c07cb178-b71b-4ca5-8d47-5a8ac47033f7)
+- [2026Q1 results](https://ir.belfuse.com/node/18386/pdf)
+- [2025 historical segment recast 8-K](https://ir.belfuse.com/static-files/dcafff1b-03b6-4dca-a7d7-91fcdfab95e8)
+- [2026Q1 earnings call transcript](https://stockanalysis.com/stocks/belfa/transcripts/559153-q1-2026/)
+- [2026-05-04 Oppenheimer conference transcript](https://stockanalysis.com/stocks/belfa/transcripts/660060-oppenheimer-21st-annual-industrial-growth-virtual-conference/)
+- [Enercon acquisition close](https://ir.belfuse.com/news-releases/news-release-details/bel-closes-its-previously-announced-acquisition-enercon)
+- [dataMate acquisition](https://ir.belfuse.com/news-releases/news-release-details/bel-fuse-inc-announces-acquisition-datamate-advanced-ethernet)
+- [May 2026 equity offering](https://ir.belfuse.com/news-releases/news-release-details/bel-fuse-inc-announces-pricing-upsized-public-offering-class-b)
+
+### 17.3 产品、渠道、会议和技术路线
+
+- [TET6000 official product page](https://www.belfuse.com/products/power-supplies/ac-dc-converters/tet6000-ac-dc-hvdc-series)与[TET6000 datasheet](https://www.belfuse.com/media/datasheets/products/power-supplies/ds-BPS-TET6000-ac-dc-series.pdf)
+- [SPSTET4V3-01 official page](https://www.belfuse.com/products/power-supplies/power-shelves-racks/spstet4v3-01)
+- [Bel Data Solutions FAQ/MagJack specifications](https://www.belfuse.com/resources/faq/data-solutions-faq)
+- [TET4800 Mouser price/lead-time](https://www.mouser.com/ProductDetail/Bel-Power-Solutions/TET4800-48-069RA)
+- [10G MagJack channel example](https://www.mouser.com/ProductDetail/Bel-Magnetic-Solutions/G23-21YR-010)
+- [dataMate DM7052 datasheet](https://www.methodedatamate.com/wp-content/uploads/2019/10/10GBASE-T-SFP-1.pdf)与[DM780x/G.hn datasheet](https://methodedatamate.com/wp-content/uploads/2019/10/G.hn-SISO-SFP-1.pdf)
+- [Enercon Technologies products/custom military power](https://enercon.co.il/)
+- [Bel at OCP EMEA 2026](https://www.belfuse.com/lp/bel-to-exhibit-at-the-ocp-emea-summit)
+- [OCP recognized-products marketplace](https://www.opencompute.org/marketplace)
+- [OCP 72kW HPR V2 shelf specification](https://www.opencompute.org/documents/open-rack-v3-hpr-v2-72kw-power-shelf-spec-v1-0-0-pdf)
+- [OCP 100kW ±400V-to-48V shelf specification](https://www.opencompute.org/documents/orv3-hvdc-lvdc-100kw-power-shelf-spec-1-0-0-pdf)
+- [NVIDIA 800VDC architecture](https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/)
+- [Delta COMPUTEX 2026 power roadmap](https://landing.deltaww.com/en-US/landing/Computex-2026)
+- [Lite-On GTC 2026 110kW/800V roadmap](https://www.liteon.com/en/news/press-center/content/liteon-gtc-qct-2026)
+
+### 17.4 项目内使用的相关行业资料
+
+- [AI 数据中心建设规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+- [机柜级供电与服务器电源架构](../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md)
+- [中压直流、800VDC 与固态变压器](../../行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-07-10.md)
+- [数据中心低压配电、PDU 与母线槽](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-07-10.md)
+- [高速连接器、背板与结构化布线](../../行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-07-10.md)
+- [AEC、DAC 与高速铜缆](../../行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-07-10.md)
+- [800G/1.6T 可插拔光模块](../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md)
+
+> 本报告用于研究，不构成投资建议。产品级收入、产能、BOM 与情景预测受公司披露粒度限制，应在后续财报、客户认证、产品目录和渠道交期更新后滚动修正。

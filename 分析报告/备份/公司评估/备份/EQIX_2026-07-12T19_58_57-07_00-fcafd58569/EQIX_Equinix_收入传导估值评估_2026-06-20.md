@@ -1,0 +1,170 @@
+# 公司收入传导与价值传导评估：Equinix（EQIX）
+
+生成日期：2026-06-20  
+公司代号：EQIX  
+公司名称：Equinix, Inc.  
+主口径：NTM，即 2026Q2-2027Q1；若引用 FY2026、FY2027、项目全周期收入、长期 run-rate 或 GW 管线，只作为补充口径。  
+资料边界：使用 `公司调研/` 与 `行业调研/`，并用 Equinix 官方公告、SEC 文件和公司新闻稿核对最新事实；未使用 `特征量化/`、Signals、排序、回归或模型比较资料。  
+重要限制：本报告只评估经营收入、利润、现金流和执行传导，不给投资评级，不判断股价区间，不做市场估值倍数判断；市场价格不是经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口，即 2026Q2-2027Q1。补充口径只包括 FY2026 指引、xScale/atNorth 的长期容量管线和 AI Factory 的渠道验证，不把长期 GW 管线直接当作 NTM 并表收入。
+- 当前收入基准、指引和 run-rate：2026Q1 收入 `24.44亿美元`，同比 `+10%`；2026Q1 colocation / interconnection / managed infrastructure / non-recurring 收入分别为 `17.30亿 / 4.46亿 / 1.15亿 / 1.13亿美元`。公司 2026 全年收入指引为 `101.44-102.44亿美元`，调整后 EBITDA 指引为 `51.65-52.45亿美元`，AFFO 指引为 `41.98-42.78亿美元`。当前 run-rate 的核心锚点是 Q1 收入、Q2 收入指引 `25.71-26.11亿美元`、Q1 年化 gross bookings `3.78亿美元` 和 annualized presales `约1.40亿美元`。
+- 重要产品/业务线：`IBX / 高密度 colocation`、`Interconnection / Fabric / Distributed AI Hub`、`Managed infrastructure / AI Factory`、`xScale hyperscale JV`、`atNorth Nordic high-density platform`、`Non-recurring installation / implementation`。
+- NTM 公司收入四情景：悲观 `99.5-102.0亿美元`；基准 `103.5-106.0亿美元`；乐观 `107.0-110.5亿美元`；极度乐观 `111.5-116.0亿美元`。基准相对当前 FY2026 指引与 Q2/Q1 run-rate 为正常兑现，不是对 AI 题材的机械上修。
+- 利润或 EBITDA 四情景：NTM 调整后 EBITDA 悲观 `49.5-51.5亿美元`；基准 `52.7-54.5亿美元`；乐观 `55.0-57.5亿美元`；极度乐观 `58.0-61.5亿美元`。NTM AFFO 悲观 `40.5-42.5亿美元`；基准 `42.8-44.6亿美元`；乐观 `45.0-47.5亿美元`；极度乐观 `48.0-51.0亿美元`。
+- 最大传导瓶颈：bookings / AI 交易已经可见，但数据中心从签约到 revenue conversion 需要 `power interconnection`、变压器/开关柜、液冷、MEP、commissioning 和客户 IT 设备到货同步。风险主要是延期，不是需求池不存在。
+- 最大利润率变量：高密度 colocation 与 interconnection 的 mix、power cost pass-through、利用率爬坡、xScale/atNorth 的 JV 或权益口径、以及 AI Factory 是否只是渠道线索还是可复制的托管/互联附着产品。
+- 最大现金流变量：2026 总 capex 约 `41亿美元`，其中增长 capex 是自由现金流的主要压力源；经营现金流和 AFFO 质量较好，但 after-growth-capex FCF 在扩张期仍可能为负。
+- 可信度：公司层面基准为 `中高`。A 级证据覆盖收入、分部收入、Q1 结果、Q2/FY2026 指引、EBITDA/AFFO；B/C 级证据覆盖 bookings、presales、AI 大单占比、xScale/atNorth、AI Factory。极度乐观依赖多个执行环节同时突破，可信度 `低到中`。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| IBX / 高密度 colocation | 2026Q1 `17.30亿美元`，年化约 `69.2亿美元`；其中 AI/高密度直接相关公司未披露，研究估算 ARR `约9-13亿美元` | 2026Q1 `70.8%` | 最高；空间、电力、冷却、SLA 和高密度交付是 EQIX 收入主干 | A；AI 子集为 C | 全量 colocation 进入基准；AI/高密度子集只作为拆分估算，不替代披露口径 | 200kW+ rack、更多液冷 retrofit、AI 推理靠近数据源的分布式节点 |
+| Interconnection / Fabric / Distributed AI Hub | 2026Q1 `4.46亿美元`，年化约 `17.8亿美元`；AI 敏感部分估算 ARR `约4-6亿美元` | 2026Q1 `18.2%` | 很高；cross-connect、Fabric、云/模型/NeoCloud/企业数据连接提升粘性和利润质量 | A；AI Hub / Fabric Intelligence 为 C | 成熟 interconnection 全量进入基准；AI Hub/Fabric Intelligence 小比例或情景弹性处理 | Fabric Intelligence、AI 数据流网络、模型/数据/安全服务中立交换层 |
+| Managed infrastructure / AI Factory | 2026Q1 `1.15亿美元`，年化约 `4.6亿美元` | 2026Q1 `4.7%` | 中等；当前增长弱，但 Cisco/NVIDIA/Presidio 可提升企业 AI 附着率 | A；AI Factory 为 C/D | 已披露 managed infrastructure 进入基准；AI Factory 不作为独立基准收入，只作为乐观附着率 | 标准化 AI Factory 渠道、托管推理和企业私有 AI 环境 |
+| xScale hyperscale JV | 并表收入无法可靠量化；美国新 JV 目标投资 `>150亿美元`，最终 `>1.5GW`；既有 xScale JV full-buildout `>725MW` | 并表占比无法可靠量化 | 高；面向 hyperscaler AI 训练和核心部署，但 JV 会计与大客户议价限制利润率 | B/C | 已签/已预租部分可进入基准的经济贡献判断；不得把全周期 GW 容量当 NTM 并表收入 | 多个 100MW+ campus、训练容量长约、开发/运营费与权益收益 |
+| atNorth Nordic high-density platform | 交易尚未完成；EV `40亿美元`，EQIX 约 `40%` 权益；约 `800MW` 五年管线，额外 `1GW` secured power | 当前 EQIX 并表收入 `0` | 中高；北欧低碳电力、液冷、高密度 HPC/AI 和主权 AI 容量 | B/C | 不进入 NTM 基准并表收入；若 close 后可少量纳入 AFFO / 权益贡献跟踪 | 欧洲主权 AI、低碳训练、高密度液冷园区 |
+| Non-recurring installation / implementation | 2026Q1 `1.13亿美元`，年化不可简单外推 | 2026Q1 `4.6%` | 抵消项；一次性安装和实施收入波动大，利润质量较低 | A | 进入公司收入基准，但按低可持续性处理，不作为增长主线 | 若 AI 部署转化加速，安装费可短期上行，但不应资本化为长期高质量收入 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只判断外部需求池，不判断 EQIX 份额、收入确认、利润率或公司汇总。需求锚点用 2026Q1 管理层披露、项目内行业资料和客户预算/容量信号。行业侧的关键判断是：AI 数据中心需求仍强，但 `电力、并网、液冷、MEP 和 commissioning` 决定 NTM 可上线容量；客户 capex、行业 TAM 或 GW 管线不能直接等于 EQIX 可确认收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| IBX / 高密度 colocation | 2026Q1 colocation +12%；MRR +12%；Q1 最大交易约 60% 与 AI 相关；行业侧电力和高密度容量紧张 | 高密度需求仍增长，但客户上电/液冷/服务器到货延迟，使新增需求转为排队；传统低密度机柜增长回落 | 符合公司 FY2026 收入 +10-11% 与 colocation 双位数增长路径；AI 推理、模型商、NeoCloud 和企业私有 AI 支撑高密度需求 | AI 推理和企业私有 AI 加速，核心 metro 有电有液冷的容量被更快锁定 | 200kW+ rack / 液冷 ready 容量在多个核心 metro 同时短缺，客户愿意提前预租和接受更高 power density 溢价 | 悲观：全 colocation NTM 需求约 `+4-8%`；基准 `+9-12%`；乐观 `+13-17%`；极度 `+18-24%` | 基准为符合当前预期；乐观高于当前预期；极度明显高于当前预期 | 正向证据是 bookings、AI 大单占比、8/10 模型商和 4/5 NeoCloud 扩张；反证是 power/MEP 延迟、AI 训练需求放缓、云商自建吸收 |
+| Interconnection / Fabric / Distributed AI Hub | 2026Q1 interconnection +13.5%，平台 513,000 条互联；AI Hub/Fabric Intelligence 已推出 | 企业 AI 继续试点但 production 延迟，普通 cross-connect 增长维持，AI 附着弱于预期 | 模型商、NeoCloud、云、企业数据源和安全服务之间私有低延迟连接需求正常增长 | 企业 AI 推理、数据主权、多云推理把 Fabric 和 cross-connect 需求推高 | Fabric 成为多模型、多云、企业私有数据交换事实标准之一，增速上探 20%+ | 悲观：NTM interconnection 需求 `+6-9%`；基准 `+10-13%`；乐观 `+14-19%`；极度 `+20-25%` | 基准符合当前高个位数到低双位数预期；乐观需要 AI Hub 客户转化证据 | 正向证据是 interconnection 已是 A 级收入线；反证是公有云托管化降低企业自建互联需求 |
+| Managed infrastructure / AI Factory | 2026Q1 managed infrastructure 收入约持平；2026-06-16 Cisco/NVIDIA/Presidio 合作落地 | AI Factory 主要停留在实验室和渠道展示，managed infrastructure 继续低增 | 现有 managed services 稳定，AI Factory 提升销售线索但主要收入落在 colocation/interconnection | Presidio P.A.T.H. Lab 形成客户转化，带动 Equinix Metal、托管网络、安全和远程运维附着 | 企业 AI 从 pilot 到 production 快速标准化，AI Factory 成为可复制渠道包 | 悲观：需求 `-2%至+2%`；基准 `0-5%`；乐观 `+8-15%`；极度 `+20-30%`，但小基数 | 基准不高于当前预期；乐观要求客户案例和托管收入转化 | 正向证据是官方合作和实验室；反证是硬件/软件主要价值由 Cisco/NVIDIA/SI 捕获 |
+| xScale hyperscale JV | 美国新 JV 最终目标 `>1.5GW`，既有 xScale full-buildout `>725MW`；2025 交付 `90+MW xScale` | hyperscaler 延后新 campus 或 lease closing，需求仍在但 NTM 交付低于预期 | 已签/已预租项目按计划推进，新增长约继续形成，但多数是多年周期 | 多个 100MW+ campus 预租加速，AI 训练客户继续抢锁 GW 级容量 | 模型实验室和 hyperscaler 将更多训练容量外包给 JV，多个园区同时锁电锁客 | 悲观：NTM 经济贡献增速 `0-20%`；基准 `+20-35%`；乐观 `+40-70%`；极度 `+100%+`，但并表收入不线性 | 基准为按既有计划推进；乐观高于当前预期但仍需 lease closing | 正向证据是 JV 规模和 AI/cloud 需求；反证是监管、电力、融资、客户议价和会计口径 |
+| atNorth Nordic high-density platform | 2026-02 交易公告：8 个运营 DC，`800MW` 五年管线，额外 `1GW` secured power，液冷 enabled | 监管/融资/项目推进延迟，NTM 需求只能作为长期跟踪 | 交易 close 并按五年节奏推进，NTM 对 EQIX 经营贡献有限 | 北欧 AI/HPC/主权 AI 预租提高，pipeline 可见度增强 | 欧洲主权 AI 与低碳训练迅速放量，北欧成为欧洲 AI 训练核心热点 | 悲观：NTM 贡献 `0`；基准：少量权益/AFFO 跟踪；乐观：预租增强但收入确认有限；极度：长周期 backlog 上修 | 基准不进入当前并表收入预期；乐观/极度为远期期权或上限 | 正向证据是正式交易和 secured power；反证是交易未完成、权益口径、五年管线不是 NTM 收入 |
+| Non-recurring installation / implementation | 2026Q1 non-recurring `1.13亿美元`，同比 `-18.1%` | 安装/实施随项目延期下降，低毛利和波动扩大 | 随 colocation 新装和客户部署维持正常波动，不作为增长主线 | AI 客户部署增加一次性安装和远程手服务 | 企业 AI 批量上线带来安装费短期放大，但可持续性弱 | 悲观：NTM `3.5-4.0亿美元`；基准 `4.0-4.6亿美元`；乐观 `4.6-5.2亿美元`；极度 `5.2亿美元+` | 基准符合当前波动口径；乐观不能视为高质量经常性需求 | 正向证据是部署活动；反证是一次性收入下降和项目时点扰动 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些需求能进入 EQIX NTM 收入表，以及当前可收入化基数。公司能参与 AI 数据中心、GW 容量、客户 capex 或伙伴生态，不等于能在 NTM 确认收入。证据等级按收入表可确认性划分：A=已披露收入/正式指引；B=已披露订单、presales、backlog、正式合同或清楚交付节奏；C=认证、客户扩张、产品/合作披露；D=样品/测试/早期合作；E=只有主题相关性。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| IBX / 高密度 colocation | A 级：2026Q1 colocation `17.30亿美元`，占收入 `70.8%`；公司 FY2026 收入指引隐含 colocation 继续双位数附近增长。AI/高密度子集未披露，研究估算 ARR `9-13亿美元` | 直接 | 高固定成本、高利用率杠杆；power pass-through 和高密度租金影响利润质量 | NTM `68.5-70.5亿美元` | NTM `71.5-74.5亿美元` | NTM `75.5-79.0亿美元` | NTM `80.0-83.5亿美元` | 悲观低于当前指引路径；基准符合；乐观/极度高于 | A；AI 子集 C | 是 | 已在收入表和正式指引中；AI 子集只作拆分，不替代披露收入 | 基准纳入；AI/高密度弹性通过情景而非单独确认 |
+| Interconnection / Fabric / Distributed AI Hub | A 级：2026Q1 interconnection `4.46亿美元`，占收入 `18.2%`，同比 `+13.5%`；C 级：AI Hub 和 Fabric Intelligence 已发布 | 直接 | 高粘性、高增量利润，cross-connect 和 Fabric 迁移成本高 | NTM `18.0-18.8亿美元` | NTM `19.3-20.0亿美元` | NTM `20.5-21.5亿美元` | NTM `22.5亿美元+` | 基准符合当前双位数增长；极度需 AI Hub 明显转化 | A；新产品 C | 是 | 成熟收入线为 A；新产品只作为附着和增速弹性 | 基准纳入成熟 interconnection；AI Hub 进入乐观/极度弹性 |
+| Managed infrastructure / AI Factory | A 级：2026Q1 `1.15亿美元`，约持平；C 级：Cisco/NVIDIA/Presidio 合作，P.A.T.H. Lab 测试环境 | 直接/间接 | 当前利润质量中等；若转为标准化托管服务，利润率可改善；若只是 SI 渠道，EQIX 只捕获场地和连接 | NTM `4.40-4.60亿美元` | NTM `4.60-4.85亿美元` | NTM `5.00-5.30亿美元` | NTM `5.50-6.00亿美元` | 基准不高于当前预期；乐观需客户转化 | A；AI Factory C/D | 是，限现有 managed infrastructure | 已在收入表；AI Factory 无独立收入披露 | 基准保守纳入；AI Factory 不单独进基准 |
+| xScale hyperscale JV | B/C 级：美国 JV `>150亿美元` 投资目标、最终 `>1.5GW`；既有 xScale `>725MW` full-buildout；2025 交付 `90+MW`；并表收入无法可靠量化 | 主要间接/权益/开发运营 | 大客户长约提升可见度，但 wholesale/xScale 利润率通常低于 retail interconnection；会计口径可能弱化并表收入 | 合并收入贡献无法可靠量化；仅承认已可见经济贡献 | 基准仅小比例经济贡献，无法可靠量化为并表收入 | JV lease closing 加快，经济贡献提高但并表仍有限 | 多个 100MW+ 园区锁客，经济贡献翻倍但多为权益/长期 | 当前预期已有强管线，不能把全 GW 当 NTM 收入 | B/C | 部分进入基准的经济贡献；不进入基准并表收入增量 | 正式 JV/预租/交付线索强，但确认节奏、权益口径、客户 lease 需验证 | NTM 作为经济贡献和生态引流处理；全周期容量列补充 |
+| atNorth Nordic high-density platform | B/C 级：交易公告 EV `40亿美元`，EQIX 约 `40%` 权益，`800MW` 五年管线和 `1GW` secured power；截至本报告交易尚待完成 | 间接/权益 | 若完成，可能 AFFO accretive；但收入并表和权益贡献取决于 close、融资和项目进度 | `0` | 并表收入 `0`；少量 AFFO 跟踪，无法可靠量化 | close 后预租加速，权益贡献上修 | 北欧主权 AI/低碳训练导致 backlog 显著扩张 | 当前预期不应把 atNorth 放入 NTM 并表基准 | B/C | 否，除非后续披露 close 与并表/权益口径 | 交易真实但未完成；管线为五年或更长 | 不进入基准并表收入；进入附录/跟踪和乐观上限 |
+| Non-recurring installation / implementation | A 级：2026Q1 `1.13亿美元`，同比 `-18.1%` | 直接 | 一次性、波动、利润质量低；可随 AI 部署短期上行但不可持续 | NTM `3.5-4.0亿美元` | NTM `4.0-4.6亿美元` | NTM `4.6-5.2亿美元` | `5.2亿美元+` | 基准为正常波动；乐观不代表长期质量提高 | A | 是，但低权重 | 已在收入表；不作为核心增长锚 | 纳入公司收入，但结论中不赋予高质量增长 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第三步需求和第四步收入基数出发，评估每个业务线在 NTM 内对 EQIX 的收入和利润贡献。不得把行业 TAM、客户 capex、GW 项目总额或伙伴硬件价值直接写成 EQIX 收入。利润贡献因公司未披露产品级 EBITDA，需要在产品层面标明无法可靠量化，并用公司调整后 EBITDA、AFFO 和利润率方向进行约束。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| IBX / 高密度 colocation | 悲观产品 | `68.5-70.5亿美元` | 产品 EBITDA 无法可靠量化；利用率和延期使利润贡献低于当前结构 | GAAP毛利率/EBITDA率承压 | 低于当前指引和 run-rate | 需求仍在但 power/MEP/液冷交付慢；新 MW 转收入滞后 | 保留为悲观 | 供电、变压器、液冷、commissioning、客户服务器到货 |
+| IBX / 高密度 colocation | 基准产品 | `71.5-74.5亿美元` | 高利润主体，支撑公司约 51% 调整后 EBITDA 率；产品 EBITDA 无法可靠量化 | 稳定到小幅改善 | 符合当前预期 | Q1 colocation +12%，MRR +12%，FY2026 收入 +10-11% 指引 | 保留为基准 | 新容量利用率爬坡和电力成本传导 |
+| IBX / 高密度 colocation | 乐观产品 | `75.5-79.0亿美元` | 高密度 mix 和利用率改善，现金毛利和 EBITDA 有上行弹性 | 上行 | 高于当前预期 | AI 大单占比、模型商/NeoCloud 扩张、核心 metro 容量稀缺 | 保留为乐观 | 需要“谁买、何时上电、哪类 rack/功率密度”的持续披露 |
+| IBX / 高密度 colocation | 极度乐观产品 | `80.0-83.5亿美元` | 高利用率和稀缺容量驱动强运营杠杆，但 capex 前置仍压 FCF | 明显上行但非无限扩张 | 显著高于当前预期 | 200kW+ rack、液冷 ready、企业/NeoCloud 同时抢容量 | 下移为乐观上限偏高 | 任一供电/液冷/客户设备环节缺证据即不能保留极度乐观 |
+| Interconnection / Fabric / Distributed AI Hub | 悲观产品 | `18.0-18.8亿美元` | 高毛利业务仍贡献稳定利润，但 AI 附着低于预期 | 稳定 | 低于当前增速 | 普通 cross-connect 稳定，AI production 延迟 | 保留为悲观 | 公有云托管化、AI Hub 客户未转化 |
+| Interconnection / Fabric / Distributed AI Hub | 基准产品 | `19.3-20.0亿美元` | 高增量利润，支持公司 EBITDA 率稳定；产品 EBITDA 无法可靠量化 | 小幅上行 | 符合当前预期 | Q1 +13.5%，513,000 条互联，Fabric 成熟 | 保留为基准 | 需要 net interconnection 和 Fabric capacity 持续增长 |
+| Interconnection / Fabric / Distributed AI Hub | 乐观产品 | `20.5-21.5亿美元` | AI 数据流、模型/NeoCloud/企业数据连接提升高毛利附着 | 上行 | 高于当前预期 | Distributed AI Hub、Fabric Intelligence、模型商扩张 | 保留为乐观 | 新产品收入未披露，不能过度上修 |
+| Interconnection / Fabric / Distributed AI Hub | 极度乐观产品 | `22.5亿美元+` | 若 Fabric 成为 AI 私有互联标准，利润贡献非线性好于收入 | 明显上行 | 显著高于当前预期 | 多云、主权 AI、推理靠近数据源同时成立 | 下移为乐观上限 | 缺少独立 AI Hub / Fabric Intelligence 收入数据 |
+| Managed infrastructure / AI Factory | 悲观产品 | `4.40-4.60亿美元` | 利润贡献稳定但不扩张；AI Factory 主要是营销 | 持平或下行 | 低于当前叙事 | 2026Q1 managed infrastructure 约 0 增长 | 保留为悲观 | 硬件/软件价值被伙伴捕获 |
+| Managed infrastructure / AI Factory | 基准产品 | `4.60-4.85亿美元` | 对利润贡献小；主要通过带动 colocation/Fabric 间接贡献 | 持平 | 符合当前预期 | 收入表已有基数，但新合作尚无收入披露 | 保留为基准 | 不能把 Cisco/NVIDIA 方案直接当 EQIX 收入 |
+| Managed infrastructure / AI Factory | 乐观产品 | `5.00-5.30亿美元` | 若实验室转订单，远程手、托管网络、安全服务附着提升 | 小幅上行 | 高于当前预期 | Presidio P.A.T.H. Lab、标准化蓝图 | 保留为低可信乐观 | 需客户案例、合同和部署量 |
+| Managed infrastructure / AI Factory | 极度乐观产品 | `5.50-6.00亿美元` | 小基数高增，但对公司总利润影响有限 | 上行但公司层面有限 | 明显高于当前预期 | 企业 AI 从 pilot 到 production 快速标准化 | 下移为乐观上限 | 直接收入基数太小，缺少 A/B 级订单披露 |
+| xScale hyperscale JV | 悲观产品 | 并表收入无法可靠量化；经济贡献低于当前计划 | JV/权益贡献弱，大客户议价压利润 | 下行 | 低于当前预期 | lease closing 延迟或融资/电力拖延 | 保留为悲观 | 会计口径、客户集中度、监管和供电 |
+| xScale hyperscale JV | 基准产品 | 并表收入无法可靠量化；经济贡献按已签/已预租项目推进 | 对 AFFO 和生态有贡献，但非 retail 级利润率 | 稳定 | 符合当前预期 | `>150亿美元` JV、`>1.5GW` 最终目标、既有 `>725MW` full-buildout | 保留为基准经济贡献，不作为并表收入主锚 | NTM 只看 energized MW 与 lease closing |
+| xScale hyperscale JV | 乐观产品 | 并表收入仍无法可靠量化；经济贡献 `+40-70%` 路径 | 开发/运营和权益收益改善 | 上行 | 高于当前预期 | 多个 100MW+ campus 锁客/锁电 | 保留为乐观 | 不能把项目总投资或全周期租约当收入 |
+| xScale hyperscale JV | 极度乐观产品 | 经济贡献可能翻倍，但并表收入仍受 JV 口径限制 | 若多个项目同时上电，权益和生态价值上行 | 上行 | 显著高于当前预期 | hyperscaler 为训练容量抢锁 GW | 下移为乐观上限/附录 | 任一核心环节缺证据即不能保留公司极度乐观 |
+| atNorth Nordic high-density platform | 悲观产品 | `0` 并表收入 | 无 NTM 利润贡献或交易成本扰动 | 下行 | 低于当前战略预期 | 交易/监管/融资延迟 | 保留为悲观 | 未 close |
+| atNorth Nordic high-density platform | 基准产品 | 并表收入 `0`；权益/AFFO 贡献无法可靠量化 | 若 close 后小幅 accretive，但 NTM 不足以重估经营结构 | 稳定 | 符合保守预期 | 正式交易公告、EV `40亿美元`、EQIX `40%` 权益 | 移入附录/仅作跟踪 | 五年管线不能进入 NTM 基准 |
+| atNorth Nordic high-density platform | 乐观产品 | 预租和权益贡献上修，无法可靠量化 | 北欧低碳/液冷容量改善长期利润质量 | 上行 | 高于当前预期 | `800MW` 五年管线、`1GW` secured power | 仅作跟踪 | 需要 close、客户、并表/权益口径 |
+| atNorth Nordic high-density platform | 极度乐观产品 | 远期期权，不列 NTM 收入 | 长期价值上限，非 NTM 主表 | 无法可靠量化 | 只代表长期上限 | 欧洲主权 AI 和低碳训练加速 | 移入附录 | 缺少 NTM 收入确认路径 |
+| Non-recurring installation / implementation | 悲观产品 | `3.5-4.0亿美元` | 低质量利润，可能拖累毛利率 | 下行 | 低于当前 run-rate | Q1 同比 -18.1% | 保留为悲观 | 项目延期与一次性波动 |
+| Non-recurring installation / implementation | 基准产品 | `4.0-4.6亿美元` | 稳定但低权重 | 持平 | 符合当前预期 | 安装和实施随新装正常波动 | 保留为基准 | 不可持续性 |
+| Non-recurring installation / implementation | 乐观产品 | `4.6-5.2亿美元` | 贡献有限，利润质量弱于 recurring | 小幅上行 | 高于当前预期 | AI 部署短期加速 | 保留为低权重乐观 | 一次性收入不能作长期主线 |
+| Non-recurring installation / implementation | 极度乐观产品 | `5.2亿美元+` | 若短期安装收入冲高，也不代表结构性利润质量改善 | 不作为结构性上行 | 高于当前预期但质量低 | 企业 AI 部署集中上线 | 下移为乐观上限 | 低毛利、低可持续性 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品贡献汇总成公司 NTM 收入、毛利率、经营利润率、调整后 EBITDA、AFFO 和自由现金流方向。汇总前已剔除重复计算：AI 交易既可能带动 colocation，也可能带动 interconnection 和 installation，不能在三条线重复当作新增收入；xScale 和 atNorth 的 GW 管线按经济贡献/附录处理，不直接并入 NTM 主收入。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `99.5-102.0亿美元` | 相对 TTM `94.36亿美元` 仍约 `+5-8%`，但低于 FY2026 指引外推 | 低于当前 FY2026 指引和 Q2/Q1 run-rate；需求绝对仍增长但 revenue conversion 弱 | GAAP毛利率约 `49.5-51.0%`；cash gross margin 承压 | GAAP经营利润率约 `21-23%` | 调整后 EBITDA `49.5-51.5亿美元`；AFFO `40.5-42.5亿美元`；净利润无法可靠量化 | 扩张 capex 下 after-growth-capex FCF 偏负；经营现金流仍正 | 中 | 电力/MEP/液冷延期、xScale lease closing 延迟、non-recurring 下滑 |
+| 基准公司 | `103.5-106.0亿美元` | 相对 TTM 约 `+10-12%` | 符合公司 FY2026 指引、Q2 指引、MRR/bookings 正常兑现和 Q1 run-rate | GAAP毛利率约 `51.0-52.0%`；cash gross margin 约 `68-70%` | GAAP经营利润率约 `23-25%` | 调整后 EBITDA `52.7-54.5亿美元`；AFFO `42.8-44.6亿美元`；净利润无法可靠量化 | AFFO 强，growth capex 后 FCF 仍可能偏负或接近盈亏平衡 | 中高 | 新容量按期上电、利用率爬坡、power cost pass-through |
+| 乐观公司 | `107.0-110.5亿美元` | 相对 TTM 约 `+13-17%` | 高于当前预期；需要高密度 colocation、interconnection 和部分 xScale/AI 相关 lease 同步强于预期 | GAAP毛利率约 `52.0-53.0%`；高毛利 interconnection mix 改善 | GAAP经营利润率约 `24-26%` | 调整后 EBITDA `55.0-57.5亿美元`；AFFO `45.0-47.5亿美元`；净利润无法可靠量化 | AFFO 上修，但 capex 仍使 FCF after growth capex 受压 | 中 | 需要客户、site、上电时间和 interconnection 附着率同时验证 |
+| 极度乐观公司 | `111.5-116.0亿美元` | 相对 TTM 约 `+18-23%` | 显著高于当前预期；只能作为上限而非基准 | GAAP毛利率约 `52.5-54.0%`，前提是高密度和互联 mix 明显改善 | GAAP经营利润率约 `25-27%` | 调整后 EBITDA `58.0-61.5亿美元`；AFFO `48.0-51.0亿美元`；净利润无法可靠量化 | 经营现金流强，但项目 capex 和 JV/权益投入仍可能使 FCF 不同步放大 | 低到中 | 需求、公司捕获、利润率、供电/液冷执行、客户设备到货必须同时突破 |
+
+公司层面解释：
+
+1. 悲观不是“AI 没有需求”，而是需求池无法按 NTM 时间表转成 EQIX 可确认收入：上电、液冷、MEP 或客户 IT 设备任何一环延迟，都可能使 bookings 留在 backlog/presales。
+2. 基准是当前预期正常兑现：2026Q1 已实现 `24.44亿美元` 收入和 `51%` 调整后 EBITDA 率，FY2026 指引为 `101.44-102.44亿美元` 收入；NTM 比 FY2026 略高来自 Q1 2027 续接 run-rate，不来自把长期 GW 全部提前。
+3. 乐观需要业务质量同步改善，而不只是收入上修：高密度 colocation 增长、interconnection 双位数、AI Factory 产生附着、xScale/atNorth 无重大拖累。
+4. 极度乐观不等于把所有好消息相加。它要求 NTM 内客户需求、EQIX 捕获、毛利/EBITDA 留存、供电/液冷/commissioning 执行同时成立；atNorth 五年管线本身不足以支撑极度乐观公司情景。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次：电力/MEP 主要限制收入确认和执行，不在需求、产品、公司层面重复惩罚；市场价格或估值倍数不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 `24.44亿美元`、同比 `+10%`，MRR `+12%` | 收入基数 / 公司汇总 | A 级证据，支撑基准收入不下移 | Q1 调整后 EBITDA 率 `51%` 支撑利润率基准 | 证明经营质量未因扩建明显恶化 | 基准保留 |
+| 2026 全年收入指引 `101.44-102.44亿美元`，调整后 EBITDA `51.65-52.45亿美元`，AFFO `41.98-42.78亿美元` | 公司汇总 | A 级证据，定义当前预期 | 51% EBITDA 率定义利润率锚 | capex 约 `41亿美元` 限制 FCF | 基准保留；极度乐观不得无证据上移 |
+| Q1 annualized gross bookings `3.78亿美元`、annualized presales `约1.40亿美元`、record backlog | 产品贡献 / 收入确认 | B 级证据，支撑未来 4-8 个季度收入可见度 | 若转化为高密度 colo / interconnection，利润质量较好 | 仍需要上电、交付和客户验收 | 乐观保留，基准不因 backlog 未披露金额而过度上修 |
+| 最大交易约 60% 与 AI 相关；8/10 头部 AI 模型商、4/5 头部 NeoCloud 在 EQIX 扩张 | 需求 / 公司捕获 | C/B 级证据，说明 AI 需求已进入客户行为 | 利润取决于是否落在 colo/Fabric 而非低毛利安装 | 客户扩张不等于全部 NTM 收入确认 | 乐观保留；AI 子集不独立进入 A 级基准 |
+| Interconnection 2026Q1 `4.46亿美元`、同比 `+13.5%`、513,000 条互联 | 产品贡献 / 利润质量 | A 级证据，支撑双位数连接需求 | 高增量利润和网络效应支撑公司 EBITDA 质量 | 执行风险低于新建 MW | 基准保留，乐观保留 |
+| xScale `>150亿美元` 美国 JV、最终 `>1.5GW`，既有 JV `>725MW` full-buildout | 收入基数 / 执行可信度 | B/C 级证据，长期需求强；NTM 并表收入不可直接量化 | 大客户和 wholesale 属性限制利润率上修 | JV 融资、lease closing、供电和监管决定兑现 | 基准只保留经济贡献；全 GW 移入附录 |
+| atNorth `40亿美元` EV、EQIX 约 `40%`、`800MW` 五年管线、额外 `1GW` secured power | 远期期权 / 执行 | B/C 级证据，欧洲 AI/HPC/主权 AI 能力增强 | 可能 AFFO accretive，但 NTM 并表口径未明确 | 未 close；监管和融资仍是条件 | 移入附录/仅作跟踪；不进 NTM 基准收入 |
+| Cisco/NVIDIA/Presidio AI Factory，2026-06-16 | 产品贡献 / 执行可信度 | C/D 级证据，增加销售线索和附着率 | EQIX 主要捕获场地、power、cooling、Fabric，不捕获硬件软件大头 | P.A.T.H. Lab 可降低客户验证周期，但需订单转化 | 乐观保留；基准只作为附着率 |
+| 电力、并网、变压器/开关柜、液冷、MEP、commissioning | 收入确认 / 执行 | 限制 bookings 转收入，不否定需求池 | 延期和低利用率压 EBITDA 率 | 增长 capex 沉淀、FCF 受压 | 悲观保留；不在需求层重复惩罚 |
+| Non-recurring 收入 Q1 同比 `-18.1%` | 公司组合 | 压低低质量一次性收入 | 低质量收入下降不一定伤害核心利润率 | 季度波动扰动现金流 | 作为抵消项处理，不重复影响高质量 recurring |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 需求仍存在，但 NTM revenue conversion 低于当前预期，收入 `99.5-102.0亿美元` | Q1 收入和 bookings 说明底盘不弱，客户流失风险低 | 电力/MEP/液冷/客户设备到货延期；xScale/atNorth close 或 lease 时点后移 | 保留 | 悲观公司 | 中 | 电力/MEP 延期只在收入确认和执行层处理，不再把行业需求打到崩盘 |
+| 基准 | FY2026 指引、Q2 指引和 Q1 run-rate 正常兑现，NTM 收入 `103.5-106.0亿美元` | A 级收入和指引、Q1 51% EBITDA 率、MRR +12%、interconnection +13.5% | AI 子集收入未披露，xScale/atNorth 会计口径复杂 | 保留 | 基准公司 | 中高 | AI 收入未披露不是整体悲观，只限制 AI 子集上修 |
+| 乐观 | 高密度 colo、interconnection 和 AI 附着高于当前预期，NTM 收入 `107.0-110.5亿美元` | AI 大单占比、模型商/NeoCloud 扩张、Fabric/AI Hub、Cisco/NVIDIA 合作、xScale 需求 | 新产品收入未披露，客户和 site/time-to-power 仍需验证 | 保留 | 乐观公司 | 中 | 伙伴合作和 AI 客户扩张只上修相关产品，不重复上修所有业务 |
+| 极度乐观 | 多个核心传导环节同时突破，NTM 收入 `111.5-116.0亿美元` | 行业需求强、电力稀缺、核心 metro 和互联网络效应、xScale/atNorth 长期管线 | 任一核心环节缺 A/B 级证据；atNorth 未 close；全 GW 管线非 NTM 收入 | 下移 | 乐观上限 / 附录跟踪 | 低到中 | 长期 GW 管线只在远期期权处理，不在公司 NTM 收入和利润中重复计入 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。EQIX 的 NTM 经营收入最可能落在 `103.5-106.0亿美元`，调整后 EBITDA `52.7-54.5亿美元`，AFFO `42.8-44.6亿美元`。这代表 2026Q1 强劲表现、FY2026 指引、Q2 指引、MRR 和 bookings 正常传导，而不是把长期 xScale/atNorth 容量提前并入。
+- NTM 收入结论：收入主线仍是 colocation 与 interconnection。Colocation 是绝对规模主线，Interconnection 是利润质量和网络效应主线。Managed infrastructure / AI Factory 在 NTM 内主要是附着率和销售线索，不是独立大收入线。xScale 和 atNorth 是长期容量与经济贡献上限，不是 NTM 并表收入主锚。
+- 利润/现金流结论：基准调整后 EBITDA 率可维持约 `51-52%`，高密度 colocation 与 interconnection mix 是利润上行来源；但 capex 约 `41亿美元` 的扩张阶段会压制 after-growth-capex FCF。AFFO 比 GAAP 净利润和 FCF 更适合作为经营现金流质量指标。
+- 主要传导瓶颈：需求到收入的最大瓶颈是 `签约/预售 -> 上电 -> 液冷/MEP 调试 -> 客户 IT 设备到货 -> 验收 -> MRR`。EQIX 的优势是能把复杂交付变成客户可买的容量；风险是任何物理交付环节延后都会把收入移出 NTM。
+- 乐观情景成立条件：Q2/Q3 MRR 与 bookings 继续高于预期；高密度 colocation 新签和交付改善；interconnection 继续双位数；AI Hub/Fabric Intelligence 出现客户和容量指标；xScale lease closing 顺利且无重大融资/供电拖延。
+- 极度乐观情景成立条件：多个核心 metro 高密度容量同时供不应求，客户愿提前预租并支付更高密度/液冷溢价；企业 AI 从 pilot 到 production 快速转化；xScale 多个 100MW+ campus 锁电锁客；atNorth close 后北欧 pipeline 预租显著超预期。缺任一核心环节，应降为乐观上限或附录。
+- 悲观情景触发条件：bookings 或 AI 大单占比强但 MRR/revenue conversion 不跟进；Q2/Q3 指引或收入低于 run-rate；power interconnection、变压器/开关柜、液冷或 commissioning 延迟；xScale lease closing 后移；AI 客户 GPU/服务器到货错配。
+- 后续跟踪数据：Q2/Q3 revenue、MRR、gross bookings、annualized presales/backlog 表述、colocation 与 interconnection 增速、current major expansion projects、retail cabinets/MW 交付、xScale lease closing、atNorth close 和融资、AI Factory 客户案例、Fabric capacity / net interconnections、capex 与 recurring capex、cash gross margin、调整后 EBITDA 率、AFFO 和经营现金流。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司经营数据以 2026-04-29 Equinix 2026Q1 业绩稿与 2026Q1 10-Q 为最新财务主口径；截至 2026-06-20 尚未有 2026Q2 财报。2026-06-16 Cisco/NVIDIA/Presidio 合作为后续产品与渠道证据。
+- 主要收入、订单、指引和利润率来源：
+  - Equinix 2026Q1 earnings release, 2026-04-29: https://investor.equinix.com/news-events/press-releases/detail/1107/equinix-reports-first-quarter-results-and-raises-full-year
+  - Equinix 2026Q1 Form 10-Q: https://www.sec.gov/Archives/edgar/data/1101239/000110123926000091/eqix-20260331.htm
+  - Equinix FY2025 Form 10-K: https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm
+  - Equinix 2025Q4/FY2025 earnings release, 2026-02-11: https://investor.equinix.com/news-events/press-releases/detail/1096/equinix-provides-robust-2026-outlook-driven-by-strong
+  - Equinix Q1 2026 earnings presentation: https://d1io3yog0oux5.cloudfront.net/_8cca2d82a5f4ea5ae28a8d2a5b7be3a9/equinix/db/2183/27031/earnings_presentation/Equinix%2BQ1%2B26%2BEarnings%2BPresentation%2BFinal.pdf
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - Equinix xScale JV with GIC and CPP Investments, 2024-10-01: https://investor.equinix.com/news-events/press-releases/detail/1053/equinix-agrees-to-form-greater-than-15b-jv-to-expand
+  - CPP Investments and Equinix to acquire atNorth, 2026-02-27: https://investor.equinix.com/news-events/press-releases/detail/1099/cpp-investments-and-equinix-to-acquire-atnorth-for-us4
+  - Equinix + Cisco + NVIDIA Secure AI Factory announcement, 2026-06-16: https://newsroom.equinix.com/2026-06-16-Equinix-Collaborates-with-Cisco-and-NVIDIA-to-Deploy-Secure-AI-Factories-Across-Global-Data-Center-Footprint
+  - Equinix AI Factory with NVIDIA: https://www.equinix.com/partners/nvidia
+- 项目内公司来源：
+  - `公司调研/云算力_IDC_AI软件平台/EQIX_Equinix_公司调研_2026-06-20.md`
+- 项目内行业来源：
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-06-10.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AI Fabric网络操作系统与遥测软件_2026-06-11.md`
+- 补充口径说明：
+  - `NTM 公司收入` 为研究估算，用 2026Q1 实际、Q2 指引、FY2026 指引和 Q1 2027 run-rate 续接估计，不是公司正式指引。
+  - 产品级 AI/高密度收入为研究估算，因为 Equinix 未披露 AI revenue 科目；已在第二步标注为 C 级或拆分估算。
+  - xScale、atNorth 的 GW、MW、投资额和 secured power 是容量/资本/长期机会口径，不等于 NTM 并表收入。
+  - 产品级 EBITDA/利润贡献因公司不披露分产品利润率，无法可靠量化；公司层面使用调整后 EBITDA、AFFO、GAAP 毛利率和经营利润率约束。

@@ -1,0 +1,324 @@
+# NVT nVent Electric 公司调研：AI数据中心液冷、电力连接与保护平台
+
+报告日期：2026-06-11  
+股票代码：NVT  
+公司名称：nVent Electric plc  
+正式分类：公司调研/配电_电源_功率器件/  
+研究边界：本报告本地资料只使用项目内 `行业调研/` 相关产业资料；未读取、引用或继承 `特征量化/`，也未读取同目录既有公司报告。公司索引仅用于确认正式分类目录。  
+口径说明：除特别说明外，美元金额为百万美元或十亿美元；NVT 已把 Thermal Management 列为 discontinued operations，本报告公司经营数据以 continuing operations 为主。产品级收入、BOM 和未来一年情景中，凡公司未披露明细的数字均标注为“估算”，用于交叉验证而非公司指引。
+
+## 一、核心结论
+
+nVent Electric 现在已经不是单纯的“电气连接/保护零部件”公司，而是在投资人心中被重估为“AI数据中心电力与液冷基础设施供应商”。其最核心的变化是：2023-2025 年通过 ECM、Trachte、Electrical Products Group 等收购增强电力连接、工程化电气建筑和数据中心灰空间能力，同时在 2025 年 1 月完成 Thermal Management 出售，把组合从低速分散工业热管理业务，转向高增长的 Systems Protection、Electrical Connections 和 AI/电力公用事业长周期订单。
+
+截至 2026Q1，NVT 最关键的事实是三组数字：第一，Q1 2026 销售额 12.42 亿美元，同比增长 53.5%，有机增长 34.4%；第二，Q1 2026 有机订单同比约 +40%，总 backlog 达 26 亿美元，较 2025 年末 23 亿美元继续低双位数环比增长；第三，2025 年数据中心收入约 10 亿美元，同比增长超过 50%，其中有机增长约 40%。这说明 AI 数据中心已经从“叙事”变成公司级收入和订单的主驱动。
+
+但 NVT 不是 AI 芯片公司，也不是光模块公司。它在 AI 技术栈中的位置是：高功率 GPU 机柜落地所需的液冷、机柜/围护、PDU/配电、工程化电气建筑、连接/接地/线缆管理等“最后一公里电力与热管理”。公司在 Investor Day 给出的数据中心机会口径是约 100 万美元/MW 的 nVent 内容量。这个口径比“每 GPU”更适合 NVT，因为 NVT 主要随机柜功率密度、MW 交付和园区电力施工节奏放大，而不是直接按 GPU ASP 放大。
+
+投资判断上，NVT 的基本面质量很高，但估值已经反映大量 AI 基建乐观预期。2026-06-11 价格 164.52 美元、市值约 269.8 亿美元；按公司 2026 年调整 EPS 指引中值 4.50 美元，forward P/E 约 36.6x；按 continuing operations TTM 收入约 43.26 亿美元，P/S 约 6.2x。这个估值要求 2026-2027 年数据中心液冷、配电和工程化建筑 backlog 连续兑现，否则很难容忍订单降速或毛利率继续下滑。
+
+## 二、整体业务、投资人认知与产业链定位
+
+### 2.1 公司业务框架
+
+nVent 是全球电气连接与保护解决方案供应商，核心职责是“connect and protect”：把关键电气设备、机柜、建筑、工艺和人员保护起来，并缩短安装周期。2025 年公司把报告分部重命名为：
+
+| 分部 | Q1 2026收入 | 占比 | Q1 2026增长 | Q1 2026有机增长 | Q1 2026分部利润率 | 主要产品/能力 | AI数据中心相关性 |
+|---|---:|---:|---:|---:|---:|---|---|
+| Systems Protection | 8.948亿美元 | 72.0% | +76.1% | +50.1% | 22.7% | 机柜/围护、冷却、控制、电气建筑、白空间/灰空间系统保护，品牌含 HOFFMAN、SCHROFF、TRACHTE 等 | 最高：液冷、AI机柜、PDU、工程化建筑、数据中心白空间/灰空间 |
+| Electrical Connections | 3.472亿美元 | 28.0% | +15.3% | +7.9% | 24.4% | 电力连接、线缆管理、接地/等电位、低压配电、电气紧固，品牌含 CADDY、ERICO、ILSCO 等 | 中高：电力公用事业、数据中心连接件、接地、线缆管理、低压配电 |
+| 合计 | 12.420亿美元 | 100.0% | +53.5% | +34.4% | 调整后ROS 20.0% | 电气连接与保护平台 | Q1 2026增长由 Infrastructure 尤其数据中心/电力公用事业拉动 |
+
+从终端市场看，Q1 2026 Infrastructure 已达到约 56% 的销售额，约 6.96 亿美元；Industrial 约 25%，约 3.11 亿美元；Commercial/Residential 约 19%，约 2.36 亿美元。2025 全年 Infrastructure 约 45% 的公司收入，其中数据中心约 10 亿美元、Power Utilities 约 15% 的公司收入。NVT 的结构已经从传统工业/建筑电气件，转为以数据中心和电网投资为核心的基础设施公司。
+
+### 2.2 投资人心中的公司形象
+
+2023 年以前，NVT 更像高质量中速工业电气平台：稳定现金流、20% 左右调整后营业利润率、靠价格/生产率/小并购扩张。2025-2026 年投资人给它的新标签是：
+
+- AI 数据中心“电力 + 液冷 + 机柜 + 工程化建筑”受益股，而非半导体股。
+- 数据中心白空间和灰空间的 picks-and-shovels 供应商，订单来自 GPU 机柜功率密度提升、液冷渗透率提升、电网接入和工程交付瓶颈。
+- 通过并购把业务从短周期分散工业件，推向长周期 Infrastructure backlog。
+- 估值重估股：从普通电气件估值，向 Vertiv、Eaton、Schneider 数据中心/电气化链条靠近。
+
+这类公司最容易被市场误读的点是：收入并不等于 AI 芯片/训练集群价值，而是 AI 园区建设中“每 MW 可交付电力”和“每高功率 rack 可运行热负载”的工程内容量。NVT 的 AI 暴露更接近 Vertiv/Schneider/Legrand/Rittal/Panduit 这一组基础设施公司，而不是 NVIDIA/AMD/Broadcom/Marvell 这一组芯片和网络公司。
+
+### 2.3 最近三年重大业务变动
+
+| 时间 | 事件 | 金额/口径 | 对业务结构的影响 |
+|---|---|---:|---|
+| 2023-05/06 | 完成 ECM Industries 收购 | 约 11 亿美元；ECM LTM 收入约 4.15 亿美元 | 加强 electrical connectors、tools/test instruments、cable management；增强 ILSCO、Gardner Bender、King Innovation 等品牌和 Electrical Connections 深度 |
+| 2024-07 | 完成 Trachte 收购 | 约 6.91-6.95 亿美元 | 增加 custom-engineered control building solutions，用于保护关键电气基础设施；提升数据中心灰空间、电力公用事业、变电/控制建筑能力 |
+| 2025-01 | 完成 Thermal Management 出售 | 交易现金约 17 亿美元；税后净 proceeds 约 14 亿美元 | 退出较分散的热管理业务，历史数据重列为 discontinued operations；释放资金用于并购、回购和聚焦高增长电气连接/保护 |
+| 2025-01 | 完成 Avail Infrastructure Solutions 的 Electrical Products Group 收购 | 约 9.68 亿美元净现金 | EPG 纳入 Electrical Connections；增强 Avail Enclosure Systems、WBT 等在电力公用事业、数据中心和电气设备外壳/连接方案的布局 |
+| 2025-2026 | 分部名称/组合重塑 | Enclosures/EFS 更名为 Systems Protection/Electrical Connections | 把叙事从“产品线”转为“系统保护 + 电气连接”，更贴合 AI 数据中心、电网、工程化交付 |
+
+这三年转型的核心是“卖掉低速资产 + 买入电力/数据中心基础设施资产 + 把液冷做成系统级产品组合”。结果是 backlog 结构更长周期，Infrastructure 暴露上升，但也带来并购整合、商誉/无形资产摊销、营运资金和执行交付风险。
+
+### 2.4 产业链位置
+
+NVT 位于 AI 数据中心产业链的电力和热管理下游工程层：
+
+- 上游：铜、钢/铝、电子元件、泵/阀/传感器、密封件、冷却液、钣金加工、线缆、塑料件。
+- 中游：NVT 的机柜/围护、液冷 CDU/歧管/RDHx、PDU/低压配电、工程化电气建筑、电力连接和线缆管理。
+- 下游：hyperscaler、NeoCloud、AI lab、colocation、EPC/总包、机柜集成商、服务器 ODM/OEM、数据中心液冷集成商、电力公用事业。
+- 价值锚：不是“每颗 GPU”本身，而是每 MW、每 rack、每冷却 loop、每电气建筑的可靠性、交付速度、认证和现场服务。
+
+本项目行业资料对 AI 数据中心瓶颈的判断是：2026 年约束顺序为并网/变压器/开关设备/低压配电 > HBM/CoWoS > 液冷集成 > MEP 劳动力/调试 > NeoCloud 融资/利用率。NVT 正好踩在低压配电、机柜围护、液冷集成和工程化建筑几个瓶颈上。
+
+## 三、最新股价、估值、利润率与资产负债表
+
+### 3.1 市场与估值快照
+
+| 指标 | 最新值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | 164.52美元 | 2026-06-11，市场数据快照 | 当日触及 52周高位附近 |
+| 市值 | 269.8亿美元 | 2026-06-11，股价快照 | 约 164M diluted shares 的量级 |
+| Trailing P/E | 约 27.2x | 2026-06-11，按 EPS 6.04美元市场口径 | 不同数据商对 discontinued operations/调整项处理差异较大 |
+| Forward P/E | 约 36.6x | 2026-06-11，按公司 2026调整EPS指引中值 4.50美元 | 若用市场一致预期，口径约 35x 附近 |
+| P/S | 约 6.2x | 市值 / continuing operations TTM收入约 43.26亿美元 | TTM收入 = 2025收入 38.931亿 + Q1 2026 12.420亿 - Q1 2025 8.093亿 |
+| 最新收入增速 | +53.5% reported；+34.4% organic | Q1 2026 | Systems Protection +76.1%，有机 +50.1% |
+| 2026全年收入指引 | +26%-28% reported；+21%-23% organic | 2026-05-01 公司上调后指引 | 对应收入约 49.05-49.84亿美元 |
+| Q1 2026毛利率 | 35.9% | Q1 2026 | 毛利 4.456亿美元 / 销售额 12.420亿美元；同比 38.8% 下降 290bp |
+| Q1 2026净利率 | 11.3% | continuing operations | 净利 1.404亿美元 / 销售额 12.420亿美元 |
+| Q1 2026调整后营业利润率 | 20.0% | continuing operations | 调整后营业利润 2.485亿美元 |
+
+估值结论：NVT 已经不是便宜的周期工业股。按 2026 调整 EPS 中值 4.50 美元，forward P/E 超过 36x，隐含市场相信数据中心/电力公用事业 backlog 不只是 2026 一次性拉货，而是 2026-2028 年持续高增长。若液冷订单转收入慢于预期，或高功率 rack 架构改变导致 nVent 内容量下降，估值回撤风险明显。
+
+### 3.2 资产负债表健康度
+
+| 指标 | 2026-03-31 | 2025-12-31 | 判断 |
+|---|---:|---:|---|
+| 现金及等价物 | 1.90亿美元 | 2.375亿美元 | Q1 因营运资金、分红和回购下降 |
+| 应收账款 | 8.285亿美元 | 6.930亿美元 | 随收入和长周期项目交付上升 |
+| 存货 | 5.120亿美元 | 4.719亿美元 | 支持 backlog 转收入和扩产 |
+| 流动资产 | 17.883亿美元 | 16.396亿美元 | 流动性充足 |
+| 流动负债 | 10.550亿美元 | 10.035亿美元 | 流动比率约 1.70x |
+| 长期债务 | 15.429亿美元 | 15.460亿美元 | 总债务约 15.6亿美元 |
+| 总负债 | 31.651亿美元 | 31.217亿美元 | 负债结构可控 |
+| 股东权益 | 37.965亿美元 | 37.302亿美元 | 债务/权益约 41% |
+| Q1 经营现金流 | 0.899亿美元 | - | continuing operations |
+| Q1 自由现金流 | 0.538亿美元 | - | 同比 0.444亿美元增长 |
+| 公司披露净杠杆 | 约 1.5x | 2026Q1 call 口径 | 处于可管理区间 |
+
+财务健康度：健康，但不是无约束。NVT 的现金流质量仍强，2025 全年 free cash flow 5.61 亿美元、约 102% adjusted net income conversion；Q1 2026 在收入大增、应收和存货消耗现金的情况下仍有 0.538 亿美元 FCF。债务绝对额因并购上升，但净杠杆约 1.5x，利息覆盖率和 revolver 空间足够。主要风险在于 backlog 转收入会继续占用营运资金，并且 Q1 毛利率同比下降 290bp，反映并购/产品 mix/通胀/关税压力。公司 2026 指引中提到约 8000万美元 tariff impact，需要依靠价格、生产率和规模吸收。
+
+## 四、最近五次财报：收入、订单、backlog、分部与AI数据中心
+
+| 财报季度 | 公司收入/增长 | 调整后利润与现金流 | 订单、backlog、交期判断 | Systems Protection | Electrical Connections | AI数据中心收入/占比判断 |
+|---|---:|---:|---|---|---|---|
+| 2026Q1 | 12.420亿美元；+53.5% reported；+34.4% organic | 调整后营业利润 2.485亿美元；ROS 20.0%；调整EPS 1.09美元；FCF 0.538亿美元 | 有机订单约 +40%；backlog 26亿美元，较 2025年末 23亿美元低双位数环比增长；Q1 粗算 book-to-bill 约 1.2x | 收入 8.948亿美元；+76.1%，有机 +50.1%；分部利润 2.031亿美元；ROS 22.7%；数据中心增长由液冷带动 | 收入 3.472亿美元；+15.3%，有机 +7.9%；分部利润 0.848亿美元；ROS 24.4%；数据中心和电力公用事业增长，通胀/投资/mix 压利润率 | 公司未披露季度数据中心拆分；基于 2025 DC约10亿美元、Q1 Infrastructure 56%、SP +50%有机，估算 Q1 DC收入约 3.5-4.2亿美元，占公司 28%-34% |
+| 2025Q4 | 10.667亿美元；+41.8% reported；+23.6% organic | 调整后营业利润 2.103亿美元；ROS 19.7%；调整EPS 0.90美元；FCF 1.89亿美元 | 有机订单约 +30%；年末 backlog 23亿美元；Infrastructure 约 45%收入；DC全年约10亿美元，增长 >50%，有机约 +40% | 收入 7.37亿美元；+58.3%，有机 +33.5%；分部利润 1.49亿美元；ROS 20.3% | 收入 3.30亿美元；+15.0%，有机 +7.5%；分部利润 0.91亿美元；ROS 27.6% | 2025全年 DC约10亿美元；Q4 估算约 2.8-3.3亿美元，液冷和工程化建筑贡献大 |
+| 2025Q3 | 10.540亿美元；+34.8% reported；+16.0% organic | 调整后营业利润 2.133亿美元；ROS 20.2%；调整EPS 0.91美元；FCF 2.53亿美元 | 有机订单约 +65%；总 backlog 环比强双位数增长；液冷 record orders/backlog；扩产新设施；进入 NVIDIA Partner Network Solution Advisor | 收入 7.16亿美元；+50.0%，有机 +23.2%；分部利润 1.46亿美元；ROS 20.4% | 收入 3.38亿美元；+11.0%，有机 +4.7%；分部利润 1.02亿美元；ROS 30.0% | 估算 DC收入约 2.5-3.0亿美元；液冷订单领先收入 |
+| 2025Q2 | 9.631亿美元；+30%左右 reported；+9% organic | 调整后营业利润 2.00亿美元；ROS 20.8%；调整EPS 0.86美元；FCF 0.74亿美元 | 有机订单 >+20%；backlog 同比超过 4倍且环比增长；白空间/灰空间均 record orders/backlog | 收入 6.32亿美元；+43%，有机 +10%；分部利润 1.37亿美元；ROS 21.7% | 收入 3.31亿美元；+11%，有机 +7%；分部利润 0.95亿美元；ROS 28.7% | 估算 DC收入约 2.2-2.6亿美元；white space 包含 cable management/racks/cabinets/liquid cooling/PDU/enclosures/precision slides/power connections |
+| 2025Q1 | 8.093亿美元；+11% reported；+2% organic | 调整后营业利润 1.622亿美元；ROS 20.0%；调整EPS 0.67美元；FCF 0.444亿美元 | 订单同比双位数增长；backlog 环比增长；Infrastructure 由 Data Solutions 和 Power Utilities 领先 | 收入 5.082亿美元；+16%，有机约持平；分部利润 1.042亿美元；ROS 20.5% | 收入 3.011亿美元；+3%，有机 +4%；分部利润 0.851亿美元；ROS 28.3% | 估算 DC收入约 1.7-2.2亿美元；这时液冷增长仍处于订单/项目爬坡阶段 |
+
+从五季序列看，真正的拐点是 2025Q3：有机订单 +65%，backlog 强双位数环比增长，液冷 record orders/backlog，并且公司开始明确讲 NVIDIA Partner Network 和扩产。2026Q1 则是订单到收入兑现的第一轮大爆发，Systems Protection 有机 +50.1%，说明不是单纯并购贡献。
+
+## 五、2026最新指引、业务占比与产品映射
+
+### 5.1 2026最新指引
+
+| 指标 | 2026原指引 | 2026上调后指引 | 含义 |
+|---|---:|---:|---|
+| 全年销售增长 | +15%-18% reported；+10%-13% organic | +26%-28% reported；+21%-23% organic | Q1 订单/收入强度显著超出年初预期 |
+| 全年收入额 | 约 44.77-45.94亿美元 | 约 49.05-49.84亿美元 | 以 2025 continuing revenue 38.931亿美元为基数 |
+| 调整EPS | 4.00-4.15美元 | 4.45-4.55美元 | 中值上调约 0.475美元 |
+| GAAP EPS | 未列入原表重点 | 3.68-3.78美元 | 继续受摊销、并购整合等调整项影响 |
+| Q2 2026销售增长 | - | +28%-30% reported；+23%-25% organic | Q2 仍维持高有机增长 |
+| Q2 2026调整EPS | - | 1.12-1.15美元 | Q2 EPS 环比 Q1 继续增长 |
+| 现金转化 | 调整净利 90%-95% | 不变 | 扩产/营运资金仍可控 |
+| Capex | 约 1.30亿美元 | 不变 | 扩产强度提高但仍不是重资产制造 |
+| 关税影响 | 约 8000万美元 | 不变 | 毛利率/价格传导的主要短期变量 |
+
+### 5.2 最新业务收入占比
+
+| 维度 | 最新披露/估算 | 收入占比 | 增长 | 结论 |
+|---|---:|---:|---:|---|
+| Systems Protection | Q1 2026 8.948亿美元 | 72.0% | +76.1%，有机 +50.1% | 公司最突出业务，AI数据中心液冷/机柜/工程化建筑主要落在这里 |
+| Electrical Connections | Q1 2026 3.472亿美元 | 28.0% | +15.3%，有机 +7.9% | 利润率高，但 Q1 受通胀、投资和 mix 压力，增长主要来自数据中心和电力公用事业 |
+| Infrastructure | Q1 2026约 6.96亿美元 | 56% | 公司未披露单季增速；Q1有机增长由 Infrastructure 领先 | 数据中心 + 电力公用事业是公司核心增长轴 |
+| Industrial | Q1 2026约 3.11亿美元 | 25% | 低于 Infrastructure | 稳定底盘，不是 AI 核心 |
+| Commercial/Residential | Q1 2026约 2.36亿美元 | 19% | 低速/周期性 | 估值驱动较弱 |
+| Data Center | 2025全年约 10亿美元；Q1 2026估算约 3.5-4.2亿美元 | 2025约 26%；Q1 2026估算 28%-34% | 2025增长 >50%，有机约 +40%；Q1继续加速 | 最重要增长引擎 |
+
+### 5.3 产品映射：重点产品、潜力小产品与跳过项
+
+| 类别 | 具体产品/型号/品牌 | 所属分部 | AI相关性 | 重点判断 |
+|---|---|---|---|---|
+| 液冷系统 | RackChiller CDU、in-rack CDU、in-row CDU、Technology Cooling System、rear-door heat exchangers/RDHx、heat rejection unit/HRU、manifolds、传感器、控制算法、hot-swappable/redundant 模块 | Systems Protection | 极高 | 核心增长引擎。RackChiller CDU family 已被 nVent 披露为支持 NVIDIA GB200 NVL72/NVL36 reference architectures 并进入 NVIDIA product configurator；Investor Day 披露自 2020 年以来液冷部署 >2GW |
+| 液冷小组件/接口 | blind-mate manifold、QD/快速接头、hoses、leak detection、flow/pressure/temp sensors | Systems Protection | 极高 | 容易被忽视的小件，但对高密度机柜可靠性和服务性关键；若绑定客户 reference architecture，毛利率和粘性高于普通钣金件 |
+| 高密度机柜/围护 | HOFFMAN/SCHROFF cabinets、liquid-ready racks、equipment protection、precision slides、rack integration | Systems Protection | 高 | GB200/GB300 类 rack 功率密度推动机柜从金属箱变成结构/散热/电力/线缆接口 |
+| 白空间电力分配 | rack PDU、power distribution units、busbar/low-voltage distribution interfaces、power management | Systems Protection + Electrical Connections | 高 | 2026 主流不是立刻切 800VDC，而是高密度三相智能 PDU、架空母线/track busway、RPP/Floor PDU 和预制低压配电 |
+| 灰空间工程化建筑 | TRACHTE control buildings、engineered buildings、outdoor enclosed electrical solutions、power utility/data center gray-space modules | Systems Protection | 高 | 直接受益于 time-to-power 和电网接入瓶颈；单项目金额大，长周期 backlog 强 |
+| 电力连接/接地/线缆管理 | ERICO、ILSCO、CADDY、power connections、grounding/bonding、cable trays/wire management、low-voltage power distribution | Electrical Connections | 中高 | 单件不显眼，但在高密度电力系统和电力公用事业工程中需要认证、可靠性和安装效率 |
+| 传统工业/商业电气件 | 普通紧固件、通用工业 enclosures、低功率商业/住宅产品、非AI工业安全/安装件 | 两个分部 | 低到中 | 本报告仅作为利润底盘处理，不作为 AI 高增长核心 |
+| 已出售/不纳入 | Thermal Management business | 已列 discontinued operations | 不纳入 | 2025年1月出售，不再作为 continuing operations 的增长来源 |
+
+最容易漏掉的潜力小产品是液冷 loop 里的 manifold、快速接头、泄漏检测、传感器、线缆/电力接口和服务性模块。它们单价低于 CDU/机柜，但在高功率 rack 中认证和故障风险极高，一旦进入客户标准配置，替换成本高、复购粘性强。
+
+## 六、关键高增长产品：当前收入贡献、AI重要性、供需与定价能力
+
+评分：1=低，5=高。收入贡献为本报告估算，因公司未披露产品级收入，不能与公司披露 segment 简单相加。
+
+| 关键产品/业务 | 当前收入贡献估算 | 当前收入增速 | AI基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/替换壁垒 | 溢价能力 | 交叉验证 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| 液冷系统：CDU/RDHx/HRU/manifold/控制 | 2025估算 3.5-5.0亿美元；Q1 2026 annualized 估算 6.5-9.0亿美元 | 估算 +60%-100% | 5 | 5 | 5 | 4 | 4 | 公司披露液冷 record orders/backlog、>2GW deployed、GB200 NVL72/NVL36 reference architecture qualification、SC25 10+ 新产品 |
+| 高密度机柜/围护 + 白空间 PDU | Q1 2026 annualized 估算 3.0-4.5亿美元 | 估算 +30%-60% | 4 | 4 | 4 | 3 | 3-4 | 本地行业资料显示 100-250kW/rack 需要液冷 ready cabinet、高密度三相 PDU/配电；公司披露 white space products 包含 racks/cabinets/liquid cooling/PDU |
+| 工程化电气建筑/灰空间 | Q1 2026 annualized 估算 4.5-7.0亿美元，其中数据中心+电力公用事业为主 | 估算 +25%-50% | 4 | 5 | 4 | 3 | 4 | Trachte/EPG 并购、record backlog、数据中心灰空间 enclosures/engineered building pull-through；本地行业资料把并网/电力设备列为第一瓶颈 |
+| Electrical Connections：电力连接、接地、线缆管理、低压配电 | 2025 Infrastructure收入约 5亿美元；Q1 2026 annualized 估算 5.5-7.0亿美元 | 披露 2022-2025 CAGR约 15%；Q1 segment organic +7.9% | 3-4 | 4 | 3 | 2-3 | 3 | 进入电力公用事业和数据中心安装链条，利润率高但竞争更分散 |
+| 潜力小产品：leak detection、传感器、监控、服务性模块、precision slides | Q1 2026 annualized 估算 0.5-1.5亿美元 | 估算 +50%+，基数小 | 4 | 4 | 4 | 3-4 | 4 | 高功率 rack 对可维护性、漏液风险、温度/流量监控要求上升；通常随客户认证/系统方案绑定 |
+
+关键判断：NVT 真正的 alpha 不只来自“卖更多机柜”，而来自“把液冷、PDU、manifold、机柜结构、传感器、工程化建筑和连接件打包成客户可认证、可交付、可维护的系统”。这种系统化能力决定其能否从每 MW 机会中拿到接近 100 万美元的内容量。
+
+## 七、一年后关键产品收入贡献：三种情景
+
+这里的一年以后指 2027年中附近的 run-rate 或未来四个季度收入能力，不等同公司正式 2027 指引。
+
+| 产品/业务 | 基准情景：一年后收入贡献 | 乐观情景：一年后收入贡献 | 极度乐观情景：一年后收入贡献 | 情景触发条件 |
+|---|---:|---:|---:|---|
+| 液冷系统 | 9-11亿美元，增速约 +45%-65%；重要性5、紧急性5、紧张4、溢价4 | 12-15亿美元，增速约 +70%-110%；紧张5 | 16-20亿美元，增速 +120%+；紧张5、溢价5 | GB200/GB300 类 liquid-cooled rack 快速放量；NVT CDU/manifold/RDHx 进入更多客户 reference design；新设施顺利爬坡 |
+| 高密度机柜/白空间 PDU | 4-6亿美元，增速 +25%-40%；重要性4、紧急性4、紧张4 | 6-9亿美元，增速 +45%-70% | 9-12亿美元，增速 +80%-110% | 每 rack 功率从 60-160kW 向 100-250kW 迁移；PDU、机柜、线缆管理与液冷 bundle 销售 |
+| 工程化电气建筑/灰空间 | 7-9亿美元，增速 +20%-35%；重要性4、紧急性5、紧张4 | 9-12亿美元，增速 +35%-55% | 12-15亿美元，增速 +60%-85% | 电网接入/变电站/控制建筑成为 hyperscaler time-to-power 的主要瓶颈；Trachte/EPG 产能和交付节奏扩大 |
+| Electrical Connections 高增长部分 | 6-7亿美元，增速 +10%-20%；重要性3-4、紧急性4、紧张3 | 7.5-9亿美元，增速 +20%-35% | 9-11亿美元，增速 +35%-50% | 电力公用事业投资、数据中心连接/接地/线缆管理 pull-through 强于工业/商住拖累 |
+| 潜力小产品/监控/服务模块 | 1-2亿美元，增速 +40%-70% | 2-3亿美元，增速 +80%-120% | 3亿美元以上，增速 +150%+ | 客户把漏液检测、传感器、服务性模块纳入标准 BOM，NVT 与 CDU/机柜绑定销售 |
+
+基准情景已经包含公司 2026 年 +21%-23% organic 指引的兑现；乐观情景要求 backlog 继续扩张而非单纯消化；极度乐观情景要求液冷架构和高密度 rack 在 2027 年继续超预期，并且 NVT 在 NVIDIA/ODM/hyperscaler 标准配置中的 attach rate 上升。
+
+## 八、BOM、单位内容量、价格传导链与当前产能/认证
+
+### 8.1 单位内容量：每 MW、每 rack、每 GPU、每 optical port
+
+| 产品层 | 真实内容量估算 | NVT可抓取内容 | 价格传导链 | 关键注意事项 |
+|---|---:|---|---|---|
+| 每 MW AI 数据中心 | 公司 Investor Day 口径：nVent opportunity 约 100万美元/MW | 液冷、机柜/围护、PDU/配电、工程化建筑、连接/接地/线缆管理的综合机会 | Hyperscaler/colo capex -> EPC/GC/机柜集成/液冷集成 -> NVT系统/组件 -> 金属、铜、泵阀、电子件 | 100万美元/MW 是综合机会，不是 guaranteed revenue；实际取决于架构、客户自制/外采、是否绑定 reference design |
+| 100-200kW/rack 液冷系统 | CDU 分摊 3万-18万美元/rack；manifold/QD/hose/sensors/leak detection 2万-11万美元/rack；RDHx/HRU 1万-8万美元/rack | 若 NVT 供应 CDU+manifold+RDHx+传感/控制，总内容量可达 5万-25万美元/rack | GPU热设计 -> 服务器/机柜液冷规范 -> 液冷系统供应商报价 -> NVT CDUs/manifold/RDHx | 高功率 rack 对冗余、热插拔、压降、漏液风险和维护时间敏感，认证比单件 ASP 更重要 |
+| 高密度机柜/PDU/线缆 | liquid-ready cabinet 1万-10万美元/rack，高端可更高；rack PDU/branch monitoring 0.5万-4万美元/rack；cable management 0.2万-2万美元/rack | NVT可抓取机柜、PDU、电力接口、precision slides、线缆管理 | ODM/OEM rack design -> data hall electrical design -> NVT机柜/PDU/附件 | 2026 主流仍是高密度三相 AC/PDU/母线体系，800VDC 是中长期变量 |
+| 每 GPU | 以 72-GPU NVL72 rack、12万-14.2万W/rack 粗算，NVT液冷/机柜/PDU内容 5万-25万美元/rack，相当于约 700-3500美元/GPU；若包含工程化建筑和配电按 MW分摊，可能更高 | 不是按 GPU 定价，但 GPU密度提高会推高每 rack 和每 MW 内容量 | GPU平台 -> rack功率/热负载 -> rack液冷/配电/机柜BOM | 每 GPU 口径只是归一化估算，NVT收入实际更依赖 rack/MW/项目包 |
+| 每 optical port | NVT不是光模块/光端口供应商；可抓取 fiber/cable management、接地、机柜路径等约 5-30美元/port 的工程内容 | 低 | 网络拓扑 -> 光纤布线/线缆管理 -> 机柜/桥架/标签/接地 | 对 NVT 不应按 optical port 建模，避免把光互联价值错误归因给 NVT |
+| 工程化电气建筑/灰空间 | 单个 control/electrical building 可达百万到千万美元级，按园区分摊约 5万-25万美元/MW，视是否含开关设备/控制系统/外壳/集成服务 | TRACHTE/EPG 相关建筑、enclosure、pull-through connections | Utility interconnect/substation -> EPC -> prefabricated/control building -> NVT | 这部分价值由 time-to-power 和现场施工替代决定，客户愿意为缩短工期付溢价 |
+
+本地行业资料对 2026 AI rack 的功率密度判断为：现实口径 60-160kW/rack，乐观口径 80-200kW/rack；2027 现实口径 80-180kW/rack，乐观口径 100-250kW/rack。对 NVT 来说，功率密度越高，液冷/CDU/manifold/PDU/机柜内容量越高，且认证和可靠性权重上升。
+
+### 8.2 当前产能、供应链采纳与认证阶段
+
+| 产品/业务 | 当前产能/能力 | 被供应链采纳程度 | 认证/资格状态 | 当前瓶颈 |
+|---|---|---|---|---|
+| 液冷系统 | Investor Day 披露液冷部署自 2020 年以来 >2GW；Systems Protection 已新增 >40万平方英尺产能；Q3 2025 提到扩产新设施；精益改善带来液冷产线大幅扩张 | 高：公司称与芯片制造商和 major data center players 合作；Q2-Q4 2025 多次披露 record orders/backlog | RackChiller CDU family 支持 NVIDIA GB200 NVL72/NVL36 reference architectures，并进入 NVIDIA product configurator；Q3 2025 披露进入 NVIDIA Partner Network Solution Advisor | CDU/歧管/传感器交付、现场调试、客户 qualification、服务能力和工程变更 |
+| 高密度机柜/PDU | 依托 HOFFMAN/SCHROFF 机柜和 Systems Protection 制造平台；可与液冷和电力方案 bundle | 中高：公司白空间产品被列为 racks/cabinets/liquid cooling/PDU/enclosures/IT precision slides/power connections | 具体客户认证未逐项披露；与 NVIDIA/AI rack reference architecture 的间接绑定来自液冷系统 | 机柜标准快速变化、ODM/OEM自研、客户双供 |
+| 工程化建筑/灰空间 | Trachte/EPG 并入后扩大控制建筑、电气建筑、enclosure 与电力公用事业能力 | 高：record backlog 和数据中心灰空间订单说明采纳度提升 | 项目级认证/utility qualification 多于公开型号认证；官方未披露逐客户 stage | 长周期工程交付、现场施工接口、开关设备/变压器等外部供给 |
+| Electrical Connections | ECM/EPG 增强连接件、接地、线缆管理、低压配电产品线 | 中高：电力公用事业、数据中心和工业客户已长期使用；Q1 2026 segment organic +7.9% | 多数是 UL/CSA/IEC/utility spec 类认证，公司未在财报逐项披露 | 竞争分散、产品 mix、铜/金属和关税成本传导 |
+| 监控/传感/服务性小件 | 随液冷和机柜系统导入 | 中：若进入系统级方案，attach rate 可迅速上升 | 跟随 CDU/机柜/客户系统认证 | 单独披露少，容易被客户 should-cost 压价 |
+
+当前产能美元计估算：2025 数据中心收入约 10 亿美元；Q1 2026 数据中心收入 annualized 估算约 14-17亿美元；若考虑 backlog、扩产和新增设施，2026 中当前可交付 run-rate 能力估算约 16-20亿美元/年数据中心相关收入，其中液冷系统是最紧的产能/认证环节。这个估算与公司 2026 全年收入指引约 49-50亿美元、Infrastructure 占比继续上升一致。
+
+## 九、一年后产能能力、采纳和认证阶段：三种情景
+
+| 产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 | 需要跟踪的验证点 |
+|---|---|---|---|---|
+| 液冷系统 | 产能/收入能力 11-13亿美元；维持 GB200 相关认证和主要客户量产；新增客户仍需 qualification | 产能/收入能力 15-18亿美元；GB300/Blackwell Ultra 相关 rack 方案获得更多公开或半公开 qualification；NVIDIA/ODM/客户标准配置提高 | 产能/收入能力 20亿美元以上；液冷成为高端训练 rack 默认配置，NVT 从 CDU 扩到 manifold/PDU/机柜 bundle | Q2/Q3 orders 是否继续 >20%有机；液冷 backlog 是否继续创纪录；是否有 GB300/Rubin 相关公开认证或客户 wins |
+| 高密度机柜/PDU | 产能/收入能力 5-7亿美元；主要随液冷项目 attach | 8-10亿美元；机柜/PDU 与 liquid cooling bundle，单 rack 内容量上升 | 12亿美元以上；NVT 在多个 hyperscaler/JDM 标准 rack 内获得高 attach | 每 MW 内容量是否接近 100万美元；rack PDU/机柜是否被单独提及为增长点 |
+| 工程化建筑/灰空间 | 产能/收入能力 8-10亿美元；Trachte/EPG 正常整合 | 11-13亿美元；数据中心灰空间和电力公用事业项目集中落单 | 15亿美元以上；prefabricated electrical buildings 成为 time-to-power 的主流交付方式 | backlog 期限、项目交付窗口、utility/data center mix；是否出现取消或推迟 |
+| Electrical Connections | 产能/收入能力 7-8亿美元 Infrastructure 部分；margin 回到 26%-28% | 9-10亿美元；电力公用事业和数据中心连接/接地持续 pull-through | 11亿美元以上；连接/接地/线缆管理随园区电力投资超预期 | Electrical Connections organic growth 是否从高个位数回到双位数；毛利/ROS 是否修复 |
+| 潜力小产品 | 2亿美元以内，随系统销售自然增长 | 2-3亿美元，传感/漏液/监控形成标准 attach | 3亿美元以上，小产品被打包为服务和可靠性增值项 | 是否在财报/会议中开始单独提及 leak detection、manifold、monitoring、service modules |
+
+认证阶段判断：截至 2026-06-11，最硬的公开认证是 NVIDIA GB200 NVL72/NVL36 reference architecture 相关 qualification 和 NVIDIA Partner Network Solution Advisor。未来一年若出现 GB300/Blackwell Ultra/Rubin 平台公开 qualification，或 hyperscaler 标准机柜/液冷模块公开指定 nVent，将显著提高乐观/极度乐观情景概率。若未来只披露“record orders”但无认证扩展，仍偏基准到乐观之间。
+
+## 十、订单、backlog、交付窗口、取消率与未来一年增速推断
+
+NVT 没有披露完整产品级 backlog、客户项目名、取消率和逐项交期。可以用已披露数据做约束推断：
+
+- Q1 2026 backlog 26亿美元，2025 年末 23亿美元，Q1 销售 12.42亿美元，粗略 book-to-bill = (期末backlog - 期初backlog + 当季收入) / 当季收入 = (26 - 23 + 12.42) / 12.42 ≈ 1.24x。
+- Q1 2026 有机订单约 +40%，Q4 2025 约 +30%，Q3 2025 约 +65%，Q2 2025 >+20%，说明订单高峰并非单季异常。
+- 2026 全年指引收入约 49.05-49.84亿美元；Q1 backlog 26亿美元约为全年指引收入的 52%-53%，对未来 12 个月收入有强覆盖。
+- 本地行业资料显示，AI rack 采购周期约 3-12 个月， commissioning 约 1-6 个月；工程化电气建筑和灰空间项目交付通常更长。NVT backlog 的交付窗口应从数月到一年多不等。
+- 取消率未披露。基于电力接入、液冷、机柜和工程化建筑多为项目级/客户认证后订单，取消率应低于消费电子式拉货，但 NeoCloud 融资、GPU配置变化、园区并网延迟会带来推迟而非完全取消风险。
+
+| 产品/业务 | 基准未来一年增速 | 乐观未来一年增速 | 极度乐观未来一年增速 | 订单/供给推断 |
+|---|---:|---:|---:|---|
+| 液冷系统 | +45%-65% | +70%-110% | +120%+ | record backlog + NVIDIA qualification + 新设施；供给瓶颈在 CDU/manifold/现场调试，若扩产顺利可继续高增长 |
+| 高密度机柜/PDU | +25%-40% | +45%-70% | +80%-110% | 随液冷/高功率 rack attach；供给瓶颈低于液冷，但客户标准变化快 |
+| 工程化建筑/灰空间 | +20%-35% | +35%-55% | +60%-85% | backlog 长周期；订单来自 time-to-power 和电力公用事业，供给瓶颈是工程产能/现场接口 |
+| Electrical Connections | +10%-20% | +20%-35% | +35%-50% | 订单有数据中心/utility pull-through，但工业和商住会稀释；供给瓶颈较小，价格/铜/关税影响利润率 |
+| 公司整体 | 2026 指引 +26%-28% reported；2027中 run-rate 继续 +15%-20% | +25%-35% | +35%-45% | 如果 backlog 不回落且 Q2/Q3 organic orders 继续 >20%，公司整体可超越普通电气化同行 |
+
+最重要的监测信号不是单季收入，而是有机订单和 backlog 的二阶变化：如果 Q2/Q3 2026 有机订单从 +40% 回落到低双位数但 backlog 仍稳定，则只是高基数；如果 backlog 连续环比下降且客户交付窗口延后，则高估值风险会迅速放大。
+
+## 十一、竞争格局、替代技术与客户替换成本
+
+### 11.1 主要竞争对手
+
+| 产品/业务 | 主要竞争对手 | 竞争维度 | NVT相对优势 | NVT风险 |
+|---|---|---|---|---|
+| 液冷/CDU/RDHx/manifold | Vertiv、Schneider/Motivair、CoolIT、Boyd、Eaton、Modine/Airedale、Delta、Supermicro、Rittal、Daikin/Chilldyne/JetCool/ZutaCore、组件层 Parker/Dover/Stäubli/CEJN | 认证、可靠性、服务网络、压降/能效、交付能力、客户 reference design | >2GW部署、NVIDIA GB200相关 qualification、系统保护+机柜+PDU组合 | Vertiv/Schneider 更强全栈数据中心系统；ODM/OEM 可自研或绑定其他液冷商 |
+| 机柜/围护/PDU | Schneider/APC、Vertiv/Geist、Legrand/Raritan/ServerTech/Starline/Minkels、Rittal、Panduit、Chatsworth、Eaton/Tripp Lite、Hubbell | 高密度 rack 结构、PDU监控、交付、全球服务、客户标准化 | HOFFMAN/SCHROFF + 液冷组合；在白空间可 bundle | 机柜/PDU可双供，客户议价能力强；若 ODM rack 集成度提高，NVT attach 可能被压缩 |
+| 工程化电气建筑/灰空间 | Eaton、Schneider、Siemens、ABB、Powell、Vertiv、Hubbell、Rittal、Anord Mardix、EAE、电力EPC | 交期、utility spec、模块化、项目管理、现场集成 | Trachte/EPG 增强，能与 enclosure/connections pull-through | 项目周期长、外部开关设备/变压器瓶颈会限制收入确认 |
+| Electrical Connections | Hubbell、Eaton、ABB/Thomas & Betts、Panduit、Atkore、Legrand、Roxtec、Meltric、Wago、Hammond | UL/CSA/IEC认证、安装效率、渠道、价格、铜成本 | ERICO/ILSCO/CADDY 品牌和渠道，利润率高 | 分散竞争，产品差异化低于液冷系统，价格压力更大 |
+
+### 11.2 新技术是否是主流
+
+液冷是未来 100kW+ rack 的主流方向。2026 年主流仍是 single-phase direct-to-chip + rack/row CDU + manifold + quick disconnect + residual air/RDHx 的混合形态；两相冷却和浸没式冷却在部分高密度或特殊应用中有机会，但不是 2026 年 hyperscale 主流。NVT 的 RackChiller/CDU/manifold/RDHx 组合贴近当前主流路径。
+
+高密度配电方面，2026 年最可能的路径不是立刻全面 800VDC，而是高密度三相智能 rack PDU、overhead busway/track busway、prefabricated low-voltage distribution、RPP/Floor PDU 和更强监控。800VDC/OCP 电源架构是重要中期风险：如果未来数据中心电力架构从 AC/PDU/传统低压配电大幅迁移到 DC bus 和更深度的机架级 power shelf，价值可能向 Schneider/Vertiv/Delta/ABB 以及电源半导体和 power electronics 厂商倾斜。但在未来 12 个月，NVT 的主流产品仍与正在量产的 GB200/Blackwell rack 更匹配。
+
+### 11.3 客户替换成本
+
+液冷和工程化建筑替换成本高。原因是设计验证、漏液风险、热冗余、现场服务、reference architecture、客户 qualification 和项目交付都需要时间；一旦进入客户标准 rack 或园区电气建筑方案，替换不仅是换供应商，还会影响交付窗口和可靠性责任。
+
+机柜/PDU/连接件替换成本中等。客户可以双供，且许多部件标准化程度较高；但在高功率 rack 中，PDU、线缆管理、接地、传感器和液冷接口彼此耦合，替换成本会随功率密度上升而提高。
+
+普通工业/商业电气件替换成本较低。它们贡献现金流和渠道，但不是 NVT 当前估值重估的核心。
+
+### 11.4 主要风险
+
+- 估值风险：forward P/E 约 36x，若 organic orders 从 +40% 快速回落，股价对二阶变化敏感。
+- 毛利率风险：Q1 2026 毛利率 35.9%，同比下降 290bp；关税约 8000万美元、并购整合、mix 和扩产投入可能继续压制短期利润率。
+- 架构替代风险：800VDC、ODM/OEM 自研 liquid rack、Vertiv/Schneider 全栈方案、两相/浸没等技术路径可能降低 NVT attach rate。
+- 客户集中和项目风险：AI 数据中心项目金额大但客户集中，NeoCloud 融资、GPU供应、并网延迟会把订单推迟到未来季度。
+- 外部供给瓶颈：变压器、开关设备、并网审批、MEP劳动力可能成为 NVT 无法控制的交付限制。
+- 并购整合风险：Trachte/EPG/ECM 提高增长质量，但也增加商誉、摊销、系统整合和营运资金复杂度。
+
+## 十二、投资跟踪清单
+
+| 跟踪项 | 为什么重要 | 触发乐观 | 触发谨慎 |
+|---|---|---|---|
+| 有机订单增速 | 比收入更领先 | Q2/Q3 继续 >20%，液冷/数据中心仍 record orders | 订单降至个位数或 backlog 环比下降 |
+| Backlog 绝对额与环比 | 验证需求持续性 | 26亿美元以上继续增长，book-to-bill >1 | backlog 消化但不补单 |
+| Systems Protection organic growth | AI液冷/机柜/灰空间主战场 | 继续 30%+ | 回落到低双位数且 margin 无改善 |
+| Electrical Connections ROS | 高利润底盘是否修复 | 从 24.4% 回到 26%-28% | 通胀/关税/mix 长期压制 |
+| 液冷认证/客户 wins | 决定 NVT 是否从供应商变标准件 | GB300/Blackwell Ultra/Rubin 相关 qualification 或客户公开 wins | 只讲需求热但无新增认证 |
+| 毛利率 | 价格传导和产品 mix | 2026 下半年 GM 回升到 37%附近 | 继续低于 36%，说明扩产和关税吞噬价格 |
+| 每 MW 内容量 | 估值核心变量 | 接近或高于 100万美元/MW | 客户自制/双供导致内容量下降 |
+
+## 十三、来源与证据
+
+### 官方公司与监管资料
+
+- nVent Q1 2026 Earnings Deck: https://s22.q4cdn.com/268397047/files/doc_financials/2026/q1/2026-Q1-Earnings-Deck.pdf
+- nVent Q1 2026 Press Release PDF: https://s22.q4cdn.com/268397047/files/doc_financials/2026/q1/Q1-2026-NVT-Press-Release.pdf
+- nVent Q4 2025 Earnings Deck: https://s22.q4cdn.com/268397047/files/doc_financials/2025/q4/2025-Q4-Earnings-Deck.pdf
+- nVent Q3 2025 Earnings Deck: https://s22.q4cdn.com/268397047/files/doc_financials/2025/q3/v2/2025-Q3-Earnings-Deck-FINAL.pdf
+- nVent Q2 2025 Earnings Deck: https://s22.q4cdn.com/268397047/files/doc_financials/2025/q2/2025-Q2-Earnings-Deck.pdf
+- nVent Q1 2025 Earnings Deck: https://s22.q4cdn.com/268397047/files/doc_financials/2025/q1/2025-Q1-Earnings-Deck-FINAL.pdf
+- nVent 2026 Investor Day Presentation: https://s22.q4cdn.com/268397047/files/doc_downloads/2026/03/18/2026-NVT-Investor-Day-Presentation.pdf
+- nVent 2025 Form 10-K: https://www.sec.gov/Archives/edgar/data/1720635/000162828026008608/nvt-20251231.htm
+- nVent Q1 2026 Form 10-Q: https://www.sec.gov/Archives/edgar/data/1720635/000162828026029370/nvt-20260331.htm
+- nVent collaborates with NVIDIA on AI-ready liquid cooling solutions: https://www.nvent.com/en-us/resources/news/nvent-collaborates-with-nvidia-on-ai-ready-liquid-cooling-solutions
+- nVent SC25 liquid cooling and power portfolio: https://investors.nvent.com/press-releases/press-release-details/2025/nVent-Unveils-New-Liquid-Cooling-and-Power-Portfolio-at-SC25/default.aspx
+- nVent completes ECM acquisition: https://investors.nvent.com/press-releases/press-release-details/2023/nVent-Completes-Acquisition-of-ECM-Industries/default.aspx
+- nVent completes Trachte acquisition: https://investors.nvent.com/press-releases/press-release-details/2024/nVent-Completes-Acquisition-of-Trachte/default.aspx
+- nVent Thermal Management sale: https://investors.nvent.com/press-releases/press-release-details/2024/nVent-Announces-Agreement-to-Sell-Thermal-Management-Business/default.aspx
+- SEC 8-K on Thermal Management sale cash consideration: https://www.sec.gov/Archives/edgar/data/1720635/000172063525000008/nvt-20250130.htm
+
+### 行业资料
+
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_机柜、围护结构与物理安防_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+
+### 市场与二级资料
+
+- 2026-06-11 市场数据快照：NVT 股价 164.52美元、市值约 269.8亿美元、EPS 6.04美元、P/E 约 27.2x。
+- Yahoo Finance / Zacks / TradingView / StockTitan / SimplyWallSt 等二级资料用于校验 Q1 2026 毛利率、现金、债务、forward P/E 和市场叙事，但财务主表以公司 press release、earnings deck 和 SEC 文件为准。
+

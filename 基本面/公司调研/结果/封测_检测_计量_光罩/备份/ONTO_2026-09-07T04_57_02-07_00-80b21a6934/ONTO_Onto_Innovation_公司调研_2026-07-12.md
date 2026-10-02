@@ -1,0 +1,536 @@
+# 公司：ONTO Onto Innovation（Onto Innovation Inc.）全面尽调
+
+> **研究日期：2026-07-12（America/Los_Angeles）**  
+> **最新财务期：2026Q1，季度截至 2026-03-31，财报发布于 2026-05-05**  
+> **行情日期：2026-07-10 美股正常收盘（2026-07-12 为周日）**  
+> **研究边界：仅使用项目内 `行业调研/` 的相关产业资料，以及联网检索的公司、SEC、产品、会议论文和有限渠道资料；未读取或继承其他公司报告、日度资料或特征量化内容。**
+
+## 结论先行
+
+**Onto Innovation 不是数据中心设备公司，而是 AI 芯片制造上游的“小而强”过程控制设备商。** 它把光学关键尺寸量测（OCD）、薄膜/集成量测、先进封装 2D 缺陷检测、3D 微凸点量测、亚表面缺陷检测、面板级封装光刻和良率软件组合在一起，主要卖给晶圆厂、HBM 厂、逻辑厂与 OSAT。它对 hyperscaler、机架或 GPU 的**直接收入为零**；所谓 AI 收入，是设备最终用于 GAA 逻辑、HBM、2.5D/3D 封装、CPO/硅光等 AI 供应链产能的归因收入。
+
+投资者通常把 ONTO 视为：**介于 KLA 的全栈过程控制龙头与 Camtek 的先进封装专长之间的高弹性挑战者**。它的优点是产品迭代快、先进封装与先进节点同时受益、非 GAAP 毛利率约 55%–56%、单机价值量随良率风险提升；缺点是收入只有约 10 亿美元、客户集中、订单披露不完整、精密光学供应链有瓶颈，而且在 2026 年股价大涨后估值已经要求其兑现 30% 以上增长。
+
+### 核心判断
+
+| 维度 | 判断 | 最重要证据 |
+|---|---|---|
+| 2026 增长确定性 | **较高** | Q1 收入 $291.9m；Q2 指引 $320m–$330m；公司预计 2026 年收入 **>$1.3bn、同比 >30%**，H2 至少比 H1 高 15% |
+| 订单可见度 | **较高但不可精确审计** | 2025Q4 backlog 三个月内近乎翻倍至“约两个季度”；2026Q1 称 record backlog；单一 HBM 客户 Dragonfly VPA **>$240m、覆盖至 2027 年** |
+| 最强产品 | **Dragonfly G5 + 3Di** | G5 150nm 灵敏度、最高 5 倍上一代吞吐；HBM4 与领先 2.5D 客户资格；G5 与 3Di 均获双位数订单承诺 |
+| 第二增长极 | **Atlas G6 / OCD** | 第二家逻辑客户选中 GAA 应用；先进节点 2025 年收入 $308m、同比翻倍，2026 年公司预计约 +25% |
+| 小而可能很大的业务 | **EchoScan、JetStep/Firefly、Semilab 表面电荷、Rigaku X-ray + Ai Diffract、硅光/CPO** | 多数仍处资格或早期量产阶段；它们决定 2027 年是否继续跑赢 WFE，而非 2026 年收入能否达标 |
+| 供给约束 | **公司装配能力不紧，关键件偏紧** | 管理层称现有体系可支持约 **$2bn 年化收入**；真正约束是精密光学件固定交期，2026Q1 已“略有拉长” |
+| 护城河 | **细分应用中强、全市场不垄断** | recipe、fleet matching、工艺记录与 6–18 个月资格认证形成切换成本；但 KLA、Camtek、Nova 等均能替代或夹击 |
+| 估值 | **昂贵、执行敏感** | 2026-07-10 收盘 $321.44；GAAP TTM P/E 约 150x，forward P/E 约 39.9x，P/S 约 15.3x–15.6x |
+
+### 最值得跟踪的四个验证点
+
+1. **Dragonfly G5 实际出货斜率**：Q1 仅“数台”，管理层称 Q2、Q3 接近逐季翻倍；若 Q3 未继续放量，先进封装 >50% 增长假设会松动。
+2. **$240m HBM VPA 的交付重分配**：原先约 1/3 在 2026、2/3 在 2027，随后客户 pull-in 使两年分布接近 50/50；需要继续核对是否只是提前交付，还是 2027 需求也同步增加。
+3. **先进节点的 Atlas G6 扩客户**：第二家 GAA 客户和 TSV 新应用已经赢单，下一步要看 copy-exact、多厂复制和 DRAM/HBM4 量产层数。
+4. **高估值下的毛利兑现**：Q2 非 GAAP 毛利率指引 56.0%–56.5%，Q3/Q4 计划各再提升至少 50bp，Q4 退出非 GAAP 营业利润率 >30%；任一环节失速都可能引发估值压缩。
+
+## 一、公司整体业务、产业链定位与投资人画像
+
+### 1.1 公司做什么
+
+Onto Innovation 只有一个 SEC 报告分部，向半导体制造商提供**过程控制（process control）**工具与软件。经济本质是：在价值极高的晶圆、HBM 堆叠或 AI 封装进入下一道工序前，测量尺寸、薄膜、凸点高度、翘曲、亚表面裂纹/空洞和表面缺陷，尽早截断良率损失。
+
+| 业务层 | 主要产品/型号 | 典型工序与客户 | AI 关联 |
+|---|---|---|---|
+| 先进封装检测与 3D 量测 | Dragonfly G3/G5、3Di、Clearfind、亚表面 IR | HBM 微凸点、2.5D interposer、RDL、CMP、TSV reveal、die/wafer bonding；HBM 厂、逻辑厂、OSAT | **直接上游核心** |
+| 前道 OCD 与薄膜量测 | Atlas V/G6、Ai Diffract、Iris G2、IMPULSE V、Aspect、Echo | GAA、DRAM、V-NAND、HBM4、CMP、薄膜与高深宽比结构；foundry/IDM | **直接上游核心** |
+| 面板/玻璃/基板过程控制 | JetStep X500/S3500、Firefly G3、PrimaScan P、StepFAST | AICS、FOPLP、玻璃芯、TGV、RDL、panel warpage；基板厂/OSAT | **2027+ 可选性** |
+| 材料与电学量测 | Semilab FAaST、Digital SPV、CnCV、MBIR/Aspect S | 表面电荷、污染、介电界面、SiC/GaN、3D NAND 等 | chiplet 表面电荷有潜力；功率半导体部分非 AI |
+| 软件与售后 | Discover、TrueADC、Discover Defect/Review、OCD 建模、备件与服务 | 跨设备 recipe、缺陷分类、SPC、fleet matching、预测控制 | 高毛利数据飞轮；随装机量增长 |
+| X-ray 战略合作 | Rigaku CD-Xray + Onto Ai Diffract；未来 hybrid metrology | 深层/埋藏结构和材料信息，与高速光学量测互补 | 中长期先进节点/3D 封装 |
+
+2025 年收入按会计来源为：系统与软件 $847.8m（84%）、备件 $84.2m（8%）、服务约 $73.2m（7%）；2026Q1 分别为 $247.2m（84.7%）、$26.6m（9.1%）和 $18.2m（6.2%）。公司卖的仍以高 ASP 设备为主，软件与服务提高复购、毛利和客户锁定，但不是纯 SaaS 公司。[2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm)；[2026Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/704532/000119312526206707/onto-20260331.htm)
+
+### 1.2 产业链位置
+
+**上游**是精密光学/照明、相机和探测器、运动台与 wafer handling、激光器、计算与控制硬件；**ONTO** 完成系统设计、算法、应用 recipe、集成、校准和服务；**下游**是 TSMC/三星/Intel 等逻辑与 foundry、SK hynix/三星/Micron 等 HBM/存储厂、ASE/Amkor 等 OSAT 以及基板厂。公司不公布客户名，以上仅是产业链参与者示例，不能据此认定其具体订单归属。
+
+在整个半导体检测量测市场，ONTO 不是 KLA 式垄断者。项目内行业模型估计 2026 年全球检测量测设备市场约 $16.5bn–$18.5bn，KLA 过程控制份额约 58%，先进节点 patterned inspection 某些环节更高；ONTO 的优势集中在先进封装宏观缺陷/3D 量测、OCD、薄膜和面板光刻等细分。[项目内《半导体检测量测设备》](../../行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-07-10.md)
+
+2026Q1 按发货地的收入为：台湾 $85.0m（29.1%）、韩国 $69.8m（23.9%）、美国 $59.2m（20.3%）、中国 $27.8m（9.5%）、日本 $16.9m（5.8%）、东南亚 $16.7m（5.7%）、欧洲 $16.6m（5.7%）。台湾+韩国占 53.0%，与 HBM、2.5D 和先进节点敞口一致，也说明地缘、客户 fab 时点和亚洲服务能力会直接影响季度波动。[2026Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/704532/000119312526206707/onto-20260331.htm)
+
+### 1.3 投资者心中的公司
+
+- **牛市叙事**：AI accelerator 需要更多 HBM、更大 2.5D 封装、更细微凸点、更复杂 GAA/DRAM 结构，每片/每包的过程控制触点和资本强度上升；ONTO 在 Dragonfly、3Di 与 Atlas 上可同时吃到前道和先进封装支出。
+- **质量叙事**：非 GAAP 毛利率长期约 54%–56%，软件/应用 know-how 使客户不是单纯比硬件 BOM；一旦成为 tool-of-record，换机须重建 recipe、matching 和良率基线。
+- **弹性叙事**：公司基数小。一个 >$240m 的 VPA 相当于 2025 年收入的 24%；G5 抢回一个大客户即可明显改变增速。
+- **反面叙事**：半导体设备订单强周期、单季客户集中度高、管理层只给市场组合而不给产品收入/分部利润，导致市场容易把 pipeline 当成 backlog、把 AI 供应链归因当成数据中心直接收入。
+
+### 1.4 最近三年的重大变化、转型与收购
+
+| 时间 | 事件 | 金额/规模 | 战略影响与尽调判断 |
+|---|---|---:|---|
+| 2023 | 半导体下行周期与中国限制后收入降至约 $815.9m | 同比约 -18.8% | 形成低基数；迫使公司把重心从中国成熟节点转向全球先进节点、HBM 与先进封装 |
+| 2024 | 收入反弹至 $987.3m | 同比 +21.0% | Dragonfly AI 封装、GAA/OCD 和薄膜业务复苏，证明增长不只来自并购 |
+| 2024-10 | 收购 Lumina Instruments 与 K&S 光刻业务 | 条款未披露；公司称三年内合计年收入潜力最高 $100m、SAM 增加 >$250m | 增加激光散射检测；获得 24 项专利、8 项申请和 >200 人年光刻经验，强化 JetStep/面板路线。[公告](https://investors.ontoinnovation.com/news/news-details/2024/Onto-Innovation-Announces-Tuck-In-Acquisition-of-Lumina-Instruments-Inc.-and-Lithography-Business-of-Kulicke-and-Soffa/default.aspx) |
+| 2025 | 收入 $1.005bn，先进节点收入 $308m、同比翻倍 | 全年收入 +1.8% | 总收入看似平淡，但组合从成熟/功率半导体转向 GAA、DRAM/HBM 与 AI 封装；Q3 周期低谷后 Q4 恢复 |
+| 2025-11 | 完成 Semilab USA 三条产品线收购 | 对外交易价值约 $495m；会计购买对价 $526.6m | 新增 FAaST、CnCV、MBIR；2026 预计约 $120m 收入。购买对价中商誉约 $313.4m、无形资产 $210m，整合和减值风险不可忽视。[完成公告](https://investors.ontoinnovation.com/news/news-details/2025/Onto-Innovation-Completes-Acquisition-of-Unique-Materials-Composition-and-Electrical-Analysis-Product-Lines-from-Semilab-International/default.aspx) |
+| 2025–2026 | 生产由美国单点向亚洲 extended factories 转移 | 2025Q3 亚洲扩展工厂出货 >30%；2025Q4 >50% | 降低关税/物流、改善毛利和供给弹性；迁移本身会带来阶段性成本和执行风险 |
+| 2026-04 | 同意收购 Rigaku 27% 股权并进行战略合作 | 约 $710m；预计 2026H2 完成，不并表 | 用 X-ray 深度/材料精度补足光学，并向 Rigaku CD-Xray 授权 Ai Diffract；预计股息约 $7m/年，战略价值高但财务回报仍待验证。[SEC 8-K](https://www.sec.gov/Archives/edgar/data/704532/000119312526164529/d75499d8k.htm) |
+| 2026-05 | 发行 0% 可转债并回购股票 | 最终本金 $1.5bn、2031 到期；转股价 $381.80、capped call 上限 $509.06；回购 805,325 股、耗资 $205.0m | 从“无有息债务”转为高流动性但有大额可转债；为 Rigaku 与扩张预留资金，也引入 2031 偿债/稀释风险。[定价公告](https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Announces-Pricing-of-Upsized-Private-Offering-of-1-3-Billion-of-0-00-Convertible-Senior-Notes-Due-2031/default.aspx) |
+
+## 二、最新股价、估值、盈利能力与资产负债表
+
+### 2.1 2026-07-10 行情与估值快照
+
+| 指标 | 数值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | **$321.44** | 2026-07-10 正常收盘 | 2026-07-12 为周日，因此采用最近交易日 |
+| 市值 | **约 $15.7bn–$16.1bn** | 2026-07-10/12 | 行情商报 $15.99bn–$16.07bn；按 2026-05-01 基本股数减 5 月回购 805,325 股、忽略其后小额股权变动，pro forma 约 $15.73bn |
+| GAAP TTM P/E | **约 149.5x–150.2x** | 截至 2026Q1；TTM EPS 约 $2.14–$2.15 | 以官方五季数据重算：$321.44 / $2.14 = 150.2x |
+| 调整后 TTM P/E | **约 66.3x** | TTM non-GAAP EPS $4.85 | 排除收购摊销、重组等；更接近管理层经营口径，但不是 GAAP |
+| Forward P/E | **约 39.9x** | 2026-07-12 市场一致预期 | 仍然要求高增长兑现 |
+| TTM P/S | **约 15.3x–15.6x** | TTM 收入 $1.031bn | 15.3x 为回购后 pro forma 基本股数估算，15.5x–15.6x 为行情商口径；均属半导体设备中极高 |
+| Forward P/S | **约 11.1x** | 2026-07-12 一致预期 | 隐含收入需快速向 $1.4bn 以上抬升 |
+| TTM 收入增速 | **约 +0.5%** | 2025Q2–2026Q1 对前一 TTM | 被 2025Q3 周期低谷拖累；不代表当前订单速度 |
+| 2025 全年收入增速 | **+1.8%** | FY2025 $1.005bn | 先进节点翻倍被先进封装波动/成熟业务抵消 |
+| 2026Q1 收入增速 | **+9.5% YoY / +9.4% QoQ** | 截至 2026-03-31 | 新一轮增长已经启动 |
+| 2026 年管理层增速目标 | **>30%** | 2026-05-05 | 对应全年收入 >$1.3bn |
+| TTM GAAP 毛利率 | **约 48.8%** | 用 2025Q2–2026Q1 官方季度 gross profit/收入加总 | 收购 step-up、重组、库存冲销和迁厂成本均真实进入 GAAP |
+| TTM non-GAAP 毛利率 | **约 54.7%–54.8%** | 用四季公司 non-GAAP 毛利加总 | 更接近产品组合和持续经营，但排除了真实发生的部分费用 |
+| 2026Q1 GAAP / non-GAAP 毛利率 | **50.1% / 55.7%** | 2026Q1 | non-GAAP 更能显示产品组合；GAAP 必须保留以反映真实摊销成本 |
+| TTM GAAP 净利率 | **10.3%** | TTM 净利 $106.4m / 收入 $1.031bn | 被 Semilab 收购摊销和重组压低 |
+| 2026Q1 GAAP / non-GAAP 净利率 | **11.6% / 24.2%** | 2026Q1 | 两口径差异非常大，不能只看调整后利润 |
+
+行情与市场倍数来自 [StockAnalysis/S&P Global 快照](https://stockanalysis.com/stocks/onto/statistics/)；GAAP TTM P/E、P/S 和利润率同时用官方季度数重算。第三方页面有时显示不同 P/E，原因通常是 GAAP/调整后 EPS 或股数更新时间不同；本报告以**官方 GAAP EPS 重算值**为主。5 月 21 日回购后的精确期末股数要等下一份 10-Q 确认，因此市值与 P/S 给区间而不报伪精确值。
+
+### 2.2 资产负债表：从“净现金”变为“有策略资产的可转债资本结构”
+
+截至 2026-03-31、在 5 月融资之前：
+
+| 项目 | 金额 | 关键比率/判断 |
+|---|---:|---|
+| 现金及现金等价物 + 有价证券 | **$654.2m** | 约 $13.15/股 |
+| 应收账款 | $306.6m | 两名客户合计约占应收 27%，回款集中风险存在 |
+| 存货 | **$316.0m** | 较年初 $298.3m 增加；为收入扩张备货，但也有产品迭代/减值风险 |
+| 流动资产 / 流动负债 | $1.320bn / $214.4m | **流动比率 6.15x**，短期偿债极强 |
+| 总资产 / 总负债 | $2.396bn / $264.2m | 当时无已融资长期债务，资产负债表非常保守 |
+| 股东权益 | $2.132bn | 商誉 $643.5m、可辨认无形资产 $278.4m，合计占权益约 43% |
+| Q1 经营现金流 | **$26.3m** | 低于去年同期 $92.0m，主要是应收回款时间与库存增长，不是利润完全失现 |
+
+5 月融资后不能再用 3 月“无债务”静态结论。若按已披露的全额 $1.5bn 本金、约 $1.470bn 净融资、约 $205m 回购和 capped call 费用估算，Rigaku 交割前现金/证券约可达 **$1.82bn–$1.84bn**；支付 $710m Rigaku 股权后约余 **$1.11bn–$1.13bn**，同时持有成本约 $710m 的 Rigaku 投资和 $1.5bn 0% 可转债。该表是 pro forma 推算，不是公司已发布资产负债表。
+
+**健康度结论：8/10，流动性极强，但资本配置风险明显上升。** 0% 息票和 2031 到期减轻近期开支，capped call 将部分稀释推迟到更高股价；但 Rigaku 股价变动将通过 fair-value option 进入其他收益，可能令 GAAP 净利润波动，而到期本金、转股稀释、Semilab 商誉和 Rigaku 战略回报都需要跟踪。
+
+## 三、最近五次财报：财务、业务组合与订单/交期
+
+### 3.1 五季度核心表
+
+> 口径说明：公司只有一个 SEC 分部；“先进节点、先进封装/特色器件、软件与服务”是管理层市场口径，**没有分业务毛利率**。表内 `R-est` 为本报告推算；`未披露` 绝不填成零。AI 占比是“AI 供应链归因”，不是数据中心直接收入。
+
+| 财报季度 | 收入；增速 | GAAP / non-GAAP 毛利率 | GAAP 营业率；净利率；EPS | 管理层市场收入拆分 | 订单、backlog、交期与取消率 | AI 供应链收入占比（R-est） |
+|---|---|---|---|---|---|---:|
+| **2025Q1** | **$266.6m**；+16.5% YoY；+1.0% QoQ | 53.7% / 55.1% | 23.7%；24.0%；$1.30（adj. $1.51） | 先进节点 **$93m/35%**；特色器件+先进封装 **$129m/48%**；软件/服务 **$44m/17%** | Backlog、B2B 未披露；HBM 投资稳定，2.5D 因客户 tool-slot 分配短期转弱；3Di 向更多 OSAT 送评。R-est B2B **0.9–1.1x**；成熟订单取消 2%–8%、时间滑移 10%–20% | **60%–65%** |
+| **2025Q2** | **$253.6m**；+4.7% YoY；-4.9% QoQ | 48.2% / 54.5% | 12.7%；13.4%；$0.69（adj. $1.25） | 先进节点 **$89m/35%**；特色器件+先进封装 **$117m/46%**；软件/服务 **$48m/19%** | >20 台 Dragonfly 用于 AI 封装亚表面检测；3Di 已向 >10 客户出货；Atlas+Iris 获一名 GAA 客户合计 >$20m 订单。Q3 进入低谷、Q4 反弹。R-est B2B **0.9–1.1x** | **55%–60%** |
+| **2025Q3** | **$218.2m**；-13.5% YoY；-14.0% QoQ | 50.7% / 54.0% | 10.9%；12.9%；$0.57（adj. $0.92） | 先进节点 **$54m/25%**；特色器件+先进封装 **$113m/52%**；软件/服务 **$51m/23%** | 3Di 在两家主要 HBM 客户完成资格认证，获 2.5D OSAT 订单；客户讨论 2026 年最多多配约 20% 工具；首批下一代 Dragonfly 与 Atlas G6 送样/出货。R-est B2B **1.1–1.4x** | **50%–55%** |
+| **2025Q4** | **$266.9m**；+1.1% YoY；+22.3% QoQ | 46.4% / 54.6% | 5.2%；3.9%；$0.21（adj. $1.26） | 先进节点 **$72m/27%**；特色器件+先进封装 **$145m/54%**（含 Semilab $9m）；软件/服务约 **$50m/19%** | 2.5D 收入较 Q3 翻倍；签署 HBM VPA **>$240m**、含 3Di >$60m、覆盖至 2027；backlog 三个月内近乎翻倍至**约两个季度**。R-est backlog **$0.60bn–$0.70bn**、B2B **1.6–2.2x**（取决于 VPA 如何计入） | **65%–70%** |
+| **2026Q1** | **$291.9m**；+9.5% YoY；+9.4% QoQ | 50.1% / **55.7%** | 11.5%；11.6%；$0.67（adj. $1.42） | 先进封装约 **$106.7m/36.5%**；先进节点 **$80m/27.4%**（记忆体 60%、逻辑 40%）；Semilab **$25m/8.6%**；其他特色器件约 $28.3m；软件/服务约 **$51.9m/17.8%** | **record backlog**；G5 获 pull-in，HBM 与 2.5D 客户资格；3Di 当季新增 >10 个订单。交期略延长但未影响承诺。R-est backlog **$0.65bn–$0.80bn**、B2B **1.1–1.4x** | **65%–75%** |
+
+财务数来自各季度公司公告：[2025Q1](https://investors.ontoinnovation.com/news/news-details/2025/Onto-Innovation-Reports-2025-First-Quarter-Results/default.aspx)、[2025Q2](https://investors.ontoinnovation.com/news/news-details/2025/Onto-Innovation-Reports-2025-Second-Quarter-Results/default.aspx)、[2025Q3](https://investors.ontoinnovation.com/news/news-details/2025/Onto-Innovation-Reports-2025-Third-Quarter-Results/default.aspx)、[2025Q4](https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2025-Fourth-Quarter-and-Full-Year-Results/default.aspx)、[2026Q1](https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2026-First-Quarter-Results/default.aspx)。市场组合与订单细节取自对应电话会；2026Q1 可核对[电话会全文](https://stockanalysis.com/stocks/onto/transcripts/560656-q1-2026/)。
+
+AI 占比的年度校准锚是管理层在 2026-01 Needham 会议所称“2025 年约 **61%** 收入来自直接支持 AI 供应链的客户”。本报告让五个季度区间按收入加权后大致贴近该年度锚，再根据 2025Q3 低谷、Q4 2.5D 反弹与 2026Q1 G5/Atlas 增量调整。它不是公司季度披露；如果问题严格定义为“卖给数据中心运营商的直接收入”，五季均应记为 **$0/未披露**，而非表内比例。[Needham 会议全文](https://stockanalysis.com/stocks/onto/transcripts/538098-28th-annual-needham-growth-conference-virtual/)
+
+### 3.2 各业务收入与环比增速
+
+| 季度 | 先进节点 | 特色器件 + 先进封装 | 软件与服务 | 可比性说明 |
+|---|---:|---:|---:|---|
+| 2025Q1 | **$93m；+96% QoQ** | **$129m；-24% QoQ** | **$44m；-5% QoQ** | GAA、DRAM/NAND 强；2.5D tool-slot 分配压低封装 |
+| 2025Q2 | **$89m；-4% QoQ** | **$117m；-9% QoQ** | **$48m；+9% QoQ** | 先进节点仍高，AI 封装等待 Q4 加速 |
+| 2025Q3 | **$54m；-39% QoQ** | **$113m；-3% QoQ** | **$51m；+6% QoQ** | memory/logic 设备支出低点；服务收入缓冲周期 |
+| 2025Q4 | **$72m；略高于 +30% QoQ** | **$145m；+28% QoQ** | **约 $50m；-2% QoQ** | 2.5D 收入较 Q3 约翻倍；Semilab 并表约 $9m |
+| 2026Q1 | **$80m；+13% QoQ（公司口径）** | **$160m；+10% QoQ**，其中先进封装约 $106.7m、Semilab $25m、其他特色器件约 $28.3m | **约 $51.9m；+4% QoQ** | 公司首次给出更细拆分；先进封装单独环比无法与 Q4 精确比较 |
+
+公司**不披露上述市场池的毛利率或营业利润率**，也不提供 advanced packaging 与 specialty device 的历史精确拆分；因此不能从收入组合直接生成“分部利润”。本报告第五节的产品毛利率是基于公司整体非 GAAP 毛利率、设备类型和行业 BOM 的 R-est 区间。
+
+### 3.3 Backlog、bookings、lead time 与取消率的正确读法
+
+1. **公司没有在 10-Q/10-K 给出标准化 backlog、bookings、book-to-bill 或取消率。** “约两个季度”是电话会管理口径，可能包含采购协议、forecast 或尚有交付条件的订单，不能等同不可取消履约义务。
+2. 2025Q4 的两个季度覆盖，按其后 Q1 实收 $291.9m 与 Q2 指引中值 $325m 反推，商业 backlog 大致在 **$0.60bn–$0.70bn**；2026Q1 又称 record backlog，因此本报告给出 $0.65bn–$0.80bn，而不是伪精确数字。
+3. >$240m VPA 是最硬的产品订单锚。公司称其中 >$60m 为 3Di；原排期约 1/3 在 2026、2/3 在 2027，后续 pull-in 使分布接近 50/50，且管理层称并未牺牲 2027 需求。这意味着 **2026 可识别约 $100m–$125m、2027 约 $120m–$145m**，仍取决于客户 fab 进度与最终配置。
+4. **取消率模型**：已资格认证且有 VPA 的量产工具，基准取消率 0%–5%，但时间滑移 10%–20%；普通已下 PO 工具取消 2%–8%；评估/试产项目的延期、缩量或不转单概率 15%–35%。这些是根据半导体设备采购行为的研究假设，并非 ONTO 披露。
+5. **交期**：管理层在 2026Q1 称 lead time 正在略微拉长，但尚未影响交付；约束主要是精密光学。项目内行业资料给出的典型区间为精密光学链 6–12 个月、首次客户认证 6–18 个月、copy-tool 约 1–2 个季度，适合用于压力测试，不代表每台 ONTO 工具的承诺交期。
+
+## 四、2026 最新指引、业务收入占比与产品路线
+
+### 4.1 最新指引及其数学含义
+
+| 指标 | 2026Q2 指引 | 隐含信息 |
+|---|---:|---|
+| 收入 | **$320m–$330m** | 中值 $325m，约 +28% YoY、+11% QoQ |
+| GAAP 毛利率 | 未单独在摘要中作为核心目标强调 | 收购摊销、重组与 step-up 会继续造成 GAAP/非 GAAP差异 |
+| non-GAAP 毛利率 | **56.0%–56.5%** | 中值比 Q1 再提升约 55bp |
+| GAAP 营业率 | 17.8%–18.7% | 收购摊销仍是主要差异 |
+| non-GAAP 营业率 | **28.0%–28.6%** | 中值较 Q1 约 +160bp |
+| GAAP EPS | $1.09–$1.18 | 仍显著低于调整后 |
+| non-GAAP EPS | $1.65–$1.73 | 中值 $1.69 |
+
+公司预计 2026 年收入 **>$1.3bn**。Q1 实收 $291.9m 加 Q2 中值 $325m，H1 约 $616.9m；若 H2 至少比 H1 高 15%，H2 至少约 $709.4m，全年至少约 **$1.326bn**，与“>30%”一致。公司另预计 Q3、Q4 非 GAAP 毛利率每季至少提高 50bp，Q4 退出 non-GAAP 营业率 >30%。
+
+### 4.2 2026 收入池估计：哪些真正驱动增长
+
+| 业务池 | 2025 已知/推算基数 | 2026 公司口径 | 2026E 收入与占比（R-est） | 判断 |
+|---|---:|---:|---:|---|
+| 先进封装 | 公司只披露与特色器件合计 $504m；本报告按电话会与季度变化推算先进封装约 **$235m–$255m** | **增长 >50%** | **$360m–$405m；27%–30%** | 最大增量，Dragonfly G3/G5、3Di、亚表面检测为主 |
+| 先进节点 | **$308m** | 约 **+25%** | **约 $385m；29%** | Atlas/OCD 是最大驱动，Iris/IMPULSE 辅助；记忆体与逻辑均增长 |
+| Semilab 产品线 | Q4 仅并表约 $9m | 约 **$120m** | **$115m–$125m；9%** | 先靠既有 FAaST/CnCV/MBIR，chiplet 表面电荷协同尚早 |
+| 软件、服务、备件 | 2025 会计口径约 $157m 备件+服务，另有嵌入系统的软件 | 管理层称 2026、2027 软件增长 | **$200m–$220m；15%–17%** | 装机量、upgrade、Discover/TrueADC、Ai Diffract attach 带动 |
+| 传统特色器件/其他 | 余额 | 功率半导体约 -10% | **$200m–$245m；15%–18%** | 非 AI、低增速；用于平衡模型而非核心投资逻辑 |
+
+### 4.3 重点产品、潜力小产品与明确跳过项
+
+| 优先级 | 产品/型号 | 核心能力 | 2026 商业状态 | 为什么重要 |
+|---|---|---|---|---|
+| **A+** | **Dragonfly G5 + 3Di** | 150nm 缺陷灵敏度；官方称最高 5x 上一代吞吐；2D bright/dark field、多角度照明、IR 亚表面、3D 凸点量测 | HBM4 客户竞争评估获胜并取代既有 tool-of-record；G5 和 3Di 均有双位数订单承诺；领先 2.5D 客户已资格 | 先进封装 >50% 增长的核心；同时打开前道 macro inspection 新 SAM。[产品页](https://ontoinnovation.com/products/dragonfly-g5-inspection/)；[发布公告](https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Launches-Dragonfly-G5-Inspection-System/default.aspx) |
+| **A** | **Dragonfly G3、Clearfind、sub-surface IR** | 成熟 2D/3D、金属/有机层残留、裂纹/分层/埋藏缺陷 | 2025Q2 单季 >20 台用于先进 AI 封装；G3 需求仍增长 | G5 不是立刻替代全部 G3，2026 增长大头仍来自成熟平台与 add-on |
+| **A** | **Atlas G6 / Atlas V + Ai Diffract OCD** | 小光斑 in-die 量测、GAA nanosheet、DRAM/HBM、TSV、高深宽比；模型引导机器学习 | 第二家逻辑 GAA 客户选中；多家逻辑/记忆体生产订单；TSV 新应用 H2 出货 | 先进节点约 +25% 的最大驱动；光学速度与 X-ray 精度形成 hybrid metrology。[产品页](https://ontoinnovation.com/products/atlas-g6-system/) |
+| **B+** | **Iris G2 + IMPULSE V + Aspect/Echo** | 10–50Å 薄膜、CMP 集成量测、IR 高深宽比、金属薄膜/材料声学 | common films 已量产；critical films、逻辑 integrated metrology 正扩客户 | 单项声量不如 G5，但多触点提高每个先进节点 fab 的 wallet share，不能漏掉 |
+| **B，期权** | **EchoScan** | 飞秒/皮秒激光声学，无接触、无浸液；官方称 1µm void，速度与约 10µm 灵敏度的 incumbent 相当 | 已向 select customers 送样；2026 SPIE 展示 HBM 埋藏空洞；尚无规模订单披露 | 若 HBM hybrid bonding 提前，可能从几百万美元变成数千万美元产品；技术/量产验证风险也最高。[SPIE 论文摘要](https://ontoinnovation.com/events/buried-void-inspection-in-high-bandwidth-memory-with-picosecond-laser-acoustics/) |
+| **B，期权** | **JetStep X500/S3500 + Firefly G3 + StepFAST** | 250×250mm 大曝光场、3µm L/S；最大 650×650mm 面板检测；TGV/RDL/翘曲/高度反馈 | JetStep 已在两家 AI 设备供应链封装商完成资格，预计 2027 ramp；panel 多年 SAM 约 $200m | 解决 wafer-level 封装产能与大封装尺寸限制；但 2026 仍是资格/试产，不宜提前计入大额收入。[光刻产品](https://ontoinnovation.com/product-categories/lithography/) |
+| **B-，期权** | **Semilab FAaST/Digital SPV 表面电荷** | 非接触 corona-Kelvin、电介质/界面、电荷与 Fe 污染 | 既有晶圆客户已量产；chiplet residual charge 是新应用 | 小众但可形成独占 recipe；CEO 将其列为 2027 高增长机会之一。[产品页](https://ontoinnovation.com/family_group/faast/) |
+| **B-，期权** | **Rigaku CD-Xray + Ai Diffract license** | X-ray 穿透深层结构，Ai Diffract 加速建模；与 OCD 互补 | 已有两次竞争胜出、系统用于 V-NAND/DRAM；2026 软件收入小，完整 hybrid system 约 N+2 节点 | license 增量毛利接近 100%；中长期可延长 OCD 生命周期，但 Rigaku 工具收入不并表 |
+| **B-，期权** | **Discover / TrueADC / 硅光与 CPO recipe** | 缺陷管理、深度学习分类、跨工具 SPC 与 fleet data | 依托装机量增长；CPO 已有早期量，管理层称未来 12 个月 pipeline 良好 | 软件可提高复购与定价；CPO 若加速会新增检测触点，但当前基数小 |
+
+**本报告主动降权/跳过的产品和业务**：CnCV 的 SiC/GaN 功率半导体主应用、Celero PL/PrimaScan/NovusEdge 的非 AI 晶圆与化合物半导体应用、成熟节点 Atlas III+、RF/MEMS/LED、显示面板光刻及一般工业 4D 产品。原因不是它们没有收入，而是公司已预计功率半导体 2026 年约 -10%，且这些业务对 AI 基建的一年增量解释力较低。保留的例外是：FAaST 表面电荷、Aspect/MBIR 和 Firefly/JetStep 虽当前小，但对 chiplet、HBM、玻璃/面板路线存在非线性上行。
+
+## 五、关键产品当前贡献、增速、AI 重要性与定价权
+
+### 5.1 评分方法与产品收入模型边界
+
+- 收入为 **R-est**：公司不披露产品线收入。本报告用季度市场组合、2025 年先进节点 $308m、先进封装/特色器件 $504m、2026Q1 拆分、已知订单与产品出货数建立互斥度尽可能高的 2026 全年区间。
+- 评分均为 1–5：`重要性`=对 AI 技术栈不可缺程度；`紧急性`=客户未来 12 个月必须采购/认证的时间压力；`供需紧张`=需求相对合格设备与关键件供给；`垄断`=细分应用独占/寡占程度；`溢价`=基于良率和 TCO 而非成本加成的定价能力。
+- 产品毛利率也是模型区间。公司只披露整体毛利率，任何产品“利润率”都不应被当作公司分部披露。
+
+### 5.2 当前关键产品评估
+
+| 产品族 | 2026E 收入贡献（R-est） | 2026E 增速 | 产品毛利率（R-est） | 重要性 / 紧急性 / 供需紧张 / 垄断 / 溢价 | 交叉验证与判断 |
+|---|---:|---:|---:|---|---|
+| **Dragonfly G3/G5 + 3Di + 亚表面传感器** | **$290m–$330m** | **+45%–+65%** | 55%–63%；G5 成熟后 60%–68% | **5 / 5 / 4 / 4 / 4** | 先进封装 2026 >50%；VPA >$240m；G5/3Di 双位数订单；Q1 G5 仅数台而 Q2/Q3 接近逐季翻倍，说明收入增量尚在前方 |
+| **Atlas G6/V + Ai Diffract OCD** | **$220m–$250m** | **+25%–+40%** | 60%–68% | **5 / 5 / 4 / 4 / 4** | 先进节点 2025 $308m 中的最大产品族；2026 整体约 +25%；第二 GAA 客户、TSV 新应用和 DRAM/HBM4 扩层交叉支持 |
+| **Iris G2 + IMPULSE V + Aspect/Echo 薄膜/集成量测** | **$145m–$175m** | **+15%–+30%** | 56%–65% | **4 / 4 / 3 / 3 / 4** | 2025 common films 与 integrated metrology 创纪录；Iris critical-film SAM 约 $500m，但关键薄膜尚在扩资格，不能把 SAM 当收入 |
+| **JetStep + Firefly + StepFAST** | **$50m–$65m** | **+20%–+45%** | 45%–56% | **3 / 3 / 2 / 3 / 3** | 两家 AI 封装供应商资格、2027 ramp、panel 多年约 $200m SAM；收入仍受客户面板路线和量产时点约束 |
+| **EchoScan** | **$5m–$15m** | 从极低基数增长 | 早期 42%–55%；量产后 55%–65% | **4 / 3 / 2 / 4 / 4** | 官方 1µm、无浸液；技术会议与 select-customer shipment 已有，规模订单没有；属于高技术价值、低当期收入 |
+| **Semilab FAaST/CnCV/MBIR** | **$115m–$125m** | 并购口径；同店约 -5% 至 +5% | 55%–64% | **3 / 3 / 2 / 4 / 4** | 2026 公司约 $120m；功率半导体偏弱，chiplet residual-charge 协同尚未弥补全部；独特非接触电学量测带来细分定价权 |
+| **Rigaku 联合方案的 ONTO license/增量设备** | **$0m–$5m** | 新业务 | license 90%–100%；增量硬件约 60%–68% | **4 / 3 / 2 / 4 / 5** | Rigaku 2025 收入 >$600m、约 40% 来自半导体，但不并表；ONTO 只确认 Ai Diffract license、增量 Atlas 与未来 hybrid solution |
+| **Discover/TrueADC、服务与备件** | **$200m–$220m** | **+8%–+15%** | 纯软件 80%–95%；混合售后 60%–75% | **4 / 4 / 3 / 4 / 5** | 2026Q1 备件+服务 $44.8m，同比 +26%；装机量和更多 sensor touchpoint 提高 attach；部分软件已包含在系统收入，区间不可与所有硬件机械相加 |
+| **传统特色器件及其他降权业务** | **$190m–$240m** | -10% 至 +5% | 45%–58% | **1–2 / 1–2 / 1 / 2 / 2** | 功率半导体约 -10%、成熟节点和非 AI 应用；是现金流底座，不是估值扩张主因 |
+
+### 5.3 为什么产品毛利率可以高于硬件 BOM 直觉
+
+一套检测量测设备的价值不是镜头、相机和运动台成本之和，而是它避免的报废和返工。若一座年产值 $10bn 的厂仅改善 **0.1 个百分点良率**，对应约 $10m 的毛产值；一台 $3m–$7m 工具只要在多个关键步骤提前拦截少量缺陷，就可能快速回本。因此，G5 的 150nm 灵敏度、3Di 在 <5µm 微凸点的量测、Atlas 的 in-die OCD 与 fleet matching 能形成 value-based pricing。反之，若客户证明 Camtek/KLA/Nova 的替代工具给出相同良率和吞吐，ONTO 的溢价会迅速收敛。
+
+## 六、一年后收入贡献：基准、乐观、极度乐观
+
+### 6.1 情景假设
+
+预测窗口为**截至 2027-06-30 前后的一年化/TTM 水平**，不是公司正式指引。
+
+| 情景 | 公司总收入区间（R-est） | 核心假设 |
+|---|---:|---|
+| **基准** | **$1.52bn–$1.64bn** | Q2 指引兑现；G5 按订单正常爬坡；VPA 约半数在 2026、余量 2027；先进节点 +20% 左右；panel/EchoScan 仍小；成熟订单 0%–5% 取消、10%–20% 延期 |
+| **乐观** | **$1.75bn–$1.90bn** | G5 在第二家 HBM/2.5D 多厂复制；Atlas G6 进入更多 GAA/DRAM 层；精密光学供给可控；JetStep 两家客户按期量产；EchoScan 至少一家 HVM 资格 |
+| **极度乐观** | **$2.05bn–$2.30bn** | Dragonfly 获多个新 tool-of-record、HBM4/4E 与 2.5D capex 上修；hybrid bonding 提前；panel/glass 扩产；extended factories 与供应商双源支持超过历史 $2bn 能力；几乎无重大取消 |
+
+### 6.2 分产品一年后收入与战略评分
+
+> 评分顺序：`重要性/紧急性/供需紧张/垄断/溢价`。公司总收入区间是控制值；分产品区间力求在同一情景下可加总，但不能同时选择所有分项的上限或下限，且软件中的嵌入式 license 仍可能与硬件存在少量交叉。按表内端点机械相加：基准 $1.443bn–$1.640bn、乐观 $1.675bn–$1.885bn、极度乐观 $2.035bn–$2.300bn。
+
+| 产品族 | 当前 2026E | **基准：一年后收入；增速；评分** | **乐观：一年后收入；增速；评分** | **极度乐观：一年后收入；增速；评分** |
+|---|---:|---|---|---|
+| Dragonfly G3/G5 + 3Di | $290m–$330m | **$380m–$420m；+23%–+35%；5/5/4/4/4** | **$460m–$500m；+48%–+61%；5/5/5/4/5** | **$550m–$600m；+77%–+94%；5/5/5/5/5** |
+| Atlas G6/V + OCD | $220m–$250m | **$270m–$300m；+15%–+28%；5/5/4/4/4** | **$320m–$350m；+36%–+49%；5/5/4/4/5** | **$390m–$430m；+66%–+83%；5/5/5/5/5** |
+| Iris/IMPULSE/Aspect/Echo | $145m–$175m | **$175m–$200m；+9%–+25%；4/4/3/3/4** | **$200m–$225m；+25%–+41%；4/4/4/4/4** | **$250m–$280m；+56%–+75%；5/5/4/4/5** |
+| JetStep/Firefly/StepFAST | $50m–$65m | **$70m–$85m；+22%–+48%；3/3/3/3/3** | **$90m–$110m；+57%–+91%；4/4/4/4/4** | **$130m–$160m；+125%–+180%；4/5/5/4/5** |
+| EchoScan | $5m–$15m | **$15m–$25m；约 +100% 以上；4/4/3/4/4** | **$30m–$45m；数倍；5/5/4/4/5** | **$60m–$75m；数倍；5/5/5/5/5** |
+| Semilab 产品线 | $115m–$125m | **$130m–$145m；+8%–+21%；3/3/2/4/4** | **$145m–$160m；+21%–+33%；4/4/3/4/4** | **$175m–$195m；+46%–+63%；4/4/4/5/5** |
+| Rigaku license/ONTO 增量工具 | $0m–$5m | **$8m–$15m；新业务；4/3/2/4/5** | **$15m–$25m；新业务；4/4/3/4/5** | **$30m–$50m；新业务；5/4/4/5/5** |
+| 软件、服务、备件 | $200m–$220m | **$225m–$250m；+7%–+19%；4/4/3/4/5** | **$245m–$270m；+17%–+29%；4/4/4/4/5** | **$280m–$310m；+33%–+48%；5/4/4/5/5** |
+| 传统特色器件/其他 | $190m–$240m | **$170m–$200m；约 -15% 至持平；1/1/1/2/2** | **$170m–$200m；大致持平；1/1/1/2/2** | **$170m–$200m；大致持平；2/2/2/2/2** |
+
+### 6.3 情景最敏感的三个变量
+
+1. **G5 单机 ASP 与配置 mix**：公司没有披露 ASP。本报告估计标准 G5 主机 $3.5m–$5.5m，3Di/IR/软件配置另增加价值；若所谓“双位数”只是 10–12 台且配置低，收入会靠近基准下沿；若 20 台以上并含多传感器，乐观情景更合理。
+2. **HBM4 到 hybrid bonding 的时间**：微凸点越快缩小、混合键合越早量产，3Di/EchoScan 触点越多；若 MR-MUF/TCB 沿用更久，Dragonfly 仍增长，但 EchoScan 的非线性收入延后。
+3. **客户资本支出是新增还是 pull-forward**：管理层称 2026 pull-in 不牺牲 2027，原因是新 fab 而非填满旧 fab；这是极度乐观情景最关键、也最需要财报验证的陈述。
+
+## 七、BOM、单位 AI 基建含量与价格传导链
+
+### 7.1 先纠正“每 GPU / rack / MW”的物理含量
+
+ONTO 的设备**不会装进 GPU、机架或数据中心**，所以物理 BOM 含量严格说都是 **$0**。下表是把晶圆厂/HBM 厂/OSAT 为生产 AI 芯片而购买的 ONTO 工具，按其可支持的合格芯片产量摊销得到的**制造设备经济含量**。它适合比较资本强度，不是 GPU 采购发票，也不能与芯片 BOM 直接相加。
+
+统一假设：每个高端 AI accelerator package 近似按一个 GPU 计；每 GPU 配 8–12 个 HBM stack；每 rack 72 个 GPU；IT 功率 120–140kW/rack，因此 1MW 约 7.1–8.3 个 rack。实际 AMD/NVIDIA/ASIC、风冷/液冷和网络架构差异很大。
+
+推算公式为：`ONTO AI 相关设备收入 ÷ 其支持的合格 accelerator-equivalent 产量 = 每 GPU 制造设备含量`；`每 GPU × 72 = 每 rack`；`每 rack × 7.1–8.3 = 每 MW`。校准上，管理层称 2025 年约 61% 收入关联 AI 供应链，即约 $613m；再用 2025–2026 约 5m–12m 个高端 accelerator-equivalent package 的宽产量分母，并剔除无法直接分配的服务/通用节点收入，可得到约 $70–$180/GPU。分母并非公司披露，故该区间只用于资本强度比较。
+
+### 7.2 工具 BOM 与 ASP 模型
+
+| 产品族 | 推算 ASP | 典型 COGS/BOM 拆分（占 COGS） | 价格传导与毛利含义 |
+|---|---:|---|---|
+| Dragonfly G3/G5 + 3Di | G3 **$2.5m–$4.0m**；G5 **$3.5m–$5.5m**；3Di/IR/软件配置 **$0.8m–$2.0m** | 光学/相机 25%–32%；stage/handling 18%–24%；计算 10%–15%；机电 10%–14%；应用/校准 18%–24%；保修 5%–7% | G5 最高 5x 吞吐和 150nm 灵敏度使客户按 cost-of-ownership 与良率付费，ASP 增长快于 BOM；早期低量会压毛利，2027 mix 提升后改善 |
+| Atlas/OCD、Iris/IMPULSE | **$3m–$7m**，critical/integrated 配置更高 | DUV/光谱光学 22%–32%；stage/handler 15%–22%；光源/探测 10%–15%；计算 8%–12%；软件/建模/校准 20%–30%；其他 8%–15% | Ai Diffract、recipe 与 fleet matching 是高毛利价值；精密光学涨价可通过新代际 ASP、配置和 service contract 间接传导 |
+| EchoScan | **$2.5m–$5m** | 超快激光/探测 30%–40%；stage 15%–20%；计算/信号 10%–15%；机电 10%–15%；应用/校准 20%–25% | 初期客户共同开发与低产量压毛利；若成为 hybrid-bonding inline POR，1µm/无浸液能力可形成高溢价 |
+| JetStep X500/S3500 | **$7m–$15m** | 投影光学 25%–35%；精密 stage/大面板 handling 20%–30%；照明 10%–15%；控制 8%–12%；结构 10%–15%；应用 10%–15% | 250×250mm 大场只需少量 shot，可用吞吐与 stitching 良率节省支撑 ASP；客户量产延迟会造成固定成本吸收不足 |
+| Firefly G3 | **$2m–$5m** | 成像/光学 25%–35%；stage/handling 20%–25%；3D sensor 10%–15%；计算 10%–15%；应用/软件 15%–25% | 与 JetStep/StepFAST 闭环可提升 bundle attach 与切换成本 |
+| Semilab FAaST/MBIR/CnCV | **$1m–$4m** | 传感/电学/光学 20%–35%；wafer handling 15%–25%；计算控制 10%–15%；应用/校准 20%–30%；其他 10%–20% | 细分非接触量测与 contamination recipe 支撑毛利；功率半导体需求弱时量价能力下降 |
+| Discover/TrueADC/Ai Diffract license | 单机/全厂 license 未披露 | 软件直接 COGS 很低，主要为研发、应用与支持 | 增量 gross margin 可达 80%–100%；Rigaku license 管理层明确称“接近 100% margin” |
+
+以上 ASP 和 BOM 为行业反推，不是公司报价。BOM 结构参考项目内[《半导体检测量测设备》](../../行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-07-10.md)与[《先进封装设备与混合键合》](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-07-10.md)中的典型设备成本结构，再按各产品光学/激光/光刻差异调整。
+
+### 7.3 每 GPU、HBM stack、rack、MW 与 optical port 的经济含量
+
+| 产品族 | 每 GPU/accelerator package | 每 HBM stack | 每 72-GPU rack | 每 1MW IT 负载 | 每 optical port | 解释 |
+|---|---:|---:|---:|---:|---:|---|
+| Dragonfly/3Di/亚表面检测 | **$40–$100** | **$2–$7** | **$2.9k–$7.2k** | **$21k–$60k** | CPO 场景约 $0.1–$0.8 | HBM 微凸点、2.5D、RDL、CMP、裂纹/空洞多个 touchpoint；VPA 提供商业校准 |
+| Atlas/OCD/Ai Diffract | **$20–$50** | 主要按逻辑/DRAM wafer 分配，约 $1–$4 | **$1.4k–$3.6k** | **$10k–$30k** | 硅光/CPO 场景约 $0.1–$0.5 | GAA xPU die 与 DRAM/HBM 前道结构测量；不是封装工具直接含量 |
+| Iris/IMPULSE/Aspect/Echo | **$8–$25** | **$0.5–$2** | **$0.6k–$1.8k** | **$4k–$15k** | $0.05–$0.3 | 薄膜、CMP、金属与高深宽比结构的多层资本强度 |
+| EchoScan | 当前 **$0–$5**；hybrid-bonding HVM 后 $5–$20 | 当前近零；未来约 $0.5–$2 | 当前 $0–$0.4k；未来 $0.4k–$1.4k | 当前近零；未来 $3k–$12k | 不适用，除 CPO hybrid-bonding | 当前收入小，不能按未来触点提前摊入全部 GPU |
+| JetStep/Firefly | **$3–$15** | 不适用 | **$0.2k–$1.1k** | **$2k–$9k** | CPO/panel 约 $0.05–$0.5 | 仅采用 panel/large substrate 路线的芯片承担该含量 |
+| Semilab/Rigaku/软件增量 | **$2–$10** | $0.2–$1 | **$0.1k–$0.7k** | **$1k–$6k** | $0.02–$0.2 | 表面电荷、深层 X-ray 模型、软件按合格产量摊销 |
+| **ONTO 合计** | **约 $70–$180/GPU** | 非简单相加 | **约 $5k–$13k/rack** | **约 $36k–$108k/MW** | **CPO 专属流程约 $0.2–$1.5/port** | 是资本设备摊销的订单级估计，不是实物 BOM；极度乐观下 touchpoint 增多可高于区间 |
+
+**每 optical port 尤其不稳定**：若采用 pluggable optics，ONTO 主要作用在光芯片晶圆/封装，端口数与工具摊销关系弱；若采用 CPO，3Di/缺陷/薄膜量测会随 optical engine 数量增加。没有统一的 ports-per-engine、良率和产能披露，因此只给宽区间。
+
+### 7.4 价格传导链
+
+`hyperscaler AI capex → GPU/ASIC 与 HBM 订单 → foundry/IDM/OSAT 扩 fab、封装线与良率 touchpoint → VPA/PO 给 ONTO → ONTO 对 optics/stage/camera/laser 供应商下单 → 设备 ASP、sensor/software attach、服务收入`
+
+- **需求端传导**通常有 6–18 个月延迟：数据中心订单先转成芯片 forecast，再转成客户产能和设备资格；因此 ONTO backlog 更接近 2026–2027 芯片供给而非本季度服务器出货。
+- **成本端传导**不是即时 surcharge。精密光学和 DRAM/计算部件涨价先进入存货，再通过 G5/G6 新代 ASP、更高传感器配置、软件 license 和服务合同消化；Q1 管理层已指出材料、燃料/运输成本上升，但仍指引毛利扩张。
+- **议价锚**是良率损失而非 BOM。客户若已有合格 tool-of-record，ONTO 需要通过更高灵敏度/吞吐和较低 nuisance defect 证明 TCO；一旦赢得 POR，客户又因 recipe/fleet matching 不愿轻易更换。
+
+## 八、当前产能、供应链采纳与资格认证
+
+### 8.1 公司与产品族当前产能
+
+管理层在 **2025Q4（2026-02-19 发布）电话会**明确表示，**既有工厂体系可支持约 $2bn revenue run-rate**，extended factories 只会提高该能力，多班制下内部装配并非近期瓶颈；真正压力在精密光学等供应商。这个 $2bn 是“可服务年化收入”而非已安装订单，也不是每一产品线都能无约束互换。
+
+| 产品族 | 当前可服务年化收入能力（R-est） | 关键瓶颈 | 当前需求/能力比 | 判断 |
+|---|---:|---|---:|---|
+| Dragonfly G3/G5/3Di | **$0.45bn–$0.60bn** | 定制物镜、相机、精密 stage、应用工程与多 sensor 校准 | 约 55%–75% | 装配仍有余量；若 G5 多客户同步 pull-in，精密光学先紧 |
+| Atlas/OCD、Iris/IMPULSE | **$0.35bn–$0.50bn** | DUV/光谱光学、光源、fleet matching、recipe 人员 | 约 65%–80% | 需求比装配更接近上限；客户复制工具要求 matching，一般件不能直接替代 |
+| JetStep/Firefly | **$0.10bn–$0.16bn** | 大面板 handling、投影光学、客户现场 HVM 调试 | 约 35%–55% | 当前瓶颈主要是客户资格与市场成熟度，不是 ONTO 制造 |
+| EchoScan | **$0.03bn–$0.06bn** | 超快激光、信号链、应用与样本数据库 | <35% | 仍在送样/资格阶段，产能不是约束 |
+| Semilab 三产品线 | **$0.16bn–$0.22bn** | 专用电学/光学 sensor、收购后的供应链整合 | 约 55%–75% | 可支持 2026 $120m 目标，需观察 power semi 弱势与新应用转化 |
+| 软件、服务与备件 | **$0.25bn–$0.35bn** | 应用/现场服务人才、客户 data integration | 约 65%–80% | 物料约束低，但人才和客户验证限制扩张速度 |
+
+产品能力不能直接相加为公司总能力，因为工厂、应用团队与供应商共享。公司整体 $2bn 锚比上述分项更可靠；分项只是判断哪里先成为瓶颈。
+
+### 8.2 资格认证阶段定义
+
+| 阶段 | 定义 | 收入可见度 |
+|---|---|---|
+| **L0 技术/实验室** | 论文、demo、内部 wafer study | 几乎没有；不应计入 backlog |
+| **L1 客户评估** | eval tool/样片测试，指标尚未签核 | 可收少量系统收入，但 15%–35% 延期或不转单 |
+| **L2 资格通过** | 一名客户/一个应用完成 qualification | 首批量产 PO 可见，仍需 copy-exact 与线体 ramp |
+| **L3 HVM / POR** | 进入量产、成为 process/tool of record | 复购、sensor attach、service 可见度高 |
+| **L4 多厂复制** | 多客户或多 site copy-exact，recipe/fleet 固化 | 护城河和利润率最强 |
+
+### 8.3 当前供应链采纳和认证地图
+
+| 产品/应用 | 截至 2026-07-12 的阶段 | 可验证证据 | 置信度 |
+|---|---|---|---|
+| Dragonfly G5：HBM4 2D inspection | **L2 → L3** | 领先 HBM 厂完成现场竞争评估，G5 与 3Di 各有双位数订单承诺，Q2 起发货 | **高** |
+| Dragonfly G5：2.5D logic | **L2 → L3** | 2026-04 宣布领先 2.5D 客户 qualification；Q1 已有商业出货和 pull-in | **高** |
+| Dragonfly 3Di：HBM | **L3** | 两家主要 HBM 厂完全资格；其中一项 VPA 含 >$60m 3Di | **高** |
+| Dragonfly 3Di：2.5D/CPO/OSAT | **L2–L3** | >10 客户；2.5D OSAT 订单；CPO 赢过替代技术 | **中高** |
+| Atlas G6：GAA logic | **L2–L3** | 多家 key account head-to-head；第二家逻辑客户选中；初始生产订单 | **高** |
+| Atlas：DRAM/HBM/TSV | **L2–L3** | 记忆体占 Q1 advanced nodes 60%；TSV 新应用 H2 首发 | **中高** |
+| Iris common films / critical films | common **L3–L4**；critical **L1–L2** | common films 已创纪录；critical films 仍待 2026 年末/2027 扩资格 | **中高** |
+| IMPULSE integrated metrology | memory **L3**；logic **L2–L3** | 从 memory 强位向两家 leading-edge logic 扩展 | **中高** |
+| EchoScan hybrid-bond void | **L1–L2** | select customers、2026 SPIE 1µm 数据；未披露 HVM 订单 | **中** |
+| JetStep panel packaging | **L2** | 两家向 AI device makers 供货的 packaging suppliers 已 qualification，预期 2027 ramp | **高** |
+| Firefly/玻璃 TGV | **L1–L2** | ICEP 2026 展示从 TGV 到 buildup 的 100% panel inspection、最大 650×650mm；商业规模未披露 | **中** |
+| Semilab FAaST/CnCV/MBIR 既有市场 | **L3–L4** | 收购业务 2025 年此前已约 $130m 年化、历史约 20% CAGR | **高** |
+| FAaST chiplet residual charge | **L0–L1** | 管理层和客户讨论强，但尚无具体量产订单金额 | **中低** |
+| Rigaku CD-Xray + Ai Diffract | **L2–L3** | 两次竞争胜出、V-NAND/DRAM 工具已交付，更多 logic/memory eval | **高** |
+| 完整 optical + X-ray hybrid metrology | **L0–L1** | 管理层明确称面向 N+2、约两年后 HVM，当前开始联合 R&D | **高** |
+| Discover/TrueADC | **L3–L4** | 与现有 fleet/Dragonfly/Atlas 集成；装机数据和 recipe 构成持续 attach | **高** |
+
+### 8.4 业内会议与渠道信号：什么能用，什么不能当订单
+
+- **SPIE Advanced Lithography + Patterning，2026-02-24**：ONTO 展示皮秒激光声学检测 HBM hybrid-bond 埋藏空洞，声称 1µm、非破坏、无耦合液。这证明技术路线进入公开验证，但不证明大规模量产订单。[会议摘要](https://ontoinnovation.com/events/buried-void-inspection-in-high-bandwidth-memory-with-picosecond-laser-acoustics/)
+- **SEMICON Korea MI Forum，2026-02-12**：议程同时出现 Samsung 的 hybrid bonding 视角和 ONTO 的相关量测演讲，说明客户生态在共同定义问题；会议同台不能推断供应合同。[会议指南](https://www.semiconkorea.org/sites/semiconkorea.org/files/2026-01/Conference%20Guide%202026_lite_0109_4.pdf)
+- **ICEP，2026-04-16**：ONTO 展示玻璃 TGV 从成孔、金属化到 RDL 的 100% panel 检测与 650×650mm 覆盖，验证 Firefly/玻璃 suite 的技术完整性；行业量产时点仍更接近 2027–2028。[会议摘要](https://ontoinnovation.com/events/process-control-innovations-for-glass-in-advanced-packaging/)
+- **SEMICON Southeast Asia，2026-05-05**：公司围绕 AI 先进封装与 silicon photonics 演讲，和 Q1 电话会所称 CPO 已有小量收入相吻合，但没有新增订单金额。[会议页](https://ontoinnovation.com/events/semicon-southeast-asia-sea/techniques-in-advanced-packaging-and-silicon-photonics-for-ai/)
+- **渠道消息，THE ELEC，2026-03-31**：报道称 Samsung 正引入 hybrid-bonding inspection，并称 ONTO 激光超声系统在量产线验证。它与 EchoScan 技术路径吻合，但客户未由 ONTO 官方确认，因此本报告只把它当作 **L1–L2 渠道佐证**，不计入已签订单。[渠道报道](https://www.thelec.net/news/articleView.html?idxno=6232)
+- **匿名客户身份**：公司只说“leading HBM manufacturer”“leading 2.5D logic customer”。韩国收入和客户集中度不能证明它们分别是 Samsung 或 SK hynix；本报告不对匿名 VPA 客户点名。
+
+## 九、一年后产能与认证：三情景
+
+### 9.1 公司总体产能
+
+| 情景 | 一年后可服务年化收入能力（R-est） | 所需条件 | 供给风险 |
+|---|---:|---|---|
+| **基准** | **$2.0bn–$2.2bn** | extended factories 稳定、亚洲出货比例继续提升、精密光学按 forecast 到货 | 低至中；公司内部 capacity 足够 |
+| **乐观** | **$2.3bn–$2.6bn** | 多班制、关键光学双源/长期协议、G5/G6 设计标准化、服务人员同步扩张 | 中；供应商而非厂房成为主瓶颈 |
+| **极度乐观** | **$2.7bn–$3.0bn** | 供应商扩产、更多模块委外、copy-exact 和自动校准显著提升；无地缘/关税中断 | 高；超过管理层公开 $2bn 锚，必须额外执行 |
+
+### 9.2 分产品一年后能力与认证阶段
+
+| 产品族 | **基准：能力；认证阶段** | **乐观：能力；认证阶段** | **极度乐观：能力；认证阶段** |
+|---|---|---|---|
+| Dragonfly G5/G3/3Di | **$0.60bn–$0.75bn；G5 在现有 HBM/2.5D L3，3Di 多 site L3** | **$0.80bn–$0.95bn；新增 1–2 客户 L3，部分 L4** | **$1.0bn–$1.2bn；HBM4E/2.5D/前道 macro 多客户 L4** |
+| Atlas/OCD | **$0.45bn–$0.60bn；第二 GAA 客户 L3、TSV L2–L3** | **$0.65bn–$0.80bn；更多 GAA/DRAM copy tools L3–L4** | **$0.85bn–$1.0bn；OCD+X-ray recipe 成为多厂 hybrid POR** |
+| Iris/IMPULSE/Aspect/Echo | **$0.30bn–$0.40bn；critical films L2、logic integrated L3** | **$0.45bn–$0.55bn；critical films 至少一客户 L3** | **$0.60bn–$0.75bn；GAA/vertical DRAM/SiPh 多触点 L4** |
+| JetStep/Firefly | **$0.15bn–$0.22bn；两家现有客户由 L2 进入 L3** | **$0.25bn–$0.35bn；新增基板/OSAT，部分 L3** | **$0.40bn–$0.50bn；panel/glass 成主流扩产，跨 site L4** |
+| EchoScan | **$0.06bn–$0.10bn；1 家客户 L2–L3** | **$0.15bn–$0.22bn；HBM/logic 各至少一项 L3** | **$0.28bn–$0.40bn；hybrid bonding 提前，多客户 L4** |
+| Semilab | **$0.20bn–$0.25bn；既有 L4、chiplet charge L1–L2** | **$0.28bn–$0.35bn；chiplet charge 一客户 L3** | **$0.40bn–$0.50bn；surface charge 与 Onto inspection recipe 多厂 L3–L4** |
+| 软件/服务/Rigaku license | **$0.32bn–$0.40bn；Ai Diffract/X-ray L3** | **$0.45bn–$0.55bn；多个 CD-Xray attach、跨 fleet analytics L4** | **$0.60bn–$0.75bn；hybrid metrology 开始 HVM、软件 attach 显著提高** |
+
+这些能力同样共享工厂和人员，不可相加。认证情景比产能更关键：EchoScan 或 panel 即使有机器可造，客户若停留 L1/L2，也不会转化为大额收入。
+
+## 十、按真实订单与供给推演未来一年增速
+
+### 10.1 订单证据矩阵
+
+| 产品族 | 硬订单/项目证据 | 交付窗口 | 取消/延期模型 | 对一年后收入的约束 |
+|---|---|---|---|---|
+| Dragonfly/3Di | 单一 HBM VPA **>$240m**，其中 3Di **>$60m**；G5 与 3Di 各双位数订单承诺；Q1 另有 >10 个 3Di 订单 | 2026Q2–2027；约 50/50 重分布是当前最合理读法 | VPA 取消 **0%–5%**；时间滑移 **10%–20%** | 给基准情景提供约 $120m/年的硬底座，不能单独证明整个产品族 $400m+ |
+| Atlas/Iris | 2025Q2 新 GAA 客户 Atlas+Iris **>$20m**；第二逻辑客户 G6；多家逻辑/记忆体 production orders；TSV H2 首发 | 2025Q4–2027 | 已过资格 2%–8% 取消；fab 延期 10%–25% | 先进节点 +25% 有多客户支持，但季度节奏受 fab opening 与 memory capex 影响 |
+| JetStep/Firefly | 两家 packaging suppliers 已 qualification；公司维持多年约 $200m panel SAM | 2027 ramp 为主 | 取消 5%–15%；量产延期 **20%–40%** | 2026 收入有限；一年后基准可见，但极度乐观依赖面板路线真正量产 |
+| EchoScan | 2025 起首批/追加工具；select-customer release；Samsung 验证仅渠道消息 | 2026 eval、2027 潜在 HVM | 评估不转/延期 **25%–45%** | 不应为 2026 指引提供大额支撑；是 2027 非线性期权 |
+| Semilab | 既有 $120m 左右年化业务；收购会计确认 $20m backlog intangible，但不是公司标准经营 backlog 披露 | 持续交付 | 既有订单 5%–15%；power semi 弱势 | 基准稳定，真正上行来自 Onto 客户交叉销售，不是收购时 backlog |
+| Rigaku/Ai Diffract | 两次 competitive win、V-NAND/DRAM 已交工具；license pipeline 健康但不披露数量 | license 2026–2027；完整 hybrid solution 更后 | license 随 Rigaku tool close；HVM hybrid 延期概率高 | 未来一年主要是数百万到数千万美元 license，不应把 Rigaku $600m+ 收入并入 ONTO |
+| 软件/服务 | 2026Q1 备件+服务 $44.8m，同比约 +26%；随新装机增加 | 同季至 1 年 | 取消低，取决于 fab utilization | 是硬件增量的滞后一阶复利，降低季度波动 |
+
+### 10.2 从 backlog 到未来一年公司增速
+
+| 情景 | Backlog 转化 | 新 bookings | 供应能力 | 未来一年收入/增速（R-est） | 主要失败条件 |
+|---|---|---|---|---|---|
+| **基准** | 2026Q1 R-est $0.65bn–$0.80bn 中 75%–85% 在 12 个月转收入 | B2B 正常化至 1.05–1.20x | $2.0bn–$2.2bn 足够 | **$1.52bn–$1.64bn；相对 FY2026E +15%–+25%** | VPA 延期、DRAM/GAA fab 晚开、G5 qualification 后 copy orders 少 |
+| **乐观** | 85%–95% 转化，且 pull-in 不蚕食 2027 | B2B 1.20–1.40x；新增 HBM/2.5D/Atlas 大单 | $2.3bn–$2.6bn，光学供应双源 | **$1.75bn–$1.90bn；+32%–+43%** | 精密 optics 限制 G5/G6；panel 或 critical films 仍停在 eval |
+| **极度乐观** | >95% 转化，评估工具大面积转 POR | B2B 1.40–1.70x，多个客户扩 fab 同步 | $2.7bn–$3.0bn stretch | **$2.05bn–$2.30bn；+55%–+70%** | 任何客户 capex 修正、yield qualification 失败、供应链/出口限制都会使该路径失真 |
+
+**为何不使用更高增长**：现有 $2bn run-rate 是可靠管理层锚；超过 $2bn 必须依靠 extended factories 和供应商扩产，而精密光学交期已经固定且在延长。极度乐观收入上沿接近能力上沿，不能再假设无限供给。
+
+### 10.3 五季度 B2B 推断的审计提示
+
+2025Q4 若 backlog 从约一个季度增至约两个季度，粗略增加 $0.25bn–$0.35bn；加上当季 $266.9m 出货，隐含 bookings 可能达 $0.52bn–$0.62bn，即 B2B 约 1.9–2.3x。但 VPA 是否一次性全部记入管理 backlog 未披露，因此本报告在五季度表采用更宽的 **1.6–2.2x**。这说明订单脉冲真实，却不能外推每季维持 2x。
+
+## 十一、竞争格局、技术主流性、替代风险与切换成本
+
+### 11.1 分产品竞争
+
+| 产品/市场 | 主要竞争者 | ONTO 优势 | 替代方案与主要风险 | 客户切换成本 |
+|---|---|---|---|---|
+| Dragonfly G5/G3：先进封装 2D/3D | **Camtek** Eagle/Hawk；**KLA** ICOS/Kronos；Applied 的先进封装 e-beam/SEM；其他光学/3D 厂商 | 包装专用 handling、warp/rough-surface 算法；2D+3Di+IR/Clearfind 多 sensor；G5 <200nm/官方 150nm 与高吞吐 | KLA/Camtek 可用更强 installed base 或 bundle；e-beam 分辨率更高但吞吐较低；客户会双源 | **高：6–18 个月资格、recipe、golden die/die-to-die、fleet matching；换机可能损失 1–3 个季度工程时间** |
+| 3Di bump metrology | Camtek 3D、KLA 光学/封装量测、干涉/共焦厂商 | <5µm HVM、2µm R&D 路线；已两家 HBM 完整资格；与 2D/IR 同平台 | hybrid bonding 可能使 bump touchpoint 变化；竞争者可用独立高精度 3D | **很高**；但新一代工艺会重置部分 incumbency |
+| Atlas/OCD | **Nova** PRISM/VeraFlex；**KLA** SpectraShape；ASML YieldStar；Hitachi CD-SEM；Applied/e-beam | 复杂 3D 光学模型、Ai Diffract、小光斑 in-die、高速 HVM；GAA/DRAM 客户胜出 | CD-SEM 分辨率、X-ray/SAXS 穿透、TEM 参考；模型错误/材料非唯一解是 OCD 风险 | **很高**；recipe、reference metrology 和 tool-to-tool matching 固化后很难替换 |
+| Iris/IMPULSE/Aspect/Echo | KLA、Nova、Applied、ASML integrated metrology、Bruker/Park 等 | common + critical films、CMP integrated、IRCD 与声学形成组合；可与 Atlas 数据融合 | 客户可向主设备商采购 integrated metrology；单项技术并非独家 | **中高**；integrated tool 和 APC 闭环切换尤其困难 |
+| EchoScan | Nordson/PVA TePla C-SAM；ZEISS/Nordson/Comet X-ray；KLA/Camtek IR/optical；Rigaku X-ray | 1µm、无浸液/无接触、潜在高速 inline；与 Discover 闭环 | 实验室 1µm 不等于各种材料堆叠的 HVM；X-ray 更深更准，C-SAM 更成熟；Rigaku 也可能局部重叠 | **资格后高，资格前低**；当前仍应按技术竞争阶段估值 |
+| JetStep/Firefly panel | Canon/Ushio/SCREEN/SUSS 等曝光方案；Camtek/KLA/PVI panel inspection；小场 stepper + stitching | 250×250mm 大场、3µm L/S，减少 shot/stitch；Firefly+StepFAST 闭环 | organic substrate/wafer-level/silicon interposer 可延长；panel warp、材料标准、客户 capex 时间不确定 | **中高**；panel recipe、reticle、overlay 与 handling 一旦量产会锁定 |
+| FAaST/CnCV/MBIR | Semilab 剩余产品生态、KLA/Nova/Bruker及实验室电学/材料量测 | 非接触 corona-Kelvin 和 SPV 的独特性；Onto inspection 数据联动 | 应用市场小；客户可用 test structure、最终电测或实验室抽检，代价是速度/破坏性 | **细分高、总体中** |
+| Discover/TrueADC/Ai Diffract | KLA analytics、Camtek software、fab 自研、EDA/数据平台 | 与 ONTO sensor 原始数据深度绑定；recipe/defect library 越用越强 | 客户担心 vendor lock-in，可建立 vendor-neutral data lake；AI 分类需持续标注 | **高**，尤其 fleet 规模化后 |
+
+### 11.2 新技术是不是未来主流
+
+- **高吞吐光学 2D + 3D/IR 多传感器**：是先进封装 inline process control 的主流。缺陷尺寸缩小要求更高灵敏度，但 HVM 不能全靠慢速 e-beam；最合理架构是高速 optical 筛查 + 高精度 review/参考量测。
+- **OCD + X-ray hybrid metrology**：光学 OCD 仍是速度主流，X-ray 是深层结构/材料补充，不是短期替代。管理层明确称，只要 OCD 能量，客户会优先用 OCD；X-ray 的精度/穿透反过来改善模型。
+- **3Di 微凸点量测**：HBM4 与 2.5D 继续微凸点时是明确主流；进入 hybrid bonding 后，传统 bump 高度触点减少，但表面平坦度、Cu dishing、void 和 overlay 触点上升，ONTO 需从 3Di 迁移到 G5/EchoScan/films 套件。
+- **EchoScan 激光声学 void detection**：技术方向合理，但尚未证明会成为唯一主流。最可能的量产栈是 optical/IR 快速筛查、PLA/C-SAM/X-ray 按缺陷与深度分层，而非一家技术通吃。
+- **panel-level 与 glass core**：可能成为降低大尺寸 AI package 成本的重要路线，却不是 2026 年确定主流。项目内玻璃研究认为 2026–2027 主要是设备/试产，商业大规模更偏 2028；因此本报告只在乐观和极度乐观情景显著放大。[项目内《玻璃基板、TGV 与玻璃检测》](../../行业调研/晶圆制造_设备_材料_测试/行业调研_玻璃基板、TGV与玻璃检测_2026-07-11.md)
+- **CPO/硅光**：AI interconnect 功耗使方向明确，但切入速度、封装架构和端口标准仍不确定。ONTO 的优势是薄膜、3D 和缺陷检测均可参与，不依赖某一种 optical engine 设计。
+
+### 11.3 垄断能力的上限
+
+ONTO 可以在某个客户的某一应用成为唯一合格工具，但不等于公司级垄断。2025Q3 管理层称当时 3Di 在两家 HBM 客户完成严格资格、未见其他工具通过；2026G5 又在一名 HBM 客户取代既有 tool-of-record，这是**应用级强势**。然而 KLA 在全市场有更强研发、installed base 和 bundle，Camtek 在先进封装是直接同量级对手，Nova 在 OCD/材料量测强势。合理评分是产品级 4/5，而非公司级 5/5。
+
+## 十二、主要风险、反证条件与财报检查表
+
+### 12.1 风险排序
+
+| 风险 | 概率 / 冲击 | 具体传导 | 可观察反证 |
+|---|---|---|---|
+| **估值压缩** | 高 / 高 | GAAP P/E ~150x、P/S ~15.3x–15.6x；即使公司增长，forward multiple 下修也会压股价 | 收入/毛利持续超指引且 2027 bookings 再加速 |
+| **客户集中与 VPA 延期** | 中 / 高 | 2026Q1 三名客户分别 14.4%、13.4%、13.3%，合计 **41.1%**；单一 HBM VPA 很大 | backlog 继续增长且客户/地域集中下降 |
+| **精密光学供应** | 中 / 高 | G5/G6 pull-in 遇固定光学 lead time，收入从需求约束转为供给约束 | lead time 稳定、供应双源、Q3/Q4 准时出货 |
+| **G5/Atlas 资格不扩散** | 中 / 高 | 一次 head-to-head win 未必变成多 site copy；高研发和库存先发生 | 新增客户/应用、copy-tool 数、服务收入增长 |
+| **AI capex pull-forward** | 中 / 高 | 2026 提前拉货后 2027 空档，VPA 只是时间转移 | 管理层继续证明 2027 订单不被 pull-in 蚕食 |
+| **hybrid bonding/panel 延迟** | 中高 / 中 | EchoScan、JetStep/Firefly 期权后移；基准 2026 影响有限 | 至少一家客户从 L2 进入 HVM L3 |
+| **Semilab 整合/减值** | 中 / 中高 | 购买对价 $526.6m、商誉与无形资产高；power semi 弱于收购时预期 | 收入恢复 >$130m、交叉销售、GAAP/非 GAAP差距收敛 |
+| **Rigaku 资本配置与 P&L 波动** | 中 / 中高 | $710m 少数股权不并表；股价 fair value 进其他收益；战略 synergies 未必覆盖资金成本 | license、incremental Atlas、股息一年内覆盖放弃的利息收入 |
+| **可转债/稀释** | 低至中 / 中 | $1.5bn 2031 到期；转股 $381.80，capped call 仅至 $509.06；高股价下存在稀释 | 自由现金流增长、到期前再融资或现金储备充足 |
+| **出口管制/地缘** | 中 / 中 | 中国限制、亚洲客户集中、关税和运输；2025 advanced nodes 中国收入已低于 3% | 地域多元、extended factories 与供应链本地化 |
+
+### 12.2 2026Q2 财报必须核对的十个数字
+
+1. 收入是否落在/超过 $320m–$330m。
+2. non-GAAP 毛利率是否达到 56.0%–56.5%，以及 GAAP 与非 GAAP 差距是否缩小。
+3. G5 实际出货数是否从 Q1“数台”接近翻倍，Q3 是否仍有类似增幅。
+4. 先进封装单季收入是否继续支持全年 >50% 增长。
+5. advanced nodes 是否仍指引约 +25%，Atlas G6 是否新增客户或 copy order。
+6. record backlog 是否继续增加、保持两个季度覆盖或至少给出 VPA 转化更新。
+7. 精密光学 lead time 是否开始影响 customer commitment。
+8. Semilab 是否达到季度约 $25m–$30m 并改善毛利。
+9. JetStep 两家客户是否从 qualification 转入生产线安装；EchoScan 是否获得正式 HVM 订单。
+10. Rigaku 交易审批/交割、license 收入和 $7m 年股息假设是否更新。
+
+## 十三、综合投资判断
+
+### 13.1 基准判断
+
+ONTO 的 2026 业绩不是纯概念：Q2 指引、两个季度 backlog、>$240m VPA、G5/3Di 双位数订单、Atlas 第二逻辑客户与公司 $2bn 产能锚，足以支持 **>$1.3bn** 的年度收入。更关键的是，公司增长不是单点：先进封装 >50%、先进节点约 +25%、Semilab 并表和软件/服务复利同时发生。
+
+但股价已经将“执行顺利”当作基本事实。以 $321.44 计，GAAP TTM P/E ~150x、forward P/E ~40x、P/S ~15.3x–15.6x；投资回报更依赖 2027 年收入向 $1.6bn–$1.9bn 延续，而不只是 2026 年击中 $1.3bn。**业务判断偏多，估值判断谨慎。**
+
+### 13.2 多头、空头与真正分歧
+
+| 多头论点 | 空头反驳 | 本报告判断 |
+|---|---|---|
+| AI 先进封装和 GAA/HBM 增加过程控制资本强度 | AI capex 可 pull-forward，设备周期仍会下行 | 结构性强、周期性也真实；用 2027 bookings 而非 2026 revenue 验证 |
+| G5 取代 tool-of-record，说明技术/份额双赢 | 单一客户赢单不等于全市场，KLA/Camtek 会反击 | 先给应用级 4/5 垄断评分；多 site L4 后才能上调 |
+| $240m VPA 和 record backlog 提供可见度 | backlog 口径不标准，可能含 forecast；客户可延期 | VPA 是硬锚、backlog 是宽锚；取消率低但延期率不能忽略 |
+| $2bn 产能支持高速增长 | 精密光学固定交期，产品 mix 不能自由切换 | 内部厂房不是瓶颈，供应商才是；极度乐观需 $2.7bn+ 能力，风险高 |
+| EchoScan/panel/surface charge/Rigaku 打开数十亿美元 SAM | 大部分仍在 eval，SAM 不是 revenue | 这些只进入 2027 乐观情景；2026 基准不靠它们 |
+
+### 13.3 最终结论
+
+**ONTO 是当前 AI 半导体设备链里少数同时具备“订单可见度、技术换代、份额回收和新应用期权”的中型公司。** Dragonfly G5/3Di 是短期收入与份额核心；Atlas G6/OCD 是前道第二增长极；Iris/IMPULSE、EchoScan、JetStep/Firefly、FAaST surface charge 和 Rigaku license 决定 2027 年能否继续超 WFE。
+
+基准情景下，一年后收入约 $1.52bn–$1.64bn，仍有 15%–25% 增长；乐观情景 $1.75bn–$1.90bn；极度乐观 $2.05bn–$2.30bn，已经要求供应链、客户资格和多个新产品同时成功。当前估值使下行容错较低，因此最合理的跟踪方式不是追逐“AI 占比”标题，而是逐季检查 **G5 出货、VPA 转化、Atlas copy orders、backlog 覆盖、precision optics lead time 和 non-GAAP 毛利率**。
+
+## 十四、资料来源、口径与可信度
+
+### 14.1 主要一手来源
+
+- [Onto Innovation 2026Q1 业绩公告，2026-05-05](https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2026-First-Quarter-Results/default.aspx)
+- [2026Q1 Form 10-Q，SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526206707/onto-20260331.htm)
+- [2025 Form 10-K，SEC](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm)
+- [2026Q1 电话会全文，2026-05-05](https://stockanalysis.com/stocks/onto/transcripts/560656-q1-2026/)
+- [2025Q4 电话会全文，2026-02-19](https://stockanalysis.com/stocks/onto/transcripts/401878-q4-2025/)
+- [Needham Growth Conference，2026-01-13：管理层称 2025 年约 61% 收入关联 AI 供应链](https://stockanalysis.com/stocks/onto/transcripts/538098-28th-annual-needham-growth-conference-virtual/)
+- [Dragonfly G5 发布与 HBM4 双位数订单，2026-03-16](https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Launches-Dragonfly-G5-Inspection-System/default.aspx)
+- [Dragonfly G5 产品规格](https://ontoinnovation.com/products/dragonfly-g5-inspection/)
+- [Atlas G6 产品规格](https://ontoinnovation.com/products/atlas-g6-system/)
+- [EchoScan/3Di 发布，2025-01-14](https://investors.ontoinnovation.com/news/news-details/2025/Onto-Innovation-Advances-Process-Control-Suite-for-3D-Interconnect-Yields/default.aspx)
+- [Rigaku 27% 战略投资 8-K，2026-04-21](https://www.sec.gov/Archives/edgar/data/704532/000119312526164529/d75499d8k.htm)
+- [0% 可转债定价公告，2026-05-18](https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Announces-Pricing-of-Upsized-Private-Offering-of-1-3-Billion-of-0-00-Convertible-Senior-Notes-Due-2031/default.aspx)
+- [可转债最终发行与回购 8-K，2026-05-21](https://www.sec.gov/Archives/edgar/data/704532/000119312526234610/d17904d8k.htm)
+- [Semilab 收购完成公告，2025-11-17](https://investors.ontoinnovation.com/news/news-details/2025/Onto-Innovation-Completes-Acquisition-of-Unique-Materials-Composition-and-Electrical-Analysis-Product-Lines-from-Semilab-International/default.aspx)
+- [Lumina 与 K&S 光刻业务收购，2024-10-31](https://investors.ontoinnovation.com/news/news-details/2024/Onto-Innovation-Announces-Tuck-In-Acquisition-of-Lumina-Instruments-Inc.-and-Lithography-Business-of-Kulicke-and-Soffa/default.aspx)
+
+### 14.2 项目内相关行业资料
+
+- [半导体检测量测设备](../../行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-07-10.md)
+- [先进封装设备与混合键合](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-07-10.md)
+- [HBM 与存储测试设备](../../行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-07-10.md)
+- [玻璃基板、TGV 与玻璃检测](../../行业调研/晶圆制造_设备_材料_测试/行业调研_玻璃基板、TGV与玻璃检测_2026-07-11.md)
+- [高端光罩与先进封装掩模](../../行业调研/晶圆制造_设备_材料_测试/行业调研_高端光罩与先进封装掩模_2026-07-10.md)
+- [AI 芯片先进封装](../../行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-07-10.md)
+- [HBM 与高带宽内存](../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-07-10.md)
+
+### 14.3 数据标签
+
+- **C（Company）**：公司公告、SEC、公司产品页和管理层电话会原话。
+- **I（Industry）**：项目内行业资料、技术会议与竞争者公开资料。
+- **Ch（Channel）**：业内媒体或供应链报道；必须有客户未确认提示。
+- **R-est（Research estimate）**：本报告从市场组合、订单、工具数、ASP、产能与行业结构推算。Backlog 美元额、B2B、取消率、产品收入/毛利率、ASP、BOM、每 GPU/rack/MW/port 含量和三情景预测均属于该类。
+
+本报告不是投资建议。特别是“极度乐观”情景用于识别能力上限和同时成功所需条件，不是目标价或概率最高预测。

@@ -1,0 +1,622 @@
+# 公司：AEP American Electric Power（美国电力公司）——全面尽调：从防御型公用事业到 AI 电力基础设施平台
+
+> 研究日期：2026-07-11（America/Los_Angeles）  
+> 最新财务期：2026Q1，截至 2026-03-31；下一次财报尚未发布  
+> 行情日期：2026-07-10 美股收盘（2026-07-11 为周六）  
+> 计价单位：除每股数据、MW/GW 和特别说明外，美元；`B`=十亿美元，`M`=百万美元  
+> 研究边界：本报告仅使用项目内 `行业调研/` 的相关产业资料和重新联网取得的一手/近一手资料；未读取其他公司报告、日度资料或特征量化资料。
+
+## 核心结论
+
+1. **AEP 不是 AI 芯片或电力设备制造商，而是“受监管电网 + 发电资产 + 长约售电”的资本平台。**它服务约 560 万客户，拥有约 4 万英里输电线路、25.2 万英里配电线路、约 32GW 自有及签约发电能力，并运营美国最大的输电网络。AI 对 AEP 的传导链是：数据中心签约负荷 → 输电/配电/发电资本开支 → rate base 增长 → 监管核准回报和售电收入，而不是高毛利硬件销售。[AEP 2026Q1 演示材料](https://docs.aep.com/docs/newsroom/resources/earnings/2026-05/1Q26EarningsReleasePresentation.pdf)
+2. **市场已把 AEP 从传统高股息 utility 重估为“AI 电力成长型 utility”。**2026-07-10 收盘价 `$135.43`，市值约 `$73.69B`，TTM PE `20.04x`，市场口径 forward PE `21.10x`；按 AEP 2026 operating EPS 指引中点 `$6.30` 计算为 `21.50x`。股息率约 `2.81%`，低于典型高股息 utility 的形象，说明估值已计入相当一部分增长预期。[行情与估值快照](https://stockanalysis.com/stocks/aep/statistics/)
+3. **最强资产是 765kV 输电体系。**AEP 已运营超过 2,100 英里 765kV 线路、约占美国存量 765kV 网络的 90%，拥有 60 年设计/运营经验；2026—2030 输电投资 `$33B`，占资本计划 `42%`。公司预计 2026 年每股 operating earnings 中 `$3.34`、即指引中点的 `53%` 来自输电，输电才是 AI 主题中最确定的盈利抓手。[AEP 2026Q1](https://docs.aep.com/docs/newsroom/resources/earnings/2026-05/1Q26EarningsReleasePresentation.pdf)、[AEP/Quanta 合作](https://www.aep.com/news/stories/view/10555/)
+4. **“63GW contracted load”质量明显高于普通 queue，但绝不能等同 backlog 收入。**其中 `89%` 为数据中心（含 crypto），Texas/Ohio/Oklahoma/Indiana 分别约 `41/12/5/3GW`；全部有 LOA，PJM 约 `95%` 已有 ESA，SPP 约 `45%` 已有 ESA，ERCOT 因市场结构只能签 LOA且全部宣称符合 SB6 标准。公司给出的累计上电计划是 2026/2027/2028/2029/2030 年 `7/17/33/49/63GW`，不是 2026 年一次性上电。[AEP 2026Q1](https://docs.aep.com/docs/newsroom/resources/earnings/2026-05/1Q26EarningsReleasePresentation.pdf)
+5. **合同保护强，物理交付仍是瓶颈。**AEP Ohio、Indiana、Kentucky、West Virginia 已获批的大负荷 tariff 通常要求 `80%—90%` minimum demand、`12—20 年`合同、抵押/母公司担保和退出费；但 DOE 指出大型变压器交期已达 `3—4 年`，JLL 估计主要数据中心市场平均并网等待超过 `4 年`。因此未来一年风险主要是“延期”，不一定是“取消”。[AEP tariff 汇总](https://docs.aep.com/docs/investors/eventspresentationsandwebcasts/May_2026_Investor_Handout.pdf)、[DOE 变压器会议](https://www.energy.gov/sites/default/files/2026-03/Distribution-Transformer-Convening-Webinar-Transcript.pdf)、[JLL 2026](https://www.jll.com/en-us/insights/market-outlook/data-center-outlook)
+6. **2026Q1 财务表现扎实，但 2026 指引并未上调。**季度收入 `$6.020B`、同比 `+10.2%`；GAAP EPS `$1.61`、operating EPS `$1.64`。全年 operating EPS 仍为 `$6.15—6.45`；中点较 2025 实际 `$5.97` 只增长 `5.5%`，低于公司宣传的长期 `7%—9%`，因为加速主要在 2028 年后随资产投产体现。[AEP 2026Q1 release](https://www.aep.com/news/stories/view/11917/)
+7. **资产负债表属于“可融资但不宽松”的投资级 utility。**2026-03-31 GAAP 债务约 `$51.109B`、可动用现金及投资 `$0.515B`、流动比率 `0.53x`；S&P/Moody's FFO/debt 为 `14.7%/13.9%`，评级 `BBB/Baa2`、展望稳定。TTM 经营现金流 `$7.01B`，资本开支约 `$13.71B`，自由现金流约 `-$6.70B`，增长依赖持续发债和增发。[AEP 2026Q1](https://docs.aep.com/docs/newsroom/resources/earnings/2026-05/1Q26EarningsReleasePresentation.pdf)、[市场财务口径](https://stockanalysis.com/stocks/aep/statistics/)
+8. **未来一年最可信的基准情景是收入约 `+7%`、而不是按 63GW 线性外推。**本报告模型给出未来十二个月收入：基准约 `$24.0B`（`+7%`）、乐观 `$25.1B`（`+12%`）、极度乐观 `$26.5B`（`+18%`）。真正上行来自更快的 rate-base 投产、minimum-demand 计费和新发电资产纳入；真正下行来自 ERCOT Batch Zero 重新分类、发电不足、主变/断路器交期、监管削减和股权稀释。
+9. **两个容易被忽略的小业务值得单列。**其一是 Bloom SOFC：AEP 已签约最多 `1GW`，Wyoming 项目有约 `$2.65B` 无条件设备采购和 20 年、100% 出力 offtake，但截至本报告日没有公开文件确认原定 2026Q2 满足的全部先决条件；其二是 Gigawatt AI：AEP 已累计投入 `$150M` 获得 `15%` 股权和永久软件许可，是真正的 utility-AI 软件可选性，但目前没有披露收入，不能当作数据中心售电收入。[AEP fuel-cell 8-K](https://www.sec.gov/Archives/edgar/data/4904/000000490426000003/aep-20260104.htm)、[Gigawatt AI 10-Q 注释](https://www.sec.gov/Archives/edgar/data/4904/000000490426000034/R66.htm)
+
+## 一、公司整体业务、投资人定位与近三年转型
+
+### 1.1 业务结构与产业链位置
+
+American Electric Power Company, Inc. 是美国大型投资者所有电力控股公司，总部位于 Ohio。它处于 AI 基建产业链最上游的“电源—大电网—园区接入”层，控制的是稀缺的并网位置、输电走廊、变电容量和监管许可，而不是服务器、GPU、UPS 或变压器产品。
+
+| 报告分部 | 主要实体/功能 | 2026Q1 外部收入 | 占合并收入 | 产业链位置与盈利方式 |
+|---|---|---:|---:|---|
+| Vertically Integrated Utilities（VIU） | APCo、I&M、KPCo、PSO、SWEPCo 等；发电+输配电+捆绑零售 | `$3.365B` | `55.9%` | 建发电站和电网、向终端客户收取受监管电费；燃料通常 pass-through，资本投入进入 rate base |
+| Transmission & Distribution Utilities（T&D） | AEP Ohio、AEP Texas；以 wires 为主 | `$1.594B` | `26.5%` | 数据中心并网、变电站、输配电和需求费；Texas 售电由零售商完成，AEP Texas 主要确认 wires 收入 |
+| AEP Transmission Holdco（AEPTH） | State Transcos、Transource、ETT 等 | `$0.127B` 外部；`$0.598B` 含内部 | `2.1%` 外部 | FERC/RTO 监管输电资产；内部输电收入在合并层抵销，外部收入低估经济贡献 |
+| Generation & Marketing（G&M） | AEP Energy、批发/交易、竞争性发电 | `$0.931B` | `15.5%` | 竞争性零售、交易和少量 merchant generation；收入受电价与购电成本放大，战略确定性低于受监管业务 |
+| Corporate & Other | 控股、融资、共享服务、投资 | `$0.003B` | `0.0%` | 主要是成本中心和投资平台 |
+
+分部定义和上述收入取自 [2026Q1 10-Q](https://docs.aep.com/docs/investors/AEP10Q20261Q.pdf)。AEPTH 的大量收入来自 AEP 内部企业，合并抵销后只剩 `$127M` 外部收入；因此用“外部收入占比”判断输电价值会严重失真。管理层更有意义的口径是：2026 年输电 operating EPS 预计 `$3.34`，占全年指引中点 `$6.30` 的约 `53%`。
+
+### 1.2 投资人眼中的 AEP
+
+- **传统标签：**低 beta、稳定分红、受监管回报、资本密集、利率敏感。2026-07-10 beta 约 `0.50`，年化股息 `$3.80`、收益率 `2.81%`，连续 16 年提高股息。[行情统计](https://stockanalysis.com/stocks/aep/statistics/)
+- **当前标签：**“regulated growth utility + AI power proxy”。公司以约 `11%` rate-base CAGR、`7%—9%` operating EPS 长期增速和 63GW 大负荷签约来换取估值溢价。
+- **正确的 AI 定位：**当前收入主要仍是普通居民、商业、工业、输电和竞争零售；AI 是新增负荷和资本开支的驱动器，而非单独披露的产品线。AEP 的优势是低资本成本、特许区域、765kV 经验和长约 cost allocation；弱点是监管限制定价、负自由现金流和持续股权融资。
+
+### 1.3 最近三年的重大业务变化、出售、收购与战略转向
+
+| 日期 | 事件 | 金额/规模 | 战略含义 |
+|---|---|---:|---|
+| 2023-08 | 出售 14 个非受监管、已签约风光项目 | `1,365MW`；EV `$1.5B`，净现金约 `$1.2B` | 明确退出非核心 merchant/contracted renewables，把资本回收至受监管 wires 和 generation。[公司公告](https://www.aep.com/news/stories/view/9070/AEP-Completes-Sale-of-Unregulated-Renewables-Assets/%26/) |
+| 2024-08 | Bill Fehrman 上任 CEO | 前 Berkshire Hathaway Energy CEO | 从“能源转型叙事”进一步转向运营执行、州监管合作、大负荷和输电扩张。[任命公告](https://www.aep.com/news/stories/view/9631/AEP-Names-Industry-Veteran-Bill-Fehrman-as-President-and-Chief-Executive-Officer/) |
+| 2024-09 | 出售 AEP OnSite Partners | 超过 `300MW`、近 100 个站点；税后净现金约 `$315M—318M` | 卖掉分布式资源平台以降杠杆；但 2025—2026 又以客户定制 SOFC 方式选择性回到 onsite power。[出售公告](https://www.aep.com/news/stories/view/9540/AEP-Signs-Agreement-to-Sell-Distributed-Resources-Business-to-Basalt/) |
+| 2025-06 | KKR 与 PSP 买入 Ohio/I&M Transcos 19.9% | 对价 `$2.82B`，约对应 AEP 总输电 rate base 的 `5%` | 以少数股权高估值融资；AEP 保留运营控制，同时为更大资本计划提供资金。[交易完成](https://www.aep.com/news/stories/view/10263/) |
+| 2025-06/07 | PSO 收购 Green Country 天然气电站 | `795MW`；PSO 2025Q2 三项发电资产总收购约 `$1.4B` | 用现成机组缩短 time-to-power，降低现货电力敞口。[公司公告](https://pr.aep.com/news/stories/read/10316/Green-Country-Power-Plant-Joins-PSO) |
+| 2026-03 | I&M 完成 Oregon Clean Energy Center 收购 | `870MW` CCGT；Q1 购置资产约 `$0.92B` | 直接增加 Indiana 高增长区 24×7 firm capacity。[监管批准](https://pr.aep.com/news/releases/read/10588/IM-Receives-IURC-Approval-for-Oregon-Clean-Energy-Center-Purchase) |
+| 2025-11 至 2026Q1 | 与 Quanta 建立 765kV EPC、EHV 主变/断路器制造合作；资本计划扩至 `$78B` | 2026—2030：输电 `$33B`、发电 `$24B`、配电 `$17B`、其他 `$4B` | 战略中心已变为“受监管电网和 firm power 扩产”；供应链 slot 本身成为竞争壁垒。[AEP/Quanta](https://www.aep.com/news/stories/view/10555/)、[2026Q1](https://docs.aep.com/docs/newsroom/resources/earnings/2026-05/1Q26EarningsReleasePresentation.pdf) |
+
+结论：AEP 过去三年不是在横向收购新行业，而是在**出售非核心非监管资产、以少数股权融资、买入可立即运行的发电资产、锁定输电和发电供应链**。它已从传统防御型 utility 变成资本开支更高、增长更快、但也更依赖融资和项目执行的 pure-play electric utility。
+
+### 1.4 最新股价、估值、增速与利润率
+
+| 指标 | 最新值 | 日期/计算口径 |
+|---|---:|---|
+| 股价 | `$135.43` | 2026-07-10 收盘；2026-07-11 为非交易日 |
+| 稀释前流通股 | `544.11M` | 2026-05-05 公司披露；市场数据沿用该数量 |
+| 市值 | `$73.69B` | 2026-07-10；`$135.43 × 544.11M` |
+| TTM PE | `20.04x` | TTM diluted EPS `$6.76` |
+| Forward PE（市场一致口径） | `21.10x` | 市场数据提供商口径 |
+| Forward PE（公司指引口径） | `21.50x` | `$135.43 ÷ 2026 operating EPS 指引中点 $6.30` |
+| TTM PS | `3.28x` | 市值 ÷ TTM 收入 `$22.433B` |
+| TTM 收入 | `$22.433B` | `FY2025 $21.876B - 2025Q1 $5.463B + 2026Q1 $6.020B` |
+| TTM 收入增速 | `+11.28%` | 上年同期 TTM 约 `$20.159B` |
+| 标准化 gross margin | `47.24%` | 第三方统一口径 gross profit `$10.60B`；utility 的 GAAP 报表不单列制造业式 gross profit |
+| 燃料/购电后毛差率 | `67.48%` | 研究计算：`收入 - purchased electricity/fuel/consumables`；不是 GAAP gross margin，后续仍须扣 O&M、折旧、税费 |
+| TTM operating margin | `25.11%` | 市场统一口径 |
+| TTM 净利润/净利率 | `$3.654B / 16.29%` | `FY2025 - 2025Q1 + 2026Q1` |
+| 年化股息/收益率 | `$3.80 / 2.81%` | 2026-07-10 |
+
+行情和统一财务比率来自 [StockAnalysis/S&P Global Market Intelligence 快照](https://stockanalysis.com/stocks/aep/statistics/)；TTM 收入、净利润和毛差由 [2025 10-K](https://docs.aep.com/docs/investors/filings/docs/AEP_10K_2025.pdf) 与 [2026Q1 10-Q](https://docs.aep.com/docs/investors/AEP10Q20261Q.pdf) 复算。`47.24%` 与 `67.48%` 不是同一口径：前者便于横向行情比较，后者更接近 utility 的能源毛差，二者都不能直接视为设备厂毛利率。
+
+### 1.5 资产负债表健康度
+
+| 指标 | 2026-03-31 | 评价 |
+|---|---:|---|
+| 总资产 / 净 PP&E | `$117.776B / $94.854B` | 资产质量以受监管电网和发电资产为主，可通过费率回收，但流动性低 |
+| 现金 / 临时投资 | `$306M / $210M` | 账面现金薄；依赖商业票据和循环额度符合 utility 常态 |
+| 流动资产 / 流动负债 | `$6.623B / $12.594B` | 流动比率 `0.53x`，营运资本约 `-$5.97B` |
+| GAAP 债务（含一年内到期） | `$51.109B` | 约含一年内到期 `$2.704B`；若扣现金和临时投资，净债务约 `$50.593B` |
+| 普通股权益 / 总权益 | `$31.808B / $32.978B` | 债务/普通股权益约 `1.61x`；债务资本比约 `61.6%`，落在公司 `60%—63%` 目标内 |
+| TTM CFO / CapEx / FCF | `$7.01B / $13.71B / -$6.70B` | 负 FCF 是增长型 utility 的结构特征，但意味着资本市场不能关闭 |
+| 可用流动性 | `$5.655B` | 2026 年 4 月循环额度已扩至 `$8B`；扣商业票据后净可用流动性仍可覆盖近端需求 |
+| S&P / Moody's / Fitch | `BBB / Baa2 / BBB`，均 Stable | 投资级，但不是高等级；S&P/Moody's FFO/debt `14.7%/13.9%`，Moody's 已略低于公司 `14%—15%` 目标下沿 |
+| 利率敏感性 | `+100bp ≈ -$36M/年税前利润` | 只针对浮息债务的公司披露敏感性，未计再融资成本 |
+
+资金计划的压力不应低估。AEP 预计 2026—2030 CFO `$47.1B`，而资本/JV 出资约 `$77.9B`、股息约 `$11.1B`，形成约 `$43B` 所需融资；计划包含约 `$45.5B` 债券市场活动、2025 forward equity 结算 `$1.8B`、DRIP `$0.9B`、ATM `$4B` 和 growth equity `$3B`。[2026Q1 融资计划](https://docs.aep.com/docs/newsroom/resources/earnings/2026-05/1Q26EarningsReleasePresentation.pdf)
+
+此外，AEP 在 2026-05 又签订 `23.543M` 股 forward sale，初始价格 `$124.968`，初始名义价值约 `$2.94B`，预期不晚于 2028-05-31 结算；若全部实物结算，相对 2026-05-05 股本的潜在稀释约 `4.3%`。[2026-05 8-K](https://www.sec.gov/Archives/edgar/data/4904/000119312526223988/d248447d8k.htm)
+
+**健康度结论：中等偏健康，但不宽松。**正面是受监管资产、稳定评级、`$5.7B` 左右可用流动性、客户出资及 minimum-demand 保护，以及 2025 年少数股权融资；负面是净债务超过 `$50B`、FCF 大幅为负、未来增发可见、Moody's FFO/debt 在目标下沿。只要监管回收、资本市场和大负荷项目三者正常，资本计划可执行；任一环节同时恶化都会迅速压缩股东回报。
+
+## 二、最新及最近四次财报：财务、分部和“订单”质量
+
+### 2.1 最近五个季度核心财务
+
+| 财报季度 | 收入 / YoY | GAAP 净利润 / EPS | Operating earnings / EPS | GAAP 净利率 | Operating-earnings/收入代理 | 关键解释 |
+|---|---:|---:|---:|---:|---:|---|
+| [2025Q1](https://www.aep.com/news/stories/view/10188/) | `$5.463B / +8.7%` | `$800M / $1.50` | `$823M / $1.54` | `14.6%` | `15.1%` | commercial load `+12.3%`；Ohio 大负荷 tariff 当时尚待批准 |
+| [2025Q2](https://www.aep.com/news/stories/view/10354/) | `$5.087B / +11.1%` | `$1,226M / $2.29` | `$766M / $1.43` | `24.1%` | `15.1%` | GAAP 利润受 FERC 对 transmission NOLC 处理的一次性利好显著抬高，不应外推 |
+| [2025Q3](https://www.aep.com/news/stories/view/10534/) | `$6.010B / +10.9%` | `$972M / $1.82` | `$963M / $1.80` | `16.2%` | `16.0%` | 首次发布 2026 EPS 指引及 `$72B` 资本计划，长期增长目标提高至 `7%—9%` |
+| [2025Q4](https://www.aep.com/news/stories/view/10752/) | `$5.314B / +13.2%` | `$582M / $1.09` | `$638M / $1.19` | `11.0%` | `12.0%` | 全年 retail sales `+7.5%`，C&I `+9.9%`；签约负荷从 28GW 跳至 56GW |
+| [2026Q1](https://www.aep.com/news/stories/view/11917/) | `$6.020B / +10.2%` | `$874M / $1.61` | `$891M / $1.64` | `14.5%` | `14.8%` | C&I 销量 `+13.6%`、非燃料收入 `+15.5%`；签约负荷增至 63GW，资本计划增至 `$78B` |
+
+`Operating-earnings/收入`只用于观察核心盈利稳定性，不是公司定义的利润率。五季收入均两位数或接近两位数增长，说明增长已在财务中出现；但收入同时受天气、燃料、购电和竞争零售价格影响，不能把全部增量归因于 AI。
+
+### 2.2 最近五季分部收入、增速与贡献利润率
+
+下表格式为“分部总收入（含内部） / YoY / GAAP 分部归母利润÷分部总收入”。最后一项是研究用贡献利润率，不是 GAAP gross margin；AEPTH 内部收入会在合并时抵销。
+
+| 财报季度 | VIU | T&D | AEPTH | G&M |
+|---|---:|---:|---:|---:|
+| 2025Q1 | `$3.138B / +6.4% / 10.3%` | `$1.527B / +2.5% / 10.8%` | `$0.542B / +9.0% / 43.3%` | `$0.747B / +32.6% / 13.7%` |
+| 2025Q2 | `$3.015B / +15.1% / 14.4%` | `$1.450B / +1.0% / 15.4%` | `$0.757B / +54.4% / 76.4%` | `$0.566B / +21.1% / 11.0%` |
+| 2025Q3 | `$3.586B / +8.6% / 16.1%` | `$1.689B / +7.2% / 15.8%` | `$0.573B / +11.8% / 34.9%` | `$0.713B / +42.8% / 6.2%` |
+| 2025Q4* | `$3.080B / +13.0% / 8.8%` | `$1.481B / +5.3% / 10.8%` | `$0.505B / +11.9% / 29.3%` | `$0.736B / +43.0% / 10.6%` |
+| 2026Q1 | `$3.440B / +9.6% / 13.4%` | `$1.609B / +5.4% / 14.7%` | `$0.598B / +10.3% / 34.9%` | `$0.952B / +27.4% / 7.9%` |
+
+资料来自各季 10-Q、[2025 10-K](https://docs.aep.com/docs/investors/filings/docs/AEP_10K_2025.pdf) 和 [2026Q1 10-Q](https://docs.aep.com/docs/investors/AEP10Q20261Q.pdf)。`*` 2025Q4 为 FY2025 减去前九个月推导；所有推导均在同一分部口径下完成。2025Q2 AEPTH `76.4%` 明显受约 `$214M` NOLC 相关收入影响，正常化不能按该季度利润率外推。
+
+### 2.3 Backlog、Bookings、B2B、交期和取消率：AEP 应如何读
+
+AEP 不披露制造业式 backlog、bookings 或 book-to-bill；可替代指标是 **签约增量负荷、ESA/LOA 成熟度、interconnection queue、预计上电年和客户资本承诺**。
+
+| 财报季度 | 签约增量负荷 | 数据中心/工业结构 | 活跃 queue | 交付与合同质量 | 取消/延期观察 |
+|---|---:|---|---:|---|---|
+| 2025Q1 | `21GW`（公司写作 20+GW） | `13GW` 数据中心、`6GW` 工业、`2GW` 其他 | 近 `180GW` | 均有 ESA/LOA；已披露 New Carlisle `2.2GW`、Columbus 两组约 `3.3GW`、Corpus Christi LNG `0.85GW` 等 | 未披露取消率；仍是早期合约池 |
+| 2025Q2 | `24GW` | `18GW` 数据中心、`6GW` 工业 | 约 `190GW` | minimum-demand 开始成为收入保护；系统 peak demand 从 `33.5GW` 升至 `37.6GW` | 公司不披露 lead time/取消率；收入与 peak demand 同步但不是 24GW 全部投产 |
+| 2025Q3 | `28GW` | `79%` 数据中心、`21%` 工业 | 约 `190GW` | 预计累计上电 `2/6/12/19/25/28GW`（2025—2030） | 近端项目需要 firm ESA/Construction Commitment；PJM 后续加强去重 |
+| 2025Q4 | `56GW` | `88%` 数据中心、`12%` 工业 | 约 `180GW` | ERCOT/PJM/SPP `36/15/5GW`；PJM 约 `90%` ESA，SPP `33%` ESA；ERCOT 100% SB6-compliant LOA | 负荷翻倍主要来自 Texas LOA；发电充足性而非客户兴趣成为约束 |
+| 2026Q1 | `63GW` | `89%` 数据中心、`11%` 工业 | 约 `190GW` | ERCOT/PJM/SPP `41/16/6GW`；PJM `~95%` ESA，SPP `~45%` ESA；累计上电 `7/17/33/49/63GW` | AEP Texas 41GW 的时间依赖第三方新增发电；Batch Zero 2026-08 才给项目分类 |
+
+资料：[2025Q1](https://docs.aep.com/docs/newsroom/resources/earnings/2025-05/1Q25EarningsReleasePresentation.pdf)、[2025Q2](https://docs.aep.com/docs/newsroom/resources/earnings/2025-07/2Q25EarningsReleasePresentation.pdf)、[2025Q3](https://docs.aep.com/docs/newsroom/resources/earnings/2025-10/3Q25EarningsReleasePresentation.pdf)、[2025Q4](https://docs.aep.com/docs/newsroom/resources/earnings/2026-02/4Q25EarningsReleasePresentation.pdf)、[2026Q1](https://docs.aep.com/docs/newsroom/resources/earnings/2026-05/1Q26EarningsReleasePresentation.pdf)。
+
+**渠道交叉验证与 haircut：**
+
+- AEP Ohio 在 tariff 前收到超过 `30GW` 兴趣，只有 `13.023GW` 付费进入正式 study，最终 `5.642GW` 签下新 tariff 的 binding contract；即原始兴趣到 binding 的转化率仅 `18.8%`，study 到 binding 为 `43.3%`。加上 tariff 前合同，Ohio 共 `17.861GW` 数据中心合同，分期到 2035；这证明普通 queue 必须大幅 haircut，也解释为什么公司 2030 口径只有约 `12GW` Ohio 负荷。[AEP Ohio 2026-02 更新](https://www.aepohio.com/company/news/view?releaseID=10753)
+- Ohio 的 25MW+ tariff 合同 12 年、包含 4 年 ramp，minimum demand 通常为 `85%`，并有担保和退出费；Indiana/West Virginia 通常 `80%`、12—17 年，Kentucky `90%`、20 年。[AEP tariff 表](https://docs.aep.com/docs/investors/eventspresentationsandwebcasts/May_2026_Investor_Handout.pdf)
+- ERCOT 2026-06 披露全市场追踪超过 `438GW` 大负荷请求、约 `89%` 来自数据中心；这远超系统可承载量。Batch Zero 将 75MW+ 项目批量评估，2026-08 才通知分类，最终全州输电方案预计 2027 年秋发布。[ERCOT/PUCT](https://www.ercot.com/news/release/06182026-puct-approves-ercots)
+- PJM 2026 forecast 已因更严格的 firm commitment 和去重，将 2032 年前大负荷预测下修；这说明 LOA/ESA 也必须结合 site control、重复申请、发电来源和实际建设节点分析。[PJM 2026 forecast 说明](https://insidelines.pjm.com/pjms-updated-20-year-forecast-continues-to-see-significant-long-term-load-growth/)
+- AEP 没有公开历史取消率。基于 tariff，**经济取消损失**应低于普通 queue；基于变压器、线路和发电交期，**按期上电率**仍可能显著低于 100%。报告后续情景因此分别建模“合同最终实现率”和“按原时间上电率”。
+
+### 2.4 AI/数据中心相关收入占比：公司不披露，必须估算
+
+AEP 只披露 residential/commercial/industrial，不披露 data center revenue，更不区分 AI training、cloud、colocation 和 crypto。以下为研究估算，包含可归因于数据中心的 bundled retail、wires 和 transmission revenue；**不是公司口径，也不能把 89% 签约负荷结构当成当前收入结构。**
+
+| 财报季度 | 估计 AI/数据中心相关收入 | 占合并收入 | 依据与置信度 |
+|---|---:|---:|---|
+| 2025Q1 | `$0.35—0.50B` | `6%—9%` | commercial load `+12.3%`，但大量合同尚未 tariff 化；低置信度 |
+| 2025Q2 | `$0.35—0.55B` | `7%—11%` | C&I peak/revenue 增长、minimum demand 开始贡献；低置信度 |
+| 2025Q3 | `$0.45—0.65B` | `7%—11%` | 28GW 合同、PJM/Ohio 项目继续 ramp；低置信度 |
+| 2025Q4 | `$0.45—0.65B` | `8%—12%` | C&I 全年销量 `+9.9%`，但新增 28GW→56GW 主要是未来 Texas LOA；低置信度 |
+| 2026Q1 | `$0.55—0.75B` | `9%—12%` | commercial revenue `$1.208B`、同比 `+15.4%`；C&I 非燃料收入 `+15.5%`；低至中置信度 |
+| TTM 至 2026Q1 | `$1.8—2.6B` | `8%—12%` | TTM commercial revenue约 `$4.855B`，再分配少量 transmission/wires；范围反映非数据中心商业客户和 Texas wires-only 差异 |
+
+估算方法：从 10-Q commercial revenue、各州大型客户项目、minimum-demand 收入和 T&D load growth 建立上限，再剔除普通商业客户；对 Texas 仅确认 wires 收入，不按 bundled power 计算。即便该范围正确，其中也含传统云、存储和 crypto，真正“生成式 AI”收入更低，无法从公开资料可靠拆分。
+
+## 三、2026 最新指引、业务占比与重点产品/项目
+
+### 3.1 2026Q1 指引与关键经营目标
+
+| 指标 | 最新指引/目标 | 投资含义 |
+|---|---:|---|
+| 2026 operating EPS | `$6.15—6.45`；中点 `$6.30` | 较 2025 实际 `$5.97` 增 `5.5%`；公司口径以 2025 guidance midpoint `$5.85` 为基准约增 `7.7%` |
+| 2026 估计 GAAP EPS | `$6.12—6.42` | 仅反映 Q1 已知特殊项，后续仍可能变化 |
+| 长期 operating EPS 增速 | `7%—9%`；2026—2030 CAGR `>9%` | 2026—2027 在区间下半部，2028 后随大项目投产加速 |
+| 2026 资本开支 | 约 `$13B` | Q1 construction expenditures `$2.83B`，年化与计划基本一致 |
+| 2026—2030 资本计划 | `$78B` | transmission `$33B`、generation `$24B`、distribution `$17B`、other `$4B` |
+| rate base | 2026E 约 `$85B`，2030E 约 `$134B` | 约 `11%` CAGR；其中 transmission 2025A/2026E/2030E 约 `$32/34/55B` |
+| 2026 新增签约负荷上电 | 累计 `7GW` | 不是 63GW；2027 年累计预计 `17GW` |
+| FFO/debt | `14%—15%` | 约束资本计划和增发规模 |
+| 股息 payout | operating earnings 的 `50%—60%` | 增长与分红之间保留融资空间 |
+
+公司并未给出 2026 revenue guidance。Operating EPS 增长比收入更可控，因为燃料/购电 pass-through 会放大收入波动，却未必改变利润。[2026Q1 演示材料](https://docs.aep.com/docs/newsroom/resources/earnings/2026-05/1Q26EarningsReleasePresentation.pdf)
+
+### 3.2 2026Q1 收入、增速和利润贡献
+
+| 分部 | 外部收入 | 占比 | 外部收入 YoY | Operating earnings | 分部 EPS | 本季重点 |
+|---|---:|---:|---:|---:|---:|---|
+| VIU | `$3.365B` | `55.9%` | `+9.0%` | `$464M` | `$0.86` | rate changes、正常化销量和 transmission revenue 增长；I&M load `+18.7%` |
+| T&D | `$1.594B` | `26.5%` | `+5.2%` | `$237M` | `$0.44` | AEP Ohio/AEP Texas weather-normalized load 合计 `+15.8%` |
+| AEPTH | `$0.127B` 外部；`$0.598B` 含内部 | `2.1%` 外部 | `+9.5%` 外部；总收入 `+10.3%` | `$209M` | `$0.39` | continued transmission investment；仍是最高质量利润来源 |
+| G&M | `$0.931B` | `15.5%` | `+27.5%` | `$90M` | `$0.17` | 高电价令 retail/trading revenue 增长，但购电/燃料成本增长更快，GAAP earnings 反而下降 |
+| Corporate | `$0.003B` | `0.0%` | N/M | `-$109M` | `-$0.22` | 利息、税项、投资收益和完成项目递延收入减少拖累 |
+
+收入来自 [2026Q1 10-Q revenue note](https://docs.aep.com/docs/investors/AEP10Q20261Q.pdf)，operating earnings/EPS 来自 [2026Q1 presentation](https://docs.aep.com/docs/newsroom/resources/earnings/2026-05/1Q26EarningsReleasePresentation.pdf)。AEPTH 外部收入只占 `2.1%`、却贡献 `$209M` operating earnings，进一步说明不能用合并外部收入占比评估输电。
+
+按最终客户/收入类型拆分，2026Q1 的结构如下；这比报告分部更接近“卖了什么”，但 commercial 仍未单列 data center。
+
+| 2026Q1 收入类型 | 收入 | 占合并收入 | YoY | 解释 |
+|---|---:|---:|---:|---|
+| Residential | `$2.097B` | `34.8%` | `+0.3%` | 仍是最大单一收入池，受天气/费率影响 |
+| Commercial | `$1.208B` | `20.1%` | `+15.4%` | 数据中心主要计在此，但也含大量普通商业客户 |
+| Industrial | `$0.777B` | `12.9%` | `+4.9%` | 制造、LNG、steel 等大负荷 |
+| Other retail | `$0.074B` | `1.2%` | `+7.2%` | 市政照明等 |
+| Generation wholesale | `$0.414B` | `6.9%` | `+16.3%` | 不含捆绑零售电价中的全部发电价值 |
+| Transmission external | `$0.444B` | `7.4%` | `+14.1%` | 已剔除内部抵销后的外部收入，低估整个输电业务经济贡献 |
+| Competitive retail/trading | `$0.749B` | `12.4%` | `-8.9%` | 市场价格、交易与抵销影响大；G&M 总收入增长不等于该子项增长 |
+| Other customer-contract revenue | `$0.158B` | `2.6%` | `+36.2%` | 工程/其他服务收入 |
+| Alternative/other revenue | `$0.099B` | `1.6%` | N/M | 2025Q1 为 `-$0.168B`，受 MTM/alternative-revenue 等影响，不宜外推 |
+
+这组数据也解释了 AI 叙事的边界：即使把 commercial 全部算作数据中心，上限也只有 `20.1%`；现实中必须剔除普通商业客户，再加入少量可归因的 transmission/wires，因此本报告对 2026Q1 的 data-center-wide 估计仍取 `9%—12%`。
+
+### 3.3 公司“产品”不是 SKU：重点项目和型号映射
+
+| 重点业务/产品化方案 | AEP 自有产品/资产 | 关键型号/项目 | 当前规模和阶段 | 预计利润属性 |
+|---|---|---|---|---|
+| 765kV 输电与变电 | 线路、变电站、FERC formula-rate 资产、Delta tower 设计、competitive transmission JV | SPP 315 英里、PJM 约 330 英里、MISO 近 200 英里；Piketon 10GW campus 的 765kV 接入 | 现有 >2,100 英里；2026Q1 新获项目令五年输电计划增 `$3.5B` | 受监管回报；AEPTH 正常化贡献利润率约 `30%—40%`，主要看 allowed ROE、资本结构、regulatory lag |
+| 大负荷 tariff / interconnection service | Ohio DCT、Indiana/West Virginia/Kentucky large-load tariff、Texas LOA/SB6 流程 | Ohio 25MW+、85% minimum demand、12 年；Indiana 70MW+、80%、12—17 年；Kentucky 150MW+、90%、20 年 | 63GW 合同；PJM 95% ESA、SPP 45% ESA；Texas 41GW 待 Batch Zero 分类 | 不是自由定价；增量负荷分摊固定成本，增量利润率高于平均，但受监管回报上限约束 |
+| 新建/收购 firm generation | CCGT/peaker、风光、BESS、capacity/PPA | Welsh 1,056MW；Sycamore 918MW；Oregon 870MW；Hallsville/Northeastern 各 450MW；Big Sandy 318MW；另有多个风光储项目 | 约 32GW 自有及签约能力；已锁定 >10GW gas-turbine capacity；五年 generation capex `$24B` | VIU 贡献利润率约 `10%—16%`；燃料多 pass-through，回报来自 rate base/容量，不是押注 gas spread |
+| SOFC customer-sited power | AEP 负责采购、持有/建设、运营或签 offtake；设备由 Bloom 制造 | Bloom Energy Server 6.5，`325kW`；Ohio 两份合同约 `98MW`；Scioto Darby Creek `72.9MW/228台`；Wyoming `$2.65B` | Ohio 已获批、Scioto 预计 2026 秋—2027 秋建设；Wyoming 20 年 100% offtake，先决条件公开状态未确认 | AEP 合同回报未披露；行业 Power-as-a-Service EBITDA 约 `20%—40%`，但 stack replacement、燃气和融资决定真实回报 |
+| Gigawatt AI utility OS | AEP 的 15% equity-method 投资 + 永久软件许可 | utility operations、customer service、finance、compliance、technology 等模块 | AEP 累计投入 `$150M`，已两次触发里程碑；最多再投 `$50M` 增持至 20% | 当前无披露收入、可能仍亏损；成熟软件 gross margin 可高，但 AEP 近端价值更可能先体现为 O&M/运营效率而非合并收入 |
+
+### 3.4 重点与突出产品；明确跳过的低优先级业务
+
+**最突出、必须跟踪：**
+
+1. 765kV 线路、EHV transformers/breakers、AEP/Quanta EPC 与制造产能；这是 2026 earnings 超过一半的真正来源。
+2. Ohio/PJM 和 Texas/ERCOT 的大负荷 contract-to-energization；其中 Texas 41GW 是最大弹性，也是最大可实现性风险。
+3. >10GW gas-turbine slot 和 2026—2030 `$24B` generation plan；没有 firm generation，Texas LOA 不能按期上电。
+4. Bloom SOFC 98MW Ohio + Wyoming 项目；规模现在很小，却是最快绕开 grid wait 的可选路径。
+5. Gigawatt AI；这是 AEP 真正直接持股的 AI 软件资产，当前收入极小，但不能漏掉。
+
+**列出但不作为 AI 增长主线建模：**
+
+- **普通 residential service：**2025 收入 `$7.754B`、基盘巨大，增长主要受天气和费率影响，不是 AI 弹性来源。
+- **legacy coal/nuclear/hydro：**对可靠性和现金流重要，但除延寿/退役替换外增长低；Cook 核电、Rockport/其他煤电不能因为非 AI 而忽略其供电作用，但不按成长产品估值。
+- **AEP Energy 普通 competitive retail/trading：**2026Q1 G&M 收入增长 `27%`，主要来自市场价格，购电成本也同步上升，缺乏受监管 moat；不把高收入增速误判成 AI 产品增速。
+- **普通配电更新、植被管理、风暴恢复：**是 `$17B` distribution plan 的必要部分，但只把大负荷专用和可归因的增量设施纳入 AI 弹性。
+- **小型非数据中心风光项目与普通 REC：**对 clean-energy mix 有用，若没有大负荷/容量合同，不作为报告重点。
+
+## 四、每个高增长或关键业务的当前贡献、AI 重要性与定价权
+
+评分均为 `1—5`：`5` 表示对 AI 基建最重要/最紧急/最供不应求/垄断或溢价能力最强。收入估算中“模型”不是公司披露；交叉业务会重叠，不能相加。
+
+| 关键业务 | 当前收入/经济贡献 | 当前增长锚 | 当前利润率/回报锚 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断能力 | 溢价能力 |
+|---|---:|---:|---|---:|---:|---:|---:|---:|
+| 765kV/高压输电、AEPTH 与 opco transmission | **模型 `$5.0—6.2B`**；2026E transmission operating earnings 约 `$1.81B`（`$3.34×~542M`） | Q1 AEPTH 总收入 `+10.3%`；transmission rate base 2025A→2026E `$32B→$34B` | Q1 AEPTH GAAP 贡献利润率 `34.9%`；受监管 ROE/资本结构决定长期回报 | `5.0` | `5.0` | `4.5` | `4.5` | `4.0` |
+| 数据中心/大负荷接入、配电和 minimum-demand service | **模型 TTM `$1.8—2.6B`**，约占合并收入 `8%—12%` | Q1 C&I 销量 `+13.6%`、非燃料收入 `+15.5%`；T&D normalized load `+15.8%` | 分部平均 T&D `14.7%`、VIU `13.4%`；增量固定成本吸收可更高但受监管 | `5.0` | `5.0` | `4.5` | `4.5` | `3.5` |
+| 新 firm generation：气电、可再生、BESS、capacity/PPA | 直接 generation revenue TTM **`$1.278B`**；更大部分嵌入 VIU retail，无法单拆；VIU TTM 外部收入 `$12.835B` | FY2025 generation revenue `$1.220B`、同比约 `+43%`；VIU TTM 总收入约 `+11%` | Q1 VIU 贡献利润率 `13.4%`；燃料 pass-through，rate-base/容量收益比能源毛利更重要 | `5.0` | `5.0` | `5.0`（turbine slot） | `3.0` | `3.0` |
+| Bloom SOFC customer-sited power | 当前商业收入**接近 0 或未披露**；已承诺设备/项目资本超过 `$2.65B`，另有 Ohio 约 `98MW` | 从极小基数起步；Ohio 首个 72.9MW 项目计划 2026 秋开工 | AEP 项目回报未披露；行业 PaaS EBITDA 模型 `20%—40%`，Bloom OEM 经济性不能直接套给 AEP | `4.5` | `5.0` | `5.0` | `2.5` | `3.0` |
+| Gigawatt AI utility operating system | 合并收入/权益收益**未披露、目前不重要**；AEP 投资 `$150M`、持股 `15%`，隐含里程碑估值约 `$1.0B` | 2026-01 与 2026-04 两次达成里程碑、各增持 `2.5%` | 早期研发期可能亏损；成熟 SaaS gross margin 可高，但目前无可验证利润率 | `2.5` | `3.0` | `2.0` | `2.0` | `2.0` |
+
+### 4.1 765kV 输电：最确定的增长引擎
+
+- **美元贡献如何估：**公司只披露 transmission EPS，不披露完整合并输电收入。以 2026E transmission rate base `$34B` 乘 `15%—18%` 年 revenue requirement（覆盖折旧、税、O&M、债务和股本回报），得到 `$5.1—6.1B`；与 2026E operating earnings约 `$1.81B` 和分部利润率交叉校验后，报告取 `$5.0—6.2B`。
+- **技术重要性：**一条 765kV 线路可输送约六条 345kV 线路的功率，并减少走廊数量；这不是实验性新技术，而是大规模跨区输送的成熟主流。AEP 的新 Delta tower 设计改善施工和材料效率，但核心 moat 是 60 年工程标准、30 座 765kV 变电站、既有 right-of-way、RTO 信誉和调度经验。[AEP 765kV 设计](https://www.aep.com/news/stories/view/10771/)
+- **订单/项目：**2026Q1 披露 SPP 项目约 `$1.6B`、PJM 项目约 `$1.9B`，令五年 transmission plan 从 `$30B` 增至 `$33B`；另有 MISO 近 200 英里项目，主要 2034 投产。Piketon 10GW campus 的 `$4.2B` transmission investment 不在 `$33B` base plan 内，预计 2029 开始送电且客户 SB Energy 承担投资；公开资料尚未说明客户出资将以何种 CIAC/rate-base/服务费会计和监管结构回收，因此不能直接用 `$4.2B×allowed ROE` 推算 AEP 利润。[Piketon](https://www.aep.com/news/stories/view/10823/)
+- **供需与价格：**AEP 不卖主变，因此设备涨价首先增加 rate base；只有获准回收后才转化为收入。Quanta 合作覆盖 765kV EPC、EHV transformer 和 breaker 国内制造，降低 slot 风险；但 DOE 的 `3—4年` LPT 交期、熟练工、FAT test bay 和许可仍限制速度。
+- **垄断边界：**在自有特许区域和既有网络内接近自然垄断；在 competitive transmission open window 中仍要与 Dominion、FirstEnergy、ITC、LS Power、Berkshire/其他 JV 竞争，不能用 100% franchise monopoly 假设所有新项目。
+
+### 4.2 大负荷接入和 tariff：合同价值高，收入确认慢
+
+- **现有收入贡献：**以 TTM commercial revenue `$4.855B` 为上限，根据已投产大客户、C&I 增量和 wires/transmission 收入估计数据中心相关 `$1.8—2.6B`。这是 data-center-wide 口径；AI-only 无法验证。
+- **每 MW 经济性：**在 VIU 捆绑费率区，1MW 以 `85%—95%` load factor 运行，每年用电 `7,446—8,322MWh`；若全电价 `$70—120/MWh`，年度 gross bill 约 `$0.52—1.00M/MW`。在 AEP Texas/Ohio wires-only 区域，AEP 只确认输配电部分，报告估计 `$0.08—0.25M/MW·年`，其余归发电商/零售商/RTO。
+- **合同定价权：**Ohio DCT 对 25MW 以上负荷设置 12 年合同和强 minimum bill；Indiana、Kentucky、West Virginia 也有 `80%—90%` minimum demand。该结构使客户即使 ramp 延迟也付固定费用，AEP Q1 已明确称 minimum-demand 保护 revenue stability。
+- **物理交付约束：**截至 2026Q1，PJM 16GW 中约 15.2GW 有 ESA、SPP 6GW 中约 2.7GW 有 ESA；加权只有 `17.9GW/63GW=28.4%` 有 ESA，但 ERCOT 41GW 在制度上只签 LOA，所以不能简单把 71.6% 判为“非 firm”。Texas 的核心问题是 generation adequacy 与 Batch Zero，而非 ESA 缺失。
+- **最新外部验证：**2026-07-08 AEP Texas 签署最高 `$3.26B` DOE 贷款，覆盖近 100 个、约 2,800 英里重建/增容项目，预计 30 年为客户节约 `$685M`；公告仍引用 41GW LOA，说明 Q1 后公开承诺量未再上调。[AEP Texas 贷款](https://www.aep.com/news/stories/view/12063/)
+
+### 4.3 新发电与储能：没有 firm power，签约负荷只是纸面需求
+
+- AEP 2025 年经营公司收购约 `2.2GW` 发电资源；Green Country 795MW 和 Oregon 870MW 是最快的已投产容量。2026Q1 后项目表还包括 Sycamore 918MW、Welsh 1,056MW、Hallsville/Northeastern 各 450MW、Big Sandy 318MW，以及 Lake Trout/Mayapple/Algodon solar、Lazbuddie/Grover Hill wind 和 Northeastern/Dover/Rock Falls storage。
+- 公司已从主要 OEM 锁定 **超过 10GW gas-turbine capacity**，但“slot 已锁定”不是“电站已投产”：仍须 CPCN、air permit、gas pipeline、RTO interconnection、EPC 和 commissioning。I&M 的 Sycamore 918MW 预计 2026 年末取得决定、2029 年投产，就是典型时序。[Sycamore filing](https://www.aep.com/news/stories/view/11850/)
+- 2025 generation revenue 从 `$0.851B` 境长到 `$1.220B`（`+43%`），其中 G&M/VIU 均有贡献；但 bundled retail 中的 generation component 未单列，不能把 `$1.220B` 当成全部发电经济贡献。[2025 10-K revenue note](https://docs.aep.com/docs/investors/filings/docs/AEP_10K_2025.pdf)
+- 产业供给极紧：重型 CCGT 一般 `24—48个月以上`，数据中心级 installed cost 约 `$1.2—2.5M/MW`；气源、NOx permit、HRSG、变压器和施工人力都可能成为 critical path。AEP 的低 WACC、监管回收和已锁设备位置形成优势，但设备 OEM 才拥有真正的 turbine pricing power。
+
+### 4.4 SOFC：小收入、大资本、最快的 time-to-power 可选性
+
+- 2024-11 AEP 与 Bloom 签 100MW 初始采购并可追加 900MW；2026-01，AEP 未受监管子公司无条件签下“900MW option 的大部分”，设备金额约 `$2.65B`，并与高投资级客户签 20 年、100% output offtake。[AEP 8-K](https://www.sec.gov/Archives/edgar/data/4904/000000490426000003/aep-20260104.htm)
+- 公司未披露 Wyoming 名牌容量。用行业 installed capex `$3.0—5.5M/MW` 反推，`$2.65B` 对应约 `482—883MW`，与“900MW option 的大部分”一致；这只是范围估算，不是确认容量。
+- Ohio 两份 PUCO 批准合同约 `98MW`；其中 Scioto Darby Creek 为 AWS、`72.9MW/228台`，即每台约 `320kW`，与 Energy Server 6.5 的 `325kW` 匹配。项目已在 2025-09 获 Ohio Power Siting Board 批准，计划 2026 秋至 2027 秋施工，AWS 承担设备、pipeline 等全部成本。[AEP Ohio 项目页](https://www.aepohio.com/community/projects/scioto-darby-creek/)
+- Energy Server 6.5 为 325kW、400/415/480V、初期到寿命累计效率 `65%→53%`、正常运行不用水、噪声 `<65dBA`；具备 ANSI/CSA FC1、UL 1741、IEEE 1547-2018 等认证。[Bloom 2026 datasheet](https://www.bloomenergy.com/wp-content/uploads/bloom-energy-server-datasheet-feb-2026.pdf)
+- 关键风险：每个 power module 约五年更换、天然气和 stack degradation、单一供应商、Ohio 合同诉讼，以及 Wyoming offtake 的先决条件。AEP 在 Q1 仍预计条件于 2026Q2 满足；截至 2026-07-11，AEP/SEC 公共 filings 未见确认完成的更新，因此报告保持“待确认”，不能默认 closing。
+
+### 4.5 Gigawatt AI：真正 AI 软件敞口，但仍是早期 option
+
+- 2025-08 AEP 先投 `$100M` 获 `10%`，并取得 `$50M` 买入额外 5% 的 warrant；2026-01、04 因性能里程碑各投 `$25M`、各增持 `2.5%`。截至 2026-04 持股 `15%`、累计成本 `$150M`，未来还可投 `$50M` 增至 20%，并取得永久软件许可。[SEC 2026Q1 注释](https://www.sec.gov/Archives/edgar/data/4904/000000490426000034/R66.htm)
+- 产品覆盖 utility operations、outage/field coordination、customer service、billing、finance、compliance、capital planning 和 legacy-system integration。[Gigawatt use cases](https://gigawatt.ai/use-cases/)
+- 近端价值更可能是 AEP 自身 O&M 效率、收入保障、预测和资产可靠性，而非对外 SaaS 收入。公司未披露客户、ARR、毛利、模型供应商或生产部署规模；本报告不给它当前收入。
+- 竞争并不弱：Oracle Utilities、SAP、IBM、Palantir、C3.ai、GE Vernova GridOS、Schneider、Uplight 及 utility 自研都可替代。utility 数据、工作流、监管规则和永久许可带来切换成本，但产品尚未建立公开 installed base moat。
+
+## 五、一年以后收入贡献、增速与三种情景
+
+### 5.1 情景定义与可复核公式
+
+预测期为未来 12 个月、约截至 2027-06-30；基准财务为 TTM 2026-03-31。三情景并非目标价情景，而是 project-to-revenue 转化情景。
+
+| 假设 | 基准 B | 乐观 O | 极度乐观 X |
+|---|---:|---:|---:|
+| 已排定大负荷按原时间上电率 | `70%—80%` | `85%—95%` | `95%—99%` |
+| signed load 最终实现率 | `75%—88%` | `88%—95%` | `95%—99%` |
+| 2026—27 年均资本部署能力 | `$13—14.5B` | `$14.5—16B` | `$16—18B` |
+| 新增负荷平均利用率 | `75%—85%` | `85%—92%` | `92%—97%` |
+| 监管/设备进度 | 现有计划、有延迟 | transformer/permit 好于预期、部分 line-of-sight 提前 | Batch Zero、发电、EHV 设备和监管同时顺利 |
+
+核心公式：
+
+1. `新增售电收入 = energized MW × 8,760h × load factor × effective $/MWh × AEP revenue-recognition share`；VIU 的 share 接近 100%，wires-only T&D 约 15%—35%。
+2. `输电/配电收入 requirement ≈ in-service rate base × 10%—18%`；区间覆盖折旧、税、O&M、债务和股本回报，不等于净利润。
+3. `股本盈利 ≈ equity rate base × allowed/earned ROE`；AEP 当前 regulated earned ROE `9.3%`，2030 目标约 `9.5%`。
+4. `63GW contracted load` 和 `190GW queue` 均不直接进入收入；只有进入 construction、energized、billing/minimum-demand 的部分进入预测。
+
+### 5.2 非重叠的公司分部收入预测
+
+| 分部 | 当前 TTM 外部收入 | B：一年后收入/增速 | O：一年后收入/增速 | X：一年后收入/增速 | 主要驱动 |
+|---|---:|---:|---:|---:|---|
+| VIU | `$12.835B` | `$13.7B / +7%` | `$14.2B / +11%` | `$14.9B / +16%` | rate cases、I&M/PSO load、新收购发电资产、燃料价格 |
+| T&D | `$6.176B` | `$6.8B / +10%` | `$7.1B / +15%` | `$7.6B / +23%` | Ohio/Texas large-load ramps、minimum bills、DOE 贷款项目 |
+| AEPTH（外部） | `$0.504B` | `$0.56B / +11%` | `$0.59B / +17%` | `$0.64B / +27%` | rate base 投产；该口径不含大量内部输电收入 |
+| G&M | `$2.898B` | `$3.0B / +4%` | `$3.18B / +10%` | `$3.34B / +15%` | retail/trading 价格和销量；利润弹性低于收入弹性 |
+| Corporate/Other | `$0.020B` | `$0.02B` | `$0.02B` | `$0.02B` | 不作为增长项 |
+| **AEP 合并** | **`$22.433B`** | **`$24.0B / +7%`** | **`$25.1B / +12%`** | **`$26.5B / +18%`** | 分部预测经四舍五入；燃料/购电价格会显著影响收入、对利润影响较小 |
+
+### 5.3 关键增长引擎的交叉业务预测
+
+以下收入/经济贡献相互重叠，不可与分部表相加。
+
+| 增长引擎 | 当前贡献 | B：一年后 | O：一年后 | X：一年后 | 一年后利润率/回报判断 |
+|---|---:|---:|---:|---:|---|
+| 765kV/全部输电经济收入 | 模型 `$5.0—6.2B` | `$5.6—6.9B`，约 `+10%—12%` | `$5.9—7.4B`，`+17%—22%` | `$6.4—8.0B`，`+28%—35%` | 贡献利润率约 `32%—38%`；X 情景受 AFUDC、project mix 和 regulator timing 影响，不会像设备 OEM 一样无限提价 |
+| AI/数据中心大负荷收入 | 模型 `$1.8—2.6B` | `$2.2—3.2B`，`+25%—40%` | `$3.0—4.3B`，`+60%—80%` | `$4.0—5.8B`，`+110%—150%` | blended segment margin约 `15%—20%`；增量固定成本吸收较好，Texas wires-only 拉低 revenue/MW |
+| 直接 generation revenue | `$1.278B`；另有 bundled retail 内嵌收入 | `$1.4—1.6B`，`+10%—25%` | `$1.6—1.9B`，`+25%—50%` | `$1.9—2.4B`，`+50%—90%` | VIU 贡献利润率约 `12%—16%`；燃料 pass-through 使 revenue 高增不等于 margin 扩张 |
+| SOFC/PaaS revenue | 约 `$0—0.02B`，未单披露 | `$0—0.05B` | `$0.05—0.15B` | `$0.15—0.35B` | B 仍处施工；O/X 取决于 Ohio 分期投运或 Wyoming 提前。项目 EBITDA 模型 `20%—40%`，低置信度 |
+| Gigawatt AI 对 AEP 的权益收益/可量化节约 | `$0` 或未披露 | `$0—0.01B` | `$0.01—0.03B` | `$0.03—0.075B` | 不是 consolidated revenue；X 假设出现外部付费客户和显著内部节约，仍属高风险 option |
+
+### 5.4 一年后 AI 重要性、时间紧急性、供需、垄断和溢价评分
+
+单元格依次为 `AI重要性/紧急性/供需紧张/垄断/溢价`，满分均为 5。
+
+| 业务 | B | O | X | 为什么随情景变化 |
+|---|---|---|---|---|
+| 765kV 输电 | `5/5/4/4.5/4` | `5/5/4.5/4.5/4.5` | `5/5/5/5/4.5` | 需求越快，existing corridor、工程标准和可交付 slot 越值钱；监管仍限制自由定价 |
+| 大负荷接入/tariff | `5/5/4/4.5/3.5` | `5/5/4.5/4.5/4` | `5/5/5/4.5/4` | 客户可在建站前择州，但签 ESA/付 collateral 后替换成本陡升；tariff 而非市场竞价决定回报 |
+| 新 firm generation | `5/5/4.5/3/3` | `5/5/5/3.5/3.5` | `5/5/5/4/4` | turbine slot、gas/air permit 和 interconnection 成为稀缺组合；AEP 有融资优势但无 turbine IP |
+| SOFC | `4/4/4/2.5/3` | `4.5/5/4.5/3/3.5` | `5/5/5/3.5/4` | Bloom 在商用数据中心 SOFC 接近单一规模供应商；AEP 的 moat 是信用、客户和合同，不是 stack 技术 |
+| Gigawatt AI | `2.5/3/2/2/2` | `3/3.5/2.5/2.5/2.5` | `3.5/4/3/3/3` | 达成跨 utility 外部 adoption 才形成数据/workflow moat；当前仍可被成熟 utility IT 厂商替代 |
+
+## 六、BOM、每 MW/rack/GPU/optical port 内容量与价格传导链
+
+### 6.1 口径：facility MW 不是 IT MW，optical endpoint 不是物理模块数
+
+项目内行业底稿给出的 GB300 NVL72 为 `72 GPU、142kW/IT rack`；以 `PUE=1.15` 计算，每个 facility MW 对应约 `6.12 racks、441 GPUs`。Rubin NVL72 参考 `227kW/IT rack`，对应约 `3.83 racks、276 GPUs/facility MW`。高速光学按每 accelerator `1.5—3.0` 个 endpoint-equivalent 估算，是交换层级和两端模块折算，不代表每颗 GPU 直接插 1.5—3 个模块。[项目内高压接入研究](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-07-10.md)、[项目内订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+
+| 平台 | facility kW/rack | racks/facility MW | GPUs/facility MW | facility kW/optical endpoint |
+|---|---:|---:|---:|---:|
+| GB300 NVL72 | `163.3kW` | `6.12` | `441` | `0.76—1.51kW` |
+| Rubin NVL72 | `261.1kW` | `3.83` | `276` | `1.21—2.42kW` |
+
+### 6.2 765kV、主变、开关与接入 BOM
+
+| 层级 | 典型 BOM/成本构成 | 占比/单位价值 | AEP 的价值捕获 |
+|---|---|---:|---|
+| 765kV line | conductor/insulator/tower/foundation/ROW；substation/transformer/reactor/breaker；protection/telecom；engineering/permit/AFUDC；EPC/commissioning | 线路本体约 `35%—45%`、站端 `25%—35%`、保护通信 `5%—10%`、工程许可/owner `10%—15%`、施工调试 `15%—25%`；项目差异很大 | 资本化进入 rate base，回报受 FERC/州监管；Quanta/OEM 捕获设备与 EPC 毛利 |
+| Large power transformer | GOES core `25%`、CTC/winding `25%`、tank/oil/insulation/radiator `15%`、bushing/OLTC/accessories `10%`、engineering/labor `9%`、drying/FAT `5%`、freight `6%`、overhead/warranty `5%` | 北美 data-center/utility LPT 一般 `3—4年`交期 | AEP 通过长期采购/制造合作锁 slot；材料涨价先抬 capex，获监管回收后成为 rate base |
+| HV/MV switchgear | breaker/GIS `22%`、copper `18%`、assembly `14%`、enclosure `12%`、relay/control `12%`、FAT `6%`、freight/OH/warranty `16%` | arc-resistant、kV/kA、BIL、type test 决定价格 | 已认证设计和 spares 降低故障/重设计风险；AEP 不是 OEM |
+| 中高压变电/switchgear | 主变、GIS/AIS、MV switchgear、bus、relay、STATCOM、E-house | 基准 `$1.2—2.3M/MW` | 设备通常在投产前 `3—8个季度`下单 |
+| interconnection/线路 | grid study、ROW、线路、站端、保护、commissioning | 基准 `$0.8—3.0M/MW` | 订单确认在 IA/utility work order；投产前 `4—16个季度` |
+
+前两项 `$1.2—2.3M/MW` 和 `$0.8—3.0M/MW` 可用于完整 campus 的上游电气范围，但局部重叠，不能机械相加。报告仅在单位含量敏感性中采用 `$2.0—5.3M/facility MW` 的宽区间。Piketon `$4.2B/10GW=$0.42M/MW` 只覆盖专用大型 765kV transmission framework，规模效应强且不含全部园区配电/发电，所以不能拿来否定行业全栈区间。
+
+### 6.3 每 MW、rack、GPU 和 optical endpoint 的 AEP 相关真实内容量
+
+| AEP 相关资产/服务 | 每 facility MW | 每 GB300 rack | 每 GB300 GPU | 每 GB300 optical endpoint | 注释 |
+|---|---:|---:|---:|---:|---|
+| grid interconnection + 中高压电气 capex | `$2.0—5.3M` | `$0.327—0.865M` | `$4.5—12.0K` | `$1.5—8.0K` | 是 utility/campus 上游资本，不是 AEP 当期收入；可能含客户自有资产 |
+| 同上，Rubin 密度 | `$2.0—5.3M` | `$0.522—1.384M` | `$7.3—19.2K` | `$2.4—12.8K` | rack 功率更高使每 rack 上游内容量增加；每 MW 物理需求不消失 |
+| VIU bundled electricity 年 gross bill | `$0.55—0.95M/年` | `$89.8—155.1K/年` | `$1.25—2.15K/年` | `$416—1,436/年` | 假设 85%—95% load factor、`$70—120/MWh`；不是净利润 |
+| wires-only T&D 年收入 | `$0.08—0.25M/年` | `$13.1—40.8K/年` | `$181—567/年` | `$60—378/年` | Texas/Ohio 实际 tariff、需求费和项目出资差异很大 |
+| Piketon transmission-only capex | `$0.42M` | `$68.6K` | `$953` | `$318—635` | 客户承诺承担 `$4.2B`；不含发电和园区内部电气 |
+
+**关键理解：**800VDC、48/54VDC 或 CPO 发生在 facility 内部；AEP 在 grid-to-campus 仍提供 69—765kV AC、变电、保护和容量。更高 rack density 会减少每 MW 的 rack/GPU 数，却不会降低每 MW 上游输电和发电需求，反而提高动态负荷、短路、谐波、telemetry 和 ride-through 要求。
+
+### 6.4 发电和 SOFC BOM/单位内容量
+
+| 方案 | 安装资本/MW | 典型 BOM | 每 GB300 rack | 每 GB300 GPU | 每 optical endpoint |
+|---|---:|---|---:|---:|---:|
+| CCGT/大型天然气发电 | `$1.2—2.5M` | turbine/generator `35%—45%`；HRSG/steam island `20%—30%`；gas/electrical/BOP `10%—20%`；civil/EPC `15%—25%`；owner/contingency `5%—10%` | `$0.196—0.408M` | `$2.7—5.7K` | `$0.9—3.8K` |
+| SOFC | `$3.0—5.5M` | stack/power module `45%—60%`；fuel processing/inverter/electrical `15%—22%`；skid/gas/install/control `18%—28%`；另需长期 stack replacement reserve | `$0.490—0.898M` | `$6.8—12.5K` | `$2.3—8.3K` |
+| BESS/稳定设备（配套，不提供长期能源） | `$0.35—0.80M/MWh` | cell/pack `45%—60%`；PCS/transformer/switch `15%—25%`；enclosure/HVAC/fire `10%—18%`；EMS/EPC `12%—22%` | 取决于小时数和冗余 | 取决于小时数 | 取决于小时数 |
+
+SOFC 单位资本高于 CCGT，但 time-to-power 可从多年缩短到约 `6—18个月`，小项目甚至更快；客户购买的是上电日期、低 NOx/无正常用水和分布式部署。项目内自备电力研究给出的 SOFC 全寿命电力成本/报价区间约 `$75—145/MWh`，意味着 90% capacity factor 下年度 gross power value约 `$0.59—1.14M/MW`。[项目内自备发电研究](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-07-10.md)
+
+### 6.5 价格传导链
+
+1. **材料/OEM：**GOES、CTC copper、bushing、OLTC、breaker、turbine 和熟练工稀缺 → OEM 报价和 reservation/slot fee 上升；部分合同用原材料、关税和运费 escalation clause。
+2. **EPC/utility capital：**AEP/Quanta 或其他 EPC 锁定设计与采购 → construction work in progress；固定价合同若无 escalation，部分风险由 EPC 承担，否则进入 AEP capex。
+3. **监管回收：**资产投入使用或按获批 CWIP/AFUDC 机制进入 rate base → 通过 FERC formula rate、state base rate、tracker/rider 回收折旧、O&M、利息、税和 allowed ROE。设备涨价不是即时利润，监管 disallowance 仍是风险。
+4. **大负荷客户：**客户付 upfront construction、study fee、collateral，并按 minimum demand/energy charge/termination fee 承担专用资产和固定成本；AEP 预计现有 large-load agreements 在合同期为其他客户抵消最多 `$16B` 成本。[AEP affordability](https://www.aep.com/news/stories/view/11969/)
+5. **SOFC/PaaS：**AEP 付 Bloom equipment capex → 客户用 20 年 offtake/PPA 或受监管服务合同支付 capacity/energy fee；燃气价格通常 pass-through，AEP 从融资成本、项目回报和运营中取值，Bloom 从 stack/IP/服务中取值。
+6. **Gigawatt AI：**无 MW BOM。价值链是 AEP 投资/许可 → utility data integration、workflow、AI inference、cyber/compliance → O&M 节约/收入保障/对外软件费 → equity-method income；在有可验证 ARR 前不按物理容量估值。
+
+## 七、每个关键业务的当前产能、供应链采纳与认证阶段
+
+“产能（美元计）”对 AEP 指一年可部署/资本化的工程能力，不是工厂出货；对 SOFC 同时列设备供应商制造能力。采纳阶段采用 `1=概念、2=付费试点/审批、3=签约建设、4=规模投产、5=成熟大规模运营`。
+
+| 关键业务 | 当前物理能力 | 当前美元部署能力/资本锚 | 供应链采纳 | 当前审批/认证阶段 | 采纳阶段 |
+|---|---|---:|---|---|---:|
+| 765kV/输电 | 约 `40,000` transmission miles；> `2,100` 英里 765kV；约 30 座 765kV substations | 2026—2030 `$33B`，均值约 `$6.6B/年`；2026E transmission rate base `$34B` | AEP 运营美国约 90% 的 765kV 存量；SPP/PJM/MISO/ERCOT 均已给项目/选线 | 既有系统 TRL/运营成熟；新项目已获 RTO award，但仍须 state siting、ROW、环境、FERC formula-rate/成本分配；Piketon 仍需 PUCO/FERC 多项批准 | `5.0` 既有；`2.5—3.0` 新建 |
+| large-load T&D/tariff | `63GW` signed load；2026/2027 累计上电目标 `7/17GW`；AEP Texas 现有 peak 约 `8GW` | distribution plan `$17B/5年`，均值 `$3.4B/年`；AEP Texas DOE loan 上限 `$3.26B` | 100% LOA；PJM约 95% ESA、SPP约45% ESA；Texas 41GW 全部宣称 SB6 compliant | Ohio/Indiana/Kentucky/West Virginia tariff 已批；Virginia/Michigan/Oklahoma/SWEPCO Texas 在 Q1 表中待批；Texas Batch Zero 2026-08 分类 | `3.5` |
+| firm generation/储能 | 约 `32GW` owned+contracted；2025 年末 regulated owned 约 `25.4GW`；已锁 `>10GW` gas-turbine slots | generation plan `$24B/5年`，均值 `$4.8B/年` | Green Country 795MW、Oregon 870MW 已并入；2025 共买入约 2.2GW；450MW interconnection capacity 已取得、9 个项目已申请 | 已投产机组成熟；新项目逐项需 CPCN、RTO IA、air/water/gas permit。PSO 1.3GW procurement 于 2026-05 获批；Sycamore 预计 2026 年末决定 | `4.0` 存量；`2.5—3.0` 新建 |
+| Bloom SOFC | Ohio 两合同约 `98MW`；Wyoming 设备对应约 `482—883MW` 推算；总 procurement option 至 `1GW` | Wyoming unconditional purchase `$2.65B`；Ohio installed capital模型 `$0.29—0.54B` | AEP/Bloom 供货合同 firm；Bloom 披露当前年产约 `1GW`，目标 2026 年末 `2GW` | Energy Server 6.5 有 FC1、UL 1741/1998、IEEE 1547、CA Rule 21 等；Scioto OPSB 已批；Ohio PUCO 合同已批但有诉讼；Wyoming offtake conditions 未公开确认 | `2.5` |
+| Gigawatt AI | 软件能力未量化；AEP 有永久 license | 累计投资 `$150M`；可再投 `$50M` | 已达成两次 performance milestone；没有公开 external ARR/customer count | 无公开 SOC 2/NERC-CIP 等正式认证；utility production 仍需模型治理、cyber、data residency、审计和监管可解释性 | `1.5—2.0` |
+
+### 7.1 真正的供应链瓶颈
+
+- **LPT/主变：**DOE 2026-03 会议称 distribution transformer 需求较 2019 增 `41%`，大型变压器交期从 3 年增至最多 4 年。GOES、CTC copper、bushing/OLTC、vapor-phase drying、FAT bay 和熟练 winding labor 决定“有效产能”，新厂房不等于合格出货。
+- **AVL/type test：**utility approved-vendor、短路试验、BIL、FAT history 和运行记录通常需 `2—5年`；AEP/Quanta 的 domestic transformer/breaker manufacturing 能锁供给，但不能立即跳过认证。
+- **EPC/commissioning：**765kV line crew、relay engineer、substation commissioning、电工、special transport 和 crane 资源均紧。AEP/Quanta 长协的价值是 labor certainty 和标准化，不只是采购折扣。
+- **generation：**turbine slot 已锁并不包含 firm gas、air permit、RTO study、step-up transformer 和施工。Texas 41GW 由他方提供 generation，AEP Texas 明确指出时间高度依赖发电供应。
+- **SOFC：**Bloom 计划把产能从约 1GW 扩到 2GW，但 stack 良率、陶瓷/metal interconnect、五年左右 module replacement 和服务网络决定 lifetime economics。[Bloom 2025 10-K](https://www.sec.gov/Archives/edgar/data/1664703/000162828026024240/ars202510k.pdf)
+
+## 八、一年以后产能、采纳和认证的三种情景
+
+### 8.1 一年后资本/物理能力
+
+| 业务 | B：一年后能力 | O：一年后能力 | X：一年后能力 |
+|---|---|---|---|
+| 765kV/输电 | 年部署 `$6.5—7.2B`；transmission rate base约 `$38B`；按已获奖项目推进 | 年部署 `$7.2—8.2B`；rate base `$39—40B`；PJM/SPP 工程采购提前，Piketon 前期开发/CWIP处理待批 | 年部署 `$8.2—9.5B`；rate base `$40—42B`；更多 line-of-sight/RTO 项目提前，仍受许可约束 |
+| large-load T&D | 年部署 `$3.4—3.8B`；累计上电 `10—14GW` | `$3.8—4.5B`；累计上电 `14—18GW` | `$4.5—5.5B`；累计上电 `18—23GW`，高于公司 2027 年末 17GW base path，属压力上限 |
+| firm generation/储能 | 年部署 `$4.8—5.2B`；owned+contracted `32—33GW` | `$5.2—6.0B`；`33—35GW`；收购/PPA 加快 | `$6.0—7.0B`；`35—37GW`；更多已锁 turbine 项目转 firm，但大机组难在一年内完全投产 |
+| SOFC | 建设投入 `$0.4—0.8B`；commissioned `0—50MW` | `$0.8—1.4B`；commissioned `50—150MW` | `$1.4—2.0B`；commissioned `150—350MW`；需要 Wyoming 条件和供应链显著提前 |
+| Gigawatt AI | AEP 投资维持 `$150—200M`；AEP 内部 1—3 个受控 use case | `$200M`/20% 持股；AEP 规模部署并出现 `1—3` 个外部付费 utility | `$200M`/20%；`3—8` 个外部 utility/模块化 ARR；没有公开合同支持，概率最低 |
+
+**为什么不能把 10GW turbine slot 或 1GW fuel-cell option 当一年后产能：**前者只是 OEM 制造窗口，后者是采购权/承诺；从设备到可计费 MW 还要经过 site、permit、gas、interconnection、EPC、commissioning 和客户 acceptance。报告的 commissioned 范围已对此 haircut。
+
+### 8.2 一年后采纳与认证阶段
+
+| 业务 | B | O | X |
+|---|---|---|---|
+| 765kV/输电 | PJM/SPP/MISO awards 保持，完成设计冻结、长交期 PO 和部分 siting；Piketon 仍在 route/approval | 主变/breaker 产能协议转成 firm production slots，更多州批准；Piketon 获关键 PUCO/FERC 节点 | FERC 大负荷改革和州审批同步提速；多个 765kV 项目进入施工，但完整 COD 仍多在 2029—34 |
+| large-load T&D | ERCOT Batch Zero 把 41GW 分为可立即/有条件/延后组；Ohio/Indiana tariff 按 minimum bill 执行 | Texas 主要项目取得可服务日期与发电方案；Oklahoma/Michigan/Virginia tariff 获批 | 灵活负荷、onsite generation 和新 transmission service 大规模落地，原定 2028 项目部分提前 |
+| generation | Oregon/Green Country 完整贡献；PSO/I&M 项目继续 CPCN/IA；turbine slots 转 firm EPC | 更多双边收购/PPA、gas pipeline 和 450MW+ IA；2029 项目可见性提高 | 新审批、PPA、customer funding 同时达成，但大型 CCGT 的物理 COD 仍难提前到 2027 |
+| SOFC | Scioto 按计划施工；Wyoming 条件若未确认则维持开发/补偿机制；Ohio 法律挑战未改变 grandfathering | Scioto 分期投运，Wyoming 条件满足且 site/permit 开工；Bloom 2GW 年产目标基本达成 | 多个 customer site 同时通过 siting/UL/utility acceptance；AEP 用标准 block 复制，commissioning 成为约束 |
+| Gigawatt AI | 完成 production-grade cyber/data governance，仍以 AEP 内部为主 | 获得 SOC 2/等效控制和可审计 utility deployment，形成外部 reference | 跨 utility 数据/工作流网络效应初现；若无公开 ARR、客户和安全认证，该情景应立即下调 |
+
+技术合规会越来越严格。NERC 2026-05 发布 Level 3 Essential Action Alert，要求 computational load 的模型、研究、仪表、commissioning、运行、保护和控制采取七项行动；IEEE P4134 在 2026-05-14 成为 active PAR，覆盖最高 800kV、15GW 大负荷变电应用。这提高 AEP 的工程价值，也可能延长客户验收。[NERC Large Load Action Plan](https://prod.nerc.com/initiatives/large-loads-action-plan)、[IEEE P4134](https://standards.ieee.org/ieee/4134/12559/)
+
+## 九、根据订单积压和供给预测未来一年业务增速
+
+### 9.1 从 190GW queue 到收入的转化瀑布
+
+```text
+约 190GW active queue
+    ↓ 去重、site control、信用、study fee、发电来源、替代地点
+63GW signed LOA/ESA through 2030
+    ↓ RTO/州批准、线路/主变/发电、客户自有园区施工
+公司计划：2026 年末累计 7GW、2027 年末累计 17GW energized
+    ↓ 负荷 ramp、minimum demand、metering、revenue-recognition share
+未来 12 个月平均新增计费负荷：模型约 4—7GW（B）、7—11GW（O）、11—15GW（X）
+```
+
+这不是“backlog/revenue × 转化率”的制造业模型。输电资产在投产前可能确认 AFUDC/CWIP 回报；minimum-demand 可能在客户满载前贡献收入；Texas wires-only 又不会确认全部电能销售额。因此业务增速应由 **rate base、billed MW、tariff 结构和发电资产**共同预测。
+
+### 9.2 客户项目、金额、交付窗口和取消保护
+
+| 地区/客户信号 | 项目量级 | 可验证窗口 | 对模型的作用 |
+|---|---:|---|---|
+| AEP Ohio tariff 后合同 | 新签 `5.642GW`；加 tariff 前合同共 `17.861GW` 至 2035 | 新项目需 study、collateral、binding agreement；Central Ohio 大部分新增负荷受 765kV regional upgrade 约束至约 2031 | 证明 queue 的高 haircut，也证明签约后的长期收入保护；2030 与 2035 口径不可混用 |
+| AWS New Carlisle, Indiana | 客户投资 `$11B`；AEP 早期披露 buildout约 `2.2GW` | 分期建设；Indiana tariff 80% minimum demand、12—17 年 | 高信用 hyperscaler，合同质量高；generation/transmission timing 是关键 |
+| Columbus 区数据中心 | 已披露客户投资 `$13B`/约 `2.1GW` 和 `$7B`/约 `1.2GW` | Ohio tariff/区域 transmission upgrade 决定分期 | 支持现有 commercial growth，不应一次性计入 |
+| Piketon, Ohio | 10GW campus；客户承担 `$4.2B` transmission | AEP 预计 2029 开始送电；需 PUCO/FERC/route | 一年收入近零，主要是 2028 后 option；若批准可形成长期输电/运维服务，但客户出资是否减少可赚取回报的 rate base 尚未披露 |
+| AEP Texas / Stargate 等 | 41GW LOA；约 60GW AEP Texas active requests | 2026-08 Batch Zero 分类，最终州方案预计 2027 秋；时间依赖他方 generation | 最大上行和最大时点风险；不能按 41GW×全电价直接算 AEP 收入 |
+| Wyoming SOFC / 高评级客户 | `$2.65B` equipment；20 年、100% output offtake | AEP Q1 预计条件 2026Q2 满足，但截至 2026-07-11无公开完成确认；最迟 2030 投产 | 设备采购 unconditional 降低 Bloom 订单风险；AEP 有成本补偿条款，但收入 timing 高度不确定 |
+
+**取消率推断：**
+
+- 普通 queue 的“兴趣到 binding”可非常低；Ohio 实例为 `18.8%`。
+- 已签 63GW 受 credit support、upfront construction funding、minimum demand、12—20 年期限和 exit fee 保护。本报告将其最终实现率设为 B/O/X `75%—88% / 88%—95% / 95%—99%`，高于普通 queue。
+- 即便客户不取消，延迟也可能发生。AEP 的 minimum bill 降低 revenue loss，却不能让未到货的主变、线路或电站提前形成完整 rate base。
+
+### 9.3 供给端和业内会议/技术报告的验证
+
+- **FERC 2026-06-18：**对六个 RTO/ISO 发 show-cause orders，要求改革大负荷 study、成本透明、co-location、flexible service 和临近发电机制；30 天内还须说明 generation adequacy。FERC 审阅了超过 3,500 页评论，说明这不是单一公司的营销主题，而是全行业制度重构。[FERC](https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration)
+- **ERCOT 论坛：**Batch Zero 制度经过超过 200 小时讨论、每次 workshop 平均约 500 人、约 290 份书面意见；最终允许 onsite generation 和可中断负荷路径。制度会提高真实项目的可见性，也会淘汰重复申请。[ERCOT](https://www.ercot.com/news/release/06182026-puct-approves-ercots)
+- **NERC 技术会议：**2026-02 Emerging Large Loads Technical Conference、2026-05 Level 3 alert、2026-07-08 webinar 都聚焦 computational load 的电压敏感性、快速负荷变化、保护和模型。这意味着 hyperscaler 不能只提交静态 MW，还需动态模型、telemetry 和 commissioning evidence。[NERC](https://prod.nerc.com/initiatives/large-loads-action-plan)
+- **IEA 2026：**全球 data-center electricity use 2025 年增长 `17%`，AI-focused data center 增长更快；五大科技公司 2025 capex 超 `$400B`，2026 预计再增 `75%`。需求是真实的，但 IEA 同时把 transformer、gas turbine、chip 和许可列为物理瓶颈。[IEA](https://www.iea.org/news/data-centre-electricity-use-surged-in-2025-even-with-tightening-bottlenecks-driving-a-scramble-for-solutions)
+- **JLL 2026：**主要市场平均 grid connection wait 超过 4 年，推动 behind-the-meter gas、battery 和 private-wire；这同时利好 AEP 的 SOFC/新发电，也构成对传统 grid sales 的替代风险。[JLL](https://www.jll.com/en-us/insights/market-outlook/data-center-outlook)
+
+### 9.4 公司未来一年增速结论
+
+| 指标 | B | O | X |
+|---|---:|---:|---:|
+| 合并收入 | `$24.0B`，`+7%` | `$25.1B`，`+12%` | `$26.5B`，`+18%` |
+| Operating EPS | `$6.65—6.85` | `$7.00—7.25` | `$7.35—7.75` |
+| AI/数据中心相关收入 | `$2.2—3.2B` | `$3.0—4.3B` | `$4.0—5.8B` |
+| rate base 增速 | `~10%—12%` | `~12%—14%` | `~14%—17%` |
+| 按期上电的平均新增计费负荷 | `4—7GW` | `7—11GW` | `11—15GW` |
+| 主要限制 | 主变/permit/正常 ramp | 供应链改善、监管提速 | 要求发电、Batch Zero、EHV、客户施工同时超预期 |
+
+B 情景 operating EPS 与公司对 2027 年“长期 7%—9% 区间下半部”的表述基本一致；O/X 是研究压力测试，不是公司指引。收入的极乐观弹性大于 EPS，因为燃料、购电和竞争零售会增加 revenue，却不必然增加利润。
+
+## 十、竞争格局、新技术、替代方案和客户切换成本
+
+### 10.1 逐业务竞争格局
+
+| 业务 | 主要竞争对手/可比公司 | AEP 优势 | 风险与替代方案 | 客户/系统切换成本 |
+|---|---|---|---|---|
+| 765kV/regulated transmission | Dominion、FirstEnergy/ATSI、ITC、Berkshire Hathaway Energy、LS Power、Oncor、NextEra/FPL、Entergy、Duke、Southern；competitive JVs | 美国最大 765kV installed base、约 90% 存量、60 年标准、Quanta EPC/制造合作、跨 PJM/SPP/ERCOT/MISO | HVDC、advanced conductor、345kV 多回线、distributed generation 可替代部分新线；public opposition/ROW/成本分配可能取消项目 | 已运营网络近乎不可替换；新项目 award 前可竞争，award/route 后重做成本极高 |
+| 数据中心选址和 large-load service | Dominion Virginia、Oncor、Entergy、Duke、Southern/Georgia Power、FPL、TVA、FirstEnergy、Exelon/ComEd 等 | 11 州多区域、Texas/Ohio/Indiana 高增长区、长约 tariff、输电和发电一体化 | 客户可转向有更快 power 的州、co-location、onsite gas/SOFC、private wire；AI 效率提升降低 MW/GPU | 签约前中等；site control、ESA、主变 PO 后高；上电后 physical monopoly，极高 |
+| firm generation | Constellation、Vistra、Talen、NRG、NextEra、Entergy、Southern、Duke；以及 merchant/IPP/PPA | 受监管融资、rate recovery、现有土地/线路、32GW portfolio、10GW turbine slots | onsite engines、aeroderivative、SOFC、co-located nuclear、renewables+BESS、flexible load；gas/emissions/coal retirement风险 | 电源可在组合中替换，但 RTO IA、gas、permit 和 transmission 使单项目切换需多年 |
+| SOFC/PaaS | Bloom 是 AEP 的供应商；技术竞争包括 FuelCell Energy、Doosan；功能替代包括 Caterpillar/Cummins/INNIO/Wärtsilä、GE aeroderivative、BESS | AEP 客户关系、低 WACC、utility operation、20 年 offtake、可把 grid 和 onsite 组合 | Bloom 单一供应、stack degradation、更换周期、gas/CO2、capital/MW 高；燃气机组更便宜，grid 到位后桥接溢价下降 | 设计/permit/燃气/保护/备件确定后高；在下单前客户可换技术 |
+| Gigawatt AI | Oracle Utilities、SAP、IBM、Palantir、C3.ai、GE Vernova GridOS、Schneider、Uplight、ServiceNow、utility 自研 | AEP 作为 anchor utility、永久许可、真实 grid/customer workflow、董事席位 | 早期产品、模型安全、NERC-CIP/SOC 2、vendor lock-in、缺乏公开客户；成熟软件厂可捆绑 | pilot 阶段低；嵌入 CIS/ERP/OMS、数据治理和监管流程后中高 |
+
+### 10.2 新技术是否会成为主流
+
+1. **765kV：主流且已成熟。**它不是“新发明”，而是此前需求不足、如今因 10GW 级负荷重获经济性。对长距离 bulk transfer，765kV/更高电压是主流之一；对短距离或海缆，HVDC/345kV/advanced conductor 仍可能更优。AEP 的技术方向与行业趋势一致。
+2. **Delta tower/标准化 765kV block：有望成为 AEP 自有标准，但不是独占专利经济。**其价值是少材料、易施工、复用工程包；监管和项目 award 比塔型本身更决定利润。
+3. **large-load minimum-demand tariff：正在成为主流。**FERC/州监管均强调 cost shifting protection、site control 和 financial security；AEP Ohio 的 30GW→5.642GW 筛选证明其有效。风险是过严 tariff 使客户转州或选择 onsite power。
+4. **SOFC：会成为受限电网市场的重要补充，不太可能全面取代 grid/CCGT。**它部署快、低本地污染、无正常用水、原生 DC 友好；但 `$3—5.5M/MW` capex、天然气、stack replacement 和单一供应商使其更适合 speed premium、桥接或高价值地点。
+5. **800VDC/CPO：不会替代 AEP。**800VDC 发生在 campus/rack power chain，CPO 发生在网络；二者提高 rack 密度和效率，但 utility 侧仍需 AC transmission、substation、protection 和 firm MW。效率提高可降低单位计算电耗，却可能被更大集群规模抵消。
+6. **flexible load/onsite generation：既是增量工具也是替代风险。**ERCOT/FERC 正在为可中断负荷、behind-the-meter generation 和 co-location 建路径；它能让更多客户更快上电，也可能减少 AEP 必须建设和可收回的 grid capex。
+
+### 10.3 客户切换成本的阶段性
+
+| 阶段 | 切换成本 | 原因 |
+|---|---|---|
+| 选址/普通 queue | `低—中` | hyperscaler 可重复申请多个州/utility；FERC 已明确警告 double counting |
+| 付 study fee、site control、LOA | `中` | 已发生土地、工程和前期费，但仍可延期或转址 |
+| ESA、collateral、minimum demand、设备 PO | `高` | 12—20 年义务、80%—90% minimum bill、退出费；主变/开关改变会重做 study、foundation、保护和许可 |
+| construction/energized | `极高` | 物理线路、变电站、gas/power architecture 已固化；迁移一个 GW 级 AI campus 的机会成本远高于 5%—20% 电力设备价差 |
+
+## 十一、主要风险、证伪条件与后续跟踪清单
+
+| 风险 | 目前证据 | 证伪/预警指标 | 影响 |
+|---|---|---|---|
+| 63GW 被市场当成近端收入 | 公司明确只计划 2026/2027 累计 7/17GW | 季度 contracted load 不增、scheduled energization 延后、minimum-demand revenue 不增长 | 估值与收入预测下修 |
+| ERCOT generation 不足 | AEP Texas 41GW LOA，而现有 peak约8GW；AEP 明确供电时点依赖他方发电 | 2026-08 Batch Zero 中大量项目归入延后/自供电；RTP 方案推迟 | T&D capex与收入后移 |
+| transformer/turbine/EPC 延迟 | LPT 3—4年、grid wait >4年 | capex低于 `$13B`、CWIP 上升但 in-service rate base 不达标、项目 COD 延后 | EPS增长后移、利息资本化上升 |
+| regulator disallowance/affordability | 住宅费率目标约年增3.5%，成本压力大 | earned ROE低于9%、rate case削减、large-load cost allocation诉讼 | 回报率和估值下降 |
+| 资本结构/稀释 | 负 FCF、`$43B`融资需求、May forward equity潜在4.3%稀释 | FFO/debt跌破13%、评级展望下调、追加 growth equity超过计划 | PE/每股增速被稀释 |
+| SOFC 条件和技术 | Wyoming 条件原预计2026Q2满足但未公开确认；Ohio有诉讼 | 新 8-K 未确认、补偿条款触发、Scioto 开工延后、Bloom产能不达2GW | 小业务收入延后/资产减值风险 |
+| AI capex周期和效率 | IEA需求强，但项目集中且效率改善快 | hyperscaler capex/租赁承诺下调、PJM/ERCOT load forecast持续去重下修 | queue和定价权下降 |
+| G&M收入质量 | Q1收入+27%，GAAP earnings却由102M降至75M | purchased power增速持续高于零售收入、MTM/commodity volatility放大 | 高收入增速不转化为EPS |
+| legacy generation/environment/wildfire | AEP仍有约10.7GW煤电和跨州网络 | EPA/州规则、煤灰、野火诉讼/保险、提前退役 disallowance | 资本重定向、一次性损失 |
+| Gigawatt AI 早期投资 | `$150M`、15%，无ARR/客户披露 | 一年后仍无外部客户、无生产安全认证、持续追加资本 | AI软件 option价值趋近零 |
+
+**未来 90—180 天应核对：**
+
+1. 2026-07-30 预计发布的 2026Q2 财报：是否上调 `$6.15—6.45`、63GW、`$78B` 或 7GW 2026 schedule。
+2. Wyoming fuel-cell offtake conditions 是否正式满足，若满足，披露容量、客户、COD 和融资结构。
+3. ERCOT 2026-08 Batch Zero 对 AEP Texas 41GW 的项目分类，以及可中断/自备发电比例。
+4. AEP Ohio binding MW、Central Ohio 765kV upgrade 和 Piketon PUCO/FERC/route 进度。
+5. 2026Q2/Q3 capex、in-service rate base、FFO/debt 和新增股权；尤其 May 2026 forward 的结算计划。
+6. Quanta EHV transformer/breaker manufacturing 的工厂、产能、首批交期和 AEP allocation。
+7. Gigawatt AI 是否披露 production deployment、外部客户、ARR、模型/云依赖和 security certification。
+
+## 十二、投资判断
+
+### 12.1 业务质量
+
+AEP 的高质量部分不是“卖电量越多越好”，而是 **在受监管框架中把稀缺的大负荷需求转成可回收 rate base，并用 long-term minimum-demand 合同把项目风险分配给信用良好的 hyperscaler/工业客户**。其 765kV 经验、跨四个高增长州的 footprint、Quanta 供应链合作和可融资资产负债表构成实质性 moat。
+
+### 12.2 增长质量
+
+- 近五季合并收入增长 `8.7%—13.2%`，已证明不是纯远期故事。
+- 2026 operating EPS 指引中点较 2025 实际仅 `+5.5%`，说明近端增长仍有折旧、利息、O&M 和项目时点摩擦。
+- 2026—2030 `$78B` 资本计划和 transmission rate base `$32B→$55B` 提供中期可见性；63GW 是资本机会池，不是已经赚到的收入。
+- AI/数据中心相关 TTM 收入估计只有 `$1.8—2.6B`、约 `8%—12%`；这比 89% 的未来签约负荷占比低很多，符合建设和收入确认现实。
+
+### 12.3 估值与风险回报
+
+在 `$135.43`、公司指引口径 forward PE `21.5x` 下，AEP 已不是便宜的传统 utility。投资回报需要至少满足：
+
+1. 2027 年 operating EPS 维持 `7%—9%` 增长区间；
+2. FFO/debt 不跌破 `13%`，评级保持 stable；
+3. 2026/2027 累计 `7/17GW` 上电不大幅延迟；
+4. transmission rate base 2026E/2027E 达约 `$34/38B`；
+5. 股权增发不显著超过已公布融资计划。
+
+如果以上成立，AEP 是美国 AI 电力基础设施中**确定性高、弹性中等、久期长**的标的；如果 Texas 41GW 被大幅重新分类、主变/发电延迟、监管回报不足或融资成本上升，它会重新表现为高杠杆、低自由现金流的普通 utility。SOFC 和 Gigawatt AI 应视为免费或低权重 option，不应成为当前估值的主支柱。
+
+## 十三、研究方法、推导边界与主要来源
+
+### 13.1 推导边界
+
+- 公司披露值、第三方行情值和本报告估算均已分开标注；`模型/估计/推算`不是管理层指引。
+- Q4 2025 分部季度值由 FY2025 减九个月数据得出；TTM 值由 FY2025 减 2025Q1 加 2026Q1得出。
+- transmission economic revenue、AI/data-center revenue、单位 MW/rack/GPU/optical endpoint 和三情景均为研究模型。由于 AEP 不披露 data-center revenue、cancellation rate、完整 tariff rate 或 Wyoming MW，给出范围而非伪精确点值。
+- 每 MW 内容量以 **facility MW** 为分母，PUE=1.15；不能与 IT MW 混用。grid、generation、campus electrical 的范围可能重叠，不可全部相加。
+- 截止 2026-07-11，最新正式财务期仍为 2026Q1；2026Q2 预计 2026-07-30 发布，未使用任何未发布财务结果。
+
+### 13.2 公司一手来源
+
+- [AEP 2025 Form 10-K](https://docs.aep.com/docs/investors/filings/docs/AEP_10K_2025.pdf)
+- [AEP 2026Q1 Form 10-Q](https://docs.aep.com/docs/investors/AEP10Q20261Q.pdf)
+- [AEP 2026Q1 earnings presentation](https://docs.aep.com/docs/newsroom/resources/earnings/2026-05/1Q26EarningsReleasePresentation.pdf)
+- [AEP 2025Q4 earnings presentation](https://docs.aep.com/docs/newsroom/resources/earnings/2026-02/4Q25EarningsReleasePresentation.pdf)
+- [AEP 2025Q3 earnings presentation](https://docs.aep.com/docs/newsroom/resources/earnings/2025-10/3Q25EarningsReleasePresentation.pdf)
+- [AEP 2025Q2 earnings presentation](https://docs.aep.com/docs/newsroom/resources/earnings/2025-07/2Q25EarningsReleasePresentation.pdf)
+- [AEP 2025Q1 earnings presentation](https://docs.aep.com/docs/newsroom/resources/earnings/2025-05/1Q25EarningsReleasePresentation.pdf)
+- [AEP 2026 May investor handout](https://docs.aep.com/docs/investors/eventspresentationsandwebcasts/May_2026_Investor_Handout.pdf)
+- [AEP Wyoming fuel-cell 8-K](https://www.sec.gov/Archives/edgar/data/4904/000000490426000003/aep-20260104.htm)
+- [AEP May 2026 forward-equity 8-K](https://www.sec.gov/Archives/edgar/data/4904/000119312526223988/d248447d8k.htm)
+- [AEP Ohio data-center tariff conversion update](https://www.aepohio.com/company/news/view?releaseID=10753)
+- [AEP Texas July 2026 DOE loan](https://www.aep.com/news/stories/view/12063/)
+- [AEP/Quanta strategic partnership](https://www.aep.com/news/stories/view/10555/)
+
+### 13.3 行业、监管、技术和会议来源
+
+- [FERC 2026-06 large-load integration orders](https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration)
+- [ERCOT/PUCT Batch Zero approval](https://www.ercot.com/news/release/06182026-puct-approves-ercots)
+- [PJM 2026 long-term load forecast discussion](https://insidelines.pjm.com/pjms-updated-20-year-forecast-continues-to-see-significant-long-term-load-growth/)
+- [NERC Large Loads Action Plan、会议和 Level 3 alert](https://prod.nerc.com/initiatives/large-loads-action-plan)
+- [DOE 2026 transformer convening transcript](https://www.energy.gov/sites/default/files/2026-03/Distribution-Transformer-Convening-Webinar-Transcript.pdf)
+- [IEEE P4134 large-load substation guide project](https://standards.ieee.org/ieee/4134/12559/)
+- [IEA 2026 Energy and AI update](https://www.iea.org/news/data-centre-electricity-use-surged-in-2025-even-with-tightening-bottlenecks-driving-a-scramble-for-solutions)
+- [JLL 2026 Global Data Center Outlook](https://www.jll.com/en-us/insights/market-outlook/data-center-outlook)
+- [Bloom Energy Server 6.5 datasheet](https://www.bloomenergy.com/wp-content/uploads/bloom-energy-server-datasheet-feb-2026.pdf)
+- [AEP Ohio Scioto Darby Creek SOFC project](https://www.aepohio.com/community/projects/scioto-darby-creek/)
+
+### 13.4 项目内相关产业资料
+
+- [数据中心电力接入与高压变电研究（2026-07-10）](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-07-10.md)
+- [数据中心自备发电与微电网研究（2026-07-10）](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-07-10.md)
+- [AI 数据中心建设规模与产业链订单映射（2026-07-09）](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+
+> 本报告是基本面研究，不构成证券买卖建议。电力 utility 的收入、利润和估值对天气、燃料、利率、监管、资本结构和项目投产时点高度敏感；所有情景应在下一次财报、ERCOT Batch Zero 和 Wyoming SOFC 更新后重估。

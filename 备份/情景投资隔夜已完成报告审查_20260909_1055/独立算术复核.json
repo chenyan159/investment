@@ -1,0 +1,37 @@
+{
+  "SMCI": {
+    "working": {
+      "one_year_value": 47.75,
+      "three_year_value": 60.35,
+      "one_year_return_at_report_price": 0.18604073522106312,
+      "D_to_B_flip_percentage_points": 2.418333333333346
+    },
+    "weak": {
+      "one_year_value": 42.65,
+      "three_year_value": 53.550000000000004
+    },
+    "strong": {
+      "one_year_value": 53.050000000000004,
+      "three_year_value": 67.45
+    }
+  },
+  "SMCI_wait": {
+    "initial_funds": 40.26,
+    "five_month_cash": 40.923,
+    "future_value": 56,
+    "buy_ceiling_same_original_15pct_total_hurdle": 49.49757014190372,
+    "buy_ceiling_reset_seven_month_15pct_annual_hurdle": 51.61559683279277
+  },
+  "SKHY_report_non_synchronous_price": {
+    "adr_equivalent": 133.45043429073291,
+    "premium": 0.39040386781929715
+  },
+  "SOMMY_report_non_synchronous_price": {
+    "adr_equivalent": 18.46218842416561,
+    "premium_at_20": 0.08329519450800915
+  },
+  "ASGLY": {
+    "two_branch_weight_for_10pct_annual": 0.9618326745718054
+  },
+  "disclaimer": "复算验证算术与口径；未证明条件价值、分支权重或未来报价真实。SMCI等待两个门槛对应不同策略标准，不是单纯除法算错。"
+}

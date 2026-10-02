@@ -1,0 +1,397 @@
+# AMAT_Applied Materials 公司调研_2026-06-11
+
+> 公司：Applied Materials, Inc.  
+> 股票代码：AMAT / NASDAQ  
+> 调研日期：2026-06-11，美国太平洋时间  
+> 所属目录：`公司调研/晶圆制造_前道设备/`，按 `公司调研/公司索引.md` 归类。  
+> 资料边界：仅使用 `行业调研/` 下相关产业资料和联网公开资料；未读取、引用或继承 `特征量化/`，未读取其他公司调研正文，未修改公司索引。  
+> 关键结论：AMAT 不是 AI 数据中心部件公司，而是 AI 芯片、HBM、先进封装和先进逻辑产能扩张的上游“材料工程/前道设备”龙头。当前投资主线是：GAA/2nm、DRAM/HBM、先进封装、AGS 服务和客户八季度滚动需求可见度；主要风险是估值已经充分反映 AI 设备景气、中国/出口管制、AI CapEx 回撤和设备订单从 pull-in 转为消化。
+
+## 0. 信息来源、置信度和口径
+
+| 来源组 | 日期 | 用途 | 关键数字/结论 | 置信度 |
+|---|---:|---|---|---|
+| Applied Materials FY2026 Q2 财报新闻稿 | 2026-05-14，季度截至 2026-04-26 | 最新财报、分部收入、Q3 指引 | 收入 79.10 亿美元、同比 +11%；GAAP GM 49.9%；Semiconductor Systems 59.65 亿美元；AGS 16.65 亿美元；Q3 指引收入 89.50 亿美元 +/-5.00 亿 | 高 |
+| Applied Materials FY2026 Q2 prepared remarks / presentation | 2026-05-14 | 订单能见度、产品路线、AI 逻辑 | 半导体设备业务 2026 自然年预计增长 >30%；最大客户提供 rolling eight-quarter forecasts；advanced packaging revenue 2026 预计 >50%；AGS 中双位数到 mid-teens 增长 | 高 |
+| Applied Materials FY2026 Q1 财报 | 2026-02-12，季度截至 2026-01-25 | 最近 5 季表、GAA 新产品 | Q1 收入 70.12 亿美元；Semiconductor Systems 51.41 亿美元；Foundry/Logic/Other 62%、DRAM 34%、Flash 4%；推出 Viva、Sym3 Z Magnum 等 | 高 |
+| Applied Materials NEXX 收购公告 | 2026-05-03 | 先进封装/面板级路线 | 拟收购 ASMPT NEXX，补齐 panel-level ECD；支持 510x515mm 以上面板级大尺寸 AI accelerator package | 高 |
+| Applied Materials GAA deposition systems 公告 | 2026-04-08 | Trillium ALD / Precision PECVD | Precision Selective Nitride PECVD 和 Endura Trillium ALD 已被 leading logic chipmakers 在 2nm 及以下 GAA 节点采用 | 高 |
+| Applied Materials Singapore Tampines 扩产公告 | 2026-06-10 | 供给/产能能力 | 5 亿美元新 Tampines Campus，Singapore cleanroom capacity 超过翻倍，已 volume production，未来数年约 1000 个岗位 | 高 |
+| StockAnalysis / S&P Global Market Intelligence | 截至 2026-06-11 收盘 | 股价、估值、TTM 财务指标 | 收盘价 552.64 美元；市值 4387.7 亿美元；PE 46.74；Forward PE 33.75；PS 15.05；TTM 收入 290.2 亿美元、净利润 85.1 亿美元 | 中高 |
+| SEMI 300mm Fab Outlook / WWSEMS | 2026-04-01、2026-06-04 | 行业景气与订单验证 | 2026 全球 300mm fab equipment spending 1330 亿美元、2027 1510 亿美元；2026Q1 设备 billings 365.5 亿美元、同比 +14% | 高 |
+| 项目内 `行业调研_AI芯片前道制造设备_2026-06-11.md` | 2026-06-11 | 本地行业背景 | AI/HPC 先进逻辑直接拉动前道设备 2026 约 240-360 亿美元；广义 AI 拉动先进逻辑+HBM/DRAM 前道设备 2026 约 550-800 亿美元 | 中高 |
+| 项目内 `行业调研_存储前道制造设备_2026-06-11.md` | 2026-06-11 | HBM/DRAM 设备映射 | HBM delivered bit 需要标准 DRAM 约 3-4 倍 wafer starts；DRAM/HBM 前道工具是 AI 内存短缺上游产能旋钮 | 中高 |
+| 项目内 `行业调研_先进封装设备与混合键合_2026-06-11.md` | 2026-06-11 | 先进封装/混合键合 | 2026 放量最大是 TCB、temporary bonding/debonding、RDL、inspection/metrology；混合键合大规模收入在 2027 后更明显 | 中高 |
+| 项目内 `行业调研_头部AI芯片全景与产能释放_2026-06-10.md` | 2026-06-10 | AI 芯片平台对前道设备的需求映射 | 2026 主力 GB200/GB300、MI350、TPU、Trainium；2027 Rubin/MI400/HBM4/N3/N2/GAA 拉动更强 | 中高 |
+| 市场侧报道：Barron's / IBD / Yahoo Finance 等 | 2026-06 | 侧面验证 | Barclays / Cantor 上修 WFE 口径；设备股估值和目标价快速上行 | 中，作为市场情绪和二级验证，不作为公司事实 |
+
+## 1. 公司整体业务、投资人心智和产业链位置
+
+### 1.1 AMAT 是什么公司
+
+Applied Materials 是全球最大的综合型半导体晶圆制造设备公司之一，核心能力是 materials engineering：在硅片上通过沉积、刻蚀、离子注入、热处理、CMP、eBeam 量测/检测、先进封装相关 PVD/CVD/ECD/etch/metrology 和服务软件，把材料结构做到纳米/埃米级可控。它卖的不是 AI 芯片，也不是数据中心服务器，而是 TSMC、Samsung、Intel、SK hynix、Micron、长存/CXMT 等晶圆厂、存储厂和封装厂为制造 AI GPU/ASIC/HBM/先进逻辑所需的资本设备。
+
+投资人通常把 AMAT 看成三类公司的叠加：
+
+1. **WFE 景气 beta**：当全球 wafer fab equipment 增长，AMAT 收入和利润随设备订单周期上行；当 memory/logic capex 反转，AMAT 也有周期性。
+2. **AI 半导体 picks-and-shovels**：AI 数据中心本身不买 AMAT 设备，但 AI GPU、云厂自研 ASIC、HBM、先进封装和 N2/GAA 工艺都需要更多 AMAT 的沉积、刻蚀、Epi、eBeam、封装和服务能力。
+3. **高 installed-base 服务平台**：Applied Global Services 跟随全球装机腔体和客户稼动率增长，周期性低于新设备；公司披露已有 35,000+ chambers 连接 AIx 软件能力。
+
+### 1.2 产业链位置
+
+```text
+AI 应用 / Agentic AI / 推理 token
+=> 云厂 CapEx / GPU 与 ASIC 需求
+=> TSMC/Samsung/Intel 先进逻辑 wafer starts，SK hynix/Micron/Samsung HBM/DRAM 扩产
+=> 2nm/GAA、N3/N2、HBM4、CoWoS/SoIC/3D packaging、良率控制
+=> AMAT：ALD/CVD/PVD/Epi/etch/eBeam/CMP/implant/AP packaging/AGS
+=> 下游芯片：NVIDIA、AMD、Broadcom/Google TPU、AWS Trainium、Microsoft Maia、Meta MTIA、Huawei Ascend 等
+```
+
+在产业链中，AMAT 不是单点垄断型公司，而是“平台型设备商”。ASML 垄断 EUV，KLA 在 process control 定价权最强，Lam 在高深宽比 etch 强，ASM 在 ALD 份额强；AMAT 的优势是覆盖面宽、recipe 和 installed base 深、客户协同强，并且在 leading-edge foundry/logic、DRAM 和 advanced packaging 这三个 AI 设备增长池里都有高价值位置。
+
+### 1.3 最近 3 年重大业务变化、转型和收购
+
+| 日期 | 事件 | 对业务的含义 | 对 AMAT 估值的影响 |
+|---:|---|---|---|
+| 2023-05-22 | 宣布 EPIC Center Silicon Valley，2026 年投入运营，后续资本开支随客户项目逐步扩至约 50 亿美元 | 把设备开发从串行供应商模式推进到客户/材料/大学/设备商共址协同，目标是缩短从 R&D 到 HVM 的商业化周期 | 增强 multi-node visibility，提升先进逻辑、DRAM/HBM、封装的 design win 机会 |
+| 2025 FY | FY2025 年收入 283.68 亿美元、同比 +4%，第六年增长；但 Q4 出现 restructuring charge 1.81 亿美元 | 底层仍是强现金流设备龙头，但公司在为 2026H2 更强需求重配成本和供应链 | 周期底部韧性强，但费用结构需要观察 |
+| 2026-02 | FY2026 Q1 将 200mm equipment business 从 AGS 移到 Semiconductor Systems，并全面分配 corporate support costs；历史分部重述 | 分部收入口径变化，Semi Systems 变得更完整，AGS 更纯服务/备件/软件 | 分析五季度时必须采用重述口径，否则会误判 AGS 增速 |
+| 2026-02 至 2026-05 | 推出/强调 GAA 产品组合：Viva radical treatment、Sym3 Z Magnum conductor etch、Producer Precision Selective Nitride PECVD、Endura Trillium ALD 等 | 从 FinFET 过渡到 GAA/2nm 后，ALD、selective deposition、selective etch、Epi、eBeam 和材料处理步骤价值提高 | AMAT 的“AI 设备”叙事从传统 WFE beta 升级为材料工程 share gain |
+| 2026-03 | 与 SK hynix 在 EPIC Center 签长期 R&D 合作，聚焦 next-gen DRAM/HBM、materials、integration、3D packaging；Micron、Samsung 也为 EPIC 伙伴，TSMC 在 Q2 前后加入 Founding Partner | Memory/HBM 客户把材料工程和封装协同提前到设备 R&D 阶段 | 提高 HBM/DRAM 设备订单可见度和客户锁定 |
+| 2026-05-03 | 拟收购 ASMPT NEXX，NEXX 是 large-area advanced packaging deposition/ECD 设备供应商 | 补齐 panel-level advanced packaging 的 ECD，配合 AMAT 已有 digital lithography、PVD、CVD、etch、eBeam | 小额但战略相关，瞄准 510x515mm+ panel substrate 和大型 AI accelerator package |
+| 2026-06-10 | Singapore Tampines Campus 5 亿美元扩产，Singapore advanced cleanroom capacity 超过翻倍，已 volume production，未来数年约 1000 个岗位 | 直接解决 2026-2027 AI 设备订单交付能力；全球制造 footprint 包括美国、欧洲、以色列、台湾、新加坡 | 支撑管理层“build plan、inventory、logistics capacity”上修，降低产能瓶颈 |
+
+### 1.4 最新估值和财务快照
+
+> 股价和估值为 2026-06-11 收盘/盘后快照，价格类数据来自 StockAnalysis/S&P Global Market Intelligence；财报类数据来自公司 FY2026 Q2 披露。
+
+| 指标 | 最新值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | 552.64 美元；盘后 556.00 美元 | 2026-06-11 16:00 / 18:24 EDT | 当日 +11.19%，估值反映设备景气上修 |
+| 市值 | 4387.7 亿美元 | 2026-06-11 | EV 4357.4 亿美元 |
+| TTM 收入 | 290.2 亿美元 | 2026-06-11 数据源更新 | 与 FY2025 283.68 亿、FY2026 H1 149.22 亿衔接 |
+| TTM 净利润 | 85.1 亿美元 | 2026-06-11 | TTM EPS 10.63 美元 |
+| PE | 46.74x | 2026-06-11 | 显著高于 AMAT 历史半导体设备中枢 |
+| Forward PE | 33.75x | 2026-06-11 | 市场已在定价 2026H2-2027 增长 |
+| PS | 15.05x | 2026-06-11 | Forward PS 11.37x |
+| 最新季度收入增速 | +11% YoY | FY2026 Q2，截至 2026-04-26 | Q3 FY2026 指引中值 89.50 亿美元，同比约 +23% |
+| TTM 毛利率 | 48.96% | 2026-06-11 | FY2026 Q2 GAAP GM 49.9%、non-GAAP GM 50.0% |
+| TTM 净利率 | 29.31% | 2026-06-11 | FY2026 Q2 GAAP net margin 35.5%，受投资收益等影响较高 |
+| FY2026 Q2 分部收入 | Semiconductor Systems 59.65 亿、AGS 16.65 亿、Other 2.80 亿 | 2026-05-14 | Semiconductor Systems 占 75.4%，AGS 占 21.0% |
+| 现金及短投 | 82.41 亿美元 | 2026-04-26 | 现金 63.01 亿 + 短投 19.40 亿 |
+| 长期投资 | 51.42 亿美元 | 2026-04-26 | 现金+短投+长期投资合计 133.83 亿 |
+| 总债务 | 64.55 亿美元 | 2026-04-26 | 短债 11.99 亿 + 长债 52.56 亿 |
+| 流动比率 | 2.51x | 2026-04-26 | 225.71 亿流动资产 / 89.98 亿流动负债 |
+| 合同负债 | 25.70 亿美元 | 2026-04-26 | 可作为客户预收/递延收入 proxy，但不是 backlog |
+| 库存 | 63.43 亿美元 | 2026-04-26 | 较 FY2025 末 59.15 亿上升，配合 build plan 上修 |
+
+### 1.5 资产负债表健康度
+
+AMAT 财务健康度强。2026-04-26 公司总资产 402.86 亿美元、股东权益 239.09 亿美元、总负债 163.77 亿美元；现金+短投 82.41 亿美元高于总债务 64.55 亿美元，净现金/短投约 17.86 亿美元。若把长期投资纳入流动性安全垫，现金+短投+长投达 133.83 亿美元，扣除总债务后仍有 69.28 亿美元。
+
+风险不在偿债，而在资本开支和库存前置：Q2 单季经营现金流 8.45 亿美元、capex 6.35 亿美元，FCF 2.10 亿美元，低于历史常态，主要因为扩产、库存和应收增加。这个现象在上行周期是正常的，但若 AI 设备 pull-in 后订单延迟，库存和应收会放大经营杠杆。当前 balance sheet 可以支撑扩产、收购和回购，但估值已经不是“资产安全边际”逻辑，而是“AI WFE 多年增长兑现”逻辑。
+
+## 2. 最新和最近 4 次财报：五季度核心数字
+
+> 口径说明：FY2026 Q1 起，AMAT 将 200mm equipment business 从 AGS 移入 Semiconductor Systems，并重述历史分部。下表对 Semiconductor Systems / AGS 尽量采用 FY2026 Q2 presentation 的重述口径；Foundry/Logic/DRAM/Flash 百分比按各季度公司披露。AMAT 不披露标准 bookings/backlog/B2B/lead time/cancel rate，因此订单列使用“官方披露 + contract liabilities + 客户 rolling forecast + 行业订单”做代理。
+
+| 财报季度 | 披露日期 / 季度截止 | 总收入 / YoY | EPS / GM | Semiconductor Systems | 系统内业务 mix | AGS | Other | 订单、交期、取消率与 AI 相关判断 |
+|---|---|---:|---|---:|---|---:|---:|---|
+| FY2026 Q2 | 2026-05-14 / 2026-04-26 | 79.10 亿美元，+11% YoY，+13% QoQ | GAAP EPS 3.51；non-GAAP EPS 2.86；GAAP GM 49.9%；non-GAAP GM 50.0% | 59.65 亿美元，+10% YoY；GM 54.7%，non-GAAP OPM 35.2% | Foundry/Logic/Other 67% = 约 39.97 亿；DRAM 29% = 约 17.30 亿；Flash 4% = 约 2.39 亿 | 16.65 亿美元，+17% YoY；GM 34.7%，OPM 29.2% | 2.80 亿美元 | 无 backlog；合同负债 25.70 亿美元。最大客户给 rolling 8-quarter forecasts；客户增加 cleanroom capacity，AMAT 上调 CY2026 semi equipment growth 至 >30%。AI 相关：leading-edge logic、DRAM、advanced packaging 是 >80% WFE 增量。取消率未披露；当前取消风险低，主要风险是交付/安装节奏 |
+| FY2026 Q1 | 2026-02-12 / 2026-01-25 | 70.12 亿美元，-2% YoY | GAAP EPS 2.54；non-GAAP EPS 2.38；GAAP GM 49.0%；non-GAAP GM 49.1% | 51.41 亿美元，-8% YoY；GM 54.3%，non-GAAP OPM 32.9% | Foundry/Logic/Other 62% = 约 31.87 亿；DRAM 34% = 约 17.48 亿，创 DRAM 纪录；Flash 4% = 约 2.06 亿 | 15.59 亿美元，+15% YoY；GM 34.4%，OPM 28.1% | 3.12 亿美元 | 无 backlog；公司称 AI computing 投资加速，HBM/leading-edge logic/advanced packaging 是增长核心；过去几年系统制造能力几乎翻倍，库存和供应链提前准备。Q2 指引 77.5 亿美元中值，后续实际超预期 |
+| FY2025 Q4 | 2025-11-13 / 2025-10-26 | 68.00 亿美元，-3% YoY；FY2025 全年 283.68 亿，+4% | GAAP EPS 2.38；non-GAAP EPS 2.17；GAAP GM 48.0%；non-GAAP GM 48.1% | 重述估算约 48.8 亿美元；旧口径披露 47.60 亿，OPM 32.1% | 旧口径：Foundry/Logic/Other 65%；DRAM 29%；Flash 6% | 重述估算约 15.1 亿美元；旧口径 16.25 亿 | 约 4.15 亿美元 | 公司称正为 2026H2 更高需求做 operations/service readiness；FY2026 Q1 指引 68.5 亿美元。订单信息未披露；重心从 FY2025 的平稳增长转向 FY2026H2 的 AI 设备上行 |
+| FY2025 Q3 | 2025-08 / 2025-07 左右 | 约 73.02 亿美元，按旧分部相加；同比增长 | GAAP EPS 2.22；non-GAAP EPS 2.48；non-GAAP GM 约 48.9% | 重述估算约 55.6 亿美元；旧口径 54.27 亿美元，旧口径 OPM 36.2% | 旧口径：Foundry/Logic/Other 69%；DRAM 22%；Flash 9% | 重述估算约 14.6 亿美元；旧口径 16.00 亿 | 约 2.76 亿美元 | Q4 指引 67.0 亿美元；订单未披露。该季度仍是 FY2025 高位但未全面进入 AI 设备 pull-in，DRAM 占比低于 FY2026 Q1/Q2 |
+| FY2025 Q2 | 2025-05-15 / 2025-04-27 | 71.00 亿美元，+7% YoY | GAAP EPS 2.63；non-GAAP EPS 2.39；GAAP GM 49.1%；non-GAAP GM 49.2% | 重述口径 54.01 亿美元；旧口径 52.55 亿，旧口径 OPM 36.2% | 旧口径：Foundry/Logic/Other 65%；DRAM 27%；Flash 8% | 重述口径 14.20 亿美元；旧口径 15.66 亿 | 2.79 亿美元 | Q3 指引 72.0 亿美元；订单未披露。此时 AI/HBM 已是需求主线，但管理层尚未像 FY2026 Q2 那样把 CY2026 semi equipment 增长上调至 >30% |
+
+### 2.1 五季度读数
+
+1. **收入拐点在 FY2026 Q2 确认。** FY2025 Q2-Q4 基本在 68-73 亿美元区间震荡；FY2026 Q1 仍同比 -2%；FY2026 Q2 跳到 79.10 亿，Q3 中值指向 89.50 亿，收入曲线从横盘进入加速。
+2. **利润率受 mix 支撑。** Semiconductor Systems Q2 non-GAAP GM 54.8%，公司层 non-GAAP GM 50.0%，是 25 年以上最高附近。原因不是简单涨价，而是高价值产品 mix：GAA、ALD/Epi、DRAM/HBM、advanced packaging、服务/软件。
+3. **DRAM/HBM 已经从补充项变成主驱动。** FY2026 Q1 DRAM 占 Semiconductor Systems 34%，FY2026 Q2 仍达 29%，金额约 17.3 亿美元；FY2025 Q3 只有 22%。
+4. **AGS 是低波动现金流底座。** Q2 AGS 16.65 亿美元，同比 +17%，OPM 29.2%；管理层目标是 sustainable annual growth in the mid-teens，且 2026 可能更高。
+5. **订单可见度强，但公开 backlog 缺失。** AMAT 不披露 backlog/bookings；最有用的代理是：最大客户八季度滚动预测、合同负债 25.70 亿美元、库存和制造能力上修、Singapore cleanroom 扩产、Q3 收入指引超预期。
+
+## 3. 2026 最新指引、业务收入占比和重点产品
+
+### 3.1 FY2026 Q3 指引与收入占比
+
+| 项目 | FY2026 Q3 指引中值 | 占比 | YoY / QoQ 判断 | 重点 |
+|---|---:|---:|---|---|
+| Total revenue | 89.50 亿美元 +/-5.00 亿 | 100% | 同比约 +23%；较 Q2 中值 +13% | 明显高于 FY2025 横盘区间 |
+| Semiconductor Systems | 约 69.00 亿美元 | 77.1% | 较 Q2 59.65 亿约 +15.7%；较 FY2025 Q3 重述估算约 +24% | GAA/leading-edge logic、DRAM/HBM、advanced packaging |
+| Applied Global Services | 约 17.50 亿美元 | 19.6% | 较 Q2 +5.1%；YoY 约 +20% | 高稼动、服务、spares、AIx、field upgrade |
+| Other | 约 3.00 亿美元 | 3.4% | 基本稳定 | Display 等低优先级 |
+| Non-GAAP gross margin | 约 50.1% | - | 比 Q2 50.0% 略升 | mix/价值定价持续 |
+| Non-GAAP EPS | 3.36 美元 +/-0.20 | - | 同比约 +36% | 经营杠杆明显 |
+
+### 3.2 当前业务占比与 AI 相关性
+
+| 业务 | FY2026 Q2 收入 | 收入占比 | 最新增长 | AI 数据中心相关收入占比估算 | 结论 |
+|---|---:|---:|---:|---:|---|
+| Semiconductor Systems | 59.65 亿美元 | 75.4% | +10% YoY，+16% QoQ | 广义 AI 相关 55%-75%；狭义直接由 AI/HPC 先进逻辑/HBM/封装拉动 35%-50% | 核心增长池 |
+| Applied Global Services | 16.65 亿美元 | 21.0% | +17% YoY | 广义 AI 相关 25%-45%，取决于高端 fab installed base 稼动 | 稳定高现金流 |
+| Other / Display | 2.80 亿美元 | 3.5% | 基本持平 | 低 | 跳过为主 |
+
+AI 数据中心相关收入必须谨慎表述：AMAT 没有披露“AI revenue”。更合理的口径是“AI 拉动的 wafer fab / HBM / packaging 设备暴露”。按 Q2 来看，Foundry/Logic/Other 约 39.97 亿美元、DRAM 约 17.30 亿美元、AGS 16.65 亿美元，其中并非全部服务 AI。结合项目内行业研究，狭义 AI/HPC 先进逻辑、HBM/DRAM 和 advanced packaging 在 Q2 可粗估贡献 26-36 亿美元，即公司收入的 33%-46%；广义 AI 半导体景气暴露可达 45-58 亿美元，即 57%-73%。这不是公司披露值，是模型估算。
+
+### 3.3 可跳过的低优先级产品和业务
+
+| 跳过项 | 原因 | 仍需跟踪的例外 |
+|---|---|---|
+| Display equipment / Other 中的传统显示设备 | Q2 仅 2.80 亿美元，占比 3.5%；与 AI 数据中心直接关联低 | 若 advanced display 与 AI 终端出现新周期，可作为小 beta |
+| 普通成熟节点 ICAPS / 200mm 设备 | 公司称 China + ICAPS worldwide 2026 flat to slightly higher；增速和 AI 纯度不如 GAA/HBM/封装 | 中国国产替代、汽车/功率周期复苏、出口限制变化 |
+| Flash NAND 常规扩产 | Q2 在 Semiconductor Systems 中仅 4%；AI 相关性主要来自企业 SSD/KV cache，但短期不如 DRAM/HBM | 400L NAND、cryo etch、企业级 SSD 供需反转 |
+| 传统服务中低端 spares | 稳定但弹性低 | 高端 fab uptime、AIx、advanced service contract |
+
+### 3.4 重点产品和潜力小业务清单
+
+| 重点方向 | 对应产品/型号/能力 | 为什么重要 | 当前收入可见度 | 潜在小业务不能漏掉 |
+|---|---|---|---|---|
+| GAA / 2nm / leading-edge logic materials engineering | Endura Trillium ALD、Producer Precision Selective Nitride PECVD、Producer Viva radical treatment、Centris Sym3 Z Magnum conductor etch、Producer Selectra Etch、Centura Prime Epi、Centura Xtera Selective Epitaxy、Centura DPN HD、Centris Spectral Molybdenum ALD、Opta CMP、PROVision 10 / PrimeVision eBeam、SEMVision | N2/GAA 把设备强度从光刻扩散到 ALD/Epi/etch/eBeam/CMP；AMAT 在材料工程和 conductor etch 有强位置 | Q2 Foundry/Logic/Other 约 39.97 亿美元，GAA 新产品已被 leading logic chipmakers 采用 | Viva/Precision/Trillium 这类“单工序但高壁垒”的产品可能贡献 share gain |
+| DRAM/HBM 前道设备 | DRAM wiring/patterning/peripheral logic，ALD/CVD/PVD，etch，eBeam/metrology，HBM TSV liner/barrier/seed、preclean、ECD、warpage film，advanced clean/CMP/thermal | HBM die size 大、stack 层数增加，按 delivered bit 需要标准 DRAM 3-4 倍 wafer starts；HBM4/HBM4E 进入 2026-2027 主线 | Q2 DRAM revenue 约 17.30 亿美元，Q1 创 DRAM revenue 纪录 | HBM wafer-level stress/warpage control、TSV/UBM、advanced eBeam 可能小而高增 |
+| Advanced packaging / panel-level packaging | Digital lithography、Topaz PVD/large-area PVD、CVD、etch、eBeam metrology/inspection；NEXX panel-level ECD；Kinex/混合键合生态协同 | AI accelerator package 变大，2.5D/3D chiplet、HBM、I/O die 集成推高封装设备需求；面板级封装是 2027-2029 成本路线期权 | 公司预计 packaging revenue CY2026 >50%；NEXX 交易数月内完成且无需监管审批 | Panel-level ECD、fine-pitch I/O wiring、510x515mm+ substrate、CoPoS/玻璃/TGV 相关设备 |
+| AGS + AIx advanced services | Installed base service、spares、field upgrade、AIx monitoring/diagnostics/analytics，35,000+ chambers connected | 客户 fab 满载时，服务对 uptime/yield 的 ROI 高；AI 高端 fab 停机损失远高于服务费 | Q2 AGS 16.65 亿美元，+17% YoY，目标 mid-teens sustainable growth | AIx 软件/预测维护/advanced service attach 可能提高服务毛利 |
+| EPIC co-innovation platform | EPIC Center Silicon Valley，TSMC/Micron/Samsung/SK hynix/Advantest/ASU/RPI/Stanford 等伙伴 | 提前拿到 multi-node roadmap 和客户 R&D 数据，增加下一代 POR/design win 概率 | 不是短期收入，而是 2027+ share gain 机制 | 与 SK hynix 的 HBM/DRAM、TSMC 的 next-node process co-development |
+
+## 4. 当前高增长/关键业务的收入贡献和质量评分
+
+评分 1-5，5 为最高。供需紧张程度越高越乐观，表示越供不应求。
+
+| 关键业务/产品 | 当前收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 解释 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| GAA/leading-edge logic 材料工程 | Q2 Foundry/Logic/Other 39.97 亿美元；其中 AI/GAA/N3/N2 相关约 15-24 亿美元/季 | Q2 foundry revenue 创纪录；Semi Systems +16% QoQ | 5 | 5 | 4 | 4 | N2/GAA/Rubin/MI400/ASIC 对 ALD/Epi/etch/eBeam 需求上升；AMAT 不是唯一供应商，但 recipe 锁定强 |
+| DRAM/HBM 前道设备 | Q2 DRAM 17.30 亿美元；HBM/AI DRAM 相关约 9-13 亿美元/季 | Q1 record DRAM revenue，Q2 DRAM +18% YoY | 5 | 5 | 5 | 4 | HBM 是 AI 供应上限之一；AMAT 在 memory process equipment 位置强，但与 Lam/TEL/ASM/KLA 竞争 |
+| Advanced packaging / panel-level | 公司未披露；估算 FY2026 run-rate 25-35 亿美元，Q2 约 5-8 亿美元 | 管理层预计 CY2026 packaging revenue >50% | 5 | 4 | 5 | 3-4 | 2.5D/HBM/large package 直接卡 AI 出货；AMAT 通过 NEXX 补 ECD，仍需与 ASMPT/Besi/SUSS/EVG/KLA/Onto/Camtek 分工竞争 |
+| AGS + AIx | Q2 16.65 亿美元 | +17% YoY，目标 mid-teens，2026 可能更高 | 4 | 4 | 4 | 4 | 满载 fab 对 uptime/yield 付费意愿强；服务由 installed base 和 OEM know-how 锁定 |
+| China/ICAPS/200mm | 公司称 China + ICAPS 2026 flat to slightly higher；Q2 中国 total revenue 20.87 亿美元，占 27% | 平稳 | 2 | 2 | 2 | 2-3 | 增长不如 AI 主线，且出口管制/国产替代风险高；现金流仍重要 |
+
+## 5. 一年后关键业务三情景预测
+
+> 时间窗口：从 2026-06-11 往后约 12 个月，覆盖 FY2026 H2 + FY2027 H1 的主要订单/收入变化。以下为研究模型，不是公司指引。公司唯一明确口径是 FY2026 Q3 revenue 89.50 亿美元 +/-5.00 亿、Semiconductor Systems 约 69 亿、AGS 约 17.5 亿，以及 CY2026 semiconductor equipment business growth >30%。
+
+| 关键业务 | 情景 | 一年后收入贡献 | 收入增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 触发条件 |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| GAA/leading-edge logic 材料工程 | 基准 | 年化 80-100 亿美元 | +20%-30% | 5 | 5 | 4 | 4 | GB300/N3/N4 高产，N2/GAA 按计划进入订单，TSMC/Samsung/Intel 扩产不延迟 |
+| GAA/leading-edge logic 材料工程 | 乐观 | 年化 100-125 亿美元 | +35%-50% | 5 | 5 | 5 | 4 | Rubin/MI400/Trainium/TPU/ASIC 同时拉 N3/N2，客户提前锁工具 |
+| GAA/leading-edge logic 材料工程 | 极度乐观 | 年化 130-160 亿美元 | +60%-90% | 5 | 5 | 5 | 5 | High-NA/BSPDN/GAA 订单提前，先进 fab cleanroom 和供应链同步打开 |
+| DRAM/HBM 前道设备 | 基准 | 年化 75-90 亿美元 | +10%-25% | 5 | 5 | 5 | 4 | HBM3E/HBM4 正常扩产，1b/1c DRAM 持续，HBM ASP 高位 |
+| DRAM/HBM 前道设备 | 乐观 | 年化 90-110 亿美元 | +30%-50% | 5 | 5 | 5 | 4 | HBM4/Rubin/MI400/TPU/Trainium 扩张，SK hynix/Micron/Samsung capex 不下修 |
+| DRAM/HBM 前道设备 | 极度乐观 | 年化 110-140 亿美元 | +60%-90% | 5 | 5 | 5 | 5 | HBM4E/16Hi 提前，memory equipment 继续上修，客户为产能支付溢价 |
+| Advanced packaging / panel-level | 基准 | 年化 32-42 亿美元 | +45%-60% | 5 | 4 | 5 | 3-4 | AMAT packaging revenue 按公司 >50% 目标兑现，NEXX 正常整合 |
+| Advanced packaging / panel-level | 乐观 | 年化 45-60 亿美元 | +70%-110% | 5 | 5 | 5 | 4 | CoWoS-like/OSAT 第二供应链扩产，panel-level ECD 进入 HVM 评估 |
+| Advanced packaging / panel-level | 极度乐观 | 年化 60-80 亿美元 | +120%-180% | 5 | 5 | 5 | 4 | HBM4E/CoPoS/large package 面板级路线提前，客户锁定全套设备组合 |
+| AGS + AIx | 基准 | 年化 75-82 亿美元 | +12%-18% | 4 | 4 | 4 | 4 | Installed base 扩大，fab 利用率高，服务 attach 稳定 |
+| AGS + AIx | 乐观 | 年化 85-95 亿美元 | +22%-35% | 4 | 5 | 4 | 4 | 高端 fab 满载，advanced service/AIx attach 提高，field upgrade 扩大 |
+| AGS + AIx | 极度乐观 | 年化 100-110 亿美元 | +40%-55% | 5 | 5 | 5 | 5 | 客户为了缩短 ramp 和提升 yield，把 AIx/advanced service 作为必配 |
+
+## 6. BOM、每 MW / rack / GPU / optical port 内容量和价格传导
+
+### 6.1 先说明“真实内容量”：AMAT 不在 AI rack 的直接 BOM 里
+
+AMAT 的直接物理 BOM 内容量为：
+
+| 对象 | AMAT 直接物理内容量 |
+|---|---:|
+| 每 GPU / ASIC | 0 美元，AMAT 不卖芯片封装内零件 |
+| 每 rack | 0 美元，AMAT 不卖服务器、GPU tray、switch、CDU、PDU |
+| 每 MW 数据中心 | 0 美元，AMAT 不卖电力/冷却/土建设备 |
+| 每 optical port | 0 美元，AMAT 不卖光模块/DSP/TIA/CDR；仅通过硅光/封装设备间接受益 |
+
+但是在经济口径里，AI GPU/ASIC/HBM/封装背后包含 AMAT 的设备资本开支。设备一次性卖给 fab/OSAT/HBM 厂，随后通过折旧、良率和产能释放摊入每颗芯片/每个机架。下面用两个口径：
+
+1. **产能扩张订单口径**：当客户为未来 AI 产能下设备订单时，AMAT 设备订单约相当于当期 AI accelerator + HBM + packaging capacity value 的 2%-5%，高峰可更高。
+2. **单位摊销内容量口径**：把 AMAT 设备 capex 按 5-7 年、良率、wafer output 摊到每颗 GPU/ASIC/HBM package，单位金额远低于订单口径。
+
+### 6.2 单位内容量估算
+
+假设：
+
+- 高端 AI rack 以 72 GPU/rack 近似；GB200/GB300/Rubin/MI400 机架功耗差异大，取 8-10 个 72-GPU rack / MW 的工程口径。
+- 每个高端 GPU/ASIC 的 AMAT 设备摊销包含：先进逻辑 wafer 前道、HBM/DRAM 前道、先进封装/中段设备、AGS/field upgrade 分摊。
+- 该估算是 economic content，不是采购 BOM，不应与 GPU ASP 或服务器 BOM 直接相加。
+
+| AMAT 相关环节 | 设备/工序 | 产能扩张订单口径 | 单位摊销内容量：每 GPU/ASIC | 每 72-GPU rack | 每 MW | 每 optical port |
+|---|---|---:|---:|---:|---:|---:|
+| GAA/leading-edge logic | ALD/CVD/PVD/Epi/etch/eBeam/CMP/implant | AI logic wafer capacity value 的 1.0%-2.0% | 35-90 美元 | 2500-6500 美元 | 2.0-6.5 万美元 | 约 0 |
+| DRAM/HBM 前道 | DRAM ALD/CVD/etch/eBeam、TSV/UBM/preclean/ECD/warpage | HBM/DRAM capacity value 的 1.0%-2.0% | 25-80 美元 | 1800-5800 美元 | 1.5-6.5 万美元 | 约 0 |
+| Advanced packaging | PVD/CVD/etch/eBeam、digital lithography、panel ECD/NEXX | AI package capacity value 的 0.5%-1.5% | 15-60 美元 | 1100-4300 美元 | 0.9-5.0 万美元 | CPO/SiPh 若导入，0.10-1.00 美元/port 的设备摊销级别 |
+| AGS / AIx | spares、field upgrade、diagnostics、software | Installed base service 年费/升级，不按单颗直接采购 | 10-25 美元 | 700-1800 美元 | 0.6-2.0 万美元 | 极低 |
+| 合计 | AMAT economic content | 产能扩张订单口径约为 AI hardware capacity value 的 2%-5% | 85-255 美元 | 6100-18400 美元 | 5.0-20.0 万美元 | 常规光口近 0；CPO/硅光路线小额间接受益 |
+
+### 6.3 价格传导链
+
+```text
+Agentic AI / 推理 token / 训练集群需求上修
+=> 云厂 CapEx 上修，GPU/ASIC/HBM/CoWoS 长单
+=> TSMC/Samsung/Intel/SK hynix/Micron/OSAT 扩 wafer starts 和 packaging capacity
+=> 设备交付窗口、cleanroom、field engineer、RF/vacuum/gas/precision subsystem 紧张
+=> AMAT 提高 build plan、inventory、logistics capacity，客户给 rolling 8-quarter forecasts
+=> 高价值配置、附加模块、service contract、AIx/advanced service attach 提升
+=> 设备 ASP/mix 和 AGS 毛利改善
+=> 芯片成本通过 wafer price、HBM ASP、package price、AI accelerator ASP 传给云厂
+```
+
+### 6.4 当前产能能力、供应链采纳和认证阶段
+
+| 关键业务 | 当前产能能力（美元计） | 供应链采纳程度 | 认证/POR 阶段 |
+|---|---:|---|---|
+| GAA/leading-edge logic | FY2026 Q3 Semiconductor Systems 指引 69 亿美元/季；其中 logic/GAA 相关可支撑 40-50 亿美元/季级别的系统收入 | TSMC/Samsung/Intel 等先进逻辑客户高度采用；公司称在 leading-edge foundry-logic 是 #1 process equipment provider | Precision Selective Nitride PECVD、Trillium ALD 已被 leading logic chipmakers 在 2nm 及以下 GAA 节点采用；Viva/Sym3/Selectra/Epi 处于 GAA portfolio 推广/量产导入 |
+| DRAM/HBM 前道 | Q2 DRAM revenue 17.30 亿美元/季；Q1/Q2 连续高位；可支撑年化 70 亿美元左右 DRAM/HBM 相关设备收入 | SK hynix、Micron、Samsung 均为 EPIC/合作伙伴或核心客户；HBM/DRAM 扩产拉动强 | next-gen DRAM/HBM 与 SK hynix 在 EPIC Center 做长期 R&D；DRAM/HBM 工艺多为客户 POR 和 multi-node qualification |
+| Advanced packaging / panel-level | 公司未披露；CY2026 packaging revenue 预计 >50%，估算年化 25-35 亿美元 | AMAT 已有 PVD/CVD/etch/eBeam/digital lithography 组合；NEXX 补 panel-level ECD | NEXX 交易预计数月内完成，无监管审批；panel-level ECD/510x515mm+ substrate 处在 HVM 早期/认证扩张 |
+| AGS + AIx | Q2 16.65 亿美元/季，年化约 66.6 亿美元 | 由 installed base 锁定，35,000+ chambers connected to AIx | 服务不是单次 POR，而是 tool install base + service contract + customer uptime KPI 认证 |
+
+## 7. 一年后产能能力、采纳程度和认证阶段三情景
+
+| 业务 | 情景 | 一年后产能/收入能力（美元计） | 供应链采纳程度 | 认证阶段 |
+|---|---|---:|---|---|
+| GAA/leading-edge logic | 基准 | AMAT logic/GAA 相关年化 80-100 亿美元 | TSMC N2、Samsung SF2、Intel 18A/后续节点按计划使用，多客户扩散 | Trillium/Precision/Viva/Sym3 在 2nm/GAA HVM 扩大 POR |
+| GAA/leading-edge logic | 乐观 | 100-125 亿美元 | Rubin/MI400/ASIC/N3/N2 订单同步提前，客户锁 2027 工具 slot | 多节点 co-development，EPIC 带来更早 design win |
+| GAA/leading-edge logic | 极度乐观 | 130-160 亿美元 | N2/N3/GAA/High-NA/BSPDN 同步高峰，equipment lead time 拉长 | 关键模块变成客户 long-term process-of-record，服务 attach 提升 |
+| DRAM/HBM 前道 | 基准 | 75-90 亿美元 | HBM3E/HBM4 量产扩张，1b/1c DRAM 正常 | HBM/DRAM POR 稳定扩散，EPIC memory roadmap 进入 pilot/HVM |
+| DRAM/HBM 前道 | 乐观 | 90-110 亿美元 | HBM4E、16Hi、AI ASIC 多客户锁产能 | HBM wafer-level tools、eBeam/AI process control 进入更多 tool-of-record |
+| DRAM/HBM 前道 | 极度乐观 | 110-140 亿美元 | HBM 供不应求延长，客户接受更高设备配置和服务包 | 4F2/next-gen DRAM pilot 工具提前，HBM4E/HBM5 预研产能采购 |
+| Advanced packaging | 基准 | 32-42 亿美元 | CoWoS-like、HBM、RDL、TCB/TBDB、inspection/metrology 拉动；AMAT 拿到部分面板级试产 | NEXX 整合完成，panel ECD 做 early HVM / customer qualification |
+| Advanced packaging | 乐观 | 45-60 亿美元 | OSAT 第二供应链扩大，large-body AI package 需求上修 | Panel-level ECD、digital lithography、PVD/CVD/etch/eBeam 组合进入客户 POR |
+| Advanced packaging | 极度乐观 | 60-80 亿美元 | CoPoS/玻璃/TGV/CPO/photonic interposer design win 提前 | 面板级封装从 pilot 变成 early production，NEXX 成为关键小业务 |
+| AGS + AIx | 基准 | 75-82 亿美元 | 高稼动下服务 attach 稳定提升 | AIx 从监测/诊断扩到更多 advanced service |
+| AGS + AIx | 乐观 | 85-95 亿美元 | 先进 fab 为缩短 ramp 主动买 productivity upgrade | Service contracts 更长期，yield/OEE 与软件绑定 |
+| AGS + AIx | 极度乐观 | 100-110 亿美元 | 客户把 uptime/yield 服务视为 AI 供给瓶颈的一部分 | AIx/advanced analytics 类软件化收入毛利更高 |
+
+## 8. 订单积压、供给和未来一年业务增速预测
+
+### 8.1 真实 backlog 情况
+
+AMAT 不披露标准 backlog、bookings、B2B、lead time 或取消率。不能把合同负债等同 backlog。可用代理如下：
+
+| proxy | 最新数字/事实 | 含义 | 局限 |
+|---|---:|---|---|
+| Contract liabilities | 25.70 亿美元，2026-04-26；FY2025 末 25.66 亿 | 客户预收/递延收入稳定，说明订单执行底座在 | 不是全部 backlog，不含未开票订单 |
+| Q3 FY2026 指引 | 总收入 89.50 亿美元，Semi Systems 69 亿，AGS 17.5 亿 | 已经转化为短期收入可见度，强于 backlog 披露 | 单季指引不能外推多年 |
+| 客户 rolling forecasts | 最大客户提供 rolling eight-quarter forecasts | 订单和产能可见度显著拉长 | forecast 可调，不等于不可取消合同 |
+| Manufacturing capacity | 过去几年几乎翻倍；Singapore Tampines 5 亿美元扩产，cleanroom capacity 超过翻倍 | 公司正在为客户 ramps 扩供 | 若需求下修，会变成利用率风险 |
+| Inventory/build plan | Q2 库存 63.43 亿美元，较 FY2025 末 59.15 亿上升；公司提高 build plan、logistics capacity | 对 2026H2 交付有准备 | 订单延期时库存压力上升 |
+| 行业订单验证 | SEMI Q1 2026 equipment billings 365.5 亿美元、同比 +14%；SEMI 300mm 2026 1330 亿、2027 1510 亿 | WFE 行业不是单公司口径，景气强 | 不代表 AMAT 全额收入 |
+
+### 8.2 订单/交付窗口和取消率推断
+
+| 业务 | 订单能见度 | 交付窗口 | 取消率推断 | 判断 |
+|---|---|---|---|---|
+| Leading-edge logic/GAA | 高；TSMC/Samsung/Intel 与 AI GPU/ASIC roadmap 强绑定 | 6-18 个月，先进 fab 安装/recipe/ramp 更长 | 低；更可能是交付排程调整而非取消 | 最强确定性之一 |
+| DRAM/HBM 前道 | 高；HBM3E/HBM4/HBM4E 供应紧张，memory equipment 上修 | 6-15 个月，取决于 EUV/etch/deposition/cleanroom | 低到中；若 HBM ASP 反转，capex 会延后 | 2026-2027 上行但仍有 memory 周期性 |
+| Advanced packaging | 中高；CoWoS/HBM/large package 紧，但工具分散 | 3-12 个月；新面板级工具认证更长 | 中；路线切换和客户 POR 影响大 | 增速最高但不确定性也更高 |
+| AGS + AIx | 高；installed base 和 fab utilization 支撑 | 持续性服务 | 极低，除非 fab utilization 下行 | 抗周期性最好 |
+| ICAPS/China | 中；公司称 flat to slightly higher | 3-12 个月 | 中高；出口管制和国产替代影响 | 不是主线 |
+
+### 8.3 未来一年公司增速三情景
+
+| 情景 | FY2027 前后收入 run-rate | 未来一年收入增速 | Semiconductor Systems | AGS | 毛利率方向 | 关键条件 |
+|---|---:|---:|---|---|---|---|
+| 基准 | 年化 360-390 亿美元 | +20%-30% vs TTM 290 亿 | GAA/DRAM/HBM/packaging 持续；Q3 高指引后 Q4/FY27 Q1 维持高位 | +12%-18% | 公司 non-GAAP GM 50%-51% | AI capex 不下修；客户八季度预测兑现；Singapore/供应商扩产顺利 |
+| 乐观 | 年化 400-440 亿美元 | +35%-50% | Semi Systems 持续 >30% CY 增长，advanced packaging >50% 后继续上修 | +22%-35% | GM 51%-53%，Semi GM 接近或超过 55% | Rubin/MI400/TPU/Trainium/ASIC 同步拉动 N3/N2/HBM4；客户提前锁工具 |
+| 极度乐观 | 年化 450-500 亿美元 | +55%-70% | N2/GAA/BSPDN/DRAM/HBM4/advanced packaging 同时供不应求 | +40% 以上 | GM 53%+，服务/软件 mix 拉升 | WFE 被市场上修至 1800-2100 亿美元级；AMAT 设备 lead time 拉长且客户接受溢价 |
+
+### 8.4 反证指标
+
+1. 云厂 CapEx 指引连续下修，或 AI revenue/token economics 不能支持硬件扩产。
+2. NVIDIA/AMD/Broadcom/Marvell/Google/AWS/Microsoft/Meta 的 AI 芯片出货或云实例上线延迟。
+3. TSMC/Samsung/Intel N2/GAA/18A 良率或客户 tape-out 延迟。
+4. HBM4/HBM4E 良率、CoWoS/SoIC/OSAT 扩产、ABF/基板/测试成为硬瓶颈，导致前道设备订单后移。
+5. AMAT 库存和应收持续上升但收入不能同步兑现。
+6. 中国出口管制扩大，或中国本土设备价格竞争导致 AMAT 中国收入/毛利承压。
+
+## 9. 竞争格局、技术路线和替代风险
+
+### 9.1 各产品线竞争格局
+
+| 领域 | AMAT 位置 | 主要竞争对手 | AMAT 优势 | 替代风险 |
+|---|---|---|---|---|
+| Deposition / ALD / CVD / PVD | 平台型龙头，GAA/DRAM/HBM/packaging 多点暴露 | ASM、Lam、Tokyo Electron、Kokusai、Veeco、Aixtron、Piotech/Naura 等 | 产品线最宽，Endura/Centura/Producer installed base 深，材料工程 know-how 强 | ASM 在 ALD 强，TEL/Lam 在若干 memory/etch-deposition combo 强；国产薄膜设备在中国渗透 |
+| Etch / selective etch / conductor etch | 高端模块重要供应商，不是 etch 单一最强 | Lam、Tokyo Electron、Hitachi High-Tech、中微、北方华创 | GAA conductor etch、Selectra、Sym3 Z Magnum、integrated process 与 deposition 协同 | Lam 在高深宽比 etch 和 memory etch 更强；中国成熟/准先进节点国产化 |
+| Epi / materials treatment | GAA/nanosheet、source/drain Epi 和 treatment 受益 | ASM、TEL、Veeco、Aixtron、Lam | Prime Epi、Xtera、Viva 等与 GAA portfolio 协同 | ASM/TEL 在特定客户节点强；认证失败会错过整个节点窗口 |
+| eBeam / process control | 有 eBeam/metrology 产品，但 KLA 是 process control 龙头 | KLA、ASML-HMI、Hitachi、Onto、Nova、Camtek | 与 AMAT 工艺设备和 AIx 数据闭环协同 | KLA 的系统级 process control 定价权更强，客户可能采用 KLA 为主 |
+| CMP / planarization | 有 Opta/CMP 等，BSPDN/advanced packaging 有增量 | Ebara、KC Tech、华海清科 | 与沉积/刻蚀/封装流程整合 | CMP 相对更容易区域替代，国产在中国增长 |
+| Advanced packaging | 组合型能力，PVD/CVD/etch/eBeam/digital lithography + NEXX ECD | ASMPT、Besi、SUSS、EVG、K&S、DISCO、KLA、Onto、Camtek、TEL、Lam | 前道材料工程延伸到封装，NEXX 补 panel-level ECD | hybrid bonding/TCB/TBDB 许多细分被其他公司强占 POR；AMAT 需证明组合价值 |
+| AGS / AIx service | 强 installed base 服务平台 | 原厂服务为主，第三方/客户自维护为辅 | 35,000+ chambers connected，recipe/diagnostics/parts 原厂锁定 | 若客户 capex 放缓，服务仍稳但弹性下降；客户内部化部分维护 |
+
+### 9.2 AMAT 的新技术是否会成为主流
+
+| 技术/产品 | 是否主流 | 判断 |
+|---|---|---|
+| Trillium ALD / metal gate stack for GAA | 高概率主流 | GAA/nanosheet 需要 gate stack 环绕多层 nanosheet，ALD conformality 和 angstrom control 是物理需求；问题是 AMAT 与 ASM/TEL 的份额，而不是 ALD 是否需要 |
+| Precision Selective Nitride PECVD for STI | 高概率在部分 leading-edge 节点主流 | GAA STI recess/parasitic capacitance 是真实瓶颈；公司称已被 leading logic chipmakers 在 2nm 及以下采用 |
+| Viva radical treatment / Sym3 Z Magnum / Selectra etch | 中高概率 | 属于 GAA 细分工序，若进入客户 POR，切换成本高；但不同 foundry 的集成方案可能不同 |
+| Panel-level advanced packaging / NEXX ECD | 中期高潜力但 2026 仍非主流 | AI package 变大推动 510x515mm+ panel route；但 CoWoS/wafer-level 路线仍是 2026-2027 主收入，panel HVM 还要验证 warpage、RDL、yield、inspection |
+| AIx / advanced services | 高概率主流 | 高端 fabs 更依赖 uptime/yield/data loop；设备服务从被动维护升级为 yield/OEE 工具 |
+| 3D DRAM / BSPDN 相关设备 | 2027+ 期权 | BSPDN 先在 Intel/TSMC/Samsung 先进逻辑推进；3D DRAM 2026 仍偏研发/试产，不能作为 AMAT 当年收入主线 |
+
+### 9.3 客户替换成本
+
+AMAT 的客户替换成本高，尤其在先进逻辑和 HBM/DRAM：
+
+1. **Recipe 锁定**：设备不是通用机器，而是与材料、温度、压力、plasma、precursor、clean、inspection recipe 绑定。
+2. **良率风险**：先进 fab 改工具可能导致 months of yield learning loss；AI 大 die/HBM package 良率损失远大于设备差价。
+3. **节点窗口**：如果某设备进入 N2/GAA/HBM4 的 POR，下一次替换窗口往往要等下个节点或 major process change。
+4. **服务网络**：7x24 field service、spares、diagnostics、software data loop 是客户选择的一部分。
+5. **合规/区域风险**：中国客户替换意愿更高，但高端节点受出口管制，替代不是完全由价格决定。
+
+### 9.4 主要风险
+
+| 风险 | 影响路径 | 观察指标 |
+|---|---|---|
+| 估值过高 | PE 46.74x、PS 15.05x 已经反映强增长，任何订单放缓都会压估值 | AMAT 股价/目标价与 Q3/Q4 指引差距；forward PE 是否继续扩张 |
+| AI CapEx 回撤 | 云厂减少 GPU/ASIC/HBM/CoWoS 订单，fab equipment pull-in 变延期 | MSFT/AMZN/GOOGL/META/ORCL capex guide；GPU rental price；AI revenue |
+| HBM/CoWoS 瓶颈反向限制前道 | 前道 wafer starts 有订单，但封装/HBM/测试不能同步扩张 | TSMC CoWoS 月产能、HBM4 良率、OSAT 订单、substrate/test bottleneck |
+| 出口管制 | 中国收入、成熟/准先进节点设备出货和服务受影响 | BIS/荷兰/日本规则；AMAT 中国收入占比；许可审批 |
+| 竞争 share loss | ASM/Lam/TEL/KLA/Besi/SUSS/EVG 在细分 POR 赢单，AMAT 只受益行业 beta | 客户 technical papers、conference POR、设备商订单增速差异 |
+| 供应链和安装瓶颈 | AMAT 扩产/库存后无法及时安装验收，现金流短期承压 | Inventory、AR、contract liabilities、capex、FCF、field engineer hiring |
+
+## 10. 投资结论
+
+AMAT 当前是 AI 半导体资本开支链中质量最高的 broad-line equipment 标的之一。它的优势不是单一垄断，而是：在 AI 设备增长最快的三块 leading-edge foundry-logic、DRAM/HBM、advanced packaging 中都有强产品；同时 AGS 服务提供高可见度和较低周期性的现金流。FY2026 Q2 的核心变化是管理层把半导体设备业务 CY2026 增长预期从此前 >20% 上调到 >30%，并披露客户八季度滚动预测、advanced packaging >50% 增长、Singapore capacity 超过翻倍，这些都是订单可见度提高的信号。
+
+但股价已经给了很高预期。2026-06-11 收盘价 552.64 美元、市值 4388 亿美元、PE 46.74x、Forward PE 33.75x、PS 15.05x，已经不是传统半导体设备周期股估值。投资判断应从“会不会受益 AI”转向“能否连续几个季度把 89 亿美元级收入、50%+ GM、Semi Systems >30% 增长兑现”。若兑现，估值仍有成长股逻辑；若 AI CapEx 或 WFE 上修停止，AMAT 的股价弹性会先于基本面回撤。
+
+### 10.1 最值得跟踪的 8 个指标
+
+1. FY2026 Q3 实际收入是否高于 89.50 亿美元中值，Semiconductor Systems 是否接近或超过 69 亿美元。
+2. Semiconductor Systems non-GAAP GM 是否维持 54%-55% 以上。
+3. FY2026 Q4 / FY2027 Q1 指引是否延续高增，而不是 Q3 一次性 pull-in。
+4. DRAM revenue 是否维持 17 亿美元/季以上，HBM4/HBM4E 相关客户是否继续扩产。
+5. Advanced packaging revenue 是否真正 >50% 增长，并在 NEXX 整合后出现 panel-level 客户验证。
+6. Contract liabilities、inventory、AR 与收入是否健康同步增长；若库存/应收涨而收入不涨，是危险信号。
+7. 中国收入占比和出口管制口径：Q2 total China revenue 27%，Semi+AGS China 24%，这仍是风险敞口。
+8. EPIC Center 伙伴扩展和客户技术发布：TSMC/Samsung/SK hynix/Micron/Intel 是否把 AMAT 新工具纳入下一节点 POR。
+
+## 附录 A：关键产品映射表
+
+| 产品/能力 | 对应工艺 | 受益平台 | 收入弹性 | 毛利判断 |
+|---|---|---|---|---|
+| Endura Trillium ALD | GAA metal gate stack，work-function metal，dipole materials | TSMC N2/N2P、Samsung SF2、Intel 18A/14A、Rubin/MI400/ASIC | 高 | 高，ALD/recipe 锁定强 |
+| Producer Precision Selective Nitride PECVD | GAA STI protection，selective bottom-up nitride | 2nm and below logic | 中高 | 高，若进入 POR 粘性强 |
+| Producer Viva radical treatment | GAA silicon nanosheet smoothing/material treatment | GAA logic | 中 | 高，细分高壁垒 |
+| Centris Sym3 Z Magnum / Selectra Etch | conductor/selective etch，nanosheet/recess/profile control | GAA、BSPDN、advanced logic | 中高 | 中高，与 Lam/TEL 竞争 |
+| Centura Prime Epi / Xtera Selective Epi | source/drain Epi、nanosheet Epi | GAA/N2/N3 | 中高 | 高，认证后切换成本强 |
+| PROVision / PrimeVision eBeam / SEMVision | eBeam metrology/inspection/defect analysis | 大 die AI GPU/ASIC、N2/GAA、HBM/advanced packaging | 中 | 中高，但 KLA 更强 |
+| HBM/DRAM deposition/etch/CMP/clean | DRAM wiring、capacitor、HBM wafer-level TSV/UBM/preclean/warpage | HBM3E/HBM4/HBM4E、server DRAM | 高 | 中高 |
+| Advanced packaging PVD/CVD/etch/eBeam + NEXX ECD | RDL、fine-pitch I/O wiring、panel-level substrate | CoWoS/SoIC/large AI accelerator package | 高 | 中高，取决于 POR 和 HVM |
+| AGS + AIx | uptime、spares、field upgrade、diagnostics、analytics | 所有高端 fab / HBM / packaging lines | 中高 | 稳定，软件化可上行 |
+
+## 附录 B：来源链接
+
+- Applied Materials FY2026 Q2 results: https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-second-quarter-2026-results
+- Applied Materials FY2026 Q2 earnings script: https://ir.appliedmaterials.com/static-files/28ef7eff-8b4d-418e-999a-dbfa403ce6f3
+- Applied Materials FY2026 Q2 presentation: https://ir.appliedmaterials.com/static-files/8b93db9d-50dd-42de-b440-560cf41f0071
+- Applied Materials FY2026 Q1 results: https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-first-quarter-2026-results
+- Applied Materials NEXX acquisition: https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-broadens-advanced-packaging-portfolio
+- Applied Materials GAA deposition systems: https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-introduces-deposition-systems-angstrom-era
+- Applied Materials SK hynix EPIC partnership: https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-and-sk-hynix-announce-long-term-rd-partnership
+- Applied Materials EPIC Center: https://www.appliedmaterials.com/us/en/semiconductor/epic-platform/epic-centers/epic-center-silicon-valley.html
+- Applied Materials Singapore expansion: https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-expands-singapore-manufacturing-support-ai
+- StockAnalysis AMAT statistics: https://stockanalysis.com/stocks/amat/statistics/
+- SEMI 300mm Fab Outlook, 2026-04-01: https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027
+- SEMI Q1 2026 equipment billings, 2026-06-04: https://www.semi.org/en/semi-press-release/semi-reports-global-semiconductor-equipment-billings-increased-14-percent-year-over-year-in-q1-2026
+- 项目内行业资料：`行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`
+- 项目内行业资料：`行业调研/晶圆制造_设备_材料_测试/行业调研_存储前道制造设备_2026-06-11.md`
+- 项目内行业资料：`行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+- 项目内行业资料：`行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`

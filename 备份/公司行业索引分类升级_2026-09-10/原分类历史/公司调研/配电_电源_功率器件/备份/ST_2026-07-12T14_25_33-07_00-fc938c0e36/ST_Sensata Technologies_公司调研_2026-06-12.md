@@ -1,0 +1,377 @@
+# Sensata Technologies（ST）公司调研：传感器、电气保护与 AI 数据中心功率/冷却小组件机会
+
+数据口径：股价与估值快照截至 2026-06-11 美股收盘；财务数据截至 2026Q1 财报；公司正式披露截至 2026-06-12 可取得资料。  
+资料边界：本报告只结合项目内 `行业调研/` 相关 AI 数据中心、电力、冷却、功率器件资料与联网资料；未读取或继承 `特征量化/`、`日度资料/` 或旧公司报告。  
+核心结论：ST 不是 AI 芯片公司，也不是数据中心主设备商。它是汽车、工业、航空/商用设备中的传感器与电气保护零部件公司。AI 数据中心对 ST 的现实意义在于：液冷流量/压力/温度/泄漏传感器、PDU/CDU/UPS/BESS/800VDC 路径的断路器/接触器/熔断器/GFCI，以及 Dynapower 的电力转换/微电网设备。当前 AI 数据中心直接收入很小，估计低个位数收入占比；但 2026-2027 年若进入 hyperscaler/CDU/rack PDU/UPS/BESS 平台 AVL，收入弹性可能明显高于公司传统汽车主业。
+
+## 1. 公司整体业务、投资人认知、产业链位置与最新估值
+
+### 1.1 公司业务画像
+
+Sensata Technologies Holding plc（NYSE: ST）是一家总部注册在英格兰和威尔士、运营总部在美国马萨诸塞的全球工业技术公司，2025 年 10-K 将其定义为传感器、传感器丰富解决方案、电气保护组件和系统供应商。公司产品把压力、温度、位置、液位、流量、电流、气体泄漏等物理量转成电子信号，或在高压/高电流系统中提供断路、接触、熔断、接地故障保护、绝缘监测、电力转换等安全功能。
+
+公司 2025Q4 起重组为三个报告分部：
+
+| 分部 | 2025 收入 | 2025 收入占比 | 2025 分部营业利润率 | 业务本质 | AI 数据中心相关性 |
+|---|---:|---:|---:|---|---|
+| Automotive | 21.117 亿美元 | 57.0% | 23.7% | 乘用车/轻商车 OEM、Tier 1、后市场；压力、温度、力、TPMS、高压接触器/熔断器/HVDU | 低。与 AI 无直接关系，但高压保护能力可迁移 |
+| Industrials | 7.878 亿美元 | 21.3% | 28.7% | HVAC/R、工业、能源、充电基础设施、微电网、data/telecom；电气保护、传感器、功率管理 | 最高。液冷、电气保护、UPS/BESS、Dynapower 都在这里 |
+| Aerospace, Defense & Commercial Equipment | 8.050 亿美元 | 21.7% | 26.3% | 航空、防务、农业、工程机械、商用车；传感器、电气保护、操作控制 | 中低。可分享高可靠传感器/保护技术，但不是 DC 主线 |
+
+### 1.2 投资人眼中的 ST
+
+投资人通常把 ST 看成“周期性汽车/工业传感器公司 + 高自由现金流 + 杠杆偏高 + 若干电气保护与数据中心期权”。这不是高成长半导体，也不是纯 AI 基建标的。市场主要关心四件事：
+
+1. 汽车占比仍过半，传统汽车产量、EV 放缓、客户项目取消会显著影响收入和估值。
+2. 工业和航空/商用设备分部利润率更高，2025Q4-2026Q1 的边际改善主要来自运营纪律、重组、成本控制和组合变化。
+3. Dynapower/清洁能源相关资产在 2025Q3 发生 2.257 亿美元 goodwill impairment，说明此前清洁能源/电气化预期下修，投资人会对新叙事保持折价。
+4. 2026 年公司正式把 data center 作为产品页面和应用机会展示，说明它开始主动营销 AI-ready 高密度数据中心产品，但当前披露中没有独立数据中心收入、backlog 或客户名单。
+
+### 1.3 最近 3 年重大业务变动、转型和组合变化
+
+| 时间 | 事件 | 对业务含义 |
+|---|---|---|
+| 2023 | 继续偿还高息/到期债务，2023 年启动 5 亿美元股份回购授权 | 资本配置从并购扩张转向降杠杆、回购和现金流 |
+| 2024 | 将 vehicle area networks/data collection 相关 Insights Business 放入 Other，并于 2024 年 9 月出售 | 退出低协同性车队/数据业务，减少非核心软件/服务混杂口径 |
+| 2024 | 完成退出 Spear businesses，相关无形资产加速摊销 | 电气化/储能组合经历收缩，减少亏损或低回报资产 |
+| 2025 | 2025Q4 以前仍披露 Performance Sensing / Sensing Solutions，2025Q4 起改为 Automotive / Industrials / Aerospace, Defense & Commercial Equipment | 从产品/历史业务口径转为终端市场口径，更方便投资人判断汽车、工业、航空/商用设备周期 |
+| 2025Q3 | 受清洁能源政策、排放法规变化和电气化过剩产能影响，对 Dynapower 计提 2.257 亿美元 goodwill impairment，并确认其他非现金费用 | 清洁能源/电力转换资产预期下修；未来数据中心 power conversion 机会需要重新证明订单质量 |
+| 2025Q4 | 确认约 1,610 万美元主要为非现金的客户 EV 项目取消相关费用 | EV 客户项目取消风险真实存在，汽车电气化不是单向上行 |
+| 2026H1 | 发布/强化 data center 解决方案页面与 2026-06-10 数据中心解决方案手册，产品覆盖 thermal management、电气保护、power/peak management、800VDC | 数据中心成为显性增长叙事，但仍处设计导入/应用拓展阶段 |
+
+### 1.4 产业链位置
+
+ST 处在产业链中上游的高可靠零部件/子系统位置，不掌握 AI 训练集群主设备价值链中的 GPU、交换芯片、光模块、服务器整机或 CDU 系统集成主导权。
+
+| 产业链层级 | ST 位置 | 代表产品 | 议价能力 |
+|---|---|---|---|
+| 车辆 OEM/Tier 1 | Tier 2/3 传感器与电气保护件供应商 | 压力、温度、力、TPMS、高压接触器、HVDU | 设计定点后切换成本较高；平台生命周期通常 5-7 年 |
+| 工业/HVAC/R | OEM 关键传感与保护件 | 压力/温度/流量/气体泄漏传感器、断路器、继电器、GFCI | 中等偏高；认证和可靠性带来溢价 |
+| 数据中心冷却 | CDU、rack manifold、chiller、液冷系统中的传感器供应商 | FL 系列超声波流量传感器、压力/温度/气体传感器 | 中等；必须进入系统商 AVL，竞争者多 |
+| 数据中心供电 | PDU、CDU、UPS/BESS、HVDC 路径中的保护件/接触器供应商 | Airpax/Klixon 断路器、GIGAVAC 接触器、熔断器、GFCI、绝缘监测 | 中等；高压 DC 认证可提高粘性 |
+| 数据中心 onsite power | Dynapower 电力转换/储能接口设备供应商 | CPS-1250/CPS-2500、DC/DC converters、grid-forming inverter | 项目制，单项目金额大但周期长，竞争强 |
+
+### 1.5 最新股价、估值和经营指标
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | 49.85 美元 | 2026-06-11 美股收盘 | Yahoo chart 快照 |
+| 52 周区间 | 26.95-53.89 美元 | 2026-06-11 | Yahoo chart 快照 |
+| 普通股数 | 约 1.456 亿股 | 2026Q1 基本加权平均股数；2025 10-K 披露 2026-01-29 为 145,799,544 股 | 用于近似市值 |
+| 市值 | 约 72.6 亿美元 | 2026-06-11 收盘价 x 1.456 亿股 | 与 Google/Yahoo 市值口径接近 |
+| TTM 收入 | 37.28 亿美元 | 2025 全年 - 2025Q1 + 2026Q1 | 3,704.5 - 911.3 + 934.8 |
+| PS | 约 1.95x | 2026-06-11 市值 / TTM 收入 | 与 Morningstar P/S 约 1.95x 接近 |
+| GAAP TTM 净利润 | 4,850 万美元 | 2025 全年 - 2025Q1 + 2026Q1 | 受 2025Q3 Dynapower impairment 扭曲 |
+| GAAP PE | 约 150x | 2026-06-11 | 使用 TTM GAAP EPS 约 0.33 美元，低质量口径 |
+| 调整后 TTM 净利润 | 5.121 亿美元 | 2025 调整后净利 - 2025Q1 调整后净利 + 2026Q1 调整后净利 | 更接近经营利润 |
+| 调整后 PE | 约 14.2x | 2026-06-11 | 自算；Morningstar normalized P/E 约 14.19x |
+| Forward PE | 约 12.6-13.1x | 2026-06-11/12 市场数据源 | Yahoo 显示 forward P/E 约 12.61；StockStory/MarketBeat 约 13x |
+| 2026Q1 收入增速 | +2.6% reported，+4.2% organic | 2026Q1 vs 2025Q1 | 公司披露 |
+| 2026Q1 毛利率 | 30.6% | 2026Q1，收入 934.8，cost 648.5 | 自算 |
+| TTM GAAP 净利率 | 1.3% | TTM GAAP | 被 impairment 压低 |
+| TTM 调整后净利率 | 13.7% | TTM adjusted | 更接近经营真实盈利能力 |
+
+### 1.6 资产负债表与财务健康
+
+2026Q1 资产负债表显著好于 2025Q1，但仍不是轻债公司：
+
+| 指标 | 2026-03-31 | 2025-12-31 | 变化/判断 |
+|---|---:|---:|---|
+| 现金 | 6.351 亿美元 | 5.730 亿美元 | Q1 现金增加 6,210 万美元 |
+| 应收账款 | 6.932 亿美元 | 6.574 亿美元 | 跟随收入和季节性变化 |
+| 存货 | 6.058 亿美元 | 6.178 亿美元 | 小幅下降，库存压力未恶化 |
+| 总资产 | 68.15 亿美元 | 67.52 亿美元 | 稳定 |
+| 长债净额 | 28.294 亿美元 | 28.286 亿美元 | 债务本金基本稳定 |
+| 总债务和融资租赁 | 28.502 亿美元 | 28.497 亿美元 | 高但可服务 |
+| Gross debt | 28.669 亿美元 | 28.672 亿美元 | 公司非 GAAP 口径 |
+| Net debt | 22.318 亿美元 | 22.942 亿美元 | 净债务下降 6,240 万美元 |
+| LTM adjusted EBITDA | 8.422 亿美元 | 8.359 亿美元 | 稳定改善 |
+| Gross leverage | 3.4x | 3.4x | 偏高 |
+| Net leverage | 2.6x | 2.7x | 可控但缺少大规模并购弹性 |
+| 2026Q1 FCF | 1.046 亿美元 | 2025Q1 为 8,660 万美元 | FCF conversion 83%，现金生成较好 |
+
+判断：财务健康程度为“中等偏稳，但杠杆仍需折价”。ST 的经营现金流和 FCF 足以支撑股息、少量回购和逐步降杠杆；但 2.6x net leverage、28.7 亿美元 gross debt、2025 年 Dynapower impairment 说明它不是高弹性无债成长股。若数据中心订单需要大量营运资本或项目制保函，资产负债表会限制极端扩张速度。
+
+## 2. 最新和最近 4 次财报：关键数字、订单/交期、分部与 AI 数据中心暴露
+
+说明：ST 不像 Eaton/Schneider/Vertiv 那样披露电气 backlog，也不披露 bookings、book-to-bill、取消率、lead time。2025 10-K 说明多数合同在 ASC 606 下是客户采购订单，履约义务通常短于一年，因此公司不披露 remaining performance obligations。以下“订单/交期”列按公司指引、短周期采购订单、EV 项目取消、数据中心产品页和行业验证推断。
+
+| 财报季度 | 披露日期 | 收入与增速 | 毛利率 | GAAP/调整后经营利润 | EPS/FCF | 分部/业务收入与利润率 | 订单、交期、取消率、AI 数据中心收入占比 |
+|---|---:|---:|---:|---:|---:|---|---|
+| 2026Q1 | 2026-04-28 | 9.348 亿美元，YoY +2.6%，organic +4.2% | 30.6% | GAAP op 1.416 亿美元/15.2%；adj op 1.740 亿美元/18.6% | GAAP EPS 0.59；adj EPS 0.86；FCF 1.046 亿美元 | Automotive 5.248 亿美元，占 56.1%，利润率 23.5%；Industrials 1.842 亿美元，占 19.7%，利润率 27.1%；ADCE 2.258 亿美元，占 24.2%，利润率 28.1% | 无 backlog 披露；Q2 指引收入 9.50-9.80 亿美元，含约 800 万美元关税回收；采购订单短周期。AI/DC 直接占比未披露，模型估计单季约 1-3%，主要在 Industrials 的 cooling/electrical protection/Dynapower |
+| 2025Q4 | 2026-02-19 | 9.179 亿美元，YoY +1.1%，organic +3.5% | 29.0% | GAAP op 1.001 亿美元/10.9%；adj op 1.797 亿美元/19.6% | GAAP EPS 0.43；adj EPS 0.88；FCF 1.518 亿美元 | Automotive 5.270 亿美元，利润率 24.4%；Industrials 1.915 亿美元，利润率 30.9%；ADCE 1.994 亿美元，利润率 28.1% | 无 backlog 披露；确认约 1,610 万美元 EV 客户项目取消相关主要非现金费用；AI/DC 仍未单列，数据中心方案尚未形成独立财务口径 |
+| 2025Q3 | 2025-10-28 | 9.320 亿美元，YoY -5.2%，organic +3.1% | 27.8% | GAAP operating loss 1.229 亿美元；adj op 1.796 亿美元/19.3% | GAAP EPS -1.12；adj EPS 0.89；FCF 1.362 亿美元 | 旧口径：Performance Sensing 6.569 亿美元，利润率 23.7%；Sensing Solutions 2.750 亿美元，利润率 30.9%。终端占比：Auto 57.6%，HVOR 17.0%，Industrial 14.0%，HVAC 6.0%，Aerospace 5.4% | 发生 Dynapower 2.257 亿美元 goodwill impairment，并有电气化过剩产能费用；说明清洁能源/电气化订单预期下修。AI/DC 直接占比估计 <2% |
+| 2025Q2 | 2025-07-29 | 9.434 亿美元，YoY -8.9% | 30.4% | GAAP op 1.381 亿美元/14.6%；adj op 1.791 亿美元/19.0% | GAAP EPS 0.41；adj EPS 0.87；FCF 1.155 亿美元 | 旧口径：Performance Sensing 6.522 亿美元，利润率 22.5%；Sensing Solutions 2.912 亿美元，利润率 30.2%。终端占比：Auto 55.9%，HVOR 17.3%，Industrial 17.2%，HVAC 4.6%，Aerospace 5.0% | Q3 指引 9.00-9.30 亿美元，短周期下行；无 backlog。AI/DC 未单列，主要可能藏在 Industrial/HVAC/Data & telecom |
+| 2025Q1 | 2025-05-08 | 9.113 亿美元，YoY -9.5% | 29.9% | GAAP op 1.222 亿美元/13.4%；adj op 1.665 亿美元/18.3% | GAAP EPS 0.47；adj EPS 0.78；FCF 8,660 万美元 | 旧口径：Performance Sensing 6.504 亿美元，利润率 22.0%；Sensing Solutions 2.608 亿美元，利润率 29.2%。终端占比：Auto 58.3%，HVOR 17.0%，Industrial 15.2%，HVAC 4.3%，Aerospace 5.2%。Q1 2026 recast：Auto 5.289 亿、Industrial 1.857 亿、ADCE 1.967 亿 | Q2 指引 9.10-9.40 亿美元；无 backlog。AI/DC 直接占比估计 <1-2%，更多是潜在设计导入 |
+
+财报趋势解读：
+
+1. 收入从 2025Q1 的 -9.5% reported 下滑，改善到 2025Q4/2026Q1 的正增长，核心原因不是 AI，而是 divestiture/product lifecycle 的拖累消退、运营改善和部分终端企稳。
+2. 调整后经营利润率从 2025Q1 18.3% 升到 2025Q4 19.6%，2026Q1 受 tariff pass-through 稀释约 30bp 后仍有 18.6%。
+3. 2025Q3 GAAP 巨亏主要是 Dynapower impairment，不代表传感器/保护件主业当季现金流崩坏；但它证明清洁能源电气化项目预期曾明显高估。
+4. 2026Q1 最强分部是 ADCE：收入 2.258 亿美元，YoY +14.8%，利润率 28.1%。Industrials 收入略降但利润率仍 27.1%，是 AI 数据中心期权所在分部。
+
+## 3. 2026 最新指引、收入占比、产品映射与重点/跳过业务
+
+### 3.1 2026Q2 最新指引
+
+2026Q1 财报给出的 2026Q2 指引如下：
+
+| 指标 | 2026Q2 指引 | 2025Q2 实际 | YoY |
+|---|---:|---:|---:|
+| Revenue | 9.50-9.80 亿美元 | 9.43 亿美元 | +1% 至 +4% |
+| Adjusted operating income | 1.82-1.90 亿美元 | 1.79 亿美元 | +2% 至 +6% |
+| Adjusted operating margin | 19.2%-19.4% | 19.0% | +20bp 至 +40bp |
+| Adjusted net income | 1.31-1.39 亿美元 | 1.27 亿美元 | +3% 至 +9% |
+| Adjusted EPS | 0.89-0.95 美元 | 0.87 美元 | +2% 至 +9% |
+| Tariff recovery | 中点约 800 万美元 | NA | 收入和成本对冲，利润基本不受影响 |
+
+推断：2026 年公司最重要的财务目标不是高速扩张，而是恢复低个位数收入增长、维持 19% 左右调整后经营利润率、继续提高现金流和降杠杆。AI 数据中心收入若有突破，短期可能先体现在 Industrials 的订单线索与产品设计导入，而不一定在 2026Q2 收入中明显出现。
+
+### 3.2 2026Q1 业务收入占比与增长
+
+| 分部 | 2026Q1 收入 | 占比 | YoY | 分部利润率 | 重点业务 |
+|---|---:|---:|---:|---:|---|
+| Automotive | 5.248 亿美元 | 56.1% | -0.8% | 23.5% | 压力/温度/力/TPMS、车载高压保护、HVDU |
+| Industrials | 1.842 亿美元 | 19.7% | -0.8% | 27.1% | HVAC/R、工业保护、data/telecom、液冷传感、电气保护、BESS/UPS/Dynapower |
+| Aerospace, Defense & Commercial Equipment | 2.258 亿美元 | 24.2% | +14.8% | 28.1% | 航空/防务/商用设备传感器和保护件 |
+
+最突出业务：按 2026Q1 增速和利润率看，ADCE 是当前财务上最突出的分部；按 2026-2027 可选性看，Industrials 中 data center cooling/electrical protection/power management 是最值得跟踪的小业务。
+
+### 3.3 重点产品和型号/系列
+
+| 重点产品/业务 | 对应分部 | 官方/公开产品线 | 当前收入规模判断 | 利润率判断 | 销售增速判断 | 与 AI 数据中心关系 |
+|---|---|---|---:|---:|---:|---|
+| 数据中心液冷/空冷传感 | Industrials | FL Series ultrasonic flow sensors；压力、温度、气体泄漏、液位/流量传感；112CP combined pressure & temperature sensor | AI/DC 直接收入估计 1,500-4,500 万美元年化；整体工业传感更大 | 产品毛利率估计 35%-55%，平台认证后可更高 | 2026-2027 可 40%-120% 高增，取决于 CDU/冷板/机柜平台导入 | 高密度 AI rack 液冷必须做流量、压力、温度、泄漏/气体监控，是 ST 最贴近 AI 的传感器机会 |
+| 数据中心电气保护 | Industrials | Airpax/Klixon circuit breakers、209 Series、JAE/JRE/JLE Series、GFCI PGFM、contactors/fuses、HX360 contactors | AI/DC 直接收入估计 2,000-7,000 万美元年化 | 估计 35%-60%；高压 DC/UL/TUV/CCC 认证件可有溢价 | 2026-2027 可 25%-100% | Rack PDU、CDU、UPS、BESS、800VDC/HVDC 保护需要断路、接触、接地故障保护 |
+| Dynapower 数据中心 power/peak management | Industrials | CPS-1250/CPS-2500 grid-forming storage inverters、DC/DC converters | 当前数据中心项目收入不披露；模型估计 2,000-8,000 万美元年化，波动最大 | 系统级毛利率估计 20%-35%，项目执行差异大 | 若进入 time-to-power 项目，可 50%+；若项目延迟则可能下滑 | 用于 onsite generation、BESS、microgrid、动态 AI 负载 ride-through；但 2025 impairment 是重要警告 |
+| HVDU/高压配电单元、STEV/高压接触器、PyroFuse、SIM-200 | Automotive/ADCE/Industrials 技术复用 | HVDU、STEV contactors、SIM-200 insulation monitoring、PyroFuse | 车用/商用车电气化收入估计 5,000-15,000 万美元年化，AI/DC 直接收入较低 | 30%-50%，系统集成高于单件但项目风险高 | 商用车 megawatt charging 若放量可 30%-100%；乘用 EV 放缓 | 技术可迁移到高压 DC 保护，但现阶段主要是车辆/充电基础设施 |
+| 航空/防务/商用设备传感器与保护件 | ADCE | 压力、高温、位置、气体泄漏、操作控制、断路器、接触器、BMS/charging | 2025 全年 8.05 亿美元；2026Q1 年化 9.03 亿美元 | 分部利润率 28.1% | 2026Q1 +14.8%，全年高个位数至低双位数更合理 | 非 AI 主线，但现金流和利润率支撑公司估值 |
+
+### 3.4 可以跳过或降低权重的非 AI/低增速业务
+
+| 低优先级业务/产品 | 原因 | 保留关注点 |
+|---|---|---|
+| ICE 传统动力总成传感器、排放/后处理传感器 | 汽车主业中体量大但增长取决于全球轻车产量和法规，不是 AI 增量 | 现金牛；平台切换成本高 |
+| TPMS/后市场 | 稳定、成熟、增长较低 | 提供现金流和渠道基础 |
+| 传统 HVAC/R 住宅/商用开关与传感器 | 有热泵/制冷剂替换机会，但与 AI 数据中心液冷不是同一弹性 | 气体泄漏传感和冷却控制技术可迁移 |
+| 农业/工程机械周期品 | 周期性强，2026 增速不确定 | ADCE 分部利润率高，不应完全忽略 |
+| 低端机械开关、通用继电器 | 价格竞争较强，差异化弱 | 只有认证和高可靠场景值得跟踪 |
+
+### 3.5 不能漏掉的小业务小产品
+
+1. FL Series ultrasonic flow sensors：官方明确指向 data center cooling，最高精度可到 ±0.5% full scale，且兼容去离子水/乙二醇混合液，可能进入 CDU、manifold、冷却回路。
+2. 112CP combined pressure & temperature sensor：数据中心手册列为相关产品，适合压力+温度一体化监测。
+3. PGFM Series GFCI：高密度机房、电源架构变化和液冷引入后，接地故障保护的重要性上升。
+4. JAE/JRE/JLE 高电流断路器：手册列出最高 1,200A、100,000AIC，适合高容量配电保护场景。
+5. HX360 contactors：官方 data center 页面列出，10kV isolation、IP67/69 sealing，适合储能、工业驱动、DC fast charging，也可映射到高压 DC 数据中心路径。
+6. Dynapower CPS-1250/CPS-2500：如果数据中心 time-to-power 和 onsite power 成为瓶颈，项目弹性可能大于传感器，但执行和订单可见度风险也最大。
+
+## 4. 高增长/关键产品：当前收入贡献、AI 基建重要性、紧急性、供需和垄断能力
+
+评分：1 低，5 高。收入为模型估计，除分部收入外公司未披露这些产品的独立收入。
+
+| 产品/业务 | 当前对公司收入贡献 | 当前收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 证据与判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 数据中心液冷/空冷传感 | 年化 1,500-4,500 万美元，约 0.4%-1.2% 收入 | 40%-100%，基数低 | 4 | 4 | 3 | 3 | AI rack 从 100kW+ 向 300kW/500kW 走，液冷 loop 必须监控流量、压力、温度、泄漏；Sensata 2026-06-10 正式发布 data center 手册 |
+| 数据中心电气保护/接触器/GFCI/熔断器 | 年化 2,000-7,000 万美元，约 0.5%-1.9% 收入 | 20%-60% | 4 | 4 | 3-4 | 3-4 | 高压 DC、UPS/BESS、rack PDU/CDU 保护认证要求高；但 Littelfuse、Mersen、Eaton、TE、Omron 等竞争充分 |
+| Dynapower 数据中心 power/peak management | 年化 2,000-8,000 万美元，约 0.5%-2.1% 收入，波动大 | -20% 至 +80% | 4 | 5 | 3 | 2-3 | time-to-power、grid-forming、BESS 对 AI 园区重要；但 2025 Dynapower impairment 显示需求/政策/产能风险 |
+| HVDU/高压接触器/绝缘监测/PyroFuse | 年化 5,000-15,000 万美元，主要车用/商用车 | 0%-50%，客户项目差异大 | 2（对数据中心），4（对电气化车辆） | 3 | 3 | 3-4 | 高压配电单元已用于重卡 megawatt charging 串行生产；技术可迁移到高压 DC 保护，但当前不是 AI 收入主线 |
+| ADCE 高可靠传感器/保护件 | 分部 2026Q1 2.258 亿美元，年化 9.03 亿美元 | Q1 +14.8% | 1-2 | 2 | 3 | 4 | 航空/防务/商用设备切换成本高、利润率 28.1%，支撑估值但不属于 AI 数据中心 |
+
+## 5. 高增长/关键产品：一年后收入贡献三情景预测
+
+一年后指 2027Q2 左右年化收入/业务状态。以下是基于官方披露、项目内行业调研和模型推断，不是公司指引。
+
+| 产品/业务 | 情景 | 一年后收入贡献 | 收入增速 | AI 重要性 | 紧急性 | 供需紧张 | 溢价/垄断 | 触发条件 |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| 数据中心液冷/空冷传感 | 基准 | 4,000-7,000 万美元 | +50%-80% | 4 | 4 | 3 | 3 | 进入多家 CDU/chiller/manifold OEM，仍以传感器单点供货为主 |
+| 数据中心液冷/空冷传感 | 乐观 | 8,000 万-1.3 亿美元 | +100%-180% | 5 | 5 | 4 | 4 | 被 hyperscaler 标准化平台或头部液冷系统商 AVL 采用，液冷 rack 快速放量 |
+| 数据中心液冷/空冷传感 | 极度乐观 | 1.5-2.5 亿美元 | +250%+ | 5 | 5 | 5 | 4 | 多个 AI campus 标准件定点，传感器从单点扩展到 manifold/CDU/漏液/气体检测组合包 |
+| 数据中心电气保护/接触器/GFCI/熔断器 | 基准 | 7,000 万-1.2 亿美元 | +25%-60% | 4 | 4 | 3 | 3 | PDU/CDU/UPS/BESS 保护件随高密度 rack 渗透增长 |
+| 数据中心电气保护/接触器/GFCI/熔断器 | 乐观 | 1.3-2.2 亿美元 | +80%-180% | 5 | 5 | 4 | 4 | 800VDC/HVDC 保护、rack PDU、BBU/UPS 认证导入，客户接受更高安全冗余 |
+| 数据中心电气保护/接触器/GFCI/熔断器 | 极度乐观 | 2.5-4.0 亿美元 | +250%+ | 5 | 5 | 5 | 4 | 800VDC sidecar 和高压 DC 保护成为多家 AI rack 平台标配；认证供应商短缺 |
+| Dynapower power/peak management | 基准 | 4,000-9,000 万美元 | 0%-50% | 4 | 5 | 3 | 2 | 若干数据中心 BESS/微电网项目交付，但项目分散 |
+| Dynapower power/peak management | 乐观 | 1.2-2.2 亿美元 | +100%-200% | 5 | 5 | 4 | 3 | time-to-power 瓶颈驱动 onsite power，CPS/DC converter 进入数据中心项目 |
+| Dynapower power/peak management | 极度乐观 | 3.0-5.0 亿美元 | +300%+ | 5 | 5 | 5 | 3 | 大型 hyperscaler/IPP 项目集中下单；但需要强交付能力和营运资本 |
+| HVDU/高压车辆电气保护 | 基准 | 6,000 万-1.2 亿美元 | +10%-30% | 2 | 3 | 3 | 3 | 重卡/商用车项目逐步放量，乘用 EV 温和 |
+| HVDU/高压车辆电气保护 | 乐观 | 1.5-2.5 亿美元 | +50%-100% | 2 | 4 | 4 | 4 | megawatt charging 重卡进入多个 OEM 平台 |
+| HVDU/高压车辆电气保护 | 极度乐观 | 3.0-4.5 亿美元 | +150%+ | 2 | 4 | 5 | 4 | 北美/欧洲重卡电动化补贴恢复且客户项目稳定，无新取消 |
+| ADCE 高可靠传感器/保护件 | 基准 | 年化 9.2-10.0 亿美元 | +5%-10% | 1 | 2 | 3 | 4 | 航空/防务恢复、商用设备企稳 |
+| ADCE 高可靠传感器/保护件 | 乐观 | 年化 10.3-11.2 亿美元 | +12%-20% | 1 | 2 | 4 | 4 | 航空/防务和商用设备同时上行 |
+| ADCE 高可靠传感器/保护件 | 极度乐观 | 年化 11.5-12.5 亿美元 | +25%+ | 2 | 3 | 4 | 4 | 新平台定点和渠道补库存叠加，但不是 AI 主线 |
+
+## 6. 高增长/关键产品：BOM、每 MW/每 rack/每 GPU/每 optical port 内容量、价格传导链、产能与认证
+
+### 6.1 数据中心映射假设
+
+项目内行业调研显示：GB200 NVL72 约 120kW/rack，GB300 可到 135-155kW peak，未来 180-300kW 甚至 500kW-1MW/rack；AI rack power chain 单 rack 价值可达 8-18 万美元，高功率 800V sidecar/liquid-cooled busbar/energy shelf 可到 25-60 万美元以上。为了把 ST 内容量映射到 AI 基建，采用：
+
+| 单位 | 假设 |
+|---|---|
+| 每 rack | 120-155kW 当前高密度 rack；300kW 作为 2027+ 高密度情景 |
+| 每 MW | 约 6.5-8.3 个 120-155kW rack，或约 3.3 个 300kW rack |
+| 每 GPU | NVL72 以 72 GPU/rack；120-155kW rack 对应每 MW 约 470-600 GPU |
+| 每 optical port | ST 不卖光模块/光芯片/交换 ASIC，直接 optical port 内容量约为 0；仅有按设施分摊的传感/保护间接成本 |
+
+### 6.2 产品 BOM 与 ST 可获得内容量
+
+| 产品/业务 | BOM 中真实位置 | ST 可获得内容量：每 rack | 每 MW | 每 GPU | 每 optical port | 当前产能能力（美元计，模型） | 当前采纳/认证阶段 |
+|---|---|---:|---:|---:|---:|---:|---|
+| 液冷/空冷传感 | CDU、rack manifold、冷却回路、chiller、reservoir、漏液/气体检测；压力/温度/流量/液位/气体传感 | 300-2,500 美元/rack；若覆盖 CDU+manifold+leak/gas，可到 4,000 美元 | 2,000-20,000 美元/MW；高冗余 30,000 美元/MW | 4-35 美元/GPU | 0；按设施分摊 <0.05 美元/port | DC 相关年产能可支撑约 1-2 亿美元收入，主要瓶颈是客户认证和定制接口，不是传感器制造产能 | 官方已推出 data center solution、FL flow sensors；需要 CDU/液冷系统 OEM 和 hyperscaler AVL，认证通常 6-18 个月 |
+| 电气保护/断路器/GFCI/接触器/熔断器 | Rack PDU、CDU 电源、power shelf、UPS/BBU、BESS、HVDC/800VDC sidecar；断路、接地故障、熔断、接触、绝缘监测 | 500-4,000 美元/rack；800VDC sidecar/高压 DC 可到 2,000-12,000 美元/rack | 5,000-80,000 美元/MW；极高冗余架构可超 100,000 美元/MW | 7-170 美元/GPU | 0；间接分摊 <0.20 美元/port | DC 相关年产能约 1-2 亿美元；高压接触器/断路器产能扩张慢于传感器 | 209、JAE/JRE/JLE 等有 UL/TUV/CCC 等公开认证；AI rack/HVDC 平台认证未披露 |
+| Dynapower inverter/DC-DC/power conversion | Campus BESS、onsite generation、microgrid、DC bus、voltage transient ride-through；系统级设备 | 若按 rack 分摊 2,000-15,000 美元/rack，项目差异极大 | 20,000-120,000 美元/MW，取决于是否含 BESS/PCS/2N 冗余 | 30-250 美元/GPU | 0；仅设施级间接分摊 | 由于 2025 impairment 和过剩产能，制造端可能不是短期瓶颈；可承接约 2-5 亿美元级项目收入，但需订单和执行验证 | 官方称 Dynapower 方案已被 leading data center operators validated；具体客户、订单金额、认证阶段未披露 |
+| HVDU/高压车辆配电 | 商用车/重卡 PDU、Charge Unit、Charge PDU；集成 fuses、contactors、EVCC、IMD、current sensors、busbar、liquid cooling、IP enclosure | 不适用于 AI rack；每车 HVDU 约 3,000-15,000 美元模型 | 若按 megawatt charging infrastructure，20,000-80,000 美元/MW 电气保护/配电内容量 | 不适用 | 不适用 | 年产能约 1-3 亿美元产品收入弹性，取决于客户平台数量 | 官方称 HVDU 已在重型电动卡车串行生产；车规平台认证已过，数据中心迁移需重新认证 |
+| ADCE 高可靠传感/保护 | 商用/军机、工程机械、农业、商用车；压力/高温/位置/气体、断路器、接触器 | 不适用 | 不适用 | 不适用 | 不适用 | 分部年化收入能力约 9-10 亿美元 | 航空/防务/商用设备平台认证，切换成本高 |
+
+### 6.3 价格传导链
+
+| 路径 | 价格链 | ST 定价能力 | 风险 |
+|---|---|---|---|
+| AI 液冷传感 | Hyperscaler/NVIDIA rack spec -> CDU/液冷系统商 -> manifold/chiller/冷却回路 OEM -> 传感器 | 认证件可获得 5%-20% 溢价；加急/定制接口另有 NRE 或 ASP 提升 | 若系统商用 TE/Honeywell/Parker/Danfoss/Amphenol 等双供，价格会被压平 |
+| AI 电气保护 | Hyperscaler/AI rack OEM -> rack PDU/CDU/UPS/BESS/sidecar -> breaker/contactor/fuse/GFCI | 高压 DC 认证和 fault energy 可靠性可提高溢价；停机损失远高于零件成本 | Littelfuse/Mersen/Eaton/TE/Omron/Panasonic 等强竞争；固态 eFuse/SSCB 可能替代部分机械保护 |
+| Dynapower power conversion | Hyperscaler/colocation/IPP -> EPC/微电网/UPS/BESS integrator -> inverter/DC-DC/controls | 项目制，若交期和 grid-forming 性能稀缺可加价 | 项目招标透明，系统集成商/PCS 厂商竞争激烈，working capital 和质保风险高 |
+| HVDU/车用高压 | OEM/Tier 1 -> HVDU/PDU/CU/CPDU -> 接触器/熔断器/IMD/传感器 | 一旦平台定点，生命周期内切换成本高 | OEM 年降、项目取消、EV 政策变化 |
+
+## 7. 高增长/关键产品：一年后产能、采纳和认证三情景
+
+| 产品/业务 | 情景 | 一年后产能能力（美元计） | 供应链采纳程度 | 认证/客户阶段 |
+|---|---|---:|---|---|
+| 液冷/空冷传感 | 基准 | 可支持 1.5-2.5 亿美元 DC 相关年收入 | 进入 2-4 家 CDU/chiller/液冷系统 OEM，单点供货为主 | 产品级认证完成；客户平台验证 6-18 个月推进 |
+| 液冷/空冷传感 | 乐观 | 2.5-4.0 亿美元 | 进入头部液冷系统商 AVL，部分 hyperscaler 规范认可 | 平台认证完成，开始随 rack/CDU 批量交付 |
+| 液冷/空冷传感 | 极度乐观 | 4.0-6.0 亿美元 | 多家 hyperscaler 标准件，manifold/CDU/漏液/气体组合化 | 供应商资质稀缺，需扩产和长单锁定 |
+| 电气保护/接触器/GFCI | 基准 | 2.0-3.0 亿美元 DC 相关年收入能力 | PDU/CDU/UPS/BESS 中多点导入 | UL/TUV/CCC 产品认证已有，客户平台认证推进 |
+| 电气保护/接触器/GFCI | 乐观 | 3.0-5.0 亿美元 | 800VDC/HVDC sidecar、UPS/BBU 采用加速 | 高压 DC fault testing、OCP/客户 safety review 通过 |
+| 电气保护/接触器/GFCI | 极度乐观 | 5.0-8.0 亿美元 | 成为多平台高压保护第二/第一来源 | 认证供应商短缺，客户给出 12-24 个月框架订单 |
+| Dynapower | 基准 | 3.0-5.0 亿美元项目收入能力 | 若干项目验证，交付节奏不均 | 电网互联、UL/IEEE/现场 commissioning 是主要约束 |
+| Dynapower | 乐观 | 5.0-8.0 亿美元 | 进入 data center onsite power 标准供应商池 | 数据中心 operator/EPC 框架协议，BESS/PCS 认证完成 |
+| Dynapower | 极度乐观 | 8.0-12.0 亿美元 | 大型 AI campus 批量项目，但对营运资本要求高 | 多项目同时施工，需要服务网络和保函能力 |
+| HVDU/高压车辆 | 基准 | 1.5-2.5 亿美元 | 1-2 个重卡/商用车平台放量 | 已有串行生产，新增客户验证 |
+| HVDU/高压车辆 | 乐观 | 3.0-5.0 亿美元 | 多 OEM 平台采用 megawatt charging HVDU | 车规/客户平台认证完成 |
+| HVDU/高压车辆 | 极度乐观 | 5.0-8.0 亿美元 | 重卡电动化恢复高增 | 供应链长单，但政策/补贴风险仍高 |
+
+## 8. 基于真实订单积压和供给推断未来一年业务增速
+
+### 8.1 订单可见度的硬约束
+
+ST 没有披露传统意义上的 backlog、bookings、book-to-bill、lead time 或取消率。更重要的是，2025 10-K 披露多数客户关系并不在 ASC 606 下构成长期 enforceable contract，通常只有客户 purchase order 收到并接受后才构成合同，且履约义务一般少于一年。这意味着：
+
+1. 不能把汽车平台 lifetime revenue 或 data center 产品页理解为 backlog。
+2. 不能把 Dynapower “validated by leading data center operators”理解为已确认订单金额。
+3. 能够依赖的真实硬数字是季度收入、指引、FCF、债务、分部收入和公开产品/认证。
+
+### 8.2 未来一年公司整体增速推断
+
+| 情景 | 2026Q2-2027Q1 收入增速 | 关键假设 | 供给/产能约束 | 取消率/下修风险 |
+|---|---:|---|---|---|
+| 基准 | +2% 至 +5% | Automotive 低个位数，ADCE 高个位数，Industrials 持平至中个位数；AI/DC 贡献 50-120bp | 传感器和保护件产能可支持；主要约束在客户认证 | EV 项目取消风险仍在；Dynapower 项目不放量 |
+| 乐观 | +6% 至 +10% | ADCE 维持双位数，Industrials 因 data center cooling/electrical protection 加速，Automotive 稳定 | 高压保护件、部分传感器定制产能可能需加班/扩线 | 汽车/工业周期不能再下行 |
+| 极度乐观 | +12% 至 +18% | AI data center 订单在 2026H2 明显转收入，Dynapower/电气保护获得项目型大单 | 认证件、测试设备、服务/commissioning、working capital 成为瓶颈 | 极端情景对客户集中订单依赖高，取消或延后会迅速回落 |
+
+### 8.3 高增长/关键业务未来一年增速
+
+| 产品/业务 | 基准增速 | 乐观增速 | 极度乐观增速 | 订单验证线索 | 交付窗口 |
+|---|---:|---:|---:|---|---|
+| 液冷/空冷传感 | +50%-80% | +100%-180% | +250%+ | 官方 data center brochure、FL flow sensors、液冷行业 2026-2027 放量 | 设计导入 6-18 个月；真正放量多在 2026H2-2027 |
+| 电气保护/接触器/GFCI | +25%-60% | +80%-180% | +250%+ | 800VDC、rack PDU、UPS/BESS 安全认证需求上升；官方列出多款 data center 产品 | 已认证产品可快，平台级 6-18 个月 |
+| Dynapower | 0%-50% | +100%-200% | +300%+ | data center onsite power/time-to-power 需求；但没有订单金额披露 | 项目制，12-24 个月；收入确认不均 |
+| HVDU/高压车辆 | +10%-30% | +50%-100% | +150%+ | 2025 年 HVDU 已在重卡串行生产 | 车规平台放量周期长；项目取消风险真实存在 |
+| ADCE | +5%-10% | +12%-20% | +25%+ | 2026Q1 +14.8%，分部利润率高 | 多为平台/售后订单，周期好于汽车但仍受宏观影响 |
+
+## 9. 竞争格局、技术主流性、替代风险和客户切换成本
+
+### 9.1 竞争格局
+
+| 产品/业务 | 主要竞争对手 | ST 优势 | ST 劣势 |
+|---|---|---|---|
+| 压力/温度/流量/液位/气体传感 | TE Connectivity、Amphenol、Honeywell、Parker、Danfoss、WIKA、ifm、SICK、Bosch、Vishay/Measurement Specialties 相关产品线 | 汽车级/工业级可靠性、长期 OEM 关系、定制能力、全球制造 | 液冷系统商可双供；传感器单件 ASP 低，需高 attach rate |
+| 电气保护/断路器/接触器/熔断器/GFCI | Littelfuse、Mersen、Eaton/Bussmann、TE/Kilovac、Omron、Panasonic、Schurter、ABB、Schneider、Siemens | Airpax/Klixon/GIGAVAC 等品牌历史、UL/TUV/CCC 认证、高压/高可靠经验 | 竞争者在电气系统总包或 power distribution 中更强，可能捆绑销售 |
+| Dynapower inverter/DC-DC | Eaton、Schneider、Vertiv、Delta、SMA、Sungrow、Tesla Energy、Fluence、Powin、ABB、Siemens、Hitachi Energy | 有 grid-forming/DC conversion 技术和储能经验，官方称被数据中心 operator 验证 | 系统集成和项目交付规模不如大型电气/UPS/BESS 平台商；2025 impairment 影响信用 |
+| HVDU/车用高压保护 | TE、Littelfuse、Eaton、BorgWarner、Aptiv、Lear、Sumitomo、Omron、Panasonic、Mersen | 集成 fuses/contactors/EVCC/IMD/current sensors/liquid cooling/busbar，重卡串行生产验证 | EV 放缓、客户项目取消、价格年降 |
+| 航空/防务/商用设备传感器 | Honeywell、TE、Amphenol、Parker、Danfoss、Woodward、Curtiss-Wright、Collins/Safran 相关系统 | 高可靠、平台认证、长期客户 | 周期性和认证周期长，AI 弹性低 |
+
+### 9.2 新技术是否是未来主流
+
+| 技术/产品 | 是否可能成为主流 | 依据 | 主要风险 |
+|---|---|---|---|
+| 液冷 flow/pressure/temp/leak/gas sensing | 是。高密度 AI rack 越过空气冷却边界后，液冷 telemetry 是安全和效率必需项 | 本地行业调研显示 2026-2027 液冷小组件和流体控制订单池快速扩大；Sensata 官方直接推出 data center flow sensors | 传感器供应多，可能被系统商集成压价 |
+| 高压 DC/800VDC 保护 | 方向正确，但 2026 仍偏设计验证，2027+ 才可能明显放量 | 本地行业调研显示 800VDC 可降低 1MW rack 电流和铜损，但认证/安全/断路难度高 | 标准延迟、客户保守、固态保护或系统级保护替代机械接触器/断路器 |
+| Grid-forming inverter / onsite BESS for AI 数据中心 | 重要性上升，但项目落地不确定 | AI campus time-to-power、动态负载和电网接入约束强化 onsite power/BESS 需求 | 大型电气和储能系统商竞争；项目制交付、质保和资本占用 |
+| HVDU/megawatt charging | 商用车电动化重要，但与 AI 数据中心关联弱 | 官方称 HVDU 已在重型电动卡车串行生产，3MW charging 场景需要高压配电 | EV 政策/补贴/客户项目取消；2025Q4 已有取消费用 |
+
+### 9.3 客户替换成本
+
+ST 的替换成本在汽车、航空/防务、商用设备上较高，在数据中心新业务中尚未完全形成。
+
+| 场景 | 替换成本 | 原因 |
+|---|---:|---|
+| 汽车传感器/高压保护 | 高 | 平台设计、测试、认证和量产质量验证周期长；车辆平台生命周期通常 5-7 年 |
+| 航空/防务传感器/保护件 | 很高 | 安规、质量、可追溯、长寿命供货和维修体系要求高 |
+| 工业/HVAC/R 传感器 | 中高 | 认证和接口定制有粘性，但供应商可替换 |
+| 数据中心液冷传感 | 中 | 一旦进入 CDU/manifold/hyperscaler AVL，切换成本上升；但当前仍在导入阶段 |
+| 数据中心电气保护/HVDC | 中高 | 高压 fault testing、UL/TUV/OCP/客户安全认证带来粘性 |
+| Dynapower 项目 | 中 | 系统一旦落地切换难，但项目招标阶段竞争激烈 |
+
+## 10. 投资判断框架：该怎么跟踪 ST 的 AI 数据中心选项
+
+### 10.1 最关键观察指标
+
+| 指标 | 为什么重要 | 观察方式 |
+|---|---|---|
+| Industrials 分部增速是否从 -0.8% 转为 +5% 以上 | 数据中心机会如果真实，应先在 Industrial/HVAC/data/telecom 口径出现 | 2026Q2-Q4 分部收入和 margin |
+| 公司是否披露 data center design win / customer / program | 目前只有产品页和手册，还不是订单 | 财报电话会、投资者日、产品新闻 |
+| Dynapower 是否出现数据中心订单金额或 backlog | 这是最大单项弹性，也最大风险 | 新闻稿、10-Q、电话会问答 |
+| 电气保护是否披露 800VDC/HVDC 或 rack PDU/UPS 认证 | 认证是从概念到收入的分水岭 | UL/TUV/OCP/客户平台公告 |
+| AI/DC 相关产品是否被渠道商缺货或交期拉长 | 供需紧张决定溢价能力 | 分销库存、交期、客户反馈 |
+| Automotive 项目取消/EV 放缓是否继续 | 汽车仍占过半，能吞噬 AI 小业务增量 | 重组费用、客户取消、分部收入 |
+
+### 10.2 基准结论
+
+ST 的基础投资逻辑是 37 亿美元收入、约 5 亿美元调整后净利、约 4.9 亿美元 FCF、2.6x net leverage 的工业/汽车传感器公司，估值约 14x adjusted PE、约 1.95x PS。AI 数据中心不是当前估值的主体，但 2026-2027 年可能成为 Industrials 重新加速的可选项。
+
+更可投资的验证路径是：先看 liquid cooling sensors 和 electrical protection 是否从“产品页”变成“客户平台定点/认证/订单”，再看 Dynapower 是否真正拿到 data center power/peak management 项目。若只有产品宣传而没有订单披露，AI/DC 不应给太高估值溢价。
+
+## 11. 主要风险
+
+1. AI 数据中心收入被高估：公司没有披露 AI/DC 收入，当前直接占比大概率仍低个位数。
+2. Dynapower 信誉折价：2025Q3 2.257 亿美元 goodwill impairment 说明此前清洁能源/电气化预期下修。
+3. 汽车周期和 EV 项目取消：2025Q4 已确认 EV 客户项目取消相关费用；汽车仍占 56%-57%。
+4. 竞争替代：传感器、电气保护、接触器均有强竞争者；客户一般会双供。
+5. 800VDC 标准和认证延迟：本地行业调研显示 2026 年仍以 48/54V、PSU、BBU、保护件为现实收入，800VDC 更偏 2027+。
+6. 高杠杆限制扩张：gross leverage 3.4x、net leverage 2.6x，若项目制业务需要大量营运资本，会牵制回购和降杠杆。
+7. 关税和成本传导：2026Q1 tariff pass-through revenue 稀释调整后经营利润率约 30bp；客户是否接受持续 pass-through 需要观察。
+
+## 12. 资料来源
+
+### 公司官方与财务
+
+- Sensata 2026Q1 earnings release, 2026-04-28: https://investors.sensata.com/news/news-details/2026/Sensata-Technologies-Reports-First-Quarter-2026-Financial-Results/default.aspx
+- Sensata 2025Q4/FY2025 earnings release, 2026-02-19: https://investors.sensata.com/news/news-details/2026/Sensata-Technologies-Reports-Fourth-Quarter-and-Full-Year-2025-Financial-Results/default.aspx
+- Sensata 2025Q3 earnings release, 2025-10-28: https://investors.sensata.com/news/news-details/2025/Sensata-Technologies-Reports-Third-Quarter-2025-Financial-Results/default.aspx
+- Sensata 2025Q2 earnings release, 2025-07-29: https://investors.sensata.com/news/news-details/2025/Sensata-Technologies-Reports-Second-Quarter-2025-Financial-Results/default.aspx
+- Sensata 2025Q1 earnings release, 2025-05-08: https://investors.sensata.com/news/news-details/2025/Sensata-Technologies-Reports-First-Quarter-2025-Financial-Results/default.aspx
+- Sensata 2025 Annual Report / Form 10-K: https://s21.q4cdn.com/676487211/files/doc_financials/2025/ar/Sensata-2025-Annual-Report.pdf
+
+### 产品、技术和数据中心资料
+
+- Sensata Data Centers official page: https://www.sensata.com/industries/data-centers
+- Sensata Data Center Solutions brochure page, published 2026-06-10: https://www.sensata.com/resources/brochure-sensata-data-center-solutions
+- Sensata Flow Sensors page: https://www.sensata.com/products/liquid-level-and-flow-sensors/flow-sensors
+- Sensata HVDU megawatt charging release, 2025-04-23: https://www.sensata.com/contact/newsroom/sensata-technologies-high-voltage-distribution-units-enabling-megawatt-charging
+- Sensata Industrial Products Line Card page: https://www.sensata.com/resources/brochure-industrial-products-line-card
+
+### 市场价格与估值
+
+- Yahoo Finance ST quote/chart: https://finance.yahoo.com/quote/ST/
+- Google Finance ST quote: https://www.google.com/finance/quote/ST:NYSE
+- Morningstar ST quote/statistics: https://www.morningstar.com/stocks/xnys/st/quote
+- StockAnalysis / Macrotrends / MarketBeat 等用于交叉核对 PE、forward PE、PS，最终估值以 2026-06-11 收盘价和公司披露股数/收入自算为主。
+
+### 项目内行业资料
+
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`

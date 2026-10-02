@@ -1,0 +1,154 @@
+# 公司收入传导与价值传导评估：Rambus（RMBS）
+
+报告日期：2026-06-12。  
+NTM 主口径：2026Q2-2027Q1。  
+研究边界：使用 `公司调研/` 与 `行业调研/` 下允许资料，并用 Rambus 官方财报、投资者材料和产品公告核验最新经营数据；未使用下游量化、排序或模型验证资料。  
+重要限制：本报告只评估行业需求、产品、客户、成本、利润和现金流向 Rambus 经营质量的传导，不讨论二级市场定价、交易倍数或证券建议，不把金融市场数据作为经营传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即 2026Q2-2027Q1。FY2026、FY2027、长期 run-rate、SOCAMM2/HBM4E/CXL/PCIe7 远期平台机会只作补充或情景上限，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：Rambus 2026Q1 GAAP 收入 1.802 亿美元，其中 product revenue 8800 万美元、royalty revenue 6960 万美元、contract and other revenue 2260 万美元；2026Q2 指引为 product revenue 9500-1.01 亿美元、royalty revenue 7200-7800 万美元、contract and other revenue 1900-2500 万美元。FY2025 product revenue 3.478 亿美元，同比 +41%，经营现金流 3.600 亿美元。
+- 重要产品/业务线：DDR5 RDIMM 服务器 DIMM 芯片组，DDR5 MRDIMM 12800 芯片组，LPDDR5X SOCAMM2 server module chipset，HBM4E/PCIe7/CXL3.1/Security 等 Silicon IP，Patent licensing。
+- NTM 公司收入四情景：悲观 7.30-7.90 亿美元，基准 8.20-8.90 亿美元，乐观 9.20-10.50 亿美元，极度乐观 11.00-12.50 亿美元。基准相对当前 TTM 约 7.211 亿美元为 +14% 至 +23%，主要来自 product revenue 继续站稳 9500 万美元/季度以上并温和爬坡。
+- 利润或 EBITDA 四情景：悲观 GAAP 经营利润率约 28%-32%、净利润约 2.00-2.45 亿美元；基准 GAAP 经营利润率约 34%-38%、净利润约 2.60-3.25 亿美元；乐观 GAAP 经营利润率约 38%-42%、净利润约 3.30-4.25 亿美元；极度乐观 GAAP 经营利润率约 42%-46%、净利润约 4.50-5.60 亿美元。EBITDA 公司未作为核心指引披露，本报告以经营利润和净利润为主。
+- 最大传导瓶颈：公司不披露 backlog、单品收入、客户名或 design win 金额，DDR5/MRDIMM 份额、SOCAMM2 平台采用、HBM4E/CXL/PCIe7 授权确认节奏均需要用产品收入和 contract/other 的后续兑现校准。
+- 最大利润率变量：product revenue 毛利率约 60%-63% 是收入弹性主来源，但低于 royalty/IP 毛利率；如果增长主要来自 PMIC/RCD/MDB 等芯片且良率、外包和库存健康，利润率稳定；如果增长来自低毛利出货、客户压价或费用提前投入，收入上修不能等比例留存。
+- 最大现金流变量：经营现金流当前很强，FY2025 为 3.600 亿美元、2026Q1 为 8320 万美元；NTM 现金流能否维持取决于 product revenue 的库存准备、客户回款、资本开支和 licensing billings 节奏。
+- 可信度：基准为中高，原因是总产品收入、royalty、contract/other 和 Q2 指引均有 A 级证据；产品线拆分、MRDIMM/SOCAMM2/HBM4E/CXL 的单项贡献为中或低，因为公司未披露单品收入和客户合同。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| DDR5 RDIMM 服务器 DIMM 芯片组：RCD、PMIC、SPD Hub、Temperature Sensor | Q1 2026 product revenue 8800 万美元中大部分；单品拆分无法可靠量化，模型估算约 6500-8000 万美元/季度 | 估算约 36%-44% 的 Q1 总收入；精确占比未披露 | 当前产品收入主引擎，直接受 DDR5 server、AI host CPU memory、RDIMM 8000 迁移拉动 | A/C：总 product revenue 为 A；单品拆分为 C | 进入基准，是 NTM product revenue 主口径 | DDR5 8000 以外的更高速/更高容量平台为补充 |
+| DDR5 MRDIMM 12800 芯片组：MRCD、MDB、PMIC、SPD Hub、TS | 当前已在产品线中，但收入未披露；模型估算仍为低千万美元/季度以内 | 估算低个位数至中个位数；无法可靠量化 | 单模组内容量高，1 MRCD + 10 MDB 抬高 Rambus 内容量；对 CPU memory bandwidth 重要 | C：官方产品和路线清楚，但客户/收入未拆分 | 小比例进入基准；更高放量放入乐观/极度乐观 | MRDIMM Gen2 和高端 AI inference/HPC 平台采用 |
+| LPDDR5X SOCAMM2 server module chipset：SPD Hub、12A/3A VR | 2026-04 发布，Q1 未形成可见收入；当前基准收入锚点为 0 或极小 | 当前占比无法可靠量化，可能接近 0 | AI server 低功耗可插拔系统内存新形态，赔率高但 NTM 证据不足 | D/C：产品发布为 D，JEDEC 标准和官方芯片组为 C，但客户收入路径未披露 | 不进入 NTM 基准主口径；进入乐观/极度乐观上限 | Vera/Rubin 或其他 AI CPU 平台导入、LPDDR6 SOCAMM2 |
+| Silicon IP：HBM4E/HBM4、PCIe7、CXL3.1、Security IP | Q1 2026 contract and other revenue 2260 万美元，Q2 指引 1900-2500 万美元；具体 IP 线未拆分 | 约 12.5% 的 Q1 总收入 | 高毛利、AI ASIC/custom silicon 设计导入期受益，但收入确认项目制 | A/C/D：contract/other 总额 A；现有 IP C；新发布 HBM4E/PCIe7 机会 D/C | 现有 contract/other 进入基准；新发布 IP 只小比例或不进入基准 | HBM4E、PCIe7、CXL3.x/4.0、UCIe、custom ASIC design wave |
+| Patent licensing / royalty | Q1 2026 royalty revenue 6960 万美元，Q2 指引 7200-7800 万美元 | 38.7% 的 Q1 总收入 | 高毛利现金流底座，增速低于产品线但稳定性高 | A：已确认收入和正式指引 | 进入基准 | 续约、授权计费节奏和新专利组合 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不评估 Rambus 份额、收入确认、利润率或公司汇总。需求强弱相对“当前需求锚”判断，当前锚包括 AI server DDR5/RDIMM/MRDIMM/SOCAMM2 需求、HBM/PCIe/CXL/IP 设计窗口、Rambus Q2 product revenue 指引隐含的客户采购节奏，以及行业调研中的高端内存、接口 IP 和 CXL 路径。绝对变化为需求池或需求节奏变化，不等同 Rambus 可确认收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| DDR5 RDIMM 服务器 DIMM 芯片组 | 行业侧：DDR5 已是服务器主内存代际，AI server/high-capacity RDIMM 需求强；公司侧：Q2 2026 product revenue 指引 9500-1.01 亿美元，隐含接口芯片需求继续高位 | 高容量 RDIMM 需求仍有绝对量，但客户库存或 CPU 平台节奏使接口芯片需求低于 Q2 指引 run-rate，季度需求回到 8000-9000 万美元产品收入支撑 | DDR5 RDIMM 8000、PMIC/SPD/TS attach 正常兑现，需求支持 Rambus product revenue 约 9500 万美元/季度以上 | AI inference/CPU memory/high-capacity RDIMM 拉货强于当前指引，需求支持 product revenue 连续站上 1.05-1.15 亿美元/季度 | DDR5 高速/高容量需求非线性上修，模块客户缺货且 Rambus 完整 chipset 内容量提升，需求支持 1.25 亿美元/季度以上产品收入能力 | 相对 Q1 product revenue 8800 万美元，基准需求绝对提升约 700-1300 万美元/季度；乐观提升约 1700-2700 万美元/季度 | 基准符合当前预期；悲观低于 Q2 指引；乐观高于当前 run-rate；极度乐观显著高于当前产品收入路径 | 支撑：Rambus Q2 指引、FY2025 product +41%、行业 DDR5 高容量短缺。反证：客户库存修正、dual-source 压价、服务器平台延后 |
+| DDR5 MRDIMM 12800 芯片组 | 行业侧：MRDIMM 提升 CPU memory bandwidth，Gen2/12800 路线和高端 CPU workload 相关；公司侧：官方 MRDIMM 12800 芯片组明确，单模组 1 MRCD + 10 MDB | MRDIMM 平台认证慢，需求主要停留在评估和小批量，无法明显超过当前产品收入内含水平 | 高端 server/HPC/AI inference 小规模采用，需求支持 Rambus 在 NTM 内形成数千万美元级新增需求池 | CPU 内存带宽成为 AI inference/HPC 瓶颈，MRDIMM adoption 强于预期，需求池在 NTM 内达到 0.8-1.5 亿美元级可服务上限 | MRDIMM 成为高端 CPU-memory 默认配置之一，MDB x10 使接口芯片需求非线性放大，NTM 需求池上限 2 亿美元以上 | 从当前小基数增加：基准 +2500-6000 万美元需求池；乐观 +8000 万-1.5 亿美元；极度 +1.8 亿美元以上 | 基准为温和超当前小基数；乐观和极度乐观均高于当前预期 | 支撑：官方 MRCD/MDB 产品、行业 MRDIMM 12,800MT/s 路线。反证：CPU/OEM 支持慢、客户继续用 RDIMM、竞争者二供 |
+| LPDDR5X SOCAMM2 server module chipset | 行业侧：SOCAMM2 进入 AI server 讨论，行业报告认为 Vera/Rubin 与 LPDDR allocation 是高弹性变量；公司侧：2026-04 发布 SOCAMM2 chipset，支持最高 9.6Gb/s | SOCAMM2 平台导入晚于 NTM，需求仅为样品/认证，NTM 无明显可收入需求 | SOCAMM2 需求在行业层面成立，但 NTM 主要是小批量认证，不进入 Rambus 基准收入需求 | 至少一个 AI server/AI CPU 平台在 NTM 内采用 SOCAMM2，Rambus 芯片组需求达到数千万美元级 | SOCAMM2 随 AI CPU/rack 架构快速放量，LPDDR 供给紧缺但模块数上升，Rambus 芯片需求上限进入 1 亿美元以上 | 基准绝对变化为 0-小额；乐观 +3000-8000 万美元需求池；极度 +1.0-1.8 亿美元需求池 | 基准只承认行业需求，不承认可确认收入；乐观高于当前预期；极度乐观为低可信上限 | 支撑：Rambus 官方发布、行业 SOCAMM2 高景气。反证：未披露客户、未披露订单、LPDRAM 供给和平台采用节奏不确定 |
+| HBM4E/HBM4、PCIe7、CXL3.1、Security 等 Silicon IP | 行业侧：AI ASIC/custom silicon、HBM4/4E、PCIe7、CXL3.x 设计复杂度上升；公司侧：Q1 contract/other 2260 万美元，Q2 指引 1900-2500 万美元 | 客户 tapeout 推迟或选择自研/EDA 巨头 IP，需求回到现有 contract/other run-rate 下沿 | 现有 IP license/NRE 正常，需求支持 contract/other 约 2000-2500 万美元/季度 | HBM4E/CXL/PCIe7 多个 design-in 或 early access 增强，需求支持 contract/other 3000-4000 万美元/季度 | AI ASIC 设计潮集中确认，多个大额 NRE/license 同期落地，需求支持 5000 万美元/季度以上上限 | 相对 Q1 contract/other 2260 万美元：基准约持平；乐观 +700-1700 万美元/季度；极度 +2700 万美元/季度以上 | 基准符合当前 run-rate；乐观需公司特定 design-in；极度乐观需多个核心环节同时成立 | 支撑：官方 HBM4E Controller、PCIe7 Switch IP、CXL3.1 产品；行业高速接口 IP 需求。反证：IP 项目制、客户自研、量产 royalty 迟于 NTM |
+| Patent licensing / royalty | 当前需求锚为已签授权、licensing billings 和 Q2 royalty 指引 7200-7800 万美元；不是 AI server 出货线性函数 | 续约/计费节奏低于预期，季度 royalty 回落到 6500-7000 万美元 | 续约和授权计费正常，季度 royalty 约 7200-7800 万美元 | 授权续约或计费节奏优于预期，季度 royalty 7800-8500 万美元 | 大额授权或提前计费，季度 royalty 8500 万美元以上，但可预测性低 | 基准相对 Q1 +240-840 万美元/季度；乐观 +840-1540 万美元/季度 | 基准符合指引；乐观需续约/授权正向证据；极度乐观为事件驱动 | 支撑：Q2 royalty 指引、长期专利组合。反证：授权谈判、专利到期、客户重谈 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断外部需求中哪些可以进入 Rambus NTM 收入表，以及当前可收入化基数，不预测增长，不判断利润率。A 级为已披露收入/指引；B 级为订单、backlog、RPO、正式合同或可验证交付时间表；C 级为 design win、认证、产能规划或可验证管理层披露；D 级为产品发布、样品、早期合作；E 级为主题相关。Rambus 不披露 backlog、客户项目和单品收入，因此产品线拆分均需保守处理。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| DDR5 RDIMM 服务器 DIMM 芯片组 | 2026Q1 product revenue 8800 万美元；2026Q2 product 指引 9500-1.01 亿美元；FY2025 product revenue 3.478 亿美元，+41% | 直接进入 product revenue | 产品毛利率约 60%-63%，低于 royalty/IP，但规模弹性最高 | NTM 2.80-3.25 亿美元 | NTM 3.30-3.90 亿美元 | NTM 4.10-5.00 亿美元 | NTM 5.50-6.50 亿美元 | 基准符合 Q2 指引与当前 run-rate；悲观低于 Q2 可见路径；乐观高于当前产品收入锚点 | A/C | 是 | A 级 product revenue 和正式指引；C 级单品拆分 | 基准主收入来源；不把全球 DDR5/RDIMM 市场直接折算为收入 |
+| DDR5 MRDIMM 12800 芯片组 | 官方产品明确，但未披露收入；可能已包含在 product revenue 和新产品贡献中 | 直接进入 product revenue | 单模组内容量高，理论利润弹性好；初期支持成本和认证成本较高 | 0-1500 万美元 | 2500-6000 万美元 | 8000 万-1.40 亿美元 | 1.80-2.80 亿美元 | 基准小幅高于当前可见小基数；乐观/极度乐观代表平台采用加速 | C | 小比例进入 | 产品、规格和 NTM 商业路径相对清楚，但无单品收入 | 基准保守折扣；大额贡献只进乐观/极度乐观 |
+| LPDDR5X SOCAMM2 server module chipset | 2026-04 发布，Q1 不可见；未披露客户、订单或交付 | 直接进入 product revenue，但 NTM 可确认路径未披露 | 如果导入 AI server 平台，PMIC/VR/SPD Hub 可带来产品毛利；初期良率/支持成本不确定 | 0 | 0-1000 万美元，仅作为当前产品收入内小额试产可能 | 3000-8000 万美元 | 1.00-1.80 亿美元 | 基准低于行业叙事，因为收入确认路径不足；乐观需要平台采用证据 | D/C | 否，或仅作为极小辅助 | 只有产品发布和路线，没有公开客户/订单/时间表 | 不进入 NTM 基准主口径；列为乐观/极度乐观和后续跟踪 |
+| Silicon IP：HBM4E/HBM4、PCIe7、CXL3.1、Security | 2026Q1 contract/other revenue 2260 万美元；Q2 指引 1900-2500 万美元；新 IP 已发布或可授权 | 直接进入 contract/other；后续可能有 royalty | 高毛利，项目制确认；费用支持和 test chip 成本影响期间利润 | NTM 7500-8500 万美元 | NTM 8500 万-1.05 亿美元 | NTM 1.20-1.70 亿美元 | NTM 2.00-2.80 亿美元 | 基准符合当前 run-rate；乐观需要设计导入增强；极度乐观为大额 license 集中确认 | A/C/D | 是，限现有 run-rate | A 级 contract/other 收入和指引；新发布 IP 不自动进入基准 | 现有 IP 进入基准；HBM4E/PCIe7/CXL 大额增量进入乐观或上限 |
+| Patent licensing / royalty | 2026Q1 royalty 6960 万美元；Q2 指引 7200-7800 万美元；FY2025 royalty 约 2.793 亿美元 | 直接进入 royalty revenue | 高毛利现金流；增长慢但经营质量高 | NTM 2.60-2.80 亿美元 | NTM 2.85-3.15 亿美元 | NTM 3.20-3.45 亿美元 | NTM 3.50-3.80 亿美元 | 基准符合 Q2 指引和历史 run-rate；乐观需授权续约/计费上修 | A | 是 | 已披露收入、指引和 licensing billings | 稳定现金流底座，不按 AI 需求自动上修 |
+
+排除项：客户 AI capex 总额、HBM 终端市场、SOCAMM2 终端模组总额、CXL appliance 总额、同业接口芯片收入、客户未披露项目和主题相关性不进入 Rambus NTM 基准收入。DDR4、client CUDIMM/CSODIMM/LPCAMM2、GDDR edge/client、传统安全/IoT IP 只在附录或低权重补充中处理。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从需求和收入基数出发，评估每个产品在 NTM 内给 Rambus 贡献的收入和利润。利润贡献以 GAAP/经营口径方向和区间表示；公司未披露单品毛利、客户价格和 backlog，因此所有单品利润均为模型估算。不得把行业 TAM、客户总预算、HBM/SOCAMM/CXL 总市场或远期 pipeline 直接写成 Rambus 收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| DDR5 RDIMM 服务器 DIMM 芯片组 | 悲观产品 | 2.80-3.25 亿美元 | 毛利约 1.65-1.95 亿美元；费用后经营贡献低于当前 run-rate | 产品毛利率可能降至 58%-61% | 低于 Q2 product 指引隐含路径 | Q1 product 8800 万美元、Q2 product 指引 9500-1.01 亿美元 | 保留悲观，用于库存/客户节奏风险 | 客户库存、dual-source 压价、CPU 平台节奏低于预期 |
+| DDR5 RDIMM 服务器 DIMM 芯片组 | 基准产品 | 3.30-3.90 亿美元 | 毛利约 2.00-2.40 亿美元；经营贡献稳定 | 产品毛利率约 60%-63% | 符合当前指引和 run-rate | FY2025 product 3.478 亿美元 +41%；Q2 指引继续上行 | 保留基准 | 单品拆分未披露，RCD/PMIC/SPD/TS 份额不可验证 |
+| DDR5 RDIMM 服务器 DIMM 芯片组 | 乐观产品 | 4.10-5.00 亿美元 | 毛利约 2.55-3.20 亿美元；经营杠杆改善 | 毛利率 62%-64%，费用率下降 | 高于当前预期 | DDR5 8000、高容量 RDIMM、AI host CPU memory 需求强 | 保留为有证据乐观 | 竞争者二供、客户议价、封测/外包供给 |
+| DDR5 RDIMM 服务器 DIMM 芯片组 | 极度乐观产品 | 5.50-6.50 亿美元 | 毛利约 3.50-4.25 亿美元；强经营杠杆 | 毛利率 63%-66%，需 mix/ASP 支撑 | 明显高于当前预期 | 完整 chipset attach、平台高速化、供应紧张同时成立 | 下调为低可信上限 | 需要份额、需求、供给和 ASP 同时突破，当前缺客户级证据 |
+| DDR5 MRDIMM 12800 芯片组 | 悲观产品 | 0-1500 万美元 | 利润贡献接近 0 或被认证/支持成本抵消 | 利润率低于成熟 RDIMM | 低于新产品预期 | 官方产品存在但收入未披露 | 保留悲观 | 平台导入慢、Gen2 标准/CPU 支持延后 |
+| DDR5 MRDIMM 12800 芯片组 | 基准产品 | 2500-6000 万美元 | 毛利约 1500-3800 万美元；经营贡献有限但正向 | 毛利率接近或略高于成熟产品 | 小幅高于当前可见小基数 | 每 MRDIMM 需 1 MRCD + 10 MDB，内容量显著高于 RDIMM | 保留基准小额 | 没有客户收入披露，不能放大 |
+| DDR5 MRDIMM 12800 芯片组 | 乐观产品 | 8000 万-1.40 亿美元 | 毛利约 5000-9000 万美元；费用率改善 | 毛利率上行，内容量驱动 | 高于当前预期 | 高端 AI inference/HPC CPU memory bandwidth 需求增强 | 保留乐观 | 客户仍可用 RDIMM、高 ASP 被二供压低 |
+| DDR5 MRDIMM 12800 芯片组 | 极度乐观产品 | 1.80-2.80 亿美元 | 毛利约 1.15-1.85 亿美元；利润弹性强 | 毛利率明显上行 | 显著高于当前预期 | MRDIMM 成为高端 CPU memory 标配且 Rambus 份额高 | 下调为上限 | 需要平台 adoption 和份额证据，当前缺订单披露 |
+| LPDDR5X SOCAMM2 server module chipset | 悲观产品 | 0 | 0 或少量研发/支持费用拖累 | 对利润率无贡献 | 低于行业题材预期 | 2026-04 才发布，未披露客户收入 | 保留悲观 | 没有 NTM 公开交付路径 |
+| LPDDR5X SOCAMM2 server module chipset | 基准产品 | 0-1000 万美元 | 利润贡献无法可靠量化，可能被认证成本抵消 | 中性或略拖累 | 不把行业 SOCAMM2 热度放入基准 | 官方产品发布、支持 9.6Gb/s | 下移到基准辅助，不作为主贡献 | 客户/订单/交付未披露 |
+| LPDDR5X SOCAMM2 server module chipset | 乐观产品 | 3000-8000 万美元 | 毛利约 1800-5000 万美元；若平台导入则正向 | 毛利率接近产品平均或略低于成熟 RDIMM | 高于当前预期 | JEDEC-standard SOCAMM2、Rambus SPD Hub/VR、AI server 低功耗内存需求 | 保留乐观但可信度中低 | Vera/Rubin 或其他平台采用未被 Rambus 明确披露 |
+| LPDDR5X SOCAMM2 server module chipset | 极度乐观产品 | 1.00-1.80 亿美元 | 毛利约 6500 万-1.20 亿美元；经营杠杆明显 | 毛利率可上行但需 ASP/良率支撑 | 明显高于当前预期 | SOCAMM2 成 AI server 系统内存主流之一，LPDDR 供给紧缺 | 下调为低可信上限 | 需要平台、客户、供给、收入确认同时突破 |
+| Silicon IP：HBM4E/HBM4、PCIe7、CXL3.1、Security | 悲观产品 | 7500-8500 万美元 | 毛利高但项目支持成本高；经营贡献约 5000-6500 万美元 | 毛利率仍高，收入不足以形成增量杠杆 | 低于当前 run-rate 中枢 | Q1 contract/other 2260 万美元，Q2 指引 1900-2500 万美元 | 保留悲观 | 客户 tapeout 延后、自研或 EDA/IP 巨头替代 |
+| Silicon IP：HBM4E/HBM4、PCIe7、CXL3.1、Security | 基准产品 | 8500 万-1.05 亿美元 | 经营贡献约 6500-8500 万美元 | 高毛利，利润质量好 | 符合当前 run-rate | 现有 contract/other 收入和 Q2 指引 | 保留基准 | 新发布 IP 不能自动转收入 |
+| Silicon IP：HBM4E/HBM4、PCIe7、CXL3.1、Security | 乐观产品 | 1.20-1.70 亿美元 | 经营贡献约 9000 万-1.35 亿美元 | 毛利率高，费用杠杆改善 | 高于当前预期 | HBM4E Controller 可授权、PCIe7 Switch IP、CXL3.1 Controller、AI ASIC 设计窗口 | 保留乐观 | design win 金额、客户、确认时点未披露 |
+| Silicon IP：HBM4E/HBM4、PCIe7、CXL3.1、Security | 极度乐观产品 | 2.00-2.80 亿美元 | 经营贡献约 1.50-2.20 亿美元 | 非线性利润上修 | 显著高于当前预期 | 多个 custom ASIC/HBM4E/CXL/PCIe7 授权同期开花 | 下调为低可信上限 | 项目制收入集中确认不可预测；缺客户证据 |
+| Patent licensing / royalty | 悲观产品 | 2.60-2.80 亿美元 | 毛利和现金流仍高；经营贡献约 2.40-2.65 亿美元 | 高毛利但增速低 | 低于 Q2 royalty 指引外推 | Q1 royalty 6960 万美元 | 保留悲观 | 续约、授权计费或专利谈判低于预期 |
+| Patent licensing / royalty | 基准产品 | 2.85-3.15 亿美元 | 经营贡献约 2.70-3.00 亿美元 | 高毛利、现金流强 | 符合当前指引和 run-rate | Q2 royalty 指引 7200-7800 万美元 | 保留基准 | 授权客户集中和谈判时点 |
+| Patent licensing / royalty | 乐观产品 | 3.20-3.45 亿美元 | 经营贡献约 3.00-3.30 亿美元 | 高毛利，利润质量强 | 高于当前预期 | 续约或 licensing billings 上行 | 保留乐观 | 不能用 AI server 出货自动上修 royalty |
+| Patent licensing / royalty | 极度乐观产品 | 3.50-3.80 亿美元 | 经营贡献约 3.30-3.65 亿美元 | 高毛利但事件驱动 | 显著高于当前预期 | 大额授权或提前计费 | 下调为事件上限 | 难预测，不能作为基准 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为 Rambus NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。汇总时避免重复计算：DDR5 RDIMM、MRDIMM、SOCAMM2 均属于 product revenue；HBM4E/CXL/PCIe7/Security 属 contract/other 或后续 license；royalty 单独处理。公司未披露 EBITDA 指引，本节以 GAAP 经营利润、净利润和经营/自由现金流方向为主。当前 TTM 收入约 7.211 亿美元，估算口径为 FY2025 收入约 7.076 亿美元 + Q1 2026 1.802 亿美元 - Q1 2025 1.667 亿美元。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 7.30-7.90 亿美元 | 相对 TTM 约 +1% 至 +10% | 低于 Q2 2026 指引外推和当前 product run-rate；DDR5/RDIMM 需求或客户节奏弱于预期 | 77%-79% | GAAP 28%-32% | EBITDA 无法可靠量化；净利润约 2.00-2.45 亿美元 | 经营现金流仍为正，但 FCF 可能低于 FY2025 的 3.600 亿美元经营现金流，受库存和费用拖累 | 中 | product revenue 回落、MRDIMM/SOCAMM2 延后、IP 项目推迟、授权计费偏弱 |
+| 基准公司 | 8.20-8.90 亿美元 | 相对 TTM 约 +14% 至 +23% | 接近 Q2 指引、FY2025 product 增长和当前 run-rate 的正常兑现；低证据机会保守处理 | 79%-81% | GAAP 34%-38% | EBITDA 无法可靠量化；净利润约 2.60-3.25 亿美元 | 经营现金流约 3.50-4.30 亿美元，FCF 稳定为正；资本开支和库存不会显著吞噬现金 | 中高 | 单品收入不可见，product 增长主要依赖 DDR5/RDIMM 持续高位 |
+| 乐观公司 | 9.20-10.50 亿美元 | 相对 TTM 约 +28% 至 +46% | 高于当前预期，且不是单一小基数项目；DDR5/MRDIMM、IP 和部分 SOCAMM2 同步超预期 | 80%-82% | GAAP 38%-42% | EBITDA 无法可靠量化；净利润约 3.30-4.25 亿美元 | 经营现金流上行至约 4.20-5.30 亿美元；若应收和库存可控，FCF 质量好 | 中 | 需要 MRDIMM 或 SOCAMM2 平台证据、IP design-in 和产品毛利率保持 |
+| 极度乐观公司 | 11.00-12.50 亿美元 | 相对 TTM 约 +53% 至 +73% | 显著高于当前预期；需求、公司捕获、利润率和执行质量同时突破 | 81%-84% | GAAP 42%-46% | EBITDA 无法可靠量化；净利润约 4.50-5.60 亿美元 | 经营现金流可能超过 5.50 亿美元，但库存、供给和客户交付会放大营运资本波动 | 低 | 需要 DDR5 份额提升、MRDIMM/SOCAMM2 快速放量、HBM4E/CXL/PCIe7 大额授权和 royalty 同时强 |
+
+公司层面汇总校验：
+
+| 收入口径 | 悲观公司 | 基准公司 | 乐观公司 | 极度乐观公司 | 重复计算检查 |
+| --- | ---: | ---: | ---: | ---: | --- |
+| Product revenue | 3.05-3.60 亿美元 | 4.00-4.60 亿美元 | 5.20-6.50 亿美元 | 7.50-9.00 亿美元 | DDR5 RDIMM、MRDIMM、SOCAMM2 均合计在 product 内，不再按终端 DRAM/SOCAMM 市场加总 |
+| Royalty revenue | 2.60-2.80 亿美元 | 2.85-3.15 亿美元 | 3.20-3.45 亿美元 | 3.50-3.80 亿美元 | 不按 AI server 出货直接上修 |
+| Contract and other revenue | 0.75-0.85 亿美元 | 0.85-1.05 亿美元 | 1.20-1.70 亿美元 | 2.00-2.80 亿美元 | HBM4E/CXL/PCIe7/Security IP 只在此或后续 royalty 体现，不重复放入 product |
+| 合计 | 7.30-7.90 亿美元 | 8.20-8.90 亿美元 | 9.20-10.50 亿美元 | 11.00-12.50 亿美元 | 情景合计已扣除业务线重叠 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。校准动作仅使用保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次：需求风险在需求层处理，收入确认风险在收入基数处理，份额/价格/成本风险在产品贡献处理，公司组合风险在公司汇总处理，证据不足在校准层处理。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q2 2026 product revenue 指引 9500-1.01 亿美元，高于 Q1 8800 万美元 | 收入基数、产品贡献、公司汇总 | 支撑 DDR5/RDIMM product revenue 基准；使 NTM product 基准高于 FY2025 | 产品毛利率若维持 60%+，收入可留存为经营利润 | 支撑库存准备和客户拉货仍健康 | 基准保留；悲观需解释为什么 Q2 指引后续不能维持 |
+| FY2025 product revenue 3.478 亿美元，同比 +41%，FY2025 经营现金流 3.600 亿美元 | 收入基数、现金流 | 支撑 product-led 转型不是单季现象 | 高 royalty/IP 叠加产品规模，支撑总毛利率约 79%-81% | 现金流强，降低执行财务风险 | 基准保留；公司级可信度上调至中高 |
+| Rambus 不披露 backlog、bookings、客户名、单品收入 | 证据可信度、收入确认 | 限制 MRDIMM、SOCAMM2、HBM4E/CXL/PCIe7 的基准纳入比例 | 无法验证单品 ASP、毛利和客户支持成本 | 无法确认交付节奏和营运资本压力 | 乐观保留但低证据假设下移；SOCAMM2 不进基准主口径 |
+| DDR5 RDIMM 8000、MRDIMM 12800、PMIC5030、MRCD/MDB 产品路线 | 产品贡献 | 支撑 product revenue 有明确硬件内容量，不只是主题相关 | MRDIMM 的 MDB x10 可能提高单模组内容量和利润弹性 | 认证和客户 QVL 决定执行 | DDR5 基准保留；MRDIMM 基准只保留小额 |
+| SOCAMM2 产品发布支持最高 9.6Gb/s，并含 SPD Hub、12A/3A VR | 需求、收入基数 | 支撑 NTM 乐观收入机会，但缺客户合同 | 初期毛利方向不确定，可能有支持成本 | 需要平台认证、LPDDR 供应和客户量产 | 基准下移或仅作辅助；乐观保留；极度乐观降为低可信上限 |
+| HBM4E Controller IP、PCIe7 Switch IP、CXL3.1 Controller 等发布 | 需求、收入基数 | 支撑 contract/other 的乐观上修，但产品发布不等于收入确认 | IP 毛利高，但 NRE/支持和 test chip 成本影响期间利润 | 项目制确认导致季度波动 | 基准只保留现有 run-rate；乐观保留；极度乐观降为上限 |
+| Patent licensing 有 Q1 实际和 Q2 指引，但不是 AI 出货线性函数 | 公司组合 | 支撑 NTM 2.85-3.15 亿美元基准 royalty | 高毛利稳定现金流 | licensing billings 节奏影响现金流 | 基准保留；禁止用行业热度自动上修 |
+| 产品收入毛利率低于 royalty/IP 毛利率 | 利润率 | product 上修不等于总利润率等比例上修 | 若产品 mix 过重且价格/成本不利，总毛利率可能下降 | 库存和外包成本会影响 FCF | 公司乐观利润率需要价格、mix 或规模效应证据 |
+| 竞争者和客户二供：Montage、Renesas、TI/MPS/ADI、Synopsys/Cadence 等 | 产品贡献 | 可能压低 Rambus 份额、ASP 或 IP win rate | 压低产品毛利或提高客户支持成本 | 延长认证和交付周期 | 只在产品贡献层处理，不重复压低公司所有业务 |
+| AI server/HBM/SOCAMM/CXL 行业景气 | 需求 | 支撑需求池，但不能直接成为 Rambus 可确认收入 | 利润率取决于 Rambus 捕获层和产品 mix | 需订单、认证、收入确认路径 | 仅作需求层正向证据；无公司特定证据不进入基准 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 7.30-7.90 亿美元，低于当前 Q2 指引外推；product revenue 回落，MRDIMM/SOCAMM2/IP 延后 | Royalty 和现金流底座仍强，资产负债表健康；即使悲观也不是需求归零 | Q2 product 指引和 FY2025 product +41% 与“快速回落”冲突，需要客户库存或平台延后证据 | 保留 | 悲观下沿保留为库存/平台/授权节奏风险，不作为基准 | 中 | 不重复惩罚 AI capex 放缓；若已在 product demand 层处理，不再同时压低 royalty |
+| 基准 | NTM 收入 8.20-8.90 亿美元，product revenue 站稳 4.00-4.60 亿美元，royalty 稳定，contract/other 正常 | Q1/Q2 指引、FY2025 产品增长、经营现金流、DDR5 服务器芯片组收入均为 A 级或强 C 级证据 | 单品收入、backlog、客户和份额未披露；SOCAMM2/HBM4E/PCIe7 新品证据不足 | 保留 | 基准保留，SOCAMM2 和新 IP 不作为主驱动 | 中高 | 不因 SOCAMM2/HBM4E 证据不足重复压低已披露 DDR5 product revenue |
+| 乐观 | NTM 收入 9.20-10.50 亿美元，DDR5/MRDIMM、IP、少量 SOCAMM2 同步强于当前预期 | 行业高端内存和接口 IP 景气，MRDIMM 内容量高，Rambus 新产品发布密集 | 乐观必须回答客户、产品、时间和收入确认；目前公开证据不足以把全部乐观纳入基准 | 保留 | 乐观保留为有公司产品证据但需后续验证的上修情景 | 中 | 不把行业 HBM/SOCAMM 总市场当作 Rambus 收入；不重复惩罚客户未披露 |
+| 极度乐观 | NTM 收入 11.00-12.50 亿美元，四条主线同时突破 | 如果 DDR5 份额、MRDIMM/SOCAMM2、HBM4E/CXL/PCIe7 和 royalty 同时强，收入和利润可非线性上修 | 任一核心环节缺客户/订单/收入确认证据都会削弱极度乐观；当前缺 backlog 和客户项目披露 | 下移 | 校准后为低可信上限，不作为当前预期 | 低 | 不用同一个“未披露客户”风险重复压低基准；它只限制极度乐观可信度 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。Rambus NTM 收入最可能落在 8.20-8.90 亿美元，核心路径是 DDR5 RDIMM/服务器 DIMM 芯片组在 Q2 2026 指引的 9500-1.01 亿美元产品收入基础上继续正常兑现，MRDIMM 小比例贡献，contract/other 维持当前 run-rate，royalty 稳定在约 2.85-3.15 亿美元年化区间。
+- NTM 收入结论：Rambus 的可确认收入不是 AI capex、HBM TAM 或 SOCAMM2 终端市场的线性函数。当前可进入基准的收入主要来自 A 级 product revenue、royalty revenue、contract/other revenue 和管理层 Q2 指引；SOCAMM2、HBM4E、PCIe7、CXL3.1 的大额机会因客户和收入确认证据不足，主要放在乐观或极度乐观上限。
+- 利润/现金流结论：基准下总毛利率约 79%-81%、GAAP 经营利润率约 34%-38%、净利润约 2.60-3.25 亿美元，经营现金流约 3.50-4.30 亿美元。利润质量来自高毛利 royalty/IP 与规模化 product revenue 的组合；但 product revenue 毛利率低于 royalty，因此收入上修如果主要来自低毛利或高支持成本硬件，不应自动推导为利润率大幅扩张。
+- 主要传导瓶颈：第一是 product revenue 中 DDR5 RDIMM、MRDIMM、SOCAMM2 的单品和客户拆分不可见；第二是 SOCAMM2 仍缺公开客户和交付时间表；第三是 HBM4E/CXL/PCIe7 是 IP license/NRE 逻辑，不是随 HBM/CXL 终端出货线性确认；第四是客户二供和竞争可能限制份额和 ASP。
+- 乐观情景成立条件：2026Q2/Q3 product revenue 连续超过 1 亿美元/季度且毛利率不下滑；MRDIMM 12800 出现更多 CPU/OEM/模组平台认证；contract/other 站上 3000 万美元/季度附近；SOCAMM2 出现明确客户平台或量产信号；royalty 维持指引上沿。
+- 极度乐观情景成立条件：DDR5 8000 与 MRDIMM 同时显著放量，SOCAMM2 在 NTM 内进入重点 AI server 平台，HBM4E/CXL3.1/PCIe7 多个大额设计授权集中确认，产品毛利率和经营费用率同步改善，经营现金流没有被库存和应收吞噬。
+- 悲观情景触发条件：product revenue 从 Q2 指引高位回落到 9000 万美元/季度以下；客户库存修正或服务器 CPU/AI 平台延后；MRDIMM/SOCAMM2 认证无进展；contract/other 连续低于 2000 万美元/季度；royalty 续约或 licensing billings 低于当前指引路径。
+- 后续跟踪数据：Q2/Q3 2026 product revenue 和 product gross margin；licensing billings 与 royalty revenue；contract/other 是否高于 2500-3000 万美元/季度；MRDIMM 12800、SOCAMM2、HBM4E、PCIe7、CXL3.1 的客户或 design win 披露；库存、应收、资本开支和经营现金流；竞争者二供、DDR5/MRDIMM ASP、LPDDR/SOCAMM allocation。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司经营数据以 Rambus 2026Q1 财报和 2026Q2 指引为主，报告日期 2026-06-12；NTM 为 2026Q2-2027Q1。
+- 主要收入、订单、指引和利润率来源：Rambus 2026Q1 财报披露 Q1 revenue 1.802 亿美元、product revenue 8800 万美元、contract/other 2260 万美元、经营现金流 8320 万美元、现金及有价证券 7.861 亿美元，并给出 Q2 product revenue 9500-1.01 亿美元、royalty 7200-7800 万美元、contract/other 1900-2500 万美元指引；Rambus FY2025/Q4 2025 财报披露 FY2025 product revenue 3.478 亿美元、同比 +41%，FY2025 经营现金流 3.600 亿美元。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：若 product revenue 连续站稳 1 亿美元/季度，Rambus 年化收入中枢可从当前约 7.2 亿美元 TTM 抬升到 8.5-9.0 亿美元附近；若 MRDIMM/SOCAMM2/HBM4E/CXL/PCIe7 同时兑现，FY2027 或后续 run-rate 才可能进入 10 亿美元以上区间。该补充不是 NTM 基准。
+- 主要项目内来源：`公司调研/AI服务器_存储_EMS/RMBS_Rambus_公司调研_2026-06-11.md`；`行业调研/AI服务器_存储_芯片/行业调研_系统内存、SOCAMM与内存模组_2026-06-10.md`；`行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`；`行业调研/AI服务器_存储_芯片/行业调研_EDA工具、接口IP与Chiplet IP_2026-06-11.md`；`行业调研/AI服务器_存储_芯片/行业调研_CXL内存扩展与内存池化_2026-06-10.md`。
+- 主要外部来源：
+  - Rambus Q1 2026 financial results, 2026-04-27: https://investor.rambus.com/press-releases/press-release-details/2026/Rambus-Reports-First-Quarter-2026-Financial-Results/default.aspx
+  - Rambus Q4/FY2025 financial results, 2026-02-02: https://investor.rambus.com/press-releases/press-release-details/2026/Rambus-Reports-Fourth-Quarter-and-Fiscal-Year-2025-Financial-Results/default.aspx
+  - Rambus Q1 2026 Investor Presentation: https://s202.q4cdn.com/680194126/files/doc_presentations/2026/Q126-Rambus-Investor-Presentation.pdf
+  - Rambus Memory Interface Chips product page: https://www.rambus.com/memory-interface-chips/
+  - Rambus DDR5 MRCD/MDB product page: https://www.rambus.com/memory-interface-chips/ddr5-dimm-chipset/ddr5-mrcd-and-mdb/
+  - Rambus DDR5 Server PMIC product page: https://www.rambus.com/memory-interface-chips/ddr5-dimm-chipset/ddr5-server-pmics/
+  - Rambus SOCAMM2 server module chipset announcement, 2026-04-22: https://www.rambus.com/rambus-enables-power-efficient-ai-platforms-with-socamm2-server-module-chipset/
+  - Rambus HBM4E Controller IP announcement, 2026-03-04: https://www.rambus.com/rambus-sets-new-benchmark-for-ai-memory-performance-with-industry-leading-hbm4e-controller-ip/
+  - Rambus HBM4E Controller product page: https://www.rambus.com/interface-ip/hbm/hbm4e-controller/
+  - Rambus PCIe 7.0 Switch IP announcement, 2026-05-05: https://www.rambus.com/rambus-introduces-pcie-7-0-switch-ip-with-time-division-multiplexing-for-scalable-ai-and-data-center-infrastructure/

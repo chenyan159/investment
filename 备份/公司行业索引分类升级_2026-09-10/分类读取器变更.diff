@@ -1,0 +1,233 @@
+--- before/tools\research-runner\domains\company.mjs
++++ after/tools\research-runner\domains\company.mjs
+@@ -20,16 +20,22 @@
+ import { primarySubject, safeOutputNamePart } from "./output-path.mjs";
+ 
+ export const COMPANY_CATEGORIES = [
++  "AI计算芯片_EDA_IP_custom_ASIC",
+   "AI服务器_存储_EMS",
+-  "AI计算芯片_EDA_IP_custom_ASIC",
+   "AI网络_光互联_连接器",
+-  "半导体材料_化学品_基板",
++  "电子材料_化学品_基板_PCB",
++  "晶圆制造_前道设备",
++  "封测_检测_计量_光罩",
++  "功率半导体_电源管理_传感器",
++  "配电_电源系统_电气设备",
+   "电力_发电_能源_储能",
+-  "封测_检测_计量_光罩",
+-  "机电_冷却_工程_水处理_边缘工业AI",
+-  "晶圆制造_前道设备",
+-  "配电_电源_功率器件",
+-  "云算力_IDC_AI软件平台",
++  "热管理_流体_水处理",
++  "工程建设_机电安装",
++  "机器人_工业自动化_智能硬件",
++  "航空航天_卫星_高可靠系统",
++  "云算力_IDC_边缘云",
++  "企业软件_数据平台",
++  "网络安全_身份权限_治理",
+ ];
+ 
+ export const companyDomain = {
+@@ -88,6 +94,11 @@
+       subject: cells[0].trim(),
+       displayName: cells[1].trim(),
+       category: cleanCategory(cells[2]),
++      ...(cells.length > 3 ? {
++        businessTags: (cells[3] || "").trim(),
++        industrySubjects: (cells[4] || "").trim(),
++        listingNote: (cells[5] || "").trim(),
++      } : {}),
+     }))
+     .filter((entry) => entry.subject && entry.category);
+ }
+--- before/tools\research-runner\domains\industry.mjs
++++ after/tools\research-runner\domains\industry.mjs
+@@ -22,8 +22,8 @@
+   "AI园区电力_机电_冷却",
+   "AI服务器_存储_芯片",
+   "AI网络_光互联_铜互联",
+-  "晶圆制造_设备_材料_测试",
+-  "机器人_硬件_零部件",
++  "半导体与电子制造_设备_材料_测试",
++  "工业自动化_机器人_感知",
+   "商业航天_火箭_卫星",
+   "AI应用_软件_数据平台",
+ ];
+@@ -85,6 +85,10 @@
+       displayName: cells[0].trim(),
+       category: cleanCategory(cells[1]),
+       researchScope: (cells[2] || "").trim(),
++      ...(cells.length > 3 ? {
++        topicType: (cells[3] || "行业").trim(),
++        classificationNote: (cells[4] || "").trim(),
++      } : {}),
+     }))
+     .filter((entry) => entry.subject && entry.category);
+ }
+--- before/tools\research-runner\index-updater.mjs
++++ after/tools\research-runner\index-updater.mjs
+@@ -114,7 +114,7 @@
+     "",
+     `生成日期：${today}`,
+     "",
+-    `来源：\`${FUNDAMENTAL_ROOT}\\公司调研\` 下 10 个正式分类目录内的公司调研 Markdown 文件，以及新增待调研公司。`,
++    `来源：\`${FUNDAMENTAL_ROOT}\\公司调研\` 下 ${COMPANY_CATEGORIES.length} 个正式分类目录内的公司调研 Markdown 文件，以及新增待调研公司。`,
+     "",
+     "生成口径：每个正式分类目录直属 `.md` 公司调研文件或索引中新增待调研项算一家公司；股票代号、公司名称和所属分类目录从当前文件名、所在目录或人工指定目录抽取；`研究方法/`、`tmp/`、`评估备份/`、各类 `备份/` 子目录、根目录对比评估文件和 `AGENTS.md` 不计入公司数量。",
+     "",
+@@ -124,9 +124,9 @@
+     "",
+     "## 索引表",
+     "",
+-    "| 股票代号 | 公司名称 | 目录 |",
+-    "|---:|---|---|",
+-    ...orderedEntries.map((entry) => `| ${tableCell(entry.subject)} | ${tableCell(entry.displayName)} | \`${tableCell(entry.category)}/\` |`),
++    "| 股票代号 | 公司名称 | 目录 | 业务标签 | 关联行业 | 交易身份与登记备注 |",
++    "|---|---|---|---|---|---|",
++    ...orderedEntries.map((entry) => "| " + [tableCell(entry.subject), tableCell(entry.displayName), "`" + tableCell(entry.category) + "/`", tableCell(entry.businessTags), tableCell(entry.industrySubjects), tableCell(entry.listingNote)].join(" | ") + " |"),
+     "",
+   ];
+ 
+@@ -139,11 +139,11 @@
+   const today = formatLocalDate(new Date());
+ 
+   const lines = [
+-    `# ${orderedEntries.length}个行业名称和分类目录`,
++    "# " + orderedEntries.length + "个行业与横向专题名称和分类目录",
+     "",
+     `生成日期：${today}`,
+     "",
+-    `来源：\`${FUNDAMENTAL_ROOT}\\行业调研\` 下 4 个正式分类目录内的行业调研 Markdown 文件，以及新增待调研行业。`,
++    `来源：\`${FUNDAMENTAL_ROOT}\\行业调研\` 下 ${INDUSTRY_CATEGORIES.length} 个正式分类目录内的行业调研 Markdown 文件，以及新增待调研行业。`,
+     "",
+     "生成口径：每个正式分类目录直属 `.md` 行业调研文件或索引中新增待调研项算一个行业；行业名称和所属分类目录从当前文件名、所在目录或人工指定目录抽取；`研究方法/`、`产业背景/`、`顶级conference纪要/`、各类 `备份/` 子目录、根目录专题文件、`AGENTS.md` 和 `desktop.ini` 不计入行业数量。",
+     "",
+@@ -153,9 +153,9 @@
+     "",
+     "## 索引表",
+     "",
+-    "| 行业名称 | 目录 |",
+-    "|---|---|",
+-    ...orderedEntries.map((entry) => `| ${tableCell(entry.subject)} | \`${tableCell(entry.category)}/\` |`),
++    "| 行业名称 | 目录 | 研究范围提示 | 专题类型 | 分类变更备注 |",
++    "|---|---|---|---|---|",
++    ...orderedEntries.map((entry) => "| " + [tableCell(entry.subject), "`" + tableCell(entry.category) + "/`", tableCell(entry.researchScope), tableCell(entry.topicType || "行业"), tableCell(entry.classificationNote)].join(" | ") + " |"),
+     "",
+   ];
+ 
+--- before/tools\site\etl\build-data.mjs
++++ after/tools\site\etl\build-data.mjs
+@@ -49,16 +49,22 @@
+ const DAILY_NEWS_SITE_DATA_ROOT = path.join(PUBLIC_DATA, "daily-news");
+ 
+ const companyToIndustryCategory = {
++  "AI计算芯片_EDA_IP_custom_ASIC": "AI服务器_存储_芯片",
+   "AI服务器_存储_EMS": "AI服务器_存储_芯片",
+-  "AI计算芯片_EDA_IP_custom_ASIC": "AI服务器_存储_芯片",
+   "AI网络_光互联_连接器": "AI网络_光互联_铜互联",
+-  "半导体材料_化学品_基板": "晶圆制造_设备_材料_测试",
++  "电子材料_化学品_基板_PCB": "半导体与电子制造_设备_材料_测试",
++  "晶圆制造_前道设备": "半导体与电子制造_设备_材料_测试",
++  "封测_检测_计量_光罩": "半导体与电子制造_设备_材料_测试",
++  "功率半导体_电源管理_传感器": "AI园区电力_机电_冷却",
++  "配电_电源系统_电气设备": "AI园区电力_机电_冷却",
+   "电力_发电_能源_储能": "AI园区电力_机电_冷却",
+-  "封测_检测_计量_光罩": "晶圆制造_设备_材料_测试",
+-  "机电_冷却_工程_水处理_边缘工业AI": "AI园区电力_机电_冷却",
+-  "晶圆制造_前道设备": "晶圆制造_设备_材料_测试",
+-  "配电_电源_功率器件": "AI园区电力_机电_冷却",
+-  "云算力_IDC_AI软件平台": "AI服务器_存储_芯片",
++  "热管理_流体_水处理": "AI园区电力_机电_冷却",
++  "工程建设_机电安装": "AI园区电力_机电_冷却",
++  "机器人_工业自动化_智能硬件": "工业自动化_机器人_感知",
++  "航空航天_卫星_高可靠系统": "商业航天_火箭_卫星",
++  "云算力_IDC_边缘云": "AI服务器_存储_芯片",
++  "企业软件_数据平台": "AI应用_软件_数据平台",
++  "网络安全_身份权限_治理": "AI应用_软件_数据平台",
+ };
+ 
+ export async function buildData({ moduleBuilds = {} } = {}) {
+@@ -67,7 +73,7 @@
+   const industryIndex = await parseIndustryIndex();
+   const industryReports = await buildIndustryReports(industryIndex);
+   const companyEvaluations = await buildCompanyEvaluations(companyIndex);
+-  const companies = await buildCompanies(companyIndex, industryReports, companyEvaluations);
++  const companies = await buildCompanies(companyIndex, industryReports, companyEvaluations, industryIndex);
+   const companyComparisons = await buildCompanyComparisons(companyIndex);
+   const scenarioDecisions = await buildScenarioDecisions(companyIndex);
+   const technicalResearch = await buildTechnicalResearch();
+@@ -199,6 +205,8 @@
+     ticker: cleanCell(row["股票代号"]).toUpperCase(),
+     name: cleanCell(row["公司名称"]),
+     category: cleanCell(row["目录"]).replace(/[\\/]+$/, ""),
++    businessTags: cleanCell(row["业务标签"]),
++    relatedIndustryNames: cleanCell(row["关联行业"]).split("；").map((name) => name.trim()).filter(Boolean),
+   }));
+ }
+ 
+@@ -211,6 +219,7 @@
+   return rows.map((row) => ({
+     name: cleanCell(row["行业名称"]),
+     category: cleanCell(row["目录"]).replace(/[\\/]+$/, ""),
++    topicType: cleanCell(row["专题类型"]) || "行业",
+     slug: stableSlug(cleanCell(row["行业名称"])),
+   }));
+ }
+@@ -250,7 +259,7 @@
+   return evaluationsByTicker;
+ }
+ 
+-async function buildCompanies(indexRows, industryReports, companyEvaluations) {
++async function buildCompanies(indexRows, industryReports, companyEvaluations, industryIndex = []) {
+   const reportFiles = await directMarkdownFilesByCategory(COMPANY_ROOT, ["研究方法", "tmp", "评估备份"]);
+   const reportsByTicker = new Map();
+   for (const row of indexRows) {
+@@ -262,7 +271,8 @@
+   }
+ 
+   const industryByCategory = new Map();
+-  for (const industry of industryReports.values()) {
++  const indexedIndustries = new Map(industryIndex.map((row) => [canonicalIndustryKey(row.name), row]));
++  for (const industry of industryIndex.length ? industryIndex : industryReports.values()) {
+     if (!industryByCategory.has(industry.category)) industryByCategory.set(industry.category, []);
+     industryByCategory.get(industry.category).push(industry.slug);
+   }
+@@ -272,7 +282,9 @@
+     const reportPath = reportsByTicker.get(row.ticker);
+     const evaluation = companyEvaluations.get(row.ticker) || null;
+     const relatedIndustryCategory = companyToIndustryCategory[row.category];
+-    const relatedIndustrySlugs = relatedIndustryCategory ? industryByCategory.get(relatedIndustryCategory) || [] : [];
++    const relatedIndustrySlugs = row.relatedIndustryNames?.length
++      ? [...new Set(row.relatedIndustryNames.map((name) => indexedIndustries.get(canonicalIndustryKey(name))?.slug || industryReports.get(canonicalIndustryKey(name))?.slug).filter(Boolean))]
++      : relatedIndustryCategory ? industryByCategory.get(relatedIndustryCategory) || [] : [];
+     let report = null;
+     if (reportPath) {
+       const content = redactLocalPaths(await readText(reportPath));
+@@ -296,6 +308,7 @@
+       ticker: row.ticker,
+       name: row.name,
+       category: row.category,
++      businessTags: row.businessTags || "",
+       relatedIndustrySlugs,
+       hasReport: Boolean(report),
+       hasEvaluation: Boolean(evaluation),
+@@ -461,6 +474,7 @@
+ }
+ 
+ async function buildIndustryReports(indexRows) {
++  const indexedByName = new Map(indexRows.map((row) => [canonicalIndustryKey(row.name), row]));
+   const reportFiles = await directMarkdownFilesByCategory(INDUSTRY_ROOT, ["研究方法", "产业背景"]);
+   const byStandardName = new Map();
+   const bySlug = new Map();
+@@ -475,7 +489,8 @@
+       const report = {
+         name: meta.standardName,
+         slug,
+-        category: meta.category || category,
++        category: indexedByName.get(canonical)?.category || category,
++        topicType: indexedByName.get(canonical)?.topicType || "行业",
+         reportDate: meta.reportDate,
+         title: meta.title,
+         sourcePath: relativePath(file),

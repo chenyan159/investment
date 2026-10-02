@@ -1,0 +1,151 @@
+# 公司收入传导与价值传导评估：KLA Corporation（KLAC）
+
+报告日期：2026-06-12  
+研究对象：KLAC / KLA Corporation  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM 经营窗口，即自 2026-06-12 起未来 12 个月，近似 FY2026 Q4 至 FY2027 Q3。  
+单位：除特别说明外，金额为美元；`亿`指 1 亿美元。  
+边界说明：本报告只评估需求到公司可确认收入、利润和经营现金流的传导，不做股票排序，不给投资评级，不判断股价区间，不用估值倍数或金融市场价格作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 收入、毛利率、经营利润率、净利润和自由现金流；FY2026、FY2027、长期 process-control intensity、High-NA、HBM4E、hybrid bonding、glass substrate 和 CPO 只作为补充或远期期权。
+- 当前收入基准、指引和 run-rate：KLA FY2026 Q3（季度截至 2026-03-31，2026-04-29 发布）收入 34.15 亿美元；FY2026 Q4 指引收入 35.75 亿美元 +/-2.00 亿美元，non-GAAP 毛利率 61.75% +/-1pct。Q4 指引中值对应年化收入约 143 亿美元。FY2026 Q1-Q3 已实现收入约 99.22 亿美元，若按 Q4 指引中值，FY2026 全年约 134.97 亿美元。以 FY2025 Q4 至 FY2026 Q3 计算，TTM 收入约 130.97 亿美元。
+- 重要产品/业务线：Wafer Inspection/e-beam review、Patterning/metrology/reticle、Advanced Packaging process control、Services/software/yield analytics、Specialty Semiconductor Process + PCB/Component Inspection。Advanced Packaging 是跨产品组合的嵌入式增量，不能在公司汇总时与 Wafer Inspection、Patterning、PCB/Component 和 Specialty 重复相加。
+- NTM 公司收入四情景：悲观 136-142 亿美元；基准 148-154 亿美元；乐观 158-168 亿美元；极度乐观 172-185 亿美元。
+- 利润或 EBITDA 四情景：公司未披露产品级 EBITDA，本报告不用 EBITDA 作为主口径；以净利润/FCF 判断，悲观净利润约 48-52 亿美元、FCF 39-44 亿美元；基准净利润约 53-58 亿美元、FCF 45-51 亿美元；乐观净利润约 58-65 亿美元、FCF 50-59 亿美元；极度乐观净利润约 66-76 亿美元、FCF 59-69 亿美元。
+- 最大传导瓶颈：AI 数据中心需求不能直接进入 KLAC 收入表，必须经过先进逻辑/HBM/先进封装客户的 WFE、process-control 预算、工具交付、客户验收和收入确认。KLA 不披露 bookings/backlog，收入可见度主要来自产品收入、指引、递延收入、客户资本开支和行业订单信号。
+- 最大利润率变量：高端 Wafer Inspection、reticle/mask、e-beam、advanced packaging inspection/metrology 与 service mix 能否继续提升；若成长来自低毛利 specialty/PCB 或中国成熟节点价格竞争，收入上修不一定转成利润上修。
+- 最大现金流变量：系统收入验收节奏、递延系统收入、库存、客户预付款/尾款、服务合同续约和备件支持。KLA 设备通常要求发货后 30-60 天收取 70%-90% 合同对价，其余与验收相关，因此安装/验收延迟会影响营运资本。
+- 可信度：基准为中高，因 Q3/Q4 财务、产品收入、segment 收入、毛利率和服务收入均有 A 级证据；乐观为中，因 advanced packaging、HBM4/N2/Rubin pull-in 需要客户节奏验证；极度乐观为低到中，必须同时满足需求、公司捕获、利润率和交付验收突破。
+
+## 2. 重要产品清单
+
+本节口径：产品清单按 KLA 已披露产品收入、报表 segment、管理层明确业务方向和本地行业资料中的需求传导路径确定。Advanced Packaging process control 是跨产品组合子业务，收入已嵌在 Wafer Inspection、Patterning、PCB/Component、Specialty 与 Services 中，公司汇总时不另行相加。
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Wafer Inspection / e-beam review 与高端缺陷检测 | FY2026 Q3 收入 17.40 亿美元，年化约 69.6 亿美元；FY2026 Q1-Q3 收入 48.50 亿美元 | Q3 51% | 最大收入池，高毛利，高 AI/HBM/N3/N2/GAA 传导强度 | A | 进入基准，是 NTM 收入和利润核心 | Multi-beam e-beam、更多 AI defect classification 可放入乐观/极度乐观 |
+| Patterning / metrology / reticle / mask inspection | FY2026 Q3 收入 6.15 亿美元，年化约 24.6 亿美元；FY2026 Q1-Q3 收入 19.79 亿美元 | Q3 18% | N2、High-NA、EUV mask、overlay/CD/OCD 的中期弹性高，季度波动大 | A | 进入基准，但按当前出货节奏保守处理 | High-NA actinic mask、BSPDN buried metrology、3D metrology 为 2027+ 弹性 |
+| Advanced Packaging process control（嵌入式子组合） | FY2025 advanced packaging 应用收入超过约 9.25 亿美元；2026 管理层/本地资料指向接近 10 亿美元以上路径 | 约 7%-9%，但嵌在多产品线中 | HBM/CoWoS/2.5D/3D/hybrid bonding 把 KLA 从前道延伸到封装良率 | B/C | 保守进入基准，但公司汇总不重复相加；超出当前路径部分进乐观 | HBM4E/16Hi、D2W hybrid bonding、glass/TGV、CPO packaging metrology |
+| Services / software / yield analytics | FY2026 Q3 收入 7.75 亿美元，年化约 31.0 亿美元；FY2026 Q1-Q3 收入 23.06 亿美元 | Q3 23% | 现金流稳定器，installed base、recipe、备件和服务合同支撑韧性 | A | 进入基准，利润质量高 | AI-native yield digital twin、autonomous process control 单独商业化 |
+| Specialty Semiconductor Process + PCB/Component Inspection | FY2026 Q3 product revenue 合计约 2.39 亿美元；segment revenue 合计约 3.32 亿美元 | Q3 7%-10%，取决于产品/服务口径 | 抵消项和选择性增量；普通 PCB/Display 低权重，advanced package component inspection 有价值 | A/C | 报表基数进入基准；AI 相关增量需逐项折扣 | 低证据 CPO/photonic package、glass panel inspection、普通 specialty 题材不进基准 |
+
+## 3. 产品需求四情景
+
+本步口径：只评估外部需求池，不评估 KLA 份额、收入确认或利润率。需求单位以客户 WFE/process-control 预算、先进逻辑/HBM/先进封装产能、sampling intensity、服务合同和工具安装节奏表达。相对预期的锚点为 SEMI 2026/2027 设备支出预期、KLA FY2026 Q4 指引隐含 run-rate、FY2026 Q3 产品收入和本地行业资料中的 2026-2027 需求路径。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Wafer Inspection / e-beam review | 300mm/WFE 支出上行、先进逻辑 N3/N2、DRAM/HBM、EUV/GAA 大 die 良率；KLA Q3 Wafer Inspection +16% YoY | NTM 需求低于当前高位，客户降低 sampling 或先进节点设备验收延后 | NTM 需求随 WFE、HBM/DRAM、foundry/logic 正常兑现，inspection intensity 小幅上升 | N2/Rubin/HBM4/AI ASIC pull-in，客户提高高端 optical/e-beam 采购 | N3/N2/GAA/HBM4/中国成熟节点和美国/韩国/台湾扩产同时上修，工具交期拉长 | 相对当前需求锚约 -5%至0% / +5%至+12% / +15%至+25% / +30%+ | 基准符合当前预期；乐观要求订单和客户 CapEx 更强 | 正向：SEMI 300mm 2026/2027 高增长、KLA 10-Q 指出 DRAM/HBM 和 foundry/logic 拉动；反证：客户推迟验收、良率改善导致 sampling 降低、出口管制 |
+| Patterning / metrology / reticle | Q3 Patterning 收入 6.15 亿美元、YoY -3%、QoQ 下滑；但 N2/High-NA/EUV mask/overlay 长期需求强 | 单季波动延续，N2/High-NA/reticle 项目在 NTM 仅小量，客户用既有工具吸收 | 需求按 N2/GAA、EUV/overlay、reticle inspection 正常推进，低于 wafer inspection 的线性度 | N2/Rubin/MI400/ASIC 设计和 mask set 增加，High-NA 资格验证提前拉动 | High-NA ecosystem、BSPDN、multi-patterning、EUV mask requalification 同时提前 | 约 -10%至0% / +3%至+10% / +12%至+25% / +30%+ | 基准略高于当前 run-rate，但不把 2027+ 全部提前 | 正向：KLA 10-K 指出 EUV HVM for logic/DRAM 带来 process-control 新需求；反证：High-NA 仍非 2026 大规模收入主线 |
+| Advanced Packaging process control | HBM/CoWoS/2.5D/3D、Kronos/CIRCL/CIRCL-AP/eDR/ICOS/DefectWise；本地行业资料显示 2026 封装检测量测订单强 | CoWoS/HBM 扩产按计划但 KLA 捕获弱于 Onto/Camtek/Nova，AP 收入低于约 10 亿美元路径 | HBM3E/HBM4、CoWoS-like、KGD/overlay/warpage 需求正常兑现，约 10 亿美元以上年化路径 | HBM4E、OSAT 二供、D2W/HB 资格验证提前，inspection/metrology 高覆盖率上升 | HBM4E/16Hi、D2W HB、SoIC/Foveros/CoPoS pilot 同时进入 NTM 采购 | 约 -10%至0% / +10%至+25% / +35%至+60% / +80%+ | 基准符合当前上修路径；乐观需公司特定订单/客户证据 | 正向：本地先进封装行业报告显示 Onto/Camtek 订单和 CoWoS/HBM 设备需求增强；反证：AP 是嵌入式业务，不能把封装服务收入当 KLA 收入 |
+| Services / software / yield analytics | FY2026 Q3 Services 7.75 亿美元、YoY +16%；installed base 扩大、工具寿命延长、recipe support | 新系统安装放慢或客户削减非关键服务，服务增速降至低个位数 | Installed base 与高利用率支撑双位数附近增长 | 高端工具装机、recipe 调优、field upgrade、software attach 提高 | AI defect classification/yield analytics 作为生产刚需明显货币化 | 约 +3%至+6% / +8%至+14% / +15%至+25% / +30%+ | 基准符合当前服务 run-rate | 正向：10-Q 指出 service revenue +16% 来自 installed base 增长；反证：客户延迟工具安装会推迟服务 attach |
+| Specialty + PCB/Component | Q3 product revenue specialty 1.44 亿美元、PCB/Component 0.95 亿美元；Display 已退出，普通 PCB 弱 | 普通 PCB、specialty China/工业/汽车需求走弱，AI 相关 AP 不足以抵消 | 报表基数稳定，advanced packaging 和 component inspection 小幅抵消传统弱项 | CoWoS-like、CPO/photonic package、component inspection 和 specialty AP tools 有增量 | CPO/photonic interposer、glass/TGV/panel-level 检测在 NTM 提前进入大规模采购 | 约 -10%至0% / 0%至+8% / +10%至+25% / +35%+ | 基准不强行上调 | 正向：PCB/Component nine-month 增长来自 advanced packaging 和 component inspection；反证：Display 退出、China specialty volume、普通 PCB/消费电子弱 |
+
+## 4. 可收入化暴露与收入基数
+
+本步口径：只判断哪些需求能进入 KLAC NTM 收入表，以及当前可收入化基数。不预测增长，不判断利润率。证据等级按收入表可确认性定义；A 为已披露收入/分部收入/正式指引，B 为订单/RPO/backlog/正式合同/明确时间表，C 为客户认证、产能规划或管理层可验证披露，D/E 不进入基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Wafer Inspection / e-beam review | FY2026 Q3 17.40 亿美元；FY2026 Q1-Q3 48.50 亿美元；FY2025 全年 61.99 亿美元 | 直接收入，进入产品收入表 | 高毛利、高定价权、高服务 attach | 64-69 亿美元 | 72-77 亿美元 | 78-86 亿美元 | 88-96 亿美元 | 基准略高于 Q3 年化，符合 Q4 指引和 AI/HBM 正常兑现 | A | 是 | 已披露产品收入；10-Q 指出 DRAM/HBM、foundry/logic 和 installed base 拉动 | 基准主口径核心；乐观以上需订单/客户 pull-in 验证 |
+| Patterning / metrology / reticle | FY2026 Q3 6.15 亿美元；FY2026 Q1-Q3 19.79 亿美元；FY2025 全年 21.96 亿美元 | 直接收入，进入产品收入表 | 高技术壁垒，但季度波动更大 | 21-24 亿美元 | 25-28 亿美元 | 29-34 亿美元 | 35-41 亿美元 | 基准接近当前年化与 YTD 节奏；不把 High-NA 全部提前 | A | 是 | 已披露产品收入；EUV/N2/GAA/reticle 是已确认业务范围 | 进入基准，但比 wafer inspection 更保守 |
+| Advanced Packaging process control | FY2025 advanced packaging 应用收入超过约 9.25 亿美元；2026 接近/超过 10 亿美元路径；部分嵌入 Wafer/Patterning/PCB/Specialty | 直接收入但跨产品线嵌入；公司汇总不单独加总 | 高增长、高毛利 mix，但竞争比前道核心更强 | 8.0-9.5 亿美元 | 10-12.5 亿美元 | 13-16 亿美元 | 17-22 亿美元 | 基准符合当前上修路径；乐观为超出当前路径 | B/C | 是，但只作为 mix/子组合 | 10-Q 明确 advanced packaging portfolio adoption；本地公司/行业资料给出量化路径 | 进入基准但标注嵌入式；不得与产品类别重复计算 |
+| Services / software / yield analytics | FY2026 Q3 7.75 亿美元；FY2026 Q1-Q3 23.06 亿美元；FY2025 全年 26.83 亿美元 | 直接收入，服务和软件/备件 | 高现金流、订阅式/服务式、客户粘性强 | 30-32 亿美元 | 32.5-35.5 亿美元 | 36.5-40 亿美元 | 41-46 亿美元 | 基准略高于 Q3 年化，符合 installed base 增长 | A | 是 | 已披露服务收入；10-K 指出服务 FY2025 约 22% 收入并具有 subscription-like 特征 | 基准主口径，现金流质量最高 |
+| Specialty Semiconductor Process + PCB/Component | FY2026 Q3 product revenue 合计 2.39 亿美元；segment revenue 合计 3.32 亿美元；FY2026 Q1-Q3 product revenue 合计 6.59 亿美元 | 直接收入，但 AI 暴露需拆分 | 混合利润属性，低于核心 process control；AP/Component 子项更好 | 8.5-10 亿美元 | 10.5-12 亿美元 | 12.5-14.5 亿美元 | 15-18 亿美元 | 基准接近报表年化，不因题材自动上调 | A/C | 是，低权重 | 已披露产品/segment 收入；Display 退出和 China volume 是抵消项 | 报表基数进入基准，AI 相关只作小幅加分 |
+| 远期期权：High-NA actinic mask、D2W HB、glass/TGV、CPO in-package metrology | 产品页和行业资料有路线，但 NTM 收入表不可可靠量化 | 间接/早期 | 潜在高毛利，当前不确定 | 0 | 0 | 无法可靠量化 | 无法可靠量化 | 当前只代表上限，不代表预期 | C/D | 否 | 缺少 KLAC 可确认客户、时间表和收入规模 | 移入附录或后续跟踪，不进入 NTM 基准 |
+
+## 5. 产品级收入和利润贡献
+
+本步口径：从需求和收入基数出发，评估每个重要产品在 NTM 内给 KLAC 贡献的收入和利润。利润贡献为基于公司/segment 毛利率和产品属性的经营估算，非公司披露的产品级利润。Advanced Packaging 为嵌入式子组合，用于判断 mix 和增量，不在公司汇总中重复相加。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Wafer Inspection / e-beam review | 悲观 | 64-69 亿美元 | 毛利约 39-43 亿美元；经营贡献低于当前 run-rate | 毛利率略下行 | 低于当前预期 | Q3 年化约 69.6 亿美元，A 级收入锚 | 保留为下行情景 | 客户验收延迟、sampling intensity 下修、export control |
+| Wafer Inspection / e-beam review | 基准 | 72-77 亿美元 | 毛利约 45-48 亿美元 | 稳定到小幅上行 | 当前预期正常兑现 | Q3 +16% YoY；DRAM/HBM 与 foundry/logic 拉动 | 保留 | 订单不可见，KLA 不披露 bookings |
+| Wafer Inspection / e-beam review | 乐观 | 78-86 亿美元 | 毛利约 50-56 亿美元 | 上行 | 高于当前预期 | N2/Rubin/HBM4/AI ASIC pull-in，process-control intensity 上升 | 保留但需客户/订单验证 | e-beam throughput、field install 和验收 |
+| Wafer Inspection / e-beam review | 极度乐观 | 88-96 亿美元 | 毛利约 58-65 亿美元 | 显著上行 | 显著高于当前预期 | 先进逻辑、DRAM/HBM、先进封装和区域扩产同步突破 | 下移为乐观上限，除非新增订单证据 | 多环节同时成立难度高 |
+| Patterning / metrology / reticle | 悲观 | 21-24 亿美元 | 毛利约 12-14 亿美元 | 下行 | 低于当前预期 | Q3 Patterning YoY -3%、QoQ 下滑 | 保留 | N2/High-NA/reticle 项目推迟 |
+| Patterning / metrology / reticle | 基准 | 25-28 亿美元 | 毛利约 15-17 亿美元 | 稳定 | 接近当前预期 | FY2026 Q1-Q3 19.79 亿美元，N2/EUV/GAA 长期需求 | 保留 | 季度出货节奏波动 |
+| Patterning / metrology / reticle | 乐观 | 29-34 亿美元 | 毛利约 18-22 亿美元 | 上行 | 高于当前预期 | N2/GAA/reticle/mask/overlay/CD/OCD 采购增强 | 保留 | High-NA 仍主要是资格验证，不是全部 HVM |
+| Patterning / metrology / reticle | 极度乐观 | 35-41 亿美元 | 毛利约 23-27 亿美元 | 显著上行 | 显著高于当前预期 | High-NA、BSPDN、EUV mask 和 N2/N3 同步提前 | 下移为乐观上限 | 缺少 NTM 大规模收入确认证据 |
+| Advanced Packaging process control（嵌入式） | 悲观 | 嵌入式 8.0-9.5 亿美元 | 毛利约 4.5-5.5 亿美元 | 稳定或略下 | 低于当前约 10 亿美元路径 | FY2025 AP 超 9.25 亿美元，本地资料显示 2026 上修 | 保留 | KLA 捕获弱于 Onto/Camtek/Nova，或 OSAT 延迟 |
+| Advanced Packaging process control（嵌入式） | 基准 | 嵌入式 10-12.5 亿美元 | 毛利约 6.0-7.8 亿美元 | 上行 | 符合当前上修路径 | 10-Q 指 advanced packaging portfolio adoption；CoWoS/HBM 需求强 | 保留 | 不可与产品类别重复计算 |
+| Advanced Packaging process control（嵌入式） | 乐观 | 嵌入式 13-16 亿美元 | 毛利约 8.2-10.5 亿美元 | 上行 | 高于当前预期 | HBM4、CoWoS-like、D2W/HB 量测和 KGD 覆盖率提高 | 保留为乐观 | 客户认证、竞争份额、封装设备交期 |
+| Advanced Packaging process control（嵌入式） | 极度乐观 | 嵌入式 17-22 亿美元 | 毛利约 11-15 亿美元 | 显著上行 | 显著高于当前预期 | HBM4E/16Hi、CoPoS/SoIC/D2W HB 在 NTM 提前 | 下移为乐观上限或附录 | 多数机会更像 2027+，NTM 证据不足 |
+| Services / software / yield analytics | 悲观 | 30-32 亿美元 | 高现金流贡献约 19-21 亿美元毛利/服务贡献 | 稳定 | 略低于当前预期 | Q3 年化约 31.0 亿美元 | 保留 | 系统安装放慢会延迟服务 attach |
+| Services / software / yield analytics | 基准 | 32.5-35.5 亿美元 | 约 21-24 亿美元贡献 | 稳定到上行 | 当前预期正常兑现 | Q3 Services +16% YoY；installed base 扩大 | 保留 | 服务工程师和备件能力 |
+| Services / software / yield analytics | 乐观 | 36.5-40 亿美元 | 约 25-28 亿美元贡献 | 上行 | 高于当前预期 | 高利用率、升级、recipe support、software attach | 保留 | 客户预算和合同续约节奏 |
+| Services / software / yield analytics | 极度乐观 | 41-46 亿美元 | 约 29-34 亿美元贡献 | 显著上行 | 显著高于当前预期 | AI defect classification/yield analytics 生产化 | 下移为乐观上限 | 软件收入独立披露不足 |
+| Specialty + PCB/Component | 悲观 | 8.5-10 亿美元 | 毛利/经营贡献约 3.5-4.5 亿美元 | 下行 | 低于当前预期 | Specialty YTD -7%，PCB product Q3 -9% | 保留 | 普通 PCB、China specialty、Display 退出影响 |
+| Specialty + PCB/Component | 基准 | 10.5-12 亿美元 | 约 4.8-6.0 亿美元贡献 | 稳定 | 符合当前预期 | Segment Q3 合计 3.32 亿美元，AP/component offset | 保留 | 高毛利 AP 子项占比不可量化 |
+| Specialty + PCB/Component | 乐观 | 12.5-14.5 亿美元 | 约 6.2-7.8 亿美元贡献 | 小幅上行 | 高于当前预期 | CoWoS-like component inspection、SPTS advanced packaging adjacent | 保留但低权重 | 低毛利/竞争性收入不能自动转利润 |
+| Specialty + PCB/Component | 极度乐观 | 15-18 亿美元 | 约 8-10 亿美元贡献 | 上行 | 高于当前预期较多 | CPO/photonic/玻璃/panel AP 检测提前 | 移入附录或乐观上限 | 多数缺乏 NTM 客户/收入确认路径 |
+
+## 6. 公司收入和利润四情景
+
+本步口径：公司汇总以已披露产品类别和服务收入为主；Advanced Packaging 作为嵌入式 mix 变量，不另行相加。汇总前已排除金融市场价格和估值倍数；已检查 Advanced Packaging 与 Wafer/Patterning/PCB/Specialty 的重复计算风险；未把 AI 数据中心 CapEx、GPU/HBM 销售额、CoWoS 总产值或客户总预算直接当作 KLAC 收入。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 136-142 亿美元 | 较 TTM 130.97 亿美元约 +4%至+8% | 低于 Q4 指引年化和基准 NTM 约 6%-10%；收入仍可增长但低于当前预期 | 59.5%-60.5% | 39%-40.5% | EBITDA 无法可靠量化；净利润约 48-52 亿美元 | FCF 约 39-44 亿美元，营运资本占用上升 | 中 | Wafer inspection 订单/验收延迟、Patterning 波动、China/export controls、AP 捕获不足 |
+| 基准公司 | 148-154 亿美元 | 较 TTM 约 +13%至+18% | 接近当前指引、run-rate 和行业正常兑现路径 | 61.0%-62.5% | 41%-43% | EBITDA 无法可靠量化；净利润约 53-58 亿美元 | FCF 约 45-51 亿美元，维持高转化 | 中高 | 系统交付与验收、先进节点客户排产、服务 attach 正常兑现 |
+| 乐观公司 | 158-168 亿美元 | 较 TTM 约 +21%至+28% | 高于当前基准约 4%-10%；不是单一小业务造成 | 62.5%-64.0% | 43%-45% | EBITDA 无法可靠量化；净利润约 58-65 亿美元 | FCF 约 50-59 亿美元，服务和预付款改善 | 中 | N2/Rubin/HBM4/CoWoS pull-in、Wafer/AP 高毛利 mix 提升、服务 attach 加速 |
+| 极度乐观公司 | 172-185 亿美元 | 较 TTM 约 +31%至+41% | 显著高于当前预期约 12%-22%；需多个核心环节同时突破 | 64.0%-66.0% | 45%-47% | EBITDA 无法可靠量化；净利润约 66-76 亿美元 | FCF 约 59-69 亿美元，但交付/库存前置风险也上升 | 低到中 | AI CapEx、N3/N2、HBM4、AP、KLA 份额、供应链和验收必须同步超预期 |
+
+说明：净利润为经营模型估算，不是公司指引。经营利润率以 KLA 当前 non-GAAP 毛利率、Q3 segment profit、R&D/SG&A run-rate 和高毛利 mix 推算；产品级 EBITDA 和公司 NTM EBITDA 缺少披露口径，填“无法可靠量化”。
+
+## 7. 证据校准、反证和可信度
+
+本步口径：不重新预测经营结果，只校准前四步情景。校准动作仅使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q3 已披露收入 34.15 亿美元、Q4 指引中值 35.75 亿美元 | 公司收入基数 | 支撑 NTM 基准从 TTM 约 131 亿美元上移到 148-154 亿美元 | 支撑 61%-62.5% 毛利率 | 指引说明短期交付可见度较好 | 基准保留 |
+| Wafer Inspection Q3 17.40 亿美元、占 51%、YoY +16% | 产品贡献 | 是公司最大可确认收入池，支撑基准和乐观 | 高毛利 mix 支撑公司利润率 | 高端工具验收是关键执行项 | 基准保留，乐观保留 |
+| Patterning Q3 YoY -3%、QoQ 下滑 | 产品贡献 | 限制 Patterning 不可直接按 N2/High-NA 叙事大幅上修 | 单季 mix 若弱会拖累毛利 | 客户项目节奏影响收入确认 | 极度乐观下移 |
+| 10-Q 指 DRAM/HBM、advanced packaging、foundry/logic 和 services 是增长驱动 | 需求/收入基数/产品贡献 | 支撑 AI 制造需求能进入 KLA 收入表 | 高价值 process control 和服务有利于毛利 | 但需通过客户 WFE/安装/验收实现 | 基准保留，乐观保留 |
+| Services Q3 7.75 亿美元、YoY +16%，FY2025 服务约 22% 收入 | 利润和现金流 | 提高收入韧性，不完全依赖新系统订单 | 服务/软件提高利润质量 | 合同与备件支撑 FCF | 基准保留 |
+| Advanced Packaging 为嵌入式子组合 | 收入基数/汇总 | 不允许与产品类别重复加总 | mix 改善可提升利润率，但不等于新增独立 segment | 需客户订单和验收 | 基准保留，极度乐观下移 |
+| SEMI 300mm/WFE 2026-2027 上修和 AI/HBM/advanced node 需求 | 产品需求 | 支撑需求池扩张 | 稀缺设备可维持价格 | 但行业需求不是 KLAC 已确认收入 | 只上移需求层，不直接上移收入基数 |
+| 出口管制、中国成熟节点、客户集中 | 收入确认/公司组合 | 影响 China/legacy/specific customer 收入节奏 | 价格竞争或低端 mix 会压毛利 | 客户 delay/cancel 会造成库存和验收波动 | 风险只在收入确认和组合层处理，不重复惩罚需求 |
+| 金融市场价格、估值倍数、股价波动 | 排除项 | 不作为经营收入证据 | 不作为利润率证据 | 不作为现金流证据 | 排除 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 136-142 亿美元，低于当前基准但仍可能高于 TTM | China/export controls、Patterning 波动、客户验收延迟、低毛利 mix 均有影响路径 | Q3/Q4 指引和 Wafer/Services 数据较强，不能把一般风险直接打到深度悲观 | 保留 | 下行情景 | 中 | 出口管制只在收入确认/区域 mix 处理，不再重复压低需求和利润 |
+| 基准 | NTM 收入 148-154 亿美元，Q4 指引年化后正常上行 | A 级收入、Q4 指引、Wafer Inspection、Services、Semi Process Control 90% 收入均支持 | Advanced Packaging 子组合部分为 B/C，且 bookings/backlog 未披露 | 保留 | 最可能情景 | 中高 | Advanced Packaging 重复计算风险已在汇总层剔除 |
+| 乐观 | NTM 收入 158-168 亿美元，需求、KLA 捕获和 mix 有超预期 | SEMI 上修、HBM/DRAM、N2/Rubin、advanced packaging 和服务 attach 提供正向证据 | 需要公司特定订单/交付/验收；不能只用 WFE 或 AI CapEx beta 替代 KLAC alpha | 保留 | 上行情景 | 中 | AI CapEx 不直接转 KLA 收入，只通过客户 WFE/process-control 预算处理 |
+| 极度乐观 | NTM 收入 172-185 亿美元，多环节同时突破 | 若 HBM4/N2/AP/HB/服务均加速，KLA 具备技术和客户位置 | 任一核心环节缺证据都会降级；High-NA、D2W HB、glass/TGV、CPO 多数仍偏远期 | 下移 | 乐观上限；部分远期期权移入附录 | 低到中 | 远期期权只在附录跟踪，不重复计入基准或乐观收入 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入约 148-154 亿美元，较 TTM 约 +13%至+18%；毛利率约 61%-62.5%，经营利润率约 41%-43%，净利润约 53-58 亿美元，FCF 约 45-51 亿美元。这个情景的核心不是“AI 数据中心直接买 KLA”，而是 AI GPU/ASIC/HBM/先进封装把 foundry、memory、OSAT 的 process-control 预算推高，并通过 KLA 已披露产品收入和服务收入确认。
+- 乐观情景成立条件：Wafer Inspection 继续跑赢 WFE；N2/Rubin/HBM4/AI ASIC 相关客户拉动 Q4 后仍延续；Advanced Packaging process control 从约 10 亿美元路径继续上修；Services 增速维持双位数；毛利率不因低端 specialty/PCB 或价格竞争被稀释。
+- 极度乐观情景成立条件：AI CapEx、HBM4/HBM4E、CoWoS/2.5D、N3/N2/GAA、KLA 高端 inspection/metrology 份额、供应链交付和客户验收同时突破；同时高毛利产品和服务占比提升，不能只是低毛利收入放量。
+- 悲观情景触发条件：KLA Q4/FY2027 初期指引低于 Q4 FY2026 run-rate；Wafer Inspection 或 Services 增速明显掉到低个位数；Patterning 和 AP 订单延后；China/export controls 或客户集中导致系统出货/验收推迟；库存上升而递延系统收入/服务收入不能同步支撑。
+- 后续跟踪数据：KLA FY2026 Q4 实际收入与毛利率、FY2027 Q1 指引、Wafer Inspection 与 Services YoY、Patterning 是否恢复、advanced packaging process-control 管理层口径、递延系统/服务收入、现金流和库存、Taiwan/Korea/North America 收入、SEMI billings、TSMC/Samsung/Intel/Micron/SK hynix CapEx、HBM4/Rubin/MI400/ASIC 客户爬坡、Onto/Camtek/Nova/KLA 封装检测量测订单信号。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务最新为 FY2026 Q3，季度截至 2026-03-31，发布于 2026-04-29；FY2026 Q4 指引覆盖截至 2026-06-30 的季度。本报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：KLA FY2026 Q3 earnings release、KLA FY2026 Q3 10-Q、KLA FY2025 10-K、KLA Investor Day 2026 页面、本地 KLAC 公司调研和本地半导体检测量测/AI 芯片前道/先进逻辑/存储前道/先进封装/HBM 测试行业调研。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 约 135 亿美元收入是 Q1-Q3 实际加 Q4 指引中值的补充口径；FY2027/长期 High-NA、HBM4E、D2W hybrid bonding、glass/TGV、CPO 等只作为远期期权或乐观上限，未替代 NTM 主表。
+- 主要本地来源：
+  - `公司调研/晶圆制造_前道设备/KLAC_KLA_Corporation_公司调研_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_存储前道制造设备_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-06-11.md`
+- 主要外部来源：
+  - KLA FY2026 Q3 results: https://ir.kla.com/news-events/press-releases/detail/514/kla-corporation-reports-fiscal-2026-third-quarter-results
+  - KLA FY2026 Q3 10-Q: https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-26-000016/0000319201-26-000016.pdf
+  - KLA FY2025 10-K: https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-25-000024/klac-20250630.htm
+  - KLA Investor Day 2026: https://ir.kla.com/news-events/investor-day-2026
+  - KLA Investor Day press release: https://ir.kla.com/news-events/press-releases/detail/512/kla-hosts-investor-day-announces-7-billion-share
+  - SEMI 300mm fab equipment spending forecast, 2026-04-01: https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027
+  - SEMI semiconductor equipment sales forecast, 2025-12-16: https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-projected-to-reach-a-record-of-156-billion-dollars-in-2027-semi-reports
+

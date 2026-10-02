@@ -1,0 +1,412 @@
+# CLS Celestica Inc 公司调研：AI数据中心网络交换、HPS平台与EMS/ODM再定价
+
+报告日期：2026-06-11  
+股票代码：CLS（NYSE / TSX）  
+公司名称：Celestica Inc  
+正式分类目录：AI服务器_存储_EMS  
+研究边界：本报告只使用 `行业调研/` 下相关 AI 服务器、AI 网络、AI 数据中心产业资料，并结合联网搜索的一手公司披露、产品页、财报、投资者材料和少量明确标注的二级渠道信息；未读取、引用或继承 `特征量化/`、`日度资料/` 或其他公司调研正文。  
+口径说明：除公司披露外，AI 数据中心收入占比、产品拆分、订单覆盖、BOM、每 MW / 每 rack / 每 GPU / 每 optical port 内容量和情景预测均为本文基于公开数据和产业链口径的估算，不是公司指引。
+
+## 0. 核心结论
+
+Celestica 已经从传统低估值 EMS/合同制造商，被市场重新定价为 AI 数据中心基础设施供应商，核心暴露不是 GPU 芯片本身，而是 **hyperscaler 数据中心的高性能网络交换机、平台硬件、AI/ML compute program、存储平台、整柜/机架集成和供应链交付能力**。最新 Q1 2026 显示，公司收入 `40.47 亿美元`，同比 `+53%`；CCS 收入 `32.4 亿美元`，同比 `+76%`，占总收入约 `80%`；HPS 收入约 `17 亿美元`，同比 `+63%`，占总收入约 `42%`。管理层已把 2026 年收入指引从 2025 年 10 月的 `160 亿美元`、2026 年 1 月的 `170 亿美元`，再上调到 2026 年 4 月的 `190 亿美元`，相对 2025 年 `123.9 亿美元`增长约 `+53%`。
+
+投资主线是 **800G 到 1.6T AI 后端以太网升级 + hyperscaler 多年 capacity roadmap + Celestica HPS 产品和制造/测试能力扩张**。Celestica 的 DS6000 / DS6001 1.6TbE 交换机是 64 端口、102.4Tbps 级平台，面向 AI back-end、scale-up / scale-out 和训练/推理 fabric；DS5000 / DS4100 / DS4101 是 800G 产品族。行业侧本地资料显示，2026 年 800G 是主流，1.6T 进入设计定点和高端项目，AI rack / network / storage 采购周期通常 `3-12` 个月，网络短缺会放大整柜交付价值。
+
+这家公司不是垄断型芯片公司，利润率也不会像 NVIDIA、Broadcom、Marvell 或高端光器件公司。它更像 **被 AI 订单重估的复杂系统制造与平台解决方案商**：收入弹性很大，CCS segment margin 已升到 `8.6%`，但客户集中、白牌/ODM 竞争、switch silicon 和 optics 上游议价、客户 capacity roadmap 变化、库存和 2026 约 `10 亿美元` capex 扩产是主要风险。资产负债表目前健康：截至 2026-03-31，现金 `3.78 亿美元`，总债务约 `7.72 亿美元`，净债务约 `3.94 亿美元`，Q1 自由现金流 `1.38 亿美元`，adjusted ROIC `49.8%`；但营运资本随超高速增长明显拉大，AR `31.67 亿美元`、inventory `26.73 亿美元`，需要继续跟踪客户拉货是否顺畅。
+
+## 1. 公司整体业务、市场定位与估值快照
+
+### 1.1 公司是什么
+
+Celestica 总部位于加拿大多伦多，历史上来自 IBM 制造体系，1998 年上市。公司为大型科技、云、通信、工业、航空航天、医疗和资本设备客户提供设计、工程、制造、供应链、平台硬件和生命周期服务。2025 年 10-K 对公司的定义已经明显从传统 EMS 转向“data center infrastructure and advanced technology solutions”。
+
+公司有两个报告分部：
+
+| 分部 | 业务范围 | 2026Q1 收入 | 2026Q1 占比 | 2026Q1 同比 | 2026Q1 segment margin | 投资含义 |
+|---|---:|---:|---:|---:|---:|---|
+| CCS：Connectivity & Cloud Solutions | Communications；Enterprise，包括 servers、storage；HPS 硬件平台解决方案；hyperscaler / cloud / data center 客户 | `32.4 亿美元` | `80.1%` | `+76%` | `8.6%` | AI 数据中心核心暴露；高性能交换、平台硬件、AI/ML compute、存储和集成 |
+| ATS：Advanced Technology Solutions | Aerospace & Defense、Industrial、HealthTech、Capital Equipment | `8.1 亿美元` | `20.0%` | 约持平 | `6.0%` | 稳定现金流和多元化，但不是本次 AI 主线 |
+| HPS：Hardware Platform Solutions，位于 CCS 内 | Networking、storage、compute、software、rack integration 等平台硬件 | 约 `17 亿美元` | 总收入 `42.0%`；CCS 内约 `52.5%` | `+63%` | 未单独披露 | 最核心产品线；800G/1.6T 交换机和 AI 数据中心平台收入在这里体现 |
+
+### 1.2 投资人眼中的 Celestica
+
+市场对 CLS 的认知经历了三次切换：
+
+1. **传统 EMS / 合同制造商**：收入稳定但毛利低，估值受客户集中和制造属性压制。
+2. **高质量 EMS + ATS 多元化改善**：航空航天、医疗、工业、资本设备和供应链服务提升稳定性。
+3. **AI 数据中心基础设施供应链核心受益者**：2024-2026 年 CCS 和 HPS 增长主导，投资人开始把 CLS 与 AI Ethernet、800G/1.6T、hyperscaler capex、白牌交换机、rack integration 和 AI/ML compute programs 绑定。
+
+当前投资叙事的关键不是“它拥有 AI 芯片”，而是：**AI 集群从单机服务器转向整柜、网络、光/铜互联和工厂预集成后，hyperscaler 需要能按时交付高性能硬件平台和大规模制造/测试的供应商**。Celestica 在 HPS 和 CCS 中正处在这个位置。
+
+### 1.3 最近三年的重大变化
+
+| 时间 | 变化 | 影响 |
+|---:|---|---|
+| 2023 | Onex 完成大额二级出售并不再是控制股东；多重投票股结构结束，普通股治理结构更清晰 | 公司从“控股股东主导 EMS”转为更标准的公开公司治理结构，流动性和机构接受度改善 |
+| 2024 | 2024 年收入 `96.46 亿美元`，adjusted operating margin `6.5%`，adjusted EPS `3.88 美元`；AI/HPS 开始成为核心增长 | 从低个位数经营利润率向高质量 EMS / 平台硬件切换 |
+| 2024 | 收购 NCS Global Services，扩展 IT infrastructure、asset management、reverse logistics / lifecycle 服务能力 | 强化数据中心客户生命周期服务，但规模远小于 CCS / HPS 主线 |
+| 2025 | 收入 `123.9 亿美元`，同比 `+28%`；GAAP EPS `7.16 美元`，adjusted EPS `6.05 美元`；CCS 和 HPS 大幅放量 | AI data center demand 成为第一增长因子；公司披露大型客户多年 capacity roadmap |
+| 2025Q3 | 首次给出 2026 年收入 `160 亿美元`、adjusted EPS `8.20 美元`展望 | 说明 AI 客户 demand visibility 已跨年度 |
+| 2026Q1 | 2026 年收入指引再上调至 `190 亿美元`，adjusted EPS `10.15 美元`，adjusted operating margin `8.1%` | AI 相关数据中心技术需求继续增强，HPS/CCS 从订单阶段进入收入兑现 |
+| 2026 | 计划 capex 约 `10 亿美元`，约为当时预期收入的 `6%`，显著高于历史 `1.5%-2.0%` | 管理层用真实资本开支支持客户路线图，利好产能但增加固定成本和执行风险 |
+
+### 1.4 产业链位置
+
+Celestica 位于 AI 数据中心硬件链条的 **系统制造 / 平台解决方案 / 白牌交换机 / 机架集成** 层：
+
+```text
+AI 应用 / 云厂 capex
+-> GPU / ASIC / HBM / switch ASIC / NIC / DPU / optics / power / cooling
+-> 服务器、交换机、存储、机架平台设计与制造
+-> rack integration、burn-in、测试、供应链、现场交付
+-> hyperscaler / NeoCloud / enterprise AI factory 上线
+```
+
+它的上游包括 Broadcom / Marvell / NVIDIA / AMD / Intel、光模块、AEC/DAC、PCB、连接器、电源和散热供应商；下游主要是 hyperscaler、cloud service provider、数字原生公司、通信设备 OEM、企业服务器/存储客户和 ATS 行业客户。Celestica 对核心芯片没有垄断权，但对 **客户认证、复杂系统导入、平台硬件工程、制造良率、测试能力、交付窗口** 有价值捕获。
+
+### 1.5 股价、估值和财务指标快照
+
+股价和市值为 2026-06-11 盘中快照；财务数据以 Q1 2026 和 2025 年报为基础。
+
+| 指标 | 数值 | 日期 / 口径 | 说明 |
+|---|---:|---|---|
+| 股价 | `368.23 美元` | 2026-06-11 15:03 UTC 盘中 | NYSE: CLS |
+| 市值 | `425.51 亿美元` | 2026-06-11 15:03 UTC | 约等于股价 x 约 1.15 亿股 |
+| TTM PE | `44.58x` | 2026-06-11 市场数据 | 基于追踪 EPS |
+| Forward PE | `36.3x` | 2026-06-11；按管理层 2026 adjusted EPS 指引 `10.15 美元` | 市场可能使用不同共识 EPS，本文采用公司指引 |
+| TTM P/S | `3.09x` | 市值 / TTM revenue `137.89 亿美元` | TTM = 2025Q2-Q4 + 2026Q1 |
+| Forward P/S | `2.24x` | 市值 / 2026 revenue 指引 `190 亿美元` | 用公司 2026 指引 |
+| 最新季度收入增速 | `+53%` | 2026Q1 vs 2025Q1 | 收入 `40.47 亿美元` |
+| 2026 指引收入增速 | `+53.3%` | 2026 指引 `190 亿美元` vs 2025 `123.9 亿美元` | 指引在 2026Q1 后上调 |
+| GAAP gross margin | `10.8%` | 2026Q1 | gross profit `4.372 亿美元` |
+| Adjusted gross margin | `11.3%` | 2026Q1 | 排除公司定义的非核心项目 |
+| GAAP net margin | `5.2%` | 2026Q1 | net earnings `2.123 亿美元` |
+| Adjusted net margin | `6.2%` | 2026Q1 | adjusted net earnings `2.495 亿美元` |
+| Adjusted operating margin | `8.0%` | 2026Q1 | 2026 全年指引 `8.1%` |
+| Cash | `3.78 亿美元` | 2026-03-31 | 较 2025-12-31 的 `5.956 亿美元`下降，主要因工作资本、capex、SBC 结算等 |
+| Total debt / finance lease obligations | 约 `7.72 亿美元` | 2026-03-31 | current `0.259 亿美元` + long-term `7.465 亿美元` |
+| Net debt | 约 `3.94 亿美元` | 2026-03-31 | 债务减现金 |
+| Current ratio | `1.26x` | 2026-03-31 | current assets `63.97 亿美元` / current liabilities `50.81 亿美元` |
+| Q1 free cash flow | `1.379 亿美元` | 2026Q1 | operating cash flow `3.563 亿美元` - net capex `2.184 亿美元` |
+| Adjusted ROIC | `49.8%` | 2026Q1 年化 | AI/HPS 放量带来高资本效率，但 2026 capex 会抬高资本基数 |
+
+### 1.6 资产负债表健康度
+
+结论：**健康，但处于高增长扩产期，核心风险从偿债转向工作资本、客户集中和 capex 执行。**
+
+正面因素：
+
+| 项目 | 判断 |
+|---|---|
+| 净债务低 | 2026Q1 净债务约 `3.94 亿美元`，相对 2026 指引 adjusted operating earnings 约 `15.39 亿美元`很低 |
+| 现金流仍为正 | 2026Q1 在 capex `2.184 亿美元`下仍产生 FCF `1.379 亿美元` |
+| ROIC 很强 | adjusted ROIC `49.8%`说明当前订单 mix 和资产周转非常好 |
+| AP 自然融资能力强 | AP `30.88 亿美元`，随客户订单和供应链周转增长，支持大规模交付 |
+
+风险因素：
+
+| 项目 | 风险 |
+|---|---|
+| 工作资本膨胀 | Q1 AR `31.67 亿美元`、inventory `26.73 亿美元`，分别较 2025 年底增加 `5.29 亿美元`和 `4.85 亿美元`，如果客户拉货延迟会放大现金压力 |
+| Capex 跳升 | 2026 计划约 `10 亿美元`，远高于 2025 年 `2.012 亿美元`，若 AI 客户 roadmap 改变，固定成本和折旧会反噬利润 |
+| 客户集中 | 2025 年前三大客户约占收入 `36% / 15% / 12%`，合计约 `63%`；这既是订单可见度来源，也是最大尾部风险 |
+| 毛利率仍低 | 即使 mix 改善，Q1 GAAP gross margin 仍只有 `10.8%`，客户或上游压价会迅速影响利润 |
+
+## 2. 最近五次财报：收入、利润、订单 proxy 与 AI 暴露
+
+Celestica 不披露标准 backlog、bookings、book-to-bill、取消率或 lead time。本节用 **公司指引上修、剩余年度 implied revenue、HPS 收入、CCS segment margin、capex 扩张和本地行业采购周期** 做订单/交期 proxy。AI 数据中心收入占比也未披露，以下为本文估算，主要以 HPS、CCS 中通信/数据中心网络、AI/ML compute program 和 storage/rack integration 暴露推算。
+
+| 财报季度 | 发布日期 | Revenue / YoY | GAAP gross margin / net margin | Adjusted operating margin / EPS | CCS revenue / growth / margin | ATS revenue / growth / margin | HPS revenue / growth | 订单、交期、取消率 proxy | 本文估算 AI DC 收入占比 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| 2026Q1 | 2026-04-27 | `40.47 亿美元` / `+53%` | `10.8%` / `5.2%` | `8.0%` / `2.16 美元` | `32.4 亿美元` / `+76%` / `8.6%` | `8.1 亿美元` / 约持平 / `6.0%` | 约 `17 亿美元` / `+63%` | backlog 未披露；2026 revenue 指引上调至 `190 亿美元`，扣 Q1 后剩余 `149.5 亿美元`；Q2 midpoint `43 亿美元`，H2 implied run-rate 约 `53.3 亿美元/季`，说明订单/产能排产高度可见；行业 AI rack/network/storage 采购 `3-12` 个月；取消率未披露，主要风险是客户 roadmap 延迟 | `58%-66%` |
+| 2025Q4 | 2026-01-28 | `36.55 亿美元` / `+44%` | `11.8%` / `7.3%` | `7.7%` / `1.89 美元` | 约 `28.6 亿美元` / 高增 / `8.4%` | 约 `8.0 亿美元` / 低增 / `5.3%` | 约 `14 亿美元` | 2026 指引从 `160 亿美元`上修到 `170 亿美元`；管理层称与最大客户 multi-year capacity roadmaps 对齐，并计划 2026 capex `10 亿美元`；这是最强订单可见度信号 | `55%-62%` |
+| 2025Q3 | 2025-10-27 | `31.94 亿美元` / `+28%` | `13.0%` / `8.4%` | `7.6%` / `1.58 美元` | 约 `24.1 亿美元` / 高增 / `8.3%` | 约 `7.8 亿美元` / 中低增 / `5.5%` | 约 `14 亿美元` | 首次发布 2026 outlook：revenue `160 亿美元`、adjusted EPS `8.20 美元`；称最大客户 AI data center infrastructure 投资强劲并延续到 2027；Q4 revenue guide midpoint `34.5 亿美元` | `50%-58%` |
+| 2025Q2 | 2025-07-28 | `28.93 亿美元` / `+21%` | `12.8%` / 约 `7.3%` | `7.4%` / `1.39 美元` | `20.7 亿美元` / `+28%` / `8.3%` | `8.2 亿美元` / `+7%` / `5.3%` | 约 `12 亿美元` / `+82%` | 2025 revenue outlook 从 `108.5 亿美元`上调到 `115.5 亿美元`；Q3 guide `28.75-31.25 亿美元`，范围扩宽以反映业务增长；收入超指引主要因 Communications end market 需求高于预期 | `46%-54%` |
+| 2025Q1 | 2025-04-24 | `26.49 亿美元` / `+20%` | `10.3%` / `3.3%` | `7.1%` / `1.20 美元` | `18.4 亿美元` / `+28%` / `8.0%` | `8.1 亿美元` / `+5%` / `5.0%` | 约 `10 亿美元` / `+99%` | 2025 revenue outlook 从 `107 亿美元`上调到 `108.5 亿美元`；Q2 guide `25.75-27.25 亿美元`；公司明确 CCS 客户需求转强 | `42%-50%` |
+
+财报序列显示三点：
+
+1. **增长从 ATS 切换到 CCS/HPS**：ATS 基本是 `8 亿美元/季`稳定盘，CCS 从 2025Q1 `18.4 亿美元`升到 2026Q1 `32.4 亿美元`。
+2. **HPS 是核心引擎**：HPS 从 2025Q1 约 `10 亿美元`升到 2026Q1 约 `17 亿美元`，五个季度内提升约 `70%`；Q1 2026 HPS 同比 `+63%`。
+3. **订单可见度来自指引连续上修而非披露 backlog**：公司从 2025Q1 到 2026Q1 连续上修全年 revenue / EPS，且 2026 capex 直接跳到 `10 亿美元`级别。对制造型公司而言，若没有客户 roadmap、capacity reservation 或较强 demand visibility，管理层通常不会把 capex 从历史 `1.5%-2.0% revenue`提高到约 `6% revenue`。
+
+## 3. 2026 最新指引、业务占比和产品映射
+
+### 3.1 2026 指引拆解
+
+截至 2026Q1 财报，管理层给出：
+
+| 指标 | 2026 指引 | 对比 2025 | 含义 |
+|---|---:|---:|---|
+| Revenue | `190 亿美元` | 2025 `123.9 亿美元`，同比约 `+53.3%` | 增量约 `66.1 亿美元`，几乎全部来自 CCS / AI 数据中心相关客户 |
+| Adjusted EPS | `10.15 美元` | 2025 `6.05 美元`，同比约 `+67.8%` | 利润增长快于收入，说明 mix 和 operating leverage 仍在改善 |
+| Adjusted operating margin | `8.1%` | 2025 `7.5%`，2026Q1 `8.0%` | CCS scale 和 HPS mix 抬升利润率 |
+| Q2 2026 revenue | `41.5-44.5 亿美元`，midpoint `43 亿美元` | Q1 `40.47 亿美元` | 继续 sequential growth |
+| Q2 2026 adjusted EPS | `2.18-2.38 美元` | Q1 `2.16 美元` | Q2 继续利润扩张 |
+
+### 3.2 2026 收入占比估算
+
+公司未披露 2026 分部指引。按 Q1 实际、全年 `190 亿美元`指引、ATS 稳定性和 HPS/CCS 高增趋势，本文估算：
+
+| 业务 | 2026 收入估算 | 占 2026 收入 | 增速估算 | 依据 | 重要性 |
+|---|---:|---:|---:|---|---|
+| CCS 合计 | `155-160 亿美元` | `82%-84%` | `+65%-75%` | Q1 CCS `32.4 亿美元`且 H2 implied run-rate 大幅高于 Q1；ATS 低增 | 第一主线 |
+| HPS：networking / storage / compute / platform | `75-85 亿美元` | `39%-45%` | `+45%-70%` | Q1 HPS `17 亿美元`，H2 受 800G/1.6T 和 AI/ML compute program 拉动 | 最核心产品线 |
+| CCS 非 HPS：communications / enterprise server & storage manufacturing | `70-82 亿美元` | `37%-43%` | `+70%-90%` | AI 数据中心客户 ramp，通信 end market 强 | 订单和制造放大器 |
+| ATS 合计 | `31-35 亿美元` | `16%-18%` | `0%-8%` | Q1 ATS `8.1 亿美元`基本持平 | 稳定器，不是 AI 主线 |
+| 本文估算 AI 数据中心相关收入 | `115-135 亿美元` | `60%-71%` | `+70%-100%` | HPS + CCS 中高性能网络、AI/ML compute、storage / data center manufacturing | 市场重估来源 |
+
+### 3.3 产品和业务映射
+
+#### 重点产品和业务
+
+| 产品 / 业务 | 公司披露和可观察事实 | 当前收入贡献估算 | 增速估算 | 毛利 / segment margin 估算 | 为什么重要 |
+|---|---|---:|---:|---:|---|
+| DS6000 / DS6001 1.6TbE networking switches | 官方产品页显示 DS6000 为 `64-port 1.6TbE`、`3U`、`102.4Tbps`，面向 AI backend、scale-up / scale-out；DS6001 为 `64-port 1.6TbE`、`2 OU ORv3`、hybrid-cooled，面向同类 AI back-end 网络 | 2026 贡献仍处早期，本文估算 `5-15 亿美元`订单/收入窗口，取决于客户 qual 和 H2 拉货 | 从低基数高速增长，2027 可能成为 HPS 第一增量 | 产品 gross margin 可能 `15%-28%`，segment operating margin 约 `9%-13%`；若客户急单和软件/服务 attach 高可更高 | 1.6T 是 2027 高端 AI fabric 默认候选；抢先 design-in 决定后续数年份额 |
+| DS5000 / DS4100 / DS4101 800G switches | DS5000 为 `64-port 800GbE`、`2U`、`51.2Tbps`；DS4101 为 `32-port 800G`、`25.6Tbps`；DS4100 为 `16-port 800G`、`12.8Tbps` | 2026 HPS networking 核心，本文估算 `35-50 亿美元` | `+40%-70%` | 产品 gross margin `15%-25%`，CCS margin 已到 `8.6%` | 800G 是 2026 AI 后端网络主流，客户从 400G/800G 向 1.6T 平滑迁移 |
+| HPS storage：SC4200 / SC6100 / SC6110 / SD6300 / SD6200 / SE4200 | 官方 storage 页：SC4200 2U NVMe storage controller；SC6100 Gen5 U.2 all-flash；SC6110 支持 32 个 E3.S PCIe Gen5 NVMe SSD，面向 AI/HPC；SD6300 4U 108 x 3.5" SAS，面向 AI data ingest / archive | 2026 估算 `10-16 亿美元` | `+15%-40%` | gross margin `12%-22%`；若软件/服务 attach 高可更好 | AI 推理和训练数据会提高 storage attach，但不是 CLS 最高弹性 |
+| AI/ML compute program / 下一代 computing architecture | 官方 compute 页仅披露“next-generation computing architecture”正在准备；Q1 2026 forward assumptions 提到 800G/1.6T networking 和 AI/ML compute programs | 2026 估算 `20-35 亿美元` | `+80%-150%` | EMS/平台制造 gross margin `8%-16%`；rack/service attach 可提升 | 潜在小业务变大；若进入云厂 ASIC / AI rack program，增速可能超过 networking |
+| Rack integration / lifecycle / testing / supply chain | 官方服务列表含 rack integration、testing and quality、supply chain、after-market；本地行业资料显示整柜 FAT、burn-in、液冷/网络压测是 2026-2027 交付瓶颈 | 2026 估算 `5-12 亿美元`直接服务/集成收入，另间接支持 HPS | `+50%-120%` | 服务毛利可高于普通制造，本文估算 gross margin `15%-30%`，项目差异大 | 客户买的是可运行集群；交付速度、质量责任和现场验收形成黏性 |
+| Cloud networking software / platform software | 官方 HPS 导航含 software；白牌交换机通常需要 SONiC / NOS / telemetry / validation 支持 | 当前收入占比小，估算 `<3 亿美元` | 高双位数到三位数，但基数小 | 软件/支持毛利高，但收入确认规模小 | 容易被忽视的小业务；若与 DS6000/800G 绑定，可提高客户切换成本 |
+
+#### 可以跳过或降权的业务
+
+| 业务 | 为什么本报告降权 |
+|---|---|
+| ATS 中 HealthTech、Industrial、部分 Capital Equipment | 2026Q1 ATS 总收入约 `8.1 亿美元`，同比基本持平，和 AI 数据中心高增链条关联较弱 |
+| 普通企业 access switch：ES1000 / ES1010 / ES1050 / ES1500 等 | 价值低、增速低、不是 AI backend；可作为产品广度但不是估值核心 |
+| 1G / 10G / 25G / 100G legacy networking | 对 AI 集群重要性下降，主要是存量和边缘/管理网络 |
+| 传统 HDD/JBOD 冷存储低端平台 | 有 AI archive 需求，但 ASP、毛利和增长弹性弱于 800G/1.6T 与 AI compute |
+| 纯代工装配无认证项目 | 收入可以增长，但议价能力和毛利低，客户随时压价或转移 |
+
+## 4. 关键产品和业务的当前贡献、AI 重要性、供需和溢价
+
+评分：5 为最高。收入贡献为 2026 年化或 run-rate 估算。
+
+| 关键产品 / 业务 | 当前 CLS 收入贡献估算 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断 / 溢价能力 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 800G AI 后端交换机和 HPS networking | `35-50 亿美元/年` | `+40%-70%` | 5 | 5 | 4 | 3 | 2026 主收入池。不是芯片垄断，但客户认证、交付窗口和系统测试能力带来溢价 |
+| 1.6T DS6000 / DS6001 交换机 | 当前收入小，2026 可能 `5-15 亿美元`，2027 可快速放大 | `>100%` | 5 | 4 | 4-5 | 3-4 | 2027 期权最大。若 initial customers 转量产，HPS 估值逻辑再上修 |
+| AI/ML compute platform / 云厂 ASIC 或专用服务器 program | `20-35 亿美元/年` | `+80%-150%` | 5 | 4 | 4 | 3 | 官方披露少，但在 Q1 2026 assumptions 中被点名。若绑定 TPU / Trainium / Maia / MTIA / Broadcom XPU 供应链，空间大 |
+| Rack integration / burn-in / testing / lifecycle | 直接 `5-12 亿美元/年`，间接决定 HPS/CCS 拉货 | `+50%-120%` | 4 | 5 | 4 | 3-4 | 整柜交付变成瓶颈后，测试产能和现场交付可定价 |
+| AI storage / NVMe / all-flash / dense storage | `10-16 亿美元/年` | `+15%-40%` | 3-4 | 3 | 3 | 2-3 | 受推理 KV cache、AI data ingest 和 archive 拉动，但替代供应更多 |
+| Cloud networking software / validation / support | `<3 亿美元/年` | `+50%-100%` | 3 | 3 | 3 | 3 | 小但可能提高 switch 客户黏性；需要看软件 attach 和支持合同 |
+
+当前最值得盯的不是 ATS，而是 **HPS networking + AI/ML compute programs + rack integration**。其中 800G 是兑现，1.6T 是未来一年最大加速因子，rack integration 是利润率和客户锁定的关键。
+
+## 5. 一年后收入贡献三情景
+
+预测窗口：约 2027 年中；口径为未来 12 个月 run-rate，不等同于公司正式年度指引。
+
+| 产品 / 业务 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| 800G AI 后端交换机 / HPS networking | 收入 `45-60 亿美元`，增速 `+20%-35%`；800G 仍是存量和中高端新增主流；重要性 5，紧急性 4，供需 3-4，溢价 3 | 收入 `60-75 亿美元`，增速 `+40%-60%`；800G 和 1.6T 双线拉动；供需 4，溢价 3-4 | 收入 `75-95 亿美元`，增速 `+70%-100%`；AI Ethernet 大客户急单，Celestica 获得更多白牌份额；供需 5，溢价 4 |
+| 1.6T DS6000 / DS6001 | 收入 `12-25 亿美元`，从设计导入进入早期批量；重要性 5，紧急性 4，供需 4，溢价 3-4 | 收入 `25-45 亿美元`；2027 高端 AI fabric 默认 1.6T；供需 4-5，溢价 4 | 收入 `45-70 亿美元`；1.6T qualification 提前、客户 LTA / capacity reservation 明显；供需 5，溢价 4-5 |
+| AI/ML compute / 云厂 ASIC 平台 | 收入 `35-50 亿美元`，增速 `+40%-70%`；重要性 5，紧急性 4，供需 4，溢价 3 | 收入 `55-80 亿美元`；Trainium/TPU/Meta/Microsoft/Broadcom XPU 多客户放量；供需 4-5，溢价 3-4 | 收入 `90-130 亿美元`；云厂 ASIC 机架需求超预期，CLS 获得多个平台 program；供需 5，溢价 4 |
+| Rack integration / burn-in / service | 收入 `8-16 亿美元`；高端 rack FAT / liquid-cooling / network validation 成标配；重要性 4，紧急性 5，供需 4，溢价 3-4 | 收入 `16-28 亿美元`；现场交付能力稀缺，服务 attach 提升 | 收入 `30-45 亿美元`；客户为上线速度付费，整柜服务利润率明显扩张 |
+| AI storage / NVMe / dense storage | 收入 `12-20 亿美元`，增速 `+15%-30%`；重要性 3-4，供需 3，溢价 2-3 | 收入 `20-30 亿美元`；KV cache / AI data platform 拉动 | 收入 `30-45 亿美元`；推理数据和多模态 storage attach 超预期 |
+| Software / support / validation | 收入 `2-5 亿美元`；与交换机平台绑定 | 收入 `5-10 亿美元`；网络遥测、SONiC / NOS validation 和生命周期服务 attach | 收入 `10-18 亿美元`；软件成为 HPS 平台差异化之一 |
+
+公司整体收入三情景：
+
+| 情景 | 未来 12 个月 revenue run-rate | YoY / run-rate 增速 | 关键条件 |
+|---|---:|---:|---|
+| 基准 | `210-240 亿美元` | 相对 2026 指引 `+10%-25%` | 800G 继续放量，1.6T 初步量产，AI compute programs 正常 ramp，capex 按计划投产 |
+| 乐观 | `240-285 亿美元` | `+25%-50%` | 1.6T、AI compute 和 rack integration 同时放量，客户 roadmap 延续到 2027 |
+| 极度乐观 | `285-340 亿美元` | `+50%-80%` | CLS 获得更多 hyperscaler 白牌交换机和 AI rack/compute program，供应链以价格解决瓶颈 |
+
+## 6. BOM、每 MW / rack / GPU / optical port 内容量与价格传导
+
+### 6.1 AI 机架和网络的价值分层
+
+本地行业资料对高端液冷 AI 整柜的 BOM 口径：单柜总成交额可从 `200 万美元`到 `700 万美元以上`。其中 GPU/ASIC/HBM 占 `60%-80%`，网络 / NVLink / switch / DPU / NIC / optics / cable 占 `8%-18%`，液冷占 `2%-8%`，工厂集成、burn-in、现场调试和服务占 `3%-8%`。Celestica 不捕获 GPU/HBM 的高毛利，主要捕获 **交换机系统、平台硬件、制造、测试、集成、服务和部分软件支持**。
+
+### 6.2 DS6000 / DS6001 1.6T switch 内容量
+
+| 维度 | 内容量估算 | 价格传导 |
+|---|---:|---|
+| 每台 DS6000 / DS6001 | `64 x 1.6TbE` optical / electrical-facing ports，`102.4Tbps` non-blocking switching；2OU/3U 形态取决于型号 | switch ASIC、PCB、SerDes、connector/cage、power、thermal、firmware、测试、整机装配构成 bare switch ASP |
+| 每 optical port：bare switch | `900-1,900 美元/port` Celestica 可捕获收入 | 假设 64-port 102.4T switch bare ASP `6-12 万美元`；不含光模块时，Celestica 主要捕获系统和制造价值 |
+| 每 optical port：含 optics / cable ecosystem | `2,500-5,000+ 美元/port`全链条成本，但 Celestica 未必全部确认收入 | 1.6T 光模块、AEC/ACC、DAC、cable、测试由上游/模块厂捕获更多价值；若 CLS 做 resell / integration，收入放大但毛利较低 |
+| 每 GPU | `900-2,500 美元/GPU` switch 系统机会 | 假设高端训练集群 1 个 GPU 对应约 1 个 800G 或半个到一个 1.6T scale-out port；网络拓扑、oversubscription 和 vendor 方案差异大 |
+| 每 rack | `6.5-18 万美元/rack` switch 系统机会 | 以 72 GPU / rack、每 GPU `900-2,500 美元`估算；不含 optics 时较低，含 optics / cables / integration 更高 |
+| 每 MW | `0.6-1.8 百万美元/MW` bare switch 系统机会 | 以 `8-10` 个高密度 AI rack / MW、约 `600-720 GPU/MW`估算；若含 optics/cables 可到 `2-5 百万美元/MW`以上 |
+
+### 6.3 800G switch 内容量
+
+| 维度 | 内容量估算 | 说明 |
+|---|---:|---|
+| DS5000 | `64 x 800GbE`，`51.2Tbps`，2U | 2026 主力 AI/ML、HPC、hyperscale leaf/spine |
+| DS4101 | `32 x 800G`，`25.6Tbps`，1U | 中等规模和高性能边缘/数据中心 |
+| DS4100 | `16 x 800G`，`12.8Tbps`，1U | Top-of-rack / backbone |
+| 每 800G port：bare switch | `500-1,200 美元/port` | 成熟度高于 1.6T，ASP 和毛利逐步下行 |
+| 每 MW：bare switch | `0.5-1.5 百万美元/MW` | 取决于 topology、端口冗余和网络层数 |
+
+### 6.4 Rack integration / testing 内容量
+
+| 维度 | 内容量估算 | 价格传导 |
+|---|---:|---|
+| 每 rack | `3-15 万美元/rack`直接集成、测试、burn-in、线缆管理、质量责任收入；复杂液冷和现场服务可更高 | 客户为上线速度、故障责任和验收付费；供不应求时服务单价不随 BOM 成本线性下降 |
+| 每 MW | `0.25-1.5 百万美元/MW`直接服务机会 | rack density 越高，测试和现场调试越稀缺 |
+| 每 GPU | `400-2,000 美元/GPU` | 主要由 rack 复杂度和客户 SLA 决定 |
+| 毛利 | `15%-30%` gross margin，项目差异很大 | 普通装配低，整柜 FAT / liquid cooling / network validation 高 |
+
+### 6.5 Storage 内容量
+
+| 产品 | 内容量 | AI 相关场景 | 每 rack / MW 机会 |
+|---|---|---|---|
+| SC6110 | Dual-node all-flash controller，最高 32 个 E3.S PCIe Gen5 NVMe SSD | AI/HPC、文件/对象存储、数据库 | 每 rack `2-20 万美元`，取决于是否高性能 metadata / cache 层 |
+| SD6300 | 4U、108 个 3.5" SAS drives | AI data ingest、archive、hyperscale cold / warm storage | 每 MW `0.1-0.7 百万美元`，但毛利较低 |
+| SC4200 / SC6100 / SE4200 | NVMe / all-flash / controller-based storage | HPC、ML、SaaS、object / scale-out | 与 compute cluster attach rate 相关 |
+
+### 6.6 产能、采纳和认证阶段
+
+| 产品 / 业务 | 当前产能能力（美元计） | 供应链采纳程度 | 认证 / qualification |
+|---|---:|---|---|
+| 800G networking / HPS | 按 Q1 2026 HPS run-rate，HPS 全部约 `68 亿美元/年`；其中 networking 估算 `35-50 亿美元/年` | 高。800G 已是 2026 AI 后端主流，Celestica 产品线完整 | DS5000 / DS4100 / DS4101 已产品化；客户级 qual 已在收入中体现 |
+| 1.6T DS6000 / DS6001 | 当前更多是早期订单 / design-in，2026 估算 `5-15 亿美元`能力 | 中高，取决于 initial customers 到量产；行业 1.6T 2026H2-2027 加速 | 官方产品可见；二级渠道称 DS6000 已面向 initial customers 可下单；DS6001 ORv3 / hybrid-cooled 形态适配 OCP 高密度方向 |
+| AI/ML compute programs | 2026 能力估算 `20-35 亿美元` | 中高，但具体客户和型号保密 | 公司 Q1 forward assumptions 点名 AI/ML compute programs；实际认证为客户私有 |
+| Rack integration / testing | 当前能力估算 `5-12 亿美元`直接收入，支撑更大 HPS/CCS 收入 | 中高，随客户 capacity roadmap 扩张 | 认证体现在客户工厂审计、FAT、burn-in、液冷/网络测试能力；非公开 |
+| Storage platform | 2026 能力估算 `10-16 亿美元` | 中等，产品线成熟但竞争更多 | 产品已公开；SC6110 / SD6300 明确有 AI/HPC 或 AI data ingest 场景 |
+
+## 7. 一年后产能、采纳和认证三情景
+
+| 产品 / 业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| 800G networking / HPS | 产能 `45-60 亿美元/年`；客户采纳稳定；800G 由高端新增转为主流存量扩容 | 产能 `60-75 亿美元/年`；800G 与 1.6T 平滑并行；客户 LTA 更清晰 | 产能 `75-95 亿美元/年`；因 AI Ethernet 份额提升，CLS 获更多白牌交换份额 |
+| 1.6T DS6000 / DS6001 | 产能 `12-25 亿美元/年`；进入若干 hyperscaler qualification / early production | 产能 `25-45 亿美元/年`；initial customers 转量产；Broadcom / AI Ethernet 生态带动 | 产能 `45-70 亿美元/年`；1.6T 成高端 AI fabric 默认端口，CLS 获急单溢价 |
+| AI/ML compute programs | 产能 `35-50 亿美元/年`；若干客户 program 正常 ramp | 产能 `55-80 亿美元/年`；云厂 ASIC / AI rack 多平台采纳 | 产能 `90-130 亿美元/年`；CLS 成为多个客户专用 AI 平台的关键制造/集成商 |
+| Rack integration / testing | 产能 `8-16 亿美元/年`；工厂 FAT 和现场交付能力随 capex 扩张 | 产能 `16-28 亿美元/年`；液冷和网络整柜测试成为客户采购前置条件 | 产能 `30-45 亿美元/年`；服务 attach 和现场团队成为瓶颈，溢价明显 |
+| Storage | 产能 `12-20 亿美元/年`；AI/HPC attach 稳步上升 | 产能 `20-30 亿美元/年`；KV cache / object storage / ingest 拉动 | 产能 `30-45 亿美元/年`；推理数据爆发，但仍不是最高毛利环节 |
+
+认证关键里程碑：
+
+1. DS6000 / DS6001 从公开产品和 initial customer order，进入多客户 production qualification。
+2. 1.6T ports 与 optics / AEC / DAC / NIC / switch ASIC 的互操作测试通过，特别是 224G lane、热设计和 firmware / telemetry。
+3. AI/ML compute programs 从单客户 private qualification 转向多客户或多平台量产。
+4. 高密度 rack integration 通过客户工厂审计、整柜 burn-in、液冷泄漏测试、网络压测和现场验收。
+5. 产能扩张中的 power availability、utility、设备、人才和设计中心建设按计划完成。
+
+## 8. 订单积压、供给和未来一年业务增速
+
+### 8.1 真实 backlog 信息
+
+公司不披露标准 backlog、bookings、book-to-bill 或取消率。能用的硬信号是：
+
+| 订单 proxy | 数字 / 事实 | 解读 |
+|---|---:|---|
+| 2026 revenue guide 连续上修 | 2025Q3 `160 亿美元` -> 2026Q4 指引 `170 亿美元` -> 2026Q1 后 `190 亿美元` | 需求可见度连续提高 |
+| 2026Q1 后剩余收入 | `190 - 40.47 = 149.53 亿美元` | 剩余 9 个月需要平均 `49.8 亿美元/季`，显著高于 Q1 |
+| Q2 2026 guide midpoint | `43 亿美元` | H2 implied revenue 约 `106.5 亿美元`，即 `53.3 亿美元/季` |
+| 2026 capex | 约 `10 亿美元` | 说明管理层和客户 multi-year capacity roadmap 对齐，否则不会大幅扩产 |
+| 2025 前三大客户集中 | `36% / 15% / 12%`，合计 `63%` | 大客户路线图决定订单节奏；利好 visibility，也放大单客户风险 |
+| 行业采购周期 | AI rack / network / storage 采购典型 `3-12` 个月 | 2026H2 收入通常需要 2025H2-2026H1 的 design-in、PO、allocation 和 capacity reservation |
+
+### 8.2 未来一年增速三情景
+
+| 产品 / 业务 | 基准增速 | 乐观增速 | 极度乐观增速 | 主要供给约束 | 取消 / 延迟风险 |
+|---|---:|---:|---:|---|---|
+| HPS networking 800G/1.6T | `+25%-45%` | `+50%-75%` | `+90%-120%` | switch ASIC、1.6T optics / AEC、测试产能、客户 qual | AI fabric 设计延迟、1.6T optics ASP/供应、客户转向 Arista/Cisco/NVIDIA |
+| AI/ML compute programs | `+40%-70%` | `+80%-130%` | `+150%-250%` | ASIC / GPU allocation、PCB、power、thermal、客户私有认证 | 云厂 ASIC roadmap 延迟、GPU/ASIC 供应卡住、客户自有 ODM 转移 |
+| Rack integration / testing | `+40%-80%` | `+90%-150%` | `+180%-250%` | 高功率测试台、液冷测试、现场工程师、客户验收 | 数据中心通电延迟、液冷 field issue、客户推迟 rack acceptance |
+| Storage | `+15%-30%` | `+35%-60%` | `+80%-120%` | SSD/HDD、controller、客户 data platform roadmap | storage attach 低于预期、AI 推理数据增长不及预期 |
+| ATS | `0%-8%` | `+8%-15%` | `+15%-25%` | 航空航天/工业周期、医疗和资本设备需求 | 宏观周期和客户库存 |
+
+整体未来一年判断：
+
+| 情景 | 收入增速 | Adjusted operating margin | 关键假设 |
+|---|---:|---:|---|
+| 基准 | `+10%-25%` vs 2026 指引 run-rate | `8.0%-8.8%` | 2026 guide 达成，HPS 继续高增但 800G ASP 开始正常化 |
+| 乐观 | `+25%-50%` | `8.7%-9.8%` | 1.6T 和 AI compute 同步放量，capex 按时投产，客户继续追加 |
+| 极度乐观 | `+50%-80%` | `9.5%-11.0%` | AI Ethernet / custom AI rack 供不应求，CLS 获更多 program 且服务 attach 提升 |
+
+## 9. 竞争格局、替代风险和客户切换成本
+
+### 9.1 主要竞争对手
+
+| 领域 | 竞争对手 | Celestica 优势 | Celestica 劣势 |
+|---|---|---|---|
+| AI 后端交换机系统 / 白牌 switch | Arista、Cisco、NVIDIA Networking、Accton / Edgecore、UfiSpace、Quanta/QCT、Wiwynn、Foxconn、Jabil、Flex | HPS 产品线完整，800G/1.6T 可见，hyperscaler 供应链和制造/测试能力强 | 缺少自有 switch ASIC 和封闭软件生态；Arista/Cisco/NVIDIA 在系统软件和客户入口更强 |
+| AI 服务器 / rack-scale system | Dell、HPE、Supermicro、Lenovo、Quanta/QCT、Wiwynn、Foxconn、Wistron、Inventec、Pegatron、Jabil、Flex、Sanmina | 可做复杂系统工程、区域制造、客户共同开发和供应链交付 | 品牌 OEM 和台系 ODM 在服务器整机生态更强；CLS 客户和 program 透明度低 |
+| Rack integration / lifecycle | Dell/HPE 服务、Foxconn/Jabil/Flex、Vertiv / Schneider 预制模块、客户自有运维 | 制造、测试、供应链和 lifecycle 服务组合 | 液冷 / power 专业模块厂在高密度电力热管理上更强 |
+| Storage platform | Dell、HPE、NetApp、Pure、Supermicro、Quanta、Wistron、Seagate / WD ecosystem | HPS storage 产品线可支持 AI/HPC 和 hyperscale | 存储软件和企业客户入口弱于专业存储厂 |
+| Optical / cable assembly | Fabrinet、Jabil、Foxconn、Flex、Innolight / Eoptolink 生态、Coherent / Lumentum | 可与平台硬件集成 | 上游光器件、DSP、active alignment 的壁垒不在 CLS |
+
+### 9.2 新技术是否是未来主流
+
+| 技术 / 产品 | 是否主流 | 判断 |
+|---|---|---|
+| 800G AI Ethernet | 是，2026 主流 | 本地行业资料和公司产品线都支持；2026 高端 AI 集群继续大规模采用 |
+| 1.6T Ethernet | 是，2027 高端主流候选 | DS6000 / DS6001 正对该路线；关键是 224G lane、optics、AEC/ACC、thermal 和客户 qual |
+| Whitebox / merchant-silicon switch | 是，但不是唯一 | Hyperscaler 为 vendor diversity 和成本采用白牌；但 Arista、Cisco、NVIDIA 软件和生态仍强 |
+| Rack-scale /整柜集成 | 是 | GB300、Rubin、Helios、Trainium3、TPU pod 都推动整柜而不是单机采购 |
+| Liquid-cooled / hybrid-cooled high-density switch and rack | 是，高端场景默认 | 100kW+ rack 和 1.6T 端口提高热密度；但 CLS 不是液冷模块龙头 |
+| AI storage / data ingest / KV cache platform | 方向正确但竞争分散 | 会增长，但毛利和客户锁定未必高于网络和 compute platform |
+
+### 9.3 替代方案和风险
+
+| 风险 | 影响 | 需要跟踪的反证指标 |
+|---|---|---|
+| 客户把订单转向 Arista / Cisco / NVIDIA 全栈方案 | HPS switch 份额下降，margin 承压 | Arista / Cisco 1.6T 订单、NVIDIA Spectrum-X attach、客户公开网络架构 |
+| 台系 ODM 或 Foxconn / Jabil / Flex 抢走 program | AI compute / rack integration 份额下降 | 台湾 ODM 月度收入、客户供应链转移、CLS capex 利用率 |
+| 1.6T qualification 延迟 | 2027 高端网络收入低于预期 | 1.6T 出货低于预期、optics/AEC 认证延迟、DS6000 客户未量产 |
+| 800G ASP 下滑快于量增 | HPS revenue 仍涨但利润率下滑 | 800G switch / optics ASP 连续两个季度快速下跌 |
+| 云厂 capex 或 AI ROI 放缓 | 收入和订单整体放缓 | hyperscaler capex 指引下修、NeoCloud 利用率和融资恶化 |
+| 客户集中 | 单一客户 roadmap 调整会显著影响季度收入 | 前三大客户收入占比、A/R 和 inventory 周转 |
+| Capex 执行失败 | 固定成本上升、ROIC 下滑 | 2026 capex 投产进度、power / utility / labor / equipment 延迟 |
+| 关税、地缘政治和供应链转移 | 成本和交付波动 | 公司称多数关税可向客户 recover，但政策变化仍可能影响工作资本和交付地点 |
+
+### 9.4 客户替换成本
+
+Celestica 的客户替换成本不是来自专利垄断，而来自以下组合：
+
+1. **平台 qualification**：交换机、compute、storage、firmware、thermal、power、supply-chain security 和客户 audit 一起认证，周期通常以季度计。
+2. **生产和测试良率**：高端 AI 网络和整柜平台需要 burn-in、BER、thermal、firmware、interoperability 和 rack acceptance；换供应商可能导致上线延迟。
+3. **capacity roadmap 对齐**：客户一旦要求供应商为 2026-2027 投 capex，通常会给出更强需求可见度或 capacity reservation。
+4. **多区域制造和供应链**：美国、泰国、马来西亚等区域能力对关税、地缘政治和本地制造要求有价值。
+5. **现场交付责任**：AI 集群不是买硬件，而是买可运行算力；现场故障、漏液、网络不稳定和 firmware issue 的责任承接提高黏性。
+
+但替换成本不是不可逾越。大型 hyperscaler 通常主动维持多供应商，以压价、控制风险并避免单点失败。因此 Celestica 的溢价能力中等偏强，而不是绝对垄断。
+
+## 10. 投资跟踪清单
+
+| 指标 | 为什么重要 | 观察频率 |
+|---|---|---|
+| 2026 revenue guide 是否继续上修 | 直接验证 demand visibility 和订单覆盖 | 每季 |
+| HPS revenue 和 CCS segment margin | HPS 是估值核心，margin 显示 mix 和价格权力 | 每季 |
+| DS6000 / DS6001 1.6T 客户和量产线索 | 决定 2027 增量斜率 | 每季 / 产品发布 |
+| Capex 实际支出和投产进度 | `10 亿美元`capex 是成长和风险双刃剑 | 每季 |
+| Inventory / AR / AP 周转 | 判断订单是否顺利转换为现金 | 每季 |
+| Top customer concentration | 判断单客户风险和订单质量 | 年报 / 季报披露 |
+| Arista / Cisco / NVIDIA / Broadcom 1.6T 动态 | 判断 CLS 的交换机竞争环境 | 每季 / 发布会 |
+| 800G / 1.6T optics 和 AEC 供需 | 交换机出货受 optics/cable 约束 | 每月 / 每季 |
+| 云厂 capex 和 AI 数据中心 power / rack acceptance | 终端需求是否延续 | 每季 |
+
+## 11. 资料来源
+
+### 公司一手资料
+
+- Celestica Q1 2026 press release and selected financial statements, 2026-04-27: <https://corporate.celestica.com/news-releases/news-release-details/celestica-announces-first-quarter-2026-financial-results>
+- Celestica Q4 2025 press release and selected financial statements, 2026-01-28: <https://corporate.celestica.com/static-files/3f82636d-2990-46aa-af30-3b7ddbc66b60>
+- Celestica Q3 2025 press release and selected financial statements, 2025-10-27: <https://corporate.celestica.com/static-files/f26d48cf-b72f-4d87-8b57-3508bc35da1b>
+- Celestica Q2 2025 press release and selected financial statements, 2025-07-28: <https://corporate.celestica.com/static-files/525f6d7a-a077-4cae-acef-1165195164d7>
+- Celestica Q1 2025 press release and selected financial statements, 2025-04-24: <https://corporate.celestica.com/static-files/7d44e195-62d3-4384-a166-3826d4206628>
+- Celestica 2025 Annual Report / Form 10-K, filed 2026-02-27: <https://corporate.celestica.com/static-files/5a8d9dc5-d19e-416e-b895-f4f8f851e52f>
+- Celestica networking switches product page: <https://www.celestica.com/our-expertise/platform-solutions/networking>
+- Celestica storage hardware product page: <https://www.celestica.com/our-expertise/platform-solutions/storage>
+- Celestica compute product page: <https://www.celestica.com/our-expertise/platform-solutions/compute>
+- Celestica 2025 Investor and Analyst Day presentation: <https://corporate.celestica.com/static-files/8275b5d7-8415-4bea-9577-4e5326da5809>
+
+### 二级和渠道资料
+
+- Quiver Quantitative, Celestica DS6000 1.6TbE / Tomahawk 6 secondary note, 2026-06: <https://www.quiverquant.com/news/Celestica%2Bjumps%2B6.9%25%2Bas%2Binvestors%2Brefocus%2Bon%2Bits%2BAI%2Bnetworking%2Bramp%2Band%2Braised%2B2026%2Boutlook>
+- IBD / Investor's Business Daily, Celestica AI data center market commentary, 2026-05: <https://www.investors.com/stock-lists/sector-leaders/celestica-stock-cls-data-center-ai-tech-markets/>
+
+### 项目内行业资料
+
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-06-11.md`

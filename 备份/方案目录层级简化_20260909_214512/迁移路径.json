@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "industry",
+    "Label": "行业调研",
+    "Old": "基本面/行业调研/研究方法/行业调研/研究方案",
+    "New": "基本面/行业调研/研究方案",
+    "Source": "D:\\drive\\Investment\\基本面\\行业调研\\研究方法\\行业调研\\研究方案",
+    "Destination": "D:\\drive\\Investment\\基本面\\行业调研\\研究方案"
+  },
+  {
+    "Id": "company-sentiment",
+    "Label": "公司情绪",
+    "Old": "情绪面/研究方法/研究方案",
+    "New": "情绪面/研究方案",
+    "Source": "D:\\drive\\Investment\\情绪面\\研究方法\\研究方案",
+    "Destination": "D:\\drive\\Investment\\情绪面\\研究方案"
+  },
+  {
+    "Id": "background-1",
+    "Label": "AI产业链全局图谱与口径字典",
+    "Old": "基本面/行业调研/研究方法/AI产业链全局图谱与口径字典/研究方案",
+    "New": "基本面/行业调研/AI产业链全局图谱与口径字典/研究方案",
+    "Source": "D:\\drive\\Investment\\基本面\\行业调研\\研究方法\\AI产业链全局图谱与口径字典\\研究方案",
+    "Destination": "D:\\drive\\Investment\\基本面\\行业调研\\AI产业链全局图谱与口径字典\\研究方案"
+  },
+  {
+    "Id": "background-2",
+    "Label": "AI产业链瓶颈与反证指标总表",
+    "Old": "基本面/行业调研/研究方法/AI产业链瓶颈与反证指标总表/研究方案",
+    "New": "基本面/行业调研/AI产业链瓶颈与反证指标总表/研究方案",
+    "Source": "D:\\drive\\Investment\\基本面\\行业调研\\研究方法\\AI产业链瓶颈与反证指标总表\\研究方案",
+    "Destination": "D:\\drive\\Investment\\基本面\\行业调研\\AI产业链瓶颈与反证指标总表\\研究方案"
+  },
+  {
+    "Id": "background-3",
+    "Label": "全球AI需求与Token经济框架",
+    "Old": "基本面/行业调研/研究方法/全球AI需求与Token经济框架/研究方案",
+    "New": "基本面/行业调研/全球AI需求与Token经济框架/研究方案",
+    "Source": "D:\\drive\\Investment\\基本面\\行业调研\\研究方法\\全球AI需求与Token经济框架\\研究方案",
+    "Destination": "D:\\drive\\Investment\\基本面\\行业调研\\全球AI需求与Token经济框架\\研究方案"
+  },
+  {
+    "Id": "background-4",
+    "Label": "数据中心建设规模",
+    "Old": "基本面/行业调研/研究方法/数据中心建设规模/研究方案",
+    "New": "基本面/行业调研/数据中心建设规模/研究方案",
+    "Source": "D:\\drive\\Investment\\基本面\\行业调研\\研究方法\\数据中心建设规模\\研究方案",
+    "Destination": "D:\\drive\\Investment\\基本面\\行业调研\\数据中心建设规模\\研究方案"
+  },
+  {
+    "Id": "background-5",
+    "Label": "头部AI芯片",
+    "Old": "基本面/行业调研/研究方法/头部AI芯片/研究方案",
+    "New": "基本面/行业调研/头部AI芯片/研究方案",
+    "Source": "D:\\drive\\Investment\\基本面\\行业调研\\研究方法\\头部AI芯片\\研究方案",
+    "Destination": "D:\\drive\\Investment\\基本面\\行业调研\\头部AI芯片\\研究方案"
+  },
+  {
+    "Id": "conference",
+    "Label": "会议调研",
+    "Old": "基本面/行业调研/研究方法/会议调研/研究方案",
+    "New": "基本面/行业调研/会议调研/研究方案",
+    "Source": "D:\\drive\\Investment\\基本面\\行业调研\\研究方法\\会议调研\\研究方案",
+    "Destination": "D:\\drive\\Investment\\基本面\\行业调研\\会议调研\\研究方案"
+  }
+]

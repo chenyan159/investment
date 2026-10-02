@@ -1,0 +1,495 @@
+# 公司：NVMI Nova Ltd.（诺瓦）全面尽调
+
+> **报告日期：2026-07-12（America/Los_Angeles）**  
+> **行情口径：**2026-07-10 美股收盘；7 月 12 日为周日，无当日正常交易。  
+> **最新财报：**2026Q1，季度截至 2026-03-31、披露于 2026-05-14；2026Q2 将于 2026-08-06 披露。  
+> **证据口径：**公司财报/20-F/产品公告为一手事实；财报电话会为管理层口径；产业会议、技术论文和项目内行业底稿用于交叉验证；标为 **R-est.** 的收入拆分、BOM、ASP、订单、产能和三情景数字均为本报告估算，不是公司指引。  
+> **本地资料边界：**仅参考 `基本面/行业调研/` 中的相关产业资料；未读取其他目录中的公司报告或日度资料。
+
+## 一、结论先行：它是什么公司，投资逻辑最强在哪里
+
+1. **Nova 是半导体制造“量测（metrology）”纯度很高的设备商，不是晶圆缺陷检测全栈龙头，也不是数据中心机架零部件商。**它把光学散射、干涉、XPS/XRF、inline SIMS、Raman、湿化学分析和建模软件工业化，嵌入晶圆厂的沉积、刻蚀、光刻、CMP、电镀、离子注入和先进封装工序。客户购买的不是实验室读数，而是更快的良率爬坡、更少的报废和更稳定的高量产制造。
+2. **投资人通常把 NVMI 视为“小型、高增速、高毛利、份额持续提升的 process-control compounder”，而不是低倍数周期设备股。**2020—2025 年产品收入 CAGR 约 **27.5%**，同期公司引用的 process-control 行业 CAGR 约 **16.0%**；2025 年收入 **8.806 亿美元、+31%**，GAAP 毛利率 **57.4%**，GAAP 净利率 **29.4%**。[2025 Form 20-F](https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/zk2634307.htm)
+3. **AI 暴露是真实但间接的。**AI 数据中心资本开支先转为 GPU/ASIC、先进 DRAM/HBM、GAA、CoWoS/2.5D/3D 与 hybrid bonding 投片，再转为量测设备。Nova 不随每台服务器发货，因此其“每 rack 直接 BOM”为 **0**；经济暴露来自晶圆厂和封装厂新增工艺步骤、采样密度及良率要求。
+4. **2026Q1 的业务斜率重新加速。**收入 **2.353 亿美元、同比 +10%、环比 +6%**；Q2 指引 **2.45—2.55 亿美元**，中值环比再增 **6.2%**。管理层称 H2 高于 H1，并已收到部分 **2027 年交付**订单；这比单纯的行业预测更有价值，但公司没有披露 backlog 金额或 B/B。
+5. **当前最强三条产品线：**①GAA/先进 DRAM 的 integrated + standalone dimensional/OCD；②把实验室 SIMS 移到 inline HVM 的 **Metrion**；③先进封装/HBM 的 **WMC/Prism/SemDex + chemical metrology**。2026-07-02，WMC 经竞争评估成为一家全球头部晶圆代工客户的 **tool of record**，是本次调研中最新、最硬的产品验证。[WMC 2026-07-02公告](https://www.novami.com/investors/press-releases/nova-wmc-expanding-adoption-across-the-most-advanced-packaging-processes/)
+6. **潜力小业务不能漏：hybrid-bond Cu recess/flatness、inline materials、硅光量测和软件。**hybrid bonding 要求表面粗糙度低于约 **0.5 nm**、Cu recess 通常仅 **3—5 nm**；量测不是可选项。Nova 2026 SPIE 论文已用 VTS-ML 在盲测晶圆上验证 Cu recess 监控，但从论文/qualification 到多台量产仍存在 6—18 个月认证期。[Nova SPIE 2026论文](https://www.novami.com/publications/inline-monitoring-of-hybrid-bonding-cu-recess-with-vertical-traveling-scatterometry-machine-learning/)；[Semiconductor Engineering](https://semiengineering.com/how-to-build-billions-of-bumps/)
+7. **财务健康度高。**2026Q1 末现金、存款和有价证券合计约 **16.77 亿美元**，扣除可转债账面值后净流动金融资产约 **9.45 亿美元**；0% 可转债到期日在 2030 年。流动比率只有 **1.58x** 主要因为股价触发会计规则、将 7.326 亿美元可转债列为流动负债；剔除该项后约 **7.05x**。
+8. **风险不在生存，而在估值、订单时点和竞争。**2026-07-10 收盘价 **475.90 美元**，市值 **151.3 亿美元**，TTM PE **59.71x**、forward PE **42.06x**、P/S **16.76x**。市场已经计入显著份额提升与 AI 上游强景气；即使公司达到基准情景，估值压缩仍可能抵消盈利增长。[StockAnalysis 2026-07-12快照](https://stockanalysis.com/stocks/nvmi/statistics/)
+9. **基准情景：未来十二个月收入 11.0—11.8 亿美元，同比约 +18%—+27%；乐观 12.3—13.8 亿美元、+32%—+48%；极度乐观 14.0—16.2 亿美元、+50%—+74%。**基准成立条件是 Q2 指引兑现、H2 高于 H1、Metrion/WMC/AncoScene 延续复购且新亚洲工厂按期上线；极度乐观需要 GAA、HBM4、hybrid bonding、WMC fleet adoption 与供应链扩容同时超计划。
+10. **综合判断：公司质量高、产品位置好、订单代理强，但股票已是“执行必须接近完美”的定价。**最应该跟踪的不是新闻中出现多少次“AI”，而是 WMC/Metrion 的多台复购、GAA 累计收入、先进封装占比、2027 订单覆盖、Fremont/亚洲产能、毛利率和应收/库存转换。
+
+## 二、整体业务、产业链定位与最近三年变化
+
+### 2.1 业务链条
+
+Nova 的价值链位置如下：
+
+`AI/HPC需求 → GPU/ASIC/HBM/先进DRAM投片 → GAA/复杂材料/TSV/2.5D/3D/hybrid bonding工艺增加 → 量测点与采样密度提高 → Nova硬件、软件、服务收入`
+
+公司覆盖四个官方类别：[2025 Form 20-F 产品说明](https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/zk2634307.htm)
+
+| 官方类别 | 解决的问题 | 主要产品/型号 | 典型工序 |
+|---|---|---|---|
+| Dimensional Integrated Metrology | 直接集成到工艺设备，做 wafer-to-wafer、within-wafer、within-die APC | Nova **i570 HP、i550、i500**；i Platform | CMP、沉积、刻蚀、先进逻辑/存储关键层 |
+| Dimensional Standalone Metrology | OCD、膜厚、形貌、粗糙度、topography、warpage、TSV 等独立量测 | **Prism、VeloCD、T550/T500、MMSR+、WMC、SemDex** | GAA、先进 DRAM、2.5D/3D、HBM、hybrid bonding |
+| Materials Metrology | 元素组成、厚度、深度剖面、应变、晶相、污染 | **VeraFlex III/III+/IV（XPS/XRF）、Metrion（inline SIMS）、Elipson（Raman）** | GAA/CFET、DRAM/3D NAND、先进材料和界面 |
+| Chemical Metrology | 电镀液/湿法化学实时分析、补液和金属 replenishment | **AncoScene、Ancolyzer、DMR** | 前道铜/钴互连、TSV/RDL、先进封装、PCB/IC substrate |
+| Modeling / Software | 复杂 3D/HAR 反演、ML、fleet matching、计算管理 | **MARS、FIT、FM、HPC、QED、Nova Hub** | 与前三类硬件耦合，提高 throughput、precision、tool matching 和粘性 |
+| Services | 延保、年度合约、备件、升级、time-and-material、生产率优化 | 覆盖全 installed base | 2026Q1 已连续 **13 个季度**环比增长 |
+
+公司不是 KLA 那种覆盖 patterned wafer inspection、reticle、e-beam review、service 的超大型平台；Nova 的优势集中在 **CD/film/OCD、integrated metrology、materials 与 chemical metrology**。2026Q1 管理层称 Gartner 最新报告显示公司在 film 与 CD metrology 又提升约 **400bp**、连续第二年显著增份额，并巩固第二大厂商位置。[2026Q1电话会](https://earningscall.biz/e/nasdaq/s/nvmi/y/2026/q/q1)
+
+### 2.2 最近三年重大变化、转型和收购
+
+| 时间 | 变化 | 财务/战略含义 |
+|---|---|---|
+| 2023 | 2022 年收购的 ancosys 于 2023-06 并入德国主体；chemical metrology 从并购资产变成 Nova 的常规业务线 | 把公司由“光学 CD 设备商”扩为 dimensional + materials + chemical 平台；2025、2026Q1 chemical 均创新高 |
+| 2024 | 先进封装收入同比 **超过翻倍**；Metrion/VeraFlex、standalone dimensional 均创纪录 | AI 暴露从 GAA/前道进一步延伸到 HBM、TSV、hybrid bonding；业务周期不再只跟单一前道节点 |
+| 2025-01-30 | 以 **6,015.8 万美元**现金收购 Sentronics Metrology | 获得后道/先进封装的模块化 thickness、roughness、topography 和多传感器量测；Sentronics 2025 年约占合并收入 **6%**，即约 **5,280 万美元**。[20-F收购注释](https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/zk2634307.htm) |
+| 2025 | 推出 WMC；Mannheim 新工厂投运，先进封装光学量测产能约增至原来的 **3 倍**；AP 收入 **+60%**、约占产品收入 **20%** | 收购被产品化为可扩张的平台，而不只是并表收入；WMC 2026-07 已成为头部 foundry tool of record |
+| 2025-09 | 发行 **7.50 亿美元、0%票息、2030到期**可转债，初始转股价约 **320.16 美元** | 补足 M&A、R&D 与产能扩张火力；当前股价高于转股价，潜在基础转股约 **234 万股**，占当前 3,178 万股约 **7.4%**，虽有 capped-call 缓冲仍存在稀释与对冲交易波动 |
+| 2026H1 | Fremont cleanroom production bays 计划翻倍；建设亚洲生产中心，预计 2026 年末运营 | 将 XPS/SIMS 和系统装配能力前移、靠近客户并降低单点工厂风险；但 optics、stage、source、应用工程师与客户认证仍是更难扩的约束 |
+
+**转型实质：**Nova 已从单一 optical CD 量测公司，变为“光学尺寸 + 材料 + 化学 + 软件 + 先进封装”的多模态量测公司；收购 ReVera、ancosys、Sentronics 分别补 XPS、chemical、后道 dimensional。过去三年内真正新增的收购只有 Sentronics，其他变化主要是既有技术的 HVM 化、交叉销售和产能建设。
+
+### 2.3 投资人心中的定位
+
+- **多头视角：**CD/film 第二名且连续增份额；材料量测有 first-of-kind inline SIMS；先进封装从 0 做到产品收入 20%+；约 57%—60%毛利和近 30%净利率；轻资产装配、软件/服务附着、净现金。
+- **中性视角：**本质仍是 WFE/客户资本开支的高 beta；前五大客户占 2025 收入 **51%**，单一最大客户可达 **23%**；季度验收和客户拉货足以移动收入。
+- **空头视角：**约 60x TTM PE 与 16.8x P/S 已计入持续跑赢；KLA/Onto/AMAT/ASML 与中国本地厂商都可在不同环节夹击；WMC/Metrion 尚未证明能在很多客户形成 KLA 式大 installed-base 飞轮。
+
+## 三、最新股价、估值、盈利能力与资产负债表
+
+### 3.1 2026-07-10/12 市场快照
+
+| 指标 | 最新值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | **$475.90** | 2026-07-10 Nasdaq 收盘 | 7 月 12 日为周日；盘后 $479.90 不用于倍数主口径 |
+| 市值 | **$15.13bn** | 2026-07-10 收盘/2026-07-12更新 | 约 3,178 万股 |
+| 企业价值 | **$14.26bn** | 同上 | 公司净金融资产使 EV 低于市值 |
+| TTM PE | **59.71x** | 同上 | TTM EPS $7.97 |
+| Forward PE | **42.06x** | 同上 | 隐含未来十二个月 EPS 约 $11.32 |
+| TTM P/S | **16.76x** | 同上 | TTM 收入 $902.53m |
+| Forward P/S | **13.23x** | 同上 | 市场隐含 forward revenue 约 $1.14bn |
+| TTM 收入增速 | **+21.3%** | 截至 2026Q1 | TTM $902.53m；2026Q1同比 +10.3%，Q2指引中值再加速 |
+| TTM 毛利率 | **57.31%** | 截至 2026Q1 | 2026Q1 单季 57.7% |
+| TTM 营业利润率 | **28.87%** | 截至 2026Q1 | 2026Q1 单季 30.1% |
+| TTM 净利率 | **29.21%** | 截至 2026Q1 | 净利高于营业利润，因净利息/金融收入显著 |
+| TTM FCF margin | **21.52%** | 截至 2026Q1 | FCF $194.25m |
+
+来源：[StockAnalysis/S&P Global Market Intelligence，2026-07-12 更新](https://stockanalysis.com/stocks/nvmi/statistics/)。**估值结论：**公司质量支持溢价，但当前不是“低估值等待周期复苏”，而是“高估值等待增长兑现”。若 forward PE 从 42x 回落到 30x，即使 EPS 增长 20%，股价仍可能承压。
+
+### 3.2 资产负债表健康度（2026-03-31）
+
+| 项目 | 金额 | 判断 |
+|---|---:|---|
+| 现金及等价物 | **$421.8m** | 流动性充足 |
+| 短期存款 | **$333.3m** | 高流动性 |
+| 流动有价证券 | **$343.4m** | 高流动性 |
+| 非流动有价证券 | **$567.9m** | 仍属金融储备，但期限更长 |
+| 存款/受限存款 | **$11.0m** | 小项 |
+| **总现金/存款/证券** | **$1,677.4m** | 约为 TTM 收入的 1.86 倍 |
+| 可转债账面值 | **$732.6m** | 0%票息，法律到期 2030；因转股条件满足而列流动负债 |
+| **净流动金融资产** | **$944.8m** | 约 $29.7/股；生存与扩产风险低 |
+| 应收账款 | **$176.9m** | 粗算 DSO **67.7 天**，设备行业可接受但需防验收延迟 |
+| 库存 | **$178.9m** | 年化周转约 **2.2x**、约 166 天；为长交期/定制设备备货，仍需跟踪去化 |
+| 总资产 / 股东权益 | **$2,415.7m / $1,387.6m** | 权益基础扎实 |
+| 流动比率 | **1.58x** | 被可转债会计重分类显著压低 |
+| 剔除可转债后的流动比率 | **约 7.05x** | 更能反映经营短债安全性 |
+
+2026Q1 经营现金流仅 **$40.1m**，为净利润的 **58%**；扣除 CapEx $4.0m 后 FCF **$36.0m**。主要拖累来自应收增加 **$25.6m**和递延收入下降 **$19.7m**，不是亏损或高资本开支。单季现金转换低于利润需要监控，但 TTM FCF margin 仍为 21.5%。[2026Q1业绩及资产负债表](https://www.novami.com/investors/press-releases/nova-reports-record-first-quarter-2026-financial-results/)
+
+**健康度评分：8.5/10。**扣分项是客户集中、库存天数、可转债潜在稀释和 Q1 现金转换；不是偿债能力。
+
+## 四、最近五次财报：数字、业务结构与订单/交期代理
+
+### 4.1 五季度财务总表
+
+金额均为百万美元；利润率为 GAAP。Nova 不按 dimensional/materials/chemical 披露收入或利润率，因此下表只列可核验的产品/服务和管理层终端市场口径。
+
+| 财报季度 | 总收入 / YoY | 产品收入 / YoY | 服务收入 / YoY | 毛利率 | 营业率 / 净利率 | Logic+Foundry / Memory | 先进封装与 AI 相关信息 | 下一季收入指引及兑现 |
+|---|---:|---:|---:|---:|---:|---:|---|---|
+| **2025Q1** | **213.36 / +50.5%** | 173.94 / +55.9% | 39.41 / +30.4% | 57.3% | 29.6% / 30.4% | 产品约 **75% / 25%** | Prism 创纪录；两项先进封装/先进节点 evaluation 完成；GAA integrated 新进入两家客户；HBM 约占先进封装产品收入 1/3 | Q2 $210—220m；实际 **$219.99m**，高端兑现 |
+| **2025Q2** | **219.99 / +40.2%** | 177.83 / +42.7% | 42.16 / +30.7% | 57.8% | 29.8% / 31.0% | 产品约 **75% / 25%** | Chemical、Logic/Foundry、先进封装创新高；Sentronics 平台被领先 memory 客户用于 HBM；VeraFlex 新功能进入 3D NAND | Q3 $215—227m；实际 **$224.61m** |
+| **2025Q3** | **224.61 / +25.5%** | 178.87 / +24.5% | 45.74 / +29.4% | 56.7% | 28.4% / 27.3% | 产品约 **70% / 30%** | Memory、GAA logic 创纪录；WMC 已被 **3 家客户**用于 HBM/功率器件；AP 约占总/产品口径约 20%，同比大幅增 | Q4 $215—225m；实际 **$222.62m** |
+| **2025Q4** | **222.62 / +14.3%** | 174.95 / +10.3% | 47.67 / +31.6% | 57.6% | 27.3% / 29.1% | 产品约 **75% / 25%** | 2025 AP 收入 **+60%**、约占产品收入 **20%**；全球领先 logic 客户选择 Nova 全套 integrated metrology 做 GAA CMP，多笔 2026 订单已下 | Q1 $222—232m；实际 **$235.31m**，超高端 1.4% |
+| **2026Q1（最新）** | **235.31 / +10.3%** | 186.26 / +7.1% | 49.05 / +24.4% | 57.7% | 30.1% / 29.4% | 公司口径约 **66% / 34%** | Advanced DRAM 占 memory 约 **2/3**；AP 接近产品收入 **mid-20s**；Metrion、AncoScene、服务创新高；WMC/SemDex先进存储/封装相关bookings强（电话会机器转录词存在歧义） | Q2 **$245—255m**，中值环比 +6.2%；GAAP GM约57% |
+
+来源：[2025Q1](https://www.novami.com/wp-content/uploads/2025/05/pr20250508-q12025-website.pdf)、[2025Q2](https://www.novami.com/investors/press-releases/nova-reports-record-second-quarter-2025-financial-results/)、[2025Q3](https://www.novami.com/investors/press-releases/nova-reports-record-third-quarter-2025-financial-results/)、[2025Q4/FY2025](https://www.novami.com/investors/press-releases/nova-reports-fourth-quarter-and-record-full-year-2025-results/)、[2026Q1](https://www.novami.com/investors/press-releases/nova-reports-record-first-quarter-2026-financial-results/)。
+
+**五季解读：**
+
+- 总收入 YoY 从 +50.5% 回落到 +10.3%，主要是 2024/2025 高基数和产品收入增速正常化；Q2 指引显示绝对收入重新加速，而不是业务转差。
+- 服务收入连续保持 **24%—32%**增长，快于 installed-base 成熟业务的一般水平，说明装机、利用率、年度合约和升级同时起作用。
+- 产品毛利与服务毛利未按季披露。2025 全年产品收入 $705.6m、产品成本 $282.1m，倒算产品毛利率约 **60.0%**；服务毛利率约 **46.7%**。服务收入稳定，但不是高于硬件毛利的典型软件订阅。
+- Q3 净利率下降主要来自产品 mix、费用和金融收入变化；Q2 净利率 31%也受 $15.2m 净金融收入支持，不能把全部利润看作经营杠杆。
+
+### 4.2 Backlog、bookings、B/B、交期和取消率
+
+Nova 的 20-F 明确：公司只把指定交付日期的订单计入 backlog，但客户可改变交期、低罚金甚至无罚金取消或延迟，取消费也不一定收得到；因此公司不披露 backlog 金额，并提示 backlog 不是可靠销售指标。[20-F backlog风险](https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/zk2634307.htm)
+
+| 财报季度 | 官方 backlog / bookings / B2B | 可验证订单/资格信号 | 交期与取消率判断 | R-est. 需求强度 |
+|---|---|---|---|---|
+| 2025Q1 | 均未披露 | Prism 两项 evaluation 完成；Metrion 向新 GAA 客户发 qualification tool；integrated metrology 新进入两家 GAA 厂 | 初次 qualification 常需 6—18个月；无取消率 | B/B 很可能 **>1**，但不足以给精确数值 |
+| 2025Q2 | 未披露 | Chemical 新 memory win；Sentronics/WMC 前身能力获领先 memory 客户接受用于 HBM；GAA 客户采用多平台 | 订单质量高于单一 demo，但工具收入仍取决于 acceptance | 隐含 B/B 约 **1.00—1.12** |
+| 2025Q3 | 未披露 | WMC 已获 3 客户采用；Elipson 成为领先 foundry GAA tool of record并交付多台；Metrion 在 GAA确认收入 | Mannheim 产能扩为约3倍，降低 AP 交付约束 | 隐含 B/B 约 **1.05—1.18** |
+| 2025Q4 | 未披露 | GAA CMP 全产品套件通过综合评估；多笔 2026 订单已经下达；更多随客户扩产 | H2 2026 高于 H1 的可见度开始形成 | 隐含 B/B 约 **1.10—1.25** |
+| 2026Q1 | 未披露 | Metrion 两家全球头部 logic/memory采用并出现复购；AncoScene 多台 2026 交付；WMC/SemDex先进存储/封装相关bookings强；电话会机器转录未清楚区分HBM/HVM；部分订单已指向 2027 | 管理层称自身 lead time 短于部分同行；客户 pull-in 推高 H1；供应链有芯片成本/供给压力 | 隐含 B/B 约 **1.10—1.25**，可见度延伸到2027 |
+
+**取消率模型：**官方没有数值。对已经 tool-of-record、进入 HVM 的产品，本报告估算未来十二个月“真正取消”基准 **2%—5%**、乐观 **1%—3%**、极度乐观 **0%—2%**；更常见的是推迟/验收跨季，基准 **8%—12%**、乐观 **4%—8%**、极度乐观 **2%—5%**。合同保护弱于 headline backlog，但 POR、recipe、tool matching 和切换成本降低实际取消意愿。
+
+## 五、2026 最新指引、业务占比与产品交叉验证
+
+### 5.1 2026Q2 指引
+
+| 指标 | 2026Q2 指引 | 对比/含义 |
+|---|---:|---|
+| 收入 | **$245m—$255m** | 中值 $250m；QoQ +6.2%，YoY +13.6% |
+| GAAP diluted EPS | **$2.10—$2.24** | 中值 +6.4% QoQ |
+| Non-GAAP diluted EPS | **$2.34—$2.48** | 中值 $2.41 |
+| GAAP / Non-GAAP GM | **约57% / 59%** | 仍在 57%—60%长期目标区间 |
+| GAAP / Non-GAAP OpEx | **约$72m / $66m** | 为 R&D、销售与扩产前置投入；收入增速不等于 EPS 同速 |
+| 净金融收入 | **约$16m** | 大额现金带来明显收益，约占税前利润两成 |
+| 税率 | **约15%** | Q1 为17%，预计回归 |
+
+管理层 2026Q1 将当年 WFE 增速判断上调到 **mid-teens**并预计 Nova 继续跑赢；同时预计 H2 高于 H1。项目内最新行业底稿显示，SEMI 对 2026 年 300mm 前道设备支出已经上修至约 **1,420 亿美元、同比 +25%**，其中存储设备约 **520 亿美元、+29%**；Nova 的 DRAM/HBM、GAA 和量测强度增长与此同向。[项目内：AI芯片前道制造设备](../../行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-07-10.md)
+
+### 5.2 最新业务收入占比：官方轴与模型轴要分开
+
+| 口径 | 2026Q1收入/占比 | 增速/说明 |
+|---|---:|---|
+| 产品 | **$186.26m / 79.2%** | YoY +7.1%；Dimensional、materials、chemical 均创纪录，但未分别披露 |
+| 服务 | **$49.05m / 20.8%** | YoY +24.4%；连续13季环比增长 |
+| Logic + Foundry | **约66%**；若按总收入约 **$155m** | GAA integrated 创纪录；3nm/成熟节点新增客户也有贡献 |
+| Memory | **约34%**；若按总收入约 **$80m** | 创纪录；advanced DRAM 约占 memory 的 **2/3**，即粗算约 $53m |
+| Advanced Packaging | 产品收入 **mid-20s**；粗算 **$45m—$48m** | 是应用层重叠口径，不能与 Logic/Memory相加；多数来自 logic，HBM约占其1/3上下 |
+| AI 数据中心可归因收入 | **R-est. $90m—$125m / 38%—53%总收入** | 包括 GAA/先进逻辑、HBM/advanced DRAM、AI先进封装和相关服务；不是公司披露，存在应用重叠 |
+
+**最突出/最侧重：**
+
+1. **Dimensional/OCD 仍是规模核心；**GAA、CMP、3nm、先进封装使 integrated 与 standalone 两端同时增长。
+2. **Materials 是差异化和增速核心；**Metrion 把 destructive/slow lab SIMS 转成 inline SPC，VeraFlex/Elipson控制组成、厚度、strain，适合 GAA/DRAM 的新材料问题。
+3. **Advanced Packaging 是增量市场；**2024收入翻倍、2025再增60%，2026Q1产品占比接近25%；WMC已进入快速增长阶段。
+4. **Chemical 是常被低估的增长引擎；**HBM TSV/RDL、dual damascene、hybrid bonding 增加电镀与清洗控制，AncoScene 2026Q1创纪录。
+5. **软件和服务是粘性层；**软件量未披露且多捆绑硬件，服务则有可核验的 $49m季度收入和13季连续增长。
+
+### 5.3 产品收入和利润率拆分（R-est.，互斥主口径）
+
+以下以 2026Q2 指引中值形成的近似运行率校准；公司没有披露产品线收入，不能把区间当作事实。
+
+| 主产品池 | 当前年化收入贡献 | 当前增速 | 正常产品毛利率 | 交叉验证 |
+|---|---:|---:|---:|---|
+| 前道 Dimensional integrated + standalone，排除专用 AP 部分 | **$320m—$360m** | +15%—+25% | **60%—65%** | GAA integrated 创纪录；Film/CD份额再增约400bp；Prism/T/i系列多客户复购 |
+| 先进封装 Dimensional：WMC/SemDex/Prism 的 AP 应用 | **$80m—$105m** | +45%—+70% | **52%—60%** | AP约占产品mid-20s，但其中还有chemical；WMC成为foundry TOR、多个memory/foundry部署 |
+| Metrion inline SIMS | **$35m—$55m** | +60%—+100% | **55%—63%** | 2026Q1创纪录；两家全球客户用于GAA/DRAM；领先memory客户DRAM/NAND复购 |
+| VeraFlex + Elipson 材料量测 | **$90m—$115m** | +25%—+45% | **60%—68%** | 第300台XPS已出货；Elipson成为领先foundry GAA TOR；VeraFlex IV多家GAA采用 |
+| Chemical：AncoScene/Ancolyzer/DMR | **$95m—$120m** | +25%—+45% | **52%—60%** | Q2'25/Q1'26创新高；leading Asia memory客户多台2026交付；HBM/dual damascene双驱动 |
+| Services | **$190m—$200m** | +20%—+25% | **45%—50%** | TTM实际 $184.6m、Q2继续增长；7300+ active systems/400+ sites形成底座 |
+| 其他成熟/特色器件 | **$40m—$60m** | 0%—+10% | 48%—58% | Power/analog/sensors、PCB/IC substrate、普通3D NAND/成熟节点；不是本报告重点 |
+
+### 5.4 重点产品、潜力小产品与明确跳过项
+
+#### 重点和突出产品
+
+| 产品/业务 | 为什么重要 | 最新阶段 |
+|---|---|---|
+| **i570 HP/i550/i500 Integrated Metrology** | 嵌入工艺设备，wafer-to-wafer闭环；GAA CMP、沉积/刻蚀扩步骤直接增加 attach | 全球领先 logic 客户 GAA CMP 全套采用，多笔2026订单 |
+| **Prism/VeloCD/T550/T500/MMSR+** | standalone OCD/film/CD；复杂3D结构、TSV和hybrid bonding需要相位/强度联合反演 | Prism创纪录并完成两项先进节点/AP评估；OCD份额提升 |
+| **WMC/SemDex** | 多传感器、不同wafer/frame/panel handling、warpage/topography/TSV/RDL；最贴近HBM/2.5D/3D | 2026-07 WMC成为头部foundry TOR，多个memory/foundry部署，快速增长 |
+| **Metrion** | 首个经验证的全自动 inline SIMS；把组成深度剖面从lab搬到fab | GAA+advanced DRAM客户采用，DRAM/3D NAND复购，Q1销售纪录 |
+| **VeraFlex IV / Elipson** | XPS/XRF测组成/超薄膜，Raman测strain/crystallinity；GAA/DRAM新材料关键 | XPS第300台；Elipson foundry TOR；VeraFlex多客户GAA |
+| **AncoScene/Ancolyzer/DMR** | 前道铜/钴和后道TSV/RDL电镀液闭环，直接减少化学浪费和excursion | AncoScene创纪录并获新customer wins；多台2026交付 |
+| **MARS/FIT/FM/HPC/Nova Hub** | 复杂3D结构反演、fleet matching、ML和算力管理；增加硬件价值和切换成本 | Q1'25软件创新高；独立收入未披露，多为attach/bundle |
+
+#### 不应漏掉的小业务
+
+- **Hybrid-bonding Cu recess/flatness：**WMC/Prism、integrated CMP、chemical、VTS-ML共同受益。2026 SPIE 论文已证明 blind-wafer 相关性；收入仍小，但量测点可能从抽检变为inline。
+- **Silicon photonics metrology：**波导、modulator、alignment、3D形貌需要高精度光学/材料量测。公司官方投资者材料给出的 2024—2030 市场 CAGR 约 **35%**；当前收入估计仅 **$5m—$15m**且主要为早期项目，未来可能复用 Prism/WMC/材料平台，不需单独建全新产品线。[2026Q1投资者材料](https://www.novami.com/wp-content/uploads/2026/05/nova-investor-presenation-q12026-1.pdf)
+- **Hybrid metrology/新型纳米结构方案：**公司在开发结合 optical、materials、physical/AI modeling 的新方案，目标是单根 nanosheet、CFET、先进 memory 的参数解耦；尚未披露产品名或收入，属于 2027+期权。
+
+#### 本报告降低权重/跳过的产品与业务
+
+| 跳过/低权重项 | 原因 |
+|---|---|
+| PCB、普通 IC substrate、传统封装中的 Ancolyzer/DMR 应用 | 有收入但AI纯度和增速低于HBM/2.5D/3D |
+| Power/analog/sensor specialty devices | Sentronics/WMC可服务，但不是当前AI主线；保留为产能利用率缓冲 |
+| 非AI普通成熟节点的 i/T 系列 | 稳定现金流与中国业务重要，但单位量测强度增长有限 |
+| 传统3D NAND通用扩产 | Metrion/VeraFlex技术价值高，但2026最强增量是advanced DRAM/HBM和GAA；只保留复购证据 |
+| DMR单独的环保/补液收入 | 具ESG和耗材节省价值，但金额小且未单列披露 |
+
+## 六、每个高增长/关键产品的当前贡献、AI重要性与定价权
+
+评分均为 1—5；5 表示对AI制造最关键、交付最紧、最供不应求或定价权最强。收入为当前近似年化贡献，不代表公司披露。
+
+| 关键产品/业务 | 当前收入贡献 | 当前增速 | AI基建技术栈重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 | 核心依据 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 前道 Integrated/OCD：i/Prism/VeloCD/T/MMSR | $320m—$360m | 15%—25% | **5.0** | **4.5** | 4.0 | **4.0** | GAA/advanced DRAM每片工艺和量测点增加；CD/film第二大且增份额；KLA/Onto仍构成强竞争 |
+| Advanced Packaging WMC/SemDex/Prism | $80m—$105m | 45%—70% | **5.0** | **5.0** | **4.5** | 3.8 | WMC TOR、HBM bookings、多个memory/foundry；AP竞争尚未锁死，Camtek/Onto/KLA均强 |
+| Metrion inline SIMS | $35m—$55m | 60%—100% | **4.7** | 4.7 | **4.5** | **4.6** | first fully automated inline SIMS；lab-to-fab稀缺；多客户从qualification转复购 |
+| VeraFlex/Elipson | $90m—$115m | 25%—45% | 4.5 | 4.4 | 4.0 | **4.4** | XPS installed base和第300台证明规模；Elipson GAA TOR；中国XPS替代风险上升 |
+| Chemical：AncoScene/Ancolyzer/DMR | $95m—$120m | 25%—45% | 4.5 | 4.5 | 4.0 | 4.2 | 前道互连+TSV/RDL/封装电镀双曲线；客户换液/recipe验证成本高 |
+| 软件和服务 | $190m—$200m服务；软件另有attach | 20%—25% | 4.0 | 4.0 | 3.5 | **4.5** | 7300+活跃系统、400+站点、13季连续增长；软件数据/recipe与硬件绑定 |
+| 硅光量测（交叉应用） | $5m—$15m，不能与上表相加 | >50%，低基数 | 3.8 | 3.0 | 3.0 | 3.5 | 市场CAGR高，但尚无大额量产/订单披露；可复用既有平台，ROIC潜力高 |
+
+**垄断能力的真实边界：**Nova 在 Metrion inline SIMS、某些 XPS/材料和 integrated CMP 有局部单点领先，但不是全市场垄断。CD/film 有 KLA/Onto/ASML，先进封装有 KLA/Camtek/Onto/Applied，AFM/X-ray 有 Bruker/Park/NFI/Rigaku。它的定价权来自 POR、recipe、matching、低 failure tolerance 和相对设备总成本很小，而不是没有替代者。
+
+## 七、一年后关键产品收入：基准、乐观、极度乐观
+
+预测期为 **2026-07-01至2027-06-30附近的未来十二个月**；当前基准是按2026Q2指引中值估算的最近十二个月收入约 **$932.5m**。以下主表产品池尽量互斥；“硅光”等交叉应用不再相加。
+
+| 产品/业务 | 情景 | 一年后收入贡献 | 对当前中值增速 | AI重要性 | 紧急性 | 供需紧张 | 垄断/溢价 |
+|---|---|---:|---:|---:|---:|---:|---:|
+| 前道 Integrated/OCD | 基准 | **$380m—$420m** | 约 +18% | 5.0 | 4.5 | 4.0 | 4.0 |
+|  | 乐观 | **$410m—$460m** | 约 +28% | 5.0 | 4.7 | 4.4 | 4.2 |
+|  | 极度乐观 | **$450m—$520m** | 约 +43% | 5.0 | 5.0 | 4.8 | 4.5 |
+| WMC/SemDex/Prism AP | 基准 | **$120m—$145m** | 约 +43% | 5.0 | 5.0 | 4.5 | 4.0 |
+|  | 乐观 | **$150m—$185m** | 约 +81% | 5.0 | 5.0 | 4.8 | 4.3 |
+|  | 极度乐观 | **$190m—$240m** | 约 +132% | 5.0 | 5.0 | 5.0 | 4.5 |
+| Metrion | 基准 | **$60m—$80m** | 约 +56% | 4.8 | 4.8 | 4.5 | 4.7 |
+|  | 乐观 | **$85m—$110m** | 约 +117% | 4.9 | 5.0 | 4.8 | 4.8 |
+|  | 极度乐观 | **$110m—$145m** | 约 +183% | 5.0 | 5.0 | 5.0 | 4.9 |
+| VeraFlex/Elipson | 基准 | **$110m—$135m** | 约 +20% | 4.5 | 4.4 | 4.0 | 4.4 |
+|  | 乐观 | **$130m—$160m** | 约 +41% | 4.7 | 4.7 | 4.5 | 4.6 |
+|  | 极度乐观 | **$155m—$195m** | 约 +71% | 4.8 | 4.9 | 4.8 | 4.7 |
+| Chemical | 基准 | **$120m—$145m** | 约 +23% | 4.5 | 4.5 | 4.0 | 4.2 |
+|  | 乐观 | **$145m—$175m** | 约 +49% | 4.7 | 4.8 | 4.5 | 4.4 |
+|  | 极度乐观 | **$175m—$220m** | 约 +84% | 4.8 | 5.0 | 4.8 | 4.6 |
+| Services | 基准 | **$210m—$225m** | 约 +12% | 4.0 | 4.0 | 3.5 | 4.5 |
+|  | 乐观 | **$225m—$245m** | 约 +21% | 4.1 | 4.2 | 3.8 | 4.6 |
+|  | 极度乐观 | **$245m—$270m** | 约 +32% | 4.2 | 4.4 | 4.2 | 4.7 |
+
+### 三情景成立条件
+
+- **基准：**Q2 $245—255m兑现；WFE mid-teens；GAA/DRAM/AP均增长；WMC从TOR转多台复购；Metrion由两家客户向fleet扩张；亚洲工厂2026年末上线；新平台毛利被规模吸收。
+- **乐观：**至少两家额外客户把 WMC/Metrion 转为 POR；HBM4/advanced DRAM和2nm/GAA提前锁工具；2027订单覆盖明显扩大；客户接受更少折扣和软件/服务bundle。
+- **极度乐观：**Rubin/MI450/custom ASIC/HBM4/2nm/hybrid bonding同时超计划；WMC fleet orders跨多个顶级客户；供应链与应用工程师扩容成功；中国收入未因出口规则下滑；无重大验收跨期。
+
+## 八、BOM、真实单位内容量与价格传导
+
+### 8.1 单机 ASP 与 BOM 拆分（R-est.）
+
+设备商不披露单机报价和 BOM。以下用公司约60%产品毛利率、项目内检测量测设备行业模型和典型系统复杂度反推；BOM百分比为 **COGS内部**，不是ASP占比。[项目内：半导体检测量测设备](../../行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-07-10.md)
+
+| 产品 | 典型ASP | COGS内BOM/交付成本 | 当前产品毛利率 | 主要价格传导 |
+|---|---:|---|---:|---|
+| i/Prism/VeloCD/T/MMSR dimensional/OCD | **$2m—$8m/台** | 光源/optics/detector 28%—36%；stage/mechatronics 16%—22%；compute/ADC 10%—16%；handling/vacuum 8%—12%；integration/calibration/apps 15%—22%；warranty/logistics 5%—8% | 60%—65% | 以 throughput、precision、matching 和 yield saved 定价；通常通过少打折、软件bundle、优先allocation传导，而非公开涨价 |
+| WMC/SemDex advanced-package optical | **$1.5m—$5m/台** | 多光学sensor/camera 25%—33%；warpage/多形态handling和stage 20%—26%；compute 10%—15%；mechanics 8%—12%；apps/calibration 18%—24%；warranty 5%—7% | 52%—60% | 新平台前几台应用支持压毛利；一台替代多个单传感器站点、支持in-field upgrade可提高ASP和attach |
+| Metrion inline SIMS | **$3m—$8m/台** | primary ion/source与mass analyzer 22%—30%；high-vacuum 15%—22%；stage/wafer handling 12%—18%；detector/electronics 10%—15%；integration/apps/reference 20%—27%；warranty 4%—7% | 55%—63% | 从lab抽检转inline near-real-time SPC的报废避免价值远高于BOM；复购后apps成本下降、毛利提升 |
+| VeraFlex XPS/XRF / Elipson Raman | **$2.5m—$7m/台** | X-ray/source/optics/detector 25%—35%；vacuum/stage 18%—24%；compute/signal chain 10%—15%；handling 8%—12%；integration/apps 18%—24%；warranty 4%—7% | 60%—68% | 300台XPS installed base、recipe与reference correlation带来复购；新竞争者需重做GR&R/yield qualification |
+| AncoScene/Ancolyzer/DMR | **$0.5m—$2.5m/配置** | 分析sensor/HPLC/CVS/titration 22%—32%；fluidics/sample handling 18%—25%；dosing/replenishment 12%—20%；controls/software 10%—15%；integration/recipe 18%—25%；warranty 5%—8% | 52%—60% | 以化学品节省、plater uptime、避免bath excursion和环保合规ROI定价；recipe与工艺认证形成锁定 |
+| 独立软件/大升级 | **$0.1m—$1m+/站点或fleet** | 研发摊销、服务器/算力、部署和支持为主；硬件BOM低 | 75%—90%增量毛利 | 随硬件打包、按fleet/compute/功能授权；客户数据和recipe越多，切换成本越高 |
+| 年度服务 | 通常约新机ASP的 **8%—12%/年** | 现场工程师、备件、物流、远程支持、保修准备 | 45%—50% | 从time-and-material向年度合约；升级/产能利用率提高ARPU |
+
+### 8.2 每 MW / rack / GPU / optical port 的“真实内容量”
+
+**直接 BOM 结论：全部为 $0。**Nova 的设备安装在晶圆厂/封装厂，不安装在 AI rack、GPU 板卡或 optical module 内。把设备收入写成“每rack直接物料”会误导。
+
+为了做需求传导，本报告另算 **经济分摊量**：假设未来一年全球先进 AI GPU/ASIC 当量 **800万—1,200万颗**；典型AI rack 72颗加速器、IT负载120—140kW，即约 **7.1—8.3 rack/MW、514—600颗/MW**；每颗加速器对应 8—18 个高速 optical-port 当量。该分摊只用于敏感度，不是客户报价或物理BOM。
+
+| Nova产品池 | 当前AI可归因年化收入（R-est.） | 每GPU/ASIC经济分摊 | 每72-GPU rack | 每MW | 每optical-port经济分摊 | 直接物料含量 |
+|---|---:|---:|---:|---:|---:|---:|
+| 前道 Integrated/OCD | $120m—$170m | **$10—$21** | $720—$1,512 | $5.1k—$12.6k | $0.6—$2.6 | **$0** |
+| WMC/SemDex/Prism AP | $70m—$90m | **$6—$11** | $432—$792 | $3.1k—$6.6k | $0.3—$1.4 | **$0** |
+| Metrion | $25m—$40m | **$2—$5** | $144—$360 | $1.0k—$3.0k | $0.1—$0.6 | **$0** |
+| VeraFlex/Elipson | $35m—$55m | **$3—$7** | $216—$504 | $1.5k—$4.2k | $0.2—$0.9 | **$0** |
+| Chemical | $45m—$70m | **$4—$9** | $288—$648 | $2.1k—$5.4k | $0.2—$1.1 | **$0** |
+| AI相关服务/软件 | $35m—$55m | **$3—$7** | $216—$504 | $1.5k—$4.2k | $0.2—$0.9 | **$0** |
+| **合计** | **$330m—$480m** | **$28—$60** | **$2.0k—$4.3k** | **$14k—$36k** | **$1.6—$7.5** | **$0** |
+
+### 8.3 价格传导链
+
+`AI算力需求↑ → GPU/ASIC/HBM ASP与数量↑ → foundry/memory/AP CAPEX↑ → 每片关键量测点和sampling↑ → Nova订单↑ → 关键模块/芯片成本↑ → Nova少折扣+软件服务bundle+下一代平台ASP↑`
+
+关键区别：
+
+- **Nova 不按 GPU 数量直接收钱。**同一批工具可服务多代芯片、多个客户产品；工具生产率提高会抵消台数。
+- **价格与良率损失挂钩。**一次漏掉的 GAA/HBM excursion 可报废数千万美元晶圆/封装；能缩短 feedback loop 的工具有远高于BOM加成的价值。
+- **throughput是隐含价格。**如果新平台吞吐翻倍、ASP上涨30%，客户的 cost per measured wafer仍可能下降。
+- **供不应求通常不出现公开spot premium。**更常见的是取消折扣、优先allocation、non-cancellable deposit、软件/服务捆绑和提前锁2027交付。
+
+## 九、当前产能、供应链采纳与认证阶段
+
+### 9.1 当前美元产能能力（R-est.）
+
+这里的“产能能力”是正常产品组合下可确认的年收入能力，不是订单或目标。2026Q2指引中值年化约 **$1.0bn**，作为最低可验证锚；新设施尚未全部满产。
+
+| 产品/产能中心 | 当前年收入能力 | 当前利用/瓶颈 | 供应链采纳与认证 |
+|---|---:|---|---|
+| 前道 dimensional；Israel为主 | **$360m—$410m** | optics、stage、定制件、应用工程师和tool matching；不是普通装配空间 | GAA四家领先制造商均有定位；leading logic GAA CMP全套采用并有2026订单；CD/film第二大 |
+| WMC/SemDex AP；Mannheim | **$100m—$125m** | 2025新厂令AP optical能力约3倍；瓶颈转向多传感器校准、warped-wafer handling和customer acceptance | WMC：2026-07 leading foundry TOR；多个memory/foundry部署；此前3客户用于HBM/功率器件；hybrid bonding处早期HVM |
+| Metrion；Fremont | **$55m—$75m** | 高真空、ion source/mass analyzer、reference与fab应用人员；Fremont bays在2026H1翻倍 | 两家全球领先logic/memory用于GAA/advanced DRAM；leading memory对DRAM/3D NAND复购；从初始采用向多台fleet过渡 |
+| VeraFlex/Elipson；Fremont/Israel | **$100m—$130m** | X-ray/source/detector、真空和Raman signal链；recipe portability | XPS累计第300台；Elipson为领先foundry GAA TOR并有多台HVM；VeraFlex IV多客户GAA，3D NAND charge compensation上线 |
+| Chemical；Bad Urach | **$105m—$135m** | HPLC/CVS/titration模块、fluidics、客户化recipe和湿法工艺集成 | AncoScene在leading Asia memory获份额并多台2026交付；Ancolyzer/DMR已有前后道HVM，客户名未披露 |
+| Service/软件；全球31 sites | **$210m—$230m** | 682名R&D、全球field apps与备件网络；人才培养2—5年 | 7300+ active systems、400+ customer sites；服务13季连续增长，成熟度最高 |
+| **公司合计** | **约$0.93bn—$1.11bn** | 与Q2指引年化$1.0bn吻合 | 新亚洲工厂预计2026年末运营，未来能力将高于当前区间 |
+
+### 9.2 认证阶段定义
+
+- **Demo/论文：**只证明可测，不证明 cost-of-ownership 或HVM可靠性。
+- **Evaluation/qualification：**客户做GR&R、correlation、matching、uptime和yield验证，通常6—18个月。
+- **Tool of record / POR：**进入特定工艺标准流程；仍需复制机matching和产线验收。
+- **Fleet adoption：**同客户多台、多fab、多layer复购；这是收入质量最高阶段。
+
+Nova 当前最成熟的是 integrated/OCD、XPS和service；Elipson/Metrion位于 TOR→fleet 的早中期；WMC位于首批TOR/多客户deployment→快速fleet扩张；hybrid-bond VTS-ML与硅光仍偏早期。
+
+## 十、一年后产能能力、采纳程度与认证阶段：三情景
+
+| 产品 | 基准产能 / 认证阶段 | 乐观产能 / 认证阶段 | 极度乐观产能 / 认证阶段 |
+|---|---|---|---|
+| 前道 Integrated/OCD | **$420m—$470m**；现有GAA客户复制机，CMP全套进入更多layer | **$470m—$540m**；至少一家新增global TOR、3nm→2nm提前拉货 | **$530m—$610m**；四家GAA同时大规模扩产，tool slot前置到2027H2 |
+| WMC/SemDex AP | **$130m—$165m**；现有foundry TOR转多台、memory/foundry 3—5家有效deployment | **$180m—$230m**；2—3家额外TOR，hybrid bond/HBM4多层采用 | **$240m—$310m**；WMC成为跨HBM/logic/panel的事实平台，fleet order跨年度锁量 |
+| Metrion | **$75m—$100m**；两类客户由1—2台扩到多台/fab | **$105m—$140m**；新增GAA或memory TOR，多个关键implant/dopant层inline化 | **$145m—$195m**；inline SIMS由利基变主流SPC，三大memory及多家logic广泛采用 |
+| VeraFlex/Elipson | **$120m—$150m**；Elipson和VeraFlex复制到更多HVM layer | **$155m—$195m**；GAA/DRAM新材料同时放量，hybrid XPS+Raman+OCD占比上升 | **$200m—$255m**；CFET/4F²/3D DRAM提前，客户难以找到等效第二源 |
+| Chemical | **$125m—$155m**；AncoScene在leading memory复购，AP强双位数 | **$165m—$210m**；HBM4/hybrid bonding使plating/clean化学控制成为多站点标准 | **$220m—$280m**；多家memory/foundry大规模自动补液、前后道同时超预期 |
+| Service/软件 | **$230m—$250m**；年度合约与升级持续，软件attach提升 | **$250m—$280m**；fleet软件/AI modeling独立收费比例提高 | **$280m—$320m**；大installed-base形成高ARPU闭环，产能约束主要在field apps |
+| **公司合计能力** | **$1.10bn—$1.29bn** | **$1.33bn—$1.60bn** | **$1.62bn—$1.97bn** |
+
+**注意：**产能上限不等于收入。极度乐观情景还要求客户验收、关键 optics/source/stage、应用工程师、出口许可和产品良率同步满足。亚洲工厂可解决装配/物流/区域load balancing，却不能瞬间复制recipe、reference数据和POR。
+
+## 十一、根据订单积压与供给预测未来一年增速
+
+### 11.1 订单证据链
+
+| 日期 | 客户/项目 | 金额 | 交付窗口 | 证据强度与结论 |
+|---|---|---:|---|---|
+| 2026-07-02 | leading global foundry；WMC多层先进封装 | 未披露 | 随客户产能扩张；预计后续deployment | **强：**竞争评估后TOR；但匿名客户且无数量 |
+| 2026Q1电话会 | leading Asian memory；AncoScene | 未披露 | **2026年多台交付** | **强：**具体交付窗口、市场份额提升 |
+| 2026Q1电话会 | WMC/SemDex；先进存储/封装相关 | 未披露 | 2026并延伸到2027 | **中强：**management称bookings robust，但机器转录的具体应用词存在歧义；未给台数 |
+| 2026-01-29 | 两家global memory/logic；Metrion用于advanced DRAM/GAA | 未披露 | 已采购/采用，2026Q1出现record sales | **强：**跨两个终端，且后续出现复购/确认收入 |
+| 2025Q4电话会 | global leading logic；integrated GAA CMP full suite | 未披露 | **多笔2026订单已下**，随ramp追加 | **强：**full suite+HVM+multiple orders |
+| 2025Q3 | WMC三客户，用于HBM和power devices | 未披露 | 初始deployment；更多evaluation | **中强：**新平台早期，2026-07已升级为foundry TOR |
+| 2026Q1电话会 | 全公司部分客户 | 未披露 | **已收到部分2027交付订单** | **中：**证明可见度，但非全部产品/订单 |
+
+匿名客户的可能项目只能作 **R-est.映射**：台湾 leading foundry 可能对应 N3/N2/CoWoS/SoIC，韩国/美国 memory 可能对应 HBM3E/4、advanced DRAM；Intel 是唯一被公司公开点名并授予 2026 EPIC Supplier Award 的客户关系。不得把匿名公告直接写成 TSMC、Samsung、SK hynix 或 Micron 已确认订单。
+
+### 11.2 三情景订单—产能模型
+
+| 指标 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| 未来12个月模拟 bookings | **$1.17bn—$1.30bn** | **$1.45bn—$1.70bn** | **$1.85bn—$2.25bn** |
+| 模拟 B/B | **1.06—1.10x** | **1.16—1.23x** | **1.28—1.39x** |
+| 真取消率 | 2%—5% | 1%—3% | 0%—2% |
+| 推迟/验收跨期 | 8%—12% | 4%—8% | 2%—5% |
+| 未来12个月收入 | **$1.10bn—$1.18bn** | **$1.23bn—$1.38bn** | **$1.40bn—$1.62bn** |
+| 对约$932.5m比较基准的增速 | **+18%—+27%** | **+32%—+48%** | **+50%—+74%** |
+| GAAP毛利率 | 57%—59% | 58%—60% | 59%—61% |
+
+**为什么基准不是更低：**Q2指引本身已把季度收入推到 $250m中值；管理层预计H2更高；GAA CMP、Metrion、AncoScene、WMC都有多台/复购/2027可见度；行业底稿显示量检测未来一年基准市场约 **185亿—202亿美元**，先进封装专用量检测增速显著高于大盘。[项目内：半导体检测量测设备](../../行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-07-10.md)
+
+**为什么不直接采用极度乐观：**公司合同允许推迟/取消、工具要客户验收；新设施不能立刻增加qualified applications；Metrion/WMC的多客户fleet规模尚未披露；中国约占2025收入33%，出口限制和本土替代会抵消部分AI上行。
+
+## 十二、竞争格局、技术主流性、替代方案与切换成本
+
+### 12.1 分产品竞争
+
+| 细分 | Nova位置 | 主要竞争对手 | 替代技术/风险 | 客户切换成本 |
+|---|---|---|---|---|
+| Integrated/OCD/film/CD | Film/CD第二大；CMP integrated强、约25%+级份额并继续提升 | **KLA、Onto、ASML/YieldStar**；Hitachi/Nikon/Semilab；中国精测/睿励 | CD-SEM/e-beam、in-situ sensor、virtual metrology；光学模型在复杂3D结构有ambiguity | **高：**GR&R、matching、recipe、process-tool integration和yield correlation需重做 |
+| Advanced packaging optical/WMC | 新平台快速上升，foundry TOR；多传感/多形态handling是卖点 | **KLA、Camtek、Onto、Applied**；Park/NFI/Nordson/ViTrox | AFM、X-ray/CT、SAM、IR、e-beam各有不可替代区域；单纯光学不能看所有buried void | **中高：**市场尚未锁死，但一旦进入多layer/POR后切换成本迅速上升 |
+| Metrion inline SIMS | fully automated inline SIMS先发；lab-to-fab差异明显 | KLA/Applied/Bruker/Thermo/Semilab、实验室SIMS供应商、未来中国厂商 | Lab SIMS/TEM/APT更精确但慢/破坏；optical/virtual不能完整替代组成深度剖面 | **高：**reference correlation、污染控制、recipe和SPC数据积累 |
+| VeraFlex XPS/XRF | 已有300台XPS installed base，材料组成量测强 | KLA、Applied、Rigaku、Bruker、Thermo、Semilab、中国本地XPS | Raman、XRR/XRF、ellipsometry、TEM/EELS；不同模态互补而非一对一替代 | **高：**process-of-record与跨台matching；但新节点会重置部分优势 |
+| Elipson Raman | leading foundry GAA TOR，strain/crystallinity差异化 | Onto、KLA、Bruker、Thermo及专用Raman厂 | XRD、TEM、XPS、光学模型；若throughput/spot-size不足，停留在抽检 | 中高 |
+| Chemical | 通过ancosys具前后道完整平台 | **KLA、Onto、ECI/HORIBA类分析商、process-tool OEM in-situ**；本地集成商 | 客户内部lab、简化sensor、process-tool自带分析；低端容易价格竞争 | **高：**浴液recipe、plater接口、化学品和质量体系认证 |
+| 软件/服务 | 依附7300+系统，数据入口优势 | KLA 5D、Onto Discover、AMAT Process Control、ASML；PDF Solutions等中立软件 | 客户自研/统一YMS、纯软件virtual metrology；AI模型漂移和数据主权 | **很高：**历史recipe、fleet数据、uptime流程和现场工程师网络 |
+
+公司 20-F 点名主要竞争者为 **Onto、KLA**，另有 ASML、Lam、Applied 的 in-situ/量测能力；Sentronics扩展后又直接面对 Merck、Camtek和中国本地竞争者。[20-F竞争部分](https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/zk2634307.htm)
+
+### 12.2 新技术是否为未来主流
+
+| 技术 | 主流性判断 | 为什么 | 失败/替代路径 |
+|---|---|---|---|
+| GAA/2nm dimensional + materials metrology | **确定性最高，已是HVM主流** | nanosheet厚度、Si/SiGe strain、work-function层、backside power都提高量测强度 | 节点推迟、3nm延长；KLA/Onto/工艺设备原位sensor分流 |
+| Inline SIMS | **高概率从利基走向重要子类** | advanced DRAM/GAA需要dopant/contamination深度信息，lab反馈太慢 | throughput、微损伤、污染或重复性达不到fleet SPC；客户保留lab抽检 |
+| WMC式多传感先进封装量测 | **主流方向，但厂商格局未定** | warpage、TSV、TTV、topography、不同wafer/frame/panel在一台系统降低CoO | KLA/Camtek/Onto平台胜出；客户选择AFM/X-ray/SAM多机组合 |
+| Hybrid bonding | **技术主流、收入时点仍不确定** | 细pitch、HBM4/3D logic需要低电容高密度互连；CMP、Cu recess、overlay、void均需量测 | TC bonding延寿；D2W良率/throughput差；只在少数高端产品HVM |
+| AI/ML software + physical modeling | **必需能力，不一定形成独立高收入** | 光学inverse problem、tool matching和root cause必须依赖模型与数据 | 被硬件免费bundle；客户不允许跨fab数据；model drift导致不敢闭环 |
+| Silicon photonics metrology | **长期主流、小规模早期** | waveguide/modulator/coupling/alignment对CD、3D形貌和材料非常敏感 | CPO/硅光节奏推迟；量测由专用光学测试商或foundry内部工具承担 |
+
+2026年行业会议/技术资料强化了 hybrid-bond量测的紧迫性：IEEE Hybrid Bonding Symposium 已把 CMP、warpage、X-ray/acoustic、测试和yield modeling作为核心议题；SEMI Korea 2026的 M&I Forum 也安排了 Nova 的“Advanced Optical Metrology Solutions for AI Packaging Processes”。[EE Times会议回顾](https://www.eetimes.com/hybrid-bonding-comes-of-age-slowly-and-collectively/)；[SEMICON Korea 2026日程](https://www.semiconkorea.org/sites/semiconkorea.org/files/2026-01/Conference%20Guide%202026_lite_0109_4.pdf)
+
+### 12.3 客户替换成本
+
+1. **认证成本：**初始6—18个月，复制机还要1—2季度 matching/acceptance；客户要证明repeatability、precision、accuracy、uptime和yield correlation。
+2. **数据与recipe成本：**OCD/材料量测依赖物理模型、reference metrology和历史数据；换硬件通常也要换模型和guardband。
+3. **工艺设备集成：**Integrated metrology直接与CMP/etch/deposition设备及APC闭环，接口、节拍和recipe共同验证。
+4. **失败成本：**单次错判可报废高价值GAA/HBM晶圆或整包；设备本身只占fab CAPEX小比例，客户不愿为低价承担重新爬良率。
+5. **真正降低切换成本的因素：**新节点重置、 incumbent供货受限、出口管制、竞争者在 sensitivity/throughput/CoO上出现代际优势，或客户强制second source。
+
+## 十三、主要风险、反证指标与催化剂
+
+### 13.1 风险
+
+| 风险 | 当前暴露 | 反证/预警指标 |
+|---|---|---|
+| 高估值 | PE 59.7x、P/S 16.8x | 收入增速低于15%、forward PE仍>40x；同行增长更快但估值更低 |
+| 客户集中 | 前五大客户51%，单一客户最高23% | 任一10%+客户capex/acceptance推迟；应收增长比收入高20pt以上 |
+| Backlog质量 | 可低罚金/无罚金延迟或取消，金额不披露 | 2027订单只停留在口头可见度；递延收入继续下降；H2不高于H1 |
+| 新产品量产 | Metrion/WMC早期fleet，前几台apps成本高 | record只出现一季；无多台复购；客户评价停留在evaluation而非TOR |
+| 供应链/产能 | 单一主工厂/产品线、limited/sole-source组件；芯片成本压力 | 交期拉长、毛利跌破57%、库存/预付款异常上升、新亚洲工厂延期 |
+| 中国/出口限制 | 2025中国33%收入，长期目标25%—30% | 中国收入下降>15%；高端配置许可受限；本地film/OCD/XPS通过批量复购 |
+| 技术替代 | KLA/Onto/AMAT/ASML平台化；AFM/X-ray/SAM互补 | 新节点POR丢失、CD/film份额停止上升、tool matching失败 |
+| 以色列地缘 | 两个主要optical/Raman制造点在Israel | 人员/物流中断、保险或供应商转移成本上升 |
+| 可转债稀释 | 转股价$320.16，现价明显更高 | diluted share长期高于34m；capped call上限以上的额外稀释/对冲压力 |
+| 会计身份变化 | 公司提示可能失去foreign private issuer地位 | 披露与合规费用增加，OpEx/管理注意力受影响 |
+
+### 13.2 未来12个月催化剂
+
+1. **2026-08-06 Q2财报：**是否达到 $245—255m、GM约57%、H2高于H1表述是否强化。
+2. **WMC新增TOR/fleet订单：**是否从匿名单客户扩到多memory/foundry、多layer和明确交付窗口。
+3. **Metrion复购：**两家采用是否扩为multiple tools per fab；是否出现第三/第四家全球客户。
+4. **GAA累计收入：**2024—2026累计 **$500m**目标是否超额；2026是否明显高于2025。
+5. **先进封装占比：**从Q1 mid-20s产品收入继续上升，且毛利不被新机support拖累。
+6. **亚洲工厂/产能：**2026年末如期运营；Fremont翻倍后的Metrion/VeraFlex交付是否提速。
+7. **软件独立变现：**MARS/FIT/FM/HPC是否从feature/bundle转为可披露license/recurring收入。
+8. **Silicon photonics：**出现明确产品、客户、qualification或HVM收入，而不是只在deck和会议出现。
+
+## 十四、估值与最终投资判断
+
+| 情景 | 未来12个月收入 | 假设净利率 | 净利润 | 现市值对应远期PE | 估值含义 |
+|---|---:|---:|---:|---:|---|
+| 基准 | $1.10bn—$1.18bn | 28%—30% | $308m—$354m | **约43x—49x** | 仍高；需持续20%上下增长和份额提升才能消化 |
+| 乐观 | $1.23bn—$1.38bn | 29%—31% | $357m—$428m | **约35x—42x** | 可支撑高质量成长溢价，但上行取决于multiple不收缩 |
+| 极度乐观 | $1.40bn—$1.62bn | 30%—32% | $420m—$518m | **约29x—36x** | 才能把当前估值降到大型优质设备股区间；概率明显低于基准 |
+
+净利率情景包含利息收入；若公司动用现金做收购，金融收入可能下降、并产生摊销和整合成本。现有 forward PE 42x 与 forward P/S 13.2x 已大致把市场预期放在基准上沿/乐观下沿。
+
+**最终判断：**
+
+- **公司层面：看多。**Nova 已证明能持续跑赢 WFE，且从 optical CD 成功扩到 materials、chemical、advanced packaging；Metrion/WMC/AncoScene 的证据从发布走向采用、复购和TOR，资产负债表足以支持R&D、产能和M&A。
+- **股票层面：中性偏多但安全边际有限。**当前位置更适合以订单兑现、产品复购和估值纪律为条件，而不是仅凭“AI设备股”标签追价。
+- **最优跟踪组合：**WMC TOR→fleet、Metrion多客户复购、GAA累计$500m、AP产品占比、2027订单窗口、GAAP GM≥57%、应收/库存增速不显著高于收入。
+- **最关键否定条件：**Q2或H2收入低于管理层斜率；WMC/Metrion半年内无新增复购；advanced packaging占比上升但GM跌破55%；中国/大客户导致订单推迟；亚洲产能上线但利用率不足。
+
+## 十五、来源与估算说明
+
+### 公司一手资料
+
+- [Nova 2025 Form 20-F](https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/zk2634307.htm)
+- [2026Q1业绩](https://www.novami.com/investors/press-releases/nova-reports-record-first-quarter-2026-financial-results/)；[2026Q1电话会](https://earningscall.biz/e/nasdaq/s/nvmi/y/2026/q/q1)；[2026Q1投资者材料](https://www.novami.com/wp-content/uploads/2026/05/nova-investor-presenation-q12026-1.pdf)
+- [2025Q4/FY2025业绩](https://www.novami.com/investors/press-releases/nova-reports-fourth-quarter-and-record-full-year-2025-results/)；[Q4电话会](https://stockanalysis.com/stocks/nvmi/transcripts/397698-q4-2025/)
+- [2025Q3业绩](https://www.novami.com/investors/press-releases/nova-reports-record-third-quarter-2025-financial-results/)；[Q3电话会摘要](https://fintool.com/app/research/companies/NVMI/documents/transcripts/q3-2025)
+- [2025Q2业绩](https://www.novami.com/investors/press-releases/nova-reports-record-second-quarter-2025-financial-results/)；[Q2电话会](https://stockanalysis.com/stocks/nvmi/transcripts/344017-q2-2025/)
+- [2025Q1业绩PDF](https://www.novami.com/wp-content/uploads/2025/05/pr20250508-q12025-website.pdf)；[Q1电话会](https://stockanalysis.com/stocks/nvmi/transcripts/315523-q1-2025/)
+- [Metrion两家全球客户采用，2026-01-29](https://www.novami.com/investors/press-releases/nova-announces-adoption-of-metrion-by-two-leading-global-manufacturers/)
+- [WMC成为头部foundry tool-of-record，2026-07-02](https://www.novami.com/investors/press-releases/nova-wmc-expanding-adoption-across-the-most-advanced-packaging-processes/)
+- [Nova产品总览](https://www.novami.com/products/products-overview)；[WMC产品页](https://www.novami.com/nova-product/nova-wmc/)
+- [2026 SPIE：hybrid-bond Cu recess VTS-ML](https://www.novami.com/publications/inline-monitoring-of-hybrid-bonding-cu-recess-with-vertical-traveling-scatterometry-machine-learning/)
+
+### 产业、会议和市场数据
+
+- [项目内：半导体检测量测设备，2026-07-10](../../行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-07-10.md)
+- [项目内：AI芯片前道制造设备，2026-07-10](../../行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-07-10.md)
+- [项目内：先进逻辑晶圆代工和封装，2026-07-10](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-07-10.md)
+- [Semiconductor Engineering：hybrid bonding与Cu recess/roughness，2026-06](https://semiengineering.com/how-to-build-billions-of-bumps/)
+- [Semiconductor Engineering：Making Hybrid Bonding Better，2026-03](https://semiengineering.com/making-hybrid-bonding-better/)
+- [EE Times：IEEE Hybrid Bonding Symposium 2026回顾](https://www.eetimes.com/hybrid-bonding-comes-of-age-slowly-and-collectively/)
+- [SEMICON Korea 2026 M&I Forum日程](https://www.semiconkorea.org/sites/semiconkorea.org/files/2026-01/Conference%20Guide%202026_lite_0109_4.pdf)
+- [NVMI 2026-07-10行情与估值](https://stockanalysis.com/stocks/nvmi/statistics/)
+
+### R-est. 模型限制
+
+1. 公司不披露 dimensional/materials/chemical/软件的收入、利润率、单机ASP、台数、订单额、backlog、B/B或取消率；相关数字均用产品/服务总额、终端mix、公司定性描述、行业ASP和设施信息反推。
+2. Advanced Packaging、GAA、HBM、AI-related 是重叠应用口径，不能与产品类别机械相加。本报告的互斥收入表按产品池归类，应用层只做交叉验证。
+3. 每GPU/rack/MW/optical-port数字是上游资本设备收入的经济分摊，直接硬件BOM始终为0；分母变化会显著改变结果。
+4. 极度乐观情景是供需压力测试，不是概率最高的目标价模型。

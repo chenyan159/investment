@@ -1,0 +1,308 @@
+# ICHR Ichor Holdings 公司调研：AI/HBM 前道设备复苏中的流体交付子系统杠杆（2026-06-11）
+
+> 研究范围说明：本报告按 `公司调研/公司索引.md` 的正式分类写入 `晶圆制造_前道设备/`。项目内只使用 `行业调研/` 下的半导体设备、流体系统、AI 芯片前道制造和 AI 数据中心产业链资料；未使用 `特征量化/`、`日度资料/`，也未引用既有公司调研旧文内容。  
+> 核心结论：Ichor Holdings（NASDAQ: ICHR）不是 AI 数据中心直接供应商，也不是 GPU、光模块、液冷或机电设备公司。它是半导体前道设备 OEM 的关键流体交付子系统供应商，主要卖气体输送、化学液体输送、精密加工/焊接组件和少量自有模块。AI 数据中心对 Ichor 的传导链是：AI GPU/ASIC/HBM 需求 -> leading-edge logic、DRAM/HBM、先进封装扩产 -> etch/deposition/clean/CMP/electroplating 工具订单 -> 工具内 gas panel、chemical delivery、weldment/chamber assembly 和控制模块内容量上升。这个传导链真实，但中间隔着 WFE 周期、客户排产和设备认证，不应把 Ichor 直接当作 AI 机柜 BOM 公司。
+
+## 1. 公司整体业务、投资人认知和产业链位置
+
+### 1.1 公司做什么
+
+Ichor Holdings 是半导体资本设备供应链中的子系统和组件公司。公司官方定义是“critical fluid delivery subsystems and components”的设计、工程和制造供应商，核心客户是半导体设备 OEM。它的主要产品包括：
+
+- 气体输送子系统：gas delivery subsystems、gas panels、gas sticks、manifolds，用于把特殊工艺气体以精确流量、压力和时间窗口输送到 etch、deposition 等前道制程设备。
+- 化学液体输送子系统：chemical delivery、blending、dispensing、slurry/cleaning/electroplating 相关流体模块，用于 CMP、电镀、清洗、显影/刻蚀后处理等。
+- 精密加工和焊接组件：precision-machined components、weldments、e-beam/laser welded components、vacuum/hydrogen brazing、surface treatment，用在真空腔体、气路、化学液路和设备结构件。
+- 自有/更高附加值产品：liquid flow controller、remote plasma source、process monitoring/control 等。公司在 2025-2026 年反复强调 proprietary product portfolio 和新产品 qualification，但目前收入占比仍小。
+
+公司不是芯片厂，不卖晶圆制造设备整机，也不直接服务云厂商数据中心。它在产业链中的位置更接近 Lam Research、Applied Materials、TEL、ASM、Kokusai 等设备 OEM 的外包子系统平台。
+
+### 1.2 投资人眼中的 Ichor
+
+投资人通常把 ICHR 看成三个东西的组合：
+
+1. WFE 周期弹性股：收入和毛利率跟随 wafer fab equipment 资本开支、尤其 etch/deposition 订单周期波动。
+2. 低毛利但高经营杠杆的设备子系统集成商：Ichor 的毛利率显著低于 MKS、VAT、Advanced Energy、Entegris 等核心部件或材料公司，因为它有较多 BOM pass-through、外包集成和客户集中议价压力。但一旦产能利用率恢复，经营杠杆很强。
+3. AI/HBM 的间接受益股：AI 数据中心本身不买 Ichor 产品，但 AI GPU/ASIC 和 HBM 扩产提高 leading-edge logic、DRAM/HBM、先进封装对 etch/deposition/clean/CMP/electroplating 工具的需求，进而提高 Ichor 的 gas/chemical delivery 内容量。
+
+### 1.3 最近 3 年重大业务变化、转型和管理变化
+
+| 时间 | 变化 | 对业务的意义 |
+|---|---:|---|
+| 2023-2024 | WFE 下行后收入从 2022 高点回落，毛利率受低利用率和客户排产影响 | Ichor 的周期性暴露非常直接，固定成本吸收不足时利润会被快速压缩 |
+| 2025 | 年收入恢复到 9.4765 亿美元，同比增长 11.6%，但 GAAP 净亏损扩大到 5278 万美元，非 GAAP EPS 仅 0.23 美元 | 收入已经恢复，盈利质量仍被重组、低毛利项目、库存和产能转移拖累 |
+| 2025Q3 | 启动 Consolidation Restructuring Plan，计入库存减值、北美设施相关 write-off；同时退出 Scotland 和 Korea 运营的相关成本 | 公司在把产能和成本结构重新对齐到更高利用率、更低成本地区 |
+| 2025-2026 | 强调 Mexico facility、Malaysia capacity、India engineering 和 proprietary product portfolio | 从单纯外包制造向更强工程/设计参与、更多自有模块和更低成本制造网络转型 |
+| 2025-11 | CTO Phil Barros 升任 CEO，原 CEO Jeff Andreson 离任；公司公告称这是董事会批准的 succession plan | 技术负责人接任，理论上强化新产品、设计导入和工程化执行，但也带来管理换挡风险 |
+| 最近 3 年 | 未见改变业务边界的大型并购落地；10-K 仍提示 acquisition pipeline 和并购整合风险 | 转型主线不是大并购，而是产能布局、产品组合和客户项目导入 |
+
+### 1.4 产业链定位
+
+项目内行业资料把 Ichor/UCT 型公司归在“半导体设备子系统与真空/RF/流体模块”中的流体交付和精密组件集成层。这个层级的特点是：
+
+- 上游：UHP valves、MFC、fittings、PFA/PVDF/PTFE tubing、filters、sensors、regulators、purifiers、weldments、precision machining、clean assembly。
+- 中游：Ichor 把上述部件集成为设备 OEM 可直接装机的 gas panel、gas box、chemical delivery module、precision assembly。
+- 下游：Lam/Applied/TEL 等设备 OEM，再卖给 TSMC、Samsung、Intel、SK hynix、Micron、OSAT 等晶圆厂和先进封装厂。
+- 价值捕获：粘性来自工具 design-in、质量体系、交付可靠性、洁净装配和客户工程协同；弱点是大客户集中、BOM pass-through、毛利率低于核心元件厂。
+
+## 2. 最新股价、估值和财务健康度（2026-06-11 快照）
+
+| 指标 | 数值 | 日期/口径 | 评价 |
+|---|---:|---|---|
+| 最新股价 | 84.04 美元 | Yahoo Finance chart endpoint，2026-06-11 13:00 PT | 已接近 52 周高点 84.59 美元 |
+| 52 周区间 | 13.12-84.59 美元 | 2026-06-11 | 股价已经充分反映 WFE/AI 复苏预期 |
+| 流通/已发行普通股 | 3474.4772 万股 outstanding | 公司 2026Q1 资产负债表，2026-03-27 | 用于市值估算 |
+| 市值 | 约 29.2 亿美元 | 84.04 美元 x 3474.5 万股 | 小盘 WFE 周期股已被重估 |
+| TTM 收入 | 9.5926 亿美元 | 2025Q2-Q4 + 2026Q1 | Q1 2026 LTM 仍低于 2022 高峰，但正在恢复 |
+| P/S | 约 3.0x | 市值 / TTM 收入 | 对一个当前非 GAAP 毛利率约 12-13% 的集成商偏高 |
+| GAAP TTM 净利润 | -5069 万美元 | 2025Q2-Q4 + 2026Q1 | TTM PE 不具备正向解释力 |
+| GAAP PE | 负值，约 -57x | 按 TTM 净亏损估算 | 不能当作便宜信号 |
+| Forward PE | 约 53x | Yahoo 2026-06-10 forward P/E 快照；公司 Q2 指引和市场预期口径 | 取决于 2026H2 毛利率修复是否兑现 |
+| FY2025 收入增速 | +11.6% YoY | 947.7M vs 849.0M | 已经跑赢低迷 WFE 背景 |
+| 2026Q1 收入增速 | +4.7% YoY，+14.5% QoQ | 256.1M vs 244.5M/223.6M | 复苏从 Q4 低点开始 |
+| 2026Q2 指引收入增速 | midpoint 300M，+24.8% YoY，+17.2% QoQ | 公司 2026Q1 指引 | 这是当前最重要的正面信号 |
+| 2026Q1 GAAP 毛利率 | 12.6% | 公司 2026Q1 | 比 2025Q4 的 9.4% 明显修复 |
+| 2026Q1 non-GAAP 毛利率 | 12.8% | 公司 2026Q1 | 仍低于上行周期潜在 15-18%+ 水平 |
+| 2026Q1 GAAP 净利率 | -1.0% | -2.469M / 256.068M | 接近盈亏平衡 |
+| 2026Q1 non-GAAP 净利率 | 2.1% | 5.3M / 256.1M | 盈利恢复早期 |
+| 现金 | 8909 万美元 | 2026-03-27 | 现金充足但 Q1 FCF 为负 |
+| 长债含当前部分 | 1.220 亿美元 | 2026-03-27 | 债务不重 |
+| 净债务 | 约 3295 万美元 | 债务 122.0M - 现金 89.1M | 杠杆低于多数周期性工业公司 |
+| 流动比率 | 2.82x | 442.1M current assets / 156.7M current liabilities | 短期偿债健康 |
+| 库存 | 2.523 亿美元 | 2026-03-27 | 占 TTM 收入 26.3%，复苏期可支持交付，但若订单推迟也会压现金 |
+| 总负债/权益 | 0.46x | 304.5M / 668.0M | 资产负债表健康 |
+
+财务健康度判断：资产负债表是健康的，主要风险不是破产式负债，而是周期错配和毛利率修复失败。Ichor 净债务只有约 3300 万美元，流动比率 2.8x，债务/权益约 0.18x，短期偿债压力低。真正要跟踪的是三件事：库存是否转化为收入、Mexico/Malaysia/India 产能转移是否提升毛利率、Q2 以后订单拉动是否持续到 H2。
+
+## 3. 最近五个财报季度：收入、利润率、订单和交付信号
+
+Ichor 不披露标准化 backlog、bookings、book-to-bill、lead time 或取消率。下表的“订单/交付信号”来自公司新闻稿、指引变化和管理层措辞，属于推断，不等同于正式 backlog。
+
+| 财报季度 | 收入 | QoQ / YoY | GAAP 毛利率 | non-GAAP 毛利率 | GAAP EPS | non-GAAP EPS | 订单、交期、backlog 推断 | AI/HBM 间接暴露判断 |
+|---|---:|---:|---:|---:|---:|---:|---|---|
+| 2025Q1 | 244.5M | QoQ +4.8%；YoY 未在本次材料直接列出 | 11.7% | 12.4% | -0.13 | 0.12 | 收入高于 2025Q2，说明年初仍有客户项目交付；但后续 Q2/Q3 盈利低于预期，表明 mix 和成本未完全恢复 | 主要仍是半导体设备 OEM 周期恢复，不宜单独归因为 AI |
+| 2025Q2 | 240.3M | QoQ -1.7%；YoY +18.2% | 11.3% | 12.5% | -0.28 | 0.03 | 公司称客户需求环境“relatively steady”，继续扩展 proprietary product portfolio，并提高制造能力以匹配目标产品毛利率；Q3 指引 225-245M | AI 相关 leading-edge logic/HBM 拉动尚未明显转化为公司收入加速 |
+| 2025Q3 | 239.3M | QoQ -0.4%；YoY +13.3% | 4.6% | 12.1% | -0.67 | 0.07 | etch/deposition 需求增强，gas panel integration deliveries 被 pull-in；但其他 served markets 继续走弱。GAAP 毛利率被重组和库存减值严重压低；Q4 指引 210-230M | 这是 AI/WFE 拉动最早出现的信号，但仍被非核心市场和成本结构抵消 |
+| 2025Q4 | 223.6M | QoQ -6.6%；YoY -4.2% | 9.4% | 11.7% | -0.46 | 0.01 | 公司把 Q4 描述为 trough，2026 初客户需求有上行动能；全年收入 947.7M，+11.6% YoY | Q4 是交付低点，不能用单季度外推 2026 |
+| 2026Q1 | 256.1M | QoQ +14.5%；YoY +4.7% | 12.6% | 12.8% | -0.07 | 0.15 | Q1 高于 2 月指引中点；Q2 指引 290-310M，midpoint 300M，隐含 +17.2% QoQ、+24.8% YoY；订单能见度显著改善 | AI/HBM/leading-edge logic 通过 WFE 上行开始更明显传导到 Ichor |
+
+补充：2026Q2 不是已披露财报，但它是当前最关键的 forward signal。公司给出 290-310M 收入指引、GAAP EPS 0.10-0.20、non-GAAP EPS 0.25-0.35。若 Q2 实现 midpoint 300M，Ichor 的年化收入 run-rate 将达到 12.0 亿美元，明显高于 2025 全年 9.48 亿美元。
+
+## 4. 2026 最新指引、业务收入占比和产品拆解
+
+### 4.1 2026Q2 指引的含义
+
+| 项目 | 2026Q2 指引 | 对 2026 的含义 |
+|---|---:|---|
+| 收入 | 290-310M，midpoint 300M | 从 2025Q4 trough 的 223.6M 到 2026Q2 midpoint，两季度累计 +34.2% |
+| GAAP EPS | 0.10-0.20 | 公司从 GAAP 亏损转为正 EPS |
+| non-GAAP EPS | 0.25-0.35 | Q1 的 0.15 提升到 Q2 midpoint 0.30，经营杠杆开始释放 |
+| 增长来源 | WFE 复苏、etch/deposition 客户强、内容量/份额提升、制造转移和新产品资格认证 | 需要 Q3/Q4 延续，否则估值过高 |
+
+### 4.2 收入占比估算
+
+Ichor 作为单一经营分部披露，未按产品线披露收入。下表是基于公司产品说明、客户需求措辞、行业资料和财报节奏的估算，不能视为公司披露分部数据。
+
+| 产品/业务 | 2026Q1 估算收入贡献 | 2026Q1 收入占比估算 | 当前增速推断 | AI/HBM 相关性 | 投资重要性 |
+|---|---:|---:|---:|---|---|
+| Gas delivery systems / gas panels / gas sticks | 115-145M | 45-57% | Q2 可能 +20-30% QoQ | 高。先进 etch/deposition、GAA、HBM DRAM、3D NAND 都增加气体通道、精度和洁净要求 | 最高 |
+| Chemical delivery / blending / slurry / cleaning / electroplating | 50-75M | 20-29% | Q2 可能 +10-25% QoQ | 高。CMP、清洗、电镀、先进封装、hybrid bonding 都需要高纯化学液体系统 | 很高 |
+| Precision machining / weldments / chamber assemblies / brazing / surface treatment | 25-40M | 10-16% | +5-20% | 中高。真空腔体、气路/液路结构件和洁净组件随 WFE 同步增长 | 高 |
+| Proprietary products: liquid flow controller、remote plasma source、process monitoring/control | 8-20M | 3-8% | 小基数高增，可能 +30-80% | 中高。若进入新工具平台，单机内容量和毛利率都优于普通集成 | 高，需验证 |
+| Factory automation、defense/aerospace/medical、其他 served markets | 10-25M | 4-10% | 分化，部分仍软 | 低或间接 | 本报告低优先级 |
+
+### 4.3 官方产品与可能型号/产品族
+
+Ichor 不像芯片或设备公司那样披露大量标准型号。它更多是按客户设备平台定制子系统，公开名称以产品族为主：
+
+- Gas delivery：gas delivery systems、gas panels、gas sticks、gas boxes、specialty gas manifolds、high-purity gas control assemblies。
+- Chemical delivery：chemical delivery systems、bulk-to-point-of-use delivery、chemical blending、slurry delivery、cleaning/electroplating fluid subsystems。
+- Flow/control proprietary：liquid flow controller、process monitoring and control modules、remote plasma source。
+- Components：precision machined components、weldments、e-beam welded components、laser welded components、vacuum brazed/hydrogen brazed assemblies、surface treatment components。
+
+### 4.4 跳过的低优先级产品/业务
+
+以下业务不是没有价值，而是相对 AI/HBM/WFE 复苏主线重要性较低，本报告不做深挖：
+
+- Defense/aerospace/medical 等非半导体 served markets：收入占比低、增长不由 AI 芯片制造驱动。
+- 普通低复杂度 machining、非洁净级金属结构件：可替代性较高、价格权力弱。
+- 标准 factory automation 或一般 OEM assembly：除非绑定具体先进制程工具平台，否则不构成 AI 产业链稀缺资产。
+- 纯区域产能搬迁本身：Mexico/Malaysia/India 对利润率重要，但不是终端产品。它是成本结构变量，不是独立高增长产品。
+
+## 5. 关键产品当前贡献、AI 基建重要性和供需紧张度
+
+评分口径：5 为最高。收入贡献为当前年化/2026 run-rate 估算，不是公司披露分部数据。
+
+| 关键产品/业务 | 当前年化收入贡献估算 | 当前收入增速 | AI 基建技术栈重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 关键判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Gas delivery systems / gas panels | 520-700M | 2026Q2 run-rate 可能 +25-40% YoY | 5 | 4 | 4 | 3 | AI accelerator 带来的先进逻辑、HBM 和高层数 3D NAND 需要更多 etch/deposition 步骤，气体通道、洁净、响应速度和 leak rate 要求提高。Ichor 有强 design-in 粘性，但核心阀/MFC/传感器不完全自有，价格权力中等 |
+| Chemical delivery / blending / slurry / plating/clean | 250-380M | +15-35% | 4 | 4 | 3.5 | 3 | HBM、先进封装、CMP、电镀和清洗拉动高纯化学液体系统。客户 qualification 和 PFA/valve/filter 供应链使交期有弹性，但 Ichor 不是唯一供应商 |
+| Precision machining / weldments / chamber assemblies | 120-190M | +10-25% | 4 | 3 | 3 | 2.5 | 随 WFE 工具数量增长，腔体/焊接/洁净组件受益。竞争更分散，毛利率低于流体模块和自有产品 |
+| Proprietary liquid flow controller / remote plasma source / process monitoring-control | 40-90M | +30-80%，但小基数 | 3.5 | 3 | 3 | 3.5 | 如果进入客户新工具平台，毛利率和客户粘性可能明显高于传统集成，但当前披露不足，需要用 qualification 和 design win 追踪 |
+| Manufacturing transfer and global capacity network | 不是终端收入线 | 影响毛利率 | 3 | 4 | 3 | 2 | Mexico、Malaysia、India 带来成本和交付能力，决定 Q2 以后经营杠杆能否兑现 |
+
+## 6. 一年后关键产品收入贡献三情景
+
+假设基准：TTM 收入 9.5926 亿美元；2026Q2 midpoint 300M；行业资料显示 2026-2027 WFE、先进逻辑、DRAM/HBM 和先进封装需求继续上行。下面为未来 12 个月口径，不是自然年财务预测。
+
+| 产品/业务 | 基准情景：12 个月后收入贡献 | 乐观情景：12 个月后收入贡献 | 极度乐观情景：12 个月后收入贡献 | 情景触发条件 |
+|---|---:|---:|---:|---|
+| Gas delivery systems / gas panels | 650-720M，+25-35% | 760-850M，+45-60% | 900-1000M，+70-90% | 基准：Q2 指引兑现且 H2 不掉单；乐观：Lam/Applied/TEL etch/deposition 拉货延续；极度乐观：AI/HBM 客户锁产能，交期拉长，rush order 和内容量提升同时出现 |
+| Chemical delivery / blending / slurry / plating/clean | 330-390M，+20-35% | 420-500M，+45-70% | 540-650M，+80-110% | 基准：先进封装和 CMP/clean 订单同步恢复；乐观：HBM4、CoWoS/SoIC/hybrid bonding 拉动 POU 化学系统；极度乐观：PFA/valves/filters 交期紧，客户提前下单锁定 |
+| Precision machining / weldments / chamber assemblies | 150-190M，+10-25% | 200-240M，+30-50% | 260-320M，+65-90% | 基准：WFE 工具出货增加；乐观：复杂腔体/洁净结构件供给紧；极度乐观：客户外包比例提升且内部产能不足 |
+| Proprietary products | 70-100M，+40-80% | 110-150M，+100-180% | 170-230M，+200%+ | 基准：已有 qualification 转入小批量；乐观：多个新工具平台设计导入；极度乐观：自有产品成为客户标准模块，毛利率明显高于公司平均 |
+| 其他/低优先级业务 | 60-80M | 60-90M | 70-100M | 不是 AI 主线，主要取决于一般工业和非半导体客户 |
+| 公司总收入 | 1.25-1.35B，较 TTM +30-41% | 1.45-1.60B，+51-67% | 1.70-1.90B，+77-98% | 极度乐观要求 WFE 全面上行、客户 pull-in、产能利用率和供应链均配合，概率低但不是物理上不可能 |
+
+## 7. BOM、内容量、价格传导、产能和认证
+
+### 7.1 必须先校正：每 MW / 每 rack / 每 GPU / 每 optical port 的真实内容量
+
+Ichor 产品不进数据中心机房，不是 AI rack、GPU board、optical module 或 power/cooling BOM 的直接部件。因此：
+
+| 口径 | Ichor 直接内容量 | 解释 |
+|---|---:|---|
+| 每 MW AI 数据中心 | 0 美元直接内容量 | 数据中心建设不采购 Ichor gas/chemical delivery 子系统 |
+| 每 AI rack | 0 美元直接内容量 | Ichor 不在 rack、server、power shelf、cooling distribution unit 中 |
+| 每 GPU / AI accelerator | 0 美元直接内容量 | Ichor 不卖芯片封装、substrate、HBM、interposer 或 board 级组件 |
+| 每 optical port | 0 美元直接内容量 | Ichor 不卖 DSP、laser、TIA、PIC、connector 或 transceiver |
+| 正确内容量单位 | 每台/每组前道设备工具的 gas/chemical/precision subsystem 内容量 | 应按 etch/deposition/clean/CMP/electroplating 工具和 WFE capex 追踪 |
+
+如果强行把 AI rack 或 GPU 反推到 Ichor，会得到高度不稳定的“look-through”数字，不能作为订单验证。更可靠的链条是：AI GPU/ASIC/HBM 需求 -> 晶圆厂/HBM/先进封装 capex -> WFE 工具订单 -> Ichor 客户的 etch/deposition/clean/CMP/electroplating 工具 -> Ichor 子系统内容量。
+
+### 7.2 产品 BOM 和价格传导链
+
+| 产品/业务 | BOM 拆分估算 | 每台工具/每个系统内容量估算 | Ichor 价格传导能力 | 当前产能能力（美元计） | 认证/采纳阶段 |
+|---|---|---:|---|---:|---|
+| Gas delivery systems / gas panels | UHP valves/MFC/regulators/sensors/fittings/tubing 45-60%；manifold/weldments/frame 10-20%；controls/electrical 5-12%；clean assembly/test 15-25%；logistics/install 3-8% | 普通子系统约 50k-300k 美元；复杂 etch/deposition 平台可达 300k-1M+ 美元 | BOM pass-through 较多，核心部件涨价可传导但滞后；rush order 和定制复杂度可带来局部 premium | 2026 年化可支撑约 0.55-0.75B gas delivery 收入 | 已进入主要半导体设备 OEM AVL/qualified supplier；新平台需逐工具 qualification |
+| Chemical delivery / blending / slurry / cleaning/plating | PFA/PVDF/PTFE tubing/valves/pumps/tanks/filters 45-65%；sensors/control/software 8-15%；clean assembly 15-25%；field install 5-15% | POU/blending 模块 100k-800k 美元；bulk/complex chemical delivery skid 可超过 1M 美元 | 高纯材料和洁净安装紧缺时可部分提价；但客户双供应和项目竞价限制长期毛利 | 约 0.25-0.40B 当前年化能力 | 先进封装/清洗/CMP 相关工具平台存在 12-36 个月 qualification 周期 |
+| Precision machining / weldments / chamber assemblies | 金属/合金材料 25-40%；machining/welding/brazing/surface treatment 35-50%；clean/inspection 10-20%；logistics 5-10% | 50k-500k 美元，复杂真空/洁净组件更高 | 价格权力较弱，更多靠交付和良率；材料涨价可传导但有延迟 | 约 0.12-0.20B 当前年化能力 | 与工具平台和客户图纸绑定，客户替换需重新验证 |
+| Proprietary liquid flow controller / remote plasma source / monitoring-control | 传感器/电控/流体或 plasma 核心件 40-55%；工程/测试 20-35%；机械/封装 10-20%；软件/校准 5-15% | 20k-200k 美元/模块，取决于是否成为标准配置 | 一旦 design-in，毛利和溢价能力强于普通集成；当前规模尚小 | 约 0.04-0.10B 当前年化能力 | 公司披露新产品和 full tool programs 已在 qualification，需继续跟踪量产转化 |
+
+### 7.3 一年后产能和认证三情景
+
+| 产品/业务 | 基准产能能力 | 乐观产能能力 | 极度乐观产能能力 | 采纳/认证路径 |
+|---|---:|---:|---:|---|
+| Gas delivery systems / gas panels | 0.70-0.80B | 0.85-1.00B | 1.05-1.20B | 基准为现有 OEM 平台扩产；乐观需要 Mexico/Malaysia 利用率提升和供应商来料稳定；极度乐观需要客户给出更长交付窗口和预留产能 |
+| Chemical delivery | 0.38-0.45B | 0.50-0.60B | 0.65-0.80B | 先进封装/HBM/CMP/clean 工具平台资格认证转量产；PFA、valve、filter 供应链是约束 |
+| Precision assemblies | 0.18-0.22B | 0.24-0.30B | 0.32-0.40B | 客户外包比例提升，洁净加工和焊接产能爬坡；替代供应商更多，价格弹性较低 |
+| Proprietary products | 0.08-0.12B | 0.15-0.20B | 0.25-0.35B | 从 qualification 到 design-in 到 volume production；这是最需要跟踪客户项目名和量产节点的部分 |
+| 公司总年化产能 | 1.35-1.45B | 1.55-1.70B | 1.80-2.00B | Q2 300M run-rate 已接近 1.2B；进一步上行需要工厂利用率、供应链和客户排产同时配合 |
+
+## 8. Backlog、供给和未来一年业务增速推断
+
+Ichor 不披露 backlog、bookings、B2B、订单取消率。可用的替代验证包括：
+
+- Q3 2025 公司明确提到 etch/deposition customer demand strengthened，gas panel integration deliveries accelerated，且出现 pull-in。
+- Q4 2025 收入下探到 223.6M，但公司把 2026 初定义为需求上行起点。
+- Q1 2026 收入 256.1M，高于 2 月指引中点；Q2 指引 midpoint 300M，较 Q1 再增长 17.2%。
+- 2026Q1 库存 252.3M，较 2025Q4 增加 20.5M，说明公司在为更高收入 run-rate 准备，但若订单推迟也会压现金。
+- 项目内行业资料显示 2026-2027 AI 芯片前道制造设备、HBM/DRAM、先进封装和流体子系统均处上行区间；gas/chemical subsystem attach rate 和 outsource/module rate 仍可能提高。
+
+### 8.1 一年业务增速情景
+
+| 情景 | 未来 12 个月收入预测 | 对 TTM 9.5926 亿美元的增速 | 订单/供给假设 | 取消率和延期假设 |
+|---|---:|---:|---|---|
+| 基准 | 1.25-1.35B | +30-41% | Q2 midpoint 兑现；H2 每季 310-340M；WFE 复苏但客户仍分批下单 | 少量 push-out，取消率低；非核心市场仍软 |
+| 乐观 | 1.45-1.60B | +51-67% | H2 每季 350-400M；etch/deposition 和 HBM/advanced packaging 同时拉动；Mexico/Malaysia 改善毛利 | 取消率很低，部分客户提前锁产能 |
+| 极度乐观 | 1.70-1.90B | +77-98% | 客户项目 pull-in 扩大，gas panel/chemical module 交期拉长，供应链出现 2-3 个季度以上锁单 | 取消率极低；主要风险变成交付和供应商来料 |
+
+### 8.2 最可靠的订单验证清单
+
+未来 6-12 个月，比听“AI 叙事”更可靠的验证信号是：
+
+- Ichor Q2 实际收入是否接近或超过 300M midpoint。
+- Q3 指引是否继续高于 Q2，且 non-GAAP 毛利率是否突破 13.5-14.5%。
+- 管理层是否继续提到 gas panel pull-in、etch/deposition strength、leading-edge logic/memory strength。
+- 现金流是否从 Q1 的 -2.9M operating cash flow 转正，同时库存不再异常累积。
+- 主要客户 Lam/Applied/TEL 的 etch/deposition、memory、foundry/logic 订单是否继续上调。
+- 行业内 UHP valve、MFC、PFA tubing、filters、clean assembly 的 lead time 是否从正常 8-12 周拉长。
+
+## 9. 竞争格局、替代风险和客户切换成本
+
+### 9.1 主要竞争对手
+
+| 竞争层级 | 主要公司 | 与 Ichor 的关系 |
+|---|---|---|
+| 直接子系统集成 | Ultra Clean Holdings（UCT）、Ichor、部分 OEM captive manufacturing | UCT 是最直接的上市可比公司，业务同样覆盖半导体设备子系统、流体/洁净/精密组件 |
+| 高纯气体/化学流体组件 | Swagelok、Fujikin、CKD、Parker、Valex、Dockweiler、Ham-Let、Saint-Gobain/Furon | 既可能是 Ichor 的上游，也可能在部分系统层面竞争 |
+| 流量控制/MFC/压力控制 | MKS、HORIBA STEC、Brooks/ATS、Fujikin、Azbil、CKD | Ichor 多数情况下集成这些关键部件，核心高毛利价值不完全在 Ichor 手里 |
+| 过滤/纯化/污染控制 | Entegris、Pall、MKS、Parker 等 | 化学液体和气体纯化中的高毛利环节，Ichor 可集成但未必拥有核心材料 |
+| 精密加工/腔体/洁净结构件 | UCT、Ferrotec、CoorsTek、Kyocera、Enpro、地方精密加工厂 | 竞争较分散，交付、质量和客户认证是门槛 |
+| 本土化替代 | 中国、日本、韩国、台湾区域性高纯流体/精密加工供应商 | 中长期会压制低端模块价格，但先进制程工具的 qualification 周期较长 |
+
+### 9.2 新技术是否是未来主流
+
+Ichor 的“新技术”不是替代 EUV、chiplet 或光互连，而是支撑先进制程工具复杂化：
+
+- 主流方向 1：更多 gas channels、更高精度 MFC/pressure control、更低 dead volume、更快 pulsing，用于 ALD/ALE/selective etch/GAA/advanced DRAM。
+- 主流方向 2：更高洁净度、更低颗粒和金属污染的 chemical delivery，用于 CMP、clean、electroplating、advanced packaging/hybrid bonding。
+- 主流方向 3：更高外包比例的预认证子系统，帮助设备 OEM 缩短交付周期。
+- 主流方向 4：自有 liquid flow controller、remote plasma source、process monitoring/control 等模块若 design-in 成功，可提高 Ichor 的毛利率和客户粘性。
+
+这些方向是未来先进半导体制造的主流需求，但 Ichor 不是唯一控制者。它更像工程化和交付平台，而不是拥有绝对技术垄断的核心材料/部件公司。
+
+### 9.3 替代风险
+
+| 风险 | 影响 | 概率 | 监控指标 |
+|---|---|---:|---|
+| OEM 内部化 gas panel/chemical module | 直接损害外包收入和毛利率 | 中 | 主要客户 capex/工厂扩建、Ichor 客户集中度、管理层是否提到 share gain/loss |
+| UCT 或区域供应商抢份额 | 压价格和订单 | 中高 | Q3/Q4 指引相对 UCT、客户认证公告、交期变化 |
+| 核心部件供应紧张但不能传导价格 | 增收不增利 | 中 | non-GAAP 毛利率是否随收入增长；应付/库存异常增加 |
+| WFE 订单 push-out | 收入快速下修 | 中 | Lam/Applied/TEL/KLA 指引、SEMI WFE 数据、Ichor Q3 指引 |
+| 中国出口控制/本土替代 | 客户项目延期或区域需求转移 | 中 | 中国 WFE 投资节奏、美国出口管制、客户区域收入 |
+| 新产品 qualification 不转量产 | 自有产品故事落空 | 中 | 公司是否披露 design win、full tool program、量产收入，而不仅是 qualification |
+
+### 9.4 客户切换成本
+
+Ichor 的客户切换成本为“中高”，但不是不可替代：
+
+- 高的部分：半导体设备工具需要洁净度、leak rate、流量精度、材料兼容性、软件控制、可靠性和现场支持验证。一旦进入某个工具平台，替换供应商会触发重新验证、工程变更和交付风险。
+- 中等的部分：gas panel 和 chemical delivery 的许多核心部件来自外部供应商，客户可在 UCT、Ichor、区域供应商或内部制造之间切换。若客户有 12-24 个月时间和足够工程资源，替代可发生。
+- 价格权力：Ichor 的长期 pricing power 中等偏弱，强于普通 machining，弱于高端 MFC、真空阀、过滤材料、RF power 等核心部件公司。真正提升估值质量的路径是自有产品收入占比提高和高复杂度模块占比提高。
+
+## 10. 投资判断和跟踪框架
+
+### 10.1 多空要点
+
+| 方向 | 要点 | 重要性 |
+|---|---|---:|
+| 多头 | Q1 2026 收入恢复到 256.1M，Q2 midpoint 300M，收入拐点非常明确 | 高 |
+| 多头 | AI/HBM/leading-edge logic 推动 etch/deposition/clean/CMP 工具复杂度提升，gas/chemical delivery 内容量上升 | 高 |
+| 多头 | 资产负债表低杠杆，净债务仅约 3300 万美元，流动比率 2.82x | 中高 |
+| 多头 | 2025 重组和产能转移后，若利用率提升，毛利率和 EPS 的弹性大 | 高 |
+| 空头 | 84.04 美元股价对应约 29.2 亿美元市值、约 3.0x TTM P/S 和约 53x forward P/E，已经提前反映强复苏 | 高 |
+| 空头 | non-GAAP 毛利率仍只有 12.8%，与高质量半导体设备供应链公司差距大 | 高 |
+| 空头 | 客户集中、OEM 议价能力强、Ichor 对核心部件不完全拥有控制权 | 高 |
+| 空头 | 公司不披露 backlog/bookings，投资人难以独立验证订单质量和取消风险 | 中高 |
+
+### 10.2 关键跟踪指标
+
+1. 2026Q2 实际收入是否达到 300M midpoint，若低于 290M，复苏逻辑受损。
+2. 2026Q2 non-GAAP EPS 是否接近 0.30 midpoint，若收入达标但 EPS 不达标，说明毛利率修复不足。
+3. Q3 2026 指引是否继续环比增长，尤其是否超过 310M。
+4. non-GAAP 毛利率是否从 12.8% 提升到 14% 以上，并最终向 15-17% 回归。
+5. 库存周转和现金流，Q1 库存 252.3M 已经很高，必须转化为收入。
+6. 管理层是否披露 proprietary product portfolio 的实际量产收入，而不是只说 qualification。
+7. 客户侧 Lam/Applied/TEL 对 memory、leading-edge logic、etch/deposition 的订单描述。
+8. 行业内 UHP valves、MFC、PFA tubing、filters、clean assembly lead time 和报价。
+
+## 11. 资料来源
+
+### 外部公司和市场资料
+
+- Ichor Holdings, Ltd. Announces First Quarter 2026 Financial Results, Business Wire, 2026-05-04: https://www.businesswire.com/news/home/20260504264377/en/Ichor-Holdings-Ltd.-Announces-First-Quarter-2026-Financial-Results
+- Ichor Holdings, Ltd. Announces Fourth Quarter and Fiscal Year 2025 Financial Results, Business Wire, 2026-02-09: https://www.businesswire.com/news/home/20260209131552/en/Ichor-Holdings-Ltd.-Announces-Fourth-Quarter-and-Fiscal-Year-2025-Financial-Results
+- Ichor Holdings, Ltd. Announces Third Quarter 2025 Financial Results, Nasdaq/Business Wire, 2025-11-03: https://www.nasdaq.com/press-release/ichor-holdings-ltd-announces-third-quarter-2025-financial-results-2025-11-03
+- Ichor Holdings, Ltd. Announces Second Quarter 2025 Financial Results, Business Wire, 2025-08-04: https://www.businesswire.com/news/home/20250804426358/en/Ichor-Holdings-Ltd.-Announces-Second-Quarter-2025-Financial-Results
+- Ichor Holdings 2025 Form 10-K, SEC EDGAR: https://www.sec.gov/Archives/edgar/data/1652535/000165253526000012/ichr-20251226.htm
+- Ichor Investor Relations financial document library and Q2 2026 investor materials: https://ir.ichorsystems.com/financial-document-library
+- Ichor Names Phil Barros Chief Executive Officer, Business Wire, 2025-11-03: https://www.businesswire.com/news/home/20251103483844/en/Ichor-Names-Phil-Barros-Chief-Executive-Officer
+- Yahoo Finance chart endpoint for ICHR quote snapshot, accessed 2026-06-11: https://query1.finance.yahoo.com/v8/finance/chart/ICHR?range=5d&interval=1d
+- Yahoo Finance valuation measures search snapshot, accessed 2026-06-11: https://finance.yahoo.com/quote/ICHR/key-statistics/
+
+### 项目内行业资料
+
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体设备子系统与真空_RF_流体模块_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体高纯水、气体与化学流体系统_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`

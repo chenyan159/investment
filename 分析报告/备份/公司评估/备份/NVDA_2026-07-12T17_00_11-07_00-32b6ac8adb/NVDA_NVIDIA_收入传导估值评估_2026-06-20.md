@@ -1,0 +1,171 @@
+# 公司收入传导与价值传导评估：NVIDIA
+
+报告日期：2026-06-20  
+公司代号：NVDA  
+公司名称：NVIDIA  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM，即自 2026-06-20 起未来 12 个月，近似 FY2027 Q2 至 FY2028 Q1 的经营窗口。  
+资料边界：本报告使用 `公司调研/`、`行业调研/` 内的正式资料，并用 NVIDIA 官方 IR、SEC、产品页和少量客户/竞争公司一手公告刷新事实；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较资料。  
+口径限制：本报告只评估收入、利润、现金流和经营价值传导；不输出投资评级、目标价、股价区间或估值倍数判断，金融市场价格不作为经营证据。
+
+金额单位除特别说明外均为 **亿美元**。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营收入和利润传导；FY2027、FY2028、长期 AI factory run-rate、Rubin Ultra、Feynman 或更远期平台只作补充和跟踪，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：NVIDIA 最新已披露经营数据为 FY2027 Q1，季度收入 `816.15`，同比 `+85%`、环比 `+20%`；Data Center 收入 `752.46`，同比 `+92%`，其中旧口径 Data Center Compute `604`、Data Center Networking `148`。FY2027 Q2 公司收入指引为 `910`、上下浮动 `2%`，且未假设中国 Data Center compute 收入。TTM 收入约 `2534.91`，FY2027 Q1 年化 run-rate 为 `3264.60`，FY2027 Q2 指引年化为 `3640`。
+- 重要产品/业务线：Blackwell / Blackwell Ultra / GB200 / GB300 机架级 compute，Rubin / Vera Rubin 平台，Data Center Networking（NVLink/NVSwitch、InfiniBand、Spectrum-X、ConnectX、BlueField），软件与平台服务（CUDA、Dynamo、NIM、AI Enterprise、Mission Control），Edge Computing，以及中国受限 Data Center compute 期权/风险项。
+- NTM 公司收入四情景：悲观 `3200-3600`；基准 `3700-4100`；乐观 `4100-4800`；极度乐观校准后上限 `4800-5600`。相对 TTM 的绝对增速分别约为 `+26%-42%`、`+46%-62%`、`+62%-89%`、`+89%-121%`。
+- 利润或 EBITDA 四情景：本报告使用经营性净利润作为主利润口径，剔除 FY2027 Q1 股权证券未实现收益等非经营项。悲观经营性净利润约 `1540-1850`；基准 `1940-2250`；乐观 `2220-2710`；极度乐观 `2670-3250`。EBITDA 因 NVIDIA 未按本方案产品线披露折旧摊销，无法可靠量化，只做方向判断。
+- 最大传导瓶颈：不是单一 GPU 需求，而是 GB300/Rubin 机架的 HBM3E/HBM4、CoWoS/先进封装、液冷 rack、800G/1.6T 网络、数据中心上电和客户验收串联交付。
+- 最大利润率变量：Blackwell/GB300 与 Networking attach 是否维持 75% 附近毛利率，Rubin 初期良率/认证成本是否被高 ASP 和软件锁定覆盖，自研 ASIC 与开放 Ethernet 是否迫使价格重谈。
+- 最大现金流变量：应收账款、库存、预付款/供应承诺随更高 revenue run-rate 上升；Q1 FCF 极强，但 NTM 仍要观察库存和客户交付节奏是否继续占用现金。
+- 可信度：基准情景为高；乐观为中高；极度乐观为中；悲观为中。核心原因是收入表和指引证据很强，但 NVIDIA 不披露传统 backlog/bookings/cancellation rate，Rubin 与部分软件收入仍需通过客户部署和收入确认验证。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Blackwell / Blackwell Ultra / GB200 / GB300 compute，不含 Rubin 单列部分 | FY2027 Q1 Data Center Compute `604`，年化 `2416`；10-Q 称 Blackwell 已为多数收入 | Q1 总收入约 `74.0%` | NTM 最大收入和利润池，GB300/NVL72 是 2026 主平台 | A | 进入基准主口径；按 Q2 指引、Q1 run-rate 和供应链节奏折算 | Rubin Ultra、Feynman 不进 NTM |
+| Rubin / Vera Rubin 平台 | 当前收入未单独披露；官方称 full production，伙伴产品 2026H2 可用；CoreWeave 已完成 Vera Rubin NVL72 bring-up/validation | 当前占比小，NTM 可能转为中个位数到低双位数 | 决定 2027 增长斜率，NTM 只承认早期交付 | C，部分客户验证为 B | 基准只小比例纳入；乐观/极度乐观承认提前放量 | Rubin Ultra、Feynman、长期 token cost 曲线 |
+| Data Center Networking：NVLink/NVSwitch、InfiniBand、Spectrum-X、ConnectX、BlueField | FY2027 Q1 DC Networking `148`，年化 `592`，同比 `+199%`、环比 `+35%` | Q1 总收入约 `18.1%` | 已从配套变成独立利润池；决定 GPU 利用率和客户锁定 | A | 进入基准主口径；随 GB300/Rubin attach 增长 | 交换侧 CPO/Photonics 大规模化主要放在乐观以上 |
+| 软件与平台服务：CUDA、Dynamo、NIM、AI Enterprise、Mission Control | 直接收入未单独披露；递延收入/RPO只提供部分硬件、软件支持、云服务和许可口径 | 直接收入占比无法可靠量化，间接影响极高 | 直接收入较小，但决定份额、定价权和客户迁移成本 | C | 基准只作为小额直接收入和利润率支撑；不把软件叙事单独放大为硬件级收入 | 企业 AI 软件订阅规模化、Omniverse/机器人平台化 |
+| Edge Computing：Gaming、RTX workstation、Auto/Robotics、AI-RAN、AI PC | FY2027 Q1 Edge `63.69`，年化 `254.76`，同比 `+29%` | Q1 总收入约 `7.8%` | 稳定底盘与长期物理 AI 入口；NTM 对总公司弹性低 | A | 进入基准，但不作为公司 NTM 主增量 | 机器人、自动驾驶、AI-RAN 非线性放量 |
+| 中国受限 Data Center compute：H20 或替代 SKU | FY2027 Q1 无 Data Center Hopper 中国出货；FY2027 Q2 指引未假设中国 DC compute | 当前基准为 `0` | 可能是上行期权或政策风险，不是基准收入 | A 对“未纳入”有效；未来恢复为 C/B | 不进入基准；只在乐观/极度乐观少量纳入或作为风险处理 | 出口许可、合规新 SKU、中国国产替代 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不评估 NVIDIA 份额、收入确认、利润率或公司汇总。需求池金额是客户对相应产品/平台的 NTM 可采购需求或收入等价需求，不等于 NVIDIA 可确认收入。当前需求锚主要来自 FY2027 Q1 实际收入、FY2027 Q2 指引、云客户 CapEx/RPO、行业调研中的 AI 芯片、HBM、先进封装、液冷、电力和网络瓶颈。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Blackwell / Blackwell Ultra / GB200 / GB300 compute | FY2027 Q1 DC Compute `604`，Q2 总收入指引 `910`，行业资料将 GB300/B300 NVL72 列为 2026 最大金额增量 | `2500-3000` 需求池；GB300 验收慢、部分客户延后 | `3200-3800`；Blackwell/GB300 正常爬坡 | `3800-4700`；GB300 替代 GB200 快于预期，推理需求上修 | `4700-6000`；推理、训练、主权 AI 与 AI cloud 同时抢产能 | 相对 Q1 Compute 年化 `2416`，悲观仍增长，基准以上明显上台阶 | 悲观低于当前预期；基准符合 Q2 指引和行业 capex；乐观/极度乐观需客户加速和供给释放 | 支持：Q2 指引不含中国仍上修；反证：电力、HBM、液冷、客户 ROI、ASIC 替代 |
+| Rubin / Vera Rubin | 官方称 full production、伙伴 2026H2 可用；AWS/GCP/Microsoft/OCI/CoreWeave 等为早期云方；CoreWeave 已完成 rack validation | `0-150`；主要停留认证和样机 | `150-350`；少量客户 H2 确认收入 | `350-800`；核心云客户提前部署 | `800-1600`；Rubin 在 NTM 内成为新增高端主 SKU | 从接近零到低/中三位数亿美元需求池 | 基准仅小比例；乐观高于当前预期；极度乐观要求 HBM4、NVLink 6、液冷和客户验收同时顺利 | 支持：Microsoft/CoreWeave 公开部署；反证：HBM4 良率、机架认证和交付周期 |
+| Data Center Networking | FY2027 Q1 DC Networking `148`，同比 `+199%`、环比 `+35%`；大集群对 IB/Ethernet/NIC/DPU 需求同步上升 | `600-750`；compute 交付放缓或开放 Ethernet 压价 | `750-950`；随 GB300 attach 正常增长 | `950-1300`；Spectrum-X 和 InfiniBand 同时高增长 | `1300-1700`；1.6T/CPO/跨园区 scale-out 提前放量 | 相对 Q1 年化 `592`，基准约 `+27%-60%` | 基准符合当前增长路径；乐观需要 networking attach rate 继续提升 | 支持：Q1 networking 高增；反证：UEC/white-box/Arista/Broadcom/Marvell 替代 |
+| 软件与平台服务 | Dynamo/NIM/AI Enterprise/Mission Control 支撑推理和企业部署；直接收入未单列 | `40-70` 直接需求；客户只买硬件和开源栈 | `50-100`；企业/云支持正常 attach | `100-180`；AI Enterprise、NIM、Mission Control 订阅扩大 | `180-300`；软件成为显性高毛利收入线 | 绝对金额小于硬件，但对毛利率和份额影响大 | 基准只承认小额收入；乐观以上要求合同和订阅证据 | 支持：软件生态强；反证：直接收入不披露、开源推理栈降低付费率 |
+| Edge Computing | FY2027 Q1 Edge `63.69`，同比 `+29%`、环比 `+10%` | `230-260`；PC/游戏库存和内存价格压制 | `260-300`；RTX/工作站/Auto 正常增长 | `300-360`；AI PC、RTX PRO、机器人/Auto 加速 | `360-450`；物理 AI/AI-RAN 提前形成收入 | 相对 Q1 年化 `254.76`，悲观持平，基准小幅增长 | 对公司总收入相对中性；不作为上修主因 | 支持：Edge 已恢复增长；反证：Data Center 稀释权重，消费周期波动 |
+| 中国受限 Data Center compute | FY2027 Q1 无中国 DC Hopper 出货，Q2 指引未假设中国 DC compute | `0-50` 可服务需求；政策限制延续 | `100-250` 外部需求存在但不可收入化 | `250-500`；部分合规 SKU 或许可恢复 | `500+`；政策明显放松且客户恢复采购 | 需求池存在，但可确认收入不在基准 | 基准需求不等于收入基准；只作为排除/期权 | 支持：中国高端需求仍在；反证：出口管制和国产替代 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断需求中哪些能进入 NVIDIA NTM 收入表，以及当前可收入化基数是多少；不预测产品增长，不判断利润率。表中“基数”是 NTM 收入确认基数或上限，不是行业 TAM。产品级上限在公司汇总时会去重，尤其软件收入、NVLink 价值和 rack platform 价值部分嵌入 Data Center Compute 或 Networking，不能机械相加。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Blackwell / Blackwell Ultra / GB200 / GB300 compute，不含 Rubin 单列 | FY2027 Q1 Data Center Compute `604`；10-Q 称 Blackwell 架构为多数收入，增长由 Blackwell systems 带动 | 直接收入 | 高毛利硬件平台，受 HBM/CoWoS/液冷成本影响，但定价权强 | `2150-2450` | `2550-2850` | `2800-3200` | `3000-3600` | 基准符合 Q2 指引和 Q1 run-rate 上修；悲观低于当前预期 | A | 是 | 已披露收入、正式指引和出货路径 | NTM 主收入池，进入基准；极度上限受 supply 和客户验收约束 |
+| Rubin / Vera Rubin | 未单独披露收入；官方 full production、伙伴 2026H2 可用，CoreWeave rack validation | 直接收入，但需认证和交付 | 初期 ramp 成本高，成熟后高 ASP/高锁定 | `0-80` | `100-250` | `200-450` | `450-900` | 基准只小比例；乐观/极度乐观高于当前预期 | C，CoreWeave/Microsoft 等客户信号接近 B | 小比例进入 | 客户、产品和时间表明确，但收入确认尚未披露 | 基准保守纳入；大部分作为乐观和极度乐观变量 |
+| Data Center Networking | FY2027 Q1 DC Networking `148`，旧口径披露，年化 `592` | 直接收入 | 高 attach、高系统锁定，利润率方向至少不低于普通硬件 | `520-650` | `650-800` | `750-1000` | `950-1250` | 基准高于 Q1 年化，符合当前 attach 趋势 | A | 是 | 披露收入、增长率和产品需求 | 进入基准主口径；是利润质量上修的关键 |
+| 软件与平台服务 | 未单列；递延收入 `31.17` 包含硬件/软件支持、云服务、许可等，RPO 大于一年合同仅 `26` 且约 40% 在未来 12 个月确认 | 直接收入小，间接收入极大 | 直接毛利高；更重要是提升硬件份额和定价权 | `40-70` | `50-90` | `70-130` | `130-250` | 基准仅作小额和利润率支撑 | C | 是，但小比例 | 有产品和支持收入线索，但无软件拆分 | 不把软件叙事当硬件收入；作为 margin/lock-in 变量 |
+| Edge Computing | FY2027 Q1 Edge `63.69`，年化 `254.76` | 直接收入 | 毛利率低于 DC 核心，但稳定 | `230-260` | `250-300` | `280-340` | `320-420` | 基准大体符合当前 run-rate | A | 是 | 已披露 market platform 收入 | 进入基准，但对公司总增量贡献有限 |
+| 中国受限 Data Center compute | FY2027 Q1 无中国 DC Hopper 出货；Q2 指引未假设中国 DC compute | 直接收入但政策受限 | 恢复后毛利和库存风险不确定 | `0` | `0` | `0-80` | `100-250` | 基准为零，乐观以上才可纳入 | A 对当前排除有效；未来恢复需 B/C | 否 | 当前正式指引排除，收入确认不可见 | 不进入基准；只作为政策期权或风险反转项 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从需求和收入基数出发，评估每个重要产品在 NTM 内能贡献多少 NVIDIA 可确认收入和经营利润。本表的“利润贡献”为分部/产品经营利润粗估，无法与 GAAP 分部完全勾稽；软件和 NVLink 的一部分价值嵌入 Compute/Networking，不在公司汇总中重复加总。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Blackwell / GB200 / GB300 compute | 悲观 | `2150-2450` | `1320-1520` | 下降到低 60% 经营利润率区间 | 低于当前 Q2 指引隐含路径 | Q1 Compute `604`，但 rack 验收/客户 ROI 放慢 | 保留为下行情景 | HBM/CoWoS/液冷、电力上电、客户订单重排 |
+| Blackwell / GB200 / GB300 compute | 基准 | `2550-2850` | `1600-1880` | 经营利润率约 `63%-66%` | 符合当前预期正常兑现 | Q2 指引 `910`、Blackwell 为多数收入 | 保留 | 不披露 backlog，需继续用实际收入验证 |
+| Blackwell / GB200 / GB300 compute | 乐观 | `2800-3200` | `1820-2180` | 小幅扩张 | 高于当前预期 | GB300 加速替代、推理需求增强 | 保留 | 供应释放不能只来自价格，必须有 rack 验收 |
+| Blackwell / GB200 / GB300 compute | 极度乐观 | `3000-3600` | `2040-2600` | 扩张但受 Rubin 替代和成本限制 | 显著高于当前预期 | 多云抢 GB300 allocation | 下移为校准后上限的一部分 | 不能假设 GB300 和 Rubin 峰值收入完全相加 |
+| Rubin / Vera Rubin | 悲观 | `0-80` | `0-35` | 初期低于成熟平台 | 低于预期，主要认证而非收入 | 2026H2 可用但收入未披露 | 保留 | HBM4、NVLink6、液冷和客户验收 |
+| Rubin / Vera Rubin | 基准 | `100-250` | `50-150` | 初期低，后续改善 | 小比例符合当前预期 | 官方 full production，客户名单明确 | 保守保留 | 当前收入表不可见，不能放大 |
+| Rubin / Vera Rubin | 乐观 | `200-450` | `120-290` | 改善 | 高于当前预期 | CoreWeave validation、Microsoft Fairwater 等部署信号 | 保留 | 需从 deployment 转成 revenue recognition |
+| Rubin / Vera Rubin | 极度乐观 | `450-900` | `300-650` | 明显改善 | 非线性上修 | HBM4 与 260 TB/s NVLink 6 形成代际迁移 | 下移后保留为上限 | HBM4 supply 和客户机房 readiness 任一缺失都会降档 |
+| Data Center Networking | 悲观 | `520-650` | `320-410` | 低于当前高增路径 | 低于当前预期 | Q1 年化 `592` 支撑下限 | 保留 | 开放 Ethernet/white-box、客户自建网络、compute 延迟 |
+| Data Center Networking | 基准 | `650-800` | `420-540` | 接近或略高于公司平均 | 符合当前预期 | Q1 `+199%` YoY、`+35%` QoQ | 保留 | 网络 attach 必须随 rack 上线确认 |
+| Data Center Networking | 乐观 | `750-1000` | `500-700` | 改善 | 高于当前预期 | Spectrum-X、InfiniBand、ConnectX/BlueField 同时受益 | 保留 | Ethernet 竞争导致价格下行 |
+| Data Center Networking | 极度乐观 | `950-1250` | `660-900` | 明显改善 | 显著高于当前预期 | 1.6T、CPO、跨园区 AI factory 网络提前 | 下移后保留为上限 | CPO/Photonics 可靠性和维护模式仍需验证 |
+| 软件与平台服务 | 悲观 | `40-70` | `28-50` | 高毛利但收入小 | 低于叙事预期 | 直接收入未拆分 | 保留 | 开源推理栈、客户只买硬件 |
+| 软件与平台服务 | 基准 | `50-90` | `38-70` | 高毛利，主要提升硬件利润质量 | 符合保守预期 | CUDA/Dynamo/NIM/AI Enterprise/Mission Control | 保留 | 无单独收入披露，不能当主收入引擎 |
+| 软件与平台服务 | 乐观 | `70-130` | `55-105` | 改善 | 高于当前预期 | 企业/主权 AI 和推理运营软件付费提升 | 保留 | 需要订阅或支持合同证据 |
+| 软件与平台服务 | 极度乐观 | `130-250` | `105-210` | 强扩张 | 显著高于当前预期 | Mission Control 和 NIM 成为 AI factory 标配 | 移入附录跟踪为主 | 当前缺少 A/B 级收入披露 |
+| Edge Computing | 悲观 | `230-260` | `70-95` | 持平或小降 | 低于当前预期 | PC/游戏和内存价格影响 | 保留 | 消费周期和 AI PC 需求不确定 |
+| Edge Computing | 基准 | `250-300` | `85-120` | 稳定 | 符合当前 run-rate | Q1 Edge `63.69`、`+29%` YoY | 保留 | 对公司总弹性低 |
+| Edge Computing | 乐观 | `280-340` | `105-150` | 小幅改善 | 小幅高于预期 | RTX PRO、AI PC、robotics/auto | 保留 | 商业化周期长 |
+| Edge Computing | 极度乐观 | `320-420` | `130-200` | 改善 | 高于预期但非公司主变量 | AI-RAN、机器人、工作站推理 | 仅作跟踪 | NTM 内很难改变公司结构 |
+| 中国受限 Data Center compute | 悲观 | `0` | `0` | 无 | 符合基准排除 | Q1 无出货，Q2 指引不含 | 保留 | 出口管制延续 |
+| 中国受限 Data Center compute | 基准 | `0` | `0` | 无 | 符合当前预期 | 正式指引未纳入 | 保留 | 不用需求池替代收入 |
+| 中国受限 Data Center compute | 乐观 | `0-80` | `0-45` | 不确定 | 高于当前预期 | 合规 SKU 或许可恢复 | 仅作跟踪 | 政策、库存和国产替代 |
+| 中国受限 Data Center compute | 极度乐观 | `100-250` | `50-150` | 不确定 | 显著高于当前预期 | 政策明显放松 | 移入附录 | 目前无 A/B 级 NTM 收入路径 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品贡献合成为公司 NTM 总收入、毛利率、经营利润率、经营性净利润和自由现金流方向。合成前已处理三类去重：第一，软件直接收入与 Data Center/Edge 部分内嵌，不重复加总；第二，Rubin 会替代部分 Blackwell/GB300 客户预算，而非纯增量；第三，Networking attach 与 compute 交付共享客户预算和上电节奏。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `3200-3600` | 相对 TTM `2534.91` 为 `+26%-42%` | 低于 Q2 指引后续正常爬坡路径；仍可能高于历史收入 | `70.0%-73.5%` | `58.0%-62.0%` | 经营性净利润 `1540-1850`；EBITDA无法可靠量化 | FCF 仍为正，粗估 `1200-1700`，但库存/应收/供应承诺占用上升 | 中 | 客户 ROI 下修、rack 验收延迟、HBM/CoWoS/液冷/电力串联瓶颈、出口限制 |
+| 基准公司 | `3700-4100` | `+46%-62%` | 接近管理层指引、Q1/Q2 run-rate 和当前行业订单节奏正常兑现 | `73.5%-75.5%` | `63.0%-66.0%` | 经营性净利润 `1940-2250`；EBITDA无法可靠量化 | FCF 强，粗估 `1700-2200`，但继续备货使现金转化低于 Q1 峰值 | 高 | GB300 交付节奏、Networking attach、Rubin 小规模确认、客户上电 |
+| 乐观公司 | `4100-4800` | `+62%-89%` | 高于当前预期，且不是单一小基数项目造成 | `75.0%-77.0%` | `65.0%-68.0%` | 经营性净利润 `2220-2710`；EBITDA无法可靠量化 | FCF `2200-2800`，库存和预付款压力被更高收入吸收 | 中高 | GB300 快速成为主 SKU、Networking attach 提升、Rubin 提前收入化 |
+| 极度乐观公司 | `4800-5600` | `+89%-121%` | 显著高于当前预期；需求、捕获、利润率、执行同时突破 | `76.5%-78.5%` | `67.0%-70.0%` | 经营性净利润 `2670-3250`；EBITDA无法可靠量化 | FCF `2800-3400`，前提是客户预付款/交付节奏同步改善 | 中 | Rubin/GB300 并行放量、HBM4/CoWoS/液冷/电力同步释放、客户 capex 不降速 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。正向证据只提升它实际影响的层级；同一个风险只在实际影响层级处理一次，不重复压低需求、收入、利润和公司汇总。校准动作仅使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2027 Q1 收入 `816.15`、Data Center `752.46`、Compute `604`、Networking `148` | 收入基数、公司汇总 | 强正向，A 级收入表锚 | 支撑 75% 附近毛利率 | Q1 FCF `485.54`，现金转化强 | 基准保留 |
+| FY2027 Q2 指引 `910` 且未假设中国 DC compute | 收入基数、情景校准 | 强正向，证明非中国需求可支撑更高台阶 | 毛利率指引 `75.0%` non-GAAP | 指引不等于 backlog，但近端执行可信 | 基准保留，悲观不作为主情景 |
+| NVIDIA 不披露传统 backlog/bookings/cancellation rate；长期合同 RPO 仅 `26` | 收入确认、可信度 | 限制把需求池直接变成收入 | 无直接影响 | 降低远端可见度 | 极度乐观下移 |
+| 三个直接客户占 Q1 总收入 `21%`、`17%`、`16%` | 收入基数、客户集中 | 支撑大客户采购强度，也提高集中风险 | 大客户议价可能影响价格 | 应收账款集中和交付节奏更重要 | 保留，但纳入风险 |
+| Blackwell 为多数收入，Q1 毛利率顺序持平 | 产品贡献、利润率 | 支撑 GB300/Blackwell 基准 | 强正向 | 说明新平台 ramp 未显著侵蚀毛利 | 基准保留 |
+| Data Center Networking 同比 `+199%`、环比 `+35%` | 产品贡献、利润率 | 强正向，网络从附属变独立收入池 | 正向，attach 和系统锁定增强 | 需随 compute/rack 上线 | 乐观保留 |
+| Rubin full production、2026H2 伙伴可用、CoreWeave validation | 需求、收入基数、执行可信度 | 正向，但当前收入表不可见 | 初期成本和良率仍需验证 | 客户验收从技术变收入仍有周期 | 基准小比例保留，乐观保留 |
+| HBM3E/HBM4、CoWoS、液冷、上电和 rack acceptance | 商业兑现、现金流 | 可能延迟收入确认，不是需求反证 | 供应短缺支持价格，但良率/返工压毛利 | 增加库存、预付款、现场服务风险 | 悲观保留，不重复惩罚需求 |
+| Broadcom AI semiconductor Q2 FY2026 `108`、Q3 预期 `160` | 份额/竞争 | 证明 AI demand 强，也证明自研 ASIC 正在规模化 | 对 NVIDIA 价格和份额构成中期约束 | 客户预算向 ASIC 分流 | 乐观不直接上移，极度乐观下移 |
+| 出口管制：Q1 无中国 DC Hopper 出货，Q2 指引不含中国 DC compute | 收入基数 | 基准排除中国 compute | 若恢复，毛利不确定 | 政策和库存风险 | 排除基准，乐观仅作跟踪 |
+| Q1 应收、库存、供应相关义务上升 | 现金流/执行 | 支撑备货和高收入台阶 | 库存减值风险影响毛利 | FCF 仍强但现金占用加大 | 保留为现金流约束 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 原始为 `3000-3500`，假设需求、收入确认或利润任一核心传导低于当前预期 | Q2 指引和 Q1 run-rate 很强，说明近端需求并未恶化 | 客户 ROI、上电、HBM/CoWoS/液冷、出口限制、自研 ASIC | 上移 | `3200-3600`；仍低于当前预期但不等于需求崩塌 | 中 | 电力/HBM/液冷只作为收入确认风险，不再重复压低需求池 |
+| 基准 | 原始为 `3650-4100`，假设 Q2 指引和 Blackwell/Networking 正常兑现 | A 级收入表、正式指引、Q1 毛利率、客户 capex/RPO 支撑 | 不披露 backlog，Rubin 当前收入不可见，客户集中 | 保留 | `3700-4100`；当前预期正常兑现 | 高 | 出口管制已在中国 DC compute 基准为零中处理，不再压低非中国业务 |
+| 乐观 | 原始为 `4100-5000`，假设 GB300、Networking、Rubin 至少两项超预期 | Networking 高增、Rubin 客户信号、AI cloud/hyperscaler capex 强 | 供应链、客户验收、ASIC 分流和价格重谈 | 下移 | `4100-4800`；有证据的超预期 | 中高 | 自研 ASIC 只限制份额/价格，不重复否定总体 AI 需求 |
+| 极度乐观 | 原始为 `5200-6500`，假设需求、捕获、利润率和执行同时非线性突破 | GB300/Rubin/Networking 技术和客户证据均存在 | 缺少 backlog、Rubin 收入表不可见、HBM4/液冷/电力、客户 capex ROI、自研 ASIC | 下移 | `4800-5600`；作为可验证上限，不是基准 | 中 | 远期期权只作为上限，不进入基准；中国恢复不与非中国极度情景重复相加 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入最可能落在 `3700-4100`，经营性净利润约 `1940-2250`，核心传导来自 Blackwell/GB300 compute 正常爬坡、Networking attach 继续提高、Rubin 小比例确认和 Edge 稳定贡献。基准不是“AI 叙事自动上修”，而是 FY2027 Q1 实际收入、FY2027 Q2 指引和当前客户 capex/行业订单节奏正常兑现。
+- 乐观情景成立条件：GB300/NVL72 在 2026H2 成为主要高端交付 SKU；Data Center Networking 连续维持高于 compute 的增长；Rubin 在 2026H2 从客户验证转为实际收入确认；HBM3E/CoWoS/液冷和上电节奏不成为收入确认瓶颈；客户 AI 业务收入或使用率可以支撑继续加单。
+- 极度乐观情景成立条件：推理 token、agentic AI、训练和主权 AI 同时扩张；GB300 与 Rubin 并行供不应求；HBM4、CoWoS-L、液冷 rack、1.6T 网络和电力上电同步释放；NVIDIA 维持 75% 以上毛利率且 Networking/软件 attach 抬高整体利润质量；自研 ASIC 只分流部分稳定推理 workload，而不削弱 NVIDIA 在前沿训练、reasoning inference 和全栈 AI factory 的份额。
+- 悲观情景触发条件：FY2027 Q2 实际收入低于指引区间或 Q3 指引明显下修；Data Center Networking 环比显著减速；GB300/Rubin rack 验收延迟超过两个季度；云客户 CapEx 指引下修 `10%-15%+`；GPU/AI cloud 利用率或租赁价格连续走弱；HBM/CoWoS/液冷/电力导致收入推迟并引发库存或采购义务减值。
+- 后续跟踪数据：FY2027 Q2 实际收入与 Q3 指引；Data Center Compute 与 Networking 拆分；non-GAAP gross margin 是否维持 `75%` 附近；库存、应收账款、供应相关义务和 FCF；GB300 云实例和 rack acceptance；Rubin 2026H2 partner availability 是否转收入；HBM4 qualification；Broadcom/Marvell custom ASIC 增速；Microsoft、Meta、Oracle、CoreWeave、Amazon、Google 的 AI capex/RPO 和上电进度；中国出口管制与合规 SKU 变化。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：NVIDIA 最新经营数据为 FY2027 Q1，季度截至 2026-04-26，财报发布日 2026-05-20；本报告生成日为 2026-06-20。
+- 主要收入、订单、指引和利润率来源：
+  - NVIDIA FY2027 Q1 财报新闻稿：https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027
+  - NVIDIA FY2027 Q1 Form 10-Q：https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm
+  - NVIDIA GB300 NVL72 产品页：https://www.nvidia.com/en-us/data-center/gb300-nvl72/
+  - NVIDIA Rubin 平台新闻稿：https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer
+  - CoreWeave Vera Rubin NVL72 validation 新闻稿：https://investors.coreweave.com/news/news-details/2026/CoreWeave-Completes-Industry-First-Bring-Up-and-Validation-of-NVIDIA-Vera-Rubin-NVL72/default.aspx
+  - Microsoft Azure Rubin readiness 博客：https://azure.microsoft.com/en-us/blog/microsofts-strategic-ai-datacenter-planning-enables-seamless-large-scale-nvidia-rubin-deployments/
+  - Broadcom FY2026 Q2 财报新闻稿：https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2027 Q1 实际收入 `816.15` 与 Q2 指引 `910` 是当前预期主锚；FY2027 全年收入不是本报告主口径。
+  - Rubin/Vera Rubin 在 NTM 内只纳入 2026H2-2027H1 可验证交付；Rubin Ultra、Feynman、长期 AI factory replacement cycle 只列为远期期权。
+  - 中国受限 DC compute 的需求不等于可确认收入；在正式指引未纳入且无许可路径前，不进入基准。
+- 主要本地来源：
+  - `公司调研/AI计算芯片_EDA_IP_custom_ASIC/NVDA_NVIDIA_公司调研_2026-06-20.md`
+  - `公司调研/云算力_IDC_AI软件平台/MSFT_微软_公司调研_2026-06-20.md`
+  - `公司调研/云算力_IDC_AI软件平台/GOOGL_Alphabet Inc_公司调研_2026-06-20.md`
+  - `公司调研/云算力_IDC_AI软件平台/META_Meta Platforms_公司调研_2026-06-20.md`
+  - `公司调研/云算力_IDC_AI软件平台/AMZN_Amazon_公司调研_2026-06-20.md`
+  - `公司调研/云算力_IDC_AI软件平台/ORCL_Oracle Corporation_公司调研_2026-06-20.md`
+  - `公司调研/云算力_IDC_AI软件平台/CRWV_CoreWeave_公司调研_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_商用AI加速芯片_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_InfiniBand与专有Scale-up互联_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+

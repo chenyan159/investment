@@ -1,0 +1,20 @@
+悲观 v0 117.0 terminal% 52.6
+1 revenue/EBIT/FCF 48.12 4.71 -2.43 value/div/return/cagr 127.71 1.0 -0.86 -0.86 cash/debt/shares 9.43 2.905 0.27
+3 revenue/EBIT/FCF 53.05 6.12 2.35 value/div/return/cagr 152.2 3.23 -0.83 -0.45 cash/debt/shares 12.0 2.905 0.269
+7 revenue/EBIT/FCF 54.9 6.56 3.68 value/div/return/cagr 179.67 40.71 -0.77 -0.19 cash/debt/shares 12.0 2.305 0.266
+基准 v0 349.0 terminal% 47.8
+1 revenue/EBIT/FCF 51.68 6.82 4.07 value/div/return/cagr 372.41 11.54 -0.59 -0.59 cash/debt/shares 12.0 2.905 0.269
+3 revenue/EBIT/FCF 63.87 11.33 7.72 value/div/return/cagr 410.49 49.97 -0.51 -0.21 cash/debt/shares 12.0 2.905 0.265
+7 revenue/EBIT/FCF 83.85 16.29 10.23 value/div/return/cagr 484.38 151.61 -0.32 -0.05 cash/debt/shares 12.0 2.305 0.257
+乐观 v0 550.2 terminal% 50.0
+1 revenue/EBIT/FCF 53.62 7.86 6.38 value/div/return/cagr 587.61 17.6 -0.36 -0.36 cash/debt/shares 12.0 2.905 0.268
+3 revenue/EBIT/FCF 70.77 14.66 10.93 value/div/return/cagr 655.16 71.11 -0.23 -0.08 cash/debt/shares 12.0 2.905 0.263
+7 revenue/EBIT/FCF 102.42 23.69 15.65 value/div/return/cagr 784.98 223.39 0.07 0.01 cash/debt/shares 12.0 2.305 0.251
+突破 v0 722.7 terminal% 53.6
+1 revenue/EBIT/FCF 53.64 7.62 5.98 value/div/return/cagr 778.45 16.55 -0.15 -0.15 cash/debt/shares 12.0 2.905 0.268
+3 revenue/EBIT/FCF 73.55 15.5 11.38 value/div/return/cagr 884.42 71.67 0.02 0.01 cash/debt/shares 12.0 2.905 0.263
+7 revenue/EBIT/FCF 116.84 29.34 19.51 value/div/return/cagr 1086.78 254.28 0.43 0.05 cash/debt/shares 12.0 2.305 0.248
+WEIGHTED 0 375.06051486719883 
+WEIGHTED 1 412.5665663539188 -0.5612534255485641
+WEIGHTED 3 495.2829265691772 -0.19240983428531688
+WEIGHTED 7 687.8691289997771 -0.04367910102868644

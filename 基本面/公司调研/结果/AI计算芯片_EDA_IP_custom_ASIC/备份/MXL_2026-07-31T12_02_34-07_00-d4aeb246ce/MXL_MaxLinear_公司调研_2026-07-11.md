@@ -1,0 +1,497 @@
+# 公司：MXL MaxLinear（MaxLinear, Inc.）全面尽调
+
+> **报告日期：2026-07-11（America/Los_Angeles）**  
+> **最新正式财报：2026Q1，季度截至 2026-03-31，发布于 2026-04-23。**  
+> **下一次财报：2026Q2，计划于 2026-07-23 美股收盘后发布；本文没有把尚未发布的 Q2 当成已实现业绩。**  
+> **口径：**“披露”表示公司、SEC、产品页或会议原话；“测算/估计”表示本文模型，不代表公司指引。美元均为 USD；收入、产能和订单金额默认单位为百万美元。
+
+## 核心结论
+
+1. **MaxLinear 已从“宽带接入/有线电视芯片周期股”重估为“AI 光互联成长股”，但尚不是纯 AI 公司。** 2026Q1 Infrastructure 收入 **$62.8m、同比 +136%、占 46%**，首次成为最大业务；增长核心是 Keystone 400G/800G PAM4 光 DSP。管理层把 2026 年光数据中心收入预期从早期的 **$100m-$130m** 上调到 **$150m-$170m**。按 2026 年市场一致收入 $657.2m 计算，光数据中心约占全年 **23%-26%**；其余收入仍来自宽带、Wi-Fi/以太网、无线基础设施、工业和传统接口。
+2. **当前兑现品与未来期权必须分开。** Keystone 已量产并“累计数百万颗”出货，是当前 AI 收入；Rushmore 1.6T DSP、Washington 200G/lane TIA、Annapurna/Makalu 224G retimer、AI 控制面 PON、Coronado/Laguna UART 多数仍处于样品、互操作或客户认证阶段。把全部新品 TAM 直接计为 2026 收入会严重高估。
+3. **订单可见度改善，但公司不披露 backlog、book-to-bill 或取消率。** 可验证硬证据只有：光产品交期约 **28 周**、一般芯片交期由 2025Q1 的 **16-20 周**拉长到约六个月、Q1 为需求增长预付晶圆、截至 2026-03-31 的存货采购承诺 **$180.3m**、管理层称 backlog 已开始延伸至 2027。由此可以判断光产品 B2B 大概率高于 1，但不能伪造具体订单额或客户名称。
+4. **竞争壁垒是高速模拟/混合信号、DSP+TIA 协同、模块认证与第二晶圆来源，不是垄断。** Broadcom、Marvell、Cisco/Acacia、Credo 均有 800G/1.6T 产品；Marvell 的 3nm Ara 已量产，Broadcom Sian3 也是 3nm。MXL 的 Rushmore 为 4nm、Samsung Foundry 路线，能给客户提供 TSMC 之外的供应链分散，但其 1.6T 量产时间晚于领先者。
+5. **财务流动性可用、但不宽裕，尾部法律风险不可忽视。** 2026Q1 期末非受限现金 **$61.1m**、长期债务本金 **$125m**、流动比率 **1.70x**、速动比率 **0.70x**；新循环额度 **$130m、尚未提取、到期 2028-03**。公司已恢复非 GAAP 盈利，但 TTM GAAP 净亏损 **$132.1m**。Silicon Motion（SIMO）并购终止仲裁没有计提可量化损失，潜在赔偿是资产负债表最大的非经营尾部风险。
+6. **估值已经把相当大的光互联成功概率计入。** 2026-07-10 收盘价 **$91.30**，市值约 **$8.0bn-$8.18bn**，TTM P/S **16.1x**，GAAP P/E 因亏损而无意义，数据商 forward P/E 约 **61.2x**。即便 2027 收入达到一致预期 $791.6m，当前企业价值对应的 forward EV/S 仍约 **10.4x**。投资逻辑已从“等行业复苏”变成“必须连续证明光 DSP 份额、1.6T 认证、Panther 放量和毛利扩张”。
+
+## 研究边界、证据等级与估算方法
+
+- 本地只使用了 `基本面/行业调研/` 中与光 DSP、AI 网络、宽带接入和 AI 数据中心建设相关的正式产业资料；没有读取或继承其他公司报告，也没有使用 `特征量化/`。
+- 第一证据层：MaxLinear SEC 文件、财报、产品规格、公司会议及竞争对手官方产品发布。
+- 第二证据层：电话会/行业会议逐字稿、CableLabs/OIF/Ethernet Alliance 互操作信息、项目内行业资料。
+- 第三证据层：本文根据披露收入、出货量、产品架构、交期、采购承诺和认证节点做的区间模型。所有第三层数字均明确标记“测算”。
+- “产能能力（美元）”不是晶圆厂公布产能，而是按已锁定晶圆/封测、产品 ASP、良率爬坡和认证客户可消化量估算的**可交付年化收入能力**。
+- “AI 重要性/时间紧迫性/供需紧张/垄断能力/溢价能力”均采用 1-5 分：1 为低，5 为极高；供需分数越高代表越供不应求。
+
+## 1. 公司整体业务、产业链定位与财务状态
+
+### 1.1 公司做什么
+
+MaxLinear 是一家无晶圆厂（fabless）的 RF、模拟、数字和混合信号芯片公司，总部位于美国加州 Carlsbad。公司把高速 SerDes/DSP、射频、模拟前端、网络处理、软件和参考设计组合后，销售给光模块厂、网络设备 OEM/ODM、宽带 CPE 厂、运营商供应链、存储设备厂和工业客户。2025 年约 **82%** 的产品按发货地流向亚洲，其中香港约 **49%**、越南约 **12%**；这反映电子制造链所在地，并不等同最终客户所在地。
+
+| 披露业务类别 | 2026Q1 收入 | 占比 | 同比 | 主要产品/场景 | AI 数据中心属性 |
+|---|---:|---:|---:|---|---|
+| Infrastructure | $62.814m | 45.8% | +136.5% | Keystone/Rushmore 光 DSP、Topanga/Washington TIA、Panther 存储加速、Sierra 无线基础设施、接口/网络芯片 | **直接 AI 收入主要在光互联和 Panther**；Sierra 多为通信基础设施 |
+| Broadband | $43.626m | 31.8% | +6.7% | Puma 8 DOCSIS、PRX/URX PON/AnyWAN 网关 SoC、宽带接入前端 | 大部分为住宅/运营商接入；AI 园区 PON 是小额设计赢单、2027 期权 |
+| Connectivity | $18.595m | 13.6% | -8.1% | MxL31708/31712 Wi-Fi 7、以太网 PHY/交换、MoCA/G.hn、USB bridge | 直接 AI 占比低；控制面、管理网和高速网关是间接内容量 |
+| Industrial & Multi-Market | $12.153m | 8.9% | +47.2% | UART、桥接、串行收发器、PMIC、工业接口 | 新 UART 有 AI 控制面机会；当前主体仍是工业/通用模拟 |
+| **合计** | **$137.188m** | **100%** | **+43.0%** | 单一可报告经营分部 | 本文测算 AI 数据中心收入约 $25m-$35m，即 **18%-26%** |
+
+来源：[2026Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1288469/000128846926000029/mxl-20260331.htm)、[2026Q1 财报](https://investors.maxlinear.com/press-releases/detail/607/maxlinear-inc-announces-first-quarter-2026-financial)。公司只按终端市场披露收入，不披露各类别毛利或经营利润。
+
+### 1.2 投资人如何给公司贴标签
+
+| 投资人视角 | 典型认知 | 支撑事实 | 容易犯的错误 |
+|---|---|---|---|
+| 历史标签 | Cable/PON/Wi-Fi 混合信号周期股、运营商资本开支和渠道库存敏感 | 2022-2024 收入由约 $1.12bn 降至 $360.5m；宽带曾长期为第一业务 | 把 2025-2026 复苏全部视为结构性 AI 增长 |
+| 当前多头标签 | 800G/1.6T 光 DSP 份额提升者、AI 光互联“小市值弹性标的” | Infrastructure 2026Q1 +136%；2026 光收入指引 $150m-$170m；Keystone 多家 hyperscaler 量产 | 把 management TAM、样品和互操作演示直接当成订单 |
+| 当前空头标签 | 高估值、GAAP 亏损、客户集中、缺少定量 backlog 的执行故事 | TTM P/S 16.1x；两大客户占 2025 收入 28%；top 10 占 65%；SIMO 仲裁未决 | 忽略 59%-60% 非 GAAP 毛利和高增光产品带来的经营杠杆 |
+| 更准确的定位 | **正在从宽带周期底部转向 AI 光互联的多产品 fabless 公司** | 2026Q1 Infrastructure 已最大，但全年 AI 光收入仍约只占 1/4 | 既不能按“传统 cable”估值，也不能按“纯 AI 光芯片”估值 |
+
+### 1.3 最近三年的重大变化、转型与并购
+
+| 时间 | 事件 | 对业务/估值的影响 |
+|---|---|---|
+| 2023-07 | 终止原计划约 $3.8bn 收购 Silicon Motion 的交易；2023-10 对方启动新加坡仲裁 | 没有取得 NAND controller 规模与客户；形成至今未量化的赔偿尾部风险。最近三年**没有完成同等级重大收购** |
+| 2023-2024 | 宽带和连接渠道去库存、运营商/CPE 需求下行；公司重组、削减人员和设施成本 | 收入从 2022 约 $1.12bn 降至 2023 $693.3m，再降至 2024 $360.5m；研发投入仍高，GAAP 亏损扩大 |
+| 2024-2025 | Keystone 5nm 400G/800G DSP 开始形成量产；Panther、Sierra、PON/Wi-Fi 7 同步推进 | 2025 收入 $467.6m、同比 +29.7%；Infrastructure、Broadband、Connectivity 均复苏，Industrial 仍弱 |
+| 2025H2-2026Q1 | 光数据中心收入加速，Keystone 进入美国和亚洲多个 hyperscaler；推出 Rushmore、Washington、Annapurna、Panther V 和 AI 控制面新品 | Infrastructure 在 2026Q1 成为最大业务；股票估值从周期修复切换到 AI 成长定价 |
+| 2026H2-2027（待验证） | Rushmore/Washington 量产、Makalu 送样、AI 园区 XGS-PON 和 UART 客户认证 | 是下一轮增长来源，也可能因节点、良率、认证或客户双供而推迟；不能计为既成事实 |
+
+2020 年收购 Intel Home Gateway Platform Division 是现有 AnyWAN/Puma/PON/Wi-Fi 平台的重要历史基础，但不属于最近三年的新增交易。近三年的核心变化是**有机研发组合转向**而非并购扩张。
+
+### 1.4 产业链位置
+
+MaxLinear 位于“晶圆代工/封测”和“模块/设备 OEM”之间：
+
+1. 上游：TSMC/Samsung 等晶圆代工、SiGe/CMOS 工艺、OSAT、基板/封装、EDA/IP；公司不拥有晶圆厂。
+2. 公司层：设计 DSP、SerDes、TIA、RF、网络/存储处理 ASIC，提供固件、驱动、参考板和认证支持。
+3. 下游：光模块厂、AEC/线缆厂、Dell 等存储 OEM、宽带网关 ODM、O-RAN RU 厂和 Tier-1 网络设备商。
+4. 终端：hyperscaler、云厂商、AI 集群、运营商和企业。多数 hyperscaler 名称未公开，不能根据“美国/亚洲大客户”自行猜测。
+
+在 AI 网络中，MXL 不生产 GPU、交换 ASIC 或光器件本身；其价值位于：
+
+- **光链路电子层：** PAM4 DSP、TIA、driver 集成和 FEC/均衡；这是当前最大 AI 收入。
+- **短距铜链路：** 224G/lane retimer/AEC；目前是送样期权。
+- **AI 数据路径：** Panther 压缩、加密、校验和卸载；连接 GPU 计算与外部存储。
+- **控制/管理路径：** PON、USB-UART、USB bridge；ASP 小，但随服务器/机架数量扩张。
+
+### 1.5 股价、估值和经营指标
+
+2026-07-11 是周六，故“今天可获得的最新正式股价”是 **2026-07-10（周五）收盘价**。
+
+| 指标 | 最新值 | 数据日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | **$91.30** | 2026-07-10 收盘；盘后约 $92.11 | 市场已显著重估光互联成长 |
+| 市值 | **约 $8.0bn-$8.18bn** | 2026-07-10；不同数据商股本更新时间略有差异 | 以约 89.6m 基本股计约 $8.18bn |
+| 企业价值 EV | **约 $8.27bn** | 2026-07-11 数据页 | 净债务相对市值小，但不能忽略仲裁风险 |
+| TTM GAAP P/E | **不适用/亏损** | TTM EPS -$1.52 | 数据商显示负倍数没有经济含义 |
+| Forward P/E | **约 61.2x** | 2026-07-11 数据商一致预期口径 | 2026 一致 non-GAAP EPS $1.34；不同口径会得到约 61-68x |
+| TTM P/S | **16.07x** | TTM 收入 $508.9m | 对 fabless 半导体仍属极高水平 |
+| Forward P/S | **约 11.7x** | 数据商未来十二个月口径 | 需要连续超预期才能消化 |
+| TTM 收入 | **$508.9m** | 2025Q2-2026Q1 | 同比约 **+40.9%** |
+| 2026E 收入 | **$657.2m** | 11 位分析师平均、2026-06-29 更新 | 同比 **+40.5%** |
+| 2027E 收入 | **$791.6m** | 同一口径 | 同比 **+20.5%** |
+| TTM GAAP 毛利率 | **57.16%** | 截至 2026Q1 | 2026Q1 单季 57.5%；non-GAAP 59.5% |
+| TTM GAAP 经营利润率 | **-15.89%** | 截至 2026Q1 | R&D 与 SBC 对小收入基数压力大 |
+| TTM GAAP 净利率 | **-25.96%** | 净亏损 $132.1m | Q1 税项因地区利润组合/递延税估值备抵而异常放大亏损 |
+| TTM 自由现金流 | **约 $10.2m** | 截至 2026Q1 | FCF margin 约 2%；Q1 单季仍为负 |
+
+来源：[实时行情](https://finance.yahoo.com/quote/MXL/)、[估值与财务统计](https://stockanalysis.com/stocks/mxl/statistics/)、[分析师一致预期](https://stockanalysis.com/stocks/mxl/forecast/)。估值是快照，不是目标价。
+
+### 1.6 资产负债表健康度
+
+| 2026-03-31 项目 | 金额/比率 | 变化与判断 |
+|---|---:|---|
+| 非受限现金及等价物 | $61.077m | 低于债务本金；另有受限现金 $28.855m，不能全部视为自由流动性 |
+| 应收账款 | $40.855m | 回款规模尚可；客户集中使单一客户延迟付款影响更大 |
+| 存货 | $85.839m | 较 2025 年末 $78.104m 增加 **9.9%**，与光产品备货一致，也增加错配风险 |
+| 流动资产/流动负债 | $249.450m / $146.658m | 营运资本 **$102.792m**；流动比率约 **1.70x** |
+| 速动比率 | 约 **0.70x** | 流动性依赖存货转化及循环信贷，谈不上非常充裕 |
+| 长期债务 | 账面 $123.773m；本金 $125m | 加权平均利率约 **6.3%**，到期 2028-06-23 |
+| 循环信贷 | $130m，未提取 | 2026-04 修订后到期 2028-03-23；要求净杠杆不高于 3.5x，非受限现金加可用额度至少 $80m |
+| Q1 经营现金流/资本开支 | -$8.872m / $1.384m | 单季 FCF 约 **-$10.3m**；主要受存货、预付晶圆和营运资本影响 |
+| 采购义务 | 存货 $180.271m；其他 $38.906m | 其中 $129.556m 存货采购预计在 2026 剩余期间发生；是供应锁定证据，不是客户 backlog |
+| Goodwill/无形资产 | $318.588m / $46.412m | 合计占总资产 47%；若产品失速存在减值风险 |
+| 2025 客户集中 | 两大客户 28%；top 10 为 65% | 2026Q1 单一客户占 13%；客户议价和季度波动风险较高 |
+
+**综合评分：5.5/10，中性偏弱但短期可控。** 正面是循环额度未用、净债务不高、非 GAAP 经营利润已转正、采购义务对应真实增长准备；负面是速动比率低、Q1 现金流为负、GAAP 仍亏损、SBC 较高、客户集中和 SIMO 仲裁无法量化。若没有仲裁巨额不利结果，公司并非短期偿付危机；若仲裁赔偿达到数亿美元，现有现金和信贷缓冲会明显不足。
+
+## 2. 最近五次财报：数字、业务与订单
+
+### 2.1 合并财务表现
+
+| 财报季度 | 收入 | 同比 | 环比 | GAAP 毛利率 | non-GAAP 毛利率 | GAAP 经营利润率 | non-GAAP 经营利润率 | GAAP 稀释 EPS | 关键变化 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| 2025Q1 | $95.933m | +1% | +4% | 56.1% | 59.1% | -48% | -2% | -$0.58 | 宽带/连接复苏，Infrastructure 仍同比下降；重组费用较高 |
+| 2025Q2 | $108.813m | +18% | +13.4% | 56.5% | 59.1% | -23% | +7% | -$0.31 | non-GAAP 经营利润转正；光产品开始加速 |
+| 2025Q3 | $126.459m | +56% | +16.2% | 56.9% | 59.1% | -33% | +12% | -$0.52 | 全面增长、Infrastructure +75%；GAAP 仍受 SBC/税项/重组影响 |
+| 2025Q4 | $136.436m | +48% | +7.9% | 57.6% | 59.6% | -11% | +16% | -$0.17 | 光 DSP 和宽带提升，经营杠杆显著改善 |
+| **2026Q1** | **$137.188m** | **+43%** | **+0.6%** | **57.5%** | **59.5%** | **-13%** | **+16%** | **-$0.52** | Infrastructure 成为第一业务；异常税项使 GAAP EPS 环比恶化 |
+
+### 2.2 各业务收入、增速与 AI 数据中心占比
+
+| 财报季度 | Broadband | Connectivity | Infrastructure | Industrial | AI 数据中心收入/占比（测算） | 各业务利润率 |
+|---|---:|---:|---:|---:|---:|---|
+| 2025Q1 | $40.883m；+24% YoY | $20.235m；+108% | $26.561m；-19% | $8.254m；-59% | **$8m-$11m；8%-11%** | 公司不披露类别利润率；当季整体 GM 56.1% |
+| 2025Q2 | $47.556m；+118% | $20.741m；+56% | $34.709m；+9% | $5.807m；-77% | **$12m-$15m；11%-14%** | 光产品占比上升，估计 Infrastructure GM 开始高于公司均值 |
+| 2025Q3 | $58.236m；+80% | $18.968m；+49% | $40.343m；+75% | $8.912m；-32% | **$17m-$20m；13%-16%** | 仅有公司整体 GM 56.9%；产品级为模型 |
+| 2025Q4 | $57.748m；+95% | $18.046m；-10% | $46.551m；+76% | $14.091m；-12% | **$23m-$24m；17%-18%** | 整体 GM 57.6%；高毛利光 mix 抵消宽带竞争 |
+| **2026Q1** | **$43.626m；+7%** | **$18.595m；-8%** | **$62.814m；+136%** | **$12.153m；+47%** | **$25m-$35m；18%-26%** | 整体 GM 57.5%；本文估计 Infrastructure 约 60%-68%、Broadband 约 50%-58%、Connectivity 约 50%-60%、Industrial 约 55%-65% |
+
+注：2025 年管理层给出的全年光数据中心收入为约 **$60m-$70m**；本文用四季 $8m-$11m、$12m-$15m、$17m-$20m、$23m-$24m 进行反推，区间合计恰为 $60m-$70m。2026Q1 光收入没有单独披露，$25m-$35m 是用 Infrastructure 增量、2026 年 $150m-$170m 光收入预期和 Q2“step function”表述估算。它不是公司公布数字。
+
+### 2.3 Backlog、bookings、交期与取消率
+
+| 财报季度 | Backlog/Bookings/B2B | 交期与供给 | 取消/渠道状态 | 可验证订单线索 |
+|---|---|---|---|---|
+| 2025Q1 | 管理层称 bookings/backlog 连续第六季改善；**未披露金额和 B2B** | 一般芯片约 **16-20 周** | 未披露取消率；管理层否认关税拉货 | 光 DSP 多客户认证和初始量产，未给客户名/订单额 |
+| 2025Q2 | 称客户下单率与 backlog robust；B2B 未披露 | 晶圆代工和 OSAT 合计交期拉长至约 **六个月** | 晚到的关税相关订单不会显著贡献随后两个季度 | 2025 光收入预期 $60m-$70m |
+| 2025Q3 | bookings 强；sell-in 与 sell-through 基本平衡 | 晶圆报价和 lead time 上升；5nm 偏紧，Rushmore 采用 Samsung 分散供应 | 公司称渠道没有重新积压；取消率仍未披露 | Keystone 已在数家美国/亚洲数据中心完成 400G/800G 资格 |
+| 2025Q4 | H1 backlog 强；管理层估计 2026 出货 **4m-6m 个 PAM4 单元**；B2B 未披露 | 光产品约 **28 周**，供给偏紧但公司称已规划 | 多数采购单原则上 NCNR，但客户可申请取消/延后；无历史取消率 | 当时 2026 光收入预期 $100m-$130m，后续上调 |
+| **2026Q1** | 管理层称 backlog 在 2026H2 增加并开始延伸至 2027；本文判断光产品 B2B **大概率 >1**，但无公司数字 | 预付晶圆、存货增加；部分供应约束，晶圆/封装成本上升 | 取消率未披露；公司称多数成本可向客户传导 | 2026 光收入预期上调至 **$150m-$170m**；存货采购承诺 **$180.3m** |
+
+**关键辨析：**采购承诺是 MXL 向上游锁定的供应，不是客户给 MXL 的不可撤销订单；“多个 hyperscaler”“美国和亚洲客户”是有效资格证据，却不是公开客户名单。公司 10-Q 说明其销售主要依据 purchase order 而非长期承诺，订单多为 non-cancelable/non-returnable，但客户仍可能请求取消、延期或重新协商。因此本报告在情景模型中使用取消率假设，而不把 backlog 当成确定收入。
+
+五季资料来源：[2025Q1 10-Q](https://investors.maxlinear.com/all-sec-filings/content/0001288469-25-000029/mxl-20250331.htm)、[2025Q2 10-Q](https://investors.maxlinear.com/all-sec-filings/content/0001288469-25-000079/mxl-20250630.htm)、[2025Q3 10-Q](https://investors.maxlinear.com/all-sec-filings/content/0001288469-25-000097/mxl-20250930.htm)、[2025 10-K](https://investors.maxlinear.com/all-sec-filings/content/0001288469-26-000011/mxl-20251231.htm)、[2026Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1288469/000128846926000029/mxl-20260331.htm)。
+
+## 3. 2026 年最新指引、业务重心与产品交叉验证
+
+### 3.1 2026Q2 指引及业务占比
+
+| 2026Q2 指引项目 | 公司指引 | 中点/推导 | 关键判断 |
+|---|---:|---:|---|
+| 收入 | $160m-$170m | **$165m**；环比 +20.3%，同比 +51.6% | 单季“step function”主要由光数据中心驱动 |
+| GAAP 毛利率 | 56%-59% | 57.5% | 晶圆/封装涨价与高毛利光产品 mix 大致抵消 |
+| non-GAAP 毛利率 | 58%-61% | 59.5% | 与 Q1 相近，尚未达到长期 65% 目标模型 |
+| GAAP Opex | $91m-$97m | $94m | 收入增长开始放大经营杠杆 |
+| non-GAAP Opex | $61m-$66m | $63.5m | 中点 non-GAAP 经营利润约 $34.7m，利润率约 21% |
+| 利息及其他费用 | $1.8m-$2.2m | $2.0m | 债务成本稳定 |
+| 稀释股数 | 约 95m | 较基本股约 89.6m 高约 6% | 股权激励和奖金用股构成稀释 |
+
+管理层只表示**四个类别均环比增长、Infrastructure 仍为最大增长源**，没有给 Q2 类别数字。本文用 Q1 基数、光收入上调和产品放量窗口反推如下；这不是公司指引：
+
+| 2026Q2 类别（测算） | 收入区间 | 占比 | 环比 | 核心驱动 |
+|---|---:|---:|---:|---|
+| Infrastructure | **$77m-$84m** | 47%-51% | +23% 至 +34% | Keystone 400G/800G；Panther；Sierra |
+| Broadband | **$46m-$50m** | 28%-30% | +5% 至 +15% | PON/AnyWAN、Puma 8、运营商网关 |
+| Connectivity | **$20m-$22m** | 12%-13% | +8% 至 +18% | Wi-Fi 7、2.5G Ethernet、USB bridge |
+| Industrial | **$13m-$15m** | 8%-9% | +7% 至 +23% | 工业接口恢复；AI UART 尚不会成为大额收入 |
+| 其中光数据中心 | **$35m-$45m** | 总收入 21%-27% | 较 Q1 测算 +15% 至 +60% | Q2“step function”与全年 $150m-$170m 目标 |
+
+区间不能简单取上下限相加；中点组合约为 $165m。真正需在 7 月 23 日验证的是：Infrastructure 是否至少接近 $80m、光收入是否接近 $40m、毛利率是否在供给涨价下仍守住 59% non-GAAP。
+
+### 3.2 公司最侧重的产品与型号
+
+| 优先级 | 产品平台/型号 | 当前状态（截至 2026-07-11） | 2026 销售规模（披露或测算） | 产品毛利率（测算） | 增长/交叉验证 |
+|---:|---|---|---:|---:|---|
+| 1 | **Keystone PAM4 DSP**：MxL93682/683/684（800G），MxL93642/643/644 及 A/C 变体（400G） | 5nm，量产；公司称累计数百万颗，多个美国/亚洲 hyperscaler 400G/800G scale-up/scale-out | 光业务总指引 $150m-$170m 中的主体；本文分配 **$140m-$160m** | **60%-70%** | 2025 光收入 $60m-$70m，2026 约 2.3x-2.7x；4m-6m PAM4 单元与收入指引隐含每单元约 $25-$42.5，含产品组合差异 |
+| 2 | **Rushmore MxL91782 1.6T DSP** | PRE/送样；4nm Samsung；8×200G host/line；OFC 2026 进行 OIF/Ethernet Alliance 224G VSR 互操作；计划 2026 年末生产 | **$5m-$15m**，主要为小批量/初始生产测算 | **62%-72%**（量产后） | 1.6T 需求在 2026H2-2027 上升；但 Marvell Ara 已量产、Broadcom Sian3 已发布，MXL 认证不能延误 |
+| 3 | **Topanga/Washington TIA**：MxL9161/64/68；Washington 4×200G | Topanga active；Washington 750mW、SiGe、2026-04 送样，计划 H2 量产，兼容主流 DSP/探测器 pad | 当前大多计入光组合；Washington 单独 **<$5m** | **55%-65%** | DSP+TIA 协同提高内容量；Washington 不是独家绑定，只是 pad-compatible，客户也能配竞品 DSP/TIA |
+| 4 | **Annapurna/Makalu 224G retimer** | Annapurna 8/16 lane、最高 1.6T/3.2T，原定 2026Q2 available；Makalu 16 lane 3.2T 计划 2026Q4 送样；当前仍以样品/PoC 为主 | **$0m-$3m** | **55%-65%** | 可用于 AEC/on-board scale-up；当前公开版本重点为 Ethernet，UALink/其他协议支持不可提前视为量产收入 |
+| 5 | **Panther III/V 数据压缩与安全加速器** | Panther III 200Gbps 量产；Panther V 450Gbps、PCIe Gen5×16、最高 12:1 data reduction，处于送样/客户开发 | 管理层称 2025 **$10m-$20m**，2026 接近 **$40m**；本文 **$35m-$45m** | **60%-70%** | 2026 至少翻倍；Dell PowerMax、AMD reference design、LANL 技术合作提供外部交叉验证，但不是全部订单金额 |
+| 6 | **PON/AnyWAN/Wi-Fi 7**：PRX120/126/321、URX850/851、MxL31708/31712、Trinity | 多数 active/量产；PRX 支持 XGS-PON 等，URX850 最高 35Gbps packet processing，Wi-Fi 7 最高约 17-18.6Gbps | 与 Puma 8 合计贡献高增长 access/connectivity，本文 **$175m-$220m** | **50%-60%** | 住宅/运营商是主体；首个 AI 数据中心 XGS-PON Tier-1 OEM win 预计 2027 才放量 |
+| 7 | **Puma 8 DOCSIS 4.0/3.1** | D4 FDD 平台；2026-05 完成 DOCSIS 3.1 VFI，是迈向 D4 认证的步骤，**不是完整 DOCSIS 4.0 认证** | 包含于上行 access 估计 | **50%-58%** | DOCSIS 4 升级可带来约 40% ASP uplift（管理层口径）；长期宽带设备总市场增长低，重在份额/内容量而非行业高速增长 |
+| 8 | **Sierra 单芯片 O-RAN Radio SoC** | 4T4R/8T8R，集成 RF transceiver、DFE/DPD、low-PHY、O-RAN 7.2x 和 ARM；Pegatron、Samji、Zenlynx 已公开采用/展示 | **$30m-$50m** | **55%-65%** | 采用证据真实，但主要是无线通信基建，不计为直接 AI 数据中心收入 |
+| 9 | **AI 控制面 PON、Coronado/Laguna UART**：MxL81424/MxL81108 | AI 园区 PON 处于设计赢单/认证；两款 4-channel USB-UART 为 PRE、样品，12Mbps，计划 H2/年底生产 | PON **$0m-$3m**；UART **<$1m** | **50%-60%** | 单价低、当前收入小；若每机架/管理板广泛附着，单位量可大，属于不能遗漏的小产品 |
+| 10 | **智能 PMIC**：MxL7080、MxL76500、MxL76125 | 2026 新发布，目标网关/通信平台 | **<$3m** | **45%-55%** | 可提高平台 BOM，但不是 AI GPU 主电源，优先级低于光/存储/控制面 |
+
+公司没有披露产品或业务毛利率。上述毛利区间以公司 59%-60% non-GAAP GM、产品复杂度、先进节点成本、竞争强度和管理层“800G/1.6T mix 有利”表述估算。不能把公司长期 **65% gross margin / 35% operating margin** 目标模型当成当前产品已实现利润率。
+
+产品来源：[Keystone 产品族](https://www.maxlinear.com/products/infrastructure/wired-infrastructure/data-center-connectivity/pam4-dsps)、[Rushmore MxL91782](https://www.maxlinear.com/product/infrastructure/wired-infrastructure/data-center-connectivity/pam4-dsps/mxl91782)、[OFC 2026 Rushmore 演示](https://investors.maxlinear.com/press-releases/detail/602/maxlinear-to-showcase-nextgeneration-1-6t-rushmore-dsp)、[Washington TIA](https://investors.maxlinear.com/press-releases/detail/608/maxlinear-announces-availability-of-washington-200g-tia-for)、[Annapurna](https://investors.maxlinear.com/press-releases/detail/603/maxlinear-unveils-annapurna-224g-scale-up-retimer-to-extend)、[Panther V](https://investors.maxlinear.com/press-releases/detail/609/maxlinear-showcases-panther-to-accelerate-ai-inference-and)、[PON SoC](https://www.maxlinear.com/products/access/fiber-access/socs-for-optical-networking-units-onu)、[Wi-Fi 7](https://www.maxlinear.com/products/connectivity/wireless/wi-fi-7)、[Sierra](https://www.maxlinear.com/sierra)、[AI UART](https://investors.maxlinear.com/press-releases/detail/612/maxlinear-enhances-control-plane-connectivity-for-ai-data)。
+
+### 3.3 明确跳过或降低权重的产品
+
+以下产品仍可产生现金流，但因非 AI、低增速、行业成熟或收入过小，后文不逐一做三情景 BOM：
+
+- 传统电视/卫星 tuner、demodulator、FSC/narrowband 产品；
+- xDSL/G.fast、SHDSL、语音/POTS、老式 GPON 和低速 cable front-end；
+- Wi-Fi 6/6E、1GbE、成熟 MoCA/G.hn；
+- 低速 RS-232/RS-485/CAN、PCI/PCIe UART、GPIO、普通 USB bridge 的存量型号；
+- LED driver、通用 LDO/regulator、传统工业 AFE；
+- 低速 metro/long-haul 光传输和微波/毫米波 legacy 产品。
+
+这些业务合计并非零，本文在公司总收入情景中保留“其他成熟/工业”收入，但不把它们作为 AI 增长引擎。例外是 Coronado/Laguna UART：虽然单价低、当前近乎零收入，但因 AI 控制面附着潜力而单列。
+
+## 4. 当前每个高增长/关键产品的收入、AI 重要性与竞争能力
+
+| 关键产品组 | 2026Q1 收入贡献（测算） | 2026E 收入贡献 | 收入增速 | AI 重要性 | 时间紧迫性 | 当前供需紧张 | 垄断能力 | 溢价能力 | 核心依据 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| Keystone 400G/800G + Topanga | $25m-$35m | **$140m-$160m** | 约 +120% 至 +165% | 5.0 | 5.0 | 4.0 | 2.5 | 4.0 | 800G 是 2026 主流；28 周交期；多 hyperscaler；但至少 Broadcom/Marvell/Cisco/Credo 可替代 |
+| Rushmore 1.6T + Washington | <$2m | **$5m-$15m** | 低基数起量 | 5.0 | 5.0 | 3.0 | 2.5 | 4.0 | 1.6T 在 2026H2-2027 导入；200G/lane 功耗/良率决定资格；第二 foundry 有价值 |
+| Annapurna/Makalu retimer/AEC | 约 $0 | **$0m-$3m** | 样品期 | 4.5 | 4.0 | 2.0 | 2.0 | 3.5 | 224G 铜链路解决短距 scale-up；当前协议覆盖和公开量产客户不足 |
+| Panther III/V | $7m-$10m | **$35m-$45m** | 管理层称至少翻倍 | 3.5 | 3.5 | 2.5 | 2.5 | 3.5 | AI inference/RAG/KV-cache 使数据移动成为瓶颈；但 Intel QAT、FPGA、自研 ASIC 可替代 |
+| AI 数据中心 XGS-PON | <$1m | **$0m-$3m** | 设计赢单期 | 2.5 | 2.5 | 1.5 | 2.5 | 3.0 | 适合控制面/管理网，不承载主 GPU fabric；Tier-1 OEM win 预计 2027 ramp |
+| Coronado/Laguna UART | 约 $0 | **<$1m** | 样品期 | 2.0 | 2.5 | 1.0 | 1.5 | 2.0 | 每颗仅 4 个管理串口、ASP 小；200m-unit TAM 是公司估计，不是订单 |
+| PON + Wi-Fi 7 + Puma 8 | $40m-$55m | **$175m-$220m** | 约 +10% 至 +25% | 1.5 | 3.0 | 2.5 | 3.0 | 3.0 | 直接 AI 弱，但为公司现金流核心；DOCSIS/PON 认证和软件栈提高替换成本 |
+| Sierra O-RAN | $7m-$12m | **$30m-$50m** | 约 +40% 至 +100% | 1.5 | 3.0 | 2.0 | 2.5 | 3.0 | 公开 RU 采用增加，单芯片集成有差异；运营商部署节奏慢、项目波动大 |
+
+**得分解释：**“垄断能力 2.5”不等于技术弱，而是 hyperscaler 会维持至少两家供应商，且 Broadcom/Marvell 规模、工艺和客户基础更强。MXL 真正可定价之处是客户认证窗口、低功耗/高 swing driver、DSP+TIA 配套、紧缺时期交期和 Samsung 第二来源；一旦同代产品完成双供，ASP 会随光模块成本曲线下降。
+
+## 5. 一年后：产品级基准、乐观与极度乐观情景
+
+### 5.1 模型共同口径
+
+- “一年后收入”指**截至 2027Q2 的未来十二个月年化贡献**，不是单季收入。
+- 当前比较基准为 2026E：公司市场一致收入 $657.2m；其中光数据中心公司口径 $150m-$170m、Panther 管理层口径接近 $40m，其余为本文分拆。
+- 基准：已公开资格和排产大致兑现；乐观：新增 hyperscaler/模块厂双平台量产；极度乐观：需求、份额与产能同时向上，属于压力测试而非最可能结果。
+
+### 5.2 逐产品三情景
+
+| 产品组 | 情景 | 一年后收入贡献 | 对 2026E 增速 | AI 重要性 | 紧迫性 | 供需紧张 | 垄断/溢价能力 | 必要条件 |
+|---|---|---:|---:|---:|---:|---:|---|---|
+| Keystone 400G/800G + Topanga | 基准 | **$175m-$210m** | +15% 至 +45% | 5.0 | 4.5 | 3.5 | 2.5 / 3.5 | 800G 继续主流，现有客户份额稳定；1.6T 只部分替代 |
+|  | 乐观 | **$220m-$270m** | +45% 至 +90% | 5.0 | 5.0 | 4.5 | 3.0 / 4.0 | 美国/亚洲更多平台放量，份额接近管理层 20%-25% aspiration |
+|  | 极度乐观 | **$280m-$340m** | +80% 至 +140% | 5.0 | 5.0 | 5.0 | 3.0 / 4.5 | 800G 出货远超预期且竞品/供应受限；客户不快速转向自研/CPO |
+| Rushmore 1.6T + Washington | 基准 | **$40m-$70m** | 约 4x-8x | 5.0 | 5.0 | 3.0 | 2.5 / 4.0 | 2026 年末量产，2027H1 至少 2 个平台爬坡 |
+|  | 乐观 | **$90m-$140m** | 约 8x-18x | 5.0 | 5.0 | 4.0 | 3.0 / 4.5 | 1.6T FRO 大规模切换，DSP+TIA 套片率高，Samsung 良率稳定 |
+|  | 极度乐观 | **$160m-$230m** | 约 15x-30x | 5.0 | 5.0 | 5.0 | 3.5 / 4.5 | MXL 成为主要双供、竞品交期恶化；1.6T 提前占主流 |
+| Annapurna/Makalu 224G retimer | 基准 | **$8m-$18m** | 低基数 >+400% | 4.5 | 4.0 | 2.5 | 2.0 / 3.0 | 样品完成验证，1-2 个 Ethernet AEC/board 项目小量 |
+|  | 乐观 | **$25m-$50m** | 低基数 >10x | 4.5 | 4.5 | 4.0 | 2.5 / 3.5 | 多家 cable/AI 系统采用，224G 铜 reach/power 优势明确 |
+|  | 极度乐观 | **$60m-$100m** | 低基数 >20x | 5.0 | 5.0 | 5.0 | 3.0 / 4.0 | Ethernet scale-up 成为主流且 MXL 获 2-3 个 hyperscaler 大单 |
+| Panther III/V | 基准 | **$55m-$70m** | +35% 至 +75% | 3.5 | 3.5 | 3.0 | 2.5 / 3.5 | 现有 OEM 放量，Panther V 按期生产 |
+|  | 乐观 | **$75m-$95m** | +85% 至 +140% | 4.0 | 4.0 | 4.0 | 3.0 / 4.0 | 两个以上大存储/AI inference 客户规模部署 |
+|  | 极度乐观 | **$110m-$140m** | +175% 至 +250% | 4.0 | 4.5 | 4.5 | 3.0 / 4.0 | RAG/KV-cache 架构普遍外置，定制 ASIC 供应不足，卡级 ASP 稳定 |
+| AI 数据中心 XGS-PON | 基准 | **$5m-$12m** | 从近零起量 | 2.5 | 3.0 | 2.0 | 2.5 / 3.0 | 已披露 Tier-1 OEM 项目在 2027 按期爬坡 |
+|  | 乐观 | **$15m-$30m** | 从近零起量 | 3.0 | 3.5 | 3.5 | 3.0 / 3.5 | PON 控制面扩至多个园区、单项目覆盖更多 rack |
+|  | 极度乐观 | **$35m-$60m** | 从近零起量 | 3.5 | 4.0 | 4.5 | 3.5 / 4.0 | PON 成为 hyperscale 控制网标准化方案；公司所称“数亿美元 TAM”快速兑现 |
+| Coronado/Laguna UART | 基准 | **$2m-$5m** | 从样品起量 | 2.0 | 2.5 | 1.5 | 1.5 / 2.0 | 现有 USB-UART 客户完成板级认证 |
+|  | 乐观 | **$8m-$15m** | 从样品起量 | 2.5 | 3.0 | 2.5 | 2.0 / 2.5 | 每机架多颗附着、两家大 hyperscaler 规模采用 |
+|  | 极度乐观 | **$20m-$35m** | 从样品起量 | 3.0 | 3.5 | 4.0 | 2.5 / 3.0 | 200m-unit TAM 的 5%-10% 在一年内转为 MXL 出货，概率低 |
+| PON + Wi-Fi 7 + Puma 8 | 基准 | **$210m-$250m** | +5% 至 +30% | 1.5 | 3.0 | 2.5 | 3.0 / 3.0 | 北美 cable/PON 升级稳定，Wi-Fi 7 渗透抵消行业低增速 |
+|  | 乐观 | **$260m-$320m** | +30% 至 +75% | 1.5 | 3.5 | 3.5 | 3.5 / 3.5 | DOCSIS 4 认证推进、PON share gain、Wi-Fi 7 ASP +25% 兑现 |
+|  | 极度乐观 | **$340m-$420m** | +70% 至 +130% | 2.0 | 4.0 | 4.0 | 3.5 / 4.0 | 多运营商同步大规模换机且竞争对手供应受限；不符合当前行业低 CAGR 基准 |
+| Sierra O-RAN | 基准 | **$60m-$85m** | +30% 至 +180% | 1.5 | 3.0 | 2.5 | 2.5 / 3.0 | Pegatron/Samji/Zenlynx 等设计进入商业交付 |
+|  | 乐观 | **$90m-$120m** | +80% 至 +300% | 2.0 | 3.5 | 3.5 | 3.0 / 3.5 | 运营商宏站项目扩大，单芯片平台替代 FPGA+RFIC 组合 |
+|  | 极度乐观 | **$130m-$170m** | +160% 至 +450% | 2.0 | 4.0 | 4.5 | 3.0 / 4.0 | 多地区 O-RAN 资本开支同步上行；项目与供应均无延迟 |
+
+### 5.3 公司总收入交叉验证
+
+| 公司情景 | 截至 2027Q2 的年化收入 | 对 2026E $657.2m 增速 | 与产品模型的关系 | 当前 EV/该情景收入 |
+|---|---:|---:|---|---:|
+| 基准 | **$790m-$830m** | **+20% 至 +26%** | 接近 2027 一致预期 $791.6m；光组合约 $230m-$280m，Panther $55m-$70m，成熟业务约 $120m-$160m | 约 **10.0x-10.5x** |
+| 乐观 | **$980m-$1.05bn** | **+49% 至 +60%** | 1.6T、Panther、Sierra 和 access 同时上修；需多个新平台量产 | 约 **7.9x-8.4x** |
+| 极度乐观 | **$1.30bn-$1.42bn** | **+98% 至 +116%** | 接近重回 2022 收入规模但 mix 更优；要求光份额、认证、晶圆和终端建设全部顺风 | 约 **5.8x-6.4x** |
+
+极度乐观情景用于检验当前估值上限，不是概率最高预测。即使达到基准，公司估值仍要求高毛利 mix 和持续增长；若 2027 收入只达到 $700m、光收入停在约 $200m，则当前约 $8bn 市值会面临显著估值压缩。
+
+## 6. BOM、每 MW/rack/GPU/port 内容量、价格传导与当前产能
+
+### 6.1 统一物理口径
+
+本节采用项目内 AI 数据中心资料中的 GB300 NVL72 公开架构作为**归一化尺子**：每 rack 72 GPU、约 142kW IT 功率。因此：
+
+- **1MW IT 负载 ≈ 7.04 个 rack ≈ 507 个 GPU。**
+- 实际数据中心存在网络、存储、CPU、液冷和配电机架，故这不是整座园区的精确 rack 数，而是 GPU compute-rack 等效量。
+- 光模块数量取决于 NIC 端口数、scale-up/scale-out 拓扑、是否采用 DAC/AEC/CPO 及过订阅率。本文用“35%-75% 链路光化率”表示低/高区间，不宣称每颗 GPU 必定对应固定光口。
+
+### 6.2 关键产品 BOM 和真实芯片数量
+
+| 应用/产品 | 典型系统 BOM（本文 2026 价格模型） | MXL 真实物理内容量 | MXL ASP/内容价值（测算） | 价格传导链 |
+|---|---|---|---:|---|
+| **800G FRO 光模块：Keystone + Topanga** | 模块 ASP 约 $250-$450；PAM4 DSP 1 颗、8-channel TIA 1 颗或 2×quad、laser/PIC、driver（部分 Keystone 集成）、封装/连接器/PCB/电源/测试 | **每 optical port 1 颗 DSP + 1 个 octal-TIA 等效；每条双端光链路 2 颗 DSP + 2 个 TIA 等效** | DSP+可选 TIA **$25-$45/port**；$50-$90/link | 5nm wafer/OSAT → MXL 芯片 ASP → 模块厂良率/光器件 → OEM/交换机 → hyperscaler；MXL 只能传导芯片成本，不能占有整个模块 ASP |
+| **1.6T FRO：Rushmore + Washington** | 模块 ASP 约 $500-$800；1×8-lane 200G DSP、通常 2×4-channel TIA、EML/SiPh、封装与热设计；Rushmore 集成 high-swing driver 可减少外置 driver | **每 1.6T port 1 Rushmore + 2 Washington；每双端链路 2 DSP + 4 TIA** | **$50-$95/port**；$100-$190/link | Samsung 4nm + SiGe TIA → MXL 套片 → OSFP/OSFP-XD/QSFP-DD 模块 → 交换系统；新代初期有溢价，量产后随模块 ASP 下行 |
+| **1.6T AEC/on-board retimer：Annapurna/Makalu** | 每条 AEC 两端各一 retimer、铜缆/连接器、PCB、电源/散热、EEPROM/控制、测试；成品约 $100-$220 | **每 cable 2 颗 retimer；每端 1 颗** | **$20-$40/retimer，$40-$80/cable** | 高速 SerDes die/封装 → cable OEM → GPU/NIC/switch platform；reach、功耗和误码决定 ASP，不是按铜重量定价 |
+| **Panther III/V OCP/PCIe 卡** | Panther ASIC 1 颗、DDR/flash、PCIe retimer/PHY、NIC/接口、PCB、电源/散热、固件；成卡约 $800-$1,500 | **每 accelerator card 1 颗 Panther；每存储 controller/node 通常 1 张** | 芯片/授权等效 **$250-$500**；若 MXL 销售完整卡则收入可接近 $800-$1,500/card | wafer/board/BOM → MXL 卡/芯片 → Dell/存储 OEM → AI storage cluster；软件、driver 和压缩格式验证提高价值占比 |
+| **AI 控制面 XGS-PON ONU** | PRX/URX SoC、BOSA/光器件、DDR、PHY、PMIC、PCB；终端/控制盒约 $60-$140 | **每 ONU/HGU 1 颗 PRX/URX；上游 OLT 不一定使用 MXL** | **$15-$35/ONU** | 接入 SoC → Tier-1 OEM → hyperscaler 控制网；认证决定能否收取平台 ASP |
+| **Coronado/Laguna USB-UART** | UART bridge、ESD/level-shift、connector、PCB；每颗支持 4 channel | **每 4 个管理串口 1 颗；每管理板约 1 颗** | **$2-$6/chip** | 成熟节点/封装 → 板卡 ODM → server/UBB 管理面；替代件多，价格传导弱 |
+| **PON/Wi-Fi 7 gateway** | AnyWAN/PRX $20-$35、1-2 颗 MxL31708/712 $12-$25/颗、Ethernet PHY $2-$6/口、BOSA、memory、RF FEM、PCB/PMIC；整机 BOM 约 $120-$220 | **每 gateway 1 access SoC + 1-2 Wi-Fi 7 + 1-2 PHY** | MXL 合计约 **$35-$70/gateway** | wafer → MXL 平台套片 → CPE ODM → 运营商；完整软件/认证提升套片率，但运营商招标会压价 |
+| **Puma 8 DOCSIS 4 gateway** | Puma 8 SoC/tuner、Wi-Fi 7、RF FEM/filter、memory、2.5/10GbE、PCB/PMIC/机壳；整机 BOM 约 $130-$250 | **每 cable CPE 1 Puma 8/前端，另加 Wi-Fi/PHY** | MXL 平台约 **$35-$65/gateway** | CableLabs/运营商认证 → CPE ODM → cable operator；D4 功能带来约 40% ASP uplift 的管理层口径，但竞争和批量采购会分享价值 |
+| **Sierra O-RAN RU** | Sierra SoC、PA/LNA/filter、时钟、memory、power/cooling、天线；4T4R/8T8R building block，Massive MIMO 可拼接多颗 | **普通 RU 约 1 颗；Massive MIMO 按通道数使用多颗** | **$150-$350/Sierra 等效** | RF/数字 SoC → RU OEM → 系统集成商/运营商；集成度节省 FPGA/ASIC，但运营商项目议价强 |
+
+所有模块、卡和芯片 ASP 均为本文用于收入一致性检查的区间，不是公司报价。最硬的 ASP 锚点是管理层早期 2026 计划 **4m-6m PAM4 单元**与后来光收入 **$150m-$170m**：若口径近似，隐含组合收入为 **$25-$42.5/单元**，与 400G/800G DSP+TIA 混合估值相容。
+
+### 6.3 每 GPU、rack 和 MW 的内容量
+
+| 产品/链路 | 每 GPU 等效量 | 每 72-GPU rack | 每 1MW（约 507 GPU） | MXL 当前/目标份额后的收入内容量（测算） |
+|---|---:|---:|---:|---:|
+| 800G 光 DSP | 全光化时约 2 个 module endpoint/GPU；乘 35%-75% 光化率后 **0.7-1.5 颗 DSP/GPU** | **50-108 颗** | **355-761 颗** | 假设 MXL 份额 10%-25%、ASP $25-$40：约 **$0.9k-$7.6k/MW** |
+| 800G TIA 等效 | 与 800G module 数大体 1:1 | 50-108 个 octal 等效 | 355-761 个 | 若模块采用 Topanga，另贡献约 **$0.2k-$2.3k/MW**；不是所有 Keystone 模块都搭 MXL TIA |
+| 1.6T Rushmore | 1.6T port 可承载两个 800G 等效；乘光化率后 **0.35-0.75 颗/GPU** | **25-54 颗** | **177-380 颗** | 假设 2027 MXL 份额 5%-20%、DSP+TIA $55-$95/port：约 **$0.5k-$7.2k/MW** |
+| Washington TIA | 每 Rushmore module 2 颗 quad TIA | 50-108 颗 | 355-761 颗 | 与 Rushmore 套片率相关，不能把全部 1.6T port 视为 MXL TIA |
+| AEC retimer | 假设 0.5-2 条 AEC/GPU、2 retimer/cable，即 **1-4 颗/GPU** | **72-288 颗** | **507-2,028 颗** | 当前量产份额近 0；若份额 5%-15%、ASP $20-$40，约 **$0.5k-$12.2k/MW** |
+| Panther card | 不直接按 GPU 强制附着；假设相邻存储/controller 每 compute rack 等效 2-8 张，即 **0.03-0.11 张/GPU** | **2-8 张** | **14-56 张** | 若卡收入 $800-$1,500，约 **$11k-$84k/MW**；只适用于采用 Panther 的外置存储架构 |
+| AI PON ONU | 假设 1 个 ONU 服务 1-8 rack | **0.125-1 个/rack** | **0.9-7 个/MW** | $15-$35/ONU，约 **$14-$245/MW**；不是数据面光互联替代 |
+| 4-channel UART | 假设 4-16 个控制串口/rack | **1-4 颗/rack** | **7-28 颗/MW** | $2-$6/颗，约 **$14-$168/MW**；单位量大但美元内容很小 |
+
+这里的“每 MW 内容量”只用于把架构、数量和 ASP 连接起来，**不能用园区 MW 直接乘到公司收入**：同一园区可能分期建设、GPU 网络可能大量使用铜缆、端口会复用/过订阅、MXL 份额远低于 100%，且 MXL 收入通常在模块出货时确认，领先于数据中心通电。
+
+### 6.4 当前可交付产能、供应链采用与认证
+
+| 产品组 | 2026 当前年化可交付能力（美元，测算） | 采用程度 | 当前认证/生产阶段 | 主要产能瓶颈 |
+|---|---:|---|---|---|
+| Keystone + Topanga | **$170m-$200m** | 多家美国/亚洲 hyperscaler；经模块厂与直接资格两条路径；累计数百万颗 | **MP/量产**，400G/800G 多平台；公司称 top-3 PAM4 vendor | 5nm wafer、advanced package/test、模块厂良率；约 28 周交期 |
+| Rushmore + Washington | **$10m-$25m** 小批量能力 | OFC 与 OIF/Ethernet Alliance 互操作；客户样品和资格中 | Rushmore PRE、计划 2026 年末生产；Washington 2026-04 sampling、计划 H2 MP | Samsung 4nm 首代良率、224G SerDes/FEC、模块热预算、TIA 与探测器互操作 |
+| Annapurna/Makalu | **$0m-$5m** | Upscale.AI SkyHammer 公开技术背书；未披露大规模量产客户 | Annapurna 样品/availability；Makalu 计划 Q4 送样 | 224G 铜 reach、功耗、协议覆盖、cable OEM 和系统级 BER 验证 |
+| Panther III/V | **$45m-$60m** | Panther III 有生产客户；Dell PowerMax 公开合作，AMD reference design，LANL 为技术合作 | Panther III MP；Panther V sampling/showcase | 板卡 BOM、固件/driver、客户数据路径和压缩格式资格，而非先进晶圆绝对短缺 |
+| AI PON | **$5m-$10m**，需求而非供给限制 | 首个 hyperscale XGS-PON 通过 Tier-1 OEM；管理层称 2027 ramp | PRX 产品已有 Broadband Forum 247i4；AI 园区项目仍在平台资格/爬坡前 | 运营商级软件、OLT/ONU 互操作、客户网络架构决定采用 |
+| AI UART | **$1m-$3m** | legacy USB-UART 已在 cloud/enterprise 使用；新款仅称“selectively sampling”。Q1 电话会提到两个美国数据中心的 USB/analog design win，但**没有指明就是 Coronado/Laguna** | MxL81424/MxL81108 均为 PRE/样品，计划 H2/年底生产 | 板级认证、drop-in 兼容、低 ASP 下的成本竞争 |
+| PON/Wi-Fi 7/Puma 8 | **$230m-$280m** | 两家大型北美 telco 使用 PON solution；Wi-Fi 7 active；Puma 8 进入 VFI | PRX 247i4；Wi-Fi 7 IEEE 802.11be 产品；Puma 8 **DOCSIS 3.1 VFI、D4 完整认证待完成** | 运营商认证和终端需求；成熟节点产能通常不如 5nm 紧张 |
+| Sierra | **$60m-$90m** | Pegatron PR2850、Samji SNOO2-44N28、Zenlynx RRU4401S 已公开展示/采用 | 多个 commercial-ready O-RU，O-RAN 7.2x 平台 | 运营商 field trial、PA/RF front-end 配套、项目回款和部署节奏 |
+
+## 7. 一年后产能能力、供应链采纳与认证情景
+
+| 产品组 | 基准：一年后能力/采纳/认证 | 乐观：一年后能力/采纳/认证 | 极度乐观：一年后能力/采纳/认证 |
+|---|---|---|---|
+| Keystone + Topanga | **$220m-$250m**；现有 hyperscaler 深化，800G 维持主流 MP | **$300m-$340m**；份额接近 20%-25%，更多模块 SKU 完成双供 | **$400m-$450m**；多客户紧缺、MXL 成为主要供方；需额外 wafer/OSAT 锁定 |
+| Rushmore + Washington | **$80m-$110m**；2 个左右平台量产、TIA 套片率中等 | **$170m-$220m**；多个 1.6T FRO 客户量产，Samsung 4nm 良率成熟 | **$280m-$350m**；主要 hyperscaler 双供，DSP+TIA 高套片率；需无重大热/良率问题 |
+| Annapurna/Makalu | **$25m-$35m**；1-2 个 AEC/on-board 项目 MP | **$70m-$90m**；多家 cable OEM、Ethernet scale-up 平台采用 | **$130m-$160m**；2-3 个 hyperscaler 规模部署并扩展协议认证 |
+| Panther III/V | **$80m-$90m**；Panther V MP，现有 OEM 扩大 | **$120m-$140m**；新增 2 个大客户、卡和 silicon 两种形态 | **$180m-$210m**；RAG/KV-cache 外置存储普及，完整卡供应链规模化 |
+| AI PON | **$15m-$20m**；已披露项目 ramp、一个主要园区架构 | **$40m-$55m**；两个以上 OEM/hyperscaler 采用，完成端到端互操作 | **$80m-$100m**；成为控制面标准方案，多个园区复制 |
+| AI UART | **$8m-$12m**；两款器件 MP、既有 design win 出货 | **$30m-$40m**；多板型认证、附着率提高 | **$60m-$80m**；大规模标准化，需在 FTDI/Microchip/WCH 等竞争下保持 ASP |
+| PON/Wi-Fi 7/Puma 8 | **$300m-$330m**；Puma 8 认证推进、PON/Wi-Fi 7 常态出货 | **$380m-$430m**；DOCSIS 4 关键运营商部署、PON 份额提升 | **$500m-$560m**；多区域同步换机，超出当前行业增长基线 |
+| Sierra | **$100m-$120m**；已公开 O-RU 转商业部署 | **$160m-$190m**；宏站/室内多客户 field deployment | **$240m-$280m**；运营商资本开支强周期、单芯片方案成为主要 Open RAN 路线 |
+
+产能并非承诺收入。基准情景下，MXL 的 fabless 模式与 $180.3m 存货采购承诺足以支持增长；乐观以上情景要求提前 2-3 个季度锁定先进节点、封测和基板，并且客户认证速度必须与 wafer 投片同步。Rushmore 采用 Samsung 可降低全行业集中于 TSMC 的风险，却增加新工艺/新供应链的初期执行风险。
+
+## 8. 用真实订单代理与供给约束预测未来一年增速
+
+### 8.1 可验证的 backlog 代理
+
+| 证据 | 数字/事实 | 能说明什么 | 不能说明什么 |
+|---|---|---|---|
+| 2026Q1 存货采购承诺 | **$180.271m**；其中 2026 剩余期 $129.556m、2027 $50.715m | 公司已向上游锁定较大供应；金额因 sales demand 增加 | 不是客户订单，也不等于未来收入；可能形成过量存货 |
+| 2026Q1 存货 | **$85.839m，环比 +9.9%** | 为 Q2/H2 ramp 备货，与管理层表述一致 | 无法分辨全部是光 DSP 还是其他业务 |
+| 光产品 lead time | 约 **28 周** | 从下单到供货跨两个季度，客户需要提前锁量 | 不能证明最终不可取消，也不代表整个公司交期 |
+| 2026 光收入/单元 | **$150m-$170m；早期 4m-6m PAM4 单元** | 形成 ASP 与供给量的一致性锚点 | “单元”是否仅 DSP、是否含 TIA/400G mix 未完全定义 |
+| Backlog 方向 | 管理层称 2026H2 增加并延伸至 2027 | 可见度相较 2024-2025 明显提高 | 金额、B2B、客户分布和取消率均未披露 |
+| 订单条款 | 多数 PO 为 NCNR，但客户可以申请 cancel/defer | 取消率应低于可随意撤单的消费品订单 | 公司没有披露历史批准率，不能假定 0% 取消 |
+
+按 2026 一致收入 $657.2m、约 59% non-GAAP GM 粗算，全年 COGS 约 $269m；扣除 Q1 后剩余 COGS 约 $213m。2026 剩余期存货采购承诺 $129.6m 相当于该 COGS 的约 **61%**，再加现有 $85.8m 存货，说明供给准备具有实质性，但采购时点、在制品和非光产品 mix 使其不能直接转成收入上限。
+
+### 8.2 客户项目、交付窗口与订单确定性
+
+| 产品/项目 | 公开客户/渠道 | 窗口 | 订单额/取消率 | 确定性判断 |
+|---|---|---|---|---|
+| Keystone 400G/800G | 多个美国和亚洲 hyperscaler，名称未披露；同时经主要模块厂出货 | 2026 全年，Q2 step-up，backlog 延伸 2027 | 未披露 | **高**：量产和收入已验证；客户/份额仍可能季度波动 |
+| Rushmore/Washington | OIF/Ethernet Alliance 互操作、模块厂和 hyperscaler qualification | 2026H2 小量、2027 放量 | 未披露 | **中**：技术样品真实，规模订单尚未披露 |
+| Annapurna | Upscale.AI SkyHammer 公开支持；cable/system 客户未披露 | 2026-2027 资格 | 未披露 | **中低**：endorsement 不等于采购订单 |
+| Panther | Dell PowerMax 公开；AMD reference design；LANL Direct I/O/ZIA 技术合作 | Panther III 当前；Panther V 2026H2-2027 | 管理层只给 2026 约 $40m 业务规模 | **中高**：现有收入可见，新代客户扩张待证 |
+| AI XGS-PON | 未命名 hyperscaler，经 Tier-1 OEM | 2027 ramp，2026H2 run-rate 可能开始可见 | 未披露 | **中**：design win 明确，但网络部署可延期 |
+| Coronado/Laguna UART/USB bridge | 新款客户未命名、仅披露 selective sampling；Q1 电话会的两个美国数据中心 USB/analog design win 未绑定具体型号 | 样品 2026Q2/Q3，H2/年底生产 | 未披露 | **中低**：不能把宽口径 USB/analog win 当成新 UART 订单；单位 ASP 小，认证转量产仍需观察 |
+| Sierra | Pegatron、Samji、Zenlynx 公开 O-RU；运营商最终部署多未命名 | 2026 展示/初始商业化，2027 规模取决于 capex | 未披露 | **中**：OEM 采用真实，运营商订单节奏不透明 |
+| Puma 8 | CableLabs DOCSIS 3.1 VFI | 2026 认证推进，D4 deployment 后续 | 未披露 | **中低**：VFI 是认证步骤，不是运营商大单 |
+
+### 8.3 订单、取消与供给三情景
+
+| 情景 | 光产品推定 B2B | 模型取消/延期率 | 产能利用/扩产 | 截至 2027Q2 年化收入 | 增速 | 判断 |
+|---|---:|---:|---|---:|---:|---|
+| **基准** | **1.05x-1.15x** | 光 3%-8%；公司整体 5%-10% | 已锁产能利用 70%-85%；追加常规 wafer/OSAT | **$790m-$830m** | **+20%-26%** | Keystone 正常增长、Rushmore 小规模、Panther/PON/Sierra 按已披露节奏；最接近一致预期 |
+| **乐观** | **1.15x-1.30x** | 光 1%-4%；整体 2%-6% | 利用 80%-90%；提前锁定 Samsung/5nm 与封测 | **$980m-$1.05bn** | **+49%-60%** | 新增 hyperscaler/模块平台；1.6T 与 Panther 都在 2027H1 加速，宽带份额提升 |
+| **极度乐观** | **1.30x-1.50x** | 光 0%-2%；整体 1%-3% | 利用 90%-95%；先进节点/OSAT 扩充且无良率损失 | **$1.30bn-$1.42bn** | **+98%-116%** | 800G/1.6T 同时短缺，MXL 达到或超过 20%-25% PAM4 份额目标；多个小产品同步转量产，概率低 |
+
+这些 B2B 和取消率是为了把未披露变量显式化的模型输入，不是渠道“消息”。若 2026Q2/Q3 出现存货继续增加而收入/现金流不跟随、光交期迅速跌回 12-16 周、采购承诺下降且指引不升，应把基准 B2B 下调至 1 以下并提高取消率。
+
+## 9. 竞争格局、技术主流性、替代方案与客户切换成本
+
+### 9.1 产品级竞争
+
+| 关键产品 | 主要竞争对手/产品 | MXL 相对优势 | 替代与主要风险 | 是否未来主流 | 客户切换成本 |
+|---|---|---|---|---|---|
+| Keystone/Rushmore 光 DSP | Broadcom Sian2/Sian3；Marvell Spica/Nova/Ara/Ara T/X；Cisco/Acacia PAM4；Credo Cardinal | 低功耗公司口径、high-swing driver、DSP+TIA 协同、400/800 已量产；Rushmore 为 Samsung 4nm 第二来源 | Marvell 3nm Ara 已量产、Broadcom 规模/laser/CPO 完整；客户维持双供；LPO/LRO/CPO 长期减少全功能 DSP 内容 | **是，2026-2027 FRO DSP 仍为主流**；1.6T 是升级方向 | **高**：FEC/BER、thermal、firmware、module compliance 通常需 6-12 个月；但完成双供后可切换份额 |
+| Topanga/Washington TIA | Broadcom、Marvell、MACOM、Semtech、Coherent 等 | 高速模拟经验、低功耗、pad-compatible、与自家 DSP 联调 | pad-compatible 同时降低客户更换阻力；LPO/CPO 对 TIA 规格和价值链重构 | **是**，每个接收光通道需要 TIA；形态会变 | **中高**：光器件/PCB/增益与噪声需重验，但 pin/pad 兼容可降低成本 |
+| Annapurna/Makalu AEC retimer | Credo HiWire/retimer；Marvell Alaska A；Broadcom 200G retimer/AEC；其他 SerDes 厂 | 224G mixed-signal、可与光 DSP 技术复用；8/16 lane 覆盖 | 被 passive copper、短距 optics/CPO 替代；当前 Ethernet-only 重点可能错过 NVLink/UALink；无量产客户披露 | **AEC 是主流补充，不会取代全部光链路** | **中高**：cable SI/BER 和系统 qualification 高；协议/连接器标准化又使第二来源可行 |
+| Panther | Intel QAT、FPGA、SmartNIC/DPU、CPU/GPU 软件压缩、hyperscaler custom ASIC | 最高 450Gbps、压缩+加密+checksum 一体、数据减少可节省 SSD/网络/功耗；完整 driver/卡 | 客户可把功能整合进 DPU/ASIC；压缩比高度依赖数据；外置存储架构并非所有 AI workload 需要 | **特定 AI storage/RAG 场景有价值，不是每 GPU 必配** | **高**：数据格式、driver、容错、性能和长期兼容验证；一旦嵌入阵列，替换代价高 |
+| PON/AnyWAN/Wi-Fi 7/Puma 8 | Broadcom；Qualcomm；MediaTek/Airoha；Realtek；部分中国本土 SoC | access SoC、RF、Wi-Fi、Ethernet 全平台；运营商软件/认证；Puma 8 进入 D4 路线 | 行业总量低增长、运营商推迟升级、Broadcom 平台强、Wi-Fi ASP 持续下降 | **XGS-PON/Wi-Fi 7 是当前主流；DOCSIS 4 为区域性升级** | **高（运营商平台）**：宽带资格通常 9-12 个月；软件/远程管理/认证锁定。零售 Wi-Fi 切换成本较低 |
+| AI 控制面 PON | Broadcom/传统 PON SoC、标准 Ethernet switch、管理网 NIC | 已有接入平台和 Tier-1 OEM win，光纤长距/电磁隔离/集中管理 | Ethernet 管理网成熟且便宜；PON 带宽/故障域不适合主 AI data fabric | **可能成为部分园区控制网，不是确定标准** | **中高**：部署后 OLT/ONU/网管形成系统锁定；设计前可换架构 |
+| Coronado/Laguna UART | FTDI、Microchip、WCH、TI 及大量 bridge 厂 | 4-channel、12Mbps、ESD、部分 drop-in 兼容；已有 legacy Exar 客户基础 | 低 ASP、标准接口、供应商众多；BMC/SoC 可集成 UART | **管理串口长期存在，但价值量低** | **低至中**：pin-compatible 器件较易更换；服务器 qualification 提高门槛 |
+| Sierra O-RAN | Analog Devices RF transceiver+FPGA/ASIC 方案、NXP/其他 radio silicon、自研 RU | RF+DFE/DPD+low-PHY+O-RAN+CPU 单芯片，降低尺寸/功耗/开发期 | O-RAN 商业部署慢；运营商可坚持传统 RU；PA/front-end 与软件集成复杂 | **集成型 RU SoC 是合理方向，O-RAN 速度仍不确定** | **很高**：RF calibration、DPD、协议栈、现场认证通常 36 个月以上 |
+
+官方竞争交叉验证：[Broadcom Sian3/Sian2M](https://investors.broadcom.com/news-releases/news-release-details/broadcom-extends-200glane-dsp-phy-leadership-next-generation-ai)、[Broadcom OFC 2026 200G retimer/CPO](https://investors.broadcom.com/node/64036/pdf)、[Marvell 1.6T Ara 扩展且已量产](https://www.marvell.com/company/newsroom/marvell-1-6t-optical-dsp-ai-data-center-connectivity.html)、[Marvell Alaska A 1.6T AEC DSP](https://www.marvell.com/content/dam/marvell/en/company/media-kit/marvell-alaska-a-1-6t-dsp-for-aec-media-deck.pdf)、[Credo Cardinal 产品资料](https://credosemi.com/wp-content/uploads/Cardinal.800.Product-Brief.3.23.2026.pdf)。竞争对手均为其自身宣称，功耗/性能不能在缺少统一测试条件时横向直接排序。
+
+### 9.2 CPO/LPO 是否会替代 MXL 当前路线
+
+- **2026-2027：**可插拔 FRO 800G/1.6T 仍是最大现金收入池。MXL 管理层判断 1.6T 在 2027 成为多数新增速率，CPO 的实质放量更可能在 2028-2029；2027 CPO 可能低于新部署光口的 20%。项目内行业资料也把 2026 定义为 800G 主流、1.6T/CPO 导入而非全面替代。
+- **LPO/LRO：**去掉或简化 DSP 可降低功耗，但对交换 SerDes、fiber channel、温度漂移和链路诊断要求更高。Washington TIA 让 MXL 在 LPO/LRO 中保留接收端内容，是对 full-DSP 被压缩的部分对冲。
+- **CPO：**光引擎靠近 switch/GPU，价值从 pluggable DSP 转向 switch SerDes、光引擎、laser、TIA/driver 与先进封装。MXL 当前没有与 Broadcom/Marvell 同等级的 switch ASIC/CPO 平台，长期若 CPO 提前渗透会削弱其 DSP 独立供应商地位。
+- **结论：**Rushmore 路线是未来 12-24 个月主流，但不是 5 年无替代的终局；应按“FRO 现金流 + TIA/retimer 对冲 + CPO 技术缺口”估值。
+
+### 9.3 关键风险与可观察指标
+
+| 风险 | 概率 | 影响 | 领先指标/验证点 |
+|---|---|---|---|
+| 800G 光收入低于 $150m-$170m 或客户份额回落 | 中 | 极高 | Q2 Infrastructure/光收入、28 周交期、2027 backlog、库存和现金流同步性 |
+| Rushmore 量产晚于 2026 年末或 Samsung 4nm 良率/功耗不达标 | 中 | 高 | production release、量产模块客户数、OIF/IEEE 完整互操作、Washington 套片率 |
+| Broadcom/Marvell/Credo 价格和工艺压制 | 高 | 高 | MXL ASP、non-GAAP GM、hyperscaler 双供份额、竞品 3nm/2nm timetable |
+| hyperscaler 自研、CPO/LPO 提前替代 full DSP | 中低（12 个月）/中高（3 年） | 高 | CPO 端口占比、LPO/LRO 资格、switch vendor 绑定、MXL TIA/retimer 收入 |
+| Panther TAM 叙事高于实际 attach rate | 中 | 中高 | Panther V 量产客户数、$40m 目标、卡 ASP、Dell 之外公开 OEM |
+| 宽带复苏只是库存回补 | 中 | 中 | Broadband 连续季度收入、DOCSIS 4 完整认证、运营商部署、sell-through |
+| 采购承诺变成过剩存货 | 中低 | 高 | 存货增速持续高于收入、DOI、毛利折价、取消/延期表述 |
+| SIMO 仲裁不利结果 | 不可量化 | 极高 | 仲裁进展、潜在损失披露、信用额度/现金保留；目前无可可靠估计金额 |
+| 客户集中与地缘/出口限制 | 中 | 高 | 单一客户占比、香港/亚洲发货、晶圆/封装来源、出口许可 |
+| SBC/股本稀释掩盖 GAAP 盈利 | 高 | 中 | 95m 稀释股指引、SBC/收入、GAAP 与 non-GAAP EPS 差额 |
+
+## 10. 投资判断框架与近期验证清单
+
+### 10.1 多头逻辑
+
+- 800G 光 DSP 已经量产，而非只有样品；2026 年 $150m-$170m 光收入可使公司收入和利润率产生强经营杠杆。
+- Rushmore、Washington、Annapurna、Panther V、AI PON/UART 构成 2027 多条独立增量，不需要单一产品全部成功。
+- Samsung 4nm 第二来源对 hyperscaler 供应链有战略价值；MXL 小基数使份额提升带来比大厂更高收入弹性。
+- 2025-2026 宽带和连接业务恢复，为研发和光产品扩产提供现金流底盘。
+
+### 10.2 空头逻辑
+
+- 当前约 16x TTM sales、约 61x forward earnings 已经提前定价；任何光收入、份额或毛利轻微低于预期都可能导致倍数收缩。
+- 1.6T 竞争对手并不落后：Marvell Ara 已量产，Broadcom Sian3 是 3nm，MXL Rushmore 仍处于送样/年末生产窗口。
+- 公司不披露 backlog 金额、B2B、取消率或 hyperscaler 名称，真实订单集中度无法外部复核。
+- GAAP 仍亏损、现金不厚、采购承诺上升；SIMO 仲裁是无法用常规经营模型覆盖的尾部风险。
+
+### 10.3 2026Q2 财报必须核验的数字
+
+1. 收入是否达到或超过 **$165m 中点**，Infrastructure 是否约 **$80m**。
+2. 光数据中心单季是否达到本文估计的 **$35m-$45m**，全年 **$150m-$170m** 是否维持或再上调。
+3. non-GAAP GM 是否守住 **59%-60%**，晶圆/封装涨价是否真正传导。
+4. 存货、预付款、采购义务和 CFO 是否与收入同步；若库存上升而现金流恶化，需要下调订单质量。
+5. Rushmore/Washington 是否给出明确 production release、客户资格数量和 2027 收入可见度。
+6. Panther 是否仍指向 2026 接近 **$40m**，AI PON 2027 ramp 是否有更具体的 OEM/窗口。
+7. 95m 稀释股数和 SBC 是否继续扩大 GAAP/non-GAAP 差距。
+8. SIMO 仲裁是否出现可量化进展。
+
+### 10.4 最终结论
+
+MaxLinear 的业务转型已经通过 2026Q1 的 **Infrastructure $62.8m、+136%** 得到初步财务验证，不能再仅按 cable 周期股看待；但它也不能被当作拥有独占技术、收入全部来自 AI 的光芯片公司。当前最可靠的价值是 Keystone 400G/800G；Rushmore/Washington 是必须按期兑现的第二增长曲线；Panther、AI PON、UART 和 Annapurna 是有真实产品与设计活动、但尚需订单验证的期权。
+
+在经营层面，本文基准情景为未来一年收入 **$790m-$830m、增长 20%-26%**；乐观情景要求多个新品同时量产，达到 **$980m-$1.05bn**；极度乐观情景 **$1.30bn-$1.42bn** 只有在 800G/1.6T 同时短缺、MXL 接近 20%-25% PAM4 份额且小产品同步放量时成立。以当前约 $8.27bn EV 看，基准情景仍约 10x sales，**基本面在改善，但安全边际主要取决于业绩持续超预期，而不是估值便宜。**
+
+## 主要资料来源
+
+### 公司财务、会议和治理
+
+- [MaxLinear 2026Q1 财报与 Q2 指引](https://investors.maxlinear.com/press-releases/detail/607/maxlinear-inc-announces-first-quarter-2026-financial)
+- [MaxLinear 2026Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1288469/000128846926000029/mxl-20260331.htm)
+- [MaxLinear 2025 Form 10-K](https://investors.maxlinear.com/all-sec-filings/content/0001288469-26-000011/mxl-20251231.htm)
+- [2026Q1 电话会逐字稿](https://stockanalysis.com/stocks/mxl/transcripts/548626-q1-2026/)
+- [2025Q4 电话会逐字稿](https://stockanalysis.com/stocks/mxl/transcripts/402369-q4-2025/)
+- [2025Q3 电话会逐字稿](https://stockanalysis.com/stocks/mxl/transcripts/366294-q3-2025/)
+- [2025Q2 电话会逐字稿](https://stockanalysis.com/stocks/mxl/transcripts/337923-q2-2025/)
+- [2025Q1 电话会逐字稿](https://stockanalysis.com/stocks/mxl/transcripts/310640-q1-2025/)
+- [2026-03 Cantor 技术与工业成长会议](https://stockanalysis.com/stocks/mxl/transcripts/593659-cantor-fitzgerald-global-technology-industrial-growth-conference/)
+- [2026-01 Needham Growth Conference](https://stockanalysis.com/stocks/mxl/transcripts/539326-28th-annual-needham-growth-conference-virtual/)
+- [2026Q2 财报发布日期公告](https://investors.maxlinear.com/press-releases/detail/616/maxlinear-inc-announces-conference-call-to-review-second)
+
+### 产品、认证和客户采用
+
+- [Keystone 400G/800G PAM4 DSP 产品族](https://www.maxlinear.com/products/infrastructure/wired-infrastructure/data-center-connectivity/pam4-dsps)
+- [Rushmore MxL91782 1.6T DSP](https://www.maxlinear.com/product/infrastructure/wired-infrastructure/data-center-connectivity/pam4-dsps/mxl91782)
+- [Rushmore/224G OFC 2026 互操作](https://investors.maxlinear.com/press-releases/detail/602/maxlinear-to-showcase-nextgeneration-1-6t-rushmore-dsp)
+- [Washington 200G/lane TIA](https://investors.maxlinear.com/press-releases/detail/608/maxlinear-announces-availability-of-washington-200g-tia-for)
+- [Annapurna 224G scale-up retimer](https://investors.maxlinear.com/press-releases/detail/603/maxlinear-unveils-annapurna-224g-scale-up-retimer-to-extend)
+- [Panther V 450Gbps 产品](https://investors.maxlinear.com/press-releases/detail/582/maxlinear-to-unveil-panther-v-450gbps-storage-accelerator)
+- [Panther 与 LANL Direct I/O/ZIA 合作](https://investors.maxlinear.com/press-releases/detail/615/maxlinear-and-los-alamos-national-laboratory-jointly)
+- [PON ONU SoC 产品族](https://www.maxlinear.com/products/access/fiber-access/socs-for-optical-networking-units-onu)
+- [MaxLinear Wi-Fi 7 产品族](https://www.maxlinear.com/products/connectivity/wireless/wi-fi-7)
+- [Puma 8 DOCSIS 3.1 VFI](https://investors.maxlinear.com/press-releases/detail/611/maxlinear-first-to-achieve-docsis-3-1-vfi-with-puma-8)
+- [AI 数据中心 UART/控制面产品](https://investors.maxlinear.com/press-releases/detail/612/maxlinear-enhances-control-plane-connectivity-for-ai-data)
+- [Sierra 单芯片 O-RAN 平台](https://www.maxlinear.com/sierra)
+- [MWC 2026 Sierra O-RU 采用](https://www.maxlinear.com/news/press-releases/2026/maxlinear-showcases-accelerating-sierra-momentum-with-multiple-o-ran-radio-units-at-mwc-2026)
+
+### 项目内相关行业资料
+
+- [行业调研：光 DSP、TIA 与 CDR 芯片](../../行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-07-10.md)
+- [行业调研：AI 以太网交换系统与 Fabric 芯片](../../行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-07-10.md)
+- [行业调研：宽带接入、PON、DOCSIS 4.0 与 Wi-Fi 7](../../行业调研/AI网络_光互联_铜互联/行业调研_宽带接入、PON、DOCSIS%204.0与Wi-Fi%207_2026-07-10.md)
+- [行业调研：EDA 工具、接口 IP 与 Chiplet IP](../../行业调研/AI服务器_存储_芯片/行业调研_EDA工具、接口IP与Chiplet%20IP_2026-07-10.md)
+- [行业调研：AI 数据中心建设规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+
+> 本报告不是投资建议。产品收入拆分、BOM、ASP、份额、取消率、产能和三情景预测含模型假设；应在 2026Q2 财报及后续产品认证后滚动更新。

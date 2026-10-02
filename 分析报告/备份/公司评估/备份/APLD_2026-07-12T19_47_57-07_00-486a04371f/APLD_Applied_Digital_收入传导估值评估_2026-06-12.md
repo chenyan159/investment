@@ -1,0 +1,164 @@
+# 公司收入传导与价值传导评估：Applied Digital（APLD）
+
+报告日期：2026-06-12  
+公司：Applied Digital Corporation  
+代号：APLD  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM 经营窗口，即 2026-06-12 至 2027-06-12；超过该窗口的项目只作补充口径、远期期权或附录跟踪。  
+资料边界：公司事实主要使用 `公司调研/云算力_IDC_AI软件平台/APLD_Applied_Digital_公司调研_2026-06-12.md` 与 Applied Digital 官方披露；行业需求主要使用 `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`、`行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` 及 AI 园区电力、土建、MEP、冷却相关行业资料。未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结果、公司排序或市场定价结论。  
+经营数据截点：财务报表截至 FY2026 Q3（季度截至 2026-02-28，发布 2026-04-08）；订单、租约和融资公告截至 2026-06-09；本报告不输出投资评级、目标价、股价区间或估值倍数判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径只看 NTM 可确认经营收入、利润和现金流传导；FY2027 以后投产的 Polaris Forge 3、Delta Forge 2、续约期权和 30 年潜在合同额只作为远期期权，不进入 NTM 基准收入。
+- 当前收入基准、指引和 run-rate：公司没有给传统全年 revenue/EPS 指引。当前可用收入锚是 FY2026 Q3 总收入 `$126.6M`，其中 HPC Hosting `$71.0M`、Data Center Hosting `$37.5M`、Cloud Services `$18.1M`。剥离 Cloud 后，更适合作为 APLD 本体 run-rate 的口径是 HPC Hosting + Data Center Hosting，即 `$108.5M/quarter`；若剔除一次性/低毛利 tenant fit-out，则 recurring-ish 基数约为 `$89.7M/quarter`，年化约 `$360M`。若保留 Q3 core adjusted revenue 年化，则约 `$434M`。
+- 重要产品/业务线：Polaris Forge 1 CoreWeave 400MW AI Factory、Polaris Forge 2 200MW 投资级 hyperscaler AI Factory、Delta Forge 1 300MW、Polaris Forge 3 300MW、Delta Forge 2 210MW、legacy Data Center Hosting、ChronoScale/Cloud Services 权益期权，以及 waterless/direct-to-chip 高密交付能力。
+- NTM 公司收入四情景：悲观 `$450-620M`；基准 `$700-950M`；乐观 `$1.10-1.50B`；极度乐观 `$1.60-2.00B`。这些数值是 APLD 可确认收入，不包括 tenant 自带 GPU/服务器价值，不把 `$36B` 合同额直接折入 NTM。
+- 利润或 EBITDA 四情景：悲观 Adj. EBITDA `$130-220M`、净利润大概率仍亏损；基准 Adj. EBITDA `$250-420M`、净利润仍可能亏损或接近盈亏平衡；乐观 Adj. EBITDA `$430-700M`、净利润取决于折旧、利息和股权激励；极度乐观 Adj. EBITDA `$700M-1.0B`，但自由现金流仍受建设 CapEx 和项目融资节奏约束。
+- 最大传导瓶颈：不是需求，而是 `已签约 MW -> RFS -> tenant fit-out -> customer acceptance -> recurring base rent/NOI` 的交付链。变压器、switchgear、MEP 劳动力、commissioning、液冷可靠性、项目融资和客户验收任一环节延迟，都会把合同从 NTM 收入移到远期。
+- 最大利润率变量：PF1/PF2 的稳定 base rent 与 NOI/MW。Fit-out 和 power pass-through 能抬高收入，但毛利和 EBITDA 质量低于稳定 rent；建设成本超支和债务成本上行会侵蚀股权现金回报。
+- 最大现金流变量：项目债、优先股、revolver、completion guarantee 与建设款支付节奏。APLD 可以在 EBITDA 改善的同时保持自由现金流为负，因为现金被用于 100-300MW campus 建设。
+- 可信度：NTM 基准为“中高”。PF1 100MW 已有 A 级收入表证据，PF1 后续和 PF2 有 B 级租约/融资证据；DF1/PF3/DF2 虽为 B 级合同证据，但主要投产节点落在 NTM 尾端或之后，因此只支持乐观、极度乐观或远期期权，不支撑 NTM 基准。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Polaris Forge 1 CoreWeave 400MW AI Factory | FY2026 Q3 HPC Hosting `$71.0M` 中，base rent `$44.1M`、tenant fit-out `$18.9M`、power/ancillary `$8.1M`；100MW 已完整季度运行 | Q3 GAAP 收入约 `56%`；按 ex-Cloud adjusted revenue 约 `65%` | 最高；当前唯一已大规模转收入的 AI Factory proof point | A/B：100MW 为 A；后续 300MW 为 B | 进入基准；100MW 全额纳入，后续 150MW/150MW 按 RFS 和验收折扣纳入 | 400MW 全部稳定后约 `$11B` 15 年 base-term 合同额和约 `$500M` PF1 NOI run-rate 是补充口径 |
+| Polaris Forge 2 200MW AI Factory | 当前收入基本未确认；已签约约 `$5B` base-term lease；已完成 `$2.15B` senior secured notes 支持建设 | 当前 `0%` | 最高；第二条 AI Factory ramp，客户为 U.S. investment-grade hyperscaler | B | 小比例进入基准；按 2026-2027 分阶段上线处理 | 若 200MW 接近 full capacity，收入和融资可信度显著上修 |
+| Delta Forge 1 300MW | 当前收入 `0`；2026-04-23 签约，约 `$7.5B`，初始运营预计 mid-2027 | 当前 `0%` | 高；证明模型从 North Dakota 扩展到 southern state | B | NTM 基准只纳入 `0-50M` 的保守早期收入或不纳入稳定 rent | 2027H2 以后成为主要增长源 |
+| Polaris Forge 3 300MW | 当前收入 `0`；2026-05-20 签约，约 `$7.5B`，初始运营预计 2027-08 | 当前 `0%` | 高；使合同容量超过 1GW | B | 不进入 NTM 基准稳定收入；只能作为乐观上限或附录跟踪 | FY2028 收入化机会更大 |
+| Delta Forge 2 210MW | 当前收入 `0`；2026-06-08 签约，约 `$5.2B`，初始运营预计 2028Q1 | 当前 `0%` | 中高；第五园区，显示同一投资级 hyperscaler 继续追加 | B | 不进入 NTM 基准；只提高长期可见度和执行可信度 | 2028 年以后远期期权 |
+| Legacy Data Center Hosting | FY2026 Q3 收入 `$37.5M`，segment operating profit `$13.9M` | Q3 GAAP 收入约 `29.6%` | 中；提供现金流，但非 AI 主线 | A | 进入基准，按稳定或小幅波动处理 | 若矿工需求强或电价/托管价改善，可形成小幅上行 |
+| Cloud Services / ChronoScale 权益 | FY2026 Q3 历史收入 `$18.1M`；2026-05-05 完成剥离，APLD 持有约 97% ChronoScale 股权 | Q3 GAAP 收入约 `14.3%`，但剥离后不应作为 APLD 本体经营收入 | 中低；是权益期权，不是 APLD 本体租金收入 | A for historical revenue；NTM 本体收入为排除项 | 排除出 APLD NTM 基准经营收入 | 只在附录跟踪 CHRN 融资、GPU 利用率和权益价值 |
+| Waterless / direct-to-chip 高密交付能力 | 不单独确认收入 | 不适用 | 高；影响客户验收、租金质量、用水许可和运维成本 | C | 不作为独立收入线，嵌入 PF1/PF2/DF1/PF3/DF2 的交付可信度 | 若成为多客户可复制设计，可提高后续租约捕获率和 NOI/MW |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不评估 APLD 份额、收入确认、毛利率或公司汇总。对 AI Factory，需求单位以 `critical IT load MW` 和 100-300MW 长约 capacity block 为主；对 legacy hosting，以可供电托管容量和矿工/区块链托管需求为主；对 ChronoScale，只判断 AI compute 需求但不进入 APLD 本体收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| PF1 CoreWeave 400MW AI Factory | 已签 400MW CoreWeave 长约；100MW 已运行；后续 150MW/150MW 分别对应 CY2026/CY2027 交付路径 | 客户仍需要容量，但 RFS/fit-out/acceptance 放慢，NTM 平均可用需求只支持约 `100-200MW` | CoreWeave 对 400MW 的需求保持，NTM 平均可用需求约 `200-300MW` | 客户加速接收，NTM 平均可用需求约 `300-400MW` | 400MW 基本全量被接收，并出现 power/ancillary 或扩容需求 | 相对当前已运行 100MW，悲观 `+0-100MW`；基准 `+100-200MW`；乐观 `+200-300MW`；极度 `+300MW+` | 悲观低于当前交付预期；基准符合当前租约和施工节奏；乐观/极度需要验收加速 | 正向：CoreWeave 400MW take-or-pay 长约；Q3 已有 full quarter base rent。反证：电力设备、MEP、液冷调试、客户 fit-out 延迟 |
+| PF2 200MW AI Factory | 已签约 200MW 投资级 hyperscaler；有 `$2.15B` 项目债；原路径为 2026 开始、2027 full capacity | 需求未消失，但客户接收延后，NTM 可用需求 `0-50MW` | NTM 进入早期上线，需求支持 `50-100MW` 平均可用容量 | 施工和客户 fit-out 顺利，需求支持 `100-200MW` | 200MW 基本按 full-capacity 节奏提前收入化 | 相对当前 0MW 收入化需求，悲观 `+0-50MW`；基准 `+50-100MW`；乐观 `+100-200MW`；极度 `+200MW` | 基准符合投资级客户长约和项目债支持，但仍低于 full-capacity 长期目标 | 正向：客户信用和债务融资增强。反证：建设、长交期电气设备和 commissioning |
+| Delta Forge 1 300MW | 2026-04 签约 300MW，初始运营预计 mid-2027，NTM 尾端 | NTM 内需求不转为可接收容量，`0MW` | NTM 尾端仅 early acceptance 或准备，`0-50MW` | 首批容量如期进入验收，`50-100MW` | mid-2027 前后加速，`100-150MW` 初始容量可用 | 相对当前 0MW，悲观 `0`；基准 `0-50MW`；乐观 `50-100MW`；极度 `100-150MW` | 基准仅小幅高于 0；不应把 300MW 合同额当 NTM 需求全量 | 正向：300MW 高投资级客户 lease。反证：mid-2027 位于 NTM 尾端，项目融资和建设仍需兑现 |
+| PF3 300MW / Delta Forge 2 210MW | 已签 510MW；PF3 初始运营预计 2027-08，DF2 预计 2028Q1 | NTM 内不形成可确认需求，`0MW` | NTM 内基本 `0MW`，只形成长期需求可见度 | 早期 design/fit-out 或客户准备带来 `0-50MW` 等效需求 | 客户显著加速，`50-100MW` 等效早期需求 | 相对当前 0MW，悲观/基准 `0`；乐观 `0-50MW`；极度 `50-100MW` | NTM 基准不纳入；乐观也只是上限 | 正向：同一 investment-grade hyperscaler 连续追加。反证：正式运营节点在 NTM 之后 |
+| Legacy Data Center Hosting | FY2026 Q3 `$37.5M` 收入，106MW Jamestown + 180MW Ellendale 历史 energized capacity | 矿工需求或客户经济性变弱，需求低于当前，收入需求等效 `$120-145M/yr` | 托管需求稳定，约 `$145-160M/yr` | BTC/矿工需求与电价转嫁较好，约 `$160-180M/yr` | 托管价格上行或容量优化，`$180-200M/yr` | 相对 Q3 年化 `$150M`，悲观 `-$30M 至 -$5M`；基准 `-$5M 至 +$10M`；乐观 `+$10M 至 +$30M`；极度 `+$30M 至 +$50M` | 基准符合当前 run-rate；不是 AI 主线 | 正向：已有收入表和利润证据。反证：矿工周期、电价、客户信用和可替代场址 |
+| ChronoScale / Cloud compute | AI-optimized IaaS 和 managed inference 行业需求强；但 Cloud Services 已剥离 | 需求好也不进入 APLD 本体收入 | 同左 | 同左 | 同左 | APLD 本体 NTM 收入变化为 `0` | 只作权益期权，不作经营需求锚 | 正向：行业推理需求强。反证：会计主体已变，不能和 APLD data center rent 混算 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断外部需求中哪些可以在 NTM 进入 APLD 收入表，以及当前可收入化基数；不预测增长，不判断利润率。当前预期定义为：PF1 100MW 已运行、PF1 后续 150MW/150MW 按公司披露时间表推进、PF2 2026-2027 分阶段上线、DF1/PF3/DF2 超出或处于 NTM 尾端、legacy hosting 稳定、Cloud Services 从 APLD 本体剥离。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| PF1 CoreWeave 400MW AI Factory | FY2026 Q3 HPC Hosting `$71.0M`，其中 base rent `$44.1M`、fit-out `$18.9M`、power/ancillary `$8.1M`；PF1 400MW 合同约 `$11B` | 直接 | 高质量 base rent + 低毛利/较低质量 fit-out 和 power pass-through | `$220-350M` | `$450-650M` | `$700-950M` | `$950M-1.15B` | 悲观低于当前 RFS 预期；基准符合 100MW run-rate + 后续容量折扣；乐观高于当前；极度为 PF1 快速稳定上限 | A/B | 是 | 100MW 为已确认收入；后续 300MW 有长约和融资/建设路径，但收入确认取决于 RFS 和验收 | 基准主口径；NTM 最大收入来源 |
+| PF2 200MW AI Factory | 已签约约 `$5B` base-term lease；`$2.15B` secured notes；当前收入 `0` | 直接 | 稳定后应为高质量 rent；建设期可有 fit-out/early rent | `$0-60M` | `$80-180M` | `$180-330M` | `$330-450M` | 基准低于 full 200MW run-rate，只承认早期 ramp；乐观需要接近 full capacity | B | 是，小比例 | 正式租约、投资级客户、项目融资可验证；但收入表尚未确认 | 基准折扣纳入；确认节奏是核心 |
+| Delta Forge 1 300MW | 2026-04 签约约 `$7.5B`；初始运营预计 mid-2027；当前收入 `0` | 直接 | 稳定后高质量 rent；NTM 内多为早期收入或无收入 | `$0` | `$0-50M` | `$50-150M` | `$150-250M` | 基准仅代表 NTM 尾端可能性，不代表 300MW 全量 | B | 小比例或不进入稳定 rent 基准 | 合同明确，但运营节点在 NTM 尾端，项目融资/建设/验收仍需兑现 | 基准保守纳入 `0-50M` 上限；主要放入乐观和附录 |
+| PF3 300MW / Delta Forge 2 210MW | 2026-05/06 签约合计约 `$12.7B` base-term；初始运营预计 2027-08 / 2028Q1；当前收入 `0` | 直接但远期 | 稳定后为高质量 rent；NTM 内收入可见性弱 | `$0` | `$0` | `$0-50M` | `$50-100M` | 基准不纳入；乐观和极度只代表上限 | B | 否 | 正式合同强，但收入确认时间超出 NTM 主窗口 | 移入附录/乐观上限，不进 NTM 基准 |
+| Legacy Data Center Hosting | FY2026 Q3 `$37.5M`；segment operating profit `$13.9M` | 直接 | 成熟托管现金流，增长低于 AI Factory | `$120-145M` | `$145-160M` | `$160-180M` | `$180-200M` | 基准接近当前 run-rate；悲观来自矿工周期和电价 | A | 是 | 已披露收入和经营利润 | 稳定现金流基座；不是成长主引擎 |
+| Cloud Services / ChronoScale 权益 | FY2026 Q3 `$18.1M`，但 2026-05 已剥离为 ChronoScale；APLD 持约 97% 股权 | 间接 | 权益价值/可选项；不应混入 APLD rent 收入 | `$0` | `$0` | `$0` | 无法可靠量化 | 相对历史收入下移；对 APLD 本体经营收入为排除项 | A for historical；NTM operating revenue excluded | 否 | 会计主体与经营风险画像已变化 | 从 APLD NTM 经营收入排除，仅附录跟踪 |
+| Waterless / direct-to-chip 高密交付能力 | 无独立收入表锚点；被嵌入 AI Factory 设计 | 间接 | 提高客户验收和潜在 NOI/MW；不单独确认 | `$0` | `$0` | `$0` | 无法可靠量化 | 不能从产品页直接转收入 | C | 否，作为执行因子 | 有客户采用和 PF1 运行证据，但无独立收费披露 | 不作为收入线；进入第三步执行/利润率判断 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第三节需求和第四节收入基数出发，评估每个重要产品在 NTM 内能给 APLD 贡献的收入、Adj. EBITDA/NOI 或 operating profit 方向。利润贡献为经营质量估算，不是净利润；不包含市场定价，不把合同总额、TAM 或客户 GPU CapEx 直接折算为收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| PF1 CoreWeave 400MW | 悲观 | `$220-350M` | Adj. EBITDA/NOI `$70-150M` | 低于当前预期；fit-out/power 占比高或容量延迟 | 低于预期 | 100MW 已运行，但后续 150MW/150MW 推迟 | 保留为 downside | ELN-03/ELN-04 RFS、液冷、MEP、客户验收 |
+| PF1 CoreWeave 400MW | 基准 | `$450-650M` | Adj. EBITDA/NOI `$220-350M` | base rent 占比上升，利润率较 Q2 fit-out 阶段改善 | 符合当前预期 | Q3 base rent `$44.1M`；400MW CoreWeave `$11B` 长约；ELN-04 notes 支持建设 | 保留为主情景 | 300MW 不能一次性全部确认 |
+| PF1 CoreWeave 400MW | 乐观 | `$700-950M` | Adj. EBITDA/NOI `$350-520M` | 稳定 rent 与 power/ancillary 同步提升，利润率上行 | 高于预期 | 第二 150MW 快速稳定，第三 150MW 进入收入 | 保留为乐观 | 需要客户设备进场、测试和接收顺利 |
+| PF1 CoreWeave 400MW | 极度乐观 | `$950M-1.15B` | Adj. EBITDA/NOI `$500-650M` | NOI/MW 接近或高于管理层 PF1 稳定目标 | 显著高于预期 | 400MW 基本稳定，power/ancillary 贡献较高 | 下移为上限 | 容错率低；任何建筑或客户延迟都破坏该情景 |
+| PF2 200MW | 悲观 | `$0-60M` | `-$20M 至 +$20M` | 初期成本先行，利润率低或负 | 低于预期 | 合同和债务存在，但未收入化 | 保留 | 项目建设/commissioning 延迟 |
+| PF2 200MW | 基准 | `$80-180M` | `$20-70M` | 早期 rent + fit-out；利润率低于成熟期 | 符合折扣后预期 | `$2.15B` notes 和投资级客户 | 保留 | 200MW full capacity 主要在 2027 兑现 |
+| PF2 200MW | 乐观 | `$180-330M` | `$70-160M` | 利润率随稳定 rent 增加而改善 | 高于预期 | 200MW 接近 full capacity，客户验收顺利 | 保留 | 施工并行度和长交期设备 |
+| PF2 200MW | 极度乐观 | `$330-450M` | `$160-240M` | 接近成熟 AI Factory rent 质量 | 显著高于预期 | 200MW 提前稳定且融资成本可控 | 下移为上限 | 需要项目、客户、融资同时无明显摩擦 |
+| Delta Forge 1 300MW | 悲观 | `$0` | `-$20M 至 $0` | 开发费用先行，无收入 | 低于预期 | mid-2027 节点落在 NTM 尾端 | 保留 | 项目融资、permit、电力设备 |
+| Delta Forge 1 300MW | 基准 | `$0-50M` | `-$10M 至 +$15M` | 收入小，利润率无法可靠量化 | 符合保守预期 | 300MW lease 明确，但收入确认路径未完整进入 NTM | 保留但折扣 | 不能把 `$7.5B` 合同额直接年化进 NTM |
+| Delta Forge 1 300MW | 乐观 | `$50-150M` | `$10-60M` | early rent/fit-out 贡献，质量低于成熟 rent | 高于预期 | 初始运营按 mid-2027 兑现 | 保留 | NTM 剩余时间短 |
+| Delta Forge 1 300MW | 极度乐观 | `$150-250M` | `$50-110M` | 初始容量提前且成本受控 | 显著高于预期 | 客户加速验收，融资完成 | 下移为上限 | 必须解释为什么 mid-2027 前收入显著提前 |
+| PF3 300MW / Delta Forge 2 210MW | 悲观 | `$0` | `$0` 或开发费用负贡献 | 不影响 NTM 利润 | 符合排除口径 | 运营时间在 NTM 后 | 保留排除 | 时间窗口不支持 |
+| PF3 300MW / Delta Forge 2 210MW | 基准 | `$0` | `$0` 或小额开发费用 | 不进入基准收入 | 符合当前预期 | B 级合同但非 NTM | 排除出基准 | 不能把长期合同错放入 NTM |
+| PF3 300MW / Delta Forge 2 210MW | 乐观 | `$0-50M` | 无法可靠量化 | 若有 early work，利润率低 | 小幅高于预期 | 客户准备/设计/早期工程 | 仅作跟踪 | 正式初始运营节点太远 |
+| PF3 300MW / Delta Forge 2 210MW | 极度乐观 | `$50-100M` | 无法可靠量化 | 上限，不代表当前预期 | 显著高于预期 | 需要大幅提前 schedule | 移入附录 | 缺 NTM 收入确认路径 |
+| Legacy Data Center Hosting | 悲观 | `$120-145M` | operating profit `$35-50M` | 利润率低于 Q3 年化 | 低于预期 | 矿工需求或电价压力 | 保留 | 非 AI 周期、客户续约 |
+| Legacy Data Center Hosting | 基准 | `$145-160M` | operating profit `$50-65M` | 接近当前结构 | 符合当前 run-rate | Q3 `$37.5M` revenue、`$13.9M` segment operating profit | 保留 | 增长有限 |
+| Legacy Data Center Hosting | 乐观 | `$160-180M` | operating profit `$60-75M` | 稍上行 | 高于预期 | 托管需求/价格改善 | 保留 | BTC/矿工周期不可控 |
+| Legacy Data Center Hosting | 极度乐观 | `$180-200M` | operating profit `$70-85M` | 边际改善但不改变公司结构 | 高于预期但非主线 | 价格/利用率同时改善 | 下移为小项上限 | 不能把非 AI 托管当公司核心重估驱动 |
+| Cloud Services / ChronoScale | 悲观 | `$0` | `$0`；权益可能减值但不在本体经营利润中处理 | 不适用 | 已剥离 | 2026-05 完成 separation | 排除 | 会计主体变化 |
+| Cloud Services / ChronoScale | 基准 | `$0` | `$0` | 不适用 | 符合排除口径 | APLD 本体转向 data center platform | 排除 | 不混入本体经营 |
+| Cloud Services / ChronoScale | 乐观 | `$0` | 权益价值可能上升，经营利润不纳入 | 不适用 | 仅权益期权 | ChronoScale 另行融资/利用率 | 移入附录 | 无 APLD 本体收入确认 |
+| Cloud Services / ChronoScale | 极度乐观 | `$0` | 无法可靠量化 | 不适用 | 远期期权 | AI compute demand 强 | 移入附录 | 不属于 APLD NTM 经营价值传导主表 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为 APLD NTM 公司收入、利润率、Adj. EBITDA/净利润和自由现金流方向。汇总时已排除 tenant 自带 GPU/服务器价值、Cloud Services/ChronoScale 经营收入、续约期权、PF3/DF2 的主要 2027H2/2028 收入以及重复计算的 power/facility CapEx。绝对增速以最新可用 TTM revenue `$319M` 为参照；相对当前预期以“PF1 100MW 已运行、后续 PF1/PF2 正常折扣 ramp、legacy hosting 稳定”为参照。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观 | `$450-620M` | 约 `+41% 至 +94%` vs TTM；相对 core recurring run-rate 约 `+$15-260M` | 低于当前正常 ramp 预期；只有 PF1 100MW 和少量新增容量收入化，PF2/DF1 延后 | `32-38%` | `-20% 至 -5%` | Adj. EBITDA `$130-220M`；净利润大概率仍亏损，受折旧、利息、股权激励影响无法可靠量化 | 明显为负；建设 CapEx 和 debt reserve 继续吸收现金 | 中 | PF1 后续 building 延迟、PF2 早期收入不足、fit-out/power 低毛利占比高、legacy hosting 下滑 |
+| 基准 | `$700-950M` | 约 `+119% 至 +198%` vs TTM；相对 core recurring run-rate 约 `+$265-590M` | 接近当前可见预期正常兑现；PF1 250MW 左右平均运营/半稳定，PF2 初步贡献，DF1 贡献很小 | `38-45%` | `-8% 至 +5%` | Adj. EBITDA `$250-420M`；净利润仍可能亏损或接近盈亏平衡，无法可靠量化 | 仍为负；项目融资覆盖建设但公司级 FCF 不一定转正 | 中高 | 已签 MW 转 RFS、客户验收、项目债成本、MEP/电气设备交付 |
+| 乐观 | `$1.10-1.50B` | 约 `+245% 至 +370%` vs TTM；相对 core recurring run-rate 约 `+$665M-1.14B` | 高于当前预期；PF1 大部分转收入，PF2 明显 ramp，DF1 NTM 尾端有早期收入 | `40-48%` | `0-10%` | Adj. EBITDA `$430-700M`；净利润取决于 pro forma 利息、折旧和非现金费用，无法可靠量化 | 经营现金流改善，但自由现金流仍可能为负或接近中性 | 中 | PF1/PF2 同时顺利、低毛利 fit-out 不拖累、项目融资及时闭合 |
+| 极度乐观 | `$1.60-2.00B` | 约 `+402% 至 +527%` vs TTM；相对 core recurring run-rate 约 `+$1.17-1.64B` | 显著高于当前预期；PF1 稳定、PF2 提前 full-capacity、DF1 首批容量提前贡献 | `42-50%` | `5-15%` | Adj. EBITDA `$700M-1.0B`；净利润可能转正但无法可靠量化 | 项目级现金流显著改善；公司级 FCF 仍受下一批 campus 建设约束 | 低到中 | 需要需求、客户接收、施工、液冷、电力、融资和成本控制同时突破；任一核心环节缺证据即降为乐观上限 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。校准动作只使用保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次：电力/MEP/commissioning 风险用于收入确认和产品贡献，不在需求层重复惩罚；Cloud 剥离只用于收入基数排除，不在利润表反复扣减。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| PF1 100MW 已 full quarter operating，Q3 base rent `$44.1M` | 收入基数、产品贡献、执行可信度 | 提供 A 级收入表基数，可进入基准 | base rent 质量高于 tenant fit-out 和 power pass-through | 证明 RFS/验收/收租路径已打通 | 保留基准；悲观不能低于已确认 run-rate 太多，除非出现停运或客户违约证据 |
+| PF1 400MW CoreWeave `$11B` 长约及 ELN-04 `$1.59B` 7.000% notes | 收入基数、产品贡献、执行可信度 | 支持 PF1 后续容量进入基准和乐观 | 债务成本和 completion guarantee 限制净利润，但融资降低建设中断风险 | 资金用途明确指向 150MW ELN-04，增强执行可见度 | 保留基准和乐观；极度乐观仍需 RFS 和客户验收 |
+| PF2 200MW `$5B` lease 与 `$2.15B` notes | 收入基数、公司汇总 | 支持 NTM 小比例基准收入，不支持直接全量年化 | 初期 fit-out/partial rent 利润率低于稳定 rent | 项目融资可见，但施工和 commissioning 未完成 | 保留基准折扣纳入 |
+| Delta Forge 1 300MW | 收入基数、产品贡献 | 合同强，但 mid-2027 节点位于 NTM 尾端 | NTM 利润贡献不应高估 | 需要项目融资、设备锁单、permit、建设和验收 | 基准只保留 `0-50M`；其余移入乐观/附录 |
+| PF3 300MW 与 Delta Forge 2 210MW | 收入基数、远期期权 | 正式合同增强长期 visibility，但初始运营在 NTM 后 | 对 NTM 利润率无可靠贡献 | 增强融资和客户信号，但不等于短期收入 | 排除出基准，移入附录或仅作跟踪 |
+| `$550M` revolver，SOFR+225bps，May 2029 到期 | 执行可信度、现金流 | 不直接产生收入，但支持 pre/post-lease development | 利息成本增加，若使用过多会压净利润 | 提高开发管线灵活性 | 保留为执行正向证据，不上移收入情景 |
+| 行业需求：2026 美国 AI 数据中心建设务实 `$310-390B`、AI IT-load order equivalent `6.0-8.5GW` | 需求 | 支撑 APLD 已签容量的需求端真实性 | 行业景气不自动转成 APLD 利润 | 电力/设备短缺既提高稀缺性，也增加交付风险 | 保留需求基准和乐观，不把行业 beta 直接上移为公司收入 |
+| 电力接入、变压器/switchgear、MEP、液冷和 commissioning 瓶颈 | 收入确认、产品贡献、执行可信度 | 若延迟，已签 backlog 不能进入 NTM 收入 | 低利用率、延迟和成本超支压毛利/NOI | 使自由现金流更负，可能触发更多融资 | 在第二、三步处理一次；不重复惩罚需求 |
+| Cloud Services / ChronoScale 分离 | 收入基数、公司汇总 | APLD 本体 NTM 经营收入排除 Cloud | 避免把 GPU cloud 利润/亏损和 rent 业务混算 | 权益价值另行跟踪 | 排除出基准经营收入，移入附录 |
+| Legacy Data Center Hosting 当前收入和利润 | 收入基数、产品贡献 | 提供稳定 `$145-160M` 基准收入 | 经营利润稳定但增长低 | 有现金流支持，但不改变 AI Factory 交付瓶颈 | 保留基准，不上移公司情景 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | PF1 后续和 PF2 低于当前 ramp，NTM 收入 `$450-620M` | PF1 100MW 已确认收入、长约 take-or-pay、legacy hosting 现金流 | 电力设备、MEP、liquid cooling、客户验收、融资成本或客户节奏导致收入延迟 | 保留 | 悲观下沿；不是需求崩塌，而是订单转收入失败 | 中 | 电力/MEP/commissioning 风险已在收入确认和产品贡献处理，不再在需求层二次下修 |
+| 基准 | A/B 证据正常兑现，NTM 收入 `$700-950M` | PF1 base rent、PF1/PF2 合同和融资、legacy hosting 当前收入表证据 | DF1/PF3/DF2 的主要收入时点超出 NTM；Cloud 已剥离 | 保留 | 主情景 | 中高 | Cloud 剥离只从收入基数排除，不再作为公司利润重复扣减 |
+| 乐观 | PF1 大部分转收入、PF2 明显 ramp、DF1 早期收入，NTM 收入 `$1.10-1.50B` | `$36B` base-term 合同组合、1.4GW 已签 critical IT load、投资级 hyperscaler 占比提升、revolver 和 notes 增强执行力 | 乐观收入必须回答谁买、何时 RFS、如何验收；目前 DF1 仍处 NTM 尾端 | 保留 | 乐观情景 | 中 | 行业高需求只支持需求层，不单独把利润率上移 |
+| 极度乐观 | PF1 稳定、PF2 提前 full-capacity、DF1 首批容量提前，NTM 收入 `$1.60-2.00B` | 1.4GW 合同、2.15GW utility power、PF1 已验证 100MW、客户继续追加 | PF3/DF2 超出 NTM；PF2/DF1 尚无收入表确认；极度乐观要求所有核心环节同步突破 | 下移 | 极度乐观上限；不作为基准或高可信预测 | 低到中 | 施工延迟、融资成本和客户验收是同一执行链风险，只在执行层处理一次 |
+
+## 8. 结论
+
+- 最可能情景：基准情景。NTM 收入最可能落在 `$700-950M`，核心来源是 PF1 从 100MW 已运行向后续 150MW/150MW 分段扩张、PF2 早期 ramp，以及 legacy Data Center Hosting 稳定贡献。这个情景的含义不是 `$36B` 合同已经收入化，而是 A/B 级证据中的一部分容量在 NTM 正常转入收入表。
+- NTM 收入结论：当前经营 run-rate 大约 `$360-435M`，基准情景意味着绝对增加约 `$265-590M`；悲观也可能增长，但低于已签合同隐含路径；乐观和极度乐观需要 PF1/PF2 的 RFS、客户验收和融资节奏明显强于当前保守节奏。
+- 利润/现金流结论：利润质量将从 tenant fit-out/power pass-through 向 base rent/NOI 改善，但 GAAP 净利润和自由现金流仍可能被折旧、利息、股权激励、建设 CapEx、debt reserve 和 completion guarantee 压制。NTM 更应看 Adj. EBITDA、NOI/MW、RFS 节点、客户 acceptance 和项目融资成本，而不是只看收入增速。
+- 主要传导瓶颈：APLD 现在的最大瓶颈不是有没有客户需求，而是能否把已签 MW 按期建设成可被 hyperscaler 接收的高密 AI Factory。真正的传导链是 `电力和场址 -> 长交期设备 -> 土建/MEP -> 液冷/高密电力 -> RFS -> tenant fit-out -> acceptance -> base rent/NOI`。
+- 乐观情景成立条件：PF1 后续 building 在 NTM 内接近或完成稳定收入化；PF2 200MW 提前贡献明显收入；DF1 在 2027 年中前后出现早期收入；power pass-through 和 fit-out 不显著拖累毛利；项目融资未出现明显利差上行或 covenant 压力。
+- 极度乐观情景成立条件：PF1 400MW 基本稳定，PF2 接近 full-capacity，DF1 首批容量提前，客户没有验收延迟，电力/液冷/MEP 供应没有瓶颈，项目债和 revolver 按低摩擦方式持续支持建设，同时 NOI/MW 接近或超过 PF1 稳定目标。任一核心环节缺证据，极度乐观应下移为乐观上限。
+- 悲观情景触发条件：ELN-03/ELN-04 RFS 推迟、PF2 施工/commissioning 延迟、客户设备进场或 acceptance 放慢、融资成本上升导致建设节奏放缓、legacy hosting 客户需求下滑，或低毛利 fit-out/power pass-through 占比高于预期。
+- 后续跟踪数据：PF1 第二/第三 150MW RFS 日期、PF2 施工和 full-capacity 进度、DF1 项目融资与设备锁单、季度 HPC Hosting base rent/fit-out/power 拆分、NOI/MW、Adj. EBITDA margin、cash/restricted cash、debt and debt service reserve、completion guarantee 暴露、CoreWeave lease assignment/credit enhancement、investment-grade hyperscaler 后续追加和 1.7GW+ marketed power 转签约率。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：FY2026 Q3 财报数据截至 2026-02-28，发布于 2026-04-08；租约和融资资料截至 2026-06-09；行业资料截至 2026-06-11；报告生成日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - `公司调研/云算力_IDC_AI软件平台/APLD_Applied_Digital_公司调研_2026-06-12.md`
+  - Applied Digital FY2026 Q3 results, 2026-04-08: https://ir.applieddigital.com/news-events/press-releases/detail/148/applied-digital-reports-fiscal-third-quarter-2026-results
+  - Applied Digital Delta Forge 1 300MW lease, 2026-04-23: https://ir.applieddigital.com/news-events/press-releases/detail/149/applied-digital-announces-new-u-s-based-high
+  - Applied Digital Polaris Forge 3 300MW lease, 2026-05-20: https://ir.applieddigital.com/news-events/press-releases/detail/152/applied-digital-reaches-significant-milestone-surpassing-1
+  - Applied Digital `$550M` revolving credit facility, 2026-06-08: https://ir.applieddigital.com/news-events/press-releases/detail/153/applied-digital-secures-revolving-credit-facility-of-up-to
+  - Applied Digital Delta Forge 2 210MW lease, 2026-06-08: https://ir.applieddigital.com/news-events/press-releases/detail/154/applied-digital-signs-210-mw-lease-at-delta-forge-2
+  - Applied Digital `$1.59B` 7.000% senior secured notes pricing, 2026-06-09: https://ir.applieddigital.com/news-events/press-releases/detail/156/applied-digital-announces-pricing-of-1-59-billion-of
+  - Applied Digital press release index checked on 2026-06-12: https://ir.applieddigital.com/news-events/press-releases
+- 行业来源：
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - 已签合同组合：截至 2026-06-08，APLD 披露五个 AI Factory campus，合计约 `1.4GW` contracted critical IT load、约 `2.15GW` grid-connected utility power、约 `$36B` 15 年 base-term contracted lease revenue，若全部续约期权行权潜在约 `$86B`。本报告只把 NTM 可确认部分纳入主表。
+  - 长期 base-term run-rate：`$36B / 15年` 的粗略平均为约 `$2.4B/yr`，但它是全组合稳定后参考，不是 FY2026/FY2027 指引，不等于 NTM 收入。
+  - PF1 稳定补充口径：400MW fully operational 后，管理层相关披露和本地公司报告将 PF1 NOI run-rate 目标约束在约 `$500M` 量级；本报告只把 NTM 内可确认的 PF1 部分纳入公司基准。
+  - PF3/DF2：正式合同为 B 级证据，但初始运营节点分别为 2027-08 和 2028Q1，均不进入 NTM 基准收入。
+- 主要来源：以上本地正式报告、Applied Digital 官方 IR/SEC 类披露、以及项目内行业调研报告。未使用市场股价、估值倍数、公司排序、Signals 或特征量化结论作为经营价值传导证据。

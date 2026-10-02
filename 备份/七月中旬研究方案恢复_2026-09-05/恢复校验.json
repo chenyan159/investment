@@ -1,0 +1,32 @@
+[
+  {
+    "source": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-07-11T08-13-55-800Z_industry_半导体设备子系统与真空_RF_流体模块_prompt.md",
+    "raw_copy": "D:\\drive\\Investment\\备份\\七月中旬研究方案恢复_2026-09-05\\原始执行提示词\\2026-07-11T08-13-55-800Z_industry_半导体设备子系统与真空_RF_流体模块_prompt.md",
+    "source_sha256": "10c21e728fe5369891b2927a123faf3359765e917f27163e4412ebbaf963396c",
+    "restored": "D:\\drive\\Investment\\备份\\七月中旬研究方案恢复_2026-09-05\\行业调研方案_2026-07-11记录还原.md",
+    "restored_sha256": "2739d77fa06a49ff24a4eaf3e666eab497e58a0f54556f5475896c3b54884a9b",
+    "subject": "半导体设备子系统与真空/RF/流体模块",
+    "removed_tail_marker": "## 自动化运行补充要求",
+    "round_trip_subject_replacement_verified": true
+  },
+  {
+    "source": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-07-11T08-46-50-399Z_company_SKHY_prompt.md",
+    "raw_copy": "D:\\drive\\Investment\\备份\\七月中旬研究方案恢复_2026-09-05\\原始执行提示词\\2026-07-11T08-46-50-399Z_company_SKHY_prompt.md",
+    "source_sha256": "4e59ebb3df99cf2876a95f3343a4f8a486bfba94f73d2ad06bfbccee2b03d468",
+    "restored": "D:\\drive\\Investment\\备份\\七月中旬研究方案恢复_2026-09-05\\公司调研方案_2026-07-11记录还原.md",
+    "restored_sha256": "7b30b597a3b892d9a861c741d409b300cdb8454de1dbd1fa10bb1f3b80e311c2",
+    "subject": "SKHY",
+    "removed_tail_marker": "## 自动化运行补充要求",
+    "round_trip_subject_replacement_verified": true
+  },
+  {
+    "source": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-07-18T21-31-21-331Z_company_AVGO_prompt.md",
+    "raw_copy": "D:\\drive\\Investment\\备份\\七月中旬研究方案恢复_2026-09-05\\原始执行提示词\\2026-07-18T21-31-21-331Z_company_AVGO_prompt.md",
+    "source_sha256": "61a8b818aff12242416d03c6e189e8d850bc890d32146141bb25b882438b2894",
+    "restored": "D:\\drive\\Investment\\备份\\七月中旬研究方案恢复_2026-09-05\\公司调研方案_2026-07-18记录还原.md",
+    "restored_sha256": "0741a8d6dee2f56c96f3cfb1cba55c025db3a1ae5487ef6ac79b0c8dcdbd1aaf",
+    "subject": "AVGO",
+    "removed_tail_marker": "## 本次输出",
+    "round_trip_subject_replacement_verified": true
+  }
+]

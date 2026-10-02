@@ -1,0 +1,156 @@
+# 公司收入传导与价值传导评估：Credo Technology Group（CRDO）
+
+报告日期：2026-06-12  
+公司：Credo Technology Group Holding Ltd.  
+股票代码：CRDO / Nasdaq  
+主口径：NTM，约 2026-06 至 2027-06，对应 FY2027 四个季度附近的经营窗口。  
+边界说明：本报告只评估行业和产品需求如何转化为 CRDO 可确认收入、可兑现利润和经营质量；不做全公司排序，不给投资评级，不判断目标价、股价区间或估值倍数。报告使用 `公司调研/` 与 `行业调研/` 的正式资料，并用 Credo 官方 IR、SEC 和产品公告校准最新经营数据；未读取、引用或继承 `特征量化/`、Signals、回归或模型比较资料。  
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口，核心看 Q1 FY2027 指引之后四个季度的收入、毛利率、经营利润率和现金转换。FY2027 全年、1.6T 长期 run-rate、CPO/NPO、Hyperlume ALC 和 OmniConnect 只作补充口径或远期期权。
+- 当前收入基准、指引和 run-rate：FY2026 收入 `13.35116 亿美元`，同比 `+205.7%`；Q4 FY2026 收入 `4.37003 亿美元`，年化 run-rate `17.48 亿美元`；Q1 FY2027 官方收入指引 `4.65-4.75 亿美元`，中值 `4.70 亿美元`，年化 run-rate `18.8 亿美元`。FY2026 GAAP 毛利率 `68.0%`，Q1 FY2027 Non-GAAP 毛利率指引 `67-69%`。
+- 重要产品/业务线：当前最大收入引擎是 800G/400G ZeroFlap/HiWire AEC；NTM 主要增量来自 1.6T/224G AEC、Optical DSP/ZeroFlap Optics、PCIe/CXL retimer/AEC、Blue Heron scale-up retimer、SerDes IP/NRE 和 DustPhotonics SiPho 的光互联整合。Hyperlume MicroLED ALC、OmniConnect Weaver 和 CPO/NPO 更适合作为远期期权。
+- NTM 公司收入四情景：悲观 `17.5-20.0 亿美元`；基准 `22.0-26.0 亿美元`；乐观 `27.5-32.5 亿美元`；极度乐观 `35.0-41.0 亿美元`。这里的“极度乐观”不是把所有产品上限相加，而是经过产品重叠、客户预算和收入确认去重后的公司口径上限。
+- 利润或 EBITDA 四情景：悲观毛利率 `63-66%`、经营利润率 `24-30%`；基准毛利率 `66-68%`、经营利润率 `31-37%`；乐观毛利率 `67-69.5%`、经营利润率 `36-43%`；极度乐观毛利率 `68-71%`、经营利润率 `41-49%`。Non-GAAP 利润弹性高于 GAAP，但本报告不把收入增长自动等同于利润扩张。
+- 最大传导瓶颈：客户集中与订单确认。Q3 FY2026 最终客户前三约 `39% / 32% / 17%`，合计 `88%`；公司披露的 RPO 主要是 IP license 和工程服务，金额远小于产品收入，不能把行业需求池直接写成已锁定 backlog。
+- 最大利润率变量：产品 mix。AEC/retimer/IP 的芯片和系统价值可支撑高毛利；若 ZeroFlap Optics 或完整光模块收入占比快速提高，短期可能拉低毛利率，但 DustPhotonics SiPho 和自有 DSP 可部分对冲。
+- 最大现金流变量：库存、应收账款和供应链承诺。Q4 FY2026 库存约 `2.508 亿美元`，明显高于 FY2025 年末，既支持未交付需求和新产品 ramp，也带来需求错配风险。
+- 可信度：基准为中高，乐观为中，极度乐观为低到中。A 级证据支持公司总收入、毛利率和 Q1 指引；产品级拆分因公司不披露 segment，需要估算。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 800G/400G ZeroFlap/HiWire AEC 与相关 AEC IC | FY2026 推算 `9.5-11.0 亿美元`；Q4 run-rate 推算 `12.0-14.0 亿美元/年` | FY2026 约 `70-82%` | 当前现金牛和主要收入确认路径 | A/B | 进入基准主口径 | 800G AEC 成熟后 ASP 下行，但客户扩散仍可延长周期 |
+| 1.6T/224G AEC/ACC 与 224G SerDes | FY2026 已有小批量或导入收入，无法可靠拆分，估计 `<0.8 亿美元` | 当前 `<6%` | NTM 主要增量之一，决定 AEC 第二曲线 | C | 小比例折扣进入基准，主要贡献在乐观以上 | 448G/3.2T electrical 与下一代 active copper |
+| Optical DSP、Cardinal/Bluebird/Dove、ZeroFlap Optics | FY2026 推算 `1.2-2.2 亿美元`，公司未拆分 | `9-16%` | 从铜扩到光，降低 AEC 被光替代风险 | B/C | 折扣进入基准；FY2027 光收入目标需用后续季度验证 | 3.2T、LPO/LRO、CPO/NPO |
+| PCIe/CXL Toucan retimer、PCIe AEC、Smart Cable Module | FY2026 推算 `0.4-1.0 亿美元` | `3-8%` | AI server 和 rack 内短距 I/O attach 上升 | C | 小比例进入基准，更多放在乐观 | CXL memory pooling 和 PCIe optical-ready retimer |
+| Blue Heron 224G multiprotocol AI scale-up retimer | 当前接近样品、design-in 和早期客户验证 | 当前 `<2%` | UALink、ESUN、Ethernet 开放 scale-up 的高弹性入口 | C/D | 基准只纳入极小收入；乐观以上才成为显性贡献 | 非 NVIDIA rack-scale 互联标准化 |
+| SerDes IP、chiplet/NRE、OmniConnect Weaver memory I/O | FY2026 IP/NRE 推算 `0.5-0.9 亿美元`；OmniConnect 当前无法可靠量化 | `4-7%` | 高毛利但收入 lumpy，能增强平台锁定 | A/C | IP/NRE 进入基准；OmniConnect 仅作跟踪 | 推理 memory wall 和 ASIC memory fanout |
+| DustPhotonics SiPho PIC/L3C、Hyperlume MicroLED ALC | DustPhotonics 刚完成并购，独立收入基数无法可靠量化；Hyperlume 当前极小 | 当前 `<3%` | 主要改变 optical 成本、功耗和长期产品结构 | C/D | 不作为独立基准收入重复相加，作为 Optical 利润和远期收入变量 | NPO/CPO、3.2T PIC、10-30m ALC |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不评估 CRDO 份额、收入确认或利润率。需求单位采用最能解释该产品的指标，包括高速端口、active cable 条数、optical module/DSP 端口、retimer attach、客户 design-in 和平台认证。行业需求强弱只相对当前预期判断，不把 AI 网络热度直接等同为 CRDO 收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 800G/400G AEC | AI rack 内 2-7m 短距链路，行业资料给出 400G/800G AEC 当前年化约 `8-14 亿美元`需求池 | NTM `9-12 亿美元`，800G 进入多供和 ASP 压力 | NTM `11-18 亿美元`，GB300、ASIC rack 和短距铜共存 | NTM `17-27 亿美元`，更多客户把 800G AEC 作为标准 BOM | NTM `25-38 亿美元`，800G 供给仍紧且短距光替代后移 | 相对当前需求池从小幅增长到约 `+10-24 亿美元` | 基准符合当前预期，乐观需客户扩散和价格韧性 | 行业 AEC 报告认为铜与光并行；反证是 800G 光模块降价和多供应商压价 |
+| 1.6T/224G AEC/ACC | 1.6T/224G 处于样品、设计导入和少量采购窗口，行业当前年化约 `1-4 亿美元` | NTM `1-3 亿美元`，客户认证延后 | NTM `6-14 亿美元`，2026H2 小批量、2027H1 扩大 | NTM `12-28 亿美元`，1.6T 新 AI rack 默认短距方案之一 | NTM `25-50 亿美元`，224G 短距端口短缺且客户愿付溢价 | 从当前早期需求池扩大 `+5-46 亿美元` | 基准高于当前 run-rate 但符合 1.6T 代际切换预期 | DesignCon/OFC 与本地行业报告支持 1.6T 进入真实采购窗口；反证是 1.6T 光模块或 LPO/LRO 抢占短距 |
+| Optical DSP、ZeroFlap Optics | AI 光模块 2026 需求强，行业资料给出 AI optical transceiver 市场 2026 约 `260 亿美元`，1.6T 出货进入 `500 万只+`预测区间 | 800G 需求仍有，但 1.6T 认证慢，DSP/模块 ASP 下行 | 800G 高位，1.6T 逐季导入，DSP/TIA/CDR 需求继续上修 | 1.6T 和 LRO/TRO 快速放量，可靠性 telemetry 成为采购加分项 | 1.6T 缺货延续，ZeroFlap/PILOT 类可靠性系统被大客户标准化 | 需求单位从 800G 端口迁移到 1.6T/200G lane，价值池向 DSP/SerDes/SiPho 上移 | 基准到乐观，取决于客户对 CRDO optical 产品的采纳 | 行业光 DSP 和 800G/1.6T 报告支持需求强；反证是完整模块竞争压低 CRDO 可捕获利润 |
+| PCIe/CXL Toucan retimer、PCIe AEC | AI server、JBOG/JBOM、CXL memory、PCIe 6.0 把 retimer 和 AEC attach 推高，行业未来一年 PCIe/CXL 高速 I/O 池为 `65-95 亿美元`基准 | Gen6/CXL 延后，retimer 仅维持现有服务器 attach | PCIe 5/6 retimer 和 smart cable 正常扩散 | PCIe 6.0、CXL 3.x 和 rack 内 AEC 同步加速 | CXL memory pooling 和 composable fabric 提前进入大客户采购 | 从板级信号件升级为 rack I/O 组织能力 | 基准需求明确，但 CRDO 份额不等同于 Astera 类主力 | 本地 PCIe/CXL 行业报告支持需求；反证是 Astera、Marvell、Microchip 等竞争更强 |
+| Blue Heron scale-up retimer | UALink、ESUN、Ethernet scale-up 标准在 2026 进入设计窗口，商用收入仍早期 | UALink/ESUN 仅停留在样品和生态演示 | 少量 design-in 与 CQ3 2026 production 支撑小收入 | 非 NVIDIA AI rack 进入客户平台，224G retimer attach 明显上升 | 开放 scale-up 在多个 hyperscaler rack 中成为标准配置 | 当前收入接近 0，NTM 需求从样品到可收入化的跨度很大 | 需求乐观，但基准收入不宜过度前置 | Credo 官方 Blue Heron 公告支持技术位置；反证是 NVLink/NVLink Fusion 和客户自研 |
+| SerDes IP、chiplet/NRE、OmniConnect | AI ASIC、switch、DSP、retimer 都需要高速 SerDes；OmniConnect 对应 inference memory fanout 和 memory wall | 客户 ASIC 设计周期推迟，NRE lumpy | IP/NRE 维持小而高毛利收入 | 112G/224G SerDes 和 chiplet design win 增加 | memory wall 成为推理平台核心瓶颈，OmniConnect 获得大客户采用 | 需求不能可靠用出货量量化，主要看 design win 数和 NRE | 基准只看已披露 IP/NRE，OmniConnect 属远期期权 | EDA/IP 行业资料支持 interface IP 需求；反证是客户自研和设计周期长 |
+| DustPhotonics SiPho、Hyperlume ALC | 800G/1.6T/3.2T 对功耗、成本和良率提出更高要求，SiPho/PIC 和中距 ALC 是长期技术路线 | 并购整合与客户认证慢，NTM 需求只体现为内部平台改良 | SiPho 改善 Optical 成本和良率，少量收入或内部供给 | DustPhotonics 与 CRDO DSP/ZeroFlap 组合拿到更多 optical design-in | NPO/CPO 或 ALC 在大客户中提前验证并贡献显性收入 | 独立需求当前无法可靠量化 | 基准不把远期 SiPho/CPO 直接前置 | 官方并购完成和产品路线支持期权；反证是 CPO/NPO 维护、良率和标准未完全成熟 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断需求池中哪些部分能进入 CRDO NTM 收入表，以及当前可收入化基数。公司能参与的需求池不等于能确认收入。CRDO 只披露单一财务 segment，不披露 AEC、Optical DSP、Retimer、IP 的完整收入，因此产品基数为“官方总收入、10-Q 业务描述、指引、产品公告、本地行业资料”交叉后的估计区间。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 800G/400G ZeroFlap/HiWire AEC | FY2026 总收入 `13.35116 亿美元`，10-Q 多次称产品收入增长主要来自 AEC 出货；Q4 公司 run-rate `17.48 亿美元/年` | 直接 | 高毛利系统级产品，含芯片、固件、诊断和客户认证 | `11.5-13.0 亿美元` | `14.5-17.5 亿美元` | `18.5-22.5 亿美元` | `23.0-27.0 亿美元` | 基准高于 FY2026 但符合 Q1 指引和客户 ramp；悲观仍可增长但低于当前扩张路径 | A/B | 是 | AEC 已进入收入表和指引；产品收入占比高 | 基准主收入，不得再把同一 AEC demand 重复加到 1.6T 或 PCIe AEC |
+| 1.6T/224G AEC/ACC | OFC/产品页和客户验证明确，但公司未披露已确认收入；同属 AEC 大客户路径 | 直接 | 早期高 ASP 和高硅含量，量产初期毛利可高，良率风险也高 | `0.5-1.5 亿美元` | `2.0-4.5 亿美元` | `5.0-8.5 亿美元` | `9.0-13.0 亿美元` | 基准为折扣纳入，乐观才体现代际切换上修 | C | 是，小比例 | 有产品、速度代际和客户路径，但没有分产品订单披露 | 可进入基准但必须折扣；极度乐观需大客户平台采用 |
+| Optical DSP、Cardinal/Bluebird、ZeroFlap Optics | 产品发布、ZeroFlap Optics GA、Cardinal 1.6T DSP、DustPhotonics 交易材料中的 FY2027 optical 收入目标；公司未给 segment revenue | 直接 | DSP 毛利高，完整光模块毛利低于芯片但高于普通组装；SiPho 可改善成本 | `1.5-2.5 亿美元` | `3.5-6.0 亿美元` | `7.0-11.0 亿美元` | `12.0-16.0 亿美元` | 基准接近当前管理层 optical growth 叙事但已折扣；乐观需客户订单 | B/C | 是，折扣 | 官方产品和并购目标清楚，收入确认节奏未完全披露 | 基准纳入；不把整个 optical TAM 当 CRDO 收入 |
+| PCIe/CXL Toucan retimer、PCIe AEC | 产品页和 AI server/rack 需求支持；未披露客户或收入 | 直接 | Silicon/retimer 毛利高，AEC module 稍低；需强 FAE 支持 | `0.3-0.8 亿美元` | `1.0-2.2 亿美元` | `2.5-4.5 亿美元` | `5.0-8.0 亿美元` | 基准只承认已能随客户导入进入收入的部分 | C | 是，小比例 | 产品明确，需求确定，但收入表可见度低于 AEC | 小比例基准，更多属于乐观贡献 |
+| Blue Heron 224G scale-up retimer | 2026-01 官方发布，支持 UALink、ESUN、Ethernet，计划 production window；尚无披露收入 | 直接 | 高毛利 IC，若进入 rack design 切换成本高 | `0-0.3 亿美元` | `0.3-1.0 亿美元` | `1.2-3.0 亿美元` | `3.5-6.0 亿美元` | 基准只代表早期导入，不代表广泛采用 | C/D | 是，极小比例 | 技术路线明确但客户和量产收入未披露 | NTM 主要在乐观以上，基准避免前置 |
+| SerDes IP、chiplet/NRE、OmniConnect | 公司历史上有 IP/license 和工程服务收入，Q2 FY2026 IP 占比约低个位数；OmniConnect 为 2026 TSMC Symposium 展示 | 直接 | IP/NRE 毛利高但 lumpy；OmniConnect 需客户 ASIC 周期 | `0.4-0.7 亿美元` | `0.8-1.5 亿美元` | `1.6-3.0 亿美元` | `3.5-6.0 亿美元` | 基准仅反映 IP/NRE 正常贡献；OmniConnect 不前置 | A/C | 是，限 IP/NRE | IP 已在收入表，OmniConnect 仍属 design-in | IP 进入基准；OmniConnect 仅作跟踪或乐观期权 |
+| DustPhotonics SiPho PIC、Hyperlume ALC | DustPhotonics 已完成收购；Hyperlume 已收购并定位 10-30m ALC；当前独立收入无法可靠量化 | 直接/间接 | SiPho 主要改善 optical 成本和平台控制，ALC 早期可能消耗研发 | `0-0.2 亿美元` | `0.3-1.2 亿美元` | `1.5-3.5 亿美元` | `4.0-7.5 亿美元` | 基准不作为独立收入重复加总，更多是 optical mix 的毛利变量 | C/D | 否，除非与 Optical 去重后小额纳入 | 并购完成是事实，但客户收入确认路径不足 | 移入附录和 optical 结构变量；不单独推高公司基准 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从需求和收入基数出发，判断各产品在 NTM 内可贡献的收入和利润。利润贡献使用“产品毛利贡献”作为统一口径，未分摊公司研发、销售、股权激励、并购摊销和税项。公司汇总时会去除产品重叠，特别是 AEC 与 1.6T AEC、Optical DSP 与 SiPho/ZeroFlap Optics 的重复。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 800G/400G ZeroFlap/HiWire AEC | 悲观 | `11.5-13.0 亿美元` | 毛利 `7.3-8.6 亿美元` | 从高位回落到 `63-66%` | 低于当前预期 | AEC 已收入化，但客户节奏放缓 | 保留悲观 | 大客户订单延期、多供压价、库存错配 |
+| 800G/400G ZeroFlap/HiWire AEC | 基准 | `14.5-17.5 亿美元` | 毛利 `9.6-12.0 亿美元` | `66-69%`附近 | 符合 Q1 指引后正常 ramp | FY2026 收入和 Q1 指引支撑 | 保留基准 | 公司不披露 backlog，不能把需求池全额收入化 |
+| 800G/400G ZeroFlap/HiWire AEC | 乐观 | `18.5-22.5 亿美元` | 毛利 `12.5-15.8 亿美元` | 稳定或小幅扩张 | 高于当前预期 | AI rack 短距铜继续供给紧，大客户扩散 | 保留乐观 | 800G 进入成熟后 ASP 下行 |
+| 800G/400G ZeroFlap/HiWire AEC | 极度乐观 | `23.0-27.0 亿美元` | 毛利 `16.0-19.0 亿美元` | `69-71%`上沿 | 显著高于当前预期 | AEC 成为多个 hyperscaler 标准短距方案 | 降为公司极度乐观的一部分 | 单一产品上限不能单独定义公司极度乐观 |
+| 1.6T/224G AEC/ACC | 悲观 | `0.5-1.5 亿美元` | 毛利 `0.2-0.8 亿美元` | 良率和验证拖累 | 低于代际切换预期 | 1.6T 有产品但量产证据不足 | 保留悲观 | 224G 良率、热、客户认证 |
+| 1.6T/224G AEC/ACC | 基准 | `2.0-4.5 亿美元` | 毛利 `1.2-2.8 亿美元` | 高毛利但需折扣 | 符合小批量导入 | 产品路线明确，1.6T 行业需求增强 | 保留基准但不放大 | 客户确认不足，可能被 optical/LPO 抢 |
+| 1.6T/224G AEC/ACC | 乐观 | `5.0-8.5 亿美元` | 毛利 `3.2-5.6 亿美元` | 上行 | 高于当前预期 | 新 AI rack 将 1.6T 短距方案前置 | 保留乐观 | 竞争对手与客户多供 |
+| 1.6T/224G AEC/ACC | 极度乐观 | `9.0-13.0 亿美元` | 毛利 `6.0-9.2 亿美元` | 明显扩张 | 非线性超预期 | 1.6T 供给紧且 CRDO 取得高份额 | 保留为上限 | 若 1.6T optical 成熟更快，active copper 上限下移 |
+| Optical DSP、ZeroFlap Optics | 悲观 | `1.5-2.5 亿美元` | 毛利 `0.8-1.4 亿美元` | 模块 mix 拉低 | 低于 optical growth 预期 | 产品存在但客户量产慢 | 保留悲观 | 完整光模块价格战和客户认证延迟 |
+| Optical DSP、ZeroFlap Optics | 基准 | `3.5-6.0 亿美元` | 毛利 `2.0-3.8 亿美元` | 稳定，DSP 高于模块 | 符合公司从铜到光扩张路径 | ZeroFlap Optics、Cardinal、DustPhotonics 支撑 | 保留基准 | 不得把 AI optical TAM 直接当收入 |
+| Optical DSP、ZeroFlap Optics | 乐观 | `7.0-11.0 亿美元` | 毛利 `4.2-7.0 亿美元` | mix 改善 | 高于当前预期 | 800G/1.6T optical design-in 转收入 | 保留乐观 | Broadcom/Marvell 和模块厂生态强 |
+| Optical DSP、ZeroFlap Optics | 极度乐观 | `12.0-16.0 亿美元` | 毛利 `7.5-10.5 亿美元` | 若 DSP/SiPho 占比高则扩张 | 显著高于当前预期 | ZF optics 成为大客户可靠性系统 | 下调为公司上限组成 | 完整模块低毛利收入不能自动转为高利润 |
+| PCIe/CXL Toucan retimer、PCIe AEC | 悲观 | `0.3-0.8 亿美元` | 毛利 `0.2-0.5 亿美元` | 稳定但小 | 低于预期 | PCIe/CXL 需求强但 CRDO 份额有限 | 保留悲观 | Astera、Marvell、Microchip 竞争 |
+| PCIe/CXL Toucan retimer、PCIe AEC | 基准 | `1.0-2.2 亿美元` | 毛利 `0.6-1.5 亿美元` | 高于公司平均或接近 | 符合小额 ramp | Toucan、PCIe AEC 产品化 | 保留基准 | 收入确认证据偏 C 级 |
+| PCIe/CXL Toucan retimer、PCIe AEC | 乐观 | `2.5-4.5 亿美元` | 毛利 `1.6-3.1 亿美元` | 扩张 | 高于当前预期 | PCIe 6/CXL attach 提前上修 | 保留乐观 | 若客户选择 Astera/Marvell 主方案，份额受限 |
+| PCIe/CXL Toucan retimer、PCIe AEC | 极度乐观 | `5.0-8.0 亿美元` | 毛利 `3.5-5.8 亿美元` | 显著扩张 | 非线性上修 | AI rack retimed cable 和 CXL 同时放量 | 作为上限保留 | CXL 商业闭环不明 |
+| Blue Heron scale-up retimer | 悲观 | `0-0.3 亿美元` | 毛利 `0-0.2 亿美元` | 研发期拖累 | 低于当前产品叙事 | 标准和客户慢 | 保留悲观 | NVLink/NVLink Fusion |
+| Blue Heron scale-up retimer | 基准 | `0.3-1.0 亿美元` | 毛利 `0.2-0.7 亿美元` | 高毛利但小 | 小额符合早期导入 | 官方发布和 production 计划 | 保留基准但低权重 | 无客户订单披露 |
+| Blue Heron scale-up retimer | 乐观 | `1.2-3.0 亿美元` | 毛利 `0.8-2.2 亿美元` | 高毛利 | 高于当前预期 | UALink/ESUN/Ethernet 进入客户平台 | 保留乐观 | 标准互操作和客户 ASIC 节奏 |
+| Blue Heron scale-up retimer | 极度乐观 | `3.5-6.0 亿美元` | 毛利 `2.5-4.5 亿美元` | 显著扩张 | 非线性上修 | 开放 scale-up 成为非 NVIDIA rack 标准 | 下调为低可信上限 | 需求可能落在 2027H2 以后 |
+| SerDes IP、chiplet/NRE、OmniConnect | 悲观 | `0.4-0.7 亿美元` | 毛利 `0.3-0.6 亿美元` | 高毛利但规模小 | 低于正常 IP 节奏 | 客户项目推迟 | 保留悲观 | 设计周期长 |
+| SerDes IP、chiplet/NRE、OmniConnect | 基准 | `0.8-1.5 亿美元` | 毛利 `0.6-1.2 亿美元` | 高毛利 | 符合历史 IP/NRE 小比例贡献 | IP 已在收入表 | 保留基准 | lumpy，不可年化 |
+| SerDes IP、chiplet/NRE、OmniConnect | 乐观 | `1.6-3.0 亿美元` | 毛利 `1.3-2.4 亿美元` | 扩张 | 高于当前预期 | 112G/224G SerDes design win 增加 | 保留乐观 | 客户自研或延期 |
+| SerDes IP、chiplet/NRE、OmniConnect | 极度乐观 | `3.5-6.0 亿美元` | 毛利 `2.8-5.0 亿美元` | 显著扩张 | 非线性上修 | OmniConnect 或 chiplet 被客户 ASIC 采用 | 移入附录/低可信上限 | NTM 内商业化时间表不足 |
+| DustPhotonics SiPho、Hyperlume ALC | 悲观 | `0-0.2 亿美元` | 无法可靠量化，可能费用先行 | 短期稀释 | 低于当前叙事 | 并购整合成本 | 保留悲观 | 量产良率和认证 |
+| DustPhotonics SiPho、Hyperlume ALC | 基准 | `0.3-1.2 亿美元` | 无法可靠量化，主要体现在 Optical 成本 | 中性到小幅改善 | 低于市场期权想象 | 并购完成但收入路径不清 | 不独立加总 | 与 Optical DSP/ZF Optics 重叠 |
+| DustPhotonics SiPho、Hyperlume ALC | 乐观 | `1.5-3.5 亿美元` | 毛利 `0.6-1.8 亿美元` | 取决于 SiPho/PIC mix | 高于当前预期 | SiPho 与 ZF Optics 组合进客户 | 作为 optical 上修因素 | 客户认证和封装良率 |
+| DustPhotonics SiPho、Hyperlume ALC | 极度乐观 | `4.0-7.5 亿美元` | 毛利 `2.0-4.5 亿美元` | 若成平台则扩张 | 非线性上修 | NPO/CPO/ALC 提前进入订单 | 移入附录为低可信上限 | NTM 时间表不足 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献去重后合成为公司 NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。汇总前已处理：AEC 与 1.6T AEC 代际重叠、Optical DSP 与 SiPho/ZeroFlap Optics 重叠、同一 hyperscaler rack 预算的重复计算、以及 IP/NRE 的 lumpy 特征。本节不讨论市场价格或估值。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `17.5-20.0 亿美元` | vs FY2026 `+31-50%` | 低于当前指引隐含路径和高增长预期；Q1 指引可兑现但后续环比放缓 | `63-66%` | `24-30%` | GAAP 净利润约 `4.0-6.0 亿美元`；Non-GAAP 经营利润仍明显为正 | 正 FCF 但库存和应收消耗现金，现金转换弱于利润 | 中 | 大客户订单延期、多供压价、库存错配、optical 模块 mix 拉低毛利 |
+| 基准公司 | `22.0-26.0 亿美元` | vs FY2026 `+65-95%` | 接近 Q1 FY2027 指引后正常逐季 ramp；高可信 AEC 正常兑现，C 级机会折扣纳入 | `66-68%` | `31-37%` | GAAP 净利润约 `7.0-9.5 亿美元`；Non-GAAP 经营利润率可高于 GAAP | FCF 正，库存周转需改善；并购和供应链预付带来波动 | 中高 | AEC 客户集中、1.6T/optical 确认节奏、opex 随研发并购上升 |
+| 乐观公司 | `27.5-32.5 亿美元` | vs FY2026 `+106-143%` | 高于当前预期，且不是单一小基数产品造成；AEC、1.6T、optical 至少两条线同步超预期 | `67-69.5%` | `36-43%` | GAAP 净利润约 `10.5-13.5 亿美元`；Non-GAAP 利润弹性更高 | FCF 强正，但应收账款和供应链承诺显著上升 | 中 | 多产品同时量产、客户验收和供应链交付能力 |
+| 极度乐观公司 | `35.0-41.0 亿美元` | vs FY2026 `+162-207%` | 显著高于当前预期；需求、公司捕获、利润率和执行质量同时突破 | `68-71%` | `41-49%` | GAAP 净利润约 `15.0-20.0 亿美元`；Non-GAAP 经营利润可能接近收入一半 | FCF 很强但高度依赖大客户回款和库存周转 | 低到中 | 需要 AEC 份额维持、1.6T 放量、Optical/SiPho 转收入、Blue Heron 或 PCIe/CXL 贡献同步成立 |
+
+公司层面去重结论：基准收入 `22-26 亿美元`不是各产品基准机械相加，而是以 Q1 FY2027 中值 `4.70 亿美元`、Q4 FY2026 run-rate `17.48 亿美元`、AEC 当前收入化能力和光/1.6T/CXL 的折扣贡献合成。极度乐观可到 `35-41 亿美元`，但需要大客户 AI rack 采购连续超预期，且 CRDO 在铜、光、retimer、scale-up 中同时捕获份额；这不是当前预期。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在影响的层级处理一次，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 收入 `13.35116 亿美元`，Q4 收入 `4.37003 亿美元`，Q1 FY2027 指引 `4.65-4.75 亿美元` | 公司汇总 | 支撑基准收入明显高于 FY2026 | Q1 毛利率指引仍在 `67-69%` Non-GAAP | 指引证明近期订单和交付路径可见 | 保留基准 |
+| AEC 是 FY2026 产品收入增长主因 | 产品贡献 | 支撑 800G/400G AEC 进入基准主口径 | 高毛利系统产品支撑公司 GM | 客户 qual 和出货已经验证 | 保留基准 |
+| Q3 FY2026 最终客户前三合计约 `88%` | 公司组合 | 不直接下调需求，但限制收入质量和可持续性 | 大客户多供可能压价 | 单一客户节奏影响库存、应收和交付 | 保留悲观，不重复惩罚到所有产品 |
+| 公司不披露完整产品 backlog；RPO 主要是 IP/license 和工程服务 | 收入基数 | 限制把行业需求池直接转成 CRDO 收入 | 无直接毛利影响 | 限制收入确认可信度 | 下移过高的基准假设 |
+| Q4 库存 `2.508 亿美元`，Q3 10-Q 提到库存增加支持未交付 backlog 和新产品 ramp | 执行可信度 | 支持 NTM 交付准备 | 若需求兑现则提升规模效应 | 若收入不跟，库存变风险 | 保留基准和乐观，同时保留悲观触发 |
+| 1.6T AEC、Blue Heron、Cardinal、ZeroFlap Optics 产品公告 | 产品贡献 | 支持乐观收入上修 | 新品若高 ASP 且芯片占比高可保毛利 | 客户认证和量产是核心 | 保留乐观 |
+| DustPhotonics 收购完成和 SiPho/PIC 布局 | 利润率/远期结构 | NTM 只能小额或间接收入化 | 有助于 optical 成本和产品控制 | 并购整合先消耗现金和费用 | 移入附录或作为 Optical 上修因素 |
+| Hyperlume MicroLED ALC、OmniConnect Weaver | 远期期权 | NTM 缺客户和收入确认路径 | 可能长期高毛利 | 当前主要是研发和 design-in | 仅作跟踪 |
+| Optical/1.6T 行业需求强，但竞争来自 Broadcom、Marvell、Astera、模块厂和客户自研 | 份额/价格 | 限制 CRDO 捕获率 | 多供可能压低 ASP；差异化可对冲 | FAE 和客户支持成本上升 | 保留乐观但下移极度乐观上限 |
+| Q1 FY2027 GAAP opex 指引显著高于历史季度 | 公司利润 | 收入增长不必然转为同比例利润 | 限制 GAAP 经营利润率扩张 | 并购、研发和股权激励影响现金/费用 | 保留基准利润率，不上移 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | AEC 仍增长但低于当前路径，NTM `17-20 亿美元`，毛利率下移 | 客户集中、PO 可取消、库存上升和新产品认证均能解释低于预期 | Q1 FY2027 指引仍创新高，FY2026 已证明 AEC 可收入化 | 保留 | 悲观公司 | 中 | 客户集中只在公司组合和收入确认层处理，不再重复压低每条需求 |
+| 基准 | AEC 正常兑现，1.6T/Optical/CXL 折扣贡献，NTM `22-26 亿美元` | FY2026 收入、Q4 run-rate、Q1 指引、AEC 量产、毛利率指引和资产负债表支持 | 产品拆分缺失，C 级新品贡献需估算 | 保留 | 基准公司 | 中高 | backlog 不透明只限制收入基数，不重复当作需求不存在 |
+| 乐观 | AEC、1.6T、Optical 至少两条线超预期，NTM `27.5-32.5 亿美元` | 1.6T、ZeroFlap Optics、Cardinal、Blue Heron、DustPhotonics 均有产品和路线证据 | 客户订单和产品收入未完全披露，竞争强 | 保留 | 乐观公司 | 中 | 竞争风险只在份额和价格层处理，不重复压低行业需求 |
+| 极度乐观 | 多产品同时非线性放量，原始上限可超过 `40 亿美元` | AI rack、1.6T、Optical、open scale-up 同时向上时 CRDO 产品覆盖全面 | 任一核心环节缺证据就不能全部计入；Hyperlume/OmniConnect/SiPho 独立收入仍偏远期 | 下移 | 极度乐观上限 `35-41 亿美元` | 低到中 | 远期期权不再重复计入基准和乐观，统一放在极度乐观或附录 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。CRDO 已从高速 SerDes/IP 小公司转为 AI 数据中心互联的高收入化供应商，FY2026 与 Q1 FY2027 指引提供 A 级锚点。NTM 最可能收入为 `22-26 亿美元`，毛利率 `66-68%`，GAAP 经营利润率 `31-37%`。收入增长主要来自 AEC 正常兑现、1.6T AEC 小到中等贡献、Optical DSP/ZeroFlap Optics 折扣上量、PCIe/CXL 和 IP/NRE 的辅助贡献。
+- 乐观情景成立条件：Q1 FY2027 实际收入超过指引中值且 Q2 指引继续强劲；AEC 客户不只是一个或两个项目放量；1.6T AEC 在 2026H2 获得明确量产订单；ZeroFlap Optics 或 Optical DSP 转为可见收入；Non-GAAP 毛利率维持 `67%+`，库存和应收没有恶化。
+- 极度乐观情景成立条件：大客户 AI rack 采购继续上修，CRDO 在 800G AEC 维持高份额，同时 1.6T AEC、Optical DSP/ZF Optics、PCIe/CXL、Blue Heron 和 SiPho 至少四条线在 NTM 内可确认收入；毛利率不因完整光模块或多供压价而明显下行；客户集中度下降但收入继续增长。
+- 悲观情景触发条件：Q1/Q2 FY2027 指引低于当前 run-rate；库存和应收同步上升但收入不跟；Top 2 客户订单延期或改用多供；1.6T/Optical 产品停留在 demo 或小批量；Non-GAAP 毛利率跌破 `65%`并持续。
+- 后续跟踪数据：Q1 FY2027 实际收入和 Q2 指引；Non-GAAP 毛利率和 GAAP opex；库存、应收和现金转换；最终客户集中度；1.6T AEC 客户/量产公告；ZeroFlap Optics/Cardinal/DustPhotonics 的收入贡献；Blue Heron production 和 UALink/ESUN 客户 design-in；RPO、purchase obligations 和 management commentary 对 backlog 的边际变化。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Credo Q4 FY2026 和 FY2026 财报发布时间为 2026-06-01，资产负债表日期为 2026-05-02；Q3 FY2026 10-Q 截至 2026-01-31；本报告使用资料截至 2026-06-12。
+- 主要收入、订单、指引和利润率来源：Credo 官方 Q4 FY2026/FY2026 财报；FY2026 Q1-Q3 10-Q；Credo 产品公告和产品页；项目内 CRDO 公司调研与 AI 网络、光互联、铜互联、PCIe/CXL、开放 scale-up 行业调研。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 收入 `13.35116 亿美元`为已披露历史基准；Q1 FY2027 指引中值 `4.70 亿美元`只是近期 run-rate，不等于全年收入；DustPhotonics、Hyperlume、OmniConnect、CPO/NPO、448G/3.2T 只作为远期期权或极度乐观上限，不进入 NTM 基准主表。
+- 主要来源：
+  - `公司调研/AI网络_光互联_连接器/CRDO_Credo Technology Group_公司调研_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_PCIe_CXL高速IO交换与Retimer_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_开放Scale-up互联_2026-06-11.md`
+  - Credo Q4 FY2026 and FY2026 financial results, 2026-06-01: https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Financial-Results/default.aspx
+  - Credo FY2026 Q3 10-Q: https://www.sec.gov/Archives/edgar/data/1807794/000162828026014017/crdo-20260131.htm
+  - Credo Blue Heron 224G scale-up retimer announcement, 2026-01-29: https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Introduces-Industrys-First-224G-Multiprotocol-AI-Scale-Up-Retimer-Supporting-UALink-ESUN-and-Ethernet/default.aspx
+  - Credo DustPhotonics acquisition completion, 2026-05-28: https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Completes-Acquisition-of-DustPhotonics/default.aspx

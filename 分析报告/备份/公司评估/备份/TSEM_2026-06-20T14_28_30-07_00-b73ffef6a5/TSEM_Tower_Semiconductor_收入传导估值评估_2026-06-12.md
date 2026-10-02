@@ -1,0 +1,155 @@
+# 公司收入传导与价值传导评估：Tower Semiconductor
+
+报告日期：2026-06-12（America/Los_Angeles）  
+研究对象：company-evaluation / TSEM / Tower Semiconductor  
+正式输出：`分析报告/公司评估/TSEM_Tower_Semiconductor_收入传导估值评估_2026-06-12.md`  
+本地资料边界：使用 `公司调研/` 与 `行业调研/` 下正式资料；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归、模型比较、`日度资料/`、`tmp/` 或备份目录作为本次经营结论来源。  
+主口径：NTM 经营窗口。由于报告日位于 2026Q2 内，本文 NTM 主表采用未来四个财务季度近似口径，即 `2026Q2 指引 + 2026Q3 + 2026Q4 + 2027Q1`。`2027 全年 13 亿美元 SiPho 合同`、`2028 更高 wafer commitment`、`CPO/NPO/400G-lane/SOH/EOP` 等只作为 NTM 上限或远期期权处理，不能替代 NTM 基准。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 2026-06-12 起 NTM，即 Q2 2026-Q1 2027；补充口径为 FY2026、FY2027 合同兑现节奏和 2028 管理层 built-out 模型。本文不输出市场定价、目标价、投资评级或估值倍数判断。
+- 当前收入基准、指引和 run-rate：Q1 2026 收入 `4.136 亿美元`，同比 `+15%`；Q2 2026 指引 `4.55 亿美元 +/-5%`，同比 `+22%`、环比 `+10%`；Q1 annualized run-rate 约 `16.55 亿美元`，Q2 指引中点 annualized 约 `18.20 亿美元`。公司同时重申 2026 年每季收入和利润率环比增长目标。
+- 重要产品/业务线：`RF Infrastructure / SiPho + SiGe 光互联`、`Power Management / BCD / 700V / Gen3 LDMOS`、`RF Mobile / RF-SOI`、`Sensors & Displays / CIS / MEMS`、`Discrete + MS/CMOS/Misc.`。
+- NTM 公司收入四情景：悲观 `17.5-19.0 亿美元`；基准 `20.0-22.5 亿美元`；乐观 `22.5-25.5 亿美元`；极度乐观上限 `25.5-29.0 亿美元`。极度乐观不是当前预期，必须同时满足 SiPho 产能 qualification、1.6T 客户拉货、2027 合同前置确认、毛利率改善和无重大交付延误。
+- 利润或 EBITDA 四情景：悲观净利润约 `2.3-3.3 亿美元`；基准约 `3.6-5.0 亿美元`；乐观约 `5.2-7.0 亿美元`；极度乐观上限约 `6.5-8.2 亿美元`。EBITDA 以 FY2025 折旧摊销 `3.03 亿美元`和扩产折旧上行估算，非公司正式 NTM 指引。
+- 最大传导瓶颈：Tower 已经有强 B 级订单和预付款证据，但最大瓶颈从“有没有需求”转为“2026Q4 SiPho/SiGe 扩产安装、qualification、良率、客户验收和交付能否按时把 2027 合同转为收入”。
+- 最大利润率变量：SiPho/SiGe 高价值 mix、产能利用率、wafer-level optical test / fiber attach / EIC+PIC 良率、折旧吸收和客户价格条款。
+- 最大现金流变量：`2.90 亿美元`客户预付款提高短期现金流，但 `9.20 亿美元` SiPho/SiGe CapEx、Fab 7 300mm 扩张、潜在客户预付款兑现/追加和营运资本占用决定自由现金流质量。
+- 可信度：基准情景 `中高`，因为 Q1/Q2 指引、2027 SiPho 合同和预付款为 A/B 级证据；乐观 `中`，依赖订单前置和利润率扩张；极度乐观 `低到中`，很多条件仍属于 2027/2028 执行上限。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| RF Infrastructure / SiPho + SiGe 光互联 | Q1 2026 `1.57 亿美元`；Q4 2025 `1.41 亿美元`；2027 SiPho 合同 `13 亿美元` | Q1 2026 `38%` | 最大增量；1.6T 光模块、SiPho PIC、SiGe TIA/driver/EIC 是 AI 网络收入主线 | A/B：分部收入、Q2 指引、已签 2027 合同、`2.90 亿美元`预付款 | 进入基准；但只纳入 NTM 内能确认的部分，不把 2027 全年合同全部前置 | 2028 更高 commitment、CPO/NPO、3.2T、OCS、SOH/EOP、400G/lane |
+| Power Management / BCD / 700V / Gen3 LDMOS | Q1 2026 `0.70 亿美元` | Q1 2026 `17%` | 第二曲线；AI power wall 可提高高端 BCD/DrMOS/SPS 价值 | A/C：当前 Power 收入为 A；Gen3 BCD 和客户验证为 C | 当前 Power run-rate 进入基准；AI-specific 增量只小比例折扣纳入 | 高端 AI rack SPS/DrMOS 大规模 design win、vertical power delivery |
+| RF Mobile / RF-SOI / RF CMOS | Q1 2026 `0.66 亿美元` | Q1 2026 `16%` | 手机 RF 周期业务；现金和产能利用率重要，但 AI 弹性弱 | A：技术收入拆分 | 进入基准，按低增或持平处理 | 手机周期上行、300mm RF-SOI 转移 |
+| Sensors & Displays / CIS / MEMS | Q1 2026 `0.62 亿美元` | Q1 2026 `15%` | 稳定业务；CIS/wafer bonding know-how 对 CPO 有间接价值 | A/C：当前收入为 A，CPO 迁移为 C | 当前收入进入基准；CPO 迁移不进 NTM 基准 | BSI/wafer bonding、CPO 3D-IC、液冷/工业传感 |
+| Discrete + MS/CMOS/Misc. | Q1 2026 `0.58 亿美元`合计 | Q1 2026 `14%` | 传统成熟节点和低增长/下滑抵消项 | A：技术收入拆分 | 进入基准，但按低增长或下滑处理 | 无明显 NTM 远期期权，只作产能和利润率拖累/缓冲 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池和需求强弱，不评估 Tower 份额、收入确认、利润率或公司汇总。需求单位以最能解释产品的指标为主：SiPho/SiGe 用 1.6T 光模块/PIC/EIC wafer starts 和合同需求；Power 用 BCD/DrMOS/SPS design-in 与 AI rack 供电需求；传统 RF、Sensors、Discrete 用下游终端周期和当前出货节奏。所有“相对预期”均相对 Tower 当前 Q2 指引、2026 sequential growth 目标、Q1 2026 run-rate、2027 SiPho 合同和可见客户节奏。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| RF Infrastructure / SiPho + SiGe 光互联 | Q1 2026 RF Infrastructure `1.57 亿美元`；2027 SiPho 合同 `13 亿美元`；`2.90 亿美元`预付款；>50 active SiPho customers；2026Q4 目标 SiPho wafer starts capacity > Q4 2025 monthly shipment run-rate `5x` | 1.6T 客户拉货或 qualification 延迟 1-2 个季度；需求仍增长但低于当前合同转收入节奏 | 1.6T/800G 光模块、SiPho PIC 和 SiGe EIC 按当前客户 forecast 和 Q2-Q4 2026 sequential growth 正常兑现 | 客户 forecast 高于预付产能，2027 合同在 Q1 2027 更快起量，SiGe attach 率提升 | 2028 commitment 部分前置，NPO/CPO/3.2T 早期订单把 SiPho/SiGe 产能提前锁满 | 相对 Q1 annualized RF Infra `~6.3 亿美元`，NTM 需求暴露约 `7.5-15.5 亿美元`，但可确认收入需第二步折扣 | 基准符合当前预期；乐观高于当前预期；极度乐观为 NTM 上限 | 正向：NVIDIA 1.6T 合作、合同和预付款；反证：1.6T 认证推迟、光模块库存、客户二供、Tower 良率/交付延迟 |
+| Power Management / BCD / Gen3 LDMOS | Q1 2026 Power `0.70 亿美元`；Gen3 BCD 发布；AI rack power wall 提高 SPS/DrMOS/PMIC 需求 | AI rack 验收慢，BCD 价格回落，客户使用 IDM 或其他 foundry 二供 | 传统电源/工业/汽车维持，AI-specific 小比例 design-in，Power 收入温和增长 | 高端 SPS/DrMOS/POL 客户验证加速，AI-specific 收入开始可见 | AI rack power wall 迫使高端 BCD 供给紧张，多个客户把 Tower 作为主平台或强二供 | 相对 Q1 annualized `~2.8 亿美元`，NTM 需求暴露约 `2.5-5.5 亿美元` | 基准略高于当前 run-rate；乐观需客户/价格证据 | 正向：行业调研认为 BCD/Smart Power 是 2026 确定主线；反证：Tower 尚无类似 SiPho 的大额 AI Power 合同 |
+| RF Mobile / RF-SOI | Q1 2026 `0.66 亿美元`，低于 Q4 2025 `1.06 亿美元`，受手机周期和 mix 影响 | 手机 RF 需求继续低迷或价格竞争；客户库存修正 | 手机周期温和恢复，RF-SOI 维持低增长 | 手机端补库、300mm RF-SOI 转移和性能升级带来小幅超预期 | 手机周期强复苏，叠加 300mm 转移顺利 | NTM 需求暴露约 `2.2-3.6 亿美元` | 多数情景接近或略低于当前预期；不是 AI 上修来源 | 正向：现有客户和工艺平台；反证：手机周期、RF 前端价格压力、AI 弹性弱 |
+| Sensors & Displays / CIS / MEMS | Q1 2026 `0.62 亿美元`，Q1 2025 `0.61 亿美元`，稳定 | 消费/工业传感需求疲弱，显示和 CIS 项目递延 | 稳定出货，小幅受益工业/医疗/传感需求 | CIS/BSI/非成像传感和 MEMS 定制需求提升 | CPO/wafer bonding know-how 转化为早期高价值项目，但收入仍受认证约束 | NTM 需求暴露约 `2.2-3.6 亿美元` | 基准基本符合当前预期；极度乐观不应大量纳入 NTM | 正向：Tower 在 CIS/MEMS 和 wafer bonding 具积累；反证：AI 直接需求小、客户验证慢 |
+| Discrete + MS/CMOS/Misc. | Q1 2026 合计 `0.58 亿美元`，较 Q1 2025 `0.86 亿美元`明显下滑 | 传统成熟节点继续下行，价格和利用率承压 | 低位企稳或小幅下滑，作为抵消项 | 非核心 mature-node 需求改善，减少对公司增长拖累 | 周期恢复但仍不是主要增长引擎 | NTM 需求暴露约 `1.7-2.6 亿美元` | 基准低于公司整体增长预期；不支持 AI 叙事上修 | 正向：多厂产能和长期客户；反证：低增长、低毛利、产能再配置给高价值业务 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断需求能否在 NTM 内进入 Tower 收入表，以及当前可收入化基数；不预测最终增长，不判断利润率。A/B 级证据可进入基准；C 级只有客户、产品、时间表清楚时保守折扣；D/E 级不进基准。可参与需求不等于可确认收入，尤其不能把 AI 数据中心 CapEx、光模块 ASP、客户总预算或 2027/2028 合同全额提前当成 NTM 收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| RF Infrastructure / SiPho + SiGe 光互联 | Q1 2026 `1.57 亿美元`；Q2 指引由全公司支撑；2027 SiPho 合同 `13 亿美元`和预付款 `2.90 亿美元` | 直接 | 高价值 analog/photonic foundry；高利用率下增量毛利率高，但折旧和良率敏感 | `7.5-9.0 亿美元` | `9.0-11.5 亿美元` | `11.5-14.5 亿美元` | `13.0-15.5 亿美元` | 基准符合当前合同和 sequential growth 预期；乐观/极度乐观高于当前 NTM 预期 | A/B | 是 | 已披露技术收入、指引、合同、预付款、capacity reservation 和 2026Q4 qualification 目标 | NTM 主增量。2027 全年合同只按 Q1 2027 可确认部分进入主口径；2028 commitment 仅上限 |
+| Power Management / BCD / Gen3 LDMOS | Q1 2026 Power `0.70 亿美元`；Gen3 BCD/LDMOS 发布但未披露大额 AI 合同 | 直接 | 中高毛利潜力；AI-specific 早期收入可能高，但客户认证和二供压价明显 | `2.5-2.9 亿美元` | `3.0-3.6 亿美元` | `3.6-4.5 亿美元` | `4.5-5.5 亿美元` | 当前 run-rate 可进基准；AI power 上修高于当前预期 | A/C | 是，但 AI 增量折扣 | 当前 Power 收入是 A；Gen3 BCD、AI power wall 和客户验证是 C | 基准纳入现有 Power 业务和小幅 AI 贡献；大规模 AI Power 只在乐观/极度乐观 |
+| RF Mobile / RF-SOI | Q1 2026 `0.66 亿美元`；Q4 2025 `1.06 亿美元`显示季度波动 | 直接 | 成熟 RF-SOI，利润率取决于利用率和价格；AI 相关性弱 | `2.2-2.5 亿美元` | `2.5-2.9 亿美元` | `2.9-3.4 亿美元` | `3.2-3.6 亿美元` | 基准接近当前 run-rate，低于公司增长主线 | A | 是 | 已披露收入拆分 | 作为稳定或抵消项进入基准，不作为 AI 增量 |
+| Sensors & Displays / CIS / MEMS | Q1 2026 `0.62 亿美元` | 直接/间接 | 定制传感和 CIS 可有中等毛利；CPO 相关 know-how 是间接期权 | `2.2-2.5 亿美元` | `2.4-2.8 亿美元` | `2.8-3.4 亿美元` | `3.0-3.6 亿美元` | 基准基本符合当前预期；CPO 迁移不进基准 | A/C | 是 | 当前收入为 A；CPO/wafer bonding 迁移为 C | 基准按稳定收入处理，CPO 迁移仅作乐观辅助 |
+| Discrete + MS/CMOS/Misc. | Q1 2026 Discrete `0.41 亿美元`、MS/CMOS/Misc `0.17 亿美元`，合计 `0.58 亿美元` | 直接 | 较低增长、较弱定价；可能拉低平均毛利率 | `1.7-2.0 亿美元` | `2.0-2.4 亿美元` | `2.4-2.8 亿美元` | `2.8-3.2 亿美元` | 基准低于公司整体增长预期；不承接 AI 上修 | A | 是 | 已披露收入拆分 | 进入基准作为抵消项；不把普通成熟节点周期上行当成 AI 收入 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，评估每个重要业务线在 NTM 内能贡献的收入和利润。利润贡献以产品级毛利/经营贡献方向估算；Tower 未披露产品线毛利率，所有产品利润范围为基于公司毛利率、长期模型和行业利润属性的估算，不等于公司指引。各产品上沿不能简单相加，第四步会按共享客户预算、产能、良率、折旧和传统业务抵消项重新汇总。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| RF Infrastructure / SiPho + SiGe 光互联 | 悲观产品 | `7.5-9.0 亿美元` | 毛利约 `2.5-3.4 亿美元` | 高于公司平均但折旧吸收不足 | 低于当前 SiPho 合同转收入预期 | 已有 Q1 收入、合同和预付款，但交付延迟 | 保留为下行情景 | 1.6T 延迟、良率/验收、客户二供、光模块库存 |
+| RF Infrastructure / SiPho + SiGe 光互联 | 基准产品 | `9.0-11.5 亿美元` | 毛利约 `3.6-5.2 亿美元` | 明显上行 | 符合当前指引、合同和 2026 sequential growth | `13 亿美元` 2027 合同、`2.90 亿美元`预付款、Q2 指引、capacity expansion | 保留 | 2027 全年合同不能全部算入 Q2 2026-Q1 2027 |
+| RF Infrastructure / SiPho + SiGe 光互联 | 乐观产品 | `11.5-14.5 亿美元` | 毛利约 `5.2-7.5 亿美元` | 高价值 mix 与利用率同步上行 | 高于当前 NTM 预期 | 客户 forecast 高于预付容量，>50 active customers，>70% capacity reserved/in-process | 保留但需 Q3/Q4 2026 证据 | 谁买、何时确认和是否前置仍需季度验证 |
+| RF Infrastructure / SiPho + SiGe 光互联 | 极度乐观产品 | `13.0-15.5 亿美元` | 毛利约 `6.8-9.0 亿美元` | 接近长期模型增量毛利率 | 只代表上限 | 2028 更高 commitment、CPO/NPO 可能小批、Fab7 300mm 路径 | 下移为上限，不作为主预测 | 2028 commitment 未必在 NTM 内确认，CPO/NPO 仍早 |
+| Power Management / BCD / Gen3 LDMOS | 悲观产品 | `2.5-2.9 亿美元` | 毛利约 `0.6-0.9 亿美元` | 持平或略降 | 低于当前 Power 稳定预期 | 当前 Power 收入可见，但 AI-specific 订单不硬 | 保留 | AI rack 验收慢、BCD 价格回落、客户使用 IDM/其他 foundry |
+| Power Management / BCD / Gen3 LDMOS | 基准产品 | `3.0-3.6 亿美元` | 毛利约 `0.9-1.3 亿美元` | 小幅上行 | 符合当前 run-rate 加小幅 AI design-in | Q1 Power `0.70 亿美元`；Gen3 BCD 发布；行业 BCD/PMIC 需求较强 | 保留 | C 级机会折扣纳入，不能把 TAM 当收入 |
+| Power Management / BCD / Gen3 LDMOS | 乐观产品 | `3.6-4.5 亿美元` | 毛利约 `1.2-1.8 亿美元` | 上行 | 高于当前预期 | SPS/DrMOS/POL 客户量产、Power segment 增速明显高于公司均值 | 保留但证据中等 | 无大额合同，竞争者多，二供压价 |
+| Power Management / BCD / Gen3 LDMOS | 极度乐观产品 | `4.5-5.5 亿美元` | 毛利约 `1.8-2.7 亿美元` | 大幅上行 | 上限 | AI rack power wall 强化，高端 BCD 供给紧张，客户把 Tower 作为主平台 | 下移为乐观上限 | NTM 客户、产品、价格和确认节奏未充分披露 |
+| RF Mobile / RF-SOI | 悲观产品 | `2.2-2.5 亿美元` | 毛利约 `0.4-0.7 亿美元` | 下行 | 低于当前 run-rate | Q1 已低于 Q4，高波动 | 保留 | 手机 RF 周期弱、价格竞争、库存 |
+| RF Mobile / RF-SOI | 基准产品 | `2.5-2.9 亿美元` | 毛利约 `0.6-0.9 亿美元` | 持平 | 符合当前预期 | Q1 收入可见，工艺成熟 | 保留 | AI 直接拉动弱 |
+| RF Mobile / RF-SOI | 乐观产品 | `2.9-3.4 亿美元` | 毛利约 `0.8-1.2 亿美元` | 小幅上行 | 高于当前 RF Mobile 预期 | 手机补库、300mm 转移 | 保留为非核心上修 | 不能与 SiPho 产能抢占重复计算 |
+| RF Mobile / RF-SOI | 极度乐观产品 | `3.2-3.6 亿美元` | 毛利约 `1.0-1.4 亿美元` | 上行有限 | 上限 | 手机周期强复苏 | 仅作跟踪 | 非 AI 主线，不能支撑公司极度乐观 |
+| Sensors & Displays / CIS / MEMS | 悲观产品 | `2.2-2.5 亿美元` | 毛利约 `0.5-0.8 亿美元` | 持平或略降 | 低于稳定预期 | Q1 收入持平但缺新增硬订单 | 保留 | 消费/工业传感疲弱 |
+| Sensors & Displays / CIS / MEMS | 基准产品 | `2.4-2.8 亿美元` | 毛利约 `0.6-1.0 亿美元` | 持平 | 符合当前预期 | CIS/MEMS 定制客户和当前收入 | 保留 | CPO 迁移不进入基准 |
+| Sensors & Displays / CIS / MEMS | 乐观产品 | `2.8-3.4 亿美元` | 毛利约 `0.9-1.3 亿美元` | 小幅上行 | 高于当前预期 | 工业/医疗/定制传感恢复，wafer bonding 项目 | 保留但权重低 | AI 直接收入小 |
+| Sensors & Displays / CIS / MEMS | 极度乐观产品 | `3.0-3.6 亿美元` | 毛利约 `1.1-1.6 亿美元` | 上行 | 上限 | CPO 3D-IC/wafer bonding 迁移 | 移入附录 | NTM 可确认收入路径不足 |
+| Discrete + MS/CMOS/Misc. | 悲观产品 | `1.7-2.0 亿美元` | 毛利约 `0.2-0.4 亿美元` | 下行 | 低于当前预期 | Q1 2026 已明显下滑 | 保留 | 传统成熟节点价格、低利用率 |
+| Discrete + MS/CMOS/Misc. | 基准产品 | `2.0-2.4 亿美元` | 毛利约 `0.3-0.6 亿美元` | 低位稳定 | 符合抵消项预期 | 已披露收入 | 保留 | 不应上修为 AI 收入 |
+| Discrete + MS/CMOS/Misc. | 乐观产品 | `2.4-2.8 亿美元` | 毛利约 `0.5-0.7 亿美元` | 小幅改善 | 略高于当前预期 | mature-node 周期企稳 | 保留但权重低 | 毛利率弱于 SiPho/Power |
+| Discrete + MS/CMOS/Misc. | 极度乐观产品 | `2.8-3.2 亿美元` | 毛利约 `0.6-0.9 亿美元` | 改善有限 | 不支持公司极度乐观 | 周期改善 | 仅作跟踪 | 低毛利 pass-through 或产能机会成本 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为 Tower NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。汇总时扣除产品上沿不可同时成立、同一 AI optical 客户预算不能重复算作 SiPho 和 SiGe 两次、2027 全年合同不能全部前置到 NTM、传统业务和折旧会抵消高增长业务。第一个表为公司收入和利润四情景，不讨论市场定价。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `17.5-19.0 亿美元` | 较 2025 收入 `15.66 亿美元`约 `+12%-21%`；较 Q2 指引 annualized `18.2 亿美元`基本持平到小幅增长 | 低于公司 sequential growth 目标和 SiPho 合同转收入预期 | `24%-27%` | `12%-16%` | EBITDA 约 `5.2-6.6 亿美元`；净利润约 `2.3-3.3 亿美元` | 含预付款可能为正；剔除新增预付款后接近中性或偏弱，CapEx 压力大 | 中 | SiPho qualification/客户验收延迟、折旧先行、传统业务抵消 |
+| 基准公司 | `20.0-22.5 亿美元` | 较 2025 约 `+28%-44%`；较 Q2 指引 annualized 约 `+10%-24%` | 符合 Q2 指引、2026 每季增长目标和 2027 合同开始转收入 | `28%-33%` | `17%-22%` | EBITDA 约 `6.8-8.8 亿美元`；净利润约 `3.6-5.0 亿美元` | 含预付款为正；剔除预付款后温和正到中性，取决于 Q3-Q4 CapEx | 中高 | 2026Q4 扩产安装和 qualification、SiPho/SiGe 良率、Q1 2027 合同确认节奏 |
+| 乐观公司 | `22.5-25.5 亿美元` | 较 2025 约 `+44%-63%` | 高于当前 NTM 预期，但由 SiPho/SiGe、Power 和毛利率共同支持，不只是小项目 | `33%-38%` | `23%-29%` | EBITDA 约 `8.8-11.2 亿美元`；净利润约 `5.2-7.0 亿美元` | 大概率为正；若客户继续预付款和营运资本受控，FCF 质量改善 | 中 | 高利用率和高良率必须同步，Power/BCD 需从 C 级证据转成订单/收入 |
+| 极度乐观公司 | `25.5-29.0 亿美元` | 较 2025 约 `+63%-85%` | 显著高于当前预期；只作为上限，不是基准 | `37%-42%` | `29%-34%` | EBITDA 约 `11.0-13.5 亿美元`；净利润约 `6.5-8.2 亿美元` | 若追加预付款和高利用率成立则强正；若同时追加 CapEx，FCF 仍可能滞后利润 | 低到中 | 2028 commitment 前置、CPO/NPO 早期收入、Power AI 客户量产、Fab7/300mm 和多厂供给同时顺利 |
+
+汇总校验：
+
+- 基准收入 `20.0-22.5 亿美元`不是把 `2027 SiPho 13 亿美元`全额并入 NTM，而是把 Q2-Q4 2026 sequential growth 与 Q1 2027 合同初始确认合并。
+- 极度乐观上限接近或略高于管理层 2028 built-out revenue model `28.40 亿美元`，因此必须被视为“需求、公司捕获、利润质量和执行质量同时突破”的上限情景。
+- 毛利率由 Q1 2026 `26.8%`向长期模型 `39.4%`移动，但基准不直接使用长期模型；只有乐观/极度乐观允许明显靠近长期模型。
+- EBITDA 为估算：FY2025 折旧摊销约 `3.03 亿美元`，NTM 因 `9.20 亿美元`扩产折旧上升，本文用经营利润加 `3.3-3.8 亿美元`折旧摊销估算，不作为公司正式指引。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只对前四步情景做校准。校准动作只能使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在实际影响层级处理一次：1.6T 需求延迟属于需求/产品层，收入确认属于第二/第三步，折旧和利用率属于第三/第四步，证据强弱属于第五步。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 收入 `4.136 亿美元`、Q2 指引 `4.55 亿美元 +/-5%`、2026 每季收入和 margin growth 目标 | 公司汇总、产品基准 | 支撑 NTM 基准从 Q1 annualized `16.55 亿美元`上移到 `20.0-22.5 亿美元` | Q1 毛利率 `26.8%`为基准改善起点 | 指引验证了近期需求，但仍需 Q2-Q4 执行 | 保留 |
+| 2027 SiPho 合同 `13 亿美元`、客户预付款 `2.90 亿美元`、2028 更高 wafer commitment | 收入基数、产品贡献、执行可信度 | 大幅提高 SiPho 可收入化暴露；但 2027 全年不能全部进入 Q2 2026-Q1 2027 | 若高利用率兑现，增量毛利率显著高于公司平均 | 预付款改善现金流，也形成交付义务 | 保留 |
+| `9.20 亿美元` SiPho/SiGe CapEx，目标 2026Q4 完成安装和 qualification，2027 full starts | 产品贡献、公司利润、执行可信度 | 扩产成功支撑基准和乐观；延迟则把乐观下移 | 折旧先行会压低悲观和部分基准利润率 | 设备安装、供应商到场、良率和客户 qualification 是最大执行变量 | 保留 |
+| Q1 2026 RF Infrastructure 占比 `38%`，较 Q1 2025 `22%`显著提升 | 需求、产品贡献、公司组合 | 证明 AI optical 已进入收入表，不是纯主题 | Mix 改善支撑毛利率上行 | 若 Q2-Q4 占比继续升，可信度提高 | 保留 |
+| Power/BCD Gen3 LDMOS 对准 AI power wall，但缺少大额客户合同 | 收入基数、产品贡献 | 当前 Power run-rate 进入基准；AI-specific 上修不能大量纳入基准 | 有利润率潜力，但竞争和二供压价强 | 客户板级验证和可靠性周期影响确认 | 下移 |
+| RF Mobile、Sensors、Discrete/Misc 的成熟周期和低增长抵消 | 公司组合 | 限制公司整体收入上沿，避免把所有业务按 SiPho 估值/增速处理 | 低毛利或低利用率业务拖累平均利润率 | 产能再配置可能改善，但也可能造成过渡成本 | 保留 |
+| SEC 20-F 风险：limited backlog、客户取消/降价、AI 需求波动、设备安装/qualification 延迟、地缘和供应商到场、Intel corridor mediation | 证据可信度、执行 | 不直接重复下调所有收入，只限制对应环节 | 影响利用率、折旧吸收、价格和潜在减值 | 若供应商无法安装或客户需求下滑，预付款也会变成交付压力 | 保留 |
+| Fab7 300mm full ownership 计划 2027-04-01 close，300mm SiPh/Power 扩张路径 | 远期期权、执行 | 对 Q2 2026-Q1 2027 主口径贡献有限，对 Q2 2027 以后更重要 | 长期可改善规模和成本，NTM 仍有迁移成本 | 监管、交易、客户迁移和 METI 相关事项需跟踪 | 移入附录 |
+| CPO/NPO、SOH/EOP、DWDM laser、400G/lane | 需求上限、远期期权 | NTM 可能有样品/小批，但缺少足够收入确认路径 | 若成功，长期毛利高；NTM 不应大幅贡献 | 认证、封装、现场维护和客户平台选择未定 | 移入附录 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 需求仍增长，但收入确认、良率、价格或传统业务抵消导致 NTM 低于当前预期 | Q2 指引仍强，SiPho 合同和预付款降低完全失速概率 | SEC 提示 limited backlog、AI 需求和价格波动、设备/qualification 延迟；1.6T 或客户验收推迟 | 保留 | 悲观公司情景，收入 `17.5-19.0 亿美元`，利润率低于基准 | 中 | 1.6T 延迟只在需求和收入确认层处理，不再在公司汇总重复下砍 |
+| 基准 | Q2 指引兑现，2026Q3-Q4 继续增长，Q1 2027 开始吸收部分 SiPho 合同 | A/B 级证据强：已披露收入、Q2 指引、2027 合同、预付款、capacity reservation | 2027 全年合同不等于 NTM 全额收入；Power AI-specific 证据弱；折旧先行 | 保留 | 主情景，收入 `20.0-22.5 亿美元`，净利润 `3.6-5.0 亿美元` | 中高 | CapEx 折旧只在利润率层处理，不再同时作为需求风险 |
+| 乐观 | 1.6T demand、SiPho/SiGe 份额、良率、价格/mix 和 Power/BCD 至少一项显著好于当前预期 | 客户预付款、>50 active SiPho customers、>70% capacity reserved/in-process、行业 SiPh/BCD 强需求 | 客户二供、CPO/NPO 仍早、Power 缺硬合同 | 保留 | 乐观公司情景，收入 `22.5-25.5 亿美元`，净利润 `5.2-7.0 亿美元` | 中 | 客户二供风险只限制 SiPho 份额，不重复惩罚 Power/RF Mobile |
+| 极度乐观 | 2028 commitment 部分前置，SiPho/SiGe 高利用率，CPO/NPO/Power 同时突破 | 2028 contract commitment 更高、Fab7 300mm 路径、NVIDIA 1.6T 生态、长期模型收入 `28.40 亿美元`/净利 `7.50 亿美元` | NTM 时间表不足；CPO/SOH/EOP 多数仍为样品或早期认证；Fab7 close 在 2027-04 后 | 下移 | 仅保留为极度乐观上限；CPO/SOH/EOP 和 Fab7 大规模扩张移入附录 | 低到中 | 远期期权缺证据只下移极度乐观，不影响 A/B 级 SiPho 基准 |
+
+## 8. 结论
+
+- 最可能情景：基准。Tower 的 NTM 经营主线不是“普通成熟节点全面复苏”，而是 `SiPho/SiGe 光互联`把 Q1/Q2 的收入和利润率台阶延续到 2027Q1。主口径 NTM 收入结论为 `20.0-22.5 亿美元`，较 2025 收入 `15.66 亿美元`增长约 `28%-44%`；净利润结论约 `3.6-5.0 亿美元`，毛利率从 Q1 2026 `26.8%`向 `28%-33%`移动。
+- 利润/现金流结论：利润质量取决于高价值 SiPho/SiGe mix 是否足以覆盖折旧和 qualification 成本。含客户预付款的现金流质量较好；剔除新增预付款后，基准 FCF 可能只是温和正到中性，因为 `9.20 亿美元`扩产仍在消耗现金。
+- 主要传导瓶颈：外部需求不是最大问题，收入确认和执行才是。关键链条是 `1.6T/AI optical 需求 -> 客户合同/预付款 -> SiPho/SiGe 设备安装和 qualification -> wafer starts -> 良率/验收 -> 收入确认 -> 高利用率毛利率改善`。
+- 乐观情景成立条件：Q2 2026 达到或超过 `4.55 亿美元`中点；Q3/Q4 继续 sequential growth；RF Infrastructure 单季金额持续上行；新增或追加客户预付款；毛利率突破 `30%`并稳定；Power/BCD 出现明确 AI 客户量产或订单。
+- 极度乐观情景成立条件：2026Q4 SiPho/SiGe 扩产按期完成，Q1 2027 的 2027 合同确认明显前置；2028 commitment 部分提前转成 NTM wafer starts；CPO/NPO 或 3.2T 出现可量化收入；Power AI-specific 收入年化明显超过 `1 亿美元`；毛利率向 `37%-42%`跃升。
+- 悲观情景触发条件：Q2 2026 低于指引低端或 Q3/Q4 停止 sequential growth；RF Infrastructure 占比回落；SiPho 客户预付款未追加或出现延期；设备安装/qualification 延迟；1.6T 客户库存或光模块 ASP 连续恶化；毛利率被折旧和低利用率压回 `24%-27%`。
+- 后续跟踪数据：Q2 2026 实际收入和毛利率；RF Infrastructure 金额和占比；客户预付款、deferred revenue 和 long-term advances；SiPho/SiGe CapEx installation/qualification 状态；Fab7 300mm restructuring 进度；Power/BCD AI design win；2028 commitment 额外预付款是否按期；1.6T 光模块库存/ASP/客户验收；SEC 风险中供应商到场、地缘和 Intel corridor mediation 更新。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务和经营数据以 Tower 2026-05-13 Q1 2026 financial results、Q1 supporting slides、2026-02-11 Q4/FY2025 results、2026 Form 20-F 为主；本报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Tower Q1 2026 financial results：Q1 收入 `4.136 亿美元`、毛利 `1.1095 亿美元`、经营利润 `0.6456 亿美元`、净利润 attributable `0.6503 亿美元`、Q2 指引 `4.55 亿美元 +/-5%`、客户预付款和经营现金流。https://towersemi.com/2026/05/13/05132026/
+  - Tower Q1 2026 supporting slides：技术收入拆分、资产负债表、P&L、长期 built-out financial model。https://towersemi.com/wp-content/uploads/2026/05/TSEM_Q12026_IRCALL_SLIDES_FF.pdf
+  - Tower SiPho customer contracts press release：2027 SiPho revenue contracts `13 亿美元`、`2.90 亿美元`客户预付款、2028 更高 wafer commitment。https://ir.towersemi.com/news-releases/news-release-details/tower-semiconductor-signs-customer-contracts-13-billion-silicon
+  - Tower Q4/FY2025 results：FY2025 收入 `15.66 亿美元`、Q4 收入 `4.402 亿美元`、`9.20 亿美元` SiPho/SiGe CapEx、2026Q4 qualification 和 2027 full starts。https://towersemi.com/2026/02/11/02112026/
+  - Tower 2026 Form 20-F / SEC：Fab、Fab7/Fab5 restructuring、CapEx、limited backlog、客户取消/降价、AI 需求波动、设备安装/qualification、地缘和 Intel corridor mediation 风险。https://www.sec.gov/Archives/edgar/data/928876/000117891326002318/zk2635149.htm
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 补充：公司只给 Q2 指引和 2026 sequential growth 目标，未给 FY2026 全年正式收入指引；本文不把 FY2026 当主表口径。
+  - FY2027 补充：`13 亿美元` SiPho 是 2027 年收入合同，不等于 Q2 2026-Q1 2027 NTM 全额收入；本文只把 Q1 2027 可确认部分纳入主口径。
+  - 长期模型补充：公司 built-out capacity model 为收入 `28.40 亿美元`、gross profit `11.20 亿美元`、operating profit `9.00 亿美元`、net profit `7.50 亿美元`，基于 85% utilization 和 `9.20 亿美元` SiGe/SiPho CapEx，不含 Intel Fab11 corridor；本文只作为极度乐观上限和利润率校准，不作为 NTM 基准。
+  - 远期期权：2028 更高 wafer commitment、Fab7 300mm full ownership 后扩张、CPO/NPO、DWDM laser、SOH/EOP、400G/lane、OCS 和更深度 SiPho+SiGe wafer bonding。
+- 主要来源：
+  - 本地公司资料：`公司调研/晶圆制造_前道设备/TSEM_Tower Semiconductor_公司调研_2026-06-11.md`
+  - 本地行业资料：`行业调研/晶圆制造_设备_材料_测试/行业调研_特种晶圆代工_2026-06-11.md`
+  - 本地行业资料：`行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-06-11.md`
+  - Tower + NVIDIA 1.6T optical modules：说明 Tower SiPho 用于 NVIDIA networking protocols 相关 1.6T data-center optical modules。https://towersemi.com/2026/02/05/02052026/
+  - Tower Gen3 BCD/LDMOS for AI power wall：说明 Power/BCD 是 AI power wall 的合理第二曲线，但尚需客户收入证据。https://towersemi.com/2026/03/17/03172026/
+  - Tower 300mm Japan restructuring：Fab7 300mm full ownership 计划和 2027-04-01 close 目标。https://towersemi.com/2026/03/25/03252026_300mm/
+  - Tower 300mm SiPh standard foundry offering：200mm PH18 高量产与 300mm SiPh 路径。https://towersemi.com/2024/11/26/11262024/
+  - Tower Silicon Photonics technology page：SiPho open platform、200mm/300mm fabs、SiGe complement、PDK、wafer-level optical testing 和 3D-IC hybrid wafer-bonding option。https://towersemi.com/technology/rf-and-hpa/silicon-photonics-rf/

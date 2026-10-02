@@ -1,0 +1,168 @@
+# 公司收入传导与价值传导评估：Alpha and Omega Semiconductor（AOSL）
+
+报告日期：2026-06-12（America/Los_Angeles）  
+主口径：NTM，即从 2026-06-12 起未来 12 个月，主要覆盖 FY2026 Q4、FY2027 Q1-Q3。  
+资料边界：使用 `公司调研/` 与 `行业调研/`，并补充 AOSL 官方 IR、SEC、公司产品公告；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较。  
+货币单位：美元。表内区间为经营估算；无法从收入表、订单或客户项目可靠拆分时，标注“无法可靠量化”。  
+重要限制：本文只评估收入、利润、现金流和经营质量传导，不给投资评级，不判断股价区间，不做估值倍数判断，不把金融市场价格作为经营证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM。AOSL 的 NTM 经营锚点不是 800VDC 全面放量，而是 FY2026 Q4 指引、FY2026 Q3 run-rate、Advanced Computing 的中压 MOSFET/IBC/hot-swap、Power IC/DrMOS/SPS、手机电池保护和传统 Consumer/Power Supply & Industrial 的抵消项。FY2027、800VDC、SiC/GaN、长期 `$1B+` 收入潜力只作补充口径或远期期权。
+- 当前收入基准、指引和 run-rate：FY2026 Q3 收入 `$163.8M`，环比 `+0.9%`、同比 `-0.5%`；FY2026 前三季收入 `$508.6M`，同比 `-2.1%`；FY2026 Q4 公司指引收入 `$168M +/- $10M`，GAAP GM `22.3% +/-1%`、non-GAAP GM `23.0% +/-1%`。以 Q3 和 Q4 指引中点看，当前年化收入 run-rate 约 `$655-672M`，TTM 收入约 `$685M`。
+- 重要产品/业务线：1）Advanced Computing 中压 MOSFET / 48V-54V IBC / hot-swap；2）AI Core Power、DrMOS/SPS、多相控制器和 Power IC；3）PC/AI notebook total power solution；4）Communications 中高端手机电池保护与充电路径；5）Power Supply & Industrial，包括 DC fans、quick chargers、e-mobility、IPM/BLDC；6）Consumer/gaming/home appliances/wearables；7）SiC/GaN/800VDC 远期期权。
+- NTM 公司收入四情景：悲观 `$630-680M`；基准 `$710-760M`；乐观 `$790-880M`；极度乐观 `$950M-1.10B`。相对当前预期，基准代表 Q4 指引兑现后温和恢复；乐观需要 Advanced Computing 连续上行并且 Power IC mix 修复；极度乐观需要 AI power socket、Power IC、手机/PC、工业和早期 800VDC 同时突破。
+- 利润或 EBITDA 四情景：悲观 GAAP GM `20-22%`、经营利润率 `-10%` 至 `-5%`；基准 GM `22.5-24.5%`、经营利润率 `-5%` 至 `-1%`；乐观 GM `25-28%`、经营利润率 `0-5%`；极度乐观 GM `28-32%`、经营利润率 `6-11%`。AOSL 的利润传导比收入传导更脆弱，因为通用 MOSFET、低利用率、库存和 R&D/SG&A 固定费用会吞噬一部分增长。
+- 最大传导瓶颈：Advanced Computing 已有约 `$20M/季度`收入锚，但仍需证明不是一次性项目拉货；公司没有披露总 backlog、book-to-bill、客户名或平台级订单金额，且 Customer B 收入占比超过 50%，渠道和大客户节奏会放大波动。
+- 最大利润率变量：Power IC/DrMOS/SPS/controller 占比是否从 FY2026 Q3 的低位恢复；中压 MOSFET 是否停留在可替代离散件，还是进入高 SOA、热插拔、IBC、controller/power stage 组合方案；库存天数和利用率能否改善。
+- 最大现金流变量：FY2026 前三季经营现金流 `-$6.3M`、库存 `$199.0M`，采购承诺 `$57.2M`、资本承诺 `$14.8M`。若收入增长需要继续堆库存和 capex，FCF 修复会滞后利润表。
+- 可信度：公司基准情景为“中高”；产品级 Advanced Computing 与 Communications 为“中高”；Power IC 为“中”；SiC/GaN/800VDC NTM 收入为“低”。最可能情景是基准偏乐观，但不是极度乐观。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Advanced Computing 中压 MOSFET / IBC / hot-swap | FY2026 Q3 约 `$20.1M/季`，年化约 `$80M` | Q3 总收入约 `12.3%`；Computing 的 `25%` | NTM 最大增量产品，连接 AI server、GPU、CPU/inference、ODM/hyperscaler build phase | A/B | 进入基准；基准按 `$95-125M` NTM 收入处理，乐观上修到 `$140-180M` | 2027 Rubin/更高压平台使中压向 HV IBC 扩展 |
+| AI Core Power / DrMOS / SPS / 多相控制器 / Power IC | FY2026 Q3 Power IC 总收入 `$46.9M/季`，Q1 曾达 `$72.7M/季` | Q3 产品收入约 `28.6%`，但 AI server 份额未披露 | 利润率和产品结构修复核心；若进入 AI server core rail，利润弹性高 | A for Power IC revenue；C/D for specific AI server sockets | 基准只纳入已披露 Power IC run-rate 的保守恢复；AI server 新 socket 多放在乐观 | OVR16/OVR4-22、SmartClamp DrMOS、SPS 若批量进入 AI accelerator/server |
+| PC / AI notebook total power solution | Computing 去除 Advanced Computing 后约 `$60.3M/季` | Q3 总收入约 `36.8%` | 大基数，PC 需求弱但 Panther/Wildcat Lake BOM content 可抵消 | A/C | 进入基准；按当前 PC/AI notebook 平台正常换代处理 | AI PC 换机周期强于预期 |
+| Communications：Tier One U.S. smartphone 电池保护 / 充电路径 | FY2026 Q3 `$33.7M/季` | Q3 总收入 `20.6%` | 非 AI 现金流支柱，Q3 同比 `+18.7%` | A/B | 进入基准；基准按 premium smartphone cycle 和 BOM content 温和增长 | 高端机 charging current、保护内容量提升 |
+| Power Supply & Industrial：quick charger、DC fan、e-mobility、IPM/BLDC | FY2026 Q3 `$28.5M/季` | Q3 总收入 `17.4%` | 当前拖累项，但 DC fans 和 India e-mobility backlog 可修复 | A/C | 进入基准但保守；传统 solar/power tools/home appliance 弱项不外推 | 数据中心风扇、e-mobility、IPM5 India 扩产 |
+| Consumer：gaming、home appliances、wearables | FY2026 Q3 `$19.3M/季` | Q3 总收入 `11.8%` | 主要是抵消项；gaming/home appliance 弱，wearables 较好 | A/C | 进入基准，按 flat 到小幅恢复处理 | 下一代 gaming 平台更偏 2028，不进 NTM 基准 |
+| SiC/GaN/800VDC / 高压 AC-DC / HV IBC | 当前收入无法可靠量化；公开材料以展示、产品发布、reference/design-in 为主 | 无法可靠量化；估计低个位数到低双位数收入占比 | 可能改变长期利润结构，但 NTM 证据不足 | C/D | 不进入 NTM 基准独立收入；乐观小额纳入，极度乐观作为上限 | 2027 800VDC、Rubin/MI400/1MW rack、AI factory 高压架构 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只看外部需求池，不判断 AOSL 份额、收入确认或利润率。需求锚点来自行业资料、AOSL 管理层表述和当前出货节奏。相对预期的“当前预期”以 FY2026 Q4 指引、Q3 run-rate、管理层对 Q2/Q3 底部和 Advanced Computing sequential growth 的表述为锚。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Advanced Computing 中压 MOSFET / IBC / hot-swap | 行业 2026 主线是 48V/54V 机架供电、IBC、hot-swap、VR/TLVR；AOSL Q3 Advanced Computing 约 `$20M/季`，公司称中压 MOSFET 进入 ODM/hyperscaler build phase | AI rack 或 IBC 项目被客户验收/液冷/内存供给拖延；需求回落到 `$15-18M/季` 附近 | 48V/54V IBC 和 hot-swap 继续随 GB300、inference server、CPU/GPU 平台上行，需求维持 `$22-30M/季` | 多个 ODM/hyperscaler 平台同时放量，需求到 `$35-45M/季` | AOSL 所在中压 MOSFET/保护件出现结构性短缺，需求到 `$50M+/季` | NTM 需求池从当前约 `$80M`年化向 `$95-180M+`区间迁移 | 基准略高于当前；乐观显著高于当前；极度乐观需多平台同时成立 | 正向：Q3 Advanced Computing 环比超过翻倍、同比超过 40%；行业 48V/50V 为 2026 现实主线。反证：AOSL 未披露客户名和 backlog 金额，且全公司库存偏高 |
+| AI Core Power / DrMOS / SPS / Power IC | AI xPU 近负载供电、DrMOS/SPS、控制器需求高；AOSL Power IC Q3 `$46.9M`，低于 Q1 `$72.7M` | AI server/core power socket 未形成，公司 Power IC 继续在 `$45-50M/季`徘徊 | PC/AI notebook、graphics、部分 AI compute Power IC 正常恢复到 `$50-60M/季` | SmartClamp DrMOS/SPS/controller design wins 增多，恢复到 `$60-70M/季` | 进入更多 AI server accelerator core rail，Power IC 回到 `$70M+/季`并维持 | NTM Power IC 需求从约 `$190M` run-rate 到 `$220-300M+` | 基准符合恢复预期；乐观需要明确设计胜出 | 正向：AOSL 发布 OVR16/OVR4-22 controller、SmartClamp DrMOS、SPS，产品指向 AI data center。反证：竞争对手 MPS/Infineon/TI/Renesas 强，AOSL 未量化 AI server socket |
+| PC / AI notebook total power solution | PC 大盘低增，memory price 可能压制需求；Panther/Wildcat Lake 平台量产带来 BOM content 机会 | 内存涨价和 PC pull-in 反转使需求低于 Q3 run-rate | PC/AI notebook 平台换代正常，需求稳定到小幅增长 | Intel 平台出货和 AOSL content 提升，需求高于 PC 大盘 | AI PC 换机周期提前，OEM/ODM 采用显著扩展 | NTM 从约 `$240M` run-rate 到 `$220-300M` | 基准接近当前，乐观为内容量驱动 | 正向：Panther/Wildcat Lake total power solution 已宣布量产。反证：PC 终端需求和内存成本是外部压制 |
+| Communications：smartphone battery protection | Q3 Communications `$33.7M`，同比 `+18.7%`；Tier One U.S. smartphone 和 premium models 驱动 | 高端手机周期弱于预期，或中国需求继续弱，需求回到 `$28-32M/季` | Premium smartphone 正常季节性，BOM content 维持，需求 `$32-38M/季` | Charging current 和 protection content 增加，需求 `$40-45M/季` | 新平台 AOSL content/份额同步提升，需求 `$48M+/季` | NTM 约 `$120-180M+` | 基准符合当前，乐观需高端机强周期和份额提升 | 正向：Q3 强于预期，客户和 BOM content 清楚。反证：客户集中、单一手机周期、产能 allocation |
+| Power Supply & Industrial / DC fan / e-mobility / IPM | Q3 `$28.5M`，同比 `-13.1%`，但 quick chargers、DC fans、India e-mobility backlog 有支撑 | Solar/power tools/home appliances 弱，e-mobility backlog 延后，需求 `$23-27M/季` | 传统弱项企稳，DC fans/quick chargers/e-mobility 小幅修复，需求 `$28-33M/季` | 数据中心风扇、India e-mobility、IPM5 产能更快转收入，需求 `$35-40M/季` | AI infrastructure fan/power supply 与 e-mobility 同时上修，需求 `$45M+/季` | NTM 约 `$100-160M+` | 基准是修复，不是强增长 | 正向：数据中心 DC fans、IPM5 India production、e-mobility backlog。反证：传统工业和 power tools 仍弱 |
+| Consumer / gaming / home appliance / wearables | Q3 `$19.3M`，同比 `-9.8%`；wearables 好，gaming/home appliances 弱 | Gaming/current console cycle 继续弱，home appliances 不恢复，需求 `$16-18M/季` | Consumer 持平到温和恢复，需求 `$19-21M/季` | Wearables 和 gaming replenishment 改善，需求 `$23-26M/季` | 下一代 gaming 平台提前，需求 `$28M+/季` | NTM 约 `$70-100M+` | 基准接近当前，极度乐观不应进入 NTM 基准 | 正向：wearables share gain。反证：公司称下一代 gaming 更大影响在 2028 |
+| SiC/GaN/800VDC / HV IBC | 行业 2026 为 800VDC design-in/样机/小批量，2027 才开始第一批规模收入；AOSL 展示 SiC/GaN/800VDC 产品 | 需求停留展会和客户评估，NTM 可确认需求很小 | 作为客户验证和小额样品/早期设计需求，不形成主收入池 | 1-2 个 AI data center AC/DC、HV IBC 或 sidecar design-in 带来小额 NTM 需求 | Rubin/MI400/1MW rack 提前冻结，800VDC 相关需求非线性上修 | 当前无法可靠量化；NTM 基准按 `$0-10M`可确认收入上限处理 | 基准低于题材热度；乐观才计入小额收入 | 正向：行业路径和 AOSL 产品发布。反证：无客户名、无订单金额、800VDC 标准/安全/运维仍慢 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断外部需求中哪些能进入 AOSL NTM 收入表，以及当前可收入化基数，不预测增长、不判断利润率。证据等级按收入表可确认性划分：A 为收入表/指引，B 为订单/backlog/正式项目，C 为 design win/客户认证/产能规划，D 为产品发布/样品/测试，E 为主题相关。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Advanced Computing 中压 MOSFET / IBC / hot-swap | FY2026 Q3 Computing `$80.4M`，Advanced Computing 为 Computing `25%`，约 `$20.1M/季`；管理层称中压 MOSFET 用于 IBC/hot-swap 并进入 ODM/hyperscaler build phase | 直接 | DMOS/advanced package，毛利高于通用 MOSFET但低于高端 controller；认证件有溢价 | `$70-85M` | `$95-125M` | `$140-180M` | `$220-260M` | 基准略高于 Q3 run-rate，乐观高于当前预期 | A/B | 是 | 已披露季度金额，且有 build phase 和 backlog wording，但无订单金额 | NTM 基准纳入；极度乐观仅作上限，需连续季度验证 |
+| AI Core Power / DrMOS / SPS / Power IC | FY2026 Q3 Power IC `$46.9M/季`，Q2 `$58.8M`，Q1 `$72.7M`；AI server/DrMOS 具体收入未披露 | 直接 | Power IC、DrMOS/SPS、controller 毛利和壁垒高于通用 DMOS，是利润修复关键 | `$180-200M` | `$210-240M` | `$250-300M` | `$320-360M` | 基准为从 Q3 低点恢复；乐观需 AI server/graphics/PC socket 兑现 | A for Power IC；C/D for AI products | 是，但 AI server 新品折扣 | 产品收入表可见；新品有发布和量产可得性，但客户/订单缺失 | NTM 基准纳入 Power IC 总收入；AI server 新 socket 不单独进入基准 |
+| PC / AI notebook total power solution | Computing 去除 Advanced Computing 后 Q3 约 `$60.3M/季`；Panther/Wildcat Lake 产品已宣布生产可得 | 直接 | PC power IC/MOSFET 组合，毛利受 PC ASP 和竞争约束 | `$190-220M` | `$220-250M` | `$260-300M` | `$320M` | 符合当前低增预期 | A/C | 是 | Computing 收入表可见；平台产品量产但终端需求弱 | 进入基准；不把 AI PC 叙事外推为强增长 |
+| Communications：smartphone battery protection | FY2026 Q3 `$33.7M/季`，同比 `+18.7%`，Tier One U.S. smartphone 与 premium models 支撑 | 直接 | 电池保护/充电路径认证和可靠性要求高，利润质量好于普通消费件 | `$115-130M` | `$130-155M` | `$160-185M` | `$200M` | 基准符合当前；乐观需要新平台 content/份额增加 | A/B | 是 | 收入表可见，管理层明确客户和 BOM content | 进入基准，是非 AI 利润和现金流支柱 |
+| Power Supply & Industrial / DC fan / e-mobility / IPM | FY2026 Q3 `$28.5M/季`，同比 `-13.1%`；DC fans、quick chargers、India e-mobility backlog 为正向线索 | 直接/间接 | 混合毛利；DC fan、IPM、e-mobility 好于低端 quick charger/传统工具 | `$95-110M` | `$110-125M` | `$130-155M` | `$180M` | 基准保守修复；相对当前不作强上修 | A/C | 是 | 应用收入表可见；backlog/产能线索未量化 | 进入基准但折扣；AI DC fan 不单独外推 |
+| Consumer / gaming / home appliances / wearables | FY2026 Q3 `$19.3M/季`，Q4 管理层预期 flattish | 直接 | 毛利受消费周期和价格竞争制约；wearables 较好 | `$65-75M` | `$75-85M` | `$90-105M` | `$115M` | 基准符合当前 flat 预期 | A/C | 是 | 收入表和指引可见；下一代 gaming 时间较远 | 进入基准，作为抵消项而非增长核心 |
+| SiC/GaN/800VDC / HV IBC | AOSL APEC/PCIM 披露 1200V αSiC、650V/100V GaN、800VDC、hot-swap 等；没有披露收入、客户、订单 | 直接/间接 | 若进入 800VDC/HV IBC 可高毛利；当前多为研发/应用工程投入 | `$0-5M` | `$0-10M` | `$10-30M` | `$50-80M` | 基准只代表可见小额，不代表题材空间 | C/D | 否，除已含在现有产品收入中的小额 | 有产品发布和技术路线，无客户项目/收入确认路径 | 不作为 NTM 基准独立收入；乐观/极度乐观和附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第一步需求和第二步可收入化基数出发，判断每个产品在 NTM 内能给公司贡献多少收入和利润。产品级区间为经营估算，已尽量避免把行业 TAM、客户总预算或远期 pipeline 直接写成公司收入。公司层汇总会在下一节去重。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Advanced Computing 中压 MOSFET / IBC / hot-swap | 悲观 | `$70-85M` | 毛利率低于预期，增量利润有限 | 下行 | 低于 Q3 run-rate 和管理层增长表述 | Q3 已有 `$20M/季`，但可能是项目拉货 | 保留悲观 | 无订单金额、客户验收延后、二供压价、库存偏高 |
+| Advanced Computing 中压 MOSFET / IBC / hot-swap | 基准 | `$95-125M` | 贡献毛利约 `$25-35M`，但需扣应用工程和产能投入 | 小幅上行 | 符合“Q2/Q3 底部后恢复” | Advanced Computing 环比 >100%、同比 >40%，IBC/hot-swap build phase | 保留基准 | 仍未证明连续 2-3 季度放量 |
+| Advanced Computing 中压 MOSFET / IBC / hot-swap | 乐观 | `$140-180M` | 贡献毛利约 `$40-60M`，产品 mix 支持 GM 修复 | 上行 | 高于当前预期 | GPU/CPU/inference 平台多点采用，48V/54V 是行业 2026 主线 | 保留乐观 | 客户集中、竞争强，AOSL 可能只拿低价离散件 |
+| Advanced Computing 中压 MOSFET / IBC / hot-swap | 极度乐观 | `$220-260M` | 贡献毛利约 `$70-95M`，若 high-SOA/advanced package 供给紧张 | 大幅上行 | 明显高于当前预期 | 多个 hyperscaler/ODM 平台同时量产并锁产能 | 下移为上限 | 缺少客户名、正式 backlog 和产能可交付证明 |
+| AI Core Power / DrMOS / SPS / Power IC | 悲观 | `$180-200M` | Power IC mix 低，R&D/SG&A 吞噬毛利 | 下行 | 低于恢复预期 | Q3 Power IC 只有 `$46.9M`，环比 -20.3% | 保留悲观 | AI server socket 未兑现，PC/graphics 继续弱 |
+| AI Core Power / DrMOS / SPS / Power IC | 基准 | `$210-240M` | 毛利率随 mix 修复，经营亏损收窄 | 小幅上行 | 符合低点恢复 | Q1 曾达 `$72.7M/季`，新品和 PC 平台量产 | 保留基准 | 高端 VRM/DrMOS 竞争强，无 AI server 收入拆分 |
+| AI Core Power / DrMOS / SPS / Power IC | 乐观 | `$250-300M` | GM 明显修复，经营杠杆转正 | 上行 | 高于当前预期 | SmartClamp DrMOS、SPS、OVR16/OVR4-22、Panther/Wildcat Lake | 保留乐观 | 必须回答谁买、买什么、何时确认；目前多为产品发布 |
+| AI Core Power / DrMOS / SPS / Power IC | 极度乐观 | `$320-360M` | 高毛利 controller/SPS 成为利润核心 | 大幅上行 | 明显高于当前预期 | 进入 AI server accelerator core rail 并保持价格 | 下移为乐观上限 | 缺少客户项目和订单金额；MPS/Infineon/TI 等强势 |
+| PC / AI notebook total power solution | 悲观 | `$190-220M` | 利润率低到持平 | 下行 | 低于当前 run-rate | PC seasonality、memory price headwinds | 保留悲观 | 终端 PC 需求弱，客户议价强 |
+| PC / AI notebook total power solution | 基准 | `$220-250M` | 稳定毛利，费用吸收一般 | 持平 | 符合当前 | Computing 收入基数可见，Panther/Wildcat Lake 产品量产 | 保留基准 | AI PC 不能自动转化为 AOSL 高增 |
+| PC / AI notebook total power solution | 乐观 | `$260-300M` | BOM content 提升带来少量利润率改善 | 小幅上行 | 略高于当前 | Intel 平台采用、SPS/controller attach 增加 | 保留乐观 | PC 大盘低增且替代供应商多 |
+| PC / AI notebook total power solution | 极度乐观 | `$320M` | 利润率上行但弱于 AI server | 上行 | 高于当前 | AI PC refresh 和 OEM/ODM 份额同步增加 | 下移为上限 | 下一代消费/PC周期证据不足 |
+| Communications：smartphone battery protection | 悲观 | `$115-130M` | 保持较好毛利但增长不足 | 下行 | 低于 Q3 年化 | 单一手机周期弱、中国需求弱 | 保留悲观 | 客户集中，产能 allocation 风险 |
+| Communications：smartphone battery protection | 基准 | `$130-155M` | 对公司 GM 和现金流有正贡献 | 小幅上行 | 符合当前 | Q3 同比 +18.7%，Tier One U.S. customer 和 premium BOM content | 保留基准 | 季节性和客户采购节奏 |
+| Communications：smartphone battery protection | 乐观 | `$160-185M` | 高可靠保护件和 BOM content 支持利润率 | 上行 | 高于当前 | charging current、battery protection content 上升 | 保留乐观 | 未披露长期合同/RPO |
+| Communications：smartphone battery protection | 极度乐观 | `$200M` | 强利润贡献 | 大幅上行 | 明显高于当前 | 新一代高端机平台和份额同步扩大 | 下移为上限 | 单客户/单平台波动不能长期外推 |
+| Power Supply & Industrial / DC fan / e-mobility / IPM | 悲观 | `$95-110M` | 低利用率和价格压力拖累 | 下行 | 低于当前 | Q3 同比 -13.1%，传统 power tools/solar 弱 | 保留悲观 | 工业周期和价格竞争 |
+| Power Supply & Industrial / DC fan / e-mobility / IPM | 基准 | `$110-125M` | 毛利率稳定到小幅修复 | 持平 | 符合当前 | quick chargers、DC fans、India e-mobility backlog | 保留基准 | backlog 未量化，AI DC fan 占比小 |
+| Power Supply & Industrial / DC fan / e-mobility / IPM | 乐观 | `$130-155M` | mix 改善，IPM/BLDC/DC fan 更好 | 小幅上行 | 高于当前 | 数据中心风扇、IPM5 India production、e-mobility | 保留乐观 | 需要订单和产能验证 |
+| Power Supply & Industrial / DC fan / e-mobility / IPM | 极度乐观 | `$180M` | 利润改善但不一定高于 Power IC | 上行 | 明显高于当前 | AI infrastructure fan 和 e-mobility 同时放量 | 下移为上限 | 传统业务下滑可能抵消 |
+| Consumer / gaming / home appliances / wearables | 悲观 | `$65-75M` | 毛利承压 | 下行 | 低于当前 | Gaming/home appliance 弱 | 保留悲观 | 消费周期和库存 |
+| Consumer / gaming / home appliances / wearables | 基准 | `$75-85M` | 利润贡献有限 | 持平 | 符合 Q4 flattish | Q3 `$19.3M`，公司预计短期平稳 | 保留基准 | 不是 NTM 增长核心 |
+| Consumer / gaming / home appliances / wearables | 乐观 | `$90-105M` | 小幅修复 | 小幅上行 | 高于当前 | wearables share gain，gaming replenishment | 保留乐观 | 下一代 gaming 主要在 2028 |
+| Consumer / gaming / home appliances / wearables | 极度乐观 | `$115M` | 利润改善有限 | 小幅上行 | 高于当前 | 消费补库和新平台提前 | 移入附录 | 缺少 NTM 时间表 |
+| SiC/GaN/800VDC / HV IBC | 悲观 | `$0-5M` | 研发和认证投入大于毛利贡献 | 下行 | 低于题材预期 | 只有展示和样品 | 保留悲观 | 没有客户、订单、收入确认 |
+| SiC/GaN/800VDC / HV IBC | 基准 | `$0-10M` | 对公司利润基本无贡献或轻微拖累 | 持平 | 符合保守收入确认 | 2026 行业以 design-in 为主 | 移入附录 | D 级证据不能进 NTM 基准 |
+| SiC/GaN/800VDC / HV IBC | 乐观 | `$10-30M` | 若为高压高频产品，毛利率好，但费用也高 | 上行 | 高于当前 | 1-2 个客户 design-in 转小批量 | 保留为乐观 | 缺少客户名和交付时间 |
+| SiC/GaN/800VDC / HV IBC | 极度乐观 | `$50-80M` | 高毛利但需产能/良率/认证同步 | 大幅上行 | 明显高于当前 | Rubin/800VDC 平台提前冻结并给出订单 | 下移为远期期权上限 | 任一安全/标准/认证环节延后即失效 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节将产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。汇总时已经剔除 Advanced Computing 与 Computing 总额、Power IC 与 PC/AI core power、SiC/GaN 与现有 PS&I/Advanced Computing 的潜在重复。绝对增速以 TTM 收入约 `$685M` 和 FY2026 Q4 指引中点年化约 `$672M` 为参照。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观 | `$630-680M` | 相对 TTM `-8%` 至 `-1%` | 低于 Q4 指引隐含底部恢复；Advanced Computing 只是项目拉货 | `20-22%` | `-10%` 至 `-5%` | EBITDA `$10-35M`；GAAP 净亏损约 `$50-90M` | 明显为负，库存和 capex 拖累 | 中 | AI project pull-in、Power IC 不修复、PC/consumer/PS&I 同时弱、库存继续高 |
+| 基准 | `$710-760M` | 相对 TTM `+4%` 至 `+11%` | 接近当前经营预期正常兑现；Q4 指引兑现后温和恢复 | `22.5-24.5%` | `-5%` 至 `-1%` | EBITDA `$35-65M`；GAAP 净亏损约 `$15-45M` | 负到接近 breakeven，取决于库存天数和 capex | 中高 | Advanced Computing 要连续放量，Power IC mix 需从 Q3 低位恢复，费用率仍高 |
+| 乐观 | `$790-880M` | 相对 TTM `+15%` 至 `+28%` | 高于当前预期；不是单一小基数项目，而是 Advanced Computing、Power IC、smartphone 同步改善 | `25-28%` | `0-5%` | EBITDA `$75-120M`；净利润 breakeven 至 `$35M` | 小幅为正，若库存下降可明显改善 | 中 | 客户认证、份额、ASP/mix、产能和费用杠杆都要同步变好 |
+| 极度乐观 | `$950M-1.10B` | 相对 TTM `+39%` 至 `+61%` | 显著高于当前预期；成长业务成为主引擎 | `28-32%` | `6-11%` | EBITDA `$130-210M`；净利润约 `$55-110M` | 正向，但扩产和营运资本需求仍大 | 低 | 需要 Advanced Computing `$200M+`、Power IC `$300M+`、smartphone/industrial 不拖累、800VDC/AI server socket 早期兑现 |
+
+汇总判断：AOSL 的 NTM 基准不是“AI 高增长公司”而是“周期底部后恢复 + Advanced Computing 低双位数占比开始放大”。经营价值传导的核心不是行业 power path TAM，而是四个更窄的问题：Advanced Computing 的 `$20M/季` 能否连续增长；Power IC 是否从 `$46.9M/季`回到 `$60M+/季`；Communications 能否继续抵消 PC/consumer 周期；库存和费用能否让毛利改善留在利润表。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一个风险只在实际影响层级处理一次：需求风险放在需求层，收入确认风险放在收入基数层，份额/价格/成本放在产品贡献层，公司组合风险放在公司汇总层，可信度放在本节。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q4 指引 `$168M +/- $10M`，non-GAAP GM `23.0% +/-1%` | 公司汇总 | 支持 Q2/Q3 为底部、NTM 基准高于 TTM | 支持 GM 从 Q3 `21.7%` non-GAAP 低位修复 | 不能直接证明 FCF 转正 | 基准保留 |
+| Advanced Computing 占 Computing `25%`，约 `$20M/季`，环比 >100%、同比 >40% | 收入基数/产品贡献 | 支持中压 MOSFET/IBC/hot-swap 进入基准 | 若为认证型高 SOA/advanced package，利润率好于通用 MOSFET | 需要产能和库存支持 | 基准保留，乐观保留 |
+| “leading ODMs for major hyperscale customers” 和 IBC build phase 表述 | 收入基数/执行可信度 | 提升收入可见度，但没有订单金额 | 若 ODM 二供压价，利润弹性受限 | 客户验收和平台节奏仍是变量 | B 级方向性证据，保留但不放大 |
+| 不披露总 backlog、book-to-bill、客户平台名 | 收入确认 | 限制极度乐观收入确认 | 无法验证 ASP/mix | 订单取消/延迟难以监控 | 极度乐观下移为上限 |
+| Power IC Q3 `$46.9M`，低于 Q1 `$72.7M` | 产品贡献/公司利润 | 基准需要恢复，悲观可解释 | GM 修复依赖 Power IC mix | R&D 和应用工程支出先行 | 基准保留但可信度中 |
+| SmartClamp DrMOS、OVR16/OVR4-22、Panther/Wildcat Lake、SPS 产品发布 | 需求/收入基数 | 支持乐观，但多数不能直接进基准 | 若进入 high-current AI/PC socket，利润率上行 | 需要客户设计和量产验证 | 乐观保留，D/C 级不进基准增量 |
+| Communications Q3 同比 `+18.7%` | 产品贡献/公司组合 | 支持非 AI 收入底盘 | 电池保护/充电路径有认证属性 | 有助于现金流，但客户集中 | 基准保留 |
+| Consumer 与 PS&I 仍弱 | 公司组合 | 抵消 Advanced Computing 增长 | 传统业务价格/利用率压低 GM | 库存周转慢 | 悲观保留，不在所有产品重复惩罚 |
+| 库存 `$199.0M`、库存天数约 `139天`，经营现金流 FY2026 前三季 `-$6.3M` | 公司汇总/现金流 | 不直接下修需求，但限制收入质量 | 库存和低利用率压制 GM | FCF 修复滞后利润表 | 现金流可信度下移 |
+| Customer B 收入 `53.8%`、Customer A `17.0%` | 执行可信度 | 大客户/分销节奏放大波动 | 客户议价强 | 应收集中但 DSO 好 | 情景可信度不升高 |
+| SiC/GaN/800VDC 产品展示和行业路径 | 需求/远期期权 | 支持 2027+ 上限，不支持 NTM 基准大额收入 | 潜在高毛利，但认证早期 | 需要研发、认证、客户联合设计 | 基准移入附录；乐观小额保留 |
+| 800VDC 标准、安全、运维、客户共同设计仍慢 | 需求/收入确认 | NTM 可确认收入下移 | 不影响当前 48V/IBC 基准 | 延迟 2-4 季度风险 | 极度乐观下移或仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Advanced Computing 不能持续，Power IC 不修复，公司收入低于当前 run-rate | Consumer/PS&I 弱、库存高、无总 backlog、客户集中 | Q4 指引和 Advanced Computing Q3 强度显示并非全线恶化 | 保留 | `$630-680M`，GM `20-22%`，FCF 明显为负 | 中 | 800VDC 延后只影响远期期权，不再重复压低当前 48V/54V IBC |
+| 基准 | Q4 指引兑现，Advanced Computing 和 Communications 支撑温和恢复 | Q3 Advanced Computing `$20M/季`、Q4 guide、Communications +18.7%、资产负债表净现金 | Power IC Q3 弱、库存高、客户/订单细节不足 | 保留 | `$710-760M`，GM `22.5-24.5%`，经营亏损收窄 | 中高 | 客户集中只作为执行可信度折扣，不重复惩罚每个产品 |
+| 乐观 | Advanced Computing 连续放量，Power IC mix 修复，手机和部分工业支撑 | 中压 MOSFET build phase、AI Core Power 产品、Power IC 历史高点、行业 48V/54V 主线 | 竞争强、无客户名、低毛利 DMOS 可能吞噬收入质量 | 保留 | `$790-880M`，GM `25-28%`，经营利润接近或转正 | 中 | PC 大盘风险只影响 PC/Consumer，不再额外压低 Advanced Computing |
+| 极度乐观 | 多核心传导环节同时突破，收入接近或超过 `$1B` run-rate | AI rack power 强需求、AOSL 产品组合覆盖 MOSFET/Power IC/SiC/GaN，资产负债表可支持扩产 | 缺少订单金额、800VDC NTM 仍早、Power IC AI server socket 未验证 | 下移 | 作为 `$950M-1.10B` 上限情景和后续跟踪，不作为当前预期 | 低 | 800VDC 缺证据只限制极度乐观和远期期权，不否定当前中压 MOSFET 基准 |
+
+## 8. 结论
+
+- 最可能情景：基准偏乐观。NTM 收入最可能落在 `$710-760M`，若 FY2026 Q4 超过指引中点且 Advanced Computing 连续上行，可向 `$790M+` 的乐观情景切换。基准的经营质量仍只是“恢复”，不是高确定性利润扩张。
+- NTM 收入结论：最可确认的收入传导来自已在收入表可见的 Advanced Computing、Communications、Power IC 恢复和 PC/industrial 企稳。Advanced Computing 当前约 `$20M/季` 是核心锚，基准 NTM 贡献约 `$95-125M`，乐观可到 `$140-180M`。SiC/GaN/800VDC 没有足够 A/B 级证据，不进入基准独立收入。
+- 利润/现金流结论：AOSL 的利润弹性取决于 mix，而不是收入本身。仅 DMOS 回升可能仍被 21-23% GM、库存、R&D 和 SG&A 吞噬；只有 Power IC、DrMOS/SPS/controller、高 SOA hot-swap、认证型 smartphone protection 占比提高，GM 才能向 `25%+` 修复。现金流要看库存天数是否从约 `139天`下降，以及 capex/采购承诺是否继续消耗现金。
+- 主要传导瓶颈：1）Q3 Advanced Computing 是否可持续；2）Power IC 是否从 `$46.9M/季`低位恢复；3）AI server 中 AOSL 是否拿到 controller/SPS/DrMOS，而不只是低价 MOSFET；4）客户集中和分销模式是否导致季度拉货/去库存；5）库存和产能利用率是否改善。
+- 乐观情景成立条件：FY2026 Q4 收入超过 `$178M` 或至少在指引上半区；Advanced Computing 再次 sequential growth；Power IC 回到 `$60M+/季`；GM 回到 `24-25%+`；customer deposits、purchase commitments 或客户项目表述增强；库存天数下降。
+- 极度乐观情景成立条件：Advanced Computing 年化收入向 `$200M+`迁移；Power IC/DrMOS/SPS 进入 AI server core power 并持续 `$70M+/季`；smartphone 和 PC/industrial 不拖累；AOSL 披露 800VDC/HV IBC/SiC/GaN 客户项目、量产时间或订单；GM 接近或超过 `28%`，经营利润率转正并扩张。
+- 悲观情景触发条件：FY2026 Q4 收入低于 `$158M`或 GM 不修复；Advanced Computing 被管理层描述为 project pull-in；Power IC 继续低于 `$50M/季`；库存继续上升或 stock rotation accrual 扩大；主要客户/分销渠道订单回落；PC/consumer/PS&I 同时弱。
+- 后续跟踪数据：FY2026 Q4 revenue/GM/Power IC/Advanced Computing commentary；Advanced Computing 是否披露客户、平台、订单或 build phase 延续；Power IC mix；customer deposits 和库存天数；capex 与经营现金流；SiC/GaN/800VDC 是否从 PCIM/APEC 展示转为客户认证、量产订单或明确交付时间。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新财报为 FY2026 Q3，截至 2026-03-31，发布于 2026-05-06；本报告整理日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - AOSL FY2026 Q3 earnings release：Q3 revenue `$163.8M`，GAAP GM `21.1%`，non-GAAP GM `21.7%`，Q4 revenue guide `$168M +/- $10M`，GAAP GM `22.3% +/-1%`，non-GAAP GM `23.0% +/-1%`。链接：https://investor.aosmd.com/press-releases/press-release-details/2026/Alpha-and-Omega-Semiconductor-Reports-Financial-Results-for-the-Fiscal-Third-Quarter-of-2026-Ended-March-31-2026/default.aspx
+  - AOSL FY2026 Q3 prepared remarks：Advanced Computing 包含 AI、servers、graphics cards，Q3 环比超过翻倍、同比超过 40%，占 Computing `25%`；中压 MOSFET 用于 hot-swap 和 IBC，48V-to-12V 架构为近期标准，800V around 2027。链接：https://s22.q4cdn.com/656605939/files/doc_financials/2026/q3/AOSL-FYQ3-26-Earnings-Call-Prepared-Remarks.pdf
+  - AOSL FY2026 Q3 10-Q：产品收入、应用收入、客户集中、库存、customer deposits、现金、债务、经营现金流、purchase commitments 和 capex。链接：https://www.sec.gov/Archives/edgar/data/1387467/000162828026031360/aosl-20260331.htm
+  - AOSL APEC 2026 announcement：OVR16/OVR4-22 controller、Intel IMVP9.3、SPS、DrMOS、48V/54V IBC MOSFET、SiC/GaN、800VDC、hot-swap 产品。链接：https://investor.aosmd.com/press-releases/press-release-details/2026/At-APEC-2026-Alpha-and-Omega-Semiconductor-to-Showcase-Advanced-Solutions-for-AI-Core-Power-AI-Factory-and-Industrial-Power/default.aspx
+  - AOSL PCIM 2026 announcement：AI core power、AI data center MOSFET/αSiC/GaN、48V/54V、emerging 800VDC。链接：https://www.businesswire.com/news/home/20260601591840/en/See-Alpha-and-Omega-Semiconductor-at-PCIM-2026-to-Learn-About-Their-Advanced-AI-Core-Power-AI-Data-Center-and-Industrial-Power-Solutions
+  - AOSL SmartClamp DrMOS announcement：AOZ53228QI/262QI/263QI 面向 AI server、data center、high-end graphics cards，生产可得性和 12 周 lead time。链接：https://www.aosmd.com/news/alpha-and-omega-semiconductor-unveils-smartclamp-protected-drmos-family-ai-servers-and-high
+  - AOSL Panther/Wildcat Lake total power solution announcement：AOZ71049QI/AOZ71149QI/AOZ71146QI 与 AOZ52986QI SPS，面向 Intel IMVP9.3 平台，生产可得。链接：https://www.aosmd.com/news/alpha-and-omega-semiconductor-unveils-total-power-solution-next-gen-intel-panther-lake-and
+  - AOSL 25V/80V MOSFET AI server power announcement：AONC40202/AONC68816，DFN3.3x3.3 double-sided cooling source-down packaging，面向 AI server IBC DC-DC。链接：https://www.aosmd.com/news/alpha-and-omega-semiconductor-introduces-25v-and-80v-mosfets-state-art-packaging-meets
+- 项目内公司资料：
+  - `公司调研/配电_电源_功率器件/AOSL_Alpha_and_Omega_Semiconductor_公司调研_2026-06-11.md`：AOSL 当前业务结构、FY2026 Q3 收入拆分、Advanced Computing、Power IC、Communications、库存、客户集中、竞争格局和跟踪清单。
+- 项目内行业资料：
+  - `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`：48V/54V、VR/TLVR/PoL、hot-swap、800VDC、SiC/GaN、保护件利润池和反证指标。
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`：GB200/GB300 rack power、50V rack bus、power shelf、BBU、IBC、800VDC design-in 和机柜级供电市场口径。
+  - `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`：800VDC/HV IBC/SST 的 2026/2027 时间表、客户验证、标准和收入节奏。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026：前三季收入 `$508.6M`，Q4 指引中点 `$168M`，隐含 FY2026 收入约 `$676.6M`，低于 FY2025 `$696.2M`但 Q4 环比修复。
+  - FY2027 上半财年：若 Advanced Computing 连续增长、Power IC 回到 `$60M+/季`、Communications 维持，FY2027H1 有机会高于 FY2026H1；若 Q3 强度只是拉货，则 FY2027H1 回到低个位数增长或持平。
+  - 长期 run-rate：AOSL 管理层有超过 `$1B`收入里程碑叙事，但 NTM 基准不使用这个目标。`$1B+`只在极度乐观或 FY2027+ 远期情景中作为上限跟踪。
+  - 800VDC/SiC/GaN：2026 以展示、reference、客户测试和小批量为主；2027 才是 first production 观察窗口。没有客户名、订单金额、交付时间和收入确认路径前，不进入 NTM 基准独立收入。

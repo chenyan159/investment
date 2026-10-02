@@ -1,0 +1,474 @@
+# 公司：BE Bloom Energy 公司调研（2026-06-11）
+
+报告日期：2026-06-11  
+股票代码：BE  
+公司名称：Bloom Energy Corporation  
+正式归档目录：`公司调研/电力_发电_能源_储能/`  
+研究边界：本报告只使用 `基本面/行业调研/` 下与 AI 数据中心、电力接入、自备发电、微电网、UPS/BESS、AI 基础设施规模相关的行业资料，并结合联网检索的一手公司公告、SEC/IR、客户公告、行业会议和数据中心电力资料。`公司调研/公司索引.md` 仅用于确认归档目录；未读取、引用或继承既有 BE 公司报告、`日度资料/`、`特征量化/` 或其他目录内容。  
+核心口径：所有美元为 USD；“AI 数据中心相关收入/订单”为推算口径，除非明确写为“公司披露”。  
+
+## 0. 结论先行
+
+Bloom Energy 已经从“清洁能源/氢能/燃料电池概念股”快速变成 AI 数据中心 onsite power 的核心弹性标的。它的主产品不是 AI 芯片、服务器、光模块或 UPS，而是 325kW 级固体氧化物燃料电池系统 Bloom Energy Server 6.5，通过天然气、混氢、沼气或氢气把燃料直接转成电力，用在数据中心 behind-the-meter / prime power / microgrid 场景。
+
+2026 年 BE 的投资逻辑被 Oracle、AEP、Brookfield、Nebius 等订单重写。公司 2026Q1 收入 7.51 亿美元，同比 +130%，其中 Product revenue 6.53 亿美元，同比 +208%；全年指引上修至 34-38 亿美元，Non-GAAP gross margin 约 34%，Non-GAAP EPS 2.00-2.10 美元。最新股价截至 2026-06-11 约 247-248 美元，市值口径约 706-791 亿美元，估值约 28.5x TTM P/S、约 17.2x forward P/S、约 107x forward P/E，已经按“AI 电力瓶颈供应商”定价，而不是按传统燃料电池设备商定价。
+
+最重要的事实链：
+
+| 事实 | 数字 | 日期 | 判断 |
+|---|---:|---:|---|
+| Oracle/Bloom 框架 | 最高 2.8GW；初始 1.2GW 已签约并部署中 | 2026-04 | BE 从 MW 项目进入 GW 级 AI 数据中心 prime power |
+| Oracle/BorderPlex Project Jupiter | 最高 2.45GW Bloom fuel cell，替代原燃气轮机和柴油方案 | 2026-04 | SOFC 的低水耗、低 NOx、部署速度成为许可和 time-to-power 溢价 |
+| AEP/Bloom | AEP 披露最高 1GW、约 26.5 亿美元采购承诺 | 2026-01 | 隐含设备价格约 265 万美元/MW，给 BE 产品 ASP 建立锚 |
+| Nebius/Bloom | 328MW AI 基础设施供电合作，预计 2026 年部署 | 2026-05 | NeoCloud 也开始采用 SOFC 做 AI 算力上电工具 |
+| Q4 2025 backlog | 当前积压订单约 200 亿美元，其中 current product backlog 约 60 亿美元；同比约 +250% | 2026-02 披露 | 2026-2027 收入能见度明显提高，但交付能力成为约束 |
+| 产能 | 公司披露制造产能从 1GW 向 2026 年末 2GW 扩张 | 2025-07/2026 指引期 | 按 240-320 万美元/MW 产品 ASP，2GW 对应 48-64 亿美元年化产品收入能力 |
+| 行业电力需求 | 项目内行业模型估算美国 AI 数据中心 2026 新增或进入设备订单的 AI IT-load equivalent 约 6.0-8.5GW，2027 约 9.0-14.0GW | 2026-06-11 | Bloom 不是泛能源主题，而是在可上电 MW 变成短缺资产时获得订单 |
+
+我的基准判断：BE 未来 12 个月最重要的不是需求，而是交付。需求侧已经被 Oracle、AEP、Nebius、Brookfield 等项目验证；真正决定估值兑现的是 1.2GW 初始 Oracle 部署、AEP/Nebius 交付窗口、2GW 产能爬坡、Product gross margin 能否守住 32-36%、Service margin 能否从低十位数走向 20%+，以及是否出现项目延期、客户集中、燃气/许可或可靠性问题。
+
+## 1. 公司业务、投资人认知、产业链位置与最新估值
+
+### 1.1 公司整体业务
+
+Bloom Energy 的核心技术是固体氧化物燃料电池（SOFC）。Bloom Energy Server 6.5 单台净 AC 输出 325kW，三相 480/415/400V，50/60Hz；天然气输入压力 12-18 psig；正常运行不耗水；LHV 净 AC 累计电效率 65%-53%；HHV heat rate 5,811-7,127 Btu/kWh；NOx 0.003 lbs/MWh，SOx negligible，CO2 679-833 lbs/MWh。产品已按 ANSI/CSA FC1-2014 被 UL Solutions 列为 stationary fuel cell power system，Energy Server 6.5 获 CARB Distributed Generation Certification Program EO DG-058，电网互联标准列示 IEEE 1547-2018、UL 1741 SB、CA Rule 21、CEI 016、KEPCO、G99、C10/11、VDE-41103 等。
+
+业务按财报披露分四类：
+
+| 财报收入项 | 业务含义 | 2026Q1 收入 | 占比 | 2026Q1 毛利率 | 投资意义 |
+|---|---:|---:|---:|---:|---|
+| Product | Energy Server / fuel cell power system 销售 | 653.3M | 87.0% | 34.3% | 核心增长项；AI 数据中心订单主要落在此项 |
+| Installation | 安装、施工、调试、部分项目交付 | 25.9M | 3.5% | -35.3% | 项目制、毛利波动；随 GW 级交付会增加但不是估值核心 |
+| Service | 运维、监控、维护、堆栈更换和长期服务 | 61.9M | 8.2% | 13.3% | 长期高价值，当前仍在爬坡；装机基数越大越重要 |
+| Electricity | 遗留电力销售和相关安排 | 9.9M | 1.3% | 23.9% | 下降中，非 AI 主线 |
+
+### 1.2 投资人心中的 BE
+
+过去投资人常把 BE 看作“燃料电池、氢能、清洁能源、分布式发电”公司，核心疑问是亏损、补贴、融资、堆栈寿命、服务毛利和客户集中。2025H2 至 2026H1 以后，市场叙事改变为“AI 数据中心电力短缺的 onsite power 解法”。估值也从清洁能源制造股转为 AI infrastructure bottleneck supplier。
+
+这个重估有合理部分，也有明显风险：
+
+| 维度 | 积极变化 | 风险 |
+|---|---|---|
+| 需求 | Oracle 2.8GW、Project Jupiter 2.45GW、AEP 1GW、Nebius 328MW，使 SOFC 进入 GW 级数据中心场景 | 少数大客户和大项目集中，任何延期都会放大波动 |
+| 财务 | 2026Q1 GAAP 净利润转正，Non-GAAP EPS 指引 2.00-2.10 | 估值已提前反映高增长；GAAP TTM EPS 接近零，传统 PE 失真 |
+| 产品 | 低 NOx、低水耗、90 天级部署宣传、模块化适合 AI time-to-power | SOFC CapEx 高于燃气发动机/燃机；长期 stack replacement/service cost 仍需验证 |
+| 供应 | 产能向 2GW 扩张，当前 product backlog 约 60 亿美元 | 2GW 产能仍可能小于订单需求；供应链、现金周转和质保是约束 |
+| 竞争 | 燃气轮机交期拉长、排放/水/社区压力利好 SOFC | Caterpillar、GE Vernova、Wartsila、Cummins、IPP/utility、自备燃气电站都在抢 time-to-power |
+
+### 1.3 最近 3 年重大业务变动和转型
+
+| 时间 | 事件 | 业务含义 |
+|---|---|---|
+| 2023-2024 | 从传统清洁能源项目、商业/工业分布式电源、部分 electricity/PPA 模式，逐步转向 product sales 和大型客户 | 收入确认更接近设备公司，毛利和现金流更依赖交付效率 |
+| 2024-2025 | 与 utility、数据中心和大型商业客户建立更大项目；韩国 80MW SK Eternix 项目验证单站点规模 | 从小型站点复制走向 100MW+ 级别 |
+| 2025-07 | 与 Oracle 披露合作，把燃料电池用于 AI 数据中心电力需求 | 数据中心成为主线，不再只是清洁能源应用 |
+| 2025-10 | 与 Brookfield 宣布最高 50 亿美元 AI infrastructure strategic partnership | 资金、开发商和电力资产模式更靠近 AI data center 项目融资 |
+| 2026-01 | AEP 与 Bloom 签署最高 1GW、约 26.5 亿美元采购安排 | utility 侧开始把 Bloom 当作大型负荷供电工具 |
+| 2026-04 | Oracle 扩大至最高 2.8GW，初始 1.2GW 已签约并部署；Project Jupiter 最高 2.45GW | Bloom 从“数据中心可选电源”升级为“GW 级 prime power 候选” |
+| 2026-05 | Nebius 与 Bloom 合作 328MW AI infrastructure build-out | NeoCloud 采用，说明客户不只 Oracle |
+
+### 1.4 产业链位置
+
+Bloom 位于 AI 数据中心能源侧的“可上电 MW”层。它不进入 GPU/光模块/服务器 BOM，而是通过 power-to-market 改变数据中心能否按期投产。
+
+```text
+AI 芯片/服务器需求
+-> AI rack 和数据中心负荷增加
+-> utility interconnection、变压器、switchgear、发电成为瓶颈
+-> onsite power / fuel cell / gas engine / BESS / microgrid 方案被提前采购
+-> Bloom Energy Server 销售 + 安装 + O&M 服务
+-> 数据中心更早上电，云厂/NeoCloud 收入确认提前
+```
+
+在项目内行业资料中，自备发电与微电网已从“备用电源”升级为 AI 基础设施交付主线之一。美国 AI 数据中心 2026 务实情景新增或进入设备订单的 AI IT-load equivalent 约 6.0-8.5GW，2027 约 9.0-14.0GW；电力、UPS、BESS、配电 2026 务实订单池约 31-55B 美元，2027 约 43-78B 美元；微电网/自备发电 2026 约 6-14B 美元，2027 约 15-35B 美元。Bloom 是其中 SOFC prime power 的最直接上市公司暴露。
+
+### 1.5 最新股价、估值与利润率快照
+
+| 指标 | 最新值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | 247.36 美元（Finance 实时报价）；StockAnalysis 页面同日显示约 248.30 美元 | 2026-06-11 盘中/近实时 | 日内波动大，报告采用 247-248 美元区间 |
+| 市值 | 约 70.6B 美元 basic 口径；约 79.1B 美元 fully diluted/数据商口径 | 2026-06-11 | 股本和可转债/稀释口径导致数据商差异 |
+| TTM 收入 | 2.449B 美元 | Q2 2025-Q1 2026 | 本报告按最近四季财报相加 |
+| TTM P/S | 约 28.5x（StockAnalysis）；按 79.1B/2.449B 为 32.3x | 2026-06-11 | 用不同市值口径会有差异 |
+| Forward P/S | 约 17.2x（StockAnalysis）；按 79.1B/2026 指引中点 3.6B 为 22.0x | 2026-06-11 | 2026 收入指引 3.4-3.8B |
+| TTM PE | 不具备正常解释力；StockAnalysis 显示约 10,000x+，Finance 工具显示异常高 PE | 2026-06-11 | GAAP TTM 净利约 6M，接近零，PE 机械失真 |
+| Forward PE | 约 107x（StockAnalysis）；按 247.36/2.05 美元 Non-GAAP EPS 指引中点为 120.7x | 2026-06-11 | 取决于共识 EPS 和公司 Non-GAAP 指引 |
+| 最新季度收入增速 | +130.4% YoY | 2026Q1 | Product revenue +208.4% |
+| TTM 毛利率 | 29.6% | Q2 2025-Q1 2026 GAAP | 最近四季 gross profit / revenue |
+| 最新季度毛利率 | 30.0% GAAP；Non-GAAP gross margin 31.5% | 2026Q1 | Product gross margin 34.3% |
+| TTM 净利率 | 0.25% | Q2 2025-Q1 2026 GAAP | Q1 2026 转正拉动 |
+| 最新季度净利率 | 9.4% GAAP | 2026Q1 | Net income to common 70.7M |
+
+### 1.6 资产负债表健康程度
+
+| 指标 | 2026Q1 | 2025 年末 | 变化 | 判断 |
+|---|---:|---:|---:|---|
+| 现金及现金等价物 | 408.3M | 441.8M | -33.5M | 不算厚；对 GW 级交付需要严格营运资金管理 |
+| 可供出售证券 | 205.7M | 276.7M | -71.0M | 现金+证券约 614.0M |
+| 应收账款 | 586.1M | 716.7M | -130.6M | Q4 大额交付后回款改善 |
+| 存货 | 877.6M | 590.7M | +286.9M | 为 2026 交付备货，若订单延迟会压现金 |
+| 总资产 | 3.829B | 3.342B | +487M | 扩张期资产表膨胀 |
+| 总负债 | 2.012B | 2.036B | -24M | 负债稳定，递延收入/客户付款重要 |
+| 可转换票据等长期债务 | 731.7M | 769.9M | -38.2M | 股价高时稀释风险大于偿债风险 |
+| 股东权益 | 1.817B | 1.306B | +511M | Q1 盈利和资本结构改善 |
+| 流动资产/流动负债 | 2.78x | 2.41x | 改善 | 短期流动性健康 |
+
+健康度评估：中等偏健康，但不是“低杠杆现金牛”。BE 的现金、证券和流动比率足以支撑短期扩张；但 877.6M 存货、586.1M 应收和 2GW 产能爬坡意味着营运资金会被订单节奏强烈牵引。若 Oracle/AEP/Nebius 按期回款，资产负债表可承受；若项目延迟或客户验收后移，现金转换会迅速变成估值风险。
+
+## 2. 最近五个财报季度：收入、利润率、订单和 AI 数据中心暴露
+
+### 2.1 五季财务和订单表
+
+| 财季 | 收入 | YoY | Product / YoY / GM | Installation / YoY / GM | Service / YoY / GM | Electricity / YoY / GM | GAAP GM | GAAP净利率 | 订单、交期、取消率和 AI 数据中心相关估算 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| 2026Q1 | 751.1M | +130.4% | 653.3M / +208.4% / 34.3% | 25.9M / -22.9% / -35.3% | 61.9M / +15.6% / 13.3% | 9.9M / -63.3% / 23.9% | 30.0% | 9.4% | 指引上修；Oracle 2.8GW、1.2GW 初始部署披露。公司未披露季度 bookings 和取消率。AI 数据中心相关收入推算 55%-75%，主要来自 Product |
+| 2025Q4 | 777.7M | +35.9% | 638.5M / +35.4% / 36.6% | 67.3M / +86.4% / -10.7% | 61.7M / +14.7% / 16.9% | 10.2M / -5.3% / 28.8% | 30.8% | 0.1% | 当前 backlog 约 20B，其中 current product backlog 约 6B，同比约 +250%。AI 数据中心相关收入推算 50%-70% |
+| 2025Q3 | 519.0M | +57.1% | 384.3M / +64.4% / 35.0% | 65.8M / +105.2% / 8.9% | 58.6M / +15.5% / 11.6% | 10.4M / -25.1% / 43.8% | 29.2% | -4.4% | Oracle 合作已进入市场预期；Brookfield 5B 合作在 2025-10 披露，主要影响后续订单。AI 数据中心相关推算 35%-55% |
+| 2025Q2 | 401.2M | +19.5% | 296.6M / +31.1% / 33.0% | 37.4M / -12.5% / -2.3% | 54.4M / +3.7% / 9.3% | 12.8M / -9.8% / 39.6% | 26.7% | -10.6% | Oracle 初始合作在 2025-07 披露，Q2 财报尚未充分反映。AI 数据中心相关推算 20%-35% |
+| 2025Q1 | 326.0M | +38.6% | 211.9M / n.a. / 34.1% | 33.7M / n.a. / 1.0% | 53.5M / n.a. / 1.3% | 27.0M / n.a. / 57.1% | 27.2% | -7.3% | 数据中心叙事仍早期。AI 数据中心相关推算 15%-30%，传统 C&I、零售、制造、公用事业仍占较高比重 |
+
+说明：
+
+- “n.a.” 表示公司未在本报告可得的一手材料中给出可直接交叉验证的分项 YoY，本报告不强行推算。
+- AI 数据中心收入占比是模型推算，不是公司披露。Bloom 没有按 data center、utility、C&I 分部披露收入。
+- 取消率未披露。Q4 2025 backlog 注释显示部分长期服务合约可能存在年度 termination for convenience 条款；Product 订单实际风险更多来自项目许可、客户 NTP、燃气/互联、部署验收和交付窗口。
+
+### 2.2 财报趋势
+
+1. 产品毛利率已经进入 33%-37% 区间，说明规模化和价格并非完全靠低价换订单。若 2026 Product gross margin 低于 30%，需要警惕 Oracle/AEP 大项目毛利被压低。
+2. Installation 毛利率波动大，Q1 2026 为 -35.3%，说明安装不是主要利润池。GW 级数据中心项目如果由合作 EPC、utility 或客户侧承担更多现场工作，Bloom 的利润质量可能反而更好。
+3. Service margin 从 2025Q1 的 1.3% 改善到 2025Q4 的 16.9%，2026Q1 为 13.3%。长期装机基数扩大后，服务业务是潜在高质量收入，但目前还没有证明能稳定达到传统工业服务 25%-35% 毛利。
+4. Electricity 收入在快速缩小。投资人应把 BE 看成设备+服务平台，不应把遗留电力销售当主线。
+
+## 3. 2026 指引、收入占比、重点产品和被跳过业务
+
+### 3.1 最新 2026 指引
+
+| 指标 | 2026 指引 | 2025 实际 | 增长/变化 | 备注 |
+|---|---:|---:|---:|---|
+| Revenue | 3.4-3.8B | 2.024B | +68%-88% | 指引中点 3.6B |
+| Non-GAAP gross margin | 约 34% | 约 31% | +约 3pct | 关键看 Product margin 和规模化 |
+| Non-GAAP operating income | 600-725M | 287M | +109%-153% | 经营杠杆显著 |
+| Non-GAAP EPS | 2.00-2.10 | 0.88 | +127%-139% | 估值主要看 2026-2027 EPS 是否继续上修 |
+
+### 3.2 2026E 收入占比推算
+
+公司未给 2026 分项收入指引。按 2026Q1 mix、历史季节性和订单性质推算：
+
+| 业务 | 2026E 收入 | 占比 | 增长 | 判断 |
+|---|---:|---:|---:|---|
+| Product / Energy Server | 2.95-3.25B | 82%-90% | +92%-112% vs 2025 product revenue 1.531B | 最突出、最侧重、最大 AI 数据中心暴露 |
+| Installation | 0.14-0.24B | 4%-7% | -18% 至 +40% vs 2025 0.204B | 项目制，可能因交付结构变化而波动 |
+| Service | 0.25-0.33B | 7%-9% | +10%-45% vs 2025 0.228B | 装机基数增长后应持续上升 |
+| Electricity | 0.03-0.05B | 1% 左右 | 继续下降 | 非核心 |
+| AI 数据中心相关收入 | 2.0-2.7B | 55%-75% | 高增 | 模型推算，主要取决于 Oracle/AEP/Nebius/Brookfield 交付节奏 |
+
+### 3.3 重点产品和型号
+
+| 产品/业务 | 对应产品/型号 | 当前收入贡献 | 增速 | 利润率判断 | AI 数据中心重要性 |
+|---|---|---:|---:|---:|---|
+| SOFC Energy Server | Bloom Energy Server 6.5，325kW net AC，ES6 格式型号 | 2026Q1 Product 653.3M；2026E Product 2.95-3.25B | 2026Q1 +208% YoY；2026E 约 +90%-110% | Product GM 34.3%，大项目基准 31%-36% | 核心产品；直接解决 onsite prime power |
+| AI 数据中心微电网交付 | Energy Server + switchgear/transformer + BESS/UPS 接口 + SCADA/EMS + 安装/调试合作 | 2026Q1 Installation 25.9M；2026E 0.14-0.24B | 不稳定 | 当前安装毛利低，项目标准化后可改善 | 关键使能层，但 Bloom 不一定吃下全部 EPC BOM |
+| Service/O&M | 远程监控、维护、可用率、stack replacement、长期服务 | 2026Q1 Service 61.9M；2026E 0.25-0.33B | 10%-45% | 当前 10%-17%；成熟期 20%-35% | 决定 SOFC 是否能成为高 ROIC 平台 |
+| Fuel-flexible/hydrogen-ready | Energy Server 可用天然气、混氢、沼气、氢气；官方要求联系公司确认燃料配置 | 当前不单列 | 随客户低碳要求增长 | 短期不单独高毛利；长期可带来升级/服务 | 对 Oracle、AEP、数据中心 ESG 有期权价值 |
+| Bloom Electrolyzer / SOEC | 固体氧化物电解，工业制氢/低碳氢 | 当前收入不重要 | 小基数 | 未证明规模毛利 | 小业务，长期低碳期权，不是 2026 AI 收入主线 |
+| Carbon capture / heat capture | 数据表披露 flue gas heat 可被捕获并集成热利用 | 当前不单列 | 小基数 | 项目制 | 对数据中心价值有限，但对工业/园区余热有潜力 |
+
+### 3.4 明确跳过或降权的非核心业务
+
+| 业务/产品 | 为什么降权 |
+|---|---|
+| 遗留 Electricity 收入 | 2026Q1 仅 9.9M，占比 1.3%，且同比 -63.3% |
+| 传统零售、医院、体育场、仓储、制造小站点 | 仍是验证装机基数，但增速和估值弹性弱于 AI 数据中心 |
+| 纯氢能叙事 | 当前订单主要使用天然气 SOFC，不应把 BE 简化成“绿氢股” |
+| Bloom Electrolyzer 短期收入 | 有潜力但 2026 财务贡献不明显 |
+| 碳捕集/余热利用 | 适合工业客户和特定园区，AI 数据中心主线仍是可上电 MW |
+
+## 4. 当前高增长/关键业务：收入贡献、增速、重要性、供需和垄断力
+
+| 高增长/关键业务 | 当前公司收入贡献 | 收入增速 | 对 AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 |
+|---|---:|---:|---|---|---|---|
+| SOFC Energy Server for AI data centers | 2026Q1 Product 653.3M；AI 相关 product 推算 400-520M | Product +208% YoY | 很高。它不是 IT BOM，而是决定 AI hall 是否能提前上电 | 极高。电网排队、变压器和燃机交期使客户愿为 90-180 天级方案付溢价 | 偏紧。订单明显大于历史产能，产能向 2GW 爬坡 | 中高。Bloom 在美国 AI SOFC GW 项目领先，但仍要与燃气发动机、燃机、utility PPA 竞争 |
+| Oracle/AEP/Nebius/Brookfield 大项目渠道 | 订单和框架金额远大于 2026 收入；current product backlog 约 6B | Backlog 同比 +250% | 很高。大客户信用降低融资和产能扩张风险 | 极高。每延迟 1MW AI IT load 都有机会成本 | 很紧。客户抢的是可交付 MW 和部署窗口 | 中高。reference wins 提升白名单价值，但客户集中削弱议价 |
+| Service/O&M installed base | 2026Q1 61.9M；2026E 250-330M | +15.6% Q1；随装机基数滞后增长 | 高。长期可用率、堆栈寿命和 SLA 决定客户续约 | 中高。上线后必须稳定运行 | 中。服务能力要随装机扩张 | 中高。安装后替换成本高，但若服务成本高会压利润 |
+| Installation / microgrid integration | 2026Q1 25.9M；2026E 140-240M | Q1 -22.9%，但项目管线增长 | 中高。没有 switchgear、燃气、控制和调试就不能上电 | 高。现场 commissioning 常是收入确认约束 | 偏紧。电工、保护、调试、变压器和 switchgear 紧 | 中。Bloom 可选择轻资产合作，但总包能力不是唯一 |
+| SOEC/hydrogen optionality | 当前不重要，估计 <50M | 小基数 | 低到中。对 AI 数据中心 2026 不重要，对长期低碳电力重要 | 低 | 不紧 | 低到中。技术有差异，但商业化未证明 |
+
+## 5. 未来一年三情景预测：收入、重要性、供需和溢价
+
+以下为未来 12 个月年化 run-rate 预测，约对应 2026Q3-2027Q2，不等同公司正式 FY2027 指引。
+
+| 业务 | 情景 | 未来一年收入贡献 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 |
+|---|---|---:|---:|---|---|---|---|
+| SOFC Energy Server | 基准 | 4.0-4.8B | +35%-50% vs 2026E Product | 很高 | 极高 | 紧 | 中高，Product GM 32%-36% |
+| SOFC Energy Server | 乐观 | 5.2-6.2B | +70%-100% | 很高 | 极高 | 很紧 | 高，短交期和低排放获得 ASP 溢价 |
+| SOFC Energy Server | 极度乐观 | 6.8-8.0B | +120%-150% | 极高 | 极高 | 极紧 | 高，但需要 2GW+ 有效产能、预付款和零重大质量事故 |
+| 大客户/渠道订单转收入 | 基准 | Oracle/AEP/Nebius/Brookfield 转化 1.2-1.6GW 等效 | n.a. | 很高 | 极高 | 紧 | reference 价值高 |
+| 大客户/渠道订单转收入 | 乐观 | 转化 1.8-2.2GW 等效 | n.a. | 很高 | 极高 | 很紧 | 白名单强化 |
+| 大客户/渠道订单转收入 | 极度乐观 | 转化 2.5GW+ 等效，新增 hyperscaler/colo GW 级签约 | n.a. | 极高 | 极高 | 极紧 | 形成 SOFC 标准选项 |
+| Service/O&M | 基准 | 350-450M | +30%-45% | 高 | 中高 | 中 | 服务 GM 18%-25% |
+| Service/O&M | 乐观 | 500-650M | +60%-100% | 高 | 高 | 偏紧 | 服务 GM 25%-35% |
+| Service/O&M | 极度乐观 | 750-950M | +130%-200% | 高 | 高 | 紧 | 若可用率/stack 成本优，生命周期平台价值上修 |
+| Installation/microgrid integration | 基准 | 180-280M | 平稳到中增 | 中高 | 高 | 紧 | 毛利 0%-10% |
+| Installation/microgrid integration | 乐观 | 300-450M | +50%-100% | 中高 | 高 | 很紧 | 标准化后毛利 8%-18% |
+| Installation/microgrid integration | 极度乐观 | 500-750M | +150%+ | 高 | 极高 | 极紧 | 若 Bloom 承担更多系统集成，收入大但执行风险也大 |
+| SOEC/hydrogen | 基准 | 0-50M | 小基数 | 低 | 低 | 不紧 | 低 |
+| SOEC/hydrogen | 乐观 | 50-150M | 小基数 | 中 | 低 | 中 | 中 |
+| SOEC/hydrogen | 极度乐观 | 150-300M | 小基数 | 中 | 中 | 中 | 需要明确客户和项目融资 |
+
+## 6. BOM、每 MW/每 rack/每 GPU/每 optical port 内容量、价格传导链、产能与认证
+
+### 6.1 Bloom Energy Server 6.5 的物理内容量
+
+| 单位 | 内容量 | 推算 |
+|---|---:|---|
+| 单台 Energy Server 6.5 | 325kW net AC | 官方数据表 |
+| 每 1MW net AC | 3.08 台 Energy Server | 1,000 / 325 |
+| 每 100MW net AC | 约 308 台 Energy Server | 100,000 / 325 |
+| 每 1GW net AC | 约 3,077 台 Energy Server | 1,000,000 / 325 |
+| 每台重量 | 28,745 lbs，约 13 吨 | 官方数据表 |
+| 每 1MW 重量 | 约 88,450 lbs，约 40.1 吨 | 3.08 台 |
+| 单台占地外形 | 29'5" x 4'4" x 8'2" | 官方数据表，不含维护通道 |
+| 每 1MW 设备外形面积 | 约 392 平方英尺，约 36 平方米 | 不含间距、燃气、开关柜、变压器、消防 |
+| 每 1MW 燃气消耗 | 5.8-7.1 MMBtu/h | HHV heat rate 5,811-7,127 Btu/kWh |
+| 每 100MW 燃气消耗 | 约 13.9-17.1 MMcf/day | 按 1 MMBtu 约等于 1 Mcf 粗算 |
+| 每 1GW 燃气消耗 | 约 139-171 MMcf/day | 大项目必须锁 firm gas transportation |
+| 每 MWh CO2 | 679-833 lbs/MWh，约 0.308-0.378 t/MWh | 官方数据表 |
+
+### 6.2 每 rack、每 GPU、每 optical port 的内容量
+
+Bloom 不直接卖给 GPU、服务器或光模块 BOM。它的内容量应按数据中心 IT load 分摊。
+
+| 口径 | 100kW/rack | 120kW/rack | 160kW/rack | 250kW/rack |
+|---|---:|---:|---:|---:|
+| 1MW 可支撑 rack 数 | 10.0 | 8.3 | 6.25 | 4.0 |
+| 每 rack 需要 Energy Server 台数 | 0.31 | 0.37 | 0.49 | 0.77 |
+| 若产品 ASP 2.4-3.2M/MW，每 rack 产品内容量 | 240-320k | 288-384k | 384-512k | 600-800k |
+| 若全套 SOFC microgrid 2.8-5.9M/MW，每 rack 能源侧内容量 | 280-590k | 336-708k | 448-944k | 700k-1.48M |
+
+以 72-GPU NVL72 类 rack 为例：
+
+| rack 功率 | 每 GPU 功率分摊 | 1MW 支撑 GPU 数 | SOFC 产品内容量/每 GPU | 全套 microgrid 内容量/每 GPU |
+|---:|---:|---:|---:|---:|
+| 120kW | 1.67kW | 约 600 颗 | 4.0-5.3k | 4.7-9.8k |
+| 160kW | 2.22kW | 约 450 颗 | 5.3-7.1k | 6.2-13.1k |
+| 250kW | 3.47kW | 约 288 颗 | 8.3-11.1k | 9.7-20.5k |
+
+每 optical port：Bloom 没有直接 optical port BOM。若强行分摊，只能按 rack 总功耗再除以端口数，意义很弱；实际采购决策由 data center MW、上电时间、燃气/许可、PPA 和客户 SLA 决定，不由 optical port 数决定。
+
+### 6.3 BOM 拆分和价格传导链
+
+| 层级 | 每 MW 价值量 | 主要内容 | BE 是否直接捕获 | 毛利/风险 |
+|---|---:|---|---|---|
+| SOFC stack + balance of plant + power electronics | 2.0-3.5M/MW | fuel cell stack、reformer/燃料处理、热管理、逆变、电控、模块化 enclosure | 高，Product revenue | Product GM 31%-36%；关键看 stack 成本、良率、质保 |
+| 燃气接入和计量 | 0.05-0.20M/MW | 管线、调压、计量、阀组、安全系统 | 低到中，项目结构决定 | 燃气路径是重大交付风险 |
+| Switchgear/transformer/eHouse | 0.25-0.65M/MW | MV/LV switchgear、变压器、保护继电器、eHouse | 中，可能外采/合作 | 2026 供应紧，交期可能卡收入 |
+| BESS/UPS/动态电力质量 | 0.10-0.35M/MW 以上 | BESS、PCS、UPS、grid-forming inverter、黑启动 | 低到中，取决于总包范围 | 数据中心认证和消防复杂 |
+| SCADA/EMS/DCIM/microgrid controls | 0.05-0.20M/MW | 控制、监控、保护、远程运维接口 | 中 | 软件/服务高毛利，但工程责任大 |
+| EPC/安装/土建/commissioning | 0.15-0.45M/MW | 现场施工、调试、验收、并网 | 中或低 | 低毛利、项目风险高 |
+| 长期 O&M/服务现值 | 0.3-1.0M/MW+ | 维护、备件、stack replacement、SLA | 高 | 若可用率好，长期利润质量高 |
+
+价格传导链：
+
+```text
+天然气/燃料价格 + 空气许可/水/噪音约束
+-> Bloom SOFC 产品报价和交期
+-> 安装、switchgear、BESS、控制和服务包
+-> 客户用 PPA/租赁/自购/utility recovery 回收成本
+-> 数据中心提前上电，产生 AI cloud / GPU 租赁 / OCI / NeoCloud 收入
+```
+
+对客户来说，Bloom 的价值不是最低 LCOE，而是 time-to-power、低水耗、低 NOx、模块化、可用率和较快部署。若一个 100MW AI hall 延后 12 个月，机会成本可能远高于 SOFC 相对燃气发动机或 grid power 的 CapEx 差异。
+
+### 6.4 当前产能、采纳程度和认证
+
+| 维度 | 当前状态 | 置信度 | 评价 |
+|---|---|---|---|
+| 制造产能 | 公司披露向 2026 年末 2GW 年产能扩张 | 高 | 2GW 是未来一年最大硬约束 |
+| 美元产能 | 按 2.4-3.2M/MW Product ASP，2GW 对应 4.8-6.4B 年化 Product capacity | 中 | AEP 2.65M/MW 是低端锚，Oracle/短交期可能更高 |
+| 供应链采纳 | Oracle、AEP、Nebius、Brookfield、Equinix、SK Eternix 等提供数据中心/utility/大站点 reference | 高 | Oracle 是关键 reference；Nebius 是 NeoCloud 外部验证 |
+| 产品认证 | UL stationary fuel cell power system；CARB DG EO DG-058；IEEE 1547-2018、UL1741 SB、CA Rule 21 等 | 高 | 进入数据中心仍需客户、utility、保险和项目 permit |
+| 数据中心专用能力 | 官方宣传 as little as 90 days、on-site power、grid parallel/microgrid、99.999% uptime 口径 | 中高 | 需要用 Oracle/Nebius 实际交付验证 |
+| 取消率 | 未披露 | 低 | 只能通过 backlog 转收入、客户公告和项目 permit 观察 |
+
+## 7. 未来一年产能、采纳和认证三情景
+
+| 项目 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| 有效出货产能 | 1.6-2.0GW | 2.2-2.7GW | 3.0-4.0GW |
+| 美元 Product capacity | 4.5-6.0B | 6.0-8.0B | 8.0-12.0B |
+| 采纳程度 | Oracle/AEP/Nebius 按计划推进，新增 1-2 个 100MW+ 客户 | 新增 1 个 hyperscaler 或 colo GW 级框架，多个 100-300MW NeoCloud 项目 | SOFC 被写入多个 Tier-1 AI campus basis-of-design，新增 3GW+ 框架 |
+| 项目认证/许可 | 现有产品认证足够，项目 permit 分站点推进 | 客户和 utility 白名单扩大，保险/融资认可提升 | SOFC microgrid 成为缺水/低 NOx 地区优先方案 |
+| 关键瓶颈 | 产能、switchgear、营运资金、客户验收 | 产能和供应链仍紧，但预付款支持扩产 | 最大瓶颈变成 stack 良率、服务队伍和质量控制 |
+| 反证 | Oracle 初始 1.2GW 延迟、Nebius 328MW 未按 2026 部署、Product GM 跌破 30% | 新订单只停留在 MOU，未出现 PO/NTP | 重大可靠性、事故或服务成本披露 |
+
+## 8. 基于订单积压和供给预测未来一年业务增速
+
+### 8.1 真实订单和渠道验证
+
+| 来源 | 金额/MW | 交付窗口 | 对未来一年收入的意义 | 风险 |
+|---|---:|---|---|---|
+| Q4 2025 current product backlog | 约 6B | 未来 12 个月交付口径 | 已覆盖 2026 product revenue 指引相当部分 | backlog 转收入取决于客户 NTP、验收和产能 |
+| Oracle up to 2.8GW，初始 1.2GW | 未披露金额 | 2026 起部署 | 若 1.2GW 以 2.5-3.2M/MW 计，product 机会约 3.0-3.8B | 客户集中、项目许可、燃气、现场施工 |
+| Project Jupiter up to 2.45GW | 未披露金额 | 多阶段 | 若落地，足以支撑多年收入 | BorderPlex/项目融资和现场建设风险 |
+| AEP up to 1GW | 约 2.65B | 多阶段 | 提供 2.65M/MW 价格锚 | utility 监管、客户负荷和建设节奏 |
+| Nebius 328MW | 未披露金额 | 预计 2026 部署 | 按 2.5-3.2M/MW 计，product 机会约 0.8-1.0B | NeoCloud 融资、客户 utilization、项目选址 |
+| Brookfield up to 5B partnership | 5B 框架 | 多年 | 资金/项目开发渠道，非单季度订单 | 框架不等于确认收入 |
+| 媒体/分析师线索 | Crusoe 1.8GW 项目暂停等新闻引发波动 | 2026-06 | 提醒 backlog 并非零风险 | 非公司正式披露，需降权使用 |
+
+### 8.2 未来一年公司收入增速预测
+
+| 情景 | 未来 12 个月收入 | 增速 | Product revenue | Non-GAAP GM | 主要假设 |
+|---|---:|---:|---:|---:|---|
+| 基准 | 4.5-5.4B | +35%-55% vs 2026E 中点年化 | 4.0-4.8B | 32%-35% | 2GW 产能基本爬坡，Oracle/Nebius/AEP 按期一部分交付 |
+| 乐观 | 5.9-7.0B | +65%-95% | 5.2-6.2B | 34%-37% | 大客户预付款和产能效率支撑 2GW+ 有效出货，新增 100MW+ 客户 |
+| 极度乐观 | 7.6-9.1B | +110%-150% | 6.8-8.0B | 35%-39% | 新增 GW 框架、产能超 2GW、服务毛利快速改善，无重大延期 |
+
+如果只看需求，乐观甚至极度乐观都能成立；如果看供给和交付，基准更可执行。2026-2027 的关键观察不是“有没有订单”，而是每季 Product revenue 是否从 650M 级别走向 900M、1.1B、1.3B，并且 Product GM 维持在 32%+。
+
+## 9. 竞争格局、技术主流性、替代风险和客户切换成本
+
+### 9.1 主要竞争对手和替代方案
+
+| 类别 | 主要公司 | 与 Bloom 的竞争关系 | 优势 | 劣势 |
+|---|---|---|---|---|
+| SOFC/燃料电池 | FuelCell Energy、Doosan Fuel Cell、Ceres partners、Bosch SOFC、Convion、Plug Power、Ballard | 直接或相邻竞争 | 低排放、模块化、低噪音 | 多数在美国 AI 数据中心 GW reference 弱于 Bloom |
+| 往复式天然气发动机 | Caterpillar、Cummins、Wartsila、Rolls-Royce mtu、INNIO、Kohler/Rehlko、Generac | 最现实替代 | 成本低、交付快、服务网络强 | NOx、噪音、水/冷却、许可和 ESG 压力 |
+| 航改燃机/重型燃机 | GE Vernova、Siemens Energy、Mitsubishi Power、Solar Turbines、Baker Hughes | 大型园区替代/互补 | 单机功率大、LTSA 成熟 | slot 紧、交期长、排放和燃气基础设施复杂 |
+| Dedicated utility generation / PPA | Entergy、AEP、Dominion、NextEra、Constellation、Vistra、Talen 等 | 可能替代 onsite fuel cell | 成本低、并网合法性强、长期电价清晰 | interconnection 和输变电建设慢 |
+| BESS/UPS/微电网 | Tesla Energy、Fluence、Vertiv、Schneider、Eaton、ABB、Delta | 互补多于替代 | 负载平滑、接入加速、黑启动 | 不能长期发电，需搭配电网或燃料 |
+| SMR/地热/长时储能 | Oklo、TerraPower、NuScale、Fervo、X-energy、Constellation | 长期替代 | 低碳、长期稳定 | 2026-2027 主要是 PPA/许可，非现实交付主线 |
+
+### 9.2 Bloom 技术是否会成为主流
+
+结论：SOFC 会成为 AI 数据中心 onsite power 的主流选项之一，但不太可能成为唯一主流。
+
+适合 Bloom 的场景：
+
+- 电网 interconnection 排队 12-48 个月，客户愿为提前上电付溢价。
+- 缺水、空气许可严格、社区反对燃机或柴油的地区。
+- 数据中心需要低 NOx、低噪音、模块化、近零正常用水。
+- 客户信用强，能支持预付款、长期服务和大规模部署。
+- 天然气供应可锁定，且客户接受天然气 SOFC 的碳强度。
+
+不适合 Bloom 的场景：
+
+- utility 已能快速提供低价大容量电力。
+- 客户对最低 LCOE 极端敏感，不愿为 time-to-power 和低排放支付 CapEx。
+- 燃气供应受限或天然气价格/区域 basis 高。
+- 站点适合 1GW+ 高效联合循环或 utility dedicated generation。
+- 项目对长期 24/7 carbon-free energy 有硬约束，且不接受天然气过渡。
+
+### 9.3 客户替换成本
+
+| 阶段 | 替换成本 | 原因 |
+|---|---|---|
+| RFP 前 | 中 | 客户可以在 SOFC、gas engine、turbine、utility PPA、BESS 混合方案之间比较 |
+| 设计冻结后 | 高 | 电气单线图、燃气、消防、控制、土建、许可、并网模型都会绑定供应商 |
+| 设备下单后 | 很高 | 交期、产能 slot、预付款、现场安装、客户验收周期都会形成锁定 |
+| 投运后 | 极高 | O&M、备件、stack replacement、远程监控、SLA、客户运行数据形成锁定 |
+
+因此，Bloom 最有价值的不是单台设备，而是进入 Oracle/AEP/Nebius 这类客户的标准设计和运维体系。一旦被写入客户未来数据中心电力模板，替换成本会明显提高。
+
+### 9.4 风险和反证指标
+
+| 风险 | 触发条件 | 影响 |
+|---|---|---|
+| Product GM 下滑 | 大客户压价、材料成本、stack 良率或质保成本上升，Product GM 连续低于 30% | 估值从 AI bottleneck supplier 下修为低毛利设备商 |
+| 项目延期 | Oracle 初始 1.2GW、Nebius 328MW、AEP/Brookfield 项目未按窗口推进 | 收入和现金流延后，backlog 可信度下降 |
+| 产能爬坡失败 | 2GW 年产能无法在 2026 年末形成有效出货能力 | 订单不能转收入，客户转向燃机/engine |
+| 服务成本高 | Service GM 不升反降，stack replacement 成本过高 | 长期 ROIC 和平台价值被压低 |
+| 燃气/许可风险 | 大型项目缺 firm gas transportation、空气许可或地方反对 | 设备订单转收入延后 |
+| 客户集中 | Oracle/AEP/Nebius 单一项目负面消息 | 股价波动和估值折价 |
+| 替代技术 | 燃气发动机、utility dedicated generation、BESS/flexible interconnection 快速满足需求 | Bloom ASP 和新增订单下降 |
+| AI CapEx 放缓 | Hyperscaler/NeoCloud 下修 CapEx 或 GPU 租赁价下行 | 所有 onsite power 高情景下修 |
+
+关键跟踪清单：
+
+| 指标 | 频率 | 重点 |
+|---|---|---|
+| Product revenue 和 Product GM | 每季 | 是否进入 900M+ 单季 run-rate，毛利是否守住 32%+ |
+| Current product backlog | 每季/年报 | 是否继续高于未来 12 个月收入覆盖 |
+| Oracle 1.2GW 初始部署 | 事件 | 设备交付、站点上电、Project Jupiter 许可 |
+| AEP/Nebius/Brookfield 项目 | 事件/季度 | PO、NTP、设备到场、上电窗口 |
+| 2GW 产能 | 每季 | 工厂产能、存货、现金转换周期、预付款 |
+| Service margin | 每季 | 是否从 13%-17% 走向 20%+ |
+| 燃气和空气许可 | 项目事件 | 尤其 100MW+ 或 GW 项目 |
+| 客户新增 | 事件 | 是否新增第二个/第三个 hyperscaler 或 Tier-1 colo |
+
+## 10. 投资判断
+
+### 10.1 正面论点
+
+1. AI 数据中心最大的短期瓶颈之一是可上电 MW，而 Bloom 的 SOFC 恰好切入 behind-the-meter / onsite prime power。
+2. Oracle 2.8GW、Project Jupiter 2.45GW、AEP 1GW、Nebius 328MW 说明需求已经不是概念验证。
+3. Product gross margin 34% 左右，说明公司不是纯低价抢单。
+4. 2GW 产能若兑现，Bloom 的年化收入能力可能从 2025 年 2.0B 跳到 5B+。
+5. 服务/O&M 长期可以把一次性设备销售变成 installed-base 收入。
+
+### 10.2 负面论点
+
+1. 估值已经很高，forward P/E 约 107x-121x、P/S 约 17x-32x，不容许明显交付失误。
+2. 公司当前仍是制造和项目交付扩张期，现金+证券约 614M，相对订单规模不算宽裕。
+3. SOFC 成本高于燃气发动机/燃机，必须靠许可、低水耗、低 NOx、交期和数据中心机会成本证明溢价。
+4. 大客户集中和项目集中极强，任何单一项目延期都会影响市场信心。
+5. 服务毛利和 stack replacement 仍是长期价值的核心未解题。
+
+### 10.3 估值框架
+
+| 情景 | 2027E 收入 | Non-GAAP operating margin | 合理 P/S | 隐含市值区间 | 对当前约 70-79B 市值的评价 |
+|---|---:|---:|---:|---:|---|
+| 基准 | 4.8-5.6B | 18%-21% | 10-14x | 48-78B | 当前基本反映基准上沿 |
+| 乐观 | 6.2-7.2B | 21%-24% | 13-18x | 81-130B | 仍有上行，但要求产能和毛利双兑现 |
+| 极度乐观 | 8.0-9.5B | 24%-28% | 16-22x | 128-209B | 需要新增 GW 订单、2GW+ 产能、服务毛利改善和零重大交付事故 |
+
+当前股价更像在定价“乐观情景开始兑现”，不是便宜的基准情景。若后续两个季度 Product revenue、backlog、产能和毛利同步上修，估值能继续被 AI 电力瓶颈逻辑支撑；若任一核心项目延期或 Product GM 下破 30%，估值压缩会很快。
+
+## 11. 资料来源索引
+
+### 11.1 公司和客户一手资料
+
+| 来源 | 日期 | 用途 |
+|---|---:|---|
+| [Bloom Energy Q1 2026 results](https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-Reports-Record-First-Quarter-2026-Results-and-Raises-Full-Year-2026-Guidance/default.aspx) | 2026-04 | Q1 财务、分项收入、指引、资产负债表 |
+| [Bloom Energy Q4/FY2025 results](https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-Reports-Fourth-Quarter-and-Full-Year-2025-Financial-Results/default.aspx) | 2026-02 | FY2025、Q4、backlog、current product backlog |
+| [Bloom Energy Q3 2025 results](https://investor.bloomenergy.com/press-releases/press-release-details/2025/Bloom-Energy-Reports-Third-Quarter-2025-Financial-Results/default.aspx) | 2025-10 | Q3 分项财务 |
+| [Bloom Energy Q2 2025 results](https://investor.bloomenergy.com/press-releases/press-release-details/2025/Bloom-Energy-Reports-Second-Quarter-2025-Financial-Results/default.aspx) | 2025-07 | Q2 分项财务、产能向 2GW 扩张 |
+| [Bloom Energy Q1 2025 results](https://investor.bloomenergy.com/press-releases/press-release-details/2025/Bloom-Energy-Reports-First-Quarter-2025-Financial-Results/default.aspx) | 2025-05 | Q1 分项财务 |
+| [Bloom and Oracle 2.8GW agreement](https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-and-Oracle-Expand-Strategic-Partnership-to-Deploy-up-to-2-8-GW-to-Accelerate-AI-Infrastructure-Build-Out/default.aspx) | 2026-04 | Oracle 最高 2.8GW，初始 1.2GW |
+| [Oracle/BorderPlex/Bloom Project Jupiter](https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/) | 2026-04 | Project Jupiter 最高 2.45GW |
+| [AEP 8-K, Bloom purchase commitment](https://www.sec.gov/Archives/edgar/data/4904/000000490426000003/aep-20260104.htm) | 2026-01 | AEP 最高 1GW、约 2.65B 美元采购承诺 |
+| [Nebius and Bloom 328MW partnership](https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out) | 2026-05 | Nebius 328MW AI infrastructure build-out |
+| [Bloom Data Center Power page](https://www.bloomenergy.com/industries/data-center-power/) | 2026 访问 | 数据中心场景、90 天部署、客户 reference |
+| [Bloom Energy Server 6.5 datasheet](https://www.bloomenergy.com/wp-content/uploads/bloom-energy-server-datasheet-feb-2026.pdf) | 2026-02 | 325kW、效率、排放、认证、燃料和尺寸 |
+
+### 11.2 估值和行情
+
+| 来源 | 日期 | 用途 |
+|---|---:|---|
+| OpenAI Finance quote for BE | 2026-06-11 | 盘中股价和市值口径 |
+| [StockAnalysis BE ratios](https://stockanalysis.com/stocks/be/financials/ratios/) | 2026-06-11 访问 | P/S、forward P/S、forward PE 等数据商估值口径 |
+| [StockAnalysis BE quote](https://stockanalysis.com/stocks/be/) | 2026-06-11 访问 | 当日股价交叉验证 |
+
+### 11.3 项目内行业资料
+
+| 文件 | 用途 |
+|---|---|
+| `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` | AI 数据中心建设规模、MW 物理约束、电力/微电网订单池 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md` | 自备发电、SOFC、Oracle/Bloom、BOM、竞争格局和风险框架 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md` | 数据中心 power availability、变压器/switchgear、time-to-power |
+| `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md` | BESS/UPS/动态负载、microgrid 互补层 |
+| `行业调研/产业背景/全球AI需求与Token经济框架_2026-06-11.md` | AI 训练/推理需求、电力负载和数据中心需求背景 |
+
+### 11.4 行业、会议和二级线索
+
+| 来源 | 日期 | 用途 |
+|---|---:|---|
+| [Data Center Dynamics, Bloom Energy stock hit by Crusoe project pause reports](https://www.datacenterdynamics.com/en/news/bloom-energy-stock-hit-by-crusoe-project-pause-reports/) | 2026-06 | 项目延期/客户集中风险线索，降权使用 |
+| [Caterpillar/AIP 2GW alliance](https://investors.caterpillar.com/news/news-details/2026/American-Intelligence--Power-Forms-Strategic-Alliance-with-Caterpillar-and-Boyd-CAT-to-Deploy-2-Gigawatts-of-Dedicated-Power-for-Hyperscale-AI-Infrastructure/default.aspx) | 2026-01 | 往复式天然气发动机替代竞争 |
+| [GE Vernova/Crusoe LM2500XPRESS](https://www.gevernova.com/gas-power/resources/case-studies/crusoe-ai-data-centers-lm2500xpress) | 2025/2026 | 航改燃机替代竞争 |
+| [Wartsila 790MW Texas data center order](https://www.wartsila.com/media/news/23-04-2026-wartsila-continues-to-expand-its-data-center-footprint-with-new-790-mw-order-in-texas-the-next-data-center-alley-3744599) | 2026-04 | 往复式发动机项目竞争 |
+| [Goldman Sachs data center power demand](https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027) | 2026-05 | 美国数据中心电力需求 31GW/41GW/66GW 校验 |
+| [CBRE U.S. Data Centers Outlook 2026](https://www.cbre.com/insights/books/us-real-estate-market-outlook-2026/data-centers) | 2026 | 数据中心电力和交付瓶颈 |
+| [Cleanview behind-the-meter data centers](https://cleanview.co/reports/behind-the-meter-data-centers) | 2026 | BTM 项目管线和实际投运落差 |

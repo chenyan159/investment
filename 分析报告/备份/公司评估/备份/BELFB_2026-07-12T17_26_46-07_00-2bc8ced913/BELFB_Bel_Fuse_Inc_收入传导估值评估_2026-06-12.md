@@ -1,0 +1,174 @@
+# 公司收入传导与价值传导评估：Bel Fuse Inc
+
+报告日期：2026-06-12  
+公司代号：BELFB  
+公司名称：Bel Fuse Inc  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM，定义为 2026Q2-2027Q1 或未来四个季度经营窗口。  
+资料边界：使用 `公司调研/`、`行业调研/`、Bel Fuse 官方公告、SEC 文件和 Bel 产品资料；未读取、引用或继承 `特征量化/`、Signals、回归、模型比较或全公司排序。  
+限制说明：本文只评估经营收入、利润和现金流传导，不做投资评级、目标价、股价区间或估值倍数判断；市场价格和估值数据不作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口；FY2025、2026Q1、Q2 2026 指引、FY2026/FY2027 run-rate 只作为锚点和补充。长期 800VDC、1MW rack、Rubin/Helios 高密机柜和 dataMate 平台化，只进入乐观、极度乐观或附录跟踪。
+- 当前收入基准、指引和 run-rate：FY2025 收入 `$675.5M`；2026Q1 收入 `$178.5M`，同比 `+17.2%`，毛利率 `39.0%`，Adjusted EBITDA `$34.5M`、margin `19.3%`；公司给出 Q2 2026 收入指引 `$195-215M`、毛利率 `38-40%`。Q1 年化收入约 `$714M`，Q2 指引中点年化约 `$820M`。
+- 订单和可见性：2026Q1 backlog `$531.3M`，较 2025Q4 增加 `$92.2M`、`+21.0%`；Aerospace, Defense & Rugged Solutions backlog `+17.0%`，Industrial Technology & Data Solutions backlog `+27.3%`。反推 Q1 book-to-bill 约 `1.52`，但公司明确提示 backlog 不保证未来销售 timing 或 amount。
+- 重要产品/业务线：Aerospace, Defense & Rugged Solutions；power shelves / AC-DC / DC-DC / power conversion；Ethernet / MagJack / magnetic modules / SFP copper / dataMate；high-reliability connectors and cable assemblies；fuses / PTC / circuit protection；legacy transportation / eMobility / other industrial offset。
+- NTM 公司收入四情景：悲观 `$720-790M`；基准 `$840-910M`；乐观 `$950-1,080M`；极度乐观 `$1,100-1,300M`。基准不是行业 TAM 外推，而是 Q2 指引、Q1 backlog、data solutions 增速和防务/航空航天订单正常兑现。
+- 利润或 EBITDA 四情景：悲观 Adjusted EBITDA `$120-150M`；基准 `$170-200M`；乐观 `$215-260M`；极度乐观 `$270-330M`。利润率核心不在收入增速本身，而在 A&D/Rugged 高毛利 mix、data solutions 是否高于公司平均、power product 材料成本和外汇是否可控。
+- 最大传导瓶颈：Bel 能参与 AI rack power、data center connectivity、Ethernet/magnetics 和 protection 需求，但当前公开证据尚未证明其已进入 NVIDIA GB300/Rubin 核心 power shelf 或 224G/448G 高速主连接器 BOM；从“可参与需求”到“可确认收入”的证据仍主要是 backlog、data solutions 增速和产品页，而不是具体 hyperscaler/ODM 客户订单。
+- 最大利润率变量：A&D/Rugged 的高可靠产品 mix 与 Enercon 整合；IT/Data 中 data solutions 和 power conversion 的毛利率；材料成本和人民币、以色列谢克尔、墨西哥比索等外汇；高功率 power shelf 是否变成认证型产品而不是普通 PSU/钣金收入。
+- 最大现金流变量：backlog 转收入时的存货和应收周转；dataMate 和 Enercon 整合费用；2026 年 5 月增发所得是否用于降债、收购 Enercon 剩余 20% 和高协同 M&A，而不是推高营运资本和整合风险。
+- 可信度：基准公司情景为中高；乐观为中；极度乐观为低到中。原因是总收入、分部收入、指引和 backlog 属 A/B 级证据，但 AI/DC 细分收入、客户认证和产品级利润率仍需估算。
+
+## 2. 重要产品清单
+
+说明：Bel 2026Q1 起按两个业务单元披露，产品线之间存在交叉。下表用于识别传导链，不可逐项简单相加；公司汇总在第 6 节只按两大新分部和总收入去重。
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Aerospace, Defense & Rugged Solutions，包括 Enercon rugged power/networking 与部分 Cinch 高可靠连接器 | 2026Q1 `$99.8M`，年化约 `$399M` | Q1 `55.9%` | 公司当前最大收入和利润质量支柱；防务、commercial air、space、rugged industrial 拉动 backlog | A/B | 进入基准。按 Q1 run-rate、backlog 增长和防务认证节奏估算 NTM `$430-500M` | 防务预算和平台认证持续上修可进入乐观；与 AI 无直接主链关系 |
+| Power shelves / AC-DC / DC-DC / power conversion / power supplies | FY2025 Power Solutions and Protection `$356.8M`，但含 Enercon；AI/DC power 直接口径未披露，当前强相关估计年化 `$50-90M` | 全公司中等到高；AI/DC 直接占比低于总 power | AI rack 48/50/54V power shelf、PSU、BBU、busbar、protection 是行业高确定需求池 | A/B 对总 power；C 对 AI/DC 细分 | 总 power 相关进入基准；AI/DC power 以保守折扣进入基准，更多上修留给乐观 | 800VDC、1MW rack、HV IBC、sidecar power rack 作为 2027+ 期权 |
+| Ethernet / MagJack ICM / magnetic modules / SFP copper / dataMate | FY2025 Magnetic `$86.4M`；dataMate 年销售约 `$18M`；2026Q1 data solutions 反推约 `$40.8M` | Magnetic FY2025 `12.8%`；data solutions Q1 约 `22.8%`，但不全是 AI/DC | data solutions 是 BELFB AI/DC 叙事最强披露线索，Q1 同比 `+30.4%` | A/B 对 Magnetic 和 dataMate；C 对 AI/DC 归因 | 进入基准，但 AI/DC 直接收入用折扣。基准看 NTM `$125-170M` 的可收入化池 | SPE、SFP copper、设施 OT、smart building 和工业 edge AI 平台化 |
+| High-reliability connectors and cable assemblies / Cinch | FY2025 Connectivity `$232.3M`，同比 `+5.4%`，毛利率 `38.7%`；2026Q1 被纳入 A&D/Rugged | 大体三分之一量级，但 2026 新口径不单列 | 防务/航空高可靠连接器确定性高；AI high-speed interconnect 需要更多客户证据 | A/B 对防务/航空；C/D 对 AI high-speed | 防务/航空连接器进入基准；AI high-speed interconnect 只小比例进入基准 | 112G/224G/448G、OSFP/QSFP、AEC/ACC、cabled backplane design-in |
+| Fuses / PTC / circuit protection / hot-swap protection | 未单独披露；包含在 power/protection 内；AI power path 当前估计年化 `$5-15M` | 小 | 单件金额小，但在 48V/54V 和未来 800VDC 中认证价值上升 | C | 以小额进入基准，作为利润质量和可靠性变量，不作为收入主驱动 | 认证型高压保护、solid-state breaker、800VDC arc protection |
+| Legacy transportation / eMobility / ordinary industrial / consumer and low-speed connectivity | 2026Q1 transportation 应用同比 `-33.3%`；industrial 应用 `+16.7%` | 中低到中 | 可能抵消成长业务，决定 IT/Data segment 的净增速 | A | 进入公司基准和悲观抵消项，不作为成长主线 | eMobility 技术向高压 AI power 迁移仍缺客户认证 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 Bel 的份额、收入确认、利润率或公司汇总。需求强弱均相对该产品自己的当前预期，不把 AI 热度等同为 Bel 收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| A&D/Rugged rugged power/networking 与高可靠防务/航空连接 | Bel Q1 A&D/Rugged revenue `+20.1%`；defense `+18.7%`，commercial aerospace `+21.4%`，rugged industrial `+23.2%`；两项欧洲防务设计接近 Q2 final certification | 需求仅 `+0-8%`，认证/预算推迟，commercial air 补库放缓 | 需求 `+10-20%`，防务、commercial air、space 正常兑现 | 需求 `+22-35%`，欧洲认证和美国 bundled Cinch+Enercon design 拉动新增订单 | 需求 `+40%+`，多个防务平台同步放量且交期延长 | 相对 Q1 年化 `$399M`，需求池变化约 `-$20M` 至 `+$160M+` | 基准符合当前预期；乐观需订单延续 | 正向：A&D/Rugged backlog `+17%`。反证：政府预算、认证和交付窗口慢于 Q2-Q4 |
+| Power shelves / AC-DC / DC-DC / rack power conversion | 行业资料显示 2026 主线是 48/50V ORv3/HPR power shelf、PSU、busbar、BBU；未来 1 年 AI 机柜级供电直接市场基准约 `$95-165B`，power shelf 子环节高增 | AI rack 验收延迟，48/50V shelf 增速降至 `+10-25%`，800V 只停留样机 | 48/50V power shelf 与 PSU 需求 `+35-60%`，800V 主要 design-in | 需求 `+60-95%`，GB300/ASIC rack 和 BBU attach 加速 | 需求 `+100%+`，power shelf、BBU、800V design-in 同时提前锁单 | 外部需求池绝对增量为十亿美元级，但 Bel 可确认收入只能按产品/订单折扣 | 基准高于普通工业电源预期，符合 AI rack 供电主线 | 正向：Bel 有 power shelves/racks 和 OCP ORv3 54.5V 产品。反证：未披露 hyperscaler/GB300 量产认证 |
+| Ethernet / MagJack / magnetic modules / SFP copper / dataMate | Q1 data solutions 同比 `+30.4%`；FY2025 Magnetic revenue `+25.4%`，bookings `+52.8%`；dataMate 年销售约 `$18M` | 网络设备补库结束，需求 `-5%` 至 `+5%`；dataMate 只是小补丁 | 需求 `+15-30%`，large networking customer 和 data solutions 延续 | 需求 `+35-60%`，SFP copper、SPE、设施 OT 和数据中心管理网络放量 | 需求 `+70%+`，多个 networking 客户扩单且 dataMate cross-sell 成立 | 相对 FY2025 Magnetic + dataMate `$104M`，需求池可增加 `$15-75M+` | 基准略高于传统 Ethernet，因公司已有 Q1 data solutions 证据 | 正向：公司明确提到 data center connectivity、HPC tied to AI investment。反证：传统 MagJack/10GBASE-T 不是 GPU fabric 主链 |
+| High-reliability connectors and cable assemblies | 行业资料显示 2026 rack 内短距铜、800G/1.6T、224G connector/cage/cabled backplane 需求强；Bel Connectivity FY2025 `+5.4%`，commercial aerospace 强 | 普通连接器被多供压价，AI high-speed 需求未落到 Bel，需求 `0-5%` | 防务/航空高可靠需求 `+8-18%`，AI high-speed 只小幅增加 | 需求 `+20-35%`，Bel 拿到更多 high-speed interconnect 机会 | 需求 `+40%+`，112G/224G/OSFP/AEC/cable assembly design-in 明确 | 相对 FY2025 Connectivity `$232M`，需求池变化约 `+$20-100M+` | 基准主要来自防务/航空，不来自 AI 主链 | 正向：高可靠认证和 Cinch+Enercon bundled design。反证：公开证据不足以证明 AI high-speed 主 BOM |
+| Circuit protection / fuses / PTC | 行业资料显示 48V/54V hot-swap/eFuse/fuse/TVS/SPD 未来一年基准机会 `$6-14B`，认证件毛利高于普通保护 | AI power protection 需求仍小，客户用低价多供，需求 `+0-10%` | 需求 `+20-40%`，48/54V rack protection 标准化 | 需求 `+45-80%`，高电流和可靠性认证形成溢价 | 需求 `+100%+`，800VDC/HV protection 提前验证 | Bel 当前可收入化绝对增量小，可能仅 `$5-20M` 级 | 基准需求高于普通 fuse，但公司捕获不确定 | 正向：Bel 有 fuse/PTC/protection 品类。反证：未披露高压 AI protection design-win |
+| Legacy transportation / eMobility / ordinary industrial | Q1 transportation `-33.3%`，industrial `+16.7%`；EV/交通链条利润压力仍在 | transportation 再降 `15-25%`，工业恢复放缓 | transportation 低位企稳，industrial 中高个位数到十几增长 | 工业补库和电气化项目改善，需求 `+15-25%` | eMobility 高压技术意外进入新平台，需求 `+30%+` | 作为抵消项，绝对影响可达 `-$20M` 至 `+$40M` | 基准为当前预期正常兑现 | 正向：industrial 增长。反证：transportation 下滑说明并非所有 power 技术都受益 AI |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断需求能否进入 Bel NTM 收入表，以及当前可收入化基数。必须区分“可参与需求”和“可确认收入”。公司级汇总以 Q1 两大业务单元、Q2 指引、backlog 和 FY2025 10-K 为 A/B 级锚点；AI/DC 细分收入属于估算，不直接作为 A 级收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| A&D/Rugged rugged power/networking + 高可靠连接 | 2026Q1 A&D/Rugged revenue `$99.821M`，毛利率 `41.5%`；segment backlog `+17.0%` | 直接 | 高毛利、高认证、长周期，现金流受交付窗口影响 | `$390-430M` | `$430-500M` | `$520-600M` | `$620-700M` | 基准符合当前 backlog 和 Q2 指引；悲观低于当前预期 | A/B | 是 | 已披露分部收入、毛利率、backlog；防务认证进度有管理层表述 | 基准主口径收入支柱 |
+| Power shelves / AC-DC / DC-DC / power conversion | FY2025 Power Solutions and Protection `$356.8M`；2026Q1 IT/Data 包含 pre-Enercon power；Bel 产品页有 power shelves/racks、ORv3 54.5V power shelf | 直接和间接 | 普通 PSU 毛利中等，认证型 power shelf 和高可靠 DC/DC 更好；材料成本高 | `$180-220M` 总 power 可收入池；AI/DC 强相关 `$35-60M` | `$220-280M` 总池；AI/DC `$60-110M` | `$300-390M` 总池；AI/DC `$120-200M` | `$450M+` 总池；AI/DC `$250M+` | 基准符合 Q2 指引和 IT/Data backlog；AI/DC 上修高于当前披露 | A/B 对总池；C 对 AI/DC | 部分进入 | 总收入和产品线有证据；AI/DC 客户认证未披露，需折扣 | 总 power 进入基准；OCP/hyperscaler upside 留给乐观以上 |
+| Ethernet / MagJack / magnetic modules / SFP copper / dataMate | FY2025 Magnetic `$86.4M`；dataMate 年销售约 `$18M`；Q1 data solutions 反推约 `$40.8M`，同比 `+30.4%` | 直接 | 认证型 ICM、magnetics、SFP copper 毛利中等到较好；普通 Ethernet 可被多供压价 | `$100-125M` | `$125-170M` | `$180-250M` | `$280-350M` | 基准略高于当前 run-rate，因 dataMate 和 backlog 支持 | A/B 对已披露项；C 对 AI/DC 细分 | 是，保守折扣 | Magnetic 收入、dataMate 收购和 data solutions 增速可见；AI/DC 直接比例未披露 | 进入基准，但不得把全部 data solutions 当 AI/DC |
+| High-reliability connectors and cable assemblies | FY2025 Connectivity `$232.3M`，毛利率 `38.7%`；2026Q1 被并入 A&D/Rugged | 直接 | 防务/航空认证件利润质量高；普通线缆和连接器议价弱 | `$220-245M` | `$245-300M` | `$310-380M` | `$420M+` | 基准符合防务/航空高可靠趋势；AI high-speed 上修不在基准 | A/B 对连接器总池；C/D 对 AI high-speed | 是，按非重复口径 | FY2025 Connectivity 和 A&D/Rugged 已披露；Cinch+Enercon bundled design 支持 | 基准主要来自防务/航空，不把高速 AI 连接器作为主贡献 |
+| Circuit protection / fuses / PTC | 未单独披露；Bel 产品和历史定位支持；行业侧 48V protection 高增 | 直接但小额 | 单价小；进入认证 BOM 后利润率和留存质量改善 | `$10-20M` | `$15-35M` | `$35-60M` | `$80M+` | 基准不显著高于当前预期；乐观需高压保护认证 | C | 小额进入 | 产品存在，但收入未披露、客户未披露 | 只作为小额基准和利润质量变量 |
+| Legacy transportation / ordinary industrial / low-speed connectivity | Q1 transportation 同比 `-33.3%`；industrial `+16.7%` | 直接 | 毛利率分化；transportation 可能拖累 mix | `-$40M` 至 `-$20M` 增量拖累 | `-$10M` 至 `+$20M` 净变化 | `+$30-60M` | `+$80M+` | 基准为低位企稳；悲观低于当前预期 | A | 是，作为抵消项 | Q1 应用增长/下滑已披露 | 进入公司汇总，不作为成长叙事 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，判断 NTM 内每个重要产品/业务线给 Bel 的收入和利润贡献。产品线之间有交叉，表内金额用于传导判断，不做简单加总；公司汇总在第 6 节去重。利润贡献以毛利和 EBITDA 方向为主，因公司不披露产品级经营利润。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| A&D/Rugged rugged power/networking + 高可靠连接 | 悲观产品 | `$390-430M` | 毛利约 `$150-170M`，EBITDA 留存下降 | 毛利率向 `39-40%` 回落 | 低于当前预期 | 认证/交付延迟，backlog 转收入慢 | 保留为悲观 | 防务认证、政府预算、Enercon 交付窗口 |
+| A&D/Rugged rugged power/networking + 高可靠连接 | 基准产品 | `$430-500M` | 毛利约 `$175-210M` | 维持 `40-42%` | 符合当前预期 | Q1 A&D/Rugged revenue `$99.8M`、GM `41.5%`、backlog `+17%` | 保留 | 交付节奏和外汇 |
+| A&D/Rugged rugged power/networking + 高可靠连接 | 乐观产品 | `$520-600M` | 毛利约 `$220-260M` | 小幅上行 | 高于当前预期 | 欧洲防务 certification、Cinch+Enercon bundled U.S. design 转订单 | 保留但需 Q2/Q3 订单验证 | 单一平台集中和交付周期 |
+| A&D/Rugged rugged power/networking + 高可靠连接 | 极度乐观产品 | `$620-700M` | 毛利 `$270M+` | 上行 | 显著高于当前预期 | 多平台同步放量、长周期 backlog 延长 | 下移为乐观上限 | 缺少多平台量化订单 |
+| Power shelves / AC-DC / DC-DC / power conversion | 悲观产品 | 总池 `$180-220M`；AI/DC `$35-60M` | 毛利约 `$45-70M` | mix 下行，材料成本吞噬 | 低于当前预期 | AI rack 认证未证明，普通 power 竞争 | 保留 | 未披露 hyperscaler/NVIDIA/ODM design-win |
+| Power shelves / AC-DC / DC-DC / power conversion | 基准产品 | 总池 `$220-280M`；AI/DC `$60-110M` | 毛利约 `$65-95M` | 稳定到小幅改善 | 符合当前预期 | IT/Data backlog `+27.3%`，Bel power shelves/racks 与 ORv3 产品可见 | 保留 | 无法确认 AI/DC 直接收入比例 |
+| Power shelves / AC-DC / DC-DC / power conversion | 乐观产品 | 总池 `$300-390M`；AI/DC `$120-200M` | 毛利 `$95-140M` | 上行，认证型产品占比提升 | 高于当前预期 | OCP/ORv3 需求、48/50V shelf 行业需求高增、data solutions 强 | 保留但中等可信 | 客户认证、产能、交付和材料成本 |
+| Power shelves / AC-DC / DC-DC / power conversion | 极度乐观产品 | 总池 `$450M+`；AI/DC `$250M+` | 毛利 `$160M+` | 明显上行 | 显著高于当前预期 | Bel 成为高密 AI rack power shelf 二供或关键认证供应商 | 下移为乐观上限或附录 | 当前公开证据不足，不可放入基准 |
+| Ethernet / MagJack / magnetic modules / SFP copper / dataMate | 悲观产品 | `$100-125M` | 毛利约 `$25-40M` | 下降或持平 | 低于当前预期 | 网络补库结束、SPE 未放大 | 保留 | 传统 MagJack 不是 GPU fabric |
+| Ethernet / MagJack / magnetic modules / SFP copper / dataMate | 基准产品 | `$125-170M` | 毛利约 `$40-60M` | 稳定到小幅改善 | 符合当前预期 | Magnetic FY2025 `+25.4%`，data solutions Q1 `+30.4%`，dataMate 年销售约 `$18M` | 保留 | AI/DC 直接比例需估算 |
+| Ethernet / MagJack / magnetic modules / SFP copper / dataMate | 乐观产品 | `$180-250M` | 毛利 `$60-95M` | 上行 | 高于当前预期 | large networking customer 扩单、dataMate cross-sell、SFP copper/SPE design-win | 保留 | 客户集中、产品速率上限、光/铜路线变化 |
+| Ethernet / MagJack / magnetic modules / SFP copper / dataMate | 极度乐观产品 | `$280-350M` | 毛利 `$100M+` | 明显上行 | 显著高于当前预期 | 多客户平台化、短距铜和管理网络需求同步超预期 | 下移为乐观上限 | 缺少客户名单和量产订单 |
+| High-reliability connectors and cable assemblies | 悲观产品 | `$220-245M` | 毛利 `$80-95M` | 稳中降 | 低于当前预期 | 普通连接器多供压价、AI high-speed 未转收入 | 保留 | 未披露 112G/224G/OSFP/AEC 主 BOM |
+| High-reliability connectors and cable assemblies | 基准产品 | `$245-300M` | 毛利 `$95-120M` | 稳定 | 符合当前预期 | FY2025 Connectivity GM `38.7%`，commercial aerospace 和 defense 增长 | 保留 | 与 A&D/Rugged 汇总时需去重 |
+| High-reliability connectors and cable assemblies | 乐观产品 | `$310-380M` | 毛利 `$125-160M` | 小幅上行 | 高于当前预期 | 防务/航空认证件放量，AI high-speed interconnect 有订单 | 保留但需证据 | 高速连接器强竞争 |
+| High-reliability connectors and cable assemblies | 极度乐观产品 | `$420M+` | 毛利 `$175M+` | 明显上行 | 显著高于当前预期 | 进入 AI rack high-speed cable/backplane 大客户 BOM | 移入附录/跟踪 | 当前公开证据不足 |
+| Circuit protection / fuses / PTC | 悲观产品 | `$10-20M` | 毛利 `$3-7M` | 持平或下降 | 符合到低于预期 | 普通 fuse 多供、价格低 | 保留 | 单件价值量小 |
+| Circuit protection / fuses / PTC | 基准产品 | `$15-35M` | 毛利 `$5-13M` | 稳定 | 符合当前预期 | AI rack protection 需求上升，但公司无单独收入披露 | 保留小额 | 不得当主驱动 |
+| Circuit protection / fuses / PTC | 乐观产品 | `$35-60M` | 毛利 `$13-25M` | 上行 | 高于当前预期 | 48V/54V protection 认证件扩大 | 保留为小额上修 | 需客户认证 |
+| Circuit protection / fuses / PTC | 极度乐观产品 | `$80M+` | 毛利 `$35M+` | 明显上行 | 显著高于当前预期 | 800VDC/HV protection 进入关键认证 BOM | 移入附录 | 2026 NTM 时间表不足 |
+| Legacy transportation / ordinary industrial | 悲观产品 | 净拖累 `-$40M` 至 `-$20M` | 毛利拖累 `$5-15M` | 下行 | 低于当前预期 | transportation 延续下滑 | 保留 | EV/transportation 弱 |
+| Legacy transportation / ordinary industrial | 基准产品 | 净变化 `-$10M` 至 `+$20M` | 利润影响小 | 稳定 | 符合当前预期 | industrial `+16.7%` 抵消 transportation | 保留 | 低毛利 mix |
+| Legacy transportation / ordinary industrial | 乐观产品 | 净增 `$30-60M` | 毛利增 `$8-18M` | 小幅上行 | 高于当前预期 | 工业补库和交通低位恢复 | 保留 | 与 AI 无强绑定 |
+| Legacy transportation / ordinary industrial | 极度乐观产品 | `$80M+` 净增 | 毛利增 `$25M+` | 上行 | 高于当前预期 | 高压技术迁移或大项目订单 | 移入附录 | 缺客户和时间表 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、Adjusted EBITDA、净利润和自由现金流方向。先按两大新分部去重，再加入公司级费用、外汇、利息、整合和营运资本影响；不讨论市场定价。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$720-790M` | 相对 FY2025 `+7-17%`；相对 Q2 指引中点年化低 | 低于当前 Q2 指引、backlog 和 run-rate 隐含路径 | `36.5-38.0%` | `12.5-15.0%` | Adjusted EBITDA `$120-150M`；GAAP 归属净利润可能 `$45-70M` | 正但偏弱；库存和应收占用上升 | 中 | Q2/Q3 book-to-bill <1、IT/Data backlog 转收入失败、普通 networking 去库存复发、外汇和材料成本压毛利 |
+| 基准公司 | `$840-910M` | 相对 FY2025 `+24-35%`；相对 Q1 年化显著上行 | 符合当前 Q2 指引、Q1 backlog、data solutions 和防务/航空正常兑现 | `38.0-40.0%` | `15.5-17.5%` | Adjusted EBITDA `$170-200M`；GAAP 归属净利润约 `$70-95M`，视 NCI 和一次性项目 | 正；但增长期存货和应收消耗部分现金 | 中高 | backlog timing、AI/DC 直接收入不透明、Enercon/dataMate 整合、材料和外汇 |
+| 乐观公司 | `$950-1,080M` | 相对 FY2025 `+41-60%` | 高于当前预期，且由 A&D/Rugged 和 IT/Data 双驱动，不是单一小基数项目 | `39.5-41.5%` | `17.5-20.0%` | Adjusted EBITDA `$215-260M`；GAAP 归属净利润约 `$100-140M` | 明显为正，但需更高营运资本投入 | 中 | Q2/Q3 B2B 继续 >1.1、data solutions >25-30%、power/connector 认证型 mix 上升 |
+| 极度乐观公司 | `$1,100-1,300M` | 相对 FY2025 `+63-92%` | 远高于当前预期，只能作为上限 | `40.5-43.0%` | `20.0-24.0%` | Adjusted EBITDA `$270-330M`；GAAP 归属净利润约 `$145-200M` | 强正但营运资本和扩产压力大 | 低到中 | 需要需求、公司捕获、利润质量和执行同时突破：A&D 多平台放量、AI rack power/design-in、dataMate 平台化、high-speed interconnect 认证同步成立 |
+
+汇总检查：
+
+- 重复计算：A&D/Rugged 与 Connectivity/Cinch、Enercon power 有交叉；公司汇总以新分部去重，不把第 5 节产品线逐项相加。
+- 一次性项目：Innolectric impairment、物业出售、earnout 和 NCI redemption adjustment 不外推为经营利润。
+- 并购/剥离：dataMate 纳入 NTM；Enercon 剩余 20% 可能影响净利润归属和现金用途，但不改变收入确认路径。
+- 传统业务抵消：transportation 下滑和普通工业/低速连接器多供压价在悲观和基准中已处理一次，不在第 7 节重复惩罚。
+- 低毛利 pass-through：power shelf 或 PSU 若只是普通代工/钣金，不允许自动把收入上修转成利润上修；只有认证型、客户绑定或高可靠产品才上修毛利率。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在其实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 `$178.5M`、Q2 指引 `$195-215M`、GM `38-40%` | 公司汇总 | 支撑基准 `$840-910M`，悲观需 Q2 低端或 H2 明显回落 | 支撑 GM `38-40%` 基准 | Q2 收入兑现会验证 backlog 转化 | 基准保留 |
+| Q1 backlog `$531.3M`、QoQ `+21.0%`，IT/Data backlog `+27.3%` | 收入基数、执行可信度 | 上修 NTM 可见性，支撑 Q2-Q4 | 若 mix 为高可靠和 data solutions，毛利稳；若普通 power，则毛利不一定上修 | 存货和应收可能上升 | 基准保留，乐观保留 |
+| data solutions Q1 同比 `+30.4%`，dataMate 年销售约 `$18M` | 产品贡献 | 支撑 Ethernet/magnetic/data solutions 基准和乐观 | dataMate margin 接近公司平均，非低毛利拖累 | 整合和 cross-sell 需要时间 | 基准保留，乐观保留但不自动进极度乐观 |
+| A&D/Rugged revenue `+20.1%`，GM `41.5%`，防务认证进展 | 产品贡献、公司利润 | 支撑最大收入支柱 | 高可靠 mix 支撑毛利率和 EBITDA | 认证/政府交付慢影响 timing | 基准保留，乐观部分保留 |
+| Power shelves/racks、ORv3 54.5V power shelf 产品可见 | 收入基数、产品贡献 | 证明 Bel 可参与 AI rack power 需求 | 认证型 power shelf 可提升利润质量 | 客户认证和量产交付未披露 | 基准小比例保留，乐观保留，极度乐观下移 |
+| 未披露 AI/DC 直接收入、未披露 hyperscaler/GB300/Rubin 设计导入 | 收入确认、可信度 | 限制 AI/DC 收入直接上修 | 限制高毛利 AI power 假设 | 防止把 TAM 当收入 | 极度乐观下移或仅作跟踪 |
+| High-speed connector / AEC / 224G/448G 行业高增，但 Bel 具体产品证据不足 | 产品需求、收入基数 | 行业需求强，Bel 捕获未证明 | 不能把整个 Connectivity 毛利上修 | 客户认证周期长 | AI high-speed 部分移入附录/仅作跟踪 |
+| transportation `-33.3%`、材料成本占销售上升至 `30.2%` | 公司组合、利润率 | 抵消 IT/Data 增长 | 材料和 mix 压制 GM | 库存风险上升 | 悲观保留；基准中已处理一次 |
+| Backlog 不保证 timing/amount，公司披露 supply difficulties、customer demand changes、新设计风险 | 执行可信度 | 限制 backlog 全额转收入 | 若延迟则固定成本吸收下降 | 现金转换弱化 | 悲观保留，基准折扣 |
+| 2026 年 5 月增发拟用于降债、Enercon 剩余 20%、M&A | 现金流、执行 | 不直接增加收入 | 降息可改善净利润；M&A 可能带整合风险 | 改善偿债弹性，但稀释和资本配置需跟踪 | 现金流正向保留；M&A 仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Q2 指引低端、H2 backlog 转收入弱，NTM `$720-790M` | 仍有 FY2025 `$675.5M` 和 Q1 run-rate 支撑；A&D/Rugged 高可靠需求不太可能归零 | Q1 backlog 强，Q2 指引中点高于 Q1，data solutions 增长强 | 保留 | 悲观下限 | 中 | transportation 下滑只在公司组合中处理，不再同时压低所有产品 |
+| 基准 | Q2 指引和 Q1 backlog 正常兑现，NTM `$840-910M` | Q1 revenue `+17.2%`，backlog `+21%`，A&D/Rugged 和 data solutions 均有增长；Q2 guide `$195-215M` | AI/DC 直接收入未披露，backlog timing 不保证 | 保留 | 最可能情景 | 中高 | backlog timing 风险只折扣收入确认，不重复惩罚需求池 |
+| 乐观 | A&D/Rugged、data solutions、power conversion 同步高于预期，NTM `$950-1,080M` | IT/Data backlog `+27.3%`，data solutions `+30.4%`，行业 rack power 和高速互联需求强 | 客户、产品、交付和价格证据仍不完整 | 保留 | 乐观上行情景 | 中 | AI 行业 beta 不直接替代公司 alpha |
+| 极度乐观 | 多项 design-in 和高毛利 mix 同时突破，NTM `$1,100-1,300M` | 行业需求池足够大，Bel 具备 power/protect/connect 产品组合 | 未披露 hyperscaler/OCP/GB300/Rubin 核心量产订单；dataMate 基数小 | 下移 | 乐观上限或附录跟踪 | 低到中 | 不因同一个“缺客户认证”风险重复压低基准，只限制极度乐观 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入更可能落在 `$840-910M`，高于 FY2025 但仍以 Q2 指引和 backlog 正常转化为前提；Adjusted EBITDA 更可能在 `$170-200M`，毛利率维持 `38-40%`，经营利润率 `15.5-17.5%`。
+- NTM 收入结论：Bel 的收入传导不是“AI 数据中心 TAM 直接乘份额”，而是两条线并行。一条是更确定的 A&D/Rugged，包括 Enercon rugged power/networking 和 Cinch 高可靠连接；另一条是 IT/Data 中 data solutions、power conversion、Ethernet/magnetics 和 dataMate 的增量。基准收入主要由 A/B 级证据支撑，AI/DC 细分只保守纳入。
+- 利润/现金流结论：利润质量主要来自高可靠、防务/航空、认证型 power 和 data solutions mix，而不是普通 PSU 或普通连接器收入上升。现金流大概率为正，但 backlog 上行会拉动存货和应收；若 Q2/Q3 收入兑现且库存周转稳定，现金质量改善。
+- 主要传导瓶颈：从行业需求到公司收入的关键缺口是客户认证和收入确认证据。Bel 可以参与 48/50V rack power、Ethernet/magnetics、SFP copper、protection 和 high-reliability connectors，但公开资料尚未证明其在 NTM 内获得大型 hyperscaler/GB300/Rubin/OCP HPR 核心量产份额。
+- 乐观情景成立条件：Q2 2026 收入接近 `$215M` 高端；Q2/Q3 book-to-bill 继续 `>1.1`；IT/Data 收入同比 `+20%+` 且 data solutions `+25-30%+`；dataMate run-rate 从 `$18M` 向 `$25-30M` 年化推进；公司披露 data center / HPC / power shelf / large networking customer 订单。
+- 极度乐观情景成立条件：A&D/Rugged 多平台认证放量；Bel 明确进入 AI rack power shelf、ORv3/HPR、high-speed interconnect 或 large networking customer 的量产 BOM；power/data 产品毛利率随认证型 mix 上修；backlog 继续上升且取消/重排率低；营运资本不吞噬 EBITDA。
+- 悲观情景触发条件：Q2 收入低于 `$195M`；Q2/Q3 book-to-bill `<1.0`；backlog 下降或主要来自长周期防务而非 data solutions；dataMate 未体现 cross-sell；transportation 和普通 networking 继续拖累；毛利率跌破 `37%` 且材料/外汇压力无法转嫁。
+- 后续跟踪数据：Q2 2026 收入和毛利率；Q2 backlog 和 B2B；A&D/Rugged certification 更新；IT/Data revenue 和 data solutions 增速；power shelves/OCP/HPR 客户证据；dataMate run-rate；Magnetic/networking customer 持续性；库存、应收、经营现金流；增发资金用途和债务变化。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Bel Fuse FY2025 10-K filed 2026-02-24；Bel Fuse Q1 2026 results released 2026-04-29；Bel Fuse Q1 2026 10-Q filed 2026-05-05；dataMate acquisition announced 2026-03-05；strategic realignment announced 2026-03-31；Class B offering pricing announced 2026-05-13；本报告外部核验截至 2026-06-12。
+- 主要收入、订单、指引和利润率来源：FY2025 revenue `$675.5M`、income from operations `$111.0M`、FY2025 bookings `$732.9M`；2026Q1 revenue `$178.5M`、GM `39.0%`、Adjusted EBITDA `$34.5M`、Q2 guide `$195-215M`；2026Q1 segment revenue A&D/Rugged `$99.821M`、IT/Data `$78.670M`；backlog `$531.3M`。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026/FY2027 run-rate 仅作为辅助，不替代 NTM 主表。800VDC、1MW rack、solid-state protection、Rubin/Helios high-density power 和 dataMate 平台化属于远期期权或乐观上限，除非公司披露 NTM 客户、产品和确认时间表。
+- 本地公司资料：
+  - `公司调研/AI网络_光互联_连接器/BELFB_Bel Fuse Inc_公司调研_2026-06-11.md`
+- 本地行业资料：
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- 主要外部来源：
+  - Bel Fuse Q1 2026 results：https://ir.belfuse.com/news-releases/news-release-details/bel-reports-first-quarter-2026-results
+  - Bel Fuse Q1 2026 Form 10-Q：https://www.sec.gov/Archives/edgar/data/729580/000143774926014903/belfa20260331_10q.htm
+  - Bel Fuse FY2025 Form 10-K：https://www.sec.gov/Archives/edgar/data/729580/000143774926005354/belfb20251231d_10k.htm
+  - Bel Fuse Q4/FY2025 results：https://ir.belfuse.com/news-releases/news-release-details/bel-reports-fourth-quarter-and-full-year-2025-results
+  - Bel Fuse dataMate acquisition：https://www.globenewswire.com/news-release/2026/03/05/3250689/0/en/bel-fuse-inc-announces-acquisition-of-datamate-an-advanced-ethernet-and-broadband-business-from-methode-electronics-inc.html
+  - Bel Fuse strategic realignment：https://ir.belfuse.com/news-releases/news-release-details/bel-announces-strategic-organizational-realignment-accelerate
+  - Bel Fuse Class B offering pricing：https://ir.belfuse.com/news-releases/news-release-details/bel-fuse-inc-announces-pricing-upsized-public-offering-class-b
+  - Bel Fuse power shelves & racks：https://www.belfuse.com/products/power-supplies/power-shelves-racks
+  - Bel Fuse SPSTET4V3 ORv3 power shelf：https://www.belfuse.com/products/power-supplies/power-shelves-racks/spstet4v3-series
+  - Bel Fuse Ethernet products：https://www.belfuse.com/products/ethernet
+  - Bel Fuse MagJacks ICM：https://www.belfuse.com/products/ethernet/magjacks-icms
+  - Bel Fuse magnetic modules：https://www.belfuse.com/products/ethernet/magnetic-modules

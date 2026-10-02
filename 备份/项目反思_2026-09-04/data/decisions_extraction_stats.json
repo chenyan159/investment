@@ -1,0 +1,43 @@
+{
+  "cutoff": "2026-07-15",
+  "all_documents": 1080,
+  "scenario_documents": 455,
+  "evaluation_documents": 625,
+  "scenario_selected": 192,
+  "evaluation_selected": 192,
+  "scenario_backup_selected": 34,
+  "evaluation_backup_selected": 34,
+  "scenario_dates": {
+    "2026-07-15": 192
+  },
+  "evaluation_dates": {
+    "2026-07-12": 192
+  },
+  "primary_horizons_explicit": {
+    "18": 11,
+    "14.5": 40,
+    "17.5": 27,
+    "15": 75,
+    "15.5": 8,
+    "12": 21,
+    "": 8,
+    "12.5": 2
+  },
+  "horizon_missing": [],
+  "summary_missing": [],
+  "price_missing": [],
+  "rating_distribution_heuristic": {
+    "不建议投资": 63,
+    "中性 / 等待": 51,
+    "谨慎建议投资": 35,
+    "强烈不建议投资": 36,
+    "强烈建议投资": 1,
+    "建议投资": 6
+  },
+  "probability_na_explicit": 192,
+  "no_overall_rating_language": 174,
+  "evaluation_no_rating_scope": 168,
+  "matrix_cell_count": 3840,
+  "matrix_complete": 192,
+  "matrix_numeric_ranges": 3831
+}

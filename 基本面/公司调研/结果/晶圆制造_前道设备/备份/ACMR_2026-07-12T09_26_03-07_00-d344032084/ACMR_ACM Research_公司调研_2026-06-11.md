@@ -1,0 +1,436 @@
+# ACMR ACM Research 公司调研：湿法清洗、电镀与先进封装设备的中国晶圆厂扩产杠杆
+
+> 报告日期：2026-06-11  
+> 股票代码：ACMR；公司名称：ACM Research, Inc. / ACM Research；主要运营子公司：ACM Research (Shanghai), Inc. / 盛美上海。  
+> 本地资料边界：仅读取 `基本面/行业调研/` 下与晶圆制造设备、AI 芯片前道、先进封装、HBM、湿化学和产业背景相关资料，以及 `公司调研/公司索引.md` 用于确认正式归档目录；未读取 `特征量化/`，未读取旧的 ACMR 公司调研正文。  
+> 结论口径：ACMR 没有直接 AI 数据中心硬件收入；它的 AI 相关性主要是“AI 芯片、HBM、先进封装和中国本土半导体扩产”的上游工艺设备暴露。
+
+## 0. 一页结论
+
+ACMR 是一家半导体工艺设备公司，主业务从单片湿法清洗扩展到电镀 ECP、先进封装湿法/清洗、炉管、Track、PECVD 和 SFP。投资人通常把它看成三类资产的叠加：
+
+1. **中国半导体国产替代设备股。** 2025 年公司 $901.3M 收入中，Mainland China 收入 $898.0M，占 `99.6%`；2025 年四大客户合计占收入 `52.2%`。这使 ACMR 对中国晶圆厂和 OSAT capex 极敏感。
+2. **湿法清洗与电镀的小而快平台。** 2025 年清洗/Tahoe/半关键清洗 $626.0M，占 `69.5%`；ECP/炉管/其他 $199.6M，占 `22.1%`；先进封装 ex-ECP/服务备件 $75.8M，占 `8.4%`。
+3. **先进封装和 AI 芯片上游期权。** 2026Q1 ECP/炉管/其他收入 $84.2M，同比 `+204.9%`；先进封装 ex-ECP/服务备件 $24.5M，同比 `+62.0%`。公司已交付面板级水平电镀、面板级真空清洗、晶圆级封装工具，并发出首台 PECVD SiCN 系统进入客户验证。
+
+最新估值快照偏贵，已经把 2026 增长和中国设备弹性反映进去了。按 StockAnalysis/S&P Global Market Intelligence 在 2026-06-11 更新的数据，ACMR 收盘价 `$91.70`，盘后约 `$92.17`，市值 `$6.34B`，EV `$5.16B`，TTM 收入 `$960.23M`，TTM 净利润 `$91.01M`，PE `70.01x`，Forward PE `56.66x`，PS `6.34x`，Forward PS `5.02x`，TTM 毛利率 `44.23%`，TTM 净利率 `9.48%`。最新季度 2026Q1 收入同比 `+34.2%`，公司维持 2026 年收入指引 `$1.08B-$1.175B`，相当于较 2025 年增长约 `21%-30%`，中点增速约 `25%`。
+
+资产负债表安全，但营运资金质量需要紧盯。2026-03-31 公司现金、受限现金和短期定存合计约 `$1.252B`，净现金 `$924.2M`；总债务约 `$328M`；总资产 `$3.066B`，总负债 `$982M`，总权益 `$2.083B`。风险在于应收账款 `$526.5M`、存货 `$738.0M` 偏高，且 first tools 客户现场未验收成品库存仍有 `$119.5M`。这不是破产风险，而是验收、回款、客户集中和毛利率波动风险。
+
+我的核心判断：ACMR 当前不是“AI 数据中心直接 BOM 公司”，而是“AI 芯片/先进封装/中国晶圆制造设备链的二阶杠杆”。最值得跟踪的是 **ECP/面板级电镀、SPM/Tahoe/高端清洗、先进封装真空清洗与 SFP、PECVD SiCN/炉管/Track 的客户验证**。其中 ECP 和先进封装设备是 2026-2027 收入弹性最大方向；清洗是现金牛和份额扩张基础；PECVD/Track/炉管是期权，不能按已量产大业务估值。
+
+## 1. 公司整体业务和产业链定位
+
+### 1.1 公司做什么
+
+ACM Research 向晶圆制造厂、存储厂、功率/化合物半导体厂和 OSAT/先进封装客户销售工艺设备。公司官网和 2025 年 10-K 将产品覆盖定义为前道晶圆制造到先进封装，当前业务 mix 主要来自 **wet cleaning、plating、advanced packaging**，并向 furnace、PECVD、Track 等相邻工艺扩张。
+
+主要产品族：
+
+| 产品族 | 典型产品/型号 | 主要工艺 | 对 AI 芯片/先进封装的关系 |
+|---|---|---|---|
+| 单片清洗/湿法 | Ultra C SAPS、Ultra C TEBO、Ultra C Tahoe、Single Hot SPM、Ultra C wb、Ultra C b、Ultra C vac、Bevel Etch、wet bench | post-etch/post-CMP/post-implant 清洗，SPM，颗粒去除，光刻胶剥离，湿法蚀刻 | 先进逻辑、HBM、3D NAND、封装前后清洗都需要；AI 相关性是良率和颗粒控制，不是机房侧硬件 |
+| 电化学电镀 ECP | Ultra ECP、Ultra ECP ap、Ultra ECP ap-p | dual-damascene Cu、TSV、RDL、pillar、bump、Au/SnAg/Ni 等电镀 | 对先进封装、interposer、RDL、HBM/CoWoS-like 和面板级封装更直接 |
+| 先进封装 ex-ECP | Ultra C vac-p flux cleaning、Ultra C bev-p、coater/developer、stripper、SFP、scrubber 等 | WLP/PLP 清洗、flux removal、RDL、bump、panel wet processing、pre-CMP copper removal | AI 封装的清洗、表面、RDL 和大面积均匀性工具 |
+| 热处理/沉积 | Ultra Furnace、vertical furnace、APCVD/LPCVD/oxidation/anneal | oxide/nitride film、退火、热氧化 | 先进逻辑/存储/成熟节点扩产的邻近设备；2026 收入仍在爬坡 |
+| PECVD | Ultra Pmax、PECVD SiCN / Saturn 系列 | dielectric film、TSV passivation、hybrid bonding/BEOL insulation | 当前是 early validation；如果 SiCN/hybrid bonding surface stack 进入客户量产，弹性较高 |
+| Track | Ultra Lith Track | coating/developing | 国产 track 和成熟/准先进节点扩产期权；2026 以 evaluation tools 为主 |
+| SFP | Ultra SFP | stress-free polishing、pre-CMP copper overburden removal | TSV/RDL/fan-out 复杂结构的表面平整和低损伤处理 |
+
+SEC 2025 10-K 给出的工具价格大致为 `$0.5M` 到 `>$5M`/台。公司估算其产品组合可覆盖 2025 年约 `$21B` 的全球 WFE TAM，其中清洗 `$7.3B`、PECVD `$5.3B`、Track `$3.0B`、炉管 `$2.6B`、ECP `$1.5B`、SFP/先进封装/其他 `>$1.2B`。
+
+### 1.2 投资人心中的公司画像
+
+| 画像 | 正面含义 | 负面含义 |
+|---|---|---|
+| 中国半导体设备国产替代标的 | 中国 mature/select advanced nodes、存储、功率和 OSAT 扩产给收入增长；本土客户愿意验证非美/非日/非荷设备 | 近乎全 China revenue，受政策、客户集中、价格竞争和出口管制影响大 |
+| 高增速 WFE 小平台 | 2023-2025 收入从 `$557.7M` 到 `$901.3M`，两年 CAGR 约 `27%`；2026 指引继续 `+21%-30%` | 毛利率从 2024 的 `50.1%` 降到 2025 的 `44.4%`，说明竞争/产品 mix 会吃掉部分收入弹性 |
+| ACM Shanghai 折价/持股结构故事 | 运营资产在上海子公司，A 股上市子公司具备融资和本土客户资源；2026 年拟 H 股二次上市，增强资本和国际化 | ACMR 对 ACM Shanghai 持股已从约 `74.8%` 降至 `73.7%`，少数股东权益大；美股股东持有的是母公司经济权益，不是 100% 运营利润 |
+| AI 上游设备期权 | AI 芯片、HBM、CoWoS/PLP、国产 AI 芯片扩产都会增加清洗/ECP/AP 设备需求 | 公司没有直接 GPU、服务器、网络或数据中心收入；AI 叙事必须折算为上游 fab/packaging capex |
+
+### 1.3 最近三年重大业务变化
+
+| 时间 | 变化 | 影响 |
+|---|---|---|
+| 2023-2025 | 从清洗为主继续扩到 ECP、先进封装、炉管、Track、PECVD、SFP | 2025 清洗仍占 `69.5%`，但 ECP/炉管/其他和先进封装增速更快，产品平台化开始显性化 |
+| 2024-12 | BIS Entity List 加入 ACM Shanghai、ACM Korea 等相关实体 | 影响受美国出口管制约束的硬件、软件、技术和部分境外受控商品采购；也可能限制 ACM Shanghai/ACM Korea 人员服务美国客户 |
+| 2025 | 2025 年总收入 `$901.3M`，同比 `+15.2%`；全年 shipments `$854M`，同比 `-12.2%` | 收入仍增长，但 shipments 下降说明客户验收和前期出货节奏错配；毛利率降至 `44.4%` |
+| 2025Q1-Q2 | 高温 SPM 获中国大陆关键逻辑客户 qualification；Ultra C wb N2 bubbling 升级；ECP 第 1500 个 chamber 交付 | 高端清洗和电镀技术从单点产品向批量工具/客户组合验证 |
+| 2025Q4 | 交付首台面板级水平电镀工具，支持 515x510mm 格式；部分新产品出货推迟到 2026 | PLP 进入真实客户验证/出货，成为 2026 first-tool 和 backlog 线索 |
+| 2026Q1 | 发布 ACM Planetary Family；首台 PECVD SiCN 系统发出；面板级 vac-p 给中国大陆外头部封装客户，WLP 工具给新加坡 OSAT | 从中国客户向全球封装/先进工艺客户扩张，但仍处早期验证 |
+| 2026-02 / 2026-04 | 出售约 480 万股 ACM Shanghai，净得约 `$86M`；ACM Shanghai 拟 H 股上市 | 强化现金和资本平台，但母公司持股稀释；全球化和融资能力提升 |
+| 2026 年内计划 | Oregon facility 目标到 2026 年底具备 demo lab 和美国制造工具能力 | 重要性在于服务美国/全球客户和降低部分地缘限制，但短期收入贡献不应高估 |
+
+没有看到最近三年重大并购改变公司主业；变化主要是 **有机研发、产品线扩张、客户验证、资本结构和地缘风险变化**。
+
+## 2. 最新估值、财务健康和资产负债表
+
+### 2.1 估值和盈利快照
+
+| 指标 | 数值 | 日期/口径 |
+|---|---:|---|
+| 股价 | `$91.70` 收盘；约 `$92.17` 盘后 | 2026-06-11，StockAnalysis，NASDAQ |
+| 市值 | `$6.34B` | 2026-06-11 |
+| EV | `$5.16B` | 2026-06-11 |
+| PE | `70.01x` | 2026-06-11，TTM |
+| Forward PE | `56.66x` | 2026-06-11 |
+| PS | `6.34x` | 2026-06-11，TTM |
+| Forward PS | `5.02x` | 2026-06-11 |
+| TTM 收入 | `$960.23M` | 2026-06-11 |
+| TTM 净利润 | `$91.01M` | 2026-06-11 |
+| TTM 毛利率 | `44.23%` | 2026-06-11 |
+| TTM 净利率 | `9.48%` | 2026-06-11 |
+| 2026Q1 收入增速 | `+34.2% YoY` | 季度截至 2026-03-31，2026-05-07 公告 |
+| 2026 指引 | `$1.08B-$1.175B` | 公司维持 2026 年指引，约 `+21%-30%` |
+| 2025 收入增速 | `+15.2% YoY` | FY2025 |
+| 2025 毛利率 / 归母净利率 | `44.4%` / `10.4%` | FY2025，归母净利率按 `$94.1M/$901.3M` |
+
+估值解释：Forward PS `5x`、Forward PE `57x` 对传统 WFE 设备不便宜；市场已经在定价 `2026-2027` 的产品周期和中国设备替代弹性。要让估值继续扩张，需要看到三个事实同时发生：ECP/AP 继续高增、清洗毛利恢复、PECVD/Track/炉管 first tools 转 repeat revenue。
+
+### 2.2 资产负债表健康度
+
+| 项目 | 2026-03-31 数值 | 解释 |
+|---|---:|---|
+| 现金及现金等价物 | `$872.3M` | 主体现金很厚 |
+| 受限现金 | `$21.9M` | 小比例 |
+| 短期定存 | `$358.2M` | 和现金合计构成流动性 |
+| 现金+受限现金+短期定存 | `$1.252B` | 公司新闻稿口径 |
+| 净现金 | `$924.2M` | 公司新闻稿口径，扣除短长债 |
+| 总债务 | 约 `$328.1M` | ST borrowings `$94.0M` + current LT `$13.3M` + LT borrowings `$220.9M` |
+| 总资产 | `$3.066B` | 2026Q1 10-Q |
+| 总负债 | `$982.4M` | 负债率约 `32.0%` |
+| 总权益 | `$2.083B` | 资本垫较厚 |
+| Current ratio | `3.51x` | 2026-06-11 统计口径 |
+| Quick ratio | `2.47x` | 2026-06-11 统计口径 |
+| Debt / Equity | `0.16x` | 2026-06-11 统计口径 |
+| 应收账款净额 | `$526.5M` | 约 `2.3x` 2026Q1 单季收入，客户验收/回款周期需要盯 |
+| 存货净额 | `$738.0M` | 约 `3.2x` 2026Q1 单季收入，first tools 和生产准备占用大 |
+| 客户预付款 | `$168.8M` | 验收与交付的前置资金来源 |
+| Deferred revenue | `$11.0M` | 与客户合同负债一起看 |
+| Contract liabilities | `$179.8M` | 2026Q1 比 2025 年底 `$205.2M` 下降，主要因 first tools 验收转收入 |
+| 客户现场 first-tools 成品库存 | `$119.5M` | 2025 年底 `$145.5M`，下降说明部分验收转收入，但仍有较大未验收资产 |
+
+财务健康结论：
+
+- **偿债/流动性：强。** 净现金接近 `$0.9B`，足以覆盖研发、扩产、first-tool 周期和海外 demo lab。
+- **盈利质量：中等。** 2025 收入增长但 operating margin 从 2024 的 `19.3%` 降到 `12.1%`，2026Q1 恢复到 `15.6%`；还没回到高峰。
+- **营运资金：偏重。** 应收和存货绝对值大，first-tool 验收长，导致 TTM operating cash flow 为负、FCF 为负。只看利润会低估现金占用。
+- **客户集中：高。** 2026Q1 三个客户占 `45.9%`；2025 年四个客户占 `52.2%`。任何大客户验收推迟都会造成季度波动。
+- **地缘风险：高。** Entity List 会影响受控部件/技术采购和美国客户服务，但公司认为可寻找替代供应；实际风险是替代认证时间、成本和客户信心。
+
+## 3. 最近五次财报：收入、产品线、订单/验收和 AI 相关性
+
+说明：ACMR 不披露标准 backlog/bookings/cancellation rate。公司披露的 `shipments` 包含 repeat tool 出货和等待客户验收的 first tools，最适合作为订单/交付能见度代理。first tools 被客户拒收或延迟验收会推迟收入确认；因此表中 backlog/lead time 为基于公司披露和管理层评论的推断。
+
+| 财报季度 | 收入/增速 | 毛利率 / 营业利润率 / 归母净利率 | 产品收入结构 | Shipments / first tools / 订单能见度 | AI 数据中心相关收入占比 |
+|---|---:|---:|---|---|---|
+| 2026Q1，2026-05-07 | `$231.3M`，`+34.2%` | GM `46.4%`；OPM `15.6%`；归母净利 `$17.3M`，margin `7.5%`；non-GAAP 归母净利 `$24.3M` | 清洗/Tahoe/半关键 `$122.5M`，`-5.5%`，占 `53.0%`；ECP/炉管/其他 `$84.2M`，`+204.9%`，占 `36.4%`；先进封装 ex-ECP/服务备件 `$24.5M`，`+62.0%`，占 `10.6%` | Shipments `$240.7M`，`+53.6%`；repeat `$96.9M`；first tool `$143.8M`；约 `15%` shipments 是 2025Q4 延后交付的 catch-up；客户现场 first-tools 成品 `$119.5M`；contract liabilities `$179.8M` | 直接数据中心收入 `0%`；间接 AI/先进封装/高端逻辑相关模型估计 `15%-30%`，主要来自 ECP、AP ex-ECP、部分清洗和 PECVD 验证 |
+| 2025Q4，2026-02-26 | `$244.4M`，`+9.4%` | GM `40.9%`；OPM `9.4%`；归母净利 `$8.0M`，margin `3.3%`；non-GAAP 归母净利 `$17.3M` | 清洗 `$159.9M`，`+3.0%`，占 `65.4%`；ECP/炉管/其他 `$64.1M`，`+23.9%`，占 `26.2%`；AP ex-ECP `$20.5M`，`+23.8%`，占 `8.4%` | Shipments `$228M`，`-13.5%`；2025 全年 shipments `$854M`，`-12.2%`；部分新产品出货推迟到 2026；交付首台水平面板 ECP 工具 | 间接 AI/AP 相关约 `10%-20%`；主要是 ECP/AP 工具而非清洗主体 |
+| 2025Q3，2025-11-05 | `$269.2M`，`+32.0%` | GM `42.0%`；OPM `10.7%`；归母净利 `$35.9M`，margin `13.3%`，其中短投未实现收益抬高净利 | 清洗 `$181.6M`，`+12.8%`，占 `67.5%`；ECP/炉管/其他 `$59.9M`，`+73.0%`，占 `22.2%`；AP ex-ECP `$27.7M`，`+230.6%`，占 `10.3%` | Shipments `$263.1M`，`+0.7%`；preliminary shipments 曾指引 `$257M-$262M`；Q3 是 AP ex-ECP 同比爆发的一个高点 | 间接 AI/AP 相关约 `10%-25%`；AP ex-ECP 增速高但基数小 |
+| 2025Q2，2025-08-06 | `$215.4M`，`+6.4%` | GM `48.5%`；OPM `14.7%`；归母净利 `$29.8M`，margin `13.8%` | 清洗 `$155.0M`，`+1.1%`，占 `72.0%`；ECP/炉管/其他 `$48.0M`，`+23.2%`，占 `22.3%`；AP ex-ECP `$12.4M`，`+20.4%`，占 `5.8%` | Shipments `$206.4M`，`+1.9%`；Ultra C wb N2 bubbling 提升湿蚀刻均匀性 `>50%`；ECP 第 1500 个 chamber 交付 | 间接 AI/AP 相关约 `8%-18%`；ECP 比清洗更关键 |
+| 2025Q1，2025-05-08 | `$172.3M`，`+13.2%` | GM `47.9%`；OPM `15.0%`；归母净利 `$20.4M`，margin `11.8%` | 清洗 `$129.6M`，`+18.4%`，占 `75.2%`；ECP/炉管/其他 `$27.6M`，`+7.1%`，占 `16.0%`；AP ex-ECP `$15.1M`，`-10.5%`，占 `8.8%` | Shipments `$157M`，低于 2024Q1 `$245M`，主要因 2024Q4 客户 pull-ins；高温 SPM 获中国大陆关键逻辑客户 qualification，支持 `28nm及以下`；Ultra ECP ap-p 获 3D InCites Technology Enablement Award | 间接 AI/AP 相关约 `5%-15%`；AP 当季下滑，AI 相关性仍主要是期权 |
+
+五季趋势：
+
+- 2026Q1 的核心变化不是清洗增长，而是 **ECP/炉管/其他 + AP ex-ECP** 把公司产品 mix 从“清洗单一主线”推向“清洗 + ECP/AP + 新产品验证”。
+- 2025Q4 毛利低点 `40.9%` 来自产品 mix、少数 semi-critical 产品竞争和库存相关 charge；2026Q1 回到 `46.4%`，但还没有证明可持续上行。
+- Shipments 从 2025Q4 `$228M` 到 2026Q1 `$240.7M`，而公司预计 2026 shipments 增速会高于收入增速；这意味着 first-tool 评估会继续压营运资金，但也给 2027 收入留下接受转化池。
+- AI 相关性逐季增强，但仍是间接。把 ACMR 写成 AI 数据中心直接供货商是错误的；正确口径是“AI 芯片/先进封装和本土 WFE capex 传导到 wet/ECP/AP tools”。
+
+## 4. 2026 最新指引和业务收入占比
+
+### 4.1 2026Q1 已实现业务占比
+
+| 业务类别 | 2026Q1 收入 | 占比 | 同比 | 重点解读 |
+|---|---:|---:|---:|---|
+| Single wafer cleaning, Tahoe and semi-critical cleaning | `$122.5M` | `53.0%` | `-5.5%` | 当季下滑，但管理层预计清洗 mix 会向 2025 年约 `65%` 正常化；SPM/Tahoe 是新增长点 |
+| ECP (front-end and packaging), furnace and other technologies | `$84.2M` | `36.4%` | `+204.9%` | 增速最高；管理层称多数是 ECP front-end，炉管贡献很少；panel-level horizontal plating 获更多客户 traction |
+| Advanced packaging excluding ECP, services and spares | `$24.5M` | `10.6%` | `+62.0%` | 面板级 vac-p、WLP 工具、新加坡 OSAT 和中国外客户开始出现 |
+| 合计 | `$231.3M` | `100%` | `+34.2%` | 公司维持全年 `$1.08B-$1.175B` 指引 |
+
+### 4.2 2026 管理层侧重点
+
+公司在 2026Q1 电话会和公告中强调：
+
+- 收入端：Tahoe、single-wafer SPM、vertical furnace 会贡献增量。
+- Shipments 端：panel-level horizontal plating、panel low-pressure flux cleaning、high-throughput Track、PECVD evaluation tools 会增加。
+- 产品组织：SEMICON China 2026 发布 ACM Planetary Family，将产品按半导体制造步骤组织为统一产品组合。
+- 全球化：Oregon facility 目标 2026 年底具备 demo lab 和美国制造工具能力；ACM Shanghai 拟 H 股上市；Q1 已向中国大陆外封装客户和新加坡 OSAT 出货先进封装设备。
+
+### 4.3 跳过或降权的业务/产品
+
+这些业务不是没价值，而是在本次 AI 基建和高增速问题下优先级较低：
+
+| 降权业务/产品 | 降权原因 |
+|---|---|
+| 普通 mature-node semi-critical wet bench | 收入体量可能稳定，但竞争和价格压力更强；AI 相关性弱 |
+| 普通 compound semiconductor / SiC 低复杂度湿法应用 | 对公司产品广度有帮助，但与 AI 数据中心主链条距离远 |
+| 传统服务备件中的非先进封装部分 | 毛利可能不错，但不是增长叙事主因；公司未拆出 AI 相关收入 |
+| 低端 Track/涂胶显影 | 市场大但 TEL 等龙头强，ACMR 仍处验证和低份额阶段 |
+| 普通炉管成熟节点应用 | 有收入弹性，但 AI/HBM/先进封装的直接性低于 ECP/AP 清洗/PECVD SiCN |
+
+### 4.4 不能漏掉的潜力小业务
+
+| 潜力产品 | 当前状态 | 为什么值得跟踪 |
+|---|---|---|
+| Single-wafer SPM | 已获中国大陆关键逻辑客户 qualification；管理层预计 2026 年底交付 `15-20+` 台 | 高温 SPM 属清洗中更高价值、更高难度步骤，若能替代领先供应商，收入和毛利弹性大 |
+| Panel-level horizontal ECP / Ultra ECP ap-p | 2025Q4 首台 515x510mm 工具交付；支持 515x510mm 和 310x310mm；客户 engagement/backlog 增加 | PLP、RDL、TGV、CoPoS-like 是 2027 后先进封装成本下降路径，早期工具卡位重要 |
+| Ultra C vac-p low-pressure / vacuum flux cleaning | 2026Q1 向中国大陆外领先封装客户交付 | AI 高端封装里 flux residue、under-bump 难清洗和低缺陷要求会提高价值 |
+| PECVD SiCN / Ultra Pmax / Saturn | 2026Q1 首台 SiCN 系统发往 leading semiconductor manufacturer，客户 final validation | SiCN、dielectric、TSV passivation、hybrid bonding/BEOL insulation 是未来先进封装和 BEOL 关键材料栈 |
+| SFP / stress-free polishing | 官网定位为 TSV、fan-out RDL 和 pre-CMP Cu overburden removal | 在 RDL/TSV/大封装结构复杂化下，低损伤 planarization 前处理有期权 |
+
+## 5. 高增长/关键产品当前贡献、增速和 AI 基建重要性
+
+评分：5 为最高。当前收入贡献为模型拆分，因公司只按三大类披露，不按具体型号披露。
+
+| 产品/业务 | 当前收入贡献 | 当前增速/订单线索 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 结论 |
+|---|---:|---|---:|---:|---:|---:|---|
+| 高端清洗：Ultra C SAPS/TEBO/Tahoe/SPM/wb | 2025：`$626.0M`；2026Q1：`$122.5M`；TTM 约 `$619M` | 2026Q1 该类收入 `-5.5%`，但清洗 shipments `+32%`；SPM 预计 2026 交付 `15-20+` 台 | 4 | 4 | 3 | 3 | 核心现金牛，AI 间接强；SPM/Tahoe 决定能否恢复增长 |
+| ECP front-end + WLP/AP plating：Ultra ECP | 2026Q1 ECP/炉管/其他 `$84.2M`，其中多数为 ECP；TTM aggregate 约 `$256M` | 2026Q1 aggregate `+204.9%`；ECP chamber 累计第 1500 个在 2025Q2 交付 | 4 | 4 | 4 | 3 | 当前最强增长线；前道 damascene、TSV、RDL、bump 都能受益 |
+| Panel-level horizontal ECP：Ultra ECP ap-p | 当前收入小，估计 2025-2026 起步阶段 `<$20M-$40M` 年化 | 2025Q4 首台 515x510mm 交付；2026Q1 管理层称 backlog/engagement 增加，支持 515x510 与 310x310 | 4 | 3 | 4 | 3 | 小业务但期权大，取决于 PLP/CoPoS/玻璃/TGV 是否提前放量 |
+| Advanced packaging cleaning/vac-p/SFP/WLP tools | 2025：`$75.8M`；2026Q1：`$24.5M`；TTM 约 `$85M` | 2026Q1 `+62.0%`；中国大陆外封装客户和新加坡 OSAT 出货 | 4 | 4 | 3 | 3 | 和 AI 封装传导最直接，收入基数小但增速高 |
+| PECVD SiCN / Ultra Pmax | 当前收入很小，仍在 first-tool / validation；aggregate 中炉管/其他贡献有限 | 2026Q1 发出首台 SiCN 系统，Lingang lab 满足客户工艺规格，客户现场 final validation | 4 | 3 | 3 | 2 | 真正商业化要看 2026H2-2027 客户验收；若进入 hybrid bonding/BEOL stack，弹性大 |
+| Vertical furnace / thermal | 当前收入小；2026Q1 管理层称当季 furnace contribution 很少 | 预计 2026 有 incremental contribution | 3 | 3 | 2 | 2 | 属于平台化扩张，重要但竞争强，暂不作为 AI 主线 |
+| Track / Ultra Lith Track | 当前收入很小，以 evaluation shipments 为主 | 2026 年增加高吞吐 Track evaluation tools | 2 | 2 | 2 | 1 | TAM 大但 ACMR 份额和客户验证仍需证明 |
+
+## 6. 一年后产品收入贡献三情景
+
+口径：预测未来 12 个月，即约 2026Q2-2027Q1；收入贡献不严格相加，因为 ECP、炉管、PECVD、Track 均在公司 `ECP/furnace/other` aggregate 里，表中为投资产品线模型拆分。
+
+| 产品/业务 | 当前 TTM 或年化基准 | 基准情景：未来一年收入/增速 | 乐观情景：未来一年收入/增速 | 极度乐观：未来一年收入/增速 | 关键触发条件 |
+|---|---:|---:|---:|---:|---|
+| 高端清洗/Tahoe/SPM | TTM 约 `$619M` | `$700M-$760M`，`+13%-23%` | `$800M-$880M`，`+29%-42%` | `$900M-$1.0B`，`+45%-62%` | 清洗 mix 回到约 `65%`；SPM 15-20+ 台按期交付并转 repeat；Tahoe/Ultra C wb 订单恢复 |
+| ECP front-end + AP plating | TTM aggregate 约 `$256M`，ECP 为多数 | `$330M-$400M`，`+30%-56%` | `$450M-$550M`，`+76%-115%` | `$600M-$750M`，`+134%-193%` | Q1 ECP 强度持续；front-end + packaging 双线订单；客户预付款和 first-tool 验收加速 |
+| Panel-level horizontal ECP | 起步，小于 aggregate 中一小部分 | `$20M-$45M` | `$60M-$100M` | `$120M-$180M` | 515x510/310x310 客户验证转 repeat；ASE/TSMC/OSAT panel/CoPoS 路线提前 |
+| AP cleaning/vac-p/SFP/WLP tools | TTM 约 `$85M` | `$120M-$155M`，`+41%-82%` | `$170M-$230M`，`+100%-170%` | `$260M-$350M`，`+205%-311%` | 中国外封装客户复购，新加坡 OSAT 放量，AI/HBM/CoWoS-like 二供扩产 |
+| PECVD SiCN / Ultra Pmax | 当前很小 | `$20M-$50M` | `$70M-$120M` | `$150M-$250M` | 首台 SiCN 客户现场 validation 成功，2026H2 追加订单，2027 repeat shipment |
+| Vertical furnace / thermal | 小基数 | `$40M-$80M` | `$100M-$150M` | `$180M-$250M` | 中国 mature/select advanced nodes 扩产，客户把炉管纳入 repeat tool |
+| Track | 小基数 | `$10M-$30M` | `$40M-$80M` | `$100M-$150M` | 高吞吐 Track evaluation tool 成功，成熟/准先进 lithography line 导入 |
+
+公司层面未来一年收入增速预测：
+
+| 情景 | 未来一年收入 | 对比 TTM `$960M` | 逻辑 |
+|---|---:|---:|---|
+| 基准 | `$1.15B-$1.25B` | `+20%-30%` | 基本贴近 2026 指引中高端；ECP/AP 增长抵消清洗波动 |
+| 乐观 | `$1.35B-$1.55B` | `+41%-61%` | ECP 高增延续，SPM/Tahoe 恢复，AP 客户验收快于预期 |
+| 极度乐观 | `$1.7B-$2.0B` | `+77%-108%` | first tools 大规模转 repeat，PLP/PECVD/Track 同时成功，全球客户突破；这是高赔率但低基准概率情景 |
+
+## 7. BOM、每 MW/rack/GPU/optical port 内容量和价格传导链
+
+### 7.1 先给结论：ACMR 不是直接 BOM
+
+ACMR 的工具不会装进服务器、机柜、GPU 或光模块，所以直接 BOM 含量为：
+
+| 计量单位 | ACMR 直接 BOM | 正确解释 |
+|---|---:|---|
+| 每 MW AI 数据中心 | `$0` | ACMR 不是电力、冷却、服务器或网络设备供应商 |
+| 每 rack | `$0` | 不在机柜 BOM |
+| 每 GPU / ASIC | `$0` | 不在芯片封装成品 BOM 中直接销售 |
+| 每 optical port | `$0` | 不卖光模块、DSP、laser、connector；未来 CPO/optical interposer 只可能通过封装设备间接受益 |
+
+真实价格传导链是：
+
+```text
+AI 训练/推理需求
+-> GPU/ASIC/HBM/网络芯片出货
+-> TSMC/Samsung/Intel/SMIC/CXMT/YMTC/OSAT 扩产
+-> 先进逻辑、存储、HBM、CoWoS/2.5D/PLP/RDL/TSV 工序增加
+-> WFE 和先进封装设备 capex
+-> 清洗、ECP、AP cleaning、PECVD、Track、Furnace first tools/repeat tools
+-> ACMR revenue
+```
+
+### 7.2 间接内容量模型
+
+以下是“设备收入摊销到终端 AI 硬件”的粗略量级，用于理解价格传导，不是公司披露，也不是客户采购价。假设依据：ACMR 单台工具 ASP `$0.5M` 到 `>$5M`；先进封装/前道一条线需要多台清洗/ECP/AP 工具；设备价值最终由 wafer/package throughput 摊销。
+
+| 产品/业务 | 每 GPU/ASIC 间接 ACMR 设备内容量 | 每 72 GPU rack 间接内容量 | 每 1 MW 间接内容量 | 每 optical port | 解释 |
+|---|---:|---:|---:|---:|---|
+| 清洗/Tahoe/SPM | `$20-$120` | `$1.4k-$8.6k` | `$10k-$70k` | 约 `$0` | 取决于前道/存储厂是否使用 ACM 工具以及份额；成熟中国链条高于海外链条 |
+| ECP front-end/AP plating | `$20-$150` | `$1.4k-$10.8k` | `$10k-$85k` | 约 `$0` | 对 TSV/RDL/pillar/bump/dual damascene 更直接；先进封装占比越高，内容量越高 |
+| AP cleaning/vac-p/SFP | `$10-$80` | `$0.7k-$5.8k` | `$5k-$45k` | 未来 CPO 可能 `$0.05-$1/port` 间接 | flux cleaning、RDL、fan-out、panel 工艺使用越多，内容量越高 |
+| PECVD SiCN | 当前 `$0-$20`；成功后 `$10-$100` | 当前小；成功后 `$0.7k-$7.2k` | 当前小；成功后 `$5k-$60k` | CPO/optical interposer 远期期权 | 取决于 SiCN/BEOL/hybrid bonding 是否进入客户量产 POR |
+| Track/Furnace | `$5-$60` | `$0.4k-$4.3k` | `$3k-$35k` | 约 `$0` | 属于前道 capex 的更宽泛传导，ACMR 当前份额低 |
+
+为什么区间很宽：ACMR 大部分收入来自中国客户，而 2026 主流 AI GPU/HBM/CoWoS 供应链主要在 TSMC、SK hynix、Samsung、Micron、ASE/Amkor 等全球链条中。ACMR 若只服务中国成熟/准先进节点，单位 GB300/Rubin 的内容量接近 0；若 PLP/ECP/vac-p/PECVD 被全球先进封装客户采用，内容量会快速上升。
+
+### 7.3 产品级 BOM/工艺拆分
+
+| 产品 | 进入客户 BOM 的形态 | 关键消耗/工艺对象 | 客户采购理由 | 毛利/价格传导 |
+|---|---|---|---|---|
+| Ultra C SAPS/TEBO/Tahoe/SPM | Capex 工具 | SPM、post-etch、post-CMP、post-implant 清洗；颗粒、金属污染、光刻胶残留 | 良率、particle defect、chemical saving、低损伤 | 高端工具溢价来自 recipe、particles、uptime；semi-critical 价格竞争压毛利 |
+| Ultra ECP | Capex 工具 | Cu dual-damascene、TSV、RDL、pillar、bump、Au/Ni/SnAg 等 | 均匀性、throughput、缺陷率、与客户电镀化学品协同 | 高端 ECP 有溢价；panel/advanced packaging 初期毛利受验证和定制影响 |
+| Ultra ECP ap-p | Capex 工具 | 515x510mm、310x310mm panel；pillar、bump、RDL、TGV | 降低 PLP 成本、提高大面积均匀性 | 若成为 panel POR，溢价强；若 panel 放量推迟，收入很小 |
+| Ultra C vac-p / flux cleaning | Capex 工具 | bump/under-bump 难到达区域污染、flux residue | AI 高端封装 yield loss 昂贵，低残留清洗价值高 | 客户 qualification 强，切换成本较高 |
+| SFP | Capex 工具 | TSV/RDL/fan-out 的 Cu overburden，pre-CMP 低损伤移除 | 降低 warpage/损伤，保护 fragile dielectric | 取决于是否被纳入高端封装流程 |
+| PECVD SiCN / Ultra Pmax | Capex 工具 | SiCN/dielectric、TSV passivation、hybrid bonding/BEOL insulation | 薄膜均匀性、stress、particle、低温沉积 | 当前在验证；成功后进入高毛利设备池 |
+| Ultra Lith Track | Capex 工具 | coating/developing before/after lithography | 工艺一体化、uniform downflow、robot handling | TAM 大但份额弱，溢价能力待验证 |
+
+## 8. 当前产能能力、采纳程度和认证阶段
+
+| 产品/业务 | 当前公司产能能力（美元计） | 供应链采纳程度 | 认证/验证阶段 |
+|---|---:|---|---|
+| 公司整体 | 2026 年收入指引 `$1.08B-$1.175B`；Q1 annualized revenue `$925M`；Q1 annualized shipments `$963M`；管理层称 2026 shipments 增速将高于收入增速 | 已被中国大陆多家逻辑、存储、封装客户采用；2025 年四大客户占收入 `52.2%` | 成熟产品 repeat + 新产品 first tools 并行 |
+| 清洗/Tahoe/SPM | 2025 收入 `$626M`；未来一年模型 `$700M-$760M` 基准 | 清洗是公司最大成熟业务；高温 SPM 已交付多客户 | SPM：2025Q1 中国大陆关键逻辑客户 qualification，支持 `28nm及以下`；2026 管理层预计交付 `15-20+` 台 |
+| ECP front-end/AP plating | 2025 aggregate `$199.6M`；2026Q1 aggregate `$84.2M`；未来一年模型 `$330M-$400M` 基准 | ECP 已有累计 1500 chamber 交付里程碑；front-end 和 AP 双线 | 已进入批量客户；面板级水平 ECP 为早期客户验证/first tool |
+| Panel-level horizontal ECP | 当前小，未来一年基准 `$20M-$45M` | 2025Q4 首台 515x510mm 工具交付；客户 engagement/backlog 增加 | first tool / evaluation；支持 515x510mm 与 310x310mm panel |
+| AP cleaning/vac-p/SFP/WLP tools | 2025 `$75.8M`；2026Q1 `$24.5M`；未来一年基准 `$120M-$155M` | 中国大陆外 leading packaging manufacturer 和新加坡 OSAT 出货是重要信号 | 从 first tool/evaluation 向 repeat 转化阶段 |
+| PECVD SiCN / Ultra Pmax | 当前很小，未来一年基准 `$20M-$50M` | 首台发给 leading semiconductor manufacturer | Lingang lab 达客户规格；客户现场 final validation；未确认量产 repeat |
+| Furnace/Track | 当前小，未来一年合计基准 `$50M-$110M` | 客户评估工具增加 | qualification / first tool 阶段 |
+
+## 9. 一年后产能能力、采纳和认证三情景
+
+| 产品/业务 | 基准：一年后 | 乐观：一年后 | 极度乐观：一年后 |
+|---|---|---|---|
+| 公司整体产能/出货 | 年收入能力 `$1.15B-$1.25B`，shipments `$1.25B-$1.4B`；Oregon demo lab 起步 | 年收入能力 `$1.35B-$1.55B`，shipments `$1.5B-$1.7B`；全球客户 first tools 增多 | 年收入能力 `$1.7B-$2.0B`，shipments `>$1.9B`；多个 first tools 转 repeat |
+| 清洗/Tahoe/SPM | SPM 15-20+ 台完成交付，若客户验收正常，清洗 mix 回到 `60%-65%` | SPM/Tahoe 获更多中国逻辑/存储客户，清洗收入恢复 `20%+` 增长 | 高温 SPM 被多客户列入 POR，替代国际龙头部分份额 |
+| ECP | ECP 持续高于公司平均增速，front-end 和 AP 双线 | 中国及亚洲客户扩大 plating capacity，ECP revenue 接近 `$0.5B` | AP plating + front-end ECP 同时爆发，收入接近 `$0.6B-$0.75B` |
+| Panel ECP | 515x510/310x310 客户验证转 1-2 个 repeat 订单 | 多家 OSAT/IDM panel line 导入，收入 `$60M-$100M` | PLP/CoPoS/玻璃/TGV 提前，成为公司第二增长曲线 |
+| AP cleaning/vac-p/SFP | 领先封装客户和新加坡 OSAT 形成 repeat | 中国外 AP 客户扩散，收入 `$170M-$230M` | CoWoS-like 二供和 PLP 清洗强需求，收入 `$260M+` |
+| PECVD SiCN | 首台客户 validation 完成，小批追加 | 进入 2-3 家客户 evaluation/repeat，收入 `$70M-$120M` | 被先进封装/BEOL SiCN stack 采用，收入 `$150M-$250M` |
+| Track/Furnace | 若干 first tools，少量收入 | 成熟节点/准先进节点客户导入，贡献 `$140M-$230M` 合计 | 成为 ACMR 平台化核心，但需要多客户 POR，概率低 |
+
+## 10. Backlog、订单和未来一年增速推断
+
+### 10.1 公司披露了什么，没披露什么
+
+已披露：
+
+- 2026Q1 shipments `$240.7M`，同比 `+53.6%`。
+- 2026Q1 repeat tool shipments `$96.9M`，first tool shipments `$143.8M`。
+- 2026Q1 客户现场 first-tools 成品库存 `$119.5M`，低于 2025 年底 `$145.5M`。
+- 2026Q1 contract liabilities `$179.8M`，其中客户预付款 `$168.8M`。
+- 2026Q1 revenue recognized from beginning contract liabilities `$86.1M`。
+- 2025 全年 shipments `$854M`，其中 repeat `$466M`，first tool `$388M`。
+- 公司维持 2026 年收入指引 `$1.08B-$1.175B`，并预期 2026 shipments growth outpace revenue growth。
+
+未披露：
+
+- 标准 backlog。
+- 标准 bookings。
+- Lead time。
+- 取消率。
+- 按客户、按产品型号的订单金额。
+
+### 10.2 推断订单池
+
+| 指标 | 当前信号 | 推断 |
+|---|---|---|
+| First tool shipments / total shipments | 2026Q1 `$143.8M/$240.7M`，约 `59.7%`；2025 全年 `$388M/$854M`，约 `45.4%` | 新产品和新客户评估密集，2027 潜在收入池增加，但验收风险也增加 |
+| Contract liabilities | 2026Q1 `$179.8M` | 客户预付款支持近期交付，但 Q1 下降说明部分 first tools 已验收转收入 |
+| First-tools customer-site inventory | `$119.5M` | 可视为已交付但未确认收入的一部分潜在转化池，不等同 backlog |
+| 2026 指引中点 | `$1.1275B` | 比 2025 实际 `$901.3M` 增加 `$226M`，需要 ECP/AP 和清洗恢复共同兑现 |
+| Q1 shipments 年化 | `$963M` | 低于全年指引对应的收入年化需求，但管理层称 shipments 增速高于收入；后续季度需加速 |
+| 客户集中度 | Q1 三客户 `45.9%`，2025 四客户 `52.2%` | 大客户订单窗口决定季度波动 |
+
+### 10.3 未来一年业务增速情景
+
+| 情景 | 订单/供给假设 | 未来一年收入增速 | 毛利率方向 | 取消/延迟风险 |
+|---|---|---:|---|---|
+| 基准 | 2026 指引兑现；Q1 first tools 逐步转收入；ECP/AP 高增但清洗只温和恢复 | `+20%-30%` | `44%-47%` | 中等；first tools 验收跨季度，AP/PECVD/Track 仍可能延迟 |
+| 乐观 | ECP 和 SPM repeat 订单增多；panel ECP/vac-p 中国外客户追加；Oregon demo 提升全球客户信心 | `+40%-60%` | `46%-49%` | 中等偏低；客户预付款扩大、first tool 接受率提高 |
+| 极度乐观 | PLP/先进封装设备需求提前，PECVD SiCN 成功转 repeat，Track/Furnace 多产品突破 | `+75%-100%+` | `48%-52%` | 高；这是多条 early product 同时成功，执行和供应链要求很高 |
+
+取消率推断：公司未披露取消率。由于工具销售多有客户预付款，repeat shipments 没有一般退货权，first tools 则由客户验收决定是否确认收入。合理判断是 repeat tool 取消率低，first-tool 验收延迟/不接受风险显著高于 repeat。最需要观察的不是“订单取消”，而是 **客户现场 first tools 是否持续超过 `$100M`、contract liabilities 是否下降但收入不增、库存 provision 是否上升**。
+
+## 11. 竞争格局、替代风险和客户切换成本
+
+### 11.1 主要竞争对手
+
+| 细分 | 全球/区域竞争者 | ACMR 竞争点 | 风险 |
+|---|---|---|---|
+| 清洗 / wet process | SCREEN、TEL、Lam、SEMES、Shibaura、KCTech、北方华创、芯源微、至纯科技 | SAPS/TEBO/Tahoe/SPM 差异化，客户本地化，成本和交付 | SCREEN/TEL/Lam 在先进制程和全球客户 POR 强；中国本土价格竞争压毛利 |
+| ECP | Applied Materials、Lam、TEL、ClassOne、MKS/Atotech 生态、部分区域厂商 | 1500 chamber 交付、AP/front-end 双线、panel horizontal plating 早布局 | 高端 damascene 和全球先进封装客户认证难；电镀化学品/工具协同要求高 |
+| Advanced packaging tools | Applied Materials、Besi、ASMPT、SUSS、EVG、TEL、DISCO、Onto、Camtek、KLA、SCREEN、Ebara | AP cleaning、vac-p、panel ECP、SFP 与湿法组合 | ACMR 不是混合键合/TCB/inspection 龙头；只能捕获湿法/电镀/清洗部分价值 |
+| PECVD | Applied Materials、Lam、TEL、ASM、Kokusai、拓荆科技、北方华创 | Ultra Pmax、SiCN first tool、Lingang mini-line 加快验证 | 沉积是巨头强项；ACMR 需证明 uniformity、uptime、particle 和客户 POR |
+| Track | TEL 绝对强，SEMES、Kingsemi/芯源微、SUSS 等 | 清洗/涂胶/显影整合经验 | TEL 客户锁定和全球份额强；ACMR early share 小 |
+| Furnace/thermal | TEL、Kokusai、Applied、ASM、Mattson、北方华创、屹唐 | 300mm batch/vertical furnace 扩张 | 竞争成熟，技术和客户认证周期长 |
+
+### 11.2 新技术是否是未来主流
+
+| ACMR 技术/产品 | 是否主流 | 判断 |
+|---|---|---|
+| 单片高端清洗、SPM、Tahoe | 是，且长期需要 | 前道良率、post-CMP/post-etch/post-implant 清洗不会消失；AI 芯片先进节点和 HBM/3D NAND 都增加清洗要求 |
+| ECP for TSV/RDL/pillar/bump | 是 | RDL、TSV、Cu pillar、micro-bump 和先进封装继续需要电镀；高端封装向更细线、更大面积推进，均匀性更难 |
+| Panel-level horizontal ECP | 潜在主流，但时间不确定 | PLP/CoPoS/玻璃/TGV 是降成本方向，但 2026 仍偏 pilot/qualification；2027-2028 决定主流化 |
+| Vacuum/low-pressure flux cleaning | 是，作为先进封装关键步骤 | 高端 AI 封装里 residue 和 void 风险高，清洗工具有长期需求 |
+| PECVD SiCN for BEOL/AP | 潜在主流工艺之一 | SiCN/dielectric/hybrid bonding stack 重要，但 ACMR 是否拿到 POR 未证实 |
+| Track/Furnace | 主流设备类型，但 ACMR 份额不确定 | 市场主流不代表 ACMR 必然胜出，客户认证和巨头竞争是关键 |
+
+### 11.3 替代方案
+
+| ACMR 产品 | 替代方案 | 替代风险 |
+|---|---|---|
+| SAPS/TEBO 清洗 | SCREEN/TEL/Lam 清洗、传统 megasonic/喷淋、批式清洗 | 高端客户会以 defect/yield 决定，若 ACM 不能持续领先，替换风险高 |
+| Tahoe/SPM | 国际高温 SPM、批式 SPM + 更高化学消耗方案 | Tahoe 的 chemical saving 是优势，但客户会权衡 throughput、良率和维护 |
+| Ultra ECP | AMAT/Lam/TEL/区域 ECP 工具，化学品供应商协同方案 | 若客户已有 POR，ACM 需要长验证；但中国客户国产替代给机会 |
+| Panel ECP | 传统 wafer-level ECP、vertical panel plating、其他 panel tool vendors | PLP 技术路线若放缓或客户不采用 horizontal architecture，弹性下修 |
+| AP vacuum cleaning | SCREEN/TEL/其他湿法清洗，工艺配方优化减少 flux residue | 若封装工艺改为更少 flux 或干法/等离子路径，需求变化 |
+| PECVD SiCN | AMAT/Lam/TEL/ASM/拓荆等 PECVD/ALD/CVD | 巨头沉积工具强，ACM 需要通过具体 film stack 证明 |
+
+### 11.4 客户切换成本
+
+客户切换成本高于普通设备，因为：
+
+- 清洗/ECP/PECVD 都会进入客户 recipe、defect budget 和 yield model。
+- 新工具通常需要 first-tool 评估，可能 `6-24` 个月才转收入；ACMR 10-K 明确 first tool 可能 24 个月或更久不能确认收入或收款。
+- 电镀和清洗常常与化学品、过滤、现场应用工程绑定；替换工具会改变 uniformity、particle、residue、stress、Cu grain、recess 和后续 bonding/CMP。
+- 但在中国国产替代场景，客户愿意多供应商验证，价格谈判强。高切换成本保护已量产 POR，也提高新进入难度。
+
+## 12. 投资判断和跟踪指标
+
+### 12.1 基准投资判断
+
+ACMR 的基本面在改善：2026Q1 收入和 shipments 强，ECP/AP 线索明显，资产负债表很强。但股价和估值已经很激进，投资胜负不在“公司是否增长”，而在“增长是否显著高于 2026 指引且毛利率不再被价格竞争稀释”。
+
+基准看法：
+
+- 收入：2026 年大概率落在 `$1.08B-$1.175B`，若 Q2/Q3 shipments 强，可能靠近高端。
+- 毛利率：`44%-47%` 较合理，Q4 2025 低点不应线性外推，2024 的 `50%+` 也不应轻易外推。
+- 最强产品：ECP、SPM/Tahoe、AP cleaning/vac-p、panel horizontal ECP。
+- 最强期权：PECVD SiCN、Track、vertical furnace、Oregon/global customer。
+- 最大风险：China revenue concentration、Entity List、客户验收延迟、库存/应收增加、国产设备价格竞争。
+
+### 12.2 月度/季度跟踪清单
+
+| 指标 | 观察方式 | 解释 |
+|---|---|---|
+| Quarterly shipments | 公司财报/预告 | 若 shipments 增速持续高于 revenue，说明 future revenue pool 增大；若收入不转化则验收风险上升 |
+| First tool shipments / repeat tool shipments | 10-Q/10-K | Repeat 占比上升代表产品成熟；first tool 占比过高代表期权大但现金占用和验收风险大 |
+| 客户现场 first-tools 库存 | 10-Q note inventory | 若持续上升且收入不增，说明验收变慢 |
+| Contract liabilities / customer advances | 10-Q | 预付款是订单能见度代理；减少需看是否转收入还是订单弱 |
+| ECP/furnace/other 收入 | 财报产品表 | 当前最强增长线；若 Q2/Q3 不能保持高位，Q1 可能只是 timing |
+| AP ex-ECP 收入 | 财报产品表 | 判断中国外封装客户、OSAT 和 AP tools 是否形成 repeat |
+| 毛利率 | 财报 | 判断产品 mix 和价格竞争，尤其 semi-critical 清洗和新产品初期成本 |
+| A/R 和库存 | 资产负债表 | 判断增长质量和验收周期 |
+| Oregon facility | 公司公告/电话会 | 是否按 2026 年底 demo lab/US-made tools 目标推进 |
+| Entity List 替代供应 | 10-Q 风险披露/毛利/交期 | 若关键零部件替代失败，可能影响交付和客户信心 |
+| 行业侧 CoWoS/HBM/PLP/中国 WFE capex | 行业资料/客户财报 | 决定 AP/ECP/SPM 的外部需求强度 |
+
+## 13. 主要来源和交叉验证
+
+### 公司一手资料
+
+- ACM Research, [Reports First Quarter 2026 Results](https://ir.acmr.com/news-releases/news-release-details/acm-research-reports-first-quarter-2026-results/), 2026-05-07。
+- ACM Research, [2026Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1680062/000162828026032842/acmr-20260331.htm), SEC, filed 2026-05。
+- ACM Research, [Reports Fourth Quarter and Fiscal Year 2025 Results](https://ir.acmr.com/news-releases/news-release-details/acm-research-reports-fourth-quarter-and-fiscal-year-2025-results/), 2026-02-26。
+- ACM Research, [2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1680062/000162828026013231/acmr-20251231.htm), SEC, filed 2026-03。
+- ACM Research, [Reports Third Quarter 2025 Results](https://ir.acmr.com/news-releases/news-release-details/acm-research-reports-third-quarter-2025-results), 2025-11-05。
+- ACM Research, [Reports Second Quarter 2025 Results](https://ir.acmr.com/news-releases/news-release-details/acm-research-reports-second-quarter-2025-results), 2025-08-06。
+- ACM Research, [Reports First Quarter 2025 Results](https://ir.acmr.com/news-releases/news-release-details/acm-research-reports-first-quarter-2025-results), 2025-05-08。
+- ACM Research product pages: [Wet Processing](https://www.acmr.com/tools-processes/wet-processing/), [Electrochemical Plating](https://www.acmr.com/tools-processes/electrochemical-plating/), [Thermal Deposition Processing](https://www.acmr.com/tools-processes/thermal-deposition-processing/), [Track](https://www.acmr.com/tools-processes/track/), [PECVD](https://www.acmr.com/tools-and-processes/pecvd/), [Ultra Pmax](https://www.acmr.com/tools-and-processes/pecvd/ultra-pmax/), [Wafer-Level Packaging](https://www.acmr.com/industries/wafer-level-packaging/), [Panel-Level Packaging](https://www.acmr.com/industries/panel-level-packaging/), [Technical Papers](https://www.acmr.com/tech-papers/)。
+- Motley Fool, [ACM Research Q1 2026 Earnings Transcript](https://www.fool.com/earnings/call-transcripts/2026/05/08/acm-research-acmr-q1-2026-earnings-transcript/), 2026-05-08，用于补充管理层对 SPM、panel ECP、PECVD、catch-up shipments 和清洗 backlog 的口径；二手转录，权重低于 SEC/公司公告。
+
+### 市场数据
+
+- StockAnalysis, [ACMR Statistics & Valuation](https://stockanalysis.com/stocks/acmr/statistics/), data checked/updated 2026-06-11，用于股价、市值、PE、Forward PE、PS、Forward PS、TTM margin、current ratio、quick ratio、debt/equity、TTM cash flow。
+
+### 项目内允许行业资料
+
+- `基本面/行业调研/行业索引.md`：确认行业目录和标准行业名。
+- `基本面/行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`：用于 AI 芯片前道设备、清洗/ECP/PECVD/Track/Furnace 竞争格局和 WFE 景气框架。
+- `基本面/行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`：用于 CoWoS/HBM/TCB/hybrid bonding/PLP 对设备链的传导、先进封装设备订单和良率瓶颈。
+- `基本面/行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装湿化学与表面处理材料_2026-06-11.md`：用于 RDL、Cu pillar、TSV、bump、flux cleaning、表面处理和高端湿法需求映射。
+- `基本面/行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`：用于 AI 芯片先进封装、CoWoS/HBM/PLP/SoIC/中介层的需求传导。
+- `基本面/行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`：用于 HBM3E/HBM4、AI GPU/ASIC、封装和设备链需求。
+

@@ -1,0 +1,156 @@
+# 公司收入传导与价值传导评估：Vishay Intertechnology（VSH）
+
+报告日期：2026-06-12（America/Los_Angeles）  
+研究对象：Vishay Intertechnology, Inc.（NYSE: VSH）  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM，即未来 12 个月或未来 4 个季度。  
+资料边界：使用 `公司调研/` 与 `行业调研/` 的公司、行业和产业背景资料，并用 Vishay 最新正式财报、SEC 10-Q 与公司产品资料校验关键日期和数字；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、模型比较、全公司排序或市场定价结论。  
+重要限制：Vishay 不披露 AI 数据中心单独收入，也未披露具体 hyperscaler / NVIDIA / AMD / OCP 平台 design win 金额。本文所有 AI 数据中心或 AI 电源链收入均为基于分部收入、订单、产品适配度和行业需求的经营估算，不等同于公司披露数字。本报告不做投资评级、目标价、股价区间或估值倍数判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 公司收入、利润、现金流和业务传导。FY2026、FY2027、800VDC、MaxSiC 和长期 AI power path 只作为补充或远期期权，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：2025 全年收入约 `30.69 亿美元`；2026Q1 收入 `8.392 亿美元`，同比 `+17.3%`、环比 `+4.8%`；Q1 gross margin `21.0%`、operating margin `2.6%`、EBITDA margin `9.3%`；Q1 期末 backlog `15.923 亿美元`，book-to-bill `1.34`，其中半导体 `1.47`、被动元件 `1.23`；Q2 2026 管理层指引收入 `8.75-9.05 亿美元`、毛利率 `22.0% +/- 50 bps`。
+- 重要产品/业务线：MOSFET / MaxSiC 与电源开关器件、Diodes / rectifiers / TVS 保护、Optoelectronics / optocouplers 隔离检测、Resistors / current sense、Inductors / magnetics、Capacitors / MLCC / film / DC-link。
+- NTM 公司收入四情景：悲观 `33.0-34.5 亿美元`；基准 `35.5-37.5 亿美元`；乐观 `38.5-41.0 亿美元`；极度乐观 `42.0-45.5 亿美元`。基准相对 2025 增长约 `+16%-22%`，主要由 Q2 指引兑现、backlog 转化和分销/工业/汽车补库正常化驱动。
+- 利润或 EBITDA 四情景：悲观 EBITDA `2.5-3.1 亿美元`，FCF 继续明显为负；基准 EBITDA `3.3-4.3 亿美元`，FCF 接近 `-1.0 亿美元至小幅转正`；乐观 EBITDA `5.0-6.5 亿美元`；极度乐观 EBITDA `7.0-9.0 亿美元`。利润弹性取决于 MOSFET/Newport 固定成本吸收、电感/电容/电阻 mix、ASP 是否止跌。
+- 最大传导瓶颈：Q1 高 book-to-bill 中分销补库存和安全库存成分较高，需求能否转成 OEM/EMS 可确认出货仍需 Q2-Q3 验证。
+- 最大利润率变量：MOSFET 分部 Q1 gross margin 仅 `12.9%`、segment operating margin 仅 `0.8%`，若 Newport 和 SiC/MOSFET 扩产不能提高利用率和 mix，收入上行会被固定成本和 ASP 下滑吞噬。
+- 最大现金流变量：2026 capex 计划 `4.00-4.40 亿美元`，Q1 free cash 为 `-4,693 万美元`；即使收入增长，营运资本、库存和德国 12 英寸/高增长产品扩产仍会压制 FCF。
+- 可信度：公司总收入基准为中高；产品级 AI/DC 收入拆分为中；800VDC / MaxSiC / 高压 AI 电源链极度乐观为低到中。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| MOSFET / MaxSiC / AI PSU 开关器件 | 2026Q1 `1.740 亿美元`，年化约 `6.96 亿美元` | `20.7%` | 公司最大半导体弹性；AI PSU、48V/54V、UPS、PFC、未来 800VDC 均相关 | A：分部收入、B2B、毛利率；C/D：MaxSiC 与 800V design-in | 分部收入进入基准；MaxSiC 大规模 AI/DC 放量只进乐观/极度乐观 | 1200V/1700V SiC、800VDC HVDC、AI UPS 高压模块 |
+| Diodes / rectifiers / TVS / protection | 2026Q1 `1.637 亿美元`，年化约 `6.55 亿美元` | `19.5%` | 整流、PFC、TVS/ESD、高压保护和 UPS/BBU 必需件 | A：分部收入；B：订单强度；C：AI rack 保护 attach | 基准纳入，收入弹性中高，利润质量好于 MOSFET | 800VDC 高压保护、solid-state protection 相邻机会 |
+| Optoelectronics / optocouplers / isolation | 2026Q1 `0.589 亿美元`，年化约 `2.36 亿美元` | `7.0%` | 隔离、监测、工业/汽车/电源控制；不是 AI 光模块核心价值池 | A：分部收入；C：AI 电源隔离与检测适配 | 基准纳入但权重低；AI/DC 只保守纳入 | 高压隔离、固态继电器、800V BMS/能源系统 |
+| Resistors / current sense / shunts | 2026Q1 `2.037 亿美元`，年化约 `8.15 亿美元` | `24.3%` | 最大收入分部；电流检测、功率监测、BBU/PSU/母线保护直接相关 | A：分部收入；B：分销/工业需求恢复；C：AI rack current sense attach | 基准核心收入，AI/DC 增量以中等折扣纳入 | 高功率 Power Metal Strip、智能分流器、800V 系统检测 |
+| Inductors / magnetics | 2026Q1 `0.922 亿美元`，年化约 `3.69 亿美元` | `11.0%` | 最高利润质量分部；DC/DC、PoL、滤波、AI PSU 磁性件相关 | A：分部收入与高利润率；C：AI power density 拉动 | 基准纳入，乐观中利润弹性最清楚 | 大电流低 DCR 电感、嵌入式磁性件、VPD/IBC 相邻 |
+| Capacitors / MLCC / film / DC-link | 2026Q1 `1.467 亿美元`，年化约 `5.87 亿美元` | `17.5%` | AI server 电源完整性、PSU/IBC/BBU、DC-link、高压/低损耗电容 | A：分部收入；B：电容 B2B 与行业高端 MLCC 订单；C：AI/DC 高端 mix | 基准纳入；AI server 高端陶瓷与 800VDC 高压电容需保守折扣 | 高端 MLCC、embedded/silicon capacitor、800VDC DC-link |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不评估 Vishay 份额、收入确认、利润率或公司总收入。需求强弱均相对当前需求锚：Q1 2026 book-to-bill、Q2 指引、AI 机柜供电/PSU/BBU/高端 MLCC 行业资料、工业/汽车/分销补库节奏。绝对变化为 NTM 外部需求池相对当前 run-rate 的方向性变化，不等同于 Vishay 收入增长。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| MOSFET / MaxSiC / AI PSU 开关器件 | Q1 MOSFET B2B `1.57`，收入同比 `+22.4%`；行业 2026 主线是 48V/54V、AI PSU、PFC、热插拔；800VDC 仍以 design-in 为主 | AI PSU/工业补库低于预期，B2B 回落至 `<1.0`，MaxSiC 仍停留样品/小批量 | 48V/54V、PFC、工业/汽车恢复正常兑现，B2B 回落至 `1.05-1.15` | AI PSU/UPS/BBU 订单继续强，B2B 维持 `>1.20`，高压 MOSFET 和 SiC 认证扩大 | 800VDC/HVDC 在 NTM 内提前进入多客户小规模量产，MaxSiC 与 1200V 模块明显放量 | 悲观 `-5%~+5%`；基准 `+10%~+20%`；乐观 `+25%~+40%`；极度 `+50%+` | 基准略高于当前 2025 run-rate，但不把 800V 全面放量放入基准 | 证据：Q1 B2B 强、AI power path 行业资料、Vishay AI power selector。反证：Q1 MOSFET ASP 同比降 `5.2%`、分部 OPM 仅 `0.8%`、800V 标准和认证慢 |
+| Diodes / rectifiers / TVS / protection | Q1 Diodes B2B `1.35`，收入同比 `+16.1%`；AI PSU、PFC、UPS/BBU、hot-swap 和 TVS/ESD 需求提升 | 保护/整流订单随分销去库存反复，标准件价格下行 | 工业、汽车、电源和 AI rack 保护需求正常增长 | 高压保护和 PFC/UPS 整流 attach 率提高，认证件供给偏紧 | 800VDC 和 solid-state protection 提前拉动高压保护件 | 悲观 `0%~+5%`；基准 `+8%~+15%`；乐观 `+18%~+30%`；极度 `+35%+` | 基准符合当前 B2B 和电源链需求，不上调到极度 | 证据：Q1 B2B `1.35`、GM `21.3%`。反证：通用 diode/TVS 多供应商，价格权弱 |
+| Optoelectronics / optocouplers / isolation | Q1 Opto B2B `1.48`，收入同比 `+15.1%`；隔离和检测受工业/汽车/能源系统拉动 | Q1 高 B2B 主要来自补库，终端项目延后 | 隔离、传感、工业电源和汽车恢复正常 | UPS/BBU、储能、800V BMS/隔离检测需求强化 | 高压 DC 架构和能源系统认证使隔离件非线性上修 | 悲观 `-5%~+3%`；基准 `+5%~+12%`；乐观 `+15%~+25%`；极度 `+30%+` | 基准偏稳，AI 光模块相关性不作为上修理由 | 证据：B2B 强、能源/工业隔离需求。反证：Opto 不是 AI 光互联核心器件，Q4 2025 GM 曾降至 `15.0%` |
+| Resistors / current sense / shunts | Q1 Resistors B2B `1.26`，收入同比 `+13.5%`；AI rack 电流检测、PSU、BBU、母线保护需求提升 | 分销补库回落，普通电阻价格竞争抵消量增 | 工业/汽车/AI 电源 current sense 正常增长 | Power Metal Strip、高功率分流器和精密检测料号需求上修 | 高功率 rack、BBU 和 800V 系统使检测节点和 ASP 同时上升 | 悲观 `0%~+5%`；基准 `+8%~+15%`；乐观 `+18%~+28%`；极度 `+35%+` | 基准符合当前预期，乐观需看到 OEM/EMS 直采和 ASP 稳定 | 证据：最大分部、Q1 收入 `2.037 亿美元`。反证：Q1 环比 ASP 仍降 `0.4%`，金属/人工成本上升 |
+| Inductors / magnetics | Q1 Inductors B2B `1.31`，GM `31.8%`、OPM `27.4%`；AI DC/DC、PoL、滤波和 PSU 磁性件需求增长 | 服务器/工业补库后降温，部分磁性件被模块供应商内制 | AI PSU、48V/54V、DC/DC 正常增长，利润质量保持 | 大电流低 DCR、电源密度提高，客户更重视热与效率 | 180-300kW rack 加速，IBC/VPD/高频磁性件局部紧缺 | 悲观 `0%~+5%`；基准 `+8%~+16%`；乐观 `+20%~+35%`；极度 `+45%+` | 基准略高于当前 run-rate；极度只作为上限 | 证据：利润率最高，B2B `1.31`。反证：分部收入体量小，客户可多供或内制 |
+| Capacitors / MLCC / film / DC-link | Q1 Capacitors B2B `1.13`，收入同比 `+25.0%`；行业高端 MLCC/AI server 电容、PSU/IBC/DC-link 需求强 | 普通电容价格回落，高端 MLCC 订单延后；800VDC 不进 NTM | AI server、PSU/IBC、高压/低损耗电容需求正常增长 | 高端 MLCC、film/DC-link、BBU/energy shelf 同时拉动，ASP/mix 改善 | Rubin/MI400/800VDC 与 embedded/silicon capacitor 提前放量 | 悲观 `+3%~+8%`；基准 `+12%~+22%`；乐观 `+25%~+45%`；极度 `+60%+` | 基准高于公司平均，但 Vishay 不等同 Murata/SEMCO 头部 MLCC | 证据：分部同比 `+25%`、行业资料显示 AI server 电容需求高增长。反证：Vishay 在高端 MLCC 非绝对龙头，B2B `1.13` 弱于其他分部 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断产品需求能否进入 Vishay NTM 收入表，以及当前可收入化基数。公司能参与 AI 电源链需求池，不等于 NTM 可确认收入。当前收入锚点优先使用 Q1 2026 分部收入、book-to-bill、Q2 指引、backlog 和已发布产品资料。基准基数以 A/B 级证据为主；MaxSiC、800VDC、embedded capacitor、特定 hyperscaler design-in 如无客户/金额/交付时间表，不能进入基准，只能进入乐观、极度乐观或远期期权。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| MOSFET / MaxSiC / AI PSU 开关器件 | Q1 `1.740 亿美元`；B2B `1.57`；GM `12.9%`、OPM `0.8%`；Newport 用于 SiC MOSFET/diodes 能力扩展 | 直接进入 PSU、PFC、48V/54V、UPS/BBU；MaxSiC 对 800V/高压为直接但早期 | 当前低利润，高经营杠杆；SiC/高压若放量利润率上行 | `6.4-7.0 亿美元` | `7.2-7.8 亿美元` | `8.2-9.2 亿美元` | `9.5-11.0 亿美元` | 基准略高于 Q1 年化，符合高 B2B 但折扣 ASP/分销风险 | A：分部收入；B：backlog/B2B；C：SiC/AI PSU 产品；D：800V 大客户 | 是，分部收入进入；MaxSiC 大上修不进基准 | A/B 支持分部 run-rate；C/D 只提高上限 | 基准承认 MOSFET 恢复；800V/MaxSiC 非线性放量为乐观以上 |
+| Diodes / rectifiers / TVS / protection | Q1 `1.637 亿美元`；B2B `1.35`；GM `21.3%`、OPM `15.8%` | 直接进入整流、保护、PFC、UPS/BBU；部分通过电源/工业客户间接 | 稳定现金利润分部；认证件毛利高于通用品 | `6.1-6.7 亿美元` | `6.7-7.3 亿美元` | `7.5-8.3 亿美元` | `8.6-9.8 亿美元` | 基准符合当前订单恢复，乐观需 protection attach/价格更强 | A/B | 是 | Q1 分部收入和 B2B，AI power path 保护需求明确 | 基准纳入；800V 高压保护只进入乐观上限 |
+| Optoelectronics / optocouplers / isolation | Q1 `0.589 亿美元`；B2B `1.48`；GM `18.6%`、OPM `8.0%` | 多为工业/汽车/电源控制间接暴露；高压隔离直接暴露较小 | 中等利润；收入体量小 | `2.1-2.4 亿美元` | `2.3-2.6 亿美元` | `2.7-3.1 亿美元` | `3.2-3.8 亿美元` | 基准接近 Q1 年化，不能按 AI 光模块上修 | A/B，AI 隔离为 C | 是，但权重低 | 分部收入可确认；AI/DC 只作为局部需求 | 稳定纳入，非核心增量 |
+| Resistors / current sense / shunts | Q1 `2.037 亿美元`；B2B `1.26`；GM `22.0%`、OPM `16.8%` | 直接进入电流检测、母线/PSU/BBU、功率监控；普通电阻间接 | 利润质量好，成本受金属/人工影响 | `7.7-8.3 亿美元` | `8.3-9.0 亿美元` | `9.3-10.2 亿美元` | `10.5-12.0 亿美元` | 基准略高于 Q1 年化；价格上修需证据 | A/B | 是 | 最大收入分部，订单和工业需求可见 | 基准核心贡献；高功率 shunt 上修需 OEM/项目证据 |
+| Inductors / magnetics | Q1 `0.922 亿美元`；B2B `1.31`；GM `31.8%`、OPM `27.4%` | 直接进入 DC/DC、PoL、AI PSU、滤波；也受汽车/工业拉动 | 公司内最高利润质量，规模小但杠杆强 | `3.4-3.8 亿美元` | `3.7-4.2 亿美元` | `4.4-5.0 亿美元` | `5.2-6.2 亿美元` | 基准接近 Q1 年化上修，乐观需高端大电流料号紧张 | A/B，AI 高端为 C | 是 | 分部利润率和 B2B 强，行业 power density 方向明确 | 基准纳入；VPD/嵌入式磁性件只作远期期权 |
+| Capacitors / MLCC / film / DC-link | Q1 `1.467 亿美元`；B2B `1.13`；GM `23.4%`、OPM `18.7%` | 直接进入 AI server 去耦、PSU/IBC、BBU、DC-link；Vishay 高端 MLCC/film/特殊电容为可参与 | 利润中高；高端 mix 重要，普通电容周期性强 | `5.3-6.0 亿美元` | `5.9-6.8 亿美元` | `7.0-8.2 亿美元` | `8.5-10.5 亿美元` | 基准高于 2025 run-rate但低于行业头部高端 MLCC弹性 | A/B；高端 AI MLCC 为 C；embedded/silicon 为 D/E | 是，分部收入进入；新技术期权不进基准 | Q1 同比高增长、分部收入可见；AI/DC 子拆分需折扣 | 基准纳入；800VDC DC-link 与 embedded capacitor 只进乐观以上 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从需求和收入基数出发，判断每个重要产品在 NTM 内对 Vishay 的收入与利润贡献。表中收入贡献为该业务线 NTM 收入口径；利润贡献主要指 segment operating income 或近似经营贡献，不等同于公司 consolidated operating income，因为公司层面还需扣除总部 SG&A、利息、税费和扩产相关成本。各产品上限不可简单相加，因同一客户预算、power shelf、PSU、BBU 和分销库存会互相重叠。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| MOSFET / MaxSiC / AI PSU 开关器件 | 悲观 | `6.4-7.0 亿美元` | `0-0.2 亿美元` | OPM `0%-3%`，低于当前改善预期 | 低于当前预期 | Q1 ASP 同比 `-5.2%`，Newport 固定成本仍重 | 保留悲观 | 高 B2B 被补库存解释，SiC/MaxSiC 未进量产 |
+| MOSFET / MaxSiC / AI PSU 开关器件 | 基准 | `7.2-7.8 亿美元` | `0.2-0.5 亿美元` | OPM `3%-6%`，从 Q1 `0.8%` 修复 | 符合当前预期 | B2B `1.57`、Q2 指引、AI PSU/48V 需求 | 保留基准 | ASP 下滑和产能爬坡成本限制利润留存 |
+| MOSFET / MaxSiC / AI PSU 开关器件 | 乐观 | `8.2-9.2 亿美元` | `0.6-1.0 亿美元` | OPM `7%-11%` | 高于当前预期 | AI PSU/UPS/高压 MOSFET 订单持续，Newport 利用率提升 | 保留为乐观 | 必须看到 OEM/EMS 订单质量，而非只看分销 |
+| MOSFET / MaxSiC / AI PSU 开关器件 | 极度乐观 | `9.5-11.0 亿美元` | `1.1-1.7 亿美元` | OPM `12%-16%` | 显著高于当前预期，只是 NTM 上限 | MaxSiC、800VDC、1200V 模块和高压 UPS 同时进展 | 下移为乐观上限 | 800VDC NTM 时间表和客户收入路径不足 |
+| Diodes / rectifiers / TVS / protection | 悲观 | `6.1-6.7 亿美元` | `0.8-1.0 亿美元` | OPM `13%-15%` | 低于当前预期但仍盈利 | 通用品价格竞争，工业补库回落 | 保留悲观 | 保护件多供、低 ASP |
+| Diodes / rectifiers / TVS / protection | 基准 | `6.7-7.3 亿美元` | `1.0-1.2 亿美元` | OPM `15%-17%` | 符合当前预期 | Q1 OPM `15.8%`，B2B `1.35` | 保留基准 | 高压保护溢价有限 |
+| Diodes / rectifiers / TVS / protection | 乐观 | `7.5-8.3 亿美元` | `1.2-1.5 亿美元` | OPM `16%-19%` | 高于当前预期 | AI rack protection / PFC / UPS attach 上升 | 保留乐观 | 客户多供应商压价 |
+| Diodes / rectifiers / TVS / protection | 极度乐观 | `8.6-9.8 亿美元` | `1.5-2.0 亿美元` | OPM `18%-21%` | 明显高于当前预期 | 800VDC/solid-state protection 认证件提前放量 | 下移为乐观上限 | 高压保护 NTM 收入证据不足 |
+| Optoelectronics / optocouplers / isolation | 悲观 | `2.1-2.4 亿美元` | `0.1-0.2 亿美元` | OPM `4%-7%` | 低于当前预期 | 补库回落、光电 mix 不利 | 保留悲观 | AI 相关性弱于半导体/被动件 |
+| Optoelectronics / optocouplers / isolation | 基准 | `2.3-2.6 亿美元` | `0.2-0.25 亿美元` | OPM `7%-10%` | 符合当前预期 | Q1 B2B `1.48`、隔离/检测需求 | 保留基准 | 收入小，难驱动公司级上修 |
+| Optoelectronics / optocouplers / isolation | 乐观 | `2.7-3.1 亿美元` | `0.25-0.35 亿美元` | OPM `9%-12%` | 小幅高于预期 | UPS/BBU/储能隔离、工业项目增强 | 保留乐观但低权重 | 客户项目未披露 |
+| Optoelectronics / optocouplers / isolation | 极度乐观 | `3.2-3.8 亿美元` | `0.4-0.5 亿美元` | OPM `12%-15%` | 高于预期但可信度低 | 高压隔离和固态继电器需求爆发 | 移入附录 | 不是公司 AI/DC 主传导链 |
+| Resistors / current sense / shunts | 悲观 | `7.7-8.3 亿美元` | `1.1-1.3 亿美元` | OPM `14%-16%` | 低于当前预期 | 成本上升、分销回落 | 保留悲观 | 金属/人工成本和普通电阻价格 |
+| Resistors / current sense / shunts | 基准 | `8.3-9.0 亿美元` | `1.3-1.6 亿美元` | OPM `16%-18%` | 符合当前预期 | Q1 OPM `16.8%`、B2B `1.26` | 保留基准 | ASP 需要稳定才有上修 |
+| Resistors / current sense / shunts | 乐观 | `9.3-10.2 亿美元` | `1.7-2.1 亿美元` | OPM `18%-21%` | 高于当前预期 | AI rack current sense、高功率 shunt 和工业电力项目 | 保留乐观 | 高功率料号份额未披露 |
+| Resistors / current sense / shunts | 极度乐观 | `10.5-12.0 亿美元` | `2.2-2.8 亿美元` | OPM `21%-24%` | 显著高于当前预期 | 300kW rack、BBU、800V 系统检测价值量同步提升 | 下移为乐观上限 | 需要多个平台 design-in 和 ASP 上修 |
+| Inductors / magnetics | 悲观 | `3.4-3.8 亿美元` | `0.75-0.95 亿美元` | OPM `22%-25%` | 低于当前预期但质量仍好 | 补库回落或客户内制 | 保留悲观 | 分部小，需求集中度可能高 |
+| Inductors / magnetics | 基准 | `3.7-4.2 亿美元` | `0.95-1.20 亿美元` | OPM `25%-29%` | 符合当前预期 | Q1 OPM `27.4%`，AI power density 方向明确 | 保留基准 | 材料成本和大客户压价 |
+| Inductors / magnetics | 乐观 | `4.4-5.0 亿美元` | `1.25-1.55 亿美元` | OPM `28%-31%` | 高于当前预期 | 低 DCR、大电流和滤波料号紧张 | 保留乐观 | 需验证持续 B2B 而非一次性补货 |
+| Inductors / magnetics | 极度乐观 | `5.2-6.2 亿美元` | `1.65-2.10 亿美元` | OPM `31%-34%` | 明显高于当前预期 | 高功率 rack、VPD/IBC 磁性件加速 | 下移为乐观上限 | NTM 内嵌入式磁性件证据不足 |
+| Capacitors / MLCC / film / DC-link | 悲观 | `5.3-6.0 亿美元` | `0.8-1.0 亿美元` | OPM `15%-17%` | 低于当前预期 | 普通电容周期回落，800V 延后 | 保留悲观 | Vishay 非高端 MLCC 绝对龙头 |
+| Capacitors / MLCC / film / DC-link | 基准 | `5.9-6.8 亿美元` | `1.0-1.3 亿美元` | OPM `17%-20%` | 符合当前预期 | Q1 同比 `+25.0%`、AI PSU/MLCC 行业需求 | 保留基准 | B2B `1.13` 不支持极端上修 |
+| Capacitors / MLCC / film / DC-link | 乐观 | `7.0-8.2 亿美元` | `1.4-1.8 亿美元` | OPM `20%-23%` | 高于当前预期 | 高端 MLCC、DC-link、film、BBU/energy shelf mix 改善 | 保留乐观 | 需客户和产品 mix 证据 |
+| Capacitors / MLCC / film / DC-link | 极度乐观 | `8.5-10.5 亿美元` | `1.9-2.6 亿美元` | OPM `23%-26%` | 仅为上限 | Rubin/800VDC/embedded/silicon capacitor 共同加速 | 下移为乐观上限或附录 | 新技术路径多数超过 NTM 基准 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA、净利润和自由现金流方向。汇总时已检查重复计算：AI PSU、48V/54V、BBU/UPS、DC-link、电流检测和分销补库属于同一电源链预算的一部分，不能把每个产品上限简单相加；MaxSiC、800VDC、embedded/silicon capacitor 多数为远期期权或乐观上限。公司层面利润率低于分部利润率，因为还需扣除总部 SG&A、战略扩产、股权薪酬、利息和税费。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `33.0-34.5 亿美元` | 相对 2025 `+8%-12%` | 低于 Q2 指引年化、backlog 隐含和当前恢复预期；Q2 可能达指引下沿但 H2 订单回落 | `20.5%-21.5%` | `1.5%-3.0%` | EBITDA `2.5-3.1 亿美元`；净利润 `0-0.5 亿美元` | 继续明显为负，约 `-2.0 至 -1.0 亿美元`，capex 与库存消耗现金 | 中 | 分销补库反噬、MOSFET ASP 下滑、Newport/扩产固定成本、普通器件价格竞争 |
+| 基准公司 | `35.5-37.5 亿美元` | 相对 2025 `+16%-22%` | 接近管理层 Q2 指引、Q1 run-rate、backlog 转化和正常库存恢复；不假设 800V 全面放量 | `21.8%-23.0%` | `3.5%-5.5%` | EBITDA `3.3-4.3 亿美元`；净利润 `0.6-1.2 亿美元` | `-1.0 亿美元至小幅转正`，取决于库存和 capex 节奏 | 中高 | 收入能否从分销订单变 OEM/EMS 出货；MOSFET 利润释放；2026 capex `4.00-4.40 亿美元` |
+| 乐观公司 | `38.5-41.0 亿美元` | 相对 2025 `+25%-34%` | 高于当前预期，要求 Q1 高 B2B 在 Q2-Q4 继续转收入，且 AI/DC、工业、汽车同步强 | `23.5%-25.5%` | `6.0%-9.0%` | EBITDA `5.0-6.5 亿美元`；净利润 `1.6-2.6 亿美元` | 转正或接近 `0.5-1.5 亿美元`，但仍受 capex 抑制 | 中 | 高毛利电感/电容/电阻 mix 是否足以抵消 MOSFET 和通用品价格；订单取消率未披露 |
+| 极度乐观公司 | `42.0-45.5 亿美元` | 相对 2025 `+37%-48%` | 显著高于当前预期；需要需求、公司捕获、利润率和执行同时突破 | `25.5%-28.0%` | `9.0%-13.0%` | EBITDA `7.0-9.0 亿美元`；净利润 `3.0-4.5 亿美元` | `+1.5 至 +3.0 亿美元`，前提是 capex/营运资本不再继续吞噬增长 | 低到中 | 需要 800VDC/MaxSiC、高端 MLCC/DC-link、current sense、inductor、保护件同时放量，且分销订单真实 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。正向证据只提升它实际影响的层级；同一风险只处理一次，不在需求、收入、利润和公司汇总中重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 总 book-to-bill `1.34`，半导体 `1.47`、被动元件 `1.23`，backlog `15.923 亿美元` / `5.7 个月` | 收入基数、产品贡献、执行可信度 | 支持基准收入 `35.5-37.5 亿美元`，并给乐观提供订单基础 | 只有转为高利用率和高 mix 才提升利润率 | 提高未来 1-2 个季度可见度，但未披露取消率 | 基准保留；乐观保留；不直接上移到极度乐观 |
+| Q2 2026 指引收入 `8.75-9.05 亿美元`、GM `22.0% +/- 50 bps` | 公司汇总、利润率 | 支持 Q1 年化向上，基准收入应高于 2025 run-rate | 支持 GM 从 Q1 `21.0%` 改善到 `22%+` | 若 Q2 达成，说明 backlog turns 正在转化 | 基准保留 |
+| 分销商和渠道补库因素；公司披露 2025 曾经历 distribution customers 消化高库存 | 收入确认、执行可信度 | 高 B2B 可能高估终端需求，限制乐观和极度乐观 | 若订单为低毛利补库，对 GM 支持弱 | 可能带来库存、订单延后、营运资本压力 | 悲观保留；乐观不排除；极度乐观下移 |
+| MOSFET 分部 Q1 GM `12.9%`、OPM `0.8%`，ASP 同比 `-5.2%` | 产品利润、公司利润率 | 不否定收入恢复，但限制 MOSFET 收入留存 | 是最大利润率约束，阻止基准自动扩张 | Newport/12-inch/SiC 扩产拖累 FCF | 基准利润保守；极度乐观下移 |
+| Inductors Q1 GM `31.8%`、OPM `27.4%`，B2B `1.31` | 产品贡献、公司 mix | 支持高质量收入小幅上修 | 明确提升利润质量 | 规模小，不能单独改变公司现金流 | 基准保留；乐观保留 |
+| Capacitors Q1 收入同比 `+25.0%`，AI high-end MLCC / PSU / DC-link 行业需求强 | 产品需求、产品贡献 | 支持电容基准高于公司平均增长 | 若 mix 转向高压/低损耗/高端陶瓷，可提高 OPM | 高端料可能增加库存和测试/认证周期 | 基准保留；乐观保留；embedded/silicon 仅作跟踪 |
+| Vishay AI power selector、PCIM/APEC 产品资料：AI server power、PFC、48V eFuse、Power Metal Strip、high-current inductors、DC-link、SiC MOSFETs | 收入基数、远期期权 | 证明产品适配，不证明客户已确认收入 | 产品组合对高 mix 有正向作用 | 需要客户认证和交付时间表 | C/D 证据：乐观保留，基准仅小比例纳入 |
+| 800VDC/HVDC 行业方向 | 远期期权、极度乐观 | NTM 收入证据不足，不能进入基准 | 若成立利润率高，但时间不确定 | 安规、连接、保护和现场运维认证慢 | 移入附录或仅作跟踪 |
+| 2026 capex `4.00-4.40 亿美元`，Q1 free cash `-4,693 万美元` | 现金流、执行可信度 | 不直接压低收入 | 折旧和启动成本压制利润 | 是 FCF 最大约束 | 公司基准 FCF 保守；乐观现金流不自动大幅上修 |
+| Vishay 不是 AI power controller、VPD、GaN/SiC 龙头或 PSU 系统商 | 公司捕获、利润质量 | 限制 AI TAM 向 Vishay 收入映射 | 价值位置偏器件/被动件，毛利率低于核心 IC/模块 | 多供压价和客户认证降低弹性 | 极度乐观下移为上限，不排除基准恢复 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 收入仍增长但低于当前恢复预期，GM 停在 `20.5%-21.5%`、OPM `1.5%-3.0%` | 2025 低基数和 Q1 backlog 使收入不太可能回到深度衰退 | 分销补库、MOSFET ASP 下滑、capex/固定成本、订单取消率未披露 | 保留 | 公司悲观情景 | 中 | 分销补库风险只在收入确认/执行层级处理，不再同时重复压低行业需求 |
+| 基准 | Q2 指引兑现、backlog 正常转收入，收入 `35.5-37.5 亿美元`，GM `21.8%-23.0%` | Q1 收入 `8.392 亿美元`、Q2 指引中值 `8.90 亿美元`、B2B `1.34`、各分部收入均同比增长 | AI/DC 单独收入未披露，C/D 级机会不能进入基准；MOSFET 利润仍薄 | 保留 | 公司基准情景 | 中高 | MOSFET 低利润只在产品利润和公司利润率处理，不重复否定收入基准 |
+| 乐观 | 收入 `38.5-41.0 亿美元`，高毛利被动件和保护件 mix 改善 | Inductors/Capacitors/Resistors 利润较好，AI power path 行业需求强，Q1 B2B 高 | 需要 Q2-Q3 继续验证 OEM/EMS 和终端需求；分销占比和取消率不透明 | 保留 | 公司乐观情景 | 中 | AI/DC 机会只作为乐观收入/mix 上修，不把同一 AI 需求在所有产品最高档相加 |
+| 极度乐观 | 收入 `42.0-45.5 亿美元`，GM `25.5%-28.0%`，要求多条传导同时突破 | 800VDC、MaxSiC、高端电容/current sense/inductor、高压保护均有产品或行业方向 | 任一核心环节缺少客户、金额、交付和收入确认路径；800V 大多仍是 design-in | 下移 | 乐观上限 / 附录跟踪 | 低到中 | 800VDC/MaxSiC 缺证据只限制极度乐观，不再重复压低基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入大概率高于 2025 全年 run-rate，区间 `35.5-37.5 亿美元`；利润改善但不是线性放大，基准 GM `21.8%-23.0%`、OPM `3.5%-5.5%`。这代表 Vishay 正在从去库存尾声进入订单恢复，但仍不是高利润 AI 核心平台公司。
+- NTM 收入结论：收入传导最可靠的路径是 Q1 backlog 与 Q2 指引转化为 MOSFET、Diodes、Resistors、Inductors、Capacitors 的正常出货；AI 数据中心增量主要通过 PSU/PFC、48V/54V 供电、电流检测、电感、保护和高端电容间接进入。不能把 AI power path 总 TAM 或 AI 数据中心 capex 直接映射为 Vishay 收入。
+- 利润/现金流结论：利润质量由 Inductors、Resistors、Capacitors、Diodes 支撑，最大拖累是 MOSFET/Newport/扩产和 ASP。2026 capex `4.00-4.40 亿美元`使 FCF 基准仍偏紧；即使收入增长，若库存和产能投资同步上升，FCF 可能只接近小幅转正。
+- 主要传导瓶颈：第一是分销补库订单的真实终端需求；第二是 MOSFET/SiC 扩产能否改善利用率和产品 mix；第三是 AI/DC 相关机会缺少客户级收入披露；第四是 800VDC 与 MaxSiC 时间表超过 NTM 基准窗口。
+- 乐观情景成立条件：Q2/Q3 收入连续兑现或上修；B2B 维持 `>1.1` 且 OEM/EMS 占比提高；MOSFET OPM 从低个位数继续修复；Inductors/Capacitors/Resistors 维持高利润率；AI PSU、UPS/BBU、高端电容和 current sense 产品出现明确客户或订单线索。
+- 极度乐观情景成立条件：800VDC/HVDC、1200V MaxSiC、DC-link/高压电容、高功率 shunt、大电流电感、高压保护在 NTM 内同时有客户、交付、价格和收入确认路径；同时分销订单低取消率、Newport 拖累下降、capex 不再吞噬现金流。这些条件目前证据不足，所以校准后只作为乐观上限或附录跟踪。
+- 悲观情景触发条件：Q2 实际收入低于 `8.75 亿美元`或 GM 低于 `21.5%`；Q3 指引显示 B2B 快速跌破 `1.0`；backlog 月数下降但收入未兑现；MOSFET ASP 继续下滑且 OPM 不改善；库存上升、FCF 继续大幅为负；管理层确认分销订单延后或取消。
+- 后续跟踪数据：Q2/Q3 revenue、gross margin、segment book-to-bill、backlog 月数、分销/OEM/EMS 结构、MOSFET segment OPM、Newport 毛利拖累、capex 和库存、Capacitors/Inductors B2B、高端 AI power product 的 design win / production quantity / lead time、MaxSiC/1200V 模块客户进展。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Vishay 最新正式财报为 2026Q1，季度截止 2026-04-04，发布日 2026-05-13；报告外部核验日为 2026-06-12；项目内行业资料日期为 2026-06-10 至 2026-06-11。
+- 主要收入、订单、指引和利润率来源：
+  - Vishay Intertechnology, “Vishay Intertechnology Reports First Quarter 2026 Results”, 2026-05-13: https://ir.vishay.com/news-releases/news-release-details/vishay-intertechnology-reports-first-quarter-2026-results
+  - Vishay Q1 2026 10-Q / SEC filing mirror: https://www.stocktitan.net/sec-filings/VSH/10-q-vishay-intertechnology-inc-quarterly-earnings-report-414511a3ab53.html
+  - `公司调研/配电_电源_功率器件/VSH_Vishay Intertechnology_公司调研_2026-06-11.md`
+- Vishay 产品和技术资料：
+  - Vishay AI Power Solutions selector guide: https://www.vishay.com/docs/47011/ai-mosfets.pdf
+  - Vishay APEC 2025 SiC / passive / semiconductor power solutions: https://ir.vishay.com/news-releases/news-release-details/vishay-intertechnology-bring-industry-leading-sic-mosfet-0/
+  - Vishay PCIM Europe 2026 power electronics solutions: https://www.vishay.com/en/company/press/releases/2026/PCIM-Europe/
+  - Vishay 1200V SiC MOSFET power modules: https://www.vishay.com/en/company/press/releases/2025/VS-MPX075P120-et-al/
+- 项目内行业资料：
+  - `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_MLCC与高端陶瓷电容_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 方向上，若 Q2-Q4 均接近或高于 Q2 指引中值，全年收入可能接近 `35.5-37.0 亿美元`；但这仍需 Q3/Q4 指引确认。
+  - FY2027 方向上，800VDC/HVDC、Rubin/MI400/Helios、MaxSiC、embedded/silicon capacitor、solid-state protection 更可能体现为上修弹性；当前不能替代 NTM 基准。
+  - AI/DC 相关收入没有公司披露口径。若只计算 AI server/rack 直接 BOM，应低于把 UPS/BBU/工业电力相邻需求也纳入的广义口径。

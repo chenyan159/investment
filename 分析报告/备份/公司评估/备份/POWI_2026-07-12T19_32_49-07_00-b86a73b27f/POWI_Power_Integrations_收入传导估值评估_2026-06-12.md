@@ -1,0 +1,154 @@
+# 公司收入传导与价值传导评估：Power Integrations
+
+报告日期：2026-06-12  
+公司代号：POWI  
+公司名称：Power Integrations, Inc.  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM 经营窗口，定义为 2026Q2E-2027Q1E 四个未来报告季度；一年后 run-rate、2027-2028 800VDC 期权和 2030 SAM 只作补充。  
+资料边界：使用 `公司调研/`、`行业调研/` 与公司/SEC/技术公开来源；不使用 `特征量化/`、Signals、排序、回归或模型比较；不使用股价、目标价、估值倍数或市场定价作为经营价值传导证据。  
+金额口径：美元；`当前TTM收入` 按 2025Q2-2026Q1 约 `$446.3M`；产品线金额中，端市场收入为公司披露，子产品拆分为研究估算，无法可靠量化处明确标注。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径看 NTM，即 2026Q2E-2027Q1E 可确认收入、利润率和自由现金流；2027-2028 的 800VDC 主电源/HV IBC、Kyber/Rubin 扩散和 2030 data-center SAM 只作为远期期权或乐观上限。
+- 当前收入基准、指引和 run-rate：2026Q1 收入 `$108.3M`，同比 `+3%`、环比 `+5%`；2026Q2 指引 `$115M-$120M`，中点 `$117.5M`；Q1 端市场为工业/汽车 `41%`、消费 `38%`、电脑 `11%`、通信 `10%`。公司未披露 backlog、RPO、book-to-bill 或 AI 数据中心收入占比。
+- 重要产品/业务线：核心 AC-DC/高压电源 IC 基本盘、SCALE 高功率 gate drivers、汽车高压辅助/驱动 sockets、InnoMux-2 EP + 1700V PowiGaN Kyber 800VDC 辅助电源、1250V/1700V PowiGaN 主电源/HV IBC 期权。
+- NTM 公司收入四情景：悲观 `$425-465M`；基准 `$485-520M`；乐观 `$540-600M`；极度乐观 `$650-760M`。基准不是 AI 爆发，而是 Q2 指引兑现、工业/汽车继续增长、消费/电脑/通信正常化、AI 数据中心小额收入进入报表。
+- 利润或 EBITDA 四情景：悲观毛利率 `51%-53%`、non-GAAP 经营利润率 `8%-11%`；基准毛利率 `53.5%-55.5%`、non-GAAP 经营利润率 `13%-16%`；乐观毛利率 `55%-57%`、non-GAAP 经营利润率 `17%-21%`；极度乐观毛利率 `57%-59%`、non-GAAP 经营利润率 `22%-27%`。GAAP 净利润会受 stock-based compensation、重组和一次性项目影响，产品级无法可靠拆分。
+- 最大传导瓶颈：不是行业需求，也不是普通产能，而是客户设计导入、NVIDIA/OCP/OEM 平台认证、800VDC 安规可靠性、以及是否从 reference design 转为可确认订单。
+- 最大利润率变量：高压 PowiGaN、SCALE gate-driver 和汽车/工业高压产品 mix；反向变量是日元/封测成本、低利用率、库存天数、消费/通信价格压力和客户二供议价。
+- 最大现金流变量：库存天数从 Q1 的 `292` 天能否继续下降、渠道库存能否从 `8.9` 周回到约 `8` 周、以及 NTM 收入增长是否来自高毛利 IC 而不是低价传统产品。
+- 可信度：基准情景中高；乐观情景中；极度乐观情景低到中，只有在 Kyber/Rubin 800VDC 正式 design win、客户/供应商采用、订单金额或交付节奏出现后才上移。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 核心 AC-DC/高压电源 IC 基本盘：InnoSwitch、TinySwitch、LinkSwitch、TOPSwitch、BridgeSwitch、非 AI PowiGaN | 约 `$300-360M/年`，估算自 2026Q1 消费 `$41.2M`、电脑/通信 `$22.7M`、以及部分工业 AC-DC | `~67%-81%` | 当前最大收入与现金流来源；决定公司基准是否站稳 | A/C：端市场收入为 A；子产品拆分为 C | 进入基准，是 NTM 主体 | TOPSwitchGaN 440W flyback、更多高功率家电/工具/e-bike 设计导入 |
+| SCALE/SCALE-iDriver 高功率 gate drivers、工业/储能/HVDC/SST/grid side | 约 `$50-80M/年` 子业务估算；工业/汽车端市场 2026Q1 为 `$44.4M` | `~11%-18%` | 高毛利、高认证、与 AI 园区电力和 grid modernization 间接受益相关 | A/C：工业收入为 A；gate-driver 子拆分为 C | 进入基准，作为工业/汽车增长核心之一 | 数据中心 SST/MVDC、BESS/PCS 和 AI campus grid 侧放量 |
+| 汽车高压辅助电源、BMS/OBC/traction gate-driver power、SCALE-EV | 约 `$10-20M/年` 当前估算；公司披露 40+ EV models on road 和 2026 material contribution 方向 | `~2%-5%` | 中期多 socket 增长线；认证周期长但生命周期较好 | C：design win/车型证据强，收入未单独披露 | 小比例进入基准，需保守折扣 | 2029 汽车收入 `$100M` 目标、重车/商用车平台 |
+| InnoMux-2 EP + 1700V PowiGaN，NVIDIA Kyber 800VDC 辅助 PSU | TTM 估计 `<$5-10M`；2026Q1 直接 AI 数据中心收入估计 `<1%-2%` 公司收入 | `<2%` | 最清晰的 AI 数据中心近期产品；但单 rack 内容量有限 | B/C/D：已有服务器辅助电源生产设计为 B/C；Kyber reference design 为 C/D | 基准只纳入小额；大规模采用进乐观或极度乐观 | Kyber/Rubin 800VDC PDB/compute tray 标准化 |
+| 1250V/1700V PowiGaN 主电源/HV IBC、800V-to-54V/12V/6V | 当前 AI 主电源收入接近 `0`；PowiGaN 全产品 FY2025 估计 `$45-70M`，公司仅披露 `+40%+` 增长 | 当前 AI 主路径 `~0%` | 最大非线性弹性，但 NTM 证据不足 | D/C：白皮书、NVIDIA collaboration、产品页和生态讨论；未见订单金额 | 不进入 NTM 基准主收入，仅允许样品/NRE/小批量上限 | 2027-2028 800VDC/HV IBC 量产、主 power path design win |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只判断外部需求池强弱，不判断 POWI 份额、收入确认、利润率或公司汇总。需求锚来自行业调研的 48/50V ORv3/HPR、800VDC/HV IBC、功率半导体、高压保护、数据中心电力设备订单，以及公司披露的 Q2 指引、端市场结构和产品路线。需求强弱均相对该产品自己的当前预期，不把 AI 题材热度直接等同为 POWI 收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 核心 AC-DC/高压电源 IC 基本盘 | Q2 2026 指引隐含消费低于正常季节性但环比改善；2026Q1 消费 `-11% YoY`、电脑 `-5% YoY`、通信 `0% YoY` | 家电、PC、通信和工具需求再次转弱；客户因关税/住房/库存推迟拉货 | Q2 指引兑现，家电库存改善但不强复苏；普通电脑/通信季节性恢复 | TOPSwitchGaN/TinySwitch-5 设计在 2026H2 ramp，家电/工具/e-bike 恢复 | 消费 restock 与高功率 GaN 替代同时发生，传统基本盘重回历史高收入利用率 | 相对当前 run-rate：悲观约 `-5%-0%`；基准 `+5%-10%`；乐观 `+10%-20%`；极度乐观 `+20%+` | 基准。公司 Q1/Q2 口径支持恢复但不支持大幅上修；反证是渠道库存回升或客户 order activity 转弱 |
+| SCALE/gate-driver、工业/储能/HVDC/SST/grid side | 工业/汽车 2026Q1 `+23% YoY`；FY2025 工业 `+15%`；AI 园区电力、renewables、battery storage、DC transmission 拉动高功率驱动需求 | EV/工业/储能周期疲软，SST/MVDC 试点推迟，gate-driver 只维持替换需求 | 工业、储能、HVDC、rail、重车继续增长；AI grid 侧贡献小但方向明确 | AI campus power block、BESS/PCS、SST/MVDC 项目从试点进入小批量订单 | 数据中心电力接入瓶颈推动 SST/MVDC/BESS 提前标准化，驱动需求非线性上修 | 相对当前预期：悲观 `-10%-0%`；基准 `+10%-20%`；乐观 `+25%-45%`；极度乐观 `+60%+` | 基准到乐观。Eaton/Vertiv/Schneider 等电力设备订单验证需求强，但 POWI 是器件/驱动层，不直接拿系统订单 |
+| 汽车高压辅助/驱动 sockets | 40+ EV models on road；2026 目标为 material revenue contribution；EV 市场不强但高压 socket 增加 | EV 需求和客户平台 ramp 推迟，车厂降本压缩 ASP | 既有 design win 逐步转收入，BMS/OBC/aux/standby socket 小步增加 | 多 socket 扩展快于预期，商用车/重车和乘用车同步 ramp | 多个大平台同时量产，向 2029 `$100M` 年收入目标提前靠近 | 相对当前预期：悲观 `-20%-0%`；基准 `+30%-70%`，因低基数；乐观 `+100%+`；极度乐观 `+200%+` | 基准。收入小基数可高增，但认证周期限制 NTM 斜率；反证是 2026 未体现 doubling 或客户 SOP 推迟 |
+| InnoMux-2 EP + 1700V PowiGaN Kyber 800VDC 辅助 PSU | 2026-06-01 Kyber reference design；行业资料显示 800VDC 2026 以 design-in/试点为主，2027 才更可能首批规模收入 | Kyber/Rubin 800VDC 只停留样机，OEM/PDB 不采用 POWI 参考设计 | 少量 Kyber/Rubin PDB/compute tray 设计导入；NTM 需求为小批量辅助电源 | 多家 OEM/PDB/power design 采用，辅助电源成为 800VDC 控制轨常见方案 | Kyber/Rubin 800VDC 平台把 1700V aux PSU 标准化，需求从样机转批量 | 需求单位无法可靠量化；公司可服务需求从当前 `<$10M TTM` 级上移到基准 `$5-15M`、乐观 `$20-45M`、极度 `$60M+` 年化潜力 | 基准只小幅上修。reference design 是强信号，但无订单金额/客户采用披露 |
+| 1250V/1700V PowiGaN 主电源/HV IBC | 行业资料：800VDC/HV IBC 2026 为样机/参考设计/早期订单；1250V/1700V GaN 仍是高压早期市场 | 800VDC 安规/维护/认证推迟，54V/48V 继续承担 2027 前大多数平台 | 2026H2-2027Q1 以样品、NRE、小批量验证为主，需求池小 | 一到两家 HV IBC/800V-to-50V 供应商导入高压 GaN，2027 订单可见 | 1MW rack 或 Kyber/Rubin Ultra 需求提前，多家 hyperscaler 批量验证 800VDC 主路径 | 行业 800VDC/HV IBC 器件/模块 2026 基准约 `$0.05-0.15B`，2027 约 `$0.15-0.4B`；高压 GaN 子池更小 | 基准低于题材热度；乐观需要客户 design win；极度乐观必须解释新增预算和量产时间 | NVIDIA/OCP/TI/Infineon/Power Integrations 资料支持技术方向；反证是客户安全评审和 UL/IEC 进度慢、竞争对手先锁主路径 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断哪些需求能进入 POWI NTM 收入表，以及当前可收入化基数；不预测增长，不判断利润率。证据等级按收入表可确认性定义：A=收入表/分部/正式指引；B=订单/backlog/合同/可验证项目且有交付时间；C=design win/认证/产能规划/管理层可验证披露；D=发布/样品/测试/早期合作；E=主题相关或同业映射。公司能参与 800VDC，不等于能在 NTM 报表确认收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 核心 AC-DC/高压电源 IC 基本盘 | A：2026Q1 消费 `$41.2M`、电脑 `$11.9M`、通信 `$10.8M`，加部分工业 AC-DC；FY2025 消费 `37%`、电脑 `13%`、通信 `12%`、工业 `38%` | 直接 | 接近公司平均毛利；高压 GaN/TOPSwitchGaN 高于普通硅基 | `$310-340M` | `$340-380M` | `$380-425M` | `$430-500M` | 基准符合 Q2 指引和正常化预期；极度乐观需要消费周期同步恢复 | A/C | 是 | 收入表端市场可见；子产品拆分保守 | NTM 基准主体，但不得把所有消费恢复都归因于 AI |
+| SCALE/gate-driver、工业/储能/HVDC/SST/grid side | A/C：工业/汽车 2026Q1 `$44.4M`；FY2025 工业约 `$168.5M`；gate-driver 子业务估 `$50-80M/年` | 直接为工业客户；AI 园区电力为间接 | 高于或接近公司平均，认证和可靠性带来粘性 | `$50-70M` | `$70-100M` | `$105-155M` | `$170-240M` | 基准高于当前子业务 run-rate，但有工业增长和 gate-driver 记录支撑 | A/C | 是 | 工业收入 A 级；gate-driver 子拆分 C 级，折扣纳入 | NTM 可进入基准；AI grid/SST 增量只进乐观以上 |
+| 汽车高压辅助/驱动 sockets | C：40+ EV models on road、passenger car design wins、2026 material contribution；收入未单独披露 | 直接 | 中高毛利但 ramp 初期支持费用重 | `$15-25M` | `$25-40M` | `$45-65M` | `$70-90M` | 基准高于当前估算收入，因低基数和 design wins；不代表无约束爆发 | C | 小比例是 | 客户/车型/应用清楚，但收入金额未披露；保守折扣 | NTM 基准小额纳入；若 2026 doubling 不兑现则下移 |
+| InnoMux-2 EP + 1700V PowiGaN Kyber 800VDC 辅助 PSU | B/C/D：2025Q4 有一项美国云服务商服务器辅助电源生产设计；2026-06 Kyber reference design；未披露订单金额 | 直接 AI 数据中心 | 单位毛利潜在高，但当前小基数 | `$0-5M` | `$5-15M` | `$20-45M` | `$60-100M` | 基准只代表小额可见化，乐观才代表供应链多点采用 | B/C/D | 是，小额 | 已有服务器 aux 生产设计可少量入基准；Kyber reference design 不足以大额入基准 | NTM 基准小额；正式 design win/客户采用前不得上修为主要收入 |
+| 1250V/1700V PowiGaN 主电源/HV IBC | D/C：白皮书、NVIDIA collaboration、AI data center product page、1250/1700V volume capability；未披露主 HV IBC 订单 | 直接潜在；当前多为可参与需求 | 若量产则高毛利；当前研发/认证费用先行 | `$0-2M` | `$0-10M` | `$20-50M` | `$80-150M` | 当前预期应视为远期期权；基准只允许样品/NRE/小批量 | D/C | 否，除样品/NRE小额 | 缺客户名、订单金额、交付窗口和收入确认路径 | 不作为 NTM 基准主收入；乐观/极度乐观上限或附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第一步需求和第二步收入基数出发，判断每个重要产品在 NTM 内能给 POWI 贡献多少收入和利润。产品级利润无法按公司披露直接拆分，因此以毛利贡献区间和经营利润率方向表述；涉及客户、订单、产能、良率、交期、验收和收入确认时，只使用公司特定证据，不把行业 TAM、客户 CapEx 或项目总金额直接写成 POWI 收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 核心 AC-DC/高压电源 IC 基本盘 | 悲观 | `$310-340M` | 毛利贡献约 `$160-180M`，经营贡献受固定费用拖累 | 下行 | 低于 Q2 指引隐含正常化 | 消费仍占 Q1 `38%`，但消费同比 `-11%` | 保留悲观 | 家电/电脑/通信订单回落、渠道库存回升 |
+| 核心 AC-DC/高压电源 IC 基本盘 | 基准 | `$340-380M` | 毛利贡献约 `$180-210M` | 稳定到小幅改善 | 符合 Q2 指引和正常季节性 | Q2 指引 `$115-120M`；TOPSwitchGaN/TinySwitch-5 2026H2 ramp | 保留基准 | 不得把 TOPSwitchGaN 早期 ramp 写成全面消费复苏 |
+| 核心 AC-DC/高压电源 IC 基本盘 | 乐观 | `$380-425M` | 毛利贡献约 `$205-240M` | 改善 | 高于当前预期 | 高功率 GaN flyback、家电库存改善、工业/工具/e-bike 需求更强 | 保留乐观 | 价格敏感客户二供、关税和住房周期 |
+| 核心 AC-DC/高压电源 IC 基本盘 | 极度乐观 | `$430-500M` | 毛利贡献约 `$240-290M` | 明显改善 | 明显高于当前预期 | 消费 restock + GaN ASP + 工业同步恢复 | 下移为乐观上限 | 缺少订单/backlog 证据，且该业务不应被 AI 叙事放大 |
+| SCALE/gate-driver、工业/储能/HVDC/SST/grid side | 悲观 | `$50-70M` | 毛利贡献约 `$28-40M`；经营杠杆弱 | 稳定或小降 | 低于工业增长预期 | 工业/汽车 Q1 强，但工业/EV/储能可能波动 | 保留悲观 | 工业周期、SST 项目推迟、客户重新认证慢 |
+| SCALE/gate-driver、工业/储能/HVDC/SST/grid side | 基准 | `$70-100M` | 毛利贡献约 `$40-60M` | 改善 | 符合工业/汽车继续增长 | FY2025 gate-driver 创纪录；工业/汽车 Q1 `+23% YoY` | 保留基准 | 子业务未披露，不能精确量化 |
+| SCALE/gate-driver、工业/储能/HVDC/SST/grid side | 乐观 | `$105-155M` | 毛利贡献约 `$65-95M` | 改善明显 | 高于当前预期 | AI 园区电力、BESS、HVDC、SST/MVDC 订单转化 | 保留乐观 | POWI 是驱动/IC，不是系统设备商；系统订单不等于 POWI 收入 |
+| SCALE/gate-driver、工业/储能/HVDC/SST/grid side | 极度乐观 | `$170-240M` | 毛利贡献约 `$105-150M` | 大幅改善 | 非线性超预期 | 多个 AI campus power block 标准化并采用 SCALE 类驱动 | 下移为极度乐观上限 | 需要客户名/订单/交付时间；否则只能作上限 |
+| 汽车高压辅助/驱动 sockets | 悲观 | `$15-25M` | 毛利贡献约 `$8-14M`；费用吸收弱 | 中性到下行 | 低于 2026 material contribution 预期 | EV 周期弱、车厂降本 | 保留悲观 | SOP 推迟、socket 扩展慢 |
+| 汽车高压辅助/驱动 sockets | 基准 | `$25-40M` | 毛利贡献约 `$14-23M` | 中性到改善 | 符合低基数 ramp | 40+ EV models、design wins、多 socket 方向 | 保留基准 | 收入未披露；C 级证据需折扣 |
+| 汽车高压辅助/驱动 sockets | 乐观 | `$45-65M` | 毛利贡献约 `$26-39M` | 改善 | 高于当前预期 | BMS/OBC/aux/traction gate-driver power socket 增多 | 保留乐观 | EV 终端需求和车厂认证节奏 |
+| 汽车高压辅助/驱动 sockets | 极度乐观 | `$70-90M` | 毛利贡献约 `$40-55M` | 改善但非爆发式 | 明显高于当前预期 | 多个平台提前量产，接近长期目标斜率 | 下移为乐观上限 | 2029 `$100M` 目标不能提前全部纳入 NTM |
+| InnoMux-2 EP + 1700V PowiGaN Kyber 800VDC 辅助 PSU | 悲观 | `$0-5M` | 毛利贡献小，无法可靠量化 | 无明显贡献 | 低于 AI reference design 期待 | 无订单金额、无客户正式采用 | 保留悲观 | reference design 不转 design win |
+| InnoMux-2 EP + 1700V PowiGaN Kyber 800VDC 辅助 PSU | 基准 | `$5-15M` | 毛利贡献约 `$3-9M` | 小幅提升 | 符合“小而真实”的 AI 收入 | 服务器 aux 生产设计 + Kyber reference design | 保留基准 | 单 rack 内容量小；认证和平台采用慢 |
+| InnoMux-2 EP + 1700V PowiGaN Kyber 800VDC 辅助 PSU | 乐观 | `$20-45M` | 毛利贡献约 `$12-28M` | 改善 | 高于当前预期 | 多家 OEM/PDB/power supplier 采用，1700V 单 HEMT BOM/空间优势兑现 | 保留乐观 | 需要谁买、买什么、何时确认；无订单则不能上移 |
+| InnoMux-2 EP + 1700V PowiGaN Kyber 800VDC 辅助 PSU | 极度乐观 | `$60-100M` | 毛利贡献约 `$38-65M` | 明显改善 | 非线性超预期 | Kyber/Rubin 多平台标准化 aux PSU | 下移为极度乐观上限 | 辅助电源内容量有限，不能自动支持公司级极度乐观 |
+| 1250V/1700V PowiGaN 主电源/HV IBC | 悲观 | `$0-2M` | 无法可靠量化 | 无贡献 | 低于 AI 主路径期望 | 800VDC 认证慢，主电源由竞品锁定 | 保留悲观 | 54V/48V 延续、SiC/Infineon/TI/Navitas 替代 |
+| 1250V/1700V PowiGaN 主电源/HV IBC | 基准 | `$0-10M` | 毛利贡献小，研发/支持费用先行 | 中性或拖累 | 不进入基准主收入 | 产品和 collaboration 有证据，但订单缺失 | 下移为仅作跟踪 | C/D 级证据不能大额进入基准 |
+| 1250V/1700V PowiGaN 主电源/HV IBC | 乐观 | `$20-50M` | 毛利贡献约 `$12-32M` | 改善 | 高于当前预期 | 一到两家 HV IBC/800V-to-50V 供应商导入并小量产 | 保留乐观 | 高压可靠性、EMI、热和安规认证 |
+| 1250V/1700V PowiGaN 主电源/HV IBC | 极度乐观 | `$80-150M` | 毛利贡献约 `$50-95M` | 大幅改善 | 非线性超预期 | 800VDC 主 power path 提前量产，POWI 捕获高压 GaN socket | 下移为附录/上限 | 无客户、订单和交付窗口时不得进入 NTM |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为 POWI NTM 总收入、毛利率、经营利润率和自由现金流方向。汇总时扣除产品之间的重叠：PowiGaN 可同时出现在核心 AC-DC、汽车和 AI aux；工业端市场包含 SCALE/gate-driver 与普通工业电源；AI 数据中心 auxiliary 与 main/HV IBC 不能重复计算。利润率以 non-GAAP operating margin 作为经营质量主指标，GAAP 净利润因重组、stock-based compensation、诉讼和税项影响只作方向参考。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$425-465M` | `-5% to +4%` vs 当前 TTM `$446.3M` | 低于 Q2 指引后续正常化和工业/汽车增长预期 | `51%-53%` | non-GAAP `8%-11%` | non-GAAP 经营利润约 `$35-50M`；GAAP 净利低位正数或接近盈亏平衡 | FCF 降至 `$50-75M`，库存下降慢 | 中 | 消费/工业订单走弱、渠道库存回升、AI 订单无进展、毛利低于 `53%` |
+| 基准公司 | `$485-520M` | `+9% to +17%` | 接近当前指引、run-rate、渠道库存改善和工业/汽车增长路径 | `53.5%-55.5%` | non-GAAP `13%-16%` | non-GAAP 经营利润约 `$63-83M`；GAAP 净利受费用项影响但为正 | FCF `$80-105M`，库存天数继续下降 | 中高 | 需要 Q2 指引兑现、Q3/Q4 订单稳定、AI 小额收入可见但不要求大爆发 |
+| 乐观公司 | `$540-600M` | `+21% to +34%` | 高于当前预期，且由工业/汽车/PowiGaN/AI aux 多点贡献，不是单一小基数 | `55%-57%` | non-GAAP `17%-21%` | non-GAAP 经营利润约 `$92-126M`；GAAP 净利显著改善 | FCF `$105-145M`，营运资本释放与收入增长并存 | 中 | Kyber aux 多点采用、SCALE/grid/SST 订单、汽车 socket 和 TOPSwitchGaN 同步兑现 |
+| 极度乐观公司 | `$650-760M` | `+46% to +70%` | 显著高于当前预期，要求 AI aux、主 HV IBC、SCALE/grid、汽车和消费恢复同时成立 | `57%-59%` | non-GAAP `22%-27%` | non-GAAP 经营利润约 `$145-205M`；GAAP 净利大幅恢复但无法可靠量化 | FCF `$150-220M`，前提是库存和产能不形成现金吸收 | 低 | 需要 800VDC 主路径正式 design win/订单、1700V/1250V GaN 可靠性通过、客户愿意为高压 GaN 付溢价 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。正向证据必须说明提升的是需求、收入基数、产品贡献、公司利润还是执行可信度；反证只在实际影响层级处理一次。市场定价不作为经营反证。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q2 指引 `$115M-$120M`、毛利率 `53.5%-54.5%`、non-GAAP 经营利润率 `13.5%-15.5%` | 公司汇总 | 支撑 NTM 基准 `$485-520M` 的第一季度锚 | 支撑毛利率从 Q1 `52.6%` 修复到 `53.5%+` | 若兑现，说明订单和渠道库存改善真实 | 保留基准 |
+| 2026Q1 工业/汽车 `41%`、同比 `+23%` | 产品贡献/公司组合 | 支撑 SCALE、工业高压和汽车小基数进入基准 | 工业/汽车通常高于普通消费/通信，有利 mix | 订单质量高于普通消费，库存风险较低 | 保留基准；乐观保留 |
+| 公司未披露 AI 数据中心订单、backlog、RPO、客户采购金额 | 收入基数/执行可信度 | 限制 Kyber aux 和主 HV IBC 的基准收入 | 高毛利假设不能提前确认 | 收入确认节奏不可验证，现金流不能提前上修 | 主 HV IBC 基准下移为仅作跟踪；Kyber aux 只小额保留 |
+| 2026-06 Kyber 800VDC aux PSU reference design | 需求/收入基数/产品贡献 | 提高辅助电源 NTM 小额可收入化概率 | 若量产，毛利高于普通 AC-DC | 需要 OEM/PDB 认证和量产时间 | 保留 Kyber aux 乐观；极度乐观下移为上限 |
+| 1250V/1700V PowiGaN 与 NVIDIA 800VDC collaboration | 需求/技术位置 | 支撑远期期权和乐观主 HV IBC，但不支撑基准大额收入 | 若进入主 power path，毛利弹性大 | 需要可靠性、安规、客户 design win 和量产 | 乐观保留；极度乐观移入附录 |
+| 10-Q 风险：客户短期订单、可取消/重排、分销商销售占比高 | 执行可信度/收入确认 | 降低未披露 pipeline 的收入确认可信度 | 价格调整和 ship-and-debit 会影响毛利 | 渠道库存和客户 forecast 变化会影响现金流 | 保留悲观；不得重复惩罚到每个产品 |
+| 库存天数 `292`、渠道库存 `8.9` 周 | 现金流/利润率 | 短期供给不是主要瓶颈，需求兑现才是瓶颈 | 库存下降有利毛利；若不降会拖累 GM | 影响 FCF 和营运资本 | 基准保留；若 Q2/Q3 不降则下移 |
+| 行业 800VDC 2026 以 design-in 为主、2027 更可能首批规模收入 | 产品需求/收入确认 | 限制 NTM 主 HV IBC 收入 | 高压 GaN 毛利不可提前确认 | 标准、安规、客户 SOP 慢于叙事 | 主 HV IBC 基准排除大额；极度乐观仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 收入 `$425-465M`、GM `51%-53%`、non-GAAP OPM `8%-11%` | 消费/通信仍弱、无 backlog、客户订单短周期、库存仍高 | Q2 指引显示环比修复，工业/汽车强 | 保留 | 作为下行经营情景 | 中 | 订单短周期只在收入确认/执行层处理，不再重复压低所有产品需求 |
+| 基准 | 收入 `$485-520M`、GM `53.5%-55.5%`、non-GAAP OPM `13%-16%` | Q2 指引、Q1 工业/汽车增长、渠道库存下降、FY2025 PowiGaN `+40%+` | AI 主 HV IBC 无订单，汽车/AI 子业务收入未披露 | 保留 | 最可能情景 | 中高 | AI 订单缺失只限制 AI 相关产品，不惩罚核心 AC-DC 和工业基本盘 |
+| 乐观 | 收入 `$540-600M`、GM `55%-57%`、non-GAAP OPM `17%-21%` | Kyber reference design、SCALE/gate-driver、工业/汽车、高压 GaN mix 同步增强 | 需要客户采用、交付窗口和订单证据；单一 reference design 不足 | 保留 | 有条件上行情景 | 中 | 800VDC 标准慢只限制 AI 主路径，不重复压低汽车/核心 AC-DC |
+| 极度乐观 | 收入 `$650-760M`、GM `57%-59%`、non-GAAP OPM `22%-27%` | 1250/1700V GaN 技术、NVIDIA/OCP 800VDC 方向、AI 电力瓶颈真实 | 缺少 NTM 订单金额、主 power path design win、客户名和量产时间 | 下移 | 作为极度乐观上限和附录跟踪 | 低 | 不把远期 800VDC 期权同时计入需求、收入基数和公司汇总三次 |
+
+## 8. 结论
+
+- 最可能情景：基准。POWI 的 NTM 收入最可能落在 `$485-520M`，即在 Q2 指引基础上温和恢复；增长来自工业/汽车、核心高压 AC-DC 产品、PowiGaN 非 AI 应用、以及小额但可见的服务器/800VDC auxiliary power。利润质量较 2026Q1 修复，但不是由 AI 数据中心大额收入主导。
+- NTM 收入结论：AI 数据中心对 POWI 的 NTM 主贡献更可能是 `$5-15M` 的 auxiliary power 小额收入和 `$0-10M` 的主 HV IBC 样品/NRE/小批量，而不是 `$100M+` 主电源收入。SCALE/gate-driver、工业/汽车和核心 AC-DC 基本盘对 NTM 更重要。
+- 利润/现金流结论：基准毛利率 `53.5%-55.5%`、non-GAAP 经营利润率 `13%-16%`；自由现金流大概率维持正向，关键看库存天数是否从 `292` 天继续下降。若收入上修来自高压 GaN、SCALE 和汽车，高质量利润会明显好于消费/通信补库存。
+- 主要传导瓶颈：行业需求已经存在，但 POWI 的收入传导需要从 reference design 转成客户 design win、再转订单、交付和收入确认。主 800VDC/HV IBC 的最大瓶颈是安规、EMI、热、可靠性、客户二供和主 power path 竞争，而不是 POWI 是否能讲高压 GaN 技术故事。
+- 乐观情景成立条件：Q2/Q3 收入和毛利率连续兑现；工业/汽车保持双位数增长；PowiGaN 收入继续 `40%+` 或接近；Kyber aux PSU 获得多家 OEM/PDB/power supplier 采用；SCALE/gate-driver 在 BESS/HVDC/SST 或 AI campus grid 项目看到订单。
+- 极度乐观情景成立条件：2026H2-2027Q1 披露 1250/1700V PowiGaN 主 HV IBC 或 800V-to-54V/12V/6V 正式 design win、订单金额、客户/供应商名称和量产窗口；Kyber/Rubin 800VDC auxiliary 成为多平台标准方案；汽车和核心 AC-DC 同步恢复；毛利率稳定高于 `57%`。
+- 悲观情景触发条件：Q2 指引未兑现或 Q3 指引转弱；渠道库存重新高于约 `9-10` 周；工业/汽车增速明显放缓；消费/通信价格压力使毛利率低于 `53%`；2026H2 仍没有 AI 数据中心订单、客户名或量产时间。
+- 后续跟踪数据：2026Q2/Q3 财报收入和毛利率；端市场 mix；PowiGaN 收入增速；工业/汽车同比增速；inventory days、distributor inventory；Kyber/Rubin auxiliary PSU design win；1250/1700V GaN 主 HV IBC 客户/订单；Infineon/TI/Navitas/Delta/Advanced Energy 在 800VDC 的客户进展。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：最新实际财务数据为 2026Q1，披露日 2026-05-07；Q2 2026 为公司指引；产品事件包含 2026-06-01 Kyber 800VDC auxiliary PSU reference designs；本报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Power Integrations Q1 2026 Earnings Release, 2026-05-07: https://s27.q4cdn.com/802031818/files/doc_financials/2026/q1/POWI-Q1-2026-Earnings-Release.pdf
+  - Power Integrations Q1 2026 Earnings Slides, 2026-05-07: https://s27.q4cdn.com/802031818/files/doc_financials/2026/q1/POWI-Q1-2026-Earnings-Slides.pdf
+  - Power Integrations Q1 2026 Form 10-Q, filed 2026-05-07: https://www.sec.gov/Archives/edgar/data/833640/000083364026000078/powi-20260331x10q.htm
+  - Power Integrations 2025 Annual Report and Proxy Statement: https://s27.q4cdn.com/802031818/files/doc_financials/2025/ar/POWI-2025-Annual-Report-and-Proxy-Statement.pdf
+  - Power Integrations Q4 and FY2025 Results, 2026-02-05: https://investors.power.com/news/news-details/2026/Power-Integrations-Reports-Fourth-Quarter-and-Full-Year-Financial-Results/default.aspx
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - Power Integrations June 2026 Investor Presentation: https://s27.q4cdn.com/802031818/files/doc_presentations/2026/Jun/01/POWI-Investor-Presentation-June-2026.pdf
+  - Power Integrations, NVIDIA Kyber 800VDC Auxiliary PSU Reference Designs, 2026-06-01: https://investors.power.com/news/news-details/2026/Power-Integrations-Unveils-Space-Saving-Ultra-Slim-Auxiliary-PSU-Reference-Designs-for-NVIDIA-Kyber-800-VDC-AI-Data-Center/default.aspx
+  - Power Integrations, 1250V/1700V PowiGaN for 800VDC AI Data Centers, 2025-10-13: https://investors.power.com/news/news-details/2025/Power-Integrations-Details-1250-V-and-1700-V-PowiGaN-Technology-for-Next-Generation-800-VDC-AI-Data-Centers/default.aspx
+  - Power Integrations AI data center product page: https://www.power.com/ai-data-center
+  - Power Integrations DER-1114 15W 800VDC auxiliary PSU design example: https://www.power.com/design-support/design-examples/der-1114-15-w-flyback-auxiliary-power-supply-800-vdc-ai-data-center-using-innomux2-ep-1700-v-powigan
+  - NVIDIA 800 VDC architecture blog: https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/
+  - OCP Open Data Center Ecosystem Vision / Diablo: https://www.opencompute.org/blog/realizing-the-open-data-center-ecosystem-vision
+  - Texas Instruments 800 VDC architecture with NVIDIA, 2026-03-16: https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-03-16-ti-unveils-complete-800-vdc-power-architecture-for-future-generation-ai-data-centers-with-nvidia.html
+  - Infineon CoolGaN-based HV IBC reference designs, 2026-03-17: https://www.infineon.com/market-news/2026/infpss202603-067
+- 主要项目内来源：
+  - `公司调研/配电_电源_功率器件/POWI_Power_Integrations_公司调研_2026-06-12.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+

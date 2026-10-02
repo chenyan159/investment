@@ -1,0 +1,164 @@
+[
+  {
+    "ticker": "ANET",
+    "returncode": 0,
+    "stdout_chars": 4191,
+    "error": ""
+  },
+  {
+    "ticker": "ADBE",
+    "returncode": 0,
+    "stdout_chars": 3900,
+    "error": ""
+  },
+  {
+    "ticker": "CRDO",
+    "returncode": 0,
+    "stdout_chars": 1453,
+    "error": ""
+  },
+  {
+    "ticker": "NVDA",
+    "returncode": 0,
+    "stdout_chars": 2788,
+    "error": ""
+  },
+  {
+    "ticker": "ALAB",
+    "returncode": 0,
+    "stdout_chars": 1330,
+    "error": ""
+  },
+  {
+    "ticker": "COHR",
+    "returncode": 0,
+    "stdout_chars": 1600,
+    "error": ""
+  },
+  {
+    "ticker": "CBRS",
+    "returncode": 0,
+    "stdout_chars": 1855,
+    "error": ""
+  },
+  {
+    "ticker": "AVGO",
+    "returncode": 0,
+    "stdout_chars": 6195,
+    "error": ""
+  },
+  {
+    "ticker": "MU",
+    "returncode": 0,
+    "stdout_chars": 848,
+    "error": ""
+  },
+  {
+    "ticker": "LIN",
+    "returncode": 0,
+    "stdout_chars": 1924,
+    "error": ""
+  },
+  {
+    "ticker": "SPCX",
+    "returncode": 0,
+    "stdout_chars": 1731,
+    "error": ""
+  },
+  {
+    "ticker": "MRVL",
+    "returncode": 0,
+    "stdout_chars": 240,
+    "error": ""
+  },
+  {
+    "ticker": "CRWV",
+    "returncode": 0,
+    "stdout_chars": 1690,
+    "error": ""
+  },
+  {
+    "ticker": "AMD",
+    "returncode": 0,
+    "stdout_chars": 2146,
+    "error": ""
+  },
+  {
+    "ticker": "SNDK",
+    "returncode": 0,
+    "stdout_chars": 3131,
+    "error": ""
+  },
+  {
+    "ticker": "VRT",
+    "returncode": 0,
+    "stdout_chars": 1550,
+    "error": ""
+  },
+  {
+    "ticker": "GOOGL",
+    "returncode": 0,
+    "stdout_chars": 3456,
+    "error": ""
+  },
+  {
+    "ticker": "LITE",
+    "returncode": 0,
+    "stdout_chars": 1285,
+    "error": ""
+  },
+  {
+    "ticker": "MSFT",
+    "returncode": 0,
+    "stdout_chars": 1357,
+    "error": ""
+  },
+  {
+    "ticker": "GEV",
+    "returncode": 0,
+    "stdout_chars": 1684,
+    "error": ""
+  },
+  {
+    "ticker": "IREN",
+    "returncode": 0,
+    "stdout_chars": 3167,
+    "error": ""
+  },
+  {
+    "ticker": "AMZN",
+    "returncode": 0,
+    "stdout_chars": 1781,
+    "error": ""
+  },
+  {
+    "ticker": "RKLB",
+    "returncode": 0,
+    "stdout_chars": 858,
+    "error": ""
+  },
+  {
+    "ticker": "TSM",
+    "returncode": 0,
+    "stdout_chars": 781,
+    "error": ""
+  },
+  {
+    "ticker": "NBIS",
+    "returncode": 0,
+    "stdout_chars": 2421,
+    "error": ""
+  },
+  {
+    "ticker": "OKLO",
+    "returncode": 0,
+    "stdout_chars": 4547,
+    "error": ""
+  },
+  {
+    "ticker": "TSLA",
+    "returncode": 0,
+    "stdout_chars": 1655,
+    "error": ""
+  }
+]

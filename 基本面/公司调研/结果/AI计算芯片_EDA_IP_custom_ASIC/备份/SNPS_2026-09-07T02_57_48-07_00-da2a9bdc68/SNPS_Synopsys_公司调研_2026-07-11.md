@@ -1,0 +1,737 @@
+# 公司：SNPS Synopsys（新思科技）全面公司调研
+
+> 研究日期：2026-07-11（America/Los_Angeles）  
+> 市场数据截止：2026-07-10 美股收盘；财务数据截止：2026-04-30（FY2026 Q2）  
+> 研究对象：Synopsys, Inc.；NASDAQ：SNPS  
+> 货币：美元；除每股、比率和特别说明外，金额单位为十亿美元  
+> 独立性边界：本报告只使用项目内相关行业资料与联网公开资料；未读取其他目录中的既有公司报告，未读取或继承特征量化内容，也未修改公司索引。
+
+## 核心结论
+
+1. **SNPS 已不再只是传统 EDA 公司，而是在重构为“芯片设计自动化 + 设计 IP + Ansys 多物理场仿真”的工程平台。** FY2026 Q2 的产品口径收入构成为 EDA 51.0%、Ansys 28.7%、Design IP 20.0%、Other 0.3%；报告分部则是 Design Automation 80.0%、Design IP 20.0%。公司覆盖从系统需求、RTL、验证、物理实现、签核、先进封装，到电磁、热、流体、机械和数字孪生的工程链条，产业链位置由芯片设计“收费站”向更宽的系统工程“控制面”扩张。
+2. **资本质量高，但最新增长表象被 Ansys 并表明显放大。** Q2 收入 22.760 亿美元，同比增长 41.9%；其中 Ansys 贡献 6.524 亿美元。按简单剔除法，原 Synopsys 收入约 16.236 亿美元，同比仅约增长 1.2%；更有代表性的核心 EDA 产品收入增长 8.3%，Design IP 则下降 5.8%。因此，不能把 41.9% 当作持续有机增速。
+3. **订单可见度仍强，但边际信号并非全面乐观。** 期末 backlog 为 110 亿美元，其中 18 亿美元是不可取消的 foundry strategic agreement（FSA）；剔除 FSA 后约 49% 预计在未来 12 个月确认。backlog 从 Q1 的 113 亿美元降至 110 亿美元。用“期末 backlog－期初 backlog＋当季收入”反推的 Q2 履约义务净增加约 19.76 亿美元、代理 B2B 约 0.87 倍，但这不是公司披露的 bookings，仍会受外汇、收购口径、合同修改和收入确认影响。
+4. **AI 是重要需求源，却不是一个可直接核对的收入分部。** 本报告估计 Q2 狭义 AI 数据中心直接相关收入为 6.1–8.4 亿美元，占收入 27%–37%；若把所有受 AI 设计复杂度、先进节点、HBM、chiplet 和多物理仿真拉动的收入计入，广义 AI 影响收入约 9.1–12.5 亿美元，占 40%–55%。这两个区间是模型，不是管理层披露，且不能与产品收入表机械相加。
+5. **最值得跟踪的八个增长引擎是：核心 EDA/签核、硬件辅助验证、AgentEngineer、3DIC Compiler + Multiphysics Fusion、Ansys 的 AI 数据中心仿真、PCIe 7.0/224G 高速接口 IP、HBM4/4E IP、64G UCIe IP。** 其中 HBM4、先进节点签核、硬件仿真和 3DIC 多物理场是近 12 个月最紧急的客户问题；Agentic EDA 的想象空间最大，但当前付费规模最小，仍不能用“完全自主设计芯片”叙事估值。
+6. **资产负债表从“净现金软件公司”变成了“高现金流、带收购杠杆的软件平台”。** 现金及短期投资 24.84 亿美元、债务 100.36 亿美元、净债务约 75.52 亿美元；商誉和无形资产占总资产 82.6%，有形净资产为负。好处是 83% 收入具有 recurring 属性、FY2026 自由现金流指引约 20 亿美元；风险是 Ansys 整合失误、减值、裁员后支持能力下降或 IP 再次失速，会同时压缩盈利和估值。
+7. **估值已反映高质量和整合成功的相当一部分预期。** 2026-07-10 收盘价 445.50 美元、市值约 856 亿美元，TTM P/S 约 9.86 倍，GAAP TTM P/E 约 101.9 倍；按当前一致预期计算的 forward P/E 约 28.3 倍，按管理层 FY2026 非 GAAP EPS 中点 14.76 美元计算约 30.2 倍。GAAP 与非 GAAP 差异巨大，投资人必须同时看现金流、采购会计摊销和重组支出。
+8. **一年后公司收入的合理区间不是简单把 backlog 全部释放。** 本报告基准、乐观、极度乐观三种口径给出的未来 12 个月收入分别为 106–109 亿、111–115 亿、118–124 亿美元，对 FY2026 指引中点的增长约 9%–13%、15%–19%、22%–28%。极度乐观情景需要 Agentic EDA 从试点评估跨越到生产采购、HBM4/PCIe 7/224G/UCIe 多项目同步放量、Ansys 交叉销售明显加速，不能作为默认情景。
+
+### 一句话投资画像
+
+SNPS 是一个具有极高客户切换成本、长期结构性增长和强定价权的产业软件平台，但当前股票已从“EDA 双寡头复利”转为“Ansys 大并购整合 + IP 修复 + AI 产品兑现”的执行型投资；质量仍高，短期确定性低于历史，估值容错率也低于收入增长表面所暗示的水平。
+
+## 1. 整体业务、产业链位置、三年转型与最新估值
+
+### 1.1 公司到底卖什么
+
+| 报告口径 | FY2026 Q2 收入 | 占比 | 主要内容 | 商业模式 |
+|---|---:|---:|---|---|
+| EDA 产品组 | 11.624 亿 | 51.0% | VCS、Verdi、Fusion Compiler、PrimeTime、IC Validator、Custom Compiler、TestMAX、ZeBu、HAPS、3DIC Compiler、Synopsys.ai | 通常为 2–3 年期订阅/技术订阅；另有云算力、硬件和服务 |
+| Ansys 产品组 | 6.524 亿 | 28.7% | HFSS、Fluent、Mechanical、Icepak、RedHawk-SC、Lumerical、SCADE、SimAI、TwinAI 等 | 订阅、维护、云/HPC、服务；Q2 含 1,250 万美元渠道会计 gross-up |
+| Design IP | 4.542 亿 | 20.0% | PCIe、Ethernet、224G SerDes、HBM、DDR、LPDDR、UCIe、USB、MIPI、基础库、内存编译器、NoC、安全 IP、VIP | license + NRE + maintenance + royalty；收入随项目里程碑和客户量产波动 |
+| Other | 0.070 亿 | 0.3% | 培训、非核心项目等 | 服务/其他 |
+
+报告分部口径与产品口径不同：Design Automation 分部把 EDA、Ansys 和 Other 合并，Q2 收入 18.218 亿美元、调整后营业利润 7.891 亿美元、调整后营业利润率 43.3%；Design IP 分部收入 4.542 亿美元、调整后营业利润 1.107 亿美元、利润率 24.4%。来源：[Q2 FY2026 财务补充材料](https://s201.q4cdn.com/778493406/files/doc_earnings/2026/q2/supplemental-info/Synopsys-Q2-FY2026-Financial-Supplement.pdf)、[Q2 FY2026 新闻稿](https://news.synopsys.com/2026-05-27-Synopsys-Posts-Financial-Results-for-Second-Quarter-Fiscal-Year-2026)。
+
+### 1.2 产业链位置：从芯片设计收费站到工程系统控制面
+
+SNPS 位于芯片价值链上游，客户支付的费用相对芯片最终销售额很小，但工具错误会造成数千万至数亿美元的重做、数月延误，甚至整代产品失败，因此其经济价值远高于采购金额。
+
+| 工程阶段 | SNPS 介入点 | 对客户的关键价值 |
+|---|---|---|
+| 系统架构与规格 | Ansys 系统仿真、数字孪生、SimAI，架构探索 | 在流片前识别性能、热、机械、电磁和可靠性约束 |
+| RTL 与功能验证 | VCS、Verdi、VC Formal、Verification IP、AgentEngineer | 发现逻辑错误；AI 生成测试、调试和覆盖率收敛 |
+| 原型与仿真加速 | ZeBu Server 5、ZeBu-200、HAPS-200 | 在硅片之前运行软件、AI workload 和大规模系统验证 |
+| 综合与物理实现 | Design Compiler、Fusion Compiler、IC Compiler II、DSO.ai | PPA 优化，完成从 RTL 到版图 |
+| 签核 | PrimeTime、StarRC、IC Validator、RedHawk-SC、HFSS-IC | 时序、功耗、EM/IR、电磁和热签核；错误代价最高 |
+| 先进封装/Chiplet | 3DIC Compiler、Multiphysics Fusion、UCIe、HBM、die-to-die IP | 处理 2.5D/3D 封装、热耦合、SI/PI 和 die 间互联 |
+| 可复用模块 | DesignWare 控制器、PHY、VIP、基础库、安全/NoC | 减少客户自研时间，降低接口和协议验证风险 |
+| 量产与生命周期 | IP royalty、Silicon Lifecycle Management、数字孪生 | 良率、监控、维护和后续软件/模型更新 |
+
+这一位置具有三个显著特征：
+
+- **高切换成本。** PDK、流程脚本、golden signoff、历史缺陷库、工程师习惯和 IP 硅验证记录共同形成锁定；核心流程迁移通常需要 12–36 个月，先进 PHY 的替代往往要等下一个节点或下一次流片。
+- **需求领先芯片收入。** AI 加速器和交换芯片在量产前 18–36 个月就要采购 EDA、HAV 和 IP，所以 SNPS 更像设计活动和复杂度的先行指标，而不是 GPU 出货的同步指标。
+- **供给不是晶圆产能。** 约束来自先进节点工程师、PDK 认证端口、验证硬件、云/HPC 容量、test chip、协议合规实验室和现场支持；软件可复制不代表高质量项目可以无限并行。
+
+项目内相关行业资料对市场结构、定价与供给约束的详细框架见：[EDA 工具、接口 IP 与 Chiplet IP 行业调研](../../行业调研/AI服务器_存储_芯片/行业调研_EDA工具、接口IP与Chiplet%20IP_2026-07-10.md)。该资料估计 2025Q4 全球电子设计产业收入 54.66 亿美元，同比增长 10.3%；SIP 收入 20.83 亿美元，同比增长 18.3%；核心 EDA 与接口 IP 均呈高度集中结构。
+
+### 1.3 投资人心中的公司画像
+
+历史上，投资人把 Synopsys 视为：
+
+1. 与 Cadence 并列的全流程 EDA 双寡头之一；
+2. 受益于晶体管、先进封装和系统复杂度持续增加，而非只依赖半导体出货量；
+3. 多年期订阅、续约率高、现金流稳定、价格温和上调的复利型软件公司；
+4. 通过 DesignWare IP 获得更高增速，但也承受项目制、客户集中和收入确认波动。
+
+2025 年 Ansys 并表后，市场叙事发生变化：
+
+- 正面叙事是 EDA 与多物理场仿真的技术融合、TAM 扩大到公司估计的约 310 亿美元、NVIDIA 战略合作和 AI 设计复杂度加速。
+- 负面叙事是约 350 亿美元收购带来的债务、巨额商誉、整合和裁员风险；Design IP 在 2025 年出现客户/路线图执行问题；GAAP 盈利被采购会计摊销显著压低。
+- 2025Q3 Design IP 失速后股价曾出现历史级单日下跌，说明市场不再把 SNPS 当作“只要持有就自动复利”的低执行风险资产。
+- 2026 年 Elliott 合作及董事会变化强化了利润率、资本配置和组合精简预期，但也可能推动更激进的成本控制。
+
+### 1.4 最近三年的重大变动
+
+| 日期 | 事件 | 战略含义与财务影响 |
+|---|---|---|
+| 2024-01-01 | Sassine Ghazi 接任 CEO，创始人 Aart de Geus 转任执行董事长 | 从创始人时代进入职业经理人主导的产品组合和并购整合阶段 |
+| 2024-01-16 | 宣布以约 350 亿美元收购 Ansys | 从 EDA/IP 扩展至电磁、热、流体、机械、光学和数字孪生；也是公司史上最大并购 |
+| 2024-05 至 2024-09 | 以最高约 21 亿美元出售 Software Integrity 业务，并于 9 月完成 | 退出应用安全，集中资源于 silicon-to-systems 工程软件；相关业务转为终止经营 |
+| 2025-07-17 | 完成 Ansys 收购；会计购买对价约 349 亿美元 | 收入基座跃升，但新增约 100 亿美元长期债务和巨额商誉/无形资产；[交易完成公告](https://news.synopsys.com/2025-07-17-Synopsys-Completes-Acquisition-of-Ansys) |
+| 2025-10 | 向 Keysight 出售 Optical Solutions Group 和 Ansys PowerArtist | 满足监管补救并精简重叠产品；对 FY2026 收入约有 1.10 亿美元负面影响；[监管批准](https://news.synopsys.com/2025-10-10-Synopsys-Receives-Final-Regulatory-Approval-to-Close-Planned-Divestitures-of-Synopsys-Optical-Solutions-Group-and-Ansys-PowerArtist) |
+| 2025-11 | 宣布裁减约 10% 员工，预计税前费用 3.0–3.5 亿美元，多数在 FY2026 发生 | 目标是整合重叠功能、改善利润率；风险是先进 IP、现场支持和 Ansys 交叉销售能力被削弱；[8-K](https://www.sec.gov/Archives/edgar/data/883241/000119312525276232/d48382d8k.htm) |
+| 2025-12-01 | NVIDIA 以 20 亿美元战略入股，认购价 414.79 美元，约 480 万股 | 合作 CUDA-X、NIM/NeMo/Nemotron、Omniverse、AgentEngineer 和 GPU 加速求解；是技术验证，也带来平台中立性观感风险；[双方公告](https://news.synopsys.com/2025-12-01-NVIDIA-and-Synopsys-Announce-Strategic-Partnership-to-Revolutionize-Engineering-and-Design?asPDF=1&tags=SocialMedia) |
+| 2026-01 至 2026-06 | 将 ARC/ARC-V 等 Processor IP Solutions 出售给 GlobalFoundries，6 月完成 | 退出处理器 IP，集中于接口、基础 IP 和 hyperscaler custom silicon；FY2026 收入约减少 0.40 亿美元；[GFS 完成公告](https://gf.com/news-and-events/news/globalfoundries-completes-acquisition-of-synopsys-processor-ip-solutions-business-delivering-a-holistic-technology-platform-for-physical-ai/) |
+| 2026-03 至 2026-06 | 发布 AgentEngineer、HAV 新平台、Ansys 2026 R1；Multiphysics Fusion 首批产品正式可用 | Ansys 协同从并购故事进入产品交付验证期 |
+| 2026-05-27 | 与 Elliott 达成合作，Jesse Cohn 加入董事会 | 强化运营效率、资本配置和股东回报监督；[8-K](https://www.sec.gov/Archives/edgar/data/883241/000119312526241920/d96543d8k.htm) |
+| 2026-07-07 | 媒体报道公司停止 EES/FDC 等旧制造分析软件的新销售，仅保留维护 | 进一步退出非核心 fab control 工具，把资源转向 AI 设计；客户包括部分存储和晶圆厂，但目前没有证据显示影响晶圆生产；[Reuters 转引](https://www.streetinsider.com/Reuters/Synopsys%2Bto%2Bcut%2Bchip%2Bfab%2Bmanufacturing%2Bcontrol%2Bsoftware%2Bin%2Bshift%2Bto%2BAI%2Bdesign%2C%2Bsources%2Bsay/26737337.html) |
+
+### 1.5 最新股价、估值与盈利质量
+
+| 指标 | 最新值 | 数据日期/期间 | 口径与解读 |
+|---|---:|---|---|
+| 股价 | 445.50 美元 | 2026-07-10 收盘 | 当日高 447.82、低 438.71；[NASDAQ 历史行情](https://www.nasdaq.com/market-activity/stocks/snps/historical) |
+| 市值 | 约 856 亿美元 | 2026-07-10 | 市场数据口径；对应稀释后股本约 1.92 亿股 |
+| TTM 收入 | 86.79 亿美元 | 截至 2026-04-30 | 同比增长约 39.5%，主要由 Ansys 并表驱动 |
+| TTM GAAP 净利润 | 约 7.73 亿美元 | 截至 2026-04-30 | TTM 净利率约 8.91% |
+| TTM GAAP 毛利率 | 73.47% | 截至 2026-04-30 | 被 Ansys 采购会计摊销、硬件收入和组合变化压低 |
+| TTM GAAP P/E | 约 101.9 倍 | 2026-07-10 | 对采购会计摊销和重组费用高度敏感 |
+| Forward P/E，一致预期 | 约 28.3 倍 | 2026-07-10 调整至最新股价 | 第三方一致预期约 27.4 倍对应较早股价；按 445.50 美元重算 |
+| Forward P/E，管理层 FY2026 非 GAAP EPS | 30.2 倍 | EPS 指引中点 14.76 美元 | 445.50 ÷ 14.76；不等同于 GAAP 盈利 |
+| TTM P/S | 约 9.86 倍 | 2026-07-10 | 856 ÷ 86.79 |
+| 最新季度收入增速 | +41.9% | FY2026 Q2 YoY | 剔除 Ansys 的简单可比增速约 +1.2%；核心 EDA +8.3%，IP -5.8% |
+| 最新季度 GAAP/非 GAAP营业利润率 | 5.3% / 39.5% | FY2026 Q2 | GAAP 与非 GAAP差异主要来自无形资产摊销、股权激励和重组 |
+
+第三方 TTM 数据来源：[StockAnalysis 财务](https://stockanalysis.com/stocks/snps/financials/)、[StockAnalysis 估值统计](https://stockanalysis.com/stocks/snps/statistics/)。由于公司在并购后 GAAP 与非 GAAP差异极大，单看其中一个口径都不完整：GAAP 能反映收购对价和摊销成本，非 GAAP更接近订阅软件的经营能力，自由现金流则用于验证债务偿付能力。
+
+### 1.6 资产负债表评估
+
+| 指标 | 2026-04-30 | 计算/判断 |
+|---|---:|---|
+| 现金及现金等价物 | 24.12 亿 | 充足 |
+| 短期投资 | 0.72 亿 | 现金加短期投资合计 24.84 亿 |
+| 应收账款 | 12.67 亿 | DSO 59 天，较 Q1 的 62 天改善 |
+| 存货 | 4.42 亿 | 主要与硬件辅助验证系统相关，不是传统软件库存 |
+| 流动资产/流动负债 | 54.37 亿 / 37.91 亿 | 流动比率 1.43 倍 |
+| 速动比率 | 约 0.99 倍 | 现金、短投和应收 ÷ 流动负债；处于可接受边缘 |
+| 总债务 | 100.36 亿 | 其中短期部分仅约 0.22 亿；大部分为固定利率 senior notes |
+| 净债务 | 约 75.52 亿 | 总债务减现金和短投 |
+| 总资产/股东权益 | 468.89 亿 / 304.77 亿 | 账面杠杆不高，但资产质量要看商誉 |
+| 商誉 | 268.54 亿 | 主要来自 Ansys |
+| 可辨认无形资产 | 118.75 亿 | 客户关系、技术和商标等 |
+| 商誉+无形资产/总资产 | 82.6% | 减值风险显著 |
+| 有形股东权益 | 约 -82.52 亿 | 304.77－268.54－118.75 |
+| FY2026 上半年经营现金流 | 14.86 亿 | 显著高于 GAAP 净利润 |
+| FY2026 上半年资本开支 | 0.90 亿 | 自由现金流约 13.96 亿 |
+| FY2026 自由现金流指引 | 约 20 亿 | 净债务/指引 FCF 约 3.8 倍 |
+
+债务结构相对可控：公司已在 FY2026 上半年偿还约 34.62 亿美元定期贷款；约 100 亿美元 senior notes 票息大致为 4.55%–5.70%，期限分布在 2027–2055 年。Q2 利息费用约 1.334 亿美元，若用两分部调整后营业利润约 8.997 亿美元计算，季度利息保障倍数约 6.7 倍；用受摊销和重组影响的 GAAP 营业利润计算则很低。
+
+**健康度结论：7/10，健康但不再“无资产负债表风险”。** 83% recurring 收入、约 20 亿美元年度 FCF 和长期化债务提供缓冲；主要脆弱点是商誉/无形资产占比过高、负有形净资产、整合期裁员，以及 IP 收入波动。一旦 Ansys 增长或交叉销售低于预期，减值不会直接消耗现金，却会暴露收购回报不足，并可能导致估值和融资成本同步恶化。资产负债表数据来源：[FY2026 Q2 10-Q](https://www.sec.gov/Archives/edgar/data/883241/000088324126000018/snps-20260430.htm)。
+
+## 2. 最新及此前四次财报：收入、利润率、订单、交期与 AI 暴露
+
+### 2.1 五个季度关键财务数字
+
+| 财报季度 | 总收入 / YoY | EDA 产品收入 / QoQ | Design IP 收入 / YoY | Ansys 收入 | DA 分部收入 / YoY | DA/IP 调整后营业利润率 | 公司非 GAAP营业利润率 | GAAP毛利率 / 净利率 | GAAP / 非 GAAP EPS | OCF / FCF |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| FY2025 Q2，2025-04-30 | 16.043 亿 / +10.2% | 10.731 亿 / — | 4.820 亿 / +20.6% | 0 | 11.223 亿 / +6.4% | 40.9% / 31.2% | 38.0% | 80.2% / 21.8% | 2.24 / 3.67 | 2.75 亿 / 2.19 亿 |
+| FY2025 Q3，2025-07-31 | 17.397 亿 / +14.0% | 11.826 亿 / +10.2% | 4.276 亿 / -7.7% | 0.889 亿，约两周并表 | 13.121 亿 / +23.5% | 44.5% / 20.1% | 38.5% | 78.1% / 13.9% | 1.50 / 3.39 | 6.71 亿 / 6.32 亿 |
+| FY2025 Q4，2025-10-31 | 22.549 亿 / +37.8% | 11.354 亿 / -4.0% | 4.071 亿 / -21.4% | 6.677 亿 | 18.477 亿 / +65.2% | 41.5% / 13.8% | 36.5% | 71.0% / 19.9% | 2.39 / 2.90 | 6.40 亿 / 6.05 亿 |
+| FY2026 Q1，2026-01-31 | 24.088 亿 / +65.5% | 10.988 亿 / -3.2% | 4.070 亿 / -6.5% | 8.856 亿 | 20.018 亿 / +96.2% | 47.3% / 16.2% | 42.1% | 73.5% / 2.7% | 0.34 / 3.77 | 8.57 亿 / 8.22 亿 |
+| FY2026 Q2，2026-04-30 | 22.760 亿 / +41.9% | 11.624 亿 / +5.8%；YoY +8.3% | 4.542 亿 / -5.8%；QoQ +11.6% | 6.524 亿 | 18.218 亿 / +62.3% | 43.3% / 24.4% | 39.5% | 72.3% / 0.8% | 0.09 / 3.35 | 6.29 亿 / 5.75 亿 |
+
+说明：
+
+- DA 分部在 Ansys 并表后同比增速失真；Q2 核心 EDA 产品增长 8.3%更能反映原业务。
+- Ansys 在 FY2025 Q3 仅从 2025-07-17 交易完成后开始并表，因此 Q3、Q4、Q1、Q2 之间不能简单用环比判断终端需求。
+- GAAP毛利率、净利率取季度财务报表计算；非 GAAP营业利润率来自公司补充材料。Q1、Q2 净利率骤降并不代表现金流崩塌，主要是收购无形资产摊销、重组和利息成本。
+- 来源：[FY2025 Q2](https://news.synopsys.com/2025-05-28-Synopsys-Posts-Financial-Results-for-Second-Quarter-Fiscal-Year-2025)、[FY2025 Q3](https://news.synopsys.com/2025-09-09-Synopsys-Posts-Financial-Results-for-Third-Quarter-Fiscal-Year-2025)、[FY2025 Q4/FY2025](https://news.synopsys.com/2025-12-10-Synopsys-Posts-Financial-Results-for-Fourth-Quarter-and-Fiscal-Year-2025)、[FY2026 Q1](https://news.synopsys.com/2026-02-25-Synopsys-Posts-Financial-Results-for-First-Quarter-Fiscal-Year-2026)、[FY2026 Q2](https://news.synopsys.com/2026-05-27-Synopsys-Posts-Financial-Results-for-Second-Quarter-Fiscal-Year-2026)。
+
+收入确认结构也反映了并购和 IP 波动：
+
+| 财报季度 | Time-based 产品 | Upfront 产品 | Maintenance & service | 结构解读 |
+|---|---:|---:|---:|---|
+| FY2025 Q2 | 8.283 亿，51.6% | 5.107 亿，31.8% | 2.653 亿，16.5% | 收购前，TSL 与 IP upfront 为主 |
+| FY2025 Q3 | 8.924 亿，51.3% | 5.164 亿，29.7% | 3.310 亿，19.0% | 只含约两周 Ansys |
+| FY2025 Q4 | 9.407 亿，41.7% | 6.154 亿，27.3% | 6.988 亿，31.0% | Ansys 维护/服务显著扩大 |
+| FY2026 Q1 | 9.515 亿，39.5% | 7.415 亿，30.8% | 7.157 亿，29.7% | IP/Ansys 季节性使 upfront 较高 |
+| FY2026 Q2 | 9.456 亿，41.5% | 5.463 亿，24.0% | 7.841 亿，34.5% | maintenance/service 占比创新高，upfront 环比下降 |
+
+FY2026 Q2 GAAP 净利润只有 1,711 万美元、稀释 EPS 0.09 美元；非 GAAP净利润 6.437 亿美元、EPS 3.35 美元。该差额再次说明，估值时必须把收购无形资产摊销、重组、SBC、利息和现金流分别观察。
+
+### 2.2 Backlog、代理 bookings、交付与取消
+
+| 财报季度 | 期末 backlog | 其中不可取消 FSA | 剔除 FSA 后未来 12 个月预计确认 | 反推履约义务净增加 | 代理 B2B | Recurring 收入占比 | DSO | 期末员工数 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| FY2025 Q2 | 81 亿 | 12 亿 | 42%，约 29.0 亿 | 约 20.0 亿 | 1.25x | 73% | 52 天 | 21,065 |
+| FY2025 Q3 | 101 亿 | 13 亿 | 46%，约 40.5 亿 | 约 37.4 亿 | 2.15x | 75% | 57 天 | 28,330 |
+| FY2025 Q4 | 114 亿 | 20 亿 | 45%，约 42.3 亿 | 约 35.5 亿 | 1.58x | 81% | 61 天 | 28,135 |
+| FY2026 Q1 | 113 亿 | 19 亿 | 47%，约 44.2 亿 | 约 23.1 亿 | 0.96x | 84% | 62 天 | 26,750 |
+| FY2026 Q2 | 110 亿 | 18 亿 | 49%，约 45.1 亿 | 约 19.8 亿 | 0.87x | 83% | 59 天 | 26,380 |
+
+计算方法和限制：
+
+- 反推履约义务净增加 = 期末 backlog－期初 backlog＋当季收入；代理 B2B = 反推净增加 ÷ 当季收入。
+- 公司没有披露统一的 bookings、book-to-bill、取消率或 lead time，因此以上两列只是履约义务桥接模型，不是官方订单。FY2025 Q3/Q4 数值还受到 Ansys 收购 backlog 并入口径、外汇、重分类和合同修改的巨大影响。
+- Q1/Q2 是较可比的合并后口径：代理 B2B 从约 0.96x 降至 0.87x，backlog 从 113 亿降至 110 亿，说明不能只依据 110 亿绝对规模下“订单饱满”的结论。
+- FSA 18 亿美元由合作晶圆厂承诺采购，属于不可取消的长期安排；其实际收入确认取决于项目调用和合同条款，不能全部视为未来 12 个月收入。
+- EDA 软件通常可以快速 provisioning，但客户签约、部署、流程认证和扩 token 要数周至数季；合同期限通常 2–3 年。先进 PHY/IP 从早期客户接入、PDK port 到可交付一般需要 2–9 个月，完整新节点 IP 开发可能需要 2–3 年。HAV 含实体硬件，交付受 FPGA、板卡、服务器、机柜和现场安装影响。
+- 除 FSA 外，公司没有披露 backlog 的取消率。基准模型只假设 cancellable backlog 有 1%–2% 的合同缩减/延期，不把它描述成历史取消率。
+
+### 2.3 各季最重要的信息
+
+#### FY2025 Q2
+
+- EDA 与 IP 尚未并入 Ansys，业务结构清晰；IP 同比增长 20.6%，显示当时接口和基础 IP 需求仍强。
+- 81 亿美元 backlog、73% recurring 收入形成稳定底盘。
+- 这是 IP 增长转弱前的高基数，也解释了后续季度同比压力。
+
+#### FY2025 Q3
+
+- 仅并表约两周 Ansys，收入 0.889 亿美元。
+- Design IP 同比下降 7.7%。管理层随后把问题归因于中国需求、一个主要 foundry 客户、产品路线图和资源配置执行，市场对“结构性 IP 高增长”叙事重新定价。
+- backlog 跳升主要是收购口径，不能解释为单季新签 37 亿美元。
+
+#### FY2025 Q4
+
+- Ansys 首个近完整季度贡献 6.677 亿美元；DA 分部同比增长 65.2%，但核心 EDA 产品环比下降 4.0%。
+- Design IP 同比下降 21.4%，调整后分部利润率降至 13.8%，显示低收入规模与高研发投入产生显著负经营杠杆。
+- 公司启动组合精简、裁员和利润率修复。
+
+#### FY2026 Q1
+
+- Ansys 季节性强势，收入 8.856 亿美元；DA 调整后利润率达到 47.3%。
+- IP 收入仍约 4.07 亿美元、同比下降 6.5%，但管理层称接近底部。
+- backlog 113 亿美元、recurring 84%，现金流强；同时员工数开始明显下降。
+
+#### FY2026 Q2：最新财报
+
+- EDA 产品收入 11.624 亿美元，同比增长 8.3%；先进节点、3DIC、AI/HPC 和 verification 需求强。
+- Design IP 收入 4.542 亿美元，环比增长 11.6%、同比仍下降 5.8%；调整后利润率回升至 24.4%，支持“Q1 触底、逐季改善”的判断，但尚未恢复同比增长。
+- 公司报告超过 30 个 full-flow technical wins；一家领先 HPC 客户使用 3DIC Compiler 完成下一代 AI accelerator tapeout。
+- HAV 获得多项战略订单；ZeBu Server 5、HAPS-200 和即将于 FY2026 Q3 推出的 ZeBu-200 是重点。
+- PCIe 7.0 报告超过 90% win rate 和 18 个新增 license；224G 有多个 design win；64G UCIe 在 2nm tapeout，累计 UCIe design wins 超过 150 个；首颗 HBM4 IP test chip 已完成关键阶段。
+- 20 个客户正在评估超过 25 个 specialized agents；这是 AgentEngineer 的有力 adoption 信号，但“评估”不是生产收入。
+- [Q2 管理层准备稿](https://s201.q4cdn.com/778493406/files/doc_earnings/2026/q2/transcript/SNPS_Q226_Prepared_Remarks.pdf)。
+
+### 2.4 五季 AI 数据中心收入占比估算
+
+公司没有披露 AI 数据中心收入。本报告采用狭义口径：只计入 AI/HPC 直接相关的先进 EDA、HAV、3DIC、HBM、UCIe、高速接口 IP 和数据中心热/电磁/流体仿真；不把所有半导体设计或所有 Ansys 收入都贴上 AI 标签。
+
+| 财报季度 | 狭义 AI 数据中心相关收入估计 | 占总收入估计 | 主要依据 |
+|---|---:|---:|---|
+| FY2025 Q2 | 3.5–4.8 亿 | 22%–30% | AI accelerator 设计、先进节点签核、HBM3E、PCIe/CXL、HAV；尚无 Ansys |
+| FY2025 Q3 | 4.0–5.6 亿 | 23%–32% | 先进节点/HAV 增长，Ansys 只并表两周 |
+| FY2025 Q4 | 5.0–7.0 亿 | 22%–31% | Ansys 扩大分母；IP 下滑抵消部分 AI 需求 |
+| FY2026 Q1 | 6.0–8.4 亿 | 25%–35% | Ansys 全季、3DIC/HAV 增长，IP 仍处低位 |
+| FY2026 Q2 | 6.1–8.4 亿 | 27%–37% | EDA +8.3%、HAV/3DIC wins、HBM4/PCIe7/UCIe、AI 数据中心多物理仿真 |
+
+这是模型区间，季度之间的细微变化不应被解读为精确趋势。更可靠的观察指标是先进节点项目、HAV 系统订单、接口 IP design wins、HBM/UCIe test chip 阶段、AgentEngineer 从 evaluation 到 paid production 的转化。
+
+## 3. FY2026 最新指引、业务占比、产品地图与取舍
+
+### 3.1 最新指引
+
+| 指标 | FY2026 最新指引 | 中点/隐含变化 |
+|---|---:|---|
+| 全年收入 | 96.25–97.05 亿 | 中点 96.65 亿，较 FY2025 约增长 37% |
+| FY2026 Q3 收入 | 24.10–24.60 亿 | 中点 24.35 亿，同比约增长 40% |
+| Ansys 全年贡献 | 约 29.60 亿 | 占全年收入中点 30.6% |
+| 非 GAAP营业利润率 | 约 41% | 中期目标为 mid-40s |
+| GAAP营业利润率 | 约 11.6% | 与非 GAAP差异主要是无形资产摊销、SBC 和重组 |
+| 非 GAAP EPS | 14.72–14.80 美元 | 中点 14.76 美元 |
+| GAAP EPS | 2.49–2.91 美元 | 采购会计与重组影响显著 |
+| 经营现金流 | 约 23 亿 | 现金转化强 |
+| 自由现金流 | 约 20 亿 | FCF margin 约 20.7% |
+| 资本开支 | 约 3 亿 | HAV、设施、IT 和整合投入 |
+
+管理层对原指引的桥接为：核心业务上调约 0.35 亿美元、Ansys 渠道会计 gross-up 增加约 0.60 亿美元、Processor IP 出售减少约 0.40 亿美元。全年还包含 Optical Solutions/PowerArtist 处置约 1.10 亿美元的收入逆风。
+
+### 3.2 FY2026 产品收入占比估计
+
+| 产品组 | FY2026 收入估计 | 占收入中点 | 可比增速判断 | 结论 |
+|---|---:|---:|---:|---|
+| EDA | 47.5–49.0 亿 | 49%–51% | 约 +8%–12% | 最大底盘；先进节点、验证、3DIC 支撑，传统工具并非全部高增长 |
+| Ansys | 约 29.6 亿 | 30.6% | 并表不可比；独立口径预计中高个位数至低双位数 | 最大新增增长源；交叉销售和 Multiphysics Fusion 决定并购回报 |
+| Design IP | 17.5–18.5 亿 | 18%–19% | 约 -7% 至 -2%，下半年逐季修复 | 高速接口/HBM/UCIe 强，旧项目、中国和 foundry 客户拖累 |
+| Other | 0.5–1.0 亿 | 约 1% | 收缩 | 非核心 |
+
+各产品组估计相加以 96.65 亿美元指引中点为约束。公司没有给出 EDA 与 Design IP 的全年精确拆分，因此区间不是官方指引。
+
+### 3.3 重点产品、型号、阶段与利润率判断
+
+| 关键业务 | 重点产品/型号 | 最近六个月证据 | 当前收入速度估计 | 收入增速判断 | 经济毛利率/经营利润率估计 |
+|---|---|---|---:|---:|---:|
+| 核心 EDA 与签核 | VCS、Verdi、VC Formal、Fusion Compiler、PrimeTime、StarRC、IC Validator、Custom Compiler、TestMAX | Q2 EDA +8.3%；30+ full-flow wins；TSMC N3P/N2P 和 Samsung 2nm 认证/production-ready | 32–36 亿/年 | +8%–13% | GM 84%–89%；成熟产品 OPM 40%–52% |
+| 硬件辅助验证 HAV | ZeBu Server 5、ZS5、HAPS-200、ZeBu-200 | ZS5 软件性能最高提升约 2 倍；HAPS-200 已可用；12-FPGA ZeBu-200 计划 FY2026 Q3；AMD/NVIDIA 使用案例 | 7.5–10.5 亿/年 | +15%–25% | GM 55%–66%；OPM 15%–30% |
+| Agentic EDA | AgentEngineer、Synopsys.ai、DSO.ai、VSO.ai、TSO.ai、专业 agent | 20 客户评估 25+ agents；部分任务生产率约 2 倍、选择性案例最高约 5 倍；仍在 early production | 0.6–1.8 亿 ARR，跨产品 | +60%–150%，低基数 | GM 72%–84%；当前 OPM 0%–20%，规模化后可升 |
+| 3DIC + Multiphysics Fusion | 3DIC Compiler、PrimeTime+RedHawk-SC、StarRC+HFSS-IC、PrimeClosure、Custom Compiler+HFSS | 2026-06-17 首批产品 GA；Cisco Silicon One、MediaTek、NVIDIA、Samsung 验证；一家 HPC 客户 AI accelerator tapeout | 3.0–5.5 亿 ARR，跨 EDA/Ansys | +25%–50% | GM 80%–89%；OPM 30%–45% |
+| Ansys 多物理仿真 | Ansys 2026 R1、HFSS、Icepak、Fluent、Mechanical、RedHawk-SC、Lumerical、SimAI Premium、TwinAI、Mesh Agent、GeomAI | 2026 R1 把 AI agent、GPU 加速和 joint solution 产品化；Fusion 是交叉销售载体 | 总计 26.1 亿 Q2 年化；FY2026 29.6 亿 | 独立口径约 +7%–12% | 经济 GM 80%–88%；整合期 OPM 25%–35% |
+| 高速接口 IP | PCIe 7.0、224G/112G Ethernet SerDes、CXL、UALink 相关控制器/PHY/VIP | PCIe 7.0 超 90% win rate、18 个新 license；224G 多项 wins；TSMC 先进节点 first-silicon | 5.5–8.0 亿/年 | +18%–30% | GM 82%–91%；分部 OPM 被前置 R&D 压低 |
+| HBM/内存 IP | HBM4/4E controller、PHY、VIP；HBM3/3E；DDR5 MRDIMM 2、LPDDR6 | HBM4 首颗 IP test chip；HBM3/3E 已有数百万颗出货硅验证；最高 12Gbps/pin、接口带宽超过 3TB/s | 2.8–4.4 亿/年 | +25%–40% | GM 85%–93%；OPM 25%–45% |
+| UCIe / die-to-die | 64G UCIe controller、PHY、adapter、VIP、emulation、SI/PI | 64G 2nm tapeout；累计 150+ UCIe design wins；UCIe 3.0 支持 48/64GT/s | 0.6–1.4 亿/年，包含于高速 IP | +45%–80% | GM 84%–93%；早期 OPM 10%–30% |
+| 基础、安全与定制 IP | Foundation IP、memory compiler、NoC、安全 IP、SLM、IP Accelerated、custom subsystem | TSMC N3P/N2P 硅验证；Samsung 2nm；hyperscaler custom silicon 需求 | 4.2–6.8 亿/年 | +8%–20% | GM 80%–90%；OPM 20%–40% |
+
+利润率是基于公司分部利润率、产品物理构成和行业成本结构的模型，不是公司产品级披露。HAV 含 FPGA/服务器/板卡，毛利率低于纯软件；先进 IP 的复制毛利率高，但每个节点的 PHY、test chip、PDK port 和现场支持研发投入很重，所以 Q2 Design IP 调整后营业利润率只有 24.4%。
+
+关键产品公告：
+
+- [Converge 2026：AgentEngineer 与 Multiphysics 愿景](https://news.synopsys.com/2026-03-11-Synopsys-Outlines-Vision-for-Engineering-the-Future)
+- [HAV：ZeBu Server 5、HAPS-200、ZeBu-200](https://news.synopsys.com/2026-03-11-Synopsys-Introduces-Software-Defined-Hardware-Assisted-Verification-to-Enable-AI-Proliferation)
+- [Ansys 2026 R1](https://news.synopsys.com/2026-03-11-Synopsys-Launches-Ansys-2026-R1-to-Re-Engineer-Engineering-with-Joint-Solutions-and-AI-Powered-Products)
+- [Multiphysics Fusion 首批产品 GA](https://news.synopsys.com/2026-06-17-Synopsys-Announces-Availability-of-the-First-Wave-of-Multiphysics-Fusion-Solutions)
+- [TSMC 先进节点/IP/EDA 合作](https://news.synopsys.com/2026-04-22-Synopsys-Partners-with-TSMC-to-Power-Next-Generation-AI-Systems-with-Silicon-Proven-IP-and-Certified-EDA-Flows)
+- [Samsung 2nm、3DIC 与 TestMAX](https://news.synopsys.com/2026-05-28-Synopsys-Advances-Power-and-Performance-for-AI-and-Multi-Die-Designs-on-Latest-Samsung-Foundry-Processes-at-SAFE-Forum-2026)
+
+### 3.4 明确跳过或降低权重的业务
+
+| 业务/产品 | 原因 | 对模型的处理 |
+|---|---|---|
+| ARC、ARC-V 及 Processor IP Solutions | 2026-06 已出售给 GlobalFoundries | 不纳入未来增长引擎；FY2026 收入逆风约 0.40 亿 |
+| Optical Solutions Group、Ansys PowerArtist | 已出售给 Keysight | 不纳入；FY2026 组合处置逆风约 1.10 亿 |
+| EES/FDC 等旧 fab manufacturing analytics | 2026-07 媒体称停止新销售、只维护 | 视作低增长/收缩尾部，不赋予 AI 溢价 |
+| 成熟 USB、低速 MIPI、传统移动/消费接口的低增长部分 | 仍有现金流和客户价值，但相对 AI/HPC 增速低 | 保留在 Design IP 总收入，不单独展开 |
+| 传统 FPGA、低端原型和非先进节点工具 | 不是公司增长重点 | 计入核心 EDA 底盘，不给高增长倍数 |
+| 非 AI 的通用机械、汽车和工业仿真 | Ansys 的重要基本盘，但本报告聚焦 AI 基建 | 计入 Ansys 总收入；仅将数据中心热、电磁、功率、数字孪生子集列为 AI 直接收入 |
+| 培训、Other、小额服务 | 占比低且持续收缩 | 只在收入桥中保留 |
+
+跳过不等于这些业务没有价值，而是避免把低增长成熟收入与 HBM4、3DIC、Agentic EDA 等高增量机会混在一起。
+
+### 3.5 过去半年会议、技术报告与“订单挤压”交叉验证
+
+| 日期/窗口 | 会议或技术节点 | 一手/近一手信号 | 对 SNPS 的含义 | 不能过度推断的部分 |
+|---|---|---|---|---|
+| 2026-02-17–19 | Chiplet Summit 2026 | 64G UCIe、HBM4/custom HBM、千 chiplet 管理、安全、KGD/SLM；Intel/Cadence 展示 UCIe-S 现场互操作 | 完整 PHY/controller/VIP/repair/security 比单一 PHY 更有价值；SNPS 2nm 64G tapeout 属于正确方向 | 现场 demo 不等于多供应商量产；行业基准判断 64G UCIe 大规模收入更像 2028 年 |
+| 2026-02-24–26 | DesignCon 2026 | 224G 进入互操作，448G/PCIe8 进入 pathfinding，SI/PI、连接器和测试议题密集 | 224G、PCIe7/8-class SerDes、VIP、HFSS 和 test chip 预算在终端量产前释放 | 256GT/s 演示不是 PCIe8 标准产品订单 |
+| 2026-03-11、03-16–19 | Converge 2026 / NVIDIA GTC | AgentEngineer、Siemens Fuse、GPU 加速 EDA/Multiphysics 和多工具 orchestration | Agentic 从聊天助手走向可调用工具的 workflow；NVIDIA 合作可降低求解时间并增加 premium compute | 厂商披露的 2x、5x、13x 是选定任务，不等于芯片总周期同倍数缩短 |
+| 2026-04-07 | UALink 2.0 | Common 2.0、200G DL/PL、Manageability 1.0、Chiplet 1.0 发布，并与 UCIe 3.0 对齐 | 非 NVIDIA scale-up 生态提前采购 controller/PHY/VIP/security 和验证工具 | compliance program 与量产硅仍在后续阶段 |
+| 2026-04-20–22 | DATE 2026 / TSMC Technology Symposium | Agentic production flow、3DIC thermal/EM/IR、chiplet security；TSMC 同期发布 N3/N2、3DFabric、HBM4、64G UCIe flow | foundry certification、联合签核和先进 IP port 是比普通发布会更强的订单前置信号 | 认证 flow 不保证每个客户都选 SNPS，也不等于 royalty 已开始 |
+| 2026-05 | ECTC 2026 / Samsung SAFE 2026 | 混合键合、D2W/W2W、HBM4、3DIC 多物理场；Samsung 2nm/multi-die production-ready flow | Multiphysics Fusion、3DIC Compiler、TestMAX 和接口 IP attach 率有上升基础 | 工艺论文和 test chip 距离高良率量产仍有多轮验证 |
+| 2026-06 | PCI-SIG DevCon / Fusion GA | PCIe6 合规、PCIe7 128GT/s、PCIe8 pathfinding；首批 Multiphysics Fusion 正式可用 | PCIe7 license 与 Fusion 交叉销售进入可观察商业阶段 | 仍需跟踪付费 ACV、续约和客户量产，不能只看 design win 数 |
+| 2026-07-26–29 | DAC 2026，研究时点尚未召开 | 已公布议程聚焦 autonomous EDA、3DIC 和 connected verification | 是下一次产品/客户验证窗口 | 本报告不把未来会议议程当成已经发生的订单事实 |
+
+会议和技术节点的行业交叉资料集中在[项目内 EDA、接口 IP 与 Chiplet IP 行业调研](../../行业调研/AI服务器_存储_芯片/行业调研_EDA工具、接口IP与Chiplet%20IP_2026-07-10.md)。其中最重要的“订单挤压”结论是：本行业不是传统库存缺货，真正拥挤的是 224G/448G/HBM4 PHY 人才、先进节点 PDK port、test chip、合规实验室、3DIC 热/电磁相关性、HAV/云仿真容量和现场支持。SNPS 没有披露客户排队名单或标准交期，因此本报告用以下可核查信号替代“供不应求”口号：
+
+- foundry certified/production-ready flow 数和先进节点覆盖；
+- test chip、first-silicon、tapeout、互操作、量产五阶段的迁移速度；
+- HAV 大系统实际交付和安装窗口；
+- PCIe7/224G/HBM4/UCIe 的 license、客户项目数与 royalty 的阶段差；
+- backlog、近期可确认比例、代理 B2B 与员工/支持 capacity 是否同向。
+
+截至 Q2，技术项目数量强、产品路线正确，但 backlog 环比下降和代理 B2B 约 0.87x 不支持把整个公司描述成“全面订单挤压”。更准确的说法是：HBM4、先进 PHY、HAV 和 3DIC 签核的高端工程供给偏紧，而公司总合同流仍需 FY2026 H2 新签数据验证。
+
+## 4. 高增长或关键业务：当前收入、AI 重要性、供需与定价权
+
+### 4.1 评分定义
+
+- 重要性：1 为可有可无，5 为 AI 基建技术栈不可缺。
+- 时间紧急性：1 为三年以上可选，5 为客户当前设计周期的关键路径。
+- 供需紧张度：1 为供给充裕，5 为工程能力、认证、硬件或交付明显供不应求。
+- 垄断/护城河：1 为高度同质化，5 为少数供应商且替换成本极高。
+- 溢价能力：1 为强价格竞争，5 为可通过节点、容量、性能和风险降低提价。
+
+### 4.2 当前贡献与评分
+
+| 业务 | 当前年化收入贡献估计 | 当前增速估计 | AI重要性 | 紧急性 | 供需紧张 | 垄断/护城河 | 溢价能力 | 核心判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| 核心 EDA/签核 | 32–36 亿 | 8%–13% | 5 | 5 | 4 | 5 | 5 | 先进节点、复杂 AI SoC 和签核不可替代；成熟工具增速较低但现金流最好 |
+| HAV | 7.5–10.5 亿 | 15%–25% | 5 | 5 | 4 | 4 | 4 | 大模型/AI accelerator 验证和软件先行需求提高；实体系统与现场支持构成真实交付约束 |
+| AgentEngineer/AI 自动化 | 0.6–1.8 亿，跨产品 | 60%–150% | 4 | 4 | 3 | 4 | 4 | 数据、流程上下文和 golden tools 是壁垒；当前仍以 evaluation/试点为主 |
+| 3DIC + Multiphysics Fusion | 3.0–5.5 亿，跨产品 | 25%–50% | 5 | 5 | 4 | 5 | 5 | HBM、chiplet 和高热密度使电磁/热/时序协同成为必须；融合签核难替换 |
+| Ansys AI 数据中心子集 | 2.5–4.5 亿，包含于 Ansys | 20%–40% | 4 | 4 | 3 | 4 | 4 | HFSS/Icepak/Fluent/Mechanical/RedHawk 解决机柜、板、封装与供电问题；不是所有 Ansys 收入都与 AI 直接相关 |
+| PCIe 7/224G/高速接口 IP | 5.5–8.0 亿 | 18%–30% | 5 | 5 | 4 | 4 | 5 | first-silicon 和 >90% win rate 显示领先；先进 PHY port 和 test chip 稀缺 |
+| HBM4/4E IP | 2.8–4.4 亿 | 25%–40% | 5 | 5 | 5 | 4 | 5 | AI 加速器内存带宽瓶颈最紧迫；控制器、PHY、VIP 和 test chip 一体化有溢价 |
+| 64G UCIe/die-to-die | 0.6–1.4 亿，包含于高速 IP | 45%–80% | 4 | 4 | 3 | 4 | 4 | 技术方向明确、收入基数小；大规模互操作和量产仍晚于 HBM4 |
+| 基础/安全/NoC/SLM/custom | 4.2–6.8 亿 | 8%–20% | 4 | 4 | 4 | 4 | 4 | 容易被忽略的小业务；先进节点 memory compiler、NoC、安全和 hyperscaler 定制可与接口 IP 捆绑 |
+
+上述范围存在重叠：Agentic、3DIC、Ansys AI 子集、UCIe 是横切维度，不能与 EDA、Ansys、IP 分部简单相加。其作用是定位增量，而不是重建会计报表。
+
+### 4.3 产品级交叉验证
+
+#### 核心 EDA/签核
+
+- 财务验证：Q2 EDA 产品收入同比增长 8.3%，而 IP 仍下降，说明当前最稳定增长来自 EDA。
+- 客户验证：30+ full-flow technical wins、TSMC N2P/N3P 和 Samsung 2nm 认证，表明先进节点份额不只依赖单一客户。
+- 定价验证：GPU 加速 EDA 与 premium contract uplift 被管理层明确提及；行业常见标准价格上调约 3%–8%，新增功能/容量/打包可贡献 10%–30% uplift。
+- 风险：Cadence 与 Siemens 在部分工具有 golden status；客户常采用 best-of-breed 多供应商流程，不会把所有份额给 SNPS。
+
+#### HAV
+
+- ZeBu Server 5 的 software-defined upgrade 最高可带来约 2 倍性能；HAPS-200 和 ZeBu-200 使用 AMD Versal Premium VP1902，12-FPGA 型号容量约为前代两倍。
+- HAV 收入既有软件/订阅，也有实体硬件，Q2 strategic wins 和大容量型号发布支持需求；但 FPGA 供给、系统装配和客户机房安装会限制短期 capacity。
+- 云仿真不能完全替代 HAV：真实软件栈、长序列验证、功耗和外设场景仍需要硬件加速；云更可能扩大使用而不是消灭硬件。
+
+#### AgentEngineer
+
+- 公司披露 20 个客户评估 25+ specialized agents，说明产品已跨过 demo，但未披露付费客户、ACV、续约率或生产运行量。
+- 技术价值来自调用 VCS、Verdi、PrimeTime 等确定性工具和客户私有设计数据，而不是只提供通用聊天界面。
+- 最大风险是 Cadence AgentStack、Siemens Fuse、客户内部 agent 和基础模型把“对话层”商品化；SNPS 的可防守部分是工作流权限、历史设计上下文、工具执行闭环与签核责任。
+
+#### 3DIC + Multiphysics Fusion
+
+- PrimeTime、StarRC、RedHawk-SC、HFSS-IC 和 3DIC Compiler 的联合数据模型可以减少跨工具导入、网格、寄生参数和版本不一致。
+- 官方列举部分工作流最高约 3 倍 timing、10 倍 closure，NVIDIA CUDA cuDSS 在选定求解器最高约 13 倍；这些是特定 workload 的性能案例，不能外推为全流程收益。
+- Cisco Silicon One、MediaTek、NVIDIA、Samsung 的市场验证提高可信度，但首批产品 2026-06 才 GA，未来四个季度的续约和扩容最关键。
+
+#### Ansys AI 数据中心
+
+- 芯片/封装：RedHawk-SC、HFSS-IC、Icepak、Mechanical、Lumerical。
+- 板/机柜/园区：HFSS、SIwave、Icepak、Fluent、Mechanical、电源完整性与数字孪生。
+- AI 功能：SimAI Premium、TwinAI、Mesh Agent、GeomAI、Engineering Copilot。
+- 交叉验证的核心不是“Ansys 全部属于 AI”，而是 Multiphysics Fusion 是否让原 EDA 客户购买热、电磁、流体和结构求解器，以及 Ansys 客户是否采用 SNPS 设计流程。
+
+#### 高速接口、HBM 与 UCIe
+
+- PCIe 7.0：公司称 >90% win rate、18 个新增 license；在 TSMC 先进节点有 first-silicon milestones。
+- 224G：多个 wins，服务于 1.6T/3.2T 网络、AI scale-up/scale-out；未来还要过高速 SerDes 功耗、BER 和封装 SI/PI 验证。
+- HBM4/4E：完整 controller + PHY + VIP，目标最高 12Gbps/pin、接口带宽 >3TB/s；HBM3/3E 已有数百万颗硅验证，HBM4 首颗 IP test chip 是重要但尚非大规模量产的阶段。
+- 64G UCIe：2nm tapeout、完整 controller/PHY/adapter/VIP/emulation/SI/PI 栈；[UCIe 3.0](https://www.uciexpress.org/specifications) 已定义 48/64GT/s，但广泛互操作认证和量产产品仍需时间。
+- UALink 2.0 在 2026-04 发布 200G data-link/physical layer 与 chiplet 规范，并与 UCIe 3.0 对齐；认证计划仍在建设，说明标准方向强、商业兑现阶段早。[UALink 2.0 公告/规范](https://ualinkconsortium.org/wp-content/uploads/2026/04/UALink-2.0-Specification-PR_FINAL.pdf)。
+
+## 5. 一年后产品收入：基准、乐观、极度乐观三情景
+
+### 5.1 情景假设
+
+| 因素 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| AI 芯片设计活动 | 保持高位，预算审慎 | hyperscaler/custom ASIC 项目数继续增加 | 多家客户同步加速、项目不延期 |
+| Ansys 协同 | 交叉销售逐步发生 | Fusion 带来明显 bundle uplift | 多物理场成为大多数先进芯片全流程默认采购 |
+| Design IP 修复 | H2 逐季改善、全年仍略降 | 2026H2 恢复同比增长 | HBM4/PCIe7/224G/UCIe 同步进入量产前大额采购 |
+| Agentic EDA | 评估转为有限生产 | 付费客户与 agent 数快速扩大 | 成为合同容量和价格上调的主要驱动 |
+| 供给 | 工程师和支持约束可控 | GPU/HAV/PDK 扩容顺利 | 需求极强且公司无明显交付失误 |
+| 合同缩减/延期 | cancellable backlog 的 1%–2% | 0.5%–1% | 0%–0.5% |
+
+### 5.2 T+12 月产品年化收入预测
+
+| 业务 | 当前年化估计 | 基准：一年后收入 / 增速 | 乐观：一年后收入 / 增速 | 极度乐观：一年后收入 / 增速 |
+|---|---:|---:|---:|---:|
+| 核心 EDA/签核 | 32–36 亿 | 37–41 亿 / +10%–13% | 40–44 亿 / +17%–22% | 44–49 亿 / +28%–35% |
+| HAV | 7.5–10.5 亿 | 10.5–13.0 亿 / +15%–22% | 12.5–16.0 亿 / +30%–42% | 15.5–20.0 亿 / +50%–65% |
+| AgentEngineer/Agentic | 0.6–1.8 亿 | 1.8–3.0 亿 / +70%–120% | 3.5–5.5 亿 / +180%–300% | 6.5–10.0 亿 / +400%–700% |
+| 3DIC + Multiphysics | 3.0–5.5 亿 | 4.8–7.0 亿 / +25%–40% | 6.5–9.0 亿 / +55%–80% | 9.0–12.5 亿 / +110%–160% |
+| Ansys 全部 | Q2 年化 26.1 亿；FY2026 指引 29.6 亿 | 32.5–34.5 亿 / 较指引 +10%–17% | 35.0–38.0 亿 / +18%–28% | 40.0–43.0 亿 / +35%–45% |
+| 其中 Ansys AI 数据中心 | 2.5–4.5 亿 | 3.8–6.0 亿 / +35%–55% | 5.5–8.0 亿 / +75%–110% | 8.5–11.5 亿 / +170%–220% |
+| PCIe7/224G/高速接口 IP | 5.5–8.0 亿 | 7.0–9.5 亿 / +15%–25% | 9.0–11.5 亿 / +30%–45% | 11.5–14.5 亿 / +60%–80% |
+| HBM4/4E IP | 2.8–4.4 亿 | 4.0–5.5 亿 / +25%–40% | 5.0–7.0 亿 / +50%–70% | 7.0–9.5 亿 / +90%–120% |
+| 64G UCIe | 0.6–1.4 亿 | 1.0–1.8 亿 / +45%–70% | 1.6–2.8 亿 / +90%–140% | 3.0–5.0 亿 / +200%–300% |
+| 基础/安全/NoC/SLM/custom | 4.2–6.8 亿 | 4.8–7.4 亿 / +8%–15% | 5.5–8.2 亿 / +20%–30% | 6.8–9.5 亿 / +40%–55% |
+
+注：横切产品不能相加。比如 HBM/UCIe 属于 Design IP，Agentic 和 3DIC 跨 EDA/Ansys；Ansys AI 数据中心是 Ansys 总收入子集。极度乐观情景用于检验上限，不代表概率加权目标。
+
+### 5.3 一年后技术与商业评分
+
+下表每个单元依次为“AI重要性/时间紧急性/供需紧张/垄断或护城河/溢价能力”，满分均为 5。
+
+| 业务 | 基准 | 乐观 | 极度乐观 | 变化逻辑 |
+|---|---|---|---|---|
+| 核心 EDA/签核 | 5/5/4/5/5 | 5/5/4/5/5 | 5/5/5/5/5 | AI SoC 和先进节点数量越多，license、cloud token 和签核支持越紧 |
+| HAV | 5/5/4/4/4 | 5/5/5/4/5 | 5/5/5/5/5 | 大模型 workload 和软件先行把验证容量推向更大系统 |
+| Agentic EDA | 4/4/3/4/4 | 5/5/4/4/5 | 5/5/5/5/5 | 只有从建议工具变为可审计闭环执行，才进入关键路径 |
+| 3DIC/Multiphysics | 5/5/4/5/5 | 5/5/5/5/5 | 5/5/5/5/5 | HBM、chiplet、功耗密度使联合签核成为 tapeout gate |
+| Ansys AI 数据中心 | 4/4/3/4/4 | 5/5/4/4/5 | 5/5/5/5/5 | 若机柜/园区热和电气模型进入持续 digital twin，粘性显著提高 |
+| 高速接口 IP | 5/5/4/4/5 | 5/5/5/5/5 | 5/5/5/5/5 | first-silicon、先进节点 port 和 protocol VIP 决定上市时间 |
+| HBM4/4E | 5/5/5/4/5 | 5/5/5/5/5 | 5/5/5/5/5 | 内存带宽与封装是当前 AI accelerator 最紧迫瓶颈之一 |
+| 64G UCIe | 4/4/3/4/4 | 5/5/4/4/5 | 5/5/5/5/5 | 需从 tapeout 跨到互操作认证和量产 chiplet 才兑现 |
+| 基础/安全/custom | 4/4/4/4/4 | 4/5/4/4/5 | 5/5/5/5/5 | hyperscaler 定制化和 advanced node memory/NoC 可形成 bundle lock-in |
+
+## 6. BOM、每 MW/rack/GPU/光口内容量、价格传导与当前产能
+
+### 6.1 先说明：SNPS 没有传统物理 BOM
+
+EDA、仿真和 IP 大部分是软件、许可、NRE、维护与 royalty。公司没有披露“每 GPU、每 rack、每 MW 或每 optical port 收取多少”，也没有一张可以像电源、光模块或铜缆那样相加的物理 BOM。因此本节使用**经济内容量**：
+
+1. 估算一个先进 AI accelerator/交换芯片项目在 2–3 年设计周期内可能购买的 SNPS 工具、HAV、IP 和支持金额；
+2. 再按项目生命周期 150–300 万颗 accelerator、72 GPU/rack、140–227kW/rack 折算；
+3. 结果代表设计成本在最终设备上的摊销，不是 SNPS 逐台开票，也不是客户公开合同价格。
+
+### 6.2 参考项目的真实工作内容
+
+| 业务 | “BOM”里的真实交付内容 | 单个先进 AI 项目 2–3 年内容量估计 |
+|---|---|---:|
+| 核心 EDA/签核 | 仿真、形式验证、综合、布局布线、时序、寄生、DRC/LVS、测试、cloud/HPC token、流程集成与支持 | 3,500–8,000 万 |
+| HAV | ZeBu/HAPS 机箱、FPGA/板卡、互联、编译软件、runtime、调试和现场支持 | 1,000–3,000 万 |
+| Agentic EDA | agent orchestration、专用 agent、模型/推理容量、客户上下文与治理 | 200–1,000 万 |
+| 3DIC/Multiphysics | 3DIC Compiler、热/电磁/电源/时序联合求解、封装模型和 signoff | 800–2,500 万 |
+| Ansys 数据中心/系统 | 芯片、封装、板、机柜和园区的 HFSS/Icepak/Fluent/Mechanical/RedHawk、HPC 与服务 | 100–800 万；园区项目差异很大 |
+| 高速接口 IP | PCIe/Ethernet/CXL/224G controller、PHY、VIP、test chip、PDK port、NRE、维护与 royalty | 500–1,500 万 |
+| HBM IP | HBM4/4E controller、PHY、VIP、封装/信号完整性支持、test chip 与 royalty | 500–1,800 万 |
+| UCIe IP | controller、PHY、adapter、VIP、emulation、SI/PI、互操作支持 | 200–800 万 |
+| Foundation/安全/NoC | memory compiler、standard cell、NoC、安全、SLM、custom subsystem | 300–900 万 |
+| 合计，去重后 | 不保证客户全部选择 SNPS，也不含客户内部研发 | 7,100 万–2.03 亿 |
+
+先进 PHY 的单节点 port 和硅验证投入可达 1,500–4,000 万美元、持续 2–3 年；controller/VIP 大版本约需 300–1,000 万美元。这解释了为什么接口 IP 毛利率高、分部经营利润率却会随收入里程碑剧烈波动。
+
+### 6.3 经济内容量折算
+
+参考假设：150–300 万颗 accelerator 生命周期、72 GPU/rack、每 rack 140–227kW，即约 4.4–7.1 racks/MW、317–514 GPUs/MW。光口只对网络/高速接口相关业务有意义；参考 8–18 个高速 optical ports/rack。
+
+| 业务 | 每 GPU 等效内容量 | 每 72-GPU rack | 每 MW | 每高速光口 | 解读 |
+|---|---:|---:|---:|---:|---|
+| 核心 EDA/签核 | 12–53 美元 | 0.86–3.82 千美元 | 3.8–27.2 千美元 | 不适用 | 大部分在流片前以企业合同支付 |
+| HAV | 3–20 美元 | 0.22–1.44 千美元 | 1.0–10.3 千美元 | 不适用 | 项目越大、软件开发越早，所需仿真容量越高 |
+| Agentic EDA | 0.7–6.7 美元 | 0.05–0.48 千美元 | 0.2–3.4 千美元 | 不适用 | 当前主要是合同 uplift/容量，而非按 GPU 收费 |
+| 3DIC/Multiphysics | 2.7–16.7 美元 | 0.19–1.20 千美元 | 0.9–8.6 千美元 | 不适用 | HBM/chiplet 设计越复杂，内容量越高 |
+| Ansys 数据中心/系统 | 不宜按 GPU | 0.14–11.5 千美元 | 1–50 千美元 | 不适用 | 按芯片、机柜或 100–500MW 园区设计合同摊销，离散度最大 |
+| 高速接口 IP | 1.7–10 美元 | 0.12–0.72 千美元 | 0.5–5.1 千美元 | 2–30 美元 | 光口内容量按交换/网络芯片项目 license、NRE、royalty 摊销 |
+| HBM4/4E IP | 1.7–12 美元 | 0.12–0.86 千美元 | 0.5–6.2 千美元 | 不适用 | 不含 HBM 颗粒本身，只含 controller/PHY/VIP 等设计 IP |
+| UCIe | 0.7–5.3 美元 | 0.05–0.38 千美元 | 0.2–2.7 千美元 | 部分包含于 2–30 美元 | 与高速接口行重叠，不可再加 |
+| Foundation/安全/NoC | 1–6 美元 | 0.07–0.43 千美元 | 0.3–3.1 千美元 | 0.5–8 美元 | 视芯片是否采购完整 bundle |
+| 合计，去重 | 约 24–135 美元 | 约 1.7–9.7 千美元 | 约 7.6–69.5 千美元，另加园区仿真 | 约 5–60 美元 | 是生命周期经济摊销，不是物理 BOM |
+
+这些数字的投资用途是回答“客户 AI 基建扩张如何传到 SNPS 收入”，而不是声称 SNPS 对每颗 GPU 或每个光口开具固定账单。
+
+### 6.4 价格传导链
+
+| 环节 | 需求/价格如何传导 | 时间 |
+|---|---|---|
+| hyperscaler 提高 AI CapEx，定义下一代 accelerator/switch | 增加并行设计项目、节点和 chiplet 数量 | GPU 出货前约 24–36 个月 |
+| 芯片团队确定节点、封装、HBM 与接口 | 采购/扩容 EDA、HAV、3DIC、Ansys solver 和 cloud token | 流片前约 12–30 个月 |
+| IP 选型与 foundry port | 支付 license、NRE、early-access premium；高级 port 可溢价 25%–100% | 流片前约 9–24 个月 |
+| 验证与签核高峰 | 增加 token、仿真硬件、GPU/HPC 容量、现场支持；bundle uplift 约 10%–30% | 流片前约 3–12 个月 |
+| test chip/首硅/量产 | maintenance、里程碑收入、royalty 开始确认 | 流片后约 3–18 个月 |
+| 下一代迭代和续约 | 标准价格通常可提高约 3%–8%，再叠加容量/功能 | 2–3 年合同周期 |
+
+因此，GPU 现货价格上涨不会直接、同步地变成 SNPS 收入；真正的传导变量是客户设计项目数、复杂度、节点/封装变更、license 容量和量产 royalty。
+
+### 6.5 当前“产能能力”、采用程度与认证
+
+这里的产能定义为在现有工程师、PDK、test chip、HAV 硬件、云/HPC 和支持资源下，未来四季度可交付/可计费的年化上限。横切产品仍有重叠。
+
+| 业务 | 当前年化产能估计 | 采用程度 | 当前认证/交付阶段 |
+|---|---:|---|---|
+| 核心 EDA/签核 | 40–44 亿 | 全球头部芯片公司广泛生产使用 | TSMC N3P/N2P certified；Samsung 2nm production-ready；golden signoff 地位强 |
+| HAV | 11–14 亿 | AI/HPC 大客户采用；strategic wins 增加 | HAPS-200 已 GA；ZS5 可用；ZeBu-200 计划 FY2026 Q3 |
+| Agentic EDA | 1.5–2.5 亿 | 20 客户、25+ agents 处于 evaluation/early production | 无统一行业认证；关键门槛是客户安全、权限、可审计与签核闭环 |
+| 3DIC/Multiphysics | 4.5–6.5 亿 | Cisco、MediaTek、NVIDIA、Samsung 等验证；首批商业客户 | 2026-06 首批 Fusion solutions GA；TSMC/Samsung advanced packaging 流程验证 |
+| Ansys 全部 | 30–33 亿 | 航空、汽车、工业、电子广泛采用；EDA 客户交叉销售早期 | Ansys 2026 R1 GA；部分求解器/GPU 加速正式可用 |
+| 高速接口 IP | 8–10 亿 | PCIe7/224G design wins 强 | PCIe7、224G、DDR5 MRDIMM2、LPDDR6 在 TSMC 先进节点 first-silicon/硅验证阶段 |
+| HBM4/4E | 4.0–5.5 亿 | HBM3/3E 已量产采用，HBM4 早期客户 | HBM3/3E 数百万颗硅验证；HBM4 首颗 IP test chip，尚非广泛量产认证 |
+| 64G UCIe | 1.2–2.0 亿 | 150+ UCIe 累计 wins；64G early adopter | 64G 2nm tapeout；标准已发布，广泛 interoperability/compliance 尚早 |
+| Foundation/安全/custom | 4.5–6.0 亿 | 先进节点和 custom silicon 项目采用 | TSMC N3P/N2P、Samsung 2nm 硅验证/production-ready 产品逐步扩充 |
+
+员工数从 FY2025 Q4 的 28,135 降至 FY2026 Q2 的 26,380，约下降 6.2%；相对 Q3 的 28,330 下降约 6.9%。软件可扩展，但现场应用、IP port、test chip 和 Ansys 模型支持依赖人，因此成本削减过快会让“账面 capacity”高于实际可交付能力。
+
+## 7. 一年后产能、供应链采用和认证阶段三情景
+
+### 7.1 T+12 月年化产能
+
+| 业务 | 基准产能 | 乐观产能 | 极度乐观产能 | 主要扩产手段 |
+|---|---:|---:|---:|---|
+| 核心 EDA/签核 | 42–45 亿 | 46–50 亿 | 52–57 亿 | GPU 加速、云 token、自动化支持、更多 PDK flow |
+| HAV | 15–17 亿 | 18–21 亿 | 23–27 亿 | HAPS-200/ZeBu-200 量产、VP1902/板卡供应、软件定义性能提升 |
+| Agentic EDA | 3.0–4.5 亿 | 6.0–8.5 亿 | 11–15 亿 | 标准 agent 模板、私有部署、推理容量、从 seat 到 usage/bundle 定价 |
+| 3DIC/Multiphysics | 7.5–9.5 亿 | 10–13 亿 | 15–19 亿 | 统一数据模型、GPU 求解、更多 foundry/OSAT/封装认证 |
+| Ansys 全部 | 35–37 亿 | 39–42 亿 | 45–49 亿 | EDA 客群交叉销售、SaaS/HPC、联合 field organization |
+| 高速接口 IP | 10–11.5 亿 | 12.5–14.5 亿 | 16–19 亿 | 更多先进节点 port、test chip、controller/PHY/VIP bundle |
+| HBM4/4E | 5.5–7.0 亿 | 7.5–9.0 亿 | 10.5–13 亿 | HBM4 test chip 硅回片、HBM4E port、封装/内存厂协同 |
+| 64G UCIe | 1.8–2.5 亿 | 3.0–4.5 亿 | 5.5–8.0 亿 | 互操作实验室、更多 2nm/3nm port、UALink chiplet 适配 |
+| Foundation/安全/custom | 5.5–6.5 亿 | 7.0–8.5 亿 | 9.5–11 亿 | 标准化 subsystem、hyperscaler custom 复用、先进节点 memory/NoC |
+
+### 7.2 一年后 adoption 与认证里程碑
+
+| 业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| 核心 EDA | N2P/2nm 客户扩大生产使用；3DIC 进入更多 full flow | GPU 加速 premium bundle 成为先进 AI 项目标准采购 | 多数头部 AI ASIC 项目采用统一 Fusion/Multiphysics 数据面 |
+| HAV | HAPS-200、ZeBu-200 按期交付，现有战略客户扩容 | 12-FPGA 大系统成为 AI SoC 验证主力 | 需求超过硬件供应，预订/安装窗口延长到两个以上季度 |
+| Agentic | 40–60 个客户进入付费生产，形成权限和审计规范 | 100+ 客户，多 agent workflow 进入 tapeout 流程 | agent 直接驱动多数日常验证/优化任务，按使用量显著提价 |
+| 3DIC/Multiphysics | 首批 GA 产品获得续约，更多 foundry/OSAT reference flow | 热/电磁/功耗联合签核成为 HBM4 chiplet 的常规 gate | 客户从多供应商拼接转向 SNPS 单一数据模型，bundle share 快速上升 |
+| Ansys AI 数据中心 | 交叉销售渗透原 EDA 高端客户约 5%–10% | 约 15%–20%，SimAI/TwinAI 进入持续运维 | 25%+，园区和机柜数字孪生变为重复性平台收入 |
+| 高速接口 IP | PCIe7/224G 多项首硅，进入 early production | 1.6T/3.2T 网络和 PCIe7 项目广泛采用 | first-silicon 领先形成 bundle 标准，竞争对手 port 延迟 |
+| HBM4/4E | 更多 test chip/首硅，部分客户 early production | HBM4 controller/PHY/VIP 在多个 AI accelerator 量产 | HBM4E 早期采用叠加 HBM4 放量，工程支持供不应求 |
+| 64G UCIe | 完成更多互操作测试和首批产品验证 | 64G chiplet 进入少量量产，UALink chiplet 采用 | 多供应商 64G die-to-die 大规模量产，成为 AI scale-up 默认之一 |
+| Foundation/custom | N2P/2nm 产品库扩大 | 多个 hyperscaler subsystem 复用 | IP Accelerated 模式将接口、NoC、安全、验证打包成平台采购 |
+
+认证不是一个单点事件。EDA 要通过 foundry reference flow 和客户 tapeout；PHY 要经过 test chip、协议合规、互操作、PVT 和量产良率；HAV 要完成客户 workload 验证；Agentic 产品还要通过企业安全、数据隔离、可审计和结果确定性。报告不把“tapeout”写成“已量产”，也不把“客户评估”写成“正式订单”。
+
+## 8. 基于 backlog、供给和渠道证据的未来一年公司增速
+
+### 8.1 Backlog 可见度桥
+
+截至 FY2026 Q2：
+
+- 总 backlog：110 亿美元；
+- FSA：18 亿美元，不可取消，但调用时点未全部披露；
+- 普通 backlog：92 亿美元；
+- 普通 backlog 中 49% 预计未来 12 个月确认，即约 45.1 亿美元；
+- 其余约 46.9 亿美元大多在随后三年确认；
+- Q2 recurring 收入占比 83%。
+
+因此，下一年收入底盘不是 110 亿美元，而是“约 45.1 亿普通 backlog 的近期确认 + FSA 实际调用 + 新签订阅/续约 + 使用量、维护、service 和 royalty”。这也是为什么即使 backlog 大于年收入，季度代理 B2B 低于 1 仍需要重视。
+
+### 8.2 三情景公司收入与订单模型
+
+| 指标 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| 普通 backlog 未来 12 个月确认 | 45–47 亿 | 46–49 亿 | 48–51 亿 |
+| FSA 未来 12 个月调用 | 8–10 亿，约 45%–55% | 10–12 亿，约 55%–70% | 12–15 亿，约 70%–85% |
+| 新签/续约/usage/royalty 当期确认 | 52–55 亿 | 56–60 亿 | 61–67 亿 |
+| cancellable backlog 缩减/延期假设 | 1%–2% | 0.5%–1% | 0%–0.5% |
+| 可交付收入 capacity | 110–114 亿 | 118–122 亿 | 128–135 亿 |
+| 未来 12 个月收入 | 106–109 亿 | 111–115 亿 | 118–124 亿 |
+| 较 FY2026 指引中点增速 | +9%–13% | +15%–19% | +22%–28% |
+| 期末 backlog 模型 | 110–116 亿 | 118–126 亿 | 128–140 亿 |
+| 非 GAAP营业利润率 | 42%–43.5% | 43.5%–45% | 45%–47% |
+
+### 8.3 渠道和项目证据如何支持或否定情景
+
+支持基准以上情景的已知证据：
+
+- 超过 30 个 full-flow technical wins；
+- 一家领先 HPC 客户使用 3DIC Compiler 完成下一代 AI accelerator tapeout；
+- PCIe 7.0 超过 90% win rate、18 个新 license；
+- 224G 有多个 design wins；
+- 150+ 累计 UCIe wins、64G 2nm tapeout；
+- HBM4 首颗 IP test chip，HBM3/3E 已有数百万颗硅验证；
+- HAV 多项 strategic wins，HAPS-200 已发布、ZeBu-200 计划 Q3；
+- 20 客户评估 25+ agents；
+- TSMC N3P/N2P、Samsung 2nm 和 HCB test chip 等 foundry/封装合作；
+- Cisco Silicon One、MediaTek、NVIDIA、Samsung 对 Multiphysics Fusion 的产品验证。
+
+这些证据的共同局限：
+
+- technical win、evaluation、tapeout、test chip、license 和量产 royalty 是不同阶段，金额和取消/延期概率也不同；
+- 公司没有披露上述客户项目金额、交付窗口、项目单位数或取消率；
+- PCIe7、HBM4、64G UCIe 的收入会先以 license/NRE 出现，royalty 要等客户量产；
+- UCIe/UALink 互操作与供应链成熟度晚于 PCIe/HBM，不能用 lifetime wins 直接推一年收入；
+- Ansys 的季度季节性、渠道 accounting gross-up 和处置业务会制造环比噪音。
+
+### 8.4 最关键的季度验证点
+
+1. Design IP 是否在 FY2026 Q3/Q4 恢复同比增长，而不只是从低点环比改善；
+2. backlog 是否重新增长，代理 B2B 是否回到 1.0x 以上；
+3. ZeBu-200 是否按 FY2026 Q3 交付，HAV 毛利率是否因硬件 mix 恶化；
+4. AgentEngineer 披露是否从“评估客户数”升级为付费生产客户、ACV、续约或使用量；
+5. Multiphysics Fusion 是否形成可量化 cross-sell，而不只是产品整合；
+6. HBM4 test chip、PCIe7/224G first-silicon 和 64G UCIe 是否从验证进入客户量产；
+7. 重组后员工下降是否影响支持、IP port 和交付；
+8. FY2026 FCF 是否达到约 20 亿美元，净债务是否持续下降。
+
+## 9. 竞争格局、技术主流性、替代方案与客户切换成本
+
+### 9.1 竞争矩阵
+
+| 业务 | 主要竞争对手 | SNPS 优势 | 替代方案与风险 | 客户替换成本 |
+|---|---|---|---|---|
+| 全流程数字 EDA/签核 | Cadence、Siemens EDA；局部工具和开源项目 | 全流程覆盖、PrimeTime/VC/验证强、foundry 认证、IP/Ansys 联动 | Cadence 在实现、模拟和系统分析强；Siemens 在 Calibre/Veloce 强；客户多供应商 best-of-breed | 极高，约 12–36 个月；golden signoff 更高 |
+| HAV | Cadence Palladium/Protium、Siemens Veloce | ZeBu/HAPS 组合、软件定义升级、与 VCS/Verdi 联动 | 对手硬件容量、编译速度、生态；云仿真分流部分 workload | 高，约 6–18 个月，受模型和调试环境锁定 |
+| Agentic EDA | Cadence AgentStack、Siemens Fuse、客户内部 agent、通用模型平台 | 可直接调用确定性 EDA 工具、客户上下文、全流程数据 | 聊天/编排层容易商品化；结果幻觉、安全和责任边界 | 当前中等 2–6 个月；形成数据/流程闭环后升高 |
+| 3DIC/多物理签核 | Cadence Integrity/系统分析、Siemens Innovator3D/Calibre、Ansys 原竞争产品、foundry 内部 flow | 收购后统一 EDA + Ansys solver；跨时序/热/电磁/功耗 | 数据模型未真正统一、客户继续拼接多家工具 | 高至极高，约 12–24 个月 |
+| Ansys 多物理场 | Siemens Simcenter + Altair、Dassault SIMULIA、COMSOL、Cadence、Hexagon 等 | 求解器深度、电子/芯片品牌、与 SNPS flow 融合 | 竞品在机械、制造、系统工程或特定物理场更强；客户可保持多供应商 | 中高，约 6–24 个月；安全认证模型更高 |
+| 高速接口 IP | Cadence、Qualcomm/Alphawave、Rambus、Arm、VeriSilicon/M31、内部自研 | controller+PHY+VIP、first-silicon、广泛 foundry port | 客户自研、foundry/竞争 IP、开放标准压低 controller 差异化 | 先进 PHY 极高，通常要等下一节点/流片，18–36 个月 |
+| HBM IP | Cadence、Rambus、Alphawave/Qualcomm、客户内部 | HBM3/3E 硅验证、完整 HBM4 stack、EDA/封装协同 | test chip 失败、内存厂规范变化、客户偏好内部 PHY | 极高，失败会延误整代 accelerator |
+| UCIe/NoC | Cadence、Arteris、Siemens、Arm、客户/Chiplet 厂内部 | 完整 64G stack、150+ lifetime wins、2nm tapeout | 标准互操作使部分 IP 商品化；生态量产延迟；专有 die-to-die | 高，选定后涉及 die、封装、验证全链 |
+| Foundation/custom IP | Cadence、Arm、foundry 自有库、Arteris、内部团队 | 先进节点覆盖、可与 interface/VIP/EDA bundle | foundry 免费/低价库，客户定制化 | 中高；节点和硅验证决定粘性 |
+
+Cadence 最新竞争强度不能低估：其 FY2026 Q1 收入约 14.74 亿美元，同比增长约 18.7%，backlog 约 80 亿美元、未来 12 个月可见度约 40 亿美元，非 GAAP营业利润率 44.7%；core EDA、IP、hardware 和 system design 均保持增长。[Cadence FY2026 Q1](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr-ir/2026/cadence-reports-first-quarter-2026-financial-results.html)。Siemens 也已推出覆盖 Solido、Veloce、Calibre、Innovator3D、Xpedition 和 Tessent 的 Fuse 多 agent 系统，[Siemens Fuse](https://news.siemens.com/en-gb/siemens-fuse-eda-ai-agent/)。
+
+### 9.2 新技术是否会成为主流
+
+| 技术 | 主流性判断 | 时间判断 | SNPS 地位 |
+|---|---|---|---|
+| GPU 加速 EDA/仿真 | 已成为主流方向 | 现在至 2 年 | 与 NVIDIA 合作强，但需保持对 AMD/其他客户的平台中立 |
+| Agentic EDA | 会成为工程辅助和局部闭环主流，不等于完全自主芯片设计 | 1–3 年进入广泛生产；完全自主更晚 | 工具与数据闭环优势明显，商业模式仍待验证 |
+| 3DIC + 多物理场联合签核 | 已是高端 AI/HBM/chiplet 必需方向 | 现在至 2 年 | 收购 Ansys 后产品组合最完整之一 |
+| HBM4/4E controller/PHY/VIP | AI accelerator 的当前关键路径 | 现在至 18 个月 | test chip 阶段领先，但量产硅和客户 royalty 才是最终验证 |
+| PCIe7/224G | 下一代主机互联和网络主流 | 1–3 年 | first-silicon、wins 强 |
+| 64G UCIe | chiplet 互联主流候选之一 | 2–4 年更显著 | 技术完整，生态/互操作成熟度是主要不确定性 |
+| UALink chiplet/scale-up | 开放 scale-up 的重要候选，不保证取代 NVLink | 2–4 年 | SNPS 可卖 PHY/controller/VIP/验证，不直接卖交换芯片 |
+| AI 数据中心数字孪生 | 高功率密度园区会增加采用，但不是所有项目都付高价 | 1–4 年 | Ansys 有技术资产，持续运营收入模式尚待验证 |
+
+### 9.3 主要风险
+
+1. **Ansys 整合和收购回报。** 约 349 亿美元对价、387 亿美元商誉和无形资产使资产负债表对增长假设敏感。Fusion 若只产生产品整合成本而没有 ACV uplift，交易回报会显著低于预期。
+2. **Design IP 执行。** Q2 环比修复，但同比仍下降 5.8%；客户集中、foundry 项目、先进节点 port 和路线图错误会造成数季波动。
+3. **backlog 质量。** 110 亿美元很大，但 Q2 代理 B2B 约 0.87x、backlog 环比下降；FSA 的调用时点不透明。
+4. **中国和出口限制。** EDA/IP 对中国客户、先进节点限制和许可证政策敏感；监管变化可能影响销售和支持。
+5. **裁员与技术供给。** 约 10% 重组有利于利润率，却可能减少 field application、test chip、PDK 和 Ansys 专家，造成交付延迟。
+6. **NVIDIA 合作的中立性。** NVIDIA 投资和 CUDA/Omniverse 合作能加速产品，但 AMD、hyperscaler ASIC 和其他竞争客户可能担忧敏感数据或路线图中立性；公司必须证明隔离和多平台支持。
+7. **竞争升级。** Cadence、Siemens/Altair、Dassault、COMSOL 和 Qualcomm/Alphawave 都在扩展系统级和 AI agent 产品；SNPS 不再只面对单一 EDA 对手。
+8. **开放标准的双刃剑。** UCIe/UALink 扩大 TAM，也可能使 controller 层商品化；真正溢价要依靠先进 PHY、VIP、test chip 和多物理签核。
+9. **会计与估值。** GAAP P/E 超过 100 倍、非 GAAP forward P/E 约 30 倍；若收入有机增速停留在个位数、利润率修复延迟，估值压缩风险大。
+10. **技术责任和 AI 安全。** Agent 生成 RTL、testbench 或修复建议必须可验证、可审计；任何流片错误都会放大法律和声誉风险。
+11. **旧产品退出与客户关系。** EES/FDC 等产品 EOL、Optical/PowerArtist 和 Processor IP 处置提高聚焦度，但会让部分长期客户重新评估供应商承诺。
+12. **行业周期与项目延期。** SNPS 比芯片出货领先，但并非免疫；客户推迟 tapeout、减少并行项目或复用旧 IP 都会影响新签和 upfront 收入。
+
+## 10. 综合判断、催化剂与红线
+
+### 10.1 质量评分
+
+| 维度 | 评分 | 理由 |
+|---|---:|---|
+| 产业链重要性 | 9.5/10 | 先进芯片设计、验证、签核和多物理仿真不可缺 |
+| 护城河/切换成本 | 9/10 | 双寡头结构、foundry 认证、golden tools、硅验证 IP |
+| 有机增长可见度 | 7/10 | EDA +8.3%稳健，AI 驱动强；IP 尚未恢复同比增长 |
+| 产品创新 | 8.5/10 | AgentEngineer、Fusion、HAV、HBM4、PCIe7、64G UCIe 组合领先 |
+| 资产负债表 | 7/10 | FCF 强、债务长期化；净债务和无形资产占比高 |
+| 执行与整合 | 6.5/10 | 大并购、裁员、IP 路线图和产品处置增加执行风险 |
+| 估值安全边际 | 5/10 | 约 30 倍 FY2026 非 GAAP EPS、约 9.9 倍销售，需持续兑现 |
+
+### 10.2 最重要的正向催化剂
+
+- Design IP 在 FY2026 H2 恢复同比增长，分部调整后营业利润率回到 30%+；
+- backlog 与代理 B2B 重回增长，且非收购口径的新签可见；
+- ZeBu-200 按期交付并获得大额扩容；
+- AgentEngineer 首次披露付费生产客户、ACV 或使用量；
+- Multiphysics Fusion 产生可量化交叉销售和合同 uplift；
+- HBM4 客户首硅、PCIe7/224G 量产和 64G UCIe 互操作认证；
+- FCF 达到或超过 20 亿美元、净债务快速下降；
+- 非 GAAP营业利润率向 mid-40s 中期目标推进。
+
+### 10.3 投资红线
+
+- 连续两个季度代理 B2B 显著低于 1、backlog 继续下降；
+- Design IP 到 FY2026 Q4 仍同比下降或利润率再度恶化；
+- Agentic/Fusion 只有 demo 和性能案例，没有付费生产采用；
+- ZeBu-200、HBM4 test chip 或先进 PHY port 延期；
+- 10% 裁员后出现大客户支持、质量或 tapeout 问题；
+- Ansys 有机增长降至低个位数且无交叉销售；
+- 自由现金流明显低于 20 亿美元、债务不降反升；
+- 管理层继续出售业务来弥补指引，而不是核心产品增长；
+- GAAP/非 GAAP差异继续扩大且主要由重复性“调整项”造成。
+
+### 10.4 最终结论
+
+SNPS 的核心投资逻辑不是“每卖一颗 GPU 就固定收多少钱”，而是 AI 芯片、HBM、chiplet、网络和高功率数据中心把工程复杂度推到必须增加设计、验证、签核和多物理仿真预算的水平。公司同时拥有全流程 EDA、HAV、先进接口/内存 IP 和 Ansys，是少数能把这一复杂度货币化的平台。
+
+当前最可靠的收入底盘仍是核心 EDA，最强的近端增量是 HAV、3DIC、多物理融合、PCIe7/224G 和 HBM4；64G UCIe 与 AgentEngineer 的上行最大，但商业兑现更早期。Ansys 使 TAM 和产品深度显著扩大，也把公司从低杠杆复利资产变成高整合要求的平台公司。Q2 的 41.9% headline 增长不应掩盖原业务约 1% 的简单剔除后增长和 IP 同比下降；同样，110 亿美元 backlog 也不应掩盖环比下降与代理 B2B 低于 1。
+
+在 445.50 美元股价、约 30 倍 FY2026 非 GAAP EPS 的估值下，市场已给予公司高质量溢价。基准情景需要的不是极端 AI 狂热，而是 EDA 保持低双位数、Ansys 正常增长、IP 修复和利润率提升；乐观情景需要 Fusion/Agentic 真正提升合同金额；极度乐观情景则要求多个尚在 tapeout、test chip 或 evaluation 的产品同时进入量产。投资上应把“产品阶段迁移”和“backlog 质量”放在总收入 headline 之前。
+
+## 11. 资料来源与估算方法
+
+### 11.1 公司与监管文件
+
+- [FY2026 Q2 新闻稿](https://news.synopsys.com/2026-05-27-Synopsys-Posts-Financial-Results-for-Second-Quarter-Fiscal-Year-2026)
+- [FY2026 Q2 10-Q](https://www.sec.gov/Archives/edgar/data/883241/000088324126000018/snps-20260430.htm)
+- [FY2026 Q2 财务补充材料](https://s201.q4cdn.com/778493406/files/doc_earnings/2026/q2/supplemental-info/Synopsys-Q2-FY2026-Financial-Supplement.pdf)
+- [FY2026 Q2 管理层准备稿](https://s201.q4cdn.com/778493406/files/doc_earnings/2026/q2/transcript/SNPS_Q226_Prepared_Remarks.pdf)
+- [FY2026 Q1 10-Q](https://www.sec.gov/Archives/edgar/data/883241/000088324126000014/snps-20260131.htm)
+- [FY2025 10-K](https://www.sec.gov/Archives/edgar/data/883241/000088324125000028/snps-20251031.htm)
+- [FY2025 Q3 10-Q](https://www.sec.gov/Archives/edgar/data/883241/000088324125000024/snps-20250731.htm)
+- [FY2025 Q2 10-Q](https://www.sec.gov/Archives/edgar/data/883241/000088324125000017/snps-20250430.htm)
+
+### 11.2 产品、生态和竞争资料
+
+- [HBM4/4E DesignWare IP](https://www.synopsys.com/designware-ip/interface-ip/hbm.html)
+- [64G UCIe 完整 IP 栈与 2nm tapeout](https://www.synopsys.com/blogs/chip-design/64g-ucie-ip-high-speed-die-to-die-connectivity.html)
+- [UCIe Consortium specifications](https://www.uciexpress.org/specifications)
+- [Converge 2026](https://news.synopsys.com/2026-03-11-Synopsys-Outlines-Vision-for-Engineering-the-Future)
+- [Multiphysics Fusion GA](https://news.synopsys.com/2026-06-17-Synopsys-Announces-Availability-of-the-First-Wave-of-Multiphysics-Fusion-Solutions)
+- [TSMC 先进节点合作](https://news.synopsys.com/2026-04-22-Synopsys-Partners-with-TSMC-to-Power-Next-Generation-AI-Systems-with-Silicon-Proven-IP-and-Certified-EDA-Flows)
+- [Samsung SAFE 2026](https://news.synopsys.com/2026-05-28-Synopsys-Advances-Power-and-Performance-for-AI-and-Multi-Die-Designs-on-Latest-Samsung-Foundry-Processes-at-SAFE-Forum-2026)
+- [Cadence FY2026 Q1](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr-ir/2026/cadence-reports-first-quarter-2026-financial-results.html)
+- [Siemens Fuse](https://news.siemens.com/en-gb/siemens-fuse-eda-ai-agent/)
+- [项目内 EDA、接口 IP 与 Chiplet IP 行业调研](../../行业调研/AI服务器_存储_芯片/行业调研_EDA工具、接口IP与Chiplet%20IP_2026-07-10.md)
+
+### 11.3 模型纪律
+
+- D：公司或监管文件直接披露；C：基于披露值的简单计算；E：区间估算。
+- backlog 代理 bookings、AI 收入占比、产品级利润率、产品年化收入、产能和单位内容量均为 E，报告已明确标注。
+- 产品收入估计以 Q2 产品组收入、FY2026 指引、分部利润率、行业市场规模、客户/认证阶段和同业增速交叉约束。
+- 三情景不是概率加权目标价模型；基准用于经营预算，乐观用于识别上行，极度乐观用于检验 capacity 和估值上限。
+- 横切维度不相加：Agentic、3DIC、Ansys AI 子集、HBM/UCIe 可能包含在 EDA、Ansys 或 Design IP 总收入中。
+- 对没有披露的数据不制造精确值：取消率、订单金额、lead time、按客户收入、每 GPU/rack/MW/光口开票价均未被公司公开，本报告只提供透明假设下的经济内容量。

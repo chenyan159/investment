@@ -1,0 +1,395 @@
+# FCEL / FuelCell Energy 公司调研_2026-06-20
+
+> 研究对象：FuelCell Energy, Inc.，NASDAQ: FCEL。  
+> 报告日期：2026-06-20。公司最新财报口径：FY2026 Q2，季度截至 2026-04-30，发布于 2026-06-08。  
+> 股价和估值快照：2026-06-18 美股收盘，因 2026-06-19 Juneteenth 休市且 2026-06-20 为周六，6/18 是本报告可取得的最近正常收盘价。  
+> 项目内资料边界：只读取 `基本面/行业调研/` 下与 AI 数据中心电力、自备发电、微电网、数据中心建设规模相关的正式行业资料；未读取、引用或继承 `特征量化/`、`日度资料/` 或其他事实目录。仅使用 `公司调研/公司索引.md` 确认正式输出目录，未修改索引。  
+> 结论先行：FCEL 现在不是一家已经靠 AI 数据中心赚钱的公司，而是一家亏损严重、依赖融资续航的燃料电池平台公司，正在把“低排放、可快速许可的现场连续电源”包装成 AI 数据中心 time-to-power 方案。最有投资弹性的变量是 4GW 数据中心/digital infrastructure pipeline 能否转成签约 backlog；最硬的风险是该 pipeline 当前不是 backlog、现有 gross margin 仍为负、Groton 项目再次暴露可靠性/项目执行问题。
+
+## 一、公司整体业务、投资人认知和产业链位置
+
+### 1.1 公司做什么
+
+FuelCell Energy 是美国清洁能源技术公司，核心资产是 **carbonate fuel cell / 熔融碳酸盐燃料电池平台**。公司设计、制造、安装、运营和维护 MW 级燃料电池电站，收入按四类披露：
+
+| 披露口径 | 当前业务含义 | FY2026 Q2 收入 | FY2026 Q2 毛利率 | Backlog 2026-04-30 | AI 数据中心相关性 |
+|---|---:|---:|---:|---:|---|
+| Product | 燃料电池模块、power block、韩国 GGE/CGN replacement module 交付 | `$18.0M` | `-12.6%` | `$36.1M` | 最高：12.5MW data center block 属于该口径，但 Q2 收入主要是韩国模块 |
+| Service | 长期服务协议、模块维护、replacement 后服务 | `$4.2M` | `16.4%` | `$155.4M` | 中：数据中心若采用 FCEL，7 年 stack life/service SLA 会成为 recurring 收入 |
+| Generation | 公司自有/运营电站 PPA 售电收入 | `$8.7M` | `-154.1%` | `$928.5M` | 中低：证明运行经验，但 Q2 受 Groton 维修/减值拖累严重 |
+| Advanced Technologies | ExxonMobil/Esso 碳捕集、政府项目、SOEC/氢相关研发 | `$4.7M` | `42.9%` | `$15.4M` | 低到中：碳捕集可服务燃气发电/工业，但不是 AI 数据中心直接收入 |
+| 合计 | 现有收入仍是项目/服务/研发混合体 | `$35.6M` | `-36.3%` | `$1.135B` | 直接 AI 数据中心收入未披露，实际可视为接近 `0%` |
+
+业务本质：FCEL 卖的不是 AI 芯片、服务器或机房部件，而是 **AI 数据中心可能需要的现场连续电源 / behind-the-meter power**。它在 AI 基建技术栈中位于 `utility interconnection -> onsite generation / microgrid -> switchgear / UPS / BESS -> data hall / rack` 的上游能源侧，离 GPU 价值链远，但一旦电力成为最大瓶颈，时间价值会被重新定价。
+
+### 1.2 投资人心中的 FCEL
+
+投资人目前对 FCEL 的定价逻辑分裂：
+
+1. **传统视角：高风险 clean-tech / hydrogen / fuel cell 小盘股。** 公司多年亏损，gross margin 长期为负，依赖 ATM 增发和项目融资；FY2026 Q2 仍出现 `$77.9M` operating loss、`$78.7M` common net loss，且有 `$42.6M` Groton 项目非现金减值。
+2. **2026 新叙事：AI data center power optionality。** 公司 Q2 FY2026 披露 sales pipeline 达 `4GW`，环比 Q1 增长 `267%`；3 月发布 `12.5MW` 标准化 power block；Q2 表示推进 Torrington 年化产能向 `500MW` 扩张。市场买的是“如果 AI 数据中心抢电，燃料电池能否成为 Bloom 之后的第二个 fuel-cell prime power 供应商”。
+3. **现实约束：pipeline 不是 backlog。** 截至 2026-04-30，合同 backlog 为 `$1.135B`，其中 `82%` 是 generation PPA backlog，product backlog 只有 `$36.1M`；公司没有披露任何已经签约的 hyperscaler/AI data center 大额订单。当前股价把一部分 data center 订单转化提前计入，但财报收入还没验证。
+
+### 1.3 最近三年重大业务变动、转型和重组
+
+| 时间 | 事件 | 投资含义 |
+|---|---|---|
+| 2023-2024 | Derby / Groton / Bridgeport / Yaphank 等美国 PPA 资产继续贡献 generation backlog；韩国 KOSPO、Noeul、GGE 等大型系统提供运行 reference | 证明公司有 `10MW/20MW/58.8MW` 级别装机经验，但资产型 PPA 模式资本占用高、毛利不稳定 |
+| 2024-05 | 与 Gyeonggi Green Energy 签署 LTSA，覆盖 GGE 韩国 `58.8MW` 平台 `42` 个 `1.4MW` replacement module 和服务，总金额 `$159.6M` | FY2025/FY2026 product revenue 的主要来源；不是 AI 订单，但证明模块交付能力 |
+| 2024-11 | 1-for-30 反向拆股生效 | 反映此前股价和 Nasdaq 合规压力；历史股本摊薄风险不能忽视 |
+| 2025-03 | 与 Diversified Energy、TESIAC 宣布拟成立 ADC，面向 Virginia / West Virginia / Kentucky 三地数据中心，目标最高 `360MW` off-grid 电力 | 第一条明确的 data center power 方案线索；截至本报告未进入 disclosed backlog |
+| 2025-06 | Q2 FY2025 宣布重组：年度化 operating expenses 目标降低 `30%`，全球 workforce 进一步削减约 `22%`；聚焦 carbonate distributed generation、data center、grid resilience、carbon recovery；暂停 solid oxide 新平台商业开发，保留 electrolysis validation/demo | 公司从“多技术路线清洁能源公司”收缩为“carbonate platform + data center power + carbon capture option” |
+| 2025-Q3 | 记录 `$64.5M` 非现金减值和 `$4.1M` restructuring expense | 承认部分固态氧化物、IPR&D、库存和固定资产价值下修；短期降 burn，但降低技术路线宽度 |
+| 2025-Q4 | 正式把 sales/marketing focus 转向 data center opportunities；FY2025 revenue `$158.2M`，同比 `+41%`，但 FY2025 gross loss 仍为 `$26.4M` | 收入增长主要来自韩国 repowering，不代表商业模型已盈利 |
+| 2026-03 | 发布标准化 `1.25MW / 2.5MW / 12.5MW` FuelCell Energy Block，12.5MW 由 `5` 套独立 `2.5MW` 系统和共享 BoP 构成；宣布 Torrington 从约 `100MW/year` 向 `350MW/year` 扩张 | 这是 FCEL 进入 AI 数据中心供电 RFP 的核心产品化动作 |
+| 2026-Q2 | Q2 FY2026 披露 `4GW` pipeline、Torrington 扩张向 `500MW/year` 推进、总项目支出估计 `$200-275M`，FY2026 growth spending `$20-30M`；同时 Groton 旧 SureSource 4000 方案计划升级为 `3` 套标准 `2.5MW` FCE Blocks，记录 `$42.6M` 减值 | 正面是产能和 pipeline；负面是可靠性/项目执行仍可能吞噬收益 |
+
+### 1.4 产业链定位
+
+FCEL 的产业链位置可以分成三层：
+
+| 层级 | FCEL 的位置 | 主要客户/对手 | 价值驱动 |
+|---|---|---|---|
+| 能源资产层 | behind-the-meter / onsite baseload power，PPA 或客户采购电站 | utility、data center developer、industrial off-taker | 缩短电网接入等待、降低排放许可难度、提高可靠性 |
+| 设备制造层 | carbonate fuel cell module、2.5MW / 12.5MW blocks、BoP、heat recovery / absorption chilling interface | Bloom Energy、Caterpillar、Cummins、GE Vernova、Wartsila、Doosan Fuel Cell | MW 产能、stack life、availability、每 MW 成本、客户认证 |
+| 服务/控制层 | LTSA、module replacement、O&M、fleet availability、与 BESS/UPS/SCADA/DCIM 集成 | Bloom、Schneider、Eaton、Siemens、ABB、GE Vernova、SEL、Honeywell | 服务毛利、SLA、客户切换成本 |
+
+本地 `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md` 的核心判断是：2026 年数据中心自备发电与微电网已经从“备用电源”升级为 AI 基础设施交付主线之一；最确定路径是天然气快启发电 + BESS/UPS + 微电网控制，SOFC/燃料电池是 2026 年最大超预期变量。FCEL 站在这个方向上，但与 Bloom 的差距在于：Bloom 已经有 Oracle `2.8GW` MSA 和 `1.2GW` 初始部署线索，FCEL 目前还主要是 pipeline。
+
+## 二、股价、估值、收入增速和财务健康度
+
+### 2.1 最新市场指标
+
+| 指标 | 数值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | `$24.04` | 2026-06-18 收盘，StockAnalysis；盘后 `$23.80` | 6/19 休市、6/20 周六，6/18 为最近正常收盘 |
+| 市值 | `$1.63B` | 2026-06-18/2026-06-20 检索 | 相对 TTM revenue `$167.88M`，估值完全依赖增长期权 |
+| 企业价值 | `$1.41B` | 2026-06-20 StockAnalysis | 现金多于债务，EV 低于 market cap |
+| PE TTM | N/M | TTM EPS `-$5.53`；机械相除约 `-4.3x`，无投资意义 | 公司亏损，传统 PE 不适用 |
+| Forward PE | N/M | 分析师仍预期亏损 | 不能用盈利倍数估值 |
+| PS TTM | `9.68x` | 2026-06-20 StockAnalysis | 对一家 TTM gross margin `-18.2%` 的公司很高 |
+| Forward PS | `8.33x` | 2026-06-20 StockAnalysis | 市场默认未来收入增长 |
+| TTM 收入 | `$167.88M` | 截至 FY2026 Q2 | FY2025 `$158.16M`，6M FY2026 `$66.12M` |
+| 最新季度收入增速 | `-4.9% YoY` | FY2026 Q2：`$35.59M` vs `$37.41M` | Q2 revenue miss，product 和 advanced 增长被 service/generation 下滑抵消 |
+| 6M FY2026 收入增速 | `+17.2% YoY` | `$66.12M` vs `$56.40M` | 主要由韩国 replacement module 支撑 |
+| FY2025 收入增速 | `+41.0% YoY` | `$158.16M` vs `$112.13M` | 不是 data center 驱动，主要是 Korea repowering |
+| Gross margin | `-18.20%` | TTM；FY2026 Q2 单季 `-36.3%` | 规模和可靠性未跨过盈亏平衡 |
+| Net margin | `-132.41%` | TTM | TTM net loss `$225.49M` |
+| 股本变化 | shares outstanding `+108.84% YoY` | 2026-06-20 StockAnalysis | 依赖 ATM 融资导致摊薄显著 |
+| 空头比例 | `7.99%` shares outstanding | 2026-06-20 StockAnalysis | 并非极端 short squeeze，但波动高 |
+
+### 2.2 资产负债表和流动性评估
+
+| 项目 | 2026-04-30 | 2025-10-31 | 变化 | 评价 |
+|---|---:|---:|---:|---|
+| Unrestricted cash | `$373.2M` | `$278.1M` | `+$95.1M` | 主要来自 ATM 增发，不是经营现金流 |
+| Restricted cash | `$67.7M` | `$63.7M` | `+$4.0M` | 与项目/融资安排相关 |
+| Total cash incl. restricted | `$440.9M` | `$341.8M` | `+$99.1M` | 账面流动性强 |
+| Total assets | `$1.003B` | `$932.1M` | `+$71.2M` | 包含 project assets `$167.5M`、PPE `$95.3M`、other assets `$131.2M` |
+| Current assets | `$543.9M` | `$449.8M` | `+$94.1M` | current ratio 约 `8.6x`，短债覆盖看起来很强 |
+| Current liabilities | `$63.3M` | `$67.8M` | `-$4.5M` | 短期偿债压力不大 |
+| Long-term debt and other liabilities | `$129.6M` | `$115.2M` | `+$14.3M` | 总债务约 `$158.9M`，净现金约 `$214M` |
+| Total liabilities | `$215.0M` | `$201.0M` | `+$14.0M` | 杠杆不高，但项目层 VIE 有刚性义务 |
+| Stockholders' equity | `$719.4M` | `$662.2M` | `+$57.3M` | 靠增发补亏；accumulated deficit 已达 `-$1.93B` |
+| Operating cash flow | `-$61.2M` | 6M FY2026 | N/A | 主业仍耗现金 |
+| ATM 融资 | 6M FY2026 售出 `17.2M` 股，均价 `$9.22`，net proceeds `$155.3M` | 6M FY2026 | N/A | 财务 runway 充足，但股东摊薄是核心成本 |
+
+判断：**短期流动性健康，中长期商业健康度弱。** 账面现金和 current ratio 足够支撑 12 个月经营和初步扩产；但主业毛利为负、TTM FCF 为 `-$129.6M`、TTM net loss `-$225.5M`。如果 4GW pipeline 不能在 2026H2-2027 转成带预付款/项目融资的确定订单，公司扩产将继续依赖股权融资，PS 估值会回落到 clean-tech project developer 口径。
+
+## 三、最新和最近四次财报：收入、利润率、backlog、订单与 AI 数据中心收入
+
+### 3.1 最近五个财报季度核心数字
+
+单位除特别说明外均为百万美元。GM 为 segment gross margin，即 `(revenue - cost) / revenue`。
+
+| 财报季度 | 发布日期 | 总收入 / YoY | Product 收入 / GM | Service 收入 / GM | Generation 收入 / GM | Advanced Tech 收入 / GM | Gross loss / GM | Common net loss / EPS | Adj. EBITDA | AI 数据中心收入占比 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| FY2026 Q2，截至 2026-04-30 | 2026-06-08 | `$35.6`, `-4.9%` | `$18.0`, `-12.6%` | `$4.2`, `16.4%` | `$8.7`, `-154.1%` | `$4.7`, `42.9%` | `-$12.9`, `-36.3%` | `-$78.7` / `-$1.45` | `-$17.1` | 直接披露 `0%`；4GW pipeline 未进收入 |
+| FY2026 Q1，截至 2026-01-31 | 2026-03-09 | `$30.5`, `+60.7%` | `$12.0`, `-36.1%` | `$3.2`, `11.5%` | `$11.0`, `-28.2%` | `$4.3`, `28.6%` | `-$5.9`, `-19.2%` | `-$23.7` / `-$0.49` | `-$17.0` | 直接披露 `0%`；data center strategy 继续推进 |
+| FY2025 Q4，截至 2025-10-31 | 2025-12-18 | `$55.0`, `+11.5%` | `$30.0`, `-14.8%` | `$7.3`, `-13.5%` | `$12.2`, `-22.5%` | `$5.5`, `27.8%` | `-$6.6`, `-12.1%` | `-$30.7` / `-$0.85` | `-$17.7` | 直接披露 `0%`；开始明确聚焦 data center opportunities |
+| FY2025 Q3，截至 2025-07-31 | 2025-09-09 | `$46.7`, `+97.3%` | `$26.0`, `-11.9%` | `$3.1`, `-16.4%` | `$12.4`, `-24.1%` | `$5.3`, `27.3%` | `-$5.1`, `-11.0%` | `-$92.5` / `-$3.78` | `-$16.4` | 直接披露 `0%`；data center demand 进入管理层叙事 |
+| FY2025 Q2，截至 2025-04-30 | 2025-06-06 | `$37.4`, `+66.8%` | `$13.0`, `-24.8%` | `$8.1`, `-11.3%` | `$12.1`, `-51.9%` | `$4.1`, `24.5%` | `-$9.4`, `-25.2%` | `-$38.8` / `-$1.79` | `-$19.3` | 直接披露 `0%`；宣布重组并聚焦 carbonate/data center/grid resilience |
+
+关键读法：
+
+- 最近五季没有一个季度实现 GAAP gross profit。Advanced Technologies 毛利为正，但收入小；Service 在 FY2026 Q1/Q2 改善；Generation 因 Groton 维修、天然气/资产折旧/运营成本而拖累极大。
+- FY2025/FY2026 的 product revenue 增长主要由韩国 GGE/CGN replacement module 交付驱动，不是 AI 数据中心出货。
+- FY2026 Q2 的 reported EPS 改善部分来自股本增加：Q2 FY2026 weighted average shares `54.2M`，Q2 FY2025 为 `21.7M`。每股亏损变小不代表总亏损改善。
+
+### 3.2 Backlog、bookings、交期和取消率
+
+单位为百万美元。`净新增/调整` 为近似推算：季度末 backlog 变化 + 当季收入；该口径不等同公司披露 bookings，因 backlog 里含 PPA、service term、project adjustment 和 revenue recognition 差异。
+
+| 财报季度 | Total backlog | Product | Service | Generation | Advanced Tech | QoQ backlog 变化 | 近似净新增/调整 | 订单/交期/取消率解读 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| FY2026 Q2 | `$1,135.4` | `$36.1` | `$155.4` | `$928.5` | `$15.4` | `-$35.9` vs Q1 | 约 `-$0.3` | backlog 同比 `-9.9%`；Q2 `4GW` pipeline 环比 `+267%`，但不是 backlog；公司未披露取消率；Q2 韩国产品交付 `$18M` 基本消耗 product backlog |
+| FY2026 Q1 | `$1,171.2` | `$54.1` | `$159.4` | `$939.5` | `$18.2` | `-$22.0` vs Q4 | 约 `+$8.5` | GGE 还剩 `12` 个 `1.4MW` module 计划 FY2026 剩余季度交付；CGN 还剩 `6` 个 replacement modules 计划 FY2026 Q4 commissioning |
+| FY2025 Q4 | `$1,193.2` | `$66.2` | `$162.4` | `$945.2` | `$19.5` | `-$51.6` vs Q3 | 约 `+$3.4` | Q4 product revenue `$30M` 来自 GGE `10` 个 module；backlog 仍以长期 PPA 为主，service/generation weighted average term 约 `15-16` 年 |
+| FY2025 Q3 | `$1,244.9` | `$96.2` | `$169.4` | `$955.0` | `$24.3` | `-$14.7` vs Q2 | 约 `+$32.0` | CGN LTSA 新增总值 `$31.7M`，其中 product backlog `$24.0M`、service backlog `$7.7M`；Hartford `7.4MW` 20 年 PPA backlog `$167.4M` 已支撑 generation backlog |
+| FY2025 Q2 | `$1,259.6` | `$98.2` | `$164.4` | `$967.4` | `$29.6` | N/A | N/A | GGE LTSA 后 product/service backlog 高；宣布重组和聚焦 data center/grid resilience；公司未披露 backlog 取消率 |
+
+核心结论：FCEL 的 **contracted backlog 质量偏“长、慢、低毛利、不全可立即变现”**。`$928.5M` generation backlog 多数是长期 PPA 未来售电，不是设备订单；product backlog `$36.1M` 很小。AI 数据中心要改变估值，必须看到 `4GW pipeline -> executed agreements -> product/service backlog -> 收入确认 -> 正毛利` 四步连续发生。
+
+## 四、FY2026 最新指引、收入占比和重点业务
+
+### 4.1 公司最新指引和可执行计划
+
+FCEL 没有给出 FY2026 全年收入或 EPS guidance。可执行指引集中在产能和项目：
+
+| 项目 | 最新披露 | 重要性 |
+|---|---|---|
+| Sales pipeline | FY2026 Q2 `4GW`，环比 Q1 `+267%`，覆盖 data centers、digital infrastructure、utilities | 最大估值变量；但属于 proposals/pipeline，不是 backlog |
+| Torrington 产能 | Q2 presentation 表示从约 `100MW/year` 年化产能向 `500MW/year` 推进；总项目 spending `$200-275M`；FY2026 growth spending `$20-30M` | 若无订单，扩产会增加 burn；若拿到大单，当前产能是 revenue ceiling |
+| 标准化产品 | `1.25MW / 2.5MW / 12.5MW` FCE Blocks；12.5MW = `5` 个独立 `2.5MW` systems，底层为 `10` 个 `1.25MW` modules + shared BoP | 降低重复工程、许可和集成工作，是 data center RFP 的核心 |
+| Korea deliveries | Q2 delivered `$18M` products；Q1 披露 GGE 剩余 `12` 个 `1.4MW` modules 计划 FY2026 剩余季度交付，CGN 剩余 `6` 个 modules 计划 Q4 | 支撑 FY2026 product revenue，但不是长期增长引擎 |
+| Groton upgrade | 计划用 `3` 个标准 `2.5MW` FCE Blocks 替换 legacy SureSource 4000 配置，Q2 记录 `$42.6M` impairment | 验证标准化 block 的可靠性，同时暴露旧平台可靠性风险 |
+| Carbon capture | 两个 carbon capture modules 已运往 Rotterdam，推进与 ExxonMobil/EMTEC/Esso 的碳捕集合作 | 小收入、高期权；预计 2026 进入现场 demonstration |
+
+### 4.2 FY2026 Q2 收入占比
+
+| 业务 | Q2 FY2026 收入 | 占比 | YoY 增速 | 经营含义 |
+|---|---:|---:|---:|---|
+| Product | `$18.0M` | `50.6%` | `+38.3%` | 韩国 replacement modules；未来 data center block 也会落在这里 |
+| Service | `$4.2M` | `11.7%` | `-48.7%` | Q2 无 large module exchange；毛利转正 |
+| Generation | `$8.7M` | `24.4%` | `-28.4%` | Groton 维修导致 output 下滑，成本高于收入 |
+| Advanced Technologies | `$4.7M` | `13.3%` | `+14.7%` | Exxon/Esso Rotterdam 和政府项目，毛利率最好 |
+| 合计 | `$35.6M` | `100%` | `-4.9%` | product 占比高，但不是 AI DC revenue |
+
+### 4.3 重点产品、跳过产品和潜力小业务
+
+**重点和突出产品**
+
+1. **FuelCell Energy Block 12.5MW System。** 面向 AI/data center 的标准化现场连续电源。组合方式是 `5` 套 `2.5MW` 系统、每套 `2` 个 `1.25MW` module，共 `10` 个 `1.25MW` module；共享 BoP 降低重复工程、许可和 commissioning。
+2. **FuelCell Energy Block 2.5MW / 1.25MW。** 2.5MW 是数据中心 block、Groton replacement 和分布式电站的基础颗粒度；1.25MW 是底层 module。
+3. **Dedicated Power Partners / Diversified Energy / TESIAC 360MW off-grid data center power。** 利用 Appalachian Basin 天然气和 coal mine methane，目标三地最高 `360MW`；如果落地，是 FCEL 数据中心收入的第一批项目级验证。
+4. **Carbon capture / carbon recovery modules for ExxonMobil/Esso Rotterdam。** 两个模块已在 2026 Q2 运往 Rotterdam；不是 AI 直接收入，但能强化“燃气/燃料电池 + 低碳/碳捕集”叙事。
+5. **LTSA / service platform。** 现有 Korea/GGE、CGN、PPA 运行经验不高增长，但若数据中心采用 FCEL，7 年 stack life 和高 availability SLA 会决定客户是否敢放进 mission-critical power。
+
+**本报告低权重或跳过的产品/业务**
+
+- 普通市政 wastewater / biogas CHP、大学/医院/食品饮料等传统分布式发电项目：能证明平台可靠性，但 AI 数据中心订单弹性有限。
+- Legacy generation PPA portfolio：backlog 大但资本占用高、增长慢、Q2 毛利严重为负。
+- Solid oxide power generation 商业化：2025 重组后公司已降低/暂停相关商业开发，短期非主线。
+- 政府小额研发合同：对技术有价值，但收入规模小，不能支撑当前市值。
+- 长时储能/分布式制氢：可选性存在，但 FY2026 收入和订单可见度不足。
+
+## 五、关键产品当前贡献、AI 基建重要性和供需/议价能力
+
+评分 1-5：5 为最高。当前收入贡献只计已披露收入，pipeline 不计收入。
+
+| 产品/业务 | 当前收入贡献 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 当前判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 12.5MW / 2.5MW FCE Block for data centers | 直接 AI 收入未披露，估计接近 `$0`; 相关 product revenue Q2 `$18.0M` 来自 Korea | data center pipeline `4GW`, product revenue `+38% YoY` | `4` | `5` | `4` | `2.5` | 需求窗口真实，但 FCEL 尚无大客户签约验证；产品化方向对 |
+| DPP / off-grid CMM-natural gas data center power | `$0` 已确认收入；最高 `360MW` 项目意向 | 无收入基数 | `4` | `5` | `3.5` | `2.5` | 若 24 个月上电兑现，价值很大；当前仍是开发/融资/许可阶段 |
+| Existing product replacement modules: GGE/CGN | Q2 `$18.0M`; product backlog `$36.1M` | FY2026 上半年 product revenue `$30.1M`, YoY `+129%` | `1` | `2` | `2` | `2` | 不是 AI 增长，但支撑产线利用和现金收入 |
+| Service / LTSA platform | Q2 `$4.2M`; service backlog `$155.4M` | Q2 `-49% YoY`, 6M `-26% YoY` | `3` | `3` | `2.5` | `3` | 数据中心若采用，O&M/SLA 会带来 recurring value；当前体量小 |
+| Generation PPA portfolio | Q2 `$8.7M`; generation backlog `$928.5M` | Q2 `-28% YoY`, 6M `-16% YoY` | `2` | `2` | `2` | `2` | 大 backlog 但收入慢、毛利差；Groton 是负面样本 |
+| Carbon capture / Rotterdam | Q2 Advanced Tech `$4.7M`; advanced backlog `$15.4M` | Q2 `+15% YoY`; 6M `-8% YoY` | `2` for AI, `4` for industrial decarbonization | `3` | `3` | `3` | 高毛利小业务；若燃气数据中心需要低碳路径，可形成附加价值 |
+
+## 六、关键产品一年后三情景收入贡献和业务质量预测
+
+本节是分析师情景，不是公司指引。核心假设：FCEL 的 carbonate data center blocks 每 MW 公司可确认 product/system revenue 约 `$2.5-3.5M/MW`；若公司以 own-and-operate/PPA 模式开发，则短期收入变慢、资产负债表压力更高，但长期 backlog 更大。
+
+### 6.1 一年后收入贡献和产品质量
+
+| 产品/业务 | 基准情景：2027 年中 | 乐观情景：2027 年中 | 极度乐观情景：2027 年中 |
+|---|---|---|---|
+| 12.5MW / 2.5MW data center block | 签约 `50-100MW`，其中 `25-50MW` 进入交付/收入确认；年化收入贡献 `$60-175M`；收入增速 `+35-80%`; AI 重要性 `4`; 紧急性 `5`; 供需 `4`; 溢价 `2.5-3` | 签约 `150-250MW`，`75-125MW` 进入交付；年化收入 `$220-450M`; 增速 `+100-220%`; AI 重要性 `4.5`; 供需 `4.5`; 溢价 `3-3.5` | 签约 `500MW+` 或 4GW pipeline 中大客户 frame agreement，`200-300MW` 年化交付；收入 `$600M-1.0B`; 增速 `300%+`; 供需 `5`; 溢价 `3.5-4`，但需要项目融资/预付款 |
+| DPP / CMM-natural gas off-grid data center power | 完成 site control/permit/financing，`0-50MW` 进入 equipment order；收入 `$0-50M` | 首个 `120MW` site FID，FCEL backlog `$250-450M`，一年收入 `$50-150M` | `360MW` 三地项目进入分期采购，backlog `$0.8-1.4B`，一年收入 `$200-500M` |
+| GGE/CGN replacement modules | 剩余 FY2026 modules 基本完成，收入下滑至 `$0-30M` run-rate | 其他韩国/亚洲 replacement 追加订单，收入 `$30-80M` | 韩国/亚洲 fleet repowering 批量追加，收入 `$100M+`，但非 AI |
+| Service / LTSA | 年收入 `$20-30M`，毛利 `10-25%`，随 Korea service term 释放 | 数据中心订单附带 7 年 LTSA，年收入 `$35-60M`，毛利 `20-35%` | 多个 data center block 进入 SLA，service backlog 快速增加，年收入 `$80M+`，毛利 `30%+` |
+| Generation PPA | 年收入 `$40-60M`；Groton 修复后毛利改善但仍低 | Hartford/Groton/Derby 稳定运行，年收入 `$60-80M`，gross margin 接近 breakeven | 更多 PPA/BTM 资产并表，年收入 `$100M+`，但资本占用和税务结构复杂 |
+| Carbon capture | Rotterdam 试点完成 commissioning；advanced revenue `$15-25M` | Exxon/Esso 或第三方签 `1-2` 个 demo，收入/订单 `$30-80M` | 工业客户签多模块商业化，backlog `$100-250M`；仍需技术验证 |
+
+### 6.2 公司未来一年整体收入增速预测
+
+| 口径 | FY2027 中附近年化收入 | 相对 TTM `$167.9M` 增速 | Backlog/订单前提 | 毛利前提 | 风险 |
+|---|---:|---:|---|---|---|
+| 基准 | `$220-320M` | `+31-91%` | 4GW pipeline 转化率低，仅 `50-100MW` signed data center blocks；Korea replacement 收尾 | blended GM 从 `-18%` 改善到 `-5% to +8%` | data center 订单慢，product revenue 空窗 |
+| 乐观 | `$450-700M` | `+168-317%` | `150-250MW` data center blocks + DPP 首站 FID；客户提供预付款/融资 | blended GM `10-22%`；service 逐渐拉升 | 扩产、供应链、项目交付和 warranty |
+| 极度乐观 | `$900M-1.4B` | `+436-734%` | `500MW+` 大客户 framework、Torrington 350-500MW 扩产实质可用；pipeline 转化超预期 | blended GM `20-30%`，接近 Bloom/电力设备溢价叙事 | 产能、融资、许可、客户集中、stack performance 任一失败都会下修 |
+
+我的基准偏保守：未来一年最可能先看到 **signed backlog 和 customer deposit**，收入确认可能滞后。若只有新闻稿和 pipeline，没有 executable PO、permit、gas supply、interconnection、EPC NTP，不能把 4GW 乘以每 MW 价格直接当估值。
+
+## 七、BOM、每 MW / 每 rack / 每 GPU / 每 optical port 内容量和价格传导链
+
+### 7.1 12.5MW FuelCell Energy Block 的 BOM 拆分
+
+| 层级 | 12.5MW block 内容 | 每 MW 价值量估计 | FCEL 捕获程度 | 关键成本/风险 |
+|---|---|---:|---:|---|
+| Fuel cell stack / module | `10` 个 `1.25MW` carbonate modules，组成 `5` 个独立 `2.5MW` systems | `$1.3-2.3M/MW` | 高，核心自制 | stack 寿命、良率、催化材料、module replacement 成本 |
+| Balance of plant | fuel processing/desulfurization、air/process gas blower、water loop、heat recovery、controls、enclosures | `$0.6-1.2M/MW` | 中高，部分外购/系统集成 | 标准化程度决定毛利 |
+| Electrical conversion | DC output conditioning、inverter/PCS、transformer、switchgear、protection relay、metering | `$0.4-0.9M/MW` | 中，很多由电力设备商供给 | 与 Eaton/Schneider/ABB/Siemens 等系统互联 |
+| Thermal integration | CHP、absorption chilling、heat exchanger、cooling interface | `$0.1-0.5M/MW` | 中 | 取决于客户是否利用热驱动 cooling |
+| EPC/site works | gas pipeline/tie-in、civil、foundation、fire/gas detection、commissioning、interconnection | `$0.5-1.2M/MW` | 低到中，项目模式决定 | 许可、燃气、社区、施工 |
+| LTSA/O&M | remote monitoring、module replacement、stack service、availability SLA | `$0.08-0.20M/MW-year` | 高 | 若 availability 不达标会产生补偿/信誉损失 |
+| All-in installed opportunity | 12.5MW block all-in | `$2.8-5.9M/MW` | FCEL 可能捕获 `$2.0-3.5M/MW`，其余由 EPC/电气/燃气/土建获得 | data center 客户看的是 time-to-power 和 LCOE，不只是设备价 |
+
+本地行业报告给出的 SOFC/fuel-cell microgrid all-in 口径为约 `$2.8-5.9B/GW`，即 `$2.8-5.9M/MW`。FCEL 的 carbonate 产品不是 Bloom SOFC，但数据中心客户比较的是“可许可、低噪声、连续电源、能否更快上电”，因此该区间可作为 data center fuel cell power island 的外部锚。公司自身可确认收入会低于全项目 all-in cost，取决于是 equipment sale、turnkey EPC，还是 PPA/own-operate。
+
+### 7.2 每 MW / 每 rack / 每 GPU / 每 optical port 内容量
+
+| 换算对象 | 计算口径 | 12.5MW block 对应内容量 | 投资含义 |
+|---|---|---:|---|
+| 每 MW facility power | 1MW continuous onsite power | FCEL product/system revenue 约 `$2.0-3.5M/MW`; all-in project 约 `$2.8-5.9M/MW` | 每 MW 是 FCEL 最直接的价值量口径 |
+| 每 100MW AI IT load | PUE `1.15-1.30`，facility load `115-130MW` | 需要约 `10-11` 个 12.5MW blocks，另需 N+冗余/BESS/UPS/utility 接口 | FCEL 若拿下 100MW 级客户，订单可能从 `$250M` 到 `$600M+` |
+| 每 rack | AI rack `100-250kW IT`，PUE `1.15-1.30` | 12.5MW facility 可支持约 `38-109` 个 rack；all-in power island 约 `$0.3-1.9M/rack` | 高密度 rack 越高，单位 rack 电力系统价值量越高 |
+| 每 GPU | GB200/GB300 NVL72 类 rack 约 `72` GPU，单 rack facility power 约 `115-300kW` | 12.5MW block 约支持 `2,700-7,800` GPU；all-in fuel-cell power 内容量约 `$4,500-22,000/GPU`，FCEL 捕获约 `$3,000-13,000/GPU` | 相比 GPU ASP 很小，但能决定 GPU 是否上电产生收入 |
+| 每 optical port | 光端口与 onsite generation 没有直接 BOM 链接；按每 rack `144-576` 个 800G/1.6T 等效端口粗算 | power 内容量约 `$0.5K-13K/port`，区间过宽 | 不建议用 optical port 估 FCEL；用 MW、rack 和项目上电日期更合理 |
+
+价格传导链：
+
+`GPU/ASIC rack power density 上升 -> 数据中心客户需要更快可上电 MW -> utility interconnection 等待拉长 -> 客户接受 BYOP / onsite generation -> fuel cell / gas engine / turbine / BESS 进入 RFP -> FCEL 报价 1.25/2.5/12.5MW blocks -> 若签约进入 product/service backlog -> module manufacturing + BoP + EPC -> commissioning 后确认 product revenue / service revenue / PPA revenue。`
+
+FCEL 当前处在 `pipeline/RFP -> 部分产品化` 阶段，尚未跨到 `data center signed backlog -> revenue`。
+
+### 7.3 现有产能能力、供应链采纳和认证阶段
+
+| 项目 | 当前状态 | 美元产能折算 | 采纳程度 | 认证/许可阶段 |
+|---|---|---:|---|---|
+| Torrington carbonate manufacturing | 公司披露约 `100MW/year` 年化 capacity，扩张目标先到 `350MW/year`，Q2 进一步推进到 `500MW/year` | 按 `$2.5-3.5M/MW` FCEL revenue，`100MW` 对应 `$250-350M/year`; `500MW` 对应 `$1.25-1.75B/year` 理论 revenue capacity | 现有 Korea/PPA 客户验证；data center 仍未见大额签约 | 工厂扩产中；data center 客户需项目级 interconnection、gas、air/land/community permit |
+| 12.5MW block | 2026-03 发布；Q2 presentation 作为 data center 核心产品 | 单 block FCEL revenue 约 `$25-44M`; all-in `$35-74M` | pipeline 高，但 order conversion 未披露 | 产品级用成熟 module 组合，项目级仍需客户 qualification、保险、SLA、并网/孤网测试 |
+| Existing deployed fleet | 官方页面披露自 2003 年以来新装/替换 modules `687`，累计发电约 `18.4M MWh`; large-scale `10/20/58.8MW` 平台运行多年 | 不是产能，是 reference asset | 有 utility-scale reference | Groton 旧 SureSource 4000 可靠性问题是反证，标准 2.5MW block 需证明改进 |
+| Carbon capture modules | 两个模块 2026 Q2 运往 Rotterdam | advanced backlog `$15.4M` | ExxonMobil/Esso pilot 采纳 | 2026 pilot/demo commissioning，商业认证未完成 |
+
+### 7.4 一年后产能能力和采纳程度三情景
+
+| 产品/业务 | 基准：2027 年中 | 乐观：2027 年中 | 极度乐观：2027 年中 |
+|---|---|---|---|
+| Torrington / FCE Blocks | `100-200MW/year` 可实际交付，revenue capacity `$250-700M/year`; data center 进入首批客户 qualification | `250-350MW/year` 实际可用，revenue capacity `$625M-1.2B/year`; 签约 hyperscaler/AI colo 首批项目 | `500MW/year` 接近可用，revenue capacity `$1.25-1.75B/year`; 大客户 frame agreement 锁产能 |
+| DPP / off-grid projects | 完成 site/permit/financing，首个 `25-50MW` 设备订单 | 首个 `120MW` site NTP，客户/项目融资明确 | 三地 `360MW` 分期推进，FCEL 成为 CMM/gas fuel-cell data center power 的标杆 |
+| Carbon capture | Rotterdam demo completed or in commissioning; TRL 上升 | Exxon/第三方签第二个 demo；CO2 capture performance 数据公开 | 形成 commercial template；但仍低于 data center power 对估值的影响 |
+
+## 八、基于真实 backlog 和供给的未来一年业务增速推断
+
+### 8.1 真实订单和供给约束
+
+可确认的事实：
+
+- Total contracted backlog `2026-04-30 = $1.135B`，同比下降 `9.9%`。
+- Product backlog 只有 `$36.1M`，约等于未来几个季度 Korea replacement modules 的余量，不能支撑大幅增长。
+- Sales pipeline `4GW` 不等于 backlog，也不是 bookings；公司明确风险包括 bid awards 不一定转化为 contracts，contracts 不一定转化为 revenue。
+- 当前 manufacturing capacity 披露约 `100MW/year`，扩到 `350-500MW/year` 需要 `$200-275M` 总项目支出、设备安装、供应链、人员和质量体系。
+- Q2 2026 公司用股权融资补充现金：当季出售 `10.9M` 股，均价 `$9.45`，net proceeds `$100.4M`；季度后又售 `4.1M` 股，均价 `$13.31`，net proceeds `$52.9M`。
+
+### 8.2 未来一年收入增速模型
+
+| 驱动 | 基准贡献 | 乐观贡献 | 极度乐观贡献 | 反证指标 |
+|---|---:|---:|---:|---|
+| Korea modules 收尾 | `$30-60M` | `$60-90M` | `$100M+` | GGE/CGN commissioning 延迟 |
+| New data center blocks | `$20-100M` | `$150-400M` | `$500M+` | 无客户名、无 PO、无 deposit、无 permit |
+| Service/LTSA | `$20-30M` | `$35-60M` | `$80M+` | availability / warranty 成本吞噬毛利 |
+| Generation PPA | `$40-60M` | `$60-80M` | `$100M+` | Groton/其他项目继续停机或减值 |
+| Advanced Tech | `$15-25M` | `$30-80M` | `$100M+` | Rotterdam demo 推迟或 performance 未达标 |
+| 合计年化收入 | `$220-320M` | `$450-700M` | `$900M-1.4B` | data center pipeline 无转化，扩产进度慢 |
+
+重要：FCEL 的收入曲线不会像 GPU 供应商那样线性跟随 AI CapEx。数据中心现场电源是项目制，收入确认受 `客户设计 -> 电力/燃气许可 -> 设备 PO -> manufacturing -> EPC -> commissioning` 串联约束。乐观情景最先反映在 backlog 和 customer deposits，而不是马上反映在 GAAP revenue。
+
+## 九、竞争格局、技术主流性、替代方案和客户切换成本
+
+### 9.1 主要竞争对手
+
+| 细分 | 主要竞争者 | 相对 FCEL 的优势 | 相对 FCEL 的劣势 |
+|---|---|---|---|
+| Fuel cell / SOFC data center prime power | Bloom Energy、Doosan Fuel Cell、Ceres partners、Bosch SOFC、Convion、Plug/PEM players | Bloom 已有 Oracle `2.8GW` MSA 和 Project Jupiter `2.45GW` fuel cell microgrid 级别证据；SOFC 电效率高 | 仍受 stack life、服务成本、fuel supply、客户集中风险影响 |
+| Gas engines / gensets | Caterpillar、Cummins、Wartsila、Rolls-Royce mtu、INNIO Jenbacher、Kohler/Rehlko、Generac | 成熟、交付快、成本低、服务网络强；Caterpillar/AIP `2GW`、Wartsila Texas `790MW` 是强订单证据 | 排放、噪声、许可、燃气供应和 ESG 压力更大 |
+| Aeroderivative / gas turbines | GE Vernova、Siemens Energy、Mitsubishi Power、Solar Turbines | 大规模、效率/可靠性、工业服务体系强；GE/Crusoe 接近 `1GW` | 交期、排放许可、燃气管线、启动/负载跟随需要 BESS 配合 |
+| BESS / microgrid integrators | Tesla Energy、Fluence、Wartsila、Schneider、Eaton、ABB、Siemens、GE Vernova、Honeywell | 毫秒级响应、可与 grid/forming inverter 结合；软件/EMS 毛利高 | BESS 不是长期基荷能源，需搭配发电/PPA |
+| Utility / IPP / nuclear / geothermal | Constellation、Vistra、NextEra、Entergy、Duke、Dominion、Fervo、Oklo 等 | 长期低成本/低碳 firm power | 许可周期长，2026-2027 对“快速上电”贡献有限 |
+
+### 9.2 FCEL 技术是否会成为主流
+
+结论：**fuel cell for data center power 会从 niche 进入主流候选清单，但 FCEL 的 carbonate platform 是否成为主流仍未验证。**
+
+支持因素：
+
+- 数据中心电力瓶颈真实存在。本地行业资料给出的美国 AI 数据中心 2026 务实建设规模 `$310-390B`、2027 `$430-560B`；2026 新增或进入设备订单的 AI IT-load equivalent `6.0-8.5GW`，2027 `9.0-14.0GW`。
+- Data Center World 2026 会议线索显示，行业已接受 BYOP，现场发电、fuel cell、BESS、微电网、800VDC、MV UPS 都进入工程讨论。AFCOM 口径显示 `25%` 数据中心已有 onsite generation，高于 2025 年 `19%`，`23%` 计划增加。
+- FCEL 产品低噪声、低 NOx/SOx/PM、紧凑、可利用余热做 absorption chilling，理论上适合城市/社区/许可敏感区域。
+- 12.5MW block 标准化符合 AI campus “12.5MW/25MW/50MW block” 采购趋势。
+
+反对因素：
+
+- Bloom 已拿到更强外部客户验证，FCEL 目前没有公开的 hyperscaler data center signed backlog。
+- FCEL 现有 gross margin 为负；客户会担心 vendor viability、warranty reserve、服务能力和可融资性。
+- Groton 旧 SureSource 4000 减值说明可靠性问题不是理论风险。虽然公司决定换成标准 2.5MW blocks，但 mission-critical 客户会要求更长 field data。
+- 燃料电池每 MW capex 通常高于 gas engine，只有当 permit/time-to-power/低噪声/低排放/热回收价值足够高时才有溢价空间。
+
+### 9.3 客户替换成本
+
+| 阶段 | 替换成本 | 原因 |
+|---|---:|---|
+| RFP / design-in 前 | 低 | 客户可在 FCEL、Bloom、gas engine、turbine、utility PPA、BESS hybrid 之间比较 |
+| 项目 permit / interconnection / gas design 后 | 中高 | 设备排放、占地、噪声、燃气、水/热、保护控制和土建都已绑定 |
+| Commissioning 后 | 高 | 现场电源是 mission-critical asset，替换会影响 uptime、SLA、保险、融资和客户 load ramp |
+| 7 年 LTSA/service 期内 | 高 | stack replacement、remote monitoring、spares、performance guarantees、客户运维培训形成锁定 |
+
+## 十、最终投资判断框架
+
+### 10.1 多空摘要
+
+**多头论点**
+
+- AI 数据中心的最大物理约束正在从 GPU 供给扩散到可上电 MW；FCEL 的 12.5MW block 正好对准 time-to-power。
+- 公司现金 `$373M` unrestricted、净现金约 `$214M`，短期不会因流动性立即出局。
+- 4GW pipeline 如果转化，即使用低转化率也可能大幅超过当前 `$168M` TTM revenue。
+- 产能扩张从 `100MW` 到 `350/500MW` 的路径给了收入上限想象空间。
+- Carbonate fuel cell 的低排放、低噪声、热回收、DC-native output 和紧凑 footprint 对社区/许可敏感的数据中心有差异化。
+
+**空头论点**
+
+- 当前直接 AI 数据中心收入接近 `0`，product backlog 只有 `$36M`，4GW pipeline 没有客户名和订单金额。
+- TTM gross margin `-18%`、net margin `-132%`，说明即使有收入也未证明可盈利。
+- Groton `$42.6M` impairment 暴露项目可靠性和旧平台执行风险，mission-critical data center 客户会更保守。
+- 股本一年增加 `108.84%`，扩产若没有客户预付款，会继续稀释。
+- Bloom、Caterpillar、GE Vernova、Wartsila、Cummins 等已有更大订单或更成熟服务网络。
+
+### 10.2 后续最重要的验证指标
+
+| 指标 | 为什么重要 | 多头确认信号 | 空头反证信号 |
+|---|---|---|---|
+| Data center signed backlog | pipeline 转收入的第一步 | 明确客户名、MW、金额、交付窗口、deposit | 继续只说 pipeline、不披露 executed agreement |
+| Product backlog | 判断是否从 Korea replacement 切到 data center blocks | product backlog 从 `$36M` 增至 `$200M+` | product backlog 继续下降 |
+| Gross margin | 判断规模化是否可盈利 | product GM 转正，generation GM 接近 breakeven | 每交付越多亏越多 |
+| Torrington 扩产 | 决定收入 ceiling | 设备安装、第三班、良率、MW/year 量化披露 | 只有 capex，没有产出 |
+| Groton upgrade | 标准 2.5MW block 可靠性验证 | 2027 前后稳定运行，减值不再扩大 | 继续停机、赔偿或再次减值 |
+| DPP 360MW | 首个 data center 项目级验证 | site permit、gas supply、financing、EPC NTP、equipment PO | 合作沉寂或被替代 |
+| Cash burn / ATM | 股东回报 | operating cash burn 收窄、客户预付款增加 | 继续依赖高价 ATM 扩产 |
+
+## 十一、资料来源索引
+
+### 公司一手资料
+
+- FuelCell Energy FY2026 Q2 results, 2026-06-08: https://investor.fce.com/press-releases/press-release-details/2026/FuelCell-Energy-Reports-Second-Fiscal-Quarter-2026-Results-Advances-Data-Center-Power-Strategy/default.aspx
+- FuelCell Energy FY2026 Q2 10-Q, filed 2026-06-08: https://www.sec.gov/Archives/edgar/data/886128/000110465926071183/fcel-20260430x10q.htm
+- FuelCell Energy FY2026 Q2 financial results presentation: https://s21.q4cdn.com/256256048/files/doc_presentations/2026/Jun/FCEL-Q2-2026-Financial-Results-Presentation-FINAL.pdf
+- FuelCell Energy 12.5MW data center block release, 2026-03-23: https://investor.fce.com/press-releases/press-release-details/2026/FuelCell-Energy-Scales-Up-for-Data-Centers-with-Packaged-12-5-MW-UtilityGrade-Power-Block-Solution-and-Manufacturing-Expansion-Plans/default.aspx
+- FuelCell Energy Block System product page: https://www.fuelcellenergy.com/fuelcell-energy-block-system
+- FuelCell Energy data center industry page: https://www.fuelcellenergy.com/industries/data-centers
+- Diversified Energy / FuelCell Energy / TESIAC data center power partnership, 2025-03-10: https://investor.fce.com/press-releases/press-release-details/2025/Diversified-Energy-FuelCell-Energy-and-TESIAC-Collaborate-to-Form-an-Acquisition-and-Development-Company-to-Leverage-Coal-Mine-Methane-and-Natural-Gas-for-Off-GridData-Center-Power-Projects/default.aspx
+- FuelCell Energy FY2026 Q1 results, 2026-03-09: https://investor.fce.com/press-releases/press-release-details/2026/FuelCell-Energy-Delivers-Strong-Q126-Revenue-Growth-vs-Q125-Advances-Data-Center-Power-Strategy/default.aspx
+- FuelCell Energy FY2025 Q4 / FY2025 results, 2025-12-18: https://investor.fce.com/press-releases/press-release-details/2025/FuelCell-Energy-Ends-FY2025-with-Revenue-Growth-and-a-Focus-on-Data-Center-Opportunities/default.aspx
+- FuelCell Energy FY2025 Q3 results, 2025-09-09: https://investor.fce.com/press-releases/press-release-details/2025/FuelCell-Energy-Reports-Third-Quarter-of-Fiscal-2025-Results/default.aspx
+- FuelCell Energy FY2025 Q2 results, 2025-06-06: https://investor.fce.com/press-releases/press-release-details/2025/FuelCell-Energy-Reports-Second-Quarter-of-Fiscal-2025-Results/default.aspx
+- FuelCell Energy FY2025 10-K: https://www.sec.gov/Archives/edgar/data/886128/000110465925122302/fcel-20251031x10k.htm
+
+### 市场与估值数据
+
+- StockAnalysis FCEL statistics and valuation, checked 2026-06-20: https://stockanalysis.com/stocks/fcel/statistics/
+- Public.com FCEL market cap, checked 2026-06-20: https://public.com/stocks/fcel/market-cap
+
+### 项目内行业资料
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/顶级会议信息/data_center_world_2026_research_report.md`
+
+### 外部行业交叉验证（由本地行业资料和联网检索共同使用）
+
+- Bloom Energy / Oracle 2.8GW fuel cell agreement, 2026-04: https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-and-Oracle-Expand-Strategic-Partnership-to-Deploy-up-to-2-8-GW-to-Accelerate-AI-Infrastructure-Build-Out/default.aspx
+- Oracle / BorderPlex / Bloom Project Jupiter, 2026-04: https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/
+- Caterpillar / American Intelligence & Power 2GW dedicated power alliance, 2026-01: https://investors.caterpillar.com/news/news-details/2026/American-Intelligence--Power-Forms-Strategic-Alliance-with-Caterpillar-and-Boyd-CAT-to-Deploy-2-Gigawatts-of-Dedicated-Power-for-Hyperscale-AI-Infrastructure/default.aspx
+- Wartsila 790MW Texas data center order, 2026-04: https://www.wartsila.com/media/news/23-04-2026-wartsila-continues-to-expand-its-data-center-footprint-with-new-790-mw-order-in-texas-the-next-data-center-alley-3744599
+- Goldman Sachs U.S. data center power demand, 2026-05: https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027
+- Data Center World 2026: https://datacenterworld.com/

@@ -1,0 +1,294 @@
+{
+  "rows": 65,
+  "old20_count": 20,
+  "old20_unique": 20,
+  "universe_count": 193,
+  "new_six_absent_from_universe": {
+    "CORZ": true,
+    "HUT": true,
+    "CIFR": true,
+    "WULF": true,
+    "GLXY": true,
+    "RIOT": true
+  },
+  "formal_files_unchanged": [
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\CRDO_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\LITE_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\COHR_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\FN_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ANET_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\CIEN_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\GLW_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ALAB_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MRVL_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MTSI_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AAOI_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\POET_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AXTI_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\SMTC_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\CSCO_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\CRWV_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\IREN_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\NBIS_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\APLD_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ORCL_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\DLR_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\EQIX_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ETN_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\NVT_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\HUBB_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\POWL_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\VRT_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\GEV_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\PWR_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\FIX_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\EME_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\IESC_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MOD_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AAON_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MPWR_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\VICR_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\NVTS_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ABBNY_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MIELY_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\HTHIY_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\BE_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\GNRC_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\CAT_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\CMI_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ATKR_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MU_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ADBE_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MSFT_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\NVDA_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\META_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\BABA_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\GOOGL_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AMZN_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ASML_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\TSM_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AVGO_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ET_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\SNDK_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\APH_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\TEL_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\JBL_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\NTAP_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\IBM_经营情景市场状态投资决策_2026-09-09.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\SMCI_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\BDC_经营情景市场状态投资决策_2026-09-08.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\基本面\\行业调研\\研究方法\\行业调研方案.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\研究方法\\调研方案.md",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\研究方案.md",
+      "unchanged": true
+    }
+  ],
+  "broken_local_links": [],
+  "local_links_checked": 214,
+  "unreplaced_placeholder": false,
+  "formal_unchanged_count": 68,
+  "report_characters": 21710,
+  "proposals_characters": 7130
+}

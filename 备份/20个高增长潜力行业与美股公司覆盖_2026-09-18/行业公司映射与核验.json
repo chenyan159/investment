@@ -1,0 +1,1783 @@
+{
+  "summary": {
+    "industries": 20,
+    "company_slots": 60,
+    "unique_companies": 43,
+    "coverage_counts": {
+      "有正式报告": 34,
+      "已登记无正式报告": 5,
+      "未登记无正式报告": 4
+    },
+    "fully_covered_industries": 14,
+    "index_path": "D:\\investment\\基本面\\公司调研\\公司索引.md",
+    "index_sha256": "0f2e88c53ccd5c589d5c2fe1a692ff4e4f71c5254db94ccf2439304ff7b8e2f7",
+    "date": "2026-09-18"
+  },
+  "industries": [
+    {
+      "rank": 1,
+      "industry": "HBM与高带宽内存",
+      "group": "增长与兑现兼顾",
+      "base_2026_B": 62.9,
+      "target_B": 218.9,
+      "target_year": 2028,
+      "cagr": 0.865509899735067,
+      "boundary": "HBM厂商收入",
+      "companies": [
+        {
+          "ticker": "SKHY",
+          "name": "SK海力士",
+          "role": "HBM制造龙头",
+          "coverage": {
+            "name": "SK海力士",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SKHY_SK_hynix_Inc_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 36207,
+            "sha256": "8ba01a95e9bc225a780f7b8ddf9897b88c9d7e397f5245d1afef28e06b11e2f2",
+            "h1": "# SK 海力士 SK hynix Inc.（NASDAQ：SKHY；KRX：000660）公司调研"
+          }
+        },
+        {
+          "ticker": "MU",
+          "name": "美光",
+          "role": "HBM制造商",
+          "coverage": {
+            "name": "美光",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\MU_Micron_Technology_美光科技_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 38944,
+            "sha256": "4883089314c3d3ba9afc7628ef78f9de0927adc04a6fa811c0def2633c2c386e",
+            "h1": "# 美光科技（Micron Technology，NASDAQ：MU）公司调研"
+          }
+        },
+        {
+          "ticker": "AMAT",
+          "name": "应用材料",
+          "role": "HBM制造与封装设备，间接映射",
+          "coverage": {
+            "name": "应用材料",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\晶圆制造_前道设备\\AMAT_Applied_Materials_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 32022,
+            "sha256": "937b59ace996c3555d38867e1dd503531473dff361fb3af61c0fb73c9ecb4abf",
+            "h1": "# 应用材料（Applied Materials，NASDAQ：AMAT）公司调研"
+          }
+        }
+      ],
+      "thesis": "每颗加速器内存容量提升，HBM4/后续代际带来价值增长。",
+      "condition": "报告2028基准明显高于其引用的厂商旧预测；数量和净价须同时兑现。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI服务器_存储_芯片\\行业调研_HBM与高带宽内存_2026-09-18.md",
+      "industry_sha256": "d59972845895b7deaf84ba7f2522b4e062b4ba689924214ebdd507929ba443cb"
+    },
+    {
+      "rank": 2,
+      "industry": "云厂自研AI ASIC",
+      "group": "增长与兑现兼顾",
+      "base_2026_B": 72.6,
+      "target_B": 136.9,
+      "target_year": 2027,
+      "cagr": 0.8856749311294767,
+      "boundary": "云厂ASIC硬件采购等价值",
+      "companies": [
+        {
+          "ticker": "AVGO",
+          "name": "博通",
+          "role": "定制ASIC实现与交付",
+          "coverage": {
+            "name": "博通",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AVGO_Broadcom_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 40029,
+            "sha256": "8372897d84df354a965824472470408ba347b42233795e20b1dda02f46f951e7",
+            "h1": "# Broadcom（博通，NASDAQ：AVGO）公司调研：定制计算、网络控制权与扩张的资本责任"
+          }
+        },
+        {
+          "ticker": "MRVL",
+          "name": "Marvell",
+          "role": "定制ASIC实现与交付",
+          "coverage": {
+            "name": "Marvell",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\MRVL_Marvell_Technology_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 33948,
+            "sha256": "9b19bdec81d902f6f1d3814156dcd02f9dada4a6415c62861a45d586abb102aa",
+            "h1": "# Marvell Technology（MRVL）公司调研：从连接芯片到定制计算与共享内存的价值捕获"
+          }
+        },
+        {
+          "ticker": "GOOGL",
+          "name": "Alphabet",
+          "role": "TPU自研平台与云变现，不是纯外售芯片商",
+          "coverage": {
+            "name": "Alphabet",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\GOOGL_Alphabet_Inc_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 48720,
+            "sha256": "226311294a6a9ba5dd7442547d07beabe16ddb1e78fd8c80f796460904a37835",
+            "h1": "# Alphabet（GOOGL）公司调研：搜索入口、AI计算平台与资本责任的重构"
+          }
+        }
+      ],
+      "thesis": "稳定的大规模推理任务推动定制计算。",
+      "condition": "客户集中、软件迁移、HBM和封装配额；采购等价值不是三家公司收入之和。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI服务器_存储_芯片\\行业调研_云厂自研AI_ASIC_2026-09-18.md",
+      "industry_sha256": "8e0fef50c332aa32cebc3f684eed06f6df5f9059318fd2366f050a1c199327cc"
+    },
+    {
+      "rank": 3,
+      "industry": "商用AI加速芯片",
+      "group": "增长与兑现兼顾",
+      "base_2026_B": 347.7,
+      "target_B": 621.9,
+      "target_year": 2028,
+      "cagr": 0.3373895735502417,
+      "boundary": "开放商用AI加速器销售池M",
+      "companies": [
+        {
+          "ticker": "NVDA",
+          "name": "英伟达",
+          "role": "GPU及计算平台领导者",
+          "coverage": {
+            "name": "英伟达",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\NVDA_NVIDIA_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 40477,
+            "sha256": "6eefe460e7ed89ef25242724ccd00b0b5f0af456ab3009883075d5a070b902c2",
+            "h1": "# NVIDIA（英伟达，NASDAQ：NVDA）公司调研"
+          }
+        },
+        {
+          "ticker": "AMD",
+          "name": "AMD",
+          "role": "商用GPU主要挑战者",
+          "coverage": {
+            "name": "AMD",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AMD_Advanced_Micro_Devices_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 47387,
+            "sha256": "b4158f0b8556ba19855976f861ede1ae8e9a08652fd192d8b37662338f92ea12",
+            "h1": "# AMD（NASDAQ：AMD）公司调研：从处理器份额增长走向整柜 AI，价值捕获与资本负担同步变化"
+          }
+        },
+        {
+          "ticker": "CBRS",
+          "name": "Cerebras",
+          "role": "晶圆级专用AI计算，规模远小于前两家",
+          "coverage": {
+            "name": "Cerebras",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\CBRS_Cerebras_Systems_Inc_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 38354,
+            "sha256": "354c50de4733054d66622de2ee6abebc6e4fd368d6c964df0c0143f324c06a45",
+            "h1": "# Cerebras Systems Inc.（NASDAQ：CBRS）公司调研：晶圆级计算的商业验证、推理服务扩张与交付资本约束"
+          }
+        }
+      ],
+      "thesis": "训练与推理扩张，软件生态和系统交付保留价值。",
+      "condition": "客户回报、资金、出口限制以及ASIC替代；第三家是重要挑战者，非与前两家等量齐观。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI服务器_存储_芯片\\行业调研_商用AI加速芯片_2026-09-18.md",
+      "industry_sha256": "91d9682c7b5feb7aa29bbeabd86c0fa7608cbe58e25beda679b5ea4cebf02966"
+    },
+    {
+      "rank": 4,
+      "industry": "企业AI与Agent工作流软件",
+      "group": "增长与兑现兼顾",
+      "base_2026_B": 40.7,
+      "target_B": 119.0,
+      "target_year": 2028,
+      "cagr": 0.7099219057702382,
+      "boundary": "去重后的企业AI应用最终支出",
+      "companies": [
+        {
+          "ticker": "MSFT",
+          "name": "微软",
+          "role": "Copilot及开发者/办公入口",
+          "coverage": {
+            "name": "微软",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\MSFT_微软_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 42204,
+            "sha256": "f2fc74b5a4ea581f34841012d30bca70e9bd4d19fc8bb66996465c8832a0aaed",
+            "h1": "# 微软（Microsoft，NASDAQ：MSFT）公司调研：从企业软件现金体系到 AI 工作与计算平台"
+          }
+        },
+        {
+          "ticker": "NOW",
+          "name": "ServiceNow",
+          "role": "企业流程与Agent编排",
+          "coverage": {
+            "name": "ServiceNow",
+            "indexed": true,
+            "status": "已登记无正式报告",
+            "otc": false,
+            "path": null
+          }
+        },
+        {
+          "ticker": "CRM",
+          "name": "Salesforce",
+          "role": "客户工作流与Agentforce",
+          "coverage": {
+            "name": "Salesforce",
+            "indexed": false,
+            "status": "未登记无正式报告",
+            "otc": false,
+            "path": null
+          }
+        }
+      ],
+      "thesis": "由AI试用转生产付费，既有流程与分销优势重要。",
+      "condition": "独立增量收费、续费、客户可验证回报；不可把传统SaaS收入全归AI。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI应用_软件_数据平台\\行业调研_企业AI与Agent工作流软件_2026-09-18.md",
+      "industry_sha256": "40cf3dcb459cfcf3978582bdbbc6ed9f5983f0ad5bc6b29d75560d127c754f74"
+    },
+    {
+      "rank": 5,
+      "industry": "AI芯片先进封装",
+      "group": "增长与兑现兼顾",
+      "base_2026_B": 25.24,
+      "target_B": 58.04,
+      "target_year": 2028,
+      "cagr": 0.5164183341623891,
+      "boundary": "AI芯片先进封装净额服务池",
+      "companies": [
+        {
+          "ticker": "TSM",
+          "name": "台积电",
+          "role": "CoWoS/SoIC等先进封装",
+          "coverage": {
+            "name": "台积电",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\晶圆制造_前道设备\\TSM_台积电_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 37265,
+            "sha256": "46740f9f83708233d745e6fca7ab1cf3f0a6b09be39781716334e9d88aa71e61",
+            "h1": "# 台积电（TSM / TWSE：2330）公司调研：先进制造控制力、系统集成与资本回报"
+          }
+        },
+        {
+          "ticker": "ASX",
+          "name": "日月光投控",
+          "role": "先进封装与测试",
+          "coverage": {
+            "name": "日月光投控",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\封测_检测_计量_光罩\\ASX_ASE_Technology_Holding_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 36101,
+            "sha256": "806e6fb07d91dd8bfaa42d831eeb845233e3346b0bde873e47a7af911d940208",
+            "h1": "# 日月光投资控股 ASE Technology Holding（NYSE：ASX；TWSE：3711）公司调研"
+          }
+        },
+        {
+          "ticker": "AMKR",
+          "name": "Amkor",
+          "role": "先进封装与测试",
+          "coverage": {
+            "name": "Amkor",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\封测_检测_计量_光罩\\AMKR_Amkor_Technology_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 33497,
+            "sha256": "e5329bed083f44ce294bda71a1e64367996e06d6bc0ac0006de7e7ed4511db35",
+            "h1": "# Amkor Technology（AMKR）公司调研：从手机封装规模商走向计算封装与美国制造平台"
+          }
+        }
+      ],
+      "thesis": "更大封装、Chiplet和更高互连密度提升单颗价值。",
+      "condition": "良率与可验收产能；三家技术、规模、客户结构不同。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI服务器_存储_芯片\\行业调研_AI芯片先进封装_2026-09-18.md",
+      "industry_sha256": "ff59a194e5c582e5e49ebf9cec4416f32606855693a44de58e7958d6a047c895"
+    },
+    {
+      "rank": 6,
+      "industry": "AI服务器CPU与控制平面芯片",
+      "group": "增长与兑现兼顾",
+      "base_2026_B": 34.4,
+      "target_B": 73.2,
+      "target_year": 2028,
+      "cagr": 0.4587347177414358,
+      "boundary": "AI归属CPU与控制芯片等价值",
+      "companies": [
+        {
+          "ticker": "AMD",
+          "name": "AMD",
+          "role": "EPYC服务器CPU",
+          "coverage": {
+            "name": "AMD",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AMD_Advanced_Micro_Devices_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 47387,
+            "sha256": "b4158f0b8556ba19855976f861ede1ae8e9a08652fd192d8b37662338f92ea12",
+            "h1": "# AMD（NASDAQ：AMD）公司调研：从处理器份额增长走向整柜 AI，价值捕获与资本负担同步变化"
+          }
+        },
+        {
+          "ticker": "NVDA",
+          "name": "英伟达",
+          "role": "Grace/Vera与集成CPU",
+          "coverage": {
+            "name": "英伟达",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\NVDA_NVIDIA_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 40477,
+            "sha256": "6eefe460e7ed89ef25242724ccd00b0b5f0af456ab3009883075d5a070b902c2",
+            "h1": "# NVIDIA（英伟达，NASDAQ：NVDA）公司调研"
+          }
+        },
+        {
+          "ticker": "INTC",
+          "name": "英特尔",
+          "role": "Xeon服务器CPU",
+          "coverage": {
+            "name": "英特尔",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\INTC_Intel_Corporation_英特尔_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 40850,
+            "sha256": "54664034e1d4d515626163510b2f314acc387adf1d4a380fc432483447b1593c",
+            "h1": "# 英特尔（Intel Corporation，NASDAQ：INTC）公司调研：CPU复苏、制造再投资与外部商业化的三重检验"
+          }
+        }
+      ],
+      "thesis": "Agent任务、主机与控制平面增加CPU工作。",
+      "condition": "AI归属和集成价值分摊误差大；更高核密度和DPU可减少插槽。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI服务器_存储_芯片\\行业调研_AI服务器CPU与控制平面芯片_2026-09-18.md",
+      "industry_sha256": "70a50bba8b59f524420225953038fee226ddc25ddc245293c4805b84b4c8ff6d"
+    },
+    {
+      "rank": 7,
+      "industry": "AI以太网交换系统与Fabric芯片",
+      "group": "增长与兑现兼顾",
+      "base_2026_B": 19.65,
+      "target_B": 42.72,
+      "target_year": 2028,
+      "cagr": 0.47446458130628466,
+      "boundary": "AI以太网交换系统，scale-out加scale-up",
+      "companies": [
+        {
+          "ticker": "NVDA",
+          "name": "英伟达",
+          "role": "Spectrum-X系统",
+          "coverage": {
+            "name": "英伟达",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\NVDA_NVIDIA_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 40477,
+            "sha256": "6eefe460e7ed89ef25242724ccd00b0b5f0af456ab3009883075d5a070b902c2",
+            "h1": "# NVIDIA（英伟达，NASDAQ：NVDA）公司调研"
+          }
+        },
+        {
+          "ticker": "ANET",
+          "name": "Arista",
+          "role": "交换系统与网络软件",
+          "coverage": {
+            "name": "Arista",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\ANET_Arista_Networks_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 41389,
+            "sha256": "48f9e5af71b8f8dfa1ac7c74f4da036d0866ac6d2331e3e29146218f9de7e044",
+            "h1": "# Arista Networks（ANET）公司调研：AI 网络扩张、架构压缩与软件价值的重新分配"
+          }
+        },
+        {
+          "ticker": "AVGO",
+          "name": "博通",
+          "role": "商用交换ASIC，上游芯片层",
+          "coverage": {
+            "name": "博通",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AVGO_Broadcom_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 40029,
+            "sha256": "8372897d84df354a965824472470408ba347b42233795e20b1dda02f46f951e7",
+            "h1": "# Broadcom（博通，NASDAQ：AVGO）公司调研：定制计算、网络控制权与扩张的资本责任"
+          }
+        }
+      ],
+      "thesis": "AI后端以太网与开放网络扩张。",
+      "condition": "系统和芯片收入重叠，不能加总；客户自研与硬件降价。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI网络_光互联_铜互联\\行业调研_AI以太网交换系统与Fabric芯片_2026-09-18.md",
+      "industry_sha256": "bf01ff86615972a8c89d782312b42008df14115120e476d9493ed0c15971833b"
+    },
+    {
+      "rank": 8,
+      "industry": "网卡、DPU与SmartNIC",
+      "group": "增长与兑现兼顾",
+      "base_2026_B": 19.41,
+      "target_B": 46.96,
+      "target_year": 2029,
+      "cagr": 0.34245844406416004,
+      "boundary": "NIC/DPU/SmartNIC厂商收入及捆绑分配",
+      "companies": [
+        {
+          "ticker": "NVDA",
+          "name": "英伟达",
+          "role": "ConnectX/BlueField",
+          "coverage": {
+            "name": "英伟达",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\NVDA_NVIDIA_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 40477,
+            "sha256": "6eefe460e7ed89ef25242724ccd00b0b5f0af456ab3009883075d5a070b902c2",
+            "h1": "# NVIDIA（英伟达，NASDAQ：NVDA）公司调研"
+          }
+        },
+        {
+          "ticker": "AVGO",
+          "name": "博通",
+          "role": "高性能以太网NIC",
+          "coverage": {
+            "name": "博通",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AVGO_Broadcom_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 40029,
+            "sha256": "8372897d84df354a965824472470408ba347b42233795e20b1dda02f46f951e7",
+            "h1": "# Broadcom（博通，NASDAQ：AVGO）公司调研：定制计算、网络控制权与扩张的资本责任"
+          }
+        },
+        {
+          "ticker": "MRVL",
+          "name": "Marvell",
+          "role": "基础设施DPU与网络处理",
+          "coverage": {
+            "name": "Marvell",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\MRVL_Marvell_Technology_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 33948,
+            "sha256": "9b19bdec81d902f6f1d3814156dcd02f9dada4a6415c62861a45d586abb102aa",
+            "h1": "# Marvell Technology（MRVL）公司调研：从连接芯片到定制计算与共享内存的价值捕获"
+          }
+        }
+      ],
+      "thesis": "更高带宽和存储/安全卸载降低昂贵计算资源等待。",
+      "condition": "集成、自研及板卡/芯片边界；并非每台服务器都买高价DPU。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI网络_光互联_铜互联\\行业调研_网卡、DPU与SmartNIC_2026-09-18.md",
+      "industry_sha256": "1af5825f565d85b9d7bc0cd94da82a671a9c4adbfaad843f9409f98e6e1d0588"
+    },
+    {
+      "rank": 9,
+      "industry": "800G/1.6T可插拔光模块",
+      "group": "增长与兑现兼顾",
+      "base_2026_B": 25.19,
+      "target_B": 36.4,
+      "target_year": 2028,
+      "cagr": 0.20208895853503206,
+      "boundary": "800G/1.6T短距可插拔模块",
+      "companies": [
+        {
+          "ticker": "COHR",
+          "name": "Coherent",
+          "role": "光模块与关键光器件",
+          "coverage": {
+            "name": "Coherent",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\COHR_Coherent_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 38068,
+            "sha256": "6c1b40a2cd6b4cabef1cb2cdb8c07f8b4a931b7443a9cd5b16de2f0853401b0c",
+            "h1": "# Coherent（COHR）公司调研：从光子器件制造商到AI互联平台，增长能否变成股东现金"
+          }
+        },
+        {
+          "ticker": "LITE",
+          "name": "Lumentum",
+          "role": "光模块与激光器",
+          "coverage": {
+            "name": "Lumentum",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\LITE_Lumentum_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 38836,
+            "sha256": "d599f00158a296d7cba102826235209243d93c9570b329255dc52cbd4315e138",
+            "h1": "# Lumentum（NASDAQ：LITE）公司调研：光源、光模块与光交换的扩张，以及股东能留下多少现金"
+          }
+        },
+        {
+          "ticker": "FN",
+          "name": "Fabrinet",
+          "role": "高端光学制造服务，非模块品牌",
+          "coverage": {
+            "name": "Fabrinet",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\FN_Fabrinet_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 34287,
+            "sha256": "82968f1ca5db509153726ea0150cb86d8439d847b885978234d14a098f2e377e",
+            "h1": "# Fabrinet（NYSE：FN）公司调研：增长重心迁移、精密制造价值与现金再投资约束"
+          }
+        }
+      ],
+      "thesis": "带宽升级有现实出货，1.6T替换与增量并行。",
+      "condition": "单价下降与CPO替代；Fabrinet是制造层，不是全球模块收入前三。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI网络_光互联_铜互联\\行业调研_800G_1.6T可插拔光模块_2026-09-18.md",
+      "industry_sha256": "322bb1cb9fb311c74fe8b75e109f95c45f39e066ca20300225d9b1f76f340278"
+    },
+    {
+      "rank": 10,
+      "industry": "数据中心直液冷系统",
+      "group": "增长与兑现兼顾",
+      "base_2026_B": null,
+      "target_B": null,
+      "target_year": 2030,
+      "cagr": null,
+      "boundary": "液冷系统硬件、工程、运维A+E+C",
+      "companies": [
+        {
+          "ticker": "VRT",
+          "name": "Vertiv",
+          "role": "系统交付与服务",
+          "coverage": {
+            "name": "Vertiv",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\热管理_流体_水处理\\VRT_Vertiv_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 46995,
+            "sha256": "88ed91f20f95b42a0a7bf5758e627fd73199c89a0f9f00a72801714a06da3181",
+            "h1": "# Vertiv（维谛技术，NYSE：VRT）公司调研：从关键设备到可交付的电力与热管理系统"
+          }
+        },
+        {
+          "ticker": "NVT",
+          "name": "nVent",
+          "role": "CDU与液冷系统",
+          "coverage": {
+            "name": "nVent",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\配电_电源系统_电气设备\\NVT_nVent_Electric_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 39347,
+            "sha256": "8edffddc6265dda1feac8f778335c1413146e8020b980cae0218319d464fac7c",
+            "h1": "# nVent Electric（NYSE：NVT）公司调研：液冷交付、配电整合与资本回报的再检验"
+          }
+        },
+        {
+          "ticker": "SBGSY",
+          "name": "施耐德",
+          "role": "系统与Motivair液冷平台",
+          "coverage": {
+            "name": "施耐德",
+            "indexed": true,
+            "status": "已登记无正式报告",
+            "otc": true,
+            "path": null
+          }
+        }
+      ],
+      "thesis": "高密度芯片推动液冷，验收、可靠性与服务责任有价值。",
+      "condition": "2026基准3.28—9.78B、2030为8.07—25.21B；保留区间，不取中点伪造CAGR。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI园区电力_机电_冷却\\行业调研_数据中心直液冷系统_2026-09-18.md",
+      "industry_sha256": "c918d2da7058229356c65960008206bfe3cb9272c14dc0ab28ee5775e6775f6a"
+    },
+    {
+      "rank": 11,
+      "industry": "AI云算力外包和NeoCloud与AI数据中心运营商",
+      "group": "高增长但资金与执行约束较强",
+      "base_2026_B": null,
+      "target_B": null,
+      "target_year": 2028,
+      "cagr": null,
+      "boundary": "市场化GPU NeoCloud服务",
+      "companies": [
+        {
+          "ticker": "CRWV",
+          "name": "CoreWeave",
+          "role": "已规模运营的AI云",
+          "coverage": {
+            "name": "CoreWeave",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\CRWV_CoreWeave_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 33946,
+            "sha256": "575fd6135202c54a298e06417d852a56d8128d2cdb1f4d3d23977f646d7e0a66",
+            "h1": "# CoreWeave（NASDAQ：CRWV）公司调研：交付能力、推理转型与资本回报的交叉检验"
+          }
+        },
+        {
+          "ticker": "NBIS",
+          "name": "Nebius",
+          "role": "AI云规模扩张",
+          "coverage": {
+            "name": "Nebius",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\NBIS_Nebius_Group_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 37149,
+            "sha256": "b7b4fb2768bd59876c59c1f0c44c285004d99250247519ff8d54c66adc1ec307",
+            "h1": "# Nebius Group（NASDAQ：NBIS）公司调研"
+          }
+        },
+        {
+          "ticker": "IREN",
+          "name": "IREN",
+          "role": "AI云转型与投产，当前规模较小",
+          "coverage": {
+            "name": "IREN",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\IREN_IREN_Limited_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 42459,
+            "sha256": "f9614d3236d9f538fc441fd46d4ba6f9abd7b8fe6c740cb770d28c0dd131cdb2",
+            "h1": "# IREN Limited（NASDAQ：IREN）公司调研：已进入客户交付阶段的 AI 云转型，与仍待完成的资本回收"
+          }
+        }
+      ],
+      "thesis": "客户购买可交付GPU容量与服务，电力和交付成为资源。",
+      "condition": "2026基准32.1—53.2B、2028为105.9—190.4B；融资、折旧、验收和利用率决定权益回报。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI服务器_存储_芯片\\行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-09-18.md",
+      "industry_sha256": "a40508c3bede65b63a6ab39899ea8a19227efdb619e8ced46bf11ad03f7ea5d8"
+    },
+    {
+      "rank": 12,
+      "industry": "CPO/NPO与交换侧光引擎",
+      "group": "高弹性技术路线",
+      "base_2026_B": 0.567,
+      "target_B": 5.659,
+      "target_year": 2028,
+      "cagr": 2.159208705873405,
+      "boundary": "交换侧CPO/NPO光引擎及对应光学交付",
+      "companies": [
+        {
+          "ticker": "AVGO",
+          "name": "博通",
+          "role": "CPO交换平台",
+          "coverage": {
+            "name": "博通",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AVGO_Broadcom_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 40029,
+            "sha256": "8372897d84df354a965824472470408ba347b42233795e20b1dda02f46f951e7",
+            "h1": "# Broadcom（博通，NASDAQ：AVGO）公司调研：定制计算、网络控制权与扩张的资本责任"
+          }
+        },
+        {
+          "ticker": "NVDA",
+          "name": "英伟达",
+          "role": "Photonics交换平台",
+          "coverage": {
+            "name": "英伟达",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\NVDA_NVIDIA_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 40477,
+            "sha256": "6eefe460e7ed89ef25242724ccd00b0b5f0af456ab3009883075d5a070b902c2",
+            "h1": "# NVIDIA（英伟达，NASDAQ：NVDA）公司调研"
+          }
+        },
+        {
+          "ticker": "LITE",
+          "name": "Lumentum",
+          "role": "外置激光光源，关键部件层",
+          "coverage": {
+            "name": "Lumentum",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\LITE_Lumentum_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 38836,
+            "sha256": "d599f00158a296d7cba102826235209243d93c9570b329255dc52cbd4315e138",
+            "h1": "# Lumentum（NASDAQ：LITE）公司调研：光源、光模块与光交换的扩张，以及股东能留下多少现金"
+          }
+        }
+      ],
+      "thesis": "电互连的功耗与密度约束打开交换侧光学空间。",
+      "condition": "低基数、价格假设和采用率高度敏感；LITE不是第三家交换平台。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI网络_光互联_铜互联\\行业调研_CPO_NPO与交换侧光引擎_2026-09-18.md",
+      "industry_sha256": "5ef38afc91abb9eada15baf7a556346c39d27ae29f696f709c9f3cb65f253036"
+    },
+    {
+      "rank": 13,
+      "industry": "LPO/LRO线性光模块",
+      "group": "高弹性技术路线",
+      "base_2026_B": 1.848,
+      "target_B": 11.342,
+      "target_year": 2028,
+      "cagr": 1.4773869070950316,
+      "boundary": "LPO/LRO模块制造商净收入",
+      "companies": [
+        {
+          "ticker": "COHR",
+          "name": "Coherent",
+          "role": "模块和光器件",
+          "coverage": {
+            "name": "Coherent",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\COHR_Coherent_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 38068,
+            "sha256": "6c1b40a2cd6b4cabef1cb2cdb8c07f8b4a931b7443a9cd5b16de2f0853401b0c",
+            "h1": "# Coherent（COHR）公司调研：从光子器件制造商到AI互联平台，增长能否变成股东现金"
+          }
+        },
+        {
+          "ticker": "LITE",
+          "name": "Lumentum",
+          "role": "TRO/LRO模块与光器件",
+          "coverage": {
+            "name": "Lumentum",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\LITE_Lumentum_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 38836,
+            "sha256": "d599f00158a296d7cba102826235209243d93c9570b329255dc52cbd4315e138",
+            "h1": "# Lumentum（NASDAQ：LITE）公司调研：光源、光模块与光交换的扩张，以及股东能留下多少现金"
+          }
+        },
+        {
+          "ticker": "MTSI",
+          "name": "MACOM",
+          "role": "线性TIA/驱动器，上游芯片层",
+          "coverage": {
+            "name": "MACOM",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\MTSI_MACOM_Technology_Solutions_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 43300,
+            "sha256": "1963b4580c817bddfefd10fd6bc1fda6281b155f6ebfd007a620781974681888",
+            "h1": "# MACOM Technology Solutions（MTSI）公司调研：高速模拟与射频平台的扩张、价值捕获和制造约束"
+          }
+        }
+      ],
+      "thesis": "线性接收和低功耗设计先在受控系统扩散。",
+      "condition": "价格锚较激进，主机认证是约束；与800G/1.6T主题重叠。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI网络_光互联_铜互联\\行业调研_LPO_LRO线性光模块_2026-09-18.md",
+      "industry_sha256": "69a99bffe5fdea5017773ebb7b83803c21f49ad536bba14d8bf409709d2e75fd"
+    },
+    {
+      "rank": 14,
+      "industry": "CXL内存扩展与内存池化",
+      "group": "高弹性技术路线",
+      "base_2026_B": 0.112,
+      "target_B": 0.588,
+      "target_year": 2028,
+      "cagr": 1.29128784747792,
+      "boundary": "CXL非DRAM硬件，避免把内存涨价当互连芯片增长",
+      "companies": [
+        {
+          "ticker": "ALAB",
+          "name": "Astera Labs",
+          "role": "Leo CXL控制器",
+          "coverage": {
+            "name": "Astera Labs",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\ALAB_AsteraLabs_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 39418,
+            "sha256": "72ca1cfa29e8ee4bf8ec12e83a424599da83fc8c397971a6d884c3c1812cdeb9",
+            "h1": "# Astera Labs（NASDAQ：ALAB）公司调研：从信号恢复走向AI计算互联，增长与价值归属的再判断"
+          }
+        },
+        {
+          "ticker": "RMBS",
+          "name": "Rambus",
+          "role": "CXL控制器/IP及内存接口",
+          "coverage": {
+            "name": "Rambus",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\RMBS_Rambus_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 34353,
+            "sha256": "b69d129a0994f9fb385bd6e6197f3837536c9a760b8c0a419704fa214fa45a13",
+            "h1": "# Rambus（NASDAQ：RMBS）公司调研：接口芯片扩张、授权现金流与内存架构变迁"
+          }
+        },
+        {
+          "ticker": "MU",
+          "name": "美光",
+          "role": "CXL内存模组与DRAM",
+          "coverage": {
+            "name": "美光",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\MU_Micron_Technology_美光科技_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 38944,
+            "sha256": "4883089314c3d3ba9afc7628ef78f9de0927adc04a6fa811c0def2633c2c386e",
+            "h1": "# 美光科技（Micron Technology，NASDAQ：MU）公司调研"
+          }
+        }
+      ],
+      "thesis": "内存扩容、复用和池化形成低基数机会。",
+      "condition": "芯片、IP、模组属于不同收费层；含DRAM总池1.12→7.38B并非控制器收入。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI服务器_存储_芯片\\行业调研_CXL内存扩展与内存池化_2026-09-18.md",
+      "industry_sha256": "88e2f3008ce3758e6d675794f9929093ed0e16b5e8ea57feef6965020559537a"
+    },
+    {
+      "rank": 15,
+      "industry": "中压直流、800VDC与固态变压器",
+      "group": "高弹性技术路线",
+      "base_2026_B": 0.1,
+      "target_B": 5.26,
+      "target_year": 2030,
+      "cagr": 1.6930625217004334,
+      "boundary": "800V等级转换、分配保护及低压转换硬件",
+      "companies": [
+        {
+          "ticker": "VRT",
+          "name": "Vertiv",
+          "role": "供电系统与整合",
+          "coverage": {
+            "name": "Vertiv",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\热管理_流体_水处理\\VRT_Vertiv_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 46995,
+            "sha256": "88ed91f20f95b42a0a7bf5758e627fd73199c89a0f9f00a72801714a06da3181",
+            "h1": "# Vertiv（维谛技术，NYSE：VRT）公司调研：从关键设备到可交付的电力与热管理系统"
+          }
+        },
+        {
+          "ticker": "ETN",
+          "name": "伊顿",
+          "role": "配电保护与系统",
+          "coverage": {
+            "name": "伊顿",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\配电_电源系统_电气设备\\ETN_Eaton_Corporation_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 36522,
+            "sha256": "1f70eff0fe28e73337e5dce3c0a3a67c4784f726d09862d7a8417801b26cea06",
+            "h1": "# 伊顿 Eaton Corporation plc（NYSE：ETN）公司调研：交付能力、架构迁移与资本回报"
+          }
+        },
+        {
+          "ticker": "IFNNY",
+          "name": "英飞凌",
+          "role": "功率半导体，上游器件层",
+          "coverage": {
+            "name": "英飞凌",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": true,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\IFNNY_Infineon_Technologies_AG_英飞凌科技_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 38396,
+            "sha256": "8fbfdd0c36299328f596d0903e3b9a8c046c41c775f9d6de0fdcf60081a4d82b",
+            "h1": "# 英飞凌科技（Infineon Technologies AG，IFNNY）公司调研"
+          }
+        }
+      ],
+      "thesis": "兆瓦级机柜降低电流和铜损，带动800V架构导入。",
+      "condition": "2026低基数，800V不等于SST；不是三家已确认大规模SST收入龙头。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI园区电力_机电_冷却\\行业调研_中压直流、800VDC与固态变压器_2026-09-18.md",
+      "industry_sha256": "e6cfe353e8f75a9aa8c5d6271215456b990095e6705618d934253e0d00eb077f"
+    },
+    {
+      "rank": 16,
+      "industry": "AI高多层PCB、低损耗覆铜板与铜箔",
+      "group": "高增长制造与材料",
+      "base_2026_B": 19.65,
+      "target_B": 36.53,
+      "target_year": 2028,
+      "cagr": 0.36346363313452823,
+      "boundary": "AI服务器/交换机裸PCB产值",
+      "companies": [
+        {
+          "ticker": "TTMI",
+          "name": "TTM Technologies",
+          "role": "复杂PCB制造",
+          "coverage": {
+            "name": "TTM Technologies",
+            "indexed": true,
+            "status": "已登记无正式报告",
+            "otc": false,
+            "path": null
+          }
+        },
+        {
+          "ticker": "PCRHY",
+          "name": "松下",
+          "role": "MEGTRON低损耗覆铜板",
+          "coverage": {
+            "name": "松下",
+            "indexed": false,
+            "status": "未登记无正式报告",
+            "otc": true,
+            "path": null
+          }
+        },
+        {
+          "ticker": "ASGLY",
+          "name": "AGC",
+          "role": "低损耗树脂与材料",
+          "coverage": {
+            "name": "AGC",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": true,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\ASGLY_AGC_Inc_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 40957,
+            "sha256": "fae05c4429fb4ec48c93b5ab4c21a5499510accd5b430f310948aed439e90f33",
+            "h1": "# AGC Inc.（旭硝子，ASGLY / 东京证券交易所 5201）公司调研"
+          }
+        }
+      ],
+      "thesis": "高速通道、层数、HDI与低损耗材料升级。",
+      "condition": "三家公司是美股可交易的不同环节映射，不是全球裸PCB前三；材料收入不等于表内板级收入。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\半导体与电子制造_设备_材料_测试\\行业调研_AI高多层PCB、低损耗覆铜板与铜箔_2026-09-18.md",
+      "industry_sha256": "fff574962f721cf294c35e88a6a6969f7d4439fed58ea36c3e5a0644b0efa744"
+    },
+    {
+      "rank": 17,
+      "industry": "低轨卫星通信、直连手机与地面终端",
+      "group": "长期扩张与新商业化",
+      "base_2026_B": 16.1,
+      "target_B": 53.4,
+      "target_year": 2030,
+      "cagr": 0.34951850854372757,
+      "boundary": "低轨连接服务可归属支出",
+      "companies": [
+        {
+          "ticker": "SPCX",
+          "name": "SpaceX",
+          "role": "Starlink规模化运营",
+          "coverage": {
+            "name": "SpaceX",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\SPCX_SpaceX_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 40771,
+            "sha256": "5954db3707ed114580aa53858f94c182075098693cf544bedfb17e9af25cddde",
+            "h1": "# SpaceX（Space Exploration Technologies Corp.，NASDAQ：SPCX）公司调研"
+          }
+        },
+        {
+          "ticker": "ASTS",
+          "name": "AST SpaceMobile",
+          "role": "手机直连，商业化爬坡",
+          "coverage": {
+            "name": "AST SpaceMobile",
+            "indexed": true,
+            "status": "已登记无正式报告",
+            "otc": false,
+            "path": null
+          }
+        },
+        {
+          "ticker": "AMZN",
+          "name": "亚马逊",
+          "role": "低轨星座平台与后续部署",
+          "coverage": {
+            "name": "亚马逊",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\AMZN_Amazon_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 47575,
+            "sha256": "4200b5ea353c4186125d0ed99a2d3b886a2e3fe8dd6bb31cc1b5fcd4b1c6b9cc",
+            "h1": "# Amazon（亚马逊，NASDAQ：AMZN）公司调研：平台增长、资本回报与第二轮业务重构"
+          }
+        }
+      ],
+      "thesis": "宽带、企业连接和手机直连形成不同付费池。",
+      "condition": "AMZN、ASTS仍需证明部署和付费规模，不是当期收入前三；D2D运营商净收入小于终端支出。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\商业航天_火箭_卫星\\行业调研_低轨卫星通信、直连手机与地面终端_2026-09-18.md",
+      "industry_sha256": "436fe89647f2068b0f17e8758fe5e96214f24a7bd17543fa559d57761f3f0a68"
+    },
+    {
+      "rank": 18,
+      "industry": "人形机器人与关键执行部件",
+      "group": "高不确定性长期期权",
+      "base_2026_B": 0.892,
+      "target_B": 6.8,
+      "target_year": 2030,
+      "cagr": 0.6616364659838747,
+      "boundary": "双足人形外部首次交付等价值",
+      "companies": [
+        {
+          "ticker": "TSLA",
+          "name": "特斯拉",
+          "role": "Optimus整机研发与制造",
+          "coverage": {
+            "name": "特斯拉",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\TSLA_Tesla_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 44084,
+            "sha256": "ecf126edeae7519638b6675bbe68bddbebc54d4a13dec97c79db7428629f953c",
+            "h1": "# Tesla（特斯拉，NASDAQ：TSLA）公司调研：汽车现金基础、储能交付与自主机器商业化"
+          }
+        },
+        {
+          "ticker": "HYMTF",
+          "name": "现代汽车",
+          "role": "Boston Dynamics相关股权与制造应用，非全部集团权益",
+          "coverage": {
+            "name": "现代汽车",
+            "indexed": false,
+            "status": "未登记无正式报告",
+            "otc": true,
+            "path": null
+          }
+        },
+        {
+          "ticker": "NVDA",
+          "name": "英伟达",
+          "role": "机器人计算/仿真平台，间接映射",
+          "coverage": {
+            "name": "英伟达",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\NVDA_NVIDIA_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 40477,
+            "sha256": "6eefe460e7ed89ef25242724ccd00b0b5f0af456ab3009883075d5a070b902c2",
+            "h1": "# NVIDIA（英伟达，NASDAQ：NVDA）公司调研"
+          }
+        }
+      ],
+      "thesis": "若跨场景可靠性与任务回报成立，可形成新设备类别。",
+      "condition": "2030生产用途基准仅12万台，总双足26万台；不把目标产能当收入，NVDA不是本体厂商。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\工业自动化_机器人_感知\\行业调研_人形机器人与关键执行部件_2026-09-18.md",
+      "industry_sha256": "92cd55fb59abb21cffe1b430a82c5529e3001d7f073b7bc1c64a7d6bff326724"
+    },
+    {
+      "rank": 19,
+      "industry": "数据平台、数据库与AI数据软件",
+      "group": "平台型持续增长",
+      "base_2026_B": 181.0,
+      "target_B": 237.8,
+      "target_year": 2028,
+      "cagr": 0.14621645193921928,
+      "boundary": "DBMS加独立集成治理的扩展池",
+      "companies": [
+        {
+          "ticker": "MSFT",
+          "name": "微软",
+          "role": "Azure数据库/Fabric",
+          "coverage": {
+            "name": "微软",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\MSFT_微软_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 42204,
+            "sha256": "f2fc74b5a4ea581f34841012d30bca70e9bd4d19fc8bb66996465c8832a0aaed",
+            "h1": "# 微软（Microsoft，NASDAQ：MSFT）公司调研：从企业软件现金体系到 AI 工作与计算平台"
+          }
+        },
+        {
+          "ticker": "AMZN",
+          "name": "亚马逊",
+          "role": "AWS数据库与数据平台",
+          "coverage": {
+            "name": "亚马逊",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\AMZN_Amazon_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 47575,
+            "sha256": "4200b5ea353c4186125d0ed99a2d3b886a2e3fe8dd6bb31cc1b5fcd4b1c6b9cc",
+            "h1": "# Amazon（亚马逊，NASDAQ：AMZN）公司调研：平台增长、资本回报与第二轮业务重构"
+          }
+        },
+        {
+          "ticker": "ORCL",
+          "name": "甲骨文",
+          "role": "数据库与云平台",
+          "coverage": {
+            "name": "甲骨文",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\ORCL_Oracle_Corporation_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 38501,
+            "sha256": "214dbd7580b00796c9b9177e35963d715d116e1581ef43174e936bfbd693152b",
+            "h1": "# Oracle Corporation（ORCL）公司调研：企业软件现金基础、AI算力扩张与资本责任的重构"
+          }
+        }
+      ],
+      "thesis": "AI生产应用需要可用数据、权限治理和持续执行。",
+      "condition": "增速低于早期硬件，但平台分销和持续收入较强；开源和FinOps可压低单位账单。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI应用_软件_数据平台\\行业调研_数据平台、数据库与AI数据软件_2026-09-18.md",
+      "industry_sha256": "c908e1de16f989c92e2f1f719de5cbcd654fdbfe79db50a2cf7128f32b42b022"
+    },
+    {
+      "rank": 20,
+      "industry": "云与AI应用可观测性、运维自动化",
+      "group": "平台型持续增长",
+      "base_2026_B": 17.4,
+      "target_B": 34.7,
+      "target_year": 2030,
+      "cagr": 0.18835187740178494,
+      "boundary": "可观测性及运维自动化去重工具支出",
+      "companies": [
+        {
+          "ticker": "DDOG",
+          "name": "Datadog",
+          "role": "云原生可观测性",
+          "coverage": {
+            "name": "Datadog",
+            "indexed": true,
+            "status": "已登记无正式报告",
+            "otc": false,
+            "path": null
+          }
+        },
+        {
+          "ticker": "DT",
+          "name": "Dynatrace",
+          "role": "企业可观测性与自动化",
+          "coverage": {
+            "name": "Dynatrace",
+            "indexed": false,
+            "status": "未登记无正式报告",
+            "otc": false,
+            "path": null
+          }
+        },
+        {
+          "ticker": "CSCO",
+          "name": "思科",
+          "role": "Splunk/AppDynamics平台",
+          "coverage": {
+            "name": "思科",
+            "indexed": true,
+            "status": "有正式报告",
+            "otc": false,
+            "path": "D:\\investment\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\CSCO_Cisco_Systems_公司调研_2026-09-07.md",
+            "date": "2026-09-07",
+            "characters": 48907,
+            "sha256": "2af13b21ecdcb03d92cb90cfc4601e705f2f812419689615f322855d82769411",
+            "h1": "# Cisco Systems（思科，NASDAQ：CSCO）公司调研：网络平台扩张、光学价值迁移与增长的资金代价"
+          }
+        }
+      ],
+      "thesis": "Agent与生产AI增加诊断、质量评估和可靠性需求。",
+      "condition": "开源、过滤降本与平台捆绑；工作量增长不自动转化为账单增长。",
+      "industry_path": "D:\\investment\\基本面\\行业调研\\结果\\AI应用_软件_数据平台\\行业调研_云与AI应用可观测性、运维自动化_2026-09-18.md",
+      "industry_sha256": "432e269651778a3b677838e2d546b47da9b057c57a00db5709b0cd914bc78012"
+    }
+  ],
+  "companies": {
+    "SKHY": {
+      "name": "SK海力士",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SKHY_SK_hynix_Inc_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 36207,
+      "sha256": "8ba01a95e9bc225a780f7b8ddf9897b88c9d7e397f5245d1afef28e06b11e2f2",
+      "h1": "# SK 海力士 SK hynix Inc.（NASDAQ：SKHY；KRX：000660）公司调研"
+    },
+    "MU": {
+      "name": "美光",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\MU_Micron_Technology_美光科技_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 38944,
+      "sha256": "4883089314c3d3ba9afc7628ef78f9de0927adc04a6fa811c0def2633c2c386e",
+      "h1": "# 美光科技（Micron Technology，NASDAQ：MU）公司调研"
+    },
+    "AMAT": {
+      "name": "应用材料",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\晶圆制造_前道设备\\AMAT_Applied_Materials_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 32022,
+      "sha256": "937b59ace996c3555d38867e1dd503531473dff361fb3af61c0fb73c9ecb4abf",
+      "h1": "# 应用材料（Applied Materials，NASDAQ：AMAT）公司调研"
+    },
+    "AVGO": {
+      "name": "博通",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AVGO_Broadcom_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 40029,
+      "sha256": "8372897d84df354a965824472470408ba347b42233795e20b1dda02f46f951e7",
+      "h1": "# Broadcom（博通，NASDAQ：AVGO）公司调研：定制计算、网络控制权与扩张的资本责任"
+    },
+    "MRVL": {
+      "name": "Marvell",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\MRVL_Marvell_Technology_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 33948,
+      "sha256": "9b19bdec81d902f6f1d3814156dcd02f9dada4a6415c62861a45d586abb102aa",
+      "h1": "# Marvell Technology（MRVL）公司调研：从连接芯片到定制计算与共享内存的价值捕获"
+    },
+    "GOOGL": {
+      "name": "Alphabet",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\GOOGL_Alphabet_Inc_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 48720,
+      "sha256": "226311294a6a9ba5dd7442547d07beabe16ddb1e78fd8c80f796460904a37835",
+      "h1": "# Alphabet（GOOGL）公司调研：搜索入口、AI计算平台与资本责任的重构"
+    },
+    "NVDA": {
+      "name": "英伟达",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\NVDA_NVIDIA_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 40477,
+      "sha256": "6eefe460e7ed89ef25242724ccd00b0b5f0af456ab3009883075d5a070b902c2",
+      "h1": "# NVIDIA（英伟达，NASDAQ：NVDA）公司调研"
+    },
+    "AMD": {
+      "name": "AMD",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AMD_Advanced_Micro_Devices_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 47387,
+      "sha256": "b4158f0b8556ba19855976f861ede1ae8e9a08652fd192d8b37662338f92ea12",
+      "h1": "# AMD（NASDAQ：AMD）公司调研：从处理器份额增长走向整柜 AI，价值捕获与资本负担同步变化"
+    },
+    "CBRS": {
+      "name": "Cerebras",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\CBRS_Cerebras_Systems_Inc_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 38354,
+      "sha256": "354c50de4733054d66622de2ee6abebc6e4fd368d6c964df0c0143f324c06a45",
+      "h1": "# Cerebras Systems Inc.（NASDAQ：CBRS）公司调研：晶圆级计算的商业验证、推理服务扩张与交付资本约束"
+    },
+    "MSFT": {
+      "name": "微软",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\MSFT_微软_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 42204,
+      "sha256": "f2fc74b5a4ea581f34841012d30bca70e9bd4d19fc8bb66996465c8832a0aaed",
+      "h1": "# 微软（Microsoft，NASDAQ：MSFT）公司调研：从企业软件现金体系到 AI 工作与计算平台"
+    },
+    "NOW": {
+      "name": "ServiceNow",
+      "indexed": true,
+      "status": "已登记无正式报告",
+      "otc": false,
+      "path": null
+    },
+    "CRM": {
+      "name": "Salesforce",
+      "indexed": false,
+      "status": "未登记无正式报告",
+      "otc": false,
+      "path": null
+    },
+    "TSM": {
+      "name": "台积电",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\晶圆制造_前道设备\\TSM_台积电_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 37265,
+      "sha256": "46740f9f83708233d745e6fca7ab1cf3f0a6b09be39781716334e9d88aa71e61",
+      "h1": "# 台积电（TSM / TWSE：2330）公司调研：先进制造控制力、系统集成与资本回报"
+    },
+    "ASX": {
+      "name": "日月光投控",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\封测_检测_计量_光罩\\ASX_ASE_Technology_Holding_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 36101,
+      "sha256": "806e6fb07d91dd8bfaa42d831eeb845233e3346b0bde873e47a7af911d940208",
+      "h1": "# 日月光投资控股 ASE Technology Holding（NYSE：ASX；TWSE：3711）公司调研"
+    },
+    "AMKR": {
+      "name": "Amkor",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\封测_检测_计量_光罩\\AMKR_Amkor_Technology_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 33497,
+      "sha256": "e5329bed083f44ce294bda71a1e64367996e06d6bc0ac0006de7e7ed4511db35",
+      "h1": "# Amkor Technology（AMKR）公司调研：从手机封装规模商走向计算封装与美国制造平台"
+    },
+    "INTC": {
+      "name": "英特尔",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\INTC_Intel_Corporation_英特尔_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 40850,
+      "sha256": "54664034e1d4d515626163510b2f314acc387adf1d4a380fc432483447b1593c",
+      "h1": "# 英特尔（Intel Corporation，NASDAQ：INTC）公司调研：CPU复苏、制造再投资与外部商业化的三重检验"
+    },
+    "ANET": {
+      "name": "Arista",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\ANET_Arista_Networks_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 41389,
+      "sha256": "48f9e5af71b8f8dfa1ac7c74f4da036d0866ac6d2331e3e29146218f9de7e044",
+      "h1": "# Arista Networks（ANET）公司调研：AI 网络扩张、架构压缩与软件价值的重新分配"
+    },
+    "COHR": {
+      "name": "Coherent",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\COHR_Coherent_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 38068,
+      "sha256": "6c1b40a2cd6b4cabef1cb2cdb8c07f8b4a931b7443a9cd5b16de2f0853401b0c",
+      "h1": "# Coherent（COHR）公司调研：从光子器件制造商到AI互联平台，增长能否变成股东现金"
+    },
+    "LITE": {
+      "name": "Lumentum",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\LITE_Lumentum_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 38836,
+      "sha256": "d599f00158a296d7cba102826235209243d93c9570b329255dc52cbd4315e138",
+      "h1": "# Lumentum（NASDAQ：LITE）公司调研：光源、光模块与光交换的扩张，以及股东能留下多少现金"
+    },
+    "FN": {
+      "name": "Fabrinet",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\FN_Fabrinet_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 34287,
+      "sha256": "82968f1ca5db509153726ea0150cb86d8439d847b885978234d14a098f2e377e",
+      "h1": "# Fabrinet（NYSE：FN）公司调研：增长重心迁移、精密制造价值与现金再投资约束"
+    },
+    "VRT": {
+      "name": "Vertiv",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\热管理_流体_水处理\\VRT_Vertiv_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 46995,
+      "sha256": "88ed91f20f95b42a0a7bf5758e627fd73199c89a0f9f00a72801714a06da3181",
+      "h1": "# Vertiv（维谛技术，NYSE：VRT）公司调研：从关键设备到可交付的电力与热管理系统"
+    },
+    "NVT": {
+      "name": "nVent",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\配电_电源系统_电气设备\\NVT_nVent_Electric_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 39347,
+      "sha256": "8edffddc6265dda1feac8f778335c1413146e8020b980cae0218319d464fac7c",
+      "h1": "# nVent Electric（NYSE：NVT）公司调研：液冷交付、配电整合与资本回报的再检验"
+    },
+    "SBGSY": {
+      "name": "施耐德",
+      "indexed": true,
+      "status": "已登记无正式报告",
+      "otc": true,
+      "path": null
+    },
+    "CRWV": {
+      "name": "CoreWeave",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\CRWV_CoreWeave_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 33946,
+      "sha256": "575fd6135202c54a298e06417d852a56d8128d2cdb1f4d3d23977f646d7e0a66",
+      "h1": "# CoreWeave（NASDAQ：CRWV）公司调研：交付能力、推理转型与资本回报的交叉检验"
+    },
+    "NBIS": {
+      "name": "Nebius",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\NBIS_Nebius_Group_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 37149,
+      "sha256": "b7b4fb2768bd59876c59c1f0c44c285004d99250247519ff8d54c66adc1ec307",
+      "h1": "# Nebius Group（NASDAQ：NBIS）公司调研"
+    },
+    "IREN": {
+      "name": "IREN",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\IREN_IREN_Limited_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 42459,
+      "sha256": "f9614d3236d9f538fc441fd46d4ba6f9abd7b8fe6c740cb770d28c0dd131cdb2",
+      "h1": "# IREN Limited（NASDAQ：IREN）公司调研：已进入客户交付阶段的 AI 云转型，与仍待完成的资本回收"
+    },
+    "MTSI": {
+      "name": "MACOM",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\MTSI_MACOM_Technology_Solutions_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 43300,
+      "sha256": "1963b4580c817bddfefd10fd6bc1fda6281b155f6ebfd007a620781974681888",
+      "h1": "# MACOM Technology Solutions（MTSI）公司调研：高速模拟与射频平台的扩张、价值捕获和制造约束"
+    },
+    "ALAB": {
+      "name": "Astera Labs",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\ALAB_AsteraLabs_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 39418,
+      "sha256": "72ca1cfa29e8ee4bf8ec12e83a424599da83fc8c397971a6d884c3c1812cdeb9",
+      "h1": "# Astera Labs（NASDAQ：ALAB）公司调研：从信号恢复走向AI计算互联，增长与价值归属的再判断"
+    },
+    "RMBS": {
+      "name": "Rambus",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\RMBS_Rambus_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 34353,
+      "sha256": "b69d129a0994f9fb385bd6e6197f3837536c9a760b8c0a419704fa214fa45a13",
+      "h1": "# Rambus（NASDAQ：RMBS）公司调研：接口芯片扩张、授权现金流与内存架构变迁"
+    },
+    "ETN": {
+      "name": "伊顿",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\配电_电源系统_电气设备\\ETN_Eaton_Corporation_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 36522,
+      "sha256": "1f70eff0fe28e73337e5dce3c0a3a67c4784f726d09862d7a8417801b26cea06",
+      "h1": "# 伊顿 Eaton Corporation plc（NYSE：ETN）公司调研：交付能力、架构迁移与资本回报"
+    },
+    "IFNNY": {
+      "name": "英飞凌",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": true,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\IFNNY_Infineon_Technologies_AG_英飞凌科技_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 38396,
+      "sha256": "8fbfdd0c36299328f596d0903e3b9a8c046c41c775f9d6de0fdcf60081a4d82b",
+      "h1": "# 英飞凌科技（Infineon Technologies AG，IFNNY）公司调研"
+    },
+    "TTMI": {
+      "name": "TTM Technologies",
+      "indexed": true,
+      "status": "已登记无正式报告",
+      "otc": false,
+      "path": null
+    },
+    "PCRHY": {
+      "name": "松下",
+      "indexed": false,
+      "status": "未登记无正式报告",
+      "otc": true,
+      "path": null
+    },
+    "ASGLY": {
+      "name": "AGC",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": true,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\ASGLY_AGC_Inc_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 40957,
+      "sha256": "fae05c4429fb4ec48c93b5ab4c21a5499510accd5b430f310948aed439e90f33",
+      "h1": "# AGC Inc.（旭硝子，ASGLY / 东京证券交易所 5201）公司调研"
+    },
+    "SPCX": {
+      "name": "SpaceX",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\SPCX_SpaceX_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 40771,
+      "sha256": "5954db3707ed114580aa53858f94c182075098693cf544bedfb17e9af25cddde",
+      "h1": "# SpaceX（Space Exploration Technologies Corp.，NASDAQ：SPCX）公司调研"
+    },
+    "ASTS": {
+      "name": "AST SpaceMobile",
+      "indexed": true,
+      "status": "已登记无正式报告",
+      "otc": false,
+      "path": null
+    },
+    "AMZN": {
+      "name": "亚马逊",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\AMZN_Amazon_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 47575,
+      "sha256": "4200b5ea353c4186125d0ed99a2d3b886a2e3fe8dd6bb31cc1b5fcd4b1c6b9cc",
+      "h1": "# Amazon（亚马逊，NASDAQ：AMZN）公司调研：平台增长、资本回报与第二轮业务重构"
+    },
+    "TSLA": {
+      "name": "特斯拉",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\TSLA_Tesla_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 44084,
+      "sha256": "ecf126edeae7519638b6675bbe68bddbebc54d4a13dec97c79db7428629f953c",
+      "h1": "# Tesla（特斯拉，NASDAQ：TSLA）公司调研：汽车现金基础、储能交付与自主机器商业化"
+    },
+    "HYMTF": {
+      "name": "现代汽车",
+      "indexed": false,
+      "status": "未登记无正式报告",
+      "otc": true,
+      "path": null
+    },
+    "ORCL": {
+      "name": "甲骨文",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\ORCL_Oracle_Corporation_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 38501,
+      "sha256": "214dbd7580b00796c9b9177e35963d715d116e1581ef43174e936bfbd693152b",
+      "h1": "# Oracle Corporation（ORCL）公司调研：企业软件现金基础、AI算力扩张与资本责任的重构"
+    },
+    "DDOG": {
+      "name": "Datadog",
+      "indexed": true,
+      "status": "已登记无正式报告",
+      "otc": false,
+      "path": null
+    },
+    "DT": {
+      "name": "Dynatrace",
+      "indexed": false,
+      "status": "未登记无正式报告",
+      "otc": false,
+      "path": null
+    },
+    "CSCO": {
+      "name": "思科",
+      "indexed": true,
+      "status": "有正式报告",
+      "otc": false,
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\CSCO_Cisco_Systems_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "characters": 48907,
+      "sha256": "2af13b21ecdcb03d92cb90cfc4601e705f2f812419689615f322855d82769411",
+      "h1": "# Cisco Systems（思科，NASDAQ：CSCO）公司调研：网络平台扩张、光学价值迁移与增长的资金代价"
+    }
+  },
+  "web_sources": [
+    [
+      "SK海力士已在NASDAQ上市",
+      "https://news.skhynix.com/en/skhynix-lists-adrs-on-nasdaq/"
+    ],
+    [
+      "Cerebras CBRS上市公告",
+      "https://www.cerebras.ai/press-release/cerebras-systems-announces-closing-of-initial-public-offering"
+    ],
+    [
+      "SpaceX 2026Q2 SEC报告",
+      "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm"
+    ],
+    [
+      "三星上市信息，不能默认常规美股可买",
+      "https://www.samsung.com/global/ir/stock-information/listing-Info/"
+    ],
+    [
+      "应用材料HBM制造与封装角色",
+      "https://www.appliedmaterials.com/us/en/newsroom/blogs/tackling-key-hbm-and-advanced-packaging-bottlenecks-for-ai-era.html"
+    ],
+    [
+      "MACOM LPO模拟芯片角色",
+      "https://www.macom.com/pure-drive-linear-architecture"
+    ],
+    [
+      "Astera Leo CXL产品",
+      "https://www.asteralabs.com/products/leo-cxl-smart-memory-controllers/"
+    ],
+    [
+      "Micron CXL模组",
+      "https://www.micron.com/about/press/news/micron-first-to-achieve-qualification-sample-milestone"
+    ],
+    [
+      "Rambus CXL接口IP",
+      "https://www.rambus.com/interface-ip/cxl/cxl2-controller/"
+    ],
+    [
+      "英飞凌800V产品角色及IFNNY身份",
+      "https://www.infineon.com/press-release/2026/infxx202605-092"
+    ],
+    [
+      "施耐德SBGSY存托凭证",
+      "https://depositaryreceipts.citi.com/adr/guides/pgm_d.aspx?cusip=80687P106&pageId=23&subpageID=104&typeDisplay=A"
+    ],
+    [
+      "松下MEGTRON用于AI服务器的扩产",
+      "https://news.panasonic.com/global/press/en260304-5"
+    ],
+    [
+      "松下PCRHY非保荐ADR新项目，勿误用旧PCRFY",
+      "https://api.markitdigital.com/jpmadr-public/v1/cms/document?cmsId=8770c3ecfd4c4bfaa071f3f01ee22388&sequenceNo=8"
+    ],
+    [
+      "松下PCRHY当前OTC存托项目",
+      "https://depositaryreceipts.citi.com/adr/guides/pgm_dispCerts.aspx?cusip=69832A304&pageId=15&subpageID=188"
+    ],
+    [
+      "AGC ASGLY存托凭证",
+      "https://depositaryreceipts.citi.com/adr/guides/pgm_dispdsfhist.aspx?cusip=00109C103&pageId=15&subpageID=192"
+    ],
+    [
+      "TTM高端AI PCB",
+      "https://www.ttm.com/en/blog/powering-the-ai-revolution"
+    ],
+    [
+      "现代汽车Boston Dynamics相关商业化",
+      "https://org1.hyundai.com/content/hyundai/worldwide/en/newsroom/detail/0000001260.html"
+    ],
+    [
+      "HYMTF美国OTC市场标识，不能保证特定券商可成交",
+      "https://www.investing.com/equities/hyundai-motor-drc"
+    ],
+    [
+      "Dynatrace官方投资者关系",
+      "https://ir.dynatrace.com/"
+    ],
+    [
+      "Salesforce官方AI工作流与CRM上市身份",
+      "https://investor.salesforce.com/news/news-details/2026/Salesforce-Provides-Fiscal-2027-Disaggregated-Revenue-Reporting-Update/default.aspx"
+    ]
+  ]
+}

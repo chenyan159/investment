@@ -1,0 +1,159 @@
+# 公司收入传导与价值传导评估：Vistance Networks（VISN）
+
+报告日期：2026-06-12  
+NTM 主窗口：2026-06-12 至 2027-06-11，近似覆盖 2026Q2 剩余期间、2026H2 和 2027Q1/Q2 早段。  
+资料边界：使用 `公司调研/` 和 `行业调研/` 中 VISN、宽带接入、DOCSIS 4.0、PON、Wi-Fi 7、AI 网络边界相关资料，并用 Vistance/SEC/Belden/CableLabs/Dell'Oro/IDC 等公开来源核验；未使用、引用或继承 `特征量化/`、Signals、回归、模型比较或全公司排序结论。  
+方法边界：本报告只评估行业需求如何传导为 VISN 的 NTM 收入、利润、现金流和经营质量，不输出投资评级、目标价、股价区间、估值倍数判断，也不把金融市场价格作为经营传导证据。  
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口下 VISN 可确认经营收入和 adjusted EBITDA。由于 RUCKUS 已签约出售给 Belden，报告同时列出两条口径：`持续核心 Aurora` 和 `报告口径含 RUCKUS 交割前桥接收入`。RUCKUS 出售 proceeds 是现金/资本配置事件，不是交割后的持续经营收入。
+- 当前收入基准、指引和 run-rate：2026Q1 VISN net sales `$471.8M`，同比 `+21.6%`；Aurora `$298.4M`，同比 `+32.6%`；RUCKUS `$173.4M`，同比 `+6.3%`，Core RUCKUS `+13.7%`；Core adjusted EBITDA `$87.3M`，margin `18.5%`。管理层给出 2026 Aurora standalone adjusted EBITDA `$225M-$250M`；RUCKUS 交易价 `$1.846B` cash，预计 2026H2 交割，税费后 proceeds 约 `$1.7B`。
+- 重要产品/业务线：Aurora DOCSIS 4.0/HFC/DAA/RPD/节点/放大器；Aurora vCCAP/vBNG/Network Intelligence/服务保障软件；Aurora legacy access/PON/维护收入；RUCKUS Wi-Fi 7 AP/ICX/RUCKUS One/RUCKUS AI 交割前桥接业务；已出售 CCS、OneCell、OWN/DAS 和 AI 数据中心后端网络产品排除。
+- NTM 公司收入四情景：悲观为持续核心 Aurora `$1.00B-$1.15B`、报告口径含 RUCKUS 桥接 `$1.15B-$1.45B`；基准为 Aurora `$1.20B-$1.38B`、报告口径 `$1.50B-$1.78B`；乐观为 Aurora `$1.40B-$1.65B`、报告口径 `$1.78B-$2.15B`；极度乐观为 Aurora `$1.80B-$2.25B`、若 RUCKUS 交易失败或显著延迟则报告口径上限 `$2.20B-$3.00B`。极度乐观经证据校准后只作为乐观上限/附录跟踪。
+- 利润或 EBITDA 四情景：基准下 Aurora adjusted EBITDA 约 `$225M-$250M`，含 RUCKUS 桥接 Core adjusted EBITDA 约 `$285M-$340M`；悲观为 `$180M-$260M`；乐观为 `$360M-$470M`；极度乐观为 `$430M-$600M+`，但要求需求、份额、软件 mix、价格、成本和执行同时突破，可信度低。
+- 最大传导瓶颈：不是行业是否存在 DOCSIS 4.0 或 Wi-Fi 7 需求，而是 VISN 能否把需求转成可确认 Aurora 收入。具体瓶颈是非 Comcast MSO 订单、unified node/amplifier 认证和量产、vCCAP/software attach、硬件价格压力、现场施工/验收以及 RUCKUS 交割时间。
+- 最大利润率变量：Aurora 的利润质量取决于 DOCSIS 4.0 硬件价格压力能否被规模效应、vCCAP/license、软件服务、R&D/SG&A 杠杆和高利用率抵消。RUCKUS 是高质量业务，但交易完成后不再留存。
+- 最大现金流变量：2026Q1 free cash flow 为负，受交易、激励支付和营运资金影响；NTM 现金流修复取决于存货/应收/应付节奏、RUCKUS proceeds 到账和特别分配/回购/并购安排。RUCKUS proceeds 不能替代 Aurora 持续经营现金流。
+- 可信度：基准为中高，乐观为中，悲观为中，极度乐观为低。证据最强的是收入表、分部收入、RUCKUS 正式出售协议、Aurora 2026 EBITDA 指引和 DOCSIS 4.0 已商用出货；证据最弱的是非 Comcast 多客户放量、软件 attach 非线性上修和 RUCKUS 交易失败/延迟带来的极度乐观收入。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Aurora DOCSIS 4.0/HFC/DAA/RPD/节点/放大器 | Aurora 2026Q1 `$298.4M`，2025 全年 `$1.233B`；DOCSIS 4.0 子项未单独披露，模型估算为 Aurora 增量主力 | Aurora 为 2026Q1 公司收入 `63.2%`；子项占 Aurora 的主体但无法精确拆分 | 留存核心业务，决定 RUCKUS 交割后 VISN 经营质量 | A：Aurora 分部收入/EBITDA；B/C：管理层产品出货、客户认证、子项拆分估算 | 进入基准；子项估算保守折扣，不能把全部 MSO capex 当 VISN 收入 | 3GHz/6GHz HFC、更多国际 MSO 采用为远期期权 |
+| Aurora vCCAP/vBNG/Network Intelligence/服务保障 | 未单独披露；包含在 Aurora `$298.4M` Q1 收入内 | 无法可靠量化，估计小于硬件，但利润贡献高 | 高毛利/高黏性变量，影响 Aurora margin 和经营质量 | B/C：产品线存在、DAA/DOCSIS 4.0 绑定；缺正式 ARR/分项收入 | 小比例进入基准；乐观需要 license attach 或客户项目证据 | AI AIOps/边缘自动化只能作为可选上修 |
+| Aurora legacy access/PON/维护/传统视频与传输 | 包含在 Aurora；传统业务未单独披露 | 无法可靠量化 | 稳定底座和抵消项，可能拖累 mix | A：Aurora 分部收入；C：子项拆分估算 | 进入基准但按低增长/维护处理 | PON/Node PON 若获得新客户可跟踪，不进入极度乐观主因 |
+| RUCKUS Wi-Fi 7 AP/ICX/RUCKUS One/RUCKUS AI | 2026Q1 `$173.4M`，2025 全年 `$698.9M`；Belden 交易材料口径约 `$687M` | 2026Q1 公司收入 `36.8%` | 交割前收入和 EBITDA 桥接；交割后变为现金 proceeds，不是持续收入 | A：分部收入；B：正式出售协议和预计 close 时间 | 仅按交割前桥接收入进入 NTM；持续核心基准排除 | 若交易失败/显著延迟，移入附录重估 |
+| 已出售 CCS 数据中心布线/连接器/铜缆/光纤 | 2026-01 已出售给 Amphenol | VISN 未来收入 `0%` | 排除项；避免把历史 CommScope AI 数据中心相关性错归 VISN | A：交易完成公告 | 排除 | 收益归 Amphenol，不归 VISN |
+| AI 数据中心后端网络：800G/1.6T、switch ASIC、GPU NIC/DPU、CPO | VISN 当前收入 `0` | `0%` | 排除项 | E：只有主题相关性，无 VISN 产品和收入路径 | 不进入 NTM | 只作为误判风险说明 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池相对当前需求锚的强弱，不评估 VISN 份额、收入确认、利润率或公司汇总。需求单位采用最能解释产品的指标：DOCSIS 4.0 用 DAA/vCMTS/RPD/节点/放大器窄口径设备与软件支出，Wi-Fi 7 用企业 AP/控制器/云管软件支出，Aurora legacy/PON 用运营商接入维护与 XGS-PON/PON 替代压力。绝对变化为需求池变化，不等于 VISN 收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Aurora DOCSIS 4.0/HFC/DAA/RPD/节点/放大器 | Dell'Oro 披露 2025 DOCSIS infrastructure 支出同比 `-21%`、Remote PHY `-47%`，但预计 2026 随 DAA/DOCSIS 4.0 显著回升；CableLabs 2026 指出 D4.0 从互通验证进入部署扩张；Comcast/CommScope FDX amplifiers 已在 Comcast 每个市场 live | 全球窄口径需求约 `$0.6B-$1.1B`，MSO capex 延后、外场施工慢、HFC 转 FTTH | 全球需求约 `$1.1B-$2.1B`，2026 从低谷修复，Comcast 等大客户按当前节奏推进 | 全球需求约 `$2.1B-$3.2B`，多家 MSO 同时加速 DAA/RPD/节点/放大器 | 全球需求约 `$3.2B-$4.5B`，DOCSIS 4.0 成为 2026-2027 cable upgrade 主采购 | 相对 2025 低谷从小幅修复到数倍放大；极度乐观需新增预算和施工能力同时释放 | 基准符合当前行业预期；乐观需 MSO capex 明显上修；极度乐观高于当前预期 | 正向：CableLabs 14-16Gbps 互通、Comcast 实网、Dell'Oro 2026 回升；反证：FTTH/PON 替代、宽带用户流失、施工/认证慢 |
+| Aurora vCCAP/vBNG/Network Intelligence/服务保障 | DAA/DOCSIS 4.0 要求 virtualized headend、RPD 管理、service assurance 和 automation；Vistance 产品页显示 vCCAP Evo、HLX Domain Manager、DAA nodes | 需求跟随硬件延期，license attach 低，传统 chassis/自研路径压制 | 随 RPD/DAA 正常部署，软件与服务保障需求 `+10%-20%` | 多家 MSO 将 vCCAP、BNG、automation 与 D4.0 绑定，需求 `+25%-50%` | 软件成为运营商接入网络升级主预算项，需求 `+50%-100%` | 绝对金额无法可靠量化，方向从低双位数到翻倍；需避免重复计入硬件项目总额 | 基准符合 DAA 正常 attach；乐观要求公司特定 license/客户证据 | 正向：vCCAP 是 D4.0 DAA 前提之一；反证：客户采用 Harmonic CableOS、Vecima、Casa legacy 或自研 |
+| Aurora legacy access/PON/维护/传统视频与传输 | 传统 HFC maintenance、PON/RFoG、视频/传输平台；行业 XGS-PON 是主流，但 Aurora 不是最强 PON 纯标的 | 传统维护收缩、客户预算转 FTTH/PON 竞争对手，需求 `-10%` 到 `-20%` | 维护/替换稳定，需求 `-5%` 到 `+5%` | 与 DAA/vCCAP 迁移捆绑，需求 `+5%` 到 `+15%` | PON/Node PON 获得新客户，但仍为辅助，需求 `+15%` 到 `+30%` | 对 Aurora 总需求主要是抵消项，绝对金额无法可靠量化 | 基准为稳定或低增；不能把广义 PON 市场全部映射到 VISN | 正向：installed base 和维护；反证：FTTH/PON 替代也可能转移到 Nokia/Calix/Adtran/Ciena |
+| RUCKUS Wi-Fi 7 AP/ICX/RUCKUS One/RUCKUS AI | Dell'Oro 2026Q1 WLAN 连续 5 个季度双位数增长，Wi-Fi 7 revenue 三位数增长，Wi-Fi 7 占 Indoor AP 出货 `37%`；IDC 2025 全年 enterprise WLAN `$10.5B`，4Q25 Wi-Fi 7 占 dependent AP revenue `39.7%` | 企业 IT 预算延后、memory 成本推高价格、Cisco/HPE/Juniper/Ubiquiti 抢份额，全球需求约 `$4.5B-$5.5B` | Wi-Fi 7 正常替换，全球企业 AP/控制器/云管需求约 `$5.5B-$8.0B` | 企业、教育、酒店、场馆、工业边缘同步升级，需求约 `$8.0B-$10.5B` | Wi-Fi 7 成为企业 AI/边缘网络入口，需求约 `$10.5B-$12.5B` | 绝对需求池从中个位数十亿美元到 `$10B+`；相对当前预期从低于到显著高于 | 业务需求基准偏强；但 VISN 收入化受 RUCKUS 出售约束 | 正向：Wi-Fi 7 渗透率仍低、AIOps、6GHz、MLO；反证：交易后不再属于 VISN 持续经营、竞争强、内存短缺 |
+| AI edge/campus optionality | Comcast/NVIDIA edge AI、企业 AI、AI PC、园区/场馆低时延连接 | 只停留营销层，不形成可量化网络采购 | 作为 DOCSIS/Wi-Fi 的二阶需求增强，不单独列基准收入 | 出现付费 edge AI/低时延服务，推动部分 D4/Wi-Fi 项目提前 | 运营商边缘推理大规模商业化，形成新增预算池 | 当前无法可靠量化；超过 NTM 的大部分属于远期期权 | 不进入 NTM 基准 | 只能作为上修解释，不得把 AI 数据中心 capex 直接映射为 VISN 收入 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断产品需求能否进入 VISN NTM 收入表，以及当前可收入化基数。公司能参与需求池不等于能确认收入；进入基准要求 A/B 级证据为主，C 级仅在产品、客户、时间表清楚时小比例纳入。RUCKUS 因签约出售，只作为交割前桥接收入；已出售 CCS 和 AI 后端网络排除。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Aurora DOCSIS 4.0/HFC/DAA/RPD/节点/放大器 | Aurora 2026Q1 `$298.4M`、2025 全年 `$1.233B`；Q1 已向大型北美 MSO 出货 ESD D4.0，unified node approved，unified amplifier testing；子项未披露 | 直接收入；面向 MSO capex | 硬件+部分 license；硬件 GM 中等，项目 mix/价格影响大 | `$650M-$780M` | `$820M-$980M` | `$1.05B-$1.30B` | `$1.45B-$1.75B` | 基准符合 Aurora run-rate 和 2026 EBITDA guide；乐观高于当前预期 | A：分部收入；B：客户/产品出货；C：子项拆分 | 是 | 已在收入表和管理层出货路径中可见；子项按保守拆分 | 进入基准，作为 Aurora 最大收入池 |
+| Aurora vCCAP/vBNG/Network Intelligence/服务保障 | 产品线与 DAA/DOCSIS 4.0 绑定，但无分项 ARR/收入 | 直接收入，附加在 DAA/RPD/运营商软件项目上 | 软件/license/服务保障，利润率高于硬件 | `$70M-$100M` | `$110M-$170M` | `$180M-$260M` | `$300M-$400M` | 基准小比例纳入；乐观需 attach 明显提高 | B/C | 是，小比例 | 产品和部署路径清楚，但金额未披露 | 进入基准但不得用行业软件 TAM 直接放大 |
+| Aurora legacy access/PON/维护/传统视频与传输 | 包含在 Aurora 分部；无正式拆分 | 直接收入，但增长属性弱 | 维护/传统硬件，利润率中低，可能抵消成长 | `$180M-$230M` | `$220M-$280M` | `$250M-$330M` | `$330M-$420M` | 基准为稳定/低增；极度乐观不作为公司情景核心 | A/C | 是，低权重 | installed base、维护和 PON/迁移需求 | 进入基准，主要作为底座和抵消项 |
+| RUCKUS Wi-Fi 7/ICX/RUCKUS One/RUCKUS AI | 2026Q1 `$173.4M`；2025 全年 `$698.9M`；已签约出售给 Belden，预计 2026H2 close | 交割前直接收入；交割后为现金 proceeds，不再经营 | 业务质量好，2026Q1 adjusted EBITDA margin `21.3%`，但非持续留存 | `$150M-$250M` | `$300M-$450M` | `$450M-$650M` | `$700M-$900M` | 基准只反映交割前桥接；交割越晚报告收入越高但不代表核心经营更强 | A：分部收入；B：出售协议 | 桥接口径进入；持续核心排除 | 正式出售协议决定收入截断；需求强不能改变持续口径 | NTM 报告口径桥接，交割后移出持续收入 |
+| 已出售 CCS | 2026-01-12 完成出售给 Amphenol | 历史相关，未来 VISN 0 | 不归 VISN | `0` | `0` | `0` | `0` | 排除 | A | 否 | 已出售 | 不进入 NTM |
+| AI 后端网络/800G/1.6T/CPO/GPU NIC | 无 VISN 产品/收入 | 只有主题相关性 | 不适用 | `0` | `0` | `0` | `0` | 排除 | E | 否 | 无客户、产品、交付、收入确认路径 | 不进入 NTM；只作误判风险 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第一步需求和第二步收入基数出发，判断每个重要产品在 NTM 内可为 VISN 贡献的收入和利润。利润贡献优先使用 adjusted EBITDA 或 EBITDA-like 经营贡献，因为 GAAP 净利润受 CCS 出售收益、税项、交易费用、摊销和特别分配时点严重扰动。表内数字为 NTM 经营贡献区间，不是估值倍数。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Aurora DOCSIS 4.0/HFC/DAA/RPD/节点/放大器 | 悲观 | `$650M-$780M` | `$75M-$115M` | 下降，硬件 price/mix 和低利用率压制 | 低于当前预期 | 需求仍有，但 MSO capex/施工延后 | 保留 | Comcast rollout 放缓、非 Comcast 订单不足、FTTH/PON 替代、price down |
+| Aurora DOCSIS 4.0/HFC/DAA/RPD/节点/放大器 | 基准 | `$820M-$980M` | `$135M-$180M` | 稳定到小幅改善 | 符合当前 run-rate 和 Aurora guide | Q1 Aurora +32.6%，ESD 出货，unified node approved | 保留 | 子项拆分未披露，不能把全部行业需求归公司 |
+| Aurora DOCSIS 4.0/HFC/DAA/RPD/节点/放大器 | 乐观 | `$1.05B-$1.30B` | `$190M-$260M` | 改善，规模和 mix 抵消价格 | 高于当前预期 | D4.0 第二波 MSO、unified products、RPD/DAA 放量 | 保留 | 需要客户、产品、交付窗口和份额证据 |
+| Aurora DOCSIS 4.0/HFC/DAA/RPD/节点/放大器 | 极度乐观 | `$1.45B-$1.75B` | `$300M-$420M` | 明显改善但需高利用率 | 远高于当前预期 | 多 Tier-1/Tier-2 MSO 同步采用且供给紧 | 下移为乐观上限 | 硬件放量不必然带来高利润；缺 A/B 级多客户订单 |
+| Aurora vCCAP/vBNG/Network Intelligence/服务保障 | 悲观 | `$70M-$100M` | `$25M-$45M` | 稳定但规模小 | 低于预期 | 软件随硬件延期 | 保留 | 客户采用 Harmonic/Vecima/自研，license attach 低 |
+| Aurora vCCAP/vBNG/Network Intelligence/服务保障 | 基准 | `$110M-$170M` | `$50M-$85M` | 改善，软件 mix 支撑 | 符合当前预期 | vCCAP Evo/DAA/HLX 与 D4.0 绑定 | 保留 | ARR/客户金额未披露 |
+| Aurora vCCAP/vBNG/Network Intelligence/服务保障 | 乐观 | `$180M-$260M` | `$95M-$150M` | 明显改善 | 高于预期 | vCCAP/automation 与大型 MSO 项目绑定 | 保留 | 需 license attach 和交付确认 |
+| Aurora vCCAP/vBNG/Network Intelligence/服务保障 | 极度乐观 | `$300M-$400M` | `$180M-$260M` | 高毛利显著扩张 | 远高于预期 | 软件成为接入升级主预算项 | 下移为乐观上限 | 无正式 ARR/backlog，不得直接上移公司基准 |
+| Aurora legacy access/PON/维护/传统视频与传输 | 悲观 | `$180M-$230M` | `$20M-$40M` | 下降 | 低于预期 | legacy 收缩、客户迁移 | 保留 | 传统业务下滑只在本层处理，不重复压低 DOCSIS 需求 |
+| Aurora legacy access/PON/维护/传统视频与传输 | 基准 | `$220M-$280M` | `$35M-$60M` | 稳定 | 符合预期 | installed base、维护、低增长替换 | 保留 | 无法可靠量化拆分 |
+| Aurora legacy access/PON/维护/传统视频与传输 | 乐观 | `$250M-$330M` | `$50M-$80M` | 小幅改善 | 小幅高于预期 | 与 DAA/vCCAP 迁移捆绑 | 保留但低权重 | 不是成长核心 |
+| Aurora legacy access/PON/维护/传统视频与传输 | 极度乐观 | `$330M-$420M` | `$75M-$120M` | 改善有限 | 上限情景 | PON/Node PON 新项目 | 仅作跟踪 | 不构成极度乐观公司情景来源 |
+| RUCKUS Wi-Fi 7/ICX/RUCKUS One/RUCKUS AI | 悲观 | `$150M-$250M` | `$25M-$50M` | 交割前贡献小 | 低于桥接预期 | 早交割或监管/渠道扰动 | 保留 | 收入减少可能来自交易完成，不等同需求恶化 |
+| RUCKUS Wi-Fi 7/ICX/RUCKUS One/RUCKUS AI | 基准 | `$300M-$450M` | `$60M-$95M` | 高于 Aurora 硬件但非留存 | 符合当前预期 | Q1 `$173.4M`、交易预计 H2 close、Wi-Fi 7 需求强 | 保留为桥接 | 交割后移出持续经营 |
+| RUCKUS Wi-Fi 7/ICX/RUCKUS One/RUCKUS AI | 乐观 | `$450M-$650M` | `$95M-$140M` | 改善 | 高于桥接基准 | 交割较晚且 Wi-Fi 7 项目强 | 保留但限桥接 | 报告收入越高可能只是交割延后 |
+| RUCKUS Wi-Fi 7/ICX/RUCKUS One/RUCKUS AI | 极度乐观 | `$700M-$900M` | `$150M-$220M` | 高质量但不留存 | 不是当前预期 | 交易失败/显著延迟且 Wi-Fi 7 超预期 | 移入附录 | 与已签出售冲突，不进入持续经营基准 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：第一个表为公司 NTM 收入和利润四情景。汇总前已剔除已出售 CCS、AI 后端网络、日度/排序/量化结论和重复计算。`持续核心 Aurora` 用于判断交易完成后经营质量；`报告口径含 RUCKUS 桥接` 用于理解 NTM 报表收入，但其高低会被 RUCKUS close date 扭曲。毛利率和经营利润率为经营口径方向性估算；GAAP 净利润受交易收益、税项、摊销和交易费影响，无法可靠量化为经营传导主口径。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 持续核心 Aurora `$1.00B-$1.15B`；报告口径含 RUCKUS 桥接 `$1.15B-$1.45B` | Aurora 较 2025 `$1.233B` 约 `-19%` 至 `-7%`；较 Q1 annualized `$1.194B` 低到持平；报告口径因 RUCKUS sale 不可与 2025 全年直接比较 | 低于 standalone Aurora guidepost 隐含路径；成长业务不足以抵消价格/项目延后 | `42%-46%` | GAAP operating margin `0%-4%`；adjusted EBITDA margin `13%-16%` | Aurora adjusted EBITDA `$150M-$200M`；含桥接 Core adjusted EBITDA `$180M-$260M`；GAAP 净利润无法可靠量化 | 交易费用、库存和应付释放使 FCF 偏弱；RUCKUS proceeds 若交割可缓冲现金 | 中 | Comcast 项目 phasing、lower pricing、非 Comcast win 不足、RUCKUS 交易扰动 |
+| 基准公司 | 持续核心 Aurora `$1.20B-$1.38B`；报告口径含 RUCKUS 桥接 `$1.50B-$1.78B` | Aurora 较 2025 约 `-2%` 至 `+12%`；较 Q1 annualized 约 `+1%` 至 `+16%`；报告口径较 2025 继续经营收入下降主要来自 RUCKUS 截断 | 符合当前 run-rate、Comcast rollout、Aurora guidepost 和 RUCKUS 2026H2 交割路径 | `45%-49%` | GAAP operating margin `4%-7%`；adjusted EBITDA margin `17%-20%` | Aurora adjusted EBITDA `$225M-$250M`；含桥接 Core adjusted EBITDA `$285M-$340M`；GAAP 净利润无法可靠量化 | 经营 FCF 从 Q1 低点修复，但由存货、应付、交易费和现金分配节奏决定 | 中高 | RUCKUS 交割时间、Aurora price/mix、Comcast 占比、working capital |
+| 乐观公司 | 持续核心 Aurora `$1.40B-$1.65B`；报告口径含 RUCKUS 桥接 `$1.78B-$2.15B` | Aurora 较 2025 增长 `+14%` 至 `+34%`；报告口径接近或略高于 2025 继续经营收入取决于 RUCKUS close | 高于当前预期，来自 D4.0 第二波 MSO、Unified DOCSIS 和软件 attach | `48%-52%` | GAAP operating margin `7%-11%`；adjusted EBITDA margin `20%-24%` | Aurora adjusted EBITDA `$275M-$360M`；含桥接 Core adjusted EBITDA `$360M-$470M`；净利润仍受交易/税项扰动 | FCF 改善，前提是存货不因扩产继续占用现金，RUCKUS proceeds 顺利到账 | 中 | 需要明确非 Comcast 客户、产品、交付窗口和软件/license 规模 |
+| 极度乐观公司 | 持续核心 Aurora `$1.80B-$2.25B`；若 RUCKUS 交易失败或显著延迟，报告口径上限 `$2.20B-$3.00B` | Aurora 较 2025 增长 `+46%` 至 `+83%`；报告口径可能超过 2025，但大部分依赖非常规条件 | 显著高于当前预期；只作为上限，不是基准 | `52%-56%` | GAAP operating margin `10%-16%`；adjusted EBITDA margin `24%-30%` | Aurora adjusted EBITDA `$430M-$600M`；含 RUCKUS 失败/延迟时上限更高；净利润无法可靠量化 | FCF 可显著转正，但需扩产、应收和存货不吞噬利润；交易失败会改变现金路径 | 低 | 需求、捕获、利润率和执行必须同时突破；任一环节缺证据即下移 |
+
+公司层面消重说明：
+
+- RUCKUS 不同时作为持续收入和现金 proceeds 重复计算。交割前收入计入桥接；交割后 proceeds 只影响现金/资本配置。
+- DOCSIS 4.0 行业需求只先进入需求池，不直接变成 VISN 收入；VISN 收入必须通过客户、产品、交付和确认节奏验证。
+- AI edge/campus 只作为二阶需求增强，不把 AI 数据中心 capex 直接映射为 Aurora 或 RUCKUS 收入。
+- Legacy/PON/维护业务只作为 Aurora 内部抵消项，不再在公司层面重复惩罚。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次：DOCSIS 需求风险在第一步，收入确认和 RUCKUS 交易在第二步，价格/mix/成本在第三步，公司组合和现金流在第四步。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 Aurora 收入 `$298.4M`、同比 `+32.6%`，Access Technologies 更高销量驱动 | 收入基数、产品贡献 | 支撑 Aurora 进入 NTM 基准 | 规模效应正向，但 Q1 Aurora EBITDA margin `16.9%` 低于 2025 `20.4%`，不能自动假设扩张 | 出货路径可信度上升 | 基准保留；乐观需要更多客户和 backlog 证据 |
+| 2026 Aurora standalone adjusted EBITDA guide `$225M-$250M` | 公司汇总、利润 | 支撑 Aurora `$1.20B-$1.38B` 基准收入区间 | 支撑 adjusted EBITDA margin 约高十位数到低二十位数 | 提供年度经营锚 | 基准保留；极度乐观需明显上调 guide 或订单 |
+| RUCKUS 出售给 Belden，交易价 `$1.846B`，预计 2026H2 close，net proceeds 约 `$1.7B` | 收入基数、公司组合、现金流 | RUCKUS 只进入交割前桥接；交割后持续收入降为 0 | 交割后失去 RUCKUS 高毛利/高 EBITDA margin 贡献，Aurora mix 更重要 | 现金流和资本配置大幅受交割影响 | 基准按交割保留；交易失败移入附录重估 |
+| DOCSIS 4.0 行业从互通验证进入部署，Dell'Oro 预计 2026 DAA/DOCSIS 4.0 回升 | 产品需求 | 提升 Aurora demand pool | 软件/DAA mix 有利，但硬件竞争仍强 | 需要客户项目变订单和验收 | 基准保留；行业 beta 不能单独上移到乐观 |
+| Comcast/CommScope FDX amps live in every Comcast market，近 1000 万台 amplifier 历史发货 | 需求、份额、执行 | 支撑 Comcast 路线和 installed base | Qualification/installed base 支撑价格韧性 | 客户集中也提高执行风险 | 乐观保留，但要求非 Comcast 或更多交付证据 |
+| 公司不披露 backlog/bookings/取消率 | 收入确认、可信度 | 限制乐观和极度乐观可量化程度 | 无法判断高毛利软件是否已锁定 | 订单可见度低于有 backlog 的公司 | 极度乐观下移；基准不因此被排除 |
+| 10-Q 披露分部增长均被 lower pricing 部分抵消 | 产品贡献、利润率 | 不直接降低需求，但限制收入到利润传导 | 限制硬件毛利率和 EBITDA margin 上修 | 若价格压力扩大，现金转化弱化 | 悲观保留；基准不假设利润率大幅扩张 |
+| Wi-Fi 7 enterprise AP/cloud 需求强，Dell'Oro/IDC 数据支持更新周期 | 产品需求 | 支撑 RUCKUS 产品需求和桥接收入 | RUCKUS margin 质量好 | 交易完成后不属于 VISN 经营 | RUCKUS 乐观移入桥接/附录，不进入持续基准 |
+| 已出售 CCS、OneCell、OWN/DAS 和 AI 后端网络 | 排除项 | 不得计入 NTM 持续经营收入 | 不得用历史数据中心/连接器利润质量上修 VISN | 排除历史资产造成的现金流误读 | 排除；只用于说明误判风险 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | MSO capex 延后、Comcast 集中、lower pricing 和 RUCKUS 交割扰动使 Aurora 低于 guidepost | 公司仍有收入表基数、DOCSIS 已商用、资产负债表压力低 | 悲观不能只来自一般宏观担忧；必须看到订单/价格/交付恶化 | 保留 | 悲观情景 | 中 | Comcast 集中只在收入捕获和定价中处理，不再在现金流重复压低 |
+| 基准 | Aurora 按当前 run-rate 和 standalone EBITDA guidepost 正常兑现；RUCKUS 2026H2 交割 | Q1 Aurora +32.6%，Core adjusted EBITDA +38.4%，Comcast D4.0 实网，RUCKUS sale agreement 明确 | 产品拆分披露不足、lower pricing、RUCKUS 交割时间未定 | 保留 | 最可能情景 | 中高 | RUCKUS 只作为桥接，不在公司持续收入和产品贡献中重复计入 |
+| 乐观 | D4.0 第二波 MSO、Unified FDX/ESD、vCCAP attach 和软件 mix 推动 Aurora 高于当前预期 | 行业 DAA/D4.0 需求恢复，Vistance 产品线覆盖完整，unified node 已 approved | 缺少 VISN 新订单金额、非 Comcast 客户明细和确认节奏 | 保留 | 乐观情景 | 中 | 行业需求只提升需求池，不能同时当作 VISN 份额和利润率证据 |
+| 极度乐观 | Aurora 在 D4.0 hardware、software attach、非 Comcast MSO 和执行上同时非线性突破 | D4.0/DAA 是 2026-2027 弹性方向，Aurora 具备 incumbent 产品和 Comcast 证明 | 任一核心环节缺少 A/B 级证据；硬件放量可能低毛利；RUCKUS 极度乐观与出售交易冲突 | 下移 | 乐观上限/附录跟踪 | 低 | 不把 RUCKUS 交易失败、D4.0 行业 TAM、AI 数据中心叙事叠加成同一极度乐观收入 |
+
+## 8. 结论
+
+- 最可能情景：基准。VISN 的 NTM 经营主线不是 AI 数据中心直接订单，而是 Aurora 承接 DOCSIS 4.0/HFC access upgrade。基准下 Aurora 持续核心收入约 `$1.20B-$1.38B`，standalone adjusted EBITDA 约 `$225M-$250M`；RUCKUS 在 2026H2 交割前贡献约 `$0.30B-$0.45B` 桥接收入和 `$60M-$95M` 桥接 adjusted EBITDA，但交易完成后不再是 VISN 持续经营收入。
+- NTM 收入结论：公司报告口径总收入会被 RUCKUS 交割时间扭曲；判断经营质量应优先看 Aurora 收入、Aurora EBITDA、非 Comcast 客户订单和 vCCAP/software attach。只看 VISN NTM reported revenue 可能把“出售前多并表一个季度”误判为经营上修。
+- 利润/现金流结论：Aurora 的利润质量取决于硬件价格压力能否被规模、mix、软件/license 和 lower R&D/operating leverage 抵消。RUCKUS proceeds 可改善现金和资本配置选择，但这不是经营收入，也不能替代 Aurora 的持续 EBITDA。Q1 free cash flow 为负，NTM 需要验证营运资本恢复。
+- 主要传导瓶颈：第一层是 DOCSIS 4.0 需求是否继续从 Comcast 扩到 Charter、Cox、Rogers、Mediacom、欧洲 MSO；第二层是 VISN 是否拿到可确认订单和交付窗口；第三层是 lower pricing 和 input cost 是否吞噬硬件收入；第四层是 RUCKUS 交割后 Aurora 单一业务和客户集中带来的组合风险。
+- 乐观情景成立条件：至少看到一项公司特定证据，例如非 Comcast MSO 的正式项目/订单、Unified FDX/ESD/RPD 放量、vCCAP/DAA license attach 明显提高、Aurora margin 在 lower pricing 下仍改善，且交付/验收节奏落在 NTM。
+- 极度乐观情景成立条件：需求池、公司捕获、利润质量和执行可信度同时突破。具体表现应包括多个 Tier-1/Tier-2 MSO 同时采用 Aurora、software/vCCAP 收入占比显著提高、硬件供应/现场施工不构成瓶颈、Aurora adjusted EBITDA 明显超过 `$250M` guidepost。当前证据不足，校准为乐观上限/附录跟踪。
+- 悲观情景触发条件：Comcast rollout 放缓、非 Comcast 客户选择 Harmonic/Vecima/ATX/Technetix 等竞争方案、MSO capex 或施工延期、D4.0 hardware ASP 下行幅度大于销量增长、input cost/库存/质保费用上升、RUCKUS 交易延迟并扰动客户或员工。
+- 后续跟踪数据：Aurora quarterly net sales 和 adjusted EBITDA；Comcast revenue concentration；非 Comcast MSO wins；vCCAP/software attach；lower pricing 和 input cost 描述；库存/应收/应付变化；RUCKUS 监管审批、交割日期、net proceeds、交割后特别分配/回购/并购计划；CableLabs/DOCSIS 4.0 interop 进展。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新已核对经营数据为 2026Q1，截至 2026-03-31，发布日期 2026-04-30；本报告外部资料核验截至 2026-06-12。行业资料主要来自项目内 2026-06-11 宽带接入/PON/DOCSIS 4.0/Wi-Fi 7 行业报告和公开来源。
+- 主要收入、订单、指引和利润率来源：
+  - Vistance Networks 2026Q1 results：net sales `$471.8M`、Core adjusted EBITDA `$87.3M`、Aurora `$298.4M`、RUCKUS `$173.4M`、Aurora 2026 standalone adjusted EBITDA `$225M-$250M`。https://www.vistancenetworks.com/press-releases/2026/vistance-networks-reports-first-quarter-2026-results/
+  - Vistance Networks 2026Q1 earnings presentation / operational schedules：分部收入、分部 adjusted EBITDA、free cash flow、balance sheet。https://ir.vistancenetworks.com/static-files/0687a66f-7f8e-44a6-bd30-59027b240688
+  - Vistance Networks 2026Q1 Form 10-Q：季度报告、分部增长、毛利率、R&D/SG&A、债务清偿和现金流。https://www.sec.gov/Archives/edgar/data/1517228/000119312526193963/visn-20260331.htm
+  - Vistance Networks RUCKUS sale release：出售 RUCKUS 给 Belden，现金交易价 `$1.846B`，预计 2026H2 close，预计 net proceeds 约 `$1.7B`。https://ir.vistancenetworks.com/news-releases/news-release-details/vistance-networks-sell-its-ruckus-networks-business-belden-inc/
+  - Belden acquisition release：RUCKUS 提供 Wi-Fi、enterprise switching 和 AI-driven cloud networking platform，客户超过 `48,000`，交易仍有监管和完成条件。https://investor.belden.com/news/news-details/2026/Belden-to-Acquire-RUCKUS-Networks-from-Vistance-Networks-Accelerating-its-Transformation-into-a-Full-Stack-Networking-Solutions-Provider/default.aspx
+  - CommScope/Vistance CCS divestiture and rebrand release：CCS 出售完成、偿债、赎回优先股、Vistance/Aurora/RUCKUS 结构。https://ir.vistancenetworks.com/node/18121/pdf
+- 行业和产品来源：
+  - CommScope/Vistance and Comcast DOCSIS 4.0 amplifiers：Comcast 全市场 live、multi-gig symmetrical speeds、近 1000 万台 amplifier 历史发货、Unified amps/RPD 路线。https://commscopeholdingcompanyinc.gcs-web.com/news-releases/news-release-details/commscope-and-comcast-accelerate-rollout-docsis-40-amplifiers
+  - Vistance DOCSIS 4.0 product page：ESD、FDX、DAA、Node PON 和 Aurora D4.0 product range。https://www.vistancenetworks.com/solutions-services/headend-solutions/docsis4.0
+  - Vistance DAA/vCCAP product page：vCCAP Evo、DAA nodes、HLX Domain Manager 和 D4.0 migration。https://www.vistancenetworks.com/solutions-services/outdoor-edge-solutions/distributed-access-architecture/
+  - CableLabs DOCSIS 4.0 technology：DOCSIS 4.0 up to 10Gbps downstream、6Gbps upstream、HFC symmetric multi-gig。https://www.cablelabs.com/technologies/docsis-4-0-technology
+  - CableLabs DOCSIS 2026 update：14-16Gbps downstream interop、3GHz optional annex、operators begin scaling D4.0 deployments。https://www.cablelabs.com/blog/docsis-technology-whats-changed-in-the-past-year-and-why-it-matters
+  - Dell'Oro / PRNewswire broadband access 2026 recovery：2025 DOCSIS infrastructure `-21%`、Remote PHY `-47%`、2026 DAA/DOCSIS 4.0 回升。https://www.prnewswire.com/news-releases/broadband-access-equipment-to-return-to-growth-in-2026-according-to-delloro-group-302709983.html
+  - Dell'Oro WLAN 1Q26：WLAN 连续 5 个季度双位数增长、AP shipments `+14%`、Wi-Fi 7 revenue 三位数增长、Wi-Fi 7 占 Indoor AP shipments `37%`。https://www.delloro.com/news/wlan-market-continues-double-digit-growth-in-1q-2026-despite-memory-shortage/
+  - IDC enterprise WLAN 2025：2025 enterprise WLAN `$10.5B`、4Q25 revenue `$2.9B`、Wi-Fi 7 占 dependent AP revenue `39.7%`。https://www.idc.com/resource-center/blog/worldwide-enterprise-wlan-grew-13-9-driven-by-wi-fi-7-deployments/
+  - RUCKUS Wi-Fi 7 product page：R770/T670/T770 等 Wi-Fi 7 AP、MLO、6GHz、RUCKUS AI/SmartZone。https://www.ruckusnetworks.com/technologies/wifi/wifi-7/
+- 项目内资料：
+  - `公司调研/AI网络_光互联_连接器/VISN_Vistance_Networks_公司调研_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_宽带接入、PON、DOCSIS 4.0与Wi-Fi 7_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 公司 adjusted EBITDA guidepost 可作为全年补充，但 NTM 主表以 2026-06-12 后未来 12 个月为主，且 RUCKUS 交割时间会扭曲 reported revenue。
+  - FY2027 重点不是 RUCKUS，而是 Aurora 是否能在 DOCSIS 4.0 第二波 MSO、Unified FDX/ESD、vCCAP/software attach 上形成持续 run-rate。
+  - 超过 NTM 的 3GHz/6GHz HFC、AI-native gateway、Comcast/NVIDIA edge AI、RUCKUS 交易失败或保留，均只作远期期权或附录跟踪，不进入基准。

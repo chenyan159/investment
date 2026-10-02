@@ -1,0 +1,168 @@
+# 公司收入传导与价值传导评估：Broadcom（AVGO）
+
+报告日期：2026-06-12  
+公司代码：AVGO  
+公司名称：Broadcom Inc.  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM，指从 2026-06-12 起未来 12 个月，近似对应 Broadcom FY2026 Q3、FY2026 Q4、FY2027 Q1、FY2027 Q2。  
+资料边界：本报告使用 `公司调研/` 与 `行业调研/` 中的正式公司和行业资料，并用 Broadcom、SEC、OpenAI 等一手公开资料核验最新财务、订单和产品信息；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归或模型比较内容。  
+禁止事项：本报告不做全公司排序，不给投资评级，不判断股价区间，不用股价、估值倍数或市场价格作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口；FY2026、FY2027、20GW AI XPV、OpenAI 10GW、长期 run-rate 只作订单能见度和远期期权校准，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：FY2026 Q2 总收入 221.87 亿美元，其中 Semiconductor Solutions 150.09 亿美元、Infrastructure Software 71.78 亿美元；Q2 AI semiconductor revenue 108 亿美元；Q3 指引总收入约 294 亿美元，AI semiconductor revenue 约 160 亿美元，Non-GAAP operating income 约收入 67%，Adjusted EBITDA 约收入 68%。
+- 重要产品/业务线：定制 AI XPU/custom AI accelerators、AI 以太网交换/路由 silicon、AI NIC/endpoint/PCIe/SerDes、光 DSP/TIA/CDR 与 CPO/NPO 光引擎、VMware Cloud Foundation/基础设施软件、非 AI 半导体传统业务。
+- NTM 公司收入四情景：悲观 1020-1170 亿美元；基准 1260-1470 亿美元；乐观 1550-1850 亿美元；极度乐观 1850-2250 亿美元。基准含义不是“行业 TAM 上修”，而是 Q3 指引、RPO、AI accelerator 合同和 VMware run-rate 正常转收入。
+- 利润或 EBITDA 四情景：悲观 Adjusted EBITDA 640-730 亿美元；基准 830-990 亿美元；乐观 1040-1300 亿美元；极度乐观 1200-1580 亿美元。利润弹性强于普通硬件公司，但不会随收入线性无限扩张，因为 XPU rack/lease、HBM/CoWoS、客户定价和采购承诺会压缩部分毛利。
+- 最大传导瓶颈：AI XPU 需求已很强，真正瓶颈在可确认收入路径，包括 TSMC/HBM/CoWoS、XPU/rack 交付、客户数据中心通电、客户租赁或延迟付款结构，以及前五大客户集中。
+- 最大利润率变量：AI 半导体 mix 提高会稀释报表毛利率，但 custom silicon、switch ASIC、optical DSP 和 VMware 高利润可抵消；若收入增量变成低毛利 rack pass-through 或 lease backstop，利润质量下移。
+- 最大现金流变量：RPO 转收入与 purchase commitments 的匹配。FY2026 Q2 10-Q 披露 RPO 1646 亿美元、约 30% 预计 12 个月确认；采购承诺 1281.10 亿美元，且 2026-06-08 后出现 AI rack lease backstop 最高 290 亿美元风险敞口。
+- 可信度：基准为中高。公司层面收入、指引、RPO、采购承诺和 Q3 AI 半导体指引为 A/B 级证据；产品拆分到 XPU、switch、NIC、DSP/CPO 时需要估算，证据等级降为 B/C 或 C/D。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 定制 AI XPU / custom AI accelerators | Q2 AI 半导体 108 亿美元中最大部分，本文估算 Q2 约 60-75 亿美元；管理层未拆分 | 约 27%-34%，按 Q2 总收入估算 | NTM 最大收入增量和最大客户集中来源 | A 级为 AI 半导体总收入；B 级为 RPO/长期合同；产品拆分 C 级 | 进入基准，但只按已披露 AI semi、RPO、Q3 指引和可交付节奏纳入 | OpenAI 10GW、AI XPV 20GW+、新客户/新代际 XPU 超过 NTM 部分 |
+| AI 以太网交换/路由 silicon | Q2 AI 半导体中第二大部分，本文估算 Q2 约 22-32 亿美元；Tomahawk 6 已 production volume | 约 10%-14%，按 Q2 总收入估算 | 决定 AI cluster 利用率和 Broadcom 非 GPU 网络控制点 | B/C | 进入基准，按 800G/51.2T 存量与 1.6T/102.4T ramp 保守纳入 | 204.8T、CPO switch 默认化、scale-across 100km+ 非线性放量 |
+| AI NIC / endpoint / PCIe / SerDes | 当前小于 XPU 和 switch，Thor Ultra 800G NIC 为 2026-2027 导入期 | 约 1%-3%，无法可靠精确量化 | 非 NVIDIA/open Ethernet rack 的 endpoint 控制点 | C/D | 小比例进入基准；更多放入乐观 | UEC 采购门槛、Thor Ultra 多客户量产、PCIe Gen6 endpoint attach 大幅提高 |
+| 光 DSP/TIA/CDR 与 CPO/NPO 光引擎 | 800G/1.6T DSP/SerDes 已有收入，Taurus 400G/lane 与 Davisson CPO 多为样品/设计导入 | 约 2%-5%，无法可靠精确量化 | 连接 XPU 和 switch 的高利润物理层 | C；CPO/NPO 为 D | DSP/TIA/CDR 小比例进入基准；CPO/NPO 主要进乐观/极度乐观 | 3.2T/400G-lane、CPO/NPO、Open CPX/OCI 2027 以后放量 |
+| VMware Cloud Foundation / Infrastructure Software | Q2 收入 71.78 亿美元，分部经营利润 56.47 亿美元 | 32% | 高毛利、现金流和 RPO 稳定器 | A | 进入基准，按低双位数附近增长与续约节奏处理 | Private AI、VCF attach 超预期、客户替代率低于预期 |
+| 非 AI 半导体传统业务 | Q2 Semiconductor 150.09 亿美元 - AI 半导体 108 亿美元，约 42.09 亿美元 | 19% | 稳定器和抵消项，包括 wireless、broadband、storage、industrial | A/B | 进入基准但不作为成长主线 | Apple/wireless 周期、broadband/storage 复苏，不作为 AI 基准增量 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只判断外部需求池和需求强弱，不判断 Broadcom 份额、收入确认、利润率或公司收入汇总。需求单位按产品选择：XPU 用 GW/rack/客户容量承诺和 AI semiconductor run-rate；网络用 800G/1.6T 端口、switch ASIC 代际和 cluster 规模；软件用企业私有云续约和 VCF 订阅需求。所有相对判断均相对当前锚点：Q2 AI semi 108 亿美元、Q3 AI semi 160 亿美元指引、Q3 总收入 294 亿美元指引、RPO 1646 亿美元、AI XPV/OpenAI/Anthropic 等已公开容量承诺。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 定制 AI XPU / custom AI accelerators | Q2 AI semi 108 亿美元、Q3 指引 160 亿美元；AI XPV 20GW+ through 2028；OpenAI 10GW 2026H2-2029；Anthropic 初期 1GW+ mid-2026 | NTM 可交付容量低于现有排产，约 2-4GW 等效订单/部署进入收入路径 | 约 4-7GW 等效订单/部署进入收入路径，Q3 后仍上行但不线性爆发 | 约 7-11GW 等效订单/部署进入收入路径，多客户同时加速 | 超过 11GW 等效订单/部署进入 NTM 收入路径，OpenAI/Anthropic/Google/Meta/其他客户同步抢产能 | 从 Q2 单季 108 亿 AI semi 到 NTM AI semi 550-1650 亿美元级区间 | 悲观低于当前预期；基准符合；乐观高于；极度乐观显著高于 | 正向：长期 custom AI accelerator 合同、RPO 跳升、AI XPV/OpenAI 官方合作。反证：HBM/CoWoS、通电、客户融资和利用率不足。 |
+| AI 以太网交换/路由 silicon | 800G/51.2T 是 2026 主体；Tomahawk 6 102.4T production volume；行业资料显示 1.6T/102.4T 2026H2 起量、2027 主力 | 1.6T 认证延后，客户继续用 800G/51.2T 补库存，102.4T 收入慢于预期 | 800G 维持高量，1.6T/102.4T 在新建高端 AI fabric 正常导入 | 大客户把 102.4T/1.6T 作为新增高端 fabric 默认配置 | 1.6T/102.4T 和 scale-across 架构提前成为多 GW AI factory 标配 | NTM switch/router silicon 需求池从十几亿美元季度量级走向数十亿美元季度量级 | 悲观低于；基准符合；乐观高于；极度乐观显著高于 | 正向：Tomahawk 6、Jericho4、AI 网络为算力利用率瓶颈。反证：NVIDIA Spectrum-X 绑定 GPU、Cisco/Marvell 二供压价、光模块库存周期。 |
+| AI NIC / endpoint / PCIe / SerDes | Thor Ultra 800G NIC 已发布，UEC/PCIe Gen6/open Ethernet rack 处于导入期 | 800G NIC 客户验证拉长，主要仍为 400G/既有 NIC | 800G/UEC-ready NIC 小规模进入非 NVIDIA XPU rack | Thor Ultra 和同类 800G endpoint 在多云、AMD/open Ethernet rack 中量产 | UEC 采购门槛提前，800G NIC attach 成为开放 AI rack 默认项 | NTM 从低个位数十亿美元需求池上修到 10 亿美元级以上 | 基准略高于当前小基数但不激进；乐观/极度乐观依赖客户认证 | 正向：open Ethernet、UEC、Maia/AMD/custom XPU 拉动。反证：NVIDIA ConnectX/BlueField、客户不愿承担多厂互操作成本。 |
+| 光 DSP/TIA/CDR 与 CPO/NPO 光引擎 | 800G 仍主流，1.6T 2026H2 导入；Taurus 400G/lane 采样；CPO/NPO 2026 为 pilot/设计导入 | 800G ASP 下行，1.6T 和 CPO 认证慢，DSP/TIA 需求低于订单预期 | 800G 高量、1.6T 开始规模导入，CPO/NPO 只小量设计导入 | 1.6T 新增端口占比上修，DSP/TIA/ELS 维持紧缺 | 3.2T/400G-lane 和 CPO/NPO 提前小批量，交换侧光引擎成为高端 switch 默认选项 | 光 DSP/TIA/CDR 芯片需求池 NTM 约 80-260 亿美元，Broadcom 仅捕获其中一部分 | 基准符合行业当前预期；极度乐观不能进入基准 | 正向：TrendForce/Cignal/Dell'Oro 支持 800G/1.6T。反证：LightCounting 提示供给追上后 ASP 下行，CPO field service 难。 |
+| VMware Cloud Foundation / Infrastructure Software | Q2 software 收入 71.78 亿美元，同比 +9%，分部经营利润率约 78.7%；VMware 续约和 VCF bundling 为主 | 客户对涨价和打包反弹，迁移/降配导致续约低于当前 run-rate | VCF/订阅续约正常，低双位数附近增长 | Private AI、数据主权和企业推理提高 VCF attach 和续约单价 | 企业 AI 大规模回流私有云，VCF 成为 private AI 标准栈之一 | NTM software 收入约 290-480 亿美元区间 | 悲观低于；基准符合；乐观高于；极度乐观需多项成立 | 正向：装机基数和高切换成本。反证：Nutanix/Red Hat/public cloud/KVM 替代和客户预算反弹。 |
+| 非 AI 半导体传统业务 | Q2 非 AI 半导体约 42.09 亿美元；wireless/broadband/storage/industrial 以周期和客户节奏为主 | Apple/wireless、broadband 或 storage 低于正常替换周期 | 低增长或温和复苏，作为公司收入稳定器 | 宽带、storage、wireless 多线补库存 | 多个传统周期同步上行，但仍不是公司主叙事 | NTM 约 180-310 亿美元区间 | 基准符合；乐观只影响公司稳定性 | 正向：库存周期改善。反证：客户集中、价格重谈、消费电子疲弱。 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断哪些需求能进入 Broadcom NTM 收入表，以及可收入化基数是多少；不预测需求增长和利润率。`A` 为已披露收入/分部/指引，`B` 为订单、RPO、正式合同或可验证交付时间表，`C` 为 design win/认证/产能规划，`D` 为发布、样品或早期合作，`E` 为题材相关。产品级拆分若无公司披露，使用估算并降级，不把客户总预算、GW 总容量或行业 TAM 直接当收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 定制 AI XPU / custom AI accelerators | A：Q2 AI semi 108 亿美元、Q3 AI semi 160 亿美元指引；B：RPO 1646 亿美元中包含 FY2026 Q2 新增长期 custom AI accelerators 合同；AI XPV/OpenAI 为客户容量和长期路径 | 直接 | 高收入弹性；毛利低于软件，高于普通硬件；lease/rack pass-through 会稀释毛利 | NTM 350-420 亿美元 | NTM 480-580 亿美元 | NTM 650-800 亿美元 | NTM 820-1050 亿美元 | 基准为当前指引和订单正常兑现；悲观为低于当前路径；乐观为客户加速 | AI semi 聚合 A；RPO/合同 B；产品拆分 C | 是 | 已确认收入、Q3 指引、RPO、长期合同；产品拆分保守 | 基准纳入，极度乐观只作上限 |
+| AI 以太网交换/路由 silicon | A：AI semi 聚合收入；C：Tomahawk 6 production volume、Jericho4 产品出货/客户验证；管理层称 AI networking 是 AI semi 驱动之一 | 直接 | 高毛利 silicon，能提高客户 cluster utilization；系统利润不全归 Broadcom | NTM 110-150 亿美元 | NTM 150-190 亿美元 | NTM 200-260 亿美元 | NTM 250-350 亿美元 | 基准符合 800G/1.6T 正常转换；乐观为 102.4T 加速 | B/C | 是 | 已有产品出货和 AI networking 披露，但具体收入拆分未披露 | 基准纳入，需防和 XPU AI semi 重复计算 |
+| AI NIC / endpoint / PCIe / SerDes | C/D：Thor Ultra 800G NIC、PCIe Gen6、UEC 路线；现有 PCIe/SerDes 在半导体收入内但 AI NIC 未单独披露 | 直接和间接 | 中高毛利但基数小；客户认证影响收入确认 | NTM 15-25 亿美元 | NTM 25-40 亿美元 | NTM 40-60 亿美元 | NTM 50-80 亿美元 | 基准只承认小比例；乐观依赖 800G NIC 量产 | C/D | 小比例是 | 现有 endpoint/SerDes 可见，800G Thor Ultra 仍偏导入 | 小比例进入基准，主要是乐观弹性 |
+| 光 DSP/TIA/CDR 与 CPO/NPO 光引擎 | C：800G/1.6T DSP/SerDes 与 laser/PD 生态；D：Taurus 400G/lane、Davisson CPO、Open CPX/OCI 属样品/设计导入 | 直接和间接 | DSP/TIA/CDR 毛利较高；CPO 初期 NRE 重，收入确认慢 | NTM 40-55 亿美元 | NTM 55-75 亿美元 | NTM 70-100 亿美元 | NTM 90-140 亿美元 | 基准不提前纳入大规模 CPO；乐观纳入 1.6T 和 400G-lane design win | C；CPO 为 D | 部分是 | 800G/1.6T 可见，CPO/NPO 尚无 NTM 大额确认路径 | DSP/TIA/CDR 进入基准，CPO/NPO 主要进附录/乐观上限 |
+| VMware Cloud Foundation / Infrastructure Software | A：Q2 software 收入 71.78 亿美元；Q2 分部经营利润 56.47 亿美元；RPO 中软件合同占重要部分 | 直接 | 高毛利、高现金流，低资本强度 | NTM 290-310 亿美元 | NTM 320-360 亿美元 | NTM 360-410 亿美元 | NTM 420-480 亿美元 | 基准为续约正常；悲观为客户迁移/降配；乐观为 private AI attach | A | 是 | 已披露分部收入和利润，续约/订阅路径清楚 | 基准主口径纳入 |
+| 非 AI 半导体传统业务 | A/B：Q2 Semiconductor 150.09 亿美元减 AI semi 108 亿美元约 42.09 亿美元；产品细分未披露 | 直接 | 成熟半导体，周期性和客户集中较强 | NTM 180-210 亿美元 | NTM 220-250 亿美元 | NTM 240-290 亿美元 | NTM 250-310 亿美元 | 基准为低增长/正常周期；不承担 AI 上修 | A/B | 是 | 报表 residual 可确认，但产品细节不拆 | 作为公司抵消项和稳定项纳入 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第一步需求和第二步收入基数出发，评估每个产品在 NTM 内能给 Broadcom 贡献多少收入和经营利润/EBITDA-like 利润。产品贡献为经营传导估算，不等同 GAAP 净利润；产品间存在共享客户预算和 AI semi 聚合口径，汇总到公司层面时已做去重和组合约束。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 定制 AI XPU / custom AI accelerators | 悲观 | 350-420 亿美元 | 190-260 亿美元 | 毛利率下行、经营杠杆仍正 | 低于 Q3 指引外推和 RPO 转收入预期 | Q2 AI semi 已确认，但客户部署/通电或融资推迟 | 保留为下行情景 | 客户延迟、HBM/CoWoS、AI rack lease/default、单一客户转单 |
+| 定制 AI XPU / custom AI accelerators | 基准 | 480-580 亿美元 | 290-380 亿美元 | 毛利率略低于公司均值，经营利润率较强 | 符合当前预期正常兑现 | Q3 AI semi 160 亿美元指引、RPO 1646 亿美元、长期 custom AI accelerator 合同 | 保留为基准核心 | 产品拆分未披露，不能把 10GW/20GW 全额压进 NTM |
+| 定制 AI XPU / custom AI accelerators | 乐观 | 650-800 亿美元 | 410-560 亿美元 | 规模效应抵消硬件 mix | 高于当前预期 | OpenAI/Anthropic/Google/Meta 类客户并行加速，AI XPV 支持融资 | 保留为乐观 | 多客户同时上电需要电力、液冷、网络、HBM 同步 |
+| 定制 AI XPU / custom AI accelerators | 极度乐观 | 820-1050 亿美元 | 520-760 亿美元 | 只有高定价和高利用率才允许上修 | 显著高于当前预期 | 多 GW 项目在 NTM 提前确认，客户接受较高 silicon/rack 价值 | 下移为极度乐观上限 | lease backstop、低毛利 rack pass-through、客户信用风险 |
+| AI 以太网交换/路由 silicon | 悲观 | 110-150 亿美元 | 70-100 亿美元 | 稳定或小幅下行 | 低于当前 AI networking 路径 | 800G 需求在，但 1.6T/102.4T 延迟 | 保留 | NVIDIA/Cisco/Marvell 竞争、客户验收慢 |
+| AI 以太网交换/路由 silicon | 基准 | 150-190 亿美元 | 100-140 亿美元 | 稳定偏强 | 符合当前预期 | Tomahawk 6 production volume、AI Ethernet 需求、Jericho4 scale-across | 保留 | 系统利润被 Arista/Celestica/Cisco 捕获，Broadcom 只拿 silicon |
+| AI 以太网交换/路由 silicon | 乐观 | 200-260 亿美元 | 135-200 亿美元 | 上行 | 高于当前预期 | 102.4T/1.6T 在新增高端集群加速导入 | 保留 | 光模块/SerDes/液冷/客户 qualification |
+| AI 以太网交换/路由 silicon | 极度乐观 | 250-350 亿美元 | 170-270 亿美元 | 上行但不线性 | 显著高于当前预期 | AI fabric bottleneck 使 switch ASIC 定价权上修 | 保留为上限 | 若低毛利系统或二供压价，收入上修不等于利润上修 |
+| AI NIC / endpoint / PCIe / SerDes | 悲观 | 15-25 亿美元 | 7-14 亿美元 | 下行或持平 | 低于小基数增长预期 | Thor Ultra 仍在认证，客户延迟 | 保留 | 800G NIC 不是所有客户刚需 |
+| AI NIC / endpoint / PCIe / SerDes | 基准 | 25-40 亿美元 | 13-26 亿美元 | 稳定 | 符合小比例纳入 | PCIe Gen6、UEC、open Ethernet rack 早期 | 保留 | 产品收入未单独披露，估算可信度中 |
+| AI NIC / endpoint / PCIe / SerDes | 乐观 | 40-60 亿美元 | 22-42 亿美元 | 上行 | 高于当前预期 | 非 NVIDIA XPU rack 加速、800G endpoint attach 提高 | 保留 | 互操作、软件、客户认证 |
+| AI NIC / endpoint / PCIe / SerDes | 极度乐观 | 50-80 亿美元 | 30-58 亿美元 | 上行 | 显著高于当前预期 | UEC 成为采购门槛，Thor Ultra 多客户量产 | 下移为上限 | endpoint 竞争和标准化压价 |
+| 光 DSP/TIA/CDR 与 CPO/NPO 光引擎 | 悲观 | 40-55 亿美元 | 22-36 亿美元 | 800G ASP 下行 | 低于当前预期 | 800G 仍有量，但库存周期开始 | 保留 | 800G/1.6T ASP 连续下跌、CPO 认证慢 |
+| 光 DSP/TIA/CDR 与 CPO/NPO 光引擎 | 基准 | 55-75 亿美元 | 34-54 亿美元 | 稳定 | 符合当前预期 | 1.6T 导入、Taurus 采样、DSP/TIA 高壁垒 | 保留 | CPO/NPO 不进入大额基准 |
+| 光 DSP/TIA/CDR 与 CPO/NPO 光引擎 | 乐观 | 70-100 亿美元 | 45-75 亿美元 | 上行 | 高于当前预期 | 1.6T、400G/lane、ELS/CPO design win 提前 | 保留 | Field service、ELS、测试和良率 |
+| 光 DSP/TIA/CDR 与 CPO/NPO 光引擎 | 极度乐观 | 90-140 亿美元 | 62-105 亿美元 | 上行 | 显著高于当前预期 | 3.2T/CPO/NPO 提前小批量，Broadcom switch+DPS 绑定 | 下移为极度乐观上限 | CPO 大规模收入更可能是 2027H2 以后 |
+| VMware Cloud Foundation / Infrastructure Software | 悲观 | 290-310 亿美元 | 220-240 亿美元 | 稳定但增速降 | 低于当前 run-rate | 续约在，但迁移/降配上升 | 保留 | 客户对涨价、打包和迁移替代 |
+| VMware Cloud Foundation / Infrastructure Software | 基准 | 320-360 亿美元 | 250-285 亿美元 | 高位稳定 | 符合当前预期 | Q2 software 71.78 亿美元、分部经营利润率 78.7% | 保留 | 增速不能按 AI 硬件叙事自动上修 |
+| VMware Cloud Foundation / Infrastructure Software | 乐观 | 360-410 亿美元 | 285-330 亿美元 | 稳定偏强 | 高于当前预期 | Private AI、VCF 大客户续约和 attach | 保留 | 替代竞争、客户预算上限 |
+| VMware Cloud Foundation / Infrastructure Software | 极度乐观 | 420-480 亿美元 | 335-390 亿美元 | 维持高位 | 显著高于当前预期 | 企业 AI inference 回流 private cloud，迁移替代低于预期 | 下移为上限 | 需要订阅增长和价格接受度同时成立 |
+| 非 AI 半导体传统业务 | 悲观 | 180-210 亿美元 | 80-115 亿美元 | 下行 | 低于当前预期 | 传统周期疲弱 | 保留 | Apple/wireless、broadband、storage 波动 |
+| 非 AI 半导体传统业务 | 基准 | 220-250 亿美元 | 105-145 亿美元 | 稳定 | 符合当前预期 | Q2 residual 42.09 亿美元、温和复苏 | 保留 | 不是 AI 成长主线 |
+| 非 AI 半导体传统业务 | 乐观 | 240-290 亿美元 | 120-180 亿美元 | 小幅上行 | 高于当前预期 | 库存补充、broadband/storage 复苏 | 保留 | 价格重谈和客户集中 |
+| 非 AI 半导体传统业务 | 极度乐观 | 250-310 亿美元 | 130-200 亿美元 | 小幅上行 | 高于但非核心 | 多周期同步改善 | 下移为补充 | 不足以单独驱动公司极度乐观 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品贡献合成为公司 NTM 总收入、毛利率、经营利润率、Adjusted EBITDA/净利润方向和自由现金流方向。汇总时不把 AI XPU、AI networking、DSP/CPO、客户 GW 容量、采购承诺和行业 TAM 重复相加；RPO 只作为可确认收入路径，不等于 NTM 全额收入；采购承诺是供应锁定和义务，不等于收入。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 1020-1170 亿美元 | 较 TTM 754.65 亿美元约 +35%-55%；但低于 Q3 指引外推路径 | 低于当前预期。Q3 指引可能兑现，但 Q4-FY2027 H1 AI semi ramp 放缓 | 63%-66% | 58%-62% | Adjusted EBITDA 640-730 亿美元；净利润方向上升但利润质量低于预期 | FCF margin 35%-42%，采购承诺和营运资本压力上升 | 中 | 客户部署延迟、AI rack lease/default、HBM/CoWoS、通电和 800G/1.6T 库存周期 |
+| 基准公司 | 1260-1470 亿美元 | 较 TTM 约 +67%-95% | 符合当前预期正常兑现。Q3 294 亿美元指引后，AI semi 季度 run-rate 维持 160 亿美元以上并温和上行 | 65%-69% | 62%-67% | Adjusted EBITDA 830-990 亿美元；净利润随经营杠杆上升 | FCF margin 40%-46%，强现金流但库存/采购承诺更重 | 中高 | RPO 转收入、XPU/rack 交付、软件续约、AI hardware mix 稀释 |
+| 乐观公司 | 1550-1850 亿美元 | 较 TTM 约 +105%-145% | 高于当前预期。XPU、多客户 AI networking、1.6T/DSP 和 VMware private AI 至少两项超预期 | 66%-70% | 65%-69% | Adjusted EBITDA 1040-1300 亿美元；净利润和 FCF 同步改善 | FCF margin 42%-48%，预付款和高利润 silicon 支撑 | 中 | 多客户同时上电、102.4T/1.6T 供应、客户信用和软件客户接受度 |
+| 极度乐观公司 | 1850-2250 亿美元 | 较 TTM 约 +145%-198% | 显著高于当前预期。需求、公司捕获、利润质量和执行同时突破 | 64%-69% | 65%-70% | Adjusted EBITDA 1200-1580 亿美元；净利润可大幅上修但取决于硬件融资结构 | FCF 绝对额强，但 margin 40%-48%，若 lease/backstop 扩大则现金质量打折 | 低到中 | 不能只靠 20GW/10GW 名义容量；必须实际交付、确认收入且不被低毛利 rack/lease 吞噬 |
+
+公司层面的关键解释：
+
+- 基准公司情景不是把 AI 数据中心 CapEx 或行业 ASIC TAM 直接映射到 AVGO，而是把 Q2 已确认 AI semi、Q3 指引、RPO 约 30% 未来 12 个月确认、VMware run-rate 和非 AI 半导体 residual 组合起来。
+- 极度乐观收入可以很高，但利润率不必机械上修。若收入来自低毛利 full rack、租赁结构、客户延期付款或 backstop，毛利率和 FCF margin 可能低于乐观情景。
+- 传统非 AI 半导体对总收入有稳定作用，但不应被 AI 叙事上修；VMware 对现金流和利润率作用大，但不应按 XPU 增速处理。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q2 AI semiconductor revenue 108 亿美元、Q3 指引 160 亿美元 | 需求、收入基数、公司汇总 | 强正向，证明 AI 需求已进入收入表 | AI hardware mix 低于软件，但经营杠杆强 | 已确认收入和正式指引，执行可信度高 | 基准保留；悲观不能写成“AI 需求不存在” |
+| RPO 1646 亿美元，约 30% 预计 12 个月确认，且包含长期 custom AI accelerator 合同 | 收入基数、执行可信度 | 强正向，但 RPO 不等于全部 NTM 收入 | 取决于合同 mix 和交付形态 | 支持订单能见度，也增加交付义务 | 基准保留；乐观保留；不得把 RPO 全额加总 |
+| Purchase commitments 1281.10 亿美元 | 执行、现金流 | 支持供应锁定和未来交付 | 若价格或需求变化，可能压低利润 | 采购义务提高库存和营运资本风险 | 正向用于供给可信度；反向只在现金流/执行处理 |
+| AI XPV 20GW+、首期 350 亿美元、Anthropic 1GW+ mid-2026 | 需求、收入基数、现金流 | 支持 XPU/rack 需求和融资路径 | 可能形成低毛利 rack/lease mix | 引入租赁、客户信用和 backstop 风险 | 乐观保留；极度乐观上限保留；现金流风险单独处理 |
+| 2026-06-08 AI rack lease backstop 最大 290 亿美元 | 现金流/执行 | 不直接增加收入 | 若客户 default 或 lease 结构重，利润质量下移 | 增加 credit/default/backstop 风险 | 只在现金流和极度乐观可信度处理，不重复压低需求 |
+| 前五大终端客户 FY2026 H1 约占收入 45% | 收入基数、执行 | 客户加速时放大增长，客户延迟时放大下行 | 大客户议价会压低 ASP/合同条款 | 集中度使季度波动和回款风险上升 | 悲观保留；基准不重复惩罚，只要求跟踪 |
+| Tomahawk 6 production volume、Jericho4、Thor Ultra、Taurus | 产品贡献 | 支持 AI networking、NIC、DSP/CPO 产品路径 | 高端 silicon/DSP 支持高利润 | 客户认证和量产节奏决定收入确认 | switch/DSP 基准保留；NIC/CPO 部分下移到乐观 |
+| 行业 800G/1.6T、HBM、CoWoS、电力瓶颈 | 需求、执行 | 需求强，但供应和通电限制收入确认 | 紧缺提高定价，供给追上后 ASP 风险上升 | 出货、验收和现金流节奏不线性 | 需求乐观保留；收入确认基准保守 |
+| VMware VCF 高利润和客户替代风险 | 公司组合、利润率 | 收入增长低于 AI semi，但稳定 | 支撑公司利润率和 FCF | 客户迁移周期长但涨价反弹需跟踪 | 基准保留；极度乐观下移为上限 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | AI semi 和公司收入低于当前指引外推，但仍显著高于过去 TTM | Q2 已确认收入和 Q3 指引防止过度悲观 | 客户集中、lease/backstop、HBM/CoWoS、电力/通电、光模块 ASP 下行 | 保留 | 悲观公司：1020-1170 亿美元收入，EBITDA 640-730 亿美元 | 中 | 客户集中只在收入波动处理；backstop 只在现金流/信用处理；光模块 ASP 只影响 DSP/CPO 和 networking 不影响 VMware |
+| 基准 | Q3 指引、RPO、VMware run-rate 和非 AI residual 正常兑现 | A/B 级收入、指引、RPO、采购承诺、Q2 FCF | 产品级拆分未披露；XPU/rack 交付和软件续约仍需假设 | 保留 | 基准公司：1260-1470 亿美元收入，EBITDA 830-990 亿美元 | 中高 | 不把行业 TAM、20GW、10GW 或采购承诺全额并入收入 |
+| 乐观 | XPU、多客户 AI networking、1.6T/DSP 和 VMware 中至少两项超预期 | AI XPV、OpenAI 10GW、Tomahawk 6、1.6T 行业导入、VMware 高毛利 | 多客户同时上电、客户认证、融资和供应链需同时顺利 | 保留 | 乐观公司：1550-1850 亿美元收入，EBITDA 1040-1300 亿美元 | 中 | 需求上修不重复等同于利润率上修；低毛利 rack 单独处理 |
+| 极度乐观 | 需求、捕获、利润质量和执行同时突破 | 20GW+ 平台、10GW OpenAI、多客户 XPU、102.4T/1.6T、CPO/NPO 期权 | 任一核心环节缺证据会降为乐观上限；CPO 和 3.2T 多数仍偏 2027H2 以后 | 保留 | 极度乐观上限：1850-2250 亿美元收入，EBITDA 1200-1580 亿美元 | 低到中 | 远期容量、CPO/NPO 和 private AI 不得在 NTM 基准中重复计入 |
+
+## 8. 结论
+
+- 最可能情景：基准偏乐观。Broadcom 的 NTM 经营价值传导最可能由 AI XPU/custom accelerators、AI networking silicon 和 VMware 软件现金流共同驱动，NTM 收入基准区间为 1260-1470 亿美元，Adjusted EBITDA 基准区间为 830-990 亿美元。
+- NTM 收入结论：AI semiconductor 是主变量。Q2 108 亿美元和 Q3 160 亿美元指引说明 AI 半导体已进入收入表；但产品级 XPU、switch、NIC、DSP/CPO 拆分没有公司正式披露，必须用聚合 AI semi 做收入锚、用产品发布和行业需求做分配校准。
+- 利润/现金流结论：VMware 和高端 silicon 使公司经营利润率和 FCF 质量显著高于普通硬件供应商；但 XPU rack、lease、backstop、采购承诺和营运资本会决定现金流质量。收入上修如果来自低毛利 rack pass-through，不应自动上修利润率。
+- 主要传导瓶颈：需求不是最大问题，最大问题是从需求到收入确认的路径，包括客户项目交付、HBM/CoWoS、数据中心通电、客户验收、租赁/融资结构和大客户议价。
+- 乐观情景成立条件：Q3 之后 AI semi 季度 run-rate 继续高于 160 亿美元并上行；RPO 或 AI accelerator 合同继续增加；Tomahawk 6/1.6T/102.4T 形成批量客户；VMware 续约不恶化；毛利率未被 rack/lease 明显稀释。
+- 极度乐观情景成立条件：OpenAI/Anthropic/Google/Meta/其他客户在 NTM 内同时提前部署；XPU、switch、NIC、DSP/CPO 形成高 attach；电力、液冷、HBM/CoWoS 没有硬断点；客户融资和 backstop 未损害 FCF 质量。
+- 悲观情景触发条件：Q3 AI semi 低于 160 亿美元附近或 Q4/FY2027 H1 无法维持 ramp；RPO 不再增加或转收入慢；purchase commitments 转成库存压力；客户要求更多 deferred payment/lease；VMware 大客户续约降配；800G/1.6T ASP 连续两个季度双位数下行。
+- 后续跟踪数据：AI semiconductor revenue、Q3/Q4 总收入、RPO 中 custom AI accelerator 变化、purchase commitments 和 inventory、AI rack lease backstop 余额、前五大客户占比、Semiconductor gross margin、VMware renewal/VCF attach、Tomahawk 6/Thor Ultra/Taurus 量产客户、HBM/CoWoS lead time、数据中心通电和客户验收节奏。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Broadcom FY2026 Q2 截至 2026-05-03；FY2026 Q2 业绩新闻稿日期 2026-06-03；FY2026 Q2 10-Q filed 2026-06-09；本报告日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Broadcom FY2026 Q2 financial results：Q2 revenue 221.87 亿美元、AI semiconductor revenue 108 亿美元、Q3 revenue guidance 294 亿美元、Q3 Non-GAAP operating income guidance 67%、Q2 FCF 102.62 亿美元。链接：https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial
+  - Broadcom FY2026 Q2 Form 10-Q：RPO、purchase commitments、客户集中、AI rack lease/backstop 和风险披露。链接：https://www.sec.gov/Archives/edgar/data/1730168/000173016826000054/avgo-20260503.htm
+  - Broadcom, Apollo and Blackstone AI XPV Platform：20GW+ through 2028、首期 350 亿美元、Anthropic 1GW+ mid-2026。链接：https://investors.broadcom.com/news-releases/news-release-details/broadcom-apollo-and-blackstone-establish-landmark-strategic
+  - OpenAI and Broadcom strategic collaboration：10GW OpenAI-designed AI accelerators。链接：https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/
+- 产品和技术来源：
+  - Tomahawk 6 102.4Tbps production volume shipping。链接：https://investors.broadcom.com/news-releases/news-release-details/broadcom-now-shipping-worlds-first-1024-tbps-switch-production
+  - Jericho4 distributed AI router。链接：https://investors.broadcom.com/news-releases/news-release-details/broadcom-ships-jericho4-enabling-distributed-ai-computing-across
+  - Thor Ultra 800G AI Ethernet NIC。链接：https://investors.broadcom.com/news-releases/news-release-details/broadcom-introduces-industrys-first-800g-ai-ethernet-nic
+  - Taurus 400G/lane optical DSP。链接：https://investors.broadcom.com/news-releases/news-release-details/broadcom-delivers-industrys-first-400glane-optical-dsp-next
+- 本地公司资料：
+  - `公司调研/AI计算芯片_EDA_IP_custom_ASIC/AVGO_Broadcom_公司调研_2026-06-11.md`
+- 本地行业资料：
+  - `行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+  - `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - AI XPV 20GW+、OpenAI 10GW、2027 1.6T/102.4T/CPO/NPO、3.2T/400G-lane 和 private AI/VCF attach 都是未来收入和利润质量的上修因素，但只有已有指引、RPO、合同、正式交付时间表和可确认收入路径的部分进入 NTM 基准。
+  - 采购承诺 1281.10 亿美元是供应链锁定和经营义务，不是收入；RPO 1646 亿美元约 30% 未来 12 个月确认，但不是全部属于 AI XPU，也不能和产品表重复加总。

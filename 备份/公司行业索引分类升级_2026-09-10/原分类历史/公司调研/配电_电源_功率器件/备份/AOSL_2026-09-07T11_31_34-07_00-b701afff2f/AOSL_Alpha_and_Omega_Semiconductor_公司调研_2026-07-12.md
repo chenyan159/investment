@@ -1,0 +1,515 @@
+# 公司：AOSL Alpha and Omega Semiconductor 全面尽调
+
+> **研究日期：2026-07-12（America/Los_Angeles）｜最新财报：FY2026Q3，季度截至 2026-03-31、发布于 2026-05-06｜估值日：2026-07-10 最近交易日收盘**  
+> **本地资料边界：**仅使用项目内 `基本面/行业调研/` 的相关产业资料；未读取其他目录中的公司报告或旧研究，也未修改公司索引。  
+> **证据标记：**`[F]` 公司财报、SEC、产品资料或标准机构可直接核验；`[C]` 行业、会议、渠道或交叉验证线索；`[M]` 本报告模型估算。金额若无特别说明均为美元。  
+> **关键口径：**AOS 披露的 **Advanced Computing** 包含 AI、服务器和显卡，不能直接等同纯 AI 数据中心收入；公司不披露 backlog 金额、bookings、book-to-bill（B2B）和取消率，本文不会把 design win、pipeline、采购承诺或产品交期伪装成确定订单。
+
+## 一、结论先行：这是一家正在从低毛利周期功率器件商转向 AI 电源总方案商的小盘股，但转型尚未穿透利润表
+
+1. **投资人眼中的 AOSL 是“旧业务提供底盘、AI 电源提供估值弹性”的小市值转型股，而不是纯 AI 公司。**截至 FY2026Q3，Advanced Computing 收入约 **2,010 万美元**，占 Computing 的 25%、占公司总收入 **12.3%**；其中还包括传统服务器和显卡。本报告估算纯 AI 数据中心收入约 **1,100万—1,500 万美元/季**、占公司 **6.7%—9.2%**，已有实质收入，但尚不足以主导全公司。[F/M][FY2026Q3 prepared remarks](https://s22.q4cdn.com/656605939/files/doc_financials/2026/q3/AOSL-FYQ3-26-Earnings-Call-Prepared-Remarks.pdf)
+2. **最重要的现实增量不是 800V，而是 48/54V 链上的中压 MOSFET、hot-swap、IBC，以及 GPU 核心的控制器+DrMOS/SPS。**AOS 已称高性能中压 MOSFET 向部分头部 ODM 的大型 hyperscaler 项目进入 build phase，正在扩充中压产能，backlog 提供“良好可见度”；FY2026Q3 Advanced Computing 环比翻倍以上、同比增长超过 40%。这是比展会样机更强的生产信号，但仍缺客户名、订单金额、份额和取消条款。[F]
+3. **800V 是 2027 期权，不是 FY2026 利润救星。**AOS 已展示 1,200V αSiC、650V/100V GaN、堆叠 MOSFET 和 800V 转换方案，并称与 NVIDIA 协作；但 NVIDIA 公开的首批 800V 硅伙伴名单并未列出 AOS，公开资料也没有 AOS 800V 客户 AVL、DVT、量产 PO 或收入拆分。对 AOS 的正确估值顺序应是：`48/54V 量产收入 → 毛利率改善 → 多平台 design win → 800V DVT/客户认证 → 800V 量产收入`。[F/M][AOS 800V](https://investor.aosmd.com/press-releases/press-release-details/2025/Alpha-and-Omega-Semiconductor-Supports-800-VDC-Power-Architecture-for-Next-Generation-AI-Factories-with-Innovative-SiC-and-GaN-Power-MOSFET-and-Power-IC-Solutions/default.aspx)；[NVIDIA 800V](https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/)
+4. **财务安全、盈利质量弱。**2026-03-31 现金 **1.903 亿美元**、有息债务仅 **440 万美元**、净现金约 **1.859 亿美元**；流动比率 **3.32x**、速动比率约 **1.86x**，短期偿债压力很低。但 TTM 营收仅 **6.850 亿美元**、同比约 +0.6%，TTM GAAP 净亏损 **1.063 亿美元**、净利率 **-15.5%**，经营现金流连续两个季度为负，库存天数约 **139 天**。资产负债表能支持研发和扩产，利润表尚未证明转型价值。[F]
+5. **FY2026Q4 指引只显示触底反弹，不是业绩爆发。**收入中值 **1.68 亿美元**，环比约 +2.6%；GAAP/非 GAAP 毛利率中值 **22.3%/23.0%**，较 FY2026Q3 改善约 120/130bp。管理层称毛利改善大约一半来自利用率、一半来自 mix；按中值，FY2026 全年收入约 **6.766 亿美元**、同比约 **-2.8%**。[F/M]
+6. **未来一年最可审计的三情景：**基准收入 **7.30亿—7.60 亿美元（+8%—12%）**，乐观 **8.15亿—8.65 亿美元（+20%—28%）**，极度乐观 **9.35亿—10.15 亿美元（+38%—50%）**。极度乐观情景要求 Advanced Computing 多平台量产、MV 扩产顺利、Power IC mix 回升、800V 小批提前且消费端不拖累；不应作为基础估值。
+7. **最关键的反证不是 AI CapEx 下降，而是“收入增长但毛利不升”。**如果 Advanced Computing 连续增长、AOS 却仍停留在 22%—24% 非 GAAP 毛利率，说明 AOS 可能只拿到可替代的 discrete socket、客户年度降价吞噬了功率密度红利，或新产能利用率/良率不足。真正的转型确认线是：Advanced Computing 占比上升、Power IC 恢复增长、非 GAAP 毛利率向 26%—28% 以上回升、经营现金流转正同时发生。
+
+## 二、公司整体业务、产业链位置与最近三年转型
+
+### 2.1 公司做什么：功率器件、功率 IC、先进封装和制造能力的混合模式
+
+AOS 设计、开发和供应功率半导体，产品约 **2,800 个**；FY2025 新增产品超过 100 个，美国已授权专利 **949 件**、待审 64 件，另有海外专利 961 件。[F][FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1387467/000162828025041297/aosl-20250630.htm)
+
+| 产品层 | 主要产品 | 典型应用 | FY2026Q3 收入/占比 | 产业链位置与价值捕获 |
+|---|---|---|---:|---|
+| Power Discrete / DMOS | 低/中/高压 MOSFET、Shielded-Gate MOSFET、SuperJunction、IGBT、SiC、TVS | PC、GPU、服务器、48V hot-swap/IBC、手机电池保护、PSU、工业电机 | **1.151 亿美元，70.3%**；环比 +13.9%、同比 +7.7% | 从晶圆工艺到封装的器件层；通用 discrete 可替代性高，AI 中压、高 SOA、双面散热封装的价值更高 |
+| Power IC | 多相控制器、DrMOS、SPS、EZBuck、eFuse/load switch、高压栅极驱动、数字电源、IPM | CPU/GPU Vcore、服务器、AI 加速卡、Type-C、PC、家电/电机 | **4,690 万美元，28.6%**；环比 -20.3%、同比 -14.1% | 控制+驱动+功率级+遥测/保护更接近系统方案，切换成本和毛利潜力高于裸 MOSFET |
+| Assembly/Other | 封测及其他 | 内外部制造服务 | **180 万美元，1.1%** | 非核心；收入规模小 |
+| 已终止许可服务 | SiC 技术许可与工程服务 | 24 个月合同 | 2025-02 完成；FY2025 收入 1,384 万美元 | 高毛利但非经常性，结束后压低同比和毛利可比性 |
+
+公司的制造模式不是纯 fabless：
+
+- **Oregon 8 英寸厂**用于专有工艺、研发和新品导入；第三方晶圆约占总晶圆供应 **30%**。[F]
+- **上海自有封测**承担大部分封装测试；自有设施合计可封测超过 **6 亿颗/月**，但这是全产品、理论设备能力，不能直接当作 AI 合格产能。[F]
+- **重庆 12 英寸 JV**继续提供晶圆和封测，公司持股已降至 **18.9%**，有月度晶圆产能保证但不掌控 JV。[F]
+- **Kaynes Semicon 印度 OSAT**于 2026-04 启动 IPM5 高量产，形成中国以外封测支点；该产能主要服务电机/家电 IPM，不等同 AI MOSFET/DrMOS 产能。[F][India IPM5 production](https://investor.aosmd.com/press-releases/press-release-details/2026/Alpha-and-Omega-Semiconductor-Announces-Commencement-of-Production-of-Intelligent-Power-Module-IPM5-Products-at-Kaynes-Semicon-Inaugural-Opening-in-Sanand-Gujarat/default.aspx)
+
+### 2.2 产业链定位
+
+```text
+功率器件材料/晶圆代工
+  → AOS 专有 Si MOSFET / BCD / SiC / GaN 工艺与器件设计
+  → AOS/合作伙伴封装测试（DFN、QFN、双面/顶部散热、AmpStack、IPM）
+  → 控制器 + DrMOS/SPS + MOSFET + 参考设计
+  → WPG/Promate 等分销；ODM/电源模块商（Quanta、Wistron、Foxconn、Delta 等公司级客户）
+  → GPU/CPU/服务器平台、OEM、云服务商与 hyperscaler
+```
+
+AOS 位于**功率半导体器件与板级电源管理层**，不是 PSU、power shelf、服务器或数据中心设施总包商。其竞争优势来自把自有 MOSFET、驱动/控制 IC 和先进封装组合为应用特定方案；其弱点是规模、毛利率、客户透明度和系统控制权显著低于 MPS、Infineon、TI、ADI 等龙头。
+
+### 2.3 投资人会如何给它贴标签
+
+| 标签 | 支持证据 | 反证/限制 |
+|---|---|---|
+| 小盘周期功率半导体 | 市值约 11.24 亿美元；PC、手机、消费与工业仍占大多数收入；FY2025 ASP -8% | Advanced Computing 已有实质增长，产品 mix 正向高性能迁移 |
+| AI 电源二线弹性标的 | Advanced Computing FY2026Q3 环比 >2x、同比 >40%；MV MOSFET 进入头部 ODM build phase | Advanced Computing 仅占公司 12.3%，且包含显卡/非 AI 服务器；客户名和份额未披露 |
+| 总方案转型股 | Power IC FY2026Q1 达产品收入近 40%；已有 OVR 控制器、DrMOS/SPS、MOSFET 一体方案 | FY2026Q3 Power IC 同比 -14.1%；公司非 GAAP 毛利率只有 21.7% |
+| 800V 高期权 | αSiC、GaN、AmpStack 和 800V 产品路线完整 | 公开证据仍是产品/展会/合作宣称，无客户量产认证和可核实收入 |
+| 净现金资产保护 | 现金 1.903 亿、债务 440 万 | TTM 经营现金流约 -910 万、库存 1.990 亿，盈利和现金转化尚弱 |
+
+### 2.4 最近三年重大业务变化、转型和交易
+
+| 时间 | 事件 | 财务与战略含义 |
+|---|---|---|
+| 2023-03 起 | Stephen Chang 任 CEO 后，把目标从 component supplier 转向 application-specific total solutions | 从通用 MOSFET 向控制器+DrMOS/SPS+MOSFET+封装组合迁移，追求更高 BOM 和切换成本；三周年时管理层明确把 Advanced Computing 置于核心增长位置 |
+| FY2023—FY2025 | 每年新品数量约 60、100+、100+；2020 起投入多相控制器，2024—2026 推出 NVIDIA OVR4/OVR16、Intel IMVP9.3 等系列 | Power IC FY2025 收入 **2.299 亿美元**、同比 +11.7%，快于 discrete 的 +5.5%；但 FY2026Q3 又出现 mix 波动 |
+| 2024—2025 | AI/GPU 从控制器/功率级扩到 48V PDB、hot-swap、IBC 中压 MOSFET | 由 GPU Vcore 单点扩到 grid-to-core 的板级链条，单系统可售 BOM 提高 |
+| 2025-02 | 24 个月 SiC 许可与工程合同结束 | FY2025 许可收入 1,384 万美元、同比 -34.8%；高毛利非经常项退出，使后续收入/毛利基数更干净但短期承压 |
+| 2025-07 至 2026Q3 | 出售重庆 JV 约 20.3% 股权，总代价 1.50 亿美元；持股降至 18.9%，已收 1.335 亿、剩余应收约 1,560 万 | FY2025 计提 7,680 万减值；换来净现金并偿还债务、回购股票、增加 R&D/设备投入。供应能力仍靠月度产能协议，控制权下降是风险 |
+| 2025-07 | 与美国商务部调查达成 425 万美元一次性和解 | 公司称不影响持续经营；历史合规尾部风险降低，但全球贸易/出口控制仍重要 |
+| 2025-10—2026-06 | 宣布 800V 支持；APEC/PCIM 展示 SiC/GaN/MOSFET/控制器；双面散热、SmartClamp、AmpStack 连续发布 | 产品路线覆盖 48V 当期收入和 800V 期权；需要客户 DVT/AVL/量产收入验证 |
+| 2026-04 | Kaynes 印度 OSAT 启动 IPM5 量产 | 制造地域多元化，主要支持非 AI 工业/家电；不是公司收购 |
+
+**收购结论：**过去三年没有披露改变公司版图的重大并购。最重要的资本动作是**出售而非收购**重庆 JV 部分股权；公司提到可用资金收购互补资产，但截至本报告日没有已宣布的大型交易。[F]
+
+## 三、最新股价、估值、收入增速和财务健康度
+
+### 3.1 2026-07-12 估值快照
+
+| 指标 | 最新值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | **$37.56** | 2026-07-10 收盘；7/12 为周日 | 当日 -1.11%，52 周区间约 $17.01—$54.34；[历史行情](https://www.investing.com/equities/alpha-and-omega-historical-data) |
+| 稀释前流通股 | **2,993 万股** | 2026-04-30 10-Q 披露 | 与市场数据基本一致 |
+| 市值 | **约 $1.124bn** | $37.56×29.93m | 市场数据源约 $1.12bn—$1.13bn |
+| TTM 营收 | **$685.0m** | 截至 2026-03-31 的四季度 | 同比约 **+0.6%**；[StockAnalysis](https://stockanalysis.com/stocks/aosl/) |
+| 最近一季收入增速 | **-0.5% YoY / +0.9% QoQ** | FY2026Q3 | Advanced Computing 和美国 Tier-1 手机抵消 PC/消费疲软 |
+| FY2025 收入增速 | **+5.9%** | FY2025 | 出货量 +17.1%，ASP -8.0%，说明量增被价格/mix 抵消 |
+| FY2026E 收入增速 | **约 -2.8%** | 九个月实际 $508.6m + Q4 指引中值 $168m | 模型值，不是公司全年指引 |
+| Trailing PE | **N/M** | TTM EPS 约 -$3.56 | 数学负值约 -10.5x，但亏损公司 P/E 无经济意义 |
+| Forward PE | **N/M** | 2026-07-12 主流数据源无有效正值 | 未来 12 个月盈利预测仍接近零/为负；不应强行使用负 forward P/E |
+| PS | **约 1.64x** | 市值 $1.124bn / TTM 收入 $685.0m | 对低毛利功率器件不便宜也不极端；能否重估取决于毛利而非只看收入 |
+| 最新季 GAAP / 非 GAAP 毛利率 | **21.1% / 21.7%** | FY2026Q3 | FY2026Q4 指引中值为 22.3%/23.0% |
+| TTM GAAP 毛利率 | **约 22.4%** | TTM 毛利约 $153.5m / 收入 $685.0m | 仍明显低于高端模拟/电源管理龙头 |
+| 最新季 GAAP 净利率 | **-8.4%** | -$13.8m / $163.8m | 核心经营仍亏损 |
+| TTM GAAP 净利率 | **-15.5%** | 净亏损约 $106.3m / $685.0m | 包含 FY2025Q4 重庆 JV 约 $76.8m 减值；剔除后仍未形成稳健 GAAP 盈利 |
+| Beta | **约 2.55** | 2026-07 市场数据 | 高波动、小盘、主题和周期双重敏感 |
+
+### 3.2 资产负债表评估：偿债很强，营运资本效率偏弱
+
+| 2026-03-31 项目 | 金额 | 判断 |
+|---|---:|---|
+| 现金及等价物 | **$190.3m** | 足以覆盖研发、扩产和短期波动 |
+| 短期+长期有息债务 | **$4.4m** | 较 2025-06-30 的 $26.7m 大幅下降 |
+| 净现金 | **约 $185.9m** | 约占当前市值 16.5% |
+| 流动资产 / 流动负债 | **$452.8m / $136.5m** | 流动比率 **3.32x** |
+| 速动资产 / 流动负债 | **约 $253.8m / $136.5m** | 速动比率 **1.86x** |
+| 库存 | **$199.0m** | 相当于 TTM 收入 29%；库存天数 139 天，偏高 |
+| 总负债 / 股东权益 | **$176.2m / $800.2m** | 总负债权益比约 22%；有息债务权益比仅约 0.55% |
+| 九个月经营现金流 | **-$6.3m** | 上年同期 +$32.5m；库存、应付和净亏损拖累 |
+| 九个月 CapEx | **$36.9m** | FY2026Q4 预计 $15m—$17m，FY2026 全年约 $52m—$54m |
+| 采购承诺 / 资本承诺 | **$57.2m / $14.8m** | 采购承诺是材料/晶圆/封测预测，不是客户 backlog |
+
+**健康度评分：7/10。**短期破产或再融资风险低，净现金给 R&D 和 AI 中压扩产提供缓冲；扣分来自连续 GAAP 亏损、经营现金流转负、库存天数高、JV 控制权下降以及毛利率对利用率高度敏感。AOS 当前的问题不是“活不下去”，而是“净现金能否转化为高回报、已认证的 AI 产能”。[F][FY2026Q3 10-Q](https://www.sec.gov/Archives/edgar/data/1387467/000162828026031360/aosl-20260331.htm)
+
+## 四、最新与最近四次财报：五季度财务、业务、订单和 AI 收入
+
+### 4.1 五季度核心财务
+
+| 财报季度（截至日） | 收入；YoY/QoQ | GAAP / 非 GAAP GM | GAAP 净利润；净利率 | 非 GAAP EPS | 经营现金流 | 现金 | 库存天数 | DMOS / Power IC / 其他收入 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| **FY2025Q3**（2025-03-31） | $164.6m；+9.7%/-4.9% | 21.4% / 22.5% | -$10.8m；-6.6% | -$0.10 | +$7.4m | $169.4m | 129 | $106.8m / $54.6m / $3.2m |
+| **FY2025Q4**（2025-06-30） | $176.5m；+9.4%/+7.2% | 23.4% / 24.4% | -$77.1m；-43.7% | +$0.02 | -$2.8m | $153.1m | 126 | $107.3m / $68.7m / $0.5m |
+| **FY2026Q1**（2025-09-30） | $182.5m；+0.3%/+3.4% | 23.5% / 24.1% | -$2.1m；-1.2% | +$0.13 | +$10.2m | $223.5m | 124 | $108.5m / $72.7m / $1.3m |
+| **FY2026Q2**（2025-12-31） | $162.3m；-6.3%/-11.1% | 21.5% / 22.2% | -$13.3m；-8.2% | -$0.16 | -$8.1m | $196.3m | 140 | $101.0m / $58.8m / $2.5m |
+| **FY2026Q3 最新**（2026-03-31） | **$163.8m；-0.5%/+0.9%** | **21.1% / 21.7%** | **-$13.8m；-8.4%** | **-$0.28** | **-$8.3m** | **$190.3m** | **139** | **$115.1m / $46.9m / $1.8m** |
+
+> FY2025Q4 GAAP 净亏损含重庆 JV **$76.8m** 非现金减值；因此该季度 GAAP 净利率不能代表核心经营。相反，FY2026Q2—Q3 的亏损主要是低利用率、输入/运营成本和 R&D 增加，值得更重视。[F]
+
+### 4.2 五季度终端业务收入
+
+| 财报季度 | Computing | Consumer | Communications | Power Supply & Industrial | Advanced Computing / 纯 AI DC 估算 |
+|---|---:|---:|---:|---:|---:|
+| FY2025Q3 | $78.9m；+14.8% YoY/+3.6% QoQ | $21.4m；-9.0%/-4.9% | $28.3m；+5.8%/-14.4% | $32.8m；+32.4%/-6.2% | AI+显卡量产增强；纯 AI DC **$5m—$8m，[M]** |
+| FY2025Q4 | $92.8m；+29.7%/+17.9% | $26.6m；-5.8%/+23.9% | $26.8m；-1.7%/-5.2% | $29.6m；+7.3%/-9.8% | 新 AI 项目初始出货、AI+显卡创纪录；纯 AI DC **$9m—$13m，[M]** |
+| FY2026Q1 | $97.1m；+27.1%/+4.6% | $23.5m；-25.8%/-11.6% | 约 $32.6m；-7.8%/+21.4% | $27.9m；-12.4%/-5.6% | AI+显卡环比下降但同比 >2x；纯 AI DC **$6m—$9m，[M]** |
+| FY2026Q2 | $80.5m；+5.9%/-17.1% | $19.1m；-14.9%/-18.3% | $33.1m；约持平/+1.1% | $27.1m；-22.5%/-3.0% | AI/显卡消化期延长；纯 AI DC **$4m—$7m，[M]** |
+| FY2026Q3 最新 | **$80.4m；+2.1%/-0.1%** | **$19.3m；-9.8%/+0.8%** | **$33.7m；+18.7%/+1.9%** | **$28.5m；-13.1%/+5.3%** | Advanced Computing **$20.1m、占总收入12.3%**；纯 AI DC **$11m—$15m，[M]** |
+
+**AI 估算方法：**FY2026Q3 的 $20.1m 是公司披露的 broad Advanced Computing；本报告按 AI 数据中心约占该池 55%—75%，其余为显卡及传统高性能服务器。历史季度用管理层“初始出货/消化/小于计划/同比增速”的方向、产品结构和 FY2026Q3 锚点回推。误差可能达 ±25%，不能替代公司未来拆分。[M]
+
+公司只报告一个合并毛利率，不披露终端业务利润或毛利。为回应分业务盈利问题，下表用当季合并 GM、DMOS/Power IC mix、license 退出、终端价格敏感度和最新产品公开 ASP 反推**产品毛利率区间**；各区间不是 GAAP segment margin，且因产品在多个终端交叉销售，不能加权回算成精确公司毛利。[M]
+
+| 财报季度 | Computing 毛利率估算 | Consumer | Communications | Power Supply & Industrial | 主要 mix 解释 |
+|---|---:|---:|---:|---:|---|
+| FY2025Q3 | **21%—27%** | 17%—23% | 23%—30% | 19%—25% | 许可收入减少压低合并 GM；AI 控制器/功率级开始量产 |
+| FY2025Q4 | **24%—30%** | 18%—24% | 23%—30% | 18%—24% | Power IC +25.8% QoQ、AI/显卡 record mix 拉升 GM |
+| FY2026Q1 | **25%—32%** | 17%—23% | 24%—32% | 17%—23% | Power IC 接近产品收入 40%，但通用 DMOS ASP 仍承压 |
+| FY2026Q2 | **21%—28%** | 16%—22% | 25%—33% | 16%—22% | AI/显卡消化、输入成本上升、库存天数升至 140 |
+| FY2026Q3 最新 | **20%—28%**；其中 Advanced Computing 约 **28%—40%** | 16%—22% | **26%—34%** | 17%—24% | 高价值 AI 与 Tier-1 手机较强，但 Power IC 下滑、利用率低；合并 GM 仅 21.1% |
+
+这些区间说明一个重要交叉验证：如果 Advanced Computing 产品毛利已明显高于公司平均，其占比从约一成升到二成应推动合并 GM 明显改善；若未来占比上升但合并 GM 仍低于 24%，就应下调高端产品毛利、客户份额或定价权假设。
+
+### 4.3 五季度订单、交期、取消率和渠道信号
+
+| 财报季度 | Backlog / Bookings / B2B | 客户项目与交付窗口 | 交期/产能信号 | 取消/推迟风险推断 | 订单压力判断 |
+|---|---|---|---|---|---|
+| FY2025Q3 | 未披露金额/B2B | 一个既有 premier 客户的数据中心应用获得更高 BOM design win；3 月开始量产，延续至 6 月 | 控制器+每 GPU 多个功率级；additional programs 仍在 design-in | **10%—20% [M]**：H2 可见度有限、项目集中 | **3.5/5**：首个量产确认，但订单透明度低 |
+| FY2025Q4 | 未披露 | 新 AI program 强劲初始出货，AI+显卡创纪录；管理层预告 9 月消化 | PC 关税 pull-in 与 AI 初始备货混在一起 | **10%—20% [M]**：初始批次后消化，易把 pull-in 当长期 run-rate | **4/5 后转 2.5/5** |
+| FY2026Q1 | 未披露 | 一个最初数据中心项目的 ramp 规模小于原计划；多个新 AI 机会继续推进 | 48V→12V PDB、fast-switching 和 hot-swap SOA 机会扩大 | **15%—25% [M]**：已有实际“规模低于计划”的反证 | **2.5/5**：需求仍在，交付节奏下修 |
+| FY2026Q2 | 未披露 | AI/显卡 digestion 延长；MV hot-swap 和 48V→12V IBC 在头部 ODM 进入 build phase | 管理层称对新 MV MOSFET 需求有清晰可见度 | **8%—18% [M]**：build phase 强于 design-in，但仍可能 pushout | **3.5/5** |
+| FY2026Q3 最新 | 只称 backlog 提供良好可见度；未给金额/bookings/B2B | power supply、module maker、cloud、hyperscaler 客群扩展；部分头部 ODM 为大型 hyperscaler build | 正在扩 MV 产能；新量产产品公开交期 **12—18 周**；8英寸行业利用率 85%—90% | **5%—15% [M]**：平台项目质量高，但客户/份额/约束性未知 | **4.2/5**：量产、收入和扩产方向一致 |
+
+**不能做的推断：**$57.2m 采购承诺是 AOS 对晶圆/材料/封测的供应承诺；$3.5m 客户押金也没有披露为 AI。两者都不是可直接确认的 AI backlog。公司两大分销商 FY2025 占收入 **51.3%（WPG）和 22.1%（Promate）**，分销订单可能受渠道库存、年度价格和 pull-in 影响，取消率必须保留折扣。[F]
+
+## 五、FY2026Q3 最新指引、业务收入占比和产品映射
+
+### 5.1 FY2026Q4 指引及各业务走向
+
+| 项目 | FY2026Q3 实际 | FY2026Q4 指引/方向 | 中值变化 | 关键驱动 |
+|---|---:|---:|---:|---|
+| 公司收入 | $163.8m | **$168m ± $10m** | +2.6% QoQ | Advanced Computing、手机、高价值 mix |
+| GAAP GM | 21.1% | **22.3% ±1%** | +120bp | 约一半利用率、一半 mix 改善 |
+| 非 GAAP GM | 21.7% | **23.0% ±1%** | +130bp | AI/服务器、中压 MOSFET、手机高端机 |
+| Computing | $80.4m / 49.1% | 低至中个位数环比增长；模型约 **$82.0m—$84.4m** | +2%—5% | AI/服务器强；PC 稳；平板季节性下降 |
+| Consumer | $19.3m / 11.8% | 环比大致持平 | 约 0% | 游戏复苏被家电疲弱抵消 |
+| Communications | $33.7m / 20.6% | 环比小幅下降，但维持高同比 | -1%—-4% | 美国 Tier-1 手机强，优先分配产能；中国弱 |
+| Power Supply & Industrial | $28.5m / 17.4% | 中个位数环比增长；模型约 **$29.6m—$30.2m** | +4%—6% | 印度 e-mobility backlog、DC fan、power tools 小幅改善 |
+
+### 5.2 最新业务对应产品、型号、规模和产品毛利率推断
+
+| 业务/产品族 | 代表型号 | 当前商业状态 | 当前收入贡献 | 产品毛利率估算 | 销售增速/交叉验证 |
+|---|---|---|---:|---:|---|
+| AI/GPU 核心多相控制+DrMOS/SPS | AOZ73004CQI、AOZ73016QI、AOZ73216QI、AOZ73104QI；AOZ5310NQI-A、AOZ53228/262/263QI、AOZ52986QI | OVR4-22/OVR16 产品可量产；SmartClamp 2026-04 量产，12 周交期 | **$24m—$36m 年化 [M]** | **32%—45% [M]** | Advanced Computing 最新季 >2x QoQ、>40% YoY；Power IC 最新季反而下滑，说明 AI Power IC 尚未独立主导 |
+| 48/54V hot-swap 与 IBC 中压 MOSFET | AONC40202 25V、AONC68816 80V、AONA66642、AONA68815、AOLV66935、AOPL66801 AmpStack | 已出货；头部 ODM build phase；新产品 14—16 周或 16 周交期 | **$18m—$30m 年化 [M]** | **27%—38% [M]** | FY2026Q3 DMOS +13.9% QoQ/+7.7% YoY，和 Advanced Computing 反弹一致 |
+| 800V αSiC/GaN/堆叠器件 | AOM020V120X3、AOGT020V120X2Q、AOGT035V65GA1、AOFG018V10GA1、AOPL68801 | 展会/产品组合/协作阶段；部分器件可供货，未披露 800V 客户量产 | **AI DC 约 $0m—$3m 年化 [M]** | **25%—45% 初期 [M]** | 技术方向得到 NVIDIA/OCP 验证；AOS 订单、AVL、DVT、收入均未披露 |
+| 数据中心 DC fan/motor power | 30—150V MOSFET、半桥/三相 driver、AOZ6812QI/AOZ6816QI MCU | 管理层称 DC fan 强、受 AI/DC 建设拉动；客户名未披露 | **$8m—$14m 年化 [M]** | **22%—32% [M]** | Power Supply & Industrial 最新季 +5.3% QoQ，但同比 -13.1%，DC fan 仍是小业务中的亮点 |
+| 高端手机电池保护/更高充电电流 | application-specific battery MOSFET、保护 IC/封装；具体 Tier-1 BOM 未披露 | 美国 Tier-1 高端机量产、优先分配产能 | **$85m—$110m 年化 [M]** | **27%—36% [M]** | Communications 最新季 +18.7% YoY，BOM content 扩张明显；非 AI 但财务重要 |
+| Intel Panther/Wildcat Lake 总电源方案 | AOZ71049QI、AOZ71149QI、AOZ71146QI + AOZ52986QI | 多家 OEM/ODM AI notebook 量产；控制器 12—16 周、SPS 16—18 周 | Computing 内，未单列；**$25m—$45m 年化 [M]** | **30%—42% [M]** | PC 市场可能下降，但单机 BOM 增加；属于“份额/mix”而非终端高增长 |
+
+公开 1,000 颗量级价格提供了收入内容量的硬锚：AOZ73004CQI **$1.20**、AOZ73016QI **$4.00**、SmartClamp AOZ53228QI **$1.40**、AOZ52986QI **$1.50**、AONC40202/AONC68816 **$1.85/$1.95**、AmpStack AOPL66801 **$6.16**。大客户量产净价通常低于公开小批量价，本文单位含量用范围吸收折扣与产品 mix。[F/M]
+
+### 5.3 重点产品与明确跳过项目
+
+**重点且不能漏：**
+
+1. MV MOSFET + hot-swap + 48V→12V IBC：当前 AI 增量最直接。
+2. OVR 多相控制器 + SmartClamp DrMOS/SPS：能从单颗器件走向完整 GPU 核心方案。
+3. AmpStack AOPL66801：新发布的小产品，但把两个 80V MOSFET 垂直堆叠成半桥，可能提高 IBC/电机单位面积内容，必须跟踪。
+4. αSiC/GaN 800V：收入很小但 2027 期权大。
+5. DC fan：AI 设施的间接小业务，规模不大但已有管理层收入方向确认。
+6. 高端手机电池保护：非 AI，但当前唯一可见的双位数同比增长大业务，决定公司现金流底盘。
+
+**本报告跳过或降权的低增速非 AI 业务：**成熟 PC discrete、平板、游戏主机当前代、家电、电视、太阳能、普通 AC/DC、power tools、低端快充、一般 e-mobility、传统工业 IGBT/IPM5。它们仍贡献收入和产能利用率，但最新财报显示多数平淡或下降；IPM5 印度量产只作为供应链多元化观察，不纳入 AI 高增长估值。下一代游戏平台预计 2028 才有更大影响，也不纳入一年预测。
+
+## 六、当前每个高增长/关键产品：收入、AI 重要性、紧急性、供需与定价权
+
+评分为 1—5，5 最高；“供需紧张”分数越高表示越接近供不应求。
+
+| 关键产品/业务 | 当前收入贡献（年化） | 当前增速 | AI 技术栈重要性 | 时间紧急性 | 供需紧张 | 垄断/控制力 | 溢价能力 | 核心判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| AI 核心多相控制器+DrMOS/SPS | **$24m—$36m [M]** | 相关 Advanced Computing >40% YoY；产品自身未拆 | **5** | **5** | **3.5** | **2.5** | **3.5** | GPU stepping、OVR、环路、热与固件认证形成高切换成本；但 MPS/Infineon/TI/ADI 等强敌多，AOS 非垄断 |
+| 48/54V MV MOSFET、hot-swap、IBC | **$18m—$30m [M]** | DMOS +7.7% YoY；AI 子集更快 | **5** | **5** | **4.0** | **2.5** | **3.5** | 当前量产主线；高 SOA、低 RDS(on)、双面散热和 ODM build 提升价值，仍有大量 pin-compatible/二供替代 |
+| 800V αSiC/GaN/堆叠 MOSFET | **$0m—$3m AI DC [M]** | 低基数，无法计算 | 当前 **2** / 2027 **5** | **3** | **2.0** | **1.5** | **2.5** | 技术方向正确，商业资格未证实；通用 SiC/GaN 供给并非普遍紧缺 |
+| DC fan 电机功率方案 | **$8m—$14m [M]** | 当前环比正增长，未披露同比 | **2.5** | **3** | **2.5** | **1.5** | **2.0** | AI 机柜/电源/设施仍需风扇，但液冷提升会限制每计算柜风扇增长；器件可替代性高 |
+| 高端手机电池保护 | **$85m—$110m [M]** | Communications +18.7% YoY | **1** | **3.5** | **3.0** | **3.0** | **3.0** | 非 AI；Tier-1 高端机、充电电流和封装认证构成壁垒，是公司财务底盘 |
+
+**当前总 AI 暴露：**纯 AI 数据中心年化收入估算约 **$50m—$70m**，占 TTM 收入约 **7%—10%**；若把显卡、高性能服务器和 DC fan 全部纳入“Advanced Computing/AI-adjacent”，宽口径可达 **$80m—$100m**。两者不能混用。[M]
+
+## 七、一年后产品收入三情景
+
+### 7.1 产品收入贡献和增速
+
+| 关键产品/业务 | 当前年化 | 基准：2027-07 年化收入 / 增速 | 乐观：年化收入 / 增速 | 极度乐观：年化收入 / 增速 | 主要前提 |
+|---|---:|---:|---:|---:|---|
+| AI 核心控制器+DrMOS/SPS | $24m—$36m | **$40m—$55m / +45%—80%** | **$60m—$85m / +90%—150%** | **$95m—$130m / +200%—300%** | OVR4/16 多平台量产；Power IC mix 恢复；每 GPU 功率级增加 |
+| 48/54V MV MOSFET、hot-swap、IBC | $18m—$30m | **$35m—$50m / +60%—95%** | **$55m—$80m / +130%—190%** | **$90m—$130m / +250%—350%** | 头部 ODM build 转量产；内部+外部扩产合格；8英寸供给可得 |
+| 800V αSiC/GaN/堆叠 MOSFET | $0m—$3m | **$5m—$10m / 低基数** | **$15m—$25m** | **$35m—$60m** | 基准为样品/NRE/小批；乐观进入 MGX/Kyber DVT；极乐观提前量产且 AOS 进入 AVL |
+| DC fan 电机功率 | $8m—$14m | **$11m—$16m / +20%—35%** | **$15m—$22m / +45%—70%** | **$22m—$32m / +90%—140%** | AI 服务器/电源架出货增长，液冷未显著减少风扇价值 |
+| 高端手机电池保护 | $85m—$110m | **$95m—$120m / +8%—15%** | **$110m—$135m / +20%—30%** | **$125m—$155m / +35%—50%** | 美国 Tier-1 份额/BOM 延续、内存价格不破坏高端需求 |
+
+### 7.2 一年后的战略评分
+
+| 产品 | 情景 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/控制力 | 溢价能力 | 供应链采纳判断 |
+|---|---|---:|---:|---:|---:|---:|---|
+| 核心控制器+DrMOS | 基准 / 乐观 / 极乐观 | 5/5/5 | 5/5/5 | 3.5/4/4.5 | 2.5/3/3.5 | 3.5/4/4.5 | 多平台二供 / 多 hyperscaler 主供 / 至少一个平台高份额主供 |
+| MV MOSFET/IBC/hot-swap | 基准 / 乐观 / 极乐观 | 5/5/5 | 5/5/5 | 3.5/4.3/4.8 | 2.5/3/3.5 | 3.5/4/4.5 | ODM build 转量产 / 多 ODM 复制 / 短期合格产能短缺 |
+| 800V WBG | 基准 / 乐观 / 极乐观 | 4/5/5 | 3.5/4.5/5 | 2.5/3.5/4.5 | 1.5/2.5/3 | 2.5/3.5/4.5 | DVT/小批 / 进入公开 AVL / 原生 800V 量产且供不应求 |
+| DC fan | 基准 / 乐观 / 极乐观 | 2.5/3/3 | 3/3.5/4 | 2.5/3/3.5 | 1.5/2/2.5 | 2/2.5/3 | 常规放量 / 模块方案 attach 上升 / 电源架/热管理短缺 |
+
+## 八、BOM 拆分、每 MW/机架/GPU/光端口内容量和价格传导
+
+### 8.1 AOS AI 核心多相控制器+DrMOS/SPS
+
+| BOM 环节 | AOS 代表产品 | 数量/价格硬锚 | AOS 内容量模型 |
+|---|---|---|---:|
+| GPU/SoC 多相控制 | AOZ73004CQI（OVR4-22）、AOZ73016/73216QI（OVR16） | 1—2 控制器/GPU；公开价约 $1.2—$4/颗 | **$2—$8/GPU** |
+| 每相功率级 | AOZ5310NQI-A、SmartClamp AOZ53228/262/263QI、SPS | 8—48 个 DrMOS/SPS/GPU；公开代表价 $1.4—$1.5/颗 | **$12—$72/GPU**；量产折扣后中枢更低 |
+| 合计 AOS 核心电源 | 控制器+AOS 功率级 | 不含电感、电容、PCB、磁件、其他厂商 PMIC | **$15—$75/GPU** |
+
+单位换算（用项目内 GB300/NVL72 **72 GPU、142kW/rack、约 507 GPU/IT MW** 的容量锚）：
+
+- **每 GPU：$15—$75**；基准 $25—$45。[M]
+- **每 72-GPU rack：$1,080—$5,400**；基准 $1,800—$3,240。[M]
+- **每 IT MW：约 $7,600—$38,000**；基准 $12,700—$22,800。[M]
+- **每 optical port：$0**，没有证据表明上述器件按光端口附着；光模块内部 PMIC 不能在无型号/客户证据时归给 AOS。
+
+### 8.2 48/54V hot-swap、PDB 和 IBC 中压 MOSFET
+
+典型链路为：`50/54V 母线 → hot-swap/ORing → PDB → 48/54V→12V/6V IBC → GPU Vcore`。
+
+| 功能 | 代表产品 | 公布参数/价格 | 模型数量与价值 |
+|---|---|---|---:|
+| 80V IBC 高侧/低侧 | AONC68816、AONA68815、AOPL66801 AmpStack | AONC68816 $1.95；AOPL66801 半桥 $6.16、16周交期 | 每 2—4 GPU tray 约 8—24 颗离散 FET 或 2—8 个半桥；**$20—$90/tray** |
+| 25V 次级/同步整流 | AONC40202、AONA66642 | AONC40202 $1.85；0.7mΩ、405A、双面散热 | 每 tray 约 8—24 颗；**$15—$45/tray** |
+| 48V hot-swap/SOA | AOLV66935 | <1.85mΩ、175°C；价格未披露 | 每 tray/power board 约 4—16 颗；**$10—$50** |
+| 控制/驱动 | AOS Power IC/driver | 型号随模块而异 | **$5—$20/tray** |
+
+合计估算：
+
+- **每 GPU：$15—$80**；基准 $25—$50。[M]
+- **每 72-GPU rack：$1,080—$5,760**；基准 $1,800—$3,600。[M]
+- **每 IT MW：$7,600—$40,600**；基准 $12,700—$25,400。[M]
+- **每 optical port：$0**，除非未来披露网络设备/光模块专用 socket。
+
+### 8.3 800V αSiC/GaN 和堆叠 MOSFET
+
+| 800V 功率链 | AOS 产品 | BOM 内容 | 当前成熟度 |
+|---|---|---|---|
+| AC/MV→800VDC 高压转换 | AOM020V120X3、AOGT020V120X2Q 1,200V αSiC | SiC MOSFET/二极管、驱动、隔离、磁件、控制；AOS 只覆盖半导体部分 | 正式产品/展会，未披露客户量产 |
+| 800V→低压高频 DC/DC | AOGT035V65GA1 650V GaN、AOFG018V10GA1 100V GaN | 高压 GaN、低压 GaN/MOSFET、驱动、保护、LLC 磁件 | upcoming/产品组合；未披露 AOS 量产收入 |
+| 54V/12V 次级与半桥 | AOPL68801、AOPL66801 AmpStack | 垂直堆叠双 die，减少 PCB 寄生和面积 | 80V AOPL66801 已量产；800V 系统采纳未证实 |
+
+若 AOS 赢得一套完整 800V 半导体子 BOM，本报告估算其**可服务内容量**为：
+
+- **每 IT MW：$20,000—$80,000**；对应器件/驱动/控制，不含 power shelf、磁件、母排和系统价格。[M]
+- **每 1MW Kyber 类 rack：$20,000—$80,000**；若 576 GPU，则约 **$35—$140/GPU**。[M]
+- **当前实际采纳内容：接近 $0/MW**，因为原生 800V 尚未大规模量产，不能把可服务 BOM 当收入。
+- **每 optical port：$0**。
+
+这一区间低于行业全栈半导体可寻址内容，以避免把 Infineon 等龙头的 `$100—$250/kW` 全部内容错误套给 AOS。NVIDIA 明确把原生 800V 全规模量产放在 2027 Kyber；2026 是标准、DVT、桥接方案和小批年。[F/M]
+
+### 8.4 DC fan 与手机 BOM
+
+| 产品 | 单位内容量 | 说明 |
+|---|---:|---|
+| 数据中心 DC fan 电机 MOSFET/driver/MCU | **$0.5—$2/风扇；约 $10—$60/rack；约 $70—$420/IT MW [M]** | 液冷计算 rack 风扇少，但电源架、网络、冷却设备仍有风扇；不能按 GPU 或光端口线性 |
+| 高端手机电池保护 | **约 $0.30—$1.20/手机 [M]** | 充电电流提高可能增加并联 FET、封装和保护 IC；Tier-1 净价未披露 |
+
+### 8.5 价格传导链
+
+```text
+8英寸/12英寸晶圆、铜/银、封装材料、测试成本
+  → AOS Oregon / 重庆JV / 第三方 foundry + 上海/外包 OSAT
+  → MOSFET、SiC/GaN、控制器、DrMOS/SPS（公开1k价不是大客户净价）
+  → WPG/Promate 等分销及直接客户
+  → 电源模块/PDB/IBC/ODM 的认证 BOM
+  → GPU/CPU 平台、OEM、云厂/hyperscaler
+```
+
+FY2025 AOS 产品出货量 **+17.1%**，但 ASP **-8.0%**，说明传统业务中的年度降价很强。2026 年 TrendForce 预计全球 8 英寸利用率 **85%—90%**、产能同比约 -2.4%，部分 foundry 计划涨价 **5%—20%**；AOS 能否传导成本取决于 AI 专用产品 mix 和认证稀缺性。基准假设高端 AI 价格持平至 +5%，通用产品仍 -3%—-8%；乐观假设合格 MV/DrMOS 短缺带来 5%—15% 临时溢价；极乐观 15%—25% 溢价只能持续 2—4 个季度。[F/M][TrendForce 8-inch](https://www.trendforce.com/presscenter/news/20260113-12877.html)
+
+## 九、当前产能能力、供应链采纳和认证阶段
+
+公司未披露按产品的 wafer/month、良率和美元产能。下表是以最新收入 run-rate、公开交期、利用率评论、扩产和封测上限反推的**合格可售收入能力**，不是设备理论产值。
+
+| 产品/业务 | 当前合格收入产能（年化） | 当前收入/产能利用 | 瓶颈 | 供应链采纳 | 认证阶段 |
+|---|---:|---:|---|---|---|
+| 核心控制器+DrMOS/SPS | **$40m—$60m [M]** | 约 50%—80% | BCD/Power IC wafer、良率、控制器固件、平台验证 | OVR4/16、GPU/PC 已有量产；AI 客户名未披露 | AOZ73004 声明 full OVR4-22 compliant；AOZ73016 为 OVR16 compliant；量产供货 12—16周 |
+| MV MOSFET/IBC/hot-swap | **$35m—$50m [M]** | 约 55%—85%，局部合格产能更紧 | 高 SOA 工艺、双面/堆叠封装、8英寸/封测、ODM qualification | 头部 ODM build phase；power/module/cloud/hyperscaler 客群扩展 | AONC/AmpStack 已 production quantity；客户 AVL/DVT/份额未公开 |
+| 800V WBG | **$3m—$8m 小批/样品能力 [M]** | 很低 | 1,200V SiC/650V GaN 良率、驱动/封装、系统认证、客户名 | AOS 自称与 NVIDIA 协作；未见公开量产 design win | 产品/展示/联合设计；尚非可核验量产 AVL |
+| DC fan | **$15m—$25m [M]** | 约 40%—75% | 模块客户、价格、液冷替代、普通 MOSFET 竞争 | 已有收入方向确认 | 客户级认证未披露 |
+| 高端手机电池保护 | **$120m—$150m [M]** | 约 65%—90%，公司正优先分配产能 | Tier-1 产品周期、封装、质量和第二来源 | 美国 Tier-1 高端机大规模量产 | OEM qualification 完成；型号/份额保密 |
+
+**总公司产能判断：**FY2026Q3 毛利率下降受“较低利用率”影响，说明 AOS 并非全公司 sell-out；真正偏紧的是**已通过客户验证的高性能 MV/Power IC/手机封装产能**。总产能与合格产品产能必须分开。[F/M]
+
+## 十、一年后产能与认证三情景
+
+| 产品 | 基准：产能/采纳/认证 | 乐观：产能/采纳/认证 | 极度乐观：产能/采纳/认证 |
+|---|---|---|---|
+| 核心控制器+DrMOS/SPS | **$65m—$85m**；多个 GPU/CPU 平台二供；OVR量产扩大 | **$90m—$125m**；2—3 个 hyperscaler/平台高份额；Power IC mix 重新接近 40% | **$140m—$190m**；至少一个新平台主供、需求大于合格供给；需外部 wafer/OSAT 快速扩张 |
+| MV MOSFET/IBC/hot-swap | **$60m—$85m**；现有 ODM build 转量产、增加 1—2 家 ODM | **$100m—$140m**；多家 cloud/hyperscaler AVL，AmpStack/双面散热 attach 上升 | **$160m—$220m**；48V+早期800V同时放量，局部交期 >26 周、出现加急溢价 |
+| 800V WBG | **$15m—$25m**；DVT/NRE/样品和桥接小批；客户仍不公开 | **$35m—$55m**；至少一家 MGX/电源系统商公开 design win，进入 AVL/EVT-DVT | **$70m—$110m**；Kyber/原生800V提前，AOS 获批量 PO；这要求 NVIDIA/ODM 公开生态验证 |
+| DC fan | **$20m—$30m**；随服务器/电源架增长 | **$28m—$40m**；driver+MCU attach 增加 | **$40m—$55m**；设施与 power shelf 同时短缺，仍受液冷天花板限制 |
+| 手机保护 | **$145m—$175m**；现有 Tier-1 份额和 BOM 延续 | **$170m—$210m**；新机型高电流和份额上升 | **$210m—$250m**；主供地位扩大且高端机需求不受内存涨价影响 |
+
+产能扩张的真实约束顺序：`客户平台/AVL → wafer 工艺良率 → 专有封装与测试 → 设备安装 → 操作员/工程师 → 收入确认`。只有设备 CapEx、产品发布或“6亿颗/月”封测上限，不能证明 AI 量产产能。
+
+## 十一、基于 backlog、供给和渠道验证的未来一年公司增速
+
+### 11.1 可核实订单基础与缺失项
+
+**可核实：**
+
+- FY2026Q3 管理层明确：MV backlog 有良好可见度、正在扩产、头部 ODM 为大型 hyperscaler 的 IBC 进入 build phase。[F]
+- Advanced Computing 最新季收入 $20.1m，环比 >2x、同比 >40%，下一季仍预计强劲环比增长。[F]
+- AONC40202/AONC68816、SmartClamp、AmpStack 等已标注 production quantity，交期 12—16 周；AOZ52986QI 16—18 周。[F]
+- 8英寸 AI power IC 需求使行业利用率升至 85%—90%，存在 5%—20% foundry 涨价意图。[C]
+- 公司在 FY2026Q1 已出现某数据中心项目 ramp 小于原计划，证明客户项目并非只会上修。[F]
+
+**仍缺失：**backlog 金额、bookings、B2B、客户名、项目 MW/GPU 数量、AOS 每平台份额、不可取消比例、定金、交付季度、取消率和 800V PO。缺失项使任何精确订单预测都必须打 15%—35% 风险折扣。
+
+### 11.2 一年公司情景
+
+基准比较基数采用 FY2026E **$676.6m**（九个月实际+$168m 指引中值）。
+
+| 项目 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| 未来一年公司收入 | **$730m—$760m** | **$815m—$865m** | **$935m—$1,015m** |
+| 收入增速 | **+8%—12%** | **+20%—28%** | **+38%—50%** |
+| Advanced Computing 宽口径收入 | **$125m—$150m** | **$175m—$220m** | **$250m—$320m** |
+| 纯 AI 数据中心收入 | **$90m—$120m** | **$140m—$190m** | **$220m—$300m** |
+| 纯 AI 占公司收入 | **12%—16%** | **17%—23%** | **22%—30%** |
+| 非 GAAP GM | **25%—27%** | **28%—30%** | **30%—33%** |
+| AI/MV backlog 转收入假设 | 当前 build 项目按期，约 70%—80% 可见需求转化 | 多 ODM/平台扩展，约 80%—90% 转化 | 客户提前锁产能，>90% 转化且加急 |
+| 客户 pushout/取消率 | **8%—15%** | **4%—10%** | **2%—6%** |
+| 供给实现率 | **75%—85%** | **85%—95%** | **90%—100%**，需外部扩产无误 |
+| 800V 贡献 | 小批/NRE，$5m—$10m | DVT+首批量产，$15m—$25m | 提前大批，$35m—$60m |
+
+### 11.3 三情景的可证伪条件
+
+| 情景 | 必须看到 | 失效条件 |
+|---|---|---|
+| 基准 | FY2026Q4 Computing low-mid single digit增长兑现；非 GAAP GM ≥22%；FY2027Q1 Advanced Computing 继续双位数增长 | Advanced Computing 再次进入 digestion，或 MV build 未在两个季度内转收入 |
+| 乐观 | Advanced Computing 连续 3 季 >25% YoY；Power IC 同比转正并快于 DMOS；GM ≥27%；新增 ODM/客户平台 | 收入增长但 GM ≤24%，说明 ASP/利用率吞噬 mix |
+| 极度乐观 | 公开 hyperscaler/ODM design win；MV 交期 >26周；800V 客户 AVL/批量 PO；公司接近 $1bn 目标 | NVIDIA/ODM 生态仍不列 AOS，800V 只有展会，或扩产导致库存/FCF恶化 |
+
+## 十二、竞争格局、技术主流性、替代方案和客户切换成本
+
+### 12.1 分产品竞争对手
+
+| 产品 | 主要竞争对手 | AOS 优势 | AOS 弱点 |
+|---|---|---|---|
+| AI 多相控制器/DrMOS/SPS | MPS、Infineon、TI、ADI/Empower、Renesas、onsemi、Richtek/uPI、Vishay | 自有 MOSFET+控制器+封装；OVR4/16；A²TM；SmartClamp 保护；价格有竞争力 | MPS/ADI/Infineon 的系统工程、客户覆盖、垂直/近芯技术和毛利显著更强 |
+| MV MOSFET/hot-swap/IBC | Infineon、onsemi、ST、TI、Renesas、Toshiba、ROHM、Nexperia、Vishay、Diodes | AlphaSGT、高 SOA、低 RDS(on)、双面散热、AmpStack；内部 fab/封装协同 | 产品 pin/功能较易二供；规模和公开客户份额小；8英寸成本传导风险 |
+| 800V SiC/GaN | Infineon、onsemi、ST、ROHM、TI、Renesas、Navitas、Power Integrations、Innoscience、EPC | 同时覆盖 Si MOSFET、SiC、GaN、控制和封装，能做混合方案 | 不在 NVIDIA 首批公开硅伙伴名单；WBG 收入/客户/良率未披露；通用 SiC 价格竞争 |
+| 手机电池保护 | onsemi、Nexperia、Vishay、Infineon、Diodes、中国本地 MOSFET/保护 IC 厂 | Tier-1 高端机关系、专有硅和封装、高电流经验 | 客户集中、年度降价、终端周期和供应链本地化 |
+| DC fan/motor | Infineon、ST、TI、Renesas、onsemi、MPS、Microchip、中国 MCU/MOSFET 厂 | MOSFET+driver+MCU/IPM 组合，印度 OSAT | 通用、价格竞争强；液冷降低部分 fan attach |
+
+2026 年竞争明显升级：ADI 以 **15 亿美元现金**收购 Empower，补足 IVR 与 silicon capacitor，并直接定位 hyperscaler/AI silicon 的 grid-to-core 电源；这说明 AI 核心供电价值很高，也说明 AOS 面对的对手正在用并购加速系统级整合。[F][ADI/Empower](https://www.analog.com/en/newsroom/press-releases/2026/5-19-2026-adi-to-acquire-empower-semiconductor.html)
+
+### 12.2 新技术是不是主流
+
+| 技术 | 主流性判断 | 风险/替代方案 |
+|---|---|---|
+| 48/54V→12/6V IBC + 多相 VRM | **2026—2027H1 明确主流**；GB200/GB300、MI350、ASIC 均需要 | Vicor/模块化、不同中间总线电压、直接 48V、6V bus、客户自研 power board |
+| DrMOS/SPS + 数字多相控制 | **当前主流且价值上升**；功率/瞬态/遥测推动每 socket 相数增加 | 垂直供电、IVR、封装内电源、ADI/Empower silicon capacitor、MPS 垂直模块会改变价值归属 |
+| 双面/顶部散热 DFN、AmpStack | **先进封装主流方向**；提高热流和板面积效率 | TOLL/TOLT、embedded power、铜夹、不同厂商 source-down/top-side cooled 封装；不是 AOS 独占 |
+| SmartClamp 功率级内 OCP/NCP | **高端 AI 的合理方向**，把保护放进功率级可缩短响应 | 控制器侧保护、竞争 SPS 集成保护、外部 current sense；AOS 技术有差异但非不可复制 |
+| 800VDC | **>200kW 逐步必要、600kW—1MW 接近主流；2027 才全规模化** | 继续 54V power rack/sidecar；±400V；800→50V 桥接；传统 AC 方案可在较低功率继续服务 |
+| 800V→12V/6V 单级高变比 | **未来潜在主流，2026 尚非成熟量产** | 800→50/54V→12/6V 两级桥接更稳；磁件、隔离、动态、保护和效率是难点 |
+
+项目内行业资料也把 2026 路线排序为：`低/中压 MOSFET、DrMOS、多相控制 > 高功率 PSU 的 SiC/GaN > 48V hot-swap/eFuse > 800V 桥接 > 原生 800V`。这与 AOS 财报的 MV build phase 和 Advanced Computing 收入完全一致。[项目内：功率半导体与高压保护器件](../../行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-07-10.md)；[项目内：机柜级供电与服务器电源架构](../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md)
+
+### 12.3 客户替换成本
+
+| 替换层级 | 时间/成本 | AOS 定价意义 |
+|---|---|---|
+| 同 footprint、参数接近的 discrete MOSFET 二供 | 实验室重验约 **4—12 周**；热/SOA/可靠性仍需重测 | 垄断力低，年度降价强；双面散热/高 SOA 能提高门槛 |
+| 更换 DrMOS/SPS，但控制器和 PCB 基本不变 | **2—6 个月**；效率、瞬态、OCP、热、EMI、固件重新验证 | 中等切换成本，平台量产期不愿轻易更换 |
+| 更换多相控制器或完整 power stage | **3—9 个月**；环路、PDN、PMBus/AVSBus、layout、磁件、GPU stepping 全部重验 | 高切换成本；控制器+功率级共同设计是 AOS 提升毛利的核心 |
+| 更换 IBC/hot-swap/PDB 架构 | **6—18 个月**；系统功率、冗余、SOA、热、保护、ODM 生产和云厂验证 | build phase 后较粘，但新 GPU/架构代际会重新竞标 |
+| 54V→800V 系统迁移 | **12—24+ 个月**；设施、保护、连接、运维、标准和系统可靠性共同重做 | 早期 design-in 价值高，但 AOS 尚未证明自己锁定关键 socket |
+
+公司 10-K 披露总体销售周期约 **6—18 个月**；IGBT/模块比 Computing/Consumer 的 discrete/Power IC 更长。真正的客户切换成本不是器件价差，而是错过 GPU/服务器平台 ramp、整板认证失败或现场可靠性事故。[F]
+
+## 十三、主要风险、催化剂与季度跟踪表
+
+### 13.1 主要风险
+
+1. **AI 收入口径风险：**把 Advanced Computing 全部视为 AI 会把纯 AI 收入高估约 25%—45%。
+2. **订单透明度风险：**没有 backlog 金额、B2B、客户名和不可取消条款；build phase 可能只是有限批次。
+3. **项目节奏风险：**FY2026Q1 已有数据中心项目 ramp 小于原计划，证明 hyperscaler 订单也会缩量/推迟。
+4. **毛利率风险：**低利用率、8英寸/封装涨价、传统 ASP 年降、扩产初期良率会抵消 AI mix。
+5. **竞争风险：**MPS、Infineon、TI、ADI/Empower 等资金、客户和系统方案更强；AOS 很难形成长期单一来源垄断。
+6. **800V 叙事风险：**AOS 自称与 NVIDIA 协作，但缺公开 partner/AVL/PO；量产可能推迟到 2028。
+7. **客户与分销集中：**WPG+Promate 占 FY2025 收入 73.4%，渠道库存和订单 pull-in 会放大波动；美国 Tier-1 手机也形成终端集中。
+8. **PC/手机内存挤压：**管理层预计内存短缺和涨价压制 2026H2 PC/手机需求，可能拖累 fab 利用率。
+9. **JV/中国供应风险：**重庆 JV 是重要 12 英寸与封测供应商，但 AOS 仅持 18.9%、控制权下降；贸易/出口规则仍可能变化。
+10. **库存与现金转化：**库存 1.99 亿美元、139 天，若 AI 设计变更或订单取消，减值和现金流风险上升。
+
+### 13.2 正向催化剂
+
+1. FY2026Q4 收入高于 $178m 上限或非 GAAP GM 高于 24%。
+2. Advanced Computing 再次环比双位数、占 Computing >30%。
+3. Power IC 同比恢复正增长并快于 DMOS，证明总方案而非裸 FET 在放量。
+4. 披露头部 ODM/hyperscaler 客户、MV MOSFET firm PO、交付窗口或 backlog 金额。
+5. AmpStack/双面散热 MOSFET 从公开 list price 进入客户量产 BOM。
+6. AOS 被 NVIDIA/MGX/OCP/系统电源商列为 800V 合格硅供应商。
+7. 非 GAAP GM 连续两个季度 >26%、经营现金流转正、库存天数回落至 <120。
+
+### 13.3 季度必须更新的 15 个指标
+
+| 指标 | 乐观阈值 | 反证阈值 |
+|---|---:|---:|
+| Advanced Computing 占总收入 | >15%，随后 >20% | <10% 或再次环比 -20% |
+| Advanced Computing YoY | >40% | <15% |
+| Computing 环比 | >+5% 且非 PC pull-in | <0% 且 AI 无法抵消 PC |
+| Power IC YoY | >+15% | 连续两季 <0% |
+| DMOS YoY | >+10% | <0% |
+| 非 GAAP GM | >26%，向 28% | <23% 持续两季 |
+| 经营现金流 | 连续两季为正 | TTM 持续为负 |
+| 库存天数 | <120 | >150 |
+| MV 产品交期 | 16—26 周且有量产收入 | 交期缩短同时库存上升 |
+| MV 客户阶段 | build→mass production | 仍停留 design/build 超过两季 |
+| 800V 阶段 | 公开 AVL/DVT/量产 PO | 只有展会/产品发布 |
+| CapEx/产能 | 收入同步增长、GM 改善 | CapEx 增、收入/GM 不增 |
+| 美国 Tier-1 手机 YoY | >+15% | <0% |
+| WPG/Promate 集中度 | 下降且直接客户增加 | >75% 且渠道库存上升 |
+| 指引兑现 | 高于中值 | 低于下限 |
+
+## 十四、最终投资判断
+
+**AOSL 的核心矛盾不是“有没有 AI 产品”，而是“AI 产品能否把一家 22% 毛利、收入近乎停滞的功率器件公司变成高价值电源方案商”。**产品证据已经足够强：OVR 控制器、SmartClamp DrMOS、双面散热 25V/80V MOSFET、hot-swap、高密 IBC、AmpStack、SiC/GaN 全部存在；财报也已出现 Advanced Computing $20.1m 和头部 ODM build phase。当前不能确认的是客户份额、backlog 金额、800V 资格和利润率穿透。
+
+因此，AOSL 目前最合理的定位是：
+
+- **基本盘：**PC、手机、消费/工业功率半导体，提供约 6.5亿—7亿美元收入但毛利较低；
+- **现实 AI 增量：**48/54V MV MOSFET、hot-swap/IBC、GPU 控制器+DrMOS，已进入收入与扩产阶段；
+- **长期期权：**800V αSiC/GaN/堆叠封装，技术在场、商业资格未证；
+- **资产保护：**约 1.86 亿美元净现金；
+- **估值约束：**TTM PS 1.64x 尚可，但亏损、现金流和低 GM 使 P/E 无效；在 GM 没有持续升到 26%—28% 前，不应按 MPS/高端模拟龙头估值。
+
+**基准判断：偏积极、但必须以毛利率和量产客户验证为前提。**如果未来两个季度出现 `Advanced Computing 持续增长 + Power IC 复苏 + 非 GAAP GM >25% + 经营现金流转正`，转型可被视为进入利润兑现阶段；如果只有 AI 新闻和收入增长、毛利仍在 22%—24%，则 AOS 更可能只是 AI 电源供应链中的可替代二线 discrete 厂商，估值上行会受到明显限制。
+
+## 十五、主要资料来源
+
+### 公司与 SEC 一手资料
+
+1. [AOS FY2026Q3 earnings release，2026-05-06](https://investor.aosmd.com/press-releases/press-release-details/2026/Alpha-and-Omega-Semiconductor-Reports-Financial-Results-for-the-Fiscal-Third-Quarter-of-2026-Ended-March-31-2026/default.aspx)
+2. [AOS FY2026Q3 prepared remarks](https://s22.q4cdn.com/656605939/files/doc_financials/2026/q3/AOSL-FYQ3-26-Earnings-Call-Prepared-Remarks.pdf)
+3. [AOS FY2026Q3 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1387467/000162828026031360/aosl-20260331.htm)
+4. [AOS FY2026Q2 prepared remarks](https://s22.q4cdn.com/656605939/files/doc_financials/2026/q2/AOSL-FYQ2-26-Earnings-Call-Prepared-Remarks.pdf)
+5. [AOS FY2026Q1 prepared remarks](https://s22.q4cdn.com/656605939/files/doc_financials/2026/q1/AOSL-FYQ1-26-Earnings-Call-Prepared-Remarks.pdf)
+6. [AOS FY2025Q4 prepared remarks](https://s22.q4cdn.com/656605939/files/doc_financials/2025/q4/AOSL-FYQ4-25-Earnings-Call-Prepared-Remarks.pdf)
+7. [AOS FY2025Q3 prepared remarks](https://s22.q4cdn.com/656605939/files/doc_financials/2025/q3/AOSL-FYQ3-25-Earnings-Call-Prepared-Remarks.pdf)
+8. [AOS FY2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1387467/000162828025041297/aosl-20250630.htm)
+9. [AOS 2026-02 investor presentation](https://s22.q4cdn.com/656605939/files/doc_downloads/2026/02/AOS-IR-Presentation.pdf)
+
+### 产品、技术和会议一手资料
+
+10. [AOS APEC 2026 AI Core/AI Factory products](https://investor.aosmd.com/press-releases/press-release-details/2026/At-APEC-2026-Alpha-and-Omega-Semiconductor-to-Showcase-Advanced-Solutions-for-AI-Core-Power-AI-Factory-and-Industrial-Power/default.aspx)
+11. [AOS PCIM 2026](https://investor.aosmd.com/press-releases/press-release-details/2026/See-Alpha-and-Omega-Semiconductor-at-PCIM-2026-to-Learn-About-Their-Advanced-AI-Core-Power-AI-Data-Center-and-Industrial-Power-Solutions/default.aspx)
+12. [SmartClamp AOZ53228 family，2026-04-30](https://www.aosmd.com/sites/default/files/2026-04/SmartClamp_PR.pdf)
+13. [双面散热 AONC40202/AONC68816，2026-03-17](https://investor.aosmd.com/press-releases/press-release-details/2026/Alpha-and-Omega-Semiconductor-Introduces-25V-and-80V-MOSFETs-in-State-of-the-Art-Packaging-that-Meets-Increasing-AI-Server-Power-Demands/default.aspx)
+14. [AmpStack AOPL66801，2026-07-07](https://www.businesswire.com/news/home/20260707844135/en/)
+15. [AOZ73004CQI OVR4-22](https://investor.aosmd.com/press-releases/press-release-details/2024/Alpha-and-Omega-Semiconductor-Unveils-Worlds-First-NVIDIA-OVR4-22-Multiphase-PWM-Controller-Powering-AI-Server-and-Graphic-Cards/default.aspx)
+16. [AOZ73016QI OVR16](https://investor.aosmd.com/press-releases/press-release-details/2025/Alpha-and-Omega-Semiconductor-Unveils-16-Phase-Controller-That-Supports-Further-AI-Server-and-Graphic-Card-Innovation/default.aspx)
+17. [Intel IMVP9.3 AOZ71049 family/AOZ52986QI，2026-05-18](https://investor.aosmd.com/press-releases/press-release-details/2026/Alpha-and-Omega-Semiconductor-Unveils-Total-Power-Solution-for-Next-Gen-Intel-Panther-Lake-and-Wildcat-Lake-Platforms/default.aspx)
+18. [NVIDIA 800V architecture and 2027 production timing](https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/)
+19. [NVIDIA 800V ecosystem/Kyber](https://developer.nvidia.com/blog/building-the-800-vdc-ecosystem-for-efficient-scalable-ai-factories/)
+20. [TrendForce 2026 8-inch foundry utilization/price](https://www.trendforce.com/presscenter/news/20260113-12877.html)
+21. [Analog Devices acquisition of Empower，2026-05-19](https://www.analog.com/en/newsroom/press-releases/2026/5-19-2026-adi-to-acquire-empower-semiconductor.html)
+
+### 项目内相关行业资料（仅来自允许目录）
+
+22. [功率半导体与高压保护器件，2026-07-10](../../行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-07-10.md)
+23. [机柜级供电与服务器电源架构，2026-07-10](../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md)
+24. [中压直流、800VDC与固态变压器，2026-07-10](../../行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-07-10.md)
+
+### 行情与估值
+
+25. [2026-07-10 AOSL 历史收盘行情](https://www.investing.com/equities/alpha-and-omega-historical-data)
+26. [AOSL current financial/valuation statistics](https://stockanalysis.com/stocks/aosl/)
+
+> **模型风险提示：**产品毛利率、纯 AI 收入、按产品收入、取消率、美元产能和单位 BOM 均未由 AOS 披露，属于本报告在公开价格、财报 mix、产品数量、客户阶段和行业架构基础上的区间估算。任何出现客户名、约束性 PO、实际出货、平台份额、良率或净 ASP 的新披露，都应优先替换本文假设。

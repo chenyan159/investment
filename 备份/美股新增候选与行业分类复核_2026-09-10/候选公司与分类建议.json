@@ -1,0 +1,517 @@
+{
+  "date": "2026-09-10",
+  "scope": "21家NYSE/Nasdaq交易所股票与4家美国OTC ADR；均未列入当前193家公司索引。研究优先级不是买入排名。",
+  "proposed_categories": {
+    "G01": "AI计算芯片_EDA_IP_custom_ASIC",
+    "G02": "AI服务器_存储_EMS",
+    "G03": "AI网络_光互联_连接器",
+    "G04": "电子材料_化学品_基板_PCB",
+    "G05": "晶圆制造_前道设备",
+    "G06": "封测_检测_计量_光罩",
+    "G07": "功率半导体_电源管理_传感器",
+    "G08": "配电_电源系统_电气设备",
+    "G09": "电力_发电_能源_储能",
+    "G10": "热管理_流体_水处理",
+    "G11": "工程建设_机电安装",
+    "G12": "机器人_工业自动化_智能硬件",
+    "G13": "航空航天_卫星_高可靠系统",
+    "G14": "云算力_IDC_边缘云",
+    "G15": "企业软件_数据平台",
+    "G16": "网络安全_身份权限_治理"
+  },
+  "candidates": [
+    {
+      "ticker": "TTMI",
+      "name": "TTM Technologies",
+      "priority": "优先",
+      "category_id": "G04",
+      "current_category_if_unchanged": "AI服务器_存储_EMS",
+      "technology": "高多层/高密度PCB、RF微波组件、航空航天认证与复杂互连制造",
+      "evidence": "2026Q2收入10.04亿美元，同比增长37%；数据中心与网络占40%，该业务同比增长91%；净杠杆0.9倍。",
+      "value_mechanism": "AI服务器和交换机板层数、信号完整性及交付难度增加；既有航空航天业务提供另一收入来源。",
+      "risks": "PCB扩产回报、客户集中及低损耗材料成本；不是完整ABF基板龙头。",
+      "existing_industries": [
+        "高速连接器、背板与结构化布线",
+        "封装基板、中介层与RDL"
+      ],
+      "proposed_industries": [
+        "AI高多层PCB、低损耗覆铜板与铜箔"
+      ],
+      "source_url": "https://investors.ttm.com/news-events/press-releases/detail/411/ttm-technologies-inc-reports-second-quarter-2026-results",
+      "source_date": "2026-08-05"
+    },
+    {
+      "ticker": "ALGM",
+      "name": "Allegro MicroSystems",
+      "priority": "优先",
+      "category_id": "G07",
+      "current_category_if_unchanged": "配电_电源_功率器件",
+      "technology": "磁性电流/位置传感、电机驱动、安全电源IC",
+      "evidence": "FY27Q1收入2.592亿美元，同比增长27%；数据中心占17%；GAAP营业利润率9.8%。",
+      "value_mechanism": "AI供电要精确测流，工业机器人要感知位置和驱动电机，器件进入客户设计后有认证成本。",
+      "risks": "汽车仍占主要收入；周期恢复不等于全部是AI增量。",
+      "existing_industries": [
+        "功率半导体与高压保护器件",
+        "机器人硬件"
+      ],
+      "proposed_industries": [
+        "工业机器视觉与精密感知"
+      ],
+      "source_url": "https://investors.allegromicro.com/news-releases/news-release-details/allegro-microsystems-reports-first-quarter-2027-results/",
+      "source_date": "2026-07-30"
+    },
+    {
+      "ticker": "CGNX",
+      "name": "Cognex",
+      "priority": "优先",
+      "category_id": "G12",
+      "current_category_if_unchanged": "机电_冷却_工程_水处理_边缘工业AI",
+      "technology": "工业机器视觉、读码、视觉算法与OneVision部署平台",
+      "evidence": "2026Q2收入2.91亿美元，同比增长17%；GAAP营业利润率29.4%；现金及投资7.55亿美元、无债务。",
+      "value_mechanism": "更容易配置的视觉系统降低工厂采用门槛，技术能直接用于质检、识别与物流。",
+      "risks": "工业资本开支周期、中国竞争与软件简化后的议价；股价估值也需检验。",
+      "existing_industries": [
+        "机器人硬件"
+      ],
+      "proposed_industries": [
+        "工业机器视觉与精密感知",
+        "仓储物流机器人与自动化系统"
+      ],
+      "source_url": "https://www.sec.gov/Archives/edgar/data/851205/000085120526000061/a07052026-xex991xq22026ear.htm",
+      "source_date": "2026-08-05"
+    },
+    {
+      "ticker": "SYM",
+      "name": "Symbotic",
+      "priority": "优先",
+      "category_id": "G12",
+      "current_category_if_unchanged": "机电_冷却_工程_水处理_边缘工业AI",
+      "technology": "仓储机器人、路径调度、托盘/箱件处理和系统集成",
+      "evidence": "FY26Q3收入7.21亿美元，同比增长22%；合并净利润5500万美元；77套系统在部署。",
+      "value_mechanism": "用完整仓储吞吐量和客户回本周期兑现物理AI，已有大型客户与付费交付。",
+      "risks": "客户集中、项目验收、系统维护责任；合并净利润不能直接等同普通股股东利润。",
+      "existing_industries": [
+        "机器人硬件"
+      ],
+      "proposed_industries": [
+        "仓储物流机器人与自动化系统"
+      ],
+      "source_url": "https://ir.symbotic.com/news-releases/news-release-details/symbotic-reports-third-quarter-fiscal-year-2026-results",
+      "source_date": "2026-08-05"
+    },
+    {
+      "ticker": "ROK",
+      "name": "Rockwell Automation",
+      "priority": "优先",
+      "category_id": "G12",
+      "current_category_if_unchanged": "机电_冷却_工程_水处理_边缘工业AI",
+      "technology": "PLC/PAC控制、工业运动、安全控制、制造软件与OT集成",
+      "evidence": "FY26Q3销售增长8%、有机增长10%；有机ARR增长6%。",
+      "value_mechanism": "在现有产线控制与软件入口上引入AI，客户切换涉及停线、验证和工程成本。",
+      "risks": "不是高增长纯软件；机器人改善可能首先惠及客户，且收入受工业投资周期影响。",
+      "existing_industries": [
+        "机器人硬件",
+        "DCIM、能控与AI工厂数字孪生"
+      ],
+      "proposed_industries": [
+        "工业自动化控制、工业机器人与协作机器人"
+      ],
+      "source_url": "https://www.rockwellautomation.com/en-se/company/news/press-releases/Rockwell-Automation-Reports-Third-Quarter-2026-Results.html",
+      "source_date": "2026-08-04"
+    },
+    {
+      "ticker": "EMR",
+      "name": "Emerson Electric",
+      "priority": "优先",
+      "category_id": "G12",
+      "current_category_if_unchanged": "机电_冷却_工程_水处理_边缘工业AI",
+      "technology": "过程控制、测量仪表、控制阀、工业软件与测试自动化",
+      "evidence": "FY26Q3销售48.73亿美元，同比增长7%；季度自由现金流13.23亿美元，同比增长36%。",
+      "value_mechanism": "依托存量控制系统、工程知识和客户数据把AI接入真实工业流程。",
+      "risks": "过程工业需求、收购整合及软件AI增量的独立收费；勿把全部集团收入计为机器人。",
+      "existing_industries": [
+        "DCIM、能控与AI工厂数字孪生",
+        "机器人硬件"
+      ],
+      "proposed_industries": [
+        "工业自动化控制、工业机器人与协作机器人"
+      ],
+      "source_url": "https://ir.emerson.com/news-events/press-releases/detail/642/emerson-reports-third-quarter-2026-results-raises-2026-outlook",
+      "source_date": "2026-08-04"
+    },
+    {
+      "ticker": "SPXC",
+      "name": "SPX Technologies",
+      "priority": "优先",
+      "category_id": "G10",
+      "current_category_if_unchanged": "机电_冷却_工程_水处理_边缘工业AI",
+      "technology": "冷却塔、干式/绝热排热、空气管理及专用检测设备",
+      "evidence": "2026Q2收入6.79亿美元，同比增长22.9%；GAAP持续经营利润7930万美元。",
+      "value_mechanism": "液冷仍需要向环境排热；行业报告已跟踪Olympus Max供给扩张，但公司未入池。",
+      "risks": "产能目标不能当收入；天气/水/噪声条件、并购及扩产后利用率。",
+      "existing_industries": [
+        "数据中心风冷、冷水机组与HVAC",
+        "数据中心直液冷系统"
+      ],
+      "proposed_industries": [],
+      "source_url": "https://www.sec.gov/Archives/edgar/data/88205/000008820526000052/q22026pressrelease.htm",
+      "source_date": "2026-07-30"
+    },
+    {
+      "ticker": "AMBA",
+      "name": "Ambarella",
+      "priority": "重点",
+      "category_id": "G01",
+      "current_category_if_unchanged": "AI计算芯片_EDA_IP_custom_ASIC",
+      "technology": "低功耗视觉AI SoC、CVflow架构、视频与多传感器处理",
+      "evidence": "FY27Q2收入1.081亿美元，同比增长13.2%；GAAP净亏损670万美元，同比收窄。",
+      "value_mechanism": "把推理放到摄像机、机器和车辆本地，兼顾实时性、带宽及隐私。",
+      "risks": "客户导入周期长；与NVDA/QCOM等竞争；仍亏损，设计采用不能等同量产收入。",
+      "existing_industries": [
+        "AI边缘推理芯片",
+        "机器人硬件"
+      ],
+      "proposed_industries": [
+        "工业机器视觉与精密感知"
+      ],
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1280263/000119312526381923/d88952dex991.htm",
+      "source_date": "2026-09-03"
+    },
+    {
+      "ticker": "ITT",
+      "name": "ITT",
+      "priority": "重点",
+      "category_id": "G10",
+      "current_category_if_unchanged": "机电_冷却_工程_水处理_边缘工业AI",
+      "technology": "工业泵阀、流体处理、高可靠连接器、振动与运动部件",
+      "evidence": "2026Q2收入增长51.5%，有机增长12.7%；自由现金流1.62亿美元，增长18%。",
+      "value_mechanism": "精密流体与连接技术、存量服务和认证形成业务基础；可补充液冷之外的工业流体链。",
+      "risks": "SPX FLOW收购显著放大报表增长；必须验证数据中心专属收入，不能把公司整体叫AI冷却。",
+      "existing_industries": [
+        "液冷小组件与流体控制",
+        "高速连接器、背板与结构化布线"
+      ],
+      "proposed_industries": [],
+      "source_url": "https://investors.itt.com/results-and-filings/quarterly-results",
+      "source_date": "2026-08-06"
+    },
+    {
+      "ticker": "CW",
+      "name": "Curtiss-Wright",
+      "priority": "重点",
+      "category_id": "G13",
+      "current_category_if_unchanged": "机电_冷却_工程_水处理_边缘工业AI",
+      "technology": "核级泵阀、反应堆控制/仪控、高可靠嵌入式计算及飞行系统",
+      "evidence": "2026Q2销售9.24亿美元，同比增长5%；营业利润率19.3%；自由现金流1.60亿美元。",
+      "value_mechanism": "认证、长寿命安装基础和严苛环境交付；可同时研究核电与航空航天技术。",
+      "risks": "增长较温和、估值不低；政府项目、项目节奏及核电订单周期。",
+      "existing_industries": [
+        "数据中心自备发电与微电网",
+        "商业火箭与商业航天"
+      ],
+      "proposed_industries": [
+        "运载火箭、航天器与空间基础设施"
+      ],
+      "source_url": "https://curtisswright.com/investor-relations/financials/quarterly-results",
+      "source_date": "2026-08-05"
+    },
+    {
+      "ticker": "CCJ",
+      "name": "Cameco",
+      "priority": "重点",
+      "category_id": "G09",
+      "current_category_if_unchanged": "电力_发电_能源_储能",
+      "technology": "铀资源、转化/燃料服务及Westinghouse技术与服务股权",
+      "evidence": "2026Q2调整后EBITDA3.91亿加元；同比走弱，包含Westinghouse上年大项目高基数影响。",
+      "value_mechanism": "核电扩张与现有机组延寿需要持续燃料和服务，覆盖项目现有反应堆故事的上游缺口。",
+      "risks": "铀价、交付季度分布和资本开支；不是单纯AI收入公司，也不是无周期技术股。",
+      "existing_industries": [
+        "数据中心自备发电与微电网"
+      ],
+      "proposed_industries": [
+        "核燃料循环与浓缩服务"
+      ],
+      "source_url": "https://www.cameco.com/media/news/cameco-reports-2026-second-quarter-results",
+      "source_date": "2026-07-31"
+    },
+    {
+      "ticker": "LEU",
+      "name": "Centrus Energy",
+      "priority": "高风险研究",
+      "category_id": "G09",
+      "current_category_if_unchanged": "电力_发电_能源_储能",
+      "technology": "铀浓缩离心机与HALEU生产能力、核许可与工艺经验",
+      "evidence": "2026Q2收入1.761亿美元，增长14%；已签DOE的9亿美元HALEU浓缩合同；条件性LEU/HALEU订单约30亿美元。",
+      "value_mechanism": "先进反应堆燃料是不同于建堆本身的潜在瓶颈，技术和许可有稀缺性。",
+      "risks": "现有贸易收入不等于自产浓缩收入；条件性订单、政府资金与扩产资本风险大。",
+      "existing_industries": [
+        "数据中心自备发电与微电网"
+      ],
+      "proposed_industries": [
+        "核燃料循环与浓缩服务"
+      ],
+      "source_url": "https://investors.centrusenergy.com/node/21021",
+      "source_date": "2026-08-05"
+    },
+    {
+      "ticker": "PL",
+      "name": "Planet Labs",
+      "priority": "重点",
+      "category_id": "G13",
+      "current_category_if_unchanged": "机电_冷却_工程_水处理_边缘工业AI",
+      "technology": "高频地球观测星座、历史影像、光谱/高分辨率能力与地理数据平台",
+      "evidence": "FY27Q2收入1.161亿美元，同比增长58%；含国防情报合同和硬件交付。",
+      "value_mechanism": "AI增加影像检索与变化分析的可用性；历史时间序列和持续重访有价值。",
+      "risks": "硬件收入与数据订阅分开；卫星更新资本开支、政府预算及免费影像替代。",
+      "existing_industries": [
+        "商业火箭与商业航天"
+      ],
+      "proposed_industries": [
+        "地球观测、遥感数据与空间信息服务"
+      ],
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1836833/000119312526381874/pl-ex99_1.htm",
+      "source_date": "2026-09-03"
+    },
+    {
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
+      "priority": "高风险研究",
+      "category_id": "G13",
+      "current_category_if_unchanged": "机电_冷却_工程_水处理_边缘工业AI",
+      "technology": "大型相控阵天线、卫星蜂窝链路、专用ASIC与运营商集成",
+      "evidence": "2026Q2收入3150万美元，主要来自网关交付及美国政府里程碑；已有接近100Mbps的Block 1链路演示。",
+      "value_mechanism": "直连普通手机可形成新的覆盖能力，工程路径与收费模式有明确区别于发射公司的研究价值。",
+      "risks": "组网、发射、频谱、持续容量、卫星更替与资金消耗；运营商潜在用户不是已付费用户。",
+      "existing_industries": [
+        "商业火箭与商业航天"
+      ],
+      "proposed_industries": [
+        "低轨卫星通信、直连手机与地面终端"
+      ],
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1780312/000119312526342540/asts-ex99_1.htm",
+      "source_date": "2026-08-10"
+    },
+    {
+      "ticker": "RDW",
+      "name": "Redwire",
+      "priority": "高风险研究",
+      "category_id": "G13",
+      "current_category_if_unchanged": "机电_冷却_工程_水处理_边缘工业AI",
+      "technology": "空间电源/展开结构、航天部件、在轨制造与自主系统",
+      "evidence": "2026Q2收入1.171亿美元，增长89.6%；毛利率27.8%，调整后EBITDA仍亏损320万美元。",
+      "value_mechanism": "可研究飞行验证部件和任务级系统的供给，而不仅是押发射次数。",
+      "risks": "并购贡献需剥离；项目、整合、现金消耗与稀释风险，不能把高增长全部当有机需求。",
+      "existing_industries": [
+        "商业火箭与商业航天"
+      ],
+      "proposed_industries": [
+        "运载火箭、航天器与空间基础设施"
+      ],
+      "source_url": "https://ir.rdw.com/news-events/press-releases/detail/240/redwire-corporation-reports-second-quarter-2026-financial",
+      "source_date": "2026-08-05"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "priority": "优先",
+      "category_id": "G15",
+      "current_category_if_unchanged": "云算力_IDC_AI软件平台",
+      "technology": "企业工作流、CMDB、权限/审计、流程编排与Agent落地",
+      "evidence": "2026Q2订阅收入38.77亿美元，同比增长24.5%；cRPO增长21%。",
+      "value_mechanism": "AI要接入企业系统并承担执行责任；现有工作流和预算入口有真实价值。",
+      "risks": "AI是否侵蚀席位、平台捆绑及实际付费；整体订阅增长不等于全部AI收入。",
+      "existing_industries": [
+        "企业AI与Agent工作流软件"
+      ],
+      "proposed_industries": [],
+      "source_url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Second-Quarter-2026-Financial-Results/default.aspx",
+      "source_date": "2026-07-22"
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks",
+      "priority": "优先",
+      "category_id": "G16",
+      "current_category_if_unchanged": "云算力_IDC_AI软件平台",
+      "technology": "网络/云安全、Cortex、安全运营与身份权限平台",
+      "evidence": "FY26Q4收入34.1亿美元，同比增长34%；NGS ARR91亿美元，增长63%，含并购影响。",
+      "value_mechanism": "AI应用与Agent扩大权限、数据和执行边界；需要安全控制与事故响应。",
+      "risks": "CyberArk等整合、股权稀释、平台化销售；报表增长不能全视为有机AI增长。",
+      "existing_industries": [
+        "网络安全、身份权限与AI治理"
+      ],
+      "proposed_industries": [],
+      "source_url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-reports-fiscal-fourth-quarter-and-fiscal-year-2026-financial-results",
+      "source_date": "2026-09-01"
+    },
+    {
+      "ticker": "SNOW",
+      "name": "Snowflake",
+      "priority": "优先",
+      "category_id": "G15",
+      "current_category_if_unchanged": "云算力_IDC_AI软件平台",
+      "technology": "云数据执行引擎、权限治理、数据共享与AI数据平台",
+      "evidence": "FY27Q2产品收入14.919亿美元，同比增长37%；净收入留存率126%。",
+      "value_mechanism": "AI商业应用需要可信企业数据和可治理的执行环境，计算效率与付费用量共同决定收入。",
+      "risks": "效率提升可能降低单位查询收费；云厂竞争、SBC和高估值。",
+      "existing_industries": [
+        "数据平台、数据库与AI数据软件"
+      ],
+      "proposed_industries": [],
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/fy2027q2earnings.htm",
+      "source_date": "2026-09-02"
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "priority": "优先",
+      "category_id": "G15",
+      "current_category_if_unchanged": "云算力_IDC_AI软件平台",
+      "technology": "指标/日志/追踪、应用性能、LLM可观测性与自动化运维",
+      "evidence": "2026Q2收入11.2亿美元，同比增长36%；自由现金流2.79亿美元。",
+      "value_mechanism": "更多代码、模型和Agent使故障定位、成本追踪、性能及安全监控复杂化。",
+      "risks": "开源和云平台捆绑、遥测成本、用量优化、估值；网络Fabric遥测不能替代应用可观测性。",
+      "existing_industries": [
+        "AI Fabric网络操作系统与遥测软件",
+        "AI集群调度与推理运行时",
+        "数据平台、数据库与AI数据软件"
+      ],
+      "proposed_industries": [
+        "云与AI应用可观测性、运维自动化"
+      ],
+      "source_url": "https://investors.datadoghq.com/news-releases/news-release-details/datadog-announces-second-quarter-2026-financial-results/",
+      "source_date": "2026-08-06"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "priority": "优先",
+      "category_id": "G15",
+      "current_category_if_unchanged": "云算力_IDC_AI软件平台",
+      "technology": "Ontology业务本体、AIP、权限控制与复杂业务部署",
+      "evidence": "2026Q2收入19.3546亿美元，同比增长93%；GAAP营业利润9.120亿美元。正式季报说明AIP与Ontology如何连接数据、逻辑和行动。",
+      "value_mechanism": "将数据和模型转为可执行的企业决策，填补现有公司池对AI落地平台的覆盖。",
+      "risks": "高估值、交付人工、政府/商业预算及股份稀释；全部收入不能当AIP新增收入。",
+      "existing_industries": [
+        "企业AI与Agent工作流软件",
+        "数据平台、数据库与AI数据软件"
+      ],
+      "proposed_industries": [],
+      "source_url": "https://investors.palantir.com/files/2026%20Q2%20PLTR%2010-Q.pdf",
+      "source_date": "2026-08-03"
+    },
+    {
+      "ticker": "NET",
+      "name": "Cloudflare",
+      "priority": "重点",
+      "category_id": "G14",
+      "current_category_if_unchanged": "云算力_IDC_AI软件平台",
+      "technology": "全球边缘网络、Workers计算、应用交付、连接与零信任安全",
+      "evidence": "2026Q2收入6.961亿美元，同比增长36%；自由现金流5640万美元，GAAP仍亏损。",
+      "value_mechanism": "把安全、网络和执行分发放在同一边缘平台，研究Agent流量与边缘应用的新收费。",
+      "risks": "估值很高、SBC、网络资本开支、模型/云平台竞争；流量增长未必同比变现。",
+      "existing_industries": [
+        "网络安全、身份权限与AI治理",
+        "AI集群调度与推理运行时"
+      ],
+      "proposed_industries": [
+        "边缘云、应用交付与无服务器计算"
+      ],
+      "source_url": "https://www.cloudflare.com/en-gb/press/press-releases/2026/cloudflare-announces-second-quarter-2026-financial-results/",
+      "source_date": "2026-08-06"
+    },
+    {
+      "ticker": "SBGSY",
+      "name": "Schneider Electric 施耐德",
+      "priority": "优先（OTC）",
+      "category_id": "G08",
+      "current_category_if_unchanged": "配电_电源_功率器件",
+      "technology": "配电、UPS、控制、能管与热管理集成能力",
+      "evidence": "2026Q2收入115亿欧元，有机增长17%；H1自由现金流16亿欧元。",
+      "value_mechanism": "AI电力约束、存量电气设备和跨产品交付能力，兼具现实现金业务与增长。",
+      "risks": "并购、项目周期、估值；OTC须券商支持。软件与硬件收入增速不能混用。",
+      "existing_industries": [
+        "数据中心开关设备与变压器",
+        "数据中心UPS与电池储能",
+        "数据中心直液冷系统",
+        "DCIM、能控与AI工厂数字孪生"
+      ],
+      "proposed_industries": [],
+      "source_url": "https://www.se.com/ww/en/about-us/investor-relations/financial-results/",
+      "source_date": "2026-07-30"
+    },
+    {
+      "ticker": "FANUY",
+      "name": "FANUC 发那科",
+      "priority": "重点（OTC）",
+      "category_id": "G12",
+      "current_category_if_unchanged": "机电_冷却_工程_水处理_边缘工业AI",
+      "technology": "CNC、伺服、工业机器人本体与长期维护生态",
+      "evidence": "FY26Q1（2026年4—6月）销售2310亿日元，同比增长17.7%。",
+      "value_mechanism": "物理AI可以利用已验证本体、工艺软件和客户产线基础；不必只押新人形平台。",
+      "risks": "工业周期、价格竞争与AI伙伴分走软件价值；集团增长不能全部算机器人。",
+      "existing_industries": [
+        "机器人硬件"
+      ],
+      "proposed_industries": [
+        "工业自动化控制、工业机器人与协作机器人"
+      ],
+      "source_url": "https://www.fanuc.co.jp/en/ir/announce/pdf/2026/reference202606_e.pdf",
+      "source_date": "2026-07-31"
+    },
+    {
+      "ticker": "YASKY",
+      "name": "Yaskawa Electric 安川电机",
+      "priority": "重点（OTC）",
+      "category_id": "G12",
+      "current_category_if_unchanged": "机电_冷却_工程_水处理_边缘工业AI",
+      "technology": "伺服驱动、电机、运动控制、机器人与机电整合",
+      "evidence": "FY26Q1（2026年3—5月）收入1389.82亿日元，增长10.6%；运动控制收入增长21.5%，机器人收入仅增长2.0%、营业利润下降82.3%。",
+      "value_mechanism": "精密运动与控制可用于更多自动化任务，产业价值不限于人形机器人。",
+      "risks": "ERP切换和欧洲重组拖累机器人利润；工业周期、中国竞争及OTC流动性。不能把运动控制的数据中心增量归为机器人放量。",
+      "existing_industries": [
+        "机器人硬件",
+        "数据中心风冷、冷水机组与HVAC"
+      ],
+      "proposed_industries": [
+        "工业自动化控制、工业机器人与协作机器人",
+        "人形机器人与关键执行部件"
+      ],
+      "source_url": "https://www.yaskawa-global.com/wp-content/uploads/2026/07/20260710_en.pdf",
+      "source_date": "2026-07-10"
+    },
+    {
+      "ticker": "SMCAY",
+      "name": "SMC",
+      "priority": "重点（OTC）",
+      "category_id": "G12",
+      "current_category_if_unchanged": "机电_冷却_工程_水处理_边缘工业AI",
+      "technology": "气动/电动执行器、精密阀、真空抓取及温控设备",
+      "evidence": "官方目录已有半导体工艺温控、循环液冷却及执行/流体产品；属于已商业化工业部件供应商。",
+      "value_mechanism": "工厂、半导体设备和机器人需要可靠执行与流体控制；存量设计与供货能力重要。",
+      "risks": "气动可能被电动替代；工厂周期和集团AI收入占比需要核实；不等于纯数据中心液冷。",
+      "existing_industries": [
+        "机器人硬件",
+        "液冷小组件与流体控制",
+        "半导体设备子系统与真空/RF/流体模块"
+      ],
+      "proposed_industries": [
+        "人形机器人与关键执行部件"
+      ],
+      "source_url": "https://www.smcworld.com/webcatalog/en-ae/equipment-for-the-semiconductor-industries-temperature-adjustment-line/thermo-chillers-standard-type-basic-type/",
+      "source_date": "截至2026-09-10产品页"
+    }
+  ],
+  "excluded": [
+    {
+      "name": "Hamamatsu Photonics",
+      "ticker": "HPHTY",
+      "reason": "技术与有效ADR均已确认，但行情供应商平均成交量约27股，交易实用性太弱，未列入25家可执行候选。初次试查HPKCY无效，不采用。",
+      "source": "https://depositaryreceipts.citi.com/adr/guides/pgm_dispdsfhist.aspx?cusip=40652R107&pageId=15&subpageID=192"
+    },
+    {
+      "name": "Ibiden、Unimicron",
+      "reason": "上一轮本国股票代码不满足本次美国交易身份要求；未获得足够可用的美国交易路径证据，不把日/台挂牌代码放入推荐表。"
+    }
+  ]
+}

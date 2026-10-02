@@ -1,0 +1,410 @@
+# ENS EnerSys 公司调研：工业储能龙头、数据中心 UPS 电池升级与国防锂电可选项
+
+报告日期：2026-06-11  
+股票代码：ENS  
+公司名称：EnerSys  
+正式分类目录：`公司调研/电力_发电_能源_储能/`  
+资料边界：项目内仅使用 `行业调研/` 下与 AI 数据中心、电力、UPS、电池储能、机柜供电相关资料；未读取、引用或继承 `特征量化/`、`日度资料/`、公司调研旧报告或其他目录资料。`公司调研/公司索引.md` 仅用于确认 ENS 的正式分类目录。联网资料优先使用 EnerSys IR、10-K、财报会纪要、产品页、DOE/政府资料和市场数据页。  
+关键时间口径：财报最新披露为 FY2026 Q4 / FY2026 全年，季度截至 2026-03-31，财报发布 2026-05-20，财报会 2026-05-21。股价和估值快照为 2026-06-11 12:23 PT 附近。
+
+## 0. 结论先行
+
+EnerSys 不是纯 AI 数据中心设备公司，而是工业电池、储能和电源系统龙头。投资人通常把它看作三类暴露的组合：第一，成熟工业电池和叉车/仓储动力电池现金流；第二，数据中心、通信、电力基础设施的 UPS / 备用电源周期；第三，国防、航天、弹药和士兵便携电源的高壁垒锂电可选项。2026 年 AI 叙事里，ENS 的真实位置在“数据中心供电可靠性和 UPS 电池”层，不在 GPU、AI 芯片、光模块或服务器主链。
+
+当前收入底盘仍是三大 reportable segments：Energy Systems、Motive Power、Specialty。FY2026 全年收入 `37.514 亿美元`，同比 `+3.7%`；Energy Systems `16.513 亿美元`、占 `44.0%`、同比 `+7.8%`，是数据中心、通信、电力和工业 UPS/电源系统的主要载体；Motive Power `14.310 亿美元`、占 `38.1%`、同比 `-3.6%`，受工业叉车/仓储景气拖累；Specialty `6.651 亿美元`、占 `17.7%`、同比 `+12.1%`，受航空航天和国防拉动。
+
+AI 数据中心相关收入目前主要体现在 Energy Systems 中的传统数据中心 UPS 电池、电源系统和服务。公司没有披露 data center 具体收入；按 Energy Systems 收入、管理层“FY2026 data center 全年高个位数增长 / 订单同比 +36%”和产品范围推算，FY2026 数据中心相关收入大概率在 `3.5-5.5 亿美元` 区间，其中真正由 AI 高密度机柜驱动的新增部分仍低于传统 UPS 替换底盘。这个估算是本报告模型值，不是公司披露。
+
+最重要的新变量是 2026-06-09 发布的 `DataSafe Noir` 数据中心锂电系统。公司称该系统面向动态 AI 负载、立即可供货，较公开可比锂电系统规格有 `>2x` 输出功率和 `>1.7x` 能量/容量。但财报会管理层也明确指出：产品已不是 A/B 样，已向客户出货并进入 commissioning；后续仍需 OEM handoff、通信接口和 hyperscaler 验证，明显收入拉动更偏 FY2028。因此，2026-2027 的基准判断是“订单/认证先行，收入逐步体现”，不是已经进入大规模 AI 锂电收入爆发。
+
+财务健康度较好。2026-03-31 现金 `4.387 亿美元`，总债务约 `11.12 亿美元`，净债务 `6.841 亿美元`，信用协议调整 EBITDA `6.034 亿美元`，净杠杆 `1.1x`；FY2026 经营现金流 `5.476 亿美元`，自由现金流 `4.676 亿美元`，自由现金流转换率 `159.3%`。风险在于：45X 税收抵免对毛利有显著贡献，Motive Power 周期偏弱，锂电数据中心新品需要客户验证，且锂电 cell 供应链短期仍依赖亚洲。
+
+## 1. 公司业务、定位、过去 3 年重大变化与估值快照
+
+### 1.1 公司整体业务
+
+EnerSys 是面向工业应用的 stored energy solutions 公司，产品覆盖工业电池、电源系统、充电器、配电/控制、电池附件、户外机柜和服务。公司 10-K 把经营线条分为四个 operating segments，其中 Energy Systems、Motive Power、Specialty 是 reportable segments，New Ventures 目前并入 Corporate and other。
+
+| 业务线 | FY2026 收入 | 收入占比 | FY2026 同比 | FY2026 调整后经营利润率 | 核心产品/客户 | AI 数据中心相关性 |
+|---|---:|---:|---:|---:|---|---|
+| Energy Systems | `$1.651B` | `44.0%` | `+7.8%` | `8.8%` | UPS 应用、通信、宽带、数据中心、电力设施、工业控制、储能、户外机柜、DC/AC 电源系统 | 高，ENS 的数据中心 UPS 电池和 DataSafe Noir 都在此处 |
+| Motive Power | `$1.431B` | `38.1%` | `-3.6%` | `14.0%` | 叉车、AGV、物料搬运、仓储、机场地面支持、矿业/轨交、充电器 | 低到中，仓储自动化和 BESS 是工业侧，不是 AI 核心 |
+| Specialty | `$665M` | `17.7%` | `+12.1%` | `9.3%` | 交通 SLI、高端汽车、航空航天、军用、潜艇/舰船、士兵便携电源、弹药/空间电池 | 对 AI 低，但对公司增长和估值弹性高 |
+| Corporate / New Ventures | `$4M` | `0.1%` | `-52.6%` | NM | BESS、EV 动态快充、需求电费削减、utility backup 等早期项目 | 中，BESS 可间接连接数据中心/电力约束，但当前收入小 |
+
+### 1.2 投资人眼中的公司
+
+| 投资人视角 | 具体含义 | 对估值的影响 |
+|---|---|---|
+| 工业电池现金流公司 | Motive Power 和传统储能/备用电源形成稳定收入底盘，周期性来自叉车、仓储和工业资本开支 | 给出工业股估值锚，通常不享受纯 AI 倍数 |
+| 数据中心供电可靠性受益者 | Energy Systems 暴露数据中心 UPS 电池、TPPL、电源系统和现场服务；AI 机柜高密度化提高备用电源和动态负载管理重要性 | 可提升成长预期，但要验证 data center 订单能否转收入 |
+| 国防锂电/航天电池小龙头 | Bren-Tronics、弹药/thermal batteries、space batteries、士兵电源等形成高壁垒需求；管理层称部分电池全球供应商很少 | 若 backlog 加速兑现，Specialty 有估值重估潜力 |
+| IRA / 45X 受益者 | FY2026 45X 计入成本的 benefit 为 `$159M`，Q4 为 `$46M`；Tijuana 转 Springfield 预计 FY2028 增加约 `$20M` 45X benefit | 提高近期利润和现金流，但市场会折价看待政策持续性 |
+| 锂电国产化可选项 | Greenville, SC lithium-ion cell plant 获 DOE `$199M` award，500,000 sqft，目标 2028 商业生产，优先商业/工业/国防 | 长期可选项；短期不贡献收入且需要 capex、认证和客户承诺 |
+
+### 1.3 最近 3 年重大业务变化、转型和收购
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2024-02 | 选择 Greenville, South Carolina 推进美国锂电池生产 | 把公司从铅酸/TPPL 工业电池进一步推向工业和国防锂电自供；对数据中心有长期可选项，但官方目前把 Greenville 更清晰地指向 A&D / domestic supply |
+| 2024-05 | 宣布以全现金 `$208M` 收购 Bren-Tronics，价格约 `8.7x` 2023 adjusted EBITDA | 加强 Specialty 的军用便携电源、小/大格式锂电池和充电系统，补齐国防客户关系 |
+| 2024-07 | 完成 Bren-Tronics 收购；FY2026 10-K 中 cash consideration 为 `$206.4M` | FY2026 Q1 收入增长中 acquisition 贡献 `4%`，Specialty 收入全年 `+12.1%` |
+| 2025-01 | DOE award negotiation 完成，获得 `$199M` 支持 Greenville 锂电池工厂 | 工厂 500,000 sqft，计划 2025 开工、2028 商业生产；支撑美国工业/国防锂电供应链 |
+| 2025-2026 | 推出 EnerGize strategic framework、加速成本优化和组合调整 | FY2026 经营现金流和 FCF 大幅改善；同时有 restructuring / exit charges `$51M` |
+| 2026-05 | 关闭 Tijuana, Mexico facility，生产转移至 Springfield, Missouri | 管理层预计 FY2028 产生约 `$20M` 额外 45X benefit；也说明公司主动优化北美制造和税收抵免 |
+| 2026-05 | 锂电数据中心 solution 和 warehouse operator BESS 进入 customer commissioning | 新品从验证转向现场部署，但管理层预计有意义收入更偏 FY2028 |
+| 2026-06-09 | 发布 DataSafe Noir lithium-based energy storage system for data center power | 明确面向 AI 动态负载和高密环境，是 ENS 数据中心锂电转型的核心产品信号 |
+
+### 1.4 产业链定位
+
+ENS 位于 AI 数据中心产业链的 facility power / backup energy / battery layer，不在 IT 设备主价值链。其位置如下：
+
+```text
+电网 / 自备发电 / 微电网
+-> 变压器 / 开关设备 / 配电 / UPS / BESS
+-> UPS 电池柜 / TPPL / Li-ion / BMS / 监控 / 服务
+-> 机房 AC/DC / rack power / BBU / power shelf
+-> AI server / GPU / ASIC / network / storage
+```
+
+本地行业资料对 AI 数据中心电力链的判断是：2026-2027 最大硬瓶颈之一是电力接入、变压器、switchgear、UPS、BESS 和 MEP；美国 AI 数据中心 2026 务实建设规模为 `$310-390B`，其中电力/UPS/BESS/配电 2026 订单池约 `$31-55B`；全球数据中心 UPS 2026 约 `$4.3-6.6B`，AI 相关 UPS/BBU/BESS 高弹性订单池 2026 约 `$12-25B`。ENS 的直接可服务市场更接近 UPS 电池、电源系统、数据中心锂电系统、部分 BESS 和服务，不应把整个电力设备市场全部映射给 ENS。
+
+### 1.5 估值与财务快照
+
+| 指标 | 数值 | 日期 / 口径 | 说明 |
+|---|---:|---|---|
+| 股价 | `$221.39` | 2026-06-11 12:23 PT，Yahoo Finance chart API | 当日盘中快照；52 周高/低约 `$244.30 / $80.82` |
+| 股本 | `36.52M` shares | 2026-05-15，FY2026 10-K 披露 common shares outstanding | 估算市值使用该股本 |
+| 市值 | `约 $8.09B` | 2026-06-11，股价 × 36.52M | 盘中估算 |
+| TTM / FY2026 收入 | `$3.751B` | FY2026，截至 2026-03-31 | 创纪录全年收入，同比 `+3.7%` |
+| P/S | `约 2.16x` | 2026-06-11，市值 / FY2026 收入 | 自算 |
+| GAAP P/E | `约 28.8x` | 2026-06-11，股价 / FY2026 diluted EPS `$7.70` | 自算 |
+| Adjusted P/E | `约 21.0x` | 2026-06-11，股价 / FY2026 adjusted diluted EPS `$10.56` | 包含 45X benefit |
+| Adjusted ex-45X P/E | `约 34.5x` | 2026-06-11，股价 / FY2026 adjusted diluted EPS ex-45X `$6.41` | 更保守地剔除 45X |
+| Forward P/E | `约 18.4x` | 2026-06-11 访问 StockAnalysis | 第三方一致预期口径，隐含 forward EPS 约 `$12.0` |
+| FY2026 毛利率 | `29.3%` | FY2026 GAAP | ex-45X gross margin 为 `25.1%` |
+| FY2026 净利率 | `7.8%` | FY2026 GAAP net earnings `$293.6M / $3.751B` | StockAnalysis 同口径约 `7.83%` |
+| FY2026 operating margin | `11.4%` | GAAP operating earnings `$426.4M` | adjusted operating margin `14.4%` |
+| 净债务 / EBITDA | `1.1x` | 2026-03-31，credit agreement adjusted EBITDA | 低杠杆 |
+| 经营现金流 / FCF | `$547.6M / $467.6M` | FY2026 | FCF conversion `159.3%` |
+| FY2027 Q1 指引 | revenue `$915-955M`，adj EPS `$2.70-2.90` | 2026-05-20 发布 | Q1 FY2027 即 2026-06-30 附近季度 |
+
+### 1.6 资产负债表健康度
+
+| 项目 | 2026-03-31 | 2025-03-31 | 变化 | 评价 |
+|---|---:|---:|---:|---|
+| 现金 | `$438.7M` | `$343.1M` | `+27.8%` | 现金缓冲增加 |
+| 应收账款 | `$506.1M` | `$597.9M` | `-15.4%` | 收款改善，支持 FCF |
+| 存货 | `$724.7M` | `$740.0M` | `-2.1%` | 库存压力未扩大 |
+| 流动资产 | `$2.142B` | `$2.090B` | `+2.5%` | 流动性稳定 |
+| 流动负债 | `$804.0M` | `$775.1M` | `+3.7%` | Current ratio 约 `2.66x` |
+| 长期债务 | `$1.080B` | `$1.084B` | 基本持平 | 债务绝对额较高但现金流覆盖强 |
+| 总资产 | `$4.003B` | `$3.971B` | `+0.8%` | 并购和 goodwill 占比需关注 |
+| 总负债 | `$2.094B` | `$2.052B` | `+2.1%` | 负债率约 `52.3%` |
+| 股东权益 | `$1.905B` | `$1.916B` | `-0.6%` | 回购导致 treasury stock 扩大 |
+| 净债务 | `$684.1M` | `$781.1M` | `-12.4%` | 净杠杆从 `1.3x` 降至 `1.1x` |
+
+财务结论：资产负债表健康，短期没有融资压力。FY2026 在回购和股息合计返还 `$409M` 的同时，净债务下降，说明现金创造质量强。主要财务风险不是偿债，而是利润质量：45X benefit 对毛利率和 EPS 有实质帮助，若政策、合规或产能转移节奏变化，市场会重新折算 ex-45X 盈利。
+
+## 2. 最新与最近 4 次财报：五个季度核心数字、订单和 AI 暴露
+
+说明：ENS 不披露 consolidated backlog、bookings 或取消率；表中订单/交期为公司披露、财报会和本报告推断。AI 数据中心相关收入占比为估算值，不是公司披露。
+
+| 财报季度 | 发布日 / 期末 | 总收入 / YoY | Gross margin / ex-45X | GAAP net income / adj EPS | 分部收入 | 分部调整后经营利润率 | 订单、交期、backlog 与取消率 | AI / 数据中心收入估算 |
+|---|---|---:|---:|---:|---|---|---|---|
+| FY2026 Q4 | 2026-05-20 / 2026-03-31 | `$988.0M` / `+1.3%` | `29.4%` / `24.7%` | `$77.3M` / `$3.19` | Energy `$425.7M` `+6.7%`; Motive `$370.1M` `-5.7%`; Specialty `$192.2M` `+8.1%` | Energy `10.0%`; Motive `14.2%`; Specialty `9.4%`; total `15.6%` | Data center Q4 revenue flat YoY due tough comp; FY data center high-single-digit growth; data center orders `+36% YoY`; A&D book-to-bill `1.22`; munitions backlog increasing；取消率未披露，项目制业务存在季度波动 | Data center 约 `$90-140M`；AI 新锂电产品收入仍小，DataSafe Noir/锂电 DC solution 已 customer commissioning |
+| FY2026 Q3 | 2026-02-04 / 2025-12-28 | `$919.1M` / `+1.4%` | `30.1%` / `26.3%` | 约 `$90.4M` / 约 `$2.77` | Energy `$399.5M` `+2.6%`; Motive `$352.1M` `-1.9%`; Specialty `$167.5M` `+8.0%` | Energy `10.5%`; Motive `14.9%`; Specialty `11.8%`; total `15.5%` | 未披露 backlog；Specialty 高增长，Energy Systems 继续受数据中心/通信支撑；交付仍为项目制 | Data center 约 `$85-125M`；AI 相关主要是传统 UPS / TPPL / DC power |
+| FY2026 Q2 | 2025-11-05 / 2025-09-28 | `$951.3M` / `+7.7%` | `29.1%` / `24.9%` | `$68.4M` / `$2.56` | Energy `$434.7M` `+13.8%`; Motive `$359.7M` `-1.9%`; Specialty `$156.9M` `+16.3%` | Energy `7.7%`; Motive `13.3%`; Specialty `9.2%`; total `13.6%` | 收入超 Q2 指引 `$870-910M`；增长来自 `3%` organic volume、`3%` pricing、`1%` acquisition、`1%` FX；订单未披露 | Data center 约 `$95-145M`；Q2 Energy 高增长说明 DC/通信需求仍强 |
+| FY2026 Q1 | 2025-08-06 / 2025-06-29 | `$893.0M` / `+4.7%` | `28.4%` / `24.1%` | `$57.5M` / `$2.08` | Energy `$391.4M` `+8.4%`; Motive `$349.1M` `-4.7%`; Specialty `$148.5M` `+18.1%`; corp `$4.0M` | Energy `7.0%`; Motive `13.4%`; Specialty `6.5%`; total `12.8%` | 收入高于 Q1 指引 `$830-870M`；公司称增长由 Bren-Tronics acquisition、Communications recovery 和 robust Data Center market 推动 | Data center 约 `$85-125M`；AI 相关仍主要在 UPS 电池和电源系统 |
+| FY2025 Q4 | 2025-05-21 / 2025-03-31 | `$974.8M` / 对比基准 | `31.2%` / `26.7%` | `$96.5M` / `$2.97` | Energy `$398.8M`; Motive `$392.3M`; Specialty `$177.8M`; corp `$5.9M` | Energy `8.7%`; Motive `17.0%`; Specialty `8.5%`; total `15.6%` | 管理层后来指出该季度受 tariffs 生效前 pull-in 影响，使 FY2026 Q4 comp 偏难；backlog 未披露 | Data center 约 `$90-140M`；较强基数导致 FY2026 Q4 DC revenue flat |
+
+### 2.1 五个季度趋势判断
+
+| 维度 | 观察 | 解释 |
+|---|---|---|
+| 收入 | FY2026 四个季度依次 `$893M -> $951M -> $919M -> $988M` | Q4 为历史第二高季度；全年 record revenue |
+| Energy Systems | 四个季度收入 `$391M / $435M / $400M / $426M`，FY2026 全年 `+7.8%` | 数据中心、通信恢复和 power electronics 支撑；项目制导致季度不线性 |
+| Motive Power | 四个季度收入 `$349M / $360M / $352M / $370M`，FY2026 全年 `-3.6%` | 叉车/工业物料搬运偏弱，但维护免维护产品占比提升 |
+| Specialty | 四个季度收入 `$149M / $157M / $168M / $192M`，FY2026 全年 `+12.1%` | Bren-Tronics、A&D、munitions、space、soldier power 驱动 |
+| 毛利率 | GAAP GM `28.4% / 29.1% / 30.1% / 29.4%` | 45X benefit 每季约 `3.8-4.7pct`；ex-45X 毛利率在 `24.1-26.3%` |
+| 订单 | 公司不披露 consolidated backlog；Q4 披露 data center orders `+36% YoY`，A&D book-to-bill `1.22` | 可见 momentum 好于收入，特别是 data center 和 A&D；但 revenue recognition 受项目制/OEM handoff/客户验证影响 |
+| AI 相关收入 | 当前是“传统 data center power + 小量锂电 commissioning” | 不是纯 AI 增长曲线；2026-2027 更应看订单、认证、客户 commissioning 和 FY2028 revenue guide |
+
+## 3. 2026 最新指引、业务收入占比、产品与 AI 数据中心重点
+
+### 3.1 最新指引
+
+FY2027 Q1 指引：
+
+| 指标 | 指引 | 含义 |
+|---|---:|---|
+| Net sales | `$915M-$955M` | 中点 `$935M`，较 FY2026 Q4 `$988M` 环比下降，符合工业季节性和项目制 |
+| IRC 45X benefits to cost of sales | `$42M-$47M` | 继续显著支撑毛利 |
+| Adjusted diluted EPS | `$2.70-$2.90` | 中点 `$2.80` |
+| Adjusted diluted EPS ex-45X | `$1.61-$1.71` | 中点 `$1.66`，显示 45X 对 EPS 贡献约 `$1.14` |
+| FY2027 capex | 约 `$70M` | 比 FY2026 capex `$80M` 略低，说明短期不是重 capex 爆发期 |
+
+### 3.2 FY2026 收入结构和增长侧重点
+
+| 业务 | FY2026 收入占比 | FY2026 增长 | 公司当前侧重点 | 投资判断 |
+|---|---:|---:|---|---|
+| Energy Systems | `44.0%` | `+7.8%` | data center、communications、power electronics、DataSafe Noir、UPS battery / lithium data center solution | AI 数据中心主载体；订单和新品验证是核心 |
+| Motive Power | `38.1%` | `-3.6%` | maintenance-free products、warehouse operators BESS、充电系统、成本控制 | 周期弱；高毛利底盘但不是 AI 主线 |
+| Specialty | `17.7%` | `+12.1%` | A&D、munitions、space、soldier power、Bren-Tronics、Greenville domestic lithium | 高增长、强壁垒；非 AI 但可能是 EPS 弹性最大来源 |
+| New Ventures / Corporate | `0.1%` disclosed revenue | 小 | BESS、dynamic fast charging、utility backup、warehouse BESS | 小基数可选项，短期不要夸大 |
+
+### 3.3 产品矩阵：重点产品、型号和跳过项
+
+| 业务 | 重点产品 / 型号 | 当前状态 | 为什么重要 |
+|---|---|---|---|
+| Energy Systems - 数据中心传统 UPS 电池 | `DataSafe XE`、`DataSafe HX`、`DataSafe D`、`PowerSafe DDm`、TPPL batteries、battery racks/cabinets | 成熟出货；官网 data center range 明确列示 | 当前数据中心收入底盘；TPPL 支持高温、低自放电、快充和较低维护 |
+| Energy Systems - 新锂电数据中心系统 | `DataSafe Noir` lithium-based energy storage system | 2026-06-09 发布，available immediately；Q4 已 customer commissioning | 面向 AI 动态负载、高密数据中心；公司称相对公开可比锂电系统 `>2x` output power、`>1.7x` energy/capacity |
+| Energy Systems - 电源系统/通信/机柜 | `Cordex`、`SiteFlex`、DC power systems、rectifier shelves/modules、converter modules、DC breaker/fuse panels、AC inverters/UPS、bypass/transfer switches、controllers、outdoor cabinets/enclosures | 成熟产品族 | 数据中心、通信和宽带配套；可与电池/UPS 服务形成系统方案 |
+| Motive Power - 维护免维护 / 锂电 | `NexSys` 系列、TPPL maintenance-free、material handling batteries、chargers、battery monitoring | Q4 maintenance-free product sales 为 Motive sales 的 `30.4%` | 支撑 Motive 毛利，但 FY2026 业务仍受市场 softness |
+| New Ventures / warehouse | BESS for warehouse operators、dynamic fast charging、demand charge reduction | 进入 customer commissioning；当前收入很小 | 与 Motive 客户群有交叉，可做 energy management，但不是 AI 数据中心主线 |
+| Specialty - A&D / Space | Bren-Tronics portable power、military batteries/chargers、thermal batteries、liquid reserve batteries、space batteries、soldier power、Rebel HYPER hybridized power systems | A&D revenue Q4 `+mid-20%`，book-to-bill `1.22`；munitions backlog increasing | 高壁垒、高需求；公司称某些弹药电池全球供应商很少 |
+| 长期制造平台 | Greenville, SC lithium-ion cell plant | DOE `$199M` award；500,000 sqft；2028 commercial production | 供应链国产化、A&D 客户、未来数据中心 downstream optionality |
+
+低优先级或本报告跳过的产品/业务：
+
+| 跳过项 | 原因 |
+|---|---|
+| 常规 flooded lead-acid 叉车电池 | Motive Power 底盘大但 FY2026 负增长，不是 AI 主线 |
+| floor care、mining、rail、airport ground support 普通应用 | 工业周期暴露，当前缺少高增长/AI 数据中心映射 |
+| premium automotive SLI / ODYSSEY 零售应用 | Specialty 里有品牌价值，但不驱动 AI 基建 |
+| 普通 broadband / telecom 老旧备电替换 | 现金流稳定，但 AI 弹性低；只作为 Energy Systems 底盘 |
+| EV dynamic fast charging | 属 New Ventures，当前披露收入极小，项目不如数据中心锂电和 A&D 有确定性 |
+
+## 4. 高增长或关键产品：当前收入贡献、AI 重要性、供需和定价权
+
+评分说明：1=低，5=高。收入为本报告估算，非公司披露。
+
+| 关键产品 / 业务 | 当前公司收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 数据中心传统 UPS 电池 / TPPL / DataSafe | FY2026 `$300-450M` | high single digit | `4` | `4` | `3` | `3` | 当前最真实的 AI 数据中心暴露；受数据中心建设和 UPS battery refresh 拉动 |
+| DataSafe Noir / lithium data center solution | FY2026 `<$10-20M`，主要 commissioning | 从 0 起步 | `5` | `4` | `4` | `3` | 产品价值高，但认证、OEM handoff、hyperscaler validation 决定收入节奏 |
+| Energy Systems DC/AC power、机柜、电源系统和服务 | FY2026 `$600-900M` 全 Energy Systems 非纯数据中心 | mid/high single digit | `3` | `3` | `3` | `3` | 系统方案增强客户粘性；但与 Vertiv/Schneider/Eaton 比，ENS 不是全栈配电龙头 |
+| Specialty A&D lithium / thermal / space batteries | FY2026 `$300-450M` | `+20%` 附近的 A&D 局部增长 | `1` | `5` 对国防 | `4` | `4` | 非 AI，但 backlog、book-to-bill 和供应商稀缺性强，是 FY2027 EPS 弹性 |
+| Warehouse operator BESS / New Ventures | FY2026 `<$10M` disclosed / commissioning | 从 0 起步 | `2` | `3` | `3` | `2` | 与仓储客户和需求电费管理相关，短期收入小 |
+| Greenville domestic lithium cell plant | 当前 `$0` | N/A | `2-3` 长期 | `3` | `4` 对国防国产化 | `3-4` 若客户愿付 domestic premium | 2028 以后才商业化；短期看建设、客户承诺和认证 |
+| Motive maintenance-free / lithium warehouse batteries | FY2026 约 `$400-450M` 年化 | low/mid single digit，Motive overall `-3.6%` | `1` | `2` | `2` | `3` | 毛利底盘和客户关系重要，但不是 AI 报告重点 |
+
+### 4.1 价格和利润率推断
+
+| 产品 | 毛利率估算 | 依据 |
+|---|---:|---|
+| TPPL / DataSafe 数据中心 UPS 电池 | `25-35%` gross，服务 attach 后可更高 | FY2026 Energy Systems adjusted operating margin `8.8%`，但数据中心和 TPPL mix 好于通信/普通工业；45X 会提高北美制造利润 |
+| DataSafe Noir lithium system | 早期 `25-40%` gross，规模化后取决于 cell 成本和认证溢价 | 系统级锂电 + BMS + 机柜 + 服务比 cell 有更高价值，但短期 cell 外购压缩垂直整合毛利 |
+| Energy Systems power electronics / service | `25-35%` gross，service higher | 公司披露 Q4 Energy volumes/mix bolstered by growth in power electronics，cost optimization 支撑 margin |
+| A&D / space / thermal batteries | `30-50%` gross 可能性高 | 定制、高可靠、客户认证和供应商稀缺；但公司未披露细分毛利 |
+| Warehouse BESS | 硬件集成 `15-30%`，软件/服务 `40%+` | BESS 系统集成竞争激烈，若绑定 Motive 客户和服务可改善毛利 |
+
+## 5. 一年后关键产品收入贡献三情景
+
+时间窗口：2026-06 至 2027-06 / FY2027-FY2028 初。收入为未来 12 个月对 ENS 的供应商收入估算。
+
+| 产品 / 业务 | 基准情景 | 乐观情景 | 极度乐观情景 | 主要触发条件 |
+|---|---:|---:|---:|---|
+| 数据中心传统 UPS 电池 / TPPL / DataSafe | `$330-500M`，同比 `+6-12%` | `$500-650M`，同比 `+15-30%` | `$650-850M`，同比 `+35-70%` | data center orders `+36%` 转收入；AI 数据中心建设不延迟；TPPL 继续替换 VRLA / 普通铅酸 |
+| DataSafe Noir / lithium data center solution | `$25-60M` | `$80-180M` | `$250-400M` | OEM handoff 完成；至少 1-2 家大 UPS / hyperscaler 标准化导入；客户验证周期缩短 |
+| Energy Systems power electronics / power systems / service | `$750-950M` | `$950M-1.15B` | `$1.15-1.35B` | data center + communications 双增长，power electronics mix 改善 |
+| Specialty A&D / munitions / space / soldier power | `$400-525M` | `$525-700M` | `$700-900M` | A&D book-to-bill `1.22` 延续；munitions backlog 转 liquid reserve revenue；thermal batteries 年末跟进 |
+| Warehouse BESS / New Ventures | `$20-50M` | `$75-150M` | `$200-350M` | warehouse operator commissioning 变 repeat orders；Motive 客户安装 demand-charge BESS |
+| Greenville domestic lithium cells | `$0` 商业收入，建设/认证进展 | `$0-10M` pre-production / sample revenue | `$10-30M` 早期客户付款 | 工厂建设快于计划；A&D 客户预付款或样品认证提前 |
+| Motive maintenance-free / lithium | `$420-500M` | `$500-600M` | `$600-750M` | 工业叉车周期改善；maintenance-free 占比从 `30.4%` 继续提升 |
+
+### 5.1 一年后产品评分三情景
+
+| 产品 | 情景 | AI 重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 | 判断 |
+|---|---|---:|---:|---:|---:|---|
+| TPPL / DataSafe 数据中心 UPS | 基准 | `4` | `4` | `3` | `3` | 传统 UPS battery refresh 稳定增长 |
+| TPPL / DataSafe 数据中心 UPS | 乐观 | `4` | `5` | `4` | `3.5` | AI data center 电力/UPS 项目加速，下单先于投产 |
+| TPPL / DataSafe 数据中心 UPS | 极度乐观 | `4` | `5` | `4.5` | `4` | TPPL 在高温/空间/TCO 中获得明显溢价 |
+| DataSafe Noir | 基准 | `5` | `4` | `4` | `3` | 有订单但收入小；验证仍是瓶颈 |
+| DataSafe Noir | 乐观 | `5` | `5` | `4.5` | `3.5` | 一线客户认可动态负载能力，进入标准采购清单 |
+| DataSafe Noir | 极度乐观 | `5` | `5` | `5` | `4` | hyperscaler 认可其 power density / energy density 差异，形成短期供不应求 |
+| Specialty A&D | 基准 | `1` | `5` | `4` | `4` | 国防需求强但与 AI 无直接关系 |
+| Specialty A&D | 乐观 | `1` | `5` | `4.5` | `4.5` | 弹药、space、soldier power 多线同步 |
+| Specialty A&D | 极度乐观 | `1` | `5` | `5` | `5` | 公司“全球只有少数供应商”产品进入产能瓶颈定价 |
+| Warehouse BESS | 基准 | `2` | `3` | `3` | `2` | 项目验证为主 |
+| Warehouse BESS | 乐观 | `2` | `4` | `3.5` | `2.5` | 仓储电费和充电需求驱动复制 |
+| Warehouse BESS | 极度乐观 | `3` | `4` | `4` | `3` | 与仓储自动化、EV fast charge、分布式能源结合 |
+
+## 6. BOM、单位内容量、价格传导、产能和认证
+
+### 6.1 数据中心 UPS 电池 / DataSafe / TPPL
+
+| 单位 | 真实内容量估算 | ENS 可捕获内容 | 价格传导 |
+|---|---:|---:|---|
+| 每 `1MW IT load` | 5-15 分钟桥接需 `83-250kWh` usable；考虑冗余、效率、老化和 N+1/2N，安装电池容量约 `100-500kWh/MW` | TPPL/VRLA/铅酸电池柜、BMS/监测、安装调试和服务，收入约 `$75k-250k/MW`；若高端 TPPL/双路冗余可更高 | 电池材料、铅价、机柜/铜、消防/安装、服务合约；高温运行和空间节省可转化为 TCO 溢价 |
+| 每 `100kW rack` | 5-10 分钟 usable energy 约 `8-17kWh`；按冗余约 `10-40kWh/rack` | 如果仍采用集中 UPS，ENS 内容按 MW 分摊约 `$7.5k-25k/rack`；高端 TPPL 可更高 | 由 facility UPS/BESS 预算传导，不直接随 GPU BOM 下单 |
+| 每 GPU | 以 72-GPU、120-155kW rack 估算，5 分钟 usable energy 约 `0.12-0.18kWh/GPU` | 集中式 UPS 分摊约 `$100-500/GPU`，高冗余或 lithium 可到 `$500-2,000/GPU` | 不是 GPU 供应链 direct BOM，客户按 MW/UPS system 支付 |
+| 每 optical port | `0` direct | ENS 不参与光口 BOM | 无 |
+
+产能和采纳：传统 TPPL/DataSafe 是成熟产品，客户认证和服务网络已建立；当前瓶颈更可能是数据中心项目节奏、现场 commissioning、UPS/OEM 组合和长交期电力设备，而非单纯电池产能。45X 和 Springfield/Tijuana 迁移有望改善美国制造成本。
+
+### 6.2 DataSafe Noir / lithium data center system
+
+| 单位 | 真实内容量估算 | ENS 可捕获内容 | 价格传导 |
+|---|---:|---:|---|
+| 每 `1MW IT load` | 若用 lithium UPS battery 替代铅酸，通常安装 `100-400kWh/MW`，空间/能量密度更高 | lithium battery modules/cabinets、BMS、control、thermal/safety、commissioning、服务，收入约 `$150k-500k/MW`；高功率高能量密度方案可更高 | 核心是“空间 + 动态负载可控 + 验证时间缩短”；不是简单 cell cost-plus |
+| 每 `100-155kW AI rack` | 5-10 分钟 usable energy 约 `8-26kWh`，冗余后 `10-50kWh` | 若按 rack/row 近端部署，ENS 内容约 `$10k-60k/rack`；若仍集中部署则按 MW 分摊 | 高密机房白区空间价值越高，DataSafe Noir 溢价越强 |
+| 每 GPU | NVL72 类机柜按 72 GPU，ENS 内容约 `$150-800/GPU` 基准；极高冗余和近端部署可到 `$1,000+` | 间接分摊 | 客户按系统可靠性、floor-space 和 commissioning 风险付款 |
+| 每 optical port | `0` direct | 不参与 | 无 |
+
+认证阶段：2026-05 财报会显示产品已向客户出货并进入 commissioning，不是 A/B sample；但仍需 OEM handoff、communication integration、多家主 UPS / hyperscaler 验证。2026-06-09 官方发布显示产品 available immediately。结论：商业可售，但 hyperscaler 标准化认证仍在推进。
+
+供应链：管理层称当前 data center / BESS 会继续购买外部 cells 并集成到 end systems；Greenville 工厂主要先服务 Aerospace & Defense domestic supply，短期不会解决 DataSafe Noir 的全部 cell supply。锂电 cell 价格传导会受 LFP/NMC 亚洲供应链和关税影响。
+
+### 6.3 Warehouse operator BESS / New Ventures
+
+| 单位 | 真实内容量估算 | ENS 可捕获内容 | 价格传导 |
+|---|---:|---:|---|
+| 每 `1MW` BESS power | 2h 系统 `2MWh/MW`，4h 系统 `4MWh/MW` | BESS cabinet/rack、PCS/EMS 集成、安装服务，ENS 收入约 `$0.5-1.8M/MW`，取决于时长和系统范围 | 电池 cell + PCS + EMS + EPC + 电费/需求电费节省 |
+| 每 warehouse site | 中型站点可能 `0.5-5MW / 1-20MWh` | 单站点收入约 `$0.5M-10M+` | ROI 来自需求电费削减、充电峰值管理、备用电源 |
+| 每 AI rack / GPU / optical port | 不适用 | 非 AI direct BOM | 无 |
+
+认证阶段：customer commissioning；收入太小，需看 FY2027 是否形成 repeatable product 而非定制项目。
+
+### 6.4 Specialty A&D / munitions / space batteries
+
+| 单位 | 内容量 | ENS 可捕获内容 | 价格传导 |
+|---|---|---|---|
+| 每 missile / standoff weapon | 热电池、liquid reserve battery、lithium silicon cobalt disulfide 等按平台定制；公开单机价值量未披露 | 单件可从数千美元到数万美元以上，取决于平台、可靠性、能量密度和认证 | 客户更看 reliability、energy density、domestic supply 和交期；成本加成不是主要定价方式 |
+| 每 satellite / spacecraft | space battery packs 和电源系统；公司称 space batteries 有约 `15B` hours without flaw 的运行记录 | 单项目金额差异极大，可从数十万到数百万美元级 | 认证、飞行履历和交付速度形成强溢价 |
+| 每 AI MW/rack/GPU/optical port | 不适用 | 非 AI 基建 BOM | 无 |
+
+产能和认证：管理层称 munitions backlog increasing，liquid reserve batteries 会在 FY2027 转收入，thermal batteries later this year；行业整体正在提高 capacity。Bren-Tronics 和 Rebel HYPER 扩大 soldier power / battlefield electrification。风险是政府预算、项目节奏和军品认证周期。
+
+### 6.5 一年后产能、采纳和认证三情景
+
+| 产品 | 基准：2027-06 | 乐观：2027-06 | 极度乐观：2027-06 |
+|---|---|---|---|
+| TPPL / DataSafe 数据中心 UPS | 可服务收入能力 `$350-550M/年`；数据中心客户继续采用；认证成熟 | `$550-750M/年`；AI data center UPS 电池订单转收入；服务 attach 提升 | `$800M+/年`；TPPL 高温/空间节省成为 retrofit 和新建项目默认方案之一 |
+| DataSafe Noir | 产能受 customer validation 和 cell sourcing 限制；收入能力 `$50-100M/年`；完成若干 OEM/hyperscaler 试点 | 收入能力 `$150-250M/年`；至少 1-2 个大客户批准规模部署 | 收入能力 `$400M+/年`；hyperscaler 标准化，短期供不应求，需外部 cell reservation |
+| Warehouse BESS | 收入能力 `$50M/年`；若干仓储客户项目 | `$150M/年`；repeatable solution，Motive 客户交叉销售 | `$300M+/年`；成为仓储电气化/充电基础设施标配 |
+| Specialty A&D | 收入能力 `$500M/年`；liquid reserve 转收入，thermal 开始 | `$700M/年`；munitions + soldier power + space 同时强 | `$900M+/年`；产能成为主要约束，价格/预付款改善 |
+| Greenville plant | 建设和设备导入，不贡献量产收入 | 加快建设并完成关键客户认证路线 | 获得更大 A&D 客户承诺或预付款；数据中心 downstream optionality 被重新定价 |
+
+## 7. 真实订单积压、供给和未来一年业务增速预测
+
+### 7.1 Backlog / bookings 可见证据
+
+| 证据 | 来源 | 对 ENS 的意义 |
+|---|---|---|
+| 公司不披露 consolidated backlog | 财报/10-K | 不能机械做 backlog coverage；需用订单增长、book-to-bill、收入指引和 commissioning 推断 |
+| Q4 FY2026 data center orders `+36% YoY` | FY2026 Q4 财报会 | 数据中心收入 Q4 flat 不等于需求弱；订单领先收入 |
+| FY2026 data center revenue “really high single digits” | FY2026 Q4 财报会 | 说明 data center 是全年增长贡献，Q4 flat 主要是 tough comp / pull-in |
+| A&D Q4 revenue `+mid-20%` YoY 和 sequential，orders sequential up about same，book-to-bill `1.22` | FY2026 Q4 财报会 | Specialty 的 backlog 转收入可持续到 FY2027 |
+| DataSafe Noir / lithium DC solution 已 customer commissioning | FY2026 Q4 release / call / 2026-06-09 产品发布 | 不是概念阶段，但有意义收入更偏 FY2028 |
+| Warehouse BESS customer commissioning | FY2026 Q4 release / call | New Ventures 有现场验证，但收入规模未披露 |
+| FY2027 Q1 revenue 指引 `$915-955M` | FY2026 Q4 release | 短期收入增速不会直线上升，项目制和季节性仍存在 |
+
+### 7.2 未来一年公司整体增速三情景
+
+| 情景 | FY2027 / 未来 12 个月收入预测 | 增速 | 订单与供给假设 | EPS / margin 方向 |
+|---|---:|---:|---|---|
+| 基准 | `$3.85-4.05B` | `+3-8%` | Data center orders 强但按项目节奏转收入；Motive 低位稳定；A&D 高增长；DataSafe Noir 小收入 | adjusted EPS 受 45X 和 mix 支撑，margin 稳中小升 |
+| 乐观 | `$4.10-4.35B` | `+9-16%` | Data center 订单 `+36%` 转收入更快；A&D book-to-bill >1 延续；Motive 修复；DataSafe Noir 贡献 `$100M` 级 | Energy Systems margin 改善，Specialty mix 改善 |
+| 极度乐观 | `$4.45-4.80B` | `+19-28%` | Hyperscaler / UPS OEM 对 DataSafe Noir 加速认证；A&D 产能扩张和 backlog 大幅转收入；Motive 周期反弹 | 收入增长从 margin expansion 转向 top-line growth，估值重估 |
+
+反证条件：
+
+| 风险 | 观察指标 |
+|---|---|
+| DataSafe Noir validation 慢 | 管理层继续把 meaningful revenue 推迟到 FY2028 以后，或 Q&A 不再强调客户 commissioning |
+| 数据中心项目延迟 | Q1/Q2 Energy Systems revenue 低于指引，订单增长不转收入 |
+| A&D backlog 转化慢 | book-to-bill 降至 <1，liquid reserve / thermal battery revenue 时间点延后 |
+| 45X 质量折价 | ex-45X EPS 低于市场预期，政策或产能转移影响抵免 |
+| Motive Power 继续下滑 | 叉车/仓储资本开支疲弱，maintenance-free 占比提升不足以抵消 volume |
+| 锂电供应链/关税 | DataSafe Noir cell cost 或供应链被关税、FEOC、客户安全规则影响 |
+
+## 8. 竞争格局、替代方案和客户替换成本
+
+### 8.1 数据中心 UPS 电池 / Energy Systems
+
+| 竞争对手 | 竞争点 | ENS 优势 | ENS 风险 |
+|---|---|---|---|
+| Vertiv | 数据中心 power/cooling 全栈、UPS、服务、AI rack block | ENS 在电池和特定备用电源有深积累 | Vertiv 更接近整套 AI data center infrastructure 主承包 |
+| Schneider Electric | Galaxy UPS、EcoStruxure、800VDC 生态、配电 | ENS 电池技术和服务可作为方案组件 | Schneider 有更强配电和大型客户平台能力 |
+| Eaton | UPS、switchgear、配电、Brightlayer、数据中心电气 backlog | ENS 在工业电池和 TPPL 品类强 | Eaton 更强在电气设备、配电和数据中心整体订单 |
+| ABB / Delta / Huawei / Socomec / Riello | UPS、电源模块、数据中心电气系统 | ENS 可做多化学体系电池供应和服务 | 价格竞争与系统集成商绑定风险 |
+| East Penn / C&D / Exide 等铅酸厂商 | lead-acid / VRLA / TPPL 替代 | ENS 品牌、DataSafe、TPPL 和全球服务 | 铅酸产品差异化有限，客户可双供 |
+| ZincFive / Saft / Samsung SDI / LGES / Panasonic / CATL / BYD | NiZn、Li-ion、BESS、数据中心储能 | ENS 可提供系统集成和既有客户关系 | Li-ion cell 是商品化环节，非锂技术可能在安全/高倍率抢占 |
+
+客户替换成本：中高。UPS battery 不是不可替代，但数据中心客户会在 fire safety、runtime、maintenance、service response、BMS communication、UPS OEM compatibility 和全球服务网络上形成认证锁定。进入 hyperscaler / colocation approved vendor list 后粘性高；若只是普通 VRLA 电池，替换成本较低。
+
+### 8.2 DataSafe Noir / 锂电数据中心系统
+
+| 维度 | 判断 |
+|---|---|
+| 是否未来主流 | 锂电在高密数据中心 UPS 电池中大概率继续提升渗透率；但不是所有 AI 数据中心都会采用 ENS 的系统，且 800VDC、rack/row BBU、NiZn、超级电容、园区 BESS 都可能分流 |
+| ENS 技术优势 | 公开强调系统级动态负载可控、`>2x` output power、`>1.7x` energy/capacity、global commissioning/service；已有 data center 客户基础 |
+| 主要风险 | cell 外购、hyperscaler 验证慢、锂电安全和消防规则、UPS OEM interface、与 Vertiv/Schneider/Eaton 自有方案竞争 |
+| 替代方案 | TPPL / VRLA、NiZn、rack BBU、超级电容 shelf、园区 BESS + smaller UPS、flywheel/dynamic UPS、800VDC sidecar |
+| 客户替换成本 | 认证前低；一旦进入标准设计和运维体系，中高，因 BMS/communication/service 和现场 SOP 绑定 |
+
+### 8.3 Specialty A&D / Space
+
+| 竞争对手 | 竞争点 | ENS 优势 | 风险 |
+|---|---|---|---|
+| EaglePicher | defense / space batteries | 高可靠军工/航天经验 | 客户可能双供 |
+| Saft / TotalEnergies | space, defense, industrial batteries | 全球品牌、锂电和特种电池 | 欧洲/主权供应链竞争 |
+| Ultralife / Teledyne 等 | tactical / military batteries | 特定产品强 | 项目制、预算和认证周期 |
+| 小型国防电池厂商 | 专用 thermal / reserve / soldier power | 灵活定制 | 规模和服务弱 |
+
+ENS 的优势在于 Bren-Tronics + 原有 Specialty + Greenville domestic supply 的组合。管理层对 munitions、soldier power、space demand 信号乐观，并称某些高能量密度电池全球供应商很少。客户替换成本高，因为军工和航天认证、飞行履历、可靠性数据和项目接口难以快速替换。
+
+## 9. 投资判断：哪些是真弹性，哪些是叙事
+
+### 9.1 真弹性
+
+1. **Data center orders +36% YoY 是最直接的领先指标。** Q4 data center revenue flat 容易让人误判，但管理层解释是 tough comp 和项目制；订单增长更重要。
+2. **DataSafe Noir 是 ENS 进入 AI 高密动态负载问题的核心新品。** 关键不是“锂电”本身，而是系统能否处理 AI workload 的动态功率、空间和 commissioning 风险。
+3. **A&D / Specialty 可能比 AI 更快转收入。** A&D book-to-bill `1.22`，munitions backlog increasing，liquid reserve batteries FY2027 转收入、thermal batteries late year；这条线更确定但不是 AI。
+4. **现金流和低杠杆支撑回购与研发。** FY2026 FCF `$468M`，净杠杆 `1.1x`，给公司转型和股东回报留出空间。
+
+### 9.2 需要降权的叙事
+
+1. **不要把 ENS 当作 AI 服务器 power shelf 或 800VDC 直接龙头。** 机柜级 power shelf、PSU、VRM、800VDC HV IBC 的主链更偏 Delta、Advanced Energy、Vicor、MPS、Infineon、TI、Schneider/Vertiv/Eaton 等。
+2. **不要把所有数据中心收入都当 AI。** 传统 colocation、enterprise DC、通信/宽带和普通 UPS 替换仍占很大部分。
+3. **不要把 DataSafe Noir 立即年化成数亿美元收入。** 管理层已经说明 meaningful revenue lift 更偏 FY2028，FY2027 仍需认证和客户验证。
+4. **不要忽视 45X。** FY2026 adjusted EPS `$10.56` 包含 45X；ex-45X adjusted EPS `$6.41`，估值结论差异很大。
+
+### 9.3 未来 4 个季度跟踪清单
+
+| 指标 | 触发偏多 | 触发偏空 |
+|---|---|---|
+| Energy Systems revenue | 连续两个季度高个位数以上增长 | Q1/Q2 低于指引，data center 转收入慢 |
+| Data center orders | 继续 `+20%` 以上 | 订单增长回落到个位数或不再披露 |
+| DataSafe Noir | 新客户、OEM 认证、hyperscaler 标准化、收入量级披露 | 仍停留在 commissioning，无 revenue timing |
+| A&D book-to-bill | >1.1，munitions backlog 转收入 | book-to-bill <1，项目延迟 |
+| Motive Power | maintenance-free 占比继续升、收入恢复 | 工业弱周期继续拖累 |
+| 45X / manufacturing | Springfield 迁移按计划，FY2028 `$20M` 增量清晰 | 政策、审计或产能转移不确定 |
+| Greenville | 建设按 2025-2028 计划推进，客户承诺明确 | capex 延后、客户认证慢、数据中心 downstream 不清晰 |
+
+## 10. 来源
+
+### 10.1 外部来源
+
+- EnerSys FY2026 Q4 / FY2026 全年财报新闻稿，2026-05-20：`https://investor.enersys.com/news/news-details/2026/EnerSys-Reports-Fourth-Quarter-and-Full-Year-Fiscal-2026-Results/default.aspx`
+- EnerSys FY2026 Q4 earnings presentation，2026-05：`https://s206.q4cdn.com/482396552/files/doc_financials/2026/q4/ENS-Q4-FY26-Earnings-Presentation.pdf`
+- EnerSys FY2026 10-K：`https://s206.q4cdn.com/482396552/files/doc_financials/2026/q4/859b1ca4-5eff-4855-ae09-d15c09e30225.pdf`
+- EnerSys FY2026 Q4 earnings call transcript，2026-05-21：`https://s206.q4cdn.com/482396552/files/doc_financials/2026/q4/617490_1998054088_3736823_Transcript_EditedCopy_20260521183232.pdf`
+- EnerSys FY2026 Q1 release，2025-08-06：`https://investor.enersys.com/news/news-details/2025/EnerSys-Reports-First-Quarter-Fiscal-2026-Results/default.aspx`
+- EnerSys FY2026 Q2 release，2025-11-05：`https://investor.enersys.com/news/news-details/2025/EnerSys-Reports-Second-Quarter-Fiscal-Year-2026-Results/default.aspx`
+- EnerSys FY2026 Q3 release，2026-02-04：`https://investor.enersys.com/news/news-details/2026/EnerSys-Reports-Third-Quarter-Fiscal-Year-2026-Results/default.aspx`
+- EnerSys DataSafe Noir release，2026-06-09：`https://investor.enersys.com/news/news-details/2026/EnerSys-Introduces-DataSafe-Noir-Lithium-System-for-Data-Center-Power/default.aspx`
+- EnerSys data center product page：`https://www.enersys.com/en/industries/data-centers/data-centers/`
+- EnerSys DOE Greenville lithium-ion gigafactory award，2025-01-17：`https://investor.enersys.com/news/news-details/2025/ENERSYS-COMPLETES-NEGOTIATION-OF-U-S--DOE-AWARD-SUPPORTING-DEVELOPMENT-OF-LITHIUM-ION-GIGAFACTORY-01-17-2025/default.aspx`
+- EnerSys Bren-Tronics acquisition announcement，2024-05-02：`https://www.enersys.com/en/about-us/news/enersys-to-acquire-bren-tronics-inc.-to-expand-presence-in-critical-defense-applications/`
+- EnerSys 2026 Investor Day event page，2026-06-11：`https://investor.enersys.com/events-and-presentations/event-details/2026/EnerSys-2026-Investor-Day-2026-WtPLvew2ML/default.aspx`
+- StockAnalysis ENS statistics / valuation，2026-06-11 访问：`https://stockanalysis.com/stocks/ens/statistics/`
+- Yahoo Finance chart API 快照，2026-06-11 12:23 PT：`https://query1.finance.yahoo.com/v8/finance/chart/ENS?range=1d&interval=1m`
+
+### 10.2 项目内行业资料
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/顶级会议信息/data_center_world_2026_research_report.md`

@@ -1,0 +1,165 @@
+# 公司收入传导与价值传导评估：Generac Holdings（GNRC）
+
+> 生成日期：2026-06-12  
+> 公司代号：GNRC  
+> 公司名称：Generac Holdings Inc.  
+> 主口径：NTM，约 2026Q2 至 2027Q1。FY2026 指引、2027 交付线索和长期数据中心 run-rate 只作补充锚点。  
+> 资料边界：使用 `公司调研/`、`行业调研/` 及 Generac 官方公开资料；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较结果。  
+> 重要限制：本报告只做经营收入、利润和现金流传导，不做股票评级、目标价、股价区间或估值倍数判断。所有美元金额除特别说明外均为美元。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即 2026Q2-2027Q1。Generac 2026Q1 后的 FY2026 指引为总收入同比 `mid-to-high teens %` 增长、C&I segment 同比 `mid-to-high 20%` 增长、Residential segment 约 `10%` 增长、调整后 EBITDA margin `18.5-19.5%`。本报告用已确认 Q1、FY2026 指引、`>$700M` 数据中心 backlog 和 2027Q1 run-rate 作 NTM 基准锚。
+- 当前收入基准、指引和 run-rate：2025 年收入 `$4.21B`；2026Q1 收入 `$1.059B`，同比 `+12%`。按 FY2026 指引，2026 全年收入约 `$4.85-5.05B`；扣除 Q1 后，2026Q2-Q4 可见收入约 `$3.79-3.99B`。若 2027Q1 按 C&I backlog 正常交付、Residential 正常化估算，NTM 基准收入约 `$5.05-5.30B`。
+- 当前预期口径：以管理层指引、Q1 run-rate、正式 backlog、已完成收购、数据中心客户认证和本地行业需求锚为主；市场一致预期因缺少本地可审计一手来源，不作为主锚。`$600M` 非绑定 hyperscaler NTP 和 2026-06-02 未量化全球供应协议只进入乐观或上限，不直接进入基准。
+- 重要产品/业务线：Residential home standby / portable / home energy，C&I 大兆瓦数据中心备用发电机，Enercon enclosure / switchgear / packaged controls，并机控制和服务，C&I mobile / rental / ordinary industrial backup，C&I BESS / microgrid / DER grid services。
+- NTM 公司收入四情景：悲观 `$4.70-4.95B`，基准 `$5.05-5.30B`，乐观 `$5.45-5.85B`，极度乐观 `$6.10-6.70B`。悲观不是“行业无需求”，而是 backlog 转收入、客户 site 进度、住宅停电环境或 C&I 产能爬坡低于当前预期；极度乐观要求 backlog、hyperscaler PO、Sussex 产能、Enercon 整合、Residential 正常化和利润质量同时突破。
+- 利润或 EBITDA 四情景：悲观调整后 EBITDA 约 `$0.80-0.89B`；基准 `$0.93-1.03B`；乐观 `$1.06-1.23B`；极度乐观 `$1.28-1.54B`。净利润方向随 EBITDA 上升，但受税率、收购摊销、法律/监管项、库存和营运资本影响，产品级和情景级净利润不宜精确到单点。
+- 最大传导瓶颈：数据中心 backup power 需求池强，但 GNRC 能确认多少收入取决于客户 PO、site-level engineering、柴油/排放/噪声许可、engine/alternator、switchgear/enclosure、工厂测试、现场 commissioning 和客户验收，而不是 AI 数据中心总 CapEx。
+- 最大利润率变量：Residential price/cost 和 operating efficiency 是当前高利润底盘；C&I 大兆瓦 generator 的毛利方向取决于 Enercon 垂直整合、产能利用率、客户多源压价、固定价合同和关税/原材料。C&I mix 上升会压低毛利率但改善规模和总 EBITDA。
+- 最大现金流变量：backlog 转收入会拉动应收、库存、工厂测试和扩产支出。2026Q1 OCF `$119M`、FCF `$90M` 明显改善；但若 Sussex、Enercon 和大兆瓦交付同步加速，自由现金流改善可能滞后利润。
+- 可信度：基准为中高。A 级证据来自 Q1 2026 segment revenue、FY2026 指引、Q1 现金流和 2025 年报收入；B 级证据来自 `>$700M` 数据中心 backlog、已完成 Enercon/Allmand、已签署 hyperscaler 全球供应协议；C/D 级证据包括未量化客户 PO、非绑定 NTP、BESS/microgrid pipeline 和长期多年度 run-rate。
+
+## 2. 重要产品清单
+
+本步口径：只列入会影响 NTM 收入、利润或经营质量的产品/业务线。当前收入基数优先使用已披露分部、产品线、指引、订单或 backlog；GNRC 未披露单独数据中心 revenue、backlog 确认节奏或取消率，因此数据中心收入子集使用模型估算，不能替代公司披露收入。
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Residential home standby / portable / home energy | 2025 Residential product sales `$2.27B`；2026Q1 Residential external net sales `$549M`，total sales `$552M` | 2025 约 `54%`；2026Q1 约 `52%` | 现金流和利润率底盘；非 AI 主线 | A | 进入基准，按约 `10%` FY2026 指引和正常停电/替换周期处理 | 极端天气大年、家庭 energy ecosystem 提高附加率 |
+| C&I 大兆瓦数据中心备用发电机 package | 2026Q1 C&I external sales `$510M`；数据中心直接收入未披露，本地模型估 Q1 `$120-170M`；data center backlog `>$700M` | Q1 C&I 约 `48%`；数据中心子集估约总收入 `11-16%` | NTM 最大成长业务 | A/B；数据中心子集为 C | 进入基准，但只把已披露 backlog 的可交付部分纳入；非绑定 NTP 不进基准 | `$600M` 2027 NTP、第二/第三 hyperscaler、多年度供应协议 |
+| Enercon enclosure / switchgear / packaged controls | 2026-04-01 完成收购；单独收入未披露；与大兆瓦 package 高重叠 | 无法可靠量化；增量更偏毛利和交付能力 | 改善 C&I delivery 和 margin | B/C | 基准小比例纳入；主要作为利润率和执行可信度因素 | switchgear / power package 独立订单、定制 power block |
+| 并机控制、Deep Sea / MPS、服务和备件 | 当前独立收入未披露；随 generator attach 和 installed base 增长 | 无法可靠量化 | 小收入但提高客户锁定和利润质量 | C | 基准按 attach 和服务小项处理 | 远程监控、服务 SLA、长期备件合同 |
+| 普通 C&I stationary / telecom / industrial distributor / rental / Allmand mobile | Q1 C&I `$510M` 中扣除数据中心估算后约 `$340-390M`；Allmand 2026-01 完成收购 | Q1 约 `32-37%` | 分散基本盘和施工间接受益 | A/B | 进入基准；按 distributor、rental、telecom、controls 正常增长处理 | 数据中心施工 24/7 带动移动电源、light tower、heater、pump |
+| C&I BESS / microgrid / DER grid services | 当前数据中心直接收入披露少；公司有 energy storage、DER 和 CPower 合作 | <`2%` 可可靠归因 | 潜在结构升级，但当前证据不足 | C/D | 不作为基准主增量；只小额纳入或列跟踪 | generator+BESS、grid-forming microgrid、VPP/DR recurring revenue |
+
+## 3. 产品需求四情景
+
+本步口径：只评估产品或服务外部需求池，不评估 GNRC 份额、收入确认和利润率。需求强弱只和该产品当前需求锚比较；行业热门、AI CapEx 和数据中心 GW 不能自动等于 GNRC 收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Residential home standby / portable / home energy | FY2026 Residential sales 指引约 `+10%`；2026Q1 total sales `$552M`、同比约 `+1%`；住宅 demand 受停电和飓风年影响 | 低停电/低飓风，需求基本持平到 `+3%` | 下半年低基数正常化，NTM 需求 `+6-10%` | 停电高于 baseline，需求 `+12-20%` | 极端天气大年、渠道补库，需求 `+25%+` | 相对基准：悲观少 `$150-250M` 需求，乐观多 `$150-350M`，极度多 `$500M+` | 基准符合当前预期；乐观高于当前预期 | 正向：penetration 仍低、停电影响、品牌渠道；反证：利率、住宅支出、低停电、清洁能源产品低迷 |
+| C&I 大兆瓦数据中心备用发电机 package | `>$700M` data center backlog；FY2026 C&I segment 指引 `mid-to-high 20%`；数据中心电力接入和 backup power 为硬瓶颈 | 需求仍增长，但客户 site 延迟或 permit 推迟，NTM 可交付需求低于 backlog 节奏 | backlog 按 2026H2-2027H1 正常拉动，NTM 需求池约 `$0.7-0.9B` 可见 | GSA 形成 site-level PO，`$600M` NTP 部分转 PO，NTM 需求池 `$1.0-1.4B` | 两家以上 hyperscaler 多年度采购，NTM 需求池 `$1.6-2.2B` | 相对基准：悲观少 `$250-400M`，乐观多 `$300-600M`，极度多 `$900M+` | 基准由 backlog 支撑；乐观需 PO 证据 | 正向：AI 数据中心 time-to-power、generator supply tight、客户认证；反证：柴油许可、多源采购压价、数据中心项目延迟 |
+| Enercon enclosure / switchgear / packaged controls | 已完成收购；行业 switchgear/enclosure 是长交期瓶颈；GNRC 将其视为垂直整合和 margin lever | 需求存在但整合慢，只解决内部 bottleneck | 随大兆瓦 generator package 正常 attach，需求稳步增加 | switchgear/enclosure 形成外部/独立订单，客户要求 GNRC package 一体化 | 成为 hyperscaler 标准 package 的核心差异化 | 相对基准：悲观少 `$50-100M`，乐观多 `$100-200M`，极度多 `$300M+` | 基准符合收购逻辑；极度需订单验证 | 正向：Enercon 50 年经验、使命关键 enclosures/switchgear；反证：整合、UL/客户认证、固定价项目成本 |
+| 并机控制、Deep Sea / MPS、服务和备件 | 大兆瓦 genset 和 mission-critical uptime 需要 controls、parallel operation、field service | generator 出货后服务 attach 低，需求小幅增长 | 随 installed base 和 package attach 增长 | hyperscaler specs 绑定控制和服务 SLA | 全球服务/remote monitoring 变成长期合同层 | 相对基准：悲观少 `$20-50M`，乐观多 `$50-150M`，极度多 `$200M+` | 基准小幅纳入；乐观高于当前预期 | 正向：客户认证和 service lock-in；反证：客户自维护、第三方服务、多源控制平台 |
+| 普通 C&I stationary / telecom / industrial distributor / rental / Allmand mobile | C&I core growth 由 data center、distributor/rental、controls 共同驱动；Allmand 2026-01 并入 | 工业/telecom/rental 放缓，需求 `0-5%` | 正常工业韧性和 Allmand 并表，需求 `+8-15%` | rental、施工和 controls 同步强，需求 `+15-25%` | 数据中心施工和普通工业周期双强，需求 `+30%+` | 相对基准：悲观少 `$100-200M`，乐观多 `$150-300M`，极度多 `$400M+` | 基准符合 C&I 指引的一部分 | 正向：rental channel、construction site、controls；反证：普通工业周期、替代供应多、低壁垒 mobile equipment |
+| C&I BESS / microgrid / DER grid services | 行业 BESS/UPS/microgrid 需求上升；GNRC/CPower 合作支持 C&I customers in PJM；公司有 storage/DER 组合 | 需求主要落到 Vertiv/Eaton/Schneider/Tesla/Fluence，GNRC 需求小 | 作为 genset 与 C&I customer 的少量 attach | generator+BESS 或 DER/VPP package 进入部分客户 RFP | AI data center 采用 generator+BESS/grid-forming microgrid，GNRC 获系统机会 | 基准无法可靠量化；乐观可能多 `$100-250M`；极度可能多 `$300-600M` | 基准低于行业热度，因公司收入证据不足 | 正向：AI 动态负载、flexible interconnection、CPower；反证：消防/UL/NFPA、强竞争、收入确认路径不清 |
+
+## 4. 可收入化暴露与收入基数
+
+本步口径：只判断哪些需求能进入 GNRC NTM 收入表，以及当前可收入化基数；不预测增长、不判断利润率。A/B 级证据可作为基准主口径，C 级只有客户、产品、时间表都清楚时小比例纳入，D/E 级不进入基准。GNRC 能参与数据中心电力需求池，不等于能确认该需求池收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Residential home standby / portable / home energy | 2025 Residential product sales `$2.27B`；2026Q1 external net sales `$549M`；FY2026 指引约 `+10%` | 直接 | 高利润率，Q1 Residential adjusted EBITDA margin `25.1%` | `$2.30-2.45B` | `$2.45-2.65B` | `$2.70-2.95B` | `$3.10B+` | 基准符合当前指引；悲观低于指引 | A | 是 | 已披露收入、segment EBITDA、正式指引 | 进入基准；不作为 AI 收入 |
+| C&I 大兆瓦数据中心备用发电机 package | C&I 2026Q1 external sales `$510M`；data center backlog `>$700M`；Q1 data center revenue 未披露，本地估算 `$120-170M` | 直接 | 设备毛利受 mix 和大客户压价影响；Enercon 有望改善 | `$0.45-0.60B` | `$0.65-0.85B` | `$1.00-1.40B` | `$1.60-2.20B` | 基准等于 backlog 正常转收入；乐观高于当前指引 | A/B；子集 C | 是 | C&I 已确认收入、backlog、客户认证、FY2026 指引；`$600M` NTP 未纳入基准 | 基准纳入可见 backlog；GSA/NTP 只作为乐观和上限 |
+| Enercon enclosure / switchgear / packaged controls | 2026-04 完成收购；Enercon 单独收入未披露；管理层称提高 vertical integration 和 margin | 直接/间接 | 更偏交付控制和毛利 stack；与 generator package 重叠 | `$0-80M` | `$80-180M` | `$200-350M` | `$500M+` | 基准反映已完成收购和 guide；不是独立大收入锚 | B/C | 小比例 | 收购已完成且进入 FY2026 指引；但收入和订单未拆分 | 进入基准小项，汇总时防止与 data center package 重复 |
+| 并机控制、Deep Sea / MPS、服务和备件 | 独立收入未披露；随 generator、controls solutions 和 installed base attach | 直接/间接 | 服务和控制质量高于纯硬件 | `$20-60M` | `$60-120M` | `$150-250M` | `$350M+` | 基准小额；乐观需服务合同 | C | 小比例 | 产品和 attach 逻辑明确，但收入表缺单独锚 | 进入基准小额，主要影响利润质量和锁定 |
+| 普通 C&I stationary / telecom / industrial distributor / rental / Allmand mobile | C&I Q1 `$510M` 扣除 data center 估算后约 `$340-390M`；Allmand 2026-01 完成收购 | 直接 | 中等，rental/mobile 与普通 distributor 竞争较强 | `$1.30-1.45B` | `$1.45-1.70B` | `$1.75-2.05B` | `$2.20B+` | 基准符合 C&I 非数据中心正常增长 | A/B | 是 | 已披露 C&I revenue、Allmand 收购、rental/distributor 需求 | 进入基准；数据中心施工间接受益不单独放大 |
+| C&I BESS / microgrid / DER grid services | 当前数据中心直接收入未披露；2026-04 GNRC/CPower PJM collaboration；energy storage 产品存在 | 直接/间接 | 若为 DER/VPP/控制软件则高；若硬件集成则中低 | `$0-20M` | `$20-80M` | `$100-250M` | `$300-600M` | 基准显著低于行业叙事 | C/D | 仅小额 | 需求明确但收入、客户、交付时间表不足 | 不作为基准主增量；乐观以上和附录跟踪 |
+
+排除项：AI 数据中心总 CapEx、美国 data center power demand GW、JLL/CBRE 总新增 GW、同业 Caterpillar/Wärtsilä/GE/Bloom 的 GW 订单、GNRC 未量化 global supply agreement、未转 PO 的 `$600M` non-binding NTP、长期 BESS/microgrid pipeline，均不能直接当作 GNRC NTM 可确认收入。
+
+## 5. 产品级收入和利润贡献
+
+本步口径：从需求和收入基数出发，评估每个产品在 NTM 内给 GNRC 贡献的收入和利润。表内金额为经营贡献口径，部分产品之间存在 package、controls、enclosure、service 和 segment 重叠，不能横向机械相加到公司收入；公司汇总时已去重。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Residential home standby / portable / home energy | 悲观 | `$2.30-2.45B` | adjusted EBITDA `$0.50-0.58B` | 低于 Q1 margin，仍为高利润底盘 | 低于当前指引 | Q1 revenue 增速仅约 `+1%`，需求受停电影响 | 保留为悲观 | 低停电、住宅支出、利率、energy storage 下滑 |
+| Residential home standby / portable / home energy | 基准 | `$2.45-2.65B` | adjusted EBITDA `$0.58-0.68B` | 维持高位，约 `23-26%` | 符合当前预期 | FY2026 Residential 约 `+10%` 指引，Q1 margin `25.1%` | 保留为基准 | 不能把极端天气当 baseline |
+| Residential home standby / portable / home energy | 乐观 | `$2.70-2.95B` | adjusted EBITDA `$0.68-0.80B` | 稳中上行 | 高于预期 | 停电/飓风高于 baseline、渠道转化 | 保留为乐观 | 天气驱动不可持续 |
+| Residential home standby / portable / home energy | 极度乐观 | `$3.10B+` | adjusted EBITDA `$0.82B+` | 上升但有产能/渠道约束 | 上限 | 极端天气和替换需求同时放大 | 仅作跟踪 | 属天气周期，不能代表结构性收入 |
+| C&I 大兆瓦数据中心备用发电机 package | 悲观 | `$0.45-0.60B` | adjusted EBITDA `$50-90M` | C&I margin 低于基准，固定成本吸收弱 | 低于当前 backlog 路径 | backlog 存在但 site/permit 延迟 | 保留为悲观 | diesel permit、客户多源、engine/alternator/switchgear |
+| C&I 大兆瓦数据中心备用发电机 package | 基准 | `$0.65-0.85B` | adjusted EBITDA `$90-140M` | C&I margin 约 `13-15%`，随规模改善 | 符合当前预期 | `>$700M` backlog、C&I +28%、FY2026 C&I guide | 保留为基准 | backlog timing 和收入确认节奏未披露 |
+| C&I 大兆瓦数据中心备用发电机 package | 乐观 | `$1.00-1.40B` | adjusted EBITDA `$160-250M` | 上升，Enercon 和高利用率改善 | 高于预期 | GSA 形成 PO，`$600M` NTP 部分转正式订单 | 保留为乐观 | 客户集中、固定价毛利、质量/field issue |
+| C&I 大兆瓦数据中心备用发电机 package | 极度乐观 | `$1.60-2.20B` | adjusted EBITDA `$300-480M` | 显著扩张但需定价权和高利用率 | 只代表上限 | 多个 hyperscaler 多年度 PO、Sussex/国际产能顺利 | 下移为乐观上限 | 当前缺少金额化 GSA 和多客户 PO 披露 |
+| Enercon enclosure / switchgear / packaged controls | 悲观 | `$0-80M` | 对利润贡献小，整合成本抵消 | 中性到下行 | 低于收购预期 | 已完成收购但 Q1 未完整并表 | 保留为悲观 | 整合、认证、switchgear 供应链 |
+| Enercon enclosure / switchgear / packaged controls | 基准 | `$80-180M` | adjusted EBITDA `$10-35M`，另有 package margin 改善 | 小幅上行 | 符合 guide | Enercon 已完成、进入 2026 outlook | 保留为基准小项 | 与 generator package 重叠，不能重复计算 |
+| Enercon enclosure / switchgear / packaged controls | 乐观 | `$200-350M` | adjusted EBITDA `$35-80M`，C&I margin 改善 | 上升 | 高于预期 | enclosure/switchgear 内部化，缩短 lead time | 保留为乐观 | 客户验收和固定价项目成本 |
+| Enercon enclosure / switchgear / packaged controls | 极度乐观 | `$500M+` | adjusted EBITDA `$100M+` | 明显上行 | 上限 | 成为 hyperscaler package 标准层 | 仅作跟踪 | 缺少独立订单和收入披露 |
+| 并机控制、Deep Sea / MPS、服务和备件 | 悲观 | `$20-60M` | 利润小，服务 attach 不足 | 中性 | 低于预期 | installed base 尚小 | 保留为悲观 | 第三方服务、客户自维护 |
+| 并机控制、Deep Sea / MPS、服务和备件 | 基准 | `$60-120M` | adjusted EBITDA `$15-35M` | 高于纯硬件 | 符合预期 | mission-critical controls attach | 保留为基准 | 独立披露不足 |
+| 并机控制、Deep Sea / MPS、服务和备件 | 乐观 | `$150-250M` | adjusted EBITDA `$45-85M` | 上升 | 高于预期 | 服务 SLA、remote monitoring、长期备件 | 保留为乐观 | 服务人员和全球响应能力 |
+| 并机控制、Deep Sea / MPS、服务和备件 | 极度乐观 | `$350M+` | adjusted EBITDA `$120M+` | 高质量复利 | 上限 | 多年度服务合同和控制平台锁定 | 仅作跟踪 | 证据等级不足 |
+| 普通 C&I stationary / telecom / industrial distributor / rental / Allmand mobile | 悲观 | `$1.30-1.45B` | adjusted EBITDA `$120-170M` | 中性到下行 | 低于当前 C&I guide | 普通工业周期和 rental 需求放缓 | 保留为悲观 | 可替代供应多、施工延迟 |
+| 普通 C&I stationary / telecom / industrial distributor / rental / Allmand mobile | 基准 | `$1.45-1.70B` | adjusted EBITDA `$180-260M` | 随规模温和改善 | 符合预期 | C&I core growth、Allmand、rental/distributor | 保留为基准 | 和 data center package 口径分离困难 |
+| 普通 C&I stationary / telecom / industrial distributor / rental / Allmand mobile | 乐观 | `$1.75-2.05B` | adjusted EBITDA `$260-370M` | 上升 | 高于预期 | construction site mobile power、controls、rental refl eet | 保留为乐观 | 低壁垒 mobile/rental 竞争 |
+| 普通 C&I stationary / telecom / industrial distributor / rental / Allmand mobile | 极度乐观 | `$2.20B+` | adjusted EBITDA `$420M+` | 上升 | 上限 | 数据中心施工和普通工业周期双强 | 下移为乐观上限 | 不应把所有施工需求归因 GNRC |
+| C&I BESS / microgrid / DER grid services | 悲观 | `$0-20M` | 小亏或小利 | 不明确 | 低于行业叙事 | 产品/合作存在但收入证据弱 | 保留为悲观 | 强竞争、消防/认证 |
+| C&I BESS / microgrid / DER grid services | 基准 | `$20-80M` | EBITDA `$0-15M` | 中性 | 保守 | DER/CPower、storage attach 小额 | 保留为基准小项 | D 级 pipeline 不进基准 |
+| C&I BESS / microgrid / DER grid services | 乐观 | `$100-250M` | EBITDA `$20-70M`，取决于软件/控制占比 | 上升 | 高于预期 | generator+BESS/VPP solution 被客户采用 | 保留为乐观 | UL/NFPA、BESS 项目制毛利、头部 UPS/BESS 竞争 |
+| C&I BESS / microgrid / DER grid services | 极度乐观 | `$300-600M` | EBITDA `$80-200M` | 若含控制/服务则高 | 远高于当前预期 | microgrid 成为 AI data center 标准包 | 移入附录 | 缺少客户、订单、收入确认路径 |
+
+## 6. 公司收入和利润四情景
+
+本步口径：把产品级贡献合成为 GNRC NTM 总收入、毛利率、经营利润率、EBITDA、净利润和自由现金流方向。先和 GNRC 自身指引、run-rate、backlog 和客户认证比较，再考虑行业景气；不讨论市场定价。产品之间存在 package/controls/Enercon/service 重叠，汇总时已去重。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$4.70-4.95B` | 较 2025 收入约 `+12%` 至 `+18%`；较基准少约 `$0.35-0.55B` | 低于 FY2026 更新后指引路径和 backlog 正常转化预期 | `37.0-38.2%` | `8.5-9.8%` | 调整后 EBITDA `$0.80-0.89B`；净利润方向低于基准，无法可靠量化 | 正但弱于基准；库存和应收占用增加，FCF 约 `$250-380M` | 中 | 数据中心项目延迟、diesel permit、Sussex 爬坡慢、Residential 停电低于 baseline、C&I fixed-price 成本 |
+| 基准公司 | `$5.05-5.30B` | 较 2025 收入约 `+20%` 至 `+26%`；符合 FY2026 指引加 2027Q1 正常延伸 | 接近当前指引、Q1 run-rate 和 `>$700M` backlog 可见路径 | `38.5-39.5%` | `9.8-10.8%` | 调整后 EBITDA `$0.93-1.03B`；净利润方向约 `$0.43-0.52B`，受摊销/税率影响 | 正向；OCF 改善，但 capex、Enercon/Sussex 和营运资本吸收，FCF 约 `$380-520M` | 中高 | backlog 交付、Residential 正常恢复、Enercon 整合、C&I margin 从 `13%` 往上走 |
+| 乐观公司 | `$5.45-5.85B` | 较 2025 收入约 `+29%` 至 `+39%`；较基准多约 `$0.35-0.65B` | 高于当前预期，且不只靠一个小业务 | `39.2-40.5%` | `10.8-12.2%` | 调整后 EBITDA `$1.06-1.23B`；净利润方向明显高于基准但无法可靠量化 | 正向改善；若客户预付款和服务 attach 增加，FCF 约 `$500-700M` | 中 | GSA 转 site-level PO、`$600M` NTP 部分转 PO、Sussex Q4 爬坡、C&I 大客户压价可控 |
+| 极度乐观公司 | `$6.10-6.70B` | 较 2025 收入约 `+45%` 至 `+59%`；较基准多约 `$0.9-1.4B` | 显著高于当前预期，只能作为上限情景 | `40.0-42.0%` | `12.5-14.5%` | 调整后 EBITDA `$1.28-1.54B`；净利润大幅高于基准但无法可靠量化 | 强正向但库存、产能、供应链和验收占用同步上升，FCF 弹性滞后 | 低 | 需要多 hyperscaler PO、数据中心收入 `$1.6B+`、Residential 天气大年、BESS/服务 attach、Enercon/Sussex 全部顺利 |
+
+汇总判断：基准情景的核心是 FY2026 指引已上修、C&I 收入和 margin 已在 Q1 体现、`>$700M` 数据中心 backlog 有可见交付路径。乐观情景必须来自 GNRC 自身 backlog 上修、PO 转化、产能和毛利，而不能来自 AI 数据中心总 CapEx 或同业订单。极度乐观可保留为上限，但目前证据不足以作为经营主结论。
+
+## 7. 证据校准、反证和可信度
+
+本步口径：只校准前四步情景，不重新预测。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 总收入 `$1.059B`、同比 `+12%`，C&I external sales `$510M`、同比约 `+28%` | 收入基数/产品贡献 | 支持 C&I 数据中心和普通 C&I 进入基准 | C&I adjusted EBITDA margin `13.0%`，仍有改善空间 | 高增长需要应收、库存和工厂测试支持 | 基准保留，乐观保留 |
+| FY2026 指引上调至总收入 `mid-to-high teens %`、C&I `mid-to-high 20%`、EBITDA margin `18.5-19.5%` | 公司汇总 | NTM 基准从旧路径上移 | 支持基准 EBITDA margin 接近 19% | 仍需 capex 和营运资本配合 | 基准保留 |
+| `>$700M` data center backlog | 收入基数/执行 | A/B 级订单锚，支持大兆瓦 generator 基准 | 高利用率可改善 C&I margin | backlog 转 revenue 的 timing 是关键 | 基准保留，悲观保留 |
+| `$600M` non-binding hyperscaler NTP | 收入基数/可信度 | 有上修空间但不能作为基准收入 | 若转 PO，产能利用率和 package margin 改善 | 非绑定、2027 交付，需 PO/site/permit | 乐观保留；不进基准 |
+| 2026-06-02 hyperscaler 全球供应协议 | 证据校准/客户认证 | 提高未来 PO 概率，但金额未披露 | 供应商认证提高长期服务和 switch cost | qualification 已过，但收入确认不明 | 乐观上移；基准不机械上调 |
+| Enercon 收购完成 | 产品贡献/利润率 | 增量收入有限但支持 package delivery | 垂直整合有利 margin 和 lead time | 整合、质量和客户验收仍需执行 | 基准保留；乐观保留 |
+| C&I mix 上升使 Q1 gross margin 低于去年同期 | 利润率 | 不直接压收入 | 限制毛利率上行，需靠 price/cost、Enercon、效率抵消 | 若大项目固定价，现金利润被压 | 只在利润层处理，不重复压需求 |
+| Residential Q1 仅约 `+1%`，但全年仍指引约 `+10%` | 公司组合 | 若低停电，全年基准收入有下修风险 | Residential margin 高，收入弱会压公司 EBITDA | 渠道库存和安装周期影响现金 | 悲观保留；基准不下移 |
+| 行业数据中心电力需求强、但项目延迟率高 | 需求/收入确认 | 支持 demand pool；限制 revenue timing | 延迟会拖累利用率和 fixed cost absorption | site delays、permit、interconnection、commissioning | 需求乐观保留，收入乐观折扣 |
+| BESS/microgrid/DER 机会存在但收入证据不足 | 收入基数/可信度 | 限制 BESS 进入基准 | 软件/控制可提升长期 margin，但硬件项目制毛利不确定 | 认证、消防和客户责任边界复杂 | 基准小额；极度移入附录 |
+| 法律/监管/质保、关税、材料、关键件供应 | 利润率/现金流 | 不必然降低需求 | 可能压缩毛利和净利 | 增加库存、质保、法律现金流风险 | 悲观触发项，不在多个步骤重复惩罚 |
+
+四情景校准结论表：
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 数据中心和 Residential 仍有需求，但低于当前指引和 backlog 转化路径；NTM 收入 `$4.70-4.95B` | Q1 已确认收入、Residential 高 margin、C&I backlog 给收入下限 | 低停电、site delay、permit、switchgear/enclosure、固定价成本、法律/质保 | 保留 | 悲观公司 | 中 | 数据中心项目延迟只在收入确认和执行层处理，不重复压行业需求和利润率 |
+| 基准 | FY2026 指引正常兑现，`>$700M` backlog 分批转收入，Residential 约按 `+10%` 路径，NTM 收入 `$5.05-5.30B` | Q1 revenue、C&I +28%、FY2026 指引上调、Enercon 完成、FCF 改善 | 数据中心子集未披露，GSA 未量化，NTP 非绑定 | 保留 | 基准公司 | 中高 | 缺少数据中心分拆披露只限制子集放大，不重复惩罚整个 C&I segment |
+| 乐观 | GSA 形成 PO、NTP 部分转正式订单、Sussex/Enercon 正常爬坡，NTM 收入 `$5.45-5.85B` | hyperscaler qualification、backlog 上升、C&I margin 改善、行业 time-to-power | 客户多源压价、柴油许可、工厂质量和交期 | 保留 | 乐观公司 | 中 | permit 风险只限制 site-level 收入确认，不再把已确认 Residential 和普通 C&I 一并下修 |
+| 极度乐观 | 多个核心传导环节同时突破，NTM 收入 `$6.10-6.70B` | 需求池足够大，GNRC 已进入至少一个 hyperscaler qualification，国内产能目标 `>$1B` | 缺少多客户金额化 PO、GSA 金额、产能实际达产、BESS 收入证据 | 下移 | 乐观上限/附录跟踪 | 低 | 不把非绑定 NTP、同业 GW 订单或 AI 数据中心总 CapEx 当 GNRC 基准收入 |
+
+## 8. 结论
+
+- 最可能情景：基准偏乐观的正常兑现。GNRC 的 NTM 收入最可能落在 `$5.05-5.30B`，调整后 EBITDA 约 `$0.93-1.03B`。核心支撑是 FY2026 指引上修、C&I Q1 已实现高增、data center backlog `>$700M`、Enercon/Allmand 并入，以及 Residential 仍是高利润底盘。
+- NTM 收入结论：GNRC 不是把 AI 数据中心总 CapEx 直接转成收入，而是通过 2.25-3.25MW backup generators、enclosure/switchgear、controls、service、mobile power 和小额 BESS/DER attach，把部分 facility power 需求收入化。最可确认的是大兆瓦 generator backlog 和 C&I 已确认收入；GSA、NTP 和 microgrid 机会不能直接进入基准大数。
+- 利润/现金流结论：基准 EBITDA margin 约 `18.5-19.5%` 合理；Residential 维持高利润，C&I 受规模和 Enercon 支持但仍低于 Residential。自由现金流方向为正，但大客户项目会提高营运资本和产能投资需求，利润转现金需要看预付款、应收、库存和工厂测试节奏。
+- 主要传导瓶颈：需求瓶颈不是 AI 算力需求，而是 GNRC 能否在 NTM 内把客户认证、site PO、柴油/排放许可、engine/alternator、switchgear/enclosure、Sussex/Enercon 产能、factory acceptance test、现场 commissioning 和验收串成 revenue recognition。
+- 乐观情景成立条件：data center backlog 升至 `$1B+` 或披露更高可见 PO；2026-06 GSA 出现量化 site-level orders；`$600M` non-binding NTP 部分转 PO；Sussex Q4 产能按时；C&I margin 从 `13%` 向 mid-teens；Residential 不低于约 `10%` 年增长。
+- 极度乐观情景成立条件：两家以上 hyperscaler 多年度 PO 同时落地，GNRC 大兆瓦 package NTM 收入超过 `$1.6B`；Enercon 成为客户标准 package 的差异化；BESS/DER/服务 attach 形成可见收入；Residential 出现高停电/飓风大年；且没有质量、许可或供应链事故。任一核心环节缺证据，极度乐观必须降为乐观上限。
+- 悲观情景触发条件：FY2026 指引下修或 Q2/Q3 C&I 增速显著低于 `mid-to-high 20%`；data center backlog 停滞、取消或收入后移；GSA 未形成 PO；diesel permit 或 site interconnection 推迟；Sussex/Enercon 爬坡慢；Residential 停电环境连续低于 baseline；C&I margin 被固定价、关税或关键件成本压住。
+- 后续跟踪数据：每季跟踪 C&I sales、Residential sales、C&I adjusted EBITDA margin、data center backlog、GSA 后 PO 金额、`$600M` NTP 转 PO、hyperscaler vendor approval 数量、Sussex capacity、Enercon 整合、generator lead time、diesel air permit、field quality、inventory/receivables、OCF/FCF、Residential outage environment、BESS/DER attach 和 CPower/DER revenue 线索。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Generac 2025 年报和 FY2025 结果截至 2025-12-31；Generac 2026Q1 截至 2026-03-31；本报告完成日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：Generac 2026Q1 earnings release、Generac 2026Q1 Form 10-Q、Generac FY2025 results、Generac May 2026 investor presentation、Generac 2026 Investor Day materials、Generac hyperscale global supply agreement announcement、本地 GNRC 公司调研、本地数据中心自备发电/微电网/UPS/BESS/电力接入行业调研。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 指引用于 NTM 基准锚；`$600M` non-binding NTP、未量化 global supply agreement、第二/第三 hyperscaler、多年度 run-rate、BESS/microgrid 和 generator+BESS integrated package 只作乐观、极度乐观或附录跟踪，不进入 NTM 基准主表。
+- 主要来源：
+  - Generac Q1 2026 results（2026-04-29）：https://investors.generac.com/news-releases/news-release-details/generac-reports-first-quarter-2026-results
+  - Generac 2026Q1 Form 10-Q：https://www.sec.gov/Archives/edgar/data/1474735/000143774926014882/gnrc20260331_10q.htm
+  - Generac Q4/FY2025 results（2026-02-11）：https://investors.generac.com/news-releases/news-release-details/generac-reports-fourth-quarter-and-full-year-2025-results
+  - Generac Investor Presentation - May 2026：https://investors.generac.com/investor-presentations
+  - Generac 2026 Investor Day：https://investors.generac.com/events/event-details/2026-investor-day
+  - Generac global hyperscale data center supply agreement（2026-06-02）：https://investors.generac.com/news-releases/news-release-details/generac-signs-global-supply-agreement-leading-hyperscale-data
+  - Generac Sussex C&I facility announcement（2026-01-05）：https://investors.generac.com/news-releases/news-release-details/generac-expands-its-commercial-industrial-manufacturing
+  - Generac and CPower DER collaboration（2026-04-07）：https://investors.generac.com/news-releases/news-release-details/generac-and-cpower-expand-access-der-technologies-support
+  - Generac SD1250 / SD1500 diesel generators（2026-03-18）：https://investors.generac.com/news-releases/news-release-details/generac-introduces-sd1250-sd1500-diesel-generators-smarter
+  - 本地公司资料：`公司调研/电力_发电_能源_储能/GNRC_Generac_Holdings_公司调研_2026-06-11.md`
+  - 本地行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+  - 本地行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+  - 本地行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+  - 本地行业资料：`行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`

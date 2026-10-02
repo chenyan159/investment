@@ -1,0 +1,144 @@
+# 公司收入传导与价值传导评估：Veeco Instruments（VECO）
+
+> 报告日期：2026-06-12  
+> 公司：Veeco Instruments Inc.  
+> 股票代号：VECO  
+> 正式输出目录：`分析报告/公司评估/`  
+> 重要说明：本文件名沿用自动化任务的“收入传导估值评估”命名，但正文只做经营收入、利润、现金流和经营价值传导评估；不讨论市场定价事项，也不把金融市场价格作为经营传导证据。  
+> 资料边界：使用 `公司调研/` 与 `行业调研/`，并用 Veeco IR、SEC 10-Q、公司新闻稿等公开一手资料补齐截至 2026-06-12 的最新经营证据；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论或模型比较。
+
+## 1. 一页结论
+- 主口径与补充口径：主口径为 NTM 经营窗口，即 2026Q2-2027Q1 的未来四个季度。FY2026 指引、2027 订单加速、长期 SAM 和 Axcelis 合并只作为补充口径，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：2026Q1 收入 1.583 亿美元，同比 -5.4%；公司 Q2 指引 1.70-1.90 亿美元，FY2026 收入指引 7.40-8.00 亿美元，non-GAAP 毛利率指引 41%-43%，non-GAAP operating income 指引 1.01-1.26 亿美元。FY2025 收入为 6.643 亿美元，FY2026 指引中点相当于同比约 +15.9%。
+- 重要产品/业务线：InP 激光制造设备组合（Spector IBD、Lumina/LUMINA+ MOCVD、WaferEtch/Wet Processing）；LSA/NSA500 先进逻辑与 HBM 低热预算退火；Advanced Packaging wet/lithography；EUV mask / IBD300 / Data Storage 薄膜设备；Scientific & Other、服务和未拆分常规系统收入。
+- NTM 公司收入四情景：悲观 7.00-7.50 亿美元；基准 7.80-8.60 亿美元；乐观 9.00-10.00 亿美元；极度乐观 10.5-12.0 亿美元。基准略高于 FY2026 指引中点的原因是 NTM 包含 2027Q1，且 2.5 亿美元以上 InP 订单披露为 2026 开始交付、2027 显著加速。
+- 利润或 EBITDA 四情景：悲观为 non-GAAP operating income 0.45-0.75 亿美元、毛利率 38%-40%；基准为 1.05-1.35 亿美元、毛利率 41%-43%；乐观为 1.45-1.90 亿美元、毛利率 43%-45%；极度乐观为 2.05-2.75 亿美元、毛利率 45%-48%。经营杠杆是否成立取决于 InP/NSA/IBD 高毛利 mix 和库存周转，而不是收入增长本身。
+- 最大传导瓶颈：订单到收入确认的时间差，包括工具发货、安装、客户验收、海关/出口管制、客户 fab readiness 和 InP 激光厂扩产节奏。
+- 最大利润率变量：InP 大单中 Spector IBD、Lumina/LUMINA+ 和 WaferEtch 的 mix；NSA500 是否从 evaluation / follow-on order 进入 HVM POR；先进封装 wet/lithography 是否是客户 recipe 锁定产品，而不是低毛利通用湿法设备。
+- 最大现金流变量：库存 2.822 亿美元、应收 1.505 亿美元、合同负债 0.927 亿美元和长交期设备的营运资本占用。高增长情景下自由现金流可能先被库存和安装验收周期消耗，随后才释放。
+- 可信度：基准情景为中高；乐观情景为中；极度乐观为低到中。2.5 亿美元以上 InP 订单是强 B 级证据，但 NSA500 多客户 HVM、2027 10 亿美元级 run-rate 和 Axcelis 协同仍需要后续验证。
+
+## 2. 重要产品清单
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| InP 激光制造设备组合：Spector IBD、Lumina/LUMINA+ MOCVD、WaferEtch/Wet Processing | Q1 Compound Semiconductor 为 1,880.8 万美元；另有 2026-05-05 公告的 2.5 亿美元以上多客户订单，交付 2026 开始、2027 加速 | Q1 已确认 Compound Semi 占 12%；订单额相当于 FY2026 指引中点 32%+ | 最大增量和最直接 AI 光互联传导线 | A/B：已确认收入 + 已公告订单、产品、客户类型和交付时间 | 进入基准；基准只纳入 NTM 可确认部分，不把 2.5 亿美元全额塞入 NTM | 更多 1.6T/CPO/ELS 光源扩产、重复订单和 LUMINA+ 多客户导入 |
+| LSA/NSA500 先进逻辑、HBM 与低热预算退火 | Q1 Semiconductor 为 1.090 亿美元，其中 LSA/AP/wet/lithography 混合披露；LSA 为三家 Tier 1 logic production tool of record，NSA500 获 follow-on order | Q1 Semiconductor 占 69%，但 LSA/NSA 未单独披露 | 高质量利润池和先进节点平台化期权 | A/B/C：分部收入 A；LSA POR 与客户订单 B；NSA500 多客户 evaluation C | LSA 进入基准；NSA500 follow-on 小比例进入基准，第三客户 HVM 只进乐观/极度乐观 | 2027 第三先进逻辑客户 evaluation 完成并形成 HVM 初始订单 |
+| Advanced Packaging wet/lithography / single-wafer etch-clean | Q1 Semiconductor 中可见；公司披露 leading OSAT 客户 wet processing orders 支撑 2.5D AI accelerators HVM | 无法可靠拆分；属于 Semiconductor 69% 内部 | 稳定的 AI/HBM/CoWoS 间接受益线 | A/B：分部收入 + OSAT 订单披露 | 进入基准，但按保守折扣；不把行业 CoWoS/HBM 总 capex 当作公司收入 | Hybrid bonding surface prep、HBM4/SoIC 表面处理和更高端 recipe 锁定 |
+| EUV mask / IBD300 / Data Storage 薄膜设备 | Q1 Data Storage 1,021.3 万美元、Scientific & Other 2,027.8 万美元；IBD/EUV 和 IBD300 在 Semiconductor 内未拆分 | Data Storage + Scientific & Other 合计 Q1 19%；IBD/EUV 未单列 | 支撑性收入和高壁垒薄膜工艺 | A/C：已披露 end-market 收入；IBD300 DRAM evaluation 为 C | Data Storage/Scientific 已确认收入进入基准；IBD300 只小比例进入基准，主要作为乐观上修项 | High-NA EUV mask / pellicle、DRAM bitline metallization、HAMR/HDD 扩产 |
+| 服务、备件、非 AI compound/power/RF、其他未拆分系统收入 | 公司未单独披露；包含在四个 end-market 中 | 无法可靠量化 | 填补 run-rate 和毛利稳定器 | A：收入表可见但无法按产品拆分 | 进入基准，用于校准公司总收入，不作为 AI 增量叙事 | Axcelis 合并后的更大 installed base 和交叉服务 |
+
+## 3. 产品需求四情景
+- 本步口径：本节只评估外部需求池，不判断 Veeco 份额、收入确认或利润率。需求锚来自行业资料、Veeco 已公告订单、客户扩产节奏、AI 光互联/先进封装/先进逻辑技术路线和公司指引隐含需求。所有变化都相对当前预期判断，不把长期 TAM 直接当 NTM 需求。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| InP 激光制造设备组合 | AI-focused optical transceiver 2026 年约 260 亿美元；800G 主流、1.6T 导入；Veeco 已获 2.5 亿美元以上多客户 InP laser equipment orders | 订单需求仍在，但客户因 800G/1.6T 库存、switch/GPU 上电延迟或 laser 厂扩产节奏拉长，把设备验收推迟到 2027H2 | 2.5 亿美元以上订单按公司表述从 2026 开始交付、2027 加速；NTM 内形成一部分显性需求 | 1.6T design-in、CPO/ELS、SiPh 外部光源和 EML/CW-DFB 瓶颈强化，客户追加 Spector/Lumina/WaferEtch | InP laser 产能成为 2027 AI 光模块硬瓶颈，多个 transceiver/SiPh 客户抢设备并接受更高配置 | 悲观为 NTM 设备需求低于订单斜率；基准为已公告订单分期；乐观/极度乐观为重复订单和加速交付 | 基准符合当前订单预期；乐观高于当前预期；极度乐观需要新订单和交期延长证据 | 正向：订单金额、产品组合、客户类型和交付时间清楚。反证：800G/1.6T ASP 快跌、客户库存上升、InP 产能利用率低于预期 |
+| LSA/NSA500 先进逻辑与 HBM 退火 | GAA、3D device、HBM/vertical DRAM 低热预算需求；LSA 在三家 Tier 1 logic 为 production tool of record；NSA500 有 leading logic follow-on order | 先进节点扩产和客户 evaluation 延迟，NSA500 保持少量验证工具，LSA 只维持现有 run-rate | 先进逻辑和 HBM/DRAM roadmaps 正常推进，LSA 维持生产工具需求，NSA500 follow-on 在 2026H2 发货 | 第三 advanced logic customer evaluation 进展顺利，logic + memory engagement 转更多订单 | NSA500 成为多个先进节点关键 POR，GAA/3D/HBM 低热预算退火需求非线性上修 | 需求单位为生产/评估系统数量和客户 POR；基准为生产工具 + 一笔 follow-on，乐观为多客户转化 | 基准大体符合当前披露；乐观需要客户从 evaluation 到 HVM | 正向：SEC 披露 LSA POR 和 NSA 进展；反证：第三客户 evaluation 延后、DRAM/HBM pilot order 不出现 |
+| Advanced Packaging wet/lithography | 2026-2027 CoWoS/2.5D/HBM/SoIC 扩产，行业设备链中 wet/clean/surface preparation 是必要工序；Veeco 披露 leading OSAT wet orders | CoWoS/HBM 设备安装或客户验收推迟，wet/clean 多供压价，Veeco 只保持小幅 run-rate | 2.5D AI accelerators HVM 需求延续，OSAT/foundry wet orders 正常确认 | HBM4、CoWoS-like 二供、SoIC/hybrid bonding 前处理使 Veeco 获更多 recipe 锁定订单 | Wet/surface prep 成为高端封装良率瓶颈之一，客户为交期和 repeatability 追加设备 | 需求单位为 OSAT/foundry 先进封装线工具订单；基准为正常扩产，乐观为二供/良率需求上修 | 基准符合行业景气；乐观需公司特定订单增强 | 正向：项目内先进封装资料和 Veeco OSAT 订单披露；反证：CoWoS lead time 回落、先进封装利用率下降、湿法设备价格竞争 |
+| EUV mask / IBD300 / Data Storage 薄膜设备 | EUV/High-NA roadmap、EUV pellicle、DRAM bitline metallization evaluation、HDD/HAMR 存储薄膜设备 | EUV/IBD300 评估不转量产，Data Storage 和 Scientific 维持低位或下滑 | EUV mask / pellicle 和 Data Storage 保持稳定，IBD300 evaluation 不大幅进入基准 | EUV/High-NA mask blank 和 DRAM bitline metallization 订单增加，HAMR/nearline 存储 capex 改善 | IBD300 成为先进 memory 薄膜工艺扩张工具，EUV pellicle/mask 同时上修 | 需求单位为 IBD/EUV/薄膜工具订单；基准为稳定支持，乐观为 evaluation 转订单 | 基准符合当前预期；极度乐观为 2027 期权 | 正向：IBD 技术壁垒；反证：EUV/DRAM capex 延迟、客户使用内部/替代 PVD/IBD |
+| 服务、备件、非 AI compound/power/RF、其他未拆分系统 | 已安装设备、非 AI 半导体/compound/scientific 应用和服务需求 | 半导体设备客户推迟安装，服务和备件随出货低迷 | 跟随 installed base 和公司 FY2026 指引正常贡献 | 新系统出货增加带动安装、保修外服务和备件 | Axcelis 合并带来更大 installed base，但 NTM 独立 Veeco 不纳入 | 需求单位为 installed base 服务和常规系统订单 | 基准符合当前 run-rate | 正向：设备公司服务稳定；反证：系统出货少、客户减少 uptime 支出 |
+
+## 4. 可收入化暴露与收入基数
+- 本步口径：本节只判断哪些外部需求可进入 Veeco NTM 收入表，以及当前可收入化基数。公司能参与某需求池，不等于能确认收入。第二步基准以 A/B 级证据为主；C 级机会只在客户、产品和时间表清楚时小比例纳入；D/E 不进入 NTM 基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| InP 激光制造设备组合 | Q1 Compound Semi 1,880.8 万美元；2.5 亿美元以上 InP laser equipment orders，deliveries beginning in 2026 and significantly accelerating in 2027 | 间接服务 AI 数据中心，直接卖给 InP laser / optical transceiver / SiPh 供应链客户 | MOCVD/IBD/wet 系统，毛利高低取决于 Spector IBD 和 LUMINA+ mix、初期验收成本 | 0.70-1.10 亿美元 | 1.20-1.70 亿美元 | 1.70-2.30 亿美元 | 2.30-3.00 亿美元 | 基准略高于历史 run-rate，但符合订单披露；乐观/极度乐观高于当前 FY2026 指引隐含节奏 | A/B | 是 | 已有收入表 + 明确订单金额、产品、客户类型和交付窗口；不把订单全额放入 NTM | 基准纳入 NTM 可确认部分；剩余作为 2027 补充口径 |
+| LSA/NSA500 | Q1 Semiconductor 1.090 亿美元中包含 LSA；SEC 披露 LSA 为 all three Tier 1 logic customers production tool of record；NSA follow-on 2026H2 发货 | 间接服务 AI/HPC logic、HBM/DRAM 和先进节点 | 若进入 POR，客户替换成本高、利润质量优于普通设备；evaluation 期费用较高 | 0.85-1.10 亿美元 | 1.05-1.45 亿美元 | 1.45-2.00 亿美元 | 2.00-2.70 亿美元 | 基准为当前 LSA run-rate + NSA follow-on；乐观依赖第三客户和 memory 转化 | A/B/C | 是，NSA 保守纳入 | LSA 已在生产客户；NSA 有 follow-on order 和交付时间，但第三客户仍为 evaluation | LSA 作为基准主口径；NSA500 大幅放量只进乐观/极度乐观 |
+| Advanced Packaging wet/lithography | Q1 Semiconductor 内可见；SEC 披露 wet processing systems orders from leading OSAT customers for 2.5D AP architectures | 间接服务 AI accelerator 2.5D / HBM / CoWoS-like 封装 | 必要工序，利润率低于独占 bonder/metrology，但若 recipe 锁定则稳定 | 0.55-0.80 亿美元 | 0.75-1.15 亿美元 | 1.15-1.60 亿美元 | 1.60-2.10 亿美元 | 基准符合当前订单和行业景气；乐观需要更多 OSAT/foundry 客户订单 | A/B | 是 | 已有分部收入和 OSAT 订单披露，但未拆分产品收入，需保守折扣 | 进入基准，但不把 CoWoS/HBM 行业 capex 直接映射为 Veeco 收入 |
+| EUV mask / IBD300 / Data Storage 薄膜设备 | Q1 Data Storage 1,021.3 万美元，Scientific & Other 2,027.8 万美元；IBD/EUV 与 IBD300 在 Semiconductor 中未拆分 | EUV/HBM/DRAM 和 HDD/HAMR 的间接设备收入 | IBD 高壁垒；Data Storage/Scientific 周期性和项目性较强 | 0.80-1.05 亿美元 | 1.05-1.40 亿美元 | 1.40-1.90 亿美元 | 1.90-2.40 亿美元 | 基准为稳定支持；乐观为 IBD300 和 EUV/pellicle 订单增强 | A/C | 部分进入 | 已确认 Data Storage/Scientific 收入进入基准；IBD300 evaluation 仅作小比例或乐观项 | 稳定收入进入基准；高增长 IBD300 作为乐观上修 |
+| 服务、备件、非 AI compound/power/RF、其他未拆分系统 | 无单独披露；四个 end-market 均含系统和服务收入 | 多为间接受益或非 AI | 毛利较稳定，但无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 用于公司汇总校准，而非独立增量 | A | 是 | 收入表可见但产品未拆分；必须通过公司总收入表校准 | 作为公司级 run-rate 和服务稳定器，不单独外推高增 |
+
+## 5. 产品级收入和利润贡献
+- 本步口径：本节从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内对 Veeco 的收入和利润贡献。不得把行业 TAM、光模块总市场、客户 capex 或项目总金额直接写成公司收入。产品区间因公司未按产品披露，存在交叉，汇总到第 6 节时会剔除重复并用公司指引校准。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| InP 激光制造设备组合 | 悲观 | 0.70-1.10 亿美元 | 可贡献毛利，但初期安装/验收和低利用率压低利润 | 毛利率低于公司 FY2026 目标或仅接近 39%-41% | 低于订单斜率和 2027 加速预期 | 订单存在，但收入确认推迟 | 保留悲观 | 光模块 ASP/库存、客户扩产 delay、海关/验收 |
+| InP 激光制造设备组合 | 基准 | 1.20-1.70 亿美元 | 是主要增量毛利池之一，支撑 FY2026/NTM GM 回到 41%-43% | 向上修复 | 符合订单分期和公司 FY2026 指引上沿/NTM 加速 | 2.5 亿美元以上订单、产品和交付窗口清楚 | 保留基准 | 不能把 2.5 亿美元全额计入 NTM |
+| InP 激光制造设备组合 | 乐观 | 1.70-2.30 亿美元 | 高 mix 时利润率优于公司平均，经营杠杆增强 | 毛利率上行 | 高于当前预期 | 1.6T/CPO/ELS 光源瓶颈、客户追加订单 | 保留为有证据乐观 | 需要新增订单或更前置交付 |
+| InP 激光制造设备组合 | 极度乐观 | 2.30-3.00 亿美元 | 只有 Spector/Lumina+ 高毛利 mix 和顺利验收同时成立才有强利润弹性 | 明显上行 | 明显高于当前预期 | InP laser 成为硬瓶颈、多个客户抢设备 | 下移为乐观上限/保留低可信极度乐观 | 缺少 book-to-bill、客户名、每台 ASP 和具体排产 |
+| LSA/NSA500 | 悲观 | 0.85-1.10 亿美元 | LSA 维持利润，NSA evaluation 成本拖累 | 利润率平到下 | 低于先进节点 adoption 预期 | LSA 基础在，但 NSA 不放量 | 保留悲观 | 第三客户延迟、DRAM pilot 不出现 |
+| LSA/NSA500 | 基准 | 1.05-1.45 亿美元 | LSA 稳定毛利，NSA follow-on 小量贡献 | 利润率接近/略高公司平均 | 符合当前披露 | LSA 三家 Tier 1 logic POR；NSA follow-on 2026H2 | 保留基准 | NSA500 尚未多客户 HVM |
+| LSA/NSA500 | 乐观 | 1.45-2.00 亿美元 | 先进节点工具若进入 POR，毛利率和服务 attach 均改善 | 上行 | 高于当前基准 | 第三客户 evaluation、memory engagement 转订单 | 保留中可信乐观 | evaluation 到 HVM 周期长 |
+| LSA/NSA500 | 极度乐观 | 2.00-2.70 亿美元 | 多客户 HVM POR 带来平台级利润池 | 明显上行 | 明显超预期 | GAA/3D/HBM 同步采用低热预算 NSA | 下移为乐观上限，除非看到多客户 HVM 订单 | 目前只有 follow-on 和第三客户 evaluation |
+| Advanced Packaging wet/lithography | 悲观 | 0.55-0.80 亿美元 | 低毛利 wet/clean mix 或客户验收拖累 | 平到下 | 低于当前景气 | OSAT 扩产放缓 | 保留悲观 | CoWoS/HBM lead time 回落、价格竞争 |
+| Advanced Packaging wet/lithography | 基准 | 0.75-1.15 亿美元 | 稳定贡献毛利和收入，但不应假设显著经营杠杆 | 接近公司平均 | 符合当前预期 | leading OSAT orders、2.5D AI accelerator HVM | 保留基准 | 产品收入未拆分，需折扣 |
+| Advanced Packaging wet/lithography | 乐观 | 1.15-1.60 亿美元 | Recipe 锁定和客户扩产带来利润改善 | 小幅上行 | 高于当前预期 | HBM4/SoIC/OSAT 二供拉动 | 保留中可信乐观 | 多供和通用湿法压价 |
+| Advanced Packaging wet/lithography | 极度乐观 | 1.60-2.10 亿美元 | 若成为关键表面处理工具，利润质量改善 | 上行 | 明显高于当前预期 | 高端封装良率瓶颈强化 | 下移为乐观上限 | 缺少客户和订单金额披露 |
+| EUV mask / IBD300 / Data Storage 薄膜设备 | 悲观 | 0.80-1.05 亿美元 | 稳定但弹性低 | 平 | 低于当前支持性预期 | Data Storage/Scientific 下滑，IBD300 不转单 | 保留悲观 | EUV/DRAM/HAMR capex 延迟 |
+| EUV mask / IBD300 / Data Storage 薄膜设备 | 基准 | 1.05-1.40 亿美元 | 支撑公司毛利和现金流，不是最大增量 | 平到小幅上 | 符合当前 run-rate | Q1 Data Storage + Scientific 3,049 万美元，EUV/IBD 技术需求 | 保留基准 | 无产品级订单披露 |
+| EUV mask / IBD300 / Data Storage 薄膜设备 | 乐观 | 1.40-1.90 亿美元 | IBD/EUV 高壁垒 mix 改善 | 上行 | 高于当前预期 | IBD300 memory evaluation、EUV pellicle/mask demand | 保留低到中可信乐观 | evaluation 可能停留在研发线 |
+| EUV mask / IBD300 / Data Storage 薄膜设备 | 极度乐观 | 1.90-2.40 亿美元 | 多项薄膜设备同时上修才成立 | 上行 | 明显超预期 | High-NA EUV + DRAM bitline + HAMR 同时拉动 | 移入附录/仅作跟踪 | 多重期权叠加，NTM 证据不足 |
+| 服务、备件、其他未拆分系统 | 悲观 | 无法可靠量化 | 服务稳定但系统延迟压低吸收 | 平到下 | 低于 run-rate | 出货和安装减少 | 保留 | 无拆分披露 |
+| 服务、备件、其他未拆分系统 | 基准 | 无法可靠量化 | 对毛利和现金流有稳定器作用 | 平稳 | 符合 run-rate | installed base 与常规系统收入 | 保留 | 无法避免与各产品线重复 |
+| 服务、备件、其他未拆分系统 | 乐观 | 无法可靠量化 | 新系统出货带动服务 attach | 小幅上 | 高于 run-rate | InP/LSA/AP 工具装机扩大 | 保留 | 需后续披露服务收入 |
+| 服务、备件、其他未拆分系统 | 极度乐观 | 无法可靠量化 | Axcelis 合并后可能放大，但独立 NTM 不纳入 | 无法可靠量化 | 超出独立 Veeco 基准 | 合并 installed base 期权 | 移入附录 | 合并未完成，且并表不属于独立 NTM 基准 |
+
+## 6. 公司收入和利润四情景
+- 本步口径：本节把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。汇总前已剔除 InP Spector 与 IBD、Semiconductor 内 LSA/AP/wet 的重复计算，并以公司 FY2026 指引、Q2 指引、Q1 财务、订单交付窗口和收入确认约束校准。不讨论市场定价。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 7.00-7.50 亿美元 | 较 FY2025 6.643 亿美元约 +5%-13% | 低于 FY2026 指引中点和 InP 订单加速预期；Q2/Q3 可能只在指引低端或低于指引 | GAAP 38%-40%；non-GAAP 39%-41% | non-GAAP operating margin 6%-10% | non-GAAP operating income 0.45-0.75 亿美元；GAAP 净利润约 0.20-0.45 亿美元 | 中性到负；库存和应收占用吞噬经营现金流 | 中 | InP 订单确认慢、毛利率未回 40%+、NSA500 仍是小量验证、海关/出口/客户验收延迟 |
+| 基准公司 | 7.80-8.60 亿美元 | 较 FY2025 约 +17%-30% | 大体符合 FY2026 指引正常兑现并纳入 2027Q1 加速；略高于单纯 FY2026 指引中点但符合订单斜率 | GAAP 40%-42%；non-GAAP 41%-43% | non-GAAP operating margin 13%-16% | non-GAAP operating income 1.05-1.35 亿美元；GAAP 净利润约 0.55-0.85 亿美元 | 小幅正到正；高库存先占用，出货/验收后改善 | 中高 | 2.5 亿美元以上 InP 订单按计划分期，LSA/NSA/AP 正常兑现，成本吸收和产品 mix 修复 |
+| 乐观公司 | 9.00-10.00 亿美元 | 较 FY2025 约 +35%-51% | 高于当前 FY2026 指引和 run-rate；需要 InP 订单更前置、NSA follow-on 顺利和 AP wet/IBD 同步增强 | GAAP 42%-44%；non-GAAP 43%-45% | non-GAAP operating margin 16%-19% | non-GAAP operating income 1.45-1.90 亿美元；GAAP 净利润约 0.85-1.30 亿美元 | 正，但营运资本仍高；若客户预付款增加则明显改善 | 中 | 供应链排产、安装/验收能力、客户厂房 readiness、InP 和 NSA 高毛利 mix |
+| 极度乐观公司 | 10.5-12.0 亿美元 | 较 FY2025 约 +58%-81% | 显著高于当前预期；要求需求、公司捕获、利润率和执行同时突破 | GAAP 44%-47%；non-GAAP 45%-48% | non-GAAP operating margin 19%-23% | non-GAAP operating income 2.05-2.75 亿美元；GAAP 净利润约 1.40-2.10 亿美元 | 正且改善，但前提是客户预付款、供应链和验收同步顺利 | 低到中 | InP 重复订单、NSA 多客户 HVM POR、AP wet 高端 recipe 锁定、IBD/EUV/DRAM 订单同时成立；任一环节缺证据即下移 |
+
+## 7. 证据校准、反证和可信度
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次，不在需求、收入确认、利润率和公司汇总中重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 收入 7.40-8.00 亿美元、non-GAAP GM 41%-43%、non-GAAP operating income 1.01-1.26 亿美元 | 公司汇总 | 锚定基准公司收入和利润下限/中枢 | 要求 Q2-Q4 毛利率从 Q1 36.2% 修复 | 若无法修复，全年 EPS 和现金流承压 | 基准保留，悲观触发阈值明确 |
+| 2.5 亿美元以上 InP laser equipment orders | 收入基数、产品贡献 | 明确提高 2026H2-2027 可收入化上限，但 NTM 只纳入可交付部分 | Spector/Lumina/WaferEtch mix 决定毛利率 | 长交期工具增加库存、安装和验收压力 | 乐观保留，极度乐观降为低可信上限 |
+| InP 订单交付“2026 开始、2027 显著加速” | 收入确认 | 支持 NTM 高于 FY2026 指引中点，但不支持全额当期确认 | 交付前置若伴随初期成本，毛利改善可能滞后 | 收款、发货、验收节奏决定 FCF | 基准保留；把未交付部分移入补充口径 |
+| LSA 为三家 Tier 1 logic production tool of record | 产品贡献 | 支撑 LSA 基准收入进入公司收入表 | 客户 POR 带来较好毛利和服务附着 | 替换成本高，取消率低于一般 pipeline | 基准保留 |
+| NSA500 follow-on order 和第三 advanced logic customer evaluation | 产品贡献、执行可信度 | follow-on 小比例纳入基准；第三客户只进乐观 | 若转 HVM，利润质量显著提升 | 2027 evaluation 时间表使 NTM 贡献有限 | 乐观保留；极度乐观下移为乐观上限 |
+| Leading OSAT wet processing orders for 2.5D AI accelerators | 产品贡献 | 支撑 AP wet/lithography 进入基准 | 通用 wet/clean 多供会限制毛利率上修 | 客户扩产和验收影响确认 | 基准保留；乐观保守 |
+| Q1 库存 2.822 亿美元、DIO 245 天、应收 1.505 亿美元 | 现金流/执行 | 不直接下调需求，但限制收入转现金速度 | 高库存若客户推迟会压毛利和减值风险 | FCF 在高增长期可能弱于利润 | 现金流情景下移；不重复惩罚需求 |
+| 中国收入 Q1 同比大幅下降、海关/贸易/出口管制风险 | 收入确认、执行 | 影响发货和区域收入节奏 | 关税/海关可压低毛利 | 延迟发货和验收，影响现金回收 | 悲观保留；只在执行层处理 |
+| Axcelis 合并仍待中国 SAMR，预计 2026H2 完成 | 公司组合、远期期权 | 独立 Veeco NTM 不并表；合并完成才改变收入边界 | 整合费用短期可压利润，长期协同未验证 | 管理层精力、交易成本和整合风险 | 基准排除并表；移入附录跟踪 |
+| 光模块/InP laser ASP、库存、1.6T qualification | 需求风险 | 若转弱，会影响 follow-on orders 和 2027 加速 | 客户压价可降低设备配置或推迟订单 | 客户扩产节奏变慢 | 只在 InP 需求层处理，不重复惩罚其他产品 |
+
+四情景校准结论表：
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | InP 订单和 NSA/AP 需求仍在，但发货、验收、毛利修复慢，NTM 仅 7.00-7.50 亿美元 | FY2026 指引仍高于 FY2025，Q2 指引环比改善，订单证据真实 | Q1 毛利率低、库存高、RPO 只披露长期合同 1.428 亿美元且 51% 一年内确认；海关/贸易和客户验收风险 | 保留 | 作为 downside case 保留 | 中 | 不把同一个发货/验收延迟同时在需求、收入和利润率三处重复下调 |
+| 基准 | FY2026 指引正常兑现，NTM 因 2027Q1 加速达 7.80-8.60 亿美元 | 7.40-8.00 亿美元 FY2026 指引、2.5 亿美元以上 InP 订单、LSA POR、AP wet OSAT 订单 | 产品收入拆分不足，NSA500 仍 early adoption，InP 订单未披露具体季度排产 | 保留 | 主情景 | 中高 | 不把未披露产品拆分视为需求不存在，只在收入区间中保守折扣 |
+| 乐观 | InP 更前置、NSA follow-on 顺利、AP/IBD 同步增强，NTM 9.00-10.00 亿美元 | InP laser bottleneck、1.6T/CPO 光源需求、NSA 第三客户 evaluation、IBD/EUV/HBM 需求 | 新增订单、客户名、ASP、book-to-bill 和毛利 mix 仍未披露 | 保留 | 上修情景 | 中 | 不把行业光模块或 CoWoS 总需求直接当 Veeco 收入，只保留公司特定证据带来的上修 |
+| 极度乐观 | InP 重复订单、NSA 多客户 HVM、AP recipe 锁定、IBD/EUV/DRAM 同时成立，NTM 10.5-12.0 亿美元 | 多条技术线均有方向性证据，且公司规模小，单个大单对收入弹性大 | 任一核心环节缺少 NTM 具体订单或确认路径；Axcelis 未并表；第三客户 HVM 多在 2027 后验证 | 下移 | 保留为低可信上限，部分条件移入附录跟踪 | 低到中 | 不把 Axcelis 合并、长期 SAM、MicroLED/玻璃/CPO 远期期权并入独立 Veeco NTM 基准 |
+
+## 8. 结论
+- 最可能情景：基准情景。Veeco 的 NTM 经营主线不是全公司突然变成 AI 设备平台，而是 FY2026 指引正常兑现后，InP 激光制造设备订单在 2026H2-2027Q1 逐步转收入，LSA 维持先进逻辑/HBM 工具地位，AP wet/lithography 和 IBD/EUV/Data Storage 提供支撑。NTM 收入最可能落在 7.80-8.60 亿美元，non-GAAP 毛利率回到 41%-43%，non-GAAP operating income 约 1.05-1.35 亿美元。
+- NTM 收入结论：2.5 亿美元以上 InP 订单是最强新增收入锚，但只能按交付和验收节奏纳入 NTM。公司 Q2 指引 1.70-1.90 亿美元和 FY2026 指引 7.40-8.00 亿美元是当前预期锚；若 2026Q2/Q3 收入、合同负债、订单披露和 Compound Semi/Semiconductor mix 没有明显上台阶，乐观情景需要下修。
+- 利润/现金流结论：收入增长只有在高毛利 mix 和制造吸收改善时才会变成经营价值。Q1 non-GAAP GM 36.2% 明显低于 FY2026 指引 41%-43%，所以利润传导的第一验证点是 Q2-Q4 毛利率修复，而不是订单新闻本身。现金流会被库存、应收、发货和验收周期牵制，高增长初期不一定同步释放 FCF。
+- 主要传导瓶颈：从客户需求到 Veeco 收入有至少四道门槛：客户扩产预算已经落单、Veeco 设备进入客户工艺路线、供应链能按期生产/发货、客户安装验收后满足收入确认。InP 订单已跨过前两道门槛，但后两道仍决定 NTM 兑现率。
+- 乐观情景成立条件：Q2/Q3 收入高于指引中点或指引上修；Compound Semi 和 Semiconductor 中与 InP/AP/LSA 相关的收入上台阶；2.5 亿美元以上 InP 订单出现追加订单或更前置交付；NSA500 第三客户 evaluation 进展超预期；non-GAAP GM 稳定回到 42%+。
+- 极度乐观情景成立条件：InP laser 产能成为 2027 光模块硬瓶颈并带来重复订单；NSA500 从 second system / third evaluation 转为多客户 HVM POR；AP wet/lithography 进入关键 high-volume AI package recipe；IBD/EUV/DRAM 评估转订单；公司同时控制库存、验收和制造成本。
+- 悲观情景触发条件：Q2/Q3 收入低于指引中点且合同负债或订单线索不增强；Compound Semi 未从 2,000 万美元/季附近上台阶；non-GAAP GM 仍低于 40%；NSA500 第三客户延迟；光模块/InP laser 行业出现库存和 ASP 快速下行；海关、出口管制或客户验收使收入从 2026H2 滑到 2027H2。
+- 后续跟踪数据：Q2/Q3 revenue、gross margin、contract liabilities、long-duration RPO、inventory/DIO、accounts receivable/DSO、Compound Semi revenue、Semiconductor revenue、InP 订单追加或交付进度、NSA500 第三客户 evaluation、IBD300/DRAM evaluation、AP wet OSAT repeat orders、Axcelis/SAMR 合并进度。
+
+## 附录：来源和补充口径
+- 经营数据日期：公司财务数据截至 2026Q1（季度结束 2026-03-31，披露 2026-05-05）；订单和产品进展补充至 2026-06-11；本报告输出日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：Veeco 2026Q1 results release、2026Q1 Form 10-Q、2026Q1 earnings presentation、Veeco 2.5 亿美元以上 InP laser equipment orders 新闻稿、NSA500 follow-on order 新闻稿、LUMINA+ Ennostar qualification 新闻稿。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 指引只作为当前预期锚；2027 加速来自 InP 订单交付节奏和 NSA500 第三客户 evaluation，不替代 NTM 主表。Axcelis 合并、MicroLED、High-NA EUV、CPO/ELS、glass/TGV 和更远期 silicon photonics 只作附录跟踪，不进入 NTM 基准。
+- 项目内来源：
+  - `公司调研/晶圆制造_前道设备/VECO_Veeco Instruments_公司调研_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_激光器、EML与光器件_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装湿化学与表面处理材料_2026-06-11.md`
+- 主要外部来源：
+  - Veeco 2026Q1 results release（2026-05-05）：https://ir.veeco.com/news-and-events/news-details/2026/Veeco-Reports-First-Quarter-2026-Financial-Results/default.aspx
+  - Veeco 2026Q1 Form 10-Q（SEC）：https://www.sec.gov/Archives/edgar/data/103145/000110465926055672/veco-20260331x10q.htm
+  - Veeco 2026Q1 earnings presentation PDF（2026-05-05）：https://s1.q4cdn.com/522285864/files/doc_financials/2026/q1/Q12026EarningsPresentation2026-05-05FINAL.pdf
+  - Veeco 2.5 亿美元以上 InP laser equipment orders（2026-05-05）：https://ir.veeco.com/news-and-events/news-details/2026/Veeco-Announces-250-Million-in-Equipment-Orders-for-Manufacturing-Indium-Phosphide-Lasers/default.aspx
+  - Veeco NSA500 follow-on order（2026-06-09）：https://ir.veeco.com/news-and-events/news-details/2026/Veeco-Receives-Follow-On-Order-for-Nanosecond-Annealing-System-Expands-Evaluation-Activity/default.aspx
+  - Veeco LUMINA+ Ennostar qualification（2026-06-11）：https://ir.veeco.com/news-and-events/news-details/2026/Ennostar-Qualifies-Veecos-New-LUMINA-MOCVD-System-for-Advanced-Product-Applications/default.aspx
+  - Veeco stockholder approval for Axcelis merger（2026-02-06）：https://ir.veeco.com/news-and-events/news-details/2026/Veeco-Stockholders-Approve-Merger-with-Axcelis/default.aspx
+  - TrendForce AI optical transceiver market（2026-04-20）：https://www.trendforce.com/presscenter/news/20260420-13017.html
+  - TrendForce EML/CW-DFB laser capacity（2026-06-03）：https://www.trendforce.com/presscenter/news/20260603-13077.html
+  - SEMI global semiconductor equipment billings Q1 2026（2026-06-04）：https://www.semi.org/en/semi-press-release/semi-reports-global-semiconductor-equipment-billings-increased-14-percent-year-over-year-in-q1-2026

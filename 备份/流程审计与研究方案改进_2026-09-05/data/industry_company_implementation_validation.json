@@ -1,0 +1,72 @@
+{
+  "verified_at": "2026-09-05T12:56:20.307341-07:00",
+  "changed_existing_sources": [
+    {
+      "path": "基本面/行业调研/研究方法/行业调研方案.md",
+      "before_sha256": "cc89faf58232c178cd77c9c3090775e8c72ee3099a00c9d81b7004c5a3d541ec",
+      "after_sha256": "09e1a121cdd50b5b9a1f7de54fc4467bf6333e71f775c42bf59b4fef62b563b0",
+      "changed": true
+    },
+    {
+      "path": "基本面/公司调研/研究方法/调研方案.md",
+      "before_sha256": "0741a8d6dee2f56c96f3cfb1cba55c025db3a1ae5487ef6ac79b0c8dcdbd1aaf",
+      "after_sha256": "b23b7ea6533c3b85aa2c289a33671f6a1062f37fdd72d63ad374b94864f81b14",
+      "changed": true
+    },
+    {
+      "path": "基本面/行业调研/行业索引.md",
+      "before_sha256": "b63cbb2994183768c71195c529bb3ce028f54df6c4ae4145b97e2f06532b24f6",
+      "after_sha256": "5ff58e78e8d9b9b519debd22407443c2e319fe56f23a3355b525189363a0bf3a",
+      "changed": true
+    },
+    {
+      "path": "tools/research-runner/domains/industry.mjs",
+      "before_sha256": "71b689b2009e7ca076c25c79f7e7924f6ca5813c7536e94b6be60331415e35fd",
+      "after_sha256": "30ee6905f7f8208f32b1482e7b29194f6ce6ff28b0684dc86360faf2753044d7",
+      "changed": true
+    },
+    {
+      "path": "tools/research-runner/prompts/industry.mjs",
+      "before_sha256": "5bbfc5a529ba0c9d8214d33e8cdd9ed6295e3bdc7cdacc8f3ba9d087f4056fc3",
+      "after_sha256": "512c415243e4410647f1732b1fde494dead548e7f6ed0c9f3f7de4708d05b7aa",
+      "changed": true
+    }
+  ],
+  "new_source": "tools/research-runner/test/industry-research-scope.test.mjs",
+  "old_industry_count": 77,
+  "new_industry_count": 82,
+  "old_subjects_and_categories_preserved": true,
+  "added_industries": [
+    [
+      "AI创作与文档生产软件",
+      "AI应用_软件_数据平台/"
+    ],
+    [
+      "企业AI与Agent工作流软件",
+      "AI应用_软件_数据平台/"
+    ],
+    [
+      "广告推荐、搜索与数字分发",
+      "AI应用_软件_数据平台/"
+    ],
+    [
+      "数据平台、数据库与AI数据软件",
+      "AI应用_软件_数据平台/"
+    ],
+    [
+      "网络安全、身份权限与AI治理",
+      "AI应用_软件_数据平台/"
+    ]
+  ],
+  "tests": {
+    "passed": 16,
+    "failed": 0,
+    "command": "node --test test/industry-research-scope.test.mjs test/output-contract.test.mjs test/output-backup.test.mjs"
+  },
+  "queue_validation": {
+    "active_items": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "boundaries": "No existing report move/delete/rewrite, no file-run plan edits, no queue seeding, no research generation or process restart. New research scope is an optional index field carried by the industry prompt. New industry category support loads with a new adapter process; already-built prompts are unchanged."
+}

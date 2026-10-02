@@ -1,0 +1,162 @@
+# 公司收入传导与价值传导评估：NuScale Power（SMR）
+
+报告日期：2026-06-12  
+公司：NuScale Power Corporation  
+股票代码：SMR  
+主口径：NTM，2026-06-12 至 2027-06-11  
+资料边界：公司侧使用 `公司调研/电力_发电_能源_储能/SMR_NuScale Power_公司调研_2026-06-11.md`、NuScale 最新 10-Q/10-K/IR 资料；行业侧使用 `行业调研/AI园区电力_机电_冷却/` 和 `行业调研/产业背景/` 中与数据中心电力、SMR、PPA、许可、并网相关资料。未读取、引用或继承 `特征量化/`、Signals、回归、排序或模型比较内容。  
+重要限制：本报告只评估经营收入、利润、现金流和执行传导，不给投资评级，不判断目标价，不使用金融市场价格或估值倍数作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径是 NTM 可确认收入和可兑现利润；FY2026/FY2027、6GW/72 NPM、462MWe RoPower、1.848GW Standard Power、2030+ 首堆投运等只作为补充或远期期权，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：NuScale 未给传统年度收入/利润指引。最新经营锚点是 2026Q1 收入 `$0.565M`、Power Plant/NPM related services `$0.487M`、E2 Centers `$0.078M`、递延收入约 `$1.716M`、现金及短长投约 `$1.009B`、无债务；TTM 收入约 `$18.7M`，但 2025 收入主要来自 RoPower 技术许可和 FEED，不能平滑年化。
+- 重要产品/业务线：RoPower Romania VOYGR-6；ENTRA1/TVA 最多 6GW 美国项目；NPM/VOYGR 模块技术和工程许可服务；Doosan/Framatome/Paragon 供应链准备；E2 Centers/培训/生命周期服务；工业过程热和 Standard Power 数据中心项目作为远期期权。
+- NTM 公司收入四情景：悲观 `$3-10M`；基准 `$18-40M`；乐观 `$60-120M`；极度乐观 `$150-300M`。这些均不包含完整 NPM 硬件交付收入。
+- 利润或 EBITDA 四情景：毛利可随工程/许可收入转正，但经营利润、EBITDA/净利润在 NTM 内大概率仍为负。即使乐观或极度乐观收入上修，PMA Milestone、LLM、控制系统和燃料准备可能先消耗现金。
+- 最大传导瓶颈：从非绑定框架、FID、客户意向、PPA 讨论，转成绑定 offtake/PPA、pre-EPC、COLA/许可、设备制造合同和可报销采购。
+- 最大利润率变量：收入 mix。工程许可/E2/软件服务毛利较好但规模小；LLM、硬件预采购和首堆供应链成本可能是低毛利或 cash pass-through；FOAK 项目成本和 PMA 贡献款可能吞掉收入上修。
+- 最大现金流变量：ENTRA1 PMA 未来 Milestone 2/3 是否触发及金额、RoPower 是否进入可报销 pre-EPC、LLM/燃料/控制系统投入是否被客户合同吸收。
+- 可信度：需求层级中高；NTM 收入基数中；利润和现金流中低。核心原因是公司技术和监管证据强，但可确认 backlog 很小，且 NTM 内项目合同、融资和许可仍未绑定。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| RoPower Romania VOYGR-6 / FEED / 技术许可 | 2026Q1 未形成同量级收入；2024-2025 曾贡献主要工程/许可收入 | 2026Q1 接近 0；TTM 中历史权重大 | 当前最接近真实客户项目；决定基准能否恢复到千万美元级 | A 用于历史收入；C 用于 NTM pre-EPC/融资假设 | 小比例进入基准；融资/pre-EPC 未签前不纳入设备收入 | 462MWe、6 个 77MWe NPM、2033 首模块商业运行是长期口径 |
+| ENTRA1/TVA 美国最多 6GW 项目 | 当前可确认收入 0；非绑定 72 NPM 框架 | 0 | 最大项目期权和 AI 数据中心电力叙事核心 | C/D：PMA、非绑定 TVA 合作、项目网页；缺 binding PPA/equipment contract | 不把 6GW 放入基准；只允许少量前端工程进入基准上沿 | 6 座 ENTRA1 Energy Plants、每座 12 NPM、共 72 NPM |
+| NPM/VOYGR 模块技术、工程许可、生命周期服务 | 2026Q1 Power Plant/NPM related services `$0.487M`；硬件销售 0 | 86.2% of Q1 revenue，但绝对值极小 | 公司核心技术和未来收入池 | A：已披露服务收入和 NRC SDA；D：硬件销售尚无 binding order | 服务收入可进基准；完整 NPM 硬件交付不进 NTM 基准 | NPM 销售、启动测试、燃料/换料、长期运营支持 |
+| LLM / Doosan 重锻件、Framatome 燃料、Paragon 控制系统 | 当前客户收入 0；LLM WIP `$65.1M` 为资产/成本 | 0 | 决定首站可交付性和现金流 | C：供应链合同和资产可验证；不是客户 backlog | 不进基准收入；如客户合同吸收，进入乐观/极度乐观 | 至少 444 个燃料组件方向、首个美国客户最早 2030 |
+| E2 Centers、培训、数字工具和小额生命周期服务 | 2026Q1 `$0.078M` | 13.8% of Q1 revenue，但金额极小 | 客户教育和长期服务入口 | A | 进入基准但财务影响小 | 若大量电站投运后才有服务复利 |
+| 工业过程热、氢/淡化、Standard Power 数据中心项目 | 当前收入 0 | 0 | 可能改变终端客户结构，但 NTM 证据弱 | D/E：产品适配、旧公告或概念合作 | 不进入基准，只列远期期权或跟踪 | Standard Power 两个设施合计 24 个模块、约 1,848MWe；工业蒸汽/过程热 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 NuScale 份额、收入确认、利润率或公司层面汇总。需求单位按每条业务最能解释的指标选择：项目 MW、NPM 数、PPA/offtake 数、pre-EPC 合同、许可节点、供应链批次或服务席位。所有情景均和当前需求锚比较，不把 AI 数据中心总体缺电自动等同为 NuScale NTM 收入需求。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| RoPower Romania VOYGR-6 | FID 已批；目标 462MWe、6 个 77MWe NPM；pre-EPC 预计约 15 个月；融资和执行阶段仍待结构化 | FID 后融资、pre-EPC 或许可推迟，NTM 只有少量桥接工作 | 完成融资框架讨论并签小额或中等规模 pre-EPC/许可支持 | pre-EPC、Class 2 cost estimate、长周期物料谈判同步推进 | 融资、pre-EPC 和早采订单同时落地，6 NPM 供应链正式锁定 | 从“已完成 FEED2/待融资”到“pre-EPC 签署”或“早采订单” | 基准略低于热度预期：项目真实推进，但收入确认慢 | WNN 报道 FID、pre-EPC 约 15 个月、融资仍需结构化；首模块商业运行时间在 2033 左右，NTM 不是设备交付 |
+| ENTRA1/TVA 美国最多 6GW | TVA 与 ENTRA1 非绑定合作，最多 6GW；NuScale 为即时策略技术，PMA Milestone 1 已由非绑定 72 NPM 触发 | PPA/offtake 未签，TVA 只继续评估，NTM 需求停留在商务开发 | 需求存在但仍以 site、PPA、许可准备为主，未形成设备需求 | 至少一个 binding PPA/offtake 或站址项目进入 COLA 准备 | 多个站点/PPA 并行，PMA Milestone 2/3 条件开始部分触发 | 从 0 个 binding PPA 到 1 个或多个 PPA/offtake | 当前预期偏乐观但证据不足；基准只承认开发需求 | 6GW 是外部需求池，不是 NuScale backlog；10-Q 明确 ENTRA1 保留选择/采购 discretion |
+| NPM/VOYGR 模块技术和工程许可服务 | NRC 已完成 US460 SDA，6 模块共 462MWe，单 NPM 77MWe；当前无 NPM 交付合同 | 客户因成本、融资、许可转向燃气、既有核电 PPA、SOFC，NPM 需求延后 | 工程许可、技术支持、客户评估持续；硬件需求不在 NTM 内放量 | 一个项目进入可报销详细设计或设备 reservation | 多项目同时锁定 NPM 预采购和制造 slots | 从无硬件订单到小额工程/许可，再到设备制造合同 | 基准符合公司阶段：技术需求强，商业需求未收入化 | NRC SDA 提升可引用性，但 SDA 不等于 construction permit、COL、manufacturing license 或客户付款 |
+| LLM / Doosan / Framatome / Paragon 供应链 | LLM WIP `$65.1M`；Doosan 长周期物料；Framatome Richland 444 燃料组件方向；Paragon 控制系统 | 项目未绑定，供应链需求只形成 NuScale 自有成本和库存风险 | 资质、设计、供应链准备按计划推进；客户收入很少 | 首站项目吸收部分 LLM/控制系统/燃料工程成本 | 多项目并行锁定 LLM、燃料和控制系统批量准备 | 从内部准备到客户可报销采购/工程 | 需求是执行去风险，不是终端客户需求 | 供应链证据强于纯概念，但其 NTM 收入确认依赖项目合同 |
+| E2 Centers、培训、数字工具 | 2026Q1 收入 `$0.078M`；当前主要是展示、培训和客户教育 | 客户活动减少，年化低于 `$0.5M` | 维持小额培训/展示服务 | 跟随 RoPower/TVA 客户培训和模拟器需求上升 | 多项目进入运营准备，培训服务增至数百万美元 | 从年化约 `$0.3M` 到 `$1-5M` | 符合当前极小基数预期 | 有收入表证据，但不能改变公司 NTM 主线 |
+| 工业过程热、Standard Power 数据中心等远期期权 | Standard Power 旧公告约 24 个 NPM/1,848MWe；工业热仍在示范和会议交流阶段 | 无新客户合同，NTM 需求归零 | 仅维持概念、会议、示范设计 | 出现小额 FEED/政府资金/工业客户早期合同 | 明确客户、站址、PPA/热合同和许可路径同时出现 | 从 0 到小额 FEED，或长期模块需求 | 当前预期只能作期权 | 只有题材相关或旧公告，不足以进入 NTM 基准 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求能在 NTM 内进入 NuScale 收入表，以及当前可收入化基数是多少；不预测增长，不判断利润率。证据等级按收入表可确认性定义。公司能参与 SMR、AI 数据中心电力和 24/7 clean power 需求，不等于能确认收入。美元均为 NuScale NTM revenue contribution 口径，不是项目总 CapEx、PPA 总额或电站售电收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| RoPower Romania VOYGR-6 | 2024-2025 RoPower TLA/FEED 是历史收入主因；2026Q1 因 FEED2 完成后无可比活动 | 直接 | 工程/许可毛利可较好；pre-EPC 若含外包则毛利下降 | `$0-5M` | `$5-15M` | `$20-45M` | `$60-100M` | 基准为小额恢复，低于“FID 立刻放量”的市场叙事 | A/C | 是，小比例 | 历史收入 A；FID、pre-EPC 谈判、融资准备为 C | 基准只纳入桥接工程/许可；设备和完整 NPM 不纳入 |
+| ENTRA1/TVA 美国最多 6GW | 当前收入 0；PMA Milestone 1 由非绑定 72 NPM 框架触发，但不是客户收入 | 间接转直接，取决于 PPA/equipment contract | 前端工程可高毛利；若触发 PMA/供应链现金，短期利润和 FCF 可能恶化 | `$0` | `$0-5M` | `$20-50M` | `$75-150M` | 基准低于项目 headline；乐观需 binding PPA/offtake | C/D | 不进入物质性基准；只允许小额准备收入 | TVA/ENTRA1 6GW、项目网页和 PMA 是 C；缺 binding PPA/equipment contract | 6GW 不等于 backlog；PPA 才能把需求转成收入锚 |
+| NPM/VOYGR 模块技术和工程许可服务 | 2026Q1 Power Plant/NPM services `$0.487M`；完整硬件销售 0 | 直接 | 许可/工程毛利较好；硬件 FOAK 毛利不确定 | `$0-2M` | `$5-15M` | `$10-25M` | `$30-80M` | 基准符合低 run-rate；硬件上限只作极度情景 | A for services；D for hardware | 服务进入基准；硬件不进入 | 10-Q 收入分类和 NRC SDA 支持服务；无硬件订单 | NTM 以工程/许可/技术支持为主 |
+| LLM / Doosan / Framatome / Paragon 供应链 | LLM WIP `$65.1M`；Framatome 444 燃料组件方向；Paragon 供应控制系统；客户收入 0 | 间接，项目绑定后可能直接报销 | 多为采购/项目成本，利润率低或 pass-through；提高执行可信度 | `$0` | `$0-5M` | `$10-30M` | `$50-100M` | 基准不把供应链准备当收入 | C | 否，除非已签可报销合同 | 供应链合同可验证，但不是客户收入合同 | 进入乐观/极度乐观的条件是客户合同吸收 |
+| E2 Centers、培训、数字工具 | 2026Q1 `$0.078M`，A 级收入 | 直接 | 小额高附加值服务，规模太小 | `$0.2-0.5M` | `$0.5-1.5M` | `$1.5-3M` | `$3-5M` | 符合当前极小 run-rate | A | 是 | 已披露收入 | 进入基准但不影响公司结论 |
+| 工业过程热、Standard Power 数据中心等远期期权 | 当前收入 0；多为旧公告、会议、产品适配 | 间接 | 若成立可能是高价值 FEED/许可，但 NTM 证据弱 | `$0` | `$0` | `$0-5M` | `$10-25M` | 低于主题热度；只作远期期权 | D/E | 否 | 无 NTM binding 客户、付款和许可时间表 | 不进基准；仅跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从产品需求和可收入化基数出发，评估每个重要产品/项目在 NTM 内能给公司贡献多少收入和利润。收入贡献是 NuScale 可确认收入，不是项目总投资、电站售电收入、客户电力预算或数据中心 CapEx。利润贡献以毛利/经营贡献方向为主；由于公司处于商业化前，固定 R&D/G&A、PMA 和供应链投入会使公司经营利润在所有情景下大概率为负。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| RoPower Romania VOYGR-6 | 悲观 | `$0-5M` | 毛利 `-$1M 至 +$1M` | 低或接近 0 | 低于当前项目推进预期 | FID 后仍需融资和 pre-EPC | 保留 | 融资、电价、EPC、许可任一拖延 |
+| RoPower Romania VOYGR-6 | 基准 | `$5-15M` | 毛利 `$1-5M` | 服务毛利改善但规模小 | 符合“桥接工程恢复” | 462MWe FID、pre-EPC 约 15 个月、FEED2 已完成 | 保留 | 未签 pre-EPC 或可报销合同 |
+| RoPower Romania VOYGR-6 | 乐观 | `$20-45M` | 毛利 `$6-18M` | 上升 | 高于基准但有项目证据 | 融资框架、Class 2 估算、许可支持和长周期谈判推进 | 保留 | 项目成本或融资结构不被客户接受 |
+| RoPower Romania VOYGR-6 | 极度乐观 | `$60-100M` | 毛利 `$15-40M`，但现金占用上升 | 收入上升，利润率取决于外包/采购比例 | 显著高于当前预期 | pre-EPC、早采、许可和融资同步落地 | 下移为上限 | 首模块 2033 左右，NTM 不可能是商业运营收入 |
+| ENTRA1/TVA 美国最多 6GW | 悲观 | `$0` | 0，另可能有商务开发费用 | 负向 | 低于项目热度 | 非绑定 PPA 未转化 | 保留 | TVA/ENTRA1 只停留在框架和网页 |
+| ENTRA1/TVA 美国最多 6GW | 基准 | `$0-5M` | 毛利小于 `$2M`；费用端仍为负 | 小幅正毛利，经营负 | 符合谨慎基准 | 6GW 需求存在，但 10-Q 未显示客户收入合同 | 保留但取下沿 | 无 binding PPA/offtake |
+| ENTRA1/TVA 美国最多 6GW | 乐观 | `$20-50M` | 毛利 `$5-20M`，但 PMA/供应链可能抵消 | 毛利率向上，FCF 不确定 | 高于当前基准 | 至少一个 PPA/offtake 或 COLA 准备触发 | 保留 | PMA Milestone 2 可能造成大额现金/费用 |
+| ENTRA1/TVA 美国最多 6GW | 极度乐观 | `$75-150M` | 毛利 `$15-60M`；GAAP/FCF 可能被 PMA 吞噬 | 收入显著上修，利润质量不一定同步 | 只代表上限 | 多站点/PPA/设备准备并行 | 下移为上限 | ENTRA1 有 discretion；无设备制造合同 |
+| NPM/VOYGR 模块技术和工程许可服务 | 悲观 | `$0-2M` | 毛利约 0 | 低 | 低于服务恢复预期 | Q1 services 仅 `$0.487M` | 保留 | 无新项目服务订单 |
+| NPM/VOYGR 模块技术和工程许可服务 | 基准 | `$5-15M` | 毛利 `$2-7M` | 服务 mix 正向 | 符合当前低 run-rate 修复 | NRC SDA、客户工程支持、历史 services 收入 | 保留 | 硬件订单缺失 |
+| NPM/VOYGR 模块技术和工程许可服务 | 乐观 | `$10-25M` | 毛利 `$4-12M` | 上升 | 小幅高于基准 | RoPower/TVA 对技术许可和工程支持需求增强 | 保留 | 不能把项目总 CapEx 当服务收入 |
+| NPM/VOYGR 模块技术和工程许可服务 | 极度乐观 | `$30-80M` | 毛利 `$8-35M` | 取决于工程和设备 reservation mix | 高于预期 | 首站制造准备或多项目设计支持 | 下移为上限 | 完整 NPM 硬件交付不在 NTM |
+| LLM / Doosan / Framatome / Paragon 供应链 | 悲观 | `$0` | 负向现金流；库存/预付款风险 | 利润率不适用 | 低于供应链转化预期 | LLM 仍为公司资产/成本 | 保留 | 项目未绑定，客户不报销 |
+| LLM / Doosan / Framatome / Paragon 供应链 | 基准 | `$0-5M` | 毛利约 0 至 `$1M` | pass-through 或低毛利 | 符合谨慎基准 | LLM、燃料、控制系统证据强但未客户化 | 保留 | 供应链进度不等于收入 |
+| LLM / Doosan / Framatome / Paragon 供应链 | 乐观 | `$10-30M` | 毛利 `$1-6M`；执行可信度上升 | 低至中 | 高于基准 | 首站客户吸收部分 LLM/控制系统工程 | 保留 | 采购成本、核级 QA、交期 |
+| LLM / Doosan / Framatome / Paragon 供应链 | 极度乐观 | `$50-100M` | 毛利 `$3-20M`；现金流可能先负后正 | 收入高，利润质量中低 | 上限情景 | 多项目锁定供应链、燃料和控制系统 | 下移为上限 | 低毛利 pass-through 不能自动转成高利润 |
+| E2 Centers、培训、数字工具 | 悲观 | `$0.2-0.5M` | 毛利小，无法覆盖费用 | 小幅正毛利 | 符合低活动 | Q1 E2 `$0.078M` | 保留 | 客户培训需求不足 |
+| E2 Centers、培训、数字工具 | 基准 | `$0.5-1.5M` | 毛利 `$0.2-0.8M` | 正向但不重要 | 符合当前 run-rate | 已披露收入 | 保留 | 规模太小 |
+| E2 Centers、培训、数字工具 | 乐观 | `$1.5-3M` | 毛利 `$0.7-1.8M` | 正向 | 高于当前低基数 | 多客户培训/模拟器活动 | 保留 | 不能改变公司亏损 |
+| E2 Centers、培训、数字工具 | 极度乐观 | `$3-5M` | 毛利 `$1.5-3M` | 正向 | 高于预期但仍小 | 多项目进入运营准备 | 保留为小额上限 | 电站投运前服务规模有限 |
+| 工业过程热、Standard Power 数据中心等远期期权 | 悲观 | `$0` | 0 | 不适用 | 符合谨慎排除 | 无 NTM binding 合同 | 排除 | 只有题材/旧公告 |
+| 工业过程热、Standard Power 数据中心等远期期权 | 基准 | `$0` | 0 | 不适用 | 符合当前收入表 | 无可确认收入锚 | 排除 | 无客户付款、站址、许可时间表 |
+| 工业过程热、Standard Power 数据中心等远期期权 | 乐观 | `$0-5M` | 毛利 `$0-2M` | 小额服务 | 低可信乐观 | 出现小额 FEED/示范 | 仅作跟踪 | 产品适配不等于收入 |
+| 工业过程热、Standard Power 数据中心等远期期权 | 极度乐观 | `$10-25M` | 毛利 `$2-10M` | 取决于服务 mix | 远期期权上限 | 客户、热合同/PPA、资金和许可同步出现 | 移入附录 | 缺 NTM 时间表 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。汇总时剔除重复计算：RoPower、ENTRA1/TVA、NPM 服务、LLM/燃料/控制系统之间可能共享同一项目预算，不能把同一项目的工程、设备 reservation、LLM 报销和 NPM 硬件全额叠加。所有收入均为 NuScale 可确认收入，不含电站售电收入、PPA 总额、6GW 项目 CapEx 或客户数据中心预算。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$3-10M` | 较 TTM `$18.7M` 下降约 `-84% 至 -46%`；较 2026Q1 年化 `$2.3M` 可略高 | 低于当前项目推进预期；RoPower、TVA 均延迟 | `0%-20%` 或为负 | 无法可靠量化；大幅为负 | 净亏损大概率 `$180-260M`，不含未触发 PMA 2/3 | 经营现金流继续负；LLM/固定费用消耗现金 | 中 | 无 binding PPA/pre-EPC，收入停留在小额服务 |
+| 基准公司 | `$18-40M` | 较 TTM约 `-4% 至 +114%` | 接近当前可见路径：RoPower 小额恢复，TVA 不快速收入化 | `15%-35%` | 无法可靠量化；大幅为负 | 净亏损大概率 `$140-230M`，PMA 2/3 未触发 | FCF 负；现金足以覆盖 NTM，但业务仍未自我造血 | 中 | 订单/递延收入从百万级到千万级的转换 |
+| 乐观公司 | `$60-120M` | 较 TTM约 `+221% 至 +543%` | 高于当前基准；RoPower pre-EPC 或 TVA PPA 至少一个落地 | `25%-45%` | 无法可靠量化；仍为负，收入高端可改善亏损率 | 净亏损可能收窄至 `$80-180M`；若 PMA 2 触发则可能扩大 | 可报销收入改善现金流，但 PMA/供应链可能先吞现金 | 中低 | 谁买、买什么、何时确认、是否同时触发 PMA |
+| 极度乐观公司 | `$150-300M` | 较 TTM约 `+703% 至 +1,507%` | 显著高于当前预期；多个项目同时从 pipeline 转前端工程/预采购 | `30%-50%`，若 pass-through 高则低于区间 | 无法可靠量化；可能仍为负 | 净亏损可能 `$50-150M` 或因 PMA/费用大幅波动，无法可靠量化 | 上限情景不等于正 FCF；预付款和 PMA 条款决定现金质量 | 低 | 多个核心环节同时成立：PPA、融资、许可、可报销采购、成本可控 |
+
+情景解释：
+
+- 悲观不是“SMR 长期没有需求”，而是 NTM 内客户付款路径没有出现，收入回到小额展示、工程和维护活动。
+- 基准是经营预期正常兑现，不把 AI 电力缺口、6GW headline 或 2030+ 首堆投运提前收入化。
+- 乐观需要公司特定证据：RoPower pre-EPC/融资或 TVA/ENTRA1 binding PPA/offtake 至少一个进入可确认收入路径。
+- 极度乐观只代表 NTM 上限：多个项目触发前端工程、设备准备或可报销采购，但仍不等于完整 NPM 硬件交付或商业运行。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在其实际影响层级处理一次，不重复惩罚。市场价格、估值倍数和股价波动不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 `$0.565M`、递延收入约 `$1.716M` | 收入基数 | 明显压低 NTM 基准；说明当前 backlog 很小 | 收入基数过低使毛利率和经营利润率失真 | 固定费用无法被收入覆盖 | 基准保留低位；悲观保留 |
+| NRC US460 SDA：77MWe、6 NPM、462MWe 总功率 | 需求/执行可信度 | 提高客户采用可能性，但不产生收入 | 对未来许可服务和工程毛利有利 | 降低设计许可风险，不消除站址/COL/融资风险 | 乐观保留；不把 SDA 上移为收入 |
+| ENTRA1/TVA 最多 6GW、6 座 ENTRA1 Energy Plants、每座 12 NPM | 需求 | 增强外部需求池和上限 | 若转成 PPA/工程，服务毛利改善 | 可能触发 PMA 2/3 和供应链现金需求 | 乐观保留；极度乐观下移为 NTM 上限 |
+| 10-Q 披露 ENTRA1 对是否选择、签约、采购 NuScale 保留 discretion | 收入确认 | 限制基准收入，不允许把 72 NPM 当 backlog | 缺设备合同，利润无法锁定 | 项目开发权和收入权不等价 | 基准取下沿；无 binding 合同时排除硬件收入 |
+| RoPower FID、462MWe、pre-EPC 约 15 个月、融资仍需结构化 | 收入基数/产品贡献 | 支持基准小额恢复和乐观 pre-EPC | 工程服务毛利可能较好，但外包比例不确定 | 融资和许可决定回款和进度 | 基准保留；乐观保留 |
+| LLM WIP `$65.1M`、Framatome 444 燃料组件方向、Paragon 控制系统 | 执行可信度/现金流 | 不是当前收入；项目绑定后才可能可报销 | 供应链 pass-through 可能稀释毛利 | 提高交付可信度，但占用现金和库存风险 | 仅作跟踪至乐观/极度乐观 |
+| 行业资料显示 2026-2027 数据中心最确定路线是燃气、SOFC、BESS、并网和高压设备，SMR 多为 2029-2032 期权 | 需求 | 抑制 NTM 设备收入上修 | 低毛利或无收入情况下不能假设经营杠杆 | 时间错配使项目现金流后移 | 极度乐观硬件交付移入附录 |
+| PMA Milestone 结构：Milestone 2 需 binding PPA/offtake，Milestone 3 需设备制造合同；Milestone 1 已产生大额费用/现金支付 | 利润/现金流 | PPA 可能提高收入可见度 | 同时可能造成费用/现金流压力，利润质量不自动改善 | 是最大现金流变量之一 | 乐观收入保留；利润和 FCF 下移 |
+| Standard Power、工业热、氢/淡化等 | 远期期权 | 缺 NTM binding 客户和付款路径 | 无法判断 | 不能作为 NTM 经营质量证据 | 移入附录/仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | RoPower 和 TVA 均延迟，NTM 收入 `$3-10M` | 现金和投资约 `$1.009B` 支撑持续开发 | Q1 收入仅 `$0.565M`、递延收入约 `$1.716M`，无 firm NPM backlog | 保留 | 悲观经营情景 | 中 | 非绑定 pipeline 风险只在收入确认层处理一次 |
+| 基准 | RoPower 小额恢复，TVA/ENTRA1 不进入物质性收入，NTM `$18-40M` | RoPower FID、NRC SDA、历史 RoPower 收入、供应链准备 | pre-EPC/PPA/equipment contract 均未绑定，收入表缺订单支撑 | 保留 | 基准偏下沿 | 中 | AI 数据中心电力需求强不再重复推高收入 |
+| 乐观 | RoPower pre-EPC 或 TVA binding PPA 至少一个落地，NTM `$60-120M` | 6GW TVA/ENTRA1、RoPower 462MWe、LLM/燃料/控制系统均有进展 | PMA 2/3、融资、许可、成本和客户 discretion 限制利润与现金流 | 保留 | 乐观但需公司特定触发 | 中低 | PMA 现金风险只在利润/现金流层处理 |
+| 极度乐观 | 多项目同时触发前端工程、预采购或设备 reservation，NTM `$150-300M` | 72 NPM 上限、12 modules already in production、444 fuel assemblies、RoPower FID | 无完整设备制造合同；首堆投运窗口偏 2030+；多环节同时成立概率低 | 下移 | 极度乐观 NTM 上限；完整硬件交付移入附录 | 低 | 许可/融资/供应链风险不重复压需求，只限制兑现和现金流 |
+
+## 8. 结论
+
+- 最可能情景：基准偏下沿。NuScale 的真实 NTM 收入更可能来自 RoPower 后续桥接工程、少量技术许可/客户支持、E2/培训和极少量可报销供应链准备，而不是 NPM 硬件销售或 6GW 项目收入。公司 NTM 收入主区间为 `$18-40M`，若 RoPower pre-EPC 进展慢，则可能落到 `$10-20M` 附近。
+- 利润/现金流结论：NTM 内公司仍是 pre-commercial 技术平台，毛利率可能因工程/许可收入而转正，但固定 R&D/G&A、供应链投入和 PMA 条款使经营利润、EBITDA/净利润、自由现金流大概率为负。收入上修不自动等于利润上修，尤其当上修来自 LLM、设备 reservation 或 PMA 触发时。
+- 乐观情景成立条件：RoPower 完成融资框架并签 pre-EPC 或可报销工程合同；或者 ENTRA1/TVA 签署 binding PPA/offtake，明确容量、价格、期限、付款责任和是否触发 PMA Milestone 2；同时季度递延收入、contract liabilities 或 RPO 从百万美元级上升到千万美元级。
+- 极度乐观情景成立条件：RoPower 和 TVA/ENTRA1 同时推进；至少一个项目出现设备制造合同、NPM reservation、LLM 报销或可验证采购付款；项目许可路径、EPC、核级供应链和客户信用支持同步清晰；且 PMA/供应链现金消耗没有超过新增收入质量。
+- 悲观情景触发条件：TVA/ENTRA1 PPA 推迟到 2027 年后；RoPower financing/pre-EPC 推迟；LLM 和燃料准备无法转为客户可报销成本；季度收入连续维持百万美元级；或公司只能通过 ATM/股权融资覆盖商业化费用。
+- 后续跟踪数据：1）TVA/ENTRA1 binding PPA/offtake；2）PMA Milestone 2/3 是否触发及金额；3）RoPower pre-EPC、Class 2 cost estimate、融资文件；4）NPM equipment manufacturing agreement、取消条款和预付款；5）递延收入、RPO、contract liabilities；6）LLM WIP 是否被客户项目吸收；7）Framatome Richland 燃料资质和 444 组件交付窗口；8）NRC/COL/站址/环境审查；9）供应链交期和 FOAK 成本。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：最新财务主数据截至 2026-03-31；公开资料核验至 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - NuScale Power 2026Q1 Form 10-Q，SEC：https://www.sec.gov/Archives/edgar/data/1822966/000182296626000054/smr-20260331.htm
+  - NuScale Power 2026Q1 results，2026-05-07：https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-first-quarter-2026-results
+  - NuScale Power 2026Q1 earnings presentation：https://www.nuscalepower.com/hubfs/Website/Investors/2026/SMR-1Q26-Presentation.pdf
+  - NuScale Power 2025 Form 10-K，SEC：https://www.sec.gov/Archives/edgar/data/1822966/000182296626000018/smr-20251231.htm
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - NRC NuScale US460 SDA review page：https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/applicant-projects/nuscale-us460
+  - NRC Standard Design Approval PDF，2025-05-29：https://content.govdelivery.com/attachments/USNRC/2025/05/29/file_attachments/3275315/Standard%20Design%20Approval%20SDA%20for%20the%20NuScale%20US460%20Power%20Plant%20Design.pdf
+  - NuScale / ENTRA1 / TVA 6GW announcement，2025-09-03：https://www.nuscalepower.com/press-releases/2025/nuscale-proudly-supports-tva-and-entra1-energy-announcement-of-landmark-6-gigawatt-small-module-reactor-smr-deployment-program
+  - NuScale interactive TVA program page：https://interactive.nuscalepower.com/tva-program
+  - Framatome and NuScale fuel partnership，2026：https://www.nuscalepower.com/press-releases/2026/framatome-and-nuscale-power-contract-to-support-global-supply-chain-and-accelerate-fuel-delivery
+  - World Nuclear News, RoPower Romania FID，2026-02-13：https://world-nuclear-news.org/articles/final-investment-decision-taken-for-romanias-smrs
+  - Nuclearelectrica SMR project page：https://nuclearelectrica.ro/snn/en/investment-projects/smr-project/
+  - Standard Power / NuScale / ENTRA1 data center announcement，2023-10-06：https://www.nuscalepower.com/press-releases/2023/standard-power-chooses-nuscales-approved-smr-technology-and-entra1-energy-to-energize-data-centers
+- 主要本地来源：
+  - `公司调研/电力_发电_能源_储能/SMR_NuScale Power_公司调研_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+  - `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+

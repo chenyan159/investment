@@ -1,0 +1,46 @@
+{
+  "batch_count": 27,
+  "version": "20260919_010126",
+  "reasoning": [
+    "high"
+  ],
+  "statuses": {
+    "pending": 27
+  },
+  "active_total": 27,
+  "subjects": [
+    "LIN",
+    "AVGO",
+    "ALAB",
+    "SPCX",
+    "MU",
+    "CRWV",
+    "ADBE",
+    "NVDA",
+    "AMD",
+    "MRVL",
+    "CBRS",
+    "CRDO",
+    "ANET",
+    "LITE",
+    "COHR",
+    "TSM",
+    "SNDK",
+    "VRT",
+    "GEV",
+    "GOOGL",
+    "MSFT",
+    "AMZN",
+    "NBIS",
+    "IREN",
+    "TSLA",
+    "RKLB",
+    "OKLO"
+  ],
+  "snapshot_hashes_verified": 27,
+  "backups": [
+    "tools\\research-runner\\queue-backups\\20260919_011154-before-scenario27-queue.jsonl",
+    "tools\\research-runner\\queue-backups\\20260919_011154-before-scenario27-queue.done.jsonl",
+    "tools\\research-runner\\queue-backups\\20260919_011154-before-scenario27-queue.control.json"
+  ]
+}

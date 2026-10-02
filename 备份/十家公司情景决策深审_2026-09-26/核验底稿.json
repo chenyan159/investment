@@ -1,0 +1,1273 @@
+{
+  "scope": "Arithmetic audit, not independent validation of forecasts; inputs copied from cited reports. Derived comparisons are diagnostic, not new fair-value estimates.",
+  "reports": {
+    "MU": {
+      "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\MU_经营情景市场状态投资决策_2026-09-26.md",
+      "sha256": "5be508d71deb61feb0630f89e78b840015ebb745e24d2bc1da7f98820f1492a9",
+      "bytes": 66305
+    },
+    "SNDK": {
+      "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\SNDK_经营情景市场状态投资决策_2026-09-26.md",
+      "sha256": "f60433acad4b2ea809b0bfa71148d10b5df8f8c8c463e67a3823f45ecb266861",
+      "bytes": 61620
+    },
+    "ADBE": {
+      "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\ADBE_经营情景市场状态投资决策_2026-09-26.md",
+      "sha256": "281464a739e6a7da0c41f02cb3eb92a6f460ea4278949e44308ddd7a9317b0ec",
+      "bytes": 63844
+    },
+    "SPCX": {
+      "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\SPCX_经营情景市场状态投资决策_2026-09-26.md",
+      "sha256": "d79baab88e4d0058afa96ad902c55565a626b8becccb2efd6fb02e5c67c062ce",
+      "bytes": 77736
+    },
+    "MSFT": {
+      "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\MSFT_经营情景市场状态投资决策_2026-09-26.md",
+      "sha256": "c70e97e14b92537e5829305e7bacf1f3f234233c58142ffb61fd610f2282d9be",
+      "bytes": 67906
+    },
+    "CRWV": {
+      "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\CRWV_经营情景市场状态投资决策_2026-09-26.md",
+      "sha256": "bcb5f3b94486a1caaa8315fac0f1b1ccac48365d022f1a9b119a61777afa120d",
+      "bytes": 74301
+    },
+    "TSM": {
+      "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\TSM_经营情景市场状态投资决策_2026-09-26.md",
+      "sha256": "95a89267867e95bab63474fe0ea4dec8d3e54eafc9b0bc62265cb20148ea90df",
+      "bytes": 63398
+    },
+    "ALAB": {
+      "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\ALAB_经营情景市场状态投资决策_2026-09-26.md",
+      "sha256": "95b791a8f15f478db18d1939853ba6823cc9af6530e203dcf3a2fad529d35aaf",
+      "bytes": 67813
+    },
+    "CRDO": {
+      "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\CRDO_经营情景市场状态投资决策_2026-09-26.md",
+      "sha256": "2059ac8705fdc206885dfb6c03650c2795c05b4a2823e0a696740ee209ad8971",
+      "bytes": 66823
+    },
+    "OKLO": {
+      "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\OKLO_经营情景市场状态投资决策_2026-09-26.md",
+      "sha256": "a907d9f3937d4baac94269264ad69573d960ceb9118d9eec445a5ebfa07179ac",
+      "bytes": 61663
+    }
+  },
+  "upstream_sources": {
+    "基本面/公司调研/结果/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\MU_Micron_Technology_美光科技_公司调研_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "MU"
+      ],
+      "sha256": "a4a300edc991a03c60c508e7ad64071b0e249dfeb5355deeaeac80b636f6fc08",
+      "bytes": 75089,
+      "reported_hash_checks": {
+        "MU": true
+      }
+    },
+    "基本面/行业调研/结果/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\行业调研\\结果\\AI服务器_存储_芯片\\行业调研_HBM与高带宽内存_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "MU"
+      ],
+      "sha256": "d59972845895b7deaf84ba7f2522b4e062b4ba689924214ebdd507929ba443cb",
+      "bytes": 77568,
+      "reported_hash_checks": {
+        "MU": true
+      }
+    },
+    "基本面/行业调研/结果/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\行业调研\\结果\\AI服务器_存储_芯片\\行业调研_企业级SSD与高速存储控制器_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "MU",
+        "SNDK"
+      ],
+      "sha256": "d76e582f55011821554daebf6ff4c4a37dc91470a6fe8cc9bcb8e8ff82af7c94",
+      "bytes": 76746,
+      "reported_hash_checks": {
+        "MU": true,
+        "SNDK": true
+      }
+    },
+    "基本面/行业调研/结果/半导体与电子制造_设备_材料_测试/行业调研_存储晶圆制造_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\行业调研\\结果\\半导体与电子制造_设备_材料_测试\\行业调研_存储晶圆制造_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "MU",
+        "SNDK"
+      ],
+      "sha256": "08d6a63e14f415c349947cdabd8603582f5d7dbae6a1232db6803837e925641a",
+      "bytes": 70761,
+      "reported_hash_checks": {
+        "MU": true,
+        "SNDK": true
+      }
+    },
+    "基本面/公司调研/结果/AI服务器_存储_EMS/SNDK_SanDisk_公司调研_2026-09-22.md": {
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SNDK_SanDisk_公司调研_2026-09-22.md",
+      "exists": true,
+      "used_by": [
+        "SNDK"
+      ],
+      "sha256": "709857298194b88b9231d2a9b7afc5e591f0808810f2078f9335fe338ea6b9e0",
+      "bytes": 65746,
+      "reported_hash_checks": {
+        "SNDK": true
+      }
+    },
+    "基本面/公司调研/结果/企业软件_数据平台/ADBE_Adobe_公司调研_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\企业软件_数据平台\\ADBE_Adobe_公司调研_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "ADBE"
+      ],
+      "sha256": "2c7e3436bb880660f5c17fd7a724584be2e3253381ea3e538461f2d38c808c75",
+      "bytes": 74503,
+      "reported_hash_checks": {
+        "ADBE": true
+      }
+    },
+    "基本面/行业调研/结果/AI应用_软件_数据平台/行业调研_AI创作与文档生产软件_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\行业调研\\结果\\AI应用_软件_数据平台\\行业调研_AI创作与文档生产软件_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "ADBE"
+      ],
+      "sha256": "d9299b16a9b3a9b46eaa0f6059ed392b46da603642c890597ae21b00855e3a34",
+      "bytes": 78365,
+      "reported_hash_checks": {
+        "ADBE": true
+      }
+    },
+    "基本面/公司调研/结果/航空航天_卫星_高可靠系统/SPCX_SpaceX_公司调研_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\SPCX_SpaceX_公司调研_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "SPCX"
+      ],
+      "sha256": "77aa46e94c83fbd6f2b905c62c0b7f75c811053ffd97ed1a2b403b67b40bdf73",
+      "bytes": 80719,
+      "reported_hash_checks": {
+        "SPCX": true
+      }
+    },
+    "基本面/行业调研/结果/商业航天_火箭_卫星/行业调研_低轨卫星通信、直连手机与地面终端_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\行业调研\\结果\\商业航天_火箭_卫星\\行业调研_低轨卫星通信、直连手机与地面终端_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "SPCX"
+      ],
+      "sha256": "436fe89647f2068b0f17e8758fe5e96214f24a7bd17543fa559d57761f3f0a68",
+      "bytes": 79254,
+      "reported_hash_checks": {
+        "SPCX": true
+      }
+    },
+    "基本面/行业调研/结果/商业航天_火箭_卫星/行业调研_运载火箭、航天器与空间基础设施_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\行业调研\\结果\\商业航天_火箭_卫星\\行业调研_运载火箭、航天器与空间基础设施_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "SPCX"
+      ],
+      "sha256": "15c3696d1f1eddd425999840ff6e62f46e78ec143fa4847898537fc591e9403d",
+      "bytes": 86596,
+      "reported_hash_checks": {
+        "SPCX": true
+      }
+    },
+    "基本面/行业调研/结果/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\行业调研\\结果\\AI服务器_存储_芯片\\行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "SPCX",
+        "CRWV"
+      ],
+      "sha256": "a40508c3bede65b63a6ab39899ea8a19227efdb619e8ced46bf11ad03f7ea5d8",
+      "bytes": 82314,
+      "reported_hash_checks": {
+        "SPCX": true,
+        "CRWV": true
+      }
+    },
+    "基本面/行业调研/结果/AI应用_软件_数据平台/行业调研_企业AI与Agent工作流软件_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\行业调研\\结果\\AI应用_软件_数据平台\\行业调研_企业AI与Agent工作流软件_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "SPCX",
+        "MSFT"
+      ],
+      "sha256": "40cf3dcb459cfcf3978582bdbbc6ed9f5983f0ad5bc6b29d75560d127c754f74",
+      "bytes": 77479,
+      "reported_hash_checks": {
+        "SPCX": true,
+        "MSFT": true
+      }
+    },
+    "基本面/公司调研/结果/云算力_IDC_边缘云/MSFT_微软_公司调研_2026-09-26.md": {
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\MSFT_微软_公司调研_2026-09-26.md",
+      "exists": true,
+      "used_by": [
+        "MSFT"
+      ],
+      "sha256": "aef002b1248506c842808f1be24a90e5fe49e9b839f4f35bd1b7420217f76086",
+      "bytes": 79604,
+      "reported_hash_checks": {
+        "MSFT": true
+      }
+    },
+    "基本面/公司调研/结果/云算力_IDC_边缘云/CRWV_CoreWeave_公司调研_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\CRWV_CoreWeave_公司调研_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "CRWV"
+      ],
+      "sha256": "b04a3b4bdced60a0ab4fcde2af8666627fd2892cdb320c7d602e28b52fad71cd",
+      "bytes": 75634,
+      "reported_hash_checks": {
+        "CRWV": true
+      }
+    },
+    "基本面/公司调研/结果/晶圆制造_前道设备/TSM_台积电_公司调研_2026-09-22.md": {
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\晶圆制造_前道设备\\TSM_台积电_公司调研_2026-09-22.md",
+      "exists": true,
+      "used_by": [
+        "TSM"
+      ],
+      "sha256": "19701be0ce9fd3a395d5cb1b24a46b493270ca74423a3f9920591101476df31e",
+      "bytes": 69912,
+      "reported_hash_checks": {
+        "TSM": true
+      }
+    },
+    "基本面/行业调研/结果/半导体与电子制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\行业调研\\结果\\半导体与电子制造_设备_材料_测试\\行业调研_先进逻辑晶圆代工和封装_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "TSM"
+      ],
+      "sha256": "ef17c098714a24e1ec2eb180ad89138d2419c1d1c2764ed15d4df40ac62281f4",
+      "bytes": 82729,
+      "reported_hash_checks": {
+        "TSM": true
+      }
+    },
+    "基本面/公司调研/结果/AI计算芯片_EDA_IP_custom_ASIC/ALAB_AsteraLabs_公司调研_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\ALAB_AsteraLabs_公司调研_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "ALAB"
+      ],
+      "sha256": "23a13820267fb9b67e72b2f6d902311af0829d19cf5b55a21cdc3a52d4ba8974",
+      "bytes": 75642,
+      "reported_hash_checks": {
+        "ALAB": true
+      }
+    },
+    "基本面/行业调研/结果/AI网络_光互联_铜互联/行业调研_PCIe_CXL高速I_O交换与Retimer_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\行业调研\\结果\\AI网络_光互联_铜互联\\行业调研_PCIe_CXL高速I_O交换与Retimer_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "ALAB"
+      ],
+      "sha256": "91bbd63d4b4766e5f61a629a49499fc759b49a587a63f7e59e9b1f22350b2fcd",
+      "bytes": 81580,
+      "reported_hash_checks": {
+        "ALAB": true
+      }
+    },
+    "基本面/公司调研/结果/AI网络_光互联_连接器/CRDO_Credo_Technology_Group_公司调研_2026-09-22.md": {
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\AI网络_光互联_连接器\\CRDO_Credo_Technology_Group_公司调研_2026-09-22.md",
+      "exists": true,
+      "used_by": [
+        "CRDO"
+      ],
+      "sha256": "d520800dd4878c4cc9b5317c723363883164ca8362cc8e55e58c8bb7881464fe",
+      "bytes": 77249
+    },
+    "基本面/行业调研/结果/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\行业调研\\结果\\AI网络_光互联_铜互联\\行业调研_AEC、DAC与高速铜缆_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "CRDO"
+      ],
+      "sha256": "14eaf6484a854485bd71f42cd81423609f947c156217060e73f1a8c9eb557dca",
+      "bytes": 62683
+    },
+    "基本面/行业调研/结果/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\行业调研\\结果\\AI网络_光互联_铜互联\\行业调研_光DSP、TIA与CDR芯片_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "CRDO"
+      ],
+      "sha256": "92eb99797e43524d3f4fd7958e1048213f6d85f2b3c3fb7912efb8447d6773fa",
+      "bytes": 81308
+    },
+    "基本面/公司调研/结果/电力_发电_能源_储能/OKLO_Oklo_Inc_公司调研_2026-09-26.md": {
+      "path": "D:\\investment\\基本面\\公司调研\\结果\\电力_发电_能源_储能\\OKLO_Oklo_Inc_公司调研_2026-09-26.md",
+      "exists": true,
+      "used_by": [
+        "OKLO"
+      ],
+      "sha256": "9d3d2cddf06388900df4e040a7bcd6e1e9434506272f0b6a8cebc7cf40a6fc41",
+      "bytes": 80155,
+      "reported_hash_checks": {
+        "OKLO": true
+      }
+    },
+    "基本面/行业调研/结果/AI园区电力_机电_冷却/行业调研_核燃料循环与浓缩服务_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\行业调研\\结果\\AI园区电力_机电_冷却\\行业调研_核燃料循环与浓缩服务_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "OKLO"
+      ],
+      "sha256": "29a48308838bf4ecc4e170d22c210c46ae7da053e0b073ef7dc4e907e2498314",
+      "bytes": 80720
+    },
+    "基本面/行业调研/结果/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-09-18.md": {
+      "path": "D:\\investment\\基本面\\行业调研\\结果\\AI园区电力_机电_冷却\\行业调研_数据中心自备发电与微电网_2026-09-18.md",
+      "exists": true,
+      "used_by": [
+        "OKLO"
+      ],
+      "sha256": "9311010aabddb9f6baa87013f9836bc5e3c034ac6ab0e9b4110b17a24f2a4d8b",
+      "bytes": 95481
+    }
+  },
+  "return_checks": [
+    {
+      "symbol": "MU",
+      "line": 27,
+      "scenario": "悲观／受损",
+      "target": [
+        339.0,
+        434.0
+      ],
+      "reported_pct": [
+        -68.7,
+        -59.9
+      ],
+      "computed_pct": [
+        -68.67723694422885,
+        -59.89947148612189
+      ],
+      "max_error_percentage_points": 0.022763055771150675,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "MU",
+      "line": 28,
+      "scenario": "基准／正常兑现",
+      "target": [
+        938.0,
+        1218.0
+      ],
+      "reported_pct": [
+        -13.3,
+        12.5
+      ],
+      "computed_pct": [
+        -13.331115792586024,
+        12.540192926045023
+      ],
+      "max_error_percentage_points": 0.040192926045023114,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "MU",
+      "line": 29,
+      "scenario": "乐观／超预期",
+      "target": [
+        1747.0,
+        2241.0
+      ],
+      "reported_pct": [
+        61.4,
+        107.1
+      ],
+      "computed_pct": [
+        61.41848689803009,
+        107.06286728018628
+      ],
+      "max_error_percentage_points": 0.037132719813712356,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "MU",
+      "line": 30,
+      "scenario": "突破／非线性",
+      "target": [
+        1303.0,
+        1673.0
+      ],
+      "reported_pct": [
+        20.4,
+        54.6
+      ],
+      "computed_pct": [
+        20.393983072772293,
+        54.58106959382045
+      ],
+      "max_error_percentage_points": 0.018930406179549664,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "SNDK",
+      "line": 17,
+      "scenario": "悲观／受损",
+      "target": [
+        530.0,
+        710.0
+      ],
+      "reported_pct": [
+        -70.2,
+        -60.1
+      ],
+      "computed_pct": [
+        -70.18787265159186,
+        -60.06299921250984
+      ],
+      "max_error_percentage_points": 0.037000787490164555,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "SNDK",
+      "line": 18,
+      "scenario": "基准／正常兑现",
+      "target": [
+        1490.0,
+        2080.0
+      ],
+      "reported_pct": [
+        -16.2,
+        17.0
+      ],
+      "computed_pct": [
+        -16.18854764315446,
+        16.99853751828102
+      ],
+      "max_error_percentage_points": 0.011452356845538247,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "SNDK",
+      "line": 19,
+      "scenario": "乐观／超预期",
+      "target": [
+        2600.0,
+        3440.0
+      ],
+      "reported_pct": [
+        46.2,
+        93.5
+      ],
+      "computed_pct": [
+        46.248171897851286,
+        93.497581280234
+      ],
+      "max_error_percentage_points": 0.04817189785128306,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "SNDK",
+      "line": 20,
+      "scenario": "突破／非线性",
+      "target": [
+        2530.0,
+        3510.0
+      ],
+      "reported_pct": [
+        42.3,
+        97.4
+      ],
+      "computed_pct": [
+        42.31072111598606,
+        97.43503206209922
+      ],
+      "max_error_percentage_points": 0.035032062099219274,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "ADBE",
+      "line": 24,
+      "scenario": "悲观／受损",
+      "target": [
+        112.0,
+        152.0
+      ],
+      "reported_pct": [
+        -52.4,
+        -35.4
+      ],
+      "computed_pct": [
+        -52.43555442306875,
+        -35.448252431307594
+      ],
+      "max_error_percentage_points": 0.0482524313075956,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "ADBE",
+      "line": 25,
+      "scenario": "基准／正常兑现",
+      "target": [
+        279.0,
+        358.0
+      ],
+      "reported_pct": [
+        18.5,
+        52.0
+      ],
+      "computed_pct": [
+        18.486431392534076,
+        52.03635282626238
+      ],
+      "max_error_percentage_points": 0.03635282626238023,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "ADBE",
+      "line": 26,
+      "scenario": "乐观／超预期",
+      "target": [
+        405.0,
+        535.0
+      ],
+      "reported_pct": [
+        72.0,
+        127.2
+      ],
+      "computed_pct": [
+        71.99643266658174,
+        127.20516413980549
+      ],
+      "max_error_percentage_points": 0.005164139805486911,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "ADBE",
+      "line": 27,
+      "scenario": "突破／非线性",
+      "target": [
+        341.0,
+        467.0
+      ],
+      "reported_pct": [
+        44.8,
+        98.3
+      ],
+      "computed_pct": [
+        44.816749479763885,
+        98.32675075381152
+      ],
+      "max_error_percentage_points": 0.026750753811526806,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "SPCX",
+      "line": 23,
+      "scenario": "悲观／受损",
+      "target": [
+        3.53,
+        7.93
+      ],
+      "reported_pct": [
+        -97.63,
+        -94.67
+      ],
+      "computed_pct": [
+        -97.6257734732311,
+        -94.66639763249933
+      ],
+      "max_error_percentage_points": 0.004226526768889016,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "SPCX",
+      "line": 24,
+      "scenario": "基准／正常兑现",
+      "target": [
+        21.12,
+        30.95
+      ],
+      "reported_pct": [
+        -85.79,
+        -79.18
+      ],
+      "computed_pct": [
+        -85.79499596448748,
+        -79.18348130212537
+      ],
+      "max_error_percentage_points": 0.004995964487477522,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "SPCX",
+      "line": 25,
+      "scenario": "乐观／超预期",
+      "target": [
+        88.05,
+        134.65
+      ],
+      "reported_pct": [
+        -40.78,
+        -9.44
+      ],
+      "computed_pct": [
+        -40.77885391444715,
+        -9.436373419424271
+      ],
+      "max_error_percentage_points": 0.0036265805757285108,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "SPCX",
+      "line": 26,
+      "scenario": "突破／非线性",
+      "target": [
+        91.29,
+        155.61
+      ],
+      "reported_pct": [
+        -38.6,
+        4.66
+      ],
+      "computed_pct": [
+        -38.59967715899919,
+        4.661016949152552
+      ],
+      "max_error_percentage_points": 0.0010169491525520158,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "MSFT",
+      "line": 25,
+      "scenario": "悲观／受损",
+      "target": [
+        229.0,
+        318.0
+      ],
+      "reported_pct": [
+        -55.6,
+        -38.4
+      ],
+      "computed_pct": [
+        -55.634771490012966,
+        -38.39239010403549
+      ],
+      "max_error_percentage_points": 0.034771490012964534,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "MSFT",
+      "line": 26,
+      "scenario": "基准／正常兑现",
+      "target": [
+        511.0,
+        662.0
+      ],
+      "reported_pct": [
+        -1.0,
+        28.3
+      ],
+      "computed_pct": [
+        -1.001607997365206,
+        28.252319972102224
+      ],
+      "max_error_percentage_points": 0.047680027897776256,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "MSFT",
+      "line": 27,
+      "scenario": "乐观／超预期",
+      "target": [
+        648.0,
+        890.0
+      ],
+      "reported_pct": [
+        25.5,
+        72.4
+      ],
+      "computed_pct": [
+        25.540035259701277,
+        72.4238138597749
+      ],
+      "max_error_percentage_points": 0.04003525970127697,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "MSFT",
+      "line": 28,
+      "scenario": "突破／非线性",
+      "target": [
+        566.0,
+        885.0
+      ],
+      "reported_pct": [
+        9.7,
+        71.5
+      ],
+      "computed_pct": [
+        9.65379622992426,
+        71.45514074820312
+      ],
+      "max_error_percentage_points": 0.046203770075738504,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "CRWV",
+      "line": 17,
+      "scenario": "悲观／受损",
+      "target": [
+        0.0,
+        0.0
+      ],
+      "reported_pct": [
+        -100.0,
+        -100.0
+      ],
+      "computed_pct": [
+        -100.0,
+        -100.0
+      ],
+      "max_error_percentage_points": 0.0,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "CRWV",
+      "line": 18,
+      "scenario": "基准／正常兑现",
+      "target": [
+        45.0,
+        98.0
+      ],
+      "reported_pct": [
+        -48.6,
+        11.9
+      ],
+      "computed_pct": [
+        -48.62427217718918,
+        11.884918369676889
+      ],
+      "max_error_percentage_points": 0.02427217718917518,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "CRWV",
+      "line": 19,
+      "scenario": "乐观／超预期",
+      "target": [
+        174.0,
+        255.0
+      ],
+      "reported_pct": [
+        98.7,
+        191.1
+      ],
+      "computed_pct": [
+        98.65281424820185,
+        191.1291243292613
+      ],
+      "max_error_percentage_points": 0.04718575179815332,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "CRWV",
+      "line": 20,
+      "scenario": "突破／非线性",
+      "target": [
+        158.0,
+        243.0
+      ],
+      "reported_pct": [
+        80.4,
+        177.4
+      ],
+      "computed_pct": [
+        80.38588880009132,
+        177.42893024317846
+      ],
+      "max_error_percentage_points": 0.02893024317845061,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "TSM",
+      "line": 19,
+      "scenario": "悲观／受损",
+      "target": [
+        152.8,
+        201.4
+      ],
+      "reported_pct": [
+        -66.1,
+        -55.3
+      ],
+      "computed_pct": [
+        -66.09041077650296,
+        -55.30503095803466
+      ],
+      "max_error_percentage_points": 0.00958922349703073,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "TSM",
+      "line": 20,
+      "scenario": "基准／正常兑现",
+      "target": [
+        330.1,
+        471.6
+      ],
+      "reported_pct": [
+        -26.7,
+        4.7
+      ],
+      "computed_pct": [
+        -26.743747364683422,
+        4.65813009032201
+      ],
+      "max_error_percentage_points": 0.043747364683422774,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "TSM",
+      "line": 21,
+      "scenario": "乐观／超预期",
+      "target": [
+        504.8,
+        715.1
+      ],
+      "reported_pct": [
+        12.0,
+        58.7
+      ],
+      "computed_pct": [
+        12.025920418987601,
+        58.69598988038436
+      ],
+      "max_error_percentage_points": 0.025920418987601224,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "TSM",
+      "line": 22,
+      "scenario": "突破／非线性",
+      "target": [
+        576.6,
+        872.0
+      ],
+      "reported_pct": [
+        28.0,
+        93.5
+      ],
+      "computed_pct": [
+        27.95987661170414,
+        93.51545682519252
+      ],
+      "max_error_percentage_points": 0.04012338829586071,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "ALAB",
+      "line": 25,
+      "scenario": "悲观／受损",
+      "target": [
+        20.73,
+        25.53
+      ],
+      "reported_pct": [
+        -94.32,
+        -93.0
+      ],
+      "computed_pct": [
+        -94.31462892874774,
+        -92.99818989633043
+      ],
+      "max_error_percentage_points": 0.005371071252255888,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "ALAB",
+      "line": 26,
+      "scenario": "基准／正常兑现",
+      "target": [
+        195.62,
+        260.27
+      ],
+      "reported_pct": [
+        -46.35,
+        -28.62
+      ],
+      "computed_pct": [
+        -46.3496242663595,
+        -28.618836048488838
+      ],
+      "max_error_percentage_points": 0.0011639515111632193,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "ALAB",
+      "line": 27,
+      "scenario": "乐观／超预期",
+      "target": [
+        384.25,
+        505.26
+      ],
+      "reported_pct": [
+        5.38,
+        38.57
+      ],
+      "computed_pct": [
+        5.383687126323289,
+        38.5716636498272
+      ],
+      "max_error_percentage_points": 0.003687126323288936,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "ALAB",
+      "line": 28,
+      "scenario": "突破／非线性",
+      "target": [
+        584.23,
+        725.57
+      ],
+      "reported_pct": [
+        60.23,
+        98.99
+      ],
+      "computed_pct": [
+        60.22982831440953,
+        98.99347265646428
+      ],
+      "max_error_percentage_points": 0.0034726564642824087,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "CRDO",
+      "line": 27,
+      "scenario": "悲观／受损",
+      "target": [
+        36.0,
+        83.0
+      ],
+      "reported_pct": [
+        -82.9,
+        -60.7
+      ],
+      "computed_pct": [
+        -82.9359624591174,
+        -60.657913447409584
+      ],
+      "max_error_percentage_points": 0.042086552590419046,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "CRDO",
+      "line": 28,
+      "scenario": "基准／正常兑现",
+      "target": [
+        174.0,
+        278.0
+      ],
+      "reported_pct": [
+        -17.5,
+        31.8
+      ],
+      "computed_pct": [
+        -17.523818552400815,
+        31.772289899037776
+      ],
+      "max_error_percentage_points": 0.02771010096222426,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "CRDO",
+      "line": 29,
+      "scenario": "乐观／超预期",
+      "target": [
+        277.0,
+        430.0
+      ],
+      "reported_pct": [
+        31.3,
+        103.8
+      ],
+      "computed_pct": [
+        31.29828885623549,
+        103.8204484049865
+      ],
+      "max_error_percentage_points": 0.020448404986495916,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "CRDO",
+      "line": 30,
+      "scenario": "突破／非线性",
+      "target": [
+        259.0,
+        520.0
+      ],
+      "reported_pct": [
+        22.8,
+        146.5
+      ],
+      "computed_pct": [
+        22.766270085794194,
+        146.48054225719295
+      ],
+      "max_error_percentage_points": 0.03372991420580718,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "OKLO",
+      "line": 34,
+      "scenario": "悲观／受损",
+      "target": [
+        4.0,
+        9.0
+      ],
+      "reported_pct": [
+        -89.5,
+        -76.3
+      ],
+      "computed_pct": [
+        -89.48475289169295,
+        -76.34069400630915
+      ],
+      "max_error_percentage_points": 0.04069400630915254,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "OKLO",
+      "line": 35,
+      "scenario": "基准／正常兑现",
+      "target": [
+        1.5,
+        2.6
+      ],
+      "reported_pct": [
+        -96.1,
+        -93.2
+      ],
+      "computed_pct": [
+        -96.05678233438486,
+        -93.16508937960042
+      ],
+      "max_error_percentage_points": 0.043217665615131295,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "OKLO",
+      "line": 36,
+      "scenario": "乐观／超预期",
+      "target": [
+        10.2,
+        21.0
+      ],
+      "reported_pct": [
+        -73.2,
+        -44.8
+      ],
+      "computed_pct": [
+        -73.18611987381703,
+        -44.79495268138801
+      ],
+      "max_error_percentage_points": 0.01388012618296841,
+      "within_rounding_0_06pp": true
+    },
+    {
+      "symbol": "OKLO",
+      "line": 37,
+      "scenario": "突破／非线性",
+      "target": [
+        25.1,
+        50.3
+      ],
+      "reported_pct": [
+        -34.0,
+        32.2
+      ],
+      "computed_pct": [
+        -34.01682439537329,
+        32.229232386961094
+      ],
+      "max_error_percentage_points": 0.029232386961091095,
+      "within_rounding_0_06pp": true
+    }
+  ],
+  "comparisons": {
+    "MU": {
+      "base_current_value": 715,
+      "base_target_value": 884,
+      "base_target_price": [
+        938,
+        1218
+      ],
+      "target_date": "2028-10-31",
+      "reference_price": 1082.28,
+      "current_value_to_price": 0.6606423476364711,
+      "target_price_to_target_value": [
+        1.0610859728506787,
+        1.3778280542986425
+      ]
+    },
+    "SNDK": {
+      "base_current_value": 1182,
+      "base_target_value": 1436,
+      "base_target_price": [
+        1490,
+        2080
+      ],
+      "target_date": "2028-09-29",
+      "reference_price": 1777.8,
+      "current_value_to_price": 0.6648666891663855,
+      "target_price_to_target_value": [
+        1.0376044568245126,
+        1.448467966573816
+      ]
+    },
+    "ADBE": {
+      "base_current_value": 234,
+      "base_target_value": 298.5,
+      "base_target_price": [
+        279,
+        358
+      ],
+      "target_date": "2028-12-29",
+      "reference_price": 235.47,
+      "current_value_to_price": 0.9937571665180278,
+      "target_price_to_target_value": [
+        0.9346733668341709,
+        1.1993299832495812
+      ]
+    },
+    "SPCX": {
+      "base_current_value": 9.97,
+      "base_target_value": 12.76,
+      "base_target_price": [
+        21.12,
+        30.95
+      ],
+      "target_date": "2028-12-29",
+      "reference_price": 148.68,
+      "current_value_to_price": 0.06705676620930859,
+      "target_price_to_target_value": [
+        1.6551724137931036,
+        2.425548589341693
+      ]
+    },
+    "MSFT": {
+      "base_current_value": 408.6,
+      "base_target_value": 480.4,
+      "base_target_price": [
+        511,
+        662
+      ],
+      "target_date": "2028-09-29",
+      "reference_price": 516.17,
+      "current_value_to_price": 0.7915996667764498,
+      "target_price_to_target_value": [
+        1.0636969192339718,
+        1.3780183180682766
+      ]
+    },
+    "CRWV": {
+      "base_current_value": 47.02,
+      "base_target_value": 64.55,
+      "base_target_price": [
+        45,
+        98
+      ],
+      "target_date": "2028-12-31",
+      "reference_price": 87.59,
+      "current_value_to_price": 0.5368192716063478,
+      "target_price_to_target_value": [
+        0.69713400464756,
+        1.5182029434546864
+      ]
+    },
+    "TSM": {
+      "base_current_value": 278,
+      "base_target_value": 332,
+      "base_target_price": [
+        330.1,
+        471.6
+      ],
+      "target_date": "2028-12-29",
+      "reference_price": 450.61,
+      "current_value_to_price": 0.616941479328022,
+      "target_price_to_target_value": [
+        0.994277108433735,
+        1.4204819277108434
+      ]
+    },
+    "ALAB": {
+      "base_current_value": 76,
+      "base_target_value": 98.22,
+      "base_target_price": [
+        195.62,
+        260.27
+      ],
+      "target_date": "2028-12-31",
+      "reference_price": 364.62,
+      "current_value_to_price": 0.20843618013274093,
+      "target_price_to_target_value": [
+        1.9916513948279373,
+        2.6498676440643454
+      ]
+    },
+    "CRDO": {
+      "base_current_value": 75.7,
+      "base_target_value": 90.6,
+      "base_target_price": [
+        174,
+        278
+      ],
+      "target_date": "2028-06-30",
+      "reference_price": 210.97,
+      "current_value_to_price": 0.3588187894013367,
+      "target_price_to_target_value": [
+        1.9205298013245033,
+        3.068432671081678
+      ]
+    },
+    "OKLO": {
+      "base_current_value": 1.06,
+      "base_target_value": 1.99,
+      "base_target_price": [
+        1.5,
+        2.6
+      ],
+      "target_date": "2030-12-31",
+      "reference_price": 38.04,
+      "current_value_to_price": 0.027865404837013674,
+      "target_price_to_target_value": [
+        0.7537688442211056,
+        1.306532663316583
+      ]
+    }
+  },
+  "derived_checks": {
+    "hbm_2027": {
+      "specialist_revenue_B": 144.9,
+      "memory_fab_revenue_B": 186.2,
+      "difference_pct": 28.502415458937193,
+      "specialist_delivery_billion_GB": 6.402,
+      "memory_fab_delivery_billion_GB": 4.9,
+      "specialist_implied_usd_per_GB": 22.633552014995313,
+      "memory_fab_usd_per_GB": 38
+    },
+    "mu_floor_contract_annualized_B": 22.22222222222222,
+    "mu_floor_contract_annualized_vs_FY27_base_revenue": 0.10562394706127774,
+    "alab_breakthrough_at_26x": 386.368716129668,
+    "alab_breakthrough_at_26x_price_return_pct": 5.964762253762257,
+    "adbe_upstream_FY29_FCF_less_SBC_B": 10.440000000000001,
+    "adbe_downstream_FY29_economic_FCFF_B": 9.335,
+    "adbe_remaining_cash_measure_difference_pct": -10.58429118773947,
+    "oklo_upper_breakthrough_annualized_pct": 6.772788670476748,
+    "oklo_required_terminal_price_at_12pct": 61.66758468856147,
+    "crwv_capex_improvement_plus_margin_current_value_vs_price_pct": 12.59276173079118
+  }
+}

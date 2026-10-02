@@ -1,0 +1,349 @@
+# SANM Sanmina Corporation 公司调研：ZT 把传统 EMS 重新定价为 AI 数据中心制造平台，但护城河来自整柜量产、客户认证和供应链执行
+
+报告日期：2026-06-11  
+股票代码：SANM  
+公司名称：Sanmina Corporation  
+正式分类：公司调研 / AI服务器_存储_EMS  
+资料边界：本报告只使用 `基本面/行业调研/` 内相关产业资料与联网公开资料；未读取、引用或继承 `特征量化/` 或其他非指定目录资料。  
+核心判断：Sanmina 不是 GPU、ASIC、光模块或电源核心器件公司，而是高复杂度电子制造、系统集成和整柜交付平台。2025 年收购 ZT Systems 制造业务后，公司从低估值 EMS 被市场重新定价为 AI 数据中心基础设施制造受益标的。投资分歧不在“有没有 AI 收入”，而在 ZT 收入是低毛利 BOM 代工的短周期放量，还是会沉淀为多客户、高认证壁垒、可持续扩张的整柜制造平台。
+
+## 1. 公司整体业务、产业链位置与财务快照
+
+### 1.1 业务本质
+
+Sanmina 是一家 Integrated Manufacturing Solutions 公司，为 OEM、云厂商和高可靠行业客户提供从工程设计、PCBA、背板、线缆、机箱、精密机械、系统集成、测试、维修物流到量产交付的制造服务。公司报告口径主要分为两块：
+
+| 业务口径 | 内容 | AI 数据中心相关性 | 经济特征 |
+|---|---:|---|---|
+| IMS：Integrated Manufacturing Solutions | 复杂系统制造、PCBA、系统集成、整机/整柜制造、供应链和量产执行 | 最高。ZT Systems 制造业务并入后，accelerated compute、AI server、rack-scale infrastructure 主要进入 IMS | 收入大、毛利率较低，取决于客户供料与 Sanmina 采购 BOM 的比例；规模和周转能力比单件毛利更重要 |
+| CPS：Components, Products and Services | PCB、背板、线缆、精密加工、塑胶/金属件、存储产品、42Q 制造软件、维修和物流 | 中高。高层数 PCB/背板、线缆、机箱、测试、存储、追溯软件均可服务 AI 服务器和网络设备 | 毛利率通常高于 IMS，但收入规模小；更接近“制造能力和垂直整合”利润池 |
+| 非 AI 工业、医疗、国防、汽车等 | 工业控制、医疗设备、航空防务、汽车电子等 | 低到中。现金流和客户多元化重要，但不是当前估值上修主线 | 稳定、高混合度、周期不同步；2026 年增长不突出 |
+
+公司在产业链的位置：位于 GPU/ASIC、HBM、交换芯片、光模块、电源、液冷零部件和整机 OEM/云厂商之间，是“把客户设计、关键器件、机电结构、液冷、电源、线缆、测试和交付变成可批量出货系统”的制造执行层。它的价值不是拥有 AI 芯片 IP，而是能否拿到客户认证、能否按期爬坡、能否管理昂贵 BOM 和交付质量。
+
+### 1.2 投资人眼中的 Sanmina
+
+2025 年前，Sanmina 更像低估值、高混合度 EMS：收入增长中低速，毛利率和净利率薄，靠项目筛选、回购、现金流和高可靠行业客户维持估值。2025 年 10 月完成从 AMD/ZT 体系收购 ZT Systems 数据中心基础设施制造业务后，市场开始把它看成 AI 数据中心整柜制造和 accelerated compute 放量受益者。
+
+这带来两个相反的投资叙事：
+
+| 看多叙事 | 看空/审慎叙事 |
+|---|---|
+| ZT 让 Sanmina 直接进入 hyperscale/OEM accelerated compute 量产链，FY2026 ZT 收入指引约 50-60 亿美元，远超传统 EMS 增速 | ZT 收入可能包含大量低毛利 BOM pass-through，收入弹性强但毛利率、净利率和自由现金流弹性未必同等放大 |
+| 公司已披露下一代 accelerated compute 产品有新赢单、预生产出货和客户生产排期推进 | AI rack 项目高度依赖少数客户、AMD 生态、GPU/HBM/网络/液冷/电源供给；季度收入可能很“块状” |
+| Sanmina 已投入 power、liquid cooling、test cell 等能力，符合 GB200/GB300、MI 系列和定制 ASIC rack 趋势 | Quanta、Wiwynn、Foxconn、Jabil、Flex、Celestica、Dell、HPE、Supermicro 等竞争者都在抢 AI rack 订单 |
+
+### 1.3 过去三年重大业务变化
+
+| 时间 | 事件 | 对业务质量的影响 |
+|---|---|---|
+| 2023-2024 | 疫后供应链和工业需求正常化，EMS 行业从缺料溢价回到项目执行和库存管理 | Sanmina 保持盈利和现金流，但收入增速不再靠供应链异常拉动 |
+| 2025-05 至 2025-10 | Sanmina 与 AMD 达成并完成收购 ZT Systems 数据中心基础设施制造业务，交易对价约 22.5 亿美元，其中约 19 亿美元现金和约 3.5 亿美元 Sanmina 股票；融资包括新的 5 年期定期贷款 | 公司从传统 EMS 进入 AI 数据中心整机/整柜制造核心赛道，资产负债表杠杆上升，但收入天花板大幅抬高 |
+| FY2026 Q1-Q2 | ZT 收入分别约 11.8 亿美元和 18.8 亿美元；FY2026 公司总收入指引提高到 137-143 亿美元，ZT 指引约 50-60 亿美元 | 估值框架从 FY2025 收入 81.28 亿美元的 EMS，变为 FY2026 收入约 140 亿美元、AI 相关收入高占比的平台 |
+| FY2026 Q2 | 公司披露已赢得并出货新的 accelerated compute 业务，下一代 accelerated compute 预生产正在建设和发货，客户生产排期正在最终确定 | 说明增长不是单纯并表，而是进入多客户/新平台爬坡阶段；但正式量产节奏和产能瓶颈仍需逐季验证 |
+
+### 1.4 估值和财务快照
+
+以下市场数据使用 2026-06-11 14:54 UTC 左右的实时/延迟行情快照；财务数据使用截至 FY2026 Q2 的已披露报表和 FY2026 指引。
+
+| 指标 | 数值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | 约 241.08 美元 | 2026-06-11 14:54 UTC | 当日盘中快照；日内波动大，报告使用约数 |
+| 市值 | 约 132.9 亿美元 | 2026-06-11 14:54 UTC | 与 2026 年收入指引相比，市场已经显著重估 |
+| Trailing P/E | 约 51.0x | 2026-06-11，TTM GAAP EPS 约 4.73 美元 | GAAP EPS 被收购摊销、整合费用和低基数影响；用来衡量“已涨后的风险”更有意义 |
+| Forward P/E | 约 21.8x | 股价 / FY2026 non-GAAP EPS 指引中点 11.05 美元 | 当前更接近 AI 制造成长股，而不是传统 EMS 低倍数 |
+| TTM 收入 | 约 113.41 亿美元 | FY2025 Q3 至 FY2026 Q2 | ZT 仅并入两个季度，TTM 还未完全反映 FY2026 run-rate |
+| FY2026 收入指引 | 137-143 亿美元 | 公司 FY2026 Q2 指引 | 中点 140 亿美元，同比 FY2025 的 81.28 亿美元约 +72% |
+| P/S | 约 1.17x | 市值 / TTM 收入 | 对传统 EMS 偏高；对 AI 服务器平台不高，但取决于利润率能否跟上 |
+| Forward P/S | 约 0.95x | 市值 / FY2026 收入指引中点 | 若 ZT 收入持续，销售倍数仍不夸张 |
+| 最新季度收入增速 | +102.3% YoY | FY2026 Q2 | 主要由 ZT 并表和 accelerated compute 出货推动 |
+| Core Sanmina 收入增速 | +7.3% YoY | FY2026 Q2 | 传统 Sanmina 仍是中个位数到低双位数增长 |
+| GAAP 毛利率 | 约 8.8% | FY2026 Q2 | EMS/整柜制造属性决定毛利率低；收入增长不能直接等同利润增长 |
+| Non-GAAP 经营利润率 | 6.4% | FY2026 Q2 | 已连续保持 6% 以上，是市场愿意重估的关键 |
+| GAAP 净利率 | 约 2.3% | FY2026 Q2 | 仍然是低净利率业务，安全边际来自现金流和订单执行 |
+| FY2026 自由现金流指引 | 大于 3.5 亿美元 | 公司 FY2026 Q2 指引 | 在高增长和高库存阶段能保持正 FCF，是资产负债表健康的核心 |
+
+### 1.5 资产负债表健康度
+
+截至 FY2026 Q2 末，公司披露现金及等价物约 15.76 亿美元，总流动性约 37 亿美元，无循环信贷余额，净杠杆率约 0.56x。公司 FY2026 Q2 经营现金流约 3.99 亿美元，自由现金流约 3.42 亿美元，并授权新的 6 亿美元回购。
+
+| 项目 | 数值 | 健康度判断 |
+|---|---:|---|
+| 现金及等价物 | 约 15.76 亿美元 | 强。ZT 并购后仍保留较高现金 |
+| 总流动性 | 约 37 亿美元 | 强。足以支持高库存、高应收和产能投资 |
+| 净杠杆率 | 约 0.56x | 健康。并购融资后仍低于多数制造业压力区 |
+| FY2026 Q2 FCF | 约 3.42 亿美元 | 很强，但部分受客户预付款、营运资本节奏影响，不能简单年化 |
+| Capex 指引 | 3-4 亿美元 | 合理偏高。主要用于 power、liquid cooling、test cell 和未来增长产能 |
+| 主要风险 | 高应收、高库存、客户集中、BOM 价格波动、项目排期变化 | 风险可控但不低。AI 服务器制造在爬坡期最容易出现库存、缺料和交付错配 |
+
+结论：资产负债表目前健康，短期没有明显偿债风险。真正风险不是破产式杠杆，而是高增长制造业务的营运资本和客户集中风险：如果客户部署延迟、关键部件短缺或订单节奏前移/后移，收入、毛利率和现金流会出现明显季度波动。
+
+## 2. 最新和最近四次财报复盘
+
+Sanmina 不披露严格意义上的 backlog、book-to-bill、取消率或分客户订单池。公司年报说明，大多数客户只提供 30-90 天左右的 firm orders，且通常可取消或重新排期而无重大惩罚，因此公开 backlog 对未来收入预测意义有限。本报告用以下代理指标判断订单和交期：
+
+1. ZT 当季收入与管理层指引差异。
+2. 下一季度和全年收入指引变化。
+3. 公司对 accelerated compute、pre-production、customer production schedules、component shortages 的表述。
+4. 行业端 GPU/HBM、800G/1.6T、液冷、电源和整柜集成紧缺情况。
+
+### 2.1 五个财报季度核心表
+
+| 财报季度 | 总收入与利润 | 业务收入结构 | IMS / CPS | 订单、交期、取消率判断 | AI 数据中心收入占比判断 |
+|---|---:|---|---|---|---|
+| FY2026 Q2，季度截至 2026-03-28 | 收入 40.13 亿美元，+102.3% YoY；GAAP op margin 3.9%；non-GAAP op margin 6.4%；GAAP EPS 1.70 美元，non-GAAP EPS 3.16 美元 | Communications Networks and Cloud & AI Infrastructure 27.71 亿美元，+278.1%，约 69.0%；Industrial/Medical/Defense/Auto 12.42 亿美元，-0.7%，约 31.0% | IMS 35.84 亿美元，毛利率约 8.5%；CPS 4.61 亿美元，毛利率约 11.6% | ZT 收入 18.8 亿美元，显著高于原计划；部分 accelerated compute 出货从下半年提前到 Q2。公司仍提示一个 product business 受零部件短缺影响收入和利润时点。未披露取消率；更像供给/部署节奏驱动，而非需求取消 | 最保守口径：ZT 18.8 亿美元，占总收入约 46.9%。广义通信、云和 AI 口径 27.71 亿美元，占 69.0%。AI 纯度最高的是 ZT 和 accelerated compute |
+| FY2026 Q1，季度截至 2025-12-27 | 收入 31.90 亿美元，+59.0% YoY；GAAP op margin 2.3%；non-GAAP op margin 6.0%；GAAP EPS 0.89 美元，non-GAAP EPS 2.38 美元 | Communications Networks and Cloud & AI Infrastructure 19.64 亿美元，+166.5%，约 61.6%；其他 12.26 亿美元，-3.4% | IMS 27.91 亿美元，毛利率约 8.7%；CPS 4.34 亿美元，毛利率约 12.9% | ZT 并表首个完整季度，收入 11.8 亿美元；公司表示 90 天内完成集成且快于计划。订单能见度来自 FY2026 ZT 48-52 亿美元初始指引，但 firm backlog 未披露 | 最保守 ZT 占比约 37.0%；广义通信、云和 AI 占 61.6% |
+| FY2025 Q4，季度截至 2025-09-27 | 收入 20.96 亿美元；GAAP op income 7847 万美元；non-GAAP op margin 6.0%；non-GAAP EPS 1.67 美元 | Communications Networks and Cloud & AI Infrastructure 8.49 亿美元，+5.7%，约 40.5%；其他 12.47 亿美元，+2.7% | IMS 16.94 亿美元，毛利率约 9.0%；CPS 4.29 亿美元，毛利率约 11.8% | ZT 尚未并表。管理层已把 Q1 FY2026 指引纳入 ZT，并给出 FY2026 ZT 48-52 亿美元初始预期；同时提到 AI accelerator 客户 pipeline 增强和新项目赢单 | 无 ZT 收入；AI 相关主要在 optical/wireline/cloud infrastructure，估算约 10-20% 的总收入，可信度中低 |
+| FY2025 Q3，季度截至 2025-06-28 | 收入 20.42 亿美元，+10.9% YoY；GAAP op margin 4.7%；non-GAAP op margin 5.7%；GAAP EPS 1.26 美元，non-GAAP EPS 1.48 美元 | Communications Networks and Cloud & AI Infrastructure 约 7.86 亿美元，按全年和其他季度反推，约 38.5%；其他约 12.56 亿美元 | IMS 约 16.48 亿美元；CPS 约 4.22 亿美元；CPS 增长和利润率好于普通 EMS | 公司称收入接近指引上端，来自客户需求和新项目 ramp。未披露 backlog；AI 服务器直接收入尚未因 ZT 并表体现 | AI 相关主要是通信网络、云基础设施、部分高端 PCB/背板/线缆；估算占比约 10-20% |
+| FY2025 Q2，季度截至 2025-03-29 | 收入 19.84 亿美元，+8.1% YoY；GAAP op margin 4.6%；non-GAAP op margin 5.6%；GAAP EPS 1.16 美元，non-GAAP EPS 1.41 美元 | Communications Networks and Cloud & AI Infrastructure 约 7.33 亿美元，约 36.9%；其他约 12.51 亿美元 | IMS 16.04 亿美元，毛利率约 8.9%；CPS 4.11 亿美元，毛利率约 11.5% | 稳定市场环境和执行改善，但未披露 B2B/booking。此时 AI 数据中心主线还没有通过 ZT 进入收入表 | AI 相关低于 FY2026，主要是网络、云和高端组件，非当前核心 |
+
+### 2.2 财报线索的交叉验证
+
+FY2026 Q2 的核心信息不是简单“收入翻倍”，而是三个信号同时出现：
+
+1. ZT Systems 收入 18.8 亿美元，高于计划，且部分 accelerated compute 出货从下半年提前到 Q2。
+2. 公司全年 FY2026 收入指引提升到 137-143 亿美元，non-GAAP EPS 指引 10.75-11.35 美元，说明 Q2 超额不是单季孤立事件。
+3. 下一代 accelerated compute 业务已出现新赢单、预生产出货和客户生产排期推进，说明 FY2027 的关键变量是这些项目从 pre-production 到 production 的转换率。
+
+但 Q3 FY2026 收入指引 32-35 亿美元低于 Q2 的 40.13 亿美元，说明该业务不是线性增长。AI rack 制造的收入确认受客户部署窗口、GPU/HBM 到货、液冷/电源/测试产能和客户验收影响，季度波动会非常大。
+
+## 3. 2026 最新指引、业务占比和产品拆解
+
+### 3.1 FY2026 指引和最新业务占比
+
+| 项目 | FY2026 Q2 已披露 / 指引 | 业务含义 |
+|---|---:|---|
+| FY2026 总收入 | 137-143 亿美元 | 以中点 140 亿美元计算，较 FY2025 的 81.28 亿美元约 +72% |
+| ZT Systems FY2026 收入 | 约 50-60 亿美元，管理层口径在 Q2 后偏向 50 亿美元以上 | ZT 是 2026 年最大增量，约占 FY2026 收入 36-43% |
+| Core Sanmina FY2026 收入 | 约 82-90 亿美元，视口径和季度资料而定 | 传统 Sanmina 仍在增长，FY2026 Q2 core +7.3% YoY |
+| FY2026 non-GAAP op margin | 6.3-6.6% | ZT mix 和组件短缺会压制毛利率，但规模和执行改善支撑经营利润率 |
+| FY2026 non-GAAP EPS | 10.75-11.35 美元 | 当前 forward P/E 约 22x |
+| FY2026 capex | 3-4 亿美元 | 主要服务未来 accelerated compute、power、liquid cooling、test cell 和产能扩张 |
+| FY2026 FCF | 大于 3.5 亿美元 | 对高增长制造商非常关键，说明营运资本尚未失控 |
+
+FY2026 Q2 最新收入结构显示：Communications Networks and Cloud & AI Infrastructure 已占 69.0%，ZT 单独占总收入约 46.9%。也就是说，Sanmina 的收入结构已经从多行业 EMS，转为以通信、云和 AI 基础设施为主要收入来源的制造平台。
+
+### 3.2 重点产品和业务
+
+| 重点业务 | 对应产品、系统和型号方向 | 当前收入贡献 | 增速和利润率判断 | 证据和交叉验证 |
+|---|---|---:|---|---|
+| ZT / accelerated compute 制造与整柜集成 | AI GPU/ASIC 服务器、rack-scale accelerated compute 系统、整柜集成、burn-in、test cell、液冷/电源集成、客户现场交付支持。具体平台可能对应 AMD Instinct 生态、OEM/hyperscale 下一代 accelerated compute，不等同于 Sanmina 自有型号 | FY2026 Q2 为 18.8 亿美元；FY2026 指引约 50-60 亿美元 | 收入高速增长；毛利率据公司称与 core Sanmina 大体一致，但整体 EMS 毛利率仍低，估计 gross margin 高个位数到低双位数，non-GAAP op margin 约 6% 附近 | ZT Q2 超预期；下一代 accelerated compute 有新赢单、预生产出货和生产排期；行业端 GB200/GB300、MI 系列、定制 ASIC rack 都需要整柜制造和测试 |
+| 通信网络、云和 AI 基础设施中的 optical/wireline/network 设备制造 | 光传输、交换/路由、800G/1.6T 网络设备相关 PCBA、背板、线缆、机箱、系统测试；不等同于光模块芯片或 DSP | FY2026 Q2 广义收入 27.71 亿美元；扣除 ZT 后，legacy comm/cloud 约 8.91 亿美元 | 扣除 ZT 后 FY2026 Q2 相比 FY2025 Q2 的约 7.33 亿美元，约 +21.5%；CPS 垂直件可带来高于 IMS 的毛利率 | 行业资料显示 2026 年 800G 进入主流，1.6T design-in/scale supply；网络/光互联是 AI 集群除 GPU/HBM 外的核心瓶颈 |
+| CPS 高端部件和垂直整合 | 高层 PCB、背板、线缆组件、精密机加、机箱、塑胶/金属结构件、存储产品、维修物流 | FY2026 Q2 CPS 4.61 亿美元，+12.2% YoY | CPS 毛利率约 11.6%，高于 IMS；AI 相关比例未披露，估算当前 CPS 中 25-40% 可能与通信、云、AI 或高可靠计算链条相关 | 整柜 AI 服务器需要高密度线缆、背板、结构件、热管理和测试，Sanmina 的垂直能力可降低供应链断点 |
+| Power、liquid cooling 和 test cell 能力扩张 | 不是 Sanmina 的独立品牌产品，而是整柜制造和验证能力：power integration、liquid cooling integration、测试单元、burn-in、质量追溯 | 独立收入未披露；体现在 ZT 和 IMS 项目中 | 贡献主要是提高中标率、交付能力和客户认证粘性，而不是单独销售高毛利器件 | 公司披露已投资 power、liquid cooling 和 test cell capacity；行业资料显示 GB200/GB300 rack 需要 120-155kW 级供电和直接液冷，整柜测试能力成为量产门槛 |
+| 42Q 制造软件、追溯和质量系统 | 云端制造执行、质量追溯、工厂数据系统 | 收入未披露，估计远小于硬件制造收入 | 小业务，但对高价值 AI rack 的质量追溯和良率管理有战略价值 | 对 hyperscale 客户，制造数据、可追溯性、返修闭环和质量体系会影响供应商认证 |
+
+### 3.3 可以跳过或低优先级跟踪的业务
+
+以下业务仍有现金流价值，但不是当前 SANM 投资主线：
+
+| 低优先级业务 | 原因 |
+|---|---|
+| 普通工业、医疗、汽车和传统防务项目 | FY2026 Q2 对应大类收入 12.42 亿美元，同比 -0.7%；稳定但缺少 AI 数据中心弹性 |
+| 普通 PCBA 和低复杂度机箱代工 | 竞争充分，客户转换成本低，难以支撑高估值 |
+| 传统维修物流 | 对客户粘性有用，但收入增速和估值弹性有限 |
+| 非 AI 存储和通用存储模块 | 可能受益于数据中心，但没有公开证据显示是 SANM 当前高速增长核心 |
+
+需要注意的小业务小产品：高层背板、高速线缆组件、液冷集成治具、test cell、rack-level power 集成、制造数据追溯。它们单独收入不一定大，但决定 Sanmina 是否能从“低毛利组装”升级为“高认证复杂系统制造”。
+
+## 4. 当前高增长和关键业务评分
+
+评分口径：1 为低，5 为高。供需紧张程度越高代表越乐观、越供不应求。垄断/溢价能力强调 Sanmina 自身能力，不代表整个产品链价值。
+
+| 关键业务 | 当前收入贡献 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | Sanmina 垄断/溢价能力 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| ZT / accelerated compute 制造与整柜集成 | FY2026 Q2 18.8 亿美元；FY2026 指引约 50-60 亿美元 | 极高，Q2 ZT 并表带动总收入 +102.3% | 5 | 5 | 4 | 3 | 最关键。Sanmina 是制造和集成平台，不是芯片 IP 方；溢价来自客户认证、产能、良率和准时交付 |
+| AI networking / optical / wireline 设备制造 | FY2026 Q2 扣除 ZT 后 legacy comm/cloud 约 8.91 亿美元 | 中高，约 +21.5% YoY 估算 | 5 | 4 | 4 | 2-3 | 800G/1.6T 和 AI cluster networking 是硬瓶颈，但 Sanmina 不拥有光模块核心器件，更多赚制造和系统集成的钱 |
+| CPS 高端部件：PCB、背板、线缆、结构件 | FY2026 Q2 CPS 4.61 亿美元；AI 相关部分未披露，估算 1.2-1.8 亿美元/季 | +12.2% YoY | 4 | 4 | 3-4 | 3 | 毛利率好于 IMS，是 Sanmina 改善利润率的重要杠杆，但 AI 纯度需要跟踪 |
+| Power / liquid cooling / test cell 集成能力 | 独立收入未披露，嵌入 ZT/IMS | 高，取决于整柜项目放量 | 5 | 5 | 5 | 3 | 这是产能门槛，不是单独可见收入。若客户认证通过，会显著提高替换成本 |
+| 42Q 和制造数据追溯 | 未披露，估计小于硬件业务一个数量级 | 中 | 3 | 3 | 2 | 2-3 | 小而重要。对 AI rack 的质量追溯、返修和良率闭环有战略意义，但短期不会决定收入 |
+
+## 5. 一年后收入贡献和业务属性情景预测
+
+预测窗口：约 2026-06-11 起未来 12 个月，近似 FY2027 上半年到 FY2027 Q2。由于公司不披露 backlog，本节是基于已披露 FY2026 指引、Q2 出货、预生产信号、行业供需和产能约束的情景推断。
+
+| 关键业务 | 基准情景：一年后收入贡献 | 乐观情景：一年后收入贡献 | 极度乐观情景：一年后收入贡献 | 关键假设 |
+|---|---:|---:|---:|---|
+| ZT / accelerated compute 制造与整柜集成 | 年化 56-62 亿美元，较 FY2026 ZT 指引中点约 +10-20% | 年化 68-78 亿美元，约 +33-52% | 年化 85-100 亿美元，约 +66-96% | 基准：Q2 前移出货正常化，新项目按计划爬坡。乐观：GB300/MI350/定制 ASIC rack 多客户转量产。极度乐观：客户部署窗口扩大，关键部件和液冷/电源产能释放，Sanmina 获得更高份额 |
+| AI networking / optical / wireline 设备制造 | 年化 36-40 亿美元 | 年化 43-50 亿美元 | 年化 52-62 亿美元 | 800G 继续放量，1.6T 进入设计导入和早期规模订单；Sanmina 承接更多网络设备制造和背板/线缆/机箱内容 |
+| CPS AI 相关高端部件 | 年化 6.5-9.0 亿美元 | 年化 10-13 亿美元 | 年化 15-20 亿美元 | 高层 PCB/背板/线缆/结构件跟随 AI rack 和网络设备放量，垂直整合率提升 |
+| Power / liquid cooling / test cell 能力 | 以中标率和产能利用体现，直接可识别收入 2-5 亿美元等效 | 5-10 亿美元等效 | 10-18 亿美元等效 | 这些能力未单独披露；估算为整柜项目中由 Sanmina 增加/保留的工程、测试和集成价值 |
+| 42Q / 质量追溯 / 服务 | 0.5-1.0 亿美元 | 1-2 亿美元 | 2.5 亿美元以上 | 若制造软件和追溯系统被更多 AI rack 客户绑定，可能提高粘性，但短期收入不大 |
+
+### 一年后属性评分
+
+| 业务 | 情景 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 一句话判断 |
+|---|---|---:|---:|---:|---:|---|
+| ZT / accelerated compute | 基准 | 5 | 5 | 4 | 3 | 维持核心制造商地位，但收入按部署节奏波动 |
+| ZT / accelerated compute | 乐观 | 5 | 5 | 5 | 3-4 | 多客户量产和认证沉淀，Sanmina 获得更高份额 |
+| ZT / accelerated compute | 极度乐观 | 5 | 5 | 5 | 4 | 成为 AMD/hyperscale 体系内关键整柜产能，客户替换成本显著提高 |
+| AI networking / optical | 基准 | 5 | 4 | 4 | 2-3 | 受益但仍是制造环节，核心器件利润在光模块/DSP/交换芯片方 |
+| AI networking / optical | 乐观 | 5 | 5 | 5 | 3 | 1.6T 和高密度网络系统放量，Sanmina 高复杂制造能力更有价值 |
+| CPS 高端部件 | 基准 | 4 | 4 | 3 | 3 | 改善 mix 和毛利率，但不是单独爆发点 |
+| CPS 高端部件 | 乐观/极度乐观 | 4-5 | 4-5 | 4 | 3-4 | 高层背板、线缆、结构件和测试成为整柜交付瓶颈，垂直整合价值上升 |
+
+## 6. BOM、每 MW/每 rack/每 GPU/每 optical port 内容量与价格传导
+
+### 6.1 Sanmina 能捕捉的价值边界
+
+Sanmina 的收入确认取决于客户合同：有些项目中客户供应 GPU/ASIC/HBM 等关键件，Sanmina 只确认制造、集成、测试和部分物料收入；有些项目中 Sanmina 采购更多 BOM，收入会更大但毛利率更薄。因此分析必须分为“系统总价值”和“Sanmina 可捕捉价值”。
+
+| 层级 | 系统总价值 | Sanmina 可捕捉价值 | 备注 |
+|---|---:|---:|---|
+| GPU/ASIC/HBM | AI rack 最大价值池 | 通常不是 Sanmina 的核心利润池 | Sanmina 不拥有 GPU、HBM、交换芯片 IP |
+| 主板、背板、线缆、机箱、结构件、散热件 | 中等价值池 | 中高相关 | Sanmina CPS 和 IMS 可参与制造、采购、集成 |
+| 电源、busbar、PDU、液冷 manifold/CDU/冷板 | 中高价值池，随 rack 功率上升显著增加 | 取决于客户 BOM 和 Sanmina 供应链角色 | Sanmina 披露投资 power、liquid cooling、test cell capacity，但未披露独立产品收入 |
+| 系统集成、burn-in、测试、质量追溯、现场支持 | 系统价值中占比不一定高，但决定量产良率和验收 | 高相关 | 这是 Sanmina 最可能形成客户粘性的部分 |
+
+### 6.2 每 MW、每 rack、每 GPU、每 optical port 内容量估算
+
+行业资料显示，GB200 NVL72 级机柜约 120kW，GB300 NVL72 级机柜 TDP 可到约 135kW、峰值约 155kW，约 90% 热量需要液冷带走。因此 1MW AI IT load 大约对应 6.5-8.3 个高功率 rack，约 470-600 个 GPU 等效位。
+
+| 单位 | AI 基建实物内容 | 系统总价值粗略区间 | Sanmina 直接/可捕捉内容 | 价格传导链 |
+|---|---|---:|---:|---|
+| 每 1MW AI IT load | 约 6.5-8.3 个 120-155kW rack；约 470-600 个 GPU 等效位；对应高密度网络、供电、液冷、测试和现场验收 | 约 4500-7000 万美元，主要由 GPU/HBM/CPU/交换芯片/光模块决定 | 基准 150-400 万美元/MW；乐观 400-800 万美元/MW；若 Sanmina 采购和确认更多 BOM，报表收入可更高但毛利率更低 | 芯片/光/电源/液冷供应商 -> OEM/云客户设计 -> Sanmina 制造集成测试 -> 客户验收 |
+| 每个 NVL72 级 rack | 72 GPU 等效位，120-155kW，包含 compute tray、switch tray、power shelf、busbar、液冷、线缆、测试 | 约 250-450 万美元以上，取决于 GPU/ASIC 与网络配置 | 直接制造和组件内容约 15-50 万美元/rack；若承担较多 BOM 采购，报表收入可达 150-350 万美元/rack | GPU/HBM 是最大成本；Sanmina 的利润来自制造费、复杂装配、测试、垂直件和供应链管理 |
+| 每 GPU 等效位 | 1 个 GPU/ASIC slot 对应主板、供电、线缆、散热、测试和 rack 集成份额 | GPU 本体和 HBM 可能占 7-12 万美元以上等效系统价值 | 直接内容约 2000-7000 美元/GPU；pass-through 报表收入可能 2-5 万美元/GPU | 若客户供料，Sanmina 收入低但风险低；若 Sanmina 采购，收入高但营运资本和毛利率压力大 |
+| 每 800G optical port | 光模块、交换机端口、线缆/背板/机箱/测试 | 2026 年高端 800G 模块 ASP 通常数百到约 1000 美元级，系统端口价值更高 | Sanmina 若制造交换/传输设备，内容约 20-100 美元/port；若含高端 PCBA/背板/系统测试，约 100-300 美元/port | 光模块/DSP/激光器利润在光器件公司；Sanmina 是设备制造、背板、线缆和测试环节 |
+| 每 1.6T optical port | 1.6T 模块 2026 处于 design-in/scale supply；行业资料估算 2026 ASP 约 1400-2200 美元 | 单 port 系统价值高于 800G | Sanmina 可捕捉约 100-350 美元/port，取决于是否参与交换机/传输系统制造 | 1.6T 若成为新 AI cluster 默认端口，Sanmina 的网络设备制造量随之放大，但不等同于光模块毛利 |
+
+### 6.3 当前产能、采纳和认证阶段
+
+| 业务 | 当前产能能力，美元计 | 被供应链采纳程度 | 认证/资格阶段 |
+|---|---:|---|---|
+| ZT / accelerated compute | FY2026 指引 50-60 亿美元收入能力；Q2 单季 18.8 亿美元显示峰值年化可超过 70 亿美元，但不能直接当成稳定产能 | 高。已通过 AMD/ZT 交易进入数据中心基础设施制造链，并披露 existing and new hyperscale and OEM customers 的下一代项目 | 已有项目量产；下一代项目处于赢单、预生产出货、客户生产排期最终确定阶段 |
+| Power / liquid cooling / test cell | 未披露独立产能；公司已完成增量投资以支持未来增长 | 中高。属于 accelerated compute 中标和量产的必要能力 | 客户项目级认证，不是公开通用认证。重点观察 liquid-cooled rack、test cell、burn-in 通过率 |
+| AI networking / optical 设备制造 | 扣除 ZT 的 legacy comm/cloud 年化约 32-36 亿美元 | 中高。Sanmina 长期服务通信网络和云基础设施客户 | 客户设计导入和产品级认证；800G 已主流，1.6T 处于新设计导入/规模前夜 |
+| CPS 高端部件 | CPS 年化约 18 亿美元；AI 相关部分估计 5-7 亿美元 run-rate | 中。取决于 Sanmina 能否把 CPS 垂直件嵌入 ZT/AI rack 与网络设备项目 | 高层 PCB、背板、线缆、机箱等为客户质量和可靠性认证 |
+
+## 7. 一年后产能、采纳和认证情景
+
+| 业务 | 情景 | 一年后产能能力，美元计 | 供应链采纳 | 认证阶段预测 |
+|---|---|---:|---|---|
+| ZT / accelerated compute | 基准 | 60-70 亿美元/年有效收入能力 | 维持 AMD/hyperscale/OEM 关键制造商地位 | 现有项目稳定量产；部分下一代项目转正式生产 |
+| ZT / accelerated compute | 乐观 | 80-95 亿美元/年 | 多客户生产排期落地，Sanmina 获得更多 rack-level share | GB300/MI350/定制 ASIC 相关项目进入更广泛量产认证 |
+| ZT / accelerated compute | 极度乐观 | 100-120 亿美元/年 | 成为少数可大规模交付液冷高功率 AI rack 的制造平台之一 | 多个客户项目完成量产资格，认证成为 12-24 个月转换壁垒 |
+| Power / liquid cooling / test cell | 基准 | 5-8 亿美元等效产能支撑 | 满足当前项目爬坡 | 通过关键客户项目认证，但未形成独立品牌溢价 |
+| Power / liquid cooling / test cell | 乐观 | 10-18 亿美元等效产能支撑 | 成为中标核心条件，带动更高 rack share | 液冷、功率、burn-in 和追溯能力通过多客户资格验证 |
+| AI networking / optical | 基准 | 40 亿美元左右年化收入能力 | 800G 项目稳定，1.6T 早期项目导入 | 800G 量产，1.6T 客户设计验证 |
+| AI networking / optical | 乐观 | 50-60 亿美元年化收入能力 | 1.6T 和高密度交换/传输设备制造份额提高 | 1.6T 进入早期规模量产，交换系统认证扩大 |
+| CPS 高端部件 | 基准 | AI 相关 8-10 亿美元/年 | 垂直件更多嵌入系统项目 | 高层 PCB、背板、线缆和结构件认证扩展 |
+| CPS 高端部件 | 极度乐观 | AI 相关 15-20 亿美元/年 | CPS 从辅助业务变成整柜毛利率改善杠杆 | 关键客户要求 Sanmina 垂直整合件以缩短交付周期 |
+
+## 8. 基于订单积压、供给和产能的未来一年业务增速预测
+
+### 8.1 Backlog 现实：没有可靠公开 backlog
+
+Sanmina 的公开文件强调 firm orders 通常只有 30-90 天，客户可取消或重排，因此传统 backlog 不能作为长周期收入保证。对 SANM 更有效的判断指标是：
+
+1. 管理层是否提高全年指引。
+2. ZT 当季收入是否持续超过或接近计划。
+3. 下一代 accelerated compute 项目是否从 pre-production 进入 production。
+4. component shortages 是否缓解。
+5. power、liquid cooling、test cell 产能是否继续扩张。
+6. 客户部署窗口是否从单一客户/单一平台扩展为多平台。
+
+### 8.2 未来一年收入增速情景
+
+| 情景 | 未来一年公司总收入预测 | 同比/相对 FY2026 指引中点增速 | ZT / accelerated compute 假设 | 供给和取消率假设 |
+|---|---:|---:|---|---|
+| 基准 | 145-158 亿美元 | 约 +4% 至 +13% | ZT 从 FY2026 的 50-60 亿美元提升到 56-62 亿美元；Q2 前移出货带来的高基数被后续项目爬坡部分抵消 | GPU/HBM/电源/液冷仍紧，但不恶化；客户重排存在，取消率低；收入更受交付窗口影响 |
+| 乐观 | 165-185 亿美元 | 约 +18% 至 +32% | 多个下一代 accelerated compute 项目转量产；网络/光互联和 CPS 同步扩张 | 关键部件供应改善，Sanmina test cell 和液冷产能释放；客户部署窗口扩大 |
+| 极度乐观 | 200-230 亿美元 | 约 +43% 至 +64% | ZT 年化 85-100 亿美元以上，Sanmina 成为多客户 AI rack 核心制造产能 | 供需仍供不应求但供应链瓶颈被 Sanmina/客户共同解决；取消率很低，主要问题是产能分配 |
+
+### 8.3 真实订单和供给的推断
+
+当前最可信的“订单证据”不是 backlog 数字，而是：
+
+| 证据 | 对未来收入的含义 | 风险 |
+|---|---|---|
+| Q2 ZT 收入 18.8 亿美元，显著高于原计划 | 说明客户需求和供货/交付执行强于初始预期 | 部分是从下半年提前，不可简单年化 |
+| FY2026 收入指引 137-143 亿美元，ZT 约 50-60 亿美元 | 说明管理层没有把 Q2 视为一次性异常 | 若客户部署时间推迟，FY2026 H2 季度节奏会波动 |
+| 下一代 accelerated compute 已赢单并出预生产 | FY2027 增长来自新平台生产排期 | pre-production 到 mass production 存在认证、良率和客户验收风险 |
+| 行业资料显示 AI rack power、liquid cooling、800G/1.6T、整柜集成都是 2026-2027 瓶颈 | Sanmina 的制造和测试能力有真实需求 | 瓶颈也可能限制收入确认，供不应求不等于马上确认收入 |
+
+## 9. 竞争格局、技术路线和替代风险
+
+### 9.1 主要竞争对手
+
+| 领域 | 竞争者 | 与 Sanmina 的竞争点 |
+|---|---|---|
+| 高复杂度 EMS | Jabil、Flex、Celestica、Benchmark、Plexus | 制造执行、客户认证、供应链管理、全球产能、利润率纪律 |
+| AI server / rack ODM 和整柜集成 | Quanta、Wiwynn、Inventec、Foxconn/FII、Wistron、Pegatron、Supermicro、Dell、HPE、Lenovo | AI rack 设计、制造、整柜交付、hyperscaler 关系和量产速度 |
+| 网络和光通信设备制造 | Celestica、Fabrinet、Jabil、Flex、Foxconn、TTM 等 | 高速 PCBA、背板、光/电测试、交换和传输设备制造 |
+| 电源和液冷系统 | Vertiv、Delta、Eaton、Schneider、CoolIT、Asetek、Boyd、Modine 等 | Sanmina 不是这些核心器件公司的直接替代，而是可能集成和验证其产品 |
+| 客户自建/内部制造 | 大型云厂商、OEM 自有制造或双供策略 | 客户可通过多家 ODM/EMS 分散风险，限制 Sanmina 长期溢价 |
+
+### 9.2 Sanmina 的技术路线是不是主流
+
+Sanmina 押注的不是某一个自有 SKU，而是行业主流方向本身：
+
+1. 从单台服务器交付转向整柜和 rack-scale 系统交付。
+2. 从风冷转向 direct liquid cooling 和更复杂热管理。
+3. 从传统 12V/48V 服务器电源转向更高功率密度的 rack-level power 架构。
+4. 从 400G/800G 网络转向 800G 主流和 1.6T 设计导入。
+5. 从客户现场集成转向工厂内预集成、burn-in、验收和质量追溯。
+
+这些方向是 AI 数据中心技术栈的主流，不是边缘路线。Sanmina 的风险在于它不控制最稀缺的芯片、HBM、DSP、激光器或电源模块核心技术，因此无法像核心器件供应商一样获得结构性高毛利。
+
+### 9.3 替代风险和客户替换成本
+
+| 业务 | 替代风险 | 客户替换成本 | 说明 |
+|---|---|---|---|
+| ZT / accelerated compute 整柜制造 | 中 | 中高 | 一旦进入量产客户认证、工艺、测试、供应链和质量追溯系统，短期替换成本高；但 12-24 个月维度客户可导入第二供应商 |
+| 网络/光通信设备制造 | 中高 | 中 | 高速网络设备需要认证，但行业制造商较多，客户通常会双供 |
+| CPS 高端背板/线缆/结构件 | 中 | 中 | 高速和高可靠产品替换不容易，但单件技术壁垒低于芯片和光器件 |
+| Power / liquid cooling integration | 中 | 中高 | 液冷泄漏、热循环、现场维护风险高，客户认证后不愿频繁切换；但核心 CDU/冷板/电源模块供应商另有其人 |
+| 42Q / 软件追溯 | 中 | 中 | 若深度嵌入客户质量系统，粘性上升；否则可被 MES/客户内部系统替代 |
+
+## 10. 投资结论和跟踪清单
+
+Sanmina 目前最像“AI 数据中心制造执行权”的股票，而不是“AI 核心器件定价权”的股票。它的强项是客户认证、复杂系统制造、整柜测试、供应链管理和快速爬坡；弱点是利润率低、客户集中、季度节奏块状、关键部件受制于人。
+
+### 10.1 结论
+
+| 维度 | 结论 |
+|---|---|
+| 收入弹性 | 很强。FY2026 指引中点 140 亿美元，相比 FY2025 约 +72%，ZT 是主驱动 |
+| 利润弹性 | 中等。non-GAAP op margin 6.3-6.6% 指引不错，但 GAAP 净利率仍薄 |
+| AI 纯度 | 已经显著提高。FY2026 Q2 ZT 单独占 46.9%，广义通信/云/AI 占 69.0% |
+| 护城河 | 中等偏强，来自客户认证和整柜量产能力，不来自芯片 IP |
+| 估值 | Trailing P/E 高，forward P/E 约 22x、forward P/S 约 0.95x。市场已经反映 AI 重估，但若 FY2027 ZT 继续增长，估值仍有解释空间 |
+| 最大风险 | Q2 出货前移导致后续季度波动；客户/平台集中；低毛利 pass-through；供应链瓶颈；竞争者导入 |
+
+### 10.2 未来 4 个季度必须跟踪的指标
+
+1. ZT 当季收入是否稳定在 10-15 亿美元以上，还是 Q2 后大幅回落。
+2. 下一代 accelerated compute 预生产项目是否明确转为 production revenue。
+3. FY2026/FY2027 指引中 ZT 收入区间是否上修。
+4. Non-GAAP op margin 能否维持或超过 6.5%，避免收入增长但利润率被稀释。
+5. 库存、应收和客户预付款是否健康，尤其是是否出现收入增长但 FCF 恶化。
+6. 公司是否继续披露 power、liquid cooling、test cell 扩产和利用率。
+7. Communications Networks and Cloud & AI Infrastructure 扣除 ZT 后是否仍保持双位数增长。
+8. CPS 毛利率是否维持在 11-13%，并通过高端背板、线缆、结构件提高垂直整合收益。
+
+## 资料来源
+
+### 公司公告和财务资料
+
+- Sanmina FY2026 Q2 earnings release, 2026-04-27: https://ir.sanmina.com/news/news-details/2026/Sanmina-Reports-Second-Quarter-Fiscal-2026-Financial-Results/default.aspx
+- Sanmina FY2026 Q2 earnings presentation: https://s201.q4cdn.com/209924174/files/doc_financials/2026/q2/SANM-Q2-Earnings-Presentation-FINAL-4_27_26.pdf
+- Sanmina FY2026 Q1 earnings release: https://www.prnewswire.com/news-releases/sanmina-reports-first-quarter-fiscal-2026-financial-results-302670309.html
+- Sanmina FY2025 Q4 earnings release: https://ir.sanmina.com/news/news-details/2025/Sanmina-Reports-Fourth-Quarter-and-Fiscal-2025-Financial-Results/default.aspx
+- Sanmina FY2025 Q3 earnings release: https://ir.sanmina.com/news/news-details/2025/Sanmina-Reports-Third-Quarter-Fiscal-2025-Financial-Results/default.aspx
+- Sanmina FY2025 Q2 earnings release: https://ir.sanmina.com/news/news-details/2025/Sanmina-Reports-Second-Quarter-Fiscal-2025-Financial-Results/default.aspx
+- Sanmina completes acquisition of ZT Systems manufacturing business: https://www.sanmina.com/press-releases/sanmina-completes-acquisition-of-zt-systems-manufacturing-business/
+- AMD completes acquisition of ZT Systems: https://www.amd.com/en/newsroom/press-releases/2025-3-31-amd-completes-acquisition-of-zt-systems.html
+- Sanmina FY2026 Q2 Form 10-Q: https://d18rn0p25nwr6d.cloudfront.net/CIK-0000897723/072a71f3-70e0-48c9-ad12-4eb0111d6d3d.pdf
+- Sanmina FY2025 Form 10-K: https://www.sec.gov/Archives/edgar/data/897723/000089772325000042/sanm-20250927.htm
+- Sanmina stock information page: https://ir.sanmina.com/stock-info/default.aspx
+
+### 项目内行业资料
+
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`

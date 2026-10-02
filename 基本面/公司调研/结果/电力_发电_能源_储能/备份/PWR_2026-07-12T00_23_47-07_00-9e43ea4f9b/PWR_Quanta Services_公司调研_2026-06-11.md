@@ -1,0 +1,418 @@
+# PWR Quanta Services 公司调研：AI 数据中心电力瓶颈下的工程执行平台
+
+报告日期：2026-06-11  
+公司：Quanta Services, Inc.  
+股票代码：PWR / NYSE  
+行业归属：公司调研/电力_发电_能源_储能  
+资料边界：本报告仅使用项目内 `行业调研/` 的 AI 园区电力、机电、冷却、数据中心建设规模与会议资料，并结合联网搜索的公司公告、财报、收购公告和公开行业资料；未读取 `特征量化/`、`日度资料/` 或正式公司调研目录下其他公司报告。
+
+## 0. 核心结论
+
+Quanta Services 是北美电力、可再生能源、地下公用事业、通信和大型负荷基础设施的专业工程、采购、施工、维护平台。投资人现在越来越把 PWR 当作“AI 数据中心和再工业化电力瓶颈的 picks-and-shovels 公司”：它不卖 GPU、光模块、PDU 或变压器，而是负责把电源、输电、变电、地下管线、园区内电气、机械、模块化预制和调试按期交付。AI 数据中心的核心约束从芯片供给扩散到“可上电 MW”后，PWR 的稀缺资源是大规模 craft-skilled workforce、长期 utility/hyperscaler 关系、复杂工程执行信用和并购整合后的端到端交付能力。
+
+截至 2026Q1，公司收入结构已经高度向电力和大负荷基础设施倾斜：Electric Infrastructure Solutions 收入 64.69 亿美元，占 82.1%，同比增长 30.8%；Underground and Infrastructure 收入 14.06 亿美元，占 17.9%，同比增长 9.1%。公司 2026Q1 总 backlog 达 484.71 亿美元，总 RPO 262.42 亿美元，均为高位；12 个月 backlog 282.33 亿美元，约等于 2026 年收入指引中点 349.5 亿美元的 81%，提供强可见度。
+
+最关键的增量不是传统油气管道或宽带施工，而是四组“AI 电力基础设施”业务：1) CEI/Tri-City 代表的园区内电气、低压系统、模块化电气房和数据中心电气施工；2) Dynamic Systems 代表的机械、管道、工艺系统、预制机械模块和液冷设施侧集成；3) 变电、输电、配电、500kV 线路和公用事业侧接入；4) NiSource 约 3GW 大负荷客户电源项目代表的发电+BESS+输电+变电+地下基础设施一体化平台。公司直接 AI/数据中心收入未披露，本文估计 2026 年直接数据中心/大负荷设施收入约 45-65 亿美元，约占公司 2026 年收入指引的 13-19%；若加入电网、变电和电源侧间接 AI 拉动，AI 相关和 AI 使能收入可能达到 90-130 亿美元，约占 26-37%。这是推算口径，不是公司披露口径。
+
+估值已经反映相当多的乐观预期。2026-06-11 行情快照显示 PWR 股价约 678.52 美元，市值约 1033 亿美元，静态 P/E 约 89.98 倍；按公司 2026 调整 EPS 指引中点 13.90 美元计算，forward adjusted P/E 约 48.8 倍；按 GAAP EPS 指引中点 9.52 美元计算，forward GAAP P/E 约 71.3 倍；按 TTM 收入 301.21 亿美元计算，P/S 约 3.43 倍。业务质量在改善，但这已不是低估值工程承包商，而是市场按“多年电力瓶颈复利平台”定价。
+
+## 1. 公司整体业务、投资者认知和产业链位置
+
+### 1.1 业务本质
+
+Quanta Services 是专业基础设施服务公司，业务包括设计、安装、维修、维护能源、通信和技术基础设施。公司客户包括电力公用事业、可再生能源开发商、数据中心和科技大客户、工业客户、通信公司、管道和能源客户。公司 2025 年起将报告分部简化为两块：
+
+| 分部 | 2026Q1 收入 | 2026Q1 占比 | 2026Q1 同比 | 2026Q1 分部经营利润率 | 主要内容 | AI/大负荷相关性 |
+|---|---:|---:|---:|---:|---|---|
+| Electric Infrastructure Solutions | 64.69 亿美元 | 82.1% | +30.8% | 8.7% | 输电、配电、变电、可再生能源、储能、园区内电气、数据中心电气、发电和电网侧 EPC | 最高。承担“从电子产生到输电到消费端”的电气链条 |
+| Underground and Infrastructure Solutions | 14.06 亿美元 | 17.9% | +9.1% | 7.5% | 地下公用事业、管道、通信、工业、机械、管道、工艺系统、Dynamic Systems 机械平台 | 中高。机械/工艺/液冷设施侧对 AI 数据中心重要，传统地下管线增长较低 |
+| 合计 | 78.75 亿美元 | 100.0% | +26.3% | 合并经营利润率 4.3% | 工程、采购、施工、维护、预制、调试 | 公司已成为大负荷基础设施执行层核心供应商 |
+
+PWR 不是标准设备公司，因此“产品型号”不应按芯片、PDU、UPS、变压器型号理解。其可投资产品是工程服务包和交付平台：高压输电/变电 EPC、园区内电气 EPC、模块化电气房/电源 skid、机械/管道/工艺模块、液冷设施侧集成、发电+BESS+微电网 EPC、可再生能源和储能 EPC、地下管线与通信基础设施。
+
+### 1.2 投资人眼中的公司
+
+2023 年以前，PWR 常被看作电力公用事业资本开支、可再生能源 EPC 和地下公用事业维修升级的长期受益者。2024 年以后，投资者叙事明显升级为：
+
+- 电网现代化和负荷增长的核心工程执行商：输电、配电、变电站、硬化、维护和风暴恢复需求持续增长。
+- AI 数据中心“可上电 MW”瓶颈的受益者：数据中心不只需要 GPU，还需要互联申请、变电、变压器、中压开关柜、UPS/BESS、发电、园区内电气、机械和调试。
+- 大负荷客户和 utility 之间的协同平台：公司在 2025Q3 宣布 NiSource 聘用 Quanta 为大负荷客户提供约 3GW 发电和相关基础设施的设计、采购和施工执行，范围包括发电、BESS、输电、变电和地下基础设施。
+- 并购驱动的能力拼图：2024 年 CEI 补园区内电气和数据中心电气；2025 年 Dynamic Systems 补机械、管道、工艺和模块化机械；2025Q4 Tri-City/Wilson/Billings 补低压/inside electrical、输电、航空施工等。
+
+### 1.3 最近 3 年重大业务变化、转型和收购
+
+| 时间 | 事件 | 金额/规模 | 业务意义 | 对 AI 数据中心的影响 |
+|---|---:|---:|---|---|
+| 2024-07 | 收购 Cupertino Electric, Inc. (CEI) | upfront 约 15.4 亿美元，另有最高 2.0 亿美元 earnout | CEI 是美国第六大电气解决方案商，约 4300 名员工；提供工程、采购、项目管理、施工、模块化服务；有 25 年以上服务全球科技和数据中心客户经验 | 直接增加数据中心园区内电气、低压电气、模块化电气系统和 renewable+BESS 能力；公司预计 CEI 2025 收入 23.25-24.25 亿美元、调整 EBITDA 1.75-1.95 亿美元 |
+| 2025-03 起 | 分部重组 | 两分部：Electric / Underground and Infrastructure | 把原电力、可再生能源、部分基础设施重新归入更能体现大负荷和电力基础设施的分部 | 让 Electric 成为公司核心增长和 backlog 承载分部 |
+| 2025-07 | 收购 Dynamic Systems | upfront 约 13.5 亿美元，另最高 2.16 亿美元 earnout | Dynamic Systems 是机械、管道、工艺基础设施商，约 2400 名员工；2026 年预计贡献收入 12.5-14.5 亿美元、调整 EBITDA 1.25-1.75 亿美元 | 补齐数据中心、半导体、医疗和工业大负荷设施的机械、预制、调试和 after-market 能力；对液冷设施侧和机械房/泵组/管道集成重要 |
+| 2025-10 | NiSource 大负荷客户约 3GW 项目 | 未披露订单金额；Q3 末 backlog 未含 meaningful contribution | Quanta 提供发电、BESS、输电、变电、地下基础设施的设计、采购和施工执行 | 标志公司从“建电网/建数据中心电气”走向“替大负荷客户协调电源+电网+园区基础设施” |
+| 2025Q4 | 收购 Tri-City、Wilson、Billings | upfront 合计约 17.3 亿美元，另最高 1 亿美元 contingent consideration；2026 年预计贡献 adjusted EPS 0.40-0.50 美元 | Tri-City 增强 load center inside electrical 和 custom fabrication；Wilson 增强高压输配电、变电、航空施工；Billings 增强直升机施工 | Tri-City 对数据中心/大负荷设施 inside electrical 和预制能力直接相关；Wilson 对西部输电约束和大负荷接入相关 |
+
+### 1.4 产业链位置
+
+在 AI 数据中心电力链条中，PWR 的位置在设备 OEM 和最终业主之间，是工程执行和系统交付层：
+
+```text
+GPU/服务器/网络需求
+  -> hyperscaler/AI cloud/数据中心开发商提出 IT load 和交付窗口
+  -> utility/IPP/能源开发商规划电源、输电、变电、互联
+  -> 设备 OEM：GE Vernova/Caterpillar/Wartsila/Bloom、Eaton/Schneider/Vertiv/Siemens/ABB/Powell/nVent 等
+  -> EPC/MEP/调试执行：Quanta、EMCOR、MYR、MasTec、Kiewit、Black & Veatch、Burns & McDonnell、Bechtel 等
+  -> 可上电 MW、可验收机房、可运营数据中心
+```
+
+项目内行业调研的判断是：2026 年 AI 数据中心最硬的交付门槛是“可上电 MW”，核心瓶颈排序通常为电力接入/变压器/开关设备 > HBM/CoWoS > 液冷集成 > MEP 劳动力/调试。PWR 正处在“电力接入、变电、MEP 劳动力、预制和调试”的交汇处，收入不如芯片公司毛利高，但交付确定性和 backlog 可见度更强。
+
+## 2. 最新估值、盈利质量和资产负债表
+
+### 2.1 估值与经营快照
+
+行情和估值日期：2026-06-11。股价、市值和静态 P/E 使用当日联网行情快照；forward P/E 和 P/S 为本文按公司指引和 TTM 财务数据计算。
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | 678.52 美元 | 2026-06-11，行情快照 | 当日约 +4.24% |
+| 市值 | 1033.12 亿美元 | 2026-06-11，行情快照 | 大型基础设施服务平台估值 |
+| 静态 P/E | 89.98x | 2026-06-11，行情快照 | 静态 GAAP 利润口径，受摊销和并购影响 |
+| Forward adjusted P/E | 48.8x | 2026 年公司 adjusted EPS 指引中点 13.90 美元 | 678.52 / 13.90 |
+| Forward GAAP P/E | 71.3x | 2026 年公司 GAAP EPS 指引中点 9.52 美元 | 678.52 / 9.52 |
+| P/S | 3.43x | 市值 / TTM 收入 301.21 亿美元 | 工程服务公司偏高估值 |
+| TTM 收入 | 301.21 亿美元 | 2025Q2-2026Q1 | 同比仍高双位数增长 |
+| 2026 收入指引 | 347.0-352.0 亿美元 | 2026Q1 上调后指引 | 中点 349.5 亿美元，同比 FY2025 +22.7% |
+| TTM 毛利率 | 15.10% | 2025Q2-2026Q1 | 工程服务属性，毛利率低但现金回收较好 |
+| TTM 净利率 | 3.67% | 2025Q2-2026Q1 GAAP net income attributable to common stock | 摊销、利息、并购成本压低 GAAP 利润率 |
+| 2026 调整 EBITDA 指引 | 34.91-36.50 亿美元 | 2026Q1 上调后指引 | 中点 35.71 亿美元，约 10.2% adjusted EBITDA margin |
+| 2026 自由现金流指引 | 15.5-20.5 亿美元 | 2026Q1 上调后指引 | capex 约 8 亿美元 |
+
+估值判断：市场给的是“电力基础设施长期稀缺平台”估值，而不是传统工程承包商估值。只要 backlog、分部利润率和现金流继续证明增长可持续，估值可以维持高位；但一旦数据中心电源项目延迟、并购整合毛利下滑、固定价项目成本超支或利率抬升，估值压缩弹性很大。
+
+### 2.2 资产负债表健康度
+
+| 指标 | 2026-03-31 | 解读 |
+|---|---:|---|
+| 现金及等价物 | 3.65 亿美元 | 现金余额不高，但公司依赖经营现金流、商业票据和信贷额度滚动 |
+| 总流动资产 | 106.53 亿美元 | 应收账款 75.98 亿美元、合同资产 16.10 亿美元，占用大，典型工程承包商结构 |
+| 总流动负债 | 93.84 亿美元 | 合同负债 38.40 亿美元，客户预收/工程进度款提供部分资金 |
+| 流动比率 | 1.14x | 不宽松，但可接受；需持续盯应收账款和项目结算 |
+| 长短期债务合计 | 58.92 亿美元 | current maturities 6.90 亿美元，长期债务 52.02 亿美元 |
+| 净债务 | 55.27 亿美元 | 净债务 / 2026 调整 EBITDA 指引中点约 1.55x |
+| 总资产 | 257.47 亿美元 | 并购扩张后资产规模快速上升 |
+| 商誉+无形资产 | 101.30 亿美元 | 占总资产 39.3%，并购整合和减值风险需要跟踪 |
+| 股东权益 | 90.45 亿美元 | 总负债/总资产约 64.5% |
+| 2026Q1 经营现金流 | 3.92 亿美元 | 同比 2.43 亿美元提升 |
+| 2026Q1 自由现金流 | 1.84 亿美元 | 同比 1.18 亿美元提升；全年 FCF 指引 15.5-20.5 亿美元 |
+
+财务健康度：中上。债务绝对额因 CEI、Dynamic Systems、Tri-City/Wilson/Billings 并购上升，但净债务/调整 EBITDA 约 1.55x，在工程服务公司中可控。主要风险不是偿债，而是营运资本和项目执行：应收账款、合同资产、固定价项目成本、并购无形资产摊销和商誉减值。公司 FY2026 指引给出 23.5-28.5 亿美元经营现金流和 15.5-20.5 亿美元 FCF，说明短期现金生成能力较好。
+
+## 3. 最近五次财报：收入、利润、订单、分部和 AI 数据中心推算
+
+公司不披露 AI 数据中心单独收入，也不披露 bookings、lead time、取消率。本文使用 RPO、backlog、12 个月 backlog、已披露项目和收购贡献进行交叉验证。AI 相关收入分三层：直接数据中心/大负荷设施、间接电网/电源使能、非 AI 或低相关。
+
+### 3.1 最近五个季度核心财务表
+
+单位：收入、RPO、backlog 为十亿美元；利润率为 GAAP/分部经营利润率。
+
+| 财报季度 | 合并收入 / YoY | 毛利率 / GAAP 净利率 | Electric 收入 / YoY / 分部利润率 | Underground & Infra 收入 / YoY / 分部利润率 | RPO | 总 backlog | 订单与交期信号 | AI 数据中心相关收入占比估计 |
+|---|---:|---:|---:|---:|---:|---:|---|---|
+| 2025Q1 | 6.23 / +23.9% | 13.38% / 2.31% | 4.94 / +26.4% / 8.3% | 1.29 / +15.0% / 6.0% | 17.65 | 35.25 | 总 backlog YoY +17.9%；12 个月 backlog 19.42；LADWP 500kV 线路升级进入 backlog/RPO，施工预计 2026 中至 2028 末 | 直接 8-12%；CEI 并表尚未满年，数据中心电气开始抬升 |
+| 2025Q2 | 6.77 / +21.1% | 14.88% / 3.38% | 5.46 / +21.6% / 10.1% | 1.31 / +18.7% / 6.9% | 19.16 | 35.84 | 总 backlog 35.84；Boardman-to-Hemingway 300 英里、500kV、1000MW 双向输电项目进入 Electric backlog/RPO，2027 末投运、2028 末完成 | 直接 9-13%；Dynamic Systems 公告但 Q2 未贡献 |
+| 2025Q3 | 7.63 / +17.5% | 15.94% / 4.45% | 6.17 / +17.9% / 11.4% | 1.46 / +15.9% / 8.4% | 20.97 | 39.17 | 总 backlog 39.17；NiSource 约 3GW 大负荷客户发电和电网基础设施项目公布，但季末 backlog 尚未含 meaningful contribution，预计多季度确认 | 直接 11-16%；DSI 并表，机械/工艺平台进入 Underground |
+| 2025Q4 | 7.84 / +19.7% | 15.52% / 4.02% | 6.43 / +19.4% / 10.8% | 1.41 / +20.6% / 7.7% | 23.76 | 43.98 | 年末 backlog 43.98 创高；Electric RPO/backlog 创高；Q4 收购 Tri-City/Wilson/Billings，2026 EPS 贡献 0.40-0.50 美元 | 直接 12-17%；Tri-City load center inside electrical 从 2026 起贡献 |
+| 2026Q1 | 7.87 / +26.3% | 14.06% / 2.80% | 6.47 / +30.8% / 8.7% | 1.41 / +9.1% / 7.5% | 26.24 | 48.47 | 总 backlog YoY +37.5%；RPO YoY +48.7%；12 个月 backlog 28.23，相当于 2026 收入指引中点 80.8%；管理层上调几乎全部 2026 指引 | 直接 13-18%；若含电网/电源侧使能，约 26-37% |
+
+### 3.2 Backlog、RPO 和交付窗口
+
+| 指标 | 2025Q1 | 2025Q2 | 2025Q3 | 2025Q4 | 2026Q1 | 含义 |
+|---|---:|---:|---:|---:|---:|---|
+| Total RPO | 176.50 亿美元 | 191.61 亿美元 | 209.73 亿美元 | 237.63 亿美元 | 262.42 亿美元 | 确定性更高的合同义务，YoY +48.7% |
+| Total backlog | 352.52 亿美元 | 358.45 亿美元 | 391.74 亿美元 | 439.76 亿美元 | 484.71 亿美元 | RPO + MSA/短周期估计订单，YoY +37.5% |
+| 12 个月 backlog | 194.20 亿美元 | 200.48 亿美元 | 223.10 亿美元 | 258.66 亿美元 | 282.33 亿美元 | 相当于 2026 指引中点 80.8%，收入可见度高 |
+| Electric total backlog | 296.97 亿美元 | 302.83 亿美元 | 326.44 亿美元 | 361.67 亿美元 | 401.06 亿美元 | Q1 YoY +35.1%，公司主要订单池 |
+| Underground total backlog | 55.54 亿美元 | 55.61 亿美元 | 65.30 亿美元 | 78.10 亿美元 | 83.65 亿美元 | Q1 YoY +50.6%，DSI 和机械平台改善 |
+| 隐含交付期 | 总 backlog / Q1 annualized revenue 约 1.54 年 | - | - | - | - | 工程执行窗口大约 12-24 个月，部分输电/发电项目更长 |
+| 取消率 | 未披露 | 未披露 | 未披露 | 未披露 | 未披露 | RPO 高增和 backlog 连续创新高没有显示大规模取消；但数据中心自备电源项目行业层面存在 30-50% 延迟/重排风险，不等于合同取消 |
+
+结论：PWR 的订单质量正在从短周期公用事业维护转向更多大型、多年、大负荷项目。风险在于交付节奏和审批，而不是需求突然消失。公司 backlog 中的 MSA 和短周期估计订单不如 RPO 确定；NiSource 3GW 项目在公告时尚未对 backlog 有 meaningful contribution，说明后续 backlog 仍有补录空间，但也说明收入确认取决于 NTP、许可、设备和客户节奏。
+
+## 4. 2026 最新指引、业务收入占比和重点业务
+
+### 4.1 2026 指引
+
+Quanta 在 2026Q1 上调几乎全部全年预期。
+
+| 指引项目 | 2026 指引 | 中点 | 与 FY2025 比较 |
+|---|---:|---:|---:|
+| 收入 | 347.0-352.0 亿美元 | 349.5 亿美元 | FY2025 284.8 亿美元，+22.7% |
+| GAAP 净利润 | 13.95-15.02 亿美元 | 14.48 亿美元 | FY2025 10.28 亿美元，+40.8% |
+| GAAP EPS | 9.17-9.87 美元 | 9.52 美元 | FY2025 6.80 美元，+40.0% |
+| 调整 EPS | 13.55-14.25 美元 | 13.90 美元 | FY2025 10.75 美元，+29.3% |
+| EBITDA | 32.01-33.60 亿美元 | 32.81 亿美元 | FY2025 未在表中重算；继续双位数增长 |
+| 调整 EBITDA | 34.91-36.50 亿美元 | 35.71 亿美元 | FY2025 28.8 亿美元，约 +24% |
+| 经营现金流 | 23.5-28.5 亿美元 | 26.0 亿美元 | FY2025 22.3 亿美元，+16.6% |
+| 自由现金流 | 15.5-20.5 亿美元 | 18.0 亿美元 | FY2025 16.7 亿美元，+7.8% |
+
+### 4.2 2026 收入占比和增长推算
+
+公司没有披露全年分部指引。按 2026Q1 实际收入占比、2025 全年分部结构和 backlog 结构推算：
+
+| 业务层 | 2026 收入估计 | 占 2026 指引中点 | 增速判断 | 依据 |
+|---|---:|---:|---|---|
+| Electric Infrastructure Solutions | 285-292 亿美元 | 81.5-83.5% | +24-27% | Q1 Electric +30.8%；Electric backlog 401.06 亿美元，12 个月 backlog 238.90 亿美元 |
+| Underground and Infrastructure | 57-64 亿美元 | 16.5-18.5% | +4-16% | Q1 +9.1%；DSI 年化贡献从 2026 体现，但传统地下/通信/管道低增速拖累 |
+| 直接 AI/数据中心/大负荷设施 | 45-65 亿美元 | 13-19% | +35-60% | CEI 2025 收入 23.25-24.25 亿美元；DSI 2026 收入贡献 12.5-14.5 亿美元；Tri-City load center；NiSource/大负荷项目开始贡献 |
+| 间接 AI 使能电网/电源 | 45-65 亿美元 | 13-19% | +15-35% | 输电、变电、发电+BESS、utility 大客户项目受数据中心和工业负荷共同驱动 |
+| 传统/低 AI 相关业务 | 220-250 亿美元 | 63-71% | +8-18% | 公用事业常规维护、配电、可再生能源、地下公用事业、通信、管道等 |
+
+最突出的业务是 Electric segment，尤其是数据中心电气、低压/inside electrical、custom fabrication、输电/变电和大负荷电源平台。Underground segment 的增量亮点不是传统地下管道，而是 Dynamic Systems 带来的机械、工艺、预制和调试能力。
+
+### 4.3 可跳过或低优先级业务
+
+以下业务仍贡献收入和现金流，但对 AI 基建高增长主线不是重点：
+
+| 低优先级业务 | 原因 | 仍需关注的风险 |
+|---|---|---|
+| 传统油气管道和部分能源管线维护 | 与 AI 数据中心直接相关性低，增长更多跟能源周期和监管有关 | 固定价项目、环境许可、客户资本开支 |
+| 普通通信/宽带外线施工 | AI 主题相关性低于园区电力、数据中心 MEP 和电源侧 | 宽带补贴节奏和运营商 capex 波动 |
+| 常规地下公用事业维修 | 基础现金流业务，但不是估值重估核心 | 劳动力、天气、地方政府预算 |
+| 非数据中心商业电气 | CEI/Tri-City 有商业业务，但增长弹性低于 hyperscale/large-load | 商业地产周期 |
+| 不绑定大负荷客户的普通可再生 EPC | 仍受益能源转型，但项目毛利和时间表受税收政策、利率和并网影响 | 政策、税收抵免、并网排队 |
+
+### 4.4 重点和潜在小业务
+
+不能漏掉的小业务和能力包括：
+
+- 模块化电气系统/custom electrical fabrication：CEI 和 Tri-City 的定制电气房、低压模块、预制 skid 能缩短数据中心交付时间，毛利可能高于普通现场施工。
+- 模块化机械系统/custom modular mechanical systems：DSI 的机械房、管道 skid、泵组、预制管廊、工艺系统，直接对应液冷设施侧和高密度机房。
+- Commissioning/FAT/SAT/after-market：在 AI 数据中心从“建成”到“可上电、可验收、可运营”的阶段，调试和后市场服务稀缺，毛利高于普通安装。
+- Utility-technology-consumer interface：PWR 同时服务 utility、发电方和大负荷客户，有机会成为“电源方案协调方”，而不只是施工承包商。
+- 航空施工和高压输电专业能力：Wilson/Billings 补高压线路和山区/西部输电施工能力，在大负荷接入和电网硬化中有价值。
+
+## 5. 高增长和关键业务：当前收入贡献、增长、AI 重要性和定价权
+
+评分：1 低，5 高。收入贡献为本文估计，非公司披露。
+
+| 关键业务 | 2026 当前收入贡献估计 | 收入增速估计 | AI 基建重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 | 依据和解释 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 数据中心园区内电气、低压系统、模块化电气房/电源 skid（CEI + Tri-City） | 22-32 亿美元 | +35-55% | 5 | 5 | 5 | 4 | CEI 2025 收入指引 23.25-24.25 亿美元，且 25 年以上服务全球科技/数据中心；Tri-City 直接扩展 load center critical-path inside electrical。PWR 不垄断，但规模化电气工人和预制能力稀缺 |
+| 数据中心机械、管道、工艺、液冷设施侧集成（Dynamic Systems） | 8-13 亿美元 | +25-50% | 4 | 5 | 4 | 3 | DSI 2026 收入贡献指引 12.5-14.5 亿美元；其中数据中心/半导体/技术负荷是核心增量。毛利可能高于传统地下业务，但竞争包括 EMCOR、Comfort Systems、Kiewit 等 |
+| 输电、变电、配电和公用事业接入 | 120-150 亿美元，其中 AI/大负荷使能 30-50 亿美元 | +15-30% | 5 | 5 | 5 | 4 | Electric backlog 401.06 亿美元；Boardman-to-Hemingway 500kV、LADWP 500kV 等项目说明高压输电需求。数据中心真正瓶颈是可接入电力 |
+| 大负荷发电+BESS+微电网 EPC 和协调平台 | 5-15 亿美元，2026 开始爬坡 | +50-150% | 5 | 5 | 4 | 3 | NiSource 约 3GW 项目范围含发电、BESS、输电、变电、地下基础设施；Q3 backlog 尚未含 meaningful contribution，后续订单弹性大。PWR 是集成商，硬件利润主要在 OEM |
+| 可再生能源+BESS EPC（Blattner/CEI） | 45-65 亿美元，其中 AI 绑定部分 10-20 亿美元 | +5-20% | 3 | 3 | 3 | 3 | 数据中心 PPA、储能和绿色电力需求支撑，但并网、政策、利率和项目回报影响明显；不是最紧迫瓶颈 |
+| Commissioning、FAT/SAT、后市场维护和数字施工 | 5-10 亿美元隐含在各分部 | +20-40% | 4 | 5 | 4 | 4 | 不单独披露，但 AI 数据中心验收和上电窗口对调试高度依赖；毛利通常高于普通安装 |
+
+## 6. 一年后关键业务三情景收入预测
+
+预测窗口：2027 年中附近的未来 12 个月运行率。基准情景假设 2026 指引中点基本实现，AI 数据中心建设正常推进；乐观情景假设 backlog 转化顺利、NiSource/大负荷平台更快进入收入；极度乐观情景假设电力瓶颈导致 PWR 获得更大 turnkey scope 和更高定价。
+
+| 关键业务 | 情景 | 一年后收入贡献 | 收入增速 | AI 重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 | 关键假设 |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| 数据中心电气/低压/模块化电气 | 基准 | 32-40 亿美元 | +25-35% | 5 | 5 | 5 | 4 | CEI 满年化，Tri-City 稳定贡献，供电瓶颈带来更多 inside electrical 和预制订单 |
+| 数据中心电气/低压/模块化电气 | 乐观 | 40-52 亿美元 | +40-60% | 5 | 5 | 5 | 4 | Hyperscaler 扩建加速，PWR 获得更大 campus 电气包，预制产能扩张 |
+| 数据中心电气/低压/模块化电气 | 极度乐观 | 52-70 亿美元 | +60-90% | 5 | 5 | 5 | 5 | 多个 100MW+ campus 同时 NTP，设备短缺使工程执行和预制产能出现溢价 |
+| 机械/管道/液冷设施侧集成 | 基准 | 13-17 亿美元 | +20-35% | 4 | 5 | 4 | 3 | DSI 达到 2026 指引并继续增长，高密度机房推动暖水环路/泵组/管道需求 |
+| 机械/管道/液冷设施侧集成 | 乐观 | 17-23 亿美元 | +40-65% | 5 | 5 | 5 | 4 | 液冷部署从试点转向标准化，DSI 获得更多 prefabricated mechanical scope |
+| 机械/管道/液冷设施侧集成 | 极度乐观 | 23-32 亿美元 | +70-110% | 5 | 5 | 5 | 4 | 150-250kW/rack 加速，现场 MEP 工人短缺，业主愿意为模块化和调试确定性付溢价 |
+| 输电/变电/公用事业接入 | 基准 | 145-165 亿美元，其中 AI/大负荷 45-65 亿美元 | +12-20% | 5 | 5 | 5 | 4 | Electric backlog 正常转化，500kV/变电项目按计划推进 |
+| 输电/变电/公用事业接入 | 乐观 | 165-190 亿美元，其中 AI/大负荷 65-90 亿美元 | +20-32% | 5 | 5 | 5 | 4 | Utility 与大负荷客户通过专线/变电扩建加速解决 interconnection |
+| 输电/变电/公用事业接入 | 极度乐观 | 190-225 亿美元，其中 AI/大负荷 90-120 亿美元 | +32-50% | 5 | 5 | 5 | 5 | 电网接入成为最大 bottleneck，Quanta 因劳动力、航空施工和高压经验获得稀缺溢价 |
+| 发电+BESS+微电网 EPC | 基准 | 12-22 亿美元 | +60-120% | 5 | 5 | 4 | 3 | NiSource 3GW 项目开始多季度确认，更多 behind-the-meter gas+BESS 项目进入前期工程 |
+| 发电+BESS+微电网 EPC | 乐观 | 22-38 亿美元 | +120-220% | 5 | 5 | 5 | 4 | 大负荷客户不等电网扩容，采用自备发电和 BESS；PWR 获得集成 scope |
+| 发电+BESS+微电网 EPC | 极度乐观 | 38-60 亿美元 | +220%+ | 5 | 5 | 5 | 4 | 多个 1GW+ 数据中心电源项目 NTP，PWR 成为 utility/IPP/AI 客户的 preferred integrator |
+| 可再生+BESS EPC | 基准 | 50-70 亿美元 | +5-12% | 3 | 3 | 3 | 3 | 常规能源转型和数据中心 PPA 正常推进 |
+| 可再生+BESS EPC | 乐观 | 70-90 亿美元 | +15-30% | 3 | 4 | 4 | 3 | 数据中心 PPA+储能加速，CEI 中型项目与 Blattner 大型项目交叉销售 |
+| 可再生+BESS EPC | 极度乐观 | 90-120 亿美元 | +35-60% | 4 | 4 | 4 | 4 | 政策、并网和利率均改善，储能和太阳能成为数据中心供电组合核心部分 |
+
+公司整体未来一年收入增速预测：
+
+| 情景 | 未来一年公司收入运行率 | 对 2026 指引中点增长 | 关键条件 |
+|---|---:|---:|---|
+| 基准 | 390-410 亿美元 | +12-17% | 现有 12 个月 backlog 顺利转化，Electric 继续双位数增长，DSI/CEI/Tri-City 正常整合 |
+| 乐观 | 420-455 亿美元 | +20-30% | AI 数据中心电气、机械和电源项目加速，NiSource 类项目进入 backlog 和收入 |
+| 极度乐观 | 470-520 亿美元 | +34-49% | 多个 100MW-1GW 级园区同时开工，客户为交付确定性付出高价，PWR 扩张劳动力和预制能力无明显瓶颈 |
+
+## 7. BOM、每 MW / 每 rack / 每 GPU / 每 optical port 内容量与价格传导
+
+### 7.1 PWR 的“真实内容量”定义
+
+PWR 不提供 GPU、光模块、交换机、PDU、UPS、变压器或发电机组的标准产品，因此不能按硬件 BOM 的“物料内容量”评估。它的真实内容量是：工程设计、项目管理、采购协调、现场施工、预制、吊装、接线、管道安装、FAT/SAT、调试、后市场服务和风险承接。硬件价值主要流向 GE Vernova、Caterpillar、Wartsila、Bloom、Eaton、Schneider、Vertiv、Siemens、ABB、Powell、nVent/Starline、Trane、Carrier、Johnson Controls 等供应商。
+
+### 7.2 每 100MW AI 数据中心设施侧 BOM 与 PWR 可捕获额
+
+项目内行业调研给出的 100MW IT load 电力设施侧 BOM 区间：
+
+| BOM 模块 | 100MW IT load 总价值 | PWR 可捕获内容 | PWR 可捕获额估计 | 毛利/利润特征 |
+|---|---:|---|---:|---|
+| 高压互联、switchyard、GIS/AIS | 1500-4500 万美元 | 土建、电气安装、接线、测试、utility interface、项目管理 | 300-1500 万美元 | 工程服务毛利低中位数到十几，项目复杂度高可更高 |
+| 主变压器和大型电气设备安装 | 1200-3500 万美元 | 基础、吊装、接线、保护控制、测试、调试 | 200-1000 万美元 | 设备利润属于 OEM，PWR 赚安装和调试 |
+| 中压开关柜/eHouse/电气房 | 1500-4000 万美元 | eHouse 集成、预制、现场安装、FAT/SAT、commissioning | 600-2000 万美元 | 预制和调试毛利高于普通施工 |
+| UPS/ATS/busway/PDU/低压配电 | 3500-9000 万美元 | 低压电气施工、busway/PDU 安装、线缆、接地、测试 | 1000-3500 万美元 | CEI/Tri-City 核心区域，供需紧张时有定价权 |
+| BESS/发电/微电网 | 1000-8000 万美元+ | EPC、土建、电气、控制、并网、BESS/genset/turbine interface | 500-2500 万美元，若 turnkey scope 更大可更高 | 项目管理和集成复杂，风险和利润同时上升 |
+| 线缆、接地、消防、漏液检测相关设施 | 800-2500 万美元 | 安装、测试、文档、验收 | 300-1200 万美元 | 劳动力密集 |
+| 工程、FAT/SAT、调试、commissioning | 1500-4500 万美元 | Quanta/CEI/DSI 直接服务 | 800-3000 万美元 | 稀缺环节，毛利可高于普通安装 |
+
+综合测算：对一个 100MW AI 数据中心，PWR 在园区电气、变电接入、机械管道和调试中可捕获约 0.8-2.2 亿美元，即 0.8-2.2 百万美元/MW IT。如果 PWR 同时承担发电+BESS+微电网和更大 procurement/turnkey scope，可捕获额可能升至 1.5-4.0 百万美元/MW IT，但项目风险也同步上升。
+
+### 7.3 每 rack / 每 GPU / 每 optical port 内容量
+
+| 口径 | 行业假设 | PWR 内容量估计 | 解释 |
+|---|---:|---:|---|
+| 每 MW IT | 设施侧电力+MEP+BESS/generation 总价值约 1.5-3.5 百万美元/MW，不含极端自备电源可更高 | 基准 0.8-2.2 百万美元/MW；含自备发电和更大 scope 1.5-4.0 百万美元/MW | PWR 捕获工程、安装、预制、调试，不捕获大部分硬件毛利 |
+| 每 rack | 2026 AI rack 60-160kW，2027 80-180kW；100MW 约 625-1667 rack | 电气/机械/调试 8-25 万美元/rack；含发电和复杂液冷设施可达 15-45 万美元/rack | rack 密度越高，单位 rack 的电力和液冷设施价值越高 |
+| 每 GPU | 以 1.4-2.0kW/GPU 估计，100MW 可支撑约 5-7 万颗 GPU | 约 1500-7000 美元/GPU 的设施侧工程内容量 | 不是 GPU BOM，而是把设施工程按 GPU 分摊 |
+| 每 optical port | 光口价值在交换机、光模块、光纤布线和网络系统 | PWR 直接 optical port 内容量约 0；若按机房供电/冷却分摊，可忽略或仅几十美元/port | PWR 不是光通信供应商；不要把 PWR 写成光模块或网络设备公司 |
+
+### 7.4 价格传导链
+
+```text
+hyperscaler/AI cloud/数据中心开发商预算
+  -> utility/IPP/large-load customer 合同、PPA、发电和并网方案
+  -> 主设备 OEM 报价：发电机/燃机/燃料电池、变压器、开关柜、UPS、PDU、busway、BESS、冷机/CDU/泵
+  -> EPC/MEP 报价：Quanta/CEI/DSI/Tri-City 等按工程 scope、schedule、labor、risk premium 报价
+  -> subcontractor/craft labor、材料、线缆、钢构、土建、运输
+  -> 验收、commissioning、change order、后市场维护
+```
+
+PWR 的价格弹性主要来自：工期确定性、劳动力稀缺、预制和模块化交付能力、utility/大客户协同能力、固定价项目风险补偿。PWR 对变压器、开关柜、UPS、发电机等硬件没有垄断，硬件涨价可通过合同传导但不一定转化为同等利润。
+
+## 8. 当前产能能力、供应链采纳和认证阶段
+
+### 8.1 当前能力
+
+| 业务 | 当前产能能力（美元计） | 供应链采纳程度 | 认证/阶段 | 证据 |
+|---|---:|---|---|---|
+| Electric Infrastructure Solutions | 2026Q1 年化收入约 258.7 亿美元；12 个月 backlog 238.90 亿美元；total backlog 401.06 亿美元 | 极高。长期 utility、renewables、technology customer 关系；CEI/ Tri-City/Wilson 增强平台 | 以项目资质、utility approved contractor、业主供应商名单、NTP、FAT/SAT、commissioning 为主，没有单一产品认证 | Q1 Electric 收入 +30.8%；Electric backlog 创高 |
+| 数据中心电气/低压/模块化 | 2026 直接收入估计 22-32 亿美元 | 高。CEI 服务全球科技和数据中心客户 25 年以上，安装超过 2000 万平方英尺数据中心电气系统 | 项目级业主资格、UL/NEC/NFPA 等由设备和施工规范共同约束；eHouse/模块需 FAT/SAT | CEI 公告披露数据中心经验、模块化电气系统能力 |
+| Dynamic Systems 机械/工艺 | 公司预计 2026 DSI 收入 12.5-14.5 亿美元 | 中高。约 80% repeat customers，暴露于 technology、semiconductor、healthcare、load center | 项目级 mechanical/plumbing/process 资质，压力管道、焊接、洁净/工艺、commissioning 等 | DSI 官方收购公告 |
+| 发电+BESS+微电网 EPC | 当前收入尚在爬坡，已公告 NiSource 约 3GW 项目 | 中高但仍早期。客户已委托，但 Q3 末 backlog 未含 meaningful contribution | 项目需 NTP、发电许可、气源/并网、环境许可、BESS 安规、utility interconnection | NiSource 项目公告范围含发电、BESS、输电、变电、地下基础设施 |
+| 输电/变电高压项目 | 多个 500kV 项目进入 backlog/RPO | 极高。PWR 是北美高压输电/变电核心承包商之一 | utility 预审、线路许可、环境许可、NERC/电气规范、项目 NTP | Boardman-to-Hemingway 300 英里 500kV、LADWP 500kV |
+
+### 8.2 一年后产能和采纳三情景
+
+| 业务 | 情景 | 一年后产能能力（美元计） | 供应链采纳 | 认证/项目阶段 |
+|---|---|---:|---|---|
+| 数据中心电气/模块化 | 基准 | 35-45 亿美元年收入能力 | 被 hyperscaler/technology customer 持续采用 | 更多项目通过 design、procurement、FAT、site install、commissioning |
+| 数据中心电气/模块化 | 乐观 | 45-60 亿美元 | 成为多个 100MW+ campus preferred electrical partner | 模块化电气房/eHouse 标准化，FAT/SAT 周期缩短 |
+| 数据中心电气/模块化 | 极度乐观 | 60-80 亿美元 | 供不应求，客户提前锁定 craft labor 和 fabrication slot | 预制产能成为“准设备化”交付瓶颈 |
+| 机械/液冷设施侧 | 基准 | 16-20 亿美元 | DSI 在技术和半导体客户中交叉销售 | 机械模块、泵组、管道 skid 项目级认证推进 |
+| 机械/液冷设施侧 | 乐观 | 22-30 亿美元 | 直接液冷 facility loop 标准化，PWR 获更多 MEP scope | 高密度液冷 commissioning 形成可复制流程 |
+| 机械/液冷设施侧 | 极度乐观 | 30-40 亿美元 | 机械预制和调试能力供不应求 | 液冷设施侧 FAT/commissioning 成为关键里程碑 |
+| 发电+BESS+微电网 | 基准 | 15-25 亿美元 | NiSource 类项目进入收入，更多客户前期设计 | NTP、许可、气源、并网、设备 PO 逐步落地 |
+| 发电+BESS+微电网 | 乐观 | 30-45 亿美元 | 多个 behind-the-meter 项目采纳 | 项目从 FEED/early works 进入 EPC |
+| 发电+BESS+微电网 | 极度乐观 | 50-70 亿美元 | AI 园区自备电源成为主线方案之一 | 关键燃机/发电机组/BESS 交付窗口锁定，Quanta 参与多站点集成 |
+| 输电/变电 | 基准 | 160-180 亿美元 | utility 项目和大负荷接入稳定增长 | 500kV/变电项目持续 NTP |
+| 输电/变电 | 乐观 | 185-210 亿美元 | 大负荷客户推动 utility 加速投资 | interconnection 和输电许可改善 |
+| 输电/变电 | 极度乐观 | 220-250 亿美元 | 高压施工、航空施工、变电专业队伍显著紧张 | 关键州/区域电网扩建获得政策和客户资金支持 |
+
+## 9. 基于订单积压和供给的未来一年业务增速预测
+
+### 9.1 Backlog 对收入的约束
+
+截至 2026Q1：
+
+- 总 backlog 484.71 亿美元，相当于 2026 收入指引中点 1.39 倍。
+- 12 个月 backlog 282.33 亿美元，相当于 2026 收入指引中点 80.8%。
+- Electric 12 个月 backlog 238.90 亿美元，相当于 Electric 估计 2026 收入 285-292 亿美元的 82-84%。
+- Underground 12 个月 backlog 43.42 亿美元，相当于 Underground 估计 2026 收入 57-64 亿美元的 68-76%。
+
+这意味着 2026-2027 增长的主要限制是执行能力、设备交期、许可和客户 NTP，而不是没有需求。工程公司最大的“产能”不是厂房，而是合格劳动力、项目经理、调试队伍、供应链协调能力和客户信任。
+
+### 9.2 高增长业务增速表
+
+| 业务 | 当前真实订单和供给信号 | 基准增速 | 乐观增速 | 极度乐观增速 | 关键取消/延迟风险 |
+|---|---|---:|---:|---:|---|
+| 数据中心电气/模块化 | CEI 2025 收入 23.25-24.25 亿美元；Tri-City 2026 贡献进入 Electric；Electric backlog 创高 | +25-35% | +40-60% | +60-90% | 客户 campus 延迟、设备 OEM 交期、现场劳动力、固定价 scope creep |
+| 机械/液冷设施侧 | DSI 2026 收入贡献 12.5-14.5 亿美元；行业液冷部署从试点转向扩大 | +20-35% | +40-65% | +70-110% | 液冷标准变化、客户推迟高密度部署、洁净/机械施工质量风险 |
+| 输电/变电/utility 接入 | Electric backlog 401.06 亿美元；多个 500kV 项目；AI 园区电力接入为最大瓶颈 | +12-20% | +20-32% | +32-50% | 环评、路线许可、社区反对、变压器/开关柜长交期 |
+| 发电+BESS+微电网 | NiSource 3GW 项目公告但 Q3 backlog 未含 meaningful contribution；行业 BTM 电源项目公告多但落地慢 | +60-120% | +120-220% | +220%+ | 气源、燃机/发电机交期、排放许可、互联审批、客户融资 |
+| 可再生+BESS EPC | Blattner/CEI 平台，数据中心 PPA 需求支持，但并网和政策波动 | +5-12% | +15-30% | +35-60% | 税收政策、关税、利率、并网排队、项目经济性 |
+
+取消率判断：公司未披露取消率，现有 backlog 和 RPO 趋势没有显示高取消。但行业内 behind-the-meter 数据中心电源公告存在大量“宣布但未开工”项目，项目内行业调研显示 90GW 级 BTM 项目公告中实际 operating/under construction 比例很低，延迟率可能 30-50%。因此 PWR 的短期风险更像 revenue timing risk，而不是结构性需求消失。
+
+## 10. 竞争格局、替代方案、技术主流性和客户替换成本
+
+### 10.1 竞争对手
+
+| 业务 | 主要竞争对手 | PWR 优势 | PWR 劣势/风险 |
+|---|---|---|---|
+| 高压输电、变电、配电 | MYR Group、MasTec、Primoris、Pike、Kiewit、Michels、Henkels & McCoy、Black & Veatch、Burns & McDonnell | 规模、utility 关系、craft labor、航空施工、全国覆盖、历史安全记录 | 项目许可慢，固定价成本风险；部分区域竞争激烈 |
+| 数据中心电气/inside electrical | EMCOR、Rosendin、M.C. Dean、DPR/Turner 体系、Comfort Systems 的电气/MEP 合作方、区域电气承包商 | CEI/Tri-City 带来数据中心经验、低压和 custom fabrication、模块化交付 | 非垄断；hyperscaler 可多供应商分散风险 |
+| 机械/管道/液冷设施侧 | EMCOR、Comfort Systems USA、Kiewit、Jacobs、AECOM、Fluor、区域机械承包商 | DSI 预制机械、工艺、3D modeling、commissioning、repeat customer | 液冷技术路线变化快；机械专业公司竞争强 |
+| 发电+BESS+微电网 EPC | Kiewit、Black & Veatch、Burns & McDonnell、Bechtel、Fluor、MasTec、设备 OEM/EPC 联合体 | 能把发电、BESS、输电、变电、地下基础设施打包，与 utility 和大客户都有关系 | 设备利润在 OEM，项目融资和许可风险高；不具备燃机/电池技术垄断 |
+| 可再生+BESS EPC | SOLV Energy、Mortenson、McCarthy、Swinerton、Primoris、MasTec、Rosendin | Blattner 平台强、CEI 中型太阳能和储能互补 | IRA/政策和并网决定周期；毛利弹性有限 |
+
+### 10.2 新技术是否是未来主流
+
+| 技术/业务 | 主流性判断 | 对 PWR 的意义 | 风险和替代 |
+|---|---|---|---|
+| AI 数据中心高密度电气和模块化交付 | 主流。2026-2027 大型 AI campus 要求快速复制 MW block，模块化电气房、eHouse、预制电源 skid 会增加 | CEI/Tri-City 直接受益，预制和调试可提升毛利 | 业主自建标准化模块、设备 OEM 集成更多 scope、竞争对手扩产 |
+| 直接液冷设施侧机械集成 | 正在从高端 AI 机房走向主流。rack 密度 100kW+ 后空气冷却难以独立支撑 | DSI 可捕获机械、管道、泵组、暖水环路和调试 | 液冷供应链标准未完全统一；CDU/冷板硬件利润不属于 PWR |
+| 800VDC/MV UPS | 2026 仍偏 design-in/pilot，2027H2-2028 更可能形成收入 | PWR 需要具备安装和调试新型电气架构能力 | AC 架构继续主导，OEM 和 hyperscaler 标准路线变化 |
+| 数据中心自备发电/微电网 | 2026 已从 backup power 变成 delivery mainline 的一部分，但大量公告仍需许可和设备落地 | NiSource 类项目为 PWR 打开新 TAM | 气源、排放、社区、许可、燃机交期、燃料价格；替代为等 utility 电网、核电/SMR 长期方案、燃料电池、储能 |
+| 超高压输电和 utility 接入 | 确定主流。AI 负荷、工业回流、车辆电气化都要求电网扩容 | PWR 核心主业，客户替换成本高 | 许可周期和政治风险；竞争者也有高压能力 |
+
+### 10.3 客户替换成本
+
+客户替换成本在项目生命周期中差异很大：
+
+- 早期招标前：替换成本中等。hyperscaler、utility 可以邀请多个 EPC/MEP 投标。
+- 设计/预制/采购锁定后：替换成本高。BIM/VDC、设备订货、现场计划、FAT/SAT、permit 和 NTP 与承包商深度绑定。
+- 施工中后期：替换成本极高。更换承包商会导致调试延迟、质量责任界定困难、进度损失和索赔。
+- 多园区 programmatic relationship：替换成本高。客户更看重确定性、全国劳动力和复制经验，而不只看单点报价。
+
+PWR 的护城河不是专利，而是“可信执行能力+劳动力+项目记录+客户关系+并购补齐能力”。这类护城河在供需紧张时很强，在需求放缓或竞争者扩产时会变弱。
+
+## 11. 风险清单
+
+| 风险 | 影响 | 监控指标 |
+|---|---|---|
+| 估值过高 | forward adjusted P/E 约 49x，容错率低 | backlog 增速、Electric margin、FCF conversion、2026/2027 指引 |
+| 数据中心电源项目延迟 | 收入确认后移，市场叙事降温 | NiSource 3GW 是否进入 backlog、NTP、许可、设备 PO、gas/interconnection |
+| 固定价项目成本超支 | 毛利率下降，现金流恶化 | 毛利率、合同资产、change order、应收账款天数 |
+| 并购整合 | CEI、DSI、Tri-City/Wilson/Billings 多笔大并购，文化和系统整合复杂 | SG&A、无形资产摊销、商誉、员工留存、分部利润率 |
+| 设备 OEM 长交期 | Quanta 施工能力不能转化收入 | 变压器、开关柜、燃机、UPS、BESS、CDU 交付窗口 |
+| 政策和许可 | 输电、发电、自备电源、可再生能源均受监管影响 | FERC/州许可、环保审批、社区反对、税收抵免政策 |
+| 客户集中和项目集中 | 大型客户或项目重排影响季度波动 | backlog 项目构成、RPO 转化速度、大客户 capex |
+| 劳动力短缺和安全事故 | 交付能力受限，成本上升 | craft workforce 人数、培训、事故率、加班和 subcontractor 成本 |
+
+## 12. 投资判断框架
+
+PWR 的多头逻辑成立需要三件事同时发生：
+
+1. AI 数据中心和工业大负荷建设继续把瓶颈推向电力、变电、机械和调试，而不是只停留在芯片/服务器层。
+2. Quanta 能把 CEI、DSI、Tri-City/Wilson/Billings 的能力整合成更高附加值的“generation-to-grid-to-load center”交付平台，而不是简单并表收入。
+3. Electric segment backlog 转化成收入和现金流时不牺牲利润率，尤其是固定价项目、预制产能和劳动力成本可控。
+
+当前证据偏正面：2026Q1 收入 +26.3%、Electric +30.8%、RPO +48.7%、total backlog +37.5%、2026 指引上调，均支持需求和执行可见度。资产负债表虽因并购加杠杆，但净债务/2026 调整 EBITDA 中点约 1.55x，尚健康。
+
+主要保留意见是估值：PWR 已被市场当作 AI 电力瓶颈核心受益者定价。若只按传统工程服务公司 15% 毛利率、3-4% GAAP 净利率看，估值非常贵；若按未来 3-5 年 Electric、数据中心电气、机械、微电网平台持续 20%+ 复合增长看，估值才有支撑。后续最关键的跟踪点是：NiSource 3GW 是否转入 backlog 和收入、CEI/DSI 是否超出收购时贡献预期、Electric 分部利润率能否维持 9-11%、12 个月 backlog 是否继续高于下一年收入的 75%。
+
+## 13. 资料来源
+
+### 公司与财报来源
+
+- Quanta Services, `QUANTA SERVICES REPORTS FIRST QUARTER 2026 RESULTS`, 2026-04-30: https://investors.quantaservices.com/news-events/press-releases/detail/396/quanta-services-reports-first-quarter-2026-results
+- Quanta Services, `QUANTA SERVICES REPORTS FOURTH QUARTER AND FULL-YEAR 2025 RESULTS`, 2026-02-19: https://investors.quantaservices.com/news-events/press-releases/detail/390/quanta-services-reports-fourth-quarter-and-full-year-2025-results
+- Quanta Services, `QUANTA SERVICES REPORTS THIRD QUARTER 2025 RESULTS`, 2025-10-30: https://investors.quantaservices.com/news-events/press-releases/detail/385/quanta-services-reports-third-quarter-2025-results
+- Quanta Services, `QUANTA SERVICES REPORTS SECOND QUARTER 2025 RESULTS`, 2025-07-31: https://investors.quantaservices.com/news-events/press-releases/detail/379/quanta-services-reports-second-quarter-2025-results
+- PRNewswire, `Quanta Services Reports First Quarter 2025 Results`, 2025-05-01: https://www.prnewswire.com/news-releases/quanta-services-reports-first-quarter-2025-results-302443761.html
+- Quanta Services, `Quanta Services Acquires Cupertino Electric, Inc.`, 2024-07-18: https://investors.quantaservices.com/news-events/press-releases/detail/360/quanta-services-acquires-cupertino-electric-inc-a-premier-electrical-infrastructure-solutions-provider-to-the-technology-and-renewable-energy-industries
+- Quanta Services, `Quanta Services Acquires Dynamic Systems`, 2025-07-31: https://investors.quantaservices.com/news-events/press-releases/detail/380/quanta-services-acquires-dynamic-systems-a-premier-turnkey-mechanical-and-process-infrastructure-solutions-provider
+- Quanta Services Investor Relations Financial Results page: https://investors.quantaservices.com/financial-information/financial-results
+
+### 项目内行业资料
+
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- `行业调研/产业背景/顶级会议信息/data_center_world_2026_research_report.md`
+
+### 关键推算说明
+
+- 直接 AI/数据中心收入：公司未披露。本文以 CEI 收购公告给出的 2025 收入贡献、DSI 收购公告给出的 2026 收入贡献、Tri-City load center 业务描述、NiSource 3GW 项目范围、Electric backlog 和项目内行业资料中的数据中心电力/MEP 单位价值推算。
+- Forward adjusted P/E：2026-06-11 股价 678.52 美元 / 公司 2026 adjusted EPS 指引中点 13.90 美元。
+- P/S：2026-06-11 市值约 1033.12 亿美元 / TTM 收入 301.21 亿美元。
+- TTM 毛利率和净利率：使用 2025Q2、2025Q3、2025Q4、2026Q1 公司官方财报表格重算。

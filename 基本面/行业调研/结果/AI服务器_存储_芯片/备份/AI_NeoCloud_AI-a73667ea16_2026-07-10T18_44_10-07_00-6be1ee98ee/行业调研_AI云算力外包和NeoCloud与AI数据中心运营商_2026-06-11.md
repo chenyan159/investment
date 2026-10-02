@@ -1,0 +1,485 @@
+# 行业调研：AI云算力外包和NeoCloud与AI数据中心运营商
+
+数据截点：2026-06-11  
+标准行业名称：AI云算力外包和NeoCloud与AI数据中心运营商  
+标准分类目录：AI服务器_存储_芯片  
+项目内资料边界：仅使用 `行业调研/行业索引.md` 与 `行业调研/产业背景/` 下资料；未读取、引用或继承 `公司调研/`、`日度资料/`、`特征量化/` 或其他目录内容。  
+核心口径：本报告把行业定义为“把 GPU/ASIC、AI rack、网络、存储、电力和运维能力包装成可购买算力容量的服务层”，包括 NeoCloud、AI cloud、GPU bare-metal / reserved cluster、AI factory build-operate、AI-optimized IaaS、托管推理和专用 AI 数据中心容量。硬件收入、客户 CapEx、云服务收入和地产租赁收入不机械相加，分别用于判断需求、供应链和价值捕获。
+
+## 结论先行
+
+### 一句话判断
+
+AI云算力外包和NeoCloud不是简单的“租 GPU”行业，而是 2026-2028 年 AI 基础设施周期里最强的容量撮合层：谁能同时拿到 GPU/ASIC allocation、电力和场址、长约客户、低成本融资、液冷/rack 交付和高利用率调度，谁就能把“缺算力”转成数年可见收入；谁只是短租转卖 GPU，就会在下一代芯片切换、租价下行和债务成本上行时被迅速压缩利润。
+
+本报告维持非常乐观假设：2026 年 AI 数据中心建设继续被 Blackwell/GB300、MI350、TPU、Trainium 和定制 ASIC 拉动；2027 年 Rubin、MI400/Helios、Trainium3、TPU/Ironwood 后续、HBM4、1.6T 网络、CPO、KV cache 存储和推理工作负载接力。行业的最大变量不是“有没有需求”，而是“能不能按期上电、验收、融资和保持利用率”。
+
+### 关键数字锚
+
+| 维度 | 2026 最新事实 | 对行业的含义 |
+|---|---:|---|
+| CoreWeave | 2026Q1 revenue `$2.078B`；revenue backlog `$99.4B`；active power `>1GW`；2030 目标 `>8GW`；Meta 新 `$21B` 承诺；与 NVIDIA 推动 `>5GW` AI factories by 2030 | NeoCloud 已经从短租转向“长期容量合约 + 电力资产 + 平台软件”的基础设施公司 |
+| Crusoe | 2026-06 宣布 contracted AI infrastructure `4.9GW`，总开发 pipeline `>40GW`；Abilene 1.2GW Oracle 项目已有 2 栋运营、6 栋在建；另为 Microsoft 建 900MW campus，Abilene 总容量约 2.1GW | “energy-first AI factory”成为 NeoCloud/开发商的新范式 |
+| Oracle | FY2026 Q4 RPO 从 `$553B` 增至 `$638B`；Q4 IaaS revenue `$5.8B`，同比 `+93%`；FY2026 IaaS revenue `$18.1B`，同比 `+77%` | OCI 已是 AI cloud 容量批发和 GPU/客户预付款结构的重要平台 |
+| OpenAI / Stargate | Oracle/OpenAI 额外 `4.5GW` Stargate capacity；合计 under development `>5GW`，可运行 `>2M` chips；目标四年 `$500B`、`10GW` 美国 AI infrastructure | 模型实验室采购单位从“卡”升级到“GW 年度容量” |
+| Microsoft | FY2026Q3 capex `$31.9B`，约 `2/3` 为 GPU/CPU 等短寿命资产；RPO `$627B`，含 OpenAI；Azure demand 仍超过可用 capacity | 最大客户之一仍被容量约束，支撑外包和长约容量价格 |
+| Amazon | 2026Q1 AWS revenue `$37.6B`，operating income `$14.2B`；TTM PPE 净增加同比 `$59.3B`，主要反映 AI 投资；chips business run-rate `>$20B` | AWS 既是最大自建者，也是自研芯片和容量外溢的需求锚 |
+| Alphabet | 2026Q1 Google Cloud revenue `+63%`，backlog `> $460B`；Gemini Enterprise paid MAU QoQ `+40%` | TPU/Google Cloud 外售和 AI 企业需求已形成订单可见度 |
+| Meta | 2026Q1 capex `$19.84B`；2026 capex guide `$125-145B`，较此前提高 `$10B` | 广告现金流支撑超大 AI CapEx，同时组件涨价开始进入客户预算 |
+| NVIDIA | FY2027Q1 revenue `$81.6B`；Data Center `$75.2B`；compute `$60.4B`；networking `$14.8B`；non-GAAP GM `75.0%` | 2026 不是 GPU 小周期，而是全栈 AI factory 规模化 |
+| Dell | FY2027Q1 AI-optimized servers revenue `$16.1B`，AI orders `$24.4B`；FY2027 AI server revenue guide `~$60B` | AI server/rack 交付已成为服务层容量的直接瓶颈 |
+| Gartner | AI-optimized IaaS end-user spending：2025 `$18.3B`，2026 `$37.5B`；2026 inference 占 `55%`、`$20.6B` | 托管推理和推理容量是未来 12 个月最强服务收入增量 |
+| CBRE/JLL | CBRE H2 2025 primary market under construction `5,994.4MW`；JLL YE2025 vacancy `1%`，92% under-construction capacity precommitted，North America `>35GW` under construction | 供给不是过剩，短中期是电力、许可和交付约束 |
+| LBNL/IEA | 美国数据中心用电 2023 `176TWh`，2028 估计 `325-580TWh`；IEA base case 全球 2030 data center electricity `~945TWh` | 电力是行业长期约束，也是优质运营商的壁垒 |
+
+### 行业投资排序
+
+| 排名 | 子方向 | 投资吸引力 | 为什么 |
+|---:|---|---|---|
+| 1 | 长约 AI factory / reserved supercluster | 最高 | 客户锁定、融资可做、容量稀缺、价格可传导；CoreWeave、Crusoe、Nebius、Nscale、IREN 是样本 |
+| 2 | 推理托管、managed inference、KV cache / routing | 高 | Gartner 已验证 inference 超过训练成为 AI-optimized IaaS 主导；软件和调度提升毛利 |
+| 3 | 能源优先型 AI 数据中心开发和运营 | 高 | 电力和并网比土地更稀缺；有 onsite power、PPA、microgrid 和预制化交付能力者定价权更强 |
+| 4 | 裸金属 GPU/ASIC 云和短租实例 | 中高 | 2026 仍供不应求，但 2027 后会被代际残值、价格透明化和利用率分化压缩 |
+| 5 | 纯转售/小型 GPU 租赁商 | 中低 | 没有电力、长约和低成本融资，容易在租价回落时变成高杠杆周期资产 |
+
+## 一、2026 年行业机遇、挑战和最可能技术路径
+
+### 1.1 行业机会
+
+1. **AI 需求从训练扩展到持续推理**：2024-2025 年容量需求主要来自 frontier training 和 H100/H200/Blackwell 供给紧缺。2026 年变化是 agentic AI、长上下文、多模态、企业 Copilot、搜索/广告 AI 和模型 API 把推理变成持续负载。Gartner 预计 2026 年 AI-optimized IaaS `$37.5B`，其中推理 `$20.6B`、占 `55%`，这直接利好按小时、按实例、按 token 和按 reserved capacity 收费的服务商。
+
+2. **模型实验室成为新 hyperscaler**：OpenAI、Anthropic、xAI、Mistral、Perplexity、World Labs 等不一定愿意或能够全部自建，从而给 CoreWeave、Oracle OCI、Crusoe、Lambda、Nebius、Nscale 等带来长期容量合同。OpenAI Stargate 的 4.5GW Oracle 增量和 CoreWeave 的 `$99.4B` backlog 说明 AI lab 已经在用“GW + 多年合约”采购。
+
+3. **云厂商把部分 CapEx 变成外包/长约/客户供硬件**：Oracle FY2026 Q4 RPO `$638B`，且此前披露大型 AI 合同中存在客户预付款和 customer-supplied hardware 结构；CoreWeave、Crusoe、Nscale、Nebius 等承接“云厂/模型实验室需要容量，但不想或不能独立完成全部场址、电力、建设和运维”的缺口。
+
+4. **电力和上电时间成为可收费能力**：JLL 显示北美数据中心 vacancy 已连续两年约 `1%`，92% 在建容量已预承诺；CBRE 显示 2025 年末 primary market under construction `5,994.4MW`，但大量项目因电力、许可和 zoning 延迟。能把 18-48 个月并网等待压缩为 behind-the-meter、gas generation、BESS、prefab electrical skids 的运营商，实际出售的是 time-to-compute。
+
+5. **GPU/ASIC 代际切换创造第二供应和专用化机会**：2026 Blackwell/GB300 主导，MI350 成为第二供应，TPU/Trainium/ASIC 在 hyperscaler 内部和部分外部客户放量；2027 Rubin、MI400/Helios、Trainium3、TPU 后续、HBM4、1.6T 网络上量，给非 NVIDIA 专用云、低成本推理云和垂直行业私有集群留下窗口。
+
+### 1.2 行业挑战
+
+| 挑战 | 2026 状态 | 对 NeoCloud/运营商的影响 | 反证或跟踪指标 |
+|---|---|---|---|
+| GPU/ASIC allocation | 严重但逐季改善 | 没有 allocation 的云商无法签长约；有 allocation 的云商可收预付款和溢价 | NVIDIA/AMD/Broadcom revenue、ODM 出货、云实例可用性 |
+| HBM/CoWoS/先进封装 | 仍是硬瓶颈 | 芯片无法按订单交付，影响收入确认和客户排队 | HBM ASP、CoWoS lead time、TSMC/OSAT 产能 |
+| 电力/并网/变压器 | 2026-2028 最难绕过 | MW 无法转 revenue；资本沉淀期拉长 | interconnection queue、PPA、transformer lead time |
+| rack-scale 交付和液冷 | GB200/GB300/NVL72 改变验收方式 | 交付不再是单卡上架，而是整 rack、网络、液冷和现场 commissioning | rack acceptance cycle、漏液率、field failure |
+| 融资和 GPU 残值 | 2026 下半年开始成为核心 | 高杠杆云商受利差和抵押折价影响；代际切换压残值 | debt cost、contract tenor、二手 H100/B200/GB200 价格 |
+| 利用率和租价 | 偏乐观但必须验证 | 高毛利来自高利用率；spot price 下跌会快速重估行业 | GPU utilization、reserved vs spot price、queue time |
+| 客户集中度 | 大客户长约是优点也是风险 | 单一客户延期或重议价会冲击现金流 | top customers revenue share、续约期限 |
+| 政策/水/社区 | 越来越重要 | 许可、环保、水资源和本地电价争议可能推迟项目 | moratorium、州监管、utility rate case |
+
+### 1.3 目前已经在用的技术
+
+| 技术层 | 2026 主流做法 | 2027 演进方向 | 对服务商的含义 |
+|---|---|---|---|
+| 加速器 | NVIDIA H100/H200/HGX、B200/GB200、B300/GB300；AMD MI300/MI350；Google TPU v6e/v7；AWS Trainium2/3；定制 ASIC | Rubin NVL72、MI400/MI455/Helios、Trainium3 扩大、TPU 后续、更多推理 ASIC | 服务商要从“GPU 型号”销售转向“workload-fit cluster”销售 |
+| 服务器/rack | HGX/DGX/HPE/Dell/SMCI/ODM；GB200/GB300 NVL72；OAM/8-GPU/72-GPU rack | Rubin/Vera/BlueField/STX、Helios rack、ASIC tray、modular pod | 整 rack 验收、液冷、电源和网络能力成为门槛 |
+| 网络 | InfiniBand、Spectrum-X Ethernet、RoCE、800G 光模块、DAC/AEC；1.6T sampling | 1.6T 大规模、CPO/Quantum-X/Spectrum-X Photonics、UEC、UALink | 网络决定 GPU 利用率，低延迟和可观测性可收费 |
+| 存储/内存 | NVMe SSD、并行文件系统、对象存储、checkpoint、RAG 存储 | KV cache tier、BlueField-4 STX、CXL/内存池、SOCAMM/LPDRAM | 推理云的差异从 FLOPS 转向 memory/data movement |
+| 冷却 | direct-to-chip 冷板、CDU、manifold、rear-door HX、部分 immersion | 100kW+ rack 常态化，45 摄氏度液冷，液冷服务化 | 液冷可靠性和维护能力决定可用率 |
+| 电力 | 中压接入、UPS、PDU、busway、genset、BESS、PPA | onsite generation、microgrid、800VDC、DSX Flex 电力调度 | 电力架构成为产品规格，不再只是地产配套 |
+| 调度/软件 | Kubernetes、Slurm、SUNK、Ray、vLLM/SGLang、TensorRT-LLM、模型服务平台 | Dynamo、KV router、prefill/decode disaggregation、multi-tenant bare metal、AI factory digital twin | 软件决定利用率和毛利，且可减少代际折旧风险 |
+
+### 1.4 2026/2027 最大 AI 芯片技术路径对本行业的影响
+
+下表的芯片路径来自项目内 `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`，不使用外部搜索补充。金额为项目内口径的 2026/2027 产能释放价值区间，单位十亿美元。
+
+| 芯片/平台 | 2026 路径 | 2027 路径 | 2026 产能释放 | 2027 产能释放 | 对 NeoCloud 的含义 |
+|---|---|---:|---:|---:|---|
+| NVIDIA B200/GB200 Blackwell | 2026 主力，NVL72/rack-scale 放量 | 2027 退为存量和补货 | 80-190 | 25-110 | 2026 最核心可租容量；谁先拿到 GB200/GB300 谁能签长约 |
+| NVIDIA B300/GB300 Blackwell Ultra | 2026 主力增量，288GB HBM3E、推理/长上下文 | 2027 继续高端推理 | 85-220 | 60-190 | 2026H2 推理云 premium SKU，适合 reserved inference |
+| NVIDIA Vera Rubin/Rubin NVL72 | 2026H2 伙伴供货，小批量 | 2027 主力，HBM4/NVLink6 | 15-110 | 130-360 | 2026 签约锁产能，2027 才大规模收入化 |
+| AMD MI350/MI355X | 2026 第二供应，288GB HBM3E | 2027 延续但受 MI400 替代 | 14-48 | 10-45 | TensorWave/Oracle/Meta 类非 CUDA 迁移收益 |
+| AMD MI400/MI450/MI455 + Helios | 2026 工程导入 | 2027 主放量，HBM4/UALink | 3-40 | 35-140 | 2027 第二机架生态，决定 AMD 专用云天花板 |
+| Google TPU v7 Ironwood | 2026 Google/Anthropic/Cloud 外部化 | 2027 继续推理/训练 | 18-65 | 25-115 | TPU 外售或托管越多，GPU 云价格上限越低 |
+| Broadcom custom XPU/ASIC | 2026 多客户 ASIC 爬坡 | 2027 高速增长 | 12-70 | 45-190 | hyperscaler 自研降低长期 GPU 毛利，利好定制 AI cloud |
+| AWS Trainium2/3 | 2026 Trainium2/3 放量 | 2027 Trainium3 大规模 | 16-75 | 35-155 | AWS 把自研芯片变成外部 AI IaaS 差异化产品 |
+| Microsoft Maia 200 | 2026 Azure 内部/区域扩张 | 2027 大规模推理可选 | 3-22 | 12-70 | 若 Copilot/OpenAI 推理迁移，Azure 自建减少外部 GPU 需求但提升 AI IaaS 毛利 |
+| Meta MTIA 300/400/450/500 | 2026 内部推理/广告/R&R | 2027 GenAI 推理扩大 | 3-25 | 12-85 | Meta 自研越成功，外部 NeoCloud 更依赖训练和短期爆发需求 |
+
+### 1.5 新技术成熟和放量时间：三情景
+
+| 技术 | 基准情景 | 乐观情景 | 极度超预期乐观情景 |
+|---|---|---|---|
+| GB300/B300 premium inference | 2026Q3-Q4 成为新上架主力，2027H1 仍供不应求 | 2026Q3 起长约容量快速签满，推理租价维持高位 | 2026Q4 agentic inference 爆发，GB300 实例价格较 B200 保持 25-40% 溢价 |
+| Rubin/Vera/BlueField-4 STX | 2026H2 首批伙伴，2027H1 大客户部署，2027H2 主力 | 2026Q4 起 CoreWeave/Lambda/Nebius/Nscale 等能提供早期 reserved capacity | 2027H1 Rubin 成为新签 100MW+ 项目的默认规格，Rubin + STX + Spectrum-X 打包销售 |
+| AMD MI400/Helios | 2026 样机/早期，2027H2 明显放量 | 2027H1 云厂和 NeoCloud 形成第二供应 | 2027 年成为非 NVIDIA AI factory 的标准路线之一，拉低客户对 CUDA 锁定的担忧 |
+| TPU/Trainium/ASIC cloud | 2026 内部和少数外部客户，2027 外售/托管加速 | 2026H2 Anthropic、企业客户证明迁移经济性 | 2027 推理和 fine-tune 大量迁移到 ASIC，GPU 云转向最高端训练和多模型弹性 |
+| 1.6T optical / AI backend Ethernet | 2026H2 early deployments，2027 放量 | 2026Q4 头部集群上量，2027 成为新增 AI fabric 标配 | 2027 1.6T 与 CPO 联合提前渗透，AI 网络价值占 rack BOM 明显上升 |
+| CPO/Spectrum-X Photonics | 2026 生产但局部，2027 高端采用 | 2027 多个 AI cloud 首批商用 | 2027 高端百万 GPU 级规划默认 CPO，硅光/ELS/测试短缺 |
+| KV cache / context memory / disaggregated inference | 2026 软件快速导入，2027 成为托管推理差异点 | 2026H2 大模型 API 云开始按 cache/routing 收费或内化毛利 | 2027 成为推理成本曲线核心，AI storage/KV market 2 年内重估到数百亿美元 |
+| DSX / digital twin / token per watt 运维 | 2026 参考设计/仿真，2027 大型项目采用 | 2026H2 与 Vertiv/Schneider/Eaton/Jacobs/Nscale 项目绑定 | 2027 变成 AI factory 标配控制面，谁能提高 10-30% effective compute 谁有定价权 |
+| 800VDC / 中压 DC | 2026-2027 试点和局部参考设计 | 2027 在高密度 rack / new campus 规模试用 | 2027H2 在 1MW/rack power roadmap 中成为关键架构，电源半导体和保护器件重估 |
+
+### 1.6 2026 最可能技术路径
+
+2026 年最可能被真实采购和收入确认的路线是：
+
+1. **Blackwell/GB300 + 液冷 NVL72 + 800G/早期 1.6T 网络 + reserved bare-metal cluster**。这是 CoreWeave、Lambda、Crusoe、Oracle OCI、Azure/GCP/AWS 等最直接的供给路线。
+2. **Trainium2/3、TPU Ironwood、Broadcom custom ASIC 的 captive/selected external capacity**。自研芯片不会立刻替代全部 GPU，但会在高负载推理、内部模型和单一客户工作负载中放量。
+3. **energy-first AI factory**。Crusoe、Nscale、IREN 等把 onsite power、microgrid、pipeline power、prefab electrical equipment 和数据中心建设捆绑，成为外包算力的供给前置条件。
+4. **托管推理和 KV cache serving**。vLLM/SGLang/TensorRT-LLM/Dynamo、prefill-decode disaggregation、cache routing、storage attach 会成为 GPU 云毛利的关键。
+5. **长约 + 预付款 + GPU/项目融资结构**。CoreWeave、Oracle、Nebius、IREN 的合同和融资结构证明，这个行业的产品并不只是实例，而是“未来算力容量的金融化”。
+
+## 二、已经开始放量的关键产品、市场规模、渗透率和利润率
+
+### 2.1 口径说明
+
+以下市场规模为本报告估算，单位为美元。  
+“未来 3 个月”指 2026-06-11 至 2026-09-11 的新增签约或收入年化观察窗口；“未来 1 年”指截至 2027-06-11 的年度规模；“未来 2 年”指截至 2028-06-11 的年度规模或当年 run-rate。  
+“渗透率”分母为本报告定义的可外包 AI compute / AI factory 容量池，不包括 hyperscaler 纯内部自用且不对外或不通过合约体现的容量。
+
+### 2.2 已放量产品总表
+
+| 已放量产品 | 当前证据 | 未来 3 个月市场规模 | 未来 1 年市场规模 | 未来 2 年市场规模 | 渗透率路径 | 基准/乐观/极度乐观增长 | 利润率判断 |
+|---|---|---:|---:|---:|---|---|---|
+| 高端 GPU bare-metal / reserved cluster | CoreWeave `$99.4B` backlog；Dell Q1 FY27 AI server `$16.1B`；NVIDIA DC Q1 `$75.2B` | 基准 `$12-18B`；乐观 `$18-28B`；极度 `$28-45B` 年化新增 | 基准 `$65-105B`；乐观 `$105-160B`；极度 `$160-240B` | 基准 `$120-220B`；乐观 `$220-360B`；极度 `$360-520B` | 外包高端 GPU 容量占可外包池 `25-35%` -> `35-50%` -> `45-60%` | 1 年 `+55-90% / +90-140% / +140%+` | 服务 gross margin `40-65%`；成熟 EBITDA `30-55%`；折旧和利息后 operating margin `-5% to 25%` |
+| 长约 AI factory / MW-GW capacity lease | CoreWeave `>1GW active`，Crusoe `4.9GW contracted`，Nscale/Microsoft `1.35GW LOI`，OpenAI/Oracle `>5GW` | 新签和扩容 `$40-90B`；收入确认 `$8-18B` | 合约池 `$180-350B`；确认收入 `$45-90B` | 合约池 `$350-800B`；确认收入 `$100-220B` | 100MW+ 项目中外包/合作运营 `20-30%` -> `35-50%` -> `45-65%` | `+60-100% / +100-180% / +180%+` | 稳定期 colo/infra EBITDA `45-65%`；但项目 ROIC 取决于电力、PUE、租期和融资，股权 FCF 前期常为负 |
+| 托管推理 / managed inference / API serving | Gartner 2026 AI-optimized IaaS inference `$20.6B`；MLSys/本地资料指向 KV cache、prefill/decode | `$5-10B` 年化新增 | 基准 `$35-60B`；乐观 `$60-100B`；极度 `$100-160B` | 基准 `$80-150B`；乐观 `$150-260B`；极度 `$260-420B` | AI IaaS 中 inference `55%` -> `60-65%` -> `65-75%` | `+80-120% / +120-200% / +200%+` | 纯软件/平台 GM `65-85%`；含 GPU 成本 blended GM `35-60%`；调度强者可高于普通 GPU 云 |
+| AI cloud storage / checkpoint / KV cache tier | IDC/本地资料显示 AI storage share 低但长上下文拉动；NVIDIA STX 2026H2 | `$2-5B` | 基准 `$12-25B`；乐观 `$25-45B`；极度 `$45-75B` | 基准 `$30-70B`；乐观 `$70-130B`；极度 `$130-220B` | AI compute attach `5-10%` -> `12-22%` -> `25-40%` | `+50-90% / +90-160% / +160%+` | 软件 GM `70-90%`；eSSD/storage gross margin `35-60%`；OEM 集成 OP `8-18%` |
+| AI back-end network premium capacity | NVIDIA networking Q1 FY27 `$14.8B`；TrendForce AI optics 2026 `$26B`；Dell'Oro 以太网后端强增长 | `$6-12B` | 基准 `$45-80B`；乐观 `$80-130B`；极度 `$130-200B` | 基准 `$90-160B`；乐观 `$160-260B`；极度 `$260B+` | 每 GPU/ASIC 高速端口等效 `0.6-1.2` -> `0.8-1.6` -> `1.0-2.0` | `+50-80% / +80-120% / +120%+` | switch/NIC silicon GM `60-75%`；box/system GM `25-45%`；AI cloud 通过利用率提升内化毛利 |
+| Flexible capacity / spot / reservation marketplace | CoreWeave Flexible Capacity Plans；Lambda/Crusoe/Vast/RunPod/Together 等云形态成熟 | `$1-3B` | 基准 `$8-18B`；乐观 `$18-35B`；极度 `$35-60B` | 基准 `$20-50B`；乐观 `$50-90B`；极度 `$90-150B` | 中小客户 GPU 采购 `10-20%` -> `20-35%` -> `35-55%` | `+60-100% / +100-180% / +180%+` | 高利用时 GM `35-60%`；价格透明后毛利向 `20-40%` 回落 |
+| AI cloud / GPU asset financing and prepayment | Oracle 客户预付款/customer-supplied hardware；IREN `$9.3B` funding；CoreWeave/Blue Owl 等结构 | `$10-30B` 新融资 | 基准 `$80-150B`；乐观 `$150-250B`；极度 `$250-400B` | 基准 `$180-350B`；乐观 `$350-600B`；极度 `$600B+` | 100MW+ 项目中结构化融资 `30-45%` -> `45-60%` -> `60%+` | `+70-120% / +120-200% / +200%+` | 私募信贷/租赁 spread `6-12%`；股权 IRR 目标 `12-25%`；风险在残值和客户信用 |
+
+### 2.3 供不应求产品的利润率三情景
+
+| 产品 | 当前利润率 | 基准 | 乐观 | 极度超预期乐观 | 关键条件 |
+|---|---:|---:|---:|---:|---|
+| 高端 GPU reserved cluster | 成熟服务 gross margin `45-65%`，但 CoreWeave 类公司 adjusted operating margin 可因扩张低至个位数 | GM `42-58%`，EBITDA `28-45%` | GM `50-65%`，EBITDA `40-55%` | GM `60-70%`，EBITDA `50-65%` | 预付款、长约、利用率 >80%、电价锁定、残值稳定 |
+| Short-term GPU spot | GM `20-50%`，波动大 | GM `20-35%` | GM `35-50%` | GM `50-60%` | 供给排队、H100/B200 spot 不下行 |
+| AI factory lease / operating platform | EBITDA `40-60%`，但 FCF 前期负 | EBITDA `42-55%` | EBITDA `50-62%` | EBITDA `60-68%` | 电力成本 pass-through，PUE 可控，租期 5-10 年 |
+| Managed inference | 纯软件 GM `65-85%`；含算力 blended `35-60%` | blended GM `38-55%` | `50-65%` | `60-75%` | KV cache、batching、router 将 token cost 降 20-40% |
+| AI storage/KV tier | 软件 `70-90%`，硬件/服务 `25-55%` | blended GM `35-55%` | `45-65%` | `55-75%` | 长上下文和 agent workflow 让 attach 成为刚需 |
+| Power/thermal managed capacity | 设备 GM `20-40%`，服务更高 | GM `25-38%` | `32-45%` | `40-55%` | 液冷/电力设备继续排队，客户按 time-to-power 付费 |
+
+## 三、在研关键产品和未来快速增长技术
+
+### 3.1 在研和早期商业化技术总表
+
+| 在研产品/技术 | 2026 当前阶段 | 未来 3 个月 | 未来 1 年市场规模 | 未来 2 年市场规模 | 渗透率路径 | 利润率三情景 |
+|---|---|---:|---:|---:|---|---|
+| Rubin/Vera/BlueField-4 STX AI factory capacity | NVIDIA 公布 Rubin 平台，AWS/GCP/Azure/OCI/CoreWeave/Lambda/Nebius/Nscale 列为 2026 首批部署方 | 订单和 reservation 先于收入，新增签约 `$10-40B` | 基准 `$40-90B`；乐观 `$90-170B`；极度 `$170-280B` | 基准 `$140-280B`；乐观 `$280-500B`；极度 `$500B+` | 高端新签 AI factory `5-10%` -> `20-35%` -> `40-60%` | GPU/平台 GM 最高；云服务 GM `45-65%`，但 HBM4 和电力决定上限 |
+| CPO / Spectrum-X Photonics / Quantum-X Photonics cluster | CPO switch 已进入 NVIDIA 路线，Lambda 称 Quantum-X Photonics 在 10,000-GPU GB300 cluster 生产部署 | 小规模 premium cluster，收入 `<$2B`，但订单可达数十亿 | 基准 `$5-12B`；乐观 `$12-25B`；极度 `$25-50B` | 基准 `$20-50B`；乐观 `$50-100B`；极度 `$100B+` | 高端后端网络端口 `低个位数%` -> `5-15%` -> `15-35%` | 光引擎/ELS/SerDes/IP GM `40-65%`；云商通过功耗和 uptime 内化价值 |
+| UALink / Ultra Ethernet 多厂商 scale-up fabric | 标准和 IP 进入设计导入，2026 主要是 reference design | 订单小，PoC/设计赢单 `$0.5-2B` | 基准 `$3-8B`；乐观 `$8-20B`；极度 `$20-45B` | 基准 `$15-40B`；乐观 `$40-90B`；极度 `$90B+` | 非 NVIDIA rack 新设计 `5%` -> `15-25%` -> `30-45%` | IP/silicon GM `60%+`；系统 GM `20-40%`；价值在降低客户锁定成本 |
+| KV cache router / disaggregated inference / context memory | MLSys 2026 论文密集，vLLM/SGLang/云内部系统已有实现 | 商业收入 `$1-3B`；更多是内化 TCO | 基准 `$6-15B`；乐观 `$15-35B`；极度 `$35-70B` | 基准 `$25-70B`；乐观 `$70-150B`；极度 `$150-300B` | 大型推理平台默认采用 `10-20%` -> `35-55%` -> `60-80%` | 软件 GM `70-90%`，但开源压价；云厂/NeoCloud 捕获最大价值 |
+| CXL/pooled memory/SOCAMM/LPDRAM for inference | 2026 pilot 和少量云 VM/平台验证 | `<$1B` 直接产品，订单可先行 | 基准 `$2-6B`；乐观 `$6-15B`；极度 `$15-35B` | 基准 `$12-35B`；乐观 `$35-80B`；极度 `$80B+` | 推理 rack `低个位数%` -> `10-20%` -> `25-45%` | 控制器/IP/模块 GM 高；系统价值在降低 HBM 依赖 |
+| DSX / AI factory digital twin / token-per-watt operations | NVIDIA DSX/Omniverse blueprint GA，Vertiv/Schneider/Eaton/Jacobs/Nscale 等参与 | 设计软件和服务 `$0.5-2B` | 基准 `$4-10B`；乐观 `$10-25B`；极度 `$25-60B` | 基准 `$15-40B`；乐观 `$40-100B`；极度 `$100B+` | 500MW+ 新 campus `10-20%` -> `35-55%` -> `60-85%` | 软件 GM `70%+`；集成服务 `25-45%`；若能提高 effective compute 10-30%，定价权强 |
+| 800VDC / 中压 DC / rack power architecture | TI/NVIDIA、Schneider/Vertiv/Eaton 等推动参考设计 | PoC 和 design-in，`<$1B` | 基准 `$2-6B`；乐观 `$6-15B`；极度 `$15-35B` | 基准 `$10-30B`；乐观 `$30-70B`；极度 `$70B+` | 100kW+ rack `5-10%` -> `15-30%` -> `35-60%` | 高压保护/功率器件/电源架构 GM `30-60%`，系统集成较低 |
+| GPU residual value / AI financial infrastructure | 2026 会议开始出现残值、互换、资产融资产品 | 新产品小，融资底层资产 `$10B+` | 基准 `$5-15B` 金融收入/费用池；底层融资 `$100B+` | 基准 `$15-40B`；乐观 `$40-80B`；极度 `$80B+` | 大型 GPU 采购使用金融工具 `20-30%` -> `40-60%` -> `60-75%` | 金融 spread 高但尾部风险大；核心风险是 GPU 残值和客户信用 |
+
+### 3.2 未来增长最快的关键产品
+
+1. **Rubin/Vera/BlueField-4 STX capacity**：2026H2 是签约和早期实例，2027 是收入化。若客户把 agentic inference、long context 和 secure multi-tenant workload 迁入 Rubin/STX，NeoCloud 可把高端实例按“推理吞吐/上下文/安全隔离”而非裸 GPU 小时定价。
+
+2. **托管推理控制面**：包括 request routing、prefill/decode disaggregation、KV cache reuse、hot/cold cache tier、SLO optimizer、GPU utilization observability。直接软件收入可能不如硬件大，但对毛利的杠杆极高。若单位 token 成本下降 20-40%，服务商可同时降价和扩 margin。
+
+3. **能源绑定容量**：Crusoe 的 4.9GW contracted、Bergen Engines 750MW power deal、Nscale/Microsoft 1.35GW、IREN/NVIDIA up to 5GW DSX-aligned pipeline，说明未来客户买的是“算力 + 电力确定性”。能源能力将从后台成本变成 SKU 的一部分。
+
+4. **AI storage 和 context memory**：当前 storage 在 AI infrastructure spend 中占比偏低，但 agent/长上下文会把 checkpoint、RAG、日志、KV cache 和安全隔离需求拉上来。2027 年若 STX/CMX、CXL、SOCAMM 或高容量 eSSD 成为标准，存储 attach 会明显上修。
+
+5. **多芯片、多云、多网络兼容容量**：客户会要求 NVIDIA、AMD、TPU、Trainium、ASIC 混合，避免单一供应和价格锁定。具备 workload migration、compiler/runtime、数据移动和统一账单能力的服务商，定价权高于只提供单 GPU SKU 的平台。
+
+## 四、供给侧：产能结构、瓶颈、成本与毛利
+
+### 4.1 产能结构
+
+| 层级 | 主要地区 | 主要公司/主体 | 工艺或能力 | 供给特点 |
+|---|---|---|---|---|
+| AI cloud / NeoCloud 容量 | 美国、加拿大、欧洲、中东，重点向 Texas、Missouri、West Virginia、Ohio、Wisconsin、Canada 转移 | CoreWeave、Crusoe、Lambda、Nebius、Nscale、IREN、Oracle OCI、Microsoft Azure、AWS、GCP、Vultr、Together、RunPod、TensorWave、GMI Cloud | GPU/ASIC cluster、AI factory ops、bare metal、reserved capacity | 电力和长约决定规模；资产负债表决定扩张速度 |
+| 数据中心/colo | 北美 primary + frontier market，欧洲 FLAPD 与 Nordics，中东 | Equinix、Digital Realty、QTS、Vantage、CyrusOne、Switch、STACK、DataBank、Aligned、Compass、NTT GDC、DATA4 | build-to-suit、wholesale lease、interconnection、MEP | 传统 colo 的网络/客户生态强，AI megawatt 项目更看电力和承包能力 |
+| GPU/ASIC | 台积电先进节点和 CoWoS 生态，NVIDIA/AMD/Broadcom/Marvell/自研芯片公司 | NVIDIA、AMD、Broadcom、Marvell、Google、AWS、Microsoft、Meta、TSMC | 4N/4NP/N3/N2、HBM3E/HBM4、2.5D/3D | 2026 仍紧；2027 取决于 HBM4、CoWoS 和客户 design |
+| HBM/内存/SSD | 韩国、美国、日本、中国台湾、新加坡 | SK hynix、Samsung、Micron、Solidigm、Kioxia、WDC、Seagate | HBM3E/HBM4、DDR5、LPDDR/SOCAMM、eSSD | AI 需求挤压 commodity memory，价格传导强 |
+| ODM/OEM/rack 集成 | 台湾、中国、美国、墨西哥、东南亚 | Dell、HPE、Supermicro、Lenovo、Foxconn、Quanta/QCT、Wiwynn、Wistron、Inventec、Pegatron、ASUS、Gigabyte | 液冷 rack、power shelf、factory integration、burn-in | 客户认证和产能爬坡比普通服务器难 |
+| 网络/光模块 | 美国、中国、台湾、马来西亚、泰国、越南、墨西哥 | NVIDIA、Broadcom、Arista、Cisco、Marvell、Coherent、Lumentum、Innolight、Eoptolink、Fabrinet、AAOI、Credo | 800G/1.6T、CPO、Silicon Photonics、DSP/SerDes、AEC/DAC | 高速光电芯片和测试是瓶颈；低端组装更容易竞争 |
+| 电力/冷却/MEP | 美国、欧洲、全球供应链 | Vertiv、Schneider、Eaton、Siemens Energy、GE Vernova、Hitachi Energy、Caterpillar、Cummins、Bloom、Delta、nVent、Modine、CoolIT、Trane、Carrier、Jacobs、EMCOR、Quanta Services | switchgear、transformer、UPS、busway、CDU、cold plate、chiller、onsite power | 2026-2028 最强供给约束之一；本地化和认证重要 |
+
+### 4.2 至少 10 条供给瓶颈
+
+| 瓶颈 | 为什么难 | 影响 | 谁有定价权 |
+|---|---|---|---|
+| HBM/HBM4 | TSV、良率、EUV DRAM、客户 LTA/SCA，扩产周期长 | GPU/ASIC 无法交付，推理内存成本上升 | SK hynix、Micron、Samsung、HBM 测试/材料 |
+| CoWoS/2.5D/先进封装 | GPU/ASIC 与 HBM 绑定，设计提前 1-3 年锁定 | Blackwell/Rubin/ASIC 出货非线性 | TSMC、ASE/SPIL、Amkor、Ibiden、Unimicron |
+| 高端 GPU/ASIC allocation | NVIDIA/AMD/Broadcom 优先给大客户和战略伙伴 | 小云商拿不到货，长约议价弱 | NVIDIA、AMD、Broadcom、头部云客户 |
+| rack-scale 集成和验收 | GB200/GB300/NVL72 涉及液冷、电源、网络、软件、现场调试 | 收入确认延迟、客户 acceptance cycle 拉长 | Dell、SMCI、HPE、Foxconn、Quanta、Wiwynn、Vertiv |
+| 电力 interconnection | utility 排队、substation、transmission、PPA、监管 | MW 无法转收入，项目推迟 18-48 个月 | 有电力场址的开发商、utility、IPP、EPC |
+| 变压器/switchgear | 大型电气设备长交期，认证和产能扩张慢 | 上电时间不确定，开发商要提前锁单 | Eaton、Schneider、Siemens Energy、Hitachi、GE Vernova |
+| 液冷可靠性 | 漏液、维护、快速接头、CDU、冷板良率、服务网络 | 高密度 rack 不能稳定运行 | Vertiv、CoolIT、nVent、Modine、Delta、Asetek |
+| 800G/1.6T 光模块关键器件 | EML、CW laser、DSP、SiPh、光对准、测试时间 | 网络成本高、集群利用率受限 | Coherent、Lumentum、Broadcom、Marvell、Innolight、Eoptolink |
+| 运营人才 | 大规模 GPU cluster 需要 SRE、网络、液冷、电力、调度团队 | downtime、低利用率、SLA 罚金 | CoreWeave、Crusoe 等有平台软件和运维经验者 |
+| 融资和资产残值 | GPU 抵押价值受代际切换影响，利率和 covenant 变化快 | 高杠杆云商扩张受限 | 有长约、预付款和低成本资本的玩家 |
+| 许可/水/社区 | AI campus 负荷集中，电价和水资源争议增加 | 项目取消或搬迁 | 有多区域 pipeline 和政治/社区能力者 |
+| 客户信用和集中度 | 大客户长约好融资，但单一客户延期会冲击现金流 | backlog 折价、债务成本上升 | 多客户、多行业、多工作负载平台 |
+
+### 4.3 单位成本和 BOM 拆分
+
+以下为本报告估算，用于数量级判断，不是公司指引。
+
+| 成本对象 | 基准成本范围 | 成本构成 | 毛利决定因素 |
+|---|---:|---|---|
+| 高端 GPU/ASIC AI rack | `$2.5-6.0M/rack`，GB300/Rubin 可更高 | GPU/ASIC `55-70%`；HBM 已在芯片内体现；network/NIC/optics `8-18%`；power shelf/busbar `4-8%`；液冷 `4-10%`；CPU/storage/管理节点 `5-10%`；集成/测试 `4-8%` | GPU ASP、HBM、网络 attach、液冷可靠性、客户验收 |
+| AI factory IT load 1MW | `$25-60M/MW` IT 侧；高端 Rubin/GB300 可到 `$60M+` | 约 150-500 racks，取决于 kW/rack；GPU/ASIC、网络、存储、power shelf | 芯片代际、rack density、网络端口密度 |
+| AI campus facility 1MW | `$8-18M/MW` facility 侧，电力短缺地区更高 | 土地、建筑、MEP、substation、switchgear、UPS/BESS、冷却、消防、调试 | 电力接入、预制化、当地人工、许可 |
+| GPU cloud 收入 `$1` | 成本 `40-70c`，差异极大 | 折旧/租赁 `30-50c`；电力/冷却 `6-15c`；网络/存储 `5-12c`；利息/融资 `6-18c`；人员/软件 `5-10c`；残值准备 `3-12c` | 利用率、合同期限、GPU 残值、电价、租价 |
+| 托管推理收入 `$1` | 成本 `30-65c` | GPU/ASIC compute、KV cache、network egress、软件/SRE、安全合规 | batching、cache hit、模型路由、客户 SLA |
+| AI colo / MW lease 收入 `$1` | 现金成本 `35-55c`，折旧和利息另计 | 电力 pass-through、维护、MEP、地产税、保险、人员 | 租期、电价指数化、PUE、cap rate |
+
+### 4.4 价格传导机制
+
+1. **芯片价格 -> 实例价格**：B200/GB300/Rubin 供不应求时，服务商通过 reserved instance、cluster reservation、minimum commitment 和 setup fee 转嫁。若 GPU 二级残值下跌 20%+，服务商必须提高折旧假设或压低采购。
+
+2. **电力成本 -> MW lease / capacity fee**：优质项目会把电力 pass-through、demand charge、燃料成本和 carbon/REC 写入合同。电力不可得时，客户愿意为 time-to-power 支付溢价。
+
+3. **HBM/DRAM/SSD 上涨 -> 推理服务价格**：长上下文和 KV cache 提高内存/存储占比，推理 token 价格可能下降但底层套餐会按 context length、latency、SLA 和 cache retention 分层收费。
+
+4. **网络短缺 -> premium cluster 溢价**：800G/1.6T、CPO、InfiniBand/Spectrum-X 能减少 GPU idle time，客户会按 goodput 而不是卡数评估。网络强的平台可在同样 GPU 数量下卖更高等效吞吐。
+
+5. **融资成本 -> 合同期限和预付款**：利差扩大时，服务商会要求更长合同、更多预付款、客户信用增强或供应商 financing。Oracle/CoreWeave/IREN 等样本显示客户预付款和硬件供给正在成为标准条款。
+
+## 五、竞争格局与壁垒
+
+### 5.1 市场结构
+
+| 层级 | 市场结构 | 头部集中度判断 | 代表公司 |
+|---|---|---|---|
+| Hyperscaler AI cloud | 极高集中，现金流和自研芯片优势明显 | 前五大云厂商/Oracle 决定大部分新增 AI CapEx | Microsoft Azure、AWS、Google Cloud、Oracle OCI、Meta 内部 |
+| NeoCloud / AI-native cloud | 快速集中，头部拿到长约和融资，尾部短租商分散 | CoreWeave backlog 和 power 领先；Crusoe/Nebius/Nscale/IREN 快速追赶 | CoreWeave、Crusoe、Lambda、Nebius、Nscale、IREN、Vultr、TensorWave、Together、RunPod |
+| AI factory developer / energy-first operator | 从地产开发转向电力和工业项目 | 头部取决于 GW pipeline、电力、EPC、客户 | Crusoe、Nscale、IREN、QTS、Vantage、Switch、Aligned、STACK、DataBank |
+| 托管推理平台 | 软件和模型生态分散，但云厂会内化 | 开源框架强，商业平台靠云/企业渠道 | Together AI、Fireworks、Baseten、Replicate、Modal、Hugging Face、Databricks、Anyscale、CoreWeave |
+| GPU marketplace / spot | 分散且价格透明 | 小玩家多，长期毛利低 | RunPod、Vast.ai、Lambda、Paperspace/DigitalOcean、CUDO、DataCrunch、Genesis Cloud |
+
+### 5.2 壁垒清单：为什么能定价
+
+| 壁垒 | 可量化指标 | 为什么能定价 |
+|---|---|---|
+| GPU/ASIC allocation | 已采购 GPU 数、未来 allocation、NVIDIA Cloud Partner 状态、Rubin/GB300 首批资格 | 客户买的是可用时间。缺货时“能交付”本身就是价格 |
+| 电力和场址 | active/contracted MW/GW、interconnection status、PPA、onsite generation | 电力排队可达数年，有电力的运营商能收 time-to-power 溢价 |
+| 长约客户和 backlog | RPO/backlog、contract tenor、prepayment、top customer concentration | 长约降低融资成本，允许服务商提前锁芯片和电力 |
+| 融资能力 | debt cost、loan-to-value、GPU residual assumption、private credit access | 资本成本低的公司能用同样租价获得更高 ROIC |
+| rack-scale 工程 | rack acceptance cycle、field failure、液冷 attach、SLA uptime | 客户迁移大集群风险高，稳定运行者可收 premium |
+| 网络和集群 goodput | GPU utilization、RDMA performance、P99 latency、job wait time | 客户真正买的是训练/推理完成时间，不是名义 GPU 数 |
+| 软件控制面 | 调度、SUNK/Mission Control、Kubernetes/Slurm、vLLM/SGLang、observability | 软件提高利用率，能把同一硬件卖出更多 token |
+| 安全和多租户 | bare metal isolation、confidential computing、SOC2/HIPAA/FedRAMP、data residency | 企业和模型实验室对数据、模型权重、SLA 敏感，切换成本高 |
+| 生态和客户成功 | 参考架构、framework 支持、模型迁移、SRE | 训练失败或推理延迟造成的业务成本远高于实例折扣 |
+
+### 5.3 价值捕获：哪一层最可能长期高 ROIC / 高毛利
+
+| 价值链层级 | 长期毛利/ROIC 判断 | 原因 |
+|---|---|---|
+| NVIDIA / Broadcom / HBM / 高端 ASIC | 最高 | 控制稀缺核心件和软件生态，GM 可达 60-75%+；客户替代周期长 |
+| AI cloud control plane / 托管推理软件 | 高 | 软件 GM 65-90%，能提升利用率并降低 token cost；但开源和云厂内化会压缩独立厂商 |
+| energy-first AI factory operator | 中高，分化大 | 有电力、长约和低成本资本者可像 utility + cloud 平台；无长约则资本密集且高风险 |
+| AI colo / hyperscale landlord | 中高但受资本成本影响 | EBITDA 40-65%，但 ROIC 取决于 cap rate、power pass-through 和建设风险 |
+| GPU bare-metal NeoCloud | 中高但周期性强 | 短期供不应求时 GM 高；长期被芯片代际和租价透明化压缩 |
+| OEM/ODM/rack 集成 | 收入大、毛利中低 | Dell/HPE/SMCI/ODM 收入爆发，但组件成本和客户议价强，OP margin 多为中低双位数 |
+| 纯 GPU marketplace / reseller | 低到中 | 价格透明、无电力和融资壁垒，容易成为低毛利撮合层 |
+
+## 六、2026 关键变化：行业拐点与最可能放量子方向
+
+### 拐点 1：采购单位从 GPU 数量升级为 GW / AI factory capacity
+
+2026 年最重要的变化是客户不再只问“有多少 H100/B200”，而是问“几百 MW 何时上电，能否给我完整集群、网络、存储、液冷和运维”。证据包括 CoreWeave `>1GW active`、Crusoe `4.9GW contracted`、Nscale/Microsoft `1.35GW LOI`、OpenAI/Oracle `>5GW` Stargate under development。
+
+最可能放量子方向：
+
+- 长约 reserved supercluster。
+- build-operate-transfer 或 build-operate AI factory。
+- 带 onsite power / dedicated substation 的 AI campus。
+- 客户预付款和 GPU/customer-supplied hardware 结构。
+
+### 拐点 2：推理成为 AI cloud 收入主线
+
+Gartner 预计 2026 年 AI-optimized IaaS 中 inference spending `55%`，超过 training。MLSys 2026、NVIDIA GTC、Lambda GTC 反馈都指向同一件事：agentic systems、long context、KV cache、prefill/decode 分离、实时检索和多模型路由会让推理容量持续吃紧。
+
+最可能放量子方向：
+
+- GB300/B300 premium inference。
+- managed inference endpoints。
+- KV cache storage / context memory。
+- inference observability 和 SLO optimizer。
+- GPU/ASIC mixed serving。
+
+### 拐点 3：电力和融资成为比土地更重要的竞争要素
+
+LBNL 预计美国数据中心用电 2028 年达到 `325-580TWh`；IEA 预计全球 2030 年数据中心用电约 `945TWh`。CBRE/JLL 同时显示数据中心 vacancy 低、在建预承诺高，但交付受电力和许可拖累。2026 年开始，NeoCloud 的融资成本、GPU 残值和客户期限将决定扩张速度。
+
+最可能放量子方向：
+
+- onsite gas generation、BESS、microgrid。
+- 中压配电、switchgear、transformer、UPS、busway。
+- 液冷和 power shelf。
+- GPU-backed financing、prepayment、asset-backed credit。
+
+## 七、2027 关键变化：行业拐点与最可能放量子方向
+
+### 拐点 1：Rubin/MI400/Trainium3/TPU 后续把 2027 变成第二轮架构周期
+
+2027 年的关键不是继续买 Hopper/Blackwell，而是 Rubin NVL72、MI400/MI455/Helios、Trainium3、TPU 后续和 custom ASIC 的产品化。HBM4、NVLink 6、1.6T/CPO、BlueField-4 STX、Vera CPU、UALink/UEC 会使采购从“卡”转向“rack / pod / factory”。
+
+最可能放量子方向：
+
+- Rubin reserved capacity。
+- MI400/Helios 第二供应云。
+- TPU/Trainium 外部客户容量。
+- STX/context memory 存储。
+- 1.6T/CPO AI backend。
+
+### 拐点 2：NeoCloud 分化为 AI utility 与高杠杆租赁商
+
+到 2027 年，GPU 供给会比 2026 更宽，但电力、HBM4、上电速度和利用率仍是约束。头部公司若能锁住 5-10 年客户、低成本 debt、客户预付款和电力资产，会更像 AI utility；小型短租商会面对 spot price 下行、残值折价和客户议价。
+
+上修到乐观/极度乐观需要：
+
+- backlog 增速继续高于 revenue。
+- 新债利差稳定或下降。
+- GPU 残值没有 20%+ 下修。
+- 大集群 utilization 维持 `70-80%+`。
+- 客户从 AI labs 扩展到企业和主权 AI。
+
+### 拐点 3：推理软件、存储和能效控制面重定价
+
+2027 年服务商的差异会从“谁有 GPU”转向“谁能把 GPU 转成低成本、高 SLA、可审计的 token”。Dynamo、vLLM/SGLang、KV cache router、CXL/SOCAMM、STX/CMX、DSX digital twin、token per watt 会成为毛利的核心。
+
+最可能放量子方向：
+
+- 推理调度和 router。
+- AI-native storage / KV cache。
+- confidential bare metal / secure multi-tenant cluster。
+- DSX / power-flex / digital twin operations。
+- workload-aware pricing。
+
+## 八、头部公司和技术优势公司清单
+
+### 8.1 AI cloud / NeoCloud / GPU 云
+
+| 公司 | 细分定位 | 优势 | 风险 |
+|---|---|---|---|
+| CoreWeave | AI-native cloud、reserved cluster、NVIDIA 深度伙伴 | `$99.4B` backlog、`>1GW` active、NVIDIA `>5GW` 协作、平台软件 | 客户集中、债务/利息、capex 和利用率 |
+| Lambda | AI-native bare metal、NVIDIA Cloud Partner | Vera Rubin H2 2026 bare-metal、Quantum-X/BlueField 生态、开发者品牌 | 规模和融资披露少于 CoreWeave |
+| Crusoe | energy-first AI factory + Crusoe Cloud | `4.9GW` contracted、`>40GW` pipeline、Abilene 2.1GW、onsite power/prefab | 项目执行、燃气/环保/社区、客户集中 |
+| Nebius | AI cloud、Meta 长约、全球扩张 | Meta `$27B` 五年结构；欧洲/中东/美国扩张 | 资本投入大、交付和客户集中 |
+| Nscale | AI factory、Microsoft/NVIDIA/Caterpillar | Microsoft 1.35GW LOI、West Virginia Monarch microgrid up to 8GW | 2027 后交付，LOI 转合同和融资需验证 |
+| IREN | 电力资产 + AI cloud | NVIDIA up to 5GW DSX-aligned partnership；150,000 GPU fleet 目标；Sweetwater 2GW | 从矿业转 AI，合同和利用率需持续验证 |
+| Oracle OCI | Hyperscaler/AI cloud | RPO `$638B`、Stargate/AI contracts、客户预付款/供硬件结构 | capex、FCF、AI IaaS margin |
+| Microsoft Azure | Hyperscaler AI cloud | OpenAI/M365/Copilot demand、RPO `$627B`、Fairwater/Rubin | capex 高、OpenAI 合同复杂 |
+| AWS | Hyperscaler + Trainium | AWS `$37.6B` Q1 revenue、chips run-rate `>$20B`、Trainium/Bedrock | 自研芯片迁移和客户生态 |
+| Google Cloud | TPU/AI cloud | Cloud backlog `>$460B`、TPU、Gemini Enterprise | TPU 外部可用性和供应 |
+| Vultr | GPU cloud/enterprise cloud | 全球区域和开发者客户 | 与头部相比 power/GPU allocation 弱 |
+| TensorWave | AMD GPU cloud | MI300/MI350/MI400 第二供应路线 | AMD 软件生态和规模 |
+| Together AI | 推理云和模型服务 | 推理平台、开发者生态 | 硬件资本和毛利 |
+| RunPod / Vast.ai | GPU marketplace | 价格透明、长尾供给 | 低壁垒、SLA 和企业采购弱 |
+| Fluidstack / GMI Cloud / DataCrunch / Genesis Cloud / CUDO / Paperspace | 专用 GPU 云和区域供应 | 垂直客户和区域覆盖 | 融资、电力、供应链和价格竞争 |
+
+### 8.2 数据中心运营商、开发商和 colo
+
+| 类别 | 公司 |
+|---|---|
+| 全球/北美核心 colo | Equinix、Digital Realty、QTS、Vantage Data Centers、CyrusOne、Switch、STACK Infrastructure、Aligned、DataBank、Flexential、Compass、EdgeCore、NTT Global Data Centers |
+| 欧洲/中东/区域 | DATA4、Yondr、Global Switch、atNorth、NorthC、Khazna、Gulf Data Hub、Singtel DC、STT GDC |
+| AI factory/energy-first 新型开发 | Crusoe、Nscale、IREN、Applied Digital、TeraWulf、Soluna、Lancium、Core Scientific 转型路径 |
+| 工程/EPC/MEP | Jacobs、EMCOR、Quanta Services、MYR Group、MasTec、AECOM、Fluor、Black & Veatch、Burns & McDonnell |
+
+### 8.3 芯片、服务器、网络、存储、软件、能源链
+
+| 细分 | 头部公司和技术优势公司 |
+|---|---|
+| GPU/AI accelerator | NVIDIA、AMD、Intel Gaudi、Cerebras、Groq、SambaNova、Tenstorrent、d-Matrix、Positron AI |
+| 云厂自研 ASIC | Google TPU、AWS Trainium/Inferentia、Microsoft Maia、Meta MTIA、Broadcom custom XPU、Marvell custom silicon |
+| ASIC/IP/EDA | Broadcom、Marvell、Alchip、GUC、MediaTek、Synopsys、Cadence、Siemens EDA、Rambus、Astera Labs、Credo |
+| HBM/内存/存储 | SK hynix、Samsung、Micron、Solidigm、Kioxia、WDC、Seagate、Pure Storage、NetApp、VAST Data、WEKA、DDN、Cloudian、MinIO |
+| 服务器/OEM/ODM | Dell、HPE、Supermicro、Lenovo、Foxconn、Quanta/QCT、Wiwynn、Wistron、Inventec、Pegatron、ASUS、Gigabyte、MiTAC、AIC |
+| 网络/光互联 | NVIDIA Networking、Broadcom、Arista、Cisco、HPE/Juniper、Marvell、Coherent、Lumentum、Innolight、Eoptolink、Fabrinet、AAOI、Credo、Amphenol、Molex、TE、Samtec、Corning |
+| 冷却/液冷 | Vertiv、Schneider Electric、CoolIT、nVent、Modine、Asetek、Delta、Boyd、ZutaCore、Submer、STULZ、Carrier、Trane、Johnson Controls |
+| 电力/配电/发电 | Eaton、Schneider、Vertiv、Siemens Energy、Hitachi Energy、GE Vernova、Caterpillar、Cummins、Bloom Energy、Fluence、Tesla Energy、Powell、Hubbell、Legrand、nVent |
+| 调度/推理软件 | NVIDIA Dynamo/TensorRT-LLM/Mission Control/DSX、CoreWeave SUNK/Mission Control、Kubernetes、Slurm、Ray/Anyscale、vLLM、SGLang、FlashInfer、LMCache、Databricks、Modal、Baseten、Fireworks、Replicate、Hugging Face |
+| 金融和资产资本 | Blue Owl、Blackstone、Brookfield、KKR、Ares、Apollo、DigitalBridge、Macquarie、JPMorgan、Morgan Stanley、Dell Financial Services、HPE Financial Services、供应商融资平台 |
+
+## 九、三情景总预测
+
+### 9.1 行业收入和合约池
+
+| 年份/窗口 | 基准 | 乐观 | 极度超预期乐观 | 解释 |
+|---|---:|---:|---:|---|
+| 2026Q3 观察窗口新增签约 | `$70-140B` | `$140-240B` | `$240-400B` | 包括 reserved cluster、AI factory lease、GPU financing，不等于当季收入 |
+| 2026 全年可确认 AI cloud/NeoCloud/托管容量收入 | `$55-85B` | `$85-130B` | `$130-190B` | 含 AI-optimized IaaS、NeoCloud、托管推理、AI factory ops |
+| 2027 可确认收入 | `$105-170B` | `$170-280B` | `$280-430B` | Rubin/GB300/MI400/Trainium/TPU 和推理容量拉动 |
+| 2028 可确认收入/run-rate | `$180-320B` | `$320-520B` | `$520-800B` | 前提是 agentic AI、企业 AI 和主权 AI 兑现 |
+| 2026-2028 累计合约/融资/容量承诺池 | `$600B-1.0T` | `$1.0-1.8T` | `$1.8-3.0T` | 大量为多年 RPO、MW lease、客户预付款和项目融资 |
+
+### 9.2 渗透率路径
+
+| 口径 | 2026 基准 | 2027 基准 | 2028 基准 | 乐观/极度乐观上限 |
+|---|---:|---:|---:|---:|
+| AI-optimized IaaS 中推理占比 | `55%` | `60-65%` | `65-70%` | `75%+` |
+| 100MW+ AI 项目采用外包/合作运营比例 | `20-30%` | `35-50%` | `45-60%` | `65%+` |
+| 高端 AI cloud 容量采用 reserved/multi-year commitment | `45-60%` | `55-70%` | `60-80%` | `85%+` |
+| 新建高密度 AI rack 液冷渗透率 | `40-55%` | `55-75%` | `70-85%` | `90%+` |
+| AI cloud 中非 NVIDIA GPU/ASIC 容量 | `10-20%` | `20-35%` | `30-45%` | `50%+` |
+| 大型推理平台采用 KV cache / disaggregated serving | `10-20%` | `35-55%` | `60-80%` | `85%+` |
+
+## 十、主要风险和证伪指标
+
+| 风险 | 证伪阈值 | 影响 |
+|---|---|---|
+| AI 收入不覆盖 CapEx | 未来 2 个季度云 AI/AI ARR 增速低于 AI CapEx 增速 20pct+ | 下修外包容量和 GPU 长约 |
+| GPU 租价下跌 | H100/B200/GB200 spot 或 reserved 价格连续 2 季跌 20%+，且利用率不升 | 压缩 NeoCloud 毛利和 GPU 抵押价值 |
+| GPU 残值重估 | 12 个月残值假设下调 20%+ | 债务成本上升，融资窗口变窄 |
+| HBM/CoWoS 过度缓解 | HBM ASP 连续 2 季跌 10%+，CoWoS lead time 回到 26 周以内 | 上游定价权下降，但可能提升下游交付 |
+| 电力项目延期 | 重点区域 interconnection 或 transformer 交期延长、项目取消 | MW 无法转收入，AI factory 回收期拉长 |
+| 客户集中恶化 | top 3 customers revenue share 上升且合同缩短 | backlog 折价，债务 covenant 更紧 |
+| 监管和社区反弹 | 多州 moratorium、utility rate case、用水/排放许可被推迟 | 项目选址和交付延迟 |
+| 自研 ASIC 降低 GPU 云溢价 | TPU/Trainium/Maia/MTIA 在推理 workload 中证明 TCO 明显更低 | 纯 GPU 云长期 ASP 下行，混合平台受益 |
+
+## 十一、研究结论
+
+1. 2026 年行业最确定的赚钱方式不是“买任何 GPU 都能赚钱”，而是“以长约客户和电力确定性为核心，提前锁定 Blackwell/GB300/MI350/TPU/Trainium/ASIC 容量，并把它包装成 reserved cluster、managed inference 和 AI factory capacity”。
+
+2. 2027 年行业胜负会由 Rubin、MI400/Helios、HBM4、1.6T/CPO、STX/KV cache、DSX/token-per-watt 和 onsite power 决定。单纯按卡出租的模式会被更复杂的 AI factory 产品替代。
+
+3. 长期高 ROIC 更可能出现在三类公司：第一，掌握 GPU/ASIC/HBM/网络核心件的平台；第二，拥有电力、场址、长约和低成本资本的 AI factory operator；第三，能显著提高利用率和 token cost 的推理/调度/存储软件控制面。
+
+4. 行业应该继续保持乐观，但必须用反证纪律管理：利用率、租价、残值、融资成本、电力上电、客户合同期限和云 AI 收入，是判断“AI 云算力外包繁荣能否延续”的七个核心仪表盘。
+
+## 十二、资料来源和验证
+
+### 项目内资料
+
+| 来源 | 使用内容 |
+|---|---|
+| `行业调研/行业索引.md` | 标准行业名称和所属目录 |
+| `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md` | 2026/2027 主要 AI 芯片技术路径、产能释放金额和三情景 |
+| `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` | AI 数据中心 CapEx、客户群、订单池、服务器/网络/电力映射 |
+| `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md` | HBM/CoWoS/电力/NeoCloud 融资反证指标 |
+| `行业调研/产业背景/全球AI需求与Token经济框架_2026-06-11.md` | token 需求、H100e/B200e、推理需求和 AI cloud 框架 |
+| `行业调研/产业背景/顶级会议信息/*2026*.md` | GTC、Datacloud、Data Center World、MLSys、OFC、PCI-SIG、Xcelerated Compute 等会议信号 |
+
+### 外部一手和高置信资料
+
+| 来源 | 日期 | 关键信息 |
+|---|---:|---|
+| [CoreWeave Q1 2026 results](https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-First-Quarter-2026-Results/) | 2026-05-07 | revenue `$2.078B`，backlog `$99.4B`，`>1GW` active power，Meta `$21B` commitment |
+| [CoreWeave / NVIDIA collaboration](https://www.coreweave.com/news/nvidia-and-coreweave-strengthen-collaboration-to-accelerate-buildout-of-ai-factories) | 2026-01-26 | NVIDIA 投资 `$2B`，CoreWeave 目标 `>5GW` AI factories by 2030，采用 Rubin/Vera/BlueField |
+| [Oracle FY2026 Q4 results](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx) | 2026-06-10 | RPO `$638B`，Q4 IaaS `$5.8B`，FY2026 IaaS `$18.1B` |
+| [OpenAI Stargate 4.5GW Oracle update](https://openai.com/index/stargate-advances-with-partnership-with-oracle/) | 2025-07-22 | 额外 `4.5GW`，合计 `>5GW` under development，`>2M` chips，`$500B/10GW` 目标 |
+| [Microsoft FY2026 Q3 call](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3) | 2026-04-29 | capex `$31.9B`，约 `2/3` 为 GPU/CPU，RPO `$627B`，Azure demand 超过 capacity |
+| [Amazon Q1 2026 SEC exhibit](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260331xex991.htm) | 2026-04-29 | AWS `$37.6B`，AWS operating income `$14.2B`，AI PPE 增，chips run-rate `>$20B` |
+| [Alphabet Q1 2026 SEC exhibit](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm) | 2026-04-29 | Google Cloud `+63%`，backlog `> $460B`，Gemini Enterprise paid MAU `+40% QoQ` |
+| [Meta Q1 2026 PR](https://www.prnewswire.com/news-releases/meta-reports-first-quarter-2026-results-302757852.html) | 2026-04-29 | revenue `$56.31B`，capex `$19.84B`，2026 capex guide `$125-145B` |
+| [NVIDIA FY2027 Q1 results](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027) | 2026-05-20 | revenue `$81.6B`，Data Center `$75.2B`，compute `$60.4B`，networking `$14.8B`，GM `75.0%` |
+| [NVIDIA Rubin platform](https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer) | 2026 | Rubin/Vera/NVLink6/BlueField-4/STX/Spectrum-6，首批云包括 AWS/GCP/Azure/OCI/CoreWeave/Lambda/Nebius/Nscale |
+| [AMD Q1 2026 results](https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results) | 2026-05-05 | Data Center `$5.8B`，Meta up to `6GW` Instinct，MI450/MI455/HBM4 线索 |
+| [Broadcom Q2 FY2026 results](https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial) | 2026-06-03 | AI semiconductor revenue `$10.8B`，Q3 AI semiconductor guide `$16.0B` |
+| [Dell FY2027 Q1 results](https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm) | 2026-05-28 | AI orders `$24.4B`，AI server revenue `$16.1B`，FY27 AI server guide `~$60B` |
+| [Crusoe contracted capacity](https://www.crusoe.ai/resources/newsroom/crusoes-contracted-ai-infrastructure-capacity-approaches-5-gigawatts-across-data-centers-and-cloud) | 2026-06-09 | contracted `4.9GW`，development pipeline `>40GW`，five campuses |
+| [Crusoe Microsoft Abilene 900MW](https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure) | 2026-03-27 | Microsoft 900MW Abilene campus，full Abilene site `~2.1GW` |
+| [Nebius Q1 2026 shareholder letter](https://assets.nebius.com/assets/aa1bc2e6-df83-40cd-a6a2-95e7cda3d16c/Nebius%20SHL_Q1%202026.pdf?cache-buster=2026-05-13T14%3A00%3A35.352Z) | 2026-05 | Meta `$27B` five-year agreement，含 `$12B` purchase + `$15B` capacity optionality |
+| [IREN 150,000 GPU SEC exhibit](https://www.sec.gov/Archives/edgar/data/1878848/000114036126007905/ny20064909x3_ex99-1.htm) | 2026-03-04 | 50,000+ B300 purchase，fleet 150,000 GPUs，target AI Cloud run-rate `>$3.7B` |
+| [NVIDIA / IREN 5GW partnership](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-IREN-Announce-Strategic-Partnership-to-Accelerate-Deployment-of-up-to-5-Gigawatts-of-AI-Infrastructure/default.aspx) | 2026-05-07 | up to `5GW` DSX-aligned AI infrastructure，NVIDIA investment right up to `$2.1B` |
+| [Nscale / Microsoft 1.35GW](https://www.nscale.com/press-releases/nscale-west-virginia-ai-factory) | 2026-03-16 | Microsoft LOI `1.35GW` AI compute，Monarch campus microgrid potential `8GW+` |
+| [Gartner AI-optimized IaaS](https://www.gartner.com/en/newsroom/press-releases/2025-10-15-gartner-says-artificial-intelligence-optimized-iaas-is-poised-to-become-the-next-growth-engine-for-artificial-intelligence-infrastructure) | 2025-10-15 | AI-optimized IaaS 2026 `$37.5B`，inference `$20.6B`、55% |
+| [TrendForce AI server shipments](https://www.trendforce.com/presscenter/news/20260120-12887.html) | 2026-01-20 | 2026 AI server shipments `>28%` YoY，GPU `69.7%`，ASIC `27.8%` |
+| [TrendForce AI optical transceiver](https://www.trendforce.com/presscenter/news/20260420-13017.html) | 2026-04-20 | AI optical transceiver 2025 `$16.5B` -> 2026 `$26B`，`+57%` |
+| [CBRE H2 2025 Data Center Trends](https://www.cbre.com/insights/books/north-america-data-center-trends-h2-2025) | 2026 | primary markets under construction `5,994.4MW`，power/permitting delays |
+| [JLL YE2025 North America Data Center](https://www.jll.com/en-us/insights/market-dynamics/north-america-data-centers) | 2026-02-17 | vacancy `1%`，92% under construction precommitted，North America `>35GW` under construction |
+| [Berkeley Lab data center electricity](https://newscenter.lbl.gov/2025/01/15/berkeley-lab-report-evaluates-increase-in-electricity-demand-from-data-centers/) | 2025-01-15 | 美国 2023 `176TWh`，2028 `325-580TWh` |
+| [IEA Energy demand from AI](https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai) | 2025/2026 检索 | 全球 data center electricity 2030 base case `~945TWh` |

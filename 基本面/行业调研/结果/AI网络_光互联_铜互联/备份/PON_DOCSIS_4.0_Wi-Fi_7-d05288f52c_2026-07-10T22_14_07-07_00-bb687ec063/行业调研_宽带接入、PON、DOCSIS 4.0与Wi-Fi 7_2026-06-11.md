@@ -1,0 +1,460 @@
+# 行业调研：宽带接入、PON、DOCSIS 4.0与Wi-Fi 7（2026-2028）
+
+报告日期：2026-06-11  
+标准行业名：宽带接入、PON、DOCSIS 4.0与Wi-Fi 7  
+归属目录：AI网络_光互联_铜互联  
+资料边界：项目内只参考 `基本面/行业调研/产业背景/` 下资料，未读取、引用或继承 `公司调研/`、`日度资料/`、`特征量化/` 或其他目录内容。外部资料优先采用公司公告、标准组织、技术论坛、财报/IR、行业报告公开摘要和少量低权重非正式线索。  
+核心口径：本报告把宽带接入行业拆成四层，不把 AI 数据中心 CapEx 机械加入家庭宽带设备收入：1）PON OLT/ONT/光模块/光接入平台；2）DOCSIS 4.0 DAA/vCMTS/RPD/节点/放大器/电缆网关；3）Wi-Fi 7 企业 AP、住宅 CPE、运营商网关和芯片；4）AI-native 网关、边缘推理节点、AIOps/体验保障软件。  
+
+## 一、结论先行
+
+### 1.1 投资结论
+
+1. **2026 年最确定的放量方向是 Wi-Fi 7，不是 50G PON，也不是 DOCSIS 4.0 终端大规模普及。** Dell'Oro 2026-06-04 披露 2026Q1 WLAN 市场已连续 5 个季度双位数增长，Wi-Fi 7 收入三位数增长，Wi-Fi 7 仅占当季 Indoor AP 出货的 37%，说明渗透率仍有明显上行空间；IDC 披露 2025Q4 全球企业 WLAN 市场 $2.9B、同比 +13.9%，Wi-Fi 7 已占 dependent AP 收入 39.7%，全年企业 WLAN $10.5B。
+2. **PON 的真实主线仍是 XGS-PON/10G PON，25G/50G PON 是高端企业、移动回传、AI 边缘站点、园区和局部竞争性宽带的期权。** Dell'Oro 2026-01 预测 2025-2030 宽带接入设备收入 CAGR 仅 0.3%，2028 年峰值 $18.8B，且明确下修 50G PON 部署节奏；PON 设备收入 2025-2030 CAGR 1.9%，由北美、EMEA、CALA 的 XGS-PON 和中国 FTTR 推动。
+3. **DOCSIS 4.0 在 2026 年从“互通验证/少量市场”进入“外场硬件与 vCMTS 采购加速”，但投资弹性集中在 vCMTS 软件、RPD、节点、放大器、统一 DOCSIS 芯片和工程服务，不在低毛利零售 cable modem。** CableLabs 2026-03 披露多厂商 DOCSIS 4.0 互通已实现 14Gbps/16.25Gbps 下行演示，2026 年将开始规模部署；Dell'Oro 披露 2025 年 DOCSIS 基础设施支出同比 -21%、Remote PHY -47%，但预计 2026 年随 DAA 和 DOCSIS 4.0 升级显著回升。
+4. **AI 数据中心建设对本行业的影响是二阶但可交易：不是直接买 PON/DOCSIS/Wi-Fi 7 进 AI 训练集群，而是推动边缘推理、企业 AI、AI PC/终端、园区网络、运维自动化和上行/低时延体验需求。** 本地产业背景给出 2026 美国 AI 数据中心建设务实情景 $310-390B、2027 $430-560B，AI 芯片 2026 产能释放金额务实 $375-520B、乐观 $520-720B。它会拉动 AI edge/campus connectivity，但不会把传统家宽 OLT/ONT 市场变成高增长半导体市场。
+5. **最优价值捕获层：Wi-Fi/PON/DOCSIS merchant silicon、企业 WLAN 软件订阅、vCMTS/DAA 软件、运营商体验保障/AIOps、可同时支持 GPON/XGS/25G/50G 的 OLT 平台。** 低端 ONT、白牌网关、被动光缆和普通连接器收入大，但毛利和定价权弱。
+
+### 1.2 2026 最可能的技术路径
+
+| 子领域 | 2026 最可能主路径 | 2026 不太可能成为主路径 | 判断 |
+|---|---|---|---|
+| 光纤接入 | GPON 存量 + XGS-PON 新建/升级 + FTTR/mesh Wi-Fi 7 | 50G PON 大规模住宅普及 | XGS-PON 性能/成本/功耗平衡最好，50G PON 仍需企业和回传用例拉动 |
+| 下一代 PON | 25G PON 企业/园区/移动回传，50G PON 商用试点 | 100G PON 批量 | 25G 可复用成熟 25G 光器件生态，50G 标准明确但 optics/ONT 成本仍高 |
+| Cable/HFC | 高分裂、DAA、vCMTS、RPD、智能放大器、DOCSIS 4.0 FDX/ESD 局部扩张 | 全面 HFC 3GHz/6GHz 或 DOCSIS 5.0 | 1.2GHz/1.8GHz 改造与 D4.0 是现实主线；3GHz 是 2027-2029 期权 |
+| WLAN | Wi-Fi 7 Indoor AP、运营商 Wi-Fi 7 网关、云管 WLAN、AIOps | Wi-Fi 8 收入放量 | Wi-Fi 8 芯片 2026 样品/早期客户，标准和规模化更偏 2028 后 |
+| AI 关联 | AI QoE、edge inference gateway、低时延游戏/广告/小企业 agent、园区 AI Wi-Fi | 宽带接入直接进入 AI 训练集群核心网络 | AI 集群内部用 800G/1.6T Ethernet/IB/光互联，不用 PON/DOCSIS/Wi-Fi 做后端 fabric |
+
+### 1.3 三情景总量表，窄口径设备与软件收入
+
+单位：亿美元，全球，按未来 3 个月、1 年、2 年滚动窗口。窄口径只含设备、CPE、芯片可见价值和软件许可/订阅，不含运营商宽带服务收入、土建施工总额、云 AI 服务收入。
+
+| 产品/技术 | 当前阶段 | 未来3个月 基准/乐观/极度乐观 | 未来1年 基准/乐观/极度乐观 | 未来2年 基准/乐观/极度乐观 | 渗透率路径 |
+|---|---|---:|---:|---:|---|
+| XGS-PON OLT/ONT/光接入平台 | 放量主力 | 22-30 / 30-36 / 36-42 | 88-118 / 118-145 / 145-165 | 95-135 / 135-165 / 165-190 | 新建 PON 端口中 2026 约 45-65%，2027 约 60-75%，2028 约 70-85% |
+| GPON/EPON 存量与低端 ONT | 高量低增 | 10-16 / 16-18 / 18-20 | 35-55 / 55-62 / 62-68 | 28-45 / 45-55 / 55-60 | 新建占比下降，存量替换仍大 |
+| 25G PON | 局部放量 | 0.4-0.9 / 0.9-1.5 / 1.5-2.2 | 1.5-4.5 / 4.5-7.5 / 7.5-12 | 4-12 / 12-20 / 20-32 | PON 新端口收入渗透 2026 <2%，2028 3-8% |
+| 50G PON | 早期商用/试点 | 0.2-0.8 / 0.8-1.8 / 1.8-3.5 | 1.2-6 / 6-12 / 12-24 | 5-22 / 22-38 / 38-60 | 2026 低个位数收入占比，2028 基准仍非住宅主流 |
+| DOCSIS 4.0 DAA/vCMTS/RPD/节点/放大器 | 2026 加速 | 2.5-5.5 / 5.5-8 / 8-12 | 11-21 / 21-32 / 32-45 | 16-32 / 32-50 / 50-75 | Cable HFC passings 中 D4 覆盖 2026 <5%，2028 15-30%，极乐观 35%+ |
+| DOCSIS 4.0 cable modem/gateway | 初期 CPE 替换 | 0.8-2 / 2-3.5 / 3.5-5 | 5-12 / 12-20 / 20-32 | 10-22 / 22-38 / 38-55 | D4 用户端渗透滞后网络覆盖 6-18 个月 |
+| 企业 Wi-Fi 7 AP/控制器/云管软件 | 明确放量 | 13-18 / 18-23 / 23-28 | 55-80 / 80-105 / 105-125 | 85-120 / 120-150 / 150-180 | Indoor AP 出货 2026Q1 37%，2027 55-70%，2028 80-90%+ |
+| 住宅 Wi-Fi 7 router/mesh/运营商 CPE | 快速放量 | 11-18 / 18-24 / 24-32 | 45-70 / 70-90 / 90-115 | 70-100 / 100-125 / 125-155 | 住宅 Wi-Fi 7 路由器 2025 出货 +211%，2028 Dell'Oro 住宅 Wi-Fi 7 CPE 收入 $79 亿 |
+| AI-native Wi-Fi/PON gateway NPU、edge CPE | 早期样品/高端 | 0-0.5 / 0.5-1.2 / 1.2-2.5 | 2-8 / 8-16 / 16-30 | 10-30 / 30-60 / 60-100 | 2026 高端网关导入，2027-2028 取决于运营商 AI 服务闭环 |
+| 宽带 AIOps/QoE/家庭网络软件 | 已放量但口径分散 | 5-8 / 8-12 / 12-16 | 22-35 / 35-50 / 50-70 | 35-60 / 60-85 / 85-120 | 与 Wi-Fi 7、FTTR、运营商 managed Wi-Fi attach 同步上升 |
+
+## 二、AI 数据中心建设对宽带接入行业的机会和挑战
+
+### 2.1 机会：AI 不是直接替代家宽，而是把“边缘、企业、园区、终端”推向高性能连接
+
+本地产业背景显示，2026-2027 AI 芯片路径以 NVIDIA Blackwell/Blackwell Ultra/GB300、2026H2 Rubin 导入、AMD MI350/MI400、Google TPU v7 Ironwood、AWS Trainium3、Microsoft Maia 200、Meta MTIA 300/400 等为主，核心约束是 HBM、CoWoS/先进封装、液冷、电力和 800G/1.6T 网络。对本行业的映射如下：
+
+| AI 芯片/AI 基础设施趋势 | 对宽带接入的实际影响 | 受益强度 |
+|---|---|---|
+| 2026 大规模 GPU/ASIC 训练集群 | 数据中心内部用 Ethernet/InfiniBand、光模块、交换芯片，不用 PON/DOCSIS/Wi-Fi | 弱直接、强间接 |
+| 2027 推理、agent、企业 AI 消化已建算力 | 企业分支、园区、门店、工厂、医院需要低时延 WLAN、XGS-PON/25G PON 回传、边缘缓存 | 中到强 |
+| AI PC、AI 手机、XR、工业视觉 | Wi-Fi 7 的 MLO、320MHz、4K QAM、6GHz、AIOps 和多千兆 uplink 价值上升 | 强 |
+| Comcast/NVIDIA 这类 network edge AI | Cable/telco 边缘机房可承载推理，DOCSIS 4.0 FDX、智能网关、低时延 LLD 成为服务卖点 | 中，极乐观下强 |
+| AI 数据中心挤占 DRAM/NAND/封装产能 | Wi-Fi AP/CPE BOM 上涨，Dell'Oro 已提示 WLAN 厂商涨价以补偿 memory 成本 | 短期利好 ASP、压制低端毛利 |
+| AI 工厂外溢到园区/能源/安全 | Passive Optical LAN、XGS/25G PON、Wi-Fi 7、private 5G/6G 的融合需求上升 | 中 |
+
+### 2.2 挑战：AI 叙事容易高估本行业收入弹性
+
+1. **AI 数据中心后端网络不采用 PON/DOCSIS/Wi-Fi。** PON 是点到多点接入，DOCSIS 是 HFC 接入，Wi-Fi 是无线局域接入；AI training fabric 需要确定性、无阻塞、低尾延迟、高带宽和 RDMA/collective 优化，主路径是 800G/1.6T Ethernet、InfiniBand、NVLink、UALink、光模块和交换 ASIC。
+2. **运营商宽带 CapEx 受 ARPU、竞争、利率和补贴节奏约束。** Dell'Oro 2026-01 下修 50G PON，理由是消费带宽增长放缓和运营商需要维持利润。
+3. **AI boom 推高 BOM，不一定推高净利率。** 2026Q1 WLAN 价格开始上行，但 memory 组件短缺未解决，设备交期波动。能转嫁价格的是 Cisco/HPE/Juniper/Ubiquiti/Calix 这类有品牌、软件和渠道的厂商，白牌 CPE 更容易被夹击。
+4. **DOCSIS 4.0 的真实瓶颈在外场工程和认证。** taps、passives、amps、RPD、vCMTS、cable modem、频谱规划、家庭布线和客服流程都要同时就绪；网络覆盖和付费用户渗透之间会有 6-18 个月滞后。
+5. **50G PON 的硬件成熟不等于市场成熟。** Nokia、Adtran、Broadcom 均已有方案，但大规模住宅部署需要 50G optics、ONT 成本、功耗、可用套餐、竞品压力和企业 SLA 收入同时成立。
+
+## 三、正在放量的关键产品
+
+### 3.1 XGS-PON/10G PON：2026 光纤主线
+
+**技术状态：**成熟。GPON/EPON 仍是存量，XGS-PON 是新建和升级主力，FTTR 在中国持续拉动住宅内光纤和 Wi-Fi 组合。Omdia/Nokia 白皮书曾给出 XGS-PON OLT port 从 2022 年 230 万增长到 2028 年 1340 万的路径，2026 处在中段放量。  
+**关键事实：**Point Topic 披露 2025Q3 全球固定宽带订阅中 FTTH/B 占比 73.1%，同比 FTTH/B 连接 +7.1%；Dell'Oro 披露 2025 PON ONT 出货 1.58 亿台。  
+**AI 关联：**企业 AI、AI 监控、远程开发、云游戏、上行备份、边缘缓存会提高低时延/对称宽带价值，但 XGS-PON 的主要收入仍来自 fiber overbuild、铜缆/HFC 替代、政府补贴和运营商竞争。
+
+| 指标 | 基准 | 乐观 | 极度超预期乐观 |
+|---|---:|---:|---:|
+| 未来3个月市场规模 | $22-30 亿 | $30-36 亿 | $36-42 亿 |
+| 未来1年市场规模 | $88-118 亿 | $118-145 亿 | $145-165 亿 |
+| 未来2年市场规模 | $95-135 亿 | $135-165 亿 | $165-190 亿 |
+| 毛利率，系统厂商 | 35-45% | 40-50% | 45-55% |
+| 毛利率，ONT/CPE | 15-25% | 20-30% | 25-35% |
+| 关键定价权 | OLT 平台、管理软件、运营商认证、现网兼容、低功耗 | 同左 + 交付紧张 | 同左 + 补贴项目集中采购 |
+
+### 3.2 Wi-Fi 7 企业 AP 与云管 WLAN：2026 最强确定性
+
+**技术状态：**已放量。Wi-Fi 7 的核心是 320MHz、MLO、4K QAM、MRU、低时延调度和 6GHz。企业采购从 Wi-Fi 6E/6 迁移到 Wi-Fi 7，叠加校园交换机多千兆/10GbE uplink、PoE++、AIOps 和 SASE/零信任平台整合。  
+**关键事实：**Dell'Oro 披露 2026Q1 WLAN 收入连续 5 个季度双位数增长，AP 出货 +14%，Wi-Fi 7 收入三位数增长，Cisco、Ubiquiti、Huawei 领先 Wi-Fi 7 市场，但 Wi-Fi 7 仅占 Indoor AP 出货 37%。IDC 披露 2025Q4 企业 WLAN 市场 $2.9B、同比 +13.9%，Wi-Fi 7 占 dependent AP 收入 39.7%，全年市场 $10.5B。  
+**AI 关联：**企业 AI agent、视频会议、AI PC、视觉终端、机器人、XR、仓储/医院/制造边缘设备增加 Wi-Fi 7 对低延迟、稳定性和多设备密度的价值。AI 同时带来 memory shortage，短期支持 ASP 上行。
+
+| 指标 | 基准 | 乐观 | 极度超预期乐观 |
+|---|---:|---:|---:|
+| 未来3个月企业 Wi-Fi 7 市场规模 | $13-18 亿 | $18-23 亿 | $23-28 亿 |
+| 未来1年市场规模 | $55-80 亿 | $80-105 亿 | $105-125 亿 |
+| 未来2年市场规模 | $85-120 亿 | $120-150 亿 | $150-180 亿 |
+| Indoor AP 出货渗透率 | 2026 年底 45-55% | 55-65% | 65-72% |
+| 2028 收入渗透率 | 75-85% | 85-92% | 90%+ |
+| 系统毛利率 | 45-60% | 50-65% | 55-70% |
+| 软件/订阅毛利率 | 65-80% | 70-85% | 75-88% |
+
+### 3.3 住宅 Wi-Fi 7 网关、mesh 与运营商 CPE
+
+**技术状态：**快速放量。Dell'Oro 预测 Wi-Fi 7 住宅路由器和带 WLAN 的宽带 CPE 收入 2028 年达 $7.9B；2025 年住宅 Wi-Fi 7 路由器出货 +211%，由中国和东南亚低成本双频机型推动。Calix 2026-05 发布 Wi-Fi 7 portfolio，包括小型 GigaSpire 7u4、PoE GigaPro 7p6、XGS-PON 集成 GigaSpire 7u4txg 和 Active Ethernet 7u10tae。  
+**关键投资点：**运营商不再只卖带宽，而是卖 managed Wi-Fi、家庭网络安全、家庭 IoT、家长控制、SMB Wi-Fi、MDU 管理和 QoE。高端 CPE 可能从 2027 起集成 NPU，做本地 AIOps/安全/小模型推理。
+
+| 指标 | 基准 | 乐观 | 极度超预期乐观 |
+|---|---:|---:|---:|
+| 未来3个月市场规模 | $11-18 亿 | $18-24 亿 | $24-32 亿 |
+| 未来1年市场规模 | $45-70 亿 | $70-90 亿 | $90-115 亿 |
+| 未来2年市场规模 | $70-100 亿 | $100-125 亿 | $125-155 亿 |
+| 出货渗透率 | 2026 年 25-40% | 40-55% | 55-65% |
+| 2028 出货渗透率 | 65-80% | 80-90% | 90%+ |
+| CPE 毛利率 | 18-28% | 22-35% | 30-40% |
+| 芯片毛利率 | 50-62% | 55-68% | 60-72% |
+
+### 3.4 DOCSIS 4.0 DAA/vCMTS/RPD/节点/放大器
+
+**技术状态：**2026 开始规模升级。CableLabs 披露 DOCSIS 4.0 可支持 10Gbps 下行、6Gbps 上行，2025-2026 互通结果已展示 14Gbps 与 16.25Gbps 下行、多厂商 CCAP core/RPD/cable modem 互通、3Gbps 和 5.5Gbps 上行演示。  
+**公司/订单线索：**Comcast 2024 已披露 DOCSIS 4.0 FDX 覆盖超过 100 万 homes across 6 markets，并部署 CommScope FDX amplifier/RPD；2026 继续结合 NVIDIA edge AI 试点，称其 distributed architecture 覆盖 6500 万 homes and businesses。Charter 2026Q1 仍有 2960 万 Internet customers，Q1 upgrade/rebuild capex $675M，同比从 $395M 增长，网络升级仍是重点；Harmonic 与 Charter 的 vCMTS/DAA 合作被行业媒体称为 2026 宽带业务增长驱动。CommScope 2025 称计划推出支持 1.8GHz ESD 和 FDX 的 DOCSIS 4.0 Unified 放大器和 RPD。
+
+| 指标 | 基准 | 乐观 | 极度超预期乐观 |
+|---|---:|---:|---:|
+| 未来3个月 DAA/vCMTS/节点市场 | $2.5-5.5 亿 | $5.5-8 亿 | $8-12 亿 |
+| 未来1年市场规模 | $11-21 亿 | $21-32 亿 | $32-45 亿 |
+| 未来2年市场规模 | $16-32 亿 | $32-50 亿 | $50-75 亿 |
+| Cable HFC passings D4 覆盖 | 2026 <5% | 5-8% | 8-12% |
+| 2028 D4 覆盖 | 15-25% | 25-35% | 35-45% |
+| vCMTS 软件毛利率 | 55-70% | 65-78% | 70-82% |
+| 节点/放大器/RPD 毛利率 | 25-38% | 32-45% | 38-50% |
+
+### 3.5 Low Latency DOCSIS、体验保障和 AIOps
+
+**技术状态：**可软件升级、逐步部署。CableLabs Low Latency DOCSIS 目标是在非排队型应用上把 DOCSIS 网络 round-trip latency 降至 sub-5ms 99th percentile，且可通过 DOCSIS 3.1 网络软件更新部署。  
+**AI 关联：**这类软件对云游戏、实时视频、远程协作、edge AI 和家庭/SMB agent 更重要。利润率高于硬件，但收入分散在 vCMTS、网关软件、运营商云平台、WLAN AIOps、QoE agent。
+
+| 指标 | 基准 | 乐观 | 极度超预期乐观 |
+|---|---:|---:|---:|
+| 未来3个月软件/许可收入 | $5-8 亿 | $8-12 亿 | $12-16 亿 |
+| 未来1年 | $22-35 亿 | $35-50 亿 | $50-70 亿 |
+| 未来2年 | $35-60 亿 | $60-85 亿 | $85-120 亿 |
+| 毛利率 | 60-75% | 70-82% | 75-88% |
+| 核心反证 | 用户不愿为低时延/体验付费，运营商只把它当免费基础能力 |  |  |
+
+## 四、在研关键产品和细分技术
+
+### 4.1 50G PON 批量化：2026 试点，2027-2028 才可能放量
+
+**在研/早期商业化状态：**Nokia 2025-10 发布可在现有 25G PON line card 上启用 50G PON 的 Lightspan MF/Quillion 方案，支持 GPON、XGS、25G、50G PON 和未来 50G symmetrical 光模块；Nokia 2025-05 还发布同纤 10G/25G/50G coexistence solution。Adtran SDX 6400 每端口整合 50G、XGS-PON、GPON，Netomnia/YouFibre/brsk 2025-05 在英国做首个商业 50G PON 服务。Broadcom 50G PON merchant silicon BCM68660/BCM55050 使用低功耗 7nm，支持 symmetric 50G ITU PON/XGS-PON/GPON，并内置 NPU 与 AI/ML 功能。  
+**放量条件：**1）50G optics 成本下降；2）ONT 功耗和散热可控；3）企业 SLA、移动 xHaul、AI edge 或 MDU 可为 10G+ 对称服务付费；4）运营商现网可无中断 coexist；5）50G PON 与 XGS-PON 价差收窄到 2-3 倍以内。
+
+| 时间 | 基准 | 乐观 | 极度超预期乐观 |
+|---|---:|---:|---:|
+| 成熟时间 | 2027H2 小规模招标 | 2027H1 多运营商商用 | 2026H2 大运营商提前规模采购 |
+| 放量时间 | 2028-2029 | 2027H2-2028 | 2027 全年快速拉升 |
+| 未来3个月市场 | $0.2-0.8 亿 | $0.8-1.8 亿 | $1.8-3.5 亿 |
+| 未来1年市场 | $1.2-6 亿 | $6-12 亿 | $12-24 亿 |
+| 未来2年市场 | $5-22 亿 | $22-38 亿 | $38-60 亿 |
+| 系统/光模块毛利 | 35-50% | 45-60% | 55-70% |
+
+### 4.2 100G PON、coherent PON、WDM-PON：更长周期期权
+
+100G PON 更像 2028 后技术验证和高端专线/回传选项。Nokia 50G PON 页面已经把 Frontier/Nokia 10G-25G-50G-100G demonstration 作为客户案例线索，但住宅宽带 2026-2027 没有足够 ARPU 支撑大规模 100G。coherent PON/WDM-PON 在长距离、低分光、高端企业、移动前传/回传中有技术吸引力，但成本和运营复杂度仍高。
+
+| 技术 | 未来3个月 | 未来1年 | 未来2年 | 毛利率假设 | 投资判断 |
+|---|---:|---:|---:|---:|---|
+| 100G PON | <$0.2 亿 | $0.2-1 亿 | $1-5 亿，极乐观 $10 亿 | 45-65% | 研发和试点期，不作为 2026 主线 |
+| coherent/WDM-PON | <$0.1 亿 | $0.2-1.5 亿 | $1-6 亿 | 45-70% | 高壁垒但市场小，适合光器件/IP 公司期权 |
+| Passive Optical LAN for campus | $0.5-1.5 亿 | $3-8 亿 | $8-18 亿 | 35-55% | AI 园区和企业楼宇可能受益，但销售周期长 |
+
+### 4.3 DOCSIS 4.0 3GHz optional annex 与 6GHz HFC
+
+CableLabs 2026-03 披露，2026 之后行业工作已开始把 DOCSIS 数据传输扩至 3GHz，可提供最高约 25Gbps aggregate capacity；1.8GHz 到 3GHz 频段将加入 DOCSIS 4.0 optional annex。CableLabs 同时研究 6GHz HFC，潜在 aggregate capacity 50Gbps。  
+**判断：**3GHz 是 2027-2029 技术/投资期权；6GHz 是 2030 前后远期期权。主要问题是功耗、放大器密度、tap/passive 频响、外场施工、旧设备兼容和是否不如直接 FTTP。
+
+| 技术 | 成熟时间 | 放量时间 | 未来2年收入潜力 | 毛利率 | 反证 |
+|---|---|---|---:|---:|---|
+| D4 3GHz optional annex | 2027H2-2028 | 2028-2029 | $2-12 亿，极乐观 $20 亿 | 芯片/软件 55-70%，硬件 30-45% | MSO 转向 FTTP，外场成本过高 |
+| 6GHz HFC / post-DOCSIS 4 | 2029 后 | 2030 后 | 2026-2028 可忽略 | 高但未商业化 | 频谱/功耗/工程成本不经济 |
+
+### 4.4 AI-native gateway、家庭/SMB edge NPU 与运营商 AI Grid
+
+Qualcomm Networking Pro A7 Elite 2024 发布，集成 Wi-Fi 7 和 40 TOPS NPU，最高 33Gbps PHY，支持 XGS-PON、10G Fiber、AFC、OpenWRT/RDK/TiP OpenWiFi/prplOS/OpenSync，应用包括安全、能源管理、个性化 assistant、健康监测和 AIOps。Comcast 2026-03 与 NVIDIA 试点在网络边缘运行 GPU AI workloads，覆盖 6500 万 homes/businesses 的 distributed architecture，初始用例包括个性化广告、小企业 concierge agent、低时延 gaming。  
+**判断：**这是真正能把 AI 与宽带接入连接起来的方向，但商业闭环仍早。2026 是高端平台导入，2027 看运营商是否能把家庭安全、SMB agent、低时延 gaming、edge AI compute 包装成 ARPU。
+
+| 产品 | 未来3个月 | 未来1年 | 未来2年 | 毛利率 | 关键变量 |
+|---|---:|---:|---:|---:|---|
+| AI NPU Wi-Fi 7 gateway SoC | $0-0.5 亿 | $2-8 亿 | $10-30 亿，极乐观 $60 亿 | 55-70% | 运营商设计导入、软件生态、NPU 利用率 |
+| Edge AI operator service | <$0.2 亿 | $1-5 亿 | $5-25 亿，极乐观 $50 亿 | 50-75% | 低时延付费、广告/SMB/游戏变现 |
+| AIOps/QoE agent | $2-5 亿 | $10-20 亿 | $25-45 亿 | 65-85% | 是否降低客服成本和 churn |
+
+### 4.5 Wi-Fi 8：2026 样品，2028 后收入
+
+MediaTek 2026 CES 发布 Filogic 8000 Wi-Fi 8 family，称首款芯片 2026 年晚些时候交付客户；Wi-Fi 8 更强调可靠性、低时延和高密环境，而不是峰值速率。  
+**判断：**Wi-Fi 8 对 2026-2027 Wi-Fi 7 投资不是利空，反而延长高端 AP refresh 逻辑：企业先升级 Wi-Fi 7，2028-2029 再进入 Wi-Fi 8。Dell'Oro 2025 预测第一批企业 Wi-Fi 8 AP 会在 2028 年晚些时候出现，Wi-Fi 7 到 2028 年占 Indoor AP 收入超过 90%。
+
+## 五、供给侧：产能结构、瓶颈、成本与价格传导
+
+### 5.1 主要产能集中
+
+| 层级 | 主要地区 | 代表公司 | 工艺/能力 |
+|---|---|---|---|
+| PON/DOCSIS/Wi-Fi merchant silicon | 美国设计，台积电/三星等代工，封测在台湾/东南亚/中国大陆 | Broadcom、Qualcomm、MediaTek、MaxLinear、Realtek、Sanechips/ZTE Micro、Nokia Quillion 内部 | 7nm-16nm 为主，高端 Wi-Fi/AI gateway 进入更先进节点 |
+| PON OLT/ONT 系统 | 中国、欧洲、美国、台湾、越南/马来西亚/墨西哥 EMS | Huawei、ZTE、Nokia、Calix、Adtran、FiberHome、DZS、Radisys/CommScope、Ciena、Tejas | OLT line card、ONT、FTTR、管理平台 |
+| 光器件/接入光模块 | 中国、台湾、泰国/马来西亚、美国/欧洲高端 | Source Photonics、Lumentum、Coherent、Hisense、Accelink、Broadex、Gigalight、Eoptolink、Sumitomo、Fujitsu Optical Components | 10G/25G/50G burst-mode optics、BOSA、APD/EML/DFB |
+| DOCSIS 节点/放大器/RPD | 美国、墨西哥、加拿大、欧洲、中国供应链 | CommScope、Vecima、Harmonic、ATX、Technetix、Teleste、Applied Optoelectronics、Cisco legacy、Casa assets | 1.2/1.8GHz amps、FDX/ESD RPD、vCMTS |
+| Wi-Fi AP/CPE 代工 | 台湾/中国大陆/越南/印度/墨西哥 | Foxconn、Arcadyan、Sercomm、Accton、Wistron NeWeb、Alpha Networks、TP-Link、Vantiva、Gemtek、Zyxel | Wi-Fi 7 gateway/AP/mesh、10GbE、PoE++、thermal |
+| 企业 WLAN 系统 | 美国/欧洲/中国品牌，全球 EMS | Cisco、HPE Aruba、Juniper Mist、Ubiquiti、Huawei、CommScope Ruckus、Extreme、Fortinet、Cambium、TP-Link Omada | AP、controller/cloud、AIOps、安全、订阅 |
+
+### 5.2 至少 8 条关键供给瓶颈
+
+1. **Wi-Fi AP/CPE memory、NAND、DDR、PMIC。** Dell'Oro 明确指出 AI infrastructure boom 推升 memory 组件成本，WLAN 厂商上调 list price，设备交期波动。
+2. **50G PON 光器件和 burst-mode 接收。** 50G PON 要在点到多点、不同距离、不同 ONU 发射功率下稳定工作，APD/TIA、EML/DFB、BOSA、温控和小型化比数据中心同速率 optics 更难做低成本。
+3. **PON coexistence filters、ODN 预算和现场工程。** GPON/XGS/25G/50G 同纤共存需要波长规划、滤波器、分光比和光功率预算，老旧 ODN 会限制高阶 PON。
+4. **DOCSIS 外场 passives/taps/amps/nodes 施工窗口。** 1.2GHz、1.8GHz、未来 3GHz 对线缆、tap、connector、放大器级联、噪声和漏损要求更高，工程比芯片更慢。
+5. **DOCSIS 互通和 CableLabs/运营商认证。** RPD、vCMTS、放大器、cable modem、网关固件、OSS/BSS、测速和客服流程都要验证；认证周期决定收入确认。
+6. **6GHz 频谱和 AFC。** Wi-Fi 7 的上限依赖 6GHz 和 AFC，各国频谱开放不同；印度 2026 下放低 6GHz 有利，但中国/欧盟/美国规则差异导致产品 SKU 和认证复杂。
+7. **10GbE/2.5GbE/PoE++ 配套。** 高端 Wi-Fi 7 AP 若没有多千兆 switch、PoE++、布线和 uplink，性能不能兑现；这会把采购从 AP 扩大到 campus switch，但也增加项目预算阻力。
+8. **软件人才和云原生网络运维。** vCMTS、AIOps、QoE、AI gateway 都要求软件持续迭代，传统硬件厂商若缺 DevOps/telemetry/AI pipeline 能力，毛利会被系统集成成本吞噬。
+9. **BEAD/政府补贴合规与 Buy America。** 美国农村宽带项目采购、施工、劳动力、材料合规会推迟订单确认，但一旦通过，订单集中度高。
+10. **AI 供应链挤出。** 先进封装、HBM、DDR、高速交换芯片、服务器电源和散热优先服务 AI 数据中心，接入设备厂商在高端元件上议价弱于 hyperscaler。
+
+### 5.3 成本拆分
+
+| 产品 | 典型 BOM/成本构成 | 毛利决定因素 | 价格传导机制 |
+|---|---|---|---|
+| XGS-PON ONT | PON SoC 25-35%，optics/BOSA 15-25%，Wi-Fi/FEM 15-30%，DDR/NAND 8-15%，电源/外壳/测试/物流 10-20% | SoC 集成度、Wi-Fi 等级、运营商认证、规模、保修 | 运营商年度招标，memory/汇率/关税通过新 SKU 或价格调整传导 |
+| PON OLT line card | PON MAC/ASIC 25-35%，optics/cages 20-35%，控制/交换/内存 10-15%，PCB/电源/散热 15-20%，软件和服务 | 端口密度、功耗、现网兼容、管理平台、可靠性 | 大客户框架协议，交付紧张时 line card 和软件 license 抬价 |
+| 50G PON optics/ONT | 高速激光/接收 25-40%，DSP/CDR/TIA 10-25%，PON SoC 20-30%，散热/电源 10-15% | 良率、低功耗、共存能力、供应商稀缺 | 早期按企业 SLA 和专线价值定价，ASP 可数倍于 XGS |
+| DOCSIS RPD/节点/放大器 | RF silicon/RPD 25-35%，放大器/RF passives 20-30%，壳体/供电/防护/散热 20-30%，软件/认证 10-20% | 是否支持 unified FDX/ESD、频段、远程管理、可靠性 | MSO 项目制采购，认证通过后集中放量 |
+| vCMTS/DAA software | 研发/云资源/支持/认证为主，边际成本低 | 客户规模、SLA、软件稳定性、全网替换成本 | license、capacity、subscriber、support 合同，毛利高 |
+| 企业 Wi-Fi 7 AP | Wi-Fi SoC/radio/FEM 35-50%，CPU/switch/NPU 10-20%，memory 8-15%，PoE/电源/散热/结构 10-20%，软件/认证 | cloud subscription、品牌渠道、安全认证、AIOps | AP 价格 + 年费；memory 成本可通过 list price 传导 |
+| 住宅 Wi-Fi 7 CPE | Wi-Fi/网关 SoC 30-45%，FEM/天线 10-20%，DDR/NAND 8-15%，以太网/PoE/电源 10-15%，外壳/物流 10-20% | 运营商规模、Wi-Fi 7 premium、软件服务 attach | 大批量压价，高端 AI gateway 可维持溢价 |
+
+## 六、竞争格局与可量化壁垒
+
+### 6.1 市场结构
+
+| 子领域 | 头部集中度判断 | 主要赢家 | 集中原因 |
+|---|---|---|---|
+| PON OLT/ONT 系统 | 高，全球份额集中在 Huawei/ZTE/Nokia/Calix/Adtran 等 | Huawei、ZTE、Nokia、Calix、Adtran、FiberHome | 运营商认证、现网兼容、端到端平台、规模制造 |
+| 50G PON 早期 | 高，Nokia/Adtran/Broadcom/ZTE/Huawei 领先 | Nokia、Adtran、Broadcom、Huawei、ZTE | line card、coexistence、chipset、光器件生态 |
+| DOCSIS vCMTS/DAA | 高，少数平台主导 | Harmonic、CommScope、Vecima、Casa/CommScope、Broadcom | 互通认证、MSO 长周期验证、软件稳定性 |
+| DOCSIS 外场节点/放大器 | 中高 | CommScope、ATX、Technetix、Teleste、Vecima、Applied Optoelectronics | 可靠性、频段、现场安装和 MSO 关系 |
+| Wi-Fi 7 enterprise | 中高，但 Ubiquiti/TP-Link 等冲击价格 | Cisco、HPE Aruba、Juniper Mist、Ubiquiti、Huawei、CommScope Ruckus、Extreme | 品牌、渠道、cloud management、安全、AIOps |
+| Wi-Fi/PON/DOCSIS silicon | 高 | Broadcom、Qualcomm、MediaTek、MaxLinear、Realtek | 标准 IP、RF/PHY、驱动、认证、规模和客户锁定 |
+
+### 6.2 壁垒清单：为什么能定价
+
+1. **标准和 PHY/IP 壁垒。** PON burst-mode、DOCSIS FDX/ESD、Wi-Fi 7 MLO/320MHz/AFC 都需要长期标准参与和 PHY 调优；这让 Broadcom、Qualcomm、MediaTek、MaxLinear 等 silicon 厂商拥有高毛利。
+2. **运营商认证壁垒。** OLT/ONT、RPD、vCMTS、AP、CPE 进入大运营商需要 6-24 个月实验室/外场验证，替换成本高，胜出者可持续供货多年。
+3. **现网兼容和迁移成本。** XGS-PON 与 GPON 共存、25G/50G coexistence、DOCSIS DAA 与旧 HFC、Wi-Fi controller/cloud 与安全策略绑定，客户不愿频繁换供应商。
+4. **软件与数据闭环。** Calix One、Cisco/Meraki、Juniper Mist、HPE Aruba、Harmonic CableOS、Nokia Altiplano、Adtran Mosaic 等有遥测、AIOps、QoE 和订阅收入，定价不只取决于硬件 BOM。
+5. **规模制造与交付。** 大运营商项目需要全球供货、备件、固件维护、现场支持和质保，白牌小厂难以承接。
+6. **渠道和客户锁定。** 企业 WLAN 通过 VAR/MSP、系统集成商和云管平台锁定；运营商 CPE 通过 OSS/BSS、安装流程和客服系统锁定。
+7. **高端 optics/射频良率。** 50G PON optics、1.8GHz/3GHz HFC 放大器、Wi-Fi 7 FEM 的良率和测试能力决定交付，不是简单代工。
+
+### 6.3 长期高 ROIC/高毛利层
+
+| 价值链层 | 长期 ROIC/毛利判断 | 原因 |
+|---|---|---|
+| Merchant silicon，Wi-Fi/PON/DOCSIS | 最高 | 标准 IP + PHY/RF + 驱动/SDK + 客户认证，替换慢 |
+| 企业 WLAN cloud/AIOps/security | 高 | 订阅收入、数据闭环、客户粘性、软件毛利 |
+| vCMTS/DAA software | 高 | MSO 核心网络软件，容量扩张边际成本低 |
+| 高端 OLT 平台/management | 中高 | 硬件毛利中等，但平台和服务能保留价值 |
+| 50G PON optics/特殊光器件 | 中高但周期性 | 早期稀缺可溢价，规模化后 ASP 下行 |
+| 普通 ONT/CPE/路由器 | 中低 | 量大但竞价激烈，BOM 透明 |
+| 被动光缆、splitter、coax passive | 低到中 | 工程需求稳定，但定价权弱，更多是周期/项目收益 |
+
+## 七、2026 关键变化：3 个拐点
+
+### 拐点 1：Wi-Fi 7 从高端 adoption 进入主流 refresh
+
+触发因素：2026Q1 Wi-Fi 7 仅 37% Indoor AP 出货但收入三位数增长；IDC 2025Q4 Wi-Fi 7 已占 enterprise dependent AP 收入 39.7%；AI PC、企业 AI、6GHz 频谱和 AIOps 推动企业升级。  
+受益：Cisco、HPE Aruba、Juniper Mist、Ubiquiti、Huawei、Ruckus、Extreme、TP-Link Omada、Broadcom、Qualcomm、MediaTek、MaxLinear、Intel、Realtek、Arcadyan、Sercomm。  
+反证：企业 IT 预算冻结，memory 成本无法转嫁，6GHz/AFC 延迟，Wi-Fi 8 预期压制采购。
+
+### 拐点 2：DOCSIS 4.0 从互通验证转为 DAA/vCMTS 外场硬件采购
+
+触发因素：CableLabs 互通与 3GHz optional annex 工作推进；CommScope unified amplifier/RPD；Harmonic/Charter vCMTS 进展；Comcast FDX 放大器和 edge AI trial。  
+受益：Harmonic、CommScope、Vecima、Broadcom、ATX、Technetix、Teleste、Applied Optoelectronics、MaxLinear、Vantiva、Sercomm。  
+反证：MSO 用户继续流失导致 capex 缩减，Charter/Comcast 转向 FTTP，外场工程成本超预算。
+
+### 拐点 3：PON 维持 XGS 主线，50G PON 的商业价值从“速度展示”转向“企业 SLA/AI edge/移动回传”
+
+触发因素：Nokia 50G/25G line card 和 coexistence、Adtran/Netomnia 商用 50G PON、Broadcom 50G PON merchant silicon、BASe/OFC 2026 讨论 PON 从住宅接入转多业务接入。  
+受益：Nokia、Adtran、Broadcom、Calix、Huawei、ZTE、Source Photonics、Lumentum、Coherent、Hisense、Accelink、DZS、Radisys。  
+反证：运营商发现 XGS-PON 足够 3-5 年，50G optics 和 ONT 成本降不下来，企业 SLA 收入不足。
+
+## 八、2027 关键变化：3 个拐点
+
+### 拐点 1：Rubin/MI400/Trainium3/TPU 下一代 AI 基础设施把推理和 edge workload 推到网络边缘
+
+本地产业背景判断 2027 主线是 Rubin、MI400、HBM4、next-gen ASIC 和高密度推理。若 AI 应用从训练转推理/agent，家庭、企业和园区边缘低时延连接需求会比 2026 更明显。  
+受益方向：AI-native gateway、Wi-Fi 7/8 AIOps、edge NPU、运营商边缘 GPU/AI Grid、低时延 DOCSIS、XGS/25G PON enterprise access。  
+反证：AI 应用收入无法覆盖折旧，edge inference 需求仍回到集中云，运营商无法变现。
+
+### 拐点 2：DOCSIS 4.0 3GHz optional annex 给 HFC 延寿，或迫使 MSO 加快 FTTP
+
+若 3GHz optional annex 进展顺利，HFC 可见 25Gbps aggregate 远景，MSO 会继续买 unified chipset、amps、RPD、vCMTS。若功耗/工程成本过高，资金可能转向 FTTP/PON。  
+投资含义：Harmonic/CommScope/Vecima/Broadcom 是 HFC 延寿受益；Nokia/Adtran/Calix/Ciena 是 MSO 转 fiber 受益。
+
+### 拐点 3：50G PON 从展示项目进入多国招标，Wi-Fi 8 开始压入 roadmap 但不吃掉 Wi-Fi 7 收入
+
+2027 若 50G optics 成本下行且企业/回传用例成立，50G PON tender 会从少数项目扩大。Wi-Fi 8 芯片样品会影响 2028/2029 roadmap，但 2027 主收入仍是 Wi-Fi 7。
+
+## 九、头部公司和细分领域公司清单
+
+### 9.1 PON 系统、OLT/ONT、管理平台
+
+- Huawei：全球 PON/FTTH 规模领先，OLT/ONT/FTTR/光接入平台完整，受地缘限制但中国和新兴市场强。
+- ZTE：PON、50G PON、FTTR、运营商接入平台强，Sanechips 有自有芯片能力。
+- Nokia：Lightspan MF、Quillion、10G/25G/50G/100G PON 路线、Altiplano 管理、altafiber 25G PON 订单、50G coexistence 方案。
+- Calix：北美中小运营商平台优势，Calix One、GigaSpire、50G PON、Wi-Fi 7、managed services。
+- Adtran：SDX 6400 50G PON、Mosaic、Netomnia 商用 50G PON、欧洲/美国 fiber access 强。
+- FiberHome：中国产能和运营商市场强，PON/FTTR/光传输。
+- DZS：接入 OLT/ONT、enterprise/municipal fiber、软件平台。
+- Radisys/CommScope：OLT、virtual OLT、open broadband access、运营商软件。
+- Ciena：PON/edge/access 与光传输组合，在 cable MSO fiber expansion 中有机会。
+- Tejas Networks、UTStarcom、Iskratel/Kontron、Dasan、TP-Link/Aginet、Zyxel、Sercomm、Arcadyan：区域或 CPE/ONT/网关细分供应商。
+
+### 9.2 PON/接入光芯片、光模块和器件
+
+- Broadcom：50G PON merchant silicon、PON/DOCSIS/Wi-Fi 组合，PHY/IP 壁垒强。
+- MaxLinear：宽带接入、PON/DOCSIS/Wi-Fi/Ethernet 芯片组合，CPE 暴露。
+- Realtek：低中端 CPE/Wi-Fi/Ethernet/PON SoC，成本优势。
+- MediaTek：Filogic Wi-Fi 7/8、运营商 gateway platform，住宅 CPE 和 AP 强。
+- Qualcomm：Networking Pro / Dragonwing NPro A7 Elite，Wi-Fi 7 + edge AI + XGS-PON/10G Fiber integration。
+- Nokia Quillion：Nokia 自有 PON chipset 平台，支撑 25G/50G。
+- Sanechips/ZTE Micro、HiSilicon、Cortina/legacy、Airoha：区域性或垂直整合芯片能力。
+- Source Photonics、Lumentum、Coherent、Hisense Broadband、Accelink、Broadex、Gigalight、Eoptolink、Sumitomo、Fujitsu Optical Components、OE Solutions：PON optics/BOSA/激光/接入光模块。
+
+### 9.3 DOCSIS 4.0、Cable DAA、vCMTS、节点和放大器
+
+- Harmonic：CableOS vCMTS 核心供应商，Charter/Comcast 暴露强，软件毛利高。
+- CommScope/Vistance：FDX amps、RPD、vCCAP、nodes、10M+ amps 历史装机，Comcast DOCSIS 4.0 关键伙伴。
+- Vecima：Entra DAA、Remote PHY、vCMTS、Cox/Charter/Telenet 线索，2026 DOCSIS 4.0 弹性。
+- Broadcom：Unified DOCSIS chipset，FDX+ESD，nodes、smart amps、cable modems 核心硅。
+- ATX Networks：1.8GHz amps/nodes、HFC outside plant。
+- Technetix：HFC amps/taps/passives、Europe/US MSO。
+- Teleste：欧洲 cable access、DAA、nodes。
+- Applied Optoelectronics：1.8GHz amplifiers、line extenders、remote management software，Charter 供应链线索。
+- MaxLinear：DOCSIS gateway/modem SoC、Puma 系列后续，CPE silicon。
+- Vantiva、Sercomm、Hitron、Sagemcom、Technicolor legacy、Arcadyan、Ubee、Netgear、Arris/CommScope：cable modem/gateway/CPE。
+- Cisco：legacy cBR-8 装机基础仍大，但 DOCSIS 4.0 新增动能弱于 vCMTS 供应商。
+- Casa Systems assets：被 CommScope 等吸收后仍影响 vCCAP/DAA 竞争。
+
+### 9.4 Wi-Fi 7 企业 WLAN、住宅 CPE 和芯片
+
+- Cisco/Meraki：企业 WLAN 份额领先，IDC 2025Q4 Cisco 企业 WLAN 收入 $1.0B、市占 34.6%，全年 $3.9B、市占 37.2%。
+- HPE Aruba：企业 AP、Central、campus switching/security，与 Juniper 收购整合后有云管和 Mist 组合潜力。
+- Juniper Mist：AI-native WLAN/AIOps 代表，云管和体验保障强。
+- Ubiquiti：Wi-Fi 7 份额快速提升，价格/社区/渠道强，Dell'Oro 提到其为 Wi-Fi 7 市场领先者之一。
+- Huawei：Wi-Fi 7 AP、园区网络、运营商/企业中国与新兴市场强。
+- CommScope Ruckus：高密场景、MDU、酒店、校园、运营商 stronghold。
+- Extreme Networks：企业 WLAN、云管、体育场馆和校园场景。
+- Fortinet：安全 + WLAN，适合 branch/SASE。
+- TP-Link Omada：中小企业和性价比，Wi-Fi 7 AP 快速铺货。
+- Cambium、Zyxel、Netgear Business、SonicWall、WatchGuard、Alcatel-Lucent Enterprise：SMB/垂直市场。
+- Broadcom：Wi-Fi 7 chip portfolio，BCM67263/6726/43740/43720/4398，AP/CPE/mobile 全覆盖。
+- Qualcomm：NPro/Networking Pro A7 Elite，Wi-Fi 7 + 40 TOPS edge AI。
+- MediaTek：Filogic 880 Wi-Fi 7 BE36000，Filogic 8000 Wi-Fi 8，运营商 gateway 生态强。
+- MaxLinear、Intel、Realtek：Wi-Fi 7 client/AP/CPE silicon 或配套。
+- TP-Link、ASUS、Netgear、Eero/Amazon、Google Nest、Linksys、D-Link、Tenda、Xiaomi：住宅 Wi-Fi 7 retail/mesh。
+- Arcadyan、Sercomm、Vantiva、Sagemcom、Gemtek、Wistron NeWeb、Alpha Networks、Foxconn、Accton：运营商网关和 AP ODM/EMS。
+
+### 9.5 AI-native 宽带与 AIOps/体验软件
+
+- Calix：Calix One、SmartLife、Wi-Fi 7 appliances、agentic platform，北美中小 ISP 最直接。
+- Plume：home services、OpenSync、managed Wi-Fi、QoE。
+- Airties：运营商 managed Wi-Fi、mesh、QoE，MediaTek Wi-Fi 8 伙伴。
+- SoftAtHome：运营商 CPE software、Wi-Fi management、connected home。
+- OpenSync ecosystem：云管 CPE 和 managed services 的事实生态之一。
+- Nokia Corteca/Altiplano/Deepfield：home Wi-Fi intelligence、PON 管理、DDoS/telemetry。
+- Adtran Mosaic：PON/接入运维自动化。
+- Cisco ThousandEyes/Meraki AI、HPE Aruba Central、Juniper Mist Marvis、ExtremeCloud IQ：企业 WLAN AIOps。
+- Comcast Octave/XMF、CableLabs LLD/L4S、Harmonic CableOS analytics、Vecima Access Test：Cable 体验保障和测试。
+- Qualcomm AI Hub/Networking AI Suite、Broadcom embedded NPU、MediaTek NPU：芯片级 AI QoE/AIOps。
+
+## 十、投资排序和情景判断
+
+### 10.1 2026-2027 优先级
+
+| 优先级 | 方向 | 理由 | 主要风险 |
+|---|---|---|---|
+| 1 | 企业 Wi-Fi 7 + cloud/AIOps | 2026 放量确定、软件 attach、AI/终端/6GHz 驱动 | 企业预算、memory 成本、竞争压价 |
+| 1 | Wi-Fi/PON/DOCSIS silicon | 高壁垒、高毛利、标准与认证锁定 | 客户集中、周期、库存 |
+| 2 | vCMTS/DAA software | DOCSIS 4.0 2026-2027 加速，软件毛利高 | MSO capex 推迟、FTTP 替代 |
+| 2 | XGS-PON OLT/平台 | 主流放量、BEAD/FTTH、运营商锁定 | 竞争激烈、50G 延后、ARPU 压力 |
+| 3 | 50G PON optics/line card | 高弹性期权，企业/回传/AI edge | 市场推迟 3-5 年、成本下不来 |
+| 3 | 住宅 Wi-Fi 7 CPE | 出货弹性大，2028 $7.9B 锚点 | 毛利低、双频低价 SKU 压价 |
+| 4 | DOCSIS nodes/amps/passives | 2026 反弹，项目制 | 工程慢、MSO 用户流失、价格周期 |
+| 4 | AI gateway/edge service | 远期期权强 | 商业闭环未验证 |
+
+### 10.2 三情景下行业利润率
+
+| 层级 | 当前利润率估计 | 基准 2026-2027 | 乐观 | 极度超预期乐观 |
+|---|---:|---:|---:|---:|
+| Wi-Fi/PON/DOCSIS merchant silicon | GM 50-65% | 52-66% | 58-70% | 62-74% |
+| 企业 WLAN 系统 | GM 45-60% | 47-62% | 52-67% | 56-70% |
+| WLAN cloud/AIOps | GM 65-80% | 68-82% | 72-85% | 76-88% |
+| PON OLT 系统 | GM 35-45% | 35-47% | 40-52% | 45-55% |
+| ONT/住宅 CPE | GM 15-28% | 16-30% | 20-35% | 25-40% |
+| 50G PON optics | GM 30-45% | 35-50% | 45-60% | 55-70% |
+| vCMTS 软件 | GM 55-75% | 60-76% | 65-80% | 70-84% |
+| DOCSIS nodes/amps/RPD | GM 25-40% | 28-42% | 34-48% | 40-52% |
+
+## 十一、跟踪指标和反证清单
+
+1. **Wi-Fi 7 领先指标：**Dell'Oro/IDC quarterly WLAN revenue、Wi-Fi 7 Indoor AP shipment share、Cisco/Ubiquiti/Huawei/HPE/Juniper 份额、AP ASP、memory lead time、campus switch 2.5/5/10GbE attach。
+2. **PON 领先指标：**PON ONT 出货、XGS-PON OLT port、50G PON optics ASP、BEAD award 到采购转换、Nokia/Adtran/Calix/Huawei/ZTE 订单。
+3. **DOCSIS 领先指标：**Comcast X-Class homes passed、Charter upgrade/rebuild capex、Harmonic broadband revenue/customer concentration、CommScope/Vecima backlog、CableLabs interop/certification、D4 modem availability。
+4. **AI 关联指标：**运营商 edge AI trial 是否进入付费、低时延游戏订阅、SMB AI gateway attach、AI PC/Wi-Fi 7 client 渗透、NPU gateway SKU 设计中标。
+5. **反证：**AI 数据中心 capex 下修 15%+、企业 WLAN 订单延迟、Wi-Fi 7 AP ASP 因竞争快速下滑、MSO broadband sub loss 加速、50G PON tender 缺席、DOCSIS 4.0 外场故障或认证延期。
+
+## 十二、主要来源和交叉验证
+
+### 12.1 项目内产业背景来源
+
+| 来源 | 用途 |
+|---|---|
+| `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md` | 2026/2027 AI 芯片路径、产能释放金额、Blackwell/GB300/Rubin/MI350/MI400/TPU/Trainium/Maia/MTIA 背景 |
+| `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` | 2026/2027 AI 数据中心建设规模、GW、网络/光互联/电力瓶颈映射 |
+| `行业调研/产业背景/全球AI需求与Token经济框架_2026-06-11.md` | 2026-2028 推理 token、agent、企业 AI 和 edge 需求逻辑 |
+| `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md` | AI 产业链分层、网络/边缘/工程能源口径，避免重复计算 |
+
+### 12.2 外部公开来源
+
+| 来源 | 日期 | 关键数字/事实 | 链接 |
+|---|---:|---|---|
+| Dell'Oro, Broadband Equipment Spending to Peak at $18.8B in 2028 | 2026-01-28 | 宽带接入设备 2028 峰值 $18.8B；PON 2025-2030 CAGR 1.9%；Cable DAA 2030 $1.2B；住宅 Wi-Fi 7 CPE 2028 $7.9B | https://www.delloro.com/news/broadband-equipment-spending-to-peak-at-18-8-b-in-2028/ |
+| Dell'Oro/PRNewswire, Broadband Access Equipment to Return to Growth in 2026 | 2026-03 | 2025 PON ONT 1.58 亿台；DOCSIS infra -21%，Remote PHY -47%，2026 DAA/DOCSIS 4.0 回升 | https://www.prnewswire.com/news-releases/broadband-access-equipment-to-return-to-growth-in-2026-according-to-delloro-group-302709983.html |
+| Dell'Oro, WLAN Market Continues Double-Digit Growth in 1Q 2026 | 2026-06-04 | WLAN 连续 5 个季度双位数增长；AP 出货 +14%；Wi-Fi 7 收入三位数增长；Wi-Fi 7 为 Indoor AP 出货 37%；Cisco/Ubiquiti/Huawei 领先 | https://www.delloro.com/news/wlan-market-continues-double-digit-growth-in-1q-2026-despite-memory-shortage/ |
+| IDC, Worldwide enterprise WLAN grew 13.9% | 2026-04 | 2025Q4 企业 WLAN $2.9B，同比 +13.9%；Wi-Fi 7 占 dependent AP 收入 39.7%；2025 全年 $10.5B | https://www.idc.com/resource-center/blog/worldwide-enterprise-wlan-grew-13-9-driven-by-wi-fi-7-deployments/ |
+| Point Topic, Q3 2025 Broadband Subscriber Trends | 2026-02 | FTTH/B 占固定宽带订阅 73.1%；FTTH/B 同比 +7.1%；FWA/卫星 +38% 左右 | https://www.point-topic.com/post/q3-2025-broadband-subscribers |
+| Broadband Forum, BASe at OFC 2026 | 2026 | PON 从住宅连接演进到统一多接入平台，服务住宅、企业、移动、IoT、智慧城市 | https://www.broadband-forum.org/events/base-at-ofc-2026/ |
+| Broadband Forum, BASe Summit 2026 | 2026-06 | 会议议题包括 Beyond 50G PON、GPON/XGS-PON performance、carrier-grade Wi-Fi、Wi-Fi 7 mesh | https://www.broadband-forum.org/events/base-summit-2026/ |
+| Nokia, 50G PON solution | 2025-10-07 | 在 Lightspan MF/Quillion 现有 25G PON line card 上支持 50G，支持 GPON/XGS/25G/50G/future optics | https://www.nokia.com/newsroom/nokia-unveils-worlds-first-50g-pon-solution-for-post-quantum-enterprise-connectivity/ |
+| Nokia, 10G/25G/50G coexistence | 2025-05-28 | 同一 fiber 上同时运行 10G、25G、50G PON，保护现网投资 | https://www.nokia.com/newsroom/nokia-introduces-co-existence-solution-for-10g-25g-and-50g-pon-on-the-same-fiber-network/ |
+| Nokia, altafiber 25G PON | 2026-01-19 | altafiber 在 Ohio/Hawaii 采用 Nokia 25G PON/IP/optical，Hawaiian Telcom 目标 2026 年底 Hawaii 全光纤 | https://www.nokia.com/newsroom/nokia-selected-by-altafiber-for-fiber-network-expansion-across-ohio-and-hawaii/ |
+| Adtran, Netomnia commercial 50G PON | 2025-05-22 | 英国首个 commercial 50G PON service，SDX 6400，现网共存 | https://www.adtran.com/en/newsroom/press-releases/20250522-netomnia-and-adtran-deploy-uks-first-commercial-50g-pon-service |
+| Broadcom, 50G PON merchant silicon | 2024 | BCM68660/BCM55050，7nm，symmetric 50G ITU PON/XGS-PON/GPON，embedded AI/ML/NPU | https://investors.broadcom.com/news-releases/news-release-details/broadcom-announces-industrys-first-merchant-silicon-50g-pon |
+| Calix, Wi-Fi 7 portfolio | 2026-05-14 | GigaSpire 7u4、GigaPro 7p6、XGS-PON integrated 7u4txg、Active Ethernet 7u10tae | https://www.calix.com/press-release/2026/05/calix-one-wifi-7-experiences.html |
+| CableLabs, DOCSIS 4.0 Technology | 2026 accessed | DOCSIS 4.0 up to 10Gbps down/6Gbps up，HFC 上 multi-gig symmetric | https://www.cablelabs.com/technologies/docsis-4-0-technology |
+| CableLabs, DOCSIS Technology What's Changed | 2026-03 | 2025 interop 14Gbps/16.25Gbps downstream；3GHz optional annex work；6GHz research | https://www.cablelabs.com/blog/docsis-technology-whats-changed-in-the-past-year-and-why-it-matters |
+| CableLabs, Low Latency DOCSIS | 2026 accessed | LLD 目标 sub-5ms round-trip latency at 99th percentile，可软件升级 | https://www.cablelabs.com/technologies/low-latency-docsis |
+| Comcast, DOCSIS 4.0 launch | 2023 | X-Class 300/500/1G/2G symmetrical，FDX DOCSIS，Colorado Springs/Atlanta/Philadelphia 起步 | https://corporate.comcast.com/press/releases/comcast-multi-gig-symmetrical-speeds-world-first-docsis-4-deployment |
+| Comcast/CommScope FDX amplifier milestone | 2024-09-24 | Comcast D4 FDX 超过 100 万 homes across 6 markets；FDX amplifier/RPD live | https://corporate.comcast.com/press/releases/comcast-commscope-notch-milestone-next-generation-connectivity-millions-across-us |
+| CommScope and Comcast DOCSIS 4.0 amplifiers | 2025 | CommScope 10M+ amplifiers shipped history；计划推出支持 1.8GHz ESD 和 FDX 的 Unified amps/RPD | https://commscopeholdingcompanyinc.gcs-web.com/news-releases/news-release-details/commscope-and-comcast-accelerate-rollout-docsis-40-amplifiers |
+| Broadcom/Charter/Comcast Unified DOCSIS chipsets | 2024 | Unified DOCSIS chipsets for nodes/smart amps/modems，FDX+ESD，upwards of 25Gbps | https://corporate.comcast.com/press/releases/broadcom-charter-comcast-unified-docsis-chipsets-capable-of-25gbps-speeds |
+| Charter Q1 2026 results | 2026-04-24 | Internet customers 29.6M；upgrade/rebuild capex $675M vs $395M；Q1 revenue $13.6B | https://corporate.charter.com/newsroom/charter-announces-first-quarter-2026-results |
+| Comcast/NVIDIA edge AI | 2026-03-17 | Comcast distributed architecture reaches 65M homes/businesses；NVIDIA GPUs at network edge；DOCSIS 4.0 FDX nodes/smart amps/intelligent gateways | https://corporate.comcast.com/press/releases/comcast-nvidia-ai-network-edge-accelerate-next-generation-applications |
+| Qualcomm NPro A7 Elite | 2024/2026 accessed | Wi-Fi 7 + edge AI，40 TOPS NPU，33Gbps PHY，XGS-PON/10G Fiber integration，AIOps | https://www.qualcomm.com/networking-infrastructure/products/npro-series/npro-a7-elite-platform |
+| Broadcom Wi-Fi 7 ecosystem | 2022/2026 accessed | BCM67263/6726/43740/43720/4398，320MHz、4096-QAM、MLO、11.5Gbps PHY | https://investors.broadcom.com/news-releases/news-release-details/broadcom-announces-availability-worlds-first-wi-fi-7-ecosystem |
+| MediaTek Filogic 880 | 2026 accessed | BE36000、36Gbps PHY、320MHz、4096-QAM、MLO、AFC、two 10GbE | https://www.mediatek.com/products/broadband-wifi/mediatek-filogic-880 |
+| MediaTek Filogic 8000 Wi-Fi 8 | 2026-01 | Wi-Fi 8 CES 2026 demo，首款芯片预计 2026 年交付客户 | https://www.mediatek.com/press-room/mediatek-filogic-8000-family-pioneers-the-wi-fi-8-ecosystem-at-ces-2026 |
+| Wi-Fi Alliance / Wi-Fi CERTIFIED 7 public summary | 2024 | Wi-Fi 7 2024 年 2.33 亿设备、2028 年 21 亿设备预测，320MHz/MLO/4K QAM | https://audioxpress.com/news/wi-fi-alliance-introduces-wi-fi-certified-7 |
+| Mordor PON market | 2026 | 广义 PON equipment market 2026 $38.71B、2031 $61.49B；口径比 Dell'Oro 更宽 | https://www.mordorintelligence.com/industry-reports/passive-optical-network-pon-equipment-market |
+| ResearchAndMarkets 50G PON report | 2026 | 50G PON 2026 $2.12B、2030 $5.07B，作为极乐观/广义口径上沿参考 | https://www.researchandmarkets.com/reports/6215031/50g-passive-optical-networks-pon-equipment |
+

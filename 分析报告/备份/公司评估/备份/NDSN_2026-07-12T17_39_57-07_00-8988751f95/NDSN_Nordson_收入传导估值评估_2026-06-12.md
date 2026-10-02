@@ -1,0 +1,156 @@
+# 公司收入传导与价值传导评估：Nordson（NDSN）
+
+> 报告日期：2026-06-12  
+> 主口径：NTM，约等于 FY2026H2（2026-05-01 至 2026-10-31）+ FY2027H1（2026-11-01 至 2027-04-30）  
+> 经营数据基准：Nordson FY2026Q2，季度截至 2026-04-30，官方披露日期 2026-05-20；投资者材料日期 2026-05-21  
+> 研究边界：只评估收入、利润、现金流和经营质量传导；不做公司排序，不给投资评级，不判断股价区间，不做估值倍数判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口；FY2026、FY2027 和长期 AI/先进封装 run-rate 只作补充校准，不替代 NTM 主表。Nordson 的 NTM 收入传导不是“AI 数据中心直接收入”，而是通过先进封装点胶/underfill/plasma、半导体检测量测、电子组装、医疗流体部件、精密农业和工业流体/涂布系统逐级进入收入表。
+- 当前收入基准、指引和 run-rate：FY2025 收入 27.92 亿美元；FY2026H1 收入 14.10 亿美元，同比 +8.6%；FY2026Q2 收入 7.408 亿美元，同比 +8.5%；管理层 FY2026 收入指引为 29.30-30.10 亿美元，中点 29.70 亿美元。以 FY2026H2 指引隐含收入约 15.20-16.00 亿美元、FY2027H1 延续高个位数增长和 backlog 同比 +18% 作为锚，当前 NTM 收入预期约为 30.5-31.5 亿美元。
+- 重要产品/业务线：ATS 先进封装点胶/underfill/encapsulation/plasma；ATS Test & Inspection / MRS / WaferSense；ATS inspection software 与 Nordson Intelligence AI；MFS 医疗与高端流体部件；IPS 精密农业；IPS 核心工业点胶、涂布、聚合物加工和包装。
+- NTM 公司收入四情景：悲观 28.8-29.8 亿美元；基准 30.5-31.5 亿美元；乐观 31.8-33.5 亿美元；极度乐观 34.0-36.5 亿美元。相对当前预期，悲观低约 1.2-2.2 亿美元，基准基本符合，乐观高约 0.4-2.0 亿美元，极度乐观高约 2.5-5.0 亿美元。
+- 利润或 EBITDA 四情景：悲观 EBITDA/调整后净利润约 8.5-9.2 亿美元 / 5.2-5.8 亿美元；基准 9.6-10.2 亿美元 / 6.5-7.2 亿美元；乐观 10.6-11.6 亿美元 / 7.3-8.2 亿美元；极度乐观 12.0-13.5 亿美元 / 8.5-9.8 亿美元。
+- 最大传导瓶颈：ATS 的先进封装和检测量测需求确实受 AI/HBM/CoWoS 拉动，但 Nordson 只披露 ATS 分部，不披露 AI 客户、产品级订单、ATS backlog 金额或先进封装单项收入；因此“可参与需求”到“可确认收入”的折扣是最大瓶颈。
+- 最大利润率变量：ATS 的产品 mix 与交付效率。先进封装设备、检测量测、软件/服务 attach 若占比提升，利润率上行；若增长来自低毛利项目交付、验收延迟或价格竞争，收入上修不一定转为利润上修。
+- 最大现金流变量：Nordson 历史现金转换强，FY2026H1 自由现金流约 2.934 亿美元，Q2 自由现金流约 1.705 亿美元；NTM 现金流的主要变量是 ATS 订单兑现所需库存、在制品、客户验收和并购后整合资本占用。
+- 可信度：公司层面基准为中高；ATS 子业务为中；MFS 和 IPS 分部为中高；inspection software、AI 软件化和未披露先进封装客户增量为低到中。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| ATS：先进封装点胶/underfill/encapsulation/plasma | 总收入约 3.5-4.5 亿美元/年；其中 AI/HPC 相关约 0.9-1.4 亿美元/年，模型估算 | 总公司约 13%-16%；AI/HPC 子集约 3%-5% | AI/HBM/CoWoS 需求向 Nordson 收入传导的第一主线，影响 ATS 增速和 mix | ATS 分部为 A；产品级收入为 C | 可进入基准，但只按保守产品级估算进入；不得把先进封装 TAM 直接转为 Nordson 收入 | 混合键合、玻璃基板、面板级封装扩张、更多 AI 客户认证 |
+| ATS：Test & Inspection / MRS / WaferSense | 总收入约 2.6-3.3 亿美元/年；其中 AI/HPC 相关约 0.7-1.2 亿美元/年，模型估算 | 总公司约 9%-12%；AI/HPC 子集约 2%-4% | 先进封装良率、X-ray/AXI、声学检测、MRS 光学传感器和半导体计量的关键暴露 | ATS 分部为 A；产品级收入为 C | 可进入基准，按 ATS 可见增长、X-ray recovery 和行业 AP inspection 需求保守纳入 | 3D/HBM 检测、AI defect review、更多软件化检测收入 |
+| ATS：inspection software / Nordson Intelligence AI / service attach | 约 0.2-0.5 亿美元/年，可能已嵌入硬件和服务收入 | 总公司约 1%-2% | 利润率质量变量，高毛利但收入体量小 | C/D | 基准只作为 ATS mix 改善和服务 attach，不单独重复加总 | AI 检测软件、设备联网、算法订阅或服务化 |
+| MFS：medical / engineered fluid solutions | FY2025 MFS 约 8.35 亿美元；FY2026Q2 年化 run-rate 约 8.5 亿美元 | 总公司约 30% | 现金流和利润率稳定器，Q2 EBITDA margin 约 37% | A | 进入基准；主线是医疗/高端流体部件恢复和客户库存正常化 | 不把数据中心液冷主题映射为基准收入，除非公司披露客户和订单 |
+| IPS：precision agriculture（ARAG + CapstanAG） | 约 1.5-2.5 亿美元/年，模型估算 | 总公司约 5%-9% | 非 AI 成长业务，决定 IPS 是否仅为周期工业恢复还是有结构性增量 | IPS 分部为 A；精密农业拆分为 C | 可进入基准，但按并购和产品可见路径保守折扣 | See & spray、喷嘴/阀控智能化、农业自动化平台扩张 |
+| IPS：core industrial adhesive/coating/polymer/packaging | 剔除精密农业后约 11.5-12.5 亿美元/年，模型估算 | 总公司约 40%-43% | 最大收入底盘，决定公司 NTM 总收入是否抗周期 | IPS 分部为 A；子业务拆分为 C | 进入基准；按工业、包装、非织造、聚合物加工需求正常兑现 | 工业周期超预期恢复、高毛利替换件/耗材占比提升 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不评估 Nordson 的份额、收入确认、利润率或公司层面收入汇总。需求单位选择最能解释产品的指标；每个情景均同时写绝对变化和相对当前需求锚的判断。当前需求锚来自行业研究、客户资本开支方向、Nordson 指引隐含增长、FY2026Q2 backlog 同比 +18% 和相关产品正常替换周期。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| ATS：先进封装点胶/underfill/encapsulation/plasma | NTM Nordson 可服务的先进封装点胶、underfill、encapsulation、plasma/表面处理设备需求池约 8-12 亿美元；先进封装设备需求由 HBM、CoWoS/2.5D、FOPLP 和高可靠电子装配拉动 | 6-8 亿美元 | 8-12 亿美元 | 12-16 亿美元 | 17-24 亿美元 | 悲观较锚低 2-4 亿美元；乐观较锚高 4 亿美元左右；极度乐观较锚高 9-12 亿美元 | 悲观=低于当前 AP 扩产预期；基准=符合 HBM/CoWoS 正常扩张；乐观=客户加速拉货；极度乐观=FOPLP、混合键合前处理和 underfill 设备同时放量 | 正向：PTI 面板级封装案例显示 underfill 良率和节拍改善，AI 芯片先进封装仍是 2026 瓶颈；反证：客户资格认证、封装设备交期、单一大客户节奏和混合键合时间表可能把需求推到 NTM 之外 |
+| ATS：Test & Inspection / MRS / WaferSense | 先进封装 inspection/metrology NTM 需求池约 12-18 亿美元；更宽口径半导体检测量测 2026 约 160-180 亿美元、2027 基准 185-220 亿美元 | 9-13 亿美元 | 12-18 亿美元 | 18-26 亿美元 | 26-38 亿美元 | 悲观较 AP inspection 锚低 3-5 亿美元；乐观高 6-8 亿美元；极度乐观高 14-20 亿美元 | 悲观=HBM/CoWoS 检测订单推迟；基准=AP 检测随先进封装产能正常上修；乐观=2D/3D 检测、AXI、MRS 和声学检测订单加速；极度乐观=AI package 良率要求推动非线性检测强度 | 正向：先进封装检测量测是行业研究中确定性较高的利润池；反证：Nordson 产品级订单未披露，KLA/Onto/Camtek 等强竞争者分走主要增量 |
+| ATS：inspection software / Nordson Intelligence AI / service attach | 设备安装基础、defect review、MRS 传感和 X-ray/AXI 软件 attach；当前可见需求更像硬件附加而非独立 SaaS | 低个位数增长，约 0.15-0.35 亿美元可服务 attach 需求 | 0.25-0.55 亿美元 | 0.40-0.80 亿美元 | 0.70-1.20 亿美元 | 绝对需求池仍小；极度乐观较当前锚高约 0.5-0.7 亿美元 | 基准=随硬件出货自然 attach；乐观=客户把 AI defect review 和产线软件作为效率工具；极度乐观=软件开始独立定价或订阅化 | 正向：检测复杂度提高使软件价值提升；反证：Nordson 未披露软件 ARR、订阅合同或独立 RPO，NTM 不应按软件公司口径外推 |
+| MFS：medical / engineered fluid solutions | 医疗、生命科学、流体连接和高端部件客户库存正常化；FY2026Q2 MFS 收入 2.129 亿美元，同比 +5.0%，organic +7.8% | NTM 需求相当于 8.0-8.5 亿美元收入底盘 | 8.6-9.2 亿美元需求支撑 | 9.2-9.8 亿美元 | 9.8-10.6 亿美元 | 悲观较锚低约 0.3-0.7 亿美元；乐观高约 0.4-0.8 亿美元；极度乐观高约 1.0-1.4 亿美元 | 悲观=客户去库存/医疗设备周期慢；基准=恢复到正常订单节奏；乐观=医疗和高端流体项目加速；极度乐观=多产品线同步补库和新项目放量 | 正向：MFS Q2 organic 增长恢复且 EBITDA margin 高；反证：需求不是 AI 直接驱动，若医疗客户资本开支延后，收入弹性有限 |
+| IPS：precision agriculture（ARAG + CapstanAG） | 精密喷洒、阀控、喷嘴控制和农业自动化需求，当前收入基数估算 1.5-2.5 亿美元/年 | 1.4-2.1 亿美元需求支撑 | 1.7-2.7 亿美元 | 2.1-3.2 亿美元 | 2.6-3.9 亿美元 | 基准较当前锚略增；乐观高约 0.4-0.7 亿美元；极度乐观高约 1.1-1.4 亿美元 | 悲观=农机资本开支弱；基准=并购产品正常交叉销售；乐观=precision spray 渗透率上修；极度乐观=自动化喷洒平台快速扩散 | 正向：ARAG 和 CapstanAG 扩展 IPS 结构性增长；反证：农业周期、农户预算和经销渠道整合可能限制 NTM 兑现 |
+| IPS：core industrial adhesive/coating/polymer/packaging | 工业、包装、非织造、聚合物加工、涂布和粘接正常替换周期；FY2026Q2 IPS 收入 3.505 亿美元，同比 +9.9% | 11.0-12.0 亿美元需求支撑 | 12.0-12.8 亿美元 | 12.8-13.8 亿美元 | 13.8-15.0 亿美元 | 悲观较锚低约 0.5-1.0 亿美元；乐观高约 0.5-1.0 亿美元；极度乐观高约 1.5-2.2 亿美元 | 悲观=工业周期和客户 capex 走弱；基准=订单正常恢复；乐观=工业补库和高毛利替换件改善；极度乐观=周期复苏与并购协同同时出现 | 正向：IPS Q2 增长高于公司平均；反证：传统工业需求周期性强，难以用 AI 主题解释 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断需求能否进入 Nordson NTM 收入表，以及当前可收入化基数是多少；不预测增长，不判断利润率。证据等级按收入表可确认性处理：A 为已披露收入/分部收入/正式指引；B 为订单、RPO、backlog、正式合同或明确交付时间表；C 为 design win、客户认证、产能规划或管理层可验证披露；D 为产品发布、样品、测试或未量化 pipeline；E 为主题相关性或同业映射。Nordson 披露到 ATS/IPS/MFS 分部，但不披露 ATS 内先进封装、检测量测、软件收入，因此子业务基数以 A 级分部为上限、C 级产品证据折扣估算。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| ATS：先进封装点胶/underfill/encapsulation/plasma | ATS FY2026Q2 收入 1.775 亿美元，同比 +10.1%；该子业务当前总收入约 3.5-4.5 亿美元/年，AI/HPC 相关约 0.9-1.4 亿美元/年，模型估算 | 直接进入设备、服务、备件收入；AI 数据中心为间接需求源 | 设备毛利和服务 attach 高于低端工业项目，但受项目 mix 和验收影响 | 3.2-4.0 亿美元 | 4.0-5.0 亿美元 | 4.8-5.8 亿美元 | 6.0-7.2 亿美元 | 基准符合 ATS 当前增长和 backlog；乐观高于当前预期 0.8-1.0 亿美元；极度乐观仅为 NTM 上限 | ATS 分部 A；产品级 C | 是，但保守纳入 | 官方分部收入、Q2 ATS growth、产品页、PTI 案例和先进封装行业需求；无产品级订单金额 | NTM 基准纳入；混合键合/玻璃基板等未明确收入路径部分列为乐观或远期期权 |
+| ATS：Test & Inspection / MRS / WaferSense | ATS 内检测量测当前约 2.6-3.3 亿美元/年，AI/HPC 相关约 0.7-1.2 亿美元/年，模型估算；Q2 披露 x-ray recovery 但未给金额 | 直接进入检测设备、传感器、计量和服务收入 | 高技术设备，若软件和服务占比高则利润率质量较好 | 2.4-3.0 亿美元 | 3.0-3.8 亿美元 | 3.8-4.7 亿美元 | 5.0-6.2 亿美元 | 基准略高于当前 run-rate；乐观需订单加速；极度乐观明显高于当前披露可信度 | ATS 分部 A；产品级 C | 是，但保守纳入 | 官方 Test & Inspection 产品线、MRS/AXI/AMI/WaferSense 产品证据和 AP inspection 行业需求；缺订单金额 | NTM 基准纳入；AI 软件化检测增量不得重复加总 |
+| ATS：inspection software / Nordson Intelligence AI / service attach | 当前约 0.2-0.5 亿美元/年，可能嵌入设备和服务收入，无法从收入表拆出 | 直接/间接均有；作为硬件 attach 或服务合约进入收入 | 理论高毛利，但当前体量和定价方式不透明 | 0.15-0.35 亿美元 | 0.25-0.55 亿美元 | 0.40-0.80 亿美元 | 0.70-1.20 亿美元 | 基准仅符合 attach 假设；乐观和极度乐观高于当前可验证证据 | C/D | 部分进入；不单独重复加总 | 有产品和平台披露，但无 ARR、RPO、订阅合同或独立收入 | 仅作为 ATS mix/利润率校准；独立软件收入列为低可信乐观上限 |
+| MFS：medical / engineered fluid solutions | FY2025 MFS 约 8.35 亿美元；FY2026Q2 收入 2.129 亿美元，organic +7.8%，EBITDA margin 37% | 直接收入，医疗和高端流体客户订单进入收入表 | 高利润率、现金流稳定；收入弹性低于 ATS AI 相关业务 | 8.0-8.5 亿美元 | 8.6-9.2 亿美元 | 9.2-9.8 亿美元 | 9.8-10.6 亿美元 | 基准符合当前 run-rate 和恢复路径；乐观高约 0.4-0.8 亿美元 | A | 是 | 分部收入、organic growth、利润率披露和历史稳定性 | NTM 基准纳入；数据中心液冷主题不纳入，除非有公司披露订单 |
+| IPS：precision agriculture（ARAG + CapstanAG） | IPS FY2026Q2 收入 3.505 亿美元；精密农业当前约 1.5-2.5 亿美元/年，模型估算 | 直接收入，通过农业喷洒、阀控、喷嘴和系统组件进入 IPS | 并购协同和专用部件可改善 mix，但受农业周期影响 | 1.4-2.1 亿美元 | 1.7-2.7 亿美元 | 2.1-3.2 亿美元 | 2.6-3.9 亿美元 | 基准略高于当前可见路径；乐观需要交叉销售或农机需求超预期 | IPS 分部 A；子业务 C | 是，但折扣纳入 | ARAG、CapstanAG 并购和产品披露；无单项收入披露 | NTM 基准纳入，作为非 AI 成长业务；不与核心 IPS 重复计算 |
+| IPS：core industrial adhesive/coating/polymer/packaging | IPS FY2026Q2 收入 3.505 亿美元，同比 +9.9%；剔除精密农业后约 11.5-12.5 亿美元/年，模型估算 | 直接收入，工业/包装/聚合物/非织造客户订单进入收入表 | 规模大、服务和耗材可支撑利润率；周期性较强 | 11.0-12.0 亿美元 | 12.0-12.8 亿美元 | 12.8-13.8 亿美元 | 13.8-15.0 亿美元 | 基准符合当前 run-rate；悲观低于当前预期 0.5-1.0 亿美元；乐观取决于工业复苏 | IPS 分部 A；子业务 C | 是 | 分部收入和增长披露，长期客户基础与替换周期 | NTM 基准纳入，是公司最大收入底盘 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第一步需求和第二步收入基数出发，评估每个产品/业务线在 NTM 内能给 Nordson 贡献多少收入和利润。收入贡献不能由行业 TAM、客户总预算或远期 pipeline 直接替代；利润贡献按产品 mix、价格、规模效应、项目成本、服务 attach、库存和费用杠杆判断。产品级利润为经营贡献或 EBITDA 贡献近似，并非公司正式披露的子业务利润。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| ATS：先进封装点胶/underfill/encapsulation/plasma | 悲观产品 | 3.2-4.0 亿美元 | 0.75-1.00 亿美元 | 下降或持平 | 低于当前 ATS 增长预期 | AP 客户扩产推迟、资格认证慢、订单确认不足 | 保留为下行情景 | 产品级订单金额和 ATS backlog 未披露；客户验收可能延迟 |
+| ATS：先进封装点胶/underfill/encapsulation/plasma | 基准产品 | 4.0-5.0 亿美元 | 1.05-1.35 亿美元 | 小幅改善 | 符合当前 ATS 增长、Q2 order/backlog 和行业 AP 需求 | ATS Q2 +10.1%，行业先进封装扩产，PTI underfill 案例 | 保留 | 只能保守折扣进入，不能把 CoWoS/HBM capex 全额映射 |
+| ATS：先进封装点胶/underfill/encapsulation/plasma | 乐观产品 | 4.8-5.8 亿美元 | 1.35-1.75 亿美元 | 改善 | 高于当前预期 0.8-1.0 亿美元 | HBM/CoWoS/FOPLP 加速，underfill/plasma 设备和服务 attach 增强 | 保留但需公司特定订单跟踪 | 单一客户扩产和竞争者供给可能分流 |
+| ATS：先进封装点胶/underfill/encapsulation/plasma | 极度乐观产品 | 6.0-7.2 亿美元 | 1.80-2.30 亿美元 | 明显改善 | 明显高于当前预期，只代表 NTM 上限 | AP 设备非线性放量、Nordson 捕获份额、交付和验收顺畅 | 下移为乐观上限，除非后续披露产品级订单 | 需求、捕获、利润率和执行四环节尚未同时验证 |
+| ATS：Test & Inspection / MRS / WaferSense | 悲观产品 | 2.4-3.0 亿美元 | 0.45-0.70 亿美元 | 下降 | 低于当前 AP inspection 预期 | X-ray/AXI 或半导体检测订单恢复慢 | 保留 | 高端检测竞争激烈，客户资格和验收周期长 |
+| ATS：Test & Inspection / MRS / WaferSense | 基准产品 | 3.0-3.8 亿美元 | 0.75-1.05 亿美元 | 持平至小幅改善 | 符合 ATS 可见路径 | AP inspection/metrology 需求强，Nordson 有 Test & Inspection 产品组合 | 保留 | 子业务收入、订单和 AI 客户未披露 |
+| ATS：Test & Inspection / MRS / WaferSense | 乐观产品 | 3.8-4.7 亿美元 | 1.05-1.40 亿美元 | 改善 | 高于当前预期 0.5-0.9 亿美元 | HBM/2.5D 良率要求提升，MRS/AXI/AMI/WaferSense 拉动 mix | 保留 | 同业订单强不等同于 Nordson 份额提升 |
+| ATS：Test & Inspection / MRS / WaferSense | 极度乐观产品 | 5.0-6.2 亿美元 | 1.50-2.05 亿美元 | 明显改善 | 明显高于当前预期 | 先进封装检测强度非线性上升并由 Nordson 捕获 | 下移为乐观上限 | 缺少产品级 backlog、客户名称和交付排期 |
+| ATS：inspection software / Nordson Intelligence AI / service attach | 悲观产品 | 0.15-0.35 亿美元 | 无法可靠量化 | 持平 | 低于软件 attach 预期 | 软件仍作为硬件功能而非独立收入 | 保留 | 无 ARR/RPO，无法拆分利润 |
+| ATS：inspection software / Nordson Intelligence AI / service attach | 基准产品 | 0.25-0.55 亿美元 | 0.10-0.25 亿美元 | 小幅改善 | 符合硬件 attach 路径 | 检测复杂度提高，软件辅助良率和 defect review | 保留但不重复加总 | 可能已包含在 ATS 硬件/服务收入中 |
+| ATS：inspection software / Nordson Intelligence AI / service attach | 乐观产品 | 0.40-0.80 亿美元 | 0.20-0.45 亿美元 | 改善 | 高于当前预期 | 软件作为客户效率工具获得更高 attach 或服务收入 | 下移为辅助乐观 | 仍缺独立定价证据 |
+| ATS：inspection software / Nordson Intelligence AI / service attach | 极度乐观产品 | 0.70-1.20 亿美元 | 0.40-0.75 亿美元 | 明显改善 | 远高于当前证据 | 软件订阅化或服务合同显著扩张 | 移入附录 | NTM 内无明确合同和收入确认路径 |
+| MFS：medical / engineered fluid solutions | 悲观产品 | 8.0-8.5 亿美元 | 2.8-3.1 亿美元 | 持平或小降 | 低于当前恢复预期 | 医疗客户库存调整、项目延迟 | 保留 | 非 AI 直接需求，客户 capex 可能慢 |
+| MFS：medical / engineered fluid solutions | 基准产品 | 8.6-9.2 亿美元 | 3.2-3.5 亿美元 | 稳定 | 符合当前 run-rate | Q2 MFS organic +7.8%，EBITDA margin 37% | 保留 | 增速弹性有限，不能给高倍增长假设 |
+| MFS：medical / engineered fluid solutions | 乐观产品 | 9.2-9.8 亿美元 | 3.5-3.9 亿美元 | 小幅改善 | 高于当前预期 0.4-0.8 亿美元 | 医疗项目恢复、mix 和规模效应改善 | 保留 | 客户集中和认证周期制约 |
+| MFS：medical / engineered fluid solutions | 极度乐观产品 | 9.8-10.6 亿美元 | 3.9-4.3 亿美元 | 改善 | 明显高于当前预期 | 多产品线同步恢复且利润率不受成本拖累 | 下移为乐观上限 | 不是 AI 需求池，非线性上修证据不足 |
+| IPS：precision agriculture（ARAG + CapstanAG） | 悲观产品 | 1.4-2.1 亿美元 | 0.30-0.50 亿美元 | 下降 | 低于并购协同期望 | 农业 capex 弱、渠道整合慢 | 保留 | 单项收入未披露 |
+| IPS：precision agriculture（ARAG + CapstanAG） | 基准产品 | 1.7-2.7 亿美元 | 0.45-0.75 亿美元 | 稳定至小幅改善 | 符合当前预期 | ARAG/CapstanAG 产品和并购协同，精密喷洒渗透 | 保留 | 农业周期和经销库存 |
+| IPS：precision agriculture（ARAG + CapstanAG） | 乐观产品 | 2.1-3.2 亿美元 | 0.65-1.00 亿美元 | 改善 | 高于当前预期 | 智能喷洒和精密阀控采用加速 | 保留 | 需要订单和渠道兑现证据 |
+| IPS：precision agriculture（ARAG + CapstanAG） | 极度乐观产品 | 2.6-3.9 亿美元 | 0.90-1.30 亿美元 | 改善 | 明显高于当前预期 | 农业自动化需求和并购协同同时突破 | 下移为乐观上限 | NTM 内非线性证据不足 |
+| IPS：core industrial adhesive/coating/polymer/packaging | 悲观产品 | 11.0-12.0 亿美元 | 3.5-4.0 亿美元 | 下降 | 低于当前 run-rate | 工业周期弱、客户延迟项目、价格压力 | 保留 | 传统周期业务可抵消 ATS 增长 |
+| IPS：core industrial adhesive/coating/polymer/packaging | 基准产品 | 12.0-12.8 亿美元 | 4.1-4.6 亿美元 | 稳定 | 符合当前 run-rate | Q2 IPS +9.9%，替换件和应用系统需求稳定 | 保留 | 子业务拆分估算，需避免与精密农业重复 |
+| IPS：core industrial adhesive/coating/polymer/packaging | 乐观产品 | 12.8-13.8 亿美元 | 4.6-5.2 亿美元 | 小幅改善 | 高于当前预期 | 工业补库、包装/非织造恢复、高毛利服务和耗材改善 | 保留 | 工业周期恢复证据需持续 |
+| IPS：core industrial adhesive/coating/polymer/packaging | 极度乐观产品 | 13.8-15.0 亿美元 | 5.2-5.8 亿美元 | 改善 | 明显高于当前预期 | 传统工业强复苏且服务 mix 上行 | 下移为乐观上限 | 大基数业务很难在 NTM 非线性增长 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。汇总时剔除重复计算：ATS software/service attach 不再作为独立额外收入叠加到 ATS 设备总额；IPS precision agriculture 与 core IPS 分拆后再加总；先进封装、检测量测和 AI/HPC 暴露只作为 ATS 内部 mix，不把行业 TAM、客户 capex 或项目总金额外推为公司收入。当前预期锚为 NTM 收入 30.5-31.5 亿美元、毛利率约 54.5%-55.5%、EBITDA margin 约 31.5%-32.5%。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 28.8-29.8 亿美元 | 相对 TTM 约 -0.8% 至 +2.6%；相对当前预期低约 1.2-2.2 亿美元 | 低于 FY2026 指引延续路径和当前 run-rate；ATS 增长不足以抵消工业/医疗周期弱化 | 53.5%-54.5% | 22.5%-24.5% | EBITDA 8.5-9.2 亿美元；调整后净利润 5.2-5.8 亿美元 | FCF 约 5.0-6.0 亿美元，现金转换仍正但营运资本占用上升 | 中 | ATS 订单确认慢、工业周期弱、MFS 恢复不及预期、并购协同延迟 |
+| 基准公司 | 30.5-31.5 亿美元 | 相对 TTM 约 +5% 至 +8%；相对当前预期基本持平 | 接近管理层 FY2026 指引、Q3 指引、Q2 backlog 同比 +18% 和 FY2027H1 正常 run-rate | 54.5%-55.5% | 24.5%-26.0% | EBITDA 9.6-10.2 亿美元；调整后净利润 6.5-7.2 亿美元 | FCF 约 6.3-7.4 亿美元，维持较高现金转换 | 中高 | 产品级披露不足导致 ATS mix 和 AI/HPC 贡献无法精确拆分 |
+| 乐观公司 | 31.8-33.5 亿美元 | 相对 TTM 约 +9% 至 +15%；相对当前预期高约 0.4-2.0 亿美元 | 高于当前预期，但不是单一小基数项目造成；ATS AP/T&I、MFS 和 IPS 至少两条线同步好于预期 | 55.5%-56.5% | 26.0%-28.0% | EBITDA 10.6-11.6 亿美元；调整后净利润 7.3-8.2 亿美元 | FCF 约 7.2-8.5 亿美元，收入质量改善但需库存和应收控制 | 中 | 需要公司特定订单、交付和 mix 证据确认；否则只保留为上行情景 |
+| 极度乐观公司 | 34.0-36.5 亿美元 | 相对 TTM 约 +17% 至 +26%；相对当前预期高约 2.5-5.0 亿美元 | 明显高于当前预期；要求 ATS 先进封装和检测量测非线性放量，且 IPS/MFS 不拖累 | 56.5%-58.0% | 28.0%-31.0% | EBITDA 12.0-13.5 亿美元；调整后净利润 8.5-9.8 亿美元 | FCF 约 8.3-10.0 亿美元，前提是客户验收和营运资本不吞噬利润 | 低到中 | 需求、公司捕获、利润率和执行质量需同时突破；当前披露不足以作为基准 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。正向证据只提升它实际影响的层级；反证只在实际影响的层级处理一次，不重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026Q2 公司收入 7.408 亿美元，同比 +8.5%，FY2026 收入指引上调至 29.30-30.10 亿美元 | 公司汇总 | 支撑 NTM 基准 30.5-31.5 亿美元；绝对上使悲观低于预期但不等于衰退 | 支撑公司利润率维持中高水平 | 指引上调和 Q3 760-790M 指引提升执行可信度 | 基准保留；悲观保留为需求/执行弱化情景 |
+| FY2026Q2 backlog 同比 +18%，order entry broad-based | 收入基数/执行可信度 | 增强 NTM 可确认收入路径，但未披露 ATS 产品级 backlog | 对利润率影响取决于 mix 和项目成本，不能自动上调 | 提升交付可见性，但库存和验收仍需跟踪 | 基准保留；乐观保留但不上移为基准 |
+| ATS Q2 收入 +10.1%，EBITDA margin 27%，x-ray recovery 和先进封装/检测产品组合可见 | 产品贡献/公司利润 | 支撑 ATS AP/T&I 基准和乐观收入；绝对收入仍受分部披露限制 | ATS margin 低于 MFS/IPS，收入增量不必然高利润 | 项目型设备验收、客户认证和交期影响现金流 | 基准保留；极度乐观下移为乐观上限 |
+| MFS Q2 organic +7.8%，EBITDA margin 37% | 产品贡献/利润率 | 支撑 MFS 8.6-9.2 亿美元基准 | 高利润率业务稳定，改善公司利润质量 | 医疗客户订单恢复改善现金转换 | 基准保留；极度乐观下移 |
+| IPS Q2 +9.9%，EBITDA margin 35%，精密农业并购提供结构性增长 | 产品贡献/组合 | 支撑 IPS core 与 precision agriculture 基准 | 若精密农业和服务/耗材 mix 提升，利润率改善 | 并购整合和农业周期影响执行 | 基准保留；乐观保留 |
+| 行业研究显示 AI/HBM/CoWoS 拉动先进封装和检测量测，但 Nordson 无 AI 客户和产品级订单金额披露 | 需求/收入基数 | 支撑需求池，但限制可确认收入；不能把客户 capex 直接算作 Nordson 收入 | 高毛利潜力存在，但价格、份额、验收未验证 | 缺客户、交付和验收时间表，执行可信度折扣 | 乐观保留；极度乐观下移；未披露机会仅作跟踪 |
+| inspection software / Nordson Intelligence AI 有产品逻辑但无 ARR/RPO/订阅披露 | 收入基数/利润率 | 基准只可作为 ATS attach 和 mix，不单独叠加 | 理论高毛利，但无法可靠量化独立利润 | 收入确认路径不清 | 基准中嵌入；独立极度乐观移入附录 |
+| 数据中心液冷行业需求存在，但 Nordson MFS/IPS 没有披露数据中心液冷客户或订单 | 需求边界/收入基数 | 不纳入 NTM 基准收入 | 不作为利润率上修证据 | 无执行证据 | 排除出 NTM 基准；仅作跟踪 |
+| 公司债务和并购后整合：FY2026Q2 净债务约 17.8 亿美元，净债务/TTM EBITDA 约 1.9x | 现金流/执行 | 不直接压低收入 | 利息、整合费用和资本配置影响净利润质量 | FCF 可用于降杠杆，但营运资本占用需观察 | 悲观保留；基准不重复惩罚 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 28.8-29.8 亿美元，低于当前预期 1.2-2.2 亿美元；利润率低于当前结构 | 工业和医疗即使走弱，公司仍有 FY2026 指引、分部规模和现金转换支撑 | 若 ATS 订单确认慢、MFS 恢复弱、IPS 周期回落，收入和利润均可能低于预期 | 保留 | 下行情景 | 中 | ATS 产品级披露不足只作为收入确认风险处理，不再重复压低需求池和公司利润 |
+| 基准 | NTM 收入 30.5-31.5 亿美元，基本符合当前预期；利润率按现有结构小幅改善或稳定 | FY2026 指引上调、Q2 +8.5%、backlog +18%、MFS/IPS/ATS 三分部均增长 | ATS 子业务拆分、AI/HPC 收入和软件 attach 无法精确量化 | 保留 | 最可能经营情景 | 中高 | 未披露 AI 客户不否定 ATS 基准收入，只限制乐观/极度乐观上修 |
+| 乐观 | NTM 收入 31.8-33.5 亿美元，高于当前预期 0.4-2.0 亿美元；利润率同步改善 | ATS AP/T&I 行业需求强，IPS 和 MFS 具备同步好于预期的可能，订单趋势 broad-based | 需要公司特定订单、交付、验收和 mix 证据；不能只靠行业 beta | 保留 | 上行情景 | 中 | 先进封装行业强需求只在 ATS 产品贡献层级处理，不把同一需求再加到公司其他分部 |
+| 极度乐观 | NTM 收入 34.0-36.5 亿美元，高于当前预期 2.5-5.0 亿美元；利润率大幅扩张 | 只有在 ATS 先进封装、检测量测、软件/服务 attach、MFS 和 IPS 同时突破时成立 | 任一核心环节缺证据：产品级订单、客户、交付时间表、利润率和现金流都未完整披露 | 下移 | 乐观上限；部分机会移入附录 | 低到中 | 远期混合键合、玻璃基板和独立 AI 软件收入只列附录或跟踪，不重复计入 NTM 基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。Nordson NTM 收入最可能落在 30.5-31.5 亿美元，基本兑现 FY2026 指引延续路径和 FY2027H1 正常 run-rate；毛利率约 54.5%-55.5%，经营利润率约 24.5%-26.0%，EBITDA 约 9.6-10.2 亿美元，自由现金流约 6.3-7.4 亿美元。
+- 乐观情景成立条件：ATS 先进封装点胶/plasma 与 Test & Inspection 均出现产品级订单或交付强于当前预期；MFS 维持高个位数 organic 增长且 37% 左右 EBITDA margin 不明显回落；IPS 精密农业和核心工业需求同步改善；收入增量来自较高毛利 mix、服务/耗材或软件 attach，而不是低毛利项目堆量。
+- 极度乐观情景成立条件：先进封装需求池、Nordson 捕获份额、产品交付验收、价格/mix、软件/服务 attach 和营运资本控制同时突破。仅有 AI/HBM/CoWoS 行业景气、客户 capex 或同业订单强，不能支撑极度乐观进入基准。
+- 悲观情景触发条件：FY2026H2 或 FY2027H1 order entry 放缓；Q3/Q4 收入低于指引节奏；ATS backlog 无法转为收入；X-ray/AXI 或 advanced packaging 订单推迟；MFS 医疗客户重新去库存；IPS 工业周期和农业 capex 同时走弱；毛利率受项目成本、库存和低利用率拖累。
+- 后续跟踪数据：季度 backlog 同比和绝对金额；ATS 产品级 order commentary；advanced packaging、x-ray、MRS、AMI、WaferSense 相关订单或客户案例；MFS organic growth 和 margin；IPS precision agriculture 整合进展；毛利率、EBITDA margin、库存、应收、自由现金流转换率；是否披露 AI/HPC、HBM、CoWoS、FOPLP、混合键合或软件订阅相关收入。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Nordson FY2026Q2，季度截至 2026-04-30；官方业绩新闻稿日期 2026-05-20；投资者材料日期 2026-05-21；本报告日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Nordson FY2026Q2 官方业绩新闻稿：Q2 收入 7.408 亿美元，同比 +8.5%；Q2 backlog 同比 +18%；FY2026 收入指引 29.30-30.10 亿美元；Q3 收入指引 7.60-7.90 亿美元；分部收入和 EBITDA margin。
+  - Nordson FY2026Q2 投资者材料：分部结构、增长、cash conversion、并购和 Advanced Technology Solutions 组合说明。
+  - Nordson FY2025 年报：FY2025 收入 27.92 亿美元、毛利率 55.2%、EBITDA 约 9.00 亿美元、三分部收入结构和长期业务说明。
+  - Nordson FY2026Q1 与 FY2025Q4 官方披露：backlog、订单、FY2026 初始指引和 run-rate 校准。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 是管理层正式指引，适合作为 NTM 的前半段锚；FY2027H1 不是公司正式指引，本报告按 FY2026H1 实际、FY2026H2 指引和订单趋势进行经营模型估算。
+  - 远期期权包括混合键合、玻璃基板、面板级封装扩张、inspection AI 软件独立定价、数据中心液冷潜在暴露。它们不进入 NTM 基准，除非后续出现客户、合同、交付时间表和收入确认路径。
+  - AI/HPC 相关收入为模型估算，只用于经营传导分析；Nordson 官方没有披露 AI/HPC 单项收入、客户订单或产品级 backlog。
+- 主要来源：
+  - Nordson FY2026Q2 results: https://www.nordson.com/en/about-us/newsroom/corporate-news/nordson-corporation-reports-record-second-quarter-2026-results-and-increases-full-year-guidance
+  - Nordson FY2026Q2 investor presentation: https://s202.q4cdn.com/528247721/files/doc_financials/2026/q2/FY26-Nordson-Investor-Presentation-5-21-26RevA.pdf
+  - Nordson FY2025 annual report / Form 10-K: https://s202.q4cdn.com/528247721/files/doc_financials/2025/ar/10-K.pdf
+  - Nordson FY2026Q1 results: https://www.nordson.com/en/about-us/newsroom/corporate-news/nordson-corporation-reports-record-first-quarter-fiscal-2026-results
+  - Nordson FY2025Q4 and FY2025 results: https://www.nordson.com/en/about-us/newsroom/corporate-news/nordson-corporation-reports-record-fourth-quarter-and-fiscal-year-2025-results
+  - Nordson Electronics Solutions: https://www.nordson.com/en/divisions/electronics-solutions
+  - Nordson Test & Inspection: https://www.nordson.com/en/divisions/test-and-inspection
+  - Nordson semiconductor packaging solutions: https://www.nordson.com/en/divisions/electronics-solutions/your-process/industries/semiconductor-packaging
+  - Nordson PTI panel-level packaging case: https://www.nordson.com/en/about-us/newsroom/electronics-solutions-news/nordson-electronics-solutions-develops-panel-level-packaging-solution-for-powertech-technology-inc
+  - Nordson semiconductor metrology / XM8000: https://www.nordson.com/en/divisions/test-and-inspection/our-technologies---semiconductor-metrology
+  - Nordson MRS sensor technology: https://www.nordson.com/en/products/test-and-inspection-products/mrs-sensor-technology-and-options
+  - Nordson CapstanAG acquisition: https://www.nordson.com/en/about-us/newsroom/precision-agriculture-news/nordson-aquires-capstanag
+  - 本地公司资料：`公司调研/半导体材料_化学品_基板/NDSN_Nordson_公司调研_2026-06-11.md`
+  - 本地行业资料：`行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`、`行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-06-11.md`、`行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`、`行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装湿化学与表面处理材料_2026-06-11.md`、`行业调研/晶圆制造_设备_材料_测试/行业调研_半导体设备子系统与真空_RF_流体模块_2026-06-11.md`、`行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`

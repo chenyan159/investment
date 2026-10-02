@@ -1,0 +1,123 @@
+{
+  "data": {
+    "asOf": "Tue, Sep 22, 2026",
+    "headers": {
+      "time": "Time",
+      "symbol": "Symbol",
+      "name": "Company Name",
+      "eps": "EPS",
+      "surprise": "% Surprise",
+      "marketCap": "Market Cap",
+      "fiscalQuarterEnding": "Fiscal Quarter Ending",
+      "epsForecast": "Consensus EPS* Forecast",
+      "noOfEsts": "# of Ests"
+    },
+    "rows": [
+      {
+        "eps": "$56.05",
+        "surprise": "2.77",
+        "time": "time-not-supplied",
+        "symbol": "AZO",
+        "name": "AutoZone, Inc.",
+        "marketCap": "$46,951,231,000",
+        "fiscalQuarterEnding": "Aug/2026",
+        "epsForecast": "$54.54",
+        "noOfEsts": "11"
+      },
+      {
+        "eps": "$0.78",
+        "surprise": "-16.13",
+        "time": "time-not-supplied",
+        "symbol": "THO",
+        "name": "Thor Industries, Inc.",
+        "marketCap": "$3,621,263,620",
+        "fiscalQuarterEnding": "Jul/2026",
+        "epsForecast": "$0.93",
+        "noOfEsts": "6"
+      },
+      {
+        "eps": "$0.82",
+        "surprise": "10.81",
+        "time": "time-not-supplied",
+        "symbol": "WOR",
+        "name": "Worthington Enterprises, Inc.",
+        "marketCap": "$2,932,671,490",
+        "fiscalQuarterEnding": "Aug/2026",
+        "epsForecast": "$0.74",
+        "noOfEsts": "2"
+      },
+      {
+        "eps": "$1.05",
+        "surprise": "19.32",
+        "time": "time-not-supplied",
+        "symbol": "KBH",
+        "name": "KB Home",
+        "marketCap": "$2,907,307,260",
+        "fiscalQuarterEnding": "Aug/2026",
+        "epsForecast": "$0.88",
+        "noOfEsts": "6"
+      },
+      {
+        "eps": "$0.53",
+        "surprise": "51.43",
+        "time": "time-not-supplied",
+        "symbol": "MLKN",
+        "name": "MillerKnoll, Inc.",
+        "marketCap": "$1,373,243,900",
+        "fiscalQuarterEnding": "Aug/2026",
+        "epsForecast": "$0.35",
+        "noOfEsts": "3"
+      },
+      {
+        "eps": "($0.14)",
+        "surprise": "N/A",
+        "time": "time-not-supplied",
+        "symbol": "HERE",
+        "name": "Here Group Limited",
+        "marketCap": "$90,822,304",
+        "fiscalQuarterEnding": "Jun/2026",
+        "epsForecast": "",
+        "noOfEsts": "N/A"
+      },
+      {
+        "eps": "($0.01)",
+        "surprise": "N/A",
+        "time": "time-not-supplied",
+        "symbol": "SDA",
+        "name": "SunCar Technology Group Inc.",
+        "marketCap": "$47,731,728",
+        "fiscalQuarterEnding": "Jun/2026",
+        "epsForecast": "",
+        "noOfEsts": "N/A"
+      },
+      {
+        "eps": "($0.05)",
+        "surprise": "77.27",
+        "time": "time-not-supplied",
+        "symbol": "AYTU",
+        "name": "Aytu BioPharma, Inc. ",
+        "marketCap": "$23,906,758",
+        "fiscalQuarterEnding": "Jun/2026",
+        "epsForecast": "($0.22)",
+        "noOfEsts": "1"
+      },
+      {
+        "eps": "($9.63)",
+        "surprise": "N/A",
+        "time": "time-not-supplied",
+        "symbol": "YYAI",
+        "name": "AiRWA Inc.",
+        "marketCap": "$4,223,153",
+        "fiscalQuarterEnding": "Jul/2026",
+        "epsForecast": "",
+        "noOfEsts": "N/A"
+      }
+    ]
+  },
+  "message": null,
+  "status": {
+    "rCode": 200,
+    "bCodeMessage": null,
+    "developerMessage": null
+  }
+}

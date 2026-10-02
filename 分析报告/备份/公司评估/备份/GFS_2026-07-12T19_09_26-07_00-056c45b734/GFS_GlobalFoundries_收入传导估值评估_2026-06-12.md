@@ -1,0 +1,159 @@
+# 公司收入传导与价值传导评估：GlobalFoundries（GFS）
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即 2026-06-12 至 2027-06-12 的未来 12 个月经营传导；FY2026、FY2027、2028-2030 Investor Day 长期目标、CPO/OCI 远期期权只作为补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：GlobalFoundries 2025 年收入为 67.91 亿美元；2026Q1 收入为 16.42 亿美元，毛利率 27.6%，Adjusted EBITDA 为 5.78 亿美元，300mm 等效晶圆出货 57.9 万片；2026Q2 管理层收入指引中点为 17.60 亿美元，Adjusted EBITDA 指引中点为 6.15 亿美元。按 Q1 已实现与 Q2 指引推算，当前 NTM 正常兑现锚约为 71-73 亿美元收入，而不是把 AI 光互联总需求直接映射为 GFS 收入。
+- 重要产品/业务线：Smart Mobile/RF SOI 和消费成熟节点仍是最大收入基盘；Automotive 22FDX/eNVM/radar、Home & Industrial IoT/FDX/eMRAM/eNVM 是稳定质量线；Communications Infrastructure & Data Center 的 SiGe/CBIC/RF/高速连接是可见增长线；SiPh/Fotonix/AMF/SCALE/CPO 是高弹性但 NTM 仍受客户认证、封装测试和收入确认节奏约束的成长线；Non-wafer/NRE/design enablement/IP 贡献高利润属性但金额有限；GaN power 为小基数新品和远期期权。
+- NTM 公司收入四情景：悲观 66-69 亿美元；基准 71-73 亿美元；乐观 74-78 亿美元；极度乐观 80-85 亿美元。悲观不是需求绝对消失，而是低于当前 Q2 指引、run-rate 和设计导入节奏；极度乐观需要移动/RF 不拖累、汽车与 IoT 稳定、CIDC 和 SiPh 同时放量，并且 CPO/光引擎在 NTM 内出现更快确认。
+- 利润或 EBITDA 四情景：悲观 Adjusted EBITDA 约 21-23 亿美元，净利润方向约 6-8 亿美元；基准 Adjusted EBITDA 约 24-26 亿美元，净利润方向约 8-10 亿美元；乐观 Adjusted EBITDA 约 26-29 亿美元，净利润方向约 10-13 亿美元；极度乐观 Adjusted EBITDA 约 30-34 亿美元，净利润方向约 13-17 亿美元。产品级精确利润因公司未披露单项产品毛利率，以下按利润率方向和经营杠杆校准。
+- 最大传导瓶颈：AI 光互联需求池很大，但 GFS 可确认收入必须经过客户设计导入、工艺平台锁定、封装测试链路、晶圆产能排程、验收和收入确认；CPO/OCI 的 NTM 收入可信度显著低于 800G/1.6T 可插拔链条中的 SiPh/SiGe/RF 芯片机会。
+- 最大利润率变量：产品 mix 是否从普通 RF SOI、移动和成熟节点价格竞争，转向汽车 eNVM/FDX、SiGe/CBIC、高速连接、SiPh 平台、design enablement/IP 和高利用率 specialty capacity。仅有低毛利晶圆 pass-through 放量不能自动提升经营利润率。
+- 最大现金流变量：利用率、capex 节奏、库存和客户项目验收。若 CPO/SiPh 扩产与客户认证错配，收入上修可能伴随营运资本占用和早期 ramp 成本；若 Q2 指引后的 utilization 稳定改善，现金流质量会随 EBITDA 改善。
+- 可信度：公司层面基准为中高，因 Q1 已实现、Q2 指引和 2025 end-market 收入锚较清楚；乐观为中，依赖 CIDC/SiPh 与汽车/IoT 同时强于预期；极度乐观为低至中低，因 CPO/OCI、GaN 和新增 IP 的 NTM 收入确认证据不足。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Smart Mobile / RF SOI / 消费成熟节点 | 2025 年 Smart Mobile Devices 收入 26.78 亿美元；NTM 当前锚约 24-29 亿美元 | 约 35%-40% | 最大收入基盘，决定公司收入下限和利用率；但周期性、价格和客户 mix 风险较高 | A | 进入基准，是现金流和产能利用率核心，但不作为 AI 增量主线 | 若手机 RF front-end 周期明显修复，可进入乐观；不是长期结构性 AI 期权 |
+| Automotive 22FDX / eNVM / radar / Renesas 低功耗平台 | 2025 年 Automotive 收入 14.10 亿美元；NTM 当前锚约 13-17 亿美元 | 约 19%-23% | 长认证周期、客户粘性和质量要求带来较高收入可见度；可改善经营质量 | A/B | 进入基准；Renesas 等正式合作可作为 NTM 及后续增长证据，但需按交付节奏确认 | 物理 AI、车载边缘计算和雷达平台为 2027+补充，不提前进 NTM 主表 |
+| Home & Industrial IoT / FDX / eMRAM / eNVM / edge secure MCU | 2025 年 Home and Industrial IoT 收入 11.89 亿美元；NTM 当前锚约 12-16 亿美元 | 约 17%-22% | 工业、智能家居、边缘控制和安全 MCU 需求稳定，但宏观与库存周期影响大 | A/B | 进入基准；FDX/eMRAM/eNVM 作为 mix 改善项，不能把全部 IoT 收入都写成高毛利新品 | 边缘 AI MCU 和更高 eMRAM 渗透率为乐观或远期补充 |
+| Communications Infrastructure & Data Center 非 SiPh 高速连接 / SiGe / CBIC / RF | 2025 年 CIDC 总收入 7.45 亿美元；扣除硅光后 NTM 锚约 8-11 亿美元 | 约 12%-16% | 受 800G/1.6T 光模块、交换机、SerDes/retimer 周边模拟和 RF 需求拉动，收入化路径比 CPO 更近 | A/B | 进入基准；按 800G/1.6T 可插拔和高速连接正常兑现处理 | 更高 1.6T 放量、客户份额上修和 SiGe/CBIC mix 上移进入乐观 |
+| SiPh / GF Fotonix / AMF / SCALE / CPO optical module solution | 未单独披露收入；公司并购 AMF/InfiniLink、发布 SCALE，并有 Sivers、Corning 等合作；NTM 当前可收入化锚约 1.5-3.0 亿美元 | 约 2%-4%，当前直接 AI 数据中心收入仍小 | 最大叙事弹性和长期可选性；但 NTM 需要客户 qualification、良率、封装测试和收入确认 | B/C | 小比例进入基准；超出已可见项目的 CPO/OCI 只进入乐观、极度乐观或附录跟踪 | 2027+ CPO/NPO、external laser source、OCI/Open CPX/XPO、chiplet optical I/O 为远期期权 |
+| Non-wafer / NRE / Design Enablement / Processor IP（含 MIPS、ARC） | 2025 年 non-wafer revenue 7.69 亿美元；新收购 Processor IP 的 NTM 增量预计小于现有 non-wafer 基盘 | 约 10%-12% | 高利润属性、客户绑定和生态入口；但新增 IP 收入基数较小 | A for non-wafer；C for 新 IP | non-wafer 基盘进入基准；MIPS/ARC 新增贡献保守纳入，不能把长期生态价值写成 NTM 收入 | 若客户 design win 转为授权、NRE 和长期 design services，可进入乐观 |
+| GaN power / Navitas-GF GaN 相关平台 | 当前收入未披露，NTM 可确认收入锚为 0-0.25 亿美元 | 小于 1% | 可能改变电源与功率器件长期结构，但 NTM 仍处早期商业化和可靠性认证 | C/D | 不作为基准主要收入项；只允许极小金额或不单列并入相关 end-market | 2027+ AI 电源、汽车和工业功率平台为远期期权 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不判断 GFS 份额、收入确认或利润率。所有情景均相对当前需求锚判断；绝对需求可以增长，但若低于行业预期、客户预算、指引隐含节奏或正常替换周期，仍属于悲观需求。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Smart Mobile / RF SOI / 消费成熟节点 | 2025 年 GFS Smart Mobile 26.78 亿美元；需求锚为手机 RF 和消费成熟节点正常替换周期 | 手机/RF 库存修复慢，需求池低于当前 run-rate，GFS 对应需求约 22-25 亿美元 | 手机/RF 温和恢复，对应需求约 24-29 亿美元 | 高端 RF SOI mix 与客户拉货改善，对应需求约 27-31 亿美元 | 手机周期强复苏叠加 RF content 上升，对应需求约 30-34 亿美元 | 悲观较基准低 2-4 亿美元；乐观高 2-3 亿美元；极度乐观高 5 亿美元以上 | 基准为正常兑现；悲观低于预期；乐观需手机终端与 RF content 双改善 | 公司 2025 end-market 披露提供 A 级锚；反证是移动链价格压力、客户库存和成熟节点竞争 |
+| Automotive 22FDX / eNVM / radar / Renesas | 2025 年 Automotive 14.10 亿美元；需求锚为车载 MCU、低功耗 eNVM、radar、边缘控制平台正常认证和订单节奏 | 汽车半导体库存与客户排产延后，对应需求约 11-13 亿美元 | 认证项目和客户订单正常兑现，对应需求约 13-17 亿美元 | Renesas 等合作拉动更快量产，radar/edge platform mix 上移，对应需求约 15-19 亿美元 | 车载边缘 AI、雷达和 eNVM 平台多客户同时放量，对应需求约 18-22 亿美元 | 悲观较基准低 2-4 亿美元；乐观高 2 亿美元左右；极度乐观高 4-6 亿美元 | 基准符合当前预期；乐观需正式客户项目加速 | 正向为正式合作和汽车长周期粘性；反证为车规认证慢、客户库存和汽车产量周期 |
+| Home & Industrial IoT / FDX / eMRAM / eNVM | 2025 年 Home and Industrial IoT 11.89 亿美元；需求锚为工业控制、智能家居、边缘安全 MCU、FDX/eMRAM/eNVM 渗透 | 工业和消费 IoT 库存去化慢，对应需求约 10-12 亿美元 | 需求正常恢复，对应需求约 12-16 亿美元 | FDX/eMRAM/eNVM 与边缘控制 mix 上修，对应需求约 14-18 亿美元 | 边缘 AI、安全 MCU 和工业需求同步突破，对应需求约 17-21 亿美元 | 悲观较基准低 2-4 亿美元；乐观高 2 亿美元左右；极度乐观高 4-5 亿美元 | 基准为正常兑现；乐观要看到工业订单和设计导入增强 | A 级 end-market 锚较清楚；反证为工业 capex 波动、库存、成熟 MCU 价格压力 |
+| CIDC 非 SiPh 高速连接 / SiGe / CBIC / RF | 2025 年 CIDC 总收入 7.45 亿美元；需求锚为 800G/1.6T 可插拔光模块、交换机侧高速模拟、SiGe/CBIC/RF | 光模块 ASP 下行、客户采购延后，GFS 可参与需求约 8-10 亿美元 | 800G 延续、1.6T 放量，GFS 可参与需求约 10-13 亿美元 | 1.6T 模块和高速连接芯片需求强于预期，对应需求约 13-16 亿美元 | 1.6T 供应紧张、客户多代平台同步上修，对应需求约 16-20 亿美元 | 悲观较基准低 2-3 亿美元；乐观高 3 亿美元；极度乐观高 6 亿美元以上 | 基准为 AI 网络强需求正常兑现；乐观需 GFS 相关器件份额或 mix 上移 | 行业资料显示 2026 年 800G/1.6T 是更确定收入路径；反证是 ASP 下降、客户 qualification 和供给恢复 |
+| SiPh / Fotonix / AMF / SCALE / CPO | 需求锚为 AI 光互联中 SiPh PIC、光引擎、CPO/NPO 小批量验证；2026 年行业主收入仍多在 800G/1.6T pluggable，CPO 多为 qualification | CPO 客户认证延后，SiPh 只跟随少量项目，对应需求约 0.5-1.5 亿美元 | SiPh/Fotonix 与光引擎项目正常推进，对应需求约 1.5-3.0 亿美元 | SCALE、AMF、Sivers/Corning 相关项目加速，对应需求约 3.5-6.5 亿美元 | CPO/NPO 在 NTM 内非线性提前，多个客户平台同步采用，对应需求约 8-12 亿美元 | 悲观较基准低 1-1.5 亿美元；乐观高 2-4 亿美元；极度乐观高 6-9 亿美元 | 基准只承认 NTM 可验证项目；极度乐观是低可信上限 | 官方产品与并购提供 C 级以上证据；反证是 CPO/NPO 多数收入更偏 2027+，且需封装、测试、可靠性和客户认证 |
+| Non-wafer / NRE / Design Enablement / Processor IP | 2025 年 non-wafer revenue 7.69 亿美元；需求锚为 NRE、mask、design services、平台 enablement 和新 IP 授权 | NRE 和客户设计活动放慢，对应需求约 6-7 亿美元 | 现有 non-wafer 基盘正常延续，新 IP 小额贡献，对应需求约 7-8 亿美元 | MIPS/ARC 与 design services 附带更多客户项目，对应需求约 8-10 亿美元 | IP 授权、NRE 和长期设计服务形成更高附加值平台，对应需求约 10-12 亿美元 | 悲观较基准低约 1 亿美元；乐观高 1-2 亿美元；极度乐观高 3-4 亿美元 | 基准符合当前披露；乐观需客户授权和 NRE 转化 | 2025 non-wafer 是 A 级锚；反证是新 IP 并购后整合、客户采用和收入确认时间 |
+| GaN power / Navitas-GF GaN | 需求锚为 GaN 在 AI 电源、汽车、工业电源中的早期导入；GFS 当前未披露可观收入 | 客户验证慢，NTM 需求几乎不收入化，对应 0 亿美元 | 只形成样品、小批量或极小量产，对应 0-0.25 亿美元 | Navitas-GF 平台获得更多客户导入，对应 0.25-0.75 亿美元 | AI 电源与工业/汽车客户加速导入，对应 1-2 亿美元 | 悲观与基准差距小；乐观高 0.25-0.5 亿美元；极度乐观高 1 亿美元以上 | 基准不把 GaN 当主要收入；极度乐观为远期上限提前 | 正向是功率需求与平台合作；反证是可靠性认证、客户量产和价格/良率缺少 A/B 级收入证据 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断产品需求能否进入 GFS NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入；客户总 capex、行业 TAM、项目全周期金额和主题相关性都不能直接作为 GFS 基准收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Smart Mobile / RF SOI / 消费成熟节点 | 2025 Smart Mobile Devices 收入 26.78 亿美元；Q1/Q2 run-rate 未单独披露 | 直接进入收入表 | 规模大、现金流重要；毛利率受价格和成熟节点竞争约束，通常低于高差异化 specialty 平台 | 22-25 亿美元 | 24-29 亿美元 | 27-31 亿美元 | 30-34 亿美元 | 基准符合当前 run-rate；悲观低于当前预期；乐观需周期修复 | A | 是 | 已披露 end-market revenue，收入表可确认 | 基准主口径收入基盘；不作为 AI 直接增量 |
+| Automotive 22FDX / eNVM / radar / Renesas | 2025 Automotive 收入 14.10 亿美元；2026Q1 正式披露 Renesas 多年合作 | 直接进入收入表 | 客户粘性、认证周期和质量要求较高，利润质量通常高于普通消费成熟节点 | 11-13 亿美元 | 13-17 亿美元 | 15-19 亿美元 | 18-22 亿美元 | 基准符合当前预期；乐观需要项目交付加速 | A/B | 是 | 已披露 end-market revenue 与正式客户合作 | 进入基准；新增合作按交付时间保守纳入 |
+| Home & Industrial IoT / FDX / eMRAM / eNVM | 2025 Home and Industrial IoT 收入 11.89 亿美元；FDX/eMRAM/eNVM 具体拆分未披露 | 直接进入收入表 | 稳定性高于消费周期，但工业库存和价格影响明显；FDX/eMRAM mix 有上行弹性 | 10-12 亿美元 | 12-16 亿美元 | 14-18 亿美元 | 17-21 亿美元 | 基准为正常兑现；乐观需工业与边缘客户恢复 | A/B | 是 | 已披露 end-market revenue，产品平台有公司披露 | 进入基准；高毛利 mix 只作方向性利润校准 |
+| CIDC 非 SiPh 高速连接 / SiGe / CBIC / RF | 2025 CIDC 总收入 7.45 亿美元；非 SiPh 子项未单独披露，按平台和 end-market 估算 | 直接进入收入表，但需避免与 SiPh 重复 | 高速模拟/RF/SiGe/CBIC 差异化较高，利润率方向优于普通成熟节点 | 8-10 亿美元 | 8.5-10.5 亿美元 | 10.5-13.5 亿美元 | 13-16 亿美元 | 基准略高于 2025，符合 AI 网络正常扩张；乐观需份额/mix 上修 | A/B | 是 | CIDC end-market A 级，产品平台和行业需求 B 级 | 进入基准；与 SiPh 合并后 CIDC 基准约 10-13 亿美元 |
+| SiPh / Fotonix / AMF / SCALE / CPO | 未单独披露收入；可见证据为 GF Fotonix、SCALE、AMF/InfiniLink、Sivers/Corning 合作 | 直接但需客户量产、封装测试、验收和收入确认 | 若只是晶圆代工，利润率接近 specialty 平台；若附带 design/package/test/IP，利润率上行；早期 ramp 成本可能压低利润 | 0.5-1.5 亿美元 | 1.5-3.0 亿美元 | 3.5-6.5 亿美元 | 8-12 亿美元 | 基准只承认可见项目；乐观高于当前收入锚；极度乐观是 NTM 上限 | B/C | 小比例是 | 产品发布、并购和客户合作明确，但单项收入未披露 | 进入基准的金额需保守；CPO/OCI 大额机会只进乐观或附录 |
+| Non-wafer / NRE / Design Enablement / Processor IP | 2025 non-wafer revenue 7.69 亿美元；MIPS/ARC 新增 IP 收入未量化 | 直接进入收入表 | 高毛利、高客户绑定属性，但新增 IP 金额小于晶圆业务 | 6-7 亿美元 | 7-8 亿美元 | 8-10 亿美元 | 10-12 亿美元 | 基准符合已披露收入；新 IP 上修需客户授权和 NRE 转化 | A/C | 是，新增 IP 折扣纳入 | non-wafer 为 A 级；新 IP 为 C 级 | non-wafer 基盘进入基准；新 IP 只小比例纳入 |
+| GaN power / Navitas-GF GaN | 未披露收入；产品和合作可见，但量产收入时间不清 | 直接或间接，取决于客户量产路径 | 长期可能高于普通成熟节点；NTM 早期良率、认证和价格不确定 | 0 | 0-0.25 亿美元 | 0.25-0.75 亿美元 | 1-2 亿美元 | 基准低于题材预期但符合收入确认证据；乐观需明确客户量产 | C/D | 否，或仅极小金额并入相关 end-market | 合作为 C/D 级，缺少 A/B 级收入锚 | 不作为基准主项；列入乐观、极度乐观和后续跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从产品需求和可收入化基数出发，评估每条业务线 NTM 内对公司收入和利润的传导。产品级精确毛利率、经营利润率和 EBITDA 未被公司逐项披露，因此利润贡献以“无法可靠量化 + 利润率方向 + 成本/执行约束”表示；公司级利润在第 6 节汇总。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Smart Mobile / RF SOI / 消费成熟节点 | 悲观 | 22-25 亿美元 | 无法可靠量化；利用率下降和价格压力压低毛利 | 下行 | 低于当前预期 | 2025 收入基数大，但消费链周期性强 | 保留为收入下行情景 | RF/移动库存、ASP、成熟节点竞争 |
+| Smart Mobile / RF SOI / 消费成熟节点 | 基准 | 24-29 亿美元 | 无法可靠量化；支撑固定成本摊薄和现金流 | 持平至小幅改善 | 符合当前预期 | 2025 A 级 end-market 收入锚 | 保留 | 不把手机周期修复写成结构性高利润 |
+| Smart Mobile / RF SOI / 消费成熟节点 | 乐观 | 27-31 亿美元 | 无法可靠量化；规模利用率改善，但价格弹性有限 | 小幅改善 | 高于当前预期 | 高端 RF SOI mix 和客户拉货改善 | 保留但不扩大利润弹性 | RF 价格竞争可能吞噬收入增量 |
+| Smart Mobile / RF SOI / 消费成熟节点 | 极度乐观 | 30-34 亿美元 | 无法可靠量化；利润改善弱于收入改善 | 改善有限 | 明显高于当前预期 | 手机周期与 RF content 同时上行 | 保留为低可信上限 | 这不是 AI 结构性增量，不能重复上修公司估计 |
+| Automotive 22FDX / eNVM / radar / Renesas | 悲观 | 11-13 亿美元 | 无法可靠量化；客户排产延后压低利用率 | 下行 | 低于当前预期 | 汽车库存和认证节奏可能延迟收入 | 保留 | 车规项目延迟、客户库存 |
+| Automotive 22FDX / eNVM / radar / Renesas | 基准 | 13-17 亿美元 | 无法可靠量化；利润质量高于消费成熟节点 | 稳定至改善 | 符合当前预期 | 2025 Automotive 收入、Renesas 多年合作 | 保留 | 项目收入确认需跟随交付和验收 |
+| Automotive 22FDX / eNVM / radar / Renesas | 乐观 | 15-19 亿美元 | 无法可靠量化；mix 改善和客户粘性提升利润质量 | 改善 | 高于当前预期 | eNVM、radar、低功耗 automotive/IoT 平台加速 | 保留 | 多供、平台切换周期和车规验证 |
+| Automotive 22FDX / eNVM / radar / Renesas | 极度乐观 | 18-22 亿美元 | 无法可靠量化；若高差异化平台占比上升，利润率上行 | 明显改善 | 显著高于当前预期 | 多客户车载边缘/雷达/eNVM 同步放量 | 保留为低至中低可信上限 | NTM 内很难让全部长期 design win 同时收入化 |
+| Home & Industrial IoT / FDX / eMRAM / eNVM | 悲观 | 10-12 亿美元 | 无法可靠量化；工业/IoT 库存拖累毛利 | 下行 | 低于当前预期 | 工业周期和库存反复 | 保留 | 宏观 capex、渠道库存、成熟 MCU 价格 |
+| Home & Industrial IoT / FDX / eMRAM / eNVM | 基准 | 12-16 亿美元 | 无法可靠量化；FDX/eMRAM mix 支撑利润质量 | 稳定至小幅改善 | 符合当前预期 | 2025 Home & Industrial IoT 收入锚 | 保留 | 高毛利子平台未单独披露，不能全额上修 |
+| Home & Industrial IoT / FDX / eMRAM / eNVM | 乐观 | 14-18 亿美元 | 无法可靠量化；边缘安全和 embedded memory mix 改善 | 改善 | 高于当前预期 | FDX/eMRAM/eNVM 平台需求改善 | 保留 | 工业复苏强度与客户认证 |
+| Home & Industrial IoT / FDX / eMRAM / eNVM | 极度乐观 | 17-21 亿美元 | 无法可靠量化；若边缘 AI/安全 MCU 规模化，利润率上行 | 明显改善 | 显著高于当前预期 | 边缘 AI 和工业控制需求同步超预期 | 保留为低可信上限 | NTM 内多个工业客户同步上量证据不足 |
+| CIDC 非 SiPh 高速连接 / SiGe / CBIC / RF | 悲观 | 8-10 亿美元 | 无法可靠量化；需求仍增长但 ASP/客户节奏低于预期 | 稳定至下行 | 低于当前预期 | 800G/1.6T 需求存在，但 ASP 和采购节奏可能低于预期 | 保留 | 光模块 ASP 下降、供应恢复、客户验收 |
+| CIDC 非 SiPh 高速连接 / SiGe / CBIC / RF | 基准 | 8.5-10.5 亿美元 | 无法可靠量化；差异化 SiGe/CBIC/RF 支撑高于普通成熟节点的利润质量 | 改善 | 符合当前预期 | 2025 CIDC 收入锚，800G/1.6T 行业需求强 | 保留 | 需避免与 SiPh 重复计算 |
+| CIDC 非 SiPh 高速连接 / SiGe / CBIC / RF | 乐观 | 10.5-13.5 亿美元 | 无法可靠量化；高速连接 mix 和利用率改善 | 改善 | 高于当前预期 | 1.6T 可插拔、交换侧高速模拟和客户份额上行 | 保留 | 同业竞争、客户多供和价格重谈 |
+| CIDC 非 SiPh 高速连接 / SiGe / CBIC / RF | 极度乐观 | 13-16 亿美元 | 无法可靠量化；若供应紧张和 mix 上行同步，经营杠杆明显 | 明显改善 | 显著高于当前预期 | 1.6T 多客户平台强拉货 | 保留为低至中低可信上限 | 不能把模块总收入池直接映射成 GFS 晶圆收入 |
+| SiPh / Fotonix / AMF / SCALE / CPO | 悲观 | 0.5-1.5 亿美元 | 无法可靠量化；早期 ramp、封装测试和验证成本可能抵消毛利 | 下行至持平 | 低于当前预期 | 产品已发布但收入拆分未披露 | 保留 | 客户 qualification、CPO 维护可靠性、封装测试 |
+| SiPh / Fotonix / AMF / SCALE / CPO | 基准 | 1.5-3.0 亿美元 | 无法可靠量化；若作为 specialty wafer/design 平台，利润率方向优于普通成熟节点 | 小幅改善 | 符合保守预期 | SCALE、AMF/InfiniLink、Sivers、Corning 等证据 | 保留，但只小比例进入公司基准 | C 级机会不能大额进基准 |
+| SiPh / Fotonix / AMF / SCALE / CPO | 乐观 | 3.5-6.5 亿美元 | 无法可靠量化；附带 design/package/test/IP 时利润质量更好 | 改善 | 高于当前预期 | 客户项目加速、1.6T/CPO 小批量验证转量产 | 保留 | 仍需回答谁买、买什么、何时确认 |
+| SiPh / Fotonix / AMF / SCALE / CPO | 极度乐观 | 8-12 亿美元 | 无法可靠量化；只有定价权、良率和高利用率同时成立才可大幅改善 | 明显改善但低可信 | 显著高于当前预期 | CPO/NPO 在 NTM 内提前非线性采用 | 保留为低可信上限；超出 NTM 的 OCI/Open CPX 移入附录 | 2026 行业更确定的是 800G/1.6T pluggable，CPO 多偏 2027+ |
+| Non-wafer / NRE / Design Enablement / Processor IP | 悲观 | 6-7 亿美元 | 无法可靠量化；高毛利属性存在但设计活动放慢 | 持平至下行 | 低于当前预期 | 2025 non-wafer 收入锚，客户设计周期可能波动 | 保留 | NRE 延迟、新 IP 整合 |
+| Non-wafer / NRE / Design Enablement / Processor IP | 基准 | 7-8 亿美元 | 无法可靠量化；利润率方向优于晶圆 pass-through | 改善 | 符合当前预期 | 2025 non-wafer revenue A 级证据 | 保留 | 新 IP 不得未经客户授权就大额进入基准 |
+| Non-wafer / NRE / Design Enablement / Processor IP | 乐观 | 8-10 亿美元 | 无法可靠量化；IP/NRE/design services mix 上修 | 改善 | 高于当前预期 | MIPS/ARC/ARC design enablement 增强客户绑定 | 保留 | 授权确认与客户采用时间 |
+| Non-wafer / NRE / Design Enablement / Processor IP | 极度乐观 | 10-12 亿美元 | 无法可靠量化；若 IP 授权和 NRE 同步增加，利润率显著高于公司平均 | 明显改善 | 显著高于当前预期 | 多客户平台授权、长期 design services | 保留为低可信上限 | 生态价值不能直接转成 NTM 收入 |
+| GaN power / Navitas-GF GaN | 悲观 | 0 | 无法可靠量化；无收入贡献 | 无改善 | 低于题材预期但符合收入证据 | 缺少 A/B 级量产收入锚 | 保留 | 可靠性认证、良率、客户量产 |
+| GaN power / Navitas-GF GaN | 基准 | 0-0.25 亿美元 | 无法可靠量化；对公司利润无实质贡献 | 基本无影响 | 符合收入确认证据 | 平台和合作可见，但收入未披露 | 不单列进入基准主项 | C/D 级证据不足 |
+| GaN power / Navitas-GF GaN | 乐观 | 0.25-0.75 亿美元 | 无法可靠量化；小额高增但对公司利润弹性有限 | 小幅改善 | 高于当前预期 | Navitas-GF 平台客户导入 | 保留为低可信乐观 | 客户量产路径和 ASP 不清 |
+| GaN power / Navitas-GF GaN | 极度乐观 | 1-2 亿美元 | 无法可靠量化；若量产和良率成功，长期利润属性较好 | 改善但公司影响仍有限 | 显著高于当前预期 | AI 电源、汽车/工业功率需求提前 | 仅作跟踪或极度乐观上限 | NTM 证据不足，不能作为公司级极度乐观核心驱动 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节将产品级贡献合成为公司 NTM 总收入、利润率、Adjusted EBITDA、净利润方向和自由现金流方向。汇总时剔除重复计算，尤其是 CIDC 内的 SiPh 与非 SiPh、高速连接与 CPO/OCI、non-wafer 与产品平台设计服务之间的重叠；不把客户 AI capex、光模块总市场、项目全周期金额或 2028-2030 长期目标外推为 NTM 收入。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 66-69 亿美元 | 约 -3% 至 +1%，相对 2025 年 67.91 亿美元 | 低于 Q2 指引隐含 run-rate 和当前 NTM 基准约 2-5 亿美元 | 25%-27% | 7%-9% | Adjusted EBITDA 约 21-23 亿美元；净利润方向约 6-8 亿美元 | 仍可为正，但低于基准；库存、利用率和 capex 错配压低现金转化 | 中 | 移动/RF 和 IoT 不及预期，汽车排产延后，SiPh/CPO 认证慢，CIDC 收入被 ASP 和客户节奏抵消 |
+| 基准公司 | 71-73 亿美元 | 约 +4% 至 +7% | 接近 Q2 指引、2025 收入基数和当前 run-rate 正常兑现路径 | 27%-29% | 10%-12% | Adjusted EBITDA 约 24-26 亿美元；净利润方向约 8-10 亿美元 | 正向，随 utilization 和 EBITDA 改善；营运资本保持可控 | 中高 | 高可信业务正常增长，C/D 级 SiPh、GaN、新 IP 只保守纳入 |
+| 乐观公司 | 74-78 亿美元 | 约 +8% 至 +13% | 高于当前基准约 3-5 亿美元；不是单一小基数项目造成 | 29%-31% | 12%-15% | Adjusted EBITDA 约 26-29 亿美元；净利润方向约 10-13 亿美元 | 改善，但需要收入确认与库存/应收不恶化 | 中 | CIDC/SiPh、汽车和 IoT 同时强于预期，且 Smart Mobile 不拖累 |
+| 极度乐观公司 | 80-85 亿美元 | 约 +15% 至 +22% | 高于当前基准约 8-12 亿美元，要求多条传导链同时突破 | 31%-34% | 15%-18% | Adjusted EBITDA 约 30-34 亿美元；净利润方向约 13-17 亿美元 | 明显改善，但若扩产、封装测试和营运资本提前投入，FCF 改善会滞后 | 低至中低 | 需要 1.6T/CID/CPO、SiPh、汽车、IoT、移动和 non-wafer/IP 同时上修；任一核心环节缺证据即降为乐观上限 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。正向证据必须指向需求、收入基数、产品贡献、公司利润或执行可信度；反证只在实际影响层级处理一次，不重复压低公司整体结论。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 实际收入 16.42 亿美元、毛利率 27.6%、Adjusted EBITDA 5.78 亿美元；2026Q2 收入指引中点 17.60 亿美元、Adjusted EBITDA 中点 6.15 亿美元 | 公司汇总、当前预期 | 支撑 NTM 基准 71-73 亿美元；悲观需要解释为什么 Q2 后 run-rate 下滑 | 支撑 27%-29% 基准毛利率区间 | 支撑 EBITDA 和现金流基准，但仍需看 capex 与营运资本 | 保留基准；悲观保留为低于 run-rate 情景 |
+| 2025 end-market 收入披露：Smart Mobile 26.78 亿美元、Automotive 14.10 亿美元、Home/Industrial IoT 11.89 亿美元、CIDC 7.45 亿美元、Non-wafer 7.69 亿美元 | 收入基数、产品贡献 | A 级收入锚允许进入基准；产品级范围需和公司总收入约束一致 | 不提供产品毛利率，利润只可方向性判断 | 提供收入下限和利用率判断，但不代表所有产品高端同时兑现 | 保留产品基准，限制产品高端简单相加 |
+| 800G/1.6T 光模块和 AI 网络需求强，SiGe/CBIC/RF 与高速连接需求确定性高于 CPO/OCI | 需求、产品贡献 | 支撑 CIDC 非 SiPh 基准和乐观；不等于 CPO 全面提前收入化 | 高速差异化 specialty mix 有助毛利率 | 需客户排产、ASP 和验收配合 | 保留基准与乐观；CPO 极度乐观低可信 |
+| GF Fotonix、SCALE、AMF/InfiniLink、Sivers、Corning 等 SiPh/CPO 证据 | 收入基数、执行可信度 | 支撑 SiPh 小比例进入基准和乐观上限 | 附带 design/package/test/IP 时利润率可能较好 | 需 qualification、封装、测试、可靠性和量产验收 | 保留乐观；超出 NTM 的 OCI/Open CPX/XPO 移入附录 |
+| Renesas 多年合作和汽车/IoT embedded NVM、低功耗平台 | 产品贡献、公司组合 | 支撑汽车和 IoT 基准，增强乐观情景 | 长周期平台和客户粘性改善利润质量 | 收入确认取决于交付、车规验证和客户排产 | 保留基准和乐观 |
+| Smart Mobile/RF SOI 收入基盘大但价格、库存和客户周期风险高 | 公司组合、利润率 | 若手机/RF 弱，能抵消 SiPh 小基数增量 | 普通成熟节点价格压力限制利润率扩张 | 利用率下降会拖累 EBITDA 和 FCF | 保留悲观，不在 SiPh 层重复惩罚 |
+| non-wafer revenue A 级锚与 MIPS/ARC 新 IP C 级锚混合 | 收入基数、利润率 | non-wafer 基盘可进基准；新增 IP 只保守纳入 | 高毛利属性正向，但金额小 | 并购整合和客户授权影响确认节奏 | 保留基准；新增 IP 高增仅作乐观 |
+| GaN power 合作和功率需求 | 远期期权、收入基数 | NTM 缺少 A/B 级收入锚，不构成公司基准收入核心 | 长期可能正向，NTM 影响小 | 可靠性认证、良率和客户量产路径不清 | 仅作跟踪；极度乐观上限不纳入基准 |
+| Investor Day 10%-12% 长期收入 CAGR、2028 调整后毛利率至少 40%、2030 至少 45% | 补充口径 | 支撑长期方向，但不是 NTM 主表直接输入 | 长期目标不等于 NTM 毛利率 | 需要多年产品 mix、利用率和执行兑现 | 移入附录，不上移 NTM 基准 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 66-69 亿美元，低于 Q2 指引和当前 run-rate 隐含路径；毛利率 25%-27% | 大部分 A 级 end-market 收入仍提供基本盘，悲观不是收入断崖 | 移动/RF 和 IoT 库存、汽车排产延后、SiPh/CPO 认证慢、ASP 下行 | 保留 | 悲观公司 | 中 | 光模块 ASP 下行只在需求/价格层处理，不再在所有产品重复惩罚 |
+| 基准 | NTM 收入 71-73 亿美元，Q1 实际与 Q2 指引后正常兑现；毛利率 27%-29% | 2025 end-market A 级收入锚、Q2 指引、CIDC 与汽车/IoT 可见合作 | 产品级毛利率未披露，SiPh/GaN/IP 新增机会证据等级不足以大额进基准 | 保留 | 基准公司 | 中高 | CPO/OCI 远期机会不在基准中使用，因此不能再作为基准风险扣减 |
+| 乐观 | NTM 收入 74-78 亿美元，CIDC、SiPh、汽车/IoT 与移动基盘至少三项强于预期；毛利率 29%-31% | 800G/1.6T 需求、SCALE/AMF/SiPh 证据、Renesas 合作、non-wafer 高利润属性 | 需公司特定客户、交付和收入确认路径，不能只靠 AI capex 总额 | 保留 | 乐观公司 | 中 | 行业 AI 网络强需求只能上调 CIDC/SiPh 层，不能同时上调所有业务线 |
+| 极度乐观 | NTM 收入 80-85 亿美元，要求多个核心传导环节同时突破；毛利率 31%-34% | SiPh/CPO、CIDC、汽车、IoT、non-wafer/IP 全部强兑现时可形成上限 | CPO/OCI 多数机会偏 2027+；GaN 和新 IP 缺少 A/B 级 NTM 收入锚；移动/RF 仍有周期压力 | 保留 | 极度乐观上限 | 低至中低 | 远期期权已放入附录或低可信上限，不在基准和乐观中重复计入 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景，即 NTM 收入约 71-73 亿美元，Adjusted EBITDA 约 24-26 亿美元，净利润方向约 8-10 亿美元。这个结论主要来自 2025 年 67.91 亿美元收入基数、2026Q1 16.42 亿美元实际收入、2026Q2 17.60 亿美元收入指引中点，以及 Smart Mobile、Automotive、Home/Industrial IoT、CIDC、non-wafer 的 A 级收入锚。GFS 的 AI 数据中心传导是“特种晶圆代工和高速连接暴露”，不是直接吃下 AI 数据中心 capex。
+- 利润和现金流结论：基准下毛利率约 27%-29%，经营利润率约 10%-12%，FCF 方向为正并随 utilization 改善。利润质量改善需要产品 mix 从普通 RF/移动成熟节点向 automotive embedded NVM、FDX/eMRAM、SiGe/CBIC、高速连接、SiPh 和 non-wafer/IP 倾斜；若收入增长来自低毛利 pass-through 或早期 ramp，利润改善会弱于收入。
+- 主要传导瓶颈：第一是 SiPh/CPO 从需求池到 GFS 可确认收入的路径，包括客户、产品、交付、封装测试、可靠性和收入确认；第二是 Smart Mobile/RF SOI 大基数能否不抵消 specialty 增量；第三是汽车和工业客户排产是否使高质量业务稳定增长；第四是产品级毛利率未披露，导致利润贡献必须保守校准。
+- 乐观情景成立条件：800G/1.6T 对 GFS 的 SiGe/CBIC/RF 和高速连接订单强于当前预期；SiPh/Fotonix/SCALE/AMF 项目在 NTM 内从 design/qualification 更快转收入；Renesas 等汽车/IoT 项目按期交付；Smart Mobile 不出现明显下滑；non-wafer/IP 贡献高利润附加收入。
+- 极度乐观情景成立条件：CIDC 非 SiPh 与 SiPh/CPO 同时非线性上修，汽车和 IoT 高质量平台同步加速，Smart Mobile 周期强复苏且不压价，non-wafer/IP 授权和 NRE 增强，同时利用率、良率、封装测试和营运资本没有明显拖累。缺少其中任一核心环节，极度乐观应降为乐观上限或附录跟踪。
+- 悲观情景触发条件：Q2 指引后订单或利用率走弱，手机/RF 和 IoT 库存拖累超过 specialty 增量，汽车项目排产延后，800G/1.6T 光模块 ASP 和客户采购节奏低于预期，SiPh/CPO 项目仍停留在测试/认证而非收入确认，或早期 ramp 成本和库存占用使 EBITDA 与 FCF 低于收入表现。
+- 后续跟踪数据：2026Q2 实际收入、毛利率、Adjusted EBITDA 和 wafer shipments；各 end-market 收入增速；CIDC 中 SiPh/Fotonix/SCALE/AMF 的客户项目和收入披露；Renesas 与其他汽车/IoT 项目量产节奏；non-wafer/IP 收入和客户授权；GaN 平台客户量产；库存、capex、营运资本和 FCF；管理层是否更新 2026H2 utilization 与 mix。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：本报告日期为 2026-06-12；经营数据以已公开的 2025 Form 20-F、2026Q1 earnings release、2026Q2 管理层指引和 2026-06-11 本地公司/行业研究为准。
+- 主要收入、订单、指引和利润率来源：
+  - GlobalFoundries 2026Q1 earnings release / SEC Exhibit 99.1：2026Q1 收入 16.42 亿美元、毛利率 27.6%、Adjusted EBITDA 5.78 亿美元、Q2 收入指引 17.60 亿美元正负 0.25 亿美元、Q2 Adjusted EBITDA 指引 6.15 亿美元正负 0.10 亿美元。
+  - GlobalFoundries 2025 Form 20-F：2025 年收入 67.91 亿美元；Smart Mobile Devices 26.78 亿美元、Home and Industrial IoT 11.89 亿美元、Communications Infrastructure & Data Center 7.45 亿美元、Automotive 14.10 亿美元、Non-wafer revenue 7.69 亿美元。
+  - GlobalFoundries 2026 Investor Day：长期收入 CAGR 10%-12%、2028 调整后毛利率至少 40%、2030 至少 45% 为补充口径，不进入 NTM 主表。
+  - 公司调研/晶圆制造_前道设备/GFS_GlobalFoundries_公司调研_2026-06-11.md。
+  - 行业调研/晶圆制造_设备_材料_测试/行业调研_特种晶圆代工_2026-06-11.md。
+  - 行业调研/晶圆制造_设备_材料_测试/行业调研_硅光材料、光子材料与电光聚合物_2026-06-11.md。
+  - 行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md。
+  - 行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md。
+  - 行业调研/AI网络_光互联_铜互联/行业调研_OCI（光学计算互连）／Open CPX／XPO_2026-06-11.md。
+  - 行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - 2028-2030 毛利率和收入 CAGR 目标是长期经营目标，不是 NTM 主表输入；只有当 2026H2 和 2027H1 的订单、收入确认和毛利率已经验证，才可上移 NTM 情景。
+  - CPO/NPO、external laser source、OCI/Open CPX/XPO、chiplet optical I/O、GaN power 大额收入和 MIPS/ARC 生态收益主要是远期期权；NTM 内只按客户、产品、交付和收入确认证据小额或附录处理。
+  - 本报告只覆盖经营传导，不使用下游量化、排序或资本市场资料，也不输出资本市场结论。
+- 主要公开来源：
+  - SEC 2026Q1 earnings release: https://www.sec.gov/Archives/edgar/data/1709048/000170904826000111/globalfoundries1q2026earni.htm
+  - SEC 2025 Form 20-F: https://www.sec.gov/Archives/edgar/data/1709048/000170904826000022/gfs-20251231.htm
+  - GlobalFoundries 2026 Investor Day / GlobeNewswire: https://www.globenewswire.com/news-release/2026/05/07/3290406/0/en/globalfoundries-outlines-long-term-growth-roadmap-and-announces-first-ever-dividend-at-2026-investor-day.html
+  - GlobalFoundries SCALE optical module solution: https://gf.com/news-and-events/news/globalfoundries-accelerates-adoption-of-co-packaged-optics-for-advanced-ai-data-centers-with-scale-optical-module-solution/
+  - GlobalFoundries AMF and InfiniLink acquisition context: https://gf.com/news-and-events/blog/light-speed-ambition-globalfoundries-acquires-amf-and-infinilink-to-power-the-ai-datacenter-revolution/
+  - Sivers and GlobalFoundries AI data center optical solutions: https://www.sivers-semiconductors.com/press/sivers-globalfoundries-advance-ai-data-center-optical-solutions/
+  - GlobalFoundries and Corning fiber connector collaboration: https://gf.com/gf-press-release/globalfoundries-and-corning-collaborate-to-deliver-detachable-fiber-connector-solutions-to-scale-next-generation-optical-connectivity/

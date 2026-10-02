@@ -1,0 +1,464 @@
+# 公司：ASMVY ASMPT（ASMPT Limited）公司调研
+
+> 报告日期：2026-06-11  
+> 股票代码：ASMVY（OTC ADR）；0522.HK（港股主上市）  
+> 公司名称：ASMPT Limited，原 ASM Pacific Technology  
+> 本地资料边界：本报告仅使用 `基本面/行业调研/` 下与先进封装、HBM、AI 芯片、光互联、测试/封测设备相关的产业资料；`公司调研/公司索引.md` 仅用于确认正式归档目录。未读取、引用或继承 `特征量化/`。  
+> 口径说明：除特别标注外，财务数字为港元；美元换算主要沿用 ASMPT 财报披露的当季换算口径。产品级收入、AI 数据中心收入占比、产能美元额、每 rack/MW/GPU 内容量为研究估算，不是公司直接披露值。
+
+## 0. 一页结论
+
+ASMPT 是半导体后段封装设备和 SMT 电子组装设备公司，不是 GPU、服务器、数据中心运营商，也不是封装代工厂。它在 AI 基建链条中的位置是：AI 加速器、HBM、chiplet CPU/GPU、光模块/CPO/NPO 和 AI 服务器制造越复杂，客户越需要热压键合（TCB）、die attach/flip-chip、光子封装、混合键合、SMT 高精度贴装和相关软件/自动化设备。
+
+投资人现在看 ASMPT，核心已经从“周期性后段封装和 SMT 设备公司”转向“AI 先进封装设备弹性公司”。这一定价变化由三个事实驱动：第一，2025 年先进封装业务收入达到约 US$532.1m、同比增长 30.2%，其中 TCB 收入同比约 +146%；第二，2026Q1 订单 HK$5.673bn、同比 +71.6%，创近四年高位，且 Q2 2026 收入指引中点继续环比 +12.2%；第三，2025 年末到 2026 年 6 月公司连续披露 C2S/C2W TCB、AOR TCB、HBM4、1.6T 光模块和 AI server 相关订单/资格进展。
+
+最值得跟踪的业务不是传统 wire bonder 或普通 SMT，而是六条线：
+
+| 优先级 | 业务/产品 | 2026 投资含义 | 当前判断 |
+|---|---|---|---|
+| 1 | TCB：C2S、C2W、HBM4 12H/16H、fluxless/AOR TCB | AI GPU、HBM、chiplet CPU/GPU 的关键制程设备，客户验证周期长，POR 后替换成本高 | 订单和资格进展最强，是 ASMPT 估值重估主因 |
+| 2 | Photonics / 1.6T 光模块 / CPO-NPO 封装设备 | AI 网络从 800G 走向 1.6T，后续 CPO/NPO 增加高精度贴装与光学耦合难度 | 2026 收入基数仍小，但 Q1 披露收入同比约 5 倍，弹性高 |
+| 3 | 高精度 flip-chip、die attach、chiplet 组装 | CoWoS/2.5D/HBM 产能扩张的配套设备；不如 TCB 稀缺，但需求面更宽 | 受益确定，毛利率高于普通后段设备 |
+| 4 | Hybrid bonding / ultra-fine pitch bonding | 2026 更多是资格认证和小批量；2027 后若 HBM4E/HBM5、SoIC 类架构扩张，弹性变大 | 可选项，竞争比 TCB 更强 |
+| 5 | SMT AI server、光模块、SiP 和高力贴装 | 受益 AI server 和光模块产线扩张，但 SMT 竞争更分散、毛利率较低 | 订单很强，战略上可能分拆/出售/合资 |
+| 6 | AI 电源、PMIC、功率器件封装设备 | AI rack 电源复杂度提升，带动部分主流 die bonding/wire bonding/power packaging | 稳健增长，不应被当成核心 AI beta |
+
+财务健康度较高。2025 年末现金及银行存款 HK$5.676bn，借款 HK$2.399bn，净现金约 HK$3.28bn；流动资产 HK$17.508bn，流动负债 HK$4.888bn，流动比率约 3.58x；债务/权益约 0.14x。主要财务风险不是偿债，而是订单周期、客户 capex 节奏、先进封装技术路线切换、SMT 资产战略评估和订单取消的波动。
+
+估值已经提前反映 AI 预期。截至 2026-06-11 盘中/搜索快照，ASMVY ADR 约 US$70-71，0522.HK 主上市市值约 HK$76.3bn，折合约 US$9.8bn；TTM PE 约 70-72x，部分 ADR 数据源显示约 80x；forward PE 约 41x；PS 约 5.5x。这个估值要求 2026-2027 年 TCB、光子封装、AI SMT 订单持续转化为收入，否则回撤风险不低。
+
+## 1. 公司整体业务、投资人印象与产业链位置
+
+### 1.1 公司做什么
+
+ASMPT 提供半导体和电子制造硬件、软件、自动化及工艺解决方案。当前继续经营业务可分为两大段：
+
+| 业务段 | 2025 收入 | 收入占比 | 2025 调整后毛利率 | 2025 调整后分部利润率 | 主要产品/应用 |
+|---|---:|---:|---:|---:|---|
+| SEMI Solutions | HK$7.869bn / 约 US$1.010bn | 57.3% | 43.0% | 9.6% | TCB、die attach、flip-chip、hybrid bonding、photonics bonding、wafer/depanel/laser、传统封装设备、功率器件/PMIC 封装设备 |
+| SMT Solutions | HK$5.867bn / 约 US$754m | 42.7% | 32.2% | 8.9% | DEK 印刷、SIPLACE 贴片、SiP/direct-chip assembly、AI server、光模块、汽车电子、工业电子 SMT 产线 |
+| 合计继续经营 | HK$13.736bn / 约 US$1.763bn | 100% | 约 37.8% | 调整后净利率约 7.1% | 半导体后段 + 电子组装设备 |
+
+SEMI 是利润和估值的核心，SMT 是收入规模和周期弹性的来源。2025 年先进封装（AP）收入约 US$532.1m，占集团收入超过 30%，同比 +30.2%；TCB 是 AP 的主驱动，2025 年 TCB 收入同比约 +146%。这意味着 ASMPT 的核心资产已经不只是传统后段设备，而是进入 AI GPU/HBM/chiplet/光互联扩产的设备链。
+
+### 1.2 投资人心中的 ASMPT
+
+2023 年以前，ASMPT 更像一家“半导体后段周期 + SMT 周期”的香港上市设备公司，收入受智能手机、汽车电子、工业电子、OSAT 和半导体 capex 周期影响。2024-2026 年，市场给它重新定价，逻辑是：
+
+1. AI 加速器从普通封装转向 2.5D/3D、HBM、chiplet 和更高 I/O 密度，后段封装设备价值量上升。
+2. HBM3E、HBM4 12H、未来 HBM4 16H/HBM4E 对 TSV、stacking、micro bump、warpage control、TCB/fluxless bonding、KGD/KGSD 测试提出更高要求。
+3. AI 网络从 400G/800G 走向 1.6T，后续 CPO/NPO、硅光/III-V 光子集成增加高精度贴装、主动/被动光学对准、热管理和可靠性验证难度。
+4. ASMPT 已披露的 TCB 安装基数超过 500 台，且拿到 C2S、C2W、HBM4、AOR、1.6T 光模块等公开订单或资格进展，具备“从订单到收入”的验证线索。
+
+所以，投资人现在更关注 SEMI 里的 advanced packaging mix、TCB 订单数量、HBM4/16H qualification、C2W/C2S POR、1.6T photonics revenue、SMT 是否释放价值，而不是只看传统后段设备景气。
+
+### 1.3 最近 3 年重大业务变动、转型和资产动作
+
+| 时间 | 事件 | 对公司定位的影响 |
+|---|---|---|
+| 2023-2024 | AI/HPC、HBM、chiplet、advanced packaging 需求进入后段设备订单 | SEMI 从传统封装周期逐步转向 AI 先进封装弹性 |
+| 2024-2025 | TCB、photonics、SiP、AI server SMT 订单增长；2025 年 AP 收入超过集团 30% | AP 成为集团第一增长引擎，TCB 从小业务变成估值锚 |
+| 2025 | 出售 ASMPT Materials International（AAMI）49% 权益，并保留 18.99% 上市权益；2025 年确认 discontinued operations 相关收益 | 退出/淡化材料资产，释放资本并让主业更聚焦设备 |
+| 2025 | NEXX 业务被列为潜在 divestiture / discontinued operation | 剥离非核心电镀/沉积类资产，降低业务复杂度 |
+| 2025 | 中国制造基地从 7 个整合到 5 个；一次性成本约 RMB320m，预计 2026 年起年化节省约 HK$128m | 改善成本结构和运营杠杆 |
+| 2025-12 | 披露 C2S TCB 大单：12 月 3 日披露 19 台 C2S TCB；12 月 22 日披露 15 台 C2S TCB repeat/additional order，面向 AI computing chips | C2S TCB 获主流 foundry/OSAT 体系订单验证，支撑 POR 和溢价能力 |
+| 2026-01 | 宣布评估 SMT Solutions 战略选项：出售、合资/战略合作、独立上市/分拆或保留 | 管理层开始考虑释放 SMT 价值并提高 SEMI 聚焦度 |
+| 2026-02 | 披露 2 台 ultrafine pitch C2W TCB with Active Oxide Removal（AOR）订单 | fluxless/AOR TCB 进入关键验证，指向更细间距和更高可靠性 |
+| 2026Q1 | 披露 C2W TCB 在 2025 年末完成 final qualification 后，Q1 取得 4 台订单；HBM4 12H TCB 获多个 HBM 客户订单；HBM4 16H 进入 sampling；AOR TCB final qualification | C2W、HBM4、AOR 三条路线同时推进 |
+| 2026-06 | 披露 leading IDM 追加 8 台 C2W TCB，面向 advanced client CPU 与 data-center HPC chiplet architectures | C2W TCB 从资格认证进入重复订单阶段，逻辑/CPU/HPC 应用确定性提高 |
+
+### 1.4 产业链位置
+
+ASMPT 位于 AI 产业链中的“制造设备层”，其收入来自客户建产线和提升良率，而不是直接随 GPU 出货逐颗收费。价格传导链为：
+
+AI 训练/推理需求上升 -> GPU/ASIC/HBM/高速网络芯片需求上升 -> foundry、OSAT、IDM、HBM 厂、光模块厂、EMS 扩产 -> 购买 TCB、die attach、hybrid bonding、photonics assembly、SMT 贴装等设备 -> ASMPT 确认设备收入、服务收入、备件和软件收入。
+
+公司在产业链中的关键位置：
+
+| 产业环节 | ASMPT 对应设备 | AI 基建相关性 |
+|---|---|---|
+| HBM stacking / TSV 后段 | TCB、flux/fluxless bonding、AOR、die handling、inspection/traceability 配套 | HBM3E/HBM4 堆叠层数提升，TCB/混合键合需求增加 |
+| AI GPU/ASIC 2.5D package | C2S TCB、flip-chip、die attach、chiplet bonding | GPU/ASIC 与 HBM 上 interposer/substrate 的关键装配步骤 |
+| Chiplet CPU/HPC | C2W TCB、fine-pitch bonding、AOR | leading IDM 订单验证，数据中心 CPU/HPC chiplet 直接相关 |
+| 800G/1.6T 光模块 | AMICRA/NOVA/MEGA 等高精度光子贴装、对准、封装设备 | AI 网络端口数和速率上升带动光模块产线 capex |
+| CPO/NPO/硅光 | 高精度 photonics bonding、PIC/EIC 集成、光学对准 | 2026 更多是样机/小批量，2027 后可能放大 |
+| AI server / switch / power board | SMT printing、placement、SiP/direct-chip assembly、高力贴装 | AI server、光模块、交换机和电源板产线扩张 |
+
+## 2. 最新股价、估值、增长和资产负债表
+
+### 2.1 估值与经营指标快照
+
+| 指标 | 数值 | 日期与口径 |
+|---|---:|---|
+| ASMVY ADR 盘中价格 | 约 US$70-71 | 2026-06-11 搜索快照；不同行情源显示 open 约 US$70.53，日内低约 US$69.69，高约 US$71.14 |
+| 0522.HK 主上市市值 | 约 HK$76.3bn | 2026-06-11 搜索快照 |
+| ASMVY 折算市值 | 约 US$9.75-9.92bn | 2026-06-11 Yahoo/Robinhood/Google 等搜索快照区间 |
+| TTM PE | 约 70-72x；部分 ADR 源显示约 80x | 2026-06-11；不同数据源对 ADR、一次性项目、汇率口径不同 |
+| Forward PE | 约 41.15x | 2026-06-11 Yahoo Finance 搜索快照 |
+| PS | 约 5.54x | 2026-06-11 Yahoo Finance 搜索快照 |
+| 2025 继续经营收入增速 | +10.0% YoY | FY2025，收入 HK$13.736bn |
+| 2026Q1 继续经营收入增速 | +32.0% YoY，+0.2% QoQ | Q1 2026，收入 HK$3.967bn / US$507.9m |
+| 2026Q1 订单增速 | +71.6% YoY，+46.0% QoQ | Q1 2026，订单 HK$5.673bn / US$726.5m |
+| 2025 调整后毛利率 | 约 37.8% | 2025 继续经营毛利 HK$5.186bn / 收入 HK$13.736bn |
+| 2026Q1 调整后毛利率 | 39.5% | Q1 2026；SEMI 46.4%，SMT 31.3% |
+| 2025 调整后净利率 | 约 7.1% | 调整后继续经营净利 HK$970.2m / 收入 HK$13.736bn |
+| 2026Q1 调整后净利率 | 约 8.5% | 调整后继续经营净利 HK$335.2m / 收入 HK$3.967bn |
+
+估值读法：当前市值约等于 2025 继续经营收入的 5.5 倍左右，明显不是普通后段设备周期股估值。市场已经把 TCB、HBM4、C2W、1.6T photonics 和 SMT 价值释放打进预期。若 2026 年收入仅按普通周期恢复，估值偏贵；若 2026-2027 年 TCB TAM 超 US$1bn 且 ASMPT 保持 35%-40% 份额，估值才有基本面支撑。
+
+### 2.2 资产负债表健康度
+
+截至 2025-12-31：
+
+| 项目 | 数值 | 评价 |
+|---|---:|---|
+| 现金及银行存款 | HK$5.676bn | 对设备周期波动有缓冲 |
+| 借款 | HK$2.399bn | 绝大多数为无抵押借款；债务负担低 |
+| 净现金 | 约 HK$3.28bn | 财务杠杆不是核心风险 |
+| 流动资产 | HK$17.508bn | 含现金、存货、应收款等 |
+| 流动负债 | HK$4.888bn | 短期偿付压力低 |
+| 流动比率 | 约 3.58x | 健康 |
+| 归母权益 | HK$17.031bn | 债务/权益约 0.14x |
+| 存货 | HK$5.215bn | 设备公司正常但需关注订单转化和取消风险 |
+| 应收及其他应收 | HK$5.544bn | 随收入扩张上升，需跟踪回款周期 |
+| 保留 AAMI 上市权益 | 18.99%，账面 HK$2.076bn，公允价值约 HK$2.365bn | 非核心金融资产，带来市值波动和潜在变现空间 |
+
+财务健康结论：ASMPT 的资产负债表偏强，净现金、低杠杆、高流动比率支撑研发、扩产和周期下行。主要隐患在营运资本：高端设备订单交付期长，存货和应收会随订单放大；如果 AI capex 突然放缓或客户推迟验收，收入确认和库存周转会受压。2025Q3 出现 panel deposition tools 订单取消案例，说明订单不是完全无风险，但目前 TCB/C2W/HBM/photonic 的客户粘性和验证门槛显著高于普通设备。
+
+## 3. 最近五个财报季度：订单、收入、利润率和 AI 相关暴露
+
+公司不披露标准化产品级 backlog、AI 数据中心收入、lead time、取消率和每类工具订单金额。下表中“AI/AP/AI server/光互联相关收入占比”为研究估算，依据 advanced packaging 收入占比、TCB/photonics/SMT AI server 订单描述、分部收入和行业产品映射推断。
+
+| 财报季度 | 集团订单 / B2B / backlog | 集团收入与利润率 | SEMI 收入、增速与利润率 | SMT 收入、增速与利润率 | 订单、交期、取消率和 AI 数据中心相关性 |
+|---|---|---|---|---|---|
+| 2026Q1 | 订单 HK$5.673bn / US$726.5m，YoY +71.6%，QoQ +46.0%；B2B 约 1.43；未披露期末 backlog | 收入 HK$3.967bn / US$507.9m，YoY +32.0%，QoQ +0.2%；调整后 GM 39.5%；调整后净利 HK$335.2m，净利率约 8.5% | 收入 HK$2.144bn / US$274.5m，YoY +14.6%，QoQ +12.2%；订单 HK$2.414bn，YoY +34.5%，QoQ +22.9%；调整后 GM 46.4%；分部利润率 14.4% | 收入 HK$1.823bn / US$233.5m，YoY +60.7%，QoQ -11.0%；订单 HK$3.259bn，YoY +115.6%，QoQ +70.2%，创纪录；调整后 GM 31.3%；分部利润率 7.8% | C2W TCB 在 2025 年末 final qualification 后 Q1 取得 4 台订单；HBM4 12H TCB 获多个 HBM 客户订单；HBM4 16H 进入 sampling；AOR TCB final qualification；photonics 收入 YoY 约 5 倍并有 1.6T bulk orders；SMT 订单受 AI server、光模块、半导体和中国 EV 拉动。AI/AP/AI server/光互联相关占比估算 35%-45%。高端 TCB 交付窗口估算 2-4 个季度，普通 SMT 1-2 个季度；未披露系统性取消率。 |
+| 2025Q4 | 订单约 HK$3.887bn / US$499m；B2B 约 0.98；年末 backlog 约 US$792.9m | 收入约 HK$3.959bn / US$508m；调整后 GM 约 35.8%；调整后净利约 HK$120m | 收入约 HK$1.911bn；订单因 advanced logic TCB 提升；调整后 SEMI GM 约 40%+ | 收入约 HK$2.048bn；SMT revenue QoQ 强 | 12 月披露 C2S TCB 大单：19 台 C2S 和 15 台 C2S repeat/additional order 均指向 AI computing chips/leading foundry-OSAT 体系；Q4 也受订单取消费用确认影响。AI/AP 相关占比估算 30%-40%。 |
+| 2025Q3 | 订单 HK$3.621bn / US$465.0m，YoY +14.2%，QoQ -3.5%；剔除一次性取消订单后订单约 US$486.6m；B2B 剔除取消约 1.04；backlog US$867.7m，QoQ -0.6%，YoY +3.1% | 收入 HK$3.661bn / US$470.2m，YoY +9.5%，QoQ +7.6%；调整后 GM 37.7%；调整后净利 HK$101.9m | 收入 HK$1.880bn，YoY +5.0%，QoQ -6.5%；订单 HK$1.627bn；调整后 GM 41.3%；分部利润率 4.4% | 收入 HK$1.781bn，YoY +14.6%，QoQ +28.0%；订单 HK$1.994bn；调整后 GM 33.9%；分部利润率 9.2% | 公司披露 panel deposition tools 一次性取消订单，说明非核心/非 AI 设备订单存在取消风险；同时 HBM4 12H TCB 获多个 HBM 客户订单，C2W 资格推进，SMT AI server/光模块订单延续。AI/AP/AI server/光互联相关占比估算 25%-35%。 |
+| 2025Q2 | 订单 HK$3.754bn / US$481.1m，YoY +20.2%，QoQ +11.9%；B2B 1.10；backlog HK$6.850bn / US$872.7m，QoQ +1.6%，YoY +9.2% | 收入 HK$3.402bn / US$436.1m，YoY +1.8%，QoQ +8.9%；调整后 GM 39.7%；调整后净利 HK$134.9m | 收入 HK$2.010bn，YoY +20.9%，QoQ +1.0%；订单 HK$1.655bn；调整后 GM 44.7%；分部利润率 8.7% | 收入 HK$1.392bn，YoY -17.2%，QoQ +22.6%；订单 HK$2.098bn；调整后 GM 32.5%；分部利润率 3.8% | 1H25 AP 收入占集团约 39%，约 US$326m，YoY +53%；TCB 订单 YoY +50%，收入增长更快；第二代 Hybrid Bonder 在客户 buy-off 后发运；photonics 取得 800G transceiver 订单；SMT 受 AI server、光模块、半导体、中国 EV 拉动。AI/AP 相关占比估算 30%-40%。 |
+| 2025Q1 | 原披露订单 HK$3.354bn / US$431.2m，YoY +5.0%，QoQ -4.9%；B2B 1.07；继续经营口径未披露标准化 backlog | 原披露收入 HK$3.125bn / US$401.7m；继续经营重述收入约 HK$3.005bn；原披露调整后 GM 40.9%；调整后净利 HK$83.2m | 原披露 SEMI 收入 HK$1.990bn；继续经营重述约 HK$1.870bn；原披露 SEMI GM 46.3% | SMT 收入 HK$1.135bn；SMT GM 31.5% | AI 相关需求已在 AP、TCB、800G photonics 和 AI server SMT 中体现，但还未出现 2026Q1 的订单爆发。AI/AP/AI server/光互联相关占比估算 20%-30%。 |
+
+### 3.1 财报趋势解读
+
+1. 订单比收入更重要。2026Q1 的 B2B 约 1.43，说明 backlog 在上升；Q2 2026 指引收入 US$540m-600m、订单 US$540m-620m，即使订单环比从 Q1 纪录高位回落，中点 B2B 仍约 1.02。
+2. SEMI 毛利率显著高于 SMT。2026Q1 SEMI 调整后 GM 46.4%，SMT 31.3%；只要 TCB/photonics/advanced packaging 占比上升，集团毛利率有向 40%+ 上移的空间。
+3. SMT 不是低质量业务，但估值乘数低于 SEMI。2026Q1 SMT 订单创纪录，说明 AI server、光模块和 SiP 产线对 SMT 有真实拉动；但 SMT 行业竞争更分散、替换成本更低、毛利率低，因此公司才在 2026 年评估战略选项。
+4. 订单取消风险主要在非核心或旧产品。2025Q3 panel deposition 工具取消是负面样本，但 TCB/C2W/HBM/1.6T 这类经过客户 final qualification 或 POR 的订单取消概率应低于普通设备。
+
+## 4. 2026 最新指引、业务占比和产品映射
+
+### 4.1 2026Q2 指引
+
+ASMPT 对 Q2 2026 给出的继续经营指引：
+
+| 项目 | Q2 2026 指引 | 中点与 Q1 对比 |
+|---|---:|---|
+| 集团收入 | US$540m-600m | 中点 US$570m，QoQ +12.2%，YoY +约 37% |
+| 集团订单 | US$540m-620m | 中点 US$580m，较 Q1 纪录高位 -20.2%，但仍高于历史正常水平 |
+| 集团调整后毛利率 | 约 40.5% | 较 Q1 39.5% 继续上行 |
+| SEMI 收入 | 未给绝对数，指引中点 QoQ +14.8% | SEMI 继续强于集团 |
+| SEMI 调整后毛利率 | 约 46% | 高端产品 mix 保持强 |
+| SMT 收入 | 指引中点 QoQ +8.0% | AI server/光模块订单开始转化 |
+| SMT 订单 | 指引中点 QoQ -32.1% | 主要因为 Q1 基数过高，不等于需求转弱 |
+| SMT 调整后毛利率 | 约 32% | 仍明显低于 SEMI |
+
+如果 Q2 中点兑现，2026 上半年继续经营收入约 US$1.078bn，已经达到 2025 全年继续经营收入 US$1.763bn 的约 61%。这意味着市场会把注意力放在 H2 2026 订单能否维持、TCB/1.6T/photonics 产能和验收能否跟上，而不是只看 Q2 的单季收入。
+
+### 4.2 2026 当前业务收入占比
+
+以 2026Q1 实际收入和 2025 全年结构结合：
+
+| 口径 | SEMI | SMT | Advanced Packaging | AI/AP/AI server/光互联相关收入 |
+|---|---:|---:|---:|---:|
+| 2025 全年 | 57.3% | 42.7% | >30% 集团收入，约 US$532.1m | 估算 25%-35% |
+| 2026Q1 | 54.0% | 46.0% | 公司未披露单季 AP 占比；从 TCB、HBM、photonics 描述看高于传统周期 | 估算 35%-45% |
+| 2026Q2 指引中点后 | SEMI 环比 +14.8% | SMT 环比 +8.0% | AP/TCB/photonics 预计继续提升 | 估算 35%-45%，若 1.6T/TCB 交付强则接近上沿 |
+
+最突出的业务：TCB 是第一增长引擎，photonics/1.6T 是小基数高弹性引擎，SMT AI server/光模块是第二收入弹性来源，hybrid bonding 是中期技术期权。
+
+### 4.3 产品和型号映射
+
+| 业务 | 对应产品/型号/平台 | 主要客户应用 | 2026 状态 | 是否重点 |
+|---|---|---|---|---|
+| C2S TCB | Chip-to-Substrate TCB tools；高端 TCB 平台 | AI computing chips、2.5D GPU/ASIC package、advanced logic | 2025 年 12 月披露 19 台 C2S 与 15 台 C2S repeat/additional order；部分应用被称为 sole supplier / tool-of-record / POR | 重点 |
+| C2W TCB | Chip-to-Wafer TCB tools | advanced client CPU、data-center CPU、HPC chiplet | 2025 年末 final qualification；2026Q1 4 台订单；2026-06 追加 8 台 | 重点 |
+| HBM TCB | HBM4 12H TCB、HBM4 16H sampling、flux-based/fluxless route | HBM4 堆叠、AI GPU/ASIC memory subsystem | 多个 HBM players 下单 HBM4 12H；HBM4 16H 进入 sampling | 重点 |
+| AOR / fluxless TCB | Active Oxide Removal TCB；ultrafine pitch C2W | 更细间距、更低残留、更高可靠性的高端 chiplet/HBM | 2026-02 获 2 台 AOR C2W 订单；Q1 称 final qualification | 小业务但潜力大 |
+| Photonics bonding | AMICRA NANO、AMICRA NOVA、MEGA 等高精度多芯片/光子贴装平台 | 800G/1.6T transceiver、硅光、CPO/NPO optical engine | Q1 photonics 收入 YoY 约 5 倍；1.6T bulk orders；OFC/ECTC 2026 展示 CPO/SiPh/AI HPC packaging | 重点 |
+| Hybrid bonding | 第二代 Hybrid Bonder；D2W/W2W / ultra-fine pitch bonding | SoIC 类 3D、未来 HBM4E/HBM5、逻辑/存储混合集成 | 2025H1 客户 buy-off 后发运；2026 更多是资格认证和小批量 | 中期重点 |
+| SMT AI server / optical | DEK、SIPLACE、SIPLACE V、SiP/direct-chip assembly、高力贴装 | AI server board、switch board、optical transceiver assembly、China EV/semiconductor applications | 2026Q1 SMT 订单创纪录，AI server 和光模块为主要拉动 | 重点但毛利率较低 |
+| AI power / PMIC / power packaging | die bonding、wire bonding、clip/sintering、power device assembly | AI rack power shelf、PMIC、SiC/IGBT/功率模块 | 中国 OSAT power management 和电源链需求稳定 | 次重点 |
+
+### 4.4 可以跳过或降低权重的产品/业务
+
+| 跳过/低权重业务 | 原因 |
+|---|---|
+| 普通汽车电子 SMT、工业电子 SMT | 有收入规模，但不具备 AI 数据中心稀缺性，竞争更分散，毛利率低于 SEMI |
+| 传统低端 wire bonding / die bonding | 稳定但增长较慢，价格竞争明显，国产替代风险高 |
+| LED 和传统消费电子封装设备 | 与 AI 基建关联弱，周期性强 |
+| NEXX / panel deposition 类 discontinued 或潜在出售业务 | 不是未来核心，且 2025Q3 出现取消订单案例 |
+| AAMI 材料业务 | 已出售 49% 并保留 18.99% 投资权益，更多是金融资产/非核心权益，不应并入设备成长叙事 |
+
+## 5. 关键产品当前收入贡献、增长、重要性和供需评估
+
+评分 1-5：5 为最高。收入贡献为当前年化或 FY2025 附近研究估算，非公司披露。
+
+| 关键产品/业务 | 当前收入贡献估算 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 | 判断依据 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| TCB：C2S/C2W/HBM/AOR | FY2025 约 US$220m-300m；2026 当前年化约 US$320m-450m | 2025 TCB 收入约 +146%；2026 若订单转化，全年 +50%-100% 有可能 | 5.0 | 5.0 | 4.5 | 4.5 | AI GPU/ASIC、HBM4、chiplet CPU 的关键后段步骤；公开披露 2025-12 至 2026-06 多批 C2S/C2W/AOR 订单；installed base >500 台；TCB TAM 2027 >US$1bn、2028 约 US$1.6bn，公司目标 35%-40% 份额 |
+| Photonics / 1.6T / CPO-NPO assembly | FY2025 约 US$80m-140m；2026 当前年化约 US$150m-250m | 2026Q1 photonics 收入 YoY 约 5 倍；全年可能 +80%-200% | 4.0 | 4.0 | 4.0 | 4.0 | 800G/1.6T 光模块产线扩张，后续 CPO/NPO 提升高精度贴装难度；OFC/ECTC 2026 展示 CPO、SiPh、1.6T 相关方案 |
+| 高精度 flip-chip / die attach / chiplet 组装 | FY2025 约 US$130m-220m；2026 当前年化约 US$200m-320m | 约 +25%-60% | 4.5 | 5.0 | 4.0 | 3.5 | CoWoS/2.5D/HBM 扩产需要大量高精度放置、贴装、underfill 前后工艺和自动化；竞争多于 TCB，但需求面更宽 |
+| Hybrid bonding / ultra-fine pitch | 当前约 US$20m-60m 年化 | 小基数；若客户导入可 +100% 以上 | 4.0 | 3.5 | 4.0 | 3.5 | 未来 HBM4E/HBM5、SoIC、逻辑-存储 3D 集成的潜在路线；2026 更偏认证和小批量，竞争来自 AMAT+BESI、EVG、SUSS、TEL 等 |
+| SMT AI server / optical / SiP assembly | 2026Q1 SMT 收入 US$233.5m；其中 AI server/光模块/半导体相关估算 US$80m-130m，年化 US$350m-550m | Q1 SMT 订单 YoY +115.6%，收入 YoY +60.7%；AI 子集可能 +40%-100% | 3.5 | 4.0 | 3.0 | 2.5 | AI server、光模块、SiP 产线扩张真实；但 SMT 是更成熟设备市场，竞争和客户替换成本低于 SEMI |
+| AI power / PMIC / power device packaging | 当前约 US$80m-150m 年化 | +15%-35% | 3.0 | 4.0 | 3.0 | 3.0 | AI rack 电源、PMIC、功率模块需求上升，但单点技术稀缺度不如 TCB 和光子封装 |
+
+### 5.1 订单金额与 backlog 的逆推
+
+ASMPT 不披露单台 TCB ASP。按行业设备价格和高端工具复杂度估算，高端 C2S/C2W/advanced TCB 单台 ASP 可能在 US$4m-10m 区间，具体取决于配置、throughput、AOR/fluxless、自动化和服务。2025-12 至 2026-06 的公开可数订单包括：
+
+| 时间 | 订单信号 | 工具数 | 研究估算订单额区间 | 交付/收入确认推断 |
+|---|---:|---:|---:|---|
+| 2025-12-03 | C2S TCB for AI chip market，major OSAT partner of leading foundry | 19 台 | US$75m-190m | 2026-2027 分批交付 |
+| 2025-12-22 | C2S TCB repeat/additional order，cutting-edge AI computing chips；sole supplier/POR 口径 | 15 台 | US$60m-150m | 2026-2027 分批交付 |
+| 2026-02-05 | ultrafine pitch C2W TCB with proprietary AOR | 2 台 | US$10m-25m | 2026 认证/早期交付 |
+| 2026Q1 | C2W TCB after final qualification | 4 台 | US$20m-45m | 2026 订单转收入 |
+| 2026-06-08 | C2W TCB repeat order from leading IDM | 8 台 | US$40m-90m | 2026H2-2027 交付 |
+| 未披露数量 | HBM4 12H TCB from multiple HBM players；HBM4 16H sampling | 未披露 | 无法精确，但应计入 SEMI 高端 backlog | 2026-2027 影响更大 |
+
+若上述订单完全独立且按中位 ASP 估算，可数 TCB 订单对应约 US$200m-400m 的设备收入窗口；若存在客户项目和公告口径重叠，则保守可确认的高端 TCB 订单窗口仍约 US$130m-250m。与 2025 AP 收入 US$532.1m、TCB 收入 +146%、2026Q1 SEMI 订单 US$309.2m 相互印证，TCB 已经足以驱动 SEMI 分部的高毛利 mix 上行。
+
+## 6. 一年后关键产品收入贡献情景
+
+基准、乐观、极度乐观三种口径均以未来 12 个月收入贡献估算，不等同于自然年财报预测。
+
+| 产品/业务 | 情景 | 一年后收入贡献估算 | 收入增速 | AI 重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 | 触发条件 |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| TCB：C2S/C2W/HBM/AOR | 基准 | US$380m-480m | +35%-55% | 5 | 5 | 4 | 4 | 既有 C2S/C2W/HBM4 订单按计划转收入；Q2-Q4 新订单维持 |
+| TCB：C2S/C2W/HBM/AOR | 乐观 | US$520m-650m | +70%-110% | 5 | 5 | 5 | 4.5 | 2026H2 HBM4、C2W、AOR 资格转为量产订单；客户扩产不延迟 |
+| TCB：C2S/C2W/HBM/AOR | 极度乐观 | US$700m-900m | +120%-180% | 5 | 5 | 5 | 5 | TCB TAM 2027 >US$1bn，ASMPT 接近 35%-40% 份额且提前交付；混合键合不快速替代 TCB |
+| Photonics / 1.6T / CPO-NPO | 基准 | US$180m-260m | +50%-90% | 4 | 4 | 4 | 3.5 | 1.6T 光模块 capex 拉动持续，CPO 仍小批量 |
+| Photonics / 1.6T / CPO-NPO | 乐观 | US$280m-420m | +120%-200% | 4.5 | 4.5 | 4.5 | 4 | 1.6T 扩产高于预期，硅光/CPO optical engine 产线提前建置 |
+| Photonics / 1.6T / CPO-NPO | 极度乐观 | US$450m-650m | +250% 以上 | 5 | 5 | 5 | 4.5 | 1.6T 和 CPO/NPO 在 hyperscaler 网络中快速放量，ASMPT photonics platform 成为主流设备之一 |
+| Flip-chip / die attach / chiplet 组装 | 基准 | US$240m-330m | +25%-45% | 4.5 | 5 | 4 | 3.5 | CoWoS/2.5D/HBM 周期稳步扩产 |
+| Flip-chip / die attach / chiplet 组装 | 乐观 | US$350m-500m | +60%-100% | 4.5 | 5 | 4.5 | 4 | foundry/OSAT 加速 AI package 产线，客户多点采购 |
+| Flip-chip / die attach / chiplet 组装 | 极度乐观 | US$550m-750m | +120% 以上 | 5 | 5 | 5 | 4 | 先进封装瓶颈从前段转向后段组装设备，ASMPT 交付能力扩张 |
+| Hybrid bonding | 基准 | US$50m-90m | +50%-100% | 4 | 3.5 | 3.5 | 3 | 仍以资格认证和 pilot line 为主 |
+| Hybrid bonding | 乐观 | US$120m-220m | +150%-300% | 4.5 | 4 | 4 | 3.5 | 关键客户从 pilot 转 early HVM；HBM4E/logic 3D 项目加速 |
+| Hybrid bonding | 极度乐观 | US$250m-400m | +400% 以上 | 5 | 4.5 | 5 | 4 | 混合键合在 HBM/logic 先进封装中提前成为主流，ASMPT 拿到量产工具 POR |
+| SMT AI server / optical / SiP | 基准 | US$420m-560m | +20%-40% | 3.5 | 4 | 3 | 2.5 | Q1 订单高位正常转收入，AI server 和光模块扩产延续 |
+| SMT AI server / optical / SiP | 乐观 | US$600m-850m | +50%-90% | 4 | 4 | 4 | 3 | SMT 战略评估不干扰经营；AI server、光模块、SiP 订单持续 |
+| SMT AI server / optical / SiP | 极度乐观 | US$900m-1.2bn | +100% 以上 | 4 | 4.5 | 4.5 | 3 | AI server/交换机/光模块 EMS 产线全球扩张，ASMPT 份额提升 |
+| AI power / PMIC / power packaging | 基准 | US$120m-180m | +15%-30% | 3 | 4 | 3 | 3 | AI rack 电源和 PMIC 稳步扩张 |
+| AI power / PMIC / power packaging | 乐观 | US$200m-300m | +50%-80% | 3.5 | 4 | 3.5 | 3.2 | 数据中心电源架构升级、China OSAT power management 订单增强 |
+| AI power / PMIC / power packaging | 极度乐观 | US$350m-500m | +100% 以上 | 4 | 4.5 | 4 | 3.5 | AI rack 电源和功率半导体封装成为供应瓶颈之一 |
+
+## 7. BOM、每 MW/rack/GPU/optical port 内容量与价格传导
+
+ASMPT 不直接出售 GPU、HBM、光模块或服务器 BOM。它出售的是把这些 BOM 做出来的设备。因此“内容量”应理解为 AI 系统每单位需求会拉动多少后段封装、光子封装和 SMT 设备 capex，而不是每个 GPU 内有多少 ASMPT 零件。
+
+### 7.1 AI accelerator / HBM 封装 BOM 与设备传导
+
+本地行业资料显示，AI accelerator module/package 的成本结构大致为：logic die/wafer 30%-50%，HBM stacks 25%-45%，advanced package service 8%-18%，ABF/organic/interposer 5%-12%，test/probe/burn-in/SLT 3%-8%，thermal lid/TIM/cold plate 2%-6%，yield loss/rework/logistics 3%-10%。其中 ASMPT 可捕捉的是 advanced package service、HBM stacking、die placement、TCB/hybrid bonding、photonics/SIP/SMT 产线 capex，而不是芯片本身 ASP。
+
+CoWoS/2.5D 类先进封装服务内部，interposer/RDL 约 30%-45%，substrate/ABF 约 20%-30%，assembly/underfill/lid/TIM 约 15%-25%，inspection/metrology/test 约 10%-20%，cleanroom/labor/energy/depreciation 约 10%-15%。ASMPT 的主要设备价值量落在 assembly、bonding、die handling、automation、traceability，以及部分 photonics/SMT 工序。
+
+### 7.2 每 GPU、每 rack、每 MW 的研究估算内容量
+
+| 单位 | 关键物理内容量 | 对 ASMPT 设备需求的传导 |
+|---|---|---|
+| 每颗 AI GPU/ASIC | 通常 1 个大型 2.5D/先进封装模块；1-4 个 logic/chiplet die；4-12 个 HBM stacks，未来可能更高；每个 HBM stack 为 8H/12H/16H DRAM die + base die | C2S/C2W/flip-chip/die attach 需要处理 logic die 与 interposer/substrate/wafer 连接；HBM stack 需要 upstream stacking/bonding；HBM 与 logic package 的组装提高高精度放置和 TCB 设备利用率 |
+| 每颗 12H HBM stack | 12 层 DRAM die + base die；多次 thinning、TSV、micro bump、TCB/混合键合、underfill、test/burn-in | HBM4 12H 是 ASMPT 当前 TCB 订单直接指向；16H 增加堆叠高度、翘曲控制和键合难度，提升设备价值量 |
+| 每个 NVL72 等效高密 AI rack | 以 72 颗 GPU 粗估；若每 GPU 8-12 个 HBM stack，则每 rack 约 576-864 个 HBM stacks；若每 stack 12H，则约 6,900-10,400 次 DRAM die 层级堆叠/键合步骤，另有 72-288 个 logic/chiplet die 放置和 576-864 个 HBM-to-package 放置 | 单 rack 的 HBM/logic 组装复杂度远高于传统服务器；这不是逐 rack 线性收费，但会提高 foundry/OSAT/HBM 厂对 TCB、die attach、test、automation 的 capex 强度 |
+| 每 MW AI 负载 | 若高密 rack 为 100-200kW，每 MW 约 5-10 个 rack；对应 360-720 颗 GPU，约 2,880-8,640 个 HBM stacks | 每 MW 新增 AI 算力对应数千 HBM stacks 和数百大型先进封装模块，是 TCB/HBM/CoWoS-like 设备需求的底层放大器 |
+| 每 800G optical port/module | 典型为 8x100G 或 4x200G 光电通道；含光芯片/laser/PD、DSP/TIA/CDR、PCB/connector/case、assembly/coupling、burn-in/test | ASMPT 捕捉 photonics placement、active/passive alignment、multi-chip assembly、SMT 贴装和测试前后自动化设备 capex |
+| 每 1.6T optical port/module | 常见路线为 8x200G 或 4x400G；对 200G lane 光芯片、DSP/retimer、高频 PCB、散热、耦合和可靠性要求更高 | 1.6T 比 800G 对贴装精度、throughput、热稳定和良率更敏感；ASMPT 的 AMICRA NANO/NOVA/MEGA 等平台受益 |
+| 每个 CPO/NPO optical engine | PIC/III-V、driver/TIA、external laser source allocation、socket/fiber array、packaging/test | 2026 仍低渗透，2027 后若 CPO/NPO 进入量产，光子贴装和封装设备价值量明显提升 |
+
+### 7.3 每 optical port 的设备摊销内容量
+
+公司不披露每个光端口对应设备摊销金额。按行业设备使用寿命、光模块产线 throughput 和设备 ASP 粗估：
+
+| 场景 | 每 800G/1.6T 模块的 ASMPT 设备摊销 | 关键变量 |
+|---|---:|---|
+| 800G 高稼动成熟线 | 低个位数美元至十几美元/模块 | 设备 ASP、UPH、yield、折旧年限、产线复用率 |
+| 1.6T early ramp | 十几美元至数十美元/模块 | 1.6T 良率爬坡、主动对准时间、burn-in/test、返工率 |
+| CPO/NPO optical engine early line | 数十美元/engine 甚至更高 | 封装复杂度、光学耦合、field reliability、客户验证周期 |
+
+价格传导链：hyperscaler 网络升级 -> 800G/1.6T/CPO 光模块厂扩线 -> 购买 photonics bonding/placement/SMT/test 前后设备 -> 设备折旧进入光模块制造成本 -> 若产能紧张，设备订单提前下达并形成 ASMPT backlog。
+
+### 7.4 高端设备自身 BOM 拆分
+
+本地行业资料对高端 bonder/先进封装设备的成本拆分显示：
+
+| 高端 bonder/TCB/photonic placement 成本项 | 占设备成本估算 | 对 ASMPT 毛利影响 |
+|---|---:|---|
+| 精密运动平台、stage、control | 20%-30% | 供应链稳定性和自研控制能力决定 throughput 与精度 |
+| 光学对准、IR、camera、sensor、metrology | 15%-25% | 决定 fine pitch、硅光、CPO、AOR 方案壁垒 |
+| clean/plasma/thermal/force/control module | 15%-25% | TCB、AOR、fluxless、hybrid bonding 的关键 |
+| EFEM、wafer/die handling、automation | 10%-15% | 决定 HVM 稳定性和客户线体兼容 |
+| 软件、recipe、traceability、AI analytics | 8%-15% | 高端客户认证和良率闭环重要性上升 |
+| 服务、备件、安装和应用支持 | 10%-20% | POR 后的持续收入和客户粘性来源 |
+| 外采精密件/电控/机电模块 | 15%-25% | 可能形成短期交付瓶颈 |
+
+## 8. 当前产能能力、供应链采纳和认证阶段
+
+这里的“产能能力”指 ASMPT 未来 12 个月可交付收入能力的美元估算，不是客户芯片产能。公司没有披露产品级产能，以下按 Q1 2026 实际收入、Q2 指引、历史毛利率、公开订单和分部交付能力估算。
+
+| 产品/业务 | 当前可交付收入能力估算 | 供应链采纳程度 | 认证/POR 阶段 | 当前瓶颈 |
+|---|---:|---|---|---|
+| TCB：C2S/C2W/HBM/AOR | US$350m-500m/年 | 高。C2S 已有 leading foundry/OSAT 订单，部分应用被称为 sole supplier/POR；C2W 取得 leading IDM repeat order；HBM4 12H 有多个 HBM player 订单 | C2S 已进入 POR/量产订单；C2W 2025 年末 final qualification 后 2026 年复购；HBM4 12H 订单阶段；HBM4 16H sampling；AOR final qualification/早期订单 | 精密部件、plasma/AOR、客户验收、安装应用工程师、交付节奏 |
+| Photonics / 1.6T / CPO-NPO | US$150m-250m/年 | 中高。800G/1.6T 光模块客户订单和收入增长强；CPO/NPO 仍早期 | 800G/1.6T 光模块产线量产/扩线；CPO/SiPh 在 OFC/ECTC 2026 展示和客户评估 | 光学对准 throughput、客户良率、CPO 标准未完全稳定 |
+| Flip-chip / die attach / chiplet | US$220m-350m/年 | 高。foundry/OSAT/IDM 先进封装扩产需要 | 多数为成熟量产/扩产，先进节点持续 qualification | 行业竞争、客户多供应商策略、交付与服务能力 |
+| Hybrid bonding | US$50m-100m/年 | 中。客户 buy-off/发运已有，但量产还早 | pilot/early qualification；第二代 Hybrid Bonder 已客户 buy-off 后发运 | 竞争强、工艺路线未统一、客户 HVM 爬坡慢 |
+| SMT AI server / optical / SiP | US$900m-1.1bn/年（全 SMT）；AI 相关子集 US$350m-550m/年 | 高。Q1 2026 SMT 订单创纪录，明确来自 AI server、光模块、半导体、中国 EV 等 | SMT 量产成熟；SiP/direct-chip/high-force 用于高端线体 | SMT 行业竞争、毛利率低、战略评估不确定 |
+| AI power / PMIC / power packaging | US$100m-180m/年 | 中高。中国 OSAT、power management、AI rack 电源相关 | 多数成熟；高可靠 power package 需客户认证 | 价格竞争和国产替代 |
+
+## 9. 一年后产能、供应链采纳和认证阶段情景
+
+| 产品/业务 | 情景 | 一年后可交付收入能力估算 | 供应链采纳 | 认证/POR 进展 |
+|---|---|---:|---|---|
+| TCB：C2S/C2W/HBM/AOR | 基准 | US$450m-600m/年 | C2S/C2W/HBM4 在现有客户中扩线，新增客户有限 | AOR/fluxless 通过更多客户 final qualification；HBM4 16H 从 sampling 进入首批订单 |
+| TCB：C2S/C2W/HBM/AOR | 乐观 | US$650m-850m/年 | foundry/OSAT/IDM/HBM 厂多点采用，ASMPT 接近 35%-40% TCB TAM 份额 | HBM4 12H、16H、C2W chiplet 多项目 POR；更多 repeat orders |
+| TCB：C2S/C2W/HBM/AOR | 极度乐观 | US$900m-1.2bn/年 | ASMPT 成为多个 AI package/HBM 关键节点主设备供应商 | AOR/fluxless TCB 成为 ultrafine pitch 主流方案之一 |
+| Photonics / 1.6T / CPO-NPO | 基准 | US$250m-350m/年 | 1.6T 光模块设备持续扩线，CPO 小批量 | 1.6T 客户量产线认证增加；CPO/NPO 仍 qualification |
+| Photonics / 1.6T / CPO-NPO | 乐观 | US$400m-600m/年 | 1.6T 大规模扩产，硅光/CPO optical engine 线体建设提前 | CPO optical engine 进入 early production |
+| Photonics / 1.6T / CPO-NPO | 极度乐观 | US$700m-900m/年 | hyperscaler 网络路线推高 1.6T/CPO capex，ASMPT 光子平台成为关键设备 | CPO/NPO 多客户量产认证，field reliability 通过 |
+| Flip-chip / die attach / chiplet | 基准 | US$300m-450m/年 | 先进封装扩产稳步拉动 | 现有成熟 qualification 延伸到更多 AI package |
+| Flip-chip / die attach / chiplet | 乐观 | US$500m-700m/年 | 多客户扩产、工具 utilization 高 | 与 TCB/hybrid bonding 形成组合采购 |
+| Flip-chip / die attach / chiplet | 极度乐观 | US$800m-1.0bn/年 | 先进封装后段组装成为瓶颈 | 关键客户导入更多自动化/inline metrology |
+| Hybrid bonding | 基准 | US$80m-150m/年 | pilot/小批量 | 2-3 个客户进入 final qualification |
+| Hybrid bonding | 乐观 | US$180m-350m/年 | 早期 HVM | logic/HBM4E/HBM5 项目获得 POR |
+| Hybrid bonding | 极度乐观 | US$400m-600m/年 | 混合键合快速成为先进封装主流扩产项目 | 多客户 HVM；ASMPT 证明 throughput/yield 与竞争对手相当 |
+| SMT AI server / optical / SiP | 基准 | 全 SMT US$1.0bn-1.3bn/年；AI 子集 US$420m-560m | AI server、光模块 EMS 稳步扩线 | 客户量产线成熟，战略评估不影响交付 |
+| SMT AI server / optical / SiP | 乐观 | 全 SMT US$1.4bn-1.7bn/年；AI 子集 US$600m-850m | AI server/光模块/SiP 线体全球加速 | SIPLACE/DEK/SiP 方案在更多 EMS 复用 |
+| SMT AI server / optical / SiP | 极度乐观 | 全 SMT US$1.8bn-2.2bn/年；AI 子集 US$900m-1.2bn | AI server 和 optical transceiver 产线 capex 周期共振 | 若 SMT 分拆/合作不扰动经营，订单转化能力提升 |
+
+## 10. 基于订单积压和供给的未来一年业务增速预测
+
+### 10.1 已知订单与 backlog 信号
+
+| 信号 | 数值/事实 | 对未来 12 个月的含义 |
+|---|---|---|
+| 2025Q2 backlog | US$872.7m，B2B 1.10 | AI/AP 订单在 2025H1 已形成积压 |
+| 2025Q3 backlog | US$867.7m，剔除取消后 B2B 1.04 | backlog 稳定，取消主要来自 panel deposition 非核心订单 |
+| 2025Q4 backlog | 约 US$792.9m，B2B 约 0.98 | 年末 backlog 仍高于两季正常收入 |
+| 2026Q1 订单 | US$726.5m，B2B 约 1.43 | backlog 明显上升，是 2026H2 收入的核心支撑 |
+| 2026Q2 指引订单 | US$540m-620m，中点 US$580m | 从 Q1 纪录高位回落但仍 elevated，若兑现则 backlog 不会快速消耗 |
+| C2S/C2W 可数订单 | 2025-12 至 2026-06 公开披露至少数十台高端 TCB | 支撑 SEMI 未来 2-4 个季度收入和毛利率 |
+| Photonics/1.6T | Q1 photonics 收入 YoY 约 5 倍；1.6T bulk orders | 小基数高弹性，若良率/交付正常，H2 贡献可能继续放大 |
+| SMT | Q1 SMT 订单 US$417.4m，创纪录 | AI server/光模块/SiP 订单向收入转化，低毛利但规模弹性大 |
+
+### 10.2 未来一年集团收入增速情景
+
+以 2025 继续经营收入约 US$1.763bn 为基准。未来一年指 2026Q2-2027Q1 附近滚动 12 个月。
+
+| 情景 | 集团未来一年收入估算 | 相对 2025 收入增速 | SEMI 增速 | SMT 增速 | 调整后 GM | 主要假设 |
+|---|---:|---:|---:|---:|---:|---|
+| 基准 | US$2.35bn-2.55bn | +33%-45% | +35%-55% | +20%-35% | 40%-42% | Q2 指引中点兑现；TCB 可数订单按计划交付；photonics 维持高增但 CPO 仍小；SMT Q1 订单正常转收入 |
+| 乐观 | US$2.70bn-3.05bn | +53%-73% | +65%-95% | +35%-60% | 42%-44% | HBM4、C2W、AOR、1.6T 光模块订单持续；TCB 产能和安装服务跟上；SMT AI server/光模块订单不回落 |
+| 极度乐观 | US$3.30bn-3.80bn | +87%-116% | +100%-150% | +70%-110% | 44%-47% | TCB TAM 提前放大，ASMPT 份额接近 35%-40%；1.6T/CPO 线体扩产超预期；SMT 战略评估释放资源且不扰动客户 |
+
+### 10.3 取消率和交付风险
+
+公司没有披露产品级取消率。可观察事实是：2025Q3 有 panel deposition tools 一次性取消，影响订单和 backlog；但 2026Q1 的高端 TCB、HBM4、C2W、photonics 和 1.6T 订单描述更多来自 final qualification、repeat order、POR 或 bulk order。通常高端先进封装设备一旦进入客户量产线和 recipe，取消概率低于普通设备，推迟验收概率仍存在。
+
+基准情景隐含取消/推迟：普通 SMT 和非核心后段订单可能有 5%-10% 的推迟或取消风险；高端 TCB/POR 项目取消率估算低于 5%，但交付、客户厂务、工艺验证和 ramp 节奏可能造成收入跨季度移动。
+
+极度乐观情景需要满足四个条件：客户 AI capex 不降速，HBM4/CoWoS/chiplet 扩产不被其他瓶颈限制，ASMPT 自身供应链和安装服务不拖累交付，混合键合或竞争对手路线没有快速替代 ASMPT 的 TCB 份额。
+
+## 11. 竞争格局、主流性、替代路线和客户替换成本
+
+### 11.1 TCB / advanced bonding
+
+| 维度 | ASMPT 位置 | 主要竞争者 | 判断 |
+|---|---|---|---|
+| C2S/C2W TCB | installed base >500 台；2025-2026 拿到 C2S、C2W、AOR、HBM4 公开订单；部分应用 POR/sole supplier | BESI、Kulicke & Soffa、Applied Materials/BESI 相关方案、EVG、SUSS、TEL、SET、Shibaura/Toray 等 | ASMPT 在 TCB 的公开订单和客户验证最强，是 2026 主流路线之一 |
+| HBM TCB | HBM4 12H 取得多个 HBM 客户订单，16H sampling | BESI、K&S、HBM 厂自有/合作设备、日欧精密设备供应商 | HBM4/16H 难度提升利好高端 TCB，但客户可能多供应商采购 |
+| AOR/fluxless TCB | 2026 已有 2 台 AOR 订单，Q1 称 final qualification | AMAT/BESI、EVG、SUSS、TEL 等混合键合/清洁/表面处理路线 | 若 ultrafine pitch 和残留控制成为核心瓶颈，AOR 是重要溢价点 |
+
+客户替换成本：高。TCB 设备一旦进入先进封装 POR，需要重新验证良率、可靠性、热循环、翘曲、underfill、recipe、UPH、维护和现场服务。替换周期通常 12-24 个月，量产线替换会牺牲 yield 和交付节奏。因此在 C2S/C2W/HBM4 等节点，ASMPT 若拿到 POR，溢价能力明显强于普通设备。
+
+主流性判断：2026-2027 TCB 仍是 HBM、C2S/C2W、chiplet 先进封装的主流扩产路线之一。风险在 2027 后 hybrid bonding 对部分 ultrafine pitch 和 3D 集成场景替代 TCB，但这不是一夜发生，且 ASMPT 也在布局 hybrid bonding。
+
+### 11.2 Hybrid bonding
+
+| 维度 | ASMPT 位置 | 竞争者 | 风险 |
+|---|---|---|---|
+| D2W/W2W hybrid bonding | 有第二代 Hybrid Bonder 客户 buy-off/发运，处于早期 | Applied Materials + BESI 生态、EVG、SUSS、TEL、SET、ASMPT、各类日欧设备商 | 竞争比 TCB 更强，客户认证未完全公开；若 ASMPT hybrid bonding 进展慢，未来高端 3D 封装部分价值可能被竞争对手吃掉 |
+
+客户替换成本：中高。Hybrid bonding 需要洁净度、表面处理、对准、温度/压力、缺陷控制和良率共同验证，HVM 切换难度高。但当前仍在技术路线形成期，客户可能同时测试多个供应商。
+
+主流性判断：混合键合是未来更细间距、更高互连密度的长期路线；2026 年收入确定性低于 TCB，2027-2028 才可能从期权变为主业。
+
+### 11.3 Photonics / 1.6T / CPO-NPO assembly
+
+| 维度 | ASMPT 位置 | 竞争者 | 判断 |
+|---|---|---|---|
+| 800G/1.6T optical module assembly | Q1 photonics 收入 YoY 约 5 倍，1.6T bulk orders；AMICRA NANO/NOVA/MEGA 等高精度光子贴装平台 | ficonTEC、PI/自动化平台商、Palomar、BESI、K&S、光模块厂自建自动化、日欧高精密贴装/对准设备商 | 1.6T 已进入真实扩产窗口，ASMPT 有明确订单和展会技术信号 |
+| CPO/NPO optical engine | OFC/ECTC 2026 展示 CPO、SiPh、AI HPC packaging；收入仍小 | 光模块、硅光、交换 ASIC 生态内的专用设备/自动化商 | 2026 是技术展示和早期线体，2027 后才是放量关键 |
+
+客户替换成本：中高。光子贴装设备要同时满足精度、throughput、光学耦合良率、热稳定、长期可靠性和自动化。成熟 800G/1.6T 线体替换成本中等偏高；CPO/NPO 早期线体因为标准未定，供应商格局仍有变化空间。
+
+替代风险：LPO、CPO、NPO、coherent-lite、不同 laser source 和 optical engine 架构会影响设备需求形态。ASMPT 的优势在高精度装配和多芯片自动化，但如果客户采用高度专用的自研线体或绑定其他设备生态，份额可能受限。
+
+### 11.4 SMT AI server / optical / SiP
+
+| 维度 | ASMPT 位置 | 竞争者 | 判断 |
+|---|---|---|---|
+| SMT placement/printing | DEK、SIPLACE 是成熟品牌；Q1 2026 SMT 订单创纪录 | Fuji、Panasonic、Yamaha、Mycronic、Juki、Hanwha、Europlacer、中国本土 SMT 设备商 | 需求强但行业壁垒低于 TCB，毛利率低 |
+| SiP/direct-chip/high-force assembly | 与 AI server、光模块、半导体 applications 相关 | SMT 大厂、专用贴装/封装设备商 | 若 AI server 和光模块线体扩张，ASMPT 有规模弹性 |
+
+客户替换成本：中。SMT 产线需要程序、维护、备件、工厂节拍和良率适配，但多供应商能力更强，替换周期短于先进封装 POR。SMT 的战略评估可能释放价值，也可能带来客户和员工不确定性。
+
+### 11.5 AI power / PMIC / power packaging
+
+竞争者包括 K&S、BESI、Shinkawa、TOWA、DISCO 及中国本土封装设备商。ASMPT 在 power management 和主流封装有客户基础，但这条线的技术溢价通常低于 TCB/photonic。AI rack 电源升级会带来稳健需求，难以单独支撑高估值。
+
+## 12. 风险清单
+
+| 风险 | 影响 | 监控指标 |
+|---|---|---|
+| AI capex 放缓 | TCB、photonics、SMT AI server 订单回落，估值压缩 | 订单、B2B、Q3/Q4 指引、hyperscaler capex、GPU/HBM 出货 |
+| HBM/CoWoS 其他瓶颈限制 | 客户推迟 ASMPT 设备安装或验收 | HBM4 qualification、CoWoS 产能、interposer/ABF 供应 |
+| 技术路线切换 | hybrid bonding 或竞争方案替代部分 TCB | HBM4E/HBM5、SoIC、foundry advanced packaging roadmap |
+| 竞争加剧 | ASP 和毛利率下降，份额低于 35%-40% 目标 | SEMI GM、TCB TAM 份额、竞争对手订单 |
+| SMT 战略评估不确定 | 客户/员工/经营扰动，或交易价格低于市场预期 | SMT 订单、毛利率、公司公告 |
+| 订单取消或推迟 | backlog 转收入慢于预期 | backlog、book-to-bill、取消费用、存货 |
+| 中国/出口管制/地缘政治 | 客户 capex、交付和服务受影响 | 中国收入占比、客户项目延迟、监管更新 |
+| 汇率和香港市场流动性 | ADR/港股估值波动 | HKD/USD、ADR 成交量、港股风险偏好 |
+
+## 13. 后续跟踪清单
+
+1. Q2 2026 实际收入是否达到 US$540m-600m 指引，调整后 GM 是否接近 40.5%。
+2. Q2/Q3 订单是否继续高于收入，B2B 是否维持 1.0 以上。
+3. SEMI GM 是否维持 46% 左右；若 SEMI GM 下滑，说明高端 mix 或定价不如预期。
+4. 公司是否继续披露 C2W、HBM4 16H、AOR、fluxless TCB repeat orders。
+5. TCB TAM 2027 >US$1bn、2028 US$1.6bn 的管理层目标是否被行业订单验证。
+6. 1.6T photonics 收入是否继续高速增长，是否出现 CPO/NPO 量产线订单。
+7. SMT 战略评估是否导致出售、合资、分拆或保留；交易条款是否释放 SEMI 纯度。
+8. 存货和应收是否随订单增长失控，客户验收是否拖延。
+
+## 14. 资料来源与本地产业交叉验证
+
+### 14.1 公司和市场资料
+
+- ASMPT 2026Q1 results announcement / press release / investor presentation，2026-04-22：Q1 收入、订单、分部收入、毛利率、Q2 指引、TCB/HBM/photonics/SMT 订单描述。
+- ASMPT 2025 Annual Report / 2025 annual results，2026-03/04：FY2025 收入、分部收入、AP 收入 US$532.1m、TCB 收入 +146%、现金、借款、流动资产/负债、AAMI、NEXX、制造基地整合。
+- ASMPT 2025Q2 results，2025-07：Q2 订单、backlog、AP 1H25 收入占比、TCB 订单、hybrid bonder、800G photonics。
+- ASMPT 2025Q3 results，2025-10：Q3 订单、backlog、panel deposition 取消、HBM4 12H/C2W/SMT AI server 信号。
+- ASMPT 2025Q4 results presentation / annual results，2026-03：Q4 订单、backlog、TCB、photonics、SMT。
+- ASMPT C2S TCB press releases，2025-12-03 与 2025-12-22：19 台 C2S TCB、15 台 C2S TCB repeat/additional order，面向 AI computing chips。
+- ASMPT AOR C2W TCB press release，2026-02-05：2 台 ultrafine pitch C2W TCB with Active Oxide Removal。
+- ASMPT C2W TCB repeat order press release，2026-06-08：8 台 C2W TCB from leading IDM，advanced client/data-center CPU chiplet architectures。
+- ASMPT SMT strategic options announcement，2026-01-21：评估出售、合资/战略合作、独立上市/分拆或保留 SMT。
+- OFC 2026、ECTC 2026、SEMICON/Advanced Packaging forum 公开展会与公司展示信息：用于验证 CPO/SiPh/1.6T、AI/HPC advanced packaging 技术方向，不作为订单事实。
+- Yahoo Finance、Google Finance、Robinhood、OTC Markets 等 2026-06-11 搜索快照：ASMVY/0522.HK 股价、市值、PE、forward PE、PS。不同数据源口径存在差异，本报告用区间而非单点。
+
+### 14.2 本地行业资料
+
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`：用于 TCB、hybrid bonding、先进封装设备 TAM、BOM、毛利率、POR 替换成本和 2026/2027 路线判断。
+- `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`：用于 AI accelerator 先进封装 BOM、CoWoS/2.5D 成本拆分、竞争设备商和技术瓶颈判断。
+- `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`：用于 HBM3E/HBM4/HBM4 16H、TSV、micro bump、stacking、TCB/混合键合、测试瓶颈和 HBM stack 成本拆分。
+- `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`：用于 800G/1.6T、CPO/NPO、optical engine BOM、渗透率和 2026-2028 技术节奏判断。
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`：用于 800G/1.6T 光模块市场增速、1.6T 放量窗口和 AI 光模块需求判断。
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-06-11.md`：用于 HBM/AI ASIC 测试、KGD/KGSD、SLT 与 advanced packaging 设备链交叉验证。
+

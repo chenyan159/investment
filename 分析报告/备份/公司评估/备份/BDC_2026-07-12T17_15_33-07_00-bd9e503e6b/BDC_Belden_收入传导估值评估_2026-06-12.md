@@ -1,0 +1,167 @@
+# 公司收入传导与价值传导评估：Belden（BDC）
+
+报告日期：2026-06-12  
+公司名称：Belden Inc.  
+公司代号：BDC  
+正式输出目录：`分析报告/公司评估/`  
+研究边界：本报告只评估 NTM 收入、利润和经营价值传导；不做全公司排序，不给投资评级，不判断股价区间，不使用金融市场价格、估值倍数或市场定价作为经营价值传导证据。  
+资料边界：使用 `公司调研/`、`行业调研/` 与 Belden 官方 IR、SEC、产品页；未读取、引用或继承 `特征量化/`、Signals、排序或回归资料。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 2026-06-12 至 2027-06-12 的 NTM 交易前经营收入，即不把尚未交割的 RUCKUS 全年收入直接混入 Belden 基准。补充口径为 RUCKUS 若在 2026H2 完成交割后的 NTM 并表贡献。
+- 当前收入基准、指引和 run-rate：Belden 2025 年收入 `$2.715B`；2026Q1 收入 `$696.4M`、同比 `+11%`、有机 `+7%`、订单同比 `+4%`；Q2 2026 收入指引 `$735-750M`，中点 `$742.5M`，且明确不含 RUCKUS。Q1 run-rate 约 `$2.79B`，Q2 指引年化约 `$2.97B`。
+- 重要产品/业务线：Automation 工业网络与数据中心灰空间 OT 网络、Smart Buildings 数据中心白空间结构化光铜连接、Broadband & Telco 光纤/接入、RUCKUS 企业 Wi-Fi/交换/云管（待交割）、低证据工业 AI/Horizon/Physical AI 远期期权。
+- NTM 公司收入四情景：交易前基准 `$2.92-3.05B`，相对 2025 年绝对增加约 `$0.20-0.33B`、增长 `+8-12%`，大体符合 Q2 指引与当前 run-rate；悲观 `$2.75-2.85B`，低于当前预期；乐观 `$3.08-3.22B`，需要 Smart Buildings 双位数延续且 Automation 高个位数增长；极度乐观 `$3.30-3.50B`，需要 AI 数据中心白空间、灰空间和宽带/企业需求同时超预期。若 RUCKUS 在 2026H2 交割，按交割时点可能额外并表约 `$0.25-0.65B` NTM 收入；这不是交易前有机基准。
+- 利润或 EBITDA 四情景：交易前基准调整后 EBITDA 约 `$495-530M`，margin 约 `17%`；悲观 `$430-470M`，毛利率被铜价、关税、低利用率或项目 mix 压制；乐观 `$560-620M`，来自解决方案 mix、Smart Buildings 数据中心和 Automation 高利用率；含 RUCKUS 后若顺利交割，可增加高毛利收入和部分 EBITDA，但同时带来利息、整合和降杠杆约束。
+- 最大传导瓶颈：Belden 没有披露可直接建模的 backlog；2026Q1 订单同比 `+4%` 表明需求健康但没有暴露式加速。AI 数据中心项目从“Belden 可参与”到“NTM 可确认收入”仍取决于客户 AVL、系统集成商/EPC、项目交付、现场验收和 RUCKUS 监管交割。
+- 最大利润率变量：Automation 的 20%+ segment EBITDA margin 能否维持，Smart Buildings 数据中心结构化布线是否形成高密度/预端接/解决方案溢价，RUCKUS 60%+ gross margin 与 20%+ EBITDA margin 是否如期并入；反向变量是铜价传导、低毛利宽带/普通线缆、关税和固定价项目。
+- 最大现金流变量：RUCKUS 现金收购与债务融资会显著提高净杠杆；管理层计划暂停进一步 M&A 和回购、优先降债。经营现金流本身仍为正，但 NTM FCF 质量取决于营运资本、项目出货节奏、并购费用和利息成本。
+- 可信度：交易前基准为中高；乐观为中；极度乐观为低到中，必须看到 AI 数据中心订单金额、Smart Buildings 持续双位数、有机订单重新加速、RUCKUS 按期交割且渠道稳定。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Automation 工业网络、IT/OT、数据中心灰空间 OT 网络 | 2025 收入 `$1.496B`；2026Q1 `$387M` | 2025 `55%`；2026Q1 `56%` | 最大收入和利润池；Hirschmann、ProSoft、macmon、Horizon、工业交换/网关/安全/远程连接承接工厂、能源、过程、数据中心设施网络 | A：已披露收入和分部 EBITDA；C：数据中心灰空间项目未量化 | 进入基准；数据中心灰空间增量按折扣进入，Physical AI 不进入基准 | 工业边缘 AI、Physical AI、Horizon 平台化收入 |
+| Smart Buildings 数据中心白空间结构化光铜连接 | 2025 Smart Buildings `$586M`；2026Q1 `$154M` | 2025 `22%`；2026Q1 `22%` | AI 数据中心最直接入口；DCX、FiberExpress、REVConnect、机柜/配线/预端接/线缆管理 | A：已披露产品类别收入；C：AI 数据中心垂直收入未单独披露 | 进入基准，但只把可见数据中心/企业建筑需求保守纳入；不能把 AI campus TAM 直接当公司收入 | 1.6T/高密度 AI campus 标准化、项目框架协议 |
+| Broadband & Telco 光纤与接入 | 2025 `$633M`；2026Q1 `$155M` | 2025 `23%`；2026Q1 `22%` | 运营商、宽带、外部光纤和接入网络；AI 相关性主要是边缘/园区/宽带流量二阶拉动 | A：已披露收入；B/C：部分光网络项目和 Precision Optical 能力 | 进入基准；按中个位数到高个位数增长处理，不把 AI 叙事放大 | 50G PON、DOCSIS 4.0、边缘 AI 接入增量 |
+| RUCKUS 企业 Wi-Fi、交换、AI 云管平台（待交割） | Belden 当前收入 `$0`；RUCKUS 2025 收入 `$687M`，公司交易材料披露 | 当前 Belden `0%`；并表后约占 pro forma 2025 收入 `20%` | 高毛利主动网络资产，补齐 IT 层；对企业、教育、酒店、工业无线、IT/OT 融合有价值 | B：正式收购协议、交易材料、预计 H2 2026 close；不是 Belden 已确认收入 | 不进入交易前经营基准；在 RUCKUS 按期交割情景下进入 NTM 并表补充 | Wi-Fi 7、NaaS、AI-driven cloud networking、工业无线交叉销售 |
+| 普通低速线缆、标准连接件、低端宽带物理层 | 已包含在上述分部，未单独披露 | 无法可靠量化 | 收入基盘和价格传导项，但 AI 溢价低 | A：收入存在；利润质量低于高密/解决方案 | 进入分部基准但作为抵消项处理 | 无 |
+| Horizon、Physical AI、工业边缘 AI 方案 | 当前小基数，未披露收入 | 无法可靠量化 | 改变收入结构的远期潜在项，但 NTM 证据不足 | D：产品/平台/合作与案例为主，未量化订单 | 不进入 NTM 基准，只作为乐观上限或附录跟踪 | 若形成可重复软件/服务 attach，可上移 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只判断外部需求池相对当前需求锚的强弱，不判断 Belden 份额、收入确认、利润率或公司汇总。当前需求锚来自 2026Q1 订单/有机增速、Q2 指引、2025 年分部收入、行业调研中 AI 数据中心结构化布线/线缆管理/OT 网络需求，以及 RUCKUS 交易材料披露的企业网络需求。绝对变化为 NTM 需求池或 Belden 可服务需求方向，不等于可确认收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Automation 工业网络与数据中心灰空间 OT 网络 | 2026Q1 Automation `$387M`，有机 mid-single-digit；Discrete 高个位数，Energy/Process 中个位数；2025 Automation `$1.496B`、EBITDA margin `21.0%` | 工业自动化预算或项目交付放缓，需求仅持平到低个位数增长；AI DC 灰空间案例延期 | 中个位数到高个位数需求增长，符合 Q1 与 Q2 指引隐含路径 | 数据中心冷却/电力/设施 OT 网络复制，Automation 接近双位数需求增长 | AI campus 将 Belden 工业网络标准化为灰空间方案，需求非线性上修 | 悲观 `0-3%`；基准 `+5-8%`；乐观 `+10-15%`；极度 `+18%+` | 基准符合当前预期；乐观高于预期 | 正向：IT/OT convergence、工业数字化、数据中心设施复杂度；反证：Q1 orders 仅 `+4%`，未披露 data center backlog |
+| Smart Buildings 数据中心结构化光铜连接 | 2026Q1 Smart Buildings `$154M`，有机 double-digit；行业资料显示 800G/1.6T、高密 rack、结构化光纤和 fiber management 需求上行 | 企业楼宇/数据中心项目推迟，需求回落到低个位数或持平 | 双位数附近需求延续，来自低基数、数据中心和企业垂直 | AI-ready 数据中心、预端接、高密 DCX/FiberExpress 标准化，需求明显高于当前路径 | 大型 AI campus 抢交付，白空间光纤/铜缆/配线/线缆管理需求非线性放大 | 悲观 `0-5%`；基准 `+10-15%`；乐观 `+20-30%`；极度 `+40%+` | 基准符合当前预期；乐观/极度需要新订单证据 | 正向：Q1 double-digit organic、行业高密光纤需求；反证：Belden 未披露 AI DC 垂直收入，竞争来自 Corning、CommScope/Amphenol、Panduit、Legrand |
+| Broadband & Telco 光纤与接入 | 2026Q1 Broadband `$155M`，有机 mid-single-digit；管理层预计 2026 推进中改善 | 运营商 CapEx、外线/宽带建设或补贴节奏延后，需求低于季节性改善 | 中个位数需求增长，符合 Q1 与正常宽带建设节奏 | XGS-PON、DOCSIS 4.0、外部光纤、AI campus 外部连接项目同步加速 | 宽带升级、边缘 AI、园区光纤和运营商 CapEx 同时上修 | 悲观 `-3%` 至 `+2%`；基准 `+4-7%`；乐观 `+10-15%`；极度 `+20%+` | 基准符合当前预期；极度概率低 | 正向：Q1 在慢季仍中个位数增长；反证：AI 直接度低，运营商预算周期强 |
+| RUCKUS 企业 Wi-Fi/交换/云管 | RUCKUS 2025 收入 `$687M`、同比 `+32%`；交易材料称未来 high-single-digit revenue growth、60%+ gross margin、20%+ EBITDA margin | 企业 Wi-Fi/交换需求回落或渠道不稳定，交割延迟；NTM Belden 需求无法并表 | 企业 Wi-Fi 7、教育/酒店/MDU/制造需求按 high-single-digit 增长，H2 交割后贡献部分 Belden 报表 | Wi-Fi 7 与工业/仓储/企业边缘网络更新加速，交割顺利且渠道留存高 | RUCKUS 成为 Belden 工业客户 IT/OT 无线入口，交叉销售提前兑现 | 需求池基准年化 `$720-760M`；乐观 `$800M+`；极度 `$900M+`；Belden NTM 可确认取决于交割日期 | 需求本身基准清楚；Belden 收入化仍需交割 | 正向：正式并购协议、高毛利资产、客户基数；反证：监管、整合、渠道和债务 |
+| Horizon / Physical AI / 工业边缘软件 | 产品/平台和合作展示，未披露收入 | 试点不转化，需求只停留营销 | 小额 attach 或客户测试，不改变 NTM 基准 | 少数工业/数据中心客户付费采用，提高解决方案粘性 | 形成软件/服务产品化收入 | 当前绝对需求无法可靠量化；NTM 基准为 `$0-低个位数百万` 级别假设 | 低于可确认收入门槛 | 正向：IT/OT 趋势；反证：缺少量化订单、价格和确认节奏 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断 Belden 能参与的需求中哪些能进入 NTM 收入表，以及当前可收入化基数。A/B 级证据可作为基准主口径；C 级只有客户、产品和时间表都清楚时保守折扣；D/E 不进入基准。RUCKUS 因尚未交割，不进入交易前经营基准，但进入“并表补充口径”。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Automation 工业网络与数据中心灰空间 OT 网络 | 2025 Automation `$1.496B`；2026Q1 `$387M`；2025 segment EBITDA `$313M` / margin `21.0%` | 直接收入；数据中心灰空间为直接项目但未单独披露 | 高于公司平均，工业网络/解决方案贡献 EBITDA | `$1.50-1.56B` | `$1.58-1.70B` | `$1.72-1.86B` | `$1.90B+` | 基准符合当前指引/run-rate；悲观低于当前预期；乐观需订单再加速 | A；灰空间项目为 C | 是 | 已披露分部收入、Q1 organic growth、订单增长；灰空间案例只折扣纳入 | 进入 NTM 基准；AI 灰空间增量作为小比例上修，不替代整个 Automation |
+| Smart Buildings 数据中心结构化光铜连接 | 2025 Smart Buildings `$586M`；2026Q1 `$154M`；data center 垂直收入未披露 | 直接收入；AI DC 白空间为直接但需项目/客户确认 | 中等，结构化布线和高密方案高于普通线缆，分部利润未单独披露 | `$580-620M` | `$640-700M` | `$720-820M` | `$900M+` | 基准略高于 2025 年，符合 Q1 double-digit；极度上限不代表当前预期 | A；AI DC 子项 C | 是 | 已披露产品类别收入；数据中心产品页和行业需求支持，但未披露 backlog | 进入 NTM 基准；AI DC 专项按估算进入，普通企业建筑需求不能被全部算作 AI |
+| Broadband & Telco 光纤与接入 | 2025 `$633M`；2026Q1 `$155M` | 直接收入；AI 主要间接拉动 | 中低到中，受运营商预算、价格和项目 mix 影响 | `$600-635M` | `$650-700M` | `$710-780M` | `$820M+` | 基准符合 mid-single 改善；乐观需要运营商/宽带项目加速 | A | 是 | 已披露产品类别收入和 Q1 organic mid-single growth | 进入 NTM 基准；不把 AI campus 外部光纤 TAM 直接算成 Belden 收入 |
+| RUCKUS 企业 Wi-Fi/交换/云管 | Belden 当前 `$0`；RUCKUS 2025 `$687M`；交易价格 `$1.85B`；预计 H2 2026 close | 对 Belden 当前为并购可收入化路径，不是已确认收入；交割后直接收入 | 高毛利，交易材料称 60%+ gross margin、20%+ EBITDA margin | `$0-180M` | `$250-450M` 并表补充 | `$450-650M` 并表补充 | `$650-800M` 并表补充 | 交易前基准为 `$0`；并表补充取决于 close date | B | 交易前不进入；并表补充进入 | 正式收购协议、预计 H2 close、融资承诺；但监管和交割未完成 | 不进入交易前经营基准；若交割，按交割日起部分并表 |
+| 普通低速线缆、标准连接件、低端宽带产品 | 包含在三大产品类别，未单独披露 | 直接 | 低毛利或 pass-through，受铜价/原材料影响 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 作为抵消项，不单独上修 | A | 已包含 | 收入存在但拆分不足 | 包含在分部基数中，不作为独立成长引擎 |
+| Horizon / Physical AI / 工业边缘软件 | 未披露收入、订单或 RPO；Horizon 平台仍偏产品/平台叙事 | 间接到直接潜在转换 | 若产品化则高毛利，但当前不可确认 | `$0` | `$0` | `$0-20M` | `$20-50M` | 基准为零；乐观只是上限线索 | D | 否 | 产品发布、平台描述、合作案例，缺少 NTM 量化订单 | 不进入 NTM 基准；移入附录跟踪 |
+
+排除项：行业总 AI 数据中心 CapEx、AI campus 总 MW、客户总布线预算、普通 Wi-Fi 7 TAM、CPO/1.6T 光模块市场规模、Horizon/Physical AI 营销案例，均不得直接转换为 Belden NTM 收入。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第一步需求和第二步收入基数出发，判断每个重要产品/业务线在 NTM 内能给 Belden 贡献的收入与利润。利润贡献用产品/业务线 EBITDA 或经营利润方向估算，不等于净利润；Belden 未按 Smart Buildings/Broadband 新产品类别单独披露 EBITDA，故相关利润为区间估算。所有收入均为 Belden 可确认收入，不是行业 TAM。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Automation 工业网络与数据中心灰空间 OT 网络 | 悲观 | `$1.50-1.56B` | EBITDA 约 `$290-320M` | margin 小幅下行或持平 | 低于当前预期 | 工业预算放缓、数据中心项目延期、订单未加速 | 保留悲观下沿 | Q1 orders `+4%` 且 Q2 指引健康，不支持大幅衰退 |
+| Automation 工业网络与数据中心灰空间 OT 网络 | 基准 | `$1.58-1.70B` | EBITDA 约 `$325-360M` | 保持 `20-21%` 附近 | 符合当前预期 | 2025 Automation `$1.496B`、Q1 organic mid-single、分部 margin `21.0%` | 保留 | 未披露 backlog，数据中心灰空间金额不透明 |
+| Automation 工业网络与数据中心灰空间 OT 网络 | 乐观 | `$1.72-1.86B` | EBITDA 约 `$365-405M` | 小幅扩张 | 高于当前预期 | 数据中心冷却/电力/设施网络复制，解决方案项目更大 | 保留但需订单验证 | Siemens、Rockwell、Cisco Industrial、Schneider、Moxa 等竞争强 |
+| Automation 工业网络与数据中心灰空间 OT 网络 | 极度乐观 | `$1.90B+` | EBITDA `$420M+` | 明显扩张 | 明显高于当前预期 | AI campus 灰空间网络标准化、工业边缘 AI 方案商业化 | 下移为乐观上限 | 缺少客户名、金额、交付时间表；Physical AI 多为期权 |
+| Smart Buildings 数据中心结构化光铜连接 | 悲观 | `$580-620M` | EBITDA/经营利润无法可靠量化；估算 `$60-75M` | margin 承压 | 低于当前预期 | 数据中心/企业楼宇项目延期，普通布线竞争压价 | 保留 | Q1 double-digit organic 是反证 |
+| Smart Buildings 数据中心结构化光铜连接 | 基准 | `$640-700M` | 估算 `$80-100M` | 持平到小幅改善 | 符合当前预期 | Q1 Smart Buildings `$154M`、double-digit organic；高密结构化布线需求强 | 保留 | Belden 未披露 AI DC 垂直收入；需避免把全部 Smart Buildings 视为 AI |
+| Smart Buildings 数据中心结构化光铜连接 | 乐观 | `$720-820M` | 估算 `$105-135M` | 改善 | 高于当前预期 | DCX/FiberExpress/预端接/机柜线缆管理进入更多 AI/colo 项目 | 保留 | Corning、CommScope/Amphenol、Panduit、Legrand、Siemon、Leviton 等竞争 |
+| Smart Buildings 数据中心结构化光铜连接 | 极度乐观 | `$900M+` | 估算 `$145M+` | 明显改善，但取决于 mix | 明显高于当前预期 | 大型 AI campus 重复采购、美国本土制造/区域供应成为优势 | 下移为乐观上限 | 无框架合同或大客户金额披露；普通结构化布线不是高毛利芯片式收入 |
+| Broadband & Telco 光纤与接入 | 悲观 | `$600-635M` | 估算 `$55-70M` | 下行或持平 | 低于当前预期 | 运营商 CapEx、外线项目、补贴节奏放缓 | 保留 | Q1 仍为 mid-single organic growth |
+| Broadband & Telco 光纤与接入 | 基准 | `$650-700M` | 估算 `$70-85M` | 持平 | 符合当前预期 | Q1 `$155M`、季节性慢季度仍增长，2026 预计改善 | 保留 | AI 直接度低，价格和项目节奏限制利润 |
+| Broadband & Telco 光纤与接入 | 乐观 | `$710-780M` | 估算 `$85-105M` | 小幅改善 | 高于当前预期 | XGS-PON、DOCSIS 4.0、园区/外部光纤项目改善 | 保留但低权重 | 运营商集中采购压价，不能因 AI 流量直接上修 |
+| Broadband & Telco 光纤与接入 | 极度乐观 | `$820M+` | 估算 `$110M+` | 改善有限 | 高于当前预期但利润弹性弱于收入 | 宽带、边缘 AI、园区外部光纤同步上行 | 下移为乐观上限 | 低毛利/pass-through 可能导致收入上修不等于利润上修 |
+| RUCKUS 企业 Wi-Fi/交换/云管 | 悲观 | Belden NTM 并表 `$0-180M` | EBITDA `$0-35M`；利息/整合可能抵消净利润 | 交割前无利润贡献 | 低于交易预期 | 监管延迟、渠道流失、企业 WLAN 放缓 | 保留为并表悲观 | 正式协议和融资承诺降低完全失败概率 |
+| RUCKUS 企业 Wi-Fi/交换/云管 | 基准 | Belden NTM 并表 `$250-450M` | EBITDA `$50-90M`，但净利润受利息影响 | 提升 gross/EBITDA margin | 符合交易材料预期 | H2 2026 close、高个位数增长、60%+ GM、20%+ EBITDA margin | 保留为补充口径 | 不是交易前收入；交割日决定 NTM 贡献 |
+| RUCKUS 企业 Wi-Fi/交换/云管 | 乐观 | Belden NTM 并表 `$450-650M` | EBITDA `$90-135M` | 明显提升 | 高于当前预期 | 交割较早、Wi-Fi 7/企业高密网络强、渠道稳定 | 保留但需 close 证据 | Cisco、HPE Aruba、Juniper Mist、Extreme、Ubiquiti 等竞争 |
+| RUCKUS 企业 Wi-Fi/交换/云管 | 极度乐观 | Belden NTM 并表 `$650-800M` | EBITDA `$135-170M` | 明显提升，但利息仍压 FCF | 高于当前预期 | 早交割 + 高增长 + 工业交叉销售提前兑现 | 下移为乐观上限 | 管理层交易材料只指向 high-single-digit growth，不支持无证据爆发 |
+| Horizon / Physical AI / 工业边缘软件 | 悲观 | `$0` | `$0` | 无 | 符合保守预期 | 无可确认订单 | 排除 | 无量化收入 |
+| Horizon / Physical AI / 工业边缘软件 | 基准 | `$0` | `$0` | 无 | 符合保守预期 | D 级证据不足 | 排除 | 样品/平台/合作不等于收入 |
+| Horizon / Physical AI / 工业边缘软件 | 乐观 | `$0-20M` | 无法可靠量化 | 可能高毛利但费用投入高 | 仅小幅高于基准 | 少数客户付费采用 | 仅作跟踪 | 无披露价格、客户、时间表 |
+| Horizon / Physical AI / 工业边缘软件 | 极度乐观 | `$20-50M` | 无法可靠量化 | 方向向上 | 远期期权 | 平台化软件 attach 成立 | 移入附录 | NTM 证据不足，不进入公司基准 |
+
+产品级合成判断：交易前 Belden 的 NTM 收入质量主要由 Automation 和 Smart Buildings 决定。Automation 提供利润底座，Smart Buildings 提供 AI 数据中心弹性，Broadband 提供稳定但较低质量的中个位数增长，RUCKUS 提供并购后毛利率结构改善但不属于交割前收入确认。当前证据支持“健康增长 + 小幅利润改善”，不支持把 Belden 直接写成 AI 网络核心硬件爆发型公司。
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：第一个表为公司 NTM 收入和利润四情景。主口径为交易前经营收入，不含尚未交割的 RUCKUS；同一单元格中用“并表补充”说明若 RUCKUS 在 2026H2 交割可能带来的额外报告口径收入。毛利率和经营利润率为公司层面方向性估算；Belden 指引只给 Q2 revenue/EPS，不给全年 NTM 分部利润指引。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 交易前 `$2.75-2.85B`；若 RUCKUS 延迟则无并表增量 | 较 2025 增加 `$0.04-0.14B`，约 `+1-5%` | 低于 Q2 指引/run-rate 和当前订单修复路径 | GAAP `36.5-37.5%`；adjusted `37.0-38.0%` | `10.5-11.5%` | Adjusted EBITDA `$430-470M`；净利润方向下行或持平 | FCF 转弱但仍可能为正，营运资本和并购费用压制 | 中 | 订单降速、数据中心项目延期、铜价/关税、普通线缆 mix、RUCKUS 延迟 |
+| 基准公司 | 交易前 `$2.92-3.05B`；若 RUCKUS 2026Q4 附近交割，报告口径约 `$3.10-3.35B` | 交易前较 2025 增加 `$0.20-0.33B`，约 `+8-12%` | 大体符合 Q1 run-rate、Q2 指引和当前有机增长路径 | GAAP `37.5-38.5%`；adjusted `38.0-39.0%` | `11.5-12.5%` | Adjusted EBITDA `$495-530M`；若部分并表 RUCKUS，可上修至 `$550-620M`，但净利润受利息影响 | 经营 FCF 正向，交易费用、库存/应收和利息降低可分配现金 | 中高 | Q1 orders 仅 `+4%`，未披露 backlog；RUCKUS 交割日不确定 |
+| 乐观公司 | 交易前 `$3.08-3.22B`；若 RUCKUS H2 顺利交割，报告口径约 `$3.45-3.70B` | 交易前较 2025 增加 `$0.36-0.50B`，约 `+13-19%` | 高于当前预期；需 Smart Buildings/Automation 同步强于指引 | GAAP `38.5-40.0%`；含 RUCKUS 后 adjusted 可能超过 `40%` | `12.5-14.0%` | 交易前 Adjusted EBITDA `$560-620M`；含 RUCKUS 部分并表 `$620-730M` | FCF 改善，但债务融资后利息和降杠杆优先消耗现金 | 中 | AI DC 项目可确认收入、Automation 高利用率、RUCKUS 渠道留存和交割 |
+| 极度乐观公司 | 交易前 `$3.30-3.50B`；若 RUCKUS 早交割且强增长，报告口径约 `$3.85-4.10B` | 交易前较 2025 增加 `$0.59-0.79B`，约 `+22-29%` | 明显高于当前预期，属于上限情景 | GAAP `40%+`；adjusted `41%+` 需高毛利 mix 明确 | `14.0-16.0%` | Adjusted EBITDA `$700-830M` 含并表上限；净利润仍受利息、整合和税率制约 | FCF 强但大部分用于降债；若营运资本拉大则兑现打折 | 低 | 必须同时满足 AI 白空间放量、灰空间标准化、RUCKUS 早交割、价格/mix 改善、执行无延误 |
+
+合成检查：
+
+- 重复计算：Smart Buildings 数据中心结构化连接、Automation 灰空间 OT 网络、Broadband 外部光纤可能服务同一 AI campus，但在 Belden 产品类别中属于不同收入流；报告已避免把同一客户总项目金额重复计入。
+- 并购/会计口径：RUCKUS 不进入交易前基准；只作为并表补充。交易相关费用、债务利息和整合风险不在产品利润中重复惩罚，只在公司现金流和可信度层面处理。
+- 传统业务抵消：普通线缆、低端宽带、通用连接件可贡献收入但利润率较低；收入增长若来自 pass-through，对经营质量的提升弱于 Automation/Smart Buildings/RUCKUS 高毛利方案。
+- 价格和成本：铜价、关税、输入成本、项目固定价会影响毛利率；同一风险不再在需求、收入和产品贡献多次扣减。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用保留、上移、下移、排除、移入附录、仅作跟踪。市场价格、估值倍数、股价表现不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 `$696.4M`、有机 `+7%`、Q2 指引 `$735-750M` | 公司汇总、产品贡献 | 支持交易前基准 `$2.92-3.05B`，不支持悲观大幅下修 | Q1 adjusted EBITDA margin `17.0%` 支持稳定利润 | Q2 指引兑现是近端执行锚 | 基准保留 |
+| 2026Q1 orders `+4%`，低于 2025Q1/Q2 的 `+18%/+16%` | 需求、收入确认 | 需求健康但加速证据不足，限制极度乐观 | 订单不强则利用率和 mix 扩张有限 | 缺少 backlog，收入可见性有限 | 极度乐观下移 |
+| Automation 2025 EBITDA margin `21.0%` | 产品贡献、公司利润 | Automation 是高可信收入底座 | 支持公司利润率不因宽带/线缆 mix 完全稀释 | 高利润池提供 FCF 支撑 | 基准和乐观保留 |
+| Smart Buildings Q1 double-digit organic growth | 需求、产品贡献 | 支持数据中心/企业建筑需求进入基准 | 若高密结构化连接占比提升，margin 上行 | 需项目交付和现场验收 | 乐观保留但需验证 |
+| Belden 未披露 AI 数据中心垂直收入、客户金额或 backlog | 收入基数、可信度 | 限制 AI 相关收入进入基准的比例 | 限制高毛利叙事 | 不能证明持续大单复制 | 极度乐观下移为乐观上限 |
+| RUCKUS 正式收购协议、预计 H2 2026 close、60%+ gross margin、20%+ EBITDA margin | 收入基数、利润率、公司汇总 | 交割后可显著提高报告收入 | 明确改善 gross/EBITDA margin | 债务融资、监管和整合影响 FCF | 并表补充保留；交易前基准排除 |
+| RUCKUS 杠杆、渠道与监管风险 | 公司现金流、执行可信度 | 若延期，NTM 报告收入少 `$250-650M` | 利息和整合费用压净利润 | 管理层需优先降债，暂停回购/M&A | 悲观保留；不重复压低产品需求 |
+| 行业调研显示 AI campus 高密光纤、fiber management、灰空间控制网络需求强 | 需求 | 支持 Smart Buildings/Automation 乐观需求 | 高密预端接和解决方案 mix 有利润改善潜力 | 项目周期、客户 AVL 和 EPC 决定收入确认 | 乐观保留 |
+| 普通线缆、宽带、铜价和关税 | 产品利润、公司利润 | 不一定压需求，但压收入质量 | 毛利率和 pass-through 风险 | 营运资本和项目价格传导压力 | 在利润层处理一次 |
+| Horizon / Physical AI 产品叙事 | 远期期权 | 不能形成可确认 NTM 收入 | 可能高毛利但缺少证明 | 需要客户、价格、交付和 RPO | 移入附录/仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 交易前收入 `$2.75-2.85B`，利润率低于当前结构，RUCKUS 延迟或低贡献 | 公司仍有 Q1 正增长和 Q2 强指引，Automation 利润池稳定 | 若订单继续降速、项目延期、铜价/关税无法传导，则悲观成立 | 保留 | 悲观下沿，但不是主情景 | 中 | RUCKUS 交割延迟只在公司汇总/现金流处理，不再重复压低 Automation 和 Smart Buildings 需求 |
+| 基准 | 交易前收入 `$2.92-3.05B`，Adjusted EBITDA margin 约 `17%`，RUCKUS 只作并表补充 | 2025 收入 `$2.715B`、2026Q1 `+11%`、organic `+7%`、Q2 指引 `$735-750M`、Automation margin `21.0%` | Q1 orders `+4%`，没有 backlog；AI DC 垂直收入未披露；RUCKUS 未交割 | 保留 | 主情景 | 中高 | 铜价/关税只影响利润率，不再重复下调需求和收入基数 |
+| 乐观 | 交易前收入 `$3.08-3.22B`，若 RUCKUS 顺利并表则报告口径 `$3.45-3.70B` | Smart Buildings double-digit、AI 结构化布线需求强、Automation IT/OT/灰空间有公司特定产品，RUCKUS 高毛利 | 需订单再加速和客户/项目证据；RUCKUS 交割日期不确定 | 保留 | 乐观情景 | 中 | AI 数据中心需求强只在 Smart Buildings/Automation 对应层级上修，不把 Broadband 全部重估为 AI |
+| 极度乐观 | 交易前 `$3.30-3.50B`，并表后 `$3.85-4.10B`，利润率大幅扩张 | 若 AI 白空间、灰空间、RUCKUS、解决方案 mix 和执行同时突破，存在上限路径 | 任一核心环节缺证据：未披露 AI DC backlog、RUCKUS 未交割、竞争强、订单仅 `+4%` | 下移 | 乐观上限；Horizon/Physical AI 移入附录 | 低 | 不因行业 TAM 大就把所有好事相加；远期期权不进入 NTM 主表 |
+
+可信度结论：基准情景主要由 A 级收入表、分部收入、Q1 财报和 Q2 指引支撑，可信度中高。乐观情景有公司特定产品与行业需求支持，但仍缺少 Belden 披露的 AI 数据中心订单金额，可信度中。极度乐观依赖多个未验证环节同时成立，校准后只能作为上限和后续跟踪。
+
+## 8. 结论
+
+- 最可能情景：交易前基准偏乐观下沿，即 NTM 收入 `$2.92-3.05B`、调整后 EBITDA `$495-530M`，核心是 Automation 稳定、Smart Buildings 数据中心/企业建筑维持双位数附近增长、Broadband 中个位数改善。若 RUCKUS 在 2026H2 交割，报告口径会出现并表增量，但这应作为并购补充而不是交易前有机增长。
+- NTM 收入结论：Belden 的 NTM 增长不是行业 AI TAM 直接传导，而是通过三条可确认路径传导：第一，Automation 工业网络/OT 网络把冷却、电力、设施控制和工业数字化需求转成高利润收入；第二，Smart Buildings 把 AI-ready 数据中心和企业楼宇高密结构化布线转成白空间连接收入；第三，Broadband 提供宽带/外部光纤稳定增长。RUCKUS 只有完成交割后才进入 Belden 可确认收入。
+- 利润/现金流结论：交易前利润质量优于普通线缆公司，因 Automation segment EBITDA margin `21.0%`、解决方案 mix 提升和 Q1 EBITDA margin `17.0%`。但 Smart Buildings/宽带拆分利润率不透明，普通线缆、铜价和项目价格传导会稀释增长质量。RUCKUS 有高毛利改善潜力，但债务、利息、整合和降杠杆会压制可自由分配现金。
+- 主要传导瓶颈：Belden 能参与 AI 数据中心和 IT/OT 需求，不等于能在 NTM 收入表确认收入。关键瓶颈是订单和客户金额披露不足、客户 AVL/项目验收、EPC/SI 路径、交割日期、普通线缆 pass-through 对利润率的稀释。
+- 乐观情景成立条件：2026Q2/Q3 指引兑现后，orders YoY 重新加速到高个位数或更高；Smart Buildings 继续 double-digit organic；Automation margin 保持 20%+；Belden 披露可复制的数据中心 gray-space 或结构化连接订单；RUCKUS H2 交割且渠道稳定。
+- 极度乐观情景成立条件：AI campus 白空间结构化光铜连接、灰空间工业网络和 RUCKUS 企业/工业无线同时成为可重复大单；Belden 拥有客户指定或半指定 BOM；高毛利产品 mix 明显提升；交割和整合无延误；净杠杆按公司计划快速下降。
+- 悲观情景触发条件：连续两个季度 orders 转负或 book-to-bill 低于 1；Smart Buildings organic 从双位数降至低个位数；Automation margin 低于 20%；RUCKUS 延迟到 2027 或渠道流失；铜价/关税/项目固定价导致收入增长但毛利率下滑；营运资本吸收大幅压低 FCF。
+- 后续跟踪数据：Q2/Q3 2026 收入和订单、产品类别 organic growth、Smart Buildings 数据中心订单金额、Automation data center gray-space 案例、solutions wins 占收入比例、adjusted gross margin、segment/产品 mix、RUCKUS 审批和 close date、RUCKUS 渠道留存、净杠杆和 FCF conversion。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新已核对经营数据为 2026Q1，截至 2026-03-29，发布日期 2026-04-30；Q2 2026 指引同日发布。RUCKUS 交易材料日期为 2026-04-30，预计 2026H2 close。行业资料主要为项目内 2026-06-10 至 2026-06-11 报告。
+- 主要收入、订单、指引和利润率来源：
+  - Belden 2026Q1 earnings release：2026Q1 revenue `$696M`、organic `+7%`、adjusted EBITDA `$118M`、margin `17.0%`、RUCKUS 交易公告。https://investor.belden.com/news/news-details/2026/Belden-Reports-First-Quarter-2026-Results/default.aspx
+  - Belden 2026Q1 earnings presentation：Q1 orders `+4%`、Automation `$387M`、Smart Buildings `$154M`、Broadband `$155M`、Q2 2026 revenue guidance `$735-750M`，且 excludes RUCKUS。https://s204.q4cdn.com/887061772/files/doc_financials/2026/q1/Belden-Q1-2026-Earnings-Presentation.pdf
+  - Belden 2025 Form 10-K / Annual Report：2025 revenue `$2.715B`、Automation segment revenue `$1.496B`、Automation EBITDA margin `21.0%`、Smart Infrastructure segment revenue `$1.219B`、segment EBITDA margin `12.1%`、operating cash flow `$354.9M`。https://www.sec.gov/Archives/edgar/data/913142/000091314226000009/bdc-20251231.htm
+  - Belden RUCKUS acquisition release：purchase price approximately `$1.85B`、expected close in second half of 2026、60%+ gross margin、20%+ EBITDA margin、deleveraging path。https://investor.belden.com/news/news-details/2026/Belden-to-Acquire-RUCKUS-Networks-from-Vistance-Networks-Accelerating-its-Transformation-into-a-Full-Stack-Networking-Solutions-Provider/default.aspx
+  - Belden RUCKUS transaction presentation：RUCKUS 2025 revenue `$687M`、combined pro forma 2025 revenue `$3.4B`、net leverage path 2026 `~3.6x`、2027 `~2.9x`、2029 `~1.5x`。https://s204.q4cdn.com/887061772/files/doc_financials/2026/q1/Belden-Transaction-Announcement-Presentation.pdf
+  - Belden data center solutions product page：data center fiber/copper connectivity, automation solutions, facilities management systems, rack power/cable management, Hirschmann/ProSoft/Horizon positioning。https://www.belden.com/solutions/industries/data-centers
+  - Belden DCX product page：DCX high-density fiber system positioning。https://www.belden.com/products/dcx-optical-fiber-distribution-frame
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - 交易前 NTM 主表不使用 FY2027 全年或长期 run-rate 替代；Q2 2026 指引只用于校准近端 run-rate。
+  - RUCKUS 年化 `$720-760M` 或更高只是交割后补充口径；若交割晚于 2026H2，则 NTM 并表贡献下移。
+  - Horizon、Physical AI、工业边缘 AI、CPO/1.6T 高速结构化生态只作远期期权，除非 Belden 披露订单、客户、交付和收入确认时间表。
+- 主要项目内来源：
+  - `公司调研/AI网络_光互联_连接器/BDC_Belden_公司调研_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_导管、桥架与线缆管理_2026-06-10.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`
+- 本报告未使用内容：
+  - 未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、模型比较、公司排序或市场价格/估值倍数。
+  - 未把行业 TAM、客户总预算、AI 数据中心总 CapEx、RUCKUS 全年收入或远期平台叙事直接等同为 Belden 交易前 NTM 可确认收入。

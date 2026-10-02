@@ -1,0 +1,336 @@
+# 公司：TER Teradyne 公司调研（2026-06-11）
+
+## 0. 结论摘要
+
+Teradyne（NASDAQ: TER）是全球核心自动测试设备（ATE）公司之一，传统投资人把它看成“半导体测试周期股 + 协作机器人可选项”；2025Q4-2026Q1之后，市场重新把它定价为“AI芯片、HBM、先进封装、数据中心互联测试瓶颈”的上游设备公司。TER并不向数据中心销售GPU、服务器、光模块或电力设备，它的AI敞口来自AI芯片和AI系统从晶圆到整机的生产测试：SoC/GPU/ASIC wafer sort、HBM/memory test、known-good-die（KGD）筛选、2.5D/3D封装测试、高功率SLT/burn-in、224G/1.6T高速互联和硅光/CPO测试。
+
+截至2026-06-11，TER股价约381.40美元，市值约601亿美元，TTM P/E约70.8x，第三方forward P/E约49.3x，按当前市值/TTM收入自算P/S约15.9x。估值已经把AI测试设备的强周期上行提前反映进去。公司财务很健康：2026Q1无有息债务、现金与有价证券约3.94亿美元、流动资产21.73亿美元、流动负债10.12亿美元、股东权益31.44亿美元；但订单和收入集中在少数大客户/大项目，股价对AI资本开支、客户拉货节奏和Advantest竞争非常敏感。
+
+最关键的事实是2026Q1：收入12.825亿美元，同比+87%，其中Semiconductor Test收入11.108亿美元，同比+105%，公司称约70%收入与AI相关，约8.98亿美元。Q2指引为11.50-12.50亿美元，虽低于Q1峰值但仍远高于2025年大部分季度。RPO/剩余履约义务在2026Q1为15.678亿美元，约88%预计12个月内确认，是比backlog更可用的订单代理指标；公司没有标准化披露bookings、lead time、取消率。
+
+## 1. 公司整体业务、产业链位置和近三年变化
+
+### 1.1 业务结构
+
+Teradyne设计、制造和销售自动测试设备与高级机器人系统。正式分部为：
+
+| 分部 | 2026Q1收入 | 占总收入 | 2026Q1同比 | 主要内容 | AI相关性 |
+|---|---:|---:|---:|---|---|
+| Semiconductor Test | 11.108亿美元 | 86.6% | +104.8% | SoC测试、Memory测试、system test/IST | 核心：AI GPU/ASIC、networking ASIC、HBM、KGD、chiplet test |
+| Product Test | 0.804亿美元 | 6.3% | +8.4% | board test、wireless、defense/aerospace、复杂电子产品测试 | 中等：AI服务器板级测试、高速I/O、数据中心设备测试 |
+| Robotics | 0.913亿美元 | 7.1% | +32.3% | Universal Robots协作机器人、MiR移动机器人 | 低到中等：制造自动化，不是AI数据中心核心瓶颈 |
+
+Semiconductor Test内部，2026Q1产品口径为：
+
+| 产品线 | 2026Q1收入 | 占总收入 | 同比 | 重点解读 |
+|---|---:|---:|---:|---|
+| SoC | 8.818亿美元 | 68.8% | 约+117% | AI GPU、custom ASIC、networking、advanced compute最核心 |
+| Memory | 2.025亿美元 | 15.8% | 约+85% | HBM/DRAM/NAND测试；HBM3E/HBM4带来测试时间和设备强度提升 |
+| IST/System Test | 0.265亿美元 | 2.1% | 约-1% | 系统级/高功率测试口径较窄，实际SLT机会可能分散在SoC/Product Test |
+
+### 1.2 投资人心中的公司形象
+
+过去TER主要被看成半导体测试设备周期股：手机SoC、计算芯片、存储和工业电子需求上行时弹性大，下行时收入/利润快速回落。2024以前，Robotics曾被市场赋予“第二增长曲线”估值，但工业自动化周期和协作机器人竞争使该业务持续亏损，估值贡献下降。
+
+2025Q4以后，TER的叙事变成AI测试设备：AI芯片更大、更热、I/O更多、HBM堆叠更多、先进封装更复杂，测试从传统良率检查变成交付能力的一部分。高价值2.5D/3D封装中，一个坏die会毁掉整颗高价封装，因而KGD、probe、wafer sort、burn-in、SLT、high-speed I/O test的战略价值上升。TER的投资人现在更关注AI测试收入占比、Semiconductor Test毛利/利润率、RPO能否转成收入，以及与Advantest在AI SoC/HBM测试上的份额变化。
+
+### 1.3 最近三年重大业务变化
+
+| 时间 | 事项 | 对业务的意义 |
+|---|---|---|
+| 2024 | 出售Device Interface Solutions（DIS）给Technoprobe，交易约8500万美元；同时以约4.831亿欧元/5.241亿美元购买Technoprobe约10%股权并获得董事席位 | TER从探针卡/接口硬件的直接经营转为生态合作和财务权益，降低垂直整合复杂度，但也更依赖Technoprobe/FormFactor等接口伙伴 |
+| 2024-2025 | Robotics重组和费用调整 | 试图把Universal Robots/MiR从亏损拖累转为可选复苏；目前仍不是AI基建主线 |
+| 2025Q1 | 建立Product Test分部，把生产板测试、防务航空、无线测试等重组为独立分部 | 把AI服务器板级、高速互联、复杂电子系统测试放到更清晰的披露框架下 |
+| 2025H2 | AI相关需求成为收入主驱动，2025Q4公司称AI相关接近60%收入 | 估值从传统周期股切换到AI设备稀缺资产 |
+| 2026Q1 | 收入12.825亿美元、Semiconductor Test首次超过11亿美元，公司称约70%收入与AI相关 | AI测试设备从题材变成利润表事实 |
+| 2026H1 | TestInsight收购、MultiLane JV、Photon 100、UltraFLEXplus+Tokyo Electron Prexa SDP集成方案、Omnyx、UltraPHY 224G等发布 | 产品线从芯片ATE延伸到仿真/DFT、KGD、硅光/CPO、板级和高速I/O测试 |
+
+### 1.4 产业链位置
+
+TER位于AI硬件产业链的制造质量控制和产能释放环节：
+
+Hyperscaler AI capex -> NVIDIA/AMD/Broadcom/Google/AWS/Meta/Microsoft等AI芯片项目 -> 台积电/三星/英特尔代工与先进封装 -> SK hynix/三星/美光HBM -> OSAT/系统厂 -> 测试计划、ATE平台、probe/prober、handler、load board/socket、SLT/burn-in、光电测试 -> TER确认设备、软件、服务收入。
+
+它不是AI服务器BOM里的硬件，而是制造端capex。AI GPU、custom ASIC和HBM越贵，测试漏检的损失越大，客户越愿意买更高性能、更高并行度、更早阶段筛选的测试设备。
+
+## 2. 估值、收入增速、利润率和资产负债表
+
+### 2.1 最新行情和估值快照
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | 381.40美元 | 2026-06-11美股盘中/收盘附近行情快照 | Nasdaq: TER |
+| 市值 | 约601亿美元 | 2026-06-11行情快照 | 按实时行情源；第三方页面可能因延迟显示约544亿美元 |
+| TTM P/E | 约70.8x | 2026-06-11行情快照 | TTM EPS约5.39美元 |
+| Forward P/E | 约49.3x | 2026-06-11 Yahoo Finance延迟估值页 | 第三方一致预期，不是公司指引 |
+| P/S | 约15.9x | 按601亿美元市值 / TTM收入37.87亿美元自算 | Yahoo延迟页面约14.6x |
+| 2026Q1收入增速 | +87.0% YoY | 2026Q1财报 | 最新单季收入12.825亿美元 |
+| TTM收入增速 | 约+30.3% YoY | Q2 2025-Q1 2026 vs Q2 2024-Q1 2025 | TTM收入约37.87亿美元 |
+| 2026Q1毛利率 | 60.9% | 2026Q1财报 | 创高位，受Semiconductor Test mix拉动 |
+| 2026Q1净利率 | 31.1% | 2026Q1财报 | 净利润3.989亿美元 |
+| TTM毛利率 | 约58.7% | Q2 2025-Q1 2026 | 自算 |
+| TTM净利率 | 约22.6% | Q2 2025-Q1 2026 | 自算 |
+
+### 2.2 财务健康度
+
+| 资产负债表指标 | 2026-03-29 | 判断 |
+|---|---:|---|
+| 现金及等价物 | 2.419亿美元 | 绝对现金不高，但公司无债且现金流强 |
+| 当前/长期有价证券 | 1.520亿美元 | 现金+有价证券合计约3.940亿美元 |
+| 流动资产 | 21.73亿美元 | 对流动负债覆盖约2.15x |
+| 总资产 | 44.34亿美元 | 资产结构轻，设备公司属性明显 |
+| 流动负债 | 10.12亿美元 | 包含递延收入/客户预付款1.707亿美元 |
+| 总负债 | 12.90亿美元 | 负债/资产约29.1% |
+| 股东权益 | 31.44亿美元 | 权益/资产约70.9% |
+| 有息债务 | 0 | 短债已偿还，无杠杆压力 |
+| 递延收入和客户预付款 | 2.555亿美元 | 对未来服务/交付有一定可见度 |
+| 2026Q1经营现金流 | 2.651亿美元 | 高利润已转化为现金流 |
+
+结论：资产负债表健康，短期偿债风险很低。主要财务风险不在债务，而在收入集中度、设备订单周期、客户拉货节奏和高估值。2025年五大直接客户占合并收入44%，另有两个“specifying customers”分别驱动约12%和10%收入；这说明TER对少数AI/半导体大客户的项目周期高度敏感。
+
+## 3. 最近五个财报季度
+
+### 3.1 财务与业务主线
+
+| 财报季度 | 总收入 | YoY | GAAP/Non-GAAP EPS | 毛利率 | 净利率 | 分部收入 | 分部利润率/亏损 | AI数据中心相关收入占比 |
+|---|---:|---:|---:|---:|---:|---|---|---|
+| 2026Q1 | 12.825亿美元 | +87.0% | 2.53 / 2.56美元 | 60.9% | 31.1% | Semi 11.108亿；Product Test 0.804亿；Robotics 0.913亿 | Semi税前42.1%；Product Test 5.8%；Robotics -1.1% | 公司披露约70%，约8.98亿美元；口径覆盖compute、memory、networking、部分Product Test/Robotics |
+| 2025Q4 | 10.833亿美元 | +43.9% | 1.63 / 1.80美元 | 约57.2% | 约23.7% | Semi 8.835亿；Product Test 1.105亿；Robotics 0.894亿 | Semi约33.8%；Product Test约18.6%；Robotics约-29.2% | 公司披露接近60%，约6.5亿美元；AI compute和memory驱动 |
+| 2025Q3 | 7.692亿美元 | +4.3% | 0.75 / 0.90美元 | 58.4% | 15.5% | Semi 6.059亿；Product Test 0.883亿；Robotics 0.751亿 | Semi 24.9%；Product Test 18.0%；Robotics -23.4% | 未披露；模型估计40-50%，约3.1-3.8亿美元，依据compute/AI与memory mix |
+| 2025Q2 | 6.518亿美元 | -10.7% | 0.49 / 0.57美元 | 57.2% | 12.0% | Semi 4.919亿；Product Test 0.851亿；Robotics 0.749亿 | Semi 19.5%；Product Test 18.3%；Robotics -24.7% | 未披露；模型估计25-35%，约1.6-2.3亿美元，memory偏弱但AI compute部分抵消 |
+| 2025Q1 | 6.857亿美元 | +14.3% | 0.61 / 0.75美元 | 60.6% | 14.4% | Semi 5.425亿；Product Test 0.742亿；Robotics 0.690亿 | Semi 28.7%；Product Test 11.6%；Robotics -53.9% | 未披露；模型估计20-30%，约1.4-2.1亿美元；当季主因更偏mobility和半导体测试复苏 |
+
+### 3.2 产品线、订单代理和交期
+
+| 财报季度 | SoC收入 | Memory收入 | IST/System Test收入 | RPO/订单代理 | 交期、取消率和业务信号 |
+|---|---:|---:|---:|---|---|
+| 2026Q1 | 8.818亿美元 | 2.025亿美元 | 0.265亿美元 | RPO 15.678亿美元，约88%预计12个月内确认；递延收入/客户预付款2.555亿美元 | 公司不披露bookings/backlog/lead time/cancel rate；Q2指引11.50-12.50亿美元显示拉货仍强；AI高端测试设备、KGD和HBM测试更紧 |
+| 2025Q4 | 6.465亿美元 | 2.065亿美元 | 0.305亿美元 | 10-K只披露原始期限>1年的RPO 1.008亿美元；递延收入/客户预付款2.040亿美元，不能与10-Q全口径RPO直接比较 | Q1 2026指引曾大幅高于市场预期，说明2025Q4订单/客户排产快速转强 |
+| 2025Q3 | 4.402亿美元 | 1.281亿美元 | 0.376亿美元 | RPO 17.444亿美元，约89%预计12个月内确认；递延收入/客户预付款1.769亿美元 | RPO峰值领先2025Q4-2026Q1收入放量；AI compute、networking和memory同步改善 |
+| 2025Q2 | 3.966亿美元 | 0.609亿美元 | 0.343亿美元 | RPO 9.308亿美元，约86.4%预计12个月内确认；递延收入/客户预付款1.644亿美元 | memory偏弱，Product Test由defense/aerospace、board test、wireless支撑 |
+| 2025Q1 | 4.064亿美元 | 1.094亿美元 | 0.267亿美元 | RPO 10.030亿美元，约87.5%预计12个月内确认；递延收入/客户预付款1.593亿美元 | 半导体测试复苏但AI尚未全面放量；Robotics仍深度亏损 |
+
+解读：2025Q3 RPO 17.44亿美元随后对应2025Q4和2026Q1收入急升，说明客户对未来12个月测试设备交付有较强可见度。2026Q1 RPO回落至15.68亿美元但仍高于2025Q2/Q1，且Q2收入指引中点约12.0亿美元，显示需求没有突然断档。TER没有公布取消率，年报也提醒backlog/订单并非未来收入保证，客户可延迟或取消部分订单，可能受罚则约束。
+
+## 4. 2026最新指引、收入占比和重点产品
+
+### 4.1 2026Q2指引和业务重心
+
+公司在2026Q1财报中给出的2026Q2指引为：
+
+| 指标 | 2026Q2指引 | 含义 |
+|---|---:|---|
+| 收入 | 11.50-12.50亿美元 | 中点12.0亿美元，低于Q1峰值但同比仍强 |
+| GAAP EPS | 1.83-2.12美元 | 高利润率延续 |
+| Non-GAAP EPS | 1.86-2.15美元 | 核心盈利仍明显高于2025年季度水平 |
+
+2026Q1收入占比显示公司几乎已被Semiconductor Test主导：SoC 68.8%、Memory 15.8%、IST 2.1%、Product Test 6.3%、Robotics 7.1%。最突出的业务是AI SoC/GPU/ASIC测试，其次是HBM/Memory测试；Product Test里的板级/高速互联/硅光测试是小但有潜力的增量；Robotics收入恢复但不是AI基建瓶颈。
+
+### 4.2 重点产品和型号
+
+| 业务/产品 | 对应产品/型号 | 目标应用 | 当前判断 |
+|---|---|---|---|
+| AI SoC/GPU/ASIC ATE | UltraFLEXplus、UltraPHY 224G、TestInsight软件、ETS-800 D20部分配置 | AI GPU、custom ASIC、networking ASIC、224G SerDes、chiplet test | 最大收入池。Q1 SoC收入8.818亿美元，AI compute/networking是核心驱动 |
+| KGD/先进封装测试 | UltraFLEXplus + Tokyo Electron Prexa SDP集成测试方案 | 2.5D/3D封装、singulated die/KGD筛选、AI/data center devices | 2026-06在SWTest推出，解决高价值封装坏die风险；处于快速导入/资格验证期 |
+| HBM/Memory测试 | Magnum 7H HBM test system、memory test平台 | HBM3E/HBM4、DRAM/NAND final test和wafer test | Q1 Memory收入2.025亿美元；HBM测试时间和并行度需求提高，供需偏紧 |
+| 高功率SLT/burn-in | Titan/Titan HP相关SLT和高功率系统级测试方案 | 高功率GPU/ASIC、AI data center devices、rack-scale reliability | 公共披露分部较粗，收入可能分散在SoC/Product Test；但技术紧急性高 |
+| 硅光/CPO/高速光电测试 | Photon 100、UltraFLEXplus光电仪表、MultiLane JV | 1.6T coherent transceiver、硅光、CPO/NPO、数据中心高速I/O | 小业务但潜力大；2026 OFC发布后仍偏早期量产验证 |
+| AI服务器板级/系统测试 | Omnyx board test system、Product Test平台 | AI服务器主板、复杂PCB、defense/aerospace高可靠电子 | Product Test收入0.804亿美元，AI相关占比未知；利润率波动大 |
+
+### 4.3 可以跳过或低优先级的业务
+
+本报告不深挖以下业务，因为它们不是TER当前AI基建收入和估值的主要驱动：
+
+- Universal Robots协作机器人和MiR移动机器人：2026Q1同比恢复，但仍接近盈亏平衡，AI数据中心直接收入有限。
+- 传统消费电子/手机测试：仍可能贡献SoC测试收入，但增速和估值弹性低于AI GPU/custom ASIC。
+- 传统无线测试和普通PCB测试：Product Test中有稳定现金流价值，但不是最紧缺的AI测试瓶颈。
+- 非AI工业自动化、仓储自动化：与AI芯片测试主线弱相关。
+
+需要注意的小业务：Photon 100/硅光测试、MultiLane高速I/O JV、TestInsight仿真/测试软件、UltraFLEXplus+TEL KGD方案。这些当前收入占比可能小，但如果CPO、1.6T/3.2T互联和chiplet/KGD在2027前后放量，收入弹性可能超过市场早期模型。
+
+## 5. 当前关键业务：收入贡献、增速、重要性、紧缺度和定价权
+
+| 关键业务 | 当前收入贡献 | 增速 | AI基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---:|---:|---|---|---|---|
+| AI SoC/GPU/ASIC测试 | 2026Q1 SoC 8.818亿美元；其中AI compute/networking估计占多数 | SoC同比约+117% | 极高：决定GPU/ASIC良率、binning、出货和系统可靠性 | 极高：GB300/B300、Rubin、MI350/MI400、TPU/Trainium/custom ASIC项目都需要产能 | 高：Q1收入和RPO显示设备交付紧；客户对测试产能容错低 | 中高：TER和Advantest双寡头；客户切换成本高但不绝对垄断 |
+| HBM/Memory测试 | 2026Q1 Memory 2.025亿美元 | 同比约+85% | 极高：HBM是AI加速卡供给瓶颈之一，测试时间长、良率敏感 | 极高：HBM3E向HBM4过渡，容量/带宽/堆叠提升 | 高：HBM test capacity和probe/test cell容易成为短板 | 中：TER有Magnum 7H等产品，但Advantest在memory/HBM同样强 |
+| KGD/先进封装测试 | 未单独披露；包含在SoC/Memory/IST中，当前估计数千万到低数亿美元年化 | 新产品导入，高增长但基数不透明 | 极高：2.5D/3D封装前筛坏die可以避免高价值封装报废 | 高：AI封装价值量快速上升，KGD必须前移 | 中高：TEL Prexa等prober集成后测试单元供给和资格验证成为限制 | 中高：生态协同强，平台锁定强，但probe/prober/handler多方分工 |
+| 高功率SLT/burn-in | IST 2026Q1仅0.265亿美元，但真实机会可能分散在SoC/Product Test | 当前披露增速不明显，AI高功率子项可能高增长 | 高：高功率GPU/ASIC在真实负载下的热、电源、可靠性风险高 | 高：rack-scale可靠性和RMA成本上升 | 中高：高功率并行测试、散热、handler能力约束明显 | 中：Cohu、Chroma、Aehr等有替代方案，TER需靠平台和客户程序锁定 |
+| 高速I/O、硅光、CPO测试 | Product Test 2026Q1 0.804亿美元总额；Photon/MultiLane部分未披露，估计仍小 | 早期高增长 | 高：AI网络从800G到1.6T/3.2T，CPO/SiPh需要量产测试 | 中高：2026更多是验证和初期量产，2027可能加速 | 中：技术难、客户验证慢，尚未到全面缺货阶段 | 中：Keysight、Anritsu、Viavi、Chroma、MultiLane等竞争强 |
+| Product Test板级/Omnyx | 2026Q1 0.804亿美元 | +8.4% | 中：AI服务器主板和复杂PCB测试重要但不是最上游瓶颈 | 中 | 中 | 中低：竞争者和客户自研方案较多 |
+
+## 6. 一年后关键业务三情景预测
+
+以下预测为模型口径，不是公司指引。公司只给出2026Q2收入/EPS区间，没有给出全年收入、AI收入、产品线收入或backlog转化率指引。
+
+### 6.1 公司总体收入
+
+| 情景 | 未来12个月收入（2026Q2-2027Q1） | vs 最近TTM 37.87亿美元 | Semiconductor Test | AI相关收入 | 主要假设 |
+|---|---:|---:|---:|---:|---|
+| 基准 | 51-54亿美元 | +35%至+43% | 43-46亿美元 | 32-36亿美元 | Q2按公司指引，H2维持高位但Q1峰值略回落；AI SoC/HBM强、传统业务平稳 |
+| 乐观 | 58-63亿美元 | +53%至+66% | 50-54亿美元 | 42-47亿美元 | AI GPU/custom ASIC/HBM项目继续抢测试产能，RPO高比例转收入 |
+| 极度乐观 | 66-74亿美元 | +74%至+95% | 58-66亿美元 | 51-60亿美元 | 多个客户同时扩ATE/KGD/SLT/optical test，TER供给和安装能力成为主要限制 |
+
+### 6.2 关键业务收入和战略指标
+
+| 关键业务 | 基准：一年后收入贡献/增速 | 乐观：一年后收入贡献/增速 | 极度乐观：一年后收入贡献/增速 | AI重要性 | 紧急性 | 供需紧张 | 定价权 |
+|---|---|---|---|---|---|---|---|
+| AI SoC/GPU/ASIC测试 | 36-40亿美元，较当前SoC年化约持平到+15%；AI占比提高 | 44-50亿美元，+25-40% | 52-60亿美元，+50%+ | 极高 | 极高 | 高 | 中高 |
+| HBM/Memory测试 | 8-10亿美元，接近当前Q1年化 | 11-14亿美元，+35-70% | 15-19亿美元，接近翻倍 | 极高 | 极高 | 高 | 中 |
+| KGD/先进封装测试 | 2-4亿美元，仍嵌在SoC/Memory | 4-7亿美元 | 7-12亿美元 | 极高 | 高 | 中高 | 中高 |
+| 高功率SLT/burn-in | 1.5-2.5亿美元 | 2.5-4.0亿美元 | 4.5-7.0亿美元 | 高 | 高 | 中高 | 中 |
+| 硅光/CPO/高速I/O测试 | 1.2-2.0亿美元AI相关收入 | 2.0-3.5亿美元 | 3.5-5.5亿美元 | 高但偏早期 | 中高 | 中 | 中 |
+| Product Test板级/Omnyx | Product Test总额3.8-4.5亿美元 | 4.5-5.5亿美元 | 5.5-7.0亿美元 | 中 | 中 | 中 | 中低 |
+
+## 7. BOM、每MW/每rack/每GPU/每optical port内容量和价格传导
+
+### 7.1 口径说明
+
+TER不是服务器部件供应商，因此“每MW/每rack/每GPU内容量”不是机柜内物理BOM，而是制造测试设备capex被摊到每个AI加速器、每个机柜或每MW算力上的测试内容量。下面使用设备价格、折旧周期、吞吐量、测试时间、良率和重复测试插入次数反推，属于模型估算，不是TER披露。
+
+### 7.2 测试内容量估算
+
+| 项目 | BOM/测试链条 | 每GPU/ASIC测试内容量 | 每rack测试内容量 | 每MW测试内容量 | 价格传导 |
+|---|---|---:|---:|---:|---|
+| AI SoC/GPU/ASIC wafer sort/final test | UltraFLEXplus/SoC ATE、probe/prober、load board、socket、handler、test program、field support | 基准50-250美元；紧缺/复杂芯片250-600美元 | 以72 GPU rack计约3,600-43,200美元 | 以700-1,200 GPU/MW计约3.5万-72万美元 | GPU/ASIC ASP上升和test time拉长 -> 客户接受更高ATE ASP/更多tester配置 |
+| HBM/Memory test | Magnum 7H、memory ATE、probe card、thermal control、final test | 每HBM stack约10-40美元；HBM4/16H紧缺时40-100美元；每GPU 8-12 stacks约80-1,200美元 | 约5,800-86,400美元 | 约5.6万-144万美元 | HBM容量/堆叠/带宽提升 -> test insertions和并行测试需求上升 |
+| KGD/先进封装筛选 | UltraFLEXplus + TEL Prexa SDP、singulated die prober、KGD flow、DFT/SLM软件 | 每die约20-150美元；高价值chiplet可更高 | 视每GPU chiplet数约3,000-50,000美元 | 约3万-80万美元 | 封装价值越高，坏die报废损失越大 -> 前置筛选预算提升 |
+| 高功率SLT/burn-in | Titan/Titan HP、thermal chamber、power delivery、system board、burn-in rack、handler | 基准50-300美元；长时间burn-in/高功率300-800美元；极端800-1,500美元 | 约3,600-108,000美元 | 约3.5万-180万美元 | RMA/现场失效成本上升 -> 客户愿意购买更多SLT产能 |
+| 硅光/CPO/1.6T optical test | Photon 100、光电仪表、laser/PD coupling、wafer-level optical probe、MultiLane高速I/O测试 | 每1.6T optical port约20-80美元；早期CPO/低良率80-400美元 | 取决于每rack端口数；每1,000 ports约2万-40万美元 | 与网络拓扑强相关，早期可显著高于传统光模块测试 | 800G/1.6T/3.2T升级 -> optical/electrical test complexity提升 |
+
+### 7.3 当前产能能力和采用程度
+
+| 关键业务 | 当前收入/产能能力（美元计） | 供应链采用程度 | 认证/资格验证阶段 |
+|---|---:|---|---|
+| AI SoC/GPU/ASIC ATE | 2026Q1 SoC年化约35.3亿美元；AI相关部分估计20-30亿美元年化 | 高：已进入主流AI compute/networking客户生产测试链 | 客户测试程序correlation、良率相关性、量产release通常6-18个月；平台替换成本高 |
+| HBM/Memory test | 2026Q1 Memory年化约8.1亿美元 | 高：HBM3E/HBM4需求驱动，memory客户和OSAT扩测 | HBM代际切换需要新测试程序、probe/handler/thermal qualification |
+| KGD/先进封装 | 未单列；当前估计低数亿美元年化以内 | 中高：2.5D/3D封装和KGD需求明确，UltraFLEXplus+TEL方案刚推出 | 2026-06 SWTest展示/导入；需通过客户die/package correlation和OSAT/foundry flow验证 |
+| 高功率SLT/burn-in | IST年化约1.1亿美元，但真实高功率机会可能更大 | 中：AI处理器需要系统级可靠性，但竞争者多 | 需通过功耗、散热、安全、故障覆盖率和客户RMA模型认证 |
+| 硅光/CPO/高速I/O | Product Test总年化约3.2亿美元；Photon/MultiLane仍小 | 低到中：1.6T/硅光/CPO进入早期量产验证 | OFC 2026后处于客户评估/早期生产测试导入；真正大规模可能偏2027 |
+
+## 8. 一年后产能、采用和认证三情景
+
+| 关键业务 | 基准：一年后产能/采用/认证 | 乐观：一年后产能/采用/认证 | 极度乐观：一年后产能/采用/认证 |
+|---|---|---|---|
+| AI SoC/GPU/ASIC ATE | 36-40亿美元收入能力；主流AI客户维持量产；新一代224G/448G测试进入更多项目 | 44-50亿美元；AI ASIC/GPU多客户扩产，TER测试程序和field support成为瓶颈 | 52-60亿美元；Rubin、MI400、custom ASIC同步拉货，客户接受更高ASP/更长交付 |
+| HBM/Memory test | 8-10亿美元；HBM3E稳定，HBM4 qualification进行 | 11-14亿美元；HBM4和更高堆叠带来测试时间膨胀 | 15-19亿美元；HBM供应链扩测超预期，memory ATE接近缺货 |
+| KGD/先进封装 | 2-4亿美元；TEL集成方案在少数客户导入 | 4-7亿美元；2.5D/3D封装客户把KGD筛选前移 | 7-12亿美元；KGD成为高价值AI封装默认流程，集成test cell复制加速 |
+| 高功率SLT/burn-in | 1.5-2.5亿美元；部分AI芯片客户增加SLT覆盖 | 2.5-4.0亿美元；rack-scale可靠性要求提升，burn-in时间拉长 | 4.5-7.0亿美元；现场失效率/热失控压力促使客户大幅采购高功率SLT |
+| 硅光/CPO/高速I/O | AI相关1.2-2.0亿美元；Photon 100完成若干客户验证 | 2.0-3.5亿美元；1.6T transceiver与CPO量产测试启动 | 3.5-5.5亿美元；CPO/NPO提前放量，光电测试成为AI网络交付瓶颈 |
+
+## 9. 订单积压、供给和未来一年增速预测
+
+TER没有披露标准化backlog、bookings、lead time或取消率。可用代理指标包括RPO、递延收入/客户预付款、收入指引、产品发布、客户/生态项目和行业测试设备景气度。
+
+### 9.1 订单和供给证据链
+
+| 证据 | 数值/事实 | 对未来12个月收入的含义 |
+|---|---|---|
+| 2026Q1 RPO | 15.678亿美元，88%预计12个月内确认 | 约13.8亿美元可在12个月内确认，支持Q2-Q4收入基座 |
+| 2025Q3 RPO | 17.444亿美元，89%预计12个月内确认 | 领先2025Q4和2026Q1收入放量，RPO具备一定解释力 |
+| 递延收入/客户预付款 | 2026Q1 2.555亿美元，高于2025Q1的1.593亿美元 | 客户预付款/未交付义务上升，说明订单质量较好 |
+| Q2 2026指引 | 11.50-12.50亿美元 | 即使环比回落，收入仍在历史高位 |
+| SEMI测试设备市场 | 行业预测2025测试设备约112亿美元，2026 +12%，2027 +7.1% | 行业总盘子增长，但TER当前增长显著跑赢行业，主要来自AI结构性份额 |
+| 产品/会议信号 | SWTest 2026 KGD方案、OFC 2026 Photon 100、IPC APEX Omnyx、MultiLane JV、TestInsight收购 | 公司正把AI测试从wafer/SoC扩展到封装、板级、光互联和软件 |
+
+### 9.2 未来一年业务增速情景
+
+| 情景 | 未来12个月公司收入增速 | Semiconductor Test增速 | 关键约束 | 取消/推迟风险 |
+|---|---:|---:|---|---|
+| 基准 | +35%至+43% | +40%至+50% | 供应链安装、客户验收、H2季节性回落 | 中：AI项目可能调整节奏，但RPO和Q2指引支撑较强 |
+| 乐观 | +53%至+66% | +60%至+75% | ATE交付、field application engineer、probe/handler配套 | 中低：客户抢占AI/HBM产能，取消率低 |
+| 极度乐观 | +74%至+95% | +85%至+110% | TER自身产能、供应商、客户site readiness、安装验收成为限制 | 低到中：若AI capex继续上修，客户更可能延迟非AI订单而非取消AI订单 |
+
+最合理的基准判断：未来一年TER总收入更可能落在50亿美元以上，远高于2025年31.90亿美元；但当前股价已经反映大部分乐观预期，真正超额收益需要看到Q3/Q4订单、AI ASIC/HBM测试份额、Photon/KGD/SLT小业务转成实质收入。
+
+## 10. 竞争格局、技术路线、替代风险和客户切换成本
+
+### 10.1 主要竞争对手
+
+| 领域 | 主要竞争对手 | TER地位 | 风险 |
+|---|---|---|---|
+| SoC/AI ASIC/GPU ATE | Advantest、部分Keysight/NI仪表方案、客户自研测试平台 | 双寡头之一，UltraFLEXplus在高端SoC强 | Advantest在高性能SoC和memory客户中同样强；客户倾向双供 |
+| Memory/HBM test | Advantest、部分Cohu/Chroma细分方案 | Magnum 7H等强化HBM敞口 | Advantest在memory/HBM测试份额和客户关系强，TER并非垄断 |
+| Probe card/device interface | FormFactor、Technoprobe、MPI等 | TER出售DIS后更多依赖伙伴；持有Technoprobe 10% | 接口硬件利润不完全留在TER；协同失败会影响整套方案 |
+| Wafer prober/handler | Tokyo Electron、Accretech、ASMPT等 | 通过TEL Prexa SDP集成KGD方案 | prober/handler瓶颈可能限制TER平台交付 |
+| SLT/burn-in | Cohu、Aehr、Chroma、in-house系统 | 有高功率SLT机会，但竞争分散 | 客户可能采用专用burn-in或自研系统，TER不一定吃到全部增量 |
+| 光电/高速I/O测试 | Keysight、Anritsu、Viavi、Chroma、MultiLane、客户自研 | Photon 100和MultiLane JV提升进入权 | CPO/硅光量产节奏不确定，仪表竞争强 |
+| Robotics | ABB、FANUC、Yaskawa、Kawasaki、Doosan等 | UR/MiR品牌强，但利润弱 | 工业自动化周期和价格竞争影响估值 |
+
+### 10.2 技术是否是未来主流
+
+AI测试强度提升是主流，不是短期噪音。原因包括：
+
+- AI GPU/ASIC die面积大、I/O多、功耗高，test time和pin/electrical/thermal复杂度上升。
+- HBM从HBM3E走向HBM4/更高堆叠，memory test和thermal control难度上升。
+- 2.5D/3D先进封装使KGD筛选更重要；坏die进入封装后的损失被放大。
+- 224G/448G SerDes、1.6T/3.2T光互联和CPO要求更复杂的电/光联合测试。
+- Rack-scale AI系统现场失效成本极高，SLT/burn-in/系统级可靠性测试预算增加。
+
+但TER具体产品不保证全部成为赢家。SoC/HBM ATE是最确定的主流；KGD和高功率SLT是中高确定性；Photon 100/CPO测试是高潜力但节奏不确定；Robotics与AI测试主线无关。
+
+### 10.3 客户替换成本
+
+TER客户替换ATE平台成本高，原因是测试程序、DFT、correlation、良率模型、site安装、工程师经验和量产认证都与平台绑定。高端AI芯片从开发到量产可能需要多轮test program调优，临时替换测试平台会带来良率/交期风险。通常切换不是“下个季度换供应商”，而是在下一代芯片项目重新分配份额。TER的溢价能力来自平台锁定和交付可靠性，但客户仍会推动TER与Advantest双供以控制价格和交期风险。
+
+### 10.4 主要风险
+
+| 风险 | 影响 |
+|---|---|
+| AI capex或GPU/ASIC项目延期 | RPO转收入放慢，股价高估值压缩 |
+| Advantest抢占AI SoC/HBM份额 | TER收入增速低于AI测试行业增速 |
+| HBM测试份额不及预期 | Memory收入从Q1高位回落 |
+| KGD/Photon/SLT小业务验证慢 | 市场给予的新产品期权无法及时转成收入 |
+| 客户集中度高 | 少数大客户排产变化导致季度波动 |
+| 估值过高 | 即使基本面好，forward P/E接近50x也要求持续超预期 |
+| Robotics继续亏损 | 拖累经营利润，但对AI主线影响有限 |
+
+## 11. 跟踪指标
+
+未来一个季度应重点跟踪：
+
+1. 2026Q2实际收入是否接近或超过12.50亿美元指引上限。
+2. Semiconductor Test收入是否继续高于10亿美元，分部税前利润率能否维持35%-40%+。
+3. 公司是否继续披露AI相关收入占比接近或高于70%。
+4. RPO是否维持15亿美元以上，递延收入/客户预付款是否继续上升。
+5. Memory收入是否维持2亿美元/季度附近，验证HBM测试是否持续。
+6. Photon 100、UltraFLEXplus+TEL、TestInsight、MultiLane JV是否有客户量产/订单信号。
+7. Advantest在HBM和AI SoC测试中的订单评论，作为TER份额压力的反向指标。
+8. SEMI测试设备市场和HBM供应链扩产节奏。
+
+## 12. 来源与口径
+
+### 12.1 项目内行业资料
+
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_商用AI加速芯片_2026-06-10.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+
+### 12.2 公司官方资料
+
+- Teradyne Q1 2026 results: https://investors.teradyne.com/news-events/press-releases/detail/440/teradyne-reports-first-quarter-2026-results
+- Teradyne 2026Q1 Form 10-Q: https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-201058/ter-20260329.htm
+- Teradyne Q4/FY2025 results: https://investors.teradyne.com/news-events/press-releases/detail/433/teradyne-reports-fourth-quarter-and-full-year-2025-results
+- Teradyne 2025 Form 10-K: https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-059002/ter-20251231.htm
+- Teradyne 2025Q3 Form 10-Q: https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-25-258477/ter-20250928.htm
+- Teradyne 2025Q2 Form 10-Q: https://investors.teradyne.com/sec-filings/all-sec-filings/content/0000950170-25-101248/ter-20250629.htm
+- Teradyne 2025Q1 Form 10-Q: https://investors.teradyne.com/sec-filings/all-sec-filings/content/0000950170-25-062503/ter-20250330.htm
+- Teradyne Q1 2025 results: https://investors.teradyne.com/news-events/press-releases/detail/7/teradyne-reports-first-quarter-2025-results
+
+### 12.3 产品、行业和会议资料
+
+- UltraFLEXplus + Tokyo Electron Prexa SDP integrated solution, 2026-06-08: https://investors.teradyne.com/news-events/press-releases/detail/443/teradyne-introduces-integrated-test-solution-for-ai-and-data-center-devices-in-collaboration-with-tokyo-electron
+- Magnum 7H HBM test system: https://www.teradyne.com/products/magnum-7h/
+- Teradyne AI computing/test article, 2026-02-10: https://www.teradyne.com/2026/02/10/how-ai-is-changing-computing/
+- Teradyne AI chiplet testing article: https://www.teradyne.com/test-connection/ai-chiplet-testing/
+- Photon 100 / 1.6T coherent optical transceiver production test, 2026-05-21: https://www.teradyne.com/2026/05/21/preparing-for-mass-production-of-1-6t-coherent-optical-transceivers/
+- SEMI semiconductor equipment forecast, including test equipment growth: https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-projected-to-reach-a-record-of-156-billion-dollars-in-2027-semi-reports
+- Yahoo Finance TER valuation snapshot, 2026-06-11 delayed page: https://finance.yahoo.com/quote/TER/
+
+### 12.4 估算口径
+
+- AI相关收入：仅2026Q1约70%和2025Q4接近60%为公司披露；2025Q1-Q3均为基于SoC/Memory/Product Test结构和公司叙述的模型估算。
+- Backlog/bookings/lead time/cancel rate：公司未标准化披露；本报告用RPO、递延收入/客户预付款、收入指引和行业/产品信号作为代理。
+- 每GPU/每rack/每MW/每optical port内容量：为制造测试设备capex摊销模型，不是数据中心机柜内BOM，也不是TER披露数。
+- 未来12个月三情景：基于2026Q1实际值、2026Q2指引、RPO、行业测试设备景气度和AI产品路线推演，不构成投资建议。

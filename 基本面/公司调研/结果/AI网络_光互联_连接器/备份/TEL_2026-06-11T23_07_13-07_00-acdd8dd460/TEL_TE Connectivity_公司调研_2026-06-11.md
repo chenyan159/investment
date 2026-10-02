@@ -1,0 +1,368 @@
+# TEL TE Connectivity 公司调研：AI数据中心连接器、电源互联增量与传统交通底盘的再定价
+
+报告日期：2026-06-11  
+股票代码：TEL.N / NYSE: TEL  
+公司名称：TE Connectivity plc  
+正式归属目录：公司调研/AI网络_光互联_连接器/  
+
+## 资料边界与估算口径
+
+- 项目内资料只使用 `公司调研/公司索引.md` 确认目录归属，并使用 `行业调研/` 下与 AI 网络、光互联、铜互联、AI 数据中心建设、电力/机电/冷却相关的行业资料；未读取、引用或继承 `特征量化/`、`日度资料/` 和同目录下其他公司报告。
+- 外部资料以 TE 官方投资者关系、SEC/8-K、FY2025 年报、2025 Investor Day、最近五个财报季度材料、StockAnalysis/行情页为主。公司未披露客户级 backlog、AI 数据中心单独收入、按产品订单金额和取消率；本文把官方披露与产业链 BOM/订单映射分开，凡是估算均标注为“估算/推断”。
+- TE 于 FY2026 起调整部分 non-GAAP 口径，将无形资产摊销排除在调整后经营利润和调整后 EPS 外。本文 FY2026 季度使用公司当前口径；FY2025 季度以当季官方披露为主，必要时说明不可完全横比。
+
+## 0. 核心结论
+
+TE Connectivity 不是纯 AI 光模块股，也不是芯片股，而是全球连接器、传感器和电源/数据互联系统的高质量工业龙头。投资人长期把 TEL 看作“高现金流、强客户设计导入、交通业务占比较高的连接器复利股”；2025-2026 年市场开始把它重新定价为“AI 数据中心高速数据互联 + rack power + 能源电网现代化”的复合受益标的。
+
+最重要的新增变量是 Digital Data Networks，简称 DDN。TE 在 2025 Investor Day 披露 AI/Cloud 收入从 2023 年约 5 亿美元增长到 2025 年约 14 亿美元，并给出 30 亿美元以上的中期增长轨迹。Q2 FY2026 DDN 单季收入按同比反推约 7.14 亿美元，同比增长 48.1%，有机增长 46.1%，已经是公司单季收入的约 15.1%、Industrial Solutions 的约 30.7%。这说明 TEL 的 AI 故事已经不是“可选小业务”，但仍不是整家公司唯一驱动：Transportation Solutions 在 Q2 FY2026 仍占 51.1% 收入，且有机增长为 -0.5%。
+
+财务质量很强。2026-06-11 13:29 EDT，TEL 股价约 204.85 美元，市值约 597.9 亿美元，TTM PE 20.62x，forward PE 17.12x，PS 3.15x，TTM 毛利率 36.07%，净利率 15.54%。Q2 FY2026 资产负债表中现金 11.10 亿美元，总债务约 56.55 亿美元，股东权益 132.34 亿美元，流动比率约 1.89；StockAnalysis/S&P Global 口径 Debt/EBITDA 为 1.19、利息保障倍数 31.67，财务杠杆健康，支撑继续扩产、并购和回购。
+
+投资判断的关键不是“TEL 是否受益 AI”，而是“DDN 高速互联、rack power 和 Energy 电网业务能否在未来 12-24 个月大到足以覆盖 Transportation 的周期噪音”。基准情景下，TEL 未来一年 AI 数据中心直接和邻近收入可从当前年化约 20-30 亿美元提升到约 30-40 亿美元；乐观情景约 40-52 亿美元；极度乐观约 52-70 亿美元。需要注意这些口径包含 DDN、rack power、部分 Energy 数据中心供电接入和少量 CPO/CPX 早期设计导入，不能直接等同于公司披露口径。
+
+## 1. 公司整体业务、定位、近三年变动与财务健康度
+
+### 1.1 业务概览
+
+TE Connectivity 是连接器、传感器和电源/信号/数据互联系统供应商。公司产品不以“卖标准线材”这么简单，真正壁垒在于：客户早期架构共创、信号完整性/热/EMI/机械可靠性、全球工程和制造网络、严苛场景认证、长期平台导入。公司在 2025 Investor Day 披露拥有约 9.3 万员工、1 万名工程师、约 120 座工厂、超过 5000 个新开发项目，服务市场包括下一代交通、能源网络、自动化工厂、AI 数据中心、航空航天和医疗。
+
+最新披露的两大报告分部如下：
+
+| 分部 | Q2 FY2026 收入 | 占公司收入 | 同比/有机增长 | 调整后经营利润率 | 业务含义 |
+|---|---:|---:|---:|---:|---|
+| Transportation Solutions | 24.22 亿美元 | 51.1% | +4.7% / -0.5% | 21.6% | 汽车、商用交通、传感器。仍是公司最大基本盘，但 Q2 FY2026 汽车有机下降 3.8%，短期不是 AI 重估主因。 |
+| Industrial Solutions | 23.22 亿美元 | 48.9% | +27.0% / +16.9% | 21.8% | DDN、Automation and Connected Living、AD&M、Energy、Medical。AI、能源电网和航空航天是增量核心。 |
+
+Industrial Solutions 内部的 Q2 FY2026 收入结构按官方增长表反推如下：
+
+| 业务单元 | Q2 FY2026 收入估算 | 占公司收入 | 占 Industrial | 同比/有机增长 | 重要性 |
+|---|---:|---:|---:|---:|---|
+| Digital Data Networks, DDN | 7.14 亿美元 | 15.1% | 30.7% | +48.1% / +46.1% | AI 数据中心高速数据互联核心。 |
+| Automation and Connected Living, ACL | 5.79 亿美元 | 12.2% | 24.9% | +13.1% / +8.2% | 工业自动化、楼宇/连接生活，AI 相关性较弱。 |
+| Energy | 4.45 亿美元 | 9.4% | 19.2% | +59.5% / +11.2% | 电网硬化、能源基础设施；数据中心电力接入为重要邻近增量。 |
+| Aerospace, Defense and Marine, AD&M | 4.08 亿美元 | 8.6% | 17.6% | +9.1% / +5.4% | 航空航天、防务、船舶，周期恢复但不是 AI 主线。 |
+| Medical | 1.76 亿美元 | 3.7% | 7.6% | -3.3% / -3.5% | 医疗客户库存/需求偏弱，非重点。 |
+
+### 1.2 投资人心中的 TEL
+
+投资人对 TEL 的传统认知有三层：
+
+1. 高质量连接器龙头：设计导入长、客户认证强、生命周期长，毛利率和现金流优于一般工业零部件。
+2. 交通业务占比高：汽车生产周期、区域车市和 xEV/ADAS 内容量是过去多年估值的主要变量。
+3. 自 2025 年后被重新识别为 AI 数据中心互联受益者：DDN 的高增长、AI/Cloud 收入目标、224G/448G、rack power、CPO/CPX 等信号，使 TEL 获得一部分 AI 基建估值溢价。
+
+需要强调，TEL 的 AI 叙事是“连接和供电内容量随 AI rack 复杂度上升”，不是“每个 GPU 或每个光模块都必然由 TEL 供应”。公司价值在于高可靠连接器和工程共创，不在 DSP、交换芯片、光芯片或 GPU 本体。
+
+### 1.3 近三年重大业务变动、转型和收购
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2023-12 / FY2024 Q1 | 收购 Schaffner Holding AG，交易价值约 3.39 亿美元，Schaffner 是瑞士 EMC/电磁解决方案企业。 | 增强工业、电源质量、EMI/EMC、电气化和自动化能力，补齐能源和工业场景中的电磁兼容产品。 |
+| 2025-04 | 完成收购 Richards Manufacturing，现金对价约 23 亿美元。 | Richards 并入 Industrial Solutions 的 Energy 业务，强化北美 utility grid、地下/架空电气和燃气分配产品。FY2026 Q2 Energy reported growth 59.5%，其中 1.20 亿美元来自 acquisition。 |
+| FY2025-FY2026 | 报告口径更清晰地突出 Transportation 与 Industrial 两大分部；Industrial 内突出 DDN、Energy。 | 投资人更容易追踪 AI 数据中心和能源电网两个高增长驱动，减少“汽车连接器公司”的单一标签。 |
+| FY2026 | Non-GAAP 口径调整，将无形资产摊销从调整后经营利润/EPS 中剔除。 | FY2026 调整后利润率与 EPS 看起来更高；做历史横比时需要注意。 |
+| 2025 Investor Day | 公司强调 AI/Cloud、Energy scale-up、next generation vehicles 三条结构性增长线。 | 官方给出 DDN FY2025 约 22 亿美元、AI/Cloud 2025 约 14 亿美元，并展示 AI/Cloud 向 30 亿美元以上扩张的增长轨迹。 |
+
+### 1.4 最新股价、估值、利润率和资产负债表
+
+估值快照以 2026-06-11 13:29 EDT StockAnalysis 页面和其 S&P Global 数据为主。盘中价格会变动，正式建模时应更新至收盘价。
+
+| 指标 | 数值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | 204.85 美元 | 2026-06-11 13:29 EDT，NYSE 实时价 | 当日仍在交易中。 |
+| 市值 | 597.9 亿美元 | 2026-06-11 | 高质量工业连接器龙头估值。 |
+| 企业价值 | 637.1 亿美元 | 2026-06-11 | EV/Sales 3.41x，EV/EBITDA 13.47x。 |
+| TTM PE | 20.62x | 2026-06-11 | 不是便宜工业周期股，已反映 AI/能源成长溢价。 |
+| Forward PE | 17.12x | 2026-06-11 | 对未来 EPS 增长预期较强。 |
+| PS / Forward PS | 3.15x / 2.91x | 2026-06-11 | 对连接器公司偏高，但低于纯 AI 光模块/高速铜缆高弹性标的。 |
+| TTM 收入 | 187.0 亿美元 | 截至 2026-06-11 数据源 | Q2 FY2026 单季收入同比 +14.5%，有机 +7.2%。 |
+| TTM 毛利率 | 36.07% | 2026-06-11 | 连接器/传感器龙头水准，受 mix、定价、自动化和成本控制影响。 |
+| TTM 经营利润率 | 20.16% | 2026-06-11 | FY2026 Q2 调整后经营利润率 21.7%。 |
+| TTM 净利率 | 15.54% | 2026-06-11 | 税项会造成季度波动，TTM 更有参考性。 |
+| 现金 | 11.10 亿美元 | 2026-03-27 资产负债表 | Q2 FY2026 期末。 |
+| 总债务 | 约 56.55 亿美元，StockAnalysis 口径 58.6 亿美元 | 2026-03-27 / 2026-06-11 | 收购 Richards 后债务上升，但杠杆仍健康。 |
+| 流动比率 | 1.89 | 2026-03-27 / 2026-06-11 | 流动资产 82.41 亿美元，流动负债 43.65 亿美元。 |
+| Debt/EBITDA | 1.19x | 2026-06-11 | 对工业并购型公司偏保守。 |
+| 利息保障倍数 | 31.67x | 2026-06-11 | 利息压力很低。 |
+| TTM FCF | 33.9 亿美元 | 2026-06-11 | FCF yield 约 5.75%，可支持回购、分红、产能和并购。 |
+
+财务健康度结论：健康。TEL 不是高杠杆 AI 供应链弹性股，而是强 FCF、低净杠杆、可持续回购分红的工业复利资产。主要财务风险不在偿债，而在高估值下增长兑现、Transportation 周期波动、并购整合、DDN 客户/架构变化导致的订单波动。
+
+## 2. 最新及最近四次财报：收入、订单、利润率、DDN/AI 数据中心线索
+
+TE 不披露公司总 backlog、DDN backlog、按客户订单、lead time、取消率。本文用 orders、book-to-bill、业务增长和管理层表述来判断供需。B2B 为 orders / sales。
+
+| 财报季度 | 公司收入、增长和利润 | 订单、B2B、交期/取消率推断 | 分部与业务收入 | AI 数据中心相关收入占比推断 |
+|---|---|---|---|---|
+| Q2 FY2026，季度止 2026-03-27 | 收入 47.44 亿美元，同比 +14.5%，有机 +7.2%；GAAP EPS 2.90 美元；调整后 EPS 2.73 美元；调整后经营利润 10.29 亿美元，margin 21.7%。 | 订单约 53 亿美元，同比 +25%；B2B 约 1.12。订单强于收入，说明 backlog 大概率上升。公司称所有业务均有订单增长。未披露取消率；Q2 没有看到需求突然取消信号。 | Transportation 24.22 亿美元，+4.7% / -0.5%，调后 margin 21.6%；Industrial 23.22 亿美元，+27.0% / +16.9%，调后 margin 21.8%。DDN 约 7.14 亿美元，+48.1% / +46.1%；ACL 约 5.79 亿；AD&M 约 4.08 亿；Energy 约 4.45 亿，+59.5% / +11.2%；Medical 约 1.76 亿。 | DDN 占公司 15.1%；其中 AI/Cloud 估算为 DDN 的大头。按官方 FY2025 AI/Cloud 14 亿美元和 Q2 DDN 增速推断，Q2 直接 AI/cloud 约 4.5-5.5 亿美元；加 rack power/能源邻近，AI 数据中心直接+邻近约占公司 10-13%。 |
+| Q1 FY2026，季度止 2025-12-26 | 收入 46.69 亿美元，同比 +21.7%，有机 +15.0%；GAAP EPS 2.53 美元；调整后 EPS 2.72 美元；调整后 margin 22.2%。 | 订单约 51.20 亿美元，同比 +28%，环比 +9%；B2B 1.10。Industrial 订单 27.34 亿美元，同比 +47%；订单动能来自 DDN、Energy、AD&M。 | Transportation 24.67 亿美元，+10% / +7%，调后 margin 21.2%；Industrial 22.02 亿美元，+38.2% / +26.3%，调后 margin 23.3%。DDN 7.07 亿美元，+71.2% / +69.7%；ACL 5.49 亿；Energy 4.06 亿，+88.0% / +14.6%；AD&M 3.81 亿；Medical 1.59 亿。 | DDN 占公司 15.1%。AI/Cloud 当季推断约 4.5-5.5 亿美元；公司表述“AI、energy grid hardening、next-generation vehicles”是订单与业绩驱动。 |
+| Q4 FY2025，季度止 2025-09-26 | 收入 47.49 亿美元，同比 +16.7%，有机约 +11%；当季调整后 EPS 2.44 美元；当季调整后经营 margin 19.9%。FY2025 全年收入 172.62 亿美元，同比 +9%，有机 +6%。 | 订单约 46.82 亿美元，同比 +22%，环比 +5%；B2B 0.99。Q4 B2B 低于 1，但订单仍为历史高位，且 DDN/Energy 环比继续增长。 | Transportation 24.13 亿美元，+4% / +2%，调后 margin 19.4%；Industrial 23.36 亿美元，+34% / +24%，调后 margin 20.3%。DDN 7.07 亿美元，+80% / +79%；ACL 5.85 亿；Energy 4.65 亿；AD&M 4.01 亿；Medical 1.78 亿。 | FY2025 DDN 约 22 亿美元，AI/Cloud 约 14 亿美元。FY2025 AI/Cloud 占公司收入约 8.1%，占 DDN 约 64%。 |
+| Q3 FY2025，季度止 2025-06-27 | 收入 45.34 亿美元，同比 +13.9%，有机 +9.1%；GAAP EPS 2.14 美元；调整后 EPS 2.27 美元；调整后 margin 19.9%。 | 订单约 45 亿美元，B2B 约 0.99，订单同比和环比增长。管理层称 Industrial 结果由 AI 高速连接和 Energy 增长带动。 | Transportation 约 24.18 亿美元，+2.8% / +1.1%，调后 margin 19.4%；Industrial 约 21.16 亿美元，+30.0% / +20.5%，调后 margin 20.4%。按增长表反推：DDN 约 6.06 亿美元，+84.2% / +81.9%；ACL 约 5.72 亿；Energy 约 3.84 亿；AD&M 约 3.74 亿；Medical 约 1.81 亿。 | DDN 占公司约 13.4%，AI/Cloud 当季估算约 3.5-4.7 亿美元。DDN 高速互联已经成为公司最大单个增长项。 |
+| Q2 FY2025，季度止 2025-03-28 | 收入 41.43 亿美元，同比 +4%，有机 +5%；GAAP EPS 0.04 美元，受一次性税项影响；调整后 EPS 2.10 美元；调整后 margin 19.4%。 | 订单约 42.46 亿美元，同比 +6%，环比 +6%；B2B 1.02。Industrial 订单反映 AI、Energy、AD&M 动能。 | Transportation 23.14 亿美元，-4% / -2%，调后 margin 20.7%；Industrial 18.29 亿美元，+17% / +16%，调后 margin 17.9%。DDN 4.82 亿美元，+77% / +78%；ACL 5.12 亿；AD&M 3.74 亿；Energy 2.79 亿；Medical 1.82 亿。 | DDN 占公司约 11.6%。这是 AI 订单向收入转化的早期加速阶段，后来两个季度 DDN 单季收入提升到约 7 亿美元。 |
+
+### 2.1 财报节奏的含义
+
+1. DDN 从 Q2 FY2025 的 4.82 亿美元提升到 Q1/Q2 FY2026 的约 7.07/7.14 亿美元，说明 AI 高速互联业务已经进入规模化收入阶段，不是单季一次性订单。
+2. Q1/Q2 FY2026 B2B 分别为 1.10/1.12，且 Q2 订单 53 亿美元，说明收入释放低于订单形成速度，backlog 大概率继续抬升。
+3. Industrial 调整后 margin 从 Q2 FY2025 的 17.9% 上升到 Q1/Q2 FY2026 的 23.3%/21.8%，说明 DDN 和规模效应对利润率有正贡献；但 FY2026 non-GAAP 口径变化也抬高横比数字。
+4. Transportation 收入仍大，但 Q2 FY2026 有机下降 0.5%，其中 automotive 有机下降 3.8%。这会压制公司整体 beta，防止 TEL 被市场完全按纯 AI 基建股定价。
+
+## 3. 2026 最新指引、业务占比、产品映射与重点/跳过业务
+
+### 3.1 最新指引
+
+截至本报告日，公司最新正式指引来自 2026-04-22 Q2 FY2026 财报：
+
+| 指标 | Q3 FY2026 指引 | 含义 |
+|---|---:|---|
+| 收入 | 约 50 亿美元 | 同比 +10%，有机 +9%。 |
+| 调整后 EPS | 约 2.83 美元 | 同比 +17%。 |
+| GAAP EPS | 约 2.44 美元 | 同比 +14%。 |
+| 订单背景 | Q2 订单 53 亿美元，B2B 1.12 | 管理层称订单动能覆盖所有业务，支撑 Q3 双位数增长。 |
+
+公司没有在 Q2 FY2026 新闻稿中逐项给出 Q3 分部收入指引。按 Q2 实际结构和 Q3 总收入约 50 亿美元推断，如果 Industrial 继续高于公司平均增长，其单季收入大概率在 24-25 亿美元区间，DDN 单季收入有望维持 7 亿美元以上并向 7.5-8.0 亿美元测试；Transportation 大概率在 24.5-25.5 亿美元，但有机增长弱于 Industrial。
+
+### 3.2 2026 当前业务收入占比和增长
+
+以 Q2 FY2026 实际收入为基准：
+
+| 业务 | Q2 FY2026 收入 | 公司收入占比 | 同比/有机增长 | 是否重点 |
+|---|---:|---:|---:|---|
+| DDN | 7.14 亿美元 | 15.1% | +48.1% / +46.1% | 最重点。高速数据互联、AI/Cloud、rack/server/switch 连接。 |
+| Energy | 4.45 亿美元 | 9.4% | +59.5% / +11.2% | 重点但需拆分：reported growth 受 Richards 并购推动，数据中心电力接入只是其中一部分。 |
+| Transportation | 24.22 亿美元 | 51.1% | +4.7% / -0.5% | 大底盘，不是 AI 主线；只关注下一代车辆数据连接、高压连接器。 |
+| AD&M | 4.08 亿美元 | 8.6% | +9.1% / +5.4% | 稳健但非 AI 主线。 |
+| ACL | 5.79 亿美元 | 12.2% | +13.1% / +8.2% | 部分工业自动化受益，但与 AI 数据中心直接关系弱。 |
+| Medical | 1.76 亿美元 | 3.7% | -3.3% / -3.5% | 跳过，当前不是增长重点。 |
+
+### 3.3 跳过的低相关/低增速业务
+
+以下业务在公司收入中重要，但本次 AI 数据中心/AI 芯片导向研究中不展开：
+
+- 传统汽车低压连接器、普通线束、非高速车载传感器：收入规模大，但 Q2 FY2026 automotive 有机下降 3.8%，短期不是 AI 基建变量。
+- 商用交通普通连接器：有改善，但与 AI 数据中心无直接映射。
+- Medical：Q2 FY2026 有机下降 3.5%，收入占比低。
+- ACL 中的普通楼宇/家电/连接生活低速连接器：增速中等，与 AI rack BOM 关联弱。
+- AD&M 中非高速/非数据链路的传统航电和防务连接器：高可靠壁垒强，但不是本报告的核心弹性来源。
+
+### 3.4 重点产品和小而有潜力的业务
+
+| 产品/业务 | 所属业务 | 代表产品/型号或形态 | 为什么重要 | 当前成熟度 |
+|---|---|---|---|---|
+| 800G/1.6T 可插拔 I/O cage、connector、thermal/EMI 组件 | DDN | OSFP、QSFP-DD、OSFP-XD 等 front-panel I/O cage/connector/散热/EMI 组件 | GPU 服务器、AI switch、NIC/DPU 到光模块/铜缆的前面板连接，直接受益 800G 到 1.6T。 | 已放量，2026 主收入来源。 |
+| 224G 高速板到板、背板、mezzanine、cabled backplane | DDN | STRADA Whisper 类高速背板、Sliver/内部高速 I/O、over-the-board/cabled interconnect、near-ASIC connection | AI rack 从 112G 向 224G SerDes 迁移，信号完整性和机械容差难度上升，连接器价值量提升。 | 2026 进入设计导入和放量交叉期。 |
+| 448G 路线、CPO/CPX/NPO 连接和光纤管理 | DDN | Co-packaged/near-packaged optics socket、fiber attach、connector、fiber management、power/data interconnect | 若前面板可插拔受功耗/密度限制，CPO/CPX 会重构 I/O 物理层，连接器/光纤管理仍有价值，但产品形态变化。 | 早期设计/生态期，2027+ 才可能显著放量。 |
+| 高速铜缆、DAC/AEC/ACC 连接器与组件 | DDN | Passive DAC、active copper cable 组件、PCIe/以太网高速电缆连接 | AI rack 内短距连接中铜缆仍是成本/功耗最优路径，AEC/ACC 受益 112G/224G 信号完整性压力。 | 2025-2026 高增长，但主动芯片价值由 Credo/Astera/Broadcom/Marvell 等瓜分。 |
+| rack power、高电流 connector、busbar、blind-mate power | DDN/Energy/Industrial | 48/54V、HVDC、ORv3/AI rack power shelf、BBU/ESS 相关连接器和母排 | AI rack 从 25kW 走向 125kW、再到数百 kW/1MW，电源连接和热/机械可靠性成为瓶颈。 | 2026 订单和设计导入上升，800VDC 大规模仍偏 2027+。 |
+| Utility grid / data center power access | Energy | Richards 的地下/架空电气连接、grid hardening、cold shrink、network protection | 数据中心供电瓶颈把连接器公司从机柜内部扩展到电网接入侧；但收入不是纯 AI，需谨慎归因。 | 成熟市场加速，reported growth 受并购影响。 |
+| 高速连接的测试/验证/工程共创 | DDN | 224G/448G SI/thermal/EMI co-design、客户定制方案 | 高速互联不是标准 SKU，快速迭代和客户共创带来 design lock。 | 隐含在 DDN 业务中，利润率和替换成本较高。 |
+
+## 4. 当前高增长/关键产品的收入贡献、增速、AI 技术栈重要性和供需
+
+评分口径：重要性、时间紧急性、供需紧张、垄断/溢价能力均为 1-5 分，5 为最高。收入贡献是 TEL 当前年化估算，不等同公司披露口径。
+
+| 高增长/关键产品 | 当前 TEL 年化收入贡献估算 | 收入增速估算 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 依据和解释 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| DDN 高速 I/O、cage、connector、thermal/EMI、部分 DAC/AEC 组件 | 15-21 亿美元 | +35-55% | 5 | 5 | 4 | 3.5 | Q2 FY2026 DDN 年化约 28.6 亿美元；FY2025 AI/Cloud 已约 14 亿美元。800G/1.6T 和 AI switch 需求直接拉动。Amphenol、Molex、Samtec 竞争强，非垄断。 |
+| 224G/448G 板到板、背板、cabled backplane、near-ASIC interconnect | 3-6 亿美元 | +50-90% | 5 | 5 | 4.5 | 4 | Investor Day 明确 224G -> 448G，行业调研显示 224G 进入部署期。设计导入和 SI 验证周期长，一旦赢单替换成本高。 |
+| CPO/CPX/NPO socket、fiber attach、光纤管理 | <0.5-1.0 亿美元 | 高增长但基数小 | 4 | 3 | 3 | 4 | 2026 多为生态和设计座位，收入小；若 CPO/CPX 成为 2027+ 主流，连接/光纤管理形态重构。 |
+| rack power、高电流 connector、busbar、blind-mate power、HVDC/48V 相关 | 2-5 亿美元 | +30-70% | 5 | 4.5 | 4 | 4 | AI rack 功耗从 25kW 到 125kW/1MW，电源连接、母排、盲插、热和安全认证成为瓶颈。TEL 既有 DDN 又有 Energy，可跨机柜和电网侧。 |
+| Energy grid hardening / data center power access | 2.5-6 亿美元 AI/DC 邻近；Energy 总年化约 17.8 亿美元 | +10-20% organic；reported 受 Richards 提升 | 4 | 5 | 4 | 3.5 | 数据中心最大瓶颈之一是电力接入；Richards 增强北美 utility 连接。归因要谨慎，因为 Energy 大部分不是 AI 专用。 |
+| 下一代车辆高压/数据连接 | 非 AI，Transportation 内部较大 | +低至中个位数，有机短期弱 | 2 | 2 | 2 | 3.5 | 对 TEL 总收入重要，但不是 AI 数据中心。只作为公司防守和长期内容量增长，不作为 AI 弹性主线。 |
+
+## 5. 一年后收入贡献和三情景预测
+
+时间口径：从 2026-06-11 向后约 12 个月，即 FY2027 上半年前后。公司未披露 backlog，以下基于 Q1/Q2 FY2026 订单、DDN 增速、行业 AI rack/光互联/铜互联建设节奏和 TE Investor Day 目标推断。
+
+| 产品/业务 | 当前年化收入估算 | 基准情景，1 年后 | 乐观情景，1 年后 | 极度乐观情景，1 年后 | 关键判断 |
+|---|---:|---:|---:|---:|---|
+| DDN 高速 I/O/cage/connector/DAC-AEC 组件 | 15-21 亿美元 | 22-28 亿美元，增速 +30-45%，重要性 5、紧急性 5、供需 4、溢价 3.5 | 28-35 亿美元，增速 +50-70%，供需 4.5，溢价 4 | 35-45 亿美元，增速 +80-110%，供需 5，溢价 4 | 需要 800G/1.6T 继续放量，且 TE 保住 hyperscaler/ODM 设计份额。 |
+| 224G/448G backplane/cabled/near-ASIC | 3-6 亿美元 | 6-9 亿美元，增速 +50-80% | 9-14 亿美元，增速 +90-140% | 14-22 亿美元，增速 +150%+ | 若 224G 设计从样机/首批放量切到主流 AI switch/server 平台，弹性最大。 |
+| CPO/CPX/NPO 连接和光纤管理 | <0.5-1.0 亿美元 | 1-2.5 亿美元，收入仍小 | 2.5-6 亿美元 | 6-12 亿美元 | 极度乐观需要 CPX/CPO 标准和 hyperscaler 量产窗口明显提前。 |
+| rack power / high-current / busbar / HVDC connector | 2-5 亿美元 | 4-8 亿美元，增速 +40-70% | 8-13 亿美元，增速 +100% 左右 | 13-20 亿美元，增速 +150%+ | GB300/VR rack、电源 shelf、BBU/ESS、HVDC 架构采用速度决定弹性。 |
+| Energy grid / DC power access | 2.5-6 亿美元 AI/DC 邻近 | 5-9 亿美元 | 9-15 亿美元 | 15-25 亿美元 | 电网侧订单滞后于 AI DC 规划，供给瓶颈在 utility 认证、安装窗口和专用技工。 |
+| 公司 AI/DC 直接+邻近总口径，避免重复相加 | 当前约 20-30 亿美元 | 30-40 亿美元 | 40-52 亿美元 | 52-70 亿美元 | 含 DDN AI/Cloud、rack power 和 Energy 数据中心电力邻近，不等于官方 segment。 |
+
+对公司整体未来一年收入增速的推断：
+
+| 情景 | 未来一年公司收入增速 | 核心原因 | 风险点 |
+|---|---:|---|---|
+| 基准 | +8-11% | DDN 和 Energy 高增长抵消 Transportation 中低增长；Q3 FY2026 指引已经为 +10% reported、+9% organic。 | 汽车有机下降延续，Medical/ACL 弱于预期。 |
+| 乐观 | +11-15% | DDN 高速互联和 224G/cabled backplane 放量，Energy/Richards 转化顺利，订单 B2B 维持 >1.05。 | 800G/1.6T 多供应商降价、客户双供压价。 |
+| 极度乐观 | +15-20%+ | AI rack 建设节奏继续上修，1.6T/224G/高功率 rack 同步放量，TEL 在关键客户中拿到更高 wallet share。 | 产能、认证、客户架构切换和 CPO 替代路径的不确定性。 |
+
+## 6. BOM、每 MW/每 rack/每 GPU/每 optical port 内容量、价格传导链、产能和认证
+
+### 6.1 价格传导链
+
+AI 数据中心互联价值链大致为：
+
+Cloud capex / AI factory build plan -> GPU/ASIC 平台规划 -> server/switch/NIC/DPU 架构 -> optical port 和 copper reach 决策 -> cage/connector/cable/backplane/power connector 设计导入 -> SI/thermal/EMI/可靠性验证 -> ODM/OEM 量产采购 -> TE 收入确认。
+
+TEL 的价值捕获在物理互联层，不在 GPU、switch ASIC、DSP、光引擎或 retimer 芯片本体。价格传导能力取决于：
+
+- 是否为客户定制架构，而不是标准 commodity cage；
+- 是否处于 224G/448G 或高电流/高热密度极限位置；
+- 是否需要严格认证、长寿命、全球供货和快速 ramp；
+- 客户是否具备成熟 second source；
+- TE 是否同时绑定 data、power、thermal/EMI、fiber management 多个 BOM 项。
+
+### 6.2 内容量估算
+
+以下估算用于判断收入敏感性，非公司披露。
+
+| 口径 | 基准内容量 | 乐观内容量 | 极度乐观内容量 | 说明 |
+|---|---:|---:|---:|---|
+| 每 optical port，标准 OSFP/QSFP-DD/1.6T front-panel cage/connector/thermal/EMI | 15-40 美元 | 30-70 美元 | 50-120 美元 | 只含 TE 可能捕获的机械/连接/热/EMI 内容，不含光模块本体和 DSP。 |
+| 每 optical port，若叠加短距 copper cable/assembly | 40-200 美元 | 100-300 美元 | 200-500 美元 | 取决于 DAC/AEC/ACC，主动芯片价值通常不归 TE。 |
+| 每 AI rack，data + power + cable + sensor/fiber management | 5000-25000 美元 | 25000-60000 美元 | 60000-120000 美元 | 对 NVL72/GB300/高密 rack，若 TE 同时赢得高速 I/O、cabled backplane、power connector，内容量显著上升。 |
+| 每 GPU，按 72 GPU rack 折算 | 70-350 美元 | 350-830 美元 | 830-1660 美元 | 直接高速连接器可保守看 30-150 美元/GPU；完整 rack data+power 口径更高。 |
+| 每 MW，按 80-160kW/rack、6-12 rack/MW | 5-25 万美元 | 25-60 万美元 | 60-120 万美元 | 仅为 TEL 可能捕获的 rack 内和邻近互联，不含变压器、UPS、switchgear、光模块、服务器主体。 |
+| 每 MW，电网/电力接入侧 TEL-specific 内容 | 1-8 万美元 | 8-20 万美元 | 20-40 万美元 | Energy/Richards 侧，项目差异巨大，认证和 utility 规范是关键。 |
+
+### 6.3 关键产品 BOM 拆分
+
+| 产品/业务 | BOM 中 TE 可能覆盖的真实内容 | 不属于 TE 的主要价值 | 认证/采纳阶段 |
+|---|---|---|---|
+| 800G/1.6T 可插拔 I/O | cage、connector、heat sink/thermal interface、EMI gasket、latch/guide rail、PCB/host interface、部分 cable assembly | 光模块、DSP、laser、TIA/driver、switch ASIC | 800G 已量产，1.6T 进入放量；客户认证通常 6-12 个月，平台导入后替换成本中高。 |
+| 224G backplane/cabled interconnect | high-speed wafer/connector、shielding、cabled backplane、over-the-board interconnect、SI/thermal co-design | SerDes IP、retimer、switch ASIC、PCB 层压材料 | 224G 进入主流验证/放量，448G 偏 2027+ 预研；认证难度高，替换成本高。 |
+| DAC/AEC/ACC 相关 | cable、connector、assembly、strain relief、EMI/thermal/mechanical | AEC/ACC active silicon、retimer、DSP | DAC 成熟，AEC/ACC 受 112G/224G 推动；客户更容易多供，价格压力中等。 |
+| CPO/CPX/NPO | socket、near-package electrical connector、fiber attach、fiber management、micro-coax/cable、power connector | co-packaged optics engine、silicon photonics、switch ASIC | 早期生态和样机阶段；标准、良率、可维护性和客户架构还未完全冻结。 |
+| rack power/busbar/HVDC | high-current connector、busbar、blind-mate connector、power shelf connector、sensing/monitoring connector、insulation/thermal/mechanical assembly | power module、PSU、BBU cell、switchgear、transformer | 48/54V 成熟，高电流密度加速；800VDC/中压直流处于设计导入和认证前后，2027+ 更关键。 |
+| Energy grid/data center power access | underground/overhead connector、cold shrink、network protection、grid monitoring、utility-certified accessories | 变压器、断路器、开关柜、UPS、EPC | utility 认证和安装规范壁垒高；Richards 强化北美 utility channel。 |
+
+### 6.4 当前产能能力、供应链采纳和认证
+
+| 产品/业务 | 当前产能能力，美元计估算 | 被供应链采纳程度 | 认证/客户阶段 | 供给约束 |
+|---|---:|---|---|---|
+| DDN 高速 I/O/cage/connector | 年化收入承接能力至少 20-30 亿美元级别，按 Q2 DDN 年化 28.6 亿美元验证 | 已被主流 hyperscaler、server/switch OEM/ODM 采用；公司披露 major U.S. hyperscaler case，6 个月全规模 ramp，交付 >6000 万个高速连接 | 量产平台已认证；新 1.6T/224G 继续认证 | 精密冲压/电镀/模具、SI 测试、热设计、客户工程迭代。 |
+| 224G/448G/cabled backplane | 当前 3-6 亿美元年化估算，产能在扩张 | 224G 正在进入 AI switch/server 设计；448G 预研 | 224G 客户验证/早期量产，448G 样机/标准和生态期 | 高速 SI、线缆/连接器良率、客户架构不确定。 |
+| CPO/CPX/NPO | 当前 <1 亿美元收入承接，多为工程和小批量 | 生态参与高于收入贡献；可能受 Open CPX/CP0/CPO 路线推动 | 样机、标准贡献、设计座位 | 标准不确定、可维护性、光引擎良率、客户是否从 pluggable 切换。 |
+| rack power/busbar/HVDC | 当前 2-5 亿美元 AI/DC 年化估算，Energy/Industrial 工厂可支撑扩张 | AI rack OEM/ODM 和电源系统商开始提高需求；utility/Energy channel 成熟 | 48V/54V 成熟，高电流盲插和 HVDC 认证推进中 | 大电流安全、热、爬电距离、UL/IEC/客户规范和材料供应。 |
+| Energy grid/power access | Energy 单季 4.45 亿美元，年化约 17.8 亿美元；AI/DC 邻近部分 2.5-6 亿美元估算 | utility 客户和电网硬化项目采纳强；Richards 增强北美 | utility 认证成熟，但项目交付周期长 | 技工、项目许可、utility 预算、安装窗口。 |
+
+## 7. 一年后产能能力和认证阶段预测
+
+| 产品/业务 | 基准：一年后产能/采纳/认证 | 乐观：一年后产能/采纳/认证 | 极度乐观：一年后产能/采纳/认证 |
+|---|---|---|---|
+| DDN 高速 I/O/cage/connector | 产能承接 30-40 亿美元级 DDN 年收入；1.6T 平台认证更多；B2B 维持略高于 1。 | 产能承接 40-50 亿美元；多家 hyperscaler 1.6T 平台进入连续量产；部分 SKU lead time 延长。 | 产能承接 50 亿美元以上；TE 在关键 AI switch/server 平台 wallet share 上升，部分定制件接近供不应求。 |
+| 224G/448G/cabled backplane | 224G 从认证转向主流出货；448G 保持预研/小批量。 | 224G 成为新平台默认选项，TE 在多个客户拿到关键 design win；448G 开始早期客户验证。 | 224G 快速扩散叠加 448G 提前设计锁定，cabled backplane/near-ASIC content 急升。 |
+| CPO/CPX/NPO | 小批量工程收入，认证以客户样机/标准测试为主。 | CPX/CPO 生态进入若干商用试点，TE 取得 socket/fiber management 早期供应资格。 | 若 hyperscaler 提前导入 CPO/CPX，TE 收入可到 6-12 亿美元，但这是高不确定情景。 |
+| rack power/busbar/HVDC | 产能承接 4-8 亿美元 AI/DC 年收入；48/54V 和高电流连接器放量，800VDC 仍为设计导入。 | 产能承接 8-13 亿美元；GB300/VR rack、BBU、HVDC power shelf 订单增加。 | 产能承接 13-20 亿美元；高功率 rack 架构快速统一，部分认证产能成为瓶颈。 |
+| Energy grid/power access | AI/DC 邻近年收入 5-9 亿美元；Richards 协同进入更多 utility/data center power 项目。 | 9-15 亿美元；北美数据中心供电接入项目密集释放。 | 15-25 亿美元；电网侧连接件和地下/架空配套成为多个 AI 园区排队采购项。 |
+
+## 8. 订单积压、供给和未来一年业务增速推断
+
+### 8.1 公司级订单和 backlog 推断
+
+TE 没有披露 backlog 金额。可用的近五季订单与 B2B 如下：
+
+| 季度 | 订单 | B2B | 推断 |
+|---|---:|---:|---|
+| Q2 FY2026 | 约 53 亿美元 | 1.12 | 订单显著高于收入，backlog 大概率增加；所有业务订单增长。 |
+| Q1 FY2026 | 约 51.20 亿美元 | 1.10 | Industrial 订单 +47%，DDN/Energy/AD&M 强。 |
+| Q4 FY2025 | 约 46.82 亿美元 | 0.99 | 收入释放接近订单，仍为高订单水平。 |
+| Q3 FY2025 | 约 45 亿美元 | 约 0.99 | 订单同比和环比增长，AI 和 Energy 带动。 |
+| Q2 FY2025 | 约 42.46 亿美元 | 1.02 | AI、Energy、AD&M 已经带动 Industrial 订单。 |
+
+Q1/Q2 FY2026 连续 B2B >1.10 是最强信号。由于连接器/互联产品从订单到收入的周期通常比大型电力设备短，但比纯分销件长，高速定制件需要客户验证、模具和 ramp，未来 1-3 个季度收入可见度较高。取消率没有披露；从管理层“record orders”“all businesses growth”和 Q3 指引 +10%/+9% organic 看，当前没有明显订单取消压力。
+
+### 8.2 高增长业务的未来一年增速推断
+
+| 业务 | 当前真实订单/供给线索 | 基准增速 | 乐观增速 | 极度乐观增速 |
+|---|---|---:|---:|---:|
+| DDN | Q2 FY2026 DDN +48.1% / +46.1%；Q1 +71.2% / +69.7%；Investor Day AI/Cloud 2025 约 14 亿美元，并展示 30 亿美元以上增长轨迹。 | +30-45% | +50-70% | +80-110% |
+| 224G/cabled backplane | 行业从 112G 向 224G 切换；TE 强调 224G->448G，客户架构变化要求快速工程迭代。 | +50-80% | +90-140% | +150%+ |
+| rack power/HVDC | rack 功耗从 25kW 向 125kW/1MW；本地行业资料显示 rack power/busbar/高压连接器是高增长池。 | +40-70% | +100% 左右 | +150%+ |
+| Energy grid/data center power | Q2 Energy +59.5%，有机 +11.2%，acquisition +1.20 亿美元；Richards 并入。 | +10-20% organic，reported 更高 | +20-35% | +40%+ reported，需更多项目落地 |
+| Transportation | Q2 有机 -0.5%，automotive -3.8%；commercial transportation +17.1% organic。 | 0-4% | 4-7% | 7-10% |
+
+综合判断：未来一年 TEL 公司收入更可能落在 +8-15% 区间；若 DDN 和 rack power 超预期，同时 Transportation 不拖累，则存在 +15% 以上的极度乐观可能。但作为 187 亿美元 TTM 收入的公司，单个 AI 产品线即使翻倍，也需要足够大基数才会显著改变公司总增速。
+
+## 9. 竞争格局、新技术主流性、替代方案和客户替换成本
+
+### 9.1 主要竞争对手
+
+| 领域 | 主要竞争者 | 对 TEL 的压力 |
+|---|---|---|
+| 高速连接器、cage、backplane、I/O | Amphenol、Molex、Samtec、Rosenberger、Hirose、JAE、Smiths Interconnect、LOTES、UDE、FIT Hon Teng、Luxshare 等 | Amphenol 是最直接强敌，尤其在 IT/datacom 和高速连接器；Molex/Samtec 在高速板级和新架构生态中很强。 |
+| 结构化布线、光纤连接、光纤管理 | CommScope/Amphenol、Corning、Panduit、Senko、US Conec、Molex 等 | TEL 在高端连接器和客户共创强，但结构化光纤生态并非一家独占。 |
+| DAC/AEC/ACC | Amphenol、Molex、Luxshare、BizLink、Credo、Astera Labs、Broadcom、Marvell 等 | 主动铜缆的硅价值不归 TEL，TEL 更多捕获连接和 assembly；若 active silicon 厂商绑定整套 cable，TEL 内容可能被压缩。 |
+| CPO/CPX/NPO | Broadcom、NVIDIA、Marvell、Intel、Molex、Samtec、Amphenol、Senko/US Conec、光引擎厂商 | 若 CPO 重构前面板 I/O，传统 cage 内容可能下降，但 socket/fiber attach/power/fiber management 会创造新内容。 |
+| rack power、busbar、高电流连接 | Amphenol、Molex、Smiths Interconnect、Rosenberger、Anderson Power、Eaton/ABB/Schneider/Vertiv 生态供应商 | 高电流认证和系统集成壁垒高，但大电气厂商可能把部分连接集成到系统 BOM。 |
+| Utility grid / Energy | Hubbell、Eaton、3M 电力附件、ABB、Schneider、nVent、Prysmian/Nexans 相关连接附件 | Richards 强化北美，但 utility 侧区域性、认证和渠道壁垒强，不会一家独大。 |
+
+### 9.2 TEL 的新技术是否是未来主流
+
+| 技术/产品 | 主流性判断 | 对 TEL 的含义 |
+|---|---|---|
+| 800G/1.6T 可插拔 I/O | 2026-2027 仍是确定主流。即使 CPO 发展，前面板可插拔在可维护性、供应链成熟度和风险控制上仍有优势。 | TEL 当前收入确定性最高，但竞争和 ASP 压力也最大。 |
+| 224G SerDes 对应的高速 connector/backplane/cabled | 高确定性主流。AI switch/server 平台升级会把 224G 从高端推进到主流。 | TEL 技术壁垒和设计锁定最好的一块，溢价能力高于标准 cage。 |
+| 448G | 趋势确定，但时间不确定。 | 目前更像下一代 design seat，而不是 2026 大收入。抢先进入能影响 2027-2028。 |
+| AEC/ACC | 在 112G/224G 短距中重要性上升，但不会完全替代 DAC/光。 | TEL 需要和 active silicon 供应链协同，避免价值被芯片厂/整线厂拿走。 |
+| CPO/CPX/NPO | 方向上重要，但 2026 仍不是主收入。 | 对传统 front-panel cage 是长期替代风险，对 socket/fiber management/power 是新机会。 |
+| rack power / 800VDC / 高电流 busbar | 高功率 AI rack 必然需要升级电源互联，但 800VDC 是否快速统一仍不确定。 | TE 在 power + data 两端都有布局，若架构标准化，内容量显著提升。 |
+
+### 9.3 风险和替代方案
+
+- 客户多供风险：hyperscaler 和 ODM 通常会推动 dual source，Amphenol、Molex、Samtec 不会让 TEL 单独享受高速互联红利。
+- 架构替代风险：CPO/CPX、co-packaged optics 或 near-package optics 若加速，传统 front-panel cage 数量可能下降。但新架构会增加 socket、fiber attach、fiber management、near-ASIC power/data 内容，TEL 需要转移价值捕获点。
+- ASP 压力：800G/1.6T 标准件放量后价格会下降，利润率需要靠定制件、224G/448G、power、engineering co-design 维持。
+- Transportation 拖累：公司一半收入仍来自交通，汽车产量、区域需求和客户库存会影响整体增速。
+- Energy 并购归因风险：Energy reported growth 很高，但大部分来自 Richards 和电网/utility，不应全部算作 AI 数据中心收入。
+- 认证/产能风险：224G/448G、高电流 rack power、HVDC 的验证和认证周期可能拖延收入确认。
+- 技术路线风险：若 hyperscaler 更偏向自研连接方案、垂直整合或指定其他供应商，TEL 的 wallet share 会低于行业增长。
+
+### 9.4 客户替换成本
+
+| 产品 | 替换成本 | 原因 |
+|---|---|---|
+| 224G/448G near-ASIC、backplane、cabled interconnect | 高 | 涉及 SI、热、EMI、机械公差、系统板设计和客户认证，重新导入通常需要 6-18 个月。 |
+| CPO/CPX socket/fiber attach | 高 | 与封装、光引擎、可维护性和装配工艺深度耦合，早期 design win 价值高。 |
+| rack power、高电流 connector、busbar | 中高 | 安规、热、插拔寿命、爬电距离和系统机械设计绑定，替换需要重新认证。 |
+| 标准 OSFP/QSFP-DD cage/connector | 中 | 认证后可双供，标准化程度较高；定制散热/EMI 或 tight pitch 版本替换成本更高。 |
+| 普通 DAC/commodity cable | 中低 | 多供容易，价格竞争强；AEC/ACC 因 active silicon 和认证复杂度稍高。 |
+| Utility grid connector/accessory | 中高 | utility 认证、安装规范和现场经验形成壁垒，但区域供应商强。 |
+
+## 10. 最终投资视角：TEL 的 AI 弹性和估值约束
+
+TEL 的优点很清晰：
+
+- DDN 不是概念：Q2 FY2026 单季约 7.14 亿美元，同比增长 48.1%，已经是公司收入 15.1%。
+- 官方 AI/Cloud 收入从 2023 年约 5 亿美元到 2025 年约 14 亿美元，并展示 30 亿美元以上的增长轨迹，方向有管理层背书。
+- 224G/448G、1.6T、rack power、CPO/CPX 都会增加连接和工程复杂度，符合 TE 的能力圈。
+- 财务结构健康，FCF 强，能够承受扩产、并购、回购和分红。
+
+但约束也同样清晰：
+
+- TEL 不是纯 AI 股，Transportation 仍占一半收入，短期有机增长弱。
+- DDN 即使高速增长，当前也只是公司 15% 左右收入；AI/Cloud 官方 FY2025 约 14 亿美元，只占 FY2025 公司收入约 8.1%。
+- 估值已经不是传统低估工业股：2026-06-11 TTM PE 20.62x，forward PE 17.12x，PS 3.15x。
+- 竞争者强，尤其 Amphenol、Molex、Samtec；客户会双供并压价。
+
+因此，TEL 更适合作为“AI 物理互联和电力连接升级的高质量复利底仓”，而不是追求最大 beta 的纯弹性标的。若未来两个季度 DDN 继续维持 40%+ 增长、公司 B2B 维持 >1.05、Q3/Q4 FY2026 Industrial organic growth 继续双位数，同时 Transportation 不再拖累，则 TEL 的 AI 叙事会继续强化；若 DDN 增速降至 20% 以下或订单 B2B 回到 1 以下，估值会更像普通高质量工业股而非 AI 基建股。
+
+## 资料来源
+
+### 外部公司与市场资料
+
+- TE Connectivity, Q2 FY2026 earnings release, 2026-04-22: https://investors.te.com/news-releases/press-release-details/2026/TE-Connectivity-delivers-results-above-guidance-with-15-sales-growth-and-over-20-EPS-growth-in-second-quarter-of-fiscal-2026/default.aspx
+- TE Connectivity, Q2 FY2026 news release PDF: https://s25.q4cdn.com/722218489/files/doc_news/TE-Connectivity-delivers-results-above-guidance-with-15-sales-growth-and-over-20-EPS-growth-in-second-quarter-of-fiscal-2026-2026.pdf
+- TE Connectivity, Q1 FY2026 earnings slides: https://s1.q4cdn.com/769663331/files/doc_financials/2026/q1/Q1FY26-Earnings-Slides-FINAL-002.pdf
+- TE Connectivity, Q4 FY2025 earnings slides: https://s1.q4cdn.com/769663331/files/doc_financials/2025/q4/Q4FY25-Earnings-Slides-FINAL.pdf
+- TE Connectivity, Q3 FY2025 earnings release: https://investors.te.com/news-releases/press-release-details/2025/TE-Connectivity-delivers-double-digit-sales-and-EPS-growth-in-third-quarter-of-fiscal-2025/default.aspx
+- TE Connectivity, Q2 FY2025 earnings slides: https://s1.q4cdn.com/769663331/files/doc_financials/2025/q2/Q2FY25-Earnings-Slides-FINAL.pdf
+- TE Connectivity, FY2025 annual report: https://www.te.com/content/dam/te-com/documents/about-te/our-company/global/annual-report/te-connectivity-annual-report-2025.pdf
+- TE Connectivity, 2025 Investor Day: https://s25.q4cdn.com/722218489/files/doc_presentations/2025/11/1/TE-Investor-Day-2025.pdf
+- StockAnalysis, TEL statistics and valuation, checked 2026-06-11: https://stockanalysis.com/stocks/tel/statistics/
+- Yahoo Finance, TEL quote page for live market cross-check: https://finance.yahoo.com/quote/TEL/
+
+### 项目内行业资料
+
+- `行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`

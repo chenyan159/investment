@@ -1,0 +1,1389 @@
+[
+  {
+    "rank": 1,
+    "ticker": "ADBE",
+    "name": "Adobe",
+    "stance": "首选；关注9月10日财报风险",
+    "main_list_evidence": "01、02、04、07现金；E04-B、E05-A/B",
+    "short_reason": "现金收益支持修复，多个估值思路交叉支持，现价仍能容纳一部分经营失误。",
+    "supporting_case": "TTM自由现金流10.280B减SBC2.029B后，经济现金约8.251B，相对约101.3B市值为8.1%；一年基准价值明显高于现价，且不要求全部新AI产品成功。旧N02和02均曾把它排在第1；本轮07现金与输入对照也给现价支持，因此支持跨越了单一算法。",
+    "countercase": "核心风险是专业创作收费权与续约受到生成式AI侵蚀，经济现金的低倍数可能合理。9月10日财报尚未公布，当前预测仍基于Q2；今天的事件风险不能用一年上行空间抹掉。",
+    "reassessment": "关注付费续约、有机ARR与单位收费；如果只见免费用户增长、付费与现金走弱，应下调。约220—231美元的较严格研究边界有更多余量，但不是固定买点。",
+    "price": 254.86000061035156,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 14.588438,
+    "forward_pe_vendor": 9.268257,
+    "quote_retrieved_at": "2026-09-10T00:24:53.706478-07:00",
+    "ttm_eps_vendor": 17.47,
+    "forward_eps_vendor": 27.49816,
+    "price_return_3m_pct": 7.138050857155465,
+    "return_start": "2026-06-09",
+    "start_price": 237.8800048828125,
+    "target_date": "2027-09-09",
+    "base_raw_equity_value": [
+      373,
+      490
+    ],
+    "optimistic_raw_equity_value": [
+      514,
+      694
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      373.0,
+      490.0
+    ],
+    "optimistic_stock_price_range": [
+      514.0,
+      694.0
+    ],
+    "base_price_upside_pct": [
+      46.35486114208618,
+      92.2624181223116
+    ],
+    "iv30_pct": 52.828,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 03:38:11",
+    "iv_retrieved_at": "2026-09-10T00:27:56.451402-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/ADBE.json",
+    "current_return_report_focus_count": 12,
+    "current_return_report_focus_lists": [
+      "01",
+      "02",
+      "04",
+      "06",
+      "07",
+      "N03",
+      "09",
+      "N05",
+      "E04-A",
+      "E05-A",
+      "E04-B",
+      "E05-B"
+    ],
+    "original_current_price_choice_reports": [
+      "07",
+      "E04-B",
+      "E05-A",
+      "E05-B"
+    ],
+    "old_top30_ranks": {
+      "01": 23,
+      "02": 1,
+      "N02": 1
+    },
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ADBE_经营情景市场状态投资决策_2026-09-09.md",
+    "company_report_sha256": "79906452350d4b00840a1bfc22f12520393fd5ef274a83aa8842e1c4daeff0cf",
+    "base_source_line": 458,
+    "optimistic_source_line": 461,
+    "history_url": "https://finance.yahoo.com/quote/ADBE/history/",
+    "quote_url": "https://finance.yahoo.com/quote/ADBE/key-statistics/"
+  },
+  {
+    "rank": 2,
+    "ticker": "MU",
+    "name": "Micron Technology 美光科技",
+    "stance": "成长首选；周期风险高",
+    "main_list_evidence": "01、02、04、06G/E、07、N03",
+    "short_reason": "交付、巨额现金和客户协议同时存在，是成长名单里经营支持最完整的对象。",
+    "supporting_case": "FY26Q3收入41.456B、GAAP净利28.243B、经营现金25.39B已有正式披露；成长、现金和增量证据三个视角均靠前。旧02曾列第22，本轮升至核心条件组；这是依据新经营更新，而不是宣称它历史上就是所有方法的头部。",
+    "countercase": "6.63倍Forward PE用了约155美元供应商前瞻EPS，不能当中周期利润。高价格、高利润和低PE可以同时意味着周期风险；增产、折旧、续约价格、稀释共同影响价值。",
+    "reassessment": "9月30日财报重点看FY27量价、合同覆盖和现金；仅兑现旧季度指引不构成新的超预期。接受显著波动才适合，不能按低PE当防守仓。",
+    "price": 1027.77001953125,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 22.623158,
+    "forward_pe_vendor": 6.629695,
+    "quote_retrieved_at": "2026-09-10T00:24:53.707516-07:00",
+    "ttm_eps_vendor": 45.43,
+    "forward_eps_vendor": 155.02524,
+    "price_return_3m_pct": 9.81739343776702,
+    "return_start": "2026-06-09",
+    "start_price": 935.8900146484375,
+    "target_date": "2027-09-08",
+    "base_raw_equity_value": [
+      1096,
+      1374
+    ],
+    "optimistic_raw_equity_value": [
+      2060,
+      2664
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      1096.0,
+      1374.0
+    ],
+    "optimistic_stock_price_range": [
+      2060.0,
+      2664.0
+    ],
+    "base_price_upside_pct": [
+      6.638642806478101,
+      33.687495635128585
+    ],
+    "iv30_pct": 65.334,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 03:53:48",
+    "iv_retrieved_at": "2026-09-10T00:27:56.451402-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/MU.json",
+    "current_return_report_focus_count": 13,
+    "current_return_report_focus_lists": [
+      "01",
+      "02",
+      "04",
+      "06",
+      "07",
+      "N03",
+      "N06",
+      "09",
+      "N05",
+      "E04-A",
+      "E05-A",
+      "E04-B",
+      "E05-B"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {
+      "02": 22
+    },
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MU_经营情景市场状态投资决策_2026-09-08.md",
+    "company_report_sha256": "88cbbc4f98008267dee1a14f3cac771a1c87d2553475f9582750f0a77f1870ab",
+    "base_source_line": 532,
+    "optimistic_source_line": 535,
+    "history_url": "https://finance.yahoo.com/quote/MU/history/",
+    "quote_url": "https://finance.yahoo.com/quote/MU/key-statistics/"
+  },
+  {
+    "rank": 3,
+    "ticker": "ET",
+    "name": "Energy Transfer LP",
+    "stance": "现金与成长候选；回报较平衡",
+    "main_list_evidence": "01双判断、06F；02半年",
+    "short_reason": "收费网络、现金分配与已投资项目兑现，比单纯AI概念更能解释普通股回报。",
+    "supporting_case": "旧01第1、旧N02第7；本轮01半年基准研究仍第1。最近季度分配0.34美元，年化1.36美元，相对21.68美元约6.27%；一年基准价格26.09—34.13尚未把分配加进去。收益来自现有网络收费及扩建兑现，不要求全面科技化重估。",
+    "countercase": "成长CapEx、债务和商品优化利润回落会消耗现金，较弱长期持续性解释仍可能使价值低于现价。ET是LP普通合伙单位，税后分配与普通公司股息不能直接等同。",
+    "reassessment": "跟踪2027资本预算、项目起租、正常化后的单位现金；现金分配不构成保本。本文价格与收益均未扣个人税。",
+    "price": 21.68000030517578,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 14.7483,
+    "forward_pe_vendor": 12.389988,
+    "quote_retrieved_at": "2026-09-10T00:24:53.708516-07:00",
+    "ttm_eps_vendor": 1.47,
+    "forward_eps_vendor": 1.7498,
+    "price_return_3m_pct": 13.746069845988096,
+    "return_start": "2026-06-09",
+    "start_price": 19.059999465942383,
+    "target_date": "2027-09-08",
+    "base_raw_equity_value": [
+      26.09,
+      34.13
+    ],
+    "optimistic_raw_equity_value": [
+      32.97,
+      42.46
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      26.09,
+      34.13
+    ],
+    "optimistic_stock_price_range": [
+      32.97,
+      42.46
+    ],
+    "base_price_upside_pct": [
+      20.341326719314658,
+      57.42619704600265
+    ],
+    "iv30_pct": 17.882,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 00:49:55",
+    "iv_retrieved_at": "2026-09-10T00:27:56.451402-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/ET.json",
+    "current_return_report_focus_count": 6,
+    "current_return_report_focus_lists": [
+      "01",
+      "02",
+      "04",
+      "06",
+      "09",
+      "N05"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {
+      "01": 1,
+      "04": 6,
+      "N02": 7
+    },
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ET_经营情景市场状态投资决策_2026-09-08.md",
+    "company_report_sha256": "e27f88df6bed7b73b3d5a0fb11337a00dbfa8c0bb635ea56c22f90d6505dbf5b",
+    "base_source_line": 381,
+    "optimistic_source_line": 384,
+    "history_url": "https://finance.yahoo.com/quote/ET/history/",
+    "quote_url": "https://finance.yahoo.com/quote/ET/key-statistics/"
+  },
+  {
+    "rank": 4,
+    "ticker": "MSFT",
+    "name": "微软",
+    "stance": "质量优先；现价回报余量一般",
+    "main_list_evidence": "01、02、07现金、E04-B、E05-B半年",
+    "short_reason": "成熟软件付费与云业务有相互支持，历史和新结果的交叉证据都较强。",
+    "supporting_case": "旧N02第6、旧02第7，旧窗口股价回报约28.04%；本轮01三个月基准研究第1，BCDE赔率现价通过。FY26云收入超过214B、近90%来自前沿模型公司之外，比依赖少数AI实验室的需求结构更有支撑。",
+    "countercase": "近三个月已涨21.87%；一年DCF工作值约547，对现价价格回报约11.3%，合理估值下沿仍低于现价。CapEx、融资租赁和设备更新使利润增长快于股东现金；不能称无争议低估。",
+    "reassessment": "约10%回报取向可谨慎考虑，追求显著更高超额回报则应要求更低买价或更好的现金转换。440—465美元是01的条件研究带，经营变化时必须更新。",
+    "price": 491.6499938964844,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 27.543417,
+    "forward_pe_vendor": 20.85624,
+    "quote_retrieved_at": "2026-09-10T00:24:53.706478-07:00",
+    "ttm_eps_vendor": 17.85,
+    "forward_eps_vendor": 23.57328,
+    "price_return_3m_pct": 21.873525552996355,
+    "return_start": "2026-06-09",
+    "start_price": 403.4100036621094,
+    "target_date": "2027-09-09",
+    "base_raw_equity_value": [
+      433.7,
+      646.4
+    ],
+    "optimistic_raw_equity_value": [
+      665.8,
+      1037.3
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      433.7,
+      646.4
+    ],
+    "optimistic_stock_price_range": [
+      665.8,
+      1037.3
+    ],
+    "base_price_upside_pct": [
+      -11.786839136763138,
+      31.47564487432859
+    ],
+    "iv30_pct": 25.713,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 03:58:32",
+    "iv_retrieved_at": "2026-09-10T00:27:56.451402-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/MSFT.json",
+    "current_return_report_focus_count": 10,
+    "current_return_report_focus_lists": [
+      "01",
+      "02",
+      "04",
+      "06",
+      "07",
+      "N05",
+      "E04-A",
+      "E05-A",
+      "E04-B",
+      "E05-B"
+    ],
+    "original_current_price_choice_reports": [
+      "E04-B",
+      "E05-B"
+    ],
+    "old_top30_ranks": {
+      "02": 7,
+      "04": 11,
+      "N02": 6
+    },
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MSFT_经营情景市场状态投资决策_2026-09-09.md",
+    "company_report_sha256": "3ca632279db702593f81c72c8d76e84916cf1b2077ebd8c55660d51ad92b0b45",
+    "base_source_line": 410,
+    "optimistic_source_line": 413,
+    "history_url": "https://finance.yahoo.com/quote/MSFT/history/",
+    "quote_url": "https://finance.yahoo.com/quote/MSFT/key-statistics/"
+  },
+  {
+    "rank": 5,
+    "ticker": "BABA",
+    "name": "Alibaba 阿里巴巴",
+    "stance": "高风险修复候选；尚非确定买入",
+    "main_list_evidence": "01赔率、02、06F/E、N05",
+    "short_reason": "云增长与电商修复有较大上行，价格相对基准价值有差距。",
+    "supporting_case": "本轮01赔率、02兑现和06性价比均保留条件候选；一年基准128.7—171.3美元对109.40美元有上行。现金与库务资产可以承担一段投入期，使它与靠持续股权融资维持运营的早期AI项目不同。",
+    "countercase": "6月季度公司FCF为−44.670B人民币；8月配股使现金和股数同时增加。应用亏损、云设备更新和电商补贴可能拖延现金转正；VIE、汇率和资本配置风险也不能用低Forward PE消除。",
+    "reassessment": "原单公司研究仍中性，我保留高优先级的风险修复资格，不把它升为核心买入。95—105美元且净CMR、单位云现金回收、应用亏损至少两项改善，是更有依据的复核条件。",
+    "price": 109.4000015258789,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 25.44186,
+    "forward_pe_vendor": 11.782668,
+    "quote_retrieved_at": "2026-09-10T00:24:55.798904-07:00",
+    "ttm_eps_vendor": 4.3,
+    "forward_eps_vendor": 9.284824,
+    "price_return_3m_pct": -8.604841842073697,
+    "return_start": "2026-06-09",
+    "start_price": 119.69999694824219,
+    "target_date": "2027-09-09",
+    "base_raw_equity_value": [
+      128.7,
+      171.3
+    ],
+    "optimistic_raw_equity_value": [
+      231.7,
+      296.5
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      128.7,
+      171.3
+    ],
+    "optimistic_stock_price_range": [
+      231.7,
+      296.5
+    ],
+    "base_price_upside_pct": [
+      17.64168026044828,
+      56.581350649687565
+    ],
+    "iv30_pct": 40.537,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 03:44:54",
+    "iv_retrieved_at": "2026-09-10T00:27:57.189765-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/BABA.json",
+    "current_return_report_focus_count": 5,
+    "current_return_report_focus_lists": [
+      "01",
+      "02",
+      "04",
+      "06",
+      "N05"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {},
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\BABA_经营情景市场状态投资决策_2026-09-09.md",
+    "company_report_sha256": "25755fea03ace8ee0a73b99042c6848e2f4cb7ef85cc9aa63ca324257aafe1e1",
+    "base_source_line": 511,
+    "optimistic_source_line": 514,
+    "history_url": "https://finance.yahoo.com/quote/BABA/history/",
+    "quote_url": "https://finance.yahoo.com/quote/BABA/key-statistics/"
+  },
+  {
+    "rank": 6,
+    "ticker": "PNR",
+    "name": "Pentair plc",
+    "stance": "修复候选；需承受继续下修",
+    "main_list_evidence": "01双判断、02、06F、N05",
+    "short_reason": "估值压低后，渠道去库存与正常利润恢复有投资意义。",
+    "supporting_case": "旧N02第9、旧01第7、旧04第2；本輪01与02再次保留。三个月跌22.87%，Forward PE约11.13倍；一年基准工作值64.71美元，加分配后对现价的回报条件较原研究价58.62美元改善。",
+    "countercase": "下跌包含真实业绩恶化：Q2销售下降17%，公司将约170M美元影响归于泳池渠道去库存；不是所有跌幅都属于误价。Taco约1.4B美元收购及融资增加现金压力。",
+    "reassessment": "观察连续补货周期、终端销量、回款与偿债，不只看库存下降。50—51美元且核心经营未进一步受损更有余量；现价只能作为谨慎修复参与，不能当安全边际很厚。",
+    "price": 57.52000045776367,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 15.097114,
+    "forward_pe_vendor": 11.128631,
+    "quote_retrieved_at": "2026-09-10T00:24:54.597727-07:00",
+    "ttm_eps_vendor": 3.81,
+    "forward_eps_vendor": 5.16865,
+    "price_return_3m_pct": -22.874766632396792,
+    "return_start": "2026-06-09",
+    "start_price": 74.58000183105469,
+    "target_date": "2027-09-09",
+    "base_raw_equity_value": [
+      55.93,
+      76.86
+    ],
+    "optimistic_raw_equity_value": [
+      72.74,
+      99.63
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      55.93,
+      76.86
+    ],
+    "optimistic_stock_price_range": [
+      72.74,
+      99.63
+    ],
+    "base_price_upside_pct": [
+      -2.764256684822508,
+      33.62308655827895
+    ],
+    "iv30_pct": 34.752,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 03:31:21",
+    "iv_retrieved_at": "2026-09-10T00:27:56.486039-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/PNR.json",
+    "current_return_report_focus_count": 9,
+    "current_return_report_focus_lists": [
+      "01",
+      "02",
+      "04",
+      "06",
+      "N05",
+      "E04-A",
+      "E05-A",
+      "E04-B",
+      "E05-B"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {
+      "01": 7,
+      "04": 2,
+      "N02": 9
+    },
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\PNR_经营情景市场状态投资决策_2026-09-09.md",
+    "company_report_sha256": "b032427e133623c5a0d47ed3cc6ed4e93a5730f723f86a7a7903a54d0aa446c0",
+    "base_source_line": 477,
+    "optimistic_source_line": 480,
+    "history_url": "https://finance.yahoo.com/quote/PNR/history/",
+    "quote_url": "https://finance.yahoo.com/quote/PNR/key-statistics/"
+  },
+  {
+    "rank": 7,
+    "ticker": "ST",
+    "name": "Sensata Technologies",
+    "stance": "边界型现金修复候选",
+    "main_list_evidence": "01、02、06F；E05-A现价",
+    "short_reason": "存量传感器现金与降债是主要价值来源，AI新产品只作额外机会。",
+    "supporting_case": "旧01第2；本轮E05-A给现价可考虑，门槛42.3美元，现价42.03美元仅略低。H1自由现金流291M美元、已用400M现金回购约406M债务，说明修复与去杠杆已有实际动作。",
+    "countercase": "H1 FCF增量约72%来自营运资本改善和较低CapEx，不能直接外推。TTM PE67.79与Forward PE10.26差距巨大，所需利润恢复仍应核验；42.3的门槛并无宽价格保护。",
+    "reassessment": "正常化年经济现金至少约0.50B且不能靠持续压研发/维护实现。更严格01研究带35—38美元；现价结论仅边界型，不能只凭数据中心定点升级。",
+    "price": 42.029998779296875,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 67.79032,
+    "forward_pe_vendor": 10.262081,
+    "quote_retrieved_at": "2026-09-10T00:24:54.626080-07:00",
+    "ttm_eps_vendor": 0.62,
+    "forward_eps_vendor": 4.09566,
+    "price_return_3m_pct": -15.347437084388172,
+    "return_start": "2026-06-09",
+    "start_price": 49.650001525878906,
+    "target_date": "2027-09-09",
+    "base_raw_equity_value": [
+      40.74,
+      51.93
+    ],
+    "optimistic_raw_equity_value": [
+      57.67,
+      73.9
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      40.74,
+      51.93
+    ],
+    "optimistic_stock_price_range": [
+      57.67,
+      73.9
+    ],
+    "base_price_upside_pct": [
+      -3.069233444594577,
+      23.554607442862128
+    ],
+    "iv30_pct": 37.187,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 04:41:03",
+    "iv_retrieved_at": "2026-09-10T00:27:57.214140-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/ST.json",
+    "current_return_report_focus_count": 6,
+    "current_return_report_focus_lists": [
+      "01",
+      "02",
+      "06",
+      "N05",
+      "E05-A",
+      "E04-B"
+    ],
+    "original_current_price_choice_reports": [
+      "E05-A"
+    ],
+    "old_top30_ranks": {
+      "01": 2
+    },
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ST_经营情景市场状态投资决策_2026-09-09.md",
+    "company_report_sha256": "b764eacc0380ab916d748ec82cb863e09bc5133bb293f79361418520d082e01f",
+    "base_source_line": 517,
+    "optimistic_source_line": 520,
+    "history_url": "https://finance.yahoo.com/quote/ST/history/",
+    "quote_url": "https://finance.yahoo.com/quote/ST/key-statistics/"
+  },
+  {
+    "rank": 8,
+    "ticker": "SMCI",
+    "name": "Super Micro Computer Inc",
+    "stance": "高风险候选；资金条件优先",
+    "main_list_evidence": "02、06G、01半年赔率；09/N05辅助",
+    "short_reason": "低估值与系统交付有较大上行，但融资和回款决定普通股能否兑现。",
+    "supporting_case": "旧02第3、旧01第21，旧窗口上涨约43.13%；本轮02和成长视角仍保留。FY26Q4经营现金已转为+747M美元，是全年巨额流出之后的有用变化，一年基准价值也高于38.93美元。",
+    "countercase": "FY26全年CFO仍约−6.810B美元、FCF约−6.972B；不可取消采购和可取消销售不对称，库存、应收、资本稀释可能击穿静态估值。一次季度转正尚不能证明现金问题解决。",
+    "reassessment": "先看连续回款、库存变现和实际可提款资金。只有能承受重大损失的策略才考虑，稳健资金不因7.31倍Forward PE买入；不能把它与MSFT的现金质量等量比较。",
+    "price": 38.93000030517578,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 12.35873,
+    "forward_pe_vendor": 7.309535,
+    "quote_retrieved_at": "2026-09-10T00:24:56.056059-07:00",
+    "ttm_eps_vendor": 3.15,
+    "forward_eps_vendor": 5.32592,
+    "price_return_3m_pct": -4.2076749757732905,
+    "return_start": "2026-06-09",
+    "start_price": 40.63999938964844,
+    "target_date": "2027-09-08",
+    "base_raw_equity_value": [
+      51.64,
+      62.71
+    ],
+    "optimistic_raw_equity_value": [
+      82.79,
+      101.69
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      51.64,
+      62.71
+    ],
+    "optimistic_stock_price_range": [
+      82.79,
+      101.69
+    ],
+    "base_price_upside_pct": [
+      32.64834214022447,
+      61.083995654792346
+    ],
+    "iv30_pct": 70.857,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 04:41:28",
+    "iv_retrieved_at": "2026-09-10T00:27:57.200031-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/SMCI.json",
+    "current_return_report_focus_count": 7,
+    "current_return_report_focus_lists": [
+      "01",
+      "02",
+      "04",
+      "06",
+      "07",
+      "09",
+      "N05"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {
+      "01": 21,
+      "02": 3
+    },
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\SMCI_经营情景市场状态投资决策_2026-09-08.md",
+    "company_report_sha256": "2faf3bd869a42b9f87207dafa9a05e2c08bcacb79b74ec21b3943de209785380",
+    "base_source_line": 450,
+    "optimistic_source_line": 453,
+    "history_url": "https://finance.yahoo.com/quote/SMCI/history/",
+    "quote_url": "https://finance.yahoo.com/quote/SMCI/key-statistics/"
+  },
+  {
+    "rank": 9,
+    "ticker": "TEL",
+    "name": "TE Connectivity",
+    "stance": "优先条件候选；现价分歧未解决",
+    "main_list_evidence": "E04-B、E05-A/B；01研究",
+    "short_reason": "连接器跨代能力和估值受到多种方法支持，但现金模型没有同等支持现价。",
+    "supporting_case": "旧N02第3、旧04第5、旧02第9；本轮多个输入对照现价通过，属于最强跨方法候选之一。Q3销售增14%、EPS增19%、年初至今经营现金约3.0B美元，经营并非空泛技术故事。",
+    "countercase": "单公司一年现金DCF工作值约201美元，低于现价204.68；E05-A半年盈利倍数价值216—273美元更积极。两者分歧来自现金税、再投资和利润持续性，不能用多数投票裁决，也不应机械平均。",
+    "reassessment": "优先等现金转换上修或170—180美元附近且经营保持。若采用盈利倍数参与，必须明确承担更持久成长和较低资本要求的假设，不能宣称已有一致安全边际。",
+    "price": 204.67999267578125,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 20.086359,
+    "forward_pe_vendor": 15.859204,
+    "quote_retrieved_at": "2026-09-10T00:24:55.093681-07:00",
+    "ttm_eps_vendor": 10.19,
+    "forward_eps_vendor": 12.90607,
+    "price_return_3m_pct": -2.95387173588455,
+    "return_start": "2026-06-09",
+    "start_price": 210.91000366210938,
+    "target_date": "2027-09-09",
+    "base_raw_equity_value": [
+      165.5,
+      254.5
+    ],
+    "optimistic_raw_equity_value": [
+      209.5,
+      323.7
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      165.5,
+      254.5
+    ],
+    "optimistic_stock_price_range": [
+      209.5,
+      323.7
+    ],
+    "base_price_upside_pct": [
+      -19.142072541424916,
+      24.34043829732544
+    ],
+    "iv30_pct": 33.402,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 04:46:13",
+    "iv_retrieved_at": "2026-09-10T00:27:57.528314-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/TEL.json",
+    "current_return_report_focus_count": 6,
+    "current_return_report_focus_lists": [
+      "01",
+      "N05",
+      "E04-A",
+      "E05-A",
+      "E04-B",
+      "E05-B"
+    ],
+    "original_current_price_choice_reports": [
+      "E04-A",
+      "E04-B",
+      "E05-A",
+      "E05-B"
+    ],
+    "old_top30_ranks": {
+      "01": 18,
+      "02": 9,
+      "04": 5,
+      "N02": 3
+    },
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\TEL_经营情景市场状态投资决策_2026-09-09.md",
+    "company_report_sha256": "2cad18182d8b0ab828a9fb2f7c88187e1ff8d176655f2eedefb1984a6c10d127",
+    "base_source_line": 422,
+    "optimistic_source_line": 425,
+    "history_url": "https://finance.yahoo.com/quote/TEL/history/",
+    "quote_url": "https://finance.yahoo.com/quote/TEL/key-statistics/"
+  },
+  {
+    "rank": 10,
+    "ticker": "META",
+    "name": "Meta Platforms",
+    "stance": "条件候选；AI变现强于现金恢复",
+    "main_list_evidence": "07现金、06G研究、E05-A/B",
+    "short_reason": "广告已有可量化的AI收益，经营机制比纯模型收入故事更成熟。",
+    "supporting_case": "Q2广告展示增14%、价格增12%、总收入增28%；AI改善广告效率可以直接转化为既有客户预算。相对只靠新应用收费的公司，更容易检验收入归属，本轮收入/现金研究与独立估值对照均关注。",
+    "countercase": "同季经营利润下降8%，CapEx含融资租赁本金31.08B美元，FCF仅0.784B。低Forward PE没有消除资本强度问题；一年现金工作值633美元仍低于653.69美元。",
+    "reassessment": "540—560美元或广告利润与资本效率同时上修，才更有吸引力；新模型发布或免费用户增长不足以翻转。",
+    "price": 653.6900024414062,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 23.098587,
+    "forward_pe_vendor": 18.698408,
+    "quote_retrieved_at": "2026-09-10T00:24:56.691791-07:00",
+    "ttm_eps_vendor": 28.3,
+    "forward_eps_vendor": 34.95966,
+    "price_return_3m_pct": 11.820245370525528,
+    "return_start": "2026-06-09",
+    "start_price": 584.5900268554688,
+    "target_date": "2027-09-09",
+    "base_raw_equity_value": [
+      545,
+      751
+    ],
+    "optimistic_raw_equity_value": [
+      828,
+      1198
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      545.0,
+      751.0
+    ],
+    "optimistic_stock_price_range": [
+      828.0,
+      1198.0
+    ],
+    "base_price_upside_pct": [
+      -16.62714773600178,
+      14.88626064268379
+    ],
+    "iv30_pct": 39.473,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 06:37:39",
+    "iv_retrieved_at": "2026-09-10T00:27:57.983668-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/META.json",
+    "current_return_report_focus_count": 11,
+    "current_return_report_focus_lists": [
+      "01",
+      "02",
+      "04",
+      "06",
+      "07",
+      "09",
+      "N05",
+      "E04-A",
+      "E05-A",
+      "E04-B",
+      "E05-B"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {},
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\META_经营情景市场状态投资决策_2026-09-09.md",
+    "company_report_sha256": "989dd186372e3f70cd799dc307960f0bf7aec9b1bf851c5900ef24ce06873287",
+    "base_source_line": 364,
+    "optimistic_source_line": 367,
+    "history_url": "https://finance.yahoo.com/quote/META/history/",
+    "quote_url": "https://finance.yahoo.com/quote/META/key-statistics/"
+  },
+  {
+    "rank": 11,
+    "ticker": "DOV",
+    "name": "Dover Corporation",
+    "stance": "条件候选；优先核现金与净份额",
+    "main_list_evidence": "01、04、E04-A、E05-A",
+    "short_reason": "成熟现金业务叠加液冷连接与换热机会，较符合历史有效方法的思路。",
+    "supporting_case": "旧04第19、旧N02第29；本轮01基准及极简判断均保留，E04-A研究优先靠前。比押注单一液冷新公司更有成熟业务支撑，前瞻倍数也较温和。",
+    "countercase": "液冷总投资不能全部归属Dover；订单定义不扣以前订单取消，CST的订单增长未同步变为利润。并购成本、工厂效率和长期更新仍使一年现金工作值约189美元，未明显高于现价。",
+    "reassessment": "165—175美元或交付、利润、现金一起改善时复核。表中已从原权益值扣除0.525美元应收股息，统一为纯股票价格。",
+    "price": 191.4199981689453,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 23.51597,
+    "forward_pe_vendor": 16.439692,
+    "quote_retrieved_at": "2026-09-10T00:24:54.627094-07:00",
+    "ttm_eps_vendor": 8.14,
+    "forward_eps_vendor": 11.64377,
+    "price_return_3m_pct": -13.37285735100463,
+    "return_start": "2026-06-09",
+    "start_price": 220.97000122070312,
+    "target_date": "2027-09-09",
+    "base_raw_equity_value": [
+      167.7,
+      218.2
+    ],
+    "optimistic_raw_equity_value": [
+      212.6,
+      279.2
+    ],
+    "receivable_dividend_removed": 0.525,
+    "base_stock_price_range": [
+      167.175,
+      217.675
+    ],
+    "optimistic_stock_price_range": [
+      212.075,
+      278.675
+    ],
+    "base_price_upside_pct": [
+      -12.665864800367888,
+      13.715913740570773
+    ],
+    "iv30_pct": 24.942,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 03:09:50",
+    "iv_retrieved_at": "2026-09-10T00:27:57.818968-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/DOV.json",
+    "current_return_report_focus_count": 5,
+    "current_return_report_focus_lists": [
+      "01",
+      "04",
+      "E04-A",
+      "E05-A",
+      "E04-B"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {
+      "04": 19,
+      "N02": 29
+    },
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\DOV_经营情景市场状态投资决策_2026-09-09.md",
+    "company_report_sha256": "c6306fe22ef140ac94260824df6198fce23c09eec74983c8be442a09b985980e",
+    "base_source_line": 419,
+    "optimistic_source_line": 422,
+    "history_url": "https://finance.yahoo.com/quote/DOV/history/",
+    "quote_url": "https://finance.yahoo.com/quote/DOV/key-statistics/"
+  },
+  {
+    "rank": 12,
+    "ticker": "ASML",
+    "name": "ASML Holding NV",
+    "stance": "技术瓶颈候选；需价格或持续性证据",
+    "main_list_evidence": "01基准承载；N05关注",
+    "short_reason": "稀缺工艺设备与装机服务的收费权清楚，技术优势具有较长验证历史。",
+    "supporting_case": "本轮01保留基准条件候选。公司Q2销售9.326B欧元、毛利率54%，上调全年收入指引至43—45B欧元；低NA EUV及DUV浸没式设备2027产能计划增加30%，有现实客户投资支撑。",
+    "countercase": "59.89倍TTM PE与28.76倍Forward PE之间要求很大盈利增长；技术采用不等于同年度验收和现金，出口许可、客户CapEx和High-NA经济性仍能改变回报。",
+    "reassessment": "约1500—1550美元或客户验收、现金与增长持续性超过基准后复核；现价只有宽区间上行，不能把乐观2150—2903当必然目标。",
+    "price": 1729.52001953125,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 59.88643,
+    "forward_pe_vendor": 28.759155,
+    "quote_retrieved_at": "2026-09-10T00:24:56.629182-07:00",
+    "ttm_eps_vendor": 28.88,
+    "forward_eps_vendor": 60.13807,
+    "price_return_3m_pct": -2.7140743442575443,
+    "return_start": "2026-06-09",
+    "start_price": 1777.77001953125,
+    "target_date": "2027-09-09",
+    "base_raw_equity_value": [
+      1480,
+      1964
+    ],
+    "optimistic_raw_equity_value": [
+      2150,
+      2903
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      1480.0,
+      1964.0
+    ],
+    "optimistic_stock_price_range": [
+      2150.0,
+      2903.0
+    ],
+    "base_price_upside_pct": [
+      -14.427125255183636,
+      13.557517566769818
+    ],
+    "iv30_pct": 42.864,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 01:59:31",
+    "iv_retrieved_at": "2026-09-10T00:27:57.926244-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/ASML.json",
+    "current_return_report_focus_count": 2,
+    "current_return_report_focus_lists": [
+      "01",
+      "N05"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {},
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ASML_经营情景市场状态投资决策_2026-09-09.md",
+    "company_report_sha256": "58b8be519d3b7dc0181dd59828f627a31329a55288a5480038368607e67fc429",
+    "base_source_line": 548,
+    "optimistic_source_line": 551,
+    "history_url": "https://finance.yahoo.com/quote/ASML/history/",
+    "quote_url": "https://finance.yahoo.com/quote/ASML/key-statistics/"
+  },
+  {
+    "rank": 13,
+    "ticker": "DKILY",
+    "name": "Daikin Industries",
+    "stance": "全球工业修复候选；数据覆盖弱",
+    "main_list_evidence": "01双判断、04半年、06F",
+    "short_reason": "商用空调、渠道和服务构成存量基础，利润率修复有验证路径。",
+    "supporting_case": "本轮01、04与06F交叉保留；经营分散于多地区空调、商用系统、服务和材料，有较成熟的客户和资产基础，不依赖一项AI新业务成功。",
+    "countercase": "美国住宅、价格传导与日元汇率会共同影响美元ADR回报。前瞻PE未取得同口径供应商数据，OTC证券没有取得可用期权IV；原项目部分P/S与EV字段还有跨币种风险，不能据其极低值选股。",
+    "reassessment": "约11.7—12.8美元且利润、资本效率未受损时更有研究价值。1普通股=10 ADS，表中目标与现价均为美元DKILY；缺失Forward PE与IV不补造。",
+    "price": 13.510000228881836,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 22.147541,
+    "forward_pe_vendor": null,
+    "quote_retrieved_at": "2026-09-10T00:24:56.546744-07:00",
+    "ttm_eps_vendor": 0.61,
+    "forward_eps_vendor": null,
+    "price_return_3m_pct": -6.634416174368829,
+    "return_start": "2026-06-09",
+    "start_price": 14.470000267028809,
+    "target_date": "2027-09-09",
+    "base_raw_equity_value": [
+      12.82,
+      15.72
+    ],
+    "optimistic_raw_equity_value": [
+      16.66,
+      20.26
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      12.82,
+      15.72
+    ],
+    "optimistic_stock_price_range": [
+      16.66,
+      20.26
+    ],
+    "base_price_upside_pct": [
+      -5.107329512894787,
+      16.358251174515903
+    ],
+    "iv30_pct": null,
+    "iv_source": null,
+    "iv_provider_timestamp_unzoned": null,
+    "iv_retrieved_at": "2026-09-10T00:27:58.105415-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/DKILY.json",
+    "current_return_report_focus_count": 3,
+    "current_return_report_focus_lists": [
+      "01",
+      "04",
+      "06"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {},
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\DKILY_经营情景市场状态投资决策_2026-09-09.md",
+    "company_report_sha256": "5091b6ac03d8899b88044507f0f89ffc70079207b324214a1f50873d399f7f3b",
+    "base_source_line": 632,
+    "optimistic_source_line": 635,
+    "history_url": "https://finance.yahoo.com/quote/DKILY/history/",
+    "quote_url": "https://finance.yahoo.com/quote/DKILY/key-statistics/"
+  },
+  {
+    "rank": 14,
+    "ticker": "BDC",
+    "name": "Belden",
+    "stance": "小型工业候选；并购现金需核验",
+    "main_list_evidence": "06F、E05-A、E04-B",
+    "short_reason": "工业连接与数据网络的经营改善有基础，利润兑现存在上行。",
+    "supporting_case": "旧01第12、旧02第11、旧04第24；本轮性价比与独立估值对照保留。前瞻PE约11.72倍，具备工业连接、数据网络产品及生产订单，不是无收入技术期权。",
+    "countercase": "一年基准工作值123.44美元对117.78美元只有约4.8%价格空间；并购整合、债务和费用消耗现金。乐观200—245需要利润率、复购和降债共同改善，不能只看调整EPS增厚。",
+    "reassessment": "约97—108美元或更强现金/持续性证据时复核；现价仍高于有充分补偿的工作买价。",
+    "price": 117.77999877929688,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 19.794958,
+    "forward_pe_vendor": 11.723894,
+    "quote_retrieved_at": "2026-09-10T00:24:57.005903-07:00",
+    "ttm_eps_vendor": 5.95,
+    "forward_eps_vendor": 10.04615,
+    "price_return_3m_pct": 6.9269152498607545,
+    "return_start": "2026-06-09",
+    "start_price": 110.1500015258789,
+    "target_date": "2027-09-08",
+    "base_raw_equity_value": [
+      111.49,
+      137.09
+    ],
+    "optimistic_raw_equity_value": [
+      200.73,
+      244.89
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      111.49,
+      137.09
+    ],
+    "optimistic_stock_price_range": [
+      200.73,
+      244.89
+    ],
+    "base_price_upside_pct": [
+      -5.340464293163604,
+      16.394974886090253
+    ],
+    "iv30_pct": 40.206,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 02:12:02",
+    "iv_retrieved_at": "2026-09-10T00:27:58.688545-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/BDC.json",
+    "current_return_report_focus_count": 5,
+    "current_return_report_focus_lists": [
+      "04",
+      "06",
+      "E04-A",
+      "E05-A",
+      "E04-B"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {
+      "01": 12,
+      "02": 11,
+      "04": 24
+    },
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\BDC_经营情景市场状态投资决策_2026-09-08.md",
+    "company_report_sha256": "b29fa5293dd72315aaa813eebc040ab9cd2f71fd2343776360fff865854be493",
+    "base_source_line": 465,
+    "optimistic_source_line": 468,
+    "history_url": "https://finance.yahoo.com/quote/BDC/history/",
+    "quote_url": "https://finance.yahoo.com/quote/BDC/key-statistics/"
+  },
+  {
+    "rank": 15,
+    "ticker": "NVDA",
+    "name": "NVIDIA",
+    "stance": "核心成长观察；现价估值解释分歧大",
+    "main_list_evidence": "06G、07、01赔率、02、N03、E05-A/B",
+    "short_reason": "生态、系统和网络优势使它仍是高质量成长候选，但高共识不等于便宜。",
+    "supporting_case": "13份有收益选择功能的报告全部将其列为重点；旧04第9。FY27Q2收入96.221B美元、同比增106%，平台与实际交付很强。独立盈利倍数研究明显比单公司现金模型积极，这一分歧应保留。",
+    "countercase": "同季CFO24.077B对净利59.688B，现金与利润不同步；客户应收、库存、供货承诺及支持安排需要一起看。183—214的现金基准依赖2030后利润租金收敛，275—335的持久平台替代解释也有经济可能，但尚非已证实基准。",
+    "reassessment": "优先检验多代复购、ASIC迁移后的净价和现金回收，或等待更低价格。现价不升为现金价值核心买入；不能反过来把低DCF当成一年必跌预测。",
+    "price": 223.6699981689453,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 28.565773,
+    "forward_pe_vendor": 14.4126,
+    "quote_retrieved_at": "2026-09-10T00:24:55.562482-07:00",
+    "ttm_eps_vendor": 7.83,
+    "forward_eps_vendor": 15.51906,
+    "price_return_3m_pct": 7.43551349536864,
+    "return_start": "2026-06-09",
+    "start_price": 208.19000244140625,
+    "target_date": "2027-09-08",
+    "base_raw_equity_value": [
+      183.07,
+      213.53
+    ],
+    "optimistic_raw_equity_value": [
+      297.62,
+      355.5
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      183.07,
+      213.53
+    ],
+    "optimistic_stock_price_range": [
+      297.62,
+      355.5
+    ],
+    "base_price_upside_pct": [
+      -18.151740734704525,
+      -4.533463697391471
+    ],
+    "iv30_pct": 34.113,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 06:46:00",
+    "iv_retrieved_at": "2026-09-10T00:27:58.851413-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/NVDA.json",
+    "current_return_report_focus_count": 13,
+    "current_return_report_focus_lists": [
+      "01",
+      "02",
+      "04",
+      "06",
+      "07",
+      "N03",
+      "N06",
+      "09",
+      "N05",
+      "E04-A",
+      "E05-A",
+      "E04-B",
+      "E05-B"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {
+      "04": 9
+    },
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\NVDA_经营情景市场状态投资决策_2026-09-08.md",
+    "company_report_sha256": "1bbe8079d5d488bf95385479951f9f0574e6fc337961f1a6e553cf54c27760d9",
+    "base_source_line": 624,
+    "optimistic_source_line": 627,
+    "history_url": "https://finance.yahoo.com/quote/NVDA/history/",
+    "quote_url": "https://finance.yahoo.com/quote/NVDA/key-statistics/"
+  },
+  {
+    "rank": 16,
+    "ticker": "SNDK",
+    "name": "SanDisk",
+    "stance": "高弹性存储候选；不把低PE当防守",
+    "main_list_evidence": "07收入/现金、N03、06G、01半年赔率",
+    "short_reason": "企业存储、真实利润与NBM协议形成上行机制，合同延续是主要分歧。",
+    "supporting_case": "Q4收入8.97B美元，环比增51%；公司披露新增NBM协议与最低财务保障框架。它比纯现货周期有更强现金可见性，本轮增长和增量证据视角均靠前。",
+    "countercase": "Q4增长约三分之二来自价格；Forward PE6.66使用峰值附近前瞻利润。基准1342—1721低于现价1764.17，但NBM较持久替代解释1984—2599可以转正；不能把全部未覆盖市场也当保价长约。IV30约75.7%体现很高的不确定性。",
+    "reassessment": "合同覆盖、续约价格和合资资本投入后的现金比单季EPS更关键；目前排在MU之后，不以3004—4060乐观范围支持无条件买入。",
+    "price": 1764.1700439453125,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 23.58516,
+    "forward_pe_vendor": 6.664246,
+    "quote_retrieved_at": "2026-09-10T00:24:57.978063-07:00",
+    "ttm_eps_vendor": 74.8,
+    "forward_eps_vendor": 264.72162,
+    "price_return_3m_pct": 7.144071938255947,
+    "return_start": "2026-06-09",
+    "start_price": 1646.5400390625,
+    "target_date": "2027-09-08",
+    "base_raw_equity_value": [
+      1342,
+      1721
+    ],
+    "optimistic_raw_equity_value": [
+      3004,
+      4060
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      1342.0,
+      1721.0
+    ],
+    "optimistic_stock_price_range": [
+      3004.0,
+      4060.0
+    ],
+    "base_price_upside_pct": [
+      -23.93023537579121,
+      -2.447045515452062
+    ],
+    "iv30_pct": 75.654,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 03:44:53",
+    "iv_retrieved_at": "2026-09-10T00:27:58.960411-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/SNDK.json",
+    "current_return_report_focus_count": 10,
+    "current_return_report_focus_lists": [
+      "01",
+      "02",
+      "06",
+      "07",
+      "N03",
+      "09",
+      "N05",
+      "E05-A",
+      "E04-B",
+      "E05-B"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {},
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\SNDK_经营情景市场状态投资决策_2026-09-08.md",
+    "company_report_sha256": "a531660eb65bf18752e46cd81a620880bfcbef457b47ad3eb838055e080c833f",
+    "base_source_line": 368,
+    "optimistic_source_line": 371,
+    "history_url": "https://finance.yahoo.com/quote/SNDK/history/",
+    "quote_url": "https://finance.yahoo.com/quote/SNDK/key-statistics/"
+  },
+  {
+    "rank": 17,
+    "ticker": "ALLE",
+    "name": "Allegion plc",
+    "stance": "优质工业候选；价格尚需余量",
+    "main_list_evidence": "04半年、E05-A",
+    "short_reason": "建筑规格、维护和电子化构成较持久的需求，现金风险较易检验。",
+    "supporting_case": "旧N02第16、旧01第25；本轮04及E05-A保留。规格黏性和维护需求支持成熟业务盈利，电子化提供可跟踪的增量，不需要把公司整体变成订阅软件。",
+    "countercase": "正常现金价值工作点未提供充分回报；TTM与前瞻利润的改善不代表所有利润都能分配。国际执行、收购、ERP和回款会影响结果，新增电子收入还可能替代机械收入。",
+    "reassessment": "约125—131美元或电子净增量、国际利润及现金同时上修后复核。当前151.73美元仅接近E05-A较宽松的150美元条件，不能视作厚安全边际。",
+    "price": 151.72999572753906,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 20.504053,
+    "forward_pe_vendor": 15.523537,
+    "quote_retrieved_at": "2026-09-10T00:24:54.899126-07:00",
+    "ttm_eps_vendor": 7.4,
+    "forward_eps_vendor": 9.77419,
+    "price_return_3m_pct": 15.78023059458744,
+    "return_start": "2026-06-09",
+    "start_price": 131.0500030517578,
+    "target_date": "2027-09-09",
+    "base_raw_equity_value": [
+      125.9,
+      170.9
+    ],
+    "optimistic_raw_equity_value": [
+      158.2,
+      217.6
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      125.9,
+      170.9
+    ],
+    "optimistic_stock_price_range": [
+      158.2,
+      217.6
+    ],
+    "base_price_upside_pct": [
+      -17.023658113008764,
+      12.634287756050844
+    ],
+    "iv30_pct": 24.864,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 01:45:50",
+    "iv_retrieved_at": "2026-09-10T00:27:58.686225-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/ALLE.json",
+    "current_return_report_focus_count": 2,
+    "current_return_report_focus_lists": [
+      "04",
+      "E05-A"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {
+      "01": 25,
+      "N02": 16
+    },
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ALLE_经营情景市场状态投资决策_2026-09-09.md",
+    "company_report_sha256": "1536cda40396cd05f3e4d7b4c8a86e52ef9a724dbaa87f5b9ca47d7776b3cc57",
+    "base_source_line": 440,
+    "optimistic_source_line": 443,
+    "history_url": "https://finance.yahoo.com/quote/ALLE/history/",
+    "quote_url": "https://finance.yahoo.com/quote/ALLE/key-statistics/"
+  },
+  {
+    "rank": 18,
+    "ticker": "AEP",
+    "name": "American Electric Power",
+    "stance": "防守性候选；不承担高回报主任务",
+    "main_list_evidence": "01基准、04半年",
+    "short_reason": "受监管资产增长和股息支持较稳定的回报来源，能减少单一AI预算暴露。",
+    "supporting_case": "旧04第13、旧01第26；本轮01基准和04保留条件候选。增长通过在运资产、监管回收和每股盈利兑现，比用数据中心意向GW直接估收入更可核验。",
+    "countercase": "大量资本开支需要权益融资；公司规模增长可能被新增股数稀释。现价下正常回报中枢不高，不能因为IV30约19.6%就把它当高赔率股票。",
+    "reassessment": "约109—119美元或资本回收、获准收益与融资股数共同改善时更合适。它是组合风格上的防守备选，不能代替项目超高回报目标。",
+    "price": 124.66999816894531,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 21.757416,
+    "forward_pe_vendor": 18.181845,
+    "quote_retrieved_at": "2026-09-10T00:24:56.212868-07:00",
+    "ttm_eps_vendor": 5.73,
+    "forward_eps_vendor": 6.85684,
+    "price_return_3m_pct": -2.418600434892204,
+    "return_start": "2026-06-09",
+    "start_price": 127.76000213623047,
+    "target_date": "2027-09-09",
+    "base_raw_equity_value": [
+      116.01,
+      141.53
+    ],
+    "optimistic_raw_equity_value": [
+      135.54,
+      165.78
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      116.01,
+      141.53
+    ],
+    "optimistic_stock_price_range": [
+      135.54,
+      165.78
+    ],
+    "base_price_upside_pct": [
+      -6.9463369665007875,
+      13.523704242144152
+    ],
+    "iv30_pct": 19.578,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 03:43:02",
+    "iv_retrieved_at": "2026-09-10T00:27:58.387513-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/AEP.json",
+    "current_return_report_focus_count": 3,
+    "current_return_report_focus_lists": [
+      "01",
+      "02",
+      "04"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {
+      "01": 26,
+      "04": 13
+    },
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AEP_经营情景市场状态投资决策_2026-09-09.md",
+    "company_report_sha256": "425f287053d6f170740a016d610ee7cb107a932fe7b854633dfaf3fc4556797f",
+    "base_source_line": 441,
+    "optimistic_source_line": 444,
+    "history_url": "https://finance.yahoo.com/quote/AEP/history/",
+    "quote_url": "https://finance.yahoo.com/quote/AEP/key-statistics/"
+  },
+  {
+    "rank": 19,
+    "ticker": "TSM",
+    "name": "台积电",
+    "stance": "先进制造候选；现价需更强现金",
+    "main_list_evidence": "06G、07、N03、02半年、E05-A/B",
+    "short_reason": "领先制程和封装是实际产业瓶颈，客户与交付证据强。",
+    "supporting_case": "本轮成长、收入、现金和增量证据方法都关注，技术护城河与实体产能可核验，1 ADS=5普通股的价格口径已统一。",
+    "countercase": "一年现金基准304.5—384.1低于435.36美元；2027基准FCF约47.2B、核心CapEx约73B，高盈利与重投入并存。海外厂成本、折旧、汇率及地缘约束不能靠19.86倍Forward PE解决。",
+    "reassessment": "约269—338美元或可验证的资本效率、净利润持续性显著好于基准后复核；当前仍是优质企业的价格条件候选。",
+    "price": 435.3599853515625,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 32.465324,
+    "forward_pe_vendor": 19.856693,
+    "quote_retrieved_at": "2026-09-10T00:24:55.437956-07:00",
+    "ttm_eps_vendor": 13.41,
+    "forward_eps_vendor": 21.9251,
+    "price_return_3m_pct": 1.7386361213237667,
+    "return_start": "2026-06-09",
+    "start_price": 427.9200134277344,
+    "target_date": "2027-09-09",
+    "base_raw_equity_value": [
+      304.5,
+      384.1
+    ],
+    "optimistic_raw_equity_value": [
+      452.5,
+      576.6
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      304.5,
+      384.1
+    ],
+    "optimistic_stock_price_range": [
+      452.5,
+      576.6
+    ],
+    "base_price_upside_pct": [
+      -30.05788077787862,
+      -11.77416094181668
+    ],
+    "iv30_pct": 33.031,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 04:45:13",
+    "iv_retrieved_at": "2026-09-10T00:27:59.246116-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/TSM.json",
+    "current_return_report_focus_count": 11,
+    "current_return_report_focus_lists": [
+      "02",
+      "04",
+      "06",
+      "07",
+      "N03",
+      "09",
+      "N05",
+      "E04-A",
+      "E05-A",
+      "E04-B",
+      "E05-B"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {},
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\TSM_经营情景市场状态投资决策_2026-09-09.md",
+    "company_report_sha256": "2737d6445c5116be4f02669672feee5831df789d3a1a5f4ebe8db30803efb067",
+    "base_source_line": 520,
+    "optimistic_source_line": 523,
+    "history_url": "https://finance.yahoo.com/quote/TSM/history/",
+    "quote_url": "https://finance.yahoo.com/quote/TSM/key-statistics/"
+  },
+  {
+    "rank": 20,
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "stance": "AI平台候选；客户资本风险压后",
+    "main_list_evidence": "06G、07、N03、02半年、E05-A/B",
+    "short_reason": "定制计算、网络和软件现金有互补价值，增长来自真实客户项目。",
+    "supporting_case": "9月2日Q3披露AI半导体收入16.7B美元、同比增221%；下一季度集团收入指引34.8B。收入与经营证据支持继续跟踪，本轮多种成长与现金视角均入选重点。",
+    "countercase": "一年现金基准260.7—326.1低于364.38美元；整机/系统化后毛利结构、客户集中、应收与支持承诺改变资本风险。单一大客户项目成功不等于整股已经便宜。",
+    "reassessment": "约257—266美元工作研究带或现金与多年净收费显著上修后再评估；乐观404—515美元也不是无条件目标。",
+    "price": 364.3800048828125,
+    "price_date": "2026-09-09",
+    "pe_ttm_vendor": 46.956184,
+    "forward_pe_vendor": 18.798065,
+    "quote_retrieved_at": "2026-09-10T00:24:55.578061-07:00",
+    "ttm_eps_vendor": 7.76,
+    "forward_eps_vendor": 19.38391,
+    "price_return_3m_pct": -7.083842951825481,
+    "return_start": "2026-06-09",
+    "start_price": 392.1600036621094,
+    "target_date": "2027-09-08",
+    "base_raw_equity_value": [
+      260.7,
+      326.1
+    ],
+    "optimistic_raw_equity_value": [
+      404.2,
+      514.6
+    ],
+    "receivable_dividend_removed": 0,
+    "base_stock_price_range": [
+      260.7,
+      326.1
+    ],
+    "optimistic_stock_price_range": [
+      404.2,
+      514.6
+    ],
+    "base_price_upside_pct": [
+      -28.453812913295508,
+      -10.505517418587118
+    ],
+    "iv30_pct": 37.703,
+    "iv_source": "Cboe delayed quotes, data.iv30",
+    "iv_provider_timestamp_unzoned": "2026-09-10 03:44:47",
+    "iv_retrieved_at": "2026-09-10T00:27:59.362446-07:00",
+    "iv_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/AVGO.json",
+    "current_return_report_focus_count": 10,
+    "current_return_report_focus_lists": [
+      "02",
+      "06",
+      "07",
+      "N03",
+      "N06",
+      "N05",
+      "E04-A",
+      "E05-A",
+      "E04-B",
+      "E05-B"
+    ],
+    "original_current_price_choice_reports": [],
+    "old_top30_ranks": {},
+    "company_report": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AVGO_经营情景市场状态投资决策_2026-09-08.md",
+    "company_report_sha256": "40706b8fe3b1ed9b8656165878db012c8033d41a53e38ec1334cbcfe4d767508",
+    "base_source_line": 373,
+    "optimistic_source_line": 376,
+    "history_url": "https://finance.yahoo.com/quote/AVGO/history/",
+    "quote_url": "https://finance.yahoo.com/quote/AVGO/key-statistics/"
+  }
+]

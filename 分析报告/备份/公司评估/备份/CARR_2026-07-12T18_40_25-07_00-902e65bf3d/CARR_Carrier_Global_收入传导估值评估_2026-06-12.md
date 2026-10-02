@@ -1,0 +1,167 @@
+# 公司收入传导与价值传导评估：Carrier Global（CARR）
+
+报告日期：2026-06-12  
+公司代号：CARR  
+公司名称：Carrier Global  
+主口径：NTM，即自 2026-06-12 起未来 12 个月，近似理解为 2026Q2-Q4 加 2027Q1 的经营窗口。  
+边界说明：本报告只评估行业需求到公司 NTM 收入、利润和经营价值的传导，不做全公司排序，不给投资评级，不判断目标价或估值倍数；金融市场价格不作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径使用 NTM。Carrier 的 2026 管理层指引、2026 数据中心销售目标、Q1 2026 订单/backlog 和行业 2026-2027 冷却订单池只作为 NTM 推断锚点；FY2026、FY2027 和长期 run-rate 放在附录补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：Carrier 2025 全年销售额为 `$21.75B`，2026Q1 销售额 `$5.341B`，管理层 2026 全年销售指引约 `$22B`、调整后经营利润约 `$3.4B`、调整后 EPS 约 `$2.80`、自由现金流约 `$2B`。本报告 NTM 基准收入取 `$22.3-22.8B`，对应 2026 指引正常兑现并叠加 2027Q1 商业 HVAC / 数据中心订单转收入。
+- 重要产品/业务线：数据中心 central plant / chillers / AHU，数据中心 CDU / direct-to-chip 接口，Controls / DCIM / BMS / Abound / Nlyte，Thermal lifecycle service / rental / commissioning，非数据中心 Commercial HVAC + aftermarket，Residential / light commercial / Viessmann / 中国 RLC，Climate Solutions Transportation。
+- NTM 公司收入四情景：悲观 `$21.3-22.0B`；基准 `$22.3-22.8B`；乐观 `$23.2-24.2B`；极度乐观 `$24.8-26.0B`。基准不是 AI 叙事上修，而是 2026 指引正常兑现、数据中心 backlog 按期确认、住宅和中国 RLC 不再进一步恶化。
+- 利润或 EBITDA 四情景：悲观调整后经营利润约 `$2.9-3.2B`；基准 `$3.5-3.7B`；乐观 `$3.9-4.2B`；极度乐观 `$4.4-4.8B`。利润弹性主要来自数据中心高端 chillers、controls/DCIM、aftermarket/service mix，而不是所有 HVAC 硬件收入。
+- 最大传导瓶颈：订单到收入确认。Carrier 已有强订单信号，但大型数据中心冷却系统仍受长周期设备制造、MEP 同步、FAT/SAT、现场 commissioning、客户上电窗口和验收节奏约束。
+- 最大利润率变量：住宅 HVAC / 中国 RLC 的工厂吸收与促销压力能否缓解，以及数据中心项目是否以高端 chiller + controls + service 打包，而不是低毛利大客户硬件交付。
+- 最大现金流变量：commercial HVAC backlog 转收入时的营运资本占用、Q1 负 FCF 后下半年收款恢复、Viessmann 后净债务和回购节奏。
+- 可信度：基准为中高，悲观为中，乐观为中，极度乐观为低到中。原因是 A/B 级证据足以支持 2026 数据中心销售目标和商业 HVAC 增长，但产品拆分、CDU 收入、客户项目名称、价格和订单取消率未完整披露。
+
+## 2. 重要产品清单
+
+本步口径：只列出 NTM 收入和利润传导必须覆盖的产品/业务线。当前收入基数优先使用收入表、管理层指引、订单/backlog、已披露产品组合和本地公司调研估算；不能把行业 TAM 或客户总 CapEx 直接当作 Carrier 收入。
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 数据中心 central plant / chillers / AHU | 2026E 数据中心收入中约 `$0.85-1.00B`，NTM 基准约 `$1.15-1.45B` | 约 `5-6%` NTM | 数据中心收入最大硬件抓手；AI hall 上电前提 | B；总额有 backlog/订单，产品拆分为 C | 进入基准；按 backlog 转收入和 2027Q1 run-rate 保守纳入 | 高温水、chillerless、heat reuse 只作补充，不替代基准 |
+| 数据中心 CDU / direct-to-chip 接口 | 2026E 约 `$0.15-0.25B`，NTM 基准约 `$0.25-0.45B` | 约 `1-2%` | 高密 rack 增量弹性大，但 Carrier 仍是扩张者 | C；产品发布、QuantumLeap、ZutaCore 投资和客户 RFP 线索 | 小比例进入基准；更大规模放量放入乐观/极度乐观 | ZutaCore two-phase/waterless 是远期期权，NTM 不作为基准收入 |
+| Controls / DCIM / BMS / Abound / Nlyte | 2026E 数据中心相关约 `$0.20-0.30B`，NTM 基准约 `$0.30-0.45B` | 约 `1-2%` | 高毛利、客户粘性和系统差异化来源 | B/C；Nlyte 部署基数明确，收入拆分未披露 | 进入基准，但只按硬件 attach 和已部署平台扩张估算 | thermal-aware workload / AI digital twin 爆发放入乐观上限 |
+| Thermal lifecycle service / rental / commissioning | 2026E 数据中心相关约 `$0.10-0.20B`，NTM 基准约 `$0.15-0.30B` | 约 `1%` | 把硬件 installed base 转成利润和现金流 | B/C；服务网络明确，数据中心收入拆分未披露 | 进入基准；随 chiller/CDU installed base 保守 attach | 24/7 服务、临时冷却和 SLA 溢价是乐观变量 |
+| 非数据中心 Commercial HVAC + aftermarket | 无单独披露；按分部和管理层表述估计 NTM `$8.5-9.5B` | 约 `38-42%` | 公司经营底盘；订单、aftermarket 和服务支持利润质量 | A at segment level；B/C at product split | 进入基准，是 NTM 主体收入之一 | 与 AI 无关的普通楼宇增长只按低个位数处理 |
+| Residential / light commercial / Viessmann / 中国 RLC | 无单独披露；估计 NTM `$6.8-7.6B` | 约 `30-34%` | 最大抵消项；决定数据中心增量能否穿透到公司层利润 | A at segment level；C at split | 进入基准，但作为拖累/修复项处理 | Carrier Energy、欧洲能源转型平台为中长期补充 |
+| Climate Solutions Transportation | 2025 收入 `$2.894B`；2026Q1 收入 `$0.713B`；NTM 基准 `$2.9-3.1B` | 约 `13-14%` | 冷链现金流和周期分散；与 AI 数据中心关联弱 | A | 进入基准；按 container 强、truck/trailer 弱的混合节奏 | 冷链数字化和医药冷链只作补充 |
+
+## 3. 产品需求四情景
+
+本步口径：只评估外部需求池，不评估 Carrier 份额、收入确认、利润率或公司汇总。数据中心产品使用本地行业调研中的 AI 数据中心冷却/HVAC、直液冷、DCIM 和 commissioning 订单池；传统 HVAC、住宅和运输冷链使用公司披露与管理层口径作为需求锚，因为公开资料未给出可直接映射到 Carrier 的 NTM 单一需求池。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 数据中心 central plant / chillers / AHU | 行业侧美国 AI 冷却/液冷/HVAC 2026 务实订单池 `$16-31B`、2027 `$22-45B`；冷水机组/HVAC 子环节 2026 `$10-20B`、2027 `$15-28B` | 2027 冷却/HVAC 池降至 `$12-23B`，高密 rack 延迟，客户用改良风冷和项目递延 | 2027 冷却/HVAC 池 `$22-45B`，chiller/air-side 与液冷混合成为主流 | 2027 冷却/HVAC 池 `$37-70B`，大型 AI campus 批量锁定长交期 cooling capacity | 2027 订单池超过 `$70B` 或 GW campus 提前下单，capacity reservation 扩散 | 悲观相对务实约 `-15% to -30%`；乐观约 `+35% to +80%` | 基准符合当前行业订单池；乐观需看到 hyperscaler/NeoCloud capex 与 cooling 长约继续增强；反证是电力/MEP 使订单后移 |
+| 数据中心 CDU / direct-to-chip 接口 | 直液冷系统 2026 全球订单/收入池约 `$75-115B` 大口径；窄口径收入更低；rack/in-row CDU 当前约 `$15-28B`，2027 基准 `$30-50B` | GB300/Rubin 接受慢，液冷 attach 低于预期，CDU 作为小批量项目件 | `100kW+` rack attach 从当前 `45-65%` 向 2027 `65-90%` 提升 | CDU 长约/预付款增加，2027 主要 hyperscaler 多供应商采购 | 2026Q4 起 CDU 成项目短板，2027 上修到 `$75-110B` 级订单池 | 基准较当前池约翻倍；乐观再上修 `+50%` 左右 | 行业证据支持液冷成为高密 rack 标配；反证是 OCP 标准化压价、泄漏事故或 AI rack 延迟 |
+| Controls / DCIM / BMS / Abound / Nlyte | AI 数据中心 DCIM/BMS/energy control 2026 `$3-7B`、2027 `$6-12B`；大型 AI hall attach 率上升 | 客户只采购基础 BMS，thermal-aware operations 延后 | DCIM/BMS 随硬件项目正常 attach，2027 `$6-12B` | PUE/WUE、tokens/W、预测维护进入 SLA，软件 attach 和服务提升 | workload-aware thermal control 成为大型 AI factory 默认层，软件/服务池非线性扩大 | 基准约 `+70-100%` vs 2026 池；乐观 `+30-60%` vs 基准 | 正向证据是 AI hall 运维复杂度提高；反证是客户自研 DCIM 或由 Schneider/Vertiv/JCI/Siemens 抢占 |
+| Thermal lifecycle service / rental / commissioning | 行业报告把 commissioning、FAT/SAT、热验证和运维服务列为从组件转向验收的瓶颈；2027 一年口径基准约 `$3-5B`、乐观 `$5-8B` | 项目延迟但服务 attach 未提高，服务只随硬件低速增长 | 高密项目几乎强制 FAT/SAT、备件、现场响应，服务随 installed base 累积 | 上电抢时间，临时冷却、24/7 响应和长期 SLA 溢价 | 现场调试成为核心瓶颈，服务商可获得非线性 attach 和价格 | 基准服务池较 2026 显著扩大；乐观约 `+60%` vs 基准 | 正向证据是 time-to-power 经济性；反证是客户把服务内包或 EPC/MEP 捕获主要服务价值 |
+| 非数据中心 Commercial HVAC + aftermarket | 2025 global commercial HVAC 和 aftermarket 均 double-digit；2026 Q1 global Commercial HVAC orders +35% 由数据中心拉动，非数据中心应用约低个位数 | 商业地产、教育、酒店和普通 applied 项目放缓；aftermarket 仍支撑 | 非数据中心 applied 低个位数增长；aftermarket double-digit/高个位数 | retrofit、能效升级、服务 attach 和非数据中心 commercial demand 强于预期 | 普通商业 HVAC 与数据中心外溢需求共振，但不能按 AI 订单池外推 | 悲观 `-3% to -6%`；基准 `+1% to +4%`；乐观 `+5% to +8%` | 依据是公司订单和 aftermarket 表述；反证是建筑周期和客户预算收缩 |
+| Residential / light commercial / Viessmann / 中国 RLC | 2026Q1 CSA Residential sales 约 `-12%`；中国 RLC 继续拖累；欧洲 RLC 低个位数增长 | 美国住宅去库存延续，中国 RLC 继续弱，促销加大 | H1 仍弱，H2 去库存影响缓解；全年接近低位修复 | 住宅替换季和欧洲 RLC 同步改善，轻商用恢复 | 美国住宅、Viessmann、能源管理产品同步恢复 | 悲观 `-8% to -12%`；基准 `-2% to +2%`；乐观 `+3% to +7%` | 依据是 Q1 和管理层口径；反证是渠道库存、利率、消费者支出和中国需求 |
+| Climate Solutions Transportation | 2026Q1 CST revenue +10%、organic +5%；Container +38%，Truck/Trailer down high-single digits | container 高基数回落，truck/trailer 压力加大 | container 上半年强、下半年 tougher comps，truck/trailer 弱但不恶化 | 冷链补库、海运箱队重配和医药/食品冷链支撑 | container 周期和 truck/trailer 同时反弹 | 悲观 `-5% to -10%`；基准 `0% to +5%`；乐观 `+5% to +10%` | 依据是 Q1 segment；反证是货运周期和燃油/客户资本开支压力 |
+
+## 4. 可收入化暴露与收入基数
+
+本步口径：只判断需求能否进入 Carrier NTM 收入表，以及当前可收入化基数。公司能参与 AI 数据中心冷却需求池，不等于能在 NTM 内确认收入；本节严格区分可参与需求、可确认收入和远期期权。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 数据中心 central plant / chillers / AHU | 2026 数据中心销售目标约 `$1.5B`；Q1 2026 backlog 覆盖预期 2026 data center sales；产品拆分估计 2026E `$0.85-1.00B` | 直接 | 硬件毛利中等；高端 chiller、低 GWP、快速重启、服务 attach 可抬升 | `$0.85-1.05B` | `$1.15-1.45B` | `$1.55-1.90B` | `$2.20B+` | 基准符合当前 backlog/订单节奏；乐观高于当前预期 | B；产品拆分 C | 是 | data center orders +500%+、Commercial HVAC backlog sequential double-digit increase、2026 data center sales covered | NTM 基准主线；收入确认受制造、MEP 和验收节奏约束 |
+| 数据中心 CDU / direct-to-chip 接口 | QuantumLeap CDU、Carrier data center product page、ZutaCore 投资；未披露 CDU 订单/收入 | 直接，但收入基数低 | 早期毛利有工程/认证成本；若成为 approved vendor 可改善 | `$0.10-0.20B` | `$0.25-0.45B` | `$0.50-0.75B` | `$0.90-1.20B` | 基准只小比例纳入；大规模收入高于当前预期 | C/D | 是，但折扣 | 产品已发布且纳入方案；行业 CDU 需求强；缺少客户/认证/出货拆分 | NTM 基准保守纳入；ZutaCore/two-phase 仅作乐观或附录 |
+| Controls / DCIM / BMS / Abound / Nlyte | Nlyte 已部署 300+ data centers、管理 100 万+ racks 和 1000 万 data points；BMS 是 `$1.5B` data center revenue 的一部分 | 直接/附加 | 软件、控制、服务毛利高，客户切换成本高 | `$0.20-0.30B` | `$0.30-0.45B` | `$0.50-0.70B` | `$0.80B+` | 基准符合硬件 attach；乐观需更多客户标准化 | B/C | 是 | 已有 installed base；管理层称 BMS meaningful and part of data center revenue | 进入基准，是利润质量关键 |
+| Thermal lifecycle service / rental / commissioning | Carrier 服务网络、Rental Systems、QuantumLeap service；未单列 data center service revenue | 直接/附加 | 高于普通硬件；现金流和续约价值强 | `$0.10-0.18B` | `$0.15-0.30B` | `$0.30-0.45B` | `$0.55B+` | 基准保守；乐观依赖 SLA 和 commissioning 瓶颈 | B/C | 是 | 数据中心 uptime、FAT/SAT、临时冷却需求；服务网络可验证 | 进入基准，但不能把全部 service attach 立即资本化 |
+| 非数据中心 Commercial HVAC + aftermarket | 公司 2025 global commercial HVAC 和 aftermarket double-digit；2026 commercial HVAC 订单强但数据中心占比提高；未披露非 DC 单独收入 | 直接 | aftermarket 高毛利，普通硬件中等 | `$8.0-8.8B` | `$8.5-9.5B` | `$9.2-10.0B` | `$10.0-10.8B` | 基准为当前 run-rate 正常兑现；乐观需非 DC 应用改善 | A/B at segment；C split | 是 | CSA/CSE/CSAME 分部收入和商业/aftermarket 管理层表述 | 公司收入主体之一；不可按 AI 冷却订单池上修 |
+| Residential / light commercial / Viessmann / 中国 RLC | Q1 2026 CSA Residential down about 12%；中国 RLC 拖累 CSAME；CSE RLC 低个位数增长 | 直接 | 工厂吸收和促销决定利润率；周期性强 | `$6.4-7.0B` | `$6.8-7.6B` | `$7.5-8.2B` | `$8.4B+` | 基准假设不再恶化；悲观低于当前恢复路径 | A at segment；C split | 是 | 住宅和 RLC 已在收入表中，且是利润拖累来源 | 作为抵消项进入基准；不计入 AI 受益 |
+| Climate Solutions Transportation | 2025 收入 `$2.894B`；2026Q1 `$0.713B`，organic +5% | 直接 | CST margin 中高，周期混合 | `$2.6-2.8B` | `$2.9-3.1B` | `$3.1-3.3B` | `$3.4B+` | 基准符合 current run-rate | A | 是 | Segment revenue and margin disclosed | 进入基准，主要用于公司组合稳定性 |
+
+## 5. 产品级收入和利润贡献
+
+本步口径：从需求和可收入化基数出发，判断每个重要产品/业务线在 NTM 内对 Carrier 的收入和经营利润贡献。利润贡献为模型估算的经营利润或近似经营利润贡献，不是公司披露产品级利润；产品间存在共享成本和分部重叠，不能机械相加。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 数据中心 central plant / chillers / AHU | 悲观 | `$0.85-1.05B` | `$0.10-0.18B` | 下降或低于预期 | 低于当前 backlog 转收入预期 | AI 项目仍有需求，但上电/MEP/客户验收延迟 | 保留为悲观 | 收入递延、扩产吸收、fixed-price 项目成本 |
+| 数据中心 central plant / chillers / AHU | 基准 | `$1.15-1.45B` | `$0.18-0.29B` | 稳定到小幅改善 | 符合 2026 data center sales target 和 2027Q1 run-rate | data center orders +500%+；backlog covers 2026 expected data center sales | 保留 | 产品拆分未披露，收入确认非线性 |
+| 数据中心 central plant / chillers / AHU | 乐观 | `$1.55-1.90B` | `$0.28-0.45B` | 改善 | 高于当前预期 | 大客户继续锁 capacity，高端 air/water-cooled chillers 和 controls 打包 | 保留但需订单延续 | 竞争对手 Trane/JCI/Vertiv/Modine 争份额 |
+| 数据中心 central plant / chillers / AHU | 极度乐观 | `$2.20B+` | `$0.45-0.70B` | 明显改善 | 明显高于当前预期 | GW campus 提前下单，Carrier 成为标准供应商之一 | 下移为上限 | 需要需求、份额、产能和毛利同时成立 |
+| 数据中心 CDU / direct-to-chip 接口 | 悲观 | `$0.10-0.20B` | `接近盈亏平衡至 $0.03B` | 低或承压 | 低于当前乐观叙事 | 产品有但缺客户认证/量产收入披露 | 保留 | OCP 标准化、客户自研、液冷 field failure |
+| 数据中心 CDU / direct-to-chip 接口 | 基准 | `$0.25-0.45B` | `$0.03-0.09B` | 小幅改善 | 符合保守纳入口径 | QuantumLeap CDU 已发布，D2C 与 chiller 打包需求明确 | 保留但可信度中 | 客户、出货量、认证状态未披露 |
+| 数据中心 CDU / direct-to-chip 接口 | 乐观 | `$0.50-0.75B` | `$0.08-0.17B` | 改善 | 高于当前基准 | 100kW+ rack attach 加速，CDU 与 central plant 联合采购 | 保留为乐观 | Carrier 并非最纯液冷平台，竞争强 |
+| 数据中心 CDU / direct-to-chip 接口 | 极度乐观 | `$0.90-1.20B` | `$0.16-0.30B` | 明显改善 | NTM 上限 | GB300/Rubin/ASIC rack 推动 CDU 短缺，Carrier 获 approved vendor 地位 | 下移为乐观上限 | 缺少公开客户和产能证据 |
+| Controls / DCIM / BMS / Abound / Nlyte | 悲观 | `$0.20-0.30B` | `$0.06-0.10B` | 稳定 | 低于 attach 预期 | BMS/DCIM 需求存在，但客户自研或竞争替代 | 保留 | Schneider/Vertiv/JCI/Siemens 和 hyperscaler 自研 |
+| Controls / DCIM / BMS / Abound / Nlyte | 基准 | `$0.30-0.45B` | `$0.10-0.18B` | 改善 | 符合当前预期 | Nlyte deployed in 300+ data centers；BMS part of data center revenue | 保留 | 收入拆分未披露 |
+| Controls / DCIM / BMS / Abound / Nlyte | 乐观 | `$0.50-0.70B` | `$0.20-0.35B` | 明显改善 | 高于当前预期 | thermal controls、PUE/WUE、predictive maintenance attach 上升 | 保留 | 软件销售周期和客户 cyber/IT integration |
+| Controls / DCIM / BMS / Abound / Nlyte | 极度乐观 | `$0.80B+` | `$0.35B+` | 非线性改善 | NTM 上限 | thermal-aware operations 成为大型 AI hall 标配 | 下移为乐观上限 | 需要客户标准化证据 |
+| Thermal lifecycle service / rental / commissioning | 悲观 | `$0.10-0.18B` | `$0.02-0.05B` | 稳定或下降 | 低于 attach 预期 | 硬件交付延期导致服务确认也延期 | 保留 | 客户内包、EPC/MEP 捕获 |
+| Thermal lifecycle service / rental / commissioning | 基准 | `$0.15-0.30B` | `$0.04-0.10B` | 改善 | 符合当前预期 | Carrier service/rental 网络和 mission-critical uptime 需求 | 保留 | 服务收入拆分未披露 |
+| Thermal lifecycle service / rental / commissioning | 乐观 | `$0.30-0.45B` | `$0.09-0.18B` | 明显改善 | 高于当前预期 | commissioning、temporary cooling、SLA 成为交付瓶颈 | 保留 | 人员/备件/响应能力 |
+| Thermal lifecycle service / rental / commissioning | 极度乐观 | `$0.55B+` | `$0.18-0.30B` | 明显改善 | NTM 上限 | AI rush 让 24/7 服务和备机溢价 | 下移为乐观上限 | 需持续 installed base 和合同披露 |
+| 非数据中心 Commercial HVAC + aftermarket | 悲观 | `$8.0-8.8B` | `$1.20-1.50B` | 下降 | 低于当前预期 | 普通 applied demand 放缓，价格/成本压力 | 保留 | 商业地产、教育、酒店预算走弱 |
+| 非数据中心 Commercial HVAC + aftermarket | 基准 | `$8.5-9.5B` | `$1.45-1.80B` | 稳定到小幅改善 | 符合当前预期 | global commercial HVAC 和 aftermarket 连续强势 | 保留 | 数据中心以外商业需求不应被 AI 订单池上修 |
+| 非数据中心 Commercial HVAC + aftermarket | 乐观 | `$9.2-10.0B` | `$1.75-2.10B` | 改善 | 高于当前预期 | retrofit、aftermarket、能效升级、服务 attach 强 | 保留 | 普通 HVAC 竞争和价格 |
+| 非数据中心 Commercial HVAC + aftermarket | 极度乐观 | `$10.0-10.8B` | `$2.05-2.45B` | 明显改善 | NTM 上限 | 非数据中心商业周期同步恢复，aftermarket 高增 | 下移为乐观上限 | 缺少行业级外部需求强上修证据 |
+| Residential / light commercial / Viessmann / 中国 RLC | 悲观 | `$6.4-7.0B` | `$0.30-0.50B` | 明显下降 | 低于当前恢复路径 | 美国渠道去库存继续，中国 RLC 弱，促销加大 | 保留 | 工厂 under-absorption 继续吞噬利润 |
+| Residential / light commercial / Viessmann / 中国 RLC | 基准 | `$6.8-7.6B` | `$0.55-0.85B` | 低位稳定 | 符合当前预期 | Q1 弱但管理层维持全年指引，H2 去库存压力缓解 | 保留 | 住宅需求仍是最大抵消项 |
+| Residential / light commercial / Viessmann / 中国 RLC | 乐观 | `$7.5-8.2B` | `$0.85-1.15B` | 改善 | 高于当前预期 | 替换季正常、欧洲 RLC 和轻商用改善 | 保留但非 AI 证据 | 利率、消费者预算、中国需求 |
+| Residential / light commercial / Viessmann / 中国 RLC | 极度乐观 | `$8.4B+` | `$1.20B+` | 明显改善 | NTM 上限 | 住宅、Viessmann、能源管理产品同步恢复 | 下移为乐观上限 | 缺少当前高可信 demand reversal |
+| Climate Solutions Transportation | 悲观 | `$2.6-2.8B` | `$0.35-0.40B` | 下降 | 低于 run-rate | container 高基数回落，truck/trailer 弱 | 保留 | 货运周期和燃油成本 |
+| Climate Solutions Transportation | 基准 | `$2.9-3.1B` | `$0.43-0.48B` | 稳定 | 符合 run-rate | Q1 revenue +10%、organic +5%，container 强 | 保留 | 下半年 comp tougher |
+| Climate Solutions Transportation | 乐观 | `$3.1-3.3B` | `$0.48-0.55B` | 小幅改善 | 高于预期 | container 补库和冷链需求持续 | 保留 | Truck/trailer 未必同步 |
+| Climate Solutions Transportation | 极度乐观 | `$3.4B+` | `$0.57B+` | 改善 | NTM 上限 | container 与 truck/trailer 同步反弹 | 下移为乐观上限 | 周期证据不足 |
+
+## 6. 公司收入和利润四情景
+
+本步口径：把产品级贡献合成为 Carrier NTM 总收入、毛利率、经营利润率、调整后经营利润/净利润和自由现金流方向；不讨论市场定价。汇总时已剔除重复计算：数据中心 chiller、CDU、controls 和 service 都属于 data center thermal stack，但分别用产品贡献解释，最终公司收入不把同一项目预算重复相加。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$21.3-22.0B` | 约 `-2% to +1%` vs 2025 收入 `$21.75B` | 低于 2026 指引与 NTM 基准 `$0.5-1.5B`；数据中心 backlog 转收入慢，住宅/RLC 继续拖累 | `24.5-25.0%` | 调整后 OM `13.5-14.5%` | 调整后经营利润 `$2.9-3.2B`；调整后净利润约 `$2.0-2.3B` | FCF `$1.4-1.8B`，营运资本占用偏高 | 中 | MEP/commissioning 延迟、住宅工厂吸收、价格/项目成本 |
+| 基准公司 | `$22.3-22.8B` | 约 `+3% to +5%` | 接近管理层 2026 `$22B` 指引正常兑现并加入 2027Q1 商业 HVAC/data center run-rate；符合当前预期 | `25.3-26.0%` | 调整后 OM `15.5-16.2%` | 调整后经营利润 `$3.5-3.7B`；调整后净利润约 `$2.45-2.65B` | FCF `$2.0-2.3B`，Q1 负 FCF 后恢复 | 中高 | 订单按期确认、住宅不再恶化、service attach 正常 |
+| 乐观公司 | `$23.2-24.2B` | 约 `+7% to +11%` | 高于当前预期 `$0.7-1.4B`；数据中心从 `$1.5B` 目标向 `$2.6-3.0B` 年化路径靠近，住宅拖累缓解 | `26.0-27.0%` | 调整后 OM `16.5-17.5%` | 调整后经营利润 `$3.9-4.2B`；调整后净利润约 `$2.75-3.05B` | FCF `$2.4-2.8B`，收款和 margin 同步改善 | 中 | 高毛利 mix、服务 attach、扩产质量和客户验收 |
+| 极度乐观公司 | `$24.8-26.0B` | 约 `+14% to +20%` | 明显高于当前预期；数据中心成为公司主要增量引擎且住宅/商业/运输不拖累 | `27.0%+` | 调整后 OM `17.5-18.5%` | 调整后经营利润 `$4.4-4.8B`；调整后净利润约 `$3.1-3.5B` | FCF `$2.8-3.4B`，但前期产能/营运资本可能波动 | 低到中 | 需需求、份额、产能、价格、服务 attach 和住宅修复同时成立 |
+
+## 7. 证据校准、反证和可信度
+
+本步口径：不重新预测经营结果，只校准前四步情景。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在实际影响层级处理一次，市场定价和估值不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 data center orders +500%+，Commercial HVAC orders +35%，backlog 覆盖 expected 2026 data center sales | 收入基数、产品贡献、执行可信度 | 支持数据中心 NTM 基准和乐观；证明不是纯主题映射 | 只有产品 mix 和服务 attach 好时才提升利润率 | backlog 转收入仍需制造、MEP、验收 | 基准保留，乐观保留 |
+| 2026 管理层指引维持 sales 约 `$22B`、adjusted operating profit 约 `$3.4B`、FCF 约 `$2B` | 公司汇总 | 支持公司基准收入 `$22.3-22.8B` | 支持基准 OM 修复，但 Q1 利润率低使全年执行要求更高 | 支持 FCF 下半年恢复 | 基准保留 |
+| 2026Q1 调整后 OM 从 `16.3%` 降至 `11.1%`，CSA/CSE/CSAME 利润率下滑 | 利润率、公司组合 | 不直接否定收入，但压制利润兑现 | 对悲观利润情景是核心证据 | Q1 FCF `-$15M` 说明营运资本和利润兑现需验证 | 悲观保留；基准利润不许上移 |
+| 数据中心行业订单池强，但客户 CapEx / AI 建设规模不是 Carrier 收入 | 需求、收入基数 | 支持需求，不直接进入收入基数 | 不直接支持利润率 | 避免把行业 TAM 写成公司收入 | 行业 beta 只在第一步；第二步以后折扣 |
+| CDU、ZutaCore 和 two-phase waterless cooling | 远期期权、产品贡献 | CDU 小比例可进基准；ZutaCore 不进基准收入 | 若商业化可提升 mix，但 NTM 证据不足 | 认证、可靠性和客户采用未披露 | CDU 基准保留；ZutaCore 仅作跟踪 |
+| Controls / DCIM / Nlyte / BMS | 产品贡献、利润率 | 随硬件 attach 增加收入 | 高毛利，是乐观利润成立条件 | 软件部署和客户集成影响速度 | 基准保留，乐观保留 |
+| Residential / China RLC weakness | 公司组合 | 可能抵消数据中心收入增长 | 工厂吸收和促销压力压制 OM | 若持续弱，FCF 和回购空间受限 | 悲观保留；不得在数据中心产品层重复惩罚 |
+| MEP、电力并网、commissioning 延迟 | 收入确认、现金流/执行 | 订单递延而非需求消失 | 延迟和项目成本可能压低毛利 | 增加 WIP 和营运资本 | 悲观保留；风险只在收入确认和现金流层处理 |
+| Trane/JCI/Vertiv/Schneider/Modine/Eaton/CoolIT 竞争 | 公司捕获、价格 | 限制 Carrier 份额上限 | 大客户多供应商和价格压制 | 可迫使更多研发/服务投入 | 乐观不排除；极度乐观下移 |
+| OCP 标准化、UQD/CDU 多供应商化 | CDU/液冷接口利润率 | 出货可上升但 ASP 可能下降 | 压低标准硬件毛利 | 需通过服务和 controls 留住价值 | CDU 极度乐观下移为上限 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 数据中心订单确认慢、住宅/RLC 继续拖累，公司收入低于当前预期，利润率低于正常结构 | Q1 已显示利润率和 FCF 压力；住宅和中国 RLC 明确拖累 | data center orders/backlog 真实，Commercial HVAC backlog 强，不支持把需求完全否定 | 保留 | 悲观公司 `$21.3-22.0B`；调整后 OM `13.5-14.5%` | 中 | 电力/MEP 延迟只处理收入确认和现金流，不再重复压低需求池 |
+| 基准 | 2026 指引正常兑现，data center backlog 按期转收入，住宅不再恶化，服务和 controls 正常 attach | 官方 orders +500%+、backlog covers 2026 sales、2026 指引维持、aftermarket 强 | 产品拆分、客户名、CDU 出货、价格未披露；Q1 OM 低 | 保留 | 基准公司 `$22.3-22.8B`；调整后 OM `15.5-16.2%` | 中高 | 住宅拖累已在公司组合层处理，不再压低每个数据中心产品 |
+| 乐观 | 数据中心收入高于 `$1.5B` 目标并向 2027 `$2.6-3.0B` 年化路径靠近，controls/service 拉升利润质量 | 行业冷却订单池上修，Carrier capacity expansion、产品组合和 BMS/服务网络支持 | 需继续看到订单、book-and-ship、项目验收和毛利改善；竞争强 | 保留 | 乐观公司 `$23.2-24.2B`；调整后 OM `16.5-17.5%` | 中 | 行业 beta 不能直接替代公司 alpha，必须由 Carrier 订单/收入确认验证 |
+| 极度乐观 | 数据中心需求、Carrier 捕获、利润质量、执行同时突破，公司收入和利润率显著高于当前预期 | AI campus/GW、CDU、controls、service 都有潜在上限；Carrier 已扩大 chiller capacity | 任一核心环节缺硬披露：CDU客户、ZutaCore收入、产能预付款、客户标准化都不足 | 下移 | 作为 NTM 上限，不作为当前可期待经营位置 | 低到中 | 远期期权只移入附录或上限，不在基准和乐观中重复加分 |
+
+## 8. 结论
+
+- 最可能情景：基准偏乐观之间，但正式主口径取基准。Carrier 的数据中心订单证据足以支持 NTM data center thermal revenue 继续高增，但公司层面仍被住宅 HVAC、中国 RLC、Viessmann 整合、项目成本和营运资本稀释。最可能 NTM 公司收入为 `$22.3-22.8B`，调整后经营利润 `$3.5-3.7B`，自由现金流 `$2.0-2.3B`。
+- 乐观情景成立条件：2026H2 data center shipments 如期加速；Commercial HVAC backlog 转收入；data center revenue 不只达到 `$1.5B`，而且 2027Q1 年化 run-rate 向 `$2.6-3.0B` 靠近；controls/DCIM/service attach 明显提高；住宅和中国 RLC 不再继续拖累利润率。
+- 极度乐观情景成立条件：Carrier 获得多项目 hyperscaler / AI campus 标准供应商地位；客户以 capacity reservation、预付款或长期框架协议锁定 chiller/CDU/controls/service；CDU 和 ZutaCore 相关技术在 NTM 内出现客户认证和收入；住宅、商业和 CST 同步改善。当前证据不足以把这作为基准或乐观主结论。
+- 悲观情景触发条件：公司不再披露或下修 data center orders/backlog；2026H2 数据中心收入未加速；Commercial HVAC backlog 没有转收入；调整后 OM 不能回到 15% 以上；Q1 弱 FCF 延续；住宅/中国 RLC 继续双位数下滑。
+- 后续跟踪数据：季度 data center orders、Commercial HVAC book-to-bill/backlog、data center sales 是否单列或超过 `$1.5B`、chiller/CDU 产能与客户认证、controls/DCIM attach、CSA/CSE/CSAME margin、Residential sell-through/channel inventory、中国 RLC、FCF 和 net debt。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Carrier 公司经营数据截至 2026Q1 财报发布日 2026-04-30；本地公司调研报告日期 2026-06-11；行业调研资料日期 2026-06-10 至 2026-06-11；本报告日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Carrier Q1 2026 results：2026Q1 sales `$5.341B`、organic `-1%`、adjusted OM `11.1%`、FCF `-$15M`、2026 guidance sales `~$22B`、adjusted operating profit `~$3.4B`、adjusted EPS `~$2.80`、FCF `~$2B`。
+  - Carrier Q1 2026 earnings press release：data center orders up over `500%`，backlog fully covers expected 2026 data center sales，total company orders +11%，Commercial HVAC +35%。
+  - Carrier 2025 results：2025 sales `$21.75B`、adjusted OM `15.1%`、global commercial HVAC and aftermarket double-digit growth，2025 segment net sales CSA `$10.470B`、CSE `$5.044B`、CSAME `$3.339B`、CST `$2.894B`。
+  - Carrier J.P. Morgan Industrials Conference transcript：data center 2026 commitment around `$1.5B`，entered year with about `$1B` backlog for 2026，BMS part of the `$1.5B` data center revenue，data center shipments expected to hit more in the second half.
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 公司指引约 `$22B` revenue、`$3.4B` adjusted operating profit、`$2B` FCF，是 NTM 基准的下限锚点而非完整 NTM。
+  - 数据中心收入补充口径：本地公司调研估计 2026 data center sales 约 `$1.5B`，2027H1/FY2027 run-rate 基准 `$2.0-2.3B`，乐观 `$2.6-3.0B`，极度乐观 `$3.4-4.0B`。这些是 NTM 情景输入，不代表公司正式分部披露。
+  - 远期期权：ZutaCore waterless two-phase、higher-temperature loop、chillerless/dry cooler、thermal-aware digital twin、Carrier Energy / grid-interactive HVAC。除 CDU 小比例外，未进入 NTM 基准。
+- 主要本地来源：
+  - `公司调研/机电_冷却_工程_水处理_边缘工业AI/CARR_Carrier_Global_公司调研_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- 主要外部公开来源：
+  - [Carrier Reports First Quarter 2026 Results](https://ir.carrier.com/news/news-details/2026/Carrier-Reports-First-Quarter-2026-Results/default.aspx)
+  - [Carrier Q1 2026 Earnings Press Release PDF](https://s205.q4cdn.com/164393362/files/doc_financials/2026/q1/Carrier-Q1-2026-Earnings-Press-Release.pdf)
+  - [Carrier Reports 2025 Results and Announces 2026 Outlook](https://ir.carrier.com/news/news-details/2026/Carrier-Reports-2025-Results-and-Announces-2026-Outlook/default.aspx)
+  - [Carrier J.P. Morgan Industrials Conference corrected transcript, 2026-03-18](https://s205.q4cdn.com/164393362/files/doc_events/2026/Mar/18/2026-03-18-CARR-J-P-Morgan-Industrials-Conference-CORRECTED-TRANSCRIPT.pdf)
+  - [Carrier QuantumLeap data center thermal management suite](https://www.corporate.carrier.com/news/news-articles/202502_carrier-introduces-quantumleap-comprehensive-suite-innovative-energyefficient-solutions-for-data-center-thermal-management.html)
+  - [Carrier AquaEdge 30CF chiller announcement](https://www.carrier.com/commercial/en/us/news/news-article/carrier-introduces-aquaedge--30cf-chiller-to-enhance-data-center-reliability-and-uptime.html)
+  - [Carrier Data Center Thermal Management product page](https://www.carrier.com/us/en/commercial/data-centers/)
+  - [Carrier QuantumLeap Data Center Solutions brochure](https://www.shareddocs.com/hvac/docs/1001/Public/0A/04-811-50064.pdf)
+  - [Carrier Ventures expands investment in ZutaCore](https://www.prnewswire.com/news-releases/carrier-ventures-expands-investment-in-zutacore-to-scale-liquid-cooling-for-ai-data-centers-302757118.html)

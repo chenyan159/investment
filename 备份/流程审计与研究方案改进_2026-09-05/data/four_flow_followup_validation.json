@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-09-05T12:16:29.176579-07:00",
+  "document": "D:/drive/Investment/备份/流程审计与研究方案改进_2026-09-05/05_四类流程修改与文件整理详细建议.md",
+  "links": [
+    {
+      "target": "D:/drive/Investment/基本面/行业调研/研究方法/行业调研方案.md",
+      "line": 4,
+      "valid": true
+    },
+    {
+      "target": "D:/drive/Investment/备份/流程审计与研究方案改进_2026-09-05/evidence/公司与产业流程审计.md",
+      "line": null,
+      "valid": true
+    },
+    {
+      "target": "D:/drive/Investment/基本面/公司调研/研究方法/调研方案.md",
+      "line": 2,
+      "valid": true
+    },
+    {
+      "target": "D:/drive/Investment/备份/流程审计与研究方案改进_2026-09-05/evidence/公司与产业流程审计.md",
+      "line": null,
+      "valid": true
+    },
+    {
+      "target": "D:/drive/Investment/备份/流程审计与研究方案改进_2026-09-05/evidence/排序各方案流程审计.md",
+      "line": null,
+      "valid": true
+    },
+    {
+      "target": "D:/drive/Investment/分析报告/公司排序/AGENTS.md",
+      "line": null,
+      "valid": true
+    },
+    {
+      "target": "D:/drive/Investment/备份/流程审计与研究方案改进_2026-09-05/04_file-run非排序方案逐项改进.md",
+      "line": null,
+      "valid": true
+    }
+  ],
+  "invalid_links": 0,
+  "relocated_source_reports": [
+    {
+      "old_path": "D:/drive/Investment/基本面/公司调研/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-08-19.md",
+      "expected_sha256": "ae58d3e547405c1c194c2a98e80a09eb04e650c58cddd2535bdfc1eab355b04f",
+      "matching_backup_paths": [
+        "D:/drive/Investment/基本面/公司调研/AI服务器_存储_EMS/备份/MU_2026-09-05T11_30_51-07_00-33a3e89dd9/MU_Micron_Technology_美光科技_公司调研_2026-08-19.md"
+      ]
+    },
+    {
+      "old_path": "D:/drive/Investment/基本面/公司调研/云算力_IDC_AI软件平台/CRWV_CoreWeave_公司调研_2026-08-19.md",
+      "expected_sha256": "f2113dc47ea682e3ea688ade7efb644e78b881ba5cdf6a9b743b91e00e3e470f",
+      "matching_backup_paths": [
+        "D:/drive/Investment/基本面/公司调研/云算力_IDC_AI软件平台/备份/CRWV_2026-09-05T11_30_50-07_00-d212552ffa/CRWV_CoreWeave_公司调研_2026-08-19.md"
+      ]
+    },
+    {
+      "old_path": "D:/drive/Investment/基本面/公司调研/云算力_IDC_AI软件平台/GOOGL_Alphabet_Inc_公司调研_2026-07-18.md",
+      "expected_sha256": "0cac46b15dda9c11149cde8c1b8ffc0bfca5247211eb5d60baf99c58c696b45b",
+      "matching_backup_paths": [
+        "D:/drive/Investment/基本面/公司调研/云算力_IDC_AI软件平台/备份/GOOGL_2026-09-05T11_30_51-07_00-33a3e89dd9/GOOGL_Alphabet_Inc_公司调研_2026-07-18.md"
+      ]
+    },
+    {
+      "old_path": "D:/drive/Investment/基本面/行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI_ASIC_2026-08-18.md",
+      "expected_sha256": "728f0278ffe27aed7b3dd422fda6bd95872b67ba980ed24e669d21daed2ee3be",
+      "matching_backup_paths": [
+        "D:/drive/Investment/基本面/行业调研/AI服务器_存储_芯片/备份/AI_ASIC-60a33a1915_2026-09-05T10_49_09-07_00-ca478212b1/行业调研_云厂自研AI_ASIC_2026-08-18.md"
+      ]
+    },
+    {
+      "old_path": "D:/drive/Investment/基本面/行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-08-18.md",
+      "expected_sha256": "9b782c2a4967ff6236ea67a862157933e082dd8e049111e2c87e73060d829223",
+      "matching_backup_paths": [
+        "D:/drive/Investment/基本面/行业调研/AI服务器_存储_芯片/备份/HBM-f54ca0293d_2026-09-05T10_49_08-07_00-e5adfaccf0/行业调研_HBM与高带宽内存_2026-08-18.md"
+      ]
+    },
+    {
+      "old_path": "D:/drive/Investment/基本面/行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-08-18.md",
+      "expected_sha256": "ee58012bd63d2f7b92b8a261e903793cedc2de99bae775e0b49c26356a285f4e",
+      "matching_backup_paths": [
+        "D:/drive/Investment/基本面/行业调研/AI服务器_存储_芯片/备份/AI_NeoCloud_AI-a73667ea16_2026-09-05T10_49_08-07_00-e5adfaccf0/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-08-18.md"
+      ]
+    }
+  ],
+  "note": "The global audit check at 12:14 found source/queue changes since 01:44. Six missing company/industry report paths were resolved to identical archived bytes. This follow-up only writes audit artifacts; it does not modify running research, source reports, queue or historical report text. Original 01:44 validation summary preserved separately; current validation must not be described as all sources unchanged."
+}

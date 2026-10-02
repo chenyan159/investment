@@ -1,0 +1,166 @@
+# 公司收入传导与价值传导评估：Teradyne（TER）
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即 2026Q2-2027Q1；补充口径只用于说明 FY2026/FY2027 或 HBM4、CPO、KGD/SLT 的远期机会，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：最新已披露季度为 2026Q1，收入 12.825 亿美元，同比增长 87%；公司给出的 2026Q2 收入指引为 11.5-12.5 亿美元，中点 12.0 亿美元；最近四个季度收入约 37.87 亿美元，2026Q1 年化为 51.30 亿美元，但不能直接外推为全年基准。
+- 重要产品/业务线：AI SoC/GPU/ASIC 与高速网络 SoC ATE、Memory/HBM 测试、Product Test 与高速板级/光电测试、KGD/SLT/高功率老化和系统级测试、Robotics、传统半导体测试周期抵消项。Device Interface Solutions 已出售给 Technoprobe，Teradyne 的持股或生态协同不计入 NTM 经营收入基准。
+- NTM 公司收入四情景：悲观 41.5-45.5 亿美元；基准 48.5-53.0 亿美元；乐观 55.5-61.5 亿美元；极度乐观 63.5-71.0 亿美元。绝对增速按最近四个季度 37.87 亿美元作比较，分别约 +10%-20%、+28%-40%、+47%-62%、+68%-87%。
+- 利润或 EBITDA 四情景：悲观毛利率 55%-57%、经营利润率 24%-29%；基准毛利率 58%-60%、经营利润率 34%-38%；乐观毛利率 60%-62%、经营利润率 39%-43%；极度乐观毛利率 62%-64%、经营利润率 43%-47%。Q1 2026 60.9% 毛利率和 31.1% 净利率说明 AI 测试 mix 已显著抬升利润质量，但持续性仍取决于 SoC/HBM 高毛利订单是否在 NTM 延续。
+- 最大传导瓶颈：外部 AI 芯片、HBM、先进封装测试需求很强，但 Teradyne 不披露标准 backlog 或 bookings，官方 2026Q1 10-Q 披露的剩余履约义务只包含原始期限超过一年的合同，为 1.174 亿美元，其中约 50% 预计 12 个月内确认；因此 NTM 基准必须更多依赖已确认收入、Q2 指引、产品线收入和客户量产节奏，而不是把行业需求直接收入化。
+- 最大利润率变量：SoC/HBM 高端测试系统占比、UltraFLEXplus/UltraPHY/TestInsight 与 Magnum 7H 的 mix、KGD/SLT 是否从一次性集成项目变成重复采购、以及 Robotics 能否减少亏损或低利润拖累。
+- 最大现金流变量：高增长下的应收账款、库存、客户预付款和供应链准备。2026Q1 经营现金流 2.651 亿美元，说明现金转化为正，但高速增长情景下营运资本会先吸收部分利润。
+- 可信度：基准为中高；乐观为中；极度乐观为低到中。Teradyne 的 A 级证据强在已披露 SoC、Memory、Product Test、Robotics 收入和 Q2 指引；弱在客户、订单、长期 backlog 和 KGD/SLT/光电测试新产品收入拆分不足。
+
+## 2. 重要产品清单
+
+本节口径：只列入能影响 NTM 收入、利润或经营质量的产品/业务线。当前收入基数优先使用 2026Q1 已披露产品线/分部收入和 2026Q2 公司指引；C/D/E 级机会不因主题相关自动进入基准。
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| AI SoC/GPU/custom ASIC/高速网络 SoC ATE（UltraFLEXplus、UltraPHY 224G、TestInsight） | 2026Q1 SoC 8.818 亿美元；NTM 可收入化基数约 27.5-45.5 亿美元，基准 33.5-37.0 亿美元 | 2026Q1 占公司 68.8% | 公司最大收入和利润传导链；AI GPU、ASIC、224G/448G SerDes、chiplet、advanced package 测试直接驱动 | A/B，产品升级为 C | 进入基准。A 级为 SoC 已确认收入，B 级为 Q2 指引和 AI 需求披露；TestInsight/UltraPHY 新增功能只作为 mix 上修 | 448G、更多 rack-scale 或全流程 KGD/SLT 联动属于乐观/极度乐观 |
+| Memory/HBM 测试（Magnum 7H、DRAM/HBM stack/base die test） | 2026Q1 Memory 2.025 亿美元；NTM 基准 7.5-9.5 亿美元 | 2026Q1 占公司 15.8% | HBM3E/HBM4、KGD/KGSD、堆叠和老化测试推高测试时长和设备强度 | A/B，HBM4 节奏为 C | 进入基准。A 级为 Memory 已确认收入；B 级为行业 HBM 测试瓶颈和同业订单/收入验证 | HBM4 大规模量产、更多 die-level 与 stack-level 重复测试进入乐观以上 |
+| Product Test、板级/系统测试、高速 I/O 与光电测试（Omnyx、Photon 100、MultiLane） | 2026Q1 Product Test 0.804 亿美元；NTM 基准 3.6-4.6 亿美元 | 2026Q1 占公司 6.3% | 对 AI 服务器板级测试、1.6T optical、silicon photonics、defense/aerospace 有增量弹性，但当前收入体量小 | A；Photon/MultiLane 为 C/D | 分部已确认收入进入基准；Photon 100 和 1.6T 光电机会不进基准主口径，只进入乐观或极度乐观 | CPO、硅光量产测试站、1.6T/3.2T 光模块测试 |
+| KGD、SLT、高功率 burn-in、advanced package/system-level test（含与 TEL Prexa SDP 集成方案） | IST/System Test 2026Q1 0.265 亿美元；独立可量化收入不足；NTM 基准增量 1.0-2.5 亿美元但多嵌入 SoC/Memory/Product Test | 披露口径约 2.1%，但部分收入嵌入 SoC/Memory | 决定 AI 芯片良率、老化、热管理和交付节奏；可能提升高毛利测试内容 | A/C；TEL 集成方案为 C | 小比例进入基准，且只能作为嵌入式增量处理，不与 SoC/Memory 重复相加 | KGD 变成标准插入步骤、液冷 rack 级 SLT、客户把更多验证外包给 Teradyne |
+| Robotics（Universal Robots、MiR） | 2026Q1 0.913 亿美元；NTM 基准 3.4-4.2 亿美元 | 2026Q1 占公司 7.1% | 不是 AI 数据中心主线，但影响公司组合、费用率和现金流质量 | A | 进入公司基准，但只按工业自动化正常复苏处理，不给 AI 主题溢价 | AI 机器人、AMR 大客户部署只作远期期权 |
+| 传统半导体测试、消费电子/汽车/工业周期抵消项 | 已包含在 SoC、Memory、Product Test 内，无法可靠单独量化 | 无法可靠量化 | 决定 AI 高增是否被非 AI 客户周期、价格或消化库存抵消 | A/B | 进入基准的抵消项，不单独加总收入 | 传统复苏只作为乐观补充，不能替代 AI/HBM 证据 |
+| Device Interface/探针卡生态与 Technoprobe 持股 | 已出售的 Device Interface Solutions 不再作为 Teradyne 合并经营收入 | 0% 合并经营收入 | 可增强生态协同，但不是 TER NTM 收入表主线 | E，持股收益不等于产品收入 | 不进入 NTM 经营收入基准 | 只在附录跟踪 Technoprobe 供给、探针卡周期和 KGD 生态 |
+
+## 3. 产品需求四情景
+
+本步口径：只评估外部需求池，不评估 Teradyne 份额、收入确认或利润率。需求锚使用本地行业报告、SEMI 测试设备周期、AI 芯片/HBM/先进封装路线、同业订单与客户 capex 线索，并和 Teradyne 自身 Q1/Q2 披露相互校准。数值为 NTM 需求强弱和 Teradyne 可接触需求的研究估算，不等同公司收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| AI SoC/GPU/custom ASIC/高速网络 SoC ATE | 2026Q1 公司约 70% 收入与 AI 需求相关；AI GPU、ASIC、224G SerDes、chiplet 测试时长和复杂度上升 | AI 芯片客户消化测试产能，NTM SoC 测试设备需求仅温和高于 2025 run-rate | Blackwell/GB300、custom ASIC、224G 网络 ASIC 正常量产，测试设备需求维持高位 | hyperscaler ASIC 和网络芯片同步加速，测试单元和 test content 同时上修 | 多家客户同时扩充 AI SoC、SerDes、package 和 system test，需求非线性上修 | 从约高双位数增长到接近翻倍的外部需求区间 | 悲观低于当前高位预期；基准符合当前 AI 测试高景气；乐观/极度乐观高于现有 Q1/Q2 run-rate | 正向：Q1 SoC 收入 8.818 亿美元、Q2 指引高位、AI 测试约 70%；反证：不披露 bookings/backlog，客户可能多供或推迟 tester 采购 |
+| Memory/HBM 测试 | HBM3E 12H、HBM4 验证、KGD/KGSD、base die 与 stack test 增加插入点；本地行业报告把 HBM/存储测试列为 2026 瓶颈 | HBM 测试容量扩张慢于位元出货，或 HBM4 认证推迟，需求低于当前扩张预期 | HBM3E 继续放量，HBM4 验证带来增量但不全面量产 | HBM4 认证和高层数堆叠加快，测试时间、并行度和 tester intensity 同时上修 | HBM4、custom HBM 和更严格 burn-in 同时进入 NTM，存储测试设备需求跳升 | 外部 HBM/Memory 测试需求从低双位数增长到 1.5 倍以上 | 基准符合 HBM 测试瓶颈；乐观需看到订单/交期继续拉长 | 正向：Magnum 7H 产品线、Q1 Memory 2.025 亿美元、同业 test systems 高增；反证：HBM 测试方案可能由客户内部优化、测试时间下降或竞争加剧 |
+| Product Test、高速 I/O 与光电测试 | AI 服务器板级测试、1.6T coherent optics、silicon photonics 和 CPO 前期测试需求上升，但收入基数小 | 非 AI board test 复苏慢，1.6T/CPO 仍停留在认证或 pilot | 传统 Product Test 正常恢复，AI 服务器板级和高速 I/O 提供小幅增量 | 1.6T 光模块、co-packaged optics、网络 switch 平台放量，Photon/MultiLane 进入更多客户项目 | 光电测试从 pilot 变成量产瓶颈，Product Test 需求结构被 AI networking 改写 | 从低个位数复苏到 50% 以上需求上修 | 基准仅为正常复苏；乐观以上才纳入硅光/CPO 量产弹性 | 正向：Photon 100、MultiLane JV、224G/1.6T 产业需求；反证：CPO/硅光 NTM 量产节奏不确定，客户可能自研测试平台 |
+| KGD/SLT/高功率 burn-in/system-level test | AI package 良率、老化、热和可靠性要求上升；本地先进封装报告把 test/probe/burn-in/SLT 估计为 AI package 价值量 3%-8% | 客户只把少量高端芯片导入 SLT，或由 OSAT/内部平台吸收 | KGD 和 package/system-level test 在高端 AI 设备中逐步成为标准流程 | TEL Prexa SDP 集成方案、Titan/Titan HP 类高功率测试进入多个客户量产路径 | KGD、burn-in、液冷 rack/system test 同时成为交付瓶颈，客户外采测试设备显著上修 | 可接触需求从小基数增长到数倍，但 NTM 收入不一定同步确认 | 需求上修很强，但基准只能小比例收入化 | 正向：Teradyne 2026-06-08 发布与 Tokyo Electron 集成方案；反证：收入拆分不足、验收和工艺插入节奏慢、容易和 SoC/Memory 重复计算 |
+| Robotics | 工业自动化、协作机器人和 AMR 需求温和恢复；与 AI 数据中心需求相关性低 | 制造业 capex 复苏弱，渠道库存或价格压力延续 | 协作机器人和 AMR 正常恢复，收入接近 2025/Q1 run-rate | 降息或制造业投资恢复，UR/MiR 新品带来温和超预期 | 机器人自动化进入更广泛工业部署，收入和亏损改善同步发生 | 需求从低个位数下滑到 40% 以上增长 | 与 AI 测试主线分开，不能把 AI 服务器 capex 映射到 Robotics | 正向：Q1 Robotics 同比 +32.3%；反证：竞争、渠道、费用投入和历史盈利波动 |
+| 传统半导体测试周期抵消项 | 消费、汽车、工业和传统移动芯片测试处于周期修复和结构分化之间 | 非 AI 客户继续去库存或压价，抵消 AI 增量 | 温和复苏，不显著拖累公司 | 传统 SoC、wireless、auto/industrial 测试同步恢复 | 传统周期和 AI 周期共振，但不作为极度乐观主因 | 从拖累数亿美元到贡献数亿美元 | 基准按抵消项处理 | 正向：半导体资本开支周期改善；反证：传统需求和 AI 需求预算不同，不能混用 |
+
+## 4. 可收入化暴露与收入基数
+
+本步口径：只判断外部需求中哪些可以进入 Teradyne NTM 收入表，以及当前可收入化基数。公司能参与某个需求池不等于能确认收入。A/B 级证据进入基准；C 级只有在客户、产品、时间表清楚时小比例折扣纳入；D/E 级不进入基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| AI SoC/GPU/custom ASIC/高速网络 SoC ATE | 2026Q1 SoC 收入 8.818 亿美元；Q2 公司收入指引 11.5-12.5 亿美元；公司称约 70% Q1 收入与 AI 需求相关 | 直接收入 | 高毛利、高经营杠杆，但客户集中和产品周期强 | 27.5-31.0 亿美元 | 33.5-37.0 亿美元 | 40.5-45.5 亿美元 | 48.5-55.0 亿美元 | 基准接近当前高位 run-rate，乐观高于 Q1/Q2 隐含路径 | A/B；新功能 C | 是 | 已确认 SoC 产品线收入、Q2 指引、AI 相关收入比例、产品路线披露 | 进入 NTM 主口径；乐观以上需客户加单、224G/448G 与 custom ASIC 同步放量 |
+| Memory/HBM 测试 | 2026Q1 Memory 收入 2.025 亿美元；Magnum 7H 公开产品面向 HBM/DRAM 测试 | 直接收入 | 高毛利，受 HBM 客户采购节奏和竞争影响 | 5.5-7.0 亿美元 | 7.5-9.5 亿美元 | 10.5-13.5 亿美元 | 14.5-18.5 亿美元 | 基准符合 HBM3E 高景气；乐观高于当前 HBM 测试节奏 | A/B；HBM4 C | 是 | 已确认 Memory 收入、本地 HBM 测试瓶颈、同业高端测试需求验证 | 进入 NTM 主口径；HBM4 量产只进入乐观/极度乐观 |
+| Product Test、高速 I/O 与光电测试 | 2026Q1 Product Test 收入 0.804 亿美元；Photon 100 与 MultiLane 为公开产品/JV 信息 | 直接收入 | 基准利润率低于高端 Semi Test；光电测试若量产可提升 mix | 2.8-3.4 亿美元 | 3.6-4.6 亿美元 | 5.0-6.5 亿美元 | 7.0-9.0 亿美元 | 基准为正常分部收入；乐观以上依赖 1.6T/CPO 客户确认 | A；Photon/MultiLane C/D | 是，Photon 小比例不进基准 | Product Test 分部收入可确认；新光电机会尚缺量化客户和收入确认节奏 | 分部收入进入基准；光电测试为乐观上限，不替代基准 |
+| KGD/SLT/高功率 burn-in/system-level test | 2026Q1 IST/System Test 0.265 亿美元；2026-06-08 与 TEL Prexa SDP 集成方案；Titan/Titan HP 产品线 | 直接但多嵌入 SoC/Memory/Product Test | 高复杂度、高服务和集成价值；也可能有验收、项目成本和客户导入成本 | 0.3-1.0 亿美元 | 1.0-2.5 亿美元 | 2.5-5.5 亿美元 | 5.5-10.0 亿美元 | 基准低于行业叙事，只承认小比例可收入化；极度乐观只是 NTM 上限 | A/C | 小比例进入，且避免重复计算 | A 级为 IST 小收入；C 级为明确产品/合作但缺量化订单 | 作为嵌入式增量进入；不得和 SoC/HBM 需求重复加总 |
+| Robotics | 2026Q1 Robotics 0.913 亿美元；UR/MiR 分部披露 | 直接收入 | 毛利和经营杠杆低于 Semi Test，费用率是关键 | 2.8-3.4 亿美元 | 3.4-4.2 亿美元 | 4.4-5.5 亿美元 | 6.0-7.5 亿美元 | 基准为正常恢复，不因 AI 主题上调 | A | 是 | 分部收入已确认，需求来自工业自动化而非 AI 测试 | 进入公司汇总，但利润贡献保守 |
+| 传统半导体测试周期抵消项 | 嵌入 SoC/Memory/Product Test；无法可靠量化独立收入 | 直接收入和抵消项 | 周期性、价格和利用率决定利润留存 | 拖累 2-5 亿美元 | 约 -1 到 +1 亿美元 | 贡献 1-3 亿美元 | 贡献 3-5 亿美元 | 基准按中性偏保守处理 | A/B | 是，作为抵消项 | 来自产品线总收入、非 AI 周期和客户预算差异 | 不单独加总，只用于校准公司汇总 |
+| Device Interface/Technoprobe 生态 | DIS 已出售；Teradyne 持股不是合并经营收入 | 间接 | 可有投资收益或生态协同，但不是产品收入 | 0 | 0 | 0 | 0 | 对当前经营收入无直接贡献 | E | 否 | 无 TER NTM 合并收入确认路径 | 排除出 NTM 经营收入，仅附录跟踪 |
+
+补充校正：本报告不使用“RPO 约 15.678 亿美元、88% 在 12 个月内确认”的口径。Teradyne 2026Q1 10-Q 披露的是原始期限超过一年的剩余履约义务 1.174 亿美元，其中约 50% 预计在 12 个月内确认；递延收入和客户预付款为 2.555 亿美元。公司未披露可作为标准 backlog 的完整订单池，所以 NTM 收入基准不能由 RPO 外推。
+
+## 5. 产品级收入和利润贡献
+
+本步口径：从第三步需求和第四步收入基数出发，评估 NTM 内产品级收入和利润贡献。收入为 Teradyne 可确认收入，不是 TAM、客户 capex 或项目总额。利润贡献为产品/分部层面的经营利润或贡献利润研究估算，基于已披露毛利率、分部表现、产品 mix 与费用杠杆推算；公司没有披露到每个产品的完整利润表，无法可靠量化处均明确说明。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| AI SoC/GPU/custom ASIC/高速网络 SoC ATE | 悲观 | 27.5-31.0 亿美元 | 9.5-11.5 亿美元 | 低于 Q1 高位，毛利率和利用率回落 | 低于当前 AI 测试高景气预期 | Q1 SoC 高基数，但缺完整 backlog | 保留为悲观 | 客户推迟 tester 采购、多供压价、传统 SoC 抵消 |
+| AI SoC/GPU/custom ASIC/高速网络 SoC ATE | 基准 | 33.5-37.0 亿美元 | 13.5-15.5 亿美元 | 高毛利 mix 延续，经营杠杆正常 | 符合 Q1/Q2 run-rate 折扣后的当前预期 | SoC 8.818 亿美元、Q2 指引、AI 约 70% | 保留为基准 | Q1 年化不可机械外推 |
+| AI SoC/GPU/custom ASIC/高速网络 SoC ATE | 乐观 | 40.5-45.5 亿美元 | 17.5-21.0 亿美元 | mix 和利用率改善 | 高于当前预期 | custom ASIC、224G 网络、UltraPHY/TestInsight 增强 | 保留为乐观 | 需明确客户加速和交付确认 |
+| AI SoC/GPU/custom ASIC/高速网络 SoC ATE | 极度乐观 | 48.5-55.0 亿美元 | 22.5-27.5 亿美元 | 高端 SoC 测试成为主要利润引擎 | 显著高于当前预期 | 多客户 AI 芯片和高速 I/O 同步放量 | 下移为低可信上限 | 缺完整订单池和客户分散验证 |
+| Memory/HBM 测试 | 悲观 | 5.5-7.0 亿美元 | 1.8-2.5 亿美元 | 利润率承压但仍高于传统测试 | 低于 HBM 测试瓶颈预期 | Q1 Memory 2.025 亿美元 | 保留为悲观 | HBM4 推迟、测试时间优化、竞争加剧 |
+| Memory/HBM 测试 | 基准 | 7.5-9.5 亿美元 | 2.8-4.0 亿美元 | mix 稳定偏强 | 符合当前 HBM3E/HBM4 验证节奏 | Magnum 7H、HBM 测试瓶颈、Q1 收入 | 保留为基准 | 客户内部测试和同业份额竞争 |
+| Memory/HBM 测试 | 乐观 | 10.5-13.5 亿美元 | 4.3-6.2 亿美元 | 高毛利和规模效应上行 | 高于当前预期 | HBM4/高层数堆叠、KGD/KGSD 插入点增加 | 保留为乐观 | 需订单、交期或客户导入证明 |
+| Memory/HBM 测试 | 极度乐观 | 14.5-18.5 亿美元 | 6.5-9.5 亿美元 | 利润非线性上修 | 显著高于当前预期 | HBM4 量产提前且 tester intensity 上升 | 下移为乐观上限 | NTM 全面量产时间表不足 |
+| Product Test、高速 I/O 与光电测试 | 悲观 | 2.8-3.4 亿美元 | 0.1-0.4 亿美元 | 低利用率，利润贡献薄 | 低于正常恢复 | Q1 Product Test 0.804 亿美元 | 保留为悲观 | 非 AI board test 复苏慢，Photon 未量产 |
+| Product Test、高速 I/O 与光电测试 | 基准 | 3.6-4.6 亿美元 | 0.4-0.9 亿美元 | 小幅改善 | 符合当前分部 run-rate | Product Test 已确认收入 | 保留为基准 | 光电测试不进入基准主贡献 |
+| Product Test、高速 I/O 与光电测试 | 乐观 | 5.0-6.5 亿美元 | 0.8-1.5 亿美元 | mix 改善 | 高于当前预期 | Photon 100、MultiLane、1.6T 光模块测试需求 | 保留但可信度中低 | 客户量产时间表和收入确认不足 |
+| Product Test、高速 I/O 与光电测试 | 极度乐观 | 7.0-9.0 亿美元 | 1.4-2.5 亿美元 | 若光电量产则上行 | 明显高于当前预期 | CPO/硅光测试成为网络瓶颈 | 移入附录跟踪 | CPO NTM 大规模量产证据不足 |
+| KGD/SLT/高功率 burn-in/system-level test | 悲观 | 0.3-1.0 亿美元 | 无法可靠量化；估计 0-0.3 亿美元 | 项目成本和验收压制利润 | 低于当前主题预期 | IST 0.265 亿美元 | 保留为悲观 | 缺客户订单和收入拆分 |
+| KGD/SLT/高功率 burn-in/system-level test | 基准 | 1.0-2.5 亿美元 | 0.3-1.0 亿美元 | 嵌入式增量，利润率取决于集成成本 | 符合保守收入化 | TEL Prexa SDP 集成方案、产品线可验证 | 保留但只小比例纳入 | 与 SoC/Memory/Product Test 重复计算风险 |
+| KGD/SLT/高功率 burn-in/system-level test | 乐观 | 2.5-5.5 亿美元 | 1.0-2.5 亿美元 | 高复杂度测试提高 mix | 高于当前基准 | KGD/SLT 插入点增加，客户从验证走向量产 | 保留为乐观上限 | 需要客户、交付、验收和价格证据 |
+| KGD/SLT/高功率 burn-in/system-level test | 极度乐观 | 5.5-10.0 亿美元 | 2.5-5.0 亿美元 | 若成为标准流程可显著上修 | 显著高于当前预期 | 高功率 burn-in 与 rack/system test 同时突破 | 移入附录跟踪 | C 级证据不足以支持公司基准 |
+| Robotics | 悲观 | 2.8-3.4 亿美元 | -0.4 到 0 亿美元 | 费用率拖累 | 低于正常恢复 | Q1 Robotics 0.913 亿美元 | 保留为悲观 | 工业 capex、渠道和竞争 |
+| Robotics | 基准 | 3.4-4.2 亿美元 | -0.2 到 0.3 亿美元 | 接近盈亏平衡到小幅盈利 | 符合当前 run-rate | 分部已确认收入 | 保留为基准 | 不是 AI 数据中心主线 |
+| Robotics | 乐观 | 4.4-5.5 亿美元 | 0.2-0.7 亿美元 | 利用率和费用杠杆改善 | 高于当前预期 | 协作机器人和 AMR 需求恢复 | 保留但权重低 | 不能用 AI 服务器 capex 证明 |
+| Robotics | 极度乐观 | 6.0-7.5 亿美元 | 0.7-1.4 亿美元 | 规模效应显著改善 | 显著高于当前预期 | 工业自动化共振 | 仅作跟踪 | 缺 NTM 客户和订单证据 |
+| 传统半导体测试周期抵消项 | 悲观 | 对公司收入拖累 2-5 亿美元 | 拖累 0.8-1.8 亿美元 | 价格和利用率下行 | 低于当前预期 | 非 AI 需求分化 | 保留 | 周期拖累不能在公司层面重复惩罚 |
+| 传统半导体测试周期抵消项 | 基准 | -1 到 +1 亿美元 | -0.4 到 +0.4 亿美元 | 中性 | 符合当前预期 | AI 与非 AI 预算分离 | 保留 | 已嵌入产品线 |
+| 传统半导体测试周期抵消项 | 乐观 | 贡献 1-3 亿美元 | 0.3-1.0 亿美元 | 利用率改善 | 高于当前预期 | 半导体资本开支回暖 | 保留为低权重 | 不能替代 AI SoC/HBM 证据 |
+| 传统半导体测试周期抵消项 | 极度乐观 | 贡献 3-5 亿美元 | 1.0-1.8 亿美元 | 周期与 AI 共振 | 明显高于当前预期 | 传统客户复苏 | 仅作跟踪 | 与 AI 需求同向但证据独立性不足 |
+
+产品层级汇总检查：公司情景不机械相加所有产品行。KGD/SLT、高速光电测试、传统抵消项与 SoC/Memory/Product Test 存在收入嵌入关系，汇总时只将其作为 mix、利润率和情景校准变量处理。
+
+## 6. 公司收入和利润四情景
+
+本步口径：将产品贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。基准比较锚为 2026Q1 已确认收入、2026Q2 指引、最近四个季度 37.87 亿美元收入和公司当前 AI 测试高景气披露。所有金额为美元。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观 | 41.5-45.5 亿美元 | 较最近四个季度约 +10%-20%；较 2025 年约 +30%-43% | 低于 Q1/Q2 run-rate 和 AI 测试高位预期；AI 增量不足以抵消客户推迟、传统周期或价格压力 | 55%-57% | 24%-29% | EBITDA 约 11.5-14.5 亿美元；净利润约 8.5-10.5 亿美元 | 正但低于利润增长，库存和应收占用上升 | 中 | 缺完整 backlog、客户集中、测试产能消化、Robotics 费用拖累 |
+| 基准 | 48.5-53.0 亿美元 | 较最近四个季度约 +28%-40%；较 2025 年约 +52%-66% | 接近 Q2 指引与 Q1 高位 run-rate 折扣后的当前经营预期；SoC/HBM 正常兑现，KGD/SLT 小比例收入化 | 58%-60% | 34%-38% | EBITDA 约 18.0-21.0 亿美元；净利润约 13.5-16.5 亿美元 | 明显为正，但营运资本吸收部分增量 | 中高 | SoC/HBM 订单持续性、收入确认节奏、非 AI 抵消项 |
+| 乐观 | 55.5-61.5 亿美元 | 较最近四个季度约 +47%-62%；较 2025 年约 +74%-93% | 高于当前预期；AI SoC、HBM、高速 I/O、KGD/SLT 至少两条链路同步强于基准 | 60%-62% | 39%-43% | EBITDA 约 23.0-27.0 亿美元；净利润约 18.0-21.5 亿美元 | 强正，若客户预付款和交付节奏配合则现金转化改善 | 中 | 需客户加单、交付和高毛利 mix 同时成立 |
+| 极度乐观 | 63.5-71.0 亿美元 | 较最近四个季度约 +68%-87%；较 2025 年约 +99%-123% | 显著高于当前预期；需求、公司捕获、利润质量和执行质量同时突破 | 62%-64% | 43%-47% | EBITDA 约 29.0-34.0 亿美元；净利润约 23.0-28.0 亿美元 | 很强但也可能先被库存、应收和产能准备占用 | 低到中 | 缺完整订单披露；需 HBM4、custom ASIC、KGD/SLT、光电测试多项同时 NTM 量产 |
+
+汇总说明：
+
+- 收入重复计算处理：SoC、Memory、Product Test 为公司收入主框架；KGD/SLT、Photon 100、传统周期抵消项不作为额外完全独立收入池机械相加。
+- 一次性和会计口径处理：DIS 出售后不计入合并经营收入；Technoprobe 持股不计入 NTM 产品收入；汇率和投资收益不作为经营传导主证据。
+- 低毛利 pass-through 检查：Teradyne 的核心 SoC/HBM 测试系统不是典型低毛利 pass-through，但 Product Test 和 Robotics 的利润质量低于 Semi Test，乐观公司情景必须由高毛利 Semi Test mix 支撑。
+
+## 7. 证据校准、反证和可信度
+
+本步口径：不重新预测，只校准前四步情景。正向证据只提升它实际对应的层级；同一风险只在对应层级处理一次，不在产品和公司层面重复扣减。校准动作仅使用保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 12.825 亿美元，同比增长 87%，约 70% 与 AI 需求相关 | 收入基数、公司汇总 | 显著提高 SoC/HBM NTM 基数可信度 | 高端测试 mix 支撑 60.9% 毛利率 | 高增长下应收和库存可能增加 | 基准和乐观保留 |
+| 2026Q2 收入指引 11.5-12.5 亿美元 | 收入确认、执行 | 证明 Q1 高位不是完全一次性，但低于 Q1 年化 | 利润率仍需看 mix 和费用 | 提供 NTM 前段收入锚 | 基准保留，极度乐观不得只用 Q1 年化 |
+| 官方 RPO 口径较小，且公司不披露完整 backlog/bookings | 证据可信度 | 限制把行业需求直接转为收入 | 对利润率无直接下调，但限制可见性 | 订单能见度不足 | 极度乐观下移为低可信上限；不重复惩罚基准已折扣部分 |
+| SoC 产品线 2026Q1 8.818 亿美元，Memory 2.025 亿美元 | 产品贡献 | 支撑两条主线进入基准 | 高毛利产品占比提升 | 交付节奏仍需跟踪 | 基准保留 |
+| HBM3E/HBM4、KGD/KGSD、advanced package/system-level test 产业瓶颈 | 需求、产品贡献 | 支撑 Memory、KGD/SLT 乐观需求 | 若测试复杂度提高，有利 mix | 若验收/良率慢，收入确认延迟 | 乐观保留；极度乐观需更多订单证据 |
+| TEL Prexa SDP 集成方案和高功率 SLT/burn-in 产品 | 收入基数、执行 | C 级证据，显示可参与但未充分量化可确认收入 | 若量产可提升利润质量 | 集成、验收和客户导入时间不确定 | 基准只小比例纳入；极度乐观移入附录跟踪 |
+| Photon 100/MultiLane 与 1.6T 光电测试 | 需求、收入基数 | 证明产品方向，但 NTM 收入路径不足 | 光电量产可能改善 Product Test mix | 客户 pilot 到量产不确定 | Product Test 乐观保留；极度乐观移入附录跟踪 |
+| Robotics Q1 同比增长但不是 AI 数据中心核心 | 公司组合 | 支撑分部基准收入，不支持 AI 倍数式上修 | 低于 Semi Test 的利润质量限制公司 margin | 费用率和渠道决定现金质量 | 基准保留，极度乐观仅作跟踪 |
+| 客户集中和多供竞争 | 公司捕获、价格 | 限制 SoC/HBM 极度乐观 | 可能压低 ASP 或服务成本 | 大客户验收/交期变化影响现金 | 在产品捕获层处理，不在需求层重复惩罚 |
+| 传统半导体测试周期 | 公司组合 | 可能抵消部分 AI 增长 | 利用率和价格影响利润 | 影响库存和产能计划 | 在公司组合层处理一次 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | AI/HBM 需求仍增长，但低于当前高位预期；传统周期、客户推迟或价格压力拖累 NTM | Q1/Q2 收入基数很高，悲观也不等于收入下滑 | 缺 backlog、客户集中、非 AI 周期抵消、Robotics 费用拖累 | 保留 | 悲观公司 41.5-45.5 亿美元、毛利率 55%-57%、经营利润率 24%-29% | 中 | 传统周期抵消只在公司组合层处理，不再重复压低 SoC/HBM 需求 |
+| 基准 | A/B 级收入和指引正常兑现，C 级新机会小比例折扣纳入 | SoC、Memory、Product Test、Robotics 均有已确认收入；Q2 指引支持 NTM 前段 | Q1 年化不可外推；RPO 小且非完整 backlog；KGD/光电拆分不足 | 保留 | 基准公司 48.5-53.0 亿美元、毛利率 58%-60%、经营利润率 34%-38% | 中高 | backlog 能见度不足已通过不使用行业 TAM 外推处理，不再二次下调基准 |
+| 乐观 | SoC/HBM 继续强于基准，KGD/SLT 或高速 I/O 至少一条新增链路转为收入 | AI 约 70% 收入、HBM 测试瓶颈、TEL 集成方案、Photon/MultiLane 产品线 | 公司特定订单和客户量化不足，部分机会仍是 C/D 级 | 保留 | 乐观公司 55.5-61.5 亿美元、毛利率 60%-62%、经营利润率 39%-43% | 中 | KGD/SLT 与 SoC/Memory 重叠风险只在汇总时扣除，不在产品需求层重复扣除 |
+| 极度乐观 | 多条高端测试链路同时 NTM 量产，收入和利润率非线性上修 | SoC/HBM 高基数、AI 芯片复杂度、HBM4/KGD/SLT/光电测试远期空间 | 关键环节缺完整订单池、客户时间表和产品收入拆分；Photon/CPO 和部分 KGD 仍偏远期期权 | 下移 | 作为低可信 NTM 上限和附录跟踪，不作为基准或普通乐观结论 | 低到中 | 缺订单证据限制极度乐观，不再额外惩罚基准的 A/B 级收入 |
+
+## 8. 结论
+
+- 最可能情景：基准。NTM 收入最可能落在 48.5-53.0 亿美元区间，核心来自 AI SoC/GPU/ASIC 测试和 HBM/Memory 测试正常兑现；这高于最近四个季度 37.87 亿美元，也明显高于 2025 年收入，但低于把 2026Q1 单季直接年化后的简单外推。
+- NTM 收入结论：Teradyne 的收入传导链条不是“AI capex 总额到公司收入”的简单映射，而是 AI 芯片复杂度、HBM 堆叠、SerDes 速率、advanced package 良率和 system-level 验证转化为 tester 数量、测试时长、仪器配置和软件/服务 mix。当前 A/B 级收入证据足以支撑高基准，但不足以把所有 KGD/SLT、光电和 HBM4 机会纳入基准。
+- 利润/现金流结论：利润质量主要由 Semi Test 高毛利 mix 决定。基准情景下毛利率 58%-60%、经营利润率 34%-38%可守；乐观情景需要 SoC/HBM 高端 mix 继续提升，且 Robotics 不明显拖累。现金流方向为正，但高速增长会先增加应收、库存和供应链准备，不能把净利润完全等同自由现金流。
+- 主要传导瓶颈：第一是标准 backlog/bookings 不披露导致 NTM 能见度低；第二是 KGD/SLT 和光电测试已有产品证据但收入确认路径不足；第三是大客户、多供和传统周期会影响份额、ASP 与订单节奏；第四是 Robotics 的利润质量低于 Semi Test，可能稀释公司层面 margin。
+- 乐观情景成立条件：2026Q2 以后 SoC/HBM 收入保持接近或高于 Q1/Q2 高位节奏；客户在 custom ASIC、224G/448G SerDes、HBM3E/HBM4 验证中继续加单；KGD/SLT 或 Photon 100 至少一条新链路出现可验证客户、交付时间表和收入确认；毛利率保持 60% 附近或更高。
+- 极度乐观情景成立条件：AI SoC、HBM、KGD/SLT、高速光电测试、传统半导体周期和执行效率同时突破；不仅有需求叙事，还要有公司特定订单、客户导入、产能交付和收入确认证据。任一核心环节缺证据，极度乐观都只能作为 NTM 上限或附录跟踪。
+- 悲观情景触发条件：Q2 以后收入低于指引中点并且 SoC/Memory 同时降速；客户推迟 tester 采购或转向多供压价；HBM4/KGD/SLT 导入延后；传统半导体测试和 Robotics 费用拖累超过 AI 增量；毛利率跌破 57% 且经营现金流明显弱于净利润。
+- 后续跟踪数据：Teradyne 季度 SoC/Memory/Product Test/Robotics 收入、Q3/Q4 指引、AI 相关收入比例、毛利率和经营利润率、经营现金流与库存/应收、官方是否新增 backlog 或订单口径、Magnum 7H/HBM4 客户进展、TEL Prexa SDP/KGD 量产导入、Photon 100/1.6T 光电客户、Advantest/FormFactor/Cohu/Aehr 的 AI 测试订单和交期。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：报告日期 2026-06-12；最新公司经营数据为 Teradyne 2026Q1，季度截止 2026-03-29；2026Q2 指引来自 2026-04-28 发布的 Q1 业绩新闻稿。
+- 主要收入、订单、指引和利润率来源：Teradyne Q1 2026 results；Teradyne 2026Q1 Form 10-Q；Teradyne 2025 Form 10-K；Teradyne Q4/FY2025 results；本地 `公司调研/封测_检测_计量_光罩/TER_Teradyne_公司调研_2026-06-11.md`。本报告以官方 10-Q 口径修正 RPO/递延收入，不使用旧稿中不一致的 RPO 数字。
+- 行业和产品来源：本地 `行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-06-11.md`、`行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-06-11.md`、`行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-06-11.md`、`行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`、`行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`；公开来源包括 SEMI equipment forecast、Advantest FY2025 results、FormFactor Q1 2026 results、Cohu Q1 2026 results、Aehr AI processor burn-in order。
+- 产品来源：Teradyne Magnum 7H product page；Teradyne UltraFLEXplus/UltraPHY/TestInsight related materials；Teradyne Photon 100 and MultiLane 1.6T optical testing materials；Teradyne 2026-06-08 integrated test solution with Tokyo Electron Prexa SDP；Teradyne AI computing and AI chiplet testing articles。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026/FY2027 若 AI 测试周期延续，收入可能继续高于 2025 年；但本报告不把长期 run-rate、HBM4 全面量产、CPO/硅光大规模量产、rack-scale SLT 或 Technoprobe 生态协同纳入 NTM 基准。它们只作为乐观、极度乐观或后续跟踪项。
+- 主要排除：未使用下游量化验证资料、排序资料或金融市场定价数据。报告只评估从需求到可确认收入、利润和经营现金流的传导。
+- 主要来源链接：
+  - https://investors.teradyne.com/news-events/press-releases/detail/440/teradyne-reports-first-quarter-2026-results
+  - https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-201058/ter-20260329.htm
+  - https://investors.teradyne.com/news-events/press-releases/detail/433/teradyne-reports-fourth-quarter-and-full-year-2025-results
+  - https://investors.teradyne.com/sec-filings/all-sec-filings/content/0001193125-26-127510/0001193125-26-127510.pdf
+  - https://investors.teradyne.com/news-events/press-releases/detail/443/teradyne-introduces-integrated-test-solution-for-ai-and-data-center-devices-in-collaboration-with-tokyo-electron
+  - https://www.teradyne.com/products/magnum-7h/
+  - https://www.teradyne.com/2026/05/21/preparing-for-mass-production-of-1-6t-coherent-optical-transceivers/
+  - https://www.teradyne.com/2026/02/10/how-ai-is-changing-computing/
+  - https://www.teradyne.com/test-connection/ai-chiplet-testing/
+  - https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-projected-to-reach-a-record-of-156-billion-dollars-in-2027-semi-reports
+  - https://www.advantest.com/en/news/2026/a81o6o0000000hgw-att/E_FR_FY2025_FN.pdf
+  - https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-first-quarter-results/
+  - https://ir.cohu.com/news-releases/news-release-details/cohu-reports-first-quarter-2026-results
+  - https://ir.cohu.com/news-releases/news-release-details/cohu-receives-second-multi-unit-order-testing-next-generation-ai
+  - https://www.aehr.com/2026/05/aehr-receives-record-41-million-production-order-from-its-lead-hyperscale-ai-customer-to-support-high-volume-production-test-and-burn-in-of-ai-processors/

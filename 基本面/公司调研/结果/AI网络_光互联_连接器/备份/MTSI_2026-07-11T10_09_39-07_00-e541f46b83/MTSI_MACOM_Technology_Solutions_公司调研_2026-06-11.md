@@ -1,0 +1,324 @@
+# MTSI / MACOM Technology Solutions 公司调研：AI 光互联模拟前端、1.6T/3.2T 与防务 GaN（2026-06-11）
+
+报告日期：2026-06-11。  
+公司：MACOM Technology Solutions Holdings, Inc.  
+股票代码：MTSI / Nasdaq。  
+正式目录：`公司调研/AI网络_光互联_连接器/`，依据 `公司调研/公司索引.md`。  
+资料边界：本报告只使用 `行业调研/` 下与 AI 网络、光互联、LPO/LRO、DSP/TIA/CDR、AI 数据中心订单映射相关资料，以及联网公开资料；未读取、引用或继承 `特征量化/`、`日度资料/` 或旧版公司调研正文。  
+口径说明：除特别注明外，金额单位为美元，季度为 MACOM 财年；产品级收入、BOM、每 MW/每 rack/每 GPU 内容量为基于公司披露、行业 BOM 和 attach rate 的估算，不是公司逐项披露。
+
+## 1. 公司整体业务、投资人定位与财务快照
+
+### 1.1 一句话结论
+
+MACOM 不是 AI GPU、交换芯片或光模块整机公司，而是 AI 数据中心高速互联里的上游模拟/光电半导体供应商：它把价值卡在 `电信号 -> 光信号`、`高速铜连接 -> 低功耗补偿`、`防务 RF/GaN -> 高可靠放大/射频前端` 这些难以轻易替代的环节。投资人目前把它看成三条增长线叠加的公司：`AI 数据中心 800G/1.6T/3.2T 光互联模拟前端`、`防务/航天 GaN 与 RF 半导体`、`5G/SATCOM/电信恢复`，其中 AI 光互联是估值扩张的核心，防务和 SATCOM 提供订单稳定性。
+
+### 1.2 业务构成和产业链位置
+
+| 业务市场 | FY2026Q2 收入 | 占比 | 关键产品 | 产业链位置 |
+|---|---:|---:|---|---|
+| Industrial & Defense | `$120.7M` | `41.8%` | GaN/GaAs/InP RF、功率放大器、MMIC、雷达/电子战/卫星通信器件、MRI 高压非磁性二极管 | 防务、航天、工业设备上游 RF/模拟半导体 |
+| Data Center | `$98.2M` | `34.0%` | PAM4 modulator drivers、TIA、CDR/OCR、linear equalizers、photodiodes、lasers、coherent-lite、copper cable driver | AI 光模块/ACC/AOC/交换机互联上游芯片与光电器件 |
+| Telecom | `$70.1M` | `24.3%` | 5G base station RF、SATCOM、microwave backhaul、PON/接入、传统电信光电器件 | 电信与卫星通信设备上游 |
+
+MACOM 的关键位置在高速网络的 PMD/analog front-end，不是模块品牌或云厂总包。下游客户通常是光模块厂、线缆/ACC/AOC 厂、交换机/NIC/系统厂、防务主承包商、电信设备厂。AI 数据中心越往 `800G -> 1.6T -> 3.2T` 走，单个光端口对高速模拟前端、低噪声 TIA、高线性 driver、CW laser、CDR/均衡/遥测的依赖越高，MACOM 的可服务内容量随端口速度上升而扩张。
+
+### 1.3 近 3 年重大业务变化
+
+| 时间 | 事件 | 投资含义 |
+|---|---|---|
+| 2023-02 至 2023-06 | 收购 OMMIC SAS 资产与运营，约 `EUR 38.5M`，建立欧洲半导体中心；OMMIC 具备 GaAs/GaN/InP、MOCVD 外延、毫米波 MMIC 和晶圆制造能力。 | 增强 III-V 材料、毫米波、GaN/GaAs/InP 工艺能力，服务防务、SATCOM 和高频通信。 |
+| 2023-08 至 2023-12 | 以约 `$125M` 收购 Wolfspeed RF 业务，含 `$75M` 现金和 `$50M` MACOM 股票；取得 GaN-on-SiC RF 产品、客户、专利、后道能力，并约定 RTP 100mm GaN fab 后续转移。 | 把公司从 fabless/外协更进一步推向自有 RF/GaN 制造能力，强化防务与高功率射频。 |
+| 2025 FYQ4 | 与 RF 业务相关的 RTP fab/资产转移进入财务报表，Q4 包含 `$10.1M` acquired-assets gain。 | 自有产能增加，短期有整合/折旧/利用率变量，中期改善防务与 RF 毛利和交付控制。 |
+| 2026-03 | OFC 2026 展示 3.2T optical transmit、1.6T retimed optics / ACC / LPO、PCIe 6/7、800G LR2 coherent-lite、75/100mW CW laser。 | 明确把 AI scale-up、scale-out、campus/scale-across 作为产品路线核心。 |
+| 2026-03 | 发布 `MAOM-025408` MZM driver、`MAOM-022404` EML driver，面向 400G/lane、1.6T/3.2T optical transceiver。 | 从 1.6T 当期收入向 3.2T/400G-per-lane 期权延伸。 |
+| 2026-03 | 发布 `MACD-41804` cable driver with equalizer，面向 1.6T OSFP 等高密度铜互联。 | 不只押注光模块，也参与短距 scale-up copper/ACC 的低功耗路线。 |
+| 2026-04/05 | 宣布拟向 IQE 投资 `GBP 45M`，并签长期外延供应协议，涉及 InP、SiC 等技术；管理层称用于提升供应链安全和韧性。 | 直接服务 InP 光电产品和 SiC/GaN RF 供应安全；是对 2027-2028 增长的产能/材料背书。 |
+
+### 1.4 估值、股价与盈利质量快照
+
+行情和估值高度波动，以下为 2026-06-11 盘中/公开数据源快照。Yahoo chart 盘中价格为 `368.145` 美元，时间戳折算为 2026-06-11 10:51 PT；Yahoo/StockAnalysis 等源对市值和 forward PE 因股本、EPS 估计不同略有差异。
+
+| 指标 | 最新值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | `约 $368.15` | 2026-06-11 10:51 PT，Yahoo chart | 当日高低约 `$372.31 / $358.25`；前收 `$354.40`。 |
+| 市值 | `约 $27.0B`，稀释口径约 `$28-29B` | 2026-06-10/11，公开行情与稀释股数差异 | Yahoo/公开源多用基本股数；若用 FY2026Q3 指引稀释股数 `78.5M` 乘盘中价会更高。 |
+| Trailing PE | `约 150-152x` | 2026-06-10/11，Yahoo/StockAnalysis | 受 FY2025 债务清偿损失和高成长预期影响，GAAP TTM PE 很高。 |
+| Forward PE | `约 52-57x` | 2026-06-10/11，Yahoo/StockAnalysis | 市场主要定价 FY2026H2 和 FY2027 数据中心/防务增长。 |
+| Price/Sales | `约 25.0-26.5x` | TTM revenue `$1.074B`，市值口径差异 | 对普通模拟半导体极贵，对 AI 光互联高 beta 标的仍属高预期定价。 |
+| 最近季度收入增速 | `+22.5% YoY` | FY2026Q2，收入 `$289.0M` | 全部三大市场均增长，Data Center 和 I&D 领先。 |
+| FY2025 收入增速 | `+32.6% YoY` | FY2025 全年收入 `$967.3M` | 2025 已是高增长基数。 |
+| TTM 毛利率 | `约 55.7% GAAP` / 最新季度 `56.9% GAAP` | 截至 FY2026Q2，四季度滚动计算 | FY2026Q2 adjusted gross margin `58.5%`；Q3 指引 `59.0%-60.0%`。 |
+| TTM 净利率 | `约 16.5% GAAP` | FY2025Q3-FY2026Q2 GAAP net income `$176.7M` / revenue `$1.074B` | FY2025 全年 GAAP 因债务清偿一次性损失为净亏损；当前季度盈利质量已改善。 |
+| FY2026Q2 adjusted operating margin | `27.8%` | 公司披露 | 经营杠杆强，Q2 adjusted operating income `$80.5M`。 |
+
+估值判断：股价已经把 MACOM 从“普通 RF/模拟半导体”重估为“AI 光互联芯片 + 防务 GaN”标的。当前最大优势是订单和指引同时上修；最大风险是估值对 Data Center 持续 `>60%` 增长、1.6T 放量、毛利率到 `60%` 的路径非常敏感。
+
+### 1.5 资产负债表和财务健康
+
+截至 2026-04-03，MACOM 资产负债表健康度高：
+
+- 现金及短期投资约 `$664.9M`；总资产约 `$2.015B`；总负债约 `$596.8M`。
+- 流动资产约 `$1.13B`，流动负债约 `$149.7M`，流动比率约 `7.5x`，短债压力显著下降。
+- 长期债务约 `$340.2M`，加 finance lease / financing obligation 后总债务口径约 `$376.9M`，净现金约 `$288M`。
+- 2026 年 3 月已处理到期 convertible notes 后，短期债务从 2025-10-03 的 `$160.9M` 降为 `0`。
+- 财务风险主要不是偿债，而是：高估值下股权激励摊销高、R&D/产能/供应链投资上升、IQE 投资与外延供应协议需要监管和整合落地、Data Center 若从缺货转为库存周期会影响毛利率。
+
+结论：资产负债表强，能支撑研发、供应链锁定和产能扩张；当前风险更偏经营周期和估值，而不是流动性。
+
+## 2. 最新及最近 4 次财报：收入、订单、业务、利润率和 AI 数据中心占比
+
+### 2.1 五个季度关键数字
+
+| 财报季度 | 发布日期 / 截止日 | 总收入 / 增速 | 分业务收入与占比 | 订单、backlog、turns | 利润率 | AI 数据中心相关收入估算 |
+|---|---|---:|---|---|---|---|
+| FY2026Q2 | 2026-05-07 / 2026-04-03 | `$289.0M`，`+22.5% YoY`，`+6.4% QoQ` | I&D `$120.7M` / `41.8%`；Data Center `$98.2M` / `34.0%`；Telecom `$70.1M` / `24.3%` | Book-to-bill `1.5:1`，历史最高级别；turns `18%`；三大市场订单强，Data Center 订单最突出；backlog record。未披露取消率。 | GAAP GM `56.9%`；adj GM `58.5%`；GAAP op margin `17.6%`；adj op margin `27.8%`；GAAP net margin `16.0%` | 估计 `$75-88M`，约收入 `26-30%`；主要来自 800G/1.6T PAM4 optical/cable production volumes。 |
+| FY2026Q1 | 2026-02-05 / 2026-01-02 | `$271.6M`，`+24.5% YoY`，`+4.0% QoQ` | I&D `$117.7M` / `43.3%`；Data Center `$85.8M` / `31.6%`；Telecom `$68.1M` / `25.1%` | Book-to-bill `1.3:1`；Data Center 与 I&D 收入、backlog 均创高位；FY2026 Data Center 增长基准由 `20%` 上调到 `35%-40%`。 | GAAP GM `55.9%`；adj GM `57.6%`；GAAP op margin `15.9%`；adj op margin `27.2%`；GAAP net margin `18.0%` | 估计 `$60-75M`，约收入 `22-28%`；1.6T optical connectivity 开始成为叙事核心。 |
+| FY2025Q4 | 2025-11-06 / 2025-10-03 | `$261.2M`，`+30.1% YoY`，`+3.6% QoQ` | I&D `$115.6M` / `44.3%`；Data Center `$79.6M` / `30.5%`；Telecom `$66.0M` / `25.3%` | Q4 book-to-bill 略高于 `1.0:1`；turns `14.5%`；FY2025 book-to-bill `1.1:1`；backlog record。 | GAAP GM `54.5%`；adj GM `57.1%`；GAAP op margin `15.2%`；adj op margin `25.6%`；GAAP net margin `17.3%`，含 `$10.1M` acquired-assets gain。 | 估计 `$52-65M`，约收入 `20-25%`；800G/1.6T 高速光模块链条继续扩张。 |
+| FY2025Q3 | 2025-08-07 / 2025-07-04 | `$252.1M`，`+32.3% YoY`，`+6.9% QoQ` | I&D `$108.2M` / `42.9%`；Data Center `$75.8M` / `30.1%`；Telecom `$68.1M` / `27.0%` | Book-to-bill 略高于 `1.1:1`；backlog record；I&D sequential `+10%`、Data Center `+5%`、Telecom `+4%`。 | GAAP GM `55.3%`；adj GM `57.6%`；GAAP op margin `14.9%`；adj op margin `25.2%`；GAAP net margin `14.5%` | 估计 `$45-58M`，约收入 `18-23%`。 |
+| FY2025Q2 | 2025-05-08 / 2025-04-04 | `$235.9M`，`+30.2% YoY`，`+8.1% QoQ` | I&D `$98.5M` / `41.8%`；Data Center `$72.2M` / `30.6%`；Telecom `$65.2M` / `27.6%` | Book-to-bill `1.1:1`；第五个连续强订单季度；turns 约 `20%`；backlog record。 | GAAP GM `55.2%`；adj GM `57.5%`；GAAP op margin `14.8%`；adj op margin `25.4%`；GAAP net margin `13.4%` | 估计 `$40-55M`，约收入 `17-23%`。 |
+
+### 2.2 订单挤压与交期推断
+
+公司没有披露 backlog 绝对金额、按产品拆分的 backlog、lead time 或取消率。可确认事实是：
+
+- FY2026Q2 book-to-bill `1.5:1`，按季度收入 `$289M` 粗算，新增订单规模约 `$430M+`；即便扣除当季 turns，backlog 仍明显扩张。
+- Q2 turns `18%`，即约 `$52M` 为当季订当季出；剩余订单更可能排入未来季度。
+- 管理层称全部三大 end market 订单强，Data Center 明显跑赢；backlog 处于 record level。
+- Q3 FY2026 收入指引中点 `$335M`，较 Q2 增加 `$46M`，较 FY2025Q3 增加约 `+32.9%`，说明 backlog/产能可在短期转化为收入。
+
+推断：当前不是普通补库存，而是 1.6T optical/copper、Data Center、I&D 防务订单同时挤压。取消率没有披露，基准假设为低；若未来出现客户库存超过 1 个季度需求、800G/1.6T ASP 连续两个季度跌 `10%+`，则应把 backlog 质量下调。
+
+## 3. 2026 最新指引、业务收入占比和产品拆分
+
+### 3.1 FY2026Q3 指引与 2026 年经营重心
+
+MACOM 对截至 2026-07-03 的 FY2026Q3 指引：
+
+| 指标 | 指引 |
+|---|---:|
+| 收入 | `$331M-$339M`，中点 `$335M` |
+| Adjusted gross margin | `59.0%-60.0%` |
+| Adjusted EPS | `$1.31-$1.37` |
+| 稀释股数假设 | `78.5M` |
+
+管理层在 FY2026Q2 call 中给出的年度方向：
+
+- Data Center FY2026 revenue growth base case 从 `35%-40%` 上调到 `>60%`。
+- I&D 2026 年可能 `>20%` 增长。
+- Telecom 从此前偏低预期上修到低双位数，SATCOM/LEO space production programs 更多在 late FY2026 / early FY2027 贡献。
+- 公司目标是向 `60%` 毛利率靠近，但管理层没有承诺一定在 FY2026 结束时达到。
+
+### 3.2 最新收入占比与 Q3 业务 mix 估算
+
+FY2026Q2 已披露 mix：I&D `41.8%`、Data Center `34.0%`、Telecom `24.3%`。若 Q3 中点 `$335M` 兑现，结合管理层称 Data Center 和 I&D 继续 lead growth，估算 Q3 mix：
+
+| 业务 | Q2 实际 | Q3 估算 | 估算逻辑 |
+|---|---:|---:|---|
+| Data Center | `$98.2M` | `$128-142M` | 若 FY2026 全年 Data Center 要 `>60%` 增长，H2 必须显著高于 H1；1.6T/800G optical/cable production 是主因。 |
+| Industrial & Defense | `$120.7M` | `$126-136M` | 防务订单强、Lowell/RTP 利用率提升，全年 `>20%` 增长。 |
+| Telecom | `$70.1M` | `$71-77M` | 5G/SATCOM 回暖，但较 Data Center 和 I&D 低。 |
+| 合计 | `$289.0M` | `$331-339M` | 与公司指引一致。 |
+
+### 3.3 产品线：重点、潜力小业务与低优先级业务
+
+| 产品/业务 | 对应市场 | 2026 状态 | 是否重点 |
+|---|---|---|---|
+| 800G/1.6T PAM4 optical analog IC：modulator drivers、TIAs、CDR/OCR、linear equalizers、photodiodes | Data Center | 已进入生产拉动，管理层称当前增长主要来自 pluggable optical modules 和 optical cable production volumes 使用 800G/1.6T PAM4 产品。 | 核心重点 |
+| `MACD-41804` cable driver with equalizer / 1.6T OSFP copper/ACC | Data Center | 2026-03 发布，面向 next-generation scale-up，低功耗、低延迟、低成本替代 retimed architecture。 | 高潜力小业务 |
+| `MAOM-025408` MZM driver、`MAOM-022404` EML driver / 448G PAM4 / 400G per lane | Data Center | 2026-03 发布，面向 1.6T/3.2T transceiver，>120GHz RF bandwidth，wire-bondable/bumped die，支持 flip-chip、side-by-side、3D assemblies。 | 远期高潜力 |
+| CW laser 75mW/100mW、InP photonics、coherent-lite 800G LR2 | Data Center / scale-across | OFC 2026 展示；IQE LTSA/投资强化 InP/SiC 外延供应。 | 容易被忽视的潜力业务 |
+| PCIe 6.0/7.0 onboard equalizer / optical PCIe / MAEQ 系列 | Data Center rack-scale | OFC 2026 展示 PCIe 6/7 和 onboard equalization；AI rack 内长 reach、低 latency 连接可能放量。 | 早期潜力 |
+| GaN 4、advanced GaN MMIC、Wolfspeed RF/RTP fab、OMMIC regrowth | I&D / Telecom / SATCOM | 防务强增长，未来 12-18 个月推出 advanced GaN MMIC；SATCOM/LEO FY2027 加速。 | 非 AI 但高增长关键 |
+| 5G RAN RF、IPD process | Telecom | 管理层称 RAN 相对 flat，但 MACOM 有机会拿份额。 | 中等 |
+| MRI 高压非磁性二极管 | Industrial | 管理层称 MRI business 正改善，帮助 Lowell 利用率。 | 稳定但非 AI |
+| 传统 CATV、broadcast video、低速 25G/50G/100G 光器件、普通 mixer/attenuator | Telecom / industrial | 不是 AI 主线，增速和估值弹性较低。 | 本报告低优先级，后续跟踪可跳过 |
+
+## 4. 高增长或关键产品：当前收入贡献、重要性和供需
+
+| 产品/业务 | 当前收入贡献估算 | 当前增速 | 对 AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---:|---:|---|---|---|---|
+| 800G/1.6T PAM4 optical analog IC 组合 | FY2026Q2 估计 `$55-75M`，占 Data Center `55-75%` | Data Center Q2 `+36% YoY`，FY2026 全年目标 `>60%` | 高。没有 TIA/driver/CDR/laser/PD，光模块无法稳定量产；AI scale-out 直接依赖。 | 高。2026H2 1.6T deployment 和 102.4T switch 认证窗口正在发生。 | 中高。公司订单与行业 EML/CW/TIA/driver 认证瓶颈共同指向紧张。 | 中高。单个器件非垄断，但客户认证、低功耗和良率带来 design-in 粘性。 |
+| 1.6T LPO/LRO/ACC copper driver/equalizer | FY2026Q2 估计 `$8-18M`，部分在 optical cable / copper production | 早期基数低，估计 `>100%` | 高。AI rack 内短距 scale-up 需要比 retimer 更低功耗/低延迟的 copper/linear 方案。 | 高。2026 是 1.6T switch volume deployment 起点。 | 高但以认证为主，不一定是产能硬缺。 | 中高。若进入特定 host/switch/cable 平台，替换成本高。 |
+| 448G PAM4 / 400G-per-lane drivers for 3.2T | 2026 当前主要为 sample / NRE / early qualification，估计 `$0-5M` | 从零起步 | 中高到高。3.2T/204.8T switch 和 400G/lane 是 2027-2028 下一代 AI 网络前置技术。 | 中。2026 是 design-in，2027 才看小批量。 | 高。真正可用的 120GHz+、低功耗、高线性 driver 稀缺。 | 高。早期性能和封装能力决定溢价。 |
+| CW laser / InP photonics / coherent-lite 800G LR2 | FY2026Q2 估计 `$8-20M` | 高，随 800G/1.6T 和 campus scale-across 增长 | 中高。光源、InP、coherent-lite 是 OCS、SiPh、CPO、campus DCI 的共同瓶颈。 | 中高。800G/1.6T 当期需要，coherent scale-across 更偏 2027。 | 中高。IQE LTSA 暗示外延/材料是战略瓶颈。 | 中。激光器竞争强，但可认证供应商有限。 |
+| Defense / GaN RF / SATCOM | I&D Q2 `$120.7M`，其中防务占比未披露，估计 `$70-95M` | I&D 全年 `>20%`，defense over `20%` | 对 AI 数据中心低，但对公司利润和 fab 利用率高。 | 高。欧美防务电子、雷达、SATCOM 订单现实。 | 中高。防务设计周期长、合格供应商有限。 | 中高。AS9100D、program qualification、GaN 工艺带来壁垒。 |
+
+## 5. 一年后收入贡献预测：基准、乐观、极度乐观
+
+未来一年指 2026-06 至 2027-06 附近的年化/滚动收入能力，不是 FY2027 官方指引。公司级基准假设：FY2026 收入约 `$1.25-1.30B`，下一年滚动收入约 `$1.42-1.50B`；乐观 `$1.55-1.70B`；极度乐观 `$1.80-2.05B`。
+
+| 产品/业务 | 基准情景：一年后收入贡献 | 乐观情景 | 极度乐观情景 | 关键假设 |
+|---|---:|---:|---:|---|
+| 800G/1.6T PAM4 optical analog IC 组合 | 年化 `$360-450M`，YoY `+45-65%` | `$480-600M`，YoY `+75-110%` | `$650-850M`，YoY `+120%+` | 1.6T 2027 成为新增高端 AI 集群默认端口；客户 design-in 不丢失。 |
+| 1.6T LPO/LRO/ACC copper driver/equalizer | 年化 `$55-90M`，YoY `+80-150%` | `$100-170M`，YoY `+150-250%` | `$200-320M`，YoY `+300%+` | LRO/TRO 比纯 LPO 更快放量；copper/ACC 在 rack 内 scale-up 获得多个大客户平台。 |
+| 448G PAM4 / 400G-per-lane drivers for 3.2T | 年化 `$15-35M` | `$40-80M` | `$100-180M` | 2027 3.2T / 400G-per-lane 从样品进入小批量客户 qual；真正大收入更偏 2028。 |
+| CW laser / InP photonics / coherent-lite | 年化 `$60-110M` | `$120-200M` | `$250-400M` | 800G/1.6T laser content、OCS/CPO/ELS、campus scale-across 提前；IQE 供应协议顺利落地。 |
+| Defense / GaN RF / SATCOM | 年化 `$410-500M` I&D 总收入，其中 defense/GaN 估计 `$270-360M` | I&D `$520-620M` | I&D `$650-800M` | RTP/Lowell 利用率提升、欧洲防务电子、SATCOM/LEO production programs 兑现。 |
+
+## 6. BOM、单位内容量、价格传导、产能与认证
+
+### 6.1 光互联 BOM：MACOM 可捕获的真实位置
+
+项目内行业资料给出的高端 800G/1.6T pluggable BOM 口径：`光源/调制器/PD/TIA` 约占 `25-38%`，`DSP/CDR/FEC/driver` 约占 `20-32%`；LPO/LRO 中 DSP 比重下降到 `0-15%`，但 TIA/driver/光器件/测试占比上升。MACOM 不捕获整个模块 ASP，只捕获其中的 analog IC、光电器件、laser、driver、TIA、CDR/OCR、equalizer 等。
+
+| 单位 | 800G/1.6T optical analog IC 组合 | 1.6T copper/ACC driver/equalizer | 448G / 3.2T driver | CW laser / InP photonics |
+|---|---:|---:|---:|---:|
+| 每 optical port / module | 若仅单器件胜出：`$5-25`；若 driver + TIA + PD/laser/均衡多项胜出：`$30-120`；1.6T 高端可到 `$80-180` | 每 1.6T ACC/OSFP cable 两端合计估计 `$20-120` MACOM 内容量，取决于 lane 数、是否两端均采用 MACOM | 3.2T 早期每模块估计 `$60-250`，但当前主要 sample/qualification | 每 800G/1.6T 模块或 ELS 分摊约 `$5-50`，coherent/campus 可更高 |
+| 每 GPU / ASIC | 行业 800G/1.6T 等效端口约 `0.6-1.4` 个 / GPU 或 ASIC；MACOM 内容量约 `$18-170` / GPU，取决于端口速度和器件胜出范围 | 仅 rack 内短距 active copper 采用时才有，估计 `$10-80` / GPU | 2027 前低，2028 若 3.2T 成为主流可达 `$30-180` / GPU | 与光端口 attach 相关，估计 `$3-50` / GPU |
+| 每 AI rack | 以 72 GPU / rack、`0.6-1.4` 端口/GPU 估算，约 `43-101` 个高速端口；MACOM optical 内容量约 `$1.3K-18K` / rack | 若 rack 内采用大量 ACC/AOC，估计 `$1K-10K` / rack | 2027 小量，2028 高端 rack 可达 `$3K-20K` / rack | 估计 `$0.5K-5K` / rack |
+| 每 MW IT load | 以 120kW/rack、约 8.3 rack/MW 估算，约 `360-840` 个高速端口；MACOM optical 内容量约 `$11K-150K` / MW | 估计 `$8K-80K` / MW，取决于铜连接比例 | 2027 低，2028 乐观可 `$25K-160K` / MW | 估计 `$4K-40K` / MW |
+
+### 6.2 价格传导链
+
+1. 云厂/AI lab 上修 AI CapEx -> NVIDIA/Broadcom/Arista/Cisco/Marvell 等 switch/NIC/ASIC 订单上修 -> 模块厂锁定 800G/1.6T/ACC 供应 -> MACOM 的 driver/TIA/laser/CDR/equalizer 订单先行。
+2. 客户平台 design-in 成功 -> MACOM 器件进入 reference design / module BOM / cable BOM -> 多季度锁定，短期 price-down 压力小。
+3. 1.6T early ramp -> 模块 ASP 高、良率/认证难 -> analog IC 和 laser 可保价；若 800G 成熟供给过剩，MACOM 更依赖 1.6T/3.2T mix 保毛利。
+4. LPO/LRO/ACC -> 模块 DSP 价值下降，但线性 TIA/driver、equalizer、host tuning、telemetry、测试价值上升；MACOM 是受益方向之一。
+5. CPO/CPX/NPO/XPO -> 传统 pluggable 部分价值转向 optical engine、ELS、PIC、connector、封装和测试；MACOM 的 InP laser/driver/TIA/photonic component 可继续参与，但 form factor 变化会重分配客户和供应链。
+
+### 6.3 当前产能能力与认证/采纳程度
+
+| 产品/业务 | 当前产能能力（美元计，估算） | 供应链采纳程度 | 认证阶段 |
+|---|---:|---|---|
+| 800G/1.6T PAM4 optical analog IC 组合 | Data Center FY2026H2 年化 run-rate 估计 `$550-650M`，其中该组合可贡献 `$350-450M` 年化能力 | 已进入 production volumes；FY2026Q2 Data Center record revenue，订单最强。 | 量产/多客户认证阶段；具体客户名单不披露。 |
+| 1.6T LPO/LRO/ACC copper driver/equalizer | 当前年化能力估计 `$50-120M`，受客户认证和 flip-chip/封装产能约束 | OFC 2026 1.6T demo、102.4T switch ecosystem、MACD-41804 availability；仍处客户导入期。 | sampling / qualification / early production。 |
+| 448G PAM4 / 400G-per-lane drivers | 当前收入能力小，估计 `<$30M` 年化；更像 2027/2028 产能预埋 | 2026-03 official availability；支持 SiPh、EML、TFLN，多封装形态。 | early sampling / design-in；非大规模量产。 |
+| CW laser / InP photonics / coherent-lite | 当前年化能力估计 `$50-120M`；IQE LTSA 完成后上限提高 | OFC 展示 75/100mW CW laser、800G LR2 coherent-lite；InP epi stack 开发中。 | demo + selected production；外延供应协议待监管/交易完成。 |
+| Defense / GaN RF / SATCOM | I&D 当前年化 `$480M+`，防务/GaN 估计 `$280-380M` | 既有防务客户和 program；RTP/Lowell/OMMIC 增强产能。 | 已量产；新 advanced GaN MMIC 未来 12-18 个月推出。 |
+
+## 7. 一年后产能、采纳和认证阶段预测
+
+| 产品/业务 | 基准：一年后产能/采纳 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| 800G/1.6T PAM4 optical analog IC 组合 | 年化收入能力 `$450-550M`；1.6T design-in 扩大；仍以 pluggable / AOC / optical cable 为主 | `$600-750M`；多个 hyperscaler 平台进入 production；毛利率支撑 `60%` 附近 | `$850M+`；1.6T 端口持续缺货，MACOM 多器件 attach 提升 |
+| 1.6T LPO/LRO/ACC copper driver/equalizer | 年化能力 `$90-150M`；LRO/TRO 比纯 LPO 更快，ACC/copper 在短距 scale-up 扩大 | `$180-280M`；1.6T OSFP/ACC 多客户白名单 | `$350M+`；host/switch 平台把 linear/copper 作为默认短距路线之一 |
+| 448G PAM4 / 400G-per-lane drivers | 年化能力 `$40-90M`；主要为 customer qual 和小批量 | `$100-180M`；204.8T switch / 3.2T module early production | `$250M+`；3.2T 提前 2-4 个季度进入头部客户部署 |
+| CW laser / InP photonics / coherent-lite | 年化 `$110-180M`；IQE LTSA 完成，InP supply risk 下降 | `$220-350M`；OCS/CPO/scale-across 采用上修 | `$450M+`；coherent-lite/ELS/CW laser 成为供应瓶颈 |
+| Defense / GaN RF / SATCOM | I&D 年化 `$500-600M`；advanced GaN MMIC 逐步发布，SATCOM FY2027 放量 | `$650-780M`；欧洲防务和 LEO production 同时拉动 | `$900M+`；RTP fab 利用率、GaN/SATCOM program 和海外防务超预期 |
+
+## 8. 订单积压、真实供给与未来一年公司增速预测
+
+### 8.1 Backlog 与供给推断
+
+MACOM 不披露 backlog 绝对金额。基于 FY2026Q2：
+
+- Book-to-bill `1.5:1`，订单约 `$430M+`，相当于单季收入的 `150%`。
+- Turns `18%`，说明不是全部靠急单，未来交付订单显著增加。
+- Q3 指引中点 `$335M`，较 Q2 sequential `+15.9%`，说明公司有能力在一季度内把一部分 backlog 转收入。
+- IQE 投资/LTSA、RTP fab transfer、InP epi stack 开发、Lowell optical line ramp 都说明管理层正在处理供应链和产能瓶颈。
+
+### 8.2 三情景公司未来一年增长
+
+| 情景 | 未来一年公司收入 | 增速 vs TTM `$1.074B` | Data Center 收入 | 关键订单假设 |
+|---|---:|---:|---:|---|
+| 基准 | `$1.42-1.50B` | `+32%-40%` | `$620-700M` | Q3 指引兑现；Q4 继续增长但不失控；FY2027H1 1.6T 稳步放量；I&D `>20%`；Telecom 低双位数。 |
+| 乐观 | `$1.55-1.70B` | `+44%-58%` | `$750-900M` | 1.6T production volumes、ACC/LRO、CW laser/InP 光电产品同时放量；defense/SATCOM 强；backlog 取消率低。 |
+| 极度乐观 | `$1.80-2.05B` | `+68%-91%` | `$1.0-1.2B` | 1.6T 高端端口短缺持续，3.2T/448G design-in 提前收入化，MACOM 在多个头部客户平台多器件 attach；RTP/GaN/SATCOM 超预期。 |
+
+### 8.3 需要渠道验证的客户项目和反证指标
+
+| 项目/信号 | 对 MACOM 的含义 | 需要验证的点 |
+|---|---|---|
+| NVIDIA GB300/Rubin / Spectrum-X Photonics | 推高 800G/1.6T、CPO、CW laser、driver/TIA 需求 | MACOM 是否进入模块厂或线缆厂 BOM；是否只是 broad market 拉动。 |
+| Google TPU Ironwood / OCS | 光模块 attach rate 高，OCS/CW laser/SiPh 需求强 | MACOM 是否进入 OCS/模块/光源链条；目前无直接客户披露。 |
+| AWS Trainium / Anthropic、Microsoft Maia/Fairwater、Meta MTIA | 非 NVIDIA 自研 ASIC 更重视以太网、低功耗 LPO/LRO/ACC | MACOM 器件是否进入相应 module/cable/switch ecosystem。 |
+| Arista/Cisco/Broadcom/Marvell 1.6T/3.2T switch and optics | MACOM 上游 IC 的认证入口 | OFC 2026 demo 后是否转 production order；module vendor 采用量。 |
+| 800G/1.6T ASP | 决定 Data Center 毛利持续性 | ASP 连续两季跌 `10%+`，或库存超过 1 个季度需求，是下修信号。 |
+| IQE transaction closing | InP/SiC 外延供应安全 | 监管批准、股东投票、供应协议条款和实际 wafer output。 |
+
+## 9. 竞争格局、新技术主流性、替代方案和客户替换成本
+
+### 9.1 竞争对手
+
+| 环节 | MACOM 竞争对手 | 竞争焦点 |
+|---|---|---|
+| Optical DSP / coherent DSP / high-speed SerDes | Broadcom、Marvell、Cisco/Acacia、MaxLinear、Credo、Semtech | 先进制程、FEC/CDR、power/bit、客户 reference design。MACOM 并非 full DSP 龙头，更强在 analog front-end。 |
+| TIA / modulator driver / linear optics AFE | Semtech、MaxLinear、Marvell、Broadcom、Credo、Coherent、Lumentum 内部方案 | 224G/448G bandwidth、linearity、noise、power、封装、客户认证。 |
+| Lasers / photodiodes / InP / optical components | Lumentum、Coherent、Broadcom、Mitsubishi Electric、Sumitomo、Source Photonics、OpenLight/Tower | InP/SiPh 工艺、EML/CW laser 产能、良率和可靠性。 |
+| Copper/ACC/AEC/retimer | Credo、Astera Labs、Broadcom、Marvell、Semtech、MaxLinear、Amphenol/Molex/TE 生态 | 低功耗、reach、diagnostics、host-side tuning、成本。 |
+| GaN RF / defense | Qorvo、Analog Devices、Wolfspeed remaining businesses、NXP、BAE/Teledyne 等 | GaN-on-SiC 工艺、program qualification、功率密度、可靠性。 |
+
+### 9.2 MACOM 新技术是否是未来主流
+
+结论：`1.6T PAM4 analog front-end` 是当前主流，`LRO/TRO/ACC` 是 2026-2027 高概率增量，`448G/400G-per-lane driver` 是 2027-2028 期权，`CPO/ELS/coherent-lite` 是长期重分配中的可选受益项。MACOM 的优势不是押单一路线，而是覆盖 FRO、LPO/LRO、ACC/copper、coherent-lite、CW laser、3.2T driver、GaN RF 多路线。
+
+### 9.3 替代方案和风险
+
+| 风险/替代 | 对 MACOM 的影响 | 风险等级 |
+|---|---|---|
+| 模块厂或 DSP 厂自研/捆绑 TIA/driver | 如果 Broadcom/Marvell/Coherent/Lumentum 在参考设计中内置或绑定更多前端，MACOM 外部器件份额可能受压。 | 中高 |
+| 纯 CPO/CPX 加速替代 pluggable | 传统 OSFP pluggable 的 driver/TIA/cable 价值变少，但 optical engine、ELS、PIC、TIA/driver 仍需要；MACOM 需进入新 form factor。 | 中 |
+| 800G/1.6T 产能过剩和 ASP 下行 | 对模块客户先伤，但会传导到器件价格；MACOM 需靠 1.6T/3.2T mix 和多器件 attach 对冲。 | 高 |
+| LPO 互操作失败 | 对纯 LPO 不利，但 LRO/TRO/FRO 延长生命周期，MACOM 可通过 driver/TIA/retimed/linear 多路线对冲。 | 中 |
+| 客户集中和未披露 design-in | Data Center 增长很强，但终端客户和项目不可验证时，投资人容易高估可持续性。 | 高 |
+| GaN/RTP/IQE 整合不顺 | 影响防务和光电材料供应安全，可能拖累毛利率。 | 中 |
+| 出口管制/地缘 | 高端光互联和防务均受政策影响；区域供应链认证可能改变客户订单。 | 中 |
+
+### 9.4 客户替换成本
+
+MACOM 的替换成本来自四层：
+
+1. **器件级性能**：TIA noise、driver bandwidth/linearity、power/lane、temperature drift、BER/FEC margin 直接影响模块 yield 和链路稳定。
+2. **模块/系统认证**：AI 集群光链路替换不是换料号，需重新跑 qualification、burn-in、CMIS/telemetry、host tuning、field reliability。
+3. **供应链保障**：IQE LTSA、RTP/Lowell/OMMIC 自有或半自有制造能力有助于客户把 MACOM 视为战略供应商。
+4. **多路线覆盖**：客户在 FRO、LRO、LPO、ACC、CPO、coherent 之间变化时，MACOM 仍可供应不同器件，降低被单一技术路线淘汰的概率。
+
+替换成本总体为中高。它不是像 CUDA 生态那样不可替换，但对已进入量产 BOM 的高速模拟前端来说，客户不会为小幅降价轻易重新认证。
+
+## 10. 投资判断和跟踪清单
+
+### 10.1 核心判断
+
+MACOM 的 2026 投资主线已经从“多元化 RF/模拟半导体”切换为“AI 光互联前端 + 防务 GaN 双轮驱动”。FY2026Q2 之后最重要的变化是：Data Center 增长基准被上调到 `>60%`，Q2 book-to-bill 达 `1.5:1`，Q3 指引显示 backlog 正在转收入，毛利率指引上到 `59%-60%`。这证明公司当前并不是只有概念，而是有订单和利润率兑现。
+
+但股价和估值已经进入高预期区间。只要 1.6T 客户认证延后、800G/1.6T ASP 过快下跌、客户库存上升、或 FY2027 Data Center 增速从高增长回落到普通半导体节奏，估值会比收入更快反应。
+
+### 10.2 后续必须跟踪的 12 个指标
+
+| 指标 | 乐观信号 | 反证信号 |
+|---|---|---|
+| MACOM Data Center quarterly revenue | Q3/Q4 连续大幅 QoQ 增长，FY2026 `>60%` 兑现 | Q3 后 sequential 增速低于 `5%` 或 FY2027 guide 保守 |
+| Book-to-bill / backlog | 维持 `>1.2`，backlog 继续 record | 低于 `1.0` 或订单取消、库存上升 |
+| Gross margin | adjusted GM 达到或超过 `60%` | 1.6T/800G price-down 导致 GM 回落 |
+| 1.6T production volumes | 管理层继续提 production volume 而非 demo | 只谈 sampling/design-in，不谈 revenue |
+| 448G / 3.2T driver | 从 availability 转 customer qualification / volume | 2027 仍停留在 OFC demo |
+| MACD-41804 / ACC | 进入多个 1.6T OSFP/copper 客户平台 | active copper 被 retimer/AEC 或 CPO 路线挤压 |
+| CW laser / InP photonics | IQE deal close，InP supply 扩大，laser revenue 增长 | deal 推迟或客户转向内部激光器 |
+| Defense growth | I&D `>20%`，RTP/Lowell utilization 上升 | 防务订单延迟或 fab 利用率不足 |
+| SATCOM / LEO | FY2027 production programs 明确收入 | 继续后移 |
+| Customer concentration | 多客户/多模块厂采用 | 单一客户或单一路线驱动 |
+| Industry ASP | 1.6T ASP 保持，800G 价格温和下行 | 800G/1.6T ASP 连续两季跌 `10%+` |
+| AI CapEx | hyperscaler capex 和 AI network spending 继续上修 | 云厂 CapEx guide 下修 `10%+` |
+
+## 11. 主要来源
+
+### 公司一手资料
+
+- MACOM FY2026Q2 results, 2026-05-07: https://ir.macom.com/news-releases/news-release-details/macom-reports-fiscal-second-quarter-2026-financial-results/
+- MACOM FY2026Q1 results, 2026-02-05: https://ir.macom.com/news-releases/news-release-details/macom-reports-fiscal-first-quarter-2026-financial-results
+- MACOM FY2025Q4 / FY2025 results, 2025-11-06: https://ir.macom.com/news-releases/news-release-details/macom-reports-fiscal-fourth-quarter-and-fiscal-year-2025/
+- MACOM FY2025Q3 results, 2025-08-07: https://ir.macom.com/news-releases/news-release-details/macom-reports-fiscal-third-quarter-2025-financial-results/
+- MACOM FY2025Q2 results, 2025-05-08: https://ir.macom.com/news-releases/news-release-details/macom-reports-fiscal-second-quarter-2025-financial-results/
+- MACOM FY2026Q2 earnings transcript, Motley Fool transcript, 2026-05-07: https://www.fool.com/earnings/call-transcripts/2026/05/07/macom-mtsi-q2-2026-earnings-transcript/
+- MACOM FY2026Q1 earnings transcript, Motley Fool transcript, 2026-02-05: https://www.fool.com/earnings/call-transcripts/2026/02/05/macom-mtsi-q1-2026-earnings-call-transcript/
+- MACOM OFC 2026 showcase, 2026-03-11: https://www.macom.com/updates/news/2026/macom-to-showcase-innovative-connectivity-solutions-at-ofc-2026
+- MACOM `MAOM-025408` / `MAOM-022404` 448G PAM4 drivers, 2026-03-17: https://www.macom.com/updates/news/2026/macom-announces-two-new-448g-per-lane-drivers-for-3-2t-data-cent
+- MACOM `MACD-41804` cable driver with equalizer, 2026-03-16: https://ir.macom.com/news-releases/news-release-details/macom-enables-high-density-copper-interconnects-next-generation
+- MACOM IQE long-term supply agreements and proposed `GBP 45M` investment, 2026-04-27: https://www.macom.com/updates/news/2026/macom-to-enter-into-agreements-to-further-strengthen-supply-chai
+- MACOM Wolfspeed RF business acquisition announcement, 2023-08-22: https://ir.macom.com/news-releases/news-release-details/macom-announces-definitive-agreement-acquire-rf-business
+- MACOM OMMIC SAS acquisition announcement, 2023-02-02: https://ir.macom.com/news-releases/news-release-details/macom-announces-definitive-agreement-acquire-assets-and/
+
+### 行业与市场资料
+
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_LPO_LRO线性光模块_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- TrendForce AI optical transceiver market, 2026-04-20: https://www.trendforce.com/presscenter/news/20260420-13017.html
+- TrendForce / Semiconductor Today EML and CW-DFB capacity, 2026-06-04: https://www.semiconductor-today.com/news_items/2026/jun/trendforce-040626.shtml
+- Dell'Oro AI back-end switch market forecast, 2026-02-04: https://www.delloro.com/news/ai-back-end-switch-market-will-push-past-100-billion-by-2030/
+- Cignal AI optical component revenue, 2026-01-07: https://cignal.ai/2026/01/optical-component-revenue-reaches-nearly-25b-in-2025/
+- LightCounting Ethernet optics capacity warning, 2026-03: https://www.lightcounting.com/newsletter/en/march-2026-ethernet-optics-382
+- Yahoo Finance / StockAnalysis / Simply Wall St / company filings for 2026-06-10/11 valuation, market cap, margins and ratio cross-checks.

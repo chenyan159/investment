@@ -1,0 +1,160 @@
+# 公司收入传导与价值传导评估：Allegion plc（ALLE）
+
+报告日期：2026-06-12  
+主口径：NTM，即 2026Q2-2027Q1。  
+研究边界：只使用 `公司调研/`、`行业调研/` 与外部公开公司/行业资料；未使用 `特征量化/`、Signals、排序、回归或估值倍数结论。本文只评估收入、利润、现金流和经营质量传导，不输出投资评级、目标价、股价区间或市场定价判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口，即 2026Q2-2027Q1；FY2026 指引、2025A 产品收入和长期 AI 数据中心机会只作锚点或附录口径。Allegion 的正式公司锚点是 2026Q1 收入 `$1.034B`、2025 全年收入 `$4.067B`、2026 全年 reported revenue growth 指引 `+6%-+8%`、organic revenue growth 指引 `+2%-+4%`、adjusted EPS 指引 `$8.70-$8.90`、available cash flow 指引为 adjusted net income 的 `85%-95%`。
+- 当前收入基准、指引和 run-rate：按 FY2026 reported growth 指引推算，2026 收入锚约 `$4.31B-$4.39B`；扣除已披露 2026Q1 `$1.034B` 后，2026Q2-Q4 隐含收入约 `$3.28B-$3.36B`。若 2027Q1 按中个位数 reported 增长粗略外推，NTM 基准收入约 `$4.36B-$4.50B`。这是本文公司层面基准，不把 AI 数据中心叙事直接上修为高双位数增长。
+- 重要产品/业务线：机械产品、电子产品、服务和软件是官方产品收入主轴；Americas 非住宅是利润核心；International 是修复和 M&A/FX 杠杆；数据中心/mission-critical 方案是跨产品子集，主要落在 Krieger/DCI/Steelcraft/Republic 门和框、Schlage/Von Duprin/LCN 五金、ELATEC/Dorcas/Interflex/SimonsVoss 电子门禁、Overtur 设计协同软件中。
+- NTM 公司收入四情景：悲观 `$4.18B-$4.32B`；基准 `$4.36B-$4.50B`；乐观 `$4.52B-$4.72B`；极度乐观 `$4.80B-$5.05B`。相对当前预期，基准等于 FY2026 指引正常兑现并延续到 2027Q1；乐观需要 organic growth 从 `+2%-+4%` 上移到 `+4%-+6%`；极度乐观需要非住宅、电子门禁、International ERP 恢复、DCI/ELATEC 整合和数据中心订单同时超预期。
+- 利润或 EBITDA 四情景：悲观调整经营利润率约 `20.0%-21.0%`、调整 EBITDA 约 `$0.98B-$1.07B`；基准调整经营利润率 `21.8%-23.0%`、调整 EBITDA 约 `$1.08B-$1.18B`；乐观调整经营利润率 `23.0%-24.0%`、调整 EBITDA 约 `$1.18B-$1.30B`；极度乐观调整经营利润率 `24.0%-25.0%`、调整 EBITDA 约 `$1.30B-$1.45B`。产品级利润率未披露，产品利润贡献为基于 segment margin、产品 mix 和公司指引的估算。
+- 最大传导瓶颈：从行业需求到 ALLE 收入的瓶颈不是市场有没有安全需求，而是项目是否在 NTM 内进入可确认订单/交付/验收，尤其是数据中心 opening package 是否从展会展示、RFP、prototype 进入披露订单或 backlog。
+- 最大利润率变量：Americas mix、住宅量价、International ERP 生产短缺追回、ELATEC/DCI/Trimco 等收购的毛利和费用吸收、PPII 对 margin rate 的影响。2026Q1 调整经营利润率同比下降 `150 bps`，说明收入增长并不会自动留下利润。
+- 最大现金流变量：available cash flow 转化率仍以 `85%-95%` adjusted net income 为基准；风险来自 acquired working capital、库存、项目交付节奏、并购整合支出和 International 生产追回时的营运资本占用。
+- 可信度：公司总收入和官方产品大类为高；电子产品和服务软件收入趋势为中高；数据中心/mission-critical 收入占比和 NTM 增量为中到低，原因是公司未披露数据中心收入、订单、客户名或 backlog。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Mechanical products：机械锁、门控五金、门/框、出口装置、闭门器、住宅与商业机械安全产品 | 2025 收入 `$2.714B`；NTM 基准约 `$2.88B-$3.02B` | 2025 占 `66.7%` | 最大收入池和现金流底座；Americas 非住宅利润质量高，住宅可能抵消 | A | 进入基准。按公司 revenue guide、Americas 非住宅 mid-single organic、住宅 flat/弱修正 | Krieger/DCI 特殊门、数据中心 RF/STC/SCIF opening 在 NTM 内只能作为小比例增量，未披露订单的项目不单独上修基准 |
+| Electronic products：电子锁、电子门控、读卡器、credential、access-control 硬件与系统 | 2025 收入 `$1.075B`；NTM 基准约 `$1.20B-$1.32B` | 2025 占 `26.4%` | 最高质量增长主线；ELATEC 增厚 reported growth，电子化 mix shift 影响利润质量 | A/B | 进入基准。2025 电子收入 `+13.6%`，ELATEC 2026E sales `€60M-€65M`，但有机部分按公司 `+2%-+4%` 总 organic 指引约束 | Mobile credential、Aliro、数据中心 reader/identity 标准化可进乐观，需客户或订单证据才能进入更高可信度 |
+| Services and software：Stanley Access services、Overtur、Interflex/SimonsVoss/劳动力与门禁软件、SaaS/服务 | 2025 收入 `$278M`；2026Q1 services/software `$72M`；NTM 基准约 `$300M-$335M` | 2025 占 `6.8%` | 小基数但毛利、粘性和现金流质量较好；能增强硬件方案差异化 | A/C | 进入基准。按已披露收入和正常服务增长处理；Overtur 数据中心采用只作辅助 | Overtur 若成为 hyperscale/colo 多站点 opening lifecycle 工具，进入乐观/极度乐观；当前无批量合同披露 |
+| Americas non-residential opening ecosystem：商业、机构、教育、医疗、政府、数据中心相关门洞 | 2025 Americas segment `$3.219B`；2026Q1 `$809.9M`；其中非住宅未单独披露 | Segment 占 2025 收入 `79.1%` | 公司利润核心；2025 Americas 调整经营利润率 `29.0%`，2026Q1 `28.1%` | A/B | 进入基准，但作为 segment/客户层口径，不与产品类别重复相加 | 数据中心、政府、医疗、教育的高安全 opening 可能提高 mix；需防止与 mechanical/electronic/software 重复计算 |
+| International access platforms：CISA、Interflex、SimonsVoss、Dorcas、ELATEC、欧洲/亚洲/澳洲门控与电子门禁 | 2025 International `$848.5M`；2026Q1 `$223.7M`；NTM 区间约 `$930M-$1.02B` | 2025 占 `20.9%` | 修复和 M&A/FX 杠杆；利润率低于 Americas，2026Q1 受 ERP 生产短缺拖累 | A/B | 进入基准。按 low-single organic、约 `+8%` M&A、约 `+3%` FX 的指引处理 | 若 ERP 追回快、ELATEC/Dorcas/SimonsVoss 协同强，可进乐观；若生产短缺延续，下移 |
+| Mission-critical / data-center opening package：Krieger、DCI、Steelcraft、Schlage、Von Duprin、LCN、Trimco、ELATEC、Overtur 的跨产品组合 | 公司未披露；本报告估算当前广义 run-rate `$75M-$180M/年`，纯 AI DC 增量约 `$20M-$80M/年` | 估算约 `2%-6%`，包含在上方产品/segment 内 | 小基数高增长期权；可提高 mix 和规格粘性，但不是 AI power/cooling/rack 主链 | C/D | 基准只纳入已有产品、收购和正常非住宅收入中的保守部分；不作为单独可加收入池 | 若出现 hyperscale/colo 标准包、项目名、订单金额或 backlog 披露，可上移；无客户、时间表和收入确认路径的机会只作跟踪 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不判断 Allegion 份额、收入确认或利润率。当前需求锚以公司指引、segment organic trend、产品品类增长、美国非住宅/住宅施工数据、数据中心物理安防行业规模为主。相对当前预期的基准锚为：公司 2026 organic growth `+2%-+4%`、reported growth `+6%-+8%`，Americas 非住宅 mid-single organic，International low-single organic，电子产品继续高于公司平均但受 Q1 mid-single organic 和 2H seasonality 约束。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Mechanical products | 公司 2025 mechanical revenue `$2.714B`；Americas 非住宅 2026Q1 organic mid-single；AIA 2026-04 ABI `48.3` 显示建筑设计账单仍低于增长线；Dodge 2026-04 TTM nonres starts `+10.0%`，其中 commercial `+25.1%` | 需求 flat 到 `+2%`；住宅和商业项目延期抵消非住宅价格 | 需求 `+3%-+6%`，主要由价格、非住宅替换、教育/医疗/政府和正常维修周期支撑 | 需求 `+6%-+9%`，数据中心、商业 starts 和机构项目带动门/框/五金订单 | 需求 `+10%+`，需非住宅 starts、数据中心和机构项目同步兑现且住宅不拖累 | 以 2025 mechanical `$2.714B` 对应的终端 opening 需求看，基准需求增量约 `$80M-$160M` 的同类收入池机会；极度乐观可超过 `$270M` | 悲观低于当前预期；基准符合当前预期；乐观高于当前预期；极度乐观显著高于 | 支持：公司非住宅 mid-single、Dodge starts 强；反证：AIA ABI 仍低于 50，Census 2026-04 private nonres spending `-0.2%` m/m，住宅仍不稳 |
+| Electronic products | 2025 electronic revenue `$1.075B`，同比 `+13.6%`；2026Q1 Americas electronics organic mid-single；ELATEC 2026E sales `€60M-€65M`，读卡器/credential 兼容近 100 种凭证 | 需求 `+3%-+6%`，客户推迟电子化升级，ELATEC/Dorcas 仅贡献 acquired growth | 需求 `+8%-+12%` reported，organic mid/high-single；电子化继续高于公司平均 | 需求 `+12%-+18%`，mobile credentials、non-res access-control retrofit、ELATEC channel 协同增强 | 需求 `+20%+`，企业/多户/数据中心将 reader/credential 标准化并提前采购 | 基准对应 `$85M-$130M` 级同类收入池增量；乐观增量 `$130M-$190M+` | 基准略高于公司总 organic，但符合电子品类历史和 M&A；极度乐观需要明确客户标准化证据 | 支持：2025 high-teens reported growth、ELATEC 明确收入锚；反证：Q1 Americas electronics 只是 mid-single organic，PACS/credential 竞争强 |
+| Services and software | 2025 services/software `$278M`，同比 `+9.7%`；2026Q1 services/software `$72M`，annualized `$288M`；Overtur 可用于 opening 协同 | 需求 flat 到 `+5%`，项目服务延迟、SaaS attach 低 | 需求 `+7%-+12%`，自动门服务、门禁软件和 workforce/access 工具正常增长 | 需求 `+12%-+18%`，硬件方案带动软件/服务 attach 率上升 | 需求 `+20%+`，Overtur 或 Gatewise/Waitwhile 类软件进入多站点标准化 | 基准增量约 `$20M-$35M`；极度乐观增量 `$55M+` | 基准符合当前服务软件 run-rate；乐观需要 attach 率证据 | 支持：收入已在报表；反证：Overtur 数据中心不是 DCIM 主平台，软件收入占比小 |
+| International access platforms | 2025 International `$848.5M`；2026Q1 revenue `+21.5%` reported、`-5.3%` organic；2026 指引 organic low-single、M&A `+8%`、FX `+3%` | 需求 `-2%` 到 flat；ERP/欧洲需求/渠道库存拖累 | organic low-single，reported high-single/low-double，ERP 生产短缺在 2026 内追回 | organic `+3%-+5%`，ELATEC、Dorcas、SimonsVoss 和欧洲/澳洲渠道改善 | organic `+7%+`，International 电子平台明显加速且 ERP 完全消除 | 基准 reported 需求增量约 `$80M-$120M`，其中相当部分来自 M&A/FX 而非终端需求 | 基准符合指引；乐观高于当前预期；极度乐观需多个区域和电子平台同步改善 | 支持：公司称短缺追回由 orders/backlog 支撑；反证：Q1 organic 为负、margin 降至低位 |
+| Americas residential locks and home access | 公司未单独披露；2026Q1 Americas residential flat organic；2025Q4 residential high-single decline；NAHB 2026-04 improvement spending y/y `+7.5%`，single-family spending y/y `-2.9%` | 需求 `-5%` 到 flat，利率和消费者推迟采购 | flat 到 `+2%`，改造维修支撑，new residential 不强 | `+3%-+6%`，home improvement 和电子锁替换改善 | `+8%+`，需要住宅周期明显重启 | 由于公司不披露住宅收入，绝对变化无法可靠量化；估算对公司收入影响通常低于非住宅主线 | 基准符合当前 flat/弱修复预期；乐观需住房与改造同步改善 | 支持：home improvement 仍强；反证：single-family spending 仍同比下滑 |
+| Mission-critical / data-center opening package | Grand View Research 估算 2026 data center physical security market `$2.74B`、2026-2033 CAGR `15%`；项目内行业资料估算广义机柜/围护/物理安防 2026 收入池 `$10B-$18B`；Allegion Data Center World 2026 展示 Krieger STC 51、Schlage、LCN、Von Duprin、Trimco、Overtur | 需求仍增长但项目确认延后，NTM opening/security 采购仅 `+5%-+15%` | 需求 `+15%-+30%`，大型 DC、colo、主权/受监管场景推高门禁和特殊门需求 | 需求 `+35%-+60%`，AI campus、SCIF/RF/STC、防尾随、访问审计预算加速 | 需求 `+80%+`，多个 hyperscale/colo 把 opening package 标准化到建设模板 | 需求池层面：2026 `$2.74B` physical security TAM，基准新增需求约 `$0.4B-$0.8B`；但 ALLE 可确认收入另在第二步判断 | 行业需求乐观，但当前公司可收入化证据不足；不能把 TAM 增长等同于 ALLE 收入增长 | 支持：数据中心物理安防市场增长快、公司正式展示解决方案；反证：无披露 data center revenue、客户、订单金额、交付时间表 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些需求能进入 Allegion NTM 收入表，以及当前可收入化基数，不预测增长和利润率。`当前收入锚点`按收入表、segment、产品收入、收购收入锚、订单/backlog 或产品/RFP 证据分级。数据中心/mission-critical 是跨产品子集，表内披露但公司汇总时不与机械/电子/软件重复相加。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Mechanical products | 2025 已披露 revenue `$2.714B`；2024 `$2.572B`；2026Q1 无单独 product split，但 Americas segment `$809.9M` 支撑 run-rate | 直接 | 成熟硬件；Americas 非住宅 margin 高，住宅/门框/收购 mix 可能稀释 | `$2.75B-$2.88B` | `$2.88B-$3.02B` | `$3.03B-$3.18B` | `$3.20B-$3.35B` | 基准符合 FY2026 指引与 NTM run-rate；悲观低于当前预期 | A | 是 | 已披露产品收入和 segment 收入；非住宅 demand 有公司披露 | 作为最大基准收入池纳入；Krieger/DCI 未披露的 DC 项目不额外叠加 |
+| Electronic products | 2025 已披露 revenue `$1.075B`；ELATEC 2026E sales `€60M-€65M`；2026Q1 电子 organic 信号为 Americas mid-single、2H stronger | 直接 | 高增长、高战略价值；读卡器/credential 和电子锁有 mix 价值，但 M&A 摊销/整合会影响 EPS | `$1.12B-$1.20B` | `$1.20B-$1.32B` | `$1.33B-$1.48B` | `$1.50B-$1.65B` | 基准符合电子品类高于公司平均、但不假设全行业加速；乐观高于当前预期 | A/B | 是 | 已披露产品收入；ELATEC 有收购收入锚和 2026E sales 指引 | 进入基准；未披露客户项目的 data center reader 标准化只进乐观/极度乐观 |
+| Services and software | 2025 已披露 revenue `$278M`；2026Q1 10-Q 披露 services/software `$72M` | 直接 | 通常毛利和粘性更好，但自动门服务和软件混合口径使纯 SaaS margin 无法可靠量化 | `$285M-$305M` | `$300M-$335M` | `$335M-$385M` | `$400M-$460M` | 基准符合当前 run-rate；乐观需要 attach 率提升 | A/C | 是 | 已披露 revenue；Overtur 等具体软件未单独量化 | 进入基准；数据中心 opening lifecycle 软件采用只作辅助上行 |
+| Americas non-residential opening ecosystem | 2025 Americas `$3.219B`、调整 OI `$934.7M`；2026Q1 Americas `$809.9M`、organic `+4.5%`、non-res mid-single | 直接 | 公司核心利润池，2025 adjusted OI margin `29.0%`；2026Q1 `28.1%` | `$2.55B-$2.70B` segment 内非住宅相关收入估算 | `$2.70B-$2.90B` segment 内非住宅相关收入估算 | `$2.90B-$3.10B` | `$3.15B+` | 基准符合 Americas 指引；悲观来自住宅/mix 和项目延迟 | A/B | 是，但仅作 segment/客户层验证 | Segment revenue 已披露；非住宅收入比例未披露，故用估算 | 不与产品类别重复相加；用于校准机械/电子/服务的质量和利润率 |
+| International access platforms | 2025 International `$848.5M`；2026Q1 `$223.7M`；2026 current outlook：organic low-single、M&A `~+8%`、FX `~+3%` | 直接 | Margin 低于 Americas；Q1 受 ERP production shortfall、mix 和费用吸收拖累 | `$880M-$930M` | `$930M-$1.02B` | `$1.02B-$1.10B` | `$1.12B+` | 基准符合指引；悲观低于当前预期 | A/B | 是，但作为 region 校准 | Segment revenue 和 outlook 已披露；orders/backlog 支撑追回但金额未披露 | 进入公司基准；若 ERP 未追回，第三/四步下移利润率 |
+| Mission-critical / data-center opening package | 公司无正式收入披露；官方 PR 展示 Krieger/Schlage/LCN/Von Duprin/Trimco/Overtur；DCI 约 `$70M` acquisition consideration，但 DCI 收入/EBIT 未披露 | 直接+间接；包含在上述产品内 | 特殊门/规范软件/电子门禁可提升 mix；普通门框/五金仍可能被总包压价 | `$50M-$110M` broad run-rate 可见底线，绝大部分来自普通 non-res/mission-critical 而非 AI 纯增量 | `$100M-$220M` broad NTM run-rate；其中纯 AI DC 可确认收入仍约 `$30M-$90M` | `$180M-$350M` broad NTM run-rate | `$400M+` broad 上限；需要 hyperscale/colo 标准化采购 | 当前预期中只是小基数附加层；不能替代公司 organic 指引 | C/D | 基准只小比例纳入，且作为上方产品的子集 | 有产品/展会/收购/行业需求证据；缺订单金额、客户名、交付窗口 | 不作为独立加总收入池；乐观以上必须看到客户、产品、交付和确认路径 |
+| Rack-level smart lock / DCIM 安防联动 | ALLE 可参与 identity/access 层，但行业资料显示 rack-lock 强者更多为 Eaton TANlock、Legrand/Raritan、Schneider/APC、Panduit、CPI、Southco 等 | 间接 | 若只作为 reader/credential 接口，收入小；若进 rack lock 主件，当前证据不足 | `$0` 单独纳入 | `$0` 单独纳入 | 无法可靠量化 | 无法可靠量化 | 当前预期不包含明确 ALLE rack-lock 收入 | E | 否 | 只有行业相关性和身份接口逻辑，无 ALLE 披露 | 排除出 NTM 基准；仅作远期期权跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第一步需求和第二步收入基数出发，判断每个重要产品/业务线在 NTM 内对公司收入和利润的贡献。公司未披露产品级毛利率或产品级经营利润，利润贡献为基于 segment margin、产品结构、公司 adjusted operating margin 指引和成本变量的经营估算；字段无法可靠量化时明确标注。公司汇总时以 official product categories 和 segment 校准为主，避免把 data-center 子集重复加总。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Mechanical products | 悲观产品 | `$2.75B-$2.88B` | 调整经营利润贡献粗估 `$560M-$630M` | 低于当前结构；住宅/mix 和收购稀释 | 低于当前预期 | AIA ABI 低于 50、住宅仍弱、Q1 volume decline | 保留为悲观 | 非住宅订单延迟、住宅 volume 下滑、门框/M&A mix 稀释 |
+| Mechanical products | 基准产品 | `$2.88B-$3.02B` | 粗估 `$630M-$710M` | 基本稳定，Americas 非住宅支撑 | 符合当前预期 | 2025 mechanical `$2.714B`；2026Q1 Americas non-res mid-single | 保留为基准 | 价格能否抵消 tariffs/inflation 并留住 margin rate |
+| Mechanical products | 乐观产品 | `$3.03B-$3.18B` | 粗估 `$700M-$790M` | 小幅改善，mix 向非住宅/特殊门上移 | 高于当前预期 | Dodge nonres starts、DCI/Krieger/Trimco 非住宅组合 | 保留为乐观 | 若项目为低毛利门框 pass-through，收入上修不等于利润上修 |
+| Mechanical products | 极度乐观产品 | `$3.20B-$3.35B` | 粗估 `$790M-$870M` | 明显改善但需特殊门/高规格 opening 占比上升 | 显著高于当前预期 | 大型 mission-critical opening package、多项目复制 | 下移为乐观上限，除非披露订单 | 无 data center backlog；普通机械产品竞争充分 |
+| Electronic products | 悲观产品 | `$1.12B-$1.20B` | 粗估 `$180M-$240M` | 低于应有 mix，上修被整合/价格/竞争吃掉 | 低于当前预期 | Q1 Americas electronics 只是 mid-single organic | 保留为悲观 | PACS/credential 竞争、客户延后升级、ELATEC 整合费用 |
+| Electronic products | 基准产品 | `$1.20B-$1.32B` | 粗估 `$230M-$300M` | 稳中改善；reported growth 高于 organic | 符合当前预期 | 2025 electronic `$1.075B`、ELATEC 2026E `€60M-€65M` | 保留为基准 | organic 未显著上修，不能把 M&A 增长误认为公司 alpha |
+| Electronic products | 乐观产品 | `$1.33B-$1.48B` | 粗估 `$290M-$380M` | 改善，reader/credential 和电子锁 mix 提升 | 高于当前预期 | ELATEC channel、mobile credential、2H seasonality | 保留为乐观 | 需要“谁买、买什么、何时确认”的项目证据 |
+| Electronic products | 极度乐观产品 | `$1.50B-$1.65B` | 粗估 `$370M-$480M` | 明显改善，需高毛利 reader/software attach | 显著高于当前预期 | 大客户标准化 reader/credential 架构、data center 采用加速 | 下移为乐观上限，除非披露 design win 转收入 | 竞争对手 HID/JCI/Honeywell/Siemens/Brivo 等全栈压制 |
+| Services and software | 悲观产品 | `$285M-$305M` | 粗估 `$45M-$65M` | 稳定或小幅下行 | 低于当前预期 | 软件/服务项目延迟，硬件 attach 不足 | 保留为悲观 | 自动门服务人工成本、SaaS 小基数无法抵消硬件 mix |
+| Services and software | 基准产品 | `$300M-$335M` | 粗估 `$60M-$85M` | 稳中改善 | 符合当前预期 | 2025 `$278M`，2026Q1 `$72M` | 保留为基准 | Overtur/软件未单独披露，不能假设 SaaS 大幅放量 |
+| Services and software | 乐观产品 | `$335M-$385M` | 粗估 `$80M-$115M` | 改善，服务 attach 和软件占比提升 | 高于当前预期 | Overtur 协同、Stanley service、Gatewise/Waitwhile 类 SaaS | 保留为乐观 | 需要 attach 率、续约或客户标准化证据 |
+| Services and software | 极度乐观产品 | `$400M-$460M` | 粗估 `$115M-$160M` | 显著改善 | 显著高于当前预期 | 多站点 opening lifecycle/workflow 标准化 | 下移为乐观上限/附录 | Overtur 不是 DCIM/BMS/EPMS 主平台 |
+| International access platforms | 悲观产品 | `$880M-$930M` | segment OI 粗估 `$75M-$110M` | 下行或低位 | 低于当前预期 | 2026Q1 organic `-5.3%`，segment OI margin约 `3.7%` reported/adjusted margin低 | 保留为悲观 | ERP production shortfall、欧洲需求、M&A 整合 |
+| International access platforms | 基准产品 | `$930M-$1.02B` | 粗估 `$120M-$160M` | 从 Q1 低位修复，但仍低于 Americas | 符合当前预期 | 2026 outlook：organic low-single、M&A `~+8%`、FX `~+3%`；orders/backlog 支撑追回 | 保留为基准 | 追回节奏不确定，Q1 margin 显著低 |
+| International access platforms | 乐观产品 | `$1.02B-$1.10B` | 粗估 `$160M-$210M` | 改善 | 高于当前预期 | ELATEC/Dorcas/SimonsVoss 协同，ERP 追回快 | 保留为乐观 | M&A 摊销、费用和价格竞争可能限制利润 |
+| International access platforms | 极度乐观产品 | `$1.12B+` | 粗估 `$220M+` | 明显改善 | 显著高于当前预期 | 多区域电子平台加速、ERP 完全修复 | 下移为乐观上限 | 目前缺少持续 organic 加速证据 |
+| Mission-critical / data-center opening package | 悲观产品 | broad run-rate `$50M-$110M`，纯 AI DC `<$40M`；已包含在上方产品内 | 利润无法可靠量化；可能对公司 OI 贡献 `<$20M` | 不改善，项目低毛利或延迟 | 低于当前 narrative，但可能仍增长 | 无 data center revenue/order 披露 | 保留为悲观 | 数据中心项目延期、总包压价、只是展会/RFP |
+| Mission-critical / data-center opening package | 基准产品 | broad run-rate `$100M-$220M`，纯 AI DC `$30M-$90M`；已包含在上方产品内 | 粗估 `$20M-$50M` OI 贡献，可信度中低 | 小幅改善；特殊门/电子门禁 mix 抬升 | 符合保守预期，不改变公司曲线 | Data Center World 展示、Krieger/DCI/ELATEC/Overtur 产品路径 | 基准中只保守纳入 | 缺客户、订单金额、交付窗口、backlog |
+| Mission-critical / data-center opening package | 乐观产品 | broad run-rate `$180M-$350M`，纯 AI DC `$80M-$180M`；增量部分可使公司收入上修 `$50M-$120M` | 粗估 `$45M-$100M`，取决于 specialty/软件 mix | 改善，若特殊门/软件/电子门禁占比高 | 高于当前预期 | hyperscale/colo RFP 转订单、DCI quick-ship、ELATEC reader 采用 | 保留为乐观 | 需回答客户、产品、交付、价格、收入确认 |
+| Mission-critical / data-center opening package | 极度乐观产品 | broad run-rate `$400M+`，纯 AI DC `$200M+`；公司收入上修可达 `$150M-$250M+` | 粗估 `$100M+`，只有高规格/软件化成立时有效 | 明显改善 | 显著高于当前预期 | 多个 AI campus 指定 Allegion package，多站点复制 | 下移为乐观上限/附录跟踪 | 任一核心环节缺证据；rack-level lock/PACS 全栈竞争更强 |
+| Residential locks/home access | 悲观产品 | 无法可靠量化；估计对 Americas 形成 `$50M-$100M` 收入拖累风险 | 利润率下行 | 下行 | 低于当前预期 | 利率/新房/消费者需求弱 | 保留为悲观 | 公司不披露住宅收入，量化可信度低 |
+| Residential locks/home access | 基准产品 | 无法可靠量化；flat 到低个位数增长 | 稳定或小幅稀释 | 稳定 | 符合当前预期 | Q1 residential flat organic；remodeling 支撑 | 保留为基准 | 若住宅继续下滑，Americas mix 受压 |
+| Residential locks/home access | 乐观产品 | 无法可靠量化；低到中个位数增长 | 稳定 | 小幅改善 | 高于当前预期 | home improvement 和电子锁替换 | 保留为乐观 | 无公司单独披露 |
+| Residential locks/home access | 极度乐观产品 | 无法可靠量化 | 无法可靠量化 | 改善 | 显著高于当前预期 | 住宅周期重启 | 移入附录 | 证据不足，且不是 ALLE NTM 主驱动 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。汇总时不把 data-center opening package 与 mechanical/electronic/services 重复相加；不使用市场价格、估值倍数或评级作为经营证据。`绝对增速`为相对 2025 revenue `$4.067B` 的近似增长口径，用于跨情景比较；严格 NTM 与 FY2025 年度口径存在一个季度错位，已在结论中说明。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$4.18B-$4.32B` | 约 `+3%-+6%` | 低于 FY2026 reported `+6%-+8%` 指引和 NTM run-rate；organic 可能低于 `+2%` | `42.8%-44.0%` | 调整经营利润率 `20.0%-21.0%` | 调整 EBITDA `$0.98B-$1.07B`；调整净利润约 `$650M-$720M` | ACF 转化低于或靠近 `85%` 下沿，营运资本占用上升 | 中 | 住宅/项目量下滑、International ERP 未追回、PPII 对 margin rate 继续为负、data center 项目延迟 |
+| 基准公司 | `$4.36B-$4.50B` | 约 `+7%-+11%` | 基本符合 FY2026 reported 指引正常兑现并延续至 2027Q1；organic 维持 `+2%-+4%` | `44.0%-45.0%` | 调整经营利润率 `21.8%-23.0%` | 调整 EBITDA `$1.08B-$1.18B`；调整净利润约 `$730M-$800M` | ACF 约为 adjusted net income 的 `85%-95%`，现金转化保持强 | 中高 | organic growth 未明显加速；M&A 增长占 reported growth 较多；电子和数据中心收入占比不足以单独改写公司曲线 |
+| 乐观公司 | `$4.52B-$4.72B` | 约 `+11%-+16%` | 高于当前预期；organic 约 `+4%-+6%`，并购整合顺利 | `44.8%-45.8%` | 调整经营利润率 `23.0%-24.0%` | 调整 EBITDA `$1.18B-$1.30B`；调整净利润约 `$800M-$890M` | ACF 维持 `90%` 左右，若 working capital 不恶化可高于基准 | 中 | 需要非住宅、电子产品、ELATEC/DCI、International 恢复和部分 mission-critical 订单同步兑现 |
+| 极度乐观公司 | `$4.80B-$5.05B` | 约 `+18%-+24%` | 明显高于当前预期；reported 和 organic 都需上台阶，且不是单一小项目贡献 | `45.5%-46.5%` | 调整经营利润率 `24.0%-25.0%` | 调整 EBITDA `$1.30B-$1.45B`；调整净利润约 `$900M+` | ACF 可高于 adjusted net income `90%`，但若项目/库存扩张过快会被营运资本抵消 | 低到中 | 需要大型数据中心标准化 opening package、电子门禁加速、Americas mix 改善、International margin 修复、收购协同全部成立；当前证据不足 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在其实际影响层级处理一次：建筑/住宅需求放在需求层，订单/交付/验收放在收入确认层，PPII/ERP/M&A mix 放在利润层，数据中心缺订单放在证据可信度层。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 revenue `$1.034B`、reported `+9.7%`、organic `+2.6%` | 公司收入基准 | 支撑 NTM 基准收入 `$4.36B-$4.50B` | organic 不强，不能自动上修 margin | 已确认收入强，执行可信度高 | 基准保留 |
+| FY2026 reported revenue 指引上调至 `+6%-+8%`，organic 仍 `+2%-+4%` | 公司汇总/证据校准 | 上调主要来自 DCI/M&A，不说明终端需求全面加速 | M&A 可能稀释 margin rate | 并购整合和 working capital 需跟踪 | 乐观不因 reported guide 上调自动保留，需 organic 或 margin 证据 |
+| Americas non-residential 2026Q1 mid-single organic，Americas adjusted margin `28.1%` | 产品贡献/利润 | 支撑 mechanical 和 non-res opening 基准 | Americas 仍是利润核心，但 Q1 margin 下滑 | 执行较强 | 基准保留；乐观需更高量或 mix |
+| Q1 International organic `-5.3%`，公司称 ERP production shortfall 将在 2026 年内由 orders/backlog 支撑追回 | 收入确认/执行 | 基准假设追回；若未追回，International 收入下修 | Q1 margin 压力明显 | 追回可能占用营运资本 | 悲观保留；基准保留但可信度中 |
+| 2025 electronic revenue `$1.075B`、`+13.6%`；ELATEC 2026E sales `€60M-€65M` | 产品基数/贡献 | 支撑 electronic products 基准上修到 `$1.20B-$1.32B` | mix 正向，但 M&A 摊销/费用可能抵消 | 整合执行需跟踪 | 基准保留；乐观保留 |
+| Q1 Americas electronics organic only mid-single，2H seasonality stronger | 产品贡献 | 限制电子业务极度乐观 | 电子利润改善不能只靠 revenue | 2H 执行关键 | 极度乐观下移为乐观上限 |
+| Data Center World 2026 官方展示 Krieger/Schlage/LCN/Von Duprin/Trimco/Overtur | 需求/收入基数 | 证明公司可参与 mission-critical DC opening 需求 | 若特殊门和软件占比高，margin 可改善 | 展会/RFP 不等于确认收入 | 乐观保留；基准只小比例纳入 |
+| 公司未披露 data center revenue、客户、订单金额、backlog 或交付窗口 | 证据可信度 | 限制 AI DC 进入基准收入 | 限制 DC mix 对利润率的大幅上修 | 执行路径不清 | 极度乐观下移；无客户路径机会仅作跟踪 |
+| Grand View Research：2026 data center physical security TAM `$2.74B`、CAGR `15%` | 需求层 | 支撑外部需求增长，但不等于 ALLE 收入 | 只说明行业池，不能直接推导利润 | 需客户/渠道/订单转化 | 需求乐观保留，收入乐观需公司证据 |
+| AIA ABI 2026-04 为 `48.3`，Census 2026-04 private nonres spending m/m `-0.2%` | 需求层 | 限制 non-res 线性外推 | 若需求放缓，固定费用和 mix 压力增大 | 项目节奏不确定 | 悲观保留，不重复惩罚至 DC-specific 层 |
+| Dodge 2026-04 nonres starts TTM `+10.0%`，commercial `+25.1%`，大型 data centers 支撑增长 | 需求层 | 支撑 non-res 和 data-center opening 需求 | 若转化为高规格 opening，利润改善 | starts 到收入有时滞 | 乐观保留，但不自动进入基准收入 |
+| Q1 2026 ACF `$80.3M`、2026 ACF 指引为 adjusted net income 的 `85%-95%` | 现金流 | 收入增长若可收现，现金质量强 | 利润率压力会直接传导到 ACF | acquired working capital 上升需跟踪 | 基准现金流保留 |
+| Tariff/inflation：公司估算 Mexico 占 COGS `20%-25%`，China `<5%`，其他 non-US `5%-10%`；通过 price/cost offset | 成本/利润 | 收入不一定受益 | PPII 对 Q1 margin rate 为负 | 价格动作和成本动作执行重要 | 利润乐观需保守；悲观保留 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入低于当前指引/run-rate，margin 低于当前结构 | AIA ABI 低于 50、住宅弱、International Q1 organic 负、Q1 adjusted margin 下滑 | 公司 Q1 revenue 仍 `+9.7%`，FY2026 reported guide 上调，orders/backlog 支撑 International 追回 | 保留 | 下行情景 | 中 | 需求放缓只在需求层处理；ERP 只在 International 执行和利润层处理 |
+| 基准 | FY2026 指引正常兑现并延续到 2027Q1，organic `+2%-+4%`，M&A 正常纳入 | 2025/2026Q1 报表证据强；mechanical/electronic/services 均有 A 级收入锚 | 数据中心缺订单，organic 未上修，Q1 margin rate 下降 | 保留 | 最可能情景 | 中高 | 不把 data center 缺披露重复压低所有 core business；只限制 DC 上修 |
+| 乐观 | 非住宅、电子、International 恢复、部分 DC opening 订单高于预期 | Dodge starts 强、ELATEC/DCI 明确收购、电子品类高增长、Data Center World 解决方案 | 需要公司特定订单/客户/交付证据；PACS/rack-lock 竞争强 | 保留 | 有条件上行情景 | 中 | 不因行业 TAM 自动上修；只把有公司路径的项目纳入 |
+| 极度乐观 | 多个核心传导环节同时突破，NTM revenue 接近或超过 `$4.8B`，margin 明显扩张 | 理论上由 AI campus 标准化、ELATEC reader 加速、Krieger/DCI 特殊门和 Overtur 软件化共同驱动 | 无 data center revenue/order/backlog；Q1 organic 和 margin 不支持非线性上修；International 尚需修复 | 下移 | 乐观上限/附录跟踪 | 低到中 | 同一“AI DC 缺订单”风险只限制 DC 极度乐观，不否定 core non-res 基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。Allegion NTM 最可能收入约 `$4.36B-$4.50B`，本质是 FY2026 reported `+6%-+8%` 指引正常兑现并延伸到 2027Q1；organic growth 仍以 `+2%-+4%` 为主，reported growth 中 M&A 和 FX 的贡献不能等同于需求加速。
+- NTM 收入结论：mechanical products 仍是最大收入池，NTM 基准约 `$2.88B-$3.02B`；electronic products 是结构升级主线，NTM 基准约 `$1.20B-$1.32B`；services/software 基准约 `$300M-$335M`。mission-critical/data-center opening package 作为跨产品子集，广义 NTM run-rate 可到 `$100M-$220M`，但公司未披露数据中心收入和订单，不能作为单独加总收入池。
+- 利润/现金流结论：基准调整经营利润率约 `21.8%-23.0%`，较 2025 adjusted operating margin `23.2%` 不做激进扩张假设；调整 EBITDA 约 `$1.08B-$1.18B`，adjusted net income 约 `$730M-$800M`，available cash flow 以 adjusted net income 的 `85%-95%` 为主锚。乐观利润成立必须来自高毛利电子/软件/特殊门 mix、Americas 非住宅杠杆、International 修复和 M&A 整合，而不是单纯 revenue 上修。
+- 主要传导瓶颈：第一，外部非住宅和数据中心 demand 到公司可确认收入之间缺少 backlog/order 披露；第二，电子门禁和数据中心 physical security 的行业 beta 强，但 Allegion 在 rack-level lock、PACS/VMS/DCIM 全栈中不是最直接入口；第三，Q1 margin 下滑证明 PPII、mix、ERP 和 M&A 费用会吞噬收入增长。
+- 乐观情景成立条件：Americas non-residential organic 持续 mid/high-single；electronic products organic 从 mid-single 上移并在 2H 加速；ELATEC 读卡器/credential 进入更多 non-res 和 mission-critical specs；DCI/Krieger/Trimco 数据中心项目从展示/RFP 转为订单；International ERP 生产短缺在 2026 年内顺利追回且 margin 回升。
+- 极度乐观情景成立条件：至少两个大型 hyperscale/colo/sovereign AI 数据中心客户采用 Allegion opening package，并披露或可验证项目金额/交付窗口；Krieger/DCI/Steelcraft + Schlage/Von Duprin/LCN + ELATEC + Overtur 形成可复制标准包；电子和软件 attach 提高，公司总 organic growth 上移到 `+7%+`，同时 adjusted operating margin 上移到 `24%+`。
+- 悲观情景触发条件：Americas residential 再次 high-single decline；AIA ABI 低迷传导到 non-res opening order；International organic 连续为负且 ERP 追回失败；tariff/inflation 价格动作无法抵消 margin rate 压力；数据中心 opening 仍只有展会和定性营销，没有订单或 backlog。
+- 后续跟踪数据：2026Q2-Q4 Americas non-res organic、Americas electronics organic、International organic/margin、ERP production shortfall 追回进度、ELATEC/DCI/Trimco 收入和整合评论、data center/customer/order/backlog 首次披露、services/software attach、ACF 转化率、working capital as % of revenue、PPII 对 margin rate 的正负贡献。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司经营数据截至 2026Q1（季度结束 2026-03-31，公告日期 2026-04-28）；行业和本地资料截至 2026-06-12 可见资料。
+- 主要收入、订单、指引和利润率来源：
+  - Allegion Q1 2026 earnings release：2026Q1 revenue `$1.0336B`、reported `+9.7%`、organic `+2.6%`、adjusted operating margin `21.2%`、cash `$308.9M`、total debt `$2.0307B`。https://www.allegion.com/corp/en/news/year/2026/q1-results.html
+  - Allegion Q1 2026 earnings presentation：reported revenue outlook `+6%-+8%`、organic `+2%-+4%`、adjusted EPS `$8.70-$8.90`、ACF `85%-95%` adjusted net income、International ERP shortfall supported by orders and backlog。https://investor.allegion.com/~/media/Files/A/Allegion-IR/reports-and-presentations/q1-2026-allegion-earnings-call-presentation-final.pdf
+  - Allegion FY2025 results：2025 revenue `$4.0673B`、reported `+7.8%`、organic `+4.1%`、adjusted operating margin `23.2%`、available cash flow `$685.7M`、2026 original outlook。https://www.allegion.com/corp/en/news/year/2026/2025-results.html
+  - Allegion 2025 Form 10-K：产品组合、segment、2025 revenue、business description、products and services。https://www.allegion.com/content/dam/allegion-corp/migration/annual_report/2025/Annual-Report-Form-10K.pdf
+  - Allegion 2026Q1 Form 10-Q：DCI acquisition consideration `$69.9M`、segment data、services/software Q1 revenue `$72M`、contract liabilities、debt and working-capital comments。https://www.sec.gov/Archives/edgar/data/1579241/000157924126000015/alle-20260331.htm
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 company revenue guide of `+6%-+8%` on 2025 revenue `$4.067B` implies about `$4.31B-$4.39B` FY2026 revenue. NTM estimate adds a rough 2027Q1 run-rate and therefore uses `$4.36B-$4.50B` as baseline rather than treating FY2026 as exact NTM.
+  - ELATEC was announced at `€330M` purchase price, with expected 2026 sales `€60M-€65M` and high-single to low-double growth profile in electronics. https://www.allegion.com/corp/en/news/year/2025/elatec-announcement.html
+  - DCI was acquired in March 2026 and manufactures custom quick-ship hollow metal doors and frames for industrial, commercial and institutional markets; it reports into Allegion Americas. https://www.allegion.com/corp/en/news/year/2026/dci-announcement.html
+  - Allegion Data Center World 2026 showcase included Krieger STC 51, Schlage L Series Electronic Latch Retraction, LCN 4040XP, Von Duprin, Trimco and Overtur; this is product/RFP/spec evidence, not revenue/backlog evidence. https://www.prnewswire.com/news-releases/allegion-to-showcase-mission-critical-data-center-solutions-at-data-center-world-2026-302743504.html
+- 主要行业来源：
+  - Grand View Research data center physical security：2026 market size `$2.74B`、2033 `$7.27B`、CAGR `15.0%`、North America largest market in 2025。https://www.grandviewresearch.com/industry-analysis/data-center-physical-security-market-report
+  - AIA ABI April 2026：ABI `48.3`，architecture billings still below growth threshold, but inquiries increased and institutional/multifamily improved. https://www.aia.org/resource-center/abi-april-2026-architecture-firm-billings-retreat
+  - U.S. Census April 2026 construction spending：total construction SAAR `$2.1724T`，private nonresidential `$729.8B`，private nonresidential `-0.2%` m/m。https://www.census.gov/construction/c30/pdf/release.pdf
+  - Dodge Construction Network April 2026 starts：nonresidential starts TTM `+10.0%`，commercial `+25.1%`，large data centers supported growth。https://www.construction.com/company-news/construction-starts-power-on-up-9-in-april/
+  - NAHB Eye on Housing April 2026 private residential spending：private residential `+0.8%` m/m，single-family `-2.9%` y/y，improvement spending `+7.5%` y/y。https://eyeonhousing.org/2026/06/private-residential-construction-spending-increases-in-april/
+- 项目内来源：
+  - `公司调研/机电_冷却_工程_水处理_边缘工业AI/ALLE_Allegion plc_公司调研_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜、围护结构与物理安防_2026-06-11.md`
+

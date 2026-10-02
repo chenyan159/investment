@@ -1,0 +1,180 @@
+# 公司收入传导与价值传导评估：Thermo Fisher Scientific（TMO）
+
+报告日期：2026-06-12  
+公司代号：TMO  
+公司名称：Thermo Fisher Scientific Inc.  
+主口径：NTM，约指 2026-06-12 至 2027-06-11 的未来 12 个月经营窗口；最新已披露财务基准为截至 2026-03-28 的 2026Q1。  
+资料边界：使用 `公司调研/` 与 `行业调研/`，并用公司公告、SEC 文件和 IR 材料补齐最新经营事实；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归或模型比较内容。  
+排除口径：本报告不做全公司排序，不给投资评级，不判断股价区间，不做估值倍数判断；金融市场价格和估值数据不作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径是 NTM 收入、利润率、调整后净利润和自由现金流传导；FY2026 指引、2026-2027 中期框架、Investor Day 长期目标和 AI/半导体远期期权只作校准与补充。
+- 当前收入基准、指引和 run-rate：2026Q1 收入 `110.05 亿美元`，同比 `+6%`，organic `+1%`；公司 2026 指引为收入 `473-481 亿美元`、organic growth `3%-4%`、adjusted operating margin 扩张约 `70 bps`、adjusted EPS `24.64-25.12 美元`、FCF `69-74 亿美元`。2026Q1 RPO 为 `294.1 亿美元`，约 `52%` 预计在未来 12 个月确认，折合约 `152.9 亿美元`可见合同收入。
+- 重要产品/业务线：Clinical research + Clario、Pharma Services/CDMO、BioProduction + filtration、Life science tools/proteomics、Chromatography/MS/chemical analysis、Electron microscopy/materials/semiconductor FA、Specialty Diagnostics（含 Microbiology 剥离）、Laboratory products + Research & Safety channel。
+- NTM 公司收入四情景：悲观 `463-474 亿美元`；基准 `478-490 亿美元`；乐观 `495-510 亿美元`；极度乐观 `515-530 亿美元`。基准接近 FY2026 指引正常兑现并滚入 2027Q1 Clario 全季贡献；乐观需要 bioproduction、clinical research/Clario、pharma services 和仪器恢复同步强于当前预期；极度乐观只代表 NTM 上限。
+- 利润或 EBITDA 四情景：调整后净利润悲观 `86-91 亿美元`；基准 `93-97 亿美元`；乐观 `98-105 亿美元`；极度乐观 `106-115 亿美元`。公司层面利润弹性主要来自 mix、PPI productivity、Clario margin、bioproduction/filtration 高毛利耗材和 Analytical Instruments 利润率修复。
+- 最大传导瓶颈：行业需求已经能支持温和恢复，但 TMO 的大体量使单一新品或 AI 主题很难改变公司收入曲线；NTM 需要把 RPO、并购、biopharma 预算和仪器订单同时转为可确认收入。
+- 最大利润率变量：Analytical Instruments 从 2026Q1 `20.7%` 分部利润率向正常季节性/产品 mix 回升的程度，以及 Clario 并表后能否保持 margin accretive。
+- 最大现金流变量：FCF 取决于临床研究/CDMO 收入确认、应收和合同负债周转、capex `19-21 亿美元`控制、Clario 后去杠杆与回购节奏。
+- 可信度：基准为中高，因 A 级收入表、FY2026 指引、RPO 和分部利润率证据强；乐观为中，因依赖需求恢复和并购执行；极度乐观为低到中，因必须多个核心环节同时超预期。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Clinical research + Clario endpoint data | Clinical research 2026Q1 `21.28 亿美元`；Clario 2026-03-24 完成并表，Q1 只贡献少量天数；Clario purchase price `90.99 亿美元`、backlog `4.61 亿美元` | 约 `19%` Q1 revenue run-rate，Clario 全季后上升 | LPBS 最大增长引擎之一；RPO 质量核心 | A/B，Clario 协同为 C | 进入基准；Clario 全季贡献按保守折扣进入 | AI-enabled endpoint data、eCOA、imaging/cardiac/sensor data 提升 trial productivity |
+| Pharma Services / CDMO | 2026Q1 `17.41 亿美元`，同比 `+8.3%` | 约 `16%` | RPO、长期合同和现金流核心 | A/B | 进入基准；按合同与产能利用率正常兑现 | 新疗法、GLP-1、ADC、oligonucleotide、sterile fill-finish 扩产 |
+| BioProduction + filtration | BioProduction 2026Q1 `8.93 亿美元`，同比 `+33.1%`；Solventum filtration 2025 收购，2025 revenue 预期约 `7.5 亿美元` | 约 `8%` 当前 Q1；LSS 内最大增量 | 高毛利耗材和工艺验证粘性强 | A/C，Solventum run-rate 为 B/C | 进入基准；并购和库存正常化需拆开 | biologics、GLP-1、cell/gene therapy、filtration/separation 跨流程扩张 |
+| Life science tools / proteomics / genetic sciences / biosciences | LSS 2026Q1 总收入 `26.36 亿美元`，除 bioproduction 外约 `17.4 亿美元`季度 run-rate；Olink 2024 并入 LSS | 约 `16%` | 药物发现、proteomics、AI biology 的工具层 | A/C | 进入基准，但 Olink/AI biology 只小比例影响 NTM | Olink population-scale proteomics、AI biology 数据工作流 |
+| Chromatography/MS/chemical analysis | 2026Q1 chromatography & MS `7.98 亿美元`、chemical analysis `2.85 亿美元`；Analytical Instruments 总收入 `17.16 亿美元` | 约 `10%` | 药物研发、质量控制、工业/半导体分析工具 | A/C | 进入基准；新 Orbitrap/AI analytics 主要作乐观增量 | Orbitrap Apex/Excedion、AI-enabled multiomics、proteomics software |
+| Electron microscopy / materials / semiconductor FA | 2026Q1 electron microscopy `6.33 亿美元`，同比约 `-4%`；AI 芯片窄口径收入未披露，模型估算当前年化 `2-6 亿美元` | EM 总体约 `6%`；AI 芯片窄口径约 `0.5%-1.5%` | 半导体/先进封装失效分析真实但公司级小 | A/C，AI 窄口径为 C | EM 进入基准；AI 半导体增量不单独进入基准主收入，只作为乐观因子 | HBM4、CoWoS/SoIC、hybrid bonding、glass/TGV、CPO FA lab 扩容 |
+| Specialty Diagnostics + Microbiology divestiture | Specialty Diagnostics 2026Q1 `11.42 亿美元`；Microbiology 2025 revenue `6.45 亿美元`，已签约出售、预计 2026H2 关闭 | 约 `10%` | 稳定利润池，但增长弹性低；Microbiology 为组合调整 | A/B | 核心诊断进入基准；Microbiology 按 H2 剥离处理，不作为成长项 | 剥离后资本再配置，不作为 NTM 产品需求 |
+| Laboratory products + Research & Safety channel | 2026Q1 lab products `5.69 亿美元`、research & safety `18.27 亿美元` | 约 `22%` | 渠道规模和客户触点大，利润率低于品牌工具/耗材 | A | 进入基准；按低个位数需求恢复处理 | 实验室自动化、e-procurement、Unity Lab Services attach |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不评估 TMO 份额、收入确认、利润率或公司层面汇总。当前需求锚优先使用 2026Q1 分部经营表现、公司 FY2026 指引、Investor Day 2026-2027 中期框架、RPO 交付窗口、行业调研对半导体检测量测和 AI 芯片前道设备的需求判断。需求强弱均相对 TMO 当前经营预期，而不是相对热门主题热度。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Clinical research + Clario endpoint data | 药企/biotech 临床试验 outsourcing、endpoint data、PPD + Clario；RPO 约 `294.1 亿美元`支撑 clinical/CDMO 合同可见性 | Trial starts 延迟、cancellation 上升，Clario 新签放缓；需求低于当前 high-single 增长框架 | 临床外包和 endpoint data 正常恢复，Clario 全季需求符合当前并购假设 | 药企研发预算恢复，AI/data workflow 提高 win rate 和 attach，新增订单强于 RPO 正常转换 | AI-enabled trial operations、real-world/endpoint data、药企 pipeline 投入同时提速，需求池非线性上修 | 悲观：外包需求低个位数；基准：中高个位数；乐观：高个位数到低双位数；极度乐观：低双位数以上 | 基准=符合当前预期；乐观=高于当前 Clario/PPD 路径 | 正向：Clario 被公司定义为 high-single growth、margin accretive；反证：trial cancellation、药企削减 pipeline、整合扰动 |
+| Pharma Services / CDMO | 2026Q1 pharma services `+8.3%`；需求来自 drug substance/product、fill-finish、analytical services、long-term manufacturing | 项目 phasing 推迟、客户 pipeline 失败、利用率下滑 | 大药企外包、biologics 和 sterile manufacturing 正常兑现 | GLP-1/ADC/oligonucleotide/biologics 产能利用率更高，客户锁定更长周期 | 多个高价值疗法商业化和外包转移同时发生，CDMO 产能偏紧且价格/mix 上修 | 悲观：低个位数；基准：中个位数；乐观：高个位数；极度乐观：低双位数 | 基准=当前 run-rate 正常兑现 | 正向：RPO 和长期合同；反证：regulatory delay、批次/产能问题、客户项目终止 |
+| BioProduction + filtration | 2026Q1 BioProduction `+33.1%`，其中并购和 pharma/biotech 需求共同驱动；Solventum filtration 提供 bioprocessing/industrial filtration | 并购贡献外 organic 弱，客户库存继续消化，biotech funding 慢 | 库存正常化，Solventum 并表，biologics/GLP-1/ADC 工艺耗材需求正常增长 | 高毛利耗材和 filtration/separation attach 高于预期，客户工艺验证锁定提高复购 | biologics/GLP-1/CGT 产量、single-use、filtration、resin 同步偏紧 | 悲观：中低个位数 organic；基准：中个位数；乐观：高个位数；极度乐观：低双位数以上 | 基准=符合 FY2026 organic 3%-4% 框架中的强项 | 正向：Solventum 预计 mid/high-single organic growth；反证：并购摊薄、库存、价格压力 |
+| Life science tools / proteomics / genetic sciences / biosciences | LSS 除 bioproduction 外需求来自 academic、biotech、pharma research、proteomics/Olink、genetic sciences | Academic/biotech funding 弱，Olink 转化慢，仪器/试剂采购延后 | 药企研究工具温和恢复，Olink 和 genetic/biosciences 小幅贡献 | AI biology、多组学、proteomics 数据需求提高，Olink attach 超预期 | AI biology 预算明显转化为 population-scale proteomics 和新平台采购 | 悲观：持平到低个位数；基准：低中个位数；乐观：中高个位数；极度乐观：高个位数以上 | 基准=当前中期框架辅助项 | 正向：Investor Day 强调 AI 加速 drug discovery；反证：Olink 当前收入小，academic/government funding 弱 |
+| Chromatography/MS/chemical analysis | 2026Q1 chromatography/MS `+3.2%`，chemical analysis 基本持平；ASMS 2026 发布 Orbitrap Apex/Excedion 和 AI analytics | 工业、中国和学术预算弱，高端 MS 更新周期推迟 | 药物研发、质量控制和工业分析低中个位数恢复 | 新 Orbitrap、multiomics、biopharma characterization 和 proteomics software 提高替换需求 | AI-enabled multiomics 和复杂新疗法分析需求快速进入预算 | 悲观：-2% 到 +1%；基准：+2%-4%；乐观：+5%-8%；极度乐观：+9% 以上 | 基准=略好于 Q1但不激进 | 正向：ASMS 2026 新品；反证：Q1 AI 分部 organic `-2%`，instrument demand muted |
+| Electron microscopy / materials / semiconductor FA | 2026Q1 EM `6.33 亿美元`、同比约 `-4%`；行业侧 AI 芯片/HBM/advanced packaging 检测量测需求强 | 学术/中国预算弱抵消半导体 FA，EM 继续下滑 | EM 需求稳定，半导体/materials FA 小幅改善但不改变公司级增长 | HBM4、CoWoS/SoIC、hybrid bonding FA lab 采购增强，EM 恢复增长 | AI 芯片先进封装、glass/TGV、CPO、材料分析同时放量，FA 工具抢装 | 悲观：EM -5% 到 0%；基准：0%-5%；乐观：+6%-12%；极度乐观：+15% 以上 | 基准=低于行业热度但符合 TMO 当前证据 | 正向：行业调研显示检测量测和 FA 是 AI 良率瓶颈；反证：TMO 不是 inline process-control 龙头，Q1 EM 下滑 |
+| Specialty Diagnostics + Microbiology divestiture | Specialty Diagnostics 2026Q1 `-1%`，核心 diagnostics 稳定；Microbiology 2025 revenue `6.45 亿美元`拟出售 | 医院/临床渠道预算弱，Microbiology 分离扰动 | 核心诊断低个位数稳定，Microbiology 在出售前按正常业务运转 | Immunodiagnostics、transplant、microbiology 需求稳健，剥离干扰小 | 诊断需求和价格/mix 强于预期，但剥离限制极度上修 | 悲观：-2% 到 0%；基准：0%-3%；乐观：+3%-5%；极度乐观：+5% 以上 | 基准=当前稳定现金流预期 | 正向：分部 margin `27.4%`；反证：Microbiology 出售后收入减少、EPS 稀释 `0.15 美元`首个完整年度 |
+| Laboratory products + Research & Safety channel | Research & Safety 2026Q1 `+5.8%`，lab products `-2.2%`；需求来自实验室日常消耗、渠道、服务 | Academic/biotech 预算疲弱，低毛利渠道量价承压 | 通用实验室需求低个位数恢复，channel mix 稳定 | 客户补库、服务 attach、e-procurement 提高渠道份额 | 实验室活动和科研预算同步恢复，但利润弹性仍低于耗材/服务 | 悲观：-2% 到 +1%；基准：+2%-4%；乐观：+5%-7%；极度乐观：+8% 以上 | 基准=符合低个位数恢复 | 正向：research & safety 较强；反证：lab products 仍下滑、渠道毛利低 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些需求可进入 TMO 的 NTM 收入表，以及当前可收入化基数。A 级证据为已披露收入、分部收入和正式指引；B 级为 RPO、合同和明确交付窗口；C 级为并购协同、客户认证、管理层可验证但未完全量化的披露；D/E 级不进基准。产品级数字为分部/子业务近似口径，不可直接简单相加，公司汇总在第 6 节统一扣除分部内部抵销。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Clinical research + Clario endpoint data | Clinical research 2026Q1 `21.28 亿美元`；Clario 3/24/2026 完成，purchase price `90.99 亿美元`、backlog `4.61 亿美元` | 直接收入；AI/data 为 workflow 增强 | 服务型，margin 低于 LSS 但 Clario 被公司称为 margin accretive | `86-94 亿美元` | `100-109 亿美元` | `110-121 亿美元` | `122-135 亿美元` | 基准略高于 Q1 年化，因 Clario 全季并表 | A/B；Clario 增量 C | 是 | Q1收入、RPO、Clario 正式收购和 backlog | 基准纳入；乐观以上看 endpoint data attach 与 trial starts |
+| Pharma Services / CDMO | 2026Q1 `17.41 亿美元`，同比 `+8.3%` | 直接收入 | 合同制造服务；利润率受利用率和项目 mix 影响 | `67-71 亿美元` | `72-78 亿美元` | `78-85 亿美元` | `86-93 亿美元` | 基准符合当前 run-rate 和合同路径 | A/B | 是 | Q1 子业务收入、RPO 属性 | 基准纳入；项目 phasing 是主要不确定性 |
+| BioProduction + filtration | 2026Q1 BioProduction `8.93 亿美元`；Solventum filtration 2025 revenue 预期约 `7.5 亿美元` | 直接收入 | 高毛利耗材/过滤，客户验证和复购粘性强 | `35-38 亿美元` | `39-43 亿美元` | `44-49 亿美元` | `50-57 亿美元` | 基准符合并购+库存正常化路径 | A/C | 是 | Q1收入、Solventum 完成收购、管理层增长表述 | 基准纳入；高增速需拆分并购与 organic |
+| Life science tools / proteomics / genetic sciences / biosciences | LSS 2026Q1 `26.36 亿美元`，扣除 BioProduction 后约 `17.4 亿美元`季度 run-rate；Olink 并入 LSS | 直接收入 | 试剂、工具和平台；margin 高于渠道 | `64-68 亿美元` | `69-75 亿美元` | `76-82 亿美元` | `83-90 亿美元` | 基准为温和恢复，不把 AI biology 提前上修 | A/C | 是 | 分部收入、Olink 收购、ASMS/Investor Day | 基准纳入；Olink/AI biology 主要是乐观增量 |
+| Chromatography/MS/chemical analysis | 2026Q1 chromatography/MS `7.98 亿美元`、chemical analysis `2.85 亿美元` | 直接收入 | 高端仪器+耗材+服务；利润率受周期和 mix 影响 | `41-44 亿美元` | `45-49 亿美元` | `50-54 亿美元` | `55-61 亿美元` | 基准略高于 Q1 run-rate，假设仪器季节性恢复 | A/C | 是 | Q1子业务、ASMS 2026 新品 | 基准纳入；新品不单独进基准上修 |
+| Electron microscopy / materials / semiconductor FA | 2026Q1 EM `6.33 亿美元`；AI 芯片窄口径未披露 | 直接收入，但 AI 芯片为间接暴露 | 高端仪器和服务，ASP高但周期性和客户认证强 | `23-25 亿美元` | `25-28 亿美元` | `29-33 亿美元` | `34-40 亿美元` | 基准只承认 EM 总体稳定，AI 半导体窄口径不单独拉高 | A/C | 是，AI 窄口径只部分 | EM 已披露；半导体 FA 为行业映射和产品证据 | EM 总收入进基准；AI 芯片制造增量只进乐观 |
+| Specialty Diagnostics + Microbiology divestiture | Specialty Diagnostics 2026Q1 `11.42 亿美元`；Microbiology 2025 revenue `6.45 亿美元`拟 H2 出售 | 直接收入；Microbiology 为待剥离 | 稳定高分部 margin；剥离后收入减少但组合更聚焦 | `40-42 亿美元` | `41-44 亿美元` | `44-47 亿美元` | `47-50 亿美元` | 基准承认剥离负项，不把出售收入延续外推 | A/B | 是，按剥离调整 | Q1收入、出售协议 | 核心 diagnostics 纳入；Microbiology 在关闭后移出 |
+| Laboratory products + Research & Safety channel | 2026Q1 lab products `5.69 亿美元`、research & safety `18.27 亿美元` | 直接收入 | 渠道规模大、利润率较低，现金周转重要 | `91-97 亿美元` | `98-105 亿美元` | `106-114 亿美元` | `115-124 亿美元` | 基准为低个位数恢复 | A | 是 | Q1子业务收入 | 基准纳入；不是 AI 主题弹性来源 |
+| 分部内部抵销 | 2026Q1 eliminations `-5.24 亿美元` | 抵销项 | 不产生外部利润 | `-20` 至 `-22 亿美元` | `-21` 至 `-23 亿美元` | `-22` 至 `-24 亿美元` | `-23` 至 `-25 亿美元` | 符合历史抵销比例 | A | 是，作为扣减 | 分部表 | 公司汇总必须扣除，避免重复计算 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第 3 节需求和第 4 节可收入化基数出发，判断每条业务在 NTM 内的收入和利润贡献。收入贡献以可确认收入为核心，不把 TAM、客户总预算、项目总金额或 AI 叙事直接转为 TMO 收入；利润贡献用方向和区间估算，不把低毛利渠道收入与高毛利耗材/软件等同处理。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Clinical research + Clario endpoint data | 悲观 | `86-94 亿美元` | 分部利润约 `10-12 亿美元` | 低于预期，整合和 cancellation 压制 | 低于当前预期 | RPO 有可见性但项目可延期 | 保留悲观 | trial cancellation、客户 pipeline cut、Clario 整合 |
+| Clinical research + Clario endpoint data | 基准 | `100-109 亿美元` | `13-15 亿美元` | 略改善 | 符合当前预期 | Q1 clinical research `21.28 亿美元`，Clario high-single growth/并表 | 保留基准 | Q1 只部分并表，full-year ramp 仍需假设 |
+| Clinical research + Clario endpoint data | 乐观 | `110-121 亿美元` | `15-18 亿美元` | margin accretive | 高于当前预期 | endpoint data attach、AI trial productivity、RPO 转化 | 保留乐观 | 需要订单和利润同时验证 |
+| Clinical research + Clario endpoint data | 极度乐观 | `122-135 亿美元` | `18-21 亿美元` | 明显扩张 | NTM 上限 | AI-enabled trial ops 和客户预算同步上修 | 下移为乐观上限 | 核心环节缺乏足够 NTM 量化订单 |
+| Pharma Services / CDMO | 悲观 | `67-71 亿美元` | `8-10 亿美元` | 利用率下滑 | 低于预期 | 项目 phasing 与客户 pipeline 风险 | 保留悲观 | 批次、监管、项目终止 |
+| Pharma Services / CDMO | 基准 | `72-78 亿美元` | `10-12 亿美元` | 稳定到小幅改善 | 符合预期 | Q1 `+8.3%`，RPO 合同支撑 | 保留基准 | phasing 会放大季度波动 |
+| Pharma Services / CDMO | 乐观 | `78-85 亿美元` | `12-14 亿美元` | 利用率改善 | 高于预期 | biologics、GLP-1、ADC、sterile fill-finish | 保留乐观 | 高收入不一定全部留下利润 |
+| Pharma Services / CDMO | 极度乐观 | `86-93 亿美元` | `14-17 亿美元` | 强利用率 | NTM 上限 | 多个商业化项目和外包迁移同时兑现 | 下移为乐观上限 | 产能验证、监管和客户集中 |
+| BioProduction + filtration | 悲观 | `35-38 亿美元` | `13-15 亿美元` | mix 仍好但并购摊薄 | 低于预期 | 客户库存未完全正常 | 保留悲观 | 并购贡献掩盖 organic 弱 |
+| BioProduction + filtration | 基准 | `39-43 亿美元` | `15-17 亿美元` | 高毛利稳定 | 符合预期 | Q1 `+33.1%`，Solventum 加强 filtration | 保留基准 | 需要区分并购和 organic |
+| BioProduction + filtration | 乐观 | `44-49 亿美元` | `18-21 亿美元` | mix 改善 | 高于预期 | 工艺验证锁定、耗材复购、filtration attach | 保留乐观 | 客户库存和价格重谈 |
+| BioProduction + filtration | 极度乐观 | `50-57 亿美元` | `21-25 亿美元` | 明显扩张 | NTM 上限 | biologics/GLP-1/CGT 同时拉动 | 下移为乐观上限 | 缺少公司量化订单 |
+| Life science tools / proteomics / biosciences | 悲观 | `64-68 亿美元` | `22-24 亿美元` | 高毛利但量弱 | 低于预期 | 学术/biotech funding 弱 | 保留悲观 | 预算延迟 |
+| Life science tools / proteomics / biosciences | 基准 | `69-75 亿美元` | `25-28 亿美元` | 稳定 | 符合预期 | LSS 分部 margin `36.2%`，Olink/工具平台 | 保留基准 | AI biology 收入基数仍小 |
+| Life science tools / proteomics / biosciences | 乐观 | `76-82 亿美元` | `28-31 亿美元` | 小幅扩张 | 高于预期 | Proteomics/Olink、multiomics、药企研究预算恢复 | 保留乐观 | 新平台 adoption 需时间 |
+| Life science tools / proteomics / biosciences | 极度乐观 | `83-90 亿美元` | `31-35 亿美元` | 扩张 | NTM 上限 | AI biology 预算明显转为工具采购 | 移入附录/跟踪 | 远期机会强于 NTM 证据 |
+| Chromatography/MS/chemical analysis | 悲观 | `41-44 亿美元` | `7-8 亿美元` | 分部 mix 压力 | 低于预期 | Analytical Instruments Q1 organic `-2%` | 保留悲观 | 美国/中国 academic/government instrument demand muted |
+| Chromatography/MS/chemical analysis | 基准 | `45-49 亿美元` | `8-10 亿美元` | 从 Q1 修复 | 符合预期 | chromatography/MS Q1 `+3.2%`；ASMS 新品 | 保留基准 | 新品不等于立即收入 |
+| Chromatography/MS/chemical analysis | 乐观 | `50-54 亿美元` | `10-12 亿美元` | mix 改善 | 高于预期 | Orbitrap Apex/Excedion、AI analytics、proteomics software | 保留乐观 | 高端仪器采购周期 |
+| Chromatography/MS/chemical analysis | 极度乐观 | `55-61 亿美元` | `12-15 亿美元` | 明显改善 | NTM 上限 | 多组学/新疗法分析需求快速进预算 | 仅作跟踪 | 缺少订单和交付时间表 |
+| Electron microscopy / materials / semiconductor FA | 悲观 | `23-25 亿美元` | `4-5 亿美元` | 低利用率/不利 mix | 低于预期 | Q1 EM 下降约 `4%` | 保留悲观 | TMO 不是 inline 主链，客户预算弱 |
+| Electron microscopy / materials / semiconductor FA | 基准 | `25-28 亿美元` | `5-6 亿美元` | 稳定到小幅修复 | 符合预期 | EM 已披露收入，半导体 FA 真实但小 | 保留基准 | AI 窄口径不可可靠量化 |
+| Electron microscopy / materials / semiconductor FA | 乐观 | `29-33 亿美元` | `6-8 亿美元` | mix 改善 | 高于预期 | 行业调研显示 HBM/先进封装检测量测需求强 | 保留乐观 | 订单可能流向 KLA/AMAT/Onto/Nova/Camtek |
+| Electron microscopy / materials / semiconductor FA | 极度乐观 | `34-40 亿美元` | `8-10 亿美元` | 高端工具放量 | NTM 上限 | HBM4/SoIC/glass/CPO FA lab 同时扩容 | 下移为乐观上限 | 缺乏 TMO-specific backlog |
+| Specialty Diagnostics + Microbiology divestiture | 悲观 | `40-42 亿美元` | `10-11 亿美元` | 稳定但剥离扰动 | 低于预期 | Microbiology 出售和渠道弱 | 保留悲观 | 剥离关闭、客户迁移 |
+| Specialty Diagnostics + Microbiology divestiture | 基准 | `41-44 亿美元` | `11-12 亿美元` | 稳定 | 符合预期 | Q1 margin `27.4%` | 保留基准 | 低增速，不是增长主线 |
+| Specialty Diagnostics + Microbiology divestiture | 乐观 | `44-47 亿美元` | `12-13 亿美元` | 小幅改善 | 略高于预期 | Immunodiagnostics/transplant 增长抵消剥离 | 保留乐观但降权 | 剥离限制收入上沿 |
+| Specialty Diagnostics + Microbiology divestiture | 极度乐观 | `47-50 亿美元` | `13-14 亿美元` | 改善有限 | 上限 | 诊断需求强且剥离无扰动 | 仅作跟踪 | 不是可验证非线性机会 |
+| Laboratory products + Research & Safety channel | 悲观 | `91-97 亿美元` | `8-9 亿美元` | 低毛利，量价承压 | 低于预期 | lab products Q1 `-2.2%` | 保留悲观 | 通用预算疲弱 |
+| Laboratory products + Research & Safety channel | 基准 | `98-105 亿美元` | `9-11 亿美元` | 稳定 | 符合预期 | research & safety Q1 `+5.8%` | 保留基准 | 渠道收入低毛利，利润弹性弱 |
+| Laboratory products + Research & Safety channel | 乐观 | `106-114 亿美元` | `11-13 亿美元` | 小幅改善 | 高于预期 | 补库、服务 attach、商业引擎 | 保留乐观 | 高增速难长期维持 |
+| Laboratory products + Research & Safety channel | 极度乐观 | `115-124 亿美元` | `13-15 亿美元` | 改善但非高毛利 | NTM 上限 | 实验室活动全面恢复 | 下移为乐观上限 | 低毛利 pass-through 风险 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节将产品级贡献去重后合成为 TMO NTM 公司收入、毛利率、经营利润率、调整后净利润和自由现金流方向。公司收入不是各产品上沿简单相加，已扣除分部内部抵销、Microbiology H2 可能剥离、Clario 部分并表滚动效应和季节性。毛利率使用 GAAP/reported gross margin 近似；经营利润率优先使用公司管理层调整后 operating margin 口径。第一个表为公司收入和利润四情景，不讨论市场定价、目标价、评级或估值倍数。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `463-474 亿美元` | 较截至 2026Q1 TTM `452.0 亿美元`约 `+2%-5%` | 低于 FY2026 `473-481 亿美元`正常兑现路径；Clario 和 bioproduction 未充分抵消仪器/剥离/预算弱 | `39.6%-40.2%` | 调整后 `21.8%-22.6%` | 调整后净利润 `86-91 亿美元` | FCF `62-69 亿美元`，去杠杆慢 | 中 | 仪器 demand、clinical cancellations、bioproduction organic 弱、Microbiology 剥离和 Clario 整合 |
+| 基准公司 | `478-490 亿美元` | 约 `+6%-8%` | 接近 FY2026 指引正常兑现并滚入 2027Q1 Clario 全季贡献；符合 2026-2027 organic `3%-6%`框架 | `40.4%-41.1%` | 调整后 `23.0%-23.5%` | 调整后净利润 `93-97 亿美元` | FCF `70-77 亿美元`，基本符合 `69-74 亿美元` FY2026 guide | 中高 | RPO 转收入、PPI productivity、Clario margin、Analytical Instruments Q1 后修复 |
+| 乐观公司 | `495-510 亿美元` | 约 `+10%-13%` | 高于当前预期；不是单一小基数 AI 项目，而是 clinical/bioproduction/CDMO/仪器同步强 | `41.0%-41.8%` | 调整后 `23.6%-24.2%` | 调整后净利润 `98-105 亿美元` | FCF `76-85 亿美元`，working capital 改善 | 中 | 需要 Clario revenue synergy、BioProduction organic、Analytical Instruments margin 同步验证 |
+| 极度乐观公司 | `515-530 亿美元` | 约 `+14%-17%` | 显著高于当前预期；只代表 NTM 上限 | `41.8%-42.6%` | 调整后 `24.2%-25.0%` | 调整后净利润 `106-115 亿美元` | FCF `85-95 亿美元` | 低到中 | 需求、公司捕获、利润率和执行必须同时突破；AI 半导体 FA 单独不足以支撑 |
+
+汇总检查：
+
+- 产品重复计算：Clinical research、Pharma Services、lab products/research channel 均在 LPBS 内，不能与 LPBS 分部总收入重复相加；LSS 中 BioProduction 与 Olink/proteomics 分开处理但在公司层面按 LSS 总收入约束。
+- 一次性和并购：Clario 2026Q1 只从 3 月 24 日起并表，NTM 要滚入全季贡献；Microbiology 出售预计 2026H2 关闭，不能把 2025 `6.45 亿美元`收入完整外推到 NTM 后半段。
+- 汇率/关税：2026Q1 Analytical Instruments margin 受 tariffs 和 related FX 影响，悲观情景不重复在每个产品层级惩罚，主要在公司利润率层校准。
+- 低毛利收入：Lab products/research channel 和部分 CDMO 收入增长不能自动转换为高质量利润；高毛利弹性主要来自 LSS、bioproduction、analytical high-end instruments、Clario data workflow 和 PPI productivity。
+- AI/半导体：行业检测量测景气强，但 TMO 的 AI 芯片制造窄口径收入估算仅约公司收入 `0.5%-1.5%`，只能影响 Analytical Instruments 的乐观/极度乐观边际，不能主导公司收入情景。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在它实际影响的层级处理一次；市场价格、估值倍数和股价表现不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 指引 `473-481 亿美元`、organic `3%-4%`、adjusted EPS `24.64-25.12 美元` | 公司汇总 | 支撑基准公司 `478-490 亿美元` NTM | 支撑调整后 operating margin `23%+` | FCF guide `69-74 亿美元`提供现金流锚 | 基准保留 |
+| RPO `294.1 亿美元`，约 `52%` 未来 12 个月确认 | 收入基数/产品贡献 | 支撑 Clinical research、Pharma Services、contract manufacturing 和 service agreements | 利润率取决于 mix，不自动扩张 | 提供可见收入但不等于无风险 backlog | 基准保留，乐观需新增订单 |
+| Clario 3/24/2026 完成，purchase price `90.99 亿美元`、backlog `4.61 亿美元`，公司称 high-single growth、margin accretive | 收入基数/利润/执行 | 提高 NTM LPBS 收入基数，Q1 后全季并表 | 若整合顺利，margin accretive | 交易后债务和商誉上升，执行压力增加 | 基准保留，极度乐观下移为乐观上限 |
+| BioProduction Q1 `+33.1%`，Solventum filtration 强化 bioproduction | 需求/收入基数/利润 | 提高 LSS 基准和乐观弹性 | 高毛利耗材/filtration 对 mix 有利 | 工艺验证和复购增强可见性 | 乐观保留 |
+| Analytical Instruments Q1 organic `-2%`、segment margin `20.7%`，EM 下滑约 `4%` | 产品贡献/公司利润 | 限制仪器基准上修 | 关税、FX、volume 和 mix 压制 margin | 仪器订单恢复慢会拖累公司经营杠杆 | 悲观保留，基准不因 AI 半导体自动上移 |
+| Microbiology 2025 revenue `6.45 亿美元`拟出售，预计 2026H2 关闭，首个完整年度 adjusted EPS 稀释 `0.15 美元` | 公司组合 | NTM 后半段收入减少或不再外推 | 剥离后组合更聚焦但短期 EPS 稀释 | 分离执行和客户迁移风险 | 在公司汇总处理一次，不在产品层重复惩罚 |
+| Investor Day 2026：服务 `2550 亿美元`市场、长期 organic revenue CAGR `7%`、2026-2027 organic `3%-6%` | 需求/公司汇总 | 支撑中长期需求，但不能替代 NTM | 支撑 PPI 和 mix 长期改善 | 长期框架需逐季验证 | 作为基准和乐观校准，不上移极度乐观 |
+| ASMS 2026 Orbitrap Apex/Excedion、AI-driven analytics、Olink/proteomics | 产品需求/远期期权 | 对 MS/proteomics 有正向新品周期 | 高端新品 mix 有利 | 新品转收入有采购周期 | 乐观保留，基准小比例纳入 |
+| 半导体检测量测行业景气、HBM/先进封装 FA 需求 | 产品需求 | 对 EM/materials/chemical analysis 有边际正向 | 高端 EM/FA 订单有利 | 客户认证和装机周期长 | 只影响 Analytical Instruments 乐观；不进入公司基准上修 |
+| Academic/government、China、biotech funding 弱 | 需求风险 | 压制 instruments、lab products 和 tools | 低 volume 会压制 AI 分部利润率 | 可能拉长订单转收入 | 在需求/产品层处理，不重复压低公司所有业务 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 收入 `463-474 亿美元`，利润率低于当前结构，Clario/bioproduction 无法抵消仪器和剥离 | A 级收入基数仍大，RPO 支撑可见收入 | 仪器需求弱、trial cancellation、Microbiology 剥离、Clario 整合和杠杆上升 | 保留 | 悲观情景保留为低于当前预期路径 | 中 | 不再把同一 academic/China instrument 弱需求同时惩罚 LSS、AI 和公司利润多次 |
+| 基准 | 收入 `478-490 亿美元`，FY2026 指引正常兑现并滚入 2027Q1 | FY2026 guide、Q1收入、RPO、Clario/ Solventum 并表、PPI productivity | Q1 organic 只有 `+1%`，Analytical Instruments weak，Microbiology 出售 | 保留 | 最可能情景 | 中高 | Microbiology 剥离只在公司组合层处理，不重复压低 Specialty Diagnostics 和公司两次 |
+| 乐观 | 收入 `495-510 亿美元`，clinical/bioproduction/CDMO/仪器同步强于预期 | Clario high-single、BioProduction 强、RPO 增长、ASMS 新品、AI-enabled drug development | 乐观仍需公司特定订单和 margin 验证；AI 半导体 FA 公司级小 | 保留 | 乐观情景保留 | 中 | 不把行业 AI 半导体 beta 当作 TMO 公司 alpha |
+| 极度乐观 | 收入 `515-530 亿美元`，需求、捕获、利润率和执行同步突破 | 长期市场大、Investor Day 7% long-term organic CAGR、AI/automation 叙事 | NTM 证据不足，TMO 体量大，AI 半导体窄口径小，多个业务同时突破概率低 | 下移 | 校准后作为 NTM 上限和后续跟踪，不作为当前预期 | 低到中 | 不把 Clario、AI biology、HBM/FA 和 bioproduction 的乐观假设简单相加 |
+
+## 8. 结论
+
+- 最可能情景：基准。TMO 的 NTM 经营最可能落在收入 `478-490 亿美元`、调整后 operating margin `23.0%-23.5%`、调整后净利润 `93-97 亿美元`、FCF `70-77 亿美元`区间。这个判断不是因为 AI 叙事，而是因为 FY2026 指引、RPO、Clario 全季并表、BioProduction/filtration、Pharma Services 和 LPBS 正常兑现共同支撑。
+- 乐观情景成立条件：RPO 继续高于收入增速增长，Clario/PPD clinical research 在 2026H2 保持接近双位数增长且 margin accretive，BioProduction 剔除并购后仍中高个位数增长，Pharma Services 项目 phasing 好于预期，Analytical Instruments 从 Q1 的 `20.7%` 分部 margin 明显修复。
+- 极度乐观情景成立条件：药企研发和临床试验预算恢复、AI-enabled trial/productivity 工具形成可计费增长、BioProduction/filtration 耗材偏紧、high-end MS/proteomics 新品快速转订单、半导体 FA/EM 需求明显回升，同时 PPI 和 mix 让收入增量保留为利润。
+- 悲观情景触发条件：2026Q2-Q3 organic growth 仍低于公司 `3%-4%` FY2026 假设，RPO 未来 12 个月确认比例下降，Clario 整合成本或 trial cancellation 增加，Analytical Instruments 连续两个季度收入或 margin 下滑，Microbiology 剥离导致的 EPS/收入调整超出预期。
+- 后续跟踪数据：Q2 2026 指引更新和 Microbiology 出售影响；RPO 总额和 12 个月确认比例；Clinical research + Clario 增速与 margin；BioProduction organic vs acquisition 拆分；Analytical Instruments revenue、EM revenue 和 segment margin；FCF conversion、net debt/EBITDA、capex；ASMS 新品订单和半导体 FA 工具需求是否进入 TMO 可确认收入。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：最新已披露财务期为 2026Q1，截至 2026-03-28；报告生成日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Thermo Fisher 2026Q1 earnings release：`https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Reports-First-Quarter-2026-Results/default.aspx`
+  - Thermo Fisher 2026Q1 Form 10-Q：`https://www.sec.gov/Archives/edgar/data/97745/000009774526000092/tmo-20260328.htm`
+  - Thermo Fisher 2026 Investor Day presentation：`https://s27.q4cdn.com/797047529/files/doc_presentations/2026/May/20/2026-Investor-Day-Presentation-materials-distribution-vF.pdf`
+  - Thermo Fisher 2025 Annual Report：`https://s27.q4cdn.com/797047529/files/doc_financials/2024/ar/2025-AR-Bookmarked-10-K.pdf`
+- 并购、剥离和产品来源：
+  - Clario acquisition completion：`https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Completes-Acquisition-of-Clario-Holdings-Inc-/default.aspx`
+  - Solventum purification & filtration acquisition completion：`https://ir.thermofisher.com/investors/news-events/news/news-details/2025/Thermo-Fisher-Scientific-Completes-Acquisition-of-Solventums-Purification-and-Filtration-Business/default.aspx`
+  - Olink acquisition completion：`https://ir.thermofisher.com/investors/news-events/news/news-details/2024/Thermo-Fisher-Scientific-Completes-Acquisition-of-Olink-Announces-Commencement-of-Subsequent-Offering-Period/default.aspx`
+  - Microbiology sale agreement：`https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Signs-Agreement-to-Sell-its-Microbiology-Business-to-Astorg/default.aspx`
+  - ASMS 2026 Orbitrap / AI analytics innovations：`https://ir.thermofisher.com/investors/news-events/news/news-details/2026/Thermo-Fisher-Scientific-Unveils-Next-generation-Innovations-at-ASMS-2026-to-Accelerate-the-Path-from-Drug-Discovery-to-New-Therapies/default.aspx`
+- 项目内公司资料：
+  - `公司调研/封测_检测_计量_光罩/TMO_Thermo_Fisher_Scientific_公司调研_2026-06-11.md`
+- 项目内行业资料：
+  - `行业调研/行业索引.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 指引来自 2026Q1 call 与 2026 Investor Day recap：收入 `473-481 亿美元`、organic `3%-4%`、adjusted operating margin 扩张 `70 bps`、adjusted EPS `24.64-25.12 美元`、FCF `69-74 亿美元`。
+  - 2026-2027 中期框架来自 Investor Day：organic revenue growth `3%-6%`、margin expansion `50-70 bps`、high single-digit adjusted operating income growth。
+  - 长期框架来自 Investor Day：长期 organic revenue CAGR `7%`、low-teens adjusted EPS growth；该长期框架不进入 NTM 主表，只用于解释远期期权。
+  - AI/半导体：TMO 直接 AI 数据中心收入按 `0`处理；AI 芯片制造间接相关收入只通过 EM/materials/chemical analysis 的乐观因子体现，不进入公司基准上修。

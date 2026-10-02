@@ -1,0 +1,287 @@
+# 公司：SNDK SanDisk（Sandisk Corporation）公司调研
+
+报告日期：2026-06-11（America/Los_Angeles）。  
+股票代码：SNDK，Nasdaq。  
+正式分类目录：`公司调研/AI服务器_存储_EMS/`。  
+资料边界：本报告只读取项目内 `行业调研/` 下与 AI 数据中心、AI-native 存储、企业级 SSD、HDD/对象存储相关资料；未读取、引用或继承 `特征量化/`、`日度资料/`、`公司调研/` 下既有公司报告或备份资料。公司分类仅按 `公司调研/公司索引.md` 核对，不修改索引。  
+核心外部资料窗口：2025-08 至 2026-06；财务数据以 Sandisk 2026-04-30 FY2026Q3 earnings release、2026-05 10-Q、截至 2026-06-11 的市场数据为主。
+
+## 0. 核心结论
+
+1. **SanDisk 已经不是普通消费存储品牌，而是独立上市后的纯 NAND / enterprise SSD / AI 推理存储周期龙头。** 公司于 2025-02-21 从 Western Digital 分拆，2025-02-24 以 SNDK 在 Nasdaq 独立交易；业务覆盖 Datacenter、Edge、Consumer 三个 end market，底层是 NAND flash、SSD、嵌入式存储、可移动存储和 wafer/component。
+2. **投资人当前把 SNDK 看成“AI inference storage + NAND 紧缺 + 多年供货合同”的高 beta 标的。** 2026-04-03 季度，公司收入 `$5.950B`，同比 `+251%`、环比 `+97%`；Datacenter 收入 `$1.467B`，同比 `+645%`、环比 `+233%`；GAAP gross margin `78.4%`、net margin `60.8%`。这不是传统 NAND 中游复苏的斜率。
+3. **最硬的订单证据是 RPO 和 NBM。** 2026Q3 公司披露截至 2026-04-03 的 remaining performance obligations 为 `$41.6B`，其中 `$41.2B` 未开票、`$0.4B` 已记入 contract liabilities，约 `15%` 预计在未来 12 个月确认收入。管理层在电话会中称 Q3 签 3 份 NBM，Q4 又签 2 份，五份合计 financial guarantees 超 `$11B`，FY2027 bits 中超过三分之一已被这些协议覆盖。
+4. **AI 暴露正在从“卖 SSD 给数据中心”升级为“进入 AI memory hierarchy”。** 本地行业资料显示，AI 推理的长上下文、RAG、agent、KV cache 正把 SSD/QLC/NVMe 从冷数据层推到近 GPU / near DPU 的热温路径。SanDisk 的 SN861、SN655、SN670、UltraQLC 256TB、HBF 是这条路径上的关键产品。
+5. **最大风险同样清晰：SNDK 的利润率被 2026 NAND ASP 急涨、enterprise SSD 供不应求和合约结构共同放大，不能按永久 80% gross margin 外推。** 如果 2027H2 NAND 供给释放、客户从 NBM 中获得价格下行分享、QLC/HBF 认证慢于预期，估值会快速重新周期化。
+
+## 1. 公司业务、产业链定位和估值快照
+
+### 1.1 整体业务
+
+Sandisk Corporation 是基于 NAND flash 的数据存储设备与解决方案公司。公司 10-Q 对业务的定义是：开发、制造并提供 NAND flash 数据存储设备和解决方案，组合包括 SSD、embedded products、removable cards、USB drives、wafers and components。三大 end market：
+
+| End market | 公司定义 | 2026Q3 收入 | 占比 | AI 相关性 |
+|---|---|---:|---:|---|
+| Datacenter | 公有/私有云、企业客户，核心是 enterprise SSD、数据中心 NAND、AI 数据路径 | `$1.467B` | `24.7%` | 最高；AI/ML、KV cache、RAG、checkpoint、data lake |
+| Edge | OEM / channel，高性能 flash：PC、mobile、gaming、auto、VR、industrial | `$3.663B` | `61.6%` | 中等；AI PC/手机提升容量，但不是 AI 数据中心直接收入 |
+| Consumer | 零售与终端用户品牌产品：portable SSD、memory card、USB 等 | `$0.820B` | `13.8%` | 低到中；AI 内容创作有拉动，但增长优先级低 |
+
+### 1.2 最近 3 年重大变化
+
+| 时间 | 事件 | 对业务的影响 |
+|---|---|---|
+| 2023-10-30 | Western Digital 董事会授权推进 HDD 与 flash 业务分拆 | 为纯 NAND / flash 资产单独估值奠定基础；SanDisk 从 WDC 内部经营段变成独立公司 |
+| 2025-02-21 / 2025-02-24 | 分拆完成；SNDK 独立上市 | WDC 股东按每 3 股 WDC 获 1 股 SNDK；SanDisk 获得独立资本配置、独立股票激励和独立债务结构 |
+| 2025-08 | FMS 2025 展示 UltraQLC 256TB NVMe enterprise SSD | 把公司叙事从传统 SSD 拉向 hyperscale cloud / AI data lake；SN670 128TB 与 256TB UltraQLC 计划 2026H1 U.2 可用 |
+| 2025-08 | 与 SK hynix 签 HBF MOU，推动 High Bandwidth Flash 标准化 | 尝试切入 HBM 与传统 SSD 之间的 AI inference memory tier；目标 HBM 类带宽、8-16x HBM 容量、2026H2 first samples、2027 early AI-inference devices |
+| 2025-10 | SN861 PCIe Gen5 SSD 获 OCP Inspired 认可 | SN861 U.2/E1.S 获 OCP Datacenter NVMe SSD 规范认可，有利于 hyperscaler 认证和采购白名单 |
+| 2026Q3 | NBM / RPO 披露 | 三份 Q3 协议形成 `$41.6B` RPO，五份合计 financial guarantees 超 `$11B`；公司从 spot NAND 周期向多年 volume/pricing 组合合约转型 |
+
+### 1.3 产业链位置
+
+SanDisk 位于 AI 基础设施链条中的 **NAND wafer + SSD controller/firmware + enterprise SSD + AI storage component** 层。它不是 GPU、ASIC、网络或云应用公司，价值捕获来自：
+
+- NAND 工艺和 wafer 供给：与 Kioxia 的 Flash Ventures 是核心产能来源；公司通常拥有约 `50%` 的 Flash Ventures output 份额，并承担固定成本和资本投入义务。
+- SSD 系统设计：custom controller、firmware、BiCS8、QLC/TLC、NVMe/OCP、FDP/telemetry/PLP、安全与验证。
+- 客户认证和 supply assurance：hyperscaler / AI infrastructure builder 对企业级 SSD 的认证周期长，NBM 提供多年供给确定性和财务保证。
+- AI workload 绑定：KV cache、RAG、checkpoint、AI data lake、GPU feeding 使高性能 TLC eSSD 与高容量 QLC eSSD 进入 AI rack / pod 的可采购 BOM。
+
+### 1.4 股价、估值和财务快照
+
+市场快照日期：2026-06-11 11:22 EDT。来源：StockAnalysis / S&P Global Market Intelligence 页面。注意：SNDK 在 2026 年快速上涨，盘中估值会明显波动。
+
+| 指标 | 数值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | `$1,734.22` | 2026-06-11 11:22 EDT，market open | 52 周涨幅约 `+4,069.8%`，已充分反映 AI/NAND 紧缺预期 |
+| 市值 | `$256.82B` | 2026-06-11 | 大型半导体存储纯标的；估值已远高于传统 NAND 周期底部 |
+| EV | `$239.82B` | 2026-06-11 | 净现金使 EV 低于市值 |
+| trailing PE | `58.42x` | TTM EPS `$29.71` | trailing 被 FY2025 低谷和 2025 分拆影响；对 2026 exit earnings 不敏感 |
+| forward PE | `10.40x` | StockAnalysis forward consensus | 估值核心在 FY2027/FY2028 高利润能否持续 |
+| PS / forward PS | `18.46x / 6.01x` | TTM revenue `$13.18B` | TTM PS 高；forward PS 因 Q4 指引和 FY2027 高增预期显著下降 |
+| 最新季度收入增速 | `+251% YoY / +97% QoQ` | FY2026Q3，季度截至 2026-04-03 | 主要由 ASP、mix、Datacenter 拉动 |
+| 最近 9 个月收入增速 | `+107% YoY` | FY2026 前 9 个月 | ASP/GB `+76%`、exabytes sold `+18%` |
+| 最新季度 GM / net margin | `78.4% / 60.8%` | FY2026Q3 GAAP | 极端景气，ASP 超过 cost/GB 下降速度 |
+| TTM GM / profit margin | `56.04% / 34.19%` | TTM | 更适合估算周期中利润，但仍包含 2026Q3 大幅上修 |
+| 现金 / 总债务 / 净现金 | `$3.74B / $0.207B / $3.53B` | 2026-06-11 数据页面；10-Q 显示长期债务为 0、租赁等小额债务 | 资产负债表强，财务杠杆风险低 |
+| 流动比率 / quick ratio | `4.78x / 3.43x` | 2026-06-11 | 短期偿债能力强 |
+| ROE / ROIC | `39.3% / 48.6%` | TTM | 受 2026Q3 景气放大；仍需用周期中 ROIC 检验 |
+
+**资产负债表健康程度：强。** 2026-04-03 10-Q 显示现金 `$3.735B`、总资产 `$17.075B`、总负债 `$3.298B`、股东权益 `$13.777B`、长期债务为 0；前 9 个月经营现金流 `$4.545B`，capex 现金支出仅 `$134M`，但 Flash Ventures 相关承诺和担保是隐性重资本约束。10-Q 中 Flash Ventures 相关最大可估损失暴露约 `$2.967B`，总合同/购买/投资/租赁承诺约 `$12.793B`，因此“净现金 + 低表内债务”不能理解为完全轻资产。
+
+## 2. 最新和最近 4 次财报
+
+说明：公司不披露 backlog/bookings/lead time/cancellation rate 的完整季度序列。下表把披露口径拆成三类：`硬披露` = revenue、margin、end-market；`订单可见度` = RPO / NBM / contract liabilities；`行业推断` = 根据 TrendForce NAND/enterprise SSD 供需、公司 NBM、Flash Ventures 产能义务判断的交期/取消率。
+
+| 财报季度 | 披露日期 | 收入 / 增速 | GAAP GM / net margin | Datacenter / Edge / Consumer | AI 数据中心相关收入估算 | 订单、交期、取消率 | 重点信息 |
+|---|---:|---:|---:|---:|---:|---|---|
+| FY2026Q3，截至 2026-04-03 | 2026-04-30 | `$5.950B`，QoQ `+97%`，YoY `+251%` | `78.4% / 60.8%` | `$1.467B / $3.663B / $0.820B` | 直接 AI/DC：`$0.9-1.2B`；Datacenter 占总收入 `24.7%` | RPO `$41.6B`；contract liabilities `$511M`；五份 NBM financial guarantees `>$11B`；约 `15%` RPO 12 个月确认；取消率未披露但财务保证降低违约风险 | Datacenter QoQ `+233%`、YoY `+645%`；ASP/GB YoY `+248%`；exabytes flat YoY；Q4 将开始 QLC Stargate revenue shipment |
+| FY2026Q2，截至 2026-01-02 | 2026-01-29 | `$3.025B`，QoQ `+31%`，YoY `+61%` | `50.9% / 26.5%` | `$0.440B / $1.678B / $0.907B` | `$0.22-0.30B`；Datacenter 占 `14.5%` | RPO as of 2026-01-02 not material；Datacenter 需求强但尚未进入 NBM 大额披露 | Datacenter QoQ `+64%`，受 AI infrastructure builders、semi-custom customers、large-scale AI deployments 拉动；Q3 指引收入 `$4.4-4.8B`、non-GAAP GM `65-67%` |
+| FY2026Q1，截至 2025-10-03 | 2025-11-06 | `$2.308B`，QoQ `+21%`，YoY `+23%` | `29.8% / 4.9%` | `$0.269B / $1.387B / $0.652B` | `$0.12-0.17B`；Datacenter 占 `11.7%` | RPO 未形成；公司披露两家 hyperscaler qualification，第三家 hyperscaler 与 top storage OEM 计划 CY2026，engagement with five major hyperscale customers | BiCS8 占 total bits `15%`，预计 FY2026 退出时成为 bit production majority；Q2 指引收入 `$2.55-2.65B` |
+| FY2025Q4，截至 2025-06-27 | 2025-08-14 | `$1.901B`，QoQ `+12%`，YoY `+8%-12%` | `26.2% / -1.2%` | `$0.213B / $1.103B / $0.585B` | `$0.08-0.12B`；Datacenter 占 `11.2%` | RPO 不显著；仍处于分拆后产品/客户切换期 | HBF、BiCS8、UltraQLC 开始成为叙事；FY2026Q1 指引 `$2.10-2.20B`，但 startup cost 仍压制利润 |
+| FY2025Q3，截至 2025-03-28 | 2025-04/10-Q | `$1.695B`，Q4 页面披露 QoQ 基数 | `22.5% / -114.0%` | `$0.197B / $0.927B / $0.571B` | `$0.06-0.10B`；Datacenter 占 `11.6%` | RPO not material；合同负债不显著 | GAAP 净亏损 `$1.933B`，主要受 `$1.8B` goodwill impairment 影响；这是分拆早期低谷，不代表经营现金能力 |
+
+### 2.1 五个季度的结构性变化
+
+- **收入增速的主因从 bit growth 转向 ASP + mix。** FY2026Q3 10-Q 披露，季度收入 YoY `+251%` 主要由 ASP/GB `+248%` 驱动，exabytes sold 同比持平；前 9 个月收入 YoY `+107%`，由 ASP/GB `+76%` 与 exabytes `+18%` 共同驱动。
+- **Datacenter 的质变发生在 FY2026Q2-Q3。** FY2025Q3 到 FY2026Q1，Datacenter 收入长期只有 `$197-269M`；FY2026Q2 升到 `$440M`，FY2026Q3 跳到 `$1.467B`。这说明 hyperscaler/AI infrastructure qualification 转成收入的窗口已经打开。
+- **Edge 当前仍是最大收入池，但投资叙事被 Datacenter 定价。** FY2026Q3 Edge 收入 `$3.663B`、占 `61.6%`，且 YoY `+295%`；但 Edge 高增主要来自高价值 PC/mobile 配置和 ASP，AI 数据中心收入弹性集中在 Datacenter。
+- **订单可见度不是传统 backlog，而是 long-term agreements + RPO。** 2026Q3 前 RPO 不显著，Q3 一次性跳到 `$41.6B`。这意味着模型中不能简单用过去四季 bookings 外推，需要单独建 RPO 转收入曲线。
+
+## 3. 2026 最新指引、业务占比和产品拆分
+
+### 3.1 FY2026Q4 指引
+
+| 指标 | 公司指引 | 中点 | 相比 FY2026Q3 |
+|---|---:|---:|---:|
+| Revenue | `$7.75-8.25B` | `$8.00B` | QoQ `+34.5%` |
+| Non-GAAP gross margin | `79.0-81.0%` | `80.0%` | 基本持平略升 |
+| Non-GAAP operating expenses | `$480-500M` | `$490M` | QoQ 约 `+9%`，但占收入降到 `~6.1%` |
+| Non-GAAP EPS | `$30.00-33.00` | `$31.50` | QoQ `+34.6%` |
+| Diluted shares | `~158M` | `158M` | 基本稳定 |
+
+按指引中点估算，FY2026Q4 non-GAAP gross profit 约 `$6.4B`。如果 operating expense `$490M`、interest/other income `$20M`、tax `$825M`，则 non-GAAP net income 约 `$5.1B`，与 EPS 中点 `$31.50 x 158M = $4.98B` 大体一致。
+
+### 3.2 2026 业务收入占比与增长判断
+
+公司没有给 Q4 end-market guidance。基于 Q3 表现、电话会对 QLC Stargate Q4 开始收入发货、Datacenter mid-70s growth outlook 上修、Edge 高 ASP 和 Consumer seasonality，本文估算 FY2026Q4 mix：
+
+| End market | FY2026Q3 实际 | FY2026Q4 基准估算 | QoQ 增长 | 逻辑 |
+|---|---:|---:|---:|---|
+| Datacenter | `$1.467B` | `$2.2-2.8B` | `+50%-90%` | TLC eSSD 继续强，QLC Stargate 开始贡献，AI infrastructure builders 供给锁定 |
+| Edge | `$3.663B` | `$4.0-4.6B` | `+9%-26%` | AI PC/smartphone 高容量配置、ASP 高位、但 Q3 已极高 |
+| Consumer | `$0.820B` | `$0.8-1.0B` | `-2%-22%` | 季节性与品牌产品稳定，不是核心增量 |
+| Total | `$5.950B` | `$7.75-8.25B` | `+30%-39%` | 公司指引 |
+
+**最突出、最侧重业务：Datacenter enterprise SSD + AI storage。** Q3 Datacenter 仅占 `24.7%`，但收入增速、RPO、NBM 和产品路线都指向其成为边际利润池。管理层明确把 Datacenter 称为 fastest-growing end market，并称 Q4 开始 QLC Stargate revenue shipment。
+
+### 3.3 产品和型号：重点与跳过
+
+| 类别 | 产品/型号 | 状态 | 重要性 |
+|---|---|---|---|
+| 高性能 TLC enterprise SSD | SANDISK SN861 NVMe SSD，U.2/E1.S/E3.S，PCIe Gen5，最高 15.36TB，U.2 1/3 DWPD、E1.S/E3.S 1 DWPD | 已上市；U.2/E1.S 获 OCP Inspired | 训练 checkpoint、inference hot/warm cache、AI/ML、HPC、低延迟数据库 |
+| 容量型 enterprise SSD | SANDISK SN655 NVMe SSD，3.84-61.44TB，PCIe Gen4，U.3，1 DWPD | 已上市 | read-intensive scale-out、object storage、deep learning capacity tier |
+| 高容量 QLC / AI data lake SSD | SANDISK SN670 NVMe SSD，30.72-122.88TB，PCIe Gen5，U.2，0.35 DWPD | 已上市/放量初期；与 UltraQLC 平台相关 | AI data lake、big data、analytics、modeling、warm object tier |
+| UltraQLC 256TB NVMe SSD | 256TB U.2，BiCS8 QLC CBA NAND、custom controller、Direct Write QLC、Dynamic Frequency Scaling、DR profile | 2025 FMS demo；公司称 128TB/256TB U.2 2026H1 可用 | 最高潜力产品；AI data lake / hyperscale cloud / HDD 替代 / PB-rack 密度 |
+| HBF High Bandwidth Flash | 基于 NAND + CBA 的新 memory，目标 HBM 类带宽、8-16x HBM 容量、类似成本；与 SK hynix 推规格 | 2026H2 first samples，2027 early AI-inference devices | 长期最有想象力；若进入 AI inference memory tier，估值属性从 SSD 周期升维 |
+| BiCS8 NAND / CBA | BiCS8 2026Q1 占 bits `15%`，目标 FY2026 退出时 majority；2Tb QLC die 支撑 UltraQLC | 正在产能迁移 | 成本/容量/功耗/产品差异化核心 |
+| Consumer portable SSD / USB / cards | Portable SSD、memory card、USB 等 | 稳定但非核心 | 可提供品牌现金流，但低优先级 |
+| Embedded/mobile/PC client storage | PC/mobile/gaming/auto/industrial embedded flash | Edge 最大收入池 | AI PC/手机受益，但不作为 AI 数据中心主线 |
+
+**本报告跳过或低权重处理：** 普通 USB flash、memory card、retail portable SSD、消费级 M.2 gaming SSD、普通 embedded flash、汽车/VR/industrial 小批量存储。原因是这些业务虽可能受 AI PC / content creation 间接受益，但不决定 SNDK 未来一年最大的收入弹性、RPO 兑现和估值重定价。
+
+## 4. 高增长/关键产品当前收入贡献、增速和供需状态
+
+以下收入贡献为本文估算，不是公司披露分部。估算逻辑：以 Q3 Datacenter `$1.467B` 为硬锚点，结合电话会“Datacenter predominantly TLC，QLC 下季启动”、企业 SSD 占 portfolio revenue 约 `25%` 的转述、产品状态和本地行业资料对 enterprise SSD / AI-native storage 的市场拆分。
+
+| 关键产品/业务 | 当前季度收入贡献估算 | 当前收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---:|---:|---|---|---|---|
+| TLC 高性能 enterprise SSD：SN861 / 类似定制盘 | `$1.0-1.3B` | Q3 Datacenter QoQ `+233%`，该项为主力 | 高：GPU feeding、checkpoint、KV cache warm/hot tier、低延迟数据库 | 极高：2026 AI cluster 交付即需 | 极紧：TrendForce 指 AI/server 需求挤占 NAND，enterprise SSD severe gap | 中高：非垄断，但 OCP、firmware、qualification 和 NAND 自供带来溢价 |
+| QLC 高容量 SSD：SN670 / UltraQLC 128TB/256TB | 当前收入约 `$0.1-0.3B`，Q4 开始显著放量 | 低基数高增，未来 12 个月可数倍 | 高：AI data lake、RAG、对象存储、HDD 替代、PB/rack 密度 | 高：HDD 长交期和多模态数据增长迫使客户锁容量 | 极紧：122/245/256TB 高容量盘依赖 QLC die、控制器、认证 | 中高：容量密度、Direct Write QLC、customer-specific design 形成溢价 |
+| HBF High Bandwidth Flash | 2026 当前收入基本为 0，R&D/样品阶段 | N/A | 潜在极高：若成为 HBM 与 SSD 中间层，可服务推理权重/长上下文 | 中高：2026H2 sample，2027 设备 sample，真正收入偏 2027+ | 研发/生态紧，不是产能紧 | 高但未验证：若 SK hynix + OCP/生态标准成功，专利/工艺/规格壁垒强 |
+| BiCS8 / CBA NAND platform | 不单独确认；嵌入全部产品，Q3 高价值产品主要受益 | BiCS8 bit share 从 15% 向 majority 迁移 | 高：成本/功耗/容量/QLC/HBF 的底层 | 极高：FY2026 转换窗口 | 受 Kioxia JV 产能和 node transition 限制 | 中：NAND 技术强但行业有 Samsung/SK/Micron/Kioxia/YMTC |
+| NBM / long-term supply agreements | 不是产品；RPO `$41.6B` | 从 0 到 `$41.6B` | 高：客户锁 supply、公司锁 financials | 极高：FY2027 超三分之一 bits 已覆盖 | 对客户而言供给紧，对公司而言提升可见度 | 高：合约结构把供给稀缺转为价格/现金流可见度 |
+
+## 5. 高增长/关键产品一年后收入贡献：三情景
+
+时间口径：滚动 12 个月后，即 2027 年中附近的季度/年化状态。数值为 SanDisk 对应产品或业务的年化收入贡献估算，不是行业 TAM。
+
+| 产品/业务 | 基准：一年后收入贡献和增速 | 乐观：一年后收入贡献和增速 | 极度乐观：一年后收入贡献和增速 | AI 重要性变化 | 供需与溢价判断 |
+|---|---:|---:|---:|---|---|
+| TLC 高性能 enterprise SSD | 年化 `$7-10B`，较 FY2026Q3 run-rate `+20%-70%` | `$10-14B`，`+70%-140%` | `$14-20B`，`+140%+` | 仍是 AI hot/warm storage 主力，但部分被 QLC/Gen6/HBF 分流 | 基准仍紧；乐观/极度乐观下 Gen5 TLC 高端盘维持 `50%+` GM |
+| QLC 高容量 SSD / UltraQLC | 年化 `$2-4B`，从低基数放量 | `$4-7B` | `$7-12B` | 重要性上升：AI data lake、RAG、对象存储温层；替代部分 HDD | 122TB/256TB 认证和供给若顺利，溢价强；若 NAND 供给宽松，普通 QLC 毛利回落 |
+| HBF | 收入 `$0-0.2B`，主要样品/NRE | `$0.2-0.8B`，少数 AI inference device 试产 | `$0.8-2.0B`，若 2027 early devices 提前形成客户项目 | 从可选技术变成 AI inference memory hierarchy 候选 | 极度乐观下可享高溢价，但最大风险是软件/系统采用慢 |
+| BiCS8/CBA platform | 嵌入式贡献，支撑总 bit growth mid-teens | BiCS8 majority 后带动 cost/GB 与高容量 mix | 若 2Tb QLC + CBA 良率优于同业，支撑 HBF/UltraQLC 双线 | 底层工艺重要性持续上升 | 不是单独议价产品，但决定整盘毛利和客户认证 |
+| NBM 合同收入 | RPO 未来 12 个月确认约 `$6.2B` 以上，加上 Q4 新签未入 2026Q3 RPO | 新签使 FY2027 bits 覆盖 `45-55%` | 覆盖 `>55%`，客户预付款/financial guarantee 继续上升 | 使 SNDK 的收入可见度接近设备商 backlog | 风险是 fixed/variable pricing 可能限制极端涨价收益，也可能在降价周期保护下行 |
+
+## 6. BOM、内容量、价格传导、当前产能和认证
+
+### 6.1 BOM 与单位内容量
+
+SanDisk 不是整机/rack 厂商，不能把整机 BOM 全算入 SNDK。真实内容量应按 SSD/NAND 的 attach rate 估算。
+
+| 使用场景 | 每 rack / 每 GPU / 每 MW 内容量 | SanDisk 可捕获内容 | 价格传导链 |
+|---|---|---|---|
+| AI compute rack：8-GPU / 72-GPU rack-scale 服务器 | 每 8-GPU server 常见 `2-8` 块 NVMe；按 7.68-15.36TB 估算 `15-120TB/server`，约 `2-15TB/GPU`；NVL72 rack 若仅本地盘，约 `0.2-1.0PB/rack` | SN861 / 定制 TLC eSSD；单 rack SNDK 内容量约 `$30k-300k`，取决于盘数、容量、enterprise ASP | NAND wafer -> SSD -> OEM/ODM/云厂 -> AI server/rack；GPU idle cost 高，SSD 价格弹性高于普通 IT |
+| AI storage / data lake rack | U.2/U.3/E3 24-60 bay；122.88TB 约 `3-7PB/rack`；256TB 约 `6-15PB/rack` | SN670 / UltraQLC；单 rack 内容量约 `$0.5-3.0M`，高容量盘早期更高 | NAND/QLC die 紧缺 -> enterprise SSD ASP -> Dell/HPE/NetApp/Pure/VAST/WEKA/DDN system -> hyperscaler/NeoCloud |
+| 每 1MW AI IT load | 本地行业资料给 AI cold/warm 存储 attach：基准 `8-25PB QLC/SSD + 40-150PB HDD/object`；极度乐观 `60-150PB QLC/SSD + 300-800PB HDD/object` | 若 SNDK 拿到 QLC/eSSD share `10-20%`，每 MW 对应 SNDK SSD 收入约 `$1-12M`；极度乐观可 `$10M+/MW` | AI workload 越偏推理/agent/multimodal，SSD/QLC share 越高；HDD 紧缺会加快 QLC 替代 |
+| 每 optical port | SSD 与 optical port 无直接一一对应；间接关系是 AI fabric 规模越大，checkpoint/RAG/KV 数据路径越复杂 | 不适合按 optical port 计 SNDK BOM | 可用 storage per GPU / per MW 替代 |
+| HBF / future AI inference device | 目标每 16-die stack `512GB`，公司称可接近 HBM 带宽、8-16x HBM 容量、类似成本 | 若每 accelerator / inference node 采用数个 HBF stack，单位内容量可能从 `$数百` 到 `$数千`，但当前未量产 | HBF die/stack -> module/device -> AI accelerator/inference server；需标准、封装、软件和客户认证 |
+
+### 6.2 当前产能、供应链采纳和认证
+
+| 产品/业务 | 当前产能能力（美元计） | 供应链采纳程度 | 认证/阶段 |
+|---|---:|---|---|
+| TLC enterprise SSD | 以 Q3 Datacenter `$1.467B` 和 Q4 指引估算，年化供货能力已达 `$6-10B+` | 已进入 AI infrastructure builders、semi-custom、technology companies；Q1 披露 engagement with five major hyperscale customers | SN861 U.2/E1.S OCP Inspired；Datacenter NVMe SSD specification 认可 |
+| QLC SN670 / UltraQLC | 2026 当前年化能力估算 `$1-3B`，受 QLC die / BiCS8 / controller / 客户认证约束 | SN670 30.72-122.88TB 已列产品；128TB/256TB 2026H1 可用；实际大规模客户部署仍需逐季验证 | UltraQLC 2025 FMS demo；U.2 first；additional form factors later |
+| HBF | 当前商业产能接近 0；R&D/sample 阶段 | 与 SK hynix MOU 推规格，技术 advisory board；生态尚早 | 2026H2 first samples；2027 early AI-inference devices samples；FMS 2025 Best of Show / Most Innovative Technology |
+| BiCS8 / CBA | FY2026Q1 bits `15%`，管理层目标 FY2026 退出时 majority | 嵌入 SN670/UltraQLC/HBF 路线，受 Kioxia JV 产能迁移影响 | 工艺迁移 / 量产爬坡阶段 |
+| NBM / RPO | Q3 RPO `$41.6B`；未来 12 个月确认约 `$6.2B`；Q4 新签 2 份尚未完整反映在 Q3 RPO | 五份 NBM 覆盖 FY2027 超过三分之一 bits | financial guarantees、prepayments、third-party instruments；合约最长 5 年 |
+
+## 7. 一年后产能、采纳和认证：三情景
+
+| 产品/业务 | 基准：一年后 | 乐观：一年后 | 极度乐观：一年后 |
+|---|---|---|---|
+| TLC enterprise SSD | 年化产能/销售 `$7-10B`；OCP / hyperscaler 认证扩展；Datacenter revenue mix 稳定在 `25-35%` | `$10-14B`；Gen5 TLC 继续供不应求，AI 客户优先 allocation | `$14-20B`；如果 NAND 仍短缺且 inference/KV cache 爆发，TLC 性能盘维持极高 GM |
+| QLC SN670 / UltraQLC | 年化 `$2-4B`；122TB 成为容量主力，256TB 在少数大客户批量 | `$4-7B`；AI data lake / HDD 转单加速，E3/U.2 客户认证扩大 | `$7-12B`；256TB 成为 hyperscale AI data lake 标志性 SKU，客户愿意预付锁货 |
+| HBF | 样品和 NRE 阶段，早期 AI inference device sample | 少数客户 POC / evaluation，形成 2028 design-in pipeline | 2027 early device sample 提前，出现一线云厂/AI lab 公开试点 |
+| BiCS8/CBA | BiCS8 成为 majority bit production；cost/GB 与容量密度改善支撑毛利 | CBA/2Tb QLC 良率好于预期，支持 UltraQLC 与 HBF 并行推进 | 若同业 QLC/PLC/HBF 路线慢，SanDisk 获高容量定制盘溢价 |
+| NBM / RPO | FY2027 bits `>1/3` 已锁，RPO 转收入 `$6B+`；新增协议温和 | coverage 升至 `45-55%`，RPO/guarantee 上修 | coverage `>55%`，公司几乎把 FY2027 高价值 bits 预售，周期性显著降低 |
+
+## 8. 订单积压、供给和未来一年业务增速预测
+
+### 8.1 硬证据
+
+- **RPO：** 截至 2026-04-03，remaining performance obligations `$41.6B`，约 `15%` 未来 12 个月确认，即 `$6.2B` 左右。
+- **NBM：** Q3 签 3 份、Q4 迄今又签 2 份，五份合计 financial guarantees `>$11B`，含 prepayments 与第三方 financial instruments；FY2027 bits 覆盖超过三分之一，管理层预计继续提高。
+- **合同结构：** 管理层称 volume commitments 在合同期内增加，含 quarterly commitments、fixed pricing 与 variable pricing；最长合同 5 年。变量价格让公司在价格上行时保留部分 upside，也让客户在价格下行时保留部分 upside。
+- **供应：** Flash Ventures 通常贡献 SanDisk 约 `50%` output，公司承担 rolling three-month purchase commitments 和约 `50%` 固定成本；主要 NAND 厂商 2026 几乎不新增产能，TrendForce 认为 AI 需求使短缺延续全年。
+
+### 8.2 未来一年业务增速预测
+
+| 情景 | 收入预测（未来 12 个月） | 同比/相对 TTM 增速 | 关键假设 | 订单取消/延期风险 |
+|---|---:|---:|---|---|
+| 基准 | `$28-34B` | 较 TTM `$13.18B` 增 `+112%-158%` | Q4 FY2026 指引兑现；RPO 12 个月确认 `$6B+`；Datacenter 继续高增；Edge 保持高 ASP 但不再翻倍 | 低到中。NBM 有 financial guarantee，但 variable pricing 和客户排产仍可能改变利润率 |
+| 乐观 | `$34-42B` | `+158%-219%` | 新签 NBM 覆盖 FY2027 bits `45-55%`；QLC/UltraQLC 放量；NAND 2027H1 仍紧 | 低。主要风险变成产能不足而非需求不足 |
+| 极度乐观 | `$42-55B` | `+219%-317%` | AI inference/KV cache/agent 推理把 enterprise SSD 和 QLC 全面抢供；HDD 短缺加速全闪温层；客户预付款继续上升 | 中。极度乐观依赖供应链、良率、认证和客户 capex 不降温 |
+
+**基准判断：未来一年 SNDK 业务增速大概率仍显著高于传统 NAND 行业。** 但市场已把 forward PE 压到约 `10x` 的原因不是便宜，而是投资人把 FY2027/FY2028 EPS 预期大幅上修。真正需要跟踪的是：RPO 转收入速度、NBM 覆盖 bits、Q4/Q1 Datacenter mix、QLC/UltraQLC 放量、gross margin 是否守住 `70%+`。
+
+## 9. 竞争格局、替代方案和客户替换成本
+
+### 9.1 主要竞争对手
+
+| 领域 | SanDisk 竞争对手 | 竞争焦点 |
+|---|---|---|
+| NAND / eSSD 垂直整合 | Samsung、SK hynix / Solidigm、Micron、Kioxia、YMTC | NAND 层数、QLC/PLC、cost/GB、enterprise SSD firmware、hyperscaler allocation、客户 LTAs |
+| 高容量 QLC SSD | Solidigm D5-P5336、Micron 6600 ION、Kioxia LC9、Samsung BM1743、Phison/FADU 方案 | 122TB/245TB/256TB 容量、PB/rack、TB/W、DWPD、写放大、客户系统认证 |
+| 高性能 PCIe Gen5/Gen6 SSD | Micron 9650/9550/7600、Samsung PM1753/PM1763、Kioxia CD9P/CM9、Solidigm D7 | 低延迟、IOPS/W、PCIe Gen6、NVMe/OCP、liquid cooling、firmware QoS |
+| SSD controller / firmware | Samsung/Micron/Kioxia/SK captive controllers，Silicon Motion、Phison、Marvell、Microchip、FADU、InnoGrit | Gen5/Gen6 PHY、LDPC/ECC、FDP/ZNS、telemetry、NVMe-MI、security、customer tuning |
+| AI storage systems/software | Dell、HPE、NetApp、Pure Storage、VAST、WEKA、DDN、IBM Storage Scale、Cloudian、MinIO | SanDisk 多为底层介质供应商；系统/软件层可捕获更多客户粘性 |
+| HBF / new memory tier | HBM4/HBM4E、CXL DRAM、LPDDR/SOCAMM、SCM/XL-FLASH、computational storage | HBF 需要证明“足够高带宽 + 更大容量 + 可接受延迟 + 软件支持” |
+
+### 9.2 新技术是不是未来主流？
+
+| 技术 | 主流概率 | 理由 | 风险和替代 |
+|---|---|---|---|
+| Enterprise TLC eSSD | 高 | 2026 已是 AI hot/warm path；性能、延迟、endurance 确定 | Gen6 代际替换、客户自研 SSD、竞争厂价格战 |
+| QLC / UltraQLC 高容量 SSD | 高 | AI data lake、RAG、多模态、HDD 长交期、电力/rack 约束推动高密 flash | QLC endurance、NAND ASP 过高、HDD HAMR 继续守住冷层经济性 |
+| HBF | 中高但偏长期 | 若达到 HBM 类带宽、8-16x 容量，推理权重/长上下文有真实需求；SK hynix MOU 提升标准化概率 | HBM4/5 容量提升、CXL DRAM、KV compression、软件生态、封装成本和良率 |
+| NBM 合同模式 | 中高 | 供给紧缺时客户愿用财务保证换 allocation，公司降低周期性 | NAND 宽松周期客户要求价格分享，NBM 可能限制公司抓住 spot 上行极端收益 |
+
+### 9.3 客户替换成本
+
+SanDisk 在企业级 SSD 的客户替换成本 **中高**：
+
+- 技术认证：hyperscaler/OEM 需要验证 NVMe/OCP、firmware、telemetry、power loss protection、QoS、thermal、security、endurance、failure mode，周期通常以季度计。
+- 数据中心运维：同一 fleet 混用 SSD 会增加 firmware、监控、寿命模型、spare、RMA 和 failure prediction 复杂度。
+- 供给安全：2026 供给紧，客户更重视 allocation 和长期交付，NBM 进一步抬高切换摩擦。
+- 但 NAND 行业不是绝对垄断：Samsung、SK/Solidigm、Micron、Kioxia 都能提供高端 SSD；若 SanDisk 价格过高或质量失误，客户仍会多供策略。
+
+## 10. 关键跟踪指标
+
+| 跟踪项 | 为什么重要 | 乐观信号 | 反证信号 |
+|---|---|---|---|
+| RPO / contract liabilities / financial guarantees | 衡量 NBM 是否继续扩大 | RPO 继续上升，12 个月确认比例上升，prepayments 增加 | RPO 不增、客户延迟确认、guarantee 条款无法覆盖损失 |
+| Datacenter revenue mix | 估值核心 | Datacenter 占比从 `25%` 上行到 `30-40%` | Edge/Consumer 贡献大但 Datacenter 停滞 |
+| Gross margin | 判断供需和 pricing power | Q4/FY2027 保持 `70%+` | NAND ASP 回落、NBM 定价限制、cost/GB 改善不及预期 |
+| QLC Stargate / SN670 / UltraQLC 出货 | AI data lake 和容量盘弹性 | 122/256TB 进入 hyperscaler 批量 | 认证推迟、endurance/性能不足、客户转向 Micron/Kioxia/Solidigm |
+| HBF samples | 长期估值上限 | 2026H2 sample、2027 device sample 按计划，OCP/客户生态扩大 | 仅停留在论文/展示，缺少系统厂/云厂设计 |
+| NAND supply additions | 周期风险 | 2027 仍缺货，新增产能有限 | Samsung/SK/Micron/Kioxia/YMTC 大幅扩产，ASP 快速下行 |
+| Flash Ventures / Kioxia JV | 供给和资本开支核心 | 2034 扩展顺利，BiCS8 良率提升 | JV 投资/担保压力上升，Kioxia 技术或产能落后 |
+
+## 11. 来源链接
+
+### 公司一手财报与 SEC
+
+- Sandisk FY2026Q3 earnings release（2026-04-30）：<https://www.sandisk.com/company/newsroom/press-releases/2026/2026-04-30-sandisk-reports-fiscal-third-quarter-2026-financial-results>
+- Sandisk FY2026Q2 earnings release（2026-01-29）：<https://www.sandisk.com/company/newsroom/press-releases/2026/2026-01-29-sandisk-reports-fiscal-second-quarter-2026-financial-results>
+- Sandisk FY2026Q1 earnings release（2025-11-06）：<https://www.sandisk.com/company/newsroom/press-releases/2025/2025-11-6-sandisk-reports-fiscal-first-quarter-2026-financial-results>
+- Sandisk FY2025Q4 earnings release（2025-08-14）：<https://www.sandisk.com/company/newsroom/press-releases/2025/2025-08-14-sandisk-reports-fiscal-fourth-quarter-2025-financial-results>
+- Sandisk Form 10-Q for quarter ended 2026-04-03：<https://www.sec.gov/Archives/edgar/data/2023554/000162828026029401/sndk-20260403.htm>
+- Sandisk Form 10-Q for quarter ended 2026-01-02：<https://www.sec.gov/Archives/edgar/data/2023554/000162828026004407/sndk-20260102.htm>
+
+### 产品、技术和认证
+
+- Sandisk enterprise SSD portfolio：<https://www.sandisk.com/solutions/enterprise-ssds>
+- Sandisk UltraQLC 256TB NVMe enterprise SSD at FMS 2025：<https://www.sandisk.com/company/newsroom/press-releases/2025/2025-08-05-sandisk-showcases-ultraqlc-technology-platform-with-milestone-enterprise-ssd-capacity-at-fms-2025>
+- Sandisk UltraQLC technical blog：<https://www.sandisk.com/company/newsroom/blogs/2025/inside-ultraQLC-the-enterprise-ssd-platform-engineered-for-ai>
+- Sandisk / SK hynix HBF MOU：<https://www.sandisk.com/company/newsroom/press-releases/2025/2025-08-06-sandisk-to-collaborate-with-sk-hynix-to-drive-standardization-of-high-bandwidth-flash-memory-technology>
+- Sandisk HBF technical blog：<https://www.sandisk.com/company/newsroom/blogs/2025/scaling-beyond-the-wall-inside-sandisks-high-bandwidth-flash-for-ai>
+- SN861 OCP Inspired announcement：<https://www.sandisk.com/company/newsroom/press-releases/2025/2025-10-14-sandisk-pcie-gen-5-enterprise-ssd-recognized-as-ocp-inspired-by-open-compute-project>
+- OCP Marketplace：SanDisk DC SN861：<https://www.opencompute.org/products/600/sandisk-dc-sn861>
+
+### 行业供需与市场数据
+
+- TrendForce NAND supplier revenue and 2026 capacity shortage（2026-05-25）：<https://www.trendforce.com/presscenter/news/20260525-13058.html>
+- TrendForce Q2 2026 DRAM/NAND contract price outlook（2026-03-31）：<https://www.trendforce.com/presscenter/news/20260331-12995.html>
+- StockAnalysis SNDK valuation/statistics snapshot（2026-06-11）：<https://stockanalysis.com/stocks/sndk/statistics/>
+- The Motley Fool SNDK FY2026Q3 earnings call transcript（用于电话会转述交叉验证）：<https://www.fool.com/earnings/call-transcripts/2026/04/30/sandisk-sndk-q3-2026-earnings-transcript/>
+- Sandisk J.P. Morgan Global Technology, Media and Communications Conference event page（2026-05-20）：<https://investor.sandisk.com/events/event-details/jp-morgan-global-technology-media-and-communications-conference>
+
+### 项目内允许使用的行业资料
+
+- `行业调研/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_HDD、对象存储与冷温数据存储_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`

@@ -1,0 +1,444 @@
+# EQIX Equinix 公司调研：全球互联型数据中心REIT，AI数据中心周期中的“高密度托管 + 私有互联 + xScale”平台
+
+生成日期：2026-06-20  
+公司：Equinix, Inc.  
+股票代码：EQIX  
+交易所：Nasdaq  
+正式分类目录：公司调研/云算力_IDC_AI软件平台/  
+资料边界：仅使用本项目 `行业调研/` 下AI数据中心、液冷、MEP、NeoCloud、会议更新等资料，以及联网检索的公司公告、SEC文件、投资者材料、行业会议/技术资料；未使用 `特征量化/`，未读取同目录既有公司报告，未修改公司索引。  
+货币口径：除特别说明外均为美元；季度收入单位为百万美元或十亿美元；“AI相关收入”不是Equinix披露科目，本文所有AI收入拆分均为基于订单、产品、客户和行业容量的研究估算。
+
+## 0. 结论先行
+
+Equinix不是AI芯片公司，也不是GPU云公司。它的核心资产是全球中立数据中心、云/网络/企业互联生态、可交付电力和高密度机房运营能力。投资人通常把EQIX看成“高质量全球数据中心REIT + 互联网交换节点 + AI基础设施可选权”，而不是周期性硬件公司。它的真正稀缺性不是单个机房，而是：全球77个metro、281座数据中心、10,500个客户、513,000条互联、云/网络/模型/NeoCloud客户聚集带来的网络效应。
+
+2026年公司AI叙事明显升温，但要分层看：
+
+| 层级 | 对EQIX的含义 | 当前证据 | 投资判断 |
+|---|---:|---|---|
+| 已经进入财报的核心业务 | colocation、interconnection、managed infrastructure | 2026Q1收入24.44亿美元，同比+10%；调整后EBITDA率51%；MRR同比+12%；Q1年化gross bookings 3.78亿美元，创一季度纪录 | 真实且已体现在财报 |
+| AI带来的直接拉动 | 高密度托管、液冷ready、AI Factory、模型商/NeoCloud/企业私有AI互联 | Q1约60%最大交易与AI相关；8/10头部AI模型商、4/5头部NeoCloud在Equinix扩张；NVIDIA/Cisco合作在2026-06-16落地 | 真实，但公司未披露AI收入，需估算 |
+| xScale/atNorth大容量可选权 | hyperscale AI训练容量、北欧高密度/低碳电力、1GW+电力资源 | 2024年>150亿美元美国xScale JV，最终新增>1.5GW；2026年atNorth交易EV 40亿美元、800MW五年管线、1GW secured power | 长周期重要，但收入确认受交付和JV会计影响 |
+| 非核心/低增速业务 | 传统非AI安装、普通managed infrastructure、低密度企业机柜 | managed infrastructure 2026Q1约1.15亿美元，同比基本持平；non-recurring收入波动 | 不应作为AI主线估值依据 |
+
+截至最新可得行情快照（OpenAI Finance，2026-06-19 UTC附近），EQIX股价约1,092.19美元，市值约1,078亿美元，TTM GAAP P/E约75.5x。以2026年公司指引中值计算，P/AFFO约25.6x，forward P/S约10.6x。估值很高，市场已经把“高质量REIT + AI容量稀缺 + 互联网络效应”计入相当部分。基本面健康，但杠杆、利率、扩建capex、供电交付和AI需求兑现节奏是关键风险。
+
+## 1. 公司整体业务、投资人认知与产业链定位
+
+### 1.1 Equinix到底卖什么
+
+Equinix 2025 10-K把收入产品分为四类：colocation、interconnection、managed infrastructure、other/non-recurring。公司是REIT，核心并不是卖服务器，而是把空间、电力、冷却、安全、远程运维、网络/云/企业互联和合规地点组合成可购买的“数字基础设施位置”。
+
+| 业务 | 具体产品/服务 | 2026Q1收入 | 2026Q1占总收入 | 2026Q1同比 | AI相关性 |
+|---|---:|---:|---:|---:|---|
+| Colocation | IBX机房机柜、笼区、功率、冷却、现场服务；高密度/液冷ready机房 | 17.30亿美元 | 70.8% | +12.0% | 最高。AI GPU rack需要60-200kW+功率、液冷、供电冗余和交付时点 |
+| Interconnection | cross connect、Equinix Fabric、Internet Exchange、Fabric Cloud Router、Precision Time、Fabric Intelligence | 4.46亿美元 | 18.2% | +13.5% | 很高。企业AI、模型商、NeoCloud、云和数据源之间需要私有低延迟互联 |
+| Managed infrastructure | Equinix Metal、托管/虚拟网络/安全/专业管理服务 | 1.15亿美元 | 4.7% | 约0% | 中等。AI Factory和NVIDIA/Cisco方案可能带来增量，但基数较小 |
+| Other recurring | 其他经常性服务 | 0.40亿美元 | 1.6% | +17.6% | 小 |
+| Non-recurring | 安装、实施、设备转售等一次性收入 | 1.13亿美元 | 4.6% | -18.1% | 低，波动性高 |
+
+投资人看EQIX时，主要不会用普通地产租赁逻辑，而会同时看三组指标：
+
+1. REIT现金流质量：AFFO、P/AFFO、股息、净杠杆、投资级信用、维护性capex。
+2. 数据中心供需：空置率、预租率、可交付MW、power availability、扩建capex、xScale容量。
+3. 网络效应：interconnection数量、客户数、云on-ramp、跨区域客户、客户流失率、生态密度。
+
+截至2026Q1，Equinix平台关键规模为：10,500客户、77个metro、281座数据中心、36个国家、513,000条全球互联。2026Q1公司MRR同比+12%（normalized constant currency +10%），说明增速已高于传统成熟colo REIT的中个位数水平。
+
+### 1.2 产业链位置
+
+在AI基础设施链条中，Equinix位于“电力/地产/MEP/冷却”与“云、NeoCloud、模型、企业私有AI”之间：
+
+| 上游 | Equinix购买/整合 | 下游客户购买 | EQIX的议价来源 |
+|---|---|---|---|
+| 土地、电网接入、变电站、发电/购电协议 | 可交付power、冗余架构、可持续能源 | 按机柜/kW/MW、区域、SLA购买托管容量 | time-to-power、电力稀缺、合规位置 |
+| MEP/EPC、UPS、发电机、开关柜、变压器、母线、PDU | 高可用数据中心基础设施 | 高可靠机房和SLA | 99.999%+可用性、运维经验 |
+| 冷水机组、CDU、管路、快接、传感器、漏液检测 | 高密度/液冷ready基础设施 | 60-200kW+ rack、direct-to-chip液冷适配 | AI rack交付和冷却调试能力 |
+| 光纤、运营商、云on-ramp、交换节点 | 互联生态、Fabric虚拟连接 | 私有云/多云/模型/NeoCloud互联 | 网络密度、cross-connect粘性 |
+| NVIDIA/Cisco/Dell/HPE/NeoCloud/模型商 | 合作蓝图、测试实验室、AI Factory | 企业AI从pilot到production的环境 | 中立平台、硬件/云/数据不锁定 |
+
+项目内行业调研对2026-2028 AI数据中心的核心判断是：最大瓶颈不只是GPU，而是电力接入、变压器/开关柜、液冷集成、MEP劳动力和commissioning。这个判断对EQIX尤其关键，因为EQIX卖的是“可上线的容量”，不是纸面MW。行业资料中，美国AI数据中心建设2026年实操规模约3,100-3,900亿美元、2027年约4,300-5,600亿美元；AI IT load新建/进入设备订单口径2026年约6.0-8.5GW，但实际通电通常滞后6-24个月。Equinix的溢价来自把这些物理瓶颈变成更确定的交付窗口。
+
+### 1.3 最近3年重大业务变化、转型与收购
+
+| 时间 | 事件 | 规模/事实 | 对业务含义 |
+|---|---|---:|---|
+| 2024-10 | 与GIC、CPP Investments拟成立美国xScale JV | 目标募集超过150亿美元；多座>100MW园区；最终新增>1.5GW hyperscale容量；Equinix持25%，GIC/CPP各37.5% | 把AI训练/超大规模容量放进资本伙伴JV，降低EQIX本体资本压力，同时保留运营和生态入口 |
+| 2025全年 | 容量交付加速 | 2025年交付23,250个retail cabinets、90+MW xScale容量；新增约1GW powered land under control；年化gross bookings 16亿美元，同比+27% | 证明需求不只是叙事，订单和容量均加速 |
+| 2026-02 | Q4/FY2025报告强劲，并给出2026高增长指引 | 2025收入92.17亿美元；调整后EBITDA 45.30亿美元、率49%；AFFO 37.61亿美元 | 从成熟REIT的中个位数增长，转为2026收入+10-11%、EBITDA率约51%的扩张期 |
+| 2026-02 | CPP + Equinix拟收购atNorth | EV 40亿美元；CPP约60%，Equinix约40%；atNorth有8座运营数据中心、若干开发项目、约800MW五年管线、额外1GW secured power | 北欧高密度/低碳电力/液冷HPC平台；补齐欧洲AI训练和主权AI需求 |
+| 2026-03/04 | Distributed AI Hub、Fabric Intelligence | 中立低延迟入口；AI嵌入网络遥测与优化 | 从“连接云”升级到“连接AI模型商、GPU云、数据平台、安全服务” |
+| 2026-06 | Cisco + NVIDIA + Equinix Secure AI Factory | 在Equinix全球高性能数据中心部署Cisco Secure AI Factory with NVIDIA；Presidio P.A.T.H. Lab用于客户验证 | 把AI基础设施蓝图、测试、部署路径变成渠道化产品，利好高密度托管和互联附着率 |
+
+## 2. 估值、财务质量与资产负债表健康度
+
+### 2.1 最新市场与估值快照
+
+| 指标 | 数值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | 1,092.19美元 | 2026-06-19 UTC附近最新可得行情快照 | 接近52周高位，市场已反映AI容量稀缺预期 |
+| 市值 | 1,078.3亿美元 | 2026-06-19 UTC附近 | 约为2026收入指引中值的10.6倍 |
+| TTM GAAP P/E | 75.5x | 2026-06-19 UTC附近行情口径 | REIT折旧重，GAAP P/E参考意义弱 |
+| Forward P/E | 约61x | 2026-06-20二级行情口径 | 依赖分析师GAAP EPS；仍不如AFFO适合REIT |
+| TTM P/S | 约11.4x | 市值/TTM收入94.36亿美元 | TTM收入=2025Q2-Q4 + 2026Q1 |
+| Forward P/S | 约10.6x | 市值/2026收入指引中值101.94亿美元 | 高于多数传统REIT，体现AI和互联溢价 |
+| P/AFFO 2026E | 约25.6x | 股价/2026 AFFO/share指引中值42.71美元 | 对EQIX更有意义的核心估值倍数 |
+| 2026Q1收入增速 | +10% reported，+8% normalized constant currency | 2026Q1 | 由MRR、bookings、AI/云/网络需求推动 |
+| 2026全年收入指引 | 101.44-102.44亿美元，同比+10-11% | 2026-04-29上调后 | 指引中值约101.94亿美元 |
+| 2026Q1 GAAP毛利率 | 51.5% | gross profit 12.58亿 / revenue 24.44亿 | 折旧含在成本中 |
+| 2026Q1 cash gross margin | 68.7% | 公司non-GAAP口径 | 更能反映REIT运营现金毛利 |
+| 2026Q1净利率 | 17.0% | net income 4.15亿 / revenue 24.44亿 | 受折旧、利息、税项影响 |
+| 2026Q1调整后EBITDA率 | 51.0% | 调整后EBITDA 12.45亿 / revenue 24.44亿 | 已达到公司指引的高端水平 |
+
+### 2.2 资产负债表与现金流
+
+截至2026-03-31：
+
+| 指标 | 数值 | 评价 |
+|---|---:|---|
+| 现金及现金等价物 | 13.62亿美元 | 单看现金不低，但capex规模很大 |
+| 短期投资 | 16.92亿美元 | 现金+短投合计30.54亿美元 |
+| 流动资产 | 53.46亿美元 |  |
+| 流动负债 | 45.38亿美元 | current ratio约1.18x，短期偿债可控 |
+| 总资产 | 408.98亿美元 | 数据中心资产+土地+goodwill为主 |
+| 总负债 | 265.78亿美元 | REIT和数据中心扩张业务天然高杠杆 |
+| 股东权益 | 142.95亿美元 | 资产负债率约65.0% |
+| 债务本金总额 | 220.84亿美元 | Senior notes 195.91亿，finance lease 22.99亿 |
+| 粗算净债务 | 约190.3亿美元 | 债务本金 - 现金及短投 |
+| 粗算净债务/2026E EBITDA | 约3.7x | 以2026 EBITDA中值52.05亿计算；公司口径会因JV/现金/租赁调整不同 |
+| 2026Q1经营现金流 | 7.17亿美元 | 同比低于2025Q1，受营运资本和扩张节奏影响 |
+| 2026Q1自由现金流 | -5.96亿美元 | 扩张capex导致；不代表核心租金现金流差 |
+| 2026E总capex | 约41亿美元 | 包含增长capex；维护性capex仅约2.8-3.0亿美元 |
+| 2026E AFFO | 41.98-42.78亿美元 | 对股息和REIT估值最关键 |
+
+财务健康度结论：健康但不便宜。Equinix有投资级属性、全球资产、低客户流失、AFFO覆盖股息能力强；但AI数据中心扩张需要大量前置capex和融资，利率、信用利差、供电延迟、项目延期都会放大估值波动。2026Q1 FCF为负，核心原因是增长capex而非经营恶化。对EQIX应重点看AFFO、净杠杆、交付MW、预租和MRR，而不是单看GAAP P/E。
+
+## 3. 最近5个财报季度：收入、利润率、订单、交期和AI信号
+
+### 3.1 财报总览
+
+| 财报季度 | 收入 | 收入增速 | GAAP净利润/净利率 | 调整后EBITDA/率 | AFFO/share | 订单、backlog、交期和AI信号 |
+|---|---:|---:|---:|---:|---:|---|
+| 2026Q1 | 24.44亿美元 | +10% reported / +8% normalized CC | 4.15亿美元 / 17.0% | 12.45亿美元 / 51% | 10.79美元 | 年化gross bookings 3.78亿美元；annualized presales约1.40亿美元；创一季度纪录并形成record backlog；约60%最大交易与AI相关；8/10头部AI模型商、4/5头部NeoCloud在扩张；Hampton xScale lease未计入Q1 |
+| 2025Q4 | 24.20亿美元 | FY2025全年+5% reported / +6% normalized CC；Q4 MRR +10% | 2.65亿美元 / 10.9% | 11.86亿美元 / 49% | 8.91美元 | Q4年化gross bookings 4.74亿美元，创纪录，同比+42%；2025全年年化gross bookings 16亿美元，同比+27%；Q4>4,500 deals，约60%最大交易由AI workloads驱动；2025交付23,250 retail cabinets和90+MW xScale |
+| 2025Q3 | 23.16亿美元 | +5.2% reported（对2024Q3） | 3.74亿美元 / 16.1% | 11.48亿美元 / 49.6% | 9.83美元 | 年化gross bookings 3.94亿美元，同比+25%、环比+14%；4,400 deals、3,400客户；58个major projects、12个xScale；全球developable capacity约3GW，land bank >900MW；部分capacity到收入有6-24个月滞后 |
+| 2025Q2 | 22.56亿美元 | +4.5% reported | 3.67亿美元 / 16.3% | 11.29亿美元 / 50.0% | 9.91美元 | 年化gross bookings 3.45亿美元；4,100 deals、3,300客户；59个major projects、12个xScale；6,200 net interconnections；Fabric provisioned capacity >100Tbps |
+| 2025Q1 | 22.25亿美元 | +4.6% reported | 3.43亿美元 / 15.4% | 10.67亿美元 / 48.0% | 9.67美元 | gross/net bookings above expectations；56个major projects、12个xScale；xScale projects >85% leased/pre-leased；AI需求已出现但未像2026Q1一样集中量化披露 |
+
+### 3.2 各业务收入和增速
+
+| 财报季度 | Colocation | Interconnection | Managed infrastructure | Other recurring | Non-recurring | 总收入 | AI数据中心相关占比估算 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 2026Q1 | 17.30亿，+12.0% | 4.46亿，+13.5% | 1.15亿，约0% | 0.40亿，+17.6% | 1.13亿，-18.1% | 24.44亿，+10% | 披露口径无AI收入；按最大交易60% AI、AI模型商/NeoCloud扩张和产品结构估算，直接AI/高密度相关收入约10-15%，更宽AI敏感收入约25-35% |
+| 2025Q4 | 17.08亿，+10.3% | 4.33亿，+10.2% | 1.16亿，+0.9% | 0.37亿，+5.7% | 1.26亿，-25.9% | 24.20亿 | 最大交易约60% AI驱动；AI收入未披露，主要体现在高密度colo、interconnection和xScale lease时点 |
+| 2025Q3 | 16.37亿，+7.7% | 4.22亿，+9.9% | 1.18亿，约0% | 0.38亿，+2.7% | 1.01亿，-28.9% | 23.16亿 | AI相关需求体现在3.94亿年化bookings、xScale和land bank；收入确认仍滞后 |
+| 2025Q2 | 15.85亿，+5.7% | 4.07亿，+8.8% | 1.17亿，+0.9% | 0.34亿，约0% | 1.13亿，-16.3% | 22.56亿 | Fabric >100Tbps、net interconnections增长，利于AI/多云网络；AI收入未披露 |
+| 2025Q1 | 15.45亿，+3.7% | 3.93亿，+6.8% | 1.15亿，-2.5% | 0.34亿，约0% | 1.38亿，+17.9% | 22.25亿 | xScale >85% leased/pre-leased；AI直接收入难拆 |
+
+### 3.3 财报趋势解读
+
+最强信号是bookings和利润率同时改善。2025Q2-Q4年化gross bookings从3.45亿、3.94亿到4.74亿美元，2026Q1仍有3.78亿美元并且是“largest first-quarter”。这说明需求没有只在2025Q4冲高后坍塌。另一方面，调整后EBITDA率从2025Q1的48%提升到2026Q1的51%，说明电费传导、运营杠杆和成本纪律抵消了部分扩建压力。
+
+收入结构上，Colocation仍是主体，占2026Q1收入约71%；Interconnection增速更快且壁垒更高，占比18%。Managed infrastructure收入约1.15亿美元/季，增速弱，除非AI Factory和NVIDIA/Cisco方案真正变成可规模化托管产品，否则不应给太高AI硬件型估值。
+
+交期/积压方面，Equinix披露“record backlog”但不披露统一backlog金额。可用替代指标是：年化gross bookings、presales、xScale预租、project count、powered land、atNorth secured power、以及客户流失率。MRR churn在低个位数，且AI相关交易多数是高资本、高切换成本负载，取消率风险低于短租GPU云，但项目延期风险高于取消风险。
+
+## 4. 2026最新指引、业务收入占比与公司侧重点
+
+2026Q1后，公司上调全年指引：
+
+| 指标 | 2026全年指引 | 同比 | 含义 |
+|---|---:|---:|---|
+| 收入 | 101.44-102.44亿美元 | +10-11% reported / normalized CC | 从成熟colo的中个位数增长切换到双位数 |
+| 调整后EBITDA | 51.65-52.45亿美元 | EBITDA率约51%，同比率扩张约2ppt | 运营杠杆、power成本传导、规模效应兑现 |
+| AFFO | 41.98-42.78亿美元 | +12-14% reported | REIT核心现金流增长强于收入 |
+| AFFO/share | 42.31-43.11美元 | +10-12% reported | 股本摊薄后仍双位数增长 |
+| Total capex | 约41亿美元 | 高 | 2026仍是重扩张年 |
+| Non-recurring capex excluding on-balance-sheet xScale/land | 约38亿美元 | 高 | 主体是新容量建设 |
+| Recurring capex | 2.8-3.0亿美元 | 约收入3% | 维护性投入相对可控 |
+
+2026Q1收入结构：
+
+| 业务 | 2026Q1收入 | 占比 | 同比 | 公司侧重点 |
+|---|---:|---:|---:|---|
+| Colocation | 17.30亿美元 | 70.8% | +12.0% | 第一优先级：高密度、液冷ready、AI/云/网络客户的核心容量 |
+| Interconnection | 4.46亿美元 | 18.2% | +13.5% | 第二优先级：AI模型商、NeoCloud、企业数据、云和网络的私有互联 |
+| Managed infrastructure | 1.15亿美元 | 4.7% | 约0% | 小业务；AI Factory若放量才会重新加速 |
+| Other recurring | 0.40亿美元 | 1.6% | +17.6% | 体量小 |
+| Non-recurring | 1.13亿美元 | 4.6% | -18.1% | 安装实施等，一次性波动，不是估值核心 |
+
+最突出的业务不是单一“AI产品型号”，而是三组能力：
+
+1. 高密度/液冷ready IBX colocation：新数据中心默认内建液冷能力；支持40-130+kVA/rack，Equinix技术博客提到AI rack已超过200kW且趋势朝1MW/rack演进。
+2. Interconnection/Fabric/Distributed AI Hub：Fabric Cloud Router、Fabric Intelligence、Distributed AI Hub把模型商、GPU云、云、数据平台、安全服务和企业私有数据连接起来。
+3. xScale + atNorth：面向hyperscaler和AI训练的大容量园区；美国>150亿美元JV最终>1.5GW，atNorth约800MW五年管线和额外1GW secured power。
+
+### 4.1 跳过或低优先级业务
+
+| 业务/产品 | 跳过原因 | 对公司收入仍重要吗 |
+|---|---|---|
+| 传统低密度企业机柜 | 增长稳定但不是AI供需紧张核心；主要按成熟colo估值 | 是，构成基本盘 |
+| Non-recurring installation/implementation | 收入波动大，2026Q1同比-18%；利润率和可持续性弱 | 对季度有扰动，不是长期主线 |
+| 普通Equinix Metal/legacy managed services | Managed infrastructure 2026Q1基本不增长；不是EQIX AI主线 | 小体量，有AI Factory附着机会 |
+| 一般云连接/普通网络端口 | 仍有粘性，但高增长来自AI/多云/数据重力和私有互联 | 是，但不应独立高倍数估值 |
+
+### 4.2 不能漏掉的潜力小业务/产品
+
+| 产品/业务 | 事实信号 | 为什么有潜力 |
+|---|---|---|
+| Fabric Intelligence | 2026Q1推出，AI直接嵌入网络遥测，实时解释并优化网络 | 如果企业AI部署从单点GPU转为跨云/跨数据源，网络自动化价值上升 |
+| Distributed AI Hub | 2026Q1推出，中立、低延迟on-ramp连接模型公司、GPU云、数据平台、安全服务 | EQIX不卖GPU，但可卖“AI生态连接层” |
+| Equinix AI Factory accelerated by NVIDIA | 官方页面称覆盖280+数据中心、77 metros，支持40-130+kVA/rack和液冷/私有连接 | 有机会把AI从定制项目变成可复制架构 |
+| Cisco Secure AI Factory with NVIDIA at Equinix | 2026-06-16公告，提供标准化AI factory蓝图、自动化和Presidio P.A.T.H. Lab | 渠道销售和实验室验证可以降低企业从pilot到production的阻力 |
+| atNorth高密度北欧平台 | 800MW五年管线、额外1GW secured power、液冷enabled设施 | 欧洲主权AI、HPC、低碳训练需求的稀缺入口 |
+
+## 5. 当前高增长/关键业务：收入贡献、增速、AI重要性、供需与定价权
+
+| 关键业务/产品 | 当前收入贡献估算 | 当前增速 | AI技术栈重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---:|---:|---|---|---|---|
+| AI-ready / 高密度IBX colocation | 公司colocation ARR约69.2亿美元；其中AI/高密度直接相关估算约9-13亿美元ARR | colocation 2026Q1 +12%；AI子集估算+25-45% | 极高。GPU rack能否上架、供电、散热、SLA决定AI上线 | 高。客户希望在GPU交付窗口前锁定机房 | 高。电力、液冷、MEP、commissioning是行业瓶颈 | 高。核心metro、低延迟、既有客户和SLA带来溢价 |
+| Interconnection / Fabric / Distributed AI Hub | interconnection ARR约17.8亿美元；AI敏感部分估算约4-6亿美元ARR | 2026Q1 +13.5%，高于公司平均 | 高。企业AI需要连接数据、模型、GPU云和公有云 | 高。推理和私有数据场景对延迟/主权敏感 | 中高。端口本身不如电力紧，但生态位置稀缺 | 很高。cross-connect迁移成本高，网络效应强 |
+| xScale hyperscale JV | 会计收入不完全并表；经济敞口包括25% JV权益、开发/运营和生态引流；已披露美国JV>150亿美元、最终>1.5GW | 容量增长快，收入确认滞后 | 极高。面向hyperscaler AI训练/核心部署 | 很高。100MW+园区需要提前多年锁电 | 极高。GW级供电和园区最稀缺 | 中高。客户大、议价强，但可交付GW园区稀缺 |
+| atNorth Nordic high-density / liquid-cooled platform | 交易尚待完成；EV 40亿美元；Equinix约40%权益；收入未并入 | atNorth处于快速扩张期；800MW五年管线 | 高。欧洲AI/HPC/主权AI和低碳电力 | 中高。欧洲电力/主权AI需求上升 | 高。北欧冷却、低碳电力、土地和电力组合稀缺 | 中高。区域强，但竞争来自大型欧洲DC开发商和云自建 |
+| NVIDIA/Cisco AI Factory / managed AI stack | 当前收入小，主要附着在colo+interconnection；managed infra ARR约4.6亿美元 | managed infra几乎不增长，但AI Factory可能从小基数加速 | 中高。降低企业部署复杂度 | 中高。企业从pilot到production需要标准蓝图 | 中。硬件/软件由伙伴控制，EQIX控制场地和互联 | 中。依赖伙伴生态，不是单独垄断 |
+
+## 6. 未来一年收入贡献三情景预测
+
+以下为研究估算，不是公司指引。公司未披露AI revenue，表中“AI直接/敏感收入”是按产品、订单、客户和容量推导。
+
+| 关键业务 | 当前口径 | 基准：一年后 | 乐观：一年后 | 极度乐观：一年后 | 关键验证指标 |
+|---|---:|---:|---:|---:|---|
+| AI-ready / 高密度IBX colocation | AI/高密度直接相关ARR约9-13亿美元；全colocation ARR约69.2亿美元 | AI/高密度ARR 11-15亿美元，增速20-30%；全colocation +9-12% | AI/高密度ARR 14-19亿美元，增速40-55%；全colocation +13-17% | AI/高密度ARR 18-24亿美元，增速70%+；全colocation +18-24% | Q2/Q3 MRR、retail cabinet交付、高密度签约、液冷ready metro数量 |
+| Interconnection / Fabric / Distributed AI Hub | interconnection ARR约17.8亿美元；AI敏感约4-6亿美元 | interconnection ARR 19.3-20.0亿美元，+8-12% | 20.5-21.5亿美元，+15-21% | 22.5亿美元以上，+25%+ | net interconnections、Fabric port/Tbps、AI Hub客户、模型商/NeoCloud扩张 |
+| xScale hyperscale JV | 美国JV目标>150亿美元、最终>1.5GW；既有JV>8亿美元投资、>725MW full-buildout | 2026-2027确认和经济贡献稳步上升，新增可售容量主要来自已预租项目；对合并收入拉动有限但提升生态 | Hampton及后续大租约顺利，JV新增租约加快，经济贡献+40-70% | 多个100MW+园区锁客/锁电，AI训练客户快速签长约，经济贡献翻倍；但更多体现在JV/权益而非合并收入 | xScale lease closing、MW delivered、prelease、JV融资、客户集中度 |
+| atNorth | 交易未完成；约800MW五年管线、额外1GW secured power | 监管/融资完成，2027开始小幅贡献AFFO；收入并表有限（Equinix约40%权益） | 北欧AI/HPC预租加快，液冷高密度容量快速被锁定 | 低碳电力+主权AI使Nordics成为欧洲AI训练热点，backlog显著扩张 | 交易close、Finland/Sweden/Denmark项目进度、客户/合同年限、电力PPA |
+| NVIDIA/Cisco AI Factory / managed AI stack | 当前直接收入小；主要拉动colo和interconnection附着 | managed infra低个位数增长，AI Factory主要作为销售工具 | managed infra +8-15%，企业AI实验室带来更多colo/Fabric订单 | managed infra +20-30%但仍小基数；若成为标准渠道包，附着率明显提升 | Cisco/NVIDIA客户案例、Presidio P.A.T.H. Lab转化、NVIDIA Mission Control部署量 |
+
+对公司总收入的未来一年预测：
+
+| 情景 | 未来一年公司收入增速 | 核心假设 |
+|---|---:|---|
+| 基准 | +8-11% | 公司2026指引兑现；AI订单继续强，但MW交付滞后；利率/供电不恶化 |
+| 乐观 | +11-14% | 高密度colocation和interconnection继续双位数；xScale/AI相关lease顺利；atNorth不拖累 |
+| 极度乐观 | +15-18% | 大型AI客户加速预租，液冷ready容量供不应求，交付窗口提前；但该情景需要电力和MEP同时顺利 |
+
+## 7. BOM、每MW/每rack/每GPU/每optical port内容量与价格传导
+
+### 7.1 Equinix的BOM边界
+
+Equinix不是服务器、GPU、光模块、CDU或冷板制造商。它的BOM是数据中心基础设施BOM，成本通过机柜、电力、冷却、安装、cross-connect、Fabric和长约租金传导给客户。
+
+| 层级 | 典型内容 | 由谁承担 | EQIX如何变现 |
+|---|---|---|---|
+| 土地/园区/建筑 | 土地、建筑壳体、结构、安防、消防 | EQIX或JV/开发主体 | 长期colo租金、xScale lease、资产增值 |
+| 电力链 | utility interconnection、变电站、变压器、MV/LV switchgear、UPS、发电机、燃料系统、母线、PDU | EQIX/JV采购和建设；部分电费pass-through | 电力承诺、功率密度、SLA、安装和租金 |
+| 冷却链 | chiller、cooling tower/dry cooler、primary loop、CDU、secondary loop、manifold、快接、传感器、漏液检测 | facility侧由EQIX；服务器侧由客户/OEM | 高密度/液冷ready溢价、缩短上线时间 |
+| 网络互联 | meet-me-room、fiber tray、patch panel、cross-connect、Equinix Fabric、cloud on-ramp | EQIX运营，客户按连接购买 | 高毛利月费和安装费，强粘性 |
+| 运维/认证 | 远程手、监控、DCIM、SLA、合规认证、客户/OEM协调 | EQIX | 服务费、溢价租金、客户留存 |
+
+### 7.2 每MW内容量与价格传导
+
+项目内AI数据中心行业资料显示，2026-2028年AI数据中心的真实瓶颈主要是power interconnection、变压器/开关柜、液冷集成、MEP/commissioning和供电窗口。以1MW IT load为单位，Equinix需要交付的不是“1MW电表”，而是可持续运行的1MW IT负载能力。
+
+| 维度 | 典型内容量/估算 | 价格传导 |
+|---|---:|---|
+| 每MW IT load的设施capex | 粗略10-22百万美元/MW，仅设施侧；全AI stack若含GPU/服务器/网络可达38-65百万美元/MW | EQIX只捕获设施侧租金、电力、冷却、互联和服务，不捕获GPU硬件价值 |
+| 每MW年收入能力 | 行业高密度colo/wholesale租金常见约180-320美元/kW-month，对应约2.2-3.8百万美元/MW-year；核心metro/retail/互联附着可更高 | 租金 + 电力pass-through + cross-connect/Fabric + 远程手 |
+| 每MW racks | 传统20-40kW/rack约25-50 racks/MW；AI 60-160kW/rack约6-17 racks/MW；200kW/rack约5 racks/MW | rack数变少但单rack功率、冷却和合同价值上升 |
+| 每MW GPU数 | 若GB200/GB300 NVL72级别约120-150kW/rack、72 GPU/rack，则约480-600 GPU/MW | 设施价值摊到每GPU约17k-46k美元/GPU（设施capex口径），不含GPU |
+| 每MW冷却 | direct-to-chip需要primary loop、CDU、secondary loop、rack manifold、快接、传感器、漏液检测、N+1 pump/冗余 | 液冷ready容量稀缺时，客户愿为更快上线和更低实施风险付溢价 |
+| 每MW光/网络 | 不按MW直接线性；AI训练集群内部光模块由客户/OEM采购，EQIX主要提供facility interconnect、cross-connect、Fabric、cloud/model/neocloud on-ramp | EQIX捕获端口/月费和连接粘性，不捕获800G/1.6T光模块BOM |
+
+### 7.3 每rack内容量
+
+| rack类型 | 功率密度 | 需要的设施能力 | EQIX可收费点 | 风险 |
+|---|---:|---|---|---|
+| 传统企业rack | 5-15kW | 空冷、普通配电、普通cross-connect | cabinet rent、电力、连接 | 增速低、替代性强 |
+| 云/网络高密rack | 20-40kW | 强化配电、冷热通道、更多网络连接 | 较高功率费、cross-connect/Fabric | 电力利用率和客户迁移 |
+| AI高密rack | 60-160kW | 高功率母线/PDU、液冷ready、CDU/管路、OEM参数协调 | 高租金/kW、冷却溢价、部署服务、互联附着 | 液冷可靠性、交付窗口、客户GPU到货 |
+| 超高密AI rack | 200kW-1MW趋势 | direct-to-chip、CDU冗余、漏液检测、流量/温度/压力控制、可能需要专用hall/园区 | 极高单rack合同价值，但交付难度指数上升 | 标准未完全稳定、OEM代际变化快 |
+
+### 7.4 每GPU内容量
+
+Equinix不卖GPU，但每GPU需要被“承载”。若按1MW支持480-600个NVL72级GPU等效估算：
+
+| 项目 | 每GPU设施侧内容量估算 | 说明 |
+|---|---:|---|
+| 设施capex摊销 | 约1.7万-4.6万美元/GPU | 以10-22百万美元/MW设施capex、480-600 GPU/MW计算 |
+| 年度设施收入摊销 | 约3,700-7,900美元/GPU-year | 以2.2-3.8百万美元/MW-year、480-600 GPU/MW计算，不含电费细分 |
+| 电力 | 约1.7-2.1kW IT/GPU | 1MW / 480-600 GPU |
+| 冷却 | 每GPU约等同1.7-2.1kW热负荷，需要液冷/混合冷却可靠带走 | 直接决定GPU利用率和SLA |
+| 网络外联 | 与训练内部网络无直接线性，但推理/企业AI需要私有云、模型和数据连接 | EQIX在外联和生态互联上变现 |
+
+### 7.5 每optical port内容量
+
+AI训练集群内部800G/1.6T端口、光模块、交换机主要由客户/OEM/云商采购，不是EQIX收入主体。EQIX相关内容量是：
+
+| port/连接层 | EQIX提供 | 收费/价值 |
+|---|---|---|
+| 物理cross-connect | meet-me-room到客户/网络/云/伙伴的光纤跳接、布线、运维 | 月费+安装费；迁移成本高 |
+| Equinix Fabric虚拟连接 | 软件定义私有连接、cloud on-ramp、Fabric Cloud Router | 月费/带宽/连接，部署快 |
+| AI生态连接 | 模型商、GPU云、数据平台、安全服务、云、企业私有数据之间的低延迟路径 | Distributed AI Hub和AI Factory的核心 |
+| 网络自动化 | Fabric Intelligence把AI用于网络遥测与优化 | 潜在附加软件价值 |
+
+## 8. 当前产能能力、供应链采纳与认证/验证阶段
+
+| 关键业务 | 当前产能/资金能力 | 供应链采纳程度 | 认证/验证阶段 |
+|---|---:|---|---|
+| IBX高密度/液冷ready | 2026E总capex约41亿美元；2025交付23,250 retail cabinets；新数据中心默认内建液冷能力 | 高。客户包括企业、云、网络、模型商、NeoCloud；8/10头部AI模型商、4/5头部NeoCloud在扩张 | 液冷为工程/运营能力；Equinix声称新数据中心默认液冷能力，需看具体site/OEM参数 |
+| Interconnection/Fabric | 513,000全球互联；2025超过500,000；Q2 2025 Fabric provisioned capacity >100Tbps | 极高。云、网络、企业、模型商、NeoCloud共用平台 | cross-connect和Fabric为成熟商业产品；Fabric Intelligence为2026新产品 |
+| xScale | 既有hyperscale JV full-buildout >725MW；美国新JV目标>150亿美元、最终>1.5GW；2025交付90+MW xScale | 高。xScale项目>85% leased/pre-leased（2025Q1口径），hyperscaler需求强 | xScale数据中心承诺LEED或区域等效认证；具体项目受监管、融资和客户lease closing影响 |
+| atNorth | EV 40亿美元交易；约800MW五年管线，额外1GW secured power；8座运营数据中心，多项目开发 | 中高。北欧AI/HPC/主权数据需求强，液冷enabled设施 | 交易需监管批准；atNorth保持独立品牌，未来并入/权益口径需看close后披露 |
+| NVIDIA/Cisco AI Factory | 覆盖280+数据中心、77 metros的官方方案；2026-06 Cisco/NVIDIA/Presidio实验室 | 初期但高质量。伙伴渠道强，适合企业AI从pilot到production | 基于NVIDIA Enterprise AI Factory validated design、Cisco Secure AI Factory和Presidio P.A.T.H. Lab；更像架构验证和渠道认证，而非单一数据中心认证 |
+
+## 9. 未来一年产能能力、供应链采纳和认证三情景
+
+| 关键业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| IBX高密度/液冷ready | 2026E约41亿美元capex按计划执行；高密度容量继续供不应求但交付滞后；更多新IBX默认液冷ready | 高密度retrofit和新建site节奏加快，液冷ready成为主要销售卖点；AI客户预租率提高 | 200kW+ rack需求快速扩大，EQIX核心metro液冷容量成为稀缺资产，租金/kW和服务附着率继续上行 |
+| Interconnection/Fabric | interconnection保持10%左右增长；Fabric Intelligence小规模商业化 | AI Hub让模型商、NeoCloud、数据平台和企业形成更多私有连接；Fabric增速提升 | 企业AI推理和主权AI爆发，Fabric成为AI应用外联事实标准之一，interconnection增速上探20%+ |
+| xScale | Hampton和已签项目逐步确认；美国JV融资和土地/电力推进 | 多个100MW+ campus锁定客户，预租和powered land继续上行 | Hyperscaler为AI训练抢锁GW容量，xScale JV新增合同大幅超预期；主要限制为电力和监管 |
+| atNorth | 交易完成并小幅贡献AFFO；管线按五年节奏推进 | 北欧AI/HPC需求使800MW管线加速预租；液冷和可再生能源形成溢价 | 欧洲主权AI/低碳AI训练迅速扩张，额外1GW secured power被快速纳入开发计划 |
+| NVIDIA/Cisco AI Factory | 主要贡献销售线索和附着率 | Presidio P.A.T.H. Lab和渠道伙伴带来更多企业AI部署 | 形成可复制方案，带动managed services和interconnection小基数高增长 |
+
+## 10. 基于订单积压、供给和扩产能力的未来一年业务增速推断
+
+### 10.1 已披露订单与供给线索
+
+| 线索 | 已披露事实 | 对未来一年收入的推断 |
+|---|---|---|
+| 年化gross bookings | 2025全年16亿美元，同比+27%；2025Q4 4.74亿美元创纪录；2026Q1 3.78亿美元创一季度纪录 | MRR未来4-8个季度有支撑；不是一次性拉单 |
+| AI交易占比 | 2025Q4和2026Q1约60%最大交易与AI相关 | AI需求已进入商业订单，但收入确认依赖容量交付 |
+| Presales/backlog | 2026Q1 annualized presales约1.40亿美元；公司称record backlog | 积压真实存在，但金额未披露；可解释2026收入指引上调 |
+| 客户扩张 | 8/10头部AI模型商、4/5头部NeoCloud在Equinix扩张 | AI生态客户选择中立互联点，而不只是自建 |
+| 交付容量 | 2025交付23,250 retail cabinets、90+MW xScale；current major expansion projects 52个 | 2026-2027有明确供给释放，但受power/MEP约束 |
+| Powered land | 2025新增约1GW powered land under control；美国xScale JV最终>1.5GW；atNorth 1GW secured power | 长周期产能储备强，短期收入看实际energized MW |
+| 客户流失/取消 | 未披露AI取消率；MRR churn低；Q1/Q4大单强 | 主要风险是延期而非取消 |
+
+### 10.2 未来一年业务增速预测
+
+| 业务 | 基准增速 | 乐观增速 | 极度乐观增速 | 推断逻辑 |
+|---|---:|---:|---:|---|
+| 总收入 | +8-11% | +11-14% | +15-18% | 公司2026指引已经是+10-11%；极度乐观需要交付和需求同时超预期 |
+| Colocation | +9-12% | +13-17% | +18-24% | 高密度AI容量紧张、MRR +12%、booking强；但新MW转收入有滞后 |
+| Interconnection | +10-13% | +14-19% | +20-25% | AI模型/NeoCloud/企业数据连接带来cross-connect和Fabric附着 |
+| Managed infrastructure | 0-5% | +8-15% | +20-30% | 当前基数小且增速弱；AI Factory才是弹性来源 |
+| xScale经济贡献 | +20-35% | +40-70% | +100%+ | 不一定完全并表；重点看JV权益、开发/运营收益和生态引流 |
+| AFFO/share | +8-12% | +12-16% | +16-20% | 受EBITDA率、利息、股本、JV会计和capex节奏影响 |
+
+### 10.3 交付窗口和取消率判断
+
+大型AI数据中心不是“签约即收入”。项目内行业资料显示，AI数据中心从进入订单到真正通电通常滞后6-24个月，500MW+园区往往是多年周期。对EQIX，未来一年最关键的是：
+
+1. 已预租/已签约容量能否按时energize；
+2. power interconnection、变压器/开关柜、液冷/CDU、MEP劳动力是否拖延；
+3. xScale lease closing和JV融资是否顺畅；
+4. 大客户GPU/服务器到货是否匹配机房上线节奏；
+5. 若AI训练需求阶段性降温，客户是否延后扩容而非取消。
+
+取消率方面，公司未披露AI取消率，MRR churn低且客户迁移成本高。本文假设基准取消/缩量风险低到中等，延期风险中高；极度乐观情景的反证指标是：bookings强但MRR和revenue conversion不跟进。
+
+## 11. 竞争格局、替代方案、技术路线和客户替换成本
+
+### 11.1 主要竞争对手
+
+| 领域 | 竞争对手 | EQIX优势 | EQIX劣势/风险 |
+|---|---|---|---|
+| 全球colo + interconnection | Digital Realty、NTT Global Data Centers、CoreSite/AMT、KDDI/Telehouse、Global Switch、regional carrier hotels | 中立生态、全球metro密度、513,000互联、云on-ramp、企业客户粘性 | 估值高，部分市场电力紧张，retail扩张慢于纯wholesale开发商 |
+| Hyperscale / xScale | Digital Realty、Vantage、QTS、CyrusOne、Aligned、STACK、Compass、EdgeCore、Flexential、Crusoe等 | 与IBX生态联动、GIC/CPP资本、hyperscaler可在同平台扩展 | 大客户议价强，wholesale/xScale利润率通常低于retail interconnection |
+| AI云/NeoCloud基础设施 | CoreWeave、Nebius、Lambda、Crusoe、Nscale、Oracle、AWS/Azure/GCP自建 | 不直接与客户争夺模型/云控制权，中立互联位置强 | 若客户偏向云商一站式GPU服务，EQIX只捕获设施和互联 |
+| 企业AI集成/AI Factory | 公有云AI stack、NVIDIA DGX Cloud、Cisco/HPE/Dell伙伴、各类SI | 可把硬件、云、网络和数据放到中立地点；Cisco/NVIDIA/Presidio合作 | 软件/硬件价值大部分由伙伴捕获，EQIX需靠colo/Fabric变现 |
+| 北欧HPC/AI数据中心 | atNorth同行、Green Mountain、Bulk、Verne、EcoDataCenter、云商自建 | atNorth交易带来规模、电力和区域品牌 | 监管、整合和本地竞争；客户可能直接签区域开发商 |
+
+### 11.2 EQIX的新技术是不是主流
+
+主流方向基本成立，但不要把它误读成“EQIX拥有AI硬件技术”。未来AI数据中心主流会是：
+
+1. direct-to-chip液冷为主、风冷/液冷混合过渡；
+2. rack power从40-130kVA向200kW+甚至1MW rack演进；
+3. 训练容量偏向100MW-GW级园区，推理容量偏向靠近数据、用户和云的分布式节点；
+4. 网络从普通云连接升级为模型商、GPU云、数据平台、企业私有数据和安全服务之间的私有互联；
+5. 数据中心交付从“地产建设”升级为power/cooling/commissioning/供应链协同。
+
+这些方向与Equinix的IBX+xScale+Fabric组合一致。风险在于：训练容量可能被云商自建和低成本区域园区吸走；企业AI部署可能被公有云托管化；液冷标准和OEM代际变化可能导致retrofit成本上升；若AI需求过度前置，2027-2028可能出现部分区域容量过剩。
+
+### 11.3 客户替换成本
+
+EQIX客户替换成本高，尤其是跨多个metro、多个云、多个网络和多个数据源的客户。
+
+| 替换成本来源 | 具体原因 | 强度 |
+|---|---|---|
+| 物理迁移 | 服务器、存储、网络、机柜、布线、SLA切换 | 高 |
+| Cross-connect生态 | 已有网络、云、伙伴、金融/支付/企业连接迁移成本高 | 很高 |
+| 数据重力 | 企业数据、模型推理、合规地点和低延迟依赖 | 高 |
+| 合同期限 | Colocation通常1-3年；AI/xScale更可能是长约 | 高 |
+| 运维认证 | 安全、合规、客户审计、OEM液冷参数验证 | 中高 |
+| 替代可得性 | 核心metro有电、有液冷、有互联的位置有限 | 很高 |
+
+## 12. 风险与反证指标
+
+| 风险 | 反证/跟踪指标 | 对估值影响 |
+|---|---|---|
+| 估值过高 | P/AFFO长期>25x但收入/AFFO增速回落到中个位数 | 多重压缩 |
+| 利率/信用利差上行 | REIT融资成本升高，AFFO/share增速低于收入 | 中高 |
+| 电力与MEP延期 | bookings强但MRR、revenue、cabinet/MW交付不跟进 | 高 |
+| xScale利润率低于预期 | 大客户议价强，JV会计贡献弱 | 中 |
+| AI过度建设 | 2027-2028预租下降、取消/延后增加、租金/kW回落 | 高 |
+| atNorth整合/监管 | 交易close延后、融资成本上升、Nordics项目推迟 | 中 |
+| 云商自建替代 | hyperscaler直接自建GW园区，减少第三方租赁 | 中高 |
+| 技术路线变化 | 液冷标准、rack架构、功率密度变化导致retrofit成本 | 中 |
+| 环境/社区/水资源监管 | data center permitting、电网负担、用水限制 | 中高 |
+
+重点反证指标：
+
+1. Q2/Q3 2026 annualized gross bookings是否低于3亿美元；
+2. MRR增速是否从双位数回落到中个位数；
+3. 2026收入指引是否下修或仅靠FX维持；
+4. xScale lease closing是否继续推迟；
+5. 60% AI-related largest deals是否下降；
+6. interconnection增速是否显著低于colocation，说明AI生态连接附着不足；
+7. capex上调但AFFO/share不上调，说明投资回报被成本吞噬。
+
+## 13. 投资判断
+
+Equinix的核心投资命题是：AI基础设施从“算力硬件短缺”进入“电力、冷却、园区交付、私有互联、数据主权、企业落地”阶段后，EQIX这样的全球中立数据中心平台会获得更高的增长斜率和更强的定价权。它的优势不在于单一产品型号，而在于把高密度机房、液冷、互联生态和全球客户网络组合为可交付服务。
+
+基准判断：EQIX是AI数据中心周期中质量最高但估值也最充分的一类资产。2026年收入+10-11%、EBITDA率51%、AFFO/share +10-12%的指引很强，且订单和AI客户信号支持继续兑现。若P/AFFO仍在25x以上，股价进一步上行需要看到：AI相关bookings继续增长、xScale/atNorth容量顺利转为可见现金流、interconnection保持双位数、capex回报没有被电力/建设成本侵蚀。
+
+乐观情景：EQIX成为企业私有AI与模型/NeoCloud/公有云之间的中立交换层，高密度colo供不应求，interconnection/Fabric从“云连接”升级为“AI数据流网络”，xScale和atNorth锁定长约。这种情况下公司收入增速可维持低双位数更久，P/AFFO高位有合理性。
+
+谨慎情景：AI训练容量更多流向低成本自建园区，企业AI被公有云一站式吸收，EQIX只捕获传统colo租金；同时利率和capex压力抬升。此时EQIX仍是好公司，但高估值会收缩。
+
+## 14. 主要来源
+
+### 公司官方/SEC/投资者资料
+
+- Equinix 2026Q1 earnings release, 2026-04-29: https://investor.equinix.com/news-events/press-releases/detail/1107/equinix-reports-first-quarter-results-and-raises-full-year
+- Equinix 2025Q4/FY2025 earnings release, 2026-02-11: https://investor.equinix.com/news-events/press-releases/detail/1096/equinix-provides-robust-2026-outlook-driven-by-strong
+- Equinix 2025Q3 earnings release: https://investor.equinix.com/news-events/press-releases/detail/1086/equinix-reports-strong-third-quarter-2025-results
+- Equinix 2025Q2 earnings release: https://investor.equinix.com/news-events/press-releases/detail/1076/equinix-reports-second-quarter-2025-results
+- Equinix 2025Q1 earnings release: https://investor.equinix.com/news-events/press-releases/detail/1068/equinix-reports-first-quarter-2025-results
+- Equinix FY2025 Form 10-K: https://investor.equinix.com/sec-filings/all-sec-filings/content/0001101239-26-000032/eqix-20251231.htm
+- Equinix Investor Relations overview, Q1 2026 platform statistics: https://investor.equinix.com/
+- Equinix xScale JV with GIC and CPP Investments, 2024-10-01: https://investor.equinix.com/news-events/press-releases/detail/1053/equinix-agrees-to-form-greater-than-15b-jv-to-expand
+- CPP Investments and Equinix to acquire atNorth, 2026-02-27: https://www.prnewswire.com/news-releases/cpp-investments-and-equinix-to-acquire-atnorth-for-us4-billion-302699082.html
+- Equinix + Cisco + NVIDIA Secure AI Factory announcement, 2026-06-16: https://newsroom.equinix.com/2026-06-16-Equinix-Collaborates-with-Cisco-and-NVIDIA-to-Deploy-Secure-AI-Factories-Across-Global-Data-Center-Footprint
+- Equinix AI Factory with NVIDIA: https://www.equinix.com/partners/nvidia
+- Equinix liquid cooling technical blog, 2026-05-07: https://blog.equinix.com/blog/2026/05/07/the-anatomy-of-a-direct-to-chip-liquid-cooling-system/
+
+### 项目内行业资料
+
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+- `行业调研/行业会议/data_center_world_2026_research_report.md`
+- `行业调研/行业会议/OCP_EMEA_Summit_2026_高密度调研报告.md`
+- `行业调研/行业会议/conference_update_datacloud_global_congress_2026_2026-06-10.md`
+- `行业调研/行业会议/conference_update_cisco_live_2026_las_vegas_2026-06-10.md`
+
+### 行情与估值
+
+- OpenAI Finance行情快照，EQIX，2026-06-19 UTC附近：股价、市值、P/E。
+- 二级行情检索交叉检查，2026-06-20：forward P/E和市值附近口径。REIT估值以公司AFFO/share指引推算的P/AFFO为主。

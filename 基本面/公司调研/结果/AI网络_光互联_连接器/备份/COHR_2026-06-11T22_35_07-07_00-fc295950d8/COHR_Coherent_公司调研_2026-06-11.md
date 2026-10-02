@@ -1,0 +1,404 @@
+# COHR Coherent 公司调研：AI 光互联垂直整合平台（2026-06-11）
+
+## 0. 资料边界与核心结论
+
+**资料边界。** 本报告只使用 `基本面\行业调研\` 下与 AI 网络、光互联、CPO/NPO、OCI/Open CPX、激光器、EML、1.6T、OCS 相关的产业资料，并补充 2025-2026 年公司公告、财报、投资者材料、OFC 2026 技术材料、行业机构报告和行情数据。未读取、引用或继承 `特征量化/`，也未读取旧的 COHR 公司调研正文。公司级产品和订单金额中，凡 Coherent 未披露的部分均标记为“推算”。
+
+**一句话结论。** Coherent（NYSE: COHR）已经从“材料、激光、传统光通信和工业激光混合公司”快速重估为“AI 数据中心光互联基础件公司”：其核心价值不只是卖 800G/1.6T 光模块，而是拥有 InP/GaAs/SiPh/光探测器/EML/CW laser/VCSEL/模块/OCS/CPO/ELS 的垂直技术栈，并且正在用 NVIDIA 的 20 亿美元投资和多年采购承诺把 InP 和 CPO 产能锁进下一代 AI 网络。
+
+**投资含义。**
+
+- **最确定的短期主线**：Datacenter & Communications 已经占 Q3 FY2026 收入 75.4%，同比约 +40.6%，Q4 FY2026 指引中点收入 19.8 亿美元，隐含公司整体再加速；800G 继续增长，1.6T 快速爬坡，InP 是关键约束。
+- **最重要的稀缺资产**：6 英寸 InP 产线。公司披露 6 英寸平台已生产 EML、CW laser、photodiode，良率高于 3 英寸线，并计划在 2026 和 2027 连续扩产。
+- **最大期权**：CPO/NPO、ELS、OCS、multi-rail 和 scale-across DCI。CPO 目前收入仍小，但公司披露与 NVIDIA 的非独家多年战略协议、NVIDIA 20 亿美元投资、multibillion-dollar purchase commitment、future capacity rights，且 OFC 材料称已获得市场领先 AI 数据中心客户的高容量多年 CPO 订单。
+- **最大风险**：估值已经把 AI 光互联稀缺性大量前置。2026-06-11 盘中股价约 350.02 美元，市值约 684.8 亿美元，TTM P/E 约 165.9x，P/S 约 10.4x，forward P/E 约 47x。若 1.6T/CPO 延迟、InP 产能扩张后行业供给追上、或 hyperscaler 库存/ASP 周期反转，估值回撤会很剧烈。
+
+---
+
+## 1. 公司整体业务、产业链定位、重大变化和财务健康
+
+### 1.1 公司是什么业务
+
+Coherent 是一家光子技术平台公司，业务从上游材料、化合物半导体器件，到中游光模块、光子集成、激光和光学组件，再到部分系统层产品。FY2026 起公司按两个大段披露：
+
+| 分部 | Q3 FY2026 收入 | 收入占比 | 主要产品 | AI 相关性 |
+|---|---:|---:|---|---|
+| Datacenter & Communications | 13.616 亿美元 | 75.4% | 400G/800G/1.6T/3.2T 光模块，DCI ZR/ZR+，光传输，OCS，CPO/NPO，SiPh，InP EML/CW laser/PD，GaAs VCSEL | 极高，是当前重估核心 |
+| Industrial | 4.440 亿美元 | 24.6% | 工业激光、材料加工、精密制造、生命科学、仪器、工程材料、热管理材料 | 中低，部分 thermal/diamond/SiC 未来可关联 AI 散热，但当前不是主线 |
+
+Coherent 的差异点在于“垂直栈”：它不仅能做光模块，也能做 InP EML、CW laser、photodiode、SiPh、VCSEL、光学无源件、组装测试和系统。对 AI 数据中心来说，这使它处在 GPU/ASIC、交换机、光模块、光引擎、CPO、OCS、DCI 之间的关键供应位置。
+
+### 1.2 投资人眼中的 Coherent
+
+2023 年前后，市场通常把 Coherent 看成高杠杆、整合复杂、周期性强的“材料+工业激光+光通信”公司。2024-2026 年叙事发生变化：
+
+- **AI optical picks-and-shovels**：AI 集群从 400G 进入 800G/1.6T，光模块和激光器从普通通信零件变成 AI 工厂建设瓶颈。
+- **InP 稀缺产能标的**：TrendForce 指出 2026 年 EML 与 CW-DFB LD 合计月产能约 5070 万颗，但 EML、CW laser、光学对准、热管理仍是扩产瓶颈。Coherent 是少数同时拥有 InP、GaAs、SiPh 和模块量产经验的美国供应商。
+- **NVIDIA 背书标的**：2026-03-02，NVIDIA 与 Coherent 宣布多年战略合作，NVIDIA 投资 20 亿美元，并带有 multibillion-dollar purchase commitment、future access 和 capacity rights。该事件把 Coherent 从“AI 受益供应商”提升为“下一代 AI 光互联战略供应链”。
+- **高估值高弹性**：股价已经反映很强预期，市场关注点从“能不能盈利”转向“1.6T、CPO、OCS、InP 产能能不能兑现到 FY2027/FY2028 收入”。
+
+### 1.3 最近 3 年重大业务变化
+
+| 时间 | 事件 | 对业务含义 |
+|---|---|---|
+| 2022-07 / 2022-09 | II-VI 完成收购 Coherent, Inc.，随后更名为 Coherent Corp. 并沿用 COHR 交易代码 | 形成材料、网络、激光一体化平台。虽然略早于 3 年窗口，但仍是当前业务结构的根本来源 |
+| 2024-06 | Jim Anderson 出任 CEO | 从 Lattice 背景来的半导体型 CEO，市场预期公司会更聚焦高增长、高毛利和平台化产品 |
+| FY2025 | FY2025 收入 58.10 亿美元，同比 +23%，非 GAAP EPS 3.53 美元；偿还约 4.37 亿美元债务 | 证明 II-VI/Coherent 整合后盈利能力改善，AI 数据中心开始成为长期主线 |
+| 2025-08 | 宣布以 4 亿美元出售 Aerospace & Defense 业务给 Advent | 减少非核心资产，所得用于降债，提高 EPS 和资本使用效率 |
+| 2025-09 / 2026-01 | A&D 业务完成出售；Munich 工具业务出售完成 | FY2026 pro forma 增速剔除这两项影响，业务口径更集中到 D&C 与 Industrial |
+| 2026-03 | NVIDIA 投资 20 亿美元，并签订多年战略合作和采购承诺 | 强化 CPO、advanced laser、US manufacturing、future capacity rights，直接改善资产负债表和订单可见度 |
+| 2026 OFC | 展示 1.6T、3.2T、6.4T 路线、400G/lane、CPO/NPO、ELS、OCS、multi-rail、high-speed VCSEL | 产品路线从 pluggable 向 CPO/scale-up/scale-across 扩展，收入期权从 2026H2 延伸到 2027+ |
+
+### 1.4 最新估值和经营指标
+
+行情和二级估值数据波动很快，下表使用 2026-06-11 盘中可得数据；forward P/E 取二级行情源近似值，P/S 用市值除以最近四个季度收入推算。
+
+| 指标 | 最新数值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | 350.02 美元 | 2026-06-11 16:52 UTC，盘中 | 日内低点附近，前收 354.77 美元 |
+| 市值 | 684.8 亿美元 | 2026-06-11 16:52 UTC | 已明显从传统光通信估值切到 AI 光互联稀缺资产估值 |
+| TTM P/E | 165.9x | 2026-06-11，行情源 | GAAP EPS 口径，受整合、处置、折旧摊销影响，读数偏高 |
+| Forward P/E | 约 47x | 2026-06-11 附近，StockAnalysis/Yahoo 等二级源 | 市场用 FY2027/FY2028 AI 增长折现，仍然很贵 |
+| P/S | 约 10.4x | 市值 684.8 亿美元 / TTM 收入约 66.02 亿美元 | 光模块/器件周期股若回到普通通信估值，会有大幅压缩风险 |
+| 最近季度收入增速 | +20.5% reported，+27% pro forma | Q3 FY2026，截至 2026-03-31 | pro forma 剔除 A&D 和 Munich 工具业务处置 |
+| FY2025 收入增速 | +23.4% | FY2025 截至 2025-06-30 | FY2025 收入 58.10 亿美元 |
+| 最新 GAAP 毛利率 | 37.7% | Q3 FY2026 | 同比提升 243 bps |
+| 最新非 GAAP 毛利率 | 39.6% | Q3 FY2026 | 同比提升 105 bps，受 D&C、6 英寸 InP、定价和良率改善推动 |
+| 最新 GAAP 净利率 | 10.6% | Q3 FY2026，净利 1.914 亿 / 收入 18.056 亿 | GAAP 盈利质量已明显改善 |
+| 最新非 GAAP 净利率 | 15.3% | Q3 FY2026，非 GAAP 净利 2.762 亿 / 收入 18.056 亿 | 反映经营杠杆和产品组合改善 |
+| 最新分部占比 | D&C 75.4%，Industrial 24.6% | Q3 FY2026 | 公司主线已经集中到数据中心与通信 |
+
+### 1.5 资产负债表健康程度
+
+截至 2026-03-31，Coherent 的资产负债表比 2024-2025 年显著健康，但不是无风险。
+
+| 项目 | 2026-03-31 | 2025-06-30 | 变化和评价 |
+|---|---:|---:|---|
+| 现金及等价物 | 15.927 亿美元 | 9.092 亿美元 | NVIDIA 投资和融资活动显著增强现金 |
+| 短期投资 | 8.250 亿美元 | 0 | 现金管理增强；现金+短投约 24.177 亿美元 |
+| 受限现金 | 6.330 亿美元 | 7.237 亿美元 | 部分不可自由动用 |
+| 应收账款 | 11.879 亿美元 | 9.641 亿美元 | 与收入增长一致 |
+| 存货 | 21.268 亿美元 | 14.376 亿美元 | 增幅很大，反映扩产和需求可见度，也带来库存周期风险 |
+| 总流动资产 | 64.452 亿美元 | 39.272 亿美元 | 流动性大幅提升 |
+| 总资产 | 172.867 亿美元 | 149.109 亿美元 | NVIDIA 投资、库存和固定资产扩张推升 |
+| 流动负债 | 21.134 亿美元 | 17.948 亿美元 | 当前比率约 3.05x，短期偿付充足 |
+| 长期债务 | 31.848 亿美元 | 34.986 亿美元 | 绝对债务仍高，但在下降 |
+| 总负债 | 62.710 亿美元 | 64.297 亿美元 | 负债下降、权益大增 |
+| 股东权益 | 106.770 亿美元 | 56.445 亿美元 | 主要受 NVIDIA 入股和优先股处理影响 |
+
+**健康度判断：偏健康，但要盯库存和 capex。**
+
+- **杠杆改善**：Q3 call 中 CFO 表示债务杠杆率降至 0.5x，低于 Q2 的 1.7x 和去年同期 2.1x。以现金+短投扣除债务估算，净债务约 7.76 亿美元；若把受限现金也纳入流动性，净债务更低。
+- **流动性充足**：当前比率约 3.05x，现金+短投 24.18 亿美元，足以支持 InP、CPO、OCS 扩产。
+- **经营现金流短期受压**：前 9 个月经营现金流仅约 0.101 亿美元，主要是库存和扩产工作资本占用；这不是破产风险，但说明增长需要大量现金投入。
+- **库存风险上升**：存货从 14.38 亿美元升至 21.27 亿美元。若 1.6T/CPO 订单延后、客户砍单或 ASP 下跌，库存减值和毛利率压力会迅速显性化。
+
+---
+
+## 2. 最近 5 次财报：收入、利润、订单、交期和 AI 数据中心占比
+
+说明：Coherent 没有按产品披露 bookings/backlog、lead time、取消率，也没有直接披露 AI 数据中心收入。下表中收入、毛利率、经营利润率、EPS 等来自公司披露；AI 数据中心占比、订单和交期为基于 D&C 收入、管理层表述、OFC 技术路线、行业供需和 LTA 信息的推算。
+
+| 财季 | 截止/发布 | 总收入 | reported / pro forma 增速 | D&C 收入/占比 | Industrial 收入/占比 | 非 GAAP GM / OPM / 净利率 | GAAP 净利 | 非 GAAP EPS | 订单、交期、AI 数据中心读数 |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| Q3 FY2025 | 截止 2025-03-31 | 14.979 亿美元 | reported +约24% YoY | 9.687 亿美元 / 64.7% | 5.292 亿美元 / 35.3% | 38.5% / 18.6% / 11.8% | 0.157 亿美元 | 0.91 美元 | AI 数据中心处在 800G 加速期；以 D&C 占比推算 AI DC 约占公司收入 28-35%，但尚未成为绝对主导 |
+| Q4 FY2025 | 截止 2025-06-30，发布 2025-08-13 | 15.29 亿美元 | reported +16.4% YoY；FY2025 全年 +23.4% | 10.18 亿美元 / 66.6% | 5.11 亿美元 / 33.4% | 38.1% / 18.0% / 12.6% | -0.96 亿美元 | 1.00 美元 | FY2025 经营改善、全年还债约 4.37 亿美元；宣布出售 A&D，AI DC 估算占比升至 32-40% |
+| Q1 FY2026 | 截止 2025-09-30，发布 2025-11-05 | 15.81 亿美元 | reported +17%，pro forma +19% | 10.90 亿美元 / 68.9% | 4.91 亿美元 / 31.1% | 38.7% / 19.5% / 14.0% | 2.26 亿美元 | 1.16 美元 | 管理层称增长由 AI 相关数据中心与通信需求驱动；季度偿还债务 4 亿美元；AI DC 估算占比 35-43% |
+| Q2 FY2026 | 截止 2025-12-31，发布 2026-02-04 | 16.856 亿美元 | reported +17.5%，pro forma +22% | 12.08 亿美元 / 71.7% | 4.776 亿美元 / 28.3% | 39.0% / 19.9% / 14.7% | 1.467 亿美元 | 1.29 美元 | 公司指引 Q3 17.0-18.4 亿美元；D&C 需求继续强，capex 提升支持产能；AI DC 估算占比 38-47% |
+| Q3 FY2026 | 截止 2026-03-31，发布 2026-05-06 | 18.056 亿美元 | reported +20.5%，pro forma +27% | 13.616 亿美元 / 75.4%；同比 +40.6%，环比 +12.7% | 4.440 亿美元 / 24.6%；同比 -16.1%，环比 -7.0% | 39.6% / 20.3% / 15.3% | 1.914 亿美元 | 1.41 美元 | call 中披露 backlog 创纪录，订单延伸到 CY2028，LTA 到 decade-end；数据中心收入 +13% QoQ / +37% YoY，communications +16% QoQ / +60% YoY；AI DC 估算占比 42-52% |
+
+### 2.1 最新财报的关键变化
+
+- **业务重心已经切换**：D&C 从 Q3 FY2025 的 64.7% 提升到 Q3 FY2026 的 75.4%，Industrial 从 35.3% 降到 24.6%。
+- **收入增速在加速**：Q3 FY2026 reported +20.5%，pro forma +27%；Q4 FY2026 指引中点 19.8 亿美元，环比 Q3 +9.7%，同比 Q4 FY2025 +29.5%。
+- **利润率同步改善**：非 GAAP 毛利率 39.6%，经营利润率 20.3%，说明 800G/1.6T/InP 良率改善和定价优化正在覆盖扩产成本。
+- **订单可见度强但未披露金额**：公司披露 backlog 创纪录、orders reach into CY2028、LTAs extend to end of decade，但没有给出 backlog 美元数、book-to-bill 或取消率。
+- **供给瓶颈从需求转向产能**：管理层把 InP 称为公司和行业关键约束；目标在 2026 年底前把内部 InP 输出翻倍，并在 2027 年底前再次超过翻倍。
+
+### 2.2 订单、交期、取消率推断
+
+| 项目 | 当前判断 | 依据 | 投资含义 |
+|---|---|---|---|
+| Backlog | 金额未披露；方向上为历史高位 | Q3 call 明确称 order book step-function increase、record backlog、orders into CY2028 | FY2027 收入可见度很高，但无法用披露 backlog 做精确覆盖率 |
+| Bookings | 未披露；方向上强于收入 | 管理层称 record bookings，且客户 LTA 含 upfront investment 和 minimum demand | 当前不是需求不足，而是产能和交付速度问题 |
+| B2B / book-to-bill | 官方未披露；二级评论曾提到 datacenter book-to-bill 极高，但不作为正式基准 | LTA、capex 前置、NVIDIA capacity rights 与行业 EML/CW 激光器短缺交叉验证 | 乐观情景有基础，基准情景仍用产能约束 |
+| Lead time | 推算 6-12 个月；CPO/OCS/1.6T 客户认证更长 | 从 InP wafer、die、module、qualification 到客户系统集成存在多月滞后 | 新产能不是马上变收入，2026H2-2027 才完全反映 |
+| 取消率 | 基准 5-10%，乐观 <5%，极端乐观 <3%；若 AI capex 停滞可升至 10-20% | LTA 和客户预付款降低取消率；但光模块是周期品，客户库存可快速反转 | 高估值下取消率从低个位数升到双位数就会明显压缩倍数 |
+
+---
+
+## 3. 2026 最新指引、业务收入占比、产品地图与跳过业务
+
+### 3.1 Q4 FY2026 指引
+
+| 指引项 | Q4 FY2026 指引 | 中点 | 读数 |
+|---|---:|---:|---|
+| 收入 | 19.10-20.50 亿美元 | 19.80 亿美元 | 环比 Q3 +9.7%；同比 Q4 FY2025 +29.5% |
+| 非 GAAP 毛利率 | 39.0%-41.0% | 40.0% | 6 英寸 InP、D&C mix、定价优化继续支撑 |
+| 非 GAAP opex | 3.60-3.80 亿美元 | 3.70 亿美元 | R&D 和产能扩张投入增加 |
+| 非 GAAP 税率 | 18%-20% | 19% | 稳定 |
+| 非 GAAP EPS | 1.52-1.72 美元 | 1.62 美元 | 环比 Q3 的 1.41 美元继续增长 |
+
+**收入占比推断。** Q3 D&C 占比 75.4%。若 Q4 收入达到 19.8 亿美元中点，Industrial 假设小幅恢复到 4.5-4.8 亿美元，则 D&C 可能达到 15.0-15.3 亿美元，占比 76-78%；若 Industrial 继续低迷，D&C 占比可接近 80%。因此 2026 年最新业务重点非常明确：D&C 是全部增长、估值和订单的主线。
+
+### 3.2 D&C 产品地图
+
+| 产品/业务 | 对应产品和型号/路线 | 当前收入状态 | 增长与利润判断 |
+|---|---|---|---|
+| 800G pluggable | OSFP/QSFP-DD，DR/FR/LR，EML 或 SiPh 方案，OCS-optimized 400G/800G/1.6T | 已规模收入，2026 仍增长 | 毛利率接近或略高于公司均值；价格会随中国/东南亚产能释放承压 |
+| 1.6T pluggable | 1.6T FRO/TRO/LRO，三家 DSP vendor 互通，EML 与 SiPh 两套方案 | 快速爬坡，管理层称 1.6T 是当前季度 sequential growth 的重要来源 | ASP 高于 800G，早期供不应求，毛利率较好；2027 后看 ASP 降幅 |
+| 3.2T/6.4T 路线 | 400G/lane、400G differential EML、3.2T transceiver、6.4T in development | 2026 以 demo/设计导入为主 | 短期收入有限，但决定 2027-2028 产品代际位置 |
+| InP EML | 100G/200G EML，400G differential EML demo，面向 800G/1.6T/3.2T/6.4T | 已量产；6 英寸产线扩产 | 毛利率和溢价能力高于普通模块装配；约束最强 |
+| InP CW laser / ELS | 高功率 CW DFB laser，400mW CW-DFB，ELSFP/外置光源 | SiPh pluggable 和 CPO 核心光源 | NVIDIA/CPO 订单能见度高，是未来溢价核心 |
+| SiPh PIC / photodetectors | SiPh transceiver、PD、lens array、passive optics | 规模化中，Q3 已有 6 英寸线组件进模块出货 | 内部化降低 BOM 成本，提升 gross margin |
+| GaAs VCSEL / 2D VCSEL array | 200G VCSEL optical link、~3.2Tbps per array，Q4CY2026 qualified and available | 当前收入小，但已有 >4 亿颗/年 VCSEL 设备交付历史 | scale-up/NPO/CPO 的潜在小业务，不能漏 |
+| CPO/NPO | 6.4T socketed CPO、SiPh CPO、multimode socketed CPO、Open CPX/XPO 相关生态 | 2026H2 初始 scale-out CPO revenue；scale-up 预计 2027H2 | 当下收入小，订单和战略价值大；利润率取决于 Coherent 内容量 |
+| OCS | 64x64、320x320 shipped to multiple customers，512x512 in development；OCS-optimized transceivers | Q3 后解除瓶颈，管理层预计 sequential growth | 系统层价值更高，毛利率有机会高于普通模块，但竞争和客户自研不确定 |
+| DCI / ZR / ZR+ / multi-rail | DCI transceivers、ZR/ZR+、transport/transmission、multi-rail optical transport | communications Q3 +60% YoY，multi-rail 预计 2027 初收入 | AI campus scale-across 推动，周期性低于纯 telecom |
+
+### 3.3 跳过或低权重业务
+
+这些业务不是没有价值，但对本报告的 AI 数据中心增量不构成主线：
+
+| 跳过/低权重业务 | 原因 | 当前保留价值 |
+|---|---|---|
+| Industrial 传统工业激光与材料加工 | Q3 FY2026 收入 4.44 亿美元，同比 -16.1%，环比 -7.0%，不是 AI 光互联增长核心 | 提供现金流、制造经验和材料能力 |
+| 传统低速 telecom/FTTx 光模块 | 增速低、价格竞争激烈、与 AI 训练集群直接相关性弱 | 可贡献规模和客户关系 |
+| Aerospace & Defense | 已出售给 Advent，金额 4 亿美元 | 降债和简化业务 |
+| Munich tools/materials processing | 2026-01 已出售；Q3 仅含关闭前 800 万美元收入 | 去低毛利、减复杂度 |
+| 传统 sensing/consumer VCSEL | 不作为 AI DC 主线 | VCSEL 制造能力可迁移到 200G VCSEL array 和 CPO/NPO |
+
+---
+
+## 4. 当前关键产品：收入贡献、增速、AI 重要性、供需和溢价
+
+说明：下表收入贡献为 Q3 FY2026 年化口径的推算，产品之间存在重叠。例如 InP EML/CW laser 既可作为外售器件，也可能内嵌在 Coherent 自有 800G/1.6T 光模块中，不能简单加总。
+
+| 关键产品/业务 | 当前收入贡献推算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 核心证据 |
+|---|---:|---:|---|---|---|---|---|
+| 800G/1.6T AI 数据中心 pluggable 光模块 | 26-34 亿美元年化，约 6.5-8.5 亿美元/季 | +50-90% YoY 推算；1.6T QoQ 很快 | 5/5。scale-out 网络基本件 | 5/5。2026 采购窗口正在发生 | 4/5。InP、光学对准、DSP/thermal 约束 | 3.5/5。整机模块有价格竞争，但垂直整合增强利润 | D&C Q3 13.616 亿美元，数据中心 +13% QoQ/+37% YoY，1.6T 快速爬坡 |
+| InP EML、CW laser、photodiode、6 英寸 InP | 8-14 亿美元年化等效，含内部消耗 | +60-120% YoY 推算 | 5/5。800G/1.6T/CPO 的核心光源和探测器 | 5/5。公司称 InP 是行业和自身约束 | 5/5。TrendForce 指出 EML/CW-LD 紧缺 | 4/5。高技术门槛，但 Lumentum/Broadcom/Sumitomo/Mitsubishi 竞争强 | 6 英寸平台生产 EML/CW/PD；2026 和 2027 连续扩产 |
+| CPO/NPO、ELS、fiber attach unit | 当前收入 <2 亿美元年化，订单价值远高于收入 | 收入基数小，2026H2 起 | 5/5。下一代 scale-up/scale-out 能效路线 | 4/5。NVIDIA 已战略锁产，但规模收入在 2026H2-2027 | 5/5。高功率 CW、ELS、封装和可靠性稀缺 | 4.5/5。若被 NVIDIA/major CSP 采用，内容量和锁定期强 | NVIDIA 20 亿美元投资、多年采购承诺；OFC deck 称已有高容量多年 CPO 订单 |
+| OCS optical circuit switch 与 OCS-optimized transceivers | 2-5 亿美元年化推算 | 高双位数到翻倍，取决于瓶颈解除 | 4/5。降低网络重构成本和功耗，支持 AI cluster scheduling | 4/5。2026-2027 从 pilot 进 production | 4/5。系统级产能曾有瓶颈 | 3.5/5。技术差异化高，但客户自研和替代架构存在 | OFC deck 披露 64x64、320x320 shipping，512x512 in development；call 称产能瓶颈已解除 |
+| DCI / ZR / ZR+ / scale-across / multi-rail | 8-14 亿美元年化推算，含 telecom/AI campus | communications Q3 +16% QoQ/+60% YoY | 4/5。多园区、多机房 AI 训练和推理需要 scale-across | 3.5/5。2027 开始更明显 | 3/5。coherent optics 生态成熟但需求强 | 3/5。Ciena/Cisco/Acacia/Nokia/Marvell 等强竞争 | Coherent OFC deck 提出 $6B DCI transceiver SAM by 2030，multi-rail 2027 revenue |
+| 200G VCSEL / 2D VCSEL array / short-reach scale-up optics | 2-6 亿美元年化等效，AI 部分更小 | 小基数高增 | 4/5。若 NPO/CPO/short-reach scale-up 放量，重要性上升 | 3.5/5。Q4CY2026 qualified and available | 3.5/5。量产历史强但 AI 规格新 | 3.5/5。VCSEL 市场有竞争，但 Coherent 有规模和封装经验 | OFC deck 称 >4 亿颗 VCSEL/年，200G VCSEL link demonstrated，Q4CY2026 available |
+| Thermal / Thermadite / diamond cold plate / thermoelectric | 当前 AI 收入很小，<1 亿美元年化推算 | 2027 后才可能显著 | 3/5。散热瓶颈真实，但与 COHR 光互联主线不同 | 2.5/5。收入窗口 H2 2027 | 3/5。材料优势待客户认证 | 3/5。若 direct bondable diamond 成功有差异化 | OFC deck 提到 $2B thermal SAM by 2030，thermal solutions H2 2027 |
+
+---
+
+## 5. 一年后关键产品三情景预测
+
+时间口径：从 2026-06-11 起向后 12 个月，即大致覆盖 CY2026H2-FY2027H1。收入为公司可确认收入或等效内容量，产品之间可能重叠，不应直接相加。
+
+| 产品/业务 | 当前年化贡献推算 | 基准情景：一年后 | 乐观情景：一年后 | 极度乐观情景：一年后 | 关键触发器 |
+|---|---:|---|---|---|---|
+| 800G/1.6T AI pluggable 光模块 | 26-34 亿美元 | 36-45 亿美元，+35-55%；AI 重要性 5/5，供需 4/5，溢价 3.5/5 | 48-58 亿美元，+70-95%；1.6T 大规模替换 800G，供需 4.5/5 | 62-75 亿美元，+110% 以上；客户再次上调 1.6T 采购，供需 5/5 | 1.6T 量产良率、DSP/SiPh/EML 供应、hyperscaler capex |
+| InP EML/CW/PD 和 6 英寸 InP | 8-14 亿美元等效 | 14-20 亿美元，+45-75%；供需 5/5 | 22-30 亿美元，+90-140%；6 英寸 Texas/Sweden 放量 | 32-42 亿美元，+170% 以上；Zurich 提前贡献、客户预付款锁产 | 6 英寸良率、设备交付、epi/packaging、CPO laser demand |
+| CPO/NPO/ELS/FAU | <2 亿美元 | 3-7 亿美元；scale-out CPO H2CY2026 开始贡献 | 8-15 亿美元；NVIDIA + 1-2 个 CSP 量产导入 | 18-28 亿美元；CPO 从试点转为多个 GPU/交换机平台标配 | NVIDIA 供货节奏、Open CPX/XPO 标准、switch/GPU package 生态 |
+| OCS 与 OCS-optimized transceivers | 2-5 亿美元 | 5-9 亿美元；产能瓶颈解除后持续转 backlog | 10-16 亿美元；多客户 320x320 量产，512x512 设计导入 | 18-26 亿美元；OCS 成为 AI 训练集群调度基础件 | OCS 系统可靠性、控制软件、客户网络架构接受度 |
+| DCI/ZR/ZR+/scale-across/multi-rail | 8-14 亿美元 | 11-17 亿美元，+20-35% | 17-25 亿美元，+50-80%；multi-rail 初始收入放量 | 26-36 亿美元；多园区训练网络急速扩建 | AI campus 分布式训练、coherent DSP、metro fiber、power cap |
+| 200G VCSEL/2D VCSEL/short-reach scale-up optics | 2-6 亿美元等效 | 4-8 亿美元；Q4CY2026 认证后小规模收入 | 8-14 亿美元；NPO/CPO scale-up 方案采用 | 15-25 亿美元；short-reach optics 替代部分铜连接 | 200G VCSEL qualification、package thermal、客户架构 |
+
+**一年后公司整体增速推断。**
+
+- **基准**：FY2027 收入增长 28-38%，D&C 增长 40-55%，Industrial 持平到低个位数恢复。公司整体收入可从 FY2026 约 70-72 亿美元附近走向 90-100 亿美元。
+- **乐观**：FY2027 收入增长 45-60%，D&C 增长 65-85%，1.6T、OCS、CPO 同步贡献。公司收入 105-115 亿美元。
+- **极度乐观**：FY2027 收入增长 70%+，D&C 翻倍或接近翻倍，CPO 和 OCS 提前成为十亿美元级别收入。公司收入 120-135 亿美元。这个情景需要客户继续上调 capex、InP 连续扩产无明显良率问题、且行业 ASP 未快速崩塌。
+
+---
+
+## 6. BOM、单位内容量、价格传导、当前产能与认证
+
+### 6.1 AI 光互联价格传导链
+
+**客户 capex - 系统 OEM/网络设备 - 光模块/光引擎 - 光器件 - 化合物半导体晶圆。**
+
+典型传导如下：
+
+1. NVIDIA、Google、Meta、Microsoft、Amazon 等确定 GPU/ASIC 集群规模和网络架构。
+2. 系统商和交换机生态确定 800G/1.6T、InfiniBand/Ethernet、OCS、CPO/NPO、DCI 方案。
+3. 光模块厂和器件厂签 LTA，锁 EML、CW laser、DSP、SiPh、PD、FAU、connector、assembly/test 产能。
+4. 上游 InP/GaAs/SiPh/optical alignment 成为瓶颈，价格和预付款向上游传导。
+5. 若供应紧张，Coherent 可通过更高 ASP、客户预付款、capacity rights 和更低单位成本实现毛利率提升；若供应过剩，模块 ASP 会先下降，器件毛利率随后承压。
+
+### 6.2 关键产品 BOM 和单位内容量
+
+以下为真实工程结构的投资估算，不是公司披露的 BOM。AI 网络拓扑差异很大，per GPU/per rack/per MW 只能给区间。
+
+| 产品 | BOM 核心构成 | Coherent 可供内容 | 每 optical port 内容量 | 每 GPU 内容量 | 每 rack 内容量 | 每 MW 内容量 | 当前产能/认证状态 |
+|---|---|---|---:|---:|---:|---:|---|
+| 800G pluggable | DSP/retimer、driver/TIA、EML 或 CW+SiPh、PD、PIC、lens、isolator、PCB、housing、thermal、test | 若供整模块为 700-1100 美元/port；若供器件为 100-300 美元/port | 700-1100 美元模块 ASP；Coherent 器件/模块加权 150-700 美元 | 80-350 美元/GPU | 1万-12万美元/rack | 7万-120万美元/MW | 已规模量产；OCS-optimized 版本已展示/供货 |
+| 1.6T pluggable | 更高阶 DSP 或 LPO/TRO/LRO、200G/lane EML/SiPh、PD、thermal、high-speed connector、光学对准 | 整模块 1400-2400 美元/port；器件 250-700 美元/port | 1400-2400 美元模块 ASP；Coherent 加权 250-1600 美元 | 150-800 美元/GPU | 2万-25万美元/rack | 15万-250万美元/MW | 1.6T FRO/TRO/LRO、三家 DSP vendor 互通；2026 快速爬坡 |
+| InP EML/CW/PD | InP epi wafer、lithography、die、facet coating、package、test、burn-in | EML、CW laser、photodiode、400mW CW-DFB、400G differential EML | 100G/200G lane 下每 port 需要多颗；价值 50-700 美元/port 视结构 | 50-300 美元/GPU | 5000-8万美元/rack | 3万-80万美元/MW | Texas/Sweden 6 英寸 ramp，Zurich 加入；6 英寸良率高于 3 英寸 |
+| CPO/NPO/ELS | switch/GPU package、optical engine、ELS、FAU、microlens array、PM fiber、isolator、TEC、fiber attach | 高功率 CW laser、ELS module、FAU、microlens、PM fiber、TEC、部分 optical engine | 300-1200 美元/1.6T 等效 port，随 CPO 内容量变化 | 100-1000 美元/GPU，scale-up 若转光学则上限更高 | 3万-40万美元/rack | 20万-400万美元/MW | NVIDIA 多年协议；scale-out CPO 2026H2 初始收入，scale-up 2027H2 |
+| OCS | MEMS/光开关矩阵、collimator、mirror、fiber management、control electronics、software、loss budget | OCS system、OCS-optimized transceivers、光学组件 | OCS 本体不是按 port 简单折算；每端口数百到数千美元系统价值 | 50-500 美元/GPU | 1万-20万美元/rack | 10万-200万美元/MW | 64x64、320x320 向多个客户出货；512x512 开发中 |
+| DCI/ZR/ZR+ / multi-rail | tunable laser、IQ modulator、coherent DSP、dual high-speed PD、SOA、SiPh/InP PIC、module/system | tunable laser、IC-TROSA、IQ modulator、PD、模块/transport | 400G/800G coherent port ASP 较高，Coherent 内容 300-2000 美元/port | 与 GPU 非线性相关，按跨园区带宽折算 | 取决于 DCI spine/metro | 取决于 campus 光纤距离 | ZR/ZR+ 已有需求，multi-rail 预计 2027 收入 |
+| 200G VCSEL/2D VCSEL | GaAs VCSEL array、driver、PD、lens、短距封装、thermal | VCSEL die/array、package、短距光引擎 | 50-400 美元/port，若进入 CPO/NPO 内容上升 | 30-300 美元/GPU | 5000-10万美元/rack | 3万-100万美元/MW | 200G VCSEL link 已展示，Q4CY2026 qualified and available |
+
+### 6.3 当前产能能力（美元计）和供应链采纳
+
+| 产品 | 当前收入可转化产能推算 | 采纳程度 | 认证/设计阶段 | 主要瓶颈 |
+|---|---:|---|---|---|
+| 800G/1.6T pluggable | 2026 当前年化 30-40 亿美元级 AI module/engine 能力，Q4 后继续提高 | 高。800G 已主流，1.6T broad customer adoption | 800G 量产；1.6T ramp；3.2T/6.4T demo/development | InP、SiPh 良率、DSP 供应、光学对准、热 |
+| InP EML/CW/PD | 当前年化等效 10-15 亿美元；随 6 英寸扩产上行 | 很高。内部模块和客户外部需求共同拉动 | 6 英寸 EML/CW/PD 已进生产；Zurich 2027 | InP equipment、epi、packaging、burn-in |
+| CPO/NPO/ELS | 当前收入产能 <3 亿美元，但订单/客户承诺显著高于收入 | 中高。NVIDIA 已锁定，其他客户 engagement | scale-out 2026H2，scale-up 2027H2；Open CPX/XPO 生态推进 | 客户架构、可靠性、package integration |
+| OCS | 当前年化 2-5 亿美元推算 | 中高。多个客户出货，但仍在爬坡 | 64x64/320x320 shipping，512x512 development | 产能、软件集成、网络架构采用 |
+| DCI/ZR/ZR+/multi-rail | 年化 8-14 亿美元推算 | 高。communications Q3 快速增长 | ZR/ZR+ 成熟，multi-rail 2027 初收入 | coherent DSP、客户 capex、metro fiber |
+| 200G VCSEL/2D VCSEL | 年化 2-6 亿美元等效，AI 专用部分小 | 中。产品刚进入 AI scale-up 认证窗口 | Q4CY2026 available | 客户架构、热、packaging、竞争方案 |
+
+---
+
+## 7. 一年后产能、采纳和认证阶段三情景
+
+| 产品 | 基准：一年后产能/采纳/认证 | 乐观：一年后产能/采纳/认证 | 极度乐观：一年后产能/采纳/认证 |
+|---|---|---|---|
+| 800G/1.6T pluggable | 产能 45-55 亿美元；800G 继续增长，1.6T 成为新增主力；主要 tier-1 客户量产 | 产能 60-75 亿美元；1.6T 在 NVIDIA 及多家 CSP 成为标准采购；3.2T 进入 early qualification | 产能 80 亿美元+；1.6T 超预期，3.2T 提前订单；客户库存仍低 |
+| InP EML/CW/PD | 产能等效 20-25 亿美元；2026 年底翻倍目标兑现，2027 再扩 | 产能 30-40 亿美元；Texas/Sweden 高良率，Zurich 初期贡献 | 产能 45 亿美元+；四站点协同，客户预付款锁多数新产能 |
+| CPO/NPO/ELS | 产能 5-10 亿美元；scale-out CPO 收入化，scale-up 仍认证 | 产能 12-20 亿美元；NVIDIA 项目和另一家 CSP 进入量产，Open CPX/XPO 标准推进 | 产能 25 亿美元+；CPO 成为下一代交换机/GPU package 的默认方案之一 |
+| OCS | 产能 7-12 亿美元；320x320 多客户出货，512x512 样机/认证 | 产能 15-25 亿美元；OCS 被多家 hyperscaler 纳入大规模 AI fabric | 产能 30 亿美元+；OCS 和 OCS-optimized optics 成为训练集群核心网络层 |
+| DCI/ZR/ZR+/multi-rail | 产能 12-18 亿美元；multi-rail 初始收入；ZR/ZR+ 继续强 | 产能 20-30 亿美元；AI campus scale-across 需求明显爆发 | 产能 35 亿美元+；多园区分布式训练成为重要架构 |
+| 200G VCSEL/2D VCSEL | 产能 5-10 亿美元；Q4CY2026 后小规模量产 | 产能 12-18 亿美元；进入 1-2 个 scale-up/NPO 平台 | 产能 20 亿美元+；短距光互联显著替代铜 |
+
+---
+
+## 8. Backlog 和供给约束推导未来一年业务增速
+
+### 8.1 订单积压和供给信息的交叉验证
+
+| 证据 | 强度 | 对未来一年收入的含义 |
+|---|---|---|
+| 管理层称 Q3 order book step-function increase，record backlog，orders into CY2028 | 高 | backlog 覆盖明显超过未来 2-4 个季度，但金额未披露 |
+| LTAs 到 decade-end，含 upfront customer investment、minimum demand commitments、capacity support | 高 | 取消率低于普通 spot 订单，capex 有客户共同承担 |
+| NVIDIA 20 亿美元投资 + multibillion-dollar purchase commitment + future capacity rights | 高 | CPO/advanced lasers 2027+ 能见度大幅提高 |
+| InP 产能成为行业和公司瓶颈，Coherent 计划 2026/2027 连续扩产 | 高 | 收入上限由 demand 转为 capacity；若良率好，收入可快速释放 |
+| TrendForce 指出 2026 AI 光模块市场 165 亿美元到 260 亿美元，+57%+，EML/CW laser 是主要瓶颈 | 高 | 外部市场足以吸收 Coherent 扩产，至少 2026H2 供需偏紧 |
+| LightCounting 等机构提示 2026 增长强但可能受 XPU/switch ASIC 约束，且需防库存 | 中 | 2027 不能线性外推，需看终端 GPU 和交换芯片供应 |
+| 中国和东南亚供应链快速扩产，800G/1.6T 模块装配竞争加剧 | 高 | 普通模块 ASP 会降，Coherent 必须靠上游器件、CPO/OCS 和垂直栈保毛利 |
+
+### 8.2 未来一年公司收入增速情景
+
+| 情景 | 订单假设 | 供给假设 | 取消率 | 未来一年收入增速 | D&C 增速 | 毛利率方向 | 触发条件 |
+|---|---|---|---:|---:|---:|---|---|
+| 基准 | backlog 高，客户 LTA 覆盖多数新增产能；1.6T 和 OCS 正常爬坡 | InP 2026 年底翻倍；6 英寸良率稳定；CPO 初始收入 | 5-10% | +28-38% | +40-55% | 非 GAAP GM 39-41% 稳中升 | Q4 指引兑现，FY2027 增速高于 FY2026 |
+| 乐观 | 客户继续上调 1.6T/OCS/CPO 需求，NVIDIA 之外新增 CSP 大单 | InP 提前放量，CPO/OCS 产能瓶颈解除 | <5% | +45-60% | +65-85% | 非 GAAP GM 41-43% | 1.6T ASP 降幅有限，CPO 2026H2 收入显著 |
+| 极度乐观 | 订单延伸到 2028 且转化速度高，AI capex 再上修 | InP 两年约 4x 路径接近无阻，Zurich 提前贡献 | <3% | +70% 以上 | +90-120% | 非 GAAP GM 43%+ | CPO/OCS/multi-rail 同步变成十亿美元级增长引擎 |
+| 风险情景 | 客户库存上升，部分 1.6T/CPO 项目延期 | 产能扩出但需求交付延后 | 10-20% | 0-15% | 5-25% | GM 下行到 36-38% | ASP 连续两个季度 >10% 下跌，1.6T 出货低于行业预期 |
+
+### 8.3 对 backlog 金额的粗推
+
+公司未披露 backlog 金额，因此只能用收入 run-rate 和订单可见度反推：
+
+- Q3 FY2026 D&C 年化 run-rate 约 54.5 亿美元；Q4 若 D&C 达 15.0-15.5 亿美元，则 D&C 年化 run-rate 接近 60-62 亿美元。
+- 若“orders into CY2028”不是小量 tail order，而是主要客户 LTA，则未来 6-8 个季度 D&C 订单覆盖可能至少为 1.0-1.5 倍未来 12 个月 D&C 收入，即 70-100 亿美元级 order visibility。
+- 其中已可转化为正式 backlog 的金额未披露，不能等同于会计 backlog；客户 capacity rights、采购承诺和预付款降低取消率，但仍受 GPU/ASIC 交付、交换芯片、数据中心电力和客户库存影响。
+
+---
+
+## 9. 竞争格局、主流性、替代方案和切换成本
+
+### 9.1 竞争格局
+
+| 产品/层级 | 主要竞争对手 | Coherent 优势 | Coherent 劣势/风险 |
+|---|---|---|---|
+| 800G/1.6T pluggable modules | Innolight、Eoptolink、AOI、Hisense、Source Photonics、Fabrinet 代工生态、部分 Lumentum/Accelink | 美国供应链属性、垂直整合、InP/SiPh/PD/模块一体、NVIDIA 关系 | 中国模块厂成本强，标准化模块长期 ASP 下跌 |
+| InP EML | Lumentum、Broadcom、Mitsubishi Electric、Sumitomo | Coherent 自称 100G/200G EML 市场领导者，400G differential EML demo，6 英寸 InP | TrendForce 的 EML top-3 capacity 口径更偏 Lumentum/Broadcom/Mitsubishi，不能假设垄断 |
+| CW-DFB / ELS | Broadcom、Sumitomo、Lumentum、LandMark/LuxNet、部分台湾/中国供应商 | Coherent 是 CW-DFB 重要玩家，6 英寸 InP、400mW CW-DFB、NVIDIA CPO 订单 | Broadcom/Sumitomo 产能强，NVIDIA 采取多供应商策略 |
+| SiPh/CPO optical engine | Broadcom、Marvell、Lumentum、Intel/TSMC/OSAT 生态、Molex/Samtec/SENKO、云厂自研 | 从 laser/ELS/FAU/PIC/PD 到模块的宽栈，NVIDIA 订单增强可见度 | CPO 标准和架构未定，若 pluggable/LPO 延寿，CPO 放量延后 |
+| OCS | 客户自研、Calient、Glimmerglass、网络设备商方案、电子交换替代 | Coherent 已出货 64x64/320x320，512x512 开发，OCS-optimized optics 联动 | OCS 需要网络软件和调度生态，客户替换/自研风险高 |
+| DCI/ZR/ZR+ | Ciena、Cisco/Acacia、Nokia/Infinera、Marvell DSP 生态、Lumentum/NeoPhotonics | tunable laser、IC-TROSA、PD、模块/系统能力，scale-across 需求增加 | coherent optics 竞争成熟，系统商议价强 |
+| VCSEL/short-reach | Lumentum、Broadcom、Sony/ams-OSRAM/Trumpf 等 | >4 亿颗/年 VCSEL 交付历史，200G VCSEL array 进入 AI scale-up | short-reach AI 架构尚未确定，铜/线缆/NVLink 仍强 |
+
+### 9.2 新技术是否会成为主流
+
+| 技术 | 是否主流 | 判断 |
+|---|---|---|
+| 800G pluggable | 已经主流 | 2025-2026 AI scale-out 主力，仍会增长，但 ASP 压力逐步显性化 |
+| 1.6T pluggable | 高概率成为 2026-2027 主流新增 | TrendForce 和 Cignal 口径都显示 1.6T 进入量产窗口；Coherent 管理层称 1.6T 快速爬坡 |
+| 3.2T/400G per lane | 高概率成为 2027+ 主流路线之一 | 400G/lane demo、400G differential EML 是下一代端口密度和功耗方向 |
+| CPO/NPO | 长期概率高，短期节奏不确定 | AI scale-up 和高 radix switch 需要能效提升；但 pluggable/LPO/TRO 仍可能延寿，CPO 认证周期长 |
+| OCS | 在部分 hyperscaler 中概率高，不一定全行业统一 | 对训练集群重构和降低无效流量有价值，但需要客户网络软件配合 |
+| DCI/ZR+/multi-rail | 高概率增长 | AI campus 跨园区扩展和电力约束推动 scale-across，但竞争成熟 |
+| 200G VCSEL/2D VCSEL | 有潜力但路径依赖架构 | 如果 NPO/CPO short-reach scale-up 采用，价值很大；若铜/NVLink/linear pluggable 足够，节奏会慢 |
+
+### 9.3 替代方案和客户切换成本
+
+| 产品 | 替代方案 | 客户切换成本 | 风险 |
+|---|---|---|---|
+| 800G/1.6T module | Innolight/Eoptolink/AOI/Lumentum 等其他模块，LPO/LRO/TRO 不同方案 | 中。标准化端口可多源，但高速质量、可靠性、供货和认证需要时间 | ASP 下跌和多供应商压价 |
+| InP EML/CW | Lumentum/Broadcom/Sumitomo/Mitsubishi 等 | 高。客户需要重新认证器件、光学链路、thermal 和可靠性 | 多源策略会削弱单家溢价 |
+| CPO/ELS | Lumentum/Broadcom/自研 ELS，或继续用 pluggable | 高。进入 package/board/system 设计后切换慢 | CPO 延迟或标准分裂 |
+| OCS | 电子交换扩容、传统 Clos fabric、客户自研 OCS | 中高。涉及网络软件、拓扑和运维 | 价值证明慢，客户自研 |
+| DCI/ZR+ | Ciena/Cisco/Acacia/Nokia/Infinera 等系统和模块 | 中。coherent optics 标准化较高，但性能/功耗/系统兼容要认证 | 系统商议价和 DSP 生态 |
+| VCSEL scale-up | 铜缆、AEC、NVLink、硅光短距、CPO 其他光源 | 中高。封装和主板设计绑定 | 技术路线选择不确定 |
+
+---
+
+## 10. 监控指标和反证
+
+**必须每季监控的硬指标：**
+
+1. **D&C 收入占比和增速**：若 D&C 连续两个季度低于 +25% YoY，AI 光互联主线弱化。
+2. **非 GAAP 毛利率**：若 6 英寸 InP 放量但 GM 不能稳定在 39-41% 或继续提升，说明 ASP/良率/产品 mix 有压力。
+3. **库存周转**：存货已升至 21.27 亿美元。若库存继续快于收入增长，需警惕客户库存和 ASP 周期。
+4. **InP 扩产节点**：2026 年底翻倍、2027 再翻倍是否兑现；Zurich 站点是否按 2027 初贡献。
+5. **1.6T 收入披露或侧面验证**：若 1.6T 行业出货低于 500 万颗，或 Coherent 管理层停止强调 1.6T 快速爬坡，基准情景需要下修。
+6. **CPO 首批收入**：公司称 scale-out CPO revenue 2026H2 开始，scale-up 2027H2。若 2026H2 无收入或无客户验证，CPO 期权要折价。
+7. **OCS 量产客户数**：64x64/320x320 shipping 是否转成可持续收入，512x512 是否进入客户验证。
+8. **ASP 指标**：800G/1.6T ASP 若连续两个季度环比跌幅 >10%，且毛利率不升，说明供需拐点提前。
+9. **NVIDIA 采购节奏**：NVIDIA 20 亿美元投资不是收入确认，关键看采购承诺转化、capacity rights 使用和 CPO 产品进度。
+10. **行业供给**：中国/台湾/东南亚 1.6T 模块扩产速度。模块装配环节若供给快速过剩，Coherent 必须靠 InP/CPO/OCS 保溢价。
+
+**反证情景。**
+
+- AI 数据中心光模块市场从 2026 的高增长快速降到低双位数，客户库存上升。
+- InP/CW/EML 不再短缺，主要客户不再签预付款或 LTA。
+- CPO 被推迟到 2028+，NPO/Open CPX/XPO 标准分裂。
+- pluggable LPO/LRO/TRO 延续足够久，使 CPO 价值捕获显著后移。
+- COHR 的 capex 和库存继续上升，但收入未加速，导致经营现金流恶化。
+
+---
+
+## 11. 来源与本地产业资料
+
+### 公司官方与财务资料
+
+- Coherent, `Coherent Corp. Reports Third Quarter Fiscal 2026 Results`, 2026-05-06: https://www.coherent.com/news/press-releases/third-quarter-fiscal-year-2026-results
+- Coherent, `Earnings Release FY26 Q3 PDF`, 2026-05-06: https://www.coherent.com/content/dam/coherent/site/en/documents/investors/financial-releases/2026/may-6/earnings-release-fy26-q3.pdf
+- Coherent, `Third Quarter Fiscal 2026 Investor Presentation`, 2026-05-06: https://www.coherent.com/content/dam/coherent/site/en/documents/investors/investor-presentations/2026/may-6/investor-presentation-20260506.pdf
+- Coherent, `OFC 2026 Investor Event Deck`, 2026-03-17: https://www.coherent.com/content/dam/coherent/site/en/documents/investors/investor-presentations/2026/march-17/OFC-2026-Investor%20event-deck-vf.pdf
+- Coherent, `FY2025 Annual Report`: https://www.coherent.com/content/dam/coherent/site/en/documents/investors/annual-filings/2025/coherent-annual-report-2025.pdf
+- Coherent, `Q2 FY2026 Earnings Release`: https://www.coherent.com/content/dam/coherent/site/en/documents/investors/financial-releases/2026/february-4/earnings-release-fy26-q2.pdf
+- Coherent, `Q1 FY2026 Results`: https://www.coherent.com/news/press-releases/first-quarter-fiscal-year-2026-results
+- Coherent, `Q4 and FY2025 Results`: https://www.coherent.com/news/press-releases/fourth-quarter-and-fiscal-year-2025-results
+- Coherent, `NVIDIA and Coherent Announce Strategic Partnership`, 2026-03-02: https://www.coherent.com/news/press-releases/nvidia-and-coherent-announce-strategic-partnership
+- Coherent, `II-VI completes acquisition of Coherent`, 2022-07-01: https://www.coherent.com/news/press-releases/ii-vi-completes-acquisition-of-coherent
+- Coherent, `II-VI changes name to Coherent`, 2022-09-08: https://www.coherent.com/news/press-releases/ii-vi-changes-name-to-coherent-and-launches-new-brand
+- Coherent, `Jim Anderson CEO appointment`, 2024-06-03: https://www.coherent.com/news/press-releases/coherent-appoints-jim-anderson-as-chief-executive-officer
+- Coherent, `Aerospace and Defense sale to Advent`, 2025-08-13: https://www.coherent.com/news/press-releases/coherent-announces-agreement-to-sell-aerospace-and-defense-business-to-advent
+- Motley Fool/Yahoo transcript mirror, `COHR Q3 FY2026 earnings call transcript`, 2026-05-06: https://www.fool.com/earnings/call-transcripts/2026/05/06/coherent-cohr-q3-2026-earnings-transcript/
+
+### 产品、会议与行业资料
+
+- Coherent, `AI-scale optical innovations at OFC 2026`: https://www.coherent.com/news/press-releases/coherent-ai-scale-optical-innovations-ofc-2026
+- Coherent, `Next-generation pluggable transceiver technologies at OFC 2026`: https://www.coherent.com/news/press-releases/coherent-demonstrates-next-gen-pluggable-transceiver-ofc-2026
+- Coherent, `CPO technologies at OFC 2026`: https://www.coherent.com/news/press-releases/coherent-co-packaged-optics-cpo-technologies-ofc-2026
+- Coherent, `OFC 2026 event page`: https://www.coherent.com/events/ofc
+- TrendForce, `Global AI Optical Transceiver Market to Reach US$26 Billion in 2026`, 2026-04-20: https://www.trendforce.com/presscenter/news/20260420-13017.html
+- TrendForce, `AI Optical Interconnect Boom Drives U.S. Firms to Expand Southeast Asia Outsourcing`, 2026-05-05: https://www.trendforce.com/presscenter/news/20260505-13031.html
+- Semiconductor Today / TrendForce, `EML and CW-DFB laser monthly capacity to 50.7 million in 2026`, 2026-06-04: https://www.semiconductor-today.com/news_items/2026/jun/trendforce-040626.shtml
+- Cignal AI, `Optical Component Revenue Reaches Nearly $25B in 2025`, 2026-01: https://cignal.ai/2026/01/optical-component-revenue-reaches-nearly-25b-in-2025/
+- LightCounting, `March 2026 Ethernet Optics`: https://www.lightcounting.com/newsletter/en/march-2026-ethernet-optics-382
+- LightCounting, `Demand for optical connectivity continues to surprise`, 2026-04: https://www.lightcounting.com/newsletter/en/april-2026-market-forecast-379
+- NVIDIA, `Silicon Photonics`: https://www.nvidia.com/en-in/networking/products/silicon-photonics/
+- NVIDIA Investor Relations, `NVIDIA and Coherent Strategic Partnership`, 2026-03-02: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Coherent-Announce-Strategic-Partnership-to-Develop-Optics-Technology-to-Scale-Next-Generation-Data-Center-Architecture/default.aspx
+- Arista, `XPO high density liquid cooled pluggable optics`, 2026: https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Announces-XPO-High-Density-Liquid-Cooled-Pluggable-Optics/default.aspx
+- Dell'Oro, `AI back-end switch market will push past $100B by 2030`: https://www.delloro.com/news/ai-back-end-switch-market-will-push-past-100-billion-by-2030/
+
+### 本地行业调研资料
+
+- `行业调研\AI网络_光互联_铜互联\行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `行业调研\AI网络_光互联_铜互联\行业调研_激光器、EML与光器件_2026-06-11.md`
+- `行业调研\AI网络_光互联_铜互联\行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`
+- `行业调研\AI网络_光互联_铜互联\行业调研_OCI（光学计算互连）／Open CPX／XPO_2026-06-11.md`
+- `行业调研\产业背景\AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- `行业调研\产业背景\顶级会议信息\ofc_2026_conference_update.md`

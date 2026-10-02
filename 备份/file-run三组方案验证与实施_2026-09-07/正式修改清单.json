@@ -1,0 +1,172 @@
+[
+  {
+    "path": "基本面/行业调研/研究方法/产业背景：AI产业链全局图谱与口径字典.md",
+    "operation": "update",
+    "sha256": "ec881ccd69c3cd874fa1f1807f533452ec879971c290a382379bbd551ea233a7"
+  },
+  {
+    "path": "基本面/行业调研/研究方法/产业背景：AI产业链瓶颈与反证指标总表.md",
+    "operation": "update",
+    "sha256": "643a8bbb81be2b06c694ac1fff4da2064da9db57572b17e9850b22fd3934d2a4"
+  },
+  {
+    "path": "基本面/行业调研/研究方法/产业背景：全球AI需求与Token经济框架.md",
+    "operation": "update",
+    "sha256": "5327967d9e264cd39c3b71c3cf91dca63e48b98fb648aca4f6275755b1ce0231"
+  },
+  {
+    "path": "基本面/行业调研/研究方法/产业背景：头部AI芯片.md",
+    "operation": "update",
+    "sha256": "a1ba70caab852fc90cc3a8b19412952ccd45581a64d12f363f174920d3d578b5"
+  },
+  {
+    "path": "基本面/行业调研/研究方法/产业背景：数据中心建设规模.md",
+    "operation": "update",
+    "sha256": "c9ab2d299dee93b6fb6bea89e080c8143f91b45b8779a5ee9642f00c109d6f2e"
+  },
+  {
+    "path": "基本面/行业调研/研究方法/会议调研方案.md",
+    "operation": "update",
+    "sha256": "72414ed9c8c200774ab60933fc774ad60c6fdef04c11689e46ca109114a839a4"
+  },
+  {
+    "path": "分析报告/公司排序/AGENTS.md",
+    "operation": "update",
+    "sha256": "92c8a3f5903015478c66670f1a00e61b443fa2b14e557a259f2a9bb0877a74a0"
+  },
+  {
+    "path": "分析报告/公司排序/00_总索引.md",
+    "operation": "update",
+    "sha256": "f31a0c7533b9bf78b2038a7b4143bcb602f6d6c0c72fb8de0f69be3ee7028d9e"
+  },
+  {
+    "path": "分析报告/公司排序/91_通用研究方案/README.md",
+    "operation": "update",
+    "sha256": "dcf20a1ab0936a4fb9450100b8e15d43f7233f264e76c5a2e2a459de67da7e20"
+  },
+  {
+    "path": "分析报告/公司排序/01_暂时有效_核心/01_风险调整赔率_十二句话S03_原11/迭代版本/R11_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "45a34fd2bafb1c7835d1cd84bef9b2a5d5b4a324ac22e6e489596c26a066ad4e"
+  },
+  {
+    "path": "分析报告/公司排序/01_暂时有效_核心/02_预期兑现概率_十二句话S02_原10/迭代版本/R11_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "762aaba715d9c3374c722f2f4f1261f41558185c946e26d0b95a64d386872166"
+  },
+  {
+    "path": "分析报告/公司排序/01_暂时有效_核心/03_反证惩罚_压力防守_原16/迭代版本/R04_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "411cbca7298ba339c0613f773b98309c2ce6d77f4491b91a3fffdad397b17aa2"
+  },
+  {
+    "path": "分析报告/公司排序/02_暂时有效_辅助/04_极简基准兑现_迭代实验_原06/迭代版本/R24_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "b6992adeb396caaa77469b3852d9cf1c8a80ba49c1ac5aff84ad58b2c463170e"
+  },
+  {
+    "path": "分析报告/公司排序/02_暂时有效_辅助/05_反证惩罚优先_原09/迭代版本/R11_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "20389c29f735c98ff4ceddb767f0275a1dcf4cf08314d75aed4cb8231d541c4f"
+  },
+  {
+    "path": "分析报告/公司排序/02_暂时有效_辅助/06_双源三视图_原01/迭代版本/R04_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "c01354c3a59e5f5efdb19cac5e855c2435cf9726a56c6aeac0b3722081a9c02e"
+  },
+  {
+    "path": "分析报告/公司排序/02_暂时有效_辅助/07_未来收入台阶_原07/迭代版本/R04_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "d2f61b28199f005f4a0ec470443b3cf2aac158fa4313dce56bec565a60a7af4d"
+  },
+  {
+    "path": "分析报告/公司排序/02_暂时有效_辅助/08_信息质量门控_原13/迭代版本/R10_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "12f03b7de41ea3421af04e781a956eb42f1cfc9a5a5928d1f63c8820fd020c1c"
+  },
+  {
+    "path": "分析报告/公司排序/03_观察_待更新/09_弹性成长_原02/迭代版本/R10_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "656e9508983d8cf652802ad564c05c950c25a15da89c5ddceb6b00b32bf18a3a"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N01_基准兑现与估值承载/迭代版本/R03_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "c31d923f40f1fdad41269ad3fd59c92151994b72d4564e10cba51b96207de019"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N02_反证闭环与尾部生存/迭代版本/R03_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "1209432df7b5db06952e3a81ca0f8cd07910259a462571eae041c43b2e82c764"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N03_预期差增量与证据升级/迭代版本/R03_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "0ad3c90df2e0cd2e452e9d148077df6b1ff471e0902ca2a090c6d4fd1f97bd7d"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N04_收入台阶与现金转化/迭代版本/R03_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "b94cdcf43748a35267df63111ba0a5dec12d7844e2a1eb6fb04e798a35200024"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N05_市场状态自适应双阶段/迭代版本/R03_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "b5408faf27cf6827b70c89cfd495c43f568dde43048f61259e525249ec0092a1"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N06_超高增长与多倍价值/迭代版本/R03_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "operation": "create",
+    "sha256": "548f73a2d6f9a3e60790d781401729883ec13930cd9c7dfeaeb4b7c4731bfb79"
+  },
+  {
+    "path": "基本面/行业调研/研究方法/会议/版本/2026-09-07/DAC_研究方案.md",
+    "operation": "create",
+    "sha256": "5a6054da78200e6aa6e06a63a43a80fffb03703639c5ac7fc1a54b06ec09b411"
+  },
+  {
+    "path": "基本面/行业调研/研究方法/会议/版本/2026-09-07/FMS_研究方案.md",
+    "operation": "create",
+    "sha256": "2c32e98247b573c56ceafc6c4944971b53a4e601bf9b839269fefd646bef24fd"
+  },
+  {
+    "path": "基本面/行业调研/研究方法/会议/版本/2026-09-07/RSS_研究方案.md",
+    "operation": "create",
+    "sha256": "b7af3b357f7f6542c4b840926b5732901e0a9b069414414844d1dbfe37fba7b4"
+  },
+  {
+    "path": "基本面/行业调研/研究方法/会议/版本/2026-09-07/Farnborough_研究方案.md",
+    "operation": "create",
+    "sha256": "255cfdae2152470c22132c08309116bf416cf660b7ac65669cc8a12d5d19c9b6"
+  },
+  {
+    "path": "分析报告/公司排序/00_待运行研究方案注册表.csv",
+    "operation": "create",
+    "sha256": "963fa4e3fcaee225ec2c4b75c5d9fada9ba41aae6eb7526a22c0e0483fd0e2d2"
+  },
+  {
+    "path": "分析报告/公司排序/91_通用研究方案/2026-09-07_新方案使用说明.md",
+    "operation": "create",
+    "sha256": "fc5759f3c53de6a384b90e498ac93d21ecc1fb362a94a246cfbd196040f2d510"
+  },
+  {
+    "path": "基本面/行业调研/研究方法/00_背景与会议研究入口.md",
+    "operation": "create",
+    "sha256": "45fea81b19477bc97b176fe6b23cbb56e6f4c8e80517643d5a26b277dd9bbe8f"
+  },
+  {
+    "path": "基本面/行业调研/研究方法/会议/README.md",
+    "operation": "create",
+    "sha256": "9d92f3c1d2e537cae9ce0fdb333a9d24642693291f6449c66e4c51fcad805e11"
+  },
+  {
+    "path": "基本面/行业调研/研究方法/会议/00_会议方案注册表.json",
+    "operation": "create",
+    "sha256": "e08712fb2640b7f5ae526bb4b9a15069b20901d7374eaabcda1bd99781c0354b"
+  },
+  {
+    "path": "基本面/行业调研/研究方法/会议/版本/2026-09-07/会议通用研究方案.md",
+    "operation": "create",
+    "sha256": "72414ed9c8c200774ab60933fc774ad60c6fdef04c11689e46ca109114a839a4"
+  }
+]

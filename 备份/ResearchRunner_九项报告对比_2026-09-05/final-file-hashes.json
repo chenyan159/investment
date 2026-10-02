@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-09-05T20:38:30.440Z",
+  "checks": [
+    {
+      "key": "industry/HBM与高带宽内存",
+      "side": "new",
+      "unchanged": true,
+      "sha256": "e4562df20412bb465e1d0dbf86ad2acd5a665b442525e0b17708e4e2c9d009ad"
+    },
+    {
+      "key": "industry/HBM与高带宽内存",
+      "side": "old",
+      "unchanged": true,
+      "sha256": "9b782c2a4967ff6236ea67a862157933e082dd8e049111e2c87e73060d829223"
+    },
+    {
+      "key": "industry/云厂自研AI ASIC",
+      "side": "new",
+      "unchanged": true,
+      "sha256": "371068fcc17dbe58974575f0cad7243dd637df6e5cd951d46c40b877ac9c1bbf"
+    },
+    {
+      "key": "industry/云厂自研AI ASIC",
+      "side": "old",
+      "unchanged": true,
+      "sha256": "728f0278ffe27aed7b3dd422fda6bd95872b67ba980ed24e669d21daed2ee3be"
+    },
+    {
+      "key": "industry/AI云算力外包和NeoCloud与AI数据中心运营商",
+      "side": "new",
+      "unchanged": true,
+      "sha256": "c8d3245b75b7096ee652f108bfb5629f304fb4b21b4bf3fdd321f5f5559ac9b4"
+    },
+    {
+      "key": "industry/AI云算力外包和NeoCloud与AI数据中心运营商",
+      "side": "old",
+      "unchanged": true,
+      "sha256": "ee58012bd63d2f7b92b8a261e903793cedc2de99bae775e0b49c26356a285f4e"
+    },
+    {
+      "key": "company/CRWV",
+      "side": "new",
+      "unchanged": true,
+      "sha256": "e4babf5ffb0b335847bdabf2df04d5a11c1012d5cfed14216d4a4f10083ff9dd"
+    },
+    {
+      "key": "company/CRWV",
+      "side": "old",
+      "unchanged": true,
+      "sha256": "f2113dc47ea682e3ea688ade7efb644e78b881ba5cdf6a9b743b91e00e3e470f"
+    },
+    {
+      "key": "company/GOOGL",
+      "side": "new",
+      "unchanged": true,
+      "sha256": "bc30999c6870637cf45803d9d6b528f53efc7647721830b58ba0700dce270ce6"
+    },
+    {
+      "key": "company/GOOGL",
+      "side": "old",
+      "unchanged": true,
+      "sha256": "0cac46b15dda9c11149cde8c1b8ffc0bfca5247211eb5d60baf99c58c696b45b"
+    },
+    {
+      "key": "company/MU",
+      "side": "new",
+      "unchanged": true,
+      "sha256": "7cbce843cb95dabf424fa27a6c24f94bc3043385c58d34ebd48835244bf6e552"
+    },
+    {
+      "key": "company/MU",
+      "side": "old",
+      "unchanged": true,
+      "sha256": "ae58d3e547405c1c194c2a98e80a09eb04e650c58cddd2535bdfc1eab355b04f"
+    },
+    {
+      "key": "company-investment-decision/MU",
+      "side": "new",
+      "unchanged": true,
+      "sha256": "0d8c509b4ecc7dd48c06f7f9e1c4df5b232f8f781cfa56cc66478a9c5551d706"
+    },
+    {
+      "key": "company-investment-decision/MU",
+      "side": "old",
+      "unchanged": true,
+      "sha256": "d576a642335d6b4546622e582e25f6c3db7582fcce970b172eb8229b4b353d68"
+    },
+    {
+      "key": "company-investment-decision/CRWV",
+      "side": "new",
+      "unchanged": true,
+      "sha256": "ba95f25d50c126a33f15127650ebf1a364ea51004a72faace951992111b9aef1"
+    },
+    {
+      "key": "company-investment-decision/CRWV",
+      "side": "old",
+      "unchanged": true,
+      "sha256": "1f54627700ca3b4b2f545bf2d8c030d320960b3b6d50a925bc04952e2748ed30"
+    },
+    {
+      "key": "company-investment-decision/GOOGL",
+      "side": "new",
+      "unchanged": true,
+      "sha256": "4f7b2d84ee6925b2dc29daae8df31e22799e37b17f89769f8e39dcef860e4c7f"
+    },
+    {
+      "key": "company-investment-decision/GOOGL",
+      "side": "old",
+      "unchanged": true,
+      "sha256": "075d43ad1c87b4f3dc0ccc1983824f6683ed8fa1744168a4f9aed3a3a3ca10d3"
+    }
+  ]
+}

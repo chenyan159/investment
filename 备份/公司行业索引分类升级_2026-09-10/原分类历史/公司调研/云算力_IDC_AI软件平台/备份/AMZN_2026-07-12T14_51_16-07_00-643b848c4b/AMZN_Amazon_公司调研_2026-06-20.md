@@ -1,0 +1,432 @@
+# 公司：AMZN Amazon 公司调研（2026-06-20）
+
+报告日期：2026-06-20  
+公司：Amazon.com, Inc.  
+股票代号：AMZN  
+正式分类目录：`公司调研/云算力_IDC_AI软件平台/`  
+资料边界：按任务要求，本报告只读取 `公司调研/公司索引.md` 用于确认目录归属；产业背景只使用 `行业调研/` 下与 AI 数据中心、云算力、自研 ASIC、AI 运行时、光互联、电力/冷却相关资料；公司事实、估值、订单和产品信息用联网资料重新核验，未读取或继承 `特征量化/`、`日度资料/` 或同目录既有公司报告。  
+关键日期口径：股价和估值为 2026-06-20 检索的最新市场页数据；因 2026-06-19 为美国市场假日，最新常规收盘价为 2026-06-18。
+
+## 一、结论先行
+
+1. **Amazon 已经从“电商 + AWS”升级为“现金流零售平台 + AI 云基础设施平台 + 高毛利广告平台”的组合。** Q1 2026 收入 `$181.5B`，同比 `+17%`；AWS 收入 `$37.6B`，同比 `+28%`，是 15 个季度以来最快增速；广告服务收入 `$17.2B`，同比 `+24%`；北美零售收入 `$104.1B`，同比 `+12%`，说明主业不是只靠 AI 叙事，零售/广告/AWS 三条线同时加速。
+2. **投资人现在最关注的不是“Amazon 能不能做 AI”，而是 AI CapEx 能否转化为 AWS 收入和长期 ROIC。** 公司 Q1 2026 TTM operating cash flow `$148.5B`，但 free cash flow 降到 `$1.2B`，主要因为 PPE purchases 净额同比增加 `$59.3B`，公司明确称主要反映 AI 投资。Q4 2025 公司还给出 2026 年约 `$200B` 全公司资本开支预期，其中不全是 AI，但 AI/AWS 是核心增量。
+3. **订单可见度已经明显从“云消费”升级到“多年 AI capacity commitment”。** AWS 主要相关的剩余履约义务 RPO 从 2025Q1 `$189B`、2025Q4 `$244B` 跳到 2026Q1 `$364B`，加权剩余年限从约 `4.1` 年拉长到 `5.5` 年。RPO 不是完整 backlog，因为 AWS 仍有大量 usage-based 收入，但这个跳升说明大客户已经把 AI 容量长期锁单。
+4. **Trainium 是本轮调研中最需要重估的 Amazon 小产品线。** Q1 2026 Amazon 披露 chips business 年化收入 run-rate 超过 `$20B`，含 Graviton、Trainium、Nitro，且同比三位数增长；过去 12 个月落地 `2.1M+` AI chips，其中超过一半是 Trainium；Anthropic 锁定最高 `5GW` Trainium capacity，OpenAI 承诺约 `2GW` Trainium capacity 从 2027 ramp。Trainium3 UltraServer 单系统可到 `144` 颗 Trainium3、`20.7TB` HBM3E、`706TB/s` HBM 带宽和 `362` MXFP8 PFLOPS，是 AWS 降低 AI token 成本、对抗 NVIDIA 溢价和 Azure/Google 的关键。
+5. **财务健康度仍强，但资产负债表已经进入重资本开支阶段。** 截至 2026-03-31，公司现金及可交易证券 `$143.1B`，流动比率约 `1.18`；但长期债务从 2025 年底 `$65.6B` 增至 `$119.1B`，长期租赁负债 `$90.8B`，总承诺含债务、租赁、采购义务等约 `$569.3B`。这不是流动性危机，而是 AI 基建投入前置导致 FCF 和债务指标阶段性变重。
+6. **未来一年最关键的三个反证指标：** AWS RPO 是否继续转化为 revenue、Trainium3/Trainium4 是否在 Anthropic/OpenAI/Bedrock 之外获得更多真实生产负载、以及 `$200B` 级 CapEx 是否带来 AWS 增速和广告/零售 AI 增量，而不是长期压低 FCF。
+
+## 二、公司整体业务、定位和投资人认知
+
+### 2.1 业务结构
+
+Amazon 的经营分部有三块：
+
+| 分部 | Q1 2026收入 | 同比 | Q1 2026经营利润 | 经营利润率 | 角色 |
+|---|---:|---:|---:|---:|---|
+| North America | `$104.1B` | `+12%` | `$8.3B` | `7.9%` | 美国/加拿大/墨西哥零售、第三方商家、物流、Prime、广告流量底座 |
+| International | `$39.8B` | `+19%`，剔除汇率 `+11%` | `$1.4B` | `3.6%` | 海外电商和本地履约网络，利润率仍低但已持续转正 |
+| AWS | `$37.6B` | `+28%` | `$14.2B` | `37.7%` | 云计算、AI 云、数据库、存储、网络、自研芯片、Bedrock/SageMaker |
+
+按产品收入看，Q1 2026：
+
+| 产品收入线 | Q1 2026收入 | 占总收入 | 同比 | 剔除汇率同比 | 投资含义 |
+|---|---:|---:|---:|---:|---|
+| Online stores | `$64.3B` | `35.4%` | `+12%` | `+9%` | 低利润但高流量，支撑广告和 Prime |
+| Third-party seller services | `$41.6B` | `22.9%` | `+14%` | `+12%` | Marketplace 抽佣、FBA、物流服务，较一方零售更高质量 |
+| AWS | `$37.6B` | `20.7%` | `+28%` | `+28%` | 最关键利润池和 AI 产能池 |
+| Advertising services | `$17.2B` | `9.5%` | `+24%` | `+22%` | 高毛利、强数据壁垒，Rufus/Prime Video/retail media 扩张 |
+| Subscription services | `$13.4B` | `7.4%` | `+15%` | `+12%` | Prime、视频、音乐等，支撑频次和广告库存 |
+| Physical stores | `$5.8B` | `3.2%` | `+5%` | `+4%` | Whole Foods、Fresh 等，战略价值大于增长弹性 |
+| Other | `$1.6B` | `0.9%` | `+25%` | `+25%` | 联合品牌、服务和其他新业务，体量小 |
+
+投资人心中的 Amazon 通常有三层估值框架：
+
+- **底层：全球最大电商和履约网络。** 规模大、现金转换强、但利润率低；过去三年通过区域化履约、广告加载、Prime 频次和国际业务减亏提升经营杠杆。
+- **中层：AWS 云基础设施。** 过去十年是利润核心；2023-2024 被 Azure/OpenAI 和 Google TPU/Gemini 抢叙事，2025-2026 因 AWS 增速重新加速、Trainium 与 Bedrock 进展、RPO 跳升而重新获得 AI 云重估。
+- **上层：广告、AI agents、芯片、卫星、机器人等可选增长。** 广告已经是 TTM `$70B+` 的现实利润池；Trainium/Graviton/Nitro 是真实收入线；Amazon Leo、Zoox、Alexa+/Rufus 是中长期选择权。
+
+### 2.2 最近三年重大业务变动、转型和收购
+
+| 时间 | 事件 | 对业务质量的影响 |
+|---|---|---|
+| 2023 | 完成 One Medical 收购；推动零售履约网络区域化和成本优化；AWS 推 Bedrock/Trainium/Graviton 叙事 | 医疗是小业务；真正影响利润的是零售效率修复和 AWS 生成式 AI 平台化 |
+| 2023-2024 | 分批投资 Anthropic，总承诺从早期数十亿美元级扩大；Project Rainier 用 Trainium2 服务 Claude | 把 AWS 从“GPU 云”扩展为“模型公司长期 capacity partner + 自研 ASIC 平台” |
+| 2024 | iRobot 收购终止；Prime Video 广告开始贡献；广告业务从 sponsored ads 扩展到视频、DSP 和 retail media | 放弃低确定性硬件收购，强化高毛利广告库存和购物数据 |
+| 2025 | AWS re:Invent 发布/扩展 Nova、Bedrock AgentCore、Trainium3 UltraServers、AI Factories、Graviton5 | AWS AI 栈从 IaaS 扩展为模型、agent、运行时、专用芯片和客户机房 AI 工厂 |
+| Q4 2025 | Amazon 披露 2026 年约 `$200B` CapEx 计划；Trainium2 fully subscribed，`1.4M` chips landed；Project Rainier `500k+` Trainium2 chips；Trainium3 几乎全供应预计到 2026 年中被锁定 | AI 基建进入重资本开支阶段；短期 FCF 承压，但订单可见度提高 |
+| Q1 2026 | AWS 增速加快至 `+28%`；chips business run-rate 超 `$20B`；Anthropic 最高 `5GW`、OpenAI 约 `2GW` Trainium commitment；计划收购 Globalstar 并扩展 Amazon Leo | AI capacity 和低轨卫星同时加速，核心仍是 AWS AI 基础设施 |
+
+### 2.3 产业链定位
+
+Amazon 在 AI 产业链中不是单一硬件供应商，而是同时处在四个位置：
+
+1. **AI 云需求端：** 自己采购 NVIDIA GPU、内存、光模块、电力、数据中心工程和能源；是 AI 数据中心 CapEx 的最大买方之一。
+2. **AI 云供给端：** 通过 AWS EC2、SageMaker、Bedrock、EKS、S3、FSx、Redshift、OpenSearch、DynamoDB 等向企业销售算力、存储、模型服务和数据平台。
+3. **自研芯片平台：** Trainium/Inferentia 负责训练和推理，Graviton 负责 CPU/control-plane，Nitro 负责虚拟化/安全/网络卸载；价值以 AWS 实例和内部转移价值体现，而非传统芯片销售。
+4. **AI 应用和流量入口：** Rufus、Alexa+、Amazon Ads、Creative Agent、Prime Video Ads、Amazon Connect 等把内部 AI 直接转化为购物转化率、广告收入、客服效率和云服务 pull-through。
+
+项目内行业资料对这类公司有一个重要约束：AI 数据中心订单不能机械相加。Amazon 同时是 CapEx 客户、云服务供应商和自研芯片 owner；AWS 收入、Trainium 内部转移价值、NVIDIA GPU 采购、数据中心电力/冷却订单之间存在重叠，报告中按“公司收入贡献”和“供应链 look-through”分开处理。
+
+## 三、截至 2026-06-20 的股价、估值和财务健康
+
+### 3.1 市场估值快照
+
+| 指标 | 数值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | `$244.39` | 2026-06-18 常规收盘；2026-06-20 检索 | 2026-06-19 美国市场休市，故用最新常规收盘 |
+| 市值 | `$2.63T` | 2026-06-20 检索 | 全球超大市值平台，估值主要看 AWS/广告利润和 AI ROIC |
+| Enterprise value | `$2.72T` | 2026-06-20 检索 | 净债务/租赁因素开始更重要 |
+| TTM Revenue | `$742.78B` | 截至 Q1 2026 TTM | 由 2025 FY `$716.9B` 和 Q1 2026 拼接；TTM 同比约 `+14.2%` |
+| Q1 2026 Revenue growth | `+17%` | Amazon Q1 2026 IR | 当前收入增速比 2025 全年 `+12%` 明显加速 |
+| PE | `29.23x` | 2026-06-20 StockAnalysis/S&P Global 数据 | 受 Anthropic 公允价值收益抬高净利影响，需看经营利润 |
+| Forward PE | `29.31x` | 2026-06-20 StockAnalysis/S&P Global 数据 | 市场仍定价持续利润扩张 |
+| PS | `3.54x` | 2026-06-20 StockAnalysis/S&P Global 数据 | 对应高利润 AWS/广告占比继续上升 |
+| Gross margin | `50.60%` | TTM | 服务、广告、AWS 占比提高，毛利率已高于传统零售观感 |
+| Operating margin | `11.50%` | TTM | Q1 2026 单季 operating margin `13.1%` |
+| Net margin | `12.22%` | TTM | 含 Anthropic/投资公允价值收益；经营性利润率应看 OI 和 AWS/广告 |
+
+估值结论：Amazon 不是便宜的传统零售股，也不是纯 SaaS 倍数。`~29x` PE 在当前利润含投资收益的情况下不应机械解读为便宜；更合理的估值驱动是：
+
+- AWS 是否能从 `$150B` annualized revenue run-rate 继续维持 `20%+` 增速；
+- AWS margin 能否在 `35%-38%` 附近承受 AI 折旧和电力成本；
+- 广告能否维持 `20%+` 增速并持续提高公司综合利润率；
+- `$200B` 级 CapEx 的回收期能否被 RPO、AI service revenue、chips business 和广告/零售 AI 增量解释。
+
+### 3.2 资产负债表和现金流健康
+
+| 指标 | 数值 | 日期 | 评价 |
+|---|---:|---|---|
+| Cash & equivalents | `$101.8B` | 2026-03-31 | 绝对流动性强 |
+| Marketable securities | `$41.3B` | 2026-03-31 | 现金+证券合计 `$143.1B` |
+| Current assets | `$255.2B` | 2026-03-31 | 库存、应收与现金共同支撑运营 |
+| Current liabilities | `$216.8B` | 2026-03-31 | 流动比率约 `1.18` |
+| Long-term debt | `$119.1B` | 2026-03-31 | Q1 发行美元和欧元债后显著上升 |
+| Long-term lease liabilities | `$90.8B` | 2026-03-31 | 数据中心、履约设施和办公/物流租赁负债重 |
+| Stockholders' equity | `$441.9B` | 2026-03-31 | 资本基础强 |
+| TTM operating cash flow | `$148.5B` | 截至 2026-03-31 | 核心现金创造能力极强 |
+| TTM free cash flow | `$1.2B` | Amazon 官方 FCF 口径，截至 2026-03-31 | 被 AI/PPE 投资几乎吃掉 |
+| TTM PPE purchases | `$151.0B` | 截至 2026-03-31 | CapEx 强度极高 |
+| Total commitments | `$569.3B` | 2026-03-31 | 含长期债务本息、租赁、未开租赁、采购义务等 |
+| AWS RPO | `$364B` | 2026-03-31 | 多年合同可见度强，但不等同可立即确认收入 |
+
+财务健康判断：**A-，但 FCF 风险上升。** Amazon 的经营现金流、现金证券、AWS/广告利润池和债务市场 access 足以覆盖扩张；真正风险不是短期偿债，而是 AI 数据中心、Trainium、GPU、能源和 Amazon Leo 等资本开支同时上行时，未来 2-3 年 FCF 可能维持低位。如果 AWS 增速从 Q1 2026 的 `+28%` 回落到 `15%` 以下，而 CapEx 仍维持 `$200B` 级，公司估值会明显承压。
+
+## 四、最新和最近四次财报：关键数字、订单/Backlog 与 AI 数据中心占比
+
+Amazon 不披露传统制造业意义上的 backlog、bookings、lead time 或取消率。可用替代指标为：
+
+- **AWS RPO：** 主要来自 AWS 长期客户合同承诺，是最接近 backlog 的官方指标，但不覆盖大量 usage-based 云消费。
+- **AWS revenue + RPO QoQ change：** 可作“净新增长期承诺 + 已确认云收入”的粗略 bookings proxy，不能等同订单。
+- **Trainium/GPU/AI chips landed、客户 GW commitment：** 反映供需紧张与交付窗口。
+- **CapEx/PPE purchases：** 反映公司为满足未来需求提前采购设备、建设数据中心和锁定能源。
+
+### 4.1 最近五个季度财报表
+
+金额单位为十亿美元，利润率为经营利润率；RPO 为主要与 AWS 相关的长期剩余履约义务。
+
+| 财报季度 | 发布时间 | 总收入 / YoY | 总经营利润 | 净利润 | North America收入 / OI率 | International收入 / OI率 | AWS收入 / YoY / OI率 | AWS RPO / QoQ | 订单、交期、取消率推断 | AI数据中心相关收入占比 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|---|
+| 2025Q1 | 2025-05-01 | `$155.7` / `+9%` | `$18.4` | `$17.1` | `$92.9` / `6.3%` | `$33.5` / `3.0%` | `$29.3` / `+17%` / `39.5%` | `$189B` / `+$12B` | AWS 仍是主要 backlog 来源；AI commitment 尚未在 RPO 中爆发；取消率未披露 | AWS 占收入 `18.8%`；AI 具体占 AWS 未披露 |
+| 2025Q2 | 2025-07-31 | `$167.7` / `+13%` | `$19.2` | `$18.2` | `$100.1` / `7.5%` | `$36.8` / `4.1%` | `$30.9` / `+17.5%` / `32.9%` | `$195B` / `+$6B` | AWS 增速温和回升；RPO 小幅增加，仍偏常规云合同节奏 | AWS 占收入 `18.4%`；AI/DC 收入主要在 AWS 内 |
+| 2025Q3 | 2025-10-30 | `$180.2` / `+13%` | `$17.4`，调整前受 FTC/裁员费用压制 | `$21.2`，含 Anthropic 投资收益 | `$106.3` / `4.5%` | `$40.9` / `2.9%` | `$33.0` / `+20%` / `34.6%` | `$200B` / `+$5B` | AWS 增速加快；special charges 影响公司 OI；RPO 仍未跳升 | AWS 占收入 `18.3%`；AI 需求已开始显性化 |
+| 2025Q4 | 2026-02-05 | `$213.4` / `+14%` | `$25.0`；不含特殊费用约 `$27.4` | `$21.2` | `$127.1` / `9.0%` | `$50.7` / `2.1%` | `$35.6` / `+24%` / `35.0%` | `$244B` / `+$44B` | Trainium2 fully subscribed，`1.4M` chips landed；Trainium3 供给预计 2026 年中基本锁定；公司给出 2026 CapEx `$200B` | AWS 占收入 `16.7%`；chips/AI 初步进入订单层面 |
+| 2026Q1 | 2026-04-29 | `$181.5` / `+17%` | `$23.9` | `$30.3`，含 Anthropic pre-tax gain `$16.8B` | `$104.1` / `7.9%` | `$39.8` / `3.6%` | `$37.6` / `+28%` / `37.7%` | `$364B` / `+$120B` | Anthropic 最高 `5GW`、OpenAI `2GW` Trainium；过去 12 个月 `2.1M+` AI chips landed，`>50%` 为 Trainium；`1M+` NVIDIA GPUs 2026 起部署；取消率未披露，供给明显偏紧 | AWS 占收入 `20.7%`；chips run-rate `>$20B`，约等于总收入 `~2.8%` 的年化口径，但与 AWS 重叠 |
+
+### 4.2 财报表的核心观察
+
+1. **AWS 增速连续加快。** AWS 同比增速从 2025Q1 `+17%`、2025Q2 `+17.5%`、2025Q3 `+20%`、2025Q4 `+24%` 提升到 2026Q1 `+28%`。这是 AMZN AI 叙事重启的最硬财务证据。
+2. **AWS margin 没有因 AI 投资立刻塌陷。** AWS OI margin Q1 2026 `37.7%`，高于 2025Q4 `35.0%`、2025Q3 `34.6%`、2025Q2 `32.9%`。这说明当前 AI/云需求还能覆盖增量折旧和运营成本；但未来 CapEx 上行后 margin 仍需观察。
+3. **RPO 在 Q1 2026 发生结构性跳升。** `$364B` RPO 对比 `$37.6B` 单季 AWS revenue，约等于 `9.7` 个季度 AWS revenue；加权剩余 life `5.5` 年，说明大客户订单期限明显拉长。
+4. **净利润被 Anthropic 公允价值收益放大。** Q1 2026 net income `$30.3B` 中含 Anthropic 投资相关 pre-tax gain `$16.8B`。投资研究更应看 operating income、AWS margin、OCF 和 CapEx 回收。
+5. **AI 数据中心相关收入没有完整披露。** 本报告把“可识别 AI/DC 收入”分三层：AWS 全部收入是最大上限；chips business run-rate `>$20B` 是更直接的硬件/平台锚点；Bedrock/Trainium/GPU/AI services 具体收入未披露，只能情景估算。
+
+## 五、2026 最新指引、收入占比和业务重点
+
+### 5.1 Q2 2026 指引
+
+Amazon 在 Q1 2026 财报中给出的 Q2 2026 指引：
+
+| 指引项 | 公司指引 | 对投资判断的含义 |
+|---|---:|---|
+| Net sales | `$194.0B-$199.0B` | 同比 `+16%` 至 `+19%`；含 Prime Day 发生在 Q2 的假设 |
+| Operating income | `$20.0B-$24.0B` | 对比 Q2 2025 `$19.2B`；中点改善但低于 Q1 2026 `$23.9B`，说明公司仍在扩张投资 |
+| FX | 约 `10bps` 不利影响 | 汇率不是核心变量 |
+| 主要不确定性 | 关税、贸易政策、能源、内存芯片供应、客户需求、利率等 | AI 基建成本和客户云支出是核心 |
+
+### 5.2 最新收入占比：公司最侧重什么
+
+按 Q1 2026，Amazon 的收入结构是：北美零售 `57.4%`、国际 `21.9%`、AWS `20.7%`。但经营利润结构是 AWS `59.4%`、北美 `34.7%`、国际 `6.0%`。所以公司战略重点不等于收入占比：
+
+- **现实收入最大：** 北美 + 国际 retail/marketplace，占收入 `79%+`，增长 `12%-19%`。
+- **利润最大：** AWS，收入只占 `20.7%`，但贡献接近 `60%` segment operating income。
+- **增速和利润质量最突出：** AWS `+28%`、Advertising `+24%`、chips business run-rate `>$20B` 且三位数增长。
+- **公司最侧重的资本投向：** AWS/AI data centers、自研 chips、NVIDIA GPUs、能源、Amazon Leo 和机器人，其中 AI 是最大解释变量。
+
+### 5.3 需要跳过或低权重处理的产品/业务
+
+下列业务仍可能重要，但对本次“AI芯片/AI数据中心/高增长关键产品”贡献较低或可验证收入不足，本报告低权重处理：
+
+| 业务/产品 | 为什么低权重 |
+|---|---|
+| Physical stores / Whole Foods / Amazon Fresh | Q1 2026 收入 `$5.8B`，同比 `+5%`；战略价值在 grocery 频次和本地履约，不是 AI 基建主线 |
+| 普通 online first-party retail | 收入大但利润率低；AI 带来转化率和效率改善，但不是高增长硬件/云产品 |
+| Prime Video 内容、体育版权、MGM | 对广告和订阅有拉动，但资本密集、内容 ROI 难拆；不按 AI 基建估值 |
+| Amazon Pharmacy / One Medical | 潜在大市场，但当前收入披露少、AI/DC 相关性弱 |
+| Zoox robotaxi | 2026 仍是测试/早期商业化；有 AI/robotics 属性但非数据中心收入主线 |
+| Amazon Leo 卫星网络 | Q1 2026 已有 `250+` 卫星、Delta/Vodafone/Globalstar 线索，但短期是重资本开支和通信选择权，不是 AI 数据中心收入 |
+| Alexa+ 消费助手 | 可提高设备/订阅/购物入口，但收入和单位经济仍未披露 |
+
+### 5.4 重点和潜在小产品清单
+
+| 重点产品/业务 | 当前事实 | 为什么重要 |
+|---|---|---|
+| AWS AI Infrastructure / EC2 accelerated compute | AWS Q1 2026 `$37.6B`，同比 `+28%`；`1M+` NVIDIA GPUs 2026 起部署 | 直接销售 AI capacity，最大收入和利润池 |
+| Trainium / Inferentia / Neuron / UltraServers | Chips business run-rate `>$20B`；Trn3 UltraServer `144` chips、`20.7TB` HBM3E、`706TB/s` HBM bandwidth；Anthropic `5GW`、OpenAI `2GW` | AWS 控制 AI 成本和供应链的核心；对 NVIDIA 溢价形成长期约束 |
+| Graviton / Nitro | Chips business 包含 Graviton、Trainium、Nitro；Graviton5 已发布，top EC2 customers 渗透高 | AI agent 和 cloud control plane 需要大量 CPU、虚拟化、安全和网络卸载 |
+| Amazon Bedrock / AgentCore / Nova / OpenAI Frontier on AWS | Bedrock 已有 Claude/Nova/OpenAI 等多模型线索；AgentCore 增加 policy/evaluation/memory；OpenAI Frontier 由 AWS 分发 | 高毛利控制面，连接模型、数据、agent、安全和 AWS 消费 |
+| SageMaker HyperPod / EKS / EFA / UltraClusters / AI Factories | AWS AI Factories 可把 NVIDIA GPUs、Trainium、AWS networking、Bedrock/SageMaker 部署进客户数据中心 | 让 AWS 从云内扩展到客户机房和主权/企业 AI factory |
+| Amazon Ads / Rufus / Creative Agent / Prime Video Ads | Ads Q1 `$17.2B`，同比 `+24%`，TTM `>$70B`；Rufus 品牌提示、Creative Agent、Netflix audience targeting | 高毛利，AI 直接提升广告库存、转化率和创意生成效率 |
+| Rufus / Buy For Me / AI shopping | Q4 2025 公司称 Rufus 被 `300M+` customers 使用，贡献近 `$12B` incremental annualized sales | 不是独立收入线，但可能提高 GMV、广告点击和 Prime 粘性 |
+| Amazon Connect / enterprise agent services | 未单独披露收入；受益 Bedrock/AgentCore 和企业客服自动化 | 小业务但有高毛利 SaaS/usage 潜力 |
+
+## 六、高增长/关键产品：当前收入贡献、增速、AI基建重要性和供需评分
+
+评分范围：1 低，5 高。美元贡献中，官方不披露细分收入的部分标注为估算或上限。
+
+| 产品/业务 | 当前收入贡献 | 当前增速 | AI基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| AWS overall | Q1 2026 `$37.6B`；年化 `$150B+` | `+28%` YoY | 5 | 5 | 4 | 4 | AWS 是公司 AI/DC 收入的主口径；客户数据、IAM、网络、存储和云迁移带来替换成本 |
+| AWS AI accelerated compute / GPU capacity | 未单独披露；看作 AWS 的高增长子集；`1M+` NVIDIA GPUs 2026 起部署 | 估算 `+50%` 以上 | 5 | 5 | 5 | 3 | NVIDIA GPU 仍供给紧，AWS 通过 GPU + Trainium 双路线补容量 |
+| Trainium / Inferentia / Neuron | chips business run-rate `>$20B`，其中 Trainium 是核心 AI 芯片；非纯芯片销售 | 同比三位数 | 5 | 5 | 5 | 4 | 供需由 Anthropic/OpenAI 大单锁定；垄断力来自 AWS 自有云和自研 silicon |
+| Graviton / Nitro | 包含于 chips run-rate；Q4 2025 曾披露 Trainium+Graviton run-rate `>$10B` | 三位数/高双位数，未拆分 | 4 | 4 | 3 | 4 | CPU/control plane 是 agent 和云成本的隐性瓶颈；Graviton price-performance 锁定强 |
+| Bedrock / AgentCore / Nova / OpenAI Frontier | 未披露；估算当前年化 `$5B-$10B` 区间，含模型平台和推理服务但不与 AWS compute 加总 | 高双位数至三位数 | 5 | 5 | 4 | 4 | 控制模型入口、agent runtime、企业治理和 AWS data gravity |
+| Amazon Ads / Rufus / Creative Agent | Ads Q1 `$17.2B`；TTM `>$70B` | `+24%` YoY | 3 | 4 | 3 | 5 | 非硬件基建，但 AI monetization 最清晰；购物数据和闭环转化形成强溢价 |
+| AI Factories / SageMaker HyperPod / EFA / UltraClusters | 收入未拆；归入 AWS enterprise AI infrastructure | 早期高增长 | 5 | 4 | 4 | 3 | 适合主权/企业专用集群；竞争来自 Azure/OCI/CoreWeave/Google |
+| Amazon Leo | 当前收入小，CapEx 大 | 未披露 | 2 | 2 | 2 | 2 | 对连接性和边缘网络有选择权，但不是当前 AI 投资核心 |
+
+## 七、未来一年收入贡献和三情景预测
+
+预测区间为 2026Q2-2027Q1 的未来 12 个月，不是 FY 指引。公司没有披露 AI 子业务收入，以下以官方收入、RPO、run-rate 和供给约束建模。
+
+| 产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| AWS overall | 未来 12 个月收入 `$178B-$190B`，同比约 `+20%-24%`；OI margin `34%-37%`；AI 基建重要性 5，供需紧张 4 | 收入 `$195B-$205B`，同比 `+25%-30%`；RPO 继续超 `$400B`；margin `35%-38%` | 收入 `$210B-$225B`，同比 `+32%-38%`；AI capacity 仍严重短缺，margin 维持高位 |
+| AWS AI accelerated compute / GPU | 年化收入贡献估算 `$25B-$40B`，来自 GPU/Trainium/AI storage/network/premium support；GPU 仍排队 | `$45B-$65B`；`1M+` NVIDIA GPU 和 Trainium3 大量上线，reserved capacity 溢价强 | `$75B-$100B+`；若 Anthropic/OpenAI/企业 agent 同时爆发，AI cloud 成为 AWS 增量多数 |
+| Trainium / Inferentia / Neuron | chips business run-rate 从 `>$20B` 到 `$30B-$40B`；Trainium 供应仍紧；毛利通过 AWS 实例体现 | `$45B-$60B` run-rate；Anthropic 近 `1GW` 兑现，OpenAI 2027 ramp 可见；更多外部客户迁移 | `$70B-$90B` run-rate；Trainium3/4 成为 frontier inference/training 的主流第二平台 |
+| Graviton / Nitro | 非 AI 与 AI control plane 共同拉动；贡献估算 `$15B-$22B` run-rate | `$22B-$30B`；Graviton5 渗透继续提高，Meta/Uber 等大客户扩大 | `$30B-$40B`；agentic workloads 带来 CPU/虚拟化/安全卸载爆发 |
+| Bedrock / AgentCore / Nova / OpenAI Frontier | 年化收入估算 `$10B-$18B`；毛利高但 compute pass-through 占比大 | `$18B-$30B`；OpenAI/Claude/Nova 多模型和 enterprise agents 放量 | `$30B-$50B`；AWS 成为多模型 agent runtime 默认平台之一 |
+| Advertising / Rufus / Creative Agent | Ads 年化 `$85B-$92B`，同比 `+18%-25%`；AI 提升转化和创意效率 | `$95B-$105B`；Prime Video ads、Rufus prompts、Netflix audience targeting 强拉动 | `$110B-$125B`；AI shopping agent 改变搜索/广告入口，Amazon 抢 Google/Meta 部分预算 |
+| AI Factories / HyperPod / dedicated clusters | 仍在 AWS 内部，估算 `$3B-$8B` 新增收入/订单池 | `$8B-$15B`；企业和政府把自建机房交给 AWS 托管 | `$15B-$30B`；主权 AI 和企业专用 AI factory 大规模签约 |
+
+## 八、BOM、每 MW / rack / GPU / optical port 内容量和价格传导链
+
+### 8.1 Trainium3 UltraServer 的可验证内容量
+
+官方可验证规格：
+
+- 每个 Trn3 UltraServer 最多 `144` 颗 Trainium3 chips。
+- 单 Trainium3：`144GB` HBM3E、`4.9TB/s` memory bandwidth。
+- 单 Trn3 Gen2 UltraServer：约 `20.7TB` HBM3E、`706TB/s` HBM bandwidth、`362` MXFP8 PFLOPS。
+- NeuronLink-v4 带宽：`2,048GiB/s/device`。
+- EFA bandwidth：Trn3 Gen2 UltraServer `28.8Tbps`。
+- 架构：`36` 台 server，每台 `4` 颗 Trainium3，形成 `144` 颗芯片的 scale-up domain。
+
+### 8.2 Trainium3 系统 BOM 和价格传导
+
+以下为基于公开规格和项目内 AI 芯片/数据中心资料的研究估算，不是 Amazon 披露价格。
+
+| 成本项 | 单 Trn3 Gen2 UltraServer 估算内容 | 成本/价值占比 | 价格传导能力 | 供给瓶颈 |
+|---|---:|---:|---|---|
+| Trainium3 ASIC die + package | `144` 颗 3nm AI ASIC | `30%-45%` | 强；AWS 自用，外部以实例价格体现 | 先进制程、良率、封装、测试 |
+| HBM3E | `20.7TB`，即 `20,736GB` | `18%-30%` | 强；HBM 短缺时云实例溢价和 capacity reservation 支撑价格 | HBM3E/4 供给、CoWoS/类封装 |
+| NeuronSwitch / NeuronLink / board | 两级 NeuronSwitch + NeuronLink-v4 | `8%-15%` | 中高；决定 MoE/长上下文效率 | 高速 SerDes、板级信号完整性 |
+| Host CPU/DRAM | `2,304` vCPU、`27,648GiB` host memory | `5%-10%` | 中；Graviton/x86/DRAM 成本可转嫁部分 | CPU、DDR5、SOCAMM/内存 |
+| EFA/NIC/scale-out network | `28.8Tbps` EFA | `8%-15%` | 中高；GPU/ASIC utilization 对网络高度敏感 | 800G/1.6T optics、switch、NIC |
+| Power/cooling/rack | 高密度供电、冷却、机架集成 | `8%-12%` | 中；取决于数据中心电力和冷却瓶颈 | 液冷、CDU、母线、电源模块 |
+| Software/runtime/test | Neuron SDK、编译器、SageMaker/Bedrock 接入、系统测试 | `5%-10%` | 高；影响锁定和毛利 | 编译器、模型支持、客户迁移 |
+
+### 8.3 每 MW、每 rack-scale domain、每 optical port 粗算
+
+| 口径 | 可验证内容 | 研究估算 | 投资含义 |
+|---|---:|---:|---|
+| 每 Trn3 Gen2 UltraServer | `144` Trainium3；`20.7TB` HBM3E；`706TB/s` HBM bandwidth；`362` PFLOPS MXFP8；`28.8Tbps` EFA | 内部等价价值约 `$3M-$6M`，取决于 HBM/封装/网络/软件 | 单个 rack-scale domain 已是百万美元级 AI 资产 |
+| 每 MW IT load | Amazon 不披露 Trn3 功耗；按 `150-250kW`/UltraServer 建模 | 约 `4-6.7` 个 Trn3 Gen2 UltraServer，`576-960` Trainium3 chips，`83-138TB` HBM3E，`1.45-2.43` EFLOPS MXFP8 | Anthropic 近 `1GW` 若按 IT load 计，可能对应数千个 UltraServer 或约百万级芯片量级；实际含 Trn2/Trn3、PUE 和网络 |
+| 每 800G optical port | EFA `28.8Tbps` / `800Gbps` | 约 `36` 个 800G 等效端口/UltraServer，不含 spine/冗余 | Trainium 大规模部署会直接拉动 800G/1.6T 光模块和交换端口 |
+| 每 1.6T optical port | EFA `28.8Tbps` / `1.6Tbps` | 约 `18` 个 1.6T 等效端口/UltraServer，不含 oversubscription | 2026H2-2027 新集群更可能向 1.6T 迁移 |
+| 每 NVIDIA GPU rack | Amazon 只披露 `1M+` NVIDIA GPUs 2026 起部署，不披露型号和机架 | 参考 GB200/GB300 NVL72 类：`72` GPU/rack、约 `100-140kW`，每 MW `500-720` GPU | AWS 仍会大量采购 NVIDIA，不会只靠 Trainium |
+| 每 Bedrock 1M tokens | 无硬件 BOM；成本来自 accelerator time、HBM/KV cache、network/storage、model license、platform overhead | 价格随 frontier/mainstream/mini/batch/cached token 差异极大；毛利取决于利用率和 cache hit rate | Bedrock 的价值在 routing、governance、model choice 和 AWS 数据重力 |
+
+### 8.4 价格传导链
+
+1. **上游供应链：** TSMC 3nm/4nm、HBM3E/HBM4、先进封装、ABF 基板、测试、光模块、交换芯片、电力/冷却。
+2. **Amazon 内部资本化：** PPE purchases、finance leases、long-term debt、energy contracts、data center construction。
+3. **AWS 产品化：** EC2 Trn/Inferentia/NVIDIA GPU instances、reserved capacity、UltraClusters、SageMaker/Bedrock usage、EFA/networking、S3/FSx/storage。
+4. **客户收入：** Anthropic/OpenAI/企业客户以 capacity commitment、usage、API consumption、reserved instances 和 managed service 付费。
+5. **利润留存：** 如果 Trainium 利用率高且 Neuron 迁移顺利，Amazon 可把 NVIDIA 溢价的一部分转为 AWS margin；如果利用率低，硬件折旧会压低 margin。
+
+## 九、当前产能能力、供应链采纳和认证阶段
+
+### 9.1 当前产能能力
+
+| 产品/能力 | 当前能力证据 | 美元能力估算 | 采纳阶段 | 认证/客户验证 |
+|---|---|---:|---|---|
+| AWS global AI infrastructure | Q1 2026 TTM PPE purchases `$151B`；2026 CapEx 计划约 `$200B`；AWS RPO `$364B` | 2026 AI/AWS 相关建设能力估算 `$120B-$160B`，因包含非 AI 和 Amazon Leo 等需折扣 | 大规模生产 | 云区域、企业合规、数据中心运行体系成熟 |
+| Trainium2/3 capacity | `2.1M+` AI chips landed in 12M，`>50%` Trainium；Anthropic 使用 `>1M` Trainium2 chips；Trainium2 fully subscribed；Trainium3 production workloads | 当前 chips business run-rate `>$20B`；Trainium 相关估算 `$8B-$14B+` run-rate | 大客户生产验证中 | Anthropic/Bedrock/部分企业客户；Trn3 GA 与 Neuron SDK 文档 |
+| NVIDIA GPU capacity on AWS | `1M+` NVIDIA GPUs to be deployed starting in 2026 | 以高端 GPU 云实例折算，未来一年可形成 `$20B-$50B` 年化云收入池，取决于上电和利用率 | 采购和部署中 | NVIDIA 生态成熟；客户迁移成本低于 Trainium |
+| Bedrock / AgentCore / Nova | 100,000+ companies using Bedrock/Claude on AWS；Nova 2、AgentCore policy/evaluation/memory、OpenAI Frontier 线索 | 当前估算 `$5B-$10B` 年化；未来一年 `$10B-$30B` | 从平台化到生产 agents | 企业 IAM、治理、billing、数据隔离是核心认证 |
+| AI Factories / dedicated AI infra | re:Invent 2025 发布，组合 NVIDIA GPUs、Trainium、AWS networking、Bedrock/SageMaker | 当前订单小于 AWS 主云；未来一年 `$3B-$15B` 订单池 | 早期导入 | 主权/企业安全、机房互联、运维 SLA |
+| Amazon Ads AI / Rufus | Ads TTM `>$70B`；Rufus `300M+` customers、近 `$12B` incremental annualized sales 线索 | Ads 当前年化约 `$69B-$75B`；AI 直接增量未拆 | 生产化 | 广告主验证、brand safety、measurement、隐私合规 |
+
+### 9.2 一年后产能能力三情景
+
+| 产品/能力 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| AWS AI infra | 2026-2027 上电节奏受电力/设备约束；AI/AWS 建设能力 `$150B-$190B` | RPO 和大客户预付款支持 `$190B-$240B` 建设/订单池 | 大客户继续提前锁 capacity，`$250B+` 建设/订单池，但 FCF 明显承压 |
+| Trainium capacity | Anthropic 近 `1GW` 中大部分按期；Trainium3 external adoption 温和；run-rate `$30B-$40B` | Anthropic/OpenAI/Bedrock 同时拉动；Trainium3 大量上线；run-rate `$45B-$60B` | Trainium4 2027 预订强，Trainium 成为非 NVIDIA 第一专用平台；run-rate `$70B-$90B` |
+| NVIDIA GPU capacity | `1M+` GPU 上电分批完成，利用率保持高位 | GPU 供给仍紧，reserved capacity 溢价持续 | 如果 AI lab 需求继续超预期，AWS GPU capacity 可继续满租 |
+| Bedrock / AgentCore / Nova | 企业 agent 从试点到部门级生产；revenue `$10B-$18B` | OpenAI Frontier + Claude + Nova 形成多模型企业入口；`$18B-$30B` | Bedrock 成为多模型 agent runtime 事实标准之一；`$30B-$50B` |
+| Ads AI / Rufus | Ads 年化 `$85B-$92B`，Rufus 提升购物转化 | Ads `$95B-$105B`，AI prompts 改善广告 CPC/ROAS | Ads `$110B-$125B`，AI shopping 入口侵蚀部分传统搜索广告预算 |
+
+## 十、订单积压、供给和未来一年业务增速预测
+
+### 10.1 Backlog/Bookings 推断
+
+| 季度 | AWS RPO | RPO QoQ变化 | AWS收入 | 粗略 bookings proxy = AWS收入 + RPO QoQ变化 | 解释 |
+|---|---:|---:|---:|---:|---|
+| 2025Q1 | `$189B` | `+$12B` | `$29.3B` | `$41.3B` | 常规云合同增长 |
+| 2025Q2 | `$195B` | `+$6B` | `$30.9B` | `$36.9B` | RPO 增量偏温和 |
+| 2025Q3 | `$200B` | `+$5B` | `$33.0B` | `$38.0B` | AWS revenue 加速但长期承诺未跳升 |
+| 2025Q4 | `$244B` | `+$44B` | `$35.6B` | `$79.6B` | AI capacity commitments 开始显性化 |
+| 2026Q1 | `$364B` | `+$120B` | `$37.6B` | `$157.6B` | Anthropic/OpenAI/长期 AI capacity 可能推动 RPO 重估 |
+
+注意：这个 proxy 不适用于传统制造业订单，因为 AWS RPO 的确认时点取决于 usage、合同条款和履约，不代表当季新签合同全额，也不披露取消率。Amazon 的 10-Q 还说明合同收入确认时间可延伸超过原始合同期。
+
+### 10.2 供给端约束
+
+| 约束 | 当前状态 | 对 Amazon 的影响 |
+|---|---|---|
+| 电力和数据中心交付 | 项目内行业资料把电力接入、变压器、switchgear、MEP 列为 AI 数据中心最大瓶颈 | AWS 有资本和客户，但通电/并网决定收入确认速度 |
+| HBM3E/HBM4 与先进封装 | Trainium3、NVIDIA Blackwell、TPU、Maia 都争抢 HBM/CoWoS 类资源 | 自研 ASIC 不能绕过 HBM，Trainium 产能上限受供应链约束 |
+| 800G/1.6T 网络和光模块 | 本地行业资料显示 800G 已是 AI 后端主流，1.6T 2026H2-2027 爬坡 | Trn3 EFA/UltraCluster 和 GPU cluster 都需要大量高速端口 |
+| Neuron 软件生态 | Trainium 依赖 Neuron compiler/runtime、模型适配和客户迁移 | 若模型变化快或 compiler 不成熟，硬件便宜也可能利用率低 |
+| GPU allocation | Amazon 仍要部署 `1M+` NVIDIA GPUs | AWS 既要抢 GPU 又要推 Trainium，短期供应仍紧 |
+| 客户集中 | Anthropic、OpenAI 等大客户对 RPO 和 Trainium 节奏影响大 | 订单可见性强但集中度和谈判能力也高 |
+
+### 10.3 未来一年公司增速预测
+
+| 情景 | 公司总收入增速 | AWS增速 | 广告增速 | 经营利润率 | 关键假设 |
+|---|---:|---:|---:|---:|---|
+| 基准 | `+14%-17%` | `+20%-24%` | `+18%-25%` | `11%-13%` | Q2 指引兑现；RPO 转收入温和；AI CapEx 折旧逐季上来；零售维持中低双位数 |
+| 乐观 | `+17%-20%` | `+25%-30%` | `+25%-30%` | `12%-14%` | Trainium3/Bedrock/AI GPU capacity 快速上电；广告 AI 转化提高；国际继续减亏 |
+| 极度乐观 | `+20%-24%` | `+32%-38%` | `+30%+` | `13%-15%` | Anthropic/OpenAI/enterprise agents 同时超预期，AWS capacity 仍供不应求且价格不塌 |
+
+反证条件：
+
+- AWS RPO 连续两个季度不增长或下降；
+- AWS 增速回落到 `15%` 以下且 CapEx 不下修；
+- Trainium3 客户除 Anthropic/Bedrock 外没有新生产案例；
+- GPU/AI cloud 租赁价格连续两个季度大幅下跌；
+- Bedrock/AgentCore 的企业 agent 只停留试点，无法形成 usage；
+- 广告增速跌破 `15%` 且 retail GMV 没有补偿。
+
+## 十一、竞争格局、替代风险和客户替换成本
+
+### 11.1 AWS AI cloud 与云基础设施
+
+| 竞争对手 | 优势 | Amazon 的相对位置 | 替换成本 |
+|---|---|---|---|
+| Microsoft Azure / OpenAI | 企业渠道、M365/Copilot、OpenAI 先发、Azure AI tooling | Amazon 通过 Bedrock 多模型、OpenAI Frontier 分发、Trainium 2GW 承诺缩小差距 | 高。企业 IAM、数据、网络、合规、应用依赖使迁移复杂 |
+| Google Cloud / TPU / Gemini | TPU 自研深、模型能力强、AI research 领先、搜索/广告 AI 数据 | AWS 规模更大、企业客户更广，但模型层历史偏弱 | 中高。TPU/JAX/XLA 迁移和数据平台锁定强 |
+| Oracle OCI | AI RPO 和低价 GPU capacity 强，OpenAI/xAI 等大单 | AWS 产品广度和客户基础更强，但 OCI 在大模型专用集群有价格/交付优势 | 中。AI lab 可多云采购，但企业核心工作负载迁移成本高 |
+| CoreWeave / NeoCloud | 专注 GPU、交付速度、NVIDIA 生态 | AWS 更稳健、更全栈；NeoCloud 可在短期 GPU 稀缺时抢增量 | 低到中。纯 GPU 租赁可替换，企业平台/数据服务不易替换 |
+| Meta/Google/Microsoft 自研 ASIC 内部平台 | 自己控制模型和流量，可自用优化 | AWS 的 Trainium 需要外部客户迁移，生态难度更高 | 对模型公司中等；对企业客户高 |
+
+### 11.2 Trainium 与 AI 芯片竞争
+
+| 路线 | Amazon 优势 | 风险/替代 |
+|---|---|---|
+| NVIDIA Blackwell/Rubin | AWS 是大买家，能给客户提供 CUDA 最小迁移成本 | NVIDIA 溢价高、供给紧；若全靠 NVIDIA，AWS margin 受压 |
+| Trainium2/3/4 | AWS 自控 silicon、实例、网络、能源和客户关系；Anthropic/OpenAI 是强验证 | Neuron 生态小于 CUDA；模型快速变化可能导致 utilization 风险 |
+| Google TPU | TPU 在 Google/Anthropic 侧强，软件栈深 | 对非 Google 客户迁移门槛较高；AWS 可用 Bedrock 多模型和 Trainium 防守 |
+| AMD MI350/MI400 | 开放生态和第二供应；客户希望多供 | ROCm 生产迁移仍是风险；AWS 可采购 AMD/NVIDIA 同时推 Trainium |
+| Broadcom/Marvell custom XPU | 高端 custom silicon 和网络 IP 强 | Amazon 若不外包核心 silicon，价值更多内部化；但仍依赖上游 SerDes/HBM/封装 |
+| Cerebras/Groq/低延迟推理 | 在 decode/interactive inference 有性能差异化 | AWS 已与 Cerebras 合作，可能把替代方案纳入 Bedrock，而不是被替代 |
+
+结论：**Trainium 是未来主流之一，但不是唯一主流。** 它最适合 AWS 内部和愿意接受 AWS 平台锁定的稳定大规模 workload；不会完全替代 NVIDIA GPU。真正主流架构更可能是 GPU + 自研 ASIC + 专用低延迟推理 + 统一运行时的混合栈。
+
+### 11.3 Bedrock / AgentCore / Nova
+
+| 竞争对手 | 竞争点 | Amazon 壁垒 |
+|---|---|---|
+| Azure AI Foundry / OpenAI direct | 模型能力和企业渠道强 | AWS 数据、IAM、billing、Bedrock 多模型和 Trainium capacity |
+| Google Vertex AI / Gemini | 模型、TPU 和搜索/Workspace 生态 | AWS 企业云基础和模型中立性 |
+| Databricks / Snowflake | 数据平台和企业数据治理 | AWS 底层存储/计算/网络和 marketplace |
+| Anthropic/OpenAI direct API | 最强模型原生体验 | Bedrock 提供合规、统一账单、私有连接、多模型切换 |
+| 开源 vLLM/SGLang/Ray/KServe | 客户可自建推理栈 | AWS managed service 降低运维复杂度，但需证明性价比 |
+
+客户替换成本中高。企业一旦把 Bedrock/AgentCore 接入 IAM、数据、日志、审计、SageMaker、EKS、S3 和私有网络，迁移会涉及权限、合规、模型评测和应用重写。但 Bedrock 的多模型抽象也降低了单一模型锁定，增强的是 AWS 平台锁定。
+
+### 11.4 Amazon Ads / Rufus / Retail AI
+
+| 竞争对手 | Amazon 优势 | 风险 |
+|---|---|---|
+| Google Ads | 搜索意图强、YouTube 强 | Amazon 有真实购买数据和闭环 GMV，但搜索入口被 AI 助手改变时需守住购物起点 |
+| Meta / TikTok | 流量和内容广告强 | Amazon 的 closed-loop attribution 更强；但内容发现和短视频种草弱于 Meta/TikTok |
+| Walmart Connect / Target Roundel / retail media | 零售媒体同类 | Amazon 规模和 marketplace 数据领先 |
+| Netflix/CTV platforms | 视频广告库存 | Amazon 有 Prime Video + shopping data；但视频广告加载过高会伤用户体验 |
+
+广告是 Amazon 当前最干净的高增长利润池，AI 让创意生成、投放、Rufus 品牌提示和 Prime Video 定向更强。风险是监管、隐私、广告加载率和 AI shopping 改变原有 sponsored search 形式。
+
+## 十二、最终投资判断
+
+Amazon 当前不是单纯“电商恢复”故事，也不是纯“AI 芯片概念”。更准确的判断是：
+
+- **短期，AWS 增速和 RPO 已经给出 AI 基建需求硬证据。** Q1 2026 AWS `+28%`、RPO `$364B`、chips run-rate `>$20B`，比单纯管理层口头乐观更有分量。
+- **中期，Trainium 是 Amazon 的关键胜负手。** 如果 Trainium3/4 能在 Anthropic/OpenAI/Bedrock 外继续获得生产负载，Amazon 可以把 AI 基建从“买 NVIDIA 再出租”的低差异化模式，升级为“自研 silicon + 云平台 + 多模型 runtime”的高 ROIC 模式。
+- **长期，广告和零售 AI 是现金流防守。** 即便 AI cloud 回收期拉长，广告业务仍以 `20%+` 增速、`$70B+` TTM 规模支撑利润；Rufus/Creative Agent/Prime Video Ads 提供低资本强度的 AI monetization。
+- **最大风险是 CapEx 前置。** 2026 年约 `$200B` CapEx、TTM PPE purchases `$151B`、FCF `$1.2B`，意味着投资者需要接受“现金流先变差、订单和收入后兑现”的节奏。一旦 AWS 增速或 utilization 不跟上，估值会先压缩。
+
+股票研究上，未来 12 个月最需要盯：
+
+1. Q2/Q3 2026 AWS revenue growth 是否维持 `25%+`；
+2. AWS RPO 是否继续高于 `$364B`，以及加权剩余 life 是否稳定；
+3. Trainium3 是否出现 Anthropic 以外的大客户生产案例；
+4. OpenAI `2GW` Trainium 2027 ramp 是否按期；
+5. AWS margin 是否守住 `35%` 附近；
+6. CapEx 是否继续上调、FCF 是否持续为低个位数或转负；
+7. Ads 是否维持 `20%+` 增速，Rufus/Creative Agent 是否带来可量化广告增量。
+
+## 十三、资料来源
+
+### 外部官方和市场资料
+
+- Amazon Q1 2026 results，2026-04-29：https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-First-Quarter-Results/default.aspx
+- Amazon Q4 2025 results，2026-02-05：https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Fourth-Quarter-Results/
+- Amazon Q1 2026 Form 10-Q：https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/amzn-20260331.htm
+- Amazon 2025 Form 10-K：https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm
+- Amazon Q3 2025 results：https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Third-Quarter-Results/default.aspx
+- Amazon Q2 2025 results：https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Second-Quarter-Results/
+- Amazon Q1 2025 results：https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-First-Quarter-Results/default.aspx
+- StockAnalysis AMZN statistics，2026-06-20 检索：https://stockanalysis.com/stocks/amzn/statistics/
+- AWS EC2 Trn3 UltraServers：https://aws.amazon.com/ec2/instance-types/trn3/
+- AWS Neuron Trn3 architecture：https://awsdocs-neuron.readthedocs-hosted.com/en/latest/about-neuron/arch/neuron-hardware/trn3-arch.html
+- About Amazon Trainium3 UltraServers：https://www.aboutamazon.com/news/aws/trainium-3-ultraserver-faster-ai-training-lower-cost
+- AWS re:Invent 2025 AI announcements：https://www.aboutamazon.com/news/aws/aws-re-invent-2025-ai-news-updates
+- Anthropic and Amazon 5GW compute announcement，2026-04-20：https://www.anthropic.com/news/anthropic-amazon-compute
+- OpenAI and Amazon strategic partnership，2026-02-27：https://openai.com/index/amazon-partnership/
+
+### 项目内行业资料
+
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+- `行业调研/产业背景/全球AI需求与Token经济框架_2026-06-11.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_激光器、EML与光器件_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`

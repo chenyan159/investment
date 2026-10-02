@@ -1,0 +1,161 @@
+# 公司收入传导与价值传导评估：Energy Transfer LP（ET）
+
+报告日期：2026-06-12  
+评估对象：Energy Transfer LP，NYSE: ET  
+方案对象：company-evaluation / ET / Energy Transfer LP  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM，即 2026-06-12 起未来 12 个月经营窗口。  
+边界声明：本报告只评估收入、利润、现金流和经营价值传导；不输出投资评级、目标价、股价区间、估值倍数判断或公司排序；未读取、引用或继承 `特征量化/`、Signals、回归、评分或模型比较资料。  
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口，覆盖 2026H2 到 2027H1。FY2026/FY2027、长期项目全周期收入、2028-2030 data center / LNG / Desert Southwest 等只作为补充或远期期权，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：公司未给正式收入指引，收入本身受 Sunoco 燃料分销、原油/NGL 商品价格和合并口径影响较大，不能等同于经营质量。可用锚点为：2025 年收入 `$85.536B`；2026Q1 收入 `$27.771B`，TTM 收入约 `$92.287B`（2025 收入 - 2025Q1 `$21.020B` + 2026Q1 `$27.771B`）；2026Q1 年化收入约 `$111.1B`，但包含商品价格和 Sunoco/Parkland 合并影响。公司给出的正式经营指引是 2026E Adjusted EBITDA `$18.2-18.6B`、2026E growth capex `$5.5-5.9B`。
+- 重要产品/业务线：1）天然气管输/储存与数据中心/电厂 firm gas supply；2）Permian midstream gathering/processing；3）NGL/refined products 管输、分馏、储存、出口；4）crude oil transport/services；5）SUN、USAC 与 Other，其中 Sunoco 是大收入低利润率 pass-through，USAC 是压缩服务间接受益。
+- NTM 公司收入四情景：悲观 `$92-99B`；基准 `$103-110B`；乐观 `$112-122B`；极度乐观 `$123-135B`。这些收入区间不是估值判断，且高收入不必然代表高质量利润，因为 commodity pass-through 占比高。
+- 利润或 EBITDA 四情景：悲观 Adjusted EBITDA `$17.2-17.9B`；基准 `$18.6-19.6B`；乐观 `$19.8-21.0B`；极度乐观 `$21.0-22.5B`。基准略高于 2026 全年指引中点，是因为 NTM 包含 Hugh Brinson、Mustang Draw I/II、NGL 扩容等 2026H2/2027H1 贡献。
+- 最大传导瓶颈：已签天然气容量和项目 backlog 能否在 NTM 内从“可参与需求”转成 in-service、billable firm transportation / processing / storage revenue；尤其是 Hugh Brinson Q4 2026/Q1 2027、Oracle/Nexus/Oklahoma 供气、Mustang Draw I/II、NGL export/fractionation 项目。
+- 最大利润率变量：高毛利 fee-based 运输/储存/分馏收入占比能否提高，同时 Sunoco/Parkland 的低毛利商品通过性、原油/NGL 营销价差和项目成本不侵蚀 consolidated margin。
+- 最大现金流变量：growth capex 上修后的资本效率。ET 现金流不是“收入越高越好”，而是新增管线/处理/储存项目能否以合理 capex-to-EBITDA 转化为长期 fee cash flow，同时保持 DCF 对分配和债务的覆盖。
+- 可信度：基准为中高。A/B 级证据覆盖 Q1 2026 收入、分部 EBITDA、2026 EBITDA 指引、growth capex、多个长期 firm gas contracts 和明确项目时间表；但项目级收入费率、确认节奏、客户 FID/许可和 Sunoco 合并后的 revenue mix 仍需估算。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 天然气管输/储存与数据中心/电厂 firm gas supply | 2026Q1 Intrastate + Interstate revenue `$1.790B`；Q1 Segment EBITDA `$956M`；2026E 天然气管线/储存 EBITDA 约 `$3.50B` | Q1 revenue 约 `6.4%`；EBITDA 约 `19%` 指引口径 | ET 的 NTM 增量主线，data center/power 直接暴露在此确认 | A/B：已披露收入、分部 EBITDA、6+ Bcf/d contracted capacity、18 年加权合约期、$25B+ firm transportation fees | 既有管输进入基准；Oracle 已流气、Nexus/Oklahoma/Hugh Brinson 部分进入基准；Fermi/AR LOI 只进乐观或上限 | Desert Southwest、Springerville、FGT Phase IX/South Florida、Entergy 2028 起收入为远期 |
+| Permian midstream gathering/processing | 2026Q1 revenue `$3.044B`；Q1 EBITDA `$887M`；gathered volumes `21.680 BBtu/d` | Q1 revenue 约 `11.0%`；2026E EBITDA 约 `18%` | NGL 和天然气管线后端 feedstock 来源；Mustang Draw I/II 是 NTM 处理能力增量 | A/B：分部收入、分部 EBITDA、Mustang Draw I/II 各 `275 MMcf/d` 时间表 | 进入基准；I 2026-06、II Q4 2026 对 NTM 有明确贡献 | 额外后续处理厂、Permian 进一步电力/数据中心需求只作跟踪 |
+| NGL/refined products 管输、分馏、储存、出口 | 2026Q1 revenue `$6.673B`；Q1 EBITDA `$1.163B`；2026E EBITDA 约 `$4.42B` | Q1 revenue 约 `24.0%`；2026E EBITDA 约 `24%` | 当前最大利润池，非 AI 但最能支撑现金流 | A/B：分部收入、volume、Frac IX、Nederland/Marcus Hook、firm commitments | 进入基准；Q1 volume + export 增长、Frac IX / Nederland / Sabina 2 支持 NTM 增量 | 全球 NGL 出口份额重估、长期 ethane/propane 出口增长为远期 |
+| Crude oil transport/services | 2026Q1 revenue `$7.758B`；Q1 EBITDA `$869M`；crude transport `7.289 MMbbl/d` | Q1 revenue 约 `27.9%`；2026E EBITDA 约 `18%` | 大基数现金流与抵消项，AI 相关性弱 | A/B：分部收入、volume、Bayou Bridge/Southern Illinois/Price River 项目 | 进入基准，但增速保守；主要用于公司层面现金流和风险抵消 | DAPL/区域原油长周期扩容、价差套利不纳入乐观主因 |
+| SUN、USAC 与 Other | 2026Q1 Sunoco revenue `$10.690B`、USAC `$331M`、All Other `$1.054B`；Q1 EBITDA `$1.062B` | Q1 revenue 约 `43.5%`；2026E EBITDA 约 `21%` | Sunoco 抬高 revenue 但利润质量低；USAC compression 是天然气流量间接受益 | A：合并分部收入和 EBITDA；USAC/J-W Power 收购可见 | Sunoco 进入收入基准但低权重解释利润；USAC 进入基准，compression 作为天然气增长间接受益 | Parkland 协同超预期、更多 compression shortage 只进乐观 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不判断 ET 份额、收入确认或利润率。需求单位选择每条业务最能解释的物理量：天然气用 `Bcf/d` 或 `MMcf/d`，NGL/原油用 `MMbbl/d` 或 `MBbl/d`，Sunoco/USAC 用燃料分销量和 compression horsepower / gas throughput 的方向性。相对预期以公司已披露项目节奏、Q1 2026 运行水平、2026 指引和本地行业资料中的 AI 上电约束为锚。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 天然气管输/储存与数据中心/电厂 firm gas supply | ET 披露 `6+ Bcf/d` contracted pipeline capacity、18 年加权期、`$25B+` expected firm transportation fees；Oracle `~900 MMcf/d` 首条管线已 in service；Hugh Brinson `2.2 Bcf/d` Q4 2026/Q1 2027 | NTM 内实际 service / near-service 仅 `1.0-1.6 Bcf/d`；Hugh Brinson 或 Nexus/Oklahoma 延迟 | `1.8-2.8 Bcf/d` 转 service / near-service；Oracle、Oklahoma、Nexus、Hugh Brinson Phase I/II 按披露节奏推进 | `3.0-4.0 Bcf/d` 在 NTM 内进入 service、NTP 或可收费启动；新增 hyperscaler/utility 订单补充 | `4.5 Bcf/d+` 快速转化，且 firm fee 价格/mix 高于现有基准 | 相对当前可见 `6+ Bcf/d` backlog：悲观只兑现低位，基准兑现约三分之一到接近一半，乐观显著超进度 | 正向：AI 园区 time-to-power、燃气自备发电、EIA 预计 2027 夏季电力用气创高；反证：air permit、FERC/ROW、客户 FID、SOFC/电网替代、数据中心延迟 |
+| Permian midstream gathering/processing | 2026Q1 gathered `21.680 BBtu/d`；NGLs produced `1.155 MBbl/d`；Mustang Draw I/II 合计 `550 MMcf/d` 新处理能力 | 处理需求低于当前节奏，新增处理厂爬坡慢，volume 持平或 `-2% to +2%` | Permian 供给和处理需求正常，volume `+3-7%`，Mustang Draw I/II 按期贡献 | volume `+8-12%`，WTG/Crestwood 协同和 producer growth 更强 | `+12%+` 且 downstream takeaway 不受限 | 绝对增量约 `0.6-2.5 BBtu/d` gathered demand 区间 | 基准符合当前预期；乐观需 Permian producer volume 和 NGL takeaway 同时强 | 正向：处理厂建设中且客户支持；反证：Waha basis、producer capex 下修、处理费竞争、Permian takeaway 约束 |
+| NGL/refined products 管输、分馏、储存、出口 | 2026Q1 NGL transportation `2.428 MMbbl/d`、terminal `1.725 MMbbl/d`、fractionation `1.206 MMbbl/d`；NGL export capacity `1.4MM+ bbl/d` | 需求仍高但低于当前定价路径，volume 持平到 `+3%`，出口 premium 回落 | volume `+4-9%`，Frac IX、Nederland、Sabina 2 和 Permian NGL 支撑正常增长 | volume `+10-15%`，export / storage / fractionation 利用率更高 | `+15%+` 且出口、分馏、storage 同时紧缺 | NGL transport 增量约 `0.1-0.4 MMbbl/d`；fractionation 增量约 `0.05-0.20 MMbbl/d` | 基准略高于常规中游增长，乐观需出口/分馏瓶颈持续 | 正向：Q1 volume 和 export 创纪录；反证：LPG/ethane 全球价差、化工需求、出口码头竞争、营销收益一次性 |
+| Crude oil transport/services | 2026Q1 crude transport `7.289 MMbbl/d`、terminal `3.329 MMbbl/d`；Q1 EBITDA `$869M` | 原油量/价差低于预期，transport `-3% to +1%`，Bakken tariff/deficiency benefit 不重复 | volume `+1-5%`，Bayou Bridge、Price River、Southern Illinois 等项目逐步贡献 | `+5-9%`，Permian/Gulf Coast flow 和项目投运更强 | `+10%+`，需油价/产量/价差共同支撑 | 绝对 volume 变化约 `-0.2 to +0.7 MMbbl/d` | 基准为稳中小增；不是公司乐观主驱动 | 正向：Q1 transport 创纪录；反证：油价下行、Bakken/Permian 竞争、一次性 deficiency payment 不可外推 |
+| SUN、USAC 与 Other | Q1 Sunoco revenue `$10.690B`，USAC revenue `$331M`、EBITDA `$188M`；USAC 受 J-W Power 和 gas compression demand 支撑 | Sunoco fuel volumes/价差与 Parkland 整合低于预期；USAC utilization 高但成本上升 | Sunoco 合并口径正常，USAC compression demand 随天然气流量增长 | USAC utilization/定价明显强，Parkland/TanQuid 协同超预期 | compression shortage 非线性强化，Sunoco 协同也兑现 | 收入变化主要来自 Sunoco commodity pass-through；USAC EBITDA 增量可达 `$0.1-0.3B` | 对公司收入很敏感，对经营质量贡献需折扣 | 正向：J-W Power 增量、gas flows；反证：Sunoco 低 margin、少数股东权益、整合成本、燃料价格波动 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断产品需求能否进入 ET 的 NTM 收入表，以及当前可收入化基数，不预测增长质量。所有“可参与需求”必须经过客户、合同、交付、投运和收费路径过滤。公司未披露项目级 tariff 时，本报告使用 revenue 区间和 EBITDA 区间表达，并标注“无法可靠量化”的位置。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 天然气管输/储存与数据中心/电厂 firm gas supply | 2026Q1 Intrastate + Interstate revenue `$1.790B`；现有管线/储存 A 级；`6+ Bcf/d`、`$25B+` firm fees 为 backlog B 级；Oracle 已流气 B/A 边界 | 直接 | 高 fee-based，firm transportation / storage / lateral 收费；commodity 敏感度低 | NTM revenue `$7.0-7.4B`；仅承认现有管输和已流气项目 | `$7.6-8.4B`；纳入 Oracle、Oklahoma、Nexus、Hugh Brinson 局部贡献 | `$8.5-9.6B`；更多 contracted volumes 提前转 service | `$9.8-11.0B`；要求 4Bcf/d+ 转化，不代表当前预期 | 基准略高于 2026 run-rate，因 NTM 包含项目投运 | A/B；Fermi/AR 为 C/D | 是；但 Fermi、AR、Desert Southwest、Entergy 2028 不进基准 | 已披露 revenue/EBITDA、长期合约、项目时间表；未披露 tariff 处保守折扣 | NTM 核心增量；直接 AI/data center revenue 当前仍小，但可确认路径最清楚 |
+| Permian midstream gathering/processing | 2026Q1 revenue `$3.044B`；EBITDA `$887M`；Mustang Draw I/II 各 `275 MMcf/d` | 直接 | 处理费、gathering fee、部分商品/imbalance；和 NGL 后端协同 | `$11.6-12.2B` | `$12.4-13.5B` | `$13.6-15.0B` | `$15.0-16.5B` | 基准符合新增处理厂和 WTG/Crestwood 协同预期 | A/B | 是 | 已在收入表；新增处理能力有明确投运时间 | 进入 NTM 基准，是天然气和 NGL 的供给端传导 |
+| NGL/refined products 管输、分馏、储存、出口 | 2026Q1 revenue `$6.673B`；EBITDA `$1.163B`；Frac IX、Nederland、Sabina 2 等项目 B 级 | 直接 | fee + marketing；分馏/终端/出口 fee 质量高，marketing 与价格/库存有关 | `$25.5-27.5B` | `$27.5-31.0B` | `$31.0-35.0B` | `$35.0-39.0B` | 基准符合 Q1 volume 与扩容项目；乐观需 export premium 延续 | A/B | 是 | 分部收入、volume、出口/分馏/储存项目 | 进入基准；是公司利润和现金流最重要支柱之一 |
+| Crude oil transport/services | 2026Q1 revenue `$7.758B`；EBITDA `$869M`；volume 创纪录 | 直接 | fee + terminal + 一些价差/库存/deficiency；比 gas/NGL 增长属性弱 | `$27.0-29.0B` | `$29.0-33.0B` | `$33.0-36.0B` | `$36.0-39.0B` | 基准接近当前 run-rate；不把 Q1 一次性利好完全外推 | A/B | 是 | 已披露收入和 volume；项目规模可见 | 进入基准但增速保守；主要是抵消和现金流基座 |
+| SUN、USAC 与 Other | Q1 revenue `$12.075B` 合计，其中 Sunoco `$10.690B`，USAC `$331M`，All Other `$1.054B` | Sunoco 直接但低利润；USAC 间接受益 | Sunoco 低毛利 commodity pass-through；USAC compression margin 较好；Other 波动 | `$40.0-44.0B` | `$44.0-50.0B` | `$50.0-56.0B` | `$56.0-62.0B` | 基准符合合并后 revenue run-rate，但利润解释需折扣 | A；USAC 增量 B | 是；Sunoco 只以低质量收入处理 | 已合并收入表；USAC/J-W Power 和 compression demand 可见 | 进入公司收入基准，但不作为高质量经营价值主线 |
+| Desert Southwest、Springerville、FGT Phase IX/South Florida、Entergy 2028+、Lake Charles LNG | 当前 NTM revenue `0` 或开发性极小；项目时间多在 2028-2030 | 直接或潜在直接 | 若建成为长期 fee revenue，但 NTM 不确认 | `0` | `0` | 无法可靠量化 | 无法可靠量化 | 不属于 NTM 当前预期 | B/C；Lake Charles 暂停 | 否 | 2028-2030 时间表或已暂停；无 NTM revenue confirmation | 移入附录/仅作跟踪，不能进入 NTM 基准收入 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第三节需求和第四节收入基数出发，评估每条业务在 NTM 内对 ET 贡献的收入和利润。利润贡献主要采用 Segment Adjusted EBITDA 或 EBITDA 方向，因为 ET 的中游业务以非 GAAP EBITDA/DCF 管理，且产品级 GAAP 净利无法可靠量化。表内收入不是 TAM、客户电力总预算、项目总资本开支或天然气商品总额。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 天然气管输/储存与数据中心/电厂 firm gas supply | 悲观产品 | `$7.0-7.4B` | EBITDA `$3.2-3.5B` | 稳定到小幅下行，项目费用和延迟压制 | 低于当前指引和项目节奏 | 现有 A 级收入仍在；但只承认已运行/几乎确定项目 | 保留为下行情景 | Hugh Brinson/Nexus/Oklahoma 延迟、客户 FID、许可、发电设备交期 |
+| 天然气管输/储存与数据中心/电厂 firm gas supply | 基准产品 | `$7.6-8.4B` | EBITDA `$3.6-4.1B` | 小幅上行，firm fee 占比改善 | 符合当前预期正常兑现 | Q1 segment EBITDA `$956M`；2026E 19% EBITDA mix；`6+ Bcf/d` backlog；Oracle first pipe | 保留 | 未披露 tariff，Hugh Brinson NTM 只有部分贡献 |
+| 天然气管输/储存与数据中心/电厂 firm gas supply | 乐观产品 | `$8.5-9.6B` | EBITDA `$4.2-4.8B` | 上行，长约 fee / storage / laterals 提升 | 高于当前基准 | 3.0-4.0 Bcf/d 进入 service/NTP；新增 hyperscaler/utility long-term contracts | 保留为有证据乐观 | 若只是 LOI 或客户总 capex，不得进收入 |
+| 天然气管输/储存与数据中心/电厂 firm gas supply | 极度乐观产品 | `$9.8-11.0B` | EBITDA `$4.9-5.7B` | 明显上行，但需高利用率和高 fee mix | 只代表 NTM 上限 | 多个核心项目同时提前、追加容量和 storage fee 重估 | 下移为“乐观上限” | 任一核心项目缺 FID/许可即不能保留极度乐观 |
+| Permian midstream gathering/processing | 悲观产品 | `$11.6-12.2B` | EBITDA `$3.1-3.4B` | 下行到稳定，commodity/processing 成本压制 | 低于当前预期 | Q1 revenue/EBITDA A 级，但 Winter Storm Uri prior-period comp 和价格影响 | 保留 | Waha basis、producer activity、处理费竞争、成本上涨 |
+| Permian midstream gathering/processing | 基准产品 | `$12.4-13.5B` | EBITDA `$3.5-3.9B` | 稳定到小幅上行 | 符合当前预期 | gathered volume `21.680 BBtu/d`；Mustang Draw I/II `550 MMcf/d` 新能力 | 保留 | 新处理厂爬坡、良率/设备/客户 volume |
+| Permian midstream gathering/processing | 乐观产品 | `$13.6-15.0B` | EBITDA `$4.0-4.4B` | 上行，利用率和下游协同改善 | 高于基准 | WTG/Crestwood 协同、Permian volume、tailgate volumes 使用 ET gas/NGL pipelines | 保留 | 不能把 Permian 总产量直接算 ET 收入 |
+| Permian midstream gathering/processing | 极度乐观产品 | `$15.0-16.5B` | EBITDA `$4.5-5.0B` | 明显上行 | NTM 上限 | Permian gas、NGL takeaway、processing utilization 同时突破 | 下移为乐观上限 | 多供竞争和处理费压价会限制利润率非线性 |
+| NGL/refined products 管输、分馏、储存、出口 | 悲观产品 | `$25.5-27.5B` | EBITDA `$4.1-4.4B` | 稳定到小幅下行，marketing 利润回落 | 略低于当前预期 | Q1 分部收入/EBITDA A 级；但部分 marketing/inventory benefit 不应外推 | 保留 | 全球 LPG/ethane 价差、库存/hedge、出口竞争 |
+| NGL/refined products 管输、分馏、储存、出口 | 基准产品 | `$27.5-31.0B` | EBITDA `$4.5-5.1B` | 小幅上行 | 符合当前预期 | Q1 NGL transport +12%、fractionation +11%、exports +19%；Frac IX/Nederland/Sabina 2 | 保留 | 项目投运节奏和 export premium |
+| NGL/refined products 管输、分馏、储存、出口 | 乐观产品 | `$31.0-35.0B` | EBITDA `$5.1-5.8B` | 上行，fee + export/storage mix 改善 | 高于预期 | NGL export bottleneck、storage/chilling、fractionation 高利用率 | 保留 | 不得把全球 NGL 总出口需求直接替代 ET share |
+| NGL/refined products 管输、分馏、储存、出口 | 极度乐观产品 | `$35.0-39.0B` | EBITDA `$5.8-6.5B` | 明显上行 | NTM 上限 | 出口、分馏、storage 同时紧缺且 pricing/mix 改善 | 下移为乐观上限 | marketing/pass-through 属性使收入极度上修不等于利润极度上修 |
+| Crude oil transport/services | 悲观产品 | `$27.0-29.0B` | EBITDA `$3.1-3.4B` | 下行，一次性贡献消退 | 低于当前 run-rate | Q1 EBITDA `$869M` A 级，但 one-time deficiency / inventory benefit 有不可重复性 | 保留 | 油价、产量、tariff、Bakken/Permian 竞争 |
+| Crude oil transport/services | 基准产品 | `$29.0-33.0B` | EBITDA `$3.4-3.9B` | 稳定 | 符合当前预期 | Q1 crude transport `7.289 MMbbl/d`；Bayou Bridge/Price River/Southern Illinois | 保留 | 增速弱于 gas/NGL；不是 AI 传导主线 |
+| Crude oil transport/services | 乐观产品 | `$33.0-36.0B` | EBITDA `$3.9-4.3B` | 小幅上行 | 高于基准但不改变公司结构 | Permian/Gulf Coast flow stronger，项目贡献 | 保留为次要乐观 | 原油收入 pass-through 与价差使利润弹性受限 |
+| Crude oil transport/services | 极度乐观产品 | `$36.0-39.0B` | EBITDA `$4.3-4.7B` | 上行有限 | 上限 | 原油产量、价差、项目利用率同步强 | 下移为乐观上限 | 低 AI 相关，不允许驱动公司极度乐观 |
+| SUN、USAC 与 Other | 悲观产品 | `$40.0-44.0B` | EBITDA `$3.6-3.9B` | 混合；Sunoco 低 margin，USAC 稳 | 低于合并 run-rate | Q1 Sunoco revenue 大但低毛利；USAC 成本上升 | 保留 | Parkland 整合成本、少数股东权益、燃料价格 |
+| SUN、USAC 与 Other | 基准产品 | `$44.0-50.0B` | EBITDA `$4.0-4.4B` | 稳定到小幅上行 | 符合当前预期 | Q1 Sunoco EBITDA `$858M`，USAC `$188M`；J-W Power 增量 | 保留 | consolidated revenue 会被 Sunoco 放大，需在公司层面折扣利润质量 |
+| SUN、USAC 与 Other | 乐观产品 | `$50.0-56.0B` | EBITDA `$4.4-4.9B` | USAC 上行，Sunoco 协同改善 | 高于当前基准 | compression demand、J-W Power synergy、Parkland/TanQuid 协同 | 保留 | 低质量 pass-through 收入不能直接推动经营质量 |
+| SUN、USAC 与 Other | 极度乐观产品 | `$56.0-62.0B` | EBITDA `$4.9-5.4B` | 有上行但结构复杂 | NTM 上限 | compression shortage + Sunoco 协同同时兑现 | 下移为乐观上限 | 少数股东权益和合并口径限制母体现金流转化 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、Adjusted EBITDA、归属合伙人净利润和自由现金流方向。收入区间剔除明显重复计算，不把客户总项目金额、天然气商品总预算、data center 总 capex 或远期 pipeline 直接计入 ET 收入。公司毛利率/经营利润率为 consolidated accounting 口径，受 Sunoco commodity pass-through 影响较大；经营质量更看 Adjusted EBITDA、DCF、fee-based mix 和 capex-to-EBITDA。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$92-99B` | TTM 约 `0-7%`；相对 2025 约 `+8-16%` | 低于当前 run-rate 和 2026 EBITDA 指引隐含路径；收入仍可能增长但利润低于预期 | `21-23%` | `8.5-9.5%` | Adjusted EBITDA `$17.2-17.9B`；归属合伙人净利 `$3.6-4.3B` | DCF 可覆盖分配，但 growth capex 后自由现金流偏紧；债务/EBITDA 改善慢 | 中 | 天然气项目延迟、NGL marketing 回落、Sunoco 整合成本、capex 上修未转 EBITDA |
+| 基准公司 | `$103-110B` | TTM 约 `+12-19%`；相对 2025 约 `+20-29%` | 接近当前 revenue run-rate、2026 EBITDA 指引和可见项目节奏正常兑现 | `22-24%` | `9.5-10.8%` | Adjusted EBITDA `$18.6-19.6B`；归属合伙人净利 `$4.7-5.4B` | DCF 覆盖分配并支持大部分 maintenance/growth funding；growth capex 后接近中性到小幅正 | 中高 | 项目投运节奏、分部 mix、Sunoco pass-through 稀释、利息和维护资本 |
+| 乐观公司 | `$112-122B` | TTM 约 `+21-32%`；相对 2025 约 `+31-43%` | 高于当前预期；不是单一小项目造成，需 gas + NGL + USAC 同时好于基准 | `23-25%` | `10.5-11.8%` | Adjusted EBITDA `$19.8-21.0B`；归属合伙人净利 `$5.5-6.4B` | DCF 明显改善；若 capex 不再继续上修，分配覆盖和去杠杆能力提升 | 中 | 3.0-4.0 Bcf/d 新增 gas capacity 转 service、NGL export/fractionation 高利用、项目成本受控 |
+| 极度乐观公司 | `$123-135B` | TTM 约 `+33-46%`；相对 2025 约 `+44-58%` | 显著高于当前预期；要求多个核心传导环节同时突破，不是远期期权简单相加 | `24-26%` | `11.5-12.8%` | Adjusted EBITDA `$21.0-22.5B`；归属合伙人净利 `$6.4-7.5B` | DCF 与内部资金能力显著增强，但若 capex 同步继续上修，FCF 改善会被部分抵消 | 低到中 | 数据中心/电厂 gas backlog 非线性提前、NGL pricing/mix、USAC compression tightness、执行和许可全顺利 |
+
+合成检查：
+
+- 未把 Desert Southwest、Springerville、FGT Phase IX/South Florida、Entergy 2028+、Lake Charles LNG 计入 NTM 基准收入。
+- 未把 `6+ Bcf/d` 全部签约容量按 18 年总费用一次性计入 NTM；只按 in-service / near-service / partial-year revenue 处理。
+- Sunoco/Parkland 可能显著抬高 consolidated revenue，但其低毛利和少数股东权益使经营价值传导弱于天然气 fee revenue。
+- NGL/refined 和 crude revenue 对商品价格敏感，收入上行不自动转化为 EBITDA 上行。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景位置。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一个风险只在它实际影响的层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 Adjusted EBITDA `$4.94B`、DCF `$2.70B`、2026E EBITDA 指引上修至 `$18.2-18.6B` | 公司汇总 | 支撑基准 revenue run-rate，但 revenue 非正式指引 | 支撑 EBITDA 基准高可信 | 支撑分配覆盖和 growth capex funding | 基准保留，悲观不应因一般性风险过度下移 |
+| `6+ Bcf/d` contracted pipeline capacity、18 年加权期、`$25B+` expected firm transportation fees | 收入基数/产品贡献 | 支撑 gas firm transportation 的 B 级收入路径，但不能全部进 NTM | 高 fee-based 属性支撑利润率 | 依赖 in-service、lateral、meter、客户项目进度 | 基准保留；未投运/条件化项目保守折扣 |
+| Oracle `~900 MMcf/d` 首条管线已 in service，Nexus `~150 MMcf/d` end-2026，Oklahoma `~300 MMcf/d` 分期 | 收入确认 | 提供 NTM 可确认收入证据 | firm fee 高于 commodity pass-through | 执行风险在项目层处理 | 乐观保留；已流气部分上移至基准 |
+| Hugh Brinson `2.2 Bcf/d` Q4 2026/Q1 2027 | 产品贡献 | 对 NTM 只有部分-year 收入；对 2027 run-rate 更大 | 若利用率高，EBITDA 转化强 | 施工、ROW、压缩设备和客户节点是风险 | 基准只纳入部分贡献；完整 run-rate 移入补充口径 |
+| Mustang Draw I/II `550 MMcf/d` 处理能力 | 产品贡献 | 支撑 midstream revenue | 利用率上升带来 operating leverage，但处理费竞争存在 | 2026-06 和 Q4 2026 时间表明确 | 基准保留；乐观需快速爬坡 |
+| NGL transport/fractionation/export Q1 volume 增长和项目扩容 | 产品贡献/公司利润 | 支撑 NGL revenue 和 fee收入 | fractionation/export/storage mix 支撑 margin | 项目投运和全球需求影响现金流 | 基准保留，乐观保留 |
+| Crude Q1 一次性 deficiency / inventory 相关利好 | 产品贡献 | 不应全部外推收入/segment margin | 防止高估 crude profit run-rate | 一次性项会影响现金流质量 | 悲观和基准中只处理一次，不在公司层重复惩罚 |
+| Sunoco/Parkland 合并导致 revenue 放大 | 公司组合 | 抬高 consolidated revenue | 低毛利和少数股东权益稀释经营质量 | 整合成本和营运资本波动 | 公司收入保留，利润质量折扣 |
+| Fermi、AR Data Center LOI、Desert Southwest、Springerville、FGT、Entergy 2028+ | 证据校准 | 多数不属于 NTM 可确认收入 | 长期 fee 质量可能好，但 NTM 不确认 | 许可/FID/条件前置 | 移入附录或仅作跟踪；不进基准 |
+| EIA/行业资料显示 2027 电力用气和 data center 自备发电需求增强 | 需求 | 支撑外部需求池 | 不直接证明 ET 捕获或费率 | 需合同、路径和投运 | 仅支持第一步需求；不直接上移收入基准 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 若天然气项目延迟、NGL 利润回落、Sunoco 整合成本上升，NTM EBITDA 低于 2026 指引隐含 run-rate | 现有 A 级收入和 fee-based cash flow 仍强，Q1 EBITDA/DCF 高 | 项目延迟、commodity margin 回落、capex 上修 | 保留 | 下行情景，非主情景 | 中 | 同一项目延迟只在收入确认层处理，不在需求、利润和公司层重复三次扣减 |
+| 基准 | 2026 指引和可见项目正常兑现，gas/NGL/midstream 推动 NTM EBITDA 高于 FY2026 指引中点 | A/B 级证据充足：Q1 segment data、2026 guidance、contracted gas capacity、Mustang Draw、NGL 项目 | 项目级 tariff 未披露，完整 Hugh Brinson/Entergy/Desert Southwest 不在 NTM | 保留 | 主情景 | 中高 | Sunoco revenue 低质量只在公司组合层折扣，不再在每个产品层重复压低 |
+| 乐观 | data center/power gas 进度快于基准，NGL 和 USAC 同步改善 | Oracle、Nexus、Oklahoma、Hugh Brinson、NGL volume、compression demand 均有公司特定证据 | 需要明确“谁买、何时确认、为什么 ET 捕获”；不能只靠 AI 电力总需求 | 保留 | 有证据的上行情景 | 中 | data center 需求强只提升天然气需求和部分合同，不自动提升 NGL/crude/Sunoco |
+| 极度乐观 | gas capacity、NGL、USAC、项目执行和 margin 同时突破，EBITDA `$21B+` | `6+ Bcf/d` backlog 和多个长约给出上限基础 | 任一核心环节缺 FID/许可/in-service 或 fee 证据，均不能作为主预测 | 下移 | 乐观上限/低可信上限 | 低到中 | 远期项目不能在 NTM 内重复计入，也不能把 `$25B+` 全周期 fees 一次性收入化 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入大概率落在 `$103-110B`，Adjusted EBITDA `$18.6-19.6B`，归属合伙人净利约 `$4.7-5.4B`。收入增速表面可能被 Sunoco/Parkland 和商品价格放大，经营质量应以 fee-based segment EBITDA、DCF 覆盖、天然气/NGL 项目投运和 growth capex 转化率判断。
+- NTM 收入结论：ET 的可确认收入基准来自 A 级收入表分部和 B 级长期合同/项目，而不是 AI 数据中心总 capex 或电力总需求。天然气 firm transportation 是最重要的增量收入线，但 NTM 只能确认已流气、已投运或明确在 2026H2/2027H1 进入服务的部分。
+- 利润/现金流结论：利润质量优先级为天然气 firm transportation/storage、NGL fractionation/export/storage、Permian processing、USAC compression，高于 Sunoco 低毛利 pass-through 和 crude 中一次性/价差收益。基准下 DCF 能覆盖分配，growth capex 后自由现金流接近中性到小幅正；若项目按期且 capex 不继续大幅上修，现金流质量改善。
+- 主要传导瓶颈：从 backlog 到 revenue 的路径包括客户 FID/permit、pipeline/lateral construction、meter/compression、in-service、firm fee billing 和 partial-year recognition。尤其要避免把 `6+ Bcf/d` 签约容量、`$25B+` 全周期 firm fees、Desert Southwest 2029 项目和 Entergy 2028 项目提前计入 NTM。
+- 乐观情景成立条件：2026H2-2027H1 内 3.0-4.0 Bcf/d 的 data center/power-related capacity 进入服务或近服务；Hugh Brinson Phase I/II 按期且快速利用；Mustang Draw I/II 顺利爬坡；NGL export/fractionation/storage 利用率保持高位；USAC compression demand 强且 Sunoco 整合不吞噬现金流。
+- 极度乐观情景成立条件：需求、公司捕获、利润率和执行同时突破。具体需要：Oracle/Nexus/Oklahoma/Hugh Brinson 之外的新增客户转正式长约，Fermi/AR 类条件化机会转强约并提前，NGL 项目无延迟且 pricing/mix 改善，growth capex 单位回报不恶化。任一条件缺失，极度乐观应降为乐观上限。
+- 悲观情景触发条件：Hugh Brinson、Nexus、Oklahoma 或 Oracle 扩展明显延迟；NGL export/fractionation margin 回落；Sunoco/Parkland 整合成本和营运资本占用高于预期；capex 继续上修但 EBITDA 指引不跟随；利息和维护资本压缩 DCF 覆盖。
+- 后续跟踪数据：每季度更新 Intrastate/Interstate/Midstream/NGL/Crude/SUN/USAC segment EBITDA；contracted MMcf/d 转 in-service MMcf/d；Hugh Brinson 实际投运日期；Mustang Draw I/II 利用率；NGL exports/fractionation/terminal volumes；growth capex 与 maintenance capex；DCF attributable to partners；debt/EBITDA；Sunoco/Parkland 整合成本；客户 FID、air permit、FERC/州监管进度。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：ET 最新公司经营数据以 2026Q1（季度截至 2026-03-31，披露 2026-05-05）为主；项目与 investor presentation 以 May 2026 为主；本地行业资料日期为 2026-06-11；报告生成日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Energy Transfer, Q1 2026 results and updated 2026 guidance, 2026-05-05: https://ir.energytransfer.com/news-releases/news-release-details/energy-transfer-reports-first-quarter-2026-results-and-updates
+  - Energy Transfer, May 2026 Investor Presentation: https://www.energytransfer.com/wp-content/uploads/2026/05/ET-May-2026-Investor-Presentation_Final.pdf
+  - Energy Transfer, Q1 2026 Earnings Presentation: https://www.energytransfer.com/wp-content/uploads/2026/05/ET-Q1-2026-Earnings-Presentation_Final.pdf
+  - Energy Transfer, Q4 2025 and FY2025 results: https://ir.energytransfer.com/news-releases/news-release-details/energy-transfer-reports-fourth-quarter-2025-results
+  - Energy Transfer, 2026 Outlook, 2026-01-05: https://ir.energytransfer.com/news-releases/news-release-details/energy-transfer-announces-2026-outlook
+  - EIA, Natural gas for power generation flat this summer, record high forecast in summer 2027: https://www.eia.gov/todayinenergy/detail.php?id=67725
+  - EIA, Short-Term Energy Outlook natural gas page, June 2026: https://www.eia.gov/outlooks/steo/report/natgas.php
+  - EIA, AEO2026 data center server energy use: https://www.eia.gov/todayinenergy/detail.php?id=67704
+  - IEA, Energy supply for AI: https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai
+  - EPRI, Powering Intelligence 2026 executive summary / load growth: https://powering-intelligence.epri.com/executive-summary.html
+- 项目内允许资料：
+  - `公司调研/电力_发电_能源_储能/ET_Energy Transfer LP_公司调研_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 公司正式经营锚点：Adjusted EBITDA `$18.2-18.6B`，growth capex `$5.5-5.9B`。
+  - 2027 run-rate 的关键补充变量：Hugh Brinson 全年化、Mustang Draw I/II 全年化、NGL export/fractionation/storage 项目、data center/power gas contracts 从 partial-year 变 full-year。
+  - 2028-2030 远期期权：Entergy Louisiana/Tiger Lateral、Bethel storage late 2028、FGT Phase IX Q4 2028、Desert Southwest Q4 2029、Springerville Q4 2029、FGT South Florida Q1 2030。上述项目不进入 NTM 基准。
+  - Lake Charles LNG：2025-12 已暂停开发，本报告不纳入 NTM，也不作为极度乐观收入来源。
+- 主要来源：优先公司官方 IR、SEC/press release、EIA/IEA/EPRI 和项目内允许行业资料；未使用金融市场价格、估值倍数、目标价或投资评级作为经营价值传导证据。

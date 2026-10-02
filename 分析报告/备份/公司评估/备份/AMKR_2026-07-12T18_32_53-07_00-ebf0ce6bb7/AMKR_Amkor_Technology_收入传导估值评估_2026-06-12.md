@@ -1,0 +1,177 @@
+# 公司收入传导与价值传导评估：Amkor Technology
+
+报告日期：2026-06-12  
+公司代号：AMKR  
+公司名称：Amkor Technology, Inc.  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM 经营窗口，即 2026Q2-2027Q1，补充参考 2026 全年、2027 年化 run-rate、2028+ Arizona 远期期权。  
+资料边界：本报告使用 `公司调研/`、`行业调研/` 下与 AMKR、OSAT、先进封装、封装基板、中介层、RDL、ATE、SLT、CPO/硅光相关资料，并用 Amkor 最新 SEC 文件、公司公告和投资者日材料校验经营锚点；未读取、引用或继承 `特征量化/`、Signals、回归、结构化评分或全公司排序结论。  
+限制：本报告只评估收入、利润、现金流和经营质量传导，不输出投资评级、目标价、股价区间、估值倍数判断或全公司排名。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 2026Q2-2027Q1 NTM。2028 年 Arizona Peoria 先进封装产能、2029-2030 投资者日长期目标、14-reticle CoWoS、CoPoS、玻璃基板和大规模 Optical I/O 只作为远期期权或附录跟踪，不进入 NTM 基准收入。
+- 当前收入基准、指引和 run-rate：2025 收入 67.08 亿美元；最近四季收入约 70.71 亿美元；2026Q1 收入 16.85 亿美元，同比增长约 27%；公司给出 2026Q2 收入指引 17.5-18.5 亿美元、毛利率 14.5%-15.5%、净利润 1.05-1.30 亿美元；2026 全年 capex 指引 25-30 亿美元。
+- 重要产品/业务线：Advanced SiP 与移动/edge AI 模组、FCBGA/2.5D/HDFO/S-SWIFT/S-Connect 等 AI/HPC 和网络先进封装、Test services/wafer-level test/SLT/burn-in、Automotive/Industrial advanced packaging、Mainstream wirebond/传统封装、CPO/硅光/Lightmatter 类早期项目、Arizona 美国先进封装产能。
+- NTM 公司收入四情景：悲观 69-73 亿美元；基准 75-80 亿美元；乐观 82-88 亿美元；极度乐观 90-100 亿美元。基准相对 2025 绝对增加约 7-13 亿美元，主要来自 Q2 指引兑现、移动/通信新品季节性恢复、Advanced Products 正常增长和测试复杂度提升；极度乐观需要 AI/HPC second-source、测试紧缺、mobile 强周期和高利用率同时成立。
+- 利润或 EBITDA 四情景：悲观毛利率 13.0%-14.5%、EBITDA 10.5-12.5 亿美元；基准毛利率 15.0%-16.5%、EBITDA 13.5-15.5 亿美元；乐观毛利率 16.5%-18.0%、EBITDA 16.0-19.0 亿美元；极度乐观毛利率 18.0%-21.0%、EBITDA 20.0-25.0 亿美元。利润弹性必须来自 high-value advanced mix、test mix、利用率和良率，而不是单纯收入增长。
+- 最大传导瓶颈：AMKR 没有重大 backlog，客户 forecast 绑定性弱；Computing 口径包含 data center、infrastructure、PC/laptop、storage，不能直接等同 AI 数据中心；TSMC CoWoS 和 ASE 等平台仍掌握最高价值先进封装主通道，AMKR 更像 second source、区域化供应链和特定客户项目承接者。
+- 最大利润率变量：Advanced Products 中 AI/HPC、test、HDFO/S-SWIFT/S-Connect 的占比是否上升，且毛利率是否从 14%-15% 区间稳定推向 16%-18%；若收入增长主要由大客户移动/通信拉货或低毛利材料 pass-through 驱动，利润质量会弱于收入增速。
+- 最大现金流变量：2026 capex 25-30 亿美元显著高于 2025 capex 9.05 亿美元和 Q1 2026 capex 2.25 亿美元。即使损益表改善，NTM 自由现金流大概率承压；客户预付款、CHIPS 奖励、可转债融资和 Arizona 里程碑决定现金流韧性。
+- 可信度：基准情景可信度中高；乐观情景可信度中；极度乐观可信度低到中。主要原因是公司级收入、产品组合和指引证据强，但 AI/HPC 客户项目、CPO、S-Connect/S-SWIFT 量产金额和 Arizona NTM 收入证据不足。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Advanced SiP 与移动/edge AI 模组 | 2025 约 30.80 亿美元；Q1 2026 未单独披露但主要在 Advanced Products 和 Communications 内 | 约 43%-46% 年收入 | 最大现有收入池，决定公司季节性、客户集中和利用率 | A | 进入基准；按现有量产和手机/通信新品周期处理 | 否 |
+| FCBGA/2.5D/HDFO/S-SWIFT/S-Connect AI/HPC 与网络先进封装 | 当前可见年化估算 4-8 亿美元，其中直接 AI/HPC 约 2-5 亿美元；未公司单独披露 | 约 6%-11% 估算 | NTM 增量弹性和叙事核心，但客户项目金额不透明 | B/C | FCBGA 和部分 2.5D 进入基准；S-SWIFT/S-Connect 只小比例或进入乐观 | 部分是 |
+| Test services、wafer-level test、SLT、burn-in | Q1 2026 约 1.85 亿美元；最近四季约 7.9 亿美元 | 约 11%-12% | AI/HBM/HPC 测试复杂度上升，利润质量可能优于普通封装 | A/B | 进入基准；按测试占比小幅上升处理 | 否 |
+| Automotive/Industrial advanced packaging | Q1 2026 约 3.54 亿美元；最近四季约 13-14 亿美元 | 约 19%-21% | 平滑 mobile 周期，认证周期和可靠性提高客户粘性 | A | 进入基准；按汽车/工业正常修复和 ADAS/电动化处理 | 否 |
+| Mainstream wirebond、传统 power 与成熟封装 | 2025 约 11.52 亿美元；Q1 2026 约 3.13 亿美元年化 12.5 亿美元 | 约 17%-19% | 成熟现金流和产能填充，但价格压力大、AI 相关性弱 | A | 进入基准但不作为增长引擎 | 否 |
+| CPO、硅光、Lightmatter 3D photonics packaging | 当前估算小于 0.5 亿美元年化，多为工程、验证或小批项目 | 小于 1% 估算 | 可改变长期收入结构，但 NTM 量产证据不足 | C/D | 基准仅保留极小工程收入；收入化主要在乐观或极度乐观 | 是 |
+| Arizona Peoria 美国先进封装与测试产能 | 2026 当前量产收入约 0；生产预计 2028 年开始 | 0% | 美国本土先进封装战略期权，TSMC/Apple/NVIDIA 生态相关 | B/C 对长期，NTM 为 D | 不进入 NTM 基准收入；只影响 capex、客户验证和长期订单可见度 | 是 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不评估 AMKR 份额、收入确认、利润率或公司汇总。需求锚点优先采用行业调研中的 2026-2027 AI 先进封装、基板/RDL、测试、CPO 需求口径，以及 AMKR 现有终端市场收入结构。无法从公开资料可靠拆成行业单位时，填“无法可靠量化”，并用需求方向、预算来源和采用节奏描述。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Advanced SiP 与移动/edge AI 模组 | AMKR 2025 Advanced SiP 约 30.80 亿美元；Communications 占 2025 收入 46%、Q1 2026 占 44% | 高端手机/通信客户拉货低于新品季；需求 -5% 至持平 | 手机/通信新品和 edge AI 模组按正常季节性恢复，需求 +3% 至 +10% | AI phone、RF 前端和高端模组 mix 提升，需求 +12% 至 +22% | 大客户 AI phone 物料升级和换机周期同步，需求 +25% 以上 | 以 AMKR 可见 SiP 需求池计，悲观较当前预期低约 2-4 亿美元，乐观高约 3-6 亿美元 | 基准符合当前预期；乐观需 mix 证据 | 2025 SiP 已是大收入池但 2023-2025 基本稳定，反证是大客户集中和消费电子拉货波动 |
+| FCBGA/2.5D/HDFO/S-SWIFT/S-Connect | 行业调研估算 2026 高端 AI 2.5D/CoWoS 服务约 120-180 亿美元；OSAT advanced packaging 外溢需要客户验证 | 高端 AI package 仍强但主要被 TSMC/ASE 吸收，OSAT 外溢小；需求池 100-140 亿美元 | CoWoS/2.5D、HBM3E/早期 HBM4、ABF/RDL 和 AI ASIC 正常扩张；需求池 120-180 亿美元 | GB300、MI350、Broadcom/TPU/Trainium3 拉动 second-source 需求；需求池 160-240 亿美元 | CoWoS 仍极紧，客户明显采用多 OSAT second source；需求池 220-300 亿美元 | 相对基准，悲观低 20-40 亿美元，乐观高 40-60 亿美元，极度高 100 亿美元以上 | 乐观高于当前预期但需客户 design-in；极度乐观为上限 | 行业资料显示 CoWoS/large 2.5D、HBM、基板、KGD/test 同时紧；反证是客户平台锁定 TSMC、认证推迟或 AI capex 下修 |
+| Test services、wafer-level test、SLT、burn-in | Q1 2026 test 占 AMKR 收入 11%；行业资料显示 HBM/AI package test、SLT、burn-in 和 probe/ATE 是 2026 交付约束 | HBM/AI 芯片测试强度上升但上游 CoWoS/HBM 卡住数量，服务需求仅低个位数增长 | 测试时间、burn-in、SLT attach 正常提升，服务需求 +8% 至 +18% | GB300/HBM4 验证、custom ASIC 多客户并发，服务需求 +20% 至 +35% | 测试成为显性瓶颈，客户为交付支付溢价，服务需求 +40% 以上 | 以 AMKR test 年化约 7.9 亿美元为锚，悲观基本持平，基准增加约 0.6-1.4 亿美元，乐观增加约 1.6-2.8 亿美元 | 基准符合当前预期；乐观有行业证据 | 行业调研显示 AI SoC/HBM/SLT 测试复杂度提升；反证是测试时间优化、AI 芯片延期或上游封装卡住 |
+| Automotive/Industrial advanced packaging | Q1 2026 Auto/Industrial 占 AMKR 收入 21%，折合约 3.54 亿美元；汽车 ADAS、电动化和工业恢复为锚 | 汽车库存消化延续，工业需求疲弱，需求 -5% 至持平 | ADAS、功率、工业和安全类封装按正常替换与库存修复，需求 +5% 至 +12% | ADAS/电动化恢复强于预期，需求 +15% 至 +25% | 汽车电子周期和高可靠先进封装同步上修，需求 +30% 以上 | 以当前年化约 14 亿美元需求锚，基准增加约 0.7-1.7 亿美元，乐观增加约 2-3.5 亿美元 | 基准符合当前预期 | 支持来自 Q1 2026 同比修复和汽车认证粘性；反证是车厂库存、价格年降和工业周期 |
+| Mainstream wirebond、传统 power 与成熟封装 | 2025 Mainstream Products 约 11.52 亿美元；传统封装成熟、竞争激烈 | 普通消费、传统 power、成熟封装价格下行，需求 -8% 至 -3% | 需求基本持平或低个位数增长，价格压力抵消数量 | 周期补库存带来 +5% 至 +10% | 传统业务随 broad-based 半导体复苏 +12% 以上，但利润弹性有限 | 基准变化约 -0.5 至 +0.5 亿美元；乐观增加约 0.6-1.2 亿美元 | 基准为平稳，不上修 | 传统业务不应因 AI 主题被上修；反证是价格下行和客户多供 |
+| CPO、硅光、Lightmatter 3D photonics packaging | 行业资料认为 2026 CPO/optical I/O 仍以交换侧早期部署、NRE 和 design-in 为主；AMKR 有 Lightmatter 合作与 ECTC 展示 | 客户继续验证，NTM 需求主要是工程服务；无法可靠量化 | 需求为 NRE、样品、小批试产；AMKR 可参与但金额小 | 1-2 个客户进入小批量，NTM 需求池 1-3 亿美元级服务机会 | CPO/光 I/O 在首批 AI fabric 或 optical interposer 中提前收入化，NTM 需求池 3-6 亿美元级 | AMKR 可参与部分无法可靠量化，基准收入贡献很小 | 基准仅作跟踪；乐观高于当前预期 | 正证是 Lightmatter 和 ECTC；反证是 CPO 可靠性、外置激光、现场维护、客户架构延迟 |
+| Arizona Peoria 美国先进封装与测试产能 | TSMC Arizona 后段配套、CHIPS 最高 4.07 亿美元、Peoria 70 亿美元两阶段规划，生产预计 2028 年 | NTM 只有建设和认证需求，不形成服务需求 | 建设、设备订购、客户 qualification 正常推进 | 客户承诺、预付款或 qualification 进展公开化 | 多个关键客户明确锁定 2028+ 产能，但 NTM 仍非量产 | NTM 可确认收入约 0；长期需求池显著但不进 NTM | NTM 不进入基准 | 官方时间表指向 2028 生产；把 2028 产能算入 2026Q2-2027Q1 是时间错配 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断需求能否进入 AMKR NTM 收入表，以及当前可收入化基数。不预测增长，不判断利润率。收入锚点分为 A 已披露收入/指引，B 订单/合同/客户项目，C design win/认证/产能规划，D 样品/早期合作，E 只有主题相关性。可参与需求不等于可确认收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Advanced SiP 与移动/edge AI 模组 | 2025 Advanced SiP 约 30.80 亿美元；已在收入表中可见 | 直接 | 规模化量产，毛利受大客户议价和利用率影响 | 29-32 亿美元 | 32-34.5 亿美元 | 35.5-38.5 亿美元 | 40-43 亿美元 | 基准符合现有量产和新品节奏；悲观低于当前预期 | A | 是 | 已披露收入、长期量产、大客户项目和季节性 | NTM 基准主收入池 |
+| FCBGA/2.5D/HDFO/S-SWIFT/S-Connect | Advanced Products 内可见；具体 AI/HPC 项目未单独披露；当前估算年化 4-8 亿美元 | 直接 | 高复杂度但折旧和良率风险高；若客户绑定，毛利高于传统封装 | 4-7 亿美元 | 6-10 亿美元 | 10-16 亿美元 | 18-25 亿美元 | 基准只承认 FCBGA/部分 2.5D；乐观才纳入更多 S-SWIFT/S-Connect | B/C | 部分是 | Advanced Products 已披露，2.5D/FCBGA 量产能力可见；S-SWIFT/S-Connect 多为技术/客户导入证据 | FCBGA/部分 2.5D 进基准；新平台小比例或乐观 |
+| Test services、wafer-level test、SLT、burn-in | Q1 2026 test 占收入 11%，约 1.85 亿美元；最近四季约 7.9 亿美元 | 直接 | 服务与封装 co-located，复杂 AI/HPC 测试有较好利润质量，但设备折旧重 | 7.5-8.5 亿美元 | 8.5-9.5 亿美元 | 10-12 亿美元 | 13-15 亿美元 | 基准符合当前 run-rate 小幅上升；乐观需 test mix 和占比提升 | A/B | 是 | 已披露 test 占比、行业测试复杂度提升、Q2 指引支撑 | NTM 基准增长项 |
+| Automotive/Industrial advanced packaging | Q1 2026 占收入 21%，约 3.54 亿美元；最近四季约 13-14 亿美元 | 直接 | 高可靠性和认证粘性较好，但车规价格年降 | 12.5-14 亿美元 | 14-16 亿美元 | 16-19 亿美元 | 20-22 亿美元 | 基准符合当前修复路径 | A | 是 | 已披露终端收入占比和同比改善 | NTM 基准稳定器 |
+| Mainstream wirebond、传统 power 与成熟封装 | 2025 Mainstream 约 11.52 亿美元；Q1 2026 约 3.13 亿美元 | 直接 | 成熟低增，毛利率低，价格压力大 | 10-11 亿美元 | 11.5-12.5 亿美元 | 12.5-13.5 亿美元 | 13.5-15 亿美元 | 基准接近当前 run-rate；不因 AI 上修 | A | 是 | 已披露产品收入 | NTM 基准但非增长引擎 |
+| CPO、硅光、Lightmatter 3D photonics packaging | Lightmatter 合作、ECTC 展示、公司研发披露；量产收入未披露 | 直接但早期 | 若绑定客户可高附加值，当前多为工程/NRE | 0-0.3 亿美元 | 0-0.5 亿美元 | 1-3 亿美元 | 3-6 亿美元 | 基准仅为工程收入，不代表当前主预期 | C/D | 仅极小比例 | 合作与技术展示是 C/D 级；缺少客户量产金额和交付时间表 | 不进 NTM 基准主收入；乐观上限或附录 |
+| Arizona Peoria 美国先进封装与测试产能 | 2026 当前无量产收入；公司披露建设和 2028 生产预期 | 直接但时间错配 | 长期可能高毛利和区域化溢价，NTM 为 capex 消耗 | 0 | 0 | 0-0.5 亿美元预生产或认证收入 | 0-1 亿美元预生产或客户准备收入 | NTM 不代表当前收入预期；只影响长期订单可见度 | B/C 对长期，D 对 NTM | 否 | TSMC MOU、CHIPS、Peoria 项目强，但生产时间在 2028 | 移入附录和长期跟踪，不进 NTM 基准 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内可给 AMKR 贡献的收入和利润。利润贡献以毛利贡献和经营利润方向为主；公司未披露产品级经营利润，具体产品 EBIT 填“无法可靠量化”或用区间估算。不得把行业 TAM、客户总预算、项目总金额或 2028+ pipeline 直接写成 AMKR NTM 收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Advanced SiP 与移动/edge AI 模组 | 悲观 | 29-32 亿美元 | 毛利约 3.8-4.8 亿美元；产品 EBIT 无法可靠量化 | 利用率低，毛利率偏低 | 低于当前预期 | 大客户新品节奏弱或消费电子拉货延后 | 保留为悲观 | Apple/Qualcomm 集中，订单可调 |
+| Advanced SiP 与移动/edge AI 模组 | 基准 | 32-34.5 亿美元 | 毛利约 4.8-5.8 亿美元 | 稳定到小幅改善 | 符合当前预期 | 2025 SiP 约 30.80 亿美元，Q2 指引支持 H1 复苏 | 保留 | 2023-2025 SiP 增长有限，不能因 AI phone 自动高增 |
+| Advanced SiP 与移动/edge AI 模组 | 乐观 | 35.5-38.5 亿美元 | 毛利约 5.9-7.1 亿美元 | mix 改善 | 高于当前预期 | AI phone、RF 前端、edge module 物料升级 | 保留但要求大客户拉货证据 | 客户压价和材料 pass-through |
+| Advanced SiP 与移动/edge AI 模组 | 极度乐观 | 40-43 亿美元 | 毛利约 7.2-8.6 亿美元 | 明显改善但受大客户议价约束 | 显著高于当前预期 | 大客户换机和高端模组升级同步 | 下移为乐观上限 | 当前缺少非线性 SiP 订单披露 |
+| FCBGA/2.5D/HDFO/S-SWIFT/S-Connect | 悲观 | 4-7 亿美元 | 毛利约 0.4-0.9 亿美元；ramp 成本可能吞噬 EBIT | 低利用率或良率压制 | 低于当前预期 | TSMC/ASE 吸收大部分 AI 封装；AMKR 项目延期 | 保留 | 客户认证和设计锁定 |
+| FCBGA/2.5D/HDFO/S-SWIFT/S-Connect | 基准 | 6-10 亿美元 | 毛利约 0.9-1.8 亿美元 | 小幅改善 | 符合当前可见路径 | Advanced Products Q1 13.72 亿美元；FCBGA/2.5D 量产能力；行业需求强 | 保留 | 未披露 AI/HPC 客户收入，不能把 CoWoS TAM 直接归给 AMKR |
+| FCBGA/2.5D/HDFO/S-SWIFT/S-Connect | 乐观 | 10-16 亿美元 | 毛利约 1.8-3.5 亿美元 | 改善，取决于良率和 utilization | 高于当前预期 | CoWoS/2.5D 紧缺、customer ASIC 多项目、OSAT second-source | 保留但可信度中 | 需要回答谁买、买什么、何时确认 |
+| FCBGA/2.5D/HDFO/S-SWIFT/S-Connect | 极度乐观 | 18-25 亿美元 | 毛利约 4.0-6.5 亿美元；若高利用率 EBIT 弹性大 | 明显扩张 | 显著高于当前预期 | 多个 AI ASIC/GPU/网络 ASIC 客户同时放量，AMKR 捕获 second-source | 下移为极度上限，可信度低中 | 当前缺少订单/backlog 和客户量产金额 |
+| Test services、wafer-level test、SLT、burn-in | 悲观 | 7.5-8.5 亿美元 | 毛利约 1.1-1.4 亿美元 | 基本持平或受折旧拖累 | 低于当前预期 | AI 封装数量被上游瓶颈限制，测试占比不升 | 保留 | 测试服务收入随客户出货而非设备订单线性增长 |
+| Test services、wafer-level test、SLT、burn-in | 基准 | 8.5-9.5 亿美元 | 毛利约 1.4-1.8 亿美元 | 小幅改善 | 符合当前预期 | Q1 test 占比 11%；行业 SLT/burn-in 测试复杂度提升 | 保留 | 产品级毛利未披露 |
+| Test services、wafer-level test、SLT、burn-in | 乐观 | 10-12 亿美元 | 毛利约 1.9-2.7 亿美元 | 改善，利润质量较高 | 高于当前预期 | HBM4、GB300、custom ASIC 增加测试时间和 KGD/SLT 需求 | 保留 | 设备商捕获更高利润，AMKR 是服务执行方 |
+| Test services、wafer-level test、SLT、burn-in | 极度乐观 | 13-15 亿美元 | 毛利约 2.8-4.0 亿美元 | 明显扩张 | 显著高于当前预期 | 测试成为客户交付瓶颈，AMKR 产线高利用率 | 保留为上限 | 需 test 占比升至 13%-15% 且毛利同步改善 |
+| Automotive/Industrial advanced packaging | 悲观 | 12.5-14 亿美元 | 毛利约 1.5-2.1 亿美元 | 稳定但不扩张 | 低于当前预期 | 汽车库存和工业需求拖累 | 保留 | 汽车价格年降 |
+| Automotive/Industrial advanced packaging | 基准 | 14-16 亿美元 | 毛利约 2.0-2.7 亿美元 | 稳定小幅改善 | 符合当前预期 | Q1 2026 占比 21%，ADAS/电动化长期需求 | 保留 | 车规认证长也意味着 ramp 不快 |
+| Automotive/Industrial advanced packaging | 乐观 | 16-19 亿美元 | 毛利约 2.6-3.6 亿美元 | 改善 | 高于当前预期 | ADAS、功率和工业恢复强于预期 | 保留 | 不能把汽车长期电子化直接算成 NTM 高增 |
+| Automotive/Industrial advanced packaging | 极度乐观 | 20-22 亿美元 | 毛利约 3.6-4.6 亿美元 | 改善但非 AI 式非线性 | 显著高于当前预期 | 汽车电子周期强复苏且先进封装占比提升 | 下移为乐观上限 | 当前无大额车规订单披露 |
+| Mainstream wirebond、传统 power 与成熟封装 | 悲观 | 10-11 亿美元 | 毛利约 0.8-1.1 亿美元 | 下行 | 低于当前预期 | 价格下行、传统需求弱 | 保留 | 竞争激烈 |
+| Mainstream wirebond、传统 power 与成熟封装 | 基准 | 11.5-12.5 亿美元 | 毛利约 1.1-1.5 亿美元 | 基本稳定 | 符合当前 run-rate | 2025 Mainstream 11.52 亿美元，Q1 2026 约 3.13 亿美元 | 保留 | 不是增长引擎 |
+| Mainstream wirebond、传统 power 与成熟封装 | 乐观 | 12.5-13.5 亿美元 | 毛利约 1.3-1.8 亿美元 | 小幅改善 | 略高于当前预期 | broad-based 半导体补库存 | 保留但降权 | 普通封装价格压力 |
+| Mainstream wirebond、传统 power 与成熟封装 | 极度乐观 | 13.5-15 亿美元 | 毛利约 1.5-2.1 亿美元 | 有限改善 | 高于当前预期但利润质量一般 | 周期强复苏 | 下移为乐观上限 | 低毛利收入不能自动转化为高利润 |
+| CPO、硅光、Lightmatter 3D photonics packaging | 悲观 | 0-0.3 亿美元 | 亏损或低毛利工程收入 | 费用投入大 | 低于题材预期 | 客户继续验证，无量产 | 保留 | 路线未定 |
+| CPO、硅光、Lightmatter 3D photonics packaging | 基准 | 0-0.5 亿美元 | 无法可靠量化，主要 NRE/工程收入 | 对公司级利润影响小 | 符合保守预期 | Lightmatter 合作和 ECTC 展示，但无量产金额 | 保留为基准小项 | C/D 证据，不进入主收入 |
+| CPO、硅光、Lightmatter 3D photonics packaging | 乐观 | 1-3 亿美元 | 毛利约 0.2-0.8 亿美元，受良率和 NRE 影响 | 可能改善 | 高于当前预期 | 1-2 个客户小批量或 NRE 放大 | 保留但可信度低中 | 需要明确客户和交付时间 |
+| CPO、硅光、Lightmatter 3D photonics packaging | 极度乐观 | 3-6 亿美元 | 毛利约 0.8-1.8 亿美元 | 可显著改善但不稳定 | 显著高于当前预期 | CPO/optical I/O 进入首批 AI fabric 或 photonic interposer 部署 | 下移为乐观上限 | NTM 缺量产证据 |
+| Arizona Peoria 美国先进封装与测试产能 | 悲观 | 0 | 利润贡献 0，capex 消耗 | 现金流压力 | 符合 NTM 实际 | 建设期 | 保留 | 2028 前无量产 |
+| Arizona Peoria 美国先进封装与测试产能 | 基准 | 0 | 利润贡献 0；现金流为负 | 不进入损益收入 | 符合当前预期 | 公司称生产预计 2028 年开始 | 移入附录 | 不得把长期项目算入 NTM |
+| Arizona Peoria 美国先进封装与测试产能 | 乐观 | 0-0.5 亿美元预生产或认证收入 | 利润无法可靠量化，仍主要消耗现金 | 对 NTM 利润不利 | 高于当前 NTM 预期 | 客户 qualification 或预付款可见 | 仅作跟踪 | 收入确认不清 |
+| Arizona Peoria 美国先进封装与测试产能 | 极度乐观 | 0-1 亿美元预生产或客户准备收入 | 利润无法可靠量化 | 仍不改 NTM 公司利润主线 | 上限，不代表当前预期 | 多客户锁定 2028+ 产能 | 移入附录 | 生产时间在 2028，NTM 兑现不足 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为 AMKR NTM 总收入、毛利率、经营利润率、EBITDA、净利润和自由现金流方向。不讨论市场定价。汇总前已排除 Arizona 2028 产能重复计入，避免把 CPO/硅光验证收入和 AI/HPC second-source 收入重复计入 Advanced Products 主盘。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 69-73 亿美元 | 较 2025 +3% 至 +9%；较最近四季 -2% 至 +3% | 低于 Q2 指引延伸和当前 run-rate；成长业务不足以抵消 mobile/传统业务或客户延迟 | 13.0%-14.5% | 5.0%-6.5% | EBITDA 10.5-12.5 亿美元；净利润 3.0-4.2 亿美元 | 负，约 -13 至 -18 亿美元，受 25-30 亿美元 capex 压制 | 中 | 无重大 backlog、客户 forecast 调整、低利用率、价格压力、Arizona 前置投资 |
+| 基准公司 | 75-80 亿美元 | 较 2025 +12% 至 +19%；较最近四季 +6% 至 +13% | 接近 Q2 指引正常兑现、H2 季节性和当前 Advanced Products run-rate | 15.0%-16.5% | 7.0%-8.5% | EBITDA 13.5-15.5 亿美元；净利润 4.2-5.5 亿美元 | 负，约 -10 至 -16 亿美元；经营现金流改善但 capex 更大 | 中高 | Advanced mix 改善幅度、test 占比、客户拉货节奏、材料与折旧 |
+| 乐观公司 | 82-88 亿美元 | 较 2025 +22% 至 +31%；较最近四季 +16% 至 +24% | 高于当前基准预期，且不只靠小基数项目；需要 AI/HPC、test 和 mobile 同步改善 | 16.5%-18.0% | 8.5%-10.0% | EBITDA 16.0-19.0 亿美元；净利润 6.5-8.5 亿美元 | 仍可能为负，约 -7 至 -12 亿美元；若客户预付款增加则压力缓解 | 中 | AI/HPC 客户 design-in、良率、利用率、客户议价、折旧 |
+| 极度乐观公司 | 90-100 亿美元 | 较 2025 +34% 至 +49%；较最近四季 +27% 至 +41% | 显著高于当前预期；需求、公司捕获、利润质量和执行质量同时突破 | 18.0%-21.0% | 10.0%-13.0% | EBITDA 20.0-25.0 亿美元；净利润 9.0-13.0 亿美元 | 接近盈亏平衡至 -6 亿美元；需高 OCF、客户预付款和 capex 里程碑配合 | 低到中 | 多个 AI/HPC second-source 项目同时量产、test/SLT 紧缺、mobile 强周期、无重大 ramp 延迟 |
+
+汇总判断：
+
+- 基准最可能落在 75-80 亿美元收入、15%-16.5% 毛利率区间。这个判断主要由 A 级收入表证据和 Q2 指引支撑，而不是由 AI 先进封装 TAM 直接推导。
+- 乐观收入需要 FCBGA/2.5D/HDFO/S-SWIFT/S-Connect 从当前估算 4-8 亿美元年化向 10-16 亿美元上行，同时 test services 向 10-12 亿美元靠拢，并且 Advanced SiP 不拖累。
+- 极度乐观收入和利润不能只靠 Arizona、CPO 或某个技术展示；必须同时看到 Computing 占比上升、test 占比上升、毛利率稳定突破 18%、客户项目名称或交付节奏更清楚。
+- 自由现金流是 NTM 最弱项。即使基准利润改善，2026 capex 25-30 亿美元会使自由现金流明显为负；这不是经营收入传导失败，而是公司主动进入重投资期的现金流结果。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在实际影响层级处理一次，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 收入 16.85 亿美元、同比 +27%，Q2 指引 17.5-18.5 亿美元 | 公司收入、产品基数 | 支持 NTM 基准 75-80 亿美元 | Q2 毛利率中点 15.0% 支持小幅改善 | 指引兑现改善 OCF，但不抵消 capex | 基准保留 |
+| Advanced Products Q1 占 81.4%、2025 占 82.8% | 收入基数、产品贡献 | 支持 Advanced Products 为主收入池 | mix 向先进封装倾斜，但利润率仍受客户议价 | 高 capex 需要利用率支撑 | 基准保留，乐观需更多证据 |
+| 2025 Advanced SiP 约 30.80 亿美元 | 收入基数 | 作为 NTM 最大 A 级基数 | 稳定但非高弹性 | 大客户拉货决定库存和营运资本 | 基准保留 |
+| 公司无重大 backlog、客户承诺短期且可调整 | 收入确认、执行可信度 | 限制把行业需求直接收入化 | 低利用率会压制毛利率 | 订单延迟会放大 capex 压力 | 悲观保留；乐观不因此重复惩罚 |
+| 2026 capex 指引 25-30 亿美元 | 现金流、执行 | 不直接增加 NTM 收入 | 折旧和 ramp 成本限制利润率 | NTM FCF 明显承压 | 基准现金流下移 |
+| CoWoS/2.5D、HBM、ABF/RDL、测试为 2026 硬瓶颈 | 需求、产品贡献 | 支持 FCBGA/2.5D/test 乐观收入 | 高价值 mix 可提升毛利 | 需要设备、材料、人才和良率配套 | 乐观保留 |
+| TSMC/ASE 等平台掌握高端 AI 主封装通道 | 公司捕获、份额 | 限制 AMKR 从 TAM 到收入的转化率 | 客户议价压制 OSAT 毛利 | 客户验证周期拖慢 ramp | 极度乐观下移为上限 |
+| Test services 占比约 11%，行业 SLT/burn-in 需求增强 | 产品利润、公司利润 | 支持 NTM test 收入 8.5-9.5 亿美元基准 | 若占比升至 13%-15%，毛利率有上行 | 测试设备和现场集成决定交付 | 基准保留，乐观保留 |
+| CPO/Lightmatter/硅光项目 | 新品、远期期权 | NTM 基准收入很小 | NRE/小批可高毛利但不稳定 | 认证、可靠性、测试和维护风险高 | 基准仅作跟踪；乐观保留低可信 |
+| Arizona Peoria 2028 生产预期、TSMC 合作和 CHIPS 奖励 | 远期期权、现金流 | 不进入 NTM 基准收入 | 2026-2027 更多是折旧前投资和项目成本 | capex、融资、客户预付款和里程碑关键 | 移入附录 |
+| 客户集中：2025 前十大客户 72%，Apple 29.8%，Qualcomm 11.1% | 收入确认、组合风险 | mobile/通信客户拉货波动影响公司收入 | 大客户议价限制利润率 | forecast 变化影响营运资本 | 悲观保留；不在每个产品重复惩罚 |
+| Automotive/Industrial Q1 占 21% | 产品组合 | 支持基准稳定器 | 车规认证提高粘性但价格年降 | 周期慢、现金周转较稳 | 基准保留 |
+| Mainstream Products 2025 约 11.52 亿美元 | 抵消项 | 提供成熟收入但不支撑高增 | 毛利率低，价格压力 | 可填补产能但不改善结构 | 基准保留但降权 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 69-73 亿美元，毛利率 13.0%-14.5%，FCF 明显为负 | 无重大 backlog、客户 forecast 可调、capex 前置、传统业务价格压力 | Q1/Q2 指引显示需求已经复苏，Advanced Products 和 test 并非低迷 | 保留 | 悲观下沿 | 中 | 客户集中和无 backlog 只在收入确认层级处理，不再重复压低每个产品 |
+| 基准 | NTM 收入 75-80 亿美元，毛利率 15.0%-16.5%，EBITDA 13.5-15.5 亿美元 | Q1 2026 收入 +27%，Q2 指引中点 18.0 亿美元，Advanced Products 占比稳定，SiP/test/auto 有 A 级基数 | 公司未给全年收入指引；AI/HPC 收入未单独披露；capex 压制 FCF | 保留 | 最可能情景 | 中高 | capex 对现金流的压力不再重复作为收入悲观证据 |
+| 乐观 | NTM 收入 82-88 亿美元，毛利率 16.5%-18.0%，test 和 AI/HPC advanced package 同步改善 | CoWoS/2.5D、HBM、ABF/RDL、SLT/burn-in 行业需求强；OSAT second-source 和区域化真实存在 | 缺少 AMKR 具体 AI/HPC 客户量产金额；TSMC/ASE 平台优势强 | 保留 | 乐观情景 | 中 | TSMC 平台锁定只限制 AMKR 捕获率，不重复否定行业需求 |
+| 极度乐观 | NTM 收入 90-100 亿美元，毛利率 18.0%-21.0%，多个核心环节同时突破 | 行业先进封装和测试瓶颈强，AMKR 有技术路线、全球 footprint、Arizona 长期战略位置 | 需要需求、公司捕获、利润率和执行同时成立；CPO/Arizona 多为远期；无 hard backlog | 下移 | 极度乐观上限，不作为当前预期 | 低到中 | CPO/Arizona 时间错配只在 NTM 纳入层级处理，不再重复惩罚公司现有 Advanced Products |
+
+## 8. 结论
+
+- 最可能情景：基准情景。AMKR 在 NTM 内最可能实现 75-80 亿美元收入，毛利率 15.0%-16.5%，经营利润率 7.0%-8.5%，EBITDA 13.5-15.5 亿美元，净利润 4.2-5.5 亿美元。这个结论来自 Q1/Q2 指引、Advanced Products 现有收入表证据、Advanced SiP 大基数、test 复杂度提升和汽车/工业稳定器。
+- NTM 收入结论：公司收入上行主要来自四条可收入化路径：一是 Advanced SiP 和 Communications/mobile 季节性恢复；二是 FCBGA/2.5D/HDFO 等先进封装在现有 Advanced Products 中继续提升；三是 test services 随 AI/HBM/HPC 复杂度增加小幅提高占比；四是 automotive/industrial 修复。CPO/硅光和 Arizona 不进入 NTM 基准主收入。
+- 利润/现金流结论：利润质量比收入增长更需要验证。毛利率如果停留在 14%-15%，说明收入增长主要是利用率修复、mobile 周期或低毛利 pass-through；毛利率稳定进入 16%-18%，才说明 AI/HPC advanced package、test mix、良率和规模效应真正留下利润。现金流在 NTM 大概率为负，核心原因是 capex 前置而非经营收入传导完全失败。
+- 主要传导瓶颈：最大瓶颈不是行业需求，而是 AMKR 的公司捕获率和收入确认证据。AI 先进封装需求池很大，但 TSMC/ASE/Intel/Samsung 平台和客户设计锁定决定了 AMKR 只能按客户项目、交付、认证和产能利用率逐步收入化。
+- 乐观情景成立条件：Computing 占比连续上移到 23%-25% 以上；test services 占比从 11%-12% 向 13%-15% 上行；管理层披露 AI/HPC、网络 ASIC、S-SWIFT/S-Connect、HDFO 或 2.5D 项目量产线索；毛利率稳定 16.5%-18%；客户预付款或长期产能安排支持 capex。
+- 极度乐观情景成立条件：CoWoS/2.5D 高端供给持续紧张，客户显著采用 AMKR second-source；多个 AI ASIC/GPU/网络 ASIC 项目在 NTM 内量产确认；test/SLT 成为显性瓶颈并由 AMKR 捕获；Advanced SiP 同时受益于 high-end mobile AI；毛利率突破 18%，且 capex 由客户预付款、政府资金或更强 OCF 部分覆盖。
+- 悲观情景触发条件：Q2 指引落空或 Q3/Q4 mobile 旺季弱；Computing 占比停留在 19%-22% 且主要来自 PC/storage；test 占比不升；毛利率回落至 13%-14%；capex 超支或 Arizona 里程碑推迟；客户 forecast 下修、取消或延迟。
+- 后续跟踪数据：Q2 2026 实际收入和毛利率；Q3 指引；Advanced Products 和 Mainstream Products 拆分；Communications、Computing、Auto/Industrial、Consumer 占比；test services 占比；Computing 是否明确包含 AI/HPC 客户；毛利率是否超过 16%；capex 实际支出、客户预付款、contract liabilities；Arizona 里程碑；S-SWIFT/S-Connect/CPO/Lightmatter 是否出现客户量产披露。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：AMKR 最新财务主锚为 2026Q1，季度截止日 2026-03-31，财报发布时间 2026-04-27；报告日期为 2026-06-12。NTM 主口径为 2026Q2-2027Q1。
+- 主要收入、订单、指引和利润率来源：AMKR 2025 Form 10-K、2026Q1 Form 10-Q、2026Q1 财报新闻稿、2026 Investor Day、公司 Arizona 和技术公告、本地 AMKR 公司调研文件。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：2026 全年收入未使用公司官方全年收入指引，因为公司 Q1 新闻稿只给出 Q2 指引；2028+ Arizona、2030 收入和毛利率长期目标只作为长期补充，不替代 NTM 主表。
+- 主要来源：
+  - `公司调研/封测_检测_计量_光罩/AMKR_Amkor_Technology_公司调研_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_封装基板、中介层与RDL_2026-06-10.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_封装内光IO与Optical_Chiplet_2026-06-11.md`
+  - Amkor 2026Q1 earnings release / SEC exhibit：`https://www.sec.gov/Archives/edgar/data/1047127/000104712726000017/amkr3312026erex-991.htm`
+  - Amkor 2026Q1 Form 10-Q：`https://www.sec.gov/Archives/edgar/data/1047127/000104712726000020/amkr-20260331.htm`
+  - Amkor 2025 Form 10-K：`https://www.sec.gov/Archives/edgar/data/1047127/000104712726000014/amkr-20251231.htm`
+  - Amkor 2026 Investor Day / SEC 8-K：`https://www.sec.gov/Archives/edgar/data/1047127/000104712726000036/amkr-20260521.htm`
+  - Amkor 2026 Investor Day blog：`https://amkor.com/blog/amkor-2026-investor-day-nasdaq/`
+  - Amkor and TSMC Arizona partnership：`https://amkor.com/blog/amkor-and-tsmc-to-expand-partnership-and-collaborate-on-advanced-packaging-in-arizona/`
+  - Amkor CHIPS Act award：`https://amkor.com/blog/biden-harris-administration-announces-chips-incentives-award-with-amkor-technology-to-bring-end-to-end-chip-production-to-the-u-s/`
+  - Amkor Arizona site update：`https://amkor.com/blog/amkor-announces-new-site-for-u-s-semiconductor-facility/`
+  - Amkor Peoria groundbreaking：`https://amkor.com/blog/amkor-semiconductor-packaging-facility-peoria-arizona/`
+  - Amkor ECTC 2026：`https://amkor.com/blog/amkor-ectc-2026-advanced-packaging/`
+  - Amkor S-SWIFT technology：`https://amkor.com/blog/revolutionizing-ic-packaging-with-s-swift-technology/`
+  - Lightmatter and Amkor 3D photonics package：`https://amkor.com/company-news/lightmatter-and-amkor-partner-to-build-worlds-largest-3d-photonics-package/`

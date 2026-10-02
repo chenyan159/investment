@@ -1,0 +1,34 @@
+{
+  "name": "research-runner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Codex SDK trigger runner for company, company-comparison, integrated company-investment-decision, company-sentiment, industry, feature-quantization, and file-run research JSONL queues.",
+  "scripts": {
+    "test": "node --test",
+    "start": "node runner.mjs",
+    "once": "node runner.mjs --once",
+    "dry-run": "node runner.mjs --dry-run",
+    "queue:status": "node queue-tools.mjs status",
+    "queue:archive-done": "node queue-tools.mjs archive-done",
+    "queue:validate": "node queue-tools.mjs validate",
+    "queue:add-company": "node queue-tools.mjs add-company",
+    "queue:add-company-comparison": "node queue-tools.mjs add-company-comparison",
+    "queue:add-company-investment-decision": "node queue-tools.mjs add-company-investment-decision",
+    "queue:add-company-sentiment": "node queue-tools.mjs add-company-sentiment",
+    "queue:add-industry": "node queue-tools.mjs add-industry",
+    "queue:add-feature-quantization": "node queue-tools.mjs add-feature-quantization",
+    "queue:add-file-run": "node queue-tools.mjs add-file-run",
+    "queue:seed-industry-from-index": "node queue-tools.mjs seed-industry-from-index",
+    "queue:seed-feature-quantization-from-plans": "node queue-tools.mjs seed-feature-quantization-from-plans",
+    "queue:migrate-company-md": "node queue-tools.mjs migrate-company-md",
+    "plan:publish": "node research-plan-tools.mjs publish"
+  },
+  "dependencies": {
+    "@openai/codex": "0.157.1",
+    "@openai/codex-sdk": "0.157.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

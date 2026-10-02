@@ -1,0 +1,463 @@
+# 公司：POWI Power Integrations（Power Integrations, Inc.）全面尽调
+
+> **研究日期：2026-07-12（美国太平洋时间）｜最新财报：2026Q1（截至 2026-03-31，2026-05-07 发布）｜最新股价：2026-07-10 收盘（本报告日为周日）**  
+> **本地资料边界：**只读取项目内 `基本面/行业调研/` 的相关产业材料；未读取、引用或继承其他研究目录、既有公司报告、日度资料或特征量化材料；未修改公司索引。  
+> **数字口径：**公司披露值优先；`模型`、`估算`、`推断`均不是公司指引。Power Integrations（下称 **PI/POWI**）不披露可依赖的 backlog、产品族收入和产品族利润率，因此相关数字一律给区间并写明推导链。金额若无特别说明均为美元。
+
+## 核心结论：它是“高压电源 IC 现金牛底盘 + 高压 GaN/工业栅极驱动成长 + AI 期权”，不是已经兑现的 AI 电源公司
+
+1. **公司本质不是传统离散功率器件厂，而是高压功率转换系统级 IC/栅极驱动方案商。**PI 把高压开关、控制、驱动、保护、隔离反馈甚至多路输出控制集成到 IC 或驱动板中，位于晶圆代工/封测与电源、家电、工业逆变器、汽车、服务器 OEM 之间。其经济价值来自减少 BOM、缩短设计周期、提高效率与可靠性，而不是靠先进逻辑制程。[2025 年报：业务与产品](https://www.sec.gov/Archives/edgar/data/833640/000083364026000037/powi-20251231x10k.htm)
+2. **2026Q1 的真实收入底盘仍是工业 41%、消费 38%、计算机 11%、通信 10%。**工业收入约 **$44.4m、同比 +23%/+24%**，是唯一显著增长大类；消费约 **$41.2m、同比 -11%**；计算机约 **$11.9m、同比 -6%**；通信约 **$10.8m、同比 +3%**。公司没有单独披露 AI 收入，本报告估算直接 AI 数据中心收入仅约 **$2m–5m/季、约 2%–5%**，且主要是当代服务器辅助电源，不含“数据中心增加电网投资”这种间接归因。[2026Q1 业绩](https://investors.power.com/news/news-details/2026/Power-Integrations-Reports-First-Quarter-Financial-Results/default.aspx)
+3. **最确定的成长项是高功率 SCALE 栅极驱动、PowiGaN 在传统电源中的渗透、智能电表和汽车；AI 主功率链尚未规模兑现。**2025 年工业收入增长 **15%**，高功率栅极驱动创纪录；PowiGaN 产品收入增长 **>40%**。2026Q1 工业继续同比增长 **23%**；汽车收入目标同比翻倍；TinySwitch-5 设计预计 2026H2 爬坡，TOPSwitchGaN 将经典 flyback 推到 **440W**。[2025Q4 电话会](https://s27.q4cdn.com/802031818/files/doc_financials/2025/q4/POWI-Q4-2025-Earnings-Transcript.pdf) [TOPSwitchGaN](https://investors.power.com/news/news-details/2026/Power-Integrations-Extends-Flyback-Topology-to-Enable-440-W-Offering-Simpler-Alternatives-to-Resonant-Power-Designs/default.aspx)
+4. **AI 机会真实但节奏被市场容易前置。**PI 已有服务器辅助电源量产、2025Q4 开始向一家美国云服务商的服务器辅助电源设计出货，2026Q1 又赢得两项台湾客户设计；2026-06 发布面向 NVIDIA Kyber 的 **15W/35W、1700V InnoMux2-EP** 辅助 PSU 参考设计。但是，公司在 2026Q1 电话会上明确表示：辅助电源和与 SST/电网相邻的机会较近，800V 高压主功率机会是“几年后”；NVIDIA 也将全规模 800VDC 与 **2027 Kyber** 对齐。故 2026–2027 的收入上修应先看量产订单/AVL，而不能把 ecosystem、white paper、reference design 当 backlog。[2026Q1 电话会](https://s27.q4cdn.com/802031818/files/doc_financials/2026/q1/POWI-Q1-2026-Earnings-Transcript.pdf) [NVIDIA 800VDC](https://developer.nvidia.com/blog/?p=100571)
+5. **技术差异化强于商业垄断。**PI 自称是唯一量产 **1250V/1700V 单 HEMT 高压 GaN** 的供应商；截至 2025-10，已有 **>1.75 亿颗** PowiGaN 开关用于充电器、数据中心和 EV。单颗 1250V 可避免 650V GaN 串叠，1700V InnoMux2-EP 可从 700–900VDC 做辅助供电；但整机客户仍可选择 **1200V SiC、串叠 650/700V GaN、Si 超结 MOSFET、其他拓扑**，并要求第二来源。因此 PI 在“器件电压/集成”上接近独家，在“AI 电源 socket”上不是垄断。[高压 PowiGaN 公告](https://investors.power.com/news/news-details/2025/Power-Integrations-Details-1250-V-and-1700-V-PowiGaN-Technology-for-Next-Generation-800-VDC-AI-Data-Centers/default.aspx)
+6. **供给不是当前矛盾，设计采纳才是。**2026Q1 账面库存 **$163.0m、292 天**，渠道库存 **8.9 周**，接近 8 周目标但仍不紧；公司晶圆下单后通常 **4–6 周**到货，再预留约 **4 周**封装测试。当前更像需求/产品导入受限，而非产能受限。真正稀缺的是 1250V/1700V GaN 的高压可靠性与客户验证，不是公司总体 wafer 数量。[2025 年报制造与订单](https://www.sec.gov/Archives/edgar/data/833640/000083364026000037/powi-20251231x10k.htm) [2026Q1 电话会](https://s27.q4cdn.com/802031818/files/doc_financials/2026/q1/POWI-Q1-2026-Earnings-Transcript.pdf)
+7. **资产负债表非常健康，但库存效率偏低、资本回报曾高于自由现金流。**截至 2026-03-31，现金及短投 **$257.2m**、无债务、流动比率约 **6.9x**、总负债/股东权益约 **0.15x**；TTM FCF 约 **$84m–85m**。风险在于库存占 TTM 收入约 **36.5%**，2025 年买回+股息共 **$145m**、为当年 FCF 的 **167%**，不能永久依靠消耗净现金维持。[2026Q1 资产负债表](https://investors.power.com/news/news-details/2026/Power-Integrations-Reports-First-Quarter-Financial-Results/default.aspx) [2026 年 6 月投资者材料](https://s27.q4cdn.com/802031818/files/doc_presentations/2026/Jun/01/POWI-Investor-Presentation-June-2026.pdf)
+8. **估值已经要求成长兑现。**2026-07-10 最新收盘 **$72.07**、市值约 **$4.03bn**；按 TTM 收入 **$446.3m**、GAAP EPS **约 $0.30**，P/S 约 **9.0x**、TTM P/E 约 **240x**。按近 12 个月一致预期 EPS **约 $1.47**，forward P/E 约 **49x**；若按 FY2026 非 GAAP EPS 一致预期约 **$1.33**，则约 **54x**。市场已经在支付高压 GaN、数据中心、汽车和工业组合的期权费，而不是仅按一个年增约中个位数的模拟 IC 公司估值。[市场数据页](https://stockanalysis.com/stocks/powi/) [一致预期](https://www.forbes.com/companies/power-integrations/)
+9. **一年后的基准/乐观/极乐观公司收入运行率分别约 $500m/$560m/$650m，对应当前 TTM 的 +12%/+25%/+46%。**基准主要靠工业、GaN、汽车和新产品；乐观才要求 AI 辅助电源多客户量产和主电源首批收入；极乐观必须同时满足 800V 产品提前、GaN socket 份额高、工业项目不延迟、消费恢复。极乐观是压力测试，不是目标价基础。
+
+---
+
+## 一、公司整体业务、投资者定位、三年变化与产业链位置
+
+### 1.1 业务是什么：从毫瓦级待机电源到吉瓦级系统的“高压控制/驱动大脑”
+
+PI 设计、开发和销售高压功率转换用模拟/混合信号 IC、功率开关、栅极驱动板和电机驱动 IC。公司采用“**fabless IDM**”模式：高压工艺、器件和 IC 设计由 PI 自己开发控制，再复制到 Lapis、Epson、X-FAB 等合作晶圆厂；封装测试外包给中国、马来西亚、泰国、菲律宾，栅极驱动板在斯里兰卡/泰国组装、部分在瑞士测试。它不是晶圆厂资本开支故事，也不是纯 fabless 购买通用 PDK；核心护城河是专用高压工艺、器件、封装、隔离反馈和系统应用知识的组合。[2025 年报制造](https://www.sec.gov/Archives/edgar/data/833640/000083364026000037/powi-20251231x10k.htm)
+
+| 产品层 | 主要系列/型号 | 功率/电压范围与功能 | 主要终端 | 收入归类 |
+|---|---|---|---|---|
+| AC-DC / 高压 DC-DC 集成 IC | InnoSwitch3/4/5、InnoMux/InnoMux2、TOPSwitch/TOPSwitchGaN、TinySwitch-5、LinkSwitch、Hiper、Qspeed | 高压开关+原副边控制+FluxLink 隔离+保护；当前 IC 家族约可覆盖至 500W | 家电、充电器、TV、服务器辅助电源、工业控制、智能电表、EV 辅助电源 | 四大 end-market 均有 |
+| PowiGaN 技术平台 | 750V、800/900V、1250V、1700V；InnoSwitch3-EP/AQ、InnoMux2-EP、TOPSwitchGaN | 以 GaN 替换 Si 开关，提升频率、效率、功率密度；1250/1700V 面向 800VDC/EV | 充电器、家电、TV、工业、汽车、服务器/AI | 技术覆盖层，不能与 end-market 收入相加 |
+| 高功率栅极驱动 | SCALE、SCALE-2、SCALE-iDriver、SCALE-iFlex/XLT、SCALE-EV | 驱动 IGBT/SiC 模块，约从数 kW、100kW 到 GW | HVDC、风光储、轨交、工业电机、EV、未来 SST/数据中心电网 | 工业为主 |
+| BLDC 电机驱动 | BridgeSwitch、BridgeSwitch-2 + Motor-Xpert | 约 400W，BridgeSwitch-2 扩到约 746W/1hp | 压缩机、泵、风机、家电/HVAC | 消费/工业 |
+| 辅助节能与保护 | EcoSmart、CAPZero、SENZero、ClampZero 等 | 待机/空载效率、浪涌和保护 | 各类电源 | 随主 IC 销售 |
+
+公司的集成方案与离散设计相比，通常能减少器件数、PCB 面积、设计与认证时间。新 TOPSwitchGaN 宣称在 >200W 的应用里，相对更复杂的谐振拓扑可减少约 **30% 器件数和 BOM 成本**；InnoMux2 可用一个反馈/控制平台产生多路输出。客户购买的是“可工作的电源子系统”而非单一晶体管参数。[2026Q1 电话会](https://s27.q4cdn.com/802031818/files/doc_financials/2026/q1/POWI-Q1-2026-Earnings-Transcript.pdf)
+
+### 1.2 投资者心中的公司：过去是高毛利低增长模拟 IC，现在是高压 GaN 转型期
+
+| 旧标签 | 新标签 | 证据与含义 |
+|---|---|---|
+| 家电/手机充电器、电源适配器的“annuity-like”模拟 IC | 工业、汽车、AI 数据中心和电网的纯高压半导体平台 | 通信占比从 2023 年 29% 降至 2024/2025 年 12%；2025 工业占比升至 38%，2026Q1 达 41% |
+| 约 50%–55% 毛利率、净现金、稳定 FCF 和分红回购 | 以 PowiGaN、SCALE 和系统级产品争取更高 SAM | 2025 PowiGaN 收入 +>40%，高功率驱动创纪录；AI+grid 数据中心 SAM 目标 2030 年 >$1bn |
+| 低资本强度、成熟制程、防御性 | 研发投入高、商业化周期长、估值依赖设计赢单兑现 | 2025 R&D $101.1m，占收入 22.8%；设计赢单通常领先量产一年或更久 |
+| 增长慢但资产负债表安全 | 当前估值已把 AI/GaN 期权前置 | TTM 收入仅 +3.1%，但 P/S ~9x、forward P/E ~49x |
+
+**投资者分歧：**多头看重 1250V/1700V GaN 的独特性、NVIDIA 合作、工业/汽车爬坡和净现金；空头关注 AI 收入未披露、Kyber 2027+ 才量产、客户可取消短单、库存 292 天、消费/家电周期和中国同类芯片压价。对 POWI 最危险的研究错误是把“技术唯一”直接等同“socket 唯一”和“2026 订单爆发”。
+
+### 1.3 最近三年的重大变化、转型和收购
+
+| 时间 | 变化 | 财务/战略影响 |
+|---|---|---|
+| 2023 | InnoSwitch 推出 900V、1250V PowiGaN，突破早期 750V；高压路线从快充/家电向汽车和工业延伸 | 为 400V EV、恶劣电网和后来的 800VDC AI 奠定器件平台；收入仍以传统产品为主 |
+| 2024 | 退出中国品牌手机低价业务；通信收入占比由 2023 年 29% 降至 2024 年 12% | 丢掉低毛利/价格敏感体量，造成收入下台阶，却改善客户和终端组合；2025 管理层称“退出后 mix 更黏、毛利更高” |
+| 2024-07 | 以 **$9.52m 现金**收购 Odyssey Semiconductor Technologies 绝大部分资产和关键员工，获得 vertical GaN 在研技术；确认 IPR&D **$4.93m**、商誉 **$3.42m** | 目标是高功率 GaN switching/EV 主功率；公司明确称开发完成仍需数年，不能计入近端收入。[Odyssey 收购注释](https://www.sec.gov/Archives/edgar/data/833640/000083364026000069/powi-20251231xars.pdf) |
+| 2024 | BridgeSwitch-2 把 BLDC 电机驱动功率从约 400W 扩至约 746W/1hp | 扩大家电/HVAC/工业泵风机 TAM，但不是 AI 核心 |
+| 2025-07 | Jennifer Lloyd 从 ADI 多市场电源业务加入任 CEO；创始人/长期 CEO Balu Balakrishnan 退任，2026-02 后转顾问 | 经营重点从技术平台更明确转向客户导向、上市速度、ROIC、工业/汽车/数据中心；管理层更换也带执行风险 |
+| 2025H2 | 与 NVIDIA 围绕 800VDC 合作；在 OCP 发布 1250V/1700V 高压 GaN 白皮书；系统级 rack AC-DC 产品送样/开发 | AI 叙事从概念进入技术合作，但公司当时仍称主电源“有意义收入在几年后” |
+| 2026-02 | 全球裁员约 **7%**，2026Q1 重组费用 **$6.6m**；把部分 application engineers 从 marketing 转到 R&D | 降低 Opex 增速、重排产品管线；风险是重组削弱应用支持或新产品进度 |
+| 2026-03—06 | 发布 **TOPSwitchGaN 440W**；发布 NVIDIA Kyber 15W/35W 辅助 PSU 参考设计；强化销售高管和数据中心客户覆盖 | 2026H2 先看 TinySwitch-5/TOPSwitchGaN 量产，Kyber 参考设计需再跨过 OEM AVL/DVT/量产认证 |
+
+### 1.4 产业链位置
+
+```text
+PI 自研高压工艺/器件/IC/封装/IP
+        ↓ 将专用工艺复制给合作晶圆厂
+Lapis / Epson / X-FAB（晶圆）
+        ↓
+亚洲 OSAT + PI 瑞士/美国测试（封装、测试、栅极驱动板）
+        ↓
+Avnet 等分销商 / 电源厂 / OEM / Tier-1
+        ↓
+家电、工业逆变器、HVDC/轨交、EV、服务器/AI rack、电网设备
+```
+
+- **上游约束：**成熟高压晶圆、日元成本、专用高压封装、GaN 外延/良率；Lapis/Epson/X-FAB 合约分别延至 2028/2035/2028，替代晶圆源需约 **12–24 个月**。
+- **下游议价：**2025 年约 **69%**收入经分销商；前十大客户占收入 **81%**；Avnet 约占 **32%**、Salcomp 约 **11%**。分销商有 price protection/stock rotation，订单可无重大罚款取消或改期，降低 backlog 的可见度。
+- **护城河位置：**系统级 IC、专用工艺、FluxLink 隔离、可靠性数据、参考设计、应用工程与客户历史；不是对任何一家晶圆厂或单一终端拥有绝对控制。
+
+## 二、最新估值与资产负债表
+
+### 2.1 截至最新交易日的估值和盈利质量
+
+| 指标 | 数值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | **$72.07** | 2026-07-10 收盘；2026-07-12 为周日 | 最新可用交易日 |
+| 市值 | **约 $4.03bn** | 2026-07-10 | 约 55.7m 股 |
+| TTM 收入 | **$446.3m** | 2025Q2—2026Q1 | 同比约 **+3.1%** |
+| 最新季度收入增速 | **+2.6% YoY / +4.9% QoQ** | 2026Q1 | 工业抵消消费/计算机下滑 |
+| GAAP TTM P/E | **约 240x** | 股价 / TTM EPS ~ $0.30 | 一次性费用和较高 Opex 压低 GAAP EPS，但仍说明估值昂贵 |
+| Forward P/E | **约 49x** | 股价 / NTM 一致预期 EPS ~ $1.47 | 若用 FY2026 非 GAAP EPS ~ $1.33，则约 **54x**；数据库口径会不同 |
+| P/S | **约 9.0x** | 市值 / TTM 收入 | 已显著超出普通低增速电源 IC 估值框架 |
+| TTM 毛利率 | **53.9%** | TTM GAAP gross profit / revenue | 2026Q1 52.6%，Q2 指引 53.5%–54.5% |
+| TTM GAAP 净利率 | **3.7%** | TTM NI $16.6m | 受诉讼、股权激励、重组影响；非 GAAP 利润率更高 |
+| TTM FCF | **约 $84m–85m** | CFO 减 Capex | FCF margin 约 **19%**，现金盈利好于 GAAP 净利 |
+| 股息 | **$0.86/股年化** | 2026 四季每季 $0.215 | 按 $72.07 收益率约 **1.19%** |
+
+**估值判断：**当前股价不是在为 2026Q1 的 3% 收入增长付费，而是在为 2027–2030 的高压 GaN、AI 电源、汽车和高功率 grid exposure 付费。若未来 12 个月仍只有中个位数增长、AI 仅停留在 reference design，49x forward P/E 有明显压缩风险；若 2027 产品发布并转为多客户量产，营收基数小使弹性很大。
+
+### 2.2 资产负债表体检（2026-03-31）
+
+| 项目 | 数值 | 体检 |
+|---|---:|---|
+| 现金及现金等价物 | **$63.4m** | 高流动性 |
+| 短期投资 | **$193.8m** | 与现金合计 **$257.2m** |
+| 有息债务 | **$0** | 净现金 **$257.2m** |
+| 应收账款 | **$14.4m** | 仅约 12 天季度收入，回款风险低；但分销商占比高 |
+| 存货 | **$163.0m** | **292 天**；绝对额和周转明显偏高，是资产负债表最大瑕疵 |
+| 流动资产/流动负债 | **$458.3m / $66.6m** | 流动比率 **6.88x**；短期偿债很强 |
+| 总资产/总负债 | **$770.7m / $98.9m** | 负债仅占资产 12.8% |
+| 股东权益 | **$671.8m** | 负债/权益约 **0.15x** |
+| 商誉+无形资产 | **$102.3m** | 占资产约 13.3%；Odyssey 规模小，减值不会威胁偿债 |
+| 2026Q1 CFO/Capex/FCF | **$20.0m / $2.0m / $18.0m** | FCF 强；全年 Capex 计划约收入 5%–6%，偏 H2 |
+
+**健康度：8.5/10。**没有杠杆、流动性充足、自由现金流稳定。扣分项是库存效率、日元成本滞后约一年传导、分销商/客户集中，以及 2025 年股东回报超出 FCF。库存以 wafer 为主且跨客户/应用可复用，过时风险低于成品库存，但 292 天仍意味着需求预测和资本效率有改进空间。
+
+## 三、最近五次财报：财务、业务收入、订单与 AI 曝光
+
+> **重要限制：**PI 只按 communications/computer/consumer/industrial 披露收入 mix，不披露分部利润、产品收入或 AI 收入。下表业务美元数=季度收入×披露占比，因占比取整存在约 1 个百分点误差；业务增速按同口径与上年季度推导。AI 数字为本报告模型，不是公司披露。
+
+| 财报季度 | 收入 / YoY / QoQ | GAAP 毛利率 / 净利率 | 通信：收入 / YoY | 计算机：收入 / YoY | 消费：收入 / YoY | 工业：收入 / YoY | 订单、交期、渠道和取消率 | 直接 AI 数据中心收入占比（模型） |
+|---|---|---|---|---|---|---|---|---|
+| **2026Q1（最新）** | **$108.3m / +2.6% / +4.9%** | **52.6% / 3.0%**；non-GAAP OM 11.7% | **$10.8m / +3%**；占 10% | **$11.9m / -6%**；占 11% | **$41.2m / -11%**；占 38%，QoQ +17% | **$44.4m / +24%**；占 41%，公司口径 +23% | 订单活动较 2 月电话会增强；渠道 **8.9 周**、目标 8；账面库存 **292 天**、目标 <200；未披露 B2B/backlog/取消率。晶圆 4–6 周+约 4 周后段，不紧缺 | **$2m–5m / 2%–5%**；当前服务器 aux 量产、Q1 台湾客户两项新设计；800V 主功率约为 0 |
+| **2025Q4** | **$103.2m / -1.9% / -13.2%** | **52.9% / 12.9%**；税收/股权激励回转令 GAAP NI 异常高 | **$15.5m / +13%**；占 15%，QoQ +15% | **$14.4m / -9%**；占 14%，QoQ -5% | **$35.1m / -10%**；占 34%，QoQ -13% | **$38.2m / +4%**；占 37%，QoQ -23% | bookings 较 Q3 **显著改善**，来自家电+工业；sell-through QoQ 仅 -3%，sell-in -13%，去渠道库存；渠道 **9.4 周**，账面 **313 天**；无可依赖 backlog | **$2m–4m / 2%–4%**；开始量产一家美国云服务商服务器辅助电源设计；高压主电源尚未放量 |
+| **2025Q3** | **$118.9m / +2.7% / +2.6%** | **54.5% / -1.1%**；诉讼/SBC 影响 | **$13.1m / -6%**；占 11% | **$15.5m / -5%**；占 13% | **$40.4m / -8%**；占 34% | **$49.9m / +20%**；占 42% | 7 月 bookings 比 H1 月均 **-20%**，低位延续全季；家电订单约 **-40%**；渠道 sell-through 弱，库存升至 **9.8 周**；账面 **278 天**；10 月 sell-through>sell-in 开始消化 | **$1.5m–3m / 1%–3%**；既有 aux；NVIDIA/OCP 合作确认但尚无 800V 主链收入 |
+| **2025Q2** | **$115.9m / +9.1% / +9.8%** | **55.2% / 1.2%**；诉讼费用压 NI | **$12.7m / +9%**；占 11% | **$13.9m / -7%**；占 12% | **$42.9m / -4%**；占 37% | **$46.3m / +32%**；占 40%，QoQ 近 +30% | 季初 bookings 健康，当季 turns **27%**（常态 20%–30%）；7 月突然较前月 run-rate **-20%**；渠道 **7.6 周**、账面 **296 天**；短单、低能见度；无取消率披露 | **$1.5m–3m / 1%–3%**；GaN aux 正在增份额，800V 仍为开发/路线图 |
+| **2025Q1** | **$105.5m / +15.1% / +0.3%** | **55.2% / 8.3%** | **$10.6m / +5%**；占 10% | **$12.7m / +26%**；占 12%，server aux 是增量之一 | **$46.4m / +24%**；占 44%，含关税前置几百万美元 | **$35.9m / +6%**；占 34% | bookings 稳定；无异常 pull-in/pushout/cancellation；Q4、Q1 **B2B>1**；渠道 **7.9 周**；账面 **326 天**；某高功率项目从 Q1 延至 Q2 | **$1m–2.5m / 1%–2%**；服务器 aux 同比增长，主链为 0 |
+
+### 3.1 为什么不使用“订单积压金额”
+
+- 年报明确：业务历史上是**短交期订单和快速交付**，客户数量与出货时间可修改；订单可无重大罚款取消/改期。公司不披露稳定 backlog，也没有可持续的 cancellation rate。
+- **Lead time/交期口径：**公司没有逐季披露客户承诺交期；制造物理周期的公开锚点为晶圆约 **4–6 周 + 封装测试约 4 周，即约 8–10 周**，与正常渠道约 8 周并非同一指标。由于客户可改期、当季 turns 常占 20%–30%，本报告不能把 8–10 周制造周期误写成 8–10 周锁定订单；截至 2026Q1 亦没有看到 lead time 拉长或 allocation 的供不应求信号。
+- 2025Q1 电话会给出的最有用订单量化是：Q4/Q1 **book-to-bill >1**、没有异常取消；2025Q2 电话会披露当季 **turns 27%**、常态 **20%–30%**。即使季度开始已有订单，公司仍需约四分之一收入由当季接单当季交付补齐。
+- Q3 的订单骤降和 Q4 的快速恢复证明 backlog 不是长期锁定合同：家电短期库存/关税即可让 orders -40%，但几个月后又回补。
+- 因此本报告后续采用：`未来收入 = 已知设计量产 + 正常短单 turns + 渠道库存变化 + 终端项目节奏`，而不是虚构一个 backlog 数字。
+
+### 3.2 五季趋势的投资含义
+
+1. **工业穿越周期。**工业 mix 从 2025Q1 的 34%升至 Q3 的 42%、2026Q1 的 41%，且 2026Q1 同比 +23%。高功率、计量、汽车、储能/可再生能源是主要驱动。
+2. **消费不是结构性消失，而是 2025 关税前置后消化。**Q1 提前出货几百万美元，Q3 家电 orders -40%，Q4/H1 2026 渠道回归。TinySwitch-5/TOPSwitchGaN 可增加单机美元含量，但单位需求仍受住房/家电周期影响。
+3. **公司毛利率随 mix/日元/制造量变化。**工业和高集成 GaN mix 通常更有利；Q4/Q1 的 52.9%/52.6%低于 2025H1 的 55.2%，Q2 2026 指引回到 53.5%–54.5%。产品族毛利不能直接等于公司毛利。
+4. **AI 还没有穿透报表。**如果直接 AI 收入已经达到 10% 以上，计算机/工业增长和管理层披露通常会更明显；目前最合理是低个位数。投资的关键是 2026H2—2027 从 aux design win 转为多个 OEM/ODM 的量产收入。
+
+## 四、2026 最新财报指引、业务占比与产品交叉验证
+
+### 4.1 2026Q2 官方指引与本报告业务拆分
+
+官方指引：收入 **$115m–$120m**，中值 **$117.5m**、QoQ 约 **+8.5%**、YoY 约 **+1.4%**；GAAP 毛利率 **53.5%–54.5%**、non-GAAP **54%–55%**；GAAP Opex **$55m–$56m**；GAAP OM **5.5%–7.5%**、non-GAAP OM **13.5%–15.5%**。通信和计算机的环比百分比增长最大，工业环比增长；消费受空调季节性与大家电弱势抵消，约持平/小增。[2026Q1 业绩与 Q2 指引](https://investors.power.com/news/news-details/2026/Power-Integrations-Reports-First-Quarter-Financial-Results/default.aspx)
+
+| 业务 | 2026Q1 已披露 | 2026Q2 中值模型 | QoQ 模型 | YoY 模型 | 判断 |
+|---|---:|---:|---:|---:|---|
+| Industrial | $44.4m / 41% | **$46.5m–$48.5m / 40%–41%** | **+5%–9%** | 约 0%–5% | 最大、最受公司侧重；高功率、储能/可再生能源、汽车、计量支撑 |
+| Consumer | $41.2m / 38% | **$41.0m–$42.5m / 35%–36%** | -0.5%–+3% | -4%–-1% | 空调旺季，大家电弱；2025Q2 基数高 |
+| Computer | $11.9m / 11% | **$14.3m–$15.4m / 12%–13%** | **+20%–29%** | +3%–+11% | 季节恢复、平板/笔电/服务器 aux；AI 增量仍小 |
+| Communications | $10.8m / 10% | **$13.0m–$14.2m / 11%–12%** | **+20%–31%** | +2%–+11% | 手机配件充电器与印度 5G 固网；公司已退出中国手机低价业务 |
+| **合计** | **$108.3m** | **$115m–$120m** | **+6%–11%** | **-0.7%–+3.6%** | 指引中值略高于 Q1，但不是 AI 驱动的爆发季 |
+
+### 4.2 公司最侧重的五个产品/业务簇
+
+#### A. 高功率 SCALE 栅极驱动：当前财务最确定的成长引擎
+
+- **产品：**SCALE/SCALE-2 plug-and-play driver、driver core；SCALE-iDriver（数 kW 至约 100kW）、SCALE-iFlex/XLT、SCALE-EV。驱动 IGBT/SiC 模块，含隔离、DESAT/soft turn-off、保护和模块适配。
+- **终端：**HVDC、STATCOM、电能质量、风光储、轨交、油气、工业电机、EV/重型车辆；数据中心的直接关系主要在 grid/renewable/BESS/SST，而不是每颗 GPU。
+- **交叉验证：**2025H1 高功率收入 **+>40%**；2025 全年创纪录、工业收入 +15%；2026Q1 赢得欧洲 6MW 风机与印度 STATCOM 设计。工业 2026Q1 +23%支持延续，而不是单一项目讲故事。
+- **利润率模型：**约 **56%–64%**，高于普通消费 IC；原因是板级/模块级价值、认证、应用工程和失效成本高。公司不披露产品毛利。
+
+#### B. PowiGaN 高压功率 IC：跨业务的技术平台
+
+- **产品/型号：**750V/900V/1250V/1700V；InnoSwitch3-EP/AQ、InnoSwitch5-Pro、InnoMux2-EP、TOPSwitchGaN。1250V/1700V 是 AI/汽车差异化核心。
+- **财务：**2025 PowiGaN 收入 **+>40%**，2025H1 **+>50%**；管理层称已“meaningful”，但未给美元。本报告估算 2026 年化 **$55m–$80m（约 12%–18% 公司收入）**，为跨终端技术覆盖层，不能与下列应用收入相加。
+- **供需：**技术供给稀缺、实际产能不紧；1.75 亿颗累计在用证明可靠性基线，然而 AI 主功率客户仍在验证。700V 以下 GaN 竞争和降价会加剧，价值向高压、集成、封装/保护和 reference design 转移。
+
+#### C. AI 数据中心辅助电源与未来主功率：小收入、高弹性
+
+- **当前产品：**GaN InnoSwitch 服务器辅助电源；InnoMux2-EP 1700V。2026-06 Kyber 参考设计：DER-1114 为 **15W、30×30×7mm、700–900VDC 输入、12V/1.25A、800V 时约 82.5% 效率**；DER-1110 为 **35W、80×60×<8mm、700–900VDC、14V/2A + 5 路 14V/0.1A、62 个器件、900V 满载 >90%**，面向 compute tray/PDB 辅助 rails。[DER-1114](https://www.power.com/sites/default/files/documents/der-1114_15w_single-output_flyback_ai_data_center_auxiliary_power_supply_1700v_powigan_innomux2-ep_prov_20260617.pdf?language=zh-hans) [DER-1110](https://www.power.com/sites/default/files/documents/der-1110_35w_multi-output_flyback_ai_data_center_auxiliary_power_supply_1700v_powigan_innomux2-ep_prov.pdf?language=zh-hans)
+- **下一产品：**当前 AC 架构的 rack-level 高功率 AC-DC GaN 系统产品；800V→54/12/6V 的 1250V GaN 主转换产品。2025Q3 曾计划 2026 末/2027 产品发布，2026Q1 更保守地称高压主链在“几年后”，说明进度/客户规格仍可能变化。
+- **财务：**当前直接 AI 年化约 **$8m–$20m**，占比约 **2%–4%**；2027 有机会达到 $15m–$90m 的宽区间。管理层给出的单 rack PI 内容约 **$1,000、800V 更高**，以及 rack+grid SAM 2030 年 **>$1bn**，两者是 TAM/内容量，不是订单。
+- **利润率模型：**aux IC **60%–70%**；未来系统/模块若包含更多外购 BOM，约 **45%–60%**。早期 NRE/样品收入不可当稳定量产毛利。
+
+#### D. 汽车 InnoSwitch3-AQ / micro-DC-DC：已量产、基数小
+
+- **产品：**InnoSwitch3-AQ 750V/900V PowiGaN、1700V（部分 1700V 型号使用 SiC switch），用于 traction-inverter emergency PSU、BMS/micro-DC-DC、OBC 和 12V standby；SCALE-EV 驱动更高功率模块。
+- **认证：**AEC-Q100；fab/assembly/test sites IATF 16949；ISO 26262 SEooC Class II；IEC/UL/VDE 隔离认证；>4000VRMS 隔离耐压。900V GaN 400V rail 可至约 100W；1700V 方案在 800V rail 可至约 120W，具体取决于热设计。[InnoSwitch3-AQ datasheet](https://www.power.com/sites/default/files/documents/innoswitch3-aq_family_datasheet_20250327.pdf)
+- **采纳：**2026Q1 与全球前 20 EV 厂中的 **17 家**处于量产或设计沟通；Q1 在一家德国大车厂开始量产，并赢得中国第二大 EV OEM 的 emergency PSU 设计。公司预计 2026 汽车收入翻倍；当前单车内容为个位美元，近期向几十美元、多年后约 $100 目标扩张。
+- **财务：**2025 为 high-single-digit millions；2026 年化估算 **$15m–$20m**。量产延迟已把原“2026 低千万美元”时间推后，因此不能只按设计数量外推。
+
+#### E. TinySwitch-5 / TOPSwitchGaN / InnoMux2：核心业务的产品刷新
+
+- **TinySwitch-5：**最高约 **175W、92%**，PCB 冷却约 60W、外部 heatsink 可到约 190W（不同条件）；与历史 TinySwitch 设计方法兼容，2026H2 多项设计爬坡。TinySwitch 家族累计数十亿颗，替换具有渠道/工程师基础。[TinySwitch-5](https://www.power.com/products/tinyswitch/tinyswitch-5?language=en)
+- **TOPSwitchGaN：**800V PowiGaN、最高 **440W**、最高开关频率 150kHz、10%–100%负载约 92%效率、待机 <50mW；10k 数量起价 **$1**。135W 可无 heatsink，外部 heatsink 扩到 440W。目标 e-bike、无人机、工业充电器、家电，不是当前 AI rack 主 PSU。[TOPSwitchGaN](https://investors.power.com/news/news-details/2026/Power-Integrations-Extends-Flyback-Topology-to-Enable-440-W-Offering-Simpler-Alternatives-to-Resonant-Power-Designs/default.aspx)
+- **InnoMux2：**多路输出、减少额外 DC-DC 级；TV 设计 traction 强，同时 1700V 版本进入 Kyber aux。该“小产品”具有跨 TV、工业、汽车、AI 的平台价值。
+- **利润率/增速模型：**新一代产品早期 GM 约 **53%–62%**；2026 新产品收入基数估算仅 **$5m–$15m**，2027 随 ramp 可明显上升。其意义是提高成熟业务的 ASP/份额，而不是创造全新百亿美元 TAM。
+
+### 4.3 可以降低优先级但不能忽略的产品
+
+| 产品/业务 | 为什么本报告不深挖 | 保留的监测点 |
+|---|---|---|
+| 传统 750V 以下消费/通信 AC-DC、低功率充电器 | 增速低、价格竞争强、与 AI 直接关联弱 | 是否被新 PowiGaN/Tiny/TOP 替代而提高 ASP；渠道库存 |
+| LED driver / 传统照明 | 成熟、低增速、替代多 | 效率法规和区域价格竞争 |
+| BridgeSwitch/BridgeSwitch-2 BLDC | 家电/HVAC 节能有价值，但当前未见独立高增收入披露 | 1hp 设计赢单、压缩机/泵/风机 attach、软件 Motor-Xpert |
+| Qspeed 二极管、CAPZero/SENZero 等 | 多为配套/防守性产品，单项收入小 | 是否与 TOPSwitch/InnoSwitch bundle 提高每机内容量 |
+| 中国手机和低端 aftermarket 充电器 | 公司已主动退出部分低毛利中国手机业务 | 通信增长应来自品牌配件、印度 5G 等更高质量 socket |
+| 纵向 GaN（Odyssey） | 长期可挑战 SiC/IGBT，但公司明确需数年完成 | 700/1200V vertical GaN 样品、良率、封装、首次客户；2027 前不计重大收入 |
+
+## 5. 关键业务当前收入、增速与战略属性
+
+### 5.1 统一评分口径
+
+- **AI 重要性：**1=与 AI 基建几乎无关；5=AI 电力链不可缺的直接部件。
+- **时间紧迫性：**1=可延后多年；5=客户必须在未来 12 个月解决。
+- **供需紧张：**1=产能/替代充分；5=已明显供不应求。这里评价的是产品供给，而不是“技术很稀缺”。
+- **垄断/溢价：**1=商品化；5=短期近似唯一且能维持明显高价。技术首发不自动等于经济垄断。
+- 美元收入均为本报告根据财报、应用组合和管理层定性披露建立的 **2026 年化模型**；公司没有按产品披露收入，区间不可机械相加。尤其 PowiGaN 是横跨 AI、汽车和核心 AC-DC 的技术层。
+
+| 高增长/关键业务 | 2026 年化收入贡献（估） | 当前增速证据/估算 | 产品 GM（估） | AI 重要性 | 时间紧迫性 | 供需紧张 | 技术垄断 / 经济垄断 | 溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| SCALE 高功率栅极驱动 | **$60m–$75m** | 2025H1 +>40%；2025 全年纪录；2026 年化 **+20%–35%** | 56%–64% | 4.0（grid/BESS/SST），rack 内 1.5 | 4.0 | 2.5 | 3.5 / 3.0 | 3.5 | 当前最可信的结构增长与现金贡献 |
+| 直接 AI 电源（aux + 早期 rack/grid） | **$8m–$20m** | 小基数 **+30%–70%**；已有云客户量产、台湾客户新设计 | 60%–70%（IC）；模块 45%–60% | 4.0，800V 主链 5.0 | 3.5 | 1.5 | 4.5 / 3.0 | 4.0 | 技术稀缺，但当前供给并不短缺、量产尚小 |
+| 汽车 InnoSwitch3-AQ / SCALE-EV | **$15m–$20m** | 公司指引 2026 约翻倍 | 55%–65% | 1.0 | 3.0 | 2.0 | 3.5 / 3.0 | 3.5 | 认证壁垒高，放量受车型 SOP 延迟支配 |
+| 智能电表/电网边缘 AC-DC | **$35m–$50m** | 2025H1 +>20%，2026 年化 **+15%–25%** | 52%–60% | 2.5（电网数字化间接支持） | 3.5 | 2.0 | 3.0 / 2.5 | 3.0 | 印度/新兴市场换表周期提供持续性 |
+| TinySwitch-5/TOPSwitchGaN/InnoMux2 新品 ramp | **$5m–$15m** 的新增/新代产品收入 | 从发布/导入低基数 **+>100%** | 53%–62% | 1.5；InnoMux2 aux 为 4.0 | 3.0 | 2.0 | 3.5 / 3.0 | 3.5 | 2026H2 是设计转量产验证窗口 |
+| PowiGaN 技术覆盖层（**不可与上行相加**） | **$55m–$80m** | 2025 +>40% | 58%–68% | 4.5 | 4.0 | 2.0 | 4.5（1250/1700V）/ 3.0 | 4.0 | 750/900V 已商业化；1250/1700V 的收入仍在前夜 |
+
+**关键辨析：**POWI 的 1250V/1700V GaN 是稀缺的“技术供给”，但 AI 客户还没有把它变成紧缺的“商品供给”。因此本报告对技术垄断给 4.5，对现实供需只给 1.5–2.0；只有 Kyber/同类平台确定 BOM、完成 AVL 并给出不可取消的量产排程，两个分数才会同时上升。
+
+## 6. 一年后关键业务收入：基准、乐观、极度乐观
+
+### 6.1 三情景假设
+
+- **基准：**2026Q2 指引兑现，渠道维持约 8 周，TinySwitch-5/TOPSwitchGaN 正常爬坡；Kyber aux 开始小批量，但 800V 主功率仍以验证为主。
+- **乐观：**工业、高功率和汽车 design wins 准时 SOP；AI aux 在多个 ODM/云客户复制；至少一个高功率 GaN rack AC-DC 产品进入正式量产。
+- **极度乐观：**Kyber/同级 1MW rack 于 2027H1 快速量产，PI 获得多个 1250/1700V socket；工业电网项目、汽车与新品同步无延迟。它是上行压力测试，不是概率最高预测。
+
+以下收入为 **截至 2027-06/07 的未来十二个月或退出年化水平**；“增速”相对本报告当前区间中点。评分仍为 1–5。
+
+| 关键业务 | 情景 | 一年后收入贡献（估） | 同比增速（估） | AI 重要性 | 紧迫性 | 供需紧张 | 技术垄断 / 经济垄断 | 溢价能力 | 核心触发条件 |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| SCALE 高功率 | 基准 | **$80m–$95m** | +25%–35% | 4.0 | 4.0 | 2.5 | 3.5 / 3.0 | 3.5 | HVDC/STATCOM/风电项目如期交付 |
+|  | 乐观 | **$100m–$120m** | +50%–70% | 4.3 | 4.3 | 3.0 | 3.8 / 3.3 | 3.8 | AI 园区电网+BESS 形成第二需求腿 |
+|  | 极度乐观 | **$125m–$150m** | +85%–120% | 4.5 | 4.5 | 3.5 | 4.0 / 3.5 | 4.0 | 多个电网级项目同步、模块适配形成瓶颈 |
+| 直接 AI 电源 | 基准 | **$15m–$25m** | +60%–100% | 4.5 | 4.0 | 2.0 | 4.5 / 3.2 | 4.0 | aux 量产扩散，主功率仍是样品/NRE |
+|  | 乐观 | **$30m–$50m** | +150%–250% | 5.0 | 4.5 | 3.0 | 4.5 / 3.8 | 4.2 | 多家 ODM 量产，rack AC-DC 正式释放 |
+|  | 极度乐观 | **$60m–$90m** | +350%–600% | 5.0 | 5.0 | 4.0 | 4.7 / 4.2 | 4.5 | Kyber 主链提前放量且 PI 获较高 socket 份额 |
+| 汽车 | 基准 | **$25m–$30m** | +50%–80% | 1.0 | 3.2 | 2.0 | 3.5 / 3.0 | 3.5 | 德系/中系项目 SOP 执行 |
+|  | 乐观 | **$35m–$45m** | +100%–150% | 1.0 | 3.5 | 2.5 | 3.8 / 3.3 | 3.7 | emergency PSU 向 BMS/OBC 多 socket 扩展 |
+|  | 极度乐观 | **$50m–$65m** | +180%–260% | 1.0 | 4.0 | 3.0 | 4.0 / 3.5 | 4.0 | 多家 Top-20 OEM 同年放量 |
+| 智能电表/电网边缘 | 基准 | **$45m–$55m** | +15%–30% | 2.5 | 3.5 | 2.0 | 3.0 / 2.5 | 3.0 | 印度招标与区域换表稳定执行 |
+|  | 乐观 | **$55m–$70m** | +40%–65% | 2.7 | 4.0 | 2.5 | 3.2 / 2.8 | 3.2 | 加速部署、PI 提高集成份额 |
+|  | 极度乐观 | **$70m–$90m** | +75%–110% | 3.0 | 4.2 | 3.0 | 3.5 / 3.0 | 3.5 | 大型招标集中交付且竞争供给受限 |
+| Tiny/TOP/InnoMux 新品 | 基准 | **$30m–$45m** | 约 3–5×低基数 | 2.0 | 3.0 | 2.0 | 3.5 / 3.0 | 3.5 | 2026H2 design win 正常爬坡 |
+|  | 乐观 | **$50m–$70m** | 约 5–7× | 2.5 | 3.5 | 2.5 | 3.8 / 3.3 | 3.8 | TOPSwitch 抢占 resonant 方案、InnoMux 多终端复制 |
+|  | 极度乐观 | **$80m–$110m** | 约 8–11× | 3.0 | 4.0 | 3.0 | 4.0 / 3.5 | 4.0 | 大客户平台化采用、旧代产品快速升级 |
+| PowiGaN 覆盖层（非加总） | 基准 | **$90m–$110m** | +35%–65% | 4.5 | 4.0 | 2.0 | 4.5 / 3.2 | 4.0 | 750/900V ramp + 1250/1700V 小量 |
+|  | 乐观 | **$120m–$150m** | +80%–120% | 5.0 | 4.5 | 3.0 | 4.6 / 3.8 | 4.3 | AI/汽车/工业同时扩大 GaN attach |
+|  | 极度乐观 | **$160m–$200m** | +140%–200% | 5.0 | 5.0 | 4.0 | 4.8 / 4.2 | 4.5 | 高压 GaN 成为 800V 主链首选且良率稳定 |
+
+### 6.2 公司整体收入桥
+
+| 情景 | 未来一年公司收入（估） | 相对当前 TTM $446.3m | 隐含条件 | 可信度判断 |
+|---|---:|---:|---|---|
+| 基准 | **约 $500m** | **+12%** | Q2 后温和增长；工业/新品/汽车抵消消费弱势；AI 仍小 | 概率最高；略高于当时 FY2026 市场一致预期约 $475m |
+| 乐观 | **约 $560m** | **+25%** | 高功率、汽车、新品均兑现；AI 贡献 $30m–$50m | 需要 bookings/B2B 连续两个季度 >1 |
+| 极度乐观 | **约 $650m** | **+46%** | 800V AI 提前量产且传统业务不下滑 | 尾部情景；仍低于 2021 年约 $703m 的历史收入峰值，说明物理产能并非第一约束 |
+
+产品收入存在重叠，表中公司收入不是逐行相加，而是以终端四分类重建。真正限制极度乐观情景的是 **客户验证/SOP 速度和 demand mix**，不是公司层面的晶圆绝对上限。
+
+## 7. BOM、单位内容量、价格传导、当前产能与认证
+
+### 7.1 单位内容量总表
+
+> 除“TOPSwitchGaN 10k 起价 $1”、管理层“当前约 $1,000/rack”和参考设计功率/尺寸外，公司未披露客户成交 ASP、每 rack 板数或项目 BOM。下表将 **官方锚点** 与 **本报告工程推算**分开；推算不得视为报价或已签订单。
+
+| 产品/业务 | 真实 BOM/官方锚点 | 单位内容量推算 | 每 MW | 每 rack / 每 GPU / 每 optical port | 价格传导链 |
+|---|---|---|---:|---|---|
+| AI 1700V aux：InnoMux2-EP | 15W：1 颗集成功率 IC、12V/1.25A；35W：14V/2A+5 rails、**62 个总器件**；均 700–900V 输入 | 假设每 rack 8–16 个 aux board、每板 PI IC/相关收入 **$8–$15**，则 aux 约 **$64–$240/rack** | 1MW Kyber rack 约 **$64–$240/MW** | 1MW/576 GPU：**$0.11–$0.42/GPU**；optical port **$0** 直接 attach | GaN die/晶圆→PI 集成 IC+封装→ODM/PDB/compute tray→rack OEM→云客户；价值来自减少多级 DC-DC、空间与认证，不按瓦简单收费 |
+| PI 全部 AI rack sockets（aux + 主功率/控制，未来） | 管理层 2025Q3 称当前 rack 内容“**约 $1,000，800V 更高**” | 当前 100–142kW rack：约 **$1,000/rack**；Kyber 成熟后模型 **$2,000–$5,000/rack** | 当前约 **$7k–$10k/MW**；1MW Kyber **$2k–$5k/MW** | 当前单 rack 若 72 GPU：约 **$13.9/GPU**；Kyber 576 GPU：约 **$3.5–$8.7/GPU**；optical port **无固定线性内容量** | 1250/1700V GaN die→PI 主开关/控制/保护→电源 ODM/转换模块→NVIDIA/OEM reference architecture→云部署。rack 内容上升而每 GPU 可能下降，因 1MW rack 集成度大增 |
+| SCALE 高功率栅极驱动 | 三相两/三电平变换器通常 6–18 个开关位置；大功率会并联功率模块；PI 卖 driver core/plug-and-play board | 工程模型 **12–48 个 drive channels/MW**，PI 系统级收入约 **$40–$150/channel** | **$0.5k–$7.2k/MW**；项目拓扑差异巨大 | rack/GPU/port 无固定 attach；若用于园区 BESS/SST，应按 MW 而非 GPU 计算 | 功率模块厂/PI 驱动适配→converter OEM→HVDC/STATCOM/BESS/SST→电网/园区；认证和保护 IP 使价格不随 IGBT/SiC die 同比例下降 |
+| 汽车 InnoSwitch3-AQ | 每个 emergency PSU/BMS/OBC standby socket 通常 1 颗隔离集成 IC；公司称当前单车个位美元、近期几十美元、长期约 $100 | 当前 **$3–$8/车**；多 socket 近期 **$20–$40/车** | 不适用 | rack/GPU/port 不适用 | PI IC→Tier-1 ECU/OBC/BMS→OEM 车型；AEC-Q100/功能安全与 PPAP 锁定后价格粘性高，但车厂年降压价仍存在 |
+| 智能电表 AC-DC | 单表通常 1 个 housekeeping AC-DC IC；PI 把高压开关、控制与保护集成 | **$0.6–$2.0/表**；若部署 2.5 亿表，对应全周期可服务内容 **$150m–$500m**，非一年收入 | 不适用 | 不适用 | IC→meter OEM→系统集成商/电网招标；中标价向上游传导有限，集成降低总 BOM 是主要卖点 |
+| TOPSwitchGaN/TinySwitch-5 | 每 PSU 1 颗集成功率 IC；TOPSwitchGaN **10k 数量起价 $1**；可把 flyback 扩至 440W、称减少约 30% BOM | 量产 ASP 模型 **$1–$5/PSU**，高功率/高集成 SKU 更高 | 不适用 | 若未列入 AI PSU AVL，则 AI rack/GPU/port 内容为 **0** | GaN/Si die→PI 集成 IC→品牌电源/家电/工业 OEM；客户比较的是 IC ASP + 磁件/散热/元件数的系统成本，而非单颗价格 |
+
+**为什么 optical port 不适合强行计算：**POWI 当前没有按光模块端口销售的 laser driver、TIA、DSP 或 pluggable power IC。光端口增多只会间接提高 rack 总负载和辅助 rails 数量，关系取决于交换机/PDB 拓扑；给一个固定“$/port”会制造虚假精度，所以直接内容量记为 **$0**，仅在 rack 总功率模型中体现二阶需求。
+
+### 7.2 当前产能、采纳与认证阶段
+
+| 关键业务 | 当前可支持年收入产能（估） | 当前利用/供给判断 | 客户采纳阶段 | 认证/验证阶段 | 证据与风险 |
+|---|---:|---|---|---|---|
+| 公司总体 | **$550m–$650m** 的现实短期吞吐能力 | 库存 $163.0m、292 天；主要是需求/组合约束，不是晶圆短缺 | 广泛量产 | 多工厂/后段合格 | 历史收入峰值约 $703m；但新高压 GaN/模块不可直接用成熟 Si 产能替代 |
+| SCALE 高功率 | **$90m–$120m** | 工程/模块适配可能先于晶圆成为瓶颈 | 已量产；风机、STATCOM 等项目 design win | 项目/OEM 逐案认证 | 交付窗口长、项目集中；不能从一个 6MW 项目推全公司订单 |
+| 直接 AI aux/主功率 | **$20m–$40m**（现有产品收入能力） | 产能充足；需求和客户 BOM 冻结不足 | 1 个美国云客户 aux 已量产；台湾客户新增设计；主功率为样品/engagement | Kyber reference design/生态验证；**未披露最终 AVL、认证数量或不可取消量产单** | NVIDIA 合作是强技术背书，不等于 NVIDIA 直接采购 |
+| 汽车 | **$40m–$60m** | 产能充足，车型 SOP 是瓶颈 | 德系大客户量产；Top-20 中 17 家量产或设计沟通 | AEC-Q100、IATF 16949、ISO 26262 SEooC Class II、UL/VDE；车型 PPAP 逐项完成 | “17/20”混合了量产和早期设计，不能全部资本化为收入 |
+| 智能电表 | **$70m–$100m** | 成熟制程、供给宽松 | 印度/新兴市场项目交付 | 电表 OEM/电网招标认证 | 招标节奏和客户库存比 wafer 更重要 |
+| Tiny/TOP/InnoMux | **$100m+** 的成熟 foundry 支撑能力；新型号有效产能较低 | 量产爬坡/良率与客户拉货决定 | 2026H2 多项 design ramp；TV/工业已有 traction | 产品合格，终端逐案安规/能效认证 | 设计赢单到大批量通常需一年或更久 |
+| PowiGaN 覆盖层 | **$100m–$150m** | 750/900V 供给不紧；1250/1700V 高压良率/封装是隐性限制 | 累计 >1.75 亿颗 GaN switch 在用；高压 AI 尚早期 | 低压代际量产；1250/1700V reference/customer validation | “唯一量产能力”是技术口径，未见高压大额量产收入证明 |
+
+制造端需要注意：PI 为 fabless IDM，2025 年主要晶圆伙伴为 **Lapis、Epson、X-FAB**，主要协议分别延续至 2028/2035/2028；典型 wafer 周期约 4–6 周、后段约 4 周。切换新 foundry 通常需 **12–24 个月**。这提高了工艺黏性，也意味着高压 GaN 若超预期，不能把所有库存/通用晶圆立即转换为合格 die。[2025 10-K](https://www.sec.gov/Archives/edgar/data/833640/000083364026000037/powi-20251231x10k.htm)
+
+## 8. 一年后产能、供应链采纳与认证三情景
+
+| 业务 | 情景 | 2027 年中可支持年收入产能（估） | 供应链采纳程度 | 未来认证/验证阶段 | 判断 |
+|---|---|---:|---|---|---|
+| SCALE 高功率 | 基准 | **$110m–$130m** | 既有工业 OEM 扩项目 | 风机/STATCOM/HVDC 逐案量产认证 | 不需激进 capex，需应用工程扩容 |
+|  | 乐观 | **$140m–$170m** | AI 园区电网/BESS 进入多 OEM BOM | 两个以上 AI/grid 平台项目批准 | 驱动板和模块联合验证成为约束 |
+|  | 极度乐观 | **$190m–$230m** | 形成平台级标准件 | 大型 OEM global AVL | 需提前备料、后段和工程支持投入 |
+| 直接 AI 电源 | 基准 | **$50m–$70m** | aux 多客户小批量；主功率仍验证 | Kyber aux 进入正式 AVL/小批量 | 足以支撑基准收入，利用率仍低 |
+|  | 乐观 | **$90m–$130m** | 2–4 家 ODM/云客户量产 | rack AC-DC/800V 至少一个主平台 PPAP/量产批准 | 高压 die 良率和磁件/模块伙伴开始关键 |
+|  | 极度乐观 | **$150m–$220m** | 多平台、多个 power shelf/socket | NVIDIA/其他架构 global AVL + 第二来源方案 | 必须锁定 wafer/backend 并证明 field reliability |
+| 汽车 | 基准 | **$60m–$80m** | 已赢项目按车型 SOP | 更多车型 PPAP 完成 | 足够支撑 $25m–$30m 收入 |
+|  | 乐观 | **$90m–$120m** | 多 socket/Tier-1 复制 | BMS/OBC/emergency PSU 多车型量产 | 质量追溯与长期供货要求上升 |
+|  | 极度乐观 | **$130m–$170m** | Top-20 多家同年爬坡 | 区域平台升级为全球车型平台 | 车规后段和零缺陷能力需扩展 |
+| 智能电表 | 基准 | **$90m–$110m** | 既有中标量正常交付 | 区域认证持续 | 需求节奏主导 |
+|  | 乐观 | **$120m–$150m** | 多邦/多国招标扩散 | 更多 meter OEM AVL | 成熟产能可较快增加 |
+|  | 极度乐观 | **$160m–$200m** | 大型招标集中放量 | 平台标准化采用 | 客户集中与价格压力同步上升 |
+| Tiny/TOP/InnoMux | 基准 | **$130m–$170m** | 2026H2 赢单正常 ramp | 主要终端安规/能效完成 | 产能远高于新增收入，需求是约束 |
+|  | 乐观 | **$180m–$230m** | 大客户多型号采用 | 平台级批准 | ASP/旧代蚕食需跟踪 |
+|  | 极度乐观 | **$250m–$320m** | 成为多个电源平台默认方案 | 全球多地区认证齐全 | 需额外 wafer/backend allocation |
+| PowiGaN 覆盖层 | 基准 | **$140m–$180m** | 750/900V 提升 attach，高压小量 | 1250/1700V 完成首批客户验证 | 良率改善比厂房 capex 更重要 |
+|  | 乐观 | **$200m–$250m** | AI/汽车/工业三线量产 | 1250/1700V 多客户量产批准 | 经济垄断开始显现 |
+|  | 极度乐观 | **$300m+** | 高压 GaN 成为 800V 标杆 | 多平台 global AVL、现场数据成熟 | 需要供应链承诺和显著营运资金投入 |
+
+**容量模型的含义：**这些数字是“合格 die + 封装/测试 + 工程支持能承载的产品收入”，不是公司已批准 capex，也不是订单。PI 2026Q1 capex 仅约 **$2.0m**、库存极高，短期完全没有因为总体产能不足而大扩产的财务信号；若 AI 极度乐观情景接近现实，应先看到 purchase commitments、库存结构变化、后段/wafer allocation 和 capex/预付款上升。
+
+## 9. 订单积压、供给与未来一年公司增速推断
+
+### 9.1 为什么不能使用传统 backlog
+
+10-K 明确说明：客户订单通常交期短，可在很少或没有罚款的情况下取消/改期；公司因此不把积压订单作为可靠未来收入指标。设计赢单通常在 **一年或更久**之后才进入量产。对 POWI，最有用的先行序列是：
+
+`设计/样品 → 客户认证/AVL → 可识别项目与 SOP → bookings/B2B → 渠道周数/turns → 出货收入 → 现金回款`
+
+把“design win 数”直接等同 backlog 会同时忽略取消、延迟、二供份额和量产良率。
+
+### 9.2 五季订单信号的可审计结论
+
+1. **2025Q1：**Q4/Q1 B2B >1，bookings 稳定，无异常 pull-in/pushout/cancellation；渠道 7.9 周，需求复苏真实但夹杂数百万美元关税前拉货。
+2. **2025Q2：**turns 27%处正常 20%–30%区间；季度初健康，但 7 月 bookings 比此前 run-rate 低约 20%，家电开始恶化。
+3. **2025Q3：**7 月和 Q3 月均 bookings 约比 H1 低 20%，家电订单约低 40%；渠道升至 9.8 周。收入仍高是滞后交付，不是新单强。
+4. **2025Q4：**bookings “significantly improved”，渠道降至 9.4 周；配合裁员 7%，说明公司在恢复订单和降低 breakeven 之间双向调整。
+5. **2026Q1：**order activity 进一步改善，渠道降至 8.9 周、库存天数从 313 降到 292，且 Q2 指引中值 +8.5% QoQ。恢复成立，但库存绝对值仍高，谈不上供不应求。
+
+**取消率模型：**公司没有披露取消率。正常基准按季度订单 **0%–5%**取消/推迟；宏观/关税压力情景按 **5%–15%**；AI 主平台在 BOM 冻结前更应使用 **20%–40%“时间滑移/份额折损”**而非取消率，因为项目更可能延迟或降份额，而非正式取消。汽车设计赢单亦采用 20%–30% SOP 延迟折扣。
+
+### 9.3 从订单与供给推导未来十二个月
+
+| 情景 | Bookings/B2B 与渠道假设 | 高增长业务交付 | 取消/延迟假设 | 供给假设 | 公司未来一年收入/增速 |
+|---|---|---|---|---|---:|
+| 基准 | B2B 约 0.95–1.05；渠道 **8–9 周** | 高功率 +25%–35%，汽车 +50%–80%，AI 到 $15m–$25m；消费低个位数 | 普通订单 0%–5%；汽车/AI 项目 20%–30%滑移 | 总体容量充足，高压 GaN 小量合格 | **约 $500m，+12%** |
+| 乐观 | 连续两季 B2B **1.05–1.15**；渠道 7.5–8.5 周且 sell-through 同步 | SCALE/汽车/新品全面兑现；AI $30m–$50m | 普通 0%–3%；关键项目滑移 <15% | 高压 GaN 良率稳定，工程/后段扩容 | **约 $560m，+25%** |
+| 极度乐观 | B2B **>1.15** 且不是渠道囤货；可见交付覆盖 >1 季度 | 800V AI 主链提前，AI $60m–$90m；工业项目集中放量 | 关键项目滑移 <10% | wafer/backend allocation 明显增加，仍无大面积延期 | **约 $650m，+46%** |
+
+### 9.4 可以推翻模型的硬指标
+
+- **上修：**公司首次披露 AI 美元收入/客户数量；1250V/1700V 正式 production release；Kyber 客户 AVL 或量产订单；B2B 连续两季 >1 同时渠道周数下降；capex/wafer commitments 上升且库存天数继续下降。
+- **下修：**Q2/Q3 实收低于指引；渠道重新 >10 周；库存天数 >300 且计提；“late-2026/2027”产品再次后移；客户用 stacked 650V GaN 或 1200V SiC 替代；汽车 SOP 再延迟。
+- **最关键验证：**AI 收入占比从本报告估算 2%–4%跨过 **5%/10%**两个门槛。若未跨过，市场仍主要在给远期期权估值。
+
+## 10. 竞争格局、主流技术、替代路径与客户切换成本
+
+### 10.1 分业务竞争表
+
+| 领域 | 主要竞争者/替代 | POWI 优势 | 弱点与替代风险 | 客户切换成本 |
+|---|---|---|---|---|
+| 集成 AC-DC（InnoSwitch/Tiny/TOP） | ST、Infineon、Sanken、NXP、TI、Diodes、MediaTek、On-Bright、Southchip、Chipown、Silan | 高压 switch+controller+隔离/保护系统集成；EcoSmart；庞大 design library | 中国同类低价、客户自研离散方案、LLC/resonant 在更高功率仍强 | **中高**：磁件、PCB、EMI/安规和热设计重做，约 6–12 个月；价格敏感低端较低 |
+| 高压 GaN | Infineon、TI、Renesas/Transphorm、Innoscience、Navitas、ST；1200V SiC/叠层 650V GaN | 750–1700V 单片集成路线、累计量产可靠性、1250/1700V 先发 | 竞争者可用 stacked GaN/SiC 实现系统目标；高压动态 Rds(on)、短路/浪涌、EMI、热/封装和 second-source 顾虑 | 量产后 **高**；平台冻结前仅 **中**，客户会保留二供 |
+| AI 800V rack power | Infineon 6kW 800→50/12V 参考设计；Navitas 10kW 800→50V；另有 onsemi、TI、ST、MPS、ROHM、EPC 及电源 ODM 自研 | 同时覆盖 1700V aux、1250V 主链、系统级集成，进入 NVIDIA ecosystem | 对手产品线更宽、客户关系更深；POWI 主功率量产时间偏后；1MW 架构和标准仍变 | **前期中、量产后高**：架构/BOM 未冻结时可换；完成安全、EMI、效率、可靠性后重验 9–18 个月 |
+| SCALE gate drivers | Infineon、Mitsubishi、Fuji、Semikron Danfoss、Firstack、功率模块厂自带 driver | 模块适配、保护/隔离、plug-and-play、项目实绩 | 模块厂纵向集成、数字隔离器+自研板、客户要求绑定 SiC module | **高**：失效成本高，项目认证约 12–36 个月；但新平台招标仍可替换 |
+| 汽车 | Infineon、ST、onsemi、TI、NXP、ROHM、Sanken；离散 SiC/GaN+controller | 集成、AEC/ISO/隔离、低元件数和 standby 效率 | 车厂二供、年降；SOP 延迟；部分 1700V 仍依赖 SiC | **很高**：PPAP/功能安全/EMC/寿命重验约 18–36 个月 |
+| 电表/电网边缘 | ST、Infineon、Renesas、On-Bright、中国本土厂商 | 宽输入、低待机、系统 BOM 小、全球 field base | 招标价格敏感、本地化替代、客户集中 | **中**：完成 meter 平台认证后较稳，但下一招标可换 |
+
+竞争名单与风险来自公司 10-K 的公开竞争披露及 2026 APEC/厂商资料。Infineon 已展示 6kW 800V→50/12V、Navitas 展示 10kW 800V→50V 且称效率 98.5%，说明 PI 的高压 GaN 先发并非无人竞争。[Infineon 800V reference designs](https://www.infineon.com/de/technology-news/2026/infpss202603-067) [Navitas APEC 2026](https://navitassemi.com/navitas-to-exhibit-breakthrough-solutions-for-ai-data-center-grid-and-energy-infrastructure-performance-computing-and-industrial-electrification-at-apec-2026/)
+
+### 10.2 新技术会不会成为主流
+
+**结论分层：**
+
+1. **800VDC rack 是 1MW 级系统的高概率主流方向，但不是 2026 已全面量产的事实。**NVIDIA 给出的 Kyber 路线是 2027 年 1MW、576 颗 Rubin Ultra GPU；称 800V 可减少约 45%铜、提高最高约 5%效率。OCP 2026 年才推进配电与安全规范，UL/OCP 明确指出监管、检验和安全标准存在缺口。[NVIDIA 800V architecture](https://developer.nvidia.com/blog/?p=100571) [NVIDIA Kyber power](https://developer.nvidia.com/blog/?p=107131) [UL/OCP safety initiative](https://www.ul.com/news/ul-solutions-and-open-compute-project-help-advance-safety-and-scalability-new-ai-data-center)
+2. **1250V/1700V GaN 是可信候选，但“唯一主流”尚未证实。**它在频率、功率密度、磁件尺寸上有优势；1200V SiC 的耐压/短路/热生态更成熟，stacked 650V GaN 可利用成熟器件和二供。客户最终会按系统效率、故障模式、成本、可维修性和 second source 决策。
+3. **集成 flyback 向 440W 扩张是有效产品创新，不会消灭 resonant。**TOPSwitchGaN 让一部分工业/充电器避免复杂 LLC/PFC，但连续高功率、热环境和极致效率应用仍会选择 LLC/多相/模块化拓扑。
+4. **SCALE 高功率 driver 是“卖铲子”且技术生命周期长。**无论最终开关采用 IGBT、SiC 还是部分 GaN，隔离、保护和 gate control 仍需存在；风险是功率模块厂把 driver 内置，压缩独立板价值。
+5. **vertical GaN 是长期看涨期权。**若在 700/1200V 达到良率、热和成本目标，可向 SiC/IGBT 高功率区扩展；目前只有收购资产与多年研发计划，不能计入一年收入。
+
+### 10.3 护城河到底有多宽
+
+- **IP/工艺：**截至 2025 年约 **281 项美国专利、329 项外国专利**，到期分布 2026–2046；专有高压工艺和 foundry transfer 周期形成门槛。
+- **系统集成：**POWI 卖的是减少器件数、缩小磁件/散热并降低设计失败概率；若客户只比较 die 的 $/A，会低估其系统价值。
+- **设计生态：**参考设计、PI Expert、Motor-Xpert、应用工程和累计量产数据提高 engineer reuse。
+- **反面：**Top-10 客户占 2025 收入 **81%**，Avnet 占 **32%**、Salcomp 占 **11%**；渠道/大客户集中削弱议价。高估值还要求新产品收入兑现，技术故事不能长期替代订单。
+
+## 11. 过去半年行业会议、论坛与技术证据
+
+| 日期 | 信息源 | 与 POWI 的关系 | 证据等级与投资含义 |
+|---|---|---|---|
+| 2026-01-13 | UL Solutions + OCP 启动 AI 数据中心 HVDC 安全/可扩展合作 | 800V–1500V 的标准、消防、检验仍在建设 | **A级行业事实**；说明市场真实，也说明量产时间受标准制约 |
+| 2026-02-05 | POWI Q4/FY2025 财报 | bookings 改善、工业/GaN 增长，同时裁员约 7% | **A级公司事实**；公司在为恢复与成本控制同时准备 |
+| 2026-03-22 至 26 | APEC 2026 | PI 展示 1250/1700V GaN、SCALE、TOPSwitchGaN；竞品同时展示 800V rack power | **B级技术验证**；展台/论文证明研发活跃，不证明量产订单。[PI APEC 2026](https://www.power.com/resources/events/apec-2026) [APEC program](https://apec-conf.org/wp-content/uploads/2026/03/APEC-2026-Program-Book-20260223.pdf) |
+| 2026-05-07 | 2026Q1 财报/电话会 | 两个台湾 AI aux design、美国云客户生产、主功率仍要“几年” | **A级**；短期 aux，长期主链的节奏最清晰 |
+| 2026-05-22 | PI Global AI Data Center Power Summit | 从 grid-to-chip 讨论 HVDC、SST、rack conversion | **B/C级**；生态营销和客户教育升温，未披露客户采购金额 |
+| 2026-06-01/17 | Computex/Kyber aux reference designs 与 DER-1110/1114 | 给出 15W/35W、尺寸、输入和效率，技术从概念走到可复制设计 | **A级产品事实**；仍需追踪 AVL、量产客户与实际 ASP |
+| 2026-06 | OCP EMEA/Power workstream | 讨论 1MW rack、800VDC；OCP power v1.0 于 2026-03，v1.1 计划 2026-07 | **A级行业路线**；规范正在成形而非已完全冻结。[OCP Power](https://www.opencompute.org/wiki/Data_Center_Facility/Power) [OCP EMEA 2026](https://www.opencompute.org/events/past-events/2026-ocp-emea-summit) |
+
+项目内行业研究与公开会议信息得到同一结论：**2026 年最确定的收入仍来自现有 48/54V 链、高功率电网设备和辅助电源；1250/1700V GaN/SST/800V 主链主要是 2027+。**这正是本报告没有把 POWI 写成“当前 AI 数据中心收入公司”的原因。
+
+## 12. 风险、催化剂与投资结论
+
+### 12.1 主要风险
+
+1. **估值/兑现错配：**约 9.0× TTM P/S、约 49× NTM P/E，而直接 AI 仅估 2%–4%；主功率延迟一个年度会显著压缩远期期权价值。
+2. **高库存：**292 天库存虽改善，仍远高于公司 <200 天目标；消费/家电若再弱可能减值或延长去化。
+3. **订单可取消：**没有硬 backlog；短交期订单和 design win 不能保证收入。
+4. **架构/替代：**800V 标准、配电边界、保护/连接器、维修规范未冻结；SiC 与 stacked GaN 可替代 1250/1700V 单管方案。
+5. **客户/渠道集中：**Top-10 81%，Avnet 32%；sell-in 与 sell-through 可能错配。
+6. **中国竞争与宏观：**低端 AC-DC 本地替代、关税/出口管制、家电和手机疲弱。
+7. **制造单点与良率：**专有工艺转厂 12–24 个月；高压 GaN/vertical GaN 的良率、封装和 field reliability 未充分公开。
+8. **汽车时间风险：**设计赢单多但 SOP 多次推迟；客户交流数不能当量产客户数。
+
+### 12.2 未来四季催化剂
+
+- 2026Q2 实收达到 **$115m–$120m**、GM 53.5%–54.5%，并给出 Q3 bookings/B2B；
+- TinySwitch-5、TOPSwitchGaN 和 InnoMux2 设计在 2026H2 转量产；
+- 汽车收入按“约翻倍”兑现，德国/中国 OEM 项目明确 SOP；
+- AI aux 客户从 1 个生产客户扩到多客户，并首次给出美元/份额；
+- 1250/1700V 主功率 production release、Kyber AVL/量产窗口与 800V 标准进展；
+- SCALE 在 HVDC/STATCOM、BESS、风电和 AI 园区电网取得可命名大项目；
+- 库存天数向 **<250、再向 <200**下降，而渠道维持约 8 周。
+
+### 12.3 最终投资判断
+
+POWI 不是廉价周期反转股，而是 **“高质量成熟 AC-DC 现金流 + 高功率工业增长 + 高压 GaN/800V AI 期权”**。资产负债表、FCF 和毛利率为公司争取了等待时间；SCALE、PowiGaN、车规集成和参考设计生态构成真实能力。最重要的负面则是：估值已经部分预支 AI，而主功率收入还在客户验证前后，订单没有硬 backlog，库存仍高。
+
+因此，基本面最佳路径不是押注“POWI 垄断整个 AI 电源”，而是验证一个三阶段阶梯：
+
+1. **2026：**工业/高功率、新品和汽车把公司恢复到中高个位数/低双位数增长；
+2. **2026H2–2027H1：**AI aux 和 rack AC-DC 从 reference design 变成可识别量产收入；
+3. **2027+：**1250/1700V GaN 在 800V 主链取得平台级 AVL，推动 AI 收入跨过 5%与 10%。
+
+若第一阶段失败，AI 远期期权不足以支撑当前倍数；若前两阶段同时兑现，POWI 会从“周期复苏的电源 IC 公司”重估为“AI 高压电力栈稀缺供应商”。当前结论为：**财务健康、技术领先、订单改善，但 AI 收入尚未过验证门槛；适合按催化剂和收入占比逐级确认，而不是按 TAM 一步估值。**
+
+## 13. 资料口径与主要来源
+
+### 13.1 一手公司与监管资料
+
+- [Power Integrations 2026Q1 财报](https://investors.power.com/news/news-details/2026/Power-Integrations-Reports-First-Quarter-Financial-Results/default.aspx)；[2026Q1 电话会文字稿](https://s27.q4cdn.com/802031818/files/doc_financials/2026/q1/POWI-Q1-2026-Earnings-Transcript.pdf)
+- [2025Q4/FY2025 财报](https://investors.power.com/news/news-details/2026/Power-Integrations-Reports-Fourth-Quarter-and-Full-Year-Financial-Results/default.aspx)；[2025Q4 电话会文字稿](https://s27.q4cdn.com/802031818/files/doc_financials/2025/q4/POWI-Q4-2025-Earnings-Transcript.pdf)
+- [2025Q3 财报](https://investors.power.com/news/news-details/2025/Power-Integrations-Reports-Third-Quarter-Financial-Results/default.aspx)；[2025Q3 电话会文字稿](https://s27.q4cdn.com/802031818/files/doc_financials/2025/q3/POWI-Q3-2025-Earnings-Transcript.pdf)
+- [2025Q2 财报](https://investors.power.com/news/news-details/2025/Power-Integrations-Reports-Second-Quarter-Financial-Results/default.aspx)；[2025Q2 电话会文字稿](https://s27.q4cdn.com/802031818/files/doc_financials/2025/q2/POWI-Q2-2025-Earnings-Transcript.pdf)
+- [2025Q1 财报](https://investors.power.com/news/news-details/2025/Power-Integrations-Reports-First-Quarter-Financial-Results/default.aspx)；[2025Q1 电话会文字稿](https://s27.q4cdn.com/802031818/files/doc_financials/2025/q1/POWI-Q1-2025-Earnings-Transcript.pdf)
+- [2025 10-K](https://www.sec.gov/Archives/edgar/data/833640/000083364026000037/powi-20251231x10k.htm)；[2026-06 投资者演示](https://s27.q4cdn.com/802031818/files/doc_presentations/2026/Jun/01/POWI-Investor-Presentation-June-2026.pdf)
+- [1250V/1700V PowiGaN 公告](https://investors.power.com/news/news-details/2025/Power-Integrations-Details-1250-V-and-1700-V-PowiGaN-Technology-for-Next-Generation-800-VDC-AI-Data-Centers/default.aspx)；[Kyber 辅助电源参考设计公告](https://investors.power.com/news/news-details/2026/Power-Integrations-Unveils-Space-Saving-Ultra-Slim-Auxiliary-PSU-Reference-Designs-for-NVIDIA-Kyber-800-VDC-AI-Data-Center/default.aspx)
+
+### 13.2 本项目内允许使用的行业资料
+
+本报告只使用 `基本面/行业调研/` 的相关产业材料作行业框架和交叉验证，未读取其他研究目录、未复用既有公司报告：
+
+- `基本面/行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-07-10.md`
+- `基本面/行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md`
+- `基本面/行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-07-10.md`
+- `基本面/行业调研/产业背景/顶级会议信息/conference_update_apec_2026_2026-06-10.md`
+
+### 13.3 数据与推算声明
+
+- 股价和倍数为 **2026-07-10 美股收盘/2026-07-12 检索快照**；周末没有新的正常交易收盘。市场数据会变动。
+- 财报数字使用 GAAP；业务收入按公司四终端百分比乘季度收入重建，因披露百分比取整，分项相加可能有约 ±$1m 误差。
+- AI、产品、产能、BOM、每 MW/rack/GPU 和三情景收入凡公司未披露者均标为本报告估算。区间采用管理层锚点、产品规格、design win 阶段、渠道库存、竞品和行业架构交叉约束，不应解释为公司指导、正式订单或目标价依据。
+- 截止时间为 **2026-07-12（America/Los_Angeles）**。

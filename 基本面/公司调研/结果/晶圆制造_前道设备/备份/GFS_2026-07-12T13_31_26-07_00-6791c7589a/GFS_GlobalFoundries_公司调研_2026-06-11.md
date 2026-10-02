@@ -1,0 +1,339 @@
+# 公司：GFS GlobalFoundries 公司调研_2026-06-11
+
+报告日期：2026-06-11  
+研究对象：GlobalFoundries Inc.，NASDAQ: GFS  
+正式分类：`公司调研/晶圆制造_前道设备/`  
+资料边界：本报告只使用项目内 `行业调研/` 的产业资料和联网公开资料；未读取、引用或继承 `特征量化/`、`日度资料/` 或相邻公司调研报告。市场行情、估值、财报和指引均带日期；未披露数据以“公司未披露 + 产业链推断”方式单独标注。
+
+## 0. 核心结论
+
+GFS 不是先进 AI 主计算 die 的代工厂，也不是 HBM/CoWoS 供应商。它在投资人眼中更像“美国/欧洲友岸特色晶圆代工 + 汽车和通信长约 + 硅光/CPO 期权”的组合：基本盘是成熟和特色制程现金流，弹性来自 AI 数据中心把网络光互联、高速模拟、功率管理、车载/工业 physical AI 的专用制程价值重新定价。
+
+截至 2026-06-11 行情快照，GFS 股价 `80.74 美元`、市值 `445.30 亿美元`，TTM 收入 `68.4 亿美元`，TTM 净利润 `7.78 亿美元`，P/E `58.1x`、Forward P/E `40.7x`、P/S `6.51x`，TTM 毛利率 `25.18%`、净利率 `11.38%`。这个估值已经明显高于“普通成熟节点代工”的周期股估值，市场正在提前支付硅光、CPO、美国本土制造和长期毛利率改善的期权。
+
+最新一次财报 2026Q1 收入 `16.34 亿美元`，同比约 `+3.1%`，GAAP 毛利率 `25.1%`，调整后毛利率 `29.0%`，净利润 `1.70 亿美元`，调整后 EBITDA `5.78 亿美元`；公司指引 2026Q2 收入中值 `17.60 亿美元`，同比约 `+4.3%`、环比约 `+7.7%`。这说明需求在恢复，但不是全公司爆发式增长；AI 相关最强的仍是通信基础设施/数据中心中的硅光、光网络、高速连接和小批量 CPO 设计导入。
+
+最值得跟踪的高增长业务是 `GF Fotonix / AMF / SCALE CPO / InfiniLink` 这一组硅光和光引擎能力。它当前收入贡献仍小，估计直接 AI 数据中心收入年化低于 `2 亿美元`，但如果 1.6T、NPO/CPO、OCI 光 I/O 在 2027 年前进入多客户量产，12 个月后有机会贡献 `1.5-3.0 亿美元`，乐观 `3.5-6.5 亿美元`，极度乐观 `8-12 亿美元`。这个上沿不是来自普通晶圆涨价，而是来自客户认证通过、PIC/EIC/laser/封装测试整合、300mm SiPh 迁移和 CPO/NPO 平台绑定。
+
+资产负债表健康。2025-12-31 公司现金 `18.09 亿美元`，流动和非流动有价证券合计 `21.80 亿美元`，现金及证券合计约 `39.89 亿美元`；长期债务含当期部分约 `11.51 亿美元`，净现金/证券约 `28.38 亿美元`。2025 年经营现金流 `17.31 亿美元`、调整后自由现金流 `11.57 亿美元`，当前比率按公开市场数据约 `2.16x`、债务/权益 `0.25x`。财务健康，但资本回报和并购加速意味着未来两年要看 capex、政府补贴、客户预付款和硅光客户导入是否兑现。
+
+## 1. 公司整体业务、投资人定位和产业链位置
+
+### 1.1 公司业务
+
+GlobalFoundries 是全球主要纯晶圆代工厂之一，但它的战略不是追逐 3nm/2nm 先进逻辑，而是把成熟节点和特色制程做成高可靠、高粘性平台。公司服务的典型终端市场包括：
+
+| 终端市场 | 主要制程/产品 | 当前增长质量 | 与 AI 数据中心关系 |
+|---|---:|---:|---|
+| Communications Infrastructure & Data Center | 硅光、SiGe/CBIC、高速连接、光网络、数据中心互联、卫星/无线基础设施 | 2025 年多季度同比双位数增长；2026 是 AI 叙事核心 | 最直接，尤其是 800G/1.6T、CPO/NPO、光 I/O、交换侧光引擎 |
+| Automotive | 22FDX 雷达、eNVM MCU、车载电源/传感/连接、长期供货协议 | 设计周期长、客户粘性高；当前周期恢复温和 | physical AI、SDV、自动驾驶间接受益；不是 AI 数据中心收入 |
+| Smart Mobile Devices | RF SOI、射频前端、连接、显示/电源相关成熟节点 | 周期性强，低估值现金流属性 | 与 AI 基建弱相关，主要是现金流底盘 |
+| Home & Industrial IoT | 低功耗 MCU、连接、工业控制、传感、eNVM/eMRAM | 混合型，部分客户去库存后恢复 | 边缘 AI 和工业 physical AI 相关，但收入弹性小于硅光 |
+| Processor IP / Design Enablement | MIPS、ARC-V/ARC/VPX-DSP/NPX NPU、ASIP 工具、客户定制 | 2026-2027 整合期 | 不直接贡献大晶圆收入，但增强客户绑定和 NRE/IP 收入 |
+
+投资人对 GFS 的认知大致分三层：
+
+1. 现金流底盘：它是成熟/特色制程代工厂，客户认证周期长，价格和份额比普通成熟节点更稳。
+2. 地缘和供应链安全：美国 Malta、Vermont、德国 Dresden、新加坡等资产，让客户和政府愿意用长期协议、补贴、预付款支持产能。
+3. AI 期权：公司不是 AI GPU 主芯片代工厂，但 AI 机架把光互联、低功耗连接、车载/工业 physical AI、功率密度等约束推到特色制程层。GF 的硅光、SiGe、FDX/eNVM、GaN 合作和 MIPS/ARC IP 都围绕这个方向增强。
+
+### 1.2 最近 3 年重大业务变化
+
+| 时间 | 事件 | 投资含义 |
+|---|---|---|
+| 2024-2025 | 美国、德国等地友岸制造项目推进；Dresden 计划到 2028 年产能超过 `100 万片/年` | 政府补贴和客户长期协议降低扩产风险，但仍需真实需求填充 |
+| 2025-07 | 宣布收购 MIPS，扩展 RISC-V/AI processor IP 和软件工具 | 从“只代工”向“代工 + IP + 客户定制”移动，提高客户早期绑定 |
+| 2025-08 | 发布 CBIC 高性能 SiGe 技术，面向智能手机、无线基础设施、光网络、卫星通信、工业 IoT | SiGe/高速模拟成为光模块、TIA/driver、RF 和高速连接的关键增量 |
+| 2025-10 | Silicon Labs 扩大与 GF 的 40nm Ultra Low Power 合作；Dresden 扩产绑定 NXP、Infineon、Aumovio、Bosch 等客户 | 边缘/汽车/欧洲本土供应链粘性增强 |
+| 2025-11 | 收购 Advanced Micro Foundry，获得新加坡 200mm 硅光制造和客户基础 | 直接补强 SiPh，缩短 GF Fotonix 从 300mm 平台到客户收入的周期 |
+| 2025-11 | 收购 InfiniLink，获得 SerDes、光收发器芯片和单片硅光设计能力 | 补足 PIC 之外的 EIC/SerDes/设计能力，利于 CPO/NPO/光引擎导入 |
+| 2025-11 | 与 Navitas 建立 GaN 战略合作，面向 AI 数据中心、高性能计算、能源和电网 | 目前小业务，但与 AI rack 电源密度和 48V/高压供电趋势一致 |
+| 2026-01/03 | 宣布并完成收购 Synopsys Processor IP Solutions 业务，与 MIPS 整合为 GlobalFoundries Processor Products | 进一步增强 ARC-V、ARC、DSP、NPU、ASIP 工具和 physical AI IP |
+| 2026-03 | 发布 SCALE optical module solution，面向 AI 数据中心 CPO/NPO/可插拔光互联 | AI 数据中心叙事的核心产品化信号 |
+| 2026-05 | Investor Day 宣布首次季度股息 `0.25 美元/股`，2028 毛利率目标至少 `40%`，2030 至少 `45%` | 管理层把公司从周期代工厂重新定位为高毛利特色平台；市场估值开始按转型兑现定价 |
+
+### 1.3 产业链位置
+
+GFS 位于 AI 基建供应链的“特色晶圆制造和平台化 IP”层，位置低于 NVIDIA/Broadcom/Marvell 等系统芯片和 DSP 平台，低于 Lumentum/Coherent 等高端激光器品牌，但高于普通 OSAT/EMS 的装配环节。它能捕获的不是整只 1.6T 光模块 ASP，而是其中硅光 PIC、SiGe/driver/TIA、光电协同 PDK、晶圆级测试、封装测试、客户定制和长期制造份额。
+
+项目内 `行业调研/晶圆制造_设备_材料_测试/行业调研_特种晶圆代工_2026-06-11.md` 给出的判断是：特种晶圆代工不是 NVIDIA/AMD/TPU 主计算 die 的主战场，而是 AI 机架级系统、光互联和高功率供电之后被重新定价的成熟/特色制程层；2026 年最确定的路径是 `硅光/光引擎 + BCD/高压功率管理 + SiGe/RF 高速模拟 + SiC/GaN 电源链 + MEMS/传感小增量`。GFS 在其中覆盖 `硅光、SiGe/RF、FDX/eNVM、车载 radar/MCU、GaN 合作、processor IP`，但 BCD/PMIC 直接暴露弱于 Tower、UMC、X-FAB、部分 IDM。
+
+### 1.4 估值和财务快照
+
+| 指标 | 数值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | `80.74 美元` | 2026-06-11 行情快照 | 52 周高点附近，市场已给 AI/硅光期权溢价 |
+| 市值 | `445.30 亿美元` | 2026-06-11 | 对应 TTM 收入约 `6.5x` |
+| 企业价值 | `426.0 亿美元` | 2026-06-11 StockAnalysis | 低于市值，反映净现金/证券头寸 |
+| TTM 收入 | `68.4 亿美元` | 2026-06-11 TTM | 2025Q2-2026Q1 合计约 `68.4 亿美元` |
+| TTM 净利润 | `7.78 亿美元` | 2026-06-11 TTM | 净利率 `11.38%` |
+| P/E | `58.12x` | 2026-06-11 | 估值不便宜，依赖毛利率和硅光兑现 |
+| Forward P/E | `40.71x` | 2026-06-11 | 已经按盈利改善定价 |
+| P/S | `6.51x` | 2026-06-11 | 对成熟代工偏高，对硅光平台期权合理但有执行风险 |
+| TTM 毛利率 | `25.18%` | 2026-06-11 TTM | 2026Q1 调整后毛利率已达 `29.0%` |
+| TTM 净利率 | `11.38%` | 2026-06-11 TTM | 税项和一次性因素会扰动季度净利 |
+| 2026Q1 收入增速 | `+3.1% YoY` | 2026-05-05 财报 | 不是爆发式增长；Q2 指引中值 YoY 约 `+4.3%` |
+| 当前比率 | `2.16x` | 2026-06-11 StockAnalysis | 短债压力低 |
+| 债务/权益 | `0.25x` | 2026-06-11 StockAnalysis | 杠杆轻 |
+
+资产负债表评价：2025-12-31 公司现金 `18.09 亿美元`，流动有价证券 `12.41 亿美元`，非流动有价证券 `9.39 亿美元`，现金及证券合计约 `39.89 亿美元`；长期债务含当期部分 `11.51 亿美元`，总负债 `51.58 亿美元`，总资产 `171.41 亿美元`。2025 年经营现金流 `17.31 亿美元`，调整后自由现金流 `11.57 亿美元`，购买 PP&E 和无形资产 `7.22 亿美元`，并购净现金流出 `6.82 亿美元`。结论是财务健康、融资风险低，但估值已经把中长期毛利率从 25%-29% 往 40%+ 的改善路径计入了一部分。
+
+## 2. 最新和最近 4 次财报
+
+公司不按季度披露完整 backlog、bookings、B2B、lead time、取消率或 AI 数据中心收入。下表对“订单与交期”采用三层证据：一是公司披露的晶圆出货和收入/指引，二是客户长约、预付款、战略协议和收购，三是项目内行业资料对 1.6T/CPO/SiPh 供需的交叉验证。所有估算均标为“估”。
+
+| 财报季度 | 发布日期 | 收入与增速 | 毛利率/利润 | 出货/订单能见度 | 业务和 AI 数据中心判断 |
+|---|---:|---:|---:|---|---|
+| 2026Q1 | 2026-05-05 | 收入 `16.34 亿美元`，同比约 `+3.1%`，环比约 `-10.7%`；2026Q2 指引 `17.60±0.25 亿美元` | GAAP GM `25.1%`，调整 GM `29.0%`；净利润 `1.70 亿美元`；调整 EBITDA `5.78 亿美元`；GAAP EPS `0.31`，调整 EPS `0.38` | 未披露 backlog/bookings；Q2 指引环比中值 `+7.7%` 表示 2026H1 需求恢复；Renesas eNVM 战略供货、SCALE CPO、Sivers 合作、MIPS/ARC 整合提高未来订单能见度 | AI 数据中心直接收入估计仍小，约公司收入 `2%-5%`；但 SiPh/SCALE/CPO 设计漏斗增厚。重点不是当季收入，而是 2026-2027 客户认证 |
+| 2025Q4 | 2026-02-11 | 收入 `18.30 亿美元`，同比 `0%`，环比 `+8%`；FY2025 收入 `67.91 亿美元`，同比 `+1%` | GM `27.8%`，调整 GM `29.0%`；净利润 `2.00 亿美元`；调整净利 `3.10 亿美元`；调整 EBITDA `6.41 亿美元`；调整 EPS `0.55` | 300mm 等效晶圆出货 `61.9 万片`，同比 `+4%`、环比 `+3%`；现金及证券 `40 亿美元`；AMF、InfiniLink、Navitas/GaN 增强未来设计赢单 | AMF/InfiniLink 是硅光收入加速器，但并购当季主要是能力和客户基础，不是大额收入；AI DC 直接贡献估 `1%-4%` |
+| 2025Q3 | 2025-11-12 | 收入 `16.88 亿美元`，同比 `-3%`，环比持平 | GM `24.8%`，调整 GM `26.0%`；净利润 `2.49 亿美元`；调整净利 `2.32 亿美元`；调整 EBITDA `5.73 亿美元`；调整 EPS `0.41` | 300mm 等效晶圆出货 `60.2 万片`，同比 `+10%`、环比 `+4%`；汽车和通信基础设施/数据中心连续 4 个季度同比增长 | CBIC SiGe 发布、SiPh 和 FDX 客户动能增强；通信基础设施/数据中心是 AI 暴露主线，但公司未披露纯 AI 收入 |
+| 2025Q2 | 2025-08-05 | 收入 `16.88 亿美元`，同比 `+3%`，环比 `+6%` | GM `24.2%`，调整 GM `25.2%`；净利润 `2.28 亿美元`；调整净利 `2.34 亿美元`；调整 EBITDA `5.85 亿美元`；调整 EPS `0.42` | 300mm 等效晶圆出货 `58.1 万片`，同比 `+12%`、环比 `+7%`；汽车和通信基础设施/数据中心均实现双位数同比增长 | Continental AESS、MIPS 收购、中国本土代工合作增强汽车/本地供应链；AI DC 仍以光网络/数据中心连接间接贡献 |
+| 2025Q1 | 2025-05-06 | 收入 `15.85 亿美元`，同比 `+2%`，环比 `-13%` | GM `22.4%`，调整 GM `23.9%`；净利润 `2.11 亿美元`；调整净利 `1.89 亿美元`；调整 EBITDA `5.58 亿美元`；调整 EPS `0.34` | 300mm 等效晶圆出货 `54.3 万片`，同比 `+17%`、环比 `-9%`；Q2 指引收入中值 `16.75 亿美元` | Ayar Labs UCIe 光互联 chiplet 使用 GF 单片光子平台；Bosch/indie 22FDX 车载雷达进展。AI DC 设计赢单信号早于收入 |
+
+### 2.1 从五个季度看到的关键变化
+
+1. 收入底部恢复但非爆发：2025Q1 `15.85 亿美元` 到 2025Q4 `18.30 亿美元`，2026Q1 季节性回落到 `16.34 亿美元`；2026Q2 指引中值 `17.60 亿美元`，说明需求恢复但还不是全线缺货。
+2. 毛利率有明显改善：GAAP GM 从 2025Q1 `22.4%` 到 2025Q4 `27.8%`，2026Q1 `25.1%`、调整 GM `29.0%`。若 Investor Day 2028 `40%+` 毛利率目标要兑现，必须依赖产品组合、特色平台和客户预付款，而不能只靠普通成熟节点利用率。
+3. 出货量恢复快于收入：2025 年 300mm 等效晶圆出货 `234.5 万片`，同比 `+10%`，收入仅 `+1%`，说明 ASP/产品组合仍有压力；Q4 单季收入/出货约 `2,956 美元/片 300mm 等效`，高于全年约 `2,897 美元/片`。
+4. AI 相关收入当前占比不高：公司多次提到 AI Data Center、silicon photonics、FDX、physical AI，但未披露 AI 数据中心收入。合理判断是当前直接收入小于通信基础设施/数据中心整个 end-market，大概率低于公司收入 `5%`；真正的重估取决于 2026-2027 SiPh/CPO 认证和量产。
+
+## 3. 2026 最新指引、业务收入占比和产品映射
+
+### 3.1 2026Q2 最新指引
+
+2026Q1 财报给出的 2026Q2 指引：
+
+| 指标 | 2026Q2 指引 | 对比 |
+|---|---:|---|
+| 收入 | `17.60±0.25 亿美元` | 中值同比约 `+4.3%`，环比约 `+7.7%` |
+| GAAP 毛利 | `4.29±0.10 亿美元` | 中值 GAAP GM 约 `24.4%` |
+| 调整后毛利 | `4.90±0.10 亿美元` | 中值调整 GM 约 `27.8%` |
+| GAAP 经营利润 | `1.70±0.10 亿美元` | 中值 operating margin 约 `9.7%` |
+| 调整后经营利润 | `2.05±0.10 亿美元` | 中值调整 operating margin 约 `11.6%` |
+| 净利润 | `1.55±0.15 亿美元` | 中值净利率约 `8.8%` |
+| 调整后 EBITDA | `6.15±0.10 亿美元` | 中值 EBITDA margin 约 `34.9%` |
+| 调整 EPS | `0.38±0.03 美元` | 与 2026Q1 调整 EPS 持平 |
+
+### 3.2 2026 收入占比估算
+
+GFS 未在最新财报中披露季度 end-market 精确占比。结合 2025 财报评论、2026 指引和行业资料，本报告按 2026 年化 `68-72 亿美元` 收入池估算：
+
+| 业务/终端市场 | 2026 年化收入估算 | 公司收入占比估算 | 增长判断 | 是否重点 |
+|---|---:|---:|---|---|
+| Communications Infrastructure & Data Center | `10-14 亿美元` | `15%-20%` | 2025 多季度双位数增长；2026 受 AI 光互联拉动 | 重点 |
+| Automotive | `12-16 亿美元` | `18%-23%` | 设计周期长，Renesas/Bosch/Continental/NXP/Infineon 等客户支持中长期增长 | 重点，但非 AI DC |
+| Smart Mobile Devices | `24-30 亿美元` | `35%-42%` | 周期恢复慢，RF/手机需求主导 | 低优先级现金流 |
+| Home & Industrial IoT | `12-16 亿美元` | `18%-23%` | 低功耗连接、工业控制恢复；增速中等 | 部分重点 |
+| Processor IP / NRE / Design Services | `<1 亿美元` 当前，整合后增长 | `<1%-2%` | MIPS/ARC 并入后上升 | 小业务高战略价值 |
+
+### 3.3 产品和业务对应关系
+
+| 产品/平台 | 对应业务 | 主要客户/生态信号 | 利润率判断 | 销售增速/规模判断 |
+|---|---|---|---|---|
+| GF Fotonix / Silicon Photonics | Communications Infrastructure & Data Center | Ayar UCIe optical chiplet、AMF 客户、Sivers InP laser arrays、OCI/CPO 生态 | 若只是 wafer foundry，毛利接近公司特色平台；若含设计/封装测试/平台服务，毛利可高于公司平均 | 当前小，12 个月收入弹性最大 |
+| SCALE optical module solution | SiPh/CPO/NPO/AI DC | 支持 pluggable、near-package、co-packaged optical；兼容 OCI MSA；面向 PCIe/USB/HDMI 高密 3D optical interconnect | 平台型毛利取决于 GF 是否捕获 PIC + package/test + IP，而非只收晶圆加工费 | 2026 是认证/小批量，2027 才可能显著收入化 |
+| AMF 200mm SiPh + GF 300mm SiPh | SiPh 制造 | 2025-11 收购 AMF；可用 200mm 客户基础与 300mm 规模协同 | 200mm 受设备和良率约束，300mm 有规模优势但迁移周期长 | 当前估 `<2 亿美元` 年化；乐观 12 个月 `3.5-6.5 亿美元` |
+| InfiniLink SerDes/optical chipset/monolithic SiPh IP | 高速连接设计 | 2025-11 收购，补充 EIC/SerDes/设计能力 | IP/NRE 毛利高，规模小；若转晶圆量产可放大 | 小业务，不可漏；是客户导入 SiPh 的加速器 |
+| CBIC SiGe / RF SOI / 高频模拟 | 光网络、无线基础设施、卫星、手机 RF | 2025Q3 production release，服务 optical networking 和无线基础设施 | 特色制程毛利应高于普通成熟节点，但低于纯 IP/DSP | 稳健增长；和 SiPh 绑定后收入质量提升 |
+| 22FDX / automotive radar / eNVM MCU | Automotive、physical AI | Bosch、indie、Renesas、Continental、NXP/Infineon/Bosch Dresden | 汽车认证长、替换成本高，毛利稳定；周期性低于手机 | 中高确定性，但 AI 数据中心相关性低 |
+| Navitas-GF GaN | 高功率、AI DC 电源、能源/电网 | 2025-11 长期合作 | 当前收入不大；若 AI rack 高压供电导入，毛利和估值弹性高 | 2026-2027 期权，不能按已放量估值 |
+| MIPS + ARC Processor IP | real-time/embedded/physical AI | 2026 收购 Synopsys ARC Processor IP Solutions，整合 MIPS | IP 授权毛利高，但当前规模小 | 对晶圆收入的拉动是客户绑定和定制化，不是短期大收入 |
+
+### 3.4 跳过或低优先级业务
+
+以下业务不是本报告的重点，除非它们与 SiPh、汽车 physical AI 或数据中心连接绑定：
+
+| 低优先级业务 | 跳过原因 |
+|---|---|
+| 普通手机 RF SOI 和消费电子成熟节点 | 收入体量大但周期属性强，AI 相关性弱，增速不一定高 |
+| 普通 IoT MCU 和低端连接 | 有现金流，但供给替代多，难形成 AI 基建溢价 |
+| 传统显示驱动/普通 PMIC/HV | AI 相关性弱，除非进入高功率 AI rack 电源链 |
+| 普通成熟节点 wafer fill | 利用率改善有价值，但不能支撑当前高估值 |
+| China-for-China 普通本地供给 | 有战略意义，但毛利和稀缺性低于 SiPh/CPO/汽车认证平台 |
+
+## 4. 关键高增长产品和当前贡献评估
+
+评分：重要性、时间紧急性、供需紧张、垄断/溢价能力均为 `1-5`，5 最高。收入贡献为本报告估算，不是公司披露。
+
+| 关键产品/业务 | 当前收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| SiPh/Fotonix/AMF/SCALE/CPO | 年化 `0.5-2.0 亿美元`，直接 AI DC 低于公司 `3%` | `30%-80%+`，基数小 | 5 | 5 | 4 | 3.5 | 最核心期权；订单认证比当期收入更关键 |
+| Communications & Data Center 非 SiPh 高速连接/SiGe/CBIC | 年化 `8-12 亿美元`，其中 AI 绑定估 `1-3 亿美元` | `10%-20%` | 4 | 4 | 3.5 | 3 | 可兑现收入更高，弹性低于 SiPh/CPO |
+| Automotive 22FDX/eNVM/Radar/Renesas | 年化 `12-16 亿美元` | `低个位数至低双位数` | 2.5 | 3 | 3 | 4 | 高粘性基本盘，AI DC 弱，但 physical AI 叙事增强 |
+| FDX/eMRAM/eNVM/edge secure MCU | 年化 `6-10 亿美元`，混在 auto/IoT | `5%-12%` | 2.5 | 3 | 3 | 3.5 | 不是 AI DC，但提高特色平台毛利和客户锁定 |
+| Navitas/GF GaN power | 当前接近 `0-0.25 亿美元` | 基数小，可能 `>100%` | 3.5 | 3 | 3.5 | 2.5 | 小业务不能漏；若 AI rack 高压供电采用，弹性大 |
+| MIPS/ARC Processor IP | 当前 `<0.5 亿美元` | 整合后高增长 | 2.5 | 3 | 2 | 3 | 高毛利小业务，更多是客户绑定工具 |
+
+## 5. 一年后收入贡献情景预测
+
+时间窗口：2026-06 至 2027-06 滚动 12 个月。情景假设基于 2026Q2 指引、项目内行业资料对 1.6T/CPO/AI 数据中心建设的判断，以及公司已披露客户和并购动作。
+
+| 产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| SiPh/Fotonix/AMF/SCALE/CPO | 收入 `1.5-3.0 亿美元`；增速 `+50%-100%`；重要性 5；紧急性 5；供需 4；溢价 3.5 | 收入 `3.5-6.5 亿美元`；1.6T/CPO/NPO 多客户小批量；供需 4.5；溢价 4 | 收入 `8-12 亿美元`；OCI/CPO/光 I/O 进入头部 AI switch/accelerator 设计；供需 5；溢价 4.5 |
+| CIDC 非 SiPh 高速连接/SiGe/CBIC | 收入 `10-13 亿美元`；增速 `+8%-15%`；重要性 4 | 收入 `13-16 亿美元`；增速 `+20%-35%`；SiGe/driver/TIA 与 SiPh 同步导入 | 收入 `16-20 亿美元`；增速 `+40%-60%`；光网络和 AI DC 拉动超过无线周期 |
+| Automotive 22FDX/eNVM/Radar | 收入 `13-17 亿美元`；增速 `+3%-8%`；重要性 2.5；供需 3 | 收入 `15-19 亿美元`；Renesas/Continental/Bosch 订单加速；增速 `+10%-18%` | 收入 `18-22 亿美元`；SDV/radar/physical AI 订单强，增速 `+20%-30%` |
+| FDX/eMRAM/eNVM/edge | 收入 `7-11 亿美元`；增速 `+5%-12%` | 收入 `9-13 亿美元`；工业和汽车客户回补库存 | 收入 `12-16 亿美元`；physical AI/edge secure MCU 明显加速 |
+| Navitas/GaN | 收入 `<0.25 亿美元`，主要 NRE/试产 | 收入 `0.25-0.75 亿美元`，AI DC power 试点 | 收入 `1-2 亿美元`，48V/高压 AI rack 电源链导入，仍非主业务 |
+| MIPS/ARC IP | 收入 `0.5-1.0 亿美元` | 收入 `1-2 亿美元`，IP 授权和 NRE 放大 | 收入 `2.5 亿美元+`，多个 physical AI/custom chip 客户采用 |
+
+公司整体一年后收入预测：
+
+| 情景 | 2026-06 至 2027-06 收入 | 增速 | 关键条件 |
+|---|---:|---:|---|
+| 基准 | `71-73 亿美元` | `+4%-7%` | Q2 指引兑现，汽车/CIDC 稳定，SiPh 小规模放量 |
+| 乐观 | `74-78 亿美元` | `+8%-13%` | 1.6T/SiPh/CPO 设计赢单转订单，汽车恢复，手机不拖累 |
+| 极度乐观 | `80-85 亿美元` | `+15%-22%` | AI 光互联提前大规模导入、AMF/InfiniLink 协同快、Dresden/Malta/Singapore 利用率提高 |
+
+## 6. BOM、单位内容量、价格传导和当前产能
+
+### 6.1 GF 在 AI 数据中心 BOM 里的真实位置
+
+GFS 不是整机、交换机、光模块品牌商，也不是 GPU/ASIC 主 die 代工厂。它可能捕获的是以下 BOM 层：
+
+| BOM 层 | 典型部件 | GF 可捕获内容 | 价格传导链 |
+|---|---|---|---|
+| 可插拔 800G/1.6T 光模块 | EML/CW laser、SiPh PIC、DSP、TIA/driver、CDR、封装、测试 | SiPh PIC wafer、SiGe/TIA/driver、PDK、晶圆级测试、部分 package/test | Hyperscaler/NVIDIA/Broadcom 订单 -> 模块厂 -> optical engine/laser/DSP -> foundry wafer/NRE |
+| CPO/NPO/CPX 光引擎 | optical engine、socket/connector、ELS、PIC/EIC、热管理 | SCALE 平台、SiPh PIC、SerDes/InfiniLink IP、3D optical interconnect、package/test | AI switch ASIC 平台 -> CPO optical engine -> SiPh foundry/IP/package |
+| AI rack 电源 | 48V/12V/1.xV power stage、eFuse、driver、隔离、GaN/SiC | 当前 GF 直接 BCD 暴露有限；Navitas-GF GaN 是期权 | Rack OEM/power shelf -> power IC/GaN device -> foundry/IDM |
+| 车载/工业 physical AI | radar SoC、MCU、eNVM、传感、低功耗连接 | 22FDX、eNVM、FDX、RF/SiGe、汽车认证产能 | Tier-1/OEM -> chip vendor -> GF 长约/认证产能 |
+| Processor IP | RISC-V/ARC/DSP/NPU/ASIP | MIPS/ARC IP 授权、NRE、客户共同设计 | SoC 客户架构选择 -> IP 授权/NRE -> GF 制造绑定 |
+
+### 6.2 每 MW / rack / GPU / optical port 内容量估算
+
+以下是 GF 可捕获的“晶圆和平台内容量”，不是光模块或整机总 BOM。因为公司不披露客户项目和单价，数字为产业链估算。
+
+| 计量单位 | AI 网络假设 | GF SiPh/CPO 可捕获内容量 | GF power/MCU/IP 可捕获内容量 | 说明 |
+|---|---|---:|---:|---|
+| 每 800G optical port | 1 个 800G 模块或等效交换侧端口 | `20-80 美元/port` | `0-5 美元/port` | 取决于是否采用 GF SiPh/SiGe；多数价值仍在 laser、DSP、模块厂和交换芯片 |
+| 每 1.6T optical port | 8x200G 或等效 1.6T optical engine | `50-160 美元/port` | `0-10 美元/port` | 1.6T 对 PIC、测试、封装和良率要求更高，GF 内容量提升 |
+| 每 6.4T CPO/CPX optical engine | 4 个 1.6T 等效或 32x200G | `200-700 美元/engine` | `0-30 美元/engine` | 若 SCALE 捕获 package/test/IP，内容量可高于普通 wafer foundry |
+| 每 GPU | 2-8 个 800G 等效端口的全网络摊销 | `40-400 美元/GPU` | `1-20 美元/GPU` | 只在 GF 赢得对应 SiPh/SiGe/optical engine 设计时适用 |
+| 每 72-GPU rack | 144-576 个 800G 等效端口；液冷高密 rack | `0.5-4.0 万美元/rack` | `0.1-0.5 万美元/rack` | CPO/NPO 渗透后上沿可更高 |
+| 每 1MW IT load | 约 7-12 个 100-140kW AI rack | `5-50 万美元/MW` | `1-6 万美元/MW` | 极度乐观 CPO/光 I/O 提前渗透时可到 `100 万美元/MW+`，但不是当前基准 |
+
+价格传导关键点：
+
+1. hyperscaler 和 AI 芯片平台方决定端口数、交换架构和功耗预算。
+2. NVIDIA/Broadcom/Marvell/Arista/Ciena/Coherent 等平台和光引擎厂决定 CPO/NPO/可插拔路线。
+3. 如果路线采用 SiPh PIC 或单片光子平台，GF 才能从 wafer、PDK、NRE、package/test 中捕获价值。
+4. GF 的议价权来自客户认证、PDK 迁移成本、汽车/光网络可靠性数据、友岸产能和平台绑定；不是普通成熟节点稀缺。
+
+### 6.3 当前产能能力
+
+| 产能维度 | 当前能力 | 美元计收入能力 | 被供应链采纳程度 | 认证阶段 |
+|---|---|---:|---|---|
+| 全公司 wafer 产能 | 2025 年 300mm 等效出货 `234.5 万片`，2025Q4 单季 `61.9 万片` | 当前年化收入能力约 `68-73 亿美元`；Q4 出货年化约 `73 亿美元` | 已成熟，覆盖全球汽车、通信、移动、工业客户 | 大量客户已量产认证 |
+| 300mm / 200mm SiPh | GF Fotonix 300mm + AMF 200mm SiPh；Singapore/Malta 协同 | 当前直接 AI SiPh 收入能力估 `1-3 亿美元/年`，实际收入低于能力 | Ayar、Sivers、AMF 客户、SCALE 生态；但量产客户未完全披露 | 2026 处于客户工程样品、PDK/平台认证、小批量导入 |
+| SCALE CPO/NPO | 2026-03 发布，支持 pluggable/NPO/CPO 和 OCI MSA | 当前收入能力小，估 `<1 亿美元/年`；取决于 optical engine 客户 | 生态采纳刚开始，关键看 NVIDIA/Broadcom/OCI/Open CPX 路线 | 生产资格/客户认证早期 |
+| SiGe/CBIC/RF | 2025Q3 production release，适用光网络/无线/卫星 | 年化 `数亿美元`级，混在 CIDC 和 mobile | 技术成熟度高于 CPO，客户转换更稳 | 量产释放阶段 |
+| Automotive 22FDX/eNVM | Malta/Dresden/Singapore 等成熟产能 | 年化 `12-16 亿美元`估算 | Renesas、Bosch、Continental、indie、NXP/Infineon/Bosch 等链条 | 汽车认证和长期供货阶段 |
+| Navitas/GaN | 战略合作阶段 | 当前接近 0，未来 `0.5-2 亿美元/年`期权 | 需要 power customer 和可靠性认证 | 开发/资格认证前期 |
+
+## 7. 一年后产能、采纳和认证情景
+
+| 产品/业务 | 基准产能/采纳 | 乐观产能/采纳 | 极度乐观产能/采纳 |
+|---|---|---|---|
+| SiPh/Fotonix/AMF/SCALE | 300mm/200mm 协同顺利，收入能力 `3-5 亿美元/年`；2-4 个客户小批量；SCALE 进入生产资格 | 收入能力 `6-10 亿美元/年`；AMF 客户迁移与 1.6T/CPO 客户认证同步；Sivers/Ayar/其他光引擎设计转订单 | 收入能力 `12-18 亿美元/年`；CPO/NPO 多客户采用，GF 成为头部 SiPh foundry 之一；认证从样品转量产 |
+| CIDC SiGe/CBIC/RF | 收入能力 `12-15 亿美元/年`；光网络和无线基础设施恢复 | 收入能力 `16-20 亿美元/年`；TIA/driver/高速模拟与 SiPh 绑定 | 收入能力 `20 亿美元+`；AI optical networking 明显挤占普通通信周期 |
+| Automotive 22FDX/eNVM | 产能稳定，收入能力 `15-18 亿美元/年`；Renesas 供货协议开始转设计 | 收入能力 `18-22 亿美元/年`；Dresden/Malta 客户长约推动利用率 | 收入能力 `22-26 亿美元/年`；欧洲/美国汽车本土化和 radar/SDV 同时拉动 |
+| FDX/eMRAM/eNVM/edge | 收入能力 `9-12 亿美元/年`；IoT/industrial 恢复 | 收入能力 `12-15 亿美元/年`；physical AI 边缘设备带动安全 MCU | 收入能力 `15 亿美元+`；客户用 MIPS/ARC + GF 制程形成绑定 |
+| Navitas/GaN | 试产/NRE，收入能力 `<0.5 亿美元/年` | `0.5-1.5 亿美元/年`；AI DC power 客户认证 | `2-3 亿美元/年`；GaN 被部分 high-power rack 电源采用 |
+| MIPS/ARC IP | IP/NRE 收入能力 `1 亿美元/年` | `2-3 亿美元/年`；多客户授权和 GF 制造绑定 | `4 亿美元+`；physical AI custom SoC 加速 |
+
+## 8. 订单积压、供给和未来一年业务增速推断
+
+GFS 不披露正式 backlog，因此不能把“AI 数据中心订单”直接等同于收入。更合理的方法是把可验证信号拆成客户项目、交付窗口、产能能力、取消风险和供应链瓶颈。
+
+| 业务 | 可验证订单/客户信号 | 交付窗口 | 取消率/风险 | 未来一年增速预测 |
+|---|---|---|---|---|
+| SiPh/SCALE/CPO | Ayar UCIe 光 interconnect 使用 GF 单片光子平台；Sivers 与 GF 推 AI DC optical solutions；AMF/InfiniLink 并入；SCALE 支持 OCI MSA | 2026 工程样品和资格认证，2027 小批量到规模化 | CPO 可维护性、ELS 标准、客户认证和 1.6T 供需节奏是主要风险；取消率不高但延迟率高 | 基准 `+50%-100%`，乐观 `+150%-250%`，极度乐观 `+300%+`，基数小 |
+| CIDC SiGe/CBIC/RF | 2025Q3 CBIC production release；2025 年 CIDC 多季度同比增长；AI 光互联行业 1.6T 强需求 | 2026-2027 量产更快，认证周期短于 CPO | 若 2026H2 光模块供给追上，ASP 压力会传导 | 基准 `+8%-15%`，乐观 `+20%-35%`，极度 `+40%-60%` |
+| Automotive eNVM/22FDX | Renesas strategic supply agreement；Bosch radar；Continental AESS；Dresden 扩产绑定 NXP/Infineon/Bosch | 汽车认证和设计周期长，2027-2028 贡献更明显 | 汽车周期、库存、EV 需求放缓；但已认证替换成本高 | 基准 `+3%-8%`，乐观 `+10%-18%`，极度 `+20%-30%` |
+| FDX/eNVM/edge | Silicon Labs 40nm ULP、industrial IoT、eMRAM/eNVM 客户 | 2026 年恢复性增长 | 普通 IoT 竞争多，ASP 压力 | 基准 `+5%-12%`，乐观 `+15%-25%`，极度 `+30%+` |
+| Navitas/GaN | 2025-11 长期战略合作，应用点名 AI datacenters、performance computing、energy/grid | 2026 认证，2027+ 收入 | GaN 可靠性、成本、客户替代方案多 | 基准小额，乐观 `0.25-0.75 亿美元`收入，极度 `1-2 亿美元` |
+
+对全公司未来一年的增速判断：基准 `+4%-7%`，乐观 `+8%-13%`，极度乐观 `+15%-22%`。极度乐观需要三个条件同时满足：1.6T/CPO 客户认证明显提前；AMF/InfiniLink 能把设计赢单转为晶圆和 package/test 收入；移动和汽车周期不拖累整体利用率。
+
+## 9. 竞争格局、主流性、替代方案和客户替换成本
+
+### 9.1 主要竞争对手
+
+| 领域 | 竞争对手 | GFS 相对位置 |
+|---|---|---|
+| 先进逻辑代工 | TSMC、Samsung、Intel Foundry | GFS 不竞争 3nm/2nm 主计算 die；这是短板也是战略边界 |
+| 成熟/特色晶圆代工 | UMC、Tower、SMIC、Hua Hong、Vanguard、DB HiTek、X-FAB、部分 IDM | GFS 优势是美国/欧洲/新加坡布局、汽车认证、FDX/RF/SiPh 平台；价格竞争不如中国成熟节点 |
+| 硅光 foundry | Tower、TSMC COUPE、Intel Silicon Photonics、UMC/HyperLight/Jabil、AIM Photonics 生态、部分 IDM | GFS 的 AMF + 300mm Fotonix + SCALE 组合增强，但 Tower 在 SiPh 客户预付款和长期订单上已有强信号 |
+| CPO/NPO/光引擎 | NVIDIA、Broadcom、Marvell、Ciena、Coherent、Ayar、Celestial、Ranovus、POET、Open CPX/OCI 生态 | GFS 是底层 foundry/IP/platform，不是系统平台控制者；必须绑定头部 optical engine 或 switch 生态 |
+| SiGe/RF/高速模拟 | Tower、TSMC、UMC、IHP、ST、Infineon、SkyWater/其他特色厂 | GF CBIC/SiGe 与 RF SOI 有竞争力，但客户会看 PDK、良率、可靠性和多源策略 |
+| Automotive eNVM/FDX | TSMC、UMC、Samsung、ST、Infineon 内部产能、SMIC/华虹中国供应链 | GFS 22FDX 和汽车认证强，客户替换成本高；但中国本地供应有价格和政策优势 |
+| GaN power | Infineon、ST、Navitas、EPC、Innoscience、TSMC GaN、Power Integrations 等 | GF 当前通过 Navitas 合作切入，不能视为已建立垄断 |
+
+### 9.2 技术路线是否主流
+
+SiPh 和 1.6T 是主流；CPO/NPO 是 2027+ 架构期权。项目内 `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md` 的结论是：2026 年最确定收入来自 800G/1.6T、EML/CW laser、optical DSP 和测试；CPO/NPO 是 2027 之后估值弹性最高的产品。GF 的 SCALE 方向与这一判断一致，但 2026 年不能按大规模 CPO 收入估值。
+
+FDX/eNVM/车载 radar 是稳定主流，而不是高爆发 AI DC 路线。22FDX 在车载 radar、低功耗 edge、工业控制中有优势，客户替换成本高，认证周期长；但它不会像 GPU/HBM 那样产生单年爆发。
+
+GaN power 是高潜力但早期。AI rack 功率密度上升会推动 48V、高压、GaN/SiC、电源模块升级，但 GFS/Navitas 还需要客户认证和量产数据，当前不能计入大额收入。
+
+MIPS/ARC IP 的主流性取决于客户是否愿意把 processor IP、software tool 和 GF 制造绑定。RISC-V 在 embedded/physical AI 有长期机会，但短期收入规模不应高估。
+
+### 9.3 替代方案和风险
+
+| 风险 | 影响 | 跟踪指标 |
+|---|---|---|
+| GFS 当前估值已提前计入 AI 期权 | 若 SiPh/CPO 收入放慢，P/S 和 P/E 会显得过高 | 2026H2/2027H1 SiPh 客户、NRE、量产订单和收入披露 |
+| CPO/NPO 认证和可维护性慢于预期 | SCALE 可能停留在技术平台，收入推迟 | OCI/Open CPX 标准、NVIDIA/Broadcom/Ciena/Coherent 客户部署 |
+| Tower/TSMC/Intel/UMC 在 SiPh 争夺头部客户 | GF 可能只有二供或小客户份额 | 客户预付款、长期供货协议、300mm SiPh tape-out |
+| 1.6T 供给在 2026H2 追上，ASP 下行 | 模块端降价会压缩上游扩产紧迫性 | TrendForce/Cignal/LightCounting 对 1.6T 出货、ASP、库存的变化 |
+| 普通成熟节点竞争和中国本地化 | mobile/IoT/普通 mature node 毛利承压 | GF 调整 GM 是否持续高于 `29%`，wafer ASP 是否改善 |
+| 汽车和工业周期恢复慢 | 汽车/eNVM/FDX 收入低于预期 | Renesas/Bosch/Continental/NXP/Infineon 订单和汽车库存 |
+| 并购整合风险 | AMF/InfiniLink/MIPS/ARC 不能及时转为收入 | 2026-2027 收入分类、NRE、客户设计赢单披露 |
+
+客户替换成本判断：
+
+| 业务 | 替换成本 | 原因 |
+|---|---|---|
+| Automotive 22FDX/eNVM/radar | 高 | 汽车认证、可靠性、软件/硬件平台和长期供货协议 |
+| SiPh/CPO/SCALE | 中高 | PDK、PIC/EIC 联调、光耦合、wafer-level test、封装良率、系统认证迁移成本高；但客户仍会保留二供 |
+| SiGe/CBIC/RF | 中 | PDK 和 RF 性能迁移有成本，但多家特色厂可替代 |
+| 普通 mobile/IoT mature node | 低到中 | 多源供应多，价格敏感 |
+| MIPS/ARC IP | 中 | 一旦进入 SoC 架构和软件生态替换成本高，但客户初期选择多 |
+
+## 10. 需要持续跟踪的信号
+
+| 优先级 | 指标 | 为什么重要 |
+|---:|---|---|
+| 1 | GF 是否披露 SiPh/SCALE 客户、NRE、量产订单、收入贡献 | 这是估值重估能否兑现的第一变量 |
+| 2 | AMF 200mm 客户向 GF 300mm Fotonix 迁移速度 | 决定 SiPh 从小批量到规模化的良率和成本 |
+| 3 | Ayar、Sivers、OCI/Open CPX、NVIDIA/Broadcom CPO 生态的工程样品和量产节奏 | 决定 2027 年 CPO/NPO 是否收入化 |
+| 4 | 调整后毛利率是否从 `29%` 继续向 `30%+` 上移 | 判断产品组合改善是否真实 |
+| 5 | CIDC 和 automotive 是否继续双位数增长 | 这是 AI/physical AI 暴露能否抵消 mobile 周期的证据 |
+| 6 | Capex、政府补贴、客户预付款和长期供货协议 | 判断扩产是不是由客户资金和真实订单支持 |
+| 7 | Tower/UMC/TSMC/Intel SiPh 客户进展 | GF 最大竞争变量 |
+
+## 11. 来源
+
+### 公司和市场资料
+
+- GF 2026Q1 earnings release / SEC 6-K，2026-05-05：`https://www.sec.gov/Archives/edgar/data/1709048/000170904826000111/globalfoundries1q2026earni.htm`
+- GF 2025Q4 and FY2025 earnings release / SEC 6-K，2026-02-11：`https://www.sec.gov/Archives/edgar/data/1709048/000170904826000012/globalfoundries4q2025earni.htm`
+- GF 2025Q3 earnings release / SEC 6-K，2025-11-12：`https://www.sec.gov/Archives/edgar/data/1709048/000170904825000069/globalfoundries3q2025earni.htm`
+- GF 2025Q2 earnings release / SEC 6-K，2025-08-05：`https://www.sec.gov/Archives/edgar/data/1709048/000170904825000054/globalfoundries2q2025earni.htm`
+- GF 2025Q1 earnings release / SEC 6-K，2025-05-06：`https://www.sec.gov/Archives/edgar/data/1709048/000170904825000040/globalfoundries1q2025earni.htm`
+- GF 2025 Form 20-F，2026-02-27：`https://www.sec.gov/Archives/edgar/data/1709048/000170904826000022/gfs-20251231.htm`
+- GF 2026 Investor Day，2026-05-07：`https://gf.com/news-and-events/news/globalfoundries-outlines-long-term-growth-roadmap-and-announces-first-ever-dividend-at-2026-investor-day/`
+- GF SCALE optical module solution，2026-03-31：`https://gf.com/news-and-events/news/globalfoundries-accelerates-adoption-of-co-packaged-optics-for-advanced-ai-data-centers-with-scale-optical-module-solution/`
+- GF AMF / InfiniLink acquisition blog：`https://gf.com/news-and-events/blog/light-speed-ambition-globalfoundries-acquires-amf-and-infinilink-to-power-the-ai-datacenter-revolution/`
+- Sivers 与 GlobalFoundries AI data center optical collaboration，2026-06-02：`https://www.sivers-semiconductors.com/press/sivers-globalfoundries-advance-ai-data-center-optical-solutions/`
+- StockAnalysis GFS Statistics，2026-06-11 快照：`https://stockanalysis.com/stocks/gfs/statistics/`
+
+### 项目内行业资料
+
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_特种晶圆代工_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_硅光材料、光子材料与电光聚合物_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`

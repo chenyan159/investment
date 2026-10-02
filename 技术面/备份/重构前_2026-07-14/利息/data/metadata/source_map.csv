@@ -1,0 +1,47 @@
+source,source_id,alias,group,description,native_frequency,expected_history
+Yahoo Finance chart API,^GSPC,SPX,market_index,S&P 500 price index,daily,primary_30y
+Yahoo Finance chart API,^NDX,NDX,market_index,Nasdaq-100 price index,daily,primary_30y
+Yahoo Finance chart API,SPY,SPY,etf_proxy,SPDR S&P 500 ETF adjusted-price proxy,daily,proxy_shorter_history
+Yahoo Finance chart API,QQQ,QQQ,etf_proxy,Invesco QQQ ETF adjusted-price proxy,daily,proxy_shorter_history
+FRED,DFF,DFF,policy_money_market,Effective federal funds rate,daily,30y_plus
+FRED,FEDFUNDS,FEDFUNDS,policy_money_market,"Effective federal funds rate, monthly average",monthly,30y_plus
+FRED,DPRIME,DPRIME,policy_money_market,Bank prime loan rate,daily,30y_plus
+FRED,SOFR,SOFR,policy_money_market,Secured overnight financing rate,daily,short_history
+FRED,DTB3,DTB3,policy_money_market,"3-month Treasury bill secondary market rate, discount basis",daily,30y_plus
+FRED,DGS1MO,DGS1MO,treasury_curve,1-month Treasury constant maturity,daily,short_history
+FRED,DGS3MO,DGS3MO,treasury_curve,3-month Treasury constant maturity,daily,30y_plus
+FRED,DGS6MO,DGS6MO,treasury_curve,6-month Treasury constant maturity,daily,30y_plus
+FRED,DGS1,DGS1,treasury_curve,1-year Treasury constant maturity,daily,30y_plus
+FRED,DGS2,DGS2,treasury_curve,2-year Treasury constant maturity,daily,30y_plus
+FRED,DGS3,DGS3,treasury_curve,3-year Treasury constant maturity,daily,30y_plus
+FRED,DGS5,DGS5,treasury_curve,5-year Treasury constant maturity,daily,30y_plus
+FRED,DGS7,DGS7,treasury_curve,7-year Treasury constant maturity,daily,30y_plus
+FRED,DGS10,DGS10,treasury_curve,10-year Treasury constant maturity,daily,30y_plus
+FRED,DGS20,DGS20,treasury_curve,20-year Treasury constant maturity,daily,partial_30y
+FRED,DGS30,DGS30,treasury_curve,30-year Treasury constant maturity,daily,30y_plus_with_gap
+FRED,DFII5,DFII5,real_rates_inflation,5-year TIPS real yield,daily,short_history
+FRED,DFII10,DFII10,real_rates_inflation,10-year TIPS real yield,daily,short_history
+FRED,DFII30,DFII30,real_rates_inflation,30-year TIPS real yield,daily,short_history
+FRED,T5YIE,T5YIE,real_rates_inflation,5-year breakeven inflation rate,daily,short_history
+FRED,T10YIE,T10YIE,real_rates_inflation,10-year breakeven inflation rate,daily,short_history
+FRED,T5YIFR,T5YIFR,real_rates_inflation,"5-year, 5-year forward inflation expectation rate",daily,short_history
+FRED,AAA,AAA,credit_rates_spreads,Moody's seasoned Aaa corporate bond yield,monthly,30y_plus
+FRED,BAA,BAA,credit_rates_spreads,Moody's seasoned Baa corporate bond yield,monthly,30y_plus
+FRED,BAMLH0A0HYM2,HY_OAS,credit_rates_spreads,ICE BofA US high yield option-adjusted spread,daily,partial_30y
+FRED,BAMLC0A0CM,IG_OAS,credit_rates_spreads,ICE BofA US corporate option-adjusted spread,daily,partial_30y
+FRED,BAMLC0A4CBBB,BBB_OAS,credit_rates_spreads,ICE BofA BBB US corporate option-adjusted spread,daily,partial_30y
+FRED,MORTGAGE30US,MORTGAGE30US,mortgage_rates,30-year fixed rate mortgage average in the United States,weekly,30y_plus
+FRED,MORTGAGE15US,MORTGAGE15US,mortgage_rates,15-year fixed rate mortgage average in the United States,weekly,30y_plus
+FRED,NFCI,NFCI,financial_conditions,Chicago Fed National Financial Conditions Index,weekly,30y_plus
+FRED,ANFCI,ANFCI,financial_conditions,Adjusted National Financial Conditions Index,weekly,30y_plus
+derived,DGS10-DGS2,yc_10y_2y_pct,derived_spread,10-year minus 2-year Treasury yield,weekly,depends_on_components
+derived,DGS10-DGS3MO,yc_10y_3mo_pct,derived_spread,10-year minus 3-month Treasury yield,weekly,depends_on_components
+derived,DGS30-DGS10,yc_30y_10y_pct,derived_spread,30-year minus 10-year Treasury yield,weekly,depends_on_components
+derived,DGS5-DGS2,yc_5y_2y_pct,derived_spread,5-year minus 2-year Treasury yield,weekly,depends_on_components
+derived,DGS2-DFF,fed_gap_2y_dff_pct,derived_spread,2-year Treasury yield minus effective fed funds rate,weekly,depends_on_components
+derived,DGS10-DFF,fed_gap_10y_dff_pct,derived_spread,10-year Treasury yield minus effective fed funds rate,weekly,depends_on_components
+derived,DGS3MO-DFF,bill_gap_3mo_dff_pct,derived_spread,3-month Treasury yield minus effective fed funds rate,weekly,depends_on_components
+derived,DGS10-T10YIE,real_10y_nominal_minus_breakeven_pct,derived_spread,10-year nominal yield minus 10-year breakeven,weekly,depends_on_components
+derived,DGS5-T5YIE,real_5y_nominal_minus_breakeven_pct,derived_spread,5-year nominal yield minus 5-year breakeven,weekly,depends_on_components
+derived,BAA-AAA,credit_baa_aaa_pct,derived_spread,Moody Baa minus Aaa corporate yield,weekly,depends_on_components
+derived,MORTGAGE30US-DGS10,mortgage30_10y_spread_pct,derived_spread,30-year mortgage rate minus 10-year Treasury yield,weekly,depends_on_components

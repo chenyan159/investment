@@ -1,0 +1,189 @@
+# 公司收入传导与价值传导评估：The Chemours Company（CC）
+
+报告日期：2026-06-12（America/Los_Angeles）  
+公司代号：CC  
+公司名称：The Chemours Company  
+正式输出目录：`分析报告/公司评估/`  
+研究边界：本报告只使用 `公司调研/`、`行业调研/` 与最新公开公司/监管资料校准经营传导；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、全公司排序或市场定价资料。报告不输出投资评级、目标价、股价区间或估值倍数判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口，即 2026Q2-2027Q1。由于 Chemours 最新正式指引是 2026 全年口径，本报告用 2026 全年收入/EBITDA 指引、Q2 2026 分部指引和 Q1 2027 正常化季节性假设桥接到 NTM；FY2026、FY2027、长期 run-rate 与 2P50 远期期权只作补充。
+- 当前收入基准、指引和 run-rate：2025 年收入 `$5.808B`、调整 EBITDA `$742M`；Q1 2026 收入 `$1.381B`、调整 EBITDA `$169M`。公司维持 2026 全年收入同比 `+3-5%`、调整 EBITDA `$800-900M`、capex `$275-325M`、FCF conversion `>20%`。Q2 2026 指引为收入环比 `+15-20%`、调整 EBITDA `$220-250M`。
+- 重要产品/业务线：TSS 低 GWP 制冷剂 Opteon、Freon 传统制冷剂、FP&O/ specialty fluids、Opteon 2P50 两相冷却流体；TT Ti-Pure TiO2 pigment + minerals；APM Advanced Materials（Teflon/Viton/Krytox 高纯氟材料等）；APM Performance Solutions（Nafion/离子交换/清洁能源材料等）；Other performance chemicals。
+- NTM 公司收入四情景：悲观 `$5.55-5.85B`；基准 `$6.00-6.20B`；乐观 `$6.35-6.65B`；极度乐观 `$6.90-7.30B`。当前预期锚约为 `$6.0-6.2B`，基准不是 AI 爆发，而是 TSS 正常增长、TT pricing 修复、APM outage 后恢复。
+- 利润或 EBITDA 四情景：悲观调整 EBITDA `$650-780M`；基准 `$820-940M`；乐观 `$970M-1.10B`；极度乐观 `$1.15-1.35B`。GAAP 净利润受利息、税、PFAS/环保、重组和资产处置影响，基准 NTM 净利润约 `$160-260M`。
+- 最大传导瓶颈：TT 仍是最大收入池但毛利脆弱，TiO2 需求/价格/矿石 mix 决定公司 EBITDA 能否从 2025 低位修复；APM 必须证明 Washington Works outage 后恢复并能把高纯氟材料/Performance Solutions 转为可见收入。
+- 最大利润率变量：TSS 的 Opteon/Freon 价格与 R32/HFO 成本传导、TT 价格修复与生产吸收、APM 产品组合和停产成本消退。
+- 最大现金流变量：2026 年 FCF 依赖 EBITDA 修复、营运资本释放、capex 控制和 PFAS/环保现金支出节奏；Kuan Yin 土地出售与偿债改善杠杆，但不改变经营利润传导本身。
+- 可信度：基准为中高，因收入表、产品分组、分部 EBITDA、Q2 指引和全年指引均有 A 级披露；乐观为中，需要 Opteon/TT/APM 同步超预期；极度乐观为低，必须 2P50 商业化、低 GWP 制冷剂短缺、APM 高纯材料放量和 TT 周期修复同时发生。
+
+核心判断：Chemours 的 NTM 经营价值传导不是“AI 数据中心直接收入爆发”，而是传统化工组合修复叠加低 GWP 制冷剂增长。2P50 是真实的技术和客户验证期权，但截至 2026-06-12 缺少订单金额、收入确认和大规模部署证据，不能进入基准收入的主要部分。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Opteon Refrigerants（低 GWP 制冷剂） | 2025 `$1.264B`；Q1 2026 `$313M` | 2025 `21.8%` | 最确定增长产品，TSS 利润核心 | A | 进入基准；以 Q1/Q2 季节性、AIM Act/F-gas 转换和公司指引为锚 | 数据中心 HVAC/低 GWP chiller 增量是间接受益，不直接等同 AI rack BOM |
+| Freon Refrigerants（传统制冷剂/汽车与售后） | 2025 `$428M`；Q1 2026 `$162M` | 2025 `7.4%` | 价格和售后现金流重要，但长期受 HFC phase-down 约束 | A | 进入基准；用已披露产品收入和 Q1 价格强度折中 | HFC 稀缺导致价格 spike 只能进乐观/极度乐观 |
+| FP&O / specialty fluids（不含 2P50 单列） | 2025 `$374M`；Q1 2026 `$93M` | 2025 `6.4%` | 稳定补充收入，利润率低于 Opteon 核心制冷剂 | A | 进入基准；按稳定到小幅增长处理 | 若特殊流体进入数据中心或工业高值应用，作为乐观补充 |
+| Opteon 2P50 / 两相冷却流体 | 公司未披露；目前可能仍为试验/早期商业小额收入 | 无法可靠量化，估计 `<1%` | AI 高密冷却期权，技术验证真实但收入未显性化 | C/D | 不作为基准的主要收入；若有小额销售，只能作为 TSS 内部低可见贡献 | 若 hyperscaler/OEM 认证并签署商业采购，可成为 2027+ 高弹性期权 |
+| TT Ti-Pure TiO2 pigment + minerals | 2025 `$2.429B`；Q1 2026 `$559M` | 2025 `41.8%` | 最大收入池，决定现金流底盘；但周期和价格压力大 | A | 进入基准；以 Q2 季节性和价格行动修复为锚 | 非 AI 主线；极度乐观来自建筑/涂料/包装周期和价格同步修复 |
+| APM Advanced Materials（Teflon/Viton/Krytox 等） | 2025 `$753M`；Q1 2026 `$143M` | 2025 `13.0%` | 半导体高纯流体系统、电子、工业密封与耐化材料暴露 | A | 进入基准，但按 outage 后恢复而非 AI 爆发处理 | 高纯 PFA/PTFE/FEP、Krytox、Viton 受 AI fab/HBM 间接拉动 |
+| APM Performance Solutions（Nafion/离子交换/能源等） | 2025 `$510M`；Q1 2026 `$100M` | 2025 `8.8%` | 清洁能源/离子交换/工业应用，近期需求弱 | A | 进入基准，按恢复到稳定处理 | 氢能、flow battery、数据中心备电/能源耦合属于远期期权 |
+| Other Performance Chemicals & Intermediates | 2025 `$50M`；Q1 2026 `$11M` | 2025 `0.9%` | 小体量补充项 | A | 进入汇总但不影响结论 | 无重大 NTM 期权 |
+
+证据等级说明：A=已披露产品/分部收入或正式指引；B=订单/RPO/backlog/正式合同和交付节奏；C=客户认证、产能规划、管理层可验证披露；D=发布、样品、试验、早期合作；E=只有主题相关性。2P50 同时有 C 级客户/服务器/SSD qualification 和 D 级早期合作，但缺少收入和订单金额，因此不能按 A/B 级进入基准主口径。
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估产品/服务的外部需求池或需求等价收入，不评估 Chemours 的份额、收入确认、利润率或公司层面汇总。对缺少行业吨数/台数披露的产品，用“公司所在产品池的 NTM 需求等价值”作 proxy，不等于公司最终可确认收入。相对预期以公司 2026 指引、Q1 2026 run-rate、Q2 2026 指引、2025 产品收入和项目内行业资料为锚。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Opteon Refrigerants | 2025 `$1.264B`，同比 `+56%`；Q1 2026 `$313M`，同比 `+12%`；美国 AIM Act 与低 GWP 设备转换仍在进行 | NTM 需求等价 `$1.25-1.35B`；增速明显放缓 | `$1.36-1.48B`；增速约 `+8-17%` vs 2025 | `$1.50-1.65B`；设备转换、售后和价格/mix 均强 | `$1.75B+`；低 GWP 短缺与客户提前采购同时发生 | 基准较 2025 增 `$0.10-0.22B`；极度乐观增 `$0.49B+` | 基准符合当前预期；乐观/极度高于预期 | EPA 2025 起限制高 GWP HFC 技术，Chemours 披露 TSS/Opteon 强；反证是 R32 成本、客户库存消化和二供压价 |
+| Freon Refrigerants | 2025 `$428M`；Q1 2026 `$162M`，同比 `+67%`，由北美汽车 Freon pricing 支撑 | `$0.36-0.42B`；HFC 量继续下滑，价格不可持续 | `$0.43-0.52B`；售后和价格维持部分强度 | `$0.55-0.65B`；HFC 稀缺/售后拉动价格 | `$0.70B+`；短缺和价格 spike | 基准较 2025 约 `0` 到 `+$0.09B` | 基准略高于当前长期预期但符合 Q1 价格信号 | 传统 HFC 长期 phase-down，不能把 Q1 价格外推为结构性成长 |
+| FP&O / specialty fluids | 2025 `$374M`；Q1 2026 `$93M`，同比 `+3%` | `$0.32-0.35B` | `$0.35-0.40B` | `$0.41-0.46B` | `$0.50B+` | 基准约 `-$0.02B` 到 `+$0.03B` | 大体符合当前预期 | 需求稳定但缺少强订单；特殊流体增长需客户项目验证 |
+| Opteon 2P50 / 两相冷却流体 | 2025-2026 有 NTT/Hibiya field trial、Samsung SSD qualification、2CRSi JDA、Navin 2026 产能，但无收入金额 | Pilot-only，`<$10M` 需求 | `$10-30M` 需求池，主要试验/小批量 | `$50-120M`，多客户小规模 deployment | `$150-300M`，大型 AI data center/OEM 采购打开 | 基准从零到小额；极度乐观 `$0.15B+` | 基准低于市场叙事、符合收入证据；乐观以上需新证据 | 行业资料显示 2026 主流仍是单相 D2C 水/水乙二醇；两相/浸没 2026 多为 pilot、2027 小批量 |
+| TT TiO2 pigment + minerals | 2025 TT `$2.429B`；Q1 2026 `$559M`；全球 TiO2 2025 需求约 `7.3Mt`、nameplate capacity 约 `10Mt`；低需求环境延续到 2025 | `$2.15-2.35B` 需求等价；价格/量继续低于预期 | `$2.40-2.60B`；季节性和价格行动修复 | `$2.70-2.95B`；西方需求和价格同步改善 | `$3.10B+`；住房/涂料/包装周期明显回升 | 基准约 `-$0.03B` 到 `+$0.17B` vs 2025；极度 `+$0.67B+` | 基准符合当前预期；乐观需价格和 volume 同时改善 | 公司 Q1 TT volume `-7%`、price `-2%`，Q2 指引环比中高 teens；反证是非西方市场弱、destocking、矿石/生产吸收不足 |
+| APM Advanced Materials | 2025 `$753M`；Q1 2026 `$143M`，受 Washington Works outage 和 SPS Capstone 退出影响 | `$0.62-0.70B`；outage/周期弱延续 | `$0.70-0.82B`；恢复到正常运行 | `$0.85-0.98B`；半导体高纯氟材料/电子客户补库 | `$1.05B+`；3M PFAS exit、AI fab/HBM 扩产和客户认证同时打开 | 基准约 `-$0.05B` 到 `+$0.07B` | 基准符合恢复预期；乐观需公司特定客户证据 | 半导体高纯 PFA/PTFE/FEP 有结构性需求，但公司未披露半导体子收入/backlog |
+| APM Performance Solutions / Nafion | 2025 `$510M`；Q1 2026 `$100M`；氢能和清洁能源相关需求偏弱 | `$0.40-0.46B` | `$0.48-0.56B` | `$0.60-0.70B` | `$0.80B+` | 基准约 `-$0.03B` 到 `+$0.05B` | 基准符合当前预期 | 氢能/flow battery/离子交换需求恢复缺少强 NTM 证据；远期期权不进基准 |
+| Other | 2025 `$50M`；Q1 2026 `$11M` | `$40M` 左右 | `$45-55M` | `$60M+` | `$70M+` | 对公司总量影响小 | 符合当前预期 | 小业务，不作核心情景驱动 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断哪些需求能进入 Chemours NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入。A/B 级证据可进入基准；C 级只有在客户、产品和时间表都清楚时小比例纳入；D/E 级不进入基准主收入，只能进入乐观、极度乐观或附录跟踪。所有收入区间均为 NTM（2026Q2-2027Q1）产品收入贡献或收入等价，单位为美元。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Opteon Refrigerants | 2025 `$1.264B`；Q1 2026 `$313M`；TSS Q2 指引环比低到中 teens | 直接收入 | 高毛利/高 EBITDA，TSS margin `30%+`；R32 成本是抵消项 | `$1.25-1.35B` | `$1.36-1.48B` | `$1.50-1.65B` | `$1.75-1.95B` | 基准符合当前指引隐含需求 | A | 是 | 产品收入表、Q1/Q2 指引、监管转换 | 基准主增量；但不把数据中心总 HVAC capex 直接转成收入 |
+| Freon Refrigerants | 2025 `$428M`；Q1 2026 `$162M` | 直接收入 | 价格弹性强，但长期量受 HFC phase-down 约束 | `$0.36-0.42B` | `$0.43-0.52B` | `$0.55-0.65B` | `$0.70B+` | 基准略高于 2025，受 Q1 价格支撑 | A | 是 | 产品收入表、Q1 pricing | 进入基准但不作为长期成长主线 |
+| FP&O / specialty fluids | 2025 `$374M`；Q1 2026 `$93M` | 直接收入 | 中等利润，稳定性高于成长性 | `$0.32-0.35B` | `$0.35-0.40B` | `$0.41-0.46B` | `$0.50B+` | 基准符合 run-rate | A | 是 | 产品收入表 | 稳定纳入；高值特殊流体增量需单独证据 |
+| Opteon 2P50 / 两相冷却流体 | 无披露收入；Samsung/2CRSi/NTT/DataVolt/Navin 为认证/合作/产能信号 | 直接产品收入，但当前从“可参与”到“可确认”路径未量化 | 潜在高毛利，早期商业化费用和回收体系会吞噬部分利润 | `$0-5M` | `$0-20M`，且不作为显性主基数 | `$50-120M` | `$150-300M` | 基准只是 NTM 小额上限，低于主题预期 | C/D | 不作为基准主要收入；仅作低额跟踪 | 客户资格/产能时间表存在，但无订单金额、交付节奏、收入确认 | 进入乐观/极度乐观；基准只允许极小额、不可单独支撑公司超预期 |
+| TT TiO2 pigment + minerals | 2025 `$2.429B`；Q1 2026 `$559M`；Q2 指引 TT 环比中高 teens | 直接收入 | 利润率低位，高经营杠杆；价格/矿石 mix/吸收率决定利润 | `$2.15-2.35B` | `$2.40-2.60B` | `$2.70-2.95B` | `$3.10B+` | 基准符合当前 pricing 修复预期 | A | 是 | 分部/产品收入、Q2 分部指引 | 进入基准，是总收入和 EBITDA 修复关键，但非 AI 需求 |
+| APM Advanced Materials | 2025 `$753M`；Q1 2026 `$143M`；APM Q2 指引环比低到高 thirties | 直接收入；半导体高纯材料为间接受益 | 中等到高利润潜力，但近期 margin 被 outage/低吸收拖累 | `$0.62-0.70B` | `$0.70-0.82B` | `$0.85-0.98B` | `$1.05B+` | 基准为正常化，不是 AI 爆发 | A（半导体子项 C） | 是，但半导体增量保守 | APM 产品收入、Washington Works 恢复指引；半导体页面/行业资料只作增量方向 | APM 总体进入基准；高纯半导体子项不单独放大 |
+| APM Performance Solutions / Nafion | 2025 `$510M`；Q1 2026 `$100M` | 直接收入；清洁能源/氢能间接受益 | 中等，需求周期弱时低吸收 | `$0.40-0.46B` | `$0.48-0.56B` | `$0.60-0.70B` | `$0.80B+` | 基准接近 2025 | A | 是 | 产品收入表和 APM 恢复指引 | 进入基准；氢能/备电期权只进乐观以上 |
+| Other | 2025 `$50M`；Q1 2026 `$11M` | 直接收入 | 小体量 | `$40M` | `$45-55M` | `$60M` | `$70M+` | 符合 run-rate | A | 是 | 披露收入 | 纳入公司汇总，不影响情景位置 |
+
+排除项：客户 AI capex、数据中心总冷却 TAM、半导体材料总市场、TiO2 全球 TAM、2P50 试验合作、产品网页、产能合作和客户认证都不能单独等同于 Chemours 的 NTM 可确认收入。市场价格、股价、估值倍数不作为经营传导证据。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第一步需求和第二步可收入化基数出发，评估每个产品在 NTM 内能给 Chemours 贡献的收入和利润。利润贡献以分部调整 EBITDA 的产品级分摊或方向性推算表示；公司未披露产品级 EBITDA 的项目均标明“推算/无法可靠拆分”。产品利润贡献是分部层面、corporate expense 前口径，不能简单加总为公司调整 EBITDA。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Opteon Refrigerants | 悲观 | `$1.25-1.35B` | 推算 EBITDA `$360-430M` | 仍高于公司平均但 margin 压缩 | 低于预期 | 需求仍在，但增速从 2025 高位下行 | 保留为悲观 | R32 成本、客户库存、二供压价 |
+| Opteon Refrigerants | 基准 | `$1.36-1.48B` | 推算 `$430-520M` | 高 margin 稳定 | 符合预期 | 2025 +56%、Q1 2026 +12%、TSS Q2/全年指引 | 保留 | 不把数据中心 HVAC 全部算给 Chemours |
+| Opteon Refrigerants | 乐观 | `$1.50-1.65B` | 推算 `$540-650M` | mix/price 改善 | 高于预期 | 低 GWP 设备转换和售后同时强 | 保留但需季度收入验证 | HFO/R32 供应与客户二供 |
+| Opteon Refrigerants | 极度乐观 | `$1.75-1.95B` | 推算 `$700M+` | 明显扩张 | 显著高于预期 | 低 GWP 短缺、强价格和高利用率同时成立 | 下移为乐观上限，除非出现供给短缺/订单证据 | 极端短缺可能触发替代和监管关注 |
+| Freon Refrigerants | 悲观 | `$0.36-0.42B` | 推算 `$80-115M` | 价格回落 | 低于预期 | HFC phase-down 压量 | 保留 | Q1 强价格不可持续 |
+| Freon Refrigerants | 基准 | `$0.43-0.52B` | 推算 `$115-165M` | 中高但不扩张 | 符合 Q1 与全年折中 | Q1 价格贡献明显 | 保留 | 长期量下滑，不给成长溢价 |
+| Freon Refrigerants | 乐观 | `$0.55-0.65B` | 推算 `$180-240M` | 价格带动上行 | 高于预期 | 汽车/售后需求和 HFC 稀缺 | 保留为上行情景 | 监管和客户替代 |
+| Freon Refrigerants | 极度乐观 | `$0.70B+` | 推算 `$260M+` | 非线性价格 | 显著高于预期 | 短缺/抢货 | 下移为乐观上限 | 强周期、非长期增长 |
+| FP&O / specialty fluids | 悲观 | `$0.32-0.35B` | 推算 `$60-85M` | 稳定但略降 | 低于预期 | 工业需求弱 | 保留 | 缺少高增长驱动 |
+| FP&O / specialty fluids | 基准 | `$0.35-0.40B` | 推算 `$75-105M` | 稳定 | 符合预期 | 2025/Q1 run-rate | 保留 | 产品组合不披露 |
+| FP&O / specialty fluids | 乐观 | `$0.41-0.46B` | 推算 `$110-140M` | 小幅改善 | 高于预期 | specialty fluids 客户项目增强 | 保留 | 无订单金额 |
+| FP&O / specialty fluids | 极度乐观 | `$0.50B+` | 推算 `$150M+` | 明显改善 | 高于预期 | 高值应用放量 | 下移为乐观 | 证据不足 |
+| Opteon 2P50 / 两相冷却流体 | 悲观 | `$0-5M` | `$0` 或亏损 | 商业化费用高 | 低于叙事预期 | 只有试验/认证，无收入 | 保留 | 2026 主流仍是单相 D2C |
+| Opteon 2P50 / 两相冷却流体 | 基准 | `$0-20M` | 无法可靠量化；可能 `$0-10M` | 不足以改变 TSS margin | 不构成公司基准增量 | Navin 2026 capacity、Samsung/2CRSi/NTT 信号 | 仅作跟踪 | 无订单金额、无客户采购节奏 |
+| Opteon 2P50 / 两相冷却流体 | 乐观 | `$50-120M` | 推算 `$15-45M` | 潜在高毛利但回收/服务成本高 | 高于当前预期 | 多个客户小规模 deployment | 保留但需 B 级订单 | PFAS/F-gas、保险、回收、维护 |
+| Opteon 2P50 / 两相冷却流体 | 极度乐观 | `$150-300M` | 推算 `$50-110M` | 若产能/认证锁定则高 | 显著高于预期 | 大型 AI data center/OEM 商业采购 | 移入附录/极度乐观上限 | 任一核心环节缺证据即不能进 NTM 主表 |
+| TT TiO2 + minerals | 悲观 | `$2.15-2.35B` | Segment EBITDA `$80-140M` | 低个位到中个位 | 低于预期 | volume/price/ore mix 弱 | 保留 | 非西方市场、destocking、成本吸收 |
+| TT TiO2 + minerals | 基准 | `$2.40-2.60B` | `$160-240M` | 由 2025 低位修复 | 符合预期 | Q2 指引 TT 环比中高 teens，价格行动 | 保留 | Q1 margin 仅 `3%`，修复需执行 |
+| TT TiO2 + minerals | 乐观 | `$2.70-2.95B` | `$300-420M` | 经营杠杆明显 | 高于预期 | 价格、mix、产量吸收同步改善 | 保留为乐观 | TiO2 是商品周期，竞争强 |
+| TT TiO2 + minerals | 极度乐观 | `$3.10B+` | `$500M+` | 大幅扩张 | 显著高于预期 | 全球涂料/建筑回暖、贸易保护/价格支撑 | 下移为乐观上限，除非价格和量连续验证 | 过剩 capacity、客户去库存 |
+| APM Advanced Materials | 悲观 | `$0.62-0.70B` | `$20-50M` | 低 margin | 低于预期 | outage/周期弱/产品线退出持续影响 | 保留 | Washington Works 可靠性 |
+| APM Advanced Materials | 基准 | `$0.70-0.82B` | `$55-100M` | 正常化但不扩张 | 符合预期 | Q2 APM 环比恢复，半导体高纯需求方向明确 | 保留 | 半导体子收入未披露 |
+| APM Advanced Materials | 乐观 | `$0.85-0.98B` | `$120-180M` | mix 改善 | 高于预期 | 高纯 PFA/PTFE/FEP、电子、工业需求恢复 | 保留但需客户/订单证据 | PFAS 监管和亚洲二供 |
+| APM Advanced Materials | 极度乐观 | `$1.05B+` | `$220M+` | 高值材料放量 | 显著高于预期 | 3M exit、AI fab/HBM 扩产、客户认证同时转收入 | 下移为乐观/附录 | 认证 6-24 个月，不一定在 NTM 确认 |
+| APM Performance Solutions / Nafion | 悲观 | `$0.40-0.46B` | `$15-35M` | 低吸收 | 低于预期 | 氢能/能源项目弱 | 保留 | 终端项目融资和客户节奏 |
+| APM Performance Solutions / Nafion | 基准 | `$0.48-0.56B` | `$45-80M` | 稳定恢复 | 符合预期 | 2025 基数和 Q2 APM 恢复 | 保留 | 需求仍需估算 |
+| APM Performance Solutions / Nafion | 乐观 | `$0.60-0.70B` | `$90-130M` | mix 改善 | 高于预期 | 离子交换/能源客户恢复 | 保留但可信度中 | 氢能不是 NTM 强证据 |
+| APM Performance Solutions / Nafion | 极度乐观 | `$0.80B+` | `$160M+` | 大幅改善 | 显著高于预期 | 氢能/flow battery/备电项目放量 | 移入附录 | 远期期权多于 NTM 订单 |
+| Other | 悲观 | `$40M` | `$2-5M` | 小影响 | 低于预期 | 小业务 | 保留 | 无 |
+| Other | 基准 | `$45-55M` | `$5-10M` | 稳定 | 符合预期 | 披露 run-rate | 保留 | 无 |
+| Other | 乐观 | `$60M` | `$10M+` | 小改善 | 高于预期 | 小业务增长 | 保留 | 对公司不关键 |
+| Other | 极度乐观 | `$70M+` | `$12M+` | 小影响 | 高于预期 | 无重大约束 | 仅作跟踪 | 不影响公司情景 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、调整 EBITDA、GAAP 净利润和自由现金流方向。公司未提供 2027Q1 指引，因此 NTM 用 `2026 全年指引 - Q1 2026 actual + Q1 2027 正常化假设` 桥接。毛利率和经营利润率为经营估算；经营利润率以调整后经营口径为主，GAAP 会受重组、PFAS、环保、债务交易和资产处置扰动。第一个表为公司收入和利润四情景。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$5.55-5.85B` | 较 2025 收入约 `-4%` 到 `+1%` | 低于当前 2026 指引/NTM 预期约 `$0.25-0.45B` | `13-15.5%` | `3-6%` | Adj. EBITDA `$650-780M`；GAAP 净利润可能亏损到 `$120M` | FCF `$0-150M`；营运资本和 PFAS/环保现金支出压力上升 | 中 | TT 价格修复失败、APM 恢复慢、TSS 成本无法传导 |
+| 基准公司 | `$6.00-6.20B` | 较 2025 约 `+3-7%` | 接近当前指引、Q2 指引和 run-rate | `16-18.5%` | `7-9.5%` | Adj. EBITDA `$820-940M`；GAAP 净利润 `$160-260M` | FCF `$170-270M`；FCF conversion 约 `20-28%` | 中高 | TT/APM 修复必须兑现，TSS 保持高利润 |
+| 乐观公司 | `$6.35-6.65B` | 较 2025 约 `+9-14%` | 高于当前预期，且不是单一小基数项目造成 | `19-21.5%` | `10-12.5%` | Adj. EBITDA `$970M-1.10B`；GAAP 净利润 `$300-450M` | FCF `$300-450M`；降杠杆速度改善 | 中 | 需要 Opteon、TT pricing、APM mix 至少两项同步超预期 |
+| 极度乐观公司 | `$6.90-7.30B` | 较 2025 约 `+19-26%` | 显著高于当前预期 | `22-25%` | `13-16%` | Adj. EBITDA `$1.15-1.35B`；GAAP 净利润 `$520-750M` | FCF `$500M+`；债务修复明显 | 低 | 低 GWP 短缺、2P50 商业采购、APM 高纯材料放量、TT 周期修复必须同时成立 |
+
+汇总检查：
+
+- 重复计算：2P50 如有收入大概率包含在 TSS specialty fluids/FP&O 或 TSS 内，不在基准中单独叠加；产品级表中的 2P50 只用于情景切换。
+- 替代/抵消：Freon 价格上行与 Opteon 转换可能同在 TSS 内发生，但长期 HFC phase-down 会压 Freon volume；不能把二者都按长期高增长处理。TiO2 和 APM 传统工业周期若继续弱，会抵消 Opteon 增长。
+- 一次性和会计：Kuan Yin 土地出售和债务偿还改善现金/杠杆，但不作为经营收入增长；PFAS/环保、诉讼、重组和债务交易影响 GAAP 净利润，不改变产品收入基数。
+- pass-through：TSS 低 GWP 制冷剂的利润质量高于普通化工 pass-through；TT 收入上修若只是矿石/能源/价格 pass-through，则利润质量弱于 TSS 上修。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。校准动作只能使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在实际影响层级处理一次：需求风险放需求层，收入确认风险放收入基数层，份额/价格/成本风险放产品贡献层，公司组合风险放公司汇总层，证据质量放校准层。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026 全年收入 `+3-5%`、Adj. EBITDA `$800-900M` 指引 | 公司汇总 | 把基准 NTM 锚定在 `$6.0-6.2B` 附近 | 支撑基准 EBITDA `$820-940M` | FCF conversion `>20%` 支撑基准现金流 | 保留基准 |
+| Q2 2026 指引：收入环比 `+15-20%`，TSS/TT/APM 均恢复 | 产品贡献/公司汇总 | 支撑 Q2 之后 NTM 桥接 | TT/APM 低位修复是利润弹性 | 若 Q2 兑现，执行可信度上升 | 保留基准；Q2 超指引可上移至乐观 |
+| Opteon 2025 +56%、Q1 2026 +12%，TSS Q1 margin `33%` | 需求/产品贡献 | 支撑 Opteon 基准增长 | TSS 是公司最高质量利润池 | 支撑 EBITDA 和 FCF | 保留基准和乐观 |
+| R32 input cost 和 HFO/低 GWP 原料成本 | 产品贡献 | 不直接压需求，但可能影响价格净留存 | 压缩 TSS margin | 若库存和采购错配，会压 FCF | 在 Opteon/Freon 产品利润层处理一次 |
+| TiO2 2025 低需求、Q1 2026 TT margin `3%` | 产品贡献/公司汇总 | 限制 TT 收入上修 | 是最大利润率瓶颈 | 若价格修复失败，现金流下移 | 保留悲观；基准需 Q2/Q3 验证 |
+| APM Washington Works outage 与 SPS Capstone 退出 | 收入基数/产品贡献 | Q1 2026 已压 APM volume | 低吸收和额外成本压 margin | 恢复节奏影响 Q2/Q3 FCF | 在 APM 层处理，不重复惩罚 TSS/TT |
+| Opteon 2P50 Samsung/2CRSi/NTT/Navin/DataVolt 证据 | 收入基数/可信度 | 有产品-客户-产能路径，但无订单金额 | 潜在高 margin，早期费用高 | 需要回收/泄漏/服务闭环 | 基准仅作跟踪；乐观保留；极度移入附录上限 |
+| APM 高纯氟材料与半导体流体系统需求 | 需求/收入基数 | 行业需求明确，但公司子收入未披露 | 高纯认证材料利润可高于 APM 平均 | 认证周期 6-24 个月 | 基准保守纳入 APM 总收入；高增长只进乐观 |
+| PFAS/环保和新泽西和解 | 公司汇总/现金流 | 不作为产品需求反证 | 影响 GAAP 净利润和资金成本 | 长期现金流占用和 surety/保险结构 | 现金流层处理，不重复压低产品需求 |
+| 3M PFAS manufacturing exit | 需求/竞争 | 改善高纯氟聚合物和 fluorinated fluids 供给格局 | 可能提升定价，但也提高监管审查 | 供应替代和客户资格迁移耗时 | 乐观证据保留，但不进入基准大额收入 |
+| EPA HFC phasedown/technology transitions | 需求 | 支撑低 GWP refrigerant 替代 | 支撑差异化价格 | 也提高合规和回收要求 | 保留 Opteon 基准，不外推为所有制冷剂高增 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | TSS 增速放缓、TT/APM 修复失败，公司收入低于指引 | Q1 TSS 强、Q2 指引显示季节性恢复、Kuan Yin 现金改善杠杆 | TT margin 低、APM outage、R32 成本、PFAS 现金流 | 保留 | 悲观公司 `$5.55-5.85B`，Adj. EBITDA `$650-780M` | 中 | PFAS/环保只在现金流/GAAP 层处理，不重复压产品需求 |
+| 基准 | 当前指引正常兑现，TSS 支撑利润，TT/APM 低位修复 | 2026 指引、Q2 指引、产品收入表、TSS margin、Q1 cash usage 改善 | TT/APM 仍需执行；2P50 不够 A/B 级 | 保留 | 基准公司 `$6.00-6.20B`，Adj. EBITDA `$820-940M` | 中高 | 2P50 证据不足只限制 2P50，不压低 Opteon 核心制冷剂 |
+| 乐观 | Opteon、TT pricing、APM mix 至少两项超预期 | 低 GWP 转换、Q2 sequential 指引、3M exit、高纯材料需求、2P50 qualification | 产品级订单和利润留存仍需验证 | 保留 | 乐观公司 `$6.35-6.65B`，Adj. EBITDA `$970M-1.10B` | 中 | TiO2 商品周期风险只限制 TT，不重复扣 TSS |
+| 极度乐观 | 需求、公司捕获、利润率和执行同时突破 | 2P50 技术/客户信号、TSS 高 margin、TT 低基数经营杠杆、APM 高纯期权 | 缺少 2P50 订单金额；two-phase 2026 仍非主流；APM 半导体收入未披露 | 移入附录 | 极度乐观上限 `$6.90-7.30B`，只有新增 B 级订单才上移为正式极度乐观 | 低 | 不把 AI 数据中心 TAM、半导体材料 TAM 或客户 capex 重复转成公司收入 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入最可能落在 `$6.00-6.20B`，调整 EBITDA `$820-940M`。这对应当前预期正常兑现：TSS 继续是利润核心；TT 从 2025 低位随价格和季节性修复；APM 从 Washington Works outage 后恢复，但半导体/AI 高纯材料尚未显示成分部级高增长。
+- NTM 收入结论：基准增长主要来自 Opteon 低 GWP 制冷剂和 TSS 季节性/价格，辅以 TT pricing 修复和 APM 正常化。2P50 在 NTM 基准中只能作为小额或不可可靠量化收入，不足以改变公司总收入；乐观以上才允许纳入 `$50M+` 的早期商业收入。
+- 利润/现金流结论：利润质量取决于高 margin TSS 占比是否继续提升，以及 TT/APM 是否从低吸收和停产成本中恢复。基准 FCF `$170-270M`，现金流改善真实但不宽裕；高杠杆、PFAS/环保和利息成本使 GAAP 净利润对非经营项目仍敏感。
+- 主要传导瓶颈：第一是 TT，收入大但 margin 低，若 TiO2 价格和矿石/生产吸收不修复，TSS 的高利润会被抵消。第二是 APM，半导体高纯氟材料有结构性需求，但必须先证明 outage 后恢复和客户收入显性化。第三是 2P50，从认证/试验到订单/收入确认仍缺 B 级证据。
+- 乐观情景成立条件：Opteon NTM 收入超过 `$1.5B` 且 TSS margin 保持 `30%+`；TT EBITDA 恢复到 `$300M+` run-rate；APM Advanced Materials/Performance Solutions 至少一个子业务出现明确客户需求和 mix 改善；Q2/Q3 FCF 超过当前指引节奏。
+- 极度乐观情景成立条件：2P50 获得 hyperscaler、服务器 OEM 或数据中心开发商的明确采购金额和交付时间表；低 GWP 制冷剂供需紧张带来价格而非只带来成本；APM 高纯氟材料受 3M exit/AI fab/HBM 扩产形成可披露订单；TT 同时出现价格和 volume 修复。四个环节任一缺证据，极度乐观只能作为附录上限。
+- 悲观情景触发条件：TSS Opteon 连续季度低于 `+10%` 增长或 margin 明显下行；TT Q2/Q3 指引修复未兑现、margin 仍低个位数；APM outage 残余影响延长或 Advanced Materials 继续负增长；PFAS/环保现金流、利息和营运资本压力导致 FCF conversion 低于 `20%`。
+- 后续跟踪数据：Q2 2026 实际收入和 EBITDA；TSS Opteon/Freon/FP&O 分组收入；TT price/volume/currency bridge 和 EBITDA margin；APM Advanced Materials/Performance Solutions 收入和 Washington Works 恢复；2P50 是否出现订单金额、客户名称、交付时间表和收入确认；R32/HFO 原料成本；PFAS/环保现金支出和净杠杆。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新正式经营披露截至 Chemours 2026 Q1 earnings release（发布日 2026-05-05）；报告撰写日 2026-06-12。
+- NTM 桥接口径：`NTM = 2026Q2 + 2026Q3 + 2026Q4 + 2027Q1`。2026Q2 用公司 sequential 指引，2026Q3/Q4 用 2026 全年指引隐含区间，2027Q1 用 Q1 2026 基数加正常化假设。FY2026 指引是锚，不直接替代 NTM 主表。
+- 主要收入、订单、指引和利润率来源：Chemours Q1 2026 release、FY2025 release、2025 Annual Report、公司调研最新文件、行业调研最新文件。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：2026 全年公司指引为收入同比 `+3-5%`、Adj. EBITDA `$800-900M`、FCF conversion `>20%`；2P50、Nafion/氢能、半导体高纯氟材料高增长主要属于乐观、极度乐观或 2027+ 期权。
+- 本报告未使用金融市场价格、股价、市值、P/E、EV/EBITDA 或任何市场估值数据作为经营价值传导证据。
+
+主要来源：
+
+- 项目内公司资料：`公司调研/半导体材料_化学品_基板/CC_The_Chemours_Company_公司调研_2026-06-11.md`
+- 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-06-11.md`
+- 项目内行业资料：`行业调研/晶圆制造_设备_材料_测试/行业调研_半导体高纯水、气体与化学流体系统_2026-06-11.md`
+- 项目内行业资料：`行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装湿化学与表面处理材料_2026-06-11.md`
+- Chemours Q1 2026 results: https://www.chemours.com/en/news-media-center/all-news/press-releases/2026/the-chemours-company-reports-first-quarter-results
+- Chemours Q4/FY2025 results: https://www.chemours.com/en/news-media-center/all-news/press-releases/2026/the-chemours-company-reports-fourth-quarter-and-full-year-2025-results
+- Chemours 2025 Annual Report / SEC filing: https://www.sec.gov/Archives/edgar/data/1627223/000110465926025940/tm265311d4_ars.pdf
+- Opteon 2P50 product page: https://www.opteon.com/en/products/liquid-cooling/2p50
+- Chemours and Navin Fluorine manufacturing agreement: https://www.chemours.com/en/news-media-center/all-news/press-releases/2025/chemours-and-navin-fluorine-announce-agreement-to-manufacture-new-liquid-cooling-product
+- Samsung qualification of Chemours Opteon two-phase fluid: https://www.chemours.com/en/news-media-center/all-news/press-releases/2025/samsung-electronics-successfully-qualifies-chemours-opteon-two-phase-immersion-cooling-fluid
+- Chemours and 2CRSi JDA: https://www.chemours.com/en/news-media-center/all-news/press-releases/2026/following-successful-fluid-qualification-chemours-2crsi-join-forces-to-accelerate-deployment-of-two
+- Chemours, NTT DATA and Hibiya Opteon 2P50 trial: https://www.chemours.com/en/news-media-center/all-news/press-releases/2025/chemours-joins-forces-with-ntt-data-and-hibiya-engineering-ltd-for-full-scale-opteon-2p50
+- Chemours fluoropolymers in semiconductor manufacturing: https://www.chemours.com/en/about-chemours/our-businesses/advanced-performance-materials/fluoropolymers-for-semiconductor-manufacturing
+- EPA HFC phasedown FAQ: https://www.epa.gov/hfcs/frequent-questions-phasedown-hydrofluorocarbons
+- EPA HFC technology transitions restrictions: https://www.epa.gov/hfcs/technology-transitions-hfc-restrictions-sector
+- 3M PFAS manufacturing exit: https://news.3m.com/2022-12-20-3M-to-Exit-PFAS-Manufacturing-by-the-End-of-2025
+- Chemours/DuPont/Corteva New Jersey settlement: https://www.chemours.com/en/news-media-center/all-news/press-releases/2025/chemours-dupont-and-corteva-reach-agreement-with-the-state-of-new-jersey

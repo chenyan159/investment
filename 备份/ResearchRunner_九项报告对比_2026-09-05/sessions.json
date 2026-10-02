@@ -1,0 +1,1143 @@
+[
+  {
+    "key": "industry/HBM与高带宽内存",
+    "side": "new",
+    "id": "01a072b0-42e4-7183-8bea-0b1962f964f7",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T10-49-09-01a072b0-42e4-7183-8bea-0b1962f964f7.jsonl",
+    "first": "2026-09-05T17:49:09.463Z",
+    "last": "2026-09-05T18:18:15.477Z",
+    "contexts": [
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      }
+    ],
+    "tokenEvents": 36,
+    "firstRate": {
+      "time": "2026-09-05T17:49:21.064Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 30,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-09-05T18:18:15.444Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 31,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 4189252,
+      "cached_input_tokens": 3925248,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 43101,
+      "reasoning_output_tokens": 3363,
+      "total_tokens": 4232353
+    },
+    "calls": 34,
+    "tools": [
+      "exec"
+    ]
+  },
+  {
+    "key": "industry/HBM与高带宽内存",
+    "side": "old",
+    "id": "01a017d5-3dff-7fc0-bf0e-b0212f3f7468",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T19-24-06-01a017d5-3dff-7fc0-bf0e-b0212f3f7468.jsonl",
+    "first": "2026-08-19T02:24:06.625Z",
+    "last": "2026-08-19T02:54:07.061Z",
+    "contexts": [
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      }
+    ],
+    "tokenEvents": 59,
+    "firstRate": {
+      "time": "2026-08-19T02:24:33.661Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 14,
+        "window_minutes": 10080,
+        "resets_at": 1787227317
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-08-19T02:54:07.025Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 25,
+        "window_minutes": 10080,
+        "resets_at": 1787227317
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 6447635,
+      "cached_input_tokens": 5979136,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 78970,
+      "reasoning_output_tokens": 30297,
+      "total_tokens": 6526605
+    },
+    "calls": 57,
+    "tools": [
+      "exec"
+    ]
+  },
+  {
+    "key": "industry/云厂自研AI ASIC",
+    "side": "new",
+    "id": "01a072b0-45a8-7cf2-88ce-211912fdabba",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T10-49-09-01a072b0-45a8-7cf2-88ce-211912fdabba.jsonl",
+    "first": "2026-09-05T17:49:10.188Z",
+    "last": "2026-09-05T18:24:39.519Z",
+    "contexts": [
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      }
+    ],
+    "tokenEvents": 45,
+    "firstRate": {
+      "time": "2026-09-05T17:49:21.090Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 30,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-09-05T18:24:39.495Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 32,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 5369789,
+      "cached_input_tokens": 5054592,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 48320,
+      "reasoning_output_tokens": 7110,
+      "total_tokens": 5418109
+    },
+    "calls": 43,
+    "tools": [
+      "exec",
+      "wait"
+    ]
+  },
+  {
+    "key": "industry/云厂自研AI ASIC",
+    "side": "old",
+    "id": "01a017d5-3264-7522-bb55-b9ffe23282fe",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T19-24-03-01a017d5-3264-7522-bb55-b9ffe23282fe.jsonl",
+    "first": "2026-08-19T02:24:03.652Z",
+    "last": "2026-08-19T02:46:02.030Z",
+    "contexts": [
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      }
+    ],
+    "tokenEvents": 54,
+    "firstRate": {
+      "time": "2026-08-19T02:24:21.062Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 14,
+        "window_minutes": 10080,
+        "resets_at": 1787227317
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-08-19T02:46:01.994Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 21,
+        "window_minutes": 10080,
+        "resets_at": 1787227317
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 6351301,
+      "cached_input_tokens": 5762304,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 54145,
+      "reasoning_output_tokens": 13910,
+      "total_tokens": 6405446
+    },
+    "calls": 52,
+    "tools": [
+      "exec"
+    ]
+  },
+  {
+    "key": "industry/AI云算力外包和NeoCloud与AI数据中心运营商",
+    "side": "new",
+    "id": "01a072b0-3f7e-7692-b18c-7114b6b52350",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T10-49-08-01a072b0-3f7e-7692-b18c-7114b6b52350.jsonl",
+    "first": "2026-09-05T17:49:08.612Z",
+    "last": "2026-09-05T18:30:47.966Z",
+    "contexts": [
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      }
+    ],
+    "tokenEvents": 49,
+    "firstRate": {
+      "time": "2026-09-05T17:49:20.935Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 30,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-09-05T18:30:47.942Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 32,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 5935355,
+      "cached_input_tokens": 5572352,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 53484,
+      "reasoning_output_tokens": 7474,
+      "total_tokens": 5988839
+    },
+    "calls": 47,
+    "tools": [
+      "exec"
+    ]
+  },
+  {
+    "key": "industry/AI云算力外包和NeoCloud与AI数据中心运营商",
+    "side": "old",
+    "id": "01a017d5-6b59-7f41-a32f-5f9f3d29820f",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T19-24-17-01a017d5-6b59-7f41-a32f-5f9f3d29820f.jsonl",
+    "first": "2026-08-19T02:24:18.249Z",
+    "last": "2026-08-19T02:52:45.202Z",
+    "contexts": [
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      }
+    ],
+    "tokenEvents": 72,
+    "firstRate": {
+      "time": "2026-08-19T02:24:40.654Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 14,
+        "window_minutes": 10080,
+        "resets_at": 1787227317
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-08-19T02:52:45.171Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 24,
+        "window_minutes": 10080,
+        "resets_at": 1787227317
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 10327837,
+      "cached_input_tokens": 9862400,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 71273,
+      "reasoning_output_tokens": 21081,
+      "total_tokens": 10399110
+    },
+    "calls": 70,
+    "tools": [
+      "exec"
+    ]
+  },
+  {
+    "key": "company/CRWV",
+    "side": "new",
+    "id": "01a072d6-6e2b-7ea1-958d-c277206d0e61",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T11-30-50-01a072d6-6e2b-7ea1-958d-c277206d0e61.jsonl",
+    "first": "2026-09-05T18:30:50.917Z",
+    "last": "2026-09-05T18:59:04.114Z",
+    "contexts": [
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      }
+    ],
+    "tokenEvents": 34,
+    "firstRate": {
+      "time": "2026-09-05T18:31:02.202Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 32,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-09-05T18:59:04.089Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 33,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 4092246,
+      "cached_input_tokens": 3835392,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 38423,
+      "reasoning_output_tokens": 3127,
+      "total_tokens": 4130669
+    },
+    "calls": 31,
+    "tools": [
+      "exec"
+    ]
+  },
+  {
+    "key": "company/CRWV",
+    "side": "old",
+    "id": "01a01b33-37c2-75b1-b62f-9558aa8b6178",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\08\\19\\rollout-2026-08-19T11-05-36-01a01b33-37c2-75b1-b62f-9558aa8b6178.jsonl",
+    "first": "2026-08-19T18:05:37.087Z",
+    "last": "2026-08-19T18:45:16.784Z",
+    "contexts": [
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      }
+    ],
+    "tokenEvents": 142,
+    "firstRate": {
+      "time": "2026-08-19T18:05:52.613Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 37,
+        "window_minutes": 10080,
+        "resets_at": 1787227317
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-08-19T18:45:16.756Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 45,
+        "window_minutes": 10080,
+        "resets_at": 1787227317
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 15864910,
+      "cached_input_tokens": 15046144,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 88430,
+      "reasoning_output_tokens": 29856,
+      "total_tokens": 15953340
+    },
+    "calls": 137,
+    "tools": [
+      "exec"
+    ]
+  },
+  {
+    "key": "company/GOOGL",
+    "side": "new",
+    "id": "01a072d6-7400-7842-b094-1daabcc17a61",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T11-30-52-01a072d6-7400-7842-b094-1daabcc17a61.jsonl",
+    "first": "2026-09-05T18:30:52.394Z",
+    "last": "2026-09-05T19:02:00.596Z",
+    "contexts": [
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      }
+    ],
+    "tokenEvents": 37,
+    "firstRate": {
+      "time": "2026-09-05T18:31:04.414Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 32,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-09-05T19:02:00.570Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 33,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 4244943,
+      "cached_input_tokens": 3947904,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 45709,
+      "reasoning_output_tokens": 5788,
+      "total_tokens": 4290652
+    },
+    "calls": 34,
+    "tools": [
+      "exec"
+    ]
+  },
+  {
+    "key": "company/MU",
+    "side": "new",
+    "id": "01a072d6-70d0-7b02-b79c-8e484de418a3",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T11-30-51-01a072d6-70d0-7b02-b79c-8e484de418a3.jsonl",
+    "first": "2026-09-05T18:30:51.582Z",
+    "last": "2026-09-05T19:15:57.102Z",
+    "contexts": [
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      }
+    ],
+    "tokenEvents": 37,
+    "firstRate": {
+      "time": "2026-09-05T18:31:05.803Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 32,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-09-05T19:15:57.075Z",
+      "limit_id": "codex_bengalfox",
+      "limit_name": "GPT-5.3-Codex-Spark",
+      "primary": {
+        "used_percent": 0,
+        "window_minutes": 300,
+        "resets_at": 1788653722
+      },
+      "secondary": {
+        "used_percent": 0,
+        "window_minutes": 10080,
+        "resets_at": 1789240522
+      },
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 4185016,
+      "cached_input_tokens": 3859840,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 42606,
+      "reasoning_output_tokens": 6214,
+      "total_tokens": 4227622
+    },
+    "calls": 35,
+    "tools": [
+      "exec"
+    ]
+  },
+  {
+    "key": "company/MU",
+    "side": "old",
+    "id": "01a01b33-159a-7112-9dca-c9c5ff8dc40a",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\08\\19\\rollout-2026-08-19T11-05-27-01a01b33-159a-7112-9dca-c9c5ff8dc40a.jsonl",
+    "first": "2026-08-19T18:05:28.359Z",
+    "last": "2026-08-19T18:33:11.531Z",
+    "contexts": [
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      }
+    ],
+    "tokenEvents": 80,
+    "firstRate": {
+      "time": "2026-08-19T18:05:45.925Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 37,
+        "window_minutes": 10080,
+        "resets_at": 1787227317
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-08-19T18:33:11.503Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 44,
+        "window_minutes": 10080,
+        "resets_at": 1787227317
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 9019141,
+      "cached_input_tokens": 8460288,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 66698,
+      "reasoning_output_tokens": 25883,
+      "total_tokens": 9085839
+    },
+    "calls": 77,
+    "tools": [
+      "exec"
+    ]
+  },
+  {
+    "key": "company-investment-decision/MU",
+    "side": "new",
+    "id": "01a072ff-c9fa-7bb0-84e8-7736c3dac695",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T12-16-01-01a072ff-c9fa-7bb0-84e8-7736c3dac695.jsonl",
+    "first": "2026-09-05T19:16:01.443Z",
+    "last": "2026-09-05T19:41:33.896Z",
+    "contexts": [
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      }
+    ],
+    "tokenEvents": 23,
+    "firstRate": {
+      "time": "2026-09-05T19:16:12.300Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 34,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-09-05T19:41:33.874Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 35,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 2794261,
+      "cached_input_tokens": 2621568,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 40953,
+      "reasoning_output_tokens": 8697,
+      "total_tokens": 2835214
+    },
+    "calls": 22,
+    "tools": [
+      "exec"
+    ]
+  },
+  {
+    "key": "company-investment-decision/MU",
+    "side": "old",
+    "id": "01a01b84-d294-7c12-adc9-8e821424c913",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\08\\19\\rollout-2026-08-19T12-34-44-01a01b84-d294-7c12-adc9-8e821424c913.jsonl",
+    "first": "2026-08-19T19:34:45.111Z",
+    "last": "2026-08-19T19:59:28.857Z",
+    "contexts": [
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      }
+    ],
+    "tokenEvents": 54,
+    "firstRate": {
+      "time": "2026-08-19T19:34:59.064Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 57,
+        "window_minutes": 10080,
+        "resets_at": 1787227317
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-08-19T19:59:28.835Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 63,
+        "window_minutes": 10080,
+        "resets_at": 1787227317
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 6453476,
+      "cached_input_tokens": 6078208,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 62279,
+      "reasoning_output_tokens": 21631,
+      "total_tokens": 6515755
+    },
+    "calls": 52,
+    "tools": [
+      "exec"
+    ]
+  },
+  {
+    "key": "company-investment-decision/CRWV",
+    "side": "new",
+    "id": "01a072ff-c6cb-7b10-8dda-49928418e270",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T12-16-00-01a072ff-c6cb-7b10-8dda-49928418e270.jsonl",
+    "first": "2026-09-05T19:16:00.578Z",
+    "last": "2026-09-05T19:43:08.985Z",
+    "contexts": [
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      }
+    ],
+    "tokenEvents": 26,
+    "firstRate": {
+      "time": "2026-09-05T19:16:12.738Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 34,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-09-05T19:43:08.962Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 36,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 3391199,
+      "cached_input_tokens": 3185280,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 42731,
+      "reasoning_output_tokens": 9612,
+      "total_tokens": 3433930
+    },
+    "calls": 25,
+    "tools": [
+      "exec"
+    ]
+  },
+  {
+    "key": "company-investment-decision/CRWV",
+    "side": "old",
+    "id": "01a01b84-f273-7d42-ad76-58039a792bf2",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\08\\19\\rollout-2026-08-19T12-34-52-01a01b84-f273-7d42-ad76-58039a792bf2.jsonl",
+    "first": "2026-08-19T19:34:53.281Z",
+    "last": "2026-08-19T20:12:09.600Z",
+    "contexts": [
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max"
+      }
+    ],
+    "tokenEvents": 80,
+    "firstRate": {
+      "time": "2026-08-19T19:35:09.037Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 57,
+        "window_minutes": 10080,
+        "resets_at": 1787227317
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-08-19T20:12:09.584Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 65,
+        "window_minutes": 10080,
+        "resets_at": 1787227317
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 10356514,
+      "cached_input_tokens": 9993728,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 105981,
+      "reasoning_output_tokens": 44948,
+      "total_tokens": 10462495
+    },
+    "calls": 77,
+    "tools": [
+      "exec"
+    ]
+  },
+  {
+    "key": "company-investment-decision/GOOGL",
+    "side": "new",
+    "id": "01a072ff-ce4a-7de0-a78f-3c0ae3fafc3c",
+    "path": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T12-16-02-01a072ff-ce4a-7de0-a78f-3c0ae3fafc3c.jsonl",
+    "first": "2026-09-05T19:16:02.504Z",
+    "last": "2026-09-05T19:49:44.580Z",
+    "contexts": [
+      {
+        "model": "gpt-6-astra",
+        "effort": "high"
+      }
+    ],
+    "tokenEvents": 29,
+    "firstRate": {
+      "time": "2026-09-05T19:16:13.650Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 34,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastRate": {
+      "time": "2026-09-05T19:49:44.561Z",
+      "limit_id": "codex",
+      "limit_name": null,
+      "primary": {
+        "used_percent": 36,
+        "window_minutes": 10080,
+        "resets_at": 1788748070
+      },
+      "secondary": null,
+      "credits": {
+        "has_credits": true,
+        "unlimited": false,
+        "balance": "2500"
+      },
+      "individual_limit": null,
+      "spend_control_reached": null,
+      "plan_type": "pro",
+      "rate_limit_reached_type": null
+    },
+    "lastUsage": {
+      "input_tokens": 4286239,
+      "cached_input_tokens": 4062848,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 55632,
+      "reasoning_output_tokens": 14707,
+      "total_tokens": 4341871
+    },
+    "calls": 28,
+    "tools": [
+      "exec"
+    ]
+  }
+]

@@ -1,0 +1,349 @@
+[
+  {
+    "feature_id": "G01",
+    "report": "基本面/特征量化/量化评分/G01_PIT证据与数据质量门槛_量化评分_2026-07-15.md",
+    "rows_parsed": 0,
+    "numeric_scores_parsed": 0,
+    "score_mode": [],
+    "sha256": "b9036ee868092b651d0fe08f1a48f8ffd2bedca4d71047edd83284783e57645a"
+  },
+  {
+    "feature_id": "G02",
+    "report": "基本面/特征量化/量化评分/G02_流动性与可投资性门槛_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 0,
+    "score_mode": [],
+    "sha256": "d13f1e90b7548cf2bba9b9860bedd24b2e18d1bdb304a2ce7d6c2d5131345a8a"
+  },
+  {
+    "feature_id": "G03",
+    "report": "基本面/特征量化/量化评分/G03_监管地缘风险覆盖层_量化评分_2026-07-15.md",
+    "rows_parsed": 0,
+    "numeric_scores_parsed": 0,
+    "score_mode": [],
+    "sha256": "13081c65b850f8df4606d7ecde614feb67e61bb8c10997342d099e56e2ee3d3d"
+  },
+  {
+    "feature_id": "N01",
+    "report": "基本面/特征量化/量化评分/N01_AI可归因盈利暴露_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 192,
+    "score_mode": [
+      [
+        10.0,
+        10
+      ],
+      [
+        2.0,
+        8
+      ],
+      [
+        1.0,
+        8
+      ]
+    ],
+    "sha256": "2c79c6850b5093df96d08208ca90a4326a466496b6b2d804bd97fc8a2bda248d"
+  },
+  {
+    "feature_id": "N02",
+    "report": "基本面/特征量化/量化评分/N02_系统瓶颈不可替代性_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 188,
+    "score_mode": [
+      [
+        5.5,
+        15
+      ],
+      [
+        4.2,
+        6
+      ],
+      [
+        3.3,
+        5
+      ]
+    ],
+    "sha256": "48e6e22eb4b5e9a15e404276c207ac8008da7cbe1b9f16c91dd6c717a10d6d24"
+  },
+  {
+    "feature_id": "N03",
+    "report": "基本面/特征量化/量化评分/N03_AI需求传导与价值量弹性_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 176,
+    "score_mode": [
+      [
+        4.3,
+        2
+      ],
+      [
+        2.7,
+        2
+      ],
+      [
+        4.0,
+        2
+      ]
+    ],
+    "sha256": "a46113d551c012e651d4b0f7e39d46ada4adaf9f16a9239ee42a50143ce0e53f"
+  },
+  {
+    "feature_id": "N04",
+    "report": "基本面/特征量化/量化评分/N04_已披露基本面动量_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 122,
+    "score_mode": [
+      [
+        5.5,
+        10
+      ],
+      [
+        6.2,
+        9
+      ],
+      [
+        6.3,
+        7
+      ]
+    ],
+    "sha256": "377b0a3552c572b090b32532763b05d17542cfeaf87fa3d3ceb33cd2f741f6fc"
+  },
+  {
+    "feature_id": "N05",
+    "report": "基本面/特征量化/量化评分/N05_风险调整估值赔率_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 191,
+    "score_mode": [
+      [
+        5.3,
+        8
+      ],
+      [
+        9.9,
+        7
+      ],
+      [
+        8.0,
+        6
+      ]
+    ],
+    "sha256": "d294c6bc2916b4060728137b381b1ffaa8d8e35a3e755c413909f5d803f58f45"
+  },
+  {
+    "feature_id": "N06",
+    "report": "基本面/特征量化/量化评分/N06_财务质量与融资韧性_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 192,
+    "score_mode": [
+      [
+        9.1,
+        8
+      ],
+      [
+        7.8,
+        7
+      ],
+      [
+        7.1,
+        5
+      ]
+    ],
+    "sha256": "a4459bafcae6167143e725a5b3f1a8ac646401726d50a37f4d593544a80e4202"
+  },
+  {
+    "feature_id": "N07",
+    "report": "基本面/特征量化/量化评分/N07_前瞻基本面修正期限结构_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 0,
+    "score_mode": [],
+    "sha256": "4f73754a430a77724b7fd4a94f6bf0df30b241ac7db3b9e60e4d929872771600"
+  },
+  {
+    "feature_id": "N08",
+    "report": "基本面/特征量化/量化评分/N08_产能交付执行兑现_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 145,
+    "score_mode": [
+      [
+        9.9,
+        8
+      ],
+      [
+        3.2,
+        8
+      ],
+      [
+        5.3,
+        6
+      ]
+    ],
+    "sha256": "d9ffbc7f4b29d6469474dc189746e11c8f04df0c790a5dfac0323ba28aac1cff"
+  },
+  {
+    "feature_id": "N09",
+    "report": "基本面/特征量化/量化评分/N09_商业化与平台路线适配_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 192,
+    "score_mode": [
+      [
+        5.5,
+        11
+      ],
+      [
+        4.7,
+        10
+      ],
+      [
+        5.4,
+        10
+      ]
+    ],
+    "sha256": "56bfd72edaeb8bd7e7d1f0e106416d31fbe8e818852558210269c450db99cded"
+  },
+  {
+    "feature_id": "N10",
+    "report": "基本面/特征量化/量化评分/N10_持久护城河与替代风险_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 192,
+    "score_mode": [
+      [
+        8.4,
+        8
+      ],
+      [
+        9.0,
+        8
+      ],
+      [
+        3.9,
+        7
+      ]
+    ],
+    "sha256": "dc07608fe982514275c364dfb5dce386294c7309a2b73b5c2a899135e333e21b"
+  },
+  {
+    "feature_id": "N11",
+    "report": "基本面/特征量化/量化评分/N11_客户与订单质量_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 189,
+    "score_mode": [
+      [
+        5.5,
+        9
+      ],
+      [
+        6.4,
+        7
+      ],
+      [
+        5.8,
+        7
+      ]
+    ],
+    "sha256": "e462e97c3a5813c6fed054e8278dfe0cd5c0396de97a4d606b896c54a0fc0108"
+  },
+  {
+    "feature_id": "N12",
+    "report": "基本面/特征量化/量化评分/N12_供需景气与定价捕获_量化评分_2026-07-16.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 189,
+    "score_mode": [
+      [
+        6.29,
+        4
+      ],
+      [
+        5.89,
+        3
+      ],
+      [
+        5.72,
+        3
+      ]
+    ],
+    "sha256": "7f880523bfd8a24438982e2a4ecb9d4b8523bcec41689ad8bb42b0e4afb3df6f"
+  },
+  {
+    "feature_id": "N13",
+    "report": "基本面/特征量化/量化评分/N13_催化剂事件期限结构_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 189,
+    "score_mode": [
+      [
+        5.6,
+        20
+      ],
+      [
+        5.9,
+        14
+      ],
+      [
+        5.8,
+        10
+      ]
+    ],
+    "sha256": "a55e6ae051c3db12e8fa78a2a0666a2ba0ff5055a3a8a4425aaf1e5b3902162c"
+  },
+  {
+    "feature_id": "N14",
+    "report": "基本面/特征量化/量化评分/N14_有符号预期差_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 15,
+    "score_mode": [
+      [
+        5.9,
+        2
+      ],
+      [
+        5.5,
+        2
+      ],
+      [
+        5.6,
+        2
+      ]
+    ],
+    "sha256": "18b25794ab54ae3dc31792fe4a0a03a3129236b08909c9a60fc60e734ada03a7"
+  },
+  {
+    "feature_id": "N15",
+    "report": "基本面/特征量化/量化评分/N15_情景收益不对称性_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 190,
+    "score_mode": [
+      [
+        3.5,
+        171
+      ],
+      [
+        4.5,
+        3
+      ],
+      [
+        1.8,
+        3
+      ]
+    ],
+    "sha256": "29c1812a297204d3bb46ac0543aebf07e1b7f68566c90acca7ce8194828e784e"
+  },
+  {
+    "feature_id": "N16",
+    "report": "基本面/特征量化/量化评分/N16_行业中性相对强度_量化评分_2026-07-15.md",
+    "rows_parsed": 192,
+    "numeric_scores_parsed": 177,
+    "score_mode": [
+      [
+        4.0,
+        3
+      ],
+      [
+        3.0,
+        3
+      ],
+      [
+        5.0,
+        3
+      ]
+    ],
+    "sha256": "31abc31a1548aa1c1ef9c3db64cd9e3b3ea535eb1b7ba6d8f561f1bed186bf5e"
+  }
+]

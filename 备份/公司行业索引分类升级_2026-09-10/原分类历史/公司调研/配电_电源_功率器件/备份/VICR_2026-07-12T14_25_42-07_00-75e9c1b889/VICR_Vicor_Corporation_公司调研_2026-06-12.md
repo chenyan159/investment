@@ -1,0 +1,410 @@
+# VICR Vicor Corporation 公司调研（2026-06-12）
+
+> 研究对象：Vicor Corporation（NASDAQ: VICR）  
+> 报告日期：2026-06-12。股价和估值快照以 2026-06-11 美股收盘 / 2026-06-12 UTC 可得数据为准。  
+> 本地资料边界：只使用 `行业调研/` 下与 AI 数据中心供电、机柜级供电、800VDC、AI 芯片平台和 CICC 供电技术相关资料；未读取 `特征量化/`，未读取同目录旧公司报告。  
+> 口径提醒：公司不披露按 AI 数据中心、客户名、GPU 平台或 backlog 质量拆分的收入。本报告把“公司披露数字”和“行业/BOM 推算”分开标注。
+
+## 0. 结论先行
+
+Vicor 不是普通服务器 PSU 厂，也不是数据中心电力总包商，而是高功率密度模块化电源、近负载供电和电源系统 IP 公司。它的位置在 AI 基建电力链条的中后段：从 rack/server 的 48V/50V 或高压 DC 母线，进一步转换到 12V、5V、3.3V、sub-1V，以及用 Factorized Power Architecture、NBM、BCM、PRM/VTM、MCM/GCM、VPD 等模块把电流送到 AI ASIC/GPU/wafer-scale engine 的“最后一寸”。
+
+当前投资人买 VICR，核心不是买 2025 年 $350.3M 产品收入本身，而是买三件事：第一，AI/HPC 高电流密度供电从论文和样机走向订单；第二，Vicor 通过 IP/royalty 和 ITC exclusion order 迫使 OEM/hyperscaler 授权；第三，第一座 CHiP fab 进入高利用率后，毛利率和收入规模有非线性弹性。风险也同样集中：公司不披露客户名，AI 设计导入是否变成规模产品收入仍需验证；大模拟/电源厂 MPS、Infineon、TI、ADI、Renesas 可能用第二供应和参考设计压价；股价已经按高胜率 AI 电源资产定价。
+
+2026 年最关键的新事实是 backlog 突然抬升。2026Q1 revenue $113.0M，同比 +20.2%，gross margin 55.2%，backlog $300.6M，同比 +75%，环比 +70%，book-to-bill >2；5 月 26 日公司又把 2026Q2 revenue guidance 从 $126M 上调到 $142M，理由是产品收入上升和新增 OEM 对 FPA/VPD 等专利电源系统技术的 license。这个组合意味着 2026 年下半年比 2025 年明显更有收入能见度。
+
+我的基准判断：VICR 在未来 12 个月更像“AI 近端供电 + IP 许可 + ATE/工业/军工复苏”的组合，而不是纯 NVIDIA 800VDC 生态核心标的。2026 年收入主线应是 48V/FPA/NBM/VPD、lead computing customer、ATE/semicap test、royalty/IP；800VDC/HVDC 是 2027+ 期权。若 VPD 在 2027 AI XPU 平台形成多客户 design-in，VICR 才能从年收入 $0.6B 附近向 $1B+ 叙事切换。
+
+## 1. 公司整体业务、定位、估值和财务健康
+
+### 1.1 公司做什么
+
+Vicor designs, develops, manufactures and markets modular power components and complete power systems based on patented technologies. 产品按经济属性可拆为四块：
+
+| 层级 | 主要产品/技术 | 用途 | 对 AI/HPC 的相关性 |
+|---|---:|---|---|
+| Advanced Products | PRM、VTM、NBM、BCM、MCM/GCM、ChiP、SiP、Factorized Power Architecture、Power-on-Package、VPD | 高密度 DC/DC、48V direct-to-load、近封装高电流供电 | 最高，是投资人关注的核心 |
+| Brick Products | VI-200、VI-J00、Maxi/Mini/Micro、DC/DC bricks、Vicor Custom Power、VJCL | 传统工业、军工、通信、测试设备、定制电源 | 中低，稳定现金流和部分 ATE/军工弹性 |
+| Royalty/IP licensing | NBM/FPA/VPD/电源拓扑、控制系统、分配架构专利授权 | 对 OEM/hyperscaler、合同制造商、模块厂的 license | 极高，毛利接近 100%，但时点和金额高度不稳定 |
+| Vicor Power Systems / custom | custom commercial、aerospace/defense power systems | 定制化系统 | 中，规模不如模块/IP，但增强客户粘性 |
+
+Vicor 的关键差异不是“能不能把 AC 转 DC”，而是高电流、低电压、低损耗、薄封装和高功率密度。公司官网对 Power-on-Package 的核心表述包括：current multiplier 可提供 >1000A，降低 motherboard copper 和 processor interconnect resistance up to 50X，降低 processor power pin count >10X；VPD 把 current multiplier 放在处理器正下方，可在 LPD 基础上进一步降低 PDN resistance 10X。对 AI ASIC/GPU 来说，核心电压 0.75-0.85V、电流 600A steady / 1000A peak 以后，传统多相 buck 的面积、散热、瞬态和 PDN loss 都会变成性能瓶颈。
+
+### 1.2 投资人心中的 VICR
+
+市场对 VICR 的标签通常是：
+
+1. 高毛利、高 IP 含量、小收入基数的 AI power delivery 期权。
+2. 通过专利诉讼、ITC exclusion order 和 OEM license 把“技术优势”变成 royalty 的公司。
+3. 在高性能计算、wafer-scale engine、AI ASIC、ATE、semicap test、工业和军工之间切换需求的高 beta 电源模块公司。
+4. 估值明显领先基本盘的股票：如果 VPD 多客户放量，估值可被收入斜率消化；如果只是单客户/royalty 脉冲，估值回撤风险很大。
+
+### 1.3 最近三年重大业务变化
+
+| 时间 | 变化 | 影响 |
+|---|---|---|
+| 2023-2024 | 从疫情后 backlog 消化和汽车/工业弱周期中恢复；2024 revenue $359.1M，net income $6.1M，盈利处于低位 | 市场开始把 VICR 当作“技术资产但收入未验证”的公司 |
+| 2025Q2 | 记录 $45.0M patent litigation settlement；Q2 total product revenue + royalty + settlement $141.0M，gross margin 65.3% | 一次性和解证明 IP monetization 能带来利润弹性，但不可年化 |
+| 2025Q3-Q4 | royalty revenue Q3 $21.7M、Q4 $14.5M；2025 royalty $57.4M，同比 +23.2%；产品收入 $350.3M，同比 +12.1%；全年 total incl settlement $452.7M，同比 +26.1% | 公司从“产品模块”变成“产品 + 授权”的组合，利润率抬升 |
+| 2026Q1 | backlog 升至 $300.6M，环比 +70%；book-to-bill >2；公司称 lead computing customer 的 wafer-scale engine 继续 steep production ramp，Gen 2 VPD 电流密度 3A/mm2、current multiplication factor up to 40、1.5mm thin package | 从估值叙事进入订单能见度验证期 |
+| 2026-05-26 | Q2 revenue guidance 从 $126M 上调至 $142M；新增 OEM 获得 covering FPA/VPD 的 all-inclusive license | IP 授权和产品收入都在加速，验证客户担忧 supply disruption / infringement risk |
+| 2026 | 第一座 CHiP fab 接近高利用率；公司规划第二 fab，并讨论 alternate source for high current density 2nd Gen VPD modules | 供应能力和多源供应成为客户采用 VPD 的前提 |
+
+未发现过去三年有改变公司边界的大型收购。业务变化主要来自产品代际、专利/IP 许可、CHiP fab 产能利用和 AI/HPC 客户导入，而不是 M&A。
+
+### 1.4 产业链位置
+
+AI 数据中心供电链条可以简化为：
+
+`utility / substation / switchgear / UPS / BESS` -> `rack power shelf / PSU / 48V-50V busbar / 800VDC sidecar` -> `server tray DC/DC / IBC / NBM / BCM` -> `VPD / current multiplier / VRM / PoL` -> `GPU / ASIC / HBM / optical / NIC`
+
+Vicor 的核心位置在后两段。它通常不是 Schneider、Eaton、Vertiv、Delta 这类园区/机柜电力系统商，也不是 Delta/Lite-On 这类高功率 server PSU 主供应商，而是靠高密度模块和专利架构嵌入服务器板、OAM、ASIC package、ATE test head 或客户专有 AI 系统。这个位置单 rack 价值量小于 power shelf/PSU 总额，但技术壁垒、毛利率和客户切换成本更高。
+
+### 1.5 最新股价和估值快照
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | $298.06 | 2026-06-11 close / 2026-06-12 可得快照 | StockAnalysis 当前页 close price |
+| 市值 | $13.59B | 2026-06-11 / StockAnalysis | 45.58M shares outstanding 口径 |
+| 企业价值 | $13.19B | 2026-06-11 / StockAnalysis | 大量净现金使 EV < market cap |
+| Trailing PE | 99.7x | 2026-06-11 / StockAnalysis | 2025 含 settlement 和 tax benefit，PE 仍接近 100x |
+| Forward PE | 78.6x | 2026-06-11 / StockAnalysis | 市场已计入 2026 高增长 |
+| P/S | 31.8x | 2026-06-11 / StockAnalysis | 按 TTM revenue 口径；若用产品+royalty普通口径，倍数更高 |
+| Forward P/S | 19.6x | 2026-06-11 / StockAnalysis | 对 2026-2027 收入斜率要求高 |
+| P/B | 18.0x | 2026-06-11 / StockAnalysis | 不是资产价值股 |
+| 2026Q1 收入增速 | +20.2% YoY | 2026Q1 | $113.0M vs $94.0M |
+| 2026Q2 指引增速 | +47.9% YoY vs 2025Q2 ordinary product+royalty | 2026-05-26 指引，按 $142M vs $96.0M 计算 | 2025Q2 reported $141.0M 含 $45M settlement，不适合直接比较 |
+| 2026Q1 毛利率 | 55.2% | 2026Q1 | royalty 占比较高 |
+| 2026Q1 净利率 | 18.3% | 2026Q1 | $20.7M net income / $113.0M revenue |
+| 2025 reported 净利率 | 26.2% | 2025 全年，含 $45M settlement 与 $24M tax benefit | 不应作为正常化利润率 |
+
+估值判断：当前股价已经不是“合理成长股”估值，而是“VPD/IP 成为 AI XPU 近端供电重要标准”的预期定价。若 2026 revenue 接近管理层原始 $570M 并在 Q2 上修后达到 $600M 左右，P/S 仍约 22-24x；只有当 2027-2028 revenue 走向 $1B+ 且毛利率维持 55-65%，当前估值才开始变得可解释。
+
+### 1.6 资产负债表健康程度
+
+Vicor 的资产负债表非常健康，甚至接近“净现金 + 低负债 + 高现金覆盖”的状态。
+
+| 指标 | 2026-03-31 | 2025-12-31 | 解读 |
+|---|---:|---:|---|
+| Cash and cash equivalents | $404.2M | $402.8M | 现金约等于 2025 product revenue 的 115% |
+| Accounts receivable | $67.4M | $60.7M | Q1 DSO 42 days，回款风险不突出 |
+| Inventories | $94.8M | $91.3M | inventory turns 2.1，随着订单上升库存略增合理 |
+| Total current assets | $599.5M | $587.4M | 流动性强 |
+| Total current liabilities | $41.9M | $65.3M | Q1 已支付 $28.6M litigation award，current liabilities 下降 |
+| Current ratio | 14.3x | 9.0x | 极高 |
+| Total liabilities | $50.8M | $74.0M | 总负债很低 |
+| Total equity | $754.1M | $711.8M | equity cushion 强 |
+| Q1 operating cash flow | -$3.9M | 2026Q1 | 扣除 $28.6M litigation payment 后为负；不代表经营恶化 |
+| Q1 capex | $12.4M | 2026Q1 | capacity expansion 开始加速 |
+| Construction-in-progress future spend | $33.9M remaining | 2026Q1 call | 主要制造设备 |
+
+财务健康结论：短中期没有偿债压力，扩产资金也不是瓶颈。真正瓶颈是客户认证、CHiP fab 设备/测试能力、VPD 多源供应、良率、field reliability 和是否能把 backlog 按期转成收入。
+
+## 2. 最近五个财报季度拆解
+
+说明：Vicor 自 2025 起财报表述包含 product revenue、royalty revenue 和 2025Q2 的 patent litigation settlement。Advanced Products revenue 通常包含 royalty revenue；Brick Products revenue 不含 royalty。公司不披露 AI 数据中心收入占比，表中 AI/HPC 占比为本报告基于 Advanced/royalty、管理层表述和行业验证的粗估区间，置信度低到中。
+
+| 财报季度 | 总收入/产品+royalty+settlement | Product revenue | Royalty revenue | Settlement | Gross margin | Operating income | Net income | Backlog / bookings | Advanced / Brick | AI/HPC 相关收入估计 | 重要信息 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|---|---|---|
+| 2026Q1 | $113.0M, +20.2% YoY, +5.3% QoQ | $98.0M | $15.0M | $0 | $62.4M / 55.2% | $16.9M / 14.9% | $20.7M / 18.3% | Backlog $300.6M, +75% YoY, +70% QoQ; book-to-bill >2 | Advanced $64.9M, +3.7% QoQ, 57.5%; Brick $48.0M, +7.7% QoQ | 直接 AI/HPC $25-45M；AI+ATE/semicap 间接 $45-65M | lead computing customer wafer-scale engine steep ramp；2nd Gen VPD 3A/mm2、current gain up to 40、1.5mm |
+| 2025Q4 | $107.3M, +11.5% YoY, -2.9% QoQ vs Q3 total | $92.7M | $14.5M | $0 | $59.4M / 55.4% | $15.7M / 14.6% | $46.5M / 43.4% | Backlog $176.9M, +13.8% YoY, +15.8% QoQ; book-to-bill >1.2 | Advanced约 $62.6M；Brick约 $44.6M，按 Q1 sequential 反推 | 直接 AI/HPC $22-40M；royalty/IP $14.5M | 2025 net income 受 $27.3M deferred tax asset benefit 抬高；管理层称 2026 product revenue 与 IP licensing record year |
+| 2025Q3 | $110.4M, +18.5% YoY, -21.7% QoQ | $88.7M | $21.7M | $0 | $63.5M / 57.5% | $20.9M / 18.9% | $28.3M / 25.6% | Backlog $152.8M, +1.5% YoY, -1.5% QoQ | Advanced约 $65.5M；Brick约 $44.9M | 直接 AI/HPC $20-38M；royalty/IP $21.7M | Q3 royalty 有 catch-up；公司称 NBM/VPD 在 high performance computing critical path |
+| 2025Q2 | $141.0M reported, +64.3% YoY；ordinary product+royalty $96.0M | $85.7M | $10.4M | $45.0M | $92.1M / 65.3% reported；ex settlement约 49.1% | $45.4M / 32.2% reported | $41.2M / 29.2% reported | Backlog $155.2M, +0.9% YoY, -9.6% QoQ | Advanced约 $60-61M；Brick约 $35-36M，按年内分部反推 | 直接 AI/HPC $18-34M；reported 利润主要被 settlement 抬高 | 完成首个 ITC 行动后继续追击 infringing power/computing systems；2nd Gen VPD for AI applications |
+| 2025Q1 | $94.0M, +12.0% YoY, -2.3% QoQ | $83.2M | $10.8M | $0 | $44.4M / 47.2% | -$0.1M | $2.5M / 2.7% | Backlog $171.7M, +14.2% YoY, +10.4% QoQ | Advanced $59.9M；Brick $34.1M | 直接 AI/HPC $15-30M；royalty/IP $10.8M | licensee 转向新一代 unlicensed products 导致 royalty/gross margin 压力；后续 Q2 settlement 反转 |
+
+关键观察：
+
+1. 2025Q2、2025Q3、2025Q4 和 2026Q1 的毛利率不可简单趋势外推。Q2 有 $45M settlement，Q3 royalty catch-up，Q4 有 deferred tax benefit，Q1 的 royalty 占比仍高。
+2. 2026Q1 backlog 是真正的增量证据。$300.6M backlog 相当于 Q1 revenue 的 2.66x、Q2 revised guidance 的 2.12x。
+3. Advanced Products 不是纯 AI，但 AI/HPC 和 IP 主要藏在这里；Brick Products 低增长但 Q1 +7.7% QoQ，说明工业、ATE、aerospace/defense 也在贡献。
+4. 公司没有披露 cancellation rate、lead time 或客户项目名。按 backlog 环比 +70%、book-to-bill >2、Q2 指引上修推断，2026H1 firm demand 很强；但 2025Q2-Q3 backlog 从 $171.7M -> $155.2M -> $152.8M 也说明订单可波动。
+
+## 3. 2026 最新指引、业务收入占比和产品映射
+
+### 3.1 最新指引
+
+公司在 2026Q1 call 给出的原始指引是 Q2 revenue nearly $126M、2026 revenue nearly $570M。2026-05-26 又把 Q2 revenue guidance 从 $126M 上调到 $142M，理由是 rising product revenues and royalties from an additional licensee to patented power system technology。新 license 覆盖 power converter topologies、control systems、power components、distribution architectures，包括 FPA 和 VPD。
+
+以 $142M Q2 指引计算：
+
+| 指标 | 数值 |
+|---|---:|
+| Q2 指引 vs Q1 actual | +25.7% QoQ |
+| Q2 指引 vs 2025Q2 ordinary product+royalty $96.0M | +47.9% YoY |
+| Q2 指引 vs 2025Q2 reported $141.0M incl settlement | +0.7% YoY，但这个比较没有经营意义 |
+| Q1 actual + Q2 revised guide | $255.0M |
+| 若 H2 按 $150-170M/quarter | 2026 full-year $555-595M |
+| 若 H2 受 backlog/royalty 加速至 $175-210M/quarter | 2026 full-year $605-675M |
+
+公司没有在 5 月公告中披露 Q2 product/royalty 的精确拆分。因此本报告不把 Q2 的 royalty 视为可持续 run-rate，只用“总 revenue 指引上修 + 新 OEM license”作为 IP monetization 增强证据。
+
+### 3.2 2026 当前收入结构
+
+| 口径 | 2025 全年 | 占 product+royalty | 2026Q1 | 占 Q1 revenue | 变化含义 |
+|---|---:|---:|---:|---:|---|
+| Advanced Products incl royalty | $248.6M | 61.0% | $64.9M | 57.5% | AI/HPC、NBM、VPD、license 的核心池 |
+| Brick Products | $159.1M | 39.0% | $48.0M | 42.5% | 工业、ATE、aerospace/defense 复苏；不是低质量，但估值弹性较低 |
+| Product revenue | $350.3M | 85.9% | $98.0M | 86.8% | 产品放量仍是收入主体 |
+| Royalty revenue | $57.4M | 14.1% | $15.0M | 13.2% | 高毛利、波动大，受 license/IP 事件影响 |
+| Patent settlement | $45.0M | 另列 | $0 | 0% | 2025 一次性，不应算 recurring |
+
+### 3.3 重点产品和跳过产品
+
+**重点产品/业务**
+
+| 优先级 | 产品/业务 | 对应型号/技术 | 为什么重要 |
+|---:|---|---|---|
+| 1 | VPD / Power-on-Package / Current Multiplier | MCM/GCM、2nd Gen VPD、FPA、PRM/VTM | 直接解决 AI XPU 近端高电流、低电压、PDN loss、散热和板面积问题 |
+| 2 | NBM / 48V-to-12V / Non-isolated Bus Converter | NBM2317、NBM 系列、相关 IP | 48V rack 迁移和 legacy 12V 兼容；也是 ITC/IP licensing 核心 |
+| 3 | Royalty/IP licensing | FPA、VPD、NBM、power converter topologies、control systems、distribution architectures | 几乎全毛利，Q2 2026 指引上修来自新增 OEM license |
+| 4 | BCM / HVDC-to-48V / bus conversion | BCM high voltage bus converters、HVDC distribution | 与 800VDC/HVDC 趋势相关，但 Vicor 当前公开收入证据弱于 VPD/NBM |
+| 5 | ATE / semicap / wafer-scale engine power | current multiplier、Factorized Power System、custom modules | AI buildout 带动 ASIC/HBM/semicap test heads，高毛利且客户锁定强 |
+| 6 | ZVS regulators / auxiliary rails | 48V-to-12V/5V/3.3V ZVS | 单价低于 VPD，但在 48V server board 迁移中有 attach 机会 |
+
+**低优先级或本报告跳过的业务**
+
+| 跳过/降权业务 | 原因 |
+|---|---|
+| 传统 VI-200、VI-J00、Maxi/Mini/Micro brick 中的通用工业订单 | 增速低、竞争和替代多，除非进入 ATE/semicap/军工高可靠平台 |
+| 普通通信/网络电源 | 与 AI rack 供电相关性弱，未见 VICR 独立高增长证据 |
+| eMobility/automotive legacy 应用 | 2025 公司披露汽车是少数未增长市场之一；不是 2026 主线 |
+| 园区级 UPS、switchgear、transformer、PDU、busway | 这是 Schneider/Eaton/Vertiv/Delta/Legrand 等公司的主战场，VICR 没有直接总包位置 |
+| 光模块主供电按 optical port 大规模计入 | Vicor 可能供应辅助 rails，但没有证据显示其是 800G/1.6T optical module 主 power BOM 标的 |
+
+## 4. 当前关键产品贡献、增速、重要性、紧急性、供需和定价权
+
+评分：1 = 低，5 = 极高。美元收入贡献为本报告估算，非公司披露。
+
+| 关键业务/产品 | 当前收入贡献估计 | 当前增速/证据 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 交叉验证 |
+|---|---:|---|---:|---:|---:|---:|---|
+| VPD / Power-on-Package / current multiplier | Q1 直接贡献约 $20-40M；若含 lead computing customer 及 ATE/semicap，$30-55M | 2026Q1 lead computing customer steep ramp；2nd Gen VPD 进入客户选择阶段；Q1 backlog +70% QoQ | 5 | 5 | 4 | 4 | CICC 强调 48-60V IBC/VPD；Vicor 官网页强调 >1000A、50X PDN resistance reduction |
+| NBM / 48V-12V bus conversion / NBM IP | Q1 产品+royalty合计约 $15-35M | Q1 royalty $15.0M；Q2 新 OEM license 覆盖 FPA/VPD 等；ITC second investigation | 4 | 4 | 4 | 4 | 48V rack 是 2026 主线；NBM 与 legacy 12V/48V 迁移有关 |
+| Royalty/IP licensing | Q1 $15.0M；2025 $57.4M；2025Q2 settlement另 $45M | Q2 指引上修由 additional licensee 贡献；公司称 2026 licensing 可能 record | 5 | 4 | 3 | 5 | license 与 exclusion order 直接相关；但时点不可预测 |
+| ATE / semicap / industrial high-density power | Q1 Brick $48M 中的 $15-25M + Advanced 一部分 | Q1 industrial/ATE/semicap customers strong order placement；AI data center buildout 间接拉动测试设备 | 3 | 4 | 3 | 3 | CICC 和本地行业资料均强调 HBM/ASIC test、电源完整性 |
+| BCM/HVDC-to-48V / 800VDC 期权 | 当前 < $5-10M/quarter，主要是产品线期权 | Vicor computing page 称 BCM 可 HVDC -> 48V、98% peak efficiency；但 NVIDIA 800V 公开伙伴名单没有突出 Vicor | 3-4 | 2-3 | 2 | 2-3 | 2026 800VDC 是 design-in，2027 first production；更确定受益者是 TI/Infineon/Delta/Schneider/Eaton 等 |
+| ZVS aux regulators / 48V auxiliary rails | 当前小，估计 <$5-10M/quarter | 48V server migration 附带需求 | 2 | 3 | 2 | 2 | 单价低，竞争多，非核心 |
+
+当前最强证据链是：`Q1 backlog + book-to-bill >2` + `Q2 guide 上修` + `lead computing customer ramp` + `first fab capacity earmarked for strategic customers` + `VPD/Gen5 bootcamp and demos`。最弱证据链是：外部市场把 Vicor 直接等同于 NVIDIA 800VDC/Kyber 核心供应商，目前公开证据不足。
+
+## 5. 未来一年关键产品三情景预测
+
+未来一年指 2026H2-2027H1 滚动 12 个月。收入贡献为 Vicor 公司层面 revenue contribution，不是全球 TAM。
+
+| 产品/业务 | 情景 | 未来一年收入贡献 | 收入增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 触发条件 |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| VPD / Power-on-Package / current multiplier | 基准 | $180-260M | +35-60% | 5 | 5 | 4 | 4 | lead customer Gen4 steep ramp，Gen5 选择性导入，第一 fab 高利用 |
+| VPD / Power-on-Package / current multiplier | 乐观 | $300-450M | +80-130% | 5 | 5 | 5 | 4-5 | Gen5 在 2-3 个 hyperscaler/OEM chip 客户 design-in；capacity reservation 签约 |
+| VPD / Power-on-Package / current multiplier | 极度乐观 | $500-750M | +160%+ | 5 | 5 | 5 | 5 | lead customer 需求接近“fills two fabs”，第二供应/授权合作落地，客户接受 $200-400+/XPU 内容量 |
+| NBM / 48V bus conversion / NBM IP | 基准 | $90-140M | +20-40% | 4 | 4 | 3 | 4 | 48V rack/server 迁移持续，license 贡献稳定 |
+| NBM / 48V bus conversion / NBM IP | 乐观 | $150-230M | +50-90% | 4 | 4 | 4 | 4 | ITC/exclusion order 推动更多 OEM 授权，NBM 进入更多 AI server/rack |
+| NBM / 48V bus conversion / NBM IP | 极度乐观 | $250-400M | +100%+ | 4 | 5 | 5 | 5 | unlicensed OEM/hyperscaler 为避免供应中断集中 license |
+| Royalty/IP licensing | 基准 | $70-110M | +20-90% | 5 | 4 | 3 | 5 | 现有 licensee + Q2 新 OEM，少量 catch-up |
+| Royalty/IP licensing | 乐观 | $150-250M | +160%+ | 5 | 5 | 4 | 5 | 多个 OEM/hyperscaler all-inclusive license，settlement/true-up 增加 |
+| Royalty/IP licensing | 极度乐观 | $300-500M | +400%+ | 5 | 5 | 4 | 5 | ITC order 造成供应链强制授权，royalty 从事件性变成平台性 |
+| ATE / semicap / industrial / A&D | 基准 | $210-260M | +20-35% | 3 | 3 | 3 | 3 | top 100 industrial OEM/ATE order placement 持续 |
+| ATE / semicap / industrial / A&D | 乐观 | $280-360M | +45-75% | 3 | 4 | 4 | 3 | AI semicap/test 设备高景气叠加军工 |
+| ATE / semicap / industrial / A&D | 极度乐观 | $380-500M | +90%+ | 3 | 4 | 4 | 4 | ATE/semicap 和 A&D 同时进入多年高增，Brick 产品恢复高利用 |
+| BCM/HVDC/800VDC 期权 | 基准 | $20-50M | 小基数 +50% | 3 | 2 | 2 | 2 | 2027 800VDC design-in 前的小批量/NRE |
+| BCM/HVDC/800VDC 期权 | 乐观 | $60-120M | +200%+ | 4 | 3 | 3 | 3 | 800V->48V/HV IBC reference design 被客户采用 |
+| BCM/HVDC/800VDC 期权 | 极度乐观 | $150-250M | +500%+ | 4 | 4 | 4 | 4 | Rubin/Kyber/Diablo 800V rack 进入 early production 且 Vicor 获关键 design-in |
+
+公司整体未来 12 个月收入推演：
+
+| 情景 | 未来 12 个月 revenue | 相对 2025 product+royalty $407.7M | 关键假设 |
+|---|---:|---:|---|
+| 基准 | $620-700M | +52-72% | $300.6M backlog 大部分转收入；Q2 $142M 后 H2 维持 $155-180M/quarter；royalty 稳定 |
+| 乐观 | $780-950M | +91-133% | lead customer ramp + 2-3 个 VPD/IP 客户；first fab 接近 80% utilization |
+| 极度乐观 | $1.10-1.35B | +170-231% | VPD 多客户平台化，license/settlement 远超预期，产能/替代供应解决 |
+
+## 6. BOM、每 MW / rack / GPU / optical port 内容量、价格传导、产能和认证
+
+### 6.1 Vicor 在 AI rack BOM 中的真实位置
+
+本地 `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md` 判断：2026 年最确定的主线是 48/50V ORv3/HPR 机柜电源在 100-155kW AI rack 中放量，GB200 NVL72 约 120kW，GB300 NVL72 135kW TDP、最高 155kW peak；电源链价值量可从传统 AI server rack 的 $20-40k/rack 提升到 $80-180k/rack，若 800V sidecar + liquid busbar + energy shelf 进入 300kW+ rack，可到 $250-600k/rack。Vicor 只捕获其中的 DC/DC、IBC、current multiplier、VPD 和 license，不捕获全部 rack power shelf/PSU/BBU/busbar 价值。
+
+### 6.2 Vicor 内容量估计
+
+假设一个 100-155kW AI rack，类似 GB200/GB300 NVL72 级别，含 72 个 GPU/XPU 等效加速器；每 MW 约 6.5-10 个 rack。
+
+| 使用路径 | 每 GPU/XPU Vicor 内容量 | 每 rack Vicor 内容量 | 每 MW Vicor 内容量 | 置信度 | 说明 |
+|---|---:|---:|---:|---|---|
+| 无 Vicor，仅传统多相 VRM/MPS/TI/Infineon 等 | $0 | $0 | $0 | 高 | 大客户可完全不用 Vicor |
+| NBM / 48V-to-12V / auxiliary conversion | $40-170 | $3k-12k | $25k-120k | 中 | 取决于是否用 NBM/NBM-like module 做 48V/12V migration |
+| VPD/current multiplier direct-to-XPU，按管理层 Q4 call 提到的 $200-400/XPU | $200-400 | $14k-43k | $100k-430k | 中 | 72 GPU + 部分 switch/ASIC 计入；不含 royalty |
+| VPD 高配 + package/custom/NRE | $500-900 | $36k-97k | $250k-970k | 低 | 仅适用于高端 ASIC/wafer-scale/专有平台 |
+| BCM/HVDC-to-48V/800V option | $70-280 等效 | $5k-20k | $35k-200k | 低 | 2026 证据不足，2027 期权 |
+| Royalty/IP 等效 | $0-100+ | $0-10k+ | $0-100k+ | 低 | 合同不披露，可能按 licensee/revenue/settlement 计，不适合机械 per GPU 化 |
+| optical port / network port 供电 | $0-3/port，或 $0-15/optic module | 通常 <$2k/rack | <$20k/MW | 低 | 不是 Vicor 主 thesis；若只按 optical port 建模容易高估 |
+
+结论：若 Vicor 只做少量 auxiliary/IBC，单 rack 内容量很小；若 VPD 成为 AI XPU 主供电方案，单 rack 内容量可从 $10k 级别升到 $50k+，且毛利率远高于普通 PSU。VICR 股价的弹性主要来自第二种情形。
+
+### 6.3 BOM 拆分和价格传导链
+
+**VPD/current multiplier/Power-on-Package 粗略 BOM**
+
+| 成本项 | BOM 占比估计 | 价格传导能力 |
+|---|---:|---|
+| power module / switching silicon / drivers | 25-35% | 受电流密度、效率、可靠性约束，客户认证后可传导 |
+| magnetic / transformer / current multiplier structure | 15-25% | 封装、低剖面、高频磁性件紧缺时可传导 |
+| substrate / PCB / thermal / mechanical interface | 10-20% | 与客户 package/board 共同设计，NRE 和定制化带来溢价 |
+| control / telemetry / firmware / protection | 5-10% | AI rack 对可观测性、瞬态、故障定位要求提高，有软件/firmware 溢价 |
+| assembly / test / burn-in / yield loss | 15-25% | 产能紧和良率风险主要在这里，客户愿为可靠交付付费 |
+| warranty / field support / FAE | 5-10% | 进入 hyperscaler/OEM design 后支持成本高，但也构成客户锁定 |
+
+价格传导链：`hyperscaler/AI lab token per MW ROI` -> `NVIDIA/AMD/custom ASIC/OEM 平台架构选择` -> `ODM/OEM AVL 与 power BOM` -> `Vicor module ASP / NRE / license` -> `Vicor revenue`。如果电源模块可让客户缩短 time-to-power、降低 PDN loss、提升 XPU 性能或避免 IP/import disruption，Vicor 定价权强；如果客户找到二供或牺牲效率也能达标，定价权迅速下降。
+
+### 6.4 当前产能能力和供应链采纳
+
+| 项目 | 当前状态 |
+|---|---|
+| backlog 对产能的指示 | 2026Q1 backlog $300.6M，book-to-bill >2，Q2 revenue guidance $142M，显示短期产能和订单都在加速 |
+| 第一 CHiP fab | Q4 call 提到 first fab theoretical capacity slightly above $1B revenue，80% utilization 是 prudent operating point，即约 $800M run-rate；Q1 又说增加设备并规划 second fab |
+| 第二 fab | 规划中；公司考虑土地/新建或现有建筑，目标缩短 12-18 个月；真正量产更可能是 2028 以后 |
+| alternate source | 公司正探索 high current density 2nd Gen VPD modules 的 alternate source，意图给 OEM/hyperscaler 多源 access |
+| 现金支持 | Q1 cash $404.2M，total liabilities $50.8M，足以支持设备和早期扩产 |
+| 采纳证据 | 已有 lead computing customer，且 Gen4 ramp；Gen5 正在 FAE bootcamp/demo/selective engagement 阶段；其他 hyperscaler/OEM chip customer interest 存在但未命名 |
+| 认证阶段 | VPD/Gen4：lead customer 量产爬坡；Gen5：demo/FAE/customer engagement；NBM/IP：ITC/license 强约束；800VDC/HVDC：未见 Vicor 在 NVIDIA 800V 生态中公开核心位置 |
+
+## 7. 未来一年产能、采纳和认证三情景
+
+| 产品/业务 | 情景 | 未来一年收入产能能力 | 供应链采纳程度 | 认证/客户阶段 |
+|---|---|---:|---|---|
+| VPD / current multiplier | 基准 | $250-350M/year 可交付，受 first fab/test 限制 | lead customer + 少量战略客户 | Gen4 量产爬坡；Gen5 demo/FAE/selective design-in |
+| VPD / current multiplier | 乐观 | $450-650M/year | 2-3 家 hyperscaler/OEM chip 客户进入 design freeze | capacity reservation、AVL/qualification、Gen5 工程样转小批量 |
+| VPD / current multiplier | 极度乐观 | $800M-1.0B/year，接近 first fab prudent/full run-rate | lead customer + 多家客户共用，alternate source 签约 | 量产认证扩散，二供或授权制造降低 supply risk |
+| NBM / FPA license | 基准 | $80-140M/year royalty/IP + product | 现有 licensee 延续，新 OEM license 生效 | all-inclusive license 部分落地 |
+| NBM / FPA license | 乐观 | $150-300M/year | 多个 OEM/hyperscaler 为避免 exclusion order 授权 | license from defensive to platform procurement |
+| NBM / FPA license | 极度乐观 | $400M+ event/revenue opportunity | 行业形成 Vicor IP 必须授权共识 | ITC/settlement 触发集中 true-up |
+| ATE/semicap/industrial | 基准 | $220-280M/year | top 100 industrial OEM 和 ATE 客户延续强订单 | 常规 qualification |
+| ATE/semicap/industrial | 乐观 | $300-400M/year | AI semicap test heads 和 memory/ASIC test platform 扩散 | 新一代平台 design win |
+| ATE/semicap/industrial | 极度乐观 | $450M+ | ATE/semicap 和 A&D 同时高景气 | 多年 supply agreement |
+| BCM/HVDC/800VDC | 基准 | <$50M/year | 小批量、NRE、参考设计 | design-in / prototype |
+| BCM/HVDC/800VDC | 乐观 | $75-150M/year | 进入 1-2 个 800V/HVDC rack 项目 | customer RFQ/qualification |
+| BCM/HVDC/800VDC | 极度乐观 | $200M+ | 2027 Kyber/Rubin/OCP Diablo 供应链有明确 Vicor role | 首批 platform production |
+
+## 8. 订单积压、供给和未来一年业务增速预测
+
+公司不披露 backlog 的客户结构、取消率、lead time、交付窗口或 backlog conversion schedule。但公开数据足以做边界推断：
+
+1. 2026Q1 backlog $300.6M，较 2025Q4 $176.9M 增加 $123.7M。
+2. Q1 book-to-bill >2，意味着 Q1 bookings 至少 >$226M，扣除 revenue 后 backlog 增加方向一致。
+3. Q2 revenue guidance $142M；当前 backlog 是 Q2 revenue 的 2.1 倍。
+4. Q1 operating cash flow 因 $28.6M litigation payment 为负，但 cash 仍增至 $404.2M，供给端资金压力低。
+5. 第一 fab 接近高利用，说明 backlog 不只是需求问题，也开始映射到设备、test、burn-in、FAE 和客户优先级。
+
+### 8.1 未来一年业务增速情景
+
+| 情景 | 未来一年 revenue | 增速 vs 2025 product+royalty $407.7M | 产品收入 | Royalty/IP | Backlog/供给假设 | 取消率推断 |
+|---|---:|---:|---:|---:|---|---|
+| 基准 | $620-700M | +52-72% | $520-600M | $80-110M | $300.6M backlog 在 2-3 个季度大部分转收入；新增 bookings 保持 >1.1 book-to-bill | HPC/A&D 低；distribution/industrial 中等；整体低到中 |
+| 乐观 | $780-950M | +91-133% | $620-760M | $150-220M | first fab 进入 70-80% utilization；capacity reservation；lead customer 和 ATE 同时加速 | 低，客户为 securing supply 接受 capacity terms |
+| 极度乐观 | $1.10-1.35B | +170-231% | $800M-1.0B | $250-400M | VPD 多客户需求接近 first fab 上限，license/settlement true-up，alternate source 减轻瓶颈 | 很低，但执行/field risk 高 |
+
+### 8.2 渠道和“小道消息”可信度分层
+
+| 信息 | 可信度 | 采用方式 |
+|---|---|---|
+| Q1 backlog、Q2 指引上修、product/royalty revenue | 高 | 直接进入模型 |
+| management 关于 lead computing customer、wafer-scale engine、Gen4/Gen5 VPD、$200-400/XPU content、first fab $1B capacity 的说法 | 中高 | 作为管理层披露，但需要未来财报验证 |
+| “other hyperscaler / OEM chip customer interest” | 中 | 只能作为 pipeline，不视为订单 |
+| 公开市场把 VICR 绑定 NVIDIA 800VDC/Kyber | 低到中 | 仅作为期权，不作为基准收入 |
+| 社交媒体/论坛对客户名的猜测 | 低 | 不纳入核心报告，除非公司/客户/teardown 验证 |
+
+## 9. 竞争格局、主流性、替代方案和客户替换成本
+
+### 9.1 竞争对手
+
+| 子市场 | 主要竞争者 | 竞争核心 |
+|---|---|---|
+| VPD / near-package / current multiplier / AI xPU power | MPS、Infineon、TI、ADI/Empower、Renesas、Murata、TDK、onsemi、Vicor | current density、瞬态、低噪、薄封装、散热、客户 package/board co-design、IP |
+| 48V/12V IBC / NBM / bus conversion | MPS、Infineon、TI、ADI、Renesas、Murata、Bel、Delta/Flex power、Vicor | 效率、成本、尺寸、供货、second source |
+| AI server PSU / HPR shelf | Delta、Lite-On、AcBel、Advanced Energy、Flex、Murata、Chicony、FSP、Great Wall、Huntkey | 5.5kW/12kW/18.5kW、ORv3/HPR 认证、产能、良率、价格 |
+| 800VDC/HV IBC/sidecar | TI、Infineon、MPS、Navitas、Power Integrations、ROHM、ST、onsemi、Delta、Schneider、Eaton、Vertiv、Flex | 高压 GaN/SiC、绝缘、EMI、DC protection、reference design、NVIDIA/OCP 生态 |
+| Royalty/IP | 无直接同型竞争者；替代是客户绕开 Vicor 专利或与其他技术栈合作 | 专利有效性、ITC order、客户 supply disruption 风险 |
+
+### 9.2 Vicor 的新技术是否可能成为主流
+
+分层判断：
+
+1. 48V rack / 48V-to-load 是主流。行业本地资料明确：2026 主线不是全面 800VDC，而是 48/50V ORv3/HPR、100-155kW rack、BBU/energy shelf、DC/DC、VRM。Vicor 的 48V ecosystem 符合主流方向。
+2. VPD/Power-on-Package 是高端 AI XPU 的强候选，不是全行业默认。它在 wafer-scale engine、高电流 ASIC、OAM/custom AI accelerator 中有明显技术意义，但大客户仍可能选择 MPS/Infineon/TI/ADI 等方案，或为了 second source 牺牲部分效率。
+3. 800VDC 是 2027+ 新建 AI factory 的主流方向之一，但 Vicor 不是目前公开资料里最确定的 800VDC 标准供应商。NVIDIA 公开 800VDC 生态伙伴突出 Delta、Eaton、Flex、Infineon、LiteOn、MPS、Navitas、ROHM、Schneider、ST、TI、Vertiv 等，Vicor 的更强暴露仍在 VPD/NBM/FPA。
+4. Royalty/IP 是否成为“行业税”取决于 ITC/专利 enforceability 和客户行为。2025 settlement、2026 新 OEM all-inclusive license 是强证据，但长期持续性仍需观察。
+
+### 9.3 替代方案和风险
+
+| 风险/替代 | 对 VICR 的影响 | 反证/跟踪指标 |
+|---|---|---|
+| 大客户用 MPS/Infineon/TI/ADI 多相/TLVR/模块方案替代 VPD | 直接压低 VPD TAM 和 ASP | 新 AI XPU teardown、OAM/UBB power BOM、MPS/Infineon/TI data center design win |
+| 客户要求 second source，Vicor 不能提供足够产能或授权供应 | design-in 被推迟或只保留单客户 | alternate source agreement、capacity reservation、second fab 进展 |
+| ITC/IP 结果不如预期 | royalty/IP 估值回落 | ITC final determination、settlement、license renewal |
+| 800VDC 架构绕开 Vicor 48V/NBM 优势 | HV IBC 和 sidecar 价值流向 TI/Infineon/Delta/Schneider 等 | NVIDIA/OCP/Kyber/Rubin power reference design |
+| field failure / 近封装散热或机械可靠性问题 | 客户延后平台导入，收入推迟 2-4 个季度 | 客户验收、RMA、gross margin、warranty |
+| 估值过高 | 即使基本面好，股价也可能因 multiple compression 下跌 | forward P/S 仍接近 20x；若 revenue guide 不持续上修，风险较高 |
+| 2026 AI capex 或 GPU/rack 验收降温 | 全行业订单和 backlog 放缓 | hyperscaler capex、NVIDIA/AMD/rack ODM、Eaton/Vertiv/Schneider backlog |
+
+### 9.4 客户替换成本
+
+Vicor 的客户替换成本取决于其在系统中的嵌入深度：
+
+| 嵌入深度 | 替换成本 |
+|---|---|
+| 普通 brick / auxiliary converter | 低到中；可多源替代 |
+| NBM / 48V-to-12V IBC on server board | 中；需要 board/layout/thermal/EMI 重测 |
+| VPD / Power-on-Package / current multiplier near processor | 高；涉及 package pin map、substrate、thermal、PDN、firmware、系统性能和可靠性 |
+| Royalty/IP license | 高但法律驱动；替代是重新设计或承受 import/supply risk |
+| ATE/semicap test head high-current modules | 中高；客户平台认证周期长，噪声和电流密度很难临时替代 |
+
+## 10. 投资判断框架
+
+### 10.1 应该如何看 VICR
+
+最合理的看法是：VICR 是 AI 供电链条中“高赔率、高验证门槛”的近负载电源公司。它不是 2026 AI 电力设备总量最大的公司；总量最大的是 power shelf、PSU、UPS、switchgear、BESS、busway、liquid cooling 和 rack integrator。但 VICR 所在的 VPD/current multiplier/IP 层，如果被新一代 AI XPU 采用，毛利率和内容量弹性明显高于普通电源制造。
+
+### 10.2 关键跟踪指标
+
+| 时间 | 跟踪指标 | 上修条件 | 下修条件 |
+|---|---|---|---|
+| 2026Q2 财报 | revenue 是否接近/超过 $142M，gross margin 是否保持 >55%，backlog 是否继续 >$300M | revenue beat、backlog 持续上升、product revenue 拆分健康 | guidance miss、backlog 回落、royalty 一次性后产品不足 |
+| 2026H2 | lead computing customer 和 Gen4/Gen5 VPD ramp | 明确 capacity reservation、new VPD customer、Gen5 design-in | Gen5 推迟、客户未命名且无订单 |
+| ITC / IP | second ITC investigation、new license、settlement | 更多 all-inclusive OEM/hyperscaler license | IP challenge 或 licensee 流失 |
+| 产能 | first fab utilization、equipment install、second fab/alternate source | first fab 接近 80% utilization，alternate source 签约 | 产能扩张推迟或良率/测试卡住 |
+| 行业 | OCP/NVIDIA/Rubin/Kyber/GB300 power architecture | VPD/48V direct-to-load 被公开标准或平台采用 | 客户转向 MPS/TI/Infineon reference designs |
+
+### 10.3 一句话结论
+
+VICR 的 2026 基本面已经从“AI 电源概念”升级为“有 backlog、Q2 指引上修、IP license 和 lead customer ramp 的高增长验证期”。但它的估值要求很高：只做到 $570-650M revenue 还不够，市场真正押注的是 VPD/IP 进入多客户 AI XPU 平台，并把第一 CHiP fab 推向 $800M-$1B run-rate。投资上应把它作为高技术壁垒、高波动、强验证依赖的 AI power delivery 标的，而不是普通数据中心电力设备股。
+
+## 主要来源
+
+### 公司一手资料
+
+- Vicor Q1 2026 results, 2026-04-21: https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-first-quarter-ended-march-13
+- Vicor Q2 2026 revenue guidance revision, 2026-05-26: https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-revises-q2-2026-revenue-guidance
+- Vicor Q4/FY2025 results, 2026-02-19: https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-fourth-quarter-and-year-8
+- Vicor Q3 2025 results, 2025-10-21: https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-third-quarter-ended-15
+- Vicor Q2 2025 results, 2025-07-22: https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-second-quarter-ended-june-14
+- Vicor Q1 2025 8-K Exhibit / press release: https://www.sec.gov/Archives/edgar/data/751978/000119312525103857/d841672dex991.htm
+- Vicor computing solutions: https://www.vicorpower.com/industries-and-innovations/computing
+- Vicor Power-on-Package: https://www.vicorpower.com/industries-and-innovations/power-on-package
+- Vicor powering clustered AI processors: https://www.vicorpower.com/resource-library/articles/high-performance-computing/powering-clustered-ai-processors
+- Vicor powering high performance computing: https://www.vicorpower.com/resource-library/articles/high-performance-computing/powering-high-performance-computing
+
+### 财报电话会和市场数据
+
+- Vicor Q1 2026 earnings transcript, The Motley Fool: https://www.fool.com/earnings/call-transcripts/2026/05/03/vicor-vicr-q1-2026-earnings-transcript/
+- Vicor Q4 2025 earnings transcript, The Motley Fool: https://www.fool.com/earnings/call-transcripts/2026/02/19/vicor-vicr-q4-2025-earnings-call-transcript/
+- StockAnalysis VICR statistics and valuation: https://stockanalysis.com/stocks/vicr/statistics/
+
+### 外部行业资料
+
+- NVIDIA 800 VDC technical blog: https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/
+- NVIDIA 800 VDC architecture page: https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/
+
+### 本地行业资料
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/顶级会议信息/conference_update_cicc_2026_2026-06-11.md`
+- `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`

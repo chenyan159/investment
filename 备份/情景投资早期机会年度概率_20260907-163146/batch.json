@@ -1,0 +1,1548 @@
+{
+  "batchId": "scenario-probability-20260907-163146",
+  "backupDir": "D:\\drive\\Investment\\备份\\情景投资早期机会年度概率_20260907-163146",
+  "queueBackupDir": "D:\\drive\\Investment\\tools\\research-runner\\queue-backups\\scenario-all-annual-probability-20260907-163146",
+  "createdAt": "2026-09-07T16:31:46.941223-07:00",
+  "planPath": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\研究方案.md",
+  "model": "gpt-6-astra",
+  "reasoning": "high",
+  "concurrency": 50,
+  "runnerCodeHashes": {
+    "tools\\research-runner\\index-updater.mjs": "f572c5183ae490acb3362420df003d0e3f6cae913670e3c1745a1958954a7717",
+    "tools\\research-runner\\queue-store.mjs": "6e5ceb9f5b4ead839f4719c2013beff490a26b61501ff604f0647d2323e959c1",
+    "tools\\research-runner\\queue-tools.mjs": "c4148d186b4bd9e4308b21552d7ed7a0a6a039abd98f779b1e601e6c4d0432b9",
+    "tools\\research-runner\\quota-control.mjs": "77916dab701e0dfbc88f568716f0df056e452d537190086cc2d23d9f3bd78094",
+    "tools\\research-runner\\runner.mjs": "8e76bca53654184e994e2056d2968bf2057fa158a98605050ea44f9cb475f26b",
+    "tools\\research-runner\\usage-telemetry.mjs": "ebbd41d197598875af06468f773dffb8647b46db231d7cdfbad8a5d15d0c727d",
+    "tools\\research-runner\\dashboard\\config.mjs": "b92955b08e666d5cb4b8bac7992272e8a14f83ab118f0a617544ac0ca7054afe",
+    "tools\\research-runner\\dashboard\\quota-service.mjs": "ec9f1d57ba4847d1cfe1816e74061349a58b5f007e206416e977db439ba29e9e",
+    "tools\\research-runner\\dashboard\\runner-control.mjs": "5bf65a0791a3975c357f9dbe1eab597ba6befba4e3524098b1266a23f4b09228",
+    "tools\\research-runner\\dashboard\\server.mjs": "820d0a7849979b4785a8b14fd543b7f62aeecafa95dd86615953060da758b593",
+    "tools\\research-runner\\dashboard\\snapshot.mjs": "ef4abbbf3e7cca9e65a88a5208e95784c36ba8df0e73eed417770074bdd73ec4",
+    "tools\\research-runner\\domains\\company-comparison.mjs": "ae9cdbb10ff89361af8c1615c250c136cfa76ce7e07a6b8367cdb0bb84485d3e",
+    "tools\\research-runner\\domains\\company-evaluation_淘汰.mjs": "492c56c2607d97bffd858543ec477eb8b2ac7ef28fa77875e9de5d48d594f855",
+    "tools\\research-runner\\domains\\company-investment-decision.mjs": "3c15c54ed2d219bc757d1c9644fc762da0075811c9592e105218c6e49275dc64",
+    "tools\\research-runner\\domains\\company-sentiment.mjs": "cee74e6d3056aab35f81b5013990dbb532f686d493876117d4ff560011961dee",
+    "tools\\research-runner\\domains\\company.mjs": "b5c6dd32c2fd1b5d59283397d1a756c6cdea808a06fa130b9fca4a8af10fbed5",
+    "tools\\research-runner\\domains\\feature-contract.mjs": "80039b3641d284ca72e7f405ccc752c4329621c3821244ea2dc204d820bacc40",
+    "tools\\research-runner\\domains\\feature-quantization.mjs": "c38b734b281b9f9427da80ce64fe8ce6d2dd41a514fa6116e22b37cba75f8897",
+    "tools\\research-runner\\domains\\file-run.mjs": "79b280e8891f2ca3c5ec0bd68f950684e8fbb43ced30f4aecf1e2064b4601924",
+    "tools\\research-runner\\domains\\index.mjs": "2dc797ebf88630a174398d406b27000336e022ece10357a4bbecbf6cab319a38",
+    "tools\\research-runner\\domains\\industry.mjs": "30ee6905f7f8208f32b1482e7b29194f6ce6ff28b0684dc86360faf2753044d7",
+    "tools\\research-runner\\domains\\output-backup.mjs": "c4e5fb5be4c8e0167a78cc704d644930f63d384a9bc49e3baec4238b7a84c463",
+    "tools\\research-runner\\domains\\output-path.mjs": "1f6ec9bf98aa78aada33e61f4f3f902fa935bd6f5f184ccd6eca73d5fe4f33b1",
+    "tools\\research-runner\\prompts\\common.mjs": "5e004e5b50b5f083e1de3e708b0538a7036e9f342b6fc505f50c9192a16af45a",
+    "tools\\research-runner\\prompts\\company-comparison.mjs": "8af4f338a973a4c47c91818c267e4289a3650c68f3488d9516d5f206bb2f646e",
+    "tools\\research-runner\\prompts\\company-evaluation_淘汰.mjs": "8e0b7a67432148d9fd07745e581c9951b7a53396544439ca665ec41352a53235",
+    "tools\\research-runner\\prompts\\company-investment-decision.mjs": "3a124a30ee8bb0c0ac79bc091fb5652a4a22296004e7f0de0652b46b4d832b01",
+    "tools\\research-runner\\prompts\\company-sentiment.mjs": "62817abe41b8d5a0dde8867d907568346de5305d0a695214054f47a13dc9402b",
+    "tools\\research-runner\\prompts\\company.mjs": "162a39d7cd184bd19e9b48a97ba9d0ace73dccd56ff9ce44276aa9a9df23f5ca",
+    "tools\\research-runner\\prompts\\feature-quantization.mjs": "5e96524661a74b80fb5ae9d8ea709e41d3468a377182d4ab8451f8fc9a78e203",
+    "tools\\research-runner\\prompts\\file-run.mjs": "54f23bca72a9f7345558e578442c76696f5dfde9d586c16058393d5a6875e766",
+    "tools\\research-runner\\prompts\\industry.mjs": "512c415243e4410647f1732b1fde494dead548e7f6ed0c9f3f7de4708d05b7aa",
+    "tools\\research-runner\\test\\feature-workflow.test.mjs": "1bd9f2d9b55e479d3e079682b1f2072a3a70646f4499eea5048d8084d39fbe83",
+    "tools\\research-runner\\test\\industry-research-scope.test.mjs": "9f09518b43d46e98e823776d1e6cbdc2be0e2c11a84ab26aea84cad5dc28bade",
+    "tools\\research-runner\\test\\output-backup.test.mjs": "5f07055b8849e5d6af226c8d0aa03a88ad35215e8a2a26eccaefe2ac63ddcf15",
+    "tools\\research-runner\\test\\output-contract.test.mjs": "4e15e8c9082a7188141e3abe790f9e6975227ac949081df3ef1d340c0a437d27",
+    "tools\\research-runner\\test\\queue-schema.test.mjs": "c06fdef6ef33327601caa0249aa11edc4936f65e074f6c3c102304eadc1890ef",
+    "tools\\research-runner\\test\\queue-tools-cli.test.mjs": "ede57e9dc7dc71aaaeadc806e22a2eb850c5c1aec03d23f7baafba91d95fe996",
+    "tools\\research-runner\\test\\quota-control.test.mjs": "ebb5472c18c94011d8a17fe3cb2229d2c3f3be5891d56df2101faf40d910f32a",
+    "tools\\research-runner\\test\\usage-telemetry.test.mjs": "1fd49716df84cdd3000fba39467a653a7efafe7fc1e96f87ca22497eb7401ab3",
+    "tools\\research-runner\\validators\\output-validator.mjs": "78531dae092afef1b106c2e5442f57f186f12581677fa3f2e6e2358c9b168ef4",
+    "tools\\research-runner\\dashboard\\spec\\snapshot.spec.mjs": "2d5bc26f6d7a21109716fca4f351def26ef3096c003c331600eb4fae9598ccf1"
+  },
+  "planSha256": "308d058ad3638e9429a2d1f846e728543c8ec7bb7741a34732da63e31047823e",
+  "tasks": [
+    {
+      "id": "scenario-probability-20260907-163146-DELL",
+      "subject": "DELL",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/DELL_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-FN",
+      "subject": "FN",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/FN_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-HPE",
+      "subject": "HPE",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/HPE_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-JBL",
+      "subject": "JBL",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/JBL_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MRAM",
+      "subject": "MRAM",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MRAM_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-NTAP",
+      "subject": "NTAP",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/NTAP_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-PENG",
+      "subject": "PENG",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/PENG_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-SANM",
+      "subject": "SANM",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/SANM_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-SMCI",
+      "subject": "SMCI",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/SMCI_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-STX",
+      "subject": "STX",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/STX_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-WDC",
+      "subject": "WDC",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/WDC_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-CLS",
+      "subject": "CLS",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/CLS_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-FLEX",
+      "subject": "FLEX",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/FLEX_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MU",
+      "subject": "MU",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MU_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-P",
+      "subject": "P",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/P_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-RMBS",
+      "subject": "RMBS",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/RMBS_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-SIMO",
+      "subject": "SIMO",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/SIMO_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-SNDK",
+      "subject": "SNDK",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/SNDK_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-SKHY",
+      "subject": "SKHY",
+      "category": "AI服务器_存储_EMS",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/SKHY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ADI",
+      "subject": "ADI",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ADI_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-AMD",
+      "subject": "AMD",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/AMD_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-AVGO",
+      "subject": "AVGO",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/AVGO_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-CDNS",
+      "subject": "CDNS",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/CDNS_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-INTC",
+      "subject": "INTC",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/INTC_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MCHP",
+      "subject": "MCHP",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MCHP_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MRVL",
+      "subject": "MRVL",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MRVL_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-NVDA",
+      "subject": "NVDA",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/NVDA_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ON",
+      "subject": "ON",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ON_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-QCOM",
+      "subject": "QCOM",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/QCOM_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-STM",
+      "subject": "STM",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/STM_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-TXN",
+      "subject": "TXN",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/TXN_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ALAB",
+      "subject": "ALAB",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ALAB_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ARM",
+      "subject": "ARM",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ARM_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-SNPS",
+      "subject": "SNPS",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/SNPS_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MXL",
+      "subject": "MXL",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MXL_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-CBRS",
+      "subject": "CBRS",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/CBRS_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ANET",
+      "subject": "ANET",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ANET_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-APH",
+      "subject": "APH",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/APH_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-BDC",
+      "subject": "BDC",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/BDC_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-COHR",
+      "subject": "COHR",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/COHR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-CRDO",
+      "subject": "CRDO",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/CRDO_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-CSCO",
+      "subject": "CSCO",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/CSCO_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-GLW",
+      "subject": "GLW",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/GLW_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-LITE",
+      "subject": "LITE",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/LITE_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-LWLG",
+      "subject": "LWLG",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/LWLG_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-NOK",
+      "subject": "NOK",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/NOK_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-TEL",
+      "subject": "TEL",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/TEL_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-VIAV",
+      "subject": "VIAV",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/VIAV_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-VISN",
+      "subject": "VISN",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/VISN_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-AAOI",
+      "subject": "AAOI",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/AAOI_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-BELFB",
+      "subject": "BELFB",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/BELFB_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-CIEN",
+      "subject": "CIEN",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/CIEN_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MTSI",
+      "subject": "MTSI",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MTSI_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-POET",
+      "subject": "POET",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/POET_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-SITM",
+      "subject": "SITM",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/SITM_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-SMTC",
+      "subject": "SMTC",
+      "category": "AI网络_光互联_连接器",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/SMTC_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-AJNMY",
+      "subject": "AJNMY",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/AJNMY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-APD",
+      "subject": "APD",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/APD_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ASGLY",
+      "subject": "ASGLY",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ASGLY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-AXTI",
+      "subject": "AXTI",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/AXTI_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-HOCPY",
+      "subject": "HOCPY",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/HOCPY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-LIN",
+      "subject": "LIN",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/LIN_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MMM",
+      "subject": "MMM",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MMM_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-NDSN",
+      "subject": "NDSN",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/NDSN_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-Q",
+      "subject": "Q",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/Q_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-SHECY",
+      "subject": "SHECY",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/SHECY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-SOMMY",
+      "subject": "SOMMY",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/SOMMY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-CC",
+      "subject": "CC",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/CC_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ECL",
+      "subject": "ECL",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ECL_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ENTG",
+      "subject": "ENTG",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ENTG_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MTRN",
+      "subject": "MTRN",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MTRN_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ROG",
+      "subject": "ROG",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ROG_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-SMTOY",
+      "subject": "SMTOY",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/SMTOY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-DHR",
+      "subject": "DHR",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/DHR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-DD",
+      "subject": "DD",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/DD_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-DKILY",
+      "subject": "DKILY",
+      "category": "半导体材料_化学品_基板",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/DKILY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-AEP",
+      "subject": "AEP",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/AEP_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-BE",
+      "subject": "BE",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/BE_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-BWXT",
+      "subject": "BWXT",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/BWXT_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-CMI",
+      "subject": "CMI",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/CMI_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-DTE",
+      "subject": "DTE",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/DTE_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ENS",
+      "subject": "ENS",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ENS_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ENPH",
+      "subject": "ENPH",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ENPH_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ET",
+      "subject": "ET",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ET_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ETR",
+      "subject": "ETR",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ETR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-FCEL",
+      "subject": "FCEL",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/FCEL_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-GEV",
+      "subject": "GEV",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/GEV_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-GNRC",
+      "subject": "GNRC",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/GNRC_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-OKLO",
+      "subject": "OKLO",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/OKLO_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-PSIX",
+      "subject": "PSIX",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/PSIX_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-PWR",
+      "subject": "PWR",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/PWR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-RYCEY",
+      "subject": "RYCEY",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/RYCEY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-VST",
+      "subject": "VST",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/VST_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-CEG",
+      "subject": "CEG",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/CEG_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-FLNC",
+      "subject": "FLNC",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/FLNC_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-SMR",
+      "subject": "SMR",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/SMR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-AMPX",
+      "subject": "AMPX",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/AMPX_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-HTHIY",
+      "subject": "HTHIY",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/HTHIY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-TE",
+      "subject": "TE",
+      "category": "电力_发电_能源_储能",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/TE_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-AEHR",
+      "subject": "AEHR",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/AEHR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ASX",
+      "subject": "ASX",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ASX_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-COHU",
+      "subject": "COHU",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/COHU_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-IMOS",
+      "subject": "IMOS",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/IMOS_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-KEYS",
+      "subject": "KEYS",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/KEYS_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-KLIC",
+      "subject": "KLIC",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/KLIC_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MICLF",
+      "subject": "MICLF",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MICLF_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ONTO",
+      "subject": "ONTO",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ONTO_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-PLAB",
+      "subject": "PLAB",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/PLAB_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-TDY",
+      "subject": "TDY",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/TDY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-TMO",
+      "subject": "TMO",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/TMO_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-AMKR",
+      "subject": "AMKR",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/AMKR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-CAMT",
+      "subject": "CAMT",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/CAMT_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-FORM",
+      "subject": "FORM",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/FORM_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-TER",
+      "subject": "TER",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/TER_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ATEYY",
+      "subject": "ATEYY",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ATEYY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ASMVY",
+      "subject": "ASMVY",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ASMVY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-BESIY",
+      "subject": "BESIY",
+      "category": "封测_检测_计量_光罩",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/BESIY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ALLE",
+      "subject": "ALLE",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ALLE_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-CARR",
+      "subject": "CARR",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/CARR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-CAT",
+      "subject": "CAT",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/CAT_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-DCI",
+      "subject": "DCI",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/DCI_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-FIX",
+      "subject": "FIX",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/FIX_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-FTV",
+      "subject": "FTV",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/FTV_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MSI",
+      "subject": "MSI",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MSI_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-PH",
+      "subject": "PH",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/PH_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-PNR",
+      "subject": "PNR",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/PNR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-RKLB",
+      "subject": "RKLB",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/RKLB_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-TSLA",
+      "subject": "TSLA",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/TSLA_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-TT",
+      "subject": "TT",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/TT_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-VRT",
+      "subject": "VRT",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/VRT_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-DOV",
+      "subject": "DOV",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/DOV_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-JCI",
+      "subject": "JCI",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/JCI_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MOD",
+      "subject": "MOD",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MOD_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-AAON",
+      "subject": "AAON",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/AAON_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-IESC",
+      "subject": "IESC",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/IESC_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-EME",
+      "subject": "EME",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/EME_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MYRG",
+      "subject": "MYRG",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MYRG_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-SPACEX",
+      "subject": "SPACEX",
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/SPACEX_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ACLS",
+      "subject": "ACLS",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ACLS_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ACMR",
+      "subject": "ACMR",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ACMR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-AMAT",
+      "subject": "AMAT",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/AMAT_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ASMIY",
+      "subject": "ASMIY",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ASMIY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ASML",
+      "subject": "ASML",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ASML_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-DSCSY",
+      "subject": "DSCSY",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/DSCSY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-GFS",
+      "subject": "GFS",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/GFS_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-KLAC",
+      "subject": "KLAC",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/KLAC_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-LRCX",
+      "subject": "LRCX",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/LRCX_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MKSI",
+      "subject": "MKSI",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MKSI_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-TSEM",
+      "subject": "TSEM",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/TSEM_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-TSM",
+      "subject": "TSM",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/TSM_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-UCTT",
+      "subject": "UCTT",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/UCTT_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-UMC",
+      "subject": "UMC",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/UMC_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-VECO",
+      "subject": "VECO",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/VECO_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ICHR",
+      "subject": "ICHR",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ICHR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-NVMI",
+      "subject": "NVMI",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/NVMI_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-TOELY",
+      "subject": "TOELY",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/TOELY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-AEIS",
+      "subject": "AEIS",
+      "category": "晶圆制造_前道设备",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/AEIS_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ABBNY",
+      "subject": "ABBNY",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ABBNY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-AOSL",
+      "subject": "AOSL",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/AOSL_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ATKR",
+      "subject": "ATKR",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ATKR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-DIOD",
+      "subject": "DIOD",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/DIOD_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-HUBB",
+      "subject": "HUBB",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/HUBB_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-LFUS",
+      "subject": "LFUS",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/LFUS_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MIELY",
+      "subject": "MIELY",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MIELY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MPWR",
+      "subject": "MPWR",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MPWR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-POWI",
+      "subject": "POWI",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/POWI_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-POWL",
+      "subject": "POWL",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/POWL_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ST",
+      "subject": "ST",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ST_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-VICR",
+      "subject": "VICR",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/VICR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-VSH",
+      "subject": "VSH",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/VSH_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-WOLF",
+      "subject": "WOLF",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/WOLF_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ETN",
+      "subject": "ETN",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ETN_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-IFNNY",
+      "subject": "IFNNY",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/IFNNY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-NVT",
+      "subject": "NVT",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/NVT_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-NVTS",
+      "subject": "NVTS",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/NVTS_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MRAAY",
+      "subject": "MRAAY",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MRAAY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-TTDKY",
+      "subject": "TTDKY",
+      "category": "配电_电源_功率器件",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/TTDKY_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ADBE",
+      "subject": "ADBE",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ADBE_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-AMZN",
+      "subject": "AMZN",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/AMZN_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-APLD",
+      "subject": "APLD",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/APLD_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-CRWD",
+      "subject": "CRWD",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/CRWD_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-CRWV",
+      "subject": "CRWV",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/CRWV_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-DLR",
+      "subject": "DLR",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/DLR_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-GOOGL",
+      "subject": "GOOGL",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/GOOGL_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-IBM",
+      "subject": "IBM",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/IBM_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-IREN",
+      "subject": "IREN",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/IREN_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-META",
+      "subject": "META",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/META_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-MSFT",
+      "subject": "MSFT",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/MSFT_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-NTNX",
+      "subject": "NTNX",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/NTNX_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-ORCL",
+      "subject": "ORCL",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/ORCL_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-BABA",
+      "subject": "BABA",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/BABA_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-EQIX",
+      "subject": "EQIX",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/EQIX_经营情景市场状态投资决策_2026-09-07.md"
+    },
+    {
+      "id": "scenario-probability-20260907-163146-NBIS",
+      "subject": "NBIS",
+      "category": "云算力_IDC_AI软件平台",
+      "expectedOutputFile": "分析报告/公司情景投资决策/结果/NBIS_经营情景市场状态投资决策_2026-09-07.md"
+    }
+  ],
+  "categories": {
+    "AI服务器_存储_EMS": 19,
+    "AI计算芯片_EDA_IP_custom_ASIC": 17,
+    "AI网络_光互联_连接器": 20,
+    "半导体材料_化学品_基板": 20,
+    "电力_发电_能源_储能": 23,
+    "封测_检测_计量_光罩": 18,
+    "机电_冷却_工程_水处理_边缘工业AI": 21,
+    "晶圆制造_前道设备": 19,
+    "配电_电源_功率器件": 20,
+    "云算力_IDC_AI软件平台": 16
+  },
+  "preflight": {
+    "companies": 193,
+    "uniqueOutputs": 193,
+    "allPromptPrefixesExact": true,
+    "reasoning": "high"
+  },
+  "enqueuedAt": "2026-09-07T23:34:18.300Z",
+  "runnerPid": 49376,
+  "launchedAt": "2026-09-07T16:34:30-07:00",
+  "actualPromptChecks": [
+    {
+      "subject": "DELL",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "FN",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "HPE",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "JBL",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "MRAM",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "NTAP",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "PENG",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "SANM",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "SMCI",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "STX",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "WDC",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "CLS",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "FLEX",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "MU",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "P",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "RMBS",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "SIMO",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "SNDK",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "SKHY",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "ADI",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "AMD",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "AVGO",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "CDNS",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "INTC",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "MCHP",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "MRVL",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "NVDA",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "ON",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "QCOM",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "STM",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "TXN",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "ALAB",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "ARM",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "SNPS",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "MXL",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "CBRS",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "ANET",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "APH",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "BDC",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "COHR",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "CRDO",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "CSCO",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "GLW",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "LITE",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "LWLG",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "NOK",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "TEL",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "VIAV",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "VISN",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    },
+    {
+      "subject": "AAOI",
+      "exactUpdatedPlan": true,
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    }
+  ],
+  "lastVerifiedAt": "2026-09-07T16:36:02.364763-07:00",
+  "lastStatus": {
+    "pending": 143,
+    "running": 50
+  },
+  "validation": {
+    "errors": 0,
+    "warnings": 0,
+    "uniqueCompanies": 193
+  }
+}

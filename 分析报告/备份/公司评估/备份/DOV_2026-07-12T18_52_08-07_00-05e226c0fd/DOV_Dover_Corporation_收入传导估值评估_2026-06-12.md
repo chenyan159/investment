@@ -1,0 +1,192 @@
+# 公司收入传导与价值传导评估：Dover Corporation
+
+报告日期：2026-06-12  
+公司代号：DOV  
+公司名称：Dover Corporation  
+正式输出目录：`分析报告/公司评估/`  
+研究口径：只评估 Dover 从行业和产品需求到 NTM 收入、利润和经营质量的传导，不做全公司排序，不给投资评级，不判断股价区间，不做估值倍数判断。  
+资料边界：使用 `公司调研/`、`行业调研/` 及 Dover/SEC/产品官方公开资料；未读取、引用或继承 `特征量化/`、Signals、回归、量化评分或模型比较。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即 2026-06-12 向后未来 12 个月，近似覆盖 FY2026 Q2-Q4 与 FY2027 Q1；FY2026 全年指引、FY2027 早期订单和长期 AI rack/电力期权只作补充。
+- 当前收入基准、指引和 run-rate：Dover FY2025 收入 `$8.093B`；Q1 2026 收入 `$2.054B`，同比 `+10.1%`，organic `+5.3%`；Q1 2026 LTM 收入约 `$8.281B`；公司 FY2026 收入指引为 `+5%-7%`，隐含 FY2026 收入约 `$8.50-8.66B`；本文把当前 NTM 预期锚定在 `$8.65-8.90B`。
+- 重要产品/业务线：CPC / Colder 液冷快接与热连接器；SWEP brazed plate heat exchanger / BPHE；SIKORA 线缆/光纤/塑料在线检测；Dover Precision Components 的燃气压缩与 power generation 精密部件；CST 非 AI 制冷与冷柜/制罐；Clean Energy & Fueling；Imaging & Identification；Engineered Products；PPS 非 AI 的 biopharma、泵、流量计、polymer processing 等业务。
+- NTM 公司收入四情景：悲观 `$8.30-8.55B`；基准 `$8.65-8.90B`；乐观 `$9.05-9.35B`；极度乐观 `$9.55-10.10B`。相对当前预期，基准是 FY2026 指引和 Q1 订单正常兑现，乐观需要 CPC/SWEP 与 CEF/CST 同步超预期，极度乐观需要 AI 液冷、数据中心热交换、燃气电力链和传统分部同时突破。
+- 利润或 EBITDA 四情景：悲观调整后 EBITDA 约 `$1.85-2.00B`、调整后净利润约 `$1.25-1.38B`；基准调整后 EBITDA 约 `$2.05-2.18B`、调整后净利润约 `$1.42-1.55B`；乐观调整后 EBITDA 约 `$2.25-2.45B`、调整后净利润约 `$1.60-1.78B`；极度乐观调整后 EBITDA 约 `$2.50-2.85B`、调整后净利润约 `$1.85-2.15B`。
+- 最大传导瓶颈：CST 的 Q1 2026 book-to-bill `1.57` 和 longer lead-time heat exchanger orders 能否按期转为 SWEP/BPHE 收入；其次是 CPC 高流量 UQD/热连接器能否从 design-in / BOM 指定转成可确认出货。
+- 最大利润率变量：PPS 的高利润 CPC/DPC/SIKORA mix 与 CST 的 BPHE/CO2 制冷 mix 能否抵消 polymer processing 下滑、CST 扩产成本、固定价项目和大客户议价。
+- 最大现金流变量：高订单对应的 inventory、receivables 和 capex 前置。Q1 2026 调整后 working capital 增加 `$71.4M`，inventory 增加 `$98.1M`，这是订单转收入的正常前置，也可能在执行不顺时变成现金流压力。
+- 可信度：公司层基准为中高；CPC/SWEP 方向判断为中高；CPC/SWEP 的具体产品收入金额为中，因为 Dover 未披露产品级收入；极度乐观为低到中，必须用后续 bookings、book-to-bill、产能、客户认证和 revenue conversion 校验。
+
+核心结论：Dover 不是纯 AI 数据中心公司。NTM 基准收入主要仍来自五个多元工业分部的正常兑现，AI 相关的 CPC 快接与 SWEP 热交换器是高毛利、小基数、高弹性的增量层。DOV 的经营价值传导最可能表现为：公司收入增速从指引中枢正常兑现，PPS/CST mix 稍微改善，现金流因订单和扩产前置短期占用；只有当 CST 订单持续高于收入、PPS organic 转正且管理层继续点名 liquid cooling / data center heat exchangers 时，乐观公司情景才成立。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| CPC / Colder thermal connectors、Everis UQD/UQDB/UQD06/UQD08、PLQ | FY2025 估算 `$120-180M`；Q1 2026 估算 `$35-55M` | FY2025 约 `1.5%-2.2%` | AI 液冷 rack 内 dry-break / blind-mate / high-flow 快接，利润质量高 | C：公司明确披露需求和产品，但未披露产品收入；PPS 分部收入为 A | 进入基准，但按保守折扣，只承认 `$220-300M` NTM 基准贡献 | 500kW+ rack、1MW rack、高流量 UQD08/UQDB、非 NVIDIA ASIC rack 标准化 |
+| SWEP brazed plate heat exchanger / BPHE | FY2025 data-center BPHE 估算 `$80-140M`；Q1 2026 估算 `$30-50M` | FY2025 约 `1.0%-1.7%` | CDU、facility loop、液-液换热和热回收核心件；CST 最强订单验证点 | B/C：Q1 CST bookings 和 10-Q 直接披露 data center heat exchanger 需求，产品收入未拆 | 进入基准，NTM `$180-260M`；订单转收入节奏是关键 | 高温水、热回收、AI campus 标准化 cooling block |
+| SIKORA measuring / inspection / control | 2024 收入约 `€100M`；Dover 2026 run-rate 估算 `$110-140M` | NTM 约 `1.3%-1.6%` | 高压线缆、光纤、软管、塑料在线检测；间接受益电力和网络扩建 | B/C：并购和管理层披露较强，AI 数据中心收入占比未披露 | 整体 SIKORA 收入进入基准；AI 归因只做低权重 | HV cable / optical fiber 新线集中扩产导致检测设备超预期 |
+| Dover Precision Components / Waukesha Bearings / Cook Compression / digital controls | 相关收入无法可靠量化；本文用 `$300-450M` 年化相关口径 | 约 `4%-5%`，不全是 AI | 燃气压缩、power generation、midstream、天然气/电力基础设施 | C：公司点名 robust demand，但未披露产品收入 | 进入基准但只按既有 industrial / energy run-rate 处理 | AI 自备电、燃气管线和 turbine/engine support 大幅提前 |
+| CST 非 AI：CO2 refrigeration、Hillphoenix、Anthony、door cases、can-making | CST FY2025 `$1.560B`；扣 SWEP 后 NTM 约 `$1.35-1.60B` | NTM 约 `15%-18%` | CST 大盘收入和 margin 支撑，CO2 制冷双位数增长 | A/B：CST 分部收入 A；CO2/door case 方向 B | 进入基准，是 CST 订单和利润率的重要底盘 | 低 GWP 法规、商超 CO2 转换和门柜更新超预期 |
+| Clean Energy & Fueling / OPW / retail fueling / clean energy components / cryogenic | 2025 `$2.131B`；Q1 2026 `$554.8M` | Q1 2026 `27.0%` | 公司最大分部，Q1 organic `+11.1%`，对总收入贡献大 | A | 进入基准，NTM 约 `$2.25-2.40B` | LNG、industrial gas、hydrogen/cryogenic、fueling software 组合扩张 |
+| Imaging & Identification / Markem-Imaje | 2025 `$1.173B`；Q1 2026 `$285.4M` | Q1 2026 `13.9%` | 高利润、耗材和服务 recurring，稳定现金流 | A | 进入基准，NTM 约 `$1.16-1.25B` | 软件、追溯、耗材 attach 提升；非 AI |
+| Engineered Products | 2025 `$1.086B`；Q1 2026 `$266.6M` | Q1 2026 `13.0%` | 航空防务和 vehicle aftermarket，决定低增长底盘是否拖累 | A | 进入基准，NTM 约 `$1.10-1.18B` | 航空防务组件强于车后市场时可小幅上修 |
+| PPS 非 AI：single-use biopharma、specialty pumps、flow meters、polymer processing 等 | PPS 2025 `$2.149B`；Q1 2026 `$537.8M`，扣 CPC/SIKORA/DPC 后约 `$1.2-1.5B` | NTM 约 `14%-17%` | PPS 利润核心的一部分；biopharma 强，polymer processing 是抵消项 | A/C：分部 A，子项 C | 进入基准，但 polymer processing 继续低权重 | 生物制药 single-use 持续加速，polymer 投资消化提前结束 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 Dover 份额、收入确认和利润率。相对预期的参照是 Dover 当前指引、Q1 2026 订单节奏、行业调研中的 2026-2027 冷却/液冷/自备电订单池和传统工业需求，而不是股票市场定价。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| CPC / UQD 快接 | 行业资料估计 2026 年中 manifold/UQD/快接/传感/泄漏检测年化池约 `$0.7-1.5B`；新增 80kW+ AI rack 液冷 attach 当前约 `55%-70%` | NTM 需求池 `$1.0-1.5B`，GB300/Rubin 验收延迟，UQD 标准化压价 | NTM `$1.5-2.5B`，GB300/MI350/TPU/Ironwood 单相 D2C 按计划扩散 | NTM `$2.5-4.0B`，blind-mate/UQD 成为多 ODM reference design 指定件 | NTM `$4.0-6.0B`，100kW+ 新 AI rack 近全量液冷，高端 QD 短缺 | 基准较当前池约 `+0.8-1.0B`；乐观再上修约 `+1.0-1.5B` | 基准符合行业预期；乐观高于当前预期 | 行业资料称 UQD/快接是高可靠小组件层；反证是 OCP 标准化过快、客户 JDM 化或液冷 field failure |
+| SWEP BPHE / CDU core / facility heat exchanger | 行业资料中 plate heat exchanger / CDU core 未来一年基准收入池约 `$0.7-2.0B`；Dover Q1 2026 CST bookings `1.57x` | NTM `$0.7-1.0B`，订单停留在长交期预订，设施水路/上电推迟 | NTM `$1.0-2.0B`，CDU 与 facility loop 正常放量，SWEP 扩产逐季贡献 | NTM `$2.0-3.5B`，AI campus 大量复制 liquid-to-liquid / warm-water loop | NTM `$3.5-5.0B`，45C warm-water、热回收、低水耗设计同时提前 | 基准较 2026 当前池约 `+0.5-1.0B` | 基准略高但有订单支持 | 10-Q 明确 data center heat exchanger 需求；反证是 CST book-to-bill 回落、扩产导致交付或毛利不达标 |
+| SIKORA inspection | 外部需求来自 HV cable、optical fiber、hose/plastics 生产线投资；无法可靠量化单一需求池 | 线缆/光纤扩产推迟，客户只消化既有设备，需求 `0%-5%` | 高压线缆、光纤和工业过程检测 low-to-mid teens 增长 | 数据中心电力和光纤扩产同步，检测设备需求 `+25%-50%` | 多区域电力/光纤扩产抢设备，需求 `+60%+` | 无法可靠量化；用增长率而非美元池 | 基准符合当前预期 | Dover 已收购 SIKORA，并在 annual report 提到 high-voltage cable applications；反证是电力项目公告不能转化为线缆厂设备订单 |
+| DPC gas compression / power-generation components | 行业资料显示数据中心自备发电与微电网未来 12 个月订单池基准 `$18-35B`，但 Dover 只捕获精密部件小份额 | 天然气自备电许可、燃气管线或排放受阻，precision components 需求仅 `+0%-5%` | midstream gas compression / power generation 需求 `+8%-15%` | behind-the-meter gas power 快速复制，需求 `+20%-40%` | engine/turbine/midstream 同时抢产能，需求 `+50%+` | 公司可参与需求无法可靠量化；相对现有工业能源需求上修 | 基准符合当前预期 | Dover 10-Q 点名 precision components for midstream natural gas compression and power generation；反证是燃气许可、设备 slot 或数据中心上电延期 |
+| CST 非 AI：CO2 refrigeration、door cases、can-making | Dover annual report 称 CO2 systems double-digit growth，Q1 2026 CST organic `+15.2%` | 零售资本开支回落，需求 `0%-5%` | CO2 制冷双位数、door case recovery 正常，整体 `+8%-15%` | 低 GWP 法规和零售更新提速，`+15%-25%` | 商超连锁集中改造，`+25%+` | 基准相对当前 run-rate 增加约 `$0.1-0.2B` | 基准符合当前预期 | 需求证据强，但非 AI；反证是零售 capex、利率和大客户项目推迟 |
+| Clean Energy & Fueling | Q1 2026 revenue `+13.0%`，organic `+11.1%`，book-to-bill `1.11`；retail fueling 和 clean energy components 强 | 零售燃油、LPG/工业气体 capex 回落，需求 `0%-3%` | 订单正常兑现，需求 `+4%-8%` | clean energy / industrial gas / retail fueling 同步强，`+8%-12%` | cryogenic、clean energy components 和 fueling software 同时突破，`+12%+` | 基准 NTM 较 2025 约 `+0.1-0.2B` | 基准略低于 Q1 run-rate，保守 | Q1 订单强；反证是客户 capex 放缓或收购贡献消退 |
+| Imaging & Identification | Q1 2026 organic `-3.3%`，但 bookings `+8.5%`，book-to-bill `1.10` | 设备 shipment timing 延续，需求 `-3%-0%` | 核心 marking/coding、耗材和服务稳定，需求 `+0%-3%` | 设备补货和 pricing 改善，需求 `+3%-6%` | 追溯、软件和耗材 attach 同时提升，`+6%+` | 基准约持平到小增 | 基准符合当前预期 | 高利润 recurring 底盘；反证是设备订单不能转为出货 |
+| Engineered Products | Q1 2026 revenue `+4.7%`，book-to-bill `1.10`；aerospace/defense 强，vehicle aftermarket 改善 | vehicle aftermarket 继续弱，需求 `-2%-1%` | aerospace/defense 抵消周期波动，需求 `+1%-4%` | defense/aftermarket 同步改善，需求 `+4%-7%` | 大型防务或工业组件订单放大，`+8%+` | 基准约 `$0.02-0.05B` 增量 | 基准符合当前预期 | 重要性在稳定底盘，不是 AI；反证是 vehicle service 资本品周期下行 |
+| PPS 非 AI：biopharma / pumps / polymer processing | Q1 2026 PPS organic `-0.8%`，因 polymer decline 抵消 biopharma/power；book-to-bill `1.11` | polymer processing 拖累，biopharma 不足抵消，需求 `-3%-0%` | biopharma/pumps 正常，polymer decline 收敛，需求 `0%-4%` | biopharma single-use 和 pumps 加速，需求 `+4%-8%` | polymer investment 消化提前结束，biopharma/pumps 同步高增，`+8%+` | 基准约持平到 `$0.05B` 增量 | 基准符合当前预期 | 反证只在 PPS 非 AI 层处理，不重复惩罚 CPC/DPC |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求可进入 Dover NTM 收入表，以及当前可收入化基数。能参与某个需求池不等于可确认收入；产品收入没有披露时，必须标明“估算”和证据等级。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| CPC / UQD 快接 | 产品收入未披露；公司 annual report 明确 thermal connectors for liquid cooling of data centers；Q1 PPS bookings `1.11`；本文估 FY2025 `$120-180M` | 直接 | 高毛利、高可靠小组件；PPS margin `31.5%` 支撑利润质量 | `$160-220M` | `$220-300M` | `$300-420M` | `$450-650M` | 基准为当前预期正常兑现，乐观高于当前预期 | C，方向证据 B | 是，但折扣纳入 | 公司点名需求，CPC 产品页和 UQD06 产品发布支持商业化；无客户名单和产品收入披露 | NTM 基准可纳入；极度乐观只作上限 |
+| SWEP BPHE | 产品收入未披露；Q1 CST revenue `$411.1M`，bookings `$647.0M`，book-to-bill `1.57`；10-Q 指 data center cooling heat exchangers | 直接 | CST margin 较低，但 BPHE mix 好于普通门柜；扩产阶段可能有成本 | `$120-180M` | `$180-260M` | `$270-380M` | `$400-550M` | 基准符合 Q1 订单强度；乐观需要订单快速转收入 | B/C | 是 | 10-Q、Q1 deck 和 SWEP `$30M` 扩产均指向 NTM 可收入化 | NTM 基准纳入；收入确认看交期和客户验收 |
+| SIKORA inspection | 收购资产，2024 revenue 约 `€100M`；Dover 2026 run-rate 估 `$110-140M` | 间接为主 | 工业检测和软件/控制属性，利润率高于普通设备 | `$100-125M` | `$130-160M` | `$170-220M` | `$230-300M` | 基准略高于 run-rate，主要来自并购完整期和交叉销售 | B/C | 是，按总业务收入；AI 归因低权重 | 已并表；客户与产品明确，但 AI 数据中心收入不可拆 | 整体收入纳入基准；AI 数据中心传导只作间接 |
+| DPC gas/power precision components | 产品收入未披露；PPS 分部 Q1 revenue `$537.8M`，公司点名 midstream gas compression and power generation | 间接 | 高工程壁垒和售后/服务属性，PPS 高 margin 支撑 | `$280-340M` | `$320-450M` | `$450-600M` | `$650-800M` | 基准符合当前需求；乐观高于当前预期 | C | 是，低权重 | 收入在 PPS 中可见，但产品拆分和 AI 归因不可见 | 基准只纳入可见 industrial/energy run-rate；AI 自备电弹性放乐观 |
+| CST 非 AI：CO2 / door cases / can-making | CST FY2025 `$1.560B`；Q1 2026 `$411.1M`；公司称 CO2 systems 和 refrigerated door case recovery 驱动 growth | 直接但非 AI | 中等利润；CO2 mix 好于普通柜门；扩产和项目成本影响毛利 | `$1.20-1.35B` | `$1.35-1.60B` | `$1.60-1.75B` | `$1.75-1.90B` | 基准符合当前预期 | A/B | 是 | 分部收入 A，产品方向 B | 作为 CST 底盘纳入，不能当作 AI 收入 |
+| Clean Energy & Fueling | Q1 2026 `$554.8M`，2025 `$2.131B`；book-to-bill `1.11` | 直接 | Segment margin Q1 `17.9%`，2025 `19.6%`；组合含硬件、软件、服务 | `$2.10-2.25B` | `$2.25-2.40B` | `$2.40-2.55B` | `$2.55-2.75B` | 基准符合指引和 Q1 run-rate | A | 是 | 已披露 segment revenue/bookings/margin | NTM 公司收入最大底盘之一 |
+| Imaging & Identification | Q1 2026 `$285.4M`，2025 `$1.173B`；book-to-bill `1.10` | 直接 | 高利润、recurring consumables/service；Q1 margin `27.1%` | `$1.10-1.16B` | `$1.16-1.25B` | `$1.25-1.32B` | `$1.32-1.40B` | 基准符合当前预期 | A | 是 | 已披露 segment revenue/bookings/margin | 稳定利润底盘，非 AI |
+| Engineered Products | Q1 2026 `$266.6M`，2025 `$1.086B`；book-to-bill `1.10` | 直接 | Q1 margin `16.9%`，低于 PPS/I&I | `$1.02-1.10B` | `$1.10-1.18B` | `$1.18-1.26B` | `$1.26-1.35B` | 基准符合当前预期 | A | 是 | 已披露 segment revenue/bookings/margin | 稳定底盘，若 vehicle aftermarket 弱则拖累 |
+| PPS 非 AI | PPS 分部 Q1 `$537.8M`，2025 `$2.149B`；扣 CPC/SIKORA/DPC 后估 `$1.2-1.5B` | 直接 | 高利润，但 polymer processing 是抵消项 | `$1.20-1.35B` | `$1.30-1.50B` | `$1.50-1.65B` | `$1.65-1.85B` | 基准符合当前预期 | A/C | 是 | PPS 分部收入 A，子项估算 C | 基准纳入；polymer 下滑只在此层处理 |
+| 仅主题相关机会 | 两相浸没、1MW rack、AI campus 余热、长期 clean energy 期权 | 间接或远期 | 不确定 | `0` | `0` | 低可信小额 | 无法可靠量化 | 不进入当前预期 | D/E | 否 | 无 Dover 客户、合同和 NTM 时间表 | 仅作附录跟踪或极度乐观条件 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，判断 Dover NTM 内可确认收入与可兑现利润。利润贡献使用“接近 segment earnings / 调整后经营利润贡献”的口径，不等同 GAAP 净利润；未披露产品利润率时使用分部 margin、产品属性和行业毛利区间估算。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| CPC / UQD 快接 | 悲观产品 | `$160-220M` | `$50-75M` | 高但可能被 price / OCP 压缩 | 低于当前预期 | 需求仍在，但 GB300/Rubin 验收延后或客户多供压价 | 保留为悲观 | AI rack 延迟、OCP 标准化快速商品化、客户 JDM 化 |
+| CPC / UQD 快接 | 基准产品 | `$220-300M` | `$80-115M` | 高于公司平均 | 符合当前预期 | thermal connectors 被 annual report 点名；CPC UQD06 面向 hyperscale AI/HPC；PPS margin `31.5%` | 保留 | 无产品收入披露，客户 AVL 不透明 |
+| CPC / UQD 快接 | 乐观产品 | `$300-420M` | `$115-175M` | mix 改善 | 高于当前预期 | UQD06/UQD08 高流量件、blind-mate、低压降和无滴漏成为高密 rack 指定件 | 保留但需后续订单验证 | 单一小产品不能单独带动公司总收入非线性 |
+| CPC / UQD 快接 | 极度乐观产品 | `$450-650M` | `$180-285M` | 显著扩张 | 明显高于当前预期 | 100kW+ rack 近全量液冷，多个云厂/JDM 指定 CPC | 下移为乐观上限 | 缺少客户名单、产能数字和订单金额披露 |
+| SWEP BPHE | 悲观产品 | `$120-180M` | `$18-35M` | 受扩产和项目成本压制 | 低于当前预期 | 订单推迟、长交期无法转收入 | 保留 | CST 高 bookings 可能是一次性拉货或项目排产 |
+| SWEP BPHE | 基准产品 | `$180-260M` | `$35-60M` | 小幅改善 | 符合当前预期 | CST bookings `+63.5%`、B2B `1.57`；10-Q 直接点名 data center heat exchangers；SWEP `$30M` 扩产 | 保留 | revenue conversion、扩产良率、客户现场验收 |
+| SWEP BPHE | 乐观产品 | `$270-380M` | `$60-95M` | mix 明显改善 | 高于当前预期 | 大型 BPHE 产能释放，CDU/facility loop 客户重复订单 | 保留 | CST 分部还含普通制冷/门柜，AI BPHE 不一定完全穿透 |
+| SWEP BPHE | 极度乐观产品 | `$400-550M` | `$95-150M` | 可显著扩张 | 明显高于当前预期 | warm-water、液-液 CDU、热回收和低水耗 campus 同时提前 | 下移为乐观上限 | 2026-2027 扩产可能先压毛利和现金流 |
+| SIKORA inspection | 悲观产品 | `$100-125M` | `$18-28M` | 稳定 | 低于当前预期 | 线缆/光纤扩产推迟 | 保留 | 收购整合、欧洲工业需求、线缆厂 capex |
+| SIKORA inspection | 基准产品 | `$130-160M` | `$30-45M` | 高于公司平均 | 符合当前预期 | 2024 revenue 约 `€100M`，已并入 PPS；high-voltage cable inspection 被点名 | 保留 | AI 数据中心归因无法拆 |
+| SIKORA inspection | 乐观产品 | `$170-220M` | `$45-70M` | 改善 | 高于当前预期 | HV cable、光纤、软管生产线扩产同步 | 保留但低权重 | 订单可能是一般 electrification 而非 AI |
+| SIKORA inspection | 极度乐观产品 | `$230-300M` | `$70-100M` | 改善 | 明显高于当前预期 | 数据中心电力/光纤产线投资集中落地 | 下移为乐观上限 | 缺少 SIKORA 新订单披露 |
+| DPC gas / power precision components | 悲观产品 | `$280-340M` | `$80-110M` | 稳定 | 低于当前预期 | 天然气自备电许可和管线卡住 | 保留 | 设备订单不等于 Dover 精密部件订单 |
+| DPC gas / power precision components | 基准产品 | `$320-450M` | `$105-155M` | 稳定到小升 | 符合当前预期 | 10-Q 点名 precision components for midstream gas compression and power generation | 保留 | 产品拆分不可见 |
+| DPC gas / power precision components | 乐观产品 | `$450-600M` | `$150-225M` | 改善 | 高于当前预期 | BTM gas power、midstream compression、power generation 需求同步 | 保留但需订单验证 | 燃气、排放、社区、EPC 约束 |
+| DPC gas / power precision components | 极度乐观产品 | `$650-800M` | `$230-330M` | 改善 | 明显高于当前预期 | AI campus 自备电和燃气链同时抢产能 | 下移为远期期权/乐观上限 | 无法从 Dover 披露中确认 NTM 上限 |
+| CST 非 AI | 悲观产品 | `$1.20-1.35B` | `$170-210M` | 低于当前结构 | 低于当前预期 | 零售 capex 回落，普通门柜恢复不及预期 | 保留 | 零售资本开支、低 GWP 项目延迟 |
+| CST 非 AI | 基准产品 | `$1.35-1.60B` | `$210-270M` | 小幅改善 | 符合当前预期 | CO2 systems、door case recovery、CST Q1 organic `+15.2%` | 保留 | CST 扩产成本、材料、固定价合同 |
+| CST 非 AI | 乐观产品 | `$1.60-1.75B` | `$270-325M` | 改善 | 高于当前预期 | 商超 CO2 改造和 service 工程增强 | 保留 | 非 AI 收入不应当被液冷叙事重复上调 |
+| CST 非 AI | 极度乐观产品 | `$1.75-1.90B` | `$320-380M` | 改善 | 高于当前预期 | 低 GWP 和连锁客户集中改造 | 下移为乐观上限 | 仍是传统零售周期业务 |
+| Clean Energy & Fueling | 悲观产品 | `$2.10-2.25B` | `$360-420M` | 稳定到下行 | 低于当前预期 | retail fueling / LPG capex 放缓 | 保留 | Q1 强度不能简单年化 |
+| Clean Energy & Fueling | 基准产品 | `$2.25-2.40B` | `$420-475M` | 稳定 | 符合当前预期 | Q1 revenue `+13%`，book-to-bill `1.11` | 保留 | clean energy components 归因分散 |
+| Clean Energy & Fueling | 乐观产品 | `$2.40-2.55B` | `$475-535M` | 小升 | 高于当前预期 | clean energy / industrial gas / retail fueling 同步强 | 保留 | 大客户 capex 和零售周期 |
+| Clean Energy & Fueling | 极度乐观产品 | `$2.55-2.75B` | `$535-620M` | 改善 | 明显高于当前预期 | cryogenic、software、clean energy components 同时突破 | 下移为乐观上限 | 缺少单项订单证据 |
+| Imaging & Identification | 悲观产品 | `$1.10-1.16B` | `$280-315M` | 稳定但低于历史 | 低于当前预期 | equipment shipment timing 延续 | 保留 | 有订单但不转出货 |
+| Imaging & Identification | 基准产品 | `$1.16-1.25B` | `$315-345M` | 稳定 | 符合当前预期 | Q1 book-to-bill `1.10`，high recurring revenue | 保留 | organic decline 需要转正 |
+| Imaging & Identification | 乐观产品 | `$1.25-1.32B` | `$345-375M` | 小升 | 高于当前预期 | core marking/coding orders 和耗材 attach | 保留 | 非 AI，增长弹性有限 |
+| Imaging & Identification | 极度乐观产品 | `$1.32-1.40B` | `$375-420M` | 小升 | 高于当前预期 | 设备补货、软件、服务同步 | 下移为乐观上限 | 缺少非线性需求来源 |
+| Engineered Products | 悲观产品 | `$1.02-1.10B` | `$155-185M` | 下行 | 低于当前预期 | vehicle aftermarket 继续弱 | 保留 | 周期资本品 |
+| Engineered Products | 基准产品 | `$1.10-1.18B` | `$185-220M` | 稳定 | 符合当前预期 | Q1 book-to-bill `1.10`，aerospace/defense 强 | 保留 | 分部 margin 低于 PPS/I&I |
+| Engineered Products | 乐观产品 | `$1.18-1.26B` | `$220-255M` | 小升 | 高于当前预期 | defense / aftermarket 同时改善 | 保留 | 非 AI、弹性有限 |
+| Engineered Products | 极度乐观产品 | `$1.26-1.35B` | `$255-300M` | 小升 | 高于当前预期 | 大订单或航空防务强周期 | 下移为乐观上限 | 缺少非线性经营证据 |
+| PPS 非 AI | 悲观产品 | `$1.20-1.35B` | `$330-420M` | 稳定到下行 | 低于当前预期 | polymer processing 下滑持续 | 保留 | polymer decline 不重复惩罚 CPC/DPC |
+| PPS 非 AI | 基准产品 | `$1.30-1.50B` | `$420-510M` | 高 | 符合当前预期 | biopharma 和 pumps 抵消 polymer | 保留 | 子项拆分不可见 |
+| PPS 非 AI | 乐观产品 | `$1.50-1.65B` | `$510-600M` | 高 | 高于当前预期 | single-use biopharma 强，polymer 消化结束 | 保留 | 传统工业周期 |
+| PPS 非 AI | 极度乐观产品 | `$1.65-1.85B` | `$600-720M` | 高 | 明显高于当前预期 | biopharma/pumps/polymer 同时强 | 下移为乐观上限 | 缺少订单分项证据 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为 Dover NTM 总收入、毛利率、经营利润率、调整后 EBITDA、调整后净利润和自由现金流方向。经营利润率使用近似 GAAP operating / adjusted operating 口径，另以 segment earnings margin 校验；不讨论市场定价。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$8.30-8.55B` | 相对 Q1 2026 LTM `$8.281B` 为 `+0%-3%`；低于 FY2026 指引隐含路径 | 低于当前指引和 NTM 预期；CST 订单不能充分转收入，PPS organic 仍弱 | `38.0%-38.7%` | `15.0%-16.0%` | 调整后 EBITDA `$1.85-2.00B`；调整后净利润 `$1.25-1.38B` | FCF `$0.95-1.10B`，inventory/receivables 占用较高 | 中 | CST longer lead-time orders 延后；polymer/retail capex 拖累；AI 液冷小件高增被传统业务抵消 |
+| 基准公司 | `$8.65-8.90B` | 相对 Q1 2026 LTM `+4%-7%`；接近 FY2026 指引和 Q1 bookings 正常兑现 | 符合当前指引、run-rate、订单节奏；CPC/SWEP 高增但仍小基数 | `38.8%-39.5%` | `16.2%-17.2%` | 调整后 EBITDA `$2.05-2.18B`；调整后净利润 `$1.42-1.55B` | FCF `$1.05-1.25B`，全年 cash conversion 健康但低于 FY2025 高点 | 中高 | CST revenue conversion、PPS organic 转正、扩产成本和 working capital 管理 |
+| 乐观公司 | `$9.05-9.35B` | 相对 Q1 2026 LTM `+9%-13%`；高于 FY2026 指引路径 | 高于当前预期；CPC/SWEP、CEF、CST 非 AI、PPS mix 同时改善 | `39.5%-40.5%` | `17.5%-18.5%` | 调整后 EBITDA `$2.25-2.45B`；调整后净利润 `$1.60-1.78B` | FCF `$1.18-1.40B`，高订单仍需资本和库存支持 | 中 | 高毛利 AI 小件能否足以改变公司 mix；CST 扩产是否不吞噬利润 |
+| 极度乐观公司 | `$9.55-10.10B` | 相对 Q1 2026 LTM `+15%-22%`；显著高于当前预期 | 需求、捕获、利润和执行同时突破；AI 液冷/热交换与电力链成为主要增量之一 | `40.5%-42.0%` | `18.8%-20.5%` | 调整后 EBITDA `$2.50-2.85B`；调整后净利润 `$1.85-2.15B` | FCF `$1.35-1.65B`，但 capex 和 working capital 上行风险更高 | 低到中 | 必须同时满足 CPC 高流量件短缺、SWEP 产能快速满载、DPC 电力链超预期、传统业务不拖累 |
+
+汇总检查：
+
+- 不重复计算：CPC/SIKORA/DPC/PPS 非 AI 均归入 PPS；SWEP/CST 非 AI 均归入 CST；公司层汇总以五大 segment 总收入约束。
+- 一次性项目：Q1 2026 收购贡献、FX、restructuring costs 和 purchase accounting expenses 不外推为永久增长。
+- 传统业务抵消：PPS polymer processing decline、I&I Q1 organic decline、Engineered Products 低 margin 均已在相关层级处理，不再在公司层重复惩罚。
+- 收入质量：CPC/SWEP 收入若兑现，利润质量高于普通 pass-through；但 CST 普通项目和 CEF/EP 的硬件收入不能按 AI 小件毛利外推。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 公司收入 `$2.054B`，同比 `+10.1%`，organic `+5.3%` | 公司汇总 | 支持基准公司收入接近当前预期 | Q1 gross margin `38.9%`，gross margin 下滑 110 bps 提醒 mix/成本压力 | Q1 FCF `$131.2M`，季节性偏低但同比改善 | 基准保留 |
+| FY2026 指引收入 `+5%-7%`，adjusted EPS `$10.45-$10.65` | 公司汇总 | 给出当前预期锚，基准 NTM 不应显著高于该路径 | EPS 指引支撑 adjusted net income 基准 | 指引隐含 Dover 能吸收 restructuring/working capital | 基准保留 |
+| Q1 2026 total bookings `$2.464B`，book-to-bill `1.20`，五个 segment 均大于 1 | 收入基数 / 公司汇总 | 提高 NTM 收入能见度 | 若高订单来自高毛利 mix，可支撑 margin | inventory/receivables 上升是订单前置，也带来现金占用 | 基准保留，乐观可保留 |
+| CST bookings `$647M`，`+63.5%`，book-to-bill `1.57`，longer lead-time heat exchanger orders | SWEP / CST | 是 SWEP/BPHE NTM 收入最强正证 | 若 BPHE mix 高于普通门柜，margin 改善；但扩产成本可能抵消 | 长交期订单转收入需生产、测试、客户现场验收 | SWEP 基准和乐观保留；极度乐观下移 |
+| SWEP 2026-2027 追加 `$30M` 扩产，大型产品产能翻倍以上 | SWEP / 执行 | 支持 NTM 后半段和 FY2027 收入能力 | 初期折旧、自动化爬坡和人工可能压毛利 | capex 与 ramp 需要现金和执行 | 基准保留，极度乐观仅作上限 |
+| Dover annual report 点名 thermal connectors for liquid cooling of data centers | CPC / PPS | 支持 CPC 需求已进入公司经营口径 | 高可靠连接器利润率高于公司平均 | 产能未披露，无法判断供应上限 | CPC 基准保留 |
+| CPC UQD06 公开产品发布：面向 hyperscale AI、data center、HPC，高流量需求 | CPC / 产品贡献 | 支持乐观产品收入路径 | 高流量件 mix 可改善利润率 | 仍需客户 AVL、BOM 指定和批量交付 | 乐观保留，极度乐观下移为上限 |
+| PPS Q1 2026 revenue `+9.0%` 但 organic `-0.8%` | PPS 组合 | 表明 CPC/DPC/biopharma 仍被 polymer processing 抵消 | PPS margin `31.5%` 说明利润强，但收入增量并非全 organic | 收购贡献和 FX 不应外推为 organic | PPS 基准保留，极度乐观下移 |
+| DPC / gas compression and power generation 被 10-Q 点名 | DPC / 间接受益 | 支持工业能源需求进入收入表 | 高工程精密部件利润较好 | 数据中心自备电传导到 Dover 仍间接 | 基准低权重保留，AI 电力极度乐观移入附录 |
+| I&I Q1 organic `-3.3%` 但 bookings `+8.5%` | I&I / 稳定底盘 | 收入短期低于潜力，后续可恢复 | 高 margin 仍是利润底盘 | timing 影响收入确认 | 基准保留，悲观保留 |
+| Working capital 增加：receivables `+73.2M`，inventory `+98.1M` | 现金流 / 执行 | 高订单可支持收入，但未转收入前不增加现金 | 若项目延误，margin 和 cash conversion 承压 | 这是现金流最大观察项 | 公司乐观保留但 FCF 不上移过多 |
+| 行业液冷需求池强，但存在 field failure、OCP 商品化、客户自研压价 | 需求 / 产品贡献 | 限制把行业 beta 直接变成 Dover alpha | 普通件毛利可能回落 | 事故会延迟客户验收 | CPC/SWEP 极度乐观下移 |
+| AI 数据中心电力和自备电需求强，但许可、燃气、排放和融资约束大 | DPC / 间接受益 | 限制 DPC 电力链收入的 NTM 确认 | 高利润部件不等于整项目利润 | 设备订单到上电有 6-24 月滞后 | DPC 极度乐观移入附录或仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 需求或收入确认低于当前预期，NTM revenue `$8.30-8.55B` | Q1 所有 segment book-to-bill >1，资产负债表健康，订单能见度高 | CST 订单可能延迟、PPS organic 仍负、working capital 上升、液冷事故或电力延迟 | 保留 | 悲观公司 | 中 | polymer processing 下滑只在 PPS 非 AI 处理；不能再压低 CPC/SWEP 独立需求 |
+| 基准 | FY2026 指引和当前 run-rate 正常兑现，NTM revenue `$8.65-8.90B` | Q1 revenue/booking、CST `1.57` book-to-bill、PPS 高 margin、SWEP 扩产、CPC 产品证据 | 产品级收入未披露，CPC/SWEP 估算需要折扣，I&I organic 仍弱 | 保留 | 基准公司 | 中高 | 产品收入未披露只限制产品拆分，不应否定已披露分部收入 |
+| 乐观 | NTM revenue `$9.05-9.35B`，高毛利 mix 同步改善 | CPC/UQD、SWEP/BPHE、CEF/CST 订单和行业液冷需求均有正证 | 需要多个业务线同时超预期，且不能只靠小基数 AI 项目 | 保留 | 乐观公司 | 中 | AI 液冷订单风险只影响 CPC/SWEP，不重复压低 I&I/CEF/EP |
+| 极度乐观 | NTM revenue `$9.55-10.10B`，收入和利润率非线性上修 | 行业 AI cooling/electricity 订单池高，CST bookings 强，SWEP 扩产，CPC 高流量件具备瓶颈属性 | 缺少产品订单金额、客户名单、产能数字和 Q2/Q3 revenue conversion；传统业务不一定同步强 | 下移 | 乐观上限 / 附录跟踪 | 低到中 | OCP 标准化和电力延迟不能同时在需求、收入、利润和现金流中重复扣减 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。Dover NTM 收入最可能在 `$8.65-8.90B`，相对 Q1 2026 LTM `$8.281B` 增长约 `+4%-7%`；调整后 EBITDA 约 `$2.05-2.18B`，调整后净利润约 `$1.42-1.55B`。经营质量来自五个分部的订单正常兑现，而不是 AI 液冷单一产品决定全公司。
+- 利润/现金流结论：利润率基准是小幅改善而非大幅扩张。PPS 高 margin 和 I&I recurring 仍是利润底盘；SWEP/CPC mix 若兑现可上修，但 CST 扩产、working capital 和项目验收会压住 FCF 弹性。FY2025 FCF `$1.118B` 是强基准，NTM 由于订单扩张和 capex/库存前置，FCF 更可能在 `$1.05-1.25B` 而非线性跟随收入上行。
+- 主要传导瓶颈：第一，CST 高 bookings 是否转成 SWEP/BPHE 收入；第二，CPC 高流量快接是否从标准化和产品发布转成批量客户指定；第三，PPS organic 是否由负转正；第四，CEF、CST 非 AI 和 I&I 底盘是否足以抵消传统工业周期。
+- 乐观情景成立条件：Q2/Q3 2026 Dover 继续披露 CST book-to-bill 明显大于 1，PPS organic 转正，thermal connectors / data center heat exchangers 继续被管理层点名，inventory/receivables 没有异常堆积，CST margin 不被扩产成本吞噬。
+- 极度乐观情景成立条件：CPC UQD06/UQD08/UQDB 获多个 hyperscaler/OEM/JDM 指定，SWEP 大型 BPHE 产能提前满载，DPC 电力/燃气精密部件订单明显加速，同时 CEF/I&I/EP 不拖累，公司总收入和利润率均显著高于 FY2026 指引路径。
+- 悲观情景触发条件：CST book-to-bill 连续两个季度回到 `<1.0`，PPS organic 继续为负且 bookings 放缓，GB300/Rubin rack 验收推迟超过两个季度，或 Dover 的 inventory/receivables 上升但 revenue 和 margin 没有同步转换。
+- 后续跟踪数据：Dover Q2/Q3 2026 segment revenue、bookings、book-to-bill、CST margin、PPS organic、management commentary 中 thermal connectors / heat exchangers / data center cooling 的频率；SWEP 扩产进度；CPC 新 UQD 系列客户/标准动态；working capital、capex、FCF conversion；同业 Vertiv、nVent、Modine、Schneider、Eaton、Ecolab/CoolIT 的 liquid cooling backlog 和 conversion。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Dover Q1 2026 数据截至 2026-03-31；Dover FY2025 数据截至 2025-12-31；行业资料主要截至 2026-06-10 / 2026-06-11；本报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Dover Q1 2026 results：<https://investors.dovercorporation.com/news-releases/news-release-details/dover-reports-first-quarter-2026-results>
+  - Dover Q1 2026 Form 10-Q：<https://www.sec.gov/Archives/edgar/data/29905/000002990526000015/dov-20260331.htm>
+  - Dover Q1 2026 earnings presentation：<https://investors.dovercorporation.com/static-files/910fee6b-015f-4645-94b7-0d1b1e902245>
+  - Dover 2025 Annual Report：<https://investors.dovercorporation.com/static-files/9c63e878-7360-4321-bbe7-3bf875511dad>
+  - SWEP AI data center capacity expansion：<https://www.swepgroup.com/about-us/news-and-events/news/SWEP-Expands-Production-Capacity-to-Serve-Growing-Global-AI-Data-Center-Demand>
+  - CPC UQD06 AI liquid cooling product release：<https://investors.dovercorporation.com/news-releases/news-release-details/new-cpc-solution-tackles-growing-liquid-cooling-needs-ai>
+- 项目内公司资料：
+  - `公司调研/机电_冷却_工程_水处理_边缘工业AI/DOV_Dover_Corporation_公司调研_2026-06-11.md`
+  - `公司调研/公司索引.md`
+- 项目内行业资料：
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 指引用于当前预期锚，不替代 NTM 主表。
+  - FY2027 Rubin/MI400/Trainium3、1MW rack、two-phase cooling、AI campus heat reuse 和长期 clean energy 机会仅作为乐观/极度乐观条件或附录跟踪。
+  - 本报告不使用股价、目标价、估值倍数或市场定价作为经营价值传导证据。

@@ -1,0 +1,553 @@
+# 公司：VIAV + VIAVI Solutions｜全面尽调（2026-07-11）
+
+> 研究截点：2026-07-11（美西时间）。由于 2026-07-11 为周六，股价采用 2026-07-10 美股收盘价；最新已披露财报为截至 2026-03-28 的 FY2026 Q3，FY2026 Q4 已于 2026-06-27 结束但尚未公告，预计 2026-08-06 公布。  
+> 研究边界：本报告只使用项目内“行业调研”相关产业资料与联网公开信息，没有读取或继承其他本地目录中的公司研究、日度资料、特征量化或历史报告。  
+> 数据口径：A=公司/SEC/监管机构直接披露；B=基于 A 级数据的算术推导；C=公司未披露产品收入、售价、产能时的情景模型。所有 C 级数均明确标注，不应误读为公司指引。
+
+## 一、结论先行
+
+VIAVI Solutions 已不再只是投资人熟悉的“电信运营商测试设备 + 防伪颜料”公司。2025—2026 年，Inertial Labs 与 Spirent 高速以太网/网络安全/信道仿真资产两笔交易，加上 1.6T、Ultra Ethernet、PCIe 6.0、硅光子量产测试和数据中心现场光纤测试的同步放量，使公司从主要覆盖网络 Layer 0/1 的仪器商，升级为覆盖 Layer 0—7、从芯片/光模块研发到 AI Fabric 验收和现场运维的测试平台。
+
+投资判断的核心不是“VIAVI 是否受益于 AI”——答案已经是肯定的；核心是当前约 106 亿美元基础市值是否已经把 2027 年的高增长兑现计入。以 FY2026 Q3 管理层所称“数据中心占 NSE 高 40%”估算，广义 AI/数据中心相关收入约 1.51—1.58 亿美元/季、年化约 6.04—6.32 亿美元，占公司当季收入约 37%—39%。公司没有再拆出传统云/DCI 与纯 AI 项目；按产品用途估算，狭义可归因 AI 的收入约为上述金额的 80%—90%，即约 1.21—1.42 亿美元/季、年化 4.8—5.7 亿美元。这已经是实质收入，不是概念映射，但也意味着 VIAVI 仍不是纯 AI 公司：服务商网络、航空航天与国防/PNT、OSP 防伪和光学产品仍贡献大部分收入。
+
+最强的基本面证据有五条：
+
+1. FY2026 Q3 收入 4.068 亿美元，同比增长 42.8%；NSE 收入 3.215 亿美元，同比增长 54.4%，GAAP 分部毛利率升至 65.3%。公司给出的 FY2026 Q4 收入中值为 4.32 亿美元、同比增长 48.7%，NSE 中值 3.44 亿美元、同比增长约 64.5%。
+2. RPO 从 FY2025 Q3 的 3.15 亿美元增至 FY2026 Q3 的 5.338 亿美元，同比增长 69.5%，其中约 92%、即 4.91 亿美元预计在未来 12 个月确认；剔除收购扭曲后的 RPO 桥接订单代理值连续大致保持 1.03—1.15 倍 book-to-bill。
+3. 管理层披露光模块测试产品过去 18 个月有机收入超过 3 倍；800G 当前量最大，1.6T 正快速爬坡；现场仪表中数据中心占比从一年前不足 10% 升至约三分之一至 40%，相关产品线同比增长超过 50%。
+4. 2025-10-16 完成 Spirent HSE/Network Security/Channel Emulation 业务收购后，VIAVI 获得 TestCenter、CyberFlood、AION 等 Layer 2—7 资产。美国司法部披露，交易前 Keysight 与 Spirent 合计约占美国高速以太网测试市场 85%，说明该业务不是普通小众资产，而是具有明显双寡头结构的核心测试平台。
+5. 2026 年 5 月发行 1,277.78 万股、净募资约 5.572 亿美元，并偿还全部 4.50 亿美元 Term Loan B。按 2026-03-28 资产负债表静态调整，剩余面值债务约 6.50 亿美元、可用现金及短期投资约 6.08 亿美元，净债务接近 0；利息支出年化可减少约 2,800 万美元。
+
+主要反面证据同样明确：
+
+- 2026-07-10 收盘价 43.08 美元对应基础市值约 105.6 亿美元、TTM P/S 约 7.73 倍、forward P/E 约 35.1 倍；GAAP TTM 净亏损 5,510 万美元，TTM P/E 无意义。市场已经按照高增长仪器公司而非传统电信测试公司定价。
+- FY2026 前九个月经营现金流仅 4,720 万美元、资本开支 2,000 万美元；应收账款和存货分别较 FY2025 年末增加 5,930 万和 3,000 万美元，增长质量仍需由后续现金流验证。
+- 产品级 bookings、backlog、取消率、正式交期、产品收入和产能均不披露；RPO 不是完整 backlog，且 FY2026 Q2 被 Spirent 并购带入的递延收入/未履约合同明显抬高。
+- 公司依赖单一或有限来源零部件、并无显著长期保供协议。管理层表示内存等器件紧张时可以支付更高价格，但临时加单可能因为客户通知太晚而延后交付。
+- 2026-03-28 商誉与无形资产合计 10.998 亿美元，占总资产 43.5%、相当于股东权益的 130%；并购整合、无形资产摊销和 earn-out 仍可能令 GAAP 盈利显著弱于调整后盈利。
+
+综合评价：业务质量和资产负债表均在快速改善，AI 数据中心已经成为最大增量来源，Layer 0—7 产品拼图具有真实稀缺性；但股票目前更像“执行必须持续超预期”的高估值成长股，而不是被忽视的低估值转型股。基准情景对应 FY2027 收入约 17.8—18.5 亿美元，接近市场一致预期；只有数据中心收入接近 10 亿美元、公司季度收入向 5 亿美元以上推进，才能充分支撑当前估值继续扩张。
+
+## 二、公司整体业务、投资人认知与产业链位置
+
+### 2.1 业务结构
+
+VIAVI 有两个报告分部：
+
+| 分部 | FY2026 Q3 收入 | 同比 | 收入占比 | GAAP 毛利率 | 分部营业利润率 | 核心内容 |
+|---|---:|---:|---:|---:|---:|---|
+| NSE（Network and Service Enablement） | 3.215 亿美元 | +54.4% | 79.0% | 65.3% | 17.2% | 实验室/生产测试、现场仪表、网络监控与保障、AI Fabric、PCIe/CXL、网络安全、航空电子、PNT |
+| OSP（Optical Security and Performance） | 0.853 亿美元 | +11.4% | 21.0% | 50.3% | 35.3% | 银行券防伪颜料、光学薄膜、3D sensing、汽车/工业/政府光学 |
+| 合计 | 4.068 亿美元 | +42.8% | 100% | 57.5% | GAAP 6.1%；non-GAAP 21.0% | NSE 是成长引擎，OSP 是高利润现金流稳定器 |
+
+来源：[FY2026 Q3 业绩公告](https://investor.viavisolutions.com/news-events/news-releases/news-details/2026/VIAVI-Announces-Third-Quarter-Fiscal-2026-Results/default.aspx)、[FY2026 Q3 10-Q](https://www.sec.gov/Archives/edgar/data/912093/000162828026028926/viav-20260328.htm)。
+
+NSE 的客户覆盖超大规模云厂商、neocloud、交换机/路由器厂商、光模块厂、半导体厂、运营商、网络施工方、国防与政府机构。公司不是大量安装在每台服务器里的器件供应商，而是位于“研发验证—合规认证—量产测试—网络验收—运行监控”的工具层：
+
+AI 芯片/交换 ASIC/光引擎设计  
+→ PCIe/CXL 与 224G/1.6T 电气/光学验证  
+→ 光模块与 CPO/OCS 量产测试  
+→ AI Fabric RoCE/UET 流量、拥塞和容错验证  
+→ 数据中心光纤施工、验收和 24×7 监控。
+
+这种位置有三个投资特征：
+
+- 单个测试系统价格不一定随 GPU 数量线性增长，而是按端口、实验室、生产线和测试插入次数阶梯式增加；所以“每 GPU 含量”必须按设备寿命摊销，不能当作实体 BOM。
+- 新速率切换时，测试工具通常先于大规模网络部署采购，收入领先 1.6T/CPO 出货；但当标准成熟、客户实验室完成一次性扩容后，也可能出现资本开支波动。
+- 领先节点的仪器、软件脚本、校准数据库和自动化流程形成较高切换成本；但 VIAVI 并非在所有子市场垄断，Keysight、Anritsu、EXFO、Teledyne LeCroy 等均有强产品线。
+
+### 2.2 投资人如何看 VIAVI
+
+过去的 VIAVI 更接近“运营商资本开支周期股”：服务商无线/有线测试需求周期性强，OSP 防伪业务稳定但成长慢。2025—2026 年后，市场认知变为四部分组合：
+
+1. AI 数据中心测试平台：高速以太网、光模块、PCIe、CPO/OCS、现场光纤和网络安全验证共同驱动 NSE。
+2. 并购整合与经营杠杆：Spirent 使产品覆盖从 VIAVI 强项 Layer 0/1 延伸到 Layer 2—7；NSE 增量收入的营业利润增量率由管理层估计为 40%—45%。
+3. A&D/PNT 第二成长曲线：Inertial Labs、Jackson Labs、SecurePNT 和微型时钟模块扩大国防、无人系统和关键基础设施敞口。
+4. OSP 现金牛：防伪和光学涂层仍提供 30% 以上分部营业利润率，但不是 AI 估值的主要来源。
+
+当前 7.7 倍 TTM P/S 和约 35 倍 forward P/E 表明市场已经接受第 1、2 条叙事；未来回报取决于产品收入能否兑现到现金流，而不是再进行一次“AI 概念重估”。
+
+### 2.3 最近三年的重大变动
+
+| 时间 | 事项 | 金额/影响 | 战略意义 |
+|---|---|---:|---|
+| 2024-03 | VIAVI 原计划收购整个 Spirent，随后被 Keysight 抬价超过 | 原交易约 10 亿英镑级 | 说明管理层早已意图补齐协议、网络安全和无线仿真；失败后转为收购反垄断剥离资产 |
+| 2025-01-28 | 收购 Inertial Labs | 交割现金约 1.344 亿美元，另有最高 1.75 亿美元或有对价；Q3 FY26 支付 earn-out 7,350 万美元 | 进入 IMU、INS、APNT、LiDAR/视觉导航和无人系统；Q3 FY26 单季收入 2,260 万美元 |
+| 2025-03-30 | 原 NE 与 SE 合并为 NSE 报告分部 | 无现金交易 | 反映实验室、现场、保障软件和共同客户已经整合，简化投资者口径 |
+| 2025-10-16 | 完成 Spirent HSE、Network Security、Channel Emulation 业务收购 | 公告价最高 4.25 亿美元；SEC 初步购买对价 3.993 亿美元；预计首年收入约 1.8 亿美元 | 获得 TestCenter、CyberFlood、AION、Avalanche/安全与信道仿真资产，建立 Layer 0—7 平台 |
+| 2026-01 | 启动约 5% 人员重组 | 预计年化节省约 3,000 万美元，其中约 1,600 万美元与 Spirent 协同有关 | 在增长期仍压缩重复成本；部分节省会再投资于数据中心产品 |
+| 2026-03 至 06 | D2 1.6T、CF1000、GDO-1000、PCIe 6 Gold、UET 验证方案密集发布 | 产品周期 | 把并购资产转化为共同路线图；3.2T 将成为首个真正深度整合 VIAVI 与 Spirent 的平台之一 |
+| 2026-05 | 发行 1,277.78 万股并偿还 TLB | 毛募资 5.75 亿美元，净额约 5.572 亿美元；偿还 4.50 亿美元 | 大幅降杠杆和利息，但基础股本约稀释 5.2% |
+
+来源：[Spirent 资产收购公告](https://investor.viavisolutions.com/news-events/news-releases/news-details/2025/VIAVI-to-Acquire-Spirent-Communications-plcs-High-Speed-Ethernet-and-Network-Security-Testing-Business/default.aspx)、[美国司法部反垄断处置](https://www.justice.gov/opa/pr/justice-department-requires-keysight-to-divest-assets-to-proceed-spirent-acquisition)、[Inertial Labs 收购公告](https://investor.viavisolutions.com/news-events/news-releases/news-details/2024/VIAVI-Expands-Market-Reach-with-Strategic-Acquisition-of-Inertial-Labs/default.aspx)、[2026-05-21 8-K](https://www.sec.gov/Archives/edgar/data/912093/000114036126022337/ef20074430_8k.htm)。
+
+## 三、股价、估值、增长、利润率与资产负债表
+
+### 3.1 2026-07-10/11 市场快照
+
+| 指标 | 数值 | 日期/口径 |
+|---|---:|---|
+| 股价 | 43.08 美元 | 2026-07-10 收盘；2026-07-11 为周六 |
+| 基础流通股数 | 2.4502 亿股 | 2026-07-11 数据页；已基本反映 5 月增发 |
+| 基础市值 | 105.6 亿美元 | 43.08 × 2.4502 亿股 |
+| TTM 收入 | 13.657 亿美元 | FY2025 Q4—FY2026 Q3 |
+| TTM 收入增速 | +30.7% | 相比前四季度 10.449 亿美元 |
+| TTM GAAP 毛利率 | 56.9% | 四季度加权计算 |
+| 最新季度 non-GAAP 毛利率 | 62.2% | FY2026 Q3 |
+| TTM GAAP 净利润/净利率 | -5,510 万美元 / -4.0% | 收购摊销、重组、债务清偿损失等影响较大 |
+| TTM GAAP P/E | N/M；机械计算约 -172 倍 | 负利润时不具经济意义 |
+| Forward P/E | 约 35.1 倍 | 数据商 NTM 调整后 EPS 口径 |
+| TTM P/S | 约 7.73 倍 | 基础市值/TTM 收入 |
+| FY2026E P/S | 约 7.0 倍 | 按本报告 FY2026 收入中值 15.072 亿美元 |
+| FY2027E P/S | 约 5.9 倍 | 按市场一致预期约 18.0 亿美元 |
+| FY2027E 调整后 EPS | 约 1.29 美元 | 一致预期；对应静态约 33.4 倍 |
+| TTM 自由现金流 | 约 4,550 万美元 | 数据商标准化口径，FCF margin 约 3.3% |
+
+行情与一致预期来源：[StockAnalysis 行情](https://stockanalysis.com/stocks/viav/)、[估值统计](https://stockanalysis.com/stocks/viav/statistics/)、[分析师预测](https://stockanalysis.com/stocks/viav/forecast/)。GAAP 毛利率、收入和净利润由公司季度数据复核。
+
+### 3.2 资产负债表健康度
+
+截至 2026-03-28 的报告数：
+
+- 现金 4.990 亿美元、短期投资 180 万美元、受限现金 720 万美元；流动资产 10.537 亿美元、流动负债 6.525 亿美元，流动比率 1.61 倍。
+- 扣除存货后的速动比率约 1.39 倍；若只计现金、短期投资、受限现金与应收，保守速动比率约 1.27 倍。
+- 报告账面债务 10.808 亿美元，其中面值约 11 亿美元：2.50 亿美元 0.625% 可转债、4.00 亿美元 3.75% 票据、4.50 亿美元 TLB。5 月增发后 TLB 已全部偿还。
+- 静态备考：可用现金及短期投资约 6.08 亿美元，剩余面值债务约 6.50 亿美元，净债务约 4,200 万美元；若计受限现金，净债务约 3,500 万美元。该数字是按 3 月资产负债表与 5 月融资机械调整，不是 6 月末审计数。
+- TLB 在 3 月末利率约 6.17%，清偿后年化税前利息减少约 2,780 万美元，相当于税后约 0.08—0.09 美元/股的潜在 EPS 改善。
+- 2031 可转债转换价约 13.79 美元，远低于 43.08 美元股价。按 treasury-stock 方法，若股价不变，2.50 亿美元本金对应约 1,813 万基础转换股，增量稀释约 1,233 万股；再加 RSU，经济上的完全摊薄股数可能在 2.60 亿股附近，而非 2.45 亿基础股。
+- 商誉 7.018 亿美元、无形资产 3.980 亿美元，合计 10.998 亿美元，占总资产 43.5%，相当于 8.465 亿美元股东权益的 130%。因此“净债务低”不等于资产负债表没有风险。
+- 存货从 FY2025 年末 1.179 亿增至 1.479 亿美元，增长 25.4%；其中 NSE 存货增长 45.0%。应收账款增长 22.7%。这与需求和并购扩大有关，也意味着未来两个季度需确认回款与库存周转。
+
+健康度结论：从“高杠杆并购融资”快速改善为“接近净债务中性、流动性充足”，评为 7.5/10；扣分项是高商誉/无形资产、可转债稀释、低 TTM FCF、营运资本占用及并购 earn-out。相比 2025 年，破产或再融资风险显著下降；相比高质量纯软件/仪器公司，GAAP 盈利质量仍偏弱。
+
+## 四、最近五次财报：财务、业务与 AI 数据中心占比
+
+### 4.1 五个季度的核心财务数据
+
+单位：百万美元，除百分比和 EPS。
+
+| 财报季度（期末） | 总收入 / YoY | NSE：收入 / YoY / 占比 | NSE：GAAP GM / 分部 OM | OSP：收入 / YoY / 占比 | OSP：GAAP GM / 分部 OM | 公司 GAAP GM / 净利润 | non-GAAP OM / EPS | 广义 AI/数据中心收入估算 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| FY25 Q3（2025-03-29） | 284.8 / +15.8% | 208.2 / +22.6% / 73.1% | 63.1% / 10.4% | 76.6 / +0.5% / 26.9% | 51.6% / 33.9% | 56.4% / 19.5 | 16.7% / 0.15 | 52—58；约占总收入 18%—20%（C） |
+| FY25 Q4（2025-06-28） | 290.5 / +15.3% | 209.1 / +14.8% / 72.0% | 62.2% / 4.7% | 81.4 / +16.6% / 28.0% | 54.7% / 39.4% | 56.3% / 8.0 | 14.4% / 0.13 | 约 62.7；NSE 的约 30%，总收入 21.6% |
+| FY26 Q1（2025-09-27） | 299.1 / +25.6% | 216.0 / +35.5% / 72.2% | 63.0% / 7.5% | 83.1 / +5.5% / 27.8% | 52.3% / 37.1% | 56.5% / -21.4 | 15.7% / 0.15 | 73—82；NSE 约 34%—38%（C；Spirent 尚未交割） |
+| FY26 Q2（2025-12-27） | 369.3 / +36.4% | 291.5 / +45.8% / 78.9% | 64.7% / 15.6% | 77.8 / +9.7% / 21.1% | 50.8% / 33.4% | 57.0% / -48.1 | 19.3% / 0.22 | 约 131；管理层称数据中心约占 NSE 45% |
+| FY26 Q3（2026-03-28） | 406.8 / +42.8% | 321.5 / +54.4% / 79.0% | 65.3% / 17.2% | 85.3 / +11.4% / 21.0% | 50.3% / 35.3% | 57.5% / 6.4 | 21.0% / 0.27 | 151—158；NSE 高 40%，总收入 37%—39% |
+
+说明：
+
+- 公司没有按 AI/数据中心报告收入；表中数字是以管理层披露的 data-center 终端市场比例乘以 NSE 收入，属于广义口径和 C 级估算，其中也含传统云、DCI 与非训练集群项目。狭义 AI 估计约为最新广义金额的 80%—90%。Q1 在 Spirent 交割前，不能把管理层给出的交割后约 40% mix 直接当作当季报告口径。
+- Q2/Q3 GAAP 与 non-GAAP 差异很大，主要来自收购无形资产摊销、库存 step-up、重组、earn-out 公允价值变动、债务清偿损失及交易整合费用。FY26 前九个月 GAAP 净亏损 6,310 万美元，而经营现金流为正 4,720 万美元。
+- Q3 收入同比增加 1.220 亿美元，其中 Spirent 贡献 5,430 万美元；Inertial Labs 贡献 2,260 万美元、上年同期仅包含部分交割期的 770 万美元。把两项增量机械剔除，其他/有机收入仍约增长 5,280 万美元或 18.5%，但该算法不是公司正式 organic 口径。
+
+### 4.2 订单、交期、RPO、B2B 与取消率
+
+VIAVI 不披露完整 bookings 或 backlog。SEC 披露的 RPO 包含递延收入与未开票合同，不包含客户可无实质罚金取消的合同；公司又有大量当季 book-and-ship。因此，RPO 是“硬合同下限”，不是全部未来订单。
+
+| 财报季度 | 期末 RPO | 12 个月内确认比例 | RPO QoQ | RPO 桥接 bookings 代理值 | 代理 B2B | 订单/交期/取消信息 |
+|---|---:|---:|---:|---:|---:|---|
+| FY25 Q3 | 315.0 | 88% | +15.5% | 327.0 | 1.15x | 关税对已下单订单约 300 万美元成本影响；管理层称未见订单取消或缩量，但部分 PO 重新审批、交付可能后移 |
+| FY25 Q4 | 345.0 | 90% | +9.5% | 320.5 | 1.10x | 1.6T 第二代产品于该季度发布；当时 800G/400G 仍贡献多数收入，1.6T 用于进入客户和锁定后续扩容 |
+| FY26 Q1 | 352.6 | 91% | +2.2% | 306.7 | 1.03x | 季末尚未并入 Spirent；数据中心增长主要来自原 VIAVI 光学、实验室与现场产品 |
+| FY26 Q2 | 492.5 | 93% | +39.7% | 509.2 | 1.38x，失真 | Spirent 并表 10 周，带入递延收入/RPO；Spirent 收入 4,300 万美元，低于 4,500—5,500 万预期，数个项目仅由 Q2 推至 Q3，没有证据表明被取消 |
+| FY26 Q3 | 533.8 | 92% | +8.4% | 448.1 | 1.10x | Spirent 收入 5,430 万美元，包含 Q2 延后项目；管理层称可见度约 2—3 个季度，部分客户讨论未来两年交付，但公司通常在获得 firm order 后才承诺零部件 |
+
+计算公式：代理 bookings = 期末 RPO − 期初 RPO + 当季收入；代理 B2B = 代理 bookings / 当季收入。该桥接会受收购、外汇、合同范围变更、取消和当季递延影响，尤其 FY26 Q2 不具可比性。
+
+当前硬订单覆盖：
+
+- FY26 Q3 RPO 5.338 亿美元，同比增长 69.5%；其中约 4.91 亿美元预计 12 个月内确认。
+- 4.91 亿美元只覆盖 TTM 收入的约 36%，并不表示剩余 64% 没有需求，而是大量仪器/模块能在同季下单出货。
+- FY26 Q3 RPO 桥接代理 bookings 为 4.481 亿美元，高于 4.068 亿收入约 10%；若没有大额合同范围变化，这是订单继续扩张而非只消化 backlog 的信号。
+- 正式取消率不披露。本报告情景假设：基准交付滑移/取消 3%—5%，乐观 1%—3%，极度乐观 0%—2%。这是模型输入，不是渠道确认值。
+- 正式 lead time 不披露。管理层给出的“2—3 季度可见度”是需求/项目视野，不等于生产交期；部分客户提出两年期交付计划，但公司没有显著长期保供协议，临时上修可能因内存、FPGA/ASIC、光学前端等器件通知期不足而推迟。
+
+## 五、最新财报与 FY2026 Q4 指引
+
+### 5.1 指引拆分
+
+| 项目 | FY2026 Q4 指引 | 中值 | 中值同比 | 中值环比 | 收入占比 |
+|---|---:|---:|---:|---:|---:|
+| 总收入 | 4.27—4.37 亿美元 | 4.32 亿 | +48.7% | +6.2% | 100% |
+| NSE 收入 | 3.40—3.48 亿美元 | 3.44 亿 | +64.5% | +7.0% | 79.6% |
+| OSP 收入 | 0.87—0.89 亿美元 | 0.88 亿 | +8.1% | +3.2% | 20.4% |
+| non-GAAP 公司 OM | 22.2%—23.2% | 22.7% | — | +170 bps | — |
+| non-GAAP NSE OM | 18.2%—19.2% | 18.7% | — | +150 bps | — |
+| non-GAAP OSP OM | 38.0%—38.8% | 38.4% | — | +310 bps | — |
+| non-GAAP EPS | 0.29—0.31 美元 | 0.30 | 约 +131% | +11% | — |
+
+按指引中值，FY2026 全年收入约 15.072 亿美元，同比增长 39.0%；调整后 EPS 约 0.94 美元，同比约翻倍。若数据中心在 Q4 达到 NSE 的约 50%，则该业务季度收入约 1.72 亿美元、年化退出速度约 6.88 亿美元，占公司 Q4 收入约 39.8%。
+
+### 5.2 业务优先级
+
+管理层资源排序非常清楚：
+
+1. 数据中心：获得大部分新增研发和销售投入；客户池以 hyperscaler 最大，光模块/系统厂第二，硅厂第三，三者较均衡。
+2. 航空航天与国防/PNT：快速增长且生命周期长，Inertial Labs 业绩超过初始预期。
+3. 服务商：预计低个位数增长，仍是现金流和渠道基础，但不是估值主引擎。
+4. OSP：维持高利润，重点是防伪与高价值光学，不是当前 AI 资本开支主题。
+
+Q3 NSE 终端 mix 估算为数据中心约 47%—49%、服务商约 34%—36%、A&D/PNT 约 15%—17%。相较 FY2025 Q4 的约 30%/50%/20%，数据中心在不到一年内已取代服务商成为 NSE 最大终端。
+
+## 六、产品地图、产品级收入与应跳过业务
+
+### 6.1 重点产品和型号
+
+#### A. AI Fabric 与高速以太网 Layer 2—7
+
+- TestCenter D2 1.6T：4 个 OSFP 端口、总流量 6.4 Tbps；单端口可模拟最多 128 个 GPU/NIC，单台最多 512 个；支持 1.6T/800G/400G/200G/100G、RoCEv2、CCL/LLM 流量、拥塞控制、动态多路径和尾延迟统计。[产品页](https://www.viavisolutions.com/en-us/products/testcenter-d2-16t-appliance)
+- TestCenter B3 800G：4/8 端口；A1/A2/A3 400G：不同密度和协议规模；共同承接从 400G 到 1.6T 的 installed base 升级。
+- UET Validation：2026-06-23 发布，基于 UEC 1.0 Ultra Ethernet Stack，无需真实 GPU 即可模拟 ordered/unordered delivery、packet trimming、congestion control、dynamic multipathing、collective/LLM flows；早期方案已与 HPE Juniper QFX5240/Tomahawk 5 平台做互操作验证。[发布公告](https://www.prnewswire.com/news-releases/viavi-launches-industrys-first-validation-solution-for-ultra-ethernet-transport-accelerating-ai-data-center-deployments-302806300.html)
+- AION、TestCenter Virtual：自动化、多机架编排和软件测试；软件 attach 是毛利率和客户粘性的关键。
+
+#### B. 光模块、硅光子、CPO/OCS 的 Layer 0/1 研发与量产
+
+- ONE LabPro C1 + ONE-1600/ONE-1600ER：1.6T OSFP 的 PHY/FEC/MAC、8×200G electrical lanes、1.6T/2×800G/4×400G/8×200G 测试；ONE-1600 自 2024 年进入客户，ONE-1600ER 于 2025 年扩展。
+- ONT-800：多协议、多端口研发与系统验证，覆盖 800G 等高速光传输。
+- MAP-300：MAP-330 三槽、MAP-380 八槽，向后兼容既有自动化代码与模块；mTLS/mTLG 光源、mOPM 功率计、mOSA/mHROSA 光谱分析、mOSW/mOSX 光开关、mVOA、mPCX、mORL 等可组合成光模块、SiPho、CPO 和 OCS 生产测试站。[MAP-300 产品页](https://www.viavisolutions.com/en-us/products/map-300-multiple-application-platform)
+- CPO/OCS：管理层称 CPO 可产生最多四次测试插入；典型机架把 VIAVI 光学测量设备与 FormFactor 探针台、Advantest ATE 等集成。300×300 OCS 需要端口到端口路径验证，单站 VIAVI 内容从数万美元到十万美元以上；当前收入基数小，预计 2—3 个季度开始更明显放量。
+- 3.2T：OFC 2026 已从“1.6T 主流化”转向 3.2T 早期路线，管理层称 3.2T 将是 VIAVI 原光学能力与 Spirent 流量协议能力真正深度整合的平台。[OFC 2026 复盘](https://blog.viavisolutions.com/2026/04/23/ofc-2026-1-6t-going-mainstream-the-emergence-of-3-2t/)
+
+#### C. PCIe/CXL/存储与芯片互联
+
+- Xgig 6P16：64 GT/s PAM4、16 lanes，Analyzer 与 Exerciser 同机，支持 PCIe 6.0、CXL、NVMe、FLIT、FEC、TS0；配套 CEM/MCIO/EDSFF interposer、host test stand 与 Xgig Expert 软件。[产品页](https://www.viavisolutions.com/en-us/products/xgig-6p16-analyzer-exerciser-pci-express-60)
+- 2026-06-18 获 PCI-SIG PCIe 6.0 Link and Transaction Protocol Gold Suite acceptance，可在全球 PCI-SIG compliance workshop 用于正式合规测试。这是本轮新品中最清晰的第三方认证门槛。[认证公告](https://www.viavisolutions.com/de-de/node/133165)
+- 公司 2026-04 宣布继续投资 PCIe 7.0 协议分析平台；PCIe 7/UALink/光 PCIe 若进入 AI scale-up，测试复杂度和单系统内容量会进一步提高。
+
+#### D. 数据中心施工、验收与监控
+
+- OneAdvisor 800 Transport + 800G module：现场测试 800/400/200/100G、QSFP-DD/OSFP、OTDR/OSA 和 coherent optics。[产品页](https://www.viavisolutions.com/en-us/products/oneadvisor-800-transport-platform)
+- FiberComplete PRO、SmartClass Fiber MPOLx、DCX-700、T-BERD/MTS-5800/8000：MPO 多芯、双向 IL/ORL/OTDR、连接器检查和施工认证。
+- ONMSi/FTH-5000/NITRO Fiber/StrataSync：远程 OTDR、光纤开关、故障定位、趋势分析和云端流程。公司称 DCI 工具可使部署效率提升至少 60%，单个技术员每周多测试最多 15,000 芯光纤，并把远程故障平均修复时间降低约 30%。这些是公司营销指标，不等同于所有客户的实测结果。[DCI 方案页](https://www.viavisolutions.com/en-us/solutions/data-center-interconnect-dci)
+
+#### E. AI 推理/网络安全
+
+- CyberFlood CF1000：2026-05 发布，原生 400G、multi-Tb TLS、量子安全/后量子密码和 AI inference 流量，测试 LLM endpoint 的 TTFT、吞吐与负载下延迟。
+- Observer Threat Forensics、Avalanche/网络安全测试：从实验室压力测试延伸至运行网络取证；更偏软件和订阅，毛利率潜力高，但 AI 直接收入仍小。
+
+#### F. PNT/Inertial Labs：非 AI 主线但不能遗漏
+
+- Inertial Labs：IMU、INS、AHRS、MRU、RESEPI LiDAR/摄影测量、PCMasterPro、IRINS LEO-aided navigation；Q3 FY26 收入 2,260 万美元，年化 9,040 万美元。
+- SecurePNT 6200：PNT-6250L/S 与 PNT-6260L/S，DOCXO 或 rubidium holdover，支持 GEO/LEO/GNSS 多源；符合 PRTC-A ITU-T G.8272，具 NEBS 认证。[产品页](https://www.viavisolutions.com/en-us/products/securepnt-6200-series)
+- µPNT GDO-1000：2026-06 发布，22×42 mm、低于 4 g、约 0.5 W、L1/L5 GNSS、MEMS 振荡器和 AI/ML 环境补偿，24 小时微秒级 holdover；面向无人系统、数据中心卡和通信设备，仍处早期导入。[发布公告](https://www.viavisolutions.com/en-us/news-releases/viavi-introduces-gnss-disciplined-oscillator-precision-timing-size-weight-and-power-constrained)
+
+### 6.2 当前产品级收入贡献、增速与竞争力
+
+公司不披露产品收入。下表以 FY2026 Q3 数据中心收入中值约 1.55 亿美元、年化约 6.20 亿美元为总约束，再结合 Spirent 约 2 亿美元运行率、Inertial Labs 单季收入、管理层披露的产品 mix 和增速进行互斥分配。金额为 C 级模型中值，误差至少 ±15%—25%。
+
+评分 1—5：5 表示对 AI 栈极关键/最紧急/最紧张/控制力或溢价最强；“控制力”不是法律意义垄断。
+
+| 关键平台 | 当前广义 AI/数据中心收入年化估算 | 当前增速判断 | 产品 GM 估算 | AI 重要性 | 时间紧迫性 | 供需紧张 | 市场控制力 | 溢价能力 | 交叉验证 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| ONE-1600/ER、MAP-300、ONT-800：光模块/SiPho/CPO/OCS | 2.05 亿美元 | +55%—85% | 58%—66% | 5.0 | 5.0 | 4.0 | 3.5 | 4.0 | 光模块测试收入 18 个月超过 3 倍；800G 当前最大、1.6T 陡峭爬坡；CPO 四次插入 |
+| TestCenter D2/B3/A 系列 + UET/AION：AI Fabric | 1.95 亿美元 | +40%—70% | 65%—72% | 5.0 | 5.0 | 4.0 | 4.0 | 4.5 | Spirent 业务约 2 亿美元运行率；DOJ 显示美国 HSE 原市场高度集中；D2/UET 进入商用 |
+| OneAdvisor/ONMSi/FiberComplete/StrataSync：数据中心现场 | 1.05 亿美元 | >+50% | 48%—58% | 4.0 | 4.0 | 3.0 | 3.5 | 3.5 | 现场仪表的数据中心 mix 从不足 10% 升到约 33%—40%，产品线同比 >50% |
+| Xgig PCIe 6/CXL/NVMe | 0.47 亿美元 | +20%—40% | 65%—72% | 4.5 | 5.0 | 3.5 | 3.0 | 4.0 | PCI-SIG Gold acceptance；GPU/NIC/retimer/SSD 全生态需协议与合规测试 |
+| CyberFlood/Observer：安全与 AI inference | 0.33 亿美元 | +15%—30% | 68%—78% | 3.5 | 4.0 | 2.5 | 3.5 | 4.0 | CF1000 原生 400G、多 Tb TLS/PQC，2026-05 才发布，收入基数小 |
+| AI 相关服务、校准、软件续费与 timing | 0.35 亿美元 | +10%—25% | 70%—85% | 3.0 | 3.5 | 2.0 | 3.5 | 4.5 | installed base、自动化脚本、Care/校准和软件选件产生递延/续费 |
+| 广义 AI/数据中心合计 | 约 6.20 亿美元 | 约 +160%—200%（含 Spirent 并购；有机增速显著低于此值） | 加权约 61%—68% | — | — | — | — | — | 与 NSE 高 40% × 12.86 亿美元 Q3 年化收入一致；狭义 AI 约 4.8—5.7 亿美元 |
+
+非 AI 但关键成长引擎：
+
+| 平台 | 当前公司收入贡献 | 增速判断 | 重要性/供需/控制力 | 结论 |
+|---|---:|---:|---|
+| Inertial Labs + SecurePNT/Jackson Labs | 1.30—1.70 亿美元年化（C；其中 Inertial Labs 9,040 万为 A/B） | +20%—35%；Inertial Labs 更高 | A&D 重要性 4.5/5；数据中心直接重要性 2.5/5；CSAC 替代与 GNSS-denied 需求偏紧 | 不应被 AI 叙事掩盖；长设计周期、认证和算法融合形成粘性 |
+| CPO/OCS 测试子集 | 当前约 500—1,500 万美元，已包含光学平台 | >100%，低基数 | AI 重要性 5/5；当前采纳 1.5/5；控制力 3/5 | 最有潜力的小业务；未来一年可成为 3,000—11,000 万美元子集，但不能与光学平台重复相加 |
+
+### 6.3 明确跳过深度建模的业务
+
+| 跳过业务/产品 | 当前地位 | 跳过原因 |
+|---|---|---|
+| OSP 银行券防伪 OVP/OVMP、特效颜料 | Q3 收入 8,530 万美元所在分部的主体，分部 OM 35.3% | 高质量现金牛但与 AI 数据中心无直接关系，增速 11.4% 低于 NSE |
+| OSP 3D sensing filter、汽车 LiDAR、光谱和定制薄膜 | 小到中等规模 | 可能增长，但当前 AI 服务器/网络内容量很低 |
+| 传统运营商 cable/access/DOCSIS 和低速现场手持仪表 | NSE 服务商约占中 30% | 预计低个位数增长；只保留其中已转向数据中心的 OneAdvisor/光纤产品 |
+| 传统 4G/5G 基站测试、成熟无线网络保障 | 周期性服务商业务 | AI-RAN/6G 是长期可选性，过去半年尚无足够收入证据 |
+| Spirent RF channel emulation/Vertex/V2X | 并购业务一部分 | 对无线、汽车和国防重要，但非 AI 数据中心主线 |
+| 100G/400G 成熟 TestCenter/ONT 配置 | installed base 与现金流 | 仍支撑升级和服务收入，但单位增速和新测试内容低于 800G/1.6T |
+
+## 七、一年后产品收入：基准、乐观、极度乐观
+
+### 7.1 广义 AI/数据中心产品收入
+
+以下为 FY2027 Q3/Q4 附近年化运行率模型，六个互斥桶可相加；CPO/OCS 作为光学桶的子集另列，不重复计入。
+
+| 产品平台 | 当前年化 | 基准：一年后收入 / 增速 | 乐观：一年后收入 / 增速 | 极度乐观：一年后收入 / 增速 |
+|---|---:|---:|---:|---:|
+| 光模块/SiPho/CPO/OCS Layer 0/1 | 2.05 亿 | 2.70 亿 / +32% | 3.35 亿 / +63% | 4.10 亿 / +100% |
+| TestCenter HSE/UET AI Fabric | 1.95 亿 | 2.55 亿 / +31% | 3.20 亿 / +64% | 3.90 亿 / +100% |
+| 数据中心现场光纤/监控 | 1.05 亿 | 1.35 亿 / +29% | 1.65 亿 / +57% | 2.05 亿 / +95% |
+| PCIe/CXL/Xgig | 0.47 亿 | 0.62 亿 / +32% | 0.78 亿 / +66% | 0.95 亿 / +102% |
+| CyberFlood/安全与 AI inference | 0.33 亿 | 0.42 亿 / +27% | 0.52 亿 / +58% | 0.68 亿 / +106% |
+| 服务/校准/软件/timing | 0.35 亿 | 0.45 亿 / +29% | 0.55 亿 / +57% | 0.72 亿 / +106% |
+| 广义 AI/数据中心合计 | 6.20 亿 | 8.09 亿 / +30% | 10.05 亿 / +62% | 12.40 亿 / +100% |
+| 其中 CPO/OCS 子集（不加总） | 0.10 亿 | 0.30 亿 / +200% | 0.60 亿 / +500% | 1.10 亿 / +1,000% |
+
+场景含义：
+
+- 基准：800G 维持高量、1.6T 从实验室扩展到早期量产；UET 进入首批商用验证；CPO/OCS 有收入但仍以客户定制为主。供需紧张 3.5/5，控制力 3.5—4/5。
+- 乐观：1.6T 与 UET 在 hyperscaler/交换机/模块三类客户同步扩容；CPO/OCS 四次测试插入开始形成批量机架；PCIe 6 Gold 带来更多 compliance lab。供需紧张 4.5/5，领先节点价格敏感度低。
+- 极度乐观：1.6T 取代 800G 成为最大平台，3.2T 前置研发同时拉货，CPO/OCS 量产测试站快速铺开，现场测试随数据中心建设同步放量；需要公司把当前约 17 亿美元总收入出货能力扩到 25 亿美元以上。该情景概率较低。
+
+### 7.2 PNT/Inertial Labs
+
+| 场景 | 一年后收入贡献 | 增速 | 采纳与认证假设 |
+|---|---:|---:|---|
+| 基准 | 1.80 亿美元 | 约 +20%—30% | 现有 IMU/INS/APNT 项目扩大，SecurePNT 6200 维持 PRTC-A/NEBS，GDO-1000 小批量设计导入 |
+| 乐观 | 2.30 亿美元 | 约 +40%—55% | 无人机/无人车、GNSS-denied、LiDAR mapping 和国防项目同时放量，GDO-1000 获通信/数据中心卡设计 |
+| 极度乐观 | 3.00 亿美元 | 约 +70%—100% | 多个大额 defense program 量产、替代受限 CSAC，软件与 SecureTime 服务 attach 显著增加 |
+
+PNT 不应与广义 AI/数据中心合计相加来宣称“AI 收入”；其价值是降低电信/AI 周期相关性。
+
+## 八、BOM、每 MW/机架/GPU/光端口内容量与价格传导
+
+### 8.1 先澄清“真实内容量”
+
+VIAVI 的仪器通常位于实验室、生产线或现场工具池，不会永久安装在每块 GPU 上。因此有两种不同的内容量：
+
+1. 采购内容量：客户购买一台测试系统时，VIAVI 实际获得的设备/软件收入。
+2. 摊销内容量：把该系统在 3—5 年内支持的芯片、光模块、机架或数据中心项目数量摊薄后的每单位收入。
+
+把一台 D2 的全部价格直接除以 512 个“模拟 GPU/NIC”只能得到实验室并发测试位价格，不能视为每台实际 GPU 的实体 BOM。本报告同时给出两种口径。
+
+### 8.2 测试系统 BOM/价值构成
+
+VIAVI 不披露标准成本和成交价。下表是依据项目内高速互连测试行业报告、典型高端 BERT/流量仪器结构和公司产品规格的 C 级“销售价值分配”，不是会计成本表。
+
+| 系统 | 高速/光学前端 | FPGA/ASIC/CPU/内存 | 时钟/校准 | 机箱/电源/散热 | 软件/协议/自动化 | 服务/渠道 | 其他 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| TestCenter D2/B3 + UET | 28% | 25% | 8% | 8% | 19% | 8% | 4% |
+| ONE-1600 + MAP-300 光学站 | 34% | 20% | 10% | 8% | 17% | 8% | 3% |
+| Xgig PCIe 6 | 20%（interposer/高速 SI） | 32% | 8% | 10% | 20% | 7% | 3% |
+| OneAdvisor/现场光纤工具 | 28%（OTDR/OSA/光功率） | 18% | 8% | 11% | 25% | 8% | 2% |
+| CyberFlood CF1000 | 15%（400G NIC/PHY） | 35% | 5% | 10% | 30% | 5% | 0% |
+| SecurePNT/IMU/INS | 35%（MEMS/Rb/DOCXO/GNSS） | 10% | 15% | 10% | 20%（融合算法） | 10% | 0% |
+
+关键价格传导链：
+
+- GPU/交换 ASIC 升速 → 224G SerDes、800G/1.6T optics、RoCE/UET 协议更复杂 → 每个研发项目需要更多端口、内存、协议 license 和自动化脚本 → VIAVI 设备 ASP/软件 attach 上升。
+- 光模块厂扩产 → 每增加一倍模块产能，通常需要接近一倍测试站；1.6T 的光学复杂度和 lane 数更高，管理层认为测试设备需求可超过简单的 2 倍线性关系。
+- CPO → wafer/PIC、package、switch assembly、system 四次插入 → 测试从单一光模块站扩展为探针台 + ATE + 光学机架，单项目内容显著增加。
+- 成本端内存/FPGA/光学前端涨价 → 领先节点客户更看重及时上市，价格居第二；VIAVI 可通过配置报价、端口 license、软件 option、校准与 support 传导，但已签固定价订单仍可能承压。
+- 标准成熟/硬件虚拟化 → 部分功能转向软件，硬件单价可能下降；但协议包、自动化、流量模型和维护续费提高 recurring mix。
+
+### 8.3 采购内容量与摊销内容量
+
+| 平台 | 单套 VIAVI 采购内容量估算 | 物理能力锚点 | 摊销后每 optical port | 每 GPU | 每 72-GPU rack | 每 MW（350—650 GPU） |
+|---|---:|---|---:|---:|---:|---:|
+| D2/UET AI Fabric | 30—65 万美元/4-port fully configured（C） | 4×1.6T、最多 512 个模拟 GPU/NIC；每 1.6T lab port 7.5—16.3 万美元 | 0.2—1.5 美元 | 0.5—3 美元 | 36—216 美元 | 0.2—2.0 千美元 |
+| ONE/MAP 光模块量产 | 简单站低于 5 万美元；完整 1.6T 站约 5—25 万美元（管理层锚点+C） | 光源、功率、OSA、开关、BERT/FEC；一站多批次复用 | 0.8—5 美元 | 2—12 美元 | 144—864 美元 | 0.7—7.8 千美元 |
+| CPO/OCS 子集 | 数万至 10 万美元以上/机架；完整 cell 约 10—50 万美元（C） | CPO 最多四次插入；300×300 OCS 有 9 万条路径 | 0.4—12 美元/光引擎端口；3—100 美元/CPO package | 0.5—5 美元 | 36—360 美元 | 0.2—3.3 千美元 |
+| Xgig PCIe/CXL | 15—40 万美元/16-lane 系统（C） | 64 GT/s x16，Analyzer/Exerciser/Interposer | 不适用；每 PCIe x16 部署链路约 0.1—1.5 美元 | 0.2—2 美元 | 15—144 美元 | 0.1—1.3 千美元 |
+| 现场光纤/ONMSi | 2—20 万美元/工具池或监控节点（C） | MPO/OTDR/OSA/800G + 远程光开关 | 0.2—1.0 美元 | 0.4—3 美元 | 30—216 美元 | 0.15—2.0 千美元 |
+| CyberFlood/安全 | 10—30 万美元/400G appliance（C） | 多 Tb TLS、AI inference/SmartNIC 压力测试 | 0.05—0.5 美元 | 0.1—1 美元 | 7—72 美元 | 0.04—0.65 千美元 |
+
+摊销假设：设备寿命 3—5 年、跨多个芯片/交换机/模块项目复用；每 GPU 对应约 1.5—3 个等效高速光端点；72 GPU/rack；每 MW 可容纳约 350—650 个高功耗 AI GPU，取决于 80—140 kW 机架、PUE 和配电冗余。不同客户的工具复用率可使结果相差数倍。
+
+合计 VIAVI 直接测试内容的合理区间：
+
+| 情景 | 每 optical port | 每 GPU | 每 72-GPU rack | 每 MW |
+|---|---:|---:|---:|---:|
+| 基准 | 1—3 美元 | 4—8 美元 | 0.3—0.6 千美元 | 2—5 千美元 |
+| 乐观 | 3—6 美元 | 8—15 美元 | 0.6—1.1 千美元 | 4—10 千美元 |
+| 极度乐观 | 6—12 美元 | 15—30 美元 | 1.1—2.2 千美元 | 8—20 千美元 |
+
+这不是数据中心业主在每台 GPU 的独立采购单，而是 VIAVI 在芯片/模块厂、设备厂、hyperscaler 实验室与现场工具链的总收入摊销。最敏感的变量是测试插入次数、生产站吞吐、设备复用年限和客户自研测试比例。
+
+## 九、当前产能、供应链采纳与认证
+
+### 9.1 当前收入产能
+
+公司未披露各产线“台数产能”。最可靠的美元产能锚点是 Q4 FY26 指引：公司季度 4.27—4.37 亿美元、NSE 3.40—3.48 亿美元，分别相当于年化 17.1—17.5 亿和 13.6—13.9 亿美元。管理层进一步提出：如果可见订单全部兑现，未来 4—6 个季度有机会达到约 5 亿美元季度收入、即约 20 亿美元年化运行率，non-GAAP OM 可进入 20% 中段。
+
+| 产品平台 | 当前收入需求年化 | 当前可交付产能估算 | 产能利用/瓶颈 | 当前采纳阶段 | 认证/标准状态 |
+|---|---:|---:|---|---|---|
+| 光模块/ONE/MAP | 2.05 亿 | 2.3—2.7 亿美元 | 75%—90%；光学前端、校准、内存与新产品工程 | 800G 量产 4.5/5；1.6T 早期量产 3/5 | IEEE 802.3dj readiness；无单一统一“仪器认证” |
+| TestCenter D2/UET | 1.95 亿 | 2.1—2.5 亿美元 | 75%—90%；高端 FPGA/ASIC/内存、firm-order 后备料 | B3/A 系列成熟；D2 2.5/5；UET 2/5 | D2 支持 IEEE/ETC/UEC 规范；UET 1.0，尚无公开统一认证计划 |
+| 数据中心现场 | 1.05 亿 | 1.2—1.45 亿美元 | 70%—85%；较易外包扩产，渠道与培训是约束 | 3.5/5 | 以客户施工验收、IEC/IEEE 工作流为主 |
+| Xgig PCIe 6 | 0.47 亿 | 0.55—0.70 亿美元 | 65%—85%；高速 interposer/SI 与软件测试套件 | 3/5 | PCI-SIG Gold Suite，全球 workshop 可用 |
+| CyberFlood | 0.33 亿 | 0.40—0.55 亿美元 | 60%—80%；软件可扩展，400G appliance 受器件约束 | CF1000 2/5 | TLS/PQC/协议支持，不是单一产品认证 |
+| CPO/OCS 子集 | 0.10 亿 | 0.20—0.35 亿美元 | 工程集成、客户 recipe、active alignment/ATE 协调 | 1.5/5 | 客户专项 qualification；尚无统一 CPO 量产认证 |
+| PNT/Inertial | 1.30—1.70 亿 | 1.7—2.2 亿美元 | MEMS/Rb/CSAC 替代件、国防 qualification | 3.5/5 | SecurePNT 6200：PRTC-A、NEBS；各国防项目另行认证 |
+
+供应链结构：
+
+- 截至 FY2025，主要制造设施在中国、法国、德国、英国和美国，重要合同制造商在中国和泰国。
+- 公司尽量双供，但部分材料/组件仍为单一或有限来源；通常以标准 PO 或一年期供货协议采购，没有显著长期保证供货合同。
+- 2026-03-28 对合同制造商预付款从 580 万增至 1,550 万美元，NSE 原材料/库存增加，是为需求上行提前备料的正面信号，也增加库存减值风险。
+- 管理层在 2026-06 Rosenblatt 会议上称内存是当前约束之一；VIAVI 可以为稀缺部件支付更高 ASP，但客户必须提供足够通知期。
+
+### 9.2 一年后产能与采纳情景
+
+| 平台 | 基准：产能 / 采纳 | 乐观：产能 / 采纳 | 极度乐观：产能 / 采纳 | 一年后认证/里程碑 |
+|---|---|---|---|---|
+| ONE/MAP 光学 | 3.3 亿 / 1.6T 3.5/5 | 4.2 亿 / 1.6T 4/5、CPO 2.5/5 | 5.2 亿 / 1.6T 4.5/5、3.2T lab 2/5 | 更多 802.3dj 客户 correlation；CPO 客户 recipe，不假设统一认证 |
+| TestCenter/UET | 3.1 亿 / D2 3.5、UET 3 | 4.0 亿 / D2 4、UET 3.5 | 5.0 亿 / D2 4.5、UET 4 | 多厂商 UET/交换 ASIC interoperability；软件套件 attach 扩大 |
+| 现场光纤 | 1.65 亿 / 4 | 2.10 亿 / 4.25 | 2.60 亿 / 4.5 | hyperscaler/承包商标准工作流与 StrataSync 接入增加 |
+| Xgig | 0.85 亿 / PCIe 6 4 | 1.20 亿 / 4.25 | 1.60 亿 / 4.5、PCIe 7 early 2 | Gold Suite 转化为更多 workshop/Integrators List 项目；PCIe 7 alpha |
+| CyberFlood | 0.65 亿 / 3 | 0.90 亿 / 3.5 | 1.20 亿 / 4 | PQC/AI inference benchmark 进入采购规范 |
+| CPO/OCS 子集 | 0.45 亿 / 2.5 | 1.00 亿 / 3.25 | 1.60 亿 / 4 | 由 demo/rack 转到客户量产 qualification |
+| PNT/Inertial | 2.50 亿 / 4 | 3.20 亿 / 4.25 | 4.00 亿 / 4.5 | 新国防 platform design-in；GDO-1000/IRINS 客户专项认证 |
+| 公司总产能 | 约 20—21 亿美元 | 约 23—24 亿美元 | 约 26—27 亿美元 | 管理层 20 亿运行率目标位于基准与乐观交界 |
+
+极度乐观产能不是现有工厂的已确认能力，要求：关键器件双供、合同制造商扩线、新系统校准/良率顺利、Spirent IT/ERP 和销售体系整合完成、客户提前 2—3 个季度下 firm order。
+
+## 十、按真实订单与供给推演未来一年增速
+
+### 10.1 公司情景
+
+FY2026 按 Q4 指引中值的基数为 15.072 亿美元。以下为 FY2027 收入模型：
+
+| 指标 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| FY2027 总收入 | 17.8—18.5 亿美元 | 20.0—21.0 亿美元 | 22.5—24.0 亿美元 |
+| 总收入增速 | +18%—23% | +33%—39% | +49%—59% |
+| 广义 AI/数据中心收入 | 7.8—8.3 亿美元 | 9.2—10.2 亿美元 | 11.0—12.5 亿美元 |
+| AI 数据中心增速 | +26%—34% | +48%—65% | +77%—102% |
+| NSE non-GAAP OM | 20%—22% | 23%—25% | 26%—28% |
+| 公司 non-GAAP OM | 21%—23% | 24%—26% | 27%—29% |
+| 有效取消/滑移假设 | 3%—5% | 1%—3% | 0%—2% |
+| 供应利用率 | 75%—85% | 80%—90% | 90% 以上 |
+| 概率主观权重 | 55% | 30% | 10%；余下为下行情景 |
+
+基准与当前市场 FY2027 收入一致预期约 18 亿美元接近；乐观情景接近管理层“4—6 个季度达到 5 亿美元季度运行率”并在 FY2027 后半段兑现；极度乐观要求 5.5—6 亿美元季度收入，明显超过公司公开目标。
+
+### 10.2 为什么订单足以支持基准、但不足以单独证明极度乐观
+
+- 5.338 亿美元 RPO、其中 4.91 亿未来 12 个月确认，为收入提供底部，但只覆盖基准 FY2027 收入的约 27%。
+- 干净季度的 RPO 桥接 B2B 大致为 1.03—1.15 倍，说明需求持续高于收入；FY2026 Q3 约 1.10 倍。
+- 管理层看到 2—3 季度项目，并称部分客户讨论未来两年交付；这支持 FY2027 上半年，但不是不可取消的两年 backlog。
+- Spirent Q2 的延后项目在 Q3 确认，说明当前主要风险是采购/验收时点，而非已观察到的大规模取消。
+- 光模块测试 18 个月 3 倍、现场产品 >50% 增长、1.6T/CPO/OCS 产品节点共同支持基准/乐观；但这些百分比不能直接外推到整个 NSE。
+- 公司没有长期保供，快速上修会先遇到内存、FPGA/ASIC、光学件和工程校准约束；极度乐观依赖客户提前下 firm order。
+
+最关键的订单验证项不是单一 backlog 数，而是 2026-08 财报中同时出现：Q4 收入高于 4.37 亿美元、RPO 继续超过 5.3 亿、数据中心达到或超过 NSE 50%、FY2027 指引不低于 18 亿、经营现金流明显改善。
+
+## 十一、竞争格局、技术主流性、替代风险与客户切换成本
+
+### 11.1 分产品竞争
+
+| 产品市场 | 主要竞争对手 | VIAVI 优势 | 风险/替代方案 | 客户切换成本 |
+|---|---|---|---|---|
+| 高速以太网/AI Fabric L2—3 | Keysight/Ixia、Anritsu、Teledyne Xena、EXFO、MultiLane | Spirent TestCenter installed base、D2 1.6T、UET/CCL 软件；Layer 0—7 组合 | Keysight 以 224G/1.6T 全栈反击；客户自研流量发生器、开源 TRex 降低部分软件门槛 | 高：脚本、基准数据、端口 license、结果 correlation、工程师训练 |
+| 光模块/SiPho L0/1 | Keysight、Anritsu、Yokogawa、Santec、EXFO、MultiLane/Teradyne、Quantifi | ONE/MAP 模块化、向后兼容、光学量产 installed base | 标准化模块、客户自制低成本 station；竞争对手整合 DCA/BERT/OSA | 中高：自动化 recipe、校准、fixture、历史良率 correlation |
+| CPO/OCS | Keysight、FormFactor/Keystone、Advantest、Teradyne/Quantifi、ficonTEC、PI、SUSS/MPI | 已有光源/功率/OSA/开关与生产自动化；CPO 四次插入扩大内容 | 全套 ATE/prober 厂商向光学扩张；CPO 架构/标准变化；客户自研 cell | 高但尚未固化：早期设计期可替换，量产 recipe 固化后很高 |
+| PCIe/CXL | Keysight、Teledyne LeCroy、Anritsu、Synopsys/Cadence validation | Analyzer/Exerciser 同机、Xgig 软件、PCI-SIG Gold | LeCroy/Keysight 品牌与物理层能力强；标准工具互操作降低锁定 | 高：compliance suite、trace workflow、interposer 库、工程培训 |
+| 现场光纤/监控 | EXFO、Anritsu、VeEX、AFL、Fluke Networks、Luna | 从手持 OTDR/OSA 到 ONMSi/StrataSync 的端到端流程 | 手持工具价格竞争；承包商可混用品牌 | 中：单台工具易换，云端资产/流程/历史 trace 提高粘性 |
+| 网络安全/AI inference | Keysight BreakingPoint/Ixia、开源流量工具、专业安全测试商 | CyberFlood、CF1000、真实应用/TLS/PQC 模型，与 TestCenter 共平台 | 软件化降低硬件壁垒；云原生负载工具替代部分需求 | 中高：测试库、攻击/应用模型和重复基准形成粘性 |
+| PNT/Inertial | Honeywell、Collins、Northrop、Safran、KVH、SBG Systems、VectorNav、Advanced Navigation | IMU/INS + SecureTime + 测试仪器组合；算法与国防客户 | 大型国防 primes 自制；出口许可、项目延后、MEMS 价格下降 | 很高：设计认证、飞行/武器平台 qualification、软件融合 |
+| OSP | SICPA 生态、Giesecke & Devrient、Crane NXT、Merck、Coherent、ams OSRAM | 专有颜料/涂层与长期 banknote 关系 | 客户集中、纸币发行周期和替代防伪技术 | 高，但单一大客户风险明显 |
+
+公司 FY2025 10-K 列示 NSE 主要竞争者为 Anritsu、EXFO、Keysight、NetScout、Riverbed、Rohde & Schwarz、VeEX 和当时尚独立的 Spirent；OSP 对手包括 Giesecke & Devrient、Crane NXT、Merck、FYOTEC、Materion、Crystal-Optech、Coherent、ams OSRAM。[FY2025 10-K](https://www.sec.gov/Archives/edgar/data/912093/000091209325000096/viav-20250628.htm)
+
+### 11.2 是否是未来主流
+
+- 800G/1.6T 可插拔光模块：确定是未来 12—24 个月主流，VIAVI 当前产品直接对位；800G 仍是数量主力，1.6T 是增量主力。
+- Ethernet/UET AI Fabric：Ethernet 在 scale-out 中快速扩大，UET 1.0 提高多厂商互操作与拥塞控制；但 InfiniBand/NVLink/NVSwitch/专有 scale-up fabric 仍是替代。VIAVI 的厂商中立流量测试可同时服务多架构，降低单标准押注风险。
+- PCIe 6/7、CXL、UALink：GPU、NIC、DPU、retimer、存储和内存扩展均需要，验证需求确定；但协议栈和物理层竞争最强。
+- CPO/OCS：中长期主流概率高，短期量产节奏不确定。对 VIAVI 而言，CPO 不是替代可插拔测试收入的纯威胁，因为四次插入和光学/电气联合验证会增加测试价值；风险是客户/ATE 厂商自研整套 cell。
+- 3.2T：未来主流研发节点，但未来一年主要是实验室和早期样机收入，不能提前当成量产。
+- AI inference security testing：产品方向合理，当前收入小；通用云压测和开源工具是替代。
+
+### 11.3 定价权的真实边界
+
+美国 HSE 市场在交易前由 Keysight 与 Spirent 合计约 85%，DOJ 认为其他参与者客户更少、技术方案更弱；剥离后 VIAVI 与 Keysight 形成更清晰的双寡头。管理层称两者各约 40%—45%，但这是公司陈述，不是经审计的全球份额。
+
+VIAVI 的定价权最强于：
+
+- 1.6T/UET/PCIe 6 等客户 time-to-market 优先于价格的节点；
+- 已经固化脚本、自动化流程和 correlation 数据的 installed base；
+- 需要正式 compliance 或跨供应商互操作的项目；
+- 软件 license、协议包、维护和校准。
+
+定价权较弱于成熟手持仪表、标准 OTDR、传统低速以太网以及客户可自研的简单生产测试。
+
+## 十二、风险、催化剂与监控清单
+
+### 12.1 主要风险
+
+1. 估值风险：当前 forward P/E 约 35 倍、TTM P/S 7.7 倍，若 FY2027 仅增长低双位数，估值压缩可能大于 EPS 增长。
+2. AI 资本开支节奏：测试收入领先部署，也可能在客户实验室一次性扩容后出现消化期。
+3. 并购整合：Spirent 产品、销售、ERP、员工和研发路线整合；Inertial Labs earn-out 与估值；高商誉减值风险。
+4. GAAP 盈利质量：无形资产摊销、SBC、重组和或有对价令 non-GAAP 与 GAAP 差异长期存在。
+5. 供应链：单/有限来源器件、合同制造商、内存/FPGA/光学前端，且无显著长期保证供货。
+6. 竞争：Keysight 在 224G/1.6T、AI Fabric、PCIe 和 CPO 可进行组合定价；LeCroy、Anritsu、EXFO 在细分市场强。
+7. 标准风险：UET、UALink、CPO/OCS、3.2T 路线和量产窗口可能延后，客户选择专有 fabric。
+8. 客户集中：FY2025 有一个客户贡献公司 10% 以上收入；OSP 依赖 SICPA 营销关系；hyperscaler 项目可能产生季度波动。
+9. 营运资本/现金流：存货与应收快速增长，需转为回款；TTM FCF margin 仅约 3.3%。
+10. 稀释：5 月增发后仍有深度价内可转债、RSU；基础市值低估经济摊薄后的估值。
+
+### 12.2 未来两个季度的硬验证指标
+
+| 指标 | 正面阈值 | 警戒阈值 |
+|---|---:|---:|
+| FY2026 Q4 总收入 | >4.37 亿美元 | <4.27 亿美元 |
+| NSE 收入 | >3.48 亿美元 | <3.40 亿美元 |
+| 数据中心占 NSE | ≥50% 且继续升 | 回落至 <45% |
+| RPO | >5.5 亿美元且 12 月内比例稳定 | <5.0 亿或增长只来自并购重分类 |
+| NSE non-GAAP OM | ≥19% | <18% |
+| Spirent 单季收入 | ≥4,800—5,000 万美元正常化 | <4,500 万且再次以 timing 解释 |
+| 经营现金流 | 明显高于净利润、存货增速放缓 | 应收/库存继续快于收入 |
+| FY2027 收入指引 | ≥18 亿美元；退出运行率向 20 亿 | <17.5 亿 |
+| CPO/OCS | 出现客户数、测试机架或收入量级披露 | 继续只有 demo/“未来 2—3 季度” |
+| D2/UET/PCIe 6 | 公开 hyperscaler/NEM/ASIC 设计采用 | 只有展会奖项，无订单或量产证据 |
+
+## 十三、估值情景与最终判断
+
+按 43.08 美元、基础市值 105.6 亿美元和增发后接近净债务中性估算，EV 约 106 亿美元：
+
+| 情景 | FY2027 收入 | EV/S | 假设 non-GAAP OM | 估值含义 |
+|---|---:|---:|---:|---|
+| 基准 | 18.0 亿美元附近 | 约 5.9x | 21%—23% | 基本对应当前一致预期；估值不便宜，需要稳定执行 |
+| 乐观 | 20.5 亿美元附近 | 约 5.2x | 24%—26% | 5 亿美元季度运行率兑现，当前价格开始有盈利上修支撑 |
+| 极度乐观 | 23.2 亿美元附近 | 约 4.6x | 27%—29% | 1.6T/UET/CPO/PCIe 同时爆发；需要明显超出公开目标 |
+
+若公司达到 20 亿美元年化收入、non-GAAP OM 25%，营业利润约 5 亿美元。按低净债务、约 20% 税率和 2.60 亿完全摊薄股数粗算，调整后 EPS 约 1.45—1.55 美元，43.08 美元仍对应约 28—30 倍。因此当前股价已经把“达到 20 亿美元运行率”部分计入，投资回报更依赖 20 亿之后的持续增长，而不是仅仅达到该目标。
+
+最终定位：
+
+- 业务：AI 数据中心测试与验证的稀缺平台，兼具 PNT/A&D 第二成长曲线和 OSP 现金牛。
+- 产业链地位：不是 GPU/光模块实体 BOM 供应商，而是从芯片、光模块、交换机到数据中心现场的关键测试工具层；技术迭代越快、互操作越复杂，内容量越高。
+- 护城河：HSE 双寡头、Layer 0—7 组合、installed base、软件脚本/校准/认证与客户流程；不是全产品垄断。
+- 财务：收入和利润率处于上行周期，资产负债表显著改善；GAAP 盈利、现金流和摊薄仍需验证。
+- 股票：基本面偏强、估值也强。基准情景下安全边际有限；乐观情景需看到 RPO、现金流、1.6T/UET/CPO 订单和 NSE margin 同时兑现。
+
+## 十四、主要来源与项目内行业交叉验证
+
+### 公司与监管一手资料
+
+- [FY2026 Q3 业绩公告](https://investor.viavisolutions.com/news-events/news-releases/news-details/2026/VIAVI-Announces-Third-Quarter-Fiscal-2026-Results/default.aspx)
+- [FY2026 Q3 Form 10-Q](https://www.sec.gov/Archives/edgar/data/912093/000162828026028926/viav-20260328.htm)
+- [FY2026 Q2 Form 10-Q](https://www.sec.gov/Archives/edgar/data/912093/000162828026004138/viav-20251227.htm)
+- [FY2026 Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/912093/000091209325000153/viav-20250927.htm)
+- [FY2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/912093/000091209325000096/viav-20250628.htm)
+- [FY2025 Q3 Form 10-Q](https://www.sec.gov/Archives/edgar/data/912093/000091209325000028/viav-20250329.htm)
+- [FY2025 Q2 Form 10-Q：RPO 前序基线](https://www.sec.gov/Archives/edgar/data/912093/000091209325000012/viav-20241228.htm)
+- [2026-05 股权发行及偿债 8-K](https://www.sec.gov/Archives/edgar/data/912093/000114036126022337/ef20074430_8k.htm)
+- [美国司法部对 Keysight/Spirent 的反垄断处置](https://www.justice.gov/opa/pr/justice-department-requires-keysight-to-divest-assets-to-proceed-spirent-acquisition)
+- [2026-06 Rosenblatt Age of AI 会议文字记录](https://stockanalysis.com/stocks/viav/transcripts/683376-rosenblatt-6th-annual-age-of-ai-technology-summit/)
+- [2026-05 投资者更新文字记录](https://stockanalysis.com/stocks/viav/transcripts/676113-investor-update/)
+
+### 产品、会议与技术资料
+
+- [TestCenter D2 1.6T 发布](https://www.viavisolutions.com/en-us/news-releases/viavi-launches-testcenter-d2-16t-appliance-accelerate-ai-infrastructure-rollouts-across-hyperscale)
+- [AI Data Center Networking Test 产品组合](https://www.viavisolutions.com/en-us/solutions/ai-data-center-networking-test)
+- [UET Validation 发布](https://www.prnewswire.com/news-releases/viavi-launches-industrys-first-validation-solution-for-ultra-ethernet-transport-accelerating-ai-data-center-deployments-302806300.html)
+- [PCIe 6.0 Gold Suite acceptance](https://www.viavisolutions.com/de-de/node/133165)
+- [OFC 2026：AI Fabric 与 optical test 展示](https://investor.viavisolutions.com/news-events/news-releases/news-details/2026/VIAVI-to-Showcase-Breakthrough-AI-Fabric-and-Optical-Test-Advances-at-OFC-2026/default.aspx)
+- [OFC 2026：1.6T 主流化与 3.2T](https://blog.viavisolutions.com/2026/04/23/ofc-2026-1-6t-going-mainstream-the-emergence-of-3-2t/)
+- [MAP-300 光学实验室/量产平台](https://www.viavisolutions.com/en-us/products/map-300-multiple-application-platform)
+- [OneAdvisor 800 Transport](https://www.viavisolutions.com/en-us/products/oneadvisor-800-transport-platform)
+- [ONMSi Remote Fiber Test and Monitoring](https://www.viavisolutions.com/en-us/products/remote-fiber-test-and-monitoring)
+- [SecurePNT 6200](https://www.viavisolutions.com/en-us/products/securepnt-6200-series)
+- [Lightwave 2026 Innovation Reviews](https://www.lightwaveonline.com/home/article/55336692/2026-lightwave-innovation-reviews-honorees)
+
+### 项目内行业资料
+
+- [高速互连与光学验证测试行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-07-10.md)：用于市场规模、产品毛利率、测试设备 BOM、PCIe/CXL/UET/CPO 子市场和供应紧张度基线。
+- [800G/1.6T 可插拔光模块行业调研](../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md)：用于光模块 ASP、1.6T 量产节奏和每 GPU 等效光端点基线。
+- [CPO/NPO 行业调研](../../行业调研/AI网络_光互联_铜互联/行业调研_CPO_NPO与交换侧光引擎_2026-07-10.md)：用于 CPO 测试插入、102.4T 交换架构和硅光量产验证交叉检查。
+- [LPO/LRO 行业调研](../../行业调研/AI网络_光互联_铜互联/行业调研_LPO_LRO线性光模块_2026-07-10.md)：用于线性光学路线、1.6T 模块测试复杂度和替代路径。
+
+---
+
+本报告为研究分析，不构成证券买卖建议。产品收入、产品毛利率、售价、单位内容量和产能场景均因公司未按产品披露而包含较大模型误差，后续应以 FY2026 Q4/FY2027 指引、RPO、现金流与公开客户采用为准持续更新。

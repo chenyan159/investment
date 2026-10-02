@@ -1,0 +1,140 @@
+[
+  {
+    "item": "HBM 2027基准收入B",
+    "actual": 124.95,
+    "expected": 124.95,
+    "pass": true
+  },
+  {
+    "item": "HBM 前道供给2027 EB",
+    "actual": 6.22656,
+    "expected": 6.22656,
+    "pass": true
+  },
+  {
+    "item": "HBM 2027条件缺口比例",
+    "actual": 0.041250402835965226,
+    "expected": 0.04125,
+    "pass": true
+  },
+  {
+    "item": "ASIC 2027收入B",
+    "actual": 105.3,
+    "expected": 105.3,
+    "pass": true
+  },
+  {
+    "item": "液冷2026有效供给GW",
+    "actual": 9.599999999999998,
+    "expected": 9.6,
+    "pass": true
+  },
+  {
+    "item": "液冷2026收入B",
+    "actual": 3.8614,
+    "expected": 3.8614,
+    "pass": true
+  },
+  {
+    "item": "Neo2027需求B",
+    "actual": 62.18000000000001,
+    "expected": 62.18,
+    "pass": true
+  },
+  {
+    "item": "Neo2027供给收入B",
+    "actual": 62.475,
+    "expected": 62.475,
+    "pass": true
+  },
+  {
+    "item": "电力Goldsboro下界GVA",
+    "actual": 1.92,
+    "expected": 1.92,
+    "pass": true
+  },
+  {
+    "item": "电力Charlotte上界GVA",
+    "actual": 5.415,
+    "expected": 5.415,
+    "pass": true
+  },
+  {
+    "item": "Google2026经营利润B",
+    "actual": 164.086,
+    "expected": 164.086,
+    "pass": true
+  },
+  {
+    "item": "Google2027经营现金B",
+    "actual": 210.072,
+    "expected": 210.072,
+    "pass": true
+  },
+  {
+    "item": "美光延续收入B",
+    "actual": 202.78008,
+    "expected": 202.78008,
+    "pass": true
+  },
+  {
+    "item": "美光压力FCFB",
+    "actual": 14.033379999999994,
+    "expected": 14.03338,
+    "pass": true
+  },
+  {
+    "item": "闪迪调整FCFB",
+    "actual": 8.742999999999999,
+    "expected": 8.743,
+    "pass": true
+  },
+  {
+    "item": "闪迪预测收入B",
+    "actual": 42.379064,
+    "expected": 42.379064,
+    "pass": true
+  },
+  {
+    "item": "GNRC退款剔除EBITDA百万",
+    "actual": 219.6,
+    "expected": 219.6,
+    "pass": true
+  },
+  {
+    "item": "GNRC2027正常化EBITDA B",
+    "actual": 1.1351999999999998,
+    "expected": 1.1352,
+    "pass": true
+  },
+  {
+    "item": "CRWV RPO两年确认B",
+    "actual": 42.516999999999996,
+    "expected": 42.517,
+    "pass": true
+  },
+  {
+    "item": "SMCI优先股年度股息B",
+    "actual": 0.301875,
+    "expected": 0.301875,
+    "pass": true
+  },
+  {
+    "item": "AVGO2027调整OM B",
+    "actual": 95.30000000000001,
+    "expected": 95.3,
+    "pass": true
+  },
+  {
+    "item": "CRDO指引下半年收入百万",
+    "actual": 1460.9616000000003,
+    "expected": 1460.9616,
+    "pass": true
+  },
+  {
+    "item": "CRDO预测FCF百万",
+    "actual": 843.5625,
+    "expected": 843.5625,
+    "pass": true
+  }
+]

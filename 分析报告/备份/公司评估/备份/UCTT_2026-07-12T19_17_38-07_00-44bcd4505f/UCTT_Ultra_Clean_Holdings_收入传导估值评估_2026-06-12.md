@@ -1,0 +1,175 @@
+# 公司收入传导与价值传导评估：Ultra Clean Holdings（UCTT）
+
+报告日期：2026-06-12  
+公司代号：UCTT  
+公司名称：Ultra Clean Holdings, Inc.  
+主口径：NTM，定义为 2026Q2-2027Q1 四个季度。  
+边界说明：本报告只评估行业需求到公司可确认收入、利润和经营质量的传导，不讨论金融市场定价或跨公司排序。资料使用 `公司调研/`、`行业调研/` 以及公司公告、SEC、IR、SEMI 等外部一手资料；未使用排除目录内容。  
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM，即 2026Q2-2027Q1；FY2026、FY2027、长期 revenue vision 或产能上限只作为补充，不替代 NTM。
+- 当前收入基准、指引和 run-rate：2026Q1 收入 `5.337 亿美元`，Products `4.657 亿美元`、Services `0.680 亿美元`；2026Q2 指引收入 `5.65-6.05 亿美元`，中点 `5.85 亿美元`；Q1 年化 run-rate 约 `21.35 亿美元`，Q2 指引中点年化约 `23.40 亿美元`。FY2025 收入 `20.540 亿美元`，Products `17.993 亿美元`、Services `2.547 亿美元`。
+- 重要产品/业务线：Gas & Chemical Delivery / fluid modules；System Integration / Mechatronics / precision assemblies；Thermal Solutions；Services cleaning / coating / ChemTrace / refurb；Fab/subfab infrastructure / HIS related；其他低差异化 Products 与 Non-semi。
+- NTM 公司收入四情景：悲观 `22.0-23.5 亿美元`；基准 `24.5-26.5 亿美元`；乐观 `27.0-29.5 亿美元`；极度乐观 `30.5-33.5 亿美元`。基准不是把 AI WFE 热度直接外推，而是 Q2 指引兑现、H2 温和环比增长、Services 继续双位数增长和 Products 利用率修复的组合。
+- 利润或 EBITDA 四情景：悲观 non-GAAP 毛利率 `15.0-16.2%`、经营利润率 `3.5-5.0%`；基准 non-GAAP 毛利率 `16.8-18.2%`、经营利润率 `6.0-7.5%`；乐观 `18.0-19.5%`、`7.5-9.5%`；极度乐观 `19.5-22.0%`、`9.5-12.5%`。Products 是低毛利高杠杆，Services 是质量更高但规模较小。
+- 最大传导瓶颈：从 Lam / Applied Materials / TEL / KLA 等主设备厂和晶圆厂 WFE 需求，到 UCTT 的可确认收入之间缺少公开 backlog、bookings、book-to-bill、取消率和产品型号级收入披露。
+- 最大利润率变量：Products 分部毛利率能否从 Q1 2026 non-GAAP `14.6%` 向 `16-18%` 修复；这取决于利用率、产品 mix、BOM pass-through、UHP 焊接/洁净装配效率和客户议价。
+- 最大现金流变量：Q1 2026 存货增加 `9100 万美元`、经营现金流 `-3330 万美元`。如果 Q2-Q4 出货兑现，库存是备货信号；如果客户推迟交付，库存会变成毛利和现金流压力。
+- 可信度：基准公司情景为中高；产品级拆分为中，因为 Services 和 Products 段收入是 A 级证据，但 Products 内部细分收入主要是 C 级模型估算。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Gas & Chemical Delivery / fluid modules | 2026Q1 估算 `1.60-2.15 亿美元/季` | 约 `30-40%` | UCTT 最直接的 AI WFE 传导产品；对应 gas panels、gas sticks、chemical cabinets、UHP welding、process tool/fab infrastructure modules | 段收入 A；产品拆分 C | 进入基准，但用保守折扣；收入确认依赖 OEM build schedule、交付、验收和客户 PO | HBM4 / hybrid bonding / advanced packaging chemical modules 超预期导入 |
+| System Integration / Mechatronics / precision assemblies / weldments | 2026Q1 估算 `1.85-2.40 亿美元/季` | 约 `35-45%` | 规模最大、周期杠杆强；包括 sub-assemblies、weldments、mechatronics、thermal/mechanical/fluid/pneumatic assemblies | 段收入 A；产品拆分 C | 进入基准；但毛利率和份额需打折，不能按核心器件估值逻辑看 | 新平台 NPI / co-innovation 带来更高工程含量 |
+| Thermal Solutions / heaters / thermocouples / controllers | 2026Q1 估算 `0.15-0.40 亿美元/季` | 约 `3-8%` | 小基数但结构重要；ALD/CVD/etch 前驱体、gas line、exhaust heater 和 sensor/control 需求上升 | C | 小比例进入基准；高成长部分进入乐观 | GAA、ALD/ALE、新前驱体、backside power 带来的定制热控内容量 |
+| Services：cleaning / coating / ChemTrace / refurb | 2026Q1 官方 `0.680 亿美元/季` | `12.7%` | 质量最高业务；non-GAAP GM `30.0%`，与先进节点、HBM、HAR etch、PM cycle 和微污染控制直接相关 | A | 进入基准；按 Services 官方收入和增长处理 | sensorized / predictive service、更多 coating recipe、长期服务合同 |
+| Fab/subfab infrastructure / HIS related | 未单列；2026Q1 估算 `0.20-0.45 亿美元/季`，与 Products/Services 有重叠 | 无法可靠量化 | 扩展 tool hook-up、gas/water/effluent、abatement interface、subfab analysis；可能提升项目性收入 | C/D | 不单独加总进入基准，作为 Gas/System/Services 的交叉能力处理 | 若 HBM P&T / advanced packaging 厂务和 tool hook-up 提前，进入乐观/极度乐观 |
+| 其他 Products / Non-semi / 低差异化组件 | Q1 industry footprint 中 Non-semi 约 `4%`；其他低差异化 Products 无法可靠拆分 | 约 `4-15%` | 抵消项；可维持规模但 AI/WFE 传导弱，毛利率和定价权较低 | A/C | 进入公司总收入，但不作为增长主线 | 不纳入远期期权 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不评估 UCTT 份额、收入确认或利润率。需求锚来自 SEMI 2026Q1 全球半导体设备 billings `365.5 亿美元`、同比 `+14%`，2026 年 300mm 前道设备支出约 `1420 亿美元`、同比 `+25%`，以及项目内行业调研对半导体设备子系统、流体模块、高纯气体/化学流体和 AI 芯片前道设备的分产品需求区间。所有需求均与该产品自身当前预期比较，不把 AI 数据中心总 CapEx 直接当 UCTT 需求。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Gas & Chemical Delivery / fluid modules | 行业调研估算 gas box/gas panel/gas stick/chemical delivery subsystem 未来 12 个月需求池 `42-65 亿美元`；Ichor/UCT Q1/Q2 指引同步改善 | `35-42 亿美元`；WFE 订单后移，OEM 外包率不升反降 | `42-65 亿美元`；HBM3E、N3/N2、advanced packaging 正常拉动 | `65-85 亿美元`；H2 tool pull-in、客户提前锁交期 | `85-110 亿美元`；HBM4/Rubin/MI400/ASIC 同时提前、module allocation 出现 | 相对基准从 `-15%` 到 `+70%` | 基准=符合当前行业和公司指引；乐观=高于当前预期；极度乐观=NTM 上限 | 正向：SEMI billings、WFE OEM 指引、Ichor/UCT Q2 guide；反证：Lam/AMAT/TEL/KLA 指引回落、客户转内制、gas panel 价格重谈 |
+| System Integration / Mechatronics / precision assemblies | 行业调研估算 precision chamber assemblies、weldments、cleaning/refurb 未来 12 个月需求池 `52-78 亿美元`；UCT Products Q1 年化 `18.63 亿美元` | `44-52 亿美元`；build schedule 放缓、普通组件转二供或内制 | `52-78 亿美元`；WFE build 正常上行，NPI 工程量增加 | `78-105 亿美元`；客户压缩交期、复杂 subassemblies 供应紧 | `105-130 亿美元`；多地区先进 fab 同步抢交付 | 相对基准从 `-15%` 到 `+67%` | 基准=符合 WFE 上修和 Q2 指引；乐观=明显强于当前路径 | 正向：AI 设备订单从 billings 和设备商指引兑现；反证：普通 machining/tubing 价格竞争、客户重新内制 |
+| Thermal Solutions | ALD/ALE、precursor vapor delivery、gas line/exhaust thermal control 属于小但增长快的先进节点需求；行业相邻 ALD/ALE vapor delivery 未来 12 个月需求 `5-11 亿美元` | `3-5 亿美元`；客户 NPI 延迟，热控仍为定制小批量 | `5-11 亿美元`；GAA/ALD/ALE 需求正常增长 | `11-18 亿美元`；新前驱体和 exhaust control 成为平台痛点 | `18-30 亿美元`；客户把定制热控标准化到更多 tool family | 相对基准从 `-40%` 到 `+170%` | 基准=小比例兑现；乐观=高增长但仍非主收入 | 正向：GAA、selective etch、ALD/ALE 增加；反证：客户把 thermal 集成给主设备或其他组件供应商 |
+| Services cleaning / coating / ChemTrace | UCTT 2026Q1 Services `0.680 亿美元`、YoY `+10.4%`、non-GAAP GM `30.0%`；先进节点 PM cycle 和微污染控制需求上升 | 需求持平到低个位数增长；晶圆厂 utilization 或 PM 频率不及预期 | `+10-20%`；先进节点和 HBM 产线 PM/cleaning 正常增长 | `+25-40%`；coating、ChemTrace、refurb attach 增加 | `+45-75%`；服务站 capacity 和 recipe qualification 成瓶颈 | NTM Services 需求从约 `2.7 亿美元` run-rate 到 `4.0 亿美元+` 上限 | 基准=略高于公司历史增速；乐观=高于当前预期 | 正向：Services 连续增长且毛利高；反证：晶圆厂开工率下滑、OEM/晶圆厂内制服务 |
+| Fab/subfab infrastructure / HIS related | 半导体高纯水、气体与化学流体系统行业 2026 可投资收入池基准 `360-520 亿美元`；但 UCTT 可确认项目份额不透明 | 项目延期，HIS 相关能力难以转成 NTM 收入 | tool hook-up、gas/water/effluent modules 随现有客户正常转收入 | HBM P&T、advanced packaging、fab expansion 工程/模块加速 | subfab / high-purity installation 成行业 bottleneck，客户打包采购 | UCTT 可参与需求大，但可确认收入无法可靠量化 | 只把可收入化部分纳入；需求本身乐观不等于收入 | 正向：Air Liquide / Air Products 等项目显示半导体高纯设施强需求；反证：项目型收入验收慢、EPC/气体公司/Exyte/Kinetics 抢份额 |
+| 其他 Products / Non-semi | Q1 industry footprint 中 Non-semi 约 `4%`；普通组件需求跟随工业和成熟 WFE | 低个位数下滑 | 持平到低个位数增长 | 随 WFE 利用率小幅恢复 | 不设极度乐观主线 | 对总收入影响小，更多是抵消项 | 低于核心 WFE 需求 | 反证：若普通件价格战，收入存在但利润不留下来 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断哪些外部需求能进入 UCTT NTM 收入表，以及当前可收入化基数是多少；不预测增长，不判断利润率。公司能参与 AI WFE、HBM、advanced packaging、高纯流体或 subfab 需求池，不等于 UCTT 能在 NTM 确认收入。证据等级按收入表可确认性定义：Products/Services 段收入和 Q2 指引为 A；具体产品线拆分多为 C；未量化 pipeline 或产品页能力为 D；只有主题相关为 E。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Gas & Chemical Delivery / fluid modules | Products 分部 Q1 `4.657 亿美元`；产品拆分估算 `1.60-2.15 亿美元/季`；Q2 指引推高 Products run-rate | 直接供应 WFE OEM / tool / fab infrastructure；AI 为间接制造需求 | 低到中毛利，高利用率杠杆；BOM pass-through 明显 | `6.2-7.5 亿美元` | `7.5-9.5 亿美元` | `9.5-11.5 亿美元` | `12.0-14.0 亿美元` | 基准符合 Q2 指引和 H2 ramp；乐观高于当前预期 | 段 A，拆分 C | 是 | 已在 Products 收入表；公司产品页和行业资料支持产品存在；但没有产品级 backlog | 基准纳入；极度乐观需要 OEM pull-in、外包份额提升和交付不受 UHP 焊接/组件约束 |
+| System Integration / Mechatronics / precision assemblies | Products 分部 Q1 `4.657 亿美元`；产品拆分估算 `1.85-2.40 亿美元/季` | 直接供应主设备 subassemblies；间接受益于 AI WFE | 低毛利、强规模效应；普通件价格权弱 | `7.2-8.8 亿美元` | `8.5-10.5 亿美元` | `10.5-12.5 亿美元` | `13.0-15.5 亿美元` | 基准=Products 正常扩产；乐观=客户锁产/加急 | 段 A，拆分 C | 是 | 已在 Products 收入表；客户 qualification 和制造 footprint 支持 | 基准纳入；但不把普通 build-to-print 当高壁垒收入 |
+| Thermal Solutions | Products 中未单列；产品页能力明确；估算 `0.15-0.40 亿美元/季` | 直接进入先进 ALD/CVD/etch 工具；AI 为间接 | 毛利可能高于普通 Products，但体量小、NPI 风险高 | `0.4-0.7 亿美元` | `0.8-1.5 亿美元` | `1.5-2.5 亿美元` | `2.5-4.0 亿美元` | 基准仅小比例；乐观/极度乐观才体现结构变化 | C/D | 是，小比例 | 产品能力真实，但 NTM 平台级导入和收入拆分不透明 | 小额纳入基准；高成长部分进入乐观和极度乐观 |
+| Services cleaning / coating / ChemTrace / refurb | 2026Q1 官方 Services `0.680 亿美元`，Q1 年化 `2.72 亿美元`；FY2025 Services `2.547 亿美元` | 直接面向晶圆厂/IDM/OEM installed base；AI 为间接 | 高毛利、高粘性、服务/耗材属性 | `2.7-3.0 亿美元` | `3.0-3.4 亿美元` | `3.4-4.0 亿美元` | `4.2-5.0 亿美元` | 基准略高于当前 run-rate；乐观需服务 attach 上修 | A | 是 | 官方段收入、毛利率和 YoY 增长可确认 | 基准纳入；是 UCTT 利润质量最好的收入 |
+| Fab/subfab infrastructure / HIS related | HIS 收购能力、产品页和行业需求可见，但公司未单列收入；与 gas/system/services 重叠 | 可直接参与 fab/subfab projects；收入确认依赖项目验收 | 项目性强，毛利受工程和验收影响 | `无法可靠量化` | `无法可靠量化`，仅作为上面分项内嵌收入 | `1.0-2.0 亿美元`，若项目显性化 | `2.0-4.0 亿美元`，上限且可信度低 | 当前预期中只作为能力，不作为单独基准 | C/D | 否，不单独加总 | 缺少独立收入、订单和验收时间表 | 移入乐观/极度乐观或附录跟踪；避免和 Products/Services 重复计算 |
+| 其他 Products / Non-semi / 低差异化组件 | Q1 Non-semi footprint 约 `4%`；其他普通组件未单列 | 主要直接服务 WFE/工业，AI 相关性弱 | 低毛利，价格权弱 | `3.2-4.5 亿美元` | `2.5-4.0 亿美元` | `3.0-4.5 亿美元` | `4.0-5.0 亿美元` | 不作为超预期来源；可能抵消增长 | A/C | 是，作为公司收入补项 | 公司总收入需要包含，但不作为 AI/WFE 主线 | 纳入公司汇总；在利润质量上折扣 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第一步需求和第二步可收入化基数出发，评估每个重要产品在 NTM 内能给 UCTT 贡献多少收入和可辨认毛利。由于 UCTT 不披露产品级 operating income，本节“利润贡献”使用产品/分部可辨认毛利贡献估算，不等同于公司净利润；公司经营费用、税项、利息和可转债影响在第 6 步汇总。所有数字为 NTM 经营估算，不使用行业 TAM、客户总预算或项目总金额直接替代公司收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Gas & Chemical Delivery / fluid modules | 悲观 | `6.2-7.5 亿美元` | 毛利 `0.75-1.10 亿美元` | GM `12-15%`，低于正常 | 低于当前预期 | 只承认 Q2 guide 下沿和已有 Products 可见路径 | 保留为下行情景 | WFE 订单后移、客户内制、BOM 涨价无法传导、UHP 焊接和洁净装配低利用率 |
+| Gas & Chemical Delivery / fluid modules | 基准 | `7.5-9.5 亿美元` | 毛利 `1.15-1.75 亿美元` | GM `15-19%`，随利用率修复 | 符合当前预期 | Q1 Products `4.657 亿`、Q2 公司指引上行、行业 gas/chemical subsystem 需求强 | 保留 | 产品级 backlog 未披露，不能把全部行业需求收入化 |
+| Gas & Chemical Delivery / fluid modules | 乐观 | `9.5-11.5 亿美元` | 毛利 `1.75-2.45 亿美元` | GM `18-21%` | 高于当前预期 | H2 leading-edge logic / memory tool pull-in，客户提前锁交期 | 保留但可信度中 | OEM 价格重谈、关键部件供应限制 |
+| Gas & Chemical Delivery / fluid modules | 极度乐观 | `12.0-14.0 亿美元` | 毛利 `2.50-3.50 亿美元` | GM `21-25%` | NTM 上限 | HBM4/Rubin/MI400/ASIC 同时提前，外包份额提升 | 下移为乐观上沿，除非后续披露订单/产能锁定 | 低毛利模块不能自动产生核心器件级利润率 |
+| System Integration / Mechatronics / precision assemblies | 悲观 | `7.2-8.8 亿美元` | 毛利 `0.85-1.30 亿美元` | GM `11-15%` | 低于预期 | Products 收入在表内，但普通组件价格和利用率承压 | 保留 | build schedule 延后、客户二供、返工/质量成本 |
+| System Integration / Mechatronics / precision assemblies | 基准 | `8.5-10.5 亿美元` | 毛利 `1.10-1.80 亿美元` | GM `13-17%` | 符合预期 | 既有 qualified supplier、Q2 guide 和 WFE upcycle | 保留 | 缺少平台级 design win 披露；客户拥有设计/IP |
+| System Integration / Mechatronics / precision assemblies | 乐观 | `10.5-12.5 亿美元` | 毛利 `1.70-2.45 亿美元` | GM `16-20%` | 高于预期 | 交付窗口紧、engineering change order 增、复杂 subassembly mix 改善 | 保留但需 Q3/Q4 指引确认 | 客户把加急变成价格压制而非溢价 |
+| System Integration / Mechatronics / precision assemblies | 极度乐观 | `13.0-15.5 亿美元` | 毛利 `2.35-3.55 亿美元` | GM `18-23%` | NTM 上限 | 多地区产能被锁定，UCT 聚焦高纯/复杂模块 | 下移为乐观上沿 | 普通组件可替代，极度乐观利润率证据不足 |
+| Thermal Solutions | 悲观 | `0.4-0.7 亿美元` | 毛利 `0.07-0.12 亿美元` | GM `15-20%` | 低于预期 | 只承认已有小额 Products 能力 | 保留 | NPI 延后、客户改用内置方案 |
+| Thermal Solutions | 基准 | `0.8-1.5 亿美元` | 毛利 `0.15-0.35 亿美元` | GM `18-25%` | 小幅符合预期 | 产品能力可见，ALD/ALE/GAA 需求上升 | 保留，小权重 | 体量小，缺少收入披露 |
+| Thermal Solutions | 乐观 | `1.5-2.5 亿美元` | 毛利 `0.35-0.70 亿美元` | GM `22-28%` | 高于预期 | 新前驱体、exhaust heater、gas line thermal control 导入更多平台 | 保留但低权重 | 平台认证节奏和客户 NPI 时间 |
+| Thermal Solutions | 极度乐观 | `2.5-4.0 亿美元` | 毛利 `0.65-1.20 亿美元` | GM `26-30%` | 远期期权在 NTM 提前兑现 | 热控成为部分先进工具标准配置 | 仅作跟踪 | 缺少客户、合同和量产时间表 |
+| Services cleaning / coating / ChemTrace / refurb | 悲观 | `2.7-3.0 亿美元` | 毛利 `0.78-0.90 亿美元` | GM `28-30%`，韧性仍好 | 略低于预期 | 官方 Q1 Services `0.680 亿`，但增速放缓 | 保留 | 晶圆厂 utilization 下滑、PM cycles 放缓、客户内制 |
+| Services cleaning / coating / ChemTrace / refurb | 基准 | `3.0-3.4 亿美元` | 毛利 `0.90-1.06 亿美元` | GM `29-31%` | 符合到略高于预期 | Q1 YoY `+10.4%`，non-GAAP GM `30.0%` | 保留，可信度高 | 产能站点和技术人员约束 |
+| Services cleaning / coating / ChemTrace / refurb | 乐观 | `3.4-4.0 亿美元` | 毛利 `1.05-1.30 亿美元` | GM `31-33%` | 高于预期 | coating/ChemTrace attach 增、先进节点 PM 频率提升 | 保留 | qualification 扩展慢 |
+| Services cleaning / coating / ChemTrace / refurb | 极度乐观 | `4.2-5.0 亿美元` | 毛利 `1.35-1.75 亿美元` | GM `32-35%` | 上限情景 | installed base 服务化和 micro-contamination control 被大客户锁定 | 保留为低概率上限 | 服务 capacity 与 regional qualification 可能成为瓶颈 |
+| Fab/subfab infrastructure / HIS related | 悲观 | `无法可靠量化` | `无法可靠量化` | 项目毛利受验收影响 | 不进入基准 | 收购能力存在，但收入未单列 | 移入附录 | 无客户/订单/验收时间表 |
+| Fab/subfab infrastructure / HIS related | 基准 | 已包含在 Gas/System/Services 内，不单独加总 | 已包含在上面毛利中 | 无单独判断 | 符合当前预期 | 避免重复计算 | 排除单独加总 | 重复计算风险 |
+| Fab/subfab infrastructure / HIS related | 乐观 | `1.0-2.0 亿美元`，若未来披露项目，可能成为显性增量 | 毛利 `0.15-0.40 亿美元` | GM `15-20%` | 高于预期 | HBM P&T / tool hook-up / gas-water-effluent module 项目加速 | 仅作为乐观增量验证项 | EPC/气体公司/工程商竞争，项目验收慢 |
+| Fab/subfab infrastructure / HIS related | 极度乐观 | `2.0-4.0 亿美元`，NTM 上限 | 毛利 `0.35-0.90 亿美元` | GM `17-23%` | 极低可信度上限 | subfab 成为 bottleneck 且 UCTT 被打包采购 | 移入附录 | 缺少可收入化证据 |
+| 其他 Products / Non-semi / 低差异化组件 | 悲观 | `3.2-4.5 亿美元` | 毛利 `0.25-0.55 亿美元` | GM `8-13%` | 低于预期或抵消项 | 普通件价格和需求偏弱 | 保留 | 低毛利收入拖累 |
+| 其他 Products / Non-semi / 低差异化组件 | 基准 | `2.5-4.0 亿美元` | 毛利 `0.25-0.60 亿美元` | GM `10-15%` | 符合预期 | 公司总收入自然包含 | 保留 | 不是增长主线 |
+| 其他 Products / Non-semi / 低差异化组件 | 乐观 | `3.0-4.5 亿美元` | 毛利 `0.35-0.75 亿美元` | GM `12-16%` | 小幅上修 | 工厂利用率改善 | 保留但低权重 | 普通件缺少差异化 |
+| 其他 Products / Non-semi / 低差异化组件 | 极度乐观 | `4.0-5.0 亿美元` | 毛利 `0.50-0.90 亿美元` | GM `13-18%` | 不作为核心上限 | 只有随整体满产提升 | 下移 | 不能靠低差异化业务支撑极度乐观公司情景 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。Products 子线之间存在重叠和估算误差，因此公司汇总不机械相加所有产品上限；Fab/subfab/HIS 不单独加总，除非未来披露独立订单或项目收入。毛利率和经营利润率以 non-GAAP 经营口径为主，GAAP 可能受税项、重组、无形资产摊销、外汇和非现金减值影响。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `22.0-23.5 亿美元` | 较 FY2025 `+7%-14%`；较 Q2 指引中点年化约 `-6%` 到持平 | 低于当前预期；Q2 只达低端或 Q3/Q4 回落 | non-GAAP GM `15.0-16.2%` | non-GAAP OPM `3.5-5.0%` | Adj. EBITDA 约 `1.40-1.85 亿美元`；non-GAAP 净利约 `0.45-0.80 亿美元`；GAAP 可能仍弱 | 弱，库存和应收占用导致 FCF 近零或为负 | 中 | WFE 订单延后、Products 利用率不足、库存继续堆高、Services 增速放缓 |
+| 基准公司 | `24.5-26.5 亿美元` | 较 FY2025 `+19%-29%`；较 Q2 指引中点年化约 `+5%-13%` | 符合当前预期正常兑现；Q2 midpoint 兑现，H2 温和增长 | non-GAAP GM `16.8-18.2%` | non-GAAP OPM `6.0-7.5%` | Adj. EBITDA 约 `1.90-2.50 亿美元`；non-GAAP 净利约 `0.95-1.35 亿美元` | 转正但不线性；若库存周转正常，FCF 约 `0.6-1.2 亿美元` | 中高 | Products 毛利修复幅度、Q1 库存能否转收入、客户集中度 |
+| 乐观公司 | `27.0-29.5 亿美元` | 较 FY2025 `+31%-44%`；较 Q2 指引中点年化约 `+15%-26%` | 高于当前预期；Q3/Q4 继续高个位数或双位数环比增长 | non-GAAP GM `18.0-19.5%` | non-GAAP OPM `7.5-9.5%` | Adj. EBITDA 约 `2.50-3.40 亿美元`；non-GAAP 净利约 `1.40-2.10 亿美元` | 明显转正，但仍受备货和应收影响；FCF 约 `1.2-2.2 亿美元` | 中 | 高纯焊接/洁净装配 capacity、关键部件采购、客户验收节奏 |
+| 极度乐观公司 | `30.5-33.5 亿美元` | 较 FY2025 `+49%-63%`；较 Q2 指引中点年化约 `+30%-43%` | 显著高于当前预期；接近或突破当前可见 capacity 上限 | non-GAAP GM `19.5-22.0%` | non-GAAP OPM `9.5-12.5%` | Adj. EBITDA 约 `3.40-4.70 亿美元`；non-GAAP 净利约 `2.10-3.10 亿美元` | 正向但波动大；若客户锁单/预付款改善则 FCF `1.5-3.0 亿美元`，否则营运资本吞噬 | 低到中 | 多个核心环节必须同时成立：WFE pull-in、UCTT 捕获份额、Products GM 修复、Services 扩容、库存周转改善 |
+
+公司层面检查：
+
+- 不重复计算：Fab/subfab/HIS related 只作为 Gas/System/Services 的交叉能力或乐观增量验证项，不在基准中单独加总。
+- 不把客户 CapEx 直接收入化：AI 数据中心 CapEx、GPU/ASIC 出货、HBM/CoWoS 总投资都只是需求源，必须经过 WFE tool order、OEM PO、UCTT 交付和客户验收。
+- 传统/周期抵消项：低差异化 Products、Non-semi、普通钣金/低端 tubing 可抵消核心业务增长，并压低综合毛利率。
+- 低毛利 pass-through：Products 大量包含采购件、人工装配和 BOM pass-through，收入上修不等同于利润上修；Services 和高纯/复杂模块才是利润质量核心。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在它实际影响的层级处理一次：WFE 需求风险在需求层；未披露 backlog 在收入基数和可信度层；Products 毛利风险在产品利润和公司利润层；库存风险在现金流/执行层。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q2 2026 指引 `5.65-6.05 亿美元`，中点较 Q1 QoQ `+9.6%` | 收入基数、公司汇总 | 支持基准收入高于 Q1 年化，确认 ramp 开始进入收入表 | 若收入兑现，可改善 Products 利用率 | Q1 库存转收入则现金流改善 | 基准保留；悲观需 Q2 低端或 Q3 回落触发 |
+| Q1 Products `4.657 亿美元`、Services `0.680 亿美元` | 收入基数、产品贡献 | Products 和 Services 都有 A 级收入表证据 | Services GM `30.0%` 支持利润质量；Products GM `14.6%` 限制公司毛利 | Services 现金流更稳，Products 需库存/交付 | Services 基准可信度高；Products 细分只能中等可信 |
+| 2026Q1 存货增加 `9100 万美元`、经营现金流 `-3330 万美元` | 执行可信度、现金流 | 正面可解释为生产 ramp 备货；负面可变成滞销/延期 | 若收入跟不上，库存减值和低利用率压毛利 | 现金流最直接受影响 | 不重复惩罚需求；仅约束现金流和执行可信度 |
+| 公司不披露 backlog、bookings、book-to-bill、产品级收入 | 收入基数、可信度 | 限制把行业需求转成公司收入 | 限制乐观利润率判断 | 降低极度乐观可信度 | 基准保留但产品拆分打折；极度乐观下移为上限 |
+| SEMI 2026Q1 equipment billings `365.5 亿美元`、同比 `+14%`；300mm spending 2026 约 `1420 亿美元` | 需求 | 支持 WFE 需求池基准/乐观 | 高端 WFE mix 对 Services 和复杂模块更有利 | 订单兑现仍有交付滞后 | 需求基准和乐观保留 |
+| 行业报告显示 Ichor/UCT 等流体子系统跟随 WFE 上行，但毛利低于 RF/valve/MFC 核心器件 | 产品利润、公司利润 | 支持 UCTT 收入弹性 | 限制长期利润率上限，防止把模块商当核心器件商 | 利用率修复是关键 | 乐观收入保留；极度乐观利润率下移 |
+| 2025 前二客户 Lam / Applied Materials 合计约 `58.7%` 收入 | 公司组合风险 | 客户集中使订单弹性和削单风险都更大 | 大客户议价压制 Products 毛利 | 客户节奏直接影响库存和应收 | 只在公司组合和可信度层处理，不重复压低所有产品需求 |
+| Services 清洗/涂层/ChemTrace qualification 粘性 | 产品贡献、利润率 | 支持 Services NTM 稳定增长 | 支持公司毛利率底盘 | 服务 capacity 和人员扩张约束 | Services 基准保留，乐观保留 |
+| Fab/subfab/HIS 相关能力未披露独立订单和收入 | 收入基数 | 不能单独进入基准加总 | 项目毛利无法可靠判断 | 项目验收/工程风险高 | 基准排除单独加总；移入附录或仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 `22.0-23.5 亿美元`，Products 利用率不足，Services 增速放缓，FCF 近零或为负 | 公司仍有 Q2 指引和 A 级段收入支撑，悲观不是衰退情景 | WFE 需求已上行、Q2 指引高于 Q1，不能把长期风险直接当当前悲观 | 保留 | 下行情景 | 中 | backlog 不透明只影响收入可信度和极度乐观，不应在每个产品都重复扣一次 |
+| 基准 | NTM 收入 `24.5-26.5 亿美元`，Q2 指引兑现，H2 温和增长，Products GM 修复到 `16-18%` 附近 | Q1/Q2 官方数据、SEMI WFE 上行、Services 高毛利、库存备货信号 | 产品级拆分缺少 A/B 证据，客户集中和库存占用仍存在 | 保留 | 最可能情景 | 中高 | 客户集中只在公司组合和议价权处理，不重复压低行业需求 |
+| 乐观 | NTM 收入 `27.0-29.5 亿美元`，H2 tool pull-in，Gas/System/Services 同步上修 | WFE / HBM / advanced packaging 需求强，Q2 指引已开始兑现，Services qualification 粘性强 | 需要 Q3/Q4 继续上修和 Products GM 实际改善；不能只靠 SEMI 大盘 | 保留 | 上行情景 | 中 | AI 数据中心 CapEx 不能直接替代 UCTT PO 和验收 |
+| 极度乐观 | NTM 收入 `30.5-33.5 亿美元`，需求、捕获、利润和执行同时突破 | 行业确有 HBM4/Rubin/MI400/ASIC 远期上修可能，UCTT 有 scale 和客户接口 | 缺少 backlog、产能锁定、产品级订单和利润率突破证据；低毛利模块不自动转成高毛利 | 下移 | 保留为低概率 NTM 上限；部分 Fab/subfab/HIS 移入附录 | 低到中 | 不能把远期 HBM4/2027 收入提前全部放进 NTM |
+
+可信度总结：
+
+- 高可信：公司级 Q1/Q2 段收入、Q2 指引、Services 收入和毛利率、FY2025 收入、现金流和存货。
+- 中高可信：公司基准收入区间，因为 Q2 指引和 WFE 数据支持，但 Q3/Q4 仍需验证。
+- 中可信：Gas/System/Thermal 产品级收入拆分，因为 Products 内部未披露具体收入。
+- 低可信：Fab/subfab/HIS 独立增量、极度乐观 revenue capacity、产品级价格溢价。
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入最合理区间为 `24.5-26.5 亿美元`，高于 FY2025 `20.54 亿美元` 和 Q1 年化 `21.35 亿美元`，但还不应把 `30 亿美元+` 写成基准。原因是 Q2 指引已经确认需求上行，但公开资料仍缺 backlog、bookings、产品级订单和客户交付时间表。
+- NTM 收入结论：收入增长主线是 Products 的 Gas/Chemical Delivery、System Integration/Mechatronics 和高纯复杂模块随 WFE 上行，Services 提供稳定高毛利补充。直接 AI 数据中心收入约为 `0`；可收入化暴露来自 AI 芯片制造、HBM、先进逻辑、先进封装和高纯服务。
+- 利润/现金流结论：利润弹性存在但不线性。Services GM 约 `30%` 是质量锚；Products GM 仍在 `14-15%` 低位，必须靠利用率、mix 和执行修复才能放大。现金流取决于 Q1 存货能否在 Q2-Q4 转收入，而不是只看收入增长。
+- 主要传导瓶颈：行业需求 -> WFE OEM order -> UCTT qualified supplier allocation -> UCTT 采购/焊接/洁净装配/测试 -> 客户验收 -> 收入确认。当前最大缺口在 order/backlog 和产品级份额披露。
+- 乐观情景成立条件：Q2 实际收入达到 `5.85 亿美元` 中点以上；Q3 指引继续 QoQ 增长；Products non-GAAP GM 至少进入 `15.5-16.5%`；Services 继续 double-digit YoY；Lam/Applied/TEL/KLA/Ichor/MKS/Entegris 同步验证 WFE 链条强势；库存周转改善。
+- 极度乐观情景成立条件：HBM4/Rubin/MI400/custom ASIC 相关 WFE 订单在 NTM 内提前；UCTT 获得更多高纯/复杂模块份额；客户接受更短交期和更好定价；Products GM 进入 `19%+`；Services capacity 同步扩张；经营现金流转正且库存不继续失控。
+- 悲观情景触发条件：Q2 只达到指引低端或 Q3 指引回落；客户把 H2 WFE 交付推迟；库存继续增加但收入不跟；Products GM 停留在 `14-15%` 或更低；Services 增速跌回低个位数；经营现金流连续为负。
+- 后续跟踪数据：Q2 实际收入和 Q3 指引；Products/Services 分部 GM；存货、应收和经营现金流；前二客户收入占比；是否披露 bookings/backlog 或重大客户项目；WFE OEM 订单和指引；Ichor/MKS/Advanced Energy/Entegris/VAT 等子系统链交叉信号；HBM/advanced packaging tool pull-in 是否兑现。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新财务主数据截至 2026Q1，季度截至 2026-03-27；报告日期为 2026-06-12；NTM 主口径为 2026Q2-2027Q1。
+- 主要收入、订单、指引和利润率来源：
+  - UCT Q1 2026 results press release，2026-04-28：`https://www.prnewswire.com/news-releases/ultra-clean-reports-first-quarter-2026-financial-results-302756140.html`
+  - UCT 2026Q1 Form 10-Q：`https://www.sec.gov/Archives/edgar/data/1275014/000162828026028365/uctt-20260327.htm`
+  - UCT FY2025/Q4 2025 results press release：`https://www.prnewswire.com/news-releases/ultra-clean-reports-fourth-quarter-and-full-year-2025-financial-results-302694911.html`
+  - UCT 2025 Form 10-K：公司客户集中、Products/Services、风险和供应链说明。
+  - UCT product pages：Gas & Chemical Delivery、System Integration、Mechatronics、Thermal Solutions、Weldment、Services/Coating，`https://www.uct.com/`
+- 项目内公司和行业来源：
+  - `公司调研/晶圆制造_前道设备/UCTT_Ultra_Clean_Holdings_公司调研_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体设备子系统与真空_RF_流体模块_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体高纯水、气体与化学流体系统_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`
+- 行业一手来源：
+  - SEMI Q1 2026 equipment billings，2026-06-04：`https://www.semi.org/en/semi-press-release/semi-reports-global-semiconductor-equipment-billings-increased-14-percent-year-over-year-in-q1-2026`
+  - SEMI 300mm Fab Outlook product page，2026 Q2：`https://www.semi.org/en/products-services/market-data/300mm-fab-outlook`
+  - SEMI global semiconductor materials market 2025：`https://www.semi.org/en/semi-press-release/global-semiconductor-materials-market-revenue-reaches-record-73.2-billion-dollars-in-2025-semi-reports`
+  - Lam Research March 2026 quarter results：`https://investor.lamresearch.com/2026-04-22-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-March-29%2C-2026`
+  - Applied Materials Q2 FY2026 results：`https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-second-quarter-2026-results`
+  - KLA FY2026 Q3 results：`https://ir.kla.com/news-events/press-releases/detail/514/kla-corporation-reports-fiscal-2026-third-quarter-results`
+  - Ichor Q1 2026 results：`https://www.businesswire.com/news/home/20260504264377/en/Ichor-Holdings-Ltd.-Announces-First-Quarter-2026-Financial-Results`
+  - Entegris Q1 2026 results：`https://investor.entegris.com/news/news-details/2026/Entegris-Reports-Results-for-First-Quarter-of-2026/default.aspx`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 不是主口径；若 Q2 指引中点兑现且 H2 温和增长，FY2026 收入大致落在本报告 NTM 基准偏低到中段。
+  - FY2027 是 HBM4/Rubin/MI400/custom ASIC、GAA/N2、advanced packaging 和 Services installed base 更充分兑现的窗口，适合做后续跟踪，不提前放入 NTM 基准。
+  - `30 亿美元+` 收入只能作为乐观/极度乐观上限，必须有 Q3/Q4 指引、订单或产能锁定证据；不能仅凭 AI WFE 热度进入基准。
+  - Fab/subfab/HIS 相关机会当前只作为附录跟踪；除非公司披露独立订单、客户项目和验收时间表，否则不单独进入 NTM 基准收入。

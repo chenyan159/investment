@@ -1,0 +1,34 @@
+{
+  "backup": "D:/drive/Investment/分析报告/公司情景投资决策/备份/研究方案_20260908_110833_修改前.md",
+  "target": "D:/drive/Investment/分析报告/公司情景投资决策/研究方案.md",
+  "checks": {
+    "headingsIdentical": true,
+    "ninePrimaryChapters": true,
+    "protectedSectionsIdentical": true,
+    "allTablesIdentical": true,
+    "deliveryOrderIdentical": true,
+    "keyEconomicFormulasAndBranchesPreserved": true,
+    "noCompanySpecificPatch": true,
+    "noRepeatedParagraphs": true,
+    "noConflictMarkers": true
+  },
+  "oldCharacters": 14996,
+  "newCharacters": 16173,
+  "growthPercent": 7.85,
+  "backupSha256": "e417a88d8b09a77777225aee6dab6b31d6b94e3033c48524454f1bb5bb465c24",
+  "newSha256": "5c8fad4ecaa90e9b266eb870bbd25db5495b2cbcfd0b492f038f0abafca31238",
+  "changedSections": [
+    "### 4.2 决定性假设、证据冲突与研究优先级",
+    "### 4.4 早期机会的逐年概率与期望贡献",
+    "## 5. 四种完整经营情景与资本路径",
+    "### 6.1 共用的预期与信息路径",
+    "### 6.2 短期：3—6个月的预期差与重新定价",
+    "### 7.1 投资论点、估值工具与目标日价值",
+    "### 7.2 期限效应与投资理念分歧",
+    "### 7.3 现价隐含要求、风险计入与稳健性",
+    "## 8. 条件建议矩阵与评级纪律",
+    "### 9.2 不确定性、决策门槛与等待的价值",
+    "### 9.3 输出组织与交付"
+  ],
+  "validationBoundary": "Static content and contract review only; no research jobs launched and no runtime report-quality claim."
+}

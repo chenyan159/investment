@@ -1,0 +1,169 @@
+# 公司收入传导与价值传导评估：BABA Alibaba 阿里巴巴
+
+> 报告日期：2026-06-20（America/Los_Angeles）。  
+> NTM 主口径：未来 12 个月，近似 Alibaba FY2027 经营窗口（2026-04-01 至 2027-03-31），以人民币十亿元为主。  
+> 边界：本报告只评估行业需求到公司可确认收入、利润和经营质量的传导，不给投资评级，不判断目标价，不使用市场价格或估值倍数作为经营传导证据。  
+> 来源边界：项目内只读取 `公司调研/` 与 `行业调研/`；未读取、引用或继承 `特征量化/`、Signals、排序或回归类资料。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 公司收入、利润、现金流和可兑现概率；FY2026 全年、2026-03 季度和管理层对 AI/MaaS 的口径只作为当前预期锚与补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：FY2026 集团收入 RMB 1,023.7bn，同比增长 3%，剔除高鑫零售和银泰等处置业务后 like-for-like 增长 11%；FY2026 调整 EBITA RMB 76.4bn，调整 EBITDA RMB 113.5bn，non-GAAP 净利润 RMB 60.7bn，自由现金流为 -RMB 46.6bn。2026-03 季度集团收入 RMB 243.4bn，Cloud Intelligence Group RMB 41.6bn，同比 +38%，云外部客户收入 +40%，AI-related products RMB 9.0bn，连续第 11 个季度三位数增长。
+- 重要产品/业务线：中国电商核心平台与直营/批发、Quick Commerce、AIDC 国际电商、Cloud Intelligence Group、MaaS/Qwen/企业与商户 AI Agent、T-Head/Zhenwu/CIPU/异构调度、All others 非核心但大体量业务。
+- NTM 公司收入四情景：悲观 RMB 1,035-1,075bn；基准 RMB 1,115-1,155bn；乐观 RMB 1,175-1,235bn；极度乐观 RMB 1,250-1,330bn。基准不是 AI 叙事外推，而是 FY2026 like-for-like 约 11% 增长、Cloud 高增、quick commerce 放缓但仍增长、AIDC 效率改善的正常兑现。
+- 利润或 EBITDA 四情景：悲观调整 EBITDA RMB 85-105bn、non-GAAP 净利润 RMB 40-60bn；基准调整 EBITDA RMB 125-155bn、non-GAAP 净利润 RMB 70-95bn；乐观调整 EBITDA RMB 170-220bn、non-GAAP 净利润 RMB 110-150bn；极度乐观调整 EBITDA RMB 240-310bn、non-GAAP 净利润 RMB 170-230bn。利润弹性主要来自 quick commerce 补贴退坡、Cloud AI 利用率提升和 MaaS mix，而不是简单的收入高增。
+- 最大传导瓶颈：AI 云需求已经有收入证据，但从需求到收入需要 GPU/ASIC/HBM、站点电力、液冷、网络、调度和客户验收全部转成可用 capacity；从收入到利润还需要利用率、tokens/GPU-hour 和价格纪律。
+- 最大利润率变量：quick commerce 与 Qwen 获客支出是否退坡，其次是 Cloud AI/MaaS 毛利是否被 GPU/ASIC 折旧、价格战和客户增长投入吞噬。
+- 最大现金流变量：FY2026 CAPEX RMB 126.1bn 已把 FCF 拉到 -RMB 46.6bn；NTM 是否转正取决于云基础设施支出节奏、quick commerce 亏损收窄、递延收入/客户预付和营运资本。
+- 可信度：基准为中高。FY2026 分部收入和 Cloud AI 收入是 A 级证据；MaaS ARR、T-Head 芯片和自研调度是 C 级到 B- 级证据，能进入乐观和结构性利润判断，但不能把全部远期期权放入基准收入。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 中国电商核心平台与直营/批发，不含 quick commerce | FY2026 RMB 475.7bn；其中 customer management RMB 343.9bn | 46.5% | 最大现金流底座，广告/佣金/直营/1688 决定集团利润底盘 | A | 进入基准；需求锚为中国线上零售和公司 CMR like-for-like 增长 | 淘宝 AI 购物助手、商户 Agent 增效只小比例进入基准 |
+| Quick Commerce，淘宝闪购/饿了么 | FY2026 RMB 78.5bn；2026-03 季度 RMB 20.0bn | 7.7% | 收入高增但利润和现金流压力最大 | A | 进入基准，但基准不假设高利润；收入增长与亏损收窄分开判断 | 非食类、即时零售广告和本地履约效率改善 |
+| AIDC 国际数字商业 | FY2026 RMB 144.2bn；2026-03 季度 RMB 35.4bn | 14.1% | 增长和亏损收窄同时重要，海外汇率/物流影响大 | A | 进入基准；利润按接近盈亏平衡处理 | Accio/Accio Work 作为跨境 AI 工具，只作辅助增量 |
+| Cloud Intelligence Group | FY2026 RMB 158.1bn；2026-03 季度 RMB 41.6bn | 15.4% | NTM 最关键成长业务，AI 云直接收入化 | A | 进入基准；AI-related product revenue 进入基准但按供给和确认节奏折扣 | AI-related 成为云外部收入最大线、国际化 AI 云 |
+| MaaS / Model Studio / Qwen / 企业与商户 Agent | 2026-03 Cloud AI-related RMB 9.0bn/季度内含部分；Model Studio 客户数同比 8 倍；管理层给出 ARR 路径 | 无法可靠量化；当前直接占比估计低个位数 | 可能改变 Cloud 毛利和客户粘性 | B/C | 作为 Cloud 的内部分解进入基准；不额外重复加总 | QwenCloud、行业 Agent、Accio Work、淘宝购物助手规模化付费 |
+| T-Head / Zhenwu M890 / Panjiu AL128 / CIPU / 异构调度 | 外部芯片收入未披露；Zhenwu 累计出货超 56 万颗、400+ 外部客户；公共云已部署 10 万+ PPU | 直接收入无法可靠量化 | 云侧成本、供给确定性和毛利工具 | C | 不作为独立基准收入；只作为 Cloud 毛利和供给上限的校准项 | 自研芯片外部销售、行业专有云、国产 AI 加速器生态 |
+| All others 非核心但大体量业务 | FY2026 RMB 254.4bn，含盒马、菜鸟、阿里健康、高德、夸克、钉钉等 | 24.9% | 体量大但结构混杂，处置业务影响同比 | A | 进入公司汇总；基准按处置后平稳处理 | 夸克、钉钉、Qwen 消费端 AI 应用商业化 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不评估阿里份额、可确认收入或利润率。需求强弱均相对各业务自己的当前需求锚判断；AI 行业总需求不能直接等同为阿里收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 中国电商核心平台与直营/批发 | 国家统计局 2026 年 1-5 月全国网上商品和服务零售额 RMB 8,317.7bn、同比 +5.9%；FY2026 CMR +5%，Q4 CMR like-for-like +8% | 线上零售/商户广告需求 +0-3%，消费疲弱、价格竞争压广告 ROI | 需求 +5-8%，线上渗透继续但消费慢增长 | 需求 +8-12%，服饰、食品和服务线上化强于预期，AI 工具提高转化 | 需求 +12-15%，宏观消费和广告预算同时改善 | 需求池增量约 RMB 250-700bn 线上商品和服务零售额区间 | 基准符合当前预期；悲观低于 NBS 当前线上增速 | 依据：NBS 线上零售仍快于总社零；反证：5 月社零同比 -0.6%，消费仍弱 |
+| Quick Commerce | FY2026 quick commerce 收入 +47%，Q4 +57%，淘宝闪购推出后单量增长 | 需求 +15-25%，补贴退坡后订单增长明显降速 | 需求 +25-45%，即时零售继续渗透但回归理性 | 需求 +45-70%，非食类、高客单价和广告化提升 | 需求 +70-100%，即时零售成为淘宝高频入口且竞争补贴降温 | 年收入需求池对阿里可参与部分约 RMB 90-160bn 收入口径 | 基准低于 FY2026 增速但符合高基数后正常化 | 反证：美团、京东、抖音反击导致补贴强度不降 |
+| AIDC 国际数字商业 | FY2026 AIDC +9%；Q4 零售 +5%、批发 +9%；AliExpress Choice 单位经济改善 | 跨境 GMV/服务需求 +0-5%，汇率和物流拖累 | 需求 +6-12%，跨境零售和 B2B 增值服务正常增长 | 需求 +12-20%，AliExpress、Trendyol、Alibaba.com 同时改善 | 需求 +20-30%，品牌化和 AI sourcing 大幅提高商户效率 | AIDC 可参与收入需求约 RMB 145-210bn | 基准符合当前低双位数预期 | 反证：Lazada 下滑、汇率、关税和本地竞争 |
+| Cloud Intelligence Group | FY2026 Cloud +34%；Q4 Cloud +38%，外部云收入 +40%；AI-related RMB 9.0bn/季度，连续 11 季度三位数增长 | 云需求 +15-25%，AI 供给或价格竞争导致收入低于预期 | 云需求 +30-45%；AI-related +55-95%，AI 云和传统云共同增长 | 云需求 +45-60%；AI-related +95-150%，MaaS 和推理需求加速 | 云需求 +60-80%；AI-related +150% 以上，AI 成为最大外部云产品线 | Cloud 需求池对阿里 NTM 可确认收入约 RMB 190-310bn | 基准略高于 FY2026 全年、接近 Q4 run-rate 与管理层 AI 方向 | 依据：AI 云收入和外部客户收入已披露；反证：GPU/ASIC、电力、价格和利用率 |
+| MaaS / Model Studio / Qwen / Agent | Model Studio 客户数同比 8 倍；管理层称模型和应用服务平台 ARR 有望在 2026-06 季度超 RMB 10bn、年底 RMB 30bn | ARR RMB 15-25bn，开发者试用多、企业付费慢 | ARR RMB 25-35bn，企业模型服务和 Agent 正常续费 | ARR RMB 35-50bn，Token 用量和行业 Agent 付费超预期 | ARR RMB 50-70bn，QwenCloud/国际开发者和商户工具形成第二曲线 | NTM ARR 增量约 RMB 15-60bn | 基准为当前管理层路径的保守兑现 | 反证：token 降价过快、Agent ROI 不足、Qwen 获客费过高 |
+| T-Head / Zhenwu / CIPU / 异构调度 | Zhenwu 累计出货超 56 万颗；400+ 外部客户；Panjiu AL128 和 M890 发布 | 需求只停留在内部替代和小规模行业客户 | 内部推理和部分外部行业客户正常扩张 | 汽车、金融、政企和阿里云实例采用加速 | 国产 AI 加速生态形成明显外部订单 | 直接收入无法可靠量化；内部成本等效价值约 RMB 5-30bn | 基准只视为供给和毛利工具，不视为独立收入主线 | 反证：软件生态、先进封装、良率、客户迁移不达标 |
+| All others 非核心业务 | FY2026 因高鑫/银泰处置 -25%；Q4 All others RMB 65.5bn | 需求 -5-0%，处置和菜鸟拖累延续 | 需求 0-5%，处置后基数稳定，盒马/阿里健康/高德部分抵消 | 需求 +5-10%，高德、盒马、阿里健康恢复 | 需求 +10% 以上，夸克/钉钉/Qwen 消费端商业化 | NTM 收入需求约 RMB 235-300bn | 基准是稳定化，不是高增长 | 反证：技术业务投入继续扩大亏损 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断哪些需求能进入阿里 NTM 收入表，以及当前可收入化基数。公司能参与某需求池不等于能在 NTM 确认收入。收入锚点来自已披露分部收入、正式财务口径、管理层可验证披露或产品/客户部署证据。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 中国电商核心平台与直营/批发 | FY2026 CMR RMB 343.9bn、direct/logistics/others RMB 105.5bn、wholesale RMB 26.3bn | 直接 | CMR 高毛利，直营毛利低，批发增值服务中等 | 470-490 | 495-520 | 525-550 | 560-585 | 基准略高于 FY2026，符合线上零售与 CMR like-for-like | A | 是 | 分部收入和 CMR 已确认；直营/批发已在收入表 | 基准纳入；AI 商户工具只作效率辅助 |
+| Quick Commerce | FY2026 RMB 78.5bn；Q4 RMB 20.0bn | 直接 | 低毛利/履约和补贴敏感，短期压 EBITA | 88-100 | 105-115 | 120-140 | 145-165 | 基准低于 FY2026 +47% 的高增长，反映高基数和补贴纪律 | A | 是 | 已披露 quick commerce 收入且业务已规模化 | 基准纳入收入，但不纳入高利润假设 |
+| AIDC | FY2026 RMB 144.2bn；Q4 RMB 35.4bn | 直接 | 接近盈亏平衡，物流/汇率敏感 | 145-155 | 155-165 | 170-185 | 190-210 | 基准符合当前低双位数增长和效率改善 | A | 是 | 分部收入和 EBITA 已披露 | 基准纳入；Accio 只作增值服务辅助 |
+| Cloud Intelligence Group | FY2026 RMB 158.1bn；Q4 RMB 41.6bn；AI-related Q4 RMB 9.0bn | 直接 | 云毛利受折旧、GPU/ASIC、利用率和价格影响；MaaS mix 高 | 188-205 | 205-225 | 235-265 | 280-320 | 基准对应 +30-42%，略低于 Q4 外部云 +40% 延展 | A | 是 | Cloud 收入、AI-related 收入、外部客户增速均已披露 | 基准纳入；AI-related 不用行业 TAM 外推 |
+| MaaS / Model Studio / Qwen / Agent | Model Studio 客户 8 倍；MaaS/模型应用 ARR 管理层路径；直接收入混入 Cloud/All others | 直接为 Cloud/All others 子项，不能与 Cloud 重复相加 | 软件/Token 高毛利潜力，但 Qwen 获客和推理成本高 | 15-25 | 25-35 | 35-50 | 50-70 | 基准是管理层路径保守兑现 | B/C | 是，但只作为 Cloud 内部结构 | 客户增长和 ARR 口径可验证，但财报未单列 | 纳入 Cloud/MaaS 结构，不额外加总到公司收入 |
+| T-Head / Zhenwu / CIPU / 异构调度 | Zhenwu 出货、外部客户和公共云部署披露；收入未单列 | 间接为主，少量直接外部销售可能存在 | 降本和供给确定性高于收入确认确定性 | 0-5 | 0-10 | 10-20 | 20-35 | 基准只代表内部等效价值，不代表新增收入 | C | 否，作为独立收入不进基准 | 有部署和客户，但没有收入表、订单或价格 | 移入 Cloud 毛利和供给校准，不单列加总 |
+| All others 非核心业务 | FY2026 RMB 254.4bn；含盒马、菜鸟、阿里健康、高德、夸克、钉钉等 | 直接 | 混合毛利，整体亏损；处置影响大 | 235-250 | 250-270 | 270-295 | 300-330 | 基准是处置后稳定，不假设 AI 应用全面放量 | A | 是 | 分部收入已披露 | 基准纳入公司汇总；AI 应用作为附加选择权 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，判断每个产品在 NTM 内给阿里贡献的收入和利润。利润贡献使用调整 EBITA 或经营利润方向口径；因公司未披露部分产品独立利润，缺口处标明估算或无法可靠量化。Cloud、MaaS 与 T-Head 之间存在内含关系，汇总时避免重复计算。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 中国电商核心平台与直营/批发 | 悲观产品 | RMB 470-490bn | 调整 EBITA 约 RMB 115-135bn；直营 mix 压低综合率 | 利润率持平或小降 | 低于当前 CMR like-for-like | NBS 线上增速放缓、竞争压广告 ROI | 保留悲观 | 消费疲弱、PDD/抖音/京东竞争、商家补贴 |
+| 中国电商核心平台与直营/批发 | 基准产品 | RMB 495-520bn | 调整 EBITA 约 RMB 135-160bn | CMR 支撑，直营稀释 | 符合当前预期 | FY2026 CMR +5%，Q4 like-for-like +8% | 保留基准 | 宏观消费和广告加载率 |
+| 中国电商核心平台与直营/批发 | 乐观产品 | RMB 525-550bn | 调整 EBITA 约 RMB 160-185bn | 利润率改善 | 高于当前预期 | AI 工具提高转化、商户投放回升 | 保留乐观 | 需要广告 ROI 真改善 |
+| 中国电商核心平台与直营/批发 | 极度乐观产品 | RMB 560-585bn | 调整 EBITA 约 RMB 185-215bn | 明显改善 | 显著高于预期 | 消费、商户广告、AI 工具同时突破 | 下移为乐观上限 | 缺少 NTM 非线性消费证据 |
+| Quick Commerce | 悲观产品 | RMB 88-100bn | 调整 EBITA -RMB 60bn 至 -RMB 80bn | 亏损扩大 | 低于当前预期 | 竞争补贴不退、履约成本高 | 保留悲观 | 补贴战、骑手/商户成本、非食类占比低 |
+| Quick Commerce | 基准产品 | RMB 105-115bn | 调整 EBITA -RMB 35bn 至 -RMB 50bn | 亏损收窄但仍拖累 | 符合当前预期 | FY2026 +47%，Q4 +57%，公司称 unit economics 改善 | 保留基准 | 规模增长和补贴纪律需同时成立 |
+| Quick Commerce | 乐观产品 | RMB 120-140bn | 调整 EBITA -RMB 15bn 至 -RMB 30bn | 明显收窄 | 高于当前预期 | 非食类、高客单价和广告化改善 | 保留乐观 | 竞争者反击 |
+| Quick Commerce | 极度乐观产品 | RMB 145-165bn | 接近盈亏平衡至 +RMB 10bn | 从拖累变小幅贡献 | 显著高于预期 | 订单、AOV、补贴退坡和履约效率同时突破 | 下移为乐观上限 | NTM 内缺少补贴战结束证据 |
+| AIDC | 悲观产品 | RMB 145-155bn | 调整 EBITA -RMB 5bn 至 -RMB 10bn | 小幅亏损 | 低于预期 | Lazada、汇率、物流成本拖累 | 保留悲观 | 汇率、关税、本地平台竞争 |
+| AIDC | 基准产品 | RMB 155-165bn | 调整 EBITA -RMB 2bn 至 +RMB 4bn | 接近盈亏平衡 | 符合预期 | FY2026 亏损显著收窄，Q4 接近盈亏平衡 | 保留基准 | 增长放缓但效率改善 |
+| AIDC | 乐观产品 | RMB 170-185bn | 调整 EBITA +RMB 5-10bn | 利润率转正 | 高于预期 | AliExpress Choice、Alibaba.com 增值服务和 Accio | 保留乐观 | 需验证客户付费和物流优化 |
+| AIDC | 极度乐观产品 | RMB 190-210bn | 调整 EBITA +RMB 12-18bn | 明显转正 | 显著高于预期 | 跨境电商和 AI 工具同时强 | 下移为乐观上限 | 汇率、监管和国际竞争使极端情景证据不足 |
+| Cloud Intelligence Group | 悲观产品 | RMB 188-205bn | 调整 EBITA RMB 12-16bn | 6-8% 左右 | 低于当前高增预期 | AI capacity 卡点、价格战、利用率不足 | 保留悲观 | GPU/ASIC/HBM、电力、折旧和客户增长投入 |
+| Cloud Intelligence Group | 基准产品 | RMB 205-225bn | 调整 EBITA RMB 18-25bn | 9-11% | 符合当前预期 | FY2026 +34%，Q4 +38%，AI-related 已确认 | 保留基准 | CAPEX 转收入周期 |
+| Cloud Intelligence Group | 乐观产品 | RMB 235-265bn | 调整 EBITA RMB 27-38bn | 11-15% | 高于当前预期 | AI-related、MaaS、PAI、存储网络同步增长 | 保留乐观 | 价格/mix 和供给需同时改善 |
+| Cloud Intelligence Group | 极度乐观产品 | RMB 280-320bn | 调整 EBITA RMB 45-60bn | 15-19% | 显著高于预期 | AI 成为最大云外部收入线，MaaS ARR 快速兑现 | 保留为低可信上限 | 需要需求、供给、利用率和成本四环节同时成立 |
+| MaaS / Model Studio / Qwen / Agent | 悲观产品 | RMB 15-25bn，含在 Cloud/All others | -RMB 10bn 至 -RMB 20bn，Qwen 获客吞噬毛利 | 亏损或低毛利 | 低于预期 | 用户增长但付费慢 | 保留悲观 | Token 价格战、Agent ROI 不足 |
+| MaaS / Model Studio / Qwen / Agent | 基准产品 | RMB 25-35bn，含在 Cloud/All others | -RMB 5bn 至 +RMB 5bn | 毛利改善但仍投入 | 符合管理层路径 | 客户数 8 倍、ARR 路径 | 保留基准但不重复加总 | ARR 口径未在收入表单列 |
+| MaaS / Model Studio / Qwen / Agent | 乐观产品 | RMB 35-50bn，含在 Cloud/All others | +RMB 5-15bn | 高毛利 mix 上升 | 高于预期 | 企业 Agent、Token plans、商户工具放量 | 保留乐观 | 推理成本和模型竞争 |
+| MaaS / Model Studio / Qwen / Agent | 极度乐观产品 | RMB 50-70bn，含在 Cloud/All others | +RMB 20-35bn | 显著扩张 | 显著高于预期 | 国际开发者、行业 Agent、QwenCloud 同时放量 | 下移为乐观上限 | 缺少 NTM 可审计收入拆分 |
+| T-Head / Zhenwu / CIPU / 异构调度 | 悲观产品 | 独立收入 0-5bn；Cloud 内部替代价值低 | 对 Cloud EBITA 改善有限 | 中性 | 低于技术预期 | 软件迁移慢，外部客户小 | 保留悲观 | 良率、生态、先进封装、客户迁移 |
+| T-Head / Zhenwu / CIPU / 异构调度 | 基准产品 | 独立收入 0-10bn；不重复加总 | Cloud 成本/token 小幅改善 | 改善 | 符合预期 | 出货、外部客户、公共云部署 | 保留基准为毛利校准 | 无单列收入和 ASP |
+| T-Head / Zhenwu / CIPU / 异构调度 | 乐观产品 | revenue-equivalent RMB 10-20bn | Cloud EBITA 增益 RMB 5-15bn | 改善明显 | 高于预期 | M890/AL128 在推理场景证明 TCO | 保留乐观 | 需云实例和客户案例 |
+| T-Head / Zhenwu / CIPU / 异构调度 | 极度乐观产品 | revenue-equivalent RMB 20-35bn | Cloud EBITA 增益 RMB 15-30bn | 非线性改善 | 显著高于预期 | 国产 AI 加速器和阿里 workload 深度绑定 | 移入附录/乐观上限 | 不具备独立基准收入确认路径 |
+| All others 非核心业务 | 悲观产品 | RMB 235-250bn | 调整 EBITA -RMB 40bn 至 -RMB 55bn | 亏损扩大 | 低于预期 | 技术和消费 AI 投入持续 | 保留悲观 | 菜鸟、Qwen 消费端、文娱投入 |
+| All others 非核心业务 | 基准产品 | RMB 250-270bn | 调整 EBITA -RMB 25bn 至 -RMB 35bn | 亏损收窄 | 符合预期 | 处置业务基数稳定，部分业务改善 | 保留基准 | 结构不透明 |
+| All others 非核心业务 | 乐观产品 | RMB 270-295bn | 调整 EBITA -RMB 10bn 至 -RMB 25bn | 明显收窄 | 高于预期 | 高德、盒马、阿里健康和钉钉效率改善 | 保留乐观 | 高毛利 AI 应用需验证 |
+| All others 非核心业务 | 极度乐观产品 | RMB 300-330bn | 调整 EBITA -RMB 5bn 至 +RMB 10bn | 接近盈亏平衡 | 显著高于预期 | 多个 AI 应用和本地服务同时商业化 | 下移为乐观上限 | 财报未给出足够拆分证据 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为 NTM 公司收入、毛利率、经营利润率、调整 EBITDA、non-GAAP 净利润和 FCF 方向。汇总时已扣除 Cloud、MaaS、T-Head 之间的重复计算，并把 inter-segment elimination 作为公司层面抵消处理。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | RMB 1,035-1,075bn | +1% 至 +5% | 低于 FY2026 like-for-like +11% 和 Cloud 高增长预期 | 35-38% | 2-4% | 调整 EBITDA RMB 85-105bn；non-GAAP 净利润 RMB 40-60bn | -RMB 80bn 至 -RMB 30bn | 中 | quick commerce 补贴不降、AI 云供给转收入慢、Qwen 获客和技术投入继续吞噬利润 |
+| 基准公司 | RMB 1,115-1,155bn | +9% 至 +13% | 接近当前核心经营预期：电商平稳、Cloud +30% 以上、AIDC 接近盈亏平衡 | 38-40.5% | 5-7% | 调整 EBITDA RMB 125-155bn；non-GAAP 净利润 RMB 70-95bn | -RMB 20bn 至 +RMB 30bn | 中高 | 云 CAPEX 转收入和 quick commerce unit economics |
+| 乐观公司 | RMB 1,175-1,235bn | +15% 至 +21% | 高于当前预期；不是单一小基数 AI 项目造成 | 40-42% | 8-10% | 调整 EBITDA RMB 170-220bn；non-GAAP 净利润 RMB 110-150bn | +RMB 40bn 至 +RMB 100bn | 中 | Cloud AI/MaaS mix 改善、quick commerce 补贴退坡、AIDC 转正 |
+| 极度乐观公司 | RMB 1,250-1,330bn | +22% 至 +30% | 显著高于当前预期；AI 云、MaaS、快商效率和消费广告同时突破 | 42-44% | 11-14% | 调整 EBITDA RMB 240-310bn；non-GAAP 净利润 RMB 170-230bn | +RMB 120bn 至 +RMB 220bn，但仍受 CAPEX 节奏约束 | 低到中 | 需要需求、公司捕获、利润质量和执行质量同时突破 |
+
+公司层面校验：
+
+| 校验项 | 基准处理 |
+| --- | --- |
+| 重复计算 | MaaS、Qwen、T-Head 和异构调度不在 Cloud 之外重复加总；只影响 Cloud 结构、毛利和可信度 |
+| 处置业务 | 高鑫、银泰处置造成的 FY2026 表观拖累不外推；All others 以处置后稳定为主 |
+| 传统业务抵消 | 中国电商核心现金流仍抵消部分 quick commerce 和 Qwen 投入；若补贴战延续，利润情景下移 |
+| 低毛利收入 | Quick commerce、直营、部分 All others 和云 IaaS 扩张不自动转化为高利润 |
+| 一次性项目 | 投资收益、处置收益和金融市场价格不作为经营价值传导证据 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步的情景位置。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在其实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 全年收入 RMB 1,023.7bn，like-for-like +11% | 公司基准 | 支撑 NTM +9-13% 基准 | 不直接改善利润 | 证明处置业务拖累不应线性外推 | 保留基准 |
+| Cloud Q4 +38%、外部客户 +40%、AI-related RMB 9.0bn | 需求、收入基数、产品贡献 | 支撑 Cloud NTM RMB 205-225bn 基准和乐观上修 | AI mix 可改善毛利，但折旧和客户投入抵消 | CAPEX 需转化为可用 capacity | 保留基准与乐观 |
+| Model Studio 客户 8 倍、MaaS ARR 路径 | 收入基数、产品贡献 | 支撑 MaaS 进入 Cloud 内部基准 | 若企业续费强，利润率上修 | 需要观察付费、Token 成本和续约 | 保留，C 级部分不重复加总 |
+| T-Head Zhenwu 出货 56 万+、400+ 外部客户 | 利润率、执行可信度 | 不足以形成独立基准收入 | 可降低 Cloud 成本/token | 供应链和软件生态决定兑现 | 仅作跟踪；乐观作为毛利上限 |
+| Quick commerce FY2026 +47%、Q4 +57% | 产品需求、公司组合 | 支撑收入基准 | 同时是最大利润拖累 | 补贴和履约成本决定 FCF | 保留基准，但利润保守 |
+| AIDC 亏损显著收窄、Q4 接近盈亏平衡 | 产品贡献 | 支撑低双位数收入和利润改善 | 有望转正 | 汇率和物流仍影响执行 | 保留基准与乐观 |
+| NBS 1-5 月线上零售 +5.9%、总社零 +1.4%、5 月社零 -0.6% | 产品需求 | 电商核心需求不支持极度乐观基准化 | 消费弱会压广告 ROI | 宏观需求风险只处理在电商需求层 | 保留悲观，基准不下移 |
+| AI 行业瓶颈：HBM/CoWoS、电力、液冷、网络、利用率 | Cloud 产品贡献、现金流 | 限制 AI 云需求转收入速度 | 折旧和低利用率压毛利 | CAPEX 到收入可能滞后 1-4 季度 | 保留悲观和基准约束 |
+| Token 价格战和开源模型降价 | MaaS/Cloud 利润率 | 收入不一定下修，用量可抵消 | 毛利率风险直接上升 | 需要 tokens/GPU-hour 改善 | 乐观利润下移条件 |
+| 不披露云 backlog/RPO、GPU 数和客户订单 | 证据可信度 | 限制极度乐观收入可信度 | 利润率也需估算 | 不能把 CAPEX 自动等同未来收入 | 极度乐观保留为低可信上限 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 收入仍小幅增长，但低于核心 like-for-like 和 AI 云预期；利润被补贴、折旧和价格战压制 | FY2026 基数高、Cloud AI 已有收入，不支持收入断崖 | 消费弱、quick commerce 补贴、AI capacity 交付慢、Qwen 获客费高 | 保留 | 悲观公司情景 | 中 | 消费弱只在电商需求处理；AI 供给瓶颈只在 Cloud 收入/现金流处理 |
+| 基准 | FY2026 核心趋势正常兑现：电商稳、Cloud 高增、AIDC 改善、快商亏损收窄 | A/B 级分部收入、AI-related 收入、外部云增速、AIDC EBITA 改善 | Cloud backlog 不披露；MaaS 和 T-Head 部分仍是 C 级 | 保留 | 最可能情景 | 中高 | 不把 T-Head 未披露收入重复惩罚 Cloud 基准 |
+| 乐观 | Cloud AI、MaaS、quick commerce unit economics 和 AIDC 同时强于预期 | AI-related 连续高增、Model Studio 客户 8 倍、芯片/全栈 AI 发布、AIDC 接近盈亏平衡 | 需要客户、价格、供给、利用率同时验证；不是行业 beta 即可成立 | 保留 | 有条件乐观 | 中 | 价格战只限制利润率，不直接否定收入需求 |
+| 极度乐观 | NTM 收入和结构均显著超预期，AI 云成为主要增量，利润率大幅恢复 | 管理层提出 AI-related 约一年内成最大云外部收入线，MaaS ARR 路径清楚 | 云 backlog、GPU/ASIC 数、客户订单、MaaS 收入拆分不足；quick commerce 竞争不确定 | 下移 | 乐观上限 / 附录跟踪 | 低到中 | 不把远期 AI 芯片和 Agent 期权直接放入基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入约 RMB 1,115-1,155bn，绝对增速 +9% 至 +13%；调整 EBITDA 约 RMB 125-155bn，non-GAAP 净利润 RMB 70-95bn；FCF 从 FY2026 的 -RMB 46.6bn 低位修复到 -RMB 20bn 至 +RMB 30bn。核心含义是：阿里不是纯 AI 硬件股，NTM 最可信的经营传导是“电商现金流底座 + AI 云高增 + quick commerce 亏损收窄 + AIDC 接近盈亏平衡”。
+- 乐观情景成立条件：Cloud Intelligence Group NTM 收入超过 RMB 235bn，AI-related cloud revenue 年化进入 RMB 70bn 以上，MaaS/Model Studio ARR 兑现 RMB 35-50bn，quick commerce 增长仍高但补贴率下降，AIDC EBITA 转正。
+- 极度乐观情景成立条件：AI-related product revenue 在约一年内成为 Cloud 外部最大收入线，MaaS ARR 接近 RMB 50-70bn，T-Head/异构调度把 Cloud 成本/token 显著压低，quick commerce 接近盈亏平衡，集团销售营销费用率显著回落，同时 CAPEX 不再继续吞噬全部经营现金流。
+- 悲观情景触发条件：AI-related cloud revenue 增速明显降至 50% 以下或低于 RMB 10bn/季度，Cloud EBITA 率持续低于 8%，quick commerce 收入增长依赖补贴且中国电商 EBITA 率无法恢复，Qwen 获客支出继续拉高销售营销费用率，FY2027 上半年 FCF 仍显著流出。
+- 后续跟踪数据：AI-related cloud revenue 绝对额和云外部占比；MaaS/模型应用 ARR；Cloud adjusted EBITA margin；CAPEX 与云收入滞后关系；quick commerce unit economics；China E-commerce CMR like-for-like；AIDC EBITA；T-Head 外部客户、云实例和收入披露；tokens/GPU-hour、API 价格和 GPU/ASIC availability。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：财务数据截至 Alibaba FY2026（2026-03-31）；最新公司公告使用 2026-05-13 FY2026 全年结果、2026-05-20 全栈 AI 升级发布、2026-06-18 FY2026 年报 filing 页面；中国消费数据使用国家统计局 2026-06-16 发布的 2026 年 1-5 月数据；项目内行业资料主要为 2026-06-10 至 2026-06-11 版本。
+- 主要收入、订单、指引和利润率来源：Alibaba FY2026 全年分部收入和调整 EBITA；2026-03 季度 Cloud、AI-related product revenue、quick commerce、AIDC、All others 口径；Model Studio 客户数和 MaaS ARR 管理层口径；T-Head/Zhenwu 出货和外部客户披露。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 为当前收入锚；FY2027 用作 NTM 近似窗口；MaaS ARR、T-Head 外部销售、Qwen 消费端商业化、Agentic AI 和国产 AI 加速器生态均为补充或远期期权，除已在收入表或管理层可验证路径中的部分外，不替代 NTM 基准。
+- 主要来源：
+  - Alibaba Group, `Alibaba Group Announces March Quarter 2026 and Fiscal Year 2026 Results`, 2026-05-13: https://data.alibabagroup.com/ecms-files/1532295521/5b1cb883-8d00-4237-a148-6631cc12a5d2/Alibaba%20Group%20Announces%20March%20Quarter%202026%20and%20Fiscal%20Year%202026%20Results.pdf
+  - Alibaba Group Investor Relations SEC filings page, FY2026 annual report filing entries, 2026-06-18: https://www.alibabagroup.com/en-US/ir-filings-sec
+  - Alibaba Group, `Alibaba Unveils New AI Chip, Flagship Model, and Rebuilt Cloud Stack AI for Agentic Era`, 2026-05-20: https://www.alibabagroup.com/en-US/document-1994119844504535040
+  - Alibaba Cloud, `Alibaba Announces Comprehensive Full-Stack AI Upgrade for the Agentic Era`, 2026-05-20: https://www.alibabacloud.com/en/press-room/alibaba-announces-comprehensive-full-stack-ai
+  - Alibaba Cloud Community / Gartner IaaS market share summary, 2026-04-22: https://www.alibabacloud.com/blog/alibaba-maintains-leading-position-by-revenue-as-asia-pacifics-largest-cloud-provider-with-growing-market-share_603054
+  - 国家统计局，`2026年1—5月份社会消费品零售总额增长1.4%`, 2026-06-16: https://www.stats.gov.cn/sj/zxfb/202606/t20260616_1963949.html
+  - Gartner, `Worldwide sovereign cloud IaaS spending will total $80 billion in 2026`, 2026-02-09: https://www.gartner.com/en/newsroom/press-releases/2026-02-09-gartner-says-worldwide-sovereign-cloud-iaas-spending-will-total-us-dollars-80-billion-in-2026
+  - 项目内公司资料：`公司调研/云算力_IDC_AI软件平台/BABA_Alibaba阿里巴巴_公司调研_2026-06-20.md`
+  - 项目内行业资料：`行业调研/产业背景/全球AI需求与Token经济框架_2026-06-11.md`
+  - 项目内行业资料：`行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+  - 项目内行业资料：`行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - 项目内行业资料：`行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`
+  - 项目内行业资料：`行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-06-11.md`
+  - 项目内行业资料：`行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+  - 项目内行业资料：`行业调研/AI网络_光互联_铜互联/行业调研_AI Fabric网络操作系统与遥测软件_2026-06-11.md`
+  - 项目内行业资料：`行业调研/AI网络_光互联_铜互联/行业调研_网卡、DPU与SmartNIC_2026-06-11.md`

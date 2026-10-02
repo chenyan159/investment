@@ -1,0 +1,163 @@
+# 公司收入传导与价值传导评估：Modine Manufacturing（MOD）
+
+> 报告日期：2026-06-12  
+> 正式输出目录：`分析报告/公司评估/`  
+> 研究对象：MOD / Modine Manufacturing  
+> 研究边界：本文只评估从行业需求到 MOD NTM 收入、利润和经营质量的传导，不做全公司排序，不输出投资评级、目标价、股价区间或估值倍数判断。本文未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归或模型比较资料。  
+> 主口径说明：Modine 财年截至 3 月 31 日。本文把 FY2027 指引，也就是 2026-04-01 至 2027-03-31，作为 NTM 主口径锚；由于报告日在 2026-06-12，真实滚动 NTM 会多包含 2027Q2 自然季度的一部分，因此文中把 2027-2029 LTA 的早期转收入只作为乐观/上限校准，不把三年合同总额直接计入 NTM。  
+> 主要本地资料：`公司调研/机电_冷却_工程_水处理_边缘工业AI/MOD_Modine_Manufacturing_公司调研_2026-06-11.md`，以及 `行业调研/AI园区电力_机电_冷却/`、`行业调研/产业背景/` 中 HVAC、直液冷、液冷小组件、AI 数据中心建设规模相关正式报告。  
+> 最新官方披露校正：Modine 2026-05-26 公布 FY2026 Q4/FY2026 业绩并给出 FY2027 指引；2026-05-26 同日公布 2027-2029 年超过 40 亿美元 Airedale 数据中心冷却产品长期产能协议和 1.65 亿美元客户预付款；2026-05-27 提交 FY2026 Form 10-K。本文以这些披露为最新经营锚。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，使用 FY2027 公司指引作为最接近的 12 个月经营锚。FY2026 全年、FY2027 指引、2027-2029 LTA、FY2028 数据中心收入目标和长期 run-rate 只作补充口径，不能替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：FY2026 net sales 为 31.811 亿美元，同比 +23%；Data Centers 约占 35%，对应约 11.1 亿美元；Climate Solutions net sales 为 20.623 亿美元，Performance Technologies net sales 为 11.318 亿美元。FY2027 指引为收入增长 +20% 至 +35%，隐含约 38.2-42.9 亿美元；adjusted EBITDA 指引为 6.50-6.80 亿美元。
+- 重要产品/业务线：Airedale 数据中心冷水机组和热排放；CRAC/CRAH、fan wall、precision AHU 和空气侧冷却；CDU、RDHx、液冷/浸没接口；模块化数据中心、控制和服务；Heat Transfer Solutions 中的数据中心换热和 dry cooler；Commercial HVAC / HVAC Technologies；Performance Technologies 传统车辆和重型设备热管理。
+- NTM 公司收入四情景：悲观 35.5-37.5 亿美元；基准 38.5-41.5 亿美元；乐观 41.5-43.5 亿美元；极度乐观 43.5-46.5 亿美元。基准基本对应 FY2027 指引中低到中高区间；乐观需要 Data Centers 接近或高于 +70% 增长且传统业务不拖累；极度乐观只保留为经营上限。
+- 利润或 EBITDA 四情景：悲观 adjusted EBITDA 5.20-5.90 亿美元；基准 6.50-6.80 亿美元；乐观 7.00-7.60 亿美元；极度乐观 7.80-8.60 亿美元。净利润受分拆交易费用、重组、税项和非现金项目影响，作为补充观察，不作为本报告主要利润口径。
+- 最大传导瓶颈：需求不是核心瓶颈，核心瓶颈是 Airedale 数据中心订单从客户锁产能、产品排产、关键零部件、工厂爬坡、FAT/SAT、现场交付到收入确认的链条。2027-2029 超过 40 亿美元 LTA 是强 B 级订单/产能证据，但不是 NTM 全额收入证据。
+- 最大利润率变量：Data Centers 收入快速增长能否摆脱 FY2026 扩产低效。FY2026 毛利率为 23.0%，同比下降 190bp；Q4 毛利率 22.5%，同比下降 320bp；Climate Q4 gross margin 24.6%，同比下降 510bp。若临时人工、关键组件短缺、tariff 和材料成本继续压制，收入上修会被利润率吞掉。
+- 最大现金流变量：FY2026 CFO 为 2.487 亿美元，FCF 为 1.054 亿美元，低于上一年，原因是 Data Centers 快速增长拉动营运资本和 capex；1.65 亿美元客户预付款改善资金压力，但也代表未来交付责任。
+- 可信度：基准为中高，乐观为中，极度乐观为低到中。收入、指引、分部和 LTA 证据强；但公司未披露标准 backlog、book-to-bill、取消率、lead time、Data Centers 内部产品收入和产品级毛利率，因此产品级拆分需保守估算。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Airedale 数据中心冷水机组 / heat rejection | FY2026 Data Centers 约 11.1 亿美元中的最大部分；研究估算当前收入约 4.5-6.5 亿美元，Q4 run-rate 明显高于全年 | 约 14%-20% | AI 数据中心设施侧热排放主收入池；TurboChill、dry cooler、free cooling、hybrid chiller 和低水耗方案直接绑定高密 AI rack | A/B：Data Centers 收入和产品清单为 A，LTA 为 B，产品拆分为估算 | 进入基准，NTM 基准估算 8.0-10.5 亿美元 | TurboChill 3+MW、LiquidFirst、高温水、低水耗和 chillerless/chiller-assist 架构带来的 mix 上修 |
+| CRAC/CRAH / fan wall / precision AHU / 空气侧冷却 | FY2026 Data Centers 中研究估算约 2.5-4.0 亿美元 | 约 8%-13% | 液冷不会消灭空气侧余热、网络/电源/存储散热和混合机房需求，是中高确定性增量 | A/B：10-K 明确产品；具体收入拆分为 C 级估算 | 进入基准，NTM 基准估算 4.0-5.8 亿美元 | over-rack CRAH、fan wall 标准化和 edge/colo inference 改造 |
+| CDU / RDHx / 液冷与浸没接口 | FY2026 当前收入未披露；研究估算约 0.3-1.0 亿美元 | 约 1%-3% | 高潜力但当前可量化收入小；决定 MOD 是否从 facility-side 扩展到 rack/row liquid interface | C：产品清单和 LTA 覆盖冷却产品，但 CDU 单独订单/客户/收入未披露 | 基准只保守纳入小比例，NTM 基准估算 1.2-2.5 亿美元；大额放入乐观 | 2MW+ CDU、RDHx retrofit、LiquidFirst 架构、immersion 解决方案 |
+| 模块化数据中心 / 控制 / 服务 / parts | FY2026 当前收入未披露；研究估算约 0.5-1.2 亿美元 | 约 2%-4% | 收入规模不如冷水机和空气侧，但影响毛利、客户锁定、维护和生命周期价值 | B/C：10-K 明确 modular data center solutions、parts、maintenance、controls；收入未量化 | 小比例进入基准，NTM 基准估算 1.0-1.8 亿美元 | 标准模块化 cooling block、多站点复制、IQity / ACIS / Cooling AI 服务化 |
+| Heat Transfer Solutions / dry cooler / coils | FY2026 产品组约 5.7-5.8 亿美元，其中 AI 数据中心相关部分研究估算约 1.0-2.0 亿美元 | 全产品组约 18% | 当前收入基数大，AI 相关性中等；换热器、盘管、干冷器可支持冷却链 | A：产品组占比披露；AI 子集为 C | 全产品组进入基准；AI 子集只作为增量，不把全部 Heat Transfer 当 AI 收入 | 高温水、dry cooler、低水耗和防腐换热解决方案 |
+| Commercial HVAC / HVAC Technologies | FY2026 产品组约 3.5-3.6 亿美元；含并购贡献和非数据中心 HVAC | 约 11% | 非 AI 底盘和并购增长；对公司总收入和工厂吸收有影响 | A/B：产品组披露和 FY2026 并购贡献明确 | 进入基准，NTM 基准估算 4.2-5.2 亿美元 | 低 GWP、商业 HVAC 替换周期、除湿和专业空气处理 |
+| Performance Technologies | FY2026 net sales 11.318 亿美元；On-Highway 约 23%、Heavy-Duty 约 13%；拟与 Gentherm 合并分拆 | 约 35% | 传统业务和抵消项；发电机组冷却有数据中心备电间接受益，但主体不是 AI | A：分部收入和交易披露明确 | 在 FY2027 指引仍包含该业务前进入基准；AI 间接受益不单独扩大 | 分拆完成后 remaining MOD 更纯粹，传统周期风险下降 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不评估 MOD 份额、收入确认、利润率或公司层面汇总。需求单位按产品选择：数据中心冷水机组和空气侧使用 AI 数据中心冷却/HVAC 订单池、MW/rack 和客户产能锁定；CDU/RDHx 使用直液冷和液冷接口订单池；模块化/控制/服务使用模块化交付、装机和维护 attach；Heat Transfer 使用换热、dry cooler 和 HVAC&R 需求；Commercial HVAC 与 Performance Technologies 以终端市场和管理层当前预期为锚。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Airedale 数据中心冷水机组 / heat rejection | 本地行业资料估算美国 AI 数据中心冷却/液冷/HVAC 订单池 2026 务实 160-310 亿美元、2027 务实 220-450 亿美元；外部 data center cooling 供应商收入口径 2026 约 210-314 亿美元。MOD 已获 2027-2029 超过 40 亿美元 LTA | AI 项目电力并网、site readiness 或 GPU/rack 验收推迟；2027 订单池落在务实下沿或更低，冷水机组采购增长仅 +10%-25% | 订单池按务实路径推进，高密 rack 需要 facility heat rejection；MOD Data Centers 需求支撑 +50%-70% 收入增长预期 | GB300/Rubin/ASIC rack 带动 80-200kW/rack 机房加速，客户继续锁 capacity，冷水机组/热排放需求 +40%-70% | 多个 GW campus、低水耗项目和客户预付款扩散，需求池非线性上修，冷水机组/热排放需求 +70%-100%+ | 相对基准：悲观低 20%-35%；乐观高 25%-50%；极乐高 60%+ | 悲观低于当前预期；基准符合；乐观/极乐高于当前预期 | 正向：LTA、同业订单、行业 cooling/HVAC 订单池。反证：电力/MEP 延误、chillerless/dry cooling 降低传统 chiller 单位含量、关键组件短缺 |
+| CRAC/CRAH / fan wall / precision AHU / 空气侧冷却 | 2026 主流架构是 direct-to-chip 液冷加空气侧处理余热、网络、电源、存储和机房环境；Data Centers Q4 sales +158% 表明 air-side 与冷源共同放量 | 纯液冷/高温水架构减少部分 CRAH/AHU 数量，改造项目延后；需求仅 +5%-20% | 混合冷却成为主流，空气侧设备随 AI hall、edge inference 和 colo 改造正常增长 +20%-45% | over-rack CRAH、fan wall、custom AHU 和低水耗 air-side 方案成为项目标准，需求 +45%-80% | 既有数据中心 retrofit 与新建 AI hall 同时拉动，空气侧高端产品需求 +80%+ | 相对基准：悲观低 15%-30%；乐观高 25%-45%；极乐高 60%+ | 悲观低于当前预期；基准符合；乐观/极乐高于当前预期 | 正向：空气侧不会消失，Airedale 产品覆盖完整。反证：客户指定其他平台、普通 CRAC 商品化、液冷架构减少部分空气侧设备 |
+| CDU / RDHx / 液冷与浸没接口 | 直液冷资料显示 2026 单相 D2C、CDU、manifold 和 facility loop 是高密 rack 主线；但严格供应商收入口径低于广义项目订单池 | GB300/Rubin 验收慢、客户自研或 ODM/OEM 控制 rack-side loop，MOD 只做 facility plant；需求可参与但可收入化有限 | 高密 rack 继续推动 CDU/RDHx，MOD 通过 Airedale 和 LTA 小比例捕获，需求 +40%-80% | MOD 成为部分客户 qualified facility-to-rack liquid interface 供应商，CDU/RDHx 需求 +100%-200% | LiquidFirst、CDU-lite、高温水和 RDHx 多架构同时被多个战略客户采纳，需求 +200%+ | 绝对收入池增长大，但 MOD 份额和收入确认路径不清 | 悲观低于当前预期；基准仅小比例符合；乐观/极乐高于当前预期 | 正向：10-K 明确 CDUs/RDHx/immersion，行业需求强。反证：CoolIT/Ecolab、Eaton/Boyd、nVent、Vertiv、Schneider 和 ODM 在 rack-side 竞争强 |
+| 模块化数据中心 / 控制 / 服务 / parts | 10-K 披露 modular data center solutions、replacement parts、maintenance service 和 controls；行业显示模块化 cooling plant 和 controls 能缩短 time-to-power | 客户把 MOD 限定为设备商，服务和控制 attach 低；模块化项目首批延后 | 随 Data Centers 装机基数自然增长，parts/service/controls attach 正常提升 | 客户为多站点复制选择预制 cooling block、BMS/控制和服务打包，需求 +50%-100% | MOD 获得可复制模块化方案并形成高 attach 服务合同，需求 +100%+ | 基准需求随 11.1 亿美元 FY2026 Data Centers 装机扩张；绝对增量较硬件小 | 悲观低于当前预期；基准符合；乐观/极乐高于当前预期但证据较弱 | 正向：装机和维护刚性、控制服务毛利高。反证：客户自研 DCIM、EPC/MEP 控制总包、MOD 披露不足 |
+| Heat Transfer Solutions / dry cooler / coils | FY2026 Heat Transfer 约 18% 收入；数据中心热排放、dry cooler、防腐盘管和换热器需求随低水耗 cooling 增长 | 传统 HVAC&R 和工业需求平，AI 子集不足以抵消普通业务；需求 -3% 到 +3% | 全产品组低到中个位数增长，AI dry cooler / coils 子集高于平均 | 低水耗、warm-water 和 dry cooler 方案增加，AI 子集快速增长，全组 +8%-15% | 高温水和 chillerless/chiller-assist 路线大幅提高 dry cooler/换热器含量，全组 +15%+ | 相对当前全组预期：悲观低 5-8 pct；乐观高 5-10 pct | 悲观低于当前预期；基准符合；乐观/极乐高于当前预期 | 正向：Heat Transfer 是热排放必要部件。反证：普通换热器竞争分散，价格传导弱，AI 子集占比未披露 |
+| Commercial HVAC / HVAC Technologies | FY2026 HVAC Technologies 约 11%，增长含并购；非数据中心商业 HVAC 与除湿/加热/空气处理相关 | 并购整合慢，传统 HVAC 需求弱，需求 +0%-8% | 并购全年化和正常需求支持 +15%-30% | 专业除湿、商业改造和 HVAC&R 需求改善，需求 +30%-45% | 非 AI 商业 HVAC 周期、低 GWP 替换和并购协同共振，需求 +45%+ | 绝对需求锚来自 FY2026 约 3.5-3.6 亿美元收入基数 | 基准符合并购和当前 run-rate；乐观不是 AI 主线 | 正向：FY2026 三项并购扩大产品。反证：低增长传统 HVAC 和施工周期 |
+| Performance Technologies | FY2026 分部收入 11.318 亿美元，同比 -3%；发电机组冷却与数据中心备电间接相关，但主体是车辆、重型设备和工业热管理 | 商用车/农业/工程机械继续下行，需求 -8%-12% | 传统终端低个位数下滑到持平；分拆前对 FY2027 总收入仍有贡献 | stationary power 和部分工业热管理恢复，需求 +0%-5% | 发电机组冷却和传统市场同时恢复，需求 +5%-10% | 相对 FY2026：悲观 -0.9 至 -1.4 亿美元；基准 -0.6 至 +0.2 亿美元；乐观 +0.0 至 +0.6 亿美元 | 基准不把 AI 数据中心备电映射为分部高增 | 正向：数据中心备用电源需求间接带动。反证：分拆交易、传统周期、客户压价和原材料 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断外部需求中哪些能进入 MOD NTM 收入表，以及当前可收入化基数。不预测增长，不判断利润率。收入锚优先使用 FY2026 收入表、分部披露、产品组占比、FY2027 指引、LTA、客户预付款和公司公开产品清单。A/B 级证据进入基准；C 级只保守折扣；D/E 级只进乐观、极度乐观、附录或排除项。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Airedale 数据中心冷水机组 / heat rejection | FY2026 Data Centers 约 11.1 亿美元；Q4 Data Centers sales +158%；LTA 2027-2029 超过 40 亿美元并有 1.65 亿美元预付款；产品含 chillers、dry coolers、低水耗和 free cooling | 直接 | 设备和项目型收入，毛利受扩产效率、关键组件、tariff 和材料影响 | 6.8-8.0 亿美元 | 8.0-10.5 亿美元 | 10.5-12.5 亿美元 | 12.5-15.0 亿美元 | 基准符合 Data Centers +50%-70% 增长的主要设备锚；乐观需 LTA 早期转收入和其他客户不被挤出 | A/B；产品拆分为估算 | 是 | Data Centers 收入表可见，LTA 是强 B 级未来收入路径；但三年总额不可一次性纳入 | NTM 基准主收入池；LTA 只按 NTM 可交付部分折扣纳入 |
+| CRAC/CRAH / fan wall / precision AHU / 空气侧冷却 | 10-K 明确 Data Centers 产品含 precision air handling units、CRAC、CRAH、fan walls；FY2026 Data Centers 当前收入可见但产品拆分未披露 | 直接 | 成熟设备和定制 air handling，竞争较 chiller 分散，利润取决于项目复杂度和产能 | 3.2-4.0 亿美元 | 4.0-5.8 亿美元 | 5.8-7.2 亿美元 | 7.2-9.0 亿美元 | 基准符合混合冷却下空气侧正常增长；乐观需 retrofit/edge/colo 额外放量 | A/C | 是 | 产品在 10-K 列示，Data Centers 收入 A 级，单品拆分 C 级 | 进入基准，但不把全部 Data Centers 增量归给空气侧 |
+| CDU / RDHx / 液冷与浸没接口 | 10-K 明确 Data Centers 产品含 rear-door heat exchangers、CDUs、immersion solutions；Airedale 产品和行业需求存在，但公司未披露 CDU revenue、客户或 backlog | 直接 | 若认证成功毛利可高，但当前规模小、工程和责任成本高 | 0.5-1.2 亿美元 | 1.2-2.5 亿美元 | 2.5-4.5 亿美元 | 4.5-7.0 亿美元 | 基准只是保守小比例；乐观高于当前可见收入路径 | C | 是，保守 | 产品清单和 LTA 支撑可参与，收入拆分缺失限制基准 | 进入基准小额，主要作为乐观变量 |
+| 模块化数据中心 / 控制 / 服务 / parts | 10-K 明确 modular data center solutions、replacement parts、maintenance service、control solutions；未披露收入 | 直接 | 服务/控制毛利较好，模块化项目早期可能因集成和验收压低毛利 | 0.6-1.0 亿美元 | 1.0-1.8 亿美元 | 1.8-3.0 亿美元 | 3.0-5.0 亿美元 | 基准按装机和服务 attach，乐观需可复制模块化项目 | B/C | 是，保守 | 业务存在和 Data Centers 装机扩张明确；缺少单独收入 | 进入基准小额，超过 3 亿美元需更多客户/订单证据 |
+| Heat Transfer Solutions / dry cooler / coils | 10-K 产品组占 FY2026 net sales 18%，对应约 5.7-5.8 亿美元；AI 子集未披露 | 直接/间接 | 成熟制造，单品竞争较分散，AI dry cooler 和防腐换热器可改善 mix | 5.5-6.0 亿美元 | 6.0-6.8 亿美元 | 6.8-7.6 亿美元 | 7.6-8.8 亿美元 | 基准为全产品组低到中个位数增长；AI 子集不单独全部放大 | A/C | 是 | 产品组收入 A 级，AI 子集 C 级 | 全产品组进入基准；AI 子集作为 mix 和增长补充 |
+| Commercial HVAC / HVAC Technologies | 10-K 产品组占 FY2026 net sales 11%，对应约 3.5-3.6 亿美元；FY2026 收购 AbsolutAire、L.B. White、Climate by Design | 直接 | 商业 HVAC 和专业空气处理，非 AI，利润受整合和周期影响 | 3.8-4.2 亿美元 | 4.2-5.2 亿美元 | 5.2-6.0 亿美元 | 6.0-7.0 亿美元 | 基准符合并购全年化和正常增长；乐观不是 AI 直接上修 | A/B | 是 | 产品组收入和并购事实明确 | 进入基准，作为非 AI 增长与收入底盘 |
+| Performance Technologies | FY2026 net sales 11.318 亿美元，同比 -3%；公司已宣布拟与 Gentherm 通过 Reverse Morris Trust 合并分拆，FY2027 指引仍包含该业务 | 直接，AI 间接很小 | 传统车辆/工业周期，毛利受材料、tariff、价格传导和终端需求影响 | 10.0-10.8 亿美元 | 10.5-11.5 亿美元 | 11.5-12.2 亿美元 | 12.2-13.0 亿美元 | 基准符合低增长/小幅下滑；不因数据中心备电主题上修 | A | 是 | 分部收入 A 级，FY2027 指引包含该业务 | 进入公司基准；分拆后需更新口径 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从需求和收入基数出发，判断每个重要产品/业务线在 NTM 内对 MOD 的收入和利润贡献。收入为 MOD 可确认 revenue，不等于客户 CapEx、项目总额、行业 TAM 或 2027-2029 LTA 全额。利润贡献采用 adjusted operating income / adjusted EBITDA 近似的研究估算，公司未披露产品级利润率；精确拆分不可得处以区间和方向表达。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Airedale 数据中心冷水机组 / heat rejection | 悲观产品 | 6.8-8.0 亿美元 | 0.8-1.2 亿美元 | 下行到持平 | 低于当前预期 | 组件短缺、天气和扩产低效已在 Q4 出现 | 保留为悲观 | chiller 关键部件、工厂爬坡、客户现场验收延迟 |
+| Airedale 数据中心冷水机组 / heat rejection | 基准产品 | 8.0-10.5 亿美元 | 1.4-2.1 亿美元 | 小幅改善 | 符合 FY2027 Data Centers 正常兑现 | FY2026 Data Centers 约 11.1 亿美元、Q4 +158%、LTA 强订单信号 | 保留 | 产品拆分未披露，LTA 只小部分进入 NTM |
+| Airedale 数据中心冷水机组 / heat rejection | 乐观产品 | 10.5-12.5 亿美元 | 2.1-3.0 亿美元 | 改善 | 高于当前预期 | LTA 早期转收入、其他 hyperscale/colo 客户继续下单 | 保留 | 大客户锁产能也可能压价，组件和测试产能需同步 |
+| Airedale 数据中心冷水机组 / heat rejection | 极度乐观产品 | 12.5-15.0 亿美元 | 3.0-4.2 亿美元 | 明显改善 | NTM 上限 | 多个客户锁产能且产能爬坡顺利 | 下移为乐观上限 | 需要需求、份额、价格、产能、验收同时突破 |
+| CRAC/CRAH / fan wall / precision AHU / 空气侧冷却 | 悲观产品 | 3.2-4.0 亿美元 | 0.3-0.6 亿美元 | 下行 | 低于预期 | 液冷架构减少部分空气侧需求，客户项目延期 | 保留 | 普通 CRAC 商品化、竞争者多、客户多供 |
+| CRAC/CRAH / fan wall / precision AHU / 空气侧冷却 | 基准产品 | 4.0-5.8 亿美元 | 0.7-1.1 亿美元 | 持平到小幅改善 | 符合预期 | 高密 rack 仍需要余热、网络/电源/环境空气侧处理 | 保留 | 公司未披露 air-side 单独收入 |
+| CRAC/CRAH / fan wall / precision AHU / 空气侧冷却 | 乐观产品 | 5.8-7.2 亿美元 | 1.1-1.7 亿美元 | 改善 | 高于预期 | retrofit、colo inference、fan wall/over-rack 标准化 | 保留 | 价格竞争和现场调试 |
+| CRAC/CRAH / fan wall / precision AHU / 空气侧冷却 | 极度乐观产品 | 7.2-9.0 亿美元 | 1.7-2.4 亿美元 | 明显改善 | 上限 | 新建和改造同步加速，MOD 被多客户纳入标准包 | 下移为乐观上限 | 无单品 backlog 佐证，不能作为基准 |
+| CDU / RDHx / 液冷与浸没接口 | 悲观产品 | 0.5-1.2 亿美元 | -0.1-0.1 亿美元 | 稀释到持平 | 低于当前叙事 | 客户选择专业液冷厂或 ODM 控制 rack-side | 保留 | 认证、漏液责任、压力降、水质和现场维护 |
+| CDU / RDHx / 液冷与浸没接口 | 基准产品 | 1.2-2.5 亿美元 | 0.1-0.4 亿美元 | 小幅改善 | 符合保守预期 | 10-K 产品清单和 Data Centers 增长支持小规模收入 | 保留 | 未披露客户、订单和单品收入 |
+| CDU / RDHx / 液冷与浸没接口 | 乐观产品 | 2.5-4.5 亿美元 | 0.4-0.9 亿美元 | 改善 | 高于预期 | LTA 覆盖冷却产品，客户在 facility-to-rack 接口采用 Airedale | 保留但可信度中 | CoolIT/Ecolab、Eaton/Boyd、nVent、Vertiv/Schneider 竞争 |
+| CDU / RDHx / 液冷与浸没接口 | 极度乐观产品 | 4.5-7.0 亿美元 | 0.9-1.7 亿美元 | 明显改善 | 上限 | MOD 成为多客户 CDU/RDHx 合格供应商 | 下移为乐观上限或附录 | 需要公开客户、产能和交付证据 |
+| 模块化数据中心 / 控制 / 服务 / parts | 悲观产品 | 0.6-1.0 亿美元 | 0.1-0.2 亿美元 | 持平 | 略低于预期 | 模块化方案延迟，服务 attach 低 | 保留 | 客户自研 controls，EPC/MEP 控制总包 |
+| 模块化数据中心 / 控制 / 服务 / parts | 基准产品 | 1.0-1.8 亿美元 | 0.2-0.5 亿美元 | 改善 | 符合保守预期 | 装机基数、parts、maintenance 和 controls 自然增长 | 保留 | 收入未单独披露 |
+| 模块化数据中心 / 控制 / 服务 / parts | 乐观产品 | 1.8-3.0 亿美元 | 0.5-1.0 亿美元 | 明显改善 | 高于预期 | 多站点模块化 cooling block 与服务合同 | 保留但需证据 | 项目型执行和重复性不确定 |
+| 模块化数据中心 / 控制 / 服务 / parts | 极度乐观产品 | 3.0-5.0 亿美元 | 1.0-1.8 亿美元 | 明显改善 | 上限 | 模块化方案成为战略客户标准配置 | 移入附录/乐观上限 | 无 A/B 级收入锚，不得进基准 |
+| Heat Transfer Solutions / dry cooler / coils | 悲观产品 | 5.5-6.0 亿美元 | 0.5-0.8 亿美元 | 持平到下行 | 低于预期 | 传统 HVAC&R/工业需求弱，AI 子集不足以抵消 | 保留 | 普通换热器竞争分散、价格传导有限 |
+| Heat Transfer Solutions / dry cooler / coils | 基准产品 | 6.0-6.8 亿美元 | 0.8-1.2 亿美元 | 持平到小幅改善 | 符合预期 | FY2026 产品组约 18%，AI dry cooler 子集增长 | 保留 | AI 子集未披露，不能全部当 AI 收入 |
+| Heat Transfer Solutions / dry cooler / coils | 乐观产品 | 6.8-7.6 亿美元 | 1.2-1.7 亿美元 | 改善 | 高于预期 | 高温水、dry cooling、低水耗方案提高内容量 | 保留 | 需证明 mix 改善能留下利润 |
+| Heat Transfer Solutions / dry cooler / coils | 极度乐观产品 | 7.6-8.8 亿美元 | 1.7-2.3 亿美元 | 改善 | 上限 | dry cooler/换热器在多地区项目中成为关键瓶颈 | 下移为乐观上限 | 没有 AI 子集订单披露 |
+| Commercial HVAC / HVAC Technologies | 悲观产品 | 3.8-4.2 亿美元 | 0.3-0.5 亿美元 | 稀释到持平 | 低于预期 | 并购整合慢，传统 HVAC 需求弱 | 保留 | 非 AI，周期与整合风险 |
+| Commercial HVAC / HVAC Technologies | 基准产品 | 4.2-5.2 亿美元 | 0.5-0.9 亿美元 | 小幅改善 | 符合预期 | FY2026 并购贡献和产品组增长 | 保留 | 收购摊销、整合和非 AI 需求 |
+| Commercial HVAC / HVAC Technologies | 乐观产品 | 5.2-6.0 亿美元 | 0.9-1.2 亿美元 | 改善 | 高于预期 | 专业除湿、HVAC&R 和并购协同 | 保留 | 乐观不应归因于 AI 数据中心 |
+| Commercial HVAC / HVAC Technologies | 极度乐观产品 | 6.0-7.0 亿美元 | 1.2-1.6 亿美元 | 改善 | 上限 | 低 GWP 替换、商业 HVAC 周期和并购协同共振 | 下移为乐观上限 | 缺少 NTM 内强证据 |
+| Performance Technologies | 悲观产品 | 10.0-10.8 亿美元 | 0.7-1.0 亿美元 | 下行 | 低于预期 | 传统终端下行、tariff/材料压制 | 保留 | 分拆交易、客户需求和成本 |
+| Performance Technologies | 基准产品 | 10.5-11.5 亿美元 | 1.0-1.3 亿美元 | 持平 | 符合预期 | FY2026 分部收入 11.318 亿美元，FY2027 指引仍含该业务 | 保留 | AI 相关性低，不可因备电需求上调 |
+| Performance Technologies | 乐观产品 | 11.5-12.2 亿美元 | 1.3-1.7 亿美元 | 小幅改善 | 高于预期 | stationary power 和工业/车辆市场修复 | 保留但非核心 | 分拆时点可能改变可比口径 |
+| Performance Technologies | 极度乐观产品 | 12.2-13.0 亿美元 | 1.7-2.0 亿美元 | 改善 | 上限 | 传统周期和发电机组冷却同时改善 | 下移为乐观上限 | 与 MOD 未来纯 climate 口径不一致 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节将产品级贡献合成为 MOD NTM 总收入、毛利率、经营利润率、EBITDA、净利润和自由现金流方向。汇总前剔除重复计算：Data Centers 内的 chiller、air-side、CDU、模块化/服务合计不得超过 Data Centers 总收入路径；Heat Transfer 中的 AI 子集不再重复计入 Data Centers；Performance Technologies 在 FY2027 指引含该业务时进入公司收入，但分拆完成后需重算 remaining MOD。绝对增速以 FY2026 net sales 31.811 亿美元为基数；相对预期以 FY2027 指引、Q4 run-rate、LTA 和可见产能节奏为锚。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 35.5-37.5 亿美元 | +12%-18% | 低于 FY2027 指引下沿，Data Centers 仍增长但产能/验收/组件短缺拖累，Performance 传统业务下滑 | 22.0%-23.5% | 10.0%-12.0% | adjusted EBITDA 5.20-5.90 亿美元；净利润无法可靠量化，方向低于 FY2027 经营目标 | CFO 正但 FCF 承压；库存、应收和 capex 吞噬增长 | 中 | 关键组件短缺、扩产低效、客户交付推迟、tariff/材料成本 |
+| 基准公司 | 38.5-41.5 亿美元 | +21%-30% | 基本符合 FY2027 指引；Data Centers +50%-70% 正常兑现，Commercial HVAC 并购全年化，Performance 大体稳定 | 24.0%-25.5% | 13.0%-14.5% | adjusted EBITDA 6.50-6.80 亿美元；净利润受分拆/费用影响，经营性上行 | FCF 改善但仍低于 EBITDA 增长，因扩产和 working capital 占用 | 中高 | Data Centers 产能爬坡、LTA 早期交付、价格/成本传导 |
+| 乐观公司 | 41.5-43.5 亿美元 | +30%-37% | 高于指引中点、接近或略高于指引上沿；Data Centers 超过 +70%，传统业务不拖累 | 25.5%-26.8% | 14.5%-16.0% | adjusted EBITDA 7.00-7.60 亿美元；净利润方向明显改善但仍受一次性费用扰动 | FCF 随客户预付款和盈利改善上行，营运资本仍是波动源 | 中 | 多客户 Data Centers 交付、扩产效率恢复、服务/controls attach |
+| 极度乐观公司 | 43.5-46.5 亿美元 | +37%-46% | 显著高于当前指引，只代表上限；需求、份额、价格、产能和执行同时突破 | 26.8%-28.0% | 16.0%-18.0% | adjusted EBITDA 7.80-8.60 亿美元；净利润无法可靠量化但经营利润大幅上行 | FCF 可能改善，但若同步大扩产，现金流仍可能滞后利润 | 低到中 | 多个核心环节必须同时成立，且 LTA 不能挤出其他客户或压低价格 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。正向证据必须说明提升的是需求、收入基数、产品贡献、公司利润还是执行可信度；反证只限制实际影响的环节，不重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Data Centers 约 11.1 亿美元，约占公司收入 35%，Q4 Data Centers sales +158% | 收入基数 / 产品贡献 | 把数据中心冷却从主题相关上移到 A 级收入锚；支持 NTM Data Centers 基准 16.5-19.0 亿美元区间 | 高增长本身不保证 margin，Q4 已显示扩产压毛利 | Q4 run-rate 强，但也带来应收、存货和 capex | 基准保留，乐观保留 |
+| 2027-2029 超过 40 亿美元 LTA 和 1.65 亿美元预付款 | 收入基数 / 执行可信度 | B 级订单和产能锁定证据，提升 2027-2029 可见度；NTM 只折扣纳入早期部分 | 预付款可支撑扩产，但大客户长协可能压价 | 改善资金压力，同时增加交付责任 | 基准保留，乐观上移；三年总额不得进入 NTM 基准 |
+| FY2027 指引收入 +20%-35%，adjusted EBITDA 6.50-6.80 亿美元 | 公司汇总 | 直接锚定基准公司收入 38.5-41.5 亿美元；低于 38.2 亿属于悲观 | 指引隐含 EBITDA margin 改善，说明管理层预计扩产低效缓解 | 若现金流未跟上，说明营运资本占用仍重 | 基准保留 |
+| FY2026 Q4 毛利率 22.5%、Climate Q4 gross margin 24.6%，均同比下降 | 利润率 / 执行 | 不直接压低需求，但限制收入向利润传导 | 扩产低效、temporary labor、tariff 和材料成本是最大 margin 反证 | 若持续，会压 FCF 和产能投资回报 | 乐观利润下移，悲观保留 |
+| 关键组件短缺和 severe weather 影响 Q4 生产天数 | 执行可信度 | 收入确认可能从需求强变成交付慢 | 加急、外包和低效率压毛利 | 影响 backlog 转收入节奏和客户交付 | 悲观保留；基准需跟踪 Q1/Q2 |
+| FY2026 FCF 1.054 亿美元，低于 FY2025，CFO 2.487 亿美元 | 现金流 | 不否定收入增长 | 利润质量需结合营运资本 | Data Centers 增长拉动应收、库存和 capex | 基准保留但现金流可信度中 |
+| Performance Technologies 拟与 Gentherm 合并分拆 | 公司组合 | FY2027 指引仍含该业务，短期基准需要纳入；交易后 remaining MOD 收入口径下降但纯度上升 | 分拆可能减少传统低增长业务，但交易费用扰动净利润 | 预计收到现金用于偿债，但交易完成时点不确定 | 当前基准保留；交易完成后重算 |
+| CDU/RDHx/immersion 产品列入 10-K，但单独收入、客户、backlog 未披露 | 产品贡献 | 只能小比例进入基准，不能按行业直液冷订单池放大 | 早期毛利不确定，服务成本和责任链可能高 | 认证、漏液、现场维护是执行风险 | 基准保守；大额机会下移到乐观/附录 |
+| 客户集中：FY2026 一个全球科技客户约占销售 11%，前十大客户占 49% | 收入基数 / 价格 / 执行 | 大客户可提高可见度，也可能导致拉货节奏集中 | 议价和长协条款可能压价 | 项目延期或规格变更会放大波动 | 风险只作用于价格/确认/执行，不重复惩罚需求 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Data Centers 需求仍增长，但收入确认和利润率低于当前预期，公司收入低于 FY2027 指引下沿 | Q4 Data Centers +158%、LTA 和 FY2027 指引说明需求不弱 | 组件短缺、天气、扩产低效、毛利率下滑、营运资本占用 | 保留 | 公司悲观下限 35.5-37.5 亿美元，EBITDA 5.20-5.90 亿美元 | 中 | 组件短缺和扩产低效只在收入确认/利润率/现金流层处理，不再重复压低行业需求 |
+| 基准 | FY2027 指引正常兑现，Data Centers +50%-70%，传统业务大体稳定 | FY2026 收入表、Q4 run-rate、Q3 两年 Data Centers +50%-70% 预期、LTA 预付款 | 产品拆分缺失，Data Centers 内毛利率未披露，Performance 分拆可能改变口径 | 保留 | 公司基准 38.5-41.5 亿美元，EBITDA 6.50-6.80 亿美元 | 中高 | LTA 三年总额只作订单可见度，不重复当作 NTM 收入 |
+| 乐观 | Data Centers 超过指引隐含路径，扩产效率恢复，利润率改善 | 40 亿美元 LTA、1.65 亿美元预付款、强行业 cooling/HVAC 订单池、客户锁产能 | 大客户压价、组件短缺、固定价合同、CDU/RDHx 缺少独立收入证据 | 保留 | 公司乐观 41.5-43.5 亿美元，EBITDA 7.00-7.60 亿美元 | 中 | 客户集中既是正向可见度也是价格风险，不在多个步骤重复惩罚 |
+| 极度乐观 | 需求、公司捕获、利润质量和执行质量同时突破 | 多客户 capacity reservation、LTA 早期转收入、chiller/air-side/CDU/服务同时放量 | 需要多个核心环节同时成立；CDU、模块化和服务缺少 A/B 级量化；产能和现场验收是硬约束 | 下移 | 保留为乐观上限或附录跟踪，公司极度乐观 43.5-46.5 亿美元 | 低到中 | 不把 2027-2029 LTA 全额、行业 TAM 或同业订单重复加总到 MOD NTM |
+
+## 8. 结论
+
+- 最可能情景：基准偏乐观之间。MOD 的 NTM 收入最可能落在 38.5-41.5 亿美元，若 Data Centers 在 FY2027 继续接近 +60%-70% 且传统业务不明显拖累，可向 41.5-43.5 亿美元乐观区间移动。主收入传导不是“AI 数据中心 CapEx 很大，所以 MOD 同比例增长”，而是 `AI rack 密度上升 -> 冷源/热排放/空气侧/液冷接口订单 -> Airedale 产能和客户认证 -> 工厂交付和现场验收 -> MOD 可确认收入`。
+- 利润/现金流结论：FY2027 adjusted EBITDA 指引 6.50-6.80 亿美元是最可靠利润锚。收入增长若伴随毛利率恢复，经营杠杆明显；若 Q4 出现的扩产低效、关键组件短缺、tariff 和材料成本持续，收入上修会转化为低质量增长。现金流方向应改善，但 FCF 可能继续滞后 EBITDA，因为 Data Centers 扩张需要库存、应收、capex 和测试/交付资源。
+- 主要传导瓶颈：第一是关键组件和产线爬坡，第二是大客户项目交付窗口和现场验收，第三是 Data Centers 内部 mix 和价格传导，第四是客户集中带来的拉货节奏和议价风险，第五是 Performance Technologies 分拆导致的口径变化。
+- 乐观情景成立条件：FY2027 Q1/Q2 Data Centers 继续高增长；Q4 的 supply shortage 和 weather-related inefficiency 不再扩大；Climate/Data Centers 毛利率恢复；LTA 相关扩产按计划推进；非 LTA 客户没有被产能挤出；cash conversion 不继续恶化。
+- 极度乐观情景成立条件：除了乐观条件外，还需要 CDU/RDHx/模块化/controls 服务出现可量化客户和订单，LTA 在 2027 年初较快转收入，多个 hyperscaler/colo 同时追加 capacity reservation，且价格/mix 足以覆盖扩产和材料成本。
+- 悲观情景触发条件：FY2027 Q1/Q2 Data Centers 增速明显低于 +50%；Climate gross margin 继续下滑或低于 24%；关键组件短缺导致交付延期；LTA 转收入节奏低于市场预期；Performance Technologies 下滑或分拆成本明显扰动；FCF 因应收、库存和 capex 继续显著低于经营利润。
+- 后续跟踪数据：Data Centers 收入增速；Climate/Data Centers gross margin 和 adjusted EBITDA margin；LTA 扩产进展和客户预付款使用；chiller/CDU/air-side 新产线；关键组件 lead time；客户集中度；FCF、存货和应收；Performance Technologies 分拆完成时点和 remaining MOD 新指引；CDU/RDHx/模块化方案是否出现公开客户或单独订单。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：报告日期为 2026-06-12。公司最新官方经营数据使用 FY2026 Q4/FY2026 业绩公告 2026-05-26、LTA 公告 2026-05-26、FY2026 Form 10-K 2026-05-27，以及 FY2026 Q3 业绩公告 2026-02-04。
+- 主要收入、订单、指引和利润率来源：Modine FY2026 net sales 31.811 亿美元、FY2026 adjusted EBITDA 4.710 亿美元、FY2027 revenue growth +20%-35%、FY2027 adjusted EBITDA 6.50-6.80 亿美元来自公司 FY2026 Q4 业绩公告；FY2026 Climate Solutions net sales 20.623 亿美元、Performance Technologies net sales 11.318 亿美元、Data Centers 约 35%收入占比、Data Centers 产品清单、客户集中度和分拆说明来自 FY2026 10-K；2027-2029 超过 40 亿美元 LTA 和 1.65 亿美元预付款来自公司 2026-05-26 LTA 公告。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 是已确认经营基础，不替代 NTM；FY2027 是本文 NTM 主锚；2027-2029 LTA 是 B 级订单/产能锁定证据，只按 NTM 交付节奏折扣纳入；FY2028 超过 20 亿美元 Data Centers 目标和更长期液冷/模块化/服务机会只作为乐观和极度乐观校准。
+- 主要项目内来源：
+  - `公司调研/机电_冷却_工程_水处理_边缘工业AI/MOD_Modine_Manufacturing_公司调研_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+- 主要外部来源：
+  - Modine FY2026 Q4 results, 2026-05-26: https://investors.modine.com/news/news-details/2026/Modine-Reports-Fourth-Quarter-Fiscal-2026-Results/default.aspx
+  - Modine 2027-2029 Airedale LTA, 2026-05-26: https://investors.modine.com/news/news-details/2026/Modine-Announces-Landmark-4-Billion-Long-Term-Capacity-Agreement-through-2029-with-Strategic-Data-Center-Customer-for-Airedale-by-Modine-Cooling-Solutions/default.aspx
+  - Modine FY2026 Form 10-K, filed 2026-05-27: https://www.sec.gov/Archives/edgar/data/67347/000110465926066795/mod-20260331x10k.htm
+  - Modine FY2026 Q3 results, 2026-02-04: https://investors.modine.com/news/news-details/2026/Modine-Reports-Third-Quarter-Fiscal-2026-Results/default.aspx
+  - Modine FY2026 Q2 results, 2025-10-28: https://investors.modine.com/news/news-details/2025/Modine-Reports-Second-Quarter-Fiscal-2026-Results/default.aspx
+  - Modine FY2026 Q1 results, 2025-07-30: https://investors.modine.com/news/news-details/2025/Modine-Reports-First-Quarter-Fiscal-2026-Results/default.aspx
+  - Airedale TurboChill 3+MW release, 2026-01-22: https://investors.modine.com/news/news-details/2026/Airedale-by-Modine-Unveils-TurboChill-3MW-Redefining-Air-Cooled-Efficiency-for-AI-Data-Centers/default.aspx
+  - Airedale Data Center overview: https://www.airedale.com/data-centers/overview/
+  - Airedale TurboChill DCS product page: https://www.airedale.com/products/dcs-chillers/turbochill-dcs/

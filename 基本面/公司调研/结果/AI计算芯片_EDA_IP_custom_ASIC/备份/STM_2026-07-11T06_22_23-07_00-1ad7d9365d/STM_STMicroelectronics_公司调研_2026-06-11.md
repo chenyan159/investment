@@ -1,0 +1,337 @@
+# STMicroelectronics（STM）公司调研：从汽车/工业 IDM 到 AI 数据中心硅光、800VDC 电源与嵌入式控制的再定价
+
+报告日期：2026-06-11（America/Los_Angeles）  
+股票代码：STM（NYSE ADR）  
+公司名称：STMicroelectronics N.V.  
+正式目录：`公司调研/AI计算芯片_EDA_IP_custom_ASIC/`  
+本地资料边界：仅使用 `基本面/行业调研/` 下正式行业资料和 `公司调研/公司索引.md` 的目录归属；未读取、引用或继承 `特征量化/`、`日度资料/`、其他公司报告或临时目录内容。  
+货币单位：除特别说明外均为美元；公司财务为 U.S. GAAP；情景预测为研究估算，不是公司指引。
+
+## 0. 结论摘要
+
+STMicroelectronics（下称 ST）在投资人心中原本是一家**欧洲宽基半导体 IDM**：汽车 MCU/功率器件、工业 MCU/模拟、电源管理、MEMS/传感器、射频和定制芯片能力都很强，但也有典型 IDM 缺点：重资产、固定成本高、汽车/工业周期下行时利润率会被产能利用率和价格压力快速压低。
+
+2026 年市场对 STM 的重新定价，核心不是传统汽车 SiC 已经恢复，而是**AI 数据中心收入目标被显著上修**。公司 2026-06-02 把 Data Centers 收入目标提高到约 `10亿美元`，并表示若当前动能延续，2027 年可再翻倍。对比 ST 2025 年总收入 `118.0亿美元`、2026Q1 TTM 收入约 `123.8亿美元`，Data Centers 已经从“可选项”变成 2026 年约 `7%-8%` 收入口径、2027 年可能进入 `10%+` 的新增长曲线。
+
+最重要的业务线不是 GPU/ASIC 主芯片，而是 AI 基础设施的**连接、电源、控制**三层：
+
+1. **PIC100 硅光 / BiCMOS 光互联平台**：面向 800G/1.6T 光模块、NPO/CPO 路线。2026-03 公司宣布 PIC100 进入 300mm 高量产，并计划到 2027 年把产能提高到 2026 年初水平的 `4倍以上`，且有客户长期产能预留支持。
+2. **800VDC AI 数据中心电源转换**：与 NVIDIA 800VDC reference design 对齐，已有 800V->50V、800V->12V、800V->6V 架构。2026 主要是设计导入、样机和小批量；2027 随 Rubin/更高密 rack 和 800VDC sidecar 有望放大。
+3. **MCU/嵌入式控制/安全与基础设施管理**：AWS 协议中明确包含 advanced microcontrollers for intelligent infrastructure management；AI rack、光模块、power shelf、BBU、液冷/CDU 都需要大量控制、遥测和安全芯片。
+
+需要警惕的是：STM 目前股价已经把 AI 数据中心上行部分价格化。按 2026-06-11 盘中约 `$75.00`、市值约 `$67.8B` 计算，TTM GAAP 净利仅约 `$147M`，机械 TTM PE 接近 `460x`；Forward PE 第三方口径约 `43x-54x`，P/S 约 `5.1x-5.5x`。这不是传统周期股估值，而是市场在买“AI 数据中心收入从 10 亿到 20 亿甚至更高”的期权。
+
+## 1. 公司整体业务、产业链位置与最新估值财务
+
+### 1.1 公司定位
+
+ST 是一家总部运营在瑞士、注册在荷兰、法国/意大利政府相关股东合计控制影响较大的欧洲 IDM。公司自己定义的四个终端市场为 Automotive、Industrial、Personal Electronics、Communications Equipment / Computers / Peripherals。它不是单一产品公司，而是横跨模拟、功率分立、MCU、MEMS/传感器、光/RF 定制技术的平台型半导体公司。
+
+按 2025 年 20-F 的报告口径，公司分为两大产品组、四个可报告分部：
+
+| 产品组 | 分部 | 主要内容 | 对 AI 数据中心的相关度 |
+|---|---|---|---|
+| APMS | AM&S：Analog, MEMS and Sensors | 模拟 IC、智能功率、MEMS、光学传感 | 中高：AI server power、数据中心 analog/power、传感和监控 |
+| APMS | P&D：Power and Discrete | MOSFET、SiC MOSFET、IGBT、thyristor、rectifier、power module、protection | 高但分化：800VDC/高压保护强；汽车/工业通用品弱 |
+| MDRF | EMP：Embedded Processing | 通用/汽车 MCU、安全产品、ADAS/custom processing | 高：AI 基础设施管理 MCU、光模块/电源/液冷控制、edge AI MCU |
+| MDRF | RFOC：RF & Optical Communications | Space、ranging/connectivity、digital audio/signaling、optical & RF COT | 很高：PIC100 硅光、BiCMOS、云光互联、LEO 通信 |
+
+产业链位置上，ST 位于**设备/系统厂商之前、晶圆和封测能力与产品 IP 之间**：既不像 NVIDIA/Broadcom 那样卖主 AI ASIC，也不像纯设备商卖 UPS/变压器；它卖的是 AI 数据中心系统中被客户 reference design 和长期供货能力锁定的半导体基础件。
+
+### 1.2 最近 3 年重大业务变化
+
+| 时间 | 变化 | 投资含义 |
+|---|---|---|
+| 2023-2025 | 汽车/工业半导体从疫情后短缺进入库存修正，ST 年收入从高位回落，2025 收入 `118.0亿美元`、同比 `-11.1%` | 传统 STM 逻辑受压：P&D 和汽车/工业低迷拖累毛利和经营杠杆 |
+| 2025-2026 | 公司执行制造足迹重塑和全球成本基础调整，2025 impairment/restructuring/phase-out charges 合计约 `3.76亿美元`，2026Q1 又有 `7100万美元` 相关费用 | 利润表短期有噪音；若收入恢复，固定成本和 unused capacity charges 改善可带来经营杠杆 |
+| 2025-02 | 发布下一代 silicon photonics / BiCMOS，用于 800G/1.6T optical interconnect | 从传统 MCU/功率向 AI 光互联 COT/wafer platform 延伸 |
+| 2025-07 宣布，2026-02-02 完成 | 收购 NXP MEMS sensor business，面向汽车 safety/non-safety 和工业传感 | 扩展传感器 portfolio；2026Q1 带来约 `4000万美元` 收入，但也带来 PPA 成本 |
+| 2026-02-09 | 与 AWS 扩大战略合作，多年、多十亿美元 commercial engagement；AWS 获最多 `2480万股` ST warrant，vesting 与 AWS 购买额挂钩，初始行权价 `$28.38` | 这是 AI 数据中心订单可见度的关键证据，且 warrant 结构把客户采购和股权激励绑定 |
+| 2026-03-09 | PIC100 硅光平台进入 300mm 高量产；计划 2027 年产能 `4倍+` | 证明硅光不再只是展示，进入产能爬坡和客户长约阶段 |
+| 2026-03-17 | 与 NVIDIA 800VDC reference design 协同，扩展 800V->12V 和 800V->6V 架构 | AI power path 从概念进入 design-in；2026 小量，2027-2028 弹性大 |
+| 2026-06-02 | Data Centers 收入目标从 2026 年“显著高于 5 亿美元”上调到约 `10亿美元`，2027 年若动能延续可翻倍 | 这是当前估值重定价的核心变量 |
+
+### 1.3 最新股价、估值与盈利快照
+
+| 指标 | 最新值 | 日期 / 口径 | 解释 |
+|---|---:|---|---|
+| 股价 | 约 `$75.00` | 2026-06-11 16:13 UTC，NYSE ADR 实时快照 | 盘中价格，波动较大 |
+| 市值 | 约 `$67.8B` | 2026-06-11 同口径 | ADR/普通股总市值 |
+| TTM 收入 | 约 `$12.38B` | Q2 2025-Q1 2026 | 2.766 + 3.187 + 3.329 + 3.095 |
+| TTM GAAP 净利 | 约 `$147M` | Q2 2025-Q1 2026 | -97 + 237 -30 +37；处在利润低谷 |
+| TTM PE | 约 `460x`（第三方常见 `428x-468x`） | 2026-06-11 市值 / TTM 净利 | 机械 PE 失真，反映利润 trough 和 AI 预期 |
+| Forward PE | 约 `43x-54x` | Yahoo / StockAnalysis 2026-06 附近口径 | 取决于分析师 EPS 和股价时点 |
+| P/S | 约 `5.1x-5.5x` | 2026-06-11 市值 / TTM 收入 | 已不便宜，接近 AI 再定价后的宽基半导体估值 |
+| 最新收入增速 | Q1 2026 `+23.0% YoY`；Q2 2026 指引中点 `+24.9% YoY` | 公司披露 | 增长恢复来自 Personal Electronics、CECP、MCU/RFOC 和 AI/DC |
+| 最新毛利率 | Q1 2026 `33.8%`；non-GAAP `34.1%` | 公司披露 | 仍低于周期高位，但 unused capacity charges 下降 |
+| 最新净利率 | Q1 2026 GAAP `1.2%`；non-GAAP `3.9%` | 净利 / 收入 | 利润率仍处恢复早期 |
+
+### 1.4 资产负债表健康度
+
+ST 的资产负债表总体健康，问题不在偿债，而在利润率和现金流恢复。
+
+| 项目 | 最新数据 | 评价 |
+|---|---:|---|
+| 总流动性 | `$4.57B` | 现金和金融资产足以覆盖短期运营、capex 和重组压力 |
+| 总金融债务 | `$2.57B` | 债务负担温和 |
+| 净金融头寸 | `$2.00B` net cash | IDM 中算强资产负债表 |
+| 调整后净金融头寸 | `$1.69B` | 扣除未发生 capex 的政府补助预收影响后仍为净现金 |
+| 库存 | `$3.17B` | 绝对额高，但 DSI 从 2025Q1 的 `167天` 降到 2026Q1 的 `140天`，分销库存已正常化 |
+| 2026Q1 经营现金流 | `$534M` | 仍有现金生成能力 |
+| 2026Q1 FCF | `-$723M` | 包含 `$895M` NXP MEMS acquisition cash-out；剔除该项后底层现金流较好 |
+| 2026 net capex 计划 | `$2.0B-$2.2B` | 仍是重资产，尤其要支持 SiPh、power、FD-SOI/PCM、制造重塑 |
+
+判断：资产负债表为“健康但利润表处在 trough”。最主要风险是 AI 数据中心 ramp 不及预期时，当前估值会暴露在高 PE / 高 P/S 下；不是短期偿债风险。
+
+## 2. 最新和最近 4 次财报：收入、利润、订单、AI 数据中心推断
+
+公司不披露标准 backlog、bookings 金额、lead time 或取消率；下表把披露事实和研究估算分开。AI 数据中心收入占比为模型估算，依据 2026 年约 `10亿美元` Data Centers 目标、Q1-Q2 ramp、AWS/PIC100/800VDC 时间表和 RFOC/EMP 增长交叉约束。
+
+| 财报季度 | 总收入 / YoY | 毛利率 | GAAP 经营利润 / 净利 | 分部收入与利润率 | 订单/交期/取消率信息 | AI 数据中心收入占比（估算） |
+|---|---:|---:|---:|---|---|---:|
+| 2026Q1（截至 2026-03-28） | `$3.095B` / `+23.0%` | `33.8%` | OP `$70M`，净利 `$37M` | AM&S `$1.318B`、OPM `12.2%`；P&D `$389M`、OPM `-21.5%`；EMP `$975M`、OPM `16.9%`；RFOC `$409M`、OPM `14.9%` | 公司称 bookings 强、分销库存正常化；AWS 多年协议已公告；PIC100 进入量产；未披露 backlog/取消率 | `5%-7%`，约 `$150M-$220M` |
+| 2025Q4 | `$3.329B` / 恢复 YoY 增长 | `35.2%` | OP `$125M`，净亏损 `$30M`；non-GAAP 净利 `$100M` | AM&S `$1.449B`、OPM `16.2%`；P&D `$412M`、OPM `-30.1%`；EMP `$1.015B`、OPM `19.2%`；RFOC `$449M`、OPM `23.4%` | 收入高于指引中点，Personal Electronics、CECP、Industrial 强；Automotive 低于预期 | `3%-5%`，约 `$100M-$160M` |
+| 2025Q3 | `$3.187B` / 约 `-2%` | `33.2%` | OP `$180M`，净利 `$237M` | AM&S `$1.434B`、OPM `15.4%`；P&D `$429M`、OPM `-15.6%`；EMP `$976M`、OPM `16.5%`；RFOC `$345M`、OPM `16.5%` | 二级资料显示 book-to-bill above one，Automotive above parity、Industrial around parity；公司指引 Q4 收入继续增长 | `2%-3%`，约 `$60M-$100M` |
+| 2025Q2 | `$2.766B` / `-14.4%` | `33.5%` | OP `-$133M`，净亏损 `$97M` | AM&S `$1.133B`、OPM `7.5%`；P&D `$447M`、OPM `-12.5%`；EMP `$847M`、OPM `13.5%`；RFOC `$336M`、OPM `17.9%` | Industrial book-to-bill >1，Automotive <1；bookings sequentially improved；未披露取消率 | `1%-2%`，约 `$30M-$60M` |
+| 2025Q1 | `$2.517B` / 大幅下行 | `33.4%` | OP `$3M`，净利 `$56M` | AM&S `$1.069B`、OPM `7.7%`；P&D `$397M`、OPM `-6.9%`；EMP `$742M`、OPM `8.9%`；RFOC `$306M`、OPM `13.9%` | 汽车/工业修正仍深；AI/DC 仍在早期导入 | `<1%-1.5%`，约 `$15M-$40M` |
+
+关键读法：
+
+- **收入恢复主要来自 MDRF 和 AM&S，不来自 P&D。** 2026Q1 EMP `+31.3% YoY`、RFOC `+33.9% YoY`、AM&S `+23.2% YoY`；P&D 仍 `-1.8% YoY` 且亏损扩大到 `-21.5%` operating margin。
+- **P&D 是“名义 AI 电源受益”与“现实汽车/工业功率周期压力”的混合体。** 短期不能把 P&D 整体当成 AI 数据中心高增业务；真正高弹性是 800VDC、高压保护、GaN/SiC/driver/control 子集。
+- **RFOC 是当前 AI 数据中心收入质量最高的验证项。** Q1 2026 收入 `409M`，同比 `+33.9%`；PIC100 高量产和客户 capacity reservation 提高 2026H2-2027 可见度。
+- **订单可见度来自客户协议和产能预留，而不是传统 backlog 披露。** AWS multi-year multi-billion engagement、PIC100 长期产能预留、Data Centers 收入目标上修，是替代 backlog 的核心证据。
+
+## 3. 2026 最新指引、业务占比、重点产品与跳过业务
+
+### 3.1 Q2 2026 指引与 Q1 2026 业务占比
+
+公司 2026Q1 后给出 Q2 2026 指引：收入中点 `$3.45B`，环比 `+11.6%`，同比 `+24.9%`；GAAP gross margin `34.8%`，non-GAAP gross margin `35.2%`，包含约 `100bps` unused capacity charges。6 月 2 日，公司又把 2026 Data Centers 收入目标提高到约 `$1B`，这意味着 Q2-H2 的 AI/DC ramp 需要明显高于 Q1。
+
+Q1 2026 各分部占比：
+
+| 分部 | Q1 2026 收入 | 收入占比 | YoY | 经营利润率 | 重点产品 |
+|---|---:|---:|---:|---:|---|
+| AM&S | `$1.318B` | `42.6%` | `+23.2%` | `12.2%` | 模拟、电源管理、MEMS、optical sensing、AI server power analog |
+| P&D | `$389M` | `12.6%` | `-1.8%` | `-21.5%` | SiC/GaN/MOSFET/IGBT/protection；AI 只在高压子集有强弹性 |
+| EMP | `$975M` | `31.5%` | `+31.3%` | `16.9%` | STM32/汽车 MCU、secure products、infrastructure management MCU、edge AI MCU |
+| RFOC | `$409M` | `13.2%` | `+33.9%` | `14.9%` | PIC100 SiPh、BiCMOS、space/ranging/connectivity、optical/RF COT |
+
+### 3.2 最突出业务
+
+| 业务 / 产品簇 | 为什么突出 | 2026 关键证据 | 重要性判断 |
+|---|---|---|---|
+| Data Centers 总收入 | 公司将 2026 目标提高到约 `$1B`，2027 有翻倍可能 | 2026-06-02 官方更新 | 最高：当前估值核心 |
+| PIC100 硅光平台 / BiCMOS | 800G/1.6T 光模块、NPO/CPO 路线直接受益；客户 capacity reservation 支持扩产 | 2026-03-09 高量产，计划 2027 产能 `4x+` | 最高：收入、供给、客户承诺都有证据 |
+| AWS AI 数据中心协议 | 多年、多十亿美元，warrant vesting 与采购额绑定 | 2026-02-09 官方公告 | 最高：准订单性质最强 |
+| 800VDC 电源转换 | NVIDIA 800VDC 生态，800->50/12/6V 完整 portfolio；2027+ 高弹性 | 2026-03-17 官方发布 | 高：2026 小，2027 可爆发 |
+| STM32/MCU 基础设施管理 | AI rack、optical module、power shelf、液冷和 security 都需要 MCU/telemetry | AWS 协议和本地行业资料均验证 | 中高：单价小但 attach 广、客户粘性强 |
+| STM32N6 / STM32V8 edge AI MCU | 小基数但有 AI 边缘和 robotics 期权；STM32V8 被 SpaceX 选用 Starlink 高速连接系统 | 2025-2026 产品发布 | 中：不是数据中心主线，但不能漏掉 |
+
+### 3.3 可以降权或跳过的低优先级业务
+
+以下业务不是没有价值，而是与本次 AI 基建高增长逻辑弱相关或短期增长低：
+
+| 降权业务 | 原因 |
+|---|---|
+| 汽车通用 MCU、传统 body/chassis/infotainment | 大盘重要，但 2025-2026 汽车库存和需求恢复慢，增长不如 AI/DC |
+| 标准 Si MOSFET、IGBT、低端 protection | 竞争强、价格压力大、P&D 整体仍亏损 |
+| 消费 MEMS、手机传感器、普通 personal electronics PMIC | 有恢复但周期性强；AI/DC 相关度低 |
+| 普通工业 analog / motor control | 长期稳健，但短期不如数据中心订单弹性 |
+| 低端 edge AI / 泛 IoT MCU | 量大但 ASP 和壁垒有限；只关注 STM32N6/V8 等高端差异化产品 |
+
+## 4. 关键高增长产品：当前收入贡献、增速、AI 基建重要性和定价权
+
+| 关键业务 | 2026 当前收入贡献估算 | 增速判断 | AI 技术栈重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---:|---|---|---|---|---|
+| PIC100 SiPh / BiCMOS 光互联 | 2026E `$350M-$500M`，主要在 RFOC/EMP 相关收入中体现 | 2026H2 ramp，2027 继续高增；容量 2027 计划 `4x+` | 极高：800G/1.6T、NPO/CPO、AI cluster optical bottleneck | 极高：2026-2027 光模块是 AI cluster 交付硬瓶颈 | 高：客户长期产能预留说明供给被锁定 | 中高：不是唯一 SiPh，但 300mm Europe HVM + AWS/hyperscaler validation 有溢价 |
+| Data center analog/power + 800VDC 转换 | 2026E `$350M-$450M`，其中 800VDC 仍小基数 | 2026 增长，2027 随 800VDC sidecar/rack power 升级加速 | 高：power efficiency、copper loss、rack density 直接影响 tokens/MW | 高：800VDC 2026 design-in，2027 first production | 中高：reference design 阶段，认证供应商有限 | 中：Infineon/TI/onsemi/MPS/Navitas/PI 竞争强，但平台认证有溢价 |
+| MCU/secure control/infrastructure management | 2026E `$100M-$180M` data center 暴露 | 随 AI rack、optical module、power shelf 数量增加而增长 | 中高：管理、遥测、security、firmware update、power/liquid cooling control | 高：整柜交付必须有可靠控制平面 | 中：MCU 供应广，但客户固件认证慢 | 中：STM32 生态强，但通用 MCU 可替代；高端安全/定制控制溢价更好 |
+| STM32N6 / STM32V8 edge AI / high-performance MCU | 2026E `<$100M` 增量，非 DC 主线 | 2027-2028 随 robotics/industrial AI 放量 | 中：边缘推理、工业视觉、机器人控制 | 中：设计导入 12-36 个月 | 中：先进 FD-SOI/PCM、Neural-ART 有差异化 | 中高：高性能 MCU + 软件生态 + 长生命周期可溢价 |
+| SiC/GaN 汽车/工业与 AI 高压子集 | P&D Q1 2026 总收入 `$389M`，整体 YoY `-1.8%`；AI 高压子集较小 | 汽车/工业短期低，AI 子集高增但基数小 | 中高：UPS/BESS/PFC/800VDC 有价值，但 ST 当前 P&D 财务弱 | 中：AI DC 设计导入早，汽车需求恢复慢 | 分化：汽车 SiC 偏松，AI 高压 GaN/SiC 偏紧 | 低到中高分化：通用品低，高压认证件高 |
+
+## 5. 一年后收入贡献三情景
+
+以 2026-06-11 为起点，预测窗口为 2026H2-2027H1 / 2027 年运行率。公司官方只给 Data Centers 2026 约 `$1B`、2027 可能翻倍的方向；以下为拆分模型。
+
+| 产品 / 业务 | 基准：一年后收入贡献 | 乐观：一年后收入贡献 | 极度乐观：一年后收入贡献 | 关键假设 |
+|---|---:|---:|---:|---|
+| PIC100 SiPh / BiCMOS optical | `$0.9B-$1.1B`，YoY `+100%+` | `$1.3B-$1.6B` | `$1.9B-$2.3B` | 800G/1.6T pluggables 高需求；2027 产能 4x+ 执行；AWS/其他 hyperscaler capacity reservation 转收入 |
+| Data center power / analog / 800VDC | `$0.55B-$0.75B`，YoY `+50%-80%` | `$0.8B-$1.1B` | `$1.2B-$1.6B` | 48/50V 继续放量，800VDC 从 design-in 到 early production；NVIDIA 生态客户采纳 |
+| MCU / secure control / infrastructure management | `$0.25B-$0.40B`，YoY `+50%-120%` | `$0.45B-$0.65B` | `$0.75B-$1.0B` | AI rack 管理节点、optical module controller、power shelf telemetry、secure element attach 上升 |
+| Edge AI MCU / STM32N6/V8 | `$0.10B-$0.20B` | `$0.20B-$0.35B` | `$0.45B-$0.70B` | 工业视觉、robotics、Starlink/LEO/高性能 MCU 项目扩散 |
+| SiC/GaN 非 AI + AI 高压子集 | `$0.45B-$0.70B` P&D run-rate 恢复但利润仍弱 | `$0.75B-$1.1B` | `$1.3B+` | 汽车 SiC 恢复 + AI HVDC/GaN 设计转量产；否则 P&D 仍拖累 |
+
+合计看，Data Centers 一年后最合理区间是：
+
+| 口径 | 2027 Data Centers 收入口径 | 对公司收入占比估算 | 判断 |
+|---|---:|---:|---|
+| 基准 | `$1.8B-$2.1B` | `10%-12%` | 符合公司“可翻倍”的说法 |
+| 乐观 | `$2.6B-$3.2B` | `14%-18%` | 需要 PIC100 产能、AWS 采购和 800VDC design-in 同时超预期 |
+| 极度乐观 | `$4.0B+` | `20%+` | 需要 ST 在硅光和 power path 都成为多 hyperscaler 标准供应商 |
+
+## 6. BOM、每 MW / rack / GPU / optical port 内容量与价格传导链
+
+### 6.1 AI 数据中心收入的价格传导链
+
+```text
+Hyperscaler / AWS / GPU cloud capex
+-> AI rack / optical network / power architecture specification
+-> 光模块厂、power shelf / PSU / rack ODM、CDU / controls / telemetry 供应商
+-> ST PIC100 SiPh / BiCMOS / MCU / power analog / GaN-SiC-MOSFET / protection
+-> ST 收入确认
+```
+
+ST 的优势在于它不是只卖 commodity chip，而是在客户 reference design、capacity reservation、custom technology platform 和长期供应能力中收费。劣势是：它通常只捕获模块 BOM 的一部分，不捕获 GPU、整机服务器、整颗 DSP 或完整光模块的全部价值。
+
+### 6.2 单位内容量估算
+
+以下为 ST 可捕获半导体内容，不是完整设备 ASP。
+
+| 产品 | 每 optical port / 模块 | 每 GPU | 每 100-155kW rack | 每 1MW IT load | BOM 位置 |
+|---|---:|---:|---:|---:|---|
+| PIC100 SiPh / BiCMOS | 800G：`$25-$90` / 模块等效；1.6T：`$60-$180` / 模块等效；若包含 BiCMOS/TIA/driver 可更高 | 按 4-10 个 optical end / GPU，`$100-$900` / GPU 等效，但取决于网络拓扑 | `144-576` optical ends/rack，则 `$8k-$80k` / rack | `$50k-$500k` / MW，极端高端网络可更高 | 光模块中的 SiPh PIC、modulator/PD、BiCMOS、高速 mixed-signal，非完整模块 |
+| 800VDC / high-density power analog | 不适用 | `$10-$80` / GPU，若 ST 进入 HV IBC / power shelf 则更高 | `$2k-$12k` / rack，800VDC sidecar 采用时可到 `$20k+` | `$15k-$120k` / MW | 800V->50/12/6V converter、GaN/SiC/MOSFET、gate driver、current sense、protection、control |
+| MCU / secure control / telemetry | 每光模块 MCU/EEPROM/安全控制 `$1-$5` | `$2-$20` / GPU 等效 | `$0.5k-$5k` / rack | `$5k-$40k` / MW | power shelf、BBU、CDU、liquid cooling、OOB control、module controller、secure boot |
+| Edge AI MCU | 不适用 | 不适用 | 不适用 | 不适用 | 工业视觉、机器人、边缘设备，不按 data center MW 计 |
+| SiC/GaN AI 高压子集 | 不适用 | `$5-$50` / GPU 等效 | `$1k-$10k` / rack | `$10k-$80k` / MW | UPS/BESS/PFC/HVDC/solid-state protection，是否由 ST 捕获取决于 design-in |
+
+### 6.3 产能能力、供应链采纳和认证阶段
+
+| 产品 | 当前产能能力（美元计，研究估算） | 供应链采纳 | 当前认证 / 阶段 |
+|---|---:|---|---|
+| PIC100 SiPh | 2026 revenue-capacity run-rate 约 `$0.4B-$0.8B`；H2 继续爬坡 | 已进入 leading hyperscalers 高量产；客户长期 capacity reservation 支持 2027 `4x+` | HVM；OFC 2026 展示 1.6T-DR8 demo；PIC100 TSV roadmap 面向 NPO/CPO |
+| BiCMOS / optical mixed-signal | 2026 仍处 ramp，估算 `$0.1B-$0.3B` | 与 SiPh optical module ecosystem 绑定 | 300mm Europe 工艺工业化；800G/1.6T 模块客户验证 |
+| 800VDC power conversion | 2026 direct revenue-capacity 约 `$0.1B-$0.3B`，大部分还是 reference design / early program | NVIDIA 800VDC reference design；客户 RFQ/design-in 阶段 | 800->50V 已有基础，800->12V/6V 2026 GTC 展示；认证重点在安全、热、EMI、可靠性 |
+| MCU / infrastructure control | 2026 data center 可用产能约 `$0.2B-$0.4B` | AWS 协议明确 advanced MCU for infrastructure management；AI rack/optical/power 客户设计导入 | STM32 生态成熟；安全/firmware/Redfish/PMBus/客户固件适配决定认证周期 |
+| STM32N6 / STM32V8 edge AI | 2026 小批量到量产导入，`<$0.2B` | STM32N6 面向 vision/audio edge AI；STM32V8 被 SpaceX Starlink 高速连接系统选用 | N6 已产品化；V8 18nm FD-SOI/PCM 是高性能 MCU 新平台，客户认证周期较长 |
+
+## 7. 一年后产能与认证阶段三情景
+
+| 产品 | 基准：一年后产能/采纳 | 乐观：一年后产能/采纳 | 极度乐观：一年后产能/采纳 |
+|---|---|---|---|
+| PIC100 SiPh | 2027 产能 `4x+` 执行，收入能力 `$1.2B-$1.8B`；800G/1.6T pluggable 成主收入 | 多 hyperscaler 追加 capacity reservation，收入能力 `$2B-$3B`；NPO 早期客户验证 | CPO/NPO 提前进入 2027H2 订单，收入能力 `$3B+`；ST 成为非美/欧洲 300mm SiPh 核心供应 |
+| BiCMOS / optical mixed-signal | 与 PIC100 模块化配套，验证进入 1.6T 主流设计 | 200G/lane TIA/driver/retimer-like mixed-signal 供应受限，ST  ASP 上行 | 400G/lane / optical I/O 路线提前，BiCMOS 成为高毛利 bottleneck |
+| 800VDC / power conversion | 800VDC 仍以 design-in 和少量 production 为主，收入能力 `$0.5B-$0.8B` | Rubin/AI ASIC 新建 hall 采用 800V sidecar，收入能力 `$1B-$1.5B` | 500kW-1MW rack 设计提前冻结，ST 与 NVIDIA 生态绑定，收入能力 `$2B+` |
+| MCU / control / telemetry | 伴随 AI rack 与光模块增长，收入能力 `$0.4B-$0.6B` | rack-level telemetry、power/liquid cooling control 标配化，收入能力 `$0.7B-$1B` | 安全 root-of-trust + rack controller + optical module control 打包，收入能力 `$1B+` |
+| Edge AI MCU | 工业/机器人/LEO 设计导入，收入能力 `$0.2B-$0.4B` | STM32N6/V8 成为高性能 MCU 标杆，收入能力 `$0.5B-$0.8B` | 边缘机器人/工业视觉提前量产，收入能力 `$1B` 附近 |
+
+## 8. 订单积压、供给和未来一年业务增速推断
+
+### 8.1 可验证订单和供给信号
+
+| 证据 | 强度 | 对未来 12 个月的含义 |
+|---|---|---|
+| AWS multi-year multi-billion USD commercial engagement；warrants 最多 `2480万股`，vesting 与采购额绑定 | 很强 | 比普通合作公告更像可执行采购框架；至少支撑 2026-2027 多产品线收入 |
+| ST 将 2026 Data Centers 目标提高到约 `$1B`，2027 可能翻倍 | 很强 | 公司应已看到订单、capacity ramp 和客户 engagement，不然不会在 6 月单独上修 |
+| PIC100 进入 HVM，2027 计划 4x+ 扩产，且由客户长期 capacity reservation 支撑 | 很强 | 硅光是供给受限而非需求不足；2026H2-2027 是收入兑现窗口 |
+| Q1 2026 bookings strong，distribution inventory normalized | 中强 | 传统业务库存压力缓解，有利于整体收入恢复 |
+| Q2 2026 指引收入 `$3.45B`、同比 `+24.9%` | 中强 | AI/DC 与 CECP/Personal Electronics 驱动恢复；Q2 是检验点 |
+| P&D Q1 仍亏损且收入 YoY `-1.8%` | 负面 | 传统功率/SiC/汽车没有全面恢复；不能把所有 power 收入都按 AI 高增长处理 |
+
+### 8.2 未来一年业务增速预测
+
+| 业务 | 基准增速 | 乐观增速 | 极度乐观增速 | 订单/供给逻辑 |
+|---|---:|---:|---:|---|
+| 全公司收入 | `+15%-25%` | `+25%-35%` | `+40%+` | Q2 指引强，H2 需 DC ramp；汽车/工业恢复是变量 |
+| Data Centers | `+90%-130%` | `+150%-220%` | `+300%+` | 以 2026 约 `$1B`、2027 约 `$2B` 为基准；极乐观需多个 hyperscaler 标准化 |
+| RFOC | `+30%-60%` | `+70%-120%` | `+150%+` | PIC100 产能和 800G/1.6T 光模块需求决定 |
+| EMP | `+15%-35%` | `+35%-60%` | `+80%+` | MCU 恢复 + infrastructure management / edge AI |
+| AM&S | `+10%-25%` | `+25%-45%` | `+60%+` | analog/power for AI server + NXP MEMS + personal electronics |
+| P&D | `0%-15%` | `+20%-40%` | `+60%+` | 汽车 SiC 恢复慢；800VDC 高压子集可能拉动但基数小 |
+
+取消率判断：AWS/PIC100 这类长期产能预留和 custom program 的取消率应低于普通分销订单；标准汽车/工业/消费分销订单取消风险更高。真正风险不是订单取消，而是**认证、产能爬坡、良率、客户项目节奏和 AI 数据中心实际通电节奏**导致收入确认延后。
+
+## 9. 竞争格局、技术主流性、替代风险和客户切换成本
+
+### 9.1 竞争格局
+
+| 领域 | ST 位置 | 主要竞争对手 | 竞争要点 |
+|---|---|---|---|
+| 硅光 / optical COT / BiCMOS | 300mm Europe HVM，PIC100，AWS/hyperscaler 生态 | Broadcom、Marvell、Cisco/Acacia、Intel/Foundry、Coherent/Lumentum 生态、TSMC/ASE/SiPh foundry 生态、Ayar Labs 等 | 低损耗 SiPh、200G/lane、良率、产能、客户长期锁定、与 DSP/TIA/模块厂协同 |
+| 800VDC / AI data center power semis | reference design 参与者，power/analog/mixed-signal 全 portfolio | Infineon、TI、onsemi、MPS、Renesas、ADI、Navitas、Power Integrations、ROHM、Wolfspeed、Vicor | 安规、效率、功率密度、热、EMI、driver/protection、客户认证 |
+| MCU / infrastructure control | STM32 生态强，产品宽 | NXP、Renesas、Infineon、Microchip、TI、Silicon Labs、ASPEED/Nuvoton（BMC 侧）、Lattice/AMD FPGA | 固件生态、长期供货、security、Redfish/PMBus/客户 reference design |
+| SiC/GaN power | 有 SiC/GaN 技术和 automotive history，但 P&D 近期弱 | Infineon、onsemi、Wolfspeed、ROHM、Mitsubishi、Navitas、PI | 8英寸/良率、模块封装、车规/工规认证、价格压力 |
+| Edge AI MCU | STM32N6/V8 有差异化 | NXP、Renesas、TI、Qualcomm、Ambarella、NVIDIA Jetson 生态、Hailo 等 | TOPS/W、软件工具、工业/机器人认证、长期支持 |
+
+### 9.2 技术是否是主流
+
+| 技术 | 是否主流 | 判断 |
+|---|---|---|
+| 800G/1.6T 硅光 optical interconnect | 是，且 2026-2027 高确定性 | AI cluster 网络瓶颈已明确，800G 正放量，1.6T 进入 ramp；SiPh modulators 份额上升是大趋势 |
+| 800VDC 数据中心供电 | 中期主流，短期不是全面替代 | 2026 是 design-in / reference design，2027-2028 在高密 rack / new-build hall 放量；48/50V 仍是 2026 主收入 |
+| MCU/telemetry/secure control | 是，但价值小而分散 | AI rack 越复杂，管理控制越必要；客户切换成本来自固件和认证，不来自裸 MCU |
+| Edge AI MCU | 是外延主线，不是数据中心主线 | 云端 AI 越强，模型蒸馏和 physical AI 会推动边缘；但收入兑现慢于数据中心 |
+| 通用 SiC 汽车功率 | 长期主流，短期不强 | EV/工业周期和价格压力影响大，不能作为 STM 2026 AI rerating 的核心 |
+
+### 9.3 替代方案与风险
+
+| 风险 | 对 STM 的影响 | 观察指标 |
+|---|---|---|
+| Hyperscaler 多源化 | AWS/其他客户可能引入第二来源，压低长期毛利 | capacity reservation 是否续签；新客户数量；单客户集中度 |
+| 1.6T 光模块 ASP 快速下行 | PIC100 单位 ASP 承压，但量可能补偿 | 光模块厂毛利、800G/1.6T ASP、SiPh die ASP |
+| CPO/NPO 路线延后 | PIC100 TSV / CPO 期权后移 | OFC/OCP demo 到量产时间表 |
+| 800VDC 标准和安全认证慢 | 800VDC 收入从 2027 推到 2028 | UL/IEC/OCP/NVIDIA reference design 认证、OEM 量产订单 |
+| P&D 传统业务继续亏损 | AI 高压子集被汽车/工业价格压力掩盖 | P&D operating margin 是否从 `-21.5%` 转正 |
+| AI 数据中心 capex 放缓 | 当前估值回撤风险大 | Hyperscaler capex 指引、NeoCloud 融资、power interconnection 延迟 |
+| 毛利率恢复慢 | 高 P/S 无法消化 | gross margin 是否从 34% 向 37%-40% 恢复；unused capacity charges |
+
+客户替换成本分层：
+
+- **PIC100 / AWS / custom optical programs：高。** 换供应商要重做光模块设计、良率认证、长期产能和系统验证。
+- **800VDC power reference design：中高。** 一旦进入 NVIDIA/OEM/hyperscaler reference design，替换成本高；但当前仍在早期，多家竞品并行验证。
+- **MCU/control：中。** 固件和认证提高切换成本，但裸 MCU 供应商较多。
+- **通用功率分立：低到中。** 标准 MOSFET/IGBT/protection 可替代性强，价格竞争明显。
+
+## 10. 投资判断：核心看点和反证条件
+
+### 10.1 核心看点
+
+1. **2026 Data Centers 是否真能做到约 10 亿美元。** 这是股价重定价的第一道验证。
+2. **2027 是否能接近 20 亿美元。** 如果兑现，STM 将从汽车/工业周期股变成 AI 基础设施二线核心供应商。
+3. **PIC100 扩产是否顺利。** 2027 `4x+` 产能目标是收入上行的最大硬证据。
+4. **P&D 是否止亏。** 如果 P&D 继续大幅亏损，AI power 的叙事会被传统功率周期抵消。
+5. **毛利率是否逐季恢复。** Q2 指引 34.8% 只是起点；投资人需要看到 revenue mix + utilization 改善。
+6. **AWS 之外是否有更多 hyperscaler 客户公开或间接验证。** 单客户期权转多客户标准件，估值才有持续性。
+
+### 10.2 反证条件
+
+| 反证 | 含义 |
+|---|---|
+| 2026Q2/Q3 仍未体现 Data Centers revenue ramp | 6 月上修可能过早，股价容易回撤 |
+| RFOC 收入不随 PIC100 HVM 增长 | 硅光产能、良率、客户项目或 ASP 出问题 |
+| Gross margin 低于 34%-35% 且 unused capacity charges 不降 | 传统业务弱、mix 不够好，AI 收入无法改善利润 |
+| P&D operating margin 持续低于 -15% | AI power 子集太小，汽车/工业通用品拖累过大 |
+| AWS warrant vesting 对应采购金额低于预期 | 多年协议的实际订单含金量下降 |
+| 800VDC 行业标准推迟 2-4 个季度 | power 期权后移，2027 收入模型需下修 |
+
+## 11. 本地行业资料如何约束本报告模型
+
+本报告使用了以下项目内行业结论来校准 AI 数据中心机会，不直接继承任何公司旧报告：
+
+| 本地资料 | 用途 |
+|---|---|
+| `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` | 使用美国 AI 数据中心 2026 务实 `$310B-$390B`、2027 `$430B-$560B`；6.0-8.5GW / 9.0-14.0GW IT-load 订单口径 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md` | 约束 AI power path：48/50V 主线、800VDC 2026 design-in、2027 弹性、SiC/GaN 分化 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md` | 约束每 rack power BOM、50V rack bus、BBU、800V sidecar 的节奏 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md` | 约束 800VDC 收入不应在 2026 过度前置，2027-2028 才是大规模窗口 |
+| `行业调研/AI服务器_存储_芯片/行业调研_服务器BMC、MCU与嵌入式控制_2026-06-10.md` | 约束 MCU/control 在 AI rack 中的 attach 扩张和金额上限 |
+| `行业调研/AI服务器_存储_芯片/行业调研_AI边缘推理芯片_2026-06-11.md` | 约束 STM32N6/V8 作为 edge AI 期权，不把它错误并入 AI 数据中心主收入 |
+
+## 12. 主要联网来源
+
+- STMicroelectronics Q1 2026 results / 6-K：https://www.sec.gov/Archives/edgar/data/932787/000093278726000022/q126earningspressrelease-2.htm
+- STMicroelectronics Q1 2026 newsroom：https://newsroom.st.com/media-center/press-item.html/c3392.html
+- STMicroelectronics Q4/FY2025 results：https://newsroom.st.com/media-center/press-item.html/c3383.html
+- STMicroelectronics Q3 2025 6-K：https://www.sec.gov/Archives/edgar/data/932787/000094787125000920/ss5503021_6k.htm
+- STMicroelectronics Q2 2025 newsroom：https://newsroom.st.com/media-center/press-item.html/c3349.html
+- STMicroelectronics 2025 Form 20-F：https://www.sec.gov/Archives/edgar/data/932787/000093278726000009/stm-20251231.htm
+- ST raises Data Centers revenue ambition, 2026-06-02：https://newsroom.st.com/media-center/press-item.html/c3396.html
+- ST expands AWS strategic engagement, 2026-02-09：https://newsroom.st.com/media-center/press-item.html/c3385.html
+- ST PIC100 high-volume production, 2026-03-09：https://newsroom.st.com/media-center/press-item.html/t4761.html
+- ST silicon photonics / BiCMOS optical interconnect, 2025-02-20：https://newsroom.st.com/media-center/press-item.html/t4672.html
+- ST 800VDC AI data center power conversion portfolio, 2026-03-17：https://newsroom.st.com/media-center/press-item.html/t4766.html
+- STM32N6 product page：https://www.st.com/en/microcontrollers-microprocessors/stm32n6-series.html
+- STM32V8 launch：https://newsroom.st.com/media-center/press-item.html/p4733.html
+- Yahoo Finance STM valuation snapshot：https://finance.yahoo.com/quote/STM/
+- StockAnalysis STM statistics：https://stockanalysis.com/stocks/stm/statistics/

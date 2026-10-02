@@ -1,0 +1,4505 @@
+{
+  "summary": {
+    "checkedAt": "2026-09-07T09:12:06.202521-07:00",
+    "counts": {
+      "pending": 40,
+      "done": 152,
+      "retry_pending": 1
+    },
+    "outputs": 152,
+    "missingEmpty": [],
+    "missingBackups": [],
+    "multiFormal": [],
+    "bytes": {
+      "min": 62988,
+      "median": 78616.5,
+      "max": 104661
+    },
+    "smallest": [
+      {
+        "subject": "WDC",
+        "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\WDC_WesternDigital_公司调研_2026-09-07.md",
+        "exists": true,
+        "bytes": 62988,
+        "chars": 29147,
+        "lines": 391,
+        "headings": 39,
+        "urls": 32,
+        "sha256": "c18afe25012b717672d00ebb0833f588b2d5d62b9414925723a36f42d5f099e5",
+        "started": "2026-09-07 02:17:43",
+        "finished": "2026-09-07 02:57:47",
+        "mtime": "2026-09-07T02:57:22.716939",
+        "attempts": 1,
+        "backup": [
+          {
+            "from": "基本面/公司调研/AI服务器_存储_EMS/WDC_WesternDigital_公司调研_2026-08-19.md",
+            "to": "基本面/公司调研/AI服务器_存储_EMS/备份/WDC_2026-09-07T02_17_44-07_00-77ac04a0f0/WDC_WesternDigital_公司调研_2026-08-19.md",
+            "exists": true,
+            "bytes": 89979,
+            "sha256": "fde35811ffa08f66304d627f9b68e9da68bce0df1e90c49264cd04a3b99f9de5"
+          }
+        ],
+        "prepareEvents": 1,
+        "formalFiles": [
+          "WDC_WesternDigital_公司调研_2026-09-07.md"
+        ]
+      },
+      {
+        "subject": "SNPS",
+        "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\SNPS_Synopsys_公司调研_2026-09-07.md",
+        "exists": true,
+        "bytes": 62992,
+        "chars": 30414,
+        "lines": 358,
+        "headings": 30,
+        "urls": 44,
+        "sha256": "291ef8e926802113fac20d4e05bc85fc373ecff200e351af0533036de29c41dd",
+        "started": "2026-09-07 02:57:47",
+        "finished": "2026-09-07 03:21:53",
+        "mtime": "2026-09-07T03:21:02.013175",
+        "attempts": 1,
+        "backup": [
+          {
+            "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/SNPS_Synopsys_公司调研_2026-07-11.md",
+            "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/SNPS_2026-09-07T02_57_48-07_00-da2a9bdc68/SNPS_Synopsys_公司调研_2026-07-11.md",
+            "exists": true,
+            "bytes": 77804,
+            "sha256": "aeaa01a4a87a8b8b94d4584fdb6b3e537d7ec8d5eef6e76e242dc3c813f49233"
+          }
+        ],
+        "prepareEvents": 1,
+        "formalFiles": [
+          "SNPS_Synopsys_公司调研_2026-09-07.md"
+        ]
+      },
+      {
+        "subject": "COHU",
+        "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\COHU_Cohu_Inc_公司调研_2026-09-07.md",
+        "exists": true,
+        "bytes": 63899,
+        "chars": 30053,
+        "lines": 467,
+        "headings": 48,
+        "urls": 41,
+        "sha256": "abe10bdb00215febc60d4d39b5226eaad9961f793fecaa54a62116d09d94fd09",
+        "started": "2026-09-07 04:47:23",
+        "finished": "2026-09-07 05:13:52",
+        "mtime": "2026-09-07T05:13:27.016034",
+        "attempts": 1,
+        "backup": [
+          {
+            "from": "基本面/公司调研/封测_检测_计量_光罩/COHU_Cohu_Inc_公司调研_2026-07-31.md",
+            "to": "基本面/公司调研/封测_检测_计量_光罩/备份/COHU_2026-09-07T04_47_24-07_00-f93b3bec56/COHU_Cohu_Inc_公司调研_2026-07-31.md",
+            "exists": true,
+            "bytes": 60234,
+            "sha256": "40485ade35bb98d31efc6e22d41957d81bdd7ae7f93abf7a07e45ca19d76d52d"
+          }
+        ],
+        "prepareEvents": 1,
+        "formalFiles": [
+          "COHU_Cohu_Inc_公司调研_2026-09-07.md"
+        ]
+      },
+      {
+        "subject": "FIX",
+        "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\FIX_Comfort_Systems_USA_公司调研_2026-09-07.md",
+        "exists": true,
+        "bytes": 65178,
+        "chars": 29449,
+        "lines": 479,
+        "headings": 44,
+        "urls": 27,
+        "sha256": "23c0b519d183a17e42e81ff761b7782de102033fa222a5855b48bfceb81f4f12",
+        "started": "2026-09-07 05:29:09",
+        "finished": "2026-09-07 05:49:44",
+        "mtime": "2026-09-07T05:49:24.124741",
+        "attempts": 1,
+        "backup": [
+          {
+            "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/FIX_Comfort_Systems_USA_公司调研_2026-07-31.md",
+            "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/FIX_2026-09-07T05_29_10-07_00-e43461330a/FIX_Comfort_Systems_USA_公司调研_2026-07-31.md",
+            "exists": true,
+            "bytes": 69994,
+            "sha256": "d8d511f79f70109a1adccc6f5b99002afa451219cb009afe0d183bae3524804c"
+          }
+        ],
+        "prepareEvents": 1,
+        "formalFiles": [
+          "FIX_Comfort_Systems_USA_公司调研_2026-09-07.md"
+        ]
+      },
+      {
+        "subject": "ASMVY",
+        "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\ASMVY_ASMPT_公司调研_2026-09-07.md",
+        "exists": true,
+        "bytes": 65387,
+        "chars": 31463,
+        "lines": 520,
+        "headings": 37,
+        "urls": 44,
+        "sha256": "8a22cfec4652925a94a2ffc3694037ddb46c3c56938fcc49d45579fe9e479884",
+        "started": "2026-09-07 05:13:53",
+        "finished": "2026-09-07 05:36:53",
+        "mtime": "2026-09-07T05:36:00.266205",
+        "attempts": 1,
+        "backup": [
+          {
+            "from": "基本面/公司调研/封测_检测_计量_光罩/ASMVY_ASMPT_公司调研_2026-07-11.md",
+            "to": "基本面/公司调研/封测_检测_计量_光罩/备份/ASMVY_2026-09-07T05_13_54-07_00-4ced324a25/ASMVY_ASMPT_公司调研_2026-07-11.md",
+            "exists": true,
+            "bytes": 77839,
+            "sha256": "f08f9befe3a8014557da4d073f16b8b5bbc52837af44d67ca729841b897ab74d"
+          }
+        ],
+        "prepareEvents": 1,
+        "formalFiles": [
+          "ASMVY_ASMPT_公司调研_2026-09-07.md"
+        ]
+      }
+    ],
+    "largest": [
+      {
+        "subject": "HTHIY",
+        "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\HTHIY_Hitachi_Ltd_公司调研_2026-09-07.md",
+        "exists": true,
+        "bytes": 96208,
+        "chars": 45234,
+        "lines": 596,
+        "headings": 49,
+        "urls": 54,
+        "sha256": "3fd7c133359d375a824d0509f1f51bba240d584c85472dbbb2fedc068c53d72f",
+        "started": "2026-09-07 04:41:37",
+        "finished": "2026-09-07 05:24:45",
+        "mtime": "2026-09-07T05:24:16.158158",
+        "attempts": 1,
+        "backup": [
+          {
+            "from": "基本面/公司调研/电力_发电_能源_储能/HTHIY_Hitachi_Ltd_公司调研_2026-07-31.md",
+            "to": "基本面/公司调研/电力_发电_能源_储能/备份/HTHIY_2026-09-07T04_41_38-07_00-0ece78f02c/HTHIY_Hitachi_Ltd_公司调研_2026-07-31.md",
+            "exists": true,
+            "bytes": 61129,
+            "sha256": "86b1f897ef7c6d4b0fbd0ccadf9d4a1c5139ce4bc16bfd0499751b04edf6aa53"
+          }
+        ],
+        "prepareEvents": 1,
+        "formalFiles": [
+          "HTHIY_Hitachi_Ltd_公司调研_2026-09-07.md"
+        ]
+      },
+      {
+        "subject": "DOV",
+        "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\DOV_Dover_Corporation_公司调研_2026-09-07.md",
+        "exists": true,
+        "bytes": 99934,
+        "chars": 49968,
+        "lines": 623,
+        "headings": 54,
+        "urls": 111,
+        "sha256": "8aaba535259005b914b1ef76e406887125abb7a3f11540872c6ac918cb4d1751",
+        "started": "2026-09-07 05:45:04",
+        "finished": "2026-09-07 06:17:13",
+        "mtime": "2026-09-07T06:16:43.293005",
+        "attempts": 1,
+        "backup": [
+          {
+            "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/DOV_Dover_Corporation_公司调研_2026-07-31.md",
+            "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/DOV_2026-09-07T05_45_05-07_00-cce7214887/DOV_Dover_Corporation_公司调研_2026-07-31.md",
+            "exists": true,
+            "bytes": 70930,
+            "sha256": "10113ab6729d1e427aaad74e65789451f24392896c82743a0d4a98be518f8855"
+          }
+        ],
+        "prepareEvents": 1,
+        "formalFiles": [
+          "DOV_Dover_Corporation_公司调研_2026-09-07.md"
+        ]
+      },
+      {
+        "subject": "SOMMY",
+        "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-09-07.md",
+        "exists": true,
+        "bytes": 104661,
+        "chars": 52854,
+        "lines": 578,
+        "headings": 56,
+        "urls": 174,
+        "sha256": "5f538b9739d6beac00b9926c3904015d7c09f648f709cd9d74c904eb290dd831",
+        "started": "2026-09-07 03:46:30",
+        "finished": "2026-09-07 04:40:12",
+        "mtime": "2026-09-07T04:39:36.629810",
+        "attempts": 1,
+        "backup": [
+          {
+            "from": "基本面/公司调研/半导体材料_化学品_基板/SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-07-11.md",
+            "to": "基本面/公司调研/半导体材料_化学品_基板/备份/SOMMY_2026-09-07T03_46_31-07_00-ba0d8927a1/SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-07-11.md",
+            "exists": true,
+            "bytes": 65079,
+            "sha256": "4a1e49a9141f676f06f3d2456e08e13b0ddd69d7b13f2ac89027704b8902da7e"
+          }
+        ],
+        "prepareEvents": 1,
+        "formalFiles": [
+          "SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-09-07.md"
+        ]
+      }
+    ]
+  },
+  "items": [
+    {
+      "subject": "CLS",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\CLS_Celestica_Inc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 72277,
+      "chars": 35514,
+      "lines": 484,
+      "headings": 37,
+      "urls": 71,
+      "sha256": "ee2a2aa91fa9747e9cc996c2b84c35090f8776fa5506a273dcaefd22521d8db9",
+      "started": "2026-09-07 02:17:44",
+      "finished": "2026-09-07 02:39:33",
+      "mtime": "2026-09-07T02:38:38.460670",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/CLS_Celestica_Inc_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/CLS_2026-09-07T02_17_45-07_00-50657b343f/CLS_Celestica_Inc_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 77915,
+          "sha256": "e6bcc12295ffe433be307002dca077d8ad623cff29804beff6e5fd9abf473842"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "CLS_Celestica_Inc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "JBL",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\JBL_Jabil_Inc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 80432,
+      "chars": 37409,
+      "lines": 544,
+      "headings": 44,
+      "urls": 41,
+      "sha256": "5e20d1f345006307e5dd4fdaab31031477d68313c8d2b7da958f7e0d8a7807e1",
+      "started": "2026-09-07 02:17:36",
+      "finished": "2026-09-07 02:43:03",
+      "mtime": "2026-09-07T02:41:55.868505",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/JBL_Jabil_Inc_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/JBL_2026-09-07T02_17_37-07_00-31e0320737/JBL_Jabil_Inc_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 82970,
+          "sha256": "28a88d9743589b707506484f375a71b83a0ddc4d03204736011166f17c72992f"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "JBL_Jabil_Inc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "FN",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\FN_Fabrinet_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 73765,
+      "chars": 34799,
+      "lines": 512,
+      "headings": 38,
+      "urls": 27,
+      "sha256": "82968f1ca5db509153726ea0150cb86d8439d847b885978234d14a098f2e377e",
+      "started": "2026-09-07 02:17:34",
+      "finished": "2026-09-07 02:44:47",
+      "mtime": "2026-09-07T02:44:16.772537",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/FN_Fabrinet_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/FN_2026-09-07T02_17_35-07_00-8f2e80852a/FN_Fabrinet_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 59090,
+          "sha256": "19d20b4bd30a64e50ebd25ab7281cc9a5323904e81e9f5b342079b2c556b53b6"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "FN_Fabrinet_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "FLEX",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\FLEX_Flex_Ltd_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 77680,
+      "chars": 40848,
+      "lines": 532,
+      "headings": 42,
+      "urls": 85,
+      "sha256": "b643cc6fd9aef62e1f953438330e5e741beb731f1ad14609dc59308fc9cfb8e3",
+      "started": "2026-09-07 02:17:46",
+      "finished": "2026-09-07 02:45:05",
+      "mtime": "2026-09-07T02:44:41.282357",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/FLEX_Flex_Ltd_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/FLEX_2026-09-07T02_17_47-07_00-55c6079050/FLEX_Flex_Ltd_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 60164,
+          "sha256": "69d87f809920a941153651a0e6ab319fefde70e30ab8bb9fb0fbef153c68bfb1"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "FLEX_Flex_Ltd_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "MRAM",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\MRAM_Everspin_Technologies_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 73075,
+      "chars": 34524,
+      "lines": 509,
+      "headings": 44,
+      "urls": 35,
+      "sha256": "02798c6be096e26328945630e4a4204a81281bc99a373851a52918b2eb4ed8d4",
+      "started": "2026-09-07 02:17:37",
+      "finished": "2026-09-07 02:47:41",
+      "mtime": "2026-09-07T02:46:42.692509",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/MRAM_Everspin_Technologies_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/MRAM_2026-09-07T02_17_38-07_00-8bacd4e523/MRAM_Everspin_Technologies_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 72925,
+          "sha256": "90f0088b8bc3c07ad0612e2ed878c1f52294e2993e04802d7a0b8c497a497d8e"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "MRAM_Everspin_Technologies_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "SMCI",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 76242,
+      "chars": 34971,
+      "lines": 556,
+      "headings": 48,
+      "urls": 34,
+      "sha256": "3817e4a364a3fe8610fbd297acece20b17b8708564de4376570121ab4dacf929",
+      "started": "2026-09-07 02:17:41",
+      "finished": "2026-09-07 02:49:27",
+      "mtime": "2026-09-07T02:49:07.544796",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-07.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/SMCI_2026-09-07T02_17_42-07_00-2d2fce454a/SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-07.md",
+          "exists": true,
+          "bytes": 78917,
+          "sha256": "954454733bd9f55f349767031996e175b241491a084ba7a0af8b0d0b10fa955b"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "MU",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\MU_Micron_Technology_美光科技_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 80337,
+      "chars": 38944,
+      "lines": 562,
+      "headings": 45,
+      "urls": 52,
+      "sha256": "4883089314c3d3ba9afc7628ef78f9de0927adc04a6fa811c0def2633c2c386e",
+      "started": "2026-09-07 02:17:47",
+      "finished": "2026-09-07 02:50:43",
+      "mtime": "2026-09-07T02:50:17.795888",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-09-07.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/MU_2026-09-07T02_17_48-07_00-5c95c56b7a/MU_Micron_Technology_美光科技_公司调研_2026-09-07.md",
+          "exists": true,
+          "bytes": 75947,
+          "sha256": "e24b6c3135ed1b467c1bbfab33248ce3137f22e572fc32f53764bb4be0091864"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "MU_Micron_Technology_美光科技_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ADI",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\ADI_Analog_Devices_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 90033,
+      "chars": 40871,
+      "lines": 556,
+      "headings": 42,
+      "urls": 46,
+      "sha256": "4fe8d2a6faeb2124f7444c4356927f97153d93ca04115dfac7133cc04e87ad65",
+      "started": "2026-09-07 02:17:53",
+      "finished": "2026-09-07 02:51:18",
+      "mtime": "2026-09-07T02:50:33.543450",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/ADI_Analog_Devices_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/ADI_2026-09-07T02_17_54-07_00-f71dddcbf4/ADI_Analog_Devices_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 53618,
+          "sha256": "9a0ee4e60cbf7d2c3eafa1718706f25deeedac17195453ea6e0a04d2fcbf8fdf"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ADI_Analog_Devices_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "SKHY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\SKHY_SK_hynix_Inc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 75018,
+      "chars": 36723,
+      "lines": 517,
+      "headings": 45,
+      "urls": 50,
+      "sha256": "8ba01a95e9bc225a780f7b8ddf9897b88c9d7e397f5245d1afef28e06b11e2f2",
+      "started": "2026-09-07 02:17:52",
+      "finished": "2026-09-07 02:51:35",
+      "mtime": "2026-09-07T02:51:08.602809",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/SKHY_SK_hynix_Inc_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/SKHY_2026-09-07T02_17_53-07_00-9374084a39/SKHY_SK_hynix_Inc_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 77930,
+          "sha256": "916d56e32a85a2e850f0559d41044f76d948dc1c156f13745992cda71556d3c3"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "SKHY_SK_hynix_Inc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "SANM",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\SANM_Sanmina_Corporation_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 65640,
+      "chars": 29271,
+      "lines": 454,
+      "headings": 39,
+      "urls": 33,
+      "sha256": "0ffa886dddbc45df171c735329e7aa1ea044041a34257d84e2f4230a4b668b58",
+      "started": "2026-09-07 02:17:40",
+      "finished": "2026-09-07 02:52:14",
+      "mtime": "2026-09-07T02:51:45.076747",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/SANM_Sanmina_Corporation_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/SANM_2026-09-07T02_17_41-07_00-e34a582551/SANM_Sanmina_Corporation_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 75274,
+          "sha256": "3bf29de55c0c513c42d4fba530163f55ac72e336ba9a9e4534ae4c4a013f74e2"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "SANM_Sanmina_Corporation_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "SNDK",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\SNDK_SanDisk_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 87908,
+      "chars": 40935,
+      "lines": 619,
+      "headings": 56,
+      "urls": 38,
+      "sha256": "60ef820d2acd684ebf49233900dc00d7744fe19288dad3146d8d2bb404d655a4",
+      "started": "2026-09-07 02:17:51",
+      "finished": "2026-09-07 02:53:10",
+      "mtime": "2026-09-07T02:51:40.297750",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/SNDK_SanDisk_公司调研_2026-09-07.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/SNDK_2026-09-07T02_17_52-07_00-bd06117669/SNDK_SanDisk_公司调研_2026-09-07.md",
+          "exists": true,
+          "bytes": 74227,
+          "sha256": "3f93845ec19d211a2da508139470f1cf80145a7f13cf1a574df12e44e0745b2e"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "SNDK_SanDisk_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "STX",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\STX_Seagate_Technology_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 87716,
+      "chars": 42388,
+      "lines": 617,
+      "headings": 53,
+      "urls": 36,
+      "sha256": "6ca344a4bc85cebf8b80c97bd96ea97aa35fc93a50593d3211fcd8ad26307c00",
+      "started": "2026-09-07 02:17:42",
+      "finished": "2026-09-07 02:54:24",
+      "mtime": "2026-09-07T02:53:50.443201",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/STX_Seagate_Technology_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/STX_2026-09-07T02_17_43-07_00-0013da367b/STX_Seagate_Technology_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 55550,
+          "sha256": "7666a8b08faf37e4a49fc6839c6100ab45dd81c81550d9b456566eac071b3bcf"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "STX_Seagate_Technology_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "NTAP",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\NTAP_NetApp_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 76247,
+      "chars": 36354,
+      "lines": 499,
+      "headings": 47,
+      "urls": 40,
+      "sha256": "662cdf76504ca545edf5b501d49a7dd47a5c262caab9bf694c82efb405356603",
+      "started": "2026-09-07 02:17:38",
+      "finished": "2026-09-07 02:55:25",
+      "mtime": "2026-09-07T02:54:50.246347",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/NTAP_NetApp_公司调研_2026-07-18.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/NTAP_2026-09-07T02_17_39-07_00-24b1159001/NTAP_NetApp_公司调研_2026-07-18.md",
+          "exists": true,
+          "bytes": 68122,
+          "sha256": "55b06ce1846a8e4aa1d9cf973a1f6a1e370f1aa245dbb13deed24dede874b925"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "NTAP_NetApp_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "WDC",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\WDC_WesternDigital_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 62988,
+      "chars": 29147,
+      "lines": 391,
+      "headings": 39,
+      "urls": 32,
+      "sha256": "c18afe25012b717672d00ebb0833f588b2d5d62b9414925723a36f42d5f099e5",
+      "started": "2026-09-07 02:17:43",
+      "finished": "2026-09-07 02:57:47",
+      "mtime": "2026-09-07T02:57:22.716939",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/WDC_WesternDigital_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/WDC_2026-09-07T02_17_44-07_00-77ac04a0f0/WDC_WesternDigital_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 89979,
+          "sha256": "fde35811ffa08f66304d627f9b68e9da68bce0df1e90c49264cd04a3b99f9de5"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "WDC_WesternDigital_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "SIMO",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\SIMO_Silicon_Motion_Technology_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 65573,
+      "chars": 31068,
+      "lines": 409,
+      "headings": 41,
+      "urls": 56,
+      "sha256": "1ee2e1c9fd147a86ce3a0e1e38be12fdeb67e6e4bfc910e85e7a446ddccb386b",
+      "started": "2026-09-07 02:17:50",
+      "finished": "2026-09-07 02:58:46",
+      "mtime": "2026-09-07T02:58:14.712476",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/SIMO_Silicon_Motion_Technology_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/SIMO_2026-09-07T02_17_51-07_00-2b53e3471d/SIMO_Silicon_Motion_Technology_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 64323,
+          "sha256": "81ed5b6f1b88ba3f193411e1810b6f789f34770238abeac78fdab971714ab285"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "SIMO_Silicon_Motion_Technology_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "HPE",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\HPE_惠普企业_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 72393,
+      "chars": 35756,
+      "lines": 523,
+      "headings": 43,
+      "urls": 44,
+      "sha256": "1cefa0c116367a029e49601947e1c454834c0c891e56fe18141b25e8df54ce55",
+      "started": "2026-09-07 02:17:35",
+      "finished": "2026-09-07 02:59:29",
+      "mtime": "2026-09-07T02:58:23.836213",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/HPE_惠普企业_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/HPE_2026-09-07T02_17_36-07_00-bd1cef4a5a/HPE_惠普企业_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 85350,
+          "sha256": "724e881f38cb3085fbd2a7bc83f53348b123f0579d7c989e4610be79c02526bd"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "HPE_惠普企业_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "PENG",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\PENG_Penguin_Solutions_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 66255,
+      "chars": 31683,
+      "lines": 383,
+      "headings": 26,
+      "urls": 48,
+      "sha256": "0eae8a05e1b061c87e88641f70544c56236d3563048c0a3b5e43f40104aecb37",
+      "started": "2026-09-07 02:17:39",
+      "finished": "2026-09-07 02:59:53",
+      "mtime": "2026-09-07T02:58:49.053933",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/PENG_Penguin Solutions_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/PENG_2026-09-07T02_17_40-07_00-27ce0ce621/PENG_Penguin Solutions_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 69432,
+          "sha256": "a0415f305efc875f4dd83877b93beebf5fcacda349b454e8c4cd4491ac54c5ef"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "PENG_Penguin_Solutions_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "P",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\P_Everpure_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 68400,
+      "chars": 31627,
+      "lines": 502,
+      "headings": 45,
+      "urls": 36,
+      "sha256": "fbbe751db5c8481339ce20b5e5ca4700ff7bf09b1ec7e0674c0c2edc37227538",
+      "started": "2026-09-07 02:17:48",
+      "finished": "2026-09-07 03:00:09",
+      "mtime": "2026-09-07T02:59:50.260699",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/P_Everpure_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/P_2026-09-07T02_17_49-07_00-1d16db521d/P_Everpure_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 86081,
+          "sha256": "0ec8706932b69eb159d66eeeeb8cd42e0a7baa32be4059c6fc98c09144421c35"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "P_Everpure_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "DELL",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\DELL_Dell_Technologies_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 87643,
+      "chars": 43870,
+      "lines": 472,
+      "headings": 37,
+      "urls": 103,
+      "sha256": "f15eccd473c3cec86f4035adffc1c9e89cac749937452471acbd25fa0b98579a",
+      "started": "2026-09-07 02:17:33",
+      "finished": "2026-09-07 03:02:17",
+      "mtime": "2026-09-07T03:01:57.227902",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/DELL_Dell_Technologies_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/DELL_2026-09-07T02_17_34-07_00-5b8daa5ee2/DELL_Dell_Technologies_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 65620,
+          "sha256": "263e8e0c9f806d9600fdd00458e10e1a66e8bbb0b6dba4926ecbee7b5af951d9"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "DELL_Dell_Technologies_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "MCHP",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\MCHP_Microchip_Technology_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 67654,
+      "chars": 33022,
+      "lines": 449,
+      "headings": 39,
+      "urls": 45,
+      "sha256": "7716ff4a248f997779796c9eb9e7ae2800dbedb80da919b17b2c0868da0237e7",
+      "started": "2026-09-07 02:47:41",
+      "finished": "2026-09-07 03:06:18",
+      "mtime": "2026-09-07T03:05:43.111764",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/MCHP_Microchip_Technology_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/MCHP_2026-09-07T02_47_42-07_00-bcd4d4f720/MCHP_Microchip_Technology_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 63706,
+          "sha256": "3ce1dff3e1843c021741e1195f474162a77adfd8625fcbfbe333a0bb1e563e88"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "MCHP_Microchip_Technology_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "RMBS",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\RMBS_Rambus_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 71619,
+      "chars": 34353,
+      "lines": 522,
+      "headings": 42,
+      "urls": 46,
+      "sha256": "b69d129a0994f9fb385bd6e6197f3837536c9a760b8c0a419704fa214fa45a13",
+      "started": "2026-09-07 02:17:49",
+      "finished": "2026-09-07 03:07:13",
+      "mtime": "2026-09-07T03:06:18.124619",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI服务器_存储_EMS/RMBS_Rambus_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI服务器_存储_EMS/备份/RMBS_2026-09-07T02_17_50-07_00-8b03d8733c/RMBS_Rambus_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 58683,
+          "sha256": "a49d3000b3795d5233a3d9f8934abef5ca0cbc3d14faaf7889c6b3ceca71493e"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "RMBS_Rambus_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "AVGO",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\AVGO_Broadcom_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 83682,
+      "chars": 40578,
+      "lines": 549,
+      "headings": 46,
+      "urls": 73,
+      "sha256": "8372897d84df354a965824472470408ba347b42233795e20b1dda02f46f951e7",
+      "started": "2026-09-07 02:43:03",
+      "finished": "2026-09-07 03:10:11",
+      "mtime": "2026-09-07T03:09:44.503656",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/AVGO_Broadcom_公司调研_2026-09-07.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/AVGO_2026-09-07T02_43_05-07_00-0b8b863e62/AVGO_Broadcom_公司调研_2026-09-07.md",
+          "exists": true,
+          "bytes": 91264,
+          "sha256": "1be2049a473aa300272a2326d78f5dd96554858065ec5e9e163e79c36f10f658"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "AVGO_Broadcom_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "AMD",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\AMD_Advanced_Micro_Devices_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 95296,
+      "chars": 47387,
+      "lines": 657,
+      "headings": 51,
+      "urls": 56,
+      "sha256": "b4158f0b8556ba19855976f861ede1ae8e9a08652fd192d8b37662338f92ea12",
+      "started": "2026-09-07 02:39:33",
+      "finished": "2026-09-07 03:11:50",
+      "mtime": "2026-09-07T03:11:10.945351",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/AMD_Advanced Micro Devices_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/AMD_2026-09-07T02_39_34-07_00-4b355bca4a/AMD_Advanced Micro Devices_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 90171,
+          "sha256": "427f6e448c987fc30837f29de50dbbaac24e18ee0a2c0a1ba8ad85f7eed37c04"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "AMD_Advanced_Micro_Devices_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "MRVL",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\MRVL_Marvell_Technology_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 69669,
+      "chars": 34484,
+      "lines": 536,
+      "headings": 42,
+      "urls": 41,
+      "sha256": "9b19bdec81d902f6f1d3814156dcd02f9dada4a6415c62861a45d586abb102aa",
+      "started": "2026-09-07 02:49:27",
+      "finished": "2026-09-07 03:13:49",
+      "mtime": "2026-09-07T03:13:30.327640",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/MRVL_Marvell_Technology_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/MRVL_2026-09-07T02_49_28-07_00-1d44e19051/MRVL_Marvell_Technology_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 68985,
+          "sha256": "aa8b71faf3d8563792052360100d73e4bf149d5c1a6ece678a18c00359fa3fa6"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "MRVL_Marvell_Technology_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "CDNS",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\CDNS_Cadence_Design_Systems_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 88339,
+      "chars": 40974,
+      "lines": 626,
+      "headings": 51,
+      "urls": 43,
+      "sha256": "2f9adcd8cc2bcdf200d5dbf55e7f3a1ebf819b32dc9cadc8dd6a276b199f0bbc",
+      "started": "2026-09-07 02:44:47",
+      "finished": "2026-09-07 03:14:34",
+      "mtime": "2026-09-07T03:14:05.399090",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/CDNS_Cadence_Design_Systems_公司调研_2026-07-18.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/CDNS_2026-09-07T02_44_48-07_00-961094ca39/CDNS_Cadence_Design_Systems_公司调研_2026-07-18.md",
+          "exists": true,
+          "bytes": 69659,
+          "sha256": "090856bda52de5ce65849524f7ac3162268e9a01ff0b39abbeb0b2ee747a76a1"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "CDNS_Cadence_Design_Systems_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ON",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\ON_onsemi_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 75818,
+      "chars": 36624,
+      "lines": 538,
+      "headings": 44,
+      "urls": 41,
+      "sha256": "2b08c445f5e7b069904c6b95cf7cb999fa9aebfc179879d5b73cee0fd63df4ca",
+      "started": "2026-09-07 02:51:19",
+      "finished": "2026-09-07 03:17:03",
+      "mtime": "2026-09-07T03:16:50.178885",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/ON_onsemi_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/ON_2026-09-07T02_51_20-07_00-3132e5ec52/ON_onsemi_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 61784,
+          "sha256": "e5c5f0234e16d9f1dd1717f5b1eba6d4381876de44259116dd0d849c8e7b575b"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ON_onsemi_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "NVDA",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\NVDA_NVIDIA_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 85118,
+      "chars": 40477,
+      "lines": 584,
+      "headings": 47,
+      "urls": 52,
+      "sha256": "6eefe460e7ed89ef25242724ccd00b0b5f0af456ab3009883075d5a070b902c2",
+      "started": "2026-09-07 02:50:43",
+      "finished": "2026-09-07 03:18:38",
+      "mtime": "2026-09-07T03:18:24.646997",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/NVDA_NVIDIA_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/NVDA_2026-09-07T02_50_44-07_00-6502d6e441/NVDA_NVIDIA_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 81012,
+          "sha256": "e5bee85886c4af8fa1a41c6628a91766a5c371185503ba11f7e10c1bdbb30158"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "NVDA_NVIDIA_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "INTC",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\INTC_Intel_Corporation_英特尔_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 86640,
+      "chars": 40850,
+      "lines": 599,
+      "headings": 50,
+      "urls": 44,
+      "sha256": "54664034e1d4d515626163510b2f314acc387adf1d4a380fc432483447b1593c",
+      "started": "2026-09-07 02:45:05",
+      "finished": "2026-09-07 03:19:49",
+      "mtime": "2026-09-07T03:18:29.546898",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/INTC_Intel_Corporation_英特尔_公司调研_2026-07-18.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/INTC_2026-09-07T02_45_06-07_00-3e32455212/INTC_Intel_Corporation_英特尔_公司调研_2026-07-18.md",
+          "exists": true,
+          "bytes": 74652,
+          "sha256": "db25575f6b5b2528b2c6c711b9d6de23b4269c7a8a0442b1432a96ded0f4f507"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "INTC_Intel_Corporation_英特尔_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ARM",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\ARM_Arm_Holdings_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 73675,
+      "chars": 34821,
+      "lines": 570,
+      "headings": 45,
+      "urls": 35,
+      "sha256": "6634aa662ab72af25c58e8288e251357237f83d2706d35ef758d6b61a2072043",
+      "started": "2026-09-07 02:55:25",
+      "finished": "2026-09-07 03:19:52",
+      "mtime": "2026-09-07T03:19:30.706801",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/ARM_Arm_Holdings_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/ARM_2026-09-07T02_55_26-07_00-3f886f9367/ARM_Arm_Holdings_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 96874,
+          "sha256": "dcfaa2262341137b1f725764d453e02056bd16e86e6c4e2081eaa980e2b88d61"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ARM_Arm_Holdings_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "SNPS",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\SNPS_Synopsys_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 62992,
+      "chars": 30414,
+      "lines": 358,
+      "headings": 30,
+      "urls": 44,
+      "sha256": "291ef8e926802113fac20d4e05bc85fc373ecff200e351af0533036de29c41dd",
+      "started": "2026-09-07 02:57:47",
+      "finished": "2026-09-07 03:21:53",
+      "mtime": "2026-09-07T03:21:02.013175",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/SNPS_Synopsys_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/SNPS_2026-09-07T02_57_48-07_00-da2a9bdc68/SNPS_Synopsys_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 77804,
+          "sha256": "aeaa01a4a87a8b8b94d4584fdb6b3e537d7ec8d5eef6e76e242dc3c813f49233"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "SNPS_Synopsys_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "APH",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\APH_Amphenol_安费诺_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 71336,
+      "chars": 32962,
+      "lines": 503,
+      "headings": 50,
+      "urls": 37,
+      "sha256": "bfa29602b2b224c4036373a37acf3350b959429a83a8acc21b3faa421afc2ddf",
+      "started": "2026-09-07 03:00:09",
+      "finished": "2026-09-07 03:21:57",
+      "mtime": "2026-09-07T03:21:27.357558",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/APH_Amphenol_安费诺_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/APH_2026-09-07T03_00_10-07_00-93d7d37509/APH_Amphenol_安费诺_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 63208,
+          "sha256": "4acddfc334958ecfcf615d122510a851f57f86887ea817905158f28aa45250be"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "APH_Amphenol_安费诺_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "TXN",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\TXN_德州仪器_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 79427,
+      "chars": 39098,
+      "lines": 434,
+      "headings": 42,
+      "urls": 108,
+      "sha256": "443415e7801125caa3710a4cc59539792071de65e233f87a9eaf068f0f5a6a6f",
+      "started": "2026-09-07 02:53:10",
+      "finished": "2026-09-07 03:22:13",
+      "mtime": "2026-09-07T03:21:35.246782",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/TXN_德州仪器_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/TXN_2026-09-07T02_53_11-07_00-c88d32fa6f/TXN_德州仪器_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 71681,
+          "sha256": "8284cfa9d46452e3a8e2fa4680a9ad68afd75a7ff7c54d930f80239e221b74bd"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "TXN_德州仪器_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ALAB",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\ALAB_AsteraLabs_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 82020,
+      "chars": 39934,
+      "lines": 519,
+      "headings": 40,
+      "urls": 43,
+      "sha256": "72ca1cfa29e8ee4bf8ec12e83a424599da83fc8c397971a6d884c3c1812cdeb9",
+      "started": "2026-09-07 02:54:24",
+      "finished": "2026-09-07 03:23:46",
+      "mtime": "2026-09-07T03:23:13.928261",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/ALAB_AsteraLabs_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/ALAB_2026-09-07T02_54_25-07_00-0b7d726167/ALAB_AsteraLabs_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 57328,
+          "sha256": "3b0651b84079ab1029eeec8bd241bde8ca93c3d392b113f264d391a880d5a719"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ALAB_AsteraLabs_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "STM",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\STM_STMicroelectronics_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 85527,
+      "chars": 40124,
+      "lines": 591,
+      "headings": 50,
+      "urls": 48,
+      "sha256": "6094fba4982de2efb615de4f7fee3754496f145aac4938d6545e9eff43ecde40",
+      "started": "2026-09-07 02:52:14",
+      "finished": "2026-09-07 03:24:28",
+      "mtime": "2026-09-07T03:23:54.215138",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/STM_STMicroelectronics_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/STM_2026-09-07T02_52_15-07_00-d083d38725/STM_STMicroelectronics_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 69300,
+          "sha256": "4a3746af526faa7c455d990c1d173a907e369fae69b534d9836096f27bfbb40e"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "STM_STMicroelectronics_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ANET",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\ANET_Arista_Networks_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 82065,
+      "chars": 41934,
+      "lines": 545,
+      "headings": 46,
+      "urls": 78,
+      "sha256": "48f9e5af71b8f8dfa1ac7c74f4da036d0866ac6d2331e3e29146218f9de7e044",
+      "started": "2026-09-07 02:59:53",
+      "finished": "2026-09-07 03:26:09",
+      "mtime": "2026-09-07T03:25:42.006594",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/ANET_Arista_Networks_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/ANET_2026-09-07T02_59_54-07_00-6ece2be532/ANET_Arista_Networks_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 58908,
+          "sha256": "55bd9910ef4dbc8d38042da61eadb07de426820e6f0ba604d50b3faf5c4ff7ea"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ANET_Arista_Networks_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "QCOM",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\QCOM_Qualcomm_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 88592,
+      "chars": 41555,
+      "lines": 588,
+      "headings": 53,
+      "urls": 41,
+      "sha256": "ef898f4e94d13c42e4892b63cd09685e135bf21b29d6082a6b7b837453d80a7e",
+      "started": "2026-09-07 02:51:35",
+      "finished": "2026-09-07 03:28:10",
+      "mtime": "2026-09-07T03:27:53.969154",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/QCOM_Qualcomm_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/QCOM_2026-09-07T02_51_36-07_00-75cc252ec7/QCOM_Qualcomm_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 61029,
+          "sha256": "648012c013d32a51deeea4a261ab9bf0184fedfa66dafa6673d4b732f37b0de1"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "QCOM_Qualcomm_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "BDC",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\BDC_Belden_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 69875,
+      "chars": 33654,
+      "lines": 457,
+      "headings": 39,
+      "urls": 41,
+      "sha256": "c318816ad4e40fa8438a1364b6da201fce116d6ec6bea1ac8dec1afc339eb0fa",
+      "started": "2026-09-07 03:02:17",
+      "finished": "2026-09-07 03:30:57",
+      "mtime": "2026-09-07T03:30:25.553321",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/BDC_Belden_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/BDC_2026-09-07T03_02_18-07_00-21279a4463/BDC_Belden_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 77989,
+          "sha256": "2946edeea76eccacc9a5cbf538f4a46cddfbb69bfb1d21397049e67a4cb5f303"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "BDC_Belden_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "MXL",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\MXL_MaxLinear_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 83618,
+      "chars": 40747,
+      "lines": 571,
+      "headings": 48,
+      "urls": 54,
+      "sha256": "b90b4562101e192529464472a04edb51ce2577f0eb1e9a01841382f5b461cf3a",
+      "started": "2026-09-07 02:58:46",
+      "finished": "2026-09-07 03:32:07",
+      "mtime": "2026-09-07T03:30:27.346310",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/MXL_MaxLinear_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/MXL_2026-09-07T02_58_47-07_00-022806ab6c/MXL_MaxLinear_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 51503,
+          "sha256": "88e61b10eb22eff4be6ef1ea5498ea6051587954678f0824aecb11c656fc2c37"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "MXL_MaxLinear_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "COHR",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\COHR_Coherent_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 81610,
+      "chars": 38068,
+      "lines": 551,
+      "headings": 45,
+      "urls": 43,
+      "sha256": "6c1b40a2cd6b4cabef1cb2cdb8c07f8b4a931b7443a9cd5b16de2f0853401b0c",
+      "started": "2026-09-07 03:06:18",
+      "finished": "2026-09-07 03:33:39",
+      "mtime": "2026-09-07T03:33:10.138061",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/COHR_Coherent_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/COHR_2026-09-07T03_06_19-07_00-32fcc70804/COHR_Coherent_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 58333,
+          "sha256": "04f8fd5c32456a8c7b7eb886e68b0cb1136a28c497fd9141f6d9e92a01ad066c"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "COHR_Coherent_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "CBRS",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\CBRS_Cerebras_Systems_Inc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 77039,
+      "chars": 38354,
+      "lines": 478,
+      "headings": 44,
+      "urls": 97,
+      "sha256": "354c50de4733054d66622de2ee6abebc6e4fd368d6c964df0c0143f324c06a45",
+      "started": "2026-09-07 03:09:10",
+      "finished": "2026-09-07 03:34:34",
+      "mtime": "2026-09-07T03:33:55.960898",
+      "attempts": 3,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/CBRS_Cerebras Systems Inc_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/备份/CBRS_2026-09-07T03_09_11-07_00-d2af72ba8b/CBRS_Cerebras Systems Inc_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 60994,
+          "sha256": "9ab4a0a39ac9ec32ef0b0adffb423d094a9fdcda0cb2432a9ee834c64a25948e"
+        }
+      ],
+      "prepareEvents": 3,
+      "formalFiles": [
+        "CBRS_Cerebras_Systems_Inc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "CSCO",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\CSCO_Cisco_Systems_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 86649,
+      "chars": 49406,
+      "lines": 499,
+      "headings": 44,
+      "urls": 183,
+      "sha256": "2af13b21ecdcb03d92cb90cfc4601e705f2f812419689615f322855d82769411",
+      "started": "2026-09-07 03:10:11",
+      "finished": "2026-09-07 03:35:02",
+      "mtime": "2026-09-07T03:34:27.411635",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/CSCO_Cisco_Systems_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/CSCO_2026-09-07T03_10_12-07_00-9424b8ebf6/CSCO_Cisco_Systems_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 65429,
+          "sha256": "0bff385b99ced91bc4fd1cbfc7f0354c7fbbab5955df5b173e4686808bd1fbf5"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "CSCO_Cisco_Systems_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "LITE",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\LITE_Lumentum_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 80921,
+      "chars": 39400,
+      "lines": 564,
+      "headings": 51,
+      "urls": 45,
+      "sha256": "d599f00158a296d7cba102826235209243d93c9570b329255dc52cbd4315e138",
+      "started": "2026-09-07 03:13:49",
+      "finished": "2026-09-07 03:37:47",
+      "mtime": "2026-09-07T03:36:02.739984",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/LITE_Lumentum_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/LITE_2026-09-07T03_13_50-07_00-c45a100c46/LITE_Lumentum_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 80781,
+          "sha256": "97649d8790b1a65585d07a46ecc8931d664e21f0dc1a6235681c9e78ba28fba6"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "LITE_Lumentum_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "GLW",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\GLW_Corning_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 77717,
+      "chars": 38332,
+      "lines": 465,
+      "headings": 49,
+      "urls": 83,
+      "sha256": "b43b9a407dd24056ea6842347ce2857702f330d7404101c5c6b31a91f8744471",
+      "started": "2026-09-07 03:11:50",
+      "finished": "2026-09-07 03:39:33",
+      "mtime": "2026-09-07T03:39:13.755052",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/GLW_Corning_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/GLW_2026-09-07T03_11_51-07_00-bfef32ed26/GLW_Corning_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 63347,
+          "sha256": "0014a7ba0f3a86d96a48af5416b5f3e2e787ee2d2ee7bae12ff6a38f8d08891b"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "GLW_Corning_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "LWLG",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\LWLG_Lightwave_Logic_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 86529,
+      "chars": 44227,
+      "lines": 487,
+      "headings": 46,
+      "urls": 128,
+      "sha256": "972e5f961e8b626972a1746d1be2a718410b01d7c2bb780d0ed07266cce08214",
+      "started": "2026-09-07 03:14:34",
+      "finished": "2026-09-07 03:44:01",
+      "mtime": "2026-09-07T03:42:42.591691",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/LWLG_Lightwave_Logic_公司调研_2026-09-07.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/LWLG_2026-09-07T03_14_35-07_00-2ce11b7a36/LWLG_Lightwave_Logic_公司调研_2026-09-07.md",
+          "exists": true,
+          "bytes": 71945,
+          "sha256": "2c20e315006f77b662e6e7b3711531f08caa0081febb750305571fd3abf3b430"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "LWLG_Lightwave_Logic_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "CIEN",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\CIEN_Ciena_Corporation_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 69228,
+      "chars": 33296,
+      "lines": 442,
+      "headings": 39,
+      "urls": 39,
+      "sha256": "b2622745a2ad8b459dc001304cc19be8a042b7cd2d5008bf5912ed1e0596a3c8",
+      "started": "2026-09-07 03:22:13",
+      "finished": "2026-09-07 03:44:23",
+      "mtime": "2026-09-07T03:44:08.304614",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/CIEN_Ciena_Corporation_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/CIEN_2026-09-07T03_22_14-07_00-5e6019f7c3/CIEN_Ciena_Corporation_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 78127,
+          "sha256": "02d41f48825c8b66d37e1d00d4c0e740584b8d8249f8b0032e73a5505647288c"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "CIEN_Ciena_Corporation_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "NOK",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\NOK_诺基亚_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 87072,
+      "chars": 41157,
+      "lines": 591,
+      "headings": 46,
+      "urls": 46,
+      "sha256": "6a06dc2fcf070934581eadcc076eb9bbc8e2d8956ce686d65f3e34e68b803841",
+      "started": "2026-09-07 03:17:03",
+      "finished": "2026-09-07 03:45:09",
+      "mtime": "2026-09-07T03:44:38.948772",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/NOK_诺基亚_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/NOK_2026-09-07T03_17_05-07_00-f8b6a92e5f/NOK_诺基亚_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 65593,
+          "sha256": "c5e82029972e3cd7d17686852a60bcca2cb84c1556a68e55b72f5ac95d9ef2ef"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "NOK_诺基亚_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "MTSI",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\MTSI_MACOM_Technology_Solutions_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 83876,
+      "chars": 43804,
+      "lines": 504,
+      "headings": 48,
+      "urls": 132,
+      "sha256": "1963b4580c817bddfefd10fd6bc1fda6281b155f6ebfd007a620781974681888",
+      "started": "2026-09-07 03:23:46",
+      "finished": "2026-09-07 03:46:30",
+      "mtime": "2026-09-07T03:45:50.162288",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/MTSI_MACOM_Technology_Solutions_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/MTSI_2026-09-07T03_23_47-07_00-cda24e8574/MTSI_MACOM_Technology_Solutions_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 64677,
+          "sha256": "c8933171cf019e5311165050980b6eec1bb23f9abffa92bad3c9e6c672214a96"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "MTSI_MACOM_Technology_Solutions_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "POET",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\POET_POET_Technologies_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 68542,
+      "chars": 32206,
+      "lines": 425,
+      "headings": 42,
+      "urls": 60,
+      "sha256": "92cfa779ecb31e8747909356544e321c065c429589ca0c1e0ab4c2b71ead75f7",
+      "started": "2026-09-07 03:24:28",
+      "finished": "2026-09-07 03:50:39",
+      "mtime": "2026-09-07T03:50:24.768430",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/POET_POET_Technologies_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/POET_2026-09-07T03_24_30-07_00-86d0648b81/POET_POET_Technologies_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 59010,
+          "sha256": "cc08cfee5b85f489fa539aa9a6adb9d75316ecab914f64786d5b329b3010e115"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "POET_POET_Technologies_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "AAOI",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\AAOI_Applied_Optoelectronics_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 76814,
+      "chars": 35958,
+      "lines": 505,
+      "headings": 39,
+      "urls": 41,
+      "sha256": "f441f01348203ba60d2af54873585de2c28bc703ee612fead5725af0bf14b56b",
+      "started": "2026-09-07 03:21:53",
+      "finished": "2026-09-07 03:51:48",
+      "mtime": "2026-09-07T03:51:09.537653",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/AAOI_Applied_Optoelectronics_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/AAOI_2026-09-07T03_21_54-07_00-3af5f6f0b9/AAOI_Applied_Optoelectronics_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 78434,
+          "sha256": "1cb75b162aa39d9b1cdd4cc920c599a3d8f1dde412220c099629fd09f8458b3a"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "AAOI_Applied_Optoelectronics_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "VISN",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\VISN_Vistance_Networks_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 81860,
+      "chars": 41624,
+      "lines": 468,
+      "headings": 42,
+      "urls": 108,
+      "sha256": "c5e46fd441080e34793e1e0b41873d0e03dac0472a31a04637268a4ce5f6186d",
+      "started": "2026-09-07 03:19:52",
+      "finished": "2026-09-07 03:52:07",
+      "mtime": "2026-09-07T03:50:56.983757",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/VISN_Vistance Networks_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/VISN_2026-09-07T03_19_53-07_00-accea78e66/VISN_Vistance Networks_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 63661,
+          "sha256": "6b6afeaaf94e5f3f9d43496f8fd09dd1b7c493738a7d10fd459b59418ce8e93a"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "VISN_Vistance_Networks_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "VIAV",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\VIAV_VIAVI_Solutions_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 79667,
+      "chars": 37160,
+      "lines": 520,
+      "headings": 47,
+      "urls": 42,
+      "sha256": "22c7c134a52f7623861bb2924f30850fa60a601c7cfeb6cba4b1f631234c2427",
+      "started": "2026-09-07 03:19:49",
+      "finished": "2026-09-07 03:54:30",
+      "mtime": "2026-09-07T03:53:52.629361",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/VIAV_VIAVI_Solutions_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/VIAV_2026-09-07T03_19_50-07_00-bd06659257/VIAV_VIAVI_Solutions_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 59176,
+          "sha256": "22bd04fed0a0fc682d64c16c6bcefa602298d2b0dcd3b5039cc4153c052b83c1"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "VIAV_VIAVI_Solutions_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "BELFB",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\BELFB_Bel_Fuse_Inc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 76412,
+      "chars": 35139,
+      "lines": 490,
+      "headings": 44,
+      "urls": 39,
+      "sha256": "c09c60b111202f4bd9e7ed3d81a2f48e6a3c95ee1f979fdd92770747ce224201",
+      "started": "2026-09-07 03:21:57",
+      "finished": "2026-09-07 03:55:05",
+      "mtime": "2026-09-07T03:54:28.054348",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/BELFB_Bel_Fuse_Inc_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/BELFB_2026-09-07T03_21_58-07_00-fccb8844bd/BELFB_Bel_Fuse_Inc_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 48499,
+          "sha256": "69502fc6498ac5f0839d957831a04d3514606048a056099e882f96b0661318ce"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "BELFB_Bel_Fuse_Inc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "CRDO",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\CRDO_Credo_Technology_Group_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 76255,
+      "chars": 36896,
+      "lines": 526,
+      "headings": 40,
+      "urls": 51,
+      "sha256": "3a07eee72d88327a762e7c4de93b0a7f8587c9fa45f6471b5fac829a5b6c0fb3",
+      "started": "2026-09-07 03:07:13",
+      "finished": "2026-09-07 03:55:11",
+      "mtime": "2026-09-07T03:54:49.341095",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/CRDO_Credo_Technology_Group_公司调研_2026-09-07.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/CRDO_2026-09-07T03_07_14-07_00-0c202872b3/CRDO_Credo_Technology_Group_公司调研_2026-09-07.md",
+          "exists": true,
+          "bytes": 79250,
+          "sha256": "ec6d808359b6391d1293167c38922eb8baec6b29e5813b120b7d80ef287ae635"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "CRDO_Credo_Technology_Group_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "SITM",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\SITM_SiTime_Corporation_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 78147,
+      "chars": 36918,
+      "lines": 516,
+      "headings": 43,
+      "urls": 45,
+      "sha256": "1ec8ab076c95e4b07a61afe56b193e6b504703c3b482534938429615d32d1f50",
+      "started": "2026-09-07 03:26:09",
+      "finished": "2026-09-07 03:55:21",
+      "mtime": "2026-09-07T03:55:00.409691",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/SITM_SiTime_Corporation_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/SITM_2026-09-07T03_26_10-07_00-0531f47668/SITM_SiTime_Corporation_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 61647,
+          "sha256": "c73539c0e38c8f5a40c1fe0eb22ef6e3a097832293caddfc7baf75c65fb90f24"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "SITM_SiTime_Corporation_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "AXTI",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\AXTI_AXT_Inc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 68536,
+      "chars": 31332,
+      "lines": 445,
+      "headings": 44,
+      "urls": 41,
+      "sha256": "77eaaf566bcabcd3dfdf59fe65eebb434bc416c0865ed26a7083f2b79b9876d8",
+      "started": "2026-09-07 03:34:34",
+      "finished": "2026-09-07 03:56:32",
+      "mtime": "2026-09-07T03:56:15.471584",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/AXTI_AXT_Inc_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/AXTI_2026-09-07T03_34_35-07_00-0522914d9a/AXTI_AXT_Inc_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 55971,
+          "sha256": "55180d36ddf0a1a3a2c7832a93f640eb169a160036ed81164eb8a6ea963e892b"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "AXTI_AXT_Inc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "SMTC",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\SMTC_Semtech_Corporation_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 75310,
+      "chars": 35450,
+      "lines": 576,
+      "headings": 46,
+      "urls": 46,
+      "sha256": "f66408ec55e90551431fb467489cba4318a0aeef996592e28d6261169d606d06",
+      "started": "2026-09-07 03:28:10",
+      "finished": "2026-09-07 03:58:54",
+      "mtime": "2026-09-07T03:58:20.657367",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/SMTC_Semtech_Corporation_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/SMTC_2026-09-07T03_28_11-07_00-f7a5e09825/SMTC_Semtech_Corporation_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 60932,
+          "sha256": "54e1fb785d9e64ef1263c40aa8a31f434c42b54902b11f1f7ca76b0bf2092669"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "SMTC_Semtech_Corporation_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "AJNMY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\AJNMY_味之素_Ajinomoto_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 76738,
+      "chars": 35608,
+      "lines": 500,
+      "headings": 35,
+      "urls": 48,
+      "sha256": "b91ff323d9c2da8e18e8f06d35b9143b18c69169d535bdba27bdf0c1bada6b26",
+      "started": "2026-09-07 03:30:58",
+      "finished": "2026-09-07 03:59:02",
+      "mtime": "2026-09-07T03:57:51.391904",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/AJNMY_味之素 Ajinomoto_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/AJNMY_2026-09-07T03_30_58-07_00-c94e3db80b/AJNMY_味之素 Ajinomoto_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 63123,
+          "sha256": "cac89690b5bba4b41cb5aec38fcbc17c62321b823f61cf6290f509c9dbdec829"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "AJNMY_味之素_Ajinomoto_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "APD",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\APD_Air_Products_and_Chemicals_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 82233,
+      "chars": 36866,
+      "lines": 509,
+      "headings": 42,
+      "urls": 48,
+      "sha256": "c6663ee6444ef48cedb1113296e6baf4c75455e3f6c00bf6e2d3224d6ec5e7fa",
+      "started": "2026-09-07 03:32:07",
+      "finished": "2026-09-07 04:01:46",
+      "mtime": "2026-09-07T04:00:34.956972",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/APD_Air_Products_and_Chemicals_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/APD_2026-09-07T03_32_08-07_00-3401721e13/APD_Air_Products_and_Chemicals_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 71802,
+          "sha256": "0d9912fbc89eb1e4a9e2129650f4195d8a751dbd08a8ab7e096df51f55c659b0"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "APD_Air_Products_and_Chemicals_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "NDSN",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\NDSN_Nordson_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 66717,
+      "chars": 32198,
+      "lines": 482,
+      "headings": 36,
+      "urls": 46,
+      "sha256": "00dea17daab278d450d2057f64f690ed2924900cc2f8796a9ba63191a81886c4",
+      "started": "2026-09-07 03:44:01",
+      "finished": "2026-09-07 04:03:29",
+      "mtime": "2026-09-07T04:02:20.002839",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/NDSN_Nordson_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/NDSN_2026-09-07T03_44_03-07_00-6bfa88bde0/NDSN_Nordson_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 61111,
+          "sha256": "4041a19c2299860ab167561fad77225b500b60dcd7feda24cb495541d6929833"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "NDSN_Nordson_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "LIN",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\LIN_Linde_plc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 80592,
+      "chars": 40150,
+      "lines": 440,
+      "headings": 40,
+      "urls": 100,
+      "sha256": "232e5996a1fd2564785afa757938a34d05f69a14303b11e0045720e0c763a776",
+      "started": "2026-09-07 03:37:47",
+      "finished": "2026-09-07 04:04:03",
+      "mtime": "2026-09-07T04:03:19.346575",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/LIN_Linde_plc_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/LIN_2026-09-07T03_37_48-07_00-0919eb1854/LIN_Linde_plc_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 76438,
+          "sha256": "6760463a896baf7c2a060bc208ac09ebba9a6126f32f56ef79f2799e6923a952"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "LIN_Linde_plc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "MMM",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\MMM_3M_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 74545,
+      "chars": 34852,
+      "lines": 518,
+      "headings": 41,
+      "urls": 49,
+      "sha256": "363502f8ebeb09c8ffd2d28259da16210130c1963b8e2471abe52442f19a6e12",
+      "started": "2026-09-07 03:39:33",
+      "finished": "2026-09-07 04:05:22",
+      "mtime": "2026-09-07T04:04:38.490972",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/MMM_3M_公司调研_2026-07-18.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/MMM_2026-09-07T03_39_34-07_00-7ba2304510/MMM_3M_公司调研_2026-07-18.md",
+          "exists": true,
+          "bytes": 60785,
+          "sha256": "7513563b7fb2a06a4238457827c6edbe0b48b03fb44f372a1e14bd60bd6d51a3"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "MMM_3M_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "TEL",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\TEL_TE_Connectivity_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 85468,
+      "chars": 39179,
+      "lines": 535,
+      "headings": 49,
+      "urls": 38,
+      "sha256": "18a1c5df5295b0084a4fb06ca8346fe0b3a3c4facadc313d58299e755b735ec5",
+      "started": "2026-09-07 03:18:38",
+      "finished": "2026-09-07 04:07:11",
+      "mtime": "2026-09-07T04:05:51.699789",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/AI网络_光互联_连接器/TEL_TE_Connectivity_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/AI网络_光互联_连接器/备份/TEL_2026-09-07T03_18_39-07_00-c2cf84b5e1/TEL_TE_Connectivity_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 67865,
+          "sha256": "98079eae8231e4f6980fad7ed3b86aa45b79f9e4cd2645052b8f7110e531cc0e"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "TEL_TE_Connectivity_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "HOCPY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\HOCPY_HOYA_Corporation_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 82263,
+      "chars": 39100,
+      "lines": 552,
+      "headings": 44,
+      "urls": 49,
+      "sha256": "e55e29b1846911945f66f99cd1710b5f0bd3003a2ba1f91e071b9ebe88e43b60",
+      "started": "2026-09-07 03:35:02",
+      "finished": "2026-09-07 04:09:49",
+      "mtime": "2026-09-07T04:09:19.570331",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/HOCPY_HOYA Corporation_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/HOCPY_2026-09-07T03_35_03-07_00-cf27d830ee/HOCPY_HOYA Corporation_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 58446,
+          "sha256": "ba211f5b278cfa94954e5baed66b4d24e20323eac4f1951dda80a028dee47a66"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "HOCPY_HOYA_Corporation_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ASGLY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\ASGLY_AGC_Inc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 93658,
+      "chars": 41543,
+      "lines": 586,
+      "headings": 49,
+      "urls": 41,
+      "sha256": "fae05c4429fb4ec48c93b5ab4c21a5499510accd5b430f310948aed439e90f33",
+      "started": "2026-09-07 03:33:39",
+      "finished": "2026-09-07 04:10:06",
+      "mtime": "2026-09-07T04:09:29.273451",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/ASGLY_AGC_Inc_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/ASGLY_2026-09-07T03_33_40-07_00-bc7c38f0e2/ASGLY_AGC_Inc_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 54573,
+          "sha256": "ab34760076dbb33a4800b5797a7e63f705ff0b73331b482dfba3db7b1675e0ac"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ASGLY_AGC_Inc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "Q",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\Q_Qnity_Electronics_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 82621,
+      "chars": 38929,
+      "lines": 592,
+      "headings": 45,
+      "urls": 46,
+      "sha256": "a7f2004d3f6bd535bb22e1537068f34ad77582e55ad55387435166c873f19193",
+      "started": "2026-09-07 03:44:23",
+      "finished": "2026-09-07 04:12:20",
+      "mtime": "2026-09-07T04:11:57.480514",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/Q_Qnity_Electronics_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/Q_2026-09-07T03_44_24-07_00-1e796d3ff0/Q_Qnity_Electronics_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 69768,
+          "sha256": "31c8530198be449bad04e25817132fd2767d14edbe0b8f04326625e8abf2f967"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "Q_Qnity_Electronics_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "SHECY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\SHECY_Shin-Etsu_Chemical_信越化学_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 81630,
+      "chars": 36637,
+      "lines": 533,
+      "headings": 46,
+      "urls": 43,
+      "sha256": "712d02555c58c51a92b457ab8b0ded57f8ec15f14efdb3df56b935ddd3da50d2",
+      "started": "2026-09-07 03:45:09",
+      "finished": "2026-09-07 04:15:12",
+      "mtime": "2026-09-07T04:14:39.392732",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/SHECY_Shin-Etsu_Chemical_信越化学_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/SHECY_2026-09-07T03_45_11-07_00-e1265df8f8/SHECY_Shin-Etsu_Chemical_信越化学_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 70206,
+          "sha256": "329a4236983053023c90ad49c54734679f0bb1b7c1658b9a25f4f627cbcf2f66"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "SHECY_Shin-Etsu_Chemical_信越化学_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ECL",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\ECL_Ecolab_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 80820,
+      "chars": 41247,
+      "lines": 495,
+      "headings": 41,
+      "urls": 100,
+      "sha256": "119f50bdd4104d9dab8b663c3fb065baaa1b91c554147ae48ef58e6e3d69d763",
+      "started": "2026-09-07 03:51:48",
+      "finished": "2026-09-07 04:17:12",
+      "mtime": "2026-09-07T04:16:47.211591",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/ECL_Ecolab_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/ECL_2026-09-07T03_51_49-07_00-252ce4899f/ECL_Ecolab_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 68276,
+          "sha256": "1f6f66ccd032f426965f24ba0d08bc26b93328d43c751f29d132e54c3b659b01"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ECL_Ecolab_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ENTG",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\ENTG_Entegris_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 77625,
+      "chars": 36798,
+      "lines": 546,
+      "headings": 42,
+      "urls": 45,
+      "sha256": "3d008f497c44a3bd4325ea2e20b43b932da426bb979375d43364909522bd24b8",
+      "started": "2026-09-07 03:52:07",
+      "finished": "2026-09-07 04:23:45",
+      "mtime": "2026-09-07T04:23:07.369309",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/ENTG_Entegris_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/ENTG_2026-09-07T03_52_08-07_00-1c65d2f0aa/ENTG_Entegris_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 64660,
+          "sha256": "9646e25a7276cda6ced62256c93404e251ccb92b14d2074ad3294b752dc67567"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ENTG_Entegris_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "CC",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\CC_The_Chemours_Company_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 74959,
+      "chars": 35305,
+      "lines": 488,
+      "headings": 46,
+      "urls": 40,
+      "sha256": "e2f6dd0d84697596c574a5db2a75644ca3832733bb0ed171df1f8609ef9c0b42",
+      "started": "2026-09-07 03:50:39",
+      "finished": "2026-09-07 04:26:40",
+      "mtime": "2026-09-07T04:26:12.338830",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/CC_The_Chemours_Company_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/CC_2026-09-07T03_50_40-07_00-3ed9c8d1ee/CC_The_Chemours_Company_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 65185,
+          "sha256": "43db8dd783029ade3f6b165edd91477de823a5b3c45e809d78060a928970f952"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "CC_The_Chemours_Company_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "DHR",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\DHR_Danaher_Corporation_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 84026,
+      "chars": 39129,
+      "lines": 556,
+      "headings": 45,
+      "urls": 50,
+      "sha256": "8999346d4a2da82bc29632542a83805f2cc7975f7bb8491836f47416c524c8cd",
+      "started": "2026-09-07 03:55:21",
+      "finished": "2026-09-07 04:27:45",
+      "mtime": "2026-09-07T04:27:11.203960",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/DHR_Danaher_Corporation_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/DHR_2026-09-07T03_55_22-07_00-0c5cb2960a/DHR_Danaher_Corporation_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 84335,
+          "sha256": "2c927ea4213b354cdc90bc0d8741aa282cb1f54a48392316d757b8f1cf2db85c"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "DHR_Danaher_Corporation_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "SMTOY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\SMTOY_住友电工_Sumitomo_Electric_Industries_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 80735,
+      "chars": 38684,
+      "lines": 498,
+      "headings": 35,
+      "urls": 94,
+      "sha256": "89a19e72f2c3c61892ca4ea5f0073d13f83077dd4536eb68b9601b5d052e461a",
+      "started": "2026-09-07 03:55:11",
+      "finished": "2026-09-07 04:29:29",
+      "mtime": "2026-09-07T04:28:16.121344",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/SMTOY_住友电工_Sumitomo_Electric_Industries_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/SMTOY_2026-09-07T03_55_12-07_00-b38f411178/SMTOY_住友电工_Sumitomo_Electric_Industries_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 73567,
+          "sha256": "6485bcf4d1f1ffff5804824a2184f3b45df2ad29058f0f7b82ac3fbc0ac1494e"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "SMTOY_住友电工_Sumitomo_Electric_Industries_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "BWXT",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\BWXT_BWX_Technologies_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 85761,
+      "chars": 45008,
+      "lines": 528,
+      "headings": 42,
+      "urls": 118,
+      "sha256": "f165988803753b13d366caf86aa40441bf71f0bc72383df4bf1b0f442de286c5",
+      "started": "2026-09-07 04:03:29",
+      "finished": "2026-09-07 04:29:40",
+      "mtime": "2026-09-07T04:29:02.338564",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/BWXT_BWX Technologies_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/BWXT_2026-09-07T04_03_30-07_00-a789d58fc1/BWXT_BWX Technologies_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 100755,
+          "sha256": "831a6b2a2bdfba141259a57fec367b81eacd3685eab304bdbee60583eea43c31"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "BWXT_BWX_Technologies_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "BE",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\BE_Bloom_Energy_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 76263,
+      "chars": 35914,
+      "lines": 555,
+      "headings": 47,
+      "urls": 36,
+      "sha256": "4aa24c235263dc70df6222dca02bc199a7e0b15df0d055094ab877b2553a7462",
+      "started": "2026-09-07 04:01:46",
+      "finished": "2026-09-07 04:31:30",
+      "mtime": "2026-09-07T04:30:33.931180",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/BE_Bloom_Energy_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/BE_2026-09-07T04_01_47-07_00-6944a5a121/BE_Bloom_Energy_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 79527,
+          "sha256": "dbbbb81972d9b00a8ec305d130fe8c01ab006de5b8b047018aae06d2d3a9c04a"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "BE_Bloom_Energy_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "CMI",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\CMI_Cummins_Inc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 69148,
+      "chars": 32475,
+      "lines": 501,
+      "headings": 47,
+      "urls": 33,
+      "sha256": "ab9897cbc3671cc3f8b0acfb7730a57dac76b84a392a4a58156c7c9a22038bc0",
+      "started": "2026-09-07 04:04:03",
+      "finished": "2026-09-07 04:32:01",
+      "mtime": "2026-09-07T04:31:37.278474",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/CMI_Cummins_Inc_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/CMI_2026-09-07T04_04_05-07_00-69c826ef27/CMI_Cummins_Inc_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 63885,
+          "sha256": "d239b1feb3f03a43d1704c145d5644dc1e6947e588c9d994b8e6c88ed26a4447"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "CMI_Cummins_Inc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ROG",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\ROG_Rogers_Corporation_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 69337,
+      "chars": 35152,
+      "lines": 448,
+      "headings": 46,
+      "urls": 82,
+      "sha256": "c2633864078295505719c2d13f586aaad28c74bbcc517757a09bdd77d57214d0",
+      "started": "2026-09-07 03:55:05",
+      "finished": "2026-09-07 04:37:55",
+      "mtime": "2026-09-07T04:36:24.818486",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/ROG_Rogers_Corporation_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/ROG_2026-09-07T03_55_06-07_00-ddda0eb678/ROG_Rogers_Corporation_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 69512,
+          "sha256": "8c3654ab399d46985b2d3cf78eb205d9e43b50ac726e9c9f219644e8ddd53a7f"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ROG_Rogers_Corporation_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ENPH",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\ENPH_Enphase_Energy_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 84355,
+      "chars": 41071,
+      "lines": 526,
+      "headings": 40,
+      "urls": 80,
+      "sha256": "aa3a2a6adc40d78e39304da2b5cd906e42208d60d7c5e57be42075cc040a0172",
+      "started": "2026-09-07 04:09:49",
+      "finished": "2026-09-07 04:38:51",
+      "mtime": "2026-09-07T04:38:31.971437",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/ENPH_Enphase_Energy_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/ENPH_2026-09-07T04_09_50-07_00-f9eac44a03/ENPH_Enphase_Energy_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 71761,
+          "sha256": "e10460291b509cab4538f19fa603d87ee13c3a8048883d1993f5d9892b7b92bd"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ENPH_Enphase_Energy_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "SOMMY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 104661,
+      "chars": 52854,
+      "lines": 578,
+      "headings": 56,
+      "urls": 174,
+      "sha256": "5f538b9739d6beac00b9926c3904015d7c09f648f709cd9d74c904eb290dd831",
+      "started": "2026-09-07 03:46:30",
+      "finished": "2026-09-07 04:40:12",
+      "mtime": "2026-09-07T04:39:36.629810",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/SOMMY_2026-09-07T03_46_31-07_00-ba0d8927a1/SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 65079,
+          "sha256": "4a1e49a9141f676f06f3d2456e08e13b0ddd69d7b13f2ac89027704b8902da7e"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ENS",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\ENS_EnerSys_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 83755,
+      "chars": 37661,
+      "lines": 567,
+      "headings": 52,
+      "urls": 32,
+      "sha256": "1a76a377b3ef5dafd228b0ba284fcd1e1dc5bf2fa36d235d9b27ac7e24b788c4",
+      "started": "2026-09-07 04:07:11",
+      "finished": "2026-09-07 04:41:37",
+      "mtime": "2026-09-07T04:40:40.951863",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/ENS_EnerSys_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/ENS_2026-09-07T04_07_12-07_00-63a6ac5fc6/ENS_EnerSys_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 69645,
+          "sha256": "4082fbfa09a8719b52790e268b66ada21afec6b798fc9f9238a4cd2752a86f49"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ENS_EnerSys_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "AEP",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\AEP_American_Electric_Power_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 78764,
+      "chars": 35595,
+      "lines": 550,
+      "headings": 43,
+      "urls": 33,
+      "sha256": "b33c4d33df3960e7d76c16d5d6cbcbc64bded60c982de8d74ef2241f8220f49b",
+      "started": "2026-09-07 03:59:02",
+      "finished": "2026-09-07 04:42:10",
+      "mtime": "2026-09-07T04:41:39.511599",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/AEP_American_Electric_Power_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/AEP_2026-09-07T03_59_04-07_00-340434acbd/AEP_American_Electric_Power_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 67227,
+          "sha256": "1d392269793f811d0d25ed4af2b7fd288e085cbd298cb0606241d6c84d896ff0"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "AEP_American_Electric_Power_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "FCEL",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\FCEL_FuelCell_Energy_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 89919,
+      "chars": 49626,
+      "lines": 504,
+      "headings": 44,
+      "urls": 152,
+      "sha256": "fd85550c2f29626b5c1dea07c4748328df67d8a66573a5468d1a3be4197be362",
+      "started": "2026-09-07 04:15:12",
+      "finished": "2026-09-07 04:46:39",
+      "mtime": "2026-09-07T04:46:12.318790",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/FCEL_FuelCell_Energy_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/FCEL_2026-09-07T04_15_13-07_00-a414dc5cec/FCEL_FuelCell_Energy_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 66093,
+          "sha256": "1708abc50631a0051ce05554e883b49cc2b12409dae5d10e351f80eecbfcfdb0"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "FCEL_FuelCell_Energy_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ETR",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\ETR_Entergy_Corporation_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 72282,
+      "chars": 33443,
+      "lines": 522,
+      "headings": 46,
+      "urls": 38,
+      "sha256": "33bd3841486c4079f0082860c97cb808bea886a04d2a397c13226cd3d5287505",
+      "started": "2026-09-07 04:12:20",
+      "finished": "2026-09-07 04:47:13",
+      "mtime": "2026-09-07T04:46:30.642862",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/ETR_Entergy_Corporation_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/ETR_2026-09-07T04_12_21-07_00-2c035a0a78/ETR_Entergy_Corporation_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 61912,
+          "sha256": "c43d4190bd7a6fd168e78e7bed8680a4886a768f30dbd109d4ab009510c43de5"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ETR_Entergy_Corporation_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "DD",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\DD_DuPont_de_Nemours_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 86865,
+      "chars": 40870,
+      "lines": 613,
+      "headings": 44,
+      "urls": 54,
+      "sha256": "0d08cc12c85a3dd2bd3b909dacbdc3945d325db2d599fc1483fa5f809f2eace6",
+      "started": "2026-09-07 03:56:32",
+      "finished": "2026-09-07 04:47:23",
+      "mtime": "2026-09-07T04:45:35.041389",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/DD_DuPont_de_Nemours_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/DD_2026-09-07T03_56_33-07_00-26a32874e7/DD_DuPont_de_Nemours_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 55105,
+          "sha256": "ed7da0c0c0e2fd2f872f6780d69caef8bed7ae8905567c0fe38f315d1dbe9aaa"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "DD_DuPont_de_Nemours_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "DKILY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\DKILY_Daikin_Industries_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 78469,
+      "chars": 35686,
+      "lines": 543,
+      "headings": 51,
+      "urls": 47,
+      "sha256": "67ece1f9019dce6876b50e88efb7c761c5468d5d1a8fdd240dd83ca1f205a426",
+      "started": "2026-09-07 03:58:54",
+      "finished": "2026-09-07 04:48:43",
+      "mtime": "2026-09-07T04:47:56.941576",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/DKILY_Daikin_Industries_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/DKILY_2026-09-07T03_58_55-07_00-746d782301/DKILY_Daikin_Industries_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 69225,
+          "sha256": "a346956f36977ef9c8f3caf34c50d67f3745b910af18d91debe50916651de88a"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "DKILY_Daikin_Industries_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "MTRN",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\MTRN_Materion_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 81748,
+      "chars": 38402,
+      "lines": 578,
+      "headings": 47,
+      "urls": 39,
+      "sha256": "99e640ab6bdc491dd117b2f8a7f7058f8cf04b42b84a0c0717889101497de4bd",
+      "started": "2026-09-07 03:54:30",
+      "finished": "2026-09-07 04:51:54",
+      "mtime": "2026-09-07T04:50:47.396710",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/半导体材料_化学品_基板/MTRN_Materion_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/半导体材料_化学品_基板/备份/MTRN_2026-09-07T03_54_31-07_00-03ea7e107e/MTRN_Materion_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 77652,
+          "sha256": "660aa0479506cb05fafd016bcfb9fb365f3466ebb4afb728bb0bb54c694e53be"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "MTRN_Materion_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "PWR",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\PWR_Quanta_Services_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 83038,
+      "chars": 39147,
+      "lines": 565,
+      "headings": 47,
+      "urls": 37,
+      "sha256": "1a6d1dc0b9c84687b414bcc50db6e948cecaa5786c30ec16dc7d0dca4e95c18f",
+      "started": "2026-09-07 04:29:29",
+      "finished": "2026-09-07 04:56:22",
+      "mtime": "2026-09-07T04:56:03.563780",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/PWR_Quanta_Services_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/PWR_2026-09-07T04_29_30-07_00-61e40eca11/PWR_Quanta_Services_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 83364,
+          "sha256": "7d70b0fef93fa034156719cfeb80eac66be28509c3bbabd4b8b8d10d4ba5c94a"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "PWR_Quanta_Services_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "VST",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\VST_Vistra_Corp_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 72764,
+      "chars": 34150,
+      "lines": 521,
+      "headings": 44,
+      "urls": 39,
+      "sha256": "60117e2dddf4f0c1504f699374277fda664576a06d758894d1fb4593362867ab",
+      "started": "2026-09-07 04:31:30",
+      "finished": "2026-09-07 04:56:31",
+      "mtime": "2026-09-07T04:55:33.960897",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/VST_Vistra_Corp_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/VST_2026-09-07T04_31_31-07_00-815ff0c50e/VST_Vistra_Corp_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 87408,
+          "sha256": "d73366d3e28e856d51162f24a7d098388d8787829fe50b04101e4b679eeb5aef"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "VST_Vistra_Corp_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "DTE",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\DTE_DTE_Energy_Company_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 84499,
+      "chars": 39520,
+      "lines": 579,
+      "headings": 52,
+      "urls": 35,
+      "sha256": "64f018646483cea378eadd414f996507a1110e412be3413a28356e8c290b28a4",
+      "started": "2026-09-07 04:05:22",
+      "finished": "2026-09-07 04:57:01",
+      "mtime": "2026-09-07T04:56:29.951909",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/DTE_DTE_Energy_Company_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/DTE_2026-09-07T04_05_24-07_00-26b2e7639b/DTE_DTE_Energy_Company_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 61320,
+          "sha256": "270463223eeb1c94c644cc22d1e6808bf682fabe9735ad0aa6130607ac9080bd"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "DTE_DTE_Energy_Company_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "PSIX",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\PSIX_Power_Solutions_International_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 75183,
+      "chars": 34360,
+      "lines": 506,
+      "headings": 50,
+      "urls": 34,
+      "sha256": "f416ee4fce12b1a18720760a3d0a995dcacfd98100ff6003988fb67cdb426a0b",
+      "started": "2026-09-07 04:27:45",
+      "finished": "2026-09-07 04:58:28",
+      "mtime": "2026-09-07T04:57:22.532983",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/PSIX_Power_Solutions_International_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/PSIX_2026-09-07T04_27_46-07_00-ad98c1d423/PSIX_Power_Solutions_International_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 66835,
+          "sha256": "7cb0da061686144666973d1d2d990b98d026be985a719f7a9609474b4f68dd8c"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "PSIX_Power_Solutions_International_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ET",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\ET_Energy_Transfer_LP_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 88288,
+      "chars": 42336,
+      "lines": 579,
+      "headings": 46,
+      "urls": 40,
+      "sha256": "81a97d031a5fd9204026ba7e9b5465759b4a13747a90ebb7a45f514bf1f319b0",
+      "started": "2026-09-07 04:10:06",
+      "finished": "2026-09-07 05:00:00",
+      "mtime": "2026-09-07T04:59:12.147031",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/ET_Energy_Transfer_LP_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/ET_2026-09-07T04_10_07-07_00-145b85ff5e/ET_Energy_Transfer_LP_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 81916,
+          "sha256": "a6c92d93fb12d07f08cadd86636ceede015e344664aebcece3cb0d0884863a14"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ET_Energy_Transfer_LP_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "OKLO",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\OKLO_Oklo_Inc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 70403,
+      "chars": 33758,
+      "lines": 461,
+      "headings": 35,
+      "urls": 60,
+      "sha256": "a11e5132aefc545c46b229bc09209075be52a75489df87110332dee9234cc0f1",
+      "started": "2026-09-07 04:26:40",
+      "finished": "2026-09-07 05:03:12",
+      "mtime": "2026-09-07T05:02:25.931972",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/OKLO_Oklo_Inc_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/OKLO_2026-09-07T04_26_41-07_00-75a1608853/OKLO_Oklo_Inc_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 80739,
+          "sha256": "aa588ff06b58142843f6317bca4ce03175502bef8ed9691cfce4f15a99102176"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "OKLO_Oklo_Inc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "CEG",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\CEG_Constellation_Energy_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 69731,
+      "chars": 33090,
+      "lines": 494,
+      "headings": 41,
+      "urls": 35,
+      "sha256": "bb2c019d9620a566b0294c82f8c5bb865b53a47fdf2aa1e2bd1983050199bf10",
+      "started": "2026-09-07 04:32:01",
+      "finished": "2026-09-07 05:07:00",
+      "mtime": "2026-09-07T05:06:25.724793",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/CEG_Constellation_Energy_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/CEG_2026-09-07T04_32_02-07_00-829774b8e5/CEG_Constellation_Energy_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 69747,
+          "sha256": "066c5878c62903a6714b28b5fe2dad04fa856e0adb7895b6254a2e6a99e4700b"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "CEG_Constellation_Energy_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "SMR",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\SMR_NuScale_Power_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 71474,
+      "chars": 34255,
+      "lines": 525,
+      "headings": 46,
+      "urls": 39,
+      "sha256": "c3c75d940e7449ca54eb343e1f453c6f0cb8e84b3359fe6aad0eaa7f0fbbc360",
+      "started": "2026-09-07 04:38:51",
+      "finished": "2026-09-07 05:07:30",
+      "mtime": "2026-09-07T05:05:53.661877",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/SMR_NuScale_Power_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/SMR_2026-09-07T04_38_52-07_00-2507e5de44/SMR_NuScale_Power_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 70166,
+          "sha256": "95bbce0954002b98258d3cdfe7d5a0237bcc701ee8cd5c1e1f2b553509f07e5b"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "SMR_NuScale_Power_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "GNRC",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\GNRC_Generac_Holdings_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 82710,
+      "chars": 40462,
+      "lines": 474,
+      "headings": 44,
+      "urls": 94,
+      "sha256": "20151450578e509dc9318a35bbe36fc0d3e4db14811fbd7e594b31a9f1ba6339",
+      "started": "2026-09-07 04:23:45",
+      "finished": "2026-09-07 05:08:09",
+      "mtime": "2026-09-07T05:07:06.607263",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/GNRC_Generac_Holdings_公司调研_2026-09-07.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/GNRC_2026-09-07T04_23_46-07_00-59cda85a82/GNRC_Generac_Holdings_公司调研_2026-09-07.md",
+          "exists": true,
+          "bytes": 71723,
+          "sha256": "91d3a709bf0d7678339b1f8d6104a38aa785c7f11700462eced1a024eb10a0bb"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "GNRC_Generac_Holdings_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "FLNC",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\FLNC_Fluence_Energy_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 79029,
+      "chars": 36689,
+      "lines": 525,
+      "headings": 52,
+      "urls": 39,
+      "sha256": "1897ab9c516d1f8ec4dffdaddb5d82ae66f3ad1c29ff45d158c8b58c34cfb3b1",
+      "started": "2026-09-07 04:37:55",
+      "finished": "2026-09-07 05:10:51",
+      "mtime": "2026-09-07T05:10:21.196770",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/FLNC_Fluence_Energy_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/FLNC_2026-09-07T04_37_55-07_00-ce2ffc1dd8/FLNC_Fluence_Energy_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 69120,
+          "sha256": "235a86b4dea7b99798277bd922b3218f324998f131fef3cf9292658b4ea19903"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "FLNC_Fluence_Energy_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "AMPX",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\AMPX_Amprius_Technologies_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 78032,
+      "chars": 35974,
+      "lines": 523,
+      "headings": 44,
+      "urls": 38,
+      "sha256": "a3b0a5a25284a36efdff590b6466151e8ca0b55ac01015ff80010b1ba6963cb3",
+      "started": "2026-09-07 04:40:12",
+      "finished": "2026-09-07 05:11:18",
+      "mtime": "2026-09-07T05:10:39.272516",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/AMPX_Amprius_Technologies_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/AMPX_2026-09-07T04_40_13-07_00-1508507850/AMPX_Amprius_Technologies_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 66777,
+          "sha256": "072f72bfb931ec7b4f60e4ffe37d20e10970f801f7488220f605baff4bce601e"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "AMPX_Amprius_Technologies_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "COHU",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\COHU_Cohu_Inc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 63899,
+      "chars": 30053,
+      "lines": 467,
+      "headings": 48,
+      "urls": 41,
+      "sha256": "abe10bdb00215febc60d4d39b5226eaad9961f793fecaa54a62116d09d94fd09",
+      "started": "2026-09-07 04:47:23",
+      "finished": "2026-09-07 05:13:52",
+      "mtime": "2026-09-07T05:13:27.016034",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/COHU_Cohu_Inc_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/COHU_2026-09-07T04_47_24-07_00-f93b3bec56/COHU_Cohu_Inc_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 60234,
+          "sha256": "40485ade35bb98d31efc6e22d41957d81bdd7ae7f93abf7a07e45ca19d76d52d"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "COHU_Cohu_Inc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "RYCEY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\RYCEY_Rolls-Royce_Holdings_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 83064,
+      "chars": 39016,
+      "lines": 549,
+      "headings": 52,
+      "urls": 64,
+      "sha256": "f41debf574181936c8f42360174e7578a9e53251c634cc02752e5731d3914077",
+      "started": "2026-09-07 04:29:40",
+      "finished": "2026-09-07 05:15:16",
+      "mtime": "2026-09-07T05:14:55.264621",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/RYCEY_Rolls-Royce_Holdings_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/RYCEY_2026-09-07T04_29_41-07_00-85587013a9/RYCEY_Rolls-Royce_Holdings_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 73798,
+          "sha256": "2a1039055bbcb48e589b89f0d26e8185983693b596a183d4ed2c6a3cd30b9487"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "RYCEY_Rolls-Royce_Holdings_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "KEYS",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\KEYS_Keysight_Technologies_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 81156,
+      "chars": 38096,
+      "lines": 528,
+      "headings": 43,
+      "urls": 40,
+      "sha256": "88a3e2a23d5f870d534a716ba7b84b9972975bfbe984ddaec87127b78650c0bc",
+      "started": "2026-09-07 04:51:54",
+      "finished": "2026-09-07 05:20:15",
+      "mtime": "2026-09-07T05:19:51.046594",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/KEYS_Keysight_Technologies_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/KEYS_2026-09-07T04_51_55-07_00-1a49aa489a/KEYS_Keysight_Technologies_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 72804,
+          "sha256": "0660c8e3fc28422496d129b3bcd0a37e6c49742d3e43806f3d3faa52a8a929a5"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "KEYS_Keysight_Technologies_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "GEV",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\GEV_GE_Vernova_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 76989,
+      "chars": 38395,
+      "lines": 437,
+      "headings": 38,
+      "urls": 78,
+      "sha256": "45ea4a165d2eade49bf97fa3a17e4d8f91e7555ef90a7f110be350fa8a55141c",
+      "started": "2026-09-07 04:17:12",
+      "finished": "2026-09-07 05:23:10",
+      "mtime": "2026-09-07T05:22:29.763301",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/GEV_GE_Vernova_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/GEV_2026-09-07T04_17_13-07_00-6bf88965b3/GEV_GE_Vernova_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 71645,
+          "sha256": "c92a091f32e41efe638b56730c3f4f4647a9bd0f1073fa0c4c749dd1e79be11a"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "GEV_GE_Vernova_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "HTHIY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\HTHIY_Hitachi_Ltd_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 96208,
+      "chars": 45234,
+      "lines": 596,
+      "headings": 49,
+      "urls": 54,
+      "sha256": "3fd7c133359d375a824d0509f1f51bba240d584c85472dbbb2fedc068c53d72f",
+      "started": "2026-09-07 04:41:37",
+      "finished": "2026-09-07 05:24:45",
+      "mtime": "2026-09-07T05:24:16.158158",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/HTHIY_Hitachi_Ltd_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/HTHIY_2026-09-07T04_41_38-07_00-0ece78f02c/HTHIY_Hitachi_Ltd_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 61129,
+          "sha256": "86b1f897ef7c6d4b0fbd0ccadf9d4a1c5139ce4bc16bfd0499751b04edf6aa53"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "HTHIY_Hitachi_Ltd_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "TDY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\TDY_Teledyne_Technologies_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 79406,
+      "chars": 38258,
+      "lines": 519,
+      "headings": 44,
+      "urls": 39,
+      "sha256": "518ce03b538e4637d7381197fa95a2ac779f7c72c22d2fe084dccb57184b004e",
+      "started": "2026-09-07 05:00:00",
+      "finished": "2026-09-07 05:28:49",
+      "mtime": "2026-09-07T05:28:27.466216",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/TDY_Teledyne_Technologies_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/TDY_2026-09-07T05_00_01-07_00-db1c9dc5f8/TDY_Teledyne_Technologies_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 72265,
+          "sha256": "67f0480069e94e5e21f0e5dc5bbe0263dad6cc9a595fe5ec4f7c7ed09902b83a"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "TDY_Teledyne_Technologies_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "CAMT",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\CAMT_Camtek_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 66656,
+      "chars": 33150,
+      "lines": 431,
+      "headings": 46,
+      "urls": 99,
+      "sha256": "4fd0e4d6ff1bf5e9d85cfd3b57b1e7a6c38bb5a09e5d3af97ddb6caccc8c1c65",
+      "started": "2026-09-07 05:07:30",
+      "finished": "2026-09-07 05:29:09",
+      "mtime": "2026-09-07T05:28:52.923980",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/CAMT_Camtek_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/CAMT_2026-09-07T05_07_31-07_00-7c9a0c7d84/CAMT_Camtek_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 51586,
+          "sha256": "6cbeb89b06dc2ac10996bcbb380ff97c2df28f8d972ec734fe492afb7858280b"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "CAMT_Camtek_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "AEHR",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\AEHR_Aehr_Test_Systems_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 80434,
+      "chars": 38529,
+      "lines": 551,
+      "headings": 50,
+      "urls": 33,
+      "sha256": "1b5b4a2b5a6272286410a76dcff2484db7f9bddf72904f39c4207496efaefc38",
+      "started": "2026-09-07 04:46:39",
+      "finished": "2026-09-07 05:33:57",
+      "mtime": "2026-09-07T05:33:16.392998",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/AEHR_Aehr_Test_Systems_公司调研_2026-07-18.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/AEHR_2026-09-07T04_46_40-07_00-89178c76f8/AEHR_Aehr_Test_Systems_公司调研_2026-07-18.md",
+          "exists": true,
+          "bytes": 73977,
+          "sha256": "355e42ed36a2338b0fa37961c0f7970e251436063138c6d42da1081139301e09"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "AEHR_Aehr_Test_Systems_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "TE",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\TE_T1_Energy_Inc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 81042,
+      "chars": 38870,
+      "lines": 518,
+      "headings": 49,
+      "urls": 78,
+      "sha256": "da56ce70a8c7503c3fab90483f19844ab439f881cec5184b1e81aeea3a2e9635",
+      "started": "2026-09-07 04:42:10",
+      "finished": "2026-09-07 05:34:58",
+      "mtime": "2026-09-07T05:34:33.084073",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/电力_发电_能源_储能/TE_T1_Energy_Inc_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/电力_发电_能源_储能/备份/TE_2026-09-07T04_42_11-07_00-d03a0623f2/TE_T1_Energy_Inc_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 91640,
+          "sha256": "202ed1bf91a535fd424948ec43b4ec03d1fac6fddc2bc6a44f73076c80068b5f"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "TE_T1_Energy_Inc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ASX",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\ASX_ASE_Technology_Holding_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 79203,
+      "chars": 36648,
+      "lines": 547,
+      "headings": 49,
+      "urls": 26,
+      "sha256": "806e6fb07d91dd8bfaa42d831eeb845233e3346b0bde873e47a7af911d940208",
+      "started": "2026-09-07 04:47:13",
+      "finished": "2026-09-07 05:36:19",
+      "mtime": "2026-09-07T05:34:53.206250",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/ASX_ASE_Technology_Holding_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/ASX_2026-09-07T04_47_14-07_00-fba82dce9b/ASX_ASE_Technology_Holding_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 75346,
+          "sha256": "46d5ae4f67b00c24ad689c76cff66efe8d5a74c7ec25d2a4996ff677911f58d8"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ASX_ASE_Technology_Holding_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "KLIC",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\KLIC_Kulicke_Soffa_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 67988,
+      "chars": 30641,
+      "lines": 468,
+      "headings": 41,
+      "urls": 33,
+      "sha256": "5145704ece49c555c4f85d9fee85700201745995b413fc5cf7470d698b287f94",
+      "started": "2026-09-07 04:56:22",
+      "finished": "2026-09-07 05:36:25",
+      "mtime": "2026-09-07T05:35:28.212446",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/KLIC_Kulicke_Soffa_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/KLIC_2026-09-07T04_56_24-07_00-7af899822f/KLIC_Kulicke_Soffa_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 79391,
+          "sha256": "014058ede05598d4f12fff36e711012dd4a65a86b34cded0a6960c4f06cd6bf5"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "KLIC_Kulicke_Soffa_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "IMOS",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\IMOS_ChipMOS_Technologies_南茂科技_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 74107,
+      "chars": 32886,
+      "lines": 463,
+      "headings": 39,
+      "urls": 25,
+      "sha256": "775661a0d93b96f46f83f2409d8247b9987bb2c46c880ead076bcd7f021c9946",
+      "started": "2026-09-07 04:48:43",
+      "finished": "2026-09-07 05:36:34",
+      "mtime": "2026-09-07T05:35:34.001216",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/IMOS_ChipMOS Technologies 南茂科技_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/IMOS_2026-09-07T04_48_44-07_00-4b69fdb950/IMOS_ChipMOS Technologies 南茂科技_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 63013,
+          "sha256": "c58b61e51ded7bb7a8f4b2bb3df0f18b0ca0b8db326db3134e43fc127e2289ab"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "IMOS_ChipMOS_Technologies_南茂科技_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ASMVY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\ASMVY_ASMPT_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 65387,
+      "chars": 31463,
+      "lines": 520,
+      "headings": 37,
+      "urls": 44,
+      "sha256": "8a22cfec4652925a94a2ffc3694037ddb46c3c56938fcc49d45579fe9e479884",
+      "started": "2026-09-07 05:13:53",
+      "finished": "2026-09-07 05:36:53",
+      "mtime": "2026-09-07T05:36:00.266205",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/ASMVY_ASMPT_公司调研_2026-07-11.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/ASMVY_2026-09-07T05_13_54-07_00-4ced324a25/ASMVY_ASMPT_公司调研_2026-07-11.md",
+          "exists": true,
+          "bytes": 77839,
+          "sha256": "f08f9befe3a8014557da4d073f16b8b5bbc52837af44d67ca729841b897ab74d"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ASMVY_ASMPT_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "TER",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\TER_Teradyne_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 91480,
+      "chars": 44673,
+      "lines": 558,
+      "headings": 43,
+      "urls": 73,
+      "sha256": "3fd79da6861b82d57637247c44b5b2f2f4d2941abe617e49c0ea1113b7ed28c3",
+      "started": "2026-09-07 05:10:51",
+      "finished": "2026-09-07 05:40:13",
+      "mtime": "2026-09-07T05:38:46.056349",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/TER_Teradyne_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/TER_2026-09-07T05_10_53-07_00-d84ba2992e/TER_Teradyne_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 70800,
+          "sha256": "727658ea62df9a9bab4cc239c82777de4109f9ae62dac099f5601be3683caaa7"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "TER_Teradyne_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "PLAB",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\PLAB_Photronics_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 68180,
+      "chars": 31455,
+      "lines": 501,
+      "headings": 41,
+      "urls": 29,
+      "sha256": "202f829544283be28af837af49651677ae2059a66b48bbf29cd64a9d94736a7c",
+      "started": "2026-09-07 04:58:28",
+      "finished": "2026-09-07 05:40:39",
+      "mtime": "2026-09-07T05:40:08.883939",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/PLAB_Photronics_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/PLAB_2026-09-07T04_58_30-07_00-b17b923940/PLAB_Photronics_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 61197,
+          "sha256": "d994c67f3713427e24437c477b17966638695febd8d1c2cf675304cee5708844"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "PLAB_Photronics_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ALLE",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\ALLE_Allegion_plc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 73568,
+      "chars": 34502,
+      "lines": 452,
+      "headings": 42,
+      "urls": 53,
+      "sha256": "e7cb2c278cbe7180db1fa99e6ecdc4351400a3d3ab502df6d1cfdd3c4ed13907",
+      "started": "2026-09-07 05:20:15",
+      "finished": "2026-09-07 05:45:04",
+      "mtime": "2026-09-07T05:44:40.506568",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/ALLE_Allegion_plc_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/ALLE_2026-09-07T05_20_16-07_00-2750741dd0/ALLE_Allegion_plc_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 62320,
+          "sha256": "3e4f214e335cc866222041af64b54dd2a2da6ae691893bc8c18ccd8d49d37a85"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ALLE_Allegion_plc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "MICLF",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\MICLF_Mycronic_AB_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 80080,
+      "chars": 37398,
+      "lines": 532,
+      "headings": 46,
+      "urls": 38,
+      "sha256": "9a8f8c7679d5530772370f304bbfa0fc622d7a3700aaad4b720d027e895298d1",
+      "started": "2026-09-07 04:56:31",
+      "finished": "2026-09-07 05:45:30",
+      "mtime": "2026-09-07T05:44:58.667262",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/MICLF_Mycronic_AB_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/MICLF_2026-09-07T04_56_32-07_00-0c2f7a2f38/MICLF_Mycronic_AB_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 85671,
+          "sha256": "702b9340100d99ef5cc82fcff0e4d987442f14e0b79436d5be8dd74eedf26ff9"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "MICLF_Mycronic_AB_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "TMO",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\TMO_Thermo_Fisher_Scientific_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 78191,
+      "chars": 38724,
+      "lines": 547,
+      "headings": 35,
+      "urls": 56,
+      "sha256": "6af0d9a18aba4dd5b8ddb9f2637309f882aac0fedbca4a37fe125302cfab86bd",
+      "started": "2026-09-07 05:03:12",
+      "finished": "2026-09-07 05:45:37",
+      "mtime": "2026-09-07T05:45:16.368767",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/TMO_Thermo_Fisher_Scientific_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/TMO_2026-09-07T05_03_14-07_00-4880123ad8/TMO_Thermo_Fisher_Scientific_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 85292,
+          "sha256": "6a2d3fcee3b4ef3ead68b47fe33aa507db8bb2ccfc17cc2e01a8d60dafdb7bb7"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "TMO_Thermo_Fisher_Scientific_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ONTO",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\ONTO_Onto_Innovation_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 80115,
+      "chars": 39199,
+      "lines": 530,
+      "headings": 44,
+      "urls": 75,
+      "sha256": "f5e51746460243896f5005772c4f3cd5ccc341d6302afd8d18ae683a556cb0b0",
+      "started": "2026-09-07 04:57:01",
+      "finished": "2026-09-07 05:46:05",
+      "mtime": "2026-09-07T05:45:51.241353",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/ONTO_Onto_Innovation_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/ONTO_2026-09-07T04_57_02-07_00-80b21a6934/ONTO_Onto_Innovation_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 73553,
+          "sha256": "ae843f9a1883b1029cd87b973174f1eeec26be3153fbfa9194b4af4790f883e9"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ONTO_Onto_Innovation_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "DCI",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\DCI_Donaldson_Company_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 69111,
+      "chars": 31958,
+      "lines": 495,
+      "headings": 40,
+      "urls": 39,
+      "sha256": "4353afe89463a9ca7552a10f2d4720c523c08f8d89a6d755b3fb7c7d48d9a5e0",
+      "started": "2026-09-07 05:28:49",
+      "finished": "2026-09-07 05:48:01",
+      "mtime": "2026-09-07T05:47:39.982629",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/DCI_Donaldson_Company_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/DCI_2026-09-07T05_28_50-07_00-d48317adac/DCI_Donaldson_Company_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 56266,
+          "sha256": "bd91791905defef7afb646d31c2cb6fd0a7698875280e7f1c45a4e441b5906f5"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "DCI_Donaldson_Company_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "BESIY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\BESIY_BE_Semiconductor_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 82915,
+      "chars": 39294,
+      "lines": 566,
+      "headings": 49,
+      "urls": 39,
+      "sha256": "4a8130d0c6ca3117eb73987f1abea4c7f521d95172f6f2d22a8515aef6a9f375",
+      "started": "2026-09-07 05:15:16",
+      "finished": "2026-09-07 05:48:53",
+      "mtime": "2026-09-07T05:48:30.881011",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/BESIY_BE_Semiconductor_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/BESIY_2026-09-07T05_15_17-07_00-9b587d9ac7/BESIY_BE_Semiconductor_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 76812,
+          "sha256": "a20006688186b2f5bb3a9d53feb89e4e0388184c61f1d4ae3e3c0ac97bba4be1"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "BESIY_BE_Semiconductor_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "FORM",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\FORM_FormFactor_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 73191,
+      "chars": 33910,
+      "lines": 483,
+      "headings": 37,
+      "urls": 32,
+      "sha256": "6034fd8e07ee4d3d377fbd87ba60ee7c0ce5d3dd9266b157742be7cc8513914e",
+      "started": "2026-09-07 05:08:10",
+      "finished": "2026-09-07 05:49:26",
+      "mtime": "2026-09-07T05:48:09.024759",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/FORM_FormFactor_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/FORM_2026-09-07T05_08_10-07_00-0b9cc8295d/FORM_FormFactor_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 68393,
+          "sha256": "58abb6d8875ced688c06022c94c450ce7350785a7fd73cb84b6138e9f03ae23f"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "FORM_FormFactor_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "FIX",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\FIX_Comfort_Systems_USA_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 65178,
+      "chars": 29449,
+      "lines": 479,
+      "headings": 44,
+      "urls": 27,
+      "sha256": "23c0b519d183a17e42e81ff761b7782de102033fa222a5855b48bfceb81f4f12",
+      "started": "2026-09-07 05:29:09",
+      "finished": "2026-09-07 05:49:44",
+      "mtime": "2026-09-07T05:49:24.124741",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/FIX_Comfort_Systems_USA_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/FIX_2026-09-07T05_29_10-07_00-e43461330a/FIX_Comfort_Systems_USA_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 69994,
+          "sha256": "d8d511f79f70109a1adccc6f5b99002afa451219cb009afe0d183bae3524804c"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "FIX_Comfort_Systems_USA_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "CARR",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\CARR_Carrier_Global_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 72458,
+      "chars": 34858,
+      "lines": 516,
+      "headings": 46,
+      "urls": 45,
+      "sha256": "14d9b638857f8aaa0ac71ca7e446373fb0a26209c673e85eb0729e489e8b30ef",
+      "started": "2026-09-07 05:23:10",
+      "finished": "2026-09-07 05:50:30",
+      "mtime": "2026-09-07T05:49:58.301800",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/CARR_Carrier_Global_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/CARR_2026-09-07T05_23_11-07_00-890d36bb2f/CARR_Carrier_Global_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 61002,
+          "sha256": "b2a2927149473859302453e80b17a20cfbec446b0fa09d29d8a6a89775c0b525"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "CARR_Carrier_Global_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "AMKR",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\AMKR_Amkor_Technology_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 76249,
+      "chars": 33497,
+      "lines": 505,
+      "headings": 47,
+      "urls": 26,
+      "sha256": "e5329bed083f44ce294bda71a1e64367996e06d6bc0ac0006de7e7ed4511db35",
+      "started": "2026-09-07 05:07:00",
+      "finished": "2026-09-07 05:51:32",
+      "mtime": "2026-09-07T05:50:35.516400",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/AMKR_Amkor_Technology_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/AMKR_2026-09-07T05_07_01-07_00-4f7a69564f/AMKR_Amkor_Technology_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 64107,
+          "sha256": "46a27c80a2d939adf1fc74e28bc259e42be977984be5dcc6bb42d932c661697b"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "AMKR_Amkor_Technology_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ATEYY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\ATEYY_Advantest_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 71210,
+      "chars": 34084,
+      "lines": 419,
+      "headings": 44,
+      "urls": 65,
+      "sha256": "b3c04a0ed9b797b8d1d3ab54d9b6a4c56d0b7761d1bce78df530f8abe3ce965a",
+      "started": "2026-09-07 05:11:18",
+      "finished": "2026-09-07 05:54:40",
+      "mtime": "2026-09-07T05:54:25.514450",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/封测_检测_计量_光罩/ATEYY_Advantest_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/封测_检测_计量_光罩/备份/ATEYY_2026-09-07T05_11_20-07_00-973837bc79/ATEYY_Advantest_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 57327,
+          "sha256": "0bca2536920f5a120a166178dda4bc21011da61680fe65329e385116b83384cd"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ATEYY_Advantest_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "PH",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\PH_Parker-Hannifin_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 70561,
+      "chars": 32680,
+      "lines": 490,
+      "headings": 43,
+      "urls": 31,
+      "sha256": "f5bfb293061d1b6403db64fb94476ca4242ba08f841f19e1571d0814d42e6777",
+      "started": "2026-09-07 05:36:19",
+      "finished": "2026-09-07 06:00:43",
+      "mtime": "2026-09-07T06:00:02.415320",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/PH_Parker-Hannifin_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/PH_2026-09-07T05_36_20-07_00-4465d76c05/PH_Parker-Hannifin_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 85330,
+          "sha256": "1c5d9e5aa1783686c47c9ff314b815ac48cd458b0015392d7632cbee58ca9273"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "PH_Parker-Hannifin_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "TT",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\TT_Trane_Technologies_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 69377,
+      "chars": 34479,
+      "lines": 513,
+      "headings": 44,
+      "urls": 49,
+      "sha256": "fb99002287f42c81763b5f0b52d5af53a399836db37d07bb1b35fe40425c4380",
+      "started": "2026-09-07 05:40:13",
+      "finished": "2026-09-07 06:00:57",
+      "mtime": "2026-09-07T06:00:41.009662",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/TT_Trane_Technologies_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/TT_2026-09-07T05_40_14-07_00-344e4360c0/TT_Trane_Technologies_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 72442,
+          "sha256": "6de641773ebbd2c674ea13a4c9a07d3d110f063424e8ba01a8632ee8ec5041bc"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "TT_Trane_Technologies_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "CAT",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\CAT_Caterpillar_Inc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 79469,
+      "chars": 37900,
+      "lines": 494,
+      "headings": 32,
+      "urls": 41,
+      "sha256": "89e57ea7465bbdc3df23a524eff56271ff6592bcf3419d0cfda2e2d5b082d935",
+      "started": "2026-09-07 05:24:45",
+      "finished": "2026-09-07 06:01:37",
+      "mtime": "2026-09-07T06:00:06.921716",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/CAT_Caterpillar_Inc_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/CAT_2026-09-07T05_24_47-07_00-31747d1a11/CAT_Caterpillar_Inc_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 62565,
+          "sha256": "0f1c8ac286cc46e598b33af03ab2c1b574f513c4c7c9482d47b84935ae647c48"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "CAT_Caterpillar_Inc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "MSI",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\MSI_Motorola_Solutions_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 78315,
+      "chars": 37125,
+      "lines": 545,
+      "headings": 48,
+      "urls": 52,
+      "sha256": "6247679568da7bf4ba812e0438039cd8585adbc0e6408272e3b01f213c038735",
+      "started": "2026-09-07 05:34:58",
+      "finished": "2026-09-07 06:02:02",
+      "mtime": "2026-09-07T06:00:55.778510",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/MSI_Motorola Solutions_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/MSI_2026-09-07T05_34_59-07_00-fa26eb29d3/MSI_Motorola Solutions_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 71485,
+          "sha256": "f11316eb73597f78a9271f170200c5722072f487d667838d43c1297ede8a0fc4"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "MSI_Motorola_Solutions_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "FTV",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\FTV_Fortive_Corporation_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 84216,
+      "chars": 40332,
+      "lines": 589,
+      "headings": 50,
+      "urls": 54,
+      "sha256": "2c57c9f0d92958e15e8eac58a00aac22c0498a339259ec40244f7c2599e1d78a",
+      "started": "2026-09-07 05:33:57",
+      "finished": "2026-09-07 06:05:14",
+      "mtime": "2026-09-07T06:04:38.886254",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/FTV_Fortive_Corporation_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/FTV_2026-09-07T05_33_58-07_00-2c35ba7728/FTV_Fortive_Corporation_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 80614,
+          "sha256": "168cdc8f585b082a80a4ec5b4dcf40a6aa222dc3a7d7a8a437ce7d24e8206ead"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "FTV_Fortive_Corporation_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "AAON",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\AAON_AAON_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 67426,
+      "chars": 32039,
+      "lines": 471,
+      "headings": 42,
+      "urls": 34,
+      "sha256": "616c6a03dfe38a98dad67558711dd2218784bf6360708065fec90f2dd1605800",
+      "started": "2026-09-07 05:46:05",
+      "finished": "2026-09-07 06:06:33",
+      "mtime": "2026-09-07T06:06:03.769555",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/AAON_AAON_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/AAON_2026-09-07T05_46_06-07_00-09a38c7309/AAON_AAON_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 60912,
+          "sha256": "f17644c3a826527a3b5b27b11a9729ff81590dbd9fd6b04feb7aa37bf82afccb"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "AAON_AAON_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "RKLB",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\RKLB_Rocket_Lab_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 79735,
+      "chars": 38016,
+      "lines": 537,
+      "headings": 42,
+      "urls": 46,
+      "sha256": "047766ff2f6245a713360eae6cf384c3f50f61ebbaff2f1a4b10f6cde6d0594f",
+      "started": "2026-09-07 05:36:34",
+      "finished": "2026-09-07 06:06:46",
+      "mtime": "2026-09-07T06:05:48.424599",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/RKLB_Rocket_Lab_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/RKLB_2026-09-07T05_36_35-07_00-271c2a9bb4/RKLB_Rocket_Lab_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 62969,
+          "sha256": "9d63ab3074f2c02555a8fd025da4573c2f45314b57b8615aeaa22fe54847278f"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "RKLB_Rocket_Lab_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "TSLA",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\TSLA_Tesla_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 91139,
+      "chars": 44608,
+      "lines": 524,
+      "headings": 44,
+      "urls": 120,
+      "sha256": "ecf126edeae7519638b6675bbe68bddbebc54d4a13dec97c79db7428629f953c",
+      "started": "2026-09-07 05:36:53",
+      "finished": "2026-09-07 06:08:44",
+      "mtime": "2026-09-07T06:08:18.364315",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/TSLA_Tesla_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/TSLA_2026-09-07T05_36_54-07_00-29a1844d7e/TSLA_Tesla_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 70407,
+          "sha256": "b89c57b324125207669557d2481851248e0ef6fe2a92ff7a0fd0089b07f4072f"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "TSLA_Tesla_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "VRT",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\VRT_Vertiv_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 91603,
+      "chars": 46995,
+      "lines": 587,
+      "headings": 50,
+      "urls": 84,
+      "sha256": "88ed91f20f95b42a0a7bf5758e627fd73199c89a0f9f00a72801714a06da3181",
+      "started": "2026-09-07 05:40:39",
+      "finished": "2026-09-07 06:10:53",
+      "mtime": "2026-09-07T06:10:30.322065",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/VRT_Vertiv_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/VRT_2026-09-07T05_40_40-07_00-2a45e9a785/VRT_Vertiv_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 66039,
+          "sha256": "b67bb859cf57c3b513a620608e840a2f8764260641fe17c2e1635a67af6a6a3d"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "VRT_Vertiv_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "EME",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\EME_EMCOR_Group_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 72423,
+      "chars": 33238,
+      "lines": 481,
+      "headings": 45,
+      "urls": 30,
+      "sha256": "47e8eb1748a7a1a4f6972f8b1083a0aee0a40c237edebc20aad68c8b3cbff093",
+      "started": "2026-09-07 05:48:53",
+      "finished": "2026-09-07 06:11:03",
+      "mtime": "2026-09-07T06:10:27.252754",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/EME_EMCOR_Group_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/EME_2026-09-07T05_48_54-07_00-a9a4eb129e/EME_EMCOR_Group_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 62370,
+          "sha256": "8fb174151dd319e3d6d205209ac8dbb5ed6d92724b91042dd69f8e7f6cfc6948"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "EME_EMCOR_Group_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "MOD",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\MOD_Modine_Manufacturing_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 77221,
+      "chars": 36557,
+      "lines": 563,
+      "headings": 46,
+      "urls": 36,
+      "sha256": "03dbb4d1c7e4eb7c093e8bc5faa8b0c08f346d7514449beee2f223b2119d78c5",
+      "started": "2026-09-07 05:45:37",
+      "finished": "2026-09-07 06:13:13",
+      "mtime": "2026-09-07T06:12:46.072277",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/MOD_Modine_Manufacturing_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/MOD_2026-09-07T05_45_39-07_00-9a7ce239cc/MOD_Modine_Manufacturing_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 51791,
+          "sha256": "36e6dadf8be9fa61a1866cde6740f547b90815ed266e6d68180a8ac3a4eddee6"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "MOD_Modine_Manufacturing_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "JCI",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\JCI_Johnson_Controls_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 81824,
+      "chars": 39670,
+      "lines": 547,
+      "headings": 41,
+      "urls": 54,
+      "sha256": "dc1652b0739c3c3e7b44669bac3bf0f63c65b8202308fff529bfe14af799336f",
+      "started": "2026-09-07 05:45:30",
+      "finished": "2026-09-07 06:14:07",
+      "mtime": "2026-09-07T06:13:52.350808",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/JCI_Johnson_Controls_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/JCI_2026-09-07T05_45_32-07_00-dbed2230cf/JCI_Johnson_Controls_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 69233,
+          "sha256": "a043510fe31bba007c97858d0d4744b380b571c5af2b952286beff0d9ba771e2"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "JCI_Johnson_Controls_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "AMAT",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\晶圆制造_前道设备\\AMAT_Applied_Materials_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 67304,
+      "chars": 32022,
+      "lines": 434,
+      "headings": 42,
+      "urls": 45,
+      "sha256": "937b59ace996c3555d38867e1dd503531473dff361fb3af61c0fb73c9ecb4abf",
+      "started": "2026-09-07 05:54:40",
+      "finished": "2026-09-07 06:14:25",
+      "mtime": "2026-09-07T06:13:41.257592",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/晶圆制造_前道设备/AMAT_Applied_Materials_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/晶圆制造_前道设备/备份/AMAT_2026-09-07T05_54_41-07_00-9757a2d3fb/AMAT_Applied_Materials_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 63616,
+          "sha256": "e1b979a6444ac4c0ea0a64be66f376abe184dd6d5d96ec1bf17d8f404616306a"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "AMAT_Applied_Materials_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "IESC",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\IESC_IES_Holdings_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 82306,
+      "chars": 37434,
+      "lines": 554,
+      "headings": 51,
+      "urls": 41,
+      "sha256": "2274999f09af1a92649646f192f641ef8ea3ee2d05a9ac86786f2f55c5d62107",
+      "started": "2026-09-07 05:48:01",
+      "finished": "2026-09-07 06:15:06",
+      "mtime": "2026-09-07T06:14:37.769374",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/IESC_IES_Holdings_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/IESC_2026-09-07T05_48_02-07_00-241d8b39e8/IESC_IES_Holdings_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 61407,
+          "sha256": "2f61e0a4beccfc5461b5655249e24d91b482d9e4ee44dff461e196b318893d6c"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "IESC_IES_Holdings_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "MYRG",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\MYRG_MYR_Group_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 71370,
+      "chars": 32575,
+      "lines": 469,
+      "headings": 39,
+      "urls": 33,
+      "sha256": "4fb7a2a4328dbe4a9af54fa2c5233d3d61516c85acd55f030090234f4c6a8e31",
+      "started": "2026-09-07 05:49:26",
+      "finished": "2026-09-07 06:15:25",
+      "mtime": "2026-09-07T06:15:03.188402",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/MYRG_MYR_Group_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/MYRG_2026-09-07T05_49_27-07_00-d475c213b7/MYRG_MYR_Group_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 56773,
+          "sha256": "a5bd1344ca406e26904bee6d880be1c1dc1520b0a8dc4af99d4fbd65602acfaf"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "MYRG_MYR_Group_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "DOV",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\DOV_Dover_Corporation_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 99934,
+      "chars": 49968,
+      "lines": 623,
+      "headings": 54,
+      "urls": 111,
+      "sha256": "8aaba535259005b914b1ef76e406887125abb7a3f11540872c6ac918cb4d1751",
+      "started": "2026-09-07 05:45:04",
+      "finished": "2026-09-07 06:17:13",
+      "mtime": "2026-09-07T06:16:43.293005",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/DOV_Dover_Corporation_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/DOV_2026-09-07T05_45_05-07_00-cce7214887/DOV_Dover_Corporation_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 70930,
+          "sha256": "10113ab6729d1e427aaad74e65789451f24392896c82743a0d4a98be518f8855"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "DOV_Dover_Corporation_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ACLS",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\晶圆制造_前道设备\\ACLS_Axcelis_Technologies_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 74673,
+      "chars": 37259,
+      "lines": 468,
+      "headings": 45,
+      "urls": 72,
+      "sha256": "873674b14fe77f5a686df0f8bde3d8137fe55d52919d533472ba4d283d955302",
+      "started": "2026-09-07 05:50:30",
+      "finished": "2026-09-07 06:17:50",
+      "mtime": "2026-09-07T06:17:03.364182",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/晶圆制造_前道设备/ACLS_Axcelis_Technologies_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/晶圆制造_前道设备/备份/ACLS_2026-09-07T05_50_31-07_00-29ba6b4972/ACLS_Axcelis_Technologies_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 64789,
+          "sha256": "a25ee40a9f84a2a8dec7f9e5f962daf98bda162f5a7f6c99c754e4d2a24eb668"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ACLS_Axcelis_Technologies_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ACMR",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\晶圆制造_前道设备\\ACMR_ACM_Research_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 81754,
+      "chars": 35743,
+      "lines": 558,
+      "headings": 47,
+      "urls": 29,
+      "sha256": "1a2be3fd4e7299267dee0506dc82175c66a6b5dc142ff3c29d606c41087ae042",
+      "started": "2026-09-07 05:51:33",
+      "finished": "2026-09-07 06:19:56",
+      "mtime": "2026-09-07T06:19:34.494339",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/晶圆制造_前道设备/ACMR_ACM_Research_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/晶圆制造_前道设备/备份/ACMR_2026-09-07T05_51_33-07_00-30f9694629/ACMR_ACM_Research_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 60056,
+          "sha256": "c9404ad8be49777143b07e9936d74928059830683911c5c43fbf83999264dd8a"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ACMR_ACM_Research_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ASMIY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\晶圆制造_前道设备\\ASMIY_ASM_International_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 66379,
+      "chars": 30961,
+      "lines": 503,
+      "headings": 45,
+      "urls": 29,
+      "sha256": "96a54796d16440dd8fa6656e82e157e9bc383c21f9ed2ed8c001edff2ee9938d",
+      "started": "2026-09-07 06:00:43",
+      "finished": "2026-09-07 06:22:01",
+      "mtime": "2026-09-07T06:21:11.204918",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/晶圆制造_前道设备/ASMIY_ASM_International_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/晶圆制造_前道设备/备份/ASMIY_2026-09-07T06_00_44-07_00-fa3e9e3d03/ASMIY_ASM_International_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 66001,
+          "sha256": "25311a14bcceb471f3daafeb55b7b319821541dcc4f3a32404d8539e40027120"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ASMIY_ASM_International_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "PNR",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\PNR_Pentair_plc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 77381,
+      "chars": 35891,
+      "lines": 562,
+      "headings": 45,
+      "urls": 43,
+      "sha256": "851844ad9f14e285cb15d372d1bf93f0c17cee4f3e555a84db41299b1ab6a968",
+      "started": "2026-09-07 05:36:25",
+      "finished": "2026-09-07 06:22:48",
+      "mtime": "2026-09-07T06:22:33.594139",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/PNR_Pentair_plc_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/PNR_2026-09-07T05_36_27-07_00-08611fc40f/PNR_Pentair_plc_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 69142,
+          "sha256": "e63391391ae16a20bbcc99dc75de6290ac1bc745d106bc9e0c8d571a8f96812c"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "PNR_Pentair_plc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "DSCSY",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\晶圆制造_前道设备\\DSCSY_DISCO_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 67897,
+      "chars": 30730,
+      "lines": 480,
+      "headings": 36,
+      "urls": 34,
+      "sha256": "9d172546794d1b80da4444e0a26b0f7c113b1927041332b2505c03b4a69abc6c",
+      "started": "2026-09-07 06:01:37",
+      "finished": "2026-09-07 06:26:00",
+      "mtime": "2026-09-07T06:25:10.047466",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/晶圆制造_前道设备/DSCSY_DISCO_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/晶圆制造_前道设备/备份/DSCSY_2026-09-07T06_01_38-07_00-0271404a2f/DSCSY_DISCO_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 60231,
+          "sha256": "32578dc5a3e517248c54aabb9e8b5f202ac48fc07b4b3d6e40c97d95cfa45dfe"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "DSCSY_DISCO_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "SPACEX",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\SPACEX_SpaceX_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 89924,
+      "chars": 40771,
+      "lines": 602,
+      "headings": 48,
+      "urls": 36,
+      "sha256": "5954db3707ed114580aa53858f94c182075098693cf544bedfb17e9af25cddde",
+      "started": "2026-09-07 05:49:44",
+      "finished": "2026-09-07 06:26:28",
+      "mtime": "2026-09-07T06:25:14.458536",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/SPACEX_SpaceX_公司调研_2026-09-07.md",
+          "to": "基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/备份/SPACEX_2026-09-07T05_49_45-07_00-fdae76ab88/SPACEX_SpaceX_公司调研_2026-09-07.md",
+          "exists": true,
+          "bytes": 75579,
+          "sha256": "c2cfbbb567e6133ddee77bed6a92e4638ade6ad4e36dd6341f731299378d4814"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "SPACEX_SpaceX_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "ASML",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\晶圆制造_前道设备\\ASML_ASML_Holding_NV_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 88294,
+      "chars": 40927,
+      "lines": 638,
+      "headings": 52,
+      "urls": 45,
+      "sha256": "da233633d3988e58a2a2f75411f97643203893c00725cebd49a7a5a23141631e",
+      "started": "2026-09-07 06:00:57",
+      "finished": "2026-09-07 06:37:57",
+      "mtime": "2026-09-07T06:37:16.485835",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/晶圆制造_前道设备/ASML_ASML_Holding_NV_公司调研_2026-07-18.md",
+          "to": "基本面/公司调研/晶圆制造_前道设备/备份/ASML_2026-09-07T06_00_58-07_00-6d0f46c3f5/ASML_ASML_Holding_NV_公司调研_2026-07-18.md",
+          "exists": true,
+          "bytes": 71777,
+          "sha256": "345d891c342527a662a5d3936a5742a4e9c6b38d8e6ee3c3c3f5c0b00f77704b"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "ASML_ASML_Holding_NV_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "KLAC",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\晶圆制造_前道设备\\KLAC_KLA_Corporation_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 92496,
+      "chars": 43098,
+      "lines": 598,
+      "headings": 49,
+      "urls": 36,
+      "sha256": "65b28d77824c89fe6fa436874d68c52c5f67f943d068b961ebe45e5d5b220103",
+      "started": "2026-09-07 06:05:14",
+      "finished": "2026-09-07 06:38:13",
+      "mtime": "2026-09-07T06:37:13.901873",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/晶圆制造_前道设备/KLAC_KLA_Corporation_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/晶圆制造_前道设备/备份/KLAC_2026-09-07T06_05_15-07_00-8700e24961/KLAC_KLA_Corporation_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 72692,
+          "sha256": "e85e288945bc0862549079f0baed2058fdb3798ba03fd5e051eef1eebf94b042"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "KLAC_KLA_Corporation_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "GFS",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\晶圆制造_前道设备\\GFS_GlobalFoundries_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 89683,
+      "chars": 45052,
+      "lines": 518,
+      "headings": 52,
+      "urls": 112,
+      "sha256": "1378a2a15dc6596eafcb519f8eaa3b899907270cb8b6e6c955847e2cb6ab7ad3",
+      "started": "2026-09-07 06:02:02",
+      "finished": "2026-09-07 06:38:57",
+      "mtime": "2026-09-07T06:37:40.519251",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/晶圆制造_前道设备/GFS_GlobalFoundries_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/晶圆制造_前道设备/备份/GFS_2026-09-07T06_02_04-07_00-a0997f78ab/GFS_GlobalFoundries_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 69657,
+          "sha256": "b97b05ee2b397f5fa2a5d867c26e7cbf26ab9622a26d8537eb4c0ed152249a40"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "GFS_GlobalFoundries_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "TSEM",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\晶圆制造_前道设备\\TSEM_Tower_Semiconductor_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 81644,
+      "chars": 40073,
+      "lines": 587,
+      "headings": 45,
+      "urls": 47,
+      "sha256": "27f7b2fd1a6e06a2c421d6a09681e20d9f663b45f14a82946b3b7534bc1c0631",
+      "started": "2026-09-07 06:08:44",
+      "finished": "2026-09-07 06:40:01",
+      "mtime": "2026-09-07T06:39:35.485938",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/晶圆制造_前道设备/TSEM_Tower_Semiconductor_公司调研_2026-07-18.md",
+          "to": "基本面/公司调研/晶圆制造_前道设备/备份/TSEM_2026-09-07T06_08_45-07_00-2f859c8a0f/TSEM_Tower_Semiconductor_公司调研_2026-07-18.md",
+          "exists": true,
+          "bytes": 63367,
+          "sha256": "52838e921e00ba0ab02c2bb4dc6a9febdf8678e7a830c4805a43be24d25ef7ab"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "TSEM_Tower_Semiconductor_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "LRCX",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\晶圆制造_前道设备\\LRCX_Lam_Research_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 76316,
+      "chars": 37506,
+      "lines": 496,
+      "headings": 42,
+      "urls": 48,
+      "sha256": "713f70627dd40e247766b2de819dac28cd636e92cf805329cc9a020ec6173f97",
+      "started": "2026-09-07 06:06:33",
+      "finished": "2026-09-07 06:41:52",
+      "mtime": "2026-09-07T06:40:26.956724",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/晶圆制造_前道设备/LRCX_Lam_Research_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/晶圆制造_前道设备/备份/LRCX_2026-09-07T06_06_34-07_00-9f4b044352/LRCX_Lam_Research_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 62387,
+          "sha256": "6c19176b760ae5bf0a0440bab2811c50f406adb481f9e8bc8107ce7ce5490989"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "LRCX_Lam_Research_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "UMC",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\晶圆制造_前道设备\\UMC_United_Microelectronics_联华电子_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 86610,
+      "chars": 47744,
+      "lines": 510,
+      "headings": 42,
+      "urls": 187,
+      "sha256": "28742de6e00cde56899656639d680ddda3fd5fa83d77991a58d5b6230e4e43c1",
+      "started": "2026-09-07 06:13:13",
+      "finished": "2026-09-07 06:42:24",
+      "mtime": "2026-09-07T06:41:47.239458",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/晶圆制造_前道设备/UMC_United_Microelectronics_联华电子_公司调研_2026-07-31.md",
+          "to": "基本面/公司调研/晶圆制造_前道设备/备份/UMC_2026-09-07T06_13_14-07_00-e669d94ff0/UMC_United_Microelectronics_联华电子_公司调研_2026-07-31.md",
+          "exists": true,
+          "bytes": 69983,
+          "sha256": "86093d16644c11916560d19ea729d9ae52e1293dee19fd4feb8ef145eff2d057"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "UMC_United_Microelectronics_联华电子_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "TSM",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\晶圆制造_前道设备\\TSM_台积电_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 81079,
+      "chars": 37265,
+      "lines": 544,
+      "headings": 47,
+      "urls": 43,
+      "sha256": "46740f9f83708233d745e6fca7ab1cf3f0a6b09be39781716334e9d88aa71e61",
+      "started": "2026-09-07 06:10:53",
+      "finished": "2026-09-07 06:42:27",
+      "mtime": "2026-09-07T06:42:09.497613",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/晶圆制造_前道设备/TSM_台积电_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/晶圆制造_前道设备/备份/TSM_2026-09-07T06_10_54-07_00-4d7eeeee09/TSM_台积电_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 60559,
+          "sha256": "00817221ec4d4c3de255e93f2e4804df9bb910565170c79030170911ded3caae"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "TSM_台积电_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "MKSI",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\晶圆制造_前道设备\\MKSI_MKS_Inc_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 83071,
+      "chars": 38345,
+      "lines": 543,
+      "headings": 47,
+      "urls": 52,
+      "sha256": "4a89a5c045ed584d83321ba8a0625b54b81e665f71db25b8ceac7d3b29513b45",
+      "started": "2026-09-07 06:06:46",
+      "finished": "2026-09-07 06:42:51",
+      "mtime": "2026-09-07T06:42:17.147995",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/晶圆制造_前道设备/MKSI_MKS_Inc_公司调研_2026-08-19.md",
+          "to": "基本面/公司调研/晶圆制造_前道设备/备份/MKSI_2026-09-07T06_06_47-07_00-1e8b7bace8/MKSI_MKS_Inc_公司调研_2026-08-19.md",
+          "exists": true,
+          "bytes": 64316,
+          "sha256": "f3f2d6ff4c95dc74983f22a50acfe73eae93b9854a17e623bce27b18e5c73cd6"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "MKSI_MKS_Inc_公司调研_2026-09-07.md"
+      ]
+    },
+    {
+      "subject": "UCTT",
+      "output": "D:\\drive\\Investment\\基本面\\公司调研\\晶圆制造_前道设备\\UCTT_Ultra_Clean_Holdings_公司调研_2026-09-07.md",
+      "exists": true,
+      "bytes": 75275,
+      "chars": 35431,
+      "lines": 521,
+      "headings": 43,
+      "urls": 39,
+      "sha256": "2c527e4f711107337b45b04aec8126f8ac66c777d2753a10c32e90b1c3f1cd05",
+      "started": "2026-09-07 06:11:03",
+      "finished": "2026-09-07 06:44:26",
+      "mtime": "2026-09-07T06:44:02.428556",
+      "attempts": 1,
+      "backup": [
+        {
+          "from": "基本面/公司调研/晶圆制造_前道设备/UCTT_Ultra_Clean_Holdings_公司调研_2026-07-12.md",
+          "to": "基本面/公司调研/晶圆制造_前道设备/备份/UCTT_2026-09-07T06_11_04-07_00-4b4f35bd12/UCTT_Ultra_Clean_Holdings_公司调研_2026-07-12.md",
+          "exists": true,
+          "bytes": 71304,
+          "sha256": "208ec2b2f13e7975b670bde553c545094ac3d7d0457171883f6d2c5bdd56e47e"
+        }
+      ],
+      "prepareEvents": 1,
+      "formalFiles": [
+        "UCTT_Ultra_Clean_Holdings_公司调研_2026-09-07.md"
+      ]
+    }
+  ]
+}

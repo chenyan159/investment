@@ -1,0 +1,173 @@
+# 公司收入传导与价值传导评估：GE Vernova
+
+报告日期：2026-06-12  
+评估对象：`GEV / GE Vernova`  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM，定义为 2026Q2-2027Q1 四个季度的经营窗口；FY2026 指引、2028 目标、项目全周期金额和长期 run-rate 只作补充口径。  
+资料边界：公司事实层使用 `公司调研/` 与 GE Vernova 官方财报、SEC 文件、IR 材料；行业需求层使用 `行业调研/` 与公开行业/客户资料。本文不做全公司排序，不给投资评级，不判断股价区间，不使用金融市场价格或估值倍数作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径是 NTM `2026Q2-2027Q1`。公司当前显性锚是 2026Q1 后上调的 FY2026 指引：收入 `$44.5-45.5B`、调整 EBITDA margin `12-14%`、自由现金流 `$6.5-7.5B`；NTM 需要在已披露 FY2026 指引基础上加入 2027Q1 的延续增长，但不得把 2028 目标提前当成基准。
+- 当前收入基准、指引和 run-rate：2025 收入 `$38.1B`、调整 EBITDA `$3.2B`、调整 EBITDA margin `8.4%`；2026Q1 收入 `$9.339B`、调整 EBITDA `$896M`、调整 EBITDA margin `9.6%`、FCF `$4.791B`。Q1 FCF 主要受订单预付款和 working capital 时点影响，不能直接年化。
+- 重要产品/业务线：`HA/F/7HA/9HA 重型燃机与发电岛`、`LM2500XPRESS 航改燃机/快速电力`、`Gas Power/Nuclear/Power services 与 LTSA`、`Prolec GE 变压器`、`Grid Solutions：switchgear/HVDC/AC substation/turnkey substation`、`GridOS/EMS/SCADA/Power Conversion & Storage/MV UPS/控制软件`、`Wind`、`BWRX-300/SMR 与长期低碳电力期权`。
+- NTM 公司收入四情景：悲观 `$43-45B`；基准 `$47-49B`；乐观 `$50-54B`；极度乐观 `$55B+`。基准不是简单采用 2028 目标，而是 FY2026 指引正常兑现、Power 与 Electrification backlog 转收入、Wind 亏损不再扩大。
+- 利润或 EBITDA 四情景：悲观调整 EBITDA `$4.6-5.2B`；基准 `$5.8-6.6B`；乐观 `$7.0-8.5B`；极度乐观 `$9B+`。利润弹性主要来自 Power/Electrification 价格、服务 attach、Prolec margin、Grid Solutions mix 和 Wind 亏损收窄，不来自单纯 AI 叙事。
+- 最大传导瓶颈：订单与 backlog 已强，瓶颈从需求转向 `EPC/施工承诺、燃气/许可/排放、变压器与 switchgear 产能、燃机 slot 与供应链、客户项目 FID、收入确认节奏`。
+- 最大利润率变量：Power 与 Electrification 的设备订单能否以高价、高服务 attach 和可控成本交付；Wind 的 Offshore/关税/质量成本是否继续吞噬集团 margin。
+- 最大现金流变量：slot reservation、客户预付款和合同负债目前强化 FCF；若交付延迟、库存提前堆积或项目验收后移，FCF 可能从强正贡献转成营运资本压力。
+- 可信度：基准为中高；乐观为中；极度乐观为低到中。原因是订单和 backlog 证据强，但 NTM 收入确认仍受长周期设备交付、EPC 和项目许可限制。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| HA/F/7HA/9HA 重型燃机与发电岛主设备 | NTM 估算 `$13-16B`，Power 分部核心设备池 | 约 `27-33%` | 公司收入和订单最大增量之一；utility、IPP、工业和数据中心共同抢 slot | A/B：Power FY2026 指引、Gas backlog+slot `100GW`、新增合同/slot 披露 | 进入基准；按可见 backlog、slot 转订单和设备出货节奏确认 | 数据中心 dedicated CCGT、氢混/CCS 只作补充 |
+| LM2500XPRESS 航改燃机/快速电力 | NTM 基准 `$0.8-1.5B` | 约 `2-3%` | 小基数高弹性；AI 数据中心 bridge power 标杆 | B：Crusoe `29` 台近 `1GW` 订单、交付与产品披露 | 进入基准但只纳入已披露订单和保守后续复制 | 大规模 AI bridge power 标准化进入乐观/极度乐观 |
+| Gas Power/Nuclear/Power services 与 LTSA | NTM 基准 `$7.5-8.5B` | 约 `16-18%` | 高毛利、粘性、现金流质量核心 | A/B：installed base、服务 backlog、Power margin 指引 | 进入基准；按 installed base、服务续约和新增装机 attach 处理 | AI 数据中心 SLA/availability 服务包为长期增量 |
+| Prolec GE 变压器 | NTM 基准 `$3.2-3.8B` | 约 `7-8%` | 北美变压器硬瓶颈；增强 Electrification margin | A/B：收购已完成，FY2026 指引含约 `$3B` Prolec，交易模型显示 2025 收入约 `$3B`、约 `25%` 调整 EBITDA margin | 进入基准；按全年并表和低双位数增长处理 | 产能扩张、数据中心 approved vendor 深化进入乐观 |
+| Grid Solutions：switchgear/HVDC/AC substation/turnkey substation | NTM 基准 `$10.5-12.5B` | 约 `22-26%` | 数据中心并网、电网扩容和 HVDC 的主要收入化路径 | A/B：Electrification FY2026 指引、Q1 订单 `$7.1B`、equipment backlog `$38.6B`、AWS 框架 | 进入基准；按 backlog、B2B 和项目交付折扣 | 多 hyperscaler 标准化站点框架进入乐观 |
+| GridOS/EMS/SCADA/Power Conversion & Storage/MV UPS/控制软件 | NTM 基准 `$1.5-2.3B` | 约 `3-5%` | 小基数高利润率/高 attach 潜力；决定微电网、电网稳定和动态负载控制 | B/C：现有软件与 Power Conversion 业务、Bernstein 会议披露 MV UPS/stability block 投资 | 小比例进入基准；新增 stability block 和高密 AI 微电网只进乐观 | 800VDC/MVDC、AI load scheduling、VPP 为 2027+ 期权 |
+| Wind：Onshore/Offshore/service | NTM 基准 `$6.8-7.4B` | 约 `14-16%` | 不是增长主线，但决定集团利润质量下限 | A：分部收入、FY2026 指引低双位数下滑和约 `$400M` EBITDA loss | 进入基准作为抵消项；不得用 Power/Electrification 强势掩盖 | Onshore 订单恢复和 Offshore 风险出清为乐观但非主线 |
+| BWRX-300/SMR 与长期低碳电力期权 | NTM 收入小，工程/服务为主，估算 `$0.1-0.4B` | `<1%` | 长期战略价值高，NTM 财务贡献低 | C/D：项目开发、工程、许可和管理层披露 | 不作为 NTM 基准增量主力，仅保留小额工程/服务 | 2030s 数据中心 24/7 clean power 期权 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 GEV 份额、收入确认、利润率或公司汇总。相对预期的基准是 2026Q1 后管理层指引、Gas backlog+slot `100GW` 并预计年底 `110GW+`、Electrification Q1 订单和本地行业资料中的 AI 数据中心电力需求。绝对变化用最能解释产品需求的单位表示；无法严谨换算到收入时写需求单位而不强行美元化。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| HA/F/7HA/9HA 重型燃机与发电岛 | 2026Q1 Gas equipment backlog+slot `100GW`；公司预计 2026 年底至少 `110GW` | 只增至 `103-108GW`；部分数据中心/utility FID 后移 | `110-118GW`，符合公司目标和正常 slot 转订单 | `120-130GW`，更多 utility/data center/工业项目锁 2030-2031 slot | `135GW+`，多个 GW 级项目提前 FID 且愿接受长交期 | 较当前 `+3GW` 到 `+35GW+` | 悲观低于当前目标；基准符合；乐观高于；极度乐观明显上修 | 正向：电力需求、reserve margin、数据中心、LNG/工业共振。反证：EPC、燃气、空气许可、社区反对、2029/2030 pedestal 未准备好 |
+| LM2500XPRESS 航改燃机/快速电力 | Crusoe `29` 台、近 `1GW`，单台约 `35MW`，5 分钟快启 | NTM 无新增 GW 级订单，仅执行已披露项目 | 新增 `0.5-1.0GW` bridge power 需求 | 新增 `1-2GW`，更多 AI campus 采用标准包 | 新增 `3GW+`，aero 成为 AI bridge power 主流路径 | 新增 `0-3GW+` | 基准为已披露订单兑现加少量复制；极度乐观需新客户大单 | 正向：time-to-power、模块化、SCR、95% 工厂组装。反证：往复式发动机、SOFC、utility PPA 替代；许可和燃气管线 |
+| Gas Power/Nuclear/Power services 与 LTSA | 约 `7,000` 台燃气轮机 installed base；服务占 backlog `>55%` | outage 延后、客户推迟升级，服务需求低个位数增长 | 服务需求中个位数到高个位数增长，新增设备 attach 正常 | 价格、parts、升级、remote monitoring 和 LTSA attach 同步上行 | AI/utility SLA 强化，availability 服务包非线性增加 | 服务工单、LTSA attach 和升级包上升 | 基准符合 installed base；乐观高于当前服务节奏 | 反证：客户延后检修、第三方服务商抢低端、部件供应紧张 |
+| Prolec GE 变压器 | Prolec 2025 约 `$3B` 收入、约 `25%` 调整 EBITDA margin；2026 指引含约 `$3B` Prolec | 大型变压器交付/测试延迟，需求仍强但确认慢 | 低双位数需求增长，数据中心与 utility 共同排队 | 高双位数增长，客户愿以预付款锁产能 | `20%+` 需求上修，关键型号长期短缺加剧 | 订单/slot 与 backlog 增长 `MSD` 至 `20%+` | 基准符合交易模型；乐观需产能和价格证据 | 反证：铜钢成本、绕组/测试瓶颈、UL/IEEE/utility 认证周期 |
+| Grid Solutions：switchgear/HVDC/AC substation/turnkey substation | Electrification Q1 订单 `$7.1B`、B2B 约 `2.5x`、equipment backlog `$38.6B`；data center orders `$2.4B` | B2B 回落到 `1.2-1.5x`，大项目验收后移 | B2B 保持 `1.5-2.0x`，backlog 稳步转收入 | 多站点 substation 框架和 HVDC/STATCOM 订单加速，B2B `2x+` | 数据中心、utility 和中东/亚洲电网同步超预期，backlog 再显著跃升 | backlog 绝对增加 `$0-15B+` | 基准已经强，不因热门叙事继续上调；乐观要有客户/订单证据 | 正向：AWS SFA、数据中心并网、HVDC、synchronous condenser。反证：项目许可、EPC、客户预算冲突 |
+| GridOS/EMS/SCADA/Power Conversion & Storage/MV UPS/控制软件 | GridOS、EMS/SCADA、Power Conversion，管理层披露 MV UPS/stability block 投资 | 数据中心采用停留在咨询/试点，新增订单小 | 软件和控制随 substation/BESS/微电网小比例 attach | MV UPS、stability block、PCS/control 随高密 AI 负载进入项目包 | 800VDC/MVDC 和 AI load scheduling 提前商业化，软件成为标准接口 | attach rate 从低个位数提升到中高个位数 | 基准只能小额纳入；乐观需项目化证据 | 反证：Schneider/ETAP、Siemens、ABB、Eaton、Vertiv、Fluence/Tesla 竞争强 |
+| Wind：Onshore/Offshore/service | FY2026 指引低双位数下滑、约 `$400M` EBITDA loss | 订单和交付继续弱，亏损扩大 | 低双位数下滑、亏损接近指引 | Onshore repowering/service 改善，收入小降或持平 | 订单明显恢复但 NTM 概率低 | 收入增长从 `-15%` 到 `+5%` | 基准是拖累项，不是成长项 | 反证：关税、Offshore 合同损失、质量成本；正向：Onshore volume leverage |
+| BWRX-300/SMR 与长期低碳电力 | Darlington 等项目处于工程/许可/供应链准备；NTM 商业批量收入小 | 工程/许可进展慢，NTM 贡献接近零 | 小额工程、许可、服务收入 | 新增 early engineering / 合同单元，增强 2027+ 可见性 | 首个明确 AI 数据中心 SMR 绑定项目出现 | NTM 收入变化多为 `$0-0.5B` | 不允许进入 NTM 主线 | 2030s 价值高，但没有 NTM 大额收入确认路径 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断需求能否进入 GEV 的 NTM 收入表，以及当前可收入化基数；不预测增长和利润率。A 级证据为已披露收入、分部收入和正式指引；B 级为订单、backlog、正式合同和客户项目；C 级为管理层披露、产品路线和产能规划；D/E 不进入 NTM 基准收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| HA/F/7HA/9HA 重型燃机与发电岛 | Power FY2026 有机收入增长 `16-18%`、Q1 Power 收入 `$4.971B`、订单 `$10.008B` | 直接收入；数据中心部分直接/间接混合 | 设备毛利受价格、产能利用率和成本影响；服务 attach 提升生命周期利润 | `$11-13B` | `$13-16B` | `$16-19B` | `$20B+`，但受产能与验收限制 | 基准符合指引；乐观高于当前 Power run-rate | A/B | 是 | 正式分部收入、指引、backlog/slot | NTM 主力收入；不得把全部 Gas backlog 直接当 NTM 收入 |
+| LM2500XPRESS 航改燃机/快速电力 | Crusoe `29` 台近 `1GW`；19 台于 2025Q2 订购，10 台于 2024-12 订购 | 直接收入 | 小基数、高紧迫性，项目工程/许可影响确认 | `$0.5-0.9B` | `$0.8-1.5B` | `$1.5-2.5B` | `$3B+` | 基准为已披露订单转收入；乐观需新客户 | B | 是，保守 | 正式订单和产品交付路径 | 进入基准但不扩展到未披露 pipeline |
+| Gas Power/Nuclear/Power services 与 LTSA | installed base、服务 backlog、Power margin 指引 | 直接收入，长期服务 | 高粘性、高毛利、现金流质量好 | `$6.8-7.5B` | `$7.5-8.5B` | `$8.5-9.5B` | `$10B+` | 基准符合服务正常增长 | A/B | 是 | 服务 backlog、installed base 和分部 margin | NTM 利润质量核心 |
+| Prolec GE 变压器 | FY2026 Electrification 指引含约 `$3B` Prolec；Prolec 2025 约 `$3B` 收入 | 直接收入 | 变压器高需求、高 backlog、约 `25%` stand-alone adjusted EBITDA margin 交易模型 | `$2.8-3.2B` | `$3.2-3.8B` | `$3.8-4.5B` | `$4.5B+` | 基准符合并表和低双位数增长；乐观需扩产兑现 | A/B | 是 | 收购完成、正式指引、交易模型 | NTM 基准核心；Prolec 整合风险只在执行层处理 |
+| Grid Solutions：switchgear/HVDC/AC substation/turnkey substation | Electrification FY2026 收入 `$14.0-14.5B`，Q1 收入 `$2.959B`，equipment backlog `$38.6B` | 直接收入；AWS/数据中心为直接项目和框架订单 | 中高利润；HVDC、GIS、substation 与工程接口影响 margin | `$9-10.5B` | `$10.5-12.5B` | `$12.5-15B` | `$15B+` | 基准符合订单转收入；乐观高于当前确认节奏 | A/B | 是 | 正式分部收入、订单、backlog、AWS 框架 | NTM 收入化路径清楚，但 backlog 转收入受长交期限制 |
+| GridOS/EMS/SCADA/Power Conversion & Storage/MV UPS/控制软件 | Electrification 内部小业务，管理层披露 Power Conversion、Grid Software、MV UPS/stability block | 直接与附加收入并存 | 软件高毛利；PCS/硬件较低；系统 attach 提升利润质量 | `$1.0-1.5B` | `$1.5-2.3B` | `$2.3-3.5B` | `$4B+` | 基准只纳入既有业务；新架构只进乐观 | B/C | 小比例是 | 现有业务 + 管理层可验证披露 | 基准保守；800VDC/MVDC 和 AI 调度进入附录/乐观 |
+| Wind：Onshore/Offshore/service | FY2026 指引低双位数下滑、约 `$400M` EBITDA loss；Q1 Wind 收入 `$1.432B` | 直接收入但非 AI 电力瓶颈核心 | 亏损和项目风险抵消集团利润 | `$6.0-6.8B` | `$6.8-7.4B` | `$7.4-8.0B` | `$8B+` | 基准符合指引；乐观不能当集团主要增长 | A | 是，作为抵消项 | 正式分部收入和指引 | 必须纳入公司汇总，防止只看强业务 |
+| BWRX-300/SMR 与长期低碳电力 | 工程、许可、早期服务；未披露 NTM 大额收入 | 直接小额、长期期权 | NTM 利润无法可靠量化 | `$0-0.1B` | `$0.1-0.4B` | `$0.4-0.8B` | `$1B+` 仅在重大 early award 时 | 基准不是当前预期主力 | C/D | 仅小额 | 工程/许可进展，没有大额 NTM 商业收入 | 不进入 NTM 基准增量主线 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求和收入基数出发，逐项判断 NTM 内能贡献多少收入和利润。利润贡献为产品/分部层面 EBITDA 或经营利润方向的区间估算，不等同公司调整 EBITDA；公司层面还需扣除集团费用、交易/重组、D&A、税务等。所有数字是经营传导估算，不是估值倍数。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| HA/F/7HA/9HA 重型燃机与发电岛 | 悲观产品 | `$11-13B` | `$1.7-2.2B` | 低于 Power 指引；项目成本和延迟压制 | 低于当前预期 | backlog 强但 EPC/FID 延迟 | 保留为下行情景 | EPC、燃气、许可、客户推迟 pedestal |
+| HA/F/7HA/9HA 重型燃机与发电岛 | 基准产品 | `$13-16B` | `$2.3-3.0B` | 接近 Power `17-19%` segment margin | 符合当前预期 | Power FY2026 指引、100GW backlog+slot | 保留 | 设备出货和验收节奏 |
+| HA/F/7HA/9HA 重型燃机与发电岛 | 乐观产品 | `$16-19B` | `$3.0-3.8B` | 价格、利用率和服务 attach 改善 | 高于当前预期 | 2030/2031 slot 被锁、价格上行 | 保留但需订单验证 | 长交期可能只增加 backlog 不增加 NTM 收入 |
+| HA/F/7HA/9HA 重型燃机与发电岛 | 极度乐观产品 | `$20B+` | `$4B+` | 非线性扩张需产能和高价同时成立 | 明显高于预期 | 多个 GW 级 FID 和工厂供应链兑现 | 下移为乐观上限 | NTM 产能、EPC 和收入确认限制 |
+| LM2500XPRESS 航改燃机/快速电力 | 悲观产品 | `$0.5-0.9B` | `$0.08-0.18B` | 项目成本吸收部分价格 | 低于预期 | 只执行已披露订单 | 保留 | 许可、SCR、燃气和现场 commissioning |
+| LM2500XPRESS 航改燃机/快速电力 | 基准产品 | `$0.8-1.5B` | `$0.15-0.35B` | 小幅扩张 | 符合预期 | Crusoe 29 台、近 1GW、5 分钟快启 | 保留 | 新订单不可随意外推 |
+| LM2500XPRESS 航改燃机/快速电力 | 乐观产品 | `$1.5-2.5B` | `$0.3-0.6B` | 高利用率和标准化改善 | 高于预期 | 新增 1-2GW bridge power | 保留但可信度中 | 往复式发动机和 SOFC 抢最快交付 |
+| LM2500XPRESS 航改燃机/快速电力 | 极度乐观产品 | `$3B+` | `$0.7B+` | 高毛利需标准包和稀缺 slot | 明显高于预期 | 多客户复制 Crusoe 模式 | 下移为乐观上限 | NTM 内新增客户、permit、燃气证据不足 |
+| Gas Power/Nuclear/Power services 与 LTSA | 悲观产品 | `$6.8-7.5B` | `$1.4-1.8B` | 仍高于设备，但增长慢 | 略低于预期 | installed base 支撑 | 保留 | 客户推迟检修、parts 供应 |
+| Gas Power/Nuclear/Power services 与 LTSA | 基准产品 | `$7.5-8.5B` | `$1.8-2.3B` | 高毛利、稳定 | 符合预期 | 服务 backlog `>55%`、7K 燃机 installed base | 保留 | 不把新增设备服务收入提前到 NTM |
+| Gas Power/Nuclear/Power services 与 LTSA | 乐观产品 | `$8.5-9.5B` | `$2.3-2.9B` | 服务 mix 和价格提升 | 高于预期 | LTSA attach、升级包、remote monitoring | 保留 | 服务能力和 outage 排期 |
+| Gas Power/Nuclear/Power services 与 LTSA | 极度乐观产品 | `$10B+` | `$3B+` | 服务年金加速 | 明显高于预期 | AI/utility availability SLA 标准化 | 下移为乐观上限 | 新装机转服务有时间滞后 |
+| Prolec GE 变压器 | 悲观产品 | `$2.8-3.2B` | `$0.55-0.75B` | margin 仍好但整合/库存压制 | 低于预期 | 变压器需求强 | 保留 | 交付、型式试验、铜钢成本 |
+| Prolec GE 变压器 | 基准产品 | `$3.2-3.8B` | `$0.75-0.95B` | 接近交易模型，高于集团平均 | 符合预期 | FY2026 指引含 `$3B` Prolec | 保留 | 并表、PPA 库存调整和扩产节奏 |
+| Prolec GE 变压器 | 乐观产品 | `$3.8-4.5B` | `$0.95-1.2B` | 价格和产能利用率提升 | 高于预期 | 北美数据中心/utility 长交期 | 保留 | 产能扩张未必在 NTM 兑现 |
+| Prolec GE 变压器 | 极度乐观产品 | `$4.5B+` | `$1.2B+` | 关键型号溢价 | 明显高于预期 | 预付款、关键 slot、AVL 加速 | 下移为乐观上限 | 认证和测试周期不可压缩 |
+| Grid Solutions：switchgear/HVDC/AC substation/turnkey substation | 悲观产品 | `$9-10.5B` | `$1.3-1.8B` | 项目 mix 和执行风险压制 | 低于预期 | backlog 强但交付慢 | 保留 | HVDC/变电项目验收、EPC 接口 |
+| Grid Solutions：switchgear/HVDC/AC substation/turnkey substation | 基准产品 | `$10.5-12.5B` | `$1.8-2.5B` | 接近 Electrification `18-20%` margin | 符合预期 | Q1 orders `$7.1B`、equipment backlog `$38.6B` | 保留 | backlog 不能全部 NTM 化 |
+| Grid Solutions：switchgear/HVDC/AC substation/turnkey substation | 乐观产品 | `$12.5-15B` | `$2.5-3.2B` | 高压设备、substation、service mix 改善 | 高于预期 | AWS SFA、数据中心设备订单 `$2.4B` | 保留 | 客户预算和项目许可 |
+| Grid Solutions：switchgear/HVDC/AC substation/turnkey substation | 极度乐观产品 | `$15B+` | `$3.2B+` | 平台化电力接入方案 | 明显高于预期 | 多 hyperscaler 框架和 HVDC 大单 | 下移为乐观上限 | 产能、工程人员、现场施工 |
+| GridOS/EMS/SCADA/Power Conversion & Storage/MV UPS/控制软件 | 悲观产品 | `$1.0-1.5B` | 无法可靠量化，方向为小幅正贡献 | mix 偏硬件，margin 一般 | 低于预期 | 现有业务可见 | 保留 | 份额和产品边界披露不足 |
+| GridOS/EMS/SCADA/Power Conversion & Storage/MV UPS/控制软件 | 基准产品 | `$1.5-2.3B` | 无法可靠量化，方向为中等正贡献 | 软件 attach 抬升 | 符合预期 | GridOS、Power Conversion、MV UPS 投资 | 保留 | 新产品商业化时间 |
+| GridOS/EMS/SCADA/Power Conversion & Storage/MV UPS/控制软件 | 乐观产品 | `$2.3-3.5B` | `$0.4-0.8B` 粗估 | 软件/控制占比提升 | 高于预期 | stability block、BESS/PCS/control 打包 | 保留但可信度中 | 竞争强、客户架构未标准化 |
+| GridOS/EMS/SCADA/Power Conversion & Storage/MV UPS/控制软件 | 极度乐观产品 | `$4B+` | `$1B+` 粗估 | 高毛利软件平台化 | 明显高于预期 | 800VDC/MVDC 和 AI 调度提前 | 移入附录/仅作跟踪 | NTM 客户、价格、交付证据不足 |
+| Wind：Onshore/Offshore/service | 悲观产品 | `$6.0-6.8B` | `-$0.7B` 至 `-$0.5B` | 亏损扩大 | 低于预期 | Q1 Wind margin `-26.7%` | 保留 | Offshore contract、关税、质量成本 |
+| Wind：Onshore/Offshore/service | 基准产品 | `$6.8-7.4B` | 约 `-$0.4B` | 符合 FY2026 指引 | 符合预期 | FY2026 低双位数下滑、约 `$400M` loss | 保留 | 不能忽略 Wind 抵消项 |
+| Wind：Onshore/Offshore/service | 乐观产品 | `$7.4-8.0B` | `-$0.3B` 至 breakeven | 亏损收窄 | 高于预期 | Onshore service/repowering 改善 | 保留但非主线 | 订单恢复不确定 |
+| Wind：Onshore/Offshore/service | 极度乐观产品 | `$8B+` | 正贡献 | 订单恢复和成本同时改善 | 明显高于预期 | pipeline 转订单 | 下移为乐观上限 | 政策/关税/Offshore 风险 |
+| BWRX-300/SMR 与长期低碳电力 | 悲观产品 | `$0-0.1B` | 无法可靠量化 | 小 | 低于预期 | 工程期权 | 保留 | 许可和客户 FID |
+| BWRX-300/SMR 与长期低碳电力 | 基准产品 | `$0.1-0.4B` | 无法可靠量化 | 小 | 符合预期 | 工程/服务 | 保留为附属收入 | 不作为 NTM 主线 |
+| BWRX-300/SMR 与长期低碳电力 | 乐观产品 | `$0.4-0.8B` | 无法可靠量化 | 小到中 | 高于预期 | early engineering awards | 移入附录 | 收入确认路径不清 |
+| BWRX-300/SMR 与长期低碳电力 | 极度乐观产品 | `$1B+` | 无法可靠量化 | 长期向好 | 明显高于预期 | AI 数据中心 SMR 项目绑定 | 移入附录/仅作跟踪 | 没有 NTM 商业批量时间表 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、调整 EBITDA/净利润和自由现金流方向。汇总前已剔除重复：Power generation、Electrification substation/transformer、BESS/controls 可能服务同一数据中心项目，不能把客户总 CapEx、多供应商订单和项目全周期金额都计入 GEV NTM 收入。公司未提供 NTM GAAP 经营利润率和净利润指引，因此经营利润率列以调整 EBITDA margin 为主，并注明 GAAP 口径无法可靠量化。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$43-45B` | 较 2025 收入 `+13-18%`；较 TTM 约 `+9-14%` | 低于 FY2026 指引年化和当前 backlog 转收入路径；仍可能绝对增长 | `19-20.5%` | 调整 EBITDA margin `10-11.5%`；GAAP 经营利润率无法可靠量化 | 调整 EBITDA `$4.6-5.2B`；GAAP 净利受交易收益/税项影响不可可靠量化 | FCF `$4.5-5.5B`，预付款放缓或库存上升 | 中 | Wind 亏损扩大、燃机/变压器交付慢、EPC/FID 后移、Prolec 整合低于预期 |
+| 基准公司 | `$47-49B` | 较 2025 收入 `+23-29%`；较 TTM 约 `+19-24%` | FY2026 指引正常兑现并延续到 2027Q1；Power/Electrification 高可信业务转收入 | `21-22.5%` | 调整 EBITDA margin `12-14%` | 调整 EBITDA `$5.8-6.6B`；调整净利润无法可靠量化 | FCF `$6.0-7.5B`，接近 FY2026 指引但不机械年化 Q1 | 中高 | 长周期 backlog 转收入、工程验收、工作资本和 Wind 抵消 |
+| 乐观公司 | `$50-54B` | 较 2025 收入 `+31-42%`；较 TTM 约 `+27-37%` | 高于当前预期，且不是单一小基数项目造成；Power/Electrification 同时超预期 | `22-24%` | 调整 EBITDA margin `14-16%` | 调整 EBITDA `$7.0-8.5B`；净利润仍需税率/D&A/一次性项校准 | FCF `$7.5-9.0B`，预付款和 margin 同步强 | 中 | 产能、EPC、关键材料、客户项目许可；乐观收入必须转成高毛利收入 |
+| 极度乐观公司 | `$55B+` | 较 2025 收入 `+44%+`；较 TTM `+40%+` | 2028 收入路径被提前验证；多个核心传导环节同时突破 | `24%+` | 调整 EBITDA margin `16-18%+`，仍低于长期 `20%` 目标 | 调整 EBITDA `$9B+`；净利润无法可靠量化 | FCF `$9B+`，但大额预付款质量需交付验证 | 低到中 | NTM 产能和收入确认是硬约束；极度乐观不能只靠 SMR、800VDC 或单一数据中心订单 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一个风险只在实际影响层级处理一次；例如数据中心项目许可影响需求/FID 和收入确认，不再在公司汇总重复惩罚多次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 公司订单 `$18.3B`、有机 `+71%`，backlog `$163B` | 收入基数、公司汇总 | 支撑 NTM 基准收入高于 2025 和 TTM run-rate | 订单价格和 backlog margin 支撑 margin 扩张 | 预付款和合同负债强化 FCF，但也增加交付责任 | 基准保留，悲观不下移到收入萎缩 |
+| Gas backlog+slot `100GW`，年底目标 `110GW+` | 需求、收入基数、产品贡献 | 支撑 Power 设备基准和乐观 | 高价 slot 与服务 attach 支撑 Power margin | 转订单、出货、验收决定现金转收入 | 基准保留；极度乐观下移为乐观上限 |
+| Electrification Q1 data center equipment orders `$2.4B`，超过 2025 全年 | 需求、收入基数 | 证明数据中心电气设备不是纯叙事 | 若 mix 为 transformers/switchgear/substation，利润质量强 | 订单到收入存在交期；客户项目延迟会推后 | 乐观保留；基准只纳入 A/B 级可见转收入 |
+| Prolec GE 已完成剩余 50% 收购，FY2026 指引含约 `$3B` 收入 | 收入基数、利润率 | 强化 Electrification 基数 | 交易模型约 `25%` EBITDA margin，提升组合质量 | 并表、库存 fair value、扩产和质量是执行变量 | 基准保留 |
+| Services backlog `>55%` 与约 `7K` 燃气轮机 installed base | 利润率、现金流 | 服务收入增长不如设备爆发，但可见度高 | 高毛利、粘性和现金流质量强 | outage、parts、LTSA attach 决定兑现 | 基准保留，提升基准可信度 |
+| Wind FY2026 低双位数下滑且约 `$400M` EBITDA loss | 公司组合 | 抵消 Power/Electrification 增长 | 集团 margin 下限风险 | Offshore/关税/质量成本可能吃现金 | 悲观保留；不得重复惩罚到 Power/Electrification |
+| 数据中心需求强但项目 realization rate 有折扣 | 需求、收入确认 | 限制把 hyperscaler 总 CapEx 直接转为 GEV 收入 | 若项目延迟，固定成本和库存压力上升 | permit、community、EPC、fuel、utility study 是执行门槛 | 极度乐观下移；乐观需客户/订单/时间表 |
+| EPC 和施工承诺是燃机项目 gating item | 收入确认、执行可信度 | backlog 可能存在但 NTM 收入后移 | 低利用率、现场成本、延期违约会压 margin | Pedestal 未准备好则设备不能交付/验收 | 悲观保留，不在需求层重复扣减 |
+| GridOS/MV UPS/stability block、800VDC/MVDC 等新产品 | 产品贡献、利润率 | NTM 基准收入小 | 长期可能高毛利 | 当前客户、价格、收入确认证据不足 | 移入附录/仅作跟踪，少量现有业务保留 |
+| SMR/BWRX-300 | 远期期权 | NTM 收入小 | 长期结构性价值高 | 许可、供应链和 FID 长周期 | 仅作跟踪，不进入 NTM 基准增量 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 需求仍增长，但收入确认和 margin 低于当前预期 | backlog `$163B`、Gas `100GW`、Electrification backlog `$38.6B` 防止收入大幅下滑 | Wind 亏损、EPC/FID 后移、Prolec 整合、项目许可、库存和成本 | 保留 | 下行情景：收入 `$43-45B`、调整 EBITDA `$4.6-5.2B` | 中 | 数据中心项目延迟只在收入确认/执行层处理，不再同时压低所有需求 |
+| 基准 | FY2026 指引和可见 backlog 正常兑现，2027Q1 延续增长 | 正式指引、Q1 订单、backlog、Prolec 并表、服务 backlog | GAAP 净利受 Prolec remeasurement 扭曲；Q1 FCF 不能年化；Wind 仍亏损 | 保留 | 最可能情景：收入 `$47-49B`、调整 EBITDA `$5.8-6.6B` | 中高 | 不把 Wind 风险重复惩罚到 Power/Electrification；也不把 Q1 FCF 直接年化 |
+| 乐观 | Power/Electrification 收入和 margin 同步高于当前路径 | 数据中心设备订单 `$2.4B`、AWS SFA、Crusoe、Prolec、MV UPS/stability block | 订单到收入长交期；客户项目 realization rate；竞争者分流 | 保留 | 上行情景：收入 `$50-54B`、调整 EBITDA `$7.0-8.5B` | 中 | 同一数据中心项目的燃机、变电、BESS/control 不能重复计算 |
+| 极度乐观 | 需求、公司捕获、利润率和执行同时突破 | 多 GW 数据中心电力、utility/IPP/FID、变压器和燃机 slot 稀缺、服务 attach | NTM 产能和验收限制；SMR/800VDC 多为远期期权；Wind 不一定同步改善 | 下移 | 作为 NTM 上限和附录跟踪：收入 `$55B+`、调整 EBITDA `$9B+` | 低到中 | 不因 2028 目标、项目全周期金额或客户总预算而提前确认 NTM 收入 |
+
+## 8. 结论
+
+- 最可能情景：基准情景。GEV 在 NTM 内最可能把 FY2026 指引正常兑现并延续到 2027Q1，形成 `$47-49B` 收入和 `$5.8-6.6B` 调整 EBITDA 的经营路径。这个结论来自 A/B 级证据：已披露分部收入、正式 FY2026 指引、总 backlog `$163B`、Gas backlog+slot `100GW`、Electrification equipment backlog `$38.6B`、data center equipment orders `$2.4B`、Prolec 并表和服务 backlog。
+- NTM 收入结论：GEV 的收入传导不是“AI 行业增速 = 公司收入增速”，而是 `数据中心/电网/工业电力需求 -> 燃机 slot / 变压器 / switchgear / substation / software/control 订单 -> backlog -> 设备交付、现场验收和服务 attach -> 分部收入`。基准收入主要由 Power 与 Electrification 驱动，Wind 是明确抵消项。
+- 利润/现金流结论：利润质量优于单纯设备周期，因为服务 backlog、Prolec 变压器 margin、Grid Solutions mix 和价格纪律共同改善；但 2026Q1 FCF 的一部分来自预付款和 working capital 时点，现金流质量必须跟交付进度、库存和合同负债后续释放一起看。
+- 主要传导瓶颈：需求端最硬的是数据中心与电网电力需求；公司端最硬的是 `EPC/施工准备、燃气/许可、关键设备产能、Prolec 整合、Wind 亏损、收入确认`。如果设备 slot 继续增长但客户项目无法开工，backlog 会继续强，但 NTM 收入和 margin 不能同步上修。
+- 乐观情景成立条件：Gas backlog+slot 继续明显高于 `110GW` 年底目标；Electrification data center orders 连续多个季度维持 `$2B+` 量级或大幅转收入；Prolec 收入和 margin 接近交易模型；Wind 亏损不扩大；Power/Electrification price/mix 足以抵消材料、人工、D&A 和项目成本。
+- 极度乐观情景成立条件：多个 hyperscaler/utility/IPP 项目在 NTM 内同时完成 FID、燃气/许可/EPC 和设备 PO；GEV 同时捕获发电主设备、变电设备、控制软件和服务 attach；margin 向 2028 `20%` adjusted EBITDA margin 路径提前靠近；Wind 至少不继续拖累。
+- 悲观情景触发条件：Gas slot 增长低于 `110GW` 年底目标或转订单慢；data center equipment orders 在 Q2/Q3 明显回落；Prolec 交付、库存 fair value 或扩产低于预期；Wind 亏损超过 `$400M`；客户项目因 permit、community、EPC、燃气或融资后移，导致 backlog 不转收入。
+- 后续跟踪数据：Gas backlog+slot GW、slot 转订单 GW、设备出货 GW、Electrification orders 与 B2B、data center equipment orders、equipment backlog、Prolec revenue/margin、Power 与 Electrification segment EBITDA margin、Wind EBITDA loss、contract liabilities/deferred revenue、inventory、FCF 与 capex/R&D、EPC/permit/FID 项目进展、AWS/Crusoe/Chevron/NRG 等客户项目里程碑。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：GE Vernova 最新正式季度数据为 2026Q1，发布/备案日期 2026-04-22；行业资料和外部需求资料更新至 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - GE Vernova 2026Q1 results：收入 `$9.339B`、订单 `$18.3B`、调整 EBITDA `$896M`、adjusted EBITDA margin `9.6%`、FCF `$4.791B`、backlog `$163B`、Gas backlog+slot `100GW`、FY2026 指引 `$44.5-45.5B`、adjusted EBITDA margin `12-14%`、FCF `$6.5-7.5B`。来源：https://www.gevernova.com/news/press-releases/ge-vernova-reports-first-quarter-2026-financial 与 SEC 8-K：https://www.sec.gov/Archives/edgar/data/1996810/000199681026000063/gevpressrelease1q26.htm
+  - GE Vernova 2025 results：2025 revenue `$38.068B`、adjusted EBITDA `$3.2B`、adjusted EBITDA margin `8.4%`、FCF `$3.7B`、backlog `$150B`。来源：https://www.gevernova.com/news/press-releases/ge-vernova-reports-fourth-quarter-full-year-2025-financial-results
+  - Prolec GE acquisition：2025 revenue 约 `$3B`、adjusted EBITDA margin 约 `25%`、低双位数增长、强化北美 grid equipment。来源：https://www.gevernova.com/news/press-releases/ge-vernova-fully-acquire-prolec-ge-joint-venture
+  - GE Vernova investor page：约 `25%` 全球发电使用 GE Vernova 技术，约 `7K` gas turbines installed，约 `59K` wind turbines installed，services backlog `>55%`。来源：https://www.gevernova.com/investors
+  - Bernstein Strategic Decisions Conference 2026 transcript：管理层称 backlog 中约 `20-25%` 与 data center 相关，EPC/施工承诺是燃机项目重要 gating item，并披露 MV UPS/stability block 投资方向。来源：https://www.gevernova.com/sites/default/files/ge-vernova-bernstein-strategic-decisions-conference-2026.pdf
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - 2028 目标和长期路径只作为补充，不进入 NTM 基准：公司先前提出 2028 revenue `$56B`、adjusted EBITDA margin `20%`、cumulative FCF 至少 `$24B` 的路径；本文极度乐观只把其作为 NTM 上限校验，不把 2028 目标提前确认。
+  - SMR/BWRX-300、800VDC/MVDC、高级微电网控制、AI load scheduling 和长期 clean firm power 是远期期权；NTM 基准只纳入已有工程/服务或已验证业务的小额收入。
+- 主要行业需求来源：
+  - DOE/LBNL data center electricity：美国数据中心用电 2023 年约 `176TWh`、占美国用电 `4.4%`，预计 2028 年 `325-580TWh`、占 `6.7-12%`。来源：https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers
+  - Goldman Sachs 2026-05-20 data center power demand：美国数据中心 power demand 预计 2025 `31GW`、2026 `41GW`、2027 `66GW`，且未来一到两年计划容量只有约 `50-60%` 可能按时投运。来源：https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027
+  - GE Vernova/AWS SFA：GE Vernova 为 AWS 数据中心提供 turnkey substation、major electrical equipment、project management、construction support，并探索 power generation/services。来源：https://www.gevernova.com/news/press-releases/ge-vernova-aws-accelerate-global-energy-demand
+  - GE Vernova/Crusoe LM2500XPRESS：`29` 台 LM2500XPRESS，近 `1GW`，5 分钟启动、95% 工厂组装、SCR。来源：https://www.gevernova.com/news/press-releases/ge-vernova-crusoe-announce-major-29-unit-aeroderivative-gas-turbine-deliver-ai-data-centers 与 https://www.gevernova.com/gas-power/resources/case-studies/crusoe-ai-data-centers-lm2500xpress
+  - GE Vernova/Chevron data center power：计划到 2027 年交付 `4GW` 电力，GE Vernova 提供 `7` 台 7HA gas turbines。来源：https://www.gevernova.com/gas-power/resources/articles/2025/meeting-data-center-demand-with-chevron
+- 项目内本地来源：
+  - `公司调研/电力_发电_能源_储能/GEV_GE Vernova_公司调研_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+

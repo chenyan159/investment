@@ -1,0 +1,706 @@
+# 公司：PH Parker-Hannifin（派克汉尼汾）全面尽调
+
+> 报告日期：2026-07-12（America/Los_Angeles）  
+> 股票：NYSE: PH  
+> 公司：Parker-Hannifin Corporation（下文简称 Parker）  
+> 最新已披露财报：FY2026 Q3，季度截至 2026-03-31，2026-04-30 发布；FY2026 Q4 虽已于 2026-06-30 结束，但截至本报告日尚未披露，市场预计 2026-08-06 发布。  
+> 股价与估值快照：2026-07-10 美股收盘；2026-07-12 为周日，无当日交易。  
+> 本地研究边界：仅使用项目内“行业调研”中的相关 AI、液冷、冷却液/过滤和产业链背景资料；未调用其他研究目录，也未使用“特征量化”内容。
+
+## 一、核心结论
+
+1. **Parker 的本质不是“AI 液冷股”，而是已经从周期性液压件公司转成高质量航空航天与工业运动控制复利平台。**过去十二个月收入约 **$20.99B**；航空航天已占 TTM 收入 **32.6%**、公司市场垂直口径约 **35%**，FY26Q3 有机增长 **14.2%**、调整后经营利润率 **29.5%**、积压 **$8.413B**，才是目前最重要的利润与增长引擎。
+2. **直接数据中心业务仍约占销售额 1%，即按 TTM 收入推算约 $0.21B。**管理层称其“增长很快”、与行业领导者合作，产品覆盖液冷系统和子系统组件，但没有披露具名 hyperscaler、订单金额、交付窗口或独立毛利。因而 AI 应被看成高增速的小基数业务及工业业务的结构性期权，而不是当前估值的主要利润锚。
+3. **AI 数据中心最可验证的产品是流体连接，而不是完整 CDU 或冷板。**Parker 已有 OCP Inspired 的 UQD、可与 Intel/NVIDIA 生态供应商互换的 UQDB、Push-Button UQD、CDB 盲插热插拔接头、2026-03 发布的 CDT/LQC 大流量接头，以及 hose、tube、fitting、valve、seal、filter、TIM 和两相流体管路。UQD 获 NVIDIA Partner Network 批准，Parker 还以产品工程师身份参与 2026 OCP PBMC 工作组。
+4. **液冷不是全面供不应求。**CPC/Dover 已公开宣称 UQD(B)08 标准交期约 **5 天**、潜在月产能可达数百万套；OCP 正推进 UQD v2、BMQC、PBMC 和冷板基础规范。真正稀缺的是客户 AVL、低压降、错位盲插、材料相容、洁净装配、全数泄漏测试和系统失效责任。普通标准件未来一年有 **5%–15% ASP 年降**风险。
+5. **订单质量整体很强。**总积压从 2024-12 的约 **$10.5B** 增至 2026-03 的 **$12.5B**；最近五次总订单增速依次为 **+9%、+5%、+8%、+9%、+9%**。按“季度收入＋期末积压变化”反推的 B/B 代理从约 **1.01x** 升至最新 **1.15x**。最新航空航天订单 **+14%**、工业积压约 **$4.0–4.1B**。公司没有披露取消率，但积压定义只纳入书面确定订单及已约定 schedule/release 的 blanket order；经销商库存稳定、按需求订货，没有补库存迹象。
+6. **资产负债表在并购前健康，但并购后风险显著上升。**2026-03-31 净债务约 **$9.11B**、净债务/TTM EBITDA 约 **1.66x**、利息保障约 **11.2x**，评级仍为投资级；但流动比率仅 **1.13x**、速动比率约 **0.60x**，商誉与无形资产合计 **$18.52B**，占总资产 **60.4%**、相当于权益 **126.7%**。尚未完成的 Filtration Group 与 CIRCOR Aerospace 合计交易价 **$11.8B**，将令整合、减值、融资和去杠杆成为未来两年的核心风险。
+7. **估值已经反映“高质量复利”而非普通工业周期。**2026-07-10 股价 **$961.27**，市值 **$121.20B**，TTM P/E **35.46x**、forward P/E **28.89x**、P/S **5.78x**、EV/EBITDA **23.78x**、FCF yield 仅 **3.03%**。这要求航空航天双位数增长、工业复苏、并购协同和利润率扩张同时兑现。
+8. **未来一年合理的公司收入情景为 $23.6B–$24.0B（基准）、$24.5B–$25.0B（乐观）、$25.5B–$26.2B（极度乐观）**，对应约 **+12%–14%、+17%–19%、+21%–25%** 的报告收入增长；其中大量增量来自 Filtration Group/CIRCOR 的并表时点，不应误读为同口径有机增长。直接数据中心业务的一年后收入中枢分别约 **$0.29B、$0.39B、$0.54B**。
+
+### 证据与模型标记
+
+- **A：公司/SEC/监管/标准组织直接披露。**
+- **B：客户、竞争对手、行业会议或产品技术资料，可交叉验证方向，但不等于 Parker 订单。**
+- **M：本文模型。**凡是 Parker 未拆分的产品收入、毛利、产能、BOM 内容量、取消率和一年后情景均明确标为 M，不与公司披露混用。
+- Parker 有数十万零件号，FY2025 没有单一产品超过公司收入 1%；因此任何把单一 UQD 型号直接映射为数十亿美元收入的说法都不可信。
+
+## 二、整体业务、投资者定位与产业链位置
+
+### 2.1 业务结构
+
+Parker 是全球运动与控制技术平台，向数十万个 OEM 与分销客户地点提供液压、气动、机电、过滤、流体/气体处理、过程控制、工程材料、热管理和航空航天系统。公司按财报仅分为两个报告分部：
+
+- **Diversified Industrial（多元工业）**：向 OEM 和分销/售后渠道销售标准件、定制组件和系统，覆盖工厂与工业设备、交通、工程机械、能源、HVAC/R、电子/半导体以及工业侧航空航天与国防。
+- **Aerospace Systems（航空航天系统）**：直接向飞机/发动机 OEM 和终端客户销售飞控、液压、燃油、惰化、制动、电力、传感、流体输送、热管理、发动机系统与售后 MRO。
+
+截至 2026-03-31 的 TTM 收入按技术平台重构如下。工业平台收入来自最近四个季度 10-K/10-Q，航空航天为报告分部；四项相加与 TTM 总收入一致。
+
+| 技术平台/分部 | TTM 收入 | 公司收入占比 | FY26Q3 收入 | FY26Q3 同比 | 主要产品与定位 |
+|---|---:|---:|---:|---:|---|
+| Motion Systems | **$3.496B** | **16.7%** | $0.919B | +11.0% | 液压/电动泵、马达、阀、作动器、驱动与 Curtis 电控；机器运动执行层 |
+| Flow & Process Control | **$4.684B** | **22.3%** | $1.220B | +6.9% | hose、tube、fitting、quick coupling、过程阀、压力/流量控制；流体网络层 |
+| Filtration & Engineered Materials | **$5.970B** | **28.4%** | $1.533B | +8.0% | 过滤、密封、涂层、胶黏、EMI/TIM、材料；纯度、可靠性与耗材层 |
+| Aerospace Systems | **$6.837B** | **32.6%** | $1.814B | +15.5%；有机 +14.2% | 飞机/发动机关键系统、OEM design-in 与长生命周期售后 |
+| **合计** | **$20.987B** | **100%** | **$5.486B** | **+10.6%；有机 +6.5%** | — |
+
+来源：[FY2025 10-K](https://www.sec.gov/Archives/edgar/data/76334/000007633425000035/ph-20250630.htm)、[FY2026 Q3 10-Q](https://www.sec.gov/Archives/edgar/data/76334/000007633426000073/ph-20260331.htm)。
+
+### 2.2 投资者心中的 Parker
+
+投资者通常把 Parker 看成以下四种属性的组合：
+
+1. **高质量工业复利股。**Win Strategy、精益、价值定价和分散经营使利润率在低增长期仍能扩张；85 个 division 由总经理承担完整 P&L，约 85% 产品受知识产权覆盖，约三分之二收入来自购买四种及以上 Parker 技术的客户。
+2. **航空航天长周期与售后复利。**Meggitt 令航空航天成为最大垂直市场，产品进入几乎所有主要商用和军用飞机项目，认证后可随平台服役 20–30 年并产生高毛利备件/MRO。
+3. **“无处不在的小部件”供应商。**没有单一产品超过收入 1%，零件单价相对整机低，但失效代价高，设计验证、分销网络和替换停机成本带来定价权。
+4. **积极资本配置者。**公司一面去杠杆，一面通过 Meggitt、Curtis、Filtration Group、CIRCOR 将组合推向长周期、高增长、高售后和高利润业务；同时连续 **70 个财年**提高年度股息。
+
+这一定位也解释其高估值：市场不是按传统液压设备周期给倍数，而是按“航空航天/售后占比上升＋高现金转化＋持续利润率扩张＋并购复用能力”定价。
+
+### 2.3 产业链位置
+
+| 产业链层级 | Parker 的位置 | 收入方式 | 壁垒/风险 |
+|---|---|---|---|
+| 材料/基础零件 | 密封材料、TIM/EMI、滤材、hose/tube、fitting | 单件、规格化料号、分销 | 普通件易商品化；配方、洁净和寿命数据库可差异化 |
+| 精密功能件 | UQD、阀、泵、调压器、传感器、过滤器、作动器 | OEM design-in、AVL、长期供货 | 认证与失效责任高；标准化会引入二供 |
+| 子系统 | 数据中心流体连接回路、航空燃油/液压/飞控、机电液一体化 | NRE＋量产＋备件 | 跨技术整合、验证和客户工程关系较强 |
+| 完整系统/售后 | 部分航空完整系统、液冷系统/子系统、全球 MRO 与工业分销 | 项目、服务、备件和耗材 | 最高切换成本；同时承担交付、质保和整合风险 |
+| EPC/运营 | **通常不承担**数据中心 EPC、机架 OEM、云服务或飞机总装 | — | Parker 不能获取完整机架/CDU/AI 集群价值量 |
+
+在 AI 数据中心中，Parker 主要处于 **Tier-2 精密组件到 Tier-1 子系统**，不是 Vertiv、Schneider/Motivair、Eaton/Boyd 那样的全栈 power＋cooling 总包，也不是 NVIDIA/服务器 OEM。因此应按 Parker 实际捕获的流体控制内容量估值，不能把完整液冷系统 BOM 归给 Parker。
+
+## 三、最近三年的重大业务变动、转型与收购
+
+| 时间 | 交易/变动 | 规模与财务 | 战略意义 | 当前判断 |
+|---|---|---|---|---|
+| 2022-09；影响延续至近三年 | 完成 Meggitt 收购 | 约 £6.3B，折合约 $7.2B；标的原年收入约 $2.1B | 大幅增加制动、发动机传感、安全、阀/作动、电力、热管理和售后；航空业务成为核心 | 整合基本兑现：FY26Q2 航空调整后利润率 30.2%，远高于并购初期；但商誉/无形资产显著增加 |
+| 2023-09/12 | 出售 MicroStrain、Filter Resources | 各约 $37M | 清理非核心小业务，强调组合聚焦 | 规模不大，但体现“买大平台、卖非核心”的纪律 |
+| 2024-11 | 出售 CFC 复合材料/燃油容器及非核心过滤业务 | 净收入 $555M＋$66M；CFC 税前收益约 $241M | 剥离 Meggitt 中非核心资产；FY25 工业收入因此受约 $295M divestiture 拖累 | 改善组合与现金，但令历史同比失真，分析有机增长时必须剔除 |
+| 2025-09-18 | 完成 Curtis Instruments | 约 $1.0B；CY2025 收入约 $320M | 加入电机控制器、仪表、功率转换和输入设备，与 Parker 电机、液压、热管理、HMI/软件形成完整移动电气化方案 | FY26Q3 并表贡献 $76M；收入增速和独立利润尚未披露，协同仍处早期 |
+| 2025-11-11；截至本报告日待完成 | 收购 Filtration Group | 价格 $9.25B；CY2025 收入 $2.0B、调整后 EBITDA 率 23.5%、约 85% 售后；第三年成本协同 **$220M** | 建成全球最大工业过滤平台之一，增强生命科学、HVAC/R、工厂工业和耗材复购 | 欧盟于 **2026-07-06** 按简化程序批准、监管风险下降；但截至 2026-07-12 Parker 尚未公告交割，不能计入当前收入。电话会部分转录把 $220M 误写成 $20M，应以官方交易公告为准 |
+| 2026-05-21；待完成 | 收购 CIRCOR Aerospace 商用与国防航空业务 | $2.55B；CY2026 预计收入 $270M、调整后 EBITDA 率 >40%、80% OEM、商用/国防各半、预期继续双位数增长 | 补强 flight-critical motion/flow control，增加下一代商用与国防平台位置 | 估值约 22.7x EBITDA（税收利益后），含约收入 10% 协同后 18.2x；高质量但买价昂贵，预计 2026H2 交割 |
+
+来源：[Curtis 完成交割](https://investors.parker.com/news-events/press-releases/detail/491/parker-completes-curtis-instruments-acquisition)、[Filtration Group 交易公告](https://investors.parker.com/news-events/press-releases/detail/496/parker-to-acquire-filtration-group-corporation)、[CIRCOR Aerospace 交易公告](https://investors.parker.com/news-events/press-releases/detail/507/parker-to-acquire-circors-commercial-and-defense)、[欧盟事前申报 M.12303](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AC_202603352)、[欧盟案件记录 M.12303](https://competition-cases.ec.europa.eu/cases/M.12303)、[EU Phase I 闭案追踪](https://www.lexisnexis.co.uk/legal/guidance/eu-phase-i-mergers-closed-cases-tracker)。
+
+**转型的实质：**Parker 由“工业液压＋短周期分销”向“航空航天长周期＋高规格流体控制＋过滤售后耗材＋电气化控制”迁移。FY2023 航空收入 $4.36B，FY2025 已达 $6.185B，TTM 又升至 $6.837B；与此同时工业业务经历去库存和资产剥离后开始恢复。组合质量上升是真实的，但未来两年资本配置的焦点已从“还能买什么”转为“能否按时交割、整合和降杠杆”。
+
+## 四、股价、估值与资产负债表
+
+### 4.1 2026-07-10 市场快照
+
+| 指标 | 最新值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | **$961.27** | 2026-07-10 收盘 | 2026-07-12 为周日 |
+| 市值 | **$121.20B** | 2026-07-10 | 126.09M 股 |
+| 企业价值 | **$130.31B** | 2026-07-10 | 含当前净债务，不含待交割交易 |
+| TTM P/E | **35.46x** | TTM GAAP EPS $27.11 | FY25 税项/处置收益和 FY26 比较基数会影响 GAAP |
+| Forward P/E | **28.89x** | 市场一致预期 | 对增长与并购协同要求高 |
+| P/S | **5.78x** | TTM 收入 $20.99B | 显著高于一般多元工业 |
+| EV/EBITDA | **23.78x** | TTM | 接近高质量航空/自动化平台估值 |
+| TTM 收入增速 | **+6.0%** | 截至 2026-03-31 | 最新单季报告 +10.6%、有机 +6.5% |
+| TTM 毛利率 | **37.44%** | TTM | FY26Q3 36.8%，季度 mix 有波动 |
+| TTM 经营利润率 | **21.68%** | GAAP | FY26Q3 调整后分部利润率 26.7% |
+| TTM 净利率 | **16.58%** | GAAP | TTM 净利润 $3.48B，+2.6% |
+| TTM FCF | **$3.68B** | CFO−CapEx | FCF margin 17.53%，FCF yield 3.03% |
+
+市场数据来源：[StockAnalysis 估值与统计](https://stockanalysis.com/stocks/ph/statistics/)、[PH 市场页面](https://stockanalysis.com/stocks/ph/)；股价另以 2026-07-10 市场报价核对。第三方估值用于同日快照，公司财务数字以 SEC 为准。
+
+### 4.2 2026-03-31 资产负债表
+
+| 项目 | 金额/比率 | 同比/结构 | 评估 |
+|---|---:|---|---|
+| 现金 | **$0.476B** | 其中 $0.423B 在海外子公司 | 相对交易规模很小 |
+| 应收账款 | **$3.161B** | 较 2025-06 增 $0.251B | 随收入增长；DSO 约 53 天 |
+| 存货 | **$3.179B** | 较 2025-06 增 $0.340B | 库存天数约 88 天，高于 FY25 的 82 天，需监控 |
+| 流动资产/负债 | $7.608B / $6.737B | 流动比率 **1.13x** | 可运转但安全垫不厚 |
+| 速动比率 | **约 0.60x** | 现金＋应收对流动负债 | 依赖持续现金流、商业票据和资本市场 |
+| 短期借款及一年内债务 | **$2.813B** | 含约 $2.1B 商业票据 | 再融资需求较高，但有循环额度支持 |
+| 长期债务 | **$6.769B** | 总债务约 $9.582B | 当前可控 |
+| 净债务 | **约 $9.106B** | 净债务/TTM EBITDA 约 **1.66x** | 并购前健康 |
+| 商誉＋无形资产 | **$18.521B** | 占资产 **60.4%**，为权益 **126.7%** | 组合对并购整合、长期现金流和减值假设敏感 |
+| 股东权益 | **$14.617B** | 较 2025-06 增 $0.926B | 回购令账面权益被压低 |
+| 9M CFO / CapEx / FCF | **$2.628B / $0.286B / $2.342B** | FCF 同比 +17% | 现金创造能力很强 |
+| 利息保障 | **约 11.2x** | TTM | 现状充足 |
+| 财务契约 | 债务/（债务＋权益）**0.40x** | 上限 0.65x | 有空间 |
+| 信用评级 | Fitch A-；Moody’s A3；S&P BBB+、展望正面 | S&P 2026-05 预计 FG 后约 2.7x | 投资级仍是重要融资优势 |
+
+来源：[FY26Q3 10-Q 资产负债表、债务与现金流](https://www.sec.gov/Archives/edgar/data/76334/000007633426000073/ph-20260331.htm)、[S&P 2026-05-15 评级说明](https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3563407)。
+
+### 4.3 财务健康度结论
+
+**并购前：8/10，健康。**理由是 TTM EBITDA/FCF 强、净杠杆约 1.7x、利息保障约 11x、契约空间大、评级投资级。弱项是现金少、速动比率低于 1、短期商业票据规模大、无形资产占比高。
+
+**Filtration Group＋CIRCOR 全部交割后的前 12 个月：6/10，仍可控但执行风险明显。**管理层预计 Filtration Group 全额融资后接近但不超过 3x，并快速回到约 2x；S&P 预计 FY2027 调整后杠杆约 2.7x。若简单把两笔 $11.8B 交易价全加到当前净债务、只加标的当前 EBITDA，机械计算会超过 3x，说明交割时点、当期 FCF、现金、融资结构、评级调整项和协同都非常关键。未来两年应优先看：
+
+1. 交割后净杠杆是否确实 ≤3.0x；
+2. 年度 FCF 是否维持约 $3.5B–$4.0B；
+3. FG 的 $220M 协同是否按三年节奏兑现；
+4. 回购是否让位于去杠杆；
+5. 商誉/客户关系无形资产是否出现减值或更高摊销。
+
+## 五、最新及最近四次财报：五季度经营、订单与积压
+
+### 5.1 公司总表
+
+单位除每股数据、比例外均为十亿美元。Bookings 与 B/B 为 M：Bookings≈本季收入＋期末积压−上季末积压；因积压披露有四舍五入、汇率和收购/剥离影响，只作为方向代理，不是公司正式 bookings。
+
+| 财报季度 | 收入；同比/有机 | 毛利率 | 调整后分部利润率 | GAAP 净利润；调整后 EPS | 订单增速：PH / 北美 / 国际 / 航空 | 期末积压；未来12个月转化 | M：Bookings / B/B | M：AI数据中心收入 |
+|---|---|---:|---:|---|---|---|---|---|
+| **FY25Q3** 2025-03-31 | **$4.960B**；-2.2% / +1.0% | 36.9% | 26.3% | $0.961B；$6.94 | **+9% / +3% / +11% / +14%** | **$11.0B**；约 72%；航空 $7.292B | ~$5.46B / **1.10x** | **$35M–45M**，约 0.7%–0.9% |
+| **FY25Q4** 2025-06-30 | **$5.243B**；+1.1% / +2.1% | 37.3% | 26.9% | $0.923B；$7.69 | **+5% / +2% / 0% / +12%** | **$11.044B**；约 71%；工业 $3.655B、航空 $7.389B | ~$5.29B / **1.01x** | **$40M–50M**，约 0.8%–1.0% |
+| **FY26Q1** 2025-09-30 | **$5.084B**；+3.7% / +5.0% | 37.5% | 27.4% | $0.808B；$7.22 | **+8% / +3% / +6% / +15%** | **$11.3B**；约 70%；航空 $7.716B | ~$5.34B / **1.05x** | **$40M–50M**；管理层称低于 1% |
+| **FY26Q2** 2025-12-31 | **$5.174B**；+9.1% / +6.6% | 37.3% | 27.1% | $0.845B；$7.65 | **+9% / +7% / +6% / +14%** | **$11.7B**；约 70%；航空 $8.007B | ~$5.57B / **1.08x** | **$45M–55M**，约 0.9%–1.1% |
+| **FY26Q3** 2026-03-31 | **$5.486B**；+10.6% / +6.5% | 36.8% | 26.7% | $0.904B；**$8.17** | **+9% / +7% / +6% / +14%** | **$12.5B**；约 67%；工业约 $4.09B、航空 **$8.413B** | ~$6.29B / **1.15x** | **$50M–60M**；管理层称约 1% |
+
+五季财报来源：[FY25Q3](https://investors.parker.com/sec-filings/all-sec-filings/content/0000076334-25-000017/exhibit991q3fy25.htm)、[FY25Q4](https://investors.parker.com/news-events/press-releases/detail/487/parker-reports-fiscal-2025-fourth-quarter-and-full-year)、[FY26Q1](https://investors.parker.com/news-events/press-releases/detail/495/parker-reports-fiscal-2026-first-quarter-results)、[FY26Q2](https://investors.parker.com/news-events/press-releases/detail/499/parker-reports-fiscal-2026-second-quarter-results)、[FY26Q3](https://investors.parker.com/news-events/press-releases/detail/506/parker-reports-fiscal-2026-third-quarter-results)。
+
+### 5.2 各报告业务收入、增速与利润率
+
+每格格式为“收入 / 报告增速 / 有机增速 / 调整后分部经营利润率”。
+
+| 财报季度 | Diversified Industrial 北美 | Diversified Industrial 国际 | Aerospace Systems | 核心变化 |
+|---|---|---|---|---|
+| FY25Q3 | **$2.031B / -9.0% / -3.5% / 25.2%** | **$1.358B / -5.3% / -2.8% / 25.1%** | **$1.572B / +11.6% / +11.7% / 28.7%** | 工业仍去库存且受剥离拖累；航空订单与售后强 |
+| FY25Q4 | **$2.075B / -6.9% / -1.4% / 26.7%** | **$1.492B / +4.3% / +0.6% / 24.7%** | **$1.676B / +9.7% / +8.6% / 29.0%** | 工业接近见底；国际 APAC 有机 +5.6%；航空创新高 |
+| FY26Q1 | **$2.044B / -2.7% / +2.1% / 27.0%** | **$1.399B / +3.2% / +1.0% / 25.0%** | **$1.641B / +13.3% / +12.8% / 30.0%** | 工业恢复正增长；航空商业 OEM/售后持续强 |
+| FY26Q2 | **$1.986B / +3.0% / +2.5% / 25.4%** | **$1.482B / +11.8% / +4.6% / 26.0%** | **$1.706B / +14.5% / +13.5% / 30.2%** | APAC 有机 +9%；Curtis 与汇率增厚报告增长；航空 OEM +26%、售后 +17% |
+| FY26Q3 | **$2.141B / +5.4% / +2.8% / 25.3%** | **$1.531B / +12.7% / +3.3% / 25.3%** | **$1.814B / +15.5% / +14.2% / 29.5%** | APAC 有机 +9.6%，电子/半导体和数据中心订单强；航空商业 OEM +22% |
+
+### 5.3 FY26Q3 航空航天内部收入
+
+| 航空市场 | FY26Q3 收入 | 同比 | 航空分部占比 | 判断 |
+|---|---:|---:|---:|---|
+| Commercial OEM | **$601M** | **+21.9%** | 33.1% | 窄体、宽体产量提升；mix 对利润率相对售后不利 |
+| Commercial aftermarket | **$647M** | **+13.9%** | 35.7% | 航班量、备件、维修支撑高利润 |
+| Defense OEM | **$324M** | **+13.3%** | 17.9% | 旧平台持续需求与新项目位置 |
+| Defense aftermarket | **$242M** | **+8.0%** | 13.3% | 舰队升级、寿命延长；产品交期 9–15 个月 |
+| **合计** | **$1.814B** | **+15.5%** | **100%** | OEM 51%、aftermarket 49%；订单 +14% |
+
+### 5.4 订单、交期、取消与积压质量
+
+- **积压定义可靠但不是不可取消合同。**公司只计书面 firm order；blanket order 只计已经约定 schedule/release 的部分，金额等于预期向客户开票的销售额。最新 $12.5B 中约 **67%（$8.38B）**预计 12 个月内转收入，低于 FY25Q3 的 72%，表明长周期航空和跨 FY2027 工业订单占比上升。
+- **航空可见性最高。**$8.413B 航空积压相当于 TTM 航空收入的 **1.23x**、最新季度收入的 **4.64x**。管理层称 OEM 与售后订单均双位数增长，商业 OEM、商业售后和国防 OEM 是主要积压增量。
+- **工业可见性中等。**约 $4.09B 工业积压相当于 TTM 工业收入的 **0.29x**，约 3.5 个月收入；但工业包含大量短周期分销，不进入积压的订单会快速下单出货。
+- **取消率：未披露。**管理层没有报告广泛取消或 push-out；经销商库存稳定、按实际需求订货，明确称没有看到补库存。本文基准情景采用工业 2%–4%、航空 1%–2% 的订单取消/实质性延期折损，仅为 M。
+- **交期：**公司只明确披露国防产品约 **9–15 个月**；数据中心、半导体和一般工业没有统一交期。不能用航空交期代表 UQD，也不能用 CPC 标准 UQD 的 5 天交期代表 hyperscaler 新平台 AVL 周期。
+- **订单指标口径：**工业订单为三个月平均、航空订单为滚动十二个月平均，均按恒定汇率并剔除 divestiture；所以“订单 +14%”不是单季 bookings 同比。
+
+## 六、FY2026 最新指引、收入占比与业务重点
+
+### 6.1 FY2026Q3 后的最新公司指引
+
+| 指标 | 最新 FY2026 指引 | 相对先前 | 关键信号 |
+|---|---:|---|---|
+| 报告收入增长 | **约 +7%** | 上调 | 有机、汇率与 Curtis 共同贡献 |
+| 有机收入增长 | **约 +5.5%** | 从约 +5% 上调 | 工业恢复、航空持续强 |
+| 收购/剥离/汇率 | +1% / -1% / +1.5% | — | 报告增长不可全视为需求 |
+| 调整后分部利润率 | **27.2%** | 约 +110 bps YoY | 全年增量利润率约 40% |
+| GAAP / 调整后 EPS | **$27.10 / $31.20** | 调整后中点上调 $0.50 | 调整后 EPS 同比约 +14.2% |
+| FCF | **$3.3B–$3.6B**，中点 $3.45B | 上调 | FCF margin 约 16.2%，转化约 100% |
+| FY26Q4 收入 | **约 $5.5B，+5.5%** | — | 有机约 +4% |
+| FY26Q4 调整后分部利润率/EPS | **27.4% / $8.16** | — | 保持高利润率 |
+
+来源：[FY26Q3 业绩公告](https://investors.parker.com/news-events/press-releases/detail/506/parker-reports-fiscal-2026-third-quarter-results)、[FY26Q3 电话会](https://www.fool.com/earnings/call-transcripts/2026/04/30/parker-hannifin-ph-q3-2026-earnings-transcript/)。
+
+### 6.2 市场垂直占比、增长与对应产品
+
+垂直市场占比来自公司最新演示/电话会的约数；收入美元以 $20.99B TTM 乘占比，仅用于规模感，不等同报告分部。
+
+| 市场垂直 | 约占收入 | M：TTM 规模 | FY2026 最新有机指引 | 对应重点产品 | AI 关系 |
+|---|---:|---:|---:|---|---|
+| Aerospace & Defense | **35%** | **$7.35B** | **约 +12%** | 飞控、液压、燃油、制动、电力、热管理、传感、MRO | 非 AI；当前最大利润引擎 |
+| In-plant & Industrial | **20%** | $4.20B | 低个位数正增长 | 自动化、气动、机电作动、过滤、半导体 UHP、分销 | 半导体 fab、服务器制造及自动化为间接受益 |
+| Transportation | **15%** | $3.15B | 低个位数下降 | 过滤、hose/fitting、PTO、seal、电机控制 | 低相关；Curtis 是电气化期权 |
+| Off-highway | **13%** | $2.73B | 低个位数正增长 | 液压、泵阀、ePump、Curtis 控制器 | 数据中心建设机械为二阶受益，不能全算 AI |
+| Energy | **7%** | $1.47B | 低个位数正增长 | 发电、燃气、氢、阀、过滤、密封 | 数据中心发电/备用电源为二阶受益 |
+| HVAC & Refrigeration | **4%** | $0.84B | 中个位数正增长 | Sporlan 阀控、过滤、制冷、热管理 | 设施侧冷却相邻，但直接 AI 占比未拆 |
+| Other | **6%** | $1.26B | 未单列 | 多行业 | 不作 AI 映射 |
+
+**公司最侧重的业务：**
+
+1. **航空航天：**最大垂直、最快的已规模化业务；第四年连续双位数有机增长，Meggitt 整合后利润率约 30%，又以 CIRCOR 加码。
+2. **过滤与高售后：**Filtration Group 将增加 $2B 收入、85% 售后和 $220M 目标协同，是未来两年最大的组合变化。
+3. **工业复苏＋电子/半导体：**APAC 最新有机增长 9.6%，订单由电子、数据中心、工厂工业和能源驱动。
+4. **数据中心液冷：**增速快但仅约 1%；重点在多技术交叉销售和新平台 design-in，不足以单独推动公司增长率。
+5. **电气化：**Curtis 把 Parker 的电机、控制器、功率转换、HMI、软件、液压与热管理串成系统，当前规模小、与 AI 关系弱。
+
+## 七、重点产品、型号、收入与利润率交叉验证
+
+### 7.1 数据中心液冷：不能漏掉的小产品
+
+| 子产品/型号 | 真实功能与参数 | 认证/量产证据 | M：当前收入/增速/毛利 | 交叉验证与判断 |
+|---|---|---|---|---|
+| **UQD04/UQD06 Push-Button UQD** | OCP 规格；7 bar、0–70°C、>5,000 次连接；支持水、DI water、PG/EG；UL94 V0 | 高度自动化、可扩制造；Parker 称碳排低 >55%、用水低 >60%、重量低 60%，这些为供应商声明 | 数据中心 QD 组的一部分；组收入 $65M–85M，增速 40%–70%，毛利 38%–50% | 易用、阻燃、自动化适合量产；但 OCP 互换将压缩普通型号 ASP |
+| **UQD/UQDB** | UQD 手插、UQDB 盲插；不锈钢、EPDM，UQDB ±1mm 径向补偿、0–70°C、最高约 7 bar | OCP Inspired；NVIDIA Partner Network 批准；与 Intel/NPN 供应体系互换；每件氦检、cleanroom 装配 | 同上；其中 blind-mate mix 上升最快 | 认证记录、氦检和洁净度构成溢价；标准接口不是垄断 |
+| **ORV Series（BMQC）/PBMC 参与** | 更高流量、高错位容忍、面向 ORv3/高功率系统 | 2026 OCP EMEA Summit PBMC 更新由 Meta 与 Parker 工程师共同讲解；规范仍在演进 | 当前收入很小，$0M–10M；一年后有望进入 $10M–40M | 这是潜力小产品；参与标准不等于商业订单或最终 AVL |
+| **CDB Series** | CDU/泵热插拔；盲插 dry-break；1.5mm 径向错位；G3/4；Cv 7.0–7.2；10–70°C；设计 75psi、最大 150psi；spill 0.05ml | 2025-10 产品公告，称与市场领导者共同开发；未披露客户名或正式 OCP Marketplace 状态 | $5M–15M；早期双位数至高双位数；毛利 42%–55% | 高 uptime/热插拔价值高，适合大 CDU/泵；认证仍需逐客户验证 |
+| **CDT Series / LQC** | header/CDU/manifold 大流量 thread-to-connect；G1；Cv 15.9；10–70°C；设计 50psi、最大 175psi；spill 0.10ml | 基于 OCP Large Quick Connector；2026-03 新公告 | 当前 <$10M；未来一年 $10M–35M；毛利 40%–55% | 低压降适合 200kW+ rack；新品收入和 design-win 尚未披露 |
+| **NSP1、NSG、203 Series** | 紧凑 dry-break、不同温压与手动连接方式 | Parker 现有 thermal management 产品线 | 与通用连接组重叠；增速低于新 UQD/MQD | 供应现有 HPC/电子客户，不能全部视为 AI |
+| **629 hose、PCT、Carstick、Parflex tube、fittings** | CDU→rack manifold→server→cold plate 输送；低渗透、低析出、弯曲半径、crimp 与洁净度关键 | Parker 应用图与 2026 webinar 展示 UQD、203、PCT、Carstick；629 hose 工作压力 150psi | 数据中心 hose/manifold 组 $55M–70M；增速 30%–50%；毛利 24%–35% | 产品范围宽、全球本地制造强；普通 hose/tube 最容易被多源和年降 |
+| **valve/pump/filter/sensor/seal** | 隔离、平衡、流量控制、过滤、颗粒/漏液检测；O-ring、custom gasket 决定长期 leak-free | Parker seal 材料/ISO 17025 能力、工业过滤与流控 installed base；具体 hyperscaler AVL 未披露 | 相关组 $45M–70M；增速 25%–50%；毛利 30%–50% | 小件单价低但失效代价大；具体 SKU/客户证据比集团能力更重要 |
+| **THERM-A-GAP PAD 120LOE、gap filler、EMI gasket** | 12 W/m-K gap pad、低油析；服务器/网络热界面与 EMI | Parker Chomerics 产品页；不是液体回路核心 | 当前可能仅数百万美元级；增速 15%–35%；高材料毛利 | 容易被液冷主叙事遗漏的小业务；市场竞争包括 Laird、Henkel、3M、Dow 等 |
+| **两相 D2C：Sporlan/Parflex 管阀＋ZutaCore 合作** | 低渗透管路、制冷剂阀控、蒸发/冷凝回路；可减少水使用 | Parker/ZutaCore 白皮书、OCP pumped two-phase 工作；仍非主流 | 当前 < $10M；一年后基准 $10M–20M、极度乐观 $40M+；毛利 35%–55% | 技术上有价值，但单相 D2C 是 2026–2027 主流；不能把 demo 当量产 |
+| **光模块液冷接口** | 未来 1.6T/3.2T optics 的 mini-QD、微型管路与密封 | 行业/OCP 正研究；未发现 Parker 已量产专用 mini-QD 或具名客户 | 当前可识别收入约 $0；一年后基准仍近零，极度乐观 $5M–15M | 高潜力小产品，但 Parker 当前并非光器件供应商 |
+
+产品来源：[Parker UQD/NPN](https://discover.parker.com/UQD-Series)、[液冷接头全系列](https://discover.parker.com/LiquidCoolingCouplings)、[Push-Button UQD bulletin](https://www.parker.com/content/dam/Parker-com/Literature/LPCE/New-PDFs/Product%20Bulletin_UQD.pdf)、[CDB bulletin](https://www.parker.com/content/dam/Parker-com/Literature/Quick-Coupling/CDB%20Series%20Bulletin.pdf)、[CDT bulletin](https://www.parker.com/content/dam/Parker-com/Literature/Quick-Coupling/CDT%20Series%20Bulletin.pdf)、[数据中心流体连接应用图](https://www.parker.com/content/dam/parker/fcg/group/data-centers/Data%20Center%20-%20FCG%20Thermal%20Mgmt%20Application%20Overview.pdf)、[两相合作](https://discover.parker.com/data-center-sustainable-liquid-cooling-wp)。
+
+### 7.2 半导体与电子超高纯流体控制
+
+这不是“AI 芯片收入”，而是 fab/设备供应链的间接 AI 暴露。Parker 没有拆分收入，本文按 APAC、工业平台、产品广度和同业规模估计 TTM **$0.65B–$1.05B**，中枢约 $0.85B，信心低。
+
+| 产品/型号 | 作用与参数 | M：利润/增长 | 竞争与验证 |
+|---|---|---|---|
+| **FR1400 UHP regulator** | 高压气体输送，最高 3,000psig、流量 800 slpm；气瓶、VMB、specialty gas | 毛利 42%–55%；增速 10%–20% | 与 Fujikin、Swagelok、MKS/Atotech 等竞争；UHP 洁净、表面与氦检决定 AVL |
+| **F9 check valve** | 非对称弹簧降低流阻/噪音，UHP 气体防倒流 | 毛利 40%–52%；增速 8%–18% | 小件但污染/失效代价高 |
+| **SQ2Micro/SMSQ2Micro regulator** | point-of-use 小型精密调压；SQ2Micro Cv 约 0.06 | 毛利 42%–55%；增速 10%–20% | 工具空间与死体积优势；需 tool OEM 逐型号认证 |
+| **930/930Y/935、17R/18R diaphragm valve** | UHP gas 低流量/高流量阀；930Y 集成 purge；部分产品 100% 氦质谱检漏 | 毛利 40%–55%；增速 8%–18% | Fujikin、CKD、Swagelok 等强，Parker 不是垄断 |
+| **Parflare/Parbond/Pargrip PFA、MiniButtweld、VacuSeal** | DI water、腐蚀化学品、UHP gas 的 PFA/PTFE/316L 管路连接 | 毛利 35%–50%；增速 8%–15% | 材料纯度、死体积、焊接/密封完整性与全球服务形成切换成本 |
+| **Clariflow/Chemflow filters、Evolve seal、FFKM** | 去除颗粒/微生物、耐强腐蚀密封、降低真空 seal erosion | 毛利 40%–58%；增速 10%–20% | Entegris、Pall/Danaher、DuPont、Trelleborg 等竞争；耗材复购好于一次性设备 |
+
+来源：[Parker 半导体流体/气体生态](https://corpapps.parker.com/interactive-media/parker-hannifin-world/semiconductor-ecosystem-industrial-manufacturing/fluid-gas-manufacturing-supply.html)、[FR1400/SQ2Micro/930 产品页](https://discover.parker.com/AP-ASEAN-SEMI-ING)、[Veriflo 半导体产品册](https://www.parker.com/content/dam/parker/fcg/veriflo-division/Parker%20Veriflo%20Semicon%20Brochure%20June%202025.pdf)。
+
+### 7.3 航空航天关键产品
+
+| 产品系统 | 当前收入映射 | 利润/增速 | 垄断与替换 |
+|---|---|---|---|
+| 飞控、液压泵/马达/阀、机电作动 | 商业/国防 OEM 核心 | 随 OEM 产量双位数增长；分部调整后经营利润率 29.5% | 机型认证和飞行安全形成极高切换成本；Moog、Collins/RTX、Safran、Eaton 等竞争 |
+| 燃油系统、惰化、输送、发动机阀/泵 | OEM＋长期备件 | 商业 OEM +22%、国防 OEM +13% | 平台 design-in 通常长期稳定；新平台招标仍竞争激烈 |
+| 制动、电力、传感、安全、热管理（Meggitt） | OEM＋售后 | 商业售后 +14%、国防售后 +8%；售后 mix 高毛利 | 认证、installed base、维修站和适航文件形成强定价权 |
+| CIRCOR flight-critical motion/flow | 当前未并表；CY2026 $270M 潜在 | 预计双位数增长、EBITDA >40% | 80% OEM，premier program design-in 高壁垒；交易估值已反映质量 |
+
+Parker 产品覆盖几乎所有主要商用/军用平台，但公司不披露单机内容量或单一项目收入。F-35 的 electrohydraulic actuators、KC-46 的飞控/液压/连接件、C919 的燃油/惰化/液压系统可证明平台能力，却不能用于推算当前客户集中度。
+
+### 7.4 过滤与 Curtis
+
+- **Filtration & Engineered Materials 现有平台：**TTM $5.970B，FY26Q3 +8.0%；产品包括工业/过程/发动机/气体过滤、密封、涂层、结构胶、TIM/EMI 等。平台独立利润率未披露；工业分部调整后利润率约 25%，产品毛利 M 为 35%–48%。
+- **Filtration Group：**当前不属于 Parker 收入；标的 $2.0B、EBITDA 23.5%、85% aftermarket。其价值在 validated/specified media、替换耗材与生命科学/HVAC/R/工厂工业交叉销售。价格传导和复购优于普通设备，但交易价高、协同兑现是关键。
+- **Curtis：**CY2025 约 $320M；FY26Q3 对 Parker 收入贡献 $76M。产品包括 AC F2/F3/F4/F6/F10 系列牵引/泵控制器、1232E/1234E、仪表、电池状态监测、DC/DC、充电器、接触器和输入装置；Parker 可进一步捆绑 24–850V PMAC motor、24–800V inverter、ePump、IQAN/CODESYS/VCL 软件、HMI 与传感器。产品软件标定和 functional safety 提高切换成本，但终端 off-highway/物料搬运仍有周期性。
+
+### 7.5 明确跳过或降权的低增速/非 AI 业务
+
+| 跳过/降权业务 | 原因 | 仍需关注的例外 |
+|---|---|---|
+| 传统乘用车/内燃机过滤与一般 hose | FY2026 transportation 仍预计低个位数下降，AI 相关性低 | 重卡改善、售后和电气化控制 |
+| 农业机械传统液压 | 农业需求仍弱，周期性高 | 建筑/基础设施工程机械改善 |
+| 上游油气普通流体件 | 上游偏软、与 AI 无直接映射 | power generation 与 midstream 较强，数据中心备用/现场发电是二阶受益 |
+| 通用气动、标准阀、普通软管/接头 | 低个位数增长、亚洲竞争与标准化压价 | 进入数据中心/半导体 AVL 的特定 SKU 不能跳过 |
+| 一般商业 HVAC/R | 中个位数增长但多数不服务 AI hall | 数据中心 chiller/暖水液冷、Sporlan 高效阀控和 FG HVAC 过滤 |
+| 普通空气过滤 | 稳定耗材但液冷不会令其成为最高 AI beta | 数据中心残余空气负荷、低压降 HEPA/气相污染控制 |
+| 两相/浸没大叙事 | 2026–2027 仍非主流，客户保修、工质回收与维护未成熟 | Parker 的低渗透 hose、阀和密封是低成本技术期权 |
+
+## 八、高增长/关键业务的当前收入贡献、重要性与定价权
+
+下表评分为 1–5：5 代表对 AI 基建极关键、时间极紧、供给极紧、近似垄断或溢价极强；“供需”分数越高表示越供不应求。收入行存在嵌套：数据中心与半导体收入位于三个工业技术平台内，**不能与平台收入相加**。
+
+| 关键业务/产品 | 当前收入贡献 | 当前增速 | 当前利润率 | AI重要性 | 时间紧急性 | 供需紧张 | 垄断能力 | 溢价能力 | 证据/信心 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| **Aerospace Systems** | **TTM $6.837B**；FY26Q3 $1.814B | Q3 报告 +15.5%、有机 +14.2%；订单 +14% | Q3 调整后经营利润率 **29.5%** | 0.5 | 4.5 | 4.0 | 4.2 | 4.3 | A，高 |
+| **数据中心液冷合计** | **M：$0.18B–$0.24B，中枢 $0.21B**；约 1% 公司收入 | M：+30%–50%；公司仅称 very fast growing | M：混合毛利 32%–46% | **5.0** | **5.0** | 3.2 | 3.2 | 3.8 | A＋M，中低；总规模有公司锚，拆分无披露 |
+| └ UQD/UQDB/CDB/CDT/密封 | **M：$65M–85M** | M：+40%–70% | M：毛利 38%–50%，新品可更高 | 5.0 | 5.0 | 标准件 2.0；新 AVL 4.0 | 3.3 | 4.0 | B＋M，中低 |
+| └ hose/tube/fitting/manifold | **M：$55M–70M** | M：+30%–50% | M：毛利 24%–35% | 4.5 | 4.5 | 2.5 | 2.3 | 2.8 | B＋M，低 |
+| └ valve/filter/sensor/seal/TIM/两相 | **M：$55M–80M** | M：+25%–50% | M：毛利 30%–50% | 4.5 | 4.5 | 3.2 | 3.2 | 3.8 | B＋M，低 |
+| **半导体/电子 UHP 流控** | **M：$0.65B–$1.05B，中枢 $0.85B** | M：+8%–15%；APAC Q3 有机 +9.6% 为上位锚 | M：毛利 38%–52% | 4.0 | 3.5 | 3.0 | 3.2 | 3.7 | A方向＋M规模，低 |
+| **Filtration & Engineered Materials 现有平台** | **TTM $5.970B** | FY26Q3 +8.0% | 平台未拆；工业调整后经营率约 25%；M 毛利 35%–48% | 2.0 | 2.5 | 2.3 | 3.0 | 3.5 | A规模，高；产品利润中低 |
+| **Filtration Group（待并表）** | 当前 PH 收入 **$0**；标的 CY25 $2.0B | 公司称 strong organic profile，未给数值 | EBITDA margin **23.5%** | 1.5 | 2.5 | 2.0 | 3.3 | 3.8 | A，高 |
+| **Curtis 电气化** | CY25 run-rate **$320M**；FY26Q3 并表 $76M | 未披露；M：+5%–12% | 未披露；M：毛利 30%–40%、经营率 15%–20% | 1.0 | 2.0 | 2.0 | 2.8 | 3.0 | A规模＋M利润，中低 |
+| **CIRCOR Aerospace（待并表）** | 当前 PH 收入 **$0**；CY26 预计 $270M | 预计未来数年双位数 | 调整后 EBITDA margin **>40%** | 0.5 | 4.0 | 4.0 | 4.3 | 4.5 | A，高 |
+
+### 为什么 Parker 的 AI 定价权不是“垄断”
+
+- **优势：**全球最大 quick coupling 厂商之一；UQD 参与原始 OCP 规范；NPN/Intel 生态兼容；每件氦检、cleanroom、材料与密封数据库；产品横跨 QD、hose、valve、filter、seal、TIM，可以用一个供应商减少接口责任。
+- **限制：**CPC/Dover、Stäubli、CEJN、Danfoss、Nidec、Auras、Envicool 等都有互换或相邻方案；OCP v2 的目标正是补齐设计、生产和测试规范并增加多源。Parker 没有公开独家 NVIDIA/云客户订单。
+- **结论：**Parker 对高流量、盲插、材料相容和已进入客户 AVL 的料号有较强溢价；对普通 UQD、tube、fitting 的长期垄断能力有限。最可能出现的是“连接点数量高速增长、普通件 ASP 下行、高端件 mix 上升”，而不是所有组件同时量价齐升。
+
+## 九、AI 数据中心 BOM、真实内容量与价格传导
+
+### 9.1 项目内行业物理锚
+
+项目内最新行业研究估计，142kW 级机架的核心液冷小组件 BOM 为 **$55k–$115k/rack** 的规模基准；若按更高冗余和全组件范围，区间为 $56k–$144k。227kW、100% 液冷的 Rubin 级机架为 **$95k–$190k/rack**。这不含完整机架、GPU、服务器、设施 MEP 和所有 CDU 系统集成价值。
+
+| 142kW rack 小组件 | 全行业单架 BOM | 主要价值来源 | Parker 是否有产品 |
+|---|---:|---|---|
+| GPU/CPU/网络/内存冷板、TIM/压紧 | $20k–48k | 微通道/钎焊、热阻、平面度、良率 | TIM/压紧材料有；Parker 不是公开头部冷板量产商 |
+| QD/UQDB/MQD 与密封 | **$9k–24k** | 阀芯、seal、精密装配、clean test、IP | **是，核心强项** |
+| Manifold | $7k–18k | 均流、焊接、清洗、泄漏测试 | 可供部件/总成，规模未披露 |
+| Hose/tube/fittings | **$6k–15k** | 材料、挤出/编织/crimp、洁净和认证 | **是，核心强项** |
+| Pump/valve/VFD 分摊 | $6k–17k | 高流量、低能耗、冗余、控制 | 有泵阀/控制，不一定包完整 CDU |
+| PHE/filter/degas/reservoir 分摊 | $5k–13k | 低 approach、过滤精度、压降 | 有过滤/流控；PHE 非最强主业 |
+| Sensor/control/wiring | $3k–9k | 校准、固件、漏液/流量监测 | 有传感/控制，具体 design-in 未披露 |
+
+本地来源：[液冷小组件与流体控制](../../行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-07-10.md)、[数据中心直液冷系统](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-07-10.md)。
+
+### 9.2 Parker 可捕获内容量
+
+下表是 M，不是 Parker 报价。计算基准为 142kW、72 GPU 的 NVL72-equivalent rack；“Parker 捕获”考虑多供应商、并非每架采购全套 Parker 产品。每 MW=单架捕获÷0.142MW；每 GPU=单架捕获÷72。
+
+| Parker 产品组 | 全行业相关 BOM/rack | M：Parker 实际捕获/rack | M：每 MW | M：每 GPU | 每 optical port |
+|---|---:|---:|---:|---:|---|
+| UQD/UQDB/CDB/CDT＋密封 | $9k–24k | **$3k–12k** | **$21k–85k/MW** | **$42–167/GPU** | 当前直接 $0；共享回路不可硬分摊 |
+| hose/tube/fitting＋manifold 部件 | $13k–33k | **$4k–16k** | **$28k–113k/MW** | **$56–222/GPU** | 当前直接 $0 |
+| pump/valve/filter/sensor/seal/TIM 分摊 | $14k–39k | **$4k–15k** | **$28k–106k/MW** | **$56–208/GPU** | 当前直接 $0 |
+| **Parker 合计** | 组合相关 $36k–96k | **$11k–43k/rack** | **$77k–303k/MW** | **$153–597/GPU** | 当前可识别约 $0 |
+
+对 227kW 全液冷 rack，连接点、流量与监测增加，但单位 MW 规模效应会抵消部分价值上升。本文估计 Parker 捕获 **$18k–65k/rack、$79k–286k/MW**；若仍为 72 GPU，则约 **$250–903/GPU**。这一区间只有在 Parker 同时拿到连接、管路和多类流控产品时才达到上沿。
+
+**光端口口径：**Parker 不是光芯片、激光器或 transceiver 厂商。当前 800G/1.6T port 没有可验证的 Parker 直接 BOM，因此真实值应记为 **约 $0/port**，而不是把整架冷却成本平均后伪装成 optical content。若 2027 后 liquid-cooled optics 采用专用 mini-QD/微型管路，M：Parker 潜在为 **$3–15/port**，目前信心极低、未计入基准收入。
+
+### 9.3 价格传导链
+
+行业组件制造成本大致为：金属/聚合物/密封/磁材/电子料 **32%–42%**，机加工/冲压/焊接/钎焊/成型/装配 **18%–26%**，测试/清洗/校准/良率损失 **8%–14%**，共同设计/NRE **6%–12%**，物流/关税/本地化 **4%–9%**，质保/现场支持 **5%–10%**。
+
+价格由上游到客户的路径为：
+
+1. **铜、铝、不锈钢、EPDM/FKM/氟聚合物与电子料**通常按季度或半年公式传导，滞后 1–2 季；固定价合同短期压利润。
+2. **EVT/DVT/PVT 与首代量产**可收 NRE、tooling、expedite 和 capacity reservation，首年 ASP/毛利最高。
+3. **正式量产后 hyperscaler/OEM 强制多源和年降，**标准 UQD、普通 tube/manifold 典型年降 **5%–12%**，极端可 >15%。
+4. **低压降、<0.1ml spill、盲插错位容忍、cleanroom、100% leak/traceability**可获得约 **15%–40%** 认证溢价；但 RMA 和泄漏赔偿可吞噬多年毛利。
+5. Parker 若以“连接＋管路＋阀＋过滤＋密封”子系统打包，可把原材料变化封装进每 rack/MW 价格；若只是可互换标准件，客户议价权更强。
+
+### 9.4 航空与半导体为什么不强行给每 GPU 内容量
+
+- 航空产品不进入 AI rack BOM，正确单位应是“每机型/每飞机/每发动机”，但 Parker 未披露单机内容量；本文不造数。
+- 半导体 UHP 产品服务 fab 与 wafer 工具，无法从公开资料稳定映射到“每颗 GPU”。把 fab 管阀投资除以 GPU 出货会受晶圆良率、设备利用率、产品 mix 和折旧期影响，误差可能数量级。因此只用 fab/WFE 和公司收入情景，不给虚假每 GPU 精度。
+
+## 十、当前产能、供应链采纳与认证阶段
+
+Parker 不披露 UQD、hose、半导体阀或航空具体产线的单位产能。下表“产能”是 M 的年化收入承载能力，不是公司承诺，也不等于已取得订单；估算使用当前收入、合理利用率、产品自动化声明、同业交期和平台 backlog。
+
+| 业务/产品 | 当前年化收入产能 M | 当前利用/瓶颈 | 供应链采纳 | 认证/资格阶段 |
+|---|---:|---|---|---|
+| Aerospace Systems | **$7.2B–$7.6B** | 最新季度年化 $7.26B；瓶颈在合格供应商、机加工、航空人才和 OEM 节拍，不是需求 | 几乎所有主要商用/军用平台；OEM 与售后订单均强 | 已在役成熟资格；每个机型/部件受 FAA/EASA/军标和客户批准约束 |
+| 数据中心 QD/盲插/大流量接头 | **$90M–$120M** | UQD 自动化、全球制造可扩；真正瓶颈是新平台 AVL、流量/侵蚀/泄漏寿命 | UQD/UQDB 已规模采纳；CDB/CDT 为早期导入 | UQD 为 OCP Inspired、NPN/Intel 兼容；CDB 未见公开 OCP 认证；CDT 基于 LQC；ORV/PBMC 仍在标准工作组 |
+| 数据中心 hose/tube/fitting/manifold 部件 | **$70M–$90M** | 挤出/crimp 产能相对易扩；材料相容、低析出、洁净、总成 leak test 限制有效产能 | 已有 HPC/DC 应用，客户/SKU 未披露 | 客户特定 AVL/UL/材料测试；无统一“Parker 整组认证” |
+| 数据中心 valve/filter/sensor/seal/TIM/两相 | **$75M–$105M** | 产品分散；seal 配方、传感校准、过滤洁净、两相低渗透最难 | 单相产品已商业化；两相与 optical 多为早期 | seals/材料测试成熟；两相 ZutaCore/OCP 为技术验证，不等于规模认证 |
+| **数据中心合计** | **$250M–$310M** | 对应约 68%–84% 收入利用率 | 管理层称与所有行业领导者合作，但没有客户清单 | 至少一个核心系列已进入 OCP/NPN；其余逐客户 |
+| 半导体/电子 UHP | **$0.9B–$1.2B** | UHP 表面、PFA 纯度、氦检、clean build、tool OEM 认证 | 全球 fab、facility 与 tool 应用；客户收入不拆 | 930Y 等全数氦检；资格主要是 fab/tool OEM 私有 AVL |
+| 现有 Filtration & Engineered Materials | **$6.3B–$6.7B** | 全球工厂和售后渠道；滤材、认证、SKU/库存管理 | 多行业成熟，DC 只占小部分 | 大量指定/验证产品；没有单一跨平台认证 |
+| Curtis | **$0.35B–$0.40B** | 功率电子、软件、标定和客户平台验证 | 物料搬运/off-highway 已成熟 | AC F 系列含双 MCU/functional safety；整机 OEM 仍需应用认证 |
+| Filtration Group（独立标的） | **约 $2.1B–$2.3B** | 现有全球产能；85% 售后降低新设备依赖 | 标的产品已商业采纳 | 交易尚未交割；产品资格与并购监管是两件事 |
+
+### 认证与订单之间的边界
+
+1. **OCP Inspired/NPN approved 是入场券，不是独家订单。**它证明接口与生态兼容，不能证明在 GB300、Rubin 或某 hyperscaler 的份额。
+2. **OCP 工作组参与是领先指标。**2026 OCP EMEA Summit 的 PBMC 更新由 Meta 与 Parker 工程师共同参与，说明 Parker 在接口定义阶段有影响力；但规范完成、多源互换、客户 AVL 和量产订单仍是四个不同阶段。
+3. **产品公告不等于产能售罄。**CDB/CDT 参数很强，但 Parker 没有给出 bookings、客户、月产或 backlog。
+4. **同业反证很关键。**CPC UQD(B)08 的 5 天交期与“数百万套/月潜在产能”表明标准接头加工不是全行业硬短缺；若 Parker 仅靠标准 UQD，极度乐观毛利不可持续。
+
+标准与同业来源：[OCP Cold Plate/UQD v2/BMQC/PBMC 工作流](https://www.opencompute.org/wiki/Cooling_Environments/Cold_Plate)、[2026 OCP EMEA Summit](https://www.opencompute.org/index.php/events/past-events/2026-ocp-emea-summit)、[Parker OCP Marketplace UQD](https://www.opencompute.org/products/443/parker-uqd-series-universal-quick-disconnect-couplings)、[CPC UQD(B)08 产能/交期](https://www.cpcworldwide.com/Liquid-Cooling/Products/Universal-Quick-Disconnects-UQDs/UQD08-UQDB08)。
+
+## 十一、一年后收入贡献：基准、乐观、极度乐观
+
+### 11.1 情景定义
+
+- **基准：**航空订单正常转化；工业缓慢复苏；Rubin/云 ASIC 按计划但受电力/CDU/验收约束；标准液冷件降价；Filtration Group 在 2026H2 交割、CIRCOR 年底前交割。
+- **乐观：**航空 OEM 与售后继续双位数；电子/半导体和工业订单保持；UQD v2/PBMC、多款 CDB/CDT 获多客户 AVL；液冷 attach 与 200kW+ rack 加快；两笔并购较早交割。
+- **极度乐观：**航空供应链和交付同时提速；Rubin/Helios/云 ASIC、电力和现场验收均超预期；Parker 获得高流量盲插/MQD 类关键平台份额；两相或 optical cooling 出现首批生产订单；扩产未造成 ASP 崩塌。
+
+### 11.2 产品/业务收入情景
+
+以下为未来十二个月累计收入，非单一财年指引。数据中心子项相加为数据中心合计；半导体和数据中心又嵌在工业平台内；FG/CIRCOR 在当前贡献为零，增长率不适用。
+
+| 业务/产品 | 当前 TTM/年化锚 | 基准：一年后收入/增速 | 乐观：一年后收入/增速 | 极度乐观：一年后收入/增速 | 关键假设 |
+|---|---:|---:|---:|---:|---|
+| Aerospace 现有业务 | $6.837B | **$7.50B / +10%** | **$7.80B / +14%** | **$8.10B / +18%** | $8.413B backlog、订单 +14%、OEM/售后交付 |
+| CIRCOR 并表增量 | 当前 $0 | **$0.22B** | **$0.27B** | **$0.31B** | 交割时点、双位数标的增长 |
+| **Aerospace 含 CIRCOR** | $6.837B | **$7.72B / +13%** | **$8.07B / +18%** | **$8.41B / +23%** | 不把协同全部当首年收入 |
+| DC：UQD/UQDB/CDB/CDT＋seal | M：$75M 中枢 | **$110M / +47%** | **$150M / +100%** | **$210M / +180%** | blind-mate/high-flow mix、AVL 份额 |
+| DC：hose/tube/fitting/manifold | M：$62M 中枢 | **$82M / +32%** | **$110M / +77%** | **$145M / +134%** | rack 数、连接点与整组采购 |
+| DC：valve/filter/sensor/TIM/两相 | M：$73M 中枢 | **$98M / +34%** | **$130M / +78%** | **$180M / +147%** | 主动流控/监测 attach；极端情景含早期两相/optical |
+| **直接数据中心合计** | **约 $210M** | **$290M / +38%** | **$390M / +86%** | **$535M / +155%** | 占公司收入仍仅约 1.2%–2.1% |
+| 半导体/电子 UHP | M：$850M 中枢 | **$950M / +12%** | **$1.05B / +24%** | **$1.20B / +41%** | fab/WFE、APAC 电子订单、客户份额 |
+| 现有 F&EM 平台 | $5.970B | **$6.30B / +6%** | **$6.55B / +10%** | **$6.80B / +14%** | 工业复苏、价格/mix、DC/semicon 小增量 |
+| Filtration Group 并表增量 | 当前 $0 | **$1.30B** | **$1.75B** | **$2.05B** | 交割时间；极端近似完整一年＋小幅增长 |
+| F&EM＋FG 报告规模 | $5.970B | **约 $7.60B** | **约 $8.30B** | **约 $8.85B** | 会计分配可能改变平台归属 |
+| Curtis | CY25 $320M | **$345M / +8%** | **$380M / +19%** | **$430M / +34%** | 交叉销售、电气化采用、off-highway 周期 |
+
+### 11.3 一年后 AI 重要性、紧急性、供需与溢价
+
+各格为“基准 / 乐观 / 极度乐观”的 1–5 分。
+
+| 业务/产品 | AI重要性 | 时间紧急性 | 供需紧张 | 垄断能力 | 溢价能力 | 为什么会变化 |
+|---|---|---|---|---|---|---|
+| Aerospace | 0.5 / 0.5 / 0.5 | 4.0 / 4.5 / 5.0 | 3.5 / 4.0 / 4.5 | 4.2 / 4.3 / 4.4 | 4.1 / 4.3 / 4.5 | OEM rate、国防交期与售后 mix |
+| UQD/UQDB/CDB/CDT | 5 / 5 / 5 | 4.5 / 5 / 5 | 2.5 / 3.5 / 4.5 | 3.0 / 3.3 / 3.7 | 3.2 / 4.0 / 4.6 | 标准件可扩；新高流量/盲插 AVL 才紧 |
+| hose/tube/fitting/manifold | 4.5 / 4.5 / 5 | 4.0 / 4.5 / 5 | 2.0 / 3.0 / 4.0 | 2.2 / 2.5 / 3.0 | 2.5 / 3.0 / 3.6 | 数量随 rack 增，普通总成易本地化 |
+| valve/filter/sensor/seal/TIM/两相 | 4.5 / 5 / 5 | 4.0 / 4.5 / 5 | 2.5 / 3.5 / 4.5 | 3.0 / 3.5 / 4.0 | 3.4 / 4.0 / 4.6 | 200kW+ 主动控制、可靠性与新工质提高壁垒 |
+| 半导体 UHP | 4 / 4 / 4.5 | 3.0 / 3.5 / 4.5 | 2.5 / 3.2 / 4.0 | 3.0 / 3.3 / 3.8 | 3.5 / 3.8 / 4.2 | HBM/先进制程 fab 资本开支、tool AVL |
+| Filtration/Engineered Materials | 2 / 2 / 2.5 | 2.5 / 3 / 3.5 | 2 / 2.5 / 3.2 | 3 / 3.3 / 3.6 | 3.5 / 3.8 / 4.0 | 耗材、specified media 与 FG 交叉销售 |
+| Curtis | 1 / 1 / 1.5 | 2 / 2.5 / 3 | 2 / 2.5 / 3 | 2.8 / 3 / 3.3 | 3 / 3.2 / 3.5 | 电气化平台捆绑、软件/标定切换成本 |
+
+## 十二、一年后产能、供应链采纳与认证阶段：三情景
+
+### 12.1 收入产能
+
+| 业务/产品 | 基准年化收入产能 | 乐观年化收入产能 | 极度乐观年化收入产能 | 扩产约束 |
+|---|---:|---:|---:|---|
+| Aerospace 含 CIRCOR | **$7.9B** | **$8.5B** | **$9.0B** | 合格供应链、航空人才、OEM rate、质量而非厂房单一因素 |
+| DC QD/盲插/大流量接头 | **$140M** | **$210M** | **$300M** | 自动化能扩；AVL/良率/cleanroom/全检决定可售产能 |
+| DC hose/tube/fitting/manifold | **$110M** | **$160M** | **$220M** | 区域化挤出/crimp/清洗/总成测试 |
+| DC valve/filter/sensor/seal/TIM/两相 | **$125M** | **$190M** | **$280M** | 传感校准、密封配方、两相低渗透和客户责任 |
+| **数据中心合计** | **$0.36B** | **$0.52B** | **$0.75B** | 极端情景要求扩产同时不发生严重 ASP 下跌 |
+| 半导体 UHP | **$1.10B** | **$1.35B** | **$1.65B** | UHP 质量、tool OEM/fab 资格、PFA/FFKM 供应 |
+| 现有 F&EM＋FG | **$8.2B** | **$9.0B** | **$9.7B** | 交割、工厂整合、SKU/渠道、滤材和工作资本 |
+| Curtis | **$0.40B** | **$0.48B** | **$0.60B** | 功率电子、软件工程、OEM 平台导入 |
+
+产能不等于收入。基准情景特意保留约 10%–25% 可用余量；极度乐观情景下若收入贴近产能上限，expedite、加班、双厂验证和良率成本可能压低毛利。
+
+### 12.2 供应链采纳和认证路径
+
+| 产品/业务 | 基准：一年后 | 乐观：一年后 | 极度乐观：一年后 |
+|---|---|---|---|
+| UQD/UQDB | 既有 OCP/NPN 资格延续；v2 样件/互换测试完成；Parker 在 QD 子市场份额 M 约 12%–18% | UQD v2 多客户 AVL；高流量/盲插 mix 上升；份额 M 18%–25% | VR200/200kW+ 平台获得关键设计位置；份额 M 25%–35%，但受强制二供限制 |
+| CDB/CDT/ORV/PBMC | CDB/CDT 获 1–2 个客户/系统商量产导入；PBMC 仍为开放标准/样机 | 多家 CDU/rack integrator AVL；PBMC/BMQC 正式多源规格；开始显著收入 | 获头部平台大规模 high-flow/MQD 类订单；连接点增长快于 rack |
+| hose/tube/fitting/manifold | 现有客户随 attach 增长；逐 SKU 材料/洁净认证 | Parker 用连接＋管路打包进入更多平台，单架内容上升 | 多区域预装总成，拿到系统级 leak/flow 责任与服务 |
+| valve/filter/sensor/seal/TIM | 单相 D2C 的过滤、seal、流控 attach 增；两相仍 pilot | 主动支路流控/漏液监测成为主流；两相获得首个生产客户 | 200kW+ 全液冷与 optical cooling 提前，形成新 SKU；两相达多 MW 部署 |
+| 半导体 UHP | 现有 tool/fab 资格扩量；先进制程/化学品新增验证 | 新 fab 与 tool OEM 多平台 design-in，耗材复购上升 | HBM4/先进封装和先进节点扩产超预期，关键 UHP 产品出现 allocation |
+| Aerospace | 现有机型增产、售后稳定；CIRCOR 完成交割 | 新/下一代商用与国防平台位置增加，供应链保持准时 | OEM rate 超预期、国防补库、CIRCOR 协同提前且无质量扰动 |
+| FG/过滤 | 完成交割、品牌/渠道保持、首批采购协同 | $220M 三年协同提前一部分，交叉销售进入 Parker 客户 | 协同与有机增长同时超预期，且工作资本/客户流失低于计划 |
+
+### 12.3 什么情况下认证故事被证伪
+
+- UQD/PBMC 符合公开规范，但一年后仍没有任何可验证批量 SKU、重复订单或客户扩产信号；
+- 液冷 attach 上升但标准件 ASP 同比跌 **>15%**、供应商毛利连续下行；
+- leak/RMA **>2%**、首次验收率 **<90%** 或项目延误 **>60 天**；
+- CDB/CDT 仍只有 bulletin，没有多个生产客户、产线利用或收入迹象；
+- 两相到 2027H1 仍没有 hyperscaler 多 MW 客户、>10,000 小时可靠性或 OEM 全质保；
+- 半导体业务的电子订单转弱、库存/应收上升且 APAC 销售连续两季低于中个位数。
+
+项目内反证框架：[AI 产业链瓶颈与反证指标总表](../../行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-07-10.md)、[冷却液、水处理、过滤与制冷剂](../../行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-07-10.md)。
+
+## 十三、用真实积压、供给与渠道证据预测未来一年增长
+
+### 13.1 可审计订单证据与缺口
+
+| 证据 | 已知事实 | 能证明什么 | 不能证明什么 |
+|---|---|---|---|
+| Parker 总积压 | 2026-03-31 **$12.5B**；67% 预计一年内确认 | 公司级可见性、长周期订单强 | 不能拆出数据中心/半导体 |
+| 航空积压 | **$8.413B，+15% YoY**；订单 +14% | 航空未来收入有硬支撑 | 不保证 OEM 不调整交付节拍 |
+| 工业积压 | CFO 确认约 **$4.0B–$4.1B**；北美/国际订单 +7%/+6% | 工业订单领先收入、FY27 有 carryover | 分销短周期需求仍会变化 |
+| 数据中心管理层披露 | 约 1% 收入、增长很快、服务所有行业领导者、提供系统/子系统 | 证明业务真实存在且非单 SKU | **没有客户名、项目名、订单额、交付窗口、取消率或毛利** |
+| OCP/NPN | UQD 已在 OCP Marketplace/NPN；Parker 参与 PBMC | 技术兼容、标准影响力、潜在 AVL | 不等于独家订单或高份额 |
+| CPC 同业渠道 | UQD(B)08 约 5 天交期、潜在数百万套/月 | 标准 QD 机械产能并非普遍短缺 | 不代表 Parker 交期，也不代表新平台资格易得 |
+| Parker DCW/OCP/技术 webinar | 展示 CDU-to-cold-plate 连接、单相/两相、低压降/材料 | 产品线和工程重点确实在加码 | 会议参展不是 bookings |
+| 航空项目名 | F-35、KC-46、C919 等公开平台位置 | 认证与 installed base 壁垒 | 不是近半年新增订单金额 |
+
+**渠道结论：**Parker 已披露公司/分部 backlog，故不需要完全依赖渠道传闻推断公司增长；但数据中心独立 backlog 缺失。本文只用“约 1% 当前收入＋产品资格＋行业 rack/BOM 增长”推算，不声称存在未公开的某云客户巨额订单。公开资料中未找到可审计的数据中心客户项目名、订单金额和交付窗口，这是模型最大的不确定性。
+
+### 13.2 公司未来一年三情景
+
+| 情景 | 订单/取消假设 M | 产能与交付 | 并购并表 | 未来12个月收入 | 报告增速 | 同口径有机增速 M | 调整后分部利润率 M |
+|---|---|---|---|---:|---:|---:|---:|
+| **基准** | 总 B/B 回落至 1.03–1.08；航空取消/延期 1%–2%，工业 2%–4%；数据中心无具名大单假设 | 航空正常转化；工业渐进复苏；标准液冷供给改善 | FG 约 7–9 个月、CIRCOR 约 6–8 个月 | **$23.6B–$24.0B** | **+12%–14%** | **+6%–7%** | **27.3%–27.7%** |
+| **乐观** | B/B 1.08–1.13；取消/延期 1%–2%；electronics/DC 订单持续高个位数以上 | 航空供应链改善；液冷 AVL 与产能同步扩；半导体强 | FG/CIRCOR 较早交割 | **$24.5B–$25.0B** | **+17%–19%** | **+8%–9%** | **27.7%–28.2%** |
+| **极度乐观** | B/B >1.13；取消 <1%；航空、工业和 AI 组件同时上修 | 产能扩张被需求完全吸收；200kW+ rack、Rubin/ASIC、现场验收均提前 | 两笔交易近完整年度贡献，协同早于计划 | **$25.5B–$26.2B** | **+21%–25%** | **+11%–13%** | **28.2%–28.8%** |
+
+### 13.3 为什么基准不是简单用 $12.5B backlog 除以收入
+
+1. 最新 backlog 的 67% 预计一年内确认，即约 $8.38B，只覆盖 TTM 收入约 40%；Parker 大量工业业务为短周期、当季下单当季出货。
+2. 航空 backlog 占比高且周期长；工业分销收入更多由实时需求决定。
+3. backlog 会受汇率、收购/剥离和交付计划影响；本文 B/B 只是代理。
+4. FG 与 CIRCOR 当前不在 backlog/收入内，并表增长不是原 Parker 订单转化。
+5. 未来收入还受价格/mix、产能、供应商质量、客户 pull schedule 与取消/延期影响。
+
+### 13.4 情景切换触发器
+
+- **由基准上修至乐观：**连续两季 PH 订单 ≥+8%、航空 B/B>1、工业 backlog/revenue 继续上升；数据中心至少出现产品级量产/重复订单证据；液冷 ASP 稳、RMA<1%；FG/CIRCOR 按时交割。
+- **由乐观上修至极度乐观：**Rubin/云 ASIC 高密 rack、firm power 与现场验收同时提前；Parker high-flow blind-mate/MQD 类产品进入头部平台；DC 收入连续两季 >50% 增长且毛利不降；航空 OEM rate 再上修。
+- **下修：**总 B/B <1 两季、航空 backlog 下降、工业订单转负；客户延误 >60–90 天；液冷 ASP <-15% 且毛利下滑；并购交割延后/杠杆 >3x；库存天数继续上升而销售减速。
+
+## 十四、竞争格局、技术主流性、替代方案与切换成本
+
+### 14.1 主要竞争对手
+
+| 关键市场 | 主要竞争对手 | Parker 优势 | Parker 劣势/风险 |
+|---|---|---|---|
+| 航空飞控/液压/作动 | RTX/Collins、Moog、Safran、Eaton Aerospace、Honeywell、Woodward、Crane、Triumph、Senior | 几乎所有主要平台、系统＋组件广度、Meggitt 补强、全球 MRO | 新平台招标激烈；客户 OEM 集中；质量事件代价巨大 |
+| 航空传感/制动/安全/发动机组件 | Honeywell、RTX、Safran、TransDigm、Crane、Woodward、GE Aerospace 相邻业务 | Meggitt installed base、认证、售后 | CIRCOR 买价高；OEM mix 上升可能压利润 |
+| 数据中心 UQD/UQDB/MQD | **CPC/Dover、Stäubli、CEJN、Danfoss**；Nidec、Auras、Envicool、中航光电等扩张 | 原始 OCP 参与、NPN、每件氦检、cleanroom、全球 quick coupling 经验 | CPC 有五天交期/数百万套月产能声明；Stäubli 已明确 VR200 MQD；标准化削弱排他性 |
+| hose/tube/manifold | Gates、Trelleborg、Continental、Hutchinson；Boyd、CoolIT、Delta、Auras/AVC、ODM/本地总成厂 | 材料数据库、全球挤出/crimp、连接件打包 | 市场分散、制造易本地化；ODM 可垂直整合 |
+| CDU 内 pump/valve/control | Grundfos、Nidec、Wilo/Xylem、Danfoss、Belimo、Delta、Eaton/Boyd、Schneider/Motivair | 泵阀、过程控制、传感与 fluid connector 跨技术 | Parker 不是完整 CDU 龙头，系统责任/软件/服务不及全栈商 |
+| filter/seal/TIM/EMI | Pall/Danaher、Donaldson、Eaton、HYDAC、Entegris；Trelleborg、Freudenberg；Henkel、3M、Dow/Laird | 过滤＋工程材料广度、指定产品和分销 | 单项专业厂可能技术更深；普通滤芯/TIM 多源 |
+| 半导体 UHP 阀/调压/连接 | Fujikin、Swagelok、CKD、MKS、VAT、Ichor、Entegris、Pall | Veriflo、PFA/PTFE/316L、seal/filter 全回路、全球应用工程 | 日本/美国专业厂在核心 tool OEM 有深厚 AVL；Parker 收入透明度低 |
+| 工业运动与流控 | Bosch Rexroth、Danfoss、SMC、Festo、IMI/Norgren、Emerson/ASCO、Gates、Swagelok、Trelleborg | 产品最广、分销、local-for-local、跨技术系统 | 亚洲本地竞争、标准件价格、工业周期 |
+| 过滤平台/售后 | Donaldson、Pall/Danaher、MANN+HUMMEL、Camfil、Freudenberg、Eaton、Pentair、Entegris | Parker＋FG 规模、85% FG 售后、媒体/应用广度 | 高交易价；品牌/SKU/渠道整合复杂；兼容滤芯会压价 |
+| Curtis 电气化 | Danfoss Editron、BorgWarner/Sevcon、ZAPI、Bosch Rexroth、ABB/电驱相邻厂商 | 控制器＋Parker motor/ePump/hydraulics/HMI/software | 低压移动电控竞争激烈；客户可用开放 CAN/软件平台换供应商 |
+
+Parker 10-K 明列的工业全球竞争者包括 Bosch Rexroth、Danaher、Danfoss、Donaldson、Emerson、Festo、Freudenberg-NOK、Gates、IMI/Norgren、SMC、Swagelok、Trelleborg；航空竞争者包括 Crane、Eaton、Honeywell、Moog、RTX、Safran、Senior、Triumph、Woodward。[FY2025 10-K 竞争章节](https://www.sec.gov/Archives/edgar/data/76334/000007633425000035/ph-20250630.htm)
+
+### 14.2 新技术是否会成为主流
+
+| 技术 | 2026–2027 主流判断 | Parker 位置 | 主要风险/替代 |
+|---|---|---|---|
+| **单相 direct-to-chip liquid cooling** | **是。**100kW+ 新 AI rack 已从可选转默认方向；项目内估计当前在全部新增 AI rack 中 attach 42%–55%，在 100kW+ 中 60%–78%，一年后分别 58%–74%、78%–92% | 产品最完整、收入已真实但小 | 低密推理仍用风冷；电力/验收延迟；系统商捕获更多价值 |
+| **OCP UQD/UQDB** | **是，标准接口主流。**促进多供应商和可维护性 | 已认证/兼容、量产 | 标准化令普通件商品化、ASP 年降 |
+| **high-flow blind-mate、BMQC/PBMC/MQD** | **正在成为 200kW+ rack 主流**，但型号/接口仍演进 | ORV/BMQC、CDB/CDT、PBMC 参与，具机会 | Stäubli VR200 MQD、CPC v2、客户自有接口；Parker 未披露 VR200 design-win |
+| **主动流量控制、传感、漏液监测** | **会快速提高 attach。**227kW rack 被动均流不足 | Parker 有阀/传感/过滤/控制产品 | Schneider/Vertiv/ODM 控制平台可能把硬件白牌化 |
+| **两相 waterless D2C** | 2026–2027 **不是主流，属于期权** | Sporlan/Parflex/ZutaCore 具管阀/密封能力 | 工质、压力、渗透、回收、OEM 质保、维护培训；单相暖水可继续升级 |
+| **optical liquid cooling/mini-QD** | 2027 前后可能试点，当前不是规模主流 | 可从微型流体连接切入，但无已证实量产产品 | 更高效光器件、热沉/风冷、CPO 架构；Stäubli 已公开 Mini-QD |
+| **航空 more-electric actuation/thermal** | 长期主流，但替换是渐进式 | Parker/Curtis/Meggitt 在作动、电力、控制和热管理齐全 | 认证周期长；电动替代液压可能让部分传统产品承压，也给电控新产品机会 |
+| **半导体 UHP 流控与高纯过滤** | 先进节点/HBM/先进封装长期必要 | Parker 产品覆盖 facility 到 tool | Fab capex 周期、客户资格集中、专业竞争对手强 |
+
+项目内行业规模表明，未来十二个月核心液冷小组件与流控市场为 **$3.56B–$5.14B（基准）、$5.40B–$7.85B（乐观）、$8.18B–$11.75B（极度乐观）**。Parker 当前约 $0.21B 数据中心收入只占该广义机会的一小部分，并且产品口径不完全一致；这既说明 runway，也说明不能直接用 TAM 推 Parker 收入。[项目内液冷小组件研究](../../行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-07-10.md)
+
+### 14.3 客户替换成本
+
+| 产品层 | 替换成本 | 所需时间 M | 原因 | 何时会降低 |
+|---|---:|---:|---|---|
+| 航空已认证系统/组件 | **极高 5/5** | 12–36 个月以上，部分贯穿机型寿命 | 适航、飞测、安全、软件/维修文件、备件和责任 | 新机型重新竞标、监管批准二供、原供应商质量失败 |
+| 半导体 UHP tool/fab 组件 | **高 4–5/5** | 6–18 个月 | ppb 级污染、particle、dead volume、材料相容和良率风险 | 标准化接口、成熟二供、非关键 facility 部位 |
+| 数据中心定制 cold-loop/高流量盲插 | **中高 4/5** | 1–2 个季度，复杂平台更长 | flow/ΔP、seal/coolant、泄漏、寿命、rack 质保与备件 | OCP v2 完整互换、长期公开可靠性数据 |
+| 标准 UQD/UQDB | **中 2.5–3.5/5** | 数周至一季度 | 接口可互换，但材料/Cv/spill/寿命和客户 AVL 仍不同 | 多家完全互插、客户验证自动化、故障率稳定 |
+| hose/tube/manifold | **中 2.5–3/5** | 1–2 季度 | 清洁、弯曲、crimp、流量平衡和排液/冲洗 | ODM 自制、统一材料与长度、普通件本地化 |
+| filter/seal/耗材 | **中高 3–4/5** | 数周至数月 | installed base、压降/粒径、材料和保修 | 兼容滤芯/标准 O-ring 普及 |
+| Curtis 控制器/软件 | **中高 3.5–4/5** | 6–18 个月 | 控制标定、CAN、functional safety、EMC、整机验证 | 开放软件栈、同 pin/同协议二供、车型换代 |
+
+### 14.4 最大替代风险
+
+1. **标准化替代品牌溢价：**OCP v2/BMQC/PBMC 让客户更容易二供；Parker 必须以低压降、可靠性和总成责任守住溢价。
+2. **ODM/系统商垂直整合：**Boyd、CoolIT、Delta、Nidec、Auras/AVC、服务器 ODM 可自行采购或制造 manifold/hose/cold plate，把 Parker 限制在单一接头。
+3. **架构替代：**低密机架继续风冷；暖水单相可能延后 chiller/制冷剂需求；两相/浸没若成熟会改变 hose/seal/valve 材料与 BOM。
+4. **亚洲低成本供应：**标准 hose、fitting、manifold、UQD 会面临中国/台湾本地厂扩产和客户本地化要求。
+5. **专业厂技术深度：**CPC/Stäubli 在 QD、Entegris/Fujikin 在半导体、Moog/RTX/Safran 在航空子系统均可能在单项上强于 Parker。
+
+## 十五、风险清单与跟踪指标
+
+### 15.1 公司级风险
+
+| 风险 | 当前状态 | 影响路径 | 重点阈值 |
+|---|---|---|---|
+| 高估值 | 35.5x TTM P/E、28.9x forward、5.78x P/S | 任何增长/利润率/并购低于预期都压倍数 | 有机增长 <4%、利润率不扩张、FCF yield 仍低 |
+| 并购杠杆与整合 | FG＋CIRCOR 交易价 $11.8B | 利息、评级、协同、客户/人才流失、商誉 | 交割后净杠杆 >3x；两年后仍 >2.5x |
+| 航空客户/供应链 | backlog 强，供应链改善 | OEM rate/push-out、质量、劳动力 | 航空订单 <+5%、backlog 连续下降、交付延误 |
+| 工业周期 | 正在缓慢恢复 | 分销、OEM capex、库存 | 北美/国际订单转负两季；经销商库存上升 |
+| 工作资本 | 存货 $3.179B，库存天数约 88 | 现金转化、减值 | 库存天数 >95 且收入减速；应收增速显著高于收入 |
+| 无形资产 | 商誉＋无形占资产 60.4% | 减值、摊销、ROIC | FG/CIRCOR 增长/利润显著低于收购模型 |
+
+### 15.2 AI/数据中心专属风险
+
+- **收入基数太小：**即使直接数据中心收入翻倍到约 $0.42B，对 $21B 公司也只增加约 1 个百分点收入。
+- **披露不足：**无具名客户、订单额、独立 backlog/毛利/产能；市场容易把行业增长误当公司份额。
+- **组件商品化：**标准 UQD、tube、manifold 的数量增长可能被 ASP 年降抵消。
+- **故障尾部：**一个 $10–100 的 seal/QD 可造成数百万美元 rack 停机，赔偿、召回和客户移除 AVL 的损失远大于单件毛利。
+- **电力/commissioning 约束：**GPU 已交付不等于 rack 上线；项目可形成积压而不是按季确认收入。
+- **技术路线：**Parker 在单相连接强，但未证明拥有完整冷板/CDU/控制平台优势；两相和 optical 尚早。
+
+### 15.3 建议的季度跟踪面板
+
+| 指标 | 当前锚 | 多头信号 | 反证/下修信号 |
+|---|---|---|---|
+| PH orders / backlog | +9%；$12.5B | 订单 ≥+8%、B/B>1.05、backlog 增 | B/B<1 两季、backlog 降 |
+| Aerospace | 订单 +14%；backlog $8.413B；有机 +14.2% | OEM/售后均双位数、margin ≥29% | OEM push-out、订单 <+5%、margin <28% |
+| Industrial | NA/Intl orders +7%/+6%；backlog约 $4.09B | 销售追上订单、短周期也改善 | 经销商库存增、订单转负 |
+| DC 收入 | 约 1% 公司收入 | 公司首次拆出 >1.5%、连续 >50% 增长 | 仍约1%且行业翻倍，意味着份额下降 |
+| UQD/CDB/CDT | OCP/NPN；新品公告 | 多客户 AVL、重复订单、high-flow mix | 只有 demo；ASP <-15% |
+| 液冷质量 | 未披露 | RMA<1%、首次验收>95%、delay<30日 | RMA>2%、首次验收<90%、delay>60日 |
+| 半导体/APAC | APAC organic +9.6% | electronics orders/shipments 双位数 | APAC <5% 两季、库存/应收上升 |
+| FG/CIRCOR | 待交割 | 按时交割、净杠杆≤3x、协同按计划 | 延期、评级下调、净杠杆>3x |
+| FCF | FY26 guide $3.3B–$3.6B | >$3.6B、转化约100%、快速降债 | <90% 转化、工作资本吞噬现金 |
+
+## 十六、过去半年最新报告、会议、论坛与技术资料时间线
+
+| 日期 | 事件/资料 | 新信息 | 对判断的影响 |
+|---|---|---|---|
+| 2026-01-29 | Parker FY26Q2 | 收入 +9.1%、有机 +6.6%、orders +9%、backlog $11.7B；航空 margin 30.2% | 证明工业恢复与航空高利润并存 |
+| 2026-02-18 | Barclays Industrial Select Conference | 公司继续强调组合、航空长周期、工业复苏和高现金转化 | 作为管理层中期定性验证，不单独当订单 |
+| 2026-03-18 | Bank of America Global Industrials Conference | 市场讨论集中于订单、margin、并购和组合质量 | 投资者仍按 compounder 而非液压周期股定价 |
+| 2026-03 | Parker CDT Series bulletin | OCP LQC 大流量接头，Cv 15.9、最大静压 175psi、10–70°C | 直接证明 Parker 正把产品推向 CDU/header/manifold 大流量层 |
+| 2026 OCP EMEA Summit | PBMC、UQD v2、冷板规范进展；Meta 与 Parker 工程师共同参与 PBMC session | 标准影响力上升，但多源化也更快 | 同时上修 adoption、下修普通件永续 ASP |
+| 2026 春季 | Parker Data Center World 页面/技术活动 | 强调 single/two-phase、CDU-to-cold-plate、材料、pressure/flow、leak mitigation | 产品线真实；页面标为 DCW2026，但嵌入日期仍写 Apr 21–23, 2025，故只作产品/专家证据，不用其日期或参展本身推订单 |
+| 2026-04-30 | Parker FY26Q3 与电话会 | 收入 $5.486B、有机 +6.5%、orders +9%、backlog $12.5B；DC 约 1% 且 very fast growing | 最新、最关键的公司锚 |
+| 2026-05-15 | S&P 调整展望至 Positive | 认为 FG 后杠杆不超过约 3x，FY27 约 2.7x | 支持“可控但需去杠杆”的判断 |
+| 2026-05-21 | CIRCOR Aerospace 收购公告 | $270M 收入、>40% EBITDA、双位数增长、$2.55B 买价 | 航空利润质量再提高，同时并购估值/杠杆风险上升 |
+| 2026-06 | Stäubli 发布 VR200 MQD | 明确按 NVIDIA 规格、兼容 VR200、高流量自动连接 | Parker high-flow/MQD 机会的强竞争反证 |
+| 2026-06-22 | 欧盟公布 M.12303 FG 交易事前申报 | 简化程序候选 | 监管风险下降 |
+| 2026-07-06 | 欧盟按简化程序批准 FG 交易 | 未见竞争疑虑 | 接近交割，但截至 7 月 12 日仍应等 Parker 正式 close 公告 |
+
+Parker 官方演示入口：[2026 演示与会议资料](https://investors.parker.com/news-events/presentations)、[FY26Q3 webcast/演示/10-Q 汇总页](https://investors.parker.com/news-events/ir-calendar/detail/20260430-fy26-third-quarter-earnings-release-and-webcast)、[Parker Data Center World 页面](https://discover.parker.com/dcw)。
+
+## 十七、综合判断
+
+### 17.1 研究评分
+
+| 维度 | 评分 | 结论 |
+|---|---:|---|
+| 商业质量 | **9/10** | 数十万产品、跨技术、分销＋OEM＋售后、航空认证和高现金转化 |
+| 当前增长 | **8/10** | 航空双位数、工业恢复、orders/backlog 强 |
+| 当前资产负债表 | **8/10** | 并购前净杠杆约 1.7x、投资级、FCF 强 |
+| 并购后财务风险 | **6/10** | $11.8B 待交割交易、现金低、无形资产高，依赖整合/去杠杆 |
+| 当前 AI 收入纯度 | **3/10** | 直接数据中心仅约 1%；半导体/发电/施工为间接 |
+| AI 产品期权 | **7/10** | UQD、high-flow blind-mate、hose、seal、filter、flow control、UHP 齐全 |
+| 数据中心护城河 | **6/10** | AVL/可靠性强，但开放标准、多源和系统商垂直整合限制垄断 |
+| 航空护城河 | **9/10** | 长认证、几乎所有主要平台、售后、Meggitt/CIRCOR 补强 |
+| 估值吸引力 | **4/10** | 35.5x TTM P/E、23.8x EV/EBITDA，容错率低 |
+
+### 17.2 最终结论
+
+Parker 是一家具备真实高质量复利属性的公司：航空航天长周期与售后、工业分销、跨技术系统能力、精益和现金流互相增强。最新五季度订单与积压不是 AI 叙事，而是可审计的基本面改善；航空 $8.413B backlog 和约 30% 调整后利润率尤其强。
+
+AI 数据中心业务同样真实，但目前规模约 **$210M**，不足公司收入 1%–1.1%。最值得跟踪的是 UQD/UQDB 之外的 **CDB、CDT/LQC、ORV/BMQC/PBMC、低渗透 hose/tube、seal/filter、主动流控、两相管路与未来 optical mini-QD**，因为这些产品能随 rack 功率、连接点和维护复杂度提高内容量。最不应做的是把完整 $55k–$115k/rack 液冷组件 BOM、甚至完整 CDU/冷板价值全部归给 Parker。
+
+未来一年，**基准情景更可能是“航空继续强、工业温和恢复、AI 小业务高速增长、并购带来报告收入跳升、标准液冷件开始年降”**。Parker 有机会凭高端 mix、认证和多产品捆绑抵消普通件 ASP 压力，但没有证据支持其在数据中心连接件拥有不可替代垄断。
+
+投资上的主要矛盾不是公司好不好，而是 **高质量是否已被 28.9x forward P/E 充分定价，以及两笔昂贵并购能否在不突破 3x 杠杆、不中断现金复利的情况下兑现。**在没有更多数据中心客户/订单拆分前，合理的估值锚仍应是航空、工业 margin、FCF 和并购 ROIC；AI 只给予有限、可验证的期权价值。
+
+## 十八、主要来源索引
+
+### 18.1 公司财报与 SEC
+
+1. [Parker FY2025 10-K](https://www.sec.gov/Archives/edgar/data/76334/000007633425000035/ph-20250630.htm)
+2. [Parker FY2026 Q3 10-Q](https://www.sec.gov/Archives/edgar/data/76334/000007633426000073/ph-20260331.htm)
+3. [FY2025 Q3 results](https://investors.parker.com/sec-filings/all-sec-filings/content/0000076334-25-000017/exhibit991q3fy25.htm)
+4. [FY2025 Q4 and full year results](https://investors.parker.com/news-events/press-releases/detail/487/parker-reports-fiscal-2025-fourth-quarter-and-full-year)
+5. [FY2026 Q1 results](https://investors.parker.com/news-events/press-releases/detail/495/parker-reports-fiscal-2026-first-quarter-results)
+6. [FY2026 Q2 results](https://investors.parker.com/news-events/press-releases/detail/499/parker-reports-fiscal-2026-second-quarter-results)
+7. [FY2026 Q3 results](https://investors.parker.com/news-events/press-releases/detail/506/parker-reports-fiscal-2026-third-quarter-results)
+8. [FY2026 Q3 earnings call transcript](https://www.fool.com/earnings/call-transcripts/2026/04/30/parker-hannifin-ph-q3-2026-earnings-transcript/)
+9. [Parker financial results hub](https://investors.parker.com/financial-information/financial-results)
+
+### 18.2 收购、评级与监管
+
+1. [Curtis Instruments completed acquisition](https://investors.parker.com/news-events/press-releases/detail/491/parker-completes-curtis-instruments-acquisition)
+2. [Filtration Group acquisition announcement](https://investors.parker.com/news-events/press-releases/detail/496/parker-to-acquire-filtration-group-corporation)
+3. [CIRCOR Aerospace acquisition announcement](https://investors.parker.com/news-events/press-releases/detail/507/parker-to-acquire-circors-commercial-and-defense)
+4. [EU M.12303 prior notification](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ%3AC_202603352)
+5. [European Commission case M.12303](https://competition-cases.ec.europa.eu/cases/M.12303)
+6. [EU Phase I closed-cases tracker](https://www.lexisnexis.co.uk/legal/guidance/eu-phase-i-mergers-closed-cases-tracker)
+7. [S&P Parker outlook revised to positive, 2026-05-15](https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3563407)
+
+### 18.3 Parker 产品与技术资料
+
+1. [Parker UQD / NVIDIA Partner Network](https://discover.parker.com/UQD-Series)
+2. [Parker liquid cooling couplings portfolio](https://discover.parker.com/LiquidCoolingCouplings)
+3. [Push-Button UQD bulletin](https://www.parker.com/content/dam/Parker-com/Literature/LPCE/New-PDFs/Product%20Bulletin_UQD.pdf)
+4. [CDB Series bulletin](https://www.parker.com/content/dam/Parker-com/Literature/Quick-Coupling/CDB%20Series%20Bulletin.pdf)
+5. [CDT Series / LQC bulletin](https://www.parker.com/content/dam/Parker-com/Literature/Quick-Coupling/CDT%20Series%20Bulletin.pdf)
+6. [Data center fluid connection application overview](https://www.parker.com/content/dam/parker/fcg/group/data-centers/Data%20Center%20-%20FCG%20Thermal%20Mgmt%20Application%20Overview.pdf)
+7. [Next-generation data center liquid-cooling white paper](https://www.parker.com/content/dam/Parker-com/Literature/Quick-Coupling/Parker_Liquid_Cooling_whitepaper_Final.pdf)
+8. [Parker data-center cooling performance webinar](https://discover.parker.com/data-center-cooling-performance_lp)
+9. [Parker/ZutaCore two-phase cooling](https://discover.parker.com/data-center-sustainable-liquid-cooling-wp)
+10. [Parker semiconductor fluid/gas manufacturing ecosystem](https://corpapps.parker.com/interactive-media/parker-hannifin-world/semiconductor-ecosystem-industrial-manufacturing/fluid-gas-manufacturing-supply.html)
+11. [Parker Veriflo FR1400/SQ2Micro/930 products](https://discover.parker.com/AP-ASEAN-SEMI-ING)
+12. [Curtis motor controllers](https://www.curtisinstruments.com/products/motor-controllers/)
+13. [Parker aerospace product scope](https://discover.parker.com/aerospace)
+14. [Parker Meggitt combined capabilities](https://discover.parker.com/meggitt)
+
+### 18.4 标准、论坛与竞争验证
+
+1. [OCP Cold Plate workstreams: UQD v2, BMQC, PBMC](https://www.opencompute.org/wiki/Cooling_Environments/Cold_Plate)
+2. [OCP UQD Rev 1.0 specification](https://www.opencompute.org/documents/ocp-universal-quick-disconnect-uqd-specification-rev-1-0-2-pdf)
+3. [OCP Parker UQD Marketplace](https://www.opencompute.org/products/443/parker-uqd-series-universal-quick-disconnect-couplings)
+4. [2026 OCP EMEA Summit](https://www.opencompute.org/index.php/events/past-events/2026-ocp-emea-summit)
+5. [OCP leak detection/intervention white paper](https://www.opencompute.org/documents/acs-cold-plate-leak-detection-and-intervention-white-paper-pdf-1)
+6. [CPC UQD(B)08: five-day lead time and capacity](https://www.cpcworldwide.com/Liquid-Cooling/Products/Universal-Quick-Disconnects-UQDs/UQD08-UQDB08)
+7. [Stäubli MQD for NVIDIA Vera Rubin VR200](https://www.staubli.com/cz/en/news/global/2026/uqd-mqd-vera-rubin-nvidia-staubli.html)
+8. [Parker Data Center World experts page](https://discover.parker.com/dcw)
+
+### 18.5 项目内相关行业资料
+
+1. [液冷小组件与流体控制，2026-07-10](../../行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-07-10.md)
+2. [数据中心直液冷系统，2026-07-10](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-07-10.md)
+3. [冷却液、水处理、过滤与制冷剂，2026-07-10](../../行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-07-10.md)
+4. [AI 数据中心建设规模与产业链订单映射，2026-07-09](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+5. [AI 产业链瓶颈与反证指标总表，2026-07-10](../../行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-07-10.md)
+
+---
+
+本报告用于基本面研究，不构成个性化投资建议。所有 M 标记数字均应在 Parker FY2026 Q4、并购交割公告及后续产品/订单披露后更新。

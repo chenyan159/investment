@@ -1,0 +1,159 @@
+# 公司收入传导与价值传导评估：ACM Research
+
+> 公司代号：ACMR  
+> 公司名称：ACM Research, Inc. / ACM Research  
+> 报告日期：2026-06-12，美国太平洋时间  
+> 主窗口：NTM，定义为 2026Q2-2027Q1 的未来四个季度经营窗口。  
+> 资料边界：本报告使用 `公司调研/`、`行业调研/` 中的正式材料，并用 ACM Research 官方公告、SEC 文件和 SEMI 等公开资料核验；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论或模型比较。  
+> 重要限制：本报告只评估经营收入、利润和现金流传导，不给投资评级，不判断目标价，不使用股价、估值倍数或市场定价作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 收入、毛利、经营利润和现金流；FY2026 指引、2025 全年收入、2026Q1 run-rate 和 2026Q1 shipments 只作为锚点。FY2027、玻璃基板/TGV、CoPoS、CPO 和更远期 hybrid bonding 只作为补充或远期期权。
+- 当前收入基准、指引和 run-rate：ACMR 2025 年收入 `$901.3M`；2026Q1 收入 `$231.3M`，同比 `+34.2%`；Q2 2025-Q1 2026 TTM 收入约 `$960.3M`；公司维持 2026 年收入指引 `$1.08B-$1.175B`，相对 2025 年约 `+21%-30%`。NTM 基准不是直接年化 Q1，而是用 FY2026 指引剩余三季加 2027Q1 正常 run-rate 估算。
+- 重要产品/业务线：清洗/Tahoe/SPM/半关键清洗，ECP 前道与封装电镀，先进封装 ex-ECP/vac-p/SFP/服务备件，Furnace/Track，PECVD SiCN/Ultra Pmax。
+- NTM 公司收入四情景：悲观 `$1.00B-$1.08B`；基准 `$1.15B-$1.25B`；乐观 `$1.35B-$1.50B`；极度乐观原始上限 `$1.65B-$1.90B`，经证据校准后只保留为低可信上限和附录跟踪。
+- 利润或 EBITDA 四情景：悲观毛利率 `41%-44%`、经营利润率 `8%-11%`；基准毛利率 `44%-47%`、经营利润率 `12%-16%`；乐观毛利率 `46%-49%`、经营利润率 `16%-20%`；极度乐观毛利率 `48%-52%`、经营利润率 `20%-25%`，但必须由高端 ECP/AP/PECVD repeat revenue 支撑，不能只靠 first tools。
+- 最大传导瓶颈：first-tool 验收和收入确认。2026Q1 shipments `$240.7M` 中 first-tool shipments `$143.8M`，first tools 对未来收入有帮助，但客户接受前不是确定收入。
+- 最大利润率变量：产品 mix 和价格竞争。ECP/AP/SPM 的技术价值高，但中国本土设备竞争、semi-critical 清洗价格、first-tool 初期成本和供应链替代都会影响毛利率。
+- 最大现金流变量：应收账款和存货。2026-03-31 应收账款净额 `$526.5M`、存货 `$738.0M`、客户现场 first-tools 成品库存 `$119.5M`；收入增长若继续依赖 first tools，经营现金流会滞后利润。
+- 可信度：基准收入为中高，基准利润为中，乐观收入为中，乐观利润为中低，极度乐观为低。
+
+核心结论：ACMR 的经营传导是“AI 芯片、HBM、先进封装和中国本土 WFE capex -> wet clean/ECP/AP tools -> first tool 验收或 repeat shipment -> 收入确认 -> 产品 mix 和验收成本决定毛利 -> 应收/存货决定现金流”。它不是 AI 数据中心直接 BOM 公司；NTM 主线应当是 2026 指引正常兑现加 ECP/AP mix 改善，而不是把玻璃、CPO、CoPoS、全球先进封装全部提前计入基准。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 清洗/Tahoe/SPM/半关键清洗 | 2025 收入 `$626.0M`；2026Q1 `$122.5M` | 2025 `69.5%`；2026Q1 `53.0%` | 最大收入底盘，SPM/Tahoe 是高端清洗增量 | A：SEC/财报产品收入；C：SPM 交付节奏 | 进入基准；基准要求清洗 mix 从 Q1 低点恢复，但不假设毛利率自动回到 2024 高点 | SPM 多客户 POR、Tahoe 化学品节省带来的高端替代 |
+| ECP 前道与封装电镀 | 2025 ECP/furnace/other 合计 `$199.6M`；2026Q1 合计 `$84.2M` | 2025 `22.1%`；2026Q1 `36.4%` | NTM 最大增量，覆盖 front-end ECP、TSV/RDL/pillar/bump 和部分 panel ECP | A：产品分类收入；B：ECP chamber 里程碑和 shipments；C：panel ECP 客户 traction | 核心 ECP 进入基准；panel ECP 小比例进入乐观和极度乐观 | 510/515/600mm panel、PLP、玻璃/TGV 金属化 |
+| 先进封装 ex-ECP / vac-p / SFP / WLP / 服务备件 | 2025 `$75.8M`；2026Q1 `$24.5M` | 2025 `8.4%`；2026Q1 `10.6%` | AI/HBM/CoWoS-like 清洗和表面处理暴露更直接 | A：收入表；B/C：中国大陆外封装客户与新加坡 OSAT 出货 | 进入基准，但按保守确认节奏；中国大陆外客户 repeat 才能上移 | vacuum flux cleaning、SFP、WLP/PLP wet process |
+| Furnace / Track | 公司未单独披露；包含在 ECP/furnace/other 或 first tools 中 | 无法可靠量化 | 平台化扩张方向，但 NTM 份额和毛利仍需验证 | C：管理层披露与客户评估；D：部分 evaluation tools | 小比例进入基准；大部分增量进入乐观或跟踪 | 国产 Track、准先进节点和成熟节点扩产 |
+| PECVD SiCN / Ultra Pmax | 首台 SiCN 系统已发往客户现场 final validation；收入未单独披露 | 当前接近 `0%-2%`，无法可靠量化 | 可能改变公司从湿法向沉积扩张的结构，但 NTM 证据不足 | D：产品发布、样机/首台发货；C：客户现场验证 | 不进入基准主口径，只允许少量已验收收入；主要放在乐观上限或附录跟踪 | BEOL SiCN、hybrid bonding surface stack、先进封装 dielectric |
+
+说明：公司正式披露的产品分类把 ECP、furnace 和 other technologies 合并；本报告按产品传导需要拆分，但公司层面汇总时会去重，不把拆分项上沿机械相加。
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只看产品外部需求池，不判断 ACMR 能拿多少份额，也不判断收入确认。需求锚来自 AI/HPC 前道设备景气、中国本土 WFE capex、HBM/先进封装/CoWoS/PLP 工艺需求，以及 ACMR 产品对应的行业可服务市场。金额为需求池或相对需求方向，不等于 ACMR 收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 清洗/Tahoe/SPM/半关键清洗 | SEMI Q1 2026 设备 billings 同比 `+14%`；行业资料估算 clean/wet/track 未来一年需求约 `$9B-$17B`；中国 mature/select advanced node 仍有本土替代需求 | 行业 clean/wet 需求落到 `$8B-$14B`；中国客户验收放慢；SPM 订单不转 repeat | `$9B-$17B` 区间内正常兑现；SPM/Tahoe 需求随逻辑、存储、post-CMP/post-etch 清洗稳定增长 | `$12B-$20B`；SPM/Tahoe 多客户拉货，先进节点和 HBM 相关清洗强于当前预期 | `$15B-$25B+`；中国本土高端清洗替代与全球 AP/HBM 清洗同时上修 | 悲观约低于基准 `$1B-$3B`；乐观高于基准 `$3B-$5B`；极度乐观高于基准 `$6B+` | 基准符合当前 WFE 和公司指引；乐观需客户加速，不因 AI 主题自动上修 | 正向：AI/HBM/先进逻辑增加清洗步骤。反证：中国本土设备价格竞争、客户 capex 延后、SPM 交付/验收慢 |
+| ECP 前道与封装电镀 | ACM 2025 10-K 中 ECP TAM 约 `$1.5B`；先进封装 RDL/TSV/Cu pillar/panel plating 增加需求 | `$1.2B-$1.5B`，front-end plating 正常但 AP/panel 推迟 | `$1.5B-$2.1B`，front-end ECP 与先进封装电镀正常增长 | `$2.0B-$2.8B`，HBM/CoWoS-like、RDL、PLP 客户扩大 plating capacity | `$3.0B+`，panel-level ECP 与 glass/TGV metallization 提前进入客户线体 | 悲观低于锚点 `$0.2B-$0.6B`；乐观高于锚点 `$0.5B-$1.3B`；极度高于锚点 `$1.5B+` | 基准接近当前预期；乐观需要客户项目和交付证据 | 正向：ECP chamber 里程碑、AP plating 路线明确。反证：panel adoption 仍早、AMAT/Lam/TEL/区域厂商竞争 |
+| 先进封装 ex-ECP / vac-p / SFP / WLP / 服务备件 | HBM3E/HBM4、CoWoS-like、RDL、flux cleaning、post-CMP 和 surface prep 是 2026-2027 需求主线；具体 wet tool 池无法可靠量化 | AI 封装客户延迟扩产；CoWoS/OSAT 外溢低于预期；需求只小幅高于 2025 | HBM/CoWoS/OSAT 维持高利用率；vac-p/WLP/SFP 需求随客户验证正常转化 | 中国大陆外封装客户和新加坡 OSAT 形成 repeat；AP wet tools 需求显著高于当前预期 | HBM4/Rubin/MI400/PLP 同时上修，vac-p/SFP/panel wet tools 非线性放量 | 绝对需求池缺少统一公开口径；用 ACMR 可收入化基数校准：基准较 2025 增量 `$35M-$75M`，乐观增量 `$95M-$165M` | 基准略高于当前收入锚；乐观需 repeat 订单 | 正向：行业先进封装设备订单强，ACMR 已向中国外客户出货。反证：ACMR 不是 TCB/HB/inspection 龙头，只能捕获湿法/清洗部分价值 |
+| Furnace / Track | Track 与 lithography wafer starts 绑定；Furnace/thermal 与 mature/select advanced node 及存储扩产相关；ACMR 份额仍低 | 客户评估延迟，TEL/SCREEN/国内同行保持强份额；需求不能转 ACMR 可参与项目 | 成熟/准先进节点和中国本土替代给少量 first tools；需求存在但不放大 | 中国客户追加 Track/Furnace，准先进节点扩产推动多客户导入 | 多客户 POR，Track/Furnace 变成平台化核心收入线 | 外部总需求大但 ACMR 可参与需求无法可靠量化；相对 ACMR 当前预期：悲观低 `$30M-$60M`，乐观高 `$60M-$120M` | 基准只能作为小比例需求；乐观以上需要客户认证 | 正向：中国路线依赖 DUV/track/thermal。反证：TEL/Kokusai/AMAT/ASM/北方华创等竞争强 |
+| PECVD SiCN / Ultra Pmax | SiCN 用于 advanced BEOL、Cu barrier/etch stop、advanced packaging bonding surface；ACMR 首台系统进入客户 final validation | 客户验证不通过或仅保持研发评估；NTM 需求为样机级 | 需求存在但仅少量 eval/accepted tools；不形成主收入池 | 2-3 个客户验证或 repeat，形成 `$50M-$100M` 级 ACMR 可参与需求 | SiCN/hybrid bonding/BEOL stack 被多客户采用，形成 `$150M-$250M+` ACMR 可参与需求 | 基准绝对增量为 `$0-$20M`；乐观增量 `$50M-$100M`；极度增量 `$150M+` | 基准低于产品叙事，符合收入确认纪律 | 正向：官方披露首台 SiCN 系统和 300mm 配置。反证：沉积是巨头强项，当前仍是 C/D 级证据 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断“可参与需求”能否转为 ACMR NTM 可确认收入，以及当前收入基数。A/B 证据可进入基准；C 级只保守折扣；D/E 不进入基准主口径。公司披露分类存在 ECP/furnace/other 合并，本表对未披露拆分项使用模型估算，并在公司汇总时去重。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 清洗/Tahoe/SPM/半关键清洗 | 2025 `$626.0M`；2026Q1 `$122.5M`；Q1 同比 `-5.5%` | 直接收入；AI 通过前道良率和清洗步骤间接传导 | 高端 SPM/Tahoe 毛利较好，semi-critical 价格竞争较强 | `$570M-$630M` | `$660M-$720M` | `$750M-$840M` | `$900M-$1.05B` | 基准为恢复到接近 2025 mix；悲观低于公司指引隐含路径；乐观高于当前指引 | A/C | 是 | SEC 产品收入；公司/电话会对 SPM 交付节奏的披露 | 基准主收入底盘；极度乐观需多客户 POR，不提前确认 |
+| ECP 前道与封装电镀 | 2025 ECP/furnace/other `$199.6M`；2026Q1 合计 `$84.2M`，同比 `+204.9%`；多数增量来自 ECP front-end 的管理层口径 | 直接收入；先进封装/HBM/RDL/TSV 传导较直接 | 高端 ECP 毛利较好，panel/AP 初期定制成本可能压毛利 | `$230M-$280M` | `$290M-$340M` | `$380M-$480M` | `$600M-$750M` | 基准高于 2025，符合 Q1 强势和 2026 指引；乐观要求 Q1 不是 timing | A/B/C | 是，panel ECP 仅小比例进入 | A：收入；B：shipments/ECP chamber；C：panel ECP first tool | NTM 最重要增量，需区分 core ECP 与 panel 期权 |
+| 先进封装 ex-ECP / vac-p / SFP / WLP / 服务备件 | 2025 `$75.8M`；2026Q1 `$24.5M`，同比 `+62.0%`；官方披露中国外封装客户和新加坡 OSAT 出货 | 直接收入；AI/HBM/CoWoS-like 的湿法/清洗环节 | 服务备件较稳，new AP tools 初期毛利和验收不确定 | `$80M-$110M` | `$105M-$145M` | `$160M-$220M` | `$260M-$360M` | 基准高于 2025，符合 Q1 run-rate；乐观需要 repeat | A/B/C | 是，按保守确认 | A：收入；B：正式客户出货；C：repeat 尚待验证 | 基准纳入，全球客户扩散放入乐观 |
+| Furnace / Track | 未单独披露；包含在 ECP/furnace/other 和 first tools；客户评估增加 | 直接收入，但可确认程度低于成熟清洗/ECP | 初期利用率和客户支持成本较高，利润率不应自动扩张 | `$20M-$50M` | `$40M-$70M` | `$80M-$140M` | `$200M-$300M` | 基准只作为当前计划的小比例收入；乐观以上才显著高于预期 | C/D | 小比例是；大部分否 | 管理层产品线披露、客户评估、first tools | 进入基准需已验收或清晰交付；未验收评估工具不进基准 |
+| PECVD SiCN / Ultra Pmax | 首台系统发往客户 final validation；无单独收入披露 | 直接潜在收入，但当前更像产品验证 | 若未量产，研发/支持费用先行；成功后可能高毛利 | `$0-$10M` | `$0-$15M` | `$40M-$80M` | `$150M-$250M` | 基准低于产品叙事；只承认可确认收入 | D/C | 不进入基准主口径 | 首台发货、Lingang lab 达规格、客户现场 final validation | NTM 基准仅作少量已验收收入；主体作为乐观/极度乐观或附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从需求和收入基数出发，判断每个产品 NTM 能给 ACMR 贡献的收入和利润。利润贡献主要指毛利贡献，并辅以经营利润方向；由于公司未披露产品级成本，利润区间为模型估算。公司汇总不机械相加各产品乐观上沿，因为 ECP/furnace/other 分类、客户预算和验收节奏存在重叠。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 清洗/Tahoe/SPM/半关键清洗 | 悲观产品 | `$570M-$630M` | 毛利约 `$235M-$275M` | 低于当前结构，GM 约 `41%-44%` | 低于当前指引隐含 mix | Q1 清洗同比下滑，semi-critical 价格压力 | 保留为悲观 | 中国客户验收慢、SPM 不转 repeat、价格竞争 |
+| 清洗/Tahoe/SPM/半关键清洗 | 基准产品 | `$660M-$720M` | 毛利约 `$295M-$335M` | 稳定，GM 约 `44%-47%` | 符合当前预期 | 2025 A 级收入 `$626M`，管理层预计清洗 mix 正常化 | 保留 | 不能因 AI 主题假设高端份额自动上修 |
+| 清洗/Tahoe/SPM/半关键清洗 | 乐观产品 | `$750M-$840M` | 毛利约 `$360M-$420M` | 改善，GM 约 `48%-50%` | 高于当前预期 | SPM/Tahoe 多客户导入，先进逻辑/存储清洗需求强 | 保留但需订单验证 | SCREEN/TEL/Lam 和本土同行竞争 |
+| 清洗/Tahoe/SPM/半关键清洗 | 极度乐观产品 | `$900M-$1.05B` | 毛利约 `$470M-$550M` | 明显改善 | 非线性高于预期 | 多客户 POR、SPM 15-20+ 之外追加、Tahoe 高端替代 | 下移为低可信上限 | 缺少多客户量产收入披露 |
+| ECP 前道与封装电镀 | 悲观产品 | `$230M-$280M` | 毛利约 `$95M-$125M` | 稳中偏弱 | 低于 Q1 年化路径 | Q1 强势可能含 timing，panel first tool 未必验收 | 保留 | AP/panel 采用慢，客户已有 POR |
+| ECP 前道与封装电镀 | 基准产品 | `$290M-$340M` | 毛利约 `$130M-$160M` | 稳定至小幅改善 | 符合指引增量需求 | 2026Q1 ECP/furnace/other `$84.2M`；ECP chamber 里程碑 | 保留 | 合并披露导致 ECP 与 furnace/other 难拆 |
+| ECP 前道与封装电镀 | 乐观产品 | `$380M-$480M` | 毛利约 `$180M-$240M` | 改善 | 高于当前预期 | front-end ECP repeat + AP/RDL/TSV/panel 客户追加 | 保留 | 必须回答谁买、买什么、何时验收 |
+| ECP 前道与封装电镀 | 极度乐观产品 | `$600M-$750M` | 毛利约 `$300M-$390M` | 大幅改善但非自动 | 明显高于预期 | PLP/panel、TSV/RDL、front-end ECP 同时突破 | 下移为乐观上限 | panel 和 glass/TGV 仍偏 2027-2028 期权 |
+| 先进封装 ex-ECP / vac-p / SFP / WLP / 服务备件 | 悲观产品 | `$80M-$110M` | 毛利约 `$30M-$50M` | 稳中偏弱 | 接近 2025，低于 Q1 run-rate | AP 工具验收延迟，中国外客户不追加 | 保留 | ACMR 不是封装主设备龙头 |
+| 先进封装 ex-ECP / vac-p / SFP / WLP / 服务备件 | 基准产品 | `$105M-$145M` | 毛利约 `$45M-$70M` | 稳定 | 符合 Q1 和公司指引 | 2025 A 级收入 `$75.8M`，Q1 `$24.5M` | 保留 | repeat 订单尚未充分验证 |
+| 先进封装 ex-ECP / vac-p / SFP / WLP / 服务备件 | 乐观产品 | `$160M-$220M` | 毛利约 `$75M-$115M` | 改善 | 高于当前预期 | 中国外封装客户、新加坡 OSAT、HBM/CoWoS wet process | 保留 | 客户扩散必须转成收入确认 |
+| 先进封装 ex-ECP / vac-p / SFP / WLP / 服务备件 | 极度乐观产品 | `$260M-$360M` | 毛利约 `$130M-$200M` | 明显改善 | 非线性高于预期 | AP wet/SFP/vac-p 成为 HBM4/Rubin/PLP 放量工具 | 下移为附录跟踪 | 先进封装主价值可能被 TCB/HB/inspection 设备捕获 |
+| Furnace / Track | 悲观产品 | `$20M-$50M` | 毛利约 `$5M-$18M` | 低于公司平均 | 低于产品计划 | 客户评估慢、竞争强 | 保留 | TEL/Kokusai/AMAT/ASM/本土平台 |
+| Furnace / Track | 基准产品 | `$40M-$70M` | 毛利约 `$15M-$28M` | 低到中 | 小比例符合当前预期 | first tools 和客户评估 | 保留但折扣 | 未单独披露收入，证据 C/D |
+| Furnace / Track | 乐观产品 | `$80M-$140M` | 毛利约 `$35M-$65M` | 改善 | 高于当前预期 | 国产 Track/Furnace 客户导入，多客户 repeat | 保留为有条件乐观 | 需要 POR，不是 TAM 自动转收入 |
+| Furnace / Track | 极度乐观产品 | `$200M-$300M` | 毛利约 `$90M-$150M` | 明显改善 | 非线性高于预期 | 平台化突破，多产品 repeat | 下移为低可信上限 | 缺少多客户收入披露 |
+| PECVD SiCN / Ultra Pmax | 悲观产品 | `$0-$10M` | 毛利小或经营亏损 | 负向或不显著 | 低于产品叙事 | 客户 final validation 未完成 | 保留 | 沉积巨头竞争、客户验证长 |
+| PECVD SiCN / Ultra Pmax | 基准产品 | `$0-$15M` | 毛利小；费用先行 | 不显著 | 符合收入确认纪律 | 首台系统不等于量产收入 | 保留为基准外小项 | D/C 级证据，不可作为基准核心 |
+| PECVD SiCN / Ultra Pmax | 乐观产品 | `$40M-$80M` | 毛利约 `$20M-$40M` | 改善 | 高于当前预期 | 2-3 客户 validation 或 repeat | 保留但低权重 | 需要具体客户和验收 |
+| PECVD SiCN / Ultra Pmax | 极度乐观产品 | `$150M-$250M` | 毛利约 `$75M-$140M` | 大幅改善 | 远高于当前预期 | SiCN/hybrid bonding/BEOL stack 多客户采用 | 移入附录/仅作跟踪 | NTM 时间表不足，不能进入公司基准 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：公司层面先检查重复计算、客户预算重叠、first-tool 验收和披露分类重叠，再合成 NTM 收入、毛利率、经营利润率、净利润和现金流。`绝对增速` 以 Q2 2025-Q1 2026 TTM 收入约 `$960.3M` 为基数。`相对预期` 以 2026 年收入指引 `$1.08B-$1.175B`、Q1 2026 run-rate、shipments 和 first-tool 转化为当前预期锚。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$1.00B-$1.08B` | `+4%-12%` vs TTM | 低于 FY2026 指引隐含路径；只保留 A 级收入和高确定 repeat | `41%-44%` | `8%-11%` | 归母净利约 `$60M-$90M`；adjusted EBITDA 约 `$110M-$150M` | 负向，约 `-$150M` 到 `-$50M` | 中 | first-tool 验收慢、清洗不恢复、ECP Q1 高点不能延续、应收/存货上升 |
+| 基准公司 | `$1.15B-$1.25B` | `+20%-30%` vs TTM | 大体符合 2026 指引正常兑现和 2027Q1 正常 run-rate | `44%-47%` | `12%-16%` | 归母净利约 `$110M-$150M`；adjusted EBITDA 约 `$170M-$230M` | `-$50M` 到 `+$50M`，取决于 first-tool 转收入和回款 | 中高 | ECP/AP 正常增长、清洗 mix 恢复但不过度扩张、现金流受营运资金拖累 |
+| 乐观公司 | `$1.35B-$1.50B` | `+41%-56%` vs TTM | 明显高于当前指引和 run-rate，需要 ECP/AP/SPM 同步超预期 | `46%-49%` | `16%-20%` | 归母净利约 `$160M-$220M`；adjusted EBITDA 约 `$250M-$340M` | `0` 到 `+$120M`，若客户预付款和 repeat 比例改善 | 中 | 乐观收入必须来自可验收订单，不是 pipeline；利润改善要由 mix 和利用率支撑 |
+| 极度乐观公司 | 原始上限 `$1.65B-$1.90B`；校准后只作低可信上限 | `+72%-98%` vs TTM | 需求、公司捕获、利润质量和执行同时突破；显著高于当前预期 | `48%-52%` | `20%-25%` | 归母净利约 `$240M-$340M`；adjusted EBITDA 约 `$380M-$520M` | 正向但不确定，`+$100M-$250M`；若仍大量 first tools 则可能仅小幅正 | 低 | 多个 C/D 级机会必须在 NTM 内转 repeat：PECVD、panel ECP、Track/Furnace、全球 AP 客户同时成功 |
+
+公司基准结论：NTM 最可能收入在 `$1.15B-$1.25B`，比当前 TTM 约增长 `20%-30%`，本质是 FY2026 指引正常兑现加 2027Q1 继续保持高于 2025 的 run-rate。利润质量不会自动随收入线性放大；如果 ECP/AP 增长伴随新产品验收成本、低毛利 semi-critical 工具和应收/存货继续上升，经营价值传导会弱于收入增速。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测结果，只校准前四步情景。正向证据只提升它实际影响的层级，反证只限制它影响的层级，不重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 `$231.3M`、同比 `+34.2%`，FY2026 指引 `$1.08B-$1.175B` | 公司收入基准 | 支撑基准 `$1.15B-$1.25B` 的 NTM 区间 | 只支撑收入，不自动支撑利润率扩张 | 指引含贸易政策、供应链和 first-tool 验收假设 | 基准保留 |
+| ECP/furnace/other Q1 `$84.2M`、同比 `+204.9%` | 产品贡献 | 上移 ECP 贡献的可信度 | 若 ECP mix 高于清洗，毛利可改善，但 first-tool 成本会抵消 | Q1 可能有 timing 和 2025Q4 延后交付 | 乐观保留，极度不直接上移 |
+| 清洗 Q1 `$122.5M`、同比 `-5.5%`，但 2025 基数 `$626M` | 产品需求/收入基数 | 限制清洗极度乐观，支持“恢复但不爆发” | semi-critical 价格竞争限制 GM | 清洗恢复需要订单与验收，不是自然回归 | 基准保留，极度下移 |
+| 2026Q1 shipments `$240.7M`，first-tool shipments `$143.8M` | 收入确认/执行可信度 | 增加未来收入池，但不是已确认收入 | first tools 初期毛利和费用支持不确定 | 客户可决定是否接受或购买，验收失败则不能确认收入 | 乐观保留，基准对 C/D 级机会折扣 |
+| 客户现场 first-tools 成品库存 `$119.5M`、存货 `$738M`、应收 `$526.5M` | 现金流/执行 | 不直接下调收入，但限制收入质量 | 若验收慢，库存 provision 和折旧/支持成本压利润 | 经营现金流可能继续滞后净利 | 现金流情景下移 |
+| 中国大陆收入和客户集中度高 | 公司组合风险 | 限制全球化乐观兑现速度 | 价格竞争和客户议价可能压毛利 | 单一大客户验收推迟造成季度波动 | 风险只在公司组合和利润率层级处理 |
+| SEMI Q1 2026 全球设备 billings `$36.55B`、同比 `+14%`；300mm spending 2026/2027 强 | 需求层级 | 支撑外部需求不差 | 不保证 ACMR 毛利率，尤其国产竞争链 | 设备交付和安装周期仍限制收入确认 | 需求基准保留 |
+| PECVD SiCN 首台系统进入 final validation | 产品期权 | 支撑 PECVD 乐观上限 | 成功后可能提升结构性毛利，但当前尚无 repeat | 验证周期和巨头竞争使 NTM 不确定 | 极度乐观移入附录/仅作跟踪 |
+| Panel ECP / PLP / glass/TGV 需求 | 远期期权 | 支撑 2027-2028 观察，不支撑 NTM 基准 | 若进入 POR 可提高毛利，但当前证据不足 | 客户 qualification 和量产时间是约束 | 2026 NTM 基准排除，乐观小比例保留 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入低于指引，清洗不恢复，ECP/AP 验收延迟，毛利率承压 | 公司净现金厚，A 级收入基数存在，ECP/AP 需求仍有支撑 | Q1 revenue 和 shipments 强，行业设备需求不差 | 保留 | 下行经营情景，不是破产或需求消失情景 | 中 | Entity List、客户集中和中国价格竞争只在需求/利润/执行相应层级处理一次 |
+| 基准 | FY2026 指引正常兑现，2027Q1 延续正常 run-rate；A/B 级业务正常转收入 | 2025/2026Q1 收入表、FY2026 指引、shipments、contract liabilities 支撑 | first-tool 占比高，产品拆分不透明，现金流滞后 | 保留 | 最可能情景 | 中高 | first-tool 风险已在现金流和收入确认处理，不再重复下调需求 |
+| 乐观 | ECP/AP/SPM 高于指引，清洗 mix 恢复，毛利率改善 | Q1 ECP/furnace/other 高增，AP ex-ECP 高增，行业 WFE 和先进封装需求强 | Q1 可能含 timing；全球 AP 客户 repeat 尚未充分披露 | 保留 | 有条件上行情景 | 中 | 行业 beta 不能替代公司 alpha；只在产品贡献层级上移 |
+| 极度乐观 | 需求、公司捕获、利润率和执行同时突破；多个新品 NTM 内转 repeat | PECVD 首台发货、panel ECP、AP wet tools、first-tool 池、SEMI/先进封装需求 | PECVD/Track/panel ECP 多为 C/D 级证据；NTM 客户、价格和验收不够清楚 | 下移 | 乐观上限 + 附录跟踪；不作为 NTM 主表基准 | 低 | 玻璃/TGV/CoPoS/CPO 等远期期权不重复惩罚公司基准，也不提前加到极度乐观主口径 |
+
+## 8. 结论
+
+- 最可能情景：NTM 基准收入 `$1.15B-$1.25B`，毛利率 `44%-47%`，经营利润率 `12%-16%`。这代表公司 2026 指引正常兑现、ECP/AP 维持强势、清洗从 Q1 mix 低点恢复，但 PECVD、Track、panel ECP 和全球 advanced packaging 客户只做保守折扣。
+- 利润/现金流结论：利润质量的关键不是收入是否增长，而是 ECP/AP/SPM mix 能否抵消 semi-critical 清洗价格竞争、first-tool 初期成本和供应链替代成本。现金流最可能弱于利润，因为应收、存货和 first tools 占用仍大。
+- 主要传导瓶颈：从“产品可参与需求”到“客户接受并可确认收入”的路径。Q1 first-tool shipments 高说明机会大，也说明验收和现金流风险大。
+- 乐观情景成立条件：Q2/Q3 shipments 和 revenue 同步强，first-tool customer-site inventory 不再上升，ECP/furnace/other 至少维持高位，AP ex-ECP 出现 repeat，中国外封装客户继续出货，毛利率稳定在 `46%+`。
+- 极度乐观情景成立条件：ECP、SPM/Tahoe、AP vac-p/SFP、Track/Furnace、PECVD SiCN 中至少三条在 NTM 内出现多客户 repeat 或正式验收；客户预付款扩大、应收周转改善、毛利率接近或超过 `49%`，同时行业 CoWoS/HBM/中国 WFE 继续上修。
+- 悲观情景触发条件：收入低于 FY2026 指引下沿路径，Q2/Q3 ECP/AP 回落，清洗继续同比下滑，first-tool 库存持续高于 `$120M` 且收入不转化，存货/应收继续快于收入增长，毛利率跌到 `42%` 附近或以下。
+- 后续跟踪数据：季度收入与 shipments 差额、repeat tool shipments 占比、first-tool shipments 和客户现场库存、contract liabilities/customer advances、ECP/furnace/other 收入、AP ex-ECP 收入、清洗 mix、毛利率、经营现金流、应收/存货、PECVD SiCN 客户验证、panel ECP repeat、Oregon demo lab 进度、Entity List 替代供应影响。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新正式季度为 2026Q1，截至 2026-03-31；报告日期为 2026-06-12；外部公开资料检索截至 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - ACM Research, 2026Q1 results / Exhibit 99.1, filed with SEC, 2026-05-07/08: https://www.sec.gov/Archives/edgar/data/1680062/000162828026031688/acmr-q12026xearningsreleas.htm
+  - ACM Research, Form 10-Q for quarter ended 2026-03-31, SEC: https://www.sec.gov/Archives/edgar/data/1680062/000162828026032842/acmr-20260331.htm
+  - ACM Research, Form 10-K for year ended 2025-12-31, SEC: https://www.sec.gov/Archives/edgar/data/1680062/000162828026013231/acmr-20251231.htm
+  - ACM Research, initial 2026 revenue outlook, 2026-02: https://ir.acmr.com/news-releases/news-release-details/acm-research-updates-2025-revenue-outlook-and-provides-initial
+  - ACM Research, first PECVD SiCN system press release, 2026-04-27: https://ir.acmr.com/news-releases/news-release-details/acm-research-ships-first-pecvd-sicn-system-advanced
+  - ACM Research, tools and processes product pages: https://www.acmr.com/tools-and-processes/
+  - ACM Research, Panel Level Packaging Ultra ECP ap-p: https://www.acmr.com/industries/panel-level-packaging/ultra-c-ecp-ap-p/
+  - SEMI, global semiconductor equipment billings Q1 2026, 2026-06-04: https://www.semi.org/en/semi-press-release/semi-reports-global-semiconductor-equipment-billings-increased-14-percent-year-over-year-in-q1-2026
+  - SEMI, 300mm Fab Outlook press release, 2026-04-01: https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027
+- 项目内正式资料：
+  - `公司调研/公司索引.md`
+  - `公司调研/晶圆制造_前道设备/ACMR_ACM Research_公司调研_2026-06-11.md`
+  - `行业调研/行业索引.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_存储前道制造设备_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装湿化学与表面处理材料_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_玻璃基板、TGV与玻璃检测_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 指引 `$1.08B-$1.175B` 是当前最硬的公司经营锚；NTM 基准在此基础上加入 2027Q1 正常 run-rate。
+  - FY2027 不是主表口径。若 2026 下半年 first tools 转 repeat、ECP/AP 保持高位且 PECVD/Track/Furnace 有多客户验收，FY2027 才可能把 `$1.35B+` 收入能力变成高可信基准。
+  - 玻璃基板/TGV、CoPoS、CPO 和大规模 panel-level advanced packaging 是 2027-2028 以后更清晰的期权。它们可以提升 ECP/AP wet tools 的远期上限，但当前不能进入 NTM 基准收入。
+  - PECVD SiCN 的商业含义很大，但当前证据为首台系统 final validation，未形成可用于 NTM 基准的 repeat revenue 证据。

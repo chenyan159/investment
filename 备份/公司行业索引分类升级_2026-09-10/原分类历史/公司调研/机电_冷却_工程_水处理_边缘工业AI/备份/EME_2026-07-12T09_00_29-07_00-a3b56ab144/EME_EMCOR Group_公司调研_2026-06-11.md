@@ -1,0 +1,369 @@
+# 公司：EME EMCOR Group（EMCOR Group）公司调研（2026-06-11）
+
+> 研究边界：本报告只使用本项目 `行业调研/` 下与 AI 数据中心电力、机电、冷却、MEP、预制化交付相关的行业资料，并结合联网检索的 EMCOR 官方财报、年报、投资者材料和公开行情数据。未读取、引用或继承 `特征量化/`，也未读取本目录下其他公司调研报告。  
+> 重要口径：EMCOR Group 不披露“AI 数据中心收入”“AI 订单”“AI backlog”或“AI 占比”。本报告凡涉及 AI/DC 收入、订单、BOM、每 MW/rack/GPU/port 内容量、供需紧张度和一年后情景，均为基于公司分部、Network and Communications 市场部门、RPO、行业资料和工程交付链条的模型估算，不是公司指引。
+
+## 0. 结论先行
+
+EMCOR Group（NYSE: EME）是美国大型专业承包与设施服务公司，核心不是芯片、服务器、光模块或电力设备制造，而是在数据中心、半导体/高科技制造、医院、工业、公用事业和商业建筑中提供电气施工、机械施工、设施维护、工业服务、VDC/BIM、预制化、消防/安防/低压系统和调试交付。对 AI 基建而言，它处在“业主/总包/设计院”和“Eaton、Schneider、Vertiv、ABB、Siemens、Powell 等设备商”之间，捕捉的是电力接入、机电安装、冷却管网、液冷-ready 改造、预制机电模块、现场劳动力和复杂项目执行能力的价值。
+
+投资人眼中的 EME 已从传统非住宅专业承包商，升级为 AI 数据中心、电气化、高科技制造、医疗和水务资本开支的“执行端铲子股”。公司 2025 年收入 169.86 亿美元，同比增长 16.6%；2026Q1 收入 46.28 亿美元，同比增长 19.7%，有机增长 16.8%；RPO（remaining performance obligations，近似可视为已签但未完成履约义务）在 2026Q1 达 156.2 亿美元，同比增加 32.9%，并且公司明确指出 2026Q1 RPO 增长最显著来自 Network and Communications、Water and Wastewater、Institutional、Healthcare，其中 Network and Communications 包含 data centers、data/fiber projects、cabling。
+
+EME 的 AI 相关性强在“工程交付瓶颈”，弱在“没有硬件垄断”。本地行业资料显示，2026 年 AI 数据中心最硬的约束不是单一建筑，而是 time-to-power、time-to-cool、time-to-commission；高压/中压设备、开关设备、变压器、母线、PDU、CDU、泵阀、熟练电工/管工/调试工程师均是瓶颈。EME 的价值在于把这些长周期设备和现场工种变成可验收、可并网、可投产的设施容量。
+
+估值上，截至 2026-06-11 行情快照，EME 股价约 811.53 美元，市值约 360.65 亿美元，TTM P/E 约 27.3x；若用公司 2026 EPS 指引 28.25-29.75 美元，forward P/E 约 27.3-28.7x，按 2026 收入指引中点 188.75 亿美元计算 forward P/S 约 1.9x。这个估值已经把“高质量复合增长 + AI 数据中心订单可见度 + 低负债资产负债表”计入较多；后续超额收益取决于 Network and Communications RPO 能否继续高增长、利润率能否在大型快节奏项目中守住、劳动力和供应链瓶颈能否转化为价格而不是成本风险。
+
+## 1. 公司整体业务、投资人定位、过去三年变化、产业链位置与财务健康
+
+### 1.1 公司做什么
+
+EMCOR Group 是机械与电气施工、工业与能源基础设施、建筑设施服务的平台型公司。根据公司 2025 年报和 2026 年 4 月投资者材料，公司服务范围包括：
+
+- 电气施工与设施服务：高/低压电气系统、配电、照明、发电与应急电源、消防报警、安防/门禁、低压系统、语音/数据通信、交通/道路/机场照明、铁路/交通信号、仪表与控制、prefabrication、VDC/BIM、network communications。
+- 机械施工与设施服务：HVAC、管道、工艺/高纯管道、过滤与控制、水/废水处理、central plant、吊装/rigging、钢结构与金属加工、消防、测试平衡、energy solutions、VDC/BIM。
+- 建筑服务：站点型设施运维、机械系统维护、HVAC、楼宇控制、retro-commissioning、测试/监测、远程监控、能源效率改造、关键设施维护。
+- 工业服务：炼厂、石化、能源设施的停工检修、换热器/压力容器、焊接、维护与 shop/field services。
+
+2026Q1 公司已经出售英国 Building Services 业务，当前收入完全来自美国运营；这让 EME 的 AI 数据中心、美国高科技制造和美国基础设施周期暴露更纯。
+
+### 1.2 投资人心中的公司画像
+
+EME 在投资人心中通常不是“低毛利施工股”，而是具备以下特征的高质量专业承包平台：
+
+- 非住宅专业承包龙头：公司称自身为 Fortune 500 和 S&P 500 成员，是机械与电气施工、工业和能源基础设施、建筑服务的领导者。
+- AI 数据中心与电气化执行端受益者：2025 年报披露，U.S. Electrical 的 Network and Communications 收入 24.62 亿美元，占该分部 48%；U.S. Mechanical 的 Network and Communications 收入 16.70 亿美元，占该分部 23%。两者合计 41.32 亿美元，占 2025 年总收入约 24.3%。该部门包括数据中心、data/fiber projects、cabling，但不是全部 AI。
+- 高可见度 backlog/RPO 公司：RPO 从 2019 年底 40 亿美元升至 2026Q1 156.2 亿美元，公司 2026 年 4 月材料披露约 24% CAGR。2026Q1 RPO/2026 收入指引中点约 0.83x。
+- 资产负债表强、并购能力强：2026Q1 现金 9.16 亿美元，总债务仅 610 万美元，债务/总资本 0.2%，净现金状态。
+- 主要风险仍是项目执行：固定价合同、劳动力、材料、变更单、设备延迟、客户项目推迟、保函能力和大型复杂项目 margin fade 是核心风险。
+
+### 1.3 最近三年的重大业务变化、转型和收购
+
+| 时间 | 事件 | 对业务的意义 |
+|---|---:|---|
+| 2023-2025 | RPO 和收入结构向 Network and Communications、高科技制造、医疗、水务、机构客户倾斜 | 公司从普通商业建筑周期，转向更复杂、更高技术含量、更受长期资本开支驱动的市场。Network and Communications 包含数据中心、光纤、网络布线，是 AI 数据中心暴露的核心披露口径。 |
+| 2023 | 收购 ECM Holding Group，增强能源效率、改造和 sustainability 服务 | 强化 Building Services 的能效改造、HVAC retrofit、楼宇控制和 aftermarket。对 AI 数据中心不是核心新建容量，但有利于既有设施改造和能效服务。 |
+| 2025-02-03 | 完成收购 Miller Electric，现金对价约 8.69 亿美元；公司此前预计 Miller Electric 2024 年收入约 8.05 亿美元、Adjusted EBITDA 约 0.80 亿美元 | 这是近三年最关键收购。Miller Electric 是美国东南部电气承包商，进入 EME 的 U.S. Electrical 分部，增强电气施工、任务关键型服务、数据中心、制造、医疗、预制化/VDC/BIM 能力。2025Q1 RPO 包含约 10 亿美元 Miller RPO；2025Q2/Q3 RPO 分别包含约 9.47/8.94 亿美元 Miller RPO。 |
+| 2025-12-01 | 完成出售 EMCOR UK 给 OCS Group UK Limited；2025Q4 录得 1.449 亿美元出售收益 | 剥离英国 Building Services 后，2026Q1 已无英国收入，业务更聚焦美国本土电气、机械、建筑服务与工业服务。2025Q4 GAAP EPS 和 operating margin 受到出售收益抬升，分析经营趋势时应看 non-GAAP。 |
+| 2026Q1 | RPO 达 156.2 亿美元，同比 +32.9%，环比 2025 年底 +17.9%；公司上调 2026 收入/EPS 指引 | 最新确认需求仍强。公司点名 Network and Communications 是 RPO 增长最显著领域之一，AI infrastructure 和 digital transformation 推动该市场活动。 |
+
+### 1.4 产业链位置
+
+AI 数据中心从电力到 IT 的链条大致为：
+
+`电网/发电/变电站 -> 高压/中压开关设备与变压器 -> e-house/预制电力模块 -> UPS/BESS/发电机/ATS -> 低压配电/母线/PDU -> rack power shelf/PSU/BBU -> GPU/ASIC rack -> 冷却塔/冷机/泵/管网/CDU/液冷二次侧 -> 调试验收/并网/投产`
+
+EME 不生产 GPU、光模块、变压器或 UPS。它的产业链位置是：
+
+- 在业主、总包和工程设计之后，负责电气/机械系统的施工组织、材料采购或安装、预制化、现场协调、测试、调试和交付。
+- 与 Eaton、Schneider、Vertiv、ABB、Siemens、Powell、Trane、Carrier、JCI、Modine 等设备商更多是合作/集成关系；在部分预制模块、现场安装、项目管理上与设备商和其他承包商竞争。
+- 对 AI 基建的价值不是“单件 ASP”，而是每 MW 数据中心容量能否更快变成可用电力、可用冷却和可验收设施。
+
+### 1.5 最新股价、估值和财务指标
+
+行情与估值快照：股价数据为 2026-06-11 盘中/收盘前后公开行情快照；财务口径为截至 2026Q1 或 LTM。
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | 811.53 美元 | 2026-06-11 | NYSE: EME 行情快照。 |
+| 市值 | 360.65 亿美元 | 2026-06-11 | 公开行情快照。 |
+| TTM P/E | 约 27.3x | 2026-06-11 | TTM EPS 约 29.77 美元；该口径包含 2025Q4 出售英国业务收益。 |
+| Normalized LTM P/E | 约 29.7x | 2026-06-11，本报告估算 | 用 FY2025 non-GAAP EPS 25.87 - 2025Q1 non-GAAP EPS 5.41 + 2026Q1 EPS 6.84，得到约 27.30 美元 normalized LTM EPS。 |
+| Forward P/E | 约 27.3-28.7x；中点 28.0x | 2026 指引 | 用 2026 EPS 指引 28.25-29.75 美元与 811.53 美元股价计算。 |
+| LTM Revenue | 177.47 亿美元 | 2025Q2-2026Q1 | 2025Q2 43.04 亿 + 2025Q3 43.02 亿 + 2025Q4 45.13 亿 + 2026Q1 46.28 亿。 |
+| LTM P/S | 约 2.03x | 2026-06-11 | 市值 / LTM 收入。 |
+| Forward P/S | 约 1.87-1.95x；中点 1.91x | 2026 指引 | 2026 收入指引 185.0-192.5 亿美元。 |
+| 2026Q1 收入增速 | +19.7%；有机 +16.8% | 2026Q1 | 公司披露；有机口径调整收购增量和英国出售影响。 |
+| 2026 指引收入增速 | +8.9% 至 +13.3%；中点 +11.1% | 2026 指引 vs 2025 | 2026 收入指引 185.0-192.5 亿美元，2025 收入 169.86 亿美元。 |
+| 2026Q1 毛利率 | 18.7% | 2026Q1 | 毛利 8.64 亿美元 / 收入 46.28 亿美元。 |
+| 2026Q1 经营利润率 | 8.7% | 2026Q1 | 经营利润 4.04 亿美元。 |
+| 2026Q1 净利率 | 6.6% | 2026Q1 | 净利润 3.05 亿美元 / 收入 46.28 亿美元。 |
+| 2025 全年毛利率 | 19.3% | FY2025 | 毛利约 32.83 亿美元 / 收入 169.86 亿美元。 |
+| 2025 全年经营利润率 | GAAP 10.1%；non-GAAP 9.4% | FY2025 | GAAP 含英国出售收益；non-GAAP 排除 Miller 交易费用、英国出售费用和出售收益。 |
+| 2025 全年净利率 | GAAP 7.5%；non-GAAP 6.9% | FY2025 | GAAP 净利 12.73 亿美元；non-GAAP 净利 11.68 亿美元。 |
+
+### 1.6 资产负债表健康程度
+
+| 指标 | 2026Q1 | 2025 年底 | 评价 |
+|---|---:|---:|---|
+| 现金及等价物 | 9.16 亿美元 | 11.12 亿美元 | 现金充足；并购和回购后仍保持高流动性。 |
+| Working capital | 12.53 亿美元 | 10.72 亿美元 | 项目制业务需要营运资本，但当前缓冲足够。 |
+| Total debt（不含经营租赁） | 610 万美元 | 630 万美元 | 几乎无金融债务。 |
+| Total debt / total capitalization | 0.2% | 0.2% | 杠杆极低。 |
+| 股东权益 | 38.68 亿美元 | 36.75 亿美元 | 权益增长，资产负债表非常健康。 |
+| RPO | 156.2 亿美元 | 132.5 亿美元 | RPO/2026 收入指引中点约 0.83x，可见度强。 |
+
+财务健康结论：EME 是“净现金、强 RPO、强现金生成能力、低金融杠杆”的工程服务公司。它的主要财务风险不是还债，而是项目执行、合同索赔、劳动力/材料成本、设备延迟导致工期变化和固定价项目毛利率波动。强资产负债表反而是竞争优势：大型 AI 数据中心和高科技制造客户更愿意把复杂项目交给有保函能力、现金缓冲和跨区域执行能力的承包商。
+
+## 2. 最近五个财报季度：收入、利润率、RPO/订单、分部和 AI 数据中心暴露
+
+### 2.1 公司披露口径说明
+
+EME 不披露 bookings、book-to-bill、lead time、取消率，也不披露 AI 数据中心收入。最接近 backlog 的披露是 RPO。RPO 是已签合同中尚未确认收入的履约义务，不等同于所有 pipeline，也不代表所有项目无延期/无取消。公司在 2025-2026 多次披露 RPO 增长最显著来自 Network and Communications；2025 年报定义该市场部门包括 data centers、data/fiber projects、cabling。
+
+### 2.2 最近五个季度财务和订单表
+
+| 财报季度 | 总收入 / 同比 | 毛利率 | 经营利润 / 经营利润率 | EPS / 净利 | RPO 与订单信号 | 分部收入与利润率 | AI/DC 相关暴露估算 |
+|---|---:|---:|---:|---:|---|---|---|
+| 2026Q1 | 46.28 亿美元 / +19.7%；有机 +16.8% | 18.7% | 4.04 亿美元 / 8.7% | EPS 6.84；净利 3.05 亿美元 | RPO 156.2 亿美元；同比 +32.9%；环比 2025 年底 +17.9%。公司称 RPO 增长最显著来自 Network and Communications、Water and Wastewater、Institutional、Healthcare。未披露取消率。 | Electrical 14.47 亿美元 / +33.1%，OM 12.1%；Mechanical 20.26 亿美元 / +28.8%，OM 10.9%；Building Services 7.73 亿美元 / +4.0%，OM 5.2%；Industrial 3.82 亿美元 / +6.4%，OM 3.3%；英国已出售，0 收入。 | 公司不披露。按 2025 Network and Communications 年收入 41.32 亿美元、2026Q1 RPO 加速推断，Network/data-center/fiber/cabling 季度收入可能约 12-16 亿美元；AI 数据中心纯口径可能约 6-11 亿美元，主要在 Electrical + Mechanical。 |
+| 2025Q4 | 45.13 亿美元 / +19.7%；有机 +9.5% | 19.7% | GAAP 5.74 亿美元 / 12.7%；non-GAAP 4.40 亿美元 / 9.7% | GAAP EPS 9.68；non-GAAP EPS 7.19；GAAP 净利 4.35 亿美元 | RPO 132.5 亿美元；同比 +31.2%。增长最显著来自 Network and Communications、Institutional、Water and Wastewater、Hospitality and Entertainment、Manufacturing and Industrial；High-Tech Manufacturing 因部分半导体项目推进而下降。 | Electrical 13.61 亿美元 / +45.8%，OM 12.7%；Mechanical 19.43 亿美元 / +17.0%，OM 12.9%；Building 7.72 亿美元 / +2.2%，OM 5.4%；Industrial 3.41 亿美元 / +9.1%，OM 3.6%；UK 0.95 亿美元，季度内出售。 | Network and Communications 是 RPO 增长核心。GAAP 利润含英国出售收益，应看 non-GAAP。AI/DC 收入未披露，估计季度 Network/data-center/fiber/cabling 约 10-14 亿美元，其中 AI 数据中心纯口径可能约 5-9 亿美元。 |
+| 2025Q3 | 43.02 亿美元 / +16.4% | 19.4% | 4.06 亿美元 / 9.4% | EPS 6.57 | RPO 126.14 亿美元；同比增加 28.2 亿美元；其中含 Miller Electric RPO 8.94 亿美元。公司材料显示 RPO 市场部门包括 Network and Communications、High-Tech Manufacturing 等。 | Electrical 12.85 亿美元 / +52.1%，OM 11.3%；Mechanical 17.79 亿美元 / +7.0%，OM 12.9%；Building 8.14 亿美元 / +2.1%，OM 7.3%；Industrial 2.87 亿美元 / +0.2%，OM 2.2%；UK 1.36 亿美元，OM 5.6%。 | Electrical 的高增速和 Miller 并表是核心。AI/DC 仍以内生 Network and Communications + Miller 电气能力为主要路径；纯 AI 未披露。 |
+| 2025Q2 | 43.04 亿美元 / +17.4% | 19.4% | 4.15 亿美元 / 9.6% | EPS 6.72；净利 3.02 亿美元 | RPO 119.14 亿美元；同比 +32.4%；含 Miller RPO 9.47 亿美元。公司称 RPO 增长最显著来自 Network and Communications、Institutional、Manufacturing and Industrial、Healthcare、Hospitality and Entertainment；High-Tech Manufacturing 因项目推进下降。 | Electrical 13.40 亿美元 / +67.5%，OM 11.8%；Mechanical 17.55 亿美元 / +6.0%，OM 13.6%；Building 7.93 亿美元 / +1.6%，OM 6.3%；Industrial 2.81 亿美元 / -13.3%，OM -0.1%；UK 1.35 亿美元，OM 6.3%。 | Electrical 增长最强，Miller 并表与数据中心/Network and Communications 是主要线索。季度 AI/DC 纯口径估计仍低于 Network and Communications 总口径。 |
+| 2025Q1 | 38.67 亿美元 / +12.7% | 18.7% | GAAP 3.19 亿美元 / 8.2%；non-GAAP 3.28 亿美元 / 8.5% | GAAP EPS 5.26；non-GAAP EPS 5.41；净利 2.41 亿美元 | RPO 117.50 亿美元；同比 +28.1%；含 Miller RPO 10 亿美元。公司称 RPO 增长最显著来自 Network and Communications、Healthcare、Manufacturing and Industrial、Hospitality and Entertainment、Institutional。 | Electrical 10.88 亿美元 / +42.3%，OM 12.5%；Mechanical 15.73 亿美元 / +10.2%，OM 11.9%；Building 7.43 亿美元 / -4.9%，OM 4.9%；Industrial 3.59 亿美元 / +1.4%，OM 1.9%；UK 1.05 亿美元，OM 4.7%。 | Miller Electric 刚并表，RPO 中已贡献约 10 亿美元。Network and Communications 是最明确 AI/DC 相关上限口径。 |
+
+### 2.3 从最近五个季度读出的趋势
+
+- RPO 连续创新高：2025Q1 117.5 亿美元、Q2 119.1 亿美元、Q3 126.1 亿美元、Q4 132.5 亿美元、2026Q1 156.2 亿美元。2026Q1 环比跳升 23.7 亿美元，是最强订单信号。
+- Electrical 分部是 AI 数据中心方向最敏感的分部：2025Q1/Q2/Q3/Q4/2026Q1 同比增长分别约 42.3%、67.5%、52.1%、45.8%、33.1%，2026Q1 收入占总收入 31%。
+- Mechanical 分部体量最大，直接受益于液冷-ready MEP、HVAC、泵阀管网、central plant、工艺管道和高密度机房二次侧冷却，但 2026Q1 利润率从 2025Q1 的 11.9% 降至 10.9%，说明项目 mix 和执行成本仍会波动。
+- Building Services 增速较低但有 aftermarket 价值：2026Q1 收入 7.73 亿美元，同比增长 4.0%，主要不是 AI 新建容量，但 HVAC retrofit、controls、energy efficiency、IAQ、critical facility maintenance 可在数据中心存量改造中受益。
+- Industrial Services 与 AI 数据中心相关性低：主要是能源/炼化/工业检修，2026Q1 收入 3.82 亿美元，同比增长 6.4%，可作为周期性现金流但不是 AI 主线。
+
+## 3. 2026 最新财报指引、业务收入占比和重点产品/服务
+
+### 3.1 2026Q1 指引与分部收入占比
+
+EME 在 2026Q1 上调 2026 全年指引：
+
+| 指标 | 2026Q1 后新指引 | 2026Q1 前旧指引 | 对 2025 的增长/含义 |
+|---|---:|---:|---|
+| 收入 | 185.0-192.5 亿美元 | 177.5-185.0 亿美元 | 较 2025 年 169.86 亿美元增长约 8.9%-13.3%。 |
+| 经营利润率 | 9.0%-9.4% | 9.0%-9.4% | 未随收入上调而上调，说明公司仍保守看待项目 mix、劳动力和供应链成本。 |
+| EPS | 28.25-29.75 美元 | 27.25-29.25 美元 | 中点 29.00 美元。 |
+
+2026Q1 分部收入占比：
+
+| 分部 | 2026Q1 收入 | 占比 | 同比增长 | 经营利润率 | AI 数据中心相关性 |
+|---|---:|---:|---:|---:|---|
+| U.S. Electrical Construction & Facilities Services | 14.47 亿美元 | 31% | +33.1% | 12.1% | 最高。对应电气系统、低压/高压安装、应急电源、低压/数据通信、网络通信、预制电气、VDC/BIM。 |
+| U.S. Mechanical Construction & Facilities Services | 20.26 亿美元 | 44% | +28.8% | 10.9% | 很高。对应 HVAC、冷却水、泵阀管网、central plant、液冷二次侧、CDU/管路集成、消防、测试平衡。 |
+| U.S. Building Services | 7.73 亿美元 | 17% | +4.0% | 5.2% | 中等。存量关键设施运维、HVAC retrofit、楼宇控制、能效、remote monitoring。 |
+| U.S. Industrial Services | 3.82 亿美元 | 8% | +6.4% | 3.3% | 低。主要是炼化/工业服务，非 AI 主线。 |
+| U.K. Building Services | 0 | 0% | 已出售 | 不适用 | 2026 起不再是经营分部。 |
+
+最突出业务：Electrical + Mechanical Construction。两者 2026Q1 合计收入 34.74 亿美元，占总收入 75%；合计分部经营利润 3.96 亿美元，占美国分部经营利润的 88%；它们也是 Network and Communications/数据中心暴露的主要承载分部。
+
+### 3.2 重点“产品/服务包”与对应工程内容
+
+EME 不是 SKU/型号公司，因此“产品型号”应理解为可标准化交付的工程服务包、预制模块和现场系统，而不是类似 GPU 或 PDU 的硬件型号。
+
+| 重点服务包 | 主要对应产品/系统 | 收入与增速判断 | 利润率判断 | 与 AI 数据中心关系 |
+|---|---|---|---|---|
+| 数据中心电气施工与设施服务 | 高/中/低压配电安装、switchgear room、e-house 接入、UPS/发电机/ATS 接口、母线/PDU 安装、接地、照明、消防报警、安防/门禁、低压/语音/数据通信、network cabling、VDC/BIM、电气预制 | 2025 U.S. Electrical 收入 50.74 亿美元，其中 Network and Communications 24.62 亿美元，占 48%；2026Q1 Electrical 收入 14.47 亿美元，同比 +33.1%。 | 2026Q1 分部 OM 12.1%；2025 全年 OM 12.1%。AI/DC 项目复杂且快节奏，若变更单管理好，利润率可高于普通商业；若固定价和设备延迟不利，margin fade 风险高。 | 最高。AI 数据中心的 time-to-power 直接依赖电气施工和调试。 |
+| 数据中心机械施工、冷却与液冷-ready MEP | HVAC、冷机/冷却塔接口、冷冻水/冷却水泵、管路、阀门、central plant、CDU/二次侧液冷管网集成、泄漏检测、消防、测试平衡、机械预制 | 2025 U.S. Mechanical 收入 70.50 亿美元，其中 Network and Communications 16.70 亿美元，占 23%；2026Q1 Mechanical 收入 20.26 亿美元，同比 +28.8%。 | 2026Q1 OM 10.9%；2025 全年 OM 12.8%。液冷-ready 项目技术复杂度提升，但硬件供应链和现场协调风险也提升。 | 很高。GB200/GB300 后高密度机柜推动 direct liquid cooling-ready 设计，机械/管网/二次侧 MEP 是关键。 |
+| VDC/BIM、预制化、DFMA、FAT/SAT、调试支持 | 预制电气房、线束/管线/板金/消防喷淋/管道预制、BIM/VDC 协调、工厂预装、现场快速拼装、FAT/SAT、CxA 配合 | 公司不单独披露收入；2026 年 4 月材料强调 VDC/BIM 与 prefabrication 是投标和执行差异化工具，并披露全国有数十万平方英尺 fabrication/warehouse space。 | 通常比纯现场工时更有价格权，因为能压缩工期、减少返工、提升可预测性；但收益嵌入 Electrical/Mechanical 合同。 | 很高。行业资料显示 2026 AI DC 竞争重点是 time-to-power/time-to-cool/time-to-commission，预制化直接对应交期瓶颈。 |
+| Network and Communications / 低压、数据、安防、BMS | 数据中心网络布线、fiber/data projects、低压系统、BMS/controls、安防、门禁、消防报警、监控 | 2025 U.S. Electrical + U.S. Mechanical 的 Network and Communications 收入合计 41.32 亿美元，较 2024 的 22.62 亿美元大幅增长；2026Q1 RPO 增长继续点名 Network and Communications。 | 低压/网络/控制系统通常硬件 ASP 不归 EME，但设计协调、安装、测试和认证有较高执行价值。 | 高。不是光模块或交换机，但对数据中心可交付性、合规、监控、安全和上线很重要。 |
+| Building Services critical facility maintenance / retrofit | HVAC service、building controls、retro-commissioning、energy efficiency、IAQ、remote monitoring、site-based maintenance | 2025 Building Services 收入 31.22 亿美元，机械服务占 77%；2026Q1 收入 7.73 亿美元，同比 +4.0%。 | 2026Q1 OM 5.2%，低于 construction；但 aftermarket 粘性好、周期性较弱。 | 中等。更偏存量设施和改造，不是 AI 新建容量主线，但可受益于高功率密度 retrofit、冷却升级和运维外包。 |
+
+### 3.3 可以跳过或低优先级的业务/产品
+
+下列业务对 EME 现金流重要，但对本次“AI 芯片/AI 数据中心”主线不是核心：
+
+- U.S. Industrial Services：炼化、石化、换热器、停工检修、焊接、shop/field services。2026Q1 收入 3.82 亿美元，占 8%，AI 相关性低。
+- 普通商业、酒店娱乐、短周期小项目：可能贡献收入和利润，但不是 AI 数据中心瓶颈。
+- 英国 Building Services：已于 2025-12-01 出售，2026Q1 无收入。
+- 非任务关键型普通 HVAC 维护：Building Services 内部有大量常规维护，增长稳定但 AI 主题弹性有限。
+- 水/废水、交通、机构项目：RPO 增长强，但更多是公共/基础设施周期，不应强行归入 AI。
+
+### 3.4 不能漏掉的小业务/小产品
+
+- 低压/弱电/网络布线/门禁/消防报警/BMS：不是最炫的 AI 硬件，但在数据中心验收、上线、合规和安全里不可缺。
+- Fire life safety：公司 2026 年材料提到 fire life safety projects and aftermarket services 需求强。AI 数据中心高功率密度和液冷管网增加消防/泄漏/监测要求。
+- VDC/BIM 和预制化 shop capacity：不单独披露收入，却是 EME 在大型快节奏项目中保护利润率、提升交期可靠性的关键。
+- Retrofit / controls / retro-commissioning：AI 机柜密度提高会推动既有数据中心局部改造，Building Services 可能以较小收入基数获得高质量机会。
+
+## 4. 当前关键业务/产品：收入贡献、增速、AI 重要性、供需紧张和溢价能力
+
+评分说明：5 分最高。收入贡献中的“当前 AI/DC 相关收入”是本报告估算，不是公司披露；Network and Communications 是公司披露的最接近上限口径。
+
+| 关键业务/服务包 | 当前披露基数 | 本报告估算的当前 AI/DC 相关收入贡献 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| 数据中心电气施工与设施服务 | 2026Q1 Electrical 收入 14.47 亿美元，OM 12.1%；2025 Electrical Network and Communications 收入 24.62 亿美元 | 2026 当前年化 Network/DC/fiber/cabling 口径约 30-38 亿美元；纯 AI 数据中心子集约 15-26 亿美元 | Electrical 2026Q1 +33.1%；2025 全年 Electrical +51.8%（并购贡献大） | 5 | 5 | 4.5 | 3.5 | time-to-power 是 AI DC 最大瓶颈之一；但 EME 无硬件垄断，优势是劳动力、项目资质、客户关系、预制化和执行记录。 |
+| 数据中心机械施工与液冷-ready MEP | 2026Q1 Mechanical 收入 20.26 亿美元，OM 10.9%；2025 Mechanical Network and Communications 收入 16.70 亿美元 | 2026 当前年化 Network/DC/fiber/cabling 口径约 20-28 亿美元；纯 AI 液冷/高密度 DC 子集约 8-18 亿美元 | Mechanical 2026Q1 +28.8%；2025 全年 Mechanical +10.1% | 4.5 | 4.5 | 4 | 3 | AI 机柜密度从 60-160kW/rack 向 200kW+演进，冷却二次侧、管网、泵阀、CDU 接口和测试平衡更重要。 |
+| VDC/BIM、预制化、FAT/SAT、调试配合 | 不单独披露；公司披露 VDC/BIM、prefabrication 是差异化能力 | 嵌入 Electrical/Mechanical，当前可影响约 5-15 亿美元相关合同价值，不可与分部收入简单相加 | 随数据中心大项目和 Miller 预制化能力提升而增长 | 4.5 | 5 | 4.5 | 4 | 这是把高需求转化为利润率的能力。预制化减少现场工时和返工，压缩交付周期。 |
+| Network and Communications / 低压、数据、BMS、安防、消防报警 | 2025 U.S. Construction Network and Communications 合计 41.32 亿美元；2026Q1 RPO 增长继续点名该部门 | Network and Communications 是 AI/DC 上限口径；AI 纯口径约为其中 40%-70% | 2025 Electrical N&C 从 14.43 亿增至 24.62 亿；Mechanical N&C 从 8.19 亿增至 16.70 亿 | 4 | 4 | 3.5 | 3 | 光模块/交换机价值不归 EME，但布线、低压、控制、安全和验收是上线必要条件。 |
+| Building Services critical facility retrofit / O&M | 2026Q1 Building Services 收入 7.73 亿美元，OM 5.2%；2025 mechanical services 24.02 亿美元，占 Building Services 77% | 纯 AI/DC 相关 retrofit/O&M 当前年化约 2-5 亿美元 | Building Services 2026Q1 +4.0%；mechanical services 2025 +6.3% | 3 | 3 | 3 | 2.5 | 不是新建 AI DC 核心弹性，但 retrofit、HVAC controls、IAQ、remote monitoring 能提供稳定后市场收入。 |
+
+## 5. 一年后关键业务/产品情景预测
+
+以下预测为 2026Q2-2027Q1 附近的未来 12 个月年化收入贡献情景。它不是公司指引，核心变量是：RPO 转化速度、AI 数据中心 power/cooling 项目是否按期 NTP、Miller Electric 与其他子公司是否扩充电气劳动力和预制能力、设备供应链是否拖慢现场施工、客户是否延迟资本开支。
+
+| 关键业务/服务包 | 基准情景（一年后） | 乐观情景（一年后） | 极度乐观情景（一年后） | AI 重要性/紧急性变化 |
+|---|---:|---:|---:|---|
+| 数据中心电气施工与设施服务 | AI/DC 相关年化收入 20-30 亿美元；同比 +20%-35%；供需紧张 4/5；溢价 3.5/5 | 30-42 亿美元；同比 +45%-65%；供需紧张 4.5/5；溢价 4/5 | 45-60 亿美元；同比 +90%-130%；供需紧张 5/5；溢价 4/5，但执行风险显著上升 | 重要性维持 5/5；越靠近 500MW+ campus 和多站点框架协议，电气施工越是瓶颈。 |
+| 数据中心机械施工与液冷-ready MEP | 12-22 亿美元；同比 +15%-30%；供需紧张 4/5；溢价 3/5 | 22-35 亿美元；同比 +40%-60%；供需紧张 4.5/5；溢价 3.5/5 | 35-50 亿美元；同比 +80%-120%；供需紧张 5/5；溢价 4/5 | GB300/Blackwell Ultra 和更高密度 rack 推动液冷-ready 默认化，机械 MEP 从“配套”变成投产约束。 |
+| VDC/BIM、预制化、FAT/SAT、调试配合 | 嵌入合同价值 8-15 亿美元；项目附着率提升 | 15-28 亿美元；多区域重复模块和预制 shop 利用率提升 | 30-45 亿美元；客户预留预制/调试能力，成为框架协议一部分 | 对 time-to-commission 的紧急性提升；本身不独立创造硬件 ASP，但提升中标概率和利润率保护。 |
+| Network and Communications / 低压、数据、BMS、安防、消防报警 | 年化收入 45-55 亿美元；AI 纯口径约 20-35 亿美元 | 55-70 亿美元；AI 纯口径约 30-50 亿美元 | 75-90 亿美元；AI 纯口径约 45-65 亿美元 | 数据中心、data/fiber/cabling 与安全/消防/BMS 仍是上线必需项；光模块价格波动对 EME 影响有限。 |
+| Building Services critical facility retrofit / O&M | AI/DC retrofit/O&M 年化 3-6 亿美元；整体 Building Services 低个位到中个位增长 | 6-10 亿美元；受既有数据中心高密度改造和冷却升级带动 | 10-15 亿美元；若大量存量机房改造为液冷-ready | 重要性从 3/5 升至 3.5/5；比新建收入弹性小，但客户粘性和复购更好。 |
+
+整体判断：公司官方 2026 收入指引只隐含约 9%-13% 增长，明显低于上表极度乐观业务线情景；因此极度乐观情景只有在 AI/DC 相关订单大幅挤出低增速项目、交付窗口提前、劳动力扩张成功、设备交付不再拖累时才成立。更可信的基准是：公司总收入增长落在指引高端或略高，Electrical/Network and Communications 增速显著高于公司平均。
+
+## 6. BOM、每 MW/rack/GPU/optical port 内容量、价格传导链、产能与认证
+
+### 6.1 BOM 拆分：EME 能捕捉什么，捕捉不到什么
+
+AI 数据中心每 MW 的设施 BOM 可粗分为：土地/土建、变电站/电网接入、高中低压配电、UPS/BESS/发电机、母线/PDU、机柜/服务器/GPU/网络、冷却系统、消防/安防/BMS/DCIM、施工管理、调试验收。EME 不捕捉 GPU、服务器、光模块、交换机、核心变压器/UPS/冷机等硬件全部 ASP；它捕捉的是工程、安装、预制化、调试、现场协调和部分材料/设备采购。
+
+本地行业资料给出的 2026 AI 数据中心设施重资本口径约 1000-2200 万美元/MW；其中 building/civil/MEP 在美国 2026 现实口径约 310-550 亿美元，对应 AI IT-load equipment-order equivalent 约 6.0-8.5GW。按这一口径，EME 的可服务内容量可估算如下：
+
+| 单位 | EME 可捕捉内容 | 基准内容量估算 | 乐观/高复杂度内容量 | 说明 |
+|---|---|---:|---:|---|
+| 每 MW IT load | 电气施工、机械施工、管线、配电安装、低压/安防/BMS、消防、预制、测试调试 | 180-400 万美元/MW | 300-600 万美元/MW | 不含 GPU/服务器/大部分 owner-furnished 设备 ASP。液冷 retrofit、复杂 campus、交期压缩会提高内容量。 |
+| 每 MW 电气侧 | switchgear/e-house 接入、UPS/发电机接口、母线/PDU 安装、线缆桥架、接地、照明、低压、测试 | 80-180 万美元/MW | 150-300 万美元/MW | 设备本体可能由业主或 OEM 采购，EME 收安装/集成/预制/调试价值。 |
+| 每 MW 机械/冷却侧 | 冷机/冷却塔接口、泵阀、管道、CDU/液冷二次侧、leak detection、消防、test & balance | 80-160 万美元/MW | 150-280 万美元/MW | 高密度和液冷-ready 项目内容量提升。 |
+| 每 MW VDC/预制/调试 | BIM/VDC、预制电气/管道/消防/板金、FAT/SAT、CxA 配合 | 20-60 万美元/MW | 50-100 万美元/MW | 通常嵌入工程合同，不作为独立分部披露。 |
+| 每 rack（100kW/rack） | 每 MW 约 10 个 rack，对应电气+机械+低压+调试内容 | 18-40 万美元/rack | 30-60 万美元/rack | 60-160kW/rack 是 2026 现实密度；若 200kW/rack，每 rack 内容量约翻倍但 rack 数减少。 |
+| 每 GPU | 以 72 GPU/rack、100-140kW/rack 粗算 | 2500-7800 美元/GPU | 5000-12000 美元/GPU | EME 不卖 GPU；这是把设施工程内容按 GPU 摊薄后的量级，只用于价格传导估算。 |
+| 每 optical port | 低压布线、路径、机柜侧施工、标签、测试、接地、安全/BMS 关联 | 20-80 美元/高速 port 等效 | 50-150 美元/port 等效 | EME 不捕捉光模块 ASP；更有意义的口径是每 rack 低压/数据/控制安装 1-5 万美元。 |
+
+### 6.2 价格传导链
+
+1. Hyperscaler/colo/企业客户确定 AI 容量、PUE、rack density、并网窗口和上线窗口。
+2. 业主/总包/设计工程公司将电气、机械、低压、消防、安防、BMS、调试要求拆成合同包。
+3. EME 以分部子公司身份承接 electrical/mechanical/facility services 合同，价格由工期、劳动力、材料、项目复杂度、固定价或成本加成、变更单条款决定。
+4. Eaton/Schneider/Vertiv/ABB/Siemens/Powell/冷却 OEM 提供关键设备，EME 捕捉安装、集成、预制、协调、测试和调试，不一定捕捉硬件全额。
+5. 当变压器、开关设备、CDU、泵阀、母线、熟练工和调试工程师紧张时，EME 的议价能力来自“能按期交付”，不是来自产品 IP。
+6. 若客户改变设计、设备延误或现场条件变化，EME 通过 change order 传导价格；如果合同条款不佳或执行差，成本压力会侵蚀毛利率。
+
+### 6.3 当前产能能力、供应链采纳和认证阶段
+
+| 项目 | 当前状态 |
+|---|---|
+| 总交付能力 | 2026 收入指引 185.0-192.5 亿美元；2026Q1 RPO 156.2 亿美元；约 47,700 名员工；美国约 450 个地点、约 100 个运营子公司。 |
+| AI/DC 相关年化能力 | 本报告估算，当前 Network/data-center/fiber/cabling 年化收入能力约 50-65 亿美元，其中纯 AI 数据中心子集约 25-45 亿美元。该口径包含 Electrical、Mechanical、低压/BMS/消防和部分 Building Services。 |
+| 供应链采纳 | 已进入数据中心、data/fiber、network communications、高科技制造、医疗和水务等复杂项目客户供应链；2025 Network and Communications 收入 41.32 亿美元、2026Q1 RPO 再创新高是最强证据。 |
+| 认证/资质 | EME 不是硬件产品认证公司，不需要类似 GPU/光模块的客户认证。关键门槛是项目级资质：NEC/NFPA/UL 相关安装合规、消防/生命安全、OSHA/安全记录、客户 approved vendor、保函能力、BIM/VDC 协同、FAT/SAT/CxA、Uptime/客户验收流程。 |
+| 产能瓶颈 | 熟练电工、管工、焊工、现场 superintendent、项目经理、调试工程师；同时受变压器、开关设备、母线、PDU、CDU、泵阀、冷机、阀门、消防材料交期影响。 |
+
+## 7. 一年后产能能力、供应链采纳和认证阶段情景
+
+| 业务/能力 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| Electrical AI/DC 交付能力 | 年化 25-35 亿美元；重点区域劳动力扩张，Miller Electric 并表协同继续释放 | 年化 35-50 亿美元；多区域客户框架协议、预制电气房/e-house 接入能力提升 | 年化 55-70 亿美元；客户预留工程队和预制产能，但项目管理和劳动力成为最强约束 |
+| Mechanical/liquid-ready MEP 交付能力 | 年化 15-25 亿美元；液冷-ready 设计默认化但仍以混合冷却为主 | 年化 25-40 亿美元；CDU/二次侧管网/泵阀/冷却 plant skid 接入加速 | 年化 40-60 亿美元；200kW+ rack 大规模推动 retrofit 与新建同时爆发 |
+| VDC/BIM/预制化能力 | 预制附着率提高；作为中标加分项 | 成为大型 AI campus 的标配交付方式，FAT/SAT 与 BIM 协同提高利润率保护 | 客户把预制化能力当成容量预留，EME 部分子公司形成区域性稀缺资源 |
+| 客户/供应链采纳 | 继续在现有 hyperscaler/colo/高科技制造客户供应链内扩大份额 | 形成更多 repeatable MW block 和多项目协议 | 进入客户战略级交付伙伴名单，但仍非排他 |
+| 认证/验收 | 项目级 NEC/NFPA/UL/客户验收持续 | 更多 liquid-cooling-ready、leak detection、FAT/SAT、Uptime/CxA 流程经验沉淀 | 对 500kW-1MW/rack 或 800VDC/MV UPS 早期项目形成试点经验，但这不是 2026 主收入线 |
+
+## 8. 基于真实订单积压与供给预测未来一年业务增速
+
+### 8.1 订单与供给事实
+
+- 真实订单积压/RPO：2026Q1 RPO 156.2 亿美元，同比 +32.9%，环比 2025 年底 +17.9%。
+- 需求来源：2026Q1 公司点名 Network and Communications、Water and Wastewater、Institutional、Healthcare 是 RPO 环比增长最显著领域；2026 年 4 月投资者材料明确称客户在 AI infrastructure 和 digital transformation 的投资正推动 Network and Communications 市场空前活跃。
+- 2025 年披露的 Network and Communications 收入：Electrical 24.62 亿美元，Mechanical 16.70 亿美元，合计 41.32 亿美元。
+- 供给约束：公司官方风险提示包括熟练劳动力稀缺、生产率挑战、材料供应链扰动、材料价格、关税、保函、竞争、项目 mix 变化。本地行业资料进一步显示，高压/中压设备、变压器、开关设备、母线、PDU、CDU、泵阀和调试工程师是行业瓶颈。
+- 取消率：EME 未披露 cancellation rate。本报告假设大型数据中心和基础设施合同取消率短期低于普通商业项目，但延期、re-scope、设计变更和并网推迟风险高。
+
+### 8.2 未来一年业务增速情景
+
+| 情景 | 总收入预测 | 总收入增速 | 经营利润率 | AI/DC 相关业务增速 | 成立条件 |
+|---|---:|---:|---:|---:|---|
+| 基准 | 190-202 亿美元 | +8%-13% | 9.0%-9.6% | +20%-35% | 公司基本完成 2026 新指引；RPO 正常转化；Network and Communications 保持强需求；劳动力和设备交期仍紧但可管理。 |
+| 乐观 | 205-220 亿美元 | +15%-25% | 9.5%-10.3% | +40%-65% | 2026Q1 RPO 高速转化；Electrical 与 Mechanical 数据中心项目继续拿单；Miller Electric 与预制能力释放；固定价风险可控。 |
+| 极度乐观 | 225-250 亿美元 | +30%-45% | 10.0%-11.2% | +80%-120% | 多个大型 AI campus 提前 NTP/施工，客户为抢 time-to-power 支付溢价，设备交付不再成为主要拖累，EME 快速扩张熟练工和调试能力。该情景显著高于公司官方指引，概率低但上行弹性大。 |
+
+最可能路径：公司总收入 2026 年落在指引高端附近，Electrical 与 Network and Communications 增速显著高于公司平均；利润率不会线性扩张，因为大型数据中心项目虽然需求强，但同时带来设备延迟、现场协调和劳动力成本风险。真正的超预期点是：RPO 再次大幅上修且公司不下调 margin 指引。
+
+### 8.3 渠道/项目名透明度
+
+EME 官方材料没有披露具体 hyperscaler 客户、项目名、单个订单金额或交付窗口。可验证的渠道证据主要是：
+
+- 公司 RPO 连续创新高，且多次点名 Network and Communications。
+- 2025 年 Network and Communications 在 Electrical 和 Mechanical 中合计贡献 41.32 亿美元。
+- Miller Electric 被并入 Electrical 分部，公司官方称收购增强 mission-critical services 和高增长行业能力。
+- 本地行业资料显示，2026-2027 AI 数据中心 MEP、电力、冷却和预制化订单池快速扩张，且熟练劳动力/调试能力是约束。
+
+因此，本报告不能声称 EME 已获得某个未披露 hyperscaler 订单；只能说其公开披露的 RPO 和 Network and Communications 暴露与 AI 数据中心建设周期高度一致。
+
+## 9. 竞争格局、技术主流性、风险和替代方案
+
+### 9.1 主要竞争对手
+
+| 竞争类别 | 主要公司 | 与 EME 的关系 |
+|---|---|---|
+| 大型电力/电气 EPC 与 T&D | Quanta Services、MYR Group、MasTec、Primoris、Kiewit、Black & Veatch、Burns & McDonnell | 在高压接入、变电站、输配电、C&I 电气施工上竞争；Quanta 更偏电网/T&D，EME 更偏建筑内电气/机械和设施服务。 |
+| 机械/HVAC/MEP 专业承包 | Comfort Systems USA、IES Holdings、M.C. Dean、Rosendin、Faith Technologies、Cupertino Electric、DPR self-perform teams | 在数据中心 MEP、机械、预制、低压和 onsite execution 上竞争。Comfort Systems USA 是最重要的上市机械/模块化 MEP peer。 |
+| 大型总包/工程公司 | Turner、DPR、Holder、Mortenson、AECOM、Jacobs、Fluor、Bechtel | 总包可能分包给 EME，也可能自营部分专业能力；大型项目中既合作又竞争。 |
+| 电气/冷却设备 OEM | Eaton、Schneider Electric、Vertiv、ABB、Siemens、Powell、Trane、Carrier、JCI、Modine | 主要是供应商/集成伙伴；在 prefab power/cooling skid、e-house、commissioned module 上可能部分竞争。 |
+| 设施运维与服务 | CBRE、JLL、ABM、Johnson Controls、Carrier/Trane service、Uptime/commissioning firms | 与 EME Building Services 在 site-based maintenance、retrofit、controls、energy efficiency、commissioning 上竞争。 |
+
+### 9.2 EMCOR 的竞争优势
+
+- 电气 + 机械双强：AI 数据中心需要电力和冷却同时交付，EME 的 Electrical 与 Mechanical 合计占 2026Q1 收入 75%。
+- RPO 可见度：2026Q1 RPO 156.2 亿美元，较 2025 年底增加 23.7 亿美元。
+- Network and Communications 已形成规模：2025 年披露该市场部门在 Electrical + Mechanical 中合计 41.32 亿美元。
+- Miller Electric 增强电气与东南部能力：Miller 2024 年预计收入约 8.05 亿美元、Adjusted EBITDA 约 0.80 亿美元，进入 EME Electrical 分部后提升数据中心、制造、医疗和任务关键项目能力。
+- VDC/BIM + 预制化：公司明确把 VDC/BIM 与 prefabrication 作为投标和执行差异化工具；这对 AI 数据中心缩短现场工期和减少返工非常重要。
+- 强资产负债表：净现金和低债务增强客户信任、保函能力和并购灵活性。
+
+### 9.3 技术是否主流
+
+对 EME 最有利的主流技术不是某个新硬件，而是 2026 AI 数据中心交付路线本身：
+
+- 主流路线：AC 高/中/低压骨干 + 传统变压器 + MV/LV switchgear + UPS/BESS/发电机 + 模块化 e-house + 高密度母线/PDU + 混合冷却 + direct-liquid-cooling-ready MEP + 预制化电力/冷却模块。
+- 本地行业资料显示，800VDC、MV UPS、solid-state transformer、500kW-1MW/rack 是 2027-2028 乃至更远的试点/早期选项，不是 2026 EME 的主收入线。
+- 这对 EME 是利好：不管最终设备 OEM 谁胜出，只要设施仍需要现场电气/机械安装、管线、调试和验收，EME 都有可服务内容。
+
+### 9.4 替代风险
+
+- OEM 集成模块替代部分现场工作：Eaton/Schneider/Vertiv/Powell 等可能把更多电力/冷却模块做成工厂预制，减少现场施工内容。但大型项目仍需要现场并网、管线、验收和客户定制，EME 也能作为安装/集成方受益。
+- 总包或客户自营：大型 hyperscaler 和 GC 可能加强 self-perform，压低分包商议价。
+- 竞争承包商抢劳动力和项目：Comfort Systems、IES、Rosendin、M.C. Dean、Quanta、MYR 等都在争抢数据中心工程人才。
+- AI 数据中心资本开支节奏变化：若电力审批、GPU 供应、融资、利用率或政策导致项目延期，EME RPO 转化速度会放慢。
+- 固定价合同和变更单风险：设备交付延迟、设计变更、关税和材料价格上行可能侵蚀利润率。
+- 技术路线变化：若未来机柜级集成、液冷 OEM 模块化、DC distribution 大幅减少现场电气/机械复杂度，单位 MW 现场内容量可能下降；但短中期更可能是复杂度上升。
+
+### 9.5 客户替换成本
+
+客户替换成本在项目生命周期中呈阶梯式上升：
+
+- RFP/设计早期：替换成本中等，主要取决于报价、区域劳动力、资质和关系。
+- BIM/VDC 协同、submittal、采购和预制启动后：替换成本高，因为模型、shop drawing、材料、工序、现场计划和安全方案已经绑定。
+- 现场施工和调试阶段：替换成本很高，替换承包商会带来工期、保修、责任划分、验收和索赔风险。
+
+因此，EME 没有硬件垄断，但一旦进入大型复杂项目并完成设计协同和现场动员，客户更换成本会明显上升。这也是专业承包商能在 AI 数据中心交付瓶颈中获得超额议价的来源。
+
+## 10. 关键监控指标
+
+后续跟踪 EME，不应只看总收入，而应重点看以下指标：
+
+| 指标 | 为什么重要 | 乐观信号 | 风险信号 |
+|---|---|---|---|
+| RPO 总额与环比增速 | 最接近真实 backlog | RPO 继续高于收入增长，特别是 Network and Communications 继续点名增长 | RPO 环比下降或高科技/Network and Communications 回落 |
+| Electrical 收入增速和 OM | AI/DC time-to-power 受益最直接 | Electrical 收入高于公司平均，OM 维持 11%-13% | 收入高增但 OM 下滑，说明低价抢单或执行压力 |
+| Mechanical 收入增速和 OM | 液冷-ready MEP 和高密度冷却受益 | Mechanical 收入加速且 OM 稳定在 11%-13% | 液冷/冷却项目复杂度提高但毛利率走低 |
+| Network and Communications 披露 | AI/DC 上限口径 | 公司继续披露 AI infrastructure/digital transformation 推动该市场 | 公司不再点名或称数据中心项目推迟 |
+| 有机增长 vs 并购增长 | 判断内生需求强度 | 有机增长维持双位数 | 增长主要靠并购，内生放缓 |
+| 经营现金流与 working capital | 项目执行质量和收款 | 收入增长同时现金流稳健 | 合同资产/应收大幅上升，现金流转弱 |
+| 公司是否上调 margin 指引 | 判断供需紧张是否转化为价格 | 收入和 margin 同时上调 | 只上调收入不动 margin 或下调 margin |
+
+## 11. 总体投资判断
+
+EME 是 AI 数据中心建设周期中非常正宗的“设施执行端”受益公司，但不是 AI 芯片、网络或电力设备硬件公司。它的核心投资逻辑是：AI 数据中心的关键瓶颈从“买 GPU”扩展到“拿电、配电、冷却、施工、调试和按期上线”，而 EME 的 Electrical + Mechanical + Network and Communications + VDC/预制化能力正卡在这个瓶颈上。
+
+当前最强证据是 2026Q1 RPO 156.2 亿美元、同比 +32.9%，以及公司对 Network and Communications/AI infrastructure 活动的明确表述。2025 年 Electrical 与 Mechanical 的 Network and Communications 收入合计 41.32 亿美元，已经不是小业务。Miller Electric 收购进一步强化了 EME 的电气和 mission-critical 服务能力。
+
+但投资上要保持边界：EME 没有硬件 ASP 垄断，没有 AI 订单明细披露，margin 不一定随需求线性上升；它的 alpha 来自项目选择、劳动力组织、预制化、客户关系和执行纪律。如果 RPO 继续创高、Electrical/Mechanical 增速高于公司平均且利润率稳定，EME 仍可作为 AI 数据中心建设的高质量间接受益标的；如果收入增长靠低毛利项目堆出来，或数据中心项目因电力/审批/设备延期导致 RPO 转化放慢，当前约 28x forward P/E 的估值会变得脆弱。
+
+## 12. 来源与资料
+
+### 公司官方与市场资料
+
+- EMCOR Group, Inc. Q1 2026 Results Press Release, 2026-04-29: https://www.businesswire.com/news/home/20260429893569/en/EMCOR-Group-Inc.-Reports-First-Quarter-2026-Results
+- EMCOR Group Corporate Overview Presentation, 2026-04-29: https://emcorgroup.com/application/files/6317/7755/6050/EME_Corporate_Overview_Presentation_April_2026_-_FINAL.pdf
+- EMCOR Group Q4 and FY2025 Results Press Release, 2026-02-26: https://www.businesswire.com/news/home/20260226702092/en/EMCOR-Group-Inc.-Reports-Fourth-Quarter-and-Full-Year-2025-Results
+- EMCOR Group 2025 Annual Report and Form 10-K: https://emcorgroup.com/application/files/9817/7669/7431/EMCOR_2025_AR_and_Form-10K.pdf
+- EMCOR Group Q3 2025 Earnings Presentation: https://emcorgroup.com/application/files/2617/6177/2571/3Q25_Earnings_Presentation_-_Final.pdf
+- EMCOR Group Q2 2025 Earnings Presentation: https://emcorgroup.com/application/files/2817/5390/7471/2Q25_Earnings_Presentation_FINAL.pdf
+- EMCOR Group Q1 2025 Earnings Presentation: https://emcorgroup.com/application/files/4617/4595/3806/1Q25_Earnings_Presentation_FINAL.pdf
+- EMCOR Group Miller Electric acquisition announcement and completion releases: https://emcorgroup.com/investor-relations/press-releases/2025-news/emcor-group-inc-release ，https://emcorgroup.com/investor-relations/press-releases/2025-news/emcor-group-inc-completes-acquisition-of-miller-electric-company
+- NYSE: EME 行情快照：2026-06-11 公开市场数据。
+
+### 项目内行业资料
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`
+- `行业调研/行业索引.md`

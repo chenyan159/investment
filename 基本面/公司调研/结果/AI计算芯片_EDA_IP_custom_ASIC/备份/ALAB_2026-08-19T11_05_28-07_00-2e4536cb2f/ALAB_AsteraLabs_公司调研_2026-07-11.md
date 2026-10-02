@@ -1,0 +1,508 @@
+# 公司：ALAB + Astera Labs（Astera Labs, Inc.）全面尽调
+
+> **研究截止日：2026-07-11（美国太平洋时间）**  
+> **股价口径：2026-07-10 最近一个交易日收盘；财务口径：最新已发布的 2026Q1，下一季度为公司 2026Q2 指引。**  
+> **独立性：本报告只使用项目内“行业调研/”的相关产业资料与联网检索；未读取、引用或继承其他目录中的公司报告，也未使用“特征量化/”。**
+
+## 结论先行
+
+1. **Astera Labs 已从“PCIe Retimer 单品公司”升级为 AI 机架内连接平台公司。** 目前商业收入来自 Aries PCIe/CXL Retimer、Aries Smart Cable Module/新兴 Gearbox、Taurus Ethernet Smart Cable Module、Scorpio Smart Fabric Switch、Leo CXL Memory Controller；COSMOS 是嵌入上述硬件的管理、遥测、诊断与安全软件层，不是独立 SaaS。2025 年 Scorpio 已超过全年收入的 15%，2026Q1 PCIe Gen6 产品已经超过收入三分之一；管理层预计 Scorpio 在 2026 年末成为最大产品线。
+2. **基本面很强，估值更强。** 2026Q1 收入 3.084 亿美元，同比增长 93%、环比增长 14%；GAAP 毛利率 76.3%、营业利润率 20.1%、净利率 26.0%。截至 2026-03-31，现金与有价证券 11.845 亿美元、无金融债务、流动比率 11.3 倍，资产负债表属于半导体成长公司中的优质水平。但 2026-07-10 股价 412.97 美元，对应基础股本市值 707.9 亿美元（$70.79bn）、TTM P/S 70.68 倍、forward P/S 40.28 倍、TTM P/E 279.2 倍、forward P/E 122.1 倍；当前价格已经预支了多个尚未量产项目的成功。
+3. **真正的 2026 年增长发动机是 Scorpio X/P 与 Aries Gen6，不是“所有产品平均增长”。** 以 2026Q2 指引中值 3.60 亿美元建模，Scorpio 约占 36%、Aries Retimer 约 33%、Aries SCM/Gearbox 约 13%、Taurus 约 14%、Leo 与其他约 4%。这是估算，不是公司分部披露。
+4. **65 亿美元 Amazon 框架不是 backlog。** 2026 年新认股权证最多对应 326.23 万股，归属条件与 Amazon 及关联方购买交换芯片、信号调理和光引擎产品的累计付款挂钩，覆盖付款上限 65 亿美元；文件同时没有最低采购义务。它是长周期“可寻址钱包份额/商业框架”的强验证，不能被当作已下订单、已锁产能或可确认收入。
+5. **订单可见度高，但无法得到审计意义的 B2B。** 公司不披露 backlog、bookings、book-to-bill、交期或取消率；终端客户主协议通常无最低采购，收入主要来自标准采购订单。可验证的强代理变量是连续五季收入超过此前指引中值 4.2%—11.7%、2026Q2 指引中值环比再增 16.7%、Scorpio P 新增两家 hyperscaler 在 2026 年末量产、Scorpio X 2026H2 放量、以及 PCIe Gen6 已经贡献超过三分之一收入。
+6. **一年后的合理收入区间很宽。** 本报告对 2026Q3—2027Q2 四季度收入给出：基准 18.5—20.5 亿美元、乐观 22.5—25.5 亿美元、极度乐观 29.0—34.0 亿美元，较可比的 2025Q3—2026Q2（后者用指引中值）11.70 亿美元分别增长约 58%—75%、92%—118%、148%—191%。极度乐观情景要求 Scorpio 多客户同时顺利爬坡、供应链无重大瓶颈、NVLink Fusion/Leo/光耦提前贡献，不能作为基准估值输入。
+7. **最重要的风险不是近期流动性，而是客户集中、设计节奏和估值。** 2025 年一个终端客户占比超过 70%，前三大终端客户合计 86%；Astera 没有长期最低采购保护，客户可以重构平台、减少器件数量或双供。与此同时 Broadcom、Microchip、Marvell/XConn、Credo 均在 Gen6 Retimer/交换、AEC 或 CXL 加速，Astera 必须用 320-lane Scorpio、COSMOS 和云端互操作能力维持溢价。
+
+### 证据与估算标签
+
+| 标签 | 含义 | 使用原则 |
+|---|---|---|
+| **[D] 直接披露** | SEC、公司新闻稿、产品页、标准组织或竞争对手官方资料 | 可直接复核 |
+| **[M] 管理层口径** | 财报电话会、投资者会议中的管理层陈述 | 不是审计数据，仍有前瞻偏差 |
+| **[E] 研究估算** | 由总收入、已披露占比、出货节奏、行业 ASP/BOM 反推 | 给区间，不伪装成分部披露 |
+| **[S] 情景假设** | 基准、乐观、极度乐观预测 | 不是公司指引 |
+
+Astera Labs 在 [2025 年 10-K](https://www.sec.gov/Archives/edgar/data/1736297/000173629726000010/alab-20251231.htm) 中明确只报告一个经营分部，且 2025 年产品收入 8.525 亿美元、工程服务收入为零；因此下文所有产品级收入和利润率均为 [E]，不能与 GAAP 分部数据等同。
+
+## 1. 整体业务、投资者定位与产业链位置
+
+### 1.1 公司到底卖什么
+
+Astera Labs 是无晶圆厂（fabless）连接芯片与模块公司，处在 **GPU/XPU、CPU、NIC、SSD、内存与机架级交换网络之间的数据通路**。它不生产 GPU，也不销售完整服务器或完整铜缆；它解决的核心问题是：当 PCIe、CXL 和 Ethernet 速度从 32GT/s/100G-lane 升至 64GT/s/200G-lane，链路损耗、扇出、协议互操作、遥测与故障定位迅速恶化，客户需要 Retimer、交换芯片、主动铜互联模块、CXL 控制器以及统一软件层。
+
+| 产品家族 | 当前角色 | 主要型号/配置 | 收入状态（2026-07-11） | AI 技术栈位置 |
+|---|---|---|---|---|
+| **Aries PCIe/CXL Smart DSP Retimer** | 修复高损耗 PCIe/CXL 信号、延长板级/背板链路 | Gen6 PT6082LR/LX（x8）、PT6162LR/LX（x16）；Gen5 PT508x/PT516x | 大规模量产；当前最大或第二大产品群 | CPU/GPU/NIC/SSD 之间 PCIe 数据路径，Gen6 平台刚需 |
+| **Aries Smart Cable Module（SCM）** | 将 PCIe/CXL 延伸到最长约 7 米主动铜链路 | PCIe 4/5/6、CXL；与线缆伙伴组合 | 量产；收入并入 Aries | 解耦 GPU tray、switch tray、存储与主机位置 |
+| **Aries Smart Gearbox** | PCIe6 x8 与 PCIe5 x16 等速率/宽度桥接 | PG6016、PG6032，处于送样/导入 | 小规模、潜力产品 | Vera Rubin 代际切换、NIC/设备速度不一致时提升 attach |
+| **Scorpio P-Series** | PCIe fabric 交换、扇出与多主机 | PF63201L 320 lanes；PF61601L 160；PF60641L 64；PF60481L 48；PF60321L 32；Gen5 PF50641L | 2025 年初量产，2025 年贡献超过公司收入 15% 的主要来源 | scale-out/机架内 PCIe fabric、存储/加速器扩展 |
+| **Scorpio X-Series** | 开放、内存语义 scale-up 交换；面向高密度 XPU collective | 320 lanes，单芯片最多连接 80 个 accelerators，支持 Hypercast/In-Network Compute | 2026Q1 初始量产，2026H2 加速 | 直接竞争机架内 scale-up fabric 钱包，是收入弹性最大产品 |
+| **Taurus Ethernet SCM** | 400G/800G 主动铜缆端模块，补偿铜线损耗 | EM400-QDX/EPS、EM800-EPS/QDX、EM200-QDX | 量产；2025 年收入约增长 4 倍 [M] | scale-out NIC/Switch 连接；Astera 卖模块/芯片，不是完整缆 |
+| **Leo CXL Smart Memory Controller** | CXL 内存扩展、池化、共享与 KV-cache 等定制内存路径 | CM5082E x8、CM5162E x16、CM5162P；A1000-1254AB 卡，4×DDR5-5600、最高 2TB | 早期收入；Azure M-series private preview；定制 KV-cache 预计 2027 出货 | 缓解 CPU 内存容量/带宽、推理 KV-cache 成本 |
+| **COSMOS** | 固件、SDK、遥测、fleet management、安全与诊断 | Aries/Scorpio 开发套件已可用，Leo/Taurus 套件推进中 | 随硬件免版税嵌入，无独立软件收入 | 提高部署速度、可观察性与替换成本 |
+| **定制连接/光互联** | NVLink Fusion 定制芯片、PCIe-over-optics、LPO/光耦 | 尚无正式量产型号；aiXscale 光纤-芯片耦合 IP | 主要为 NRE/样品阶段，管理层指向 2027 以后收入 | 下一代 scale-up 与跨机架 PCIe 光链路期权 |
+
+产品参数见公司官方 [Scorpio](https://www.asteralabs.com/products/scorpio-smart-fabric-switch/)、[Aries Retimer](https://www.asteralabs.com/products/pcie-cxl-smart-dsp-retimers/)、[Aries SCM](https://www.asteralabs.com/products/aries-smart-cable-modules/)、[Aries Gearbox](https://www.asteralabs.com/products/aries-pcie-smart-gearboxes/)、[Taurus](https://www.asteralabs.com/products/taurus-ethernet-smart-cable-modules/)、[Leo](https://www.asteralabs.com/products/leo-cxl-smart-memory-controllers/) 与 [COSMOS](https://www.asteralabs.com/products/cosmos/) 页面。
+
+### 1.2 投资者如何理解 ALAB
+
+**多头叙事：AI 连接“收费站”。** 每一代 XPU 提升带宽、功耗与机架密度，信号完整性和扇出复杂度上升得比 accelerator 数量更快；Astera 从每个链路的一颗 Retimer，扩展到每个 accelerator 超过 1,000 美元的 Retimer、SCM、Gearbox、交换和软件组合 [M]。75% 左右毛利率、净现金、产品代际快、与 hyperscaler 共研，令它更像高毛利连接 IP/芯片平台，而不是普通模拟器件公司。
+
+**空头叙事：单一超大客户驱动、无 backlog 保护、估值透支。** 2025 年最大终端客户占收入超过 70%，前三大终端客户 86%；公司与客户的主协议通常没有最低采购。高度集中能让收入快速放大，也会让某一代 accelerator 延期、BOM 去料、双供或内部 ASIC 带来季度级断层。当前约 70.7 倍 TTM 销售额，意味着市场已把 2027 年多产品成功放量计入。
+
+**更准确的定位：** Astera 是 **AI 服务器/机架内部的开放协议连接控制平面与数据平面供应商**。产业链上游依赖 TSMC 晶圆、ASE/Amkor 封装测试及少数板卡/模块伙伴；中游向 ODM、分销商和系统制造商出货；需求由 hyperscaler、GPU/XPU 平台、云服务器架构决定。Astera 的优势是协议/SerDes、云规模互操作实验室和 COSMOS；弱点是制造没有纵向一体化、终端客户谈判力极强。
+
+### 1.3 最近三年重大业务变化、转型与收购
+
+| 时间 | 事件 | 业务含义 |
+|---|---|---|
+| **2023** | 收入 1.158 亿美元，商业形象仍以 Aries Retimer 为主 | 验证 PCIe/CXL 信号调理需求，但产品与客户集中度高 |
+| **2024-03** | 完成 IPO，净募资约 6.722 亿美元 [D] | 获得远高于运营所需的现金，能够并行投资 Gen6、交换、CXL 与软件 |
+| **2024—2025** | Scorpio P/X、Aries Gen6/SCM/Gearbox、Taurus 800G、Leo CXL 和 COSMOS 扩展 | 从单颗 Retimer 转为“一个 AI rack 多个连接插槽”的平台 |
+| **2025** | 收入 8.525 亿美元，同比增长 115%；Scorpio 超过全年收入 15%，Taurus 约增长 4 倍，Aries 组合约增长 70% [D/M] | 交换与主动铜互联成为第二、第三增长曲线，降低单品风险但没有消除客户集中 |
+| **2025-11-10** | 完成 aiXscale Photonics 收购；现金对价约 3,110 万美元，确认 1,450 万美元在研技术与 1,690 万美元商誉 [D] | 获得光纤到芯片耦合技术，为 NPO/CPO/LPO/PCIe-over-optics 建立包装 IP；近期收入贡献很小 |
+| **2026-02-05** | 与 Amazon 签署新的客户认股权证框架：最多 326.23 万股、执行价 142.82 美元、归属与最高 65 亿美元累计付款挂钩 [D] | 强客户验证和长周期钱包份额机会；不是最低采购或 backlog，并带来 contra-revenue 与稀释 |
+| **2026-02-09** | 收购一家未具名数据中心加速公司的资产、人才与技术，对价约 7,400 万美元，其中商誉约 6,840 万美元 [D]；同日宣布以色列设计中心 | 加快定制连接/加速能力。两件事相关是合理推断，但 SEC 没有公开确认被收购方就是以色列中心，不能合并当作事实 |
+| **2026Q1—Q2** | Scorpio X 320-lane 初始量产；Scorpio P 新增 hyperscaler，Leo 获 KV-cache 定制 design win；台湾团队扩建；Computex 演示 50 米 PCIe6 LPO | 商业重点进一步转向交换、定制芯片和光互联；收入兑现集中在 2026H2—2028 |
+
+收购数据来自 [2025 10-K](https://www.sec.gov/Archives/edgar/data/1736297/000173629726000010/alab-20251231.htm)、[2026Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1736297/000173629726000020/alab-20260331.htm) 与 [aiXscale 公告](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-acquire-aixscale-photonics)；以色列和台湾扩张见公司 [以色列设计中心公告](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-expands-global-footprint-new-israel-design-center) 与 [台湾扩张公告](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-expands-taiwan-operations-accelerate-global-ai)。
+
+### 1.4 最新股价、估值与经营指标
+
+| 指标 | 最新值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | **412.97 美元** | 2026-07-10 收盘 | 2026-07-11 为周六，故采用最近交易日 |
+| 基础股本市值 | **707.9 亿美元（$70.79bn）** | 2026-07-10；约 1.714 亿股 | 常见行情网站口径 |
+| 完全摊薄权益价值 | **约 748 亿美元（$74.8bn）** | 股价 × 2026Q1 GAAP diluted 1.8116 亿股 [E] | 更适合看高 SBC/认股权证公司 |
+| TTM P/E | **279.20 倍** | 2026-07-11 数据快照；TTM EPS 约 1.48 美元 | GAAP 盈利为正，但估值极高 |
+| Forward P/E | **122.08 倍** | 2026-07-11；数据商 NTM 一致预期 | 与 FY2026 单年 EPS 口径可能不同 |
+| TTM P/S | **70.68 倍** | TTM 收入约 10.015 亿美元 | 业务需要多年高速增长才能消化 |
+| Forward P/S | **40.28 倍** | NTM 一致预期 | 仍显著高于成熟半导体平台 |
+| 最新季度收入增速 | **+93% YoY；+14% QoQ** | 2026Q1 | 连续高速，但绝对基数快速变大 |
+| FY2025 收入增速 | **+115%** | 2025 全年 | 收入 8.525 亿美元 |
+| TTM 毛利率 | **75.99%** | 截至 2026Q1 的最近四季 | 与公司 75% 左右长期结构一致 |
+| TTM 营业利润率 | **22.36%** | GAAP | SBC 与研发投入较重 |
+| TTM 净利率 | **26.72%** | GAAP | 含利息收入及税项波动，不能直接外推 |
+| 2026Q1 GAAP/非 GAAP 毛利率 | **76.3% / 76.4%** | 2026-03-31 | Q2 因客户认股权证预计降至约 73% |
+
+股价、估值及 TTM 比率取自 [StockAnalysis 2026-07-11 快照](https://stockanalysis.com/stocks/alab/statistics/)；财报数字取自公司 [2026Q1 财报](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-reports-first-quarter-2026-financial-results)。不同数据商对 forward 期间、摊薄股数和非 GAAP EPS 定义不同，不能混合倒算。
+
+### 1.5 资产负债表与财务健康度
+
+| 项目 | 2026-03-31 | 环比/质量判断 |
+|---|---:|---|
+| 现金及现金等价物 | 1.483 亿美元 | 流动性 |
+| 有价证券 | 10.362 亿美元 | 主要短期投资；与现金合计 **11.845 亿美元** |
+| 应收账款 | 1.348 亿美元 | 较 2025 年末约增 62%，快于收入环比 14%；估算 DSO 约 39 天，对比上季约 28 天，需监测但暂未失控 |
+| 库存 | 6,016 万美元 | 环比仅增 2%；WIP 由 3,575 万增至 4,657 万、成品由 2,314 万降至 1,329 万，符合为后续爬坡备料、同时成品出货较快的特征 |
+| 流动资产 | 14.129 亿美元 |  |
+| 流动负债 | 1.250 亿美元 | **流动比率 11.30 倍；速动比率约 10.55 倍** |
+| 总负债 | 1.653 亿美元 | 仅占总资产约 10.0% |
+| 金融债务 | **0** | 只有约 4,185 万美元租赁负债；净现金约 11.43 亿美元 |
+| 2026Q1 经营现金流 | 7,460 万美元 | 经营现金流率约 24.2% |
+| 2026Q1 Capex / FCF | 759 万 / **6,701 万美元** | fabless 模式资本开支轻 |
+| TTM FCF | 约 **3.43 亿美元** | 现金转化强，但大量 SBC 是非现金加回项 |
+
+**健康度：9/10，主要不是偿债风险。** 即使收入出现平台延期，公司仍有多年研发缓冲；现金与证券约为流动负债 9.5 倍。需要扣分的不是债务，而是：
+
+- **客户与应收集中。** 2026Q1 五个直接采购客户分别占收入约 29%、21%、16%、12%、12%；它们多为 ODM/分销/制造链节点，不能等同于终端客户分散。
+- **SBC 与稀释。** 2026Q1 SBC 为 4,891 万美元，占收入 15.9%；未确认 RSU 费用约 4.576 亿美元，另有 PSU 约 4,310 万美元。GAAP basic shares 1.7128 亿、diluted 1.8116 亿。
+- **认股权证。** 2022、2023、2026 三组客户认股权证最多合计约 557.85 万股，约为当前 basic shares 的 3.3%；截至 Q1 已有约 133.19 万股归属。2026 权证还会通过 contra-revenue 压低毛利率。
+- **商誉与早期技术。** 2026Q1 未具名收购的 7,400 万美元对价中约 6,840 万是商誉，若定制芯片项目不兑现，减值风险明显高于有形资产风险。
+
+上述余额均来自 [2026Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1736297/000173629726000020/alab-20260331.htm)。
+
+## 2. 最新及最近四次财报：五季度经营、订单与产品收入
+
+### 2.1 五季度 GAAP 与现金流
+
+| 财报季度 | 收入（亿美元） | QoQ / YoY | GAAP 毛利率 | GAAP 营业利润率 | GAAP 净利润 / 净利率 | 非 GAAP 营业利润率 | OCF / FCF（亿美元） | 前季指引中值 / 超预期 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| **2025Q1** | 1.594 | +13% / +144% | 74.9% | 7.1% | 0.318 / 20.0% | 33.7% | 0.105 / 0.060 | 1.530 / **+4.2%** |
+| **2025Q2** | 1.919 | +20% / +150% | 75.8% | 20.7% | 0.512 / 26.7% | 39.2% | 1.354 / 1.333 | 1.725 / **+11.3%** |
+| **2025Q3** | 2.306 | +20% / +104% | 76.2% | 24.0% | 0.911 / 39.5% | 41.7% | 0.782 / 0.659 | 2.065 / **+11.7%** |
+| **2025Q4** | 2.706 | +17% / +92% | 75.6% | 24.7% | 0.450 / 16.6% | 40.2% | 0.953 / 0.766 | 2.490 / **+8.7%** |
+| **2026Q1（最新）** | **3.084** | **+14% / +93%** | **76.3%** | **20.1%** | **0.803 / 26.0%** | **36.2%** | **0.746 / 0.670** | 2.915 / **+5.8%** |
+
+注：
+
+- 2025Q2—Q4 单季 OCF/Capex 由累计现金流量表相减得到 [E]；因此是可审计推算，不是新闻稿单独列示。
+- 2025Q3 的 39.5% 净利率受税项/利息影响，不能当作稳定利润率。更能表示经营结构的是 40% 左右非 GAAP 营业利润率。
+- 五季官方来源依次为 [2025Q1](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-announces-financial-results-first-quarter-fiscal-0)、[2025Q2](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-announces-financial-results-second-quarter-fiscal-0)、[2025Q3](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-announces-financial-results-third-quarter-fiscal-0)、[2025Q4/FY2025](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-reports-fourth-quarter-and-full-year-2025-financial) 与 [2026Q1](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-reports-first-quarter-2026-financial-results)。
+
+### 2.2 五季度产品收入、增速与 AI 数据中心占比估算
+
+公司没有产品分部披露。下表以公司已披露的 Scorpio 占比、Gen6 占比、Aries/Taurus 年度增速和量产节点约束各区间；每行各产品区间可能因四舍五入和不确定性重叠，**不能把所有上限相加**。
+
+| 财报季度 | Aries Retimer/SCM/Gearbox [E] | Scorpio P/X [D/E] | Taurus Ethernet SCM [E] | Leo/定制/其他 [E] | 产品毛利率线索 [E] | AI/加速计算相关收入占比 [E] |
+|---|---:|---:|---:|---:|---|---:|
+| **2025Q1** | 1.10—1.19 亿美元；YoY 约 +110%—150% | 0.02—0.06 亿；P-Series 初始出货 | 0.32—0.40 亿；YoY 约 +200%—350% | 0—0.08 亿 | Aries 66%—76%；Scorpio 55%—70%（初始爬坡）；Taurus 48%—60%；Leo 55%—68%；公司综合 74.9% | **75%—85%** |
+| **2025Q2** | 1.19—1.32 亿；YoY 约 +70%—110% | **约 0.19 亿、约占 10%** [M] | 0.35—0.44 亿；YoY 约 +250%—400% | 0.04—0.10 亿 | Aries 67%—77%；Scorpio 62%—74%；Taurus 49%—62%；Leo 56%—70%；公司综合 75.8% | **80%—90%** |
+| **2025Q3** | 1.31—1.48 亿；YoY 约 +55%—85% | 0.30—0.39 亿 | 0.46—0.55 亿；YoY 约 +250%—400% | 0.05—0.09 亿 | Aries 68%—78%；Scorpio 65%—76%；Taurus 50%—64%；Leo 58%—72%；公司综合 76.2% | **85%—92%** |
+| **2025Q4** | 1.43—1.62 亿；YoY 约 +35%—60% | 0.54—0.70 亿 | 0.43—0.57 亿；YoY 约 +220%—350% | 0.05—0.11 亿 | Aries 68%—78%；Scorpio 66%—77%；Taurus 50%—65%；Leo 60%—73%；公司综合 75.6% | **87%—94%** |
+| **2026Q1** | 1.45—1.67 亿；YoY 约 +25%—45% | **0.80—1.05 亿**；YoY 超过 10 倍 [E] | 0.43—0.56 亿；YoY 约 +20%—55% | 0.09—0.19 亿 | Aries 68%—78%；Scorpio 67%—79%；Taurus 50%—65%；Leo 62%—75%；公司综合 76.3%；PCIe Gen6 **>收入 1/3，即 >1.028 亿美元** [M] | **90%—95%** |
+
+**为什么 AI 占比不是 100%：** 公司全部产品面向 cloud/data center，但普通云服务器、企业存储和通用 CPU 内存扩展不应全部贴上“AI”。上表仅把 merchant GPU、custom XPU、AI scale-up/scale-out 以及明确的 AI rack 平台计入。由于最大客户及项目名称未完整披露，该比例置信度为中低。
+
+### 2.3 Backlog、Bookings、B2B、交期与取消率：能知道什么、不能知道什么
+
+| 季度 | 公司披露的 backlog / bookings / B2B | 可验证订单代理 | 设计赢单到量产周期 | 研究估算的排产覆盖/需求供给比 [E] | 取消/延期损耗假设 [E] |
+|---|---|---|---|---:|---:|
+| 2025Q1 | 均未披露 | Q2 指引中值 1.725 亿，最终超 11.3%；Aries6/Scorpio P 初始出货 | 6—18 个月常见；公司称最久约 2 年 | 1.05—1.15× | 8%—12% |
+| 2025Q2 | 均未披露 | Q3 指引中值 2.065 亿，最终超 11.7%；Scorpio P 提前量产 | 6—18 个月 | 1.05—1.20× | 6%—10% |
+| 2025Q3 | 均未披露 | Q4 指引中值 2.490 亿，最终超 8.7%；Gen6 >20% 收入 | 6—18 个月 | 1.05—1.20× | 5%—10% |
+| 2025Q4 | 均未披露 | Q1 指引中值 2.915 亿，最终超 5.8%；Scorpio P 三家 hyperscaler design wins [M] | 6—18 个月 | 1.05—1.20× | 5%—10% |
+| 2026Q1 | 均未披露 | Q2 指引中值 3.60 亿、环比 +16.7%；X 初始量产，P 新客户 2026 年末量产 | 6—18 个月；X/定制项目可更长 | **1.10—1.25×** | **4%—8%** |
+
+这里的“需求供给比”只是用指引覆盖度、历史 beat、客户量产计划和供应链表述构造的研究代理，**不是 book-to-bill**。公司 [2025 10-K](https://www.sec.gov/Archives/edgar/data/1736297/000173629726000010/alab-20251231.htm) 给出的硬事实是：
+
+- 设计赢单通常发生在客户验证后，但从赢单到量产收入最长可达约两年；验证完成后仍可能数月才进入部署。
+- 主协议通常不要求最低采购；标准 PO 在规定通知窗口内通常不能取消或变更，但窗口外客户可推迟、减量或改版。
+- 没有披露超过一年未履行履约义务，也没有公布 backlog。
+- 因此取消率不能从财报计算。上表“损耗”同时包含项目延期、平台减配、双供份额变化和真实取消，不等于法律意义上的 PO cancellation。
+
+## 3. 2026 年最新指引、业务收入占比与产品交叉验证
+
+### 3.1 最新 2026Q2 指引
+
+公司 2026-05-05 给出 2026Q2：
+
+- 收入 **3.55—3.65 亿美元，中值 3.60 亿**，中值环比增长 16.7%。
+- GAAP 与非 GAAP 毛利率均约 **73%**，比 Q1 76.3% 下降约 330bps；其中约 **200bps 是 Amazon 客户认股权证的非现金 contra-revenue**，余下主要是 Scorpio/模块组合和新品爬坡。
+- GAAP EPS 0.44—0.46 美元；非 GAAP EPS 0.68—0.70 美元；稀释股数约 1.84 亿。
+- 管理层称 Q2 Aries、Taurus、Scorpio 均增长，Scorpio X 开始初始量产，Scorpio 将在 2026 年末成为最大产品线。[2026Q1 财报与指引](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-reports-first-quarter-2026-financial-results)
+
+### 3.2 2026Q2 收入结构中心估算
+
+| 产品/业务 | 中心收入 [E] | 占 Q2 指引中值 | 环比中心增速 [E] | 交叉验证 |
+|---|---:|---:|---:|---|
+| **Aries Retimer** | **1.20 亿美元** | **33%** | 约 +2% | Gen6 已有数百万 ports 出货；Gen6 ASP 较 Gen5 高，Q2 所有 Aries 增长 [M] |
+| **Aries SCM + Gearbox** | **0.48 亿美元** | **13%** | 约 +20% | PCIe6 外部铜链路与代际桥接新增；Gearbox 尚处早期，不应高估 |
+| **Scorpio P + X** | **1.28 亿美元** | **36%** | 约 +39% | X 初始量产、P 扩客户；管理层称年末最大产品线 |
+| **Taurus** | **0.52 亿美元** | **14%** | 约 +6% | 400G/800G AEC 模块持续增长，但行业多供方、ASP 低于 Scorpio |
+| **Leo、定制、光学及其他** | **0.12 亿美元** | **3%—4%** | 约 +30% | Azure private preview、KV-cache design win；多数仍非量产 |
+| **合计** | **3.60 亿美元** | **100%** | **+16.7%** | 与公司指引中值闭合 |
+
+### 3.3 产品级规模、利润率与销售增速判断
+
+| 重点产品 | 当前季度规模 [E] | 产品毛利率 [E] | 未来 12 个月销售增速倾向 | 判断 |
+|---|---:|---:|---:|---|
+| Aries Gen6 Retimer | 0.85—1.05 亿美元 | 68%—78% | +25%—60% | Gen6 是 2026 基盘；成熟 Gen5 ASP 年降约 10%—20%，由 Gen6 约 1.5—2.2× ASP 与更多 attach 抵消 |
+| Aries Gen5 Retimer | 0.25—0.40 亿 | 65%—75% | -10%—+10% | 现金牛，平台代际迁移使其低增长；不能把全部 Aries 当 Gen6 |
+| Aries SCM | 0.35—0.45 亿 | 55%—68% | +35%—80% | 系统需要更长 PCIe 铜链路；模块化令毛利低于纯芯片 |
+| Aries Gearbox | <0.05 亿 | 55%—70% | +150% 以上、低基数 | 潜力小产品；解决 PCIe6 主机与 PCIe5 endpoint 的代际错配 |
+| Scorpio P | 0.75—0.95 亿 | 68%—78% | +70%—140% | 多家 hyperscaler 新平台，2026 年末新增客户量产 |
+| Scorpio X | 0.15—0.35 亿 | 65%—78%（爬坡初期偏低） | +200%—500% | 320-lane、scale-up 核心；H2 是最大增量和最大执行风险 |
+| Taurus 400/800G | 0.45—0.60 亿 | 50%—65% | +30%—80% | 800G 是主引擎，竞争和多供降低垄断；Astera 收入不是完整 AEC 售价 |
+| Leo CXL | 0.04—0.10 亿 | 62%—75% | +80%—250%、低基数 | Azure private preview 是采用验证，不是大规模 GA；2027 KV-cache 才可能显著 |
+| NVLink Fusion 定制连接 | 接近零/NRE | 60%—75%（量产目标） | 新业务 | 一颗定制器件/accelerator，ASP 低于 Scorpio，但 attach 高；管理层称总机会可接近 native switch |
+| 光耦、PCIe-over-optics/LPO | 接近零 | 早期为负至低；规模化 35%—60% | 新业务 | Computex 50 米演示是 PoC；光耦平台验证指向 2027，完整光 scale-up 更可能 2028 |
+| COSMOS | 单独收入为 0 | 不适用 | 随硬件增长 | 根据公司销售条款，固件随硬件免版税；价值体现在硬件 ASP、设计赢单和替换成本，不能虚构 SaaS 收入 |
+
+管理层产品节奏主要取自 [2026Q1 电话会文字稿](https://www.fool.com/earnings/call-transcripts/2026/05/05/astera-labs-alab-q1-2026-earnings-transcript/)；该来源为第三方转录，数值与 SEC/公司新闻稿冲突时以后者为准。
+
+### 3.4 明确跳过的低增速/非重点业务
+
+为保持 AI 基建主线，以下项目不单独预测，但仍包含在总收入：
+
+- Aries Gen4 及成熟 Gen5 的传统企业服务器、普通存储应用：仍有现金流，技术代际和 ASP 低增长。
+- Taurus EM200-QDX 等较低速率 200G，以及成熟 400G 的非 AI 网络连接：被 800G/1.6T 迁移稀释。
+- 传统 cloud/general-purpose server 中与 accelerator 无直接关系的 Retimer 需求：公司未单列，增长低于 AI 平台。
+- 工程服务：2025 年为零，不构成业务线。
+- COSMOS 开发套件的单独销售：其经济价值并入硬件，不作为独立收入。
+
+**不能跳过的小产品/期权：** Aries Gearbox、Leo KV-cache 定制控制器、NVLink Fusion custom connectivity、aiXscale 光纤-芯片耦合、PCIe-over-optics/LPO，以及 UALink 2.0 Scorpio。这些当前收入小，却可能显著改变 2027—2028 钱包份额。
+
+## 4. 每个高增长/关键产品的当前贡献、AI 重要性与供需
+
+评分均为 1—5：5 表示最高。供需紧张度 5 表示可用合格供给最紧；垄断能力不是法律垄断，而是 design win、IP、验证和生态形成的准垄断。
+
+| 产品/业务 | 2026Q2 中心收入 / 年化 [E] | 当前收入增速 [E] | AI 栈重要性 | 时间紧急性 | 供需紧张 | 准垄断能力 | 溢价能力 | 核心原因 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| **Aries Gen6 Retimer** | 0.95 / 3.80 亿美元 | YoY +60%—110% | **5.0** | **5.0** | 4.0 | 4.0 | 4.0 | 64GT/s PAM4 链路损耗使 Retimer 近刚需；但 Broadcom/Credo/Microchip 已进入 |
+| **Aries SCM + Gearbox** | 0.48 / 1.92 亿 | +40%—90% | 4.5 | 5.0 | 4.0 | 3.8 | 4.0 | 解耦 rack 拓扑、连接不同代际 endpoint；线缆/模块伙伴增加议价层 |
+| **Scorpio P/X** | 1.28 / 5.12 亿 | +200% 以上 | **5.0** | **5.0** | **4.5** | **4.2** | **4.7** | 320 lanes、最多 80 accelerators/switch、Hypercast/INC；平台一旦定版难替换 |
+| **Taurus 800G SCM** | 0.52 / 2.08 亿 | +30%—80% | 4.0 | 4.0 | 3.0 | 3.0 | 3.3 | 铜缆在 3—7 米仍具功耗/成本优势，但 Credo 等多供且客户可买完整 AEC |
+| **Leo CXL** | 0.07 / 0.28 亿 | +80%—250% | 3.5 | 3.0 | 2.5 | 3.5 | 4.0 | 软件/内存语义和客户验证门槛高；CXL 采用尚早，需求不算供不应求 |
+| **NVLink Fusion 定制芯片** | 约 0 / NRE | 新业务 | **5.0** | 4.0 | 3.5 | 3.5 | 4.5 | 1:1 accelerator attach、定制锁定强；客户/平台/IP 依赖也强 |
+| **光耦与 PCIe 光互联** | 约 0 | 新业务 | 4.0 | 2.5 | 2.0 | 3.0 | 3.5 | 长距离和功耗最终重要，但 PoC 到量产、良率与封装仍有两年以上风险 |
+| **COSMOS 软件层** | 单独 0；支撑全部硬件 | 随硬件 | 4.5 | 4.0 | 不适用 | 4.2 | 4.5 | 诊断、fleet management 与互操作数据提高 design win、ASP 和转换成本 |
+
+## 5. 一年后各关键产品：基准、乐观、极度乐观
+
+### 5.1 产品收入贡献与增速情景
+
+“一年后”定义为 **2027Q2 单季年化收入运行率**，不是 2027 财年收入。当前基准为 2026Q2 指引中值年化 14.4 亿美元。
+
+| 产品/业务 | 当前年化 [E] | 基准：2027Q2 年化 / 增速 [S] | 乐观：年化 / 增速 [S] | 极度乐观：年化 / 增速 [S] | 主要触发条件 |
+|---|---:|---:|---:|---:|---|
+| Aries Gen6/Gen5 Retimer | 3.80 亿 | **6.00 亿 / +58%** | **7.20 亿 / +89%** | **8.50 亿 / +124%** | Gen6 attach 增、Gen5 衰退温和、Broadcom 未快速夺份额 |
+| Aries SCM + Gearbox | 1.92 亿 | **2.50 亿 / +30%** | **3.50 亿 / +82%** | **4.80 亿 / +150%** | Rubin/定制 XPU 的外部 PCIe 线缆和代际桥接扩大 |
+| Scorpio P/X/UALink | 5.12 亿 | **11.0 亿 / +115%** | **15.0 亿 / +193%** | **21.0 亿 / +310%** | P 新客户准时量产；X 成为主流开放 scale-up；软件稳定 |
+| Taurus | 2.08 亿 | **3.40 亿 / +63%** | **4.70 亿 / +126%** | **6.50 亿 / +213%** | 800G attach 增、1.6T 导入、铜缆未被光快速替代 |
+| Leo CXL/定制内存 | 0.28 亿 | **1.00 亿 / +257%** | **2.00 亿 / +614%** | **3.50 亿 / +1,150%** | Azure 从 preview 扩大；KV-cache 设计 2027 按期量产 |
+| NVLink Fusion/custom connectivity | 约 0 | **1.50 亿** | **3.20 亿** | **5.50 亿** | 首个 custom silicon 一次成功、客户平台无延迟、attach 接近 1:1 |
+| 光耦/PCIe-over-optics | 约 0 | **0.40 亿** | **1.00 亿** | **2.20 亿** | 光耦大客户 2027 量产；LPO 从 PoC 进入平台小批量 |
+| **合计，不含 COSMOS 重复收入** | **14.4 亿** | **约 25.8 亿** | **约 36.6 亿** | **约 52.0 亿** | 这是季度年化能力，不是未来四季度确认收入 |
+
+### 5.2 一年后战略评分情景
+
+| 产品 | 基准：重要性/紧急/紧张/准垄断/溢价 | 乐观 | 极度乐观 | 含义 |
+|---|---|---|---|---|
+| Aries Retimer | 5/5/4/4/4 | 5/5/4.5/4.2/4.3 | 5/5/5/4.5/4.6 | Gen6 官方互操作成熟后需求加速，供应紧张来自合格产能而非晶圆绝对短缺 |
+| Aries SCM/Gearbox | 4.5/5/4/3.8/4 | 4.7/5/4.5/4/4.3 | 5/5/5/4.3/4.5 | 架构解耦越强，内容量越高 |
+| Scorpio | 5/5/4/4.2/4.7 | 5/5/4.7/4.5/4.8 | 5/5/5/4.7/5 | 若多个 hyperscaler 同时定版，320-lane+COSMOS 形成事实标准窗口 |
+| Taurus | 4/4/3/3/3.3 | 4.3/4.5/4/3.3/3.6 | 4.5/5/4.5/3.6/4 | 铜的短距成本优势延续，但多供应商限制垄断 |
+| Leo | 3.5/3/2.5/3.5/4 | 4/4/3.5/4/4.3 | 4.5/4.5/4.5/4.3/4.6 | CXL 软件与内存编排真正进入生产后，稀缺性才上升 |
+| NVLink Fusion custom | 5/4/3.5/3.5/4.5 | 5/5/4/4/4.7 | 5/5/5/4.5/5 | 定制 design win 的准垄断最强，但失败时收入可接近零 |
+| 光互联 | 4/2.5/2/3/3.5 | 4.5/3.5/3/3.5/4 | 5/4.5/4.5/4/4.5 | 时间越早量产越乐观；当前不应把 PoC 当供不应求 |
+
+## 6. BOM、每 MW / rack / GPU / optical port 内容量与价格传导
+
+### 6.1 统一架构假设
+
+- 代表性高密度 AI rack：**72 个 XPU、IT 功率 120—150kW**；因此每 IT MW 约 6.7—8.3 racks、约 480—600 accelerators。
+- 公司管理层称在部分下一代平台 **Astera 总内容量超过 1,000 美元/accelerator 且继续上升** [M]。这是组合内容，不等于单个 Scorpio 或单个 Retimer ASP。
+- 下表 ASP 来自项目内相关行业研究对公开产品、供应链和整机 BOM 的交叉区间：Gen5 x16 Retimer 约 90—180 美元、Gen6 x16 约 180—350 美元；Gen6 高 lane-count switch 约 6,000—18,000 美元的 AI 场景模型；完整 PCIe AEC 约 450—1,300 美元，完整 400/800G Ethernet AEC 约 300—850 美元。Astera 只销售 Taurus/Aries 主动模块或芯片时，其收入低于完整线缆价格。
+
+### 6.2 内容量模型
+
+| 产品 | 真实装配内容/拓扑假设 [D/E] | 单价/端口口径 [E] | 每 GPU 内容量 [E] | 72-GPU rack [E] | 每 IT MW [E] | 置信度 |
+|---|---|---:|---:|---:|---:|---|
+| **Aries Gen6 Retimer** | 每 accelerator 1—3 个 x16 等效 Retimer；链路越长/板层越多 attach 越高 | 180—350 美元/x16 | **180—1,050 美元** | **1.30—7.56 万美元** | **0.09—0.63 百万美元** | 中 |
+| **Aries SCM/Gearbox** | 每 accelerator 0—2 条外部 PCIe 主动链路；Gearbox 0.25—1 个/accelerator | Astera 模块内容约 200—550 美元/link；Gearbox 250—600 美元 | **50—1,100 美元** | **0.36—7.92 万美元** | **0.02—0.66 百万美元** | 中低，拓扑高度敏感 |
+| **Scorpio P/X** | 8—12 颗高 radix switch/rack；X 单颗最多连 80 accelerators，但实际有冗余/多层 | 6,000—18,000 美元/ASIC | **670—3,000 美元** | **4.8—21.6 万美元** | **0.32—1.80 百万美元** | 中；与“组合 >1,000/GPU”同量级 |
+| **Taurus 800G SCM** | 每 accelerator 1—2 条 800G 铜链路；Astera 模块/芯片约占完整 AEC 价值 35%—55% | 105—470 美元/Astera 端模块内容；完整缆 300—850 美元 | **105—940 美元** | **0.76—6.77 万美元** | **0.05—0.56 百万美元** | 中低 |
+| **Leo CXL** | 采用的 rack 配 8—64 个控制器；不是所有 AI rack 都装 | 250—900 美元/controller silicon；约 **125—450 美元/TB**（假设 2TB） | 装配 rack 折算 **30—800 美元** | **0.20—5.76 万美元**，不含 DRAM | **0.01—0.48 百万美元** | 低；采用率比单 rack 内容更关键 |
+| **NVLink Fusion custom** | 管理层称约 1 颗 custom device/accelerator | 700—2,000 美元/accelerator [E] | **700—2,000 美元** | **5.04—14.4 万美元** | **0.34—1.20 百万美元** | 低；尚无公开 ASP/型号 |
+| **光耦/PCIe optics** | 144—576 个 optical ports/rack 的前瞻模型；只计 coupling/packaging，不计完整 laser/DSP/module | **50—250 美元/optical port** [E] | 100—2,000 美元折算 | **0.72—14.4 万美元** | **0.05—1.20 百万美元** | 很低；PoC/资格验证阶段 |
+| **COSMOS** | 固件/SDK/管理随硬件 | 单独开票约 0；可理解为硬件价值的 5%—15%“影子价值”，不可重复计收入 | 不单列 | 不单列 | 不单列 | 高（不独立收费） |
+
+### 6.3 产品 BOM 与毛利传导
+
+| 产品 | 典型 BOM/COGS 构成 [E] | 对毛利最敏感的环节 | 价格如何传导 |
+|---|---|---|---|
+| Aries/Scorpio 纯芯片 | 晶圆/裸片 50%—62%；FC-BGA/先进封装 14%—22%；测试 9%—15%；固件/QA 4%—8%；物流/质保 4%—7% | TSMC 节点、die size/yield、ABF substrate、OSAT 测试时长 | Gen6 相对 Gen5 约 1.5—2.2× ASP，可覆盖先进节点成本；客户最终按少返工、少 PCB 层和更高 GPU 利用率定价，而非成本加成 |
+| Aries/Taurus 完整主动铜方案 | active silicon/package 32%—52%；铜缆 8%—14%；连接器 12%—18%；PCB/PMIC 8%—15%；组装 8%—13%；测试/yield 10%—16%；质保 5%—9% | 高速连接器、良率、线缆长度、双端 DSP 数量 | Astera 卖模块给 cable partner，再由 partner/ODM 集成为完整缆；终端涨价不能 100% 回传给 Astera，因此毛利低于纯芯片 |
+| Leo controller/card | controller die/package 25%—40%；PCB/PMIC 12%—18%；连接器/机械 10%—15%；组装测试 12%—20%；软件/验证/质保为余量；DRAM 通常另计 | CXL firmware、DRAM 兼容矩阵、板卡良率 | 芯片按 controller 定价；卡按容量/性能定价。DRAM 涨价主要传给内存/板卡供应商，Astera 受益来自 attach 而非 DRAM 价差 |
+| Optical coupling | photonic die/激光/耦合/封装/测试良率占主导，公开数据不足 | 光纤耦合良率、热稳定、可维修性、laser source | 早期按性能/节能价值定价，但产量小、测试成本高；只有良率成熟后才可能达到 35%—60% 产品毛利 |
+
+**价格传导链：** TSMC wafer/OSAT/基板成本 → Astera 芯片或模块 ASP → cable/board partner 加成 → ODM/OEM rack BOM → hyperscaler 以每可用 GPU 小时、功耗和故障率评估。Astera 的溢价不主要来自原材料，而来自减少链路重训、缩短调试周期、提升可观察性和避免昂贵 accelerator 闲置。
+
+## 7. 当前产能、供应链采纳与认证
+
+### 7.1 当前可销售产能
+
+Astera 不披露 wafer starts、die yield 或产品产能。按 2026Q2 指引 14.4 亿美元年化收入、管理层称 2026 年供应已安排到位但仍有局部约束，估算当前已合格的总可销售年化能力约 **16—19 亿美元**；这是共享 TSMC/OSAT 产能，以下产品能力不可简单相加。
+
+| 产品 | 当前可销售年化能力 [E] | 供应链采纳程度 | 当前认证/资格阶段 |
+|---|---:|---|---|
+| Aries Retimer | 7.5—9.5 亿美元 | 多代云/AI 平台量产，数百万 Gen6 ports 已出货 [M] | 客户平台量产资格通过；PCI-SIG 64GT/s 官方测试项目在 2026-07-27 才于 Workshop #140 开始，未见公司公开 Integrators List 64GT/s 认证 |
+| Aries SCM/Gearbox | 2.0—3.0 亿 | SCM 已与 cable/ODM 伙伴量产；Gearbox 送样/早期导入 | SCM 客户资格；Gearbox 尚处平台验证 |
+| Scorpio P/X | 5.5—8.5 亿 | P 已量产且至少三个 hyperscaler design wins [M]；X 初始量产、10+ 客户接洽 [M] | P 量产资格；X lead customer 初始量产，其他客户 qualification 到 2026 年末/2027 |
+| Taurus | 2.5—4.0 亿 | 400/800G 多 cable partner 采用，2025 收入约 4× | 线缆/交换/NIC 平台资格，非单一标准 logo |
+| Leo | 0.5—1.2 亿 | Azure M-series private preview；其他 CXL 评估 | private preview/客户验证，非广泛 GA |
+| Custom/optical | <0.5 亿 | NVLink Fusion 深度接洽；光耦在一家主要 AI platform provider 资格验证 [M] | tape-out/工程样片/qual；Computex LPO 仅 PoC |
+
+制造集中硬约束来自 [2025 10-K](https://www.sec.gov/Archives/edgar/data/1736297/000173629726000010/alab-20251231.htm)：晶圆由 TSMC 单一来源，后段主要依靠 ASE 与 Amkor，模块/板卡伙伴数量有限。设计一旦通过验证通常可形成数季黏性，但任何先进封装、基板或测试瓶颈都会跨产品共享。
+
+### 7.2 标准与会议验证
+
+- **PCIe Gen6：** PCI-SIG Workshop #140 将在 2026-07-27—31 首次包括 64GT/s PCIe 6.x 和 Retimer 官方测试。客户可以在标准 logo 前完成自己的量产资格，因此 Astera 已量产不矛盾；但官方互操作测试仍是未来份额验证点。[PCI-SIG Workshop #140](https://pcisig.com/events/pci-sig-compliance-workshop-140)
+- **竞争信号：** Credo Toucan 在 2026-02 只公布通过 32GT/s（PCIe5 速度）的 PCI-SIG compliance，尽管器件宣称 PCIe6-capable；说明“支持 Gen6”和“64GT/s 官方认证”不是一回事。[Credo Toucan 公告](https://investors.credosemi.com/news-events/news/news-details/2026/Credos-Toucan-PCIe-Retimer-Achieves-PCISIG-Compliance/default.aspx)
+- **UALink：** UALink Consortium 2026-04 发布 200G 2.0 相关规范并增加 In-Network Compute、chiplet 和 manageability；Scorpio 的 Hypercast/INC 路线与开放 scale-up 标准方向一致，但 UALink 量产生态仍早。[UALink 2.0 公告](https://ualinkconsortium.org/wp-content/uploads/2026/04/UALink-2.0-Specification-PR_FINAL.pdf)
+- **CXL：** CXL 4.0 已把速率翻倍到 128GT/s并增强 memory RAS/bundled ports，但 Leo 当前商业产品主要基于 CXL 1.1/2.0；标准领先不等于近期收入。[CXL 官方说明](https://computeexpresslink.org/about-cxl/)
+- **Computex 2026：** Astera 演示了 50 米 PCIe6 linear optics、BER 1e-8 或更好、无需传统 Retimer；公司明确是 proof of concept，不能计作量产订单。[Computex LPO 技术演示](https://www.asteralabs.com/computex-2026-demo-how-linear-optics-enables-longer-link-reach-lower-latency-for-scorpio-smart-fabric-switches/)
+
+## 8. 一年后产能、采纳与认证三情景
+
+### 8.1 总产能
+
+| 情景 | 2027Q2 总可销售年化能力 [S] | 利用率假设 | 关键供应条件 |
+|---|---:|---:|---|
+| **基准** | **28—31 亿美元** | 80%—88% | TSMC/ASE/Amkor 按既定扩产；Scorpio 与 Aries 共用资源可平衡；局部基板/测试约束 |
+| **乐观** | **38—44 亿美元** | 82%—92% | 提前锁 wafer/封装、第二后段路线成熟、X-Series yield 快速改善 |
+| **极度乐观** | **52—60 亿美元** | 86%—95% | 多客户订单同步上修且供应链提前一年配置；几乎没有重大平台延期或良率事故 |
+
+### 8.2 产品级能力与供应链阶段
+
+| 产品 | 基准能力 / 采纳 / 认证 [S] | 乐观 [S] | 极度乐观 [S] |
+|---|---|---|---|
+| Aries Retimer | 9.5—11 亿；Gen6 成主力；64GT/s 官方互操作/更多平台名单 | 12—14 亿；多个 merchant/custom XPU 双平台份额 | 15—17 亿；attach 与 ASP 同时上升、维持高份额 |
+| Aries SCM/Gearbox | 3.0—3.8 亿；Gearbox 至少一个量产平台 | 4.5—5.5 亿；多 rack 解耦设计采用 | 6.5—8.0 亿；成为 Gen6/Gen5 过渡标准部件 |
+| Scorpio | 12.5—14.5 亿；P 新客户量产、X 2—3 个大客户 | 18—21 亿；X 开放 scale-up 成主流之一，UALink 设计进入生产 | 25—29 亿；多个 hyperscaler 同步放量且竞争份额流失很小 |
+| Taurus | 4.5—5.5 亿；800G 主导、1.6T 资格验证 | 6.5—8.0 亿；1.6T 开始量产 | 9—11 亿；铜在高密度 rack 的有效距离优于预期 |
+| Leo | 1.5—2.0 亿；Azure 扩大、KV-cache 进入早期生产 | 3—4 亿；两个以上云客户生产采用 | 5—7 亿；CXL memory pooling/KV-cache 跨平台复制 |
+| Custom connectivity | 2.5—3.5 亿；首个 2027 量产项目 | 5—7 亿；第二项目/更高 attach | 8—11 亿；多个 custom XPU 同时量产 |
+| Optical | 0.8—1.2 亿；coupler 小批量、LPO 持续 qual | 1.8—2.8 亿；一个平台量产 | 3.5—5.0 亿；耦合良率成熟且 PCIe optics 提前采用 |
+
+产品能力之和高于总能力区间，因为它们竞争同一晶圆、封装、测试和客户导入资源；表内是每条线在资源优先配置时的能力上限，不是可以同时实现的总和。
+
+## 9. 基于真实订单线索、供给与取消风险的未来一年增速
+
+### 9.1 订单与客户项目证据链
+
+| 证据 | 可推导什么 | 不能推导什么 |
+|---|---|---|
+| 2026Q2 收入指引 3.55—3.65 亿美元 | 已有约一个季度较高排产/PO 可见度；中值环比 +16.7% | 不能推出全年订单额 |
+| 连续五季 beat 前指引中值 4.2%—11.7% | 管理层指引偏审慎、短期 demand pull-in/供给执行较稳 | beat 不保证下一代平台按期 |
+| Amazon 最高 65 亿美元付款框架 | 产品类别、战略关系和长期可寻址支出得到强验证；若完全归属，规模可相当于 2025 收入 7.6 倍 | **不是 backlog、最低采购、不可取消 PO 或 2026—2027 收入** |
+| 2025 年一个终端客户 >70%，前三大 86% | 大客户钱包份额增长可快速放大公司收入 | 也意味着平台延期会快速放大下行 |
+| Scorpio P：lead customer 已量产，至少两家新增 hyperscaler 预计 2026 年末生产 [M] | 2026H2—2027 有清晰第二/第三客户窗口 | 未披露客户名、订单金额和单季份额 |
+| Scorpio X：2026Q1 初始量产、2026H2 加速、10+ 客户接洽 [M] | 320-lane 产品已经越过纯样片阶段 | “engaged”不等于 design win，design win 不等于量产 |
+| Leo：Azure M-series private preview；Q1 获 KV-cache 定制 design win、2027 出货 [M] | 至少一个公开云端验证和一个定制项目 | private preview 的用户量、卡数、收入均未知 |
+| Optical：主要 AI 平台 provider 光耦资格验证、2027 volume [M]；50m LPO PoC | 光学 IP 不是纯概念 | 未知客户、ASP、良率、订单额；LPO 不应计入近期 backlog |
+
+Amazon 交易的法律文本见 [2026-02-05 8-K](https://www.sec.gov/Archives/edgar/data/1736297/000110465926012606/tm265461d1_8k.htm)。归属基于客户付款并不等于客户承诺付款；报告不把 65 亿美元纳入任何未来一年收入情景。
+
+### 9.2 未来四季度公司收入情景
+
+可比基数采用 2025Q3 2.306 亿 + 2025Q4 2.706 亿 + 2026Q1 3.084 亿 + 2026Q2 指引中值 3.600 亿 = **11.70 亿美元**。
+
+| 情景 | 2026Q3—2027Q2 收入 [S] | 对可比基数增速 | 隐含季度路径（亿美元） [S] | 项目延期/取消/份额损耗 | 毛利率倾向 | 成立条件 |
+|---|---:|---:|---|---:|---:|---|
+| **基准** | **18.5—20.5 亿美元** | **+58%—75%** | 4.1—4.4 / 4.4—4.8 / 4.8—5.3 / 5.2—6.0 | **8%—12%** | 72%—75% | Scorpio P/X 准时但逐步爬坡；Aries/Taurus 稳增；custom/optical 小贡献 |
+| **乐观** | **22.5—25.5 亿** | **+92%—118%** | 4.4—4.8 / 5.1—5.7 / 6.0—6.8 / 7.0—8.2 | **4%—7%** | 73%—76% | X 多客户同时放量；Gen6 attach 高；Leo/custom 开始量产；供应扩张快 |
+| **极度乐观** | **29.0—34.0 亿** | **+148%—191%** | 4.8—5.3 / 6.3—7.2 / 8.0—9.5 / 9.9—12.0 | **1%—4%** | 74%—77% | 三条以上新平台同时超预期、几乎无良率/封装约束、定制与光学提前 |
+
+这里的损耗包含原计划收入因平台延期、客户去料、双供和资格失败而未实现，不是公司披露的 cancellation rate。极度乐观路径到 2027Q2 单季接近 10—12 亿美元，需要季度收入在一年内约三倍，虽然数学上可由产品年化上限支持，但运营与客户集中风险极高。
+
+### 9.3 反向估值门槛
+
+当前基础市值约 707.9 亿美元。忽略净现金、未来摊薄和时间价值，仅看一年后销售额倍数：
+
+| 一年后市场给予的 P/S | 维持当前基础市值所需年化收入 | 相对当前 Q2 指引年化 14.4 亿美元 |
+|---:|---:|---:|
+| 20× | **35.4 亿美元** | 2.46× |
+| 15× | **47.2 亿美元** | 3.28× |
+| 10× | **70.8 亿美元** | 4.92× |
+
+因此即使业务达到本报告基准情景，若估值倍数向成熟高速半导体公司收敛，股价仍可能下跌；“公司很好”与“当前股票回报好”不是同一个命题。
+
+## 10. 竞争格局、技术主流性、替代方案与客户转换成本
+
+### 10.1 竞争矩阵
+
+| 产品 | 主要竞争者/替代 | Astera 优势 | 对手优势与风险 | 转换成本 |
+|---|---|---|---|---:|
+| **Aries Retimer** | Broadcom BCM85667/85668；Credo Toucan；Microchip；Marvell；Montage；低损耗 PCB/更短链路/光学 | Gen5/Gen6 先发、云规模互操作、COSMOS、广泛 hyperscaler 经验 | Broadcom 自有 SerDes+交换组合且 PCIe switch 累计出货超 10 亿 ports；Credo 低功耗/AEC 协同；客户推动双供 | **4/5**：更换需 PCB/BOM、BIOS/firmware、SI、热与系统重验证，通常 2—4 季 |
+| **Scorpio P/X** | Broadcom ExpressFabric/PEX；Microchip Switchtec；Marvell/XConn Structera；NVIDIA NVSwitch；Ethernet/UALink switch | 320 lanes、开放 memory semantic、最多 80 accelerator、Hypercast/INC、COSMOS | Broadcom 144-lane Gen6 端到端组合和巨大安装基数；Microchip 3nm Gen6；Marvell 收购 XConn 后补齐 CXL/UALink；NVIDIA 闭环生态 | **4.5—5/5**：交换拓扑、collective library、故障管理和整 rack 资格绑定 |
+| **Taurus** | Credo AEC、Broadcom、Marvell、完整 cable vendors；AOC/LPO/光模块；DAC | 与现有 COSMOS/PCIe 产品交叉销售，低延迟、最长约 7m | AEC 多供；Credo 是强势完整方案；距离增加后光学更有优势 | **3/5**：同规格线缆更易替换，但仍需 BER、热与互操作验证 |
+| **Leo CXL** | Microchip、Marvell/XConn、Montage、Samsung/Meta 自研、CPU/内存厂；软件分层/本地 DRAM | CXL controller+COSMOS、Azure 验证、定制 KV-cache | CXL 采用率低；客户可自研 controller，内存池化软件成熟慢 | **4/5**：内存一致性、RAS、固件和 OS/hypervisor 资格复杂 |
+| **NVLink Fusion custom** | Marvell、MediaTek、Alchip、Broadcom、NVIDIA 内部方案 | 与 Scorpio/Aries/COSMOS 的系统级共研及已验证客户关系 | 定制 ASIC 竞争按单项目输赢；NRE、tape-out 和客户集中风险极大 | **5/5（赢单后）**：一旦 tape-out 不能中途替换；下一代仍可重新竞标 |
+| **Optical coupling/PCIe optics** | Broadcom、Marvell/Celestial AI、Ayar Labs、Lightmatter、Coherent、Lumentum 及 CPO/NPO 生态 | aiXscale fiber-chip coupling、Scorpio/PCIe 协议协同 | Astera 当前只有 PoC/qual；对手有激光、DSP、光引擎或封装规模 | **2.5 当前 / 4 量产后** |
+| **COSMOS** | Broadcom/Marvell SDK、OEM 自研管理、开源 telemetry | 跨 Aries/Scorpio/Taurus/Leo 的统一视图、云端互操作数据 | 软件免版税，独立定价权弱；客户可要求开放 API | **4/5**：价值在调试数据和流程，而非许可证合同 |
+
+竞争资料来自 Broadcom [PCIe Gen6 组合](https://www.broadcom.com/info/pcie/gen-6-portfolio) 与 [ExpressFabric 页面](https://www.broadcom.com/products/pcie-switches-retimers/expressfabric/gen6)、Microchip [2026 数据中心业务更新](https://ir.microchip.com/news-events/press-releases/detail/1395/microchip-provides-data-center-solutions-business-unit-revenue-information)、Marvell [完成收购 XConn](https://www.marvell.com/company/newsroom/marvell-completes-acquisition-of-xconn-technologies.html) 及 Credo [Toucan 产品页](https://credosemi.com/products/pcie/)。
+
+关键竞争尺度：
+
+- Broadcom 官方称 PCIe switch/retimer 已累计出货超过 **10 亿 ports**，并推出 5nm、144-lane Gen6 switch 与 x8/x16 Gen6/CXL3.1 Retimer；它是 Astera 最大的完整组合威胁。
+- Microchip 数据中心方案业务 2025 年收入 3.027 亿美元，预计 2026 年约 5 亿、增长约 65%，涵盖存储控制器、PCIe/CXL memory controller、Switchtec switch/retimer；不能把它当小型对手。
+- Marvell 2026-02 完成 XConn 收购，预计 XConn 在其 FY2027Q4 达到约 5,000 万美元年化；当前规模远小于 Astera，但 Marvell 的定制硅和网络渠道能加速其 UALink/CXL 路线。
+
+### 10.2 新技术是否会成为主流
+
+| 技术 | 主流概率/时间 | Astera 位置 | 替代/风险 |
+|---|---|---|---|
+| **PCIe6 Retimer** | **高；2026—2027 大规模采用** | 已量产且收入 >1/3 含 Gen6 产品 | 更好 PCB、集成 PHY、Broadcom/Credo 双供、部分链路改光 |
+| **高 radix PCIe/memory-semantic scale-up switch** | **中高；2026H2—2028** | Scorpio X 320 lanes 先发 | NVSwitch/专有 fabric、Ethernet/UALink 竞争；软件 collective 性能决定胜负 |
+| **UALink 2.0** | **中高；2027—2029** | board member/产品路线匹配 | 生态成熟慢、NVIDIA 专有栈仍强、标准实现碎片化 |
+| **AEC/主动铜** | **高但有距离边界；800G 当前、1.6T 近端** | Taurus/Aries SCM 具组合销售 | 7m 以上或功耗密度升高时 AOC/LPO/CPO 替代 |
+| **CXL 内存扩展/池化** | **中；容量扩展先于池化，2026—2028** | Leo Azure preview、KV-cache 设计 | 软件、NUMA latency、DRAM 成本、CPU 内存通道扩展、自研 controller |
+| **PCIe-over-optics/LPO** | **长期中高、近期低；2027 小量、2028+ 扩张** | 技术 PoC 与 coupling IP | 良率、laser/thermal、标准、可维修性、完整光生态不在 Astera 手中 |
+| **COSMOS 式 fleet telemetry** | **高；随 rack 复杂度成为标配** | 先发数据与统一产品栈 | 开源/OEM 内建、客户要求无锁定 |
+
+### 10.3 客户替换成本的经济学
+
+更换 Retimer/交换/CXL controller 不是简单换同封装料号，通常需要：
+
+1. 重做 BOM、PCB 走线/层叠、连接器与散热；
+2. 重新训练 BIOS、firmware、error recovery、telemetry 与安全策略；
+3. 在 CPU/GPU/NIC/SSD 多组合下跑 SI、BER、协议、压力和 fleet diagnostics；
+4. 通过 hyperscaler 与 ODM 的平台资格，时间通常 6—18 个月，公司披露最久约两年；
+5. 若已进入 custom ASIC 或 scale-up fabric，替换可能等到下一代平台，NRE 与机会成本可达数百万美元、2—4 个季度。
+
+这给予 Astera **赢单后的强黏性**，但不等于永续垄断：客户会在下一代重新竞标、推动第二来源，或通过更短链路/更好 PCB/光学来减少器件数量。2025 10-K 已明确提醒客户可能重新设计平台以减少或不用 Astera 产品。
+
+## 11. 风险、证伪条件与未来四季度跟踪表
+
+### 11.1 主要风险排序
+
+1. **估值风险：** 当前 70.7× TTM P/S、122× forward P/E；任何季度仅达到指引而未超预期，都可能触发倍数压缩。
+2. **终端客户集中：** 单一客户 >70%、前三大 86%；Amazon 很可能与最大客户高度相关，但公司没有在 10-K 中点名，故只能作为推断。
+3. **没有最低采购/backlog：** 65 亿美元框架不能保护近期收入；design win 也不能保证量产量。
+4. **Scorpio 执行：** 2026H2 同时面临 X-Series ramp、P-Series 新客户 qualification、软件 collective 性能和良率，任何一项延迟都会打击最大增长曲线。
+5. **供应集中：** 单一 TSMC foundry、少数 ASE/Amkor 与模块伙伴；高增长产品共享先进封装、基板与测试资源。
+6. **竞争与去料：** Broadcom 端到端 Gen6、Microchip 3nm switch、Marvell/XConn、Credo AEC/Retimer 会迫使双供；平台可通过集成 SerDes 或缩短链路减少 Retimer。
+7. **产品组合/权证压毛利：** Q2 指引毛利率约 73%，其中权证约 -200bps；Scorpio 与模块占比提升可能让 76% 峰值难持续。
+8. **稀释：** SBC 占 Q1 收入 15.9%，未确认 RSU/PSU 费用约 5.01 亿美元，客户权证最多再带来约 557.85 万股潜在稀释。
+9. **CXL/光学采用时点：** 标准和 PoC 不等于生产订单；如果 2027 项目推迟，这两条小业务可能继续接近零。
+10. **地缘政治：** TSMC/台湾与以色列研发集中带来不可通过现金储备完全对冲的运营风险。
+
+### 11.2 可证伪的季度指标
+
+| 指标 | 基准阈值 | 多头确认 | 预警/证伪 |
+|---|---|---|---|
+| 2026Q2 收入 | 3.55—3.65 亿 | >3.70 亿且 Q3 指引环比 >12% | <3.55 亿或 Q3 环比 <5% |
+| Scorpio | 年末成为最大产品线 | Q3/Q4 占比 >40%，X 多客户量产 | 仍主要靠 P 单一客户；X ramp 推至 2027 |
+| Gen6 | Q1 已 >1/3 | Q3 >50%，ports 与 attach 同增 | 占比停滞、ASP/GM 下滑 |
+| 毛利率 | Q2 约 73% | 扣权证后底层 GM 维持 74%—76% | 扣权证后 <72% 或模块/交换 yield 恶化 |
+| 客户集中 | 2025 单客 >70% | 其他 hyperscaler 增速高于最大客户 | 单客仍 >75% 且新增客户延期 |
+| 供应 | 2026 已安排到位 | 收入连续 beat、库存周转健康 | WIP 激增但出货不增；交期延长/指引受 supply 限制 |
+| Leo | Azure preview/KV design win | 2027 量产日期明确、第二云客户 | preview 不转 GA、KV 项目延期 |
+| Optical/custom | 2027 初始贡献 | 公布 tape-out/qualification/量产客户 | 只重复 PoC，无认证或收入节点 |
+| 稀释 | Q1 diluted-basic 差约 5.8% | 收入/EPS 增长显著快于股数 | SBC 持续 >15% 收入、fully diluted 增速高 |
+
+## 12. 综合投资判断
+
+**业务质量：优秀。** Astera 在 PCIe/CXL/Ethernet 连接的协议、SerDes、互操作和软件层建立了真实技术壁垒；收入从 2023 年 1.158 亿增至 2025 年 8.525 亿，2026Q1 已达 3.084 亿；75% 左右毛利、无债务和强现金流证明它不是仅有概念的 AI 公司。
+
+**增长确定性：未来一季高，未来一年中等偏高，2027 新业务中等。** Q2 指引、连续 beat、Gen6 >1/3、Scorpio P/X 的量产节点支撑近期；但没有 backlog、客户高度集中、X/UALink/custom/optical 多项目同时爬坡，使一年后的精确预测不可靠。
+
+**竞争地位：Aries 强、Scorpio 正在建立、Taurus 中等、Leo/光学待验证。** 最有价值的护城河不是某颗芯片参数，而是与 hyperscaler 共研、跨平台互操作实验室、COSMOS 遥测和整套产品交叉销售。Broadcom 的自有 SerDes、交换安装基数与端到端组合是最强反证。
+
+**股票性价比：业务无法直接抵消估值风险。** 以 707.9 亿美元基础市值计，即使一年后收入年化达到基准情景 25.8 亿美元，静态 P/S 仍约 27.4 倍；达到乐观 36.6 亿仍约 19.3 倍。当前价格更接近“乐观产品情景 + 长期高倍数同时成立”，安全边际薄。
+
+**最终结论：** ALAB 是 AI 机架连接领域少数同时拥有 Retimer、主动铜模块、交换、CXL controller、软件和定制/光学期权的高质量纯标的；2026 年最值得跟踪的是 Scorpio X/P 与 Aries Gen6，而不是用 65 亿美元 Amazon 框架制造虚假 backlog。基本面评级可给 **8.5/10**，资产负债表 **9/10**，竞争壁垒 **7.5/10**，未来一年收入可见度 **7/10**，但按 2026-07-10 价格的估值安全边际仅 **2/10**。
+
+## 资料来源与模型边界
+
+### 公司与 SEC 一手资料
+
+- [Astera Labs 2026Q1 财报与 Q2 指引](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-reports-first-quarter-2026-financial-results)
+- [2026Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1736297/000173629726000020/alab-20260331.htm)
+- [2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1736297/000173629726000010/alab-20251231.htm)
+- [Amazon 客户认股权证 8-K](https://www.sec.gov/Archives/edgar/data/1736297/000110465926012606/tm265461d1_8k.htm)
+- [Astera Labs 2025Q1](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-announces-financial-results-first-quarter-fiscal-0)、[2025Q2](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-announces-financial-results-second-quarter-fiscal-0)、[2025Q3](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-announces-financial-results-third-quarter-fiscal-0)、[2025Q4/FY2025](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-reports-fourth-quarter-and-full-year-2025-financial)
+- [Leo CXL on Microsoft Azure M-series private preview](https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-leo-cxl-smart-memory-controllers-microsoft-azure-m)
+- [Scorpio 产品页](https://www.asteralabs.com/products/scorpio-smart-fabric-switch/)、[Aries Retimer](https://www.asteralabs.com/products/pcie-cxl-smart-dsp-retimers/)、[Aries SCM](https://www.asteralabs.com/products/aries-smart-cable-modules/)、[Aries Gearbox](https://www.asteralabs.com/products/aries-pcie-smart-gearboxes/)、[Taurus](https://www.asteralabs.com/products/taurus-ethernet-smart-cable-modules/)、[Leo](https://www.asteralabs.com/products/leo-cxl-smart-memory-controllers/)、[COSMOS](https://www.asteralabs.com/products/cosmos/)
+
+### 行业标准、会议与竞争者一手资料
+
+- [PCI-SIG Compliance Workshop #140：2026-07-27 起包含 PCIe 6.x 64GT/s 官方测试](https://pcisig.com/events/pci-sig-compliance-workshop-140)
+- [PCI-SIG DevCon 2026：64GT/s、x16 双向 256GB/s 与 AEC/DSP optics/LPO 议题](https://pcisig.com/pci-sig-developers-conference-2026-agenda)
+- [UALink 2.0 规范公告](https://ualinkconsortium.org/wp-content/uploads/2026/04/UALink-2.0-Specification-PR_FINAL.pdf)
+- [CXL 4.0 官方说明](https://computeexpresslink.org/about-cxl/)
+- [Broadcom PCIe Gen6 portfolio](https://www.broadcom.com/info/pcie/gen-6-portfolio)
+- [Microchip Data Center Solutions 2026 收入更新](https://ir.microchip.com/news-events/press-releases/detail/1395/microchip-provides-data-center-solutions-business-unit-revenue-information)
+- [Marvell 完成收购 XConn](https://www.marvell.com/company/newsroom/marvell-completes-acquisition-of-xconn-technologies.html)
+- [Credo Toucan PCIe6/CXL3.x Retimer/AEC](https://credosemi.com/products/pcie/)
+
+### 项目内允许使用的行业研究
+
+- [PCIe/CXL 高速 I/O 交换与 Retimer](../../行业调研/AI网络_光互联_铜互联/行业调研_PCIe／CXL高速I／O交换与Retimer_2026-07-10.md)
+- [CXL 内存扩展与内存池化](../../行业调研/AI服务器_存储_芯片/行业调研_CXL内存扩展与内存池化_2026-07-10.md)
+- [AEC、DAC 与高速铜缆](../../行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-07-10.md)
+- [AI 以太网交换系统与 Fabric 芯片](../../行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-07-10.md)
+- [开放 Scale-up 互联](../../行业调研/AI网络_光互联_铜互联/行业调研_开放Scale-up互联_2026-07-10.md)
+- [AI 服务器整机与机架集成](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-07-10.md)
+- [CXL Vertical Optimization 2026 会议资料](../../行业调研/产业背景/顶级会议信息/cxl_vertical_optimization_2026.md)
+
+### 重要边界
+
+- 产品级收入、ASP、BOM、每 rack/MW/GPU 内容量、产能、需求供给比和情景预测不是公司披露，均以 [E]/[S] 标识。
+- Amazon 65 亿美元为权证归属付款上限框架，不纳入 backlog 或收入预测。
+- “AI 收入占比”是研究定义，不是 GAAP 指标。
+- 本报告截至 2026-07-11；2026Q2 尚未发布实际财报，所有 Q2 产品结构以公司指引中值为总量锚。

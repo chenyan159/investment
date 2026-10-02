@@ -1,0 +1,500 @@
+# 公司：KLAC KLA Corporation（科磊）——业务、AI 过程控制、订单与产能全面尽调
+
+> **报告日期：2026-07-31（America/Los_Angeles）**  
+> **最新财报：FY2026 Q4，季度截至 2026-06-30，2026-07-28 发布**  
+> **计量口径：除非另有说明，金额均为美元；KLA 财年截至 6 月 30 日。**  
+> **研究边界：本地资料只调用 `基本面/行业调研/` 中与半导体过程控制、AI 芯片、HBM、先进封装、光罩、玻璃基板及 AI 数据中心相关的产业资料；未调用其他本地研究目录，未修改公司索引。联网证据以公司/SEC、客户、行业协会、会议论文及竞争对手一手披露为主。**
+
+## 口径、置信度与结论先行
+
+- **事实**：公司或 SEC 直接披露；**R-est**：本报告研究估算；**渠道验证**：客户、竞争对手、行业协会或技术会议对需求方向的交叉验证，不等同于 KLA 自身订单。
+- KLA 不披露 AI 独立收入、季度 bookings、季度 RPO/backlog、产品线利润率、单机 ASP、产品产能和取消率。凡涉及这些项目，本文均给出推导依据、区间和置信度，绝不把竞争对手订单冒充 KLA 订单。
+- **一句话画像**：KLA 是先进芯片制造的“良率税收/过程控制收费站”——不制造 GPU，却在先进逻辑、HBM、EUV 光罩和先进封装每次缩线、叠层、增大芯片和提高采样率时获得更高设备与服务收入。
+- **核心多头逻辑**：FY26 收入 $13.58B、GAAP 毛利率 61.3%、净利率 35.6%；CY24 过程控制份额 56.5%、为第二名约 6.5 倍，本地行业研究估计 CY25 已接近 58%，领先 patterned optical inspection 份额超过 85%。CY26 先进封装过程控制系统收入指引约 $1.1B、同比超过 70%；服务收入 $3.126B、同比 16.5%，且 95% 属重复收入。AI 令先进逻辑设计数、芯片面积、HBM 非存储逻辑占比、EUV 层数、光罩价值和封装互连密度同时上升，过程控制强度不是单一晶圆开工量的函数。
+- **核心空头逻辑**：以 2026-07-31 盘中约 $186.24 计，拆股调整后 trailing P/E 约 50.9x、FY27 共识 forward P/E 约 36.3x、P/S 约 17.9x；估值已经预支相当一部分 2027 增长。公司公开的最近 backlog 仅为 2025-06-30 的 $7.86B，最新季度 backlog 并未披露；订单可修改、推迟或取消。中国收入、客户集中、光学/精密平台长周期供应、DRAM 零部件涨价、先进封装竞争加剧均是真实风险。
+- **本报告基准情景**：FY27/未来 12 个月收入 $17.0–17.6B，同比约 25–30%；乐观 $18.4–19.2B，同比 35–41%；极度乐观 $19.8–21.0B，同比 46–55%。极度乐观要求客户全面 pull-in、长期供应链几乎无延误、HBM4/2nm/先进封装同时超预期，属于压力测试而非最可能结果。
+
+## 一、公司全貌、投资者定位与产业链位置
+
+### 1.1 公司做什么
+
+KLA 的产品不是单一“检测机”，而是覆盖 **发现缺陷—测量尺寸/叠对—关联设计与工艺—找根因—控制量产—持续服务** 的闭环：
+
+| 报告分部 | FY26 收入 | 占比 | FY26 同比 | 主要价值 | AI/HPC 连接 |
+|---|---:|---:|---:|---|---|
+| Semiconductor Process Control（SPC） | $12.245B | 90.2% | +11.9% | 图形/裸晶圆检测、e-beam、overlay/CD/膜厚/形貌量测、光罩检测、数据分析及相关服务 | 2nm/GAA、大芯片、HBM DRAM、EUV 光罩、先进封装前道化流程的核心良率控制 |
+| Specialty Semiconductor Process | $0.584B | 4.3% | -0.5% | SPTS 等离子刻蚀、沉积、晶圆切割、表面处理及服务 | TSV、HBM、MEMS、功率/射频及先进封装；AI 相关子业务增长快，但分部仍混有成熟应用 |
+| PCB & Component Inspection | $0.750B | 5.5% | +20.7% | ICOS 元件检测、IC substrate/PCB 直接成像、AOI、修复与相关服务 | 高价值 AI 封装、2.5D/3D substrate、glass core/有机载板、HBM/组件外观与尺寸控制 |
+
+FY26 产品/服务收入分别为 $10.454B / $3.126B；后者占 23.0%，同比 16.5%。SPC 分部的系统和服务是利润核心，Specialty 与 PCB/Component 是 2019 年 Orbotech 收购带来的封装与相邻市场平台。[FY26 Q4 官方结果](https://ir.kla.com/news-events/press-releases/detail/518/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full)；[FY2025 10-K 产品清单](https://www.sec.gov/Archives/edgar/data/319201/000031920125000024/klac-20250630.htm)
+
+### 1.2 投资人如何看 KLA
+
+1. **半导体设备中的高质量复利股**：设备差异化定价、软件和应用工程形成约 60%+ 毛利率；FY26 FCF $3.767B，FCF margin 27.7%。
+2. **AI“铲子”而非 GPU 数量的线性代理**：KLA 同时受益于先进逻辑设计启动数、晶圆价值、HBM、EUV、先进封装和全球新厂；单一 GPU 出货放缓未必等比例传导，反之工艺延迟或良率成熟也会改变采样强度。
+3. **近垄断但非无竞争**：CY24 过程控制份额 56.5%，约为最近竞争者 6.5 倍；领先 patterned optical inspection 份额估计超过 85%。其护城河来自光源/光学/传感器、超精密平台、海量数据与算法、长期共同开发及 HVM recipe/yield correlation，而不仅是专利。
+4. **高估值周期股**：即使 AI 带来结构性强度提升，客户资本开支仍有周期；约 51x trailing P/E 对订单推迟、供给不达标或估值回归非常敏感。
+
+### 1.3 最近三年重大业务变化、转型与收购
+
+| 时间 | 变化 | 业务含义 |
+|---|---|---|
+| FY23–FY24 | 收入从 FY23 $10.496B 降至 FY24 $9.812B（-6.5%） | 存储/WFE 周期与中国/客户节奏造成下行，证明 KLA 仍是周期股；但毛利和服务韧性强。 |
+| 2024-03 至 2024-12 | 决定退出 Display 产品制造并于 2024-12-31 前完成，保留存量服务；FY24 相关减值约 $219M，FY25 PCB/Component goodwill/intangible impairment $239.1M | 削减低回报显示设备，聚焦半导体、IC substrate 与封装；同时说明 Orbotech 并非所有资产都成功。 [官方 8-K](https://ir.kla.com/sec-filings/all-sec-filings/content/0001193125-24-070222/d810936d8k.htm) |
+| 2024 | 发布 Serena、扩展 Corus 和 Lumina，形成 organic/glass-core IC substrate 面板检测、量测和成像组合 | 由传统 PCB 向 AI 载板、glass core 和 panel-level packaging 升级。[官方产品发布](https://ir.kla.com/news-events/press-releases/detail/485/kla-unveils-comprehensive-ic-substrate-portfolio-for-a-new) |
+| FY25–FY26 | 先进封装从 CY24 超过 $500M，升至 CY25 约 $950M；CY26 Semi-PC 先进封装系统指引约 $1.1B、同比 >70% | 从“前道晶圆厂过程控制”扩展到 wafer/frame/package/substrate，Orbotech 协同开始兑现。注意 $950M 为较宽公司口径、$1.1B 为 Semi-PC process-control systems 口径，年份与范围不同。 |
+| 2025–2026 | Wales 新 R&D/制造设施投资 $138M；FY26 加大工作资本、设施和长周期供应投资；宣布 Chennai 全球研发园区 MoU，媒体报道投资约 ₹36B/$400M、最多约 4,000 岗位 | 扩大光学、子系统、制造和软件研发能力；Chennai 金额来自当地政府/媒体披露，置信度低于 SEC 财务数字。[Wales 官方信息](https://ir.kla.com/news-events/press-releases?page=2)；[Chennai 报道](https://m.economictimes.com/industry/cons-products/electronics/kla-to-invest-3600-cr-in-tamil-nadu-for-global-rd-campus-signs-mou-with-state-government/amp_articleshow/128303807.cms) |
+| 2026-03 | Investor Day 把 CY30 收入目标设为 $26B±$2.5B、系统 $20.5B、服务 >$5B，收入 CAGR 13–17%，non-GAAP GM 63.5%±0.5%、OM 45–47% | 明确把 AI/HPC、过程控制强度、先进封装和 13–15% 服务 CAGR 作为下一阶段增长轴。[2026 Investor Day](https://ir.kla.com/news-events/investor-day-2026) |
+| 2026-06 | 10:1 拆股生效；所有本文每股数字均拆股调整 | 不改变企业价值，但修正历史 EPS/股价可比性。[官方拆股公告](https://ir.kla.com/news-events/press-releases/detail/515/kla-corporation-announces-ten-to-one-stock-split-and) |
+
+**收购判断**：最近三个完整财年没有新的重大并购。FY25 acquisition consideration 为 0，FY24 仅约 $3.7M 小额补充；FY23 只有约 $32.7M 的小型供应链能力收购。最近一次改变公司边界的战略收购仍是 2019 年 Orbotech，近三年主要任务是整合、砍掉 Display 低回报资产，并将 Specialty/PCB 技术导向 AI 封装和 IC substrate。
+
+### 1.4 产业链定位
+
+`AI 模型/云资本开支 → GPU/ASIC 设计启动 → 2nm/GAA、HBM4、EUV 光罩 → 晶圆与先进封装扩产 → KLA 检测/量测/数据闭环 → 良率爬坡和 HVM → GPU/HBM/package → AI server/rack/data center`
+
+KLA 位于 **晶圆制造、光罩、先进封装与 IC substrate 的良率控制层**。它通常不增加芯片的功能，但决定缺陷是否被看见、工艺漂移是否被及时纠正、客户能否按期达到可商业化良率。Investor Day 给出的工艺强度证据包括：先进逻辑每代约增加 30% inspection layers；同等 wafer starts，从 N-2 到 N 的两代演进可带来约 $1B KLA 增量收入；HBM3 die 面积约为 DDR 的 3 倍，非存储逻辑占比从 DDR5 的 33% 升至 HBM3 的 57%；CY20–CY25 DRAM WFE 约 2 倍，而 KLA DRAM 收入约 3 倍、形成约 $450M 强度增量。
+
+### 1.5 2026-07-31 最新市场与估值快照
+
+| 指标 | 数值 | 日期/口径 |
+|---|---:|---|
+| 股价 | **$186.24** | 2026-07-31 15:04 EDT 左右盘中；当日价格波动约 $179.98–189.97。因 2026-06 10:1 拆股，部分行情源的市值和 P/E 尚有 10 倍错位，本文不用其错误自动字段。[行情页](https://www.marketbeat.com/stocks/NASDAQ/KLAC/) |
+| 市值 | **约 $243.3B** | 盘中价格 × 约 1.307B basic shares；与拆股调整后的市场数据交叉验证。 |
+| Trailing P/E | **约 50.9x** | $186.24 / FY26 GAAP diluted EPS $3.66。 |
+| Forward P/E | **约 36.3x** | $186.24 / FY27 市场共识 EPS 约 $5.13；共识可能快速变化。[FY27 共识页](https://stockanalysis.com/stocks/klac/forecast/) |
+| P/S | **约 17.9x** | $243.3B / FY26 revenue $13.579B。 |
+| FY26 收入增速 | **+11.7%** | $13.579B vs. $12.156B。 |
+| FY26 GAAP 毛利率 | **61.3%** | Gross profit $8.324B / revenue $13.579B。 |
+| FY26 GAAP 净利率 | **35.6%** | Net income $4.831B / revenue $13.579B。 |
+| FY26 GAAP / non-GAAP EPS | **$3.66 / $3.76** | 全部按 10:1 拆股追溯调整。 |
+
+**估值结论**：公司质量和 2027 可见度很强，但当前不是“便宜的周期底部”。基准 FY27 收入若为 $17.2B 左右，当前市值仍对应约 14.1x forward sales；只有持续 20%+ 增长、63% 左右毛利和高资本回报才能消化估值。
+
+### 1.6 资产负债表与财务健康度
+
+| 2026-06-30 项目 | 数值 | 判断 |
+|---|---:|---|
+| 现金 + 有价证券 | $4.902B | 充足；覆盖约 83% 长期债务。 |
+| 应收账款 | $2.889B，YoY +27.6% | 增速高于收入 11.7%，反映 Q4 出货加速/收款时点；是最值得监控的运营项。 |
+| 库存 | $3.649B，YoY +13.6% | 略高于收入增速，符合 H2 扩产与长周期部件备货；若客户推迟则有减值/现金占用风险。 |
+| 流动资产 / 流动负债 | $12.382B / $4.305B | Current ratio **2.88x**；严格速动口径（cash+securities+AR）约 **1.81x**。 |
+| 长期债务 | $5.887B | 净债务约 **$0.985B**；debt/equity 约 **0.93x**，绝对债务中等但现金流覆盖很强。 |
+| 总资产 / 总负债 / 权益 | $17.952B / $11.602B / $6.350B | 权益同比增长 35%；没有短期偿债压力。 |
+| 递延系统收入 | 流动 $0.933B，YoY +14.2% | 与订单/安装活动改善一致，但不等于 backlog。 |
+| FY26 CFO / capex / FCF | $4.143B / $0.376B / $3.767B | FCF margin 27.7%；capex 仅收入 2.8%，商业模式资本效率高。 |
+| 信用与流动性 | Fitch A / Moody’s A2 / S&P A-（2025-06-30）；$1.5B revolver，上一披露期无借款 | 投资级；债券到期分散在 FY2029–2063。 |
+
+**综合评级：健康度 8.5/10。** 流动性、FCF 和信用评级很强，净债务不重；主要扣分项是 FY26 年末 AR 快于收入、库存/设施为增长提前投入，以及公司在高估值下仍持续大额回购。FY26 资本返还 $3.348B，占 FCF 88.9%，仍有余力但安全垫不如只看 gross cash 那么宽。[FY26 Q4 资产负债表](https://ir.kla.com/news-events/press-releases/detail/518/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full)；[FY25 10-K 信用评级与债务](https://www.sec.gov/Archives/edgar/data/319201/000031920125000024/klac-20250630.htm)
+
+## 二、最近五次财报：收入、业务、利润率与 AI 暴露
+
+### 2.1 五季度财务与终端结构
+
+| 财报季度（截至日） | 收入 / YoY / QoQ | GAAP GM / 净利率 | 报告分部收入：SPC / Specialty / PCB&C | SPC systems 终端：F/L / Memory；Memory 内 DRAM / NAND | 主要产品收入（约） | AI 数据中心相关收入占比（R-est） |
+|---|---|---|---|---|---|---|
+| FY25 Q4（2025-06-30） | $3.175B / **+23.6%** / +3.6% | 62.0% / 37.9% | $2.878B / $0.142B / $0.154B | 69% / 31%；75% / 25% | Wafer $1.778B（56%）；Patterning $0.444B（14%）；Specialty sys $0.127B（4%）；PCB sys $0.095B（3%）；Service $0.703B（22%） | **35–45%**，中值约 $1.27B |
+| FY26 Q1（2025-09-30） | $3.210B / **+12.9%** / +1.1% | 61.3% / 34.9% | $2.899B / $0.120B / $0.189B | 74% / 26%；79% / 21% | Wafer $1.537B（48%）；Patterning $0.667B（21%）；Specialty $0.100B；PCB $0.117B；Service $0.745B | **34–44%**，中值约 $1.25B |
+| FY26 Q2（2025-12-31） | $3.297B / **+7.2%** / +2.7% | 61.4% / 34.8% | $3.005B / $0.141B / $0.152B | 60% / 40%；75% / 25% | Wafer $1.573B；Patterning $0.696B；Specialty $0.122B；PCB $0.080B；Service $0.786B | **38–49%**，中值约 $1.43B |
+| FY26 Q3（2026-03-31） | $3.415B / **+11.5%** / +3.6% | 61.1% / 35.2% | $3.084B / $0.164B / $0.168B | 62% / 38%；86% / 14% | Wafer $1.740B（51%）；Patterning $0.615B（18%）；Specialty $0.144B；PCB $0.095B；Service $0.775B | **42–54%**，中值约 $1.64B |
+| **FY26 Q4（2026-06-30）** | **$3.658B / +15.2% / +7.1%** | **61.4% / 37.3%**；non-GAAP GM 62.4%、OM 43.7% | **$3.257B / $0.160B / $0.241B** | **79% / 21%；83% / 17%** | Wafer **约 $1.792B（49%）**；Patterning **约 $0.732B（20%）**；Specialty **约 $0.146B**；PCB **约 $0.146B**；Service **$0.820B（22%）** | **45–57%**，中值约 **$1.87B** |
+
+注：Q4 FY25 与 Q4 FY26 产品金额由公司披露的整数百分比乘季度收入，可能因四舍五入产生误差；Q1–Q3 使用 10-Q/股东信的更细数字。AI 占比为**不重叠分配模型**：把先进节点逻辑、HBM/DRAM、AI 先进封装、AI 对应服务各分配一次；公司从未披露 AI 独立收入。FY26 全年 AI-linked 收入估计 **$5.8–7.3B，占 43–54%**，置信度中低，不能当作会计分部。
+
+### 2.2 产品增长与分部利润率
+
+| 季度 | Wafer Inspection YoY / QoQ | Patterning YoY / QoQ | Specialty systems YoY / QoQ | PCB systems YoY / QoQ | Service YoY / QoQ | 分部利润率：SPC / Specialty / PCB&C |
+|---|---|---|---|---|---|---|
+| FY25 Q4 | +52% / +18% | -16% / -29% | +16% / -11% | +15% / -18% | +14% / +5% | 未在季度信披露；R-est 45–48% / 5–10% / 5–12% |
+| FY26 Q1 | +12% / -13% | +16% / +47% | -11% / -19% | +61% / +37% | +16% / +6% | **45.1% / 5.0% / 14.0%** |
+| FY26 Q2 | +1% / +2% | +31% / +4% | -15% / +21% | -14% / -32% | +18% / +6% | **44.5% / 7.6% / -1.6%** |
+| FY26 Q3 | +16% / +11% | -3% / -12% | +4% / +19% | -9% / +18% | +16% / -1% | **44.2% / 14.3% / 12.7%** |
+| FY26 Q4 | +1% / +2% | **+61% / +18%** | +11% / -5% | **+96% / +76%** | +17% / +6% | 尚无 FY26 10-K 分部利润表；R-est 45–48% / 10–16% / 14–20% |
+
+**解读**：
+
+- Wafer Inspection 是最大收入池，但 Q4 仅 +1% YoY，说明当季加速并非单一 BBP 拉动；Patterning、PCB/Component 和 Service 是边际增长最强的三项。
+- Patterning Q3 的 -12% QoQ 后在 Q4 +18%，表现与 reticle/EUV 交付节奏、客户验收和高价值设备 mix 一致；不是终端需求线性变化。
+- Specialty/PCB 分部利润率波动大，表明其规模、产品 mix 和 Orbotech 遗留成本尚未达到核心 SPC 的经济性。不能用 KLA 61% 公司毛利率套在所有封装产品上。
+- Q4 FY26 AR 单季增加 $586M、而 CFO $906M，显示强出货在现金转换上有时间差；未来两个季度若 AR 不回落，应重新评估交付质量。
+
+财报来源：[FY25 Q4](https://d1io3yog0oux5.cloudfront.net/_b9ee755a5f60dd0fb3f9e27967aed6af/klatencor/db/1117/10585/letter_to_shareholders/KLA+Corporation+Q2CY25+Earnings+Letter+to+Shareholders.pdf)、[FY26 Q1](https://d1io3yog0oux5.cloudfront.net/_b9ee755a5f60dd0fb3f9e27967aed6af/klatencor/db/1117/10596/letter_to_shareholders/KLA+Corporation+Letter+to+Shareholders+Q1+FY26.pdf)、[FY26 Q2](https://d1io3yog0oux5.cloudfront.net/_b9ee755a5f60dd0fb3f9e27967aed6af/klatencor/db/1117/10612/letter_to_shareholders/KLA+Letter+to+Shareholders+-+Q2+FY26.pdf)、[FY26 Q3](https://d1io3yog0oux5.cloudfront.net/_b9ee755a5f60dd0fb3f9e27967aed6af/klatencor/db/1117/10655/letter_to_shareholders/KLA+Shareholder+Letter+-+Q3+FY26.pdf)、[FY26 Q4](https://d1io3yog0oux5.cloudfront.net/_b9ee755a5f60dd0fb3f9e27967aed6af/klatencor/db/1117/10668/letter_to_shareholders/KLA+Earnings+Shareholder+Letter+-+Q4+FY26.pdf)、[FY26 Q2 10-Q](https://www.sec.gov/Archives/edgar/data/319201/000031920126000008/klac-20251231.htm)、[FY26 Q3 10-Q](https://www.sec.gov/Archives/edgar/data/319201/000031920126000016/klac-20260331.htm)。
+
+### 2.3 订单、backlog、book-to-bill、交期与取消率
+
+| 季度末 | 公司公开 backlog/RPO | R-est 期末订单池 | R-est Bookings / Book-to-Bill | 交期与供给证据 | 取消/推迟 |
+|---|---:|---:|---:|---|---|
+| FY25 Q4 | **$7.86B（事实）**，较 2024-06-30 的 $9.83B 下降 $1.97B；预计 71–76% 在未来 12 个月确认、20–25% 在再后 12 个月 | 同公开值 | FY25 全年不反推季度 B2B | 受限供应商扩产后交期回归历史水平 | 公司称订单存在 modification/pushout/cancellation 风险，不披露实际率 |
+| FY26 Q1 | 未披露 | **约 $8.1B**（宽区间 $7.9–8.4B） | 约 $3.45B / **1.08x** | 客户 2026 讨论更积极；部分老客户交期开始延长 | 全系统净取消 R-est 2–5%，pushout 5–10% |
+| FY26 Q2 | 未披露 | **约 $8.5B**（$8.2–8.8B） | 约 $3.70B / **1.12x** | 管理层明确称 lead time 在延长，**光学组件最长**；供应限制 H1 增长，预计 H2 释放 | 同上；AI/HBM/leading-edge 核心单 R-est 净取消 1–3% |
+| FY26 Q3 | 未披露 | **约 $9.0B**（$8.7–9.5B） | 约 $3.92B / **1.15x** | backlog 增长、2027 可见度“前所未有”；KLA 已锁定所需 DRAM，但其价格约造成 100bp GM 逆风 | 未披露；fab readiness 仍可能造成验收推迟 |
+| FY26 Q4 | 未披露 | **基准 $9.6B，宽区间 $8.9–10.5B** | 基准约 $4.26B / **1.16x**；FY26 约 $15.32B / **1.13x** | 客户加速交付要求，多个新 fab/greenfield；长周期供应能力上线，H2 CY26 收入预计比 H1 高约 20% | 基准全系统净取消 2–5%；乐观 1–3%；极乐观 <1% 且出现 pull-in |
+
+**订单模型说明**：基准季度路径只使用恒等式 `Bookings ≈ Revenue + Ending backlog − Beginning backlog`，并以公司“backlog growing / delivery acceleration / supply capacity online”、Q1 FY27 $4.0B 指引、递延系统收入增长和客户资本开支为约束；它不是管理层披露。FY26 期末宽区间意味着全年 bookings 约 $14.6–16.2B、B2B 约 1.08–1.19x。若将本表的 $9.6B 写成“公司 backlog”，就是错误。
+
+**为什么取消率只能估**：KLA 10-K 明确表示订单可能修改、pushout 或取消，backlog 不能提供精确收入时间；公司通常在发货后 30–60 日收 70–90% 合同款，余款在验收后 30 日。由于领先设备高度定制，取消对客户和 KLA 都有成本，但合同条款不保证零取消。[FY25 10-K backlog/RPO 原文](https://www.sec.gov/Archives/edgar/data/319201/000031920125000024/klac-20250630.htm)
+
+## 三、最新指引、收入结构与产品组合
+
+### 3.1 FY2027 Q1 最新指引
+
+| 指标 | 指引 | 相对 FY26 Q4 |
+|---|---:|---:|
+| 收入 | **$4.0B ± $0.2B** | 中值 +9.4% QoQ；区间 +3.9% 至 +14.8% |
+| GAAP / non-GAAP GM | **61.6% ±1.0% / 62.5% ±1.0%** | non-GAAP 中值约持平，制造规模抵消 DRAM/关税成本 |
+| GAAP / non-GAAP EPS | **$1.14 ± $0.10 / $1.16 ± $0.10** | 拆股调整；diluted shares 约 1.312B |
+| SPC systems 客户结构 | Foundry/Logic **73%**；Memory **27%** | Memory 内 DRAM **90%**、NAND 10%，HBM/EUV DRAM 优先级显著高于 NAND |
+| CY26/H2 | H2 CY26 预计比 H1 高约 **20%**；CY27 继续 sequential growth | 关键条件是长周期供应能力按期上线 |
+
+管理层把 CY26 wafer equipment（含先进封装）从 3 月的 $135–140B、后来的 $140B+，再上调到 **low-$150B，较 CY25 约 $120B 增长 mid-20s**。SEMI 2026-07-15 独立预测则为 WFE $143.9B、+23.1%，DRAM equipment $38.8B、+39.0%，方向一致但定义略不同。[KLA Q4 FY26 股东信](https://d1io3yog0oux5.cloudfront.net/_b9ee755a5f60dd0fb3f9e27967aed6af/klatencor/db/1117/10668/letter_to_shareholders/KLA+Earnings+Shareholder+Letter+-+Q4+FY26.pdf)；[SEMI 年中预测](https://www.semi.org/zh/node/173816)
+
+### 3.2 FY26 收入池：互斥会计口径
+
+| 主要收入池 | FY26 R-est/事实 | 占收入 | 关键变化 | 对应重点产品 |
+|---|---:|---:|---|---|
+| Wafer Inspection systems | **约 $6.642B** | 48.9% | 最大池；Q4 YoY +1%，但先进节点/DRAM 内部 mix 更强 | 39xx/29xx BBP、Puma、Voyager、eSi50/eSV100/eDR/eDRX、Surfscan、8 Series、C30x、CIRCL、Castor、Micro-SR |
+| Patterning systems（含量测与光罩） | **约 $2.710B** | 20.0% | Q4 YoY +61%，当前最强边际增量之一 | Archer/ATL/Axion、SpectraShape 11k、SpectraFilm、Aleris、PWG、Therma-Probe、Teron 6xx/SL6xx、TeraBeam 8xx、Actinic 7xx、Gen5 Agera |
+| Specialty systems | **约 $0.512B** | 3.8% | Q4 +11% YoY；AI 子集强、成熟子集平 | SPTS Omega/Sigma/Delta/Osprey、Primaxx、Xactix、Mosaic、MVD、plasma dicing |
+| PCB & Component systems | **约 $0.439B** | 3.2% | Q4 +96% YoY，AI package rigor 是主要驱动 | ICOS F26x/T3/T7/T9、Serena、Lumina、Corus、Orbotech Infinitum/Nuvogo/Diamond/Ultra Dimension/Fusion/Discovery/Precise/Neos |
+| Service | **$3.126B（事实）** | 23.0% | +16.5% YoY；17 年连续增长 | 维保、升级、spares、应用/良率服务、fab relocation/optimization、软件支持 |
+| Other | **约 $0.150B** | 1.1% | 非核心 | 其他 SPC 收入 |
+
+Q4 FY26 地区收入为台湾 31%、中国 26%、北美 18%、韩国 10%、日本 6%、欧洲 5%、亚洲其他 4%。中国从 FY24 约 43% 降至 FY25 33%、Q4 FY26 26%，降低集中但出口管制仍可能限制高端产品销售。
+
+### 3.3 AI 重点产品地图、规模、增速与利润率交叉验证
+
+以下“专题收入”彼此可能嵌套，**不得相加**。例如 e-beam 属于 Wafer Inspection/Patterning，先进封装系统又横跨 wafer inspection、metrology、Specialty 和 PCB。
+
+| 高增长/关键业务 | FY26/CY26 当前收入贡献 | 近期增速 | R-est 产品毛利率 | 证据与交叉验证 |
+|---|---:|---:|---:|---|
+| Gen4/Gen5 BBP optical wafer inspection | Wafer Inspection 总池约 **$6.64B**；其中 AI-linked 约 $2.6–3.3B | 总池 Q4 +1% YoY；先进逻辑/HBM 子集预计明显快于总池 | **60–70%** | CY22–CY25 optical BBP 累计收入约 $8.5B；已出货 >600 台 Gen4、>180 台 Gen5；先进逻辑每代 inspection layers +30% |
+| Patterning/metrology/reticle | 总池约 **$2.71B**；AI-linked $1.3–1.7B | Q4 **+61% YoY** | 光学量测 55–66%；高端 reticle 65–80% | EUV/DRAM reticle requalification、overlay/CD/film/3D shape，且 Q4 交付 mix 强；SPIE 2026 验证 OVALiS/SpectraShape AI 化 |
+| Advanced Packaging Semi-PC systems | **CY26 指引约 $1.1B** | **>70% YoY**，约为 AP 市场增速两倍 | **50–62%**，高端前道化产品可更高 | CY25 广义 AP 收入约 $950M、四年 share 约 4x、2025 #1；竞争对手 Onto Dragonfly G5 预计 2026 >50%，Camtek 公开 2027 AI/HBM 订单 >$105M，证明市场热度但非 KLA 订单 |
+| e-beam inspection/review/metrology | CY25 **约 $0.40B（公司）**；CY26 R-est **$0.52–0.62B** | R-est +30–55% | **52–65%** | eSi50 single-beam、eSV100 multi-beam、eDRX1 review、eM200 metrology 与 BBP co-intelligence；GAA buried/electrical defects、EUV reticle 提高需求 |
+| Service | **$3.126B**；AI-linked $1.0–1.3B | **+16.5%** | **66–72% R-est**，Q4 service mix 对 GM 为正 | installed base >57,000，覆盖 >4,000 facilities、>3,500 service engineers；95% 收入 recurring、约 3 年平均合同、95% renewal；工具中位退役期 >24 年 |
+| Specialty + PCB/Component | 报告分部合计 **$1.334B**；AI-linked $0.65–0.85B | 合计约 +10%；Q4 PCB&C +56%、systems +96% | **45–60%**，显著低于核心 SPC | AI package、TSV、hybrid bond、IC substrate 与 component inspection 增长；但 Display/传统 PCB、成熟 specialty 拉低整体 |
+| TeraBeam 8xx EUV reticle e-beam | R-est **$0.04–0.10B**，嵌套在 Patterning/e-beam | 新品低基数 | **60–75% 成熟期；当前更低** | 2026 release、1x–3x nm EUV reticle、multi-column e-beam；Investor Day 引用 SPIE 2026 技术论文。Actinic 7xx 仍是 early demo，不应假设已量产放量 |
+| OVALiS / Klarity / 5D / aiSIGHT 等数据软件 | R-est **$0.35–0.55B**，大量嵌入系统/服务 | R-est +20–35% | **75–85% 增量毛利** | 每台 BBP 可产生约 125TB/小时、8 小时约 1PB；OVALiS PCA 实例中前 2/4 模式解释 60%/75% overlay variation，数据与 recipe lock-in 强 |
+| Serena/Lumina/Corus IC substrate & glass-core | R-est **$0.10–0.18B**，嵌套 PCB/AP | R-est +25–50% | **45–58%** | 小而有潜力：glass core/TGV、panel warpage、AOI/量测、direct imaging 是大尺寸 AI package 的潜在瓶颈；仍处客户资格验证/早期扩产阶段 |
+
+### 3.4 明确跳过的低相关或低增速业务
+
+- **Display 新设备制造**：已于 2024 年底退出；只保留存量服务，不纳入增长模型。
+- **传统消费电子 PCB、成熟直接成像与修复**：除 AI IC substrate/高端 package 部分外，不做深度预测。
+- **NAND 扩产**：仍是 KLA 市场，但 FY27 Q1 指引中仅占 SPC memory systems 的 10%；相较 HBM/DRAM，不是本报告的第一优先级。
+- **成熟模拟、汽车、工业、旧节点一般设备**：对服务稳定性重要，但增速和 AI 关联低，不做产品级情景。
+- **一般化学分析、显示面板、非 AI component inspection**：规模未单列且无法可靠映射至 AI，避免虚构精确收入。
+
+## 四、高增长与关键业务：当前贡献、重要性、紧迫性、供需与定价权
+
+评分均为 1–5；**供需紧张度越高，代表越供不应求**。垄断力并非法律垄断，而是技术份额、数据/recipe lock-in、客户共同开发和替换成本的综合。
+
+| 业务/产品 | 当前收入贡献与增速 | AI 重要性 | 时间紧迫性 | 供需紧张度 | 垄断/控制力 | 溢价能力 | 当前判断 |
+|---|---|---:|---:|---:|---:|---:|---|
+| Gen4/Gen5 BBP optical wafer inspection | Wafer 总池 $6.64B；AI-linked $2.6–3.3B；总池 Q4 +1% YoY | **5.0** | **5.0** | **4.0** | **5.0** | **5.0** | 领先 optical patterned inspection >85% 份额；关键光学、stage、算法和 HVM recipe 难复制；供应扩张而非需求是近期约束。 |
+| Patterning / metrology / reticle | $2.71B；Q4 +61% YoY | **5.0** | **5.0** | **4.0** | **4.5** | **4.5** | 2nm/GAA、EUV DRAM、overlay/CD、光罩价值同步提高；reticle 失效可能污染整批晶圆，客户容错极低。 |
+| Advanced Packaging Semi-PC | CY26 约 $1.1B、>70% YoY | **5.0** | **5.0** | **4.5** | **4.0** | **4.0** | HBM/CoWoS/SoIC/hybrid bonding 正处扩产窗口；KLA #1 且 portfolio 最宽，但 Camtek/Onto/AMAT 正快速进入。 |
+| e-beam inspection/review/metrology | CY26 R-est $0.52–0.62B、+30–55% | **4.5** | **4.5** | **4.5** | **3.5** | **4.0** | buried/electrical defect 和 EUV mask 使极限分辨率不可替代；但 ASML-HMI、AMAT、Hitachi 均强，KLA 优势是与 BBP co-intelligence。 |
+| Service | $3.126B、+16.5% | **4.0** | **4.0** | **3.0** | **5.0** | **4.5** | 工具停机直接损失 fab output；专有备件、校准、算法和 24 年工具寿命形成极强锁定，供给瓶颈主要是经验工程师。 |
+| Specialty + PCB/Component AI 子集 | AI-linked $0.65–0.85B；Q4 PCB systems +96% | **4.0** | **4.0** | **3.5** | **3.0** | **3.0** | TSV、等离子刻蚀/沉积、dicing、component/substrate inspection 很关键，但设备竞争更分散、毛利低于核心 SPC。 |
+| TeraBeam 8xx | R-est $0.04–0.10B，新品低基数 | **4.5** | **3.5** | **5.0** | **3.0** | **4.0** | EUV 1x–3x nm reticle pattern inspection 的高潜力小业务；当前仍处 release/资格验证，供给少不代表客户已全面采用。 |
+| OVALiS/Klarity/5D/aiSIGHT 数据软件 | R-est $0.35–0.55B、+20–35% | **4.5** | **4.0** | **2.5** | **4.5** | **5.0** | 软件本身不受硬件 BOM 约束，增量毛利最高；价值来自跨工具数据、缺陷库和 root-cause workflow，迁移成本高。 |
+| Serena/Lumina/Corus IC substrate/glass core | R-est $0.10–0.18B、+25–50% | **4.0** | **4.0** | **4.0** | **3.0** | **3.5** | 潜力小业务；大尺寸 panel warpage、TGV/玻璃缺陷和细线宽直接影响 AI package，但 glass-core 量产时点仍不确定。 |
+
+**时间紧迫性的含义**：5 分表示客户若在未来 6–12 个月没有相应检测/量测能力，可能直接推迟新节点、HBM 或封装 HVM；不是指 KLA 可以在任意价格立即出货。**供需紧张度**同时考虑客户需求和 KLA/上游供应，光学列、e-beam column、精密 stage、真空、算力/DRAM 和应用工程师分别可能成为约束。
+
+## 五、一年后产品收入：基准、乐观、极度乐观三情景
+
+### 5.1 产品级收入贡献与增长
+
+“核心收入池”可以互相相加；“专题/嵌套”横跨核心池，不能再次相加。预测期为 FY27/未来 12 个月附近，意在刻画区间而非季度会计指引。
+
+| 业务/产品 | 类型 | 当前收入 | **基准：一年后收入 / 增速** | **乐观：一年后收入 / 增速** | **极度乐观：一年后收入 / 增速** | 关键假设 |
+|---|---|---:|---:|---:|---:|---|
+| Wafer Inspection systems | 核心互斥 | $6.64B | **$8.0–8.4B / +20–27%** | **$8.8–9.4B / +33–42%** | **$9.8–10.8B / +48–63%** | Gen5 copy tools、N2/A16、HBM4、更多 inspection layers；极乐观需 optics/stage 全面去瓶颈。 |
+| Patterning/metrology/reticle | 核心互斥 | $2.71B | **$3.35–3.60B / +24–33%** | **$3.8–4.2B / +40–55%** | **$4.4–5.0B / +62–85%** | EUV reticle、DRAM EUV、overlay/CD/3D shape、TeraBeam 渐进放量。 |
+| Service | 核心互斥 | $3.126B | **$3.53–3.63B / +13–16%** | **$3.72–3.85B / +19–23%** | **$3.95–4.15B / +26–33%** | 更多系统出保、attach/uptime 升级、greenfield 站点、软件服务；极乐观高于长期 13–15% 目标。 |
+| Specialty + PCB/Component 分部 | 核心互斥 | $1.334B | **$1.55–1.65B / +16–24%** | **$1.75–1.90B / +31–42%** | **$2.05–2.25B / +54–69%** | AI package 组合抵消成熟业务；极乐观要求 IC substrate、component inspection、SPTS 同时扩产。 |
+| Advanced Packaging Semi-PC | 专题/嵌套 | $1.10B | **$1.45–1.60B / +32–45%** | **$1.75–2.00B / +59–82%** | **$2.15–2.50B / +95–127%** | HBM4、CoWoS/SoIC、hybrid bonding 进入更广 HVM；不包含全部 Specialty/PCB。 |
+| e-beam portfolio | 专题/嵌套 | $0.52–0.62B | **$0.72–0.82B / 约 +26–44%** | **$0.90–1.05B / +58–84%** | **$1.15–1.40B / +102–146%** | eSV100/eDRX1/eM200 与 BBP recipe attach，电性/埋藏缺陷需求扩大。 |
+| TeraBeam 8xx | 专题/嵌套 | $0.04–0.10B | **$0.15–0.25B** | **$0.30–0.45B** | **$0.50–0.70B** | 低基数使百分比失真；基准为少数 mask-shop POR，极乐观为多客户 HVM、high-NA 时间提前。 |
+| 数据软件 | 专题/嵌套 | $0.35–0.55B | **$0.50–0.70B** | **$0.75–1.00B** | **$1.10–1.40B** | 需提高 standalone/term-license/服务 attach；多数收入仍与硬件/服务重叠。 |
+| IC substrate/glass-core | 专题/嵌套 | $0.10–0.18B | **$0.18–0.25B** | **$0.28–0.40B** | **$0.45–0.65B** | Serena/Lumina/Corus 由 early qualification 转向 panel HVM；极乐观要求 glass core 2027 明显量产。 |
+
+### 5.2 三情景的 AI 重要性、紧迫性、供需与定价权
+
+下表五元组依次为 **`AI重要性 / 时间紧迫性 / 供需紧张度 / 垄断力 / 溢价能力`**，满分 5；它描述情景下产业状态，不是情景概率。
+
+| 业务/产品 | 基准 | 乐观 | 极度乐观 | 变化原因 |
+|---|---|---|---|---|
+| BBP optical inspection | **5/5/4/5/5** | **5/5/4.5/5/5** | **5/5/5/5/5** | 节点与 HBM 同步加速时，采样层数和 copy-tool 数量同时上升。 |
+| Patterning/metrology/reticle | **5/5/4/4.5/4.5** | **5/5/4.5/4.5/4.5** | **5/5/5/5/5** | EUV mask 价值、overlay budget 与 DRAM EUV 层数收紧。 |
+| Advanced Packaging SPC | **5/5/4.5/4/4** | **5/5/5/4.5/4.5** | **5/5/5/4.5/5** | hybrid-bond pitch/overlay 进入量产，同时 KLA broad portfolio 提升 bundling。 |
+| e-beam | **4.5/4.5/4.5/3.5/4** | **5/5/5/4/4.5** | **5/5/5/4.5/5** | 光学无法覆盖的 buried/electrical/reticle 缺陷增加；KLA co-intelligence 渗透。 |
+| Service | **4/4/3/5/4.5** | **4.5/4.5/3.5/5/4.5** | **5/5/4/5/5** | 新厂和高利用率提高 uptime 价值，工程师与专有 spares 变紧。 |
+| Specialty + PCB/Component | **4/4/3.5/3/3** | **4.5/4.5/4/3.5/3.5** | **5/5/4.5/4/4** | 前道化封装扩大 KLA 协同，但单点设备仍有多家替代者。 |
+| TeraBeam 8xx | **4.5/4/5/3.5/4** | **5/4.5/5/4/4.5** | **5/5/5/4.5/5** | 资格验证通过后，从少数研发工具变为 mask HVM 关键节点。 |
+| 数据软件 | **4.5/4/2.5/4.5/5** | **5/4.5/3/5/5** | **5/5/3.5/5/5** | 数据越多、跨工具模型越成熟，软件锁定和 value pricing 越强。 |
+| IC substrate/glass-core | **4/4/4/3/3.5** | **4.5/4.5/4.5/3.5/4** | **5/5/5/4/4.5** | 玻璃核心真正量产后，TGV/warpage/面板缺陷成为新控制点。 |
+
+## 六、BOM、单机价格、单位算力内容量与价格传导链
+
+### 6.1 首先澄清：数据中心物理 BOM 为零
+
+KLA 设备安装在 **mask shop、wafer fab、advanced packaging/OSAT、IC substrate/PCB 厂和实验室**，不安装在 AI 数据中心。因此：
+
+- 每 MW 的 **KLA 物理设备 BOM = $0**；
+- 每 rack 的 **KLA 物理设备 BOM = $0**；
+- 每 GPU 的 **KLA 物理设备 BOM = $0**；
+- 每 optical port 的 **KLA 物理设备 BOM = $0**。
+
+后文给出的数字是把当年 AI-linked KLA 设备/服务收入按当年 AI accelerator equivalents 归一化的 **制造设备销售流量归因**，用于比较经济强度，绝不是服务器采购清单、芯片制造成本或 KLA 可直接按 GPU 收费的 royalty。
+
+### 6.2 关键设备的真实系统 BOM 框架
+
+KLA 不披露单机 ASP/BOM。下表来自限定目录内过程控制行业模型与公开系统结构，比例是**制造成本（COGS）构成区间**，不同配置的区间端点不可简单相加。
+
+| 设备族 | R-est 单机 ASP | 主要 COGS/BOM | R-est 产品 GM | 最难扩产的部件/能力 |
+|---|---:|---|---:|---|
+| 高端 BBP patterned optical inspection | **$5–20M** | 光源/光学/探测器 30–40%；精密 stage 15–20%；HPC/图像处理 12–18%；handling/vacuum 8–12%；集成校准 12–18%；warranty 5–8% | **60–70%** | 定制光学列、光源、传感器、纳米级 stage、算法校准；典型部件交期 6–18 个月 |
+| e-beam inspection/review/metrology | **$4–25M** | electron column 28–35%；vacuum/stage 18–23%；compute 13–18%；handling 7–10%；集成/应用 14–18%；warranty 5–7% | **52–65%** | column/source、超高真空、stage、吞吐率算法和 recipe qualification；典型 12–24 个月 |
+| Optical metrology / AP optical-IR | **$1.5–5M** | optics 25–32%；stage/handling 18–24%；compute 10–15%；mechanics 10–14%；应用/校准 18–24%；warranty 5–7% | **48–62%** | 3D shape/overlay accuracy、透明/多层材料建模、wafer/frame/panel handling |
+| EUV reticle 高敏检测（TeraBeam/actinic 类） | **$30M 至 >$100M** | source/optics/detector 45–55%；stage/vacuum 15–22%；compute 8–15%；integration 12–18%；warranty 4–8% | **成熟期 65–80%** | 极少数光源/光学/真空供应链、multi-column 匹配、EUV mask defect library；资格验证 12–24 个月 |
+| SPTS/IC substrate/PCB 高端工具 | **约 $0.5–5M** | plasma/optics/source 20–35%；stage/handling 15–25%；mechanics/vacuum 15–25%；compute/control 8–15%；integration/application 15–25% | **45–60%** | panel/wafer handling、warpage compensation、plasma uniformity、细线缺陷算法；配置分散 |
+| Software/data analytics | license/term/embedded，ASP 不可分离 | compute/storage/cloud/on-prem integration、应用工程与模型维护；硬件 BOM 很低 | **75–85% 增量 GM** | 客户数据权限、跨工具语义、recipe/yield correlation 和资深应用工程师，而非物理产能 |
+
+### 6.3 每 GPU / rack / MW / optical port 的经济归因
+
+归一化假设来自限定产业资料：CY26 全球 AI accelerator equivalents 约 **7–11M**；GB300 NVL72 风格 rack 为 72 GPU、约 142kW，即约 **507 GPU/MW**；网络带宽按 **每 GPU 800Gb/s 等价带宽**归一。一般训练集群可能为 350–800 accelerator/MW，故真实项目区间更宽。
+
+| KLA 收入池 | CY26 AI-linked 收入（R-est） | 每 GPU 归因 | 每 72-GPU rack | 每 MW（507 GPU） | 每 800G-equivalent optical bandwidth port |
+|---|---:|---:|---:|---:|---:|
+| **KLA 合计** | **$5.8–7.3B** | **$527–1,043** | **$38.0–75.1k** | **$0.267–0.529M** | **$527–1,043；物理光模块内容量仍为 0** |
+| BBP/Wafer Inspection AI 子集 | $2.6–3.3B | $236–471 | $17.0–33.9k | $0.120–0.239M | 同每 GPU 经济归因 |
+| Patterning/metrology/reticle AI 子集 | $1.3–1.7B | $118–243 | $8.5–17.5k | $0.060–0.123M | 同上 |
+| Advanced Packaging Semi-PC 的 AI 部分 | $0.77–0.94B | $70–134 | $5.0–9.7k | $0.035–0.068M | 同上 |
+| e-beam AI 子集（与上两行重叠） | $0.40–0.50B | $36–71 | $2.6–5.1k | $0.018–0.036M | 同上 |
+| Service AI 子集 | $1.0–1.3B | $91–186 | $6.5–13.4k | $0.046–0.094M | 同上 |
+| Specialty + PCB/Component AI 子集 | $0.65–0.85B | $59–121 | $4.2–8.7k | $0.030–0.062M | 同上 |
+| Software/data AI 子集（重叠） | $0.25–0.40B | $23–57 | $1.6–4.1k | $0.012–0.029M | 同上 |
+| TeraBeam AI 子集（重叠） | $0.03–0.07B | $3–10 | $0.2–0.7k | $0.001–0.005M | 同上 |
+| IC substrate/glass-core AI 子集（重叠） | $0.07–0.13B | $6–19 | $0.5–1.3k | $0.003–0.009M | 同上 |
+
+限定产业资料估计一个 AI 数据中心 MW 的全栈资本内容约 $39–70M，其中 GPU/ASIC+memory 约 $20–38M。上述 KLA 年度销售流量归因约为每 GB300 风格 MW $0.27–0.53M，相当于全栈资本的约 **0.4–1.4%**；但 KLA 工具跨多年、跨多种芯片和大量晶圆复用，不能把这 0.4–1.4% 直接当作该 MW 的会计制造成本。
+
+### 6.4 完整价格传导链
+
+1. **云/主权 AI capex** 提高 GPU/ASIC、HBM、network ASIC 和光器件需求；
+2. **芯片设计与制造端** 增加先进设计启动、N2/A16 wafer starts、HBM4 DRAM 与 CoWoS/SoIC/hybrid-bond capacity；
+3. **工艺复杂度** 使 inspection layers、EUV reticle 数、sampling rate、overlay/CD/3D metrology points 和 package inspection steps 上升；
+4. **KLA 下单**：客户下达 system order/deposit，KLA 锁定 optics/e-beam column/stage/DRAM/compute，经过 6–24 个月制造、安装、recipe/GR&R、acceptance 后确认收入；
+5. **KLA 定价**：高端系统用 yield/time-to-results 价值定价，而非 cost-plus；软件、升级和服务提高 lifetime revenue。领先 fab 每提高 1% 良率可贡献 >$150M 年收入，是数百万至数千万美元工具 ASP 的经济基础；
+6. **客户成本吸收**：设备折旧分摊至多年、多节点和大量 wafer；若检测减少 scrap、缩短 ramp，其净成本可能为负；
+7. **传至 GPU/package/rack**：foundry/OSAT/HBM 厂通过 wafer/package 价格和供需把部分资本成本传给芯片设计商，最终才进入服务器/rack/MW。因良率、利用率和折旧期不公开，不能从 KLA ASP 直接精确推导单颗 GPU 制造成本。
+
+## 七、当前与一年后产能、供应链采纳和资格验证
+
+### 7.1 产能定义与当前状态
+
+本文“美元产能”不是 KLA 公布的工厂 nameplate，而是依据 FY26 实际收入、FY27 Q1 指引、H2 加速和产品 mix 推导的 **一年可交付并验收的收入能力**。总公司 2026 年中 exit throughput capacity 约 **$16–17B 年化**；需求超过它时，收入不会立即等比例增长。
+
+| 业务/产品 | 当前美元产能（R-est） | 当前采纳/资格阶段 | 认证或 POR 证据 |
+|---|---:|---|---|
+| BBP/Wafer Inspection | $7.2–7.8B/年 | Gen4/Gen5 在 leading logic/DRAM 广泛 HVM；copy tools 扩张 | CY22–25 >600 Gen4、>180 Gen5；客户名与单节点 POR 未逐项公开 |
+| Patterning/metrology/reticle | $3.0–3.4B/年 | Archer/SpectraShape/Aleris/PWG/Teron 已在多节点 HVM；TeraBeam 处早期客户 qualification；Actinic 7xx early demo | 常规量测/reticle 为 POR；TeraBeam release 不等于全部客户 HVM |
+| Advanced Packaging Semi-PC | $1.2–1.4B/年（嵌套） | 2.5D/HBM wafer/frame/package 多平台已 HVM；hybrid bond 从开发/初期 HVM 扩大 | CY25 #1、四年 share 约 4x；CY26 收入指引本身证明商业采纳 |
+| e-beam | $0.6–0.7B/年（嵌套） | eSi/eSV/eDRX/eM 在选择性 critical apps 生产使用，正在扩大 co-intelligence attach | CY25 $0.4B 规模；具体客户/层 POR 不公开 |
+| Service | $3.3–3.5B/年 | 全 installed base；合同/类合同化 | >57k systems、>4k facilities、>80% multi-year subscription、95% renewal |
+| Specialty + PCB/Component | $1.5–1.7B/年 | SPTS、ICOS、传统 PCB 已成熟；AI substrate/component 新应用处 qualification/ramp | 分部 Q4 +44% QoQ；成熟与新应用混合，不能整体视为 HVM AI |
+| TeraBeam 8xx | $0.10–0.20B/年 | release → mask-shop demo/qualification | 2026 SPIE 论文与 Investor Day 产品路线；暂无公开大规模 fleet 数 |
+| Software/data | $0.5–0.7B/年（大部嵌入） | 在 KLA installed base 广泛部署；客户数据/安全和 recipe correlation 属实质资格验证 | OVALiS 2026 HVM 论文、Klarity/5D/aiSIGHT 产品组合 |
+| IC substrate/glass-core | $0.20–0.30B/年（嵌套） | organic substrate 已量产应用；glass-core/TGV 为 early qualification/ramp | Serena/Lumina/Corus 产品组合；未披露客户级认证清单 |
+
+**设备“认证”的真实含义**：半导体资本设备通常不存在类似汽车零件的统一公开认证编号。实质流程为 lab/demo → joint-development/alpha → customer qualification（repeatability、GR&R、defect capture、false alarm、tool matching、recipe/yield correlation）→ POR → HVM/copy exact。新平台首次 qualification 常需 **6–18 个月**，已认证 copy tool 约 **1–2 个季度**；reticle actinic/e-beam 等极端工具可能更久。
+
+### 7.2 一年后产能与认证情景
+
+| 业务/产品 | **基准：产能 / 采纳阶段** | **乐观：产能 / 采纳阶段** | **极度乐观：产能 / 采纳阶段** |
+|---|---|---|---|
+| BBP/Wafer Inspection | **$8.6B**；现有 POR copy-tool 加速 | **$9.7B**；Gen5 在更多 top-node/DRAM layers 成为 POR | **$11.0B**；N2/A16/HBM4/High-NA 相关层同步全速，供应无重大掉期 |
+| Patterning/metrology/reticle | **$3.8B**；量测/reticle 常规扩张，TeraBeam 少数 POR | **$4.4B**；TeraBeam 多客户/多节点、EUV DRAM requal 扩大 | **$5.2B**；TeraBeam 高量产 fleet，Actinic 提前进入生产 qualification |
+| Advanced Packaging Semi-PC | **$1.7B**；2.5D/HBM copy tools，hybrid bond 初期 POR | **$2.15B**；top foundry/OSAT/memory 多流程 POR | **$2.65B**；hybrid bond、panel、glass-core 同时 HVM，客户全面 pull-in |
+| e-beam | **$0.85B**；选择性层扩张 | **$1.10B**；eSV/eDRX/eM 与 BBP attach 成为主流 | **$1.45B**；buried/electrical 与 EUV mask apps 广泛 HVM |
+| Service | **$3.7B**；新工具出保、正常 attach | **$3.95B**；greenfield 服务站/高 uptime 合同加速 | **$4.25B**；工程师、spares、remote AI 服务均无约束 |
+| Specialty + PCB/Component | **$1.9B**；AI package 抵消成熟业务 | **$2.2B**；ICOS/SPTS/substrate 多客户 POR | **$2.6B**；package 与 substrate 同时成为主增量、无 Display 拖累 |
+| TeraBeam 8xx | **$0.25B**；1–2 类核心应用 POR | **$0.45B**；多家 mask shop 与逻辑/DRAM requal 采用 | **$0.75B**；成为先进 EUV reticle 高敏检测主流之一 |
+| Software/data | **$0.75B**；提高 attach/term license | **$1.05B**；跨工具/跨 fab analytics 规模化 | **$1.45B**；客户允许更广数据闭环并接受 value-based pricing |
+| IC substrate/glass-core | **$0.30B**；organic substrate HVM、glass early POR | **$0.50B**；glass/TGV 多客户 qualification | **$0.80B**；大尺寸 glass core/panel HVM 快速扩张 |
+
+**产能最大风险**：高端 optics 6–12 个月、精密 stage 9–18 个月、e-beam column/actinic 12–24 个月；compute/DRAM 通常 3–9 个月但 FY26 DRAM 成本急升。KLA 在 Q4 表示长周期供应能力正上线，这支撑 H2，但任何单一关键子系统迟到都会把收入从一个季度移到下一个季度，而不一定代表终端订单消失。
+
+## 八、订单挤压、客户项目与未来一年公司增速
+
+### 8.1 过去半年一手证据时间线
+
+| 日期 | 一手事件 | 具体数字/事实 | 对 KLA 的含义 | 能否证明 KLA 订单 |
+|---|---|---|---|---|
+| 2026-01-15 | TSMC Q4 2025 电话会 | 2026 capex **$52–56B**；70–80% 投先进制程，10–20% 投先进封装/测试/mask 等；N2 已于 4Q25 HVM，N2P/A16 计划 2H26 量产；客户 capacity engagement 提前 2–3 年 | 直接支持 wafer inspection、metrology、reticle 和 AP 工具需求；TSMC FY25 是 KLA 唯一披露的 >10% 客户，收入占 19% | **否**；是具名客户 capex/项目，不是采购单。[TSMC transcript](https://investor.tsmc.com/chinese/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf) |
+| 2026-01-29 | KLA FY26 Q2 | 收入 $3.297B；管理层称 lead time 延长、optics 最长，供应约束 H1、H2 释放；先进封装 CY25 约 $950M、>70% | 第一次清晰确认订单强度超过短期供应，构成“订单挤压”核心证据 | **部分**；方向是公司披露，未给订单金额。[Q2 结果](https://ir.kla.com/news-events/press-releases/detail/509/kla-corporation-reports-fiscal-2026-second-quarter-results) |
+| 2026-02-12 / 05-29 | Samsung HBM4 商业出货 / HBM4E 样品 | HBM4 进入商业供货；HBM4E 样品继续提高 stack/带宽要求 | DRAM EUV、HBM die/stack/package 检测强度上行 | **否**；终端技术/量产验证。[HBM4](https://news.samsung.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing)；[HBM4E](https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples) |
+| 2026-03-12 | KLA Investor Day | CY25 systems $9.8B、Semi-PC $9.0B；CY24 PC share 56.5%；CY30 revenue $26B±$2.5B；AP CY25 约 $950M；e-beam CY25 约 $400M | 公司首次系统化量化 AI 逻辑、HBM、AP、reticle、service 机会 | **否**；战略与市场模型。[Investor Day](https://ir.kla.com/news-events/investor-day-2026) |
+| 2026-03-16 | Micron GTC 2026 | HBM4 36GB 12H 已 HVM、为 NVIDIA Vera Rubin 设计，>2.8TB/s；HBM4 48GB 16H 已送样 | HBM4 在 2026 而非远期概念；12H/16H 与更复杂 base die/TSV/stack 对检测有直接需求 | **否**；具名 memory 客户技术量产验证。[Micron](https://investors.micron.com/news-releases/news-release-details/micron-high-volume-production-hbm4-designed-nvidia-vera-rubin) |
+| 2026-04-08 | SPIE Advanced Lithography + Patterning 2026 | KLA OVALiS PCA workflow：前 2/4 模式解释 60%/75% overlay variation；SpectraShape 11k + ML 可在 e-test 前发现偏差；TeraBeam multi-column e-beam 论文 | 软件/AI 不是营销壳，而是缩短 root-cause、提高设备 attach 和良率闭环的实际技术 | **否**；技术能力验证。[OVALiS paper](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13981/139813U/Leveraging-principal-component-analysis-for-overlay-variation-and-root-cause/10.1117/12.3090685.full)；[SpectraShape paper](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13981/139814A/AI-driven-metrology-for-electrical-test-via-ellipsometry/10.1117/12.3091117.short) |
+| 2026-04-16 | Onto Dragonfly G5 qualification | 第二次成功资格验证，6 月初始出货；Dragonfly 2026 收入预计 **>50%** 增长 | 先进封装检测需求真实，但也说明 KLA 竞争加剧 | **否**；竞争对手订单/资格验证。[Onto](https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovations-Dragonfly-G5-System-Qualified-for-Applications-in-2-5D-AI-Packaging/default.aspx) |
+| 2026-04-29 | KLA FY26 Q3 | 收入 $3.415B、+11% YoY；backlog 增长、2027 visibility 前所未有；CY26 AP 预期上修 | 强化 2027 订单可见度，但仍未披露 RPO | **部分**；公司定性订单证据。[Q3 结果](https://ir.kla.com/news-events/press-releases/detail/514/kla-corporation-reports-fiscal-2026-third-quarter-results) |
+| 2026-05-19 / 06-03 | J.P. Morgan / BofA 技术投资者会议 | 管理层继续讨论 WFE >$140B、AP/HBM 和服务可见度 | 近半年机构问答没有推翻财报方向；可作为 consistency check | **否**；公开管理层交流。[KLA 会议公告](https://ir.kla.com/news-events/press-releases/detail/516/kla-announces-upcoming-investor-webcasts) |
+| 2026-05-28 | IEEE ECTC：imec + EVG | 300mm W2W hybrid bond **200nm Cu pitch**，全部 die post-bond overlay <40nm，Cu recess 数纳米 | 下一代 hybrid bond 已把检测/量测要求从微米推向几十纳米，直接提高 AP metrology/inspection 内容 | **否**；技术 roadmap 验证。[imec/EVG](https://www.imec-int.com/en/press/imec-and-ev-group-demonstrate-wafer-wafer-hybrid-bonding-200nm-interconnect-pitch-and-record) |
+| 2026-06-02 | Camtek 公开订单 | tier-1 OSAT $55M + leading HBM player >$50M Hawk，**全部 2027 交付** | 最强外部“订单挤压”证据之一：AI packaging/HBM inspection 已锁定到 2027；同时是 KLA 份额风险 | **否**；明确是 Camtek 订单。[Camtek](https://www.camtek.com/news-and-events/camtek-receives-over-105-million-multi-system-orders-from-a-tier-1-osat-and-a-leading-hbm-manufacturer/) |
+| 2026-06-25 | Applied Materials 7AP/G7AP | VeritySEM 7AP、SEMVision G7AP 面向 sub-10nm AP defects，G7AP 已在 leading memory/logic HVM | e-beam/AP 竞争从后道纯玩家扩展至前道大厂，KLA 不能靠市场增长掩盖份额风险 | **否**；竞争技术验证。[Applied](https://investors.appliedmaterials.com/news-releases/news-release-details/applied-materials-introduces-new-systems-accelerate-dram-and) |
+| 2026-07-15 | SEMI Mid-Year Forecast | 2026 WFE **$143.9B、+23.1%**；foundry/logic $78.0B、+18.9%；DRAM $38.8B、+39.0% | 独立行业总量支持 KLA low-$150B（含 AP）方向，DRAM/HBM 是最强细分 | **否**；行业协会模型。[SEMI](https://www.semi.org/zh/node/173816) |
+| 2026-07-28 | KLA FY26 Q4 | 收入 $3.658B、+15%；Q1 FY27 指引 $4.0B；CY26 AP 约 $1.1B、>70%；H2 比 H1 +20%；客户加速 delivery requests | 当前最强公司级出货/订单/供应改善证据 | **部分**；仍未披露期末订单额。[Q4 结果](https://ir.kla.com/news-events/press-releases/detail/518/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full) |
+
+**论坛/小道消息处理**：公开论坛对财报后股价、拆股与 AI 曝光的讨论很多，但没有可核验的 KLA 客户名、订单金额、采购单或交付窗，因此不进入基准模型。报告采用 Camtek/Onto/Applied 公开订单与 qualification、客户 capex/HBM HVM、SEMI 总量作为“渠道”替代，避免把匿名传闻包装成事实。
+
+### 8.2 KLA 订单池、交付与取消敏感性
+
+| 项目 | 公开事实 | 基准研究估算 | 风险边界 |
+|---|---|---|---|
+| 2025-06-30 RPO | **$7.86B**；71–76% 预计 12 个月确认 | 模型起点 | 公司明确说时间会持续变化，不能机械当作 next-year revenue |
+| 2026-06-30 RPO | 未披露 | **$9.6B；宽区间 $8.9–10.5B** | 若 FY26 10-K 后实际低于 $8.9B，需下修 B2B/2027；若 >$10.5B，上修但仍检查交付能力 |
+| FY26 bookings/B2B | 未披露 | **$15.3B / 1.13x**；宽区间 $14.6–16.2B / 1.08–1.19x | 由 backlog 桥反推，不是订单台账 |
+| 下一年交付窗 | FY25 RPO 71–76% next 12m | 新 mix 下估计 **65–75% next 12m、20–30% subsequent 12m** | greenfield readiness、安装工程师和验收可能把收入移后 |
+| 净取消率 | 未披露；订单可取消/修改 | 全系统 **2–5%**；AI/HBM/leading-edge **1–3%** | AI capex 下修/出口管制/客户 fab 延迟时可升至 8–12%；pushout 往往先于取消 |
+| 供给扩张 | Q4 称 long-lead capacity online | FY27 总 revenue throughput capacity 约 $18–19B 基准 | optics/e-beam/stage/DRAM 任一失配都会限制出货；需求强不自动等于收入 |
+
+### 8.3 公司未来一年三情景
+
+| 项目 | **基准** | **乐观** | **极度乐观** |
+|---|---|---|---|
+| 行业/客户假设 | WFE（可比口径）约 $145–155B；TSMC/N2、HBM4、AP 按计划；部分 fab 验收推迟 | WFE $155–165B；N2/A16/HBM4/CoWoS/hybrid bond 提前，客户 pull-in | WFE >$165B；AI capex 全面上修，先进逻辑、DRAM、NAND、AP 同时超预期 |
+| 期末订单池/RPO（R-est） | **$10–11B** | **$11–12.5B** | **$13–15B** |
+| 取消 / pushout | 2–5% / 5–10% | 1–3% / 3–6% | <1%；净 pull-in |
+| 一年后收入产能 | **$18–19B** | **$20–21.5B** | **$22–24B** |
+| FY27/未来 12m 收入 | **$17.0–17.6B** | **$18.4–19.2B** | **$19.8–21.0B** |
+| 收入增速 | **+25–30%** | **+35–41%** | **+46–55%** |
+| non-GAAP GM | **61.5–62.5%** | **62.5–63.5%** | **63.0–64.5%** |
+| 主要限制 | optics/stage、DRAM 成本、客户 fab readiness、China | 应用工程师/安装、竞争对手抢 AP/e-beam 份额 | 物理供应链、客户同时验收和宏观资金约束；概率最低 |
+
+**基准情景与市场共识的关系**：截至 2026-07-31，FY27 收入共识约 $17.21B、+26.8%，落在本报告基准中部。当前 $243.3B 市值对应基准 forward sales 约 **13.8–14.3x**、乐观约 **12.7–13.2x**、极度乐观约 **11.6–12.3x**；即便极度乐观，估值也不是低倍数。
+
+### 8.4 必须逐季跟踪的硬指标
+
+1. FY26 10-K 是否披露 2026-06-30 RPO；与本报告 $8.9–10.5B 区间比较。
+2. Q1 FY27 收入能否达到 $4.0B 中值、AR/库存是否随出货改善而非继续显著快于收入。
+3. AP process-control systems 是否按 CY26 $1.1B 交付；2027 增速是否仍高于市场。
+4. Wafer Inspection 从 Q4 +1% YoY 是否重新加速；若只有 Patterning/PCB 拉动，核心 BBP 情景需下修。
+5. TeraBeam 8xx 是否出现具名 mask-shop POR、fleet 或重复订单；没有这些证据前不得按主流量产工具估值。
+6. Gen5 BBP、eSV100/eDRX1/eM200、Serena/Lumina 的客户 qualification/copy-tool 信息。
+7. DRAM input cost 对 GM 的约 100bp 逆风是否消退；Q1 FY27 non-GAAP GM 能否维持 62.5%。
+8. China 收入与许可证、台湾/韩国客户集中、TSMC capex/Arizona/N2 验收节奏。
+9. Camtek/Onto/Applied 在 AP/e-beam 的订单与增长是否持续高于 KLA，作为份额预警。
+
+## 九、竞争格局、技术主流性、替代方案与客户替换成本
+
+### 9.1 分产品竞争地图
+
+| 产品/市场 | KLA 地位 | 主要竞争对手/替代 | KLA 优势 | 关键风险与替代路径 | 替换成本 |
+|---|---|---|---|---|---|
+| BBP optical patterned wafer inspection | 绝对龙头；领先细分估计 >85% | Applied Materials Enlight/集成检测；Hitachi High-Tech；Onto；中国本土 optical inspection | 宽波段光学、超高速数据、缺陷库、Gen4/5 installed base、e-beam co-intelligence | AMAT 可把 process equipment 与 inspection 共优化；成熟层可用低成本 optical/macro 或降低采样 | **极高**：首次 6–18 个月 qualification、recipe/tool matching、false alarm/yield correlation；HVM 更换风险大 |
+| e-beam inspection/review/CD metrology | 快速成长但非最大份额 | ASML-HMI eScan；AMAT SEMVision/PROVision/7AP/G7AP；Hitachi CD-SEM/inspection | eSi/eSV/eDRX/eM 全链，与 BBP 数据闭环、光学高吞吐互补 | 多 beam 吞吐/灵敏度迭代；竞争者有更大 installed base；客户可组合不同厂商 review/CDSEM | **高**：关键层 recipe 和 design data 绑定，但 point tool 仍可替换 |
+| Overlay/CD/film/3D metrology | 领先组合供应商 | Nova；Onto; ASML YieldStar；Hitachi；Bruker/Park（特定量测） | Archer/SpectraShape/Aleris/PWG + data analytics，多物理量共同优化 | scanner/process tool 内置量测、virtual metrology、竞争对手光学模型可能降低独立工具强度 | **中高至高**：计量 correlation、matching 和控制回路需重新验证 |
+| Reticle/mask inspection | optical/DUV/print-check 强，TeraBeam 新进入最先进 EUV pattern | Lasertec ACTIS/MATRICS；NuFlare；ZEISS/ASML mask ecosystem | Teron/TeraScan/SL、Gen5 Agera print-check、多层 defense；TeraBeam multi-column e-beam | Lasertec 在 actinic EUV 生态强；e-beam 与 actinic 不是完全同物理路线，可能互补也可能替代部分 sampling | **极高**：漏检可能打印到数千晶圆；客户会保留多重 defense 而非轻易替换 |
+| Advanced packaging inspection/metrology | 2025 #1；组合最宽 | Camtek Hawk/Eagle；Onto Dragonfly G5/3Di；AMAT 7AP/G7AP；Nova、Bruker、Park、Nordson | 前道 29xx/Puma/Voyager/CIRCL/Micro-SR/eDR + ICOS/SPTS/substrate，能跨 wafer-frame-package | 后道玩家成本/吞吐强，Onto/Camtek 已获资格和 2027 订单；AMAT 把先进前道 e-beam 下沉至 AP | **中高**：新流程 POR 前可竞争，HVM 后 recipe/handling/defect taxonomy 锁定明显 |
+| Specialty process（SPTS） | niche 强项，非全市场垄断 | Lam、AMAT、TEL、ASM、EVG、Plasma-Therm；bonding 由 EVG/Besi/TEL 等主导 | etch/deposition/dicing 与 KLA inspection/metrology bundle | 客户可分别购买最佳工艺工具；资本强度和毛利低于核心 SPC | **中等**：工艺 qualification 高，但同类可选供应商较多 |
+| IC substrate/PCB/component | 由 Orbotech/ICOS 建立，AI 高端应用增长 | Camtek、Onto、传统 AOI/direct-imaging 厂、中国/亚洲本土厂商 | Serena/Lumina/Corus/ICOS + 前道量测/软件复用 | 传统 PCB 价格竞争激烈；glass core 时点和标准不确定；本土替代快 | **低至中高**：传统 PCB 较低，高端 substrate/AI package 较高 |
+| Process-control software/data | 强 installed-base lock-in | AMAT、ASML、Onto、PDF Solutions、客户自研 data lake/AI | 跨 57k+ 工具数据、物理模型、recipe 与服务闭环；增量毛利高 | 客户数据主权、网络安全、开放标准和自研 AI 可能限制 standalone 变现 | **高**：数据 schema、模型、历史缺陷库和控制回路迁移困难 |
+
+### 9.2 哪些新技术会成为主流
+
+- **BBP optical + e-beam co-intelligence：主流概率很高。** Optical 负责高吞吐 HVM，e-beam 负责极限灵敏度和 buried/electrical defect，AI 模型把 e-beam 标签反馈给 optical recipe。它不是“e-beam 完全替代光学”，而是以少量高精度样本提升大规模 optical 检测。
+- **先进封装前道化过程控制：主流概率很高。** KLA Investor Day 给出 microbump 到 hybrid bond 的变化：pitch 从 20–50µm 降至 <10µm、defect sensitivity 从 1–5µm 降至 0.05–0.5µm、overlay error 从 1–2µm 降至 0.05–0.25µm、metrology accuracy 从 1µm 降至 0.001µm。imec 200nm pitch/<40nm overlay 继续证明路线向更严控制移动。
+- **TeraBeam multi-column e-beam reticle：高潜力、尚未证明成为主流。** 2026 release 和 SPIE 技术论文证明技术可用，但没有公开 fleet/订单；Lasertec actinic、KLA 自身 Teron/print-check 和客户多重 defense 会共同存在。
+- **Actinic 7xx：技术重要但商业阶段早。** Investor Day 明确是 early demo；若 High-NA/EUV mask through-pellicle requalification 提前，价值很高，否则收入时间可能晚于一年。
+- **AI/ML metrology analytics：会成为标准功能，但 standalone 收费不确定。** OVALiS/SpectraShape 的 HVM 论文证明技术效用，问题是收入可能嵌入硬件/服务而不是独立软件爆发。
+- **Glass-core/TGV inspection：潜力高、量产时点风险最大。** 若大尺寸 AI package 转向 glass core，warpage/TGV/细线控制会形成新 TAM；若客户继续优化 organic substrate，它可能延迟数年。
+
+### 9.3 客户替换成本的量化与边界
+
+1. **时间**：新平台首次 qualification 约 6–18 个月，复杂 e-beam/actinic 可达 12–24 个月；已认证 copy tool 约 1–2 个季度。
+2. **良率风险**：KLA 给出的经济例为 leading-edge fab 1% yield 改善可增加 >$150M 年收入；替换设备若漏检或 false alarm，上限损失远高于单机价。
+3. **数据资产**：多年 defect library、recipe、tool matching、wafer map、design context、service log 和 root-cause 模型不能即时迁移。
+4. **人员流程**：客户应用工程师、fab control plan、SPC limits、maintenance spares 和 operator training 均围绕已装平台构建。
+5. **替换成本不是无限**：新 fab、新节点、尚未形成 POR 的 AP/glass-core 应用是竞争对手最佳切入点；出口管制也可迫使客户接受技术较弱的替代。
+
+### 9.4 主要风险清单
+
+| 风险 | 可能冲击 | 领先指标 |
+|---|---|---|
+| AI capex/客户资本纪律转弱 | bookings、RPO、AP/BBP 交付推迟；高估值压缩 | hyperscaler capex、TSMC/Memory capex、订单 pushout、AR/库存 |
+| 中国出口管制/本地替代 | 高端产品许可、服务和中国收入下降 | 中国收入占比、BIS 规则、许可证、国产检测 HVM 资格 |
+| 光学/e-beam/stage/DRAM 供应 | 有订单无收入、成本上升、GM 下滑 | lead time、Q1 GM、inventory、供应商 capex、DRAM spot/contract price |
+| AP/e-beam 竞争 | 增速高但份额/毛利不及预期 | Camtek/Onto/AMAT 订单、qualification、KLA AP 指引与系统 GM |
+| 客户集中 | 单一项目/验收影响季度 | TSMC 19% 历史占比；任何匿名 >10% 客户不应擅自识别 |
+| 产品资格延迟 | TeraBeam、Actinic、glass-core 收入右移 | 具名 POR、repeat order、fleet、HVM 文档，而不是仅“release” |
+| Orbotech 遗留资产 | Specialty/PCB 低利润或再次减值 | 分部利润率、goodwill、传统 PCB/display 收入 |
+| 估值 | 即使业绩增长也可能 P/E/P/S 回归 | forward multiple、利率、实际 EPS 对共识差异 |
+| 技术替代 | integrated/virtual metrology、竞争 actinic/e-beam 降低独立工具份额 | 客户 sampling strategy、竞争产品 HVM、KLA market share/intensity |
+
+## 十、综合判断：公司强、周期强、估值也强
+
+### 10.1 最突出和公司最侧重的业务
+
+1. **第一优先：先进逻辑/HBM 的 BBP optical + e-beam + metrology + reticle 闭环。** 这是最大收入、最高份额、最高定价权和最难替代的组合。
+2. **第二优先：先进封装过程控制。** $1.1B、>70% 增长已从“小业务”变成实质增长引擎，且把前道 KLA 技术复制到 wafer/frame/package/substrate。
+3. **第三优先：服务与数据软件。** $3.126B、95% recurring、24 年工具寿命使其降低周期波动；软件把硬件数据转化为更高 attach 和定价权。
+4. **潜力小业务：TeraBeam 8xx、eSV100/eDRX1/eM200、Serena/Lumina glass-core、hybrid-bond metrology。** 它们单项当前规模小，却可能在 EUV mask、buried defects、200nm pitch 和大尺寸 AI package 上形成下一条曲线。
+
+### 10.2 投资结论
+
+- **业务质量：9/10。** 过程控制龙头、份额极高、研发/installed-base/数据飞轮、FCF 强。
+- **AI 纯度：7.5/10。** FY26 AI-linked 收入估计 43–54%，但不是公司披露；其余成熟节点与服务反而提供稳定性。
+- **未来一年增长可见度：8/10。** $4B Q1 指引、H2 +20%、客户 pull-in、行业 WFE/DRAM 上修、竞争对手 2027 订单均支持强增长；扣分是最新 RPO 未披露且供应约束真实。
+- **竞争地位：8.5/10。** BBP/核心过程控制近垄断；AP/e-beam/reticle 最先进路线的竞争显著强于公司整体份额给人的直觉。
+- **财务健康：8.5/10。** 低资本强度、投资级、净债务约 $1B；AR/库存与大额回购需监控。
+- **估值吸引力：4.5/10。** 约 51x trailing P/E、36x forward P/E、18x sales 要求基准以上执行；“好公司”并不自动等于“好价格”。
+
+**最终判断**：KLA 是 AI 半导体制造链中最优质的“复杂度收费”资产之一。基准情景并不依赖单一 GPU 型号，而依赖 2nm/GAA、HBM4、EUV、先进封装和全球 fab 同时增加过程控制强度。未来一年最可能的限制不是订单不足，而是光学/精密平台、安装验收和客户 fab readiness；最重要的估值风险则是市场已经把相当大一部分 2027 增长提前资本化。只有当 FY26 10-K 证实 RPO 位于或高于本报告区间、Q1 FY27 达成 $4B、Wafer Inspection 重新加速且 AP 保持高于市场增长时，乐观情景才应获得更高权重。
+
+## 十一、研究方法、资料范围与来源
+
+### 11.1 本地行业资料（仅限 `基本面/行业调研/`）
+
+- [半导体检测量测设备行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-07-10.md)：过程控制 TAM、份额、ASP/BOM、毛利率、交期、资格验证和竞争格局。
+- [AI 芯片前道制造设备](../../行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-07-10.md)：WFE、AI attributable capex 与设备强度。
+- [先进逻辑晶圆代工和封装](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-07-10.md)：先进逻辑、代工、封装节点与供应链。
+- [先进封装设备与混合键合](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-07-10.md)：2.5D/3D、hybrid bonding、检测/量测路线。
+- [HBM 与存储测试设备](../../行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-07-10.md)：HBM/DRAM 工艺与设备需求。
+- [高端光罩与先进封装掩模](../../行业调研/晶圆制造_设备_材料_测试/行业调研_高端光罩与先进封装掩模_2026-07-10.md)：EUV reticle、actinic/e-beam inspection。
+- [玻璃基板、TGV 与玻璃检测](../../行业调研/晶圆制造_设备_材料_测试/行业调研_玻璃基板、TGV与玻璃检测_2026-07-11.md)：glass-core/TGV/warpage 潜力业务。
+- [AI 数据中心建设规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)：MW/rack/GPU 标准化和资本内容。
+- [头部 AI 芯片全景与产能释放](../../行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md)：B200/B300/Rubin 数量与节奏。
+- [AI 服务器整机与机架集成](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-07-10.md)：GB300/Rubin rack、功率与 accelerator/MW。
+
+### 11.2 公司与 SEC 一手资料
+
+- [KLA Financial Results 总页](https://ir.kla.com/financial-information/financial-results)
+- [FY26 Q4/全年结果与财务报表](https://ir.kla.com/news-events/press-releases/detail/518/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full)
+- [FY26 Q4 股东信 PDF](https://d1io3yog0oux5.cloudfront.net/_b9ee755a5f60dd0fb3f9e27967aed6af/klatencor/db/1117/10668/letter_to_shareholders/KLA+Earnings+Shareholder+Letter+-+Q4+FY26.pdf)
+- [FY26 Q3 10-Q](https://www.sec.gov/Archives/edgar/data/319201/000031920126000016/klac-20260331.htm)；[FY26 Q2 10-Q](https://www.sec.gov/Archives/edgar/data/319201/000031920126000008/klac-20251231.htm)
+- [FY2025 10-K](https://www.sec.gov/Archives/edgar/data/319201/000031920125000024/klac-20250630.htm)：产品型号、客户、backlog/RPO、合同条款、制造、信用与风险。
+- [2026 Investor Day 页面](https://ir.kla.com/news-events/investor-day-2026)；[主 deck PDF](https://d1io3yog0oux5.cloudfront.net/_b9ee755a5f60dd0fb3f9e27967aed6af/klatencor/db/1166/10653/file/2026+Investor+Day+Master+Final_IR+copy.pdf)；[完整 transcript PDF](https://d1io3yog0oux5.cloudfront.net/_b9ee755a5f60dd0fb3f9e27967aed6af/klatencor/db/1166/10654/file/KLA+Presentation+Transcripts+-+00+All+Presentations.pdf)
+
+### 11.3 行业、客户、会议与竞争对手一手资料
+
+- [SEMI 2026 Mid-Year Equipment Forecast](https://www.semi.org/zh/node/173816)
+- [TSMC Q4 2025 transcript](https://investor.tsmc.com/chinese/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf)
+- [Micron HBM4 HVM](https://investors.micron.com/news-releases/news-release-details/micron-high-volume-production-hbm4-designed-nvidia-vera-rubin)
+- [Samsung HBM4 commercial shipment](https://news.samsung.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing)；[Samsung HBM4E samples](https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples)
+- [imec/EVG ECTC 2026 200nm hybrid bonding](https://www.imec-int.com/en/press/imec-and-ev-group-demonstrate-wafer-wafer-hybrid-bonding-200nm-interconnect-pitch-and-record)
+- [SPIE OVALiS PCA paper](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13981/139813U/Leveraging-principal-component-analysis-for-overlay-variation-and-root-cause/10.1117/12.3090685.full)；[SPIE SpectraShape AI metrology paper](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13981/139814A/AI-driven-metrology-for-electrical-test-via-ellipsometry/10.1117/12.3091117.short)
+- [Onto Dragonfly G5 qualification](https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovations-Dragonfly-G5-System-Qualified-for-Applications-in-2-5D-AI-Packaging/default.aspx)
+- [Camtek 2027 AI/HBM orders](https://www.camtek.com/news-and-events/camtek-receives-over-105-million-multi-system-orders-from-a-tier-1-osat-and-a-leading-hbm-manufacturer/)
+- [Applied Materials 7AP/G7AP](https://investors.appliedmaterials.com/news-releases/news-release-details/applied-materials-introduces-new-systems-accelerate-dram-and)
+
+### 11.4 模型限制
+
+1. 截至报告日，FY26 10-K 尚未发布；FY26 Q4/全年资产负债表和分部收入来自 2026-07-28 未审计结果，产品分解使用整数占比。
+2. AI-linked 收入、季度 RPO/bookings/B2B、取消率、单产品收入/GM/ASP/BOM、美元产能和资格阶段均为 R-est；区间宽度体现披露缺口。
+3. 产品专题收入相互嵌套，尤其 AP、e-beam、TeraBeam、software 与会计产品池不可相加。
+4. 每 MW/rack/GPU/optical-port 数字只是设备销售流量归一化，物理 BOM 为 0；分母对 accelerator 出货与 rack topology 极敏感。
+5. 基准、乐观、极度乐观是条件情景，不是价格目标或概率保证；任何新增 FY26 10-K RPO、具名 POR/订单或出口规则都应触发模型更新。

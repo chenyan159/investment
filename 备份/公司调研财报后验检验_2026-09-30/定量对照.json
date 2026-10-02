@@ -1,0 +1,72 @@
+{
+  "amount_unit": "USD billion for MU and JBL; TWD million for IMOS",
+  "comparison_denominator": "new / old - 1; percentage is difference from frozen baseline, not automatically forecast error",
+  "guidance_warning": "FY27 new management guides are not realized outcomes; MU 240/246 are conditional implications if subsequent quarters grow",
+  "calculations": {
+    "MU": {
+      "q4_actual": 54.229,
+      "q4_guide": 50.0,
+      "fy26_actual": 133.188,
+      "fy26_guide_based": 128.959,
+      "fy27_old_work": 202.16,
+      "fy27_old_range": [
+        170,
+        235
+      ],
+      "fy27_q1_new_guide_mid": 61.5,
+      "fy27_q1_new_guide_low": 60,
+      "fy27_old_capex": 46,
+      "fy27_new_h1_capex": 25,
+      "q3_ar": 31.025,
+      "q4_ar": 36.197,
+      "q3_revenue": 41.456,
+      "q3_weeks": 13,
+      "q4_weeks": 14,
+      "q4_actual_above_guide_pct": 8.457999999999988,
+      "fy26_actual_above_guide_based_pct": 3.279336843492886,
+      "q4_week_normalized_annual_run": 201.422,
+      "fy27_conditional_mid_floor": 246.0,
+      "fy27_conditional_low_floor": 240,
+      "remaining_quarters_avg_to_old_work": 46.88666666666666,
+      "q3_ar_days_proxy": 68.10292840602084,
+      "q4_ar_days_proxy": 65.41345036788435,
+      "capex_guidance_implied_min_gap": 4
+    },
+    "JBL": {
+      "fy26_actual": 35.954,
+      "fy26_old_guide": 35,
+      "q4_actual": 10.616,
+      "q4_old_guide_mid": 9.6,
+      "q4_old_guide_top": 10.0,
+      "fy27_old_work": 41.6,
+      "fy27_new_guide": 44.5,
+      "fy27_cloud_old": 15.2,
+      "fy27_cloud_new": 17.5,
+      "q4_core_op": 0.675,
+      "q1_core_op_guide_mid": 0.622,
+      "q1_revenue_guide_mid": 11.0,
+      "fy26_cfo": 2.002,
+      "fy26_gross_capex": 0.628,
+      "fy26_asset_sale": 0.158,
+      "fy26_actual_above_guide_pct": 2.725714285714287,
+      "q4_actual_above_guide_mid_pct": 10.583333333333345,
+      "q4_actual_above_guide_top_pct": 6.159999999999988,
+      "fy27_guide_above_old_work_pct": 6.9711538461538325,
+      "cloud_share_of_group_guide_gap_pct": 79.31034482758626,
+      "q4_core_opm_pct": 6.358327053504145,
+      "q1_guide_core_opm_pct": 5.654545454545454,
+      "q1_guide_core_opm_change_bp": -70.37815989586909,
+      "fy26_plain_fcf": 1.3739999999999997,
+      "fy26_adjusted_fcf": 1.5319999999999996
+    },
+    "IMOS": {
+      "august_revenue_twd_m": 2786,
+      "august_pretax_twd_m": 530,
+      "august_net_twd_m": 433,
+      "q2_revenue_twd_m": 7383.1,
+      "q2_net_twd_m": 891.7,
+      "august_net_margin_pct": 15.541995692749461,
+      "q2_net_margin_pct": 12.077582587260094
+    }
+  }
+}

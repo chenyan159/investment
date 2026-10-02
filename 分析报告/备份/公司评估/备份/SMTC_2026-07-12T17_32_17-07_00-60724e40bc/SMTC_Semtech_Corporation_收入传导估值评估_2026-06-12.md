@@ -1,0 +1,170 @@
+# 公司收入传导与价值传导评估：Semtech Corporation（SMTC）
+
+> 报告日期：2026-06-12  
+> 主口径：NTM，指从 2026-06-12 往后未来 12 个月 / 未来 4 个财报季度的经营收入、利润和现金流传导。  
+> 本报告只评估经营传导，不输出投资评级、目标价、股价区间或估值倍数判断。  
+> 资料边界：使用 `公司调研/`、`行业调研/` 与 Semtech / SEC / IR 公开资料；未读取、引用或继承 `特征量化/`、Signals、排序或回归结论。  
+> 关键口径：Semtech 未披露 FiberEdge、CopperEdge、HieFo、TVS、AirLink 等单产品完整收入，因此凡无分产品披露的数字均标为“推算区间”或“无法可靠量化”。公司可确认收入锚点优先使用报告分部、端市场收入、财务指引、电话会披露的订单/交付节奏和 10-Q/10-K。
+
+## 1. 一页结论
+- 主口径与补充口径：主口径为 NTM 经营窗口；FY2026、FY2027、长期 CPO / NPO / coherent light / DWDM / 3.2T 只作补充和跟踪，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：Q1 FY2027 净销售额 $291.0M，同比增长 16%、环比增长 6%；Q2 FY2027 公司指引收入 $328.0M +/- $5.0M，环比约 +13%、同比约 +27%。Q1 FY2027 分部收入为 Signal Integrity $102.0M、Analog Mixed Signal and Wireless $100.8M、IoT Systems and Connectivity $88.3M。FY2026 全年收入 $1.050B，最近四季 TTM 约 $1.090B。
+- 重要产品/业务线：1）数据中心光信号完整性平台，含 800G FiberEdge / DirectEdge / Tri-Edge 与 1.6T / 224G linear optics；2）CopperEdge 1.6T ACC / onboard linear equalizer；3）HieFo InP / GaN / CW / DFB 光子器件；4）LoRa / LoRa+ 无线 RF；5）TVS protection / PerSe / force sensing；6）IoT Systems and Connectivity，含 AirLink routers、modules、managed connectivity 与拟剥离 cellular module；7）非数据中心 telecom / PON / broadcast / Pro AV signal integrity。
+- NTM 公司收入四情景：悲观 $1.15B-$1.25B；基准 $1.35B-$1.48B；乐观 $1.52B-$1.68B；极度乐观 $1.78B-$1.95B。相对 TTM $1.090B，基准绝对增量约 $260M-$390M，增速约 +24% 到 +36%。
+- 利润或 EBITDA 四情景：悲观 adjusted EBITDA 约 $220M-$260M；基准 $310M-$365M；乐观 $400M-$485M；极度乐观 $520M-$650M。基准利润扩张主要来自 data center 与 LoRa mix，而不是单纯收入放大。
+- 最大传导瓶颈：1.6T optical / CopperEdge / HieFo 从设计赢单、样品、早期出货转为可确认收入的速度；同时需要 foundry、OSAT、测试、客户认证和 module / cable partner ramp 同步。
+- 最大利润率变量：Signal Integrity 和 AMW 半导体组合毛利率能否维持 60%+，以及 IoT Systems 低毛利业务剥离或结构优化是否顺利。
+- 最大现金流变量：收入增长中的营运资本占用、HieFo / data center 产能扩张、R&D 投入和客户交付节奏。Q1 FY2027 自由现金流 $28.0M，Q2 后若 data center ramp 顺利，基准 NTM FCF 有望扩至 $150M-$210M；若库存和应收占用上升，利润会先于现金流兑现。
+- 可信度：基准为中高；乐观为中；极度乐观为低。原因是公司级 Q1 / Q2 指引为 A 级证据，data center / LoRa 订单和收入节奏较强，但 CopperEdge、HieFo 和 1.6T 分产品收入尚未量化。
+
+## 2. 重要产品清单
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 800G FiberEdge / DirectEdge / Tri-Edge 与当前 data center optical signal integrity | Q1 FY2027 data center end-market $71.6M；FY2026 data center $223M；800G 为主要锚点但单品未披露 | Q1 data center 占总收入 24.6%；Signal Integrity 占 35.1% | 当前增长底座；决定 Q2 指引兑现和 NTM 基准 | A 用于 data center 总收入；B/C 用于 800G 单品拆分 | 进入基准；用 data center 披露值和 Q2 +35% 指引折扣估算 | 3.2T 与更高 lane 速率只作为后续跟踪 |
+| 1.6T FiberEdge / 224G linear TIA / driver / LPO / LRO / XPO / NPO | 已有 design wins 和 Q2 shipment launching；单独收入无法可靠量化 | 当前低，NTM 增量重要 | H2 FY2027 data center 加速的核心新增驱动 | B/C | 小比例进入基准，大部分进入乐观；进入极度乐观需 H2 module ramp 超预期 | NPO / XPO / CPO 规模收入偏 2027-2028 后 |
+| CopperEdge 1.6T ACC / onboard linear equalizer | Q1 已向 cable partners 出货 1.6T IC 用于美国 hyperscaler deployment；金额未披露 | 当前小于 data center 主体；无法可靠量化 | 可能把 SMTC 从 optical front-end 扩展到 active copper silicon | B/C | 低比例进入基准；更多作为乐观增量 | 448G / 3.2T copper、BiDi equalizer 偏后续 |
+| HieFo InP / GaN / CW / DFB lasers 与 gain chips | 2026-03 完成收购，净现金对价约 $29.2M；收入未单独披露；并入 Signal Integrity / data center | 当前小，无法可靠量化 | 上游光子器件和 coherent / CPO / 3.2T 平台能力 | C | 基准只纳入少量已可出货收入；产能释放放入乐观 | coherent light、DWDM CPO laser source 主要是 2028 机会 |
+| LoRa / LoRa+ wireless RF | Q1 FY2027 LoRa enabled net sales $44.5M，环比 +12%、同比 +14%；Q2 目标为 all-time high 且 >15% 顺序增长 | Q1 约 15.3% | 除 data center 外最明确的高毛利增长线 | A/B | 进入基准；LoRa+ 新应用按折扣进入乐观 | AI edge / critical IoT 多媒体传输需观察付费部署 |
+| TVS protection / SurgeSwitch / PerSe / force sensing / Smart Sensing | Q1 high-end consumer $38.4M；AMW 总收入 $100.8M；TVS 产品 YoY 增量披露但单品收入未披露 | high-end consumer 13.2%；AMW 非 LoRa 约 19.3% | 稳定 AMW 毛利和高端客户 content 的重要支撑 | A/C | 进入基准，以季节性和份额提升为主 | Force sensing 协同若量化，可上移 |
+| IoT Systems and Connectivity：AirLink routers、modules、managed connectivity、cellular module divestiture | Q1 FY2027 $88.3M；分部毛利率 35.8%；FY2026 $353.9M | Q1 30.3% | 收入基数大、毛利低，是组合质量的最大抵消项 | A/B | 进入基准，但按低毛利和潜在剥离处理 | 剥离后高毛利 router / software 组合改善需交易落地 |
+| 非数据中心 telecom / PON / broadcast / Pro AV signal integrity | Q1 Signal Integrity 扣除 data center 后约 $30.4M；单品无法可靠量化 | Q1 约 10.4% | 传统和接入侧需求，可抵消或稀释 data center 斜率 | A/C | 进入基准但不作为高增长来源 | PON / DOCSIS / Wi-Fi 7 与 AI 关系为间接，不进入 AI 基准增量 |
+
+## 3. 产品需求四情景
+- 本步口径：本节只评估外部需求池，不评估 SMTC 份额、收入确认、毛利率或公司总收入。需求单位按产品性质选择：data center 用 800G / 1.6T 模块、端口、客户 ramp 和 data center quarterly revenue proxy；CopperEdge 用 1.6T ACC / 224G 短距链路；LoRa 用 LoRa-enabled 芯片/平台出货和垂直应用；IoT Systems 用 router / module / connectivity 项目；legacy access 用运营商接入资本开支和 PON / DOCSIS / Wi-Fi 7 设备周期。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 800G optical signal integrity | Q1 data center $71.6M；800G FiberEdge 是当前 data center anchor；行业侧 2026 年 800G 仍是 AI 后端网络最大出货口径 | 800G 客户库存或 ASP 压力使 demand 从 Q2 年化 $386M 回落到 $280M-$330M run-rate | 800G 维持主力，Q2 35% data center 增长兑现后 H2 稳中有升 | 800G 与 1.6T 不是替代而是叠加，800G 年化维持 $360M-$430M | 800G 供给仍紧，客户 drop-in demand 持续，年化 $420M+ | 需求池从 FY2026 $223M data center 底座向 Q2 年化 $386M+ 抬升 | 基准符合当前指引；乐观高于当前预期 | 公司披露 data center Q2 目标 +35% QoQ；本地光模块资料显示 800G 仍是 2026 最大确定性；反证是 800G ASP / 库存修正 |
+| 1.6T / 224G linear optics | 1.6T shipments launching in Q2，major module makers design wins，H2 module ramps | 1.6T 客户验证后移，NTM 主要停留 design-in，需求低于当前 H2 acceleration 叙述 | Q2 小量、H2 按 major module makers ramp，1.6T 成为新增 AI fabric 升级方向 | 1.6T FRO 与 LRO / LPO 同步放量，H2 data center QoQ 继续上行 | 1.6T 成为新增高端 AI 集群默认端口，2027 提前大规模 | 需求从近零 / 小量导入转为 NTM 重要增量 | 基准为当前预期正常兑现；乐观需要 H2 继续加速 | 行业资料显示 2026 为 1.6T 导入年、2027 1600G back-end port 主流化；反证是 qualification 拉长和互操作复杂 |
+| CopperEdge active copper | Q1 已出货 1.6T IC 给 cable partners；行业 2-5m 短距 1.6T ACC/AEC 仍处早期 | ACC MSA 未完成、客户只评估不转量产，需求停留样品 | 单一 / 少数 hyperscaler deployment 正常推进，2026H2 小批量 | 多客户评估转 design win，onboard EQ 和 ACC 同时扩散 | ACC 在 1.6T 短距 AI rack 中成为主流候选，多个云厂标准化 | 需求从样品 / 初期出货转为 $20M-$150M+ NTM 可见机会 | 基准低于市场热叙事；乐观高于当前可确认收入 | 本地高速铜缆资料显示 1.6T ACC/AEC 是 2026H2-2027 主线；反证是 MSA、BER、温漂、FEC latency 或客户多供压价 |
+| HieFo InP / GaN / CW / DFB | HieFo 产品已并入 data center end-market，需求超过供应；capacity expansion 进行中 | 产能和良率不足，NTM 只贡献小额收入且拖累 SI margin | 2026 年底前部分产能释放，支持 1.6T / 3.2T 光模块的少量收入 | 产能 2x-3x 准备顺利，coherent / tunable laser 客户拉货提前 | coherent light / CPO DWDM laser source 在 NTM 提前形成可观订单 | 需求从已知 supply shortage 转为取决于产能扩张 | 基准为小额收入；极度乐观多为上限 | 公司称 GaN demand exceeds supply、扩产 on schedule；反证是产能、良率、客户 qual 和 2028 才量产的 coherent timing |
+| LoRa / LoRa+ | Q1 LoRa $44.5M，Q2 目标 >15% QoQ；smart utilities、building、city、asset management 扩张 | 垂直项目推迟，Q2 高点后回到 $45M-$48M quarterly run-rate | Q2 >$51M 后维持 $50M+ run-rate，NTM 稳步增长 | LoRa+ 在 public safety、healthcare、industrial AI sensing 中打开高 ASP 用例 | LoRa+ 把 LoRa 从低速传感扩到音频/图像类 critical IoT，NTM 明显超预期 | quarterly run-rate 从 $44.5M 到 >$51M，再向 $55M-$70M 扩张 | 基准符合当前指引；乐观需要新应用付费 | 公司披露 LoRa Q1 +14% YoY、Q2 all-time high；反证是 IoT 项目碎片化和客户部署周期 |
+| TVS / Smart Sensing | Q1 high-end consumer $38.4M，TVS revenue growth outpacing handset volumes，force sensing 协同 | 手机和消费电子季节性弱，proximity sensing 继续下滑 | 高端客户 content gain 抵消手机单位疲弱，Q2 季节性增长 | SurgeSwitch、PerSe、force sensing 拉动更高 content | 高端品牌多品类放量，车载/工业同步扩张 | 需求从 $38.4M consumer quarterly anchor 向 $40M-$50M run-rate 变化 | 基准为当前预期；乐观需要 content gain | 10-Q 披露 AMW 增量来自 TVS 和 LoRa，proximity sensing 下滑是反证 |
+| IoT Systems and Connectivity | Q1 $88.3M，AirLink routers 反馈正面，managed connectivity 同比下降；cellular module divestiture final stages | 剥离导致收入减少、modules 低毛利业务疲弱 | AirLink / router 稳定，剥离降低收入但改善组合 | 高毛利 router / software 增长抵消 module 剥离 | 剥离顺利且 retained IoT 高毛利业务加速 | 需求基数从约 $88M quarterly run-rate 向 $65M-$100M 区间重组 | 基准不把低毛利收入视作高质量增长 | 分部毛利率仅 35.8%；反证是 managed connectivity 下滑和剥离时点 |
+| Legacy telecom / PON / broadcast / Pro AV SI | Q1 SI 非 data center 约 $30.4M；telecom +$5.1M YoY、broadcast +$3.3M YoY | 运营商 CapEx / broadcast 周期回落，收入低于 Q1 run-rate | 保持低个位数到中个位数增长，不跟随 AI data center 高增 | PON / telecom / Pro AV recovery 提供额外支撑 | PON / DOCSIS / Wi-Fi 7 silicon demand 同步加速但不进入 AI 主线 | 从 $30M quarterly anchor 到 $25M-$40M run-rate | 基准低增长；AI 关联不能自动上修 | 本地宽带资料显示 PON/DOCSIS/Wi-Fi 7 与 AI 数据中心为二阶关系；反证是运营商预算和认证周期 |
+
+## 4. 可收入化暴露与收入基数
+- 本步口径：本节只判断外部需求中哪些能在 SMTC NTM 收入表中确认，以及当前可收入化基数。可参与需求不等于可确认收入；行业 TAM、客户 CapEx、模块总金额和云厂预算不得直接进入 SMTC 基准收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 800G optical signal integrity | data center Q1 $71.6M；FY2026 data center $223M；Q2 target +35% QoQ | 直接 | 高毛利半导体，受 SI margin 影响 | $240M-$300M | $300M-$360M | $360M-$430M | $420M-$500M | 基准符合 Q2 guide 和现有 run-rate；悲观低于当前 acceleration | A/B | 是 | data center 收入已披露；800G 为管理层明确锚点 | 进入 NTM 基准主口径 |
+| 1.6T / 224G linear optics | 设计赢单、Q2 shipment launching、H2 ramp；单品收入未披露 | 直接 | 高毛利，预计 accretive to SI / semiconductor GM | $20M-$50M | $70M-$120M | $140M-$220M | $220M-$300M | 基准为保守折扣；乐观高于当前已确认收入 | B/C | 是，折扣纳入 | major module makers design wins + backlog，但未披露 product revenue | 基准小比例；乐观为主要上修项 |
+| CopperEdge active copper | Q1 出货给 cable partners for U.S. hyperscaler deployment；金额未披露 | 直接 | silicon / linear EQ 高毛利，但需客户量产 | $0-$20M | $20M-$50M | $80M-$140M | $150M-$230M | 基准低于主题热度；乐观需多客户设计赢单 | B/C | 是，低比例 | 已开始出货但 MSA / 多客户 adoption 未完成 | 基准低额，乐观/极度乐观关键 |
+| HieFo InP / GaN / CW / DFB | 收购完成；并入 SI / data center；收入未披露 | 直接 | 产能爬坡期毛利不确定，成熟后高壁垒 | $0-$10M | $10M-$30M | $45M-$85M | $90M-$150M | 基准只承认可见出货；2028 coherent 不进 NTM | C | 是，极低比例 | 已收购且有需求/产能披露，但客户收入未量化 | NTM 基准少量；大部分为乐观或附录跟踪 |
+| LoRa / LoRa+ | Q1 LoRa $44.5M；Q2 target >15% QoQ | 直接 | AMW 高毛利，software / ecosystem 粘性支撑 | $160M-$185M | $205M-$240M | $250M-$300M | $320M-$380M | 基准符合 current target；极度乐观需 LoRa+ 新应用快速付费 | A/B | 是 | 已披露 product net sales 和 Q2 目标 | 进入 NTM 基准 |
+| TVS / Smart Sensing | high-end consumer Q1 $38.4M；AMW non-LoRa 约 $56M quarterly proxy | 直接 | 中高毛利，受高端客户 content 与季节性影响 | $190M-$215M | $220M-$255M | $260M-$315M | $330M-$390M | 基准为正常季节性与 content gain | A/C | 是 | AMW 分部收入已披露；TVS 增量披露但单品收入未披露 | 进入基准，但不作为主要超预期源 |
+| IoT Systems and Connectivity | Q1 $88.3M；FY2026 $353.9M；GM 35.8%；cellular module divestiture final stages | 直接 | 低毛利，剥离可改善利润率但压收入 | $250M-$310M | $300M-$350M | $360M-$410M | $420M-$470M | 基准考虑剥离和低毛利；收入高不等于价值高 | A/B | 是 | 分部收入和毛利已披露；剥离进展为管理层披露 | 进入基准，但利润质量折扣 |
+| Legacy telecom / PON / broadcast / Pro AV SI | Q1 SI minus data center 约 $30.4M；telecom / broadcast YoY 增量披露 | 直接/间接 | SI 毛利较高，但需求周期性强 | $85M-$105M | $115M-$135M | $135M-$165M | $165M-$195M | 基准为低增长，不因 AI 主题上修 | A/C | 是 | 分部和 end-market bridge 可推算；单品未披露 | 进入基准，主要稳定底座 |
+| CPO / NPO / DWDM coherent light / 3.2T beyond NTM | 产品路线与样品/开发披露 | 间接/远期 | 潜在高毛利，但时间表偏 2028+ | 无法可靠量化 | 0 | 跟踪项 | 跟踪项 | 不进入当前预期 | D/E | 否 | 管理层明确 coherent light production 更偏 2028；未有 NTM 收入表路径 | 移入附录/后续跟踪 |
+
+## 5. 产品级收入和利润贡献
+- 本步口径：本节从需求和收入基数出发，评估各产品在 NTM 内对 SMTC 的收入和利润贡献。利润贡献为产品级毛利和经营质量方向，不等同于公司净利润；公司层面的 EBITDA / 净利润在第 6 节汇总。所有产品区间均为经营模型估算，不是公司正式指引。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 800G optical signal integrity | 悲观 | $240M-$300M | 毛利约 $145M-$185M | SI margin 下行或持平 | 低于当前 Q2 + H2 加速预期 | Q1 data center $71.6M 已确认 | 保留悲观 | 800G ASP 下行、客户库存、module 份额变化 |
+| 800G optical signal integrity | 基准 | $300M-$360M | 毛利约 $185M-$225M | 稳定高毛利 | 符合当前预期 | Q2 data center 目标约 $96.7M | 保留基准 | 供应和客户拉货节奏 |
+| 800G optical signal integrity | 乐观 | $360M-$430M | 毛利约 $225M-$275M | mix 改善 | 高于当前预期 | 800G LPO / FRO 延续强需求 | 保留乐观 | ASP 压缩可能吞噬收入上修 |
+| 800G optical signal integrity | 极度乐观 | $420M-$500M | 毛利约 $260M-$325M | 高位维持 | 显著高于当前预期 | 客户 drop-in demand 与 sole-source sockets | 保留为上限 | 800G 与 1.6T 可能替代部分需求 |
+| 1.6T / 224G linear optics | 悲观 | $20M-$50M | 毛利约 $10M-$30M | 初期费用拖累 | 低于当前 H2 ramp 叙事 | 已有 design wins 但收入未量化 | 保留悲观 | qualification、interop、测试和 module ramp 延迟 |
+| 1.6T / 224G linear optics | 基准 | $70M-$120M | 毛利约 $45M-$78M | accretive | 符合当前可见路径但有折扣 | Q2 shipments launching；H2 ramps | 保留基准 | 未披露分产品 backlog |
+| 1.6T / 224G linear optics | 乐观 | $140M-$220M | 毛利约 $90M-$145M | 上行 | 高于当前基准 | major module makers 设计赢单和 strong backlog | 保留乐观 | 客户架构可能在 FRO / LPO / LRO 间切换 |
+| 1.6T / 224G linear optics | 极度乐观 | $220M-$300M | 毛利约 $145M-$200M | 明显扩张 | 大幅高于当前预期 | 1.6T 成为新增 AI fabric 默认端口 | 下移为上限 | NTM 内需多客户量产，不只是样品 |
+| CopperEdge active copper | 悲观 | $0-$20M | 毛利 $0-$12M | 无明显贡献 | 低于当前积极表述 | Q1 有出货，但金额未披露 | 保留悲观 | MSA 未完成、客户只评估不采购 |
+| CopperEdge active copper | 基准 | $20M-$50M | 毛利约 $12M-$32M | 小幅增厚 | 符合早期部署口径 | 美国 hyperscaler deployment + cable partners | 保留基准 | 单客户 / 单 partner 上限 |
+| CopperEdge active copper | 乐观 | $80M-$140M | 毛利约 $50M-$90M | 高毛利增量 | 高于当前基准 | 多 hyperscaler / enterprise evaluation | 保留乐观 | 多供压价和 link margin 风险 |
+| CopperEdge active copper | 极度乐观 | $150M-$230M | 毛利约 $95M-$150M | 非线性上修 | 显著高于当前预期 | 1.6T short-reach ACC 规模采用 | 下移为乐观上限 | 需要 MSA、量产线缆生态和客户标准化同时成立 |
+| HieFo InP / GaN / CW / DFB | 悲观 | $0-$10M | 毛利 $0-$5M 或短期拖累 | ramp 拖累 SI margin | 低于平台叙事 | Q1 是并购后首季 | 保留悲观 | 产能、良率、客户 qualification |
+| HieFo InP / GaN / CW / DFB | 基准 | $10M-$30M | 毛利约 $4M-$15M | 低到中 | 小额进入当前预期 | demand exceeds supply，capacity expansion on schedule | 保留基准 | 收入未披露，NTM 规模缺口大 |
+| HieFo InP / GaN / CW / DFB | 乐观 | $45M-$85M | 毛利约 $22M-$50M | 明显改善 | 高于当前可确认收入 | 1.6T / 3.2T optical building block | 保留乐观 | 扩产速度和客户验收 |
+| HieFo InP / GaN / CW / DFB | 极度乐观 | $90M-$150M | 毛利约 $50M-$95M | 高壁垒上修 | 大幅高于当前预期 | coherent / CW / DFB 客户提前量产 | 移入附录跟踪 | 管理层将 coherent high-volume 更偏 2028 |
+| LoRa / LoRa+ | 悲观 | $160M-$185M | 毛利约 $90M-$110M | 稳定但不扩张 | 低于 Q2 >15% 延续预期 | Q1 $44.5M 已确认 | 保留悲观 | IoT 项目碎片化、预算推迟 |
+| LoRa / LoRa+ | 基准 | $205M-$240M | 毛利约 $120M-$145M | AMW mix 支撑 | 符合当前预期 | Q2 target all-time high；LoRa+ 2.6Mbps | 保留基准 | 新应用是否真实付费 |
+| LoRa / LoRa+ | 乐观 | $250M-$300M | 毛利约 $150M-$185M | 上行 | 高于当前基准 | smart utilities / building / city / asset management 扩张 | 保留乐观 | 客户认证和渠道扩张速度 |
+| LoRa / LoRa+ | 极度乐观 | $320M-$380M | 毛利约 $200M-$240M | 高 | 显著高于当前预期 | LoRa+ 成为 critical IoT / edge AI 标准方案之一 | 下移为上限 | NTM 时间表证据不足 |
+| TVS / Smart Sensing | 悲观 | $190M-$215M | 毛利约 $105M-$125M | 小幅下行 | 低于当前份额提升预期 | Proximity sensing 下滑 | 保留悲观 | handset units 和 ASP 压力 |
+| TVS / Smart Sensing | 基准 | $220M-$255M | 毛利约 $125M-$150M | 稳定 | 符合当前预期 | TVS sales growth and high-end consumer +8% YoY | 保留基准 | content gain 是否覆盖终端周期 |
+| TVS / Smart Sensing | 乐观 | $260M-$315M | 毛利约 $150M-$190M | 上行 | 高于当前预期 | SurgeSwitch、PerSe、force sensing 协同 | 保留乐观 | 新品贡献未量化 |
+| TVS / Smart Sensing | 极度乐观 | $330M-$390M | 毛利约 $195M-$240M | 明显上修 | 显著高于当前预期 | 多品类高端客户扩散 | 下移为乐观上限 | 消费电子周期不支持非线性上修 |
+| IoT Systems and Connectivity | 悲观 | $250M-$310M | 毛利约 $85M-$115M | 低毛利，可能压 op margin | 低于当前 run-rate | managed connectivity 下滑，剥离影响 | 保留悲观 | divestiture 收入缺口与低毛利 |
+| IoT Systems and Connectivity | 基准 | $300M-$350M | 毛利约 $105M-$135M | 稳定低位 | 符合当前组合优化预期 | Q1 $88.3M；AirLink momentum | 保留基准 | 剥离交易条款和 retained scope |
+| IoT Systems and Connectivity | 乐观 | $360M-$410M | 毛利约 $135M-$165M | 小幅改善 | 高于当前基准 | AirLink routers / management software 转高毛利 | 保留乐观 | cellular modules 若保留会稀释质量 |
+| IoT Systems and Connectivity | 极度乐观 | $420M-$470M | 毛利约 $165M-$195M | 改善 | 高于当前预期 | retained router / software 高增长且剥离顺利 | 下移为上限 | 低毛利硬件 pass-through 限制利润 |
+| Legacy telecom / PON / broadcast / Pro AV SI | 悲观 | $85M-$105M | 毛利约 $50M-$65M | 稳中下行 | 低于当前 Q1 implied run-rate | 运营商预算周期 | 保留悲观 | telecom / PON / broadcast 订单推迟 |
+| Legacy telecom / PON / broadcast / Pro AV SI | 基准 | $115M-$135M | 毛利约 $70M-$85M | 稳定 | 符合当前预期 | Q1 telecom / broadcast YoY 增量 | 保留基准 | AI 关联弱，不能上修太多 |
+| Legacy telecom / PON / broadcast / Pro AV SI | 乐观 | $135M-$165M | 毛利约 $85M-$105M | 小幅上行 | 高于当前预期 | PON / telecom recovery | 保留乐观 | 宽带接入设备整体低增长 |
+| Legacy telecom / PON / broadcast / Pro AV SI | 极度乐观 | $165M-$195M | 毛利约 $105M-$125M | 上行但非主驱动 | 高于当前预期 | 多端市场同步恢复 | 下移为乐观上限 | 不具备 AI data center 非线性传导 |
+
+## 6. 公司收入和利润四情景
+- 本步口径：本节把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、adjusted EBITDA / adjusted net income 和自由现金流方向。公司层面已检查 product overlap：data center 光信号、CopperEdge 和 HieFo 均属于 Signal Integrity / data center 大框架，汇总时以公司收入区间而非简单相加最大值处理；IoT divestiture 不把低毛利收入保留和剥离收益重复计算。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | $1.15B-$1.25B | +5% 到 +15% vs TTM $1.090B；比 FY2026 +10% 到 +19% | 低于 Q2 指引隐含的全年加速；Q2 可兑现但 H2 data center 斜率下修 | 50.5%-52.0% | Adj operating margin 16.0%-18.5% | Adj EBITDA $220M-$260M；Adj NI $145M-$190M | FCF $90M-$130M；营运资本和 ramp capex 吞噬部分利润 | 中 | 1.6T / CopperEdge 延迟，IoT 剥离压收入但未立即改善利润 |
+| 基准公司 | $1.35B-$1.48B | +24% 到 +36% vs TTM；比 FY2026 +29% 到 +41% | 接近当前 Q2 guide、data center acceleration、LoRa Q2 high 和正常 H2 ramp | 53.5%-55.0% | Adj operating margin 20.5%-22.5% | Adj EBITDA $310M-$365M；Adj NI $220M-$280M | FCF $150M-$210M；现金转换改善但 R&D 与产能扩张仍占用 | 中高 | data center 订单到收入、半导体产品 GM 60%+、IoT 组合优化 |
+| 乐观公司 | $1.52B-$1.68B | +39% 到 +54% vs TTM；比 FY2026 +45% 到 +60% | 高于当前正常兑现；需 Q3/Q4 data center 继续超 Q2 年化 run-rate | 55.5%-57.0% | Adj operating margin 23.0%-26.0% | Adj EBITDA $400M-$485M；Adj NI $300M-$390M | FCF $230M-$310M；高毛利收入释放经营杠杆 | 中 | 1.6T optical、CopperEdge 多客户转量产，LoRa+ 新应用付费 |
+| 极度乐观公司 | $1.78B-$1.95B | +63% 到 +79% vs TTM；比 FY2026 +70% 到 +86% | 显著高于当前预期，只能作为 NTM 上限 | 57.5%-60.0% | Adj operating margin 26.0%-30.0% | Adj EBITDA $520M-$650M；Adj NI $410M-$540M | FCF $330M-$450M；若营运资本受控则现金流非线性上修 | 低 | data center 需求、公司捕获、产能/测试、客户验收和 HieFo ramp 同时突破 |
+
+汇总判断：
+
+- 基准不是把 AI 光模块行业增速直接套到 SMTC，而是从 Q1 $71.6M data center、Q2 约 $96.7M data center target、LoRa $44.5M 与 Q2 >15% sequential target、IoT $88.3M run-rate 折算。
+- 悲观不是“行业没有长期空间”，而是 NTM 内公司收入确认、1.6T / CopperEdge 客户 ramp 或 IoT 组合优化低于当前预期。
+- 乐观必须来自公司特定证据：1.6T module maker design wins、CopperEdge hyperscaler deployment、LoRa+ all-time-high 目标、semiconductor product GM 上行，而不是来自云厂 CapEx 总额。
+- 极度乐观需要多个环节同时成立，当前更像可验证上限，不是主判断。
+
+## 7. 证据校准、反证和可信度
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一个风险只在实际影响的层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 FY2027 record revenue $291.0M 与 Q2 guide $328.0M | 公司汇总 / 收入基数 | 抬高 NTM 下限，支持 $1.35B+ 基准 | Q2 adj GM 54.0%、adj op margin 21.9% 支持 operating leverage | Q1 FCF $28.0M，Q2 后若营运资本受控可改善 | 基准保留；悲观不能低于已披露近端路径太多 |
+| Data center Q1 $71.6M、Q2 目标 +35% QoQ | 需求 / 产品贡献 / 公司汇总 | 将 data center NTM 基准从 FY2026 $223M 上修到 $430M-$520M 区间 | SI / semiconductor mix 支撑总 GM | 需要 foundry、OSAT、测试和客户拉货 | 基准保留，乐观保留 |
+| 1.6T optical design wins 与 H2 module ramps | 产品贡献 | 允许 1.6T 小比例进入基准，大部分进入乐观 | 1.6T portfolio 被管理层称对 SI / semiconductor GM 有增厚 | 客户 qualification 和收入确认是关键 | 基准折扣纳入；极度乐观下移为上限 |
+| CopperEdge Q1 开始出货 1.6T IC | 收入基数 / 产品贡献 | 证明不是纯主题相关，但金额未披露 | silicon / linear EQ 毛利可能较高 | MSA、cable partner、hyperscaler deployment 决定速度 | 基准低额纳入；乐观保留；极度乐观下移 |
+| HieFo acquisition 与 demand exceeds supply | 收入基数 / 利润率 / 执行 | 已并入 SI / data center，但当前收入无法量化 | ramp 初期可能拖累 SI GM，成熟后提高壁垒 | 产能扩张、良率、客户 sampling 到量产 | 基准低额纳入；coherent / CPO 2028 机会移入附录 |
+| LoRa Q1 $44.5M、Q2 >15% sequential target | 产品贡献 / 公司利润 | 支持 LoRa NTM $205M-$240M 基准 | AMW 高毛利 mix 改善 | IoT 垂直项目交付节奏 | 基准保留，乐观保留 |
+| TVS / high-end consumer seasonality 与 proximity sensing 下滑 | 产品贡献 | TVS 正向抵消 sensing 下滑 | AMW margin 稳定但不能非线性扩张 | 消费电子库存周期 | 基准保留，极度乐观下移 |
+| IoT Systems 分部 $88.3M、GM 35.8%、cellular module divestiture final stages | 公司组合 / 利润率 | 剥离可能压收入，但改善质量 | 低毛利收入不应等同高价值收入 | 交易时点和 retained scope 影响 FCF | 在公司组合层处理一次，不重复惩罚 data center |
+| 本地行业资料：AI optical、DSP/TIA/CDR、AEC/ACC 高景气 | 需求层 | 支持需求池强，但不直接进 SMTC 收入 | 高端芯片利润池优于低端组装 | 客户认证和 supply chain 决定兑现 | 只用于第一步需求和反证，不直接上调收入 |
+| 客户集中、ASP、库存、qualification 风险 | 对应层级 | 影响 data center / CopperEdge / 1.6T 的确认速度 | ASP 与多供压价影响毛利 | 推迟验收会推高库存与应收 | 在对应产品层处理，不在公司层重复扣减 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Q2 指引兑现但 H2 data center 斜率下修，IoT 组合优化拖累收入 | Q1 / Q2 指引已经抬高近端收入下限；LoRa 与 data center 均强 | 1.6T / CopperEdge / HieFo 未完全转收入，IoT divestiture 不确定 | 保留 | 悲观下限，不是主情景 | 中 | IoT 低毛利只在公司组合层处理，不再压低 data center 产品结论 |
+| 基准 | 当前预期正常兑现：Q2 guide、data center acceleration、LoRa Q2 high、IoT 稳定或轻微重组 | A 级分部收入、Q2 财务指引、data center / LoRa 端市场收入披露 | 1.6T / CopperEdge / HieFo 分产品收入未披露，需折扣 | 保留 | 最可能情景 | 中高 | 客户认证风险已在 1.6T / CopperEdge 产品层处理，不再重复降低公司基准 |
+| 乐观 | 1.6T optical、CopperEdge、LoRa+ 至少一项明确超基准，且 mix 改善 | major module design wins、CopperEdge early shipment、LoRa+ target、semiconductor GM guidance | 需要客户量产、MSA / interop、foundry / OSAT / testing capacity | 保留 | 可验证乐观情景 | 中 | 行业需求强只作为需求证据，不能单独把 SMTC 拉到乐观 |
+| 极度乐观 | data center 需求、公司捕获、利润质量、执行质量同时突破 | Q2 guide 强、backlog / booking 强、R&D 与产能扩张进行中 | CopperEdge 多客户量产、HieFo 产能、1.6T LPO/LRO、coherent timing 仍缺定量收入 | 下移 | 极度乐观收入上限；利润上限不进入主判断 | 低 | HieFo 产能风险只限制 HieFo / 极度乐观，不重复惩罚 LoRa 或 TVS |
+
+## 8. 结论
+- 最可能情景：基准公司情景。NTM 收入 $1.35B-$1.48B，adjusted EBITDA $310M-$365M，自由现金流 $150M-$210M。收入主传导来自 data center optical signal integrity 从 FY2026 $223M 和 Q1 $71.6M / Q2 约 $96.7M 目标向 $430M-$520M NTM 区间上行；LoRa 从 Q1 $44.5M 和 Q2 >15% sequential target 形成第二增长支撑；IoT Systems 贡献收入但利润质量较低。
+- 利润/现金流结论：基准利润质量优于收入增速的前提是 semiconductor product gross margin 维持 60%+、Q2 adjusted GM 54% 附近兑现、R&D 增量不完全吞噬收入杠杆。现金流会滞后于收入和 EBITDA，主要因为 HieFo / 1.6T / CopperEdge ramp 需要产能、测试和营运资本。
+- 主要传导瓶颈：从“行业需求强”到“SMTC 可确认收入”的瓶颈依次是客户 socket / design win、module / cable partner 量产、foundry / OSAT / testing capacity、验收和收入确认。CopperEdge 和 HieFo 是最大上行项，也是最大证据折扣项。
+- 乐观情景成立条件：Q2 data center 达到或超过约 $96M-$100M；Q3 指引继续显示 data center QoQ 加速；1.6T optical 在 H2 从 design wins 转为显性收入；CopperEdge 不止单一美国 hyperscaler deployment，开始多个客户 design win；LoRa Q2 之后保持 $50M+ quarterly run-rate；semiconductor product GM 高于 62% 附近。
+- 极度乐观情景成立条件：1.6T FRO / LPO / LRO、CopperEdge ACC / onboard EQ、HieFo InP / GaN / CW laser、LoRa+ 同时在 NTM 内放量；新增收入主要来自高毛利 semiconductor / optical components，而不是低毛利 IoT hardware；capacity expansion 和客户验收没有明显推迟。
+- 悲观情景触发条件：Q2 data center 未达到管理层 +35% sequential 目标；Q3 / Q4 data center 指引不再加速；1.6T major module maker ramp 后移；CopperEdge MSA 或客户互操作失败；HieFo 扩产拖累 SI gross margin；cellular module divestiture 造成收入缺口但 retained IoT 毛利没有改善。
+- 后续跟踪数据：Q2 FY2027 实际 data center 收入、Signal Integrity gross margin、total semiconductor products GM、LoRa quarterly revenue、IoT divestiture 是否完成、CopperEdge 客户数量 / MSA 进度、1.6T optical product revenue 或 backlog 量化、HieFo capacity expansion 和 gross margin、库存和应收账款变化、Q3 FY2027 guidance。
+
+## 附录：来源和补充口径
+- 经营数据日期：Semtech Q1 FY2027 截至 2026-04-26，发布 2026-05-26；10-Q filed 2026-05-27；本报告生成日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Semtech Q1 FY2027 results，2026-05-26：https://www.semtech.com/company/press/semtech-announces-first-quarter-of-fiscal-year-2027-results
+  - Semtech FY2027 Q1 Form 10-Q，period ended 2026-04-26：https://www.sec.gov/Archives/edgar/data/88941/000008894126000013/smtc-20260426.htm
+  - Semtech FY2026 Form 10-K，period ended 2026-01-25：https://www.sec.gov/Archives/edgar/data/88941/000008894126000005/smtc-20260125.htm
+  - Semtech Q1 FY2027 earnings call transcript，2026-05-26：https://www.fool.com/earnings/call-transcripts/2026/05/26/semtech-smtc-q1-2027-earnings-transcript/
+  - Semtech Q4 / FY2026 results，2026-03-16：https://www.semtech.com/company/press/announces-fourth-quarter-of-fiscal-year-2026-results
+  - Semtech HieFo acquisition press release，2026-03-03：https://www.semtech.com/company/press/semtech-expands-data-center-portfolio-with-acquisition-of-hiefo-corporation
+  - Semtech OFC 2026 optical / active copper interconnects：https://blog.semtech.com/ofc-2026-semtech-advances-the-future-of-ai-data-center-optical-and-active-copper-interconnects
+- 项目内公司资料：
+  - `公司调研/AI网络_光互联_连接器/SMTC_Semtech Corporation_公司调研_2026-06-11.md`
+- 项目内行业资料：
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_宽带接入、PON、DOCSIS 4.0与Wi-Fi 7_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 公司收入 $1.050B，分部收入为 Signal Integrity $322.6M、AMW $373.4M、IoT Systems $353.9M；该口径用于收入基数，不替代 NTM。
+  - Q2 FY2027 指引 $328M +/- $5M 是最强 near-term 锚；本文不把 Q2 年化简单等同 NTM，只作为当前预期的一部分。
+  - CPO / NPO / XPO / DWDM / coherent light / 3.2T 是平台化机会，其中 HieFo coherent light 高量产更偏 2028，因此不进入 NTM 基准收入。
+  - 市场一致预期只用于“相对当前预期”的辅助判断；本报告未使用股价、P/E、P/S、EV/EBITDA 或目标价作为经营价值传导证据。

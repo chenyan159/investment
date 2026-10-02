@@ -1,0 +1,95 @@
+{
+  "ratingChangedCells": 51,
+  "commonInputs": 51,
+  "changedCommonInputs": [],
+  "structure": [
+    {
+      "version": "旧报告",
+      "chars": 623423,
+      "codeChars": 108377,
+      "codeFraction": 0.1738418377249476
+    },
+    {
+      "version": "新报告",
+      "chars": 631273,
+      "codeChars": 99785,
+      "codeFraction": 0.15806948816122343
+    }
+  ],
+  "planSha": "5c8fad4ecaa90e9b266eb870bbd25db5495b2cbcfd0b492f038f0abafca31238",
+  "prompts": [
+    {
+      "ticker": "SOMMY",
+      "containsExactInstantiatedPlan": true
+    },
+    {
+      "ticker": "PSIX",
+      "containsExactInstantiatedPlan": true
+    },
+    {
+      "ticker": "ET",
+      "containsExactInstantiatedPlan": true
+    },
+    {
+      "ticker": "SPACEX",
+      "containsExactInstantiatedPlan": true
+    },
+    {
+      "ticker": "GOOGL",
+      "containsExactInstantiatedPlan": true
+    },
+    {
+      "ticker": "MU",
+      "containsExactInstantiatedPlan": true
+    },
+    {
+      "ticker": "CRWV",
+      "containsExactInstantiatedPlan": true
+    },
+    {
+      "ticker": "SNDK",
+      "containsExactInstantiatedPlan": true
+    },
+    {
+      "ticker": "AVGO",
+      "containsExactInstantiatedPlan": true
+    },
+    {
+      "ticker": "CRDO",
+      "containsExactInstantiatedPlan": true
+    }
+  ],
+  "arithmetic": {
+    "checkedCells": 60,
+    "maxErrorPP": 0.06206896551725549,
+    "overPointTwoPP": []
+  },
+  "controlledPrice": {
+    "AVGO": {
+      "oldPrice": 357.9,
+      "newPrice": 369.35,
+      "priceChangePct": 3.1992176585638576,
+      "newBaseThreeYearValue": 358.74,
+      "distribution": 7.8,
+      "returnAtOldPricePct": 2.4140821458508155,
+      "returnAtNewPricePct": -0.7607959929606056
+    },
+    "CRWV": {
+      "oldPrice": 89.36,
+      "newPrice": 102.86,
+      "priceChangePct": 15.10743061772606,
+      "newBaseThreeYearAtOldPrice": [
+        -88.56311548791406,
+        -58.21396598030438
+      ]
+    }
+  },
+  "sommyBridge": {
+    "oldParentEV": 1229.8,
+    "newParentEV": 1952.6000000000001,
+    "oldParentNetDebt": 745,
+    "newParentNetDebt": 633.9,
+    "nonOperatingAssetChange": -30,
+    "newParentEquity": 1493.7000000000003
+  }
+}

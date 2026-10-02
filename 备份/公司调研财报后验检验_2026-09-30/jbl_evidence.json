@@ -1,0 +1,116 @@
+{
+  "symbol": "JBL",
+  "report_date": "2026-09-22",
+  "report_path": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\JBL_Jabil_Inc_公司调研_2026-09-22.md",
+  "report_sha256": "5744fa4223d780554287177a4132d11a76889da959f15913b969c4f15f216b40",
+  "cutoff_local": "2026-09-30 20:20:38 PDT",
+  "new_earnings_release_date": "2026-09-30",
+  "fiscal_period_end": "2026-08-31",
+  "release_type": "preliminary unaudited actual results",
+  "sources": {
+    "release": "https://investors.jabil.com/news/news-details/2026/Jabil-Posts-Fourth-Quarter-and-Fiscal-Year-2026-Results/default.aspx",
+    "presentation": "https://s27.q4cdn.com/276975351/files/content_files/Q4-FY26-Investor-Briefing-Presentation-Final.pdf",
+    "sec_8k": "https://www.sec.gov/Archives/edgar/data/898293/000162828026063890/jbl-20260930.htm",
+    "webcast": "https://event.webcasts.com/starthere.jsp?ei=1775816&tp_key=48e79423b2"
+  },
+  "unit": "USD billions except EPS and ratios",
+  "fy26_actual": {
+    "revenue": 35.954,
+    "q4_revenue": 10.616,
+    "core_op_income": 2.069,
+    "q4_core_op_income": 0.675,
+    "gaap_op_income": 1.704,
+    "q4_gaap_op_income": 0.602,
+    "core_eps": 13.09,
+    "q4_core_eps": 4.4,
+    "cfo": 2.002,
+    "capex_gross": 0.628,
+    "asset_sales": 0.158,
+    "ordinary_fcf": 1.374,
+    "adjusted_fcf": 1.532
+  },
+  "original_fy26_inherited_management_guidance": {
+    "revenue": 35,
+    "core_margin": 0.058,
+    "core_eps": 12.7,
+    "adjusted_fcf_floor": 1.4,
+    "q4_revenue_range": [
+      9.2,
+      10.0
+    ],
+    "q4_core_op_income_range": [
+      0.589,
+      0.649
+    ]
+  },
+  "original_fy27_work_path": {
+    "revenue_supported_range": [
+      40,
+      43
+    ],
+    "revenue": 41.6,
+    "core_op_income": 2.5672,
+    "core_margin": 0.061711538461538464,
+    "ordinary_fcf": 1.437,
+    "adjusted_fcf": 1.517,
+    "cloud": 15.2,
+    "capital_equipment": 3.6,
+    "network": 4.2,
+    "auto": 4.4,
+    "healthcare": 5.8,
+    "energy": 2.9,
+    "connected_living": 2.5,
+    "digital_commerce": 3.0,
+    "explicit_q1_forecast": false
+  },
+  "new_fy27_management_guidance_NOT_actual": {
+    "revenue": 44.5,
+    "core_margin": 0.061,
+    "core_op_income_implied": 2.7145,
+    "adjusted_fcf": 1.6,
+    "cloud": 17.5,
+    "capital_equipment": 4.2,
+    "network": 3.9,
+    "auto": 5.0,
+    "healthcare": 5.6,
+    "energy": 3.0,
+    "connected_living": 2.3,
+    "digital_commerce": 3.0,
+    "q1_revenue_range": [
+      10.6,
+      11.4
+    ],
+    "q1_core_op_income_range": [
+      0.592,
+      0.652
+    ],
+    "q1_gaap_op_income_range": [
+      0.481,
+      0.541
+    ],
+    "q1_sbc_expected": 0.062
+  },
+  "cash_balance_sheet_may_to_aug": {
+    "receivables": [
+      5.473,
+      6.513
+    ],
+    "contract_assets": [
+      1.467,
+      1.296
+    ],
+    "inventory": [
+      5.933,
+      7.413
+    ],
+    "other_current_assets": [
+      3.925,
+      4.559
+    ],
+    "payables": [
+      11.908,
+      14.444
+    ]
+  },
+  "status": "Actual FY26 supports broad growth; own FY27 outcome not due. New FY27 guidance is stronger in revenue, close in margin and core profit, with meaningful component offsets. Near-term Q1 forecast absent."
+}

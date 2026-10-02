@@ -1,0 +1,167 @@
+# 公司收入传导与价值传导评估：Hubbell（HUBB）
+
+报告日期：2026-06-12  
+NTM 主窗口：2026Q2-2027Q1。  
+资料边界：使用 `公司调研/`、`行业调研/` 与公开公司一手资料校准；未读取、引用或继承 `特征量化/`、Signals、回归、量化评分或模型比较。  
+市场边界：本报告只评估经营收入、利润和现金流传导，不输出股价区间、估值倍数判断、投资评级或排序。
+
+## 1. 一页结论
+- 主口径与补充口径：主口径为 NTM 经营窗口，即 2026Q2-2027Q1；公司收入表采用两层口径：`可比/standalone Hubbell` 用于判断真实需求和执行；`报表含 NSI` 用于判断 2026-06-09 已完成 NSI 收购后的 NTM 财报收入、利润和现金流。NSI 是已完成并购，不再是远期期权，但其增长不能等同于 Hubbell 原有有机增长。
+- 当前收入基准、指引和 run-rate：2025 收入 `$5.845B`，其中 Utility Solutions `$3.672B`、Electrical Solutions `$2.172B`；2026Q1 收入 `$1.5167B`，同比 `+11.1%`、有机 `+8.2%`，调整后 EBITDA `$324M`；2026 指引为总销售增长 `8%-11%`、有机增长 `6%-9%`、调整后 EPS `$19.30-$19.85`、自由现金流转换 `>=90%` 调整后净利润。2026-06-09 完成 NSI 收购后，NSI 约 `$570M` 2026 收入也进入 NTM 报表口径。
+- 重要产品/业务线：核心 Utility T&D/Grid Infrastructure、Systems Control 变电站控制与继电器面板、DMC Power swage connectors、HES 数据中心模块化配电/PowerGain/rack PDU、NSI fittings/connectors/wire management、既有 grounding/bonding/cable cleats/wire management，以及 Grid Automation/AMI 和传统业务抵消项。
+- NTM 公司收入四情景：悲观 `报表含 NSI $6.65-$6.95B`、基准 `$7.00-$7.30B`、乐观 `$7.35-$7.80B`、极度乐观上限 `$7.90-$8.45B`。可比 standalone 口径分别约为 `$6.15-$6.40B`、`$6.43-$6.70B`、`$6.75-$7.05B`、`$7.10-$7.55B`。
+- 利润或 EBITDA 四情景：悲观调整后 EBITDA `$1.35-$1.55B`、基准 `$1.65-$1.85B`、乐观 `$1.85-$2.10B`、极度乐观 `$2.15-$2.45B`。NSI 增加经营利润池，但新增债务、整合成本和营运资本会压低净利润和自由现金流弹性。
+- 最大传导瓶颈：不是 AI 需求本身，而是 utility interconnection、变电站控制/保护、T&D 连接件、DMC/Systems Control/模块化 skid 产能、项目验收和收入确认节奏。
+- 最大利润率变量：DMC 和 Grid Infrastructure mix 正向，HES 数据中心模块化配电的 pass-through 比重、铜铝钢/关税、NSI 整合和债务利息为负向或稀释变量。
+- 最大现金流变量：订单强时库存、应收、项目 WIP 和 NSI 并购债务服务会先吃现金；公司原指引 FCF 转换 `>=90%` 仍是锚，但 NSI 完成后的 NTM 现金流可信度低于收入可信度。
+- 可信度：公司基准情景中高；产品切分为中，因为 Hubbell 不披露 backlog、RPO 或完整数据中心收入，产品级收入需要从分部收入、管理层 commentary、收购披露和行业订单链估算。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 核心 Utility T&D / Grid Infrastructure components，不含 Systems Control 和 DMC 的解释口径 | NTM 可比 `$2.30-$2.70B` | 约 `32%-38%` 报表含 NSI 收入 | 电网接入、输配电、变电站物料，是 AI 园区上电前置条件 | A/C：分部收入 A，产品切分 C | 进入基准；但公司汇总用分部/指引防重复计算 | 765kV/345kV 大规模输电标准化带来长期上限 |
+| Systems Control：substation control/relay panels/buildings | NTM `$0.50-$0.60B` | 约 `7%-8%` | 变电站保护控制和预制控制建筑，影响 time-to-power | B/C：收购披露和公司调研估算 | 进入基准，收入确认受工程交付和工厂测试约束 | 大型 AI campus 把 control building 作为 repeatable block |
+| DMC Power swage connectors/tooling | NTM `$0.14-$0.18B` 基准 | 约 `2%` | 小基数高毛利；高压输电、变电站和数据中心互联连接件 | B：已完成收购，2026E 收入/EBITDA 披露 | 进入基准；扩产决定乐观弹性 | swage 方法成为更多 utility 标准安装方法 |
+| HES 数据中心模块化配电、PowerGain、rack PDU、MPU、RPP-to-server | NTM `$0.70-$0.90B` 基准 | 约 `10%-13%` | 最直接的数据中心后表收入；2026Q1 data center `+40%`，全年展望 `>25%` | A/C：HES 分部 A，数据中心 growth commentary B，产品切分 C | 进入基准，PowerGain 小比例、modular skids 更高比例 | 200kW+ rack、800VDC/AC 双路线连接件进入客户标准 BOM |
+| NSI fittings/connectors/components/wire management | 2026E 收入约 `$570M`；NTM `$0.57-$0.65B` 基准 | 约 `8%-9%` | 2026-06-09 已完成收购，增强 HES 渠道、fittings、connectors、wire management | B：8-K 完成收购和 2026E 收入披露；利润率需估算 | 报表基准纳入；作为并购收入单列，不计入 Hubbell organic | 交叉销售、channel conversion、datacenter/network infrastructure bundle |
+| Grounding/bonding/cable cleats/wire management/enclosures，既有 Hubbell | NTM `$0.32-$0.45B` 基准 | 约 `5%-6%` | attach 率高，单品小，影响安全、短路力、维护和认证 | A/C：分部收入 A，产品切分 C | 进入基准，利润弹性低于 DMC/Systems Control | 与 NSI 合并后形成更完整 wire-management 包 |
+| Grid Automation/AMI、普通 industrial/commercial/residential 和其他传统业务抵消项 | NTM `$1.35-$1.55B` 基准 | 约 `19%-22%` | 不属 AI 主线，但决定公司总收入和利润是否被抵消 | A/C：分部披露 A，细分估算 C | 进入公司汇总，作为抵消项处理 | Aclara360/AMI 软件化为长期可选项，不进入 NTM 上修主线 |
+
+说明：上表是传导解释用的产品族切分，不可机械相加；第 6 节公司汇总以公司指引、分部收入、NSI 完成收购和 NTM run-rate 校准，避免重复计算。
+
+## 3. 产品需求四情景
+- 本步口径：只评估外部需求池，不判断 Hubbell 份额、收入确认或利润率。需求强弱均相对该产品当前预期、管理层指引、订单节奏和行业预算比较。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 核心 Utility T&D / Grid Infrastructure components | AI 数据中心和 utility load growth 推高输电、配电、变电站物料需求；行业资料显示 2026 美国 AI IT-load equivalent 进入设备订单 `6.0-8.5GW`，电力设备是第一瓶颈 | 需求仅 `0%-5%` 增长；部分 interconnection/permit 延后，Grid Automation 弱势拖累客户预算 | T&D/变电站需求 `+8%-12%`，符合 Hubbell 2026 高个位数 HUS organic 和 Q1 Grid Infrastructure `+12%` | 需求 `+15%-25%`，utility 和 AI campus 提前锁 2027/2028 产能 | 需求 `+30%+`，765kV/345kV、AI campus substation 与 utility resiliency 同时抢产能 | 相对悲观到极度乐观约 `0%-30%+` demand spread | 基准符合当前预期；乐观需 book-to-bill 维持 >`1.15` | 正向：电力设备 backlog 和同行订单强；反证：lead time 回落、hyperscaler capex 下修、utility 延迟 |
+| Systems Control 变电站控制/继电器面板/控制建筑 | AI 园区需要保护控制、FAT/SAT、turnkey control building，传统变电站扩容也需要 | 需求 flat 到 `+5%`，项目工程排期后移 | 需求 `+8%-15%`，与 substation/transmission 正常兑现一致 | 需求 `+20%-35%`，客户把预制控制建筑写入 repeatable MW block | 需求 `+50%+`，大型园区标准化采购并抢产能 | 年化需求从 `$0.5B` 级向 `$0.8B-$1.0B` 上限迁移 | 基准符合，乐观需要工厂预制和项目复制证据 | 正向：time-to-power 把预制化价值前置；反证：继电保护生态由 SEL/ABB/Siemens 等指定，Hubbell 只做部分包 |
+| DMC Power swage connectors/tooling | 高压输电、变电站、数据中心互联连接件；收购披露 2026E 收入约 `$130M`、EBITDA 约 `$60M` | 需求 `+5%-10%`，swage 采用扩散慢或产能不能释放 | 需求 `+20%-30%`，符合扩产和高压连接件紧缺 | 需求 `+50%-70%`，swage 被更多 contractor/utility 采用 | 需求 `2x+`，成为更多 utility 标准安装方法且新增产能快速吃满 | 从 `$130M` 需求基数向 `$0.3B+` 上限迁移 | 基准高于普通工业增长，但不等同极度乐观 | 正向：高可靠连接、安装时间节省、高 EBITDA margin；反证：客户认证周期、工具培训、产能扩张慢 |
+| HES 数据中心模块化配电、PowerGain、rack PDU、MPU | HES 2026Q1 数据中心市场 `+40%`，管理层全年展望 `>25%`；行业 PDU/低压配电/母线槽 2026 美国 AI 订单池 `$8-14B` | 需求 `+10%-20%`，AI 项目延迟或客户双供压价 | 需求 `+25%-35%`，符合公司 `>25%` data center 展望 | 需求 `+35%-60%`，modular skids 和 high-density rPDU 进入更多 RFP | 需求 `+80%-120%`，200kW+ rack 与模块化 power block 同时标准化 | 从 `$0.6B-$0.9B` 相关需求向 `$1.5B+` 上限迁移 | 基准略高于公司有机增长，符合当前预期 | 正向：PowerGain 最高 200A/115kW PDU、modular skids 被管理层点名；反证：Vertiv/Schneider/Legrand/nVent 指定方案替代 |
+| NSI fittings/connectors/wire management | 已完成收购；NSI 2026E 收入约 `$570M`，15,000+ SKU、2,000+ 北美分销商，面向 industrial/infrastructure/commercial | 需求 flat 到 `+5%`，渠道整合慢，非数据中心部分随建筑周期放缓 | 需求 `+6%-12%`，维持高于普通 electrical distribution 的增长 | 需求 `+15%-25%`，与 HES datacenter/light industrial 交叉销售 | 需求 `+30%+`，NSI 产品进入 Hubbell 数据中心 bundle 和渠道转换 | 约 `$0.57B` 起点，乐观上限 `$0.7B-$0.9B` | 基准为收购完成后正常经营兑现 | 正向：已完成收购、HES margin accretive expectation；反证：债务利息、渠道冲突、整合执行 |
+| Grounding/bonding/cable cleats/wire management/enclosures | AI 数据中心电力、液冷、光纤和接地路径复杂度上升，attach 随 MW 增长 | 需求 flat 到 `+8%`，普通产品商品化压价 | 需求 `+10%-20%`，随 MW 和施工节奏增长 | 需求 `+25%-40%`，预制化和认证产品占比上升 | 需求 `+50%-75%`，高密 rack 和短路力要求带来高附加产品包 | 从 `$0.3B-$0.5B` 相关需求向 `$0.8B+` 上限迁移 | 基准符合，不因 AI 题材上调过度 | 正向：数据中心桥架/线缆管理行业景气；反证：低端材料成本和施工方替代 |
+| Grid Automation/AMI 和传统业务抵消项 | AMI/meters 2025-2026 多季度弱，普通 nonresidential/light industrial 健康但不等同 AI | `-5%-10%`，AMI 继续弱、heavy industrial 放缓 | flat 到 `+3%`，AMI 稳定，普通工业小幅增长 | `+4%-8%`，AMI 项目恢复、light industrial 继续强 | `+8%-12%`，需要 meter/AMI 项目重新放量 | 对公司总收入影响约 `-$0.15B` 到 `+$0.20B` | 基准不作为上修来源，只做抵消项 | 正向：Q2 起同比比较改善；反证：AMI 连续 `-10%+`、住宅/重工业疲弱 |
+
+## 4. 可收入化暴露与收入基数
+- 本步口径：只判断需求能否进入 Hubbell NTM 收入表，以及当前可收入化基数；不预测增长，不判断利润扩张。证据等级按收入表可确认性定义，A/B 为基准主口径，C 级只保守纳入，D/E 不进基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 核心 Utility T&D / Grid Infrastructure components | Utility Solutions 2025 `$3.672B`、2026Q1 `$948.9M`；Grid Infrastructure Q1 `+12%`；产品切分估算 | 直接，电网/变电站/T&D 物料进入 HUS 收入 | 高于公司平均，认证和项目紧缺带来定价；仍有金属成本 | `$2.30-$2.45B` | `$2.50-$2.70B` | `$2.80-$3.05B` | `$3.20-$3.55B` | 基准符合 HUS 高个位数 organic；乐观高于当前预期 | A/C | 是 | 分部收入 A，产品切分 C；不把行业电力订单池直接当公司收入 | 基准纳入，作为 HUS 核心 |
+| Systems Control | 2024E 销售约 `$400M`，公司调研估算 2026 `$470-$550M` | 直接，已并入 HUS | 工程/控制类利润质量高于普通物料，交付和验收约束强 | `$0.45-$0.50B` | `$0.52-$0.60B` | `$0.65-$0.80B` | `$0.85-$1.00B` | 基准略高于当前 run-rate，需交付兑现 | B/C | 是 | 已完成收购后的经营资产；客户和工厂交付可见，但产品收入未单独披露 | 基准保守纳入 |
+| DMC Power | 已完成 2025-10 收购；收购披露 2026E 收入约 `$130M`、EBITDA `$60M` | 直接，HUS/DMC | 高 EBITDA margin，若扩产兑现对利润率有正 mix | `$0.12-$0.14B` | `$0.15-$0.18B` | `$0.20-$0.26B` | `$0.30-$0.38B` | 基准略高于收购披露，乐观需产能证据 | B | 是 | 正式收购披露和已完成并表；Q1 管理层称 DMC 表现强 | 基准纳入，产能是约束 |
+| HES 数据中心模块化配电、PowerGain、rack PDU、MPU | HES 2025 `$2.172B`、2026Q1 `$567.8M`；数据中心 Q1 `+40%`、全年 `>25%`；产品页支持 PowerGain 200A/115kW | 直接，HES data center revenue | modular skids 可能含 pass-through；PowerGain/rPDU/MPU 若进标准 BOM 毛利更高 | `$0.55-$0.65B` | `$0.70-$0.90B` | `$1.00-$1.25B` | `$1.35-$1.70B` | 基准高于 2025 run-rate，符合管理层 data center 展望 | A/C | 是 | HES 分部 A，管理层 data center growth B，产品切分 C | 基准纳入；PowerGain 小基数不过度上修 |
+| NSI fittings/connectors/wire management | 2026-06-09 完成收购；NSI 2026E revenue 约 `$570M`，15,000+ SKU、2,000+ distributors | 直接，报表并表；需求与 datacenter/light industrial/network infrastructure 间接和直接并存 | 公司称对 HES adjusted operating margin accretive；但债务利息影响净利润 | `$0.50-$0.55B` | `$0.57-$0.65B` | `$0.68-$0.78B` | `$0.80-$0.95B` | 报表基准高于原 2026 指引；可比有机需剔除 | B | 是，报表口径单列 | 已完成收购的 8-K 和前期收入披露；利润和协同仍需估算 | 报表 NTM 纳入；作为并购层单列 |
+| Grounding/bonding/cable cleats/wire management/enclosures，既有 Hubbell | 公司调研估算 2026 DC slice `$250-$450M` | 直接和间接；随数据中心、施工、接地/短路保护 attach | 中等，认证产品好于 commodity；材料成本敏感 | `$0.25-$0.30B` | `$0.32-$0.45B` | `$0.48-$0.65B` | `$0.75-$1.00B` | 基准符合，乐观需高密/预制化 attach | A/C | 是 | HES/HUS 分部收入 A，细分估算 C | 基准纳入但利润弹性降权 |
+| Grid Automation/AMI 和传统抵消项 | Grid Automation Q1 `-7%`；普通 industrial/commercial 多为分部内余量估算 | 直接，但非 AI 需求 | 利润率分化；AMI 软件有长期价值，普通产品更周期 | `$1.20-$1.35B` | `$1.35-$1.55B` | `$1.55-$1.70B` | `$1.70-$1.85B` | 基准为稳定，不作为 AI 上修来源 | A/C | 是，作为抵消项 | 分部实际收入可见，细分切分估算 | 纳入公司汇总，风险只在组合层处理 |
+
+## 5. 产品级收入和利润贡献
+- 本步口径：从需求和可收入化基数出发，判断各产品在 NTM 内对 Hubbell 的收入和经营利润贡献。下表利润贡献为经营利润/EBITDA 方向性估算，不是公司正式披露；对无法可靠量化处明确标注。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 核心 Utility T&D / Grid Infrastructure components | 悲观 | `$2.30-$2.45B` | `$0.48-$0.55B` | 低于 HUS 当前结构 | 低于预期 | utility/interconnection 延迟，Grid Automation 弱势拖累客户预算 | 保留为下限 | 项目收入确认推迟、材料成本未传导 |
+| 核心 Utility T&D / Grid Infrastructure components | 基准 | `$2.50-$2.70B` | `$0.58-$0.68B` | 稳定到小幅改善 | 符合预期 | Q1 HUS organic `+6.8%`、Grid Infrastructure `+12%`、公司上调指引 | 保留 | 产品切分不是披露项 |
+| 核心 Utility T&D / Grid Infrastructure components | 乐观 | `$2.80-$3.05B` | `$0.75-$0.88B` | 改善 | 高于预期 | book-to-bill 约 `1.2`、utility/load growth 和高压传输需求 | 保留 | 大型电气巨头系统包竞争 |
+| 核心 Utility T&D / Grid Infrastructure components | 极度乐观 | `$3.20-$3.55B` | `$0.95-$1.10B` | 明显改善 | 大幅高于预期 | 765kV/345kV 和 AI interconnect 同时抢产能 | 降为上限跟踪 | 需要多客户标准化和持续产能 |
+| Systems Control | 悲观 | `$0.45-$0.50B` | `$0.09-$0.12B` | 稳定 | 低于预期 | 工程排期、客户验收或继电保护指定供应商导致延后 | 保留为下限 | FAT/SAT、保护标准、工程人员 |
+| Systems Control | 基准 | `$0.52-$0.60B` | `$0.12-$0.16B` | 稳定到改善 | 符合预期 | substation control building 与 AI/utility 上电相关 | 保留 | 未披露独立 backlog |
+| Systems Control | 乐观 | `$0.65-$0.80B` | `$0.16-$0.24B` | 改善 | 高于预期 | 预制控制建筑进入 repeatable MW block | 保留 | 工厂扩产和工程调试能力 |
+| Systems Control | 极度乐观 | `$0.85-$1.00B` | `$0.24-$0.32B` | 明显改善 | 大幅高于预期 | 大型园区把 control building 标准化采购 | 降为上限跟踪 | 客户指定 SEL/ABB/Siemens 生态可能分走价值 |
+| DMC Power | 悲观 | `$0.12-$0.14B` | EBITDA `$0.05-$0.06B` | 高但不扩张 | 略低于预期 | 产能或认证扩散慢 | 保留为下限 | connector/tool qualification |
+| DMC Power | 基准 | `$0.15-$0.18B` | EBITDA `$0.06-$0.08B` | 高利润率 | 符合或略高预期 | 收购披露 2026E `$130M` revenue、`$60M` EBITDA，Q1 管理层称表现强 | 保留 | 产能是最大瓶颈 |
+| DMC Power | 乐观 | `$0.20-$0.26B` | EBITDA `$0.09-$0.12B` | 明显正 mix | 高于预期 | swage 采用率提升、赶工项目偏好快速安装 | 保留 | 扩产、培训、客户白名单 |
+| DMC Power | 极度乐观 | `$0.30-$0.38B` | EBITDA `$0.14-$0.18B` | 非线性改善 | 大幅高于预期 | swage 方法成为更多 utility 标准 | 保留为低可信上限 | 小基数可高增，但不应自动推高全公司 |
+| HES 数据中心模块化配电、PowerGain、rack PDU、MPU | 悲观 | `$0.55-$0.65B` | `$0.07-$0.10B` | 被项目成本和 restructuring 吞噬 | 低于预期 | 客户双供、项目延迟、HES margin flattish | 保留为下限 | Vertiv/Schneider/Legrand/nVent 替代 |
+| HES 数据中心模块化配电、PowerGain、rack PDU、MPU | 基准 | `$0.70-$0.90B` | `$0.11-$0.16B` | 稳定到小幅改善 | 符合预期 | Q1 data center `+40%`，全年 `>25%`；modular skids 被点名 | 保留 | 产品切分和客户名单未披露 |
+| HES 数据中心模块化配电、PowerGain、rack PDU、MPU | 乐观 | `$1.00-$1.25B` | `$0.18-$0.28B` | 改善 | 高于预期 | high-density PDU/PowerGain 和模块化 power block 写入更多 RFP | 保留 | pass-through 低毛利收入不能自动转成利润 |
+| HES 数据中心模块化配电、PowerGain、rack PDU、MPU | 极度乐观 | `$1.35-$1.70B` | `$0.30-$0.45B` | 明显改善但需 mix 支撑 | 大幅高于预期 | 200A/115kW PDU、MPU、modular skids 同时标准化 | 下移为上限 | 800VDC/客户自研路线可能改变产品形态 |
+| NSI fittings/connectors/wire management | 悲观 | `$0.50-$0.55B` | `$0.07-$0.10B` operating；净利润贡献可能被利息抵消 | 经营 accretive，但净利润承压 | 低于预期 | 完成收购但整合慢、渠道冲突、债务利息高 | 保留为下限 | 协同兑现和 debt service |
+| NSI fittings/connectors/wire management | 基准 | `$0.57-$0.65B` | `$0.10-$0.14B` operating；净利润小幅正贡献 | HES margin accretive，现金流中性偏正 | 符合预期 | 2026-06-09 完成收购；2026E revenue `$570M`；2,000+ distributors | 保留 | 公司尚未给并表后新全年指引 |
+| NSI fittings/connectors/wire management | 乐观 | `$0.68-$0.78B` | `$0.14-$0.19B` operating | 改善 | 高于预期 | cross-selling、channel conversion、datacenter/network infrastructure bundle | 保留 | 整合和制造效率需要时间 |
+| NSI fittings/connectors/wire management | 极度乐观 | `$0.80-$0.95B` | `$0.19-$0.26B` operating | 改善但净利润受利息制约 | 大幅高于预期 | NSI 成为 HES 数据中心 bundle 标准附加项 | 下移为乐观上限 | 一年内协同大幅兑现证据不足 |
+| Grounding/bonding/cable cleats/wire management/enclosures | 悲观 | `$0.25-$0.30B` | `$0.03-$0.05B` | 下降 | 低于预期 | 普通产品商品化、材料成本挤压 | 保留为下限 | 低端替代和施工方偏好 |
+| Grounding/bonding/cable cleats/wire management/enclosures | 基准 | `$0.32-$0.45B` | `$0.05-$0.08B` | 稳定 | 符合预期 | AI hall grounding/cable cleats/wire management attach 稳定 | 保留 | 单价小，利润弹性有限 |
+| Grounding/bonding/cable cleats/wire management/enclosures | 乐观 | `$0.48-$0.65B` | `$0.09-$0.14B` | 小幅改善 | 高于预期 | 高短路力、预制化和认证产品占比提高 | 保留 | 需客户标准件锁定 |
+| Grounding/bonding/cable cleats/wire management/enclosures | 极度乐观 | `$0.75-$1.00B` | `$0.15-$0.25B` | 改善但低于系统产品 | 大幅高于预期 | 与 NSI/HES bundle 打包，attach 率明显上修 | 下移为乐观上限 | 不应把所有线缆管理行业增长都归给 Hubbell |
+| Grid Automation/AMI 和传统抵消项 | 悲观 | `$1.20-$1.35B` | `$0.15-$0.20B` | 下降 | 低于预期 | AMI 继续弱、heavy industrial 放缓 | 保留为公司组合风险 | 只在组合层处理一次 |
+| Grid Automation/AMI 和传统抵消项 | 基准 | `$1.35-$1.55B` | `$0.20-$0.28B` | 稳定 | 符合预期 | AMI 比较基数改善、普通业务稳定 | 保留 | 不是 AI 上修来源 |
+| Grid Automation/AMI 和传统抵消项 | 乐观 | `$1.55-$1.70B` | `$0.28-$0.35B` | 小幅改善 | 略高于预期 | light industrial 和 AMI 项目恢复 | 保留但降权 | AI 证据弱 |
+| Grid Automation/AMI 和传统抵消项 | 极度乐观 | `$1.70-$1.85B` | `$0.35-$0.42B` | 改善 | 高于预期 | AMI/工业同时恢复 | 仅作跟踪 | 不属于 AI 数据中心收入主线 |
+
+## 6. 公司收入和利润四情景
+- 本步口径：第一个表为公司 NTM 收入和利润四情景。NTM 报表收入含 2026-06-09 已完成的 NSI；同时在收入栏标注 standalone/可比口径，防止把并购收入误读为有机需求。利润率和 EBITDA 为经营估算，不涉及市场定价。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 报表含 NSI `$6.65-$6.95B`；standalone `$6.15-$6.40B` | 报表约 `+14%-19%` vs 2025；standalone `+5%-9%` | 低于 Q1 后经营预期；NSI 贡献仍在但有机低于指引 | `32.8%-34.0%` | `17.5%-19.0%` | 调整后 EBITDA `$1.35-$1.55B`；调整后净利润 `$0.80-$0.95B` | FCF 转换低于原 `90%+` 锚，受库存/WIP/利息影响 | 中 | 数据中心项目延后、AMI 弱、NSI 利息和整合成本、price/cost 滞后 |
+| 基准公司 | 报表含 NSI `$7.00-$7.30B`；standalone `$6.43-$6.70B` | 报表约 `+20%-25%`；standalone `+10%-15%`，其中可比有机约 `+8%-11%` | 符合 Q1 后指引、run-rate、NSI 完成收购和订单 commentary | `34.0%-35.0%` | `19.5%-20.5%` | 调整后 EBITDA `$1.65-$1.85B`；调整后净利润 `$1.00-$1.15B` | FCF 接近 `85%-95%` 调整后净利润；强订单会占用营运资本 | 中高 | DMC/Systems Control/模块化 skid 产能和 NSI 整合 |
+| 乐观公司 | 报表含 NSI `$7.35-$7.80B`；standalone `$6.75-$7.05B` | 报表约 `+26%-34%`；可比经营 `+13%-18%` | 高于当前预期，且不只靠 NSI 并表 | `35.0%-36.0%` | `20.5%-21.8%` | 调整后 EBITDA `$1.85-$2.10B`；调整后净利润 `$1.12-$1.30B` | FCF 绝对额上升，但库存和项目应收仍可能滞后 | 中 | HES data center、DMC/Systems 扩产、NSI 协同需同步兑现 |
+| 极度乐观公司 | 报表含 NSI `$7.90-$8.45B`；standalone `$7.10-$7.55B` | 报表约 `+35%-45%`；可比经营 `+20%+` | 显著高于当前预期；只能作为上限 | `36.0%-37.0%+` | `22.0%+` | 调整后 EBITDA `$2.15-$2.45B`；调整后净利润 `$1.30-$1.55B` | FCF 可能先落后 EBITDA，因为抢产能、库存、项目 WIP 和债务服务同步上升 | 低到中 | 多个核心环节必须同时突破：需求、捕获、利润率、产能、验收、整合 |
+
+汇总检查：
+- 不重复计算：产品表的 HES 数据中心、wire management 和 NSI 可能存在交叉销售关系，公司汇总以分部收入、NSI 收购完成、2026 指引和 NTM run-rate 校准。
+- 并购/会计口径：NSI 已完成并表，但 Q1 指引发布早于 NSI 完成；因此报表 NTM 不能与原 2026 指引直接比较，必须同时看 standalone。
+- 低毛利 pass-through：modular skids、低压配电和 wire management 收入上修不自动转成同等利润上修；利润率改善需要高毛利 DMC、Systems Control、认证 PDU/PowerGain、服务和价格传导支持。
+- 传统业务抵消：Grid Automation/AMI 弱势只在公司组合层处理一次，不在需求和产品利润表重复惩罚。
+
+## 7. 证据校准、反证和可信度
+- 本步口径：不重新预测，只校准前四步情景的位置。校准动作仅使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 实际收入 `$1.5167B`、有机 `+8.2%`、Q1 后 2026 指引上调到总增长 `8%-11%` | 公司汇总 | 支撑 standalone 基准 `$6.43-$6.70B` NTM | 支撑 `19.5%-20.5%` 基准 OPM | 支撑 FCF `>=90%` 原锚，但需与 NSI 后杠杆重新校准 | 保留 |
+| HES 数据中心 Q1 `+40%`、全年 data center 展望 `>25%` | 产品贡献 | 上移 HES 数据中心基准，不把全行业 PDU/TAM 直接计入 | 若 mix 偏 PowerGain/高密 PDU 改善；若 skids pass-through 则有限 | 订单强会增加 WIP 和应收 | 保留 |
+| book-to-bill/order rate 接近 `1.2`，DMC 和 Systems Control 需求强 | 收入基数/执行可信度 | 支撑乐观产品情景 | DMC 高利润率是正 mix | 产能扩张和交期决定兑现 | 保留 |
+| NSI 2026-06-09 已完成收购，2026E 收入约 `$570M` | 收入基数/公司汇总 | 从“待完成”上移为报表 NTM 基准 | 经营利润率可能 accretive，但净利润受利息影响 | $900M term loan、$1.9B senior notes 和 commercial paper 增加债务服务 | 上移 |
+| 价格约贡献 2026 organic guide `3 pct`，Q2 价格动作需 `30-60` 天进入 backlog | 利润率 | 对收入有价格支撑 | 支撑 price/cost neutral 或 better | 若价格传导慢，固定价项目现金毛利承压 | 保留 |
+| Grid Automation/AMI Q1 `-7%` | 公司组合风险 | 压低 HUS 总增长，但不直接否定 T&D demand | 可能稀释 HUS margin | 影响比较基数和库存 | 保留 |
+| 行业 AI 电力设备、PDU、switchgear、变电站订单池强 | 需求层 | 只证明需求池强，不直接等于 Hubbell 收入 | 只有高认证/高服务产品能转利润 | 行业订单先于收入确认 | 保留 |
+| 800VDC、500kW-1MW rack、MV UPS 等新技术 | 远期期权/需求层 | 2026 多为 design-in，不进入基准收入 | 若 2027 标准化才可能高毛利 | 产品形态变化可能替代现有 PDU/connector | 移入附录 |
+| NSI 并购债务、整合和管理层注意力 | 公司利润/现金流 | 收入确定性较高 | 利息和整合成本压低净利润弹性 | 现金流风险上升 | 保留 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 数据中心和 utility 需求仍在，但收入确认、价格/cost、AMI、NSI 利息和项目延迟使公司低于当前预期 | Q1 收入和订单强，T&D/HES data center 均有增长 | AMI 仍弱；NSI 新债务提高净利润和 FCF 门槛；客户项目可能延后 | 保留 | 悲观下限 | 中 | AMI 弱只在公司组合层处理；NSI 债务只在现金流/净利润层处理 |
+| 基准 | Q1 后指引正常兑现，T&D/HES data center/DMC/Systems Control 正常交付，NSI 进入报表 NTM | 2026 指引上调、HES DC `>25%`、DMC/NSI 正式披露、Q1 book-to-bill 强 | Hubbell 不披露正式 backlog；产品切分需估算 | 保留 | 基准主情景 | 中高 | 行业电力需求不能再在产品收入中二次上修 |
+| 乐观 | data center 和 utility order strength 延续，DMC/Systems/HES skids/PowerGain/NSI 协同中至少两项超预期 | Q1 data center `+40%`、同行电力设备订单强、PowerGain 产品规格匹配高密 rack | 客户双供、HES pass-through、产能和验收限制 | 保留 | 乐观情景 | 中 | 同一个 data center capex 上修不能同时无折扣加到 T&D、PDU 和 wire management |
+| 极度乐观 | 需求、Hubbell 捕获、利润率和执行质量同时突破，收入和 margin 非线性上修 | 电力设备为行业硬瓶颈，PowerGain/DMC/Systems/NSI 都有上限弹性 | 多数产品客户/订单未单独披露；800VDC 2026 仍偏 design-in；NSI 协同一年内大幅兑现证据不足 | 下移 | 极度乐观上限/附录跟踪，不作 NTM 主判断 | 低到中 | 不能把 800VDC 远期期权、NSI 协同和 DMC 扩产一次性全部计入基准 |
+
+## 8. 结论
+- 最可能情景：基准。Hubbell NTM 报表收入最可能落在 `$7.00-$7.30B`，其中 standalone 经营约 `$6.43-$6.70B`，NSI 贡献约 `$0.57-$0.65B`。可比经营增长主要来自 T&D/Grid Infrastructure、HES 数据中心、DMC 和 Systems Control；NSI 是并购层增量。
+- NTM 收入结论：需求池强，但公司收入传导受“可确认收入”限制。Hubbell 有真实 A/B 级收入锚，包括分部收入、正式指引、Q1 data center 增长、DMC/NSI 已完成收购；PowerGain/rack PDU 的产品故事成立，但客户标准化和收入规模仍需后续披露验证。
+- 利润/现金流结论：利润质量好于普通电气耗材公司，原因是 DMC、Systems Control、T&D 和高认证配电产品具备 mix 优势；但 NSI 新债务、HES restructuring/growth investment、铜铝钢/关税和项目 WIP 会让净利润和 FCF 弹性弱于收入弹性。
+- 主要传导瓶颈：第一是 utility/substation 和模块化配电产能；第二是客户认证、FAT/SAT 和现场 commissioning；第三是 NSI 并购整合和债务服务；第四是 Grid Automation/AMI 弱势是否继续抵消 HUS 增长。
+- 乐观情景成立条件：2026H2 book-to-bill 维持 `1.15-1.25`，HES data center 继续 `>30%-35%`，DMC/Systems Control 扩产兑现，PowerGain/MPU/模块化 skids 获得更多客户标准 BOM，NSI 并表后 HES margin 不被稀释。
+- 极度乐观情景成立条件：765kV/345kV、AI campus substation、DMC swage、Systems Control buildings、HES modular skids、PowerGain/rPDU 和 NSI wire-management bundle 同时被客户抢产能；并且收入上修不是低毛利 pass-through，而是伴随高毛利产品、价格、服务和运营杠杆。
+- 悲观情景触发条件：hyperscaler/colo capex 下修 `15%+`，utility interconnection 造成订单推迟超过 `12` 个月，Hubbell price/cost 不能 neutral，Grid Automation 连续 `-10%+`，NSI 整合/利息导致 HES 或净利润不增反降。
+- 后续跟踪数据：Hubbell 2026Q2/Q3 HES data center growth、HUS Grid Infrastructure growth、book-to-bill/order commentary、DMC capacity update、Systems Control backlog/交付表述、NSI 并表后收入和 margin、价格动作进入 backlog 的速度、FCF conversion、working capital、同行 Eaton/Schneider/Vertiv/Powell/GE Vernova 电力设备订单和 backlog。
+
+## 附录：来源和补充口径
+- 经营数据日期：Hubbell 2026Q1 results 披露日期 2026-04-30；2025 Annual Report 披露/年报口径截至 2025-12-31；NSI 收购完成日期 2026-06-09；行业本地资料日期为 2026-06-10 至 2026-06-11；本报告写作日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Hubbell 2026Q1 results press release：`https://hubbell.gcs-web.com/news-releases/news-release-details/hubbell-reports-first-quarter-2026-results`
+  - Hubbell Q1 2026 earnings transcript：`https://www.fool.com/earnings/call-transcripts/2026/04/30/hubbell-hubb-q1-2026-earnings-transcript/`
+  - Hubbell 2025 Annual Report：`https://investor.hubbell.com/ar2025/`
+  - Hubbell 2026Q1 Form 10-Q：`https://www.sec.gov/Archives/edgar/data/48898/000162828026029110/hubb-20260331.htm`
+  - Hubbell NSI acquisition announcement：`https://hubbell.gcs-web.com/news-releases/news-release-details/hubbell-acquire-nsi-industries`
+  - Hubbell NSI completion 8-K / press release：`https://www.sec.gov/Archives/edgar/data/48898/000162828026039373/0001628280-26-039373-index.htm`
+  - Hubbell DMC Power acquisition announcement：`https://hubbell.gcs-web.com/news-releases/news-release-details/hubbell-acquire-dmc-power`
+  - Hubbell DMC Power completion：`https://hubbell.gcs-web.com/news-releases/news-release-details/hubbell-incorporated-completes-acquisition-dmc-power`
+  - Hubbell PowerGain product/literature：`https://hubbellcdn.com/literature/HES-MULTI-SF-EN-04059.pdf`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 standalone 公司指引 `$6.31-$6.49B` 为 Q1 后销售增长 `8%-11%` 的推算口径，不含 NSI 完成后的全年更新指引。
+  - NTM 报表口径把 NSI 纳入，因为交易已在 2026-06-09 完成；但 NSI 不计入 Hubbell organic growth。
+  - 2027/2028 的 800VDC、1MW rack、MV UPS、SST、DC sidecar 和 DMC/Systems Control 标准化为远期期权或极度乐观条件，不替代 NTM 基准。
+- 主要项目内来源：
+  - `公司调研/配电_电源_功率器件/HUBB_Hubbell_公司调研_2026-06-12.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_导管、桥架与线缆管理_2026-06-10.md`
+- 关键无法可靠量化项：
+  - Hubbell 未披露正式 backlog/RPO，也未披露数据中心收入的绝对美元数，因此产品级收入贡献使用分部收入、管理层 commentary、收购披露、产品资料和行业订单链估算。
+  - NSI 完成后尚未有并表季度报表，NTM 报表收入较可确认，但 NSI 对净利润、FCF、working capital 和 HES margin 的贡献需要 2026Q2/Q3 财报校准。
+  - PowerGain/rack PDU/MPU 的客户标准 BOM、客户名单和批量订单未单独披露，因此进入基准时采用小比例和保守折扣，极度乐观只作上限。

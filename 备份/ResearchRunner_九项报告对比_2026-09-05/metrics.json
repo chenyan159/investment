@@ -1,0 +1,52 @@
+{
+  "new9": {
+    "inputTokens": 38488300,
+    "cachedInputTokens": 36065024,
+    "uncachedInputTokens": 2423276,
+    "outputTokens": 410959,
+    "reasoningOutputTokens": 66092,
+    "totalTokens": 38899259,
+    "minutes": 297.53333333333336
+  },
+  "pairedNew7": {
+    "inputTokens": 29957118,
+    "cachedInputTokens": 28054272,
+    "uncachedInputTokens": 1902846,
+    "outputTokens": 309618,
+    "reasoningOutputTokens": 45597,
+    "totalTokens": 30266736,
+    "minutes": 232.58333333333334
+  },
+  "old7": {
+    "inputTokens": 64820814,
+    "cachedInputTokens": 61182208,
+    "uncachedInputTokens": 3638606,
+    "outputTokens": 527776,
+    "reasoningOutputTokens": 187606,
+    "totalTokens": 65348590,
+    "minutes": 210.08333333333331
+  },
+  "new9Credits": 2021.14335,
+  "pairedNew7Credits": 1564.0908,
+  "old7Credits": 1239.57068,
+  "old9": {
+    "inputTokens": 87577178,
+    "cachedInputTokens": 82874880,
+    "uncachedInputTokens": 4702298,
+    "outputTokens": 686802,
+    "reasoningOutputTokens": 242417,
+    "totalTokens": 88263980,
+    "minutes": 285.2595
+  },
+  "old9Credits": 1642.3796,
+  "changes": {
+    "inputTokens": -0.5605213495232741,
+    "cachedInputTokens": -0.5648256262935162,
+    "uncachedInputTokens": -0.4846613294180845,
+    "outputTokens": -0.40163394981377454,
+    "reasoningOutputTokens": -0.7273623549503541,
+    "totalTokens": -0.55928501071445,
+    "minutes": 0.043026904742290206
+  },
+  "creditsChange": 0.23061888372213102
+}

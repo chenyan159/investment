@@ -1,0 +1,382 @@
+# 公司：MOD Modine Manufacturing（莫丁制造）全面尽调
+
+> 报告日期：2026-07-31；财务数据截止：2026-06-30（FY2027 Q1）；股价/估值快照：2026-07-31 15:38 EDT（盘中）。Modine 财年截至每年 3 月 31 日，因此 FY2027 Q1 对应自然年 2026 年 4—6 月。
+>
+> 研究边界：仅使用联网资料与本项目 `基本面/行业调研/` 中相关产业报告；未读取其他项目研究目录，未使用公司索引作为证据，也未修改公司索引。
+
+## 核心结论
+
+Modine 已不宜再被简单视为汽车散热器公司。过去三年，公司通过收购 Scott Springfield、Climate by Design、L.B. White 等资产、买入 TMGcore 浸没式液冷知识产权、快速扩建 Airedale 数据中心冷却产能，并计划把 Performance Technologies（PT）与 Gentherm 合并，正在转成一家以数据中心设施侧冷却和 Commercial HVAC 为核心的纯气候解决方案公司。投资人当前给 MOD 的定价，本质上是“AI 数据中心冷却产能兑现权”，而非传统汽车零部件估值。
+
+最强的基本面证据有四项：FY2026 数据中心收入达到 **$1.112B、同比 +73%**；FY2027 Q1 数据中心收入 **$348.6M、同比 +90%**；数据中心 backlog 过去一年“接近翻倍”且连续三个季度创订单纪录；一名既有客户签订了 2027—2029 日历年 **超过 $4B 的产能协议并预付 $165M**。但最后一项是可终止、缩减或延期的容量安排，不是不可撤销的 $4B backlog，公司也没有披露 backlog 美元额、book-to-bill、取消率或客户项目名。把 $4B 全额直接资本化，是本标的最常见也最危险的分析错误。[FY2026 10-K](https://www.sec.gov/Archives/edgar/data/67347/000110465926066795/mod-20260331x10k.htm)；[$4B 产能协议公告](https://investors.modine.com/news/news-details/2026/Modine-Announces-Landmark-4-Billion-Long-Term-Capacity-Agreement-through-2029-with-Strategic-Data-Center-Customer-for-Airedale-by-Modine-Cooling-Solutions/default.aspx)
+
+Modine 的最佳位置在**设施侧热排放链**：3MW 级风冷冷水机组、free-cooling、精密 AHU/CRAH/fan wall、设施水环、控制与服务；它并不拥有 GPU 冷板、快接头、光模块或完整服务器液冷栈。即使 Direct-to-Chip（D2C）在 2026—2027 成为主流，冷板通常只捕获约 70%—96% 芯片热量，内存、NIC、PSU、存储及残余热仍需空气侧设备，热量最终仍要经 CDU/设施水环、chiller/dry cooler/free cooling 排向室外。因而“液冷替代 Modine”并非正确的二元命题；更准确的风险是：更高供水温度和自然冷却会减少机械制冷运行小时，而同行与标准化会压缩设备溢价。[本项目：风冷、冷水机组与 HVAC](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-07-10.md)；[本项目：直液冷系统](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-07-10.md)
+
+短期最大矛盾不是需求，而是执行。FY2027 Q1 数据中心收入 +90%，但该分部毛利率由 29.8% 降至 **20.2%**、调整后 EBITDA 率由 22.1% 降至 **14.8%**；管理层将约 150bp 归因于上年一次性保修和解，约 450—550bp 归因于供应短缺引发的过量人工、停线和未吸收制造费用，其余主要是混合与材料。公司预计 Q2 数据中心收入较 Q1 再增约 $100M、EBITDA 率恢复至 19%—20%，下半年超过 20%。因此未来两个季度的“供应商按时交货—新增线爬坡—毛利回归”比新增订单新闻更重要。[FY2027 Q1 业绩](https://investors.modine.com/news/news-details/2026/Modine-Reports-First-Quarter-Fiscal-2027-Results/default.aspx)；[FY2027 Q1 电话会文本](https://stockanalysis.com/stocks/mod/transcripts/681165-q1-2027/)
+
+本报告模型给出的未来十二个月（2026-08—2027-07）数据中心收入为：**基准 $2.15B（+69%）/乐观 $2.45B（+92%）/极度乐观 $2.80B（+120%）**。其中基准情景已经要求 Q2 供应问题迅速缓解；极度乐观情景要求新增 3MW chiller 线、AHU/CDU/模块化产线和关键供应商几乎无延误，不能视为管理层指引。当前估值约 **75.8x TTM PE、24.2x forward PE、3.20x TTM PS**，TTM PE 又被 $116.1M 非现金养老金终止费用扭曲；股票更像高预期、高波动的产能执行期权，而不是低风险复利资产。
+
+## 1. 公司整体业务、投资人定位与财务健康度
+
+### 1.1 业务与产业链位置
+
+截至 FY2027 Q1，Modine 有三个报告分部：
+
+1. **Data Centers**：Airedale by Modine 为主，销售冷水机组、dry cooler、精密 AHU/CRAH、fan wall、rear-door heat exchanger（RDHx）、CDU、浸没式液冷、模块化数据中心、控制、备件与维护。客户覆盖 hyperscaler、colocation、neocloud 与 edge operator。
+2. **Commercial HVAC**：换热器/盘管、定制 AHU、除湿与关键环境空调、特种供暖。部分数据中心盘管收入记在该分部，所以“Data Centers 分部收入”略低估公司广义数据中心暴露。
+3. **Performance Technologies**：公路车辆、重型设备、汽车及固定动力的热管理。公司已同意与 Gentherm 合并该业务，预计自然年 2026 Q4 完成；Modine 预计收到 $210M 用于降债，现有 Modine 股东预计持有合并后 Gentherm 约 40%，交易费用预计 $45M—$55M。交割和监管仍有风险。
+
+产业链位置可压缩为：**GPU/服务器冷板（非 Modine）→ CDU/设施水环（Modine 参与）→ AHU/CRAH/fan wall 与 chiller/free cooling（Modine 核心）→ EPC/MEP 集成 → hyperscaler/colo/neocloud 运维**。其护城河主要来自项目设计导入、热工控制集成、厂房和交付能力、FAT/SAT/客户 AVL、服务网络，而不是冷板或接口标准的绝对专利垄断。
+
+### 1.2 投资人眼中的公司
+
+- **旧标签**：百年汽车/重型设备换热器厂，周期性、低增速、低估值。
+- **当前标签**：AI 数据中心设施冷却容量稀缺标的；Airedale 的 chiller、AHU 与控制组合，加上北美本地扩产，是估值重估的核心。
+- **未来标签**：若 PT 交易完成，将成为数据中心 + Commercial HVAC 的纯气候解决方案平台；管理层称剥离 PT 可使备考毛利率抬升约 7—10 个百分点。
+- **定价含义**：截至 2026-07-31，股价过去 52 周仍约 +79.7%，但较 52 周高点 $323.25 低约 37%；说明市场认可长期 AI 暴露，同时对 Q1 毛利失速、供应链和扩产执行迅速降温。
+
+### 1.3 最近三年重大业务变化
+
+| 时间 | 事项 | 金额/规模 | 战略意义 |
+|---|---:|---:|---|
+| 2023-07-01 | 收购 Napps Technology | $5.8M | 补充风冷/水冷 chiller、condensing unit、heat pump |
+| 2023-10 | 出售德国汽车业务 | 被售业务年收入约 $54.2M；录得约 $4M 收益 | 主动退出低回报汽车资产 |
+| 2024-01 | 购买 TMGcore 知识产权 | $12M | 获得单相/两相浸没式液冷 IP；尚未形成可验证的大规模收入 |
+| 2024-03-01 | 收购 Scott Springfield Manufacturing | $184.1M，另有 $2.4M 营运资本调整 | 加入定制 AHU，显著加强数据中心空气侧平台 |
+| 2025-04-01 | 收购 AbsolutAire | $11.3M；FY2026 收入 $24.8M | 补充定制通风/补风设备 |
+| 2025-05-31 | 收购 L.B. White | $110.5M；FY2026 收入 $63.8M | 加强特种供暖，但与 AI 数据中心协同有限 |
+| 2025-07-01 | 收购 Climate by Design International | $64.4M；FY2026 收入 $30.5M | 增加除湿、关键环境和定制 AHU |
+| 2026-01-29 | 宣布 PT 与 Gentherm 合并 | 组合企业价值约 $1B；Modine 收取 $210M | 从“汽车+气候”转为纯气候平台；预计 2026Q4 交割 |
+| 2026-04-01 | Climate Solutions 拆为 Data Centers 与 Commercial HVAC | 报告口径变化 | 让 AI 数据中心增长、利润和资本配置更透明 |
+| 2026-05-26 | 与既有客户签 >$4B 长期产能协议 | 2027—2029；预付 $165M | 锁定产能讨论的里程碑，但并非不可撤销采购承诺 |
+
+来源：[FY2026 10-K](https://www.sec.gov/Archives/edgar/data/67347/000110465926066795/mod-20260331x10k.htm)、[PT/Gentherm 交易说明](https://investors.modine.com/news/news-details/2026/Gentherm-and-Modines-Performance-Technologies-Business-to-Combine-Establishing-a-Scaled-Leader-in-Thermal-Management-Solutions/default.aspx)。
+
+### 1.4 最新股价与估值快照
+
+| 指标 | 最新值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | **$202.90** | 2026-07-31 15:38 EDT，盘中 | 当日 +4.64%；并非收盘价 |
+| 市值 | **$10.78B** | 同上，53.11M 股 | 企业价值约 $11.21B |
+| TTM PE | **75.79x** | 同上 | 被 FY2026 $116.1M 非现金养老金终止费用显著抬高 |
+| Forward PE | **24.24x** | 市场一致预期 | PT 交割后口径和持续经营 EPS 可比性有限 |
+| TTM / Forward PS | **3.20x / 2.47x** | 同上 | 已包含较高 AI 增长预期 |
+| TTM 收入 | **$3.372B，+29.5%** | 截至 2026-06-30 | 可复算：$3,181.1M-$682.8M+$874.1M=$3,372.4M |
+| TTM 毛利率 | **22.21%** | 截至 2026-06-30 | FY2027 Q1 供应短缺拖累 |
+| TTM 营业利润率 | **10.88%** | 同上 | 低于未来纯气候平台目标 |
+| TTM 净利率 | **4.28%** | 同上 | 含养老金终止费用；不宜直接外推 |
+| TTM FCF / FCF 率 | **$100.2M / 2.97%** | 同上 | 扩产与库存占用使现金转化偏弱 |
+
+市场数据源：[StockAnalysis MOD 概览](https://stockanalysis.com/stocks/mod/)、[StockAnalysis 估值与财务统计](https://stockanalysis.com/stocks/mod/statistics/)。
+
+### 1.5 资产负债表评估
+
+| 2026-06-30 指标 | 数值 | 判断 |
+|---|---:|---|
+| 现金 / 总债务 / 净债务 | $95.3M / $528.2M / **$432.9M** | 不是净现金公司，但杠杆可控 |
+| 流动资产 / 流动负债 | $1,526.9M / $749.8M | 流动比率 **2.04x**，表面充足 |
+| 速动比率 | **1.01x** | 剔除库存后安全垫仅刚过 1x |
+| 债务/权益；债务/EBITDA | **0.44x；1.25x** | 中等偏低杠杆；利息覆盖约 10.6x |
+| 库存 | **$609.0M** | 环比 +20.3%、同比 +40.1%，远高于收入 +28%，既是爬坡备货也是执行风险 |
+| Q1 CFO / CapEx / FCF | $41.4M / $46.4M / **-$5.0M** | 盈利尚未充分转成现金，扩产期正常但不可忽略 |
+| FY2027 CapEx 指引 | **$150M—$200M** | 高于 FY2026 的 $143.3M；继续押注数据中心容量 |
+| 客户预付款 | 主要为 **$165M** | 增强流动性，也对应未来履约义务；不能当自由现金 |
+
+综合判断为**财务健康度 3.5/5：偿债能力健康、短期流动性足够，但现金转化质量中等**。库存、CapEx 与关键零件短缺同步上升，说明增长正在消耗营运资本；若 PT 交易按期完成并用 $210M 降债，净债务可机械下降至约 $223M，但应扣除 $45M—$55M 交易费用并考虑交割时点，不能把全额立即视为净现金改善。真正需要防守的是扩产失灵造成库存积压、客户排期后移和固定成本未吸收，而不是当前的债务契约压力。[FY2027 Q1 业绩](https://investors.modine.com/news/news-details/2026/Modine-Reports-First-Quarter-Fiscal-2027-Results/default.aspx)
+
+## 2. 最新及最近四次财报：五季度重构
+
+### 2.1 收入、业务增速、利润与 AI 暴露
+
+下表 FY2026 仍按旧 Climate Solutions 产品组披露；FY2027 Q1 已按新分部重述。`AI 相关占比`不是公司披露值，而是本报告按 Data Centers 中 hyperscale/neocloud/高密度部署比例并加回 Commercial HVAC 的数据中心盘管所作区间估计；严禁与精确分部收入混用。
+
+| 财报季度（自然期） | 总收入/同比 | Data Centers 收入/同比/总收入占比 | 其他业务收入/同比 | 合并毛利率；Adj. EBITDA/率 | 数据中心/Climate 利润率 | AI 相关收入占比估算 |
+|---|---:|---:|---|---:|---|---:|
+| FY26 Q1（2025-04—06） | $682.8M / +3% | **$186.9M / +15% / 27.4%**；新口径重述为 $183.7M | HTS $143.2M/-1%；HVAC $67.2M/+34%；PT $285.5M/-8% | 24.2%；$101.4M/**14.9%** | Climate GM 28.4%、EBITDA 20.0%；重述 DC GM **29.8%**、EBITDA **22.1%** | **18%—23%**（模型） |
+| FY26 Q2（2025-07—09） | $738.9M / +12% | **$226.3M / +42% / 30.6%** | HTS $141.2M/+2%；HVAC $86.6M/+25%；PT $286.3M/-4% | 22.3%；$103.8M/**14.0%** | Climate GM 24.6%、EBITDA 16.7%；DC EBITDA 估 **16%—18%** | **22%—27%**（模型） |
+| FY26 Q3（2025-10—12） | $805.0M / +31% | **$296.9M / +78% / 36.9%** | HTS $138.0M/+14%；HVAC $107.1M/+48%；PT $266.0M/+1% | 23.1%；$119.6M/**14.9%** | Climate GM 24.8%、EBITDA 17.9%；DC EBITDA 估 **18%—19%** | **28%—33%**（模型） |
+| FY26 Q4（2026-01—03） | $954.4M / +47% | **$402.0M / +158% / 42.1%** | HTS $161.7M/+19%；HVAC $98.3M/+51%；PT $294.0M/约持平 | 22.5%；$146.1M/**15.3%** | Climate GM 24.6%、EBITDA 18.7%；管理层称 DC EBITDA **19%—20%** | **33%—39%**（模型） |
+| FY27 Q1（2026-04—06） | $874.1M / +28% | **$348.6M / +90% / 39.9%** | Commercial HVAC $261.6M/+22%；PT $277.8M/-3%；分部抵销 -$13.9M | 20.8%；$106.5M/**12.2%** | DC GM **20.2%**、EBITDA **14.8%**；CHVAC GM 24.4%、EBITDA 15.9%；PT GM 17.6%、EBITDA 13.0% | **33%—38%**（模型） |
+
+资料来源：[FY26 Q1](https://investors.modine.com/news/news-details/2025/Modine-Reports-First-Quarter-Fiscal-2026-Results/default.aspx)、[FY26 Q2](https://investors.modine.com/news/news-details/2025/Modine-Reports-Second-Quarter-Fiscal-2026-Results/default.aspx)、[FY26 Q3](https://investors.modine.com/news/news-details/2026/Modine-Reports-Third-Quarter-Fiscal-2026-Results/default.aspx)、[FY26 Q4](https://investors.modine.com/news/news-details/2026/Modine-Reports-Fourth-Quarter-Fiscal-2026-Results/default.aspx)、[FY27 Q1](https://investors.modine.com/news/news-details/2026/Modine-Reports-First-Quarter-Fiscal-2027-Results/default.aspx)、[FY26 Q3 10-Q](https://www.sec.gov/Archives/edgar/data/67347/000110465926010790/mod-20251231x10q.htm)。FY26 Q2/Q4 的产品组单季值由累计披露差分复算，存在四舍五入误差。
+
+### 2.2 订单、交期、book-to-bill 与取消率
+
+| 财报季度 | Backlog / bookings / book-to-bill | 交期与产能信号 | 取消/延期信息 |
+|---|---|---|---|
+| FY26 Q1 | 未披露金额或 B2B；提高全年指引，称需求与扩产提供 FY2028 接近 $2B 数据中心收入路径 | 宣布北美扩产；库存已因 Climate 增长增加 | 未披露取消率 |
+| FY26 Q2 | 未披露金额或 B2B；数据中心全年增速预期提高至 >60% | Grenada 5 条 chiller 线中 2 条生产；Jefferson City 4 条、Dallas 5 条筹备；Q3/Q4 预计分别增加 $40M—$50M / $75M—$100M 季度供给能力 | 未披露取消率；首个模块化项目发生设计修改 |
+| FY26 Q3 | 未披露金额或 B2B；数据中心增速预期提高至 >70% | 新线和约 1,200 名新增员工进入爬坡；工作资本与 CapEx 显著上升 | 未披露取消率 |
+| FY26 Q4 | 连续两个季度订单纪录；签订 >$4B 容量协议并收 $165M 预付款 | 北美 chiller 产量同比约 5 倍；天气损失约 20 个班次；首批 Jefferson City chiller、Franklin AHU/CDU 出货 | 协议允许终止、缩减或延期；不能视作全部 backlog |
+| FY27 Q1 | backlog 过去一年近翻倍，连续三个季度订单纪录；全年数据中心收入开局有 **70%—80% firm orders**；LTA 下已有“couple of orders” | PO 可见度约两个季度、典型 lead time **4—6 个月**；Q2 预计环增约 $100M；四家关键供应商短缺 | 公司未披露取消率或 B2B；最新延迟是第三版定制模块化设计，管理层明确称**不是 chiller 取消** |
+
+结论：目前最可靠的订单验证是“70%—80% firm-order coverage + backlog 近翻倍 + 三个订单纪录季度 + 预付款”，而不是一个可审计的 backlog 数字。由于后续季度往往先以客户 forecast 占位，再转 PO，剩余 20%—30% 对排期和供应链更敏感。本报告第 8 节的 1%—4% 取消率均为情景假设，不是公司披露。
+
+## 3. FY2027 最新指引、收入占比与产品交叉验证
+
+### 3.1 指引与业务占比
+
+| 项目 | FY2026 基数 | FY2027 指引 | 隐含收入 | FY27 Q1 实际/占比 | 评价 |
+|---|---:|---:|---:|---:|---|
+| 公司总收入 | $3.181B | **+20%—35%** | **$3.817B—$4.295B** | $874.1M | PT 交易可能造成持续经营口径重列 |
+| Data Centers | $1.112B | **+60%—80%** | **$1.779B—$2.002B** | $348.6M / 39.9% | 最大增长引擎；Q1 +90% 但利润率受供给拖累 |
+| Commercial HVAC | 约 $950.2M（新口径重述基数） | **+5%—10%** | **约 $998M—$1.045B** | $261.6M / 29.9% | Q1 +22%，含数据中心盘管和 $19.7M 并购增量 |
+| Performance Technologies | $1.132B | **0%—+5%** | **$1.132B—$1.188B** | $277.8M / 31.8% | 非核心且待剥离；Q1 -3% |
+| 调整后 EBITDA | $471.0M | **$650M—$680M，+38%—44%** | EBITDA 率约 15.1%—17.8% | $106.5M / 12.2% | 依赖数据中心毛利正常化和组合改善 |
+| FCF | — | **收入的 4%—6%** | 约 $153M—$258M | -$5.0M | H2 必须显著回升 |
+
+分部占比之和超过 100% 是因为 $13.9M 分部间抵销。最新指引最侧重的显然是 Data Centers；但 Q1 Commercial HVAC +22% 也不可忽略，其中数据中心盘管是被新分部口径遮蔽的小型 AI 暴露。[FY2027 Q1 业绩](https://investors.modine.com/news/news-details/2026/Modine-Reports-First-Quarter-Fiscal-2027-Results/default.aspx)
+
+### 3.2 重点产品、型号、规模与利润率交叉验证
+
+| 业务 | 重点产品/型号与规格 | 公开验证 | 本报告对当前销售/利润率的判断 |
+|---|---|---|---|
+| Chiller / free cooling | **TurboChill 3+ MW** 风冷 hybrid free-cooling；TurboChill DCS 0.8—2MW；DCS Stainless Steel ≤2MW；DeltaChill DCS 110—1,010kW、R32；TurboChill Hydro 200—3,000kW；OptiChill FreeCool US 1,759kW；OptiChill DCS 1.85MW | 新 3MW 平台对应 AI 园区 MW 化；LTA 主要指向 chiller 容量；Q1 订单/backlog 主要集中 chiller 与 AHU | 数据中心产品最大收入池，当前估计 $620M—$710M TTM；短缺期毛利约 18%—24%，稳定规模下有望 25%—30% |
+| 精密空气侧 | **SmartCool ONE 35kW—1MW** CRAH；AireWall ONE 200—650kW、2—12 EC fans；SmartCool 11—233kW；iDrive 5—83kW；InRak 10—67kW；OnRak RDHx ≤35kW；定制 Scott Springfield/CDI AHU | D2C 后仍要处理残余热；AHU 同样是 backlog 集中项；AireWall 有约 33,000 种配置 | 当前估计 $360M—$450M；毛利约 20%—27%，定制设计、控制和本地交付优于标准 CRAH |
+| CDU / hybrid liquid | Airedale CDU **400kW—2MW+**；N+1 泵/驱动/过滤；25μm filter；不锈钢管路；IEEE 519 兼容主动谐波滤波；最多 8 台组网、3 种 footprint | Franklin 已在 FY26 Q4 出货；单相 D2C 是行业主线，但未见公开的具名 hyperscaler AVL 或单位出货 | 小基数高增，当前估计 $35M—$70M；导入期毛利约 15%—23%，规模化可到 23%—30%；竞争壁垒低于 chiller/AHU |
+| 模块化数据中心热管理 | 预制模块内集成 chiller/AHU/CDU/controls；Franklin/Dallas 可支持 | 已向一客户初始出货，但最新一季因第三次 bespoke design iteration 延后 | 当前估计 $20M—$55M；工程导入期毛利约 0%—15%，成熟后 18%—25%；增长潜力大、执行不确定性也最大 |
+| 浸没式液冷 | TMGcore 单相/两相 IP | 2024 年以 $12M 买入；未见具名量产客户、AVL、收入或大规模认证 | 战略期权，不应给主情景高收入；未来 12 个月大概率仍低于 CDU |
+| Controls / service | **Cooling System Optimizer**、分布式 PLC failover、设备控制、备件与维护；公司宣称系统可节能最高约 45% | 已服务 20MW+ 水环，欧洲历史安装超过 200MW；软件、调试与服务提高粘性 | 当前估计 $90M—$140M；毛利约 35%—55%，是容易被低估的小业务 |
+| 数据中心盘管 | Commercial HVAC 内定制 coil/heat exchanger | FY27 Q1 CHVAC 增长明确包含更高数据中心 coil 销售 | 广义 AI 收入估计 $90M—$160M；毛利约 18%—24%，客户可能内制，壁垒中等 |
+
+产品来源：[TurboChill 3MW](https://investors.modine.com/news/news-details/2026/Airedale-by-Modine-Unveils-TurboChill-3MW-Redefining-Air-Cooled-Efficiency-for-AI-Data-Centers/default.aspx)、[Airedale chiller 组合](https://www.airedale.com/products/chillers/)、[数据中心产品组合](https://www.airedale.com/data-centers/products/)、[CDU](https://www.airedale.com/data-centers/liquid-cooling/cdu/)、[Cooling System Optimizer](https://www.airedale.com/products/cooling-system-optimizer/)。利润率和产品收入均为本报告模型，不是公司披露。
+
+### 3.3 明确跳过的低增长/非 AI 业务
+
+- PT 的 On-Highway、Heavy-Duty Equipment、传统汽车及大部分 stationary power 热管理：待剥离，和核心数据中心冷却协同低；发电机组热管理虽受数据中心备用电源拉动，但规模未单独披露。
+- L.B. White 农业、施工、活动场地供暖；普通 unit heater、garage heat。
+- 普通商业/住宅 HVAC、学校 IAQ、与数据中心无关的除湿、制冷与涂层业务。
+- 低密度机房的传统 CRAC、≤35kW OnRak：保留 retrofit/残余热场景，但不足以承担约 142kW GB300 或 187—227kW Rubin 机架的主散热。
+
+## 4. 每个高增长/关键产品的当前收入贡献与战略评分
+
+先建立可复核基数：数据中心 TTM 收入约 **$1.274B**，由 $1,112.1M FY2026 减 FY26 Q1 旧口径 $186.9M、加 FY27 Q1 新口径 $348.6M 得出；由于分部重述差异，合理误差约 ±$5M。以下产品拆分是按设备规格、工厂布局、管理层订单集中度与行业 BOM 反推，合计约 $1.275B，**不代表公司披露**；Commercial HVAC 内数据中心盘管另列，不与分部合计相加。
+
+评分均为 1—5，5 最高；“供需紧张”越高越供不应求。
+
+| 关键产品/业务 | 当前 TTM 收入贡献（模型） | 收入增速估算 | 当前毛利率估算 | AI 栈重要性 | 时间紧急性 | 供需紧张 | 垄断/替代防御 | 溢价能力 | 依据 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| Chiller/free-cooling/dry cooler | **$660M**（$620M—$710M） | +90%—120% | 18%—24%；正常化 25%—30% | **5.0** | **5.0** | **5.0** | 3.5 | 4.0 | LTA、订单集中、3MW 平台、14 条北美规划线 |
+| 精密 AHU/CRAH/fan wall/RDHx | **$410M**（$360M—$450M） | +55%—80% | 20%—27%；正常化 25%—31% | 4.5 | 4.5 | 4.5 | 3.0 | 3.5 | D2C 残余热、Scott Springfield 定制能力、AHU backlog |
+| CDU/混合液冷/浸没式 | **$52M**（$35M—$70M） | >100%（小基数） | 15%—23%；成熟 23%—30% | **5.0** | **5.0** | 3.5 | 2.5 | 3.0 | 400kW—2MW+，刚进入 Franklin 出货，公开 AVL 不足 |
+| 模块化数据中心热管理 | **$40M**（$20M—$55M） | >100%（小基数） | 0%—15%；成熟 18%—25% | 4.0 | 4.5 | 3.0 | 2.5 | 3.0 | 客户需求真实，但仍在第三轮定制设计 |
+| Controls/service/parts | **$113M**（$90M—$140M） | +25%—45% | **35%—55%** | 4.0 | 3.5 | 2.5 | 3.5 | **4.0** | 分布式控制、调试、生命周期服务提高粘性 |
+| Commercial HVAC 内数据中心 coils | **$120M**（$90M—$160M，另计） | +20%—40% | 18%—24% | 4.0 | 4.0 | 3.5 | 2.5 | 3.0 | Q1 明确由更高数据中心 coil 销售推动 |
+
+行业交叉验证：本项目估计 2026 年全球设施冷却（不含冷板/CDU）约 **$16B—$25B**，未来十二个月约 $19.5B—$28.5B；Carrier 2026Q1 数据中心订单增长超过 500%，其 backlog 已覆盖当年销售，说明 Modine 的订单热度并非孤立事件。[本项目：风冷、冷水机组与 HVAC](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-07-10.md)；[Carrier 2026Q1](https://www.carrier.com/us/en/news/carrierreports-first-quarter-2026-results/)
+
+## 5. 一年后产品收入贡献：基准、乐观、极度乐观
+
+预测期为 2026-08—2027-07，增速相对上节 TTM 模型基数。评分会随采用和供需改变，但“AI 栈重要性”不因情景机械上调。三种情景的数据中心产品收入分别合计 **$2.15B / $2.45B / $2.80B**；数据中心盘管仍在 Commercial HVAC 另计。
+
+| 产品 | 情景 | T+12M 收入 | 同比增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/替代防御 | 溢价能力 | 核心假设 |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| Chiller/free cooling | 基准 | **$1.14B** | +73% | 5.0 | 5.0 | 4.5 | 3.5 | 4.0 | 3MW 线正常爬坡，Q2 后短缺缓解 |
+|  | 乐观 | **$1.32B** | +100% | 5.0 | 5.0 | 5.0 | 4.0 | 4.5 | LTA 订单按期下达，多站点复制 |
+|  | 极度乐观 | **$1.52B** | +130% | 5.0 | 5.0 | 5.0 | 4.0 | 4.5 | 关键供应商零重大延误，新增线接近满载 |
+| 精密空气侧 | 基准 | **$670M** | +63% | 4.5 | 4.5 | 4.0 | 3.0 | 3.5 | 高密机架仍保留 10%—30% 残余热空气路径 |
+|  | 乐观 | **$710M** | +73% | 4.5 | 4.5 | 4.5 | 3.5 | 4.0 | AHU/fan wall 与 chiller 同项目 attach |
+|  | 极度乐观 | **$770M** | +88% | 4.5 | 4.5 | 5.0 | 3.5 | 4.0 | 定制 AHU 成为多客户标准设计 |
+| CDU/液冷 | 基准 | **$110M** | +112% | 5.0 | 5.0 | 3.5 | 2.5 | 3.0 | 单相 D2C 普及，Modine 仍是第二梯队供应商 |
+|  | 乐观 | **$150M** | +188% | 5.0 | 5.0 | 4.0 | 3.0 | 3.5 | 获得多个具名或可验证大客户项目 |
+|  | 极度乐观 | **$200M** | +285% | 5.0 | 5.0 | 4.5 | 3.5 | 4.0 | 2MW+ CDU 批量 AVL，跨站点复制 |
+| 模块化热管理 | 基准 | **$90M** | +125% | 4.0 | 4.5 | 3.0 | 2.5 | 3.0 | 第三版设计按期验收，未再大改 |
+|  | 乐观 | **$100M** | +150% | 4.0 | 4.5 | 3.5 | 3.0 | 3.5 | 第二客户导入，工程复用率提高 |
+|  | 极度乐观 | **$120M** | +200% | 4.0 | 4.5 | 4.0 | 3.0 | 3.5 | 形成可复制模块，不再是一次性工程 |
+| Controls/service/parts | 基准 | **$140M** | +24% | 4.0 | 3.5 | 2.5 | 3.5 | 4.0 | 随装机基数自然 attach |
+|  | 乐观 | **$170M** | +50% | 4.0 | 3.5 | 3.0 | 4.0 | 4.5 | 多站点统一控制、服务合同 attach 上升 |
+|  | 极度乐观 | **$190M** | +68% | 4.0 | 3.5 | 3.5 | 4.0 | 4.5 | 软件/服务成为平台级标准层 |
+| 数据中心 coils（另计） | 基准 | **$150M** | +25% | 4.0 | 4.0 | 3.5 | 2.5 | 3.0 | CHVAC 按指引中低位增长 |
+|  | 乐观 | **$180M** | +50% | 4.0 | 4.0 | 4.0 | 3.0 | 3.5 | 数据中心定制盘管 share gain |
+|  | 极度乐观 | **$220M** | +83% | 4.0 | 4.0 | 4.5 | 3.0 | 3.5 | 客户外包比例和金属价格传导同时提高 |
+
+## 6. BOM、单位内容量、价格传导、当前产能与认证
+
+### 6.1 统一密度基准与单位内容量
+
+本报告以 **GB300 NVL72 约 142kW/rack、72 GPU/rack** 为统一基准：1MW IT 负载约 7.04 racks、507 GPUs。为回应 optical port 口径，另采用每 GPU 4 个 800G-equivalent port 的敏感性映射，即约 2,028 ports/MW。Modine **不生产光模块或光端口，直接 optical-port BOM 内容量为 $0**；下表“每 port”仅把设施冷却经济价值分摊到端口，不能理解为 Modine 在光链路上的售价。
+
+| 产品层 | 每 MW IT 的 Modine 经济内容量 | 每 142kW rack | 每 GPU | 每 optical port：直接 / 分摊 | 口径说明 |
+|---|---:|---:|---:|---:|---|
+| Chiller/free-cooling/dry cooler | **$0.72M—$1.80M** | $102k—$256k | $1.42k—$3.55k | **$0 / $355—$888** | 设备 $0.6M—$1.2M/MW × 1.2—1.5 冗余/plant factor |
+| 精密空气侧残余热路径 | **$0.08M—$0.25M** | $11k—$36k | $158—$493 | **$0 / $39—$123** | D2C 捕获大部分芯片热后的 CRAH/AHU/fan wall/RDHx |
+| CDU（不含冷板/QD） | **$0.20M—$0.55M** | $28k—$78k | $395—$1.09k | **$0 / $99—$271** | 仅 CDU/设施接口；冷板、软管、QD 不属于 Modine |
+| 模块化热管理系统 | **$1.20M—$2.50M** | $170k—$355k | $2.37k—$4.93k | **$0 / $592—$1.23k** | 集成值，**不可再与 chiller/CDU/airside 相加** |
+| Controls/commissioning | **$0.03M—$0.10M** | $4k—$14k | $59—$197 | **$0 / $15—$49** | 年服务费另按已装冷却资本额约 3%—6% 估算 |
+| 外售数据中心 coils | **$0.05M—$0.15M** | $7k—$21k | $99—$296 | **$0 / $25—$74** | 常作为其他 OEM/AHU 的部件，避免同整机双计 |
+
+本项目行业基准还显示，100—150kW 机架的完整冷却交付价值约 $150k—$400k/rack；Rubin 约 187—227kW/rack 时可达 $230k—$600k/rack；设施一次侧增量约 $1.2M—$2.5M/MW。该区间与上表的 Modine 设施侧内容量一致，但完整系统还包括非 Modine 冷板、QD、管路、集成及 EPC。[本项目：AI 服务器整机与机架集成](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-07-10.md)；[本项目：液冷小组件与流体控制](../../行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-07-10.md)
+
+### 6.2 产品 BOM 拆分
+
+| 产品 | BOM/交付价值拆分（销售成本与交付价值的行业模型） | 主要瓶颈 |
+|---|---|---|
+| 3MW 风冷 chiller | compressor/motor/bearing/VSD 22%—28%；heat exchanger 18%—24%；fans 7%—10%；controls/switchgear 8%—11%；frame/piping 12%—16%；refrigerant 1%—3%；labor/FAT 10%—14%；logistics/warranty 6%—10% | 压缩机、EC fans、VSD/功率电子、换热器材料、熟练装配与 FAT |
+| CRAH/AHU/fan wall | coil 25%—34%；fans 20%—29%；casing 12%—18%；valve/sensor/PLC 8%—14%；labor 10%—15%；logistics 7%—12% | EC fans、coils、controls、定制工程与现场尺寸 |
+| CDU | plate HX 20%—30%；pump/VSD 20%—30%；stainless pipe/valves 15%—20%；filters 8%—12%；controls/AHF 10%—15%；frame/labor/FAT 15%—25% | 泵、PHE、阀件、洁净度、泄漏/压力测试、客户接口 |
+| 模块化热管理 | 嵌入式 chiller/AHU/CDU 70%—80%；enclosure/piping 10%—15%；controls/test 5%—10%；engineering/commissioning 5%—10% | bespoke design、跨系统联调、运输尺寸、现场 SAT |
+| Controls/service | PLC/sensors/network 20%—30%；software/engineering 40%—55%；panel/test 15%—25%；commissioning 10%—20% | 控制逻辑、客户数据接口、调试人员；硬件本身不稀缺 |
+| Coils | copper/aluminum/stainless 50%—65%；fabrication 20%—30%；coating/test 10%—20% | 金属价格、钎焊/焊接能力、腐蚀与压力认证 |
+
+上述 HVAC BOM 来自本项目行业报告的 3MW chiller 与 CRAH/AHU 拆分；CDU、模块和控制为组件级工程估算。[本项目：风冷、冷水机组与 HVAC](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-07-10.md)；[本项目：冷却液、水处理、过滤与制冷剂](../../行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-07-10.md)
+
+### 6.3 价格传导链
+
+**铜/铝/钢/不锈钢、制冷剂、半导体 → compressor/fan/pump/PHE/PLC 供应商 → Modine 设计集成、装配与 FAT → EPC/MEP/模块厂 → 数据中心业主 → commissioning/SAT 与长期服务。**
+
+- 最快的价格传导来自客户规格变更、加急交付、容量预约和 change order；$165M 预付款证明“保留产能”本身有价格。
+- 铜铝钢、关税和制冷剂通常通过报价有效期、指数条款或后续项目重定价传导，存在 1—2 季度滞后；固定价订单会先压毛利。
+- 真正可持续溢价来自单位占地 MW、PUE/WUE、free-cooling 小时、低 GWP、噪音/水耗、冗余、FAT/SAT 通过率与交期，而非简单的金属成本加成。
+- 服务和控制的毛利可显著高于整机；标准化设备若没有控制/服务 attach，随新增产能会逐步商品化。
+
+### 6.4 当前可执行产能、采用程度与认证阶段
+
+管理层称已部署和规划中的设施最终可支持约 **$4B 年数据中心收入能力**；这属于未来 nameplate，不是 2026-07-31 的可执行产能。本报告用 FY27 Q2 预计数据中心收入约 $448.6M（年化 $1.79B）、新增线状态和供应限制，估计当前可执行年产能约 **$1.9B—$2.3B**。
+
+| 产品 | 2026-07-31 可执行销售产能估算 | 供应链采用程度 | 已公开的认证/阶段 | 关键缺口 |
+|---|---:|---|---|---|
+| Chiller/free cooling | **$1.0B—$1.2B/年** | 两个 hyperscaler + 一个大型 neocloud 提高 forecast；一既有客户签 LTA | TurboChill DCS Stainless Steel 宣称符合 Seismic Design Category D；3MW 平台已发布 | 未公开具名客户 AVL、独立性能证书或逐型号订单 |
+| AHU/CRAH/fan wall | **$0.60B—$0.75B/年** | AHU 是 backlog 集中项；Scott Springfield/Franklin 提供北美定制能力 | 项目级 FAT/SAT 为主；无统一跨客户“认证” | EC fan/coil/controls 与新增劳工爬坡 |
+| CDU/liquid | **$0.08B—$0.12B/年** | Franklin 已出货；处于从项目导入到批量采用阶段 | 主动谐波滤波器设计为 IEEE 519 兼容；未公开具名 hyperscaler AVL | 缺少冷板/QD 自有栈，生态地位弱于 Vertiv/CoolIT 等 |
+| 模块化热管理 | **$0.05B—$0.08B/年** | 单客户早期项目，第三版设计迭代 | 仍处客户设计验证/工程变更阶段 | 设计冻结、运输、跨系统验收 |
+| Controls/service | **$0.14B—$0.18B/年** | 20MW+ loop、欧洲历史安装 200MW+；随主设备 attach | 项目级控制、网络和 failover 验证 | 缺少统一披露的软件 ARR/attach rate |
+| 数据中心 coils（另计） | **$0.16B—$0.22B/年** | 已进入多个 OEM/项目，Q1 销售增长 | 压力、材料与项目级认证 | OEM 内制与通用盘管竞争 |
+
+工厂证据：北美规划约 **14 条 chiller 线**——Grenada 5 条、Jefferson City 4 条、Grand Prairie/Dallas 5 条；另有 UK 扩容、Chennai 数据中心生产，以及 Franklin 的 AHU/CDU/模块化能力。FY26 Q2 时 Grenada 仅 2 条生产，Jefferson City/Dallas 仍在分阶段投产，因此“14 条”不能等同于 14 条成熟满产线。[FY26 Q2 电话会](https://s205.q4cdn.com/270741342/files/doc_financials/2026/q2/Modine_TRX_Q2-FY26.pdf)；[FY26 Q4 电话会](https://s205.q4cdn.com/270741342/files/doc_financials/2026/q4/Modine_Transcript-Q4-FY26.pdf)
+
+## 7. 一年后产能、供应链采用与认证情景
+
+这里预测的是**可执行年化销售产能**，不是收入；产能会高于实际收入，以吸收季节性、客户排期、维护和备件约束。
+
+| 产品 | 基准 T+12 产能 | 乐观 T+12 产能 | 极度乐观 T+12 产能 | 基准采用/认证阶段 | 乐观阶段 | 极度乐观阶段 |
+|---|---:|---:|---:|---|---|---|
+| Chiller/free cooling | **$1.50B** | **$1.85B** | **$2.20B** | 新线完成项目 FAT/SAT，LTA 按 2027 约 20%—25% 节奏转订单 | 3MW 在多个站点/客户进入 AVL，供应商 12—18 月容量协议落地 | 多区域参考设计，新增线接近成熟 OEE，成为平台级双/多供之一 |
+| AHU/CRAH/fan wall | **$0.85B** | **$0.95B** | **$1.05B** | 与 chiller 同站点 attach，定制项目仍占主导 | AireWall/SmartCool/定制 AHU 跨站复制 | 多 hyperscaler 标准化模块，工程复用显著提高 |
+| CDU/liquid | **$0.15B** | **$0.22B** | **$0.30B** | 至少一个大客户批量项目，但仍无完整冷板栈 | 多客户/多站点 AVL，400kW—2MW+ 系列量产 | 成为设施侧 CDU 主要第二来源并获得平台级资格 |
+| 模块化热管理 | **$0.12B** | **$0.16B** | **$0.20B** | 当前客户设计冻结并通过首站 SAT | 第二客户采用，可复用 BOM 达到多数 | 形成标准预制热模块，而非一次性定制工程 |
+| Controls/service | **$0.22B** | **$0.25B** | **$0.28B** | 控制/服务随主设备装机自然增长 | 多站点统一优化与维护合同 attach | 成为客户设施热管理控制层之一，软件/服务占比上升 |
+| **Data Centers 合计** | **$2.84B** | **$3.43B** | **$4.03B** | 利用率约 76% 对应 $2.15B 收入 | 利用率约 71% 对应 $2.45B 收入 | 接近管理层约 $4B 最终能力；利用率约 69% 对应 $2.80B 收入 |
+| 数据中心 coils（另计） | $0.22B | $0.26B | $0.32B | 延续现有 OEM/项目认证 | 定制盘管 share gain | 多站点外包标准化 |
+
+“认证”必须按产品和客户区分：Seismic Design Category D、IEEE 519 兼容是产品/设计属性；客户 LTA、PO 和 forecast 是商业采用；FAT/SAT/AVL 才是项目或供应商资格。三者不可混称。极度乐观情景达到约 $4.03B，仅代表在现有/规划厂房、外包和供应商纵向整合都顺利时接近管理层 ceiling；超过该水平还需要额外 CapEx 或 outsourcing。
+
+## 8. 用真实订单信号与供给约束预测未来一年增速
+
+### 8.1 订单证据漏斗
+
+1. **最硬证据**：$165M 预付款已经入账；FY27 开局有 70%—80% 数据中心全年收入对应 firm orders；LTA 已产生“couple of orders”。
+2. **强但不量化**：backlog 一年近翻倍、连续三季 record orders，两个 hyperscaler 和一个大型 neocloud 上调 forecast。
+3. **交付窗口**：典型订单约 4—6 个月，PO 可见度约两个季度；LTA 日历年节奏约 2027 年 20%—25%、2028/2029 各约 35%—40%。若按 $4B 最低值机械映射，2027 容量约 $0.8B—$1.0B、2028/2029 各约 $1.4B—$1.6B，但这是预约节奏，不是保证收入。
+4. **供给约束**：Q1 有四家关键供应商未按期交付，产线重排、闲置人工和未吸收费用；管理层称 FY27 所需供应已“secured”，但仍取决于供应商实际 delivery。
+5. **负面证据**：公司没有披露 backlog 美元额、B2B、取消率、客户项目名或每台 ASP。最新模块化延期由客户第三轮设计修改导致，不是 chiller 订单取消。
+
+关于“小道消息”：电话会上分析师用过“A-quad”称呼，市场可能据此猜测 Amazon/AWS；管理层没有确认。本报告只采用“既有战略客户、两个 hyperscaler、一个大型 neocloud”这些公司原话，不给任何未经证实的客户名或项目金额进入模型。
+
+### 8.2 FY2027 与未来十二个月情景
+
+取消率与排期延误率均是本报告压力测试。它们反映 LTA 可终止/延期条款、forecast 转 PO 的损耗和供应商执行，不是公司披露。
+
+| 情景 | FY2027 Data Centers | 未来 12M Data Centers | T+12 可执行产能 | firm/订单转化假设 | 取消率假设 | 排期后移假设 | 关键利润假设 |
+|---|---:|---:|---:|---|---:|---:|---|
+| **基准** | **$1.84B，+65%** | **$2.15B，+69%** | $2.84B | 全年 firm coverage 70%—75%，余量由 forecast 转 PO | 2%—4% | 8%—12% | Q2 DC EBITDA 19%—20%，H2 20%—22%；Q1 损失不完全追回 |
+| **乐观** | **$1.95B，+75%** | **$2.45B，+92%** | $3.43B | LTA 和新增客户按期释放，firm coverage 80%—85% | 1%—2% | 4%—8% | H2 22%—24%，产品/价格组合改善 |
+| **极度乐观** | **$2.00B，+80%** | **$2.80B，+120%** | $4.03B | FY27 达公司指引上沿，FY28Q1 继续强爬坡 | <1% | <5% | 新线快速过良率，供应商无再失约，H2 24% 左右 |
+
+继续经营业务的 TTM 基数约 **$2.272B**（Data Centers $1.274B + Commercial HVAC $0.998B）。若 Commercial HVAC 未来十二个月分别达到 $1.05B/$1.10B/$1.15B，则纯气候平台收入为：
+
+| 情景 | T+12 纯气候收入 | 相对当前继续经营基数增长 | 说明 |
+|---|---:|---:|---|
+| 基准 | **$3.20B** | **+41%** | 数据中心是绝大多数增量 |
+| 乐观 | **$3.55B** | **+56%** | 盘管、控制与定制 AHU 交叉销售增加 |
+| 极度乐观 | **$3.95B** | **+74%** | 接近当前规划设施的能力边界 |
+
+FY2027 公司总收入指引仍包含 PT；若 Gentherm 交易完成，PT 很可能改列 discontinued operations，导致报告口径重述。因此最干净的跟踪方式是分别看 Data Centers、Commercial HVAC 的收入/EBITDA 与 continuing FCF，而不是机械比较合并收入。
+
+## 9. 竞争格局、技术主流、替代风险与客户切换成本
+
+### 9.1 分产品竞争
+
+| 产品 | 主要竞争对手 | Modine 相对优势 | 替代方案/风险 | 客户切换成本 |
+|---|---|---|---|---|
+| Chiller/free cooling | Johnson Controls/YORK、Trane、Carrier/Motivair、Daikin、Mitsubishi/MHI、Vertiv/Schneider 集成方案 | Airedale free-cooling、3MW 级平台、AHU+controls 组合、北美本地扩产、既有 LTA | 高温水 D2C 降低机械制冷小时；同行扩产；压缩机/fan/VSD 供应受限；低 GWP 法规 | **高**：设计导入、声学/水力/冗余、FAT/SAT/AVL，通常 12—36 个月 |
+| AHU/CRAH/fan wall | Munters、Vertiv、Schneider、STULZ、Delta、Carrier、JCI、Trane | Scott Springfield 定制能力、AireWall/SmartCool 宽规格、与 chiller/control 同包 | D2C 减少空气侧内容量；EC fan/coil 标准化；现场空间变化 | **中高**：尺寸、风道、控制和机电设计锁定，通常 9—24 个月 |
+| CDU | Vertiv、Schneider/Motivair、CoolIT、Boyd/Eaton、Delta、STULZ、nVent、LiquidStack | 设施水环与 chiller/AHU 集成、400kW—2MW+ 范围、Franklin 本地制造 | 缺少自有冷板/QD；OCP 标准降低接口锁定；漏液/水质责任 | **中等**：约 6—12 个月，标准接口提高可替换性 |
+| 浸没式液冷 | LiquidStack、Submer、GRC、Asperitas | TMGcore 单/两相 IP、可与设施侧结合 | 供应链和运维生态未成熟，D2C 已占主流；两相流体/监管风险 | 技术一旦采用切换高，但当前采用率低、商业壁垒尚未验证 |
+| 模块化热管理 | Vertiv、Schneider、Eaton、Delta、各类 prefab/EPC | 热管理设备完整、可在 Franklin/Dallas 集成 | 缺少完整电气/UPS/母线栈；bespoke 工程侵蚀毛利；客户反复改版 | **中高**：设计冻结后高，冻结前低；当前仍在早期迭代 |
+| Controls/service | Schneider EcoStruxure、Vertiv iCOM/DCIM、JCI OpenBlue、Carrier Abound、Trane Tracer | 对自有 chiller/AHU 的底层控制深、failover、调试与服务 attach | 上层 BMS/DCIM 可多厂商管理；软件能力披露少 | **高**：运行逻辑、历史数据和运维流程形成粘性 |
+| Coils | Super Radiator Coils、Alfa Laval/Kelvion/SWEP/API、OEM 内制 | 热设计和规模制造、可服务自有及外部 OEM | 金属加工商品化、客户内制、价格竞争 | **中低**：项目认证后中等，但下一项目可重招标 |
+
+### 9.2 哪种技术会成为主流
+
+未来 12—24 个月最可能的主流不是“全空气”或“全液冷”，而是：**单相 D2C 冷板 + CDU/设施水环 + 高温水/free cooling + 机械制冷 trim + 残余空气侧 + 智能控制**。理由如下：
+
+- 本项目预计 2026 年 D2C attach 约 55%—70%，2027 年 70%—85%；GB300 约 142kW/rack、Rubin 约 187/227kW/rack，纯风冷已不可行。[本项目：AI 数据中心规模与订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+- 但 D2C 通常只处理主要芯片热；内存、NIC、PSU、存储和管路散热仍需 CRAH/AHU/fan wall，设施侧最终仍要排热。
+- ASHRAE/NEMA/PNNL 2026 框架同时强调 50—120kW+ rack、liquid/thermal zones、economizer、暖水、dry cooling 与控制，并未指定单一赢家。[ASHRAE/NEMA/PNNL AI 数据中心框架](https://www.ashrae.org/about/news/2026/ashrae-nema-and-pnnl-release-ai-data-center-energy-performance-framework-to-guide-next-generation-design-and-operation)
+- Data Center World 2026 业内议题同样聚焦 hybrid air/liquid、模块化与智能控制。[会议议程](https://schedule.datacenterworld.com/session/too-hot-to-handle-smarter-data-center-cooling-for-smarter-workloads/916515)
+- OCP 的 UQD v2、BMQC、PBMC 与单相 cold-plate 规范会加快液冷采用，但也会降低接口厂商的专有锁定；Modine 的设施集成优势比接口垄断更重要。[OCP Cold Plate 标准](https://www.opencompute.org/wiki/Cooling_Environments/Cold_Plate)
+
+因此，**TurboChill 3MW + free cooling 是近期主流方向**，但不是永续垄断；**CDU 是战略必需品但 Modine 仍是挑战者**；**浸没式液冷是低概率期权**；**模块化热管理有潜力但必须先证明可复制性**；**controls/service 是规模虽小、利润和切换成本最好的潜在业务**。
+
+### 9.3 主要风险
+
+1. **供应链与爬坡**：FY27 Q1 已实际发生四家关键供应商失约、停线和 450—550bp 过量人工/未吸收费用；如果 Q2 EBITDA 率未回到 19%—20%，全年指引可信度显著下降。
+2. **客户集中与 LTA 误读**：FY2026 前十大客户占收入 49%，一名全球科技客户占 11%；未来单一 LTA 客户权重可能更高，且协议可终止、缩减或延期。
+3. **订单透明度**：没有 backlog 金额、B2B、取消率、每台 ASP、客户项目名；“record orders”无法单独审计。
+4. **液冷栈不完整**：Modine 不生产 GPU 冷板、QD、软管或服务器；CDU 接口标准化会让客户更容易多供。
+5. **技术替代**：暖水 D2C、dry cooler 和 free cooling 会减少压缩机制冷小时；若客户转向 chiller-less 设计，传统 chiller 内容量受压。但极端天气、混合密度与冗余需求保留 mechanical trim。
+6. **制冷剂与法规**：美国 2027-01-01 起相关 GWP≤700 趋势、欧盟大型 chiller GWP<750 方向有利于 R32/R513A；仍使用 R134a 的产品需迁移，带来认证、库存和工程成本。
+7. **模块化项目风险**：当前项目第三轮设计迭代说明 bespoke 需求可能延长验收、压低早期毛利。
+8. **资本与现金流**：库存 $609M、FY27 CapEx $150M—$200M、Q1 FCF -$5M；若订单延期，营运资本会从护城河变成负担。
+9. **组织风险**：Data Centers 负责人因个人原因意外离任，CEO 暂代；在 90% 增长期更换领导增加执行压力。
+10. **交易与估值**：PT/Gentherm 交易尚未完成；24x forward PE 已要求较高盈利兑现，TTM PE 又被一次性养老金费用扭曲，估值对每季 margin miss 极敏感。
+
+## 10. 投资判断与验证清单
+
+Modine 的产业位置真实、需求证据强、容量协议和预付款有价值；它是 AI 数据中心设施侧冷却扩张的高弹性受益者。公司并非冷板/液冷全栈垄断者，真正的护城河是多设备热工集成、项目设计导入、产能和交付速度。当前最合理的中心情景是未来十二个月数据中心收入约 **$2.15B**、纯气候收入约 **$3.20B**，而非把 >$4B LTA 当作一年收入。
+
+未来每季应按以下顺序验证，任何一项连续两个季度恶化都应下调情景：
+
+1. Data Centers 收入：FY27 Q2 是否达到约 **$449M**，全年是否仍在 $1.779B—$2.002B 指引内。
+2. Data Centers EBITDA 率：Q2 **19%—20%**、H2 >20% 是否兑现；毛利率是否从 20.2% 回升。
+3. 关键供应商：四家短缺是否解除；是否签成 12—18 个月容量协议或启动纵向整合。
+4. 新线：Grenada、Jefferson City、Dallas、Franklin、UK、Chennai 的投产/OEE/FAT 节奏，而非只数“规划线”。
+5. 订单质量：firm-order coverage、LTA 下 PO 数量、客户 forecast 转 PO 比率；要求管理层补充 backlog 金额/B2B/取消率。
+6. 客户/项目：CDU 和 3MW chiller 是否出现可验证多客户 AVL、跨站点复制；模块化设计是否冻结并通过 SAT。
+7. Working capital：库存增长是否重新低于收入增长，FCF 是否达到全年收入 4%—6%。
+8. 商业 HVAC 的隐含 AI 暴露：数据中心 coils 与定制 AHU 是否继续高于该分部 5%—10% 指引。
+9. PT 交易：监管、交割、$210M 现金用途、$45M—$55M 费用与重列后的持续经营利润率。
+10. 技术路线：D2C attach、高温水、free-cooling 小时、低 GWP 转换是否使 chiller ASP/台数与 airside attach 偏离模型。
+
+## 资料来源与口径说明
+
+### 公司与监管文件
+
+- [FY2026 10-K，2026-05](https://www.sec.gov/Archives/edgar/data/67347/000110465926066795/mod-20260331x10k.htm)
+- [FY2027 Q1 业绩，2026-07-29](https://investors.modine.com/news/news-details/2026/Modine-Reports-First-Quarter-Fiscal-2027-Results/default.aspx)
+- [FY2027 Q1 电话会文本](https://stockanalysis.com/stocks/mod/transcripts/681165-q1-2027/)
+- [FY2026 Q4 业绩](https://investors.modine.com/news/news-details/2026/Modine-Reports-Fourth-Quarter-Fiscal-2026-Results/default.aspx)；[Q4 电话会 PDF](https://s205.q4cdn.com/270741342/files/doc_financials/2026/q4/Modine_Transcript-Q4-FY26.pdf)
+- [FY2026 Q3 业绩](https://investors.modine.com/news/news-details/2026/Modine-Reports-Third-Quarter-Fiscal-2026-Results/default.aspx)；[Q3 10-Q](https://www.sec.gov/Archives/edgar/data/67347/000110465926010790/mod-20251231x10q.htm)
+- [FY2026 Q2 业绩](https://investors.modine.com/news/news-details/2025/Modine-Reports-Second-Quarter-Fiscal-2026-Results/default.aspx)；[Q2 电话会 PDF](https://s205.q4cdn.com/270741342/files/doc_financials/2026/q2/Modine_TRX_Q2-FY26.pdf)
+- [FY2026 Q1 业绩](https://investors.modine.com/news/news-details/2025/Modine-Reports-First-Quarter-Fiscal-2026-Results/default.aspx)；[Q1 10-Q](https://www.sec.gov/Archives/edgar/data/67347/000155837025009865/mod-20250630x10q.htm)
+- [$4B 长期产能协议](https://investors.modine.com/news/news-details/2026/Modine-Announces-Landmark-4-Billion-Long-Term-Capacity-Agreement-through-2029-with-Strategic-Data-Center-Customer-for-Airedale-by-Modine-Cooling-Solutions/default.aspx)
+- [TurboChill 3MW 公告](https://investors.modine.com/news/news-details/2026/Airedale-by-Modine-Unveils-TurboChill-3MW-Redefining-Air-Cooled-Efficiency-for-AI-Data-Centers/default.aspx)
+
+### 行业、标准与本项目产业资料
+
+- [ASHRAE/NEMA/PNNL AI Data Center Energy Performance Framework](https://www.ashrae.org/technical-resources/ai-data-center-framework/energy-and-thermal-efficiency)
+- [OCP Cold Plate / UQD/BMQC/PBMC 工作组](https://www.opencompute.org/wiki/Cooling_Environments/Cold_Plate)
+- [Data Center World 2026 混合冷却议题](https://schedule.datacenterworld.com/session/too-hot-to-handle-smarter-data-center-cooling-for-smarter-workloads/916515)
+- [本项目：风冷、冷水机组与 HVAC](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-07-10.md)
+- [本项目：直液冷系统](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-07-10.md)
+- [本项目：液冷小组件与流体控制](../../行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-07-10.md)
+- [本项目：冷却液、水处理、过滤与制冷剂](../../行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-07-10.md)
+- [本项目：AI 数据中心规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+- [本项目：AI 服务器整机与机架集成](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-07-10.md)
+
+### 模型边界
+
+- 公司披露值：财报、SEC 文件、产品页、电话会与正式公告中的数字。
+- 可复算值：TTM、季度差分、分部占比、利润率、指引隐含收入。
+- 模型估算值：产品级收入/毛利、AI 专属占比、单位内容量、当前/未来产能、取消率、排期延误率和三情景预测。所有模型值均使用区间或明确情景，不应冒充管理层指引。
+- 本报告未把匿名论坛传闻、未经确认的客户名、券商口头称呼或公司宣传性“最高节能”直接转成收入结论；它们只用于提出验证项。

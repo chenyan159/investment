@@ -1,0 +1,437 @@
+{
+  "reports": {
+    "E04": {
+      "path": "D:/drive/Investment/分析报告/公司排序/07_输入扩展对照方案_待验证/E04_风险调整赔率_输入隔离/迭代版本/R01_2026-09-08_输入隔离/BCDE/02_排序结果.md",
+      "sha256": "0ed0422ef44e1e018e1bababb008a01b4ab3d45c63ad7e3edff5112d4f137cf7",
+      "lines": 1675,
+      "focus30": [
+        "ADBE",
+        "MSFT",
+        "TEL",
+        "EME",
+        "NVDA",
+        "MU",
+        "DOV",
+        "FN",
+        "NTAP",
+        "CLS",
+        "VST",
+        "DELL",
+        "HPE",
+        "BDC",
+        "SNDK",
+        "ENS",
+        "CARR",
+        "GNRC",
+        "TSM",
+        "AVGO",
+        "ST",
+        "STX",
+        "WDC",
+        "MOD",
+        "PNR",
+        "AMAT",
+        "LRCX",
+        "GOOGL",
+        "META",
+        "ETN"
+      ],
+      "coverage_rows": 193,
+      "control_result_exists": false,
+      "headings": [
+        {
+          "line": 5,
+          "heading": "## 1. 结论与适用边界"
+        },
+        {
+          "line": 15,
+          "heading": "## 2. 输入冻结、日期、证券与来源审计"
+        },
+        {
+          "line": 46,
+          "heading": "## 3. 固定比较规则与独立建模"
+        },
+        {
+          "line": 71,
+          "heading": "## 4. 两期限研究优先级与当前选择"
+        },
+        {
+          "line": 200,
+          "heading": "## 5. 30家重点条目：价值、交易采纳、事件与失效条件"
+        },
+        {
+          "line": 1216,
+          "heading": "## 6. 最强落选替代者与改变取舍的证据"
+        },
+        {
+          "line": 1231,
+          "heading": "## 7. 全样本覆盖清单（193行，按主快照原序）"
+        },
+        {
+          "line": 1431,
+          "heading": "## 8. 后续采用、执行与验证契约"
+        },
+        {
+          "line": 1445,
+          "heading": "## 附录C：实际公司输入文件、版本与校验标识"
+        },
+        {
+          "line": 1645,
+          "heading": "## 附录I：实际行业/背景输入与一手版本语义"
+        },
+        {
+          "line": 1665,
+          "heading": "## 9. 完成、冻结与可获得时间"
+        }
+      ]
+    },
+    "E05": {
+      "path": "D:/drive/Investment/分析报告/公司排序/07_输入扩展对照方案_待验证/E05_极简基准兑现_输入隔离/迭代版本/R01_2026-09-08_输入隔离/BCDE/02_排序结果.md",
+      "sha256": "c99b0f33807d67e8c6c3b04aabd67845d3dd288d8a2726845629c28a770dfba2",
+      "lines": 1721,
+      "focus30": [
+        "ADBE",
+        "MSFT",
+        "TEL",
+        "NVDA",
+        "AVGO",
+        "TSM",
+        "EME",
+        "MU",
+        "NTAP",
+        "HUBB",
+        "FN",
+        "SKHY",
+        "SNDK",
+        "WDC",
+        "ETN",
+        "VST",
+        "META",
+        "STX",
+        "LRCX",
+        "AMAT",
+        "HPE",
+        "VRT",
+        "PNR",
+        "MOD",
+        "QCOM",
+        "CRDO",
+        "CLS",
+        "DELL",
+        "GOOGL",
+        "ORCL"
+      ],
+      "coverage_rows": 193,
+      "control_result_exists": false,
+      "headings": [
+        {
+          "line": 5,
+          "heading": "## 一、结论与覆盖边界"
+        },
+        {
+          "line": 24,
+          "heading": "## 二、输入审计与截止"
+        },
+        {
+          "line": 46,
+          "heading": "## 三、固定规则与可复算口径"
+        },
+        {
+          "line": 72,
+          "heading": "## 四、两个期限的研究优先级与当前选择"
+        },
+        {
+          "line": 152,
+          "heading": "## 五、30家重点模型与事件卡片"
+        },
+        {
+          "line": 946,
+          "heading": "## 六、最强替代者、反向门槛与保守基准漏项"
+        },
+        {
+          "line": 973,
+          "heading": "## 七、价格采纳、失效与后续检验"
+        },
+        {
+          "line": 989,
+          "heading": "## 八、193家公司完整覆盖清单"
+        },
+        {
+          "line": 1191,
+          "heading": "## 九、实际输入、版本与血缘附录"
+        }
+      ]
+    },
+    "E06": {
+      "path": "D:/drive/Investment/分析报告/公司排序/07_输入扩展对照方案_待验证/E06_尾部生存_输入隔离/迭代版本/R01_2026-09-08_输入隔离/BCDE/02_排序结果.md",
+      "sha256": "ffa4fc3c71d67a961c28089d7c9de65710c58f623b1816d7f977dfa39f8e5950",
+      "lines": 1462,
+      "focus30": [
+        "TE",
+        "COHU",
+        "MKSI",
+        "VSH",
+        "ORCL",
+        "WOLF",
+        "FLNC",
+        "CRWV",
+        "APLD",
+        "IREN",
+        "NBIS",
+        "SMCI",
+        "MXL",
+        "CC",
+        "AMPX",
+        "AAON",
+        "PH",
+        "SITM",
+        "INTC",
+        "FCEL",
+        "BE",
+        "SMR",
+        "OKLO",
+        "POET",
+        "LWLG",
+        "NVTS",
+        "AAOI",
+        "AXTI",
+        "RKLB",
+        "TSLA"
+      ],
+      "coverage_rows": 193,
+      "control_result_exists": false,
+      "headings": [
+        {
+          "line": 8,
+          "heading": "## 一、冻结边界、样本和证据审计"
+        },
+        {
+          "line": 51,
+          "heading": "## 二、固定方法、扣分含义与当前选择门槛"
+        },
+        {
+          "line": 77,
+          "heading": "## 三、两个期限的审查优先级与当前选择"
+        },
+        {
+          "line": 164,
+          "heading": "## 四、24个月现金与普通股永久损失的统一对账"
+        },
+        {
+          "line": 213,
+          "heading": "## 五、重点30家公司：模型、现金压力、两期限事件和条件选择"
+        },
+        {
+          "line": 877,
+          "heading": "## 六、生存分：分项区间、NA与采用限制"
+        },
+        {
+          "line": 916,
+          "heading": "## 七、最强未进入重点30的替代对象"
+        },
+        {
+          "line": 935,
+          "heading": "## 八、全样本覆盖清单"
+        },
+        {
+          "line": 1139,
+          "heading": "## 九、输入版本与来源索引"
+        },
+        {
+          "line": 1444,
+          "heading": "## 十、冻结、下游采用与未来验证口径"
+        }
+      ]
+    }
+  },
+  "focus_overlap": [
+    {
+      "a": "E04",
+      "b": "E05",
+      "overlap": 24,
+      "common": [
+        "ADBE",
+        "AMAT",
+        "AVGO",
+        "CLS",
+        "DELL",
+        "EME",
+        "ETN",
+        "FN",
+        "GOOGL",
+        "HPE",
+        "LRCX",
+        "META",
+        "MOD",
+        "MSFT",
+        "MU",
+        "NTAP",
+        "NVDA",
+        "PNR",
+        "SNDK",
+        "STX",
+        "TEL",
+        "TSM",
+        "VST",
+        "WDC"
+      ],
+      "a_only": [
+        "BDC",
+        "CARR",
+        "DOV",
+        "ENS",
+        "GNRC",
+        "ST"
+      ],
+      "b_only": [
+        "CRDO",
+        "HUBB",
+        "ORCL",
+        "QCOM",
+        "SKHY",
+        "VRT"
+      ]
+    },
+    {
+      "a": "E04",
+      "b": "E06",
+      "overlap": 0,
+      "common": [],
+      "a_only": [
+        "ADBE",
+        "AMAT",
+        "AVGO",
+        "BDC",
+        "CARR",
+        "CLS",
+        "DELL",
+        "DOV",
+        "EME",
+        "ENS",
+        "ETN",
+        "FN",
+        "GNRC",
+        "GOOGL",
+        "HPE",
+        "LRCX",
+        "META",
+        "MOD",
+        "MSFT",
+        "MU",
+        "NTAP",
+        "NVDA",
+        "PNR",
+        "SNDK",
+        "ST",
+        "STX",
+        "TEL",
+        "TSM",
+        "VST",
+        "WDC"
+      ],
+      "b_only": [
+        "AAOI",
+        "AAON",
+        "AMPX",
+        "APLD",
+        "AXTI",
+        "BE",
+        "CC",
+        "COHU",
+        "CRWV",
+        "FCEL",
+        "FLNC",
+        "INTC",
+        "IREN",
+        "LWLG",
+        "MKSI",
+        "MXL",
+        "NBIS",
+        "NVTS",
+        "OKLO",
+        "ORCL",
+        "PH",
+        "POET",
+        "RKLB",
+        "SITM",
+        "SMCI",
+        "SMR",
+        "TE",
+        "TSLA",
+        "VSH",
+        "WOLF"
+      ]
+    },
+    {
+      "a": "E05",
+      "b": "E06",
+      "overlap": 1,
+      "common": [
+        "ORCL"
+      ],
+      "a_only": [
+        "ADBE",
+        "AMAT",
+        "AVGO",
+        "CLS",
+        "CRDO",
+        "DELL",
+        "EME",
+        "ETN",
+        "FN",
+        "GOOGL",
+        "HPE",
+        "HUBB",
+        "LRCX",
+        "META",
+        "MOD",
+        "MSFT",
+        "MU",
+        "NTAP",
+        "NVDA",
+        "PNR",
+        "QCOM",
+        "SKHY",
+        "SNDK",
+        "STX",
+        "TEL",
+        "TSM",
+        "VRT",
+        "VST",
+        "WDC"
+      ],
+      "b_only": [
+        "AAOI",
+        "AAON",
+        "AMPX",
+        "APLD",
+        "AXTI",
+        "BE",
+        "CC",
+        "COHU",
+        "CRWV",
+        "FCEL",
+        "FLNC",
+        "INTC",
+        "IREN",
+        "LWLG",
+        "MKSI",
+        "MXL",
+        "NBIS",
+        "NVTS",
+        "OKLO",
+        "PH",
+        "POET",
+        "RKLB",
+        "SITM",
+        "SMCI",
+        "SMR",
+        "TE",
+        "TSLA",
+        "VSH",
+        "WOLF"
+      ]
+    }
+  ],
+  "focus_union": 65
+}

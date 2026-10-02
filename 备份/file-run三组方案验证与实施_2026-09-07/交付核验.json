@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-09-07T22:18:42.978306-07:00",
+  "modified_existing_formal_files": 9,
+  "new_formal_files": 25,
+  "new_sorting_plans": 15,
+  "new_conference_plans": 4,
+  "background_plans": 5,
+  "generic_conference_plans": 1,
+  "protected_file_hashes": 714,
+  "special_file_hashes": 11,
+  "runtime_entry_checks": 25,
+  "new_local_links_checked": 61,
+  "backtest_checks": {
+    "company_returns": 192,
+    "top30_metrics": 56,
+    "conference_observations": 15,
+    "original_sorting_plan_hashes": 26
+  },
+  "issues": [],
+  "scope": "Source edits and in-memory file-run checks only. No research executed or future efficacy proved."
+}

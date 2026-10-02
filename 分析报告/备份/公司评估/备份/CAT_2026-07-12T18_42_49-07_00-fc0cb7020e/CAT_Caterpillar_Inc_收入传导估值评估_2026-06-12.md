@@ -1,0 +1,178 @@
+# 公司收入传导与价值传导评估：Caterpillar Inc（CAT）
+
+报告日期：2026-06-12  
+主口径：NTM，指 2026Q2 至 2027Q1 的未来 12 个月经营窗口。  
+资料边界：公司事实使用 `公司调研/` 与 Caterpillar 官方财报、SEC、订单公告；行业需求使用 `行业调研/` 中 AI 数据中心电力、自备发电、微电网、动态 UPS 和建设规模资料。未读取、引用或继承 `特征量化/`、Signals、回归、排序或估值模型资料。  
+重要限制：本报告只评估需求到 CAT 可确认收入、利润、现金流和经营质量的传导，不输出目标价、投资评级、股价区间、估值倍数判断或公司排序。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口；FY2026 管理层指引、2030 Power Generation 目标、AIP/PROPWR 多年订单和 Monarch 远期 8GW 规划仅作补充或情景校准，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：Caterpillar 2026Q1 sales and revenues 为 `$17.415B`，同比 `+22%`；2025 全年 sales and revenues 为 `$67.6B`。管理层 2026-04-30 已把 FY2026 sales and revenues 预期上修为“低双位数增长”，调整后经营利润率预计在对应目标区间底部附近，MP&E FCF 预计高于 2025 年 `$9.5B`。2026Q1 backlog 约 `$63B`，同比 `+79%`，全公司一季度订单为历史新高。
+- 重要产品/业务线：Construction Industries 工程机械；Resource Industries 矿山/Rail/矿业软件；Power Generation 大型天然气 prime/bridge 发电机组；柴油/双燃料备用发电机组；Solar Turbines/油气燃机与压缩；BESS/微电网控制与成套集成；服务、备件、长期运维和 Cat Financial 支撑。
+- NTM 公司收入四情景：悲观 `$72-75B`，低于当前低双位数增长预期；基准 `$76-80B`，大体符合管理层低双位数增长、backlog 转收入和当前 run-rate；乐观 `$81-86B`，要求 Power Generation 和 CI 同时强于当前预期；极度乐观 `$86-92B`，只作为 NTM 上限，需要多个 GW 级 power 项目按期转收入且传统周期不拖累。
+- 利润或 EBITDA 四情景：本报告用调整后经营利润和净利润替代 EBITDA 主表。悲观调整后经营利润约 `$12.2-13.8B`；基准 `$14.0-15.6B`；乐观 `$16.2-18.1B`；极度乐观 `$18.5-21.2B`。净利润方向分别约 `$9.2-10.2B`、`$10.5-11.8B`、`$12.0-13.8B`、`$13.8-16.0B`，均为模型估算。
+- 最大传导瓶颈：不是需求叙事，而是可确认收入路径。AIP 2GW 和 PROPWR 多年框架证明客户需求和订单可见度，但 NTM 收入仍取决于空气许可、燃气接入、BESS/开关设备/变压器交付、经销商 commissioning、客户融资和验收节奏。
+- 最大利润率变量：Power & Energy mix 上升通常利好利润质量，但 2026 年关税成本、制造成本、扩产投入、库存吸收和项目赶工成本会抵消部分规模效应。管理层最新预计 FY2026 关税成本 `$2.2-2.4B`。
+- 最大现金流变量：backlog 转收入和客户预付款是正向变量；库存、WIP、经销商交付节奏、Cat Financial 融资支持、2026 capex 约 `$3.5B` 和 2027-2029 大型发动机扩产 capex 是占用变量。
+- 可信度：基准情景中高。收入表、订单、backlog、零售统计和管理层指引均为 A/B 级证据；但 CAT 未单独披露 AI 数据中心收入、Power Generation 内部产品拆分和订单取消率，乐观与极度乐观情景可信度降为中或低中。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Construction Industries 工程机械 | 2026Q1 `$7.161B`；年化约 `$28.6B`，但 Q1 含经销商库存建设 | 约 `41.1%` | 收入和利润最大分部之一，决定公司总收入底盘；AI 数据中心只通过土建/非住宅施工间接受益 | A | 进入基准；按管理层 2026 销售给终端用户增长和 Q1 强 run-rate 保守纳入 | CAT Compact、租赁和非住宅项目延续性 |
+| Resource Industries、Rail、矿业软件/自动化 | 2026Q1 `$3.797B`；年化约 `$15.2B` | 约 `21.8%` | 铜、金、矿山利用率和车队老化支撑收入；Q1 利润率下滑，是公司利润质量拖累项 | A；RPMGlobal/软件为 C | 核心设备进入基准；RPMGlobal 和自治矿山仅作辅助，不单独放大 NTM | 关键矿产、MineStar/RPMGlobal 软件和自治矿山 |
+| 大型天然气 prime/bridge Power Generation | 官方 Power Generation 外部销售 2026Q1 `$2.817B`；直接 AI/DC 收入未披露，本报告估计当前季度约 `$1.4-2.0B` | PG 官方口径约 `16.2%`，直接 AI/DC 估计约 `8-11%` | CAT 最直接 AI 数据中心收入传导线；AIP 2GW、PROPWR、六个 1GW+ prime power 协议强化需求 | A/B | 进入基准，但只纳入收入表可见 run-rate、AIP 2026H2/2027Q1 可交付部分和管理层指引可支撑部分 | Monarch 后续 8GW、更多 1GW+ campus、2030 PG >3x 2024 |
+| 柴油/双燃料备用发电机组 | 未单列；包含在 Power Generation，估计数据中心相关 NTM 基数约 `$2.5-4.0B` | 无法可靠量化 | 数据中心 standby 刚需，增速低于 prime power；许可和 ESG 约束更强 | A/C | 小比例进入基准；不能把数据中心总 MW 全部映射为 CAT 柴油收入 | HVO、氢混、低排放备电和动态 UPS 配套 |
+| Solar Turbines、油气燃机、压缩和电力岛 | Power & Energy 中 Oil & Gas 外部销售 2026Q1 `$1.423B`，Industrial `$1.473B`；Solar 单独未披露 | 无法可靠量化 | 燃机/压缩同时受数据中心自备电、天然气基础设施和油气周期影响 | A/C | 油气和工业动力进入基准；数据中心燃机增量进入乐观或极度乐观 | 大型 AI factory 采用燃机+recip 混合电力岛 |
+| BESS、微电网控制、并网/孤网控制和经销商集成 | CAT 未单列；AIP 明确配套 BESS，当前 CAT 可确认收入估计小于 `$1B-$1.5B` 年化 | 无法可靠量化 | 决定 CAT 是否从卖 genset 扩展为 power block 方案商；利润属性更偏工程、控制和服务 | B/C | 进入基准的比例很小；更多放在乐观/极度乐观收入上限和利润质量改善 | 标准化 power block、grid-forming BESS、EMS/SCADA 绑定 |
+| 服务、备件、数字 uptime、长期运维和 Cat Financial | 2026Q1 Financial Products segment revenues `$1.096B`；服务收入未按产品单列 | Financial Products 约 `6.3%`，服务嵌入各分部 | 提升利润质量、现金流和客户锁定；数据中心停机成本高，LTSA/备件价值高 | A/B | 作为利润质量和现金流支撑进入基准，不与设备收入机械加总 | Prime power 后市场、长期维护、Cat Financial 融资绑定 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 CAT 份额、收入确认、利润率或公司汇总。当前需求锚以 2026Q1 终端销售、Power Generation 零售 `+48%`、Power & Energy 零售 `+32%`、record backlog、管理层 FY2026 低双位数收入增长预期、项目内行业资料对 AI 数据中心电力瓶颈和自备发电订单的判断为主。需求单位按各产品最能解释的指标选择，工程机械看终端销售和项目开工，发电设备看 GW/MW、订单、交付和 data center power build-out。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Construction Industries 工程机械 | Q1 销售给终端用户 `+7%`；公司预计 2026 终端销售增长，北美非住宅和 IIJA 支撑 | 北美非住宅、租赁或经销商库存放慢；终端需求仅低个位数增长 | 终端需求低到中个位数增长，Q1 库存建设不被全年外推 | 非住宅、数据中心土建和租赁同时较强，终端需求高个位数到低双位数 | 全球基建和租赁补库同步加速，终端需求 `+15%+` | 悲观较当前少 `$1-3B` NTM 设备需求；乐观多 `$2-4B`；极度多 `$5B+` | 基准=符合当前预期；乐观=高于当前；悲观=低于当前 | 正向：北美非住宅和数据中心施工；反证：利率、住宅/租赁转弱、Q1 库存贡献不可持续 |
+| Resource Industries、Rail、矿业软件/自动化 | Q1 终端销售 `+6%`；管理层称 RI 订单 intake 为 2012 年以来最高季度，铜/金需求和车队年龄支撑 | 铜/金 capex 推迟，Rail 或重型施工交付延迟，需求持平或小幅下滑 | Mining 和 HC/Q&A 稳健，终端需求低到中个位数增长 | 铜/金项目、重建活动和大型矿卡替换同步，需求 `+8-12%` | 关键矿产和自动化矿山 capex 加速，需求 `+15%+` | 悲观少 `$0.5-1.5B`；乐观多 `$1-2B`；极度多 `$3B+` | 基准=符合当前预期；极度乐观主要是周期上修，不是 AI 直接需求 | 正向：商品价格、车队老化、利用率；反证：Q1 RI 利润率只有 `10.0%`，制造成本和项目 timing 压力 |
+| 大型天然气 prime/bridge Power Generation | PG 外部销售 Q1 `$2.817B`、同比 `+41%`；PG 零售 `+48%`；AIP `2GW` 2026-09 至 2027-08 交付；六个 1GW+ 协议 | 客户拿电/许可/燃气延后，NTM 新增可交付 PO 低于 `2-3GW`，AIP 交付慢于计划 | 已公告订单和当前 backlog 正常转化，NTM 可见交付/PO 约 `3-6GW` | 多个 1GW 级项目复制，NTM PO/交付约 `6-9GW` | 自备电成为 AI factory 标准一期方案，NTM PO/交付 `10GW+` | 相对基准，悲观少 `$2-4B` 需求机会；乐观多 `$3-6B`；极度多 `$8B+` | 基准=符合当前强预期；乐观=明确超预期；极度=非线性上修 | 正向：数据中心 time-to-power、AIP、PROPWR、backlog；反证：空气许可、燃气管线、社区和低碳承诺 |
+| 柴油/双燃料备用发电机组 | 数据中心仍需高可靠 standby；Cat 数据中心产品页强调 quick start、block load、fuel efficiency 和 service | 备用电采购因环保和电网替代而延后，需求仅随普通数据中心建设 | 与 AI/colo 新建同步，standby attach 维持高位但增速低于 prime power | 大客户为交期提前锁备用机组，需求高双位数增长 | 排放约束未恶化且大型 campus 抢购备用容量，需求 `+50%+` | 悲观少 `$0.5-1B`；乐观多 `$1-2B`；极度多 `$2-4B` | 基准=当前预期正常兑现 | 正向：可靠性刚需；反证：NOx/CO2/运行小时、HVO/燃料电池/utility bridge 替代 |
+| Solar Turbines、油气燃机、压缩和电力岛 | 管理层预计 Oil & Gas moderate growth，Solar Turbines backlog 健康，turbine sales 强；行业资料显示燃机 slot 紧 | 油气 capex 或燃机项目延后，数据中心采用低于预期 | 油气压缩、工业动力和部分数据中心 power island 正常增长 | AI campus 更偏 recip+turbine 混合架构，燃机 slot 价值提升 | 大 MW block 大量采用 Solar Turbines 或混合电力岛，需求显著上修 | 悲观少 `$1B` 以内；乐观多 `$1-3B`；极度多 `$4B+` | 基准=符合当前；乐观=需要客户项目证据 | 正向：燃机/压缩需求、天然气供应链；反证：大型燃机由 GEV/Siemens/Mitsubishi 主导，Solar 不一定获超额份额 |
+| BESS、微电网控制和集成 | AIP 明确 fast-response gas + BESS 处理 AI load swings；行业资料认为 BESS/EMS 是自备电 attach | 客户只买机组或用第三方 BESS/EMS，CAT capture 很小 | BESS/控制作为部分项目配套，CAT 小比例 capture | CAT/经销商把 genset、BESS、控制、服务打包为 power block | CAT 成为标准化微电网系统商，控制和服务 attach 明显上升 | 基准需求小于设备主收入；乐观多 `$1-3B` 系统机会；极度多 `$4B+` | 基准保守；乐观/极度才显著高于当前 | 正向：AI 负载波动和微电网；反证：BESS、PCS、EMS 竞争强，CAT 不披露自有 capture |
+| 服务、备件、长期运维和 Cat Financial | Q1 enterprise operating cash flow `$1.9B`；Cat Financial past dues `1.39%`；管理层预计服务收入增长 | 设备交付延迟，LTSA attach 低，库存和融资占用现金 | 安装基数增加，服务随设备正常增长；Financial Products 支撑成交 | Prime power 运行小时高，服务/备件和融资 attach 高于传统 standby | 数据中心把原厂服务作为 uptime 保险，服务成为利润弹性核心 | 收入多嵌入分部；利润和现金流影响大于显性收入 | 基准=符合当前；乐观=利润质量高于当前 | 正向：prime power 高运行小时、经销商网络；反证：客户自运维、多供应商、服务产能不足 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求能进入 CAT NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入。收入锚点优先使用 2026Q1 收入表、分部披露、Power Generation 外部销售、正式订单/backlog、AIP/PROPWR 公告、管理层 FY2026 指引和可验证交付时间表。直接 AI 数据中心收入未单独披露，所有 AI/DC 数字均为模型估算并降权。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Construction Industries 工程机械 | 2026Q1 sales `$7.161B`，segment profit margin `21.4%`；终端销售 `+7%` | 间接 AI；核心为建筑、租赁、基础设施 | 中高利润但周期性强，Q1 受库存/吸收影响 | `$27-29B` | `$30-32B` | `$33-36B` | `$37-40B` | 基准符合当前；悲观低于当前；乐观高于当前 | A | 是 | 收入表、终端销售、管理层 FY2026 预期 | 进入 NTM 基准；不把数据中心土建 capex 直接当 CAT 收入 |
+| Resource Industries、Rail、矿业软件/自动化 | 2026Q1 sales `$3.797B`，segment margin `10.0%`；RI 订单 intake 高 | 间接 AI；铜/金/关键矿产长期相关 | 收入韧性中高，Q1 利润率弱 | `$14-15B` | `$15-17B` | `$17-19B` | `$19-21B` | 基准符合当前；利润低于历史高位 | A；软件为 C | 是，软件小比例 | 收入表、订单和 commodity capex；RPMGlobal 不单独放大 | 进入 NTM 基准；自动化/软件列为长期利润质量附加 |
+| 大型天然气 prime/bridge Power Generation | PG 外部销售 2026Q1 `$2.817B`，同比 `+41%`；AIP `2GW` 2026-09 至 2027-08；管理层称六个 1GW+ 协议 | 直接 AI/DC 和工业能源 | 毛利/经营利润较好，服务 attach 高 | `$6.5-8.5B` | `$8.5-11.5B` | `$11.5-15.5B` | `$15.5-20.0B` | 基准为当前强预期正常兑现；乐观需新增项目 | A/B | 是 | A 级 PG 收入表 + B 级 AIP/PROPWR/正式协议；直接 AI/DC 估算折扣纳入 | 进入 NTM 基准的核心增量，但不把全部 PG 当 AI 收入 |
+| 柴油/双燃料备用发电机组 | 未单列，包含在 PG；数据中心产品/客户案例和 standby 刚需支持 | 直接数据中心备用，非 prime 主线 | 设备毛利中等，服务稳定；许可约束较强 | `$2.0-3.0B` | `$3.0-4.5B` | `$4.5-6.0B` | `$6.0-7.5B` | 基准符合当前数据中心建设；乐观需提前锁单 | A/C | 是，小比例 | PG 收入表为 A；产品和项目映射为 C；严格折扣 | 进入基准，但不把长期运行 prime power 与 standby 重复计算 |
+| Solar Turbines、油气燃机、压缩和电力岛 | P&E Oil & Gas 外部销售 Q1 `$1.423B`，Industrial `$1.473B`；Solar backlog 健康但未披露 | 直接能源，数据中心为部分应用 | 燃机/服务利润质量好，项目和油气周期影响大 | `$5.0-5.8B` | `$5.8-7.3B` | `$7.3-9.5B` | `$9.5-12.0B` | 基准符合当前；数据中心燃机只进乐观 | A/C | 是，按油气/工业主业 | 官方应用收入和管理层 Oil & Gas/Solar 描述 | 进入基准；AI 数据中心额外燃机需求主要进乐观或极度乐观 |
+| BESS、微电网控制和集成 | AIP 明确配套 BESS；CAT 数据中心方案覆盖 storage、control、service；CAT capture 未披露 | 直接 AI/DC，但收入确认主体可能是合作方或经销商 | 若为软件/控制/服务，利润率高；硬件 pass-through 较低 | `无法可靠量化`，保守 `<$0.5B` | `$0.5-1.5B` | `$1.5-3.5B` | `$3.5-6.0B` | 基准小于叙事；乐观高于当前 | B/C | 是，小比例 | AIP 项目和产品组合；无单独财务披露需折扣 | 小比例进入基准；大部分作为乐观/极度乐观上限 |
+| 服务、备件、长期运维和 Cat Financial | Financial Products segment revenue Q1 `$1.096B`；Cat Financial past dues `1.39%`；服务收入增长预期 | 间接/附加 | 利润质量和现金流改善，客户锁定强 | 收入嵌入设备和金融，`无法可靠量化` | 支撑净利润和 FCF；Financial Products NTM revenue 约 `$4.4-4.8B` | LTSA attach 提升，利润弹性上行 | 服务成为主要增量，但不单独加总 | 基准符合当前；乐观改善利润质量 | A/B | 是，作为支撑项 | Financial Products A；服务 attach 管理层 B | 进入利润/现金流基准，不作为独立设备收入重复加总 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内能给 CAT 贡献的收入和利润。产品收入贡献为经营传导估算，P&E 内部产品可能共享客户、预算、经销商交付和系统集成路径，不能机械相加；第四步使用公司层面和分部层面的汇总约束做去重。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Construction Industries 工程机械 | 悲观 | `$27-29B` | `$4.7-5.5B` 分部利润 | 利润率下行至高十几 | 低于当前 | 终端需求低个位数、库存建设回落 | 保留为周期下行项 | Q1 销售受经销商库存影响，利率和租赁放缓 |
+| Construction Industries 工程机械 | 基准 | `$30-32B` | `$5.8-6.8B` | 约 `19-21%` | 符合当前 | Q1 sales `$7.161B`，管理层预计终端销售增长 | 保留 | 若 Q1 库存建设不可持续，收入会回落 |
+| Construction Industries 工程机械 | 乐观 | `$33-36B` | `$6.8-8.0B` | 稳定或小幅上行 | 高于当前 | 北美非住宅、IIJA、租赁、数据中心土建共同支撑 | 保留但需终端销售验证 | 不能把数据中心总 capex 直接映射为 CAT 设备 |
+| Construction Industries 工程机械 | 极度乐观 | `$37-40B` | `$8.0-9.2B` | 上行 | 明显高于当前 | 全球基建和租赁同步补库 | 下移为上限 | NTM 内需要宏观和库存同时有利，证据不足 |
+| Resource Industries、Rail、矿业软件/自动化 | 悲观 | `$14-15B` | `$1.1-1.5B` | 低位，约 `8-10%` | 低于当前利润预期 | Q1 margin `10.0%`、制造成本不利 | 保留 | 铜/金 capex 推迟、成本吸收差 |
+| Resource Industries、Rail、矿业软件/自动化 | 基准 | `$15-17B` | `$1.6-2.0B` | 约 `10-12%` | 符合当前 | RI 订单 intake 强、矿山利用率高、车队老化 | 保留 | Rail 和交付 timing；软件收入基数小 |
+| Resource Industries、Rail、矿业软件/自动化 | 乐观 | `$17-19B` | `$2.0-2.6B` | 改善 | 高于当前 | 铜/金和关键矿产 capex 上修 | 保留 | 仍是周期设备，不是 AI 数据中心直接收入 |
+| Resource Industries、Rail、矿业软件/自动化 | 极度乐观 | `$19-21B` | `$2.6-3.2B` | 明显改善 | 明显高于当前 | 矿业替换和自动化软件同步放量 | 下移为上限 | NTM 软件/自治商业化不足以大幅改变分部结构 |
+| 大型天然气 prime/bridge Power Generation | 悲观 | `$6.5-8.5B` | `$1.2-1.9B` | 利润率受赶工/成本压制 | 低于当前强预期 | 已有 PG 收入但项目许可/燃气延后 | 保留 | AIP/其他项目延期，产能和供应链受限 |
+| 大型天然气 prime/bridge Power Generation | 基准 | `$8.5-11.5B` | `$1.9-2.9B` | 分部利润率约 `20%+`，服务改善 | 符合当前 | PG Q1 `$2.817B`、PG 零售 `+48%`、AIP 交付窗口 | 保留 | 直接 AI 收入未披露，需要防止把全部 PG 算作 AI |
+| 大型天然气 prime/bridge Power Generation | 乐观 | `$11.5-15.5B` | `$2.9-4.3B` | mix/slot/服务带来上行 | 高于当前 | 多个 1GW+ 项目、prime power mix 上升 | 保留，中等可信 | 客户多供应商、竞争和项目审批 |
+| 大型天然气 prime/bridge Power Generation | 极度乐观 | `$15.5-20.0B` | `$4.3-6.0B` | 大幅上行但不自动成立 | 明显高于当前 | 每季度多个 GW 级 PO 且 CAT 超额捕获 | 下移为极度上限 | NTM 产能、许可和燃气链条同时约束 |
+| 柴油/双燃料备用发电机组 | 悲观 | `$2.0-3.0B` | `$0.4-0.8B` | 稳定但无扩张 | 低于当前 | 环保限制和项目推迟 | 保留 | 柴油运行小时和空气许可 |
+| 柴油/双燃料备用发电机组 | 基准 | `$3.0-4.5B` | `$0.7-1.2B` | 稳定 | 符合当前 | 数据中心 standby 刚需、产品成熟 | 保留 | 技术成熟导致竞争和价格压力 |
+| 柴油/双燃料备用发电机组 | 乐观 | `$4.5-6.0B` | `$1.1-1.7B` | 小幅上行 | 高于当前 | 大客户提前锁备用容量 | 保留但需项目证据 | ESG、HVO/燃料电池和 utility 接入替代 |
+| 柴油/双燃料备用发电机组 | 极度乐观 | `$6.0-7.5B` | `$1.5-2.2B` | 上行有限 | 高于当前但非主线 | 大型 campus 抢购 standby | 下移为上限 | 低毛利/成熟产品不能自动转为极高利润 |
+| Solar Turbines、油气燃机、压缩和电力岛 | 悲观 | `$5.0-5.8B` | `$0.9-1.3B` | 低于正常 | 低于当前 | 油气或燃机项目延迟 | 保留 | 油气周期和大型燃机竞争 |
+| Solar Turbines、油气燃机、压缩和电力岛 | 基准 | `$5.8-7.3B` | `$1.3-1.9B` | 稳定 | 符合当前 | Oil & Gas Q1 `$1.423B`，管理层预计 moderate growth | 保留 | Solar 单独收入和数据中心占比未披露 |
+| Solar Turbines、油气燃机、压缩和电力岛 | 乐观 | `$7.3-9.5B` | `$1.9-2.7B` | 上行 | 高于当前 | 燃机 slot 紧、AI power island 采用提高 | 保留，中等偏低可信 | GE Vernova/Siemens/Mitsubishi 强竞争 |
+| Solar Turbines、油气燃机、压缩和电力岛 | 极度乐观 | `$9.5-12.0B` | `$2.7-3.8B` | 上行 | 明显高于当前 | recip+turbine 混合架构成为大型园区常态 | 下移为上限 | 交付、低碳承诺和燃气基础设施 |
+| BESS、微电网控制和集成 | 悲观 | `无法可靠量化`，`<$0.5B` | `无法可靠量化` | 可能被 pass-through 吞噬 | 低于当前叙事 | 客户用第三方 BESS/EMS | 保留 | CAT capture 不清晰 |
+| BESS、微电网控制和集成 | 基准 | `$0.5-1.5B` | `$0.1-0.4B` | 混合，硬件低、控制/服务高 | 保守符合当前 | AIP BESS 配套，CAT power solution 能力 | 保留，小比例 | 认证、消防、并网和责任边界 |
+| BESS、微电网控制和集成 | 乐观 | `$1.5-3.5B` | `$0.4-1.1B` | 利润率改善 | 高于当前 | 机组+BESS+EMS+服务打包 | 保留但需订单披露 | BESS/PCS 竞争强，CAT 未披露订单 |
+| BESS、微电网控制和集成 | 极度乐观 | `$3.5-6.0B` | `$1.1-2.2B` | 高利润附加但不确定 | 明显高于当前 | CAT 成为标准 power block 总包入口 | 下移为远期期权/上限 | C 级证据占比高，不进基准 |
+| 服务、备件、长期运维和 Cat Financial | 悲观 | Financial Products `$4.1-4.4B`；服务嵌入设备 | 支撑有限 | 信用/库存占用恶化 | 低于当前 | 项目延迟和金融信用压力 | 保留 | 设备未交付则服务滞后 |
+| 服务、备件、长期运维和 Cat Financial | 基准 | Financial Products `$4.4-4.8B`；服务随装机增长 | FCF 高于 2025，利润质量改善 | 稳定 | 符合当前 | past dues `1.39%`，管理层服务增长预期 | 保留 | 服务收入未单列，无法可靠量化 |
+| 服务、备件、长期运维和 Cat Financial | 乐观 | Financial Products `$4.8-5.2B`；LTSA attach 上升 | 明显改善 FCF 和利润质量 | 上行 | 高于当前 | prime power 运行小时高、客户 uptime 要求 | 保留 | 经销商服务能力和客户融资需求 |
+| 服务、备件、长期运维和 Cat Financial | 极度乐观 | Financial Products `$5.2B+`；服务成为主要增量之一 | 高毛利、强锁定 | 上行 | 明显高于当前 | 多个数据中心 prime power 项目进入长期运维 | 下移为长期上限 | NTM 内安装基数仍在形成，更多是 2027 后复利 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：第一个表为公司收入和利润四情景，按 NTM 公司总收入、毛利率、经营利润率、调整后经营利润/净利润和自由现金流方向汇总。汇总前已去除三类重复：一是 Power Generation 内 gas prime、diesel standby、BESS/控制之间的系统重叠；二是 P&E 与 Cat Financial/服务之间的融资和售后重复；三是数据中心总 CapEx、GW 或项目金额与 CAT 可确认收入的重复。毛利率为按销售收入和成本估算的经营毛利方向，不等同管理层正式毛利率指引；公司未提供 NTM 毛利率指引。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$72-75B` | 较 2025 `$67.6B` 增长约 `+6-11%`；低于低双位数预期 | 低于管理层 FY2026 低双位数增长和 backlog 隐含路径 | `29.5-30.5%` 近似 | 调整后经营利润率约 `17.0-18.4%` | 调整后经营利润 `$12.2-13.8B`；净利润 `$9.2-10.2B` | MP&E FCF 持平或低于 2025 `$9.5B`；库存和项目延期占用现金 | 中 | AIP/prime power 许可或燃气延迟、CI 库存建设回落、RI 利润率低、关税和制造成本 |
+| 基准公司 | `$76-80B` | 较 2025 增长约 `+12-18%` | 大体符合 FY2026 低双位数增长、Q1 run-rate、record backlog 和正常季节性 | `30.5-32.0%` 近似 | 调整后经营利润率约 `18.5-19.5%` | 调整后经营利润 `$14.0-15.6B`；净利润 `$10.5-11.8B` | MP&E FCF 高于 2025，约 `$10-11.5B` 方向；capex 约 `$3.5B` | 中高 | Power Generation 转收入速度、关税 `$2.2-2.4B`、客户验收和经销商交付 |
+| 乐观公司 | `$81-86B` | 较 2025 增长约 `+20-27%` | 高于当前预期；要求 P&E 明显超预期且 CI/RI 不拖累 | `32.0-33.5%` 近似 | 调整后经营利润率约 `20.0-21.0%` | 调整后经营利润 `$16.2-18.1B`；净利润 `$12.0-13.8B` | FCF 明显高于 2025，约 `$11.5-13B` 方向，但 WIP/库存上升 | 中 | 多个 GW 级项目转收入、供应链产能、服务 attach、价格能否覆盖成本 |
+| 极度乐观公司 | `$86-92B` | 较 2025 增长约 `+27-36%` | 显著高于当前预期，只作为可验证上限 | `33.0-35.0%` 近似 | 调整后经营利润率约 `21.5-23.0%` | 调整后经营利润 `$18.5-21.2B`；净利润 `$13.8-16.0B` | FCF 可达 `$13B+`，但扩产、库存、融资和客户预付款结构决定质量 | 低中 | 需要需求、CAT capture、许可、燃气、产能、利润率和传统周期同时突破；任一环节不足即下移 |
+
+公司层读法：
+
+- 基准不是“Power Generation 继续 +48% 零售增速”的简单外推，而是把 Power Generation 高增、Construction 强 run-rate、Resource 温和复苏、Financial Products 稳定和关税/成本压力放在同一 NTM 表里。
+- 悲观情景并不等于收入下滑。CAT 的 backlog、AIP/PROPWR 和终端销售使收入仍可增长，但低于当前低双位数路径时，经营价值传导已经失败。
+- 乐观情景必须同时看到新增 GW 级客户订单、空气许可/燃气接入推进、Power Generation 转收入、P&E 利润率保持、CI/RI 不出现明显周期拖累。
+- 极度乐观不能由 Monarch 8GW 或 2030 Power Generation >3x 目标直接支撑。那些是远期或多年口径，只有 2026Q2-2027Q1 可交付、可确认收入的部分才能进入 NTM。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。正向证据只提升其影响层级，反证只限制实际传导环节。同一风险不重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 sales and revenues `$17.415B`，同比 `+22%` | 公司汇总 | 支撑基准收入上移到 `$76-80B` NTM | Q1 调整后经营利润率 `18.0%`，利润率有底但不自动扩张 | Q1 enterprise operating cash flow `$1.9B`，现金流健康但工作资本占用存在 | 保留 |
+| Backlog 约 `$63B`，同比 `+79%`；一季度订单历史新高 | 收入基数/执行可信度 | 明显支撑 NTM 收入可见度，尤其 P&E 和 RI | backlog 高不等于高毛利；项目 mix 需要验证 | customer advances/PO 有利，但 WIP 和库存也上升 | 上移 |
+| Power Generation 外部销售 `$2.817B`，同比 `+41%`；PG 零售 `+48%` | 产品贡献 | 支撑大型 genset/prime power 进入基准 | P&E margin `20.6%`，但低于 2025Q1 `22.3%` | 高需求转化为交付和服务，执行压力上升 | 保留 |
+| AIP `2GW` 订单，2026-09 至 2027-08 交付，配 BESS | 收入基数/商业兑现 | 2026H2-2027Q1 部分可进入 NTM；其余延后 | BESS/服务可改善利润质量，但项目范围未披露 | 需按交付、commissioning、融资和验收确认 | 保留 |
+| PROPWR 至少 `1.5GW`、可到约 `2.1GW`，至 2031 交付 | 收入基数/远期期权 | NTM 可确认比例低，更多是长期订单可见度 | 长期服务/融资有价值，NTM 贡献有限 | 五年交付，不能拉入 NTM 主表 | 移入附录 |
+| 六个 1GW+ prime power 协议和大型 recip backlog >3.5x | 需求/收入基数 | 支撑乐观需求池和 2030 目标 | 需要产能和价格支撑利润率 | 订单长到 2028，NTM 只承认可交付部分 | 保留 |
+| 大型 reciprocating engine capacity 从 2024 的 2x 提升至近 3x | 执行/远期产能 | 2027 可能有增量，但主要 capex 在 2027-2029 | 扩产期间折旧、启动成本和 capex 可能压利润/FCF | MP&E capex 2027-2030 平均 `4-5%` 销售额 | 移入附录 |
+| FY2026 tariff costs `$2.2-2.4B` | 利润率 | 对收入影响小 | 直接压调整后经营利润率，抵消规模效应 | 若涨价滞后，现金和库存成本承压 | 保留 |
+| 空气许可、燃气管线、噪声、社区、低碳承诺 | 收入确认/执行 | 限制 AIP 和其他 BTM 项目按期确认 | 延误会导致低利用率、库存和项目成本 | 影响交付、commissioning、客户付款和融资 | 保留 |
+| CI Q1 增长含经销商库存建设 | 公司组合 | 限制把 Q1 CI 年化过度外推 | 若库存吸收变差，利润率下行 | 库存周转和现金占用风险 | 保留 |
+| RI Q1 margin `10.0%`，同比下降 7ppt | 公司组合/利润率 | 收入风险小于利润风险 | 限制公司极度利润扩张 | 制造成本和项目 mix 影响现金转化 | 保留 |
+| AI 数据中心收入未单独披露 | 证据可信度 | 降低 AI/DC 直接收入估算可信度 | 不能把全部 PG 高毛利归因于 AI | 需要后续订单、交付和客户披露校准 | 下移 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 项目延迟、CI 库存回落、RI 利润率弱使 NTM 低于当前预期 | Record backlog、PG 收入和 AIP 订单使收入不太可能全面坍塌 | 许可/燃气/关税/库存均有明确路径 | 保留 | 悲观公司 `$72-75B`、利润率低于基准 | 中 | 许可/燃气风险只压收入确认和执行，不再重复压低行业需求 |
+| 基准 | FY2026 低双位数增长、P&E 正常转收入、CI/RI 正常兑现 | Q1 `+22%`、backlog `+79%`、PG `+41%`、管理层上修 FY2026、FCF >2025 | AI/DC 收入未披露、关税 `$2.2-2.4B`、项目交付仍需验证 | 保留 | 基准公司 `$76-80B`，调整后经营利润 `$14.0-15.6B` | 中高 | 关税只压利润率，不重复压低收入需求 |
+| 乐观 | P&E 超预期、多个 GW 级项目提前转收入，CI/RI 不拖累 | 六个 1GW+ 协议、large recip backlog >3.5x、Prime Power mix 上升 | NTM 产能、permit、BESS/开关柜/变压器和经销商 commissioning 约束 | 保留 | 乐观公司 `$81-86B`，但需要季度订单和交付验证 | 中 | 数据中心 capex 强度不能直接替代 CAT 可确认收入 |
+| 极度乐观 | 需求、CAT capture、利润质量和执行同时突破 | 自备电成为 AI factory 标准一期方案；CAT 可同时提供 recip、Solar、服务、融资 | 扩产主要 2027-2029，Monarch 8GW 和 PROPWR 2031 属远期；任一核心环节缺证据 | 下移 | 极度乐观上限 `$86-92B`，不进入基准或普通乐观 | 低中 | 同一 AIP/Monarch 项目不能同时在需求、收入基数和公司汇总中重复加总 |
+
+## 8. 结论
+
+- 最可能情景：基准情景。NTM 收入大概率落在 `$76-80B`，核心逻辑是 2026Q1 强 run-rate、record backlog、Power Generation 收入和零售高增、管理层低双位数 FY2026 指引、Construction/Resource 正常兑现。基准不是 AI 叙事扩张，而是已在收入表、订单、backlog 和管理层指引中可见的经营路径。
+- NTM 收入结论：CAT 的总收入弹性来自 Power & Energy，特别是大型天然气 prime/bridge 发电机组和数据中心 power generation，但公司总收入不会等同 Power Generation 增速。Construction Industries 仍是最大收入底盘，Resource Industries 和金融/服务决定利润质量和现金流稳定性。
+- 利润/现金流结论：基准调整后经营利润约 `$14.0-15.6B`，经营利润率约 `18.5-19.5%`，MP&E FCF 方向高于 2025 `$9.5B`。利润上行需要 P&E mix、价格、服务 attach 和规模吸收覆盖关税、制造成本、扩产投入和库存占用。
+- 主要传导瓶颈：最大瓶颈是“从客户 demand 和 GW 级订单到 CAT NTM 可确认收入”。AIP 2GW 是强 B 级锚，但只有 2026Q2-2027Q1 内按交付、commissioning 和验收确认的部分进入 NTM。Monarch 8GW、PROPWR 到 2031 的增量和 2030 PG >3x 目标均不能前置进 NTM 主表。
+- 乐观情景成立条件：2026H2 至 2027Q1 继续出现 GW 级 customer PO；AIP 交付按 2026-09 至 2027-08 节奏启动；Power Generation 外部销售维持 `+30%` 以上；P&E segment margin 保持 `20%+`；CI 终端销售没有显著回落；关税涨价和成本缓解按管理层计划兑现。
+- 极度乐观情景成立条件：自备电/behind-the-meter power 在 AI factory 中从桥接方案变成标准方案；CAT 在多个 1GW+ 项目中获得超额份额；recip、Solar Turbines、BESS/控制、服务和融资打包；空气许可、燃气、BESS/开关柜/变压器交付和经销商 commissioning 同时顺利；传统 CI/RI 不出现周期性拖累。
+- 悲观情景触发条件：AIP 或同类项目空气许可、燃气接入、BESS/开关柜、融资或验收延期；Power Generation 增速回落到低双位数；CI 经销商库存吸收转弱；RI 利润率持续低位；关税/制造成本超出 `$2.2-2.4B` 管理层估计且价格无法转嫁。
+- 后续跟踪数据：每季度跟踪 Power Generation 外部销售、P&E 零售统计、P&E segment margin、backlog 和订单、AIP 交付/commissioning、PROPWR 滚动订单、large recip capacity capex、Cat Financial past dues、库存、MP&E FCF、关税成本、空气许可/燃气管线/utility filing、数据中心 self-generation 新 PO。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务数据以 Caterpillar 2026Q1（截至 2026-03-31，2026-04-30 发布，10-Q 2026-05-06 提交）为最新正式经营锚；行业数据和本地报告主要截至 2026-06-11；本报告输出日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Caterpillar 2026Q1 sales and revenues `$17.415B`、调整后经营利润率 `18.0%`、调整后 EPS `$5.54`、enterprise operating cash flow `$1.9B`、segment revenue and profit。
+  - Caterpillar Q1 2026 earnings transcript：backlog 约 `$63B`、同比 `+79%`，Power & Energy 零售 `+32%`，Power Generation 零售 `+48%`，FY2026 low double-digit growth、MP&E FCF higher than 2025、tariff cost `$2.2-2.4B`、large recip capacity nearly `3x` 2024。
+  - Caterpillar 10-Q：Power Generation 外部销售 `$2.817B`，Oil & Gas `$1.423B`，Industrial `$1.473B`；P&E total sales `$7.031B`，CI `$7.161B`，RI `$3.797B`，Financial Products `$1.096B`；segment margins P&E `20.6%`、CI `21.4%`、RI `10.0%`。
+  - AIP/Caterpillar/Boyd CAT：AIP ordered `2GW` fast-response natural gas generator sets, deliveries scheduled from 2026-09 through 2027-08, augmented by BESS, Monarch planned `8GW` generation capacity.
+  - PROPWR/Caterpillar：framework for at least `1.5GW`, option to approximately `2.1GW`, with delivery by year-end 2031 and fully deployed in 2032; therefore not included in NTM base except as order visibility/tracking.
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026：管理层 low double-digit sales and revenues growth、adjusted operating margin near bottom of target range、MP&E FCF higher than 2025。
+  - FY2027+：large reciprocating engine capacity expansion capex primarily 2027-2029；incremental units expected as early as 2027；Power Generation 2030 target raised to more than `3x` 2024 sales。
+  - 远期期权：Monarch 8GW、PROPWR 2031/2032 fleet、BESS/EMS 标准化 power block、RPMGlobal/矿业软件、氢/低碳燃料、800VDC/动态电力稳定与数据中心微电网控制。
+- 主要本地来源：
+  - `公司调研/机电_冷却_工程_水处理_边缘工业AI/CAT_Caterpillar_Inc_公司调研_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_动态UPS、飞轮与超级电容_2026-06-11.md`
+- 主要外部一手来源：
+  - [Caterpillar Reports First-Quarter 2026 Results](https://www.caterpillar.com/en/news/corporate-press-releases/h/1q26-results-caterpillar-inc.html)
+  - [Caterpillar 1Q 2026 Financial Results PDF](https://www.caterpillar.com/content/dam/caterpillarDotCom/releases/1q26/1q26-caterpillar-inc-financial-results.pdf)
+  - [Caterpillar 1Q 2026 Analyst Slide Deck](https://s25.q4cdn.com/358376879/files/doc_financials/2026/q1/1Q-2026-Analyst-Slide-Deck_Final.pdf)
+  - [Caterpillar 1Q 2026 Earnings Transcript](https://s25.q4cdn.com/358376879/files/doc_financials/2026/q1/Q1-2026-Earnings-Transcript.pdf)
+  - [Caterpillar 2026Q1 Form 10-Q, SEC](https://www.sec.gov/Archives/edgar/data/18230/000001823026000021/cat-20260331.htm)
+  - [AIP / Caterpillar / Boyd CAT 2GW hyperscale AI infrastructure alliance](https://investors.caterpillar.com/news/news-details/2026/American-Intelligence--Power-Forms-Strategic-Alliance-with-Caterpillar-and-Boyd-CAT-to-Deploy-2-Gigawatts-of-Dedicated-Power-for-Hyperscale-AI-Infrastructure/default.aspx)
+  - [PR Newswire copy of AIP 2GW release with delivery schedule and technical details](https://www.prnewswire.com/news-releases/american-intelligence--power-forms-strategic-alliance-with-caterpillar-and-boyd-cat-to-deploy-2-gigawatts-of-dedicated-power-for-hyperscale-ai-infrastructure-302673060.html)
+  - [PROPWR strategic framework agreement with Caterpillar](https://investors.caterpillar.com/news/news-details/2026/PROPWR-Secures-Strategic-Framework-Agreement-with-Caterpillar-Inc-/default.aspx)
+  - [Cat energy solutions for data centers](https://www.cat.com/en_US/by-industry/electric-power/electric-power-industries/data-centers.html)

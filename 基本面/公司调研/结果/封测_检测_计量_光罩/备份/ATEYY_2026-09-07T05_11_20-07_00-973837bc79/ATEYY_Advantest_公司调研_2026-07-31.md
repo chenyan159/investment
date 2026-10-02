@@ -1,0 +1,394 @@
+# 公司：ATEYY Advantest（爱德万测试，6857）——AI/HPC 半导体测试龙头全面尽调（2026-07-31）
+
+> **研究截止：**2026-07-31 13:09 PT（美股与东京市场均已收盘；ATEYY 最新可见成交为 12:51 PT）。Advantest 财年 FY2026 指 2026-04-01 至 2027-03-31。金额若无特别说明均为日元；本文情景换算采用公司 FY2026 指引汇率 **¥150/US$**，即期估值采用 2026-07-31 **¥159.07/US$**。  
+> **证据分层：**“披露”=公司/监管/客户公告；“渠道验证”=客户采购、竞争对手与会议材料；“研究估算”=本文模型，绝非公司指引。Advantest **不披露 backlog、bookings、book-to-bill、交期或取消率**，因此本文不会把采购公告、预收款或需求预测伪装成 backlog。  
+> **本地资料边界：**仅使用项目内 `基本面/行业调研/` 的 ATE、HBM、AI 加速器、光学测试与数据中心产业资料；公司层事实均重新联网核验，未调用其他目录的公司研究。
+
+## 结论先行
+
+1. **公司本质是 AI 芯片量产前的“良率与质量收费站”。**Advantest 的 V93000 在晶圆测试、封装后最终测试中覆盖 GPU、定制 ASIC、CPU、网络芯片；T5503HS2 等覆盖 HBM/DRAM；7038、handler、DUT board/socket、ACS/SiConic 又把收入延伸到 SLT、热控、接口、数据与设计验证。设备不装进数据中心，但没有这些测试，昂贵的 GPU+HBM 先进封装无法经济地放量。
+2. **2026-07-29 是一次实质性上修，而非小幅 beat。**FY2026 收入指引由 **¥1.420tn 上调至 ¥1.714tn（+¥294bn / +20.7%）**，营业利润由 **¥627.5bn 上调至 ¥846bn（+¥218.5bn / +34.8%）**；相对 FY2025，收入/营业利润/净利润分别预计 **+51.9%/+69.5%/+75.8%**。CY2026 测试机 TAM 由 $10.9–12.2bn 上调至 **$13.0–14.5bn**，中值上修约 19%，主因是推理 ASIC、CPU、GPU 与 DRAM 测试需求高于 4 月预期。[FY2026 Q1 财报](https://www.advantest.com/en/news/2026/qnpuno0000000cr7-att/E_FR_FY2026_1Q.pdf)；[7 月演示稿](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_slide.pdf)
+3. **FY2026 官方最大收入池是 SoC tester：¥1.2435tn，占公司 72.5%，同比 +62.0%。**其中 computing/communications 占约 95%，但公司未再拆 GPU/ASIC/CPU/网络。本文从产品结构、管理层措辞及竞争对手 AI 占比交叉估计：FY2026 **AI 数据中心直接相关收入约 ¥1.09–1.30tn（约 $7.3–8.7bn），占公司 64%–76%**；这不是披露值，误差主要来自通信/手机与通用服务器 CPU 的归类。
+4. **需求非常紧，但紧张点并非只在组装整机。**公司把 SoC tester 年产能从 2020 年约 1,000 台，拉向 FY2026 末 **超过 5,000 台**，并把 10,000 台目标前移；2026-07 Q&A 又表示最终可能需要 **15,000 台以上**，第二家东南亚 EMS 正在爬坡。制约项包括高速 pin electronics、DRAM/FPGA、机框与校准能力，以及客户 tape-out、CoWoS/先进封装和 HBM 供给，而非单一工厂面积。[FY2026 Q1 Q&A](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_QA.pdf)
+5. **客户侧有真钱验证。**台湾监管披露显示，ASE、SPIL 与台湾福雷在不同期间向 Advantest 累计披露生产设备采购约 **NT$10.814bn（约 US$341m）**，台湾福雷另披露软件约 **NT$0.477bn（约 US$15m）**。这些不是 Advantest 的 backlog，也不能由“批次”倒推出机器数，但足以验证 OSAT/测试厂的扩容、接口/软件附加销售和供应链采用。
+6. **资产负债表很强，盈利质量需剔除投资重估。**2026-06-30 净现金约 **¥305.0bn**、流动比率 **2.67x**、速动比率 **1.77x**、权益比率 **68.8%**、Q1 经营现金流 **¥137.2bn**；R&I 于 2026-07-22 将发行人评级上调至 **AA- / 稳定**。但 Q1 净利润中包含约 **¥44.7bn** 战略投资估值收益，且投资证券已占资产 23.6%，不能把 47.6% 的单季净利率全视为经常性。[R&I 评级公告](https://www.advantest.com/en/news/2026/20260723.html)
+7. **好公司与便宜股票不是一回事。**东京 6857 于 7 月 31 日收 **¥32,500（财报后单日 +16.3%）**；ATEYY 12:51 PT 最新成交 **US$198.35**。按 TTM 口径，东京股约 **51.2x PE / 19.1x PS**；按公司 FY2026 EPS ¥911.64 约 **35.7x forward PE**。当前价格已经预支了“产能兑现、份额不失、AI 周期延续”三件事。
+8. **最重要的反证不是 AI 消失，而是 Teradyne 成功双供。**Teradyne 2026Q2 Semiconductor Test 收入 **$1.122bn**，compute 占 SoC 约 70%，已经向首个 merchant GPU 客户出货并在第二家 AI hyperscaler 完成 correlation；其管理层给出的新平台双供认证周期约 **9–12 个月**。Advantest 的平台锁定很强，但不是永久垄断。[Teradyne Q2 2026](https://investors.teradyne.com/news-events/press-releases/detail/445/teradyne-reports-second-quarter-2026-results)
+
+## 1. 公司整体业务、投资人定位与财务健康度
+
+### 1.1 业务全景与产业链位置
+
+Advantest 创立于 1954 年，总部位于东京，东京证券交易所代码 **6857**，美国 OTC ADR 代码 **ATEYY**，ADR:普通股为 **1:1**。FY2026 Q1 海外客户收入占 **99.1%**。新披露口径只有两个报告分部，但内部价值链更细：[ADR 与股本信息](https://www.advantest.com/en/investors/shares-and-corporate-bonds/share-information/)
+
+| 业务/位置 | 主要产品 | 客户与采购时点 | 客户为什么付费 | FY26 Q1收入/分部利润 |
+|---|---|---|---|---:|
+| SoC 自动测试（Test Systems） | V93000 EXA Scale、Pin Scale 5000B、XPS256/XHC32、Link Scale、SmarTest 8 | Fabless/IDM 定义 test program；foundry/OSAT 在 wafer sort 与 final test 采购产能 | 更长 test time、更多 insertion、更高功率/针脚/scan data；减少坏 die 进入昂贵先进封装 | SoC **¥259.6bn**；含在 Test Systems 内 |
+| Memory 自动测试（Test Systems） | T5503HS2、T5801、T5835、T5851、B6700 | Samsung/SK hynix/Micron及 OSAT 的 wafer/package/burn-in | HBM 3–5 次测试插入、多温、KGD、2,048 I/O、HBM4/4E 速度与热复杂度 | Memory **¥48.0bn** |
+| Handler、SLT、接口（跨两分部） | M5241、7038/STR、device interface、DUT board、socket、thermal control | 后段测试厂/OSAT；随 tester fleet 与新封装并行采购 | 机械搬运、主动热控、mission-mode、耗材复购；决定 uptime 与并行度 | Other Systems **¥26.0bn**；Others **¥20.3bn** |
+| 服务、数据与设计验证（Services & Others） | Support、ACS Edge/RTDI/DPT、SiConic、Velocity、SmarTest license | 安装基数增长后持续；设计验证到量产移交前置 | 软件/数据形成 fleet lock-in，缩短量产爬坡并做 adaptive test | Support **¥13.6bn**；服务分部利润 **¥8.6bn** |
+| 新期权：SiPh/CPO 光电测试 | V93000+光源/探测/对准/探针/handler 的端到端 cell | PIC/optical engine/CPO 设计商、foundry/OSAT | 电+光联合测试、主动对准、温控和高并行；2026 仍处早期 HVM | 未单列，当前对集团不重大 |
+
+产业链可简化为：
+
+`芯片架构/DFT → wafer 制造 → 晶圆探针/ATE → KGD筛选 → 先进封装+HBM → final ATE → SLT/burn-in → AI服务器`。
+
+Advantest 横跨“设计验证—wafer sort—final test—SLT—数据闭环”，但不生产 GPU、HBM 或封装，也不直接拥有 OSAT 测试服务收入。它的经济价值来自：当一颗高价 GPU package 由多个 compute die、I/O die 与 8 颗左右 HBM 组成时，任何漏检都会把整包价值一起报废；因此测试价格不是由电子零件 BOM 单独决定，而由 **避免良率损失、缩短 time-to-volume 和释放昂贵封装产能**决定。项目内行业报告的示例显示，若 11 个 die 各自良率由 97% 提升到 99%，组合良率可从约 **71.5% 提高到 89.5%**。[本地 ATE/SLT 行业基线](../../行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-07-10.md)
+
+### 1.2 投资人眼中的公司
+
+- **核心标签：AI/HPC picks-and-shovels + 高壁垒双寡头。**公司披露 CY2025 SoC tester 份额约 **66%**，HPC 内份额更高，并计划向 70%以上推进；V93000 已装在全球主要 OSAT，test program、DUT board、probe card、工程师技能和历史相关性数据形成切换成本。[V93000 平台](https://www.advantest.com/en/products/semiconductor-test-system/soc/v93000/)
+- **利润弹性高于收入弹性。**客户既买新系统，也在既有机框加 pin card、power module、memory、license 与定制接口；高配 mix、日元与复用平台使 FY26 Q1 毛利率达到 **69.5%**、Test Systems 分部利润率达到 **57.2%**。
+- **周期股被重新定价为结构成长股。**传统 ATE 会随手机/汽车/存储周期大幅波动；现在增量来自 GPU、定制 ASIC、CPU、HBM、chiplet 和 CPO 的单位 test content，测试秒数与插入次数增长可快于芯片颗数。
+- **估值中的隐含假设很高。**市场不仅在定价 FY26 的 +51.9% 收入增长，也在定价 FY27 继续增长、5,000→10,000 台扩产成功以及 Teradyne 无法快速拿走主力 GPU/ASIC 项目。
+
+### 1.3 最近三年的重大变化、转型与并购
+
+| 日期 | 交易/业务变化 | 战略含义 |
+|---|---|---|
+| 2023-04 | 完成收购台湾 **Shin Puu**；与此前 Altanova 的高端 test board 研发结合 | 从卖 tester 向高阶 PCB/PCBA、DUT interface 与亚洲制造能力延伸，控制大电流/高速接口交期。[公告](https://www.advantest.com/en/news/2023/20230428.html) |
+| 2024-04 | 收购荷兰 **Salland Engineering** 100%，对价约 ¥4.8bn；业务含嵌入式量测、ATE instrument 与测试工程服务 | 扩展欧洲 fabless/start-up、定制 instrument 和 test service，推进“设备+工程服务”。[半年证券报告](https://www.advantest.com/document/en/investors/ir-library/report/IR_SecuritiesReport_84th_1H_en.pdf) |
+| 2024 | Doug Lefever 任 Group CEO；启动 MTP3 与 “Grand Design / total test” | 组织从单点 ATE 产品转向覆盖设计验证、量产、SLT、数据分析的总测试平台。[MTP3](https://www.advantest.com/en/news/2024/rki43h0000001nzy-att/E_Info_20240625.pdf) |
+| 2025-01/02 | 分别与 FormFactor、Technoprobe、Micronics Japan 建立探针卡战略合作/少数股权投资；Technoprobe 持股 2.5% | wafer-level test 与 KGD 重要性上升；合作不是排他，反而确保多个 probe-card 来源，降低单一供应链风险。[FormFactor/Technoprobe](https://www.advantest.com/en/news/2025/20250109.html) |
+| 2025-09 | 收购 **AllianceATE**；2026-05 把 Velocity 设计到测试自动化平台接入 V93000 | 把 EDA/DFT/test program 提前到设计期；缩短 bring-up，并增加软件附加收入。[Velocity](https://www.advantest.com/en/news/2026/20260518.html) |
+| 2025–2026 | 推出 SiConic、ACS Edge、Pin Scale 5000B、T5801、M5241；加入 Applied Materials EPIC，并与 OpenLight 开发 SiPh HVM 测试 | 从“终点检验机器”转成 design-to-test 数据平台，并布局 HBM4、chiplet 与 CPO。[Applied EPIC](https://www.advantest.com/en/news/2026/20260421.html)；[OpenLight](https://www.advantest.com/en/news/2026/20260623.html) |
+
+### 1.4 最新股价与估值
+
+| 指标 | 2026-07-31 数值 | 口径/计算 |
+|---|---:|---|
+| ATEYY 股价 | **US$198.35** | 12:51 PT 最新可见成交；OTC 流动性较低。[Yahoo Finance](https://finance.yahoo.com/quote/ATEYY/) |
+| 东京 6857 | **¥32,500** | 7 月 31 日收盘；较 7 月 30 日 ¥27,935 上涨 **16.3%**。[公司股价入口](https://www.advantest.com/en/investors/shares-and-corporate-bonds/price/) |
+| 流通股 | **723.966m** | 732.000m 已发行减 8.034m 库藏股，2026-06-30 |
+| 市值 | **¥23.529tn / US$147.9bn** | 以东京收盘和即期 ¥159.07/$；ATEYY 最新成交隐含约 **$143.6bn**，差异来自时点/OTC 折价 |
+| TTM 收入 | **¥1.2323tn / $7.75bn** | FY25 ¥1.1286tn − FY25Q1 ¥263.8bn + FY26Q1 ¥367.5bn |
+| 收入增速 | **TTM +36.2%**；FY25 +44.7%；FY26 指引 +51.9% | TTM 上年同期收入约 ¥904.8bn |
+| TTM PE | **51.2x（东京）/49.7x（ATEYY）** | TTM 净利 ¥460.0bn、EPS 约 ¥635.3；含 Q1 投资重估收益 |
+| Forward PE | **35.7x（东京）/34.6x（ATEYY）** | 公司 FY26 EPS 指引 **¥911.64**，并非一致预期 |
+| TTM PS | **19.1x（东京）/18.5x（ATEYY）** | 市值/TTM 收入 |
+| 毛利率 | **TTM 约 65.7%；最新季 69.5%** | 最近四季毛利约 ¥810bn / 收入 ¥1.232tn |
+| 净利率 | **TTM 37.3%；最新季 47.6%** | 最新季剔除 ¥44.7bn 金融收益并粗略税调后约 **38%–39%** |
+
+估值解释：ATEYY 与 6857 是同一经济权益（1:1），但 OTC 盘中与东京收盘存在时差和流动性折价，不能把两套市值相加。若 FY26 EPS 低于指引 20%，当前东京价格对应 PE 将升到约 **44.6x**；若在 ¥911.64 EPS 上仅给 25x，机械估值约 **¥22,800/股**，较现价低约 30%，显示估值压缩风险显著。
+
+### 1.5 资产负债表评估：健康，但投资证券使利润与权益更波动
+
+| 2026-06-30 | 数值 | 判断 |
+|---|---:|---|
+| 现金 / 应收 / 存货 | **¥413.1bn / ¥178.5bn / ¥273.7bn** | 现金充足；存货较 3 月末增加 ¥41.9bn（约 +18.1%），与提前备料/扩产一致，也提高周期反转时的减值风险 |
+| 流动资产 / 流动负债 | **¥890.8bn / ¥334.2bn** | 流动比率 **2.67x**；保守速动比率（现金+应收/流动负债）**1.77x**，短期偿债能力强 |
+| 债券 / 租赁负债 | **¥88.9bn / ¥19.2bn** | Q1 发行 ¥100bn 零息可转债；现金减债券和租赁后净现金约 **¥305.0bn**，但存在未来摊薄 |
+| 投资证券 | **¥357.7bn** | 较 3 月末 +¥289.8bn，占资产 **23.6%**；Q1 金融收益 ¥44.7bn、FVOCI 增加 ¥120.2bn，利润/权益会受市场估值影响 |
+| 总资产 / 负债 / 权益 | **¥1.5147tn / ¥472.0bn / ¥1.0426tn** | 权益比率 **68.8%**，财务杠杆低 |
+| Q1 OCF / capex | **¥137.2bn / 约 ¥11.0bn** | 经营现金流强；期内预收款增加约 **¥37.0bn**，是订单可见度的正面代理，但不等于 backlog |
+| 回购 / 股息 | **¥42.2bn / ¥21.4bn** | Q1 同时扩产、回购与分红，资产负债表有余力 |
+
+**健康度：8.5/10。**流动性、净现金、现金转换和信用评级均优秀；扣分项是（1）战略持股重估放大净利润，（2）为交付扩产的存货明显上升，（3）零息可转债的潜在摊薄，（4）若 AI 订单推迟，高配专用卡件比标准机框更容易形成呆滞库存。
+
+## 2. 最新及最近四次财报：五个季度拆解
+
+### 2.1 财务与产品收入
+
+单位：十亿日元；括号为同比。季度产品数来自公司 2026-07 演示稿的同口径历史图，个别合计因四舍五入相差 0.1。[最新五季演示口径](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_slide.pdf)
+
+| 财报季度（报告日） | 收入 | 毛利 / GM | 营业利润 / OPM | 净利 / NM | SoC tester | Memory tester | Other Systems | Support | Others（接口板等） | Test分部利润率 / 服务分部利润率 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| FY25Q1（2025-07-29） | **263.8（+90.1%）** | 171.6 / **65.1%** | 124.0 / **47.0%** | 90.2 / **34.2%** | **191.3（+176.8%）** | 33.5（+4.7%） | 15.8 | 9.3 | 13.9 | **52.8% / 11.7%**；服务利润含约 ¥2.5bn 剥离收益 |
+| FY25Q2（2025-10-28） | **262.9（+38.0%）** | 163.7 / **62.2%** | 108.4 / **41.3%** | 79.6 / **30.3%** | **173.7（+58.6%）** | 43.9（+21.9%） | 19.8 | 10.2 | 15.4 | **47.9% / 1.1%** |
+| FY25Q3（2026-01-28） | **273.8（+25.5%）** | 169.7 / **62.0%** | 113.6 / **41.5%** | 78.7 / **28.7%** | **165.2（+46.2%）** | 57.3（+4.9%） | 22.6 | 11.6 | 17.1 | **47.8% / 6.1%** |
+| FY25Q4（2026-04-27） | **328.1（+41.2%）** | 221.1 / **67.4%** | 153.1 / **46.7%** | 126.9 / **38.7%** | **237.2（+59.4%）** | 36.8（+4.8%） | 22.3 | 13.1 | 18.6 | **54.3% / 12.6%** |
+| **FY26Q1（2026-07-29）** | **367.5（+39.3%）** | **255.6 / 69.5%** | **190.0 / 51.7%** | **174.8 / 47.6%** | **259.6（+35.7%）** | **48.0（+43.3%）** | **26.0（+64.6%）** | **13.6** | **20.3** | **57.2% / 25.4%** |
+
+最新季的净利增长快于营业利润，主要因约 **¥44.7bn** 战略投资金融资产估值收益；判断经营趋势应优先看收入、毛利与营业利润。服务分部利润率从 1.1% 升至 25.4%，既有安装基数/高阶接口板 mix 的真实改善，也有小基数效应，不能线性外推。
+
+### 2.2 订单、交期、取消率与 AI 占比：披露边界及可验证代理
+
+| 季度 | Backlog / Bookings / B2B | 订单与交付可见度 | 交期/取消率 | AI 数据中心相关收入占比（研究估算） |
+|---|---|---|---|---:|
+| FY25Q1 | **均未披露** | SoC tester 由 GPU/ASIC 扩产和复杂度驱动；公司当时计划产能较 FY24 提升 70%以上 | Advantest 未披露；行业完整高配系统约 3–5 个月仅作参照 | **58%–70%** |
+| FY25Q2 | **均未披露** | 管理层称 GPU 与 custom ASIC 均将成为 FY26 驱动，二者架构/测试内容相近，差别在 DFT 与 insertion | 未披露；项目 tape-out 后才最终锁定配置 | **55%–67%** |
+| FY25Q3 | **均未披露** | custom ASIC 在 FY26 进入 HVM 的可见度提高；公司称产能扩张进度快于原计划 | 未披露；取消率无历史序列 | **54%–66%** |
+| FY25Q4 | **均未披露** | 明确 FY26 末至少 5,000 台 SoC 系统、CY2028末至CY2029初达 10,000 台；客户需求预测由传统约 6 个月拉长 | 公司强调上游 wafer/封装/HBM 也会延后 tester 转收入 | **60%–72%** |
+| **FY26Q1** | **均未披露**；Q1 预收款增加约 **¥37bn** | 收到约 **18 个月**需求预测；推理 ASIC/CPU 超预期；第二 EMS 爬坡，5,000/10,000 台目标前移；Q1 存货增加 ¥41.3bn | **模型交期 3–5 个月、项目推迟/取消折损 3%–8%，低置信度，非披露值** | **65%–78%** |
+
+AI 占比估算方法不是把所有 SoC 都算 AI，而是：SoC 中 computing/communications × AI/HPC 权重，Memory 中 HBM/server DRAM 权重，再加 AI 用 handler/interface/软件。其合理性由三条独立证据约束：（1）公司称 AI/HPC 与高性能 DRAM 是增长主因；（2）FY26 SoC 中 computing/communications 占 95%；（3）竞争对手 Teradyne 2026Q2 公司总收入已有 **60%以上**由 AI 驱动，而 Advantest 在主力 AI SoC tester 的份额更高。最大误差是“通信”包含手机/网络、“CPU”包含非 AI 通用服务器。
+
+## 3. 2026 年最新指引、业务占比与重点产品
+
+### 3.1 FY2026 指引与收入构成
+
+| FY2026E | 收入 | 占公司收入 | 同比 | 主要增量与判断 |
+|---|---:|---:|---:|---|
+| **SoC Test Systems** | **¥1,243.5bn / $8.29bn** | **72.5%** | **+62.0%** | 最突出；GPU 仍是当前最大池，custom ASIC 可能追平/超过，推理 CPU 亦明显超预期；computing/communications 占约 95% |
+| **Memory Test Systems** | **¥227.0bn / $1.51bn** | **13.2%** | **+32.4%** | DRAM 约 85%、NVM 约 15%；HBM/高性能 DRAM 与 NAND final test 均增加，但公司承认 memory 份额 2026 年可能下滑 |
+| **Other Systems** | **¥104.5bn / $0.70bn** | **6.1%** | **+29.8%** | handler、device interface、SLT、mask CD-SEM 等；AI 相关高热/高并行产品是增长核心，但披露混有非 AI 产品 |
+| **Support Services** | **¥59.0bn / $0.39bn** | **3.4%** | **+33.5%** | 安装基数增长带动服务合同、维护、升级与应用工程 |
+| **Others** | **¥80.0bn / $0.53bn** | **4.7%** | **+23.1%** | 主要由高性能 SoC test interface boards 增长；也含未单列软件/耗材 |
+| **集团合计** | **¥1,714.0bn / $11.43bn** | **100%** | **+51.9%** | 毛利率约 **66%–67%**、营业利润 ¥846bn、OPM **49.4%**、净利 ¥660bn |
+
+Q2 指引为收入 **¥434.5bn**、营业利润 **¥224.5bn**，上半年合计收入/营业利润 **¥802bn/¥414.5bn**；下半年仍隐含收入 **¥912bn**。因此 Q1 并非全年峰值。公司从 Q2 起假设 ¥150/$、¥170/€；美元每贬值 1 日元，FY26 营业利润约增加 **¥5.3bn**，欧元每贬值 1 日元反而约减少 **¥0.4bn**。
+
+### 3.2 重点产品、规模、增速与利润率交叉验证
+
+产品级收入和毛利率不披露。下表“AI 收入”在官方业务池内分配，不能与官方分部再相加；毛利率是以 Q1 集团 GM 69.5%、Test 分部利润率 57.2%、归一化 BOM 和同业利润率反推的区间。
+
+| 重点业务/产品 | 官方收入池与 AI 相关规模 | 关键规格/消息 | 采用阶段 | 模型毛利率 / 增速判断 |
+|---|---|---|---|---|
+| **V93000 EXA Scale：AI/HPC SoC ATE** | FY26 SoC ¥1,243.5bn；AI/HPC 归属估计 **¥870–995bn（$5.8–6.6bn）** | Pin Scale 5000B：5Gbps、加深 vector memory、多核 streaming；XPS256 可扩至 **>1,000A**，XHC32 为 32-channel 高功率；跨代兼容 load board/instrument/test program | V93000 已在所有主要 OSAT；CY25 SoC 份额 **66%**，HPC 更高；Pin Scale 5000B 正在 key customers ramp。[产品公告](https://www.advantest.com/en/news/2026/20260422.html) | **68%–76% GM**；FY26 官方 +62%，AI 子池约 +65%–85%；高配 card/module mix 令增长快于整机台数 |
+| **T5503HS2/T5801 + HBM/高性能 DRAM** | FY26 Memory ¥227bn；HBM/高性能 DRAM 估计 **¥136–170bn（$0.91–1.13bn）** | T5503HS2：**16,256 channels、9Gbps**，明确支持 HBM；T5801：**36Gbps PAM3/18Gbps NRZ**，面向 GDDR7/LPDDR6/DDR6；HBM4 的 2,048 I/O、多温/KGD/stack test 增加 test seconds | T5503 系列已 HVM；memory 新品取得客户 commitments，但 2026 份额可能先降后修复。[T5503HS2](https://www.advantest.com/en/products/semiconductor-test-system/memory/t5503hs2/)；[T5801](https://www.advantest.com/en/products/semiconductor-test-system/memory/t5801/) | **58%–67% GM**；FY26 官方 +32%，HBM 子池约 +40%–65%；竞争/产品时点使利润率低于 V93000 |
+| **M5241、7038、接口板/socket/thermal** | 跨 Other Systems 与 Others；AI 归属估计 **¥70–105bn（$0.47–0.70bn）** | M5241：**512 sites、46,000 UPH、-40–125°C（选件 -55–150°C）**；7038：**720 DUT、约10分钟测试时最高5,000 UPH**，逐 site 主动热控；VOICE 出现 **1,000A load-board** 实案 | M5241 已完成真实芯片量产条件验证，多家大厂准备采用，首批 2026Q2；7038/接口板为 HVM，随 V93000 fleet 扩张。[M5241](https://www.advantest.com/en/news/2025/20251210.html)；[7038](https://www.advantest.com/en/products/component-test-system/system-level-test-systems/7038/) | **45%–58% GM**；AI 子池约 +35%–55%；机械/热控 BOM 较重，但专用 socket/board 是复购高毛利层 |
+| **SmarTest、ACS、SiConic、Velocity** | 未单列；核心新增软件估计 **¥10–20bn（$67–133m）**，其余 license/support 已包含 ¥139bn 服务池 | ACS Edge 在测试执行中以**毫秒级**运行 AI/ML adaptive test；SiConic D200 **200Mbps**，与 V93000 文件/语义一致，2026-09 前上市；Velocity 自动化 design-to-test | ACS/SmarTest 已生产；Velocity 正整合；SiConic DFT 处发布/客户导入阶段。[ACS Edge](https://www.advantest.com/en/products/acs/edge/)；[SiConic DFT](https://www.advantest.com/en/news/2026/20260716.html) | **75%–88% GM**；低基数约 +50%–100%；潜力在提高客户转换成本和每台 tester ARR，不在短期绝对收入 |
+| **Silicon Photonics/CPO 电光测试** | 公司不披露；本文估计当前 **¥2–6bn（$13–40m）**、小于集团 0.4% | 公司称取得首个大型量产 SiPh ATE 订单；OpenLight 合作端到端 HVM optical engine test；VOICE 新增 SiPh track，展示模块化 CPO 电/光测试 | 首个量产订单 + 多客户方法开发；尚未形成广泛标准/认证，收入仍是期权 | **45%–60% GM**；可 +50%–150%，但零基数；对 2026 EPS 不重要，对 2028 后 CPO tester TAM 重要 |
+
+### 3.3 明确跳过的低优先级产品/业务
+
+以下不是“没有价值”，而是与未来 12 个月 AI 数据中心增量的直接相关度低，故不做逐型号收入预测：
+
+- **T2000 AiR2X**：空气冷却的通用 SoC/功率/模拟测试，更多面向汽车、工业、消费；
+- **MTe、EVA100 等功率/模拟平台**：新能源车/工业功率半导体周期，AI 数据中心仅有间接电源链敞口；
+- **E3660 photomask CD-SEM**：2nm/EUV mask 计量具备技术价值，但 FY26 Other Systems 中规模小，无法与 AI ATE 增量相提并论；
+- **传统 DDIC、低端移动 RF、成熟制程 MCU/消费 SoC tester**：公司预计仅占 SoC 应用约 5% 的汽车/工业/消费/DDIC 池；
+- **传统 DDR4/LPDDR4、低速 NAND/legacy memory tester**：保有服务与替换需求，但增长慢；
+- **pre-owned equipment 与一般培训/维修**：有现金流但不构成 AI 估值上修驱动。
+
+需特别保留的“小而有潜力”是 **SiConic/Velocity、ACS Edge、SiPh/CPO、M5241 主动热控、Link Scale 的 ATE-SLT 相关性**；它们短期收入小，却能增加平台锁定或打开新 test insertion。
+
+## 4. 当前每项关键业务：收入贡献、技术重要性、紧迫性与定价权
+
+评分均为 1–5：重要性 5=没有该测试难以经济量产；紧迫性 5=客户本轮量产必须采购；供需 5=明显供不应求；垄断 5=事实单源/近单源；溢价 5=可按客户良率价值而非 BOM 定价。
+
+| 关键业务 | FY26 AI相关收入贡献（研究估算） | 当前增速 | AI栈重要性 | 时间紧迫性 | 供需紧张 | 垄断能力 | 溢价能力 | 核心判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| V93000 AI/HPC SoC ATE | **¥870–995bn / $5.8–6.6bn** | **+65%–85%** | **5** | **5** | **5** | **4.5** | **4.5** | GPU/ASIC 最终测试时间最长；66% SoC 份额、跨代生态强，但 Teradyne 双供正在推进 |
+| HBM/高性能 Memory ATE | **¥136–170bn / $0.91–1.13bn** | **+40%–65%** | **5** | **5** | **4** | **3.5** | **3.5** | HBM stack 必须多阶段筛选；Advantest 产品力强，但 memory 竞争比 SoC 激烈且公司承认 2026 份额压力 |
+| 高功率 SLT/handler/interface | **¥70–105bn / $0.47–0.70bn** | **+35%–55%** | **4** | **4.5** | **4** | **3** | **3.5** | ATE 漏检需 mission-mode 捕获；热控/socket/board 高度定制，机械系统则有 Cohu/Teradyne/OSAT 自制替代 |
+| ACS/SiConic/Velocity 软件 | **¥10–20bn / $0.07–0.13bn** | **+50%–100%** | **4** | **3.5** | **2** | **3.5** | **4** | 不是量产瓶颈硬件，却把 DFT、test program、数据和量产相关性锁在 V93000 生态 |
+| SiPh/CPO 测试 | **¥2–6bn / $0.01–0.04bn** | **+50%–150%** | **3（未来4–5）** | **2.5** | **2** | **2.5** | **3** | 2026 仍在首批 HVM；若 scale-out CPO 2027–28 放量，电光联合测试会从实验室工具转为量产瓶颈 |
+
+## 5. 一年后关键业务三情景预测
+
+预测窗口为 **2026-08 至 2027-07 年化/FY2027E 可比口径**，并非公司指引。收入用 ¥150/$ 换算。评分串顺序为 **重要性/紧迫性/供需紧张/垄断/溢价**。
+
+| 业务 | 情景 | 一年后收入贡献 | 相对当前AI子池增速 | 五项评分 | 成立条件 |
+|---|---|---:|---:|---|---|
+| **AI/HPC SoC ATE** | 基准 | **¥1.05–1.18tn / $7.0–7.9bn** | **+18%–25%** | **5/5/4/4.5/4** | GPU 继续增长、ASIC/CPU 按既有 tape-out 放量；产能达 7–8k system-equivalent；Teradyne 仅渐进拿份额 |
+|  | 乐观 | **¥1.22–1.40tn / $8.1–9.3bn** | **+35%–45%** | **5/5/5/4.5/4.5** | 推理 ASIC 多项目同时量产、test seconds/insertions 高于预案，产能 9–10k |
+|  | 极度乐观 | **¥1.45–1.65tn / $9.7–11.0bn** | **+60%–70%** | **5/5/5/5/5** | GPU+ASIC+CPU 全部上沿，先进封装/HBM 不限供，产能 11–13k 且高配 mix 不降 |
+| **HBM/高性能 Memory ATE** | 基准 | **¥180–220bn / $1.2–1.5bn** | **+25%–35%** | **5/5/4/3/3** | HBM4 12Hi 正常量产、DRAM/NAND final test 健康，新产品止住份额下滑 |
+|  | 乐观 | **¥225–285bn / $1.5–1.9bn** | **+55%–70%** | **5/5/5/3.5/4** | HBM4 test-time 指数较 HBM3E 提升 35%–55%，T5801/M5241 多家客户导入 |
+|  | 极度乐观 | **¥290–370bn / $1.9–2.5bn** | **+90%–120%** | **5/5/5/4/4.5** | HBM4E/16Hi 提前、KGD/多温/stack insertion 全面增加，且 memory 份额回升 |
+| **SLT/handler/interface** | 基准 | **¥95–130bn / $0.63–0.87bn** | **+25%–35%** | **4/4/3/3/3** | 7038/M5241/高电流 boards 随 tester fleet 同步，OSAT 不大规模自制 |
+|  | 乐观 | **¥125–165bn / $0.83–1.10bn** | **+55%–75%** | **4.5/4.5/4/3.5/4** | AI package mission-mode test 增加、主动热控与 socket 成为标配 |
+|  | 极度乐观 | **¥165–230bn / $1.1–1.5bn** | **+90%–120%** | **5/5/5/4/4.5** | SLT 从抽样转高覆盖，ASIC/GPU test time 大幅延长且 Advantest 捕获整 cell |
+| **ACS/SiConic/Velocity** | 基准 | **¥18–30bn / $0.12–0.20bn** | **+50%–70%** | **4/3/2/4/4** | SiConic DFT 如期上市，软件主要附着 V93000 installed base |
+|  | 乐观 | **¥28–45bn / $0.19–0.30bn** | **+100%–130%** | **4.5/4/3/4/4.5** | 多个大客户将 DFT/validation/test program 标准化到 SiConic+Velocity |
+|  | 极度乐观 | **¥45–70bn / $0.30–0.47bn** | **+200%–250%** | **5/4.5/4/4.5/5** | 软件从工具 license 变成 fleet/数据平台订阅，ACS adaptive test 大规模生产部署 |
+| **SiPh/CPO test** | 基准 | **¥5–10bn / $0.03–0.07bn** | **+50%–150%** | **3/3/2/3/3** | 首个量产客户爬坡，OpenLight/Applied 合作完成至少一个生产 qualification |
+|  | 乐观 | **¥10–18bn / $0.07–0.12bn** | **+200%–400%** | **4/4/3.5/3.5/4** | 2–3 个 optical-engine/CPO 项目进入 HVM，V93000 电气 installed base 带来交叉销售 |
+|  | 极度乐观 | **¥18–30bn / $0.12–0.20bn** | **+400%–800%** | **5/5/5/4/4.5** | scale-out CPO 提前一年放量、每 port 测试仍需分钟级且并行效率改善不足；即使如此仍约集团收入 1% |
+
+极度乐观不是最可能情景，且各业务上沿不能机械相加：例如 HBM/CoWoS 限供会同时压 GPU 数量，却可能增加每颗测试价值；反之 test-time 优化会提高 tester 产能，却压低单位内容量。
+
+## 6. BOM、每 MW/rack/GPU/optical port 内容量、当前产能与认证
+
+### 6.1 先澄清“内容量”：数据中心机柜中的 Advantest 物理 BOM 为零
+
+Advantest 的设备位于芯片厂、foundry、OSAT 和测试厂，不随 GPU 出货进入机柜。因此所谓“每 GPU/MW 内容量”只能是 **设备商收入在合格器件产量上的折旧/利用率摊销等价量**，不是机柜 BOM，也不是 OSAT 向芯片客户收取的 test service fee。本文采用本地产业基线 **72 GPU/rack、142kW/rack、507 GPU/MW、每 GPU 约 8 颗 HBM stack**，并以 test insertion、test seconds、parallelism、uptime 和 3–5 年设备复用进行校准。[本地 AI 数据中心物理锚](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)；[本地 HBM 基线](../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-07-10.md)
+
+### 6.2 归一化 BOM/交付价值
+
+| Test cell / 每 $100 交付价值 | 归一化拆分 | 价格传导与约束 |
+|---|---|---|
+| **高端 SoC ATE（V93000）** | pin electronics/数字模拟RF instrument **34**；DPS/PMU **13**；FPGA/controller/memory/network **12**；机框/backplane/cooling **10**；DUT interface/thermal/custom **10**；assembly/calibration **10**；warranty/logistics **5**；其他 **6** | 高速 DRAM/FPGA、专用 ASIC、校准与大电流 board 紧张先抬 COGS；Advantest 再通过高配 card、module upgrade 与价值定价传给 OSAT。公司称 2026 DRAM 零件成本上升，只能部分转嫁 |
+| **HBM/Memory test cell** | 高通道 pin/timing electronics **30**；DUT interface/prober/handler **20**；高速 clock/signal integrity **10**；power/thermal **10**；controller/vector memory/network **10**；机框/backplane **8**；assembly/calibration **7**；warranty/logistics **5** | HBM4 2,048 I/O、9–16Gbps、多温与高自热抬升通道/热控价值；parallelism 改善可抵消一部分 test-time 增长 |
+| **7038/M5241 SLT-handler** | handling/robotics **24**；active thermal **22**；power/electronics **22**；DIB/socket/contactor **18**；software **6**；integration/service **8** | 机械/冷却外购压毛利；device-specific socket、BIB/DIB、recipe 与主动热控具有复购/溢价 |
+| **SiPh/CPO 电光 cell** | ATE 电气平台 **30**；光源/探测/OSA/开关 **22**；prober/主动对准 **18**；handler/thermal **13**；probe/fixture **8**；software/calibration/recipe **9** | 2026 仍为低并行、高工程量；量产后 alignment 与 test list 缩短令单位 port 成本下降，但 port 数量急增。[本地光学验证测试](../../行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-07-10.md) |
+| **ACS/SiConic/Velocity** | 不适用传统材料 BOM；主要成本为研发/应用工程、secure compute、数据基础设施与客户部署 | 边际复制成本低但前期支持重；能按节省 test seconds、加快 yield learning 与避免量产延误定价 |
+
+### 6.3 设备收入等价内容量
+
+| 产品层 | 每 GPU-equivalent | 每 72-GPU rack | 每 MW（507 GPU） | 真实物理/经济含义 |
+|---|---:|---:|---:|---|
+| SoC wafer-sort + final ATE | **$300–700** | **$21.6k–50.4k** | **$0.152–0.355m** | 多次插入、高功率/scan/final test 的设备收入摊销；GPU 与 ASIC 上沿，CPU 下沿 |
+| 8×HBM stack 的 memory ATE | **$160–400**（约 $20–50/stack） | **$11.5k–28.8k** | **$0.081–0.203m** | 包含 base-die/wafer/KGD/stack/package 多阶段测试的 equipment-equivalent，不含 HBM 器件售价 |
+| SLT/handler/interface/thermal | **$90–250** | **$6.5k–18.0k** | **$0.046–0.127m** | mission-mode、handler、socket、load board 与主动热控；是否全检决定区间 |
+| 软件/数据/服务 | **$20–70** | **$1.4k–5.0k** | **$0.010–0.035m** | tester license、应用工程和 fleet analytics 摊销，不是每颗芯片逐件收费 |
+| **合计，不含 SiPh** | **$570–1,420** | **$41.0k–102.2k** | **$0.289–0.720m** | 与 Advantest FY26 AI 收入估算、全球 AI accelerator/ASIC/CPU 数量及设备复用交叉校准；置信度中低 |
+| SiPh/CPO | **全 cell $20–80/optical port；Advantest 可捕获约 $6–24/port** | 不固定 | 不固定 | 以 ATE 电气平台占 cell 价值约 30% 估算；若仅作“一 GPU 对一 800G port”示意，则约 $0.4–1.7k/rack、$3–12k/MW，但真实 CPO 拓扑可能多端口，禁止机械套用 |
+
+价格传导链：
+
+`Hyperscaler AI capex → GPU/ASIC/HBM 数量与 ASP → foundry/OSAT 产能与良率责任 → test insertions × seconds ÷ parallelism → tester/card/handler/interface 配置 → Advantest 设备与软件收入 → OSAT test service 单价 → 芯片/package ASP → 服务器/rack TCO`。
+
+最关键的反直觉点是：更好的 DFT、更多 multisite 与更快测试会压低每颗内容量；但 chiplet/HBM 增加 die 数、功率、test list 与 quality guardband。Advantest 的增长取决于后二者是否持续快于前者。
+
+### 6.4 当前产能、采用与认证阶段
+
+| 业务 | 当前产能能力（收入等价） | 供应链采用 | 认证/量产阶段 |
+|---|---:|---|---|
+| SoC ATE | FY26 末 **>5,000 system-equivalent/年**；按 FY26 SoC 收入反推至少约 **$8.3bn/年**，其中含 card/upgrade，不能视作 5,000 台完整机 ASP | CY25 SoC 份额 **66%**；V93000 安装在所有主要 OSAT；东南亚第二 EMS 爬坡 | 主力 GPU/ASIC/CPU 已 HVM；Pin Scale 5000B 在 key customers ramp；新客户完整 correlation/production qualification 通常 **6–18个月** |
+| Memory ATE | 未披露台数；FY26 收入交付能力至少 **$1.51bn/年** | T5503 系列广泛 HVM；公司承认 2026 memory share 可能下降，但称新产品已有 customer commitments | T5503HS2/HBM 已量产；T5801 面向下一代 DRAM 导入；HBM4/4E 认证按客户推进 |
+| SLT/handler/interface | Other Systems + Others 官方收入池约 **$1.23bn/年**，其中 AI 相关约 $0.47–0.70bn | 7038 已生产采用；M5241 有多家主要 memory maker 准备采用；接口板随 V93000 fleet | 7038 HVM；M5241 已完成真实器件量产条件验证并于 2026Q2 首批出货；socket/board 每 device 需相关性认证 |
+| ACS/SiConic/Velocity | 无材料产能；当前核心新软件收入能力估计 **$0.07–0.13bn/年**，主要受工程师/客户部署速度约束 | SmarTest/ACS 随 installed base；Velocity 集成 V93000 | ACS 已生产；SiConic DFT 计划 2026-09 前 GA，目前是发布/early adopter；Velocity 处整合/示范 |
+| SiPh/CPO | 未披露；本文估计当前交付能力 **$20–60m/年** | 公司披露首个大型量产 ATE 订单；OpenLight、Applied EPIC、VOICE 生态验证 | 单一/少数量产项目 + 多客户方法开发；尚非全行业 HVM 标准 |
+
+## 7. 一年后产能、采用与认证阶段三情景
+
+| 业务 | 情景 | 2027-07 产能能力（收入等价） | 采用程度 | 未来认证阶段 |
+|---|---|---:|---|---|
+| **SoC ATE** | 基准 | **7–8k system-eq / $11.5–13.5bn** | SoC share 约 65%–70%，主力 V93000 维持，Teradyne 渐进双供 | 现有 GPU/ASIC 新代际 HVM；新 CPU/ASIC 完成量产相关性 |
+|  | 乐观 | **9–10k / $14–17bn** | share 约 70%–73%，custom ASIC 扩展快于竞争者 | 多个推理 ASIC/CPU 同时 HVM；Pin Scale 5000B 成高配主流 |
+|  | 极度乐观 | **11–13k / $18–22bn** | share >73%，高配卡件无供应瓶颈 | 主要 GPU/ASIC 平台近单源或首发独占；接近公司潜在 15k 路线 |
+| **Memory ATE** | 基准 | **$1.8–2.2bn** | 份额止跌，HBM4 主流客户保持 | T5503HS2/T5801/M5241 完成更多 HBM4/DRAM HVM |
+|  | 乐观 | **$2.3–2.8bn** | memory share 回到约 60%–65% | 多家 memory maker 批量采用 M5241，新测试平台覆盖 HBM4E early ramp |
+|  | 极度乐观 | **$3.0–3.8bn** | share 约 65%–70%，KGD/stack/多温插入全面增加 | HBM4E/16Hi 提前 HVM，测试规格锁定 Advantest 方案 |
+| **SLT/handler/interface** | 基准 | **$0.85–1.05bn（AI相关）** | 7038/M5241/boards 随 tester fleet，采用扩至更多 OSAT | device-specific board/socket 正常认证 |
+|  | 乐观 | **$1.10–1.35bn** | 主动热控与长时 mission-mode 成高端 AI 标配 | 多客户由抽样 SLT 转较高覆盖 |
+|  | 极度乐观 | **$1.4–1.8bn** | Advantest 捕获 tester+handler+interface 整 cell | GPU/ASIC/HBM test cell 一体化资格通过，OSAT 自建替代受限 |
+| **软件** | 基准 | **$0.12–0.20bn** | SiConic/Velocity 附着既有 V93000 | SiConic DFT GA 后进入设计/验证生产流程 |
+|  | 乐观 | **$0.19–0.30bn** | 多客户 fleet deployment | DFT→V93000 transfer 完成 production sign-off |
+|  | 极度乐观 | **$0.30–0.47bn** | 形成事实 design-to-test 数据标准 | ACS adaptive test/SiConic 跨多个 fab/OSAT 全面认证 |
+| **SiPh/CPO** | 基准 | **$0.05–0.10bn** | 1–2 个生产项目 | 首个大单稳定 HVM、OpenLight optical engine cell qualification |
+|  | 乐观 | **$0.10–0.18bn** | 2–3 个主要 PIC/CPO 项目 | 多 foundry/OSAT production correlation，模块化 cell 复用 |
+|  | 极度乐观 | **$0.18–0.30bn** | scale-out CPO 广泛采用 | 800G/1.6T optical engine 电光测试形成平台规范；仍需面对 Teradyne/专业光测厂竞争 |
+
+这里的“收入能力”是可交付上限，不是收入预测。SoC 产能的美元数按 FY26 每 system-equivalent 约 $1.66m 校准并给配置误差；公司称 10,000 台当前配置约等于 2020 年 20,000 台的有效能力，说明“台”本身不是跨代可比单位。
+
+## 8. 订单积压、供给与未来一年公司增速
+
+### 8.1 可验证客户采购：采用证据，不是 backlog
+
+台湾公开资讯观测站的“取得或处分资产”公告可按公司代码 3711、日期与序号复核：[MOPS 查询入口](https://mopsov.twse.com.tw/mops/web/t05st01?TYPEK=sii&co_id=3711)。
+
+| 披露日 / 买方 | 事实发生期间 | 卖方/资产 | 批次 | 累计金额（未税） | 可推断/不可推断 |
+|---|---|---|---:|---:|---|
+| 2026-06-23 / ASE Inc. 日月光半导体 | 2026-05-29 至 06-23 | Advantest；生产/运营设备 | 1批 | **NT$2.348bn（约 $74m）** | 验证 OSAT 扩测试资产；型号、机器数、终端客户未知 |
+| 2026-07-14 / SPIL 矽品 | 2026-06-17 至 07-14 | Advantest；生产/运营设备 | 6批 | **NT$2.245bn（约 $71m）** | 平均每批约 NT$374m，但一批可含多系统/卡件，绝不能当单机 ASP |
+| 2026-07-27 / Taiwan Foreelectronics 台湾福雷 | 2026-03-18 至 07-27 | Advantest；机械设备 | 1批 | **NT$6.220bn（约 $196m）** | 强验证测试子公司扩产；交付/收入确认窗口未知 |
+| 2026-07-29 / 台湾福雷 | 2025-10-02 至 2026-07-29 | Advantest；软件资产 | 累计 | **NT$0.477bn（约 $15m）** | 验证软件 attach；可能跨期确认，不能与硬件一比一配套 |
+| **设备小计 / 含软件合计** | 不同主体、期间部分重叠 |  |  | **NT$10.814bn / NT$11.291bn（约 $341m / $356m）** | 只取各主体/资产类别最新累计值，未重复加总同一更新公告 |
+
+行业论坛曾先注意到 SPIL 约 $70m 的公告并讨论 ATE 会否成为 2027 瓶颈；本文仅把论坛作为发现线索，结论以上述监管公告为准。[论坛线索](https://www.reddit.com/r/Semiconductors/comments/1uy0p7r/tsmcs_ceo_called_advanced_packaging_capacity/)
+
+### 8.2 “隐藏 backlog”拼图
+
+| 代理变量 | 已观察事实 | 强度 | 局限 |
+|---|---|---:|---|
+| 公司指引 | Q1 后一次性上调全年收入 **¥294bn**，且 H2 仍需 ¥912bn | 很强 | 指引不是订单合同；含汇率/产品 mix |
+| 预收款 | Q1 现金流中 advance receipts 增加约 **¥37bn（约 $247m）** | 强 | 未披露客户/产品/可取消条款，且不等于期末 backlog |
+| 客户采购公告 | ASE 系不同主体累计设备约 **$341m** + 软件约 $15m | 强 | 交付与收入确认时点未知；非全客户样本 |
+| 需求预测窗口 | 客户已给公司约 **18个月** forecast，过去通常约 6 个月 | 强 | forecast 可变，最终 test menu 要在 tape-out/characterization 后才确定 |
+| 产能行为 | 第二 EMS 爬坡、>5k/10k 目标前移，管理层讨论 15k+ | 很强 | 若周期反转会形成利用率/库存风险 |
+| 同业 B2B | Teradyne Q2 memory 连续三季 >$200m，Q2 book-to-bill **>2x**；compute 同比约 +600% | 中强 | 是同业 TAM 验证，不是 Advantest 订单 |
+| 会议技术痛点 | VOICE 2026 有 1,000A load board、多核 scan、热控、SiPh；470+ 与会者、87 篇论文，多数由客户参与 | 中 | 开发活动不保证采购，但验证问题真实且已进入量产工程。[VOICE 议程](https://voice.advantest.com/technical/) |
+
+### 8.3 公司未来一年增长三情景
+
+以 FY2026 公司指引 ¥1.714tn 为正常化比较基准，而非低基数 TTM ¥1.232tn。模型中的“取消/推迟折损”是对 gross scheduled demand 的压力折扣，不是公司历史取消率。
+
+| 情景 | 2026-08至2027-07年化收入 | 较 FY26 指引 | 营业利润率 | SoC产能/订单假设 | 项目取消/推迟折损 | 主观概率 |
+|---|---:|---:|---:|---|---:|---:|
+| **基准** | **¥2.05–2.20tn / $13.7–14.7bn** | **+20%–28%** | **48%–51%** | 7–8k system-eq；ASIC/CPU/GPU 正常放量，Teradyne 渐进拿份额；HBM4 正常 | **5%–10%** | **55%** |
+| **乐观** | **¥2.30–2.50tn / $15.3–16.7bn** | **+34%–46%** | **50%–53%** | 9–10k；多个推理 ASIC 同时 HVM，test time/insertions 上行，memory share 回稳 | **2%–5%** | **30%** |
+| **极度乐观** | **¥2.65–2.90tn / $17.7–19.3bn** | **+55%–69%** | **52%–56%** | 11–13k；先进封装/HBM 无约束、GPU/ASIC/CPU 全部上沿、SLT/CPO 增量提前 | **0%–2%** | **15%** |
+
+**基准最合理。**理由是已经有指引、预收款、客户采购和扩产四层证据；但极度乐观要求“需求、上游供给、Advantest 自身产能、份额”同时到上沿，相关性很高，不能把每一项独立 bull case 相乘后仍给高概率。
+
+未来 12 个月应按月/季跟踪以下否证：
+
+1. SoC tester 出货增长是否持续、5,000 台目标是否继续提前；
+2. ASE/Amkor/其他 OSAT 是否出现更多可识别 Advantest 采购与验收，而非只重复累计公告；
+3. 预收款、存货与收入的转化：若存货继续上升而 H2 收入低于 ¥912bn，供给准备可能变成过剩；
+4. Teradyne merchant GPU/第二 hyperscaler 从 correlation 转 HVM 的速度；
+5. HBM4 客户认证、test-time index 与 Advantest memory share 是否止跌；
+6. CoWoS/先进封装/HBM 供给若限制 chip volume，tester 配置升级能否抵消台数延期；
+7. 客户是否通过 DFT、scan compression、multisite、adaptive test 把 test seconds 降得快于芯片复杂度上升。
+
+## 9. 竞争格局、主流性、替代风险与客户切换成本
+
+### 9.1 分产品竞争
+
+| 领域 | Advantest | 主要竞争者/方案 | 竞争结论 |
+|---|---|---|---|
+| 高端 SoC ATE | V93000 EXA Scale、66% CY25 SoC share、HPC 更高；跨代卡件/程序兼容 | **Teradyne UltraFLEXplus** 最强；另有 CCTech/长川、Accotest/华峰、Cohu、Chroma、SPEA、YC、EXICON | 高端 AI 目前近双寡头；中国厂商在成熟/本土市场替代，短期难复制 HPC 大电流、pin density、软件/相关性生态 |
+| Memory/HBM ATE | T5503HS2 高并行、T5801 超高速、B6700/M5241 cell | Teradyne Magnum 系列、UniTest、YC、Shibasoku、Chroma、Cohu 等 | 竞争比 SoC 激烈；Advantest 已明确 2026 可能因速度/带宽 insertion 时点而丢份额，新产品 commitments 是修复而非胜利保证 |
+| SLT/handler/thermal | 7038、M5241、ATE-SLT Link Scale correlation、接口板/socket | Teradyne TitanHP/TEL KGD cell、Cohu Eclipse、TechWing、Hon Precision、Chroma、Aehr，以及 OSAT 自研 rack | 定制热控/相关性有壁垒，机械自动化易多供；客户可能拆分 tester、handler、socket，而非购买全套 |
+| 软件/数据/DFT | SmarTest、ACS、SiConic、Velocity，天然贴近 installed base | Teradyne TestInsight/软件生态、Cohu DI-Core/Tignis、PDF Solutions、proteanTecs、Synopsys/Siemens/Cadence EDA、客户自研 | 最大优势是生产数据和 V93000 语义一致；风险是客户坚持厂商中立数据层，或 EDA 厂把 DFT/validation 向下整合 |
+| SiPh/CPO | V93000 电气基座、首个量产单、OpenLight/Applied 生态 | Teradyne Photon/Quantifi、FormFactor/Keystone、ficonTEC、MPI、Chroma/Aehr及专业光测厂 | 技术方向是主流，但 2026 尚未形成赢家；主动对准、光学器件与 production throughput 可能让专业厂而非 ATE 厂捕获更多价值 |
+
+公司年度风险披露列出的 tester 竞争对手包括 Teradyne、CCTech、Accotest、YC、Cohu、UniTest、EXICON；handler 对手包括 Hon Precision、CCTech、Cohu、TechWing；interface 对手包括 TSE、ISC、BeLINK。[Advantest 风险因素](https://www.advantest.com/en/investors/management-policy/risk/)
+
+### 9.2 新技术是否会成为主流
+
+- **V93000 模块化、跨代兼容与高功率 pin electronics：已是主流。**AI/HPC 的功率、scan data、chiplet 和高 pin-count 不是营销概念；VOICE 2026 的 1,000A load board、per-core test、heterogeneous-die flows 均来自客户量产工程。平台兼容可保护客户硬件/程序投资，是 Advantest 最硬的 moat。
+- **HBM4 多阶段 KGD/stack/多温测试：确定成为主流。**HBM 测试插入约 3–5 次；HBM4 相对 HBM3E 的 test-time 指数研究基准约 120–135，乐观 135–155。真正风险不是“不测试”，而是谁提供 tester、多少 parallelism，以及 test content 是否被 DFT/BIST 压缩。[本地 HBM 测试设备研究](../../行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-07-10.md)
+- **高功率 SLT/主动热控：高端 AI 会扩张，但未必全检。**长时间 mission-mode 能抓 ATE escape；成本很高，客户会动态决定抽样率。结构测试若能在 ATE/Link Scale 完成，SLT test time 可能下降。
+- **SiConic/ACS 的设计到测试闭环：方向正确，商业化尚待证明。**它们能减少占用昂贵生产 ATE 做 debug，但能否变为独立大收入池，取决于客户愿不愿把 DFT IP、测试数据与算法放入单一供应商平台。
+- **SiPh/CPO：光互连方向主流，Advantest 方案未必成为唯一主流。**Teradyne 估计 CPO test-equipment TAM 从 2026 约 $100m 增至 2028 **$300–700m**，2030 可超过 $1bn；同时预计 test list 会从 characterization 收缩、设备会变快，port 数增长与单位 test content 下降会对冲。
+
+### 9.3 客户切换成本与垄断边界
+
+切换不是“换一台机器”，而是同时重做：
+
+`test program/DFT → instrument correlation → load board/probe card/socket → GR&R/yield correlation → handler/thermal recipe → OSAT operator/maintenance → 客户质量放行`。
+
+经验时间：行业通常 **6–18个月**；Teradyne 对大型 compute 客户给出的 dual-source 从启动到量产约 **9–12个月**。一旦完成，客户可在数年内把份额管理在约 **30%–70%** 区间，而不是永久单源。Advantest 的跨代兼容、全球 OSAT 安装量和应用工程将认证门槛抬高，但 hyperscaler/GPU 客户有足够采购规模去资助第二来源。
+
+### 9.4 风险清单（按投资重要性排序）
+
+1. **Teradyne 份额风险。**其 Q2 2026 SoC 收入约 $843m、compute 占 70%、同比约 +600%；首个 merchant GPU 已出货、第二 hyperscaler 完成 correlation。即使 Advantest TAM 继续增长，份额下滑也会压估值倍数。
+2. **高估值/预期风险。**35.7x 公司指引 PE、19.1x TTM PS 容错低；任何 H2 ¥912bn 收入未兑现、GM 回落或 FY27 增速降到个位数都会造成双杀。
+3. **memory 产品/份额风险。**公司承认 2026 可能在某些 speed/bandwidth insertion 落后；HBM 增长不自动等于 Advantest 增长。
+4. **客户/项目集中但披露不透明。**公司不披露 backlog、取消率和终端客户；OSAT 采购可能服务多个客户，也可能因 tape-out/封装延误推迟验收。
+5. **上游限供。**先进封装、HBM、wafer starts 任一延迟，都会把 tester 收入后移；同时 Advantest 自身受 DRAM/FPGA/专用器件与校准技师制约。
+6. **测试效率替代。**更强 DFT/BIST、scan compression、multisite、adaptive test 和 test sharing 会减少 seconds/器件；这是长期最直接的单位内容量风险。
+7. **扩产过度。**若 10k/15k 产能在 AI capex 降温后到位，库存、EMS commitments 与价格竞争会压 GM。
+8. **中国/出口管制与本土替代。**FY26Q1 中国出货约 19%，其中约 80%–85% 为 SoC；高端出口限制或国产替代会影响可服务市场，虽然短期中国新 fab 增量可能要到 2028–29。
+9. **投资证券、汇率与可转债。**战略持股令净利润波动；美元/日元敏感度很高；¥100bn 可转债可能摊薄。
+10. **运营与网络安全。**公司 2026-02 发生网络安全事件并已采取强化措施；测试 program、客户数据与供应链排程高度敏感，复发会伤害资格与交付。[风险披露](https://www.advantest.com/en/investors/management-policy/risk/)
+
+## 10. 六个月证据时间线与最终判断
+
+| 时间 | 最新证据 | 对投资判断的影响 |
+|---|---|---|
+| 2026-01-28 | FY25Q3 上修；custom ASIC FY26 HVM、产能提前 | 需求从单一 GPU 扩展到 hyperscaler ASIC |
+| 2026-04-21/22 | 加入 Applied EPIC；发布 Pin Scale 5000B，已在 key customers ramp | 前端工艺—后端测试协同；5Gbps/deep vector memory 是真实产品而非路线图 |
+| 2026-04-27 | FY25 全年报告与 Q&A；5k/10k 产能路线、memory 份额压力、SiPh 收入尚小 | 同时确认供不应求与竞争风险 |
+| 2026-05-18–21 | VOICE 2026：1,000A HPC load board、AI test optimization、Silicon Photonics track；Velocity 集成 | 客户工程问题已进入量产层；软件/接口 attach 增加 |
+| 2026-06-23/24 | OpenLight HVM SiPh 合作；VOICE 470+人、87篇论文 | CPO 是真实早期机会，但仍需生产认证 |
+| 2026-06 至 07 | ASE/SPIL/台湾福雷设备公告约 $341m + 软件 $15m | 独立验证 OSAT/test-house 真金白银扩产 |
+| 2026-07-16 | SiConic DFT/D200 发布，计划 9 月前可用 | design-to-test 扩张进入可交付产品阶段 |
+| **2026-07-29** | Q1 收入 ¥367.5bn、GM69.5%；FY26 收入指引 ¥1.714tn；CY26 tester TAM $13–14.5bn | 基本面再加速；同时估值跃升、执行门槛更高 |
+| **2026-07-29** | Teradyne Q2 Semiconductor Test $1.122bn，AI/compute 与 memory 同时强 | 验证 TAM，也证明竞争者正在吃同一增量 |
+
+**最终判断：**Advantest 是当前 AI 基建中少数同时具备“数量增长、单位 test content 增长、平台升级、耗材/软件附加、产能扩张”五重驱动的设备商。未来一年最确定的收入仍是 **V93000 AI/HPC SoC tester**，其次是 **HBM/高性能 memory tester** 与 **高功率 SLT/interface**；SiConic/ACS 和 SiPh/CPO 是高毛利/高期权的小业务，不能在 2026 盈利中提前资本化太多。
+
+基本面基准情景仍然向上，但股票的安全边际明显低于业务质量：投资者应把 **Teradyne 双供认证、Advantest 5k→10k 交付、H2 ¥912bn 收入、memory share、存货/预收款转化**作为五个硬验证点。只要其中两项同时转弱，当前 35x 以上 forward PE 就缺乏保护；反之若 custom ASIC 规模追平 GPU、产能提前且 Teradyne 份额仍低，FY27 仍有明显上修空间。
+
+## 主要来源
+
+### 公司与监管一手资料
+
+- [Advantest FY2026 Q1 财务报告，2026-07-29](https://www.advantest.com/en/news/2026/qnpuno0000000cr7-att/E_FR_FY2026_1Q.pdf)
+- [FY2026 Q1 演示稿：五季产品收入、TAM 与 FY26 分业务指引](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_slide.pdf)
+- [FY2026 Q1 Q&A：CPU/ASIC/GPU、份额、产能、18个月预测、memory 竞争](https://www.advantest.com/document/en/investors/ir-library/result/JE_BIZ_260729_QA.pdf)
+- [FY2025 全年财报](https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2025_FN.pdf)
+- [FY2025 Annual Securities Report / Business Report](https://links.sgx.com/FileOpen/Annual%20Securities%20Report%20and%20Business%20Report_FY2025.ashx?App=Announcement&FileID=894428)
+- [台湾公开资讯观测站 ASE 系采购查询](https://mopsov.twse.com.tw/mops/web/t05st01?TYPEK=sii&co_id=3711)
+
+### 产品、会议与竞争验证
+
+- [V93000 EXA Scale](https://www.advantest.com/en/products/semiconductor-test-system/soc/v93000/)、[Pin Scale 5000B](https://www.advantest.com/en/news/2026/20260422.html)、[T5503HS2](https://www.advantest.com/en/products/semiconductor-test-system/memory/t5503hs2/)、[M5241](https://www.advantest.com/en/news/2025/20251210.html)、[7038 SLT](https://www.advantest.com/en/products/component-test-system/system-level-test-systems/7038/)
+- [VOICE 2026 技术议程](https://voice.advantest.com/technical/)、[技术展示：CPO/AI/HPC](https://voice.advantest.com/kiosk/)、[SWTest 2026](https://www.swtest.org/program/)
+- [Teradyne Q2 2026 财报](https://investors.teradyne.com/news-events/press-releases/detail/445/teradyne-reports-second-quarter-2026-results)、[Q2 2026 电话会转录](https://d1io3yog0oux5.cloudfront.net/_aedaaf5158b09477cf339c17f3091e6d/teradyne/db/938/9649/webcast_transcript/Teradyne+Q2%2726+Earnings+Transcript_FINAL.pdf)
+
+### 项目内行业基线（仅 `基本面/行业调研/`）
+
+- [探针卡、ATE 与系统级测试](../../行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-07-10.md)
+- [HBM 与存储测试设备](../../行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-07-10.md)
+- [高速互连与光学验证测试](../../行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-07-10.md)
+- [HBM 与高带宽内存](../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-07-10.md)
+- [商用 AI 加速芯片](../../行业调研/AI服务器_存储_芯片/行业调研_商用AI加速芯片_2026-07-10.md)
+- [AI 数据中心建设规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+
+> 本报告为公开信息研究与情景建模，不构成证券买卖建议。产品级收入、AI 占比、毛利率、每 GPU/MW 内容量、取消/推迟折损和未来产能美元值均为研究估算，应随下一季财报、客户采购、资格认证与实际交付更新。

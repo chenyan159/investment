@@ -1,0 +1,59 @@
+source,source_id,alias,group,description
+Yahoo Finance,^GSPC,SPX,asset,S&P 500 price index
+Yahoo Finance,SPY,SPY,asset,SPDR S&P 500 ETF
+Yahoo Finance,^NDX,NDX,asset,Nasdaq-100 price index
+Yahoo Finance,QQQ,QQQ,asset,Invesco QQQ ETF
+Yahoo Finance,^SOX,SOX,asset,PHLX Semiconductor index
+Yahoo Finance,SMH,SMH,asset,VanEck Semiconductor ETF
+Yahoo Finance,SOXX,SOXX,asset,iShares Semiconductor ETF
+Yahoo Finance,RSP,RSP,asset,Invesco S&P 500 Equal Weight ETF
+Yahoo Finance,HYG,HYG,asset,iShares High Yield Corporate Bond ETF
+Yahoo Finance,LQD,LQD,asset,iShares Investment Grade Corporate Bond ETF
+Yahoo Finance,TLT,TLT,asset,iShares 20+ Year Treasury Bond ETF
+Yahoo Finance,IEF,IEF,asset,iShares 7-10 Year Treasury Bond ETF
+Yahoo Finance,SHY,SHY,asset,iShares 1-3 Year Treasury Bond ETF
+Yahoo Finance,CL=F,WTI_FUT,commodity,NYMEX WTI crude oil futures
+Yahoo Finance,BZ=F,BRENT_FUT,commodity,ICE Brent crude oil futures
+Yahoo Finance,RB=F,RBOB_GASOLINE_FUT,commodity,NYMEX RBOB gasoline futures
+Yahoo Finance,USO,USO,commodity,United States Oil Fund
+Yahoo Finance,BNO,BNO,commodity,United States Brent Oil Fund
+Yahoo Finance,UGA,UGA,commodity,United States Gasoline Fund
+Yahoo Finance,^VIX,VIX,volatility,CBOE VIX index
+Yahoo Finance,^VIX9D,VIX9D,volatility,CBOE 9-day volatility index
+Yahoo Finance,^VIX3M,VIX3M,volatility,CBOE 3-month volatility index
+Yahoo Finance,^VVIX,VVIX,volatility,CBOE VVIX index
+Yahoo Finance,^SKEW,SKEW,volatility,CBOE SKEW index
+Yahoo Finance,AAPL,AAPL,mag7,Apple
+Yahoo Finance,MSFT,MSFT,mag7,Microsoft
+Yahoo Finance,AMZN,AMZN,mag7,Amazon
+Yahoo Finance,GOOGL,GOOGL,mag7,Alphabet Class A
+Yahoo Finance,META,META,mag7,Meta Platforms
+Yahoo Finance,NVDA,NVDA,mag7,Nvidia
+Yahoo Finance,TSLA,TSLA,mag7,Tesla
+FRED,SP500,FRED_SP500,asset,S&P 500 index from FRED
+FRED,DGS10,DGS10,rates,10-year Treasury constant maturity
+FRED,DGS2,DGS2,rates,2-year Treasury constant maturity
+FRED,DGS3MO,DGS3MO,rates,3-month Treasury constant maturity
+FRED,DFII10,DFII10,rates,10-year TIPS real yield
+FRED,T10YIE,T10YIE,rates,10-year breakeven inflation rate
+FRED,T10Y2Y,T10Y2Y,rates,10-year minus 2-year Treasury spread
+FRED,T10Y3M,T10Y3M,rates,10-year minus 3-month Treasury spread
+FRED,DFF,DFF,rates,Effective federal funds rate
+FRED,SOFR,SOFR,rates,Secured overnight financing rate
+FRED,VIXCLS,FRED_VIX,volatility,CBOE VIX from FRED
+FRED,VXVCLS,FRED_VIX3M,volatility,CBOE 3-month volatility from FRED
+FRED,BAMLH0A0HYM2,HY_OAS,credit,ICE BofA US high yield OAS
+FRED,BAMLC0A0CM,IG_OAS,credit,ICE BofA US corporate OAS
+FRED,BAMLC0A4CBBB,BBB_OAS,credit,ICE BofA BBB US corporate OAS
+FRED,DCOILWTICO,WTI_SPOT,commodity,WTI crude oil spot price
+FRED,DCOILBRENTEU,BRENT_SPOT,commodity,Brent crude oil spot price
+FRED,GASREGW,US_REG_GASOLINE,commodity,US regular gasoline retail price
+FRED,WALCL,FED_BALANCE_SHEET,liquidity,Federal Reserve total assets
+FRED,WTREGEN,TGA,liquidity,Treasury General Account
+FRED,RRPONTSYD,RRP,liquidity,Overnight reverse repo agreements
+FRED,NFCI,NFCI,liquidity,Chicago Fed National Financial Conditions Index
+FRED,ANFCI,ANFCI,liquidity,Adjusted National Financial Conditions Index
+FRED,CPIAUCSL,CPI,macro,Consumer price index
+FRED,PCEPI,PCE_PRICE_INDEX,macro,PCE price index
+FRED,PAYEMS,NONFARM_PAYROLLS,macro,Total nonfarm payrolls
+FRED,UNRATE,UNRATE,macro,Unemployment rate

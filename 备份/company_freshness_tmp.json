@@ -1,0 +1,3040 @@
+[
+  {
+    "ticker": "ALAB",
+    "name": "AsteraLabs",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "files": [
+      "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\ALAB_AsteraLabs_公司调研_2026-09-18.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\ALAB_AsteraLabs_公司调研_2026-09-18.md",
+    "latest_date": "2026-09-18",
+    "queue_source": "2026-09-18",
+    "planVersion": "20260918_024255",
+    "queue_status": "done",
+    "finishedAt": "2026-09-18 20:27:29"
+  },
+  {
+    "ticker": "AMBA",
+    "name": "Ambarella",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "AMD",
+    "name": "Advanced Micro Devices",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "files": [
+      "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AMD_Advanced_Micro_Devices_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AMD_Advanced_Micro_Devices_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:11:50"
+  },
+  {
+    "ticker": "ARM",
+    "name": "Arm Holdings",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "files": [
+      "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\ARM_Arm_Holdings_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\ARM_Arm_Holdings_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:19:52"
+  },
+  {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "files": [
+      "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AVGO_Broadcom_公司调研_2026-09-18.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AVGO_Broadcom_公司调研_2026-09-18.md",
+    "latest_date": "2026-09-18",
+    "queue_source": "2026-09-18",
+    "planVersion": "20260918_024255",
+    "queue_status": "done",
+    "finishedAt": "2026-09-18 20:28:17"
+  },
+  {
+    "ticker": "CBRS",
+    "name": "Cerebras Systems Inc",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "files": [
+      "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\CBRS_Cerebras_Systems_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\CBRS_Cerebras_Systems_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:34:34"
+  },
+  {
+    "ticker": "CDNS",
+    "name": "Cadence Design Systems",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "files": [
+      "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\CDNS_Cadence_Design_Systems_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\CDNS_Cadence_Design_Systems_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:14:34"
+  },
+  {
+    "ticker": "INTC",
+    "name": "Intel Corporation 英特尔",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "files": [
+      "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\INTC_Intel_Corporation_英特尔_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\INTC_Intel_Corporation_英特尔_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:19:49"
+  },
+  {
+    "ticker": "MCHP",
+    "name": "Microchip Technology",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "files": [
+      "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\MCHP_Microchip_Technology_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\MCHP_Microchip_Technology_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:06:18"
+  },
+  {
+    "ticker": "MRVL",
+    "name": "Marvell Technology",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "files": [
+      "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\MRVL_Marvell_Technology_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\MRVL_Marvell_Technology_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:13:49"
+  },
+  {
+    "ticker": "MXL",
+    "name": "MaxLinear",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "files": [
+      "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\MXL_MaxLinear_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\MXL_MaxLinear_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:32:07"
+  },
+  {
+    "ticker": "NVDA",
+    "name": "NVIDIA",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "files": [
+      "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\NVDA_NVIDIA_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\NVDA_NVIDIA_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:18:38"
+  },
+  {
+    "ticker": "QCOM",
+    "name": "Qualcomm",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "files": [
+      "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\QCOM_Qualcomm_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\QCOM_Qualcomm_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:28:10"
+  },
+  {
+    "ticker": "SNPS",
+    "name": "Synopsys",
+    "category": "AI计算芯片_EDA_IP_custom_ASIC",
+    "files": [
+      "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\SNPS_Synopsys_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\SNPS_Synopsys_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:21:53"
+  },
+  {
+    "ticker": "CLS",
+    "name": "Celestica Inc",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\CLS_Celestica_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\CLS_Celestica_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:39:33"
+  },
+  {
+    "ticker": "DELL",
+    "name": "Dell Technologies",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\DELL_Dell_Technologies_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\DELL_Dell_Technologies_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:02:17"
+  },
+  {
+    "ticker": "FLEX",
+    "name": "Flex Ltd",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\FLEX_Flex_Ltd_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\FLEX_Flex_Ltd_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:45:05"
+  },
+  {
+    "ticker": "FN",
+    "name": "Fabrinet",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\FN_Fabrinet_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\FN_Fabrinet_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:44:47"
+  },
+  {
+    "ticker": "HPE",
+    "name": "惠普企业",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\HPE_惠普企业_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\HPE_惠普企业_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:59:29"
+  },
+  {
+    "ticker": "JBL",
+    "name": "Jabil Inc",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\JBL_Jabil_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\JBL_Jabil_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:43:03"
+  },
+  {
+    "ticker": "MRAM",
+    "name": "Everspin Technologies",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\MRAM_Everspin_Technologies_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\MRAM_Everspin_Technologies_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:47:41"
+  },
+  {
+    "ticker": "MU",
+    "name": "Micron Technology 美光科技",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\MU_Micron_Technology_美光科技_公司调研_2026-09-18.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\MU_Micron_Technology_美光科技_公司调研_2026-09-18.md",
+    "latest_date": "2026-09-18",
+    "queue_source": "2026-09-18",
+    "planVersion": "20260918_024255",
+    "queue_status": "done",
+    "finishedAt": "2026-09-18 20:30:26"
+  },
+  {
+    "ticker": "NTAP",
+    "name": "NetApp",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\NTAP_NetApp_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\NTAP_NetApp_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:55:25"
+  },
+  {
+    "ticker": "P",
+    "name": "Everpure",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\P_Everpure_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\P_Everpure_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:00:09"
+  },
+  {
+    "ticker": "PENG",
+    "name": "Penguin Solutions",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\PENG_Penguin_Solutions_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\PENG_Penguin_Solutions_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:59:53"
+  },
+  {
+    "ticker": "RMBS",
+    "name": "Rambus",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\RMBS_Rambus_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\RMBS_Rambus_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:07:13"
+  },
+  {
+    "ticker": "SANM",
+    "name": "Sanmina Corporation",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SANM_Sanmina_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SANM_Sanmina_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:52:14"
+  },
+  {
+    "ticker": "SIMO",
+    "name": "Silicon Motion Technology",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SIMO_Silicon_Motion_Technology_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SIMO_Silicon_Motion_Technology_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:58:46"
+  },
+  {
+    "ticker": "SKHY",
+    "name": "SK hynix Inc",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SKHY_SK_hynix_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SKHY_SK_hynix_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:51:35"
+  },
+  {
+    "ticker": "SMCI",
+    "name": "Super Micro Computer Inc",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:49:27"
+  },
+  {
+    "ticker": "SNDK",
+    "name": "SanDisk",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SNDK_SanDisk_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\SNDK_SanDisk_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:53:10"
+  },
+  {
+    "ticker": "STX",
+    "name": "Seagate Technology",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\STX_Seagate_Technology_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\STX_Seagate_Technology_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:54:24"
+  },
+  {
+    "ticker": "WDC",
+    "name": "WesternDigital",
+    "category": "AI服务器_存储_EMS",
+    "files": [
+      "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\WDC_WesternDigital_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\WDC_WesternDigital_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:57:47"
+  },
+  {
+    "ticker": "AAOI",
+    "name": "Applied Optoelectronics",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\AAOI_Applied_Optoelectronics_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\AAOI_Applied_Optoelectronics_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:51:48"
+  },
+  {
+    "ticker": "ANET",
+    "name": "Arista Networks",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\ANET_Arista_Networks_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\ANET_Arista_Networks_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:26:09"
+  },
+  {
+    "ticker": "APH",
+    "name": "Amphenol 安费诺",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\APH_Amphenol_安费诺_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\APH_Amphenol_安费诺_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:21:57"
+  },
+  {
+    "ticker": "BDC",
+    "name": "Belden",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\BDC_Belden_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\BDC_Belden_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:30:57"
+  },
+  {
+    "ticker": "BELFB",
+    "name": "Bel Fuse Inc",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\BELFB_Bel_Fuse_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\BELFB_Bel_Fuse_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:55:05"
+  },
+  {
+    "ticker": "CIEN",
+    "name": "Ciena Corporation",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\CIEN_Ciena_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\CIEN_Ciena_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:44:23"
+  },
+  {
+    "ticker": "COHR",
+    "name": "Coherent",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\COHR_Coherent_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\COHR_Coherent_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:33:39"
+  },
+  {
+    "ticker": "CRDO",
+    "name": "Credo Technology Group",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\CRDO_Credo_Technology_Group_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\CRDO_Credo_Technology_Group_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:55:11"
+  },
+  {
+    "ticker": "CSCO",
+    "name": "Cisco Systems",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\CSCO_Cisco_Systems_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\CSCO_Cisco_Systems_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:35:02"
+  },
+  {
+    "ticker": "GLW",
+    "name": "Corning",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\GLW_Corning_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\GLW_Corning_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:39:33"
+  },
+  {
+    "ticker": "LITE",
+    "name": "Lumentum",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\LITE_Lumentum_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\LITE_Lumentum_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:37:47"
+  },
+  {
+    "ticker": "LWLG",
+    "name": "Lightwave Logic",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\LWLG_Lightwave_Logic_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\LWLG_Lightwave_Logic_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:44:01"
+  },
+  {
+    "ticker": "MTSI",
+    "name": "MACOM Technology Solutions",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\MTSI_MACOM_Technology_Solutions_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\MTSI_MACOM_Technology_Solutions_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:46:30"
+  },
+  {
+    "ticker": "NOK",
+    "name": "诺基亚",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\NOK_诺基亚_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\NOK_诺基亚_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:45:09"
+  },
+  {
+    "ticker": "POET",
+    "name": "POET Technologies",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\POET_POET_Technologies_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\POET_POET_Technologies_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:50:39"
+  },
+  {
+    "ticker": "SITM",
+    "name": "SiTime Corporation",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\SITM_SiTime_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\SITM_SiTime_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:55:21"
+  },
+  {
+    "ticker": "SMTC",
+    "name": "Semtech Corporation",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\SMTC_Semtech_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\SMTC_Semtech_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:58:54"
+  },
+  {
+    "ticker": "TEL",
+    "name": "TE Connectivity",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\TEL_TE_Connectivity_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\TEL_TE_Connectivity_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:07:11"
+  },
+  {
+    "ticker": "VIAV",
+    "name": "VIAVI Solutions",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\VIAV_VIAVI_Solutions_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\VIAV_VIAVI_Solutions_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:54:30"
+  },
+  {
+    "ticker": "VISN",
+    "name": "Vistance Networks",
+    "category": "AI网络_光互联_连接器",
+    "files": [
+      "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\VISN_Vistance_Networks_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\VISN_Vistance_Networks_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:52:07"
+  },
+  {
+    "ticker": "AJNMY",
+    "name": "味之素 Ajinomoto",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\AJNMY_味之素_Ajinomoto_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\AJNMY_味之素_Ajinomoto_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:59:02"
+  },
+  {
+    "ticker": "APD",
+    "name": "Air Products and Chemicals",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\APD_Air_Products_and_Chemicals_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\APD_Air_Products_and_Chemicals_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:01:46"
+  },
+  {
+    "ticker": "ASGLY",
+    "name": "AGC Inc",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\ASGLY_AGC_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\ASGLY_AGC_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:10:06"
+  },
+  {
+    "ticker": "AXTI",
+    "name": "AXT Inc",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\AXTI_AXT_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\AXTI_AXT_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:56:32"
+  },
+  {
+    "ticker": "CC",
+    "name": "The Chemours Company",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\CC_The_Chemours_Company_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\CC_The_Chemours_Company_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:26:40"
+  },
+  {
+    "ticker": "DD",
+    "name": "DuPont de Nemours",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\DD_DuPont_de_Nemours_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\DD_DuPont_de_Nemours_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:47:23"
+  },
+  {
+    "ticker": "DHR",
+    "name": "Danaher Corporation",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\DHR_Danaher_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\DHR_Danaher_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:27:45"
+  },
+  {
+    "ticker": "ENTG",
+    "name": "Entegris",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\ENTG_Entegris_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\ENTG_Entegris_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:23:45"
+  },
+  {
+    "ticker": "HOCPY",
+    "name": "HOYA Corporation",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\HOCPY_HOYA_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\HOCPY_HOYA_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:09:49"
+  },
+  {
+    "ticker": "LIN",
+    "name": "Linde plc",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\LIN_Linde_plc_公司调研_2026-09-18.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\LIN_Linde_plc_公司调研_2026-09-18.md",
+    "latest_date": "2026-09-18",
+    "queue_source": "2026-09-18",
+    "planVersion": "20260918_024255",
+    "queue_status": "done",
+    "finishedAt": "2026-09-18 20:23:06"
+  },
+  {
+    "ticker": "MMM",
+    "name": "3M",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\MMM_3M_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\MMM_3M_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:05:22"
+  },
+  {
+    "ticker": "MTRN",
+    "name": "Materion",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\MTRN_Materion_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\MTRN_Materion_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:51:54"
+  },
+  {
+    "ticker": "PCRHY",
+    "name": "Panasonic Holdings 松下控股",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "Q",
+    "name": "Qnity Electronics",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\Q_Qnity_Electronics_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\Q_Qnity_Electronics_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:12:20"
+  },
+  {
+    "ticker": "ROG",
+    "name": "Rogers Corporation",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\ROG_Rogers_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\ROG_Rogers_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:37:55"
+  },
+  {
+    "ticker": "SHECY",
+    "name": "Shin-Etsu Chemical 信越化学",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\SHECY_Shin-Etsu_Chemical_信越化学_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\SHECY_Shin-Etsu_Chemical_信越化学_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:15:12"
+  },
+  {
+    "ticker": "SMTOY",
+    "name": "住友电工 Sumitomo Electric Industries",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\SMTOY_住友电工_Sumitomo_Electric_Industries_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\SMTOY_住友电工_Sumitomo_Electric_Industries_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:29:29"
+  },
+  {
+    "ticker": "SOMMY",
+    "name": "住友化学 Sumitomo Chemical",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [
+      "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:40:12"
+  },
+  {
+    "ticker": "TTMI",
+    "name": "TTM Technologies",
+    "category": "电子材料_化学品_基板_PCB",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "ACLS",
+    "name": "Axcelis Technologies",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\ACLS_Axcelis_Technologies_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\ACLS_Axcelis_Technologies_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:17:50"
+  },
+  {
+    "ticker": "ACMR",
+    "name": "ACM Research",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\ACMR_ACM_Research_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\ACMR_ACM_Research_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:19:56"
+  },
+  {
+    "ticker": "AEIS",
+    "name": "Advanced Energy Industries",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\AEIS_Advanced_Energy_Industries_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\AEIS_Advanced_Energy_Industries_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:02:24"
+  },
+  {
+    "ticker": "AMAT",
+    "name": "Applied Materials",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\AMAT_Applied_Materials_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\AMAT_Applied_Materials_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:14:25"
+  },
+  {
+    "ticker": "ASMIY",
+    "name": "ASM International",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\ASMIY_ASM_International_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\ASMIY_ASM_International_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:22:01"
+  },
+  {
+    "ticker": "ASML",
+    "name": "ASML Holding NV",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\ASML_ASML_Holding_NV_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\ASML_ASML_Holding_NV_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:37:57"
+  },
+  {
+    "ticker": "DSCSY",
+    "name": "DISCO",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\DSCSY_DISCO_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\DSCSY_DISCO_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:26:00"
+  },
+  {
+    "ticker": "GFS",
+    "name": "GlobalFoundries",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\GFS_GlobalFoundries_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\GFS_GlobalFoundries_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:38:57"
+  },
+  {
+    "ticker": "ICHR",
+    "name": "Ichor Holdings",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\ICHR_Ichor_Holdings_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\ICHR_Ichor_Holdings_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:07:36"
+  },
+  {
+    "ticker": "KLAC",
+    "name": "KLA Corporation",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\KLAC_KLA_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\KLAC_KLA_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:38:13"
+  },
+  {
+    "ticker": "LRCX",
+    "name": "Lam Research",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\LRCX_Lam_Research_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\LRCX_Lam_Research_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:41:52"
+  },
+  {
+    "ticker": "MKSI",
+    "name": "MKS Inc",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\MKSI_MKS_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\MKSI_MKS_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:42:51"
+  },
+  {
+    "ticker": "NVMI",
+    "name": "Nova Ltd",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\NVMI_Nova_Ltd_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\NVMI_Nova_Ltd_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:16:19"
+  },
+  {
+    "ticker": "TOELY",
+    "name": "Tokyo Electron",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\TOELY_Tokyo_Electron_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\TOELY_Tokyo_Electron_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 11:54:54"
+  },
+  {
+    "ticker": "TSEM",
+    "name": "Tower Semiconductor",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\TSEM_Tower_Semiconductor_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\TSEM_Tower_Semiconductor_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:40:01"
+  },
+  {
+    "ticker": "TSM",
+    "name": "台积电",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\TSM_台积电_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\TSM_台积电_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:42:27"
+  },
+  {
+    "ticker": "UCTT",
+    "name": "Ultra Clean Holdings",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\UCTT_Ultra_Clean_Holdings_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\UCTT_Ultra_Clean_Holdings_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:44:26"
+  },
+  {
+    "ticker": "UMC",
+    "name": "United Microelectronics 联华电子",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\UMC_United_Microelectronics_联华电子_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\UMC_United_Microelectronics_联华电子_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:42:24"
+  },
+  {
+    "ticker": "VECO",
+    "name": "Veeco Instruments",
+    "category": "晶圆制造_前道设备",
+    "files": [
+      "基本面\\公司调研\\结果\\晶圆制造_前道设备\\VECO_Veeco_Instruments_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\VECO_Veeco_Instruments_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:00:31"
+  },
+  {
+    "ticker": "AEHR",
+    "name": "Aehr Test Systems",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\AEHR_Aehr_Test_Systems_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\AEHR_Aehr_Test_Systems_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:33:57"
+  },
+  {
+    "ticker": "AMKR",
+    "name": "Amkor Technology",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\AMKR_Amkor_Technology_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\AMKR_Amkor_Technology_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:51:32"
+  },
+  {
+    "ticker": "ASMVY",
+    "name": "ASMPT",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\ASMVY_ASMPT_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\ASMVY_ASMPT_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:36:53"
+  },
+  {
+    "ticker": "ASX",
+    "name": "ASE Technology Holding",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\ASX_ASE_Technology_Holding_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\ASX_ASE_Technology_Holding_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:36:19"
+  },
+  {
+    "ticker": "ATEYY",
+    "name": "Advantest",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\ATEYY_Advantest_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\ATEYY_Advantest_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:54:40"
+  },
+  {
+    "ticker": "BESIY",
+    "name": "BE Semiconductor",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\BESIY_BE_Semiconductor_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\BESIY_BE_Semiconductor_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:48:53"
+  },
+  {
+    "ticker": "CAMT",
+    "name": "Camtek",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\CAMT_Camtek_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\CAMT_Camtek_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:29:09"
+  },
+  {
+    "ticker": "COHU",
+    "name": "Cohu Inc",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\COHU_Cohu_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\COHU_Cohu_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:13:52"
+  },
+  {
+    "ticker": "FORM",
+    "name": "FormFactor",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\FORM_FormFactor_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\FORM_FormFactor_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:49:26"
+  },
+  {
+    "ticker": "IMOS",
+    "name": "ChipMOS Technologies 南茂科技",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\IMOS_ChipMOS_Technologies_南茂科技_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\IMOS_ChipMOS_Technologies_南茂科技_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:36:34"
+  },
+  {
+    "ticker": "KEYS",
+    "name": "Keysight Technologies",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\KEYS_Keysight_Technologies_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\KEYS_Keysight_Technologies_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:20:15"
+  },
+  {
+    "ticker": "KLIC",
+    "name": "Kulicke Soffa",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\KLIC_Kulicke_Soffa_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\KLIC_Kulicke_Soffa_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:36:25"
+  },
+  {
+    "ticker": "MICLF",
+    "name": "Mycronic AB",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\MICLF_Mycronic_AB_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\MICLF_Mycronic_AB_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:45:30"
+  },
+  {
+    "ticker": "NDSN",
+    "name": "Nordson",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\NDSN_Nordson_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\NDSN_Nordson_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:03:29"
+  },
+  {
+    "ticker": "ONTO",
+    "name": "Onto Innovation",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\ONTO_Onto_Innovation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\ONTO_Onto_Innovation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:46:05"
+  },
+  {
+    "ticker": "PLAB",
+    "name": "Photronics",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\PLAB_Photronics_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\PLAB_Photronics_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:40:39"
+  },
+  {
+    "ticker": "TDY",
+    "name": "Teledyne Technologies",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\TDY_Teledyne_Technologies_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\TDY_Teledyne_Technologies_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:28:49"
+  },
+  {
+    "ticker": "TER",
+    "name": "Teradyne",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\TER_Teradyne_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\TER_Teradyne_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:40:13"
+  },
+  {
+    "ticker": "TMO",
+    "name": "Thermo Fisher Scientific",
+    "category": "封测_检测_计量_光罩",
+    "files": [
+      "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\TMO_Thermo_Fisher_Scientific_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\TMO_Thermo_Fisher_Scientific_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:45:37"
+  },
+  {
+    "ticker": "ADI",
+    "name": "Analog Devices",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\ADI_Analog_Devices_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\ADI_Analog_Devices_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 02:51:18"
+  },
+  {
+    "ticker": "ALGM",
+    "name": "Allegro MicroSystems",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "AOSL",
+    "name": "Alpha and Omega Semiconductor",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\AOSL_Alpha_and_Omega_Semiconductor_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\AOSL_Alpha_and_Omega_Semiconductor_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:02:31"
+  },
+  {
+    "ticker": "DIOD",
+    "name": "Diodes Incorporated",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\DIOD_Diodes_Incorporated_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\DIOD_Diodes_Incorporated_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:00:42"
+  },
+  {
+    "ticker": "IFNNY",
+    "name": "Infineon Technologies AG 英飞凌科技",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\IFNNY_Infineon_Technologies_AG_英飞凌科技_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\IFNNY_Infineon_Technologies_AG_英飞凌科技_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:19:02"
+  },
+  {
+    "ticker": "LFUS",
+    "name": "Littelfuse",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\LFUS_Littelfuse_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\LFUS_Littelfuse_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:04:18"
+  },
+  {
+    "ticker": "MPWR",
+    "name": "Monolithic Power Systems",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\MPWR_Monolithic_Power_Systems_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\MPWR_Monolithic_Power_Systems_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:17:46"
+  },
+  {
+    "ticker": "MRAAY",
+    "name": "Murata Manufacturing",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\MRAAY_Murata_Manufacturing_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\MRAAY_Murata_Manufacturing_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:21:03"
+  },
+  {
+    "ticker": "NVTS",
+    "name": "Navitas Semiconductor",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\NVTS_Navitas_Semiconductor_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\NVTS_Navitas_Semiconductor_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 11:56:47"
+  },
+  {
+    "ticker": "ON",
+    "name": "onsemi",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\ON_onsemi_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\ON_onsemi_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:17:03"
+  },
+  {
+    "ticker": "POWI",
+    "name": "Power Integrations",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\POWI_Power_Integrations_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\POWI_Power_Integrations_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:17:29"
+  },
+  {
+    "ticker": "ST",
+    "name": "Sensata Technologies",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\ST_Sensata_Technologies_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\ST_Sensata_Technologies_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 11:58:29"
+  },
+  {
+    "ticker": "STM",
+    "name": "STMicroelectronics",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\STM_STMicroelectronics_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\STM_STMicroelectronics_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:24:28"
+  },
+  {
+    "ticker": "TTDKY",
+    "name": "TDK Corporation",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\TTDKY_TDK_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\TTDKY_TDK_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:00:45"
+  },
+  {
+    "ticker": "TXN",
+    "name": "德州仪器",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\TXN_德州仪器_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\TXN_德州仪器_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 03:22:13"
+  },
+  {
+    "ticker": "VSH",
+    "name": "Vishay Intertechnology",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\VSH_Vishay_Intertechnology_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\VSH_Vishay_Intertechnology_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:00:05"
+  },
+  {
+    "ticker": "WOLF",
+    "name": "Wolfspeed",
+    "category": "功率半导体_电源管理_传感器",
+    "files": [
+      "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\WOLF_Wolfspeed_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\WOLF_Wolfspeed_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:06:21"
+  },
+  {
+    "ticker": "ABBNY",
+    "name": "ABB Ltd",
+    "category": "配电_电源系统_电气设备",
+    "files": [
+      "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\ABBNY_ABB_Ltd_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\ABBNY_ABB_Ltd_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:00:07"
+  },
+  {
+    "ticker": "ATKR",
+    "name": "Atkore",
+    "category": "配电_电源系统_电气设备",
+    "files": [
+      "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\ATKR_Atkore_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\ATKR_Atkore_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:04:12"
+  },
+  {
+    "ticker": "ETN",
+    "name": "Eaton Corporation",
+    "category": "配电_电源系统_电气设备",
+    "files": [
+      "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\ETN_Eaton_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\ETN_Eaton_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:03:19"
+  },
+  {
+    "ticker": "HUBB",
+    "name": "Hubbell",
+    "category": "配电_电源系统_电气设备",
+    "files": [
+      "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\HUBB_Hubbell_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\HUBB_Hubbell_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:16:48"
+  },
+  {
+    "ticker": "MIELY",
+    "name": "三菱电机 Mitsubishi Electric",
+    "category": "配电_电源系统_电气设备",
+    "files": [
+      "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\MIELY_三菱电机_Mitsubishi_Electric_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\MIELY_三菱电机_Mitsubishi_Electric_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:23:54"
+  },
+  {
+    "ticker": "NVT",
+    "name": "nVent Electric",
+    "category": "配电_电源系统_电气设备",
+    "files": [
+      "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\NVT_nVent_Electric_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\NVT_nVent_Electric_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:02:28"
+  },
+  {
+    "ticker": "POWL",
+    "name": "Powell Industries",
+    "category": "配电_电源系统_电气设备",
+    "files": [
+      "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\POWL_Powell_Industries_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\POWL_Powell_Industries_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 11:56:43"
+  },
+  {
+    "ticker": "SBGSY",
+    "name": "Schneider Electric 施耐德",
+    "category": "配电_电源系统_电气设备",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "VICR",
+    "name": "Vicor Corporation",
+    "category": "配电_电源系统_电气设备",
+    "files": [
+      "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\VICR_Vicor_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\VICR_Vicor_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:03:19"
+  },
+  {
+    "ticker": "AEP",
+    "name": "American Electric Power",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\AEP_American_Electric_Power_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\AEP_American_Electric_Power_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:42:10"
+  },
+  {
+    "ticker": "AMPX",
+    "name": "Amprius Technologies",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\AMPX_Amprius_Technologies_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\AMPX_Amprius_Technologies_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:11:18"
+  },
+  {
+    "ticker": "BE",
+    "name": "Bloom Energy",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\BE_Bloom_Energy_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\BE_Bloom_Energy_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:31:30"
+  },
+  {
+    "ticker": "BWXT",
+    "name": "BWX Technologies",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\BWXT_BWX_Technologies_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\BWXT_BWX_Technologies_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:29:40"
+  },
+  {
+    "ticker": "CAT",
+    "name": "Caterpillar Inc",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\CAT_Caterpillar_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\CAT_Caterpillar_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:01:37"
+  },
+  {
+    "ticker": "CCJ",
+    "name": "Cameco",
+    "category": "电力_发电_能源_储能",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "CEG",
+    "name": "Constellation Energy",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\CEG_Constellation_Energy_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\CEG_Constellation_Energy_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:07:00"
+  },
+  {
+    "ticker": "CMI",
+    "name": "Cummins Inc",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\CMI_Cummins_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\CMI_Cummins_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:32:01"
+  },
+  {
+    "ticker": "DTE",
+    "name": "DTE Energy Company",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\DTE_DTE_Energy_Company_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\DTE_DTE_Energy_Company_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:57:01"
+  },
+  {
+    "ticker": "ENPH",
+    "name": "Enphase Energy",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\ENPH_Enphase_Energy_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\ENPH_Enphase_Energy_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:38:51"
+  },
+  {
+    "ticker": "ENS",
+    "name": "EnerSys",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\ENS_EnerSys_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\ENS_EnerSys_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:41:37"
+  },
+  {
+    "ticker": "ET",
+    "name": "Energy Transfer LP",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\ET_Energy_Transfer_LP_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\ET_Energy_Transfer_LP_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:00:00"
+  },
+  {
+    "ticker": "ETR",
+    "name": "Entergy Corporation",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\ETR_Entergy_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\ETR_Entergy_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:47:13"
+  },
+  {
+    "ticker": "FCEL",
+    "name": "FuelCell Energy",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\FCEL_FuelCell_Energy_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\FCEL_FuelCell_Energy_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:46:39"
+  },
+  {
+    "ticker": "FLNC",
+    "name": "Fluence Energy",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\FLNC_Fluence_Energy_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\FLNC_Fluence_Energy_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:10:51"
+  },
+  {
+    "ticker": "GEV",
+    "name": "GE Vernova",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\GEV_GE_Vernova_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\GEV_GE_Vernova_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:23:10"
+  },
+  {
+    "ticker": "GNRC",
+    "name": "Generac Holdings",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\GNRC_Generac_Holdings_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\GNRC_Generac_Holdings_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:08:09"
+  },
+  {
+    "ticker": "HTHIY",
+    "name": "Hitachi Ltd",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\HTHIY_Hitachi_Ltd_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\HTHIY_Hitachi_Ltd_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:24:45"
+  },
+  {
+    "ticker": "LEU",
+    "name": "Centrus Energy",
+    "category": "电力_发电_能源_储能",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "OKLO",
+    "name": "Oklo Inc",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\OKLO_Oklo_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\OKLO_Oklo_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:03:12"
+  },
+  {
+    "ticker": "PSIX",
+    "name": "Power Solutions International",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\PSIX_Power_Solutions_International_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\PSIX_Power_Solutions_International_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:58:28"
+  },
+  {
+    "ticker": "RYCEY",
+    "name": "Rolls-Royce Holdings",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\RYCEY_Rolls-Royce_Holdings_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\RYCEY_Rolls-Royce_Holdings_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:15:16"
+  },
+  {
+    "ticker": "SMR",
+    "name": "NuScale Power",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\SMR_NuScale_Power_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\SMR_NuScale_Power_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:07:30"
+  },
+  {
+    "ticker": "TE",
+    "name": "T1 Energy Inc",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\TE_T1_Energy_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\TE_T1_Energy_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:34:58"
+  },
+  {
+    "ticker": "VST",
+    "name": "Vistra Corp",
+    "category": "电力_发电_能源_储能",
+    "files": [
+      "基本面\\公司调研\\结果\\电力_发电_能源_储能\\VST_Vistra_Corp_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\VST_Vistra_Corp_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:56:31"
+  },
+  {
+    "ticker": "AAON",
+    "name": "AAON",
+    "category": "热管理_流体_水处理",
+    "files": [
+      "基本面\\公司调研\\结果\\热管理_流体_水处理\\AAON_AAON_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\热管理_流体_水处理\\AAON_AAON_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:06:33"
+  },
+  {
+    "ticker": "CARR",
+    "name": "Carrier Global",
+    "category": "热管理_流体_水处理",
+    "files": [
+      "基本面\\公司调研\\结果\\热管理_流体_水处理\\CARR_Carrier_Global_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\热管理_流体_水处理\\CARR_Carrier_Global_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:50:30"
+  },
+  {
+    "ticker": "DCI",
+    "name": "Donaldson Company",
+    "category": "热管理_流体_水处理",
+    "files": [
+      "基本面\\公司调研\\结果\\热管理_流体_水处理\\DCI_Donaldson_Company_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\热管理_流体_水处理\\DCI_Donaldson_Company_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:48:01"
+  },
+  {
+    "ticker": "DKILY",
+    "name": "Daikin Industries",
+    "category": "热管理_流体_水处理",
+    "files": [
+      "基本面\\公司调研\\结果\\热管理_流体_水处理\\DKILY_Daikin_Industries_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\热管理_流体_水处理\\DKILY_Daikin_Industries_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:48:43"
+  },
+  {
+    "ticker": "DOV",
+    "name": "Dover Corporation",
+    "category": "热管理_流体_水处理",
+    "files": [
+      "基本面\\公司调研\\结果\\热管理_流体_水处理\\DOV_Dover_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\热管理_流体_水处理\\DOV_Dover_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:17:13"
+  },
+  {
+    "ticker": "ECL",
+    "name": "Ecolab",
+    "category": "热管理_流体_水处理",
+    "files": [
+      "基本面\\公司调研\\结果\\热管理_流体_水处理\\ECL_Ecolab_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\热管理_流体_水处理\\ECL_Ecolab_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:17:12"
+  },
+  {
+    "ticker": "ITT",
+    "name": "ITT",
+    "category": "热管理_流体_水处理",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "JCI",
+    "name": "Johnson Controls",
+    "category": "热管理_流体_水处理",
+    "files": [
+      "基本面\\公司调研\\结果\\热管理_流体_水处理\\JCI_Johnson_Controls_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\热管理_流体_水处理\\JCI_Johnson_Controls_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:14:07"
+  },
+  {
+    "ticker": "MOD",
+    "name": "Modine Manufacturing",
+    "category": "热管理_流体_水处理",
+    "files": [
+      "基本面\\公司调研\\结果\\热管理_流体_水处理\\MOD_Modine_Manufacturing_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\热管理_流体_水处理\\MOD_Modine_Manufacturing_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:13:13"
+  },
+  {
+    "ticker": "PH",
+    "name": "Parker-Hannifin",
+    "category": "热管理_流体_水处理",
+    "files": [
+      "基本面\\公司调研\\结果\\热管理_流体_水处理\\PH_Parker-Hannifin_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\热管理_流体_水处理\\PH_Parker-Hannifin_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:00:43"
+  },
+  {
+    "ticker": "PNR",
+    "name": "Pentair plc",
+    "category": "热管理_流体_水处理",
+    "files": [
+      "基本面\\公司调研\\结果\\热管理_流体_水处理\\PNR_Pentair_plc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\热管理_流体_水处理\\PNR_Pentair_plc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:22:48"
+  },
+  {
+    "ticker": "SPXC",
+    "name": "SPX Technologies",
+    "category": "热管理_流体_水处理",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "TT",
+    "name": "Trane Technologies",
+    "category": "热管理_流体_水处理",
+    "files": [
+      "基本面\\公司调研\\结果\\热管理_流体_水处理\\TT_Trane_Technologies_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\热管理_流体_水处理\\TT_Trane_Technologies_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:00:57"
+  },
+  {
+    "ticker": "VRT",
+    "name": "Vertiv",
+    "category": "热管理_流体_水处理",
+    "files": [
+      "基本面\\公司调研\\结果\\热管理_流体_水处理\\VRT_Vertiv_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\热管理_流体_水处理\\VRT_Vertiv_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:10:53"
+  },
+  {
+    "ticker": "EME",
+    "name": "EMCOR Group",
+    "category": "工程建设_机电安装",
+    "files": [
+      "基本面\\公司调研\\结果\\工程建设_机电安装\\EME_EMCOR_Group_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\工程建设_机电安装\\EME_EMCOR_Group_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:11:03"
+  },
+  {
+    "ticker": "FIX",
+    "name": "Comfort Systems USA",
+    "category": "工程建设_机电安装",
+    "files": [
+      "基本面\\公司调研\\结果\\工程建设_机电安装\\FIX_Comfort_Systems_USA_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\工程建设_机电安装\\FIX_Comfort_Systems_USA_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:49:44"
+  },
+  {
+    "ticker": "IESC",
+    "name": "IES Holdings",
+    "category": "工程建设_机电安装",
+    "files": [
+      "基本面\\公司调研\\结果\\工程建设_机电安装\\IESC_IES_Holdings_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\工程建设_机电安装\\IESC_IES_Holdings_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:15:06"
+  },
+  {
+    "ticker": "MYRG",
+    "name": "MYR Group",
+    "category": "工程建设_机电安装",
+    "files": [
+      "基本面\\公司调研\\结果\\工程建设_机电安装\\MYRG_MYR_Group_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\工程建设_机电安装\\MYRG_MYR_Group_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:15:25"
+  },
+  {
+    "ticker": "PWR",
+    "name": "Quanta Services",
+    "category": "工程建设_机电安装",
+    "files": [
+      "基本面\\公司调研\\结果\\工程建设_机电安装\\PWR_Quanta_Services_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\工程建设_机电安装\\PWR_Quanta_Services_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 04:56:22"
+  },
+  {
+    "ticker": "ALLE",
+    "name": "Allegion plc",
+    "category": "机器人_工业自动化_智能硬件",
+    "files": [
+      "基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\ALLE_Allegion_plc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\ALLE_Allegion_plc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 05:45:04"
+  },
+  {
+    "ticker": "CGNX",
+    "name": "Cognex",
+    "category": "机器人_工业自动化_智能硬件",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "EMR",
+    "name": "Emerson Electric",
+    "category": "机器人_工业自动化_智能硬件",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "FANUY",
+    "name": "FANUC 发那科",
+    "category": "机器人_工业自动化_智能硬件",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "FTV",
+    "name": "Fortive Corporation",
+    "category": "机器人_工业自动化_智能硬件",
+    "files": [
+      "基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\FTV_Fortive_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\FTV_Fortive_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:05:14"
+  },
+  {
+    "ticker": "MSI",
+    "name": "Motorola Solutions",
+    "category": "机器人_工业自动化_智能硬件",
+    "files": [
+      "基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\MSI_Motorola_Solutions_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\MSI_Motorola_Solutions_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:02:02"
+  },
+  {
+    "ticker": "ROK",
+    "name": "Rockwell Automation",
+    "category": "机器人_工业自动化_智能硬件",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "SMCAY",
+    "name": "SMC",
+    "category": "机器人_工业自动化_智能硬件",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "SYM",
+    "name": "Symbotic",
+    "category": "机器人_工业自动化_智能硬件",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "TSLA",
+    "name": "Tesla",
+    "category": "机器人_工业自动化_智能硬件",
+    "files": [
+      "基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\TSLA_Tesla_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\TSLA_Tesla_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:08:44"
+  },
+  {
+    "ticker": "YASKY",
+    "name": "Yaskawa Electric 安川电机",
+    "category": "机器人_工业自动化_智能硬件",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "ASTS",
+    "name": "AST SpaceMobile",
+    "category": "航空航天_卫星_高可靠系统",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "CW",
+    "name": "Curtiss-Wright",
+    "category": "航空航天_卫星_高可靠系统",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "PL",
+    "name": "Planet Labs",
+    "category": "航空航天_卫星_高可靠系统",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "RDW",
+    "name": "Redwire",
+    "category": "航空航天_卫星_高可靠系统",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "RKLB",
+    "name": "Rocket Lab",
+    "category": "航空航天_卫星_高可靠系统",
+    "files": [
+      "基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\RKLB_Rocket_Lab_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\RKLB_Rocket_Lab_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 06:06:46"
+  },
+  {
+    "ticker": "SPCX",
+    "name": "SpaceX",
+    "category": "航空航天_卫星_高可靠系统",
+    "files": [
+      "基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\SPCX_SpaceX_公司调研_2026-09-18.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\SPCX_SpaceX_公司调研_2026-09-18.md",
+    "latest_date": "2026-09-18",
+    "queue_source": "2026-09-18",
+    "planVersion": "20260918_024255",
+    "queue_status": "done",
+    "finishedAt": "2026-09-18 20:34:21"
+  },
+  {
+    "ticker": "AMZN",
+    "name": "Amazon",
+    "category": "云算力_IDC_边缘云",
+    "files": [
+      "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\AMZN_Amazon_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\AMZN_Amazon_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:07:03"
+  },
+  {
+    "ticker": "APLD",
+    "name": "Applied Digital",
+    "category": "云算力_IDC_边缘云",
+    "files": [
+      "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\APLD_Applied_Digital_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\APLD_Applied_Digital_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:20:38"
+  },
+  {
+    "ticker": "BABA",
+    "name": "Alibaba 阿里巴巴",
+    "category": "云算力_IDC_边缘云",
+    "files": [
+      "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\BABA_Alibaba_阿里巴巴_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\BABA_Alibaba_阿里巴巴_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:31:58"
+  },
+  {
+    "ticker": "CRWV",
+    "name": "CoreWeave",
+    "category": "云算力_IDC_边缘云",
+    "files": [
+      "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\CRWV_CoreWeave_公司调研_2026-09-18.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\CRWV_CoreWeave_公司调研_2026-09-18.md",
+    "latest_date": "2026-09-18",
+    "queue_source": "2026-09-18",
+    "planVersion": "20260918_024255",
+    "queue_status": "done",
+    "finishedAt": "2026-09-18 20:30:38"
+  },
+  {
+    "ticker": "DLR",
+    "name": "Digital Realty",
+    "category": "云算力_IDC_边缘云",
+    "files": [
+      "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\DLR_Digital_Realty_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\DLR_Digital_Realty_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:42:34"
+  },
+  {
+    "ticker": "EQIX",
+    "name": "Equinix",
+    "category": "云算力_IDC_边缘云",
+    "files": [
+      "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\EQIX_Equinix_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\EQIX_Equinix_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:26:07"
+  },
+  {
+    "ticker": "GOOGL",
+    "name": "Alphabet Inc",
+    "category": "云算力_IDC_边缘云",
+    "files": [
+      "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\GOOGL_Alphabet_Inc_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\GOOGL_Alphabet_Inc_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:33:05"
+  },
+  {
+    "ticker": "IREN",
+    "name": "IREN Limited",
+    "category": "云算力_IDC_边缘云",
+    "files": [
+      "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\IREN_IREN_Limited_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\IREN_IREN_Limited_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:36:36"
+  },
+  {
+    "ticker": "MSFT",
+    "name": "微软",
+    "category": "云算力_IDC_边缘云",
+    "files": [
+      "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\MSFT_微软_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\MSFT_微软_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:28:36"
+  },
+  {
+    "ticker": "NBIS",
+    "name": "Nebius Group",
+    "category": "云算力_IDC_边缘云",
+    "files": [
+      "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\NBIS_Nebius_Group_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\NBIS_Nebius_Group_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:50:39"
+  },
+  {
+    "ticker": "NET",
+    "name": "Cloudflare",
+    "category": "云算力_IDC_边缘云",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "ORCL",
+    "name": "Oracle Corporation",
+    "category": "云算力_IDC_边缘云",
+    "files": [
+      "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\ORCL_Oracle_Corporation_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\ORCL_Oracle_Corporation_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:28:52"
+  },
+  {
+    "ticker": "ADBE",
+    "name": "Adobe",
+    "category": "企业软件_数据平台",
+    "files": [
+      "基本面\\公司调研\\结果\\企业软件_数据平台\\ADBE_Adobe_公司调研_2026-09-18.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\企业软件_数据平台\\ADBE_Adobe_公司调研_2026-09-18.md",
+    "latest_date": "2026-09-18",
+    "queue_source": "2026-09-18",
+    "planVersion": "20260918_024255",
+    "queue_status": "done",
+    "finishedAt": "2026-09-18 20:25:29"
+  },
+  {
+    "ticker": "CRM",
+    "name": "Salesforce",
+    "category": "企业软件_数据平台",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "DDOG",
+    "name": "Datadog",
+    "category": "企业软件_数据平台",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "DT",
+    "name": "Dynatrace",
+    "category": "企业软件_数据平台",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "IBM",
+    "name": "International Business Machines",
+    "category": "企业软件_数据平台",
+    "files": [
+      "基本面\\公司调研\\结果\\企业软件_数据平台\\IBM_International_Business_Machines_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\企业软件_数据平台\\IBM_International_Business_Machines_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:48:21"
+  },
+  {
+    "ticker": "META",
+    "name": "Meta Platforms",
+    "category": "企业软件_数据平台",
+    "files": [
+      "基本面\\公司调研\\结果\\企业软件_数据平台\\META_Meta_Platforms_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\企业软件_数据平台\\META_Meta_Platforms_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:44:21"
+  },
+  {
+    "ticker": "NOW",
+    "name": "ServiceNow",
+    "category": "企业软件_数据平台",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "NTNX",
+    "name": "Nutanix",
+    "category": "企业软件_数据平台",
+    "files": [
+      "基本面\\公司调研\\结果\\企业软件_数据平台\\NTNX_Nutanix_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\企业软件_数据平台\\NTNX_Nutanix_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 12:45:11"
+  },
+  {
+    "ticker": "PLTR",
+    "name": "Palantir Technologies",
+    "category": "企业软件_数据平台",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "SNOW",
+    "name": "Snowflake",
+    "category": "企业软件_数据平台",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  },
+  {
+    "ticker": "CRWD",
+    "name": "CrowdStrike",
+    "category": "网络安全_身份权限_治理",
+    "files": [
+      "基本面\\公司调研\\结果\\网络安全_身份权限_治理\\CRWD_CrowdStrike_公司调研_2026-09-07.md"
+    ],
+    "latest_file": "基本面\\公司调研\\结果\\网络安全_身份权限_治理\\CRWD_CrowdStrike_公司调研_2026-09-07.md",
+    "latest_date": "2026-09-07",
+    "queue_source": "2026-09-07",
+    "planVersion": null,
+    "queue_status": "done",
+    "finishedAt": "2026-09-07 11:56:10"
+  },
+  {
+    "ticker": "PANW",
+    "name": "Palo Alto Networks",
+    "category": "网络安全_身份权限_治理",
+    "files": [],
+    "latest_file": "",
+    "latest_date": null,
+    "queue_source": null,
+    "planVersion": null,
+    "queue_status": null,
+    "finishedAt": null
+  }
+]

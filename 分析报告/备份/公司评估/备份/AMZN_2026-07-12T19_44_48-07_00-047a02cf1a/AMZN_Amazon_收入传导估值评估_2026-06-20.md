@@ -1,0 +1,183 @@
+# 公司收入传导与价值传导评估：Amazon
+
+报告日期：2026-06-20  
+公司代号：AMZN  
+公司名称：Amazon.com, Inc.  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM，指 2026Q2-2027Q1 未来 12 个月。  
+资料边界：本报告使用 `公司调研/` 与 `行业调研/` 中的正式上游资料，并用 Amazon 最新 IR、SEC 披露和 AWS 产品页校准关键数字；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较内容。  
+排除口径：不输出投资评级、目标价、股价区间或估值倍数判断；市场价格不作为经营价值传导证据。  
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表全部使用 NTM 经营窗口；FY2026/FY2027、长期 run-rate、Amazon Leo、Zoox、Alexa+ 等只作为补充或远期期权，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：2026Q1 Amazon 总收入 `$181.5B`，同比 `+17%`；Q2 2026 管理层指引收入 `$194.0B-$199.0B`、经营利润 `$20.0B-$24.0B`；截至 2026-03-31，AWS RPO 为 `$364B`，加权剩余年限 `5.5` 年。当前 NTM 基准应理解为“Q2 指引正常兑现 + AWS RPO 逐步确认 + 零售/广告维持当前 run-rate”，而不是把 AI 数据中心 CapEx 直接当收入。
+- 重要产品/业务线：AWS 云与 AI 基础设施、Trainium/Inferentia/Graviton/Nitro 自研芯片容量、Bedrock/AgentCore/SageMaker/Nova、Advertising/Rufus/Prime Video Ads、Third-party seller services/FBA、Online/physical first-party retail、Subscription/Prime/Video。Amazon Leo、Zoox、Health、Alexa+列入远期期权或低权重跟踪。
+- NTM 公司收入四情景：悲观 `$810B-$835B`；基准 `$850B-$880B`；乐观 `$890B-$925B`；极度乐观 `$935B-$975B`。相对当前预期，基准约为管理层 Q2 指引和当前 run-rate 的正常兑现；乐观需要 AWS、广告、3P 服务同时强于当前路径；极度乐观需要 RPO、Trainium/Bedrock、广告和零售效率同时突破。
+- 利润或 EBITDA 四情景：经营利润悲观约 `$78B-$92B`；基准 `$98B-$115B`；乐观 `$118B-$135B`；极度乐观 `$140B-$156B`。净利润受 Anthropic 等投资公允价值、税率和非经营项目影响，无法可靠量化为主口径。
+- 最大传导瓶颈：AWS AI 需求能否按期从 RPO、GW commitment 和芯片部署转为可确认云服务收入；电力/数据中心交付、HBM/先进封装、NVIDIA GPU/Trainium 供应和 Neuron 软件迁移是主要约束。
+- 最大利润率变量：AWS AI capacity 利用率、Trainium 相对 NVIDIA 的 token economics、广告业务增速、零售履约效率，以及 `$200B` 级 CapEx 带来的折旧/租赁/能源成本。
+- 最大现金流变量：TTM OCF 已达 `$148.5B`，但 TTM FCF 只有 `$1.2B`，主要因 PPE 采购净额同比增加 `$59.3B` 且主要反映 AI 投资；NTM 即使收入强，FCF 仍可能被 AI 基建、租赁和能源采购前置消耗。
+- 可信度：公司收入基准为中高，因为收入表、指引、AWS RPO 和分部利润证据强；产品级 AI 子线收入可信度为中，因为 Trainium/Bedrock/AI GPU 的需求证据强，但具体收入拆分、利润率和确认节奏仍需估算。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| AWS 云与 AI 基础设施 | 2026Q1 `$37.6B`，年化 `$150B+`；AWS RPO `$364B` | Q1 收入 `20.7%`；分部 OI `59.4%` | 最大利润池和 AI 产能池 | A/B | 进入基准，作为 AWS 分部主口径；RPO 只按确认节奏折扣纳入 | Rubin/Trainium4、主权 AI Factory、长期多 GW capacity |
+| Trainium / Inferentia / Graviton / Nitro | chips business run-rate `>$20B`，包含于 AWS，不是额外公司收入 | 折合总收入约 `~3%` run-rate，但与 AWS 重叠 | 决定 AWS AI 成本、差异化和长期 ROIC | B | 作为 AWS 收入和利润率驱动进入基准；不与 AWS 加总 | Trainium4 外部化、第三方直接销售、更多模型公司多 GW |
+| Bedrock / AgentCore / SageMaker / Nova / AI software | 收入未披露；公司披露 Bedrock Q1 token 超过过往全部年份且客户 spend QoQ `+170%` | 无法可靠量化；包含于 AWS | 高毛利控制面和企业 agent 入口 | B/C | 小比例进入 AWS 基准；收入拆分用保守估算，不单独加总 | 多模型 agent runtime 成为企业默认入口 |
+| Advertising / Rufus / Prime Video Ads / Creative Agent | 2026Q1 `$17.2B`，同比 `+24%`；TTM `>$70B` | Q1 收入 `9.5%` | 高毛利、低资本强度、零售数据闭环 | A | 进入基准；是利润质量改善的核心非 AWS 变量 | AI shopping agent 改变电商搜索和广告入口 |
+| Third-party seller services / Marketplace / FBA | 2026Q1 `$41.6B`，同比 `+14%` | Q1 收入 `22.9%` | 高于一方零售质量，支撑广告和履约杠杆 | A | 进入基准；按 GMV、FBA 和服务费节奏确认 | 第三方物流对外服务扩大 |
+| Online stores + Physical stores 一方零售 | 2026Q1 `$70.0B`，其中 online `$64.3B`、physical `$5.8B` | Q1 收入 `38.6%` | 最大流量和规模基座，直接利润率低 | A | 进入基准；增长按单位销量、价格、履约效率和 Prime Day timing 处理 | Grocery/quick commerce/机器人履约 |
+| Subscription services / Prime / Video / Music | 2026Q1 `$13.4B`，同比 `+15%` | Q1 收入 `7.4%` | 提升频次、广告库存和会员粘性 | A | 进入基准；利润受内容成本和 Prime 物流权益影响 | AI 会员层、视频广告与体育版权变现 |
+| Amazon Leo / Zoox / Health / Alexa+ / Other | Q1 Other `$1.6B`；Leo/Zoox 未形成主要收入 | Q1 收入 `<1%` 或未披露 | 长期选择权，短期更像 CapEx/费用 | D/E | 不进入 NTM 基准；只列跟踪或极度乐观附录 | 低轨卫星、robotaxi、消费助手订阅 |
+
+证据等级说明：A=收入表/分部/正式指引；B=RPO、合同、已披露客户项目或明确交付路径；C=管理层可验证披露、认证、产能规划；D=发布/样品/早期合作；E=主题相关性。
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池和产品需求强弱，不评估 Amazon 份额、收入确认、利润率或公司总收入。需求单位按业务选择：AWS 使用云消费、RPO、GW/capacity、accelerator capacity；广告使用广告预算、ROAS、CPC/CPM 和购物流量；零售和 3P 使用 GMV、单位销量、FBA/物流服务需求；订阅使用会员数、观看时长和会员价格/权益。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| AWS 云与 AI 基础设施 | AWS Q1 revenue `$37.6B`、YoY `+28%`；AWS RPO `$364B`；行业资料显示 2026 AI 云最大变量是上电、验收和利用率 | 云和 AI workload 需求仍增，但 AWS 增速降至 `+15%-18%`，RPO 转收入慢 | 增速约 `+20%-25%`，容量仍偏紧，RPO 按多年节奏确认 | 增速 `+25%-30%+`，企业 AI、模型公司和 GPU/Trainium capacity 同时拉动 | 增速 `+32%-38%+`，多 GW 合同和企业 agent 需求同时爆发 | 需求池相对当前 run-rate 约 `+$25B` 到 `+$80B+` 年化云消费空间 | 悲观低于当前 Q1 趋势；基准符合当前预期；乐观以上需要 RPO 与新增客户同时支撑 | 正证：RPO、Q1 AWS 加速、AI chips/GPU 部署；反证：AWS growth <15%、RPO 不增、GPU/AI cloud 租价下行 |
+| Trainium / Inferentia / Graviton / Nitro | chips business run-rate `>$20B`；2.1M+ AI chips landed，超过一半 Trainium；OpenAI `~2GW`、Anthropic up to `5GW` | 需求集中在 Anthropic/内部，Neuron 迁移慢，run-rate 仅缓慢到 `$22B-$30B` | Trainium2/3 按期消化，chips run-rate 到 `$30B-$40B` | Anthropic、OpenAI、Bedrock 和新增企业客户拉动 `$45B-$60B` run-rate | Trainium 成为非 NVIDIA 第一专用平台之一，run-rate `$70B-$90B` | 相对 `>$20B` 当前 run-rate，绝对需求上修 `$10B-$70B` | 基准符合当前披露；乐观需要新增生产客户；极度乐观超出当前 NTM 证据 | 正证：GW 承诺、Trn3 规格、GPU 紧缺；反证：Neuron 利用率低、客户除 Anthropic/OpenAI 外不足 |
+| Bedrock / AgentCore / SageMaker / Nova | Q1 Bedrock tokens 超过过往全部年份合计，customer spend QoQ `+170%`；100,000+ companies 使用 Bedrock/Claude 线索 | 企业 agent 留在试点，AI service spend 年化仅 `$6B-$10B` | 年化需求 `$10B-$18B`，以 Bedrock、SageMaker、AI model routing 和 governance 为主 | 年化需求 `$18B-$30B`，OpenAI/Claude/Nova 多模型平台化 | 年化需求 `$30B-$50B`，AWS 成为企业 agent runtime 默认入口之一 | 相对估算当前 `$5B-$10B`，增量 `$5B-$40B` | 基准可纳入 AWS 子线；单独拆分可信度中 | 正证：token 与 spend 增长、企业 IAM/治理需求；反证：usage 不持续、价格战压缩毛利 |
+| Advertising / Rufus / Prime Video Ads | Q1 ads `$17.2B`、YoY `+24%`；购物数据闭环和 Prime Video 广告库存 | 广告需求增长降至 `+12%-16%`，零售流量或广告加载受压 | `+18%-25%`，retail media、Rufus 和视频广告正常兑现 | `+25%-30%`，AI 创意/投放和 Prime Video 预算加速 | `+30%+`，AI shopping 入口扩大并抢占传统搜索/社媒预算 | 年化广告需求从当前约 `$70B+` 到 `$80B-$125B` | 基准符合当前 ads 增速；乐观需要预算转移和 ROAS 证据 | 正证：Q1 +24%、Rufus 使用；反证：广告增速 <15%、隐私/监管、加载率伤害体验 |
+| Third-party seller services / Marketplace / FBA | Q1 `$41.6B`、YoY `+14%`；需求来自商家 GMV、FBA 和 marketplace 服务 | 消费放缓、费率压力或卖家转移，需求 `+6%-9%` | `+10%-14%`，单位销量和 FBA 正常增长 | `+14%-18%`，外部商家和物流服务强于预期 | `+18%+`，Amazon logistics 对外服务和 AI 搜索提升转化 | 相对当前年化约 `$166B`，需求增量 `$10B-$40B+` | 基准符合当前路径；极度乐观需要服务化扩张 | 正证：3P seller service +14%；反证：卖家费率抵触、监管、消费疲弱 |
+| Online + Physical first-party retail | Q1 `$70.0B`，online +12%、physical +5%；Prime Day timing 支撑 Q2 指引 | 单位销量增长放缓至 `+3%-6%`，关税/价格/消费拖累 | `+7%-11%`，价格、选择、便利和快送维持 | `+11%-15%`，Prime Day、same-day/overnight 和 AI 购物提升转化 | `+15%+`，quick commerce 与 AI shopping 明显改变频次 | 相对当前一方零售年化约 `$280B`，需求增量 `$10B-$65B` | 基准符合 current run-rate；乐观需要单位销量和履约效率共振 | 正证：Q1 北美 +12%；反证：关税、消费疲软、运费/履约成本上升 |
+| Subscription / Prime / Video | Q1 `$13.4B`、YoY `+15%`；Prime、视频、音乐和其他非 AWS 订阅 | 增长 `+6%-9%`，内容/体育成本上升或会员增速放缓 | `+10%-14%`，Prime 频次和视频广告协同 | `+14%-18%`，视频、体育、AI 会员权益提升 ARPU | `+20%+`，AI assistant/视频广告/会员权益组合强兑现 | 相对当前年化约 `$54B`，需求增量 `$4B-$25B` | 基准符合现有披露；极度乐观证据不足 | 正证：Q1 +15%；反证：内容成本、退订、视频广告体验 |
+| Amazon Leo / Zoox / Health / Alexa+ | 当前收入披露小或未披露；Leo/Zoox 是重资本期权 | NTM 无明显商业需求入表 | 仅作为跟踪，不进入基准 | 出现早期商业客户或订阅增量，但规模小 | 非线性采用仅作为远期期权 | NTM 可确认收入无法可靠量化 | 低于进入 NTM 基准要求 | 正证不足；没有客户、时间表和收入确认路径时不纳入基准 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求能进入 Amazon NTM 收入表，以及当前可收入化基数；不预测增长，不判断利润率。AWS 子线如 Trainium、Bedrock、AI GPU capacity 均包含在 AWS 分部收入内，不能与 AWS overall 重复相加。RPO 是收入确认上限和节奏锚，不等于 NTM 收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| AWS 云与 AI 基础设施 | 2026Q1 AWS revenue `$37.6B`；RPO `$364B`；Q1 AWS OI `$14.2B` | 直接，AWS 分部收入 | 高经营利润率，但 AI 折旧和电力成本上升 | NTM `$158B-$170B` | NTM `$175B-$188B` | NTM `$190B-$205B` | NTM `$210B-$230B` | 基准符合 Q1 run-rate、RPO 和 Q2 指引隐含路径 | A/B | 是 | 分部收入表、RPO、Q2 指引、AI chip/GPU 部署 | 主基准；RPO 只按转收入节奏折扣 |
+| Trainium / Inferentia / Graviton / Nitro | chips business run-rate `>$20B`；官方披露 Graviton/Trainium/Nitro | 直接但包含在 AWS，不单独加总 | 若利用率高，可改善 AWS gross/OP margin；若迁移慢则折旧拖累 | run-rate `$22B-$30B` | run-rate `$30B-$40B` | run-rate `$45B-$60B` | run-rate `$70B-$90B` | 基准略高于当前 run-rate，但有已披露 capacity 支持 | B | 是，作为 AWS 驱动 | 官方 run-rate、GW commitments、2.1M+ AI chips | 纳入 AWS 子线，不作为额外公司收入 |
+| Bedrock / AgentCore / SageMaker / Nova | 收入未披露；tokens/spend 增长和客户数披露 | 直接但包含在 AWS | 软件/控制面高毛利，底层 inference 成本会稀释 | 年化 `$6B-$10B` | 年化 `$10B-$18B` | 年化 `$18B-$30B` | 年化 `$30B-$50B` | 基准高于当前估算但仍保守；单独拆分可信度中 | B/C | 小比例进入 AWS 基准 | Bedrock token、spend QoQ、客户使用披露 | 纳入 AWS 基准的辅助子线；不单独加总 |
+| Advertising / Rufus / Prime Video Ads | Q1 advertising services `$17.2B`，YoY `+24%` | 直接产品收入 | 高毛利、低资本强度，拉动公司利润质量 | NTM `$78B-$84B` | NTM `$86B-$94B` | NTM `$98B-$108B` | NTM `$112B-$125B` | 基准符合当前 +24% 和正常季节性 | A | 是 | 收入表、广告增长、Rufus/Prime Video Ads 线索 | 基准主口径；AI 增量不单独重复计入零售 |
+| Third-party seller services / FBA | Q1 `$41.6B`，YoY `+14%` | 直接产品收入 | 服务费/FBA 质量高于一方零售，但履约成本影响利润 | NTM `$168B-$180B` | NTM `$185B-$198B` | NTM `$202B-$218B` | NTM `$225B-$245B` | 基准符合当前 seller services 增速 | A | 是 | 收入表、单位销量、FBA/服务费 | 基准主口径 |
+| Online + Physical first-party retail | Q1 online `$64.3B`、physical `$5.8B` | 直接产品收入 | 低毛利/高流量；间接支撑广告和 Prime | NTM `$292B-$312B` | NTM `$318B-$340B` | NTM `$345B-$365B` | NTM `$375B-$395B` | 基准符合北美/国际增长和 Q2 Prime Day timing | A | 是 | 收入表、Q2 指引、零售单位销量 | 基准主口径；利润率按低资本质量处理 |
+| Subscription / Prime / Video | Q1 `$13.4B`，YoY `+15%` | 直接产品收入 | 订阅毛利被内容、Prime 物流权益和视频成本抵消 | NTM `$55B-$59B` | NTM `$60B-$66B` | NTM `$67B-$73B` | NTM `$75B-$82B` | 基准符合当前增速 | A | 是 | 收入表、Prime/视频/音乐订阅 | 基准主口径 |
+| Other / Leo / Zoox / Health / Alexa+ | Q1 Other `$1.6B`；Leo/Zoox未形成主要收入 | 直接或间接，但披露不足 | 多数短期为费用/CapEx，利润属性弱 | NTM `$5B-$7B` | NTM `$6B-$9B` | NTM `$9B-$12B` | NTM `$12B-$18B` | 只作为上限或跟踪，不能支撑公司基准 | D/E | Other 小额进入；Leo/Zoox 不进入 | 收入表 Other；新品缺少 NTM 合同/确认路径 | Leo/Zoox/Alexa+ 移入附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从产品需求和收入基数出发，评估每个重要产品在 NTM 内对 Amazon 可确认收入和经营利润质量的贡献。产品贡献不把行业 TAM、客户总预算、AI 数据中心项目总金额或远期 pipeline 直接写成 Amazon 收入。AWS 子线的收入贡献在公司汇总时并入 AWS，不重复加总。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| AWS 云与 AI 基础设施 | 悲观 | `$158B-$170B` | AWS OI `$47B-$58B` | AWS OPM `30%-34%` | 低于当前预期 | RPO 转收入慢，capex 折旧先上来 | 保留为下行情景 | AWS growth <15%、RPO 不增、电力/验收延迟 |
+| AWS 云与 AI 基础设施 | 基准 | `$175B-$188B` | AWS OI `$60B-$70B` | OPM `34%-37%` | 符合当前预期 | Q1 +28%、RPO `$364B`、Q2 指引 | 保留 | AI 折旧和能源成本限制 margin 上行 |
+| AWS 云与 AI 基础设施 | 乐观 | `$190B-$205B` | AWS OI `$68B-$80B` | OPM `36%-39%` | 高于当前预期 | RPO 继续上修、AI capacity 上电快 | 保留但需 Q2/Q3 验证 | capacity 交付和客户利用率 |
+| AWS 云与 AI 基础设施 | 极度乐观 | `$210B-$230B` | AWS OI `$80B-$97B` | OPM `38%-42%` | 显著高于当前预期 | 多 GW 客户、Trainium/Bedrock/GPU 同步兑现 | 下移为乐观上限，NTM 可信度中 | 多环节同时成立证据不足 |
+| Trainium / Inferentia / Graviton / Nitro | 悲观 | 包含于 AWS；run-rate `$22B-$30B` | 对 AWS margin 中性或负面 | 折旧/迁移成本压制 | 低于当前叙事 | Neuron 迁移慢、客户集中 | 保留为产品风险 | Anthropic/OpenAI 以外生产客户不足 |
+| Trainium / Inferentia / Graviton / Nitro | 基准 | 包含于 AWS；run-rate `$30B-$40B` | 改善 AWS 单位 token 成本 | 小幅改善 | 符合当前披露 | 官方 `>$20B` run-rate、2.1M+ AI chips | 保留 | HBM/封装/良率/Neuron |
+| Trainium / Inferentia / Graviton / Nitro | 乐观 | 包含于 AWS；run-rate `$45B-$60B` | 明显改善 AI capacity 毛利 | 改善 | 高于当前预期 | Anthropic、OpenAI、企业客户迁移 | 保留但不单独加总 | GPU 价格回落、客户选择多云 |
+| Trainium / Inferentia / Graviton / Nitro | 极度乐观 | 包含于 AWS；run-rate `$70B-$90B` | 可能成为 AWS 高 ROIC 驱动 | 大幅改善 | 显著高于当前预期 | Trainium3/4 成为主流第二平台 | 移入乐观上限/附录跟踪 | NTM 证据不足，更多是 2027+ |
+| Bedrock / AgentCore / SageMaker / Nova | 悲观 | 包含于 AWS；`$6B-$10B` 年化 | 毛利被模型费和 compute 吞噬 | 中性 | 低于预期 | 企业 agent 停留试点 | 保留 | token 价格战、usage 不持续 |
+| Bedrock / AgentCore / SageMaker / Nova | 基准 | 包含于 AWS；`$10B-$18B` 年化 | 高毛利控制面，但 compute pass-through | 小幅改善 | 符合当前预期 | Q1 token/spend 披露、多模型分发 | 保留 | 收入拆分不可见 |
+| Bedrock / AgentCore / SageMaker / Nova | 乐观 | 包含于 AWS；`$18B-$30B` 年化 | 控制面和治理提升 AWS mix | 改善 | 高于当前预期 | OpenAI/Claude/Nova + AgentCore 生产化 | 保留 | direct API 和开源推理替代 |
+| Bedrock / AgentCore / SageMaker / Nova | 极度乐观 | 包含于 AWS；`$30B-$50B` 年化 | 高毛利软件化明显 | 大幅改善 | 显著高于当前预期 | 多模型 agent runtime 默认平台 | 下移为乐观上限 | NTM 内收入确认证据不足 |
+| Advertising / Rufus / Prime Video Ads | 悲观 | `$78B-$84B` | 高利润池仍增长，但低于当前 | 稳定或小降 | 低于当前预期 | 广告增速跌破 15% | 保留 | 隐私/监管、加载率、消费疲弱 |
+| Advertising / Rufus / Prime Video Ads | 基准 | `$86B-$94B` | 增量利润率高，支撑公司 OPM | 改善 | 符合当前预期 | Q1 `$17.2B`、+24% | 保留 | 具体利润未披露 |
+| Advertising / Rufus / Prime Video Ads | 乐观 | `$98B-$108B` | 公司利润质量显著提升 | 改善 | 高于当前预期 | Rufus、Prime Video Ads、AI Creative | 保留 | 预算转移是否持续 |
+| Advertising / Rufus / Prime Video Ads | 极度乐观 | `$112B-$125B` | 低资本强度现金流强 | 大幅改善 | 显著高于当前预期 | AI shopping 改变搜索入口 | 下移为乐观上限 | NTM 内替代搜索广告证据不足 |
+| Third-party seller services / FBA | 悲观 | `$168B-$180B` | 服务利润仍正，但履约成本压制 | 小降 | 低于当前预期 | 消费放缓/卖家费率压力 | 保留 | 监管与卖家 churn |
+| Third-party seller services / FBA | 基准 | `$185B-$198B` | 稳定正贡献 | 稳定改善 | 符合当前预期 | Q1 +14%、FBA/marketplace | 保留 | 履约成本 |
+| Third-party seller services / FBA | 乐观 | `$202B-$218B` | FBA 和服务费带来经营杠杆 | 改善 | 高于当前预期 | 外部商家、AI 搜索转化、物流效率 | 保留 | 费率和竞争 |
+| Third-party seller services / FBA | 极度乐观 | `$225B-$245B` | 高服务 mix 拉动公司利润 | 改善 | 显著高于当前预期 | logistics-as-a-service 放大 | 下移为乐观上限 | 证据偏远期 |
+| Online + Physical first-party retail | 悲观 | `$292B-$312B` | 低利润，可能拖累 OPM | 小降 | 低于当前预期 | 单位销量/消费/关税拖累 | 保留 | 运费、履约、库存 |
+| Online + Physical first-party retail | 基准 | `$318B-$340B` | 对公司利润中性，支撑广告/Prime | 稳定 | 符合当前预期 | Q1 North America +12%、Q2 Prime Day | 保留 | 成本通胀 |
+| Online + Physical first-party retail | 乐观 | `$345B-$365B` | 履约效率带来小幅杠杆 | 小幅改善 | 高于当前预期 | same-day/overnight、区域化物流 | 保留 | 毛利低，不能自动变利润 |
+| Online + Physical first-party retail | 极度乐观 | `$375B-$395B` | 若费用率下降才改善 | 小幅改善 | 显著高于当前预期 | AI shopping/quick commerce 频次 | 下移为乐观上限 | 低毛利、履约成本 |
+| Subscription / Prime / Video | 悲观 | `$55B-$59B` | 内容和物流权益成本压制 | 小降 | 低于当前预期 | 退订/内容 ROI 不佳 | 保留 | 体育版权、内容成本 |
+| Subscription / Prime / Video | 基准 | `$60B-$66B` | 频次和广告库存间接贡献 | 稳定 | 符合当前预期 | Q1 +15% | 保留 | 单独利润未披露 |
+| Subscription / Prime / Video | 乐观 | `$67B-$73B` | ARPU 和广告协同改善 | 小幅改善 | 高于当前预期 | Prime Video Ads、会员权益 | 保留 | 内容成本 |
+| Subscription / Prime / Video | 极度乐观 | `$75B-$82B` | 若 AI 会员层成功则改善 | 改善 | 显著高于当前预期 | AI assistant/视频广告 | 仅作跟踪 | NTM 证据不足 |
+| Other / Leo / Zoox / Health / Alexa+ | 悲观 | `$5B-$7B` | 费用/CapEx 消耗 | 负向 | 不低于预期，因为基准本就很低 | 新业务未入表 | 保留 | 无可确认收入 |
+| Other / Leo / Zoox / Health / Alexa+ | 基准 | `$6B-$9B` | 对公司利润贡献小 | 中性至负 | 符合低权重预期 | Other 收入表 | 保留 | Leo/Zoox 不进主口径 |
+| Other / Leo / Zoox / Health / Alexa+ | 乐观 | `$9B-$12B` | 仍小，可能亏损 | 中性至负 | 高于当前预期 | 早期商业客户 | 仅作跟踪 | 收入确认不清 |
+| Other / Leo / Zoox / Health / Alexa+ | 极度乐观 | `$12B-$18B` | 可能仍被 CapEx 吞噬 | 不确定 | 显著高于当前预期 | 卫星/robotaxi/消费 AI 商业化 | 移入附录 | NTM 证据不足 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为 Amazon NTM 总收入、毛利率、经营利润率、经营利润和自由现金流方向；不讨论市场定价，不给投资评级。汇总时 AWS 子线只作为 AWS 内部驱动，不与 AWS 分部收入重复加总。净利润受投资公允价值、税率和非经营项目影响较大，因此以经营利润和 FCF 方向为主。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$810B-$835B` | 约 `+9%-12%` vs Q2'25-Q1'26 TTM `$742.8B` | 低于 Q2 指引延伸和当前 run-rate；AWS/广告/零售至少一项明显失速 | `48.5%-50.0%` | `9.5%-11.0%` | 经营利润 `$78B-$92B`；净利润无法可靠量化 | FCF `-$30B` 至 `$0B`，高 CapEx 与租赁继续吞噬 OCF | 中 | AWS RPO 转收入慢、AI capacity 利用率不足、零售成本/关税、广告增速跌破 15% |
+| 基准公司 | `$850B-$880B` | 约 `+14%-18%` | 接近管理层 Q2 指引、AWS RPO 正常转化、当前 run-rate 正常兑现 | `50.0%-51.8%` | `11.5%-13.0%` | 经营利润 `$98B-$115B`；净利润无法可靠量化 | FCF `-$10B` 至 `+$20B`，经营现金流强但 `$200B` 级 CapEx 前置 | 中高 | AI 折旧和电力成本、AWS margin 能否守住 `35%` 附近、零售履约费用 |
+| 乐观公司 | `$890B-$925B` | 约 `+20%-25%` | 高于当前预期；AWS `+25%-30%`、Ads `+25%+`、3P/零售同步强 | `51.8%-53.5%` | `13.0%-14.6%` | 经营利润 `$118B-$135B`；净利润无法可靠量化 | FCF `+$20B-$45B`，取决于 CapEx 是否继续上修 | 中 | Trainium/Bedrock/GPU 上电速度、广告预算转移、国际/北美履约效率 |
+| 极度乐观公司 | `$935B-$975B` | 约 `+26%-31%` | 显著高于当前预期；需求、公司捕获、利润率和执行同时突破 | `53.0%-55.0%` | `14.8%-16.0%` | 经营利润 `$140B-$156B`；净利润无法可靠量化 | FCF `+$35B-$65B`，但仍可能被更高 AI CapEx 吸收 | 低到中 | 多 GW capacity 按期确认、Trainium 成为主流、AI shopping/Ads 爆发、数据中心/电力无重大延迟 |
+
+汇总校验：
+
+- AWS、Trainium、Bedrock 之间存在包含关系：Trainium/Bedrock 是 AWS 收入质量和利润率变量，不额外叠加到公司收入。
+- 一方零售、3P、广告和订阅之间共享客户流量和 Prime 频次，广告增量不能全部视为独立 GMV 增量。
+- 2026Q2 指引包含 Prime Day timing 假设，不能把 Q2 增速机械年化到全部 NTM。
+- Amazon Leo、Zoox、Health、Alexa+ 属于远期期权或低权重业务，不进入公司基准收入。
+- 低毛利零售收入上修弱于 AWS/广告/软件服务收入上修；公司价值传导重点在收入质量而非总收入绝对额。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：只校准前四步情景，不重新预测经营结果。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在实际影响层级处理一次：需求风险在需求层，收入确认在第二/第三步，成本和利润率在第三/第四步，可信度在第五步。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 总收入 `$181.5B`、Q2 指引 `$194B-$199B` | 公司汇总 | 支撑基准总收入 `$850B-$880B` | 支撑经营利润底线，但 Q2 OI 指引中点低于 Q1 | Prime Day timing 带来 Q2 季节性，不可全年线性外推 | 基准保留 |
+| AWS revenue `+28%`、OI `$14.2B`、RPO `$364B` | AWS 需求/收入基数/公司利润 | 上修 AWS 基准和乐观收入池 | AWS OPM `37.7%` 支撑高利润属性 | RPO 多年确认，不能全进 NTM | 基准保留，乐观保留 |
+| chips business run-rate `>$20B`、2.1M+ AI chips、OpenAI/Anthropic GW commitment | Trainium 产品贡献 | 提高 AWS AI 子线收入可见度 | 若利用率高，可降低 token 成本 | 需要 HBM、封装、上电、Neuron 迁移 | 基准保留，极度乐观下移为乐观上限 |
+| Bedrock tokens/spend 快速增长 | Bedrock/AI software | 支撑 AWS AI services 基准小比例纳入 | 控制面高毛利，但模型费和 compute pass-through 影响 | 企业 agent 从试点到生产仍需验证 | 基准保留，极度乐观下移 |
+| Advertising Q1 `$17.2B`、YoY `+24%` | 广告产品/公司利润 | 支撑广告基准 `$86B-$94B` | 高毛利、低资本强度，改善公司 mix | 现金流质量好于 AI infrastructure | 基准和乐观保留 |
+| TTM FCF `$1.2B`、PPE purchase 增量主要反映 AI | 公司现金流 | 不直接压低收入 | 折旧、租赁、电力成本限制 margin | 是最大 FCF 约束，影响公司可信度 | 悲观保留，基准现金流下调 |
+| 行业资料：2026 AI 数据中心最大瓶颈是电力/并网/变压器，其次 HBM/CoWoS/液冷/MEP | 需求兑现/执行 | 需求可见但收入确认可能延迟 | 上电慢会压利用率和折旧吸收 | CapEx 沉淀、FCF 承压 | 极度乐观下移，保留反证 |
+| 行业资料：推理需求是长期现金流，token 价格下降需靠利用率抵消 | Bedrock/Trainium/AWS 利润 | 若 token demand 放量，上修 AI services | 价格战会压 GPU/AI cloud 毛利；高效 ASIC 相对受益 | 需跟踪 tokens/GPU-hour、API price、cache hit | 基准保留，乐观条件化 |
+| 零售/3P/订阅收入表证据强，但产品利润拆分弱 | 零售/3P/订阅产品贡献 | 支撑收入基数 | 利润率无法精确按产品量化 | 履约、内容和物流成本可能吞噬收入增量 | 收入基准保留，利润用方向而非精确数 |
+| Amazon Leo、Zoox、Alexa+ 等新品收入未披露 | 远期期权 | 不支持 NTM 基准收入 | 短期更可能消耗费用/CapEx | 商业化时间表不足 | 移入附录/仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | AWS 和广告仍增长，但低于当前预期；CapEx/折旧吞噬利润与 FCF | Q1 收入、AWS、广告均强，悲观不是需求消失 | RPO 转收入慢、AWS growth <15%、广告 <15%、CapEx 不降 | 保留 | 公司悲观下界 `$810B-$835B`，OPM `9.5%-11.0%` | 中 | 电力/上电风险只在收入确认和现金流层处理，不重复压低所有产品需求 |
+| 基准 | 管理层 Q2 指引兑现，AWS RPO 正常转收入，零售/3P/广告维持当前路径 | 收入表 A 级证据、AWS RPO B 级证据、Q2 指引 | Bedrock/Trainium 子线收入拆分不透明，FCF 低 | 保留 | 公司基准 `$850B-$880B`，OPM `11.5%-13.0%` | 中高 | 不把 CapEx 本身当需求反证，只在 FCF 和折旧处处理 |
+| 乐观 | AWS、广告、3P 和 AI services 同时高于基准，但仍有可验证路径 | AWS +28%、ads +24%、RPO `$364B`、GW commitments、Bedrock spend | 需要 Q2/Q3 RPO、AWS margin、Trainium 客户继续验证 | 保留 | 公司乐观 `$890B-$925B`，OPM `13.0%-14.6%` | 中 | 不把同一个 Trainium 客户承诺同时计入 AWS、chips 和 Bedrock 三次收入 |
+| 极度乐观 | 需求、公司捕获、利润率和执行同时突破 | 多 GW capacity、Trainium/Bedrock、广告和 retail AI 都有方向性证据 | 任一核心环节证据不足：上电、Neuron 迁移、客户利用率、广告预算转移 | 下移 | 作为公司上限 `$935B-$975B`；多数产品极度乐观为乐观上限或附录跟踪 | 低到中 | 不用远期期权 Leo/Zoox/Alexa+ 拉高 NTM 基准 |
+
+## 8. 结论
+
+- 最可能情景：基准偏乐观。Amazon NTM 最可能落在 `$850B-$880B` 总收入、`11.5%-13.0%` 经营利润率区间；经营价值主要由 AWS、广告和 3P 服务贡献，一方零售提供流量和规模但不是主要利润质量变量。
+- NTM 收入结论：AWS 是最大增量和最大可见性来源，基准 NTM AWS 收入约 `$175B-$188B`；广告基准约 `$86B-$94B`；3P seller services 约 `$185B-$198B`；一方零售约 `$318B-$340B`。Trainium 和 Bedrock 是 AWS 内部收入质量驱动，不应与 AWS 分部重复相加。
+- 利润/现金流结论：AWS 和广告共同决定利润质量；Trainium 若利用率足够高，可以把 AI capacity 从低差异化 GPU resale 转为更高 ROIC 的自研 silicon + 云服务。但短期 FCF 仍被 AI 数据中心、PPE、租赁、能源和网络设备前置投资压制，基准 FCF 只应看作 `-$10B` 至 `+$20B` 的低可见区间。
+- 主要传导瓶颈：第一，RPO 和 GW commitment 转成 NTM 可确认 AWS 收入；第二，Trainium3/Neuron 的生产客户和利用率；第三，电力/并网/液冷/MEP 交付；第四，AI 折旧和能源成本能否被 AWS/Bedrock/广告利润吸收。
+- 乐观情景成立条件：Q2/Q3 2026 AWS 增速维持 `25%+`；AWS RPO 继续增长或至少不回落；Trainium3 出现 Anthropic/OpenAI/Bedrock 之外的生产客户；广告维持 `25%+`；AWS OPM 守住 `35%+`；CapEx 没有继续超计划上修。
+- 极度乐观情景成立条件：需求端由企业 agent、模型公司、多模态和广告/购物 AI 同时拉动；公司端 Trainium、GPU、Bedrock 和广告同时捕获；利润端 AWS/广告 mix 抵消折旧和能源；执行端上电、HBM/封装、Neuron、客户迁移均无重大延迟。
+- 悲观情景触发条件：AWS growth 回落到 `15%` 以下且 CapEx 不下修；RPO 连续两个季度不增长或显著下滑；GPU/AI cloud 租价连续两个季度下跌且 utilization 未改善；广告增速跌破 `15%`；零售履约/关税/内容成本吞噬利润。
+- 后续跟踪数据：AWS revenue growth、AWS RPO 和 weighted-average life、AWS OPM、PPE purchases/finance leases/FCF、Trainium3 生产客户、OpenAI `2GW` ramp、Anthropic capacity 消耗、Bedrock tokens/spend、广告增速、3P seller services 增速、Q2/Q3 指引和 CapEx commentary。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务主口径截至 2026Q1，披露日期 2026-04-29；本报告日期 2026-06-20。NTM 指 2026Q2-2027Q1。
+- 主要收入、订单、指引和利润率来源：
+  - Amazon Q1 2026 results：总收入 `$181.5B`，AWS `$37.6B`，广告 `$17.2B`，Q2 指引 `$194B-$199B`，经营利润指引 `$20B-$24B`，FCF 和 AI PPE 表述。https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-First-Quarter-Results/default.aspx
+  - Amazon Q1 2026 SEC Exhibit 99.1：chips business run-rate `>$20B`，OpenAI `~2GW` Trainium，Anthropic up to `5GW`，2.1M+ AI chips，1M+ NVIDIA GPUs，Bedrock token/spend 等。https://www.sec.gov/Archives/edgar/data/1018724/000101872426000012/amzn-20260331xex991.htm
+  - Amazon Q1 2026 Form 10-Q：AWS RPO `$364B`、weighted-average life `5.5` years，segment revenue/OI，product net sales，long-term debt/leases/commitments。https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/amzn-20260331.htm
+  - Amazon 2025 Form 10-K：2025 全年收入、AWS RPO `$244B` 和长期合同说明。https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm
+  - AWS EC2 Trn3 UltraServers：Trainium3、144 chips、362 MXFP8 PFLOPS、20.7TB HBM3E、706TB/s memory bandwidth、NeuronLink/UltraCluster。https://aws.amazon.com/ec2/instance-types/trn3/
+  - AWS Neuron Trn3 architecture：Neuron/Trn3 系统架构和软件栈。https://awsdocs-neuron.readthedocs-hosted.com/en/latest/about-neuron/arch/neuron-hardware/trn3-arch.html
+  - TradingView AMZN forecast page：仅用于 Q2 2026 当前收入预期辅助锚，不用于估值或评级；页面显示下一季度收入预期约 `$196.10B`。https://www.tradingview.com/symbols/NASDAQ-AMZN/forecast/
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - 2026 公司 CapEx 约 `$200B` 是补充现金流压力口径，不直接等同 NTM 收入。
+  - Trainium run-rate 是 AWS 内部/外部 capacity 与 chips business 口径，不能和 AWS 分部收入相加。
+  - Amazon Leo、Zoox、Health、Alexa+ 在 NTM 内缺少足够收入确认路径，只保留为附录跟踪。
+- 主要项目内来源：
+  - `公司调研/云算力_IDC_AI软件平台/AMZN_Amazon_公司调研_2026-06-20.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/产业背景/全球AI需求与Token经济框架_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-06-11.md`

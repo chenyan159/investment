@@ -1,0 +1,33 @@
+{
+  "exitCode": 0,
+  "denied": [],
+  "reads": [
+    "D:\\investment\\tools\\research-runner\\queue-tools.mjs",
+    "D:\\investment\\tools\\research-runner\\research-plan-store.mjs",
+    "D:\\investment\\tools\\research-runner\\domains\\index.mjs",
+    "D:\\investment\\tools\\research-runner\\domains\\company-comparison.mjs",
+    "D:\\investment\\tools\\research-runner\\prompts\\company-comparison.mjs",
+    "D:\\investment\\tools\\research-runner\\prompts\\common.mjs",
+    "D:\\investment\\tools\\research-runner\\domains\\company.mjs",
+    "D:\\investment\\tools\\research-runner\\prompts\\company.mjs",
+    "D:\\investment\\tools\\research-runner\\queue-store.mjs",
+    "D:\\investment\\tools\\research-runner\\domains\\output-backup.mjs",
+    "D:\\investment\\tools\\research-runner\\domains\\output-path.mjs",
+    "D:\\investment\\tools\\research-runner\\domains\\company-investment-decision.mjs",
+    "D:\\investment\\tools\\research-runner\\prompts\\company-investment-decision.mjs",
+    "D:\\investment\\tools\\research-runner\\domains\\company-sentiment.mjs",
+    "D:\\investment\\tools\\research-runner\\prompts\\company-sentiment.mjs",
+    "D:\\investment\\tools\\research-runner\\domains\\feature-quantization.mjs",
+    "D:\\investment\\tools\\research-runner\\prompts\\feature-quantization.mjs",
+    "D:\\investment\\tools\\research-runner\\domains\\feature-contract.mjs",
+    "D:\\investment\\tools\\research-runner\\domains\\file-run.mjs",
+    "D:\\investment\\tools\\research-runner\\prompts\\file-run.mjs",
+    "D:\\investment\\tools\\research-runner\\domains\\industry.mjs",
+    "D:\\investment\\tools\\research-runner\\prompts\\industry.mjs",
+    "D:\\investment\\tools\\research-runner\\index-updater.mjs",
+    "D:\\investment\\tools\\research-runner\\validators\\output-validator.mjs",
+    "D:\\investment\\tools\\research-runner\\research-plans.json",
+    "D:\\investment\\tools\\queue.jsonl"
+  ],
+  "writes": []
+}

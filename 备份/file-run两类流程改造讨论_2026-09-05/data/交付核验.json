@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-09-05T13:02:13.511928-07:00",
+  "local_links": 138,
+  "invalid_links": 0,
+  "source_hash_checks": 71,
+  "special_return_independent_decimal_checks": 24,
+  "max_return_difference": 1.942890293094024e-16,
+  "issues": [],
+  "scope": "Only referenced sources and fixed historical revisions checked; no claim that the entire live project stopped changing."
+}

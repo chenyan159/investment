@@ -1,0 +1,388 @@
+# Advanced Micro Devices（AMD）公司调研_2026-06-11
+
+报告日期：2026-06-11（America/Los_Angeles）。  
+自动化对象：company / AMD / Advanced Micro Devices。  
+输出目录：`基本面/公司调研/AI计算芯片_EDA_IP_custom_ASIC/`，与 `公司调研/公司索引.md` 中 AMD 的归类一致。  
+资料边界：本报告只使用 `行业调研/` 下与 AI 芯片、AI 服务器、HBM、先进封装、CPU 控制面、开放互联和 AI 数据中心建设相关的资料，并结合联网公开资料；未读取、引用或继承 `特征量化/`、`日度资料/` 或其他公司调研报告。  
+核心判断：AMD 已经从“高 beta CPU/GPU 周期股”转为“数据中心 CPU + AI 加速器 + 开放 rack-scale AI 基础设施第二供应源”的公司。2026 年主要看 MI350/EPYC 是否兑现收入和毛利，2027 年主要看 MI450/MI455/Helios 是否把 OpenAI、Meta、Oracle 等承诺转成真实 rack 验收和收入确认。
+
+## 一、整体业务、投资人认知和产业链位置
+
+### 1.1 公司是什么
+
+AMD 是一家 fabless 高性能计算半导体公司，核心产品覆盖：
+
+| 业务层 | 主要产品 | 2026 投资意义 |
+|---|---|---|
+| 数据中心 CPU | EPYC 9005 “Turin”、后续 6th Gen EPYC “Venice”、Verano | AI 推理和 agentic AI 需要 CPU 做调度、tokenization、I/O、KV cache、存储和网络控制；EPYC 已成为 AMD 数据中心收入的稳定底盘 |
+| 数据中心 AI GPU | Instinct MI300/MI325、MI350/MI355X、MI450/MI455X、MI430X/MI440X | 直接对标 NVIDIA 数据中心 GPU；AMD 的核心差异是大 HBM 容量、较开放的软件和 rack 生态、第二供应源价值 |
+| Rack-scale AI 平台 | Helios：Instinct GPU + EPYC Venice + Pensando/Vulcano networking + OCP Open Rack Wide | 这是 AMD 2026-2027 的战略重心：从卖单卡/OAM，升级为卖 rack-level AI 基础设施参考平台 |
+| 网络和 DPU | Pensando DPU、Pollara AI NIC、Vulcano 800G NIC 路线 | 目标是补齐 NVIDIA ConnectX/BlueField/NVLink 体系之外的开放互联栈 |
+| Client/Gaming | Ryzen、Ryzen AI、Radeon、semi-custom console SoC | 仍贡献现金流和品牌，但在本报告中不是估值主线 |
+| Embedded/Adaptive | Xilinx FPGA、Versal、Alveo、嵌入式 CPU/APU/FPGA | 毛利率较高，但 2026 对 AMD 股价弹性低于数据中心 AI |
+
+AMD 的商业模式是轻资产设计公司：前道晶圆、先进封装和 HBM 依赖 TSMC、Samsung、SK hynix、Micron 等供应链；服务器和 rack 集成交由 OEM/ODM/EMS 生态完成。资产负债表轻、经营杠杆高，但也意味着真实产能上限受 HBM、CoWoS/先进封装、ABF、测试、液冷和客户验收制约。
+
+### 1.2 投资人眼中的 AMD
+
+2024 年以前，市场主要把 AMD 看作 Intel CPU 份额替代和 PC/游戏周期股；2024-2025 年以后，市场开始给 AMD 更高的 AI 期权估值，但仍明显折价于 NVIDIA。投资人对 AMD 的分歧集中在三点：
+
+1. **看多逻辑：** hyperscaler 不愿完全依赖 NVIDIA；OpenAI、Meta、Oracle、HPE、Cisco/G42、TCS、Samsung 等合作说明 AMD 已进入客户长期规划；EPYC CPU 在 AI 服务器控制面有真实需求；MI350/MI450/Helios 若兑现，可形成非 NVIDIA 的第二 rack-scale 生态。
+2. **看空逻辑：** CUDA/NVLink/NVSwitch 生态粘性很强；ROCm 虽进步但仍需客户迁移；MI350 只是 8-GPU scale-up，不是 GB200/GB300 NVL72 那种成熟 rack-scale 域；MI450/MI455/Helios 仍需 HBM4、Vulcano、UALink/Ultra Ethernet、液冷和系统软件共同成熟。
+3. **估值逻辑：** 市场正在用“2027 年 AI GPU 年收入 tens of billions + EPYC 高增长”给 AMD 定价，而不是用 2025 年利润定价。因此任何 MI450/Helios 订单延迟、ROCm 迁移失败、HBM4 供应不足或客户削减 capex，都会放大股价波动。
+
+行业论坛和技术社区的低权重观察也基本围绕这三点：AMD 的软件和网络栈在进步，但与 NVIDIA 全栈相比仍是追赶者；OpenAI/Meta 的 6GW 协议带有强战略意义，但能否等同“不可取消 backlog”需要折价处理；MI350 的大 HBM 容量在推理上有优势，但 rack-scale 训练仍需要看 MI450/Helios。
+
+### 1.3 最近 3 年重大业务变动、转型与收购
+
+| 时间 | 事件 | 对 AMD 的意义 |
+|---|---|---|
+| 2023-2024 | MI300X/MI300A 开始商业化，AMD 进入数据中心 AI GPU 主战场 | 把 AMD 从 CPU 份额故事扩展成 AI 加速器供应商 |
+| 2024-07 | AMD 宣布收购 Silo AI，交易价值约 6.65 亿美元，用于扩展企业 AI 软件与模型部署能力 | 补齐 ROCm、企业 AI 解决方案和客户迁移短板；收入贡献小，战略价值在软件生态 |
+| 2024-08 至 2025-03 | AMD 宣布并完成收购 ZT Systems，交易价值约 49 亿美元；随后保留 rack-scale AI 设计和客户 enablement 能力 | 核心不是进入低毛利制造，而是拿到 hyperscale rack 设计、验证、NPI 和客户部署经验 |
+| 2025-10 | AMD 完成将 ZT Systems 数据中心基础设施制造业务出售给 Sanmina | 维持 fabless/asset-light 逻辑，同时保留 AI rack 设计能力；Sanmina 成为 NPI/制造伙伴 |
+| 2025-06 | Advancing AI 2025 发布 MI350、ROCm 7、Helios/MI400 路线 | 年度 cadence 从单 GPU 升级为 GPU + CPU + NIC + rack |
+| 2025-10 | AMD 与 OpenAI 宣布 6GW、多代 Instinct GPU 协议，首个 1GW MI450 部署从 2026H2 开始 | 最大战略背书之一；AMD 称将带来 tens of billions 美元收入，但实际收入取决于里程碑、交付和验收 |
+| 2025-10 | Oracle 宣布 OCI 将在 2026Q3 起部署 50,000 颗 MI450 GPU 的公开 AI supercluster | 第一个明确数量的 MI450 hyperscaler 公共云项目 |
+| 2026-02 | AMD 与 Meta 宣布最高 6GW Instinct GPU 多代协议，首个 1GW 从 2026H2 开始，使用定制 MI450-based GPU、EPYC Venice、ROCm、Helios | 说明 AMD 已进入 Meta 的长期 AI infrastructure roadmap；Meta 还获得最多 1.6 亿股 performance-based warrant |
+| 2026-03 | Samsung 与 AMD 签 MOU，围绕 MI455X 的 HBM4 主供、Venice DDR5、可能 foundry/advanced packaging 进一步合作 | MI455X/Helios 的 HBM4 供应链验证信号；但 MOU 仍不是已锁死的量产产能披露 |
+| 2026-05 | Q1 2026 财报确认 Data Center 成为收入和利润主驱动，Q2 指引 $11.2B 收入、约 56% non-GAAP GM | 财报已从“AI 叙事”进入“收入和自由现金流兑现”阶段 |
+
+### 1.4 产业链定位
+
+AMD 处在 AI 数据中心价值链的最上游设计层，但不是最强控制层：
+
+| 产业链环节 | AMD 位置 | 定价权 |
+|---|---|---|
+| AI GPU/加速器设计 | 直接竞争 NVIDIA；高于 Intel Gaudi 和多数小型 ASIC 厂 | 中高。受 NVIDIA 生态压制，但第二供应源、大 HBM 容量和客户多供价值提升议价 |
+| 数据中心 CPU | EPYC 主要竞争 Intel Xeon、Arm server CPU、NVIDIA Grace/Vera | 高。EPYC 已有份额和性能优势，但云厂自研 Arm 会限制长期份额上沿 |
+| Rack-scale platform | Helios 是 NVIDIA NVL72 之外最重要的开放 rack 路线之一 | 中。客户愿意多供，但交付、软件和互联成熟度还需证明 |
+| 网络/DPU/AI NIC | Pensando/Pollara/Vulcano 追赶 NVIDIA ConnectX/BlueField、Broadcom/Marvell | 中低到中。2026 仍是生态导入期；2027 随 Helios 放量才可能提升 |
+| HBM/先进封装 | 重要买方，不是供应商 | 定价权弱。需要提前锁定 Samsung/SK hynix/Micron HBM 和 TSMC/Samsung/OSAT 封装 |
+| 软件生态 | ROCm 是 CUDA 之外最重要开放 GPU 软件栈之一 | 中低。进步明显，但客户迁移成本仍是核心风险 |
+
+## 二、最新估值、利润率和资产负债表
+
+### 2.1 估值和交易数据快照
+
+下表把交易数据和财务口径分开。股价/市值会盘中变动，倍数不同数据源存在几分钟到数小时差异。
+
+| 指标 | 最新数据 | 日期/时点 | 口径 |
+|---|---:|---|---|
+| 股价 | $466.93 | 2026-06-11 15:32 UTC 附近 | 实时/近实时行情工具快照 |
+| 市值 | 约 $771.1B | 2026-06-11 15:32 UTC 附近 | 股价 × 稀释/流通股本近似 |
+| 过去 12 个月收入 | $37.45B | 截至 2026Q1 TTM | Q2-Q4 2025 + Q1 2026 |
+| 过去 12 个月收入增速 | 约 +35.0% | 截至 2026Q1 TTM | 对比 Q2-Q4 2024 + Q1 2025 |
+| 最新季度收入增速 | +38% YoY | Q1 2026，季度截至 2026-03-28 | AMD 官方 |
+| GAAP 毛利率 | 53% | Q1 2026 | AMD 官方 |
+| Non-GAAP 毛利率 | 55% | Q1 2026 | AMD 官方 |
+| TTM 毛利率 | 约 53.1% | 截至 2026Q1 TTM | gross profit $19.87B / revenue $37.45B |
+| TTM 净利率 | 约 13.4% | 截至 2026Q1 TTM | net income $5.01B / revenue $37.45B |
+| Trailing PE | 约 150.9-153.3x | 2026-06-11 | StockAnalysis 页面 150.86x；行情快照按 $466.93 / EPS $3.05 约 153x |
+| Forward PE | 约 51.9x | 2026-06-11 11:19 EDT | StockAnalysis |
+| PS | 约 19.7-20.6x | 2026-06-11 | StockAnalysis 19.70x；按行情市值/TTM 收入重算约 20.6x |
+| Forward PS | 约 13.27x | 2026-06-11 11:19 EDT | StockAnalysis |
+| 自由现金流 | $2.566B | Q1 2026 | AMD 官方；FCF margin 25% |
+
+估值判断：AMD 当前不是传统半导体估值，而是把 2027-2028 年 MI450/Helios、OpenAI/Meta/Oracle、EPYC AI CPU 需求和毛利率提升提前定价。以 TTM 净利和当前市值看非常贵；以 2027 年可能出现的 $20B+ EPS 战略目标和 tens of billions 数据中心 AI 收入口径看，市场是在交易“第二 AI 基建平台”的成功概率。
+
+### 2.2 资产负债表和财务健康度
+
+| 项目 | Q1 2026 | Q4 2025 | 变化/判断 |
+|---|---:|---:|---|
+| 现金及短期投资 | $12.347B | $10.552B | 增加 $1.795B，现金缓冲强 |
+| 总债务 | $3.224B | $3.222B | 基本不变 |
+| 净现金 | 约 $9.123B | 约 $7.330B | 净现金公司，财务风险低 |
+| 流动资产 | $28.628B | $26.947B | 随业务扩张和短投增加 |
+| 流动负债 | $10.506B | $9.455B | current ratio 约 2.73x |
+| 存货 | $8.045B | $7.920B | 基本持平；需观察 AI GPU/HBM 和 PC/游戏需求变化 |
+| 应收账款 | $6.035B | $6.315B | 环比下降，回款较好 |
+| 股东权益 | $64.462B | $62.999B | 资产负债表厚，但 goodwill/intangibles 很大 |
+| 自由现金流 | $2.566B | $2.082B | Q1 创纪录，说明高增长不是纯应收拉动 |
+
+财务健康度评估：**健康，且具备战略投入能力。** AMD 是净现金、轻资产、高 FCF 公司的结构；短期偿债压力低，Q1 经营现金流和 FCF 很强。主要财务风险不是债务，而是三类经营风险：
+
+1. **库存/供应链承诺风险：** 高端 AI GPU 需要提前锁 HBM、先进封装和基板；若客户验收延迟或出口限制变化，可能再次出现类似 MI308 的库存/费用波动。
+2. **毛利率爬坡风险：** AI GPU 初期毛利低于 NVIDIA；如果 AMD 为换取 hyperscaler 份额大幅折价，收入高增未必全部转化为利润。
+3. **无形资产和并购整合风险：** Xilinx、Pensando、Silo AI、ZT Systems 等带来较大 goodwill/intangibles；战略上合理，但若 AI 软件和 rack 设计不能带动收入，估值承压会放大。
+
+## 三、最新和最近四次财报
+
+### 3.1 五个季度财报总表
+
+单位：收入/利润为十亿美元；segment operating margin 为各业务 operating income / segment revenue。AI 数据中心收入占比为估算，因为 AMD 不披露 Instinct GPU 单独收入；估算只用于投资建模，不作为公司披露数字。
+
+| 财报季度 | 总收入 / YoY | GAAP GM / Non-GAAP GM | Data Center 收入 / YoY / Segment OPM | Client / Gaming / Embedded 收入 | 订单、交期、backlog 和取消率线索 | AI 数据中心收入占比估算 | 关键信息 |
+|---|---:|---:|---:|---:|---|---:|---|
+| Q1 2026（截至 2026-03-28，发布 2026-05-05） | $10.253 / +38% | 53% / 55% | $5.775 / +57% / 27.7% | Client $2.885；Gaming $0.720；Embedded $0.873 | AMD 不披露 backlog。电话会称 server CPU +50% YoY、Q2 server CPU 预计 +70% YoY；AI GPU 因 China transition 环比小降但 Q2 与 server 均 double-digit sequential growth；MI450/Helios lead customer forecasts exceeding initial expectations | 估算 Instinct/AI GPU $2.2-2.8B，占总收入 21-27%；Data Center 总占比 56.3% | Data Center 已是主驱动；OpenAI/Meta/Oracle 等把 2026H2-2027 可见度明显拉高；Q2 指引 $11.2B、non-GAAP GM 56% |
+| Q4 2025（截至 2025-12-27，发布 2026-02-03） | $10.270 / +34% | 54% / 57% | $5.380 / +39% / 32.6% | Client $3.097；Gaming $0.843；Embedded $0.950 | Q4 包含约 $390M MI308 China revenue，并释放约 $360M 之前库存/相关 charge；剔除这些，non-GAAP GM 约 55%。客户侧 OpenAI/Oracle/Helios/HPE 等已进入公告期 | 估算 Instinct/AI GPU $2.4-3.2B，占总收入 23-31%；其中 MI308 China $0.39B 是一次性/政策敏感 | 2025 全年收入 $34.639B、Data Center $16.635B；全年 Data Center +32%；Q4 是 2026 AI 订单叙事的起点 |
+| Q3 2025（截至 2025-09-27，发布 2025-11-04） | $9.246 / +36% | 52% / 54% | $4.341 / +22% / 24.7% | Client $2.750；Gaming $1.298；Embedded $0.857 | 本季度没有 MI308 China revenue。AMD 公告 OpenAI 6GW、OCI 50,000 MI450 Q3 2026、Helios OCP ORW、Cisco/G42 MI355X、IBM/Zyphra MI350X | 估算 Instinct/AI GPU $1.7-2.4B，占总收入 18-26% | “客户公告”显著强于当期收入；Q3 后市场开始把 2027 AI GPU 看成 AMD 估值核心 |
+| Q2 2025（截至 2025-06-28，发布 2025-08-05） | $7.685 / +32% | 40% / 43%；剔除 MI308 charge 后 non-GAAP GM 约 54% | $3.240 / +14% / -4.8% | Client $2.499；Gaming $1.122；Embedded $0.824 | 美国出口管制导致 MI308 data center GPU 约 $800M 库存及相关 charge；Q2 是政策冲击和库存风险的样本 | 估算 Instinct/AI GPU $0.9-1.5B，占总收入 12-20%；剔除 export shock 后 underlying 更高 | MI350 开始成为下半年主线；Q2 财报提醒：AI GPU 不是没有库存/政策风险 |
+| Q1 2025（截至 2025-03-29，发布 2025-05-06） | $7.438 / +36% | 50% / 54% | $3.674 / +57% / 25.4% | Client $2.294；Gaming $0.647；Embedded $0.823 | AMD 关闭 ZT Systems 收购；ROCm 对 Llama 4、Gemma 3、DeepSeek-R1 等加强支持；Q2 指引受 MI308 export charge 影响 | 估算 Instinct/AI GPU $1.3-1.9B，占总收入 17-26% | 数据中心增长已明确，但 AI GPU、EPYC、Xilinx/FPGA/DPU 仍混在 segment 内，需要估算拆分 |
+
+### 3.2 财报趋势解读
+
+1. **收入重心快速转向 Data Center。** Q1 2026 Data Center 收入 $5.775B，占总收入 56.3%，同比 +57%；Q1 2025 占比 49.4%，Q2 2025 因出口 charge 降到 42.2%，Q3/Q4 又回到 47-52%。
+2. **EPYC 是低估的 AI 基建受益项。** Q1 电话会称 server CPU 收入连续第四个季度创新高、同比 +50% 以上；agentic AI 和 inference 让 CPU 不再只是“配件”，而是数据处理、调度和 GPU feeder。
+3. **AI GPU 不披露单项收入，但订单可见度明显增强。** 2025Q3-Q1 2026 连续出现 OpenAI、Oracle、Meta、HPE、Cisco/G42、Samsung 等公开锚点；这些不等同 backlog，但使 2026H2-2027 收入模型有了客户项目名和交付窗口。
+4. **毛利率被产品结构和出口政策强烈扰动。** Q2 2025 因 MI308 export control charge，non-GAAP GM 只有 43%；剔除后约 54%。Q4 2025 反向释放库存 reserve，non-GAAP GM 到 57%；Q1 2026 回到 55%，Q2 指引 56%。
+5. **经营现金流改善真实。** Q1 2026 FCF $2.566B，FCF margin 25%；这比单纯账面收入更重要，说明 Data Center 扩张目前没有被应收和存货严重吞噬。
+
+## 四、2026 最新指引、业务收入占比和重点产品
+
+### 4.1 Q2 2026 指引和当前业务结构
+
+AMD 对 Q2 2026 指引：收入约 $11.2B，正负 $0.3B；中点同比约 +46%、环比约 +9%；non-GAAP gross margin 约 56%。管理层称 Q2 sequential growth 由 Data Center 和 Embedded 的双位数增长驱动，Client/Gaming modest growth。
+
+Q1 2026 最新收入结构：
+
+| 业务 | Q1 2026 收入 | 占总收入 | YoY | Segment operating income | Segment OPM | 重要性 |
+|---|---:|---:|---:|---:|---:|---|
+| Data Center | $5.775B | 56.3% | +57% | $1.599B | 27.7% | 绝对核心，包含 EPYC、Instinct、DPU/AI NIC、data center FPGA/adaptive SoC |
+| Client | $2.885B | 28.1% | +26% | 与 Gaming 合并 $575M | Client+Gaming 15.9% | 现金流和份额故事，但非 AI 数据中心主线 |
+| Gaming | $0.720B | 7.0% | +11% | 与 Client 合并 | 与 Client 合并 | console 周期和 Radeon；低优先级 |
+| Embedded | $0.873B | 8.5% | +6% | $0.338B | 38.7% | 毛利高，边缘 AI/工业/通信有小期权，但收入弹性较低 |
+
+最突出的业务：**Data Center。** 其中又分两条主线：
+
+1. **EPYC server CPU：** 已经高增长、毛利和现金流更稳定，AI inference/agentic workloads 抬高 CPU TAM。
+2. **Instinct AI GPU + Helios：** 波动更大，但决定估值上沿。MI350 是 2026 真实放量产品，MI450/MI455/Helios 是 2027 估值产品。
+
+### 4.2 产品矩阵：重点、潜力和跳过项
+
+| 产品/业务 | 当前阶段 | 是否重点 | 原因 |
+|---|---|---|---|
+| MI350/MI355X | 2025H2-2026 放量，Q1 2026 已贡献 Data Center 增长 | 重点 | 288GB HBM3E、8TB/s；2026 年 AMD AI GPU 收入的主力；对 inference 和第二供应源价值高 |
+| MI450/MI455X / MI400 family | 2026H2 sampling/shipments，2027 主放量 | 最高重点 | 432GB HBM4、19.6-20TB/s、Helios 72 GPU；OpenAI/Meta/OCI/HPE/Samsung 等客户/供应链锚点 |
+| Helios rack-scale platform | 2026H2 导入，2027 验收放量 | 最高重点 | AMD 首个真正 rack-scale AI 参考平台；决定 AMD 能否从 GPU 供应商变成 AI infrastructure platform |
+| EPYC Turin / Venice / Verano | Turin 已放量，Venice 2026 ramp，Verano 后续 | 重点 | AI host CPU、GPU feeder、数据调度、rack CPU attach；Q1 server CPU +50% YoY，Q2 预计 +70% YoY |
+| Pensando Pollara / Vulcano AI NIC | 2026 设计导入，随 Helios 放量 | 潜力小业务 | 若 Helios 形成第二 rack 生态，AI NIC/DPU 可从小收入变成高毛利 attach |
+| ROCm 7 / software enablement / Silo AI | ROCm cadence 加速，open model day-zero 支持增加 | 潜力小业务 | 直接收入不大，但决定 GPU 可用性和客户迁移成本，是 AMD 最大非硬件瓶颈 |
+| ZT Systems design/NPI capability | 制造业务已卖给 Sanmina，保留设计/customer enablement | 潜力小业务 | 帮 AMD 做 rack 级验证、NPI 和客户部署，不应按低毛利制造收入估值 |
+| Versal / Adaptive SoC / FPGA / embedded AI | Embedded 复苏，设计赢单增长 | 次重点 | 高毛利但增长不如 Data Center AI；在边缘 AI、通信、A&D 有价值 |
+| Ryzen AI PC | Client 增长，AI PC 叙事存在 | 跳过主分析 | 与 AI 数据中心无直接强绑定，收入弹性低于 Instinct/EPYC |
+| Radeon gaming GPU | Q1 gaming 增长，但消费 GPU 周期 | 跳过主分析 | HBM/数据中心无关，受消费需求和显存成本影响 |
+| Semi-custom console | console cycle 中后段 | 跳过主分析 | 低增长/周期性，不是 2026 AMD 估值核心 |
+| 传统 FPGA/工业嵌入式非 AI | 稳定但较慢 | 跳过主分析 | 毛利好但体量/增速不足以决定股价 |
+
+## 五、关键高增长产品当前收入贡献、增速和战略评分
+
+评分：1=弱，5=极强。收入贡献为当前年度化或 Q1 2026 近似估计，因 AMD 不披露产品级收入，均需视为模型估算。
+
+| 高增长/关键业务 | 当前收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| MI350/MI355X Instinct GPU | Q1 2026 约 $1.5-2.5B；2026 年化 $8-18B | 高双位数到三位数，取决于中国收入剔除口径 | 4 | 4 | 4 | 3 | 2026 年 AMD AI GPU 主力，价值在第二供应源和大内存推理；短板是 scale-up 域和 ROCm |
+| MI450/MI455X / MI400 family | Q1 2026 基本无收入；2026H2 开始 shipment | 2026 低基数爆发，2027 决定公司上沿 | 5 | 5 | 5 | 3-4 | OpenAI/Meta 6GW、OCI 50k GPU 是强需求信号；供给和验收是瓶颈 |
+| Helios rack-scale AI platform | Q1 2026 基本无收入；设计/NPI 贡献间接体现 | 2026H2-2027 可能极高 | 5 | 5 | 5 | 3 | 若成功，AMD 才真正进入 rack-scale platform；若失败，AMD 仍只是 GPU 第二供应商 |
+| EPYC server CPU（Turin/Venice/Verano） | Q1 2026 Data Center 中估算 $3.0-3.6B | Q1 server CPU +50% YoY，Q2 预计 +70% YoY | 4 | 5 | 4 | 4 | 最确定、现金流质量最好；AI workloads 抬高 CPU feeder/host 需求 |
+| Pensando / Pollara / Vulcano / AI NIC-DPU | Q1 2026 估算 <$0.5B | 低基数高增，2027 随 Helios 放量 | 3-4 | 4 | 3 | 3 | 当前小，但如果开放 rack 成型，AI NIC/DPU attach 可成高毛利小业务 |
+| ROCm / software / Silo AI | 直接收入很小，间接影响 GPU 销售 | 开发投入快速增加 | 5 | 5 | 2 | 2-3 | 对硬件收入是乘数，不是独立利润池；ROCm 成败决定客户迁移成本 |
+| Embedded/adaptive AI | Q1 2026 $0.873B segment，AI 子集较小 | +6% YoY | 2 | 2 | 2 | 4 | 毛利高但低 beta；不作为 AI 数据中心主线 |
+
+当前最重要的事实是：AMD 的订单/需求可见度已经很强，但官方仍没有披露 backlog/bookings。应把 OpenAI/Meta/OCI 等看作“高质量 demand proxy”，而不是完全等同不可取消订单。真正要跟踪的是：2026H2 是否按期发货、客户是否验收、是否出现云实例/训练集群真实使用、AMD 是否确认 2027 年 AI GPU revenue run-rate。
+
+## 六、关键产品一年后收入预测：基准、乐观、极度乐观
+
+预测窗口：2026-06-11 至 2027-06-10。金额为 AMD 可确认收入或近似产品收入，不是全行业市场规模。
+
+| 产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 | 关键验证点 |
+|---|---:|---:|---:|---|
+| MI350/MI355X | 一年收入 $12-22B；增速 +60-120%；重要性 4；供需 4；溢价 3 | $22-34B；增速 +120-220%；重要性 4；供需 4-5；溢价 3-4 | $34-48B；增速 +220%+；重要性 4；供需 5；溢价 4 | MI355X 云实例、Meta/Oracle/HPE/NeoCloud 采购、ROCm utilization、HBM3E allocation |
+| MI450/MI455X / Helios | 一年收入 $6-15B；2026H2 小批量到低量产；重要性 5；供需 5；溢价 3 | $15-30B；OCI 50k + OpenAI/Meta 首批 GW 加速；重要性 5；供需 5；溢价 3-4 | $30-55B；客户验收提前，2027 年中 run-rate 已经 tens of billions；重要性 5；供需 5；溢价 4 | OpenAI/Meta 1GW milestone、OCI Q3 2026、Samsung HBM4、Vulcano/UALink、rack acceptance |
+| EPYC server CPU | 一年收入 $14-20B；增速 +45-75%；重要性 4；供需 4；溢价 4 | $20-28B；AI host CPU demand 超预期；重要性 4；供需 4；溢价 4-5 | $28-38B；Venice/Verano 被多家 hyperscaler 作为 AI rack 标准 CPU；重要性 5；供需 5；溢价 5 | Q2 server CPU +70% YoY 是否兑现、Venice production ramp、云实例、Meta lead customer |
+| Pensando/Vulcano/Pollara AI NIC-DPU | 一年收入 $0.8-1.8B；重要性 3；供需 3；溢价 3 | $1.8-4B；Helios attach 提前；重要性 4；供需 4；溢价 3-4 | $4-8B；开放 rack 生态成型，800G/UALoE/UEC attach 快速提升；重要性 4；供需 4-5；溢价 4 | Vulcano 800G 量产、Helios network topology、Celestica/HPE/Oracle design-in |
+| ROCm/software/Silo AI | 直接收入 <$1B；间接支撑 $20B+ GPU 收入 | 直接 $1-2B；显著缩短客户迁移周期 | 直接 $2-4B；形成企业 AI enablement 服务层 | MLPerf、vLLM/PyTorch/Triton、客户 production workloads、开发者生态 |
+| Embedded/adaptive AI | 一年收入 $3.8-4.2B segment；低个位到低双位增长 | $4.2-4.8B | $4.8-5.5B | 工业/通信/A&D 复苏、边缘 AI 设计赢单 |
+
+公司层面一年预测：
+
+| 口径 | 未来一年总收入 | 未来一年 Data Center 收入 | 未来一年 AI GPU/Helios 收入 | 毛利率趋势 | 判断 |
+|---|---:|---:|---:|---|---|
+| 基准 | $52-62B | $28-36B | $18-30B | non-GAAP GM 55-58% | Q2 指引兑现，H2 MI350 强，MI450 小批量贡献，EPYC 高增 |
+| 乐观 | $62-78B | $36-50B | $30-50B | non-GAAP GM 58-62% | OpenAI/Meta/OCI 首批顺利，EPYC/Venice 超预期，AI GPU ASP 和良率改善 |
+| 极度乐观 | $78-100B | $50-70B | $50-75B | non-GAAP GM 62-66% | MI450/Helios 提前形成 rack-scale 第二生态，客户多 GW 采购快速转收入 |
+
+## 七、BOM、每 MW / 每 rack / 每 GPU / 每 optical port 内容量与价格传导
+
+### 7.1 MI350/MI355X：2026 年收入主力
+
+| 拆分维度 | 内容量/估算 | 价格和毛利传导 |
+|---|---|---|
+| 每 GPU HBM | 官方 288GB HBM3E、8TB/s。若采用 36GB HBM3E stack，等效约 8 stack；实际封装细节以供应链为准 | HBM3E 是 BOM 最大项之一。按 $8-20/GB，HBM 成本约 $2.3-5.8k/GPU；短缺时 AMD 需让利或传导给客户 |
+| 每 GPU package | CDNA4、TSMC 3nm/6nm chiplet、2.5D/OAM、Infinity Fabric | 先进封装/ABF/测试估算 $1.5-4k/GPU；良率和 CoWoS/2.5D allocation 决定交付 |
+| 每 8-GPU 平台 | 官方 MI355X platform brochure 显示 8 OAM 互联、总 2.3TB coherent/shared HBM，Infinity Fabric mesh | 8-GPU 平台 ASP 估算 $200-350k；系统/OEM 再叠加 CPU、内存、NIC、SSD、冷却、电源 |
+| 每 rack | 非 Helios 标准 rack；按 8-GPU server、8-16 台/rack 估计为 64-128 GPU/rack，18.4-36.9TB HBM | 高密配置可能 80-160kW/rack，风冷/液冷混合；rack ASP 可 $2-6M，取决是否包含整机、网络、存储 |
+| 每 IT MW | 按 100-180kW/rack，约 5.5-10 rack/MW，即 350-1,280 GPUs/MW；HBM 约 100-369TB/MW | AMD GPU revenue 估算 $10-45M/MW；实际取决 GPU TDP、rack 功率、PUE 口径和 ASP |
+| 每 optical port | MI350 scale-out 行业拆解多指向 400G/GPU 量级，部分配置可用 800G；AMD 直接捕获 NIC/DPU 价值，不捕获全部光模块价值 | 每 400G/800G port AMD 可捕获 NIC/DPU/board/IP 约 $100-600；光模块 $300-1,200 多由光模块供应商捕获 |
+
+当前产能能力（美元计）：基准认为 2026 MI350/MI355X 可支持 $14-22B AMD/行业等效产能释放，乐观 $22-34B，极度乐观 $34-48B。被供应链采纳程度：中高，已有 OEM/云伙伴、OCI MI355X shapes、Meta/Oracle/HPE 等生态，但不是 NVIDIA 那种默认标准。认证阶段：生产放量/客户生产部署阶段，关键认证在 ROCm workload、云实例可用区、系统稳定性和 HBM3E 供应。
+
+### 7.2 MI450/MI455X / Helios：2027 估值核心
+
+| 拆分维度 | 内容量/官方或估算 | 价格和毛利传导 |
+|---|---|---|
+| 每 GPU HBM | 官方 MI450/MI455X 最高 432GB HBM4、19.6-20TB/s。stack 数未披露；若 36GB stack 则约 12 stack，若 72GB stack 则约 6 stack | HBM4 是最大瓶颈和最大成本弹性。按 $14-34/GB，HBM4 成本可达 $6.0-14.7k/GPU；早期短缺时更高 |
+| 每 GPU compute | 官方 MI400 family 指向 40 PF FP4、20 PF FP8；MI455X 是 Helios 关键构件 | GPU ASP 估算 $45-85k；在大客户多 GW 协议中可能折价，但供应紧张时价格传导能力上升 |
+| 每 rack | 官方 Helios 72 GPU、31TB HBM4、1.4PB/s aggregate memory bandwidth、1.4 exaFLOPS FP8、2.9 exaFLOPS FP4、up to 260TB/s scale-up、43TB/s Ethernet scale-out | Rack ASP 估算 $3-7M。AMD 捕获 GPU + EPYC + Pensando/NIC + reference design 价值；ODM/OEM 捕获系统集成低毛利 |
+| 每 IT MW | 官方未披露功率。按 120-250kW/rack，高密 AI 机房约 4-8 rack/MW，即 288-576 GPUs/MW、124-249TB HBM4/MW | AMD revenue 估算 $18-55M/MW；若客户按 GW 部署，1GW 可对应 $18-55B AMD 硬件机会，但需按多年、分阶段、验收折现 |
+| 每 optical port | Helios scale-out 43TB/s 等效 344Tb/s；若按 800G 端口等效约 430 个 800G ports/rack，实际端口数取决拓扑、冗余和汇聚 | 光端口价值主要在 800G/1.6T 光模块、DSP、switch、NIC。AMD 捕获 Vulcano/AI NIC 与部分系统价值，光模块供应商捕获更多光学 BOM |
+| 供电/散热 | OCP Open Rack Wide、double-wide rack、backside quick-disconnect liquid cooling；全 rack 液冷是默认工程前提 | 液冷、power shelf、母线、CDU、现场验收决定收入确认；单 GPU 发货不等于可用 rack |
+
+当前产能能力（美元计）：2026H2 基准 $3-10B 产能释放/收入机会，乐观 $10-22B，极度 $22-40B；2027 基准 $35-60B，乐观 $60-95B，极度 $95-140B。被供应链采纳程度：已经有 OpenAI、Meta、OCI、HPE、Samsung、Celestica、TCS 等强锚点，但仍处工程导入到初始量产阶段。认证阶段：lead customer sampling、HBM4 MOU、OCI Q3 2026 public supercluster、Meta/OpenAI 1GW milestones、Helios rack acceptance 是关键节点。
+
+### 7.3 EPYC CPU：AI rack 的 feeder 和控制面
+
+| 拆分维度 | 内容量/估算 | 价格和毛利传导 |
+|---|---|---|
+| 每 AI GPU attach | 传统 8-GPU server 通常 1-2 颗高端 CPU；rack-scale Helios 会把 EPYC Venice 与 GPU、NIC、网络和液冷整合 | CPU 在 AI server BOM 中约 4-8%；高核数/高频/大内存 SKU 可更高 |
+| 每 rack | 取决于 tray 设计。若 72-GPU rack 以 8-GPU tray 估计，可能 9 个 compute tray，每 tray 1-2 CPU，即 9-18 CPU/rack；官方未披露确数 | EPYC ASP 估算 $5-15k/CPU；每 rack CPU revenue 约 $50-250k，是 GPU revenue 的小比例但毛利高 |
+| 每 MW | 按 4-8 Helios rack/MW，约 36-144 CPU/MW | AMD CPU revenue 约 $0.3-2.0M/MW；价值更在保持 GPU 利用率和平台绑定 |
+| 供给/认证 | Venice 已宣布 TSMC 2nm production ramp；Meta 是 Venice/Verano lead customer；AMD 与 Samsung 合作 DDR5/HBM4 | CPU 供需比 GPU 更健康，但高端 EPYC 与先进制程/封装/基板仍需排产 |
+
+当前产能能力（美元计）：EPYC server CPU 2026 一年可支持 $14-20B revenue，乐观 $20-28B。被供应链采纳程度：高，AWS、Google Cloud、Azure、Tencent、Meta 等都在扩展 EPYC footprints。认证阶段：Turin 已生产部署；Venice 进入 production ramp 和客户验证；Verano 是后续 AI-optimized CPU 期权。
+
+### 7.4 Pensando / Pollara / Vulcano / AI NIC-DPU
+
+| 拆分维度 | 内容量/估算 | 价格和毛利传导 |
+|---|---|---|
+| 每 GPU / server attach | MI350 时代 NIC attach 不一定全归 AMD；Helios 设计中 Vulcano/Pensando 更强绑定 | NIC/DPU/AI NIC ASP 估算 $300-2,000/port 或更高，取决 400G/800G、DPU、板卡与软件 |
+| 每 rack | Helios 43TB/s Ethernet scale-out 等效大量 800G 端口；Celestica/HPE/Broadcom/Oracle 生态决定实际拓扑 | AMD 可捕获 NIC/DPU 芯片和部分板卡价值；switch ASIC、光模块更多由 Broadcom/Marvell/Arista/光模块链捕获 |
+| 每 optical port | 800G 光口的全链价值包括 NIC SerDes、retimer、DSP、optical module、fiber、switch port。AMD 不是全链条供应商 | AMD 捕获较小但高毛利的一段；真正光模块 BOM 不应算进 AMD revenue |
+| 认证 | UEC/UALink/ULink over Ethernet 生态仍在导入 | 2026 看 design-in，2027 看第一代开放 rack 规模 deployment |
+
+## 八、一年后产能能力、供应链采纳和认证阶段预测
+
+| 产品/业务 | 基准：一年后产能/采纳/认证 | 乐观：一年后产能/采纳/认证 | 极度乐观：一年后产能/采纳/认证 |
+|---|---|---|---|
+| MI350/MI355X | 年化产能 $18-30B；主要 hyperscaler/OEM/NeoCloud 稳定采用；云实例和生产推理增加 | 年化产能 $30-45B；Meta/Oracle/AI-native 客户扩容；ROCm 迁移周期明显缩短 | 年化产能 $45-60B；成为 NVIDIA 之外默认第二 GPU；供不应求导致 ASP 稳定 |
+| MI450/MI455X / Helios | 年化产能 $20-40B；OpenAI/Meta/OCI 首批完成早期验收；2027H1 仍在 ramp | 年化产能 $40-75B；OCI 50k、OpenAI/Meta 1GW 进入批量验收；HPE/Celestica/TCS 多点开花 | 年化产能 $75-120B；Helios 成为事实第二 rack 标准；多 GW 订单提前锁产能 |
+| EPYC Venice/Verano | 年化产能 $15-25B server CPU revenue；Venice 大客户 ramp；Meta lead customer 明确 | $25-35B；AI host CPU attach 和高端 SKU 供需偏紧 | $35B+；Verano/AI optimized EPYC 与 Helios 强绑定，平台毛利率上行 |
+| Pensando/Vulcano/AI NIC | 年化 $1-3B；Helios design-in，部分云集群导入 | $3-6B；800G Vulcano 随 Helios 出货，UEC/UALink ecosystem 认可 | $6-10B；开放 scale-up/scale-out fabric 成规模，AMD 网络从配套变战略收入 |
+| ROCm/software | 客户迁移工具和 day-zero open model 支持改善；直接收入小 | ROCm 7/后续版本让主流 inference workload 达生产标准 | 开发者生态明显提升，客户不再把 ROCm 视为最大采购阻力 |
+
+## 九、订单积压、供给和未来一年业务增速
+
+### 9.1 已确认需求代理
+
+AMD 不披露 backlog/bookings，也没有像服务器 OEM 那样披露订单积压。因此本报告用客户项目名、部署规模、交付窗口、供应链锁定和财报措辞交叉推断。
+
+| 需求代理 | 公开内容 | 置信度 | 对收入含义 |
+|---|---|---:|---|
+| OpenAI 6GW | 2025-10 公告：OpenAI 将部署 6GW AMD GPU，首个 1GW MI450 2026H2 开始；AMD 称预计带来 tens of billions revenue；OpenAI 最多 160M 股 warrant 分里程碑 vest | 高方向，中金额 | 多年多代战略协议，强 demand signal；不等同 2026 一次性 backlog |
+| Meta 6GW | 2026-02 公告：最高 6GW Instinct GPU，首个 1GW 2026H2，定制 MI450-based GPU、Venice、ROCm、Helios；Meta 最多 160M 股 warrant | 高方向，中金额 | Meta 是 EPYC/Instinct 大客户；客户 roadmaps 已深度绑定 |
+| Oracle OCI 50,000 MI450 | 2025-10 Oracle 公告：2026Q3 起 OCI 首个公开 MI450 AI supercluster，初始 50,000 GPU，2027+ 扩展 | 高 | 这是最明确数量项目；按 $45-85k/GPU，GPU revenue 约 $2.25-4.25B，另有 EPYC/NIC/system attach |
+| Samsung HBM4 MOU | 2026-03：Samsung 和 AMD 围绕 MI455X HBM4 主供、Venice DDR5、Helios rack memory 合作 | 中高 | 供应链 readiness 信号，不等于全部 HBM4 产能已锁 |
+| HPE Herder / Helios | HPE 将用 MI430X + Venice 做 HLRS Herder，且推进 Helios open rack | 中高 | HPC/主权 AI 认证价值高，收入体量低于 hyperscaler |
+| Cisco/G42 | Cisco 将为 G42 部署使用 AMD MI350X 的 large-scale AI cluster | 中 | 主权 AI/中东 AI campus 需求信号；具体 GPU 数量未披露 |
+| TCS / India / NAVER / Upstage | 合作部署或共同开发 Helios/Instinct/EPYC 方案 | 中 | 企业和主权 AI 渠道扩展，短期收入较小但有生态意义 |
+
+### 9.2 取消率和 lead time 推断
+
+| 项目 | 当前判断 | 依据 |
+|---|---|---|
+| Backlog 披露 | 未披露 | AMD 官方财报没有 backlog/bookings 数字 |
+| 订单质量 | 高于普通 MoU，低于不可取消 backlog | OpenAI/Meta 带 warrants 和 milestones；OCI 有明确 50k 数量和 Q3 2026 时间 |
+| 取消率 | 基准低到中；乐观低；极度乐观极低 | AI capacity 紧缺、客户多供需求强；但若 NVIDIA Rubin/GB300 供应超预期或 AI capex 收缩，AMD 弹性订单更容易被推迟 |
+| Lead time | 高端 GPU/HBM4/Helios rack likely 2-4 个季度以上 | HBM4、先进封装、液冷 rack、现场验收、软件验证共同约束 |
+| 供给瓶颈 | HBM3E/HBM4、CoWoS/2.5D、ABF、system-level test、liquid cooling、Vulcano/UEC/UALink、ROCm workload migration | 本地行业调研与 AMD 风险披露一致 |
+
+### 9.3 未来一年业务增速三情景
+
+| 情景 | Data Center 增速 | AI GPU/Helios 增速 | EPYC 增速 | 公司总收入增速 | 关键假设 |
+|---|---:|---:|---:|---:|---|
+| 基准 | +50-90% | +80-160% | +45-75% | +39-65% | MI350 稳定放量，MI450/Helios 小批量到中批量，OpenAI/Meta/OCI 按初始窗口推进但收入确认谨慎 |
+| 乐观 | +90-160% | +160-300% | +75-120% | +65-110% | OCI 50k 按 Q3 开始交付，OpenAI/Meta 首批 1GW 供应链提前，Venice ramp 顺利，non-GAAP GM 58-62% |
+| 极度乐观 | +160-250% | +300%+ | +120%+ | +110-165% | Helios rack 2026H2 即大规模验收，HBM4 供应超预期，AMD 被多个 hyperscaler 作为第二标准平台，AI GPU 年化收入 $50B+ |
+
+## 十、竞争格局、技术主流性、替代方案和客户切换成本
+
+### 10.1 主要竞争对手
+
+| 领域 | AMD 对手 | AMD 优势 | AMD 劣势 |
+|---|---|---|---|
+| AI GPU/rack | NVIDIA H100/H200/B200/GB200/GB300/Rubin | 第二供应源、大 HBM 容量、开放标准、x86 CPU 协同、价格弹性 | CUDA/NVLink/NVSwitch 生态差距；NVIDIA rack-scale 已被大规模验证 |
+| 数据中心 CPU | Intel Xeon 6、NVIDIA Grace/Vera、AWS Graviton、Google Axion、Microsoft Cobalt、Ampere | EPYC 性能/能效/核数强，x86 生态成熟，云和企业份额持续提升 | 云厂自研 Arm 内部化；Intel 在企业采购和平台管理仍有基础 |
+| Custom ASIC | Broadcom/Google TPU、AWS Trainium/Inferentia、Microsoft Maia、Meta MTIA、Marvell custom silicon | AMD merchant GPU 更通用，客户无需自研完整软件栈 | Hyperscaler 自研 ASIC 在内部 workload 上可能更低成本，挤压 GPU 推理 |
+| AI NIC/DPU/网络 | NVIDIA ConnectX/BlueField/Spectrum、Broadcom、Marvell、Cisco、Arista、Credo/Astera | Pensando + EPYC + Instinct 可以做开放 rack 组合 | NVIDIA/Broadcom 生态和份额更强，AMD 网络仍需证明 |
+| 软件生态 | CUDA、NVIDIA AI Enterprise、Triton/CUDA libraries；云厂自研编译器 | ROCm 开源、PyTorch/vLLM/open model 支持改善 | CUDA 的开发者、模型、kernel、enterprise support 护城河仍最大 |
+
+### 10.2 AMD 新技术是否是未来主流
+
+结论：**部分会成为主流，整体是“第二主流”而不是“第一主流”。**
+
+1. **大 HBM 容量是主流方向。** MI350 288GB HBM3E、MI450/MI455 432GB HBM4 与推理、长上下文、MoE、agentic workloads 的需求一致。NVIDIA、TPU、Trainium、Maia、MTIA 也都在提高 HBM 容量/带宽。
+2. **Rack-scale 是主流方向。** Helios 72-GPU、OCP Open Rack Wide、液冷、scale-up/scale-out fabric 的方向正确。未来不是单卡竞争，而是 rack / pod / AI factory 竞争。
+3. **开放 Ethernet/UALink/UEC 是重要替代路线，但不是已赢的路线。** 客户希望摆脱 proprietary lock-in，但高端训练追求确定性。NVIDIA NVLink/NVSwitch 已经规模化，AMD open rack 需要 2026H2-2027 交付证明。
+4. **ROCm 是必要条件，不是充分条件。** ROCm 只要“够用”，AMD 可以凭供给和价格进入推理/部分训练；但要进入最高价值 frontier training，软件、通信库、调度、profiling、enterprise support 都要继续追赶。
+
+### 10.3 风险和替代方案
+
+| 风险 | 影响 | 观察指标 |
+|---|---|---|
+| NVIDIA Rubin/GB300 提前且供给充足 | AMD 第二供应源价值下降，客户可能推迟 MI450/Helios | Rubin/GB300 云实例、pricing、lead time、NVIDIA DC 指引 |
+| HBM4 供应不足或良率低 | MI455X/Helios 延迟，2027 上修失败 | Samsung/SK hynix/Micron HBM4 qualification、AMD HBM4 supply commentary |
+| ROCm/软件迁移慢 | 大客户只小规模试点，无法形成高利用率生产集群 | vLLM/PyTorch/Triton 性能、MLPerf peer-reviewed results、客户 production case |
+| Helios rack 可靠性/液冷/现场验收问题 | 订单转收入延迟，毛利下降 | OCI 50k 实际上线时间、OpenAI/Meta milestone、ODM/OEM feedback |
+| 客户 capex 或融资收缩 | 高 beta 订单最先被推迟 | hyperscaler capex guide、NeoCloud 融资利差、GPU 租赁价格 |
+| 出口管制变化 | 类似 MI308 的库存/charge 再现 | BIS 规则、中国 revenue、inventory charge |
+| Custom ASIC 成本优势扩大 | GPU 推理需求被内部芯片吸收 | Broadcom AI semiconductor revenue、TPU/Trainium/Maia/MTIA 云实例和 capex |
+
+### 10.4 客户替换成本
+
+| 客户类型 | 从 NVIDIA 换到 AMD 的成本 | AMD 成功切入路径 |
+|---|---:|---|
+| Frontier AI lab | 很高 | 从推理、特定模型、非最核心训练、价格/供给受限场景切入；OpenAI 是战略例外但仍需多代验证 |
+| Hyperscaler | 中到高 | 多供策略、内部工程团队强、能投入 ROCm 优化；Meta/Oracle 是最关键样板 |
+| NeoCloud | 中 | 更看供给、融资、TCO 和客户需求；若客户接受 AMD 实例，可快速放量 |
+| Enterprise/sovereign AI | 中 | HPE/TCS/Cisco/G42/HLRS 等 OEM/系统集成渠道能降低迁移难度 |
+| HPC/supercomputing | 中 | AMD 有 CPU+GPU 历史基础，MI430X/MI300A/MI355X 适合高精度和主权 AI |
+
+## 十一、投资结论
+
+AMD 现在的核心问题不是“有没有 AI 故事”，而是“能否把 AI 订单代理转成 rack-level 收入和利润”。公司已经具备四个强锚点：Q1 2026 Data Center $5.775B、OpenAI 6GW、Meta 6GW、Oracle 50,000 MI450。再加上 EPYC server CPU +50% YoY、Q2 server CPU 预计 +70% YoY，基本可以确认 AMD 已进入 AI 基建核心供应链。
+
+但投资上必须把 AMD 和 NVIDIA 区分开：NVIDIA 是事实上的第一平台，AMD 是高弹性的第二平台。AMD 的估值上行来自 MI450/Helios 兑现和 EPYC AI CPU 超预期；估值下行来自 ROCm 迁移慢、HBM4/先进封装不足、Helios 验收推迟、客户把 6GW 协议延后。
+
+本报告给出的结论：
+
+1. **当前基本盘：** 财务健康、净现金、FCF 强，Data Center 已超过半数收入；短期破产/流动性风险很低。
+2. **最确定增长：** EPYC server CPU + MI350/MI355X。它们已经在 2026 财报中体现。
+3. **最大弹性：** MI450/MI455X + Helios。OpenAI/Meta/OCI 让 2027 年“tens of billions annual data center AI revenue”成为可建模场景。
+4. **最大瓶颈：** ROCm/客户迁移、HBM4、CoWoS/2.5D、Vulcano/UALink/Ultra Ethernet、rack 液冷和现场验收。
+5. **最重要跟踪指标：** 2026Q2 Data Center 和 GM、OCI 50k MI450 是否按 Q3 2026 启动、OpenAI/Meta 1GW milestones、Samsung HBM4 qualification、Helios 云实例/客户训练集群上线、AMD 是否首次量化 AI GPU revenue run-rate。
+
+## 十二、主要资料来源
+
+### 联网公开资料
+
+- AMD Q1 2026 financial results, 2026-05-05: https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results
+- AMD Q1 2026 earnings transcript PDF: https://d1io3yog0oux5.cloudfront.net/_fc44e9493fa31b446a781ca0d36eb8e5/amd/db/841/9232/webcast_transcript/AMD_1Q_2026_Earnings.pdf
+- AMD Q4/FY2025 financial results: https://ir.amd.com/news-events/press-releases/detail/1276/amd-reports-fourth-quarter-and-full-year-2025-financial-results
+- AMD Q3 2025 financial results: https://ir.amd.com/news-events/press-releases/detail/1265/amd-reports-third-quarter-2025-financial-results
+- AMD Q2 2025 financial results: https://ir.amd.com/news-events/press-releases/detail/1257/amd-reports-second-quarter-2025-financial-results
+- AMD Q1 2025 financial results: https://ir.amd.com/news-events/press-releases/detail/1247/amd-reports-first-quarter-2025-financial-results
+- AMD and OpenAI 6GW strategic partnership, 2025-10-06: https://www.amd.com/en/newsroom/press-releases/2025-10-6-amd-and-openai-announce-strategic-partnership-to-d.html
+- AMD and Meta 6GW strategic partnership, 2026-02-24: https://www.amd.com/en/newsroom/press-releases/2026-2-24-amd-and-meta-announce-expanded-strategic-partnersh.html
+- Oracle and AMD 50,000 MI450 GPU AI supercluster, 2025-10-14: https://www.oracle.com/news/announcement/ai-world-oracle-and-amd-expand-partnership-to-help-customers-achieve-next-generation-ai-scale-2025-10-14/
+- AMD Helios blog / OCP Open Rack Wide: https://www.amd.com/en/blogs/2025/amd-helios-ai-rack-built-on-metas-2025-ocp-design.html
+- AMD MI355X product page: https://www.amd.com/en/products/accelerators/instinct/mi350/mi355x.html
+- AMD MI350 Series product page: https://www.amd.com/en/products/accelerators/instinct/mi350.html
+- AMD Advancing AI 2025 distribution deck: https://www.amd.com/content/dam/amd/en/documents/corporate/events/advancing-ai-2025-distribution-deck.pdf
+- Samsung and AMD HBM4 / MI455X collaboration, 2026-03-18: https://www.amd.com/en/newsroom/press-releases/2026-3-18-samsung-and-amd-expand-strategic-collaboratio.html
+- AMD / HPE Helios and Herder collaboration: https://ir.amd.com/news-events/press-releases/detail/1269/amd-and-hpe-expand-collaboration-to-advance-open-rack-scale-ai-infrastructure
+- Cisco / G42 AI infrastructure with AMD MI350X GPUs: https://investor.cisco.com/news/news-details/2025/Cisco-and-G42-Deepen-US-UAE-Technology-Partnership-to-Build-Secure-End-to-End-AI-Infrastructure-in-the-UAE/default.aspx
+- AMD Silo AI acquisition announcement: https://www.amd.com/en/newsroom/press-releases/2024-7-10-amd-to-acquire-silo-ai-to-expand-enterprise-ai-sol.html
+- AMD ZT Systems acquisition announcement: https://ir.amd.com/news-events/press-releases/detail/1211/amd-to-significantly-expand-data-center-ai-systems-capabilities-with-acquisition-of-hyperscale-solutions-provider-zt-systems
+- AMD ZT Systems manufacturing divestiture to Sanmina: https://ir.amd.com/news-events/press-releases/detail/1263/amd-completes-divestiture-of-zt-systems-data-center-infrastructuremanufacturing-business-to-sanmina
+- StockAnalysis AMD statistics and valuation, 2026-06-11: https://stockanalysis.com/stocks/amd/statistics/
+- SemiAnalysis technical discussion on MI350/MI400/Helios, searched 2026-06-11: https://newsletter.semianalysis.com/p/amd-advancing-ai-mi350x-and-mi400-ualoe72-mi500-ual256
+
+### 项目内行业资料
+
+- `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_商用AI加速芯片_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI服务器CPU与控制平面芯片_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_开放Scale-up互联_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`

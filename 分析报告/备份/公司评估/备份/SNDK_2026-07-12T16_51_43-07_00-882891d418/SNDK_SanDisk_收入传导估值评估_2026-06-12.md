@@ -1,0 +1,164 @@
+# 公司收入传导与价值传导评估：SanDisk（SNDK）
+
+报告日期：2026-06-12（America/Los_Angeles）。  
+研究对象：SNDK / SanDisk Corporation。  
+正式输出目录：`分析报告/公司评估/`。  
+主口径：NTM，即 2026-06-12 起未来 12 个月经营窗口；FY2026、FY2027、长期 run-rate 和远期期权只作补充。  
+边界声明：本文只用于判断行业和产品需求如何传导为 SanDisk 的 NTM 收入、利润、现金流和经营质量；不做全公司排序，不给投资评级，不判断股价区间，不做估值倍数判断，不把金融市场价格或估值数据作为经营传导证据。  
+资料边界：项目内正式资料使用 `公司调研/AI服务器_存储_EMS/SNDK_SanDisk_公司调研_2026-06-11.md`、`行业调研/AI服务器_存储_芯片/`、`行业调研/晶圆制造_设备_材料_测试/` 相关正式报告；未读取、引用或继承 `特征量化/`、Signals、回归、评分或模型比较内容。外部补充只用于核验截至 2026-06-12 的公司披露、SEC 文件、产品页和 TrendForce 行业数据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表用 NTM；FY2026Q4 指引、FY2027 年度共识、RPO 全周期金额、HBF 2027+ 机会只作锚点或附录，不替代 NTM。
+- 当前收入基准、指引和 run-rate：FY2026Q3 收入 `$5.950B`，同比 `+251%`、环比 `+97%`；Datacenter 收入 `$1.467B`，同比 `+645%`、环比 `+233%`；FY2026Q4 公司指引收入 `$7.75-8.25B`、non-GAAP GM `79-81%`、non-GAAP EPS `$30-33`。截至 2026-04-03，RPO 为 `$41.6B`，约 `15%` 预计在未来 12 个月确认，即约 `$6.2B` 的硬可见收入锚，但这不是 NTM 收入上限。
+- 重要产品/业务线：`Datacenter TLC enterprise SSD / SN861 与定制盘`、`QLC / UltraQLC capacity SSD / SN670 与 Stargate`、`Edge 高价值 PC/mobile/embedded flash`、`Consumer 品牌存储`、`BiCS8/CBA + Flash Ventures 供给平台`、`HBF High Bandwidth Flash 远期期权`。
+- NTM 公司收入四情景：悲观 `$27-32B`；基准 `$36-40B`；乐观 `$42-50B`；极度乐观 `$52-62B`。基准高于 2026Q3 年化 run-rate `$23.8B`，但接近 FY2026Q4 指引年化 run-rate `$31-33B` 加上 FY2027 Datacenter/QLC 继续爬坡。
+- 利润或 EBITDA 四情景：悲观 non-GAAP 净利润约 `$9-13B`，基准 `$16-22B`，乐观 `$23-31B`，极度乐观 `$32-41B`。利润弹性大于收入弹性，原因是当前 ASP、Datacenter mix、NBM 和高端 eSSD 稀缺共同放大毛利，但不能永久外推 Q3/Q4 的接近 `80%` gross margin。
+- 最大传导瓶颈：不是需求是否存在，而是 NTM 内能否把客户 allocation、QLC/UltraQLC 认证、BiCS8 产能和 RPO/NBM 交付节奏转成可确认收入。
+- 最大利润率变量：NAND/enterprise SSD ASP 与 NBM 的 fixed/variable pricing 条款；其次是 QLC mix、TLC 性能盘溢价、BiCS8 良率和 Flash Ventures 固定成本吸收。
+- 最大现金流变量：客户预付款和 financial guarantees 能否继续增加；应收账款、库存、Flash Ventures 资本/租赁担保和 wafer purchase commitments 是否吞噬景气期现金。
+- 可信度：基准为中高。TLC eSSD、Edge、Consumer 有 A 级财报锚；RPO/NBM 有 A/B 级锚；QLC 是 B/C 级、可进入基准但需折扣；HBF 只有 C/D 级证据，不进 NTM 基准。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Datacenter TLC enterprise SSD / SN861 与定制性能盘 | FY2026Q3 Datacenter `$1.467B` 中估算 `$1.0-1.3B`；Q4 起 Datacenter 继续爬坡 | Q3 公司收入约 `17-22%`，Datacenter 总占比 `24.7%` | NTM 最大增量和最高利润弹性；直接连接 AI 训练 checkpoint、inference hot/warm cache、GPU feeding、低延迟数据库 | A/B：分部收入、Q4 指引、OCP 认证、NBM/RPO | 进入基准；基准按 `$10-12B` NTM 收入贡献估算 | PCIe Gen6、GPU-accessible SSD 属 2027+ 上限 |
+| QLC / UltraQLC capacity SSD / SN670、Stargate、128TB/256TB | FY2026Q3 估算 `$0.1-0.3B`；公司披露 Q4 开始 QLC Stargate revenue shipment | Q3 小于 `5%`，但 NTM 增量可能显著 | AI data lake、RAG、对象存储温层、HDD 替代、PB/rack 密度 | B/C：正式产品、Q4 收入发货预期、行业 QLC 缺货、客户认证仍需估算 | 折扣进入基准；基准 `$3-5B`，乐观/极度乐观显著上修 | 256TB UltraQLC 的大客户批量和 245/256TB 竞品替代是上限 |
+| Edge 高价值 PC/mobile/embedded flash | FY2026Q3 Edge `$3.663B` | `61.6%` | 当前最大收入池；AI PC/高端手机和 premium configurations 提升 ASP/mix，但不是 AI 数据中心直接收入 | A：公司 end-market 收入 | 进入基准；按现有 run-rate 和 ASP 高位保守延展 | AI PC/端侧 AI 容量上修是乐观，不作为 Datacenter alpha |
+| Consumer 品牌存储、portable SSD、cards、USB | FY2026Q3 Consumer `$0.820B` | `13.8%` | 稳定现金流和品牌渠道；不是主要增量 | A：公司 end-market 收入 | 进入基准但低权重；按 `$3-4B` NTM 稳定业务处理 | AI 内容创作带动 portable SSD 只作小幅乐观 |
+| BiCS8/CBA + Flash Ventures 供给平台 | 不单独确认收入；嵌入 NAND、eSSD、Edge 和 Consumer 产品 | 不单独计算，避免重复 | 决定 bit cost、产能、QLC/UltraQLC/HBF 可交付性和利润率 | A/B：10-Q、Q3 deck、Flash Ventures JV 披露 | 不单独进入收入合计；进入利润率和执行可信度校准 | BiCS8 良率显著优于同业会放大上限 |
+| HBF High Bandwidth Flash | 2026 当前商业收入基本为 0 | `0%` | 可能改变 2027+ AI memory hierarchy，但 NTM 只有样品/NRE 可能 | C/D：SK hynix 标准化、OCP workstream、2026H2 samples，缺少已披露收入 | 不进基准；只在乐观上限小额、极度乐观和附录跟踪 | 若 2027 early AI-inference devices 形成客户项目，才转入后续 NTM |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不评估 SanDisk 份额、收入确认、利润率或公司层面汇总。需求强弱均相对 2026-06-12 的当前预期锚：SanDisk FY2026Q4 指引、Q3 Datacenter/Edge run-rate、RPO/NBM、TrendForce 2026 年 enterprise SSD 与 NAND 供需、项目内行业调研对 AI data lake、KV cache、QLC 和 HDD 替代的需求区间。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Datacenter TLC enterprise SSD / SN861 与定制性能盘 | TrendForce 2026Q1 enterprise SSD 行业收入 `$18.46B`、环比 `+86.1%`；SanDisk Q3 Datacenter `$1.467B`、环比 `+233%` | AI server 采购延迟、客户去库存或 SSD ASP 回落，全球 enterprise SSD NTM 收入池退到 `$45-55B` | AI 训练、推理、RAG 和 checkpoint 正常兑现，全球 enterprise SSD NTM 收入池约 `$55-75B` | AI Agent / inference 加速，CSP allocation 继续紧，收入池约 `$75-105B` | SSD 被视作 HBM/DRAM 后的 AI memory tier，收入池约 `$105-145B` | 相比 2026Q1 年化 `$73.8B`，悲观下修，基准持平到小幅上行，乐观/极度乐观上修 `+30%` 到 `+90%+` | TrendForce 称供应严重失衡、价格上行约 `80%`；反证是 data center SSD ASP 连续下跌、库存天数上升、客户推迟 AI rack |
+| QLC / UltraQLC capacity SSD / SN670、Stargate、128TB/256TB | 项目内行业报告把 122TB QLC capacity SSD 未来 1 年收入池放在基准 `$12-24B`、乐观 `$24-38B`；245TB/256TB 属早期 | NAND 涨价过快、QLC endurance/写放大或平台兼容限制，122/245/256TB 客户导入低于预期，NTM 需求 `$10-18B` | HDD 短缺、AI data lake、RAG/vector、warm object storage 正常拉动，NTM 需求 `$15-32B` | HDD 交期和电力/机柜约束加快全闪温层，NTM 需求 `$32-54B` | 多模态/agent 数据保留使 QLC warm tier 成为 AI data lake 标配，NTM 需求 `$54-83B` | 相比当前低基数，基准为数倍扩张；乐观/极度乐观主要来自高容量盘认证和客户锁供 | TrendForce 指 QLC eSSD 已 volume shipment 且未来增长强；反证是 $/TB 超客户 TCO 阈值、RMA 或 endurance 问题 |
+| Edge 高价值 PC/mobile/embedded flash | SanDisk Q3 Edge `$3.663B`，占公司 `61.6%`；需求来自 premium PC、smartphone、gaming、auto、industrial 与 AI PC/端侧 AI 容量配置 | 终端需求被高内存价格压制，客户降低容量配置；NTM 行业需求低于当前 ASP 路径 | 高端配置和供应紧缺支撑 ASP，终端 volume 不强但 mix 好，需求大体符合当前 run-rate | AI PC/高端手机存储容量上修，OEM 争抢高质量 NAND，Edge 需求高于当前预期 | 端侧 AI 非线性拉动本地存储，但 NTM 证据不足，只作上限 | 基准维持 Q3/Q4 高 run-rate；悲观主要是 ASP/mix 回落，乐观是高端配置延续 | 反证是智能手机/PC 出货下修、品牌客户推迟补库存、非 AI 消费被高价挤出 |
+| Consumer 品牌存储、portable SSD、cards、USB | SanDisk Q3 Consumer `$0.820B`，环比 `-10%`、同比 `+44%`；历史季节性明显 | 高价压制 retail sell-through，促销压力上升，需求低于季节性 | 品牌渠道稳定，AI 内容创作小幅拉动 portable SSD，需求大体符合季节性 | 内容创作和高容量 portable SSD 需求改善，ASP/mix 好于预期 | 不适合作极度乐观核心，绝对需求不构成公司结构变化 | 基准 NTM 约 `$3-4B` 终端需求，乐观仅小幅上修 | 反证是 retail 库存上升、价格促销、渠道补库停止 |
+| BiCS8/CBA + Flash Ventures 供给平台 | 需求不是终端收入，而是 SanDisk 对高层 NAND、2Tb QLC die、CBA 和 JV wafer output 的内部供给需求 | BiCS8 转换、良率或 JV 产能拖慢，限制 eSSD/QLC 交付 | BiCS8 到 FY2026 exit 成为 bit production majority，支撑 QLC/TLC mix | 良率、cost/GB 和 2Tb QLC die 优于计划，扩大 high-value product output | 供给和需求同时紧，客户愿预付锁定 SanDisk 高价值 bits | 不作为收入需求池单独相加；影响可交付 bits 和利润率 | 10-Q 显示 Flash Ventures 固定成本和约 50% output 义务；反证是 JV capex、Kioxia 技术或良率落后 |
+| HBF High Bandwidth Flash | 当前需求锚是 AI inference memory wall 和 2026H2 sample 计划；没有已披露商业收入 | NTM 需求为 0，仅停留标准化/样品 | NTM 只有样品、NRE 或客户评估，不构成基准收入 | 少数 AI inference device POC，形成 2027 design-in pipeline | 一线云厂或 AI lab 提前试点，出现可量化客户项目 | 绝对收入基数接近 0；任何 NTM 收入都是低可信小基数 | 正向是 SK hynix/OCP 标准化；反证是没有客户、价格、交付和收入确认时间表 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断哪些产品需求能进入 SanDisk NTM 收入表，以及当前可收入化基数是多少；不预测增长，不判断利润率。A/B 级证据可作为基准主口径；C 级仅在客户、产品和时间表清楚时折扣纳入；D/E 级不进入基准 NTM 收入。所有区间为 SanDisk 可确认收入估算，不是行业 TAM 或客户总预算。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Datacenter TLC enterprise SSD / SN861 与定制性能盘 | FY2026Q3 Datacenter `$1.467B`；公司称 Q3 Datacenter 受 TLC eSSD 强需求拉动，Q4 继续 Datacenter/QLC 增长 | 直接 | 高 ASP、高毛利、客户认证强，受 NAND 周期影响 | `$5.5-7.5B` | `$10-12B` | `$13-17B` | `$18-24B` | 基准高于 Q3 年化但符合 Q4 指引和 Datacenter 爬坡；悲观低于当前上修预期 | A/B | 是 | 分部收入、Q4 指引、OCP、RPO/NBM、行业供需 | NTM 核心基准收入；若 Datacenter mix 停滞则下移 |
+| QLC / UltraQLC capacity SSD / SN670、Stargate、128TB/256TB | Q3 估算 `$0.1-0.3B`；Q4 开始 QLC Stargate revenue shipment；SN670 30.72-122.88TB 产品已列示 | 直接 | QLC 正常低于 TLC，但 2026 高容量稀缺可高毛利；认证和 endurance 风险高 | `$1.0-2.0B` | `$3-5B` | `$6-9B` | `$10-15B` | 基准是当前预期的增量兑现，乐观/极度乐观高于当前基准 | B/C | 是，折扣纳入 | Q4 收入发货、产品页、TrendForce QLC 缺货、行业 warm data lake 需求 | NTM 纳入基准但不把 256TB 全量批量当作确定收入 |
+| Edge 高价值 PC/mobile/embedded flash | FY2026Q3 Edge `$3.663B`；公司 Q3 Edge 环比 `+118%` | 直接 | ASP/mix 高，但终端需求弹性低于 Datacenter；周期性明显 | `$13-16B` | `$18-20B` | `$20-23B` | `$23-27B` | 基准接近 Q3/Q4 run-rate，悲观为 ASP/mix 回落 | A | 是 | 公司 end-market 收入；AI PC/手机只作附加需求 | NTM 进入基准，是收入底座但不是最大超预期来源 |
+| Consumer 品牌存储、portable SSD、cards、USB | FY2026Q3 Consumer `$0.820B`，环比 `-10%` | 直接 | 品牌渠道毛利中等；促销和渠道库存影响大 | `$2.8-3.4B` | `$3.0-4.0B` | `$3.5-4.5B` | `$4.0-5.0B` | 符合季节性为基准；乐观仅小幅高于预期 | A | 是 | 公司 end-market 收入和历史季节性 | NTM 低权重纳入，不作为乐观主因 |
+| BiCS8/CBA + Flash Ventures 供给平台 | 不单独披露收入；10-Q 披露 Flash Ventures 供给、承诺、担保和约 `50%` output | 间接 | 影响 cost/GB、gross margin、capex/guarantee 和交付能力 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 不改变收入基数，改变利润率和兑现概率 | A/B | 不作为收入项 | 防止和 eSSD/Edge/Consumer 重复计算 | 只纳入利润率、现金流和执行校准 |
+| HBF High Bandwidth Flash | 2026 当前收入基本为 0；SK hynix/OCP 标准化和 2026H2 sample | 直接但尚未商业化 | 若成功可能高毛利，但 NTM 不确定 | `$0` | `$0` | `$0-0.3B` | `$0.5-1.5B` | 基准为 0；乐观上限才有小额 NRE/sample | C/D | 否 | 缺少客户合同、价格、交付和收入确认路径 | 移入附录跟踪；不进入 NTM 基准 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内能给 SanDisk 贡献多少收入和利润。利润贡献指产品级毛利/经营贡献方向，扣除直接成本但未完全分摊公司共享费用；公司层面净利润和自由现金流在第 6 节汇总。不得把行业 TAM、客户总预算、RPO 全周期金额或 HBF 远期 pipeline 直接写成公司 NTM 收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Datacenter TLC enterprise SSD / SN861 与定制性能盘 | 悲观产品 | `$5.5-7.5B` | 毛利约 `$3-4.5B`；经营贡献仍正 | GM 低于 Q3/Q4，约 `50-60%` | 低于当前 Datacenter 上修路径 | Q3 Datacenter 已达 `$1.467B`，但若客户排产或 ASP 回落，Q3 不能外推 | 保留悲观 | NAND ASP 下行、客户多供压价、Gen5 性能盘 allocation 放松 |
+| Datacenter TLC enterprise SSD / SN861 与定制性能盘 | 基准产品 | `$10-12B` | 毛利约 `$6-8B`；经营杠杆强 | GM `58-68%`，略低于 Q3 极端水平 | 符合 Q4 指引、RPO/NBM 和 Datacenter 正常爬坡 | Q3 Datacenter `+233% QoQ`，SN861 OCP Inspired，NBM/RPO 提升可见度 | 保留基准 | 客户认证、firmware/quality、Flash Ventures output |
+| Datacenter TLC enterprise SSD / SN861 与定制性能盘 | 乐观产品 | `$13-17B` | 毛利约 `$8.5-12B` | GM `65-75%` | 高于当前基准，需 Datacenter mix 上行 | AI Agent 与推理 storage hot/warm path 更强，CSP 长协锁货 | 保留乐观 | 竞争厂 Samsung/Micron/Solidigm/Kioxia 扩供 |
+| Datacenter TLC enterprise SSD / SN861 与定制性能盘 | 极度乐观产品 | `$18-24B` | 毛利约 `$13-18B` | GM `70-80%`，接近 Q3/Q4 高位 | 显著高于当前预期 | AI memory hierarchy 非线性上修，Gen5/Gen6 供给持续紧 | 下移为可验证上限 | 若产品仍是多供硬件，极度乐观收入不必然永久高毛利 |
+| QLC / UltraQLC capacity SSD / SN670、Stargate、128TB/256TB | 悲观产品 | `$1.0-2.0B` | 毛利约 `$0.3-0.8B` | GM `30-42%` | 低于 Q4 Stargate 放量预期 | Q4 发货存在，但认证和 ramp 慢 | 保留悲观 | QLC endurance、NAND $/TB 太高、客户回到 HDD+TLC 缓存 |
+| QLC / UltraQLC capacity SSD / SN670、Stargate、128TB/256TB | 基准产品 | `$3-5B` | 毛利约 `$1.4-2.7B` | GM `40-55%` | 符合“低基数放量但折扣纳入” | SN670 产品、Q4 revenue shipment、TrendForce 指 SanDisk QLC volume shipment | 保留基准 | 122/256TB 客户 qualification、BiCS8 2Tb QLC die、控制器与 firmware |
+| QLC / UltraQLC capacity SSD / SN670、Stargate、128TB/256TB | 乐观产品 | `$6-9B` | 毛利约 `$3.3-5.9B` | GM `55-65%` | 高于当前基准 | HDD 长交期、电力/rack TCO、AI data lake 和 RAG/vector 扩张 | 保留乐观 | 竞品 Micron 6600 ION、Kioxia LC9、Solidigm D5-P5336、Samsung BM1743 |
+| QLC / UltraQLC capacity SSD / SN670、Stargate、128TB/256TB | 极度乐观产品 | `$10-15B` | 毛利约 `$6.5-10.5B` | GM `65-70%+` | 只代表上限 | 256TB/UltraQLC 被 hyperscaler 批量锁供且客户预付款上升 | 下移为上限 | 256TB 未有充分 NTM 批量合同披露，不能当基准 |
+| Edge 高价值 PC/mobile/embedded flash | 悲观产品 | `$13-16B` | 毛利约 `$6-9B` | GM `45-58%` | 低于 Q3/Q4 run-rate | Edge Q3 高基数，但高价抑制终端需求 | 保留悲观 | 手机/PC 出货弱、OEM 去库存、ASP 回落 |
+| Edge 高价值 PC/mobile/embedded flash | 基准产品 | `$18-20B` | 毛利约 `$10-13B` | GM `55-65%` | 符合当前 run-rate 和 premium mix | Q3 Edge `$3.663B`、环比 `+118%` | 保留基准 | 不能把 AI PC 题材全部转成 SanDisk 增量 |
+| Edge 高价值 PC/mobile/embedded flash | 乐观产品 | `$20-23B` | 毛利约 `$12-16B` | GM `60-70%` | 小幅高于当前预期 | 高端 PC/mobile 容量配置上修，供应紧缺保 ASP | 保留乐观 | 终端需求弹性低于 Datacenter |
+| Edge 高价值 PC/mobile/embedded flash | 极度乐观产品 | `$23-27B` | 毛利约 `$15-19B` | GM `65-72%` | 上限而非基准 | 端侧 AI 容量配置非线性上修 | 下移为上限 | 缺少 Edge 客户订单和 ASP 结构披露 |
+| Consumer 品牌存储、portable SSD、cards、USB | 悲观产品 | `$2.8-3.4B` | 毛利约 `$0.9-1.4B` | GM `30-42%` | 低于季节性 | Q3 Consumer 环比 `-10%` | 保留悲观 | retail 库存和促销 |
+| Consumer 品牌存储、portable SSD、cards、USB | 基准产品 | `$3.0-4.0B` | 毛利约 `$1.2-2.0B` | GM `35-50%` | 符合季节性 | Q3 Consumer `$0.820B`，品牌渠道稳定 | 保留基准 | 不是 AI 数据中心主线 |
+| Consumer 品牌存储、portable SSD、cards、USB | 乐观产品 | `$3.5-4.5B` | 毛利约 `$1.6-2.5B` | GM `40-55%` | 小幅高于预期 | AI 内容创作和 portable SSD 高容量 mix | 保留但低权重 | 价格敏感和渠道库存 |
+| Consumer 品牌存储、portable SSD、cards、USB | 极度乐观产品 | `$4.0-5.0B` | 毛利约 `$2.0-3.0B` | GM `45-60%` | 不构成公司极度乐观核心 | 消费端高容量需求强于季节性 | 下移为低权重上限 | 消费业务无法改变公司结构 |
+| BiCS8/CBA + Flash Ventures 供给平台 | 悲观产品 | 不单独计入 | 降低全公司毛利 `3-8pct`，增加现金/承诺压力 | 利润率下行 | 低于当前供给预期 | 10-Q 披露 JV 固定成本、担保和 capex obligation | 保留执行反证 | 良率、Kioxia JV、日元、设备/租赁担保 |
+| BiCS8/CBA + Flash Ventures 供给平台 | 基准产品 | 不单独计入 | 支撑全公司 GM `66-73%` | 成本改善和高 ASP 同步 | 符合当前预期 | BiCS8 向 majority bit production 迁移 | 保留基准 | 不得重复计算收入 |
+| BiCS8/CBA + Flash Ventures 供给平台 | 乐观产品 | 不单独计入 | 成本/GB 下降、QLC 良率提高，利润率上行 `3-5pct` | 利润率改善 | 高于预期 | CBA/2Tb QLC 和高价值 bits 良率好于计划 | 保留乐观 | 若市场供给宽松，成本改善会被 ASP 回落抵消 |
+| BiCS8/CBA + Flash Ventures 供给平台 | 极度乐观产品 | 不单独计入 | 支撑 eSSD/QLC 高 GM 上限 | 利润率显著改善 | 上限 | SanDisk 获稀缺 high-value NAND allocation | 下移为上限 | 仍需客户需求和价格同时成立 |
+| HBF High Bandwidth Flash | 悲观产品 | `$0` | 研发费用，经营贡献负 | 不影响收入 | 符合最保守 | 无收入合同 | 保留悲观 | 标准化停留在概念 |
+| HBF High Bandwidth Flash | 基准产品 | `$0` | 研发投入，收入不纳入 | 不影响公司利润 | 符合基准 | 2026H2 sample 不等于 revenue | 保留基准为 0 | 不得进入基准收入 |
+| HBF High Bandwidth Flash | 乐观产品 | `$0-0.3B` | 小额 NRE/sample，利润无法可靠量化 | 低可信 | 高于基准但小额 | SK hynix/OCP 标准化、2026 samples | 移入附录/仅作跟踪 | 无价格、客户、量产 |
+| HBF High Bandwidth Flash | 极度乐观产品 | `$0.5-1.5B` | 若早期 device 项目成立可高毛利，但无法可靠量化 | 上限 | 极高于当前收入基准 | 一线客户试点提前 | 移入附录 | 缺少 NTM 可验证商业化路径 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为 SanDisk NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向，不讨论市场定价。汇总时剔除 BiCS8/Flash Ventures 与 eSSD/Edge/Consumer 的重复收入；HBF 不进入基准；RPO 全周期 `$41.6B` 只作为可见度和合同锚，不直接全额计入 NTM。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$27-32B` | 较 TTM `$13.18B` 仍约 `+105%-143%`，但低于 Q4 指引年化和 FY2027 上修路径 | 低于当前预期；Q4 指引兑现后 FY2027 前三季放缓，或 Datacenter/QLC 不达预期 | `58-67%` | `43-54%` | non-GAAP 净利润约 `$9-13B`；EBITDA 无法可靠量化但方向强正 | FCF 明显为正，约 `$7-11B`，但营运资本和 JV 承诺吞噬部分现金 | 中 | NAND ASP 回落、Datacenter mix 不升、QLC 认证慢、Edge ASP/mix 回落 |
+| 基准公司 | `$36-40B` | 较 TTM 约 `+173%-204%`；高于 Q3 年化 `$23.8B`，接近 Q4 指引年化加 FY2027 爬坡 | 当前预期正常兑现；Q4 指引、RPO 12m 确认、NBM bits 覆盖和 Datacenter/Edge run-rate 大体兑现 | `66-73%` | `55-66%` | non-GAAP 净利润约 `$16-22B`；EBITDA 无法可靠量化但显著高于 FY2026 前三季 | FCF 强正，约 `$13-19B`；若预付款增加，现金转化更好 | 中高 | RPO 转收入节奏、NBM 价格条款、Datacenter TLC/QLC mix、Flash Ventures output |
+| 乐观公司 | `$42-50B` | 较 TTM 约 `+219%-279%` | 高于当前预期；Datacenter/QLC 同时超预期，Edge 高 ASP 延续 | `72-79%` | `64-72%` | non-GAAP 净利润约 `$23-31B` | FCF 强正，约 `$20-28B`，客户预付款和低表内债务增强质量 | 中 | 需要更多 NBM、QLC 批量客户认证和 NAND 供给继续紧 |
+| 极度乐观公司 | `$52-62B` | 较 TTM 约 `+295%-370%` | 显著高于当前预期；需求、公司捕获、利润率、执行四环节同时突破 | `76-82%` | `70-76%` | non-GAAP 净利润约 `$32-41B` | FCF 极强，约 `$29-37B`，但 JV capex/wafer commitments 放大周期下行敏感性 | 低到中 | 极度依赖 2027 前三季高价值 bits 被锁定、QLC/UltraQLC 大规模交付、ASP 高位不回落 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景：保留、上移、下移、排除、移入附录、仅作跟踪。正向证据必须说明提升的是需求、收入基数、产品贡献、公司利润还是执行可信度；同一风险只在实际影响层级处理一次，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026Q3 收入 `$5.950B`、Q4 指引 `$7.75-8.25B` | 公司收入、产品贡献 | 将基准 NTM 从 Q3 年化 `$23.8B` 上移到 `$36-40B` | Q4 non-GAAP GM `79-81%` 支撑利润率高位，但不永久外推 | Q3 operating cash flow `$3.038B`、adjusted FCF `$2.955B` 证明现金转化 | 基准保留；悲观不能写成收入收缩，只能写成低于当前上修路径 |
+| RPO `$41.6B`、约 `15%` 未来 12 个月确认 | 收入基数、执行可信度 | 提供约 `$6.2B` A/B 级 NTM 可见收入锚；不能全额计入 NTM | 长协可能稳定价格和 mix，但 fixed/variable pricing 会限制极端 upside | 提高客户履约可见度，contract liabilities/prepayments 改善现金 | 基准保留；极度乐观需新增 NBM 和更高 12m conversion |
+| 五份 NBM financial guarantees `>$11B`，FY2027 bits 超三分之一覆盖 | 收入基数、现金流、执行 | 增强 FY2027 前三季收入可见度，支持 Datacenter/QLC 基准 | 降低 spot 下行周期风险，但价格下行分享可能限制毛利 | 预付款和第三方金融工具改善客户承诺质量 | 乐观保留；若覆盖率停止提升，极度乐观下移 |
+| TrendForce 2026-06-11 enterprise SSD record revenue `$18.46B`、价格约 `+80%` | 需求、产品贡献 | 支撑 TLC eSSD 和 QLC capacity SSD 需求高于传统周期 | 高 ASP 支撑高 GM，但周期回落风险同样上升 | 供应紧缺提升 allocation 价值 | 基准和乐观保留；悲观触发条件是 ASP/库存反转 |
+| QLC Stargate Q4 revenue shipment、SN670/UltraQLC 产品路径 | 收入基数、产品贡献 | 支撑 QLC `$3-5B` 基准，但 256TB 大规模批量仍不可全额纳入 | QLC 稀缺期毛利好于普通周期，长期低于高端 TLC | 客户认证和 endurance 影响交付 | 基准折扣纳入；UltraQLC 上限保留 |
+| HBF 与 SK hynix/OCP 标准化 | 远期期权、执行可信度 | NTM 缺少客户、价格、交付和收入确认路径 | 长期可能高毛利，但 NTM 无法可靠量化 | 2026H2 samples 只提升跟踪价值 | 基准排除；移入附录/仅作跟踪 |
+| Flash Ventures / Kioxia JV、约 50% output、固定成本和担保 | 利润率、现金流、执行 | 不新增收入，避免重复计算；限制可交付 bits | 利用率、良率、node transition 决定 cost/GB | 最大可估损失暴露 `$2.967B`、担保和承诺影响 FCF 质量 | 基准保留但下调现金流质量；风险只在执行/现金流层处理一次 |
+| Edge 高基数 `$3.663B` 与 Consumer `$0.820B` | 公司组合 | Edge 是收入底座；Consumer 稳定但小 | Edge ASP/mix 是利润稳定器，Consumer 毛利较低 | 终端库存和渠道影响营运资本 | 基准保留；不把 AI PC 叙事上移为极度乐观核心 |
+| NAND/SSD ASP 快速下行、客户多供、库存上升 | 需求、利润率 | 首先压低 Datacenter/QLC 收入；Edge 也受影响 | 直接压 GM，不额外在现金流重复惩罚 | 库存和应收会承压 | 悲观保留；若连续两季出现，下移基准 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入低于当前预期但仍高增长；利润率从 Q3/Q4 极端高位回落 | 即使悲观，Q4 指引、RPO 12m 确认和 Q3 Datacenter run-rate 仍形成收入底座 | NAND ASP 回落、QLC 认证慢、Edge ASP/mix 回落、NBM 覆盖率不升 | 保留 | `$27-32B` 收入、GM `58-67%` | 中 | NAND ASP 回落只在需求/利润率处理一次，不再重复压低现金流和执行 |
+| 基准 | Q4 指引兑现，Datacenter TLC 与 QLC 正常爬坡，Edge 高价值 mix 维持 | A 级财报、Q4 指引、RPO `$41.6B`、15% 12m 确认、五份 NBM、TrendForce 供需紧 | 基准不能依赖 HBF 或 256TB UltraQLC 大规模客户未披露订单 | 保留 | `$36-40B` 收入、GM `66-73%` | 中高 | Flash Ventures 承诺只在现金流/执行校准，不重复压产品需求 |
+| 乐观 | Datacenter/QLC 同时高于基准，NBM 覆盖率继续提高，利润率保持高位 | enterprise SSD severe shortage、QLC volume shipment、客户长协和 AI data lake 需求 | 需要公司特定收入确认路径，不能只靠行业 beta | 保留 | `$42-50B` 收入、GM `72-79%` | 中 | 行业景气不能同时当需求、份额和利润三次加分 |
+| 极度乐观 | AI memory hierarchy 非线性上修，TLC、QLC、Edge、NBM、利润率和执行同时突破 | 若新增 NBM、QLC/UltraQLC 大客户批量、Datacenter mix 继续上升，则有可验证上限 | 任一核心环节缺证据；HBF、远期 256TB、行业 TAM 不能直接进入 NTM | 下移 | 保留为上限，不作为当前预期 | 低到中 | HBF 远期期权不得和 QLC 上限重复计算 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入更可能落在 `$36-40B`，主因是 FY2026Q4 指引已经把年化 run-rate 抬到 `$31-33B`，Q3 RPO 和 NBM 提供 2027 前三季可见度，Datacenter TLC eSSD 和 QLC capacity SSD 同时处于供需紧缺窗口。
+- NTM 收入结论：SanDisk 的 NTM 收入不是简单跟随 NAND 行业平均增速，而是由 `Datacenter TLC eSSD + QLC/UltraQLC capacity SSD + Edge 高价值 flash` 三条线共同决定。最硬基数来自 Q3/Q4 财报和 RPO；最大增量来自 Datacenter/QLC；Edge 是收入底座而非 AI alpha。
+- 利润/现金流结论：基准 non-GAAP 净利润约 `$16-22B`，FCF 约 `$13-19B`。利润质量强于传统 NAND 周期底部，但 2026 的 `78-81%` gross margin 很大程度来自 ASP、mix 和供给紧缺，必须用 NBM 覆盖率、contract pricing、Datacenter mix 和 QLC 认证逐季复核。
+- 主要传导瓶颈：需求端不是最大问题；最大问题是客户认证、收入确认、BiCS8/Flash Ventures 供给、QLC endurance、NBM 价格条款和营运资本能否把高需求留下来。
+- 乐观情景成立条件：FY2027 bits 的 NBM 覆盖从超过三分之一提高到 `45-55%`；Q4/Q1 Datacenter mix 明显上升；QLC Stargate/SN670 形成大客户批量；NAND ASP 和 enterprise SSD allocation 维持紧缺；Edge 高价值 mix 不回落。
+- 极度乐观情景成立条件：Datacenter TLC 年化贡献进入 `$18B+`，QLC/UltraQLC NTM 贡献进入 `$10B+`，新增 NBM 使 FY2027 高价值 bits 接近半数以上锁定，且 GM 仍在 `76%+`。HBF 只有在披露客户项目、价格、交付和收入确认路径后，才能从附录转入后续 NTM。
+- 悲观情景触发条件：data center SSD ASP 连续下行、客户库存上升、RPO 12m 转收入比例不升或新增 NBM 停滞、QLC 认证/质量/RMA 低于预期、Edge 终端客户因价格过高降低容量配置、Flash Ventures 良率/成本或担保压力上升。
+- 后续跟踪数据：Q4 FY2026 实际收入和 end-market mix；RPO、contract liabilities、prepayments、financial guarantees；FY2027 NBM bit 覆盖率；Datacenter revenue mix 是否从 `25%` 走向 `30-40%`；QLC Stargate/SN670/UltraQLC 出货；gross margin 是否守住 `70%+`；Flash Ventures capex、担保和 utilization；HBF 2026H2 samples 是否出现一线客户验证。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务数据以 SanDisk FY2026Q3，季度截至 2026-04-03，披露日 2026-04-30 为最新正式财报；本报告复核日期为 2026-06-12。行业供需以 TrendForce 2026-05-25 和 2026-06-11 新闻、项目内 2026-06-10/11 行业调研为主。
+- 主要收入、订单、指引和利润率来源：
+  - SanDisk FY2026Q3 earnings release：Q3 收入 `$5.950B`、Datacenter `$1.467B`、Q4 指引 `$7.75-8.25B`、non-GAAP GM `79-81%`、Q4 EPS `$30-33`。
+  - SanDisk FY2026Q3 earnings presentation：Q3 Datacenter `+233% QoQ`、TLC eSSD 驱动、Q4 预计开始 QLC Stargate revenue shipment、Flash Ventures operational framework。
+  - SanDisk Form 10-Q for quarter ended 2026-04-03：RPO `$41.6B`、约 `15%` 未来 12 个月确认；Flash Ventures notes/investments、担保、固定成本和 purchase commitments。
+  - Q3 earnings call transcript 二手转述：五份 NBM financial guarantees `>$11B`，FY2027 bits 超过三分之一覆盖；该项用于补充合同质量，不作为单独收入。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 估算：Q1 `$2.308B` + Q2 `$3.025B` + Q3 `$5.950B` + Q4 指引中点 `$8.0B`，全年约 `$19.3B`。
+  - FY2027 / NTM：市场一致预期和二手聚合口径在 Q3 后明显上修，FY2027 revenue 常见区间约 `$40B+`；本文不把该数值当经营证据，而用 Q4 指引、RPO 12m、NBM bits、Datacenter/QLC 产品路径推导 NTM 基准 `$36-40B`。
+  - HBF：2026H2 samples、2027 early device samples 属远期期权；缺少 NTM 合同/客户/价格/收入确认，不进基准。
+- 项目内主要来源：
+  - `公司调研/AI服务器_存储_EMS/SNDK_SanDisk_公司调研_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_HDD、对象存储与冷温数据存储_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_存储晶圆制造_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_存储前道制造设备_2026-06-11.md`
+- 外部主要来源：
+  - SanDisk FY2026Q3 earnings release: https://www.sandisk.com/company/newsroom/press-releases/2026/2026-04-30-sandisk-reports-fiscal-third-quarter-2026-financial-results
+  - SanDisk Q3FY26 earnings presentation: https://investor.sandisk.com/static-files/8ea78860-f8e5-4f1c-ada3-c554437d6281
+  - SanDisk Form 10-Q, quarter ended 2026-04-03: https://www.sec.gov/Archives/edgar/data/2023554/000162828026029401/sndk-20260403.htm
+  - TrendForce, enterprise SSD supply crunch, 2026-06-11: https://www.trendforce.com/presscenter/news/20260611-13092.html
+  - TrendForce, NAND supplier revenue and shortages, 2026-05-25: https://www.trendforce.com/presscenter/news/20260525-13058.html
+  - TrendForce, 2Q26 memory contract price outlook, 2026-03-31: https://www.trendforce.com/presscenter/news/20260331-12995.html
+  - SanDisk SN861 OCP Inspired announcement: https://www.sandisk.com/company/newsroom/press-releases/2025/2025-10-14-sandisk-pcie-gen-5-enterprise-ssd-recognized-as-ocp-inspired-by-open-compute-project
+  - SanDisk SN670 product page: https://www.sandisk.com/products/ssd/internal-ssd/sandisk-sn670-nvme-ssd
+  - SanDisk UltraQLC 256TB announcement: https://www.sandisk.com/company/newsroom/press-releases/2025/2025-08-05-sandisk-showcases-ultraqlc-technology-platform-with-milestone-enterprise-ssd-capacity-at-fms-2025
+  - SanDisk / SK hynix HBF standardization announcement: https://www.sandisk.com/company/newsroom/press-releases/2026/2026-02-25-sandisk-and-sk-hynix-begin-global-standardization-of-next-generation-memory-solution-high-bandwidth-flash-hbf

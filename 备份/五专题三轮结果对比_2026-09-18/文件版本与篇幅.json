@@ -1,0 +1,152 @@
+[
+  {
+    "key": "map",
+    "round": "A",
+    "path": "D:\\investment\\基本面\\行业调研\\产业背景\\AI产业链全局图谱与口径字典_2026-09-05.md",
+    "sha256": "74cec0e21708f79281182f2490e9617361f01971cf469dfb170516c3e2fedbd8",
+    "characters": 55664,
+    "nonWhitespace": 48910,
+    "lines": 974,
+    "urls": 47
+  },
+  {
+    "key": "map",
+    "round": "B",
+    "path": "D:\\investment\\备份\\五专题重跑前结果_20260918_130642\\AI产业链全局图谱与口径字典_2026-09-18.md",
+    "sha256": "f4692659189f33d5363e172b4fe98a0ee3c25e8e3468c29ff077477f43f3753e",
+    "characters": 46873,
+    "nonWhitespace": 42055,
+    "lines": 749,
+    "urls": 45
+  },
+  {
+    "key": "map",
+    "round": "C",
+    "path": "D:\\investment\\基本面\\行业调研\\产业背景\\AI产业链全局图谱与口径字典_2026-09-18.md",
+    "sha256": "a3b203b50f1cef83909e56e0ce2ecfa0388b17adcd8a8c2163c0ccf4212544d9",
+    "characters": 53090,
+    "nonWhitespace": 47968,
+    "lines": 691,
+    "urls": 43
+  },
+  {
+    "key": "bottle",
+    "round": "A",
+    "path": "D:\\investment\\基本面\\行业调研\\产业背景\\AI产业链瓶颈与反证指标总表_2026-09-05.md",
+    "sha256": "ed37c5fe7d6bb8ad8be9e30e5bb8f32bde8ebd8b28aa6850afcee985a0f02d19",
+    "characters": 58758,
+    "nonWhitespace": 51397,
+    "lines": 691,
+    "urls": 47
+  },
+  {
+    "key": "bottle",
+    "round": "B",
+    "path": "D:\\investment\\备份\\五专题重跑前结果_20260918_130642\\AI产业链瓶颈与反证指标总表_2026-09-18.md",
+    "sha256": "e2cf524102d9ce767192ef297bfbe9384da4189e31efe7fddb1273ea1a945706",
+    "characters": 49105,
+    "nonWhitespace": 43897,
+    "lines": 580,
+    "urls": 54
+  },
+  {
+    "key": "bottle",
+    "round": "C",
+    "path": "D:\\investment\\基本面\\行业调研\\产业背景\\AI产业链瓶颈与反证指标总表_2026-09-18.md",
+    "sha256": "f46b435828369e23723a88a34ce7572ac5c1960743e7d4ec24373cc83c6fbf8f",
+    "characters": 54526,
+    "nonWhitespace": 50260,
+    "lines": 604,
+    "urls": 56
+  },
+  {
+    "key": "token",
+    "round": "A",
+    "path": "D:\\investment\\基本面\\行业调研\\产业背景\\全球AI需求与Token经济框架_2026-09-05.md",
+    "sha256": "bf9f703d22b994d7d20a724688352d5a60873396bc48c4dd0d08bb8ed0665b8d",
+    "characters": 53610,
+    "nonWhitespace": 48435,
+    "lines": 680,
+    "urls": 45
+  },
+  {
+    "key": "token",
+    "round": "B",
+    "path": "D:\\investment\\备份\\五专题重跑前结果_20260918_130642\\全球AI需求与Token经济框架_2026-09-18.md",
+    "sha256": "a91f36f64aefaff22700a46ba4d942598e1f668d36e6f004357640d9a4403da7",
+    "characters": 51819,
+    "nonWhitespace": 47095,
+    "lines": 647,
+    "urls": 45
+  },
+  {
+    "key": "token",
+    "round": "C",
+    "path": "D:\\investment\\基本面\\行业调研\\产业背景\\全球AI需求与Token经济框架_2026-09-18.md",
+    "sha256": "0e3d4968385cf41a168af46de3b57c37c0bae5c80f990e4de83ddf864cac242a",
+    "characters": 49069,
+    "nonWhitespace": 43574,
+    "lines": 776,
+    "urls": 47
+  },
+  {
+    "key": "dc",
+    "round": "A",
+    "path": "D:\\investment\\基本面\\行业调研\\产业背景\\行业调研_AI数据中心建设规模与产业链订单映射_2026-09-05.md",
+    "sha256": "964f012d226d8a43292d7336a9b78093a5618b6ae1bb39a0b0af527947e539cd",
+    "characters": 83778,
+    "nonWhitespace": 74566,
+    "lines": 847,
+    "urls": 52
+  },
+  {
+    "key": "dc",
+    "round": "B",
+    "path": "D:\\investment\\备份\\五专题重跑前结果_20260918_130642\\行业调研_AI数据中心建设规模与产业链订单映射_2026-09-18.md",
+    "sha256": "fda2b914ef0114f1d922e3c479667c965c777ad88256cd06dfc7099184fa9b7f",
+    "characters": 61248,
+    "nonWhitespace": 56306,
+    "lines": 700,
+    "urls": 52
+  },
+  {
+    "key": "dc",
+    "round": "C",
+    "path": "D:\\investment\\基本面\\行业调研\\产业背景\\行业调研_AI数据中心建设规模与产业链订单映射_2026-09-18.md",
+    "sha256": "babe2b6310cb7a4081b7db63608b419f0704412c87c3b9b08fd445c113f3cc1b",
+    "characters": 78202,
+    "nonWhitespace": 71526,
+    "lines": 869,
+    "urls": 51
+  },
+  {
+    "key": "chip",
+    "round": "A",
+    "path": "D:\\investment\\基本面\\行业调研\\产业背景\\行业调研_头部AI芯片全景与产能释放_2026-09-05.md",
+    "sha256": "29ec04b32fe837654a49836052446d486903d08a485d1368572d3bfdb6cc1e15",
+    "characters": 88699,
+    "nonWhitespace": 79018,
+    "lines": 908,
+    "urls": 107
+  },
+  {
+    "key": "chip",
+    "round": "B",
+    "path": "D:\\investment\\备份\\五专题重跑前结果_20260918_130642\\行业调研_头部AI芯片全景与产能释放_2026-09-18.md",
+    "sha256": "21041a0ced8135735a57e70e84e2e186e148ed1c271676c3e9f8d8071f12ab50",
+    "characters": 73329,
+    "nonWhitespace": 65297,
+    "lines": 829,
+    "urls": 114
+  },
+  {
+    "key": "chip",
+    "round": "C",
+    "path": "D:\\investment\\基本面\\行业调研\\产业背景\\行业调研_头部AI芯片全景与产能释放_2026-09-18.md",
+    "sha256": "54c59e681577a3833941b00ad958b076a789670392a15bce44315717fd6af8fc",
+    "characters": 70305,
+    "nonWhitespace": 61865,
+    "lines": 735,
+    "urls": 95
+  }
+]

@@ -1,0 +1,170 @@
+# 公司收入传导与价值传导评估：Sensata Technologies（ST）
+
+报告日期：2026-06-12  
+主口径：NTM = 2026Q2-2027Q1。所有收入、利润和现金流情景均为经营传导判断，不包含股价、目标价、估值倍数或投资评级。  
+资料边界：使用 `公司调研/`、`行业调研/` 与 Sensata 官方财报、年报、电话会、产品页和产品手册；未读取、引用或继承 `特征量化/`、Signals、回归、评分或排名资料。  
+重要口径：表中 `其中项` 只用于解释产品传导，不与分部收入重复相加。公司合计只使用 Automotive、Industrials、Aerospace, Defense & Commercial Equipment 三个报告分部加总。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口，即 2026Q2-2027Q1；FY2026、2027 年数据中心液冷/800VDC/UPS 采用节奏只作为补充口径，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：2025 年收入 `37.045 亿美元`；2026Q1 收入 `9.348 亿美元`，同比 `+2.6%`、organic `+4.2%`；2026Q2 公司指引收入 `9.50-9.80 亿美元`，调整后经营利润率 `19.2%-19.4%`。以 Q1 实际、Q2 指引和 2025 TTM 口径看，当前可见预期是低到中个位数增长、约 `19%` 调整后经营利润率。
+- 重要产品/业务线：Automotive 传感器与车用/后市场保护件；Industrials 的 HVAC/R、A2L refrigerant leak detection、通用工业传感/保护；数据中心 sensing/electrical protection；Dynapower UPS/BESS/power conversion；ADCE 高可靠传感/保护；HVDU/高压车辆配电。
+- NTM 公司收入四情景：悲观 `36.5-37.8 亿美元`；基准 `38.5-40.2 亿美元`；乐观 `40.8-43.0 亿美元`；极度乐观 `44.0-47.0 亿美元`。
+- 利润或 EBITDA 四情景：悲观调整后经营利润率 `17.5%-18.3%`、调整后 EBITDA `7.7-8.3 亿美元`；基准 `18.8%-19.5%`、`8.5-9.3 亿美元`；乐观 `19.8%-20.8%`、`9.5-10.6 亿美元`；极度乐观 `21.0%-22.5%`、`11.0-12.5 亿美元`。
+- 最大传导瓶颈：公司层面仍是汽车和工业周期，数据中心机会在 NTM 内的瓶颈不是需求叙事，而是客户规格导入、平台认证、订单金额、收入确认和 Dynapower 项目执行。
+- 最大利润率变量：数据中心电气保护和液冷传感若成为认证件，利润率向上；Dynapower 若以项目制低毛利或保修责任放量，收入上修不一定带来同等利润上修；汽车 EV 项目取消、关税 pass-through 和工业低利用率是下行变量。
+- 最大现金流变量：2025 年 FCF `4.902 亿美元`，2026Q1 FCF `1.046 亿美元`，现金生成强；但 Dynapower/BESS/UPS 项目若快速放大，会增加营运资本、保函、服务和验收现金流压力。
+- 可信度：公司基准为中高；数据中心 sensing/electrical protection 为中；Dynapower 数据中心 UPS/BESS 为低到中；800VDC/HVDC 大规模收入为低，主要属于乐观上限或远期期权。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Automotive 传感器、车用电气保护与后市场 | 2025 收入 `21.117 亿美元`；2026Q1 `5.248 亿美元` | 2025 `57.0%`；2026Q1 `56.1%` | 最大收入和利润底盘；决定公司 NTM 下限 | A | 进入基准；按公司披露分部和 Q2 指引处理 | 车用 400/800V switching、高效率接触器、FaultBreak、印度/中国 OEM 增量 |
+| Industrials：HVAC/R、A2L 泄漏检测、通用工业传感/保护 | 2025 Industrials `7.878 亿美元`；2026Q1 `1.842 亿美元`，其中数据中心/Dynapower 未单列 | 2025 `21.3%`；2026Q1 `19.7%` | 高利润分部，也是数据中心期权所在 | A（分部）；C（子线拆分） | 分部进入基准；子线收入不机械拆分 | A2L 全球化、工业自动化、数据中心 cooling/electrical sensing |
+| 数据中心 sensing 与 electrical protection（其中项） | 公司未披露独立收入；模型估计当前 NTM 可收入化锚点约 `0.4-0.9 亿美元`，嵌入 Industrials | 约低个位数 | 最贴近 AI 数据中心的产品级机会 | C | 只把现有低压 AC 保护、HVAC/sensing incumbency 小比例纳入基准；新液冷/HVDC 大部分进乐观 | hyperscaler 标准件、liquid cooling telemetry、800VDC/HVDC 保护 |
+| Dynapower UPS/BESS/power conversion（其中项） | 未披露独立 data center 收入；2025 年 Dynapower impairment 显示原清洁能源预期下修 | 无法可靠量化 | 单项目收入弹性最大，但执行风险也最大 | C/D | 现有 run-rate 可小比例进入基准；未披露 UPS pipeline 不进基准主口径 | AI data center time-to-power、microgrid、grid-forming inverter、大型 UPS/BESS 项目 |
+| Aerospace, Defense & Commercial Equipment 高可靠传感/保护 | 2025 收入 `8.050 亿美元`；2026Q1 `2.258 亿美元` | 2025 `21.7%`；2026Q1 `24.2%` | 当前增长最强、利润率最高分部；支撑公司质量 | A | 进入基准；按 Q1 organic `+16.7%` 后保守降速 | 防务、航空 backlog、商用设备补库存、发电机组相关需求 |
+| HVDU/高压车辆配电、接触器、PyroFuse、IMD（其中项） | 官方披露 HVDU 已用于重型电动卡车量产，但未披露金额 | 无法可靠量化 | 高压保护能力可复用；对利润结构有影响 | C | 已有量产项目可低比例进入基准；未披露新平台只进乐观 | Megawatt charging、商用车高压配电、数据中心 HVDC 技术迁移 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只判断外部需求池强弱，不判断 ST 份额、收入确认或利润率。当前需求锚为公司 2026Q1 财报/电话会、Q2 指引、项目内行业调研中的液冷、800VDC、UPS/BESS 和数据中心遥测口径。需求强弱均相对该产品自己的当前预期，不把 AI 数据中心 capex 总额直接当作 ST 需求。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Automotive 传感器、车用电气保护与后市场 | 2026Q1 Automotive 收入 `5.248 亿美元`；公司称 Q1 organic `+0.7%`、约 `4%` market outgrowth；2026 全球轻车产量预期约 `-2%` | 全球轻车产量 `-4%` 至 `-6%`，EV 项目延后，客户年降扩大 | 行业产量约 `-2%`，ST 靠 content/outgrowth 抵消，需求低个位数增长 | 轻车产量企稳，EV/high-efficiency contactor 和中国/印度 OEM 增量带来中个位数需求上修 | EV switching、FaultBreak、印度/中国本地化和商用车高压同时放量 | 需求池从 `-低个位数` 到 `+高个位数` | 基准符合当前预期；乐观需超出当前市场产量路径 | Q1 outgrowth 是正证；2025Q4 EV 项目取消和汽车周期是反证 |
+| Industrials：HVAC/R、A2L 泄漏检测、通用工业传感/保护 | 2026Q1 Industrials 收入 `1.842 亿美元`；公司称 U.S. residential HVAC YTD through Feb 下降约 `14%`，但 A2L wins 预计 H2 ramp | HVAC/R 延续下滑，A2L ramp 低于预期，工业建设疲弱 | H2 HVAC/R 修复，A2L leakage detection wins 正常放量，工业分部持平到小幅增长 | A2L 在北美、欧洲、亚洲认证/法规驱动超预期，工业订单恢复 | A2L 泄漏检测和工业高可靠传感成为全球标准件，工业周期同步上行 | 工业需求从 `-中个位数` 到 `+双位数` | 基准略低到符合当前预期 | 行业软弱是需求风险；A2L wins 和 H2 recovery 是正证 |
+| 数据中心 sensing 与 electrical protection（其中项） | 公司 Q1 电话会称 data center 已有低压 AC 保护、sensing/HVAC incumbency；产品被两个 hyperscaler specification 纳入，flow sensor 已进入客户验证；行业资料显示液冷 2026 design-in、2027 加速 | 液冷 adoption 推迟到 2027H2 后，800VDC 停留在样机，传感/保护需求只随普通 data center 小幅增长 | 2026H2-2027Q1 以 customer validation、AVL、低压 AC/PDU/CDU 小额交付为主；NTM 收入小幅上行 | hyperscaler 规格导入转为 2027 初订单，CDU/rack PDU/UPS 保护和 flow/pressure/temp sensing 批量导入 | 多个 hyperscaler 把液冷传感和 HVDC 保护写入标准设计，NTM 内提前规模化 | 需求池可从 `低个位数增长` 到 `数倍小基数增长` | 基准只承认小额增量；乐观以上才承认明显上修 | 官方 data center 页面和电话会是公司特定证据；但无订单金额、无独立收入披露 |
+| Dynapower UPS/BESS/power conversion（其中项） | 公司 data center 页面称 Dynapower grid-forming inverters、DC/DC converters 支持 onsite power；Q1 电话会称 actively bidding several large programs，UPS pipeline extensive | Bids 不转订单，2025 impairment 后客户仍观望，项目延迟 | 现有 energy storage/power conversion run-rate 维持，data center pipeline 主要贡献 pipeline 不贡献明显收入 | 至少一个 UPS/BESS/time-to-power 项目转为订单并在 NTM 内确认部分收入 | 多个大型 AI campus 项目提前转收入，grid-forming inverter 成为数据中心快速接入标准配置 | 需求池从 `无法可靠量化` 到 `数亿美元项目池` | 基准不高于当前预期；乐观才上修 | 需求来自 time-to-power 和动态负载；反证是 2025 Dynapower `2.257 亿美元` impairment |
+| ADCE 高可靠传感/保护 | 2026Q1 ADCE 收入 `2.258 亿美元`，reported `+14.8%`、organic `+16.7%`，segment margin `28.1%`；公司称 A&D mid-single growth、CE 订单趋势指向 H2 recovery | 北美 on-road truck H2 recovery 不兑现，A&D 交付受供应链限制 | A&D 稳定，商用设备 H2 补库，发电机组/data center construction 间接需求支撑 | A&D、商用设备、发电机组客户同步强，defense circuit breaker pipeline 转化 | 防务、发电、商用设备平台同时扩产，补库周期叠加新平台 | 需求池从 `持平/低个位数` 到 `+20%+` | 基准略高于 2025 但低于 Q1 年化激进外推 | Q1 强增长是正证；商用车/工程机械周期是反证 |
+| HVDU/高压车辆配电（其中项） | 官方披露 HVDU 用于重型电动卡车量产，并支持最高 3MW charging 场景；但未披露收入 | 重卡 EV adoption 放缓，客户项目取消，megawatt charging 基建延期 | 已量产平台按当前节奏爬坡，新增项目只小比例贡献 | 多 OEM 平台采用 HVDU/PDU/CU/CPDU，高压配电内容量上升 | 3MW charging 和重卡电动化在 NTM 内非线性加速 | 需求池从 `低增长` 到 `数倍小基数增长` | 基准符合当前量产路径；极度乐观多为远期期权 | 量产是正证；2025Q4 EV 项目取消是反证 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求能进入 ST 的 NTM 收入表，以及当前可收入化基数。公司能参与 data center、liquid cooling 或 800VDC，不等于 NTM 可确认收入。A/B 级可进入基准；C 级只有客户、产品和时间表清楚时小比例纳入；D/E 级不进 NTM 基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Automotive 传感器、车用电气保护与后市场 | 2025 分部收入 `21.117 亿美元`；2026Q1 `5.248 亿美元`；segment margin `23.5%` | 直接 | 现金流底盘，平台生命周期长，年降和产量周期压制 | `20.0-20.8 亿美元` | `21.2-22.2 亿美元` | `22.5-23.8 亿美元` | `24.0-25.5 亿美元` | 基准符合 Q1 run-rate 与市场 outgrowth；悲观低于当前预期 | A | 是 | 已披露分部收入、利润率、Q2 guide、Q1 organic/outgrowth | NTM 主基准收入 |
+| Industrials：HVAC/R、A2L 泄漏检测、通用工业传感/保护 | 2025 Industrials `7.878 亿美元`；2026Q1 `1.842 亿美元`；segment margin `27.1%`；子线未拆分 | 直接 | 高利润率；但 HVAC/R 短周期软、data center/Dynapower 混在同一分部 | `7.0-7.6 亿美元` | `7.8-8.6 亿美元` | `9.0-10.5 亿美元` | `11.0-13.5 亿美元` | 基准为当前分部正常兑现；乐观需 data center/A2L 明显加速 | A（分部）；C（子线） | 是 | 已披露分部收入；A2L wins 和 data center pipeline 提供上修线索 | NTM 主基准收入；内部子线不重复相加 |
+| 数据中心 sensing 与 electrical protection（其中项） | 公司未披露独立收入；Q1 电话会披露 incumbent、两个 hyperscaler specs、flow sensor customer validation；官方 data center 手册列 thermal/electrical products | 直接，嵌入 Industrials | 传感器/断路器/接触器/GFCI 单件毛利较好；认证件可溢价 | `0.3-0.6 亿美元` | `0.45-0.85 亿美元` | `1.0-1.8 亿美元` | `2.2-3.5 亿美元` | 基准只略高于当前 run-rate；乐观和极度乐观高于当前预期 | C | 部分是 | 仅现有 low-voltage AC protection、HVAC/sensing incumbency 和明确验证小比例纳入；液冷/HVDC 新平台不大额进入基准 | 基准小额；大部分上修在乐观/极度乐观 |
+| Dynapower UPS/BESS/power conversion（其中项） | 未披露 data center 收入；官方页面列 CPS-1250/CPS-2500、DC/DC converter；电话会称 bidding several large UPS programs；2025 Dynapower impairment `2.257 亿美元` | 直接，嵌入 Industrials | 项目制；收入弹性大，毛利和现金流质量不确定 | `0.1-0.3 亿美元` | `0.2-0.6 亿美元` | `0.8-1.8 亿美元` | `2.2-4.2 亿美元` | 基准低于或符合当前预期；未披露 pipeline 不能作为基准 | C/D | 小比例是 | 现有 power conversion run-rate 可小比例纳入；未披露客户、金额、交付时间的 pipeline 不进入基准 | 乐观以上才显著贡献 |
+| ADCE 高可靠传感/保护 | 2025 分部收入 `8.050 亿美元`；2026Q1 `2.258 亿美元`；segment margin `28.1%` | 直接 | 高利润率、高可靠、平台认证强 | `8.3-8.8 亿美元` | `9.2-10.0 亿美元` | `10.2-11.2 亿美元` | `11.5-12.5 亿美元` | 基准高于 2025 但不完全外推 Q1 强度 | A | 是 | 已披露分部收入和 Q1 high organic growth；A&D/CE 需求线索 | NTM 主基准收入 |
+| HVDU/高压车辆配电（其中项） | 官方披露 heavy-duty electric trucks serial production；HVDU 集成 fuses、contactors、EVCC、IMD、current sensors、liquid cooling、busbar | 直接，嵌入 Automotive/ADCE | 高压系统集成件利润高于普通单件，但项目取消风险高 | `0.4-0.8 亿美元` | `0.6-1.2 亿美元` | `1.4-2.4 亿美元` | `3.0-5.0 亿美元` | 基准为量产平台小幅爬坡；乐观高于当前预期 | C | 部分是 | 已有量产事实但无收入金额；进入基准需保守折扣 | 不能单独加到公司总收入，作为 Auto/ADCE 内部增量解释 |
+| 800VDC/HVDC 全架构、SST/MVDC、未披露 hyperscaler 总 capex | 产品页、行业资料或同业路线图；无 ST 客户订单金额 | 间接或远期 | 可能高毛利，但 NTM 证据不足 | `0` | `0` | `无法可靠量化` | `无法可靠量化` | 不进入当前预期 | D/E | 否 | 没有客户、订单金额、交付时间和收入确认路径 | 移入附录或仅作跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求池和收入基数出发，判断 NTM 能进入 ST 收入表和利润表的贡献。`其中项` 嵌入三大报告分部，不与分部重复相加。利润贡献为 segment operating income 或调整后经营利润贡献的经营估算，不是 GAAP 净利润。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Automotive 传感器、车用电气保护与后市场 | 悲观产品 | `20.0-20.8 亿美元` | `4.5-4.8 亿美元` | 下行至 `22%-23%` | 低于当前预期 | 汽车仍占公司过半；全球轻车产量预期下滑 | 保留悲观 | 汽车产量、EV 项目取消、客户年降 |
+| Automotive 传感器、车用电气保护与后市场 | 基准产品 | `21.2-22.2 亿美元` | `5.0-5.35 亿美元` | `23%-24%` | 符合当前预期 | Q1 outgrowth、Q2 guide、EV/contactors design wins | 保留基准 | 市场低增长限制收入弹性 |
+| Automotive 传感器、车用电气保护与后市场 | 乐观产品 | `22.5-23.8 亿美元` | `5.5-5.95 亿美元` | 上行至 `24%-25%` | 高于当前预期 | 400/800V switching、China/India share gain、SUV/truck mix | 保留乐观 | 需多个地区同步兑现 |
+| Automotive 传感器、车用电气保护与后市场 | 极度乐观产品 | `24.0-25.5 亿美元` | `6.1-6.75 亿美元` | `25%+` | 显著高于当前预期 | EV high-voltage wins、market rebound、content per vehicle | 下移为乐观上限 | NTM 内汽车行业难非线性反转 |
+| Industrials 总分部（含 data center/Dynapower） | 悲观产品 | `7.0-7.6 亿美元` | `1.75-2.05 亿美元` | `25%-27%` | 低于当前预期 | HVAC/R 下行、Dynapower 项目不转化 | 保留悲观 | 工业短周期和项目风险 |
+| Industrials 总分部（含 data center/Dynapower） | 基准产品 | `7.8-8.6 亿美元` | `2.10-2.45 亿美元` | `27%-29%` | 符合当前预期 | Q1 margin `27.1%`；A2L wins；data center end market grows | 保留基准 | 子线未披露，不能大额上修 |
+| Industrials 总分部（含 data center/Dynapower） | 乐观产品 | `9.0-10.5 亿美元` | `2.55-3.25 亿美元` | `28%-31%` | 高于当前预期 | liquid cooling/electrical protection/Dynapower 一项或多项转订单 | 保留乐观 | 需明确客户、交付、价格 |
+| Industrials 总分部（含 data center/Dynapower） | 极度乐观产品 | `11.0-13.5 亿美元` | `3.4-4.6 亿美元` | `31%-34%` | 大幅高于当前预期 | 多个 hyperscaler specs 转批量，Dynapower 大项目确认 | 下移为低可信上限 | 2025 impairment、无 backlog、项目营运资本 |
+| 数据中心 sensing 与 electrical protection（其中项） | 悲观产品 | `0.3-0.6 亿美元` | `0.1-0.2 亿美元` | 稳定或小幅下行 | 低于 AI 叙事预期，但不低于披露收入 | 现有 AC protection/sensing 仍有收入 | 保留悲观 | 无独立披露；平台认证延后 |
+| 数据中心 sensing 与 electrical protection（其中项） | 基准产品 | `0.45-0.85 亿美元` | `0.2-0.45 亿美元` | 小幅上行 | 符合可见证据 | Incumbency、two hyperscaler specs、flow sensor validation | 保留基准小额 | 规格导入不等于订单确认 |
+| 数据中心 sensing 与 electrical protection（其中项） | 乐观产品 | `1.0-1.8 亿美元` | `0.45-0.9 亿美元` | 上行 | 高于当前预期 | CDU/rack PDU/HVDC safety specs 进入 2027 初订单 | 保留乐观 | 系统商双供压价，ASP 不确定 |
+| 数据中心 sensing 与 electrical protection（其中项） | 极度乐观产品 | `2.2-3.5 亿美元` | `1.0-1.8 亿美元` | 显著上行 | 显著高于当前预期 | 多 hyperscaler 标准化、认证件稀缺 | 下移为乐观上限 | NTM 时间表不足，缺订单金额 |
+| Dynapower UPS/BESS/power conversion（其中项） | 悲观产品 | `0.1-0.3 亿美元` | `亏损至0.05 亿美元` | 下行 | 低于当前 pipeline 叙事 | Bids 不转订单，项目延期 | 保留悲观 | 2025 impairment、项目毛利风险 |
+| Dynapower UPS/BESS/power conversion（其中项） | 基准产品 | `0.2-0.6 亿美元` | `0.03-0.15 亿美元` | 低到中 | 符合当前可确认收入 | 现有 run-rate，小比例 data center work | 保留基准但低可信 | 没有披露客户和 backlog |
+| Dynapower UPS/BESS/power conversion（其中项） | 乐观产品 | `0.8-1.8 亿美元` | `0.15-0.45 亿美元` | 取决于项目毛利 | 高于当前预期 | 大型 UPS/BESS program 中标并确认部分收入 | 保留乐观 | 固定价、验收、保修、营运资本 |
+| Dynapower UPS/BESS/power conversion（其中项） | 极度乐观产品 | `2.2-4.2 亿美元` | `0.5-1.2 亿美元` | 上行但不线性 | 大幅高于当前预期 | 多个 AI campus time-to-power 项目转化 | 移入附录/远期上限 | NTM 缺可验证订单，项目执行风险大 |
+| ADCE 高可靠传感/保护 | 悲观产品 | `8.3-8.8 亿美元` | `2.15-2.40 亿美元` | `26%-27%` | 低于 Q1 强 run-rate | 商用车/工程机械弱，H2 补库不兑现 | 保留悲观 | 周期订单和供应链 |
+| ADCE 高可靠传感/保护 | 基准产品 | `9.2-10.0 亿美元` | `2.55-2.85 亿美元` | `27.5%-28.5%` | 符合当前预期 | Q1 organic `+16.7%`，A&D 稳定，CE H2 trend | 保留基准 | 不完全外推 Q1 高增长 |
+| ADCE 高可靠传感/保护 | 乐观产品 | `10.2-11.2 亿美元` | `2.95-3.30 亿美元` | `28.5%-30%` | 高于当前预期 | 发电机组、defense circuit breaker、truck replenishment | 保留乐观 | 商用设备订单可逆 |
+| ADCE 高可靠传感/保护 | 极度乐观产品 | `11.5-12.5 亿美元` | `3.45-3.90 亿美元` | `30%+` | 显著高于当前预期 | A&D、CE、generator/customer demand 同时上修 | 下移为乐观上限 | 非 AI 主线，需求非线性证据不足 |
+| HVDU/高压车辆配电（其中项） | 悲观产品 | `0.4-0.8 亿美元` | `0.1-0.25 亿美元` | 下行 | 低于当前预期 | EV truck adoption 放缓 | 保留悲观 | 客户项目取消 |
+| HVDU/高压车辆配电（其中项） | 基准产品 | `0.6-1.2 亿美元` | `0.2-0.45 亿美元` | 稳定 | 符合当前量产路径 | 官方披露 heavy-duty truck serial production | 保留基准小额 | 未披露金额，需保守折扣 |
+| HVDU/高压车辆配电（其中项） | 乐观产品 | `1.4-2.4 亿美元` | `0.45-0.85 亿美元` | 上行 | 高于当前预期 | 多 OEM 平台、3MW charging、系统集成内容量提升 | 保留乐观 | 商用车 EV adoption 节奏 |
+| HVDU/高压车辆配电（其中项） | 极度乐观产品 | `3.0-5.0 亿美元` | `1.0-1.8 亿美元` | 显著上行 | 大幅高于当前预期 | Megawatt charging 非线性放量 | 移入附录/远期上限 | NTM 证据不足，不能与 Auto/ADCE 重复加总 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：只汇总公司 NTM 收入、毛利率、经营利润率、调整后 EBITDA/净利润和 FCF 方向，不讨论市场定价。公司收入合计使用报告分部，不把 data center sensing、Dynapower 或 HVDU 其中项重复加入。当前预期锚为 2026Q2 guide `9.50-9.80 亿美元`、Q1 `9.348 亿美元`、2025 全年 `37.045 亿美元`、Q1 LTM adjusted EBITDA `8.422 亿美元`。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `36.5-37.8 亿美元` | 相对 TTM `-2%` 至 `+1%` | 低于 Q2 指引隐含 run-rate 和当前低个位数增长预期 | `29.5%-30.5%` | 调整后 `17.5%-18.3%` | 调整后 EBITDA `7.7-8.3 亿美元`；调整后净利润 `4.4-5.0 亿美元` | FCF `3.8-4.7 亿美元`，库存/项目现金流偏弱 | 中 | 汽车产量下行、HVAC/R 软、Dynapower 项目低转化、关税/材料成本 |
+| 基准公司 | `38.5-40.2 亿美元` | 相对 TTM `+3%` 至 `+8%` | 符合当前 Q2 guide、run-rate、低到中个位数增长和约 `19%` margin 预期 | `30.6%-31.6%` | 调整后 `18.8%-19.5%` | 调整后 EBITDA `8.5-9.3 亿美元`；调整后净利润 `5.2-5.9 亿美元` | FCF `5.0-5.8 亿美元`，现金生成稳健 | 中高 | data center 小额增量不足以改变公司结构；汽车仍占过半 |
+| 乐观公司 | `40.8-43.0 亿美元` | 相对 TTM `+9%` 至 `+15%` | 高于当前预期；需要 ADCE 强势、Industrials 修复、data center sensing/electrical protection 开始转收入 | `31.6%-32.8%` | 调整后 `19.8%-20.8%` | 调整后 EBITDA `9.5-10.6 亿美元`；调整后净利润 `6.1-7.1 亿美元` | FCF `5.9-7.0 亿美元`，但项目营运资本开始上升 | 中 | hyperscaler specs 转订单、H2 industrial recovery、项目 mix 和价格 |
+| 极度乐观公司 | `44.0-47.0 亿美元` | 相对 TTM `+18%` 至 `+26%` | 显著高于当前预期；要求 demand、capture、margin、execution 同时突破 | `33.0%-34.5%` | 调整后 `21.0%-22.5%` | 调整后 EBITDA `11.0-12.5 亿美元`；调整后净利润 `7.3-8.8 亿美元` | FCF `7.0-8.5 亿美元`，若项目预付款不足则实际 FCF 低于利润 | 低 | 多个数据中心项目提前确认、Dynapower 无执行事故、Auto/ADCE 同步上行；缺订单证据 |
+
+公司汇总校验：
+
+- 不重复计算：data center sensing/electrical protection 和 Dynapower 均在 Industrials 内；HVDU 在 Automotive/ADCE 内，不能再加到公司合计。
+- 一次性/会计口径：2025 Dynapower impairment 影响 GAAP 净利润，不代表核心传感/保护件现金流崩坏；本表使用调整后经营利润、调整后 EBITDA 和 FCF 方向。
+- 传统业务抵消：汽车仍占公司过半，任何 data center 小基数高增长都可能被汽车低增长、EV 项目取消或工业短周期抵消。
+- 低毛利收入：Dynapower/BESS 项目若以系统集成方式放量，收入上修不自动等于利润率上修；必须看价格条款、验收、质保和服务 attach。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。校准动作仅使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一个风险只在其实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 实际和 2026Q2 指引 | 公司汇总 | Q1 `9.348 亿美元`，Q2 guide `9.50-9.80 亿美元`，支撑基准 `38.5-40.2 亿美元` NTM | Q2 guide adjusted op margin `19.2%-19.4%`，支撑约 `19%` 基准 | Q1 FCF `1.046 亿美元`，现金转化强 | 基准保留 |
+| 三分部重组和分部收入披露 | 收入基数 | Automotive/Industrials/ADCE 均有 A 级分部收入 | ADCE `28.1%`、Industrials `27.1%`、Automotive `23.5%` 支撑 mix 判断 | 分部透明度提高，但子线仍未披露 | 基准保留 |
+| 数据中心产品被两个 hyperscaler specification 纳入、flow sensor 客户验证 | 产品贡献 | 支撑 data center sensing/electrical protection 从 D 上移到 C | 认证件可能提升毛利，但未证明价格 | 还未披露订单、金额、交付时间 | 乐观保留；基准只小额纳入 |
+| Liquid cooling 与 800VDC 行业需求 | 需求 | 行业需求池强，尤其 2027 起液冷/高压保护需求上升 | 高可靠传感/保护可溢价 | 认证周期和客户设计冻结决定收入确认 | 乐观保留；极度乐观下移 |
+| Dynapower data center UPS/BESS pipeline | 收入基数/执行 | pipeline 可形成上限，但不是订单 | 项目毛利不确定，可能稀释 | 大项目需要营运资本、commissioning、服务和质保 | 乐观保留；极度乐观移入附录 |
+| 2025 Dynapower `2.257 亿美元` impairment | 产品贡献/可信度 | 限制 Dynapower 基准收入上修 | 说明此前清洁能源预期下修，利润质量需重新证明 | 增加执行和预测误差风险 | 悲观保留；极度乐观下移 |
+| Automotive 仍占过半 | 公司组合 | 数据中心小额增量可能被汽车周期抵消 | 车用年降和 EV 项目取消压制利润率 | 现金流稳定但增长慢 | 公司基准保留；极度乐观需多环节同时成立 |
+| ADCE Q1 strong organic growth | 公司组合 | 支撑 NTM 公司基准上沿和乐观 | 分部 margin 高，mix 正向 | 高可靠业务现金质量较好 | 基准上沿保留 |
+| 未披露 backlog/RPO/book-to-bill/data center revenue | 证据可信度 | 限制所有 data center 大额基准收入 | 无法证明大额毛利扩张 | 无法判断收入确认与营运资本 | 大额机会不进基准；仅作跟踪或乐观上限 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 汽车/HVAC/R 下行、Dynapower 无订单、data center 认证延后，NTM 收入 `36.5-37.8 亿美元` | Q1/Q2 run-rate 和 FCF 给公司下限；ADCE 强 | 汽车占比高、HVAC/R 软、EV 项目取消、Dynapower impairment | 保留 | 悲观公司 | 中 | Dynapower impairment 只限制 Dynapower 和公司可信度，不再重复压低 Automotive 或 ADCE |
+| 基准 | 公司按 Q2 guide 和 current run-rate 正常兑现，NTM 收入 `38.5-40.2 亿美元`，调整后经营利润率约 `19%` | Q1 收入、Q2 guide、三分部 organic growth、FCF、ADCE 强 | data center 无独立收入/backlog，Industrials 子线不透明 | 保留 | 基准公司 | 中高 | 未披露 data center backlog 只限制 data center 上修，不否定已披露分部收入 |
+| 乐观 | ADCE 保持强势、Industrials 修复、data center sensing/electrical protection 由规格导入转小批量订单，NTM 收入 `40.8-43.0 亿美元` | 两个 hyperscaler specs、flow sensor validation、A2L wins、ADCE Q1 organic `+16.7%` | 客户、金额、时间表仍不完整；Dynapower 项目制 | 保留 | 乐观公司 | 中 | 行业液冷需求只提升需求和乐观收入，不直接提升公司利润率 |
+| 极度乐观 | 多个 data center 产品线和 Dynapower 项目在 NTM 内非线性放量，收入 `44.0-47.0 亿美元`，利润率 `21%+` | 行业需求、产品组合、公司已有 data center incumbency | 无订单金额、无独立收入、adoption 多在 2027 中后、Dynapower impairment | 下移 | 乐观上限/附录跟踪 | 低 | 800VDC 和 Dynapower 大项目证据不足，只限制极度乐观，不惩罚基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。NTM 收入大概率落在 `38.5-40.2 亿美元`，调整后经营利润率 `18.8%-19.5%`，调整后 EBITDA `8.5-9.3 亿美元`，FCF 维持 `5.0-5.8 亿美元` 区间。核心不是 AI 数据中心立即重塑公司，而是三分部低到中个位数增长、ADCE 高利润率和运营纪律维持。
+- NTM 收入结论：Automotive 仍是收入基数和下行风险主体；ADCE 是当前增长质量最高的分部；Industrials 是数据中心期权承载分部，但 data center direct revenue 仍未披露，基准只可小额纳入。
+- 利润/现金流结论：Sensata 的经营价值传导优先来自 margin resilience、productivity、working capital 和分部 mix，而不是单纯收入高增。数据中心电气保护/传感若进入认证平台，利润质量较好；Dynapower 若以项目制放量，收入质量需单独审查。
+- 主要传导瓶颈：需求层面不是问题，收入确认层面才是核心。产品页、specification 和 validation 到 NTM 收入之间还需要客户、合同/PO、交付、验收和价格证据。
+- 乐观情景成立条件：2026H2 前后，Industrials 披露 data center design win、订单或 revenue acceleration；flow sensor 和 electrical protection 进入 CDU/rack PDU/UPS 平台；ADCE H2 truck replenishment 与 A&D 强需求持续；Automotive 无进一步 EV 项目取消。
+- 极度乐观情景成立条件：多个 hyperscaler 把 ST 传感/保护件列为标准件；Dynapower 至少两个大型 UPS/BESS/time-to-power 项目进入收入确认；Automotive、ADCE、Industrials 三分部同时增长，且数据中心 mix 拉高利润率而不是低毛利 pass-through。
+- 悲观情景触发条件：2026Q2 guide 之后收入低于 guide 或 Q3 guide 下修；Automotive EV/ICE 项目取消再现；Industrials organic growth 转负；Dynapower 新 impairment 或项目亏损；data center specs 迟迟没有订单或客户披露。
+- 后续跟踪数据：Industrials organic growth；data center revenue/design win/order disclosure；flow sensor customer validation 进展；PDU/CDU/UPS/HVDC 平台认证；Dynapower backlog/订单/毛利/现金流；ADCE H2 order trends；Automotive market outgrowth 和 EV contactor wins；FCF conversion 与 net leverage。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务数据截至 2026Q1；公司 2026Q2 指引截至 2026-04-28 财报；产品资料截至 2026-06-12 可取得公开页面；本地行业资料为 2026-06-10 至 2026-06-11 文件。
+- 主要收入、订单、指引和利润率来源：
+  - Sensata 2026Q1 earnings release：`https://investors.sensata.com/news/news-details/2026/Sensata-Technologies-Reports-First-Quarter-2026-Financial-Results/default.aspx`
+  - Sensata 2026Q1 earnings presentation：`https://s21.q4cdn.com/676487211/files/doc_financials/2026/q1/Q1_26_ST_Results_Presentation.pdf`
+  - Sensata 2026Q1 earnings transcript：`https://s21.q4cdn.com/676487211/files/doc_financials/2026/q1/ST-USQ_Transcript_2026-04-28.pdf`
+  - Sensata 2025Q4/FY2025 earnings release：`https://investors.sensata.com/news/news-details/2026/Sensata-Technologies-Reports-Fourth-Quarter-and-Full-Year-2025-Financial-Results/default.aspx`
+  - Sensata 2025 Annual Report：`https://s21.q4cdn.com/676487211/files/doc_financials/2025/ar/Sensata-2025-Annual-Report.pdf`
+- 产品与业务来源：
+  - Sensata Data Centers page：`https://www.sensata.com/industries/data-centers`
+  - Sensata Data Center Solutions brochure：`https://www.sensata.com/resources/brochure-sensata-data-center-solutions`
+  - Sensata Flow Sensors：`https://www.sensata.com/products/liquid-level-and-flow-sensors/flow-sensors`
+  - Dynapower Data Centers energy storage page：`https://dynapower.com/market/energy-storage/data-centers/`
+  - Dynapower CPS-1250/CPS-2500：`https://dynapower.com/products/energy-storage/cps-1250-2500/`
+  - Sensata HVDU megawatt charging release：`https://www.sensata.com/contact/newsroom/sensata-technologies-high-voltage-distribution-units-enabling-megawatt-charging`
+  - Sensata HX360 contactors：`https://www.sensata.com/products/contactors-and-fuses/hx360-series-contactors`
+- 项目内公司来源：
+  - `公司调研/配电_电源_功率器件/ST_Sensata Technologies_公司调研_2026-06-12.md`
+- 项目内行业资料：
+  - `行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-06-10.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - 2026 年最可确认的 data center 相关收入不是 800VDC 全面替代，而是低压 AC/PDU/CDU sensing/protection、HVAC/R sensing、A2L leak detection 和普通 data center incumbency。
+  - 2027 年以后，液冷、HVDC/800VDC、rack PDU/CDU/UPS/BESS 和 grid-forming power conversion 才可能显著扩大 Sensata 的 Industrials 收入上限。
+  - SST/MVDC、多个大型 Dynapower AI campus 项目、HVDU 重卡 megawatt charging 大规模普及均列为远期期权或乐观上限，不进入 NTM 基准主口径。

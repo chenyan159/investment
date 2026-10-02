@@ -1,0 +1,538 @@
+# 公司：CSCO Cisco Systems（思科系统）
+
+> **研究截止日：2026-07-11（美国太平洋时间）**  
+> **市场数据日：2026-07-10 收盘；财务数据截止：FY2026 Q3，季度截至 2026-04-25、披露于 2026-05-13。**  
+> **币种与单位：除特别说明外均为美元；B = 十亿美元，M = 百万美元。**
+
+## 研究边界、口径与结论先行
+
+本报告只使用 Cisco 官方财报、SEC 文件、官方产品资料、过去半年会议/渠道/技术资料及本项目“行业调研”目录中的相关 AI 网络、光互联、软件和数据中心产业资料；没有读取或继承其他公司报告，也没有使用“特征量化”内容。
+
+必须先区分三个经常被混用的概念：
+
+1. **订单（orders/bookings）**：管理层披露的客户下单额，可能跨季度交付，也可能受项目节奏、合同条款和客户验收影响。
+2. **RPO（剩余履约义务）**：已签约、尚未确认的产品与服务收入；包含多年期软件和服务，不等于硬件 backlog，也不能从中单独提取 AI。
+3. **库存采购承诺（inventory purchase commitments）**：Cisco 对芯片、光器件、内存和代工供应商的采购承诺，是供给准备，不是客户订单。
+
+因此，FY26 的 **90 亿美元 hyperscaler AI 基建订单指引减去 40 亿美元 AI 收入指引，并不能机械地写成 50 亿美元“确定 backlog”**。它只说明需求形成速度显著快于当期收入确认速度，后文用交付窗口、RPO、供应采购、设计赢单和情景取消率共同推断。
+
+### 核心投资判断
+
+- **业务已经从“低增长、分红型企业网络龙头”重新定价为“AI 网络与光互联挑战者”**。Q3 FY26 总收入 158.41 亿美元、同比 +12%；Networking 收入 +25%，产品订单 +35%，剔除 hyperscaler 后仍 +19%，数据中心交换订单 >+40%。这不是单一大客户造成的全部增长，但 AI hyperscaler 是估值弹性的核心。
+- **最强硬证据是订单、光学端口和采购承诺同时上升**：FY26 hyperscaler AI 订单指引由 50 亿上调到 90 亿美元，收入指引由 30 亿上调到 40 亿美元；Acacia 单季订单 >10 亿美元；截至 Q3，Cisco 累计出货 >75 万个 400G coherent ports 和 >4 万个 800G coherent ports；一年内到期的库存采购承诺达 141.49 亿美元。
+- **Cisco 的 AI 差异化不是“卖 GPU”，而是自研交换/路由芯片 Silicon One、品牌系统、Acacia coherent optics、NOS/遥测、Nexus One/Splunk 和安全的一体化**。这使公司可以在每个 AI 集群同时获取交换机、光互联、软件、支持和安全价值；也使其比纯白盒拥有更高的混合毛利和替换成本。
+- **技术路线判断**：800G Ethernet 已进入主流，1.6T 与 102.4T 在 2026H2—2027 年进入量产爬坡；Cisco G300、P200/G200 和 Acacia 800ZR/ZR+ 处在正确方向。LPO 是节能的可插拔过渡路线；CPO 仍是中长期选项，不能当成 Cisco 当前收入核心。Ethernet scale-out/scale-across 会增长，但不会在一年内取代 NVLink/NVSwitch 等 scale-up。
+- **财务健康但并非“无杠杆”**：现金及投资 166.40 亿美元、总债务 313.03 亿美元、净债务 146.63 亿美元；TTM 经营现金流强、利息覆盖高。短期流动比率 0.92 看似偏低，但流动负债中有 164.46 亿美元递延收入，剔除该非现金式履约负债后调整流动比率约 1.58。主要资产负债表弱点是商誉和无形资产合计 671.42 亿美元，占总资产 53.5%、相当于权益的 137%。
+- **估值已经反映相当部分好消息**：2026-07-10 收盘价 121.31 美元，TTM PE 40.43 倍、Forward PE 25.86 倍、PS 7.87 倍。以传统 Cisco 看很贵；以 FY27 AI 收入继续 30%—70% 增长、园区更新持续、毛利守住中 60% 看才合理。下行风险不再只是“增长慢”，而是 AI 订单转换、光学供应和毛利任何一项低于预期导致估值回撤。
+- **本报告 FY27（截至 2027-07）总收入情景**：基准 680—710 亿美元（约 +8%—13%）、乐观 730—770 亿美元（约 +16%—22%）、极度乐观 800—860 亿美元（约 +27%—37%）；对应 hyperscaler AI 基建收入中枢约 53/67/90 亿美元。极度乐观不是目标价基准，而是订单不取消、G300/1.6T 顺利放量、Acacia 扩产和园区周期共振的上沿压力测试。
+
+## 1. 公司全景、投资者认知、三年转型与财务健康
+
+### 1.1 整体业务与产业链位置
+
+Cisco 是全球最大的企业与运营商网络设备、网络软件和相关服务供应商之一。公司不拥有先进晶圆厂，核心环节是架构、芯片与系统设计、NOS/安全/可观测软件、渠道销售和全球支持；生产主要交给合同制造商。其价值链位置如下：
+
+**晶圆/封装、光器件、内存、PCB 与代工 → Cisco 自研 Silicon One/Acacia DSP 与系统设计 → N9000/N9100/8000、Catalyst、UCS、光模块 → NX-OS/IOS XR/Nexus One/Splunk/安全 → VAR、系统集成商、云厂商与终端客户。**
+
+最新季度业务结构：
+
+- **Networking**：数据中心、园区、分支、无线、路由、工业网络，Q3 FY26 收入 88.15 亿美元。
+- **Security**：网络安全、SASE、Secure Firewall、AI Defense、Hypershield/Live Protect、身份和工作负载安全，20.08 亿美元。
+- **Collaboration**：Webex、协作终端、呼叫与联系中心，10.24 亿美元。
+- **Observability**：Splunk Observability、ThousandEyes 等被单独列入该产品组的部分，2.69 亿美元；Splunk 的收入还分散在 Security 和 Services，不能只看这一行。
+- **Services**：技术支持、订阅支持、咨询和客户体验服务，37.24 亿美元。
+
+产业链上，Cisco 同时占据四个利润池：
+
+1. **芯片/IP**：Silicon One G/P/Q 系列、Acacia coherent DSP/硅光；
+2. **品牌硬件系统**：交换机、路由器、UCS、无线和光模块；
+3. **高毛利软件与订阅**：NX-OS、IOS XR、Nexus One、Cloud Control、Splunk、SASE；
+4. **安装、支持和运维数据闭环**：TAC、遥测、ThousandEyes、Splunk 与渠道。
+
+这比只卖交换 ASIC 的 Broadcom、只卖光模块的供应商拥有更宽的价值获取面，但也意味着 Cisco 会同时面对 Arista、NVIDIA、Broadcom、Ciena、Palo Alto Networks、HPE/Juniper、Datadog 等不同赛道的强敌。
+
+### 1.2 投资者心中的 Cisco：从“现金牛”到 AI 网络再评级
+
+| 阶段 | 典型投资者认知 | 支撑事实 | 当前变化 |
+|---|---|---|---|
+| 2023 年以前 | 企业网络装机基础庞大、增长低、分红与回购稳定的成熟现金牛 | 园区交换/路由、服务和渠道占优，需求受企业更新周期影响 | 仍是下行保护，但不能解释当前 40 倍 TTM PE |
+| 2024—2025 | 通过 Splunk 将组合从硬件向安全、可观测性和经常性软件迁移 | 2024-03 完成约 280 亿美元 Splunk 收购；商誉/无形资产显著增加 | 整合与云迁移拖累短期 Security/Observability 增速 |
+| 2025H2—2026 | Silicon One + Acacia 进入 hyperscaler，成为 AI Ethernet/scale-across 挑战者 | FY26 AI 订单指引 90 亿、收入 40 亿；数据中心交换订单 >40%；Acacia 单季订单 >10 亿 | 市场愿意为 AI 订单转换和 1.6T 周期支付更高倍数 |
+| 2026 以后待验证 | “从芯片到 Cloud Control”的 AI 基础设施与 AgenticOps 平台 | G300、Nexus One、Cloud Control、AI Defense、Galileo/Astrix | 软件直接变现、独立客户采用和毛利仍需财报证明 |
+
+**判断**：Cisco 的装机基础、渠道和支持能力是真护城河；AI 再评级也有真实订单支撑。但公司不是 NVIDIA 式算力垄断者。它更像“AI 集群网络总包商 + 企业网络现金牛”，估值上限取决于能否把 hyperscaler 赢单扩展到 neocloud、主权云和企业，同时不牺牲毛利。
+
+### 1.3 最近三年重大业务变动、转型与收购
+
+| 日期 | 事件 | 战略意义 | 财务/执行观察 |
+|---|---|---|---|
+| 2024-03-18 | 完成 [Splunk 收购](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2024/m03/cisco-completes-acquisition-of-splunk.html)，股权价值约 280 亿美元 | 将安全分析、日志、可观测性和数据平台并入 Cisco，是公司史上最大交易 | FY25 10-K 记录 Splunk 相关商誉约 193 亿、可辨认无形资产约 105.5 亿；带来交叉销售，也形成减值与整合风险 |
+| 2024-04-12 | 完成 [Isovalent 收购](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2024/m04/cisco-completes-acquisition-of-isovalent-to-define-the-future-of-multicloud-networking-and-security.html) | 获得 Cilium、Tetragon、eBPF 人才与云原生网络/运行时安全能力 | 是 Hypershield/工作负载安全的技术底座之一；商业化仍早于成熟防火墙/SASE |
+| 2024-08 起 | 收购 Robust Intelligence，交易价未官方披露；451 Research 估计约 3.5 亿美元 | 模型红队、AI 风险与防护能力并入 AI Defense | 小额技术收购，贡献主要是产品能力而非当期收入 |
+| 2025-10—2026-02 | 推出 51.2T P200/G200 系统，随后发布 102.4T G300、1.6T 系统与光学 | 从传统企业网络切入 hyperscaler AI scale-out/scale-across | 已有 P200/G200 系统设计赢单；G300 仍处在 2026 年发货/客户验证爬坡 |
+| 2026-04-09；2026-05-22 完成 | [Galileo](https://blogs.cisco.com/news/cisco-announces-the-intent-to-acquire-galileo) | 为 Splunk 增加 AI 模型/Agent 的质量、幻觉、漂移、成本与治理观测 | 交易条款未披露；收入基数小，战略价值大于短期财务贡献 |
+| 2026-05-04；2026-06-29 完成 | [Astrix Security](https://blogs.cisco.com/news/cisco-announces-intent-to-acquire-astrix-security) | 增加非人身份、API key、OAuth token、AI agent 身份与权限安全 | 媒体估值区间不等于官方价格；先看与 Duo/SSE/AI Defense 的产品整合 |
+| 2026-06-18 宣布意向 | WideField Security | 扩展 Splunk 对 agent、机器和人类身份的关联与威胁调查 | 截止日尚不能视为收入贡献，交易条款未披露 |
+| 2026-05-13 | [最高 10 亿美元重组计划](https://www.sec.gov/Archives/edgar/data/858877/000085887726000075/csco-20260513.htm) | 将资源转向 silicon、optics、security、AI；Q4 FY26 预计确认约 4.5 亿美元，其余 FY27 | 是主动组合再配置，同时说明传统岗位/产品需要收缩；非 GAAP 利润会排除部分费用 |
+| 2026-06 | 发布 Cloud Control、Cisco IQ、Live Protect，强化 AgenticOps | 尝试把网络、安全、算力、可观测性与协作统一到一个控制面 | [Cloud Control](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m06/cisco-unveils-agentic-platform-for-operating-and-defending-critical-it-infrastructure.html) 对合资格订阅客户不额外收费，近期更像留存、附加销售和服务驱动，而非独立大额 ARR |
+
+### 1.4 最新股价、估值、增速与利润率
+
+| 指标 | 最新值 | 数据日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | **$121.31** | 2026-07-10 收盘；盘后约 $121.66 | 2026-07-11 为周六，使用最近交易日 |
+| 市值 | **$478.14B** | 2026-07-10，[StockAnalysis](https://stockanalysis.com/stocks/csco/) | 不同终端因股份口径可出现约 $478B—$483B |
+| TTM PE | **40.43x** | 2026-07-10 | 已不是传统低估值 Cisco |
+| Forward PE | **25.86x** | 2026-07-10，市场一致预期口径 | 依赖 FY27 盈利增长兑现 |
+| TTM PS | **7.87x** | 市值 $478.14B / TTM 收入 $60.75B | 对硬件占比较高的公司偏贵 |
+| TTM 收入 | **$60.75B，+9.2%** | 截至 FY26 Q3 的最近四季 | FY26 Q3 单季 +12% |
+| TTM 净利润 | **$11.96B，+约 22%** | 最近四季 GAAP | TTM 净利率 19.7% |
+| TTM GAAP 毛利率 | **约 64.3%** | FY25 Q4 最终审计值 + FY26 Q1—Q3 加权 | 产品/服务组合与供应成本决定弹性 |
+| TTM GAAP 净利率 | **约 19.7%** | $11.958B / $60.746B | Q3 单季 21.3% |
+| FY26 收入指引 | **$62.8B—$63.0B** | 2026-05-13 | 中点同比约 +11.0% |
+| FY26 GAAP EPS 指引 | **$3.16—$3.21** | 2026-05-13 | 包含重组、关税等当时估计影响 |
+| 股息 | 年化 **$1.68/股，约 1.38%** | Q3 宣布季度股息 $0.42 | 收益率已被股价上涨压低 |
+
+**估值判断**：Forward PE 25.9 倍可以由 AI 网络、园区更新和高毛利软件支撑；TTM PE 40.4 倍则明确要求利润继续快于收入增长。若 FY27 只回到中个位数增长，PS 近 8 倍的压缩风险明显。
+
+### 1.5 资产负债表与财务健康评估
+
+截至 2026-04-25 的 [Q3 FY26 10-Q](https://www.sec.gov/Archives/edgar/data/858877/000085887726000078/csco-20260425.htm)：
+
+| 项目 | 金额 | 派生指标/观察 |
+|---|---:|---|
+| 现金及现金等价物 | $7.083B |  |
+| 投资 | $9.557B | 现金 + 投资 = **$16.640B** |
+| 短期债务 | $11.932B | 一年内到期压力可由现金流、再融资和投资组合覆盖 |
+| 长期债务 | $19.371B | 总债务 **$31.303B** |
+| 净债务 | **$14.663B** | 相对约 $12B TTM 净利润和强经营现金流可控 |
+| 流动资产/流动负债 | $36.559B / $39.541B | 流动比率 **0.92x** |
+| 其中流动递延收入 | $16.446B | 剔除该履约型负债后调整流动比率约 **1.58x** |
+| 商誉/购入无形资产 | $59.292B / $7.850B | 合计占总资产 **53.5%**；相当于权益 **137%** |
+| 总资产/总负债/权益 | $125.546B / $76.685B / $48.861B | 有形权益约为负 $18.3B，收购资产减值是尾部风险 |
+| FY26 前九月经营现金流 | $8.791B | 含约 $2.3B 美国过渡税最终付款影响 |
+| FY26 前九月资本开支 | $1.020B | 粗略自由现金流 **$7.771B** |
+| FY26 前九月 EBIT/利息支出 | $11.104B / $1.097B | EBIT 利息覆盖约 **10.1x** |
+
+**健康度：7.5/10，稳健但资产质量并非完美。**
+
+- 正面：现金流强、资本开支轻、递延收入大、利息覆盖高，短期偿债风险低。
+- 中性：收购 Splunk 后从净现金转向净负债，但债务相对盈利能力仍可控。
+- 负面：商誉和无形资产非常大；Security/Observability 若长期低于收购时增长假设，可能触发减值。库存和采购承诺快速增加也会放大需求误判风险。
+
+## 2. 最新及最近四次财报：五季度经营、订单与交付
+
+### 2.1 五季度收入和利润
+
+金额单位为十亿美元；增长均为同比。Cisco 不披露 Networking、Security、Collaboration、Observability 各自毛利率，只披露总公司及 Product/Services 毛利率。因此表内业务利润率不能伪造，产品级利润率在第 3—5 节以明确标注的产业模型估算。
+
+| 财报季度（截至日） | 总收入/增速 | Networking | Security | Collaboration | Observability | Services | GAAP 毛利率：总/产品/服务 | GAAP 净利润/净利率 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| **FY25 Q3**（2025-04-26） | $14.149 / +11% | $7.068 / +8% | $2.013 / +54% | $1.031 / +4% | $0.261 / +24% | $3.775 / +3% | 65.6% / 64.4% / 68.7% | $2.491 / 17.6% |
+| **FY25 Q4**（2025-07-26） | $14.673 / +8% | $7.633 / +12% | $1.952 / +9% | $1.042 / +2% | $0.259 / +4% | $3.787 / 0% | **63.2% / 61.5% / 68.3%** | **$2.550 / 17.4%** |
+| **FY26 Q1**（2025-10-25） | $14.883 / +8% | $7.768 / +15% | $1.980 / -2% | $1.055 / -3% | $0.274 / +6% | $3.806 / +2% | 65.5% / 64.5% / 68.4% | $2.860 / 19.2% |
+| **FY26 Q2**（2026-01-24） | $15.349 / +10% | $8.294 / +21% | $2.018 / -4% | $1.054 / +6% | $0.277 / 0% | $3.707 / -1% | 65.0% / 63.9% / 68.4% | $3.175 / 20.7% |
+| **FY26 Q3**（2026-04-25） | **$15.841 / +12%** | **$8.815 / +25%** | **$2.008 / 0%** | $1.024 / -1% | $0.269 / +3% | $3.724 / -1% | **63.6% / 61.9% / 69.2%** | **$3.373 / 21.3%** |
+
+注：FY25 Q4 初始新闻稿曾给出更高的毛利和净利润；随后一项供应商和解调整了最终审计结果。本报告采用 FY25 10-K 及 FY26 Q1 对比表中的最终数值，避免把初始未调整数据当成最终数据。五季官方入口：[FY25 Q3](https://investor.cisco.com/news/news-details/2025/CISCO-REPORTS-THIRD-QUARTER-EARNINGS/default.aspx)、[FY25 Q4](https://investor.cisco.com/news/news-details/2025/CISCO-REPORTS-FOURTH-QUARTER-AND-FISCAL-YEAR-2025-EARNINGS/)、[FY26 Q1](https://investor.cisco.com/news/news-details/2025/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx)、[FY26 Q2](https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-SECOND-QUARTER-EARNINGS/default.aspx)、[FY26 Q3](https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-THIRD-QUARTER-EARNINGS/default.aspx)。
+
+### 2.2 五季度订单、RPO、AI、库存与交期
+
+| 财报季度 | 产品订单与客户结构 | Hyperscaler AI 订单；系统/光学 | 其他 AI 客户与管线 | RPO | 库存；采购承诺 | AI 数据中心收入占比 | Backlog、交期、取消率 |
+|---|---|---|---|---:|---:|---|---|
+| FY25 Q3 | 产品订单 +20%；剔除 Splunk +9%；Enterprise +22%、Public +8%、SP/Cloud +32% | 单季 >$0.6B；FYTD >$1B；>2/3 系统、其余光学 | 未单列 | $41.7B | $2.832B；约 $6.345B | **模型 $0.25—0.45B，占 1.8%—3.2%** | 未披露纯硬件 backlog、统一交期或取消率 |
+| FY25 Q4 | 产品订单 +7%；Enterprise +5%、Public -6%、SP/Cloud +49%；DC switching 订单中双位数 | 单季 >$0.8B；全年 >$2B；>2/3 系统 | Enterprise AI bookings 中约一半 DC switching、其余 compute | $43.5B | $3.164B；$7.599B | **模型 $0.35—0.60B，占 2.4%—4.1%**；FY25 AI 收入约 $1B 量级 | 未披露；订单与收入存在明显时滞 |
+| FY26 Q1 | 产品订单 +13%；Networking 高十几%；Enterprise +4%、Public +12%、SP/Cloud +45% | **$1.3B**；系统/光学大致平衡 | >$0.2B；pipeline >$2B | $42.9B | $3.395B；$8.321B | **模型 $0.60—0.80B，占 4.0%—5.4%** | 未披露；供应准备开始显著上升 |
+| FY26 Q2 | 产品订单 +18%；剔除 hyperscaler +10%；Networking >+20%；SP/Cloud +65% | **$2.1B**；约 60% 系统/40% 光学 | $0.35B；pipeline $2.5B | $43.4B | $3.920B；$10.055B | **模型 $0.80—1.05B，占 5.2%—6.8%** | 未披露；公司修改部分 compute 合同和价格保护条款 |
+| FY26 Q3 | **产品订单 +35%，剔除 hyperscaler +19%；Networking >+50%；DC switching >+40%；SP/Cloud +105%** | **$1.9B；FYTD $5.3B**；系统/光学平衡；FY26 指引 $9B | $0.3B；FYTD $0.9B；pipeline **$3B** | **$43.462B**，其中产品 $22.058B；约 50% 总 RPO 在 12 个月内 | **$4.708B；$16.033B**，其中 $14.149B 一年内到期 | **模型 $1.00—1.25B，占 6.3%—7.9%**；FY26 指引 $4B/全年收入中点约 **6.4%** | 无官方统一值；渠道反馈从 4—6 周到 5—9 个月，SKU 差异极大 |
+
+**AI 收入估算方法**：Cisco 只给 FY26 全年 hyperscaler AI 基建收入 40 亿美元指引，没有逐季或产品拆分。表中季度数是根据全年指引、订单时点、系统/光学组合、Acacia 出货和收入确认节奏推算，不是公司披露；不含可能分散在园区、安全、服务中的“AI 相关”收入。
+
+### 2.3 订单挤压、交期与取消：证据强弱排序
+
+1. **最强：Cisco 自身采购承诺。**库存采购承诺从 FY25 年末 75.99 亿增至 FY26 Q3 的 160.33 亿美元，+111%；库存从 31.64 亿增至 47.08 亿，+49%。10-Q 明确指向 Silicon One、内存及其他 hyperscaler 需求，其中相当部分承诺为 firm、noncancelable、unconditional。这说明公司正在为真实交付准备物料，但也把需求反转风险留在自己资产负债表上。
+2. **强：设计赢单与端口出货。**Q3 新增五个 hyperscaler design wins：两个 optics（800G ZR+、100G ZR）和三个系统（两个 P200 scale-across、一个 G200 scale-out）；Acacia 单季订单 >10 亿美元、同比三位数增长；累计 400G/800G coherent ports 出货 >75 万/>4 万。
+3. **中强：订单广度。**剔除 hyperscaler 后产品订单仍 +19%，园区 >+25%、DC switching >+40%、无线 >+40%，降低了“单一 AI 大单”的解释比例。
+4. **中：渠道交期。**2026 年 3—6 月业内渠道反馈高度分散：有 Nexus 9K 等配置等待约 5 个月、部分 Cisco SKU 报价 9 个月，也有常规硬件恢复到 4—6 周。可解释为高端 ASIC/光学/内存紧、普通配置改善，不能用一条论坛帖子概括全公司。
+5. **中低：价格与取消条款。**[CRN 渠道报道](https://www.crn.com/news/networking/2026/cisco-revises-partner-contract-terms-in-response-to-soaring-memory-prices)及 Cisco Q2 prepared remarks 显示，内存成本上升后公司对部分 **compute** 订单缩短价格保护、允许在发货前约 45 天取消并保留重新定价权。该条款不能外推为 AI switching 订单的取消率。
+6. **未知：客户取消率。**Cisco 没有披露 AI、网络或全公司订单取消率。后文的 0%—10% 是压力测试假设，不是事实。
+7. **未披露：Book-to-bill（B2B）。**Cisco 只披露订单同比增速而不披露总订单美元额，因此无法计算公司或 Networking 的标准 B2B。FY26 AI 的 $9B 订单指引/$4B 收入指引表面为 2.25x，但二者包含不同下单和确认期间，**只能作为需求领先交付的方向性信号，不能当成标准季度 B2B**。
+
+## 3. FY2026 最新财报指引、收入占比和重点产品
+
+### 3.1 Q3 FY26 收入占比
+
+| 业务 | Q3 FY26 收入 | 占公司收入 | 同比 | 结论 |
+|---|---:|---:|---:|---|
+| Networking | **$8.815B** | **55.6%** | **+25%** | 最大且最强增长引擎；AI DC 与园区更新共同驱动 |
+| Security | $2.008B | 12.7% | 0% | SASE 增长被传统威胁检测/响应与组合迁移抵消 |
+| Collaboration | $1.024B | 6.5% | -1% | 稳定现金流，不是当前估值驱动 |
+| Observability | $0.269B | 1.7% | +3% | ThousandEyes 增长，Splunk 云迁移/确认节奏形成拖累；该行不是 Splunk 全部收入 |
+| Services | $3.724B | 23.5% | -1% | 高毛利、递延收入和客户黏性的底盘 |
+| 合计 | **$15.841B** | 100% | **+12%** | 产品占 76.5%、服务占 23.5% |
+
+FY26 hyperscaler AI 基建收入指引 40 亿美元，约占 FY26 收入中点 629 亿的 **6.4%**；AI 订单指引 90 亿美元约为当年收入指引的 14.3%，说明订单权重远高于当期确认收入权重。
+
+### 3.2 Q4 与全年指引
+
+| 指标 | 指引 | 中点同比/含义 |
+|---|---:|---|
+| Q4 FY26 收入 | $16.7B—$16.9B | 中点约 +14.5% |
+| Q4 非 GAAP 毛利率 | 65.5%—66.5% | 价格动作与组合需抵消内存、光学、关税压力 |
+| Q4 非 GAAP 经营利润率 | 34%—35% | 经营杠杆仍强 |
+| Q4 GAAP EPS | $0.80—$0.85 | 含重组影响 |
+| Q4 非 GAAP EPS | $1.16—$1.18 | 明显高于 GAAP |
+| FY26 收入 | $62.8B—$63.0B | 中点同比约 +11.0% |
+| FY26 GAAP / 非 GAAP EPS | $3.16—$3.21 / $4.27—$4.29 | 非 GAAP 排除收购摊销、股权激励、重组等 |
+| FY26 hyperscaler AI 订单/收入 | **$9B / $4B** | 收入/订单为不同期间、不同确认时点，不能作简单 backlog 减法 |
+
+### 3.3 重点业务、产品型号、规模、增速与利润率交叉验证
+
+以下利润率均为产业/BOM 模型，不是 Cisco 分部披露。
+
+**Silicon One 是高性能交换/路由网络 ASIC，不是执行矩阵计算的 GPU/AI accelerator。**本报告把它计入“AI 基础设施网络芯片和系统”，不把它误写成 AI 计算芯片收入。
+
+| 重点业务 | 产品和型号 | 公开验证 | FY26 收入规模估计 | 估计毛利率 | 交叉验证与判断 |
+|---|---|---|---:|---:|---|
+| 102.4T/1.6T AI scale-out | **Silicon One G300；N9364F-SG3；N9000/8000 G300 系统；64×1.6T** | [G300 官方资料](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m02/cisco-announces-new-silicon-one-g300.html)：102.4Tbps、共享缓存、路径负载均衡和 telemetry；模拟显示网络利用率 +33%、JCT -28%；2026 年发货 | FY26 贡献很小，主要在 FY27；包含在系统桶 | 初期系统 35%—50%；随 NOS/支持附加可到 45%—55% | 技术方向正确，但截至截止日仍是“宣布/客户验证/发货爬坡”，不能当成已大规模量产 |
+| 51.2T scale-across | **Silicon One P200；Cisco 8223，3RU、64×800G；深缓存** | [P200 官方资料](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2025/m10/cisco-sets-benchmark-with-industry-most-scalable-efficient-51-2t-routing-systems-for-distributed-ai-workloads.html)；Q3 两个新 hyperscaler 系统赢单；Microsoft、Alibaba 等公开生态支持 | **约 $0.7B—1.0B**，含系统和部分芯片价值 | 35%—50% | 适合跨数据中心/scale-across，不能替代机柜内 NVLink scale-up |
+| 51.2T scale-out | **Silicon One G200；N9000/8000 800G 系统** | Q3 一个新 G200 系统赢单；Nexus AI-tagged orders 环比约 +50% | **约 $0.9B—1.2B** | 40%—55% | 800G 已是当下量，G300/1.6T 是下一波；系统、软件、光学可交叉销售 |
+| NVIDIA Ethernet 系统对冲 | **Cisco N9100 / N9164F；NVIDIA Spectrum-4/6；NX-OS 或 SONiC** | [N9100 产品页](https://www.cisco.com/site/us/en/products/networking/cloud-networking-switches/n9100-series-switches/index.html)；Spectrum-4 800G 可供货，Spectrum-6 1.6T/液冷为未来平台 | **约 $0.2B—0.5B**，低置信 | 30%—45% 硬件；附加 NX-OS/支持后更高 | 即使客户选 NVIDIA ASIC，Cisco 仍可赚系统/NOS/渠道；但也会稀释 Silicon One 的内部芯片价值 |
+| Acacia coherent optics | **400G、800ZR/ZR+、100ZR；Acacia DSP/SiPh** | 单季订单 >$1B；FY26 bookings 预计 >+200%；累计 >750k 个 400G 和 >40k 个 800G coherent ports；两个新 optics design wins | **约 $1.6B—1.9B** hyperscaler AI 收入模型 | 40%—55% | 订单和实物端口双验证，是目前最紧、最确定的小而快业务 |
+| 1.6T/LPO 可插拔光学 | **1.6T OSFP；800G LPO** | G300 同步发布；官方称 LPO 模块功耗约降 50%、整机功耗约降 30%；2026 年发货 | FY26 < $0.2B；FY27 弹性大 | 1.6T 早期 30%—45%；良率改善后 35%—50% | 受 200G/lane EML、激光器、DSP/driver、封装和客户 AVL 约束；LPO 仍需互操作与运维验证 |
+| AI Fabric 软件/运维 | **NX-OS、IOS XR、Nexus One、AI Job Observability、Nexus Dashboard、Splunk integration** | Nexus One、Splunk 原位分析；AgenticOps for DC 受控可用；Nexus One 与系统共同销售 | **$0.5B—1.0B 受影响收入**，其中纯新增软件远低于此 | 独立软件 75%—88%；硬件捆绑后 55%—70% | 直接收入披露不足，但可抬高系统附加率、续费与替换成本 |
+| Enterprise/neocloud/主权 AI | **Secure AI Factory with NVIDIA；UCS HGX/MGX/RTX Pro；N9300/N9100；AI Defense、Splunk** | [Secure AI Factory](https://www.cisco.com/site/us/en/solutions/artificial-intelligence/secure-ai-factory/index.html) 和验证设计；Q3 非 hyperscaler AI 订单 $0.3B、FYTD $0.9B、pipeline $3B | **约 $0.5B—0.8B 收入**，订单领先收入 | 系统 25%—45%，网络/安全/服务组合 45%—60% | 规模较 hyperscaler 小，但客户数更多、附加率和毛利可能更高，是不能漏掉的潜力桶 |
+| 园区智能网络 | **Catalyst 9350/9610、Catalyst 9000、Wi‑Fi 7 AP、secure routers、industrial IoT** | 园区订单 >+25%、无线 >+40%，Wi‑Fi 7 约占无线产品组合一半；工业 IoT 连续八季双位数增长 | **下一代组合约 $3.5B—5.0B**；总园区收入未披露 | 58%—68% | 非纯 AI DC，却是 FY26 最重要的广度增长和毛利支撑；多年度更新周期可抵消 AI 波动 |
+| AI 安全与 Agent 安全 | **AI Defense、Hypershield/Live Protect、SASE、Hybrid Mesh Firewall、Isovalent、Astrix** | AI Defense 2026-02 大更新；Live Protect 先在 N9000/Nexus One 提供；Astrix 2026-06 完成 | **$1.0B—1.8B 相关组合估计**；无法从 Security $8B 年化收入中单列 | 软件 70%—85%，安全设备混合 55%—70% | Security 报告收入仍为 0% 增长，产品叙事强于财务证明；论坛对 Hypershield 成熟度评价分化 |
+| Observability/AgenticOps | **Splunk、ThousandEyes、Cloud Control、Galileo、Cisco IQ** | Observability +3%；ThousandEyes 年订单价值约 +25%；Galileo 已完成；Cloud Control 2026-06 发布 | Observability 报告口径年化约 **$1.1B**；Splunk 其他收入跨 Security/Services | 70%—85% | Cloud Control 对合资格订阅不额外收费，近期是留存与交叉销售，不应直接假设巨额新增 ARR |
+
+### 3.4 明确跳过或仅做风险跟踪的低增长业务
+
+| 跳过的业务/产品 | 最新表现 | 跳过原因 |
+|---|---:|---|
+| Collaboration 传统会议、电话与终端 | Q3 $1.024B，-1% | 稳定但不是 AI 基建增长主线；只保留现金流作用 |
+| Services 的常规维保部分 | Q3 $3.724B，-1% | 对毛利和黏性重要，但产品级增长弹性低 |
+| 传统 Threat Detection & Response/部分旧安全产品 | 抵消 SASE 增长，使 Security 整体 0% | 作为安全组合转型风险，不单独做乐观预测 |
+| 上一代非 AI 数据中心/传统运营商路由 SKU | 未单列 | 可能被 800G/1.6T 更新替代，缺少独立披露 |
+| 非 AI 的 Meraki 摄像、普通分支与 SMB 长尾 | 未单列 | 组合繁多、单位增长低于重点桶 |
+| Webex AI 功能 | Collaboration 整体 -1% | AI 功能目前更多是保留/附加，不足以驱动公司估值 |
+
+## 4. 高增长/关键产品：当前收入贡献与战略评分
+
+评分均为 1—5，5 为最高；“供应紧张”越高越接近供不应求；收入是 FY26 模型值而非公司分部披露。
+
+| 关键桶 | FY26 当前收入贡献估计 | 当前增速/需求证据 | AI 技术栈重要性 | 时间紧急性 | 供需紧张 | 垄断/控制力 | 溢价能力 |
+|---|---:|---|---:|---:|---:|---:|---:|
+| Silicon One AI 系统：G200/P200/800G，G300/1.6T 起量 | **$2.1B—2.4B** | AI 系统订单高速增长；Q2 系统约占 AI 订单 60%，Q3 与 optics 平衡；DC switching >+40% | **5** | **5** | **4** | 4 | 3 |
+| Acacia coherent optics + 1.6T/LPO | **$1.6B—1.9B** | 单季订单 >$1B、FY bookings >+200%，端口出货和 design wins 同时验证 | **5** | **5** | **5** | 4 | **4** |
+| Enterprise/neocloud/主权 AI 全栈 | **$0.5B—0.8B** | FYTD 订单 $0.9B、pipeline $3B，低基数三位数增长 | 4 | 4 | 3 | 4 | 4 |
+| 下一代园区交换/Wi‑Fi 7/工业 IoT | **$3.5B—5.0B** | 园区订单 >+25%、无线 >+40%、工业 IoT 连续八季双位数 | 2 | 4 | 3 | **4** | 4 |
+| AI Security/SASE/Live Protect | **$1.0B—1.8B** 相关收入 | 相关子产品增长，但 Security 总体 0%；商业验证不充分 | 3 | 3 | 1 | 3 | 3 |
+| Nexus One/Splunk/ThousandEyes/AgenticOps | 报告 Observability 年化约 **$1.1B**；跨类别收入无法单列 | Observability +3%，ThousandEyes 订单约 +25%；Cloud Control 尚早期 | 4 | 3 | 2，主要缺工程/部署能力 | 4 | 3 |
+
+### 当前最值得关注的三个结论
+
+1. **Acacia 是最容易被总公司口径掩盖的小业务**。其单季订单已超过整个 Observability 单季收入约四倍，且受 800ZR/ZR+、scale-across 和跨园区 AI 流量共同驱动。它既是 Cisco 产品，也可能作为客户系统中的组件，收入弹性和毛利均优于纯白盒交换机。
+2. **Silicon One 系统是最大 AI 收入桶，但不是垄断**。Cisco 对芯片、系统、NOS 和 optics 的共同设计提高性能/功耗和交付确定性；客户仍可选择 Broadcom 白盒、NVIDIA Spectrum-X、Arista 或 SONiC。
+3. **园区更新不是 AI 数据中心，却是估值模型不能删掉的现金流增长**。如果只看 40 亿美元 AI 收入，会漏掉大于 AI 桶的园区更新；如果把全部园区又标成 AI，则会夸大 AI 暴露。二者必须分开。
+
+## 5. 一年后收入贡献：基准、乐观、极度乐观
+
+预测期为 FY27（截至 2027-07）。各桶可能在 Cisco 披露分类中重叠，因此不能直接相加得到公司收入；hyperscaler 系统与 optics 两项可近似相加为 hyperscaler AI 基建收入。
+
+| 关键桶 | FY26E 基数 | FY27 基准 | FY27 乐观 | FY27 极度乐观 | 核心假设 |
+|---|---:|---:|---:|---:|---|
+| Silicon One AI 系统 | $2.2B | **$2.9B，+32%** | **$3.6B，+64%** | **$4.8B，+118%** | P200/G200 转收入；G300 H2 发货；系统占 AI 组合约 53%—55% |
+| Acacia AI/coherent optics | $1.8B | **$2.4B，+33%** | **$3.1B，+72%** | **$4.2B，+133%** | 800G port、800ZR+ 赢单、1.6T 良率和产能 |
+| **Hyperscaler AI 基建合计** | **$4.0B** | **$5.3B，+33%** | **$6.7B，+68%** | **$9.0B，+125%** | 与本地 Cisco Live 行业模型的 $5.0—5.5B/$6—7B/$8—10B 区间一致 |
+| Enterprise/neocloud/主权 AI 全栈 | $0.6B | **$1.2B，+100%** | **$1.9B，+217%** | **$3.0B，+400%** | $3B pipeline 的转化、UCS/网络/安全打包、伙伴验证设计 |
+| 下一代园区网络子组合 | $4.2B | **$5.2B，+24%** | **$6.4B，+52%** | **$8.0B，+90%** | 多年 refresh、Wi‑Fi 7 渗透、供应恢复；不是全部园区收入 |
+| AI Security/SASE/Live Protect 子组合 | $1.4B | **$1.8B，+29%** | **$2.5B，+79%** | **$3.4B，+143%** | AI Defense/Astrix/Isovalent 整合；Security 总线先恢复增长 |
+| Observability/AgenticOps 报告/可归因收入 | $1.1B | **$1.25B，+14%** | **$1.50B，+36%** | **$1.90B，+73%** | ThousandEyes、Galileo、Splunk cloud 与 Nexus One attach；不含全部 Splunk 跨类别收入 |
+| **Cisco 总收入** | FY26 指引中点 $62.9B | **$68B—71B，+8%—13%** | **$73B—77B，+16%—22%** | **$80B—86B，+27%—37%** | 不是上述桶简单相加；含传统业务、服务和业务间抵消 |
+
+### 一年后战略状态评分
+
+| 关键桶 | AI 重要性/紧急性 | 供需紧张：基准/乐观/极乐观 | 垄断能力：基准/乐观/极乐观 | 溢价能力：基准/乐观/极乐观 | 一年后判断 |
+|---|---:|---:|---:|---:|---|
+| Silicon One AI 系统 | 5 / 5 | 3 / 4 / 5 | 4 / 4 / 4 | 3 / 4 / 4 | 102.4T 成主流可显著放量，但 Broadcom/NVIDIA/Arista 约束垄断 |
+| Acacia optics | 5 / 5 | 4 / 5 / 5 | 4 / 4 / 5 | 4 / 5 / 5 | 若 200G/lane 与 800ZR+ 持续紧，垂直整合产生最强溢价 |
+| Enterprise/主权 AI | 4 / 4 | 2 / 3 / 4 | 4 / 4 / 4 | 4 / 4 / 5 | Cisco 渠道和安全附加率是优势，计算系统本身竞争激烈 |
+| 下一代园区 | 2 / 4 | 2 / 3 / 4 | 4 / 4 / 4 | 4 / 4 / 4 | 装机基础、许可证、运维流程和认证形成高转换成本 |
+| AI Security/SASE | 3 / 3 | 1 / 2 / 3 | 3 / 4 / 4 | 3 / 4 / 4 | 供给不是问题，产品成熟度、误报和客户信任才是瓶颈 |
+| AgenticOps/Observability | 4 / 3 | 2 / 3 / 4 | 4 / 4 / 5 | 3 / 4 / 4 | 稀缺的是跨域数据、工程实施和闭环操作能力，而非服务器产能 |
+
+## 6. BOM、单位内容量与价格传导链
+
+### 6.1 交换系统 BOM
+
+下表是产业制造成本结构，不是 Cisco 报价。品牌价还包含研发、NOS、TAC、保修、渠道和利润。
+
+| 系统 | 关键 BOM | 制造成本占比模型 | Cisco 价值捕获 |
+|---|---|---:|---|
+| 51.2T、64×800G，**不含前面板 optics** | Silicon One/ASIC 与封装 | 30%—40% | 自研芯片与系统共同设计 |
+|  | 高层 PCB、连接器、retimer/电气链路 | 12%—20% | 224G SerDes/板级良率是瓶颈 |
+|  | 管理 CPU、内存、控制器 | 4%—8% | 内存涨价可压缩毛利 |
+|  | 电源、风冷/液冷 | 9%—15% | 高功率密度带来设计溢价 |
+|  | 机箱、组装与测试 | 9%—17% | 合同制造为主 |
+|  | 固件/NRE/保修/物流 | 12%—24% | NOS、支持和渠道是品牌毛利来源 |
+| 102.4T、64×1.6T，**不含 optics** | ASIC/封装 | 34%—46% | G300 大芯片、先进制程与封装占比更高 |
+|  | PCB/连接器 | 13%—21% | 224G/lane 信号完整性要求更高 |
+|  | 管理控制 | 3%—7% |  |
+|  | 电源与散热 | 12%—21% | 液冷、功耗和可靠性决定验收 |
+|  | 机箱/测试 | 8%—15% |  |
+|  | 固件/NRE/保修/物流 | 8%—18% | 软件附加率可抵消初期硬件良率 |
+
+对一台 64 端口交换机，前面板 64 个高速模块可占“交换机 + 模块”已部署链路成本的 **40%—70%**。这解释了为什么 Acacia optics 可能与 Silicon One 系统同样重要。
+
+### 6.2 光模块 BOM 与每 optical port 内容量
+
+| 模块类型 | 2026 行业 ASP/每端口 | 主要 BOM | 估计毛利率 | 一条双端链路的模块价值 |
+|---|---:|---|---:|---:|
+| 800G 单模 FRO | $280—$420 | DSP/TIA/driver 18%—25%；光器件 22%—32%；PCB/FAU/连接器 12%—18%；封装测试 12%—18% | 25%—38% | $560—$840 |
+| 1.6T SiPh/可插拔 | $750—$1,150 | DSP 20%—28%；PIC/激光 24%—32%；PCB 10%—15%；封装测试 12%—18% | 30%—45%，成熟后更高 | $1,500—$2,300 |
+| 800ZR/ZR+ coherent | $5,000—$9,000 | coherent DSP 20%—30%；PIC/激光 20%—28%；PCB 8%—12%；封装 10%—16%；软件/保修 5%—10% | 38%—52% | $10,000—$18,000 |
+
+说明：
+
+- 上述 ASP 是行业估计，不是 Cisco/Acacia 官方成交价。Cisco 的垂直整合、距离、功耗、温度等级、保修和客户定制会改变价格。
+- 800ZR/ZR+ 用于数据中心互联/scale-across，不应把每个 GPU 都乘一只 coherent module；机内/园区内更多是 800G/1.6T FRO、DAC/AEC。
+- 1.6T 的瓶颈主要是 200G/lane EML/SiPh、激光、DSP/driver、FAU、主动对准、热和客户 AVL；800ZR+ 还需要 coherent DSP、FEC、互操作和线路认证。
+
+### 6.3 每 GPU、每 rack、每 MW 的网络与软件内容量
+
+依据本地 [AI Fabric 网络操作系统与遥测软件研究](../../行业调研/AI网络_光互联_铜互联/行业调研_AI%20Fabric网络操作系统与遥测软件_2026-07-10.md) 和 [AI 数据中心规模/订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)，对 10,000 GPU 大型集群的网络模型为：
+
+| 内容量口径 | AI 交换/路由硬件 | 首年 Fabric 软件、支持与集成 | 备注 |
+|---|---:|---:|---|
+| 10,000 GPU 集群 | **$36M—$93M** | **$4.3M—$11.1M** | 含多层 fabric、冗余和集成，不含 GPU |
+| 每 GPU | **$3,600—$9,300** | **$430—$1,110** | 是集群总额/GPU 数，不是单卡采购单 |
+| 每 72-GPU rack | **$259k—$670k** | **$31k—$80k** | 等效分摊，不代表所有交换机物理位于该 rack |
+| 每 MW，按 450—650 GPU/MW | **$1.62M—$6.05M** | **$0.19M—$0.72M** | 取决于功率密度、拓扑与冗余 |
+
+高速 optical endpoint 的行业模型约为每个 accelerator **1.5—3.0 个等效端点**，包括链路两端、多层网络和冗余，不是“每张 GPU 物理插 3 个模块”。
+
+| 灵敏度 | 800G FRO 模块内容量 | 1.6T 模块内容量 |
+|---|---:|---:|
+| 每 GPU，1.5—3.0 endpoint | $420—$1,260 | $1,125—$3,450 |
+| 每 72-GPU rack | $30k—$91k | $81k—$248k |
+| 每 MW，450—650 GPU | $0.19M—$0.82M | $0.51M—$2.24M |
+
+这只是光模块敏感性，不能再与完整网络 BOM 无条件相加；完整网络模型已经包含部分 optics，实际需要按具体拓扑去重。
+
+### 6.4 价格传导链
+
+**上游约束 → Cisco 成本 → 渠道价格 → 客户 TCO：**
+
+1. 先进制程/大裸片、ABF、内存、224G SerDes、PCB/连接器、200G/lane 激光与封装涨价；
+2. Cisco 通过采购承诺锁定产能，并在 Silicon One、Acacia、系统/NOS 之间内部优化；
+3. 硬件成本上升先压产品毛利；随后通过缩短报价有效期、配置调整、折扣减少和价格上调传导；
+4. VAR/集成商加入物流、安装和融资；大型 hyperscaler 因规模获得更低硬件毛利，但可能带来更大 optics/软件/服务量；
+5. 客户最终比较的不是端口标价，而是每 GPU 有效吞吐、JCT、功耗、故障恢复和运维人员成本。
+
+G300 宣称的 JCT -28% 若在客户生产环境实现，其价值远高于单台交换机差价：10,000 GPU 集群按 $3—$6/GPU-hour 估算，年算力价值约 $263M—$526M，利用率每提高 1 个百分点约值 $2.6M—$5.3M。这是 Cisco 能用 telemetry/Nexus One 获得软件预算的经济基础。
+
+### 6.5 每个关键业务的 BOM/成本池与可归属内容量
+
+不是所有业务都存在可比的“每 rack 物理 BOM”。园区设备按 switch/AP 计量，安全与 AgenticOps 主要是软件经济成本。下表保留真实计量边界，不为追求统一格式而把软件虚构成硬件 BOM。
+
+| 关键桶 | BOM 或经济成本池 | Cisco 可归属内容量/计价单位 | 价格如何传导 | 可信度与限制 |
+|---|---|---|---|---|
+| Silicon One AI 系统 | ASIC/封装 30%—46%；PCB/连接器 12%—21%；控制 3%—8%；电源/冷却 9%—21%；机箱测试 8%—17%；固件/保修/物流 8%—24%；**不含 optics** | 10k GPU 集群的交换/路由硬件 $36M—$93M；每 GPU $3.6k—$9.3k；每 72-GPU rack $259k—$670k；每 MW $1.62M—$6.05M | 芯片/内存/板卡成本 → Cisco 系统价与折扣 → NOS/支持附加 → 客户按有效吞吐、功耗和 JCT 比较 | 中；是多层网络分摊，不是单台交换机公开价 |
+| Acacia coherent 与 1.6T/LPO | DSP/TIA/driver、PIC/激光、PCB/FAU/连接器、封装/主动对准、测试/软件/保修 | 每 optical port：800G FRO $280—$420；1.6T $750—$1,150；800ZR/ZR+ $5k—$9k；双端链路约为两倍 | 激光/PIC/DSP/封装良率 → 模块 ASP → 系统 bundle/客户 AVL；供应紧时缩短报价期并减少折扣 | 中高；行业 ASP，非 Acacia 官方成交价 |
+| Enterprise/neocloud/主权 AI Factory | GPU/CPU/UCS、网络、optics、存储、安全、机柜/电力/冷却、集成/融资/支持 | 行业每 MW：GPU/ASIC **$20M—$38M**，不含 accelerator 的技术 fit-out **$18M—$32M**；其中可映射网络硬件 $1.62M—$6.05M、Fabric 软件 $0.19M—$0.72M；Cisco 还可取得 UCS/安全/服务，但无统一披露 | NVIDIA/AMD 与内存决定 compute 成本；Cisco 通过验证设计把 UCS、N9300/N9100、optics、安全和服务打包 | 中低；项目拓扑差异大，不能把全部 fit-out 计为 Cisco |
+| 下一代园区交换/Wi‑Fi 7/IoT | 交换 ASIC/CPU/内存、PHY/端口、PCB、电源/PoE、机箱；AP 另含 radio/antenna；再加 IOS XE、云管、许可证、TAC 和渠道 | Cisco 不披露每 switch/AP 的真实 BOM 或 ASP；可验证内容量是下一代子组合 FY26E $3.5B—$5.0B、园区订单 >+25%、无线 >+40% | 组件与内存 → 硬件价；许可证/订阅和支持提高生命周期价值；装机基础与停机窗口提高折扣纪律 | 低；缺 SKU/端口/PoE 配置，故不提供虚假单机美元值 |
+| AI Security/SASE/Live Protect | 若为 appliance：CPU/ASIC/内存/NIC/机箱；若为云软件：云算力、数据采集、Talos threat intel、支持；研发与销售在毛利以下 | 相关组合 FY26E $1.0B—$1.8B；软件毛利模型 70%—85%，设备混合 55%—70%；每 GPU/rack/MW 不是合理计量单位 | 通常按用户、带宽、workload、站点或套件订阅；Astrix/Isovalent/AI Defense 功能通过 suite attach 传导 | 低至中；Security 分部不拆产品和毛利，不能反推物理 BOM |
+| Nexus One/Splunk/ThousandEyes/AgenticOps | 云基础设施、telemetry 存储/检索、模型推理、工程/SRE/TAC；独立软件通常无物理 BOM | 10k GPU 集群首年 Fabric 软件/支持/集成 $4.3M—$11.1M；每 GPU $430—$1,110；每 rack $31k—$80k；每 MW $0.19M—$0.72M | 通过订阅、支持、数据量/用量、系统 attach 或服务收费；Cloud Control 当前免费给合资格层级，先体现留存而非新增 ARR | 中；行业预算池，Cisco 实际份额取决于 Nexus/Splunk attach |
+
+## 7. 当前及一年后产能、供应链采纳与认证阶段
+
+“产能能力（美元计）”是按当前/未来 ASP 可交付的年化系统或服务价值，不是公司披露的工厂产能，也不等于收入预测。Cisco 外包制造，因此真正瓶颈是芯片、光学、内存、封装、系统测试、客户 qualification 和软件部署。
+
+### 7.1 当前状态
+
+| 关键桶 | 当前年化交付能力估计 | 供应链/客户采纳 | 当前认证/验证阶段 | 主要瓶颈 |
+|---|---:|---|---|---|
+| G200/P200 与 800G AI 系统 | **$2.5B—$3.5B** | P200 已初始 hyperscaler 发货并新增两个系统赢单；G200 新增一个赢单；Cisco 8000/N9000 已商用 | **量产 + 早期规模部署**；每个 hyperscaler 仍有板卡、NOS、光学和生产验收 | Silicon One 大芯片、板级 224G、内存、光学和客户验收 |
+| G300/1.6T 系统 | **<$0.5B** 截止日可交付能力 | 生态伙伴公开支持，尚无与 P200 同等级的大规模收入披露 | **产品发布/客户 qualification/2026 发货爬坡** | 102.4T 芯片良率、液冷、1.6T optics、CMIS/互操作 |
+| Acacia 400G/800G coherent | **$2.0B—$2.8B** | >750k 400G、>40k 800G 累计端口；两个新光学赢单；Q3 订单 >$1B | **400G 成熟量产；800G early volume → scale** | InP/SiPh、激光、coherent DSP、封装测试、客户线路验证 |
+| 1.6T/LPO optics | **$0.2B—$0.5B** | 与 G300 系统共同导入 | **样品/系统级认证/2026 起量** | 200G/lane 良率、热、链路容差和现场可维护性 |
+| Enterprise/主权 AI Factory | **$0.8B—$1.2B** | FYTD 订单 $0.9B、pipeline $3B；NVIDIA/AMD/存储伙伴验证设计；HUMAIN、G42 等项目关系提供渠道证明 | **CVD/方案验证 → 项目采购与验收** | GPU 供给、整机集成、项目融资、客户数据/安全验收 |
+| 下一代园区 | **$5B—$7B** 子组合 | 园区 >+25%、无线 >+40%，Wi‑Fi 7 约一半 mix | **量产与多年替换周期** | 内存/组件价格、渠道配置、安装窗口；不同 SKU 交期分化 |
+| AI Security/AgenticOps | 物理产能不适用；年度部署/续费能力约 **$1.5B—$2.5B** 相关价值 | Live Protect 先在 N9000/Nexus One；Galileo/Astrix 完成；Cloud Control 受控可用/计划扩展 | **部分 GA、部分 controlled availability、部分整合中** | 工程与 TAC、误报、跨域权限、客户治理和生产可用性 |
+
+### 7.2 一年后产能与认证情景
+
+| 关键桶 | FY27 基准产能/采纳/阶段 | FY27 乐观产能/采纳/阶段 | FY27 极度乐观产能/采纳/阶段 |
+|---|---|---|---|
+| Silicon One AI 系统 | **$3.5B—$4.5B**；P200/G200 多客户量产，G300 完成首批生产资格 | **$5.0B—$6.5B**；G300 进入 2—3 家大客户规模交付，1.6T 系统标准化 | **$7B—$9B**；102.4T 成为大集群主流，更多 hyperscaler/neocloud 双源采用 Cisco |
+| Acacia optics | **$2.8B—$3.5B**；800G volume、1.6T 首批量 | **$4B—$5B**；800ZR+ 多客户、1.6T AVL 扩大 | **$5.5B—$7B**；200G/lane 供给仍紧且 Cisco 良率领先，形成明显溢价 |
+| Enterprise/主权 AI | **$1.5B—$2.0B**；验证设计转重复部署 | **$2.5B—$3.5B**；大型主权/neo 项目批量验收 | **$4B—$6B**；多个国家/大型企业同时进入建设峰值 |
+| 下一代园区 | **$6B—$7B**；供应正常化、Wi‑Fi 7 主流 | **$8B—$10B**；更新周期延长且折扣受控 | **$10B—$13B**；积压释放、价格上调与份额提升共振 |
+| AI Security/SASE | **$2B—$3B** 可部署/续费能力；Astrix/Galileo 初步整合 | **$3B—$4.5B**；Cloud Control 与安全套件 attach 明显 | **$5B—$7B**；Agent 身份/AI Defense 成为企业标配 |
+| AgenticOps/Observability | **$1.3B—$1.8B** 报告/可归因能力；GA 扩展 | **$1.8B—$2.5B**；跨域闭环操作形成付费层 | **$2.5B—$4B**；平台成为 Cisco 安装基础的统一控制面 |
+
+### 7.3 “认证”应如何理解
+
+AI 网络设备很少靠单一监管证书决定量产，真正门槛是多层资格：
+
+1. **芯片/封装 bring-up**；
+2. **板卡信号完整性、热与液冷验证**；
+3. **OS/SDK/FEC/CMIS/光学互操作**；
+4. **GPU/NIC/DPU、存储和作业调度的系统测试**；
+5. **客户实验室 qualification 和 AVL**；
+6. **小批生产、现场验收、规模部署**。
+
+当前判断：
+
+- P200/G200 已跨过第 5 阶段并进入第 6 阶段的早期；
+- G300/1.6T 处于第 3—5 阶段，官方“2026 发货”不等于已经规模确认收入；
+- Acacia 400G 已在第 6 阶段，800G 正从第 5 向第 6 扩展；
+- LPO/1.6T 多数仍在第 3—5 阶段；
+- Cloud Control/部分 AgenticOps 是 controlled availability/计划 GA，功能可用不等于客户愿意单独付费。
+
+## 8. 订单、真实供给与未来一年增速推断
+
+### 8.1 可验证的订单—供给桥
+
+| 代理变量 | 最新值 | 能说明什么 | 不能说明什么 |
+|---|---:|---|---|
+| FY26 hyperscaler AI 订单指引 | **$9B** | 客户需求和设计赢单极强 | 不是 FY27 全部可确认收入 |
+| FY26 hyperscaler AI 收入指引 | **$4B** | 当年交付确认能力和订单转收入结果 | 不能反推出精确 backlog |
+| Q3 AI 订单 | **$1.9B** | 单季仍高，非一次性 Q2 峰值 | 不披露客户、项目金额和取消条款 |
+| Acacia Q3 订单 | **>$1B** | optics 是真实高增长瓶颈 | 不等于单季收入 |
+| 总 RPO / 产品 RPO | **$43.462B / $22.058B** | 合同可见性强；总 RPO 约一半在 12 个月内 | 含非 AI、软件和服务；不能把产品 RPO 全当硬件 backlog |
+| 库存 | **$4.708B，年末以来 +49%** | 备货和交付准备上升 | 需求转弱时会形成减值/现金占用 |
+| 库存采购承诺 | **$16.033B，年末以来 +111%** | 对 Silicon One、内存和 hyperscaler 供给进行大规模锁定 | 是 Cisco 对供应商的承诺，不是客户订单 |
+| 一年内到期采购承诺 | **$14.149B** | FY27 前供应物料覆盖显著 | 不代表全部可以无摩擦转成合格成品 |
+| DC switching / campus / wireless orders | **>+40% / >+25% / >+40%** | 广度好、AI 与非 AI 周期共振 | 不给出绝对美元和取消率 |
+
+### 8.2 三种订单转换模型
+
+| 假设 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| AI 客户订单延期/取消假设 | 5%—10% | 3%—6% | 0%—3% |
+| 合格供给/计划交付满足率 | 85%—90% | 90%—95% | 95%—100% |
+| G300/1.6T 状态 | H2 小批量，P200/G200 承担主量 | 2—3 家客户快速量产 | 多 hyperscaler 同时规模导入 |
+| Acacia 状态 | 800G 扩产，1.6T 受限 | 800ZR+/1.6T 良率改善 | 光学持续短缺、Cisco 优先获得产能 |
+| hyperscaler AI FY27 收入 | **$5.0B—$5.5B** | **$6.0B—$7.0B** | **$8.0B—$10.0B** |
+| hyperscaler AI FY27 增速 | **+25%—38%** | **+50%—75%** | **+100%—150%** |
+| 下一代园区子组合增速 | +20%—30% | +40%—60% | +75%—100% |
+| Security 总业务增速 | +3%—7% | +8%—14% | +15%—25% |
+| Observability 报告口径增速 | +8%—15% | +20%—40% | +50%—75% |
+| Cisco 总收入 | **$68B—$71B** | **$73B—$77B** | **$80B—$86B** |
+
+取消率假设不是渠道调查得出的精确统计量，只用于把“订单”折算成可实现收入。由于 Cisco 大客户合同、交付窗口、验收和 optics 配置均未披露，任何给出单点取消率的模型都会产生虚假精确。
+
+### 8.3 客户项目和交付窗口验证
+
+- **Hyperscaler**：Q3 五个 design wins 是最具体的项目级证据，但 Cisco 没有披露客户名和合同金额；公开生态中 Microsoft、Alibaba 等对 Silicon One/P200 的支持可证明技术被大型客户评估/采用，不能据此假定全部 90 亿订单来自这些公开名称。
+- **主权/区域 AI**：Cisco 与 HUMAIN、G42 等关系、与 NVIDIA 的 Secure AI Factory 及验证设计证明进入项目名单；具体收入仍取决于 GPU 配额、融资、机房供电和客户验收。
+- **交付窗口**：P200/G200 已出货，G300 与配套 1.6T optics 为 2026 年内发货，收入主要在 2026H2—2027；客户从样品到生产接受通常需要 6—18 个月。
+- **渠道价格**：2026 年渠道存在 20%—40% 涨价传闻和短报价有效期，但 SKU、地区、折扣和组件差异很大。本报告没有把论坛涨价直接塞入收入预测，只将其作为产品毛利/客户延期风险。
+
+## 9. 竞争格局、技术主流性、替代方案与转换成本
+
+### 9.1 产品级竞争
+
+| 关键产品/技术 | Cisco 优势 | 主要竞争对手 | 替代路线 | 是否未来主流 | 客户转换成本 |
+|---|---|---|---|---|---|
+| G200/G300 scale-out Ethernet | Silicon One + 系统 + optics + telemetry 一体；N9000/8000 双平台；开放 Ethernet | Arista、NVIDIA Spectrum-X/6、Broadcom Tomahawk 5/6 白盒、Celestica、Marvell、HPE/Juniper、Huawei | InfiniBand、Broadcom/SONiC 白盒、NVIDIA Ethernet | **800G 已主流；1.6T/102.4T 是 2026—2027 主流爬坡** | 中高：板卡、光学、NOS、自动化、遥测和运维流程需重验 |
+| P200 scale-across | 深缓存、51.2T、64×800G、长距离 coherent 与路由融合 | Broadcom Jericho、Arista R 系列、NVIDIA XGS、Nokia | 专用 DCI 路由、光传输盒、客户自研 | **增长中的主流补充**，但不是机柜内 scale-up 替代 | 高：跨站点流量工程、FEC/光线路、路由策略和故障域重构 |
+| NVLink 外的 Ethernet scale-up | 标准化、供应商多、运维熟悉 | NVIDIA NVLink/NVSwitch、AMD UALink 生态、Broadcom/Marvell | 专有 scale-up fabric | **一年内仍非绝对主流**；Cisco 的优势主要在 scale-out/across | 极高：GPU/NIC/交换芯片/编译器/collective library 全栈耦合 |
+| Acacia 800ZR/ZR+ | 自研 coherent DSP/SiPh、与系统共同设计、端口规模证明 | Ciena、Coherent、Marvell、Lumentum、Nokia/Infinera 及模块厂 | 灰光 + 独立传输系统、其他可插拔 coherent | **800ZR/ZR+ 正进入主流 DCI** | 中高：线路、FEC、CMIS、温度/功耗和客户 AVL 认证 |
+| 1.6T FRO/LPO | 与 G300 联合优化；LPO 节能；品牌支持 | Broadcom 生态模块、NVIDIA、Arista、Coherent、Innolight、Eoptolink 等 | 800G 多路、标准 DSP 模块、未来 CPO | **1.6T 会主流；LPO 是早期分支；CPO 尚未取代可插拔** | 中高：光学/交换机互操作和现场运维 |
+| CPO/NPO | Cisco 有硅光/系统能力和长期选项 | Broadcom、NVIDIA、Marvell、Intel、TSMC 光子生态 | 1.6T/3.2T pluggable、LPO | **2026 不是 Cisco 收入主线**；先看可靠性和可维护性 | 极高：封装、激光、散热、维修模式全部变化 |
+| Nexus One/NX-OS/AgenticOps | Cisco 装机基础、跨域 telemetry、Splunk/ThousandEyes/TAC 数据闭环 | Arista CloudVision/AVA、NVIDIA NetQ/Air、HPE Mist/Marvis、Juniper Apstra、SONiC 商业支持 | 开源 SONiC + 自建 telemetry/Grafana | 一体化 AIOps 会主流，但供应商格局未定 | **很高**：配置、API、告警、runbook、培训和合规流程 |
+| Secure AI Factory/UCS | 网络、安全、算力、观测和渠道总包；NVIDIA 伙伴关系 | Dell、HPE、Lenovo、Supermicro、NVIDIA DGX、云服务 | 公有云租用、ODM、自研集成 | 企业私有/主权 AI 会增长，但需求节奏慢于 hyperscaler | 高：验证设计、融资、服务、数据治理与生命周期支持 |
+| AI Defense/Hypershield/SASE | Talos、Isovalent eBPF、Astrix NHI、网络控制点、Splunk | Palo Alto Networks、Fortinet、Zscaler、CrowdStrike、Cloudflare、CyberArk | 云原生安全、点产品组合 | Agent/AI 安全会主流；Cisco 产品成熟度仍需证明 | 中高：策略、日志、身份、审计和 SOC 流程迁移 |
+| Splunk/Observability/Cloud Control | 数据平台、ThousandEyes 网络视角、Cisco 全域整合 | Datadog、Dynatrace、Elastic、Grafana、New Relic、云厂商原生工具 | 多工具拼接、开源 | AI observability 会主流，Cloud Control 是否成为统一入口尚未证实 | 高：数据 schema、dashboard、告警和运维自动化 |
+| 园区 Catalyst/Wi‑Fi 7 | 巨大装机基础、渠道、DNA/Catalyst Center、认证和支持 | HPE Aruba/Juniper Mist、Huawei、Extreme、Fortinet | 云管网络、低价白盒 | Wi‑Fi 7 与智能交换是明确更新周期 | 很高：布线、许可证、策略、培训和停机窗口 |
+
+### 9.2 Cisco 新技术是不是主流
+
+- **明确是主流方向**：800G Ethernet、51.2T/102.4T ASIC、1.6T optics、开放 Ethernet、job-aware telemetry、可插拔 coherent DCI。
+- **很可能成为重要分支，但份额未定**：Ethernet scale-across、Nexus One/AgenticOps、AI agent 身份与运行时安全。
+- **仍需谨慎**：LPO 的规模维护性、Cisco CPO/NPO 的商业化、Hypershield/Live Protect 的大规模独立付费、Cloud Control 的新增 ARR。
+- **不能错误替代**：P200/G300 解决 scale-out/across，不能因此推断 Cisco 会替代 GPU 机柜内 NVLink/NVSwitch scale-up。
+
+### 9.3 主要风险
+
+1. **订单转换风险**：90 亿美元是 FY26 订单指引，不是下一年确定收入；客户项目、验收、GPU/电力和光学供给都可延迟。
+2. **客户集中与议价**：hyperscaler 单笔大、毛利通常低于企业渠道；少数客户架构变化可显著影响季度。
+3. **供应和毛利**：内存、先进封装、激光/EML、DSP、PCB 和关税推高成本；Q3 GAAP 产品毛利已降至 61.9%。
+4. **库存/采购承诺风险**：160.33 亿美元采购承诺与 47.08 亿库存提供供给保障，也放大需求转弱时的减值和现金流风险。
+5. **技术替代**：NVIDIA Spectrum/InfiniBand、Broadcom 白盒、Arista、SONiC、CPO 均可压缩 Cisco 系统份额或溢价。
+6. **内部产品冲突**：N9100 使用 NVIDIA ASIC 是聪明的系统份额对冲，但客户若偏向 Spectrum，会减少 Silicon One 芯片价值捕获。
+7. **Splunk/安全整合**：Security 连续弱、Observability 仅低个位数增长；收购叙事尚未完全变为财务增量。
+8. **商誉与杠杆**：有形权益为负，若 Splunk 等资产长期不达标，减值会伤害 GAAP 利润。
+9. **执行复杂度**：芯片、系统、光学、软件、安全和服务同时转型，重组可能损失工程/销售经验。
+10. **估值风险**：TTM PE 40.4 倍、PS 7.9 倍要求持续双位数增长；任何“AI 订单强但收入/毛利弱”的季度都可能显著压缩倍数。
+
+## 10. 未来四个季度最重要的验证点
+
+| 验证点 | 乐观信号 | 预警信号 |
+|---|---|---|
+| FY26 Q4 AI 收入/订单 | 收入达到 $4B 全年目标、订单接近或超过 $9B | 订单不变但交付收入明显不足 |
+| G300/1.6T | 公布首批量产客户、端口量、系统收入或更多 design wins | 继续只有生态引述、发货时间后移 |
+| Acacia | 800G ports 加速、1.6T 进入量产、订单转收入 | 单季订单高但收入/毛利不跟，AVL/良率延迟 |
+| 产品毛利 | 非 GAAP 总毛利守住 65.5%—66.5%，价格覆盖内存/关税 | 产品毛利继续明显下滑 |
+| 库存与采购承诺 | 随收入上升而周转改善 | 库存/承诺继续快于收入且出现 excess liability |
+| 园区更新 | 订单 >20%、无线/Wi‑Fi 7 维持强劲、交期稳定 | 高报价使客户推迟更新，渠道库存回升 |
+| Security/Observability | Security 恢复正增长、ThousandEyes/Splunk cloud 加速 | 继续 0% 或负增长，交叉销售只停留在发布会 |
+| Cloud Control/AgenticOps | GA、活跃客户、attach/续费或服务收入有量化披露 | 持续免费、受控可用，缺少付费和生产案例 |
+| 现金流与资产负债表 | FY27 FCF 覆盖分红、回购、重组与债务 | 采购承诺和重组挤压现金，净债务快速上升 |
+
+## 11. 综合评级式结论
+
+**业务质量：高；AI 订单确定性：中高；AI 收入可见度：中；AI 光学供给弹性：高；软件直接变现确定性：中低；资产负债表：中高；估值安全边际：低。**
+
+Cisco 当前最有价值的并不是某一款交换机，而是 **Silicon One + Acacia + 品牌系统 + NOS/遥测 + 安全/服务** 的纵向组合。FY26 的 90 亿美元 AI 订单指引、40 亿美元收入指引、Acacia >10 亿美元单季订单和 160 亿美元供应采购承诺共同说明 AI 网络业务已跨过“概念”阶段。但在财务上，AI 仍只约占 FY26 收入 6.4%，Security 和 Observability 尚未显示与产品发布速度相匹配的增长。
+
+基准情景下，P200/G200 与 800G 承担 FY27 大部分收入，G300/1.6T 贡献增量，Acacia 保持紧缺，hyperscaler AI 收入约 53 亿美元；园区更新提供第二增长腿，总收入约 680—710 亿美元。乐观情景要求 G300 和 1.6T 在多家客户快速通过资格、Acacia 供给改善、非 hyperscaler AI pipeline 转化，总收入 730—770 亿美元。极度乐观情景需要 AI 订单几乎不取消、供应满足率接近 100%、园区和安全同时加速，属于上沿压力测试，不能作为估值基准。
+
+以 2026-07-10 的 $121.31 股价看，Cisco 的业务基本面比三年前明显更好，但股票的容错率比业务的容错率低。未来最关键的不是再听到更多“AI 平台”发布，而是看到 **G300/1.6T 客户量产、Acacia 订单转收入、产品毛利止跌、Security 恢复增长和库存/采购承诺转化为现金**。
+
+## 主要资料
+
+### 公司与监管文件
+
+- [Cisco Q3 FY26 earnings release](https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-THIRD-QUARTER-EARNINGS/default.aspx)
+- [Cisco Q3 FY26 Form 10-Q](https://www.sec.gov/Archives/edgar/data/858877/000085887726000078/csco-20260425.htm)
+- [Cisco FY25 Form 10-K](https://www.sec.gov/Archives/edgar/data/858877/000085887725000111/csco-20250726.htm)
+- [Cisco Q2 FY26 earnings release](https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-SECOND-QUARTER-EARNINGS/default.aspx)
+- [Cisco Q1 FY26 earnings release](https://investor.cisco.com/news/news-details/2025/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx)
+- [Cisco Q4 FY25 earnings release](https://investor.cisco.com/news/news-details/2025/CISCO-REPORTS-FOURTH-QUARTER-AND-FISCAL-YEAR-2025-EARNINGS/)
+- [Cisco Q3 FY25 earnings release](https://investor.cisco.com/news/news-details/2025/CISCO-REPORTS-THIRD-QUARTER-EARNINGS/default.aspx)
+- [Cisco 2026 restructuring 8-K](https://www.sec.gov/Archives/edgar/data/858877/000085887726000075/csco-20260513.htm)
+
+### 产品、会议与渠道
+
+- [Silicon One G300、系统与 optics](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m02/cisco-announces-new-silicon-one-g300.html)
+- [P200/8223 scale-across systems](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2025/m10/cisco-sets-benchmark-with-industry-most-scalable-efficient-51-2t-routing-systems-for-distributed-ai-workloads.html)
+- [Cisco N9100 Series](https://www.cisco.com/site/us/en/products/networking/cloud-networking-switches/n9100-series-switches/index.html)
+- [Cisco Secure AI Factory with NVIDIA](https://www.cisco.com/site/us/en/solutions/artificial-intelligence/secure-ai-factory/index.html)
+- [Acacia 800G ZR/ZR+ coherent optics data sheet](https://www.cisco.com/c/en/us/products/collateral/interfaces-modules/transceiver-modules/qsfp-dd-osfp-800g-zr-zr-plus-coherent-optics.pdf)
+- [Cisco Cloud Control/AgenticOps, Cisco Live 2026](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m06/cisco-unveils-agentic-platform-for-operating-and-defending-critical-it-infrastructure.html)
+- [451 Research：Cisco Cloud Control 与 AgenticOps，2026-07-01](https://newsroom.cisco.com/c/dam/r/newsroom/en/us/assets/analyst-reports/451-research/451-Research_2026-07-01_Reprint-Cisco-uses-AgenticOps-and-Cloud-Control.pdf)
+- [CRN：内存涨价下的渠道合同条款变化](https://www.crn.com/news/networking/2026/cisco-revises-partner-contract-terms-in-response-to-soaring-memory-prices)
+- [渠道论坛：2026-03 Cisco 价格与交期讨论](https://www.reddit.com/r/networking/comments/1rws1az/pricing_up_and_lead_times/)
+- [Cisco 技术论坛：Hypershield/Live Protect 现场成熟度讨论](https://www.reddit.com/r/Cisco/comments/1r5u0o4/cisco_dc_innovations_on_the_security_front/)
+
+论坛信息仅作弱证据，不用于覆盖官方订单、财报或产品状态。
+
+### 项目内行业交叉验证
+
+- [AI 以太网交换系统与 Fabric 芯片](../../行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-07-10.md)
+- [AI Fabric 网络操作系统与遥测软件](../../行业调研/AI网络_光互联_铜互联/行业调研_AI%20Fabric网络操作系统与遥测软件_2026-07-10.md)
+- [800G/1.6T 可插拔光模块](../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md)
+- [CPO/NPO 与交换侧光引擎](../../行业调研/AI网络_光互联_铜互联/行业调研_CPO_NPO与交换侧光引擎_2026-07-10.md)
+- [AEC、DAC 与高速铜缆](../../行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-07-10.md)
+- [网卡、DPU 与 SmartNIC](../../行业调研/AI网络_光互联_铜互联/行业调研_网卡、DPU与SmartNIC_2026-07-10.md)
+- [Cisco Live 2026 会议更新](../../行业调研/产业背景/顶级会议信息/conference_update_cisco_live_2026_las_vegas_2026-06-10.md)
+- [OFC 2026 会议更新](../../行业调研/产业背景/顶级会议信息/ofc_2026_conference_update.md)
+- [AI 数据中心建设规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+
+---
+
+**模型免责声明**：Cisco 没有披露 AI 产品逐项收入、逐项毛利、产能、取消率和客户合同金额。所有标注为“估计”“模型”“情景”的数字均以公开订单、收入指引、端口出货、采购承诺、产业 ASP/BOM 和采用阶段为约束，不是公司指引，也不是投资建议。

@@ -1,0 +1,616 @@
+# SK hynix Inc.（NASDAQ: SKHY / KRX: 000660）全面公司尽调
+
+> **报告日期：2026-07-31（America/Los_Angeles）**  
+> **市场数据截止：2026-07-31 19:46:03 UTC；SKHY 最新价 145.72 美元**  
+> **口径：**1 份韩国普通股 = 10 份 SKHY ADS；财务数据按 K-IFRS 合并口径。美元换算采用 ECB 2026-07-31 参考汇率 EUR/USD=1.1485、EUR/KRW=1,657.99，即 USD/KRW≈1,443.61。  
+> **研究边界：**项目内只调用了 `基本面/行业调研/` 下与 HBM、服务器内存、eSSD、CXL、先进封装和存储制造直接相关的行业资料；未调用项目其他研究目录，未修改公司索引。联网材料优先采用公司 IR/SEC、客户与标准组织、技术论文；TrendForce/Reuters 等作独立验证；论坛、零售渠道和产业传闻只作低权重压力测试。  
+> **提示：**文中“E”均为本报告估算，不是公司指引；“产能（美元）”指按假设良率、产品组合和价格可出售的年化收入能力，不是厂房投资额，也不是不可撤销 backlog。
+
+## 结论先行
+
+SK hynix 已从“高弹性的存储周期股”升级为“**全球 HBM 领导者 + AI 服务器系统内存龙头 + 企业级 SSD 第二梯队头部**”，但还没有脱离周期属性。投资人给它的核心标签不是单纯 DRAM 厂，而是 NVIDIA 等 AI 平台的关键内存协同设计者；与此同时，2026 年极端紧缺带来的传统 DDR5/NAND 涨价，反而比部分年度锁价 HBM 更赚钱，因此利润中仍有很强的商品周期成分。
+
+核心判断如下：
+
+1. **基本面极强，报表利润却被一次性收益严重放大。**2Q26 收入 79.319 万亿韩元、营业利润 60.543 万亿韩元、营业利润率 76%；净利润 93.923 万亿韩元、净利率 118%，其中投资资产出售及估值收益 63.27 万亿韩元。用报告净利润算出的 9.5 倍 TTM P/E 不可直接用于估值；剔除该收益后，本报告估算正常化 TTM P/E 为约 **13.4–15.5 倍**。
+2. **订单能见度是真实的，但“backlog 金额”并不存在。**公司 3Q25 表示 2026 年全部 DRAM/NAND 产能已有客户需求覆盖，2Q26 又披露与约 10 家客户完成 LTA，通常期限约 5 年，并含定金和价格调整机制；但公司没有披露 backlog、bookings、book-to-bill、取消率或合同金额，SEC 文件还明确提示客户可以减少、延迟或取消采购。因此不能把“需求覆盖”当成不可撤销订单。
+3. **未来一年最关键的三个收入引擎是：AI/服务器 DRAM（不含 HBM）、eSSD、HBM4/HBM4E。**2Q26 本报告反推三者季度收入分别约 230 亿、94 亿和 63 亿美元；HBM 技术壁垒最高，但服务器 DDR5/SOCAMM2 的短期利润率可能更高，eSSD 则是增长斜率最陡的业务之一——2Q26 eSSD 收入环比约翻倍、Solidigm 30TB 以上高容量 eSSD 收入环比超过 3 倍。
+4. **一年后基准情景并不需要“永久短缺”。**本报告基准情景假设 2Q27 季度收入约 **750 亿美元，同比 +36%**；乐观约 900 亿美元、+64%；极度乐观约 1,100 亿美元、+100%。驱动来自 M15X 爬坡、1c DRAM/321L NAND 良率和产品组合、HBM4 全量化、SOCAMM2 随 Vera Rubin 扩散，以及 eSSD 容量/价格双升。Yongin 首个 cleanroom 2027 年 2 月开放，但从 cleanroom 开放到有意义的合格出货仍有设备安装、良率和客户认证滞后，不能把它当作 2027 年初即刻满产。
+5. **最大风险不是需求突然归零，而是盈利峰值、竞争和资本强度同时反转。**Samsung、Micron 均进入 HBM4 竞争；TrendForce 还指出 SK hynix 的部分 HBM4 认证/出货节奏存在下修风险。传统 DRAM 的极端盈利可能随供给释放回落；高 40 万亿韩元的 2026 CapEx、长期千亿级扩产、客户集中和中国工厂的出口许可，使自由现金流与估值波动可能远大于收入波动。
+
+### 投资质量速览
+
+| 维度 | 判断 | 关键证据/限制 |
+|---|---:|---|
+| AI 基建重要性 | 5/5 | HBM 位于 GPU 封装内；SOCAMM2/服务器 DDR5 位于 CPU/系统内存；eSSD 承接 KV cache 与上下文层。三层均由同一家公司覆盖。 |
+| 供需紧张 | 5/5（未来 4–6 季） | 公司称客户需求超过供给；约 10 家 LTA；M15X 被提前拉产。行业渠道显示高容量 eSSD 交期可长达 12 个月，但零售交期不能直接代表 hyperscaler 合同。 |
+| 技术/认证护城河 | 4.5/5 | HBM 6–18 个月协同设计和验证；服务器内存 2–6 个季度 QVL；eSSD 6–18 个月固件/可靠性认证。 |
+| 定价权 | 4/5 | 高度紧缺、定金/LTA、先进产品组合带来定价权；但 HBM 年度定价滞后，Samsung/Micron 多供给和大客户议价限制上限。 |
+| 财务健康 | 5/5 | 2Q26 净现金 69.4 万亿韩元；利息债务/权益约 7%；ADS 增发又净募约 262 亿美元。 |
+| 盈利可持续性 | 3/5 | 2Q26 76% 营业利润率包含极端供需和价格；118% 净利率含 63.27 万亿韩元投资收益，不可外推。 |
+| 估值可读性 | 2.5/5 | 新上市 ADS、一次性收益、韩元换算、10:1 ADS 比例和极端周期同时存在；表面 P/E 容易误导。 |
+
+## 一、公司整体业务、产业定位与三年转型
+
+### 1.1 公司究竟卖什么
+
+SK hynix 是存储半导体 IDM，核心资产包括韩国 Icheon/Cheongju 前端厂和封装测试、无锡 DRAM、Dalian NAND、Solidigm 企业级 SSD 平台，以及正在建设的 Yongin、Cheongju P&T7、美国 Indiana 先进封装能力。业务可分为三层：
+
+| 层级 | 主要产品 | 在 AI 技术栈的位置 | 2025 年公司收入 |
+|---|---|---|---:|
+| DRAM | HBM3E/HBM4/HBM4E、DDR5 RDIMM/MRDIMM、SOCAMM2、LPDDR、GDDR7、CXL Memory Module | GPU 近端显存、CPU/系统内存、内存扩展 | **74.904 万亿韩元，77.1%** |
+| NAND/存储 | Solidigm 高容量 QLC eSSD、SK hynix 高性能 TLC eSSD、客户端 SSD、UFS | AI 数据、模型、RAG、KV cache、checkpoint、对象存储 | **20.690 万亿韩元，21.3%** |
+| 其他 | CIS、foundry/8 英寸相关、其他存储产品 | 非核心或间接 AI 暴露 | **1.552 万亿韩元，1.6%** |
+
+来源：[SEC F-1/424B4 招股书](https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm)、[FY25 官方业绩](https://news.skhynix.com/en/sk-hynix-announces-fy25-financial-results/)。
+
+产业链位置不是简单的“内存颗粒商”：
+
+- **HBM：**SK hynix 设计并制造 DRAM core die，借助 TSMC 先进逻辑工艺制造 HBM4 base die，再完成 TSV、MR-MUF、堆叠、测试和客户共同验证。它位于 AI GPU/ASIC 交付的硬瓶颈位置。
+- **服务器 DRAM/SOCAMM：**从 DRAM die 延伸到高容量模组、PCB、connector、QVL；SOCAMM2 直接围绕 NVIDIA Vera CPU/平台定义，系统协同强于传统通用 RDIMM。
+- **eSSD：**NAND die、controller、固件、模组、可靠性和 hyperscaler 认证一体化；2025 年完成 Intel NAND/Solidigm 收购尾款后，控制器和固件能力成为差异点。
+- **CXL/HBF/iHBM：**当前收入很小，但代表公司从“卖颗粒”转向“定义内存层级与系统架构”。公司自己将战略称为 **Full-stack AI Memory Creator**。[公司全栈战略说明](https://news.skhynix.com/en/hbm-to-essd/)
+
+### 1.2 投资人心中的公司画像
+
+投资者通常同时用三种框架看 SK hynix：
+
+1. **NVIDIA/AI 加速器的稀缺上游。**1Q26 IDC 口径下，SK hynix 全球 HBM 收入份额约 56.4%，DRAM 约 29.1%，NAND 约 18.5%；HBM 是估值溢价的主要来源。
+2. **传统内存周期的高 beta 公司。**DRAM+NAND 仍占几乎全部收入；即使 HBM 需求稳定，DDR5、移动 DRAM、客户端 NAND 的价格和库存周期也会大幅改变利润。
+3. **从元件供应商走向平台共同设计者。**与 NVIDIA 的 2026 年多年技术合作覆盖 Vera Rubin、Vera CPU、个人 AI 与机器人，且不只是采购，还包括下一代内存共同开发；但协议没有披露订单金额，不能把新闻标题当收入。[SK hynix/NVIDIA 多年合作](https://news.skhynix.com/en/multi-year-tech-partnership-with-nvidia/)
+
+这三种框架都对：HBM 提升了公司的长期质量和客户粘性，但 2Q26 传统 DRAM/NAND 极端涨价也是利润爆发的重要原因。TrendForce 指出 1Q26 64GB DDR5 RDIMM 的单片晶圆产值和利润率甚至超过 HBM，说明“HBM 占比更高 = 利润率必然更高”在年度锁价和机会成本下并不成立。[TrendForce 2026-06-02](https://www.trendforce.com/presscenter/news/20260602-13074.html)
+
+### 1.3 最近三年的重大业务变化、转型和收购
+
+| 时间 | 事件 | 对业务模式的影响 |
+|---|---|---|
+| 2023 | 行业去库存、公司录得经营亏损；把先进 DRAM、HBM 和资本纪律置于传统扩量之前 | 周期低谷迫使资源向高附加值产品集中，是此轮转型的起点 |
+| 2024 | 率先量产 8H/12H HBM3E；宣布 Indiana 先进封装与研发项目 | 从 DRAM die 供应商转向 GPU 封装协同和北美客户近端能力 |
+| 2025-03 | 向 Intel 支付 22 亿美元，完成 2021 年开始、总价 88 亿美元的 NAND/Solidigm 收购；CIS 组织并入 AI memory 体系 | 获得高容量 QLC eSSD、controller、固件和 hyperscaler 认证资产；NAND 从拖累转为 AI 存储增长轴 |
+| 2025-09 至 2026H1 | HBM4 完成开发/量产准备；M15X 提前开 cleanroom 并开始投片；321L NAND 量产 | HBM4 和高密度 NAND 进入可兑现阶段，供给能力成为核心竞争指标 |
+| 2026-01 | 宣布建立美国 AI Solutions 组织，并以 Solidigm 为重要基础 | 组织目标从“memory product”扩展到 AI 系统/存储解决方案 |
+| 2026-04 至 2026-06 | 192GB SOCAMM2 量产；iHBM 发布；HBM4E 48GB 12H 向主要客户送样；与 NVIDIA 签署多年技术合作 | 产品边界从 HBM 延伸到 CPU 系统内存、散热和 custom memory |
+| 2026-02 至 2026-07 | HBF 与 Sandisk 在 OCP 启动标准化；Yongin 加速；宣布 Cheongju M17/P&T7 共 100 万亿韩元长期投资 | 提前卡位 HBM 与 SSD 之间的新内存层，同时补前端 NAND 和先进封装瓶颈 |
+| 2026-07 | Nasdaq 上市 SKHY ADS，发行 1.779 亿 ADS（相当于 1,779 万普通股），发行价 149 美元，净募约 262 亿美元 | 扩大美元融资和美国投资人覆盖；显著增强扩产资金，但也稀释约 2.5% 并引入新股/价格发现波动 |
+| 2026-07 | 出售/重估 Kioxia 投资产生 2Q26 约 63.27 万亿韩元投资资产收益 | 大幅抬高净利润和现金，但不是经常性经营收益 |
+
+### 1.4 当前股价、估值和经营指标
+
+| 指标 | 2026-07-31 数值 | 计算与解读 |
+|---|---:|---|
+| SKHY 最新价 | **$145.72/ADS** | 19:46:03 UTC；日内 $144.72–162.41，成交约 4,108 万份。[Nasdaq 行情页](https://www.nasdaq.com/market-activity/stocks/skhy) |
+| ADS/普通股关系 | **10 ADS = 1 普通股** | 发行后普通股约 7.288655 亿股，折合约 72.88655 亿 ADS |
+| 市值 | **约 $1.062 万亿** | $145.72 × 72.88655 亿 ADS；不把库存股计入流通股 |
+| TTM 收入 | **189.171 万亿韩元 / $1,310 亿** | 3Q25–2Q26；同比前一 TTM（77.211 万亿韩元）约 **+145%** |
+| TTM 毛利率 | **76.3%** | TTM 毛利 144.275 万亿韩元；极端供需和 ASP，不能当稳态 |
+| 最新季度毛利率 | **83.2%** | 2Q26 毛利 65.991 / 收入 79.319 万亿韩元 |
+| 最新季度营业利润率 | **76.3%** | 2Q26 营业利润 60.543 万亿韩元 |
+| TTM 报告净利率 | **85.7%** | 含 2Q26 巨额投资资产收益；经济意义有限 |
+| TTM P/S | **约 8.1x** | 市值 / TTM 收入 |
+| TTM 报告 P/E | **约 9.5x** | 市值 / TTM 报告净利润 $1,123 亿 |
+| TTM 正常化 P/E（E） | **约 13.4–15.5x** | 从 TTM 净利润剔除 63.27 万亿韩元投资收益；下限按约 24.2% 税率调整，上限按全额剔除 |
+| 2026e forward P/E | **约 6.3x** | FactSet 2026e EPS €201.04/普通股 → $23.09/ADS；仍包含 2026 年一次性收益，参考价值低 |
+| 2027e forward P/E | **约 4.5x** | FactSet 2027e EPS €279.06/普通股 → $32.05/ADS；更接近经营口径，但隐含极强景气 |
+| FactSet 收入预期 | **2026e $2,384 亿；2027e $3,607 亿** | 原始 €2,075 亿/€3,140 亿，按当日 EUR/USD 换算；39 位分析师。[FactSet 汇总页](https://www.finanzen.net/schaetzungen/sk_hynix) |
+
+**估值结论：**SKHY 看似同时拥有个位数 forward P/E 和三位数增长，但这主要是极端内存价格、会计一次性收益、刚完成 ADS 上市和外汇换算叠加的结果。更合理的做法是用 2027 年正常化营业利润/自由现金流、多情景 ASP 和资本开支测试，而不是直接接受 6.3 倍 2026 P/E。
+
+### 1.5 资产负债表健康度
+
+| 2Q26 期末项目 | 万亿韩元 | 约合美元 | 评价 |
+|---|---:|---:|---|
+| 现金及短期金融投资 | 87.958 | $609 亿 | 较 1Q26 增加约 33.6 万亿韩元 |
+| 利息债务 | 18.587 | $129 亿 | 环比下降约 0.7 万亿韩元 |
+| 净现金 | **69.371** | **$481 亿** | 净债务率为负，周期缓冲显著 |
+| 总资产 | 348.862 | $2,417 亿 | 包含厂房设备、Kioxia 等投资资产和高现金 |
+| 总负债 | 86.169 | $597 亿 | 负债/资产约 24.7% |
+| 权益 | 262.693 | $1,820 亿 | 利息债务/权益约 7.1%，与公司披露 7% 一致 |
+| 存货 | 17.986 | $125 亿 | 仅约 0.23 个 2Q26 季度收入；紧缺期库存风险低于周期下行期 |
+| 应收款 | 47.821 | $331 亿 | 随收入暴增，应持续监控回款和客户集中 |
+| 2Q26 经营现金流 | 65.710 | $455 亿 | 远高于当季 PP&E 购置 10.671 万亿韩元，但含高景气营运资金与税务时点 |
+
+ADS 发行又带来约 **262 亿美元净募资**（在 2Q26 期末之后），即便 2026 CapEx 升至“高 40 万亿韩元区间”，短期偿债能力仍非常强。资产负债表风险已从 2023 年的周期防守问题转为：**能否在不毁坏回报率的情况下，把现金转化为合格 HBM/DRAM/NAND 产能**。主要隐患是高额长期承诺、设备预付款、Yongin/M15X/P&T7/M17 并行建设，以及下一轮价格回落时折旧基数上升。
+
+## 二、最新五次财报：财务、业务拆分与订单能见度
+
+### 2.1 五季度核心财务
+
+单位：万亿韩元；百分比为收入利润率。毛利取官方 IR 表，收入/营业利润/净利润取季度公告。
+
+| 财报季度 | 收入 | QoQ / YoY | 毛利 / 毛利率 | 营业利润 / 营业利润率 | 净利润 / 净利率 | 关键解释 |
+|---|---:|---:|---:|---:|---:|---|
+| **2Q25** | 22.232 | +26% / +35% | 11.983 / 53.9% | 9.213 / 41.4% | 6.996 / 31.5% | 12H HBM3E 扩量；DRAM/NAND 出货均高于预期，库存持平 |
+| **3Q25** | 24.449 | +10% / +39% | 14.029 / 57.4% | 11.383 / 46.6% | 12.598 / 51.5% | 128GB+ DDR5 出货环比超过翻倍；高溢价 AI eSSD 占比上升；净现金转正 |
+| **4Q25** | 32.827 | +34% / +66% | 22.576 / 68.8% | 19.170 / 58.4% | 15.246 / 46.4% | HBM 外，服务器传统内存需求大涨；HBM4 按客户计划开始供货 |
+| **1Q26** | 52.576 | +60% / +198% | 41.679 / 79.3% | 37.610 / 71.5% | 40.346 / 76.7% | HBM、高容量服务器 DRAM、eSSD 在淡季继续涨价；净现金 35 万亿韩元 |
+| **2Q26** | **79.319** | **+51% / +257%** | **65.991 / 83.2%** | **60.543 / 76.3%** | **93.923 / 118.4%** | DRAM ASP 约 +30% QoQ；NAND ASP 约 +55%；eSSD 翻倍；净利含 63.27 万亿韩元投资收益 |
+
+来源：[2Q25](https://news.skhynix.com/sk-hynix-announces-2q25-financial-results/)、[3Q25](https://news.skhynix.com/en/sk-hynix-announces-3q25-financial-results/)、[4Q25/FY25](https://news.skhynix.com/en/sk-hynix-announces-fy25-financial-results/)、[1Q26](https://news.skhynix.com/en/q1-2026-business-results/)、[2Q26](https://news.skhynix.com/en/q2-2026-business-results/)、[2Q26 IR PDF](https://irsvc.teletogether.com/hynix/pdf/hynix2026Q2_eng.pdf)。
+
+### 2.2 五季度产品收入拆分
+
+公司只披露 DRAM/NAND/其他收入比例，不披露 HBM、server DRAM、SOCAMM 或 eSSD 的完整美元收入。下表收入额由总收入乘披露占比反推；因比例为整数，误差约 ±0.5 个百分点。
+
+| 财报季度 | DRAM 占比 / 收入 | DRAM QoQ（E） | NAND 占比 / 收入 | NAND QoQ（E） | 其他 | 产品级营业利润率（E） | AI 数据中心相关收入占比（E） |
+|---|---:|---:|---:|---:|---:|---|---:|
+| **2Q25** | 77% / 17.119 | — | 21% / 4.669 | — | 2% / 0.445 | DRAM 约 55%；NAND 约 -3% 至 2% | **55–62%** |
+| **3Q25** | 78% / 19.070 | +11.4% | 20% / 4.890 | +4.7% | 2% / 0.489 | DRAM 约 60%；NAND 约 0–5% | **58–65%** |
+| **4Q25** | 76% / 24.949 | +30.8% | 23% / 7.550 | +54.4% | 1% / 0.328 | DRAM 约 67%；NAND 约 25–30% | **62–68%** |
+| **1Q26** | 78% / 41.010 | +64.4% | 21% / 11.041 | +46.2% | 1% / 0.526 | DRAM 约 76–79%；NAND 约 50–56% | **65–72%** |
+| **2Q26** | 73% / **57.903** | **+41.2%** | 27% / **21.416** | **+94.0%** | <0.5% | DRAM 约 80–83%；NAND 约 60–67% | **68–75%**（中值约 71%） |
+
+> **重要限制：**产品级营业利润率和 AI 数据中心收入占比均非公司披露。模型用合并营业利润率作约束，并把 HBM、server DRAM/SOCAMM、AI eSSD 纳入 AI 数据中心，排除移动/客户端/消费品；范围反映分类和转售渠道不确定性。2Q26 DRAM/NAND 的同比收入按相同方法约为 **+238%/+359%**。
+
+### 2.3 五季度订单、交期、取消和供需信号
+
+| 财报季度 | 公司可验证信号 | Backlog/bookings/交期/取消率结论 |
+|---|---|---|
+| **2Q25** | HBM3E 和各应用 NAND 扩量；公司计划 HBM 同比翻倍；客户订单增加且成品生产回升 | 未披露 backlog、bookings、B2B/book-to-bill、周数交期或取消率。只可判断需求改善、库存稳定 |
+| **3Q25** | 公司称 2026 年 HBM 供应讨论已完成，且 **2026 全部 DRAM/NAND 产出已有客户需求**；128GB+ DDR5 出货环比 >2x | 这是最强的“分配完毕/需求覆盖”信号，但仍非不可撤销金额；没有客户名、预付款、取消条款 |
+| **4Q25** | HBM4 依客户约定进度开始供货；传统 server DRAM 需求突然上升；M15X 提前爬坡 | 交付排程的可信度提高，仍无金额 backlog；产品认证周期通常 6–18 个月，使实际替换慢于订单变化 |
+| **1Q26** | 客户优先争取数量而非短期价格；公司开始扩大多年 LTA 谈判；SOCAMM2 进入量产窗口 | 分配和战略采购替代现货 lead time；无取消率、无 LTA 覆盖收入比例 |
+| **2Q26** | 与约 **10 家**客户完成 LTA；通常期限约 **5 年**，含量承诺、价格机制和定金；客户继续要求更多供给 | 能见度很强，但公司明确不披露合同金额、覆盖销售比例和具体条款。部分高附加值 DRAM 从 2Q 延至 2H 属交付递延，不等同取消 |
+
+2Q26 电话会原文要点见[电话会转录](https://earningscalls.dev/transcripts/sk-hynix-inc_a000660_earnings_call_transcript_2026-07-29)：LTA 的目标是降低短期价格波动并增强采购承诺，典型期限约 5 年；定金提高执行力，但各客户条款不同。SEC 风险披露则要求反向约束：客户订单可能减少、延迟或取消。因此，本报告在后文情景模型中仍设置 1%–8% 的项目递延/取消假设，而不是假设“零取消”。
+
+## 三、2Q26 最新指引、业务收入占比与产品地图
+
+### 3.1 公司真正给出的指引
+
+公司没有给 3Q26 收入、ASP、营业利润或全年 EPS 指引，只给出 bit shipment 与市场需求判断：
+
+- **3Q26：**DRAM bit shipment 预计环比约 **+10%**，重点投向服务器；NAND 预计环比 **低个位数增长**。
+- **2026 市场需求：**公司预计 DRAM bit demand 同比 **中 20%**，NAND 同比 **高十几%**；供需短期难以明显改善。
+- **产品组合：**HBM4 于 2Q26 开始向关键客户量产出货，2H26 全面爬坡；1c DRAM 与高价值产品递延到 2H 的收入将抬高 bit 和 blended ASP；192GB SOCAMM2 已全面供货；321L NAND 1Q26 已成为产量最大节点，年末目标占韩国 NAND 产能约 50%。
+- **资本开支：**2026 CapEx 升至 **高 40 万亿韩元区间**，重点是 M15X 加速、Yongin 首期准备、EUV 和先进封装，而不是无差别扩所有成熟产品。
+
+### 3.2 最新季度收入构成
+
+| 2Q26 业务 | 公司披露占比 | 收入 | QoQ（按披露占比反推） | YoY（E） | 核心增长来源 |
+|---|---:|---:|---:|---:|---|
+| DRAM | **73%** | **57.903 万亿韩元 / $401 亿** | **+41%** | **约 +238%** | conventional server DRAM ASP、HBM3E、HBM4 初始出货、SOCAMM2 |
+| NAND | **27%** | **21.416 万亿韩元 / $148 亿** | **+94%** | **约 +359%** | eSSD 收入环比约 2x；30TB+ Solidigm 高容量 eSSD 环比 >3x；NAND ASP 约 +55% |
+| 其他 | 四舍五入后 <0.5% | 不重大 | — | — | CIS/foundry 等非核心业务 |
+
+**最突出但容易被市场误读的事实：**2Q26 不是 HBM 单独驱动的季度。DRAM ASP 环比约 +30%、NAND ASP 环比约 +55%；在年度 HBM 价格反应较慢时，传统服务器 DDR5 和 eSSD 的涨价对利润的贡献可能高于 HBM 收入增量。公司的资源优先级仍是 HBM4/HBM4E，但近四个季度的利润弹性来自 **HBM + 高容量服务器 DRAM + eSSD** 三条轴。
+
+### 3.3 重点产品、型号、阶段和经济性
+
+以下收入与毛利率均为本报告估算；子产品包含于 DRAM/NAND，不可相加到公司总收入两次。
+
+| 产品/型号 | 规格与客户平台 | 2026-07 阶段 | 2Q26 收入贡献（E） | 销售增速信号 | 产品毛利率（E） | 结论 |
+|---|---|---|---:|---|---:|---|
+| **HBM3E 12H 36GB** | 36GB/stack；NVIDIA GB300 每 GPU 8 stack、288GB | 成熟大规模量产；2026 仍为 HBM 主力 | HBM 合计 $60–66 亿/季中约 $50–58 亿 | HBM 合计 YoY 约 +25–40%；产品代际逐步让位 HBM4 | **55–68% GM** | 当前最大 HBM 现金牛；年度锁价使其短期价格弹性低于 DDR5 |
+| **HBM4 12H 36GB / 16H 48GB** | 2,048-bit IO；Rubin 288GB/GPU；AMD MI455X 最高 432GB/GPU | 2Q26 向关键客户量产出货，2H 全面爬坡；公司称良率/质量接近成熟 HBM3E | **$3–8 亿/季**，包含于 HBM | 2H26 高双位数/数倍增长，基数低 | **45–60% GM** 初期；成熟后 60%+ | 未来一年最重要增量，但客户 mix、base die 与封装良率决定利润 |
+| **HBM4E 12H 48GB** | 16Gbps/pin；功效较前代 +20% 以上；Advanced MR-MUF，热阻较 HBM4 -17% | 2026-06 向主要客户送样，目标 2027 量产 | **接近 0** | 样品期，无可确认销售增速 | 样品期；量产初期 **40–58% GM（E）** | 小收入、大期权；不能提前计入 2026 大额收入。[官方规格](https://news.skhynix.com/12-layer-hbm4e-sample/) |
+| **Custom HBM/cHBM** | 客户定制 base die、接口、封装、功耗/热设计 | 与客户协同设计；未披露量产 SKU/订单 | **< $0.1 亿** | 尚无可验证增速 | 成熟后可能 **60–75% GM（E）** | 潜在定价权最高，但研发/NRE、客户集中和 foundry 依赖也最高 |
+| **iHBM** | 在 D2D PHY 热点区嵌入 ICE；目标热阻 -30%，WLP/MR-MUF 兼容现有 SiP | 技术概念/原型，面向 HBM5 以后 | **0** | 无收入 | 未知 | 可能降低未来高层数/高功耗 HBM 的系统瓶颈；不是近期业绩。[官方说明](https://news.skhynix.com/en/ihbm-solution/) |
+| **192GB SOCAMM2** | 1c LPDDR5X；8 模组/Vera CPU、1.536TB/CPU；较 RDIMM 带宽 >2x、功效改善 >75% | 2026-04 量产，2Q26 全面供货，面向 Vera Rubin | **$6–12 亿/季**，包含于 server DRAM | 2Q26“显著增长”；1Q 基数很小，全年可能数倍 | **55–70% GM（E）** | 容易被 HBM 光环遮住的小而快业务；每 GPU 等效 4 模组，内容量高。[官方量产公告](https://news.skhynix.com/en/mass-production-socamm2-192gb/) |
+| **256GB 3DS DDR5 RDIMM** | 32Gb 1b die；Intel Xeon 6 Data Center Certified；128/96/64GB 系列 | 256GB 已获 Intel 认证；64GB 1c RDIMM 已供应 HPE | server DRAM 总计 $210–250 亿/季的一部分 | 3Q25 128GB+ 出货 QoQ >2x；2Q26 ASP 驱动收入强增 | **75–88% GM（E）** 在当前紧缺下 | 2026 短期利润率可能高于 HBM；认证强、但标准化后长期竞争更充分。[Intel 认证](https://news.skhynix.com/en/sk-hynix-first-to-complete-intel-data-center-certificationfor-32gb-die-based-256gb-server-ddr5-rdimm/) |
+| **128GB MRDIMM / 64GB 1c DDR5** | 高带宽 MRDIMM；1c 64GB 服务器模组 | 展示/客户 QVL；64GB 已在 HPE 服务器供货 | 包含于上项 | 随 AI CPU server 数量和每 socket 容量增长 | **65–82% GM（E）** | 标准 server DRAM 的产品 mix 升级，不应单独加总 |
+| **Solidigm D5-P5336** | PCIe 4.0 QLC，最高 122.88TB，0.6 DWPD，U.2/E3.S | 全容量发货；高密度对象存储/AI 数据层 | eSSD 总计 $90–98 亿/季的一部分；高容量 QLC 约 $40–60 亿 | 30TB+ Solidigm 收入 2Q26 QoQ >3x | **45–58% GM（E）** | 容量密度和固件/耐久验证是优势；122.88TB 已商业化。[产品页](https://www.solidigm.com/products/data-center/d5/p5336.html) |
+| **245TB QLC / PS1101（展会报道型号）** | 245TB 级 PCIe Gen5 高密度 QLC；公司战略材料与展会报道出现 | 开发/展示，未证明全面量产收入 | **接近 0–$1 亿** | 基数期 | 初期 **35–50% GM（E）** | 高潜力小产品，但不能把展示容量等同合格大货；需跟踪正式 datasheet、form factor、DWPD 和客户认证。[展会型号交叉验证](https://www.techradar.com/pro/samsung-archrival-showcases-245tb-pcie-gen5-ssd-joining-kioxia-huawei-and-sandisk-with-solidigm-samsung-and-micron-expected-to-launch-similar-products-in-2026) |
+| **PS1010/1030、PE1010/1030、PS1110、PEB110/210、PE9010** | TLC/QLC、U.3/E3.S/E1.S/M.2；PEB210 支持直接液冷固定结构；PE9010/PEB110/PS1010 等面向 AI server/boot/cache | PS1010 E3.S 已获 HPE 认证并供货；多型号在 GTC/HPED 展示或系统集成 | eSSD 总额中约 $30–50 亿 | eSSD 2Q26 QoQ 约 +100% | 高性能 TLC **52–65% GM（E）** | 不应只看 122TB：高性能小块读写与 boot/cache SSD 也是推理系统小而关键的收入池 |
+| **321L 2Tb QLC NAND** | 6-plane；传输速度 2x、写入 +56%、读取 +18%、写入功效 +23%；32-die package | 已量产；先 cSSD，再扩 eSSD/UFS；年末目标占韩国 NAND 产能约 50% | 颗粒收入已进入 NAND，AI eSSD 贡献仍在爬坡 | 节点占比快速上升 | 颗粒/QLC eSSD **45–60% GM（E）** | 降低 $/TB、支持 245TB；真正拐点是企业客户验证而非层数本身。[官方技术数据](https://news.skhynix.com/en/sk-hynix-begins-mass-production-of-321-layer-qlc-nand-flash/) |
+| **CXL CMM-DDR5 96/128/256GB** | 96GB CXL 2.0 客户验证；128GB CXL 2.0+；256GB CXL 3.2，与 Liqid pooled-memory server 联调 | 96GB 已完成客户验证；128/256GB 为验证/互操作展示，尚非广泛量产 | **< $0.5 亿/季** | 基数极低 | **35–55% GM（E）** 初期 | 小收入但高战略价值；controller、firmware、RAS 和软件决定护城河，不是仅卖 DRAM |
+| **HBF** | NAND-based 高带宽层，定位 HBM 与 SSD 之间，面向推理/KV cache | 2026-02 与 Sandisk 在 OCP 建立标准化 workstream；公司称行业需求约 2030 才明显 | **0** | 无收入 | 未知 | 远期 option，不进入一年收入基准情景。[OCP 标准化公告](https://news.skhynix.com/en/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/) |
+
+### 3.4 明确跳过的低优先级业务
+
+以下业务仍有收入，但与本次“AI 芯片/AI 数据中心高增长”主线关联弱，故不展开逐型号预测：
+
+- 手机 LPDDR/UFS、传统移动 DRAM 和消费级 NAND；
+- 成熟 DDR4、低容量消费/PC DRAM；
+- 客户端 SSD 与 321L QLC cSSD **PQC21**（AI PC 可增长，但不是 AI 数据中心核心）；
+- 汽车 LPDDR5X/ASIL-D、车载 NAND；
+- 面向消费图形的 GDDR7（数据中心 compute 应用另行包含在“其他 AI DRAM”观察池）；
+- CIS 图像传感器、8 英寸/legacy foundry、key foundry 相关业务；
+- 一般消费闪存卡和低容量存储。
+
+它们被放入后文“其他业务”总额中，不代表收入为零。若传统内存继续短缺，这些低优先级业务也可能通过 ASP 贡献利润，但缺乏平台锁定和长期差异化。
+
+### 3.5 过去半年会议、业内论坛与技术资料交叉验证
+
+| 日期/场合 | 可验证信息 | 能证明什么 | 不能证明什么 |
+|---|---|---|---|
+| CES 2026（1 月） | 展示 16H 48GB HBM4、12H 36GB HBM3E、SOCAMM2、custom HBM | 产品路线和客户讨论已进入实物阶段 | 不代表每个展示 SKU 已量产或有订单 |
+| OCP HBF workstream（2 月） | SK hynix 与 Sandisk 启动 HBF 标准化 | NAND/HBM 之间的新层级获得至少两家供应商与 OCP 路径 | 公司明确称需求约 2030 才明显，不能计入近一年收入 |
+| NVIDIA GTC 2026（3 月） | HBM3E 位于 GB300；PEB210 液冷、PEB110/PE9010/PS1010 等 eSSD 展示/集成；SOCAMM2 对应 Vera Rubin | SKU 与实际 AI 平台的接口关系、液冷和 form factor 方向 | 展台集成不等于大额采购合同 |
+| SOCAMM2 量产（4 月） | 192GB 1c LPDDR5X 量产，面向 Vera Rubin | 从样品跨到量产；CPU 系统内存成为实质收入 | 未披露客户数量、单价、良率或订单金额 |
+| TSMC Symposium / Dell Tech World（4–5 月） | HBM4 base die 使用 TSMC advanced logic；展示 12H/16H HBM4 | HBM4 护城河已包含 logic die 与封装协同 | foundry 依赖和 custom NRE 也增加 |
+| Computex 2026（6 月） | HBM4E、HBM4、HBM3E、SOCAMM2、服务器 DDR5 和 eSSD 同台；产业现场出现“Please Make More”式供给诉求 | 多层 memory hierarchy 成为客户关注点，供给紧张得到定性验证 | 现场留言/论坛热度不是订单金额 |
+| HPE Discover 2026（6 月） | PS1010 E3.S、64GB 1c DDR5 已认证并供应 HPE；128/256GB CXL CMM 与 Liqid 联调 | 至少一组 eSSD/DDR5 已跨过 OEM 认证，CXL 具备实机互操作 | CXL 展示尚不等于大规模数据中心部署。[HPED 资料](https://news.skhynix.com/en/hpe-discover-2026/) |
+| ITME 技术论文（6 月） | 使用 production-grade SK hynix CMM 和 PCIe Gen5 NVMe 验证分层 CXL-hybrid memory | CXL+NVMe 用于推理 context/KV 层有技术可行性 | 论文原型没有披露商业订单或 TCO 全量数据。[arXiv:2606.12556](https://arxiv.org/abs/2606.12556) |
+| 2Q26 电话会 / Reuters（7 月） | 约 10 家 LTA、典型 5 年、定金；CEO 称 2027 可能是最严重短缺年、2030 后需求仍高于供给 | 采购能见度、供给扩张紧迫性 | 管理层长期短缺预测带资本配置立场，应以实际价格/库存验证。[Reuters 转引](https://www.investing.com/news/stock-market-news/sk-hynix-ceo-sees-worstever-memory-supply-shortage-in-2027-says-demand-to-outstrip-supply-beyond-2030-4786660) |
+
+## 四、当前高增长/关键业务：收入贡献、重要性与供需
+
+### 4.1 不重叠的 2Q26 收入桥
+
+单位：美元；区间是本报告反推。HBM 属 DRAM，SOCAMM2 属 server DRAM，QLC/TLC eSSD 属 NAND，子项不可再加总。
+
+| 不重叠业务 | 2Q26 季度收入（E） | 占公司收入 | 当前同比增速（E） | 证据与反推方法 |
+|---|---:|---:|---:|---|
+| **HBM（HBM3E+HBM4）** | **$60–66 亿**（中值 $63 亿） | 11–12% | +25–40% | 以 2025 HBM 翻倍、2Q26 DRAM mix、HBM3E/HBM4 shipment 与行业规模约束 |
+| **AI/服务器 DRAM（不含 HBM）** | **$210–250 亿**（中值 $230 亿） | 38–46% | +180–260% | DRAM 总收入 $401 亿，扣 HBM 和移动/客户端；ASP 与 128GB+、1c、SOCAMM2 mix 驱动 |
+| **企业级 SSD** | **$90–98 亿**（中值 $94 亿） | 16–18% | +200–300% | 1Q26 行业数据中 SK/Solidigm eSSD 约 $46 亿，2Q26 公司称 eSSD 收入环比约 2x |
+| **其他 DRAM/NAND/非核心** | **约 $162 亿** | 29–30% | +80–160% | 由公司总收入减前三项；含移动/客户端/消费、非 eSSD NAND 和其他 |
+| **公司合计** | **$549 亿** | 100% | **+257%（韩元口径）** | 79.319 万亿韩元 / 1,443.61 |
+
+### 4.2 关键业务评分
+
+评分 1–5，5 表示越重要、越紧急、越供不应求、越有垄断/溢价能力。
+
+| 业务/产品 | 当前收入（美元/季，E） | AI 基建重要性 | 时间紧急性 | 供需紧张 | 准垄断/锁定能力 | 溢价能力 | 关键理由 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| **HBM3E/HBM4** | $60–66 亿 | **5.0** | **5.0** | **5.0** | **4.5** | **4.5** | GPU 封装内不可缺；6–18 个月验证、良率/封装/客户共同设计；但三大供应商均在 HBM4 竞争 |
+| **SOCAMM2** | $6–12 亿（包含于 server DRAM） | **4.5** | **5.0** | **4.5** | **3.5** | **4.0** | Vera Rubin CPU 内存标准、每 CPU 8 模组；量产早，但 Samsung/Micron 可进入同一标准 |
+| **高容量 server DDR5/MRDIMM** | $180–225 亿（包含于 server DRAM） | **4.0** | **4.5** | **5.0** | **3.0** | **4.5** | agentic inference 增加 CPU 内存；QVL 慢；短缺期 conventional DRAM 定价甚至优于 HBM |
+| **高容量 QLC eSSD** | $40–60 亿（包含于 eSSD） | **4.5** | **4.5** | **4.5** | **3.5** | **4.0** | 模型/数据/KV 层容量密度，Solidigm 122.88TB 和固件验证；HDD、其他 QLC 仍是替代 |
+| **高性能 TLC/AI eSSD** | $30–50 亿（包含于 eSSD） | **4.5** | **4.5** | **4.5** | **3.5** | **4.0** | checkpoint、small-chunk、local cache 对延迟和写耐久敏感，替换涉及 firmware/QoS 验证 |
+| **CXL CMM** | < $0.5 亿 | **3.5** | **2.5** | **2.0** | **2.5** | **2.5** | 技术重要但商业化早；controller/RAS/software 比 DRAM die 更决定差异化 |
+| **HBM4E/custom HBM/iHBM** | 近零至样品收入 | **5.0** | **3.5** | **4.0** | **4.5** | **4.5** | 未来代际关键，小业务潜力最大；认证和客户量产未完成 |
+| **HBF** | 0 | 未来 4.0 | 1.5 | 1.0 | 2.0 | 2.0 | 标准阶段，且由 OCP/Sandisk 共同推进，不具独占性；约 2030 才可能形成需求 |
+
+**“垄断”必须收敛表述：**SK hynix 在 HBM 是领先者而非法律或经济意义的垄断者。1Q26 HBM 份额约 56.4%，Samsung、Micron 已进入 HBM4 认证/量产；SOCAMM2 与 CXL 更是平台标准。公司的真正护城河是 **提前共同设计 + 高良率量产 + 客户质量记录 + 封装/固件认证组合**，不是某个接口的永久排他权。
+
+## 五、一年后关键业务：基准、乐观、极度乐观
+
+### 5.1 公司收入桥与情景定义
+
+本报告把“一年后”定义为 **2Q27 单季退出水平**，同时给出未来 12 个月（3Q26–2Q27）累计值。情景不以股价为目标，而以可出售 bit、产品 mix、ASP、客户递延和认证进度构造。
+
+| 不重叠收入（亿美元/季） | 2Q26 当前（E） | 2Q27 基准 | 2Q27 乐观 | 2Q27 极度乐观 |
+|---|---:|---:|---:|---:|
+| HBM | 63 | **105** | **135** | **170** |
+| AI/服务器 DRAM（不含 HBM） | 230 | **285** | **360** | **450** |
+| eSSD | 94 | **130** | **170** | **230** |
+| 其他 DRAM/NAND/非核心 | 162 | **230** | **235** | **250** |
+| **公司季度收入** | **549** | **750** | **900** | **1,100** |
+| **同比增速** | +257% | **+36%** | **+64%** | **+100%** |
+| **退出年化收入** | $2,198 亿 | **$3,000 亿** | **$3,600 亿** | **$4,400 亿** |
+| **未来 12 个月累计收入（E）** | — | **约 $2,750 亿** | **约 $3,300 亿** | **约 $3,950 亿** |
+| **合并营业利润率（E）** | 76.3% | **65–72%** | **72–78%** | **78–82%** |
+
+FactSet 2027 全年收入预期约 $3,607 亿，约等于本报告“乐观”退出年化水平。基准情景更保守地假设：conventional DRAM/NAND 的极端 ASP 在 2027 年部分回落，新增 bit 抵消价格正常化；极度乐观则要求供给缺口、客户争抢和高 ASP 同时延续。
+
+### 5.2 每个关键产品的三情景预测
+
+单元格格式为：**2Q27 季度收入 / 同比增速；I-U-S-M-P**。其中 I=AI 基建重要性、U=部署时间紧急性、S=供需紧张、M=客户锁定/准垄断能力、P=溢价能力，均为 1–5 分。子产品收入包含在上表大类中，不能横向全部相加。
+
+| 产品/业务 | 2Q26 当前收入（E） | 基准 | 乐观 | 极度乐观 | 一年后产品毛利率（E） |
+|---|---:|---|---|---|---:|
+| **HBM 合计** | $63 亿 | **$105 亿 / +67%；5-4-4-4-4** | **$135 亿 / +114%；5-5-5-4.5-4.5** | **$170 亿 / +170%；5-5-5-4.5-5** | 58–72% / 62–75% / 68–78% |
+| **其中 HBM4/HBM4E/custom** | $3–8 亿 | **$35 亿；5-5-4-4-4** | **$65 亿；5-5-5-4.5-4.5** | **$100 亿；5-5-5-4.5-5** | 50–65% / 58–70% / 65–76% |
+| **SOCAMM2** | $6–12 亿（中值 $9 亿） | **$30 亿 / +233%；4.5-5-4-3.5-4** | **$60 亿 / +567%；4.5-5-5-4-4.5** | **$100 亿 / +1,011%；5-5-5-4-5** | 58–70% / 63–75% / 68–78% |
+| **server DDR5/MRDIMM（不含 SOCAMM/HBM）** | 约 $221 亿 | **$255 亿 / +15%；4-4-4-3-3.5** | **$300 亿 / +36%；4-4.5-5-3-4.5** | **$350 亿 / +58%；4.5-5-5-3.5-5** | 60–75% / 70–82% / 78–88% |
+| **高容量 QLC eSSD** | 约 $50 亿 | **$75 亿 / +50%；4.5-4-4-3.5-3.5** | **$110 亿 / +120%；4.5-5-5-4-4.5** | **$160 亿 / +220%；5-5-5-4-5** | 48–58% / 52–62% / 58–68% |
+| **高性能 TLC/AI eSSD** | 约 $44 亿 | **$55 亿 / +25%；4.5-4-4-3.5-3.5** | **$60 亿 / +36%；4.5-4.5-5-4-4** | **$70 亿 / +59%；4.5-5-5-4-4.5** | 55–65% / 58–68% / 62–72% |
+| **CXL CMM** | < $0.5 亿 | **$4 亿；3.5-3-2.5-2.5-2.5** | **$10 亿；4-4-3.5-3-3.5** | **$20 亿；4.5-4.5-4-3.5-4** | 38–55% / 45–60% / 50–65% |
+| **iHBM** | 0 | **仍为客户评估，收入接近 0** | **小额 NRE/样品 < $1 亿** | **HBM5 前置设计收入 $1–3 亿** | 无可验证量产毛利率 |
+| **HBF** | 0 | **标准制定，0** | **原型/NRE，< $0.5 亿** | **早期客户样品，< $1 亿** | 不进入近一年量产业绩 |
+
+三情景的可证伪条件：
+
+- **基准：**M15X 按计划爬坡但 HBM4/customer qualification 有正常延迟；2Q27 供需仍紧，传统 DRAM/NAND ASP 较 2Q26 峰值回落 5%–15%；项目递延/取消 5%–8%。
+- **乐观：**M15X 到 2027 年达到约 6–8 万片/月的渠道估算区间，1c/321L 良率改善；Rubin、GB300、AI ASIC 和 eSSD 项目同步放量；ASP 再升 15%–25%；递延/取消 2%–4%。
+- **极度乐观：**2027 成为全行业供给缺口最大年份，新增 cleanroom 和封装仍追不上 GPU/ASIC/agentic inference；客户以定金锁量，ASP 再升 30%–45%；递延/取消 <2%。这要求电力/数据中心建设不成为上游需求兑现瓶颈，概率显著低于前两档。
+
+## 六、BOM、每 GPU/每 rack/每 MW/每 optical port 的内容量与价格传导
+
+### 6.1 HBM：从 stack 到 GPU、rack 和 MW
+
+HBM4 12H stack 的成本结构不是 12 片 DRAM 简单相加。本项目行业资料的基准拆分为：DRAM core die **42–52%**、logic/base die **8–15%**、TSV/减薄/RDL **9–14%**、bonding/MR-MUF **8–13%**、测试 **8–12%**、良率损失 **8–15%**、其他 **3–7%**。因此，SK hynix 的定价权来自合格 stack，不仅来自 DRAM wafer。[项目 HBM 行业调研](../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-07-10.md)
+
+本报告采用行业资料价格：HBM3E **$8–13/GB**、HBM4 **$12–18/GB**、HBM4E **$15–24/GB**；custom HBM 在可比标准品上溢价约 15%–40%。这是研究模型，不是 SK hynix 报价。
+
+| 加速器/系统 | 每 GPU HBM | stack 数量（推算） | 72-GPU rack HBM | 每 GPU HBM 器件值 | 每 rack HBM 器件值 | 120–142kW/rack 下每 MW HBM |
+|---|---:|---:|---:|---:|---:|---:|
+| NVIDIA B200/GB200 | 192GB HBM3E | 8×24GB | 13.824TB | $1,536–2,496 | $11.1–18.0 万 | **97–115TB/MW** |
+| NVIDIA B300/GB300 NVL72 | 288GB HBM3E | 8×36GB | **20.736TB** | $2,304–3,744 | **$16.6–27.0 万** | **146–173TB/MW** |
+| NVIDIA Rubin NVL72 | 288GB HBM4 | 8×36GB | **20.736TB** | $3,456–5,184 | **$24.9–37.3 万** | **146–173TB/MW** |
+| AMD MI455X/Helios | 432GB HBM4 | 12×36GB | **31.104TB** | $5,184–7,776 | **$37.3–56.0 万** | **219–259TB/MW** |
+
+NVIDIA 官方 GB300 参考架构给出 72 GPU、36 Grace CPU、每 GPU 288GB HBM3E，整 rack 最高约 **142kW**；因此约 7.04 rack/MW、507 GPU/MW。[NVIDIA GB300 规格](https://www.nvidia.com/en-gb/data-center/gb300-nvl72/)、[NVIDIA 参考架构](https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory/latest/components.html)。Rubin 官方给出 288GB HBM4/GPU、22TB/s；AMD 官方 MI455X 给出 432GB HBM4、23.3TB/s 和 72-GPU Helios。[NVIDIA Rubin 技术博客](https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/)、[AMD accelerator 规格](https://www.amd.com/en/products/specifications/accelerators.html)。
+
+**SK hynix 实际 revenue content 不是表中总 BOM。**以 56% 当前 HBM 份额机械分配，GB300 约为 **$9.3–15.1 万/rack**，Rubin 约 **$13.9–20.9 万/rack**；但具体 rack 的供应商通常是离散的，不会按市场份额把同一 GPU 的 8 个 stack 混装。AMD 已与 Samsung 宣布 MI455X HBM4 主要供应合作，因此不能把 MI455X 的全部 HBM BOM 计为 SK hynix 订单；该行主要用于衡量行业内容量和 second-source 上行空间。[AMD/Samsung 合作](https://www.amd.com/en/newsroom/press-releases/2026-3-18-samsung-and-amd-expand-strategic-collaboratio.html)
+
+### 6.2 SOCAMM2/服务器 DRAM：CPU 侧内容量可能高于 HBM 器件值
+
+SOCAMM2 模组 BOM 估算：LPDDR5X die **80–90%**、模组芯片/PMIC **2–6%**、PCB **4–9%**、connector **1–3%**、组装测试 **4–8%**、物流/其他 **1–3%**。NVIDIA Vera Rubin 配置下，每 Vera CPU 8×192GB = **1.536TB**；NVL72 有 36 Vera CPU，即：
+
+| 口径 | SOCAMM2 真实物理内容量 | 模组数量 | 按 $1,500–3,000/模组的器件值（E） |
+|---|---:|---:|---:|
+| 每 Vera CPU | 1.536TB | 8 | $1.2–2.4 万 |
+| 每 GPU 等效分摊 | **768GB** | **4** | **$6,000–12,000** |
+| 每 NVL72 rack | **55.296TB** | **288** | **$43.2–86.4 万** |
+| 每 MW（120–142kW/rack） | **389–461TB** | **2,028–2,400** | **$304–720 万** |
+
+这里的价格来自项目服务器内存行业模型，不是公司报价。[项目 SOCAMM 行业调研](../../行业调研/AI服务器_存储_芯片/行业调研_系统内存、SOCAMM与内存模组_2026-07-10.md)。它揭示一个关键事实：按器件收入计算，Vera CPU 侧低功耗系统内存可能比单 GPU HBM 的美元内容量更大；但 SOCAMM 标准化、多供应商和可替换模组使其长期垄断性低于封装内 HBM。
+
+传统 DDR5 则依 CPU socket/channel 数量而变。典型 2-socket AI CPU server 若每 socket 12 个通道、每通道 1×256GB RDIMM，约 **6TB/server**；若每 rack 8–18 台此类 server，则为 **48–108TB/rack**。这不是 NVIDIA NVL72 的固定 BOM，而是通用 AI/推理 CPU rack 的容量敏感度。DDR5 module 的真实数量必须按 OEM/QVL 配置核验，不能把所有服务器统一套用。
+
+### 6.3 eSSD：本地 cache 与外置 context storage 必须分开
+
+高容量 QLC eSSD 的 BOM 估算：NAND die **74–84%**、controller **4–8%**、DRAM **3–6%**、PCB/电源/散热 **3–6%**、组装测试 **3–5%**、保修/其他 **2–5%**。高性能 TLC eSSD 的 NAND 比重较低（约 **60–70%**），controller、DRAM、散热、firmware/QoS 和保修比重更高。[项目 eSSD 行业调研](../../行业调研/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-07-10.md)
+
+NVIDIA GB300 官方参考架构每个 compute tray 有 **4 个 E1.S NVMe + 1 个 M.2 OS SSD**；18 个 tray 合计 **72 个 E1.S + 18 个 M.2**。官方没有指定容量和供应商。若把 72 个 E1.S 规范化为 15.36–30.72TB：
+
+| 口径 | 真实/规范化内容量 | 按 $150–300/TB 的合同模型（E） | 说明 |
+|---|---:|---:|---|
+| 每 GPU 本地 NVMe | 1 个 E1.S、15.36–30.72TB | $2,304–9,216 | 72 drive / 72 GPU；实际容量由 OEM 决定 |
+| 每 NVL72 rack 本地 NVMe | **1.106–2.212PB** | **$16.6–66.4 万** | 不含 18 个小容量 M.2 boot SSD |
+| 每 MW（142kW/rack） | **7.79–15.58PB** | **$117–467 万** | 使用 7.04 rack/MW |
+
+对于外置 context/KV storage，Solidigm D5-P5336 最高 122.88TB；8/16 个 drive 为 **0.983/1.966PB**。公司行业文章曾引用“Vera Rubin context layer 约 9.6PB/rack”的产业预期，但它并非 NVIDIA 正式 compute-rack BOM；若用 122.88TB drive，需要约 **78 个 drive**，更可能位于独立存储 shelf/集群。按 $150–300/TB，9.6PB 器件值约 **$144–288 万**。2026 年零售渠道对 122.88TB P5336 报价一度约 $48,400、甚至称交期 12 个月；这是短缺和渠道加价证据，不应直接套到 hyperscaler 批量合同。[渠道价格核验](https://www.techradar.com/best/large-hard-drives-and-ssds)、[Solidigm P5336 规格](https://www.solidigm.com/products/data-center/d5/p5336.html)。
+
+价格传导链为：**NAND wafer/bit ASP → controller/DRAM/firmware 与良率 → eSSD $/TB、DWPD、QoS → OEM/存储 shelf → CSP 服务 TCO**。QLC 的卖点是 $/TB 和功耗，不是绝对最低延迟；高性能 TLC/SLC-mode 产品则通过小 chunk、写耐久和 tail latency 取得溢价。
+
+### 6.4 CXL CMM 与每 optical port
+
+SK hynix 当前 CXL 产品为 96/128/256GB 级 CMM，而不是 1TB 标准量产卡。以每 rack 4–16 张 128/256GB 卡规范化，真实物理内容量为 **0.5–4.0TB/rack**；没有固定“每 GPU”attach，因为 CXL 可挂在 CPU/交换 fabric/pooled-memory server。其 BOM 中 DRAM 通常约 **55–75%**，其余为 CXL controller、PCB、PMIC、firmware、散热和验证成本。最难替代的是 RAS/firmware/interoperability，不是 DRAM die 本身。[项目 CXL 行业调研](../../行业调研/AI服务器_存储_芯片/行业调研_CXL内存扩展与内存池化_2026-07-10.md)
+
+**每 optical port 的真实 SK hynix 直接内容量 = 0。**HBM、SOCAMM、DDR5 和 eSSD 都不是光模块 BOM，不能为了得到“光口含量”而虚构物理绑定。若仅为机架经济性分摊，以 72 GPU、每 GPU 4 个 scale-out optical-port-equivalent（共 288 个）作规范化：
+
+| 分摊层 | 每 rack 内容 | 每 optical-port-equivalent | 是否真实光口 BOM |
+|---|---:|---:|---|
+| GB300/Rubin HBM | 20.736TB | **72GB** | 否；仅经济分摊 |
+| Vera SOCAMM2 | 55.296TB | **192GB / 1 模组** | 否；恰好因 288 模组/288 port-equivalent |
+| GB300 本地 E1.S NVMe | 1.106–2.212PB | **3.84–7.68TB** | 否；仅机架分摊 |
+| SK hynix 直接光学器件 | **0** | **0** | **是，真实答案** |
+
+若实际网络每 GPU 光口数不是 4，上述分摊与端口数成反比；绝不可把这些数字同时计入光模块 TAM 和内存 TAM。
+
+### 6.5 完整价格传导链
+
+```text
+EUV/wafer/先进 DRAM 节点、NAND layer 与良率
+        ↓
+HBM core die / DDR5-LPDDR die / NAND die 的机会成本
+        ↓
+TSV + base die + MR-MUF + test（HBM）
+PCB + connector + PMIC + QVL（SOCAMM/RDIMM）
+controller + firmware + DRAM cache + endurance（eSSD/CXL）
+        ↓
+合格 stack / module / drive 的合同价与 LTA 分配
+        ↓
+GPU/CPU board、OEM tray、rack、storage shelf
+        ↓
+CSP 的 $/token、功耗、利用率与服务收入
+```
+
+当 conventional DDR5 的晶圆利润超过年度锁价 HBM 时，SK hynix 会把“放弃 DDR5 的机会成本”带入 2027 HBM4/HBM4E 谈判；HBM 合同价并不只由 stack 成本决定。反过来，若 Samsung/Micron HBM4 良率和认证成熟，多供给会压缩溢价。eSSD 的 NAND 合同价传导更快，但 OEM/CSP 会通过容量、DWPD 和服务质量重新议价。
+
+## 七、当前与一年后的产能、供应链采纳和认证
+
+### 7.1 产能基础与爬坡时间
+
+公司没有按 HBM/SOCAMM/eSSD 披露 wafer starts、封装产能或美元产能。本报告将官方时间表与产业渠道拆开：
+
+| 设施/动作 | 官方事实 | 渠道补充 | 对未来一年的含义 |
+|---|---|---|---|
+| **M15X（Cheongju）** | 为 HBM 等先进 DRAM 扩产，2Q26 公司称提前量产；2026 CapEx 重点 | 产业报道指 2026-04 起约 1 万片/月，2027 最多约 8 万片/月；不同报道有 4–8 万片/月差异 | **唯一能在 2H26–1H27 快速贡献的主要前端增量**；最终 revenue 取决于 HBM wafer trade ratio、1c 良率和封装 |
+| **现有 Icheon/Cheongju/Wuxi/Dalian** | 通过 process migration、减少换线、优化 mix 增加 bit | 行业估算现有线利用率接近高位 | 未来一年大部分供给仍来自既有 fab，而非新绿地厂 |
+| **Yongin Fab 1** | 首个 cleanroom 从 2027-05 提前到 **2027-02**；首 fab 总设施投资约 31 万亿韩元，其中新增 21.6 万亿，最终 6 个 cleanroom | cleanroom 开放后仍需设备安装、试产、良率、认证；渠道估计首期约 2 万片/月起 | 2Q27 只贡献有限合格 bit；更重要的规模影响在 2H27–2028。[官方计划](https://news.skhynix.com/en/new-facility-investment-for-yongin-semiconductor-cluster/) |
+| **P&T7 先进封装** | 约 20 万亿韩元；目标 2027 年末完工 | — | 无法解决 1H27 的 HBM back-end 瓶颈，主要支持 2028+ |
+| **Indiana 先进封装/R&D** | 建设中，目标美国客户近端 AI packaging | 预计 2H28 才有实质量产 | 一年预测不计大额收入 |
+| **M17 NAND** | 约 80 万亿韩元；2027 开工、2029H1 运营；与 P&T7 合计长期 100 万亿韩元 | — | 不增加未来一年的 NAND wafer；近一年靠 321L migration、既有韩国/Dalian 线。[官方 Cheongju 计划](https://news.skhynix.com/en/fact-07/) |
+
+TrendForce 2026-07-30 的独立判断与上述时间差一致：2027 新 DRAM 产能要到下半年才有意义爬坡，实质产量贡献可能到 2028；NAND 则因高层数迁移和新供给，2H27 可能从紧缺转向较宽松。[TrendForce 2027 展望](https://www.trendforce.com/presscenter/news/20260730-13158.html)
+
+### 7.2 当前可出售产能（美元计）
+
+| 业务 | 2026-07 当前年化可出售能力（E） | 物理/价格约束 | 当前供应链采纳 | 当前认证阶段 |
+|---|---:|---|---|---|
+| **HBM 合计** | **$250–300 亿/年** | 先进 DRAM wafer、TSV/MR-MUF、known-good-die、base die、最终客户良率 | HBM3E 大规模；HBM4 向关键客户量产，2H 扩大 | HBM3E 成熟 QVL；HBM4 已过关键客户量产门槛；不同客户仍各自认证 |
+| **AI/server DRAM（不含 HBM）** | **$850–1,050 亿/年** | 1b/1c wafer、module PCB/PMIC、QVL；当前 ASP 极高 | 128/256GB RDIMM 广泛；64GB 1c 已供 HPE；SOCAMM2 锚定 Vera Rubin | 256GB RDIMM 已 Intel Xeon 6 certified；HPE 64GB 已供货；SOCAMM2 为量产/平台爬坡 |
+| **其中 SOCAMM2** | **$30–50 亿/年**（包含于上项） | 1c LPDDR5X die、connector、module test；单一平台爬坡 | NVIDIA Vera Rubin 首批；客户扩展中 | 已量产；其他客户样品/设计导入未披露 |
+| **eSSD** | **$350–420 亿/年** | NAND bit、controller、firmware、DRAM、E1.S/E3.S/U.2 组装、耐久/温度测试 | SK+Solidigm 1Q26 eSSD 收入 $46.4 亿、份额约 25.1%；2Q26 公司收入约翻倍 | PS1010 E3.S 已 HPE 认证；P5336 122.88TB 已商业发货；245TB 仍在验证/推出前阶段 |
+| **CXL CMM** | **< $5 亿/年**（包含于 DRAM） | CXL controller、firmware/RAS、host BIOS、switch/pooled software | 96GB production-grade；128/256GB 与 Liqid 实机互操作 | 96GB 完成客户验证；128/256GB 尚处多平台 validation/interop |
+| **HBM4E/custom/iHBM/HBF** | **样品/NRE，合计 < $2 亿/年**（E） | 新接口、热、base die、标准、客户 co-design | HBM4E 主要客户样品；其余为设计/标准阶段 | HBM4E customer qualification；iHBM 概念；HBF OCP workstream |
+
+eSSD 当前独立市场锚：TrendForce 统计 1Q26 全球前五 eSSD 收入 $184.6 亿、环比 +86.1%，合同价约 +80%；SK hynix+Solidigm 收入 $46.4 亿，约占 25.1%。[TrendForce eSSD 数据](https://www.trendforce.com/presscenter/news/20260611-13092.html)
+
+### 7.3 一年后产能、采纳和认证三情景
+
+下表为 **2Q27 退出年化可出售收入能力**，包含物理 bit、良率、产品组合和 ASP；不是资本支出。SOCAMM/CXL 是大类的子集，不能重复求和。
+
+| 业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| **HBM** | **$420 亿/年**；M15X 稳步爬坡，HBM4 主量；HBM4E 完成 1–2 个关键客户认证、开始小量 | **$540 亿/年**；HBM4 多客户满量，HBM4E 在主要客户进入 volume ramp；供应份额保持约 50%+ | **$680 亿/年**；M15X/封装良率超预期，HBM4E/custom 高溢价量产；份额约 55%+ |
+| **AI/server DRAM（不含 HBM）** | **$1,140 亿/年**；256GB/1c 与 SOCAMM2 扩量；QVL 维持高粘性 | **$1,440 亿/年**；Vera Rubin 和通用 AI server 同时强，客户抢量；更多 OEM 认证 | **$1,800 亿/年**；CPU memory 内容量和价格同升，Yongin 初始产能较快贡献 |
+| **其中 SOCAMM2** | **$120 亿/年**；Vera Rubin 主平台量产，至少首批 CSP 采用 | **$240 亿/年**；多家 CSP/系统商，第二供应链仍紧 | **$400 亿/年**；SOCAMM2 成为高端 AI CPU server 事实标准，SK 保持高份额 |
+| **eSSD** | **$520 亿/年**；122.88TB QLC 与 Gen5 TLC 量产，245TB 完成部分认证；2H27 NAND ASP 开始松动 | **$680 亿/年**；多个 context-storage 项目，245TB 合格，321L 良率良好 | **$920 亿/年**；agentic AI 吸收新增 NAND，245TB/高性能小块产品同时满产，价格不降 |
+| **CXL CMM** | **$16 亿/年**；128/256GB 完成若干 OEM/CPU 平台验证，仍是 niche | **$40 亿/年**；pooled memory 在 AI inference 小规模部署，HMSDK/interop 成熟 | **$80 亿/年**；CXL memory pooling 被多个 CSP 量产采用，controller 供给不再瓶颈 |
+| **HBM4E/custom/iHBM/HBF** | HBM4E 小量；custom NRE；iHBM/HBF 无量产 | HBM4E volume；custom 1–2 个项目；iHBM customer eval；HBF 原型 | HBM4E/custom 成为 HBM 增量主力；iHBM 前置认证；HBF 仍不应计入大额收入 |
+
+**认证顺序决定收入时间：**sample → electrical/thermal characterization → accelerator/CPU board qualification → OEM rack/system validation → CSP workload/firmware qualification → volume ramp。HBM4E 即使 2026H1 已送样，也不能跳过这一链条；eSSD 245TB 的容量发布也不等同于经过多季度数据完整性、tail latency、power-loss protection 和 endurance 认证。
+
+## 八、基于订单、供给与产能的未来一年增速
+
+### 8.1 可验证需求与不可验证“订单”分界
+
+| 需求/项目 | 已确认事实 | 本报告如何计入 | 不计入的部分 |
+|---|---|---|---|
+| **NVIDIA GB300/Vera Rubin** | SK hynix 与 NVIDIA 多年技术合作；HBM4、SOCAMM2 对应 Vera Rubin；Rubin 2H26 客户可用 | HBM4/SOCAMM2 基准需求锚；采用 NVIDIA 官方 288GB HBM/GPU、36 Vera/rack | 无公开合同金额、采购份额或取消条款，不称为 backlog |
+| **AWS/Google/Microsoft/OCI 等 Rubin 部署** | NVIDIA 官方列为 2026 首批 Rubin cloud provider | 作为行业需求池，不自动分配给 SK hynix | 未知 HBM 供应商、rack 数和 SK attach rate |
+| **HPE/Intel** | PS1010 E3.S 与 64GB DDR5 已供 HPE；256GB RDIMM 获 Intel Xeon 6 认证 | 计入 server DRAM/eSSD 已采纳 | 认证不是最低采购量承诺 |
+| **AMD MI455X/Helios** | Oracle 宣布 [5 万颗 MI450 系列 supercluster](https://www.amd.com/en/newsroom/press-releases/oracle-and-amd-expand-partnership-to-help-customers-ach.html)；Meta 宣布[最多 6GW 多代 AMD GPU](https://www.amd.com/en/newsroom/press-releases/2026-2-24-amd-and-meta-announce-expanded-strategic-partnersh.html)；Samsung 与 AMD 对 MI455X HBM4 达成主要供应合作 | 只作为行业 HBM 总需求/second-source 潜力 | **不把 AMD 项目金额算成 SK hynix 订单** |
+| **2026 全部 DRAM/NAND 需求覆盖** | 3Q25 公司正式表述 | 支持高利用率和分配逻辑 | 不等于不可撤销合同金额 |
+| **约 10 家 LTA** | 2Q26；典型约 5 年，含定金、量与价格机制 | 下调基准取消/递延率，提高中期能见度 | 未披露客户、金额、覆盖收入和违约补偿 |
+| **高容量 eSSD 渠道交期** | 122.88TB 零售一度约 $48,400、最长称 12 个月 | 只作方向性紧缺验证 | 不用于推导 hyperscaler ASP 或订单规模 |
+
+客户集中使“订单能见度”同时成为风险：招股书显示 1Q26 两大客户占收入 **14.8% 和 12.4%**，合计 27.2%；2025 最大客户占 23.9%。一个平台延迟、客户转向第二供应商或采购节奏调整，足以让季度出货偏离需求池。
+
+### 8.2 交期、取消率与兑现率假设
+
+公司未披露周数 lead time，因先进内存多为年度分配和平台认证，通用“几周交期”并不适用。本报告采用的可操作区间：
+
+| 产品 | 设计/认证 lead time | 交付排程特征 | 基准递延/取消 | 乐观 | 极度乐观 |
+|---|---:|---|---:|---:|---:|
+| HBM3E/HBM4/HBM4E | **6–18 个月** | GPU/ASIC 共同设计、季度/年度 allocation；质量问题可能影响整套 GPU | 5% | 2–3% | <1% |
+| SOCAMM2/server DRAM | **2–6 个季度** | CPU/OEM QVL；缺货时客户可能降配或延后整机 | 5–8% | 2–4% | 1–2% |
+| eSSD | **6–18 个月** | controller/firmware/QoS/耐久认证；项目可在容量间调整 | 6–8% | 3–4% | 1–2% |
+| CXL CMM | **2–4 个季度以上** | host BIOS、switch、OS、memory manager 全栈互操作 | 10–20% | 5–10% | 2–5% |
+
+这些百分比是项目收入递延/取消压力测试，不是公司实际取消率。LTA 定金可降低恶意取消，但数据中心电力、机房建设、GPU/网络/电源短缺仍可把内存交付从一个季度推到下一个季度。2Q26 公司所称“部分高价值产品延至 2H”正是这种非取消递延。
+
+### 8.3 业务增速的量价拆解
+
+| 业务 | 2Q26→2Q27 基准 | 乐观 | 极度乐观 | 对应收入增速 |
+|---|---|---|---|---:|
+| **HBM** | 合格 bit/产品 mix +约 42%；净 ASP/mix +约 25%；约 5–6% 递延 | bit +约 58%；ASP/mix +约 42%；2–3% 递延 | bit +约 75%；ASP/mix +约 55%；<1% 取消 | **+67% / +114% / +170%** |
+| **AI/server DRAM excl. HBM** | bit +约 20%；净 ASP/mix +约 8%；5–8% 递延被补单部分抵消 | bit +约 30%；ASP/mix +约 25% | bit +约 38%；ASP/mix +约 45% | **+24% / +57% / +96%** |
+| **eSSD** | bit/capacity mix +约 32%；净 $/TB +约 10%；6–8% 递延 | bit +约 50%；$/TB/mix +约 27% | bit +约 67%；$/TB/mix +约 48% | **+38% / +81% / +145%** |
+| **公司总收入** | 高价值三项 + other 业务正常化 | 三项同步紧缺，other 稳定 | 全产品分配、ASP 再加速 | **+36% / +64% / +100%** |
+
+**基准为何仍有 +36%：**M15X 和先进节点贡献 bit、HBM4/SOCAMM2/eSSD 提高每系统内容量，即使传统 NAND 在 2H27 开始宽松，公司仍可用 QLC/TLC 产品 mix 和 Solidigm 增长抵消部分价格下降。**基准失败条件**是 Rubin/AI ASIC 延后、电力约束导致 rack 部署明显低于计划、HBM4 认证/良率延迟、或 conventional DRAM/NAND ASP 早于 2027H2 大幅回落。
+
+## 九、竞争格局、替代技术和客户替换成本
+
+### 9.1 产品级竞争
+
+| 产品 | 主要竞争对手 | SK hynix 优势 | 竞争/替代方案 | 客户替换成本 |
+|---|---|---|---|---:|
+| **HBM3E/HBM4** | Samsung、Micron | HBM 多代量产经验、约 56.4% 份额、MR-MUF 高良率、NVIDIA 深度共同设计、HBM4 2Q26 已量产 | Samsung 已恢复 HBM4 竞争并主供部分 AMD；Micron HBM4 扩量。替代为更低容量 HBM/GDDR、片上 SRAM/PIM，但不能在高端 GPU 等价替换 | **极高：6–18 月，重新做 signal/power/thermal/yield 和 GPU package 验证** |
+| **HBM4E/custom/iHBM** | Samsung、Micron；hybrid bonding/不同 base die 路线 | Advanced MR-MUF、TSMC logic base die、热管理概念和客户信任 | hybrid bonding 可能在更高层数/间距成为主流；custom base die 使 foundry/EDA/IP 能力更重要 | **极高，但在 tape-out 前客户仍可多源设计** |
+| **SOCAMM2** | Samsung、Micron、平台自定义模组生态 | 率先 192GB 1c LPDDR5X 量产、与 NVIDIA 合作 | 高容量 RDIMM/MRDIMM、板载 LPDDR、未来 CXL pooled memory | **中高：connector/BIOS/QVL 可标准化，但平台量产期切换风险高** |
+| **server DDR5/MRDIMM** | Samsung、Micron；低端长期有 CXMT | 1c 节点、256GB Intel 认证、HPE 供货、高容量/功效 | CXL memory、容量优化/压缩；普通容量产品可多源 | **高：2–6 季度 QVL；成熟标准下长期低于 HBM** |
+| **高容量 QLC eSSD** | Samsung、Kioxia、SanDisk、Micron；HDD | Solidigm 四代 QLC、122.88TB、controller/firmware、已出货容量积累 | 245TB/512TB 多家并进；HDD 在冷数据 $/TB 更低，CXL/DRAM 在延迟更低 | **高：6–18 月，数据完整性、FW、QoS、耐久、故障域和运维工具** |
+| **高性能 TLC/AI eSSD** | Samsung、Micron、Kioxia、SanDisk，以及 proprietary flash appliances | SK 176L/后续 TLC、PS/PE/PEB 系列、HPE/NVIDIA 系统展示/认证 | SLC-mode NAND、CXL memory、host memory、分布式 cache | **高；但客户通常坚持多供应商，绝对垄断性有限** |
+| **CXL CMM** | Samsung、Micron；Astera Labs、Montage、Marvell 等 controller/交换生态 | 自有 DRAM、production-grade CMM、HMSDK、Liqid/论文实机 | 本地 DDR5、NVMe tiering、软件压缩、GPU memory pooling | **中高：全栈互操作复杂，但开放标准压低长期锁定** |
+| **HBF** | Sandisk（合作也是竞争）、Samsung/Kioxia/Micron 的高带宽 NAND 路线 | 同时拥有 HBM 与 NAND、先进堆叠经验 | QLC eSSD、CXL、未来 SCM/PIM；标准尚未确定 | **尚未形成；开放标准预期降低独占性** |
+
+### 9.2 份额与竞争强度
+
+- **HBM：**1Q26 公司招股书援引 IDC 的 SK hynix 份额约 **56.4%**。Counterpoint 早期预计 2026 HBM4 约 SK 54%、Samsung 28%、Micron 18%；但 TrendForce 6 月又提示 SK hynix 部分 HBM4 认证/出货节奏下修，说明份额并非稳定常数。[TrendForce HBM4 认证跟踪](https://www.trendforce.com/research/download/RP260623IP3)
+- **DRAM：**三强为 Samsung、SK hynix、Micron；CXMT 正快速扩成熟/主流 DRAM，短期缺少大规模 HBM，但可能在 2027–2028 先压低端/标准 DDR5 的价格。SK hynix 的 1Q26 DRAM 份额约 29.1%，规模优势明显但非第一。
+- **eSSD：**1Q26 前五收入约 $184.6 亿：Samsung $70.5 亿（约 38.2%）、SK hynix+Solidigm $46.4 亿（约 25.1%）、Micron $30.9 亿（约 16.7%）、Kioxia $22.2 亿（约 12.0%）、SanDisk $14.7 亿（约 8.0%）。SK 是第二，但多家 245TB 产品认证和 NAND 供给在 2H27 转松会加剧价格竞争。
+- **NAND 总体：**除 Samsung/SK/Micron/Kioxia/SanDisk 外，YMTC 在中国市场和高层数 NAND 具有长期竞争压力；出口控制与设备约束使其进入全球 hyperscaler 的节奏不确定。
+
+### 9.3 新技术是否会成为主流
+
+| 技术 | 主流概率 | 时间 | 判断 |
+|---|---:|---:|---|
+| HBM4/HBM4E | **很高** | 2026H2–2027 | 已被 Rubin/MI455X 等平台明确采用；容量、带宽、功效需求不可由 GDDR 等价替代 |
+| Custom HBM | **高** | 2027–2029 | AI ASIC 差异化和 TCO 推动；但每客户 NRE 和 volume 风险高，可能只在头部客户主流 |
+| SOCAMM2 | **中高** | 2026H2–2028 | Vera Rubin 是强锚点；是否扩展为跨平台标准取决于 connector、可维护性和多供应商 |
+| 256GB+ DDR5/MRDIMM | **很高** | 已发生 | Agentic inference、CPU serving、向量/RAG 服务都提高系统内存容量；标准成熟、竞争激烈 |
+| 122/245TB QLC eSSD | **高** | 2026–2028 | AI 数据和 KV 层强需密度/功耗；但不替代所有高性能 TLC，也不完全替代冷数据 HDD |
+| CXL pooled memory | **中** | 2027–2030 | 技术可行、利用率价值明确；软件/BIOS/交换延迟和故障域使部署慢于宣传 |
+| HBF | **低至中（远期）** | 约 2030+ | 有清晰层级空缺，但标准、controller、软件和经济性均未成熟；不应提前资本化 |
+| iHBM/内嵌散热 | **中高（作为技术特征）** | HBM5 以后 | 高功率密度必需更好热路径；最终实现可能是 iHBM、hybrid bonding/材料或封装侧其他方案，并非品牌方案独占 |
+
+### 9.4 核心替换成本结论
+
+HBM 的替换成本最高，因为变更供应商会牵动 GPU package、interposer/base die、电气/热设计、firmware 和量产良率；客户通常会保留第二来源以制衡价格，但在一个量产周期中不会轻易切换。服务器 DRAM 和 eSSD 虽是标准接口，仍需季度级 QVL 和真实 workload 测试，短期替换成本高、长期可多源。CXL/HBF 是开放生态，早期工程粘性高，但标准成熟后供应商锁定可能低于市场想象。
+
+## 十、主要风险与反证
+
+| 风险 | 概率/影响 | 观察证据 | 对模型的冲击 |
+|---|---|---|---|
+| **盈利峰值被线性外推** | 高/高 | 2Q26 83% GM、76% OPM；conventional DRAM/NAND ASP 单季急涨 | 若 2027 ASP 正常化速度快于 bit/mix，基准收入和利润率都下修；P/E 迅速抬升 |
+| **一次性收益掩盖经营利润** | 已发生/高 | 2Q26 投资资产收益 63.27 万亿韩元、净利率 118% | 报告 P/E 约 9.5x 失真；需用正常化 13.4–15.5x 或经营现金流/EV 估值 |
+| **HBM4 份额和认证竞争** | 中高/高 | Samsung/Micron 均进入 HBM4；TrendForce 曾下调 SK 出货节奏 | HBM 增速、ASP 和 mix 同时低于乐观情景；客户议价增强 |
+| **HBM4/HBM4E 良率、base die、先进封装瓶颈** | 中/高 | 2,048-bit IO、TSMC logic base die、TSV/MR-MUF 与测试复杂度上升 | wafer starts 增加不等于 saleable bit；单位成本和交付延迟上升 |
+| **M15X/Yongin/P&T7 并行执行** | 中/高 | 2026 CapEx 高 40 万亿韩元；Yongin cleanroom、M15X、P&T7 同时推进 | 折旧/现金支出先发生，合格收入滞后；项目 IRR 低于预期 |
+| **NAND 2H27 转宽松** | 中高/中高 | TrendForce 预计高层数迁移和新产能使 2H27 NAND 更平衡 | eSSD bit 可增长但 $/TB、GM 下滑；极度乐观 eSSD 情景最先失效 |
+| **AI 数据中心电力/建设递延** | 中/高 | 公司承认项目时间受 power availability 和 data-center construction 影响 | 不是取消 HBM 总需求，而是把 rack 和内存交付跨季度递延，放大库存/应收波动 |
+| **客户集中/NVIDIA 平台依赖** | 中/高 | 1Q26 前两大客户 27.2%；最大平台决定 HBM/SOCAMM 时间 | 单一平台延后或多源切换足以使季度收入明显偏离模型 |
+| **中国竞争与地缘政策** | 中/高 | Wuxi DRAM、Dalian NAND 位于中国；先进设备/技术出口许可需持续管理；CXMT/YMTC 扩张 | 许可中断会影响产能和节点迁移；中国供应先压成熟 DRAM/NAND 价格 |
+| **大客户利用多源压价** | 高/中 | HBM4 三家竞争；server DRAM/eSSD 本就多源 | 份额仍高但溢价下降；“准垄断”评分下调 |
+| **ADS 技术性波动和汇率** | 高/中 | 2026-07 新上市；10 ADS=1 普通股；韩元财务、美元交易 | ADS 供需、韩国普通股价差、KRW/USD 会使短期估值与经营脱钩 |
+| **资本配置/治理** | 中/中 | 巨额扩产、投资资产处置、SK Group 控制与韩国治理折价 | 现金不一定全部转成高 ROIC 产能；股东回报与扩产节奏可能冲突 |
+
+中国风险还有一项容易忽视的约束：Intel NAND/Solidigm 交易获得中国批准时附带一定期限的合理定价、供货和兼容支持条件；在约束期内，公司在部分中国 NAND 客户上的提价自由度可能低于全球现货市场。具体适用期限、豁免和后续监管应以公司法律披露为准，不把该条直接量化进收入模型。
+
+## 十一、未来四个季度应跟踪的硬指标
+
+| 指标 | 基准验证线 | 乐观确认线 | 负面反证 |
+|---|---|---|---|
+| 3Q26 DRAM/NAND bit shipment | DRAM 约 +10% QoQ；NAND低个位数 | DRAM 超指引、NAND eSSD mix 继续上升 | DRAM/NAND 均低于指引且库存上升 |
+| HBM4 | 2H26 明显 ramp；良率/质量维持接近 HBM3E | 多客户 volume、2027 pricing 显著改善 | 认证/交付再延、竞争者夺得主要份额 |
+| HBM4E | 2026H2 客户反馈、2027 volume schedule 清晰 | 至少一个主要客户确定量产 | 再送样/重新设计、2027 量产推迟 |
+| SOCAMM2 | Vera Rubin 随平台放量，季度收入进入数十亿美元前期 | 多 CSP/OEM 采用、第二客户平台样品 | NVIDIA 配置下调或多供应份额低于预期 |
+| server DDR5 | 128/256GB/1c mix 高；QVL 扩大 | ASP 继续强、DDR5 单 wafer 利润维持高位 | CPU server shipment/内存容量下降、ASP 快速回落 |
+| eSSD | 季度收入保持高位；30TB+ mix 上升 | 245TB SKU 完成客户认证，context-storage 项目落地 | 2H27 宽松提前、库存/价格先于 bit 增长下滑 |
+| 321L NAND | 年末占韩国 NAND capacity 约 50% | 良率和 245TB/eSSD 认证同步 | 只有层数迁移、企业收入未兑现 |
+| M15X | 逐季增加合格 HBM/1c bit | 渠道所称 6–8 万片/月上限逐步可验证 | wafer 投入增长但 saleable bit/毛利无改善 |
+| Yongin | 2027-02 cleanroom 如期开启，设备/试产节奏透明 | 合格 bit 在 2H27 提前出现 | cleanroom 延误、设备/电力/材料不足 |
+| 毛利/营业利润率 | 仍处高位但允许从 83%/76% 正常化 | mix 抵消价格，OPM >72% | OPM 连续两季跌破 60% 且收入仍依赖 ASP |
+| 存货、应收与净现金 | 存货增速不高于收入；净现金足以覆盖一年 CapEx | 经营现金流持续显著高于 CapEx | 应收/库存连续超收入增长、净现金快速下降 |
+| HBM/eSSD 市占 | HBM ~50%+、eSSD ~20%+ | HBM4 share 稳定、eSSD 245TB 份额上升 | HBM 跌破约 40% 或 eSSD 认证落后两代 |
+
+## 十二、综合判断
+
+### 12.1 公司质量
+
+SK hynix 的长期质量确实发生结构性改善：
+
+- HBM 把公司嵌入 GPU/ASIC 的多年共同设计和认证；
+- SOCAMM2/高容量 DDR5 把它扩展到 CPU 与系统内存；
+- Solidigm/高性能 eSSD 把它扩展到推理数据与 KV cache；
+- CXL、custom HBM、iHBM、HBF 使研发方向从单颗芯片转向整个 memory hierarchy；
+- 净现金、ADS 募资和既有 fab 让它有能力跨越下一轮周期。
+
+这不是 2023 年那家仅靠 memory spot price 反弹的公司。但它也不是无周期的软件平台：DRAM/NAND 几乎仍是全部收入，价格、良率、设备和资本回报最终决定股东价值。
+
+### 12.2 当前估值所隐含的预期
+
+以 $145.72 计，$1.06 万亿美元市值已经把 SK hynix 当成全球最核心的 AI 基建公司之一。若采用 FactSet 2027 收入 $3,607 亿和本报告乐观退出年化 $3,600 亿，市值约为 **2.9x 2027 销售额**；若 2027 OPM 约 72%–78%，盈利看似便宜。但这一估值依赖异常高的 memory industry profit pool 持续，且需要用超过传统周期的资本开支维护供给。
+
+最合理的投资命题不是“HBM 需求强，所以股价一定涨”，而是：
+
+> **SK hynix 能否在 Samsung/Micron 多供给、NAND 2027H2 潜在宽松和巨额扩产折旧下，仍以高良率把 HBM4/HBM4E、SOCAMM2、高容量 DDR5 和 eSSD 的系统价值转化为 65% 以上营业利润率。**
+
+若答案为是，基准/乐观情景的收入和现金流仍能支撑当前估值；若 HBM share、ASP 和产能回报同时弱于预期，表面个位数 forward P/E 会迅速变成周期峰值陷阱。
+
+### 12.3 最终评级式结论（非买卖建议）
+
+| 项目 | 结论 |
+|---|---|
+| 业务竞争力 | **极强**；HBM 世界第一梯队，server DRAM 与 eSSD 同时受益，产品栈完整 |
+| 未来一年基本面 | **基准偏强**；本报告基准收入 +36%，但利润率从峰值温和回落 |
+| 订单质量 | **能见度强、金额透明度弱**；LTA/定金优于一般意向，但不等于披露 backlog |
+| 产能可信度 | **近端依赖 M15X 和既有线，远端依赖 Yongin/P&T7/M17**；新 cleanroom 不能提前计收入 |
+| 护城河 | **HBM 极高、server/eSSD 高、CXL/HBF 尚未建立** |
+| 最大上行 | HBM4E/custom、SOCAMM2、245TB QLC/高性能 AI eSSD 同时通过多客户认证 |
+| 最大下行 | HBM4 份额下滑 + conventional memory ASP 回落 + CapEx/折旧上升三者共振 |
+| 财务健康 | **非常健康**；净现金和 ADS 募资足以支持近端投资，但长期 ROIC 仍需验证 |
+
+## 十三、研究口径、模型限制与主要来源
+
+### 13.1 估算公式
+
+1. **市值：**$145.72 ×（发行后 7.288655 亿普通股 × 10 ADS/普通股）= 约 $1.062 万亿。
+2. **美元财务：**韩元金额 ÷ 1,443.61；该汇率由 ECB 2026-07-31 EUR/KRW ÷ EUR/USD 得到。[ECB 当日汇率](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)
+3. **分部收入：**季度总收入 × 公司披露 DRAM/NAND 整数占比；产品级收入再用 eSSD 市场数据、公司增速描述、行业容量和总额约束反推。
+4. **正常化 P/E：**从 TTM 报告净利润剔除 2Q26 63.27 万亿韩元投资资产收益；上下限分别采用税后/全额剔除。
+5. **每 MW：**1,000kW ÷ rack kW × 每 rack 内容量；采用 120–142kW/rack，142kW 为 NVIDIA GB300 官方上限。
+6. **产能（美元）：**可出售 bit × 合格率 × 产品 mix × ASP；它随价格变化，不是固定物理产量。
+
+### 13.2 本项目内只读行业资料
+
+- [HBM 与高带宽内存](../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-07-10.md)
+- [DRAM 与 HBM 替代方案](../../行业调研/AI服务器_存储_芯片/行业调研_DRAM与HBM替代方案及投资机会_2026-07-05.md)
+- [系统内存、SOCAMM 与内存模组](../../行业调研/AI服务器_存储_芯片/行业调研_系统内存、SOCAMM与内存模组_2026-07-10.md)
+- [企业级 SSD 与高速存储控制器](../../行业调研/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-07-10.md)
+- [AI-native 存储与 KV Cache 基础设施](../../行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-07-10.md)
+- [CXL 内存扩展与内存池化](../../行业调研/AI服务器_存储_芯片/行业调研_CXL内存扩展与内存池化_2026-07-10.md)
+- [AI 芯片先进封装](../../行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-07-10.md)
+- [HBM 与存储测试设备](../../行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-07-10.md)
+- [存储晶圆制造](../../行业调研/晶圆制造_设备_材料_测试/行业调研_存储晶圆制造_2026-07-10.md)
+- [先进封装设备与混合键合](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-07-10.md)
+
+### 13.3 关键外部来源
+
+- 公司/监管：[2Q26 官方业绩](https://news.skhynix.com/en/q2-2026-business-results/)、[2Q26 IR PDF](https://irsvc.teletogether.com/hynix/pdf/hynix2026Q2_eng.pdf)、[SEC 424B4](https://www.sec.gov/Archives/edgar/data/2120882/000119312526299963/d32785d424b4.htm)、[FY25](https://news.skhynix.com/en/sk-hynix-announces-fy25-financial-results/)、[1Q26](https://news.skhynix.com/en/q1-2026-business-results/)、[3Q25](https://news.skhynix.com/en/sk-hynix-announces-3q25-financial-results/)、[2Q25](https://news.skhynix.com/sk-hynix-announces-2q25-financial-results/)。
+- 产品/客户：[NVIDIA 合作](https://news.skhynix.com/en/multi-year-tech-partnership-with-nvidia/)、[HBM4E](https://news.skhynix.com/12-layer-hbm4e-sample/)、[SOCAMM2](https://news.skhynix.com/en/mass-production-socamm2-192gb/)、[iHBM](https://news.skhynix.com/en/ihbm-solution/)、[HPE Discover](https://news.skhynix.com/en/hpe-discover-2026/)、[321L QLC](https://news.skhynix.com/en/sk-hynix-begins-mass-production-of-321-layer-qlc-nand-flash/)、[HBF/OCP](https://news.skhynix.com/en/sk-hynix-and-sandisk-begin-global-standardization-ofnext-generation-memory-hbf/)。
+- 客户系统：[NVIDIA GB300](https://www.nvidia.com/en-gb/data-center/gb300-nvl72/)、[NVIDIA Rubin](https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/)、[AMD MI455X](https://www.amd.com/en/products/specifications/accelerators.html)、[Solidigm P5336](https://www.solidigm.com/products/data-center/d5/p5336.html)。
+- 独立行业验证：[TrendForce HBM 定价](https://www.trendforce.com/presscenter/news/20260602-13074.html)、[TrendForce eSSD](https://www.trendforce.com/presscenter/news/20260611-13092.html)、[TrendForce 2027 DRAM/NAND](https://www.trendforce.com/presscenter/news/20260730-13158.html)、[Reuters CEO 访谈转引](https://www.investing.com/news/stock-market-news/sk-hynix-ceo-sees-worstever-memory-supply-shortage-in-2027-says-demand-to-outstrip-supply-beyond-2030-4786660)、[ITME 技术论文](https://arxiv.org/abs/2606.12556)。
+- 市场与估值：[SKHY 行情](https://www.nasdaq.com/market-activity/stocks/skhy)、[FactSet 分析师汇总](https://www.finanzen.net/schaetzungen/sk_hynix)、[ECB 汇率](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)。
+
+### 13.4 不能从公开信息确认的事项
+
+公开信息无法确认：客户级 HBM/SOCAMM/eSSD 订单金额、LTA 覆盖收入比例、真实取消率、周数交期、各产品 ASP、产品级利润率、M15X 官方 wafer starts、HBM4E 量产客户名单、245TB SK/Solidigm 的完整认证清单，以及每个 CSP 的 rack 数。报告对这些事项均使用区间、场景或明确的“未知”，没有把论坛传闻升级为公司事实。

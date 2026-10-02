@@ -1,0 +1,293 @@
+# DTE Energy Company（DTE）公司调研：密歇根公用事业，从稳健电力股转向 AI 数据中心负荷与电网资本开支受益股
+
+报告日期：2026-06-11  
+股票代码：DTE  
+公司名称：DTE Energy Company  
+正式分类：公司调研 / 电力_发电_能源_储能  
+研究边界：本报告只结合项目内 `行业调研/` 下 AI 园区电力、数据中心电力接入、自备发电、UPS/储能等行业资料，以及联网搜索到的 DTE 官方披露、SEC/MPSC 文件和近期行业报道；未读取 `特征量化/`，未读取其他公司调研报告，未修改公司索引。
+
+## 0. 核心结论
+
+DTE 是底色很清楚的美国州监管公用事业公司：核心是 DTE Electric 和 DTE Gas，服务密歇根，赚取受监管资产回报；不是 AI 芯片、服务器、电源设备或光模块公司。2026 年以后市场重新定价它的原因，是 DTE 服务区域拿到了超大 AI 数据中心用电负荷：Oracle / OpenAI / Related Digital 在 Saline Township 的约 1.383GW / 1.4GW 数据中心供电合同已获 MPSC 条件批准并开工；Google 在 Van Buren Township 的 1.0GW 数据中心供电合同已在 2026-03 提交 MPSC 审批。DTE 还披露约 2GW advanced hyperscaler discussions 和 3-4GW 其他机会，合计数据中心机会可达约 7.4-8.4GW。
+
+投资人心中的 DTE 过去是“密歇根 regulated utility + 股息 + 5%-7% EPS 增长”的稳健电力股；现在变成“regulated utility + AI 电力负荷可选增长”的公用事业股。这个转变不是收入端马上爆发，而是把未来 5-7 年的电网、储能、可再生、燃气调峰/CCGT、需求响应和输配电资本开支变成更确定的 rate base 增长。公司 2026-2030 五年投资计划已升至 365 亿美元，其中 DTE Electric 约 300 亿美元，DTE Gas 约 45 亿美元，DTE Vantage 约 20 亿美元。
+
+最新股价与估值快照：截至 2026-06-11 19:14 UTC，DTE 股价 146.95 美元，市值约 305.7 亿美元，TTM GAAP P/E 约 24.2x；以公司 2026 operating EPS guidance 中点 7.66 美元计算，forward P/E 约 19.2x。按 SEC companyfacts 口径，DTE TTM operating revenue 约 165.15 亿美元，P/S 约 1.85x，TTM 净利约 12.64 亿美元，TTM 净利率约 7.7%；2026Q1 收入 51.41 亿美元，同比增长 15.8%。
+
+AI 数据中心相关收入当前占比仍很低：2026Q1 Google/Oracle 负荷尚未完全贡献零售电量收入，直接 AI 数据中心收入可视为接近 0%-低个位数。但“合同化未来需求”已经很大：Oracle 1.383GW 具 19 年供电协议、80% minimum billing demand、最高 10 年 minimum billing demand 的 termination payment，以及 15 年、1,383MW 储能协议；Google 1.0GW 具 20 年供电协议和 clean capacity acceleration agreement，预计完全 ramp 到 2028 年底，DTE 披露全合同期可给既有客户带来约 17 亿美元 affordability benefit。
+
+最大瓶颈不是 DTE 会不会卖电，而是能不能按时“上电”：变压器/高压设备交期、BESS/储能安全认证、MISO interconnection、MPSC 审批、地方选址/水资源/社区阻力、燃气/CCGT 长交期和利率/股权融资都会决定交付节奏。项目内行业资料显示，美国 AI 数据中心 2026-2027 的核心瓶颈已经从 GPU 逐步外溢到“可上电 MW”，大型变压器交期可达 140-160+ 周，100MW IT load 通常需要 115-130MW 设施侧供电容量。
+
+## 1. 公司整体业务、投资人认知、产业链位置与财务快照
+
+### 1.1 业务结构
+
+DTE Energy 是 Detroit-based diversified energy company，旗下主要包括四个报告分部：
+
+| 分部 | 业务内容 | 2025 全年分部 operating revenue | 2026Q1 分部 operating revenue | 2026 operating earnings guidance | 与 AI 数据中心关系 |
+|---|---:|---:|---:|---:|---|
+| DTE Electric | 发电、购电、输配电、售电；约 230 万电力客户，服务 Southeast Michigan | 69.35 亿美元 | 17.44 亿美元 | 13.40-13.60 亿美元 | 核心受益者：Oracle 1.383GW 已批准，Google 1.0GW 待批，另有约 5GW pipeline；收入体现为电量/容量/配套基础设施回收 |
+| DTE Gas | 天然气采购、储气、运输、配气、销售；约 140 万气客户 | 20.52 亿美元 | 9.32 亿美元 | 3.15-3.25 亿美元 | 直接 AI 相关性低；间接通过发电燃气需求、管网与储气可靠性受益 |
+| DTE Vantage | 非公用事业：RNG、可再生、定制能源、behind-the-meter、CHP、工业/商业能源解决方案 | 6.96 亿美元 | 2.27 亿美元 | 1.80-1.90 亿美元 | 小而关键：正在推进 large data center customer 的 behind-the-meter generation；也做 Ford 固定费率项目、42MW CHP |
+| Energy Trading | 物理电力/天然气交易、结构化交易、衍生品 | 64.77 亿美元 | 23.51 亿美元 | 0.50-0.60 亿美元 | 不是 AI 基建产品；可帮助平衡能源组合，但盈利波动大，估值质量低于 utility |
+
+DTE 在产业链中的位置是“电力供应商/受监管电网资产拥有者/容量整合方”，不是数据中心设备供应商。它的 AI 暴露是电力负荷、储能、输配电、可再生/燃气容量和需求响应，不是 GPU、服务器 PSU、液冷、光模块或交换机收入。
+
+### 1.2 投资人认知与最近 3 年重大变化
+
+过去投资人主要把 DTE 当作 Midwest regulated utility：股息、稳定 rate base、监管回收、5%-7% operating EPS 增长、低 beta。它的估值核心通常不是收入增速，而是监管环境、ROE、资本开支可回收性、信用评级和股息增长。
+
+2025-2026 年发生的变化显著：
+
+1. 数据中心负荷从可选项变成合同化项目。2025-12，MPSC 条件批准 DTE Electric 为 Washtenaw County / Saline Township 数据中心供电，规模 1,383MW，客户为 Green Chile Ventures（Oracle 子公司），并要求数据中心在紧急负荷削减时先于其他客户被削减。合同包含 19 年最低期限、80% minimum billing demand 和最高 10 年 minimum billing demand 的提前终止付款。
+2. Google 1GW 项目进入监管审批。DTE 在 2026Q1 披露 2026-03 已向 MPSC 提交合同，支持 Google 在 Van Buren Township 规划的 1GW 数据中心；Google 将支付其能源使用全成本，包括新发电、储能、输电、配电相关费用，DTE 预计合同期对既有客户产生约 17 亿美元 affordability benefit。
+3. 资本开支计划上修。DTE 2026 AGA presentation 披露 2026-2030 当前五年投资计划 365 亿美元，较 2025-2029 之前计划 300 亿美元增加约 65 亿美元；其中 DTE Electric 300 亿美元，DTE Gas 45 亿美元，DTE Vantage 约 20 亿美元。
+4. 发电组合转型加速。DTE 计划 2032 年退出煤电；DTE Electric 2026-2030 计划 150 亿美元 cleaner generation，其中约 100 亿美元 renewables、25 亿美元 energy storage、25 亿美元 CCGT with CCS capability。2026-2032 规划新增约 12GW 资源容量：约 8GW renewables、约 2.5GW storage、约 1.5GW CCGT with CCS。
+5. DTE Vantage 转向定制能源和低碳项目。公司披露 Ford 长期固定费率 custom energy solutions 项目预计 2026 commercial operation；42MW CHP 项目预计 2027 年初 commercial operation；还在推进服务 large data center customer 的 behind-the-meter generation。2025 年 DTE Sustainable Generation 还收购了一个 123MW Michigan cogeneration facility，交易对价约 2.16 亿美元。
+
+### 1.3 最新股价、估值与利润率快照
+
+估值日期：2026-06-11。股价数据为 2026-06-11 19:14 UTC 报价；财务数据以 2026Q1 10-Q、2025 10-K / SEC companyfacts 和公司 2026 AGA presentation 为基础。
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | 146.95 美元 | 2026-06-11 19:14 UTC | 当日约 +0.07% |
+| 市值 | 305.66 亿美元 | 2026-06-11 | 报价工具市值 |
+| TTM GAAP EPS | 约 6.08 美元 | TTM 至 2026Q1 | 与报价工具 P/E 反推一致 |
+| TTM GAAP P/E | 24.17x | 2026-06-11 | 公用事业偏高，反映数据中心可选增长与稳健股息属性 |
+| 2026 forward P/E | 约 19.2x | 股价 / 2026 operating EPS guidance 中点 7.66 美元 | 公司 guidance：7.59-7.73 美元 |
+| TTM operating revenue | 约 165.15 亿美元 | 2025 全年 158.14 亿 - 2025Q1 44.40 亿 + 2026Q1 51.41 亿 | SEC `RegulatedAndUnregulatedOperatingRevenue` |
+| P/S | 约 1.85x | 市值 / TTM revenue | utility revenue 受 commodity pass-through 和 trading gross revenue 影响 |
+| 最新季度收入增速 | +15.8% YoY | 2026Q1 vs 2025Q1 | 51.41 亿 vs 44.40 亿美元 |
+| 2025 全年收入增速 | +26.9% YoY | 2025 vs 2024 | 158.14 亿 vs 124.57 亿美元；Energy Trading 与 regulatory mechanisms 贡献大 |
+| 准毛利率/能源成本后毛利率 | 约 34.6% | 2026Q1 | 以 revenue - fuel/purchased power/gas/other 成本估算；utility 不按制造业 gross margin 管理 |
+| TTM GAAP 净利 | 约 12.64 亿美元 | TTM 至 2026Q1 | 2025 全年 14.62 亿 - 2025Q1 4.45 亿 + 2026Q1 2.47 亿 |
+| TTM 净利率 | 约 7.7% | TTM 至 2026Q1 | 受监管公用事业 + 交易业务波动 |
+| 2026 operating earnings guidance | 15.85-16.15 亿美元 | 2026 AGA | Electric 13.40-13.60 亿、Gas 3.15-3.25 亿、Vantage 1.80-1.90 亿、Trading 0.50-0.60 亿、Corporate & Other -3.10 至 -3.00 亿 |
+
+### 1.4 资产负债表健康程度
+
+截至 2026-03-31，DTE total assets 551.08 亿美元，equity 123.28 亿美元，property plant and equipment net 344.18 亿美元，regulatory assets 75.21 亿美元，cash 2.38 亿美元，current assets 43.92 亿美元，current liabilities 46.10 亿美元，current ratio 约 0.95x。长债净额 252.04 亿美元，另有 current portion of long-term debt 15.07 亿美元，短期借款从 2025 年底 8.82 亿美元降至 0。
+
+这是典型资本密集型 utility balance sheet：现金余额低、杠杆高、自由现金流长期为负，依赖监管回收、债务和股权融资。公司 2026Q1 operating cash flow 9.06 亿美元，utility plant capex 12.14 亿美元，non-utility capex 0.15 亿美元，季度即为负自由现金流；同时发行 long-term debt 15.82 亿美元。DTE 在 2025-12 business update 中披露目标维持 solid investment-grade credit ratings，目标 FFO/debt 约 15%，并计划 2026-2028 年每年发行 5-6 亿美元 equity，2030 年前类似水平。信用评级披露为 DTE Energy unsecured BBB / Baa2 / BBB，DTE Electric secured A / Aa3 / A+，DTE Gas secured A / A1 / A。
+
+健康程度判断：中性偏健康，但杠杆和融资依赖是核心约束。好处是 data center contract 设计了 minimum billing、termination fee、collateral 和客户承担新增成本，降低 stranded cost 风险；压力是 2026-2030 365 亿美元 capex 远超内部现金流，需要持续债务/股权市场开放、MPSC 支持和项目按时上电。
+
+## 2. 最新及最近四次财报：收入、利润、订单/交期和 AI 数据中心占比
+
+口径说明：分部收入采用 DTE 的 disaggregated operating revenue，包含 segment 内部和若干 regulatory adjustment，合并收入小于分部加总，因为有 reclassifications and eliminations。2025Q4 分部收入为 2025 全年分部收入减 2025 前三季度分部收入推算；其余季度来自 10-Q 分部表。Operating earnings 为 non-GAAP，用于观察经营趋势；reported net income 为 GAAP。
+
+| 财报季度 | 合并收入/增速 | 分部收入（Electric / Gas / Vantage / Trading） | 分部经营利润或净利关键信息 | Backlog / bookings / 交期 / 取消风险 | AI 数据中心相关收入占比 |
+|---|---:|---|---|---|---|
+| 2026Q1（2026-04-30 发布） | 51.41 亿美元，+15.8% YoY；GAAP 净利 2.47 亿美元，EPS 1.19；operating earnings 4.07 亿美元，operating EPS 1.95 | Electric 17.44 亿，+19.5%；Gas 9.32 亿，+6.4%；Vantage 2.27 亿，+20.7%；Trading 23.51 亿，+16.0% | Operating earnings：Electric 2.18 亿；Gas 2.10 亿；Vantage 0.48 亿；Trading -0.25 亿；Corporate -0.44 亿。Electric 改善来自 rate implementation、冷天气和税项时点；Trading/Vantage 受 mark-to-market/法律储备影响 | Google 1.0GW 合同 2026-03 提交 MPSC；Oracle 1.383GW 已获批并开工。2026 年 utility capex 计划 68 亿，DTE Electric 52 亿；data center load ramp 约 2-3 年，Google 预计 2028 年底完全 ramp。取消风险：Oracle 低，Google 中，pipeline 高 | 当前收入占比低，估计 0%-低个位数；但合同化/待批负荷 2.383GW，远高于当前已入账收入 |
+| 2025Q4（2026-02-17 发布全年） | 44.28 亿美元，约 +28.9% YoY；GAAP 净利约 3.69 亿美元；reported EPS 1.77；operating EPS 1.65 | 推算：Electric 17.39 亿，+15.2%；Gas 6.51 亿，+14.6%；Vantage 1.76 亿，-11.1%；Trading 19.48 亿，+58.0% | 推算 operating earnings：Electric 2.11 亿；Gas 1.21 亿；Vantage 0.51 亿；Trading 0.33 亿；Corporate -0.73 亿；total 约 3.43 亿。2025 全年 operating earnings 15.30 亿，operating EPS 7.36 | 2025 年 secured landmark agreement to power Oracle data center；MPSC 2025-12 批准后进入建设。公司把数据中心作为 2026-2030 capex 上修主因 | 2025 全年实际 AI 数据中心售电收入仍未充分体现；Oracle 进入 backlog/合同资产逻辑，但主要 revenue 从 ramp 后体现 |
+| 2025Q3（2025-10-30 发布） | 35.27 亿美元，+21.4% YoY；GAAP 净利 4.19 亿美元，EPS 2.01；operating earnings 4.68 亿美元，operating EPS 2.25 | Electric 20.51 亿，+20.9%；Gas 2.09 亿，-9.1%；Vantage 1.63 亿，-14.2%；Trading 11.79 亿，+40.4% | Operating earnings：Electric 5.41 亿；Gas -0.38 亿；Vantage 0.41 亿；Trading 0.23 亿；Corporate -0.99 亿。Q3 季节性高温/电力利润强，Gas 季节性低 | 公司首次明确披露已执行 1.4GW hyperscaler data center agreement，需求 2-3 年 ramp；另有约 3GW late-stage negotiations 和 3-4GW co-locator/其他机会。取消风险：已签 1.4GW 中低，late-stage/pipeline 高 | 收入端尚小；市场开始把 1.4GW 视作电力负荷 backlog 和 rate base upside |
+| 2025Q2（2025-07-29 发布） | 34.19 亿美元，+18.9% YoY；GAAP 净利 2.29 亿美元，EPS 1.10；operating earnings 2.83 亿美元，operating EPS 1.36 | Electric 16.86 亿，+4.3%；Gas 3.16 亿，+9.3%；Vantage 1.69 亿，-6.6%；Trading 13.24 亿，+58.2% | Operating earnings：Electric 3.18 亿；Gas 0.06 亿；Vantage 0.31 亿；Trading 0.24 亿；Corporate -0.96 亿 | 1H25 utility investment 18 亿美元，全年计划 44 亿美元；Cold Creek 100MW solar 开工，Pine River 80MW solar 投运。尚未把 Oracle 作为已批合同披露 | AI 数据中心直接贡献未披露；业务重点仍是 reliability、renewables 和 customer development |
+| 2025Q1（2025-05-01 发布） | 44.40 亿美元，+37.0% YoY；GAAP 净利 4.45 亿美元，EPS 2.14；operating earnings 4.36 亿美元，operating EPS 2.10 | Electric 14.59 亿；Gas 8.76 亿；Vantage 1.88 亿；Trading 20.26 亿 | Operating earnings：Electric 1.47 亿；Gas 2.06 亿；Vantage 0.39 亿；Trading 0.34 亿；Corporate 0.10 亿 | 年初口径主要是 reliability、rate case、renewables、DTE Vantage/RNG/industrial custom energy；数据中心还未成为明牌 backlog | 近似 0；数据中心主题在后续季度转为显性 |
+
+### 2.1 订单积压与剩余履约义务
+
+DTE 不是制造公司，不能用传统 backlog/bookings 读法。SEC 披露的 fixed consideration remaining performance obligations 截至 2025 年底为 9.31 亿美元，2026Q1 为 9.91 亿美元，这不包含原始期限一年以内、按可变价格/可变量计费、按 invoice right 确认收入的合同。因此，Oracle/Google 这类超长期用电合同的经济价值不能直接等同于 SEC RPO。
+
+更有用的“订单”口径是：
+
+| 项目 | 状态 | 规模 | 合同/保护条款 | 交付窗口 | 推断取消/延迟风险 |
+|---|---|---:|---|---|---|
+| Oracle / Green Chile Ventures / OpenAI / Related Digital Saline Township 数据中心 | MPSC 2025-12 条件批准；DTE 2026 AGA 称已开工 | 1,383MW / 约 1.4GW | 19 年 power supply agreement；80% minimum billing demand；提前终止最高 10 年 minimum billing demand；15 年 1,383MW energy storage agreement；客户承担新增成本 | 未来 2-3 年 ramp；储能投资 2026 开始 ramp | 取消风险低至中低；主要是建设、社区、设备交期和监管条件执行风险 |
+| Google Van Buren Township 数据中心 | 2026-03 提交 MPSC 审批；2026Q1 已签供电合同 | 1.0GW | 20 年 power supply agreement；20 年 clean capacity acceleration agreement；minimum monthly charges；termination fees、credit/collateral；Google 承担新发电/储能/输电/配电成本 | DTE AGA：预计 2028 年底 fully ramp；需要 up to 1,600MW renewables、480MW storage、350MW demand response，另约 700MW 长期发电通过 IRP 确定 | 批准前中等；若 MPSC 条件通过则下降。地方水/选址、Google 数据中心执行节奏是变量 |
+| Additional hyperscaler discussions | advanced discussions | 约 2GW | 尚未签；需要新 baseload generation、renewables、storage | 若 2026-2027 签约，2027 后资本开支 ramp | 中高；取决于客户资本开支、地方审批、电力设备交期 |
+| 其他 hyperscaler / co-location opportunities | pipeline | 3-4GW | 尚未签 | 长周期 | 高；更多是 option value |
+
+## 3. 2026 最新指引、业务收入占比和“产品”映射
+
+### 3.1 2026 指引
+
+DTE 2026 AGA presentation 披露：
+
+| 2026 指引项目 | 数值 | 占 operating earnings 中点比例 |
+|---|---:|---:|
+| DTE Electric operating earnings | 13.40-13.60 亿美元 | 约 84%-86% |
+| DTE Gas operating earnings | 3.15-3.25 亿美元 | 约 20% |
+| DTE Vantage operating earnings | 1.80-1.90 亿美元 | 约 12% |
+| Energy Trading operating earnings | 0.50-0.60 亿美元 | 约 3%-4% |
+| Corporate & Other | -3.10 至 -3.00 亿美元 | 约 -19% |
+| DTE Energy operating earnings | 15.85-16.15 亿美元 | 100% |
+| Operating EPS guidance | 7.59-7.73 美元 | 中点 7.66 美元 |
+
+2026 最突出的业务不是传统居民售电或燃气配送，而是 DTE Electric 的数据中心负荷、电网可靠性投资、储能/可再生/CCGT 资源计划，以及 DTE Vantage 的定制能源/behind-the-meter generation。Energy Trading 收入大但估值质量低，利润 guidance 只有 0.50-0.60 亿美元，不能作为高质量增长主线。
+
+### 3.2 最新季度收入占比
+
+2026Q1 合并 operating revenue 51.41 亿美元。按分部收入加总前口径看，Energy Trading 收入最大但毛利/利润质量低；按经营利润看 DTE Electric 和 DTE Gas 是核心。
+
+| 分部 | 2026Q1 收入 | 分部收入占四分部加总 | YoY | 2026Q1 reported net income | 业务判断 |
+|---|---:|---:|---:|---:|---|
+| DTE Electric | 17.44 亿美元 | 约 24.1% | +19.5% | 2.18 亿美元 | 核心高质量增长；数据中心合同、rate base、可靠性投资驱动 |
+| DTE Gas | 9.32 亿美元 | 约 12.9% | +6.4% | 2.10 亿美元 | 稳定现金流与 regulated earnings，AI 相关性低 |
+| DTE Vantage | 2.27 亿美元 | 约 3.1% | +20.7% | -0.59 亿美元 reported；operating earnings 0.48 亿 | 小而有潜力，受法律储备/一次性项目扰动；RNG tax credits 和 custom energy 是重点 |
+| Energy Trading | 23.51 亿美元 | 约 32.5% | +16.0% | -0.78 亿美元 reported；operating earnings -0.25 亿 | 收入大但利润波动，估值折价 |
+| Eliminations / Corporate | -约 1.13 亿美元 | 不适用 | 不适用 | -0.44 亿美元 | 合并抵消和 holding company 成本 |
+
+### 3.3 业务对应产品、型号和跳过项
+
+DTE 没有“产品型号”意义上的 AI 芯片/硬件 SKU。为了回答产品维度，应把“产品”理解为电力服务、容量服务、储能/发电资源组合和定制能源合同。
+
+| 重点产品/业务 | 具体内容 | 公开证据 | 利润率/回报推断 | 销售增速/规模判断 |
+|---|---|---|---|---|
+| Oracle 1.383GW / 1.4GW 数据中心供电合同 | 19 年 power supply agreement；80% minimum billing；最高 10 年 termination payment；DTE 负责供电，客户承担新增成本；紧急事件下数据中心先于其他客户削减负荷 | MPSC 2025-12 批准；DTE 2025Q3/2026 AGA 披露 | 不是硬件毛利；经济性来自 regulated cost recovery、固定成本摊薄、储能资产回收、潜在 ROE。MPSC 批准 Electric ROE 9.9%，2026 rate case 请求 10.25% | 当前收入小；完全 ramp 后按 1.383GW、80%-90% utilization、0.06-0.09 美元/kWh 估算年售电收入约 5.8-9.8 亿美元量级，实际取决于 confidential tariff/contract |
+| Google 1.0GW 数据中心供电合同 | 20 年 PSA + 20 年 clean capacity acceleration agreement；up to 1,600MW renewable、480MW storage、350MW demand response、另约 700MW 长期发电 | DTE 2026Q1 新闻稿、2026 AGA；Google 2026-03 demand response blog 提到 DTE | 与 Oracle 类似；DTE 披露全合同期约 17 亿美元 affordability benefit，对既有客户降本而非全部股东利润 | 待批；若 2028 年底 fully ramp，按 1.0GW 同样电价假设年售电收入约 4.2-7.1 亿美元 |
+| 数据中心配套储能/清洁容量 | Oracle 1,383MW energy storage；Google 480MW storage + clean capacity acceleration；Trenton Channel 220MW/880MWh BESS；Slocum 14MW BESS | MPSC、DTE 2025 年报新闻稿、AGA | utility-owned storage 通过 rate base/合同回收；设备毛利属于供应商，不属于 DTE；DTE 获 regulated return | Oracle nearly 20 亿美元储能投资已在计划内；Google 可能带来约 50 亿美元 through 2032 的增量 capex，含 renewables/storage/longer-term generation |
+| DTE Electric distribution reliability / smart grid | 2026-2030 110 亿美元 distribution investment；smart grid devices、tree trimming、grid hardening | DTE 2025Q3、2026Q1、AGA | 受监管资产，回报取决于 MPSC rate cases；客户 bill affordability 是政治约束 | 与数据中心互相强化：大负荷需要配网/输电可靠性，既有客户也需要 outage 降低 |
+| DTE Vantage behind-the-meter / CHP / custom energy | Ford 固定费率项目 2026 COD；42MW CHP 2027 初 COD；large data center customer BTM generation；RNG tax credits | DTE 2026 AGA | custom energy 通常 utility-like fixed-fee，ROE/IRR 取决于合同；RNG 受 45Z/税收抵免影响，2026 operating earnings 被 tax credits 支撑 | 2026 guidance 1.80-1.90 亿美元，较 2025 operating earnings 1.62 亿美元增长约 14% |
+
+跳过或低优先级业务：
+
+| 跳过项 | 原因 |
+|---|---|
+| 居民/小商业常规售电 | 大盘基本盘，但非 AI 高增长产品；增长主要来自 rate case 和天气 |
+| 常规燃气配送与 main renewal | 稳定 regulated earnings，AI 直接相关性低；保留财务稳定性分析即可 |
+| Energy Trading 的 gross revenue | 收入大、利润小且波动；对 AI 基建没有产品垄断力 |
+| 传统煤电退役资产 | 资本开支/监管重要，但不是增长产品；风险更多是替代容量和成本回收 |
+
+## 4. 高增长/关键业务当前贡献、AI 基建重要性、供需和定价权
+
+| 关键业务 | 当前收入贡献 | 当前增速/订单状态 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---:|---|---|---|---|---|
+| Oracle 1.383GW 供电合同 | 2026Q1 入账收入仍低；合同 fully ramp 后估算年售电收入约 5.8-9.8 亿美元，另有约 20 亿美元储能投资进 rate base/合同回收 | 已获 MPSC 条件批准并开工；ramp 2-3 年 | 极高。AI 数据中心没有电力无法上机；utility interconnection 是项目可行性的硬门槛 | 极高。Oracle/OpenAI Stargate 类项目需要尽快上电 | 高。行业资料显示“可上电 MW”是 2026-2027 瓶颈，变压器可 140-160+ 周 | 区域自然垄断强；但价格受监管约束，不是自由涨价。合同保护条款强于一般 D11 tariff |
+| Google 1.0GW 供电合同 | 2026Q1 未实质贡献；fully ramp 估算年售电收入约 4.2-7.1 亿美元；潜在约 50 亿美元 through 2032 capex | 合同已签并提交 MPSC；预计 2028 年底 fully ramp | 极高。DTE/Google 合同还把 demand response 当 capacity resource，技术上更贴近 AI 数据中心弹性负荷趋势 | 高。Google 要快速接入，同时避免让既有客户承担成本 | 中高。Google 引入 350MW demand response 缓解峰值，但仍需 1,600MW renewables、480MW storage、约 700MW 长期发电 | 区域 utility monopoly + 特殊合同；Google 有 site selection 选择权，但项目落地后切换成本极高 |
+| DTE Electric 储能/可再生/CCGT 资源组合 | 2026Q1 capex 约 10.48 亿美元；2026-2030 Electric capex 300 亿美元，其中 cleaner generation 150 亿美元 | 2026-2032 计划约 12GW 新增容量 | 高。决定数据中心能否按期上电且满足 Michigan clean energy rules | 高。Oracle/Google ramp 和煤电退役同时发生 | 高。储能、电气设备、燃气轮机/CCGT 都是行业瓶颈 | regulated return；设备采购无垄断，但 DTE 掌握本地规划/接入/客户合同 |
+| DTE Vantage BTM / CHP / custom energy | 2026Q1 收入 2.27 亿美元，operating earnings 0.48 亿；2026 guidance 1.80-1.90 亿 | Ford 2026 COD；42MW CHP 2027 初 COD；large data center BTM 项目推进 | 中高。可缓解 grid interconnection 和供电可靠性压力，适合 behind-the-meter 或工业负荷 | 中高。若公用电网排队慢，BTM generation 可变成加速手段 | 中。项目型而非平台型，受设备/气源/许可限制 | 合同定制和本地执行能力有壁垒；但可被 IPP、EPC、燃气机/涡轮方案替代 |
+| DTE Gas | 2026Q1 收入 9.32 亿美元，reported net income 2.10 亿 | 收入 +6.4% YoY；2026-2030 capex 45 亿美元 | 低至中。燃气可能参与 CCGT/自备发电燃料链，但 DTE Gas 本身不是数据中心主线 | 中 | 中 | regulated monopoly；增长慢，定价受监管 |
+
+## 5. 一年以后收入贡献与增长三情景
+
+时间点：2027-06 左右。以下是研究推算，不是公司 guidance。售电收入估算采用 0.06-0.09 美元/kWh、80%-90% billing/utilization、1MW 约 7.0-7.9GWh/年。特殊合同实际电价、需求费、容量费、燃料调整、输配电 riders 未披露，最终收入可能偏离。
+
+| 关键业务 | 基准情景（2027-06） | 乐观情景（2027-06） | 极度乐观情景（2027-06） |
+|---|---|---|---|
+| Oracle 1.383GW | 平均 billing/ramp 约 0.35-0.45GW；年化售电收入约 1.5-3.2 亿美元；储能投资进入建设，利润主要通过后续 rate base 显现 | 平均 billing/ramp 约 0.55-0.75GW；年化售电收入约 2.8-5.3 亿美元；项目按节点开工/并网 | 平均 billing/ramp 约 0.9GW+；年化售电收入约 4.7-7.1 亿美元；供电/储能交付快于预期 |
+| Google 1.0GW | MPSC 批准但 2027H1 收入很小；年化收入 0-0.8 亿美元；capex/renewable/storage 开始前期 | 批准顺利且早期负荷 0.1-0.2GW；年化收入约 0.4-1.4 亿美元 | 批准、施工、需求响应和可再生配套均提前；早期负荷 0.3GW；年化收入约 1.3-2.1 亿美元 |
+| DTE Electric rate base / storage / renewable / CCGT | 2026-2027 capex 继续高位，收入增速 mid/high single digit；operating earnings 维持 guidance 高端路径 | Oracle/Google capex 获更顺畅回收，2027-2030 6%-8% EPS CAGR 高端可信 | 新签额外约 2-3GW 数据中心，市场开始给 >8% EPS CAGR 情景定价 |
+| DTE Vantage custom energy / BTM | 2026 guidance 高端兑现，2027 由 Ford/CHP 项目贡献，收入/利润中高个位数到低双位数增长 | BTM data center 项目落地，2027 backlog 更清晰；operating earnings 稳定在 1.8 亿美元以上 | BTM generation 成为 data center 加速上电常用方案，新增固定费率合同显著提升 2028+ 可见性 |
+
+## 6. BOM、每 MW / rack / GPU / optical port 含量、价格传导、产能和认证
+
+### 6.1 DTE 不是硬件 BOM 公司，真实“含量”是电力容量和 rate base
+
+对 DTE 来说，BOM 不应写成芯片/PCB/光模块，而应写成“数据中心上电包”：
+
+1. 负荷接入：MISO/utility interconnection、substation、high-voltage switchyard、transformer、protection relay、metering。
+2. 输配电：transmission upgrades、distribution hardening、feeder/redundancy、smart grid devices。
+3. 发电容量：既有容量、renewables、CCGT with CCS capability、nuclear/market capacity、purchased power。
+4. 储能/备用：grid-scale BESS、UPS/backup 由客户侧/EPC 负责，utility-owned BESS 由 DTE 计入计划。
+5. 灵活负荷：Google demand response，350MW 作为 capacity / peak mitigation 工具。
+6. 监管和合同：MPSC approval、large-load tariff/special contract、minimum billing、termination fee、collateral、emergency load shedding priority。
+
+### 6.2 每 MW / rack / GPU / optical port 折算
+
+| 单位 | 工程假设 | 对 DTE 的收入/资本开支含义 | 结论 |
+|---|---|---|---|
+| 每 1MW IT load | PUE 1.15-1.30，则设施侧需要约 1.15-1.30MW；按 80%-90% utilization，1MW 约 7.0-7.9GWh/年 | 按 0.06-0.09 美元/kWh，约 42-71 万美元/MW-year 售电收入；另有 demand/capacity/rider/燃料调整 | DTE 的真实含量按 MW，不按服务器台数；每 100MW IT load 可能需要 115-130MW 设施供电和更大 interconnection request |
+| 每 rack | 2026 AI rack 常见 60-160kW，高端 GB/Rubin/Helios 可 200kW+；若 100kW/rack，则 1MW IT 约 10 rack；200kW/rack 约 5 rack | 100kW rack 年电费约 4.2-7.1 万美元；200kW rack 约 8.4-14.2 万美元 | DTE 不卖 rack，但 rack 密度越高，对变压器、配电、冷却、电网动态响应要求越高 |
+| 每 GPU | 不同平台差异很大。若整 rack 80-160kW、含 64-72 GPU，则约 1.1-2.5kW/GPU IT load；加 PUE 后约 1.3-3.3kW/GPU 设施负荷 | 年电费约 700-2,600 美元/GPU-year 的量级；大型训练集群按万卡汇总才有 utility 级意义 | 单 GPU 对 DTE 无定价权；DTE 只关心集群级 MW 和负荷曲线 |
+| 每 optical port | 800G/1.6T 光口和交换机功耗由客户 IT 侧承担；每光口几十瓦到百瓦内，视模块/交换芯片/冗余而变 | 年电费通常几十美元/port-year 量级；对 utility 不构成单独收入科目 | 光口是客户 IT BOM，不是 DTE 业务。对 DTE 的意义是网络/GPU 密度推高 rack kW 和园区 MW |
+
+### 6.3 当前产能能力、采纳和认证/审批阶段
+
+| 关键业务 | 当前产能/美元能力 | 供应链采纳程度 | 认证/审批阶段 |
+|---|---:|---|---|
+| Oracle 1.383GW | fully ramp 后估算年售电收入约 5.8-9.8 亿美元；相关储能投资 nearly 20 亿美元 | 已签、已获 MPSC 条件批准、DTE 称 construction started；客户为 Oracle 子公司，关联 OpenAI/Related Digital | MPSC U-21990 条件批准；仍需执行紧急削负荷、客户成本承担、储能、地方/建设等要求 |
+| Google 1.0GW | fully ramp 后估算年售电收入约 4.2-7.1 亿美元；up to 1,600MW renewables、480MW storage、350MW DR、约 700MW longer-term generation；DTE 披露或带来约 50 亿美元 through 2032 capex | Google 已签合同并纳入其 demand response 体系；DTE 2026Q1 提交 MPSC | MPSC 待批；clean capacity acceleration agreement、large-load tariff/特殊合同、IRP/CEP/REP 资源比较仍需推进 |
+| DTE Electric 2026-2030 资源组合 | 300 亿美元 Electric capex；其中 110 亿 distribution、40 亿 base infrastructure、150 亿 cleaner generation | 数据中心客户、MIGreenPower、Michigan clean energy law、煤电退役共同驱动 | MPSC rate cases、IRP、All-Source RFP、MISO interconnection；设备需满足 IEEE/ANSI/UL、utility acceptance、BESS fire code 等 |
+| DTE Vantage custom energy / BTM | 约 20 亿美元 2026-2030 Vantage capex | Ford、42MW industrial CHP、large data center BTM 项目处于推进阶段 | 项目合同、环保许可、燃气/设备、客户 site approval；若涉及数据中心，仍受地方和电网协调影响 |
+
+## 7. 一年后产能、采纳和认证三情景
+
+| 关键业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| Oracle 1.383GW | MPSC 条件保持有效；BESS/并网按计划推进；2027H1 已有部分负荷上电 | 储能和接入设备交付顺利，平均 billed load 达 0.55-0.75GW | Oracle/OpenAI 需求强，建设提前，平均 billed load 接近 0.9GW+ |
+| Google 1.0GW | 2026H2/2027 初获有条件批准；2027H1 主要是 capex 前期和资源采购 | MPSC 批准顺利，350MW demand response、renewables/storage 资源包明确，早期负荷 0.1-0.2GW | Google 项目获批且地方阻力可控，早期负荷 0.3GW，约 50 亿美元 capex 路线开始被市场计入 |
+| Additional 2GW advanced discussions | 2027 前签约概率中等，但上电在 2028+ | 2026-2027 签 1-2GW，成为下一轮 capex 上修证据 | 约 3GW additional deal 在 2027 前落地，使 DTE 被重新定价为数据中心电力平台 |
+| DTE Vantage BTM / custom energy | Ford 2026 COD、42MW CHP 2027 初 COD；BTM 数据中心项目继续开发 | BTM data center customer 合同明确，固定费率收入可见性上升 | BTM 被用于绕开或缩短公用电网等待，DTE Vantage 取得多个数据中心/工业客户项目 |
+
+## 8. 基于订单积压和供给约束的未来一年业务增速预测
+
+DTE 不披露制造业式 backlog。对未来一年最有信息量的是真实合同负荷、审批状态、capex plan 和供给瓶颈。
+
+| 项目 | 真实订单/需求证据 | 供给/扩产能力 | 未来一年收入增速影响 |
+|---|---|---|---|
+| DTE Electric core utility | 2026 guidance Electric operating earnings 13.40-13.60 亿美元；2026Q1 Electric revenue +19.5% YoY；2026 年 utility capex over 60 亿美元 pace | 受 MPSC rate case、设备交期、劳动力、变压器/开关设备、MISO/IRP 约束 | 基准：Electric revenue high single digit 至 low-teens；乐观：Oracle 初期负荷 + rate implementation 推动 low/mid-teens；极度乐观：Google 批准和新增 hyperscaler 签约带来估值先行、收入仍滞后 |
+| Oracle 数据中心 | 1.383GW 合同已批；19 年最低期限；80% minimum billing；15 年 1.383GW storage | 已开工但 ramp 2-3 年；储能、变压器、并网与地方建设是关键 | 未来一年从 0 到数亿美元年化 run-rate，取决于 ramp；短期利润弹性低于收入，因为成本和 capex recovery 同步 |
+| Google 数据中心 | 1.0GW 合同提交 MPSC；DTE 披露 2028 年底 fully ramp；Google demand response 与 DTE 绑定 | 需 MPSC、renewables、storage、DR、长期发电和 IRP | 2027 年前收入贡献有限，但如果获批，订单质量和 2030 前 EPS CAGR 可见性显著提高 |
+| DTE Vantage | 2026 guidance 1.80-1.90 亿 operating earnings，受 RNG tax credits 和 custom energy 支撑 | 项目型交付，受设备、许可、客户 COD 影响 | 基准 +10%-15% earnings；乐观 BTM 数据中心项目签约提升 2028+ 增长；极度乐观形成“utility-like custom power for data center”平台叙事 |
+| Energy Trading | 2026 guidance 0.50-0.60 亿 operating earnings | 交易机会和波动性决定 | 不宜给高倍数；对未来一年 EPS 可正可负 |
+
+综合预测：
+
+| 情景 | 2027年前后一年的业务增速判断 | 关键假设 |
+|---|---|---|
+| 基准 | 合并收入 +5%-10%；operating EPS 维持 6%-8% CAGR 高端附近；AI 直接收入仍小但合同推动 capex/rate base | Oracle 部分 ramp；Google 获批但收入滞后；rate cases 基本按期；设备交期不恶化 |
+| 乐观 | 合并收入 +10%-15%；Electric 成为核心增长；市场提前给 2028-2030 data center load 估值 | Oracle ramp 快；Google 批准顺利；新增 1-2GW hyperscaler 签约；MPSC 允许成本保护 |
+| 极度乐观 | 收入 +15%+，但更重要是 EPS CAGR 预期从 6%-8% 上移到 >8% 的可持续路径 | 额外约 3GW 机会落地，Google/Oracle 建设没有重大延迟，DTE equity/debt financing 成本可控 |
+
+## 9. 竞争格局、主流技术路线、风险和替代方案
+
+### 9.1 竞争格局
+
+| 竞争/替代方 | 与 DTE 的关系 | DTE 优势 | DTE 风险 |
+|---|---|---|---|
+| Consumers Energy / Michigan 其他 utility | 同州电力服务和项目选址竞争 | DTE 已在 Southeast Michigan 拿到 Oracle/Google 项目，具有区域电网与监管经验 | 大客户可选择其他 utility 服务区或州 |
+| AEP / Indiana Michigan Power、Dominion、Duke、Southern、Entergy、NextEra 等 | 全美 hyperscaler site selection 的竞争 | DTE 数据中心合同保护条款强，Michigan 政策和工业基础较好 | 美国东南部、PJM、ERCOT、Indiana 等地区可能提供更快上电或更低成本 |
+| IPP / merchant power / co-located generation | 可替代 utility 新发电或 behind-the-meter 供电 | DTE 掌握本地电网接入和受监管回收 | 客户若转向 behind-the-meter gas turbines、fuel cells、SMR/long-duration storage，DTE 售电量可能下降 |
+| Constellation / Vistra / nuclear/merchant generation | 可为 hyperscaler 提供清洁容量、PPA 或 co-location | DTE 有 Fermi 2、regulated utility 和本地配网 | 大型科技客户偏好核电/clean firm PPA，可能绕开 DTE 部分发电价值 |
+| Eaton/Schneider/Siemens/GE Vernova/Hitachi/ABB/Hyundai 等设备商 | 不是 DTE 竞争对手，而是 DTE 供应链瓶颈 | DTE 可作为大买家锁定设备 | 变压器/开关设备/BESS 供应紧张会推迟收入和 capex 回收 |
+
+### 9.2 技术路线判断
+
+未来主流不是单一“自备电厂”或“全部等电网”，而是 utility special contract + clean capacity + storage + demand response + selective BTM generation。DTE 的 Oracle 和 Google 合同正好体现这个组合：Oracle 由既有容量和新增储能支持，客户承担储能成本；Google 引入 renewables、storage、demand response 和 longer-term generation。项目内行业资料也指向同一趋势：传统 AC HV/MV 接入 + 变压器 + MV switchgear + UPS/BESS/generation 仍是 2026 成熟路线；800VDC/MV UPS/SST 多为 2026 design-in/pilot，2027H2-2028 才更可能规模化。
+
+DTE 的新技术本身不是 GPU/光网络主流技术，而是“AI 数据中心电力基础设施主流交易结构”：大负荷特殊合同、minimum billing、客户承担新增成本、储能/需求响应绑定、紧急情况下可中断负荷。这种结构很可能成为美国 utility 接入 AI 数据中心的主流模板。
+
+### 9.3 客户替换成本
+
+Oracle/Google 一旦选址、签约、进入 MPSC 审批并开工，切换成本极高：土地、substation/interconnection、输配电设计、BESS/renewables resource plan、地方许可、数据中心建筑、客户 IT 部署都会绑定本地 utility。签约前客户有很强 site selection bargaining power；签约和开工后 DTE 的区域自然垄断和合同保护显著增强。
+
+### 9.4 主要风险
+
+1. 监管风险：MPSC 可能对 Google 或后续合同加条件，限制成本回收，或要求更强客户保护。DTE 2026 Electric rate case 请求 4.74 亿美元增收和 ROE 10.25%，最终批准可能低于请求。
+2. 社区和地方政治风险：Saline/Ypsilanti/Washtenaw 等地对数据中心水资源、噪音、土地和电价风险有明显反对。即使 MPSC 批准供电合同，地方选址和水资源并不归 MPSC 全权解决。
+3. 设备交期风险：高压变压器、switchgear、BESS、气机/CCGT、EPC 劳动力都可能造成 6-24 个月延迟。行业资料显示大型变压器交期可达 140-160+ 周。
+4. 客户集中和 AI capex 周期风险：Oracle/OpenAI/Google 负荷需求如果因 AI 训练/推理经济性、融资或芯片供给变化而放缓，DTE 的数据中心 upside 会延后。合同中的 minimum billing 和 termination payment 能降低但不能消除 stranded cost/政治风险。
+5. 融资和稀释风险：365 亿美元五年 capex 需要债务和股权；公司已计划 2026-2028 年每年 5-6 亿美元 equity。若利率高企或股价下跌，EPS 增长会被融资成本稀释。
+6. 清洁能源约束：Michigan 要求 2040 年 100% clean energy，2030 年 50% renewable、2035 年 60% renewable。数据中心负荷增加会提高 RPS/clean energy 合规需求，若客户成本分摊机制设计不好，会引发电价争议。
+
+## 10. 来源与口径
+
+### 10.1 联网/官方来源
+
+- DTE 2026Q1 earnings release，2026-04-30：https://ir.dteenergy.com/news/press-release-details/2026/DTE-Energy-reports-first-quarter-2026-accomplishments-investments-and-financial-results/default.aspx
+- DTE 2025 full-year earnings release，2026-02-17：https://ir.dteenergy.com/news/press-release-details/2026/DTE-Energy-reports-2025-accomplishments-earnings-and-investments/default.aspx
+- DTE 2026 AGA presentation，2026-05：https://s24.q4cdn.com/970999156/files/doc_presentations/2026/May/2026-AGA-presentation-FINAL.pdf
+- DTE Business Update，2025-12：https://s24.q4cdn.com/970999156/files/doc_presentations/2025/12/DTE-Business-Update-12-5-25-FINAL.pdf
+- DTE 2026Q1 Form 10-Q：https://www.sec.gov/Archives/edgar/data/936340/000093634026000081/dte-20260331.htm
+- DTE 2025Q3 Form 10-Q and XBRL revenue table：https://www.sec.gov/Archives/edgar/data/28385/000093634025000223/dte-20250930.htm ，https://www.sec.gov/Archives/edgar/data/28385/000093634025000223/R20.htm
+- DTE 2025Q2 Form 10-Q：https://www.sec.gov/Archives/edgar/data/936340/000093634025000182/dte-20250630.htm
+- DTE 2025 Form 10-K XBRL revenue table：https://www.sec.gov/Archives/edgar/data/936340/000093634026000054/R47.htm
+- MPSC Oracle / Green Chile Ventures 数据中心供电合同批准，2025-12-18：https://www.michigan.gov/mpsc/commission/news-releases/2025/12/18/mpsc-approves-dte-electric-energy-contracts-for-data-center
+- Google demand response blog，2026-03-19：https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/demand-response-data-center-milestone/
+- Utility Dive 对 DTE 数据中心 pipeline 的行业报道，2026-05-01：https://www.utilitydive.com/news/dte-energy-data-center-earnings-reliability/819052/
+
+### 10.2 项目内行业资料
+
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+
+### 10.3 重要计算口径
+
+- TTM revenue = 2025 全年 SEC operating revenue 158.14 亿美元 - 2025Q1 44.40 亿美元 + 2026Q1 51.41 亿美元 = 165.15 亿美元。
+- TTM net income = 2025 全年 GAAP net income 14.62 亿美元 - 2025Q1 4.45 亿美元 + 2026Q1 2.47 亿美元 = 12.64 亿美元。
+- Forward P/E = 2026-06-11 股价 146.95 美元 / 2026 operating EPS guidance 中点 7.66 美元 = 19.2x。
+- 每 MW 年售电收入估算 = 1MW * 8,760 小时 * 80%-90% utilization * 0.06-0.09 美元/kWh = 约 42-71 万美元/MW-year。特殊合同的 demand charges、capacity charges、fuel riders、tax/rider adjustment 未公开，故所有 MW 收入为估算区间。
+- AI 数据中心收入占比：DTE 未单独披露；2026Q1 Oracle/Google 尚未 fully ramp，故当前直接收入估计为 0%-低个位数；重点应看合同负荷、capex/rate base 和 affordability benefit，而不是当前 revenue line item。

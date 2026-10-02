@@ -1,0 +1,378 @@
+# Keysight Technologies（KEYS）公司调研：AI 数据中心高速互连、光电验证与系统级测试的卖铲人
+
+报告日期：2026-06-11  
+公司：Keysight Technologies, Inc.  
+股票代码：KEYS / NYSE  
+正式分类目录：`公司调研/封测_检测_计量_光罩/`  
+本地资料边界：仅使用 `行业调研/` 下与 AI 产业链、AI 网络、光互联、PCIe/CXL、高速互连验证、半导体测试、HBM 与 AI 数据中心建设相关资料；未读取 `特征量化/`、`日度资料/`、`tmp/`、`data/` 或既有公司报告。  
+外部资料边界：优先使用 Keysight 官方财报、投资者材料、SEC/IR PDF、公司新闻稿、2026 年行业会议与公开产品资料；行业论坛/会议/媒体线索只作为订单和技术节奏的低权重交叉验证。  
+重要口径：Keysight 未披露 backlog、AI 相关收入美元数或产品级收入；本文凡涉及 AI 数据中心收入、每 MW/每 rack/每 GPU/每 optical port 内容量、订单积压和一年后情景，均为模型估算，并在表格中标注，不应与公司会计收入直接相加。
+
+## 0. 核心结论
+
+Keysight 是电子设计、仿真、验证、测试和网络可视化工具公司。投资人过去主要把它看成高毛利、强现金流、偏周期的测试测量龙头；2026 年以后，市场开始把它重新定价为 AI 数据中心、1.6T/224G 高速互连、光电验证、PCIe/CXL、系统级仿真和网络 workload emulation 的关键卖铲人。公司不是 GPU、光模块或交换机供应商，不能把 AI 数据中心 CapEx 直接算成它的收入；它捕获的是客户在研发、认证、生产测试、现场验收和运维验证上必须支付的小比例、高毛利预算。
+
+最新财报是 FY2026 Q2，季度截至 2026-04-30、公告于 2026-05-19。公司 Q2 订单 `20.51 亿美元`，同比 `+56%`，首次超过 20 亿美元；收入 `17.17 亿美元`，同比 `+31%`；non-GAAP EPS `2.87 美元`，同比 `+69%`；自由现金流 `4.72 亿美元`。管理层披露 H1 FY2026 的 AI-related business 已经超过 FY2025 全年，但没有给美元数。按商业通信/wireline、EISG 半导体与通用电子、订单强度交叉推算，FY2026 H1 AI/high-speed 相关收入大约 `6.0-8.5 亿美元`，FY2026 全年可到 `12-17 亿美元`，占公司收入 `17%-25%`，这是估算而非公司披露。
+
+资产负债表健康。2026-04-30 现金和现金等价物 `24.12 亿美元`，总债务约 `25.31 亿美元`，净债务约 `1.19 亿美元`；流动资产 `50.42 亿美元`，流动负债 `26.49 亿美元`，流动比率约 `1.90x`；H1 FY2026 自由现金流 `8.79 亿美元`，远高于 H1 capex `0.63 亿美元`。需要扣除一次性 IEEPA 关税退款对 Q2 毛利和 EPS 的抬升：Q2 non-GAAP operating margin 报告口径 `33.3%`，剔除 IEEPA 后 organic operating margin 约 `30.4%`，仍然很强。
+
+投资上最重要的问题不是“KEYS 有没有 AI 收入”，而是“AI 互连测试订单能否从 FY2026 的超预期订单转成 FY2027 可持续收入”。目前证据偏正面：Q2 book-to-bill `1.19x`，H1 book-to-bill `1.11x`，wireline 连续创纪录，AI-related H1 超 FY25 全年；本地行业资料也显示 2026 是 800G 放量、1.6T 导入、224G 验证量产配套、PCIe 7.0/8.0 pathfinding 和 CPO/硅光测试前置的一年。主要反证是 AI CapEx 利用率下修、1.6T/3.2T 标准或客户验收延迟、客户把测试产能内制、Viavi/Anritsu/Tektronix/Rohde/Teledyne 抢占高速测试份额，以及 Spirent 交易中被迫剥离高压 Ethernet/网络安全/channel emulation 资产后，AI 网络测试组合出现结构缺口。
+
+## 1. 公司业务、定位与过去 3 年转型
+
+### 1.1 整体业务
+
+Keysight 的核心产品是电子设计自动化与仿真软件、测试测量仪器、网络测试平台、自动化测试系统、校准与服务。客户覆盖通信、半导体、AI 数据中心、航空航天与国防、汽车与能源、工业与通用电子。公司报告分部只有两个：
+
+| 分部 | FY2026 Q2 收入 | 占 Q2 收入 | Q2 同比 | Q2 分部毛利率 | Q2 分部经营利润率 | 主要客户/场景 |
+|---|---:|---:|---:|---:|---:|---|
+| Communications Solutions Group, CSG | `12.31 亿美元` | `71.7%` | `+35%` | `74%` | `33%` | 商业通信、AI 数据中心网络、wireline/wireless、6G、NTN、A&D、雷达、卫星、EMSO |
+| Electronic Industrial Solutions Group, EISG | `4.86 亿美元` | `28.3%` | `+24%` | `68%` | `33%` | 半导体、通用电子、汽车与能源、PCB/高速互连、EDA/CAE、工业/医疗/教育 |
+
+按终端市场，FY2026 Q2 结构更清楚：
+
+| 终端市场 | Q2 FY26 收入 | 占比 | 同比 |
+|---|---:|---:|---:|
+| Commercial Communications | `8.58 亿美元` | `50.0%` | `+40%` |
+| Aerospace, Defense & Government | `3.73 亿美元` | `21.7%` | `+24%` |
+| Electronic Industrial | `4.86 亿美元` | `28.3%` | `+24%` |
+| 合计 | `17.17 亿美元` | `100%` | `+31%` |
+
+投资人眼中的 KEYS 有三层定位：
+
+1. 高端 T&M 龙头：示波器、BERT、VNA、信号源、频谱、协议分析、光电测试、网络流量发生/分析器等，毛利率和客户锁定高。
+2. 从硬件仪器向软件/系统解决方案转型：PathWave、EDA/CAE、ESI、Optical Solutions Group、PowerArtist、AI workload emulation、网络 assurance 和自动化，提高 ARR 与软件占比。
+3. AI 基建复杂度受益者：AI rack 从单卡采购变成 GPU/CPU/DPU/NIC/switch/optics/PCIe/CXL/HBM/storage/液冷/软件的系统工程，Keysight 的价值在研发验证、生产测试、互操作认证和现场验收。
+
+### 1.2 最近 3 年重大变化、收购与业务转型
+
+| 日期 | 事件 | 金额/口径 | 战略影响 |
+|---|---:|---:|---|
+| 2023-06 公告，2023-11/2024-01 分步完成 | 收购 ESI Group | 企业价值约 `9.13 亿欧元`；2023-11 先收 `50.6%`，2024-01 收剩余股权 | 把 Keysight 从传统电子测试向 CAE、虚拟样机、数字孪生和系统级仿真延伸，主要服务汽车、航空航天、工业和复杂系统设计 |
+| 2025-10 | 完成收购 Spirent Communications | 约 `11.6 亿英镑`，约 `14.6 亿美元`；并入 CSG | 增强卫星/PNT、网络 assurance、automation、Wi-Fi、核心网/传输网络自动化；但需剥离 Spirent 高速 Ethernet、网络安全和 channel emulation 业务线给 VIAVI，这是 AI 网络测试竞争格局中的重要限制 |
+| 2025-10 | 完成 Synopsys Optical Solutions Group 和 Ansys PowerArtist 相关资产收购 | 三项交易合计资本部署约 `17 亿美元`，其中 Spirent 净额约 `11 亿美元`、OSG+PowerArtist 约 `6 亿美元` | 强化光学设计/仿真、系统级 simulation、power-aware design；更贴近 AI 光互联、CPO/硅光、power/thermal 设计验证 |
+| 2025-2026 | AI 数据中心、高速互连、1.6T/224G、PCIe/CXL、光子/硅光测试产品密集发布 | 公司未披露单项收入 | 从 5G/wireless 周期依赖，转向 AI data center + wireline + optics + system-level emulation；Q1 FY26 wireline 订单首次超过 wireless |
+
+### 1.3 产业链位置
+
+Keysight 位于 AI 硬件价值链的“验证与良率释放层”，不是终端设备层。
+
+| AI 基建层级 | 代表环节 | Keysight 位置 | 是否直接出现在 AI rack BOM |
+|---|---|---|---|
+| 算力层 | GPU/ASIC/CPU/HBM | 测试芯片、封装、I/O、内存/高速接口和电源完整性；支持 AI ASIC/SoC 研发 | 不直接装进 rack |
+| 网络/互联层 | 800G/1.6T/3.2T optics、switch、NIC/DPU、DAC/AEC、CPO | 光电一致性、BERT、示波器、VNA、网络流量仿真、AI workload emulation、协议一致性 | 不直接装进 rack，但决定产品认证和产线吞吐 |
+| 系统层 | rack-scale/pod-scale AI cluster | 端到端互操作、系统级 emulation、拥塞/尾延迟、RoCE/UEC/UALink/PCIe/CXL 验证 | 不直接装进 rack，作为 lab/production/commissioning 工具 |
+| 制造层 | 模块厂、OEM/ODM、OSAT、晶圆厂 | 生产测试、校准、自动化脚本、yield/测试覆盖率 | 资本设备/软件，按产线投入 |
+| 运维层 | 数据中心网络、模型服务、AIOps | 网络 visibility、assurance、traffic emulation、benchmark | 服务/软件，不是硬件 BOM |
+
+本地 `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md` 的重要约束是：云厂 CapEx、GPU 收入、光模块收入、测试设备订单不能相加；Keysight 只能捕获其中“测试验证工具/软件/服务”的价值。这个口径对 KEYS 特别重要，因为它的 AI 相关收入是高毛利小比例，而不是 AI data center CapEx 的线性映射。
+
+## 2. 最新股价、估值与财务健康
+
+### 2.1 市场数据快照
+
+数据口径：行情为 2026-06-11 美股交易日可得快照；估值倍数以公开行情源与公司最新财报反推，可能随盘中价格变化。
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | `340.03 美元` | 2026-06-11 | 实时/近实时行情快照 |
+| 市值 | `588.25 亿美元` | 2026-06-11 | 行情源口径 |
+| trailing P/E | `55.7x` | 2026-06-11 | 约等于市值 / TTM GAAP 净利润 |
+| forward P/E | `约 33x` | 2026-06-11 估算；GuruFocus 2026-06-05 口径为 `32.22x` | 用当前股价和 FY26/FY27 前瞻 EPS 约 `10.2-10.5 美元`反推 |
+| P/S | `约 9.7x` | 2026-06-11 | 市值 `588.25 亿` / TTM 收入 `60.88 亿` |
+| TTM 收入 | `60.88 亿美元` | Q3 FY25-Q2 FY26 | `13.52 + 14.19 + 16.00 + 17.17` 亿美元 |
+| 最新季度收入增速 | `+31%` reported；`+24%` core | FY2026 Q2 | core 剔除最近 12 个月并购/剥离与汇率 |
+| H1 FY26 收入增速 | `+27%` reported；`+19%` core | FY2026 H1 | H1 收入 `33.17 亿美元` |
+| FY26 收入指引 | `high-20s%` 增长 | 2026-05-19 管理层 prepared remarks | Q3 指引 `17.30-17.50 亿美元`，同比中点约 `+29%` |
+| GAAP 毛利率 | `68.6%` | FY2026 Q2 | IEEPA 退款抬升成本端 |
+| non-GAAP 毛利率 | `72.3%` reported；剔除 IEEPA 后经营口径约 `67.6%` | FY2026 Q2 | Q2 有一次性关税退款影响 |
+| GAAP 净利率 | `20.3%` | FY2026 Q2 | 净利润 `3.49 亿` / 收入 `17.17 亿` |
+| non-GAAP 净利率 | `28.9%` | FY2026 Q2 | non-GAAP 净利润 `4.97 亿` |
+| TTM GAAP 净利率 | `17.2%` | Q3 FY25-Q2 FY26 | TTM GAAP 净利润约 `10.50 亿` |
+| TTM non-GAAP 净利率 | `24.7%` | Q3 FY25-Q2 FY26 | TTM non-GAAP 净利润约 `15.01 亿` |
+
+估值结论：股票已经把 AI 高速互连与测试验证的高景气定价进去。`9.7x` P/S 和 `33x` forward P/E 对测试测量公司不便宜；要支持该估值，FY2026 的超强订单需要在 FY2027 转成收入，同时毛利率不能因竞争、Spirent 整合、产能瓶颈和客户压价明显回落。若 FY2027 AI fabric/optical/PCIe/CXL 订单仍能维持 `>30%` 增长，估值可继续享受“AI 卖铲人”溢价；若 Q2 的订单只是一次性拉货或客户提前下单，估值下修空间较大。
+
+### 2.2 资产负债表与现金流
+
+| 项目 | 2026-04-30 | 2025-10-31 | 变化/判断 |
+|---|---:|---:|---|
+| 现金及等价物 | `24.12 亿美元` | `18.73 亿美元` | 收购后仍有充足现金 |
+| 应收账款 | `10.22 亿美元` | `9.39 亿美元` | 随收入增长上升，未见异常 |
+| 库存 | `10.38 亿美元` | `10.50 亿美元` | 基本稳定；若 AI 订单放缓需观察库存天数 |
+| 流动资产 | `50.42 亿美元` | `43.48 亿美元` | 流动性增强 |
+| 流动负债 | `26.49 亿美元` | `18.50 亿美元` | 主要因 `6.99 亿美元`一年内债务重分类 |
+| 长期债务 | `18.32 亿美元` | `25.34 亿美元` | 部分转入流动债务 |
+| 总债务 | `25.31 亿美元` | `25.34 亿美元` | 基本稳定 |
+| 净债务 | `约 1.19 亿美元` | `约 6.61 亿美元` | 接近净现金/低杠杆状态 |
+| 递延收入 | 流动 `7.37 亿` + 长期 `2.51 亿` = `9.88 亿美元` | `8.84 亿美元` | 软件、服务、维护和验收义务增长，部分可视为收入可见性 |
+| 股东权益 | `63.31 亿美元` | `58.81 亿美元` | 盈利积累抵消回购 |
+| H1 经营现金流 | `9.42 亿美元` | H1 FY25 `8.62 亿美元` | 强现金转换 |
+| H1 自由现金流 | `8.79 亿美元` | H1 FY25 `8.03 亿美元` | FCF margin `26.5%` |
+
+健康程度评估：强。现金基本覆盖总债务，H1 FCF 已接近 9 亿美元，净债务很低；即使 FY2026 capex 指引约 `2 亿美元`，公司仍有充足回购、并购整合和债务偿付能力。风险主要不是破产或流动性，而是订单转收入节奏、并购整合摊销、一次性 IEEPA 退款不可持续、估值对增长的敏感性。
+
+## 3. 最近 5 个财报季度：订单、收入、利润率与 AI 线索
+
+Keysight 不披露传统 backlog、lead time、取消率和 AI 数据中心收入占比。可用的硬指标是订单、book-to-bill、递延收入、分部收入/毛利/经营利润率和管理层订单描述。下表以官方披露为主；AI 相关收入为模型估算，不应视为公司披露。
+
+| 财报季度 | 截止日期 | 订单 / book-to-bill | 总收入 / 增速 | CSG 收入 / GM / OM | EISG 收入 / GM / OM | 终端收入结构 | 关键订单、交期与 AI 线索 | AI 数据中心相关收入占比估算 |
+|---|---:|---:|---:|---:|---:|---|---|---:|
+| Q2 FY2026 | 2026-04-30 | `20.51 亿美元`，同比 `+56%`；B/B `1.19x` | `17.17 亿美元`，`+31%`；core `+24%` | `12.31 亿`，`+35%`；GM `74%`；OM `33%` | `4.86 亿`，`+24%`；GM `68%`；OM `33%` | Commercial Comm `8.58 亿 +40%`；ADG `3.73 亿 +24%`；EI `4.86 亿 +24%` | wireline 受 AI data center expansion 拉动，再创订单纪录；H1 AI-related business 已超过 FY25 全年；四个支柱：AI infrastructure scaling、speed transitions、optical/photonics、system-level emulation；Q2 有 `1.00 亿` IEEPA receivable 与 `0.40 亿`客户退款负债，抬升利润率 | `25%-35%`，约 `3.2-5.0 亿美元`；置信度中低 |
+| Q1 FY2026 | 2026-01-31 | `16.45 亿美元`，同比 `+30%`；B/B `1.03x` | `16.00 亿美元`，`+23%` | `11.24 亿`，`+27%`；GM `68%`；OM `27%` | `4.76 亿`，`+15%`；GM `62%`；OM `27%` | Commercial Comm `7.58 亿 +33%`；ADG `3.66 亿 +18%`；EI `4.76 亿 +15%` | wireline 订单首次超过 wireless，创纪录；需求覆盖 compute、memory、interconnect、networking；与所有 hyperscalers 及生态早期接触；800G/1.6T optics、PCIe/CXL、AI infrastructure validation 是核心驱动 | `20%-30%`，约 `2.8-4.5 亿美元` |
+| Q4 FY2025 | 2025-10-31 | `15.33 亿美元`，同比 `+14%`；B/B `1.08x`；FY25 订单 `54.52 亿 +8%` | `14.19 亿美元`，`+10%`；FY25 `53.75 亿 +8%` | `9.90 亿`，`+11%`；GM `66%`；OM `27%` | `4.29 亿`，`+9%`；GM `60%`；OM `25%` | Commercial Comm `6.60 亿 +12%`；ADG `3.30 亿 +9%`；EI `4.29 亿 +9%` | 公司称 CSG 增长受 AI data center infrastructure、non-terrestrial network applications、defense modernization 驱动；完成 Spirent、OSG、PowerArtist 收购；宣布 `15 亿美元`回购 | `14%-22%`，约 `2.0-3.1 亿美元` |
+| Q3 FY2025 | 2025-07-31 | `13.40 亿美元`，同比 `+7%`；B/B `0.99x` | `13.52 亿美元`，`+11%` | `9.40 亿`，`+11%`；GM `67%`；OM `26%` | `4.12 亿`，`+11%`；GM `57%`；OM `22%` | Commercial Comm `6.44 亿 +13%`；ADG `2.96 亿 +8%`；EI `4.12 亿 +11%` | 全年 outlook 上修；wireline/AI 仍处上行初段，但公司未给 AI 口径 | `10%-18%`，约 `1.4-2.4 亿美元` |
+| Q2 FY2025 | 2025-04-30 | `13.16 亿美元`，同比 `+8%`；B/B `1.01x` | `13.06 亿美元`，`+7%` | `9.13 亿`，`+9%`；GM `67%`；OM `26%` | `3.93 亿`，`+5%`；GM `59%`；OM `23%` | Commercial Comm `6.12 亿 +9%`；ADG `3.01 亿 +9%`；EI `3.93 亿 +5%` | FY25 增长预期上调至长期 `5%-7%`目标中点；AI 高速互连还不是全面爆发阶段 | `8%-15%`，约 `1.0-2.0 亿美元` |
+
+五季度趋势很清楚：
+
+1. 订单从 FY2025 Q2 的 `13.16 亿`升到 FY2026 Q2 的 `20.51 亿`，五个季度累计订单 `78.85 亿`，累计收入 `73.94 亿`，累计 book-to-bill `1.07x`。
+2. FY2026 Q2 订单减收入为 `+3.34 亿美元`，是近五季度最大单季增量，说明 Q2 订单有明显未来收入承诺，但公司没有给 backlog/交付窗口。
+3. CSG 是主要弹性来源，Q2 FY26 CSG 收入同比 `+35%`，Commercial Communications 同比 `+40%`，直接对应 AI data center/wireline 高速互连需求。
+4. EISG 也从 Q2 FY25 的低个位数增长进入 Q2 FY26 的 `+24%`，原因包括半导体、通用电子、汽车能源全面双位数增长；其中高性能 PCB、高密互连、半导体 wafer/lithography 和 AI 相关研发生产测试是增量。
+5. 毛利率跳升要拆开看。Q2 FY26 CSG GM `74%`、EISG GM `68%`，但 IEEPA 退款一次性提高成本端。剔除后公司 organic operating margin `30.4%`，仍高于 FY25 约 `25%-27%`的水平，说明 mix 真的改善，但不能把 `72.3%` non-GAAP GM 线性外推。
+
+## 4. FY2026 最新指引、收入占比与业务重点
+
+### 4.1 指引和收入占比
+
+公司最新指引是 FY2026 Q3 收入 `17.30-17.50 亿美元`，中点 `17.40 亿美元`，同比约 `+29%`；Q3 non-GAAP EPS `2.43-2.49 美元`。管理层同时把 FY2026 全年收入增长预期上调到 `high-20s%`。若 FY2025 收入 `53.75 亿美元`，high-20s% 大致对应 FY2026 收入 `68-70 亿美元`，明显高于过去几年测试测量行业的正常中个位数增长。
+
+Q2 FY2026 业务占比：
+
+| 业务/市场 | Q2 收入 | 占比 | 同比 | 侧重点 |
+|---|---:|---:|---:|---|
+| Commercial Communications | `8.58 亿美元` | `50.0%` | `+40%` | wireline、AI data center、800G/1.6T、optical/photonics、system-level emulation、wireless/6G/NTN |
+| Aerospace, Defense & Government | `3.73 亿美元` | `21.7%` | `+24%` | radar、EMSO、space/satellite、autonomous systems、PNT/anti-jam/anti-spoof |
+| Electronic Industrial | `4.86 亿美元` | `28.3%` | `+24%` | semiconductor、general electronics、automotive/energy、AI-related PCB/高密互连、wafer/lithography |
+
+最突出业务是 CSG 里的 Commercial Communications，尤其 wireline。Q1 管理层说 wireline 订单首次超过 wireless；Q2 又说 wireline 再创纪录，H1 AI-related business 超过 FY25 全年。EISG 的半导体和通用电子是第二层弹性，更多体现为高速 PCB、半导体复杂度、AI 供应链制造测试和仿真软件拉动。
+
+### 4.2 重点产品与跳过项
+
+| 类别 | 重点产品/能力 | 是否 AI 数据中心相关 | 重要性 |
+|---|---|---|---|
+| AI fabric / 网络 workload emulation | AresONE 800GE/1600GE、AI Data Center Builder、IxNetwork/Ixia 体系、RoCEv2/UEC/PFC/DCQCN/LLR/CBFC、GPU/NIC endpoint emulation、tail latency/拥塞测试 | 高 | 直接受益于 AI cluster 从千卡到十万卡/百万 XPU 的网络验证 |
+| 1.6T/224G 光电测试 | 224G test solutions、BERT、采样示波器、VNA、OMA、220GHz lightwave component analyzer、1.6T Ethernet/optical validation、LPO/LRO/TRO、光模块生产测试 | 高 | 2026 是 800G 放量、1.6T 进入规模供货前夜、224G 进入部署的关键年 |
+| PCIe/CXL/高速 I/O 验证 | PCIe 6/7/8 PHY/protocol、CXL 3.x/4.0、NVMe、UALink/Ultra Ethernet 相邻验证、AEC/DAC/retimer compliance | 高 | AI rack 内部和跨机柜资源池化让高速 I/O 验证前置 |
+| 硅光/PIC/CPO/光学设计 | 光电协同测试、PIC/CPO/NPO/ELS 测试、Synopsys OSG 光学仿真、PathWave/EDA 连接 | 中高 | 2026 收入小但 2027-2028 弹性大；CPO 从概念走向高端交换侧 pilot |
+| 半导体/高密电子/EDA/CAE | PathWave ADS/SystemVue/EMPro、ESI virtual prototyping、PowerArtist、wafer/lithography solutions、高密 PCB SI/PI | 中高 | AI ASIC、HBM、先进封装、高功率 PCB 提高设计和测试强度 |
+| 6G/NTN/PNT/defense | RF 数字孪生、RaySim AI-RAN、NTN、Spirent PNT、雷达/EMSO | 非 AI 数据中心，但高增长 | 对公司增长重要，但不计入 AI data center 主要链条 |
+| 汽车/能源/普通通用电子 | EV charging、SDV/cybersecurity、battery/grid、工业、数字健康、教育 | 低到中 | 有稳定收入，但不是本报告的 AI 核心 |
+
+跳过或弱化分析的业务：传统 5G handset 测试、普通 RF/频谱/通用实验室仪器、教育/医疗/工业自动化中非 AI 高速部分、汽车 EV 充电与电池普通测试、校准服务和存量维护、传统企业网非 AI 测试。这些业务对公司收入和稳定性重要，但增速和估值弹性不如 AI data center、高速互连、光电/PCIe/CXL/系统级验证。
+
+## 5. 高增长/关键产品当前贡献与 AI 基建重要性
+
+下表按“可确认收入机会”估算，不是公司披露。各产品间有重叠，尤其 AI fabric、optical validation 和 PCIe/CXL 都可能落在 Commercial Communications/wireline，因此不可逐项相加。
+
+| 关键产品/业务 | 当前公司收入贡献估算 | 当前增速估算 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---:|---:|---|---|---|---|
+| AI fabric / 1.6T Ethernet workload emulation | Q2 FY26 `1.7-2.6 亿美元`；FY26 run-rate `7-9.5 亿美元` | `+60%-100%` | 极高。AI cluster 是否可用取决于 RoCE/UEC/拥塞/尾延迟/多供应商互操作 | 极高。客户在新 rack 上电前必须验证 | 高。1.6T 和 AI workload 模型供应少，客户急 | 高。Keysight/Ixia、VIAVI、Teledyne Xena、EXFO 等头部少数；脚本和 golden reference 锁定强 |
+| 1.6T/224G 光电验证与生产测试 | Q2 `0.9-1.6 亿美元`；FY26 run-rate `4-6.5 亿美元` | `+40%-80%` | 极高。光模块/互连决定 AI 网络带宽和故障率 | 极高。800G 量产、1.6T 导入、3.2T 预研同时发生 | 高。高带宽前端、BERT、VNA、LCA、校准产能稀缺 | 高。少数公司能覆盖 224G/1.6T 全链路；软件和校准附着提升毛利 |
+| PCIe/CXL/高速 I/O compliance | Q2 `0.5-0.9 亿美元`；FY26 run-rate `2.5-4.0 亿美元` | `+35%-70%` | 高。AI rack 内 CPU/GPU/NIC/DPU/SSD/CXL memory 都依赖高速 I/O | 高。PCIe 7.0 设计导入、PCIe 8.0 pathfinding 正在发生 | 中高。标准变化快，协议工具稀缺 | 中高。Teledyne LeCroy、Keysight、VIAVI、Synopsys/Cadence 生态竞争，但客户脚本迁移成本高 |
+| 硅光/PIC/CPO/光学仿真与测试 | Q2 `0.3-0.7 亿美元`；FY26 run-rate `1.2-2.5 亿美元` | `+60%-120%`，小基数 | 高但中长期。CPO/CPX/NPO 是 2027-2028 的高端交换侧路线 | 中高。2026 是 pilot/HVM 准备，2027 才更大 | 中高。光电协同测试、wafer/PIC 自动化仍稀缺 | 高。早期工具、光学仿真和校准数据壁垒强，但标准未固化 |
+| 半导体/EDA/高密电子测试与仿真 | Q2 `0.8-1.4 亿美元`；FY26 run-rate `4-6.5 亿美元` | `+20%-45%` | 中高。AI ASIC、HBM/封装、高速 PCB 设计验证都需要 | 高。芯片项目提前 1-3 年验证 | 中。EDA/CAE 竞争强，但高频/光电/测试联动有差异 | 中高。Cadence/Synopsys/Ansys/Siemens 强，Keysight优势在测量闭环 |
+| NTN/PNT/defense modernization | Q2 `0.8-1.2 亿美元` AI 外收入 | `+15%-35%` | 对 AI data center 低，对公司总增长高 | 高 | 中 | 中高。Spirent PNT + Keysight RF/EMSO 有差异 |
+
+当前最大机会是前两项：AI fabric/workload emulation 与 1.6T/224G 光电验证。它们共同解释了为什么 Q2 Commercial Communications 可以同比 `+40%`，为什么 wireline 订单连续创纪录。EISG 的半导体/高密电子则是第二层支撑：AI 芯片复杂度、PCB/封装密度、lithography/wafer 解决方案带来测试强度提升。
+
+## 6. 一年后产品贡献预测：基准、乐观、极度乐观
+
+时间窗口：2027 年中前后的滚动 12 个月 revenue run-rate。情景不包含公司可能新增大型并购；若 FY2027 AI CapEx 放缓，所有乐观口径需要下修。
+
+| 产品/业务 | 基准情景：一年后收入贡献 | 乐观情景 | 极度乐观情景 | 重要性/紧急性变化 | 供需紧张与溢价 |
+|---|---:|---:|---:|---|---|
+| AI fabric / 1.6T Ethernet workload emulation | `9.5-12.5 亿美元`，同比 `+30%-45%` | `12.5-16.5 亿美元`，`+60%-80%` | `16.5-21.0 亿美元`，`+90%+` | 从“新 rack 验证工具”变成“hyperscaler/交换机/NIC/云厂交付门槛” | 基准供需偏紧；乐观/极乐观下 1.6T port 和 AI traffic model 认证产能短缺，Keysight 可维持高软件 attach |
+| 1.6T/224G 光电验证与生产测试 | `6.0-8.5 亿美元`，`+25%-45%` | `8.5-11.5 亿美元`，`+50%-75%` | `11.5-15.0 亿美元`，`+90%+` | 1.6T 从导入进入新增 AI cluster 标配；3.2T/400G lane 开始客户 qualification | 224G/400G lane 前端、校准和生产测试 throughput 可能短缺，毛利率保持高位 |
+| PCIe/CXL/高速 I/O compliance | `2.5-4.0 亿美元`，`+25%-40%` | `4.0-6.0 亿美元`，`+55%-80%` | `6.0-8.5 亿美元`，`+100%+` | PCIe 7.0 与 optical-aware retimer 进入更多 AI rack 设计，CXL 在推理内存墙上更可计价 | 供需中高，标准变化推动客户提前买工具；但 Teledyne/VIAVI/EDA 竞争压价 |
+| 硅光/PIC/CPO/光学仿真与测试 | `1.5-2.5 亿美元`，`+30%-60%` | `2.5-4.5 亿美元`，`+80%-120%` | `4.5-7.0 亿美元`，`+150%+` | 如果 NVIDIA/Broadcom/Marvell/Arista/Google 高端 switch pilot 扩大，测试需求先于 CPO 大规模出货 | 极乐观下 CPO/PIC wafer/die test、ELSFP、optical engine 测试成 bottleneck |
+| 半导体/EDA/高密电子测试与仿真 | `4.0-6.5 亿美元`，`+15%-30%` | `6.5-9.0 亿美元`，`+35%-55%` | `9.0-12.0 亿美元`，`+70%+` | AI ASIC、HBM4、先进封装和高密 PCB 继续前置验证 | 竞争更强，溢价低于 optical/fabric，但软件/服务毛利高 |
+| NTN/PNT/defense | `4.0-5.0 亿美元` | `5.0-6.5 亿美元` | `6.5-8.0 亿美元` | 与 AI data center 低相关，但给公司提供非 AI 高增长支撑 | 国防/卫星项目认证慢、粘性高 |
+
+合并判断：FY2027 中前后，Keysight AI/high-speed 相关收入可在基准 `14-19 亿美元`、乐观 `19-26 亿美元`、极度乐观 `26-32 亿美元`区间；该区间已经考虑产品重叠，不能把上表逐项相加。若 FY2026 revenue 约 `68-70 亿美元`，则 AI/high-speed 相关收入占比可能从 FY2026 的 `17%-25%`提升到 FY2027 的 `20%-32%`。
+
+## 7. BOM/内容量、价格传导与当前产能能力
+
+### 7.1 先定义：Keysight 不在 AI rack BOM 内
+
+Keysight 的产品不是装进每个 GPU rack 的部件，而是服务于以下节点：
+
+1. 芯片/模块/系统研发实验室：一次性或多次升级的高端仪器、协议软件、仿真软件。
+2. 模块厂/系统厂生产线：BERT、scope、VNA、OMA/LCA、自动化测试、校准、handler/prober 接口。
+3. 云厂/hyperscaler 认证实验室：AI workload emulation、1.6T/800G traffic generator、RoCE/UEC/拥塞、端到端互操作。
+4. 现场验收和运维：benchmark、visibility、assurance、PNT/NTN/网络自动化。
+
+因此“每 MW/每 rack/每 GPU/每 optical port 内容量”只能按测试工具摊销或供应链验证预算估算。保守的估算方法是：
+
+```
+Keysight 内容量 = 下游硬件/系统订单池 × 测试验证强度 × Keysight 份额 × 收入确认比例
+```
+
+### 7.2 AI rack / MW 基准假设
+
+| 物理口径 | 基准假设 | 说明 |
+|---|---:|---|
+| 每 rack 功率 | `100-140 kW`，极高端下一代可 `300-600 kW` | Blackwell/Rubin/高密 ASIC rack 推高功率；本地 DesignCon/GTC 资料显示 600kW 级 rack 已进入讨论 |
+| 每 rack GPU/ASIC | `72` GPU/accelerator 为典型 rack-scale 参考；ASIC rack 可不同 | 用于归一化，不代表所有客户 |
+| 每 MW rack 数 | `7-10` rack，若 100-140kW/rack；低密度则 `15-20` rack | AI 数据中心具体密度差异大 |
+| 每 MW GPU/ASIC | `500-1,400` accelerator | 取决于 rack density、PUE 不纳入 IT load |
+| 每 GPU optical port 等效 | `1-3` 个 800G/1.6T back-end optical equivalent；大规模训练可更高 | 受 topology、oversubscription、NVLink/OCS/以太网设计影响 |
+| 每 MW optical port 等效 | `800-4,000` 个高速端口 | 高速网络层数越多，端口越多 |
+
+### 7.3 当前 Keysight 内容量估算
+
+| 产品/业务 | BOM/客户系统拆分 | Keysight 每 optical port 内容量 | 每 GPU 内容量 | 每 72-GPU rack 内容量 | 每 MW 内容量 | 价格传导链 |
+|---|---|---:|---:|---:|---:|---|
+| AI fabric workload emulation | GPU/NIC/DPU/switch/optics/DAC/AEC/storage/CXL；测试项为 RoCE/UEC/PFC/DCQCN/LLR/CBFC、tail latency、AllReduce、failure recovery | `10-35 美元/port`，早期 1.6T 可 `35-80` | `20-80 美元/GPU` | `2,000-10,000 美元/rack` | `2-12 万美元/MW` | AI 应用需求 -> 云厂集群设计 -> switch/NIC/module OEM 认证 -> Keysight 端口/软件/脚本 |
+| 1.6T/224G 光电验证 | DSP/TIA/driver/laser/PIC/TOSA/ROSA/连接器/thermal；测试项为 BERT、scope、VNA、OMA/LCA、FEC/BER、LPO/LRO tuning | 800G `10-40`；1.6T `25-90`；3.2T/CPO early `80-200` | `30-120` | `3,000-18,000` | `3-20 万/MW` | 光模块/交换机订单 -> 模块厂产线 CapEx -> 高端仪器/校准 -> 模块良率与客户验收 |
+| PCIe/CXL/高速 I/O | CPU/GPU/DPU/retimer/switch/AEC/CXL memory/SSD；测试项为 PHY/protocol/compliance/interposer/retimer | 不按 optical port；按高速 lane 摊销 `0.5-3 美元/lane` | `10-50` | `1,000-6,000` | `1-8 万/MW` | AI rack 内部 I/O 升级 -> 芯片/板卡/线缆认证 -> compliance 软件/仪器 |
+| SiPh/PIC/CPO 测试 | PIC/optical engine/ELS/fiber attach/CPO package/thermal/wafer probe | early CPO `100-300` / optical engine equivalent | `10-60`，主要由 switch 侧摊销 | `1,000-8,000` | `1-10 万/MW`，极乐观更高 | CPO pilot -> optical engine HVM -> 光电协同自动化测试 -> Keysight/同业工具 |
+| EDA/CAE/半导体仿真与测试 | AI ASIC/SerDes/HBM/PCB/package/power/thermal；软件 seat、license、project support | 不按 port，按设计项目/平台 | `5-40` 摊销 | `500-5,000` | `0.5-6 万/MW` | 芯片/系统 NRE -> EDA/仿真/测量闭环 -> design win/量产认证 |
+
+综合当前内容量：成熟 800G/1.6T AI cluster 中，Keysight 可捕获的摊销内容量约 `60-250 美元/GPU`，或 `6,000-30,000 美元/72-GPU rack`，或 `8-45 万美元/MW`。极早期 1.6T/3.2T/CPO/PCIe 7 pathfinding 阶段，单 MW 内容量可短期高到 `50-100 万美元/MW`，但这是研发/认证前置，不是长期每 MW 稳态 BOM。
+
+### 7.4 当前产能能力、供应链采纳和认证阶段
+
+| 产品/业务 | 当前产能能力（美元计，估算） | 被供应链采纳程度 | 认证/标准阶段 | 当前瓶颈 |
+|---|---:|---|---|---|
+| AI fabric/workload emulation | FY26 run-rate `7-9.5 亿美元`，订单能力更高 | 高。管理层称正在与所有 hyperscalers 及生态早期接触；wireline 订单创纪录 | UEC、RoCEv2、Ultra Ethernet、UALink、PFC/DCQCN、LLR/CBFC 等标准/生态并行 | 1.6T 端口硬件、AI traffic model、客户脚本迁移、现场 FAE |
+| 1.6T/224G 光电验证 | FY26 `4-6.5 亿美元` | 高。OFC/DesignCon 2026 1.6T/224G demo 密集；Keysight 官方新闻集中在 224G、1.6T、220GHz LCA | IEEE 802.3dj/224G 生态、1.6T pluggable 量产导入；3.2T/400G lane 处样品/验证 | 高带宽模拟前端、校准、光电自动化、生产测试 throughput |
+| PCIe/CXL/高速 I/O | FY26 `2.5-4 亿美元` | 中高。PCIe 7.0 已成为 2026 设计输入，PCIe 8.0 Draft 0.5 pathfinding | PCIe 7.0 1.0 已发布；PCIe 8.0 目标 2028；CXL 3.x/4.0 生态发展中 | 标准迭代、协议互操作、AEC/optical-aware retimer 相关性 |
+| SiPh/PIC/CPO | FY26 `1.2-2.5 亿美元` | 中。2026 pilot 和 HVM 准备，尚非大规模 | Open CPX/CPO/NPO/XPO、NVIDIA Spectrum-X Ethernet Photonics、ELSFP 等进入早期实物路线 | 光对准、ELS、thermal、可维护性、测试自动化 |
+| 半导体/EDA/高密电子 | FY26 `4-6.5 亿美元` | 中高。AI ASIC、HBM、PCB、wafer/lithography 需求驱动 | 与客户工艺/设计流程绑定，不是单一公开认证 | 与 Cadence/Synopsys/Ansys/Siemens 竞争，客户流程迁移慢 |
+
+公司级产能能力：FY2026 Q2 收入 run-rate `68.7 亿美元`；Q2 订单 run-rate `82.0 亿美元`；管理层 FY2026 收入 high-20s% 指引对应全年 `68-70 亿美元`。这说明当前收入确认能力在 `70 亿美元`附近，订单转收入还存在 `1-4`个季度的制造、验收和软件服务节奏。公司未披露标准 lead time；按测试设备行业经验，高端仪器/系统交付一般为数周到数月，生产线/系统级自动化和客户 qual 可拉到 1-3 个季度。
+
+## 8. 一年后产能、认证与业务增速情景
+
+### 8.1 产品产能与认证情景
+
+| 产品/业务 | 基准：一年后产能能力 | 乐观 | 极度乐观 | 采纳/认证阶段变化 |
+|---|---:|---:|---:|---|
+| AI fabric/workload emulation | `10-13 亿美元`收入能力 | `13-17 亿美元` | `17-22 亿美元` | 1.6T AI fabric 从 R&D/qual 扩到更多生产/commissioning；UEC/UALink/Ultra Ethernet 认证工具更标准化 |
+| 1.6T/224G 光电验证 | `7-9 亿美元` | `9-12 亿美元` | `12-16 亿美元` | 1.6T OSFP/OSFP-XD 量产测试普及；3.2T/400G lane 客户 qual 前置 |
+| PCIe/CXL/高速 I/O | `3-5 亿美元` | `5-7 亿美元` | `7-9 亿美元` | PCIe 7.0 从设计导入转向更多 compliance；PCIe over optics 和 optical-aware retimer 试点 |
+| SiPh/PIC/CPO | `2-3 亿美元` | `3-5 亿美元` | `5-8 亿美元` | CPO/CPX/NPO 从 pilot 进入少量高端 switch 生产准备；ELS/optical engine 测试需求提前 |
+| 半导体/EDA/高密电子 | `5-7 亿美元` | `7-10 亿美元` | `10-13 亿美元` | HBM4/Rubin/MI400/custom ASIC 设计验证、功耗仿真、光学/电磁/热 co-sim 扩大 |
+
+### 8.2 根据订单积压和供给推算未来一年增长
+
+由于 Keysight 不披露 backlog，本文用以下公开指标替代：
+
+1. Q2 FY26 orders `20.51 亿美元`，同比 `+56%`。
+2. H1 FY26 orders `36.96 亿美元`，同比 `+43%`。
+3. Q2 book-to-bill `1.19x`，H1 book-to-bill `1.11x`。
+4. 递延收入 2026-04-30 约 `9.88 亿美元`，较 2025-10-31 约 `8.84 亿美元`增加。
+5. 管理层把 FY2026 revenue growth 上调到 high-20s%，同时 Q3 中点同比约 `+29%`。
+
+| 情景 | 订单转收入假设 | 供给/扩产假设 | 取消/推迟率假设 | 未来一年公司收入增速 | AI/high-speed 收入增速 | 结论 |
+|---|---|---|---|---:|---:|---|
+| 基准 | Q2/Q3 强订单在 1-4 季度内 `65%-75%`转收入 | 高端前端和自动化供应偏紧但不阻断 | `5%-8%`订单推迟/取消 | FY2027 中前后 run-rate `+12%-18%` | `+30%-45%` | FY2026 high-20s 后增速正常化，但 AI 占比继续上升 |
+| 乐观 | `75%-85%`转收入，客户重复下单 | 1.6T/224G/AI fabric 工具产能扩得上 | `3%-5%` | `+18%-25%` | `+50%-75%` | AI fabric、optical、PCIe/CXL 形成持续设备更新周期 |
+| 极度乐观 | `85%+`转收入，3.2T/CPO/PCIe7/AI inference 同时前置 | 供应紧但 Keysight 获得高端份额，价格不降 | `<3%` | `+25%-35%` | `+80%-120%` | AI data center 测试验证从小比例预算升为交付瓶颈，估值可继续扩张 |
+
+反证指标：Q3/Q4 FY26 orders 低于收入、Commercial Communications 增速回落到 10%以下、wireline 不再创纪录、deferred revenue 不增、1.6T/224G 客户 qual 推迟、云厂 CapEx 指引下修、GPU/光模块供应不再紧、客户把系统级测试内制或转向 VIAVI/Anritsu/Teledyne/Rohde/Tektronix。
+
+## 9. 竞争格局、技术路线与替代风险
+
+### 9.1 竞争对手
+
+| 子市场 | 主要竞争对手 | Keysight 优势 | 风险 |
+|---|---|---|---|
+| 高端示波器/BERT/VNA/信号源 | Tektronix、Rohde & Schwarz、Anritsu、Teledyne LeCroy、Yokogawa | 高带宽仪器、光电/电磁/协议组合、全球服务、标准参与 | Tek/R&S/Anritsu 在高端物理层同样强，客户多源采购 |
+| AI fabric / Ethernet network test | VIAVI、Teledyne LeCroy Xena、EXFO、VeEX、Spirent 历史资产 | Ixia/AresONE、AI workload emulation、从物理层到协议/流量 | Spirent 交易中高压 Ethernet/网络安全/channel emulation 资产剥离给 VIAVI，VIAVI 是最直接威胁 |
+| PCIe/CXL protocol | Teledyne LeCroy、VIAVI Xgig、Synopsys/Cadence validation、Anritsu | 测试硬件 + compliance + EDA/仿真闭环 | Teledyne 在 PCIe protocol analyzer 口碑强，EDA 厂商绑定 IP |
+| 光模块/硅光生产测试 | VIAVI、EXFO、Anritsu、MultiLane、Quantifi Photonics、Santec、Luna、Yokogawa | 1.6T/224G 全链路、高端仪器和自动化 | 模块厂会多供应商，低端 production test 价格竞争 |
+| EDA/CAE/仿真 | Cadence、Synopsys、Ansys、Siemens EDA、Altair | 测试测量数据闭环、PathWave、ESI、OSG、PowerArtist 形成系统级组合 | 主流 EDA 客户流程锁定极强，Keysight 不能替代全流程 EDA |
+| 半导体 ATE/SLT | Advantest、Teradyne、Cohu、Chroma、Aehr、FormFactor/Technoprobe 相邻 | Keysight 更偏设计验证、高速接口和系统测试 | 高端 AI SoC/HBM 量产 ATE 核心收入更多在 Advantest/Teradyne，不应把全部半导体测试景气算给 KEYS |
+
+### 9.2 Keysight 新技术是否是主流
+
+结论：是，但不是所有产品都同等确定。
+
+| 技术/产品 | 主流概率 | 理由 | 替代风险 |
+|---|---:|---|---|
+| 800G/1.6T 光电验证 | 高 | 800G 已成为 AI back-end 主力，1.6T 2026-2027 进入新增集群导入期；每代速率提升都需要新测试 | 若 1.6T ASP 快速下行，产线扩容放缓；模块厂选择更便宜的 MultiLane/区域工具 |
+| AI workload emulation | 高 | AI cluster 验收从 line-rate 转向 AllReduce、tail latency、拥塞恢复、failure recovery | 云厂内制工具；开源/自研流量发生器；VIAVI 抢 reference |
+| PCIe/CXL/optical-aware retimer 验证 | 中高 | PCIe 7.0/8.0、CXL、AEC/optics 是 rack-scale 必需前置验证 | CXL 在 2026 大规模部署不及预期；Teledyne/EDA 厂商占据 protocol reference |
+| CPO/PIC/硅光测试 | 中高长期，短期中 | GTC/OFC 显示 CPO/硅光从概念走向高端 pilot，但 2026 仍非全面替代可插拔 | CPO 可维护性/成本失败，pluggable 和 AEC 延长生命周期；标准分裂 |
+| EDA/CAE/power/optical simulation | 中 | AI 系统复杂度提高，仿真前移；ESI/OSG/PowerArtist 有互补价值 | 主流 EDA 厂流程锁定，Keysight 只能吃相邻增量 |
+
+### 9.3 客户替换成本
+
+客户替换成本高，来自五个方面：
+
+1. 认证脚本和历史数据：高速互连客户会把 BER、FEC、eye、SNDR、jitter、thermal、protocol 和 congestion 脚本长期固化在某套仪器/软件中。
+2. golden reference：云厂、交换机厂、模块厂、芯片厂一旦用某套工具作为参考，供应链上下游会围绕该工具调试。
+3. 校准和服务：100GHz+、224G/1.6T、光电协同测试需要可溯源校准和现场 FAE。
+4. 自动化/MES 连接：生产测试不是单台仪器，而是仪器、handler/prober、thermal chamber、MES/SPC、脚本库的集成。
+5. 标准参与和早期样机：PCIe、Ethernet、OIF、UEC、UALink、CPO/CPX 等标准快速变化，早期工具商参与越深，切换越难。
+
+但替换成本不是无限高。低端或成熟 800G production test、普通 RF 仪器、通用 protocol analyzer 都有多供应商选择；客户会在量产后压价。Keysight 的高利润必须靠新标准、新速率、新软件和高端校准持续滚动，而不能只靠存量仪器。
+
+## 10. 风险清单
+
+| 风险 | 触发信号 | 影响 |
+|---|---|---|
+| AI CapEx 反身性 | 云厂 CapEx guide 下修、NeoCloud 融资变差、GPU 租赁价下跌、utilization 低于 `60%-65%` | 订单从乐观转基准，AI 相关收入增长放缓 |
+| Q2 FY26 一次性利润质量 | IEEPA 退款不可重复；Q3/Q4 毛利率回落 | 市场可能下修 EPS 质量，forward P/E 上升 |
+| 订单不等于 backlog | 公司不披露 backlog/取消率；Q2 大订单可能有提前下单 | 若 book-to-bill 回落到 `<1`，估值压力大 |
+| Spirent 剥离资产 | 高速 Ethernet、网络安全、channel emulation divestiture 给 VIAVI | VIAVI 在 AI network test 直接增强，Keysight 组合不如收购标题完整 |
+| 标准和路线分裂 | 1.6T/3.2T、LPO/LRO/TRO、CPO/XPO、UALink/UEC、PCIe over optics 并行 | 研发投入分散，客户延迟采购 |
+| 客户内制 | Hyperscaler 自建 traffic model、benchmark、网络测试工具 | Keysight 软件 attach 和 pricing 被压缩 |
+| 半导体测试误归因 | 市场把 Advantest/Teradyne/HBM ATE 景气过多算给 KEYS | KEYS 更偏验证/设计/网络，不是 HBM 量产 ATE 龙头 |
+| 估值过高 | forward P/E 约 `33x`、P/S 约 `9.7x` | 增速正常化时股价弹性向下 |
+
+## 11. 结论：如何跟踪 KEYS
+
+KEYS 的核心跟踪框架应从“测试测量周期股”切换为“AI 复杂度卖铲人”，但要坚持收入可确认口径。最值得跟踪的 10 个指标：
+
+1. Quarterly orders 和 book-to-bill，尤其 CSG/wireline 是否继续高于收入增长。
+2. Commercial Communications 收入增速是否维持 `30%+`。
+3. 管理层是否继续披露 AI-related business 超越前期水平，是否开始给美元数。
+4. Q3/Q4 FY26 non-GAAP operating margin 剔除 IEEPA 后是否能维持 `30%`附近。
+5. 递延收入是否继续增长。
+6. 1.6T/224G/3.2T 产品发布和客户 demo 是否转为 production test 订单。
+7. VIAVI 接收 Spirent 高速 Ethernet/网络安全/channel emulation 后，在 AI network test 的竞争进展。
+8. OFC/DesignCon/PCI-SIG/GTC 会议中 Keysight 是否继续作为 reference test vendor。
+9. Hyperscaler CapEx、network/optics 订单、光模块 1.6T 交期和 CPO pilot 的真实进度。
+10. FY2027 指引是否能显示 AI/high-speed 订单从 2026 的爆发转为持续收入。
+
+当前结论：公司基本面强、资产负债表健康、订单和 AI 线索显著改善，但估值已经反映相当乐观预期。更适合作为“AI 高速互连和系统级验证景气度”的高质量标的跟踪，而不是简单低估值买入标的。若 Q3/Q4 订单继续高于收入、Commercial Communications 维持高增长、剔除一次性项目后 operating margin 仍在 30%上下，则极乐观情景才有更强可信度；若订单回落或 1.6T/CPO/PCIe7 认证推迟，股票会对高估值非常敏感。
+
+## 12. 主要来源
+
+### 公司一手资料
+
+- Keysight FY2026 Q2 results, 2026-05-19: https://investor.keysight.com/investor-news-and-events/financial-press-releases/press-release-details/2026/Keysight-Technologies-Reports-Second-Quarter-2026-Results/default.aspx
+- Keysight Q2 FY2026 results presentation: https://s22.q4cdn.com/444849635/files/doc_earnings/2026/q2/presentation/Q2-26-Results-Presentation.pdf
+- Keysight Q2 FY2026 financial information: https://s22.q4cdn.com/444849635/files/doc_earnings/2026/q2/supplemental-info/Q2-26-Financial-Information.pdf
+- Keysight Q2 FY2026 prepared remarks: https://s22.q4cdn.com/444849635/files/doc_earnings/2026/q2/transcript/Q2-FY2026-Prepared-Remarks.pdf
+- Keysight FY2026 Q1 results: https://investor.keysight.com/investor-news-and-events/financial-press-releases/press-release-details/2026/Keysight-Technologies-Reports-First-Quarter-2026-Results/default.aspx
+- Keysight FY2025 Q4/FY results: https://investor.keysight.com/investor-news-and-events/financial-press-releases/press-release-details/2025/Keysight-Technologies-Reports-Fourth-Quarter-and-Fiscal-Year-2025-Results/default.aspx
+- Keysight FY2025 Q3 results: https://investor.keysight.com/investor-news-and-events/financial-press-releases/press-release-details/2025/Keysight-Technologies-Reports-Third-Quarter-2025-Results/default.aspx
+- Keysight FY2025 Q2 results: https://investor.keysight.com/investor-news-and-events/financial-press-releases/press-release-details/2025/Keysight-Technologies-Reports-Second-Quarter-2025-Results/default.aspx
+- Keysight completes acquisition of Spirent, 2025-10-15: https://www.keysight.com/us/en/about/newsroom/news-releases/2025/1015_pr25-124-keysight-technologies-completes-acquisition-of-spirent-communications-plc.html
+- Keysight acquisition presentation for Spirent/OSG/PowerArtist, 2025-10: https://s22.q4cdn.com/444849635/files/doc_presentations/2025/10/Keysight-Acquires-Spirent-OSG-and-PA_FINAL.pdf
+- Keysight ESI Group acquisition announcement, 2023-06-28: https://www.keysight.com/us/en/about/newsroom/news-releases/2023/0628-pr23-101-keysight-advances-software-centric-solutions-leade.html
+- Keysight newsroom product releases, 2026 high-speed/AI data center updates: https://www.keysight.com/us/en/about/newsroom.html
+- Keysight AI data center network testing use case: https://www.keysight.com/us/en/use-cases/test-ai-data-center-networks.html
+
+### 本地行业资料
+
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+- `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_PCIe_CXL高速IO交换与Retimer_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md`
+- `行业调研/产业背景/顶级会议信息/ofc_2026_conference_update.md`
+- `行业调研/产业背景/顶级会议信息/designcon_2026_conference_update.md`
+- `行业调研/产业背景/顶级会议信息/pci_sig_devcon_2026_update.md`
+- `行业调研/产业背景/顶级会议信息/conference_update_nvidia_gtc_taipei_2026_2026-06-11.md`
+

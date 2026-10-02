@@ -1,0 +1,667 @@
+# 公司：ABBNY — ABB Ltd（ABB）全面公司调研
+
+> **研究基准日：2026-07-12（美国太平洋时间）**  
+> **行情基准日：2026-07-10 收盘（最近交易日）**  
+> **最新已发布财报：Q1 2026，发布日期 2026-04-22；Q2 2026 计划于 2026-07-16 发布，尚不能作为已知结果。**  
+> **货币单位：除特别注明外均为美元；M = 百万美元，B = 十亿美元。**
+
+## 核心结论
+
+ABB 已不是过去投资者印象中的“大而杂电气工程集团”，而是一家经过十余年组合瘦身、以分散式经营为核心的高质量电气化与自动化复合增长公司。2025 年出售 Robotics、2025—2026 年连续补强功率电子、能源软件和特种变压器，使 ABB 的资本配置进一步指向 **Electrification、Motion、Automation** 三条主线。对 AI 基建而言，ABB 不是 GPU、光模块或服务器电源公司，也已经没有原 Hitachi Energy 那种广谱公用事业级变压器业务；它真正占据的是“电网接入之后、服务器主板之前”的中低压配电、保护、关键电源、电能质量、预制电力间和控制层。
+
+投资判断可压缩为六点：
+
+1. **订单领先于收入。** Q1 2026 集团订单 $11.298B、同比 +32%（可比 +24%），收入 $8.734B、同比 +18%（可比 +11%），Book-to-bill 1.29；期末 backlog $27.515B、同比 +27%（可比 +22%）。Electrification 订单 +51%（可比 +44%），其中数据中心订单在低基数上实现三位数增长。[ABB Q1 2026](https://www.abb.com/global/en/news/135137/q1-2026-results)
+2. **AI 数据中心暴露真实但披露不透明。** ABB 唯一明确的业务量级锚点是：数据中心占 Electrification 2024 年收入约 12%，即约 $1.85B；自 2019 年至 Q3 2025 LTM，数据中心订单复合增速约 25%。本报告据订单与项目交付节奏估算，2026 年中数据中心相关年化收入约 **$2.4–3.0B，占集团 TTM 收入约 7%–9%**，绝非纯 AI 公司，但已足以成为增长和估值的重要边际变量。[ABB 2025 Capital Markets Day — Electrification](https://global.abb/content/dam/abb/global/group/investors/documents/ir-events/2025/cmd-2025/ABB_CMD_2025_Electrification_Presentation%20.pdf)
+3. **最强产品不是单一“神品”，而是整套可交付架构。** 核心是 UniGear/PrimeGear/ZX 中压开关设备、Relion 保护、MNS/MNS Digital 低压开关柜、SACE Emax 3 空气断路器、HiPerGuard 中压 UPS、MegaFlex/MNS-Up 低压 UPS、eHouse，以及 System 800xA/ABB Ability Data Center Automation。它们共同解决客户最稀缺的“time-to-power”，打包能力比单品份额更重要。
+4. **两项小业务可能非线性放大。** 一是 HiPerGuard 在 25MW 电力块和燃机/微电网型 AI 园区中的采用；二是 SACE Infinitus 与 Emax 3 在 800VDC 架构中的保护价值。前者已进入商业项目，后者仍以 2026 design-in、2027 量产准备为主，不能把 NVIDIA 合作公告等同于大额收入。
+5. **财务质量很强。** Q1 2026 官方净债务仅 $2.268B、净债务/EBITDA 0.3x；FY2025 自由现金流 $4.566B，ROCE 25.3%。出售 Robotics 预计带来约 $5.3B 净现金收入（交割前），资产负债表有足够扩产、回购与并购空间。
+6. **好公司已经对应高预期。** 2026-07-10 ABBNY 收盘 $103.31，市值约 $187.8B，TTM PE 约 37.9x、forward PE 约 32.5x、PS 约 5.43x。估值隐含 Electrification 高增长、利润率韧性和 backlog 顺利兑现；数据中心订单延后、800V 价值迁移到机架电源厂商、铜银涨价或大型项目执行失误，均可能造成估值与盈利双杀。[ABBNY 行情](https://stockanalysis.com/quote/otc/ABBNY/)；[估值比率](https://stockanalysis.com/quote/otc/ABBNY/financials/ratios/)
+
+### 证据口径与研究边界
+
+- **A 级证据：** ABB 财报、投资者日材料、产品规格书、客户/合作方公告、标准与厂房投资公告。
+- **B 级证据：** 项目内 `基本面/行业调研/` 的行业报告、APEC/OCP/Data Center World 技术会议资料、产业链公开技术报告。
+- **C 级证据：** 经官方项目名或规格交叉验证的渠道信息；不以匿名论坛传言单独确认订单金额。
+- **M 级模型：** ABB 未披露的数据中心收入、单品毛利率、单品产能、取消率和单位内容量。本报告均以区间及公式标识，不伪装成公司披露。
+- 本次仅调用 `基本面/行业调研/` 内与 AI、电力、配电、UPS、800VDC、DCIM 相关的产业材料，并联网检索 ABB 及相关方最近半年披露；未调用其他项目目录中的公司研究，也未修改公司索引。
+
+## 1. 公司整体业务、投资者定位与三年转型
+
+### 1.1 ABB 今天卖什么
+
+ABB 总部位于瑞士，当前持续经营业务分为三大 Business Areas。Q1 2026 各分部收入相加高于集团收入，是因为集团层面存在跨分部及 Corporate 抵销。
+
+| 业务 | Q1 2026 收入 | 同比/可比增速 | 占集团收入 | Q1 2026 Op. EBITA margin | 主要客户与产品 | AI 数据中心关联 |
+|---|---:|---:|---:|---:|---|---|
+| Electrification | $4.613B | +21% / +15% | 52.8% | 24.0% | 中低压开关柜、断路器、保护继电器、UPS、电能质量、配电与安装产品、楼宇和能源管理 | **最高**；从电网接入、MV/LV、UPS 到白区配电的主承载分部 |
+| Motion | $2.142B | +16% / +7% | 24.5% | 18.5% | 变频器、电机、发电机、牵引与服务、功率变换、同步调相机 | 中等且上升；微电网/燃机数据中心的电网稳定、泵风机效率、特种变压器 |
+| Automation | $2.147B | +18% / +10% | 24.6% | 14.7% | 过程控制、测量分析、海事与港口、电力自动化、Machine Automation | 中低；System 800xA、EPMS/BMS/DCIM 与园区自动化为直接关联 |
+| Corporate/抵销 | -$0.168B | — | -1.9% | — | 跨分部抵销、E-mobility 等 | — |
+
+资料来源：[ABB Q1 2026 Interim Report](https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=9AKK108472A5716&DocumentPartId=&LanguageCode=en)。占比为本报告以集团收入 $8.734B 计算，因抵销因素合计超过 100%。
+
+产业链定位如下：
+
+```text
+公用事业电网/发电侧
+  └─ 大型电力变压器、HVDC：Hitachi Energy / GE Vernova / Siemens Energy 等
+       （ABB 已出售 Power Grids，不应把这段收入归给 ABB）
+          ↓
+园区并网与中压侧
+  └─ ABB MV switchgear、Relion、eHouse、HiPerGuard、同步调相机  ← ABB 强区
+          ↓
+楼栋/数据厅低压侧
+  └─ ABB MNS、Emax 3、MegaFlex/MNS-Up、母线与安装产品          ← ABB 强区
+          ↓
+800VDC / rack power shelf / BBU
+  └─ ABB Infinitus 保护与架构合作；Delta/Vertiv/Flex 等更靠近机架电子
+          ↓
+GPU/网络/光互连
+  └─ NVIDIA、Broadcom、光模块厂商；ABB 无直接芯片或光学收入
+```
+
+### 1.2 投资者心中的 ABB
+
+市场通常把 ABB 看作四种属性的叠加：
+
+- **高质量工业复合增长股：** ABB Way 把损益、资产周转和资本回报下沉到约 18 个业务单元，追求高 ROCE 而非单纯规模。
+- **电气化“卖铲人”：** 能受益于电网升级、工业自动化、建筑电气化、可再生能源和 AI 数据中心，而不承担 GPU 迭代和云服务定价风险。
+- **组合重构成功案例：** 从出售 Power Grids、退出低回报业务，到处置 Robotics，组合更短周期、更高毛利、更贴近售后和配电产品。
+- **并非纯数据中心标的：** 数据中心约占集团收入个位数高端；工业、建筑、交通、能源、海事仍决定大部分收入。AI 订单的高增速会放大估值，但不会在一年内重写全集团收入结构。
+
+### 1.3 最近三年的重大业务变动、转型与收购
+
+| 日期 | 交易/组织变化 | 已知规模 | 战略含义与本报告判断 |
+|---|---|---:|---|
+| 2025-02-03 | 完成 Sensorfact 收购 | 现金流出约 $148M；约 250+ 员工 | 为中小工业客户提供 AI 驱动的能源管理 SaaS；补 ABB 能效软件和经常性收入。原 ABB Ability Energy and Asset Manager 已于 2026-06-01 在中国以外停止销售/支持迁移，增长逻辑应转向 Sensorfact，而非旧产品。[产品生命周期公告](https://www.abb.com/global/en/areas/electrification/services/life-cycle-management/lcm-update) |
+| 2025-03-03 | 完成 Siemens Wiring Accessories 中国业务收购 | 2024 收入 >$150M；约 350 员工；净现金代价约 $386M | 扩充 Smart Buildings、智能家居和中国 230 个城市经销覆盖；与 AI 数据中心关联较弱，但提高 Electrification 的渠道密度。[ABB 公告](https://resources.news.e.abb.com/attachments/published/123873/pt-BR/A76086C12CA4/20250303_ABB_completes_acquisition_of_Siemens_Wiring_Accessories_business_in_China_EN.pdf) |
+| 2025-10-01 | 完成 BrightLoop 收购 | Q1 2026 收购表显示约 $18M 收入、约 80 人 | 高功率密度 DC/DC、AC/DC 变换器，面向非公路车辆、海事与航空；直接规模小，但可把功率电子能力带入 Motion 和未来直流配电。
+| 2025-10-08 宣布 | 将 Robotics 出售给 SoftBank，替代原分拆计划 | 企业价值 $5.375B；预计净现金约 $5.3B；Robotics 2024 收入约 $2.3B、占集团约 7%，Op. EBITA margin 12.1%，约 7,000 人；预计 2026 年中后期交割 | 牺牲一部分自动化成长叙事，换取高估值现金和更纯的电气化/运动控制组合。Q4 2025 起列为终止经营；Machine Automation 并入 Automation。[ABB 公告](https://www.abb.com/global/en/news/129685/abb-to-divest-robotics-division-to-softbank-group) |
+| 2025-12-02 | 完成 Gamesa Electric 功率电子业务收购 | 年收入约 €145M（约 $170M）、约 400 人；46GW 已安装基数 | 获得风电变流器、工业 BESS 和公用事业光伏逆变器，补强 Motion 的大功率变换与服务；对数据中心微电网/储能是技术邻接而非已披露大额收入。[ABB 收购总览](https://global.abb/group/en/investors/overview/acquisitions-and-disposals) |
+| 2026-07-01 | 完成 Specialtrasfo 收购 | 2025 收入约 €80M、>130 人、意大利 3 厂；约一半收入原已来自 ABB | 获得面向变频器/整流器的中压特种变压器，强化 High Power 交付。**这是特种转换变压器，不是恢复广谱公用事业大型变压器业务。**[ABB 收购总览](https://global.abb/group/en/investors/overview/acquisitions-and-disposals) |
+| 2025-07-01 起 | Motion 合并 Systems Drives 与 Large Motors & Generators，成立 High Power | — | 对中压大功率驱动、发电机、同步调相机和特种变压器形成统一 go-to-market，直接服务微电网、海事和大型 AI 园区稳定电源。
+
+三年转型的共同方向不是“押注某一个 AI 单品”，而是：**退出相对低利润/高波动组合 → 把现金投入电气化、功率电子、能源软件和高功率系统 → 用本地制造与预制集成抢占交付时间。**
+
+### 1.4 股价、估值、增长与利润率快照
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| ABBNY 收盘价 | **$103.31** | 2026-07-10 收盘 | OTC Markets ADR；当日成交量约 392,116 股。[价格历史](https://stockanalysis.com/quote/otc/ABBNY/history/) |
+| 市值 | **约 $187.83B** | 2026-07-10 | 第三方按 ADR/普通股口径估算，汇率与流通股数会造成小幅差异。[市场数据](https://stockanalysis.com/quote/otc/ABBNY/) |
+| 企业价值 | **约 $191.66B** | 2026-07-10 附近 | 第三方口径，尚未净入 Robotics 交易现金。 |
+| TTM PE | **约 37.90x** | 2026-07-10 | 基于 TTM 归母利润约 $4.96B。 |
+| Forward PE | **约 32.5x** | 2026-07-09/10 | 一致预期口径；不同数据源约 32.5–32.9x。 |
+| TTM PS | **约 5.43x** | 2026-07-10 | 市值 $187.83B / TTM 收入约 $34.57B。 |
+| TTM 收入 | **约 $34.57B** | 截至 Q1 2026 | 第三方四季滚动；持续经营口径与 ABB 重列可能有细微差异。 |
+| 最近季度收入增速 | **+18.3% 报告；+11% 可比** | Q1 2026 YoY | 并购和汇率放大报告增速；可比增速更能观察内生增长。 |
+| FY2025 收入增速 | **+8.6% 报告；+7% 可比** | FY2025 YoY | FY2025 收入 $33.220B。 |
+| TTM 毛利率 | **约 40.37%** | 截至 Q1 2026 | Q1 衍生品会计影响使当季毛利率降至 39.4%。 |
+| TTM 营业利润率 | **约 17.99%** | 截至 Q1 2026 | GAAP/IFRS 营业口径，不等于 operational EBITA margin。 |
+| TTM 净利率 | **约 14.34%** | 截至 Q1 2026 | 按 TTM 净利润约 $4.96B / 收入约 $34.57B。 |
+
+估值资料来源：[StockAnalysis ABBNY statistics](https://stockanalysis.com/quote/otc/ABBNY/statistics/)、[financial ratios](https://stockanalysis.com/quote/otc/ABBNY/financials/ratios/)。行情为第三方快照；财务分析优先采用 ABB 官方披露。
+
+### 1.5 资产负债表与财务健康度
+
+| 项目 | Q1 2026 | 判断 |
+|---|---:|---|
+| 短期债务 | $1.621B | 现金覆盖充分 |
+| 长期债务 | $6.573B | 期限结构可控 |
+| 总债务 | $8.194B | 官方净债务计算口径，不含部分第三方可能计入的租赁差异 |
+| 现金及有价证券 | $5.926B | 流动性强 |
+| 净债务 | **$2.268B** | 仅约 FY2025 自由现金流的一半 |
+| 净债务 / EBITDA | **0.3x** | 极低杠杆 |
+| 净债务 / 权益 | **0.15x** | 资本结构保守 |
+| 平均贸易净营运资本 / 收入 | **12.5%** | 较上年 14.1% 改善；订单增长未导致失控占款 |
+| Q1 2026 经营现金流 / 自由现金流 | $1.029B / $1.250B | 自由现金流受当季项目与其他项目影响，但方向强劲 |
+| FY2025 自由现金流 / ROCE | $4.566B / 25.3% | 现金转化与资本回报均处高水平 |
+
+**健康度：9/10。** 即使不计尚未交割的 Robotics 约 $5.3B 净现金，ABB 也没有再融资压力；交割后理论上可转为净现金或显著提高回购/并购能力。主要财务风险不是偿债，而是：（1）高估值下的回购效率；（2）大型项目带来的预付款、存货和履约波动；（3）铜、银、电子元件与关税对固定价订单的挤压；（4）Q1 2026 毛利率被衍生品会计影响约 290bp，显示套保会造成季度表观波动；（5）出售 Robotics 的税费约 $0.4–0.5B、分拆成本约 $0.2B 及再投资纪律。
+
+## 2. 最新及最近四次财报：五季度订单、分部与 AI 暴露
+
+### 2.1 集团五季度总表
+
+| 财报季度 | 订单（YoY 报告/可比） | 收入（YoY 报告/可比） | 毛利率 | Op. EBITA / margin | 归母净利 | CFO | B2B | 期末 backlog | 数据中心与交期信号 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| **Q1 2026（最新）** | **$11.298B；+32%/+24%** | **$8.734B；+18%/+11%** | 39.4% | $2.049B / **23.5%** | $1.324B | $1.029B | **1.29** | **$27.515B；+27%/+22%** | Electrification 数据中心订单三位数增长（低基数）；美国 Electrification 订单 +99%/+98%；backlog 创纪录 |
+| Q4 2025 | $10.316B；+36%/+32% | $9.052B；+13%/+9% | 40.4% | $1.588B / 17.6% | $1.273B | $1.949B | 1.14 | **$25.282B；+27%/+18%** | Electrification 一季取得多个单笔 >$100M 的数据中心项目，合计约 **$600M**；后续 9–24 个月交付为主 |
+| Q3 2025 | $9.143B；+12%/+9% | $9.083B；+11%/+9% | 40.8% | $1.738B / 19.2% | $1.208B | $1.777B | 1.01 | 约 $25–26B¹ | Electrification 数据中心订单保持双位数增长；收入由 backlog 执行驱动 |
+| Q2 2025 | $9.785B；+16%/+14% | $8.900B；+8%/+6% | 40.2% | $1.708B / 19.2% | $1.151B | $1.059B | 1.10 | 约 $25–26B¹ | 数据中心情绪很强、订单双位数增长；MV 与 power protection 推动 Electrification 收入 |
+| Q1 2025 | $9.213B；+3%/+5% | $7.935B；+1%/+3% | 41.7% | $1.597B / 20.2% | $1.102B | $0.684B | 1.16 | 约 **$23.0B** | 数据中心需求强，但一个 hyperscaler 下单时点使当季订单略降；MV 与 power protection 执行较好 |
+
+¹ Q2/Q3 2025 财报未在摘要中给出与新口径完全一致的集团 backlog；约 $25–26B 为各当季分部 backlog 加总、尚未扣除 Corporate/跨分部抵销，只用于量级判断。财报来源：[Q1 2026](https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=9AKK108472A5716&DocumentPartId=&LanguageCode=en)、[Q4 2025](https://global.abb/group/en/investors/quarterly-results)、[Q3 2025](https://global.abb/group/en/investors/quarterly-results)、[Q2 2025](https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=9AKK108471A4546&DocumentPartId=&LanguageCode=en)、[Q1 2025](https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=9AKK108471A0338&DocumentPartId=&LanguageCode=en)。
+
+Q1 2026 的 23.5% operational EBITA margin 含约 **250bp** 房地产处置收益；剔除该收益后约 21.0%，仍比上年内生改善约 70bp。因此不能把 23.5% 直接年化。
+
+### 2.2 五季度分部收入、增速与利润率
+
+| 财报季度 | Electrification | Motion | Automation / Process Automation | Robotics & Discrete Automation | AI 数据中心相关收入估算² |
+|---|---|---|---|---|---|
+| **Q1 2026** | **$4.613B；+21%/+15%；margin 24.0%** | $2.142B；+16%/+7%；18.5% | **Automation $2.147B；+18%/+10%；14.7%** | Robotics 已列终止经营；Machine Automation 已并入 Automation | **$0.61–0.87B；集团占比约 7%–10%** |
+| Q4 2025 | $4.702B；+16%/+12%；22.6% | $2.260B；+11%/+6%；18.3% | Automation $2.243B；+14%/+9%；13.9% | 同上 | **$0.63–0.81B；约 7%–9%** |
+| Q3 2025 | $4.499B；+15%/+13%；24.5% | $2.082B；+6%/+3%；20.1% | Process Automation $1.801B；+10%/+7%；15.5% | $0.807B；+8%/+5%；9.2% | **$0.59–0.77B；约 6.5%–8.5%** |
+| Q2 2025 | $4.331B；+14%/+11%；23.9% | $2.065B；+6%/+4%；19.8% | Process Automation $1.804B；+5%/+2%；15.9% | $0.813B；-2%/-5%；9.1% | **$0.53–0.71B；约 6%–8%** |
+| Q1 2025 | $3.825B；+4%/+6%；23.2% | $1.840B；+1%/+3%；19.6% | Process Automation $1.633B；+2%/+5%；15.8% | $0.744B；-14%/-11%；9.9% | **$0.40–0.56B；约 5%–7%** |
+
+² ABB 不按季度披露“AI 数据中心收入”。模型以 2024 年数据中心占 Electrification 12%（约 $1.85B）为硬锚，结合 2025 数据中心订单约 25% 长期复合增速、Q4 2025 约 $600M 大单、Q1 2026 三位数订单增长、典型 9–24 个月转收入周期推算。区间包括数据中心相关 Motion/Automation 收入，但排除一般商业建筑；**不能与公司披露数据等同。**
+
+### 2.3 Backlog、bookings、交期与取消率
+
+| 指标 | 已披露事实 | 本报告推断 | 可信度 |
+|---|---|---|---|
+| 集团 backlog | Q1 2026 $27.515B，同比 +27%/+22% | 相当于 TTM 收入约 79.6%，机械年化约 9.6 个月，但 Automation 内含多年项目，不能按 9.6 个月全部兑现 | 高/中 |
+| Electrification backlog | Q1 2026 **$11.460B，同比 +40%/+38%** | 相当于 Q1 年化分部收入约 62%，即约 7.5 个月；数据中心大型项目实际交付多为 9–24 个月 | 高/中 |
+| Bookings/B2B | Q1 2026 集团 B2B 1.29；Electrification 订单 $6.647B / 收入 $4.613B = 1.44 | 如果后两季仍 >1，2027 收入增长可见度继续提升；若回落至 <1，当前估值对“二阶增长”的要求会受压 | 高/中 |
+| 大额可识别订单 | Q4 2025 多个数据中心项目、合计约 $600M；Applied Digital Polaris Forge 2；VoltaGrid 2025 三批 27 台、2026 再增 35 台同步调相机/飞轮及 eHouse | 可识别项目足以验证方向，但仅覆盖总订单一部分，不能把合同总值都当作未来 12 个月收入 | 高 |
+| Lead time | ABB 未披露产品级统一交期 | 定制 MV switchgear/eHouse/关键电源通常约 9–24 个月；北美配电变压器行业紧张期曾达 12–30 个月；标准 LV/断路器更短 | 中 |
+| 取消率 | ABB 未披露 | 基准情景采用 **3%–7% 延后/取消**，乐观 1%–3%，极度乐观 0%–2%；含项目融资、并网和客户设计变更造成的延期，不只法律意义“取消” | 低/模型 |
+
+行业交期及供需锚点见项目内：[数据中心开关设备与变压器](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-07-10.md)、[数据中心低压配电、PDU 与母线槽](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-07-10.md)。
+
+## 3. 2026 年最新财报指引、业务收入占比与产品交叉验证
+
+### 3.1 Q1 2026 指引：公司实际上在押什么
+
+ABB 在 Q1 2026 给出的正式指引为：
+
+- **Q2 2026：** 可比收入增长高个位数至低双位数，operational EBITA margin 同比上升。
+- **FY2026：** 全年 book-to-bill 为正，可比收入增长高个位数至低双位数；剔除 Q1 房地产收益后，全年 operational EBITA margin 同比上升。
+- **其他假设：** FY2026 CapEx 约 $1.0B，有效税率约 25%。
+
+指引组合透露三个重点：
+
+1. **Electrification 是绝对增长与利润核心。** 它贡献 52.8% 集团收入、约 54% 分部 operational EBITA，Q1 订单增速 51%、backlog 增速 40%，均远高于集团。
+2. **Motion 是第二条“AI 园区侧翼”。** 传统电机/变频器仍占主体，但 High Power、Gamesa Electric、BrightLoop、Specialtrasfo 和同步调相机逐渐形成“发电—变换—稳定—驱动”能力，能进入无法及时获得公用事业电力的 AI 园区。
+3. **Automation 是软件和控制粘合层。** 它的收入占比约 24.6%，但数据中心直接收入很小；价值在于把 MV/LV/UPS、计量、冷却和楼控变为统一运维系统，并提高打包订单的替换成本。
+
+Q1 2026 收入占比按集团收入计算为 Electrification 52.8%、Motion 24.5%、Automation 24.6%、Corporate/跨分部抵销 -1.9%。按可比增速排序则为 Electrification +15%、Automation +10%、Motion +7%；按利润率排序为 Electrification 24.0%、Motion 18.5%、Automation 14.7%。这解释了为什么公司最侧重 Electrification，而不是平均分配资本。
+
+### 3.2 AI 数据中心重点产品、型号、规模与毛利率模型
+
+| 产品/业务簇 | 具体产品与型号 | 2026 状态与采用证据 | 2026 年中年化收入模型 | 收入增速模型 | 产品毛利率模型³ | 交叉验证结论 |
+|---|---|---|---:|---:|---:|---|
+| **A. MV/LV 配电、保护与 eHouse** | UniGear Digital、UniSec Air、PrimeGear/ZX GIS、Relion/IEC 61850；MNS/MNS Digital；SACE Emax 3 250–6,300A；EcoFlex/eHouse | Applied Digital 400MW+300MW 两园区；ABB 称约四分之一数据中心采用其技术；Q4 2025 数据中心大单约 $600M | **$1.25–1.55B** | +15%–30% | 28%–40%；软件/继保可 45%–60% | 这是数据中心收入最大、最可扩展、最能与 UPS/控制捆绑的主干 |
+| **B. 关键电源与电能质量** | HiPerGuard 4.16–24kV、2.5MW/台、最多 10 台并联 25MW、效率 98%；MegaFlex UL 1.0–1.6MW/frame，双变换约 97%、eBoost 约 99%；MNS-Up 100kW 模块、最高 3MW | HiPerGuard 已进入 Applied Digital 等商业项目；2026 数据中心会议强调 25MW 电力块、MV UPS 和更高密度 | **$0.40–0.60B** | +30%–60% | 30%–42%；早期紧缺/服务打包可 35%–46% | AI 园区功率块变大，MV UPS 可减少低压级联和占地；是 ABB 最有差异化的增量产品 |
+| **C. 白区配电与安装产品** | AC 母线/配电、断路器、ATS、计量、线缆管理、连接器、PDU 相关安装产品；Emax 3 数字保护 | Selmer、Senatobia 扩产直接对应 busway/配电和 breakers；高密度机柜需要更粗母线、更多分支和数字保护 | **$0.35–0.50B** | +15%–25% | 25%–38%；智能计量/软件更高 | 单价低于 MV/UPS，但每个机房都需要、短周期收入更快；与 Legrand/nVent/Eaton 竞争更激烈 |
+| **D. 微电网稳定：同步调相机+飞轮+eHouse** | High Power 同步调相机、飞轮、励磁/控制、MV/LV eHouse；Specialtrasfo 特种转换变压器 | VoltaGrid 2025 年 3 单共 27 套，2026 年新增 35 套；首批自 2025-12 交付、首台计划 2026-04 投运；后续 35 套于 Q2 2026 记单、尚未进入 Q1 backlog | **$0.15–0.30B** | +40%–80% | 系统 25%–38%；控制/服务更高 | 燃机/离网 AI 园区需要故障电流、惯量和无功支撑；设备不是 UPS 替代，而是电网稳定层 |
+| **E. 数据中心自动化、EPMS/DCIM 与能源 SaaS** | ABB Ability Data Center Automation（System 800xA）、EPMS/BMS/DCIM；Sensorfact；Relion、MNS Digital、Emax 3 数据接入 | 工业级控制可统一电力、冷却、楼控；Sensorfact 替代生命周期结束的旧 Energy Manager | **$0.08–0.15B** | +15%–30% | 硬件 35%–50%；软件 65%–85%；集成 25%–40% | 收入小但高粘性，能把 ABB 从设备供应商升级为运维栈；不能把旧 ABB Ability Energy Manager 当新增长产品 |
+| **F. 800VDC 保护与直流配电期权** | SACE Infinitus：最高 1kV DC/2.5kA、约 15µs 动作、效率 99.9%；Emax 3；未来 800VDC 配电/保护模块 | 与 NVIDIA 开发 1MW 机柜 800VDC；2026 主要 design-in/验证，NVIDIA 目标 2027 量产部署；未披露 hyperscaler AVL 或量产订单 | **<$0.05B**，且与 A/C 有重叠 | >100%，低基数 | 30%–45%；认证成功后可更高 | 技术战略价值远高于当前收入；若保护和主母线由 ABB 获选，单 MW 内容量上升，若价值转移到 power shelf/sidecar 厂商则相反 |
+
+³ ABB 不披露产品级收入和毛利率。模型用 Electrification 分部约 40% 毛利率、开关柜/UPS/BOM 结构、软件混合、同业区间与项目集成折价倒推；区间是产品毛利率，不是 operational EBITA margin。
+
+关键规格来源：[HiPerGuard brochure](https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=2UCD301143-P&DocumentPartId=&LanguageCode=en)、[MNS-Up brochure](https://library.e.abb.com/public/bca9d58f9a144eed9e3fc23ce9bcc7f9/MNS-Up_broch_1TPMC02101_ENc.pdf)、[SACE Emax 3](https://electrification.us.abb.com/products/circuit-breakers/sace-emax-3)、[ABB selected innovations — Infinitus](https://www.abb.com/global/en/company/innovation/news/selected-innovations-in-brief)、[ABB 与 NVIDIA](https://resources.news.e.abb.com/attachments/published/129805/en-US/D1659BBF0D16/20251013_ABB_to_develop_next-generation_AI_data_centers_with_NVIDIA_EN.pdf)。
+
+### 3.3 产品验证：官方项目、行业会议和“渠道信号”是否一致
+
+| 信号 | 事实 | 对模型的验证或限制 |
+|---|---|---|
+| Applied Digital | ABB 为 Polaris Forge 1（400MW）及 Polaris Forge 2（300MW）提供中低压架构、HiPerGuard 与 MV switchgear；后者两栋 150MW，计划 2026/2027 上线，首 200MW 已租予美国 hyperscaler | 验证 A+B 已从实验室进入数百 MW 商业项目；合同金额未披露，不能按全园区行业内容量直接认作 ABB 收入。[ABB/Applied Digital](https://resources.news.e.abb.com/attachments/published/130940/en-US/2A3A4FFBCDD9/131125_ABB_expands_power_technology_partnership_with_Applied_Digital_for_AI-ready_data_centers_EN.pdf) |
+| VoltaGrid | 2025 前三季三批 27 套同步调相机+飞轮及 eHouse；2026 CERAWeek 再增 35 套，后者订单记在 Q2 2026 | 验证 D 是高增长小业务；因金额未披露，本报告只给 $/MW 与设备数推断，不将其并入 Q1 backlog。[ABB/VoltaGrid](https://www.abb.com/global/en/news/134418/abb-and-voltagrid-extend-collaboration-on-data-center-power-infrastructure) |
+| Data Center World 2026 | 行业讨论从 2025 平均约 16kW/rack 快速转向约 27kW/rack，并出现 1MW rack、1.2MW ORv3、2MW CDU、800VDC、MV UPS 等主题 | 验证功率密度和电力块规格上升；会议议题代表设计方向，不等于当年大规模出货。[会议产业研究](../../行业调研/产业背景/顶级会议信息/data_center_world_2026_research_report.md) |
+| APEC 2026 / OCP EMEA | 800VDC、GaN/SiC、BBU/ESS、VPD/TLVR 与高密度供电是核心；行业判断 2026 design-in、2027 生产 | 与 ABB/NVIDIA 节奏一致；限制是 ABB 在 rack PSU、BBU、VRM 层并非主导厂商。[APEC 研究](../../行业调研/产业背景/顶级会议信息/conference_update_apec_2026_2026-06-10.md)；[OCP EMEA 研究](../../行业调研/产业背景/顶级会议信息/OCP_EMEA_Summit_2026_高密度调研报告.md) |
+| 工厂扩产 | 2025 美国投资 $120M：Selmer $80M、320k sqft、产能提升 >50%、Q4 2026 开业；Senatobia $40M、厂房翻倍；2026 欧洲再投 $200M、印度 $75M | 验证订单紧张不是只有口头需求；但新产能在 2026 下半年至更后释放，短期 FAT、熟练工和关键件仍是瓶颈。[美国扩产](https://resources.news.e.abb.com/attachments/published/123896/en-US/B3EBECC58E8F/20250302_ABB_to_invest_120_million_to_expand_US_manufacturing_EN.pdf)；[欧洲扩产](https://www.abb.com/global/en/news/135595/abb-invests-200-million-across-europe-to-accelerate-grid-transformation)；[印度扩产](https://resources.news.e.abb.com/attachments/published/133972/en-US/5FB77CB153CD/20260309_ABB_invests_75_million_in_India_to_expand_manufacturing_and_RD_for_critical_segments_EN.pdf) |
+
+渠道层面对“抢排产、报价有效期缩短、客户愿为 time-to-power 支付溢价”的描述，与 ABB 的 B2B、backlog、大单和扩产相符；但 ABB 未披露客户取消率、标准交期或排产订金，故本报告不采用匿名论坛的具体金额。对于投资模型，**可识别项目名和交付窗口比“订单爆满”叙事更有价值。**
+
+### 3.4 本报告跳过或降权的非 AI/低增速业务
+
+以下业务并非没有价值，而是不纳入后文 AI 关键产品逐项预测：
+
+| 跳过/降权业务 | 原因 |
+|---|---|
+| 传统住宅布线附件、智能家居和一般商业建筑配电 | 市场大、渠道价值高，但与 AI 数据中心增量关系弱，增长通常低于数据中心配电 |
+| 通用低压电机、普通 HVAC 变频器和常规服务 | 现金流稳定但难以从公开披露中分离 AI 园区份额 |
+| 油气、矿业、纸浆、化工常规过程自动化 | 与 System 800xA 技术共用，但终端不是 AI 基建 |
+| 海事、港口、轨交、牵引 | 订单强且可能高毛利，但 AI 数据中心关联低 |
+| Robotics | 已列终止经营并拟出售，不是 ABB 持续经营估值的长期主线 |
+| E-mobility | 仍在重组、收入较小且亏损，充电桩不是本次研究重点 |
+| 旧 ABB Ability Energy and Asset Manager | 中国以外已于 2026-06-01 生命周期终止，不能继续作为成长产品 |
+
+特意保留、没有因规模小而漏掉的潜力业务为：**Infinitus、Emax 3 数字保护、HiPerGuard、同步调相机/飞轮、Specialtrasfo、BrightLoop、Sensorfact、Relion/IEC 61850、数据中心自动化软件。**
+
+## 4. 每个高增长或关键业务的当前收入贡献与战略评分
+
+### 4.1 评分定义
+
+- **重要性 I：** 1 = 可有可无，5 = AI 园区无法按目标功率/可靠性运行。
+- **紧急性 U：** 1 = 可延后多年，5 = 位于当前并网/交付关键路径。
+- **供需紧张 S：** 1 = 明显过剩，5 = 极度供不应求且交期显著拉长。
+- **垄断/差异化 M：** 1 = 完全同质化，5 = 单一来源或强专利/认证壁垒；ABB 没有真正法定垄断，评分指可替代性。
+- **溢价能力 P：** 1 = 纯成本加成困难，5 = 客户为可靠性/交期/认证愿付显著溢价。
+
+### 4.2 当前状态（2026 年中）
+
+| 关键业务 | 年化收入贡献（M） | 收入增速（M） | I | U | S | M | P | 核心判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| A. MV/LV 配电、保护、eHouse | **$1.25–1.55B** | +15%–30% | 5.0 | 5.0 | 4.0 | 3.5 | 4.0 | 项目没有 switchgear、保护配合和 FAT 就不能送电；ABB/Eaton/Schneider/Siemens 均可供，强项是打包和服务而非独占 |
+| B. HiPerGuard/MegaFlex/MNS-Up 关键电源 | **$0.40–0.60B** | +30%–60% | 5.0 | 5.0 | 4.5 | 4.0 | 4.5 | HiPerGuard 的 2.5MW/25MW 架构和效率差异化明显；认证、运维和客户可靠性记录抬高切换成本 |
+| C. 母线/白区配电/安装产品 | **$0.35–0.50B** | +15%–25% | 4.0 | 4.0 | 3.5 | 3.0 | 3.5 | 每 MW 必需且收入转换快，但 Legrand、Eaton、nVent 等替代较多，铜价传导重要 |
+| D. 同步调相机/飞轮/eHouse | **$0.15–0.30B** | +40%–80% | 4.5 | 4.5 | 4.5 | 4.0 | 4.0 | 在岛式/弱网 AI 园区提供惯量、短路容量和无功；定制集成能力强，VoltaGrid 订单验证商业化 |
+| E. 自动化/EPMS/DCIM/Sensorfact | **$0.08–0.15B** | +15%–30% | 4.0 | 3.5 | 2.5 | 3.0 | 3.5 | 对能效、故障定位和容量管理重要，但软件层竞争者多；一旦写入控制逻辑，切换成本上升 |
+| F. 800VDC/Infinitus 保护 | **<$0.05B**，与 A/C 重叠 | >100%，低基数 | 5.0（2027） | 3.5（当前） | 4.0 | 4.0 | 4.5 | 2026 是设计验证而非收入年；若进入 NVIDIA/hyperscaler 参考架构，价值可非线性增长 |
+
+收入估算的总和约 $2.23–3.10B；考虑 F 与 A/C 重叠、以及部分园区并非 AI 训练集群，本报告采用 **$2.4–3.0B 数据中心相关年化收入** 作为集团层面中心区间。ABB 没有披露 AI 与非 AI 数据中心的拆分，任何更精确数字都是伪精确。
+
+## 5. 一年后收入贡献：基准、乐观、极度乐观
+
+### 5.1 情景假设
+
+预测窗口定义为 **2026-07 至 2027-06 的滚动十二个月**，不是 ABB FY2027 会计年度。三情景共同以 Q1 2026 backlog 和已知扩产为起点：
+
+| 假设 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| 北美/全球 AI 数据中心 MW 建设 | 已签项目按计划，少量并网/融资延期 | hyperscaler 与 neocloud 资本开支上修，备用电源审批不构成主要延误 | 1MW rack/燃机微电网同时加速，客户接受抢产能溢价 |
+| ABB 数据中心订单增速 | +20%–30% | +45%–65% | +80%–120% |
+| 延后/取消率 | 3%–7% | 1%–3% | 0%–2% |
+| 新产能 | Selmer Q4 2026 逐步爬坡；现有厂效率提升 | 美国/欧洲扩产按上限爬坡，本地供应链顺畅 | 加班、外协、预制和标准化同时兑现，无关键件短缺 |
+| 价格/产品组合 | 价格基本抵消铜银与关税，HiPerGuard/eHouse 占比升 | 5%–10% 交期/配置溢价，软件服务附着率提高 | 10%–20% 紧急交付溢价，且没有质量/保修反噬 |
+| 800VDC | design-in、小规模 pilot | 至少一个大型客户进入量产准备 | 多家客户提前部署，ABB 获保护/母线主要份额 |
+
+### 5.2 每项业务三情景收入与战略评分
+
+评分次序为 **I/U/S/M/P**，含义见 4.1。重要性与垄断力不会因需求情景机械变化，主要变化在紧急性、供需和溢价。
+
+| 业务 | 情景 | 一年后收入贡献 | YoY 增速 | I/U/S/M/P | 关键条件 |
+|---|---|---:|---:|---|---|
+| A. MV/LV 配电、保护、eHouse | 基准 | **$1.55–1.95B** | +18%–25% | 5/5/4/3.5/4 | Q4 2025 $600M 大单和 Q1 backlog 正常转收入 |
+|  | 乐观 | **$1.90–2.40B** | +35%–50% | 5/5/4.5/3.5/4.5 | 客户提前锁定 2027 容量，预制 eHouse 占比上升 |
+|  | 极度乐观 | **$2.30–3.00B** | +65%–90% | 5/5/5/3.5/5 | 抢排产、价格与单位 MW 内容量同时上升 |
+| B. 关键电源 | 基准 | **$0.55–0.80B** | +30%–45% | 5/5/4.5/4/4.5 | HiPerGuard 从首批商业项目复制至更多 25MW block |
+|  | 乐观 | **$0.75–1.05B** | +60%–90% | 5/5/5/4/5 | MV UPS 被多个 neocloud/hyperscaler 设计采用 |
+|  | 极度乐观 | **$1.00–1.45B** | +120%–170% | 5/5/5/4.5/5 | 园区从传统 LV UPS 快速迁移至 MV 架构，ABB 维持供货领先 |
+| C. 白区配电/安装产品 | 基准 | **$0.45–0.62B** | +15%–25% | 4/4/3.5/3/3.5 | 机柜密度抬升抵消标准件竞争 |
+|  | 乐观 | **$0.55–0.75B** | +35%–50% | 4.5/4.5/4/3/4 | Selmer、Senatobia 顺利爬坡，Emax 3 attach rate 上升 |
+|  | 极度乐观 | **$0.68–0.95B** | +65%–90% | 4.5/5/4.5/3/4.5 | 铜和 breaker 供应紧张、客户为本地交付支付溢价 |
+| D. 同步调相机/飞轮/eHouse | 基准 | **$0.25–0.45B** | +50%–75% | 4.5/4.5/4/4/4 | VoltaGrid 62 套框架按期执行，更多园区复制 |
+|  | 乐观 | **$0.40–0.65B** | +90%–150% | 4.5/5/4.5/4/4.5 | 燃机电源成为并网受限园区主流过渡方案 |
+|  | 极度乐观 | **$0.60–0.95B** | +180%–260% | 5/5/5/4.5/5 | 多个 GW 级项目并发，ABB High Power 获首选供应商地位 |
+| E. 自动化/EPMS/DCIM/SaaS | 基准 | **$0.12–0.22B** | +40%–60% | 4/3.5/2.5/3/3.5 | 与 eHouse/UPS 打包，Sensorfact 完成产品迁移 |
+|  | 乐观 | **$0.18–0.32B** | +80%–120% | 4/4/3/3.5/4 | 控制写入更多客户规范，软件订阅附着率上升 |
+|  | 极度乐观 | **$0.28–0.45B** | +150%–250% | 4.5/4.5/3.5/4/4.5 | 数字孪生/能控成为 MW 交付验收必要项且客户接受统一栈 |
+| F. 800VDC/Infinitus | 基准 | **$0.05–0.12B**⁴ | n.m. | 5/3.5/4/4/4 | pilot、小批保护器件和工程收入 |
+|  | 乐观 | **$0.12–0.25B**⁴ | n.m. | 5/4.5/4.5/4/4.5 | 一个大型平台进入量产资格，ABB 获 DC breaker/bus-tie 份额 |
+|  | 极度乐观 | **$0.25–0.50B**⁴ | n.m. | 5/5/5/4.5/5 | 多家 1MW rack 量产提前，Infinitus 成参考设计核心保护件 |
+
+⁴ F 与 A/C 的配电和保护收入部分重叠，不可重复相加。
+
+**数据中心相关收入合计：**
+
+- **基准：$3.0–3.8B，约 +20%–30%。** 占届时集团收入约 8%–10%。
+- **乐观：$3.8–4.9B，约 +45%–65%。** 占集团收入约 10%–12%。
+- **极度乐观：$5.1–6.8B，约 +80%–120%。** 占集团收入约 12%–16%；该情景要求订单、价格、扩产、认证和客户供电审批同时向好，概率显著低于前两者。
+
+极度乐观并不等于最合理目标价假设。当前约 38x TTM PE 已经给了高质量和 AI 电力需求相当高的权重；基准情景更适合作为经营预测，乐观情景用于估值上行，极度乐观用于检验产能和竞争边界。
+
+## 6. BOM、每 MW/每 rack/每 GPU/每 optical port 内容量与价格传导
+
+### 6.1 换算基准：先避免“每 GPU 内容量”的伪精确
+
+ABB 的产品主要按园区、楼栋、数据厅、配电段或 MW 出售，不按 GPU 和 optical port 出售。为了把设施电力 BOM 分摊到算力单元，本报告采用一个透明的参考机柜：
+
+- 参考高密度 rack：**142kW IT load、72 个 GPU**，接近 GB300 NVL72 一类量级，仅为换算基准。
+- 1MW IT load ≈ **7.04 racks ≈ 507 GPUs**。
+- optical port 仅采用 **每 GPU 约 1 个外部高速光口** 的粗分摊，即约 507 ports/MW；实际网络有 scale-up copper、scale-out optics、冗余和不同拓扑，可能相差数倍。
+- 公式：`$/rack = $/MW × 0.142`；`$/GPU = $/MW ÷ 507`；`$/optical port ≈ $/MW ÷ 507`。
+- 下表是“设施设备成本分摊”，**不表示每个 GPU 或光口内含 ABB 零件**；ABB 对光学链路的直接 BOM 内容量为零。
+
+### 6.2 当前 ABB 可服务内容量
+
+| 业务 | 真实物理内容 | ABB 可服务内容量 / IT MW（M） | 每 142kW rack 分摊（M） | 每 GPU 分摊（M） | 每 optical port 分摊（M） | 重复/边界 |
+|---|---|---:|---:|---:|---:|---|
+| A. MV/LV 配电、保护、eHouse | MV incoming、主开关/母联、继保、LV main gear、eHouse、FAT/工程 | **$0.45–0.95M/MW** | $64k–135k | $888–1,874 | $888–1,874 | 与 C/F 在 breaker、母线处有部分重叠；不同冗余架构差异大 |
+| B. 关键电源 | HiPerGuard/MegaFlex/MNS-Up、旁路、储能接口、控制和服务 | **$0.35–0.75M/MW** | $50k–107k | $690–1,480 | $690–1,480 | 2N 架构可接近翻倍；无 UPS/燃机架构会显著下降 |
+| C. 白区配电/安装产品 | AC busway、分支断路器、ATS、计量、连接/线缆管理 | **$0.15–0.35M/MW** | $21k–50k | $296–690 | $296–690 | 仅 ABB 可服务池；不含所有 rPDU、PSU 或机架侧厂商份额 |
+| D. 同步调相机/飞轮/eHouse | 旋转设备、飞轮、励磁、保护、控制、预制电力间 | **$0.08–0.25M/MW** | $11k–36k | $158–493 | $158–493 | 仅适用于燃机/弱网/岛式项目；普通强网项目可能为零 |
+| E. Automation/EPMS/DCIM | 控制器、服务器、网关、仪表接入、工程、软件许可和服务 | **$0.04–0.15M/MW** | $5.7k–21k | $79–296 | $79–296 | 许可多按站点/容量定价，单位 MW 随园区规模下降 |
+| F. 800VDC 保护 | DC breaker、bus-tie、测量、控制及未来 DC 配电集成 | **$0.04–0.12M/MW** | $5.7k–17k | $79–237 | $79–237 | 仅在 800V 架构采用；与 A/C 重叠，且不含 power shelf、BBU、VRM |
+
+上述总和不可直接相加。传统 AC 2N、MV UPS、燃机微电网和 800VDC 是不同架构选择；同一个 breaker 也不能同时归入 A、C、F。行业总池锚点见：[低压配电/PDU/母线槽](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-07-10.md)、[UPS 与电池储能](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-07-10.md)、[中压直流/800VDC/SST](../../行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-07-10.md)。
+
+### 6.3 每 MW 的设备数量感
+
+| 产品 | 参考数量 / MW | 计算与限制 |
+|---|---:|---|
+| HiPerGuard | **0.4 台 2.5MW unit/MW**；25MW block 为 10 台 | 是受保护负载口径；N+1/2N 会增加台数，且电池时长从 60 秒到数小时显著改变成本 |
+| MNS-Up | **10 个 100kW 模块/MW** | 最高 3MW 系统约 30 模块；若采用 catcher/N+1 或部分负载，数量不同 |
+| MegaFlex UL | **约 0.63–1.0 frame/MW** | 单 frame 1.0–1.6MW；冗余和维护旁路未计 |
+| Emax 3 | **约 4–8 个主进线/母联/大馈线 ACB/MW** | 取决于 2N、分段、额定电流和每个 data hall 的颗粒度；小型 feeder MCCB 数量更多 |
+| Infinitus | **约 1–3 个 DC breaker/bus-tie function/MW** | 仅是 800V 早期架构假设；客户参考设计和冗余未定，不能视为官方 BOM |
+| 800V power sidecar/power rack | **约 1 套/MW rack** | ABB 当前明确角色是配电/保护合作，不应把整套 sidecar、BBU、PSU 收入归给 ABB |
+| EPMS/DCIM | 1 套园区平台 + 每面关键盘柜/UPS/母线的计量与网关 | 软件不是线性硬件；大园区摊薄 $/MW，小园区工程占比高 |
+
+### 6.4 关键业务 BOM 拆分
+
+#### A. MV/LV switchgear、保护和 eHouse BOM
+
+| BOM 项 | 典型价值占比 | 价格/供应敏感度 |
+|---|---:|---|
+| 铜排、导体、钢/铝柜体、绝缘 | 28%–42% | 铜、钢、运输与本地化；铜价通常以报价有效期/材料调整条款传导 |
+| 真空断路器/灭弧室、ACB/MCCB、接触系统 | 15%–25% | 银触点、真空灭弧室、机械寿命和短路等级决定差异化 |
+| CT/PT/LPIT、Relion、计量、通信 | 12%–22% | 电子元件、网络安全、IEC 61850 工程；毛利高于金属件 |
+| 二次接线、装配人工 | 8%–14% | 熟练工和本地工厂节拍是产能瓶颈 |
+| 工程、保护配合、FAT、型式试验 | 8%–15% | 客户改图会触发 change order；这是 ABB 服务与认证溢价来源 |
+| 制造费用、保修、物流 | 8%–14% | eHouse 体积大、物流与现场吊装敏感 |
+
+#### B. 1MW 高端静态 UPS（不含电池）BOM
+
+| BOM 项 | 典型价值占比 | ABB 产品关联 |
+|---|---:|---|
+| 功率模块、IGBT/SiC、驱动 | 15%–21% | MegaFlex/MNS-Up 的双变换核心；HiPerGuard 在 MV 层采用不同拓扑 |
+| 变压器、电感与磁性件 | 10%–16% | Gamesa/Specialtrasfo/High Power 能力有协同 |
+| 旁路、breaker、contactor、保护 | 10%–16% | ABB 可内部附着 Emax/保护产品，提高每单内容量 |
+| 铜排与连接 | 8%–14% | 功率密度越高，铜与热设计越关键 |
+| 电容、EMI/滤波 | 6%–10% | 电容寿命和谐波决定维护周期 |
+| 控制、DSP、传感和通信 | 5%–9% | 与 EPMS/DCIM 数据接入绑定 |
+| 柜体与冷却 | 6%–10% | 占地/功率密度是客户核心指标 |
+| 组装、FAT、现场服务 | 9%–14% | 冗余切换、负载测试和服务网络形成切换成本 |
+| 物流、保修、其他 | 6%–11% | 项目地和响应 SLA 影响价格 |
+
+#### C. Busway / 白区配电 BOM
+
+| BOM 项 | 典型价值占比 | 价格/供应敏感度 |
+|---|---:|---|
+| 铜/铝导体 | 35%–50% | 最大材料敏感项；客户可选择铝以降成本但体积与接点设计不同 |
+| 柜体、绝缘和防护 | 12%–20% | 温升、爬电距离和阻燃认证决定可替代性 |
+| breaker、插接箱和触点 | 15%–25% | Emax/MCCB attach 可提高 ABB 份额 |
+| 计量、温度、通信 | 5%–12% | 智能化价值高于材料成本，软件附着可提高毛利 |
+| 组装、测试 | 8%–15% | 现场灵活性和质量追溯重要 |
+| 物流与安装 | 5%–10% | 长母线段和数据厅施工时序敏感 |
+
+#### D. 660kW 级 800V sidecar/power rack 的全行业 BOM
+
+该 BOM 是理解 ABB 可以争取哪一段价值，不是 ABB 当前收入表：
+
+| BOM 项 | 典型价值占比 | ABB 当前/潜在角色 |
+|---|---:|---|
+| AC/DC、SiC/GaN、磁性件 | 25%–36% | BrightLoop/Gamesa 提供技术邻接，但 rack power 主供应链仍以 Delta、Vertiv、Flex、Lite-On 等为主 |
+| BBU 与双向 DC/DC | 18%–32% | ABB 不占主导；其储能/功率电子能力可参与园区侧，不应高估机架份额 |
+| 800V bus、connector、protection | 10%–18% | **Infinitus/Emax/直流保护是 ABB 最直接机会** |
+| 电容 | 6%–12% | 供应链元件，ABB 无明显垄断 |
+| 控制、安全和通信 | 4%–8% | 可与 ABB 数字保护/自动化协同 |
+| 冷却与结构 | 5%–10% | ABB 非主导 |
+| 组装、认证、服务 | 10%–18% | 若 ABB 取得系统集成/FAT 权，内容量显著提高 |
+
+### 6.5 价格传导链
+
+```text
+铜/银/钢/功率半导体/真空灭弧室涨价
+   ↓
+供应商报价和交期变化
+   ↓
+ABB 缩短 quote validity + 材料/关税 escalator + 本地采购
+   ↓
+客户锁定设计、支付工程款/预付款或容量预留费
+   ↓
+FAT/设计变更形成 change order，取消须承担工程与排产损失
+   ↓
+数据中心开发商把电气包计入项目 CapEx
+   ↓
+hyperscaler/neocloud 通过租金、算力合同或云服务价格消化
+```
+
+行业常见的高急迫订单溢价约 **5%–20%**，但 ABB 没有披露统一 surcharge。对 AI 园区客户而言，延迟 1MW IT capacity 的机会成本通常远高于开关柜/UPS 采购价的最后 5%，所以通过缩短报价有效期、里程碑付款、材料调整条款、非退款工程费、capacity reservation 和 change order 传导成本，比单纯年度提价更现实。
+
+## 7. 当前及一年后产能、供应链采用与认证阶段
+
+### 7.1 采用阶段定义
+
+| 阶段 | 含义 |
+|---:|---|
+| 0 | 概念/论文 |
+| 1 | 样品和实验室验证 |
+| 2 | 客户 design-in、规格书/AVL 审核 |
+| 3 | pilot、首个商业项目或单一客户部署 |
+| 4 | 多批量产、多客户复制 |
+| 5 | 多区域规模化、成为客户标准架构 |
+
+### 7.2 当前可销售产能与认证
+
+| 业务 | 2026 年中可销售产能（M） | 采用阶段 | 已知标准/认证/项目阶段 | 产能瓶颈 |
+|---|---:|---:|---|---|
+| A. MV/LV 配电、保护、eHouse | **$1.6–2.0B/年** | 4–5 | MV 按 IEC 62271/地区标准；LV 按 IEC 61439/UL；Emax 3 为 IEC 62443-4-2 Security Level 2 设计认证；Applied Digital 等已商业采用 | 柜体/铜排、真空断路器、Relion/控制电子、保护工程、FAT 工位、熟练工 |
+| B. 关键电源 | **$0.5–0.7B/年** | 3–4 | HiPerGuard：IEC 62040-3 VI SS 111、4.16–24kV、商业项目；MegaFlex UL 面向北美；MNS-Up 按 IEC 61439/IEC 62040 | MV 功率模块、磁性件、储能接口、整机测试、现场服务认证 |
+| C. 白区配电/安装产品 | **$0.4–0.6B/年** | 4–5 | 成熟 UL/IEC 产品；Emax 3 已上市，网络安全认证为差异化 | 铜、breaker 产线、busway 工厂面积与本地交付 |
+| D. 同步调相机/飞轮/eHouse | **$0.2–0.35B/年** | 3–4 | 2025 三批、2026 新订单；首批现场投运是关键实绩里程碑 | 大型旋转件、飞轮、励磁、系统工程、eHouse 和项目 FAT |
+| E. 自动化/EPMS/DCIM/SaaS | **$0.1–0.2B/年** | 3–4 | System 800xA 工业实绩成熟；数据中心采用需按客户网络安全/控制规范验证；Sensorfact 处迁移扩张期 | 软件集成工程师、数据模型、网络安全审批而非硬件厂房 |
+| F. 800VDC/Infinitus | **<$0.05B/年** | 2–3 | Infinitus 按 IEC 60947-2、最高 1kV DC/2.5kA；与 NVIDIA 处 R&D/design-in，未披露 hyperscaler AVL 或规模订单 | DC arc 测试、选择性保护、connector/busway 协同、客户架构冻结与量产认证 |
+
+以上“产能”按可销售收入而非物理台数估算，依据当前收入、backlog、产品单价、工厂投资和同业利用率倒推；ABB 未披露数据中心专属产线，所以可信度中低。2025 年 ABB 拥有 160+ 工厂，CapEx $1.001B、R&D $1.318B、持续经营研发员工约 7,800 人，说明扩产资源充足，但设备、测试和人员不能瞬时扩张。
+
+### 7.3 一年后产能、采用与认证：三情景
+
+| 业务 | 情景 | 一年后可销售产能（M） | 采用阶段 | 预计认证/客户资格阶段 |
+|---|---|---:|---:|---|
+| A. MV/LV 配电、保护、eHouse | 基准 | **$2.0–2.5B/年** | 5 | 既有 IEC/UL 型式认证延续；新增客户完成 project FAT/AVL |
+|  | 乐观 | **$2.5–3.1B/年** | 5 | Selmer/Senatobia 新线获多 hyperscaler 批准，预制 eHouse 模块标准化 |
+|  | 极度乐观 | **$3.1–4.0B/年** | 5 | 多区域互认、FAT 自动化和外协扩产同时成功；不存在核心 breaker/relay 短缺 |
+| B. 关键电源 | 基准 | **$0.65–0.90B/年** | 4 | HiPerGuard 增加商业实绩和客户 AVL；不假设未公布的新标准认证 |
+|  | 乐观 | **$0.90–1.20B/年** | 4–5 | 多个 25MW block 完成 site acceptance，北美/欧洲模板复制 |
+|  | 极度乐观 | **$1.20–1.60B/年** | 5 | MV UPS 成为多家 AI 园区标准；服务能力和储能接口同步扩张 |
+| C. 白区配电/安装产品 | 基准 | **$0.55–0.75B/年** | 5 | 新厂 Q4 2026 后正常爬坡、既有 UL/IEC 延续 |
+|  | 乐观 | **$0.70–0.95B/年** | 5 | breaker 与 busway 产能按投资目标翻倍/提升 >50%，Emax 3 attach 上升 |
+|  | 极度乐观 | **$0.90–1.20B/年** | 5 | 客户统一规格、减少工程变体，良率和供应链无扰动 |
+| D. 同步调相机/飞轮/eHouse | 基准 | **$0.30–0.45B/年** | 4 | VoltaGrid 首批按期运行，形成项目 acceptance 记录 |
+|  | 乐观 | **$0.45–0.70B/年** | 4–5 | 复制到多个北美/全球电力项目，Specialtrasfo 进入统一交付 |
+|  | 极度乐观 | **$0.65–1.00B/年** | 5 | 设备平台化、多个 GW 园区同时开工；大型旋转件不成为瓶颈 |
+| E. 自动化/EPMS/DCIM/SaaS | 基准 | **$0.15–0.25B/年** | 4 | Sensorfact 迁移完成，System 800xA/EPMS 通过项目网安评审 |
+|  | 乐观 | **$0.22–0.35B/年** | 4–5 | 与 Electrification 形成标准数字包，更多客户控制写入资格 |
+|  | 极度乐观 | **$0.30–0.50B/年** | 5 | 多园区 SaaS 复制、数据模型标准化；不存在旧产品迁移流失 |
+| F. 800VDC/Infinitus | 基准 | **$0.08–0.15B/年** | 3 | 完成一到数个 pilot/site qualification，尚非行业标准 |
+|  | 乐观 | **$0.15–0.30B/年** | 3–4 | 进入至少一家 hyperscaler/OEM AVL，并随 2027 rack 量产 |
+|  | 极度乐观 | **$0.30–0.60B/年** | 4–5 | 成为多家 800V 参考架构的 breaker/bus-tie 选项；OCP/客户规格固化 |
+
+去除 A/C/F 重叠后，本报告估算数据中心相关综合可销售产能为：**当前 $2.5–3.2B/年；一年后基准 $3.3–4.2B、乐观 $4.2–5.3B、极度乐观 $5.5–7.0B。** 极度乐观不仅需要买设备，还需要培养工程师、扩大 FAT、获得客户 AVL、建立售后备件和现场服务，单靠 CapEx 公告不能证明。
+
+## 8. 基于真实订单积压和供给的未来一年业务增速
+
+### 8.1 可识别项目与交付窗口
+
+| 客户/项目 | ABB 供应内容 | 订单/规模证据 | 交付窗口 | 对未来 12 个月收入的含义 |
+|---|---|---|---|---|
+| Applied Digital Polaris Forge 1 | 低/中压架构、HiPerGuard、MV switchgear | 园区总规模 **400MW**；2025-06 宣布合作 | 分阶段建设 | 为 HiPerGuard/配电提供首批大规模商业实绩；ABB 金额未披露 |
+| Applied Digital Polaris Forge 2 | 同上，25MW 电力块 | **300MW**，两栋各 150MW；首 200MW 已租给美国 hyperscaler | 两栋计划 2026/2027 上线 | Q4 2025 订单、2026–2027 转收入；是 backlog 可见度的强验证，但不可一次性确认 |
+| Q4 2025 其他数据中心大单 | Electrification 多产品包 | 多个项目单笔 >$100M，合计约 **$600M** | 通常 9–24 个月 | 若 60%–80% 在未来 12 个月确认，可贡献约 $0.36–0.48B 收入；这是模型，不是公司指引 |
+| VoltaGrid 2025 三批 | 27 套同步调相机+飞轮、eHouse | 27 套；金额未披露 | 2025-12 起交付，首台计划 2026-04 投运 | 2026–2027 形成 Motion/Automation 与 Electrification 交叉收入 |
+| VoltaGrid 2026 新增 | 35 套及 eHouse，另含 MV/LV、励磁和自动化范围 | 2026 CERAWeek 签约；计入 **Q2 2026** 订单 | 未完整披露，预计跨 2026–2027 | **不在 Q1 2026 backlog 中**，为 Q2 订单的已知上行项；金额仍不可验证 |
+
+Polaris Forge 与 VoltaGrid 不能简单相加为“AI 专属 backlog”：一是合同金额未披露，二是 ABB 产品包可能跨分部，三是项目分期，四是数据中心客户最终上电取决于燃机、并网、土建、融资与租约。
+
+### 8.2 Backlog 转收入数学
+
+- Q1 2026 集团 backlog / TTM 收入 = `$27.515B / $34.57B ≈ 79.6%`，相当于约 9.6 个月历史收入。
+- Q1 2026 Electrification backlog / Q1 年化收入 = `$11.460B / ($4.613B×4) ≈ 62.1%`，相当于约 7.5 个月当前运行收入。
+- Electrification Q1 订单/收入 = `$6.647B / $4.613B ≈ 1.44`；集团为 1.29。即使订单环比降温，只要未来三个季度 B2B 仍接近或高于 1，backlog 很难快速耗尽。
+- Q4 2025 约 $600M 数据中心大单相当于 FY2025 Electrification 收入的约 3.5%，而且未包括 Q1 2026 三位数数据中心订单增长及 Q2 VoltaGrid 新单。
+- 相反，backlog 不是现金：项目延期会把收入右移，大型项目固定价格、工程变更和关税会改变毛利；Automation backlog 还包含多年海事/港口订单。
+
+### 8.3 未来一年增速情景
+
+| 指标 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| ABB 集团可比收入增速 | **+9%–11%** | **+12%–15%** | **+16%–20%** |
+| Electrification 收入增速 | **+15%–20%** | **+22%–30%** | **+35%–45%** |
+| AI/数据中心相关收入增速 | **+20%–30%** | **+45%–65%** | **+80%–120%** |
+| Motion 收入增速 | +7%–10% | +11%–15% | +16%–22% |
+| Automation 收入增速 | +7%–10% | +10%–14% | +14%–18% |
+| 数据中心延后/取消 | 3%–7% | 1%–3% | 0%–2% |
+| 数据中心综合产能 | $3.3–4.2B | $4.2–5.3B | $5.5–7.0B |
+| 价格/组合 | 0%–3% 正贡献 | 3%–7% | 7%–12% |
+
+**基准情景最有数据支持。** 它与 ABB 全年“高个位数至低双位数可比增长”一致，且只要求 Q1 backlog 正常交付、Q4 大单部分确认、扩产按计划爬坡。乐观情景需要 Q2/Q3 数据中心订单继续高增、Selmer/Senatobia 准时爬坡、关键 breaker/relay/铜排无缺口。极度乐观则要求客户并网、燃机、土建和租赁同时顺利，且 ABB 在 800V 和 MV UPS 的份额没有被 Vertiv/Eaton/Schneider 或 rack-power 厂商分走。
+
+### 8.4 什么会让 backlog 失真
+
+1. **项目融资与客户信用：** neocloud/开发商先签容量后再融资，融资延迟会变成 delivery reschedule，而非立刻取消。
+2. **并网与燃机审批：** ABB 自身设备可按期，但上游燃机、输电、变压器、环保许可延迟，整个 data hall 无法上电。
+3. **客户设计冻结：** 从 AC 2N 改为 MV UPS、800VDC 或不同 rack density，会触发重新工程和订单改签。
+4. **客户集中：** Q1 2025 一个 hyperscaler 的下单时点就足以使当季数据中心订单略降；大客户既能放大增长，也能造成季度噪声。
+5. **预付款不等于不可取消：** 预付款和非退款工程费降低取消意愿，却不能消除延迟；ABB 未披露数据中心订单的 customer advances 或 cancellation fee。
+6. **重复订单风险：** 同一园区可能在不同公告中出现设备框架、eHouse 和服务；只有 ABB 当季 bookings 才是集团口径，新闻项目 MW 不能等同于新增订单金额。
+
+## 9. 竞争格局、技术主流性、替代方案与客户切换成本
+
+### 9.1 分产品竞争格局
+
+| ABB 关键业务 | 主要对手 | ABB 优势 | ABB 弱项 | 竞争结论 |
+|---|---|---|---|---|
+| MV/LV switchgear、breaker、relay、eHouse | **Schneider Electric、Eaton、Siemens、Powell Industries、GE Vernova、Hitachi Energy、SEL** | MV+LV+UPS+保护+自动化一体，全球服务，本地工厂，Relion/Emax/MNS 品牌与 installed base | 已无广谱大型电力变压器；北美渠道与品牌心智常弱于 Eaton/Schneider；Powell 在定制 eHouse 项目很敏捷 | 前四家寡头化但非垄断；ABB 可凭整包和 time-to-power 获溢价，单纯开关柜价格竞争仍强 |
+| HiPerGuard/MegaFlex/MNS-Up | **Vertiv、Schneider Galaxy、Eaton、Piller、Mitsubishi Electric、Delta** | HiPerGuard 2.5MW MV 静态 UPS、25MW 并联，能与 MV gear/eHouse 内部打包；>98% 效率与较长维护周期 | Vertiv/Schneider/Eaton 的数据中心 installed base、渠道和服务更深；Piller 在旋转 UPS/飞轮有长期实绩 | HiPerGuard 有差异化但没有单一来源垄断；可靠性实绩和客户 AVL 是决定份额的核心 |
+| 母线、白区配电、安装产品 | **Eaton、Schneider、Legrand/Starline、nVent、Vertiv、Siemens** | 可把 breaker、计量和 upstream gear 打包；美国本地扩产 | rPDU、rack power 和 cable management 专注度不如 Legrand/nVent/Vertiv | 产品更标准化，份额取决于经销、交期、铜价和设计统一；溢价能力低于 MV UPS |
+| 同步调相机/飞轮/eHouse | **GE Vernova、Siemens Energy、Hitachi Energy、ANDRITZ、Piller** | ABB High Power 的大型电机/发电机、励磁、驱动和 eHouse 跨分部能力；VoltaGrid 多批订单 | 大型旋转设备产能有限；燃机 OEM/电网设备商可能把稳定设备捆绑 | 属于 AI 园区新需求中的高壁垒利基；ABB 不是唯一，但项目集成和投运实绩可形成先发 |
+| EPMS/DCIM/控制 | **Schneider EcoStruxure/ETAP、Siemens、Vertiv Environet、Eaton Brightlayer、Honeywell、Johnson Controls、Nlyte/Sunbird** | System 800xA 是工业级实时控制而非只读 dashboard；能直连 ABB 保护/开关/UPS | 纯 DCIM UX、ITSM/容量规划生态可能不及专业软件；旧 Energy Manager 生命周期切换增加迁移风险 | 硬件协议开放，dashboard 易替换；控制写回、报警逻辑和验证工程使切换成本升高 |
+| 800VDC/Infinitus | **Eaton、Schneider、Vertiv、Delta、Flex、Lite-On、Sensata/Littelfuse 及 hyperscaler 自研** | Infinitus 的 RB-IGCT、约 15µs、99.9% 效率和高耐久；Emax/Relion/系统保护经验 | ABB 并不主导 power shelf、BBU、VRM；客户可能把 DC protection 集成到 rack-power 平台 | 2026 尚未定局。ABB 在“园区到 800V bus”的机会优于“800V 到 GPU” |
+
+### 9.2 主要公司横向定位
+
+| 公司 | 数据中心电力栈位置 | 相对 ABB 的强项 | 相对 ABB 的弱项 |
+|---|---|---|---|
+| Schneider Electric | MV/LV、UPS、EcoStruxure、ETAP、液冷/数字栈、800V | 最完整 grid-to-chip 叙事，APC/UPS 与数据中心渠道强，软件模型完整 | 估值同样昂贵；大型项目和产品组合复杂度高 |
+| Eaton | 北美 MV/LV、breaker、busway、UPS、800V | 北美渠道/本地化、Electrical Americas 利润率和客户关系强 | 全球自动化/过程控制打包弱于 ABB |
+| Vertiv | UPS、power train、busway、thermal、prefab、800V rack power | 最纯的数据中心暴露，靠近机架，冷却与电力协同强 | 上游 MV、工业自动化、分散终端多样性弱于 ABB，周期集中度高 |
+| Siemens | MV switchgear、保护、楼控/工业自动化 | 工业软件、楼控、蓝色 GIS 与大型客户体系 | 关键 UPS/白区 power train 的完整性不如 Schneider/Vertiv/ABB |
+| Legrand / nVent | busway、rPDU、机柜、连接和线缆管理 | 白区/机柜颗粒度深、SKU 与渠道专注 | 缺少 ABB 的 MV/UPS/工业控制整包能力 |
+| GE Vernova / Hitachi Energy | 发电、并网、变压器、HV/MV、电网稳定 | upstream grid、发电和大型变压器；**这是 ABB 已退出的领域** | 数据厅 LV、白区产品和综合楼控不如 ABB 完整 |
+| Delta / Flex / Lite-On | PSU、power shelf、BBU、DC/DC、800V rack power | 最靠近 GPU，功率电子量产与成本能力强 | 园区 MV/LV、保护、eHouse 和全球现场服务弱 |
+| Powell / SEL | 定制 switchgear/eHouse；保护继电器 | 产品专注、北美项目响应快、保护口碑强 | 缺少全栈 UPS、Motion、自动化和全球交付 |
+
+### 9.3 新技术会不会成为未来主流
+
+| 技术 | 主流性判断 | 时间 | 替代方案 | ABB 的赢面 |
+|---|---|---|---|---|
+| **1MW 级机柜的 800VDC** | **高概率成为新建超高密度 AI 集群的重要主流，但不会快速替代所有 AC 数据中心。** 54V 在 >200kW/rack 时铜和电流压力过大，800V 可减少转换级和导体；brownfield、推理和普通云仍会长期保留 AC | 2026 design-in；2027 起生产；2028 后视 hyperscaler 标准放量 | ±400VDC、传统 415/480VAC+PSU、HVDC 其他电压 | 中高。ABB 在保护/母线/上游配电有技术，但 rack power 价值更多由 Delta/Vertiv/Flex 等掌握。[NVIDIA 800VDC](https://developer.nvidia.com/blog/?p=100571) |
+| **MV UPS / 25MW power block** | 大型 AI 园区有望快速提高渗透，尤其空间、效率和模块规模重要的项目；并非所有客户都会放弃成熟 LV 2N | 已商业化，2026–2027 是实绩复制期 | LV UPS、旋转 UPS、燃机+BBU、无 UPS 架构 | 高。HiPerGuard 是 ABB 最清晰的技术差异化之一，但需更多公开 site acceptance 和运行记录 |
+| **同步调相机+飞轮** | 弱网、岛式燃机和低短路比园区的重要利基，不会成为每个数据中心标配 | 已交付，2026–2027 扩大 | grid-forming BESS、STATCOM、燃机控制、旋转 UPS | 中高。ABB 有旋转机、励磁、控制和 eHouse；项目条件依赖强，市场上限低于 switchgear/UPS |
+| **数字 breaker/IEC 61850/EPMS** | 已是关键基础设施的长期主流，网络安全和远程运维要求只会加强 | 当前 | 不同品牌 breaker/relay、开放协议集成 | 高。Emax 3 SL2、Relion、MNS Digital 形成硬件数据闭环；开放协议也意味着客户可多供应商 |
+| **SST 固态变压器** | 中长期可减少级联、提供双向和高频控制；短期仍受成本、效率、故障保护和认证约束，不应纳入 ABB 一年收入主线 | pilot/示范；规模化晚于 800V bus | 工频变压器+整流器、MV UPS | 中低/期权。ABB 有功率电子和 MV 经验，但没有披露数据中心 SST 大单或量产认证 |
+
+项目内技术栈锚点：[机柜级供电与服务器电源架构](../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md)、[中压直流、800VDC 与固态变压器](../../行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-07-10.md)。
+
+### 9.4 客户替换成本
+
+| 产品层 | 替换成本 | 为什么 |
+|---|---|---|
+| MV switchgear、保护、eHouse | **高：4.5/5** | 需重做单线图、保护配合、arc-flash、短路等级、型式试验、FAT、备件和现场培训；更换可导致并网与上电延期 |
+| HiPerGuard/MegaFlex | **很高：5/5** | UPS 属于可靠性核心，客户要验证故障模式、旁路、储能、冗余、site acceptance 和维护 SLA；一旦进入参考设计难替换 |
+| Emax/Relion 数字保护 | **高：4/5** | 物理上可替代，但 trip unit、通信、参数、选择性保护和网安审批要重做；installed base 形成备件/工具粘性 |
+| Busway/安装产品 | **中：3/5** | 设计冻结后机械尺寸、插接箱和额定值形成锁定；早期设计阶段替代较容易 |
+| 同步调相机/eHouse | **很高：5/5** | 高度定制、土建/控制/短路模型耦合，项目开工后几乎不能无代价替换 |
+| EPMS/DCIM | **中到高：3.5/5** | 只读 dashboard 可替换；若写入控制、报警、联锁、历史数据和合规流程，迁移成本显著增加 |
+| 800VDC 保护 | **设计前 2/5；量产后 4.5/5** | 当前架构尚未冻结、竞争开放；一旦进入 rack/OEM qualification 和保护协调，重新认证代价大 |
+
+### 9.5 关键风险与替代路径
+
+1. **估值风险：** 约 37.9x TTM PE、5.43x PS 对工业公司并不便宜。即使业务健康，订单增速从三位数回落到正常双位数，也可能压缩倍数。
+2. **披露风险：** ABB 不披露季度 AI/data-center 收入、单品订单、取消率、交期和产能；12% 的 2024 Electrification 收入是目前最可靠锚点。本报告区间不能替代分部披露。
+3. **大单波动与客户集中：** Q1 2025 单个 hyperscaler 下单时点已影响当季增速；Q4 2025 $600M 大单也抬高未来同比基数。
+4. **AI 园区项目延迟：** 土地、电网、燃机、天然气管线、环保许可、融资和最终租约任一环节延迟，都会使 ABB 收入右移。
+5. **产品架构替代：** 800VDC 减少 AC/LV 转换级，可能削弱传统 LV UPS/gear 内容量；价值会向 rack power、BBU 和 DC/DC 厂商迁移。ABB 必须以 Infinitus、MV 架构和控制层补回。
+6. **竞争与双供：** hyperscaler 通常要求多供应商，Eaton、Schneider、Vertiv、Siemens 均在扩产；“供不应求”会吸引客户标准化和第二来源，长期压低溢价。
+7. **原材料/关税：** 铜、银、钢、功率半导体和美国关税会侵蚀固定价 backlog；价格条款只能部分对冲，且会有一个季度以上滞后。
+8. **产能质量风险：** 新厂爬坡不仅是面积，FAT、质量追溯、工程变体和现场调试都需人；过快外协可能造成保修和停机成本。
+9. **产品生命周期/软件迁移：** 旧 ABB Ability Energy and Asset Manager 已在中国以外停止销售；若 Sensorfact/800xA 迁移不顺，可能给 Schneider/Vertiv/专业 DCIM 厂商机会。
+10. **组合与资本配置：** Robotics 出售后现金充足，但过高价并购或高价回购会削弱 ROCE；交易交割、税费与监管仍有尾部风险。
+11. **业务边界误判：** ABB 已不拥有原 Power Grids 的广谱大型变压器业务。若投资逻辑主要是“AI 电网变压器短缺”，Hitachi Energy、GE Vernova、Siemens Energy 等是更直接受益者。
+12. **OTC ADR 风险：** ABBNY 在 OTC Markets 交易，成交深度、价差和第三方数据更新可能不如主板；ABB 2024 年结束美国 SEC 定期报告义务后，投资者需要依赖瑞士/ABB 全球披露。
+
+## 10. 投资结论、催化剂与验证清单
+
+### 10.1 结论
+
+ABB 的 AI 逻辑可以成立，但正确表述不是“ABB 是 AI 芯片公司”，而是：
+
+> **ABB 是供电成为 AI 算力瓶颈后的高质量电气化平台。它以 MV/LV 配电和保护获得基础收入，以 HiPerGuard/eHouse 抢高价值电力块，以同步调相机切入离网/弱网园区，以 Infinitus 押注 800VDC 保护，并用 Automation/EPMS 提高整包切换成本。**
+
+当前最可验证的经营链条为：
+
+```text
+Q4 2025 数据中心大单约 $600M
+   + Q1 2026 Electrification 订单 +51%、数据中心三位数增长
+   + Q1 Electrification backlog $11.46B、+40%
+   + Applied Digital/VoltaGrid 项目名和交付期
+   + 美国/欧洲/印度扩产
+   ↓
+未来 12 个月数据中心相关收入基准 +20%–30%
+   ↓
+Electrification +15%–20%，集团可比收入 +9%–11%
+```
+
+这一链条比“800V 概念”更可靠。800V/Infinitus 是 2027+ 的期权，HiPerGuard 和 eHouse 才是 2026–2027 更近的利润弹性。资产负债表和现金流为扩产提供充分安全垫；最大风险不是公司会不会活下来，而是当前估值是否已提前反映大部分好消息。
+
+### 10.2 未来四个季度必须跟踪的数字
+
+| 观察项 | 看多阈值 | 预警阈值 | 原因 |
+|---|---:|---:|---|
+| Electrification B2B | 连续 >1.10 | <0.95 | 判断 2027 backlog 是否继续增长 |
+| Electrification backlog 增速 | >20% | <10% 或环比下降 | 数据中心大单转收入后是否有新订单补位 |
+| 数据中心订单表述 | 继续双位数/披露新大单 | 订单下降且只归因高基数 | 验证 AI 电力二阶需求 |
+| Electrification Op. EBITA margin | 23%–25% | <22% | 判断材料、扩产和项目组合是否侵蚀盈利 |
+| 数据中心项目收入模型 | 年化 >$3.0B | < $2.5B | 决定 AI 对集团增速的真实贡献 |
+| Q2/Q3 2026 VoltaGrid/Applied Digital 交付 | site acceptance 与重复订单 | 明显延期/客户改设计 | 验证 HiPerGuard、同步调相机商业实绩 |
+| Selmer/Senatobia | Q4 2026 按期投产、>50%/翻倍目标维持 | 延期两个季度以上 | 判断供给能否满足 backlog |
+| 800VDC | 披露客户 AVL、pilot 数、量产时间 | 只有生态合作、无资格/订单 | 区分收入期权与宣传 |
+| 工作资本/现金 | trade NWC ≤14%；FCF 转化稳 | 库存/应收快速上升 | 识别订单质量和客户延期 |
+| 净债务/EBITDA | <1x | >1.5x 且源于高价并购 | 判断 Robotics 现金的资本配置 |
+
+### 10.3 2026-07-16 Q2 财报的即时核对清单
+
+本报告发布日早于 Q2 财报四天。Q2 结果出来后，最有信息量的不是 EPS 是否小幅超预期，而是：
+
+1. Q2 VoltaGrid 35 套订单对 Motion/Electrification bookings 的影响是否可见。
+2. Electrification 数据中心订单是在 Q1 低基数三位数后维持高位，还是明显均值回归。
+3. Q4 2025 约 $600M 大单开始确认收入的速度，以及客户项目交付是否延期。
+4. 剔除房地产收益后的 margin 是否仍同比上升；Q1 衍生品毛利影响是否反转。
+5. Selmer Q4 2026 投产、欧洲 $200M 扩产和美国本地化 >90% 目标有无延期。
+6. 800V/NVIDIA 合作是否从“共同开发”升级到 customer qualification、pilot 或可量化订单。
+7. Robotics 交易交割时间和净现金用途是否改变。
+
+## 11. 数据来源与模型审计
+
+### 11.1 ABB 官方与合作方核心来源
+
+1. [ABB quarterly results 总入口](https://global.abb/group/en/investors/quarterly-results)
+2. [ABB Q1 2026 results](https://www.abb.com/global/en/news/135137/q1-2026-results)；[Q1 2026 Interim Report PDF](https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=9AKK108472A5716&DocumentPartId=&LanguageCode=en)
+3. [ABB Q2 2025 Interim Report PDF](https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=9AKK108471A4546&DocumentPartId=&LanguageCode=en)
+4. [ABB Q1 2025 Interim Report PDF](https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=9AKK108471A0338&DocumentPartId=&LanguageCode=en)
+5. [ABB 2025 CMD — Electrification](https://global.abb/content/dam/abb/global/group/investors/documents/ir-events/2025/cmd-2025/ABB_CMD_2025_Electrification_Presentation%20.pdf)
+6. [ABB acquisition and disposal overview](https://global.abb/group/en/investors/overview/acquisitions-and-disposals)
+7. [Robotics 出售给 SoftBank](https://www.abb.com/global/en/news/129685/abb-to-divest-robotics-division-to-softbank-group)
+8. [Applied Digital 第二个 AI 数据中心项目](https://resources.news.e.abb.com/attachments/published/130940/en-US/2A3A4FFBCDD9/131125_ABB_expands_power_technology_partnership_with_Applied_Digital_for_AI-ready_data_centers_EN.pdf)
+9. [ABB 与 VoltaGrid 扩大合作](https://www.abb.com/global/en/news/134418/abb-and-voltagrid-extend-collaboration-on-data-center-power-infrastructure)
+10. [HiPerGuard technical brochure](https://search.abb.com/library/Download.aspx?Action=Launch&DocumentID=2UCD301143-P&DocumentPartId=&LanguageCode=en)
+11. [MNS-Up technical brochure](https://library.e.abb.com/public/bca9d58f9a144eed9e3fc23ce9bcc7f9/MNS-Up_broch_1TPMC02101_ENc.pdf)
+12. [SACE Emax 3](https://electrification.us.abb.com/products/circuit-breakers/sace-emax-3)
+13. [SACE Infinitus 技术摘要](https://www.abb.com/global/en/company/innovation/news/selected-innovations-in-brief)
+14. [ABB 与 NVIDIA 800VDC 合作](https://resources.news.e.abb.com/attachments/published/129805/en-US/D1659BBF0D16/20251013_ABB_to_develop_next-generation_AI_data_centers_with_NVIDIA_EN.pdf)；[NVIDIA 800VDC 技术说明](https://developer.nvidia.com/blog/?p=100571)
+15. [美国 $120M 扩产](https://resources.news.e.abb.com/attachments/published/123896/en-US/B3EBECC58E8F/20250302_ABB_to_invest_120_million_to_expand_US_manufacturing_EN.pdf)；[欧洲 $200M 扩产](https://www.abb.com/global/en/news/135595/abb-invests-200-million-across-europe-to-accelerate-grid-transformation)；[印度 $75M 扩产](https://resources.news.e.abb.com/attachments/published/133972/en-US/5FB77CB153CD/20260309_ABB_invests_75_million_in_India_to_expand_manufacturing_and_RD_for_critical_segments_EN.pdf)
+16. [Electrification 生命周期公告](https://www.abb.com/global/en/areas/electrification/services/life-cycle-management/lcm-update)
+
+### 11.2 项目内行业研究锚点
+
+1. [数据中心开关设备与变压器](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-07-10.md)
+2. [数据中心低压配电、PDU 与母线槽](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-07-10.md)
+3. [数据中心 UPS 与电池储能](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-07-10.md)
+4. [中压直流、800VDC 与固态变压器](../../行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-07-10.md)
+5. [机柜级供电与服务器电源架构](../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md)
+6. [DCIM、能控与 AI 工厂数字孪生](../../行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-07-10.md)
+7. [AI 数据中心建设规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+8. [APEC 2026 会议研究](../../行业调研/产业背景/顶级会议信息/conference_update_apec_2026_2026-06-10.md)
+9. [Data Center World 2026 会议研究](../../行业调研/产业背景/顶级会议信息/data_center_world_2026_research_report.md)
+10. [OCP EMEA Summit 2026 高密度研究](../../行业调研/产业背景/顶级会议信息/OCP_EMEA_Summit_2026_高密度调研报告.md)
+
+### 11.3 模型可复核公式与局限
+
+| 模型项 | 公式/方法 | 最大局限 |
+|---|---|---|
+| 2024 数据中心收入 | 2024 Electrification 收入 × 12% ≈ $1.85B | 该 12% 是 data center，不区分 AI/传统云 |
+| 2026 年中数据中心年化收入 | 2024 锚点 × 订单/收入转化 + Motion/Automation 直接项目 | ABB 不披露客户/产品拆分，区间可信度中等 |
+| 单品收入 | 分部收入 × 数据中心占比 × 产品包价值占比，再以可识别订单交叉验证 | 产品包重叠和跨分部抵销 |
+| 产品毛利率 | 分部毛利率 + BOM 材料/软件/服务结构 + 同业区间 | 不等于 operational EBITA；缺少 ABB 产品级披露 |
+| 产能（美元计） | 当前收入 ÷ 估计利用率 + 已公告扩产爬坡 | 工厂非数据中心专属，FAT/人工难以货币化 |
+| 未来收入 | backlog 可转化部分 + 新 bookings × 交付率 − 延后/取消 + 价格/组合 | 客户融资、并网与设计变更是最大外生变量 |
+| 每 GPU/光口内容量 | $/MW ÷ 507，基于 142kW/72 GPU rack | 仅成本分摊，非直接器件 BOM；实际拓扑差异大 |
+
+**最终置信度：** 财务与集团订单 **高**；分部收入与已知项目 **高**；数据中心总收入 **中**；单品收入/毛利/产能 **中低**；800VDC 一年后收入与极度乐观情景 **低**。这些置信度本身应进入仓位和估值折扣，而不是被一个点估值掩盖。
+

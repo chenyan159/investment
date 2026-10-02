@@ -1,0 +1,98 @@
+{
+  "plans": [
+    {
+      "id": "industry",
+      "currentPlan": "D:\\investment\\基本面\\行业调研\\研究方案\\研究方案_20260918_022108.md",
+      "planVersion": "20260918_022108",
+      "sha256": "58bac6f4ae7ac60a787c149c21c7b9569d35a8753270bfb23351ff6fa368fda2",
+      "inputResearchRoot": "D:\\investment\\基本面\\行业调研\\产业背景",
+      "index": "D:\\investment\\基本面\\行业调研\\行业索引.md",
+      "outputContract": {
+        "projectRoot": "D:\\investment",
+        "runDate": "2026-09-18",
+        "expectedOutputFile": "基本面/行业调研/结果/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-09-18.md",
+        "expectedOutputDir": "基本面/行业调研/结果/AI园区电力_机电_冷却"
+      },
+      "promptChars": 4040
+    },
+    {
+      "id": "background-1",
+      "currentPlan": "D:\\investment\\基本面\\行业调研\\横向专题\\AI产业链全局图谱与口径字典\\研究方案\\研究方案_20260918_022108.md",
+      "planVersion": "20260918_022108",
+      "sha256": "eff77c5c80adb9b5a4aee53e1bbda793010eaf338336e5ab96a184dcf3f9f5f8",
+      "inputResearchRoot": "无本地研究资料输入，仅外部资料",
+      "index": null,
+      "outputContract": {
+        "projectRoot": "D:\\investment",
+        "runDate": "2026-09-18",
+        "expectedOutputFile": "",
+        "expectedOutputDir": "基本面/行业调研/产业背景"
+      },
+      "promptChars": 8768
+    },
+    {
+      "id": "background-2",
+      "currentPlan": "D:\\investment\\基本面\\行业调研\\横向专题\\AI产业链瓶颈与反证指标总表\\研究方案\\研究方案_20260918_022108.md",
+      "planVersion": "20260918_022108",
+      "sha256": "9db724448e4d4b2e2e82e7f318c05bbeaf22f07cb6464510fd2ee88d8ed88888",
+      "inputResearchRoot": "无本地研究资料输入，仅外部资料",
+      "index": null,
+      "outputContract": {
+        "projectRoot": "D:\\investment",
+        "runDate": "2026-09-18",
+        "expectedOutputFile": "",
+        "expectedOutputDir": "基本面/行业调研/产业背景"
+      },
+      "promptChars": 8117
+    },
+    {
+      "id": "background-3",
+      "currentPlan": "D:\\investment\\基本面\\行业调研\\横向专题\\全球AI需求与Token经济框架\\研究方案\\研究方案_20260918_022108.md",
+      "planVersion": "20260918_022108",
+      "sha256": "6c46e8d25b8d909097a14362eeddf0b3d69109a11b4e46a7a6d171c3ee31444b",
+      "inputResearchRoot": "无本地研究资料输入，仅外部资料",
+      "index": null,
+      "outputContract": {
+        "projectRoot": "D:\\investment",
+        "runDate": "2026-09-18",
+        "expectedOutputFile": "",
+        "expectedOutputDir": "基本面/行业调研/产业背景"
+      },
+      "promptChars": 12260
+    },
+    {
+      "id": "background-4",
+      "currentPlan": "D:\\investment\\基本面\\行业调研\\横向专题\\数据中心建设规模\\研究方案\\研究方案_20260918_022108.md",
+      "planVersion": "20260918_022108",
+      "sha256": "55a2cc1d0896121ca323fd6b77df6d28dfbf020fc5e7b7e7ed2e2a95d50733ef",
+      "inputResearchRoot": "无本地研究资料输入，仅外部资料",
+      "index": null,
+      "outputContract": {
+        "projectRoot": "D:\\investment",
+        "runDate": "2026-09-18",
+        "expectedOutputFile": "",
+        "expectedOutputDir": "基本面/行业调研/产业背景"
+      },
+      "promptChars": 17987
+    },
+    {
+      "id": "background-5",
+      "currentPlan": "D:\\investment\\基本面\\行业调研\\横向专题\\头部AI芯片\\研究方案\\研究方案_20260918_022109.md",
+      "planVersion": "20260918_022109",
+      "sha256": "279979d35c40b94581712efba9b7f693a1bf3ad849d1da1451ab41bb7b118400",
+      "inputResearchRoot": "无本地研究资料输入，仅外部资料",
+      "index": null,
+      "outputContract": {
+        "projectRoot": "D:\\investment",
+        "runDate": "2026-09-18",
+        "expectedOutputFile": "",
+        "expectedOutputDir": "基本面/行业调研/产业背景"
+      },
+      "promptChars": 7293
+    }
+  ],
+  "oldBindingsPreserved": 6,
+  "registeredPlans": 11,
+  "formalQueuesUnchanged": true,
+  "actualResearchExecuted": false
+}

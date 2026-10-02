@@ -1,0 +1,153 @@
+# 公司收入传导与价值传导评估：Digital Realty（DLR）
+
+> 报告日期：2026-06-12  
+> NTM 主口径：2026Q2-2027Q1。  
+> 经营数据日期：公司财务与经营主锚为 2026Q1 10-Q、2026Q1 earnings release、2026Q1 earnings call / supplement 转述；行业数据主锚为 2026-06-11 项目内行业稿、CBRE/JLL 2025-2026 数据中心报告、LBNL/DOE 数据中心用电报告。  
+> 范围声明：本报告只做公司经营收入、利润和现金流传导评估；不做全公司排序，不做市场层面判断；经营证据仅来自财务、订单、产能、客户、成本和执行资料。未使用下游量化验证、Signals、结构化评分、回归或模型比较内容。  
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM（2026Q2-2027Q1）经营传导；FY2026 指引、FY2027 run-rate、1.2GW 开发管线、Atlanta/Portland/Malaysia 等长期容量只作补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：2026Q1 total operating revenue 为 16.35 亿美元，YoY +16.2%；2026 年收入指引为 66.5-67.5 亿美元，Adjusted EBITDA 指引为 36.5-37.5 亿美元，Core FFO/share 指引为 8.00-8.10 美元。Q1 年化收入 run-rate 约 65.4 亿美元，接近 FY2026 指引低端；NTM 基准收入需靠 scheduled backlog commencements、续租 spread、0-1MW/IX 订单和非稳定资产爬坡把 Q1 run-rate 推高到约 68.5-69.5 亿美元。
+- 重要产品/业务线：`>1MW hyperscale / AI campus leasing`、`0-1MW high-density colocation`、`Interconnection / ServiceFabric`、`存量租约续租与租户报销`、`开发管线 / U.S. Hyperscale Fund / JV 资本平台`。
+- NTM 公司收入四情景：悲观 65.5-67.5 亿美元；基准 68.5-69.5 亿美元；乐观 70.5-72.5 亿美元；极度乐观 73.5-76.5 亿美元。基准相对当前预期为正常兑现；乐观需要 0-1MW+IX 继续创新高且部分 signed-but-not-commenced leases 提前开通；极度乐观在证据校准后下移为低可信 NTM 上限。
+- 利润或 EBITDA 四情景：悲观 Adj. EBITDA 35.5-36.5 亿美元；基准 37.5-38.5 亿美元；乐观 39.5-41.0 亿美元；极度乐观 42.0-44.5 亿美元。利润传导质量高于普通地产 REIT，但低于软件/芯片平台；高毛利来自互联、0-1MW 高密度和高利用率，低毛利/弱现金流来自租户报销、电力成本、开发 capex 和 JV 分成。
+- 最大传导瓶颈：signed backlog 到 revenue commencement 的时间。2026Q1 新签租约 weighted-average lag 为 19 个月，Q1 record bookings 不能直接年化进 NTM 收入。
+- 最大利润率变量：>1MW 大客户租金/kW/月、开发成本/MW、utility pass-through 占比、G&A/IT 成本、JV/基金结构下 DLR share 与 100% share 的差异。
+- 最大现金流变量：1.2GW under construction、165 亿美元 gross investment、61% pre-leased 的开发资金节奏。Q1 operating cash flow 约 5.32 亿美元，但 real estate improvements 约 8.70 亿美元，开发扩张使自由现金流在增长期仍高度依赖债务、权益、资产处置和 JV 资本。
+- 可信度：基准为中高；乐观为中；悲观为中；极度乐观为低。DLR 的需求证据强，收入确认证据中高，利润率和现金流证据中等，极度乐观受通电、施工、客户议价和资本结构约束。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| >1MW hyperscale / AI campus leasing | 已开通收入未单独披露；2026Q1 DLR share >1MW bookings 为 3.245 亿美元年化 GAAP 租金，149.3MW；DLR share backlog 10 亿美元 | 无法可靠量化；新签订单占 Q1 DLR share bookings 约 76.8% | 公司 NTM 与 2027 收入弹性核心；AI/cloud 大客户主要入口 | B | 只把 signed backlog 和可见 commencement 纳入基准；Q1 大单大多不直接进 NTM | Atlanta/Portland/Charlotte 1GW+ campus 快速预租 |
+| 0-1MW high-density colocation | 已开通收入未单独披露；2026Q1 bookings 7,895 万美元年化租金，26.6MW，约 247 美元/kW/月 | 无法可靠量化；Q1 订单为高价值增量 | 企业私有 AI、推理、HPC、混合云和高密度托管入口，单位租金高 | B | 已签订单、正常交付和续约可进入基准；Private AI channel 仅小比例进入乐观 | Lenovo/ePlus 私有 AI pod 成为标准化企业交付渠道 |
+| Interconnection / ServiceFabric | 独立收入未披露；2026Q1 interconnection bookings 1,861 万美元年化租金 | 小体量；利润质量高 | 增强客户黏性、cross-connect、cloud/network on-ramp、AI 数据重力 | B | 现有互联业务和签约进入基准；ServiceFabric 增量保守处理 | AI exchange、私有模型/数据网络、ServiceFabric Connect 放量 |
+| 存量租约续租与租户报销 | 2026Q1 rental and other services revenue 16.00 亿美元；Q1 renewals 1.93 亿美元，现金租金 +5.0%、GAAP +6.3% | 公司收入主体 | 支撑基准收入和现金流；其中 utility reimbursement 是收入但利润质量较低 | A | 进入基准主口径；按 FY2026 指引、Q1 run-rate 和 renewal spread 处理 | 电力成本、租户报销和区域汇率带来的收入表观增长 |
+| 开发管线 / U.S. Hyperscale Fund / JV 资本平台 | 非独立收入线；2026Q1 under construction 1.2GW，gross investment 165 亿美元，61% pre-leased，expected stabilized yield 11.4% | 不直接加总；通过未来租金和 DLR share 体现 | 把外部 AI 需求变成可交付 capacity 的关键；同时决定杠杆和 FCF | B/C | 只有 signed leases / scheduled commencements 进入基准；土地储备和早期项目不进 NTM 基准 | Atlanta 873 acres >1GW、Portland 160MW、Malaysia 32MW、更多 LP 资本 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池和客户采购节奏，不评估 DLR 份额、收入确认和利润率。需求单位优先使用 MW、年化租金需求、pre-lease、renewal spread 和互联 bookings；行业 capex、TAM、客户总预算仅用于判断外部需求强弱，不能直接变成 DLR 收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| >1MW hyperscale / AI campus leasing | 2026Q1 DLR 100% share new leasing 312.8MW、DLR share 176.0MW；行业侧 2026 美国 AI IT-load equivalent 务实约 6.0-8.5GW，实际 energized 滞后 | 新签和预租需求回落到 2025 年单季常态，客户把 100MW+ 项目推后，NTM DLR 可观察大单少于 1 个 | 大客户 AI/cloud 需求维持强，第三方 pre-lease 和 build-to-suit 持续；NTM 仍有数百 MW 级外部租赁需求 | 重复出现 100MW+ AI lease，客户为 time-to-power 支付溢价，pre-lease 继续高于 60% | 多个 100MW+ 客户同时抢占 Atlanta/Portland/Charlotte 等未来容量，新增预算从 hyperscaler、AI lab、NeoCloud 长约与预付款共同来 | 从低于当前 record run-rate 到新增 300MW+ 单季租赁可能性 | 基准符合当前预期；乐观高于当前预期；极度乐观只代表需求上限 | CBRE/JLL 显示低 vacancy、高预租和 >35GW 北美在建；反证是电力并网、变压器、MEP、客户 capex 下修 |
+| 0-1MW high-density colocation | 2026Q1 0-1MW bookings 7,895 万美元、26.6MW、247 美元/kW/月；0-1MW+IX 约 9,756 万美元，YoY 约 +42% | 企业 AI 从试点转生产慢，单季 bookings 回落到 5,000-7,000 万美元区间 | 企业私有 AI、推理、HPC 和 hybrid cloud 正常放量，单季 0-1MW 需求接近 Q1/Q4 记录水平 | 私有 AI pod 标准化，金融、医疗、制造和公共部门需求增多，单季 bookings 稳定高于 9,000 万美元 | 企业私有 AI 从 pilot 进入批量部署，多个行业客户需要 1-5MW 高密度组合，单季需求非线性上修 | 单季年化租金需求从 -2,000 万美元到 +3,000 万美元以上 | 基准符合当前记录附近；乐观需要公司特定渠道证据 | DLR 与 Lenovo/ePlus 的 private AI 方案提供 funnel，但当前未披露量化客户；无客户时间表不能进基准 |
+| Interconnection / ServiceFabric | 2026Q1 IX bookings 1,861 万美元；全球 300+ data centers、55+ metros、5,000+ customers 的互联平台 | 客户只租电力和机房，不增加跨云/数据连接，IX bookings 低于 1,500 万美元/季 | Cross-connect、cloud on-ramp 和网络服务随 colo 增长，IX bookings 1,800-2,200 万美元/季 | AI 推理、数据重力和多云架构提高 attach，IX bookings 2,200-3,000 万美元/季 | AI 数据交换、私有模型访问和云网络互联成为标准配置，IX bookings 3,500 万美元/季以上 | 季度年化 bookings 变化约 -400 万到 +1,500 万美元以上 | 基准小幅增长；乐观高于当前 attach | 互联是高毛利小基数；反证是大客户选择自建私网或只租单一 campus |
+| 存量租约续租与租户报销 | 2026Q1 renewals 1.93 亿美元；现金 rental rate +5.0%、GAAP +6.3%；Northern Virginia 占 annualized rent 20.0% | 续租 spread 降到 0-3%，客户议价增强，utility 成本不能顺利转嫁或转嫁只增收入不增利润 | 续租 spread 维持中个位数，churn 低，utility reimbursement 随用电和价格正常波动 | 供给紧张推高 renewal spread 至 7-10%，客户愿意为稀缺 power 和互联节点支付溢价 | 核心 metro 空置接近零，续租 spread 超过 10%，客户为避免迁移风险锁长期容量 | 年化续租租金从低于当前约 1.5 亿美元/季到高于 2.2 亿美元/季 | 基准符合当前预期；乐观需要连续续租 spread 上修 | 低 vacancy 支撑续租；反证是大客户自建、同业低价抢单、电力成本和税费压力 |
+| 开发管线 / JV 资本平台 | 1.2GW under construction、61% pre-leased、165 亿美元 gross investment、11.4% expected stabilized yield | 电力/MEP/许可延迟，pre-leased 比例降至 55-60%，新 LP 资本慢，commencement 推迟 | 1.2-1.5GW 在建和 60-70% pre-leased 维持，fund/JV 支持 DLR share 稳定兑现 | 在建提升至 1.5-2.0GW，pre-leased 65-75%，至少一个大 campus 加速 | 2GW+ under construction 且 70%+ pre-leased，多个 GW 级项目获得客户、电力和资本同步确认 | 在建容量从不增到 +800MW 以上 | 基准为当前预期；乐观/极度乐观偏向 2027 后 | 管线是需求转收入的产能池；反证是 19 个月 lag、capex/MW 超支、JV 稀释 DLR share |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断外部需求能否进入 DLR 的 NTM 收入表，以及可收入化基数来自哪里；不预测增长，不判断利润率。DLR 能参与 AI 数据中心 demand pool，不等于 NTM 可以确认收入。`100% share` 与 `DLR share` 必须区分；新签 annualized GAAP rent 是未来开通后的年化租金能力，不是当期收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| >1MW hyperscale / AI campus leasing | 产品收入未单独披露；2026Q1 >1MW DLR share bookings 3.245 亿美元年化租金；DLR share backlog 10 亿美元，其中 2026 scheduled commencements 约 5.44 亿美元年化租金 | 直接 | 长约、低流失、单位租金低于 0-1MW；开发 yield 和客户议价决定利润质量 | 只承认 2026 scheduled backlog 中确定性最高部分，NTM 增量约 1.5-2.5 亿美元 | scheduled commencements 大体按期，NTM 增量约 3.0-4.5 亿美元 | 部分项目提前开通、Q1 record 后续订单较快转 commencement，NTM 增量约 5.0-7.0 亿美元 | 多个大单提前，NTM 增量约 8.0-10.5 亿美元，但低可信 | 基准符合指引和 current run-rate；乐观高于预期 | B | 是，限 signed / scheduled 部分 | backlog、commencement schedule、Q1 >1MW bookings、开发管线 | 进入基准，但 Q1 record bookings 不直接年化；极度乐观只作上限 |
+| 0-1MW high-density colocation | 产品收入未单独披露；2026Q1 0-1MW bookings 7,895 万美元年化，26.6MW | 直接 | 单位租金高、客户更分散、互联 attach 强；项目小但 margin 质量好 | NTM 增量 0.5-0.8 亿美元 | NTM 增量 1.0-1.8 亿美元 | NTM 增量 2.0-3.2 亿美元 | NTM 增量 3.5-5.0 亿美元，需要私有 AI 标准化和多行业客户 | 基准略高于旧 run-rate，但由 Q1/Q4 记录支撑 | B | 是 | 已披露 bookings、0-1MW+IX record、客户多元化 | 进入基准；Private AI channel 未量化部分只进乐观/跟踪 |
+| Interconnection / ServiceFabric | 独立收入未披露；2026Q1 interconnection bookings 1,861 万美元年化 | 直接 + 间接 | 高毛利、小体量、增强续租和客户黏性 | NTM 增量 0.1-0.3 亿美元 | NTM 增量 0.3-0.6 亿美元 | NTM 增量 0.7-1.0 亿美元 | NTM 增量 1.2-1.8 亿美元，需要 AI 数据交换显著放量 | 基准符合当前订单节奏；乐观需 attach 率提升 | B | 是 | bookings、平台产品、客户生态 | 基准小比例纳入；ServiceFabric 新用例不单独放大 |
+| 存量租约续租与租户报销 | 2026Q1 rental and other services revenue 16.00 亿美元；total operating revenue 16.35 亿美元；2026 total revenue guide 66.5-67.5 亿美元 | 直接 | 收入主体；租户报销收入利润率低，续租 spread 和稳定资产 NOI 更重要 | NTM 总收入锚降至 65.5-67.5 亿美元 | NTM 总收入锚 68.5-69.5 亿美元 | NTM 总收入锚 70.5-72.5 亿美元 | NTM 总收入锚 73.5-76.5 亿美元 | 基准为当前指引与 run-rate 正常兑现 | A | 是 | SEC 10-Q 收入表、FY2026 指引、renewal spread | 公司层面基准主锚；不得与产品增量重复加总 |
+| 开发管线 / U.S. Hyperscale Fund / JV | 1.2GW under construction、165 亿美元 gross investment、61% pre-leased；非独立当期收入线 | 间接 | 降低自有资本压力但 DLR share 小于 100% share；决定未来 EBITDA 和 FCF | 只承认已签且 near-term commencement | signed / scheduled leases 正常进入收入 | 新 LP 资本和 pre-lease 扩大，提高后续收入可见度 | 新 campus 快速锁客但多数在 NTM 外 | 当前预期是产能强、收入确认滞后 | B/C | 部分进入 | signed leases、pre-leased pipeline、fund/JV 结构 | 不作为单独收入加总；只通过 signed / commenced leases 进入 NTM |
+| Private AI Infrastructure with Lenovo/ePlus | 2026-03 DLR blog、2026-05 ePlus managed service；未披露客户收入、MW 或 bookings | 间接 | DLR 收空间、电力、互联，不赚 GPU 硬件毛利 | 0 | 0-0.1 亿美元，小比例可能已混入 0-1MW | 0.25-0.75 亿美元年化 funnel | 0.75-1.5 亿美元年化 funnel，但低可信 | 基准不依赖 | C/D | 否，除非已签订单混在 0-1MW | 产品发布、合作方 managed service，缺少客户/金额 | 仅作乐观/后续跟踪，不能作为 NTM 基准收入 |
+| Malaysia / Barcelona 等区域扩张 | Malaysia 约 32MW 规划，KUL11 15MW AI-ready；Barcelona BCN1 14MW planned capacity；具体 NTM 收入未披露 | 直接 + 间接 | 区域互联和 AI-ready capacity；当前小基数 | 0-0.05 亿美元 | 0.05-0.15 亿美元 | 0.15-0.35 亿美元 | 0.35-0.60 亿美元 | 对公司总收入短期影响小 | C | 否，除已开通小体量 | 运营/开业公告，缺少客户收入披露 | 放入区域远期期权和跟踪，不抬高 NTM 基准 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第三步需求和第四步收入基数出发，判断每条业务线对 DLR NTM 收入、利润和经营质量的贡献。表中收入贡献主要是相对上一 NTM / 当前 run-rate 的经营增量估算，不把行业 TAM、客户总 capex、项目总金额或 100% share 管线直接写成 DLR 收入。开发管线/JV 行只解释传导和约束，不与租赁产品重复加总。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| >1MW hyperscale / AI campus leasing | 悲观 | 增量 1.5-2.5 亿美元 | Adj. EBITDA / NOI 增量 0.8-1.3 亿美元 | 稳中偏下 | 低于当前预期 | 只承认高确定 scheduled commencements | 保留为 downside | 19 个月 lag、通电/施工延期、大客户压价 |
+| >1MW hyperscale / AI campus leasing | 基准 | 增量 3.0-4.5 亿美元 | 1.7-2.5 亿美元 | 稳定 | 符合当前预期 | DLR share backlog 10 亿美元，2026 scheduled annualized rent 约 5.44 亿美元 | 保留 | annualized rent 与当期收入不同；新签大单多在 2027 后 |
+| >1MW hyperscale / AI campus leasing | 乐观 | 增量 5.0-7.0 亿美元 | 2.9-4.0 亿美元 | 稳中上行 | 高于预期 | Q1 record >1MW bookings、1.2GW pipeline、61% pre-leased | 保留但需季度验证 | 客户 budget 和 utility/MEP 必须同步兑现 |
+| >1MW hyperscale / AI campus leasing | 极度乐观 | 增量 8.0-10.5 亿美元 | 4.8-6.5 亿美元 | 上行但不线性 | 显著高于预期 | 多个 100MW+ lease、项目提前、租金不降 | 下移为乐观上限 | 任一环节缺证据；Q1 大单 lag 19 个月 |
+| 0-1MW high-density colocation | 悲观 | 增量 0.5-0.8 亿美元 | 0.35-0.50 亿美元 | 稳定 | 低于预期 | 企业 AI 转生产慢，Q1 record 不持续 | 保留 | 客户项目碎片化，sales cycle 拉长 |
+| 0-1MW high-density colocation | 基准 | 增量 1.0-1.8 亿美元 | 0.7-1.2 亿美元 | 小幅上行 | 符合/略高于旧 run-rate | Q1 0-1MW bookings 7,895 万美元，租金/kW/月高于 >1MW | 保留 | 已披露收入未单独拆分，需估算 attach |
+| 0-1MW high-density colocation | 乐观 | 增量 2.0-3.2 亿美元 | 1.4-2.2 亿美元 | 上行 | 高于预期 | 0-1MW+IX 连续 record、Private AI funnel | 保留 | Lenovo/ePlus 未披露量化客户和订单 |
+| 0-1MW high-density colocation | 极度乐观 | 增量 3.5-5.0 亿美元 | 2.5-3.6 亿美元 | 明显上行 | 显著高于预期 | 企业私有 AI pod 批量化、更多 1-5MW 客户 | 下移为乐观上限 | 缺客户、交付和收入确认时间表 |
+| Interconnection / ServiceFabric | 悲观 | 增量 0.1-0.3 亿美元 | 0.08-0.20 亿美元 | 稳定 | 低于预期 | 客户只买 capacity，不增加连接服务 | 保留 | 大客户自建私网、attach 率下降 |
+| Interconnection / ServiceFabric | 基准 | 增量 0.3-0.6 亿美元 | 0.20-0.45 亿美元 | 上行 | 符合预期 | 2026Q1 IX bookings 1,861 万美元，平台客户生态 | 保留 | 公司未披露独立毛利，利润估算需折扣 |
+| Interconnection / ServiceFabric | 乐观 | 增量 0.7-1.0 亿美元 | 0.50-0.80 亿美元 | 明显上行 | 高于预期 | AI 数据重力、多云互联、ServiceFabric attach | 保留但小体量 | 收入基数小，对公司总收入贡献有限 |
+| Interconnection / ServiceFabric | 极度乐观 | 增量 1.2-1.8 亿美元 | 0.90-1.40 亿美元 | 明显上行 | 显著高于预期 | AI exchange / private data network 成为标准配置 | 下移为跟踪 | 缺少 DLR 单独收入和客户量化 |
+| 存量租约续租与租户报销 | 悲观 | 增量 0-1.0 亿美元；部分收入被 churn/低 spread 抵消 | -0.2 至 +0.4 亿美元 | 下行 | 低于预期 | renewal spread 降至 0-3%，utility 成本压力 | 保留 | 低利润 pass-through 增收不增利 |
+| 存量租约续租与租户报销 | 基准 | 增量 1.5-2.5 亿美元 | 0.7-1.3 亿美元 | 稳定 | 符合预期 | Q1 renewals 现金 +5.0%、GAAP +6.3%，低 vacancy | 保留 | 电力价格、G&A/IT 成本、汇率 |
+| 存量租约续租与租户报销 | 乐观 | 增量 2.5-3.5 亿美元 | 1.3-2.0 亿美元 | 小幅上行 | 高于预期 | 核心 metro 供给紧张、客户迁移成本高 | 保留 | 大客户新项目可转向竞争对手或自建 |
+| 存量租约续租与租户报销 | 极度乐观 | 增量 4.0-5.5 亿美元 | 2.2-3.0 亿美元 | 上行 | 显著高于预期 | 续租 spread >10%、低 churn、utility 成本顺利转嫁 | 下移为乐观上限 | 续租 spread 不能无限外推 |
+| 开发管线 / U.S. Hyperscale Fund / JV | 悲观 | 不直接加总；导致上述租赁收入推迟 1-3 亿美元 | FCF 压力上升，开发 yield 下修 | 下行 | 低于预期 | 1.2GW 在建需要电力和 MEP 按期兑现 | 保留 | capex/MW 超支、LP 资本慢、DLR share 稀释 |
+| 开发管线 / U.S. Hyperscale Fund / JV | 基准 | 不直接加总；支持 2026 scheduled commencements 和 2027 可见收入 | 维持约 11% stabilized yield 目标，现金流仍重资本 | 稳定 | 符合预期 | 61% pre-leased、11.4% expected stabilized yield | 保留 | 100% share 与 DLR share 差异 |
+| 开发管线 / U.S. Hyperscale Fund / JV | 乐观 | 不直接加总；提高 2027 backlog 与 NTM Q1 2027 run-rate | 开发 yield 和规模效应改善，但 FCF 仍受 capex 压制 | 稳中上行 | 高于预期 | 新 LP 资本、pre-lease 上行、大 campus 锁客 | 保留 | 施工、许可、电力接入 |
+| 开发管线 / U.S. Hyperscale Fund / JV | 极度乐观 | 不直接加总；多数价值在 NTM 后 | 若高 yield + 低资本占用成立，经营质量大幅改善 | 上行但低可信 | 显著高于预期 | 多个 GW 级项目同步获得客户、电力和资本 | 移入附录 | NTM 时间表不足，不能进入基准收入 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为 DLR NTM 总收入、利润率、Adjusted EBITDA / Core FFO 和自由现金流方向。公司不披露所有产品线收入，因此公司总表以 2026Q1 收入表、FY2026 指引、Q1 run-rate、DLR share backlog、scheduled commencements 和产品 bookings 作三角校验。为避免重复计算，开发管线/JV 不作为独立收入加项；只通过 signed leases、commencement 和 DLR share 进入公司收入。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 65.5-67.5 亿美元 | 较上一 NTM 约 +3.5%-6.5%；较基准少约 2.0-3.5 亿美元 | 低于 FY2026 指引中点和当前 run-rate 正常爬坡；收入仍可增长但低于已定价路径 | property-level margin 约 54%-56% | Adj. EBITDA margin 约 53%-54%；GAAP operating margin 约 14%-15% | Adj. EBITDA 35.5-36.5 亿美元；Core FFO/share 约 7.70-7.95 美元；净利润受 D&A/资产处置扰动，无法可靠量化 | 经营现金流为正，但开发 capex 后 FCF 明显为负；需更多债务/权益/JV | 中 | 2026 scheduled commencements 延迟、utility 成本上升、大客户压价、G&A 增长 |
+| 基准公司 | 68.5-69.5 亿美元 | 较上一 NTM 约 +8%-10%；较 Q1 run-rate 小幅上行 | 符合 FY2026 66.5-67.5 亿美元收入指引和 Q1 后上调的 Core FFO 预期；NTM Q1 2027 正常延续 | property-level margin 约 56%-57% | Adj. EBITDA margin 约 54.5%-55.5%；GAAP operating margin 约 15%-17% | Adj. EBITDA 37.5-38.5 亿美元；Core FFO/share 约 8.05-8.35 美元；净利润无法可靠量化 | OCF 可覆盖普通股股息的主体，但开发 capex 后 FCF 仍为负；JV/资产处置缓冲资本压力 | 中高 | backlog 按期转 commencement；0-1MW/IX record run-rate 是否持续；DLR share 与 100% share 差异 |
+| 乐观公司 | 70.5-72.5 亿美元 | 较上一 NTM 约 +11%-15%；较基准高约 1.5-3.0 亿美元 | 高于当前预期；不是单一小项目，需 >1MW、0-1MW/IX 和续租同时较强 | property-level margin 约 57%-58% | Adj. EBITDA margin 约 55.5%-56.5%；GAAP operating margin 约 17%-18% | Adj. EBITDA 39.5-41.0 亿美元；Core FFO/share 约 8.35-8.70 美元；净利润仍受会计折旧影响 | OCF 上行但 growth capex 更高；若 JV/LP 资本同步到位，外部融资压力可控 | 中 | 部分 large leases 提前开通、renewal spread 7%-10%、Private AI funnel 量化、开发 yield 不被成本吞噬 |
+| 极度乐观公司 | 73.5-76.5 亿美元 | 较上一 NTM 约 +16%-21%；较基准高约 4.5-7.0 亿美元 | 显著高于当前预期；证据校准后只作为低可信 NTM 上限，不作为主判断 | property-level margin 约 58%-60% | Adj. EBITDA margin 约 56.5%-58%；GAAP operating margin 约 18%-20% | Adj. EBITDA 42.0-44.5 亿美元；Core FFO/share 约 8.75-9.20 美元；净利润无法可靠量化 | OCF 大幅上行，但若 2GW+ 管线加速，开发 capex 仍使 FCF 依赖外部资本 | 低 | 多个核心传导环节必须同时成立：需求、客户捕获、提前通电、高租金、低成本资本、施工无延迟 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。正向证据只提升其实际影响层级；反证只在其实际影响层级处理一次，不在需求、收入、利润和公司层面重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 record bookings：7.07 亿美元 annualized GAAP rent（100% share）、4.23 亿美元 DLR share，其中 >1MW 占主体 | 产品贡献 / 收入基数 | 提升 >1MW 和 backlog 可见度，但因 19 个月 lag 不能直接抬高 NTM 基准 | 若租金/kW/月维持，支持稳定 yield；若大客户压价，margin 不线性上行 | 增加施工和 commencement 执行压力 | 基准保留，乐观保留，极度乐观下移 |
+| DLR share backlog 10 亿美元，2026 scheduled commencements 约 5.44 亿美元年化租金 | 收入基数 / 公司汇总 | 是 NTM 基准最强收入锚；支持 68.5-69.5 亿美元 NTM 收入 | 支持 EBITDA，但成本和 ramp 影响利润释放 | 关键是按期通电、验收和开始计租 | 基准保留 |
+| 0-1MW+IX Q1 bookings 9,756 万美元，0-1MW 租金/kW/月约 247 美元，高于 >1MW | 产品贡献 / 利润率 | 对总收入增量小于 >1MW，但对利润质量更好 | 高单位租金和互联 attach 提升 margin | 客户分散，执行风险低于单一超大项目 | 乐观保留 |
+| 1.2GW under construction、61% pre-leased、165 亿美元 gross investment、11.4% expected stabilized yield | 执行可信度 / 远期收入基数 | 强化 2027+ 收入可见度；NTM 只确认已签且 near-term commencement | 若 yield 守住，支持经营质量；若 capex/MW 上行则压缩回报 | 重资产占用，FCF 需要 JV/LP/资产处置 | 基准保留，远期移入附录 |
+| 19 个月 weighted-average lag | 收入确认风险 | 限制 Q1 大单进入 NTM；悲观触发是 lag 继续拉长 | 延迟会推迟 EBITDA，固定成本和利息先发生 | 施工、并网、客户验收均可能拖累 | 悲观保留；极度乐观下移 |
+| 电力、变压器、switchgear、MEP 和 commissioning 瓶颈 | 收入确认 / 执行可信度 | 主要影响 commencement 节奏，不否定长期需求 | 延迟和成本超支压低开发 yield | 增加 capitalized cost 和外部资金需求 | 在第二步和第五步处理一次，不重复惩罚 |
+| Utility reimbursement 和电力价格 | 公司组合 / 利润质量 | 可增加收入表观增长，但不是高质量增量 | pass-through 占比上升会稀释 margin | OCF 回收依赖租约条款和账期 | 作为公司利润率风险处理，不重复压低需求 |
+| 大客户议价和自建替代 | 份额 / 价格 | 影响 >1MW 新签、续租 spread 和租金/kW/月 | 若 >1MW rent/kW/month 低于 170-180 美元，开发 yield 承压 | 大客户可把新项目给竞争对手或自建 | 在第三步产品捕获处理，不重复惩罚行业需求 |
+| JV / U.S. Hyperscale Fund | 现金流 / DLR share | 100% share 收入机会不能全算 DLR；但提高可开发总量 | 降资本强度，有助 ROE；也稀释 DLR share revenue | 缓冲 balance sheet，降低开发周期融资风险 | 基准保留，作为现金流正向校准 |
+| Private AI Infrastructure with Lenovo/ePlus | 需求 / 0-1MW funnel | 缺量化订单，不进入基准；可增强乐观 0-1MW | 如果形成 pod attach，可改善 mix | 当前主要是渠道和方案，不是已确认收入 | 仅作跟踪 |
+| Malaysia / Barcelona 等新增区域 | 远期期权 / 区域收入 | NTM 对总收入小；不抬高公司基准 | 小体量，不足以改变公司 margin | 需要客户签约、开通和本地互联生态 | 移入附录或仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 65.5-67.5 亿美元 NTM 收入，低于当前预期；利润率低于基准 | 长约、backlog 和低 vacancy 使收入不易断崖 | lag 继续拉长、2026 commencement 不达约 5.44 亿美元年化租金、utility/G&A 成本上升 | 保留 | 悲观 downside | 中 | 电力/施工延迟只在收入确认和执行层级处理一次 |
+| 基准 | 68.5-69.5 亿美元 NTM 收入，FY2026 指引正常兑现，Q1 2027 延续增长 | 10 亿美元 DLR share backlog、FY2026 指引、Q1 revenue +16.2%、0-1MW/IX record | 产品收入拆分未披露，Q1 record 大单不能当期确认 | 保留 | 最可能情景 | 中高 | 不因 AI 题材热度自动上调，也不因 capex 大而重复下调 |
+| 乐观 | 70.5-72.5 亿美元 NTM 收入，>1MW、0-1MW/IX 和续租同时强 | record bookings、1.2GW pipeline、61% pre-leased、低 vacancy、高租金/kW/月 | 需要部分项目提前、续租 spread 上修、Private AI funnel 量化 | 保留 | 乐观情景 | 中 | 大客户议价只在产品价格/份额层级处理，不再压低行业需求 |
+| 极度乐观 | 73.5-76.5 亿美元 NTM 收入，收入和利润率同时显著超预期 | 多个 100MW+ lease、Atlanta/Portland/Charlotte/Malaysia 等 capacity option | 19 个月 lag 与施工/电力约束使多个核心环节无法在 NTM 内同时验证 | 下移 | 乐观上限 / 附录跟踪 | 低 | 远期 campus、land bank 和产品发布不能重复计入 NTM 收入 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。DLR 在 NTM 内最合理的经营传导是收入 68.5-69.5 亿美元，Adj. EBITDA 37.5-38.5 亿美元，Core FFO/share 约 8.05-8.35 美元。这个判断不是把 AI 数据中心行业高增长直接映射到 DLR，而是承认 DLR 的 A/B 级证据：Q1 收入表、FY2026 指引、DLR share backlog、scheduled commencements、0-1MW/IX bookings 和续租 spread。
+- 乐观情景成立条件：每季 DLR share bookings 持续 2-4 亿美元以上；0-1MW+IX 维持接近或高于 1 亿美元年化 bookings/季；2026 scheduled commencements 按期且无明显延期；>1MW rent/kW/month 不低于当前约 180 美元附近；开发管线维持 60%+ pre-leased 且 expected yield 不被 capex/MW 吞噬。
+- 极度乐观情景成立条件：需求、公司捕获、利润率和执行可信度同时突破。具体需要多个 100MW+ AI leases 在 NTM 内签约并部分提前开通，Atlanta/Portland/Charlotte 至少一个新 campus 进入客户锁定和电力确认，0-1MW 私有 AI pod 被量化为实际 bookings，且 1.2GW+ 管线没有因电力、MEP 或客户验收延迟。
+- 悲观情景触发条件：2026 scheduled commencements 明显低于约 5.44 亿美元年化租金路径；新签 lag 高于 19 个月继续拉长；>1MW rent/kW/month 低于 170-180 美元并且开发 yield 下修；utility reimbursement 增收不增利；Net debt / EBITDA 重新上行并压制开发速度。
+- 后续跟踪数据：DLR share backlog、backlog commencement schedule、季度 >1MW bookings、季度 0-1MW+IX bookings、rent/kW/month、renewal cash/GAAP spread、under construction MW、pre-leased ratio、expected stabilized yield、capex/MW、Net debt / Adjusted EBITDA、OCF vs development capex、Private AI 客户或 bookings 量化。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：DLR 公司财务以 2026Q1（截至 2026-03-31）为最新完整财务期；报告日期为 2026-06-12；NTM 为 2026Q2-2027Q1。
+- 主要收入、订单、指引和利润率来源：
+  - Digital Realty 2026Q1 Form 10-Q：total operating revenue 16.35 亿美元、rental and other services revenue 16.00 亿美元、property-level operating expenses 6.98 亿美元、operating cash flow 5.32 亿美元、real estate improvements 8.70 亿美元、geographic rent concentration 等。
+  - Digital Realty 2026Q1 earnings release / supplement / call 转述：FY2026 revenue guide 66.5-67.5 亿美元、Adjusted EBITDA guide 36.5-37.5 亿美元、Core FFO/share guide 8.00-8.10 美元、Q1 bookings、DLR share backlog、1.2GW development pipeline、61% pre-leased、11.4% expected stabilized yield、19 个月 lag。
+  - 项目内 DLR 公司调研：`公司调研/云算力_IDC_AI软件平台/DLR_Digital_Realty_公司调研_2026-06-12.md`。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 指引是 NTM 基准锚之一，但 NTM 不等同 FY2026；本报告用 FY2026 剩余三季加 2027Q1 run-rate 估算 NTM。
+  - 1.2GW under construction、Atlanta >1GW、Portland 160MW、Malaysia 约 32MW、Barcelona 14MW 属于长期 capacity option；只有 signed / scheduled commencements 进入 NTM 基准。
+  - Private AI Infrastructure with Lenovo/ePlus 是渠道与产品化线索，缺客户、MW、bookings 和收入确认时间表，不能进入 NTM 基准。
+- 主要来源：
+  - Digital Realty, `Digital Realty Reports First Quarter 2026 Results`, 2026-04-23: https://www.digitalrealty.com/about/newsroom/press-releases/30156/digital-realty-reports-first-quarter-2026-results
+  - SEC, `Digital Realty Trust, Inc. Form 10-Q for quarter ended March 31, 2026`: https://www.sec.gov/Archives/edgar/data/1297996/000110465926054255/dlr-20260331x10q.htm
+  - Digital Realty, `Data Center Services & Colocation`: https://www.digitalrealty.com/
+  - Digital Realty, `Introducing Private AI Infrastructure-as-a-Service with Lenovo and ePlus`, 2026-03-16: https://www.digitalrealty.com/resources/blog/private-ai-infrastructure-lenovo-eplus
+  - ePlus, `ePlus Launches Private AI Infrastructure Managed Service`, 2026-05-26: https://eplus.com/who-we-are/investor-relations/press-releases/2026/05/eplus-launches-private-ai-infrastructure-managed-service
+  - Digital Realty, `Digital Realty Launches Malaysia Operations to Advance Southeast Asia's Digital Connectivity`, 2026-06-08: https://www.digitalrealty.com/about/newsroom/press-releases/30361/digital-realty-launches-malaysia-operations-to-advance-southeast-asia-s-digital-connectivity
+  - JLL, `North America Data Center Report Year-end 2025`: https://www.jll.com/en-us/insights/market-dynamics/north-america-data-centers
+  - JLL, `2026 Market Outlook for Global Data Centers`: https://www.jll.com/en-us/insights/market-outlook/data-center-outlook
+  - CBRE, `U.S. Real Estate Market Outlook 2026 - Data Centers`: https://www.cbre.com/insights/books/us-real-estate-market-outlook-2026/data-centers
+  - CBRE, `North America Data Center Trends H2 2025`: https://www.cbre.com/insights/books/north-america-data-center-trends-h2-2025
+  - LBNL / DOE, `2024 United States Data Center Energy Usage Report` news summary, 2025-01-15: https://newscenter.lbl.gov/2025/01/15/berkeley-lab-report-evaluates-increase-in-electricity-demand-from-data-centers/
+  - 项目内行业调研：`行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - 项目内行业调研：`行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+  - 项目内行业调研：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+  - 项目内行业调研：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`

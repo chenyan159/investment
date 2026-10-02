@@ -1,0 +1,471 @@
+{
+  "schemaVersion": 1,
+  "source": "technicalResearchPublication",
+  "reportDate": "2026-07-15",
+  "asOf": "2026-07-15 美股收盘后",
+  "scope": {
+    "markets": ["QQQ/NDX", "SPX", "美国全市场/VTI", "Russell 2000/IWM", "SOX"],
+    "horizons": [10, 21, 63, 126, 252]
+  },
+  "summary": {
+    "headline": "10–63 日仅有轻微正漂移，尾部明显不对称；126–252 日方向证据不足",
+    "lede": "18 个独立因子不是 18 张独立选票。去重后，最稳定的信息来自波动、尾部风险和相对强弱，方向性证据明显弱于风险证据。",
+    "boundary": "这是对独立因子结果的审计性对照，不是组合模型，也不把相关因子简单投票。",
+    "verdicts": [
+      {
+        "label": "最可用",
+        "value": "风险与区间",
+        "note": "实现波动、期权与尾部模型能更稳定地描述路径风险。",
+        "tone": "positive"
+      },
+      {
+        "label": "谨慎可用",
+        "value": "10–63 日方向",
+        "note": "大盘轻微偏正，SOX 弹性更大；置信度低且尾部很宽。",
+        "tone": "mild"
+      },
+      {
+        "label": "不可外推",
+        "value": "126–252 日方向",
+        "note": "历史有效样本、点时数据与样本外证据不足。",
+        "tone": "risk"
+      }
+    ]
+  },
+  "marketOutlook": [
+    {
+      "market": "QQQ / NDX",
+      "note": "科技权重高，短中期略偏正，但估值和尾部约束明显。",
+      "cells": [
+        { "horizon": 10, "label": "轻微偏正", "tone": "mild" },
+        { "horizon": 21, "label": "轻微偏正", "tone": "mild" },
+        { "horizon": 63, "label": "条件偏正", "tone": "mild" },
+        { "horizon": 126, "label": "证据不足", "tone": "unavailable" },
+        { "horizon": 252, "label": "证据不足", "tone": "unavailable" }
+      ]
+    },
+    {
+      "market": "SPX",
+      "note": "短期漂移温和，信用压力低，但估值和实际利率限制上行空间。",
+      "cells": [
+        { "horizon": 10, "label": "轻微偏正", "tone": "mild" },
+        { "horizon": 21, "label": "轻微偏正", "tone": "mild" },
+        { "horizon": 63, "label": "中性偏正", "tone": "neutral" },
+        { "horizon": 126, "label": "证据不足", "tone": "unavailable" },
+        { "horizon": 252, "label": "证据不足", "tone": "unavailable" }
+      ]
+    },
+    {
+      "market": "VTI / 全市场",
+      "note": "走势接近 SPX，广度和小盘数据不足使全市场结论更保守。",
+      "cells": [
+        { "horizon": 10, "label": "轻微偏正", "tone": "mild" },
+        { "horizon": 21, "label": "轻微偏正", "tone": "mild" },
+        { "horizon": 63, "label": "中性偏正", "tone": "neutral" },
+        { "horizon": 126, "label": "证据不足", "tone": "unavailable" },
+        { "horizon": 252, "label": "证据不足", "tone": "unavailable" }
+      ]
+    },
+    {
+      "market": "IWM / 小盘",
+      "note": "绝对方向不清楚，相对大盘在 63–126 日偏弱。",
+      "cells": [
+        { "horizon": 10, "label": "中性", "tone": "neutral" },
+        { "horizon": 21, "label": "中性偏弱", "tone": "risk" },
+        { "horizon": 63, "label": "相对偏弱", "tone": "risk" },
+        { "horizon": 126, "label": "证据不足", "tone": "unavailable" },
+        { "horizon": 252, "label": "证据不足", "tone": "unavailable" }
+      ]
+    },
+    {
+      "market": "SOX",
+      "note": "短中期上行动能最强，同时拥有最宽的条件区间和最高路径风险。",
+      "cells": [
+        { "horizon": 10, "label": "偏正·高风险", "tone": "positive-risk" },
+        { "horizon": 21, "label": "偏正·高风险", "tone": "positive-risk" },
+        { "horizon": 63, "label": "偏正·极宽尾", "tone": "positive-risk" },
+        { "horizon": 126, "label": "证据不足", "tone": "unavailable" },
+        { "horizon": 252, "label": "证据不足", "tone": "unavailable" }
+      ]
+    }
+  ],
+  "riskForecasts": [
+    { "market": "NDX / QQQ", "realizedVol21": 26.4, "forecastVol10": 24.0, "low": -4.7, "high": 6.0 },
+    { "market": "SPX", "realizedVol21": 12.2, "forecastVol10": 13.3, "low": -2.6, "high": 3.1 },
+    { "market": "VTI", "realizedVol21": 12.7, "forecastVol10": 13.3, "low": -2.7, "high": 3.1 },
+    { "market": "IWM", "realizedVol21": 12.9, "forecastVol10": 18.4, "low": -4.2, "high": 4.5 },
+    { "market": "SOX", "realizedVol21": 68.8, "forecastVol10": 72.9, "low": -13.6, "high": 19.5 }
+  ],
+  "currentSignals": [
+    { "label": "期限利率", "value": "10Y 4.55% / 实际 2.32%", "stance": "折现约束偏强", "tone": "risk", "factorIds": ["MF007", "MF016"] },
+    { "label": "信用", "value": "HY OAS 2.72%", "stance": "系统性压力仍低", "tone": "positive", "factorIds": ["MF006"] },
+    { "label": "期权尾部", "value": "VIX 15.67 / SKEW 148.51", "stance": "表面平静、尾部昂贵", "tone": "risk", "factorIds": ["MF003", "MF011"] },
+    { "label": "估值", "value": "远期 P/E 20.5×", "stance": "高估值风险栏", "tone": "risk", "factorIds": ["MF016"] },
+    { "label": "半导体波动", "value": "SOX 21日 RV 68.8%", "stance": "极高路径风险", "tone": "risk", "factorIds": ["MF002"] },
+    { "label": "通胀", "value": "CPI 3.5% / PPI 5.5%", "stance": "增长与价格信号分化", "tone": "neutral", "factorIds": ["MF008"] }
+  ],
+  "families": [
+    {
+      "id": "price-state",
+      "name": "价格与波动状态",
+      "description": "价格路径、实现波动和相对强弱；彼此重叠较高，不能重复计票。",
+      "factorIds": ["MF001", "MF002", "MF012"]
+    },
+    {
+      "id": "derivatives-positioning",
+      "name": "衍生品与仓位",
+      "description": "隐含波动、尾部、卖空和拥挤，主要贡献风险与不对称信息。",
+      "factorIds": ["MF003", "MF010", "MF011", "MF014"]
+    },
+    {
+      "id": "macro-discount",
+      "name": "宏观、折现与跨资产",
+      "description": "信用、利率、宏观、跨资产和估值，多数更适合作为风险状态过滤器。",
+      "factorIds": ["MF006", "MF007", "MF008", "MF015", "MF016"]
+    },
+    {
+      "id": "fundamentals-supply",
+      "name": "基本面与资本供给",
+      "description": "盈利预期与净发行具有经济含义，但点时数据和独立周期数量不足。",
+      "factorIds": ["MF005", "MF013"]
+    },
+    {
+      "id": "market-structure",
+      "name": "内部结构与流动性",
+      "description": "宽度、集中度和交易流动性，当前受历史成分与代理变量污染限制。",
+      "factorIds": ["MF004", "MF017"]
+    },
+    {
+      "id": "news-calendar",
+      "name": "新闻与事件日历",
+      "description": "文本冲击和日历事件更适合识别尾部与执行风险，不宜形成长期方向。",
+      "factorIds": ["MF009", "MF018"]
+    }
+  ],
+  "factors": [
+    {
+      "id": "MF001",
+      "name": "价格趋势与时间序列动量",
+      "familyId": "price-state",
+      "readiness": "core",
+      "signal": "相对强弱偏正",
+      "headline": "绝对方向样本外证据弱；SOX 在 10–63 日的相对强势最值得保留。",
+      "currentState": "大盘趋势仍偏正，但趋势延续的可交易优势不稳定，半导体同时伴随更高路径风险。",
+      "useCase": "作为相对强弱与风险状态输入，不作为单独绝对择时器。",
+      "limitation": "绝对收益预测的样本外表现弱，长窗重叠严重。",
+      "outlook": {
+        "10": { "tone": "mild", "text": "大盘弱正；SOX相对偏强" },
+        "21": { "tone": "mild", "text": "趋势延续但置信度低" },
+        "63": { "tone": "mild", "text": "SOX相对优势仍在" },
+        "126": { "tone": "unavailable", "text": "无法可靠判断" },
+        "252": { "tone": "unavailable", "text": "无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF002",
+      "name": "实现波动率与波动状态",
+      "familyId": "price-state",
+      "readiness": "core",
+      "signal": "风险预测最强",
+      "headline": "15 个短中期波动单元均优于基准，但 25 个方向单元没有形成稳定优势。",
+      "currentState": "SPX/VTI 波动温和，QQQ 与 IWM 较高，SOX 已处极高波动状态。",
+      "useCase": "仓位、区间、止损和情景压力测试的首要风险引擎。",
+      "limitation": "能预测波动不等于能预测涨跌；长窗没有同等强度证据。",
+      "outlook": {
+        "10": { "tone": "risk", "text": "区间可用；方向不可用" },
+        "21": { "tone": "risk", "text": "波动状态可用" },
+        "63": { "tone": "risk", "text": "风险持续性可用" },
+        "126": { "tone": "unavailable", "text": "方向无法可靠判断" },
+        "252": { "tone": "unavailable", "text": "方向无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF003",
+      "name": "期权隐含波动率与方差风险溢价",
+      "familyId": "derivatives-positioning",
+      "readiness": "core",
+      "signal": "尾部溢价偏高",
+      "headline": "SPX/NDX 的 10–21 日略偏正，但低 VIX 与高 SKEW 的组合提示尾部保护昂贵。",
+      "currentState": "显性波动不高，偏度却处高位，市场对常态路径平静、对左尾仍有明显定价。",
+      "useCase": "识别不对称风险、期权定价状态和短窗条件分布。",
+      "limitation": "SMH 等代理历史短，63 日以上证据迅速衰减。",
+      "outlook": {
+        "10": { "tone": "mild", "text": "SPX/NDX略偏正、左尾昂贵" },
+        "21": { "tone": "mild", "text": "略偏正但不对称" },
+        "63": { "tone": "neutral", "text": "条件性、置信度低" },
+        "126": { "tone": "unavailable", "text": "无法可靠判断" },
+        "252": { "tone": "unavailable", "text": "无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF004",
+      "name": "市场宽度、离散度与集中度",
+      "familyId": "market-structure",
+      "readiness": "blocked",
+      "signal": "点时数据缺口",
+      "headline": "历史成分股与权重无法可靠 point-in-time 重建，不能把当前成分倒灌进历史。",
+      "currentState": "可观察到集中度风险，但不足以形成可审计的五市场、五窗口方向判断。",
+      "useCase": "待补齐历史成分、权重和退市样本后再研究。",
+      "limitation": "幸存者偏差会直接扭曲宽度和集中度历史。",
+      "outlook": {
+        "10": { "tone": "unavailable", "text": "无法可靠判断" },
+        "21": { "tone": "unavailable", "text": "无法可靠判断" },
+        "63": { "tone": "unavailable", "text": "无法可靠判断" },
+        "126": { "tone": "unavailable", "text": "无法可靠判断" },
+        "252": { "tone": "unavailable", "text": "无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF005",
+      "name": "盈利预期修正与盈利 Nowcast",
+      "familyId": "fundamentals-supply",
+      "readiness": "blocked",
+      "signal": "中窗弱正",
+      "headline": "SPX 的 63–126 日有弱正证据，但只有约 3 个独立盈利周期，不能当作稳健结论。",
+      "currentState": "盈利预期尚未显示系统性坍塌，但实时共识修订历史不完整。",
+      "useCase": "作为中期基本面确认项，不用于短期择时。",
+      "limitation": "point-in-time 共识缺失，独立周期过少且长窗收益重叠。",
+      "outlook": {
+        "10": { "tone": "unavailable", "text": "短窗不适用" },
+        "21": { "tone": "unavailable", "text": "证据不足" },
+        "63": { "tone": "mild", "text": "SPX弱正，仅少数周期" },
+        "126": { "tone": "mild", "text": "SPX弱正、不可泛化" },
+        "252": { "tone": "unavailable", "text": "无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF006",
+      "name": "信用利差与金融条件",
+      "familyId": "macro-discount",
+      "readiness": "core",
+      "signal": "系统压力低",
+      "headline": "信用更能预测未来波动与回撤，而不是平均收益；当前没有显著系统性压力。",
+      "currentState": "HY OAS 2.72%，处于偏紧利差环境，暂未确认信用传导恶化。",
+      "useCase": "风险开关、回撤概率与宏观压力过滤器。",
+      "limitation": "低利差不等于未来必涨，方向效应不稳定。",
+      "outlook": {
+        "10": { "tone": "neutral", "text": "低压力，不代表上涨" },
+        "21": { "tone": "neutral", "text": "系统风险受控" },
+        "63": { "tone": "neutral", "text": "关注利差是否拐头" },
+        "126": { "tone": "unavailable", "text": "方向无法可靠判断" },
+        "252": { "tone": "unavailable", "text": "方向无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF007",
+      "name": "利率曲线、实际利率与货币政策意外",
+      "familyId": "macro-discount",
+      "readiness": "core",
+      "signal": "折现率约束",
+      "headline": "仅少数方向单元出现弱优势，更适合作为估值和风险状态的条件过滤器。",
+      "currentState": "10 年名义利率 4.55%、实际利率 2.32%，对高久期资产构成持续折现压力。",
+      "useCase": "解释风格差异和估值承压，不单独预测指数方向。",
+      "limitation": "政策冲击样本少、制度变化大，历史关系不稳定。",
+      "outlook": {
+        "10": { "tone": "risk", "text": "高久期资产受约束" },
+        "21": { "tone": "risk", "text": "利率过滤偏谨慎" },
+        "63": { "tone": "neutral", "text": "方向优势很弱" },
+        "126": { "tone": "unavailable", "text": "无法可靠判断" },
+        "252": { "tone": "unavailable", "text": "无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF008",
+      "name": "宏观增长、通胀、就业与数据意外",
+      "familyId": "macro-discount",
+      "readiness": "exploratory",
+      "signal": "短中期弱正",
+      "headline": "QQQ、SPX、VTI 与 SOX 在 10–63 日略偏正，小盘证据更弱。",
+      "currentState": "增长与价格数据分化，宏观状态尚未形成清晰衰退信号。",
+      "useCase": "作为宏观场景描述和短中期条件判断。",
+      "limitation": "缺少真正的本地样本外验证，修订与发布时间处理仍限制可信度。",
+      "outlook": {
+        "10": { "tone": "mild", "text": "大盘/科技弱正" },
+        "21": { "tone": "mild", "text": "弱正，小盘较弱" },
+        "63": { "tone": "mild", "text": "条件偏正" },
+        "126": { "tone": "unavailable", "text": "无法可靠判断" },
+        "252": { "tone": "unavailable", "text": "无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF009",
+      "name": "新闻文本、政策不确定性与地缘风险",
+      "familyId": "news-calendar",
+      "readiness": "exploratory",
+      "signal": "短尾风险",
+      "headline": "10 日左尾风险偏高，21 日接近中性，63 日存在弱反弹模式。",
+      "currentState": "政策和地缘文本仍带来事件驱动的不对称风险，但不是持续方向信号。",
+      "useCase": "短窗尾部预警和事件复盘。",
+      "limitation": "文本口径、语料覆盖和主题漂移使长期可比性有限。",
+      "outlook": {
+        "10": { "tone": "risk", "text": "负向尾部风险偏高" },
+        "21": { "tone": "neutral", "text": "接近中性" },
+        "63": { "tone": "mild", "text": "弱反弹模式" },
+        "126": { "tone": "unavailable", "text": "无法可靠判断" },
+        "252": { "tone": "unavailable", "text": "无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF010",
+      "name": "聚合卖空与 Short Interest",
+      "familyId": "derivatives-positioning",
+      "readiness": "blocked",
+      "signal": "无法稳定构建",
+      "headline": "免费公开数据不足以形成跨市场、point-in-time 的聚合卖空历史。",
+      "currentState": "个别 ETF 和交易流量代理不能代表成分股层面的 short interest 状态。",
+      "useCase": "待取得证券借贷与历史成分级数据后重做。",
+      "limitation": "报告延迟、口径变化和成分覆盖缺口使全部窗口不可靠。",
+      "outlook": {
+        "10": { "tone": "unavailable", "text": "无法可靠判断" },
+        "21": { "tone": "unavailable", "text": "无法可靠判断" },
+        "63": { "tone": "unavailable", "text": "无法可靠判断" },
+        "126": { "tone": "unavailable", "text": "无法可靠判断" },
+        "252": { "tone": "unavailable", "text": "无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF011",
+      "name": "尾部风险、回撤概率与条件分位数",
+      "familyId": "derivatives-positioning",
+      "readiness": "core",
+      "signal": "尾部不对称",
+      "headline": "条件分位数和回撤概率比均值方向更可靠，当前对部分大盘窗口偏正但左尾仍需保留。",
+      "currentState": "显性恐慌不高，尾部价格与波动结构提示下行风险并未消失。",
+      "useCase": "构建回撤概率、条件区间和风险预算。",
+      "limitation": "复合状态与 MF002/MF003 信息重叠，不能作为独立票重复加权。",
+      "outlook": {
+        "10": { "tone": "mild", "text": "选择性偏正、左尾仍在" },
+        "21": { "tone": "mild", "text": "条件偏正" },
+        "63": { "tone": "neutral", "text": "尾部区间比方向更可信" },
+        "126": { "tone": "unavailable", "text": "方向无法可靠判断" },
+        "252": { "tone": "unavailable", "text": "方向无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF012",
+      "name": "QQQ、小盘与半导体相对强弱",
+      "familyId": "price-state",
+      "readiness": "exploratory",
+      "signal": "科技强、小盘弱",
+      "headline": "QQQ/SPX 与 SOX/SPX 在 10–63 日偏正，小盘/SPX 在 63–126 日偏弱。",
+      "currentState": "领导权仍集中在大型科技和半导体，小盘相对趋势没有确认反转。",
+      "useCase": "市场间配置和领导权判断，不推导绝对收益。",
+      "limitation": "相对强弱不能自动转化为各指数绝对方向。",
+      "outlook": {
+        "10": { "tone": "mild", "text": "QQQ/SOX相对偏强" },
+        "21": { "tone": "mild", "text": "科技领导延续" },
+        "63": { "tone": "mild", "text": "科技强、小盘弱" },
+        "126": { "tone": "risk", "text": "小盘相对偏弱" },
+        "252": { "tone": "unavailable", "text": "绝对方向不可靠" }
+      }
+    },
+    {
+      "id": "MF013",
+      "name": "总派息、回购与净发行",
+      "familyId": "fundamentals-supply",
+      "readiness": "blocked",
+      "signal": "资本供给偏不利",
+      "headline": "净发行与回购状态偏不利，但季度数据陈旧且不足以支持短窗方向。",
+      "currentState": "公开资本供给数据存在明显发布时间差，当前读数只能作为慢变量。",
+      "useCase": "中长期供给背景和估值约束。",
+      "limitation": "数据低频、滞后且跨指数映射不完整，短窗几乎不可用。",
+      "outlook": {
+        "10": { "tone": "neutral", "text": "低频因子不适用" },
+        "21": { "tone": "neutral", "text": "低频因子不适用" },
+        "63": { "tone": "risk", "text": "供给背景偏不利" },
+        "126": { "tone": "risk", "text": "偏谨慎、证据弱" },
+        "252": { "tone": "unavailable", "text": "无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF014",
+      "name": "CFTC 仓位、资金流与市场拥挤",
+      "familyId": "derivatives-positioning",
+      "readiness": "exploratory",
+      "signal": "拥挤但未反转",
+      "headline": "NDX/SPX 的 10–21 日略偏正，但相似历史只有约 12 个且未完成强多重检验。",
+      "currentState": "资金与仓位显示拥挤，尚未形成一致的强制去杠杆信号。",
+      "useCase": "拥挤度、背离和短窗风险监控。",
+      "limitation": "近邻样本少、代理混合且缺少严格样本外检验。",
+      "outlook": {
+        "10": { "tone": "mild", "text": "NDX/SPX略偏正" },
+        "21": { "tone": "mild", "text": "略偏正、拥挤约束" },
+        "63": { "tone": "neutral", "text": "方向不清晰" },
+        "126": { "tone": "unavailable", "text": "无法可靠判断" },
+        "252": { "tone": "unavailable", "text": "无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF015",
+      "name": "跨资产风险传导",
+      "familyId": "macro-discount",
+      "readiness": "core",
+      "signal": "风险诊断而非方向",
+      "headline": "跨资产模型在 25 个方向单元中均未优于价格基准，应保留为风险传导诊断。",
+      "currentState": "外部资产没有给出一致方向冲击，但相关性上升时尾部会更集中。",
+      "useCase": "识别美元、利率、信用、商品与全球股票的压力传导。",
+      "limitation": "相对价格基准没有增量方向能力。",
+      "outlook": {
+        "10": { "tone": "neutral", "text": "无增量方向" },
+        "21": { "tone": "neutral", "text": "仅作风险诊断" },
+        "63": { "tone": "neutral", "text": "关注相关性聚集" },
+        "126": { "tone": "unavailable", "text": "方向无法可靠判断" },
+        "252": { "tone": "unavailable", "text": "方向无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF016",
+      "name": "估值、风险溢价与实际利率差",
+      "familyId": "macro-discount",
+      "readiness": "exploratory",
+      "signal": "高估值风险栏",
+      "headline": "当前估值极端，但估值不是可靠的 10–252 日方向计时器。",
+      "currentState": "远期 P/E 约 20.5×、实际利率约 2.32%，风险溢价缓冲偏薄。",
+      "useCase": "长期回报假设、压力情景与仓位上限。",
+      "limitation": "估值均值回归期限不稳定，长窗独立样本远少于表面观察数。",
+      "outlook": {
+        "10": { "tone": "neutral", "text": "短期负对照，不择时" },
+        "21": { "tone": "neutral", "text": "短期负对照，不择时" },
+        "63": { "tone": "risk", "text": "高估值压缩容错" },
+        "126": { "tone": "risk", "text": "风险栏，不给方向" },
+        "252": { "tone": "risk", "text": "风险栏，不给方向" }
+      }
+    },
+    {
+      "id": "MF017",
+      "name": "市场微观结构与交易流动性",
+      "familyId": "market-structure",
+      "readiness": "exploratory",
+      "signal": "短窗弱正类比",
+      "headline": "部分流动性类比在短窗偏正，但 ETF/NAV 和 OHLCV 代理污染明显。",
+      "currentState": "没有确认广泛流动性失灵，局部价格冲击指标仍需谨慎解释。",
+      "useCase": "短窗执行风险和流动性异常监控。",
+      "limitation": "代理变量混入价格趋势与盘后信息，缺少稳健样本外结果。",
+      "outlook": {
+        "10": { "tone": "mild", "text": "类比弱正" },
+        "21": { "tone": "mild", "text": "类比弱正、置信低" },
+        "63": { "tone": "neutral", "text": "方向不清晰" },
+        "126": { "tone": "unavailable", "text": "无法可靠判断" },
+        "252": { "tone": "unavailable", "text": "无法可靠判断" }
+      }
+    },
+    {
+      "id": "MF018",
+      "name": "季节性、再平衡、期权到期与事件日历",
+      "familyId": "news-calendar",
+      "readiness": "core",
+      "signal": "仅执行风险",
+      "headline": "5,890 项检验经全局 FDR 后没有绝对收益信号通过，日历只应服务执行。",
+      "currentState": "近期事件可改变成交与波动路径，但没有可审计的稳定绝对方向异常。",
+      "useCase": "安排执行、避免事件窗口和解释成交量变化。",
+      "limitation": "多重检验会制造大量伪季节性，不能挑选未经校正的显著结果。",
+      "outlook": {
+        "10": { "tone": "neutral", "text": "无通过FDR的方向信号" },
+        "21": { "tone": "neutral", "text": "仅执行意义" },
+        "63": { "tone": "neutral", "text": "无稳定绝对异常" },
+        "126": { "tone": "unavailable", "text": "无法可靠判断" },
+        "252": { "tone": "unavailable", "text": "无法可靠判断" }
+      }
+    }
+  ]
+}

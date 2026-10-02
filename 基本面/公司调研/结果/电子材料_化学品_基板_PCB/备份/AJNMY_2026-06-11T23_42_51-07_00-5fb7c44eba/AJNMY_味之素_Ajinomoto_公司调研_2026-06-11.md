@@ -1,0 +1,367 @@
+# AJNMY / 味之素 Ajinomoto 公司调研：食品现金牛之下的 ABF 高端封装材料隐形垄断
+
+报告日期：2026-06-11（America/Los_Angeles）。  
+股票与公司：`AJNMY`，Ajinomoto Co., Inc. Sponsored ADR，1 ADR : 1 ordinary share；日本普通股代码 `2802.T`。  
+正式分类目录：`公司调研/半导体材料_化学品_基板/`。  
+资料边界：本报告只读取项目内 `行业调研/` 相关行业资料和 `公司调研/公司索引.md` 用于确定目录；未读取、引用或继承 `公司调研/` 下旧 AJNMY 报告或其他公司报告，未读取 `日度资料/`、`特征量化/`、`tmp/` 等目录。  
+关键口径：财务年度按味之素口径，`FY2025` 指截至 2026-03-31 的年度，`FY2026` 指截至 2027-03-31 的年度。美元估算如未注明，使用公司 FY2026 指引假设 `150 日元/美元` 做粗换算。
+
+## 0. 核心结论
+
+1. **味之素在普通投资者心中仍是日本调味品、食品和氨基酸公司；在 AI 基建投资人眼里，它是 ABF 绝缘膜的近垄断材料供应商。** 公司 FY2025 销售 `1.5837 万亿日元`，业务利润 `1811.6 亿日元`，归母利润 `1346.8 亿日元`；食品仍占收入约 `59%`，但资本市场对估值重估的焦点是 Healthcare and Others 中的 Functional Materials，尤其是 Ajinomoto Build-up Film（ABF）。
+2. **AI 相关收入不是公司收入主体，但可能是利润和估值弹性的主体。** 公司不单独披露 Functional Materials / ABF 收入和利润。基于公司分部、官方 ABF 材料、Palliser 估算和行业 BOM 反推，FY2025 ABF/Functional Materials 可能贡献约 `1000-1200 亿日元`销售、`500-600 亿日元`业务利润，约占集团销售 `6-8%`、业务利润 `25-35%`；其中 AI 数据中心/AI GPU+ASIC 相关 ABF 可能约 `350-550 亿日元`销售，仍属估算。
+3. **ABF 的投资逻辑是“极小 BOM 成本 + 极高失效代价 + 长认证周期”。** 官方 ABF 故事称 ABF 在高性能计算机和数据中心服务器中扮演关键绝缘材料角色，全球份额“约 95%”；公司 2023 ABF briefing 显示 HPC 基板 ABF 用量可超过 PC 基板 `10x`，并计划自 FY2023 起投入约 `250 亿日元`扩产。Palliser 2026-03 报告进一步主张 ABF 只占 AI GPU 售价 `<0.1%`，但在高层 AI 基板上接近不可替代。
+4. **最新 FY2026 指引显示增长重心仍在 Healthcare and Others。** FY2026 公司指引销售 `1.7230 万亿日元`（同比 `+8.8%`）、业务利润 `1970 亿日元`（同比 `+8.7%`）、归母利润 `1200 亿日元`（同比 `-10.9%`，主要少了 FY2025 总部土地出售一次性收益）。分部看，Healthcare and Others 指引销售 `3978 亿日元`（同比 `+16.5%`）、业务利润 `800 亿日元`（同比 `+20.8%`），是收入和利润增速最高的正式分部。
+5. **资产负债表健康，但不是“净现金材料公司”。** FY2025 末总资产 `1.8123 万亿日元`、总负债 `9680 亿日元`、总权益 `8442 亿日元`，归母权益比率 `42.5%`；现金 `1066 亿日元`，经营现金流 `2393 亿日元`，但债券、长期借款、商业票据和大额回购并存。偿债健康度可接受，真正要跟的是 ABF 扩产、客户长约和价格传导，而不是短期流动性。
+6. **风险重点：公司没有单独披露 ABF，食品和冷冻食品会稀释 AI 叙事；ABF 提价不一定按激进股东想法执行；玻璃基板、organic interposer 和 panel-level packaging 是替代/共存技术，但 2026-2027 主流仍是高层 ABF + CoWoS/2.5D + HBM。**
+
+## 1. 公司整体业务、投资人认知和产业链定位
+
+### 1.1 业务结构
+
+味之素是以“氨基酸科学”为技术底座的全球食品、营养、医药服务和功能材料集团。正式分部口径如下：
+
+| 分部 | FY2025 销售 | 销售占比 | FY2025 业务利润 | 分部业务利润率 | 同比销售 | 同比业务利润 | 主要产品 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Seasonings and Foods | `9369 亿日元` | `59.2%` | `1430 亿日元` | `15.3%` | `+4.6%` | `+6.6%` | AJI-NO-MOTO、HON-DASHI、Cook Do、Knorr、Blendy、ACTIVA 酶、工业甜味剂等 |
+| Frozen Foods | `2903 亿日元` | `18.3%` | `84.6 亿日元` | `2.9%` | `+0.3%` | `-35.0%` | 饺子、炒饭、面食、炸鸡、餐饮甜点等 |
+| Healthcare and Others | `3415 亿日元` | `21.6%` | `662 亿日元` | `19.4%` | `+4.0%` | `+45.1%` | 氨基酸、培养基、Bio-Pharma CDMO、ABF 电子材料、PLENSET、AFTINNOVA、个人护理原料、医疗食品等 |
+| Other | `150 亿日元` | `0.9%` | `60.6 亿日元` | `40.5%` | `-10.6%` | `-4.9%` | 服务和协作业务 |
+| Shared expenses | - | - | `-426 亿日元` | - | - | - | 总部费用 |
+| 合计 | `1.5837 万亿日元` | `100%` | `1811.6 亿日元` | `11.4%` | `+3.5%` | `+13.7%` | - |
+
+**投资人认知分层：**
+
+- **传统日本消费/食品股视角：** 稳定品牌、海外调味品增长、价格传导和经营效率改善，类似“食品现金牛 + 氨基酸技术平台”。
+- **AI 材料股视角：** ABF 是 FC-BGA/高层有机基板的事实标准，连接先进芯片和系统板，是 NVIDIA/AMD/Broadcom/云厂 ASIC 放量背后的材料约束之一。
+- **活动投资人视角：** Palliser 2026-03 公开建议：把 Functional Materials/ABF 作为独立分部披露，并将 ABF 价格上调 `30%+`，因为其战略价值远高于当前货币化程度。
+
+### 1.2 最近 3 年重大业务变动、转型和收购
+
+| 时间 | 事件 | 对公司定位的影响 |
+|---|---|---|
+| 2023-06 | 公司举行 `ABF-Based Growth Strategy in ICT` briefing，明确 ABF 产品线覆盖 PCs、servers、networks、AI、game devices、automobiles、mobile devices，并提出从 FY2023 起约 `250 亿日元`增产投资 | ABF 从“食品公司副业”升级为 ICT/AminoScience 成长核心；投资人开始把味之素放进 AI 封装材料链 |
+| 2023-11 | 宣布收购美国 Forge Biologics，进入基因疗法 CDMO | 强化 Healthcare/Bio-Pharma，但也引入商誉、整合和产能利用风险 |
+| 2024-2025 | 出售 Ajinomoto Althea、推进北美 Hayward Plant 冷冻食品结构改革 | 清理低回报资产；FY2024 归母利润受 impairment/结构改革费用压制 |
+| 2025-04-01 | 普通股 `2-for-1` 拆股生效 | 提升流动性；股价和 EPS 需注意拆股调整 |
+| 2025-2026 | 加大股东回报：FY2025 回购 `1300 亿日元`，FY2026 指引每股股息 `50 日元` | 资本效率改善，但现金下降；估值更受 ABF 透明度和 ROE 驱动 |
+| 2026-02 | 总部土地/建筑转让，预计资本利得约 `406 亿日元`，FY2025 Q4 计入其他经营收入 | FY2025 归母利润高增含一次性收益，FY2026 指引归母利润同比下降不代表核心经营恶化 |
+
+### 1.3 产业链位置
+
+**ABF 所处位置：**
+
+`基础化学/树脂/填料` -> `Ajinomoto Fine-Techno：ABF varnish / build-up film / 技术支持` -> `涂布/切割/低温物流外包` -> `Ibiden / Shinko / Unimicron / Nan Ya / AT&S / Samsung Electro-Mechanics 等高端 substrate 厂` -> `TSMC CoWoS / OSAT / 封装厂` -> `NVIDIA / AMD / Broadcom custom ASIC / Google TPU / AWS Trainium / Microsoft Maia / Meta MTIA` -> `AI 服务器、NVL72/ORW/UltraServer、数据中心`
+
+**定位判断：**
+
+- 味之素不是 GPU/ASIC 设计公司，不直接卖 AI 芯片，也不是数据中心设备商。
+- 它是 **AI 先进封装材料层** 的关键供应商，材料价值占终端 GPU 售价极低，但客户替换失败会造成高价值芯片/封装报废或延迟。
+- 对应本地行业资料口径，2026-2027 AI 芯片放量的主流路径仍是 `CoWoS/large 2.5D + HBM3E/HBM4 + 高端 ABF/organic substrate + 测试 + 液冷`；玻璃基板、panel-level、CPO in-package 多数仍是 2027-2028 以后的增量变量。
+
+## 2. 最新股价、估值、利润率和资产负债表
+
+### 2.1 市场数据快照
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 日本普通股价格 | `5084 日元` | 2026-06-11，Google Finance/FT 搜索片段 | TSE `2802.T`；普通股是主交易口径 |
+| AJNMY ADR 价格 | `31.85 美元` | 2026-06-11，Investing.com 搜索片段 | OTC ADR，1 ADR : 1 ordinary share；OTC 流动性弱，需以日股为主 |
+| 市值 | `约 4.97 万亿日元` / `约 306.7 亿美元` | 2026-06-11，Google/Investing.com 搜索片段 | 与汇率、OTC 延迟报价会有差异 |
+| TTM P/E | `约 36.7x` | 2026-06-11，Google Finance；用 FY2025 归母利润校验约 `36.9x` | FY2025 含 `406 亿日元`土地出售收益；正常化 P/E 更高 |
+| Forward P/E | 市场口径 `约 33.3-33.7x`；官方净利指引口径 `约 41.4x`；正常化业务利润税后口径 `约 34-35x` | 2026-06-10/11，Yahoo + 公司 FY2026 指引 | 官方 FY2026 归母利润 `1200 亿日元`低于 FY2025，因少一次性收益；市场更看正常化盈利 |
+| P/S | `约 3.1x`；Yahoo AJNMY 口径 `2.90x` | 2026-06-10/11 | 以 `4.97 万亿日元 / 1.5837 万亿日元` 得约 `3.14x` |
+| 收入增速 | FY2025 `+3.5%`；FY2026 指引 `+8.8%` | FY2025 年报；FY2026 公司指引 | FY2026 增长重心在 Healthcare and Others |
+| 毛利率 | `约 37.7%` | TTM/最新财务站点，FY2025 收入 `1.5837 万亿日元`、毛利约 `5971 亿日元` | 食品 + 高毛利材料组合 |
+| 业务利润率 | `11.4%` | FY2025 年报 | `1811.6 / 15837.2` |
+| 净利率 | `8.5%` | FY2025 年报归母净利 | 含土地出售收益；正常化净利率低于该值 |
+| ROE / ROIC | 公司 ASV 口径：FY2024 特殊因素剔除后 ROE `14.7%`、ROIC `9.8%`；2030 目标 ROE `20%` | 2025-05-08 FY2025 预测说明会 | FY2025/FY2026 需关注 ABF 透明度和食品低回报业务改善 |
+
+### 2.2 资产负债表健康度
+
+| 项目 | FY2025 末数值 | 判断 |
+|---|---:|---|
+| 总资产 | `1.8123 万亿日元` | 同比增加 `912 亿日元`，主因汇率和固定资产 |
+| 总负债 | `9680 亿日元` | 同比增加 `602 亿日元`，主因应付款增加 |
+| 总权益 | `8442 亿日元` | 同比增加 `310 亿日元` |
+| 归母权益 | `7708 亿日元` | 归母权益比率 `42.5%`，比 FY2024 末 `43.4%`略降 |
+| 现金及现金等价物 | `1066 亿日元` | 同比减少 `580 亿日元`，主要受大额回购、分红、投资和融资现金流影响 |
+| 经营现金流 | `2393 亿日元` | 高于 FY2024 的 `2099 亿日元`，现金创造能力强 |
+| 投资现金流 | `-842 亿日元` | CapEx/无形资产投入、金融资产购买与土地出售流入相抵 |
+| 融资现金流 | `-2256 亿日元` | 包括回购 `1300 亿日元`、分红 `432 亿日元`、偿还债券等 |
+| 流动性安排 | 公司称保有承诺授信、透支和商业票据额度 | 短期流动性风险低 |
+
+**健康度评价：中高。** 味之素不是高杠杆周期材料公司，食品和调味品现金流稳定，FY2025 经营现金流充足。约束点不是偿债，而是三件事：第一，ABF 扩产是否足够快且能保持良率；第二，是否敢把 ABF 价格向战略价值重定价；第三，冷冻食品、低回报 CDMO/食品资产是否继续稀释 ROIC。
+
+## 3. 最新和最近 4 次财报：关键数字、订单和 AI 相关占比
+
+公司按累计期间披露季度财报。下表将累计披露差分为单季估算，单位为 `十亿日元`。订单、交期、取消率不是公司正式披露项，以下为官方表述 + 外部渠道/行业资料推断。
+
+| 财报/期间 | 披露日期 | 单季销售 | 单季业务利润 | 单季归母利润 | 单季分部销售：食品/冷冻/H&O | H&O 单季业务利润 | 订单/交期/取消率信号 | AI 数据中心相关收入占比估算 |
+|---|---:|---:|---:|---:|---|---:|---|---|
+| FY2025 Q4（FY2025 年报差分） | 2026-05-07 | `419.6` | `35.2` | `44.9` | `241.9 / 73.6 / 98.9` | `17.3` | 公司称 Healthcare and Others 受电子材料强劲销售推动；Q4 归母含总部土地出售约 `406 亿日元`资本利得；无 backlog/取消率披露 | 集团收入 `约 3-5%`；H&O 内约 `15-25%`；核心是 ABF/Functional Materials，置信度中 |
+| FY2025 Q3（9M 差分） | 2026-02-05 | `425.3` | `59.2` | `38.5` | `259.1 / 78.2 / 84.5` | `18.8` | 9M H&O 销售几乎持平，因出售 Althea 抵消电子材料强劲；9M H&O 业务利润 `+26.2%`，说明 mix/利润率改善 | `约 3-4%`；ABF 高端 AI mix 继续提升，未披露客户 |
+| FY2025 Q2（H1 差分） | 2025-11-06 | `374.9` | `39.5` | `19.0` | `222.6 / 69.8 / 79.1` | `14.7` | 公司 Q2 presentation 称 Functional Materials 销售和业务利润均为上年 `120%`，H2 继续加速；无 backlog 披露 | `约 2-4%`；AI/HPC ABF 处于放量早段 |
+| FY2025 Q1 | 2025-08-04 | `364.0` | `47.2` | `32.2` | `213.4 / 68.8 / 79.0` | `15.4` | H&O 收入同比增加，电子材料拉动；库存增加 `184 亿日元`，但未按 ABF 拆分 | `约 2-4%`；以 AI server/server/network ABF 为主 |
+| FY2024 Q4（FY2024 年报差分） | 2025-05-08 | `379.5` | `21.1` | `-12.2` | `218.2 / 70.6 / 85.6` | `6.9` | FY2024 年报说明 Healthcare and Others 恢复，Functional Materials 扎实增利；Q4 受 Althea/Hayward impairment 和结构改革费用压制 | `约 2-3%`；ABF 已受 AI/HPC 拉动，但公司未单独披露 |
+
+**财报读法：**
+
+- **集团销售的季度波动不等于 ABF 需求波动。** 食品、冷冻食品、汇率、资产出售和 CDMO 处置会掩盖 Functional Materials。
+- **H&O 利润比收入更有信号。** FY2025 H&O 销售仅 `+4.0%`，但业务利润 `+45.1%`，说明电子材料/ABF mix、价格和产能利用率明显改善。
+- **Backlog 不披露。** 对 ABF 只能用三类替代信号：客户/基板厂长约和扩产、ABF lead time/价格渠道、AI GPU/ASIC 平台层数和面积上升。
+- **取消率暂无负面证据。** 未看到公司披露 ABF 订单取消；反证指标应是高层 ABF ASP 连续两季下跌、交期回到 12 周以下、CoWoS/HBM 利用率下滑或 AI GPU 租赁价大幅下降。
+
+## 4. FY2026 最新指引、业务收入占比和产品映射
+
+### 4.1 FY2026 公司指引
+
+| 分部 | FY2026 指引销售 | 销售占比 | 同比销售 | FY2026 指引业务利润 | 业务利润率 | 同比业务利润 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Seasonings and Foods | `9986 亿日元` | `58.0%` | `+6.6%` | `1459 亿日元` | `14.6%` | `+2.0%` | 稳定现金牛，价格和海外销量支撑，但不是 AI 弹性 |
+| Frozen Foods | `3106 亿日元` | `18.0%` | `+7.0%` | `121 亿日元` | `3.9%` | `+44.1%` | 低利润率恢复，仍是 ROIC 拖累之一 |
+| Healthcare and Others | `3978 亿日元` | `23.1%` | `+16.5%` | `800 亿日元` | `20.1%` | `+20.8%` | **最突出分部**，Functional Materials/ABF 和 Bio-Pharma/Ingredients 为主驱动 |
+| Other | `158 亿日元` | `0.9%` | `+5.9%` | `51 亿日元` | `32.3%` | `-15.6%` | 小分部 |
+| Shared expenses | - | - | - | `-462 亿日元` | - | 费用增加 | 总部费用 |
+| 合计 | `1.7230 万亿日元` | `100%` | `+8.8%` | `1970 亿日元` | `11.4%` | `+8.7%` | 销售/业务利润新高，归母利润因缺少一次性收益同比下降 |
+
+### 4.2 产品和业务优先级
+
+| 产品/业务 | 对应分部 | AI 数据中心相关性 | 当前披露/证据 | 处理方式 |
+|---|---|---:|---|---|
+| **ABF / Ajinomoto Build-up Film** | H&O / Functional Materials | 极高 | 官方称高性能计算机和数据中心服务器关键材料，约 `95%`份额；2023 briefing 称 HPC 用量超过 PC `10x`；FY2025 电子材料强劲 | 重点深挖 |
+| **低损耗/高层 ABF、ABF-RCC、next-generation ABF** | H&O / Functional Materials | 极高 | 2023 briefing 列出 ABF-RCC、低介电损耗和下一代材料；Palliser 称 GL-type ABF 是 AI GPU/custom ASIC FC-BGA 事实标准 | 重点小业务，不单独披露，需估算 |
+| **AFTINNOVA Magnetic Film / 磁性材料** | H&O / Functional Materials | 中 | 官方列入 Functional Materials；2023 briefing 把磁性材料作为 ABF core technology 延伸，面向 inductor/节能 | 小但不能漏，作为可选项 |
+| **PLENSET adhesives、molding film/ink、activated carbon、release paper** | H&O / Functional Materials | 低到中 | 官方产品列示；AI 直接证据弱 | 只在材料平台里提及，不做核心估值 |
+| **Amino acids / culture media / medical foods** | H&O | 低 | 培养基和医疗营养有增长，但与 AI 基建无关 | 财务上关注，AI 部分跳过 |
+| **Bio-Pharma Services/CDMO：Forge 等** | H&O | 低 | FY2026 H&O 增长的另一驱动；Althea 出售改变口径 | 作为非 AI 高增长业务单列，不进入 AI BOM |
+| **Seasonings/Foods、Frozen Foods、sports nutrition、personal care、feed-use amino acids、crop services** | 食品/冷冻/H&O 其他 | 低 | 与 AI 数据中心无直接关系，增长和利润率低于 ABF | 明确跳过 AI 深挖 |
+
+## 5. 高增长/关键产品当前收入贡献、增速和 AI 基建重要性
+
+评分：1=弱，5=极强。收入为 FY2025 估算或披露值，`USD` 按 `150 日元/美元`。
+
+| 产品/业务 | 当前收入贡献 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 证据强度 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| **ABF / 高层 build-up film** | 估算 `1000-1200 亿日元`（`6.7-8.0 亿美元`）；其中 AI/DC 相关估算 `350-550 亿日元` | H1 FY2025 Functional Materials 销售/利润约 `120%` of prior year；FY2025 全年估算 `+20-30%` | `5` | `5` | `4.5` | `5` | 中高：公司披露分部 + 官方 ABF 技术 + Palliser/行业渠道 |
+| **低损耗/大尺寸/next-gen ABF、ABF-RCC** | 已包含在 Functional Materials；增量估算 `50-150 亿日元` | `+30-60%`，取决于 AI GPU/ASIC design-in | `5` | `4.5` | `4` | `4.5` | 中：产品官方列示，但客户/金额未拆 |
+| **AFTINNOVA 磁性膜/inductor 材料** | 估算 `<50 亿日元` | 早期，可能 `+10-30%`，基数小 | `2.5` | `2.5` | `2` | `3` | 低到中：官方列示，AI 订单证据不足 |
+| **Bio-Pharma Services & Ingredients / culture media** | H&O 非 ABF 大块收入，无法精确拆；估算 `1500-2200 亿日元`宽区间 | FY2026 有增长，Forge/Althea 口径扰动 | `1` | `2` | `2` | `2.5` | 中：公司分部披露强，但与 AI 无关 |
+
+**当前最值得重视的产品排序：**
+
+1. ABF 高层 AI/HPC substrate 用膜。
+2. 低损耗、低翘曲、大尺寸 next-generation ABF / ABF-RCC。
+3. AI package 相关粘接/磁性/低 CTE 材料平台。
+4. Bio-Pharma/culture media 是财务增长项，但不是 AI 基建。
+
+## 6. 一年后产品收入贡献三情景
+
+下表预测的是 2027-06 左右的年化贡献，不是公司指引；ABF 与 next-gen ABF 存在包含关系，不能机械相加。
+
+| 产品/业务 | 情景 | 一年后收入贡献 | 收入增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 条件 |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| ABF / 高层 build-up film | 基准 | `1250-1450 亿日元`（`8.3-9.7 亿美元`） | `+18-25%` | `5` | `5` | `4` | `5` | GB300/MI350/TPU/Trainium/Broadcom ASIC 按计划放量，ABF 小幅提价，高端 mix 上行 |
+| ABF / 高层 build-up film | 乐观 | `1500-1800 亿日元`（`10-12 亿美元`） | `+35-55%` | `5` | `5` | `4.5` | `5` | AI GPU/ASIC package 面积和层数继续上升；ABF ASP `+10-20%`；客户接受 allocation |
+| ABF / 高层 build-up film | 极度乐观 | `1900-2300 亿日元`（`12.7-15.3 亿美元`） | `+70-100%` | `5` | `5` | `5` | `5` | Palliser 式 `30%+`涨价部分实现，Rubin/MI400/HBM4/多客户 XPU 把高端 ABF 变成最紧环节之一 |
+| next-gen ABF / ABF-RCC / low-loss 系列 | 基准 | `100-200 亿日元` | `+30-50%` | `5` | `4` | `3.5` | `4` | 在下一代 AI substrate 设计中逐步导入 |
+| next-gen ABF / ABF-RCC / low-loss 系列 | 乐观 | `200-350 亿日元` | `+70-120%` | `5` | `4.5` | `4` | `4.5` | 低损耗/低翘曲规格成为 GB300/Rubin/ASIC 主流高阶材料 |
+| next-gen ABF / ABF-RCC / low-loss 系列 | 极度乐观 | `350-600 亿日元` | `+150%+` | `5` | `5` | `4.5` | `5` | 玻璃/organic interposer 试产仍需 Ajinomoto build-up dielectric，产品从替代风险变成平台材料 |
+| AFTINNOVA / magnetic film | 基准 | `<80 亿日元` | `+10-25%` | `2.5` | `2.5` | `2` | `3` | inductor/低功耗材料小规模扩张 |
+| AFTINNOVA / magnetic film | 乐观 | `80-150 亿日元` | `+40-100%` | `3` | `3` | `3` | `3.5` | AI power integrity 和高频封装诱发 design-in |
+| AFTINNOVA / magnetic film | 极度乐观 | `150-300 亿日元` | `+200%+` | `3.5` | `3.5` | `3.5` | `4` | 成为高密 AI package/board 低损耗或 inductor 材料标准之一；目前证据不足 |
+
+## 7. BOM、单位内容量和价格传导链
+
+### 7.1 ABF 的真实物理内容量
+
+官方 ABF 技术资料给出两个关键锚点：
+
+- ABF 是 semiconductor packaging substrate 层间绝缘材料，单层厚度约 `10 微米`。
+- 2023 ABF briefing 显示 PC 基板使用总计 `6 层 ABF`，HPC 基板使用总计 `18 层 ABF`，HPC substrate surface area index 约 `3.5x`，因此 HPC ABF layer-area 约为 PC 的 `10.5x`。
+
+Palliser 2026-03 报告给出更激进的 AI GPU 迭代锚点：
+
+| 平台示例 | Package / substrate body size | Layer count | 面积倍数 vs PC CPU | ABF layer-area 倍数 vs PC CPU |
+|---|---:|---:|---:|---:|
+| Intel PC CPU | `42.5 x 37.5 mm` | `10` | `1.0x` | `1.0x` |
+| NVIDIA Hopper | `55 x 55 mm` | `12` | `2.3x` | `约 2.8x` |
+| NVIDIA Blackwell | `80 x 75 mm` | `14` | `5.3x` | `约 7.4x` |
+| NVIDIA Rubin Ultra | `155 x 75 mm` | `18` | `13.3x` | `约 24x` |
+
+**按 Blackwell/Rubin 近似换算：**
+
+| 单位 | Blackwell 级估算 | Rubin Ultra 级估算 | 说明 |
+|---|---:|---:|---|
+| 每 GPU ABF layer-area | `80 x 75 mm x 14 = 84,000 mm²`，约 `0.084 m²` | `155 x 75 mm x 18 = 209,250 mm²`，约 `0.209 m²` | layer-area，不等于实际平面面积 |
+| 每 72-GPU rack 的 GPU ABF layer-area | `约 6.0 m²` | `约 15.1 m²` | 只算 GPU，不含 Grace CPU、NVSwitch、NIC、switch ASIC |
+| 每 rack 加上 CPU/NVSwitch/NIC/board ASIC | `约 8-12 m²` | `约 18-25 m²` | 粗估，取决于 NVL72/ORW/UltraServer 架构 |
+| 每 MW IT load | `约 5-10 racks/MW`，即 `360-720 GPUs/MW` | `约 5-8 racks/MW`，即 `360-576 GPUs/MW` | 100-200kW/rack 区间 |
+| 每 MW ABF layer-area | `约 40-120 m²` | `约 90-200 m²` | 仅 ABF 膜层面积口径，非 substrate 总面积 |
+
+### 7.2 价格传导链
+
+| 层级 | 单位价值/成本口径 | 价格传导能力 | 对味之素的含义 |
+|---|---:|---|---|
+| AI GPU 销售价 | Blackwell 级 `3-4 万美元/GPU`的渠道估算 | NVIDIA/平台方最强 | ABF 成本对终端极小，涨价理论空间大 |
+| AI GPU substrate 成本 | Palliser 口径：ABF substrate cost `<1%` of AI GPU ASP，即 `<300-400 美元/GPU` | 高端 substrate 厂在供不应求时可提价 | 味之素不是卖 substrate，而是卖 ABF 膜 |
+| ABF 在 substrate BOM | Palliser 口径：ABF 约为 ABF substrate BOM `~10%` | 极强，因认证/替换成本高 | ABF 膜理论 `<30-40 美元/GPU`，却决定高价值 package 是否可出货 |
+| 每 72-GPU rack ABF 膜收入 | GPU 部分约 `2000-3000 美元/rack`；加 CPU/NVSwitch/NIC 约 `3000-8000 美元/rack` | 小料高壁垒 | 即使 ABF 涨价 `30%`，对 rack 成本影响很小 |
+| 每 MW ABF 膜收入 | `2-8 万美元/MW`粗估 | 取决于 rack 密度和 GPU/ASIC 数量 | 对数据中心 CapEx 几乎不可见，但对 Ajinomoto 收入很敏感 |
+| 对公司收入 | FY2025 ABF 估算 `6.7-8.0 亿美元` | 供给紧 + 高 mix 可带来利润杠杆 | 估值弹性来自 ABF 毛利率/透明度，而非公司总收入占比 |
+
+### 7.3 产能能力和采纳程度
+
+| 产品 | 当前产能能力（销售额口径） | 当前供应链采纳 | 认证阶段 | 判断 |
+|---|---:|---|---|---|
+| ABF / 高层 build-up film | 估算当前可支持 `1000-1300 亿日元/年`销售；公司 2023 起约 `250 亿日元`扩产投资，外部资料称 2030 目标约 `+50%`产能 | 高性能 CPU、GPU、ASIC、server/network substrate 事实标准；官方称约 `95%`份额 | 主流高性能 substrate 已量产认证；高端 AI 客户具体名单不披露 | 产能瓶颈主要在 varnish、质量一致性、coating/低温物流协同和客户配方认证 |
+| 低损耗/next-gen ABF / ABF-RCC | 已在产品线内，销售不拆 | 进入下一代高频、高层、大尺寸 substrate 设计；与 substrate 厂和芯片客户 co-development | design-in / qualification 到早期量产并存 | 最重要的不是新增客户数，而是能否成为 Rubin/MI400/ASIC 后续代际 default material |
+| AFTINNOVA magnetic film | 小规模，估算 `<50 亿日元/年` | inductor/节能材料方向，AI 直接采用未公开 | early commercial / qualification | 作为 optionality，不能按 ABF 估值 |
+
+## 8. 一年后产能、采纳和认证三情景
+
+| 产品 | 情景 | 一年后产能能力（销售额口径） | 供应链采纳 | 认证阶段 |
+|---|---|---:|---|---|
+| ABF / 高层 build-up film | 基准 | `1350-1550 亿日元/年` | 现有 CPU/GPU/ASIC substrate 全面维持；AI mix 上升到 `35-45%` | 现有高端平台 mass production，下一代平台 qualification |
+| ABF / 高层 build-up film | 乐观 | `1600-1900 亿日元/年` | AI GPU/ASIC substrate allocation 紧，客户接受涨价和长约 | Blackwell/GB300/MI350/TPU/Trainium/Broadcom XPU 高端规格全面导入 |
+| ABF / 高层 build-up film | 极度乐观 | `2100-2500 亿日元/年` | 产能仍卖光，AI mix `>55%`，普通 PC/消费规格被高端需求挤出 | Rubin/MI400/HBM4/custom ASIC 进入高层低损耗 ABF 标配；价格 `+30%`部分实现 |
+| next-gen ABF / ABF-RCC | 基准 | `150-250 亿日元` | 高端 substrate 的部分层/部分客户 | qualification / early ramp |
+| next-gen ABF / ABF-RCC | 乐观 | `300-500 亿日元` | 低损耗、大尺寸、低翘曲成为 AI ASIC/GPU 高频要求 | 多客户 design-in，少数平台量产 |
+| next-gen ABF / ABF-RCC | 极度乐观 | `600 亿日元+` | 与 glass/organic interposer 共存，不被替代，反而成为 build-up 标准 | 2027 H2 主流高端平台量产认证 |
+| AFTINNOVA / magnetic film | 基准 | `<80 亿日元` | 小批量 | early commercial |
+| AFTINNOVA / magnetic film | 乐观 | `80-150 亿日元` | power/inductor 材料获得少数 AI 平台 design-in | qualification |
+| AFTINNOVA / magnetic film | 极度乐观 | `150-300 亿日元` | 成为高密 AI package/board 节能材料之一 | early mass production；当前证据不足 |
+
+## 9. 基于订单积压和供给推断未来一年业务增速
+
+### 9.1 可观察订单和供给信号
+
+| 信号 | 证据 | 对 ABF 的含义 | 置信度 |
+|---|---|---|---|
+| 公司官方 | FY2025 H&O 业务利润 `+45.1%`，主要受电子材料更高收入和 Bio-Pharma 利润增加推动；FY2026 H&O 指引销售 `+16.5%`、业务利润 `+20.8%` | ABF/Functional Materials 仍是核心增长项 | 高 |
+| 公司技术资料 | ABF 在 2023 briefing 中已把 AI/HPC、server、network 作为需求驱动，HPC 用量超 PC `10x` | 单颗 GPU/ASIC 价值量上升比出货量更关键 | 高 |
+| Palliser 渠道 | ABF lead time doubled；substrate makers 2026H1 可能逐季涨价 `3-5%`；主张 ABF 价格 `+30%` | ABF 存在价格传导窗口，但激进涨价不是公司承诺 | 中 |
+| 本地行业资料 | 高端 ABF/FC-BGA、CoWoS/中介层、HBM 仍是 2026-2027 AI 交付瓶颈；普通 ABF 与高端 AI ABF 分化 | 不能用普通 PC ABF 周期判断 AI ABF | 中高 |
+| 客户长约/扩产 | Ibiden、AT&S 等高端 substrate 厂围绕 AI server/high-performance server 扩产、长约融资 | substrate 端订单会提前传导至 ABF 材料锁单 | 中 |
+| 取消率 | 未见 ABF 取消率披露；暂无明确取消信号 | 维持供不应求假设，但要盯 AI CapEx/租赁价/CoWoS 利用率 | 中 |
+
+### 9.2 未来一年 ABF/Functional Materials 增速三情景
+
+| 情景 | FY2026-2027 年化 ABF 增速 | 价格假设 | 供给假设 | 订单/需求假设 | 对集团业务利润影响 |
+|---|---:|---:|---|---|---|
+| 基准 | `+18-30%` | ASP `+3-8%`，主要来自 mix | 扩产逐步释放，仍偏紧 | GB300/MI350/TPU/Trainium/Broadcom ASIC 如期；Rubin/HBM4 2027 主升 | 集团业务利润增量 `+120-180 亿日元`，H&O 贡献大部分 |
+| 乐观 | `+35-55%` | ASP `+10-20%`，高端客户接受部分重定价 | 高端产能满载，客户长约锁量 | 多云厂 ASIC 和 NVIDIA/AMD 同时抢 substrate；CoWoS 缓解后反而增加 ABF 拉货 | 集团业务利润增量 `+250-400 亿日元`，可能高于公司指引 |
+| 极度乐观 | `+70-100%` | ASP `+30%+` 部分执行，AI mix 大幅上移 | 仍严重短缺，普通规格被高端挤出 | Rubin/MI400/HBM4/Trainium3/TPU/Broadcom XPU 全线超预期，ABF 成为公开 bottleneck | ABF 利润可单独推动集团 BP 上修 `400 亿日元+`；但执行和客户关系风险高 |
+
+**反证阈值：** 高层 ABF ASP 连续两季下跌 `10%+`；AI substrate lead time 回到 `12 周`以下；CoWoS lead time 回到 `26 周`以内且利用率 `<85%`；GPU/ASIC 客户推迟 rack 验收；AI GPU 租赁价下跌 `20%+`且利用率低于 `60%`。
+
+## 10. 竞争格局、替代方案和客户切换成本
+
+### 10.1 直接和间接竞争者
+
+| 类型 | 主要公司/技术 | 与味之素关系 | 竞争判断 |
+|---|---|---|---|
+| ABF/绝缘 build-up film 直接替代 | Resonac、Panasonic Industry、Sumitomo Bakelite、Mitsui Chemicals、Toray、DuPont、JSR/TOK、国产材料商等 | 可能提供 dry film、PID、resin、low-CTE core、封装树脂等 | 在普通/部分材料上竞争，顶级高层 AI ABF 直接替代难 |
+| 高端 substrate 客户/生态 | Ibiden、Shinko、Unimicron、Nan Ya PCB、AT&S、Samsung Electro-Mechanics、Kinsus、Daeduck、Toppan/DNP | 多数是 ABF 客户或合作生态 | 不是味之素直接竞争者；它们决定 ABF 拉货、认证和价格传导 |
+| 先进封装平台 | TSMC CoWoS/SoIC、Intel EMIB/Foveros、Samsung I-Cube/X-Cube、ASE/Amkor/JCET | 下游平台，决定 material stack | 平台越复杂，对已认证材料越依赖 |
+| 替代封装路线 | glass core/TGV、organic interposer、silicon bridge、RDL interposer、panel-level packaging、CPO/optical interposer | 中长期可能改变材料组合 | 2026-2027 多为共存和试产；未构成全面替代 |
+| 客户内部替代 | NVIDIA/AMD/Broadcom/云厂设计改变，减少高层 ABF 用量 | 架构层面风险 | 短期较低；AI die/HBM/IO/power 趋势反而提高层数和面积 |
+
+### 10.2 新技术是否是主流
+
+**ABF 仍是 2026-2027 主流。** 本地封装基板资料的核心判断是：2026 年不是玻璃基板全面替代 ABF，而是高层 ABF/有机基板 + 硅中介层/CoWoS + 更大 RDL/桥接结构继续吃紧。原因如下：
+
+- NVIDIA GB200/GB300、AMD MI350、Google TPU、AWS Trainium、Microsoft Maia、Broadcom XPU 都仍需要高端有机 substrate。
+- AI package 尺寸、层数、低损耗、低翘曲、热循环和良率要求上升，普通 PCB/普通 ABF 产能不能替代。
+- 新材料客户认证周期长，通常要覆盖 SI/PI、热、机械、湿热、长期可靠性和整包良率；切换材料可能导致 yield loss 和 time-to-market 延迟。
+
+**替代风险的正确理解：**
+
+- **Glass core/TGV：** 远期替代或共存，2026 更像设备、材料、检测和试产机会；如果 2027 大客户提前导入，Ajinomoto 可能仍通过 build-up dielectric/low-loss resin 参与，而不是完全被替代。
+- **Organic interposer/RDL：** 会提升低损耗树脂、dry film、RDL 材料需求，对 ABF 是部分替代也是部分增量。
+- **CPO/optical I/O：** 短期主要在交换侧、光引擎和 optical packaging，GPU package 内置大规模普及更晚；对 ABF 不是 2026 直接替代。
+- **客户压价：** 最大商业风险不是技术替代，而是 NVIDIA/TSMC/substrate 厂议价，把一部分稀缺利润留在下游。
+
+### 10.3 客户替换成本
+
+| 替换环节 | 替换成本 | 原因 |
+|---|---:|---|
+| AI GPU/ASIC package 中替换 ABF 材料 | 极高 | 需要重新验证绝缘、低损耗、CTE、warpage、laser via、copper plating、thermal cycling、湿热可靠性 |
+| substrate 厂替换 ABF 系列 | 高 | 设备 recipe、良率、客户材料清单和长期 reliability 数据绑定 |
+| 终端芯片客户换 substrate 厂 | 高 | 设计周期 12-36 个月，涉及 CoWoS/OSAT/HBM/test 联动 |
+| 从 ABF 转 glass/panel 路线 | 中长期高 | 需要 TGV、RDL、large-field lithography、检测、切割、可靠性全套成熟 |
+| 普通 PC/消费 substrate 切换 | 中 | 规格较低，竞争和周期性强于 AI 高层基板 |
+
+## 11. 财务建模提示：如何把 ABF 反映到味之素估值
+
+### 11.1 分部透明度不足带来的估值折价
+
+公司当前把 ABF 放在 Healthcare and Others 内，和 Bio-Pharma、氨基酸、个人护理、医疗食品等混在一起。结果是：
+
+- 食品业务给公司稳定性，但也让市场低估 ABF 的毛利和 ROIC。
+- H&O 利润增长强，但无法直接判断 ABF 价格、销量、客户 mix、产能利用率。
+- Palliser 要求独立披露 Functional Materials 分部，本质是降低“食品集团折价”。
+
+### 11.2 估值情景
+
+| 情景 | ABF 年化收入 | ABF 业务利润率 | ABF 业务利润 | 集团业务利润 | 估值含义 |
+|---|---:|---:|---:|---:|---|
+| 保守 | `1000-1200 亿日元` | `45-50%` | `450-600 亿日元` | `1900-2000 亿日元` | 当前估值主要反映稳健食品 + 高增长材料，缺少强上修 |
+| 基准 | `1250-1450 亿日元` | `52-58%` | `650-840 亿日元` | `2000-2150 亿日元` | Forward P/E 正常化落在 `30x`出头，ABF 支撑溢价 |
+| 乐观 | `1500-1800 亿日元` | `58-63%` | `870-1130 亿日元` | `2200-2500 亿日元` | 如果独立披露，市场可能按高壁垒半导体材料重新定价 |
+| 极度乐观 | `1900-2300 亿日元` | `60-66%` | `1140-1520 亿日元` | `2600 亿日元+` | 需要明显涨价和 AI mix 超预期；客户关系和政治/日本式定价是约束 |
+
+## 12. 风险清单
+
+1. **披露风险：** 公司不单独披露 ABF 收入、利润、订单、产能利用率和客户结构，所有 ABF 估算误差可能较大。
+2. **商业策略风险：** Palliser 希望 `30%+`提价，但味之素可能更重视长期客户关系和稳定供应，不一定激进涨价。
+3. **需求风险：** AI CapEx、GPU 租赁价、云厂 AI 收入、token 使用量若不兑现，ABF 高端需求会从供不应求切到库存/议价。
+4. **封装替代风险：** glass core、organic interposer、panel-level packaging、CPO 和 chiplet 架构可能改变 ABF 单位用量，但 2026-2027 仍更像共存。
+5. **客户集中和议价风险：** 终端可能集中在 NVIDIA、AMD、Broadcom、超大云厂、TSMC 和少数 substrate 厂，议价强。
+6. **食品业务稀释风险：** Frozen Foods FY2025 业务利润率仅 `2.9%`，若恢复不及预期，会压制集团 ROIC。
+7. **汇率和原料风险：** FY2026 指引用 `150 日元/美元`，日元、能源、包装、tapioca 等原料波动会影响食品和材料成本。
+8. **供应链地缘风险：** 高端材料集中日本，封装集中台湾/韩国，HBM 集中韩国/美国/日本生态，任何地震、电力、出口管制或客户合规都会影响交付。
+
+## 13. 跟踪指标
+
+| 指标 | 为什么重要 | 触发动作 |
+|---|---|---|
+| 公司是否单独披露 Functional Materials / ABF | 直接影响估值折价 | 披露后重算 ABF 收入、利润率和 ROIC |
+| H&O 销售和业务利润增速 | ABF 最可靠公开代理变量 | 若 H&O 利润继续 `20%+`增长，上修 ABF 贡献 |
+| ABF 或 substrate ASP | 判断价格传导是否发生 | ASP 连续上升则上修利润率；连续两季下跌则下修 |
+| 高端 substrate 厂订单/CapEx：Ibiden、Unimicron、AT&S、SEMCO | ABF 订单前置指标 | 长约和客户预付款增加则上修产能锁定 |
+| CoWoS/2.5D lead time、TSMC/OSAT 利用率 | CoWoS 缓解后可能增加 ABF 拉货，也可能压缩定价 | lead time 降但 GPU 出货上修时，对 ABF 仍偏正面 |
+| NVIDIA/AMD/Broadcom/Google/AWS/Microsoft AI 芯片路线 | 决定 package 面积、层数、HBM stack 和 ABF content | Rubin/MI400/Trainium3/TPU 放量快则上修 |
+| Glass core/TGV 客户验证 | 判断 ABF 替代还是共存 | 若 glass 大客户量产且不需要 Ajinomoto build-up，才实质下修 |
+
+## 14. 资料来源
+
+### 公司官方和市场数据
+
+- Ajinomoto IR 事件页，列示 2026-05-07 FY2025 年报、2026-02-05 Q3、2025-11-06 Q2、2025-08-04 Q1 等事件：https://www.ajinomoto.co.jp/company/en/ir/
+- Ajinomoto FY2025 年报 / Consolidated Financial Results for the Fiscal Year Ended March 31, 2026：https://www.ajinomoto.com/cms_wp_ajnmt_global/wp-content/uploads/pdf/2026_05_07_03E.pdf
+- Ajinomoto FY2025 Q3 / Nine Months Ended December 31, 2025：https://www.ajinomoto.com/cms_wp_ajnmt_global/wp-content/uploads/pdf/2026_02_05_01E.pdf
+- Ajinomoto FY2025 Q2 / Six Months Ended September 30, 2025：https://www.ajinomoto.com/cms_wp_ajnmt_global/wp-content/uploads/pdf/2025_11_06_02E.pdf
+- Ajinomoto FY2025 Q1 / Three Months Ended June 30, 2025：https://www.ajinomoto.com/cms_wp_ajnmt_global/wp-content/uploads/pdf/2025_08_04_02E.pdf
+- Ajinomoto FY2024 Q4 presentation with script：https://ajinomoto-ir.swcms.net/company/en/ir/event/presentation/main/011111110/teaserItems1/01/linkList/03/link/FY24Q4_Presentation_E_with%20script.pdf
+- Ajinomoto ADR information：https://www.ajinomoto.co.jp/company/en/ir/stock/adr.html
+- Yahoo Finance AJNMY/AJINY valuation snippets, Google Finance 2802.T, Investing.com AJNMY, Morningstar/WSJ/Simply Wall St profitability snippets（用于 2026-06-10/11 市场估值、P/E、P/S、毛利率和净利率交叉校验）。
+
+### ABF 官方技术资料和外部投资人/行业资料
+
+- Ajinomoto official story, “The Insulating Film ABF Born from AminoScience”, published 2026-03：https://www.ajinomoto.com/stories/the-ajinomoto-groups-unexpected-role-in-semiconductor-manufacturing-the-insulating-film-abf-born-from-aminoscience
+- Ajinomoto ABF Innovation Story：https://www.ajinomoto.com/innovation/our_innovation/buildupfilm
+- Ajinomoto Electronic Materials Business Briefing, 2019：https://www.ajinomoto.com/assets/innovation/pdf/ABF-presentation.pdf
+- Ajinomoto ABF-Based Growth Strategy in ICT, 2023：https://www.ajinomoto.co.jp/company/en/ir/event/business_briefing/main/01113/teaserItems1/01/linkList/00/link/3_ICT_E.pdf
+- Palliser Capital, “Maximising the Value of Ajinomoto”, 2026-03-31：https://mms.businesswire.com/media/20260331226478/en/2761328/1/EN_Palliser_-_Ajinomoto_Value_Enhancement_Plan_March_2026_-_vSent.pdf?download=1
+- Wall Street Journal, “Is MSG Maker Ajinomoto Sitting on an AI Goldmine?”, 2026-04-10（搜索片段用于 ABF pricing/AI monopoly context）。
+- TrendForce / Nikkei Asia secondary coverage on Ajinomoto ABF expansion and 2030 demand（用于交叉验证扩产和 `>10%`长期销售增长说法，非公司承诺）。
+
+### 项目内行业资料
+
+- `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_封装基板、中介层与RDL_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_先进封装材料与热界面材料_2026-06-10.md`
+- `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`

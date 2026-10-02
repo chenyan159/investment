@@ -1,0 +1,165 @@
+# 公司收入传导与价值传导评估：Vertiv
+
+> 评估对象：VRT / Vertiv Holdings Co.  
+> 报告日期：2026-06-20  
+> 主口径：NTM，即自 2026-06-20 起未来 12 个月的收入、利润和经营兑现窗口。  
+> 金额单位：除特别说明外，表内美元金额均为十亿美元（$B）。  
+> 边界说明：本报告只使用 `公司调研/`、`行业调研/` 及公司官方披露作经营传导依据，不使用 `特征量化/`、Signals、排序、回归或市场估值数据；不输出投资评级、目标价、估值倍数或股价判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM 经营窗口；FY2026 指引、2025Q4 backlog、2026Q1 run-rate、2026 Investor Conference 产品路线图只作为校准锚；800VDC、MV BESS/UPS 和部分 OneCore 平台化机会超过 NTM 的部分列为远期期权或附录跟踪。
+- 当前收入基准、指引和 run-rate：公司 2026Q1 收入 $2.650B，同比增长 30.1%，其中产品 $2.091B、服务和备件 $0.558B；2026Q1 调整后经营利润 $0.551B，调整后经营利润率 20.8%。公司 FY2026 收入指引为 $13.5-14.0B，隐含有机增长约 29%-31%；2025Q4 backlog 为 $15.0B，book-to-bill 2.9x。Q1 年化收入约 $10.6B，低于 FY2026 指引 run-rate，说明管理层预期收入在 2026 年后续季度继续抬升。
+- 重要产品/业务线：高密度 AC 电力链；热管理、液冷和热排放；OneCore / SmartRun / 预制化模块；服务、软件和流体管理；800VDC / PowerDirect 5000；MV BESS/UPS / EnergyCore。
+- NTM 公司收入四情景：悲观 $14.2-15.2B；基准 $16.0-17.3B；乐观 $18.5-20.5B；极度乐观 $22.0-25.0B。基准高于 FY2026 指引中点，是因为 NTM 覆盖 2026H2 和 2027H1，而不是单一 FY2026。
+- 利润或 EBITDA 四情景：本报告用调整后经营利润作为主要利润口径。悲观 $3.05-3.45B；基准 $3.7-4.1B；乐观 $4.5-5.3B；极度乐观 $5.7-7.0B。极度乐观不自动来自收入放大，必须同时满足电力链、液冷、预制化和服务 mix 改善。
+- 最大传导瓶颈：不是行业 TAM，而是 backlog / 订单能否在 NTM 内转成可确认收入，取决于客户场地就绪、电网接入、GPU 机群节奏、液冷调试、预制化产能、交付验收和营运资本。
+- 最大利润率变量：高毛利服务、液冷系统、控制软件和高密度电力产品 mix 能否上升；预制化项目、低压配电和大项目 pass-through 占比若过高，会稀释收入上修的利润质量。
+- 最大现金流变量：为支持 backlog 交付而增加库存、预付款、产能和收购整合投入，可能使收入增长先于自由现金流释放；2026Q1 自由现金流为负值，说明营运资本仍是 NTM 关键校准项。
+- 可信度：基准情景为中高；乐观情景为中；极度乐观为低。原因是收入表、指引、backlog 和产品线证据较强，但 800VDC、MV BESS/UPS、部分 OneCore 平台标准化和液冷高利润率持续性仍需要客户确认、交付节奏和利润率验证。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 高密度 AC 电力链：UPS、switchgear、switchboard、busway、RPP、floor PDU、rack PDU、Geist、E+I / Anord Mardix、power monitoring | 2026E 约 $6.1-6.8B | 约 44%-49% 的 FY2026 指引收入 | 当前最大收入和 backlog 转化来源；AI 数据中心电力瓶颈直接拉动 | A/B | 进入基准。收入表、分部收入、FY2026 指引和 backlog 支撑 NTM 主口径 | 800VDC / HVDC 迁移带来的架构替代，不进入传统 AC 电力链基准 |
+| 热管理、液冷和热排放：Liebert thermal、CDU、direct liquid cooling、RDHx、chilled water、ThermoKey、CoolTera、Strategic Thermal Labs | 2026E 约 $3.2-4.0B | 约 23%-29% | AI rack density 提升下的主要增量业务；液冷和热排放决定利润结构上限 | A/B/C | 进入基准，但 C 级液冷新品和新收购协同需折扣 | 更高密度冷板、两相或平台级散热路线作为附录跟踪 |
+| OneCore / SmartRun / 预制化模块：e-house、power skid、cooling skid、modular DC、BMarko 结构件 | 2026E 约 $2.0-2.8B | 约 15%-20% | 把电力、冷却、模块化施工合为可复制交付单元，是 NTM 超预期的重要来源 | B/C | 保守进入基准。已有产品、订单和产能证据，但平台复制节奏不能用项目总金额替代收入 | 10MW 到 1GW+ AI factory 平台化复制、NVIDIA DSX 生态扩散 |
+| 服务、软件和流体管理：5,000+ field service、commissioning、maintenance、PurgeRite、Vertiv Unify、Next Predict、DCIM/monitoring | 2026E 约 $1.5-2.1B | 约 11%-15% | 利润率和现金流质量最高的传导环节，跟随装机基数扩大 | A/B/C | 进入基准。服务收入表可见，软件和流体管理只按可验证范围纳入 | AI factory operations OS、数字孪生和更高软件化 attach rate |
+| 800VDC / PowerDirect 5000 | NTM 可确认收入当前很小，约 $0.02-0.08B 基准锚 | <1% | 可能改变 AI rack 电力架构，但 NTM 主要是 design-in、认证和早期商业化 | C/D | 不作为基准的大额收入来源；只允许少量早期收入或订单信号 | 2027 年以后若随 NVIDIA Kyber / Rubin Ultra 平台放量，可能形成新电力架构收入池 |
+| MV BESS/UPS / EnergyCore | NTM 可确认收入当前很小，约 $0.02-0.10B 基准锚 | <1% | 电网接入、BTM 储能和微电网需求下的潜在新品 | C/D | 不作为基准的大额收入来源；试点和早期订单只进乐观或极度乐观 | 2027 年以后若公用事业并网、数据中心 BTM 储能和中压 UPS 标准化，可形成新平台 |
+
+说明：上述产品线存在内部搭配和项目打包，不能机械相加为公司收入。公司层面汇总在第 6 节统一去重和校准。
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池相对当前预期的强弱，不评估 Vertiv 份额、收入确认、利润率或公司收入汇总。需求单位按最能解释产品的指标选择，包括 AI 数据中心电力/冷却订单池、rack density、MW、预制化项目金额、服务 attach rate 和架构认证节奏。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 高密度 AC 电力链 | 行业资料显示 2026 年数据中心 UPS、PDU、busway、低压配电和高密度电力块仍以 AC 架构为主；美国 AI 项目低压配电/PDU/busway 2026 订单池约 $8-14B，全球产品市场约 $10-16B | AI 数据中心开工、电网接入或 GPU 交付推迟，客户延后低压配电和 UPS 下单；需求池仍增长但低于已定价节奏 | 2026-2027 高密度 rack、campus build-out 和替换周期正常兑现，UPS、busway、rack PDU、switchgear 同步增长 | AI campus 并行开工、overhead busway 和 prefabricated electrical block 采用率上修，订单池接近行业乐观区间 | 多个 100MW+ 至 GW 级 campus 同时把 AC 电力块和中压/低压配电前置采购，出现供应紧张和价格/mix 改善 | 悲观为低于 $8-14B 的美国 AI 订单锚；基准接近 $8-14B；乐观接近 $10-18B；极度乐观需要明显突破当前订单池 | 基准为当前预期正常兑现；乐观需要订单和交付节奏持续强于 FY2026 指引隐含路径 | 正向证据为 Vertiv backlog、book-to-bill 和行业电力瓶颈；反证是客户 capex 改期、电网并网和多供应商压价 |
+| 热管理、液冷和热排放 | 行业资料显示 2026 年主线为 direct-to-chip、CDU、manifold、RDHx、chilled water、dry cooler / heat rejection；AI cooling/liquid/HVAC 2026 订单池约 $16-31B，直接液冷相关池约 $7.5-11.5B | GPU 机柜密度上升慢于预期，客户延长风冷/混合冷却，液冷验收和现场改造拖慢 | D2C + CDU + facility loop 继续进入 AI cluster 标准配置，传统 Liebert 热管理与液冷增量并行 | 液冷渗透率上修，heat rejection 采购前置，冷板/CDU/流体服务 attach rate 提升 | AI rack 密度和供液架构非线性上修，液冷、热排放、流体管理和服务同步成为高密度 campus 标配 | 基准对应直接液冷池 $7.5-11.5B 和 cooling/HVAC 池 $16-31B；乐观对应更高渗透和交付前置；极度乐观需要多层级热管理同时上修 | 基准偏强但仍在行业预期内；乐观需要客户液冷采用速度和交付证据 | 正向证据为 CoolTera、PurgeRite、STL、ThermoKey 和液冷行业需求；反证是 hyperscaler 自研、多供、现场调试和漏液/可靠性认证 |
+| OneCore / SmartRun / 预制化模块 | 行业资料显示 2026 年 AI facility 交付池约 $95-150B，electrical prefab / e-house / skid 未来一年基准约 $15-35B；客户需要压缩建设周期 | 客户仍以 EPC 分包和现场施工为主，预制化只覆盖部分电力/冷却包，项目验收拖慢 | 模块化电力和冷却块按当前订单节奏进入更多 AI campus，OneCore / SmartRun 作为交付效率工具 | 客户为缩短 time-to-power，把电力、冷却、结构件和控制系统更多交给 Vertiv 做平台化包 | OneCore 成为多个大型客户可复制 AI factory 物理基础设施标准，平台从单项目变成多 campus 复制 | 基准对应 prefab 电力/机械池 $27-63B 的可参与需求；乐观需要 attach rate 和订单转收入更快；极度乐观需要标准化平台复制 | 基准只承认可见项目和产能；乐观以上需公司特定客户证据 | 正向证据为 OneCore、SmartRun、BMarko 和 DSX 生态；反证是 EPC 自集成、客户定制化和项目验收周期 |
+| 服务、软件和流体管理 | 2026Q1 服务和备件收入 $0.558B，占公司收入 21.1%；行业资料显示 DCIM/energy control/digital twin 2026 广义池约 $8.5-13.5B，液冷服务跟随装机扩大 | 新装机增长但服务 attach rate 不升，软件由客户或第三方平台主导，PurgeRite 等服务整合慢 | 已安装基础扩大带动维护、调试、备件、流体管理和监控服务正常增长 | 高密度液冷和 AI factory 复杂度提升，commissioning、remote monitoring、fluid service attach rate 超预期 | Vertiv Unify / Next Predict / DCIM 与物理设备绑定成为客户运营层，软件和服务收入占比明显上移 | 基准由 Q1 服务 run-rate 和新增装机驱动；乐观需要服务 attach rate 和软件化证据；极度乐观需平台型运营收入 | 服务基准可信度高，软件极度乐观仍低可信 | 正向证据为服务收入表和 5,000+ field service 网络；反证是软件竞争、自建平台和服务人员扩张成本 |
+| 800VDC / PowerDirect 5000 | 行业资料显示 2026 年 rack power 主流仍为 AC 到 50V 架构，800VDC 主要是 design-in；公司披露 PowerDirect 5000 支持 100kW-1MW rack，目标早期 2027 商业化 | 客户认证、标准、安全和生态配套慢于预期，NTM 几乎不形成收入 | 2026H2-2027H1 形成少量样机、认证、早期订单或 design win，但不改变公司 NTM 主收入 | 大客户把 800VDC 纳入下一代 AI rack 项目，Vertiv 获得明确早期订单和交付时间表 | 800VDC 在 NTM 内被多个核心客户提前标准化，形成可确认收入池 | 基准绝对需求无法可靠量化，主要是 <$0.1B 的早期收入锚；乐观可到 $0.5-1.2B；极度乐观需 $2B+ 收入化路径 | 当前预期应视为远期期权而非 NTM 主线 | 正向证据为公司产品发布和 NVIDIA 平台关联；反证是时间表偏 2027、生态认证和安全标准 |
+| MV BESS/UPS / EnergyCore | 行业资料显示 BTM BESS、微电网和中压 UPS 需求受电网接入约束推动，但 2026 年多数仍在试点、认证和项目化阶段 | 公用事业并网、消防、融资和客户 acceptance 延迟，NTM 不形成规模收入 | 形成试点、早期项目和少量系统收入，但不进入公司基准大额贡献 | AI campus 为解决电力排队前置部署 BESS / MV UPS，Vertiv 参与若干可验证客户项目 | MV BESS/UPS 成为多个大型 campus 的标准化电力韧性层，需求池和公司收入同时突破 | 基准 $0.02-0.10B；乐观 $0.5-1.5B；极度乐观 $2-4B 需要客户、交付和并网证据 | 需求长期强，但 NTM 可确认性低于传统电力和液冷 | 正向证据为行业电网瓶颈和公司 EnergyCore 路线；反证是项目周期、法规、系统集成和低毛利 pass-through |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断外部需求中哪些能进入 Vertiv 的 NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入；行业订单池、客户 capex、AI campus 总项目金额和 TAM 不直接作为公司收入。证据等级按收入表可确认性定义：A 为已披露收入、分部收入、已确认出货或正式指引；B 为订单、backlog、正式合同或可验证交付时间表；C 为 design win、认证、产能或管理层可验证披露；D 为产品发布、样品、测试或早期合作；E 为只有主题相关性。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 高密度 AC 电力链 | 公司产品收入、FY2026 指引、2025Q4 backlog 和本地公司调研估算；2026E 当前锚约 $6.1-6.8B | 直接 | 中高毛利设备 + 项目型交付；规模效应强，但大项目和低压配电存在 pass-through | $5.8-6.5B | $6.5-7.2B | $7.6-8.8B | $9.0-10.5B | 基准符合 FY2026 指引和 backlog 转化；乐观高于当前指引隐含路径 | A/B | 是 | 收入表产品收入、区域增长、backlog、订单和成熟产品线 | NTM 主收入来源，进入基准；不得把全部客户电力 capex 计入 Vertiv |
+| 热管理、液冷和热排放 | 公司产品收入、热管理产品线、液冷收购和行业液冷需求；2026E 当前锚约 $3.2-4.0B | 直接 | 热管理成熟产品毛利较稳；液冷、热排放和服务化可提高 mix，但调试成本和多供压价存在 | $3.0-3.6B | $3.9-4.6B | $5.2-6.5B | $7.5-9.0B | 基准略高于当前 run-rate，符合液冷和热排放放量；极度乐观为上限 | A/B/C | 是，C 级部分折扣 | 收入表产品收入、CoolTera、PurgeRite、STL、ThermoKey 与客户需求证据 | 成熟热管理进入基准；液冷高增量进入基准时需折扣；高密度极端放量只进乐观/极度乐观 |
+| OneCore / SmartRun / 预制化模块 | 公司平台披露、BMarko 收购、模块化基础设施和本地公司调研估算；2026E 当前锚约 $2.0-2.8B | 直接 | 项目型利润率低于纯软件服务，但能提高交付效率和附加设备 attach；执行风险高 | $1.6-2.2B | $2.4-3.2B | $3.8-5.0B | $6.0-8.0B | 基准为当前平台和订单正常转化；乐观需要客户把更多 scope 给 Vertiv | B/C | 是，保守纳入 | backlog、产品平台、BMarko 产能和可复制模块化交付逻辑 | 进入基准但不把 AI facility 总工程金额当收入；平台化复制放入乐观以上 |
+| 服务、软件和流体管理 | 2026Q1 服务和备件 $0.558B，年化 $2.23B；软件、PurgeRite 和监控服务作为附加增长 | 直接 | 高毛利、现金流质量较好；软件毛利高但当前基数小，服务扩张需人员和营运投入 | $1.6-2.0B | $2.0-2.5B | $2.7-3.3B | $3.5-4.5B | 基准符合 Q1 run-rate 和装机增长；乐观来自 attach rate 上修 | A/B/C | 是 | 已披露服务收入、安装基础、field service 网络、PurgeRite 和监控产品 | 服务进入基准；软件平台化只按可验证收入纳入，不把 DCIM 广义市场直接映射为 Vertiv 收入 |
+| 800VDC / PowerDirect 5000 | 产品发布、技术路线、早期商业化目标；当前可确认收入极小 | 直接 | 若标准化成功，利润率可高于传统低压设备；NTM 内研发、认证和客户支持成本更可见 | $0-0.02B | $0.02-0.08B | $0.5-1.2B | $2.0-4.0B | 基准只是早期收入或订单信号；乐观和极度乐观高于当前预期 | C/D | 不作为基准大额收入；少量早期收入可进入基准 | PowerDirect 5000、800VDC 产品路线、NVIDIA 平台关联；收入确认路径尚不充分 | 不进入 NTM 基准主收入；乐观以上必须有客户、订单、交付和验收路径 |
+| MV BESS/UPS / EnergyCore | 产品路线、试点和行业电网瓶颈；当前可确认收入极小 | 直接/间接 | 系统项目可能包含较多硬件 pass-through；利润取决于控制系统、集成、服务和长期运维 | $0-0.03B | $0.02-0.10B | $0.5-1.5B | $2.0-4.0B | 基准仅为早期收入；乐观需要正式客户项目和 NTM 确认节奏 | C/D | 不作为基准大额收入；仅小额纳入 | EnergyCore / MV BESS 路线、客户试点和行业需求，但并网和交付证据不足 | 不进入 NTM 基准主收入；主要作为远期期权和乐观上限 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从需求强弱和可收入化基数出发，逐项判断 NTM 收入贡献和利润贡献。贡献口径为经营贡献估算，不等同于会计分部披露；不同产品线在同一项目中存在打包、互相搭配和内部抵消，不能把所有极度乐观行简单相加为公司情景。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 高密度 AC 电力链 | 悲观 | $5.8-6.5B | $1.2-1.5B | 持平或下行 | 低于 FY2026 指引和 backlog 隐含交付 | 客户项目延后、价格重谈或多供压价 | 保留为下行情景 | 电网接入、GPU 交付、低压配电交期、项目验收 |
+| 高密度 AC 电力链 | 基准 | $6.5-7.2B | $1.5-1.8B | 小幅改善 | 符合当前指引和订单节奏 | 2026Q1 产品收入、2025Q4 backlog、Americas 增长、成熟产品线 | 保留 | backlog 中非 NTM 部分不可提前确认为收入 |
+| 高密度 AC 电力链 | 乐观 | $7.6-8.8B | $2.0-2.5B | 改善 | 高于当前预期 | AI campus 电力瓶颈、busway/rPDU/UPS mix 上移、预制化交付提高 attach | 保留 | 多供应商、客户自采和低毛利硬件占比 |
+| 高密度 AC 电力链 | 极度乐观 | $9.0-10.5B | $2.5-3.2B | 明显改善但非线性受限 | 明显高于当前预期 | 多个大型 campus 同时拉动电力链，供应紧张支持价格/mix | 保留为上限 | 若收入主要是低毛利 pass-through，利润不能同步极度上修 |
+| 热管理、液冷和热排放 | 悲观 | $3.0-3.6B | $0.6-0.8B | 下行或持平 | 低于液冷增量预期 | 液冷客户认证延迟、风冷延寿、现场调试成本 | 保留 | 液冷验收、漏液风险、客户多供、自研冷板 |
+| 热管理、液冷和热排放 | 基准 | $3.9-4.6B | $0.9-1.2B | 改善 | 符合当前预期 | Liebert 基础盘、CoolTera、PurgeRite、STL、ThermoKey 与行业液冷需求 | 保留 | C 级新品和收购协同需折扣，不可按行业液冷池全额映射 |
+| 热管理、液冷和热排放 | 乐观 | $5.2-6.5B | $1.4-2.0B | 明显改善 | 高于当前预期 | CDU、heat rejection、流体服务和高密度 thermal package attach 提升 | 保留 | 工程服务和项目成本可能吞噬毛利 |
+| 热管理、液冷和热排放 | 极度乐观 | $7.5-9.0B | $2.2-3.2B | 大幅改善 | 明显高于当前预期 | D2C、CDU、热排放和服务同时成为多个客户标准配置 | 保留为上限 | 极度乐观必须同时验证客户、产能、良率、现场调试和服务能力 |
+| OneCore / SmartRun / 预制化模块 | 悲观 | $1.6-2.2B | $0.3-0.5B | 下行 | 低于当前平台化预期 | 项目定制化高、EPC 自集成、交付验收推迟 | 保留 | 总工程金额大但 Vertiv scope 不足 |
+| OneCore / SmartRun / 预制化模块 | 基准 | $2.4-3.2B | $0.6-0.9B | 持平至改善 | 符合当前预期 | OneCore、SmartRun、BMarko、模块化电力/冷却包 | 保留 | 预制化项目利润率低于服务/软件，不能按收入高增自动放大利润 |
+| OneCore / SmartRun / 预制化模块 | 乐观 | $3.8-5.0B | $1.0-1.5B | 改善 | 高于当前预期 | 客户为缩短 time-to-power 采购更多 integrated block | 保留 | 产能、项目管理、结构件交付和客户验收 |
+| OneCore / SmartRun / 预制化模块 | 极度乐观 | $6.0-8.0B | $1.7-2.6B | 大幅改善但依赖执行 | 显著高于当前预期 | OneCore 成为可复制 AI factory 物理基础设施平台 | 保留为上限 | 若只是单一项目或 DSX 生态曝光，不能进入极度乐观收入 |
+| 服务、软件和流体管理 | 悲观 | $1.6-2.0B | $0.4-0.6B | 持平或下行 | 低于服务 attach 预期 | 新装机服务转化慢、人员成本上升、软件被客户自建替代 | 保留 | 服务扩张需要人员和区域覆盖，短期费用先行 |
+| 服务、软件和流体管理 | 基准 | $2.0-2.5B | $0.6-0.8B | 改善 | 符合当前预期 | 2026Q1 服务收入、安装基础扩大、commissioning 和维护需求 | 保留 | 软件收入当前小，不能把 DCIM 市场等同为公司收入 |
+| 服务、软件和流体管理 | 乐观 | $2.7-3.3B | $0.9-1.2B | 明显改善 | 高于当前预期 | PurgeRite 流体服务、Unify / monitoring、液冷服务 attach 上升 | 保留 | 平台竞争、服务人员利用率和客户采购拆分 |
+| 服务、软件和流体管理 | 极度乐观 | $3.5-4.5B | $1.3-1.8B | 大幅改善 | 显著高于当前预期 | AI factory operations OS 与物理设备绑定，服务和软件成为主要增量利润 | 保留为低可信上限 | 软件化证据不足时只能作为附录跟踪 |
+| 800VDC / PowerDirect 5000 | 悲观 | $0-0.02B | 约 $0B 或负贡献 | 下行 | 低于早期收入预期 | 认证、标准和客户平台延后 | 保留 | 时间表偏 2027，NTM 收入确认弱 |
+| 800VDC / PowerDirect 5000 | 基准 | $0.02-0.08B | $0-0.02B | 基本无影响 | 符合早期商业化预期 | 产品发布、PowerDirect 5000 路线和客户生态 | 保留但不作为主收入 | 只有产品发布和设计路线，收入表证据不足 |
+| 800VDC / PowerDirect 5000 | 乐观 | $0.5-1.2B | $0.1-0.3B | 改善 | 高于当前预期 | 大客户 early design win 和交付时间表提前 | 下移条件明确 | 必须回答谁买、买什么、何时确认、为何由 Vertiv 捕获 |
+| 800VDC / PowerDirect 5000 | 极度乐观 | $2.0-4.0B | $0.5-1.2B | 大幅改善但低可信 | 显著高于当前预期 | 架构在 NTM 内被多个客户提前标准化 | 仅作跟踪为主 | 缺少 NTM 客户、订单和收入确认证据时不得纳入公司基准 |
+| MV BESS/UPS / EnergyCore | 悲观 | $0-0.03B | 约 $0B 或负贡献 | 下行 | 低于早期试点预期 | 并网、消防、融资和客户验收推迟 | 保留 | 系统项目周期长，收入确认不稳定 |
+| MV BESS/UPS / EnergyCore | 基准 | $0.02-0.10B | $0-0.02B | 基本无影响 | 符合早期收入预期 | EnergyCore 路线、行业电力瓶颈和试点 | 保留但不作为主收入 | BESS 硬件 pass-through 和系统集成毛利不确定 |
+| MV BESS/UPS / EnergyCore | 乐观 | $0.5-1.5B | $0.05-0.25B | 小幅改善 | 高于当前预期 | 客户为 time-to-power 前置 BTM BESS / MV UPS | 下移条件明确 | 正式合同、并网许可、验收和长期服务绑定不足 |
+| MV BESS/UPS / EnergyCore | 极度乐观 | $2.0-4.0B | $0.3-0.9B | 改善但低可信 | 显著高于当前预期 | 多个 AI campus 标准化采用中压 UPS / BESS | 仅作跟踪为主 | 没有客户、交付、并网和收入路径时只能放入远期期权 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为公司 NTM 总收入、调整后经营利润率、调整后经营利润和自由现金流方向。汇总时剔除产品线重复计算，不把项目总金额、客户 capex、行业 TAM、远期 pipeline 或市场定价纳入公司经营结论。绝对增速以 FY2025 全年收入约 $10.23B 为粗略比较基准；由于 NTM 覆盖 2026H2 和 2027H1，不能与 FY2026 指引完全一一对应。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | $14.2-15.2B | 约 +39%-49% | 低于当前 NTM 可见路径，但仍可能高于 FY2026 指引下沿，因为 NTM 含 2027H1 | 无法可靠量化；方向为低于当前结构改善 | 21.5%-22.8% | 调整后经营利润 $3.05-3.45B；净利润方向低于基准 | FCF $1.4-1.8B，营运资本压力较大 | 中 | backlog 不能按期转收入、液冷/预制化调试拖慢、EMEA 或部分传统业务抵消增长 |
+| 基准公司 | $16.0-17.3B | 约 +56%-69% | 当前预期正常兑现；高可信 AC 电力链、热管理、预制化和服务正常转收入 | 无法可靠量化；方向为温和改善 | 23.0%-24.0% | 调整后经营利润 $3.7-4.1B；净利润随经营利润正常改善 | FCF $1.8-2.4B，H2/2027H1 随验收改善 | 中高 | backlog 转化、产能爬坡、供应链、客户验收和库存周转 |
+| 乐观公司 | $18.5-20.5B | 约 +81%-100% | 高于当前预期，且不是单一小基数新品造成 | 无法可靠量化；方向为明显改善 | 24.5%-26.0% | 调整后经营利润 $4.5-5.3B；净利润弹性来自 mix 和经营杠杆 | FCF $2.4-3.2B，但仍需库存和产能投入 | 中 | 高毛利液冷、服务和电力链 mix 能否同步改善；预制化大项目能否不稀释利润 |
+| 极度乐观公司 | $22.0-25.0B | 约 +115%-144% | 显著高于当前预期，需要需求、份额、价格/mix、产能和验收同时突破 | 无法可靠量化；方向为大幅改善但低可信 | 26.0%-28.0% | 调整后经营利润 $5.7-7.0B；净利润弹性高度依赖高毛利结构 | FCF $3.2-4.8B，若营运资本周转不改善则无法完全兑现 | 低 | 多个核心客户同步加速、OneCore 标准化、液冷服务化、800VDC/BESS 早期收入化和执行能力需同时成立 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测收入或利润，只校准前四步情景的位置。正向证据只提升它实际影响的层级；反证只限制它实际影响的环节，避免同一风险重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 收入指引 $13.5-14.0B、2026Q1 收入 $2.650B、Q1 产品/服务收入披露 | 收入基数、公司汇总 | 支撑基准收入下限；说明 Q1 run-rate 低于全年指引，需要后续季度加速 | Q1 调整后经营利润率 20.8%，低于 FY2026 指引中点，说明利润率改善尚需兑现 | Q1 FCF 为负，营运资本和投资先于现金释放 | 保留基准；悲观保留为交付节奏下移情景 |
+| 2025Q4 backlog $15.0B、book-to-bill 2.9x、订单强劲 | 收入基数、产品贡献、执行可信度 | 支撑 NTM 收入高于 FY2026 单年指引的可能性，但 backlog 不等于 NTM 收入 | 若高毛利电力链和热管理占比高，可改善利润；若大项目 pass-through 占比高，改善有限 | 订单转收入取决于客户场地、电网、供应链和验收 | 保留基准和乐观；不得把全部 backlog 提前确认为 NTM 收入 |
+| Americas 2026Q1 收入 +53%、利润率 27.0%；APAC +15.3%；EMEA -20.4% | 公司组合 | Americas AI demand 支撑电力链和热管理增长；EMEA 拖累说明增长不均衡 | 区域 mix 影响经营利润率；高利润 Americas 占比提升有利 | 区域供应、客户集中和项目交付差异影响确认节奏 | 保留乐观，但 EMEA 风险只在公司组合层处理一次 |
+| 热管理、液冷和热排放收购：CoolTera、PurgeRite、Strategic Thermal Labs、ThermoKey | 产品需求、产品贡献、利润率 | 增强 Vertiv 对液冷和热排放需求的可收入化暴露 | 服务、流体管理和系统集成可提升 mix；收购整合成本可能短期抵消 | 技术、交付、服务和热排放供应能力增强，但整合需要时间 | 保留基准中的折扣纳入；乐观保留；远期协同仅作跟踪 |
+| OneCore、SmartRun、BMarko 和 NVIDIA DSX 生态曝光 | 收入基数、产品贡献、执行可信度 | 支撑预制化模块从可参与需求转向可确认订单，但不能用 AI facility 总工程额替代收入 | 平台化和模块化可改善利用率；项目型交付可能压低毛利 | 缩短交付周期、提高 attach，但客户定制化和验收复杂 | 保留基准的保守纳入；极度乐观需客户复制证据 |
+| 800VDC / PowerDirect 5000 | 远期期权、产品贡献 | NTM 收入证据弱，不能进入基准大额收入 | 若标准化成功利润率较好，但 NTM 研发和客户支持成本更可见 | 认证、生态、标准和安全路径决定收入确认 | 基准只保留小额早期收入；大额收入仅作跟踪 |
+| MV BESS/UPS / EnergyCore | 远期期权、现金流/执行 | 电网瓶颈增强需求，但 NTM 客户、合同和并网证据不足 | 硬件 pass-through 可能稀释利润，控制和服务 attach 才提升质量 | 并网、消防、融资、验收和系统集成周期长 | 小额基准保留；规模化收入仅作跟踪 |
+| 竞争与客户自研：Schneider、Eaton、Siemens、nVent、Johnson Controls、hyperscaler 自建软件/液冷集成 | 份额、价格、利润率 | 限制乐观份额和价格，不影响行业需求本身 | 多供压价、自研和 EPC 自集成限制毛利扩张 | 客户认证和供应商分散影响交付排程 | 只在产品贡献层处理一次，不重复压低公司所有情景 |
+| 营运资本、库存、产能投资和收购整合 | 现金流、执行可信度 | 不直接改变需求，但会影响可交付收入 | 低利用率、库存、质保和项目成本影响经营利润率 | FCF 兑现可能晚于收入确认 | 悲观和基准现金流校准保留；不作为市场定价证据 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 $14.2-15.2B，调整后经营利润率 21.5%-22.8%，主要由交付延迟、低毛利 mix 或营运资本压力触发 | FY2026 指引和 backlog 使收入大幅低于 2025 的风险有限 | Q1 FCF 为负、EMEA 下滑、客户项目和电网接入可能推迟 | 保留 | 下行情景，不是需求崩塌情景 | 中 | 电网/客户延迟只在收入确认和现金流层处理，不再重复压低产品需求 |
+| 基准 | NTM 收入 $16.0-17.3B，调整后经营利润率 23.0%-24.0%，由 A/B 级收入表、指引、backlog 和服务收入支撑 | Q1 收入、FY2026 指引、$15B backlog、成熟 AC 电力链和服务收入均支撑 | C 级液冷新品、OneCore 平台复制、800VDC 和 BESS 不能无折扣进入基准 | 保留 | 最可能经营情景 | 中高 | 竞争和多供风险只在份额/利润率层折扣，不重复惩罚需求层 |
+| 乐观 | NTM 收入 $18.5-20.5B，调整后经营利润率 24.5%-26.0%，由订单转化加速、液冷/热排放、预制化和服务 mix 上修驱动 | backlog、Americas 增长、液冷和热排放收购、OneCore / SmartRun 与服务 attach 提供公司特定证据 | 需证明客户、产品、交付、价格和验收路径；不能只依赖 AI capex 总额 | 保留 | 上行情景 | 中 | 行业景气只支持需求，不能替代公司捕获和收入确认 |
+| 极度乐观 | NTM 收入 $22.0-25.0B，调整后经营利润率 26.0%-28.0%，要求需求、公司捕获、利润质量和执行同时突破 | 若多个大型 AI campus 同步加速、OneCore 标准化、液冷服务化和电力链供应紧张同时成立，存在上限可能 | 800VDC、MV BESS/UPS 和软件平台化仍以 C/D 级证据为主，缺少 NTM 大额收入确认 | 保留 | 极度乐观上限；远期期权仅作跟踪 | 低 | 远期期权缺证据时不进入基准，也不重复惩罚成熟电力链和服务业务 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入结论为 $16.0-17.3B，调整后经营利润率 23.0%-24.0%，调整后经营利润 $3.7-4.1B。核心传导来自高密度 AC 电力链、热管理/液冷、OneCore / SmartRun 预制化和服务收入的正常兑现。
+- 利润/现金流结论：利润质量优于单纯收入增长，因为服务、液冷、热排放和高密度电力产品 mix 有改善空间；但自由现金流释放慢于收入增长的风险较高，尤其在库存、产能、收购整合和项目验收阶段。
+- 乐观情景成立条件：2025Q4 backlog 和 2026 新订单在 NTM 内更快转收入；AI campus 电力和液冷需求没有明显推迟；Vertiv 在 UPS、busway、rack PDU、CDU、heat rejection 和预制化模块中维持份额；服务、commissioning、fluid management 和 monitoring attach rate 提升；经营利润率同步上修而不是被低毛利项目吞噬。
+- 极度乐观情景成立条件：多个核心客户把 OneCore / SmartRun 作为可复制物理基础设施平台；液冷、热排放、服务和控制软件成为高密度 AI factory 的高 attach 组合；800VDC 或 MV BESS/UPS 在 NTM 内出现可验证大额客户、交付时间表和收入确认路径；供应紧张支持价格/mix，同时产能、验收和营运资本没有成为瓶颈。
+- 悲观情景触发条件：GPU 或客户 capex 节奏推迟、电网接入和 site readiness 拖慢、backlog 中较大部分无法在 NTM 内确认、EMEA 或传统业务继续拖累、液冷调试成本或质保成本上升、预制化项目利润率低于预期、库存和应收占用导致 FCF 明显弱于利润。
+- 后续跟踪数据：季度订单和 book-to-bill、backlog 余额和交付周期、FY2026/FY2027 指引更新、产品/服务收入 split、Americas/APAC/EMEA 增速和利润率、液冷和热排放订单、OneCore/SmartRun 客户项目、PurgeRite 服务 attach、800VDC design win 到订单的转化、MV BESS/UPS 试点到合同的转化、库存和自由现金流。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：本报告使用截至 2026-06-20 可见的本地公司调研、行业调研和官方披露。最新公司财务锚包括 2026Q1 Form 10-Q、2026Q1 earnings release、2025Q4/FY2025 results、2026 Investor Conference 和 2026 年相关产品/收购公告。
+- 主要收入、订单、指引和利润率来源：
+  - `公司调研/机电_冷却_工程_水处理_边缘工业AI/VRT_Vertiv_公司调研_2026-06-20.md`
+  - Vertiv 2026Q1 earnings release：收入 $2.650B、调整后经营利润率 20.8%、FY2026 收入指引 $13.5-14.0B。
+  - Vertiv 2026Q1 Form 10-Q：产品收入 $2.091B、服务和备件收入 $0.558B；Americas $1.814B、APAC $0.515B、EMEA $0.321B。
+  - Vertiv 2025Q4/FY2025 results：backlog $15.0B、Q4 book-to-bill 2.9x。
+  - Vertiv 2026 Investor Conference：OneCore、SmartRun、PowerDirect 5000、MV BESS/UPS、Vertiv Unify 等产品路线。
+- 行业需求和产品池来源：
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 公司指引用于校准当前预期，不替代 NTM 主表。
+  - FY2027 以后更重要的机会包括 800VDC、MV BESS/UPS、AI factory operations software、OneCore 平台化复制和更高密度液冷/热排放组合。
+  - 远期期权只有在客户、订单、交付时间表和收入确认路径清楚后，才能从附录跟踪上移到 NTM 乐观或基准。
+- 主要官方来源：
+  - Vertiv 2026Q1 results：https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-First-Quarter-with-Diluted-EPS-Growth-of-136-Adjusted-Diluted-EPS-Growth-of-83-Raises-Full-Year-Guidance/default.aspx
+  - Vertiv 2026Q1 Form 10-Q：https://www.sec.gov/Archives/edgar/data/1674101/000162828026026556/vrt-20260331.htm
+  - Vertiv 2025Q4/FY2025 results：https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Fourth-Quarter-and-Full-Year-Results-with-Record-Backlog-Raises-Organic-Growth-Target/default.aspx
+  - Vertiv 2026 Investor Conference：https://investors.vertiv.com/events-presentations/2026-investor-conference/default.aspx
+  - Vertiv 800VDC / PowerDirect 5000 announcement：https://investors.vertiv.com/news/news-details/2025/Vertiv-to-Launch-800-VDC-Power-Portfolio-to-Support-NVIDIA-Kyber-and-Rubin-Ultra-Platforms/default.aspx
+  - ThermoKey acquisition completion：https://www.vertiv.com/en-us/about/news-and-events/corporate-news/2026/vertiv-completes-acquisition-of-thermokey-expanding-heat-rejection-portfolio-for-ai-data-centers/
+  - BMarko acquisition：https://www.vertiv.com/en-emea/about/news-and-events/news-releases/2026/vertiv-acquires-bmarko-structures-to-expand-capacity-for-manufactured-and-converged-infrastructure-solutions/
+  - Strategic Thermal Labs acquisition：https://www.vertiv.com/en-emea/about/news-and-events/news-releases/2026/vertiv-strengthens-liquid-cooling-system-capability-with-acquisition-of-strategic-thermal-labs/
+  - PurgeRite acquisition：https://www.vertiv.com/en-us/about/news-and-events/corporate-news/vertiv-completes-acquisition-of-purgerite-expanding-leadership-in-liquid-cooling-services/
+  - CoolTera acquisition：https://www.vertiv.com/en-us/about/news-and-events/corporate-news/vertiv-acquisition-of-cooltera-ltd-boosts-liquid-cooling-portfolio/

@@ -1,0 +1,511 @@
+1: # 公司：CRWV CoreWeave, Inc. 全面尽调（2026-07-12）
+2: 
+3: > **研究日期：2026-07-12（美国太平洋时间）｜最新财报：2026Q1，期末 2026-03-31，发布 2026-05-07｜最新股价：2026-07-10 收盘｜货币：美元。**  
+4: > **研究边界：**项目内仅使用 `基本面/行业调研/` 下与 NeoCloud、AI 数据中心、服务器/机架、网络、存储、调度和顶级会议相关的产业资料；公司事实重新核对 SEC、CoreWeave IR、产品文档和客户/数据中心伙伴披露。未读取或复用其他目录下的公司报告。  
+5: > **口径提示：**CoreWeave 只有一个可报告业务口径，未按 GPU 型号、训练/推理、软件、存储或客户类型披露收入。文中标记“估算/模型”的产品收入、利润率、GPU 数量、产能和情景值不是公司指引；多个技术层可能服务同一笔云收入，除明确写明“互斥”外不得加总。本文不是投资建议。
+6: 
+7: ## 核心结论
+8: 
+9: 1. **CoreWeave 不是传统 IDC，也不是通用公有云；它是以 NVIDIA GPU 为核心、以长期 take-or-pay 合同融资、把数据中心电力、整机架、网络、存储、Kubernetes/Slurm 和运维软件整合成可计费 AI 产能的头部 NeoCloud。**其产业链位置在 NVIDIA/服务器/数据中心供应商与 Microsoft、OpenAI、Meta、Anthropic、Jane Street 等算力买方之间。投资人通常把 CRWV 同时视为“纯 AI 算力 β”“带软件的 GPU 租赁公司”和“高杠杆 AI 公用事业”；三种叙事都只说对了一部分。
+10: 2. **需求与订单强度极高。**2026Q1 收入 **$2.078B、同比 +111.6%、环比 +32.2%**；3 月末 revenue backlog **$99.4B**、其中 SEC 口径未履约 RPO **$98.8B**，36% 预计在未来 24 个月确认、39% 在第 25–48 个月确认。Q1 bookings 管理层口径超过 **$40B**。4 月后又公布 Jane Street **约 $6B** 云承诺及 Anthropic 多年协议，均不应机械倒加到 3 月末 backlog，因披露口径和可能的后续 RPO 归集尚待 Q2 核对。
+11: 3. **供给正在兑现，但不是零摩擦。**active power 从 2025Q1 的约 **420MW** 升至 2026Q1 的 **>1GW**，contracted power 从 **1.6GW** 升至 **>3.5GW**；公司目标 2026 年末约 **1.7GW**、2030 年 **>8GW**。2026-07-06，Galaxy Helios Phase I 按期交付 **133MW critical IT load**；反面是 Denton 项目曾延期、Core Scientific 合同含延期 120 天后的终止权，Poolside 2GW 软项目合作亦已结束。结论是“硬项目总体推进、软 pipeline 淘汰、交付时点仍是季度最大波动源”。
+12: 4. **收入质量比普通按需 GPU 租赁更强，但集中度很高。**2026Q1 **98%** 收入来自客户承诺合同，通常为 take-or-pay，并有合同 TCV **15%–25%** 的加权平均预付款；但前两大客户占收入 **65%**（45% 与 20%），2025 全年 Microsoft 单一客户占 **67%**。RPO 已扣除对未来服务信用、交付延迟和可转售容量的可变对价估计，但仍不等于无条件现金。
+13: 5. **利润表的“高 EBITDA”容易误导。**2026Q1 直接成本后的计算毛利率约 **65.5%**、调整后 EBITDA 率 **55.7%**，但技术与基础设施费用（含大额折旧）使调整后营业利润率只剩 **1.0%**，GAAP 营业利润率 **-6.9%**、净利率 **-35.6%**。TTM 毛利率约 **69.4%**、TTM 净利率约 **-25.6%**。真正应看的是扣除 GPU/服务器经济折旧、融资成本和闲置爬坡后的贡献率，而不是 EBITDA。
+14: 6. **资产负债表处于“可融资、但不健康”的状态，评分约 5/10。**2026-03-31 现金及证券 **$2.27B**、可用授信合计 **$8.83B**、总流动性 **$11.09B**；但债务本金 **$25.15B**、净债务约 **$22.88B**、经营租赁负债 **$10.05B**、尚未起租的未来未折现租金承诺 **$40.7B**，流动比率仅 **0.31x**。Q1 经营现金流 **+$2.98B**，现金资本开支 **$7.70B**，简化自由现金流约 **-$4.72B**；同期偿债现金 **$1.8B**。公司有很强融资渠道，却必须持续融资才能把 backlog 变成 active capacity。
+15: 7. **2026 的业务重心已从“训练 GPU 数量”转向“推理、弹性容量和整套 AI factory goodput”。**管理层按功率画像估计 **>50%** 工作负载已是推理；新产品包括 Dedicated Inference、Reservations/Flex Reservations/Spot/On-Demand、Mission Control、CKS/SUNK、AI Object Storage+LOTA、W&B Models/Weave/Inference、Serverless RL 和 ARENA。最重要的硬件是 Blackwell/Blackwell Ultra 的当前放量和 Vera Rubin 的 2026H2–2027 放量。
+16: 8. **技术壁垒真实但不是芯片垄断。**CoreWeave 的壁垒是首发配额、已通电 MW、万卡集群 goodput、整架验证、供应链融资和客户迁移成本；不是独占 NVIDIA。2026 年全部现役 GPU 仍是 NVIDIA，且客户合同指定 NVIDIA，供应商集中度反而是重大风险。CoreWeave 在 NeoCloud 收入口径的估算份额约 **20%–35%**，是龙头而非垄断者；AWS/Azure/GCP/OCI 的自研 ASIC 和更低资本成本仍是长期价格上限。
+17: 9. **一年后的基准判断：**以 2027Q2 年化收入衡量，基准/乐观/极度乐观约 **$22.5B/$27.0B/$33.5B**，对应较 2026Q1 年化收入 **+171%/+225%/+303%**；物理 active power 约 **2.2/2.6/3.0GW**。基准情景不是 backlog 不够，而是新 MW、Rubin/HBM4、内存/SSD、液冷、网络和客户验收能否同步。
+18: 10. **风险收益是明显的正凸需求、负凸融资。**若交付按期，固定长期合同、预付款和新一代 GPU 的高利用率会迅速放大收入；若电力/设备延迟、客户自建回流、GPU 价格下跌或信用恶化，公司仍要承担 GPU、租约和债务。CRWV 的核心监测指标应是 `active MW / contracted MW`、backlog 的 24 个月转化、利息/收入、现金 CapEx/新增 active MW、前两客户占比、同代 GPU 实现价、折旧寿命与二手残值。
+19: 
+20: ## 一、公司整体业务、投资人定位与产业链位置
+21: 
+22: ### 1.1 公司卖的不是“GPU”，而是可按 SLA 交付的 AI 产能
+23: 
+24: CoreWeave Cloud 是一套垂直整合的 AI/HPC 云平台，收入来自客户访问云计算服务，分为长期承诺合同和按需服务。平台自下而上包括：
+25: 
+26: | 层级 | CoreWeave 的内容 | 客户真正购买的价值 | 主要外部依赖 |
+27: |---|---|---|---|
+28: | 电力与数据中心 | 长租数据中心、变电、母线、液冷、跨站网络；开始增加 self-build | 比自建提前 6–24 个月获得可用 MW | Galaxy、Core Scientific 等开发商，公用事业、配电/冷却供应商 |
+29: | Foundational Infrastructure | A100/H100/H200、B200/GB200、B300/GB300，2026H2 Rubin；CPU、DPU、NVLink、InfiniBand/Spectrum-X | 最新 GPU 的确定配额、整柜交付、低故障率 | NVIDIA；OEM/ODM；HBM、网络和存储供应链 |
+30: | 网络与存储 | 400/800G backbone、Quantum InfiniBand、Spectrum-X；AI Object Storage、VAST/WEKA/DDN/Pure、LOTA 本地缓存 | 减少 GPU 等数据、checkpoint 和模型加载时间 | NVIDIA Networking、光模块、企业级 SSD/存储伙伴 |
+31: | 控制与运行时 | CKS（裸金属 Kubernetes）、SUNK（Slurm on Kubernetes）、Mission Control、fleet health、观测、自愈 | 提高 goodput、缩短 dock-to-live、降低作业失败和运维人员成本 | Kubernetes/Slurm 开源生态与公司自研 |
+32: | 模型与 Agent 工具 | W&B Models/Weave/Inference、OpenPipe/Serverless RL、Marimo、ARENA、Monolith | 把基础设施延伸到训练、评估、推理与工业 AI 工作流 | 开源模型/runtime、开发者采用与企业销售 |
+33: 
+34: 公司的产业链定位是：
+35: 
+36: `NVIDIA/服务器/网络/存储/数据中心供给 → CoreWeave 采购、融资、集成、调度和运营 → AI Lab / Hyperscaler / 企业客户购买确定算力 → 训练、RL、推理和 Agent 产生收入`。
+37: 
+38: 这解释了为何 CoreWeave 同时具有三类公司的财务特征：云软件公司的增长、设备租赁公司的折旧、基础设施开发商的债务与长期租约。
+39: 
+40: ### 1.2 投资人眼中的 CoreWeave
+41: 
+42: | 叙事 | 支持事实 | 叙事的盲点 |
+43: |---|---|---|
+44: | “最纯的 NVIDIA/AI 算力 β” | 全部现役 GPU 为 NVIDIA；Blackwell/Rubin 首发；2026Q1 收入 +112% | 供应商依赖极高，NVIDIA/自研 ASIC 决定采购价和残值 |
+45: | “AI 时代的公用事业” | $99.4B backlog、98% committed revenue、15%–25% 预付、多年固定合同 | 合同受交付/可用性约束；资产技术寿命远短于电网/管道 |
+46: | “带软件的 GPU 租赁公司” | 主要经济价值仍由 GPU 小时和 MW 驱动；利息与折旧巨大 | Mission Control/CKS/存储/W&B 能提高利用率和粘性，不能按无差异租赁估值 |
+47: | “NeoCloud 龙头” | >1GW active、>3.5GW contracted、近 50 个站点；ClusterMAX Platinum | AWS/Azure/GCP/OCI 的资本、区域、企业渠道和 ASIC 更强 |
+48: | “高杠杆 AI 泡沫代理” | $25.1B 债务、$40.7B 未起租承诺、FY26 CapEx $31–35B | 大部分建设有客户合同、预付和项目融资支持，不是纯投机库存 |
+49: 
+50: **综合定位：**CoreWeave 更像“以 GPU 为生产设备、以长期客户合同为融资抵押、以软件提高设备利用率的 AI 基础设施运营商”。估值不能只用 SaaS P/S，也不能只用 IDC EV/EBITDA；必须同时看收入增速、经济折旧、利息、合同信用和 active MW。
+51: 
+52: ### 1.3 最近三年的重大变化、转型与收购
+53: 
+54: | 时间 | 重大变化 | 对业务模式的意义 |
+55: |---|---|---|
+56: | 2023–2024 | 从早期加密/通用 GPU 历史彻底转成 AI 专用云；2023 与 Microsoft、NVIDIA 等建立大额合同/战略关系；以 GPU 抵押和合同现金流发展 DDTL 项目融资 | 从“小型 GPU 云”变成可承接 hyperscaler 订单的资产重 NeoCloud；客户和 NVIDIA 集中同步上升 |
+57: | 2024 | 收入由 2023 的低基数快速扩张至 2024 **$1.915B**；大量租赁高密度数据中心并部署 H100/H200 | 证明需求，但资产、债务和租赁负债同时膨胀 |
+58: | 2025-03 | 以 **$40/股** IPO，净募资约 **$1.4B**；与 OpenAI 签署首笔 **$11.9B** 承诺，随后扩至累计最高 **$22.4B** | 从 Microsoft 单一大客户向 AI Lab 分散；上市融资成为扩产工具 |
+59: | 2025-05 | 完成 Weights & Biases 收购，SEC 购买价 **$1.029B**（现金 $96M、股票/限制股约 $933M）；W&B 历史业绩对合并报表仍“不重大” | 由基础设施向 MLOps、模型/Agent 开发生命周期延伸；短期收入贡献小、战略价值大 |
+60: | 2025-09 至 11 | 收购 OpenPipe（RL）、Marimo（AI-native notebook）、Monolith（工业仿真/机器学习）；Monolith 对价含约 **$185M** 可转债 | 建立训练—RL—评估—推理—工业 AI 工具链；整合和商业化风险上升 |
+61: | 2025-07 至 10 | 提议以约 **$9B** 全股票收购 Core Scientific，后因 Core Scientific 股东未批准于 10 月终止 | 说明公司希望垂直整合数据中心；交易失败后转向长期租约、多供应商和 self-build，而非控制全部上游资产 |
+62: | 2025H2 | 上线 GB300、AI Object Storage、Mission Control、Serverless RL；backlog 由 Q2 $30.1B 升至 Q4 $66.8B | 产品由“GPU 实例”变成整套 AI factory 与推理工作流 |
+63: | 2026Q1–Q2 | NVIDIA 投资 **$2B**；签 Meta 新 **$21B**、Jane Street **$6B**、Anthropic 多年合同；推出 Flexible Capacity、Dedicated Inference、ARENA；完成 Rubin NVL72 系统级验证 | 需求重心转向推理和生产服务；融资从高息公司债扩展到投资级合同支持的非追索贷款 |
+64: 
+65: ### 1.4 最新股价、估值与经营快照
+66: 
+67: 2026-07-12 是周日，故“今天可得”的最新交易价格为 2026-07-10 收盘价。
+68: 
+69: | 指标 | 最新值 | 日期/口径 | 判断 |
+70: |---|---:|---|---|
+71: | 股价 | **$88.88**；盘后 $88.81 | 2026-07-10 收盘/盘后 | 52 周区间约 $63.80–153.50 |
+72: | 总股数 | **545.57M**（Class A 447.57M + Class B 98.00M） | 2026-04-30 SEC；估值页 2026-07-10 | 双层股权；按全部 A/B 计算市值 |
+73: | 市值 | **约 $48.49B** | $88.88×545.57M | 第三方终端因股数口径可出现约 $46.8–48.5B 差异 |
+74: | 企业价值 | **约 $81.37B** | 2026-07-10 第三方市场数据 | 高净债务使 EV 明显高于市值 |
+75: | TTM 收入 | **约 $6.227B** | FY2025 $5.131B + 2026Q1 $2.078B − 2025Q1 $0.982B | 同比约 **+129.9%** |
+76: | PE / Forward PE | **N/M / N/M** | 2026-07-10；TTM 与预期盈利均为负 | 负利润时不应显示负 PE 作为便宜信号 |
+77: | P/S / Forward P/S | **7.79x / 3.10x** | 2026-07-10 第三方一致预期口径 | Forward P/S 隐含 NTM 收入约 $15.6B，非公司指引 |
+78: | EV/Sales | **约 13.1x** | EV/TTM 收入 | 对资产重、负 FCF 公司偏高 |
+79: | 2026Q1 收入增速 | **+111.6% YoY / +32.2% QoQ** | 期末 2026-03-31 | active MW 与订单共同驱动 |
+80: | FY2026 收入指引 | **$12–13B** | 2026-05-07 | 中值同比约 **+143.6%** |
+81: | 毛利率 | **Q1 65.5%；TTM 69.4%** | `(收入−cost of revenue)/收入` 计算 | 不含 technology & infrastructure 大部分折旧，不能等同经济毛利 |
+82: | 净利率 | **Q1 -35.6%；TTM -25.6%** | GAAP | 利息和折旧吞噬 EBITDA |
+83: 
+84: 股价与估值数据见 [StockAnalysis 2026-07-10 快照](https://stockanalysis.com/stocks/crwv/statistics/)；财务分母来自 [2026Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/crwv-20260331.htm) 和 [FY2025 结果](https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Fourth-Quarter-and-Fiscal-Year-2025-Results/)。
+85: 
+86: ### 1.5 资产负债表与财务健康度
+87: 
+88: | 项目 | 2026-03-31 | 关键解释 |
+89: |---|---:|---|
+90: | 现金+有价证券 | **$2.266B**；另有限制性现金 $1.076B | 无限制现金只覆盖约一个季度现金 CapEx 的 29% |
+91: | 总流动资产/流动负债 | **$5.609B / $17.818B** | 流动比率 **0.31x**；流动负债含 $7.547B 当期债务、$2.130B deferred revenue |
+92: | PP&E 净额 | **$36.424B** | 占总资产约 65.5%；Q1 折旧摊销 $1.147B |
+93: | 在建工程 | **$9.581B** | 未来收入储备，也是延期/减值风险池 |
+94: | 总资产/总负债 | **$55.573B / $50.814B** | 负债/资产 **91.4%**；账面权益约 $4.759B |
+95: | 债务本金/净债务 | **$25.149B / 约 $22.883B** | 债务约为 Q1 年化收入的 3.0x；利率多为 7%–15% |
+96: | 经营租赁负债 | **$10.050B** | 另有尚未开始租赁的未来未折现付款 **$40.7B**，2026–2029 起租 |
+97: | 总流动性 | **$11.091B** | 现金/证券 $2.266B + 已承诺未用设施 $8.825B；能支撑一年但依赖继续提款 |
+98: | Q1 经营现金流 | **+$2.984B** | 受客户回款、应付/应计和 deferred revenue 时点帮助；不能当作稳态 FCF |
+99: | Q1 现金 CapEx | **$7.695B** | 同比约 5.5 倍；另有 $4.592B 与 PP&E 增加相关的非现金/待付款负债 |
+100: | 简化自由现金流 | **-$4.711B** | CFO−现金 CapEx；资产扩张期持续为负 |
+101: | Q1 利息/偿债 | 净利息费用 **$536M**；现金偿债 **$1.8B** | 利息/收入 **25.8%**；偿债含本金 $1.3B、利息 $459M |
+102: | 客户预收/合同缓冲 | deferred revenue **$7.523B**；合同预付通常为 TCV 的 **15%–25%** | 降低融资风险，但预收是未来服务义务，不是自由现金 |
+103: 
+104: **健康度结论：5/10，属于“流动性尚足、资本市场通道强、结构性高杠杆”。**正面因素是 $99B RPO、投资级客户、非追索 DDTL 4.0（总承诺 $8.5B，浮息 SOFR+2.25%、首笔固定约 5.9%）、NVIDIA/Jane Street 股权融资，以及许多贷款随合同现金流自摊销。负面因素是流动比率低、债务与租赁承诺巨大、FY26 CapEx 远高于收入、GAAP 营业亏损和客户集中。2026-04 又发行 $3.5B、1.75% 可转债；2026-06 定价 $1.25B、9.625% 美元债和 €2B、8.5% 欧元债，说明“能融资”与“融资便宜”必须分开。
+105: 
+106: ## 二、最新及最近四次财报：五季度财务、订单、交付与业务结构
+107: 
+108: ### 2.1 五季度财务总表
+109: 
+110: | 财报季度 | 收入 | YoY / QoQ | 计算毛利率¹ | 调整后 EBITDA / 率 | GAAP 营业利润/率 | 调整后营业利润率 | GAAP 净利润/率 | backlog | active / contracted power |
+111: |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+112: | **2026Q1（最新）** | **$2.078B** | **+111.6% / +32.2%** | **65.5%** | $1.157B / **55.7%** | -$144M / **-6.9%** | **1.0%** | -$740M / **-35.6%** | **$99.4B** | **>1,000MW / >3,500MW** |
+113: | 2025Q4 | $1.572B | +110.4% / +15.2% | 67.6% | $898M / 57.1% | -$89M / -5.7% | 5.6% | -$452M / -28.8% | $66.8B | >850MW / ~3,100MW |
+114: | 2025Q3 | $1.365B | +133.7% / +12.5% | 73.0% | $838M / 61.4% | $52M / 3.8% | 15.9% | -$110M / -8.1% | $55.6B | ~590MW / ~2,900MW |
+115: | 2025Q2 | $1.213B | +206.7% / +23.5% | 74.2% | $753M / 62.1% | $19M / 1.6% | 16.5% | -$291M / -24.0% | $30.1B | ~470MW / ~2,200MW |
+116: | 2025Q1 | $0.982B | +420.3% / N/A | 73.3% | $606M / 61.7% | -$27M / -2.8% | 16.6% | -$315M / -32.1% | $25.9B | ~420MW / ~1,600MW |
+117: 
+118: ¹计算毛利率仅为 `(Revenue−Cost of revenue)/Revenue`。CoreWeave 把大量 GPU/服务器折旧、基础设施工程和研发列入 `Technology and infrastructure`，所以该“毛利率”显著高于扣除生产设备经济折旧后的真实产品贡献率。
+119: 
+120: **五季度趋势：**
+121: 
+122: - 收入连续加速，2026Q1 环比 +32.2%，但 gross margin、adjusted EBITDA margin 和 adjusted operating margin 连续下行。原因不是需求不足，而是大量新设施/GPU 先发生折旧、租金、人员和启动成本，收入在验收/合同起始后确认。
+123: - Q1 2026 active power 至少比 Q4 增加约 150MW，而现金 CapEx $7.7B；用项目内全栈 **$39–70M/IT MW** 反推，对应约 110–197MW 的全栈资本形成，量级与 active 增量相符，但跨季度在建和验收使两者不能逐季一一配对。
+124: - 按季度收入年化除以期末 active MW，约从 2025Q1 的 $9.3M/MW-year、Q2 $10.3M、Q3 $9.3M 降到 Q4 $7.4M，再回到 2026Q1 至少 $8.3M。Q4/Q1 的下降反映大量新 MW 尚在 ramp，而非 list price 崩塌。
+125: 
+126: ### 2.2 订单、交期、取消/延迟与客户集中
+127: 
+128: | 财报季度 | backlog 变化 | 订单/客户项目 | 交付、lead time 与供给 | 取消率/非转化判断 | 客户集中 |
+129: |---|---:|---|---|---|---:|
+130: | **2026Q1** | **+$32.6B QoQ；bookings >$40B** | Meta 新约 **$21B**、至 2032；季度后 Jane Street **$6B**、Anthropic 多年分阶段上线 | active >1GW；contracted >3.5GW；2026 所需组件“绝大部分已锁定”；目标 2026 年末 1.7GW | 未披露取消率；RPO 已计服务信用/延迟/可转售容量；模型基准额外非转化/推迟 3%–7% | 前两客户 **65%**（45%+20%） |
+131: | 2025Q4 | +$11.2B QoQ | 新增企业客户；两家 hyperscaler 扩大关系 | 单季新增约 260MW active；Denton 延迟后在 12 月部署 >16,000 GPU | 延迟项目客户同意顺延合同日期，公司称不损失总收入；时点后移 | 估算最大客户约 **61%**² |
+132: | 2025Q3 | +$25.5B QoQ | Meta 最高约 **$14.2B**；OpenAI 再增最高 **$6.5B**，累计最高约 $22.4B | 新增 120MW active；GB300 首发；contracted 2.9GW | OpenAI 合同若反复不满足可用性，可终止全部或部分承诺 | 最大客户 **67%** |
+133: | 2025Q2 | +$4.2B QoQ | OpenAI 扩约 **$4B**；新增 hyperscaler | active 470MW；contracted +600MW 至 2.2GW；GB200/B200 放量 | 未披露取消；OpenAI 可用性条款构成实质保护 | 最大客户 **71%** |
+134: | 2025Q1 | +$10B vs 2024 年末约 $15.9B | OpenAI 首约 **$11.2B backlog / $11.9B TCV**；IBM Granite | active 420MW；contracted 1.6GW；GB200、CAIOS、CKS scaling | committed 98%；预付款降低取消动机 | 最大客户 **72%** |
+135: 
+136: ²2025 全年 Microsoft 占收入 67%；用前三季度披露的 72%/71%/67% 与季度收入反推，Q4 最大客户约 61%，仅为估算，不是公司季度披露。
+137: 
+138: **订单质量分层：**
+139: 
+140: - **硬度最高：RPO/committed take-or-pay。**2026Q1 未履约 RPO $98.8B；36%/39%/25% 分别预计在 0–24/25–48/49–84 个月确认。预付款通常为 TCV 的 15%–25%。
+141: - **中等硬度：contracted power。**>3.5GW 只说明电力/设施权利已签，不代表 GPU、网络、液冷、客户验收均完成；2026Q1 active/contracted 约 29%。
+142: - **项目执行风险：**Core Scientific 六个设施/五个站点约 590MW 全部给 CoreWeave；部分协议若超过目标日 30 天开始支付延期 credit，超过 120 天 CoreWeave 可在窗口期无罚终止。2026-03 Core Scientific 称已 energized ~350MW、billable >185MW，仍计划 2027 年初交付约 590MW。
+143: - **软 pipeline：**Poolside 的 2GW Project Horizon 合作于 2026 年报道结束，原因涉及首个集群不能满足 CoreWeave 时点；没有证据表明该软项目已进入 $99.4B RPO，故不能把它写成 backlog 取消。
+144: - **正面交叉验证：**Galaxy 2026-07-06 按期向 CoreWeave 交付 133MW IT；后续 260MW 计划从 2027H1 开始交付，三期共 526MW、15 年租约。133MW 若最终全部按 423–461 GPU/facility MW 的 GB300 密度填充，理论上可承载约 56,000–61,000 个 GPU 等价；“机房交付”仍不等于 GPU 已装满或客户已起算。
+145: 
+146: ### 2.3 各项业务收入、增速、利润率与 AI 数据中心占比
+147: 
+148: 公司没有产品分部，唯一可审计拆分是 committed 与 on-demand：
+149: 
+150: | 季度 | committed cloud revenue | on-demand revenue | AI/HPC 数据中心相关占比 | 推理/训练工作负载估算 | 产品利润率口径 |
+151: |---|---:|---:|---:|---|---|
+152: | 2026Q1 | **98% ≈ $2.036B** | **2% ≈ $42M** | **95%–100%（估算）** | 管理层按功率画像称 **推理 >50%**；训练/RL <50% | 当季公司 adjusted op margin 1%；成熟 committed capacity 经济贡献率模型 14%–25% |
+153: | 2025Q4 | >98% ≈ >$1.54B | <2% | 95%–100% | 推理约 40%–50%、训练/RL 45%–55%（估算） | adj. op margin 5.6%；新 MW ramp 拉低 |
+154: | 2025Q3 | 98% ≈ $1.337B | 2% ≈ $27M | 95%–100% | 推理 35%–45%、训练/RL 50%–60%（估算） | adj. op margin 15.9% |
+155: | 2025Q2 | 98% ≈ $1.189B | 2% ≈ $24M | 95%–100% | 推理 30%–40%、训练/RL 55%–65%（估算） | adj. op margin 16.5% |
+156: | 2025Q1 | 98% ≈ $962M | 2% ≈ $20M | 95%–100% | 推理 25%–35%、训练/RL 60%–70%（估算） | adj. op margin 16.6% |
+157: 
+158: “AI/HPC 相关 95%–100%”是业务性质判断，不是公司分部披露：所有收入来自为 AI/HPC 优化的云平台，但个别企业/HPC、开发工具或存储使用量不能被精确标成生成式 AI。W&B 在 2025-05 收购后对合并财务“仍不重大”，因此不能把软件叙事误写成已形成大额独立软件收入。
+159: 
+160: ## 三、2026 最新指引、收入占比与产品侧重
+161: 
+162: ### 3.1 2026Q1 后最新指引
+163: 
+164: | 指标 | 2026Q2 指引 | FY2026 指引 | 隐含判断 |
+165: |---|---:|---:|---|
+166: | Revenue | **$2.45–2.60B** | **$12–13B** | Q2 同比约 +102%–114%；全年同比 +134%–153% |
+167: | Adjusted operating income | **$30–90M** | **$0.9–1.1B** | Q2 利润率约 1.2%–3.5%；全年约 7.2%–9.2%，H2 需明显恢复 |
+168: | Cash/total CapEx | **$7–9B** | **$31–35B** | 低端上调源于 memory/组件价格；CapEx 为收入约 2.5–2.9 倍 |
+169: | Interest expense | **$650–730M** | 未给全年新值 | Q2 利息可能占收入 25%–30%，净利润仍承压 |
+170: | 2026 年末 ARR | — | **$18–19B** | 较此前低端提高 $1B；表明 H2 新容量加速上线 |
+171: | 2027 年末 ARR | — | **>$30B**，其中 >75% 已签 | 2027 增长主要受交付而非获客限制 |
+172: | Active power | — | **约 1.7GW 年末目标** | 较 2026Q1 >1GW 增加约 70%；需 >700MW 净上线 |
+173: 
+174: 指引来源为 [Q1 2026 earnings call / IR](https://investors.coreweave.com/events-and-presentations/event-details/2026/CoreWeave-First-Quarter-2026-Earnings-Conference-Call/default.aspx)；公司强调新设施部署约三个月后贡献率趋向 **mid-20s%**，所以 Q1/Q2 低营业利润率被视为时点问题。投资者仍需验证“时点问题”是否会被下一批更大 CapEx 永久续期。
+175: 
+176: ### 3.2 2026Q1 收入占比：可审计与模型拆分
+177: 
+178: | 收入视角 | 占比/金额 | 增长 | 可靠度 | 结论 |
+179: |---|---:|---:|---|---|
+180: | Committed contracts | **98% / $2.036B** | 总收入 +112% YoY | 高，SEC | 绝对核心；take-or-pay 和预付支持项目融资 |
+181: | On-demand | **2% / $42M** | 未单独披露 | 高，SEC 金额推算 | 当前很小；Spot/Flex 刚推出，未来是利用率优化器而非收入主体 |
+182: | Inference-associated workloads | **>50% / >$1.04B 等价** | 未披露；推理占比上升 | 中，管理层按功率画像 | 最突出、最受重视；驱动 Dedicated Inference、Flex、LOTA、Rubin |
+183: | Training/RL and other committed workloads | **<50% / <$1.04B 等价** | 仍高速增长 | 中 | 仍是大额长期合同基础；不会因推理上升而绝对下滑 |
+184: | Storage/software/developer tools | 独立收入未披露，估计 **<5%**；大量打包在平台费中 | 低基数高增长 | 低到中 | 当前不是利润表核心，却可能提高利用率、续约和未来毛利 |
+185: 
+186: ### 3.3 重点产品、型号、成熟度和利润率交叉验证
+187: 
+188: | 业务/产品 | 对应产品与型号 | 2026 状态 | 当前销售规模/增速判断 | 正常化经济毛利/贡献率估算 | 交叉验证 |
+189: |---|---|---|---|---:|---|
+190: | Hopper/Ampere 存量算力 | NVIDIA A100、H100、H200、L40/L40S、RTX PRO 6000 | H100/A100 近端售罄；推理承接旧代卡 | 估计 Q1 收入 $0.75–0.95B；绝对额稳定至增长 5%–25% | **18%–30%** | 管理层称 H100/A100 sold out 且价格上升；公开 H100/H200 on-demand 约 $6.16/$6.31 per GPU-hour |
+191: | Blackwell/Blackwell Ultra | B200、GB200 NVL72、B300、GB300 NVL72 | GB200/GB300 已大规模；Exemplar/MLPerf 验证 | 估计 Q1 $0.98–1.20B；未来一年 +80%–150% | **16%–28%** | 公开 B200 $8.60/GPU-hour、GB200 $10.50；2026Q1 active MW 和收入同步加速 |
+192: | Vera Rubin AI cloud | Vera CPU + Rubin GPU、NVLink 6、ConnectX-9/BF4、Spectrum-X/CPO；NVL72 | 2026-06 首个完整 rack 系统级验证；H2 客户部署 | Q1 收入近零；Meta/Jane Street 明确包含 Rubin；2027 是首个大收入年 | 首发 **20%–35%**，规模后 16%–28% | 72 GPU/36 CPU、260TB/s NVLink；厂商称推理/W 可达 Blackwell 的 10×、每百万 token 成本降至 1/10，需真实客户验证 |
+193: | Dedicated Inference | 客户自选 GPU SKU/runtime、专属 endpoint、生产 SLA | 2026Q1 推出，正从实验进入生产 | 已嵌在 committed revenue；推理工作负载 >50%；未来一年 +80%–130% | **30%–45%**，优化成熟可 45%–60% | 更高 batching/KV cache/利用率；同时需保留峰值容量，不能按纯软件毛利 |
+194: | Flexible Capacity | Reservations、Flex Reservations、Spot、On-Demand | Spot 已 GA；Flex preview；On-Demand/Reservations 成熟 | 当前 on-demand 仅 2%；未来 4%–7% 收入潜力 | **20%–40%** | Flex 收持有费+激活使用费；Spot 变现可抢占空闲，容量宽松时最先降价 |
+195: | AI Object Storage/LOTA | S3-compatible CAIOS；LOTA 每节点默认 1TiB cache；VAST/WEKA/DDN/Pure dedicated storage | CAIOS/LOTA 已 GA；跨云 LOTA preview | 独立收入估计 <2%；attach 快于 compute，但基数小 | **35%–55%**；软件/缓存控制面可 55%+ | 官方称 LOTA 最高约 7GB/s/GPU、模型权重加载 5×、spin-up 10×；应以 attach/续费验证 |
+196: | Mission Control/CKS/SUNK | CKS 裸金属 K8s、SUNK、fleet lifecycle、straggler detection、Mission Control Agent | 大规模生产；与计算捆绑 | 独立收入未披露；主要体现为 retention、goodput、价格溢价 | 增量软件毛利 **60%–85%**；公司合并贡献小 | Mission Control 宣称训练 goodput 最高 96%；ClusterMAX Platinum 与 MLPerf 支持性能，但不等于软件收入 |
+197: | W&B/Agent 工具 | W&B Models/Training/Inference/Weave、OpenPipe、Serverless RL、Marimo、ARENA、Monolith | 已产品化，整合期 | 2025 收购后财务“不重大”；估计 <3% 收入 | 成熟软件 **65%–85%**；近期研发/整合可能亏损 | 战略目标是从 GPU-hour 向 workflow/SLA 收费；需观察外部客户和独立 ARR |
+198: 
+199: ### 3.4 可跳过或低优先级产品
+200: 
+201: 以下产品不是“没有价值”，而是对未来一年 CRWV 收入/估值解释力较低，本文不逐项做三情景：
+202: 
+203: - 通用 CPU-only 计算、普通企业 IT/传统虚拟机；不是 CoreWeave 核心差异化。
+204: - A40、V100 等更旧 GPU 的渲染/传统 HPC 尾部；可能贡献现金流，但增速和定价权低于 A100/Hopper/Blackwell。
+205: - 通用块存储、普通网络/IP/Ingress 等基础云功能；属于必要配套，不是独立增长引擎。
+206: - Monolith 的工业工程应用、Marimo notebook 的短期独立收入；潜力存在，但 2026–2027 规模尚不足以决定集团收入。
+207: - CoreWeave Federal：政府/主权 AI 是潜在大业务，但尚缺明确 FedRAMP 认证阶段、合同额和收入披露，不计入基准大额贡献。
+208: - 3.2T、普遍 CPO、800VDC/MW rack、Rubin Ultra NVL576：是 2027–2028 技术期权，不是 2026 当前大收入；只在极度乐观容量情景中提高渗透。
+209: 
+210: ## 四、当前关键产品/业务的收入贡献、AI 重要性与供需评分
+211: 
+212: 评分均为 1–5：`AI 重要性`表示缺少该层对 AI factory 的影响；`时间紧急性`表示客户必须在未来 12 个月获得；`供需紧张`越高越供不应求；`垄断力`指 CoreWeave 相对其他云的控制力；`溢价力`指可实现高于同类供给的价格。收入贡献按 2026Q1 $2.078B，平台/SKU 之间存在捆绑，区间不机械加总。
+213: 
+214: | 关键产品/业务 | 当前季度收入贡献估算 | 收入增速 | AI 重要性 | 时间紧急性 | 供需紧张 | CoreWeave 垄断力 | 溢价力 | 判断 |
+215: |---|---:|---:|---:|---:|---:|---:|---:|---|
+216: | Committed AI compute 总体 | **$2.036B（98%，审计口径）** | **+112% 左右** | 5 | 5 | 5 | 3 | 4 | 最核心；合同硬、融资友好，但客户集中和交付条款使其不是无风险年金 |
+217: | Hopper/Ampere 存量 | **$0.75–0.95B（估算）** | +5%–25% | 4 | 4 | 4（H100/A100 近端售罄） | 2 | 3 | 推理延长旧卡寿命；性能/W 和二手价是下行风险 |
+218: | Blackwell/Ultra | **$0.98–1.20B（估算）** | +100% 以上 | 5 | 5 | 5 | 3 | 4 | 当前最大增长引擎；CoreWeave 交付/验证领先，但硬件非独占 |
+219: | Rubin | **接近 $0（Q1）** | N/M | 5 | 5 | 5 | 3 | 5（首发期） | Meta/Jane Street 已锁定；首发领先可获溢价，长期会正常化 |
+220: | Dedicated Inference | **>$1.04B workload 等价，包含于上述 GPU 收入** | +75%–120%（模型） | 5 | 5 | 4 | 3 | 4 | 最高潜力服务层；关键在 token/$、p99、KV cache 和 SLA |
+221: | Flex/Spot/On-Demand | **约 $42M 可审计上限附近；Flex/Spot 更小** | 低基数高增 | 4 | 4 | 4 | 2 | 4 | 收益管理提高利用率；供给宽松时 Spot 价格先跌 |
+222: | Storage/LOTA | **约 $20–50M 独立计费等价，估算** | +60%–120% | 4 | 4 | 4（eSSD/内存紧） | 2 | 3 | 小业务但不能遗漏；每减少 1% GPU idle 的价值远高于存储价差 |
+223: | Mission Control/CKS/W&B | **约 $40–100M 独立/分摊等价，估算** | +60%–100% | 4 | 4 | 3（软件人才紧） | 3 | 4 | 最可能提升长期毛利和切换成本；短期收入披露不足 |
+224: | 已通电 AI 数据中心能力 | 不单独确认收入；支撑全部 $2.078B | active MW +至少 138% YoY | 5 | 5 | 5 | 3（地域性） | 5 | 真正稀缺的是“可验收、可融资、可持续满载”的 MW，而非公告土地 |
+225: 
+226: ## 五、一年后关键产品/业务的三情景收入与能力预测
+227: 
+228: ### 5.1 情景总假设
+229: 
+230: | 假设 | 基准 | 乐观 | 极度乐观 |
+231: |---|---|---|---|
+232: | 2027Q2 active power | **约 2.2GW** | **约 2.6GW** | **约 3.0GW** |
+233: | 2027Q2 年化收入 | **$22.5B** | **$27.0B** | **$33.5B** |
+234: | 未来 12 个月累计收入（2026H2+2027H1） | **$18–21B** | **$21–25B** | **$25–30B** |
+235: | contracted→active 转化 | 关键在建项目 72%–82% 按原/小幅顺延节奏 | 85%–92% | >95%，多个项目提前 |
+236: | backlog 非转化/推迟折价 | **5%–8%**，主要为时间推迟 | **2%–4%** | **0%–2%** |
+237: | GPU/组件 | Blackwell 充足但 memory/SSD 紧；Rubin H2 2026 小批、2027H1 规模 | Rubin Q4 2026 已显著收入；HBM4/网络按期 | Rubin/GB300/网络/液冷全线提前且高良率 |
+238: | 利用率/实现价 | 新卡 75%–85%，旧卡 65%–80%；同代年降价 10%–18% | 新卡 85%–90%，价格稳定；旧卡温和降 | >90% 利用，Rubin 高溢价且 Hopper 推理价格不降 |
+239: 
+240: ### 5.2 一年后年化收入贡献：按平台/产品互斥归类
+241: 
+242: | 平台/产品 | 基准收入/增速 | 乐观收入/增速 | 极度乐观收入/增速 | 关键条件 |
+243: |---|---:|---:|---:|---|
+244: | Hopper/Ampere 推理与通用 AI | **$4.0B / +5%–20%** | **$4.5B / +20%–35%** | **$5.0B / +35%–50%** | A100/H100/H200 继续售罄；推理吸收旧代，二手残值不崩 |
+245: | Blackwell/Blackwell Ultra | **$10.5B / +110%–150%** | **$12.5B / +150%–200%** | **$14.5B / +200%–260%** | GB200/GB300 多站点交付、memory/SSD 与 800G/1.6T 不拖延 |
+246: | Vera Rubin cloud | **$5.5B / 新增** | **$7.0B / 新增** | **$10.0B / 新增** | Meta/Jane Street/其他客户验收；H2 2026→H1 2027 ramp；HBM4/液冷/网络成熟 |
+247: | Flex/Spot/On-Demand | **$1.0B / 约 5–6x** | **$1.4B / 约 7–8x** | **$2.0B / >10x** | Flex 从 preview 到 GA；checkpoint/preemption 生态成熟；有足够碎片容量 |
+248: | Storage/LOTA/Mission Control/W&B 等增量软件与数据服务 | **$1.5B / 约 3–5x** | **$1.6B / 约 4–6x** | **$2.0B / 约 5–8x** | attach 提升、独立收费、企业客户增加；避免被计算合同完全捆绑免费 |
+249: | **合计年化** | **$22.5B** | **$27.0B** | **$33.5B** | 与公司 2026 exit ARR $18–19B、2027 exit ARR >$30B 交叉约束 |
+250: 
+251: ### 5.3 一年后 AI 重要性、紧迫性、供需、垄断和溢价
+252: 
+253: | 产品 | 情景 | AI重要性 | 时间紧急性 | 供需紧张 | 垄断力 | 溢价力 | 一年后状态 |
+254: |---|---|---:|---:|---:|---:|---:|---|
+255: | Hopper/Ampere | 基准/乐观/极乐观 | 4/4/4 | 3/4/4 | 3/4/4 | 2/2/2 | 2/3/3 | 从训练主力转为成本敏感推理、微调和区域云；不是淘汰而是分层 |
+256: | Blackwell/Ultra | 基准/乐观/极乐观 | 5/5/5 | 5/5/5 | 4/5/5 | 3/3/4 | 3/4/5 | 2027 仍是最大收入底座，GB300 更偏 reasoning/inference |
+257: | Rubin | 基准/乐观/极乐观 | 5/5/5 | 5/5/5 | 5/5/5 | 3/4/4 | 4/5/5 | 首发期供不应求；CoreWeave 的系统级验证和客户合同形成 1–2 季领先窗口 |
+258: | Flex/Dedicated Inference | 基准/乐观/极乐观 | 5/5/5 | 5/5/5 | 4/5/5 | 3/3/4 | 4/4/5 | 从容量产品升级为 SLA/token economics；软件和容量池越大越难复制 |
+259: | Storage/LOTA | 基准/乐观/极乐观 | 4/5/5 | 4/5/5 | 4/5/5 | 2/3/3 | 3/4/4 | 长上下文/KV cache 使存储从附件变为 GPU 利用率层；仍有 VAST/WEKA/DDN 等强替代 |
+260: | Mission Control/CKS/W&B | 基准/乐观/极乐观 | 4/5/5 | 4/5/5 | 3/4/4 | 3/4/4 | 4/4/5 | 若能把 goodput/节省额变成收费，长期利润率最高；若只做捆绑功能，收入弹性有限 |
+261: 
+262: ## 六、BOM、每 MW/rack/GPU/optical port 内容量与价格传导
+263: 
+264: ### 6.1 GB300/Rubin 级机架的真实物理内容
+265: 
+266: 项目内 [AI 产业链全局图谱与口径字典](../../行业调研/产业背景/AI产业链全局图谱与口径字典_T03_2026-07-09.md) 和 [AI 服务器整机与机架集成](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-07-10.md) 给出的 GB300 NVL72 可复核锚点：
+267: 
+268: | 单位 | 真实内容量/价值 | 说明 |
+269: |---|---|---|
+270: | **每 GB300 NVL72 rack** | **72 GPU、36 Grace CPU、18 compute trays、9 NVLink switch trays、72 ConnectX-8、18 BlueField-3** | 完整 rack-scale 系统，不是 72 张独立 PCIe 卡 |
+271: | HBM/rack | **20.736TB HBM3E**（72×288GB） | 约 576 个 12H stack、6,912 个 DRAM dies 的容量推导；已嵌入 GPU 平台售价 |
+272: | 本地 data cache/rack | **约 576TB raw** | 不含外部共享存储/KV context tier |
+273: | 额定功率/rack | **最高约 142kW**（早期包络约 135kW） | 是 nameplate，不是全年平均计量功率 |
+274: | rack/IT MW | **约 7.04** | 1,000kW/142kW |
+275: | GPU/IT MW | **约 507** | 7.04×72 |
+276: | GPU/facility MW | **约 423–461** | PUE 1.20–1.10；实际还要扣 headroom、非计算 IT、维护与上架率 |
+277: | HBM/IT MW | **约 146TB** | 7.04×20.736TB |
+278: | 本地 cache/IT MW | **约 4.06PB raw** | 7.04×576TB |
+279: 
+280: Vera Rubin NVL72 已披露同样为 **72 Rubin GPU+36 Vera CPU**，NVLink 6 fabric 带宽约 **260TB/s**；CoreWeave 在 2026-06 完成完整 rack 系统级 bring-up/validation。Rubin 的最终功率、完整外部存储/网络和成交 ASP 仍会按客户配置变化，不能把厂商峰值性能直接转成收入。
+281: 
+282: ### 6.2 每 rack/每 GPU 的美元 BOM
+283: 
+284: | BOM 层 | 完整 rack 发票占比模型 | GB300 rack（$4.5–7.0M） | Rubin rack（$6–9M） | 每 GPU 内容量 |
+285: |---|---:|---:|---:|---:|
+286: | GPU/HBM/先进封装 | 68%–80% | $3.1–5.6M | $4.1–7.2M | GB300 **$43k–78k**；Rubin **$57k–100k** |
+287: | CPU+系统内存 | 4%–7% | $0.18–0.49M | $0.24–0.63M | $2.5k–8.8k |
+288: | scale-up/scale-out 网络 | 5%–10% | $0.23–0.70M | $0.30–0.90M | $3.1k–12.5k；含 switch/NIC/DPU/铜光，不全是外部光模块 |
+289: | 主板/PCB/retimer/连接器 | 2%–5% | $0.09–0.35M | $0.12–0.45M | $1.3k–6.3k |
+290: | 机架内供电 | 2%–5% | $0.09–0.35M | $0.12–0.45M | $1.3k–6.3k |
+291: | 冷却 | 2%–5% | $0.09–0.35M | $0.12–0.45M | $1.3k–6.3k |
+292: | 结构、本地存储、BMC、集成测试/服务 | 5%–13% | $0.23–0.91M | $0.30–1.17M | $3.1k–16.3k |
+293: | **完整 rack/GPU** | 100% | **$4.5–7.0M / $62.5k–97.2k** | **$6–9M / $83.3k–125k** | 仅 rack 发票；不含 shell、变电、外部网络/存储和融资 |
+294: 
+295: 每新增 IT MW 的去重全栈资本约 **$39–70M**：GPU/服务器 $20–38M，网络/光学/DPU/存储 $4–8M，shell/core+基础 MEP $7–13M，高密配电/液冷 $3–8M，电网/现场能源 $2–10M，软件/集成/验收/备件 $1.5–4M。按 423–507 GPU/MW，完整设施的资本内容约 **$77k–165k/GPU**。
+296: 
+297: ### 6.3 每 optical port、每 GPU 和每 MW 的光互联含量
+298: 
+299: 项目内 [800G/1.6T 可插拔光模块报告](../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md) 给出的 AI 集群经验口径为每加速器 **1.5–3.0 个高速 optical endpoint 等价**，含 NIC 端、交换层级、spine/core 与冗余；它不是“每 GPU 物理插 1.5–3 只模块”。短距离/机架内大量链路仍可能使用 DAC/AEC/NVLink 铜，不能全部按光模块计价。
+300: 
+301: | 单位 | 800G FRO | 1.6T FRO | 计算结果 |
+302: |---|---:|---:|---|
+303: | 单 module/endpoint ASP（2026） | **$280–420** | **$750–1,150** | DR/FR、SiPho/EML、客户供料差异大 |
+304: | 每 GPU optical endpoint | 1.5–3.0 | 1.5–3.0 | scale-out/across 等价，不含纯 NVLink 铜 |
+305: | 每 GPU 光模块价值 | **$420–1,260** | **$1,125–3,450** | endpoint×ASP；双端链路不能再重复加一次 |
+306: | 每 72-GPU rack endpoint | **108–216** | **108–216** | 网络拓扑会呈阶梯函数，非永久线性 |
+307: | 每 rack 光模块价值 | **$30k–91k** | **$81k–248k** | 与完整 rack 5%–10% 网络 BOM 相互校验 |
+308: | 每 IT MW endpoint（507 GPU） | **约 760–1,521** | **约 760–1,521** | 不含额外跨园区相干端口 |
+309: | 每 IT MW 光模块价值 | **$0.21–0.64M** | **$0.57–1.75M** | 其余网络 BOM 是 switch/NIC/DPU/AEC/DAC/光纤/共享 spine |
+310: 
+311: GB300 参考架构还给出每 rack 72 个 ConnectX-8、18 个 BlueField-3；计算网络交换机侧与 SuperNIC 侧各有 72 个 twin-port OSFP，DPU/storage 侧另有 18 个 twin-port 和 36 个 400G 单口。这里的“端口/模块/双口 OSFP/链路”必须分账，且并非每个物理位置都一定装单模光模块。
+312: 
+313: ### 6.4 GPU-hour 价格传导与公司实现收入
+314: 
+315: 2026-07-10 CoreWeave 公开价（北美/欧洲页面配置可能不同）：
+316: 
+317: | GPU/系统 | On-demand 系统价 | 折算每 GPU-hour | Spot 每 GPU-hour | 含义 |
+318: |---|---:|---:|---:|---|
+319: | A100 8-GPU | $21.60/h | **$2.70** | 约 **$1.21** | 旧代推理/科研价格层 |
+320: | H100 8-GPU | $49.24/h | **$6.16** | **$2.44** | H100 仍近端售罄，公开价高于多家 NeoCloud |
+321: | H200 8-GPU | $50.44/h | **$6.31** | **$2.58** | HBM 容量提高，适合推理/长上下文 |
+322: | B200 8-GPU | $68.80/h | **$8.60** | 约 **$4.36** | 最新代际溢价；长期大客户成交价显著低于 list |
+323: | GB200 NVL72 4-GPU instance | $42.00/h | **$10.50** | N/A | rack-scale 分片实例；配置含 Grace CPU/大内存 |
+324: | B300 8-GPU | Contact sales | N/A | 约 **$4.48** | Spot 价仅反映可抢占碎片，不能代表 committed deal |
+325: | GB300 NVL72 | Contact sales | N/A | N/A | 主要通过销售和长期容量合同 |
+326: 
+327: **价格传导链：**
+328: 
+329: `NVIDIA/HBM/服务器/网络涨价 → CoreWeave 每 MW CapEx 与融资需求上升 → 新签长期合同/新代 GPU list price 上调 → 客户用更高 token/$、更快 time-to-market 吸收 → 若性能增益不足，则同代 GPU-hour 降价或云商毛利受压`。
+330: 
+331: 按 75% 利用率，H100/B200/GB200 的公开价分别对应约 **$40.5k/$56.5k/$69.0k 每 GPU 年收入**。但 CoreWeave 2026Q1 实际年化收入/active MW 仅至少约 **$8.3M**，除以 423–507 GPU/MW 仅约 **$16k–20k/GPU-year**。差异来自长期大客户折扣、active MW 尚未装满/验收、非计算负载、不同代际、低于 75% 的 ramp 利用率及 list price 与 realized price 不同。这个校验说明不能用网页 on-demand 价格直接给 1GW 乘出收入。
+332: 
+333: ### 6.5 当前产能能力、采用与认证阶段
+334: 
+335: | 产品/能力 | 当前物理/美元产能 | 供应链采用 | 当前认证/验证阶段 |
+336: |---|---|---|---|
+337: | 总 AI cloud | **>1GW active；>3.5GW contracted；Q1 实现收入年化 $8.31B** | 近 50 站点、6 国；无单一 DC partner 超 17% 容量；9/10 头部模型商使用平台（公司口径） | 企业级生产；ClusterMAX 2.1 Platinum；多轮 MLPerf |
+338: | Hopper/Ampere | GPU 数不披露；按 Q1 贡献估算，当前实现收入能力年化 **$3.0–3.8B**；H100/A100 near-term sold out | 大客户从训练下沉到推理；生态最成熟 | 长期生产、客户 fully qualified |
+339: | Blackwell/Ultra | 按 Q1 贡献估算，当前实现收入能力年化 **$3.9–4.8B**；GB200/GB300 多站点 | OpenAI、Meta、IBM、Cohere、Mistral 等采用/披露 | GB200/GB300 生产；NVIDIA Exemplar training/inference；MLPerf v5/v6 规模验证 |
+340: | Rubin | 当前实现收入能力 **接近 $0**；Meta/Jane Street 合同指定下一代 compute/Rubin | CoreWeave 是首批云伙伴，系统已 operational | **完整 NVL72 系统级 validation 已完成**；下一步是多站点部署、客户 acceptance、持续 MLPerf/Exemplar |
+341: | Flex/Spot/On-Demand | Q1 on-demand 约 $42M，对应当前实现收入年化上限附近 **约 $0.17B**；Flex/Spot 更小 | inference.net 等公开案例；客户数未披露 | Spot GA；Flex Reservations preview，尚未全面 GA |
+342: | Storage/LOTA | 按 Q1 独立计费等价估算，当前实现收入能力年化 **$0.08–0.20B**；每 CKS 节点默认 1TiB cache | VAST/WEKA/DDN/IBM/Pure 伙伴；训练与推理均可 attach | CAIOS/LOTA GA；Cross-Cloud preview；S3-compatible 不是 AWS S3 完全等同 |
+343: | Mission Control/CKS/W&B | 按 Q1 独立/分摊等价估算，当前实现收入能力年化 **$0.16–0.40B**；主要以 goodput/留存体现 | 大客户生产使用；W&B 已有广泛开发者基础 | 生产；Mission Control 最高 96% goodput 为公司口径；需客户独立复核 |
+344: 
+345: 上述“美元产能”优先采用当前实际收入或收入贡献年化，而不是把网页 list price 乘以理论 GPU 数；Hopper、Blackwell、Flex、存储和软件层之间存在捆绑与分摊，**不得相加后再与集团 $8.31B 年化收入比较**。
+346: 
+347: ## 七、一年后的产能、采用和认证三情景
+348: 
+349: | 关键产品/能力 | 基准：2027Q2 | 乐观：2027Q2 | 极度乐观：2027Q2 |
+350: |---|---|---|---|
+351: | 总 active power / 年化收入产能 | **2.2GW / $22.5B**；contracted→active 约 63% | **2.6GW / $27.0B**；约 74% | **3.0GW / $33.5B**；约 86%，要求部分新增合同同步 |
+352: | GPU 等价物理容量 | 若按 423–461 GPU/facility MW，理论 **0.93–1.01M**；实际可计费更低 | **1.10–1.20M** 理论 | **1.27–1.38M** 理论 | 
+353: | Hopper/Ampere | 继续生产推理；利用率 65%–78%；价格温降 | 利用率 75%–85%；A100/H100 持续售罄 | 利用率 >85%；旧卡价格因推理需求反而持平 |
+354: | Blackwell/Ultra | 新增高端容量主力；多站点成熟；占年化收入约 47% | 供应更顺、占约 46%；GB300 高配占比上升 | 绝对额最高；memory/SSD/1.6T 无瓶颈，仍约 43% |
+355: | Rubin | 新增高端容量渗透 **15%–25%**；Meta/Jane Street 首批大规模验收 | **25%–35%**；2026Q4 已形成显著收入 | **35%–45%**；多客户提前，首发溢价持续 |
+356: | Rubin 认证阶段 | 多站点 production GA；完成客户 workload acceptance；Exemplar/MLPerf 扩展 | 多区域大集群认证、稳定 SLA 与供应商二次验证 | 成为新签 frontier 默认平台；持续近线性 scaling 记录 |
+357: | Flex/Spot | Flex 全面 GA 于主要区域/SKU；占收入 4%–5% | 跨区/多 SKU、自动 checkpoint；5%–6% | 收益管理成为标准层；6%+，且不牺牲 committed SLA |
+358: | Storage/LOTA | LOTA Cross-Cloud GA；storage attach 10%–15%（收入/客户口径需新披露） | Context/KV tier 与 Rubin 深度集成；attach 15%–25% | 长上下文客户标配；attach 25%+，软件收费独立化 |
+359: | Mission Control/CKS/W&B | 多数企业客户采用；独立软件/服务占收入 4%–6% | 按节省额/SLA 收费，跨代支持 Rubin/Blackwell | 成为 NVIDIA reference/其他 CSP 可售组件，出现外部许可收入 |
+360: | Federal/主权认证 | 基准不假设大额联邦收入；取得部分安全/合规里程碑 | FedRAMP/政府采购路径明确并有首批合同 | 多区域主权 AI 合同放量；需公开认证与订单证据后才上调 |
+361: 
+362: 物理 GPU 容量是上限换算：实际需扣非计算 IT、网络/存储 rack、冗余、平均功率、上架和验收。绝不能把 3.0GW×461 直接当作已收费 GPU 数。
+363: 
+364: ## 八、基于真实 backlog 与供给的未来一年业务增速预测
+365: 
+366: ### 8.1 Backlog 转收入瀑布
+367: 
+368: 截至 2026-03-31：
+369: 
+370: - Revenue backlog **$99.4B**；SEC 未履约 RPO **$98.8B**。
+371: - 未来 24 个月预计确认 **36% ≈ $35.6B**，平均约 $17.8B/年；第 25–48 个月确认 **39% ≈ $38.5B**；余下约 $24.7B 在第 49–84 个月。
+372: - FY2026 指引 $12–13B、2026 exit ARR $18–19B、2027 exit ARR >$30B 与上述 24 个月 RPO 量级相互一致，但收入不均匀，2027H2 权重更高。
+373: - Q1 末 deferred revenue $7.5B；4 月 Jane Street $6B 与 Anthropic 未披露金额构成增量需求，但需 Q2 RPO 重新确认。
+374: 
+375: ### 8.2 客户项目、金额、窗口与约束
+376: 
+377: | 客户/项目 | 已披露金额/容量 | 交付窗口 | 硬度 | 主要风险 |
+378: |---|---:|---|---|---|
+379: | Meta | 2025 订单最高约 $14.2B；2026 新承诺约 **$21B**，含既有 option 行权 | 至 2032；含首批 Rubin、多地点 | 高；MSA/order form，for-cause termination | Meta 自建/自研 MTIA、交付与 availability、客户集中 |
+380: | OpenAI | 多次扩约累计最高约 **$22.4B** | 2025–2031 分批 | 高；部分有 SPV/担保与可用性条款 | 反复 availability failure 可终止部分/全部；OpenAI 多云与信用风险 |
+381: | Jane Street | **约 $6B** 云承诺；另 $1B 股权投资 | 下一代 compute，多设施；具体期表未披露 | 高但季度后，待 Q2 RPO | 企业客户规模首次极大；部署/集中 |
+382: | Anthropic | 多年、金额未披露 | 2026H2 起分阶段，可扩展 | 中高 | 同时使用 AWS/Google/Fluidstack；份额竞争 |
+383: | Microsoft | 2025 全年收入 **67%** | 多年合同 | 高、历史最大客户 | 自建 Azure/Maia/合作方替代；集中度仍高 |
+384: | Galaxy Helios | 526MW IT、15 年；Galaxy 预期全三期年租金 >$1B | 133MW 已 2026Q2 交付；260MW 2027H1 起；133MW 2028 | 高；物理交付可核验 | CoreWeave 仍需装 GPU/网络并获得客户验收 |
+385: | Core Scientific 五站点 | ~590MW；Core Scientific 估计合同净收入约 $10B | 已 energized ~350MW、billable >185MW；目标 2027 年初 ~590MW | 高，但有延迟 credit/终止条款 | Denton 已延迟；天气、改造、设备、120 天终止权 |
+386: | Poolside Project Horizon | 公告 2GW、首期 250MW→500MW | 合作已结束 | 软 pipeline，不计 RPO | 说明软项目可因首集群时点/融资失败淘汰 |
+387: 
+388: ### 8.3 未来一年收入增长三情景
+389: 
+390: | 情景 | 未来 12 个月收入 | 相对前 12 个月估算增速 | 2027Q2 年化 | backlog 转化假设 | 供给假设 | 取消/推迟假设 |
+391: |---|---:|---:|---:|---|---|---|
+392: | **基准** | **$18–21B** | **+95%–125%** | **$22.5B** | 24 个月 RPO 按原计划、但 5%–8% 延后；Q2 后新单逐步贡献 | active 2.2GW；Helios/Core Scientific 按计划或小幅顺延；Rubin 2027H1 规模 | 真正取消 <3%，另有 3%–5% 时点推迟/服务 credit |
+393: | **乐观** | **$21–25B** | **+125%–165%** | **$27.0B** | 已签容量 85%–92% 按期；Jane Street/Anthropic 快速上线 | active 2.6GW；Rubin Q4 2026 明显收入；memory/SSD/网络紧但可传价 | 取消 1%–2%，推迟 1%–2% |
+394: | **极度乐观** | **$25–30B** | **+165%–220%** | **$33.5B** | >95% 项目按期/提前，客户扩 option；新签未降速 | active 3.0GW；Rubin/GB300/HBM4/1.6T/液冷/配电同时超预期 | 取消接近 0%，只保留 0%–2% 技术/验收扰动 |
+395: 
+396: **为什么基准不直接用 $35.6B/24 个月平均数：**RPO 的收入曲线后置，2026Q1 active 仅为 contracted 的约 29%，而新设备先产生折旧/利息。**为什么不把“取消率 0%”写成基准：**OpenAI 可用性、Meta for-cause、Core Scientific 延期终止权均真实存在；backlog 还受服务信用和交付延迟影响。**为什么也不采用社交媒体“多数 backlog 会失效”的说法：**Q1 末 RPO 已高达 $98.8B、Helios 按期交付、Core Scientific 已有 185MW+ billable，且公司融资仍能获得投资级合同支持；负面传闻缺乏对应 RPO 逐项证据。
+397: 
+398: ## 九、竞争格局、技术主流性、替代方案与客户切换成本
+399: 
+400: ### 9.1 竞争对手分层
+401: 
+402: | 竞争层 | 主要对手 | CoreWeave 优势 | CoreWeave 劣势 |
+403: |---|---|---|---|
+404: | 通用 hyperscaler | AWS、Microsoft Azure、Google Cloud、Oracle OCI | 最新 NVIDIA 首发、专用裸金属、交付速度、GPU goodput、合同灵活 | 对手资本成本低、全球区域多、企业渠道/数据库/应用生态强，并有 TPU/Trainium/Maia |
+405: | 头部 NeoCloud | Nebius、Crusoe、Lambda、IREN、Nscale、Fluidstack、Together AI | >1GW active、$99B backlog、最大客户验证、ClusterMAX Platinum、融资工具成熟 | 债务/租赁大、客户集中；Nebius/IREN 更偏 power ownership，Crusoe 更垂直能源/建设 |
+406: | 推理平台 | Fireworks、Baseten、Modal、Replicate、GroqCloud、Cerebras、SambaNova、d-Matrix | 可把专属 GPU、存储、网络、W&B 和 SLA 纵向整合 | 专用推理芯片/轻资产平台可在特定模型提供更低 token 成本 |
+407: | 客户自建/回流 | Meta、Microsoft、OpenAI/Stargate、xAI、Anthropic 多云 | time-to-capacity 与峰值外包；客户无需自建全部工程能力 | 最大客户也是潜在竞争者；自研 ASIC 与自建园区压低长期价格 |
+408: | 软件/调度/存储替代 | Kubernetes/Slurm、NVIDIA Run:ai、Ray/Anyscale、VAST、WEKA、DDN、Databricks/MLflow | CoreWeave 将这些层与底层 GPU 运维统一并承担 SLA | 开源/第三方可降低软件锁定；客户可在其他云复现部分栈 |
+409: 
+410: 项目内 [NeoCloud 行业报告](../../行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-07-10.md) 估计 CoreWeave 2026Q1 占季度 NeoCloud 收入口径约 **23%–32%**，NeoCloud CR1 约 20%–35%、CR4 45%–65%。这是龙头份额，不是垄断；全球整体云仍由 AWS/Azure/GCP 约 28%/21%/14% 主导。
+411: 
+412: ### 9.2 新技术是否主流、风险与替代路径
+413: 
+414: | 技术/产品 | 是否未来主流 | CoreWeave 位置 | 替代方案 | 主要风险 |
+415: |---|---|---|---|---|
+416: | GB200/GB300 NVL72 整架 | **是，2026–2027 主流高端** | 首发与大规模验证领先 | 8-GPU HGX、AMD MI350/MI450 Helios、云 ASIC | HBM/液冷/网络缺一不可；整架故障域与价格高 |
+417: | Vera Rubin NVL72 | **高概率成为 2027 高端主流** | 已完成行业首批完整系统级验证；客户合同锁定 | Blackwell Ultra、MI450/MI455X、TPU/Trainium | HBM4、功率、CPO/1.6T、BF4、软件成熟；厂商性能为理想值 |
+418: | InfiniBand/NVLink | NVLink scale-up 仍主流；IB 在 scale-out 面临分化 | NVIDIA 全栈强项 | Spectrum-X/开放 Ethernet、UEC、UALink | 专有绑定、成本；Ethernet goodput 追平后替代部分 IB |
+419: | 800G→1.6T | **2026 双轨、2027 1.6T 新增主流** | Rubin/GB300 推动需求 | 800G 多层网络、AEC/DAC、CPO | 模块/激光/DSP 良率；更高 radix 可减少层级/端口 |
+420: | 直触液冷 | **>100kW rack 的主流** | 多代 GPU 已生产使用 | 低密风冷、浸没/两相 | 漏液、QDC、流体/过滤、现场 commissioning |
+421: | Flex/Spot 收益管理 | **云计算成熟模式在 AI 的必然扩展** | 新推出，容量池规模大 | hyperscaler Spot/Capacity Blocks、跨云调度 | 影响 SLA、容量碎片不足；供给宽松时价差收缩 |
+422: | AI Object Storage/LOTA/KV tier | **训练存储已主流；context/KV 2027 放量** | LOTA 贴近 GPU，有跨云/零 egress 卖点 | VAST/WEKA/DDN、客户自建 NVMe/object、NVIDIA STX/CMX | 独立收费不清、存储伙伴可替换、接口开源化 |
+423: | Mission Control/CKS/W&B | **控制/观测必需，但实现可竞争** | 真实大集群数据与运维闭环是优势 | Kubernetes/Slurm/Run:ai/Datadog/MLflow 等 | 若功能被开源或 NVIDIA/hyperscaler 捆绑，独立定价受限 |
+424: 
+425: ### 9.3 客户切换成本
+426: 
+427: | 切换类型 | 时间/成本模型 | 为什么高 | 什么会降低成本 |
+428: |---|---|---|---|
+429: | CoreWeave→另一 NVIDIA 云 | **1–2 个季度**，大型集群可更久 | 数据迁移、网络拓扑、镜像、调度、性能基线、SLA、安全、重新压测；PB/EB egress | 容器/对象 API 标准化、零 egress、多云控制平面 |
+430: | NVIDIA NVL72→AMD/ASIC | **2–4 个季度** | CUDA/ROCm/XLA、scale-up fabric、kernel、模型精度/吞吐、备件和运维全变 | runtime 抽象、开放 UALink/UEC、成熟编译器和客户多源策略 |
+431: | 训练项目迁移 | 中高 | checkpoint、数据 locality、长作业失败风险、团队排期 | 作业可 checkpoint、对象存储跨云、SkyPilot/Slurm 多云 |
+432: | 生产推理迁移 | 高 | p99、batching、KV layout、autoscaling、endpoint、观测、合规和流量切换 | OpenAI-compatible API、模型可移植、双活和流量路由 |
+433: | 存储/LOTA 迁移 | 文件/对象平台 **数月到数季** | PB/EB 搬迁、权限/快照/元数据语义、重跑容灾/性能 | S3-compatible、零 egress、标准 connector |
+434: | W&B/Mission Control 工具链 | 中等到高 | 实验、模型、评估、遥测和故障数据形成工作流锁定 | 开放格式、MLflow/开源观测、客户自建控制面 |
+435: 
+436: 客户切换成本支持续约和定价，但不能等同垄断。最大客户能够用自建和多云议价，并可能要求 CoreWeave 采用指定 NVIDIA SKU、固定价和严格 availability 条款。
+437: 
+438: ## 十、投资判断、主要风险与跟踪仪表盘
+439: 
+440: ### 10.1 风险调整后的判断
+441: 
+442: - **业务质量：高增长、高需求、真实交付能力。**收入、RPO、active MW、客户名单、MLPerf/ClusterMAX 和 Helios 实物交付共同证明 CoreWeave 不是“只有公告 MW”的故事。
+443: - **股东回报质量：尚未证明。**2026Q1 adjusted EBITDA $1.157B 与净亏 $740M、现金 FCF -$4.7B 同时存在；未来两年即使收入翻倍，也可能被利息、折旧、租约和股权稀释吸收。
+444: - **护城河：中等偏强、但时效性强。**最新芯片首发、集群 goodput、合同融资和交付经验形成 1–4 个季度优势；芯片本身归 NVIDIA，云软件和数据中心供应并非不可复制。
+445: - **估值：以 7.79x TTM P/S、13.1x EV/S 衡量已包含很高增长。**若 FY2026 $12–13B 和 2027 exit ARR >$30B 按期兑现，当前市值可以被收入快速“消化”；若交付推迟两个季度、经济毛利只在十几个百分点，EV 和利息会使估值迅速失去保护。
+446: - **最合理的持仓逻辑：**不是“GPU 永远短缺”，而是 CoreWeave 在未来 12–24 个月能否把已签的高信用需求、首发 Rubin 和已锁定电力转成 active MW，同时让软件/推理提高单位 MW 收入快于融资和折旧增长。
+447: 
+448: ### 10.2 十项季度跟踪指标与反证阈值
+449: 
+450: | 指标 | 当前锚点 | 上调条件 | 下调/反证条件 |
+451: |---|---:|---|---|
+452: | Revenue | Q1 $2.078B；FY26 $12–13B guide | 连续两季高于 guide、QoQ >25% | 连续两季低于 active MW 隐含收入 >15% |
+453: | Backlog/RPO | $99.4B/$98.8B | Q2 纳入 Jane Street/Anthropic 后继续增且 24m 转化提高 | backlog 下降同时客户合同终止/服务 credit 上升 |
+454: | Active/contracted power | >1.0/>3.5GW，约 29% | 2026 年末达到/超过 1.7GW；2027 转化 >70% | 两季 active MW 增幅 <计划一半 |
+455: | Revenue/MW | Q1 年化 ≥$8.3M/MW | 随 GB300/Rubin 上升到 $9–11M | active MW 增而 revenue/MW 连续两季下降 >15% |
+456: | Adjusted operating margin | Q1 1% | H2 向 FY 7%–9% guide 恢复 | Q3/Q4 仍 <3%，说明 ramp 不是暂时 |
+457: | Interest/revenue | Q1 25.8% | 降至 <18%，新项目融资成本下降 | >30% 或融资利率持续 9%+ |
+458: | Cash CapEx/active MW | Q1 $7.7B；FY $31–35B | 单位 MW 资本稳定且交付提前 | CapEx 上调但 active/ARR 指引不变或下调 |
+459: | 客户集中 | Q1 top-2 65% | 企业/主权扩张，top-2 <55% | 单一客户重新 >60% 或客户自建替换 |
+460: | 同代 GPU 实现价/利用率 | H100/A100 sold out；公开 B200 $8.60/h | 新卡价稳、旧卡利用率 >70% | 同代价两季 -25% 且利用率下降 |
+461: | 折旧/残值 | GPU/设备寿命与二手价未充分披露 | 旧卡推理延寿、减值低 | 大额减值、会计寿命延长但二手价/利用率下跌 |
+462: 
+463: ## 十一、资料来源与估算纪律
+464: 
+465: ### 11.1 公司与监管一手资料
+466: 
+467: - [CoreWeave 2026Q1 results，2026-05-07](https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-First-Quarter-2026-Results/)
+468: - [CoreWeave 2026Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1769628/000176962826000222/crwv-20260331.htm)
+469: - [CoreWeave FY2025/Q4 results](https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Fourth-Quarter-and-Fiscal-Year-2025-Results/)
+470: - [CoreWeave 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm)
+471: - [2025Q1 results](https://investors.coreweave.com/news/news-details/2025/CoreWeave-Reports-Strong-First-Quarter-2025-Results/default.aspx)、[2025Q2 results](https://investors.coreweave.com/news/news-details/2025/CoreWeave-Reports-Strong-Second-Quarter-2025-Results/default.aspx)、[2025Q3 results](https://investors.coreweave.com/news/news-details/2025/CoreWeave-Reports-Strong-Third-Quarter-2025-Results/default.aspx)
+472: - [2025Q2 10-Q](https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm)、[2025Q3 10-Q](https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/crwv-20250930.htm)
+473: - [Meta $21B agreement 与 SEC 条款](https://www.sec.gov/Archives/edgar/data/1769628/000176962826000154/crwv-20260331.htm)
+474: - [Jane Street $6B cloud commitment + $1B equity，2026-04-15](https://investors.coreweave.com/news/news-details/2026/Jane-Street-Signs-6-Billion-AI-Cloud-Agreement-With-CoreWeave/default.aspx)
+475: - [Anthropic 多年协议，2026-04-10](https://investors.coreweave.com/news/news-details/2026/CoreWeave-Announces-Multi-Year-Agreement-With-Anthropic/)
+476: - [NVIDIA/CoreWeave >5GW collaboration，2026-01-26](https://investors.coreweave.com/news/news-details/2026/NVIDIA-and-CoreWeave-Strengthen-Collaboration-to-Accelerate-Buildout-of-AI-Factories/default.aspx)
+477: - [Vera Rubin NVL72 系统验证，2026-06-01](https://investors.coreweave.com/news/news-details/2026/CoreWeave-Completes-Industry-First-Bring-Up-and-Validation-of-NVIDIA-Vera-Rubin-NVL72/default.aspx)
+478: - [Flexible Capacity Plans，2026-03-10](https://investors.coreweave.com/news/news-details/2026/CoreWeave-Introduces-Flexible-Capacity-Plans-to-Accelerate-AI-Innovation/default.aspx)
+479: - [CoreWeave 产品总览](https://docs.coreweave.com/product-home)、[公开定价](https://coreweave.com/pricing)、[Storage/LOTA](https://www.coreweave.com/products/storage)、[Mission Control](https://www.coreweave.com/mission-control)
+480: - [Weights & Biases 收购完成](https://investors.coreweave.com/news/news-details/2025/CoreWeave-Completes-Acquisition-of-Weights--Biases/default.aspx)
+481: 
+482: ### 11.2 订单、数据中心伙伴、渠道和技术验证
+483: 
+484: - [Galaxy Helios 133MW 按期交付，2026-07-06](https://www.galaxy.com/newsroom/galaxy-completes-phase-i-of-its-helios-data-center-campus)
+485: - [Core Scientific 项目融资披露：六设施、延期 credit、120 天终止权](https://investors.corescientific.com/sec-filings/all-sec-filings/content/0001193125-26-165121/d149019dex992.htm)
+486: - [Core Scientific 2025Q4：350MW energized、185MW+ billable、目标 590MW](https://investors.corescientific.com/sec-filings/all-sec-filings/content/0001628280-26-013214/q4fy25earningsdeckvfinal.htm)
+487: - [DCD：Denton 延迟后上线 16,000 GPU](https://www.datacenterdynamics.com/en/news/coreweave-deploys-16000-gpus-at-delayed-data-center-in-denton-texas/)
+488: - [DCD：Poolside/CoreWeave Project Horizon 合作结束](https://www.datacenterdynamics.com/en/news/poolside-seeks-partners-for-data-center-in-texas-after-coreweave-deal-falls-apart/)
+489: - [DCD：CoreWeave >1GW、2026 年末 1.7GW、推理 >50%、H100/A100 sold out](https://www.datacenterdynamics.com/en/news/coreweave-surpasses-1gw-of-data-center-capacity-pushes-more-into-self-builds/)
+490: - [SemiAnalysis ClusterMAX 2.0/2.1 CoreWeave review](https://www.clustermax.ai/cloudreview/coreweave)
+491: - [MLCommons MLPerf Training v6.0 supplemental](https://mlcommons.org/wp-content/uploads/2026/06/Final-MLPerf-Training-v6.0-Supplemental-Discussion-UNDER-EMBARGO-UNTIL-6_16_26-8_00-AM-PT.pdf)
+492: - [MLCommons MLPerf Training v5.0](https://mlcommons.org/2025/06/mlperf-training-v5-0-results/)
+493: 
+494: ### 11.3 本次使用的项目内行业资料
+495: 
+496: - [AI 云算力外包、NeoCloud 与 AI 数据中心运营商](../../行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-07-10.md)：市场口径、每 MW BOM、GPU-hour 经济性、NeoCloud 竞争与三情景。
+497: - [AI 产业链全局图谱与口径字典](../../行业调研/产业背景/AI产业链全局图谱与口径字典_T03_2026-07-09.md)：GB300 rack/GPU/HBM/MW 换算、去重和 RPO→收入纪律。
+498: - [AI 服务器整机与机架集成](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-07-10.md)：rack BOM、ASP、认证、L11/L12 和切换成本。
+499: - [800G/1.6T 可插拔光模块](../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md)：optical endpoint、ASP、1.6T 路线和供应瓶颈。
+500: - [AI-native 存储与 KV Cache 基础设施](../../行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-07-10.md)：存储 BOM、Context Memory、认证与切换成本。
+501: - [AI 集群调度与推理运行时](../../行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-07-10.md)：软件利润率、runtime/调度竞争和开源替代。
+502: - [NVIDIA GTC 2026](../../行业调研/产业背景/顶级会议信息/nvidia_gtc_2026_research.md) 与 [Xcelerated Compute Show 2026](../../行业调研/产业背景/顶级会议信息/xcelerated_compute_show_2026_report.md)：Rubin/DSX/STX、推理、残值、融资和吉瓦级 AI factory 的会议侧验证。
+503: 
+504: ### 11.4 估算纪律
+505: 
+506: 1. 公司未披露 SKU/训练/推理/软件收入；相关数字用 committed/on-demand 审计比例、管理层工作负载比例、公开价、active MW 和行业 BOM 联立，全部标为估算。
+507: 2. Revenue backlog、RPO、客户 TCV、contracted MW、active MW、GPU 订单、数据中心租约总额属于不同账本，不加总为收入。
+508: 3. 每 MW GPU 数先区分 IT MW 与 facility MW；facility MW 使用 PUE 1.10–1.20，再扣非计算 IT、headroom、上架、维护和平均功率。
+509: 4. 光互联区分 link、endpoint、port、module、twin-port OSFP、optical engine；双端链路不重复计量，短距铜缆不强行计成光。
+510: 5. 毛利率区分公司列报 gross margin、adjusted EBITDA、adjusted operating income 和扣经济折旧/融资后的产品贡献率。
+511: 6. 极度乐观情景只表示供需和执行上限，不表示概率最高；基准情景仍保留交付推迟、服务 credit、客户集中、融资成本和代际残值折价。

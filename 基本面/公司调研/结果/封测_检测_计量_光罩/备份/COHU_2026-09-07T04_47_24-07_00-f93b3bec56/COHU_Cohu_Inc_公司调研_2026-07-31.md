@@ -1,0 +1,488 @@
+# COHU：Cohu, Inc. 公司全面尽调
+
+> **报告日期：** 2026-07-31（美国太平洋时间）  
+> **最新信息截止：** 2026-07-31 13:00:00 PDT（美股收盘）；已纳入 2026-07-30 发布的 FY2026 Q2 财报、10-Q、演示材料与电话会。  
+> **研究边界：** 项目内仅调用 `基本面/行业调研/` 的相关产业资料；其余证据来自联网检索。未调用或修改公司索引。  
+> **口径：** 美元；季度均为 Cohu 财年季度。`公司披露`、`直接计算`、`本报告估算`严格区分。产品级收入、毛利率、ASP、产能与 B2B 多数未由公司披露，凡属模型均以区间、公式和置信度标注。  
+> **非投资建议。**
+
+## 核心结论
+
+1. **Cohu 不是纯 AI 芯片设备商，而是一家后道“测试单元”平台。** 它把半导体 ATE、handler/主动热控、socket/contactor、封装后检测、备件服务和工厂软件放进同一平台。投资者过去把它视为汽车、工业、手机周期驱动的中小型后道设备股；2026 年开始因 Eclipse/T-Core 高功率 AI 处理器测试和 Neon HBM 检测，转成“传统业务复苏 + AI 测试期权”。这两种身份必须同时估值。
+2. **最新业绩已经从故事进入收入，但估值先行。** Q2’26 收入 **$149.0m，同比 +38.4%**，GAAP/非 GAAP毛利率 **45.4%/45.5%**，GAAP接近盈亏平衡，非 GAAP净利润 **$14.1m**。FY2026 收入指引约 **$610–615m，同比约 +35%**，HPC收入指引升至 **$100–110m**。然而 7 月 31 日收盘股价 **$47.86** 对应 TTM P/S **4.30x**，GAAP PE 无意义；按尚未充分更新财报的 FY2026 非 GAAP EPS 共识 $0.58，forward PE 约 **83x**，市场已为 2027 转化支付较高价格。
+3. **最强产品是 Eclipse/EclipseX + T-Core X。** 6kW 可升级主动热控、最高 x16 并测、平台可在 OSAT 原有 kit 基础上升级，直接解决 GPU/CPU/custom ASIC 封装测试的功耗、温控、socket force 和吞吐瓶颈。管理层披露一笔 **$26m** 新订单将主要在 Q4 交付，当前 FY2026 HPC 产能基本售罄；公司计划六个月把 HPC handler output 提高约 **50%**，到 2027 年中较 Q2’26 **超过翻倍**，并保留 2027 年末三倍路径。
+4. **约 $850m 是“选定客户年度可采购机会池”，不是 backlog。** 其中约 **$190m 已 qualified**；其余处于 qualification 或早期 engagement。2025 年末真正披露的产品 backlog 只有 **$165.1m**，且公司明确写明很多订单可被客户低罚金或无罚金取消、改期。把 $850m 直接乘毛利率或当作未来收入，结论会严重失真。
+5. **第二增长曲线不能漏掉小产品。** Neon HBM3E/4/4E 六面/IR/SWIR 检测预计 FY2026 约 **$20m、同比约 +80%**；Diamondx 获约 **$5m** AI 数据中心 GaN 功率器件订单；silicon-photonics insertion-3 interface 已有 **$0.5m bookings**、handler 计划年末认证；PAICe/DI-Core 软件 Q2 首次达到 **$1m季度收入**、订单同比 **+140%**。后三项绝对额小，但认证成功后收入基数和毛利弹性最大。
+6. **资产负债表流动性很强、盈利质量仍在修复。** 现金及投资 **$498.2m**、总债务 **$304.4m**、净现金约 **$193.8m**，流动比率 **5.74x**；但 $287.5m 可转债抬高了现金，商誉和无形资产合计 **$343.1m/股东权益的44%**，TTM GAAP净利率仍为 **-7.4%**。健康度评为 **7.5/10：短期偿债优秀，长期要靠 HPC 放量把 GAAP 利润和现金回报做实。**
+
+## 一、公司业务、投资者定位与产业链位置
+
+### 1.1 业务全景
+
+Cohu 只有一个会计报告分部：**Semiconductor Test & Inspection Equipment**。客户包括 IDM、fabless、foundry 影响下的 OSAT，产品位于晶圆完成之后、芯片封装/测试/检测和量产良率优化环节。
+
+| 业务层 | 主要产品/型号 | Cohu解决的问题 | 收入属性 | AI/HPC相关性 |
+|---|---|---|---|---|
+| 半导体 ATE | **Diamondx、DxV、PAx**及仪器卡 | wafer/package electrical test；模拟、混合信号、PMIC、RF、GaN/SiC | 系统；后续升级/服务 | Diamondx 的 GaN、数据中心 PMIC/控制器相关；但旗舰 GPU SoC ATE 主平台仍以 Advantest/Teradyne 为主 |
+| Handler/thermal | **Eclipse、EclipseX、T-Core/T-Core X**；MT9928、MT9510等 | 自动搬运、上下料、并测、-55°C至+155°C温控、高 socket force | 系统 + kit/head/spares | **最高**；EclipseX 可升级到 6kW，GPU/CPU/custom accelerator/ASIC |
+| Interface solutions | HYDRA、MAXOR、ULTRA-S、cBoa、cPython、Gemini、probe heads/pins | tester—DUT 电连接、低接触电阻、高电流/高频、device-specific 接触 | 高频更换的 recurring | HPC socket/contactor、GaN KGD、silicon-photonics optical engine insertion |
+| Inspection & metrology | **Neon、Krypton、NV-Core、Aquilae IR/SWIR** | WLCSP/bare die/package 六面、3D、IR/SWIR 内部裂纹及计量 | 系统 + recipe/service | **高**；Neon 针对 HBM3E/4/4E micro-pillar、内裂纹和封装缺陷 |
+| Software analytics | **PAICe Prescriptive/Monitor/Maker、DI-Core、InSight、SmartTrak** | 设备监控、预测维护、数字孪生、闭环 APC、异常检测 | 订阅/recurring | 高潜力；在客户厂内运行模型/agent，满足数据主权 |
+| 服务与耗材 | device kits、thermal heads、spares、维修、service agreement | 维护约 25,300 台 installed base、切换新器件代际 | recurring | 新 HPC 系统一年保修后形成服务；每约18个月新器件代际触发 kit/head更新 |
+
+产业链位置可简化为：
+
+`Fabless/CPU-GPU-HBM设计 → Foundry/先进封装 → IDM或OSAT量产测试 → Cohu handler/thermal + interface + inspection + software（部分场景含Cohu ATE） → 合格GPU/HBM/GaN/光引擎 → AI服务器/机架`
+
+**重要边界：** Cohu 的设备在半导体工厂或 OSAT，不装进数据中心。因此其“每 GPU/每 rack/每 MW 内容量”是测试设备折旧及服务的经济摊销，不是服务器实体 BOM；实体 BOM 中 Cohu 直接含量为 **$0**。
+
+### 1.2 投资者心中的公司
+
+- **历史标签：** 高周期、客户集中、后道 handler/contactor 龙头；收入对 test-cell utilization、手机/汽车/工业库存和客户 capex 敏感，估值通常低于纯 ATE 双寡头。
+- **质量支撑：** recurring 收入常占 55%–65%，interface、spares、kits、software、service 能随 installed base 和芯片测试量复利；2025 全年 recurring 占 **60%**。
+- **2026 新标签：** 小市值 AI 测试“铲子股”。Eclipse 进入高功率 xPU final test/SLT，Neon进入 HBM post-singulation inspection，GaN和silicon photonics扩大可选性。
+- **本报告判断：** 最合适的估值框架不是“纯 AI TAM 倍数”，而是 `传统核心业务正常化价值 + 已 qualified AI 产能的利润 + 尚未 qualified pipeline 的期权折价`。
+
+### 1.3 最近三年重大业务变化
+
+| 时间 | 事件 | 金额与事实 | 战略意义/验证结果 |
+|---|---|---|---|
+| 2023-01 | 收购 MCT Worldwide | 最终净购买价约 **$26.8m**；增加 strip、film-frame、laser-mark handler | 向先进封装及更多 handler 形态扩展；对合并报表影响不重大 |
+| 2023-10 | 收购新加坡 EQT | 最终购买价约 **$50.3m** | 补强中高功率、MEMS、IR、coaxial、Kelvin contactor，直接增加 recurring interface 收入 |
+| 2024 | 制造向亚洲迁移 | 菲律宾/马来西亚工厂扩建、部分欧美制造迁移 | 降成本并靠近 OSAT；迁移补偿、重复设施和库存费用短期压毛利 |
+| 2025-01 | 收购 Tignis | 净现金约 **$34.8m**；PAICe Monitor/Maker 与数据科学团队并入 DI-Core | 从设备软件延伸到全厂 analytics；但 2025 收入“不重大”，$1.7m contingent consideration 未赚取，说明商业化早于规模化 |
+| 2025-02起 | 战略重组 | 瑞士 La Chaux-de-Fonds、德国 Kolbermoor 业务并入低成本地区；美国和亚洲裁员；2025重组税前费用约 **$10.1m** | 对冲传统周期下行，基本于 2026Q1完成；执行风险和产品退出导致 Q4’25 一次性库存冲销 |
+| 2025-09 | 发行 2031 可转债 | 本金 **$287.5m**、票息1.5%；初始转换价约 **$27.18**、对应约 **10.58m股**，capped-call 初始上限约 **$41.02**；净现金流入约 **$246.7m**（扣发行成本及 capped call） | 为扩产/战略提供流动性；capped call仅在上限内对冲稀释，股价高于上限后仍有潜在稀释，且2031本金原则上需现金结算 |
+| 2025H2–2026 | AI/HPC转型落地 | Eclipse多客户重复订单；Neon HBM4；2026HPC指引升至 **$100–110m**；annual opportunity升至 **~$850m** | 从传统复苏转向 AI 结构性增长；当前最大限制从需求转为认证、thermal head/特殊零部件和产能 |
+
+来源：[2025 10-K](https://www.sec.gov/Archives/edgar/data/21535/000143774926004339/cohu20251227_10k.htm)、[MCT公告](https://ir.cohu.com/node/17721)、[Tignis公告](https://ir.cohu.com/news-releases/news-release-details/cohu-completes-acquisition-tignis)、[2025重组8-K](https://www.sec.gov/Archives/edgar/data/21535/000143774925004908/cohu20250224_8k.htm)。
+
+## 二、最新股价、估值、增速与资产负债表
+
+### 2.1 市场与经营指标
+
+| 指标 | 最新值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | **$47.86** | 2026-07-31 13:00:00 PDT，收盘 | 当日高/低 **$58.90/$46.85**；财报后高开并大幅回落，不能把盘中高点当收盘价 |
+| 市值 | **$2.249bn** | 同上 | 约47.0m基础流通股口径；可转债稀释股数另计 |
+| Trailing PE | **N/M**；行情商机械显示 **-40.2x** | TTM GAAP EPS约 -$1.19 | 亏损企业负PE没有估值意义 |
+| Forward PE | **约82.5x FY2026；约32.3x FY2027** | 股价/$0.58、$1.48 非GAAP EPS共识 | 共识数据虽在7/31标记更新，但 FY2026收入仍仅$558.7m，明显低于公司刚给的$610–615m，属于财报后尚未完全刷新；仅作参照 |
+| TTM P/S | **4.30x** | 市值/TTM收入$522.60m | 净现金调整后EV/S约3.93x |
+| TTM收入 | **$522.60m，同比 +32.7%** | Q3’25–Q2’26 | 对比前一TTM约$393.94m |
+| TTM GAAP毛利率 | **约44.0%** | 直接计算 | Q4’25一次性库存/产品线退出费用为低点 |
+| TTM GAAP净利率 | **约-7.4%** | TTM净亏约$38.8m | 尚未完成GAAP盈利拐点 |
+| 最新季度毛利率 | **45.4% GAAP / 45.5% non-GAAP** | Q2’26 | systems增长稀释mix，但规模利用率改善抵消 |
+| 最新季度净利率 | **约-0.1% GAAP / 9.5% non-GAAP** | Q2’26 | GAAP净亏$0.16m；non-GAAP净利$14.1m |
+
+股价/市值来源为 2026-07-31 美股收盘行情；分析师共识来源：[StockAnalysis/S&P Global，7/31页面](https://stockanalysis.com/stocks/cohu/forecast/)。**结论：** 若用刚发布的Q3与全年指引上修后EPS，实际 forward PE 会低于82.5x，但在卖方完成模型更新前，不应伪造“新共识”。
+
+### 2.2 资产负债表健康度
+
+截至 2026-06-27：[Q2’26 10-Q](https://www.sec.gov/Archives/edgar/data/21535/000143774926025144/cohu20260627_10q.htm)。
+
+| 项目 | 数值 | 比率/判断 |
+|---|---:|---|
+| 现金及现金等价物 | $219.6m | 现金本体 |
+| 短期投资 | $278.6m | 与现金合计 **$498.2m** |
+| 应收账款 | $122.7m | 约75天季度化DSO，符合跨国设备验收/账期特征但需观察客户集中 |
+| 存货 | $140.3m | 较Q1末$130.8m增 **7.3%**；为HPC ramp备料，同时带来特殊件、产品迭代和取消风险 |
+| 流动资产/流动负债 | $788.6m / $137.4m | 流动比率 **5.74x**；现金+投资+应收的速动比率 **4.52x** |
+| 总债务（gross） | $304.4m | 债务/权益 **0.39x**；绝大部分是2031可转债 |
+| 净现金 | **$193.8m** | 现金与投资减gross debt；短期无融资压力 |
+| 总资产/股东权益 | $1,258.4m / $774.6m | 总负债约$483.8m，资产负债率约38.4% |
+| 商誉+净无形资产 | $278.9m+$64.2m=$343.1m | 占总资产 **27.3%**、占权益 **44.3%**；并购减值是尾部风险 |
+| Q2经营现金流/Capex | $10.5m / $2.3m | 自由现金流约$8.2m；扩产主要靠供应链、厂房重排和营运资金，不是重晶圆厂式capex |
+
+**评估：7.5/10。** 优点是净现金、极高流动性、低票息、正自由现金流；扣分项是 TTM GAAP亏损、商誉无形资产占比高、库存上升、可转债潜在稀释，以及现金中约一半来自2025债务融资而非经营积累。若FY2027 HPC产能按计划转化，资产负债表足以自筹扩产；若qualification延迟，库存和固定费用会先暴露。
+
+## 三、最近五次财报：财务、业务结构、订单与交期
+
+### 3.1 五季度核心数字
+
+| 财报季度 | 收入/YoY | Systems收入/YoY | Recurring收入/YoY | GAAP/非GAAP毛利率 | GAAP净利（率）/非GAAP净利 | test-cell利用率 | AI数据中心收入占比（估算） |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| **Q2’25** | $107.68m / +2.8% | $39.64m / 未单列 | $68.04m / 未单列 | 43.7% / 44.4% | -$16.88m（-15.7%）/ +$0.7m | 75% | **4%–7% / $4–8m** |
+| **Q3’25** | $126.25m / +32.4% | $56.25m / +80.8% | $70.00m / +9.0% | 43.8% / 44.1% | -$4.1m（-3.2%）/ -$2.8m | 75% | **9%–12% / $11–15m** |
+| **Q4’25** | $122.23m / +29.9% | $49.10m / +38.5% | $73.13m / +24.6% | 40.0% / 40.8% | -$22.49m（-18.4%）/ -$7.2m | 76% | **12%–16% / $15–20m** |
+| **Q1’26** | $125.12m / +29.3% | $49.44m / +38.7% | $75.68m / +23.7% | 46.3% / 46.5% | -$12.07m（-9.6%）/ +$0.6m | 78% | **10%–14% / $13–18m** |
+| **Q2’26** | **$149.00m / +38.4%** | **$70.66m / +78.2%** | **$78.34m / +15.1%** | **45.4% / 45.5%** | **-$0.16m（-0.1%）/ +$14.1m** | **80%** | **15%–19% / $22–28m** |
+
+注：
+
+- Systems/recurring是10-Q的精确数，不是把整数百分比机械乘收入；recurring包含interface、非随系统出售的kits、spares、software、service。
+- Cohu不披露季度AI收入。AI占比是用管理层FY2025约$40m AI-related system收入、Neon $10–11m、FY2026 HPC $100–110m、Eclipse/Neon交付节奏及软件/GaN订单反推，**置信度中低，不可当作公司口径**。
+- Q4’25 GAAP毛利率由全年与9M报表直接相减得约40.0%；非GAAP 40.8%受约350bp产品线退出/库存与mix影响。
+- 来源：[Q2’25结果](https://cohu.gcs-web.com/news-releases/news-release-details/cohu-reports-second-quarter-2025-results)、[Q3’25 10-Q](https://www.sec.gov/Archives/edgar/data/21535/000143774925032269/cohu20250927_10q.htm)、[Q4’25结果](https://ir.cohu.com/news-releases/news-release-details/cohu-reports-fourth-quarter-2025-results)、[Q1’26 10-Q](https://www.sec.gov/Archives/edgar/data/21535/000143774926014308/cohu20260328_10q.htm)、[Q2’26 10-Q](https://www.sec.gov/Archives/edgar/data/21535/000143774926025144/cohu20260627_10q.htm)。
+
+#### 五季度业务毛利率mix桥（本报告反推，不是公司分部披露）
+
+Cohu只公布一个reportable segment，不公布systems与recurring各自成本。管理层在Q1电话会给出的近似锚是 **systems约40%、recurring约50%**。下表先对recurring采用与披露锚一致的区间中值，再反解systems毛利率，使两者按实际收入权重加总到GAAP总毛利率。
+
+| 季度 | Recurring收入 | Recurring GM假设 | Systems收入 | 反解Systems GM | 加权GAAP GM | 主要变动解释 |
+|---|---:|---:|---:|---:|---:|---|
+| Q2’25 | $68.04m | 49% | $39.64m | **约34.7%** | 43.7% | 低系统量、早期复苏，固定制造成本吸收不足 |
+| Q3’25 | $70.00m | 50% | $56.25m | **约36.1%** | 43.8% | systems放量但制造迁移、补偿及库存费用压制 |
+| Q4’25 | $73.13m | 48% | $49.10m | **约28.0%** | 40.0% | 产品线退出和库存/合并配置一次性费用；不可外推为正常系统毛利 |
+| Q1’26 | $75.68m | 50.5% | $49.44m | **约39.9%** | 46.3% | mix和产量利用率恢复，接近管理层“约40%”锚 |
+| Q2’26 | $78.34m | 50% | $70.66m | **约40.3%** | 45.4% | HPC系统量大增但保持约40%产品经济性 |
+
+敏感性：recurring GM每变动1个百分点，反解systems GM约反向变动 **1.1–1.7个百分点**，取决于当季mix。因此应把表用于理解方向，不能当作产品会计利润。
+
+#### 五季度AI产品收入桥（估算区间）
+
+| 季度 | Eclipse/高功率AI handler | Neon HBM inspection | PAICe/软件 | GaN、SiPh及AI interface等 | AI合计/总收入占比 |
+|---|---:|---:|---:|---:|---:|
+| Q2’25 | $1–3m | $2–3m | <$0.5m | $0–1m | **$4–8m / 4%–7%** |
+| Q3’25 | $7–9m | $3–4m | <$0.5m | $1–2m | **$11–15m / 9%–12%** |
+| Q4’25 | $10–13m | $3–4m | $0.3–0.7m | $1–2m | **$15–20m / 12%–16%** |
+| Q1’26 | $8–12m | $4–5m | $0.5–0.8m | $0.5–1m | **$13–18m / 10%–14%** |
+| Q2’26 | **$16–21m** | **$4.5–5.5m** | **约$1m** | **$0.5–2m** | **$22–28m / 15%–19%** |
+
+桥接依据是公司披露的2025 AI-related systems约$40m、Neon 2025 $10–11m/FY2026约$20m、FY2026 HPC $100–110m及大额订单交付窗口。列之间可能有少量分类交叉，故以最右侧去重合计为准；置信度由Q2’25的低逐步升至Q2’26的中。
+
+### 3.2 Bookings、backlog、B2B、交期与取消率
+
+| 季度 | 公司披露的订单/积压信号 | 本报告B2B区间估算 | 交期/交付窗口 | 取消率处理 |
+|---|---|---:|---|---|
+| Q2’25 | $28m mobile/auto Eclipse design-win；$4m当季确认、Q3/Q4各约$12m；除computing外各end-market订单环比改善 | **0.95–1.10x** | $28m订单交到Q4；新平台需客户验收 | 无季度取消率披露 |
+| Q3’25 | systems订单季节性moderated、recurring保持firm；Neon重复订单并发出首台HBM4系统 | **0.90–1.00x** | 订单转收入集中Q3/Q4 | 同上 |
+| Q4’25 | recurring bookings环比 **+34%**；systems bookings环比 **+47%**；2025全年总订单同比 **+29%**；2025末产品backlog **$165.1m**，同比+19.6% | **1.15–1.30x** | 约70%的Q1收入指引已在backlog，多数剩余systems在Q2发货 | 10-K明确大量订单可低/无罚金取消或改期 |
+| Q1’26 | 总订单同比 **+57%**、环比约+2%；handler +54%、inspection +64%、ATE +163%；computing订单同比+211%；$20m Eclipse订单带$330k年软件订阅 | **1.10–1.25x** | thermal handler制造cycle约 **14周**；大额订单仍需数月分批交付 | 无实际率；模型不把订单全当不可撤销 |
+| Q2’26 | computing占system orders **46%**，同比+150%；industrial +87%、consumer +29%、mobile持平、auto -24%；Q3初又获单客户 **$26m Eclipse**，大部分Q4发货 | **1.10–1.30x** | FY2026 HPC产能基本满；特定半导体和特殊部件成为供应链瓶颈 | 无实际率；下文情景用5%/2%/0%–1% firm-order取消改期压力 |
+
+**B2B为何只能给区间：** 公司不披露季度bookings美元。模型以收入、年末backlog变动、订单同比/环比和已披露大单校准；不是财务报表数据。2025全年若忽略取消/改期，粗略bookings约为 `收入$453.0m + backlog净增$27.1m = $480.1m`，对应约 **1.06x**，可用于检查季度区间总量是否离谱。
+
+**backlog与pipeline必须分开：** [2025 10-K](https://www.sec.gov/Archives/edgar/data/21535/000143774926004339/cohu20251227_10k.htm) 披露的$165.1m通常预计12个月内交付，但客户变更排期、取消、零部件延迟和验收失败都会阻碍收入确认；Q2’26的$850m则是annual opportunity，不是签约订单。
+
+## 四、2026Q2最新指引、收入占比与产品取舍
+
+### 4.1 指引与业务占比
+
+| 项目 | Q2’26实际/最新指引 | 含义 |
+|---|---:|---|
+| Q3’26指引：收入 | **$170m ± $7m** | 中点同比/环比分别约+35%/+14%；约$20m环比增长中，管理层称约一半HPC、一半core recovery |
+| Q3非GAAP毛利率 | **约45%** | systems占比继续上升，但产量利用率、价格传导抵消mix压力 |
+| Q3 OpEx / Adjusted EBITDA margin | **约$54m / 约16%** | 对HPC研发、供应链和应用工程继续投入 |
+| FY2026收入 | **约$610–615m，同比约+35%** | 由Q3/Q4约$165–170m支撑；显著高于财报前卖方共识 |
+| FY2026 HPC收入 | **$100–110m** | 从Q1的$80–100m上调；新增部分全部来自Eclipse，非Neon |
+| Q2 revenue mix | systems **47.4%**；recurring **52.6%** | 仍保留过半稳定收入，但AI系统拉升systems |
+| Q2 interface solutions | **约19% / $28.3m** | 属recurring；只有其中很小一部分当前可归AI/HPC |
+
+Q2’26按终端市场的收入：
+
+| End market | 收入占比 | 估算收入 | Q2 systems订单同比 | 研判 |
+|---|---:|---:|---:|---|
+| Computing | **41%** | **$61.1m** | **+150%** | 最突出；包含AI/HPC，也含传统计算，不能全部视为AI |
+| Automotive | 22% | $32.8m | -24% | 利用率恢复但订单仍弱，短期非重点 |
+| Industrial | 16% | $23.8m | +87% | 传统客户重新下10–20台级PO，构成core复苏的主要支撑 |
+| Consumer | 11% | $16.4m | +29% | 改善但非结构性AI主线 |
+| Mobile | 10% | $14.9m | 持平 | PAx/RF及handler需求稳定，成长性有限 |
+
+### 4.2 重点产品与明确跳过项
+
+**重点、不可遗漏：**
+
+1. **Eclipse/EclipseX + T-Core X 6kW high-power thermal handler**：最大收入与最紧产能。
+2. **Neon + NV-Core/Aquilae IR/SWIR**：HBM3E/4/4E六面、3D、内部裂纹和micro-pillar inspection。
+3. **HPC recurring**：device kit、thermal head、contactors、spares/service；新系统保修期后和新器件代际切换时兑现。
+4. **Diamondx GaN/高功率ATE + MAXOR/Volta interface**：AI数据中心电源架构的GaN器件测试，已拿约$5m订单。
+5. **Silicon-photonics insertion-3 interface/handler**：当前仅$0.5m bookings和若干约$10k级contactors，但若CPO/optical-engine进入量产，基数弹性大。
+6. **PAICe/DI-Core厂内AI软件**：Q2首个$1m收入季度，订单+140%，$330k年订阅与$20m系统订单绑定，管理层估该客户生命周期软件价值约$5m。
+7. **ULTRA-S、HYDRA high-end digital/optical contactors**：小额、经常性、通过认证后更换成本高，是上述系统收入的二次捕获。
+
+**本报告降低权重或跳过详细预测，但仍计入公司总收入：** PAx传统手机RF前端测试、flat-panel display driver、成熟gravity/turret/standard pick-and-place handler、传统汽车/工业/消费interface、camera/LED/MEMS成熟线、低增长维修翻新及非AI标准spares。原因不是这些业务无价值，而是与本次“AI高增长/关键产品”目标弱相关，且公司没有足够产品级披露；它们合计仍是2026收入的大多数，不能从总公司模型删除。
+
+来源：[Q2’26结果](https://ir.cohu.com/news-releases/news-release-details/cohu-reports-second-quarter-2026-results)、[Q2’26演示](https://ir.cohu.com/static-files/cf848b8e-d7be-47b3-91be-f56d9a316317)、[Eclipse](https://www.cohu.com/eclipse/)、[Neon](https://www.cohu.com/neon/)、[Diamondx GaN订单](https://ir.cohu.com/news-releases/news-release-details/cohu-receives-multiple-orders-testing-next-generation-gan-power)、[Interface产品](https://www.cohu.com/interface-solutions/)。
+
+## 五、当前高增长/关键产品：收入、增速、利润率与战略评分
+
+评分均为1–5：5代表对AI栈最关键/最紧急/最供不应求/最接近垄断/最强溢价。**“垄断”评分3只表示细分技术与认证优势，不代表法律或市场独占。**
+
+| 产品/业务 | Q2’26收入贡献估算 | FY2026收入贡献估算 | FY2026增速估算 | 产品毛利率估算 | AI重要性 | 时间紧迫性 | 供需紧张 | 垄断能力 | 溢价能力 | 置信度/交叉验证 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| **Eclipse/EclipseX + T-Core X** | **$16–21m** | **$78–82m** | **约+150%至+250%** | **38%–44%** | 5.0 | 5.0 | 4.5 | 3.5 | 4.0 | 中；FY2026 HPC中点$105m减Neon及少量recurring，且上调全部来自Eclipse；$26m订单占用Q4大部分产出 |
+| **Neon HBM inspection** | $4.5–5.5m | **$18–22m** | **约+65%至+100%**；管理层中枢+80% | **50%–58%** | 4.5 | 4.5 | 3.5 | 2.5 | 3.5 | 中高；2025 $10–11m、2026约$20m；美国IDM与台湾OSAT资格/重复订单 |
+| **HPC kits/thermal heads/interface/service** | $2–4m | $5–9m | >100%，低基数 | **50%–60%** | 4.0 | 4.0 | 4.0 | 3.5 | 4.0 | 中低；含于$100–110m HPC且与interface交叉，不能再加总；thermal head是当前choke point |
+| **Diamondx GaN AI power test** | $0–2m | **$5–8m** | 新项目，N/M | **43%–53%** | 3.5 | 4.0 | 3.0 | 2.5 | 3.5 | 中；约$5m多单为硬锚，交付时间未披露；Cohu/客户均未具名 |
+| **Silicon-photonics interface/handler** | 收入$0.2–0.6m；bookings约$0.5m | $0.5–1.2m | 新项目，N/M | interface **55%–65%**；handler早期较低 | 当前2.5/长期4.5 | 3.5 | 3.0 | 1.5 | 3.0 | 中低；insertion-3 interface继续出货，handler年末qual，insertion-4仍demo |
+| **PAICe/DI-Core software** | **约$1.0m** | **$2.5–3.5m** | **>+200%** | **65%–80%** | 4.0 | 3.5 | 2.0 | 2.5 | 4.0 | 中高；Q2收入与订单+140%为披露值；Tignis 2025收入仍不重大，attach约1.3%说明早期 |
+
+**去重说明：** FY2026的Eclipse + Neon + HPC recurring约 **$101–113m**，与公司$100–110m HPC指引基本一致；PAICe有一部分随HPC出售、SiPh归入interface，不能把表内所有行机械相加。GaN订单很可能在公司HPC定义之外。本报告估算FY2026可辨认的“AI/HPC直接相关收入”约 **$107–122m，占公司指引17%–20%**，余下主要是core业务。
+
+毛利率锚来自公司披露的当前systems约40%、recurring约50%，再结合项目内[HBM与存储测试设备行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-07-10.md)的BOM/同业区间和[探针卡、ATE与系统级测试行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-07-10.md)。Cohu未披露这些产品级毛利，表中不是会计事实。
+
+## 六、一年后产品收入与战略地位：三情景
+
+### 6.1 情景定义
+
+- **基准（B）：** 已qualified项目按计划爬坡；active qualification约25%–35%在未来一年转量产；firm orders发生约5%取消/推迟压力；HPC handler供应链扩产大致按计划。
+- **乐观（O）：** 未来一月及Q1’27两个关键Eclipse qualification均按期通过，另有2–3家在年中前复制；firm-order取消/推迟约2%；thermal head及存储/半导体零件供给改善。
+- **极度乐观（X）：** qualified、qualification、客户终端需求、良率和供应链同时兑现；年中产能超额翻倍并提前接近三倍路径；firm-order取消/推迟0%–1%。这不是最可能结果，是容量与估值压力测试。
+
+下表为**到Q2’27时的年化收入run-rate**，不是FY2027会计收入；同比基数取FY2026产品收入中枢。
+
+| 产品/业务 | 基准：年化收入/增速/毛利率 | 乐观：年化收入/增速/毛利率 | 极度乐观：年化收入/增速/毛利率 | 关键转化条件 |
+|---|---|---|---|---|
+| **Eclipse/T-Core X** | **$170m / +113% / 42%** | **$220m / +175% / 46%** | **$280m / +250% / 50%** | 马来西亚扩产、thermal head供给、5个在qual客户中2/4/5家转量产 |
+| **Neon HBM inspection** | **$30m / +50% / 54%** | **$40m / +100% / 58%** | **$52m / +160% / 62%** | HBM4/4E全检强度、SWIR内裂纹recipe、OSAT重复订单；不能假设垄断HBM检测 |
+| **HPC kits/heads/interface/service** | **$20m / +186% / 55%** | **$35m / +400% / 60%** | **$55m / +686% / 65%** | Eclipse installed base跨过保修期、新器件约18个月换代、device-specific kit/head复购 |
+| **Diamondx GaN** | **$12m / +85% / 47%** | **$20m / +208% / 52%** | **$30m / +362% / 57%** | 首个约$5m订单按期验收、第二客户、数据中心800V/高压DC架构加速采用 |
+| **Silicon-photonics** | **$3m / +253% / 55%** | **$8m / +841% / 62%** | **$15m / +1,665% / 68%** | insertion-3 handler通过年末qual；insertion-4从demo到量产；光引擎架构不延迟 |
+| **PAICe/DI-Core** | **$7m / +133% / 72%** | **$12m / +300% / 80%** | **$20m / +567% / 86%** | attach率从约1.3%提升、$330k部署复制、厂内数据权限及模型效果获客户验证 |
+
+产品行仍有交叉：HPC recurring、SiPh和PAICe可落在公司recurring/HPC定义中。去重后，本报告估计Q2’27可辨认AI/HPC年化收入约 **$235–260m（B）/$320–360m（O）/$410–455m（X）**。
+
+### 6.2 一年后重要性、紧急性、供需与定价评分
+
+每格依次为 `AI重要性 / 时间紧迫性 / 供需紧张 / 垄断能力 / 溢价能力`。
+
+| 产品 | 基准B | 乐观O | 极度乐观X | 解释 |
+|---|---|---|---|---|
+| Eclipse/T-Core X | **5.0/5.0/4.0/3.5/4.0** | **5.0/5.0/4.5/3.8/4.4** | **5.0/5.0/5.0/4.2/4.7** | 高功率final test/SLT是放量前硬门槛；但Hon Precision及更广义SLT/handler对手存在 |
+| Neon | **4.5/4.5/3.5/2.5/3.5** | **4.7/4.7/4.0/2.8/3.9** | **5.0/5.0/4.5/3.2/4.3** | HBM堆叠前后缺陷代价高；多模态inspection市场不可能由单一厂商垄断 |
+| HPC recurring | **4.0/4.0/3.8/3.5/4.0** | **4.3/4.5/4.3/3.8/4.4** | **4.5/5.0/4.8/4.0/4.7** | device-specific、停线成本与field support形成锁定；第三方兼容件是上限 |
+| Diamondx GaN | **3.5/4.0/2.8/2.5/3.3** | **4.0/4.5/3.5/2.8/3.8** | **4.5/5.0/4.2/3.2/4.2** | AI电源密度越高越紧急；ATE竞争成熟，客户可选Teradyne/Advantest/Chroma等 |
+| Silicon-photonics | **3.0/3.5/2.8/1.8/3.0** | **4.0/4.2/3.8/2.2/3.7** | **4.7/4.8/4.7/2.8/4.2** | CPO/optical I/O放量时测试插入价值陡增，但Cohu目前只有早期beachhead |
+| PAICe/DI-Core | **4.0/3.5/2.0/2.5/4.0** | **4.3/4.0/2.5/3.0/4.4** | **4.5/4.5/3.0/3.5/4.8** | 软件无物理短缺；真正稀缺是客户数据、既有设备schema、failure signature和生产信任 |
+
+## 七、BOM、真实单位内容量与价格传导链
+
+### 7.1 先把“真实内容量”定义清楚
+
+项目内行业资料把每 `$100 test-cell交付价值` 归一化为：
+
+| Test-cell组成 | 基准价值占比 | HBM4/极端配置 | Cohu可能捕获 |
+|---|---:|---:|---|
+| ATE mainframe、仪器、pin electronics、power | 50%–58% | 55%–65% | Diamondx场景可捕获；旗舰GPU/HBM ATE通常由Advantest/Teradyne捕获，不能算给Cohu |
+| probe/load board/socket/interface | 17%–23% | 20%–28% | Cohu interface/contactors可捕获一部分 |
+| prober/handler/robotics/active thermal | 14%–21% | 16%–25% | Eclipse/T-Core核心捕获层 |
+| test program/DFT/NRE/analytics | 4%–8% | 6%–12% | PAICe/DI-Core及应用工程的一部分 |
+| installation/calibration/spares/warranty | 4%–7% | 5%–9% | Cohu service/spares |
+
+区间不能相加为单点，因为客户会合并插入点、采用不同ATE和并行度。价格传导链是：
+
+`AI GPU/HBM/GaN/光引擎需求 → 器件功耗/引脚/缺陷代价上升 → test seconds↑、并行度受限、thermal/socket/inspection复杂度↑ → OSAT/IDM需增加test cell → Cohu卖system → 约一年保修后卖kit/head/spares/service → 新器件代际/recipe再升级 → 客户通过芯片测试费、良率和最终ASP把成本传给AI系统客户`
+
+核心容量公式：
+
+`所需cell数 ≈ 器件量 × 每器件测试秒数 × 重测系数 ÷（每cell并行sites × 31,536,000秒 × 利用率）`
+
+`每器件Cohu经济内容量 ≈ Cohu system ASP ÷ 生命周期合格器件数 + 生命周期kit/head/interface/software/service ÷ 合格器件数`
+
+### 7.2 各产品BOM与每GPU/rack/MW/optical port内容量
+
+| 产品 | Cohu交付BOM/售价锚 | 关键模型假设 | 每GPU经济内容量 | 每72-GPU rack | 每MW经济内容量 | 每optical port |
+|---|---|---|---:|---:|---:|---:|
+| **Eclipse/T-Core X** | handler mechanics、robotics、vision、x8/x16 sites、6kW active thermal head/chiller/control、device kit、安全/软件；配置ASP估 **$1.5–3.0m/cell** | 8–16 sites、10–30分钟、85% uptime、5年；生命周期约0.60m–3.57m GPU/cell | 仅system约 **$0.4–5.0**；含head/kit/service/PAICe的Cohu lifetime capture约 **$1–10** | **$72–720** | B300 142kW rack约507 GPU/MW：**$0.5k–5.1k**；Rubin 227kW约317 GPU/MW：**$0.3k–3.2k** | $0 |
+| **Neon HBM inspection** | 16/32-arm handling、visible+IR/SWIR、六面/3D、AI recipe、tape/reel；ASP估 **$1.0–2.0m** | HBM等效100–500 stack/hour、85% uptime、5年；每GPU约8 stacks | 设备折旧约 **$0.4–4.3**；含service取 **$0.4–5** | **$29–360** | B300 **$0.2k–2.5k**；Rubin **$0.1k–1.6k** | $0 |
+| **Diamondx GaN test cell** | Diamondx ATE/instruments + handler + MAXOR/Volta interface + PAICe；官方完整WBG finishing方案可到7k UPH@150ms；单cell ASP模型 **$1.0–2.5m** | 实际GaN recipe/sites未披露，保守折旧 **$0.01–0.50/GaN die** | `N_GaN/GPU × $0.01–0.50`；公开资料不足以给真实N_GaN | `72 × N_GaN/GPU × $0.01–0.50` | `N_GaN/MW × $0.01–0.50`；不伪造GaN颗数 | $0 |
+| **SiPh interface/未来handler** | insertion-3 contactor订单约$0.5m；电话会给出单件约 **$10k** 锚；未来加alignment/handler | interface寿命参照公司同类产品约0.5m–1m insertions；handler尚未qual | 非GPU直接测试，$0 | $0 | $0 | contactor折旧约 **$0.01–0.02/optical engine**；含未来handler估 **$0.05–0.50/engine**。`每port=每engine内容×engines/port`，该比率未披露 |
+| **PAICe/DI-Core** | 已披露单客户 **$330k/年订阅**；与$20m systems订单绑定，管理层估客户生命周期软件价值约$5m | 若订阅覆盖一个cell，按上表产出约$0.46–2.77/GPU/年；若覆盖多cell则显著更低 | 合理范围 **$0.1–2.8**，置信度低 | **$7–202** | B300 **$0.05k–1.4k**；Rubin **$0.03k–0.9k** | 只有部署到光学线才有，当前不能分配 |
+
+**“真实”的最重要答案：** 上表所有经济内容是工厂测试成本摊销。Cohu没有零件装进GPU、rack、MW电力系统或optical port，故这些单位的**实体BOM直接内容均为$0**。任何把Cohu FY2026 HPC收入除以NVIDIA GPU出货并称为“每GPU真实BOM”的做法，都会混入CPU、custom ASIC、多代器件、备件、库存和不同客户，不可接受。
+
+机架锚来自项目内[高速互连与光学验证测试行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-07-10.md)：GB300 NVL72约142kW/rack、Rubin NVL72约227kW/rack。Eclipse官方页披露最高x16、12k UPH（低功率/短test条件）和6kW升级能力；AI GPU模型采用10–30分钟而非12k UPH，避免用普通IC吞吐夸大AI产能。
+
+### 7.3 价格传导与利润率
+
+- **Eclipse：** 短缺首先抬高6kW configuration、thermal head、urgent delivery和field engineering的mix，而非公开统一涨价。系统毛利约40%，规模和配置成熟可抬至中高40%；冷板、泵、特定semiconductors和特殊件上涨会先压毛利。Q2电话会只称正主动锁定关键零件、尽量降低对lead time、利润和customer pricing的影响，**没有披露统一涨价或已完成cost pass-through**。
+- **Neon：** 客户愿为降低false escape/overkill付费；Cohu称小器件可达45k–50k UPH、相对吞吐最高改善70%、over-rejection低于1%，但HBM真实recipe吞吐未披露。利润率来自软件/recipe和避免高价stack报废，而非机械BOM。
+- **Interface：** 单价相对停线损失小，device-specific、接触寿命和cleaning interval形成高毛利重复收入；竞争和客户dual-source限制垄断定价。
+- **PAICe：** 边际软件成本低，毛利最高；但早期现场工程、数据清洗、客户厂内安全部署使当前实际利润率低于成熟SaaS。
+
+官方规格：[Eclipse](https://www.cohu.com/eclipse/)、[T-Core](https://www.cohu.com/t-core/)、[Neon](https://www.cohu.com/neon/)、[Wide-bandgap test](https://www.cohu.com/wide-bandgap-test/)、[ULTRA-S 2026产品表](https://www.cohu.com/wp-content/uploads/2026/03/ULTRA-S-Product-Sheet-030526b.pdf)、[PAICe](https://www.cohu.com/paice-digital-twin)。
+
+## 八、当前产能、供应链采纳与认证
+
+### 8.1 当前状态
+
+| 产品 | 2026可交付收入能力（美元） | 当前瓶颈 | 供应链采纳/客户证据 | 当前认证阶段 |
+|---|---:|---|---|---|
+| **Eclipse/T-Core X** | Eclipse产品约 **$78–82m**；连Neon/少量recurring的公司HPC指引 **$100–110m**，基本满载 | thermal heads；特定semiconductors与specialty components；马来西亚floor space及熟练工 | $30m两客户follow-on；Q3初单客户$26m订单；3家HPC客户qualified；客户未具名 | 约3个HPC量产qualified；5个客户active qualification；单个机会通常$30–60m annual spend |
+| **Neon** | 本报告估 **$25–35m年化物理/供应能力**，FY2026收入约$20m | 高质量HBM样品、SWIR/IR recipe、false-call与客户数据；硬件未显示极端短缺 | 美国memory/storage IDM重复订单；台湾OSAT完成qual；HBM3/4/4E无需大改系统 | 美国IDM量产；台湾OSATqualified；其他memory/OSAT engagement未量化 |
+| **HPC recurring** | 随systems installed base，本报告估当前 **$10–15m年化** | thermal head/kit专用件、field engineers | 系统交付即锁定kit/head接口；一年保修后service收入增强 | 随主系统认证；每新device design仍需kit/head correlation |
+| **Diamondx GaN** | 本报告估 **$20–30m年化**；非当前产能约束 | 高压/大电流仪器、低电阻测量、safety、contact wear | leading semiconductor manufacturer约$5m多单；AI data-center power用途 | 已达到生产订单阶段；客户名、site数和第二客户未披露 |
+| **Silicon-photonics** | interface **$2–5m年化**；handler量产能力当前视为 **$0** | optical alignment、engine样品、insertion-3/4 correlation | 数个约$10k contactors；Q2约$0.5m bookings | insertion-3 interface已采用；handler计划2026年末qual；insertion-4为demo，可能Q4/Q1 |
+| **PAICe/DI-Core** | 非物理产能，本报告按现场实施资源估 **$5–8m年化部署能力** | 客户数据权限、schema、模型准确性、厂内安全/数据主权和应用工程 | $330k年订阅的leading xPU客户；Q2收入$1m、orders +140% | 单客户production；attach约1.3%，仍是land-and-expand早期 |
+
+### 8.2 $850m机会池的阶段拆分
+
+Q2演示材料把annual sales opportunity拆成约 **$650m systems + $200m recurring**：
+
+| 阶段 | Systems | Recurring | 合计 | 应如何估值 |
+|---|---:|---:|---:|---|
+| Qualified | 约$150m/4客户 | 约$40m | **约$190m** | 可进入基准模型，但仍受客户实际capex、份额和交付能力限制 |
+| Qualification | 约$150–180m/5客户 | 约$50m | **约$200–230m** | 按通过概率和时间折现；电话会口径四舍五入称约$250m |
+| Engagement | 约$300–350m/10客户 | 约$110m | **约$410–460m** | 只放期权层，不能用于短期收入乘法 |
+| 总计 | 约$650m | 约$200m | **约$800–880m，中枢$850m** | 客户年度潜在采购额，不是多年合同、订单或Cohu确定份额 |
+
+管理层称一个生产configuration预计2026年8月底发出并可能很快完成qualification，另一个约六个月流程预计2027年Q1中完成。qualification本身通常约六个月；项目内行业证据显示复杂ATE/inspection整体可达6–18个月。电话会数字与slide因四舍五入略有差异，以上以可视化slide分阶段区间为主。
+
+## 九、一年后产能、采纳与认证：三情景
+
+产能均为**可支持年化收入**，不是厂房会计固定资产；Cohu组装外购件占比高，供应链通常比自有floor space更先限制出货。
+
+| 产品 | 基准B：产能/采纳/认证 | 乐观O：产能/采纳/认证 | 极度乐观X：产能/采纳/认证 |
+|---|---|---|---|
+| **Eclipse/T-Core X** | **$210m**；5–6家qualified、其中4–5家量产；active-qual大部分完成 | **$260m**；7–8家qualified、6–7家量产；马来西亚新floor完全爬坡 | **$330m**；9–10家qualified、8–9家量产；年末三倍路径提前、thermal head多源成功 |
+| **Neon** | **$35m**；3个量产账户/site，SWIR recipe扩展 | **$50m**；4–5个量产账户、HBM4E复购 | **$65m**；6个以上账户，多家OSAT复制且接近全检采用 |
+| **HPC recurring** | **$30m**；新installed base开始过保、标准kit/head复购 | **$50m**；多器件代际同时切换、service attach提升 | **$75m**；高利用率导致head/contactor耗损加速、PAICe广泛绑定 |
+| **Diamondx GaN** | **$25m**；首客户量产、第二客户qual | **$40m**；2–3家量产，AI电源PMIC/GaN扩展 | **$60m**；800V/高压DC架构快速普及、4家以上复制 |
+| **Silicon-photonics** | **$6m**；insertion-3 handler qualified、小批量 | **$15m**；insertion-3量产、insertion-4完成qual | **$30m**；多家CPO/optical-engine客户复制，handler+interface打包 |
+| **PAICe/DI-Core** | **$10m部署能力**；5–8个production deployments、attach 3%–4% | **$18m**；10–15个部署、attach 5%–7% | **$30m**；20个以上部署、attach 8%–12%，on-prem appliance标准化 |
+
+与收入表的差值代表利用率、客户验收、备件和季度排程缓冲。若模型出现“收入 > 产能”，先削收入而不是假设无限外包。
+
+## 十、订单积压、供给与未来一年公司增速
+
+### 10.1 可以逐笔验证的订单/客户项目
+
+| 日期 | 产品/客户描述 | 金额 | 交付窗口 | 证据强度与限制 |
+|---|---|---:|---|---|
+| 2025-09 | Eclipse被leading U.S. semiconductor manufacturer/foundry选中，GPU/CPU/ASIC/network processor；Eclipse+T-Core | 未披露 | 首台2026-01末出货 | 官方design-win，非金额订单；客户名未披露 |
+| 2026-03-17 | 同类leading U.S. manufacturer/foundry第二笔multi-unit Eclipse | 未披露 | 2026年内 | 官方订单；“multi-unit”不能反推台数或ASP |
+| 2026-04-02 | 两客户Eclipse follow-on + active thermal；一客户订PAICe | **$30m**；软件**$330k/年** | “未来几个季度” | 金额和窗口明确；未披露客户各自份额与取消条款 |
+| 2026-05-12 | leading semiconductor manufacturer，多笔Diamondx GaN AI data-center power订单 | **约$5m** | 未披露 | 金额明确；客户、台数、验收节点未披露 |
+| 2026Q2 | 美国memory/storage IDM追加Neon HBM3/4/4E；台湾OSAT完成qualification | 未披露 | H2 forecast强 | 产品/资格明确；收入由FY2026约$20m指引反推 |
+| 2026Q2 | optical-engine insertion-3 contactors/interface | **约$0.5m bookings** | Q3起延续 | 规模小但是真实订单；handler未量产 |
+| 2026Q3初 | 单客户Eclipse新订单 | **约$26m** | **大部分Q4’26** | 电话会最新硬订单；管理层称占用大量Q4 output |
+
+官方链接：[Eclipse第二笔订单](https://ir.cohu.com/news-releases/news-release-details/cohu-receives-second-multi-unit-order-testing-next-generation-ai)、[$30m follow-on](https://ir.cohu.com/news-releases/news-release-details/cohu-announces-30-million-follow-orders-high-performance)、[$5m GaN订单](https://ir.cohu.com/news-releases/news-release-details/cohu-receives-multiple-orders-testing-next-generation-gan-power)、[Neon HBM订单](https://ir.cohu.com/news-releases/news-release-details/cohu-secures-additional-neon-orders-raises-2025-forecasted-hbm)。
+
+**客户名边界：** 公开材料只允许写“leading U.S. semiconductor manufacturer/foundry”“美国memory/storage IDM”“台湾OSAT”等。没有采购文件、客户公告或具名会议材料能独立证明它们分别是NVIDIA、AMD、Intel、TSMC、Micron、ASE等。把匿名描述强行对号入座属于小道消息，本报告不纳入结论。
+
+### 10.2 Pipeline转化与取消压力模型
+
+| 变量 | 基准B | 乐观O | 极度乐观X | 说明 |
+|---|---:|---:|---:|---|
+| 已qualified约$190m annual spend的未来一年实现率 | 60% | 75% | 90% | qualified不是保量合同；客户capex与Cohu份额仍会波动 |
+| qualification约$200–230m的未来一年实现率 | 25% | 40% | 60% | qualification常约6个月，收入还需PO、制造、验收 |
+| early engagement约$410–460m实现率 | 5% | 10% | 20% | 只在极端情景贡献显著，不应放进短期基准 |
+| 计算得到的HPC需求牵引 | 约$190m | 约$270m | 约$385m | 是年度需求信号，随后必须受产能/排程封顶 |
+| firm orders取消或向后改期压力 | 5% | 2% | 0%–1% | **压力假设，不是披露取消率**；10-K仅确认大量订单可低/无罚金调整 |
+| 生产/供应链有效利用率 | 80%–85% | 88%–92% | 93%–96% | thermal head、特定semiconductors、特殊部件和现场安装共同决定 |
+
+### 10.3 未来12个月公司收入情景
+
+预测窗口为 **Q3’26–Q2’27**，对比截至Q2’26的TTM收入$522.60m。
+
+| 情景 | Q3’26 | Q4’26 | Q1’27 | Q2’27 | 未来12个月收入 | 同比TTM增速 | 去重后AI/HPC相关收入 | GAAP毛利率 | Adj. EBITDA margin |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| **基准B** | $170m | $168m | $180m | $202m | **$720m** | **+37.8%** | $215–235m | 45.5%–46.5% | 14%–16% |
+| **乐观O** | $177m | $180m | $205m | $228m | **$790m** | **+51.2%** | $285–315m | 46.5%–48.0% | 17%–19% |
+| **极度乐观X** | $177m | $190m | $225m | $258m | **$850m** | **+62.7%** | $345–385m | 48.0%–50.0% | 20%–22% |
+
+**基准的可见性：** Q3中点$170m由正式指引支撑；Q4管理层指向约$165–170m且已有$26m新单大部分交付；Q1/Q2’27才是qualification和扩产假设真正影响结果的季度。因此本报告对Q3/Q4置信度中高，对Q2’27置信度低。
+
+**为何不预测更高：** 管理层虽称2027年初产能可支持“超过$200m、可能约$250m”年化HPC收入，但到2027年中只是较Q2’26 output超过翻倍，三倍路径在2027年末。把$850m pipeline全部塞进未来一年违反产能、认证和验收约束。
+
+## 十一、竞争格局、主流性、替代方案与客户切换成本
+
+### 11.1 分产品竞争
+
+| 产品/市场 | 主要竞争者/替代者 | Cohu相对优势 | 技术是否主流 | 风险/替代方案 | 客户切换成本（1–5） |
+|---|---|---|---|---|---:|
+| **Eclipse/T-Core high-power handler/SLT** | 官方10-K列 **Hon Precision、Advantest、Teradyne**；更广义有Chroma/Hontech、ESMO、TechWing、区域handler厂、OSAT自建SLT | 6kW可升级、x8/x16、OSAT kit兼容、主动热控与handler整合、全球服务；管理层称客户评价热控“best in market”，但这是公司陈述 | **是。** 功率密度上升必然需要active thermal和mission-mode test；具体平台并非唯一 | 客户分散到多个handler；采用板级burn-in/自建liquid-cooling test rack；DFT/BIST缩短test time | **4.0**：约6个月qualification、thermal recipe、socket force、kit和产线相关性均需重做 |
+| **Neon HBM inspection** | KLA、Onto Innovation、Camtek、Applied Materials、Nova及亚洲专机；X-ray/acoustic/e-beam等多模态替代 | 高吞吐singulated die handling、六面+IR/SWIR+3D、AI recipe、可支持HBM3E/4/4E | **检测需求主流，Cohu份额属细分。** | 客户用多模态组合；前道/键合前检查减少后道缺陷；竞争者更高分辨率或更强process-control installed base | **4.0**：false escape/overkill、golden recipe、wafer map/MES相关性和停线风险高 |
+| **Diamondx GaN/PMIC ATE** | Teradyne ETS/FLEX、Advantest、Chroma、SPEA、Shibasoku及客户专机 | high-current、ultra-low resistance、multi-site，并可打包handler/interface/software | **GaN测试主流；Diamondx非独占。** | SiC/硅MOSFET路线替代GaN；对手降价；客户沿用既有ATE平台/测试程序 | **4.5**：ATE test program、DIB、instrument correlation和良率数据迁移昂贵 |
+| **HPC interface/contactors** | Yamaichi、LEENO、ISC、Enplas、Smiths Interconnect、WinWay、TSE、FormFactor/Technoprobe（相邻wafer/probe） | 50+年socket经验、device-specific、与自家handler/thermal协同、EQT补强高功率 | **是。** socket/contact耗材是每代器件必需 | dual-source、兼容pins、客户自行设计load board；高功率接触寿命未达标 | **4.5**：小金额相对停线损失，认证后通常不轻易更换 |
+| **PAICe/DI-Core analytics** | Advantest ACS、Teradyne TestInsight、PDF Solutions、proteanTecs、Synopsys/Cadence/Siemens、OSAT自研 | 可直接读Cohu handler/tester/interface数据，on-prem满足数据主权，设备+软件闭环 | **方向主流、渗透早期。** adaptive test/预测维护会增长 | 客户不开放数据；跨厂schema碎片化；AI误判；ATE/EDA平台把功能内置 | **3.0→4.0**：初始PoC切换不难，历史数据、workflow和闭环控制积累后显著上升 |
+| **SiPh insertion-3/4 test interface/handler** | Teradyne Photon 100/MultiLane、FormFactor/Keystone、Aehr、MPI、Keysight/NI/专业光测自动化、客户自研 | 既有handler与contactor技术，可从电接口向光引擎automation扩张 | **长期主流、当前早期。** CPO/NPO/optical I/O测试插入未完全标准化 | CPO放量延迟；光引擎集成方式改变；wafer-level已筛掉缺陷；对手先建立alignment/optical correlation | **3.0**：尚处资格验证；量产recipe和fixture锁定后可升至4 |
+
+官方2025 10-K只概括列出Advantest、Teradyne、Hon Precision、KLA和其他亚洲厂商；上表的细分名单来自产品重叠及项目内行业调研，不能解读成各细分份额排名。
+
+### 11.2 护城河与替代风险
+
+1. **最强护城河不是单台机械设备，而是认证闭环。** 高功率handler + thermal head + device kit + contactor + recipe + field service一起通过量产correlation后，替换会引入温度偏差、接触不良、false fail/escape和停线风险。
+2. **Cohu没有高端GPU SoC ATE双寡头地位。** 高速互连行业资料估计高端SoC/network-silicon ATE主要由Advantest/Teradyne控制；Cohu的AI价值主要在handler/thermal/interface/inspection/software。若把Diamondx当成GPU主ATE，将高估TAM和毛利。
+3. **Neon也不是HBM全流程测试平台。** 它主要是singulated package/die inspection/metrology，不替代HBM memory ATE、wafer probe、bonding inspection或最终GPU+HBM SLT。
+4. **软件是最高ROIC、也最容易被高估的层。** Tignis在2025收入不重大，attach仅约1.3%；必须看到多个production deployments、续费、客户OEE/MTTR量化和ARR，才能从期权升为核心利润。
+5. **效率改进会反向压设备需求。** DFT/BIST、自适应测试、更高并行度和成熟良率会降低test seconds；如果缩短25% test time，可抵消相当一部分器件量增长。首代GPU/HBM设备收入通常最强，后续增速不会无限延续。
+
+## 十二、业内会议、论坛、技术报告与渠道证据
+
+### 12.1 过去半年可验证活动
+
+- Cohu官网的shows/events归档列出 **TestConX 2026、SEMICON Korea 2026、SEMICON SEA 2026、CS MANTECH 2026、SWTest 2026** 等参展/技术活动，说明公司持续在handler、contact、power/RF和wafer/package-test社区做客户工程接触。[Cohu行业活动归档](https://www.cohu.com/media_category/shows-events/)
+- 公司管理层在2026-05-27至06-03参加 **TD Cowen、Craig-Hallum、Stifel、Evercore** 四场投资者会议；这些是管理层marketing和一对一沟通，不是客户订单的独立验证。[Cohu事件日历](https://ir.cohu.com/news-events/event-calendar)
+- 2026年3月更新的 **Eclipse/EclipseX 6kW** 和 **ULTRA-S** 产品表、6月MAXOR ecoAmp产品表，提供了真实规格升级证据；规格“可支持”不等于客户已量产。
+- TestConX/SWTest/项目内行业资料反复出现的主题是高功率thermal、socket/contact life、HBM/advanced-package inspection、224G/1.6T与silicon-photonics correlation。这与Cohu产品路线一致，但不构成Cohu份额证据。
+
+### 12.2 渠道和“小道消息”的处理
+
+| 证据 | 可支持的结论 | 不能支持的结论 | 本报告权重 |
+|---|---|---|---:|
+| 官方PO/新闻稿金额 | 确认$30m、$5m订单及交付大致窗口 | 订单不可取消、客户最终产量、单机ASP | 高 |
+| 电话会Q&A | 14周cycle、$26m Q4交付、产能+50%/翻倍、供应链瓶颈、qualification节点 | 客户采购承诺、pipeline全部转收入 | 中高 |
+| 10-Q/10-K | 精确收入、backlog、取消条款、资产负债表 | 产品级毛利、未披露订单 | 最高 |
+| 官网产品表/会议参展 | 规格、路线和工程投入 | 客户量产、市场份额 | 中 |
+| 匿名论坛/社交媒体猜客户 | 只能提示待验证线索 | 不能识别客户或推导订单额 | **不进入结论** |
+
+截至截止日，没有发现过去半年内具名客户、OSAT采购公告或独立技术论文公开确认Cohu的Eclipse/Neon具体终端项目名。公司也没有公布完整TestConX/SWTest论文正文来独立验证throughput/良率。因此报告采用保守规则：**订单金额可用，匿名客户身份不用；规格可用，量产份额不用；pipeline可建概率模型，不能当backlog。**
+
+## 十三、主要风险、催化剂与投资判断
+
+### 13.1 风险矩阵
+
+| 风险 | 概率/影响 | 领先指标 | 对模型的冲击 |
+|---|---|---|---|
+| $850m pipeline转化低于预期 | 中高/高 | qualified金额不增、5个qualification延期、没有repeat PO | 先削2027 Eclipse收入和估值倍数；core业务无法完全补足 |
+| 供应链/thermal head限制 | 中/高 | 交期超过14周、存货和采购承诺上升、Q3/Q4收入低于指引 | 收入后移、expedite成本压毛利；不代表需求消失但损害现金流 |
+| 客户取消/改期 | 中/中高 | backlog下降、deferred revenue不升、单一大客户占比上升 | 10-K允许低/无罚金取消；$26m/$30m并非绝对保障 |
+| Systems mix压毛利 | 高/中 | systems超过50%、non-GAAP GM仍约45%或下降 | AI收入增而EPS不成比例；估值需用EV/sales而非高利润倍数 |
+| Hon Precision/Advantest/Teradyne等竞争 | 中/高 | qualification loss、价格折让、客户dual-source | Eclipse份额和溢价下调；pipeline不是独家 |
+| Neon被多模态inspection替代 | 中/中 | HBM客户选择KLA/Onto/Camtek或降低100% inspection | FY2027 Neon从$30m+退回约$20m，软件/recipe价值受损 |
+| AI test-time效率提升 | 中/中高 | BIST/adaptive test使test seconds下降、并行度上升 | 器件出货增长不能一比一转成handler/ATE需求 |
+| Tignis商业化失败 | 中/中 | 软件ARR、attach、续费不升；再次调整contingent consideration | 软件高毛利估值归零；收购商誉/无形资产风险上升 |
+| 传统auto/mobile/industrial再次下行 | 中/中 | utilization低于80%、auto订单继续-24% | core recovery缺失，AI必须承担更高增长才能守指引 |
+| 可转债稀释/资本配置 | 中/中 | 股价持续高于capped-call上限附近、fully diluted shares约55m | 每股盈利低于基础股本计算；净现金被并购或低回报扩产消耗 |
+| 地缘/出口管制/亚洲集中 | 中/高 | 中国限制、台湾/东南亚物流或客户转国产设备 | 影响订单、零部件和现场服务；区域备份提高成本 |
+
+### 13.2 未来四个最关键验证点
+
+1. **2026年8月底附近：** 管理层所述production configuration是否发出并完成qualification；若没有，Q1’27收入斜率下调。
+2. **Q3’26：** 收入是否达到$170m中点以上、GM约45%、HPC和core各贡献约一半环比增长；若只有systems增长而GM跌破44%，盈利质量不足。
+3. **Q4’26：** $26m单客户订单是否如期大部分确认；季度收入能否维持$165–170m，而非因供应链/验收掉量。
+4. **2027Q1–Q2：** 马来西亚生产floor、菲律宾thermal-head能力是否把HPC output较Q2’26翻倍；qualified annual spend是否从$190m继续上升且客户数从4扩至6以上。
+
+### 13.3 最终投资判断
+
+**基本面方向：偏多；估值/执行风险：高。** Cohu已经获得AI收入、重复订单和明确扩产，而不是只有“AI-compatible”产品。Eclipse解决高功率封装测试的真实瓶颈，Neon、GaN、SiPh、PAICe构成有价值的小业务期权；过半recurring和净现金降低传统设备周期风险。
+
+但市场最容易犯三种错误：
+
+1. 把 **$850m annual opportunity** 当成backlog；
+2. 把computing 41%收入全部当AI；
+3. 把Cohu当作旗舰GPU/HBM ATE垄断商，而忽略其主要价值在handler/thermal/interface/inspection。
+
+在本报告基准情景下，未来12个月收入约$720m、AI/HPC相关约$215–235m，毛利率约46%，可以支撑盈利快速修复；但以$47.86收盘价看，投资回报更依赖2027 qualification和产能兑现，而非2026指引本身。**更好的加仓确认信号**是qualified客户/金额、产能和recurring attach同时上升；**更早的反证**是qualification延迟、Q4订单后移、inventory继续上升而毛利不改善。
+
+## 主要来源与审计线索
+
+### 公司与财务
+
+1. [Cohu 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/21535/000143774926004339/cohu20251227_10k.htm)
+2. [Cohu FY2026 Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/21535/000143774926014308/cohu20260328_10q.htm)
+3. [Cohu FY2026 Q2 Form 10-Q](https://www.sec.gov/Archives/edgar/data/21535/000143774926025144/cohu20260627_10q.htm)
+4. [Q2’26 earnings release](https://ir.cohu.com/news-releases/news-release-details/cohu-reports-second-quarter-2026-results)
+5. [Q2’26 earnings presentation](https://ir.cohu.com/static-files/cf848b8e-d7be-47b3-91be-f56d9a316317)
+6. [Q2’26 earnings-call transcript](https://www.fool.com/earnings/call-transcripts/2026/07/30/cohu-cohu-q2-2026-earnings-call-transcript/)
+7. [Q1’26 earnings release](https://ir.cohu.com/news-releases/news-release-details/cohu-reports-first-quarter-2026-results)；[Q1’26 transcript](https://www.fool.com/earnings/call-transcripts/2026/04/30/cohu-cohu-q1-2026-earnings-call-transcript/)
+8. [Q4’25 earnings release](https://ir.cohu.com/news-releases/news-release-details/cohu-reports-fourth-quarter-2025-results)；[Q4’25 transcript](https://www.fool.com/earnings/call-transcripts/2026/02/12/cohu-cohu-q4-2025-earnings-call-transcript/)
+9. [Q3’25 10-Q](https://www.sec.gov/Archives/edgar/data/21535/000143774925032269/cohu20250927_10q.htm)；[Q2’25 10-Q](https://www.sec.gov/Archives/edgar/data/21535/000143774925024281/cohu20250628_10q.htm)
+
+### 产品、订单与行业
+
+10. [Eclipse产品页](https://www.cohu.com/eclipse/)；[T-Core产品页](https://www.cohu.com/t-core/)
+11. [Neon产品页](https://www.cohu.com/neon/)
+12. [Diamondx产品页](https://www.cohu.com/diamondx/)；[Wide-bandgap test](https://www.cohu.com/wide-bandgap-test/)
+13. [Interface solutions](https://www.cohu.com/interface-solutions/)；[ULTRA-S 2026产品表](https://www.cohu.com/wp-content/uploads/2026/03/ULTRA-S-Product-Sheet-030526b.pdf)
+14. [PAICe Digital Twin](https://www.cohu.com/paice-digital-twin)
+15. [$30m Eclipse follow-on订单](https://ir.cohu.com/news-releases/news-release-details/cohu-announces-30-million-follow-orders-high-performance)
+16. [$5m AI data-center GaN订单](https://ir.cohu.com/news-releases/news-release-details/cohu-receives-multiple-orders-testing-next-generation-gan-power)
+17. [Cohu行业活动归档](https://www.cohu.com/media_category/shows-events/)
+18. 项目内：[探针卡、ATE与系统级测试](../../行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-07-10.md)、[HBM与存储测试设备](../../行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-07-10.md)、[高速互连与光学验证测试](../../行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-07-10.md)
+
+---
+
+**审计提示：** 文中所有“约、估算、模型、情景、评分”都不是公司guidance。复核时应先检查Q2’26 10-Q与演示中的精确财务/机会阶段，再检查订单新闻稿和电话会交付窗口，最后才使用产品级模型。这样可避免把marketing TAM、qualified annual spend、firm backlog和已确认收入混为一谈。

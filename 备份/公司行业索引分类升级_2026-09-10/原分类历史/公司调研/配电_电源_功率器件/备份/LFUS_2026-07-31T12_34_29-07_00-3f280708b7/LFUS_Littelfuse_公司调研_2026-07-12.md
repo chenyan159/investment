@@ -1,0 +1,425 @@
+# 公司：LFUS — Littelfuse, Inc.（力特保险丝）全面尽调
+
+> **报告日期：2026-07-12（美国太平洋时间）**  
+> **股价与估值截点：2026-07-10 美股收盘；财务截点：2026-03-28（2026Q1）；下一次预计财报：2026-07-29。**  
+> **研究边界：**公司事实优先使用 SEC、公司 IR、产品页和技术资料；产业映射仅使用项目内 `基本面/行业调研/` 的相关研究，没有调用其他本地目录，也没有使用同目录公司报告。  
+> **口径提示：**Littelfuse 不披露“纯数据中心”“AI 数据中心”收入、分产品 backlog、产能、取消率或美元/MW 内容量。本文凡标为“**本报告估算**”的数字，均为公司披露、渠道价格、产业 BOM 与装机架构的交叉推算，不是管理层指引；区间不能与行业 TAM 混用。
+
+## 一、结论先行：这是一家什么公司，市场在交易什么
+
+Littelfuse 的本质不是 AI 芯片公司，也不是数据中心配电总包商，而是横跨**过流保护、过压保护、功率半导体、开关/传感与保护控制系统**的多元化工业技术公司。它在产业链中位于“芯片/设备设计与整机/设施之间”的关键可靠性层：单件价值不一定高，但一旦短路、浪涌或电弧保护失败，损失可能是整柜、整条母线甚至整座机房。公司从 2A、0402 封装的小型板级熔断器，一直做到 2,000A、鞋盒大小的 UPS 熔断器、MW 级静态转换开关功率堆栈和发电机保护/励磁控制。
+
+### 投资判断摘要
+
+| 维度 | 结论 | 最关键证据 |
+|---|---|---|
+| 传统定位 | 高现金流、分散终端、靠并购和产品扩张复利的“电路保护龙头”，并非 AI 纯标的 | 2025 年收入 $2.386bn、FCF $366m；约 10 万终端客户、17,000 名员工、20 多个国家 |
+| 2026 年重估逻辑 | 市场正把 LFUS 从“汽车/工业周期元件股”重估成“**grid-to-chip 电气保护平台**” | 过去 52 周股价约 +74.9%；2026 Investor Day 首次明确数据中心收入目标 CAGR 25%–30%+、800V 内容量 2–4 倍 |
+| AI 当前性 | **已有真实收入，但不是公司大头。** 主要来自 12/48/54V 板级熔断器、TVS/MOV、UPS/STS 功率器件、高功率熔断器和 Basler 控制系统 | 2026Q1 数据中心“强劲双位数增长”；被管理层称为最快增长市场；2025 年设计赢单数量同比超过翻倍 |
+| AI 收入口径 | 2025 年“数据中心+楼宇基础设施”合并口径约 $406m（17%），不能全部视作数据中心；本报告估算 2025 纯数据中心 $160m–$220m，其中 AI 相关 $110m–$165m | 单一领先 hyperscaler 当前隐含 LFUS 收入约 $33m，5 年后可能约 $100m；当前客户使用 20+ 种 LFUS 方案 |
+| 近期确定性 | 48V 保护已经量产；2026 新品 708 解决 60–200A、80VDC、14kA 高分断与自动贴装矛盾 | 708 于 2026-06-02 发布，面向 PDU、power shelf、BBU、PSU 和 AI server cluster |
+| 中期弹性 | 800V/±400V 将把保护难度和单机内容量抬升，但**规模化主要从 2027 开始** | NVIDIA 明确 800V 与 Kyber 2027 量产同步；LFUS 获 800V 数据中心电源系统设计赢单，计划 2027 出货 |
+| 最大误区 | 将 $400m STS/UPS 机会、17%“数据中心+楼宇”口径或 2–4 倍内容量直接当成已签订单 | $400m 是管理层所称市场机会，不是 backlog；设计赢单定义仅为上平台并有早期样机收入 |
+| 财务健康度 | **健康，偏强。** 流动性、FCF、杠杆均不构成扩产/并购约束 | 2026Q1 current ratio 2.61、quick ratio 1.64、约 $482m 现金、契约净杠杆约 1.0x，远低于 3.5x 上限 |
+| 估值约束 | 未来 2–3 年的 AI/高压增长已有较多反映；GAAP PE 因减值失真，但调整后估值也不便宜 | $415.16，市值 $10.50bn，P/S 4.22x，NTM forward PE 27.66x；按 FY2026 调整 EPS $14.76 为 28.13x |
+
+**核心观点：**LFUS 最好的投资逻辑不是“卖给每颗 GPU 一只保险丝”，而是随着机架功率从 100kW 向 1MW 跨越，直流电压由 48/54V 向 800V/±400V 迁移，保护从低价离散件升级为高分断熔断器、TVS/MOV 协同、固态保护、静态切换和控制系统；公司有机会把单一器件 ASP 提升 5–10 倍、整套内容量提升 2–4 倍。最大的风险则是 800V 标准和量产延后、设计赢单不能转化为收入，以及投资者把公司级 backlog 误分配给 AI。
+
+## 二、整体业务、投资者认知与产业链位置
+
+### 2.1 业务结构
+
+2025 年公司三大报告分部为 Electronics、Transportation、Industrial；公司在 2026 年又把面向客户的销售组织重构为 Energy & Industrial Infrastructure、Computing/Communications & Diversified Industrials、Transportation & Logistics。前者是财务报告口径，后者是市场拓展口径，不能直接相加。
+
+| 2025 财务分部 | 收入 | 占比 | 主要产品/终端 | 2025 经营状态 |
+|---|---:|---:|---|---|
+| Electronics | $1,345.5m | 56.4% | 熔断器、PPTC、TVS/ESD、MOV/GDT、传感器、保护和功率半导体、IGBT/MOSFET/SiC/晶闸管及模块 | 数据中心与多元工业恢复快；其中半导体业务约 $670m，保护与功率半导体约各半 |
+| Transportation | $676.4m | 28.3% | 乘用车/商用车熔断器、配电模块、接触器、开关、传感器 | 总体低增长；靠 48V/高压内容提升和份额获取跑赢汽车产量 |
+| Industrial | $364.4m | 15.3% | 高功率熔断器、继电器、接地故障/电弧保护、功率控制；2025-12 起并入 Basler 保护继电器/励磁/发电机控制 | 电网、数据中心、储能高增长；住宅 HVAC 偏弱 |
+| **合计** | **$2,386.3m** | **100%** | — | 同比 +8.9% |
+
+按 2025 终端市场映射，公司披露 Industrial infrastructure 21%、Energy infrastructure 7%、Data center & building infrastructure 17%、Diversified industrials 19%、Consumer electronics 9%、Passenger vehicle 18%、Commercial vehicle 9%。因此，17% × $2.386bn ≈ **$405.7m 只是“数据中心+楼宇基础设施”合并池**，不是纯 AI 数据中心收入。[2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/889331/000162828026009585/lfus-20251227.htm)；[2026 Investor Day](https://s202.q4cdn.com/691005561/files/doc_presentations/2026/May/14/Littelfuse-2026-Investor-Day_FINAL.pdf)
+
+### 2.2 产业链位置与护城河
+
+1. **上游：**银、铜、陶瓷、聚合物、硅晶圆/SiC、引线框、封装材料和电子零件；公司多数产品自有制造，工艺包括金属冲压、贴装、电镀、热塑成型、精密制造和晶圆/封装。
+2. **LFUS 层：**把材料与芯片做成经过 UL/IEC/AEC 等认证的过流、过压、开关、控制与传感产品，并为客户做保护配合、选型和系统级联合设计。
+3. **直接客户：**约 1,000 个领先客户贡献约 2/3 收入，包括 hyperscaler、芯片厂、汽车 OEM 和大型工业设备商；剩余约 10 万长尾客户通过 Arrow、Mouser、DigiKey 等分销覆盖。Arrow 2025 年占销售 9.5%，其余无单一客户超过 10%。
+4. **下游：**服务器/网络/存储 ODM、PSU/PDU/UPS/STS 厂商、发电机和开关设备 OEM、电网/工业自动化 OEM、汽车 OEM。
+
+护城河不是单个熔断器无法复制，而是：**规格覆盖宽（mW 到 MW）、保护技术全（过流+过压+功率+控制）、认证/失效责任重、能够在客户架构定义阶段联合设计**。对于标准低压保险丝，替换成本仅中等；对 800/1,500VDC、高分断、UPS/STS 功率堆栈和保护继电器，认证、保护配合、固件逻辑和现场调试把切换周期拉长到 12–36 个月。
+
+### 2.3 最近三年重大变化、转型与收购
+
+| 时间 | 事项 | 金额/规模 | 战略含义 |
+|---|---|---:|---|
+| 2023-02 | 收购 Western Automation | 约 $162m 现金；被收购方年销售约 $25m | 增加触电/漏电保护，进入 EV 充电、可再生能源和工业安全；并入 Industrial |
+| 2023–2024 | 收购并接收德国 Dortmund 200mm 晶圆厂 | 总投资/对价约 €93m；2024-12-31 完成交割 | 强化功率半导体供应链和欧洲制造；2025 带来约 $49m 增量销售，但恰逢功率半导体需求弱，利用率/盈利仍需修复 |
+| 2025-02 | Greg Henderson 出任 CEO | 前 Analog Devices 高管 | 由按产品线销售转为按客户/市场销售；2026 年初新组织上线，数据中心在 2025 年先行试点 |
+| 2025 | 出售/退出 marine 业务 | 处置款约 $5.6m | 削减低吸引力商用车业务，改善组合；影响 2026 商用车同比可比性 |
+| 2025 | 功率半导体重组及产品合理化 | 计提 $301.2m 半导体 goodwill 非现金减值 | 承认 IXYS 等历史资产回报不足；保留高价值保护业务，功率半导体聚焦 UPS/STS、高功率堆栈，退出低价值 SKU/优化工厂 |
+| 2025-12-11 | 完成收购 Basler Electric | 约 $350.3m 现金；2025 年收入约 $125m、调整 EBITDA 高十几% | 从元件向电网/发电/数据中心的保护继电器、励磁和控制系统上移；2026 预计贡献 $130m–$135m、调整 EBITDA 高十几%、EPS 增厚 >$0.15 |
+| 2026-01 起 | 全公司 go-to-market 重构 | 约 1,000 个直销客户贡献 2/3 收入 | 销售人员代表客户而不是产品线；目标是在同一 BOM 横向导入 5–6 个 socket，提高交叉销售和设计赢单转化 |
+
+### 2.4 投资者心中的公司
+
+- **旧标签：**高质量但偏周期的“保险丝+汽车电子+工业 M&A 复利股”；优点是 FCF、产品广和客户分散，缺点是功率半导体回报不稳定、汽车/工业周期暴露。
+- **新标签：**“安全高效电能传输”平台、AI 数据中心电力链的二阶受益者。2026 Investor Day 把数据中心、电网/公用事业、航天国防列为三个 High-Growth Opportunities，数据中心目标 2025–2030 CAGR 25%–30%+。
+- **市场已付出的价格：**截至 2026-07-12，过去 52 周股价约 +74.9%，P/S 4.22x、NTM forward PE 27.66x，明显高于普通低增长工业元件股。换言之，市场已经在为 800V、高压保护和利润率修复提前付费。
+
+## 三、今日股价、估值、盈利质量与资产负债表
+
+### 3.1 市场与估值快照
+
+| 指标 | 数值 | 日期/说明 |
+|---|---:|---|
+| 收盘价 | **$415.16** | 2026-07-10；7 月 12 日为周日，因此这是最近交易日收盘 |
+| 盘后价 | $413.00 | 2026-07-10 18:42 ET，仅作参考 |
+| 市值 | **$10.50bn** | 2026-07-12 数据页；流通股约 25.29m |
+| 企业价值 | $10.73bn | 2026-07-12 |
+| TTM 收入 | **$2.489bn** | 截至 2026Q1，TTM 同比 +12.64% |
+| GAAP TTM PE | **N/M** | TTM GAAP 净亏损 $40.1m、EPS -$1.61，主要受 2025Q4 $301.2m 非现金 goodwill 减值影响 |
+| 调整后 TTM PE | **约 35.2x** | 本报告推算：FY2025 调整 EPS $10.68 − 2025Q1 $2.19 + 2026Q1 $3.31 = $11.80；$415.16/$11.80 |
+| NTM forward PE | **27.66x** | 数据商日常更新口径 |
+| FY2026 forward PE | **28.13x** | $415.16 / FY2026 调整 EPS 共识 $14.76；共识更新 2026-06-05 |
+| P/S / forward P/S | **4.22x / 3.69x** | 2026-07-12 |
+| EV/EBITDA / P/FCF | **20.18x / 26.95x** | 2026-07-12 |
+| FY2026 收入共识 | **$2.79bn，+16.75%** | 4 位分析师；包含 Basler 全年并表 |
+| FY2027 收入共识 | **$3.04bn，+8.98%** | 并购基数正常化，800V 刚开始出货 |
+| 毛利率 / 调整后经营观察 | **TTM 38.57% / GAAP 营业率 15.84%** | 2026-07-12；第三方已把 goodwill impairment 从经营利润口径中重分类，需与 SEC GAAP 表交叉看 |
+| GAAP 净利率 / FCF margin | **-1.61% / 15.65%** | GAAP 净利率被非现金减值扭曲，FCF 更能反映当前经营质量 |
+
+来源：[StockAnalysis 估值与统计](https://stockanalysis.com/stocks/lfus/statistics/)、[分析师预测](https://stockanalysis.com/stocks/lfus/forecast/)、[历史财务](https://stockanalysis.com/stocks/lfus/financials/)。
+
+### 3.2 资产负债表健康度
+
+2026Q1 期末：现金及等价物约 **$481.7m**，应收账款 $381.0m，存货 $418.9m，流动资产 $1,376.2m；流动负债 $527.3m，其中一年内债务 $100.5m；长期债务 $531.0m；股东权益 $2,514.1m。[2026Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/889331/000162828026031041/lfus-20260328.htm)
+
+| 健康指标 | 结果 | 判断 |
+|---|---:|---|
+| Current ratio | 2.61x | 强；流动资产对短债/营运负债覆盖充分 |
+| Quick ratio | 1.64x | 即使剔除存货仍充裕 |
+| 营运资本 | 约 $849m | 可承受订单增长、原料涨价与扩产爬坡 |
+| 有息债务（账面借款） | 约 $631.5m | 短债+长期债；第三方“总债务”约 $711.9m 还包含其他债务/租赁口径 |
+| 经济净债务 | 约 $149.8m | $631.5m − $481.7m；很低 |
+| 契约净债务/EBITDA | 约 1.0x | 公司契约仅扣除最多 $400m 美国现金；上限 3.5x，缓冲很大 |
+| TTM FCF | 约 $389.6m | 相当于经济净债务约 0.4 年 FCF |
+| Altman Z-score | 4.71 | 不显示财务困境风险 |
+
+**结论：资产负债表健康度 8.5/10。** 最大财务风险不是偿债，而是资本配置：Basler 整合能否达到高十几% EBITDA margin、功率半导体重组能否释放 $50m 组合/足迹优化收益，以及高估值下再并购是否稀释回报。
+
+## 四、最新及最近四次财报：五季度财务、业务、订单和 AI 暴露
+
+### 4.1 五季度总览
+
+> 分部括号依次为“收入；同比/有机增速；调整 EBITDA margin”。公司没有按季度披露数据中心收入，AI 份额为本报告估算。Q4 2025 GAAP 亏损来自 $301.2m goodwill impairment，不代表现金经营突然恶化。
+
+| 财报季度 | 总收入/增速 | 毛利率；调整 EBITDA；调整 EPS | Electronics | Transportation | Industrial | 订单、backlog、交期与取消 | AI 数据中心收入占比（估） |
+|---|---|---|---|---|---|---|---|
+| **2025Q1** | $554.3m；+3.5%，有机 +2.9% | 37.4%；20.1%；$2.19 | $307.2m；+5.5%/+3%；22.1% | $161.9m；-5.0%/-4%；17.1% | $85.2m；+15.3%/+16%；18.5% | 仅披露 bookings 改善；B2B、backlog、交期、取消率未披露 | **4%–6%**（$22m–$33m） |
+| **2025Q2** | $613.4m；+9.8%，有机 +6.2% | 37.8%；21.4%；$2.85 | $335.7m；约 +10%/+4%；21.6%；passive 有机 +14%、semi -5% | $179.4m；有机约 +4%；20.5% | $98.3m；有机 +17%；22.1% | 管理层称数据中心/可再生能源 design win 增加；未披露 B2B、交期、取消率 | **5%–7%**（$31m–$43m） |
+| **2025Q3** | $624.6m；+10.1%，有机约 +6.5% | 38.6%；约 21.5%；$2.95 | $357.5m；+18%/+12%；24.0%；passive 有机 +19%、semi +5% | $171.3m；有机约 -2%；16.8% | $95.9m；有机约 +4%；20.7% | Q4 指引依据“strong backlog”；分部 backlog/取消率仍未给 | **6%–8%**（$37m–$50m） |
+| **2025Q4** | $593.9m；+12.2%，有机约 +7% | 38.0%；20.5%；$2.69；GAAP EPS -$9.72 | $345.2m；+21%/+14%；23.7%；passive +23%、semi +6% 有机 | $163.8m；有机约 -1%；16.0% | $85.0m；有机约 -1%；16.2%；Basler/FX 各拉动 | **年末 backlog $1,070.9m，同比 +61.1%，三分部均增，绝大部分计划 2026 交付**；未披露取消率/平均交期 | **7%–10%**（$42m–$59m） |
+| **2026Q1（最新）** | **$657.0m；+18.5%，有机 +9%** | **38.7%；22.9%；$3.31** | **$362.8m；+18.1%/+15%；25.1%**；passive $187.1m、+22% 有机；semi $175.7m、+8% 有机 | $170.4m；+5.3%/+1%；19.1% | **$123.8m；+45.3%/+5%；21.9%；收购 +39%** | **B2B 明显 >1；bookings 同比 >20%；Q4→Q1及 Q1 季内均继续改善；backlog 强**。没有披露取消率/实际周数 | **7%–10%**（$46m–$66m） |
+
+财务数据来自公司季度发布、SEC 与推导：[2025Q1](https://investor.littelfuse.com/news/news-details/2025/Littelfuse-Reports-First-Quarter-Results-for-2025/default.aspx)、[2025Q3](https://investor.littelfuse.com/news/news-details/2025/Littelfuse-Reports-Third-Quarter-Results-for-2025/default.aspx)、[2025 10-K](https://www.sec.gov/Archives/edgar/data/889331/000162828026009585/lfus-20251227.htm)、[2026Q1 发布](https://investor.littelfuse.com/news/news-details/2026/Littelfuse-Reports-First-Quarter-Results-for-2026/default.aspx)、[2026Q1 电话会](https://stockanalysis.com/stocks/lfus/transcripts/547816-q1-2026/)。Q3 毛利 $241.0m/$624.6m=38.6%；Q4 毛利由 FY $906.0m 减前三季度 $680.3m 得 $225.7m，除以 Q4 $593.9m=38.0%。
+
+### 4.2 五季度最重要的经营信号
+
+1. **复苏不是只靠并购。** 2026Q1 总收入 +18.5%，其中 Basler +6pct、汇率 +3pct，有机仍 +9%；Electronics 有机 +15%，明显高于公司。
+2. **passives/protection 是利润引擎。** 2026Q1 passive 有机 +22%、保护半导体双位数高增且利润率高于公司；Electronics 调整 EBITDA margin 提至 25.1%。
+3. **功率半导体仍是修复项。** 需求出现改善，但管理层继续合理化低价值产品和优化足迹；不能把所有 semi 增长视作 AI。
+4. **Industrial 的 +45% 主要来自 Basler。** 有机仅 +5%，但数据中心/电网强、住宅 HVAC 弱；mix 改善把 margin 推到 21.9%。
+5. **订单能见度显著增强但颗粒度不足。** 2025 年末 backlog 相当于 FY2026 收入共识的约 **38%**；Q1 B2B >1 意味订单仍快于交付。然而，公司未给数据中心 backlog、交期、取消率，不能断言 AI 已“供不应求”。
+
+## 五、2026 年最新财报指引、收入占比与业务重点
+
+### 5.1 2026Q2 指引
+
+| 项目 | 公司指引 | 隐含含义 |
+|---|---:|---|
+| 收入 | **$690m–$710m** | 中值 $700m；同比约 +14% |
+| 有机增长 | **约 +8%** | 排除 Basler 后仍健康 |
+| Basler 并购贡献 | **约 +6pct** | 约 $37m 的季度增量量级 |
+| 调整 EPS | **$3.65–$3.85** | 中值 $3.75，同比约 +32% |
+| 调整税率 | 21%–22% | 低于 2025 多个季度 |
+| 数据中心 | 未量化，预计 Q2 延续 Q1 的强劲双位数增长 | 仍将是领先增长市场，但没有给单独美元数 |
+
+### 5.2 最新收入结构：报告分部与真实增长源
+
+2026Q1 分部占比分别为 Electronics **55.2%**、Transportation **25.9%**、Industrial **18.8%**。产品层面，passive/sensors $187.1m（28.5%）、semiconductors $175.7m（26.7%）、commercial vehicle $78.9m（12.0%）、passenger vehicle $76.2m（11.6%）、auto sensors $15.3m（2.3%）、Industrial $123.8m（18.8%）。
+
+真正值得跟踪的公司侧重点是：
+
+- **数据中心从 grid 到 chip 的全链保护：**12/48V 现有收入、高功率 TVS、熔断器、UPS/STS、Basler 控制；800V 为下一阶段。
+- **Grid/utility：**Basler 保护继电器/励磁/发电机控制，且数据中心的备用发电和并网需求把两个 HGO 串起来。
+- **保护半导体：**2025 约 $335m，过去五年 CAGR >10%，利润率高于公司；未来向 5–10 倍 ASP 的高价值保护迁移。
+- **高价值功率半导体：**不是全面扩张 IXYS 低端 SKU，而是把 die、模块、gate driver、软件聚焦到 STS/UPS、高功率固态保护。
+
+### 5.3 重点产品、产品型号与证据
+
+| 业务簇 | 产品/型号 | 关键规格与用途 | 当前阶段与交叉验证 | 本报告估计产品毛利/增速 |
+|---|---|---|---|---|
+| 48V 高电流贴片熔断 | **NANO² 708：0708060/0708070/…/0708200** | 60–200A；80VDC 下 14kA、125VDC 下 3kA 分断；-55–125°C；面向 PDU、power shelf、BBU、PSU | 2026-06-02 发布；UL Recognized/TÜV 文件可见；解决旧式通孔/螺栓件不能自动贴装的问题 | **45%–55% GM；新品爬坡 >50%**，但基数小 |
+| 48V 既有熔断 | **456、871、881/881F** | 456 20–40A；881 60–100A、75VDC/1.5kA；服务器 backplane、VRM、PDU、storage power、cooling | 已量产多年、UL 产品；708 是更高故障电流/更高电流的升级补位 | **40%–50% GM；20%–35%** |
+| 高功率 TVS/过压 | **DFNAK3-072C-D1 / -076C-D1、LTKAK、SMFA** | DFNAK3：72/76V standoff、3kA 8/20µs、DFN 10×8×3mm；SMFA 保护 SiC MOSFET gate | DigiKey 显示 DFNAK3 库存约 1,200；Mouser 100 只价约 $10.17、非库存交期 17 周，说明新品供给存在渠道差异而非全行业断供 | **50%–60% GM；25%–45%**，高于普通离散保护 |
+| 设施级高功率熔断/过压 | **L70QS/L70S、JTD、505、POWR-SPEED、SPD/MOV/GDT** | UPS 整流/IGBT/SiC 保护、PDU/配电分支、母线/储能/发电机入口；数百至 2,000A | 老产品平台、客户验证成熟；高压 DC 型号需按系统重新选型和认证 | **35%–45% GM；20%–35%** |
+| 800/1000V 小型高压熔断邻接 | **827（800VDC）、828（1000VDC）** | 40–50A、10kA，通孔/螺栓安装；-55–125°C；AEC-Q200 | **目前公开应用是 EV OBC/PDU，未发现 AI 数据中心 design-in 或 UL 数据中心认证。** 可复用材料/电弧设计经验，但不能当 AI 收入 | 当前可忽略 AI 收入；若转入 DC，GM 40%–55% |
+| UPS/STS 功率半导体 | **IXYS MIXG240W1200PZTEH、MIXG120W1200TEH、DCG100X1200NA、晶闸管/二极管高功率 stack** | 1,200V IGBT/SiC diode 模块；STS 可在 2–3ms 内切换 MW 级电力，保持机房不断电 | 管理层称技术参与几乎所有相关客户，Q1 有 UPS/transfer switch design wins；“>$400m”是可服务机会，不是 LFUS backlog | 当前 power semi 混合 GM 约 25%–35%；聚焦产品可达 **35%–45%**，增速 20%–40% |
+| Basler 数据中心控制 | **DGC-2020HD、VRM-2020、DECS-150/250、BE1-FLEX、BE1-700V、ES Series** | 发电机并联/负载共享、励磁、保护继电器、断路器控制、IEC 61850/通信与嵌入式逻辑 | Basler 公开案例：亚洲数据中心二期以 15 台 DGC-2020HD 替换延迟交付方案；2026Q1 获 800V power system 保护/自动化/控制 design win，计划 2027 出货 | **40%–50% GM，调整 EBITDA 高十几%→中长期 20%+；数据中心 20%–35%** |
+| 固态高压过流保护模块 | 型号未公开；集成 power module、gate driver、sensing、monitoring、functional safety、software | 电子可复位，面向高压 DC 电弧/过流；整合 5+ 功能 | 仍在开发/客户反馈阶段；管理层称客户等待上市，单套价值可比离散件高 >10 倍；尚无量产/认证公告 | 2026 收入接近零；成熟 GM **45%–60%**，但技术/认证风险高 |
+
+产品来源：[708 发布](https://www.littelfuse.com/de/company/news-and-events/in-the-news/newspages-articles/press-releases/2026/littelfuse-nano2-smd-708-series-fuse-enables-high-current-48-vdc-ai-data-center-protection)、[708 datasheet](https://www.littelfuse.com/assetdocs/0708-nano2-smd-fuse-datasheet?assetguid=aa4e184c-f52e-4aee-9498-1732e8c47d37)、[DFNAK3](https://www.littelfuse.com/products/overvoltage-protection/tvs-diodes/high-power/dfnak3/dfnak3-072c-d1)、[827 datasheet](https://www.littelfuse.com/assetdocs/fuses-827-datasheet?assetguid=147ff50d-5469-49bb-91eb-c5d9683d6a65)、[Basler 数据中心](https://www.basler.com/industry/data-centers/)、[Investor Day transcript](https://stockanalysis.com/stocks/lfus/transcripts/618732-investor-day-2026/)。
+
+### 5.4 明确跳过/降权的非 AI 业务
+
+| 跳过或降权业务 | 原因 | 仍需观察的例外 |
+|---|---|---|
+| 传统乘用车/商用车低压熔断器、开关和传感器 | 终端产量约低个位数增长；不是本报告 AI 主线 | 48V 与 400/800V 电动化技术可向数据中心迁移；827/828 目前仍归车规证据 |
+| 住宅 HVAC | 2026Q1 仍弱，拖累 Industrial 有机增长 | 数据中心冷却属于另一客户/产品链，不能与住宅 HVAC 混为一谈 |
+| 消费电子、家电、电动工具小型保护 | 市场成熟、单件 ASP 低 | 分销和现金流稳定，但不驱动当前估值重估 |
+| 低价值功率半导体 SKU | 公司正在主动合理化，收入可能下降 1%–2% CAGR 拖累 | 退出低回报收入可贡献约 $50m EBITDA 组合/足迹改善 |
+| 已出售 marine | 已退出且造成商用车可比性噪声 | 无 |
+| 航空航天与国防 | 是公司 HGO、增速快，但不属于 AI 数据中心 | 现有收入约 $50m–$100m（管理层宽口径），可独立研究，本文不展开 |
+
+## 六、关键高增长业务：当前收入贡献、技术重要性、供需与定价权
+
+### 6.1 当前收入桥接
+
+公司没有单列数据中心收入。本报告采用四步桥接：
+
+1. 2025 “data center & building infrastructure”上限池约 $405.7m；剔除传统楼宇/HVAC/普通配电后，纯数据中心估算 **$160m–$220m**。
+2. 管理层称单一领先 hyperscaler 五年收入将增 3 倍至约 $100m，反推当前约 **$33m**；若 4–6 家领先客户及其 OEM/ODM 占纯 DC 的 50%–70%，得到 $140m–$260m 区间，与步骤 1 相符。
+3. 2026Q1 数据中心强劲双位数、2025 design wins >2 倍，估计 FY2026 纯 DC **$210m–$285m**，其中 AI 训练/高密度机房相关 **$155m–$225m**。
+4. 按产品 socket、渠道 ASP 与设施/机架 BOM 分拆，得到下表，合计与公司池口径交叉一致。
+
+| 关键产品/业务 | FY2026E LFUS 数据中心收入贡献 | 其中 AI 相关 | 当前销售增速 | AI 栈重要性/时间紧急性 | 供需紧张度 | 垄断/溢价能力 |
+|---|---:|---:|---:|---|---|---|
+| 48V/54V 板级熔断+TVS/MOV/ESD | **$95m–$125m** | $80m–$110m | **+25%–40%** | **5/5；5/5**：现有 GB200/GB300、PSU/BBU 立即需要 | **3/5**：有特定新品 17 周渠道交期，但成熟料广泛可供 | **3.5/5；3.5/5**：性能/认证有价差，仍有多家替代 |
+| UPS/PDU/母线/发电侧高功率熔断、SPD、断路器 | **$45m–$65m** | $25m–$45m | **+20%–35%** | **5/5；4/5**：设施先于 GPU 上电，失败代价高 | **3.5/5**：高分断/高压定制比普通熔断紧 | **4/5；4/5**：保护配合、认证、物料体系提高粘性 |
+| UPS/STS 功率半导体堆栈 | **$30m–$45m** | $20m–$35m | **+20%–40%** | **5/5；4/5**：2–3ms MW 切换，直接关系 uptime | **3/5**：LFUS 自身存在闲置/重组产能，需求紧而非晶圆绝对短缺 | **3.5/5；4/5**：系统堆栈价值高，单 die 竞争强 |
+| Basler 数据中心控制/保护/励磁 | **$20m–$30m**（Basler 全部 FY2026 为 $130m–$135m） | $12m–$22m | **+20%–35%** | **4.5/5；4/5**：备用发电、并联、保护与 800V 系统控制 | **4/5**：公开案例显示发电机组交付短缺；控制器可帮助替代 | **4/5；4/5**：固件、逻辑、OEM 适配、现场调试提高切换成本 |
+| 800V 固态保护/新型 HV 方案 | **$0m–$5m** | 近 100% | 原型期 | **5/5；3/5**：2027 才开始量产，但现在必须定规格/认证 | **4/5（设计资源）**：不是成品缺货，而是合格方案稀缺 | **4.5/5；5/5（若先认证）** |
+| **合计** | **$190m–$270m** | **$137m–$212m** | 约 +25%–35% | — | — | — |
+
+> 合计区间与前述 FY2026 纯 DC $210m–$285m 略有差异，是因为这里排除了难以分配到五簇的传感/开关/普通分销收入，且避免把同一 UPS 中的 fuse 与 power stack 重复计入。投资模型可用 **$230m** 为 FY2026 中枢、AI 相关 **$180m** 为中枢，即约占公司 FY2026 共识收入 6.5%。
+
+## 七、一年后分产品三情景收入、增速与竞争力
+
+### 7.1 情景定义
+
+- **基准：**2026 bookings 转化正常；48V 延续，800V 仅小批量；Basler 设计赢单按计划 2027 起出货；取消率 3%–8%。
+- **乐观：**hyperscaler/电源 OEM 多平台量产，708/DFNAK3 快速放量，UPS/STS share gain，800V 认证按期；取消率 1%–4%。
+- **极度乐观：**Kyber/1MW rack 提前且多客户同步，LFUS 固态保护率先通过系统/UL 验证，内容量接近 4 倍上限；取消率 <2%。这不是最可能情景。
+
+### 7.2 FY2027E 数据中心产品收入
+
+| 产品/业务 | 基准收入/增速 | 乐观收入/增速 | 极度乐观收入/增速 | 一年后重要性/紧急性 | 供需紧张度（基/乐/极乐） | 垄断与溢价（基/乐/极乐） |
+|---|---:|---:|---:|---|---|---|
+| 48V/54V 板级熔断+TVS/MOV | **$125m–$155m；+25%–35%** | **$155m–$200m；+50%–65%** | **$200m–$260m；+90%–110%** | 5/5；5/5，仍是现实收入底座 | 3/4/4.5 | 3.5/4/4.5；新品高分断、自动贴装提高 ASP |
+| 设施级高功率 fuse/SPD/breaker | **$60m–$80m；+25%–35%** | **$85m–$115m；+65%–85%** | **$120m–$170m；+130%–170%** | 5/5；5/5，800V DC 无自然过零，保护数量和等级上升 | 3.5/4.5/5 | 4/4.5/5；认证与系统配合最重要 |
+| UPS/STS power semiconductor stack | **$42m–$58m；+25%–40%** | **$60m–$85m；+75%–105%** | **$90m–$130m；+170%–220%** | 5/5；4.5/5 | 3/4/4.5 | 3.5/4/4.5；完整 stack 优于单颗器件定价 |
+| Basler DC control/protection | **$28m–$40m；+25%–40%** | **$42m–$62m；+65%–100%** | **$65m–$90m；+150%–220%** | 4.5/5；5/5，2027 开始确认 800V 设计赢单 | 3.5/4.5/5 | 4/4.5/5；OEM 适配与软件逻辑锁定 |
+| 固态 HV overcurrent module | **$5m–$12m；新业务** | **$15m–$30m；新业务** | **$35m–$60m；新业务** | 5/5；4/5 | 3/4.5/5 | 4/5/5；若率先认证，>10 倍离散件价值捕获 |
+| **合计** | **$260m–$345m** | **$357m–$492m** | **$510m–$710m** | — | — | — |
+
+**合理性检查：**基准中枢约 $303m，相对 FY2026 中枢 $230m 增长约 32%；与管理层 2025–2030 数据中心 CAGR 25%–30%+ 接近。乐观和极乐观要求 800V 采用率、design win 转化和公司产能同时超预期，不能只由行业装机量触发。
+
+## 八、BOM、真实内容量与价格传导链
+
+### 8.1 数据中心电力链与 LFUS 可捕获位置
+
+`电网/发电机 → 中压开关/变压器 → ATS/STS/UPS/储能 → 低压配电/PDU/母线 → 800V sidecar/PDB 或 48V power shelf → BBU/PSU → 12V/板级 VRM → GPU/CPU/网络/光模块`
+
+LFUS 在每一级都不是主设备价值主体，而是保护/开关/控制内容：
+
+- 发电机：Basler DGC/DECS/BE1 + 励磁/保护；
+- UPS/STS：数百安培熔断器、TVS/MOV、IGBT/晶闸管/SiC diode stack、gate driver；
+- PDU/母线：分支熔断器、断路器、接触器、浪涌保护；
+- rack/power shelf/BBU/PSU：708/456/871/881、DFNAK3/TVS、MOV/GDT、温度/电流 sensing；
+- compute/network board：0402 小熔断、TVS/ESD arrays、PPTC；
+- optical port：主要是低价 ESD/TVS/PPTC，LFUS 不生产激光器、DSP 或光引擎，**每 port 内容很低**。
+
+### 8.2 每 MW / rack / GPU / optical port 内容量
+
+项目内行业研究显示：2026 年 90–150kW 机架约 **7–11 racks/MW、50–72 GPUs/rack、350–800 GPUs/MW**；150–250kW 约 4–7 racks/MW；未来 1MW rack 直接接近 1 rack/MW。行业级“功率/控制/板级保护”总 BOM 约 $240k–$430k/MW，独立高压保护另约 $45k–$110k/MW，但这包含 Eaton/ABB/Schneider/电源芯片等全行业价值，LFUS 只能获取其中小部分。[功率半导体与高压保护器件](../../行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-07-10.md)、[低压配电/PDU/母线槽](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-07-10.md)、[建设规模与订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)。
+
+| 计量单位 | 当前 48/54V 架构 LFUS 内容 | 800V/±400V 成熟架构 LFUS 内容 | 推导与限制 |
+|---|---:|---:|---|
+| **每 IT MW** | **$12k–$28k** | **$30k–$85k** | 公司只给 2–4 倍、拒绝给 $/MW；本报告按机架+设施 socket 自下而上估计，未把主配电设备总价算给 LFUS |
+| **每 100–150kW rack** | **$1.0k–$3.2k** | 过渡期 $2.5k–$7.5k | 6–16 只高电流 fuse、TVS/MOV、PSU/BBU/网络/板级保护，再分摊设施端 |
+| **每 1MW Kyber 类 rack** | 不适用/48V 铜排难以承受 | **$20k–$65k/rack** | 1MW 架构把设施和 rack 边界重构；不能简单用现有 rack 数相乘 |
+| **每 GPU 分摊** | **$8–$40/GPU** | **$25–$100/GPU** | 是机架/设施保护内容按 GPU 分摊，不表示每颗 GPU 旁放置等值器件；GPU 密度不同会大幅改变数字 |
+| **每 optical port** | **$0.10–$0.80** | **$0.15–$1.20** | 仅 ESD/TVS/PPTC/小 fuse，非 LFUS 重点；不含光引擎、laser、DSP、连接器 |
+
+### 8.3 典型 rack BOM 拆分（LFUS 捕获值）
+
+| 模块 | 数量/假设 | 量产 ASP 假设 | 当前 LFUS/rack | 800V 变化 |
+|---|---:|---:|---:|---|
+| 708/881/871/456 高电流 fuse | 6–16 只 | $8–$60/只；新 708 高规格可更高 | $100–$800 | 高压 fuse 数量/等级提升，单价可为普通件 1.5–5 倍 |
+| DFNAK3/LTKAK/TVS/MOV/GDT | 8–30 个/组合 | $1–$30；DFNAK3 渠道 100 只价约 $10.17 | $80–$450 | 800V 需要串并联/更高等级和协同保护，内容约 2 倍 |
+| PSU/BBU 内小熔断、ESD/PPTC、温感 | 多板、多 socket | $0.05–$5 | $150–$700 | 计算节点数和储能层级增加，随 node/rail 数量增长 |
+| PDU/busbar/sidecar 分支保护 | 1 套/架并分摊 | 高功率器件 $50–$1,000+ | $150–$600 | 800V 高分断、接触器/固态开关显著抬价 |
+| 设施 UPS/STS/发电控制分摊 | 按 MW 分摊 | stack/relay/system ASP 数百至数万美元 | $300–$1,000 | 可升至 $1,000–$5,000/rack 等效，但 1MW rack 需重新按 MW 算 |
+| **合计** | — | — | **$1.0k–$3.2k** | **$2.5k–$10k+；架构成熟后按 MW 更可靠** |
+
+### 8.4 价格传导链
+
+`银/铜/陶瓷/晶圆上涨 → LFUS 材料与制造成本 → 通过年度议价、surcharge、channel repricing 传给 PSU/PDU/UPS/OEM → OEM 把保护 BOM 嵌入 rack/设施报价 → hyperscaler CAPEX`
+
+- Q1 管理层明确银、铜成本有压力，目标用采购节省、生产率、价格和 surcharge 实现 **price-cost neutral**。
+- 标准低压器件通过分销，价格透明、传导较快但溢价有限；定制高压 fuse、stack、relay 依靠设计导入，议价周期更长但客户对可靠性/交期敏感，价格弹性更小。
+- 708 的价值不仅是 fuse 本体，还减少手工通孔/bolt-down 安装和 PCB 空间；客户总系统节省允许 LFUS 获取更高 ASP。
+
+## 九、当前产能、供应链采纳与认证阶段
+
+公司不披露按产品的名义产能。以下“美元产能”是根据已实现收入、工厂网络、渠道库存、Dortmund 200mm fab、Basler 三座工厂和产品 mix 估计的**可商业交付年化上限**，不是公司承诺。
+
+| 产品簇 | 2026 当前年化商业产能（估） | 利用/瓶颈判断 | 供应链采纳 | 当前认证/验证阶段 |
+|---|---:|---|---|---|
+| 48V fuse+TVS/MOV | **$150m–$210m** | 成熟 fuse 产能较足；708/DFNAK3 新封装、自动化线与客户验证是瓶颈 | 456/871/881 大规模量产；708 新导入；DFNAK3 渠道已有库存 | 456/881 有 UL；708 datasheet 显示 UL Recognized/TÜV；DFNAK3 为 active product，系统级资格由客户完成 |
+| 设施高功率 fuse/SPD/breaker | **$80m–$125m** | 认证材料、熔体/陶瓷工艺、定制测试比原料绝对短缺更关键 | UPS/PDU/工业既有平台广泛采用 | 现有 UL/IEC 系列成熟；800V 数据中心具体系统认证未单列 |
+| UPS/STS power stack | **$55m–$90m** | 功率半导体业务有重组/低利用率，短期不是纯晶圆短缺；高功率模块良率、封装、系统验证决定上限 | 管理层称参与几乎所有相关客户，Q1 有 design wins | 单器件 UL 94V-0/绝缘等文件齐；整机 UPS/STS 认证由 OEM 完成 |
+| Basler DC control/protection | **DC $35m–$50m；全业务 $135m–$155m** | 工程配置、软件、OEM/现场调试人员是瓶颈；三座工厂提供硬件扩张基础 | 1,600+ 全部终端客户；数据中心已有实际替代案例 | DGC/DECS/BE1 为成熟产品；新 800V 系统已 design win，2027 出货；客户未命名 |
+| 固态 HV protection module | **<$10m 试制能力** | R&D、可靠性、故障能量测试和 UL 标准是瓶颈，不是制造厂房 | 客户反馈积极，但尚未见量产订单 | 开发/样机；未公布型号、UL 文件或量产认证 |
+
+**渠道验证：**DFNAK3-072C-D1 在 DigiKey 可见约 1,200 只库存，而 Mouser 显示 non-stocked lead time 17 周；这说明新高功率 TVS 处于渠道铺货/区域库存不均，而不是足以证明全行业 shortage。普通旧型号可现货；不能用单一 distributor 的缺货推断 LFUS 全部 backlog。
+
+## 十、一年后产能与认证三情景
+
+| 产品簇 | 基准产能/采纳/认证 | 乐观产能/采纳/认证 | 极度乐观产能/采纳/认证 |
+|---|---|---|---|
+| 48V fuse+TVS | **$190m–$250m**；708 进入 2–4 家领先平台，量产认证完成 | **$270m–$350m**；多 hyperscaler reference design，渠道库存常态化 | **$380m–$500m**；708 成为高故障电流 SMD 事实标准，仍需多线扩产 |
+| 设施 HV fuse/SPD | **$110m–$160m**；800V 小批平台/UL 系统验证 | **$180m–$260m**；多家 power system OEM 采用，形成成套保护选型 | **$300m–$420m**；1MW rack 多项目同步，认证产能成为短板 |
+| UPS/STS stack | **$75m–$115m**；现有 design win 转量产，低价值 SKU 退出 | **$130m–$200m**；高功率 stack share gain、margin 修复 | **$240m–$340m**；逼近 >$400m 市场机会的大份额，需要封装/系统集成大幅扩产 |
+| Basler DC control | **DC $45m–$65m**；首个 800V win 按期 2027 出货 | **$75m–$105m**；多 OEM 复制，DGC/BE1/DECS bundle | **$120m–$170m**；成为多个 hyperscaler power system 标准配置，工程服务需扩编 |
+| 固态 HV module | **$20m–$35m**；至少一项 pilot/UL 路径清晰 | **$55m–$90m**；1–2 个量产平台、UL/客户系统认证完成 | **$120m–$200m**；多平台量产、模块成行业主流；执行难度极高 |
+
+### 认证路线的现实约束
+
+- NVIDIA 公开资料把 800V 全量产时间放在 2027；2026 OCP EMEA 已讨论 1MW rack、800V power distribution 与 LVDC 标准化。[NVIDIA 800V](https://developer.nvidia.com/blog/?p=100571)、[2026 OCP EMEA](https://www.opencompute.org/events/past-events/2026-ocp-emea-summit)
+- UL Solutions、OCP、ABB、Eaton 于 2026-01 启动对下一代 800–1,500VDC 数据中心配电安全标准的系统审查，说明标准仍在完善，而非“认证已全部就绪”。[UL/OCP 联合项目](https://www.ul.com/news/ul-solutions-and-open-compute-project-help-advance-safety-and-scalability-new-ai-data-center)
+- NVIDIA 公开列出的 800V silicon/power-system partners 中**没有列出 Littelfuse**；名单可能不覆盖所有保护器件供应商，但在客户公布前，应把 LFUS 的“设计在平台内”视为公司陈述而非 NVIDIA 公开背书。
+- 827/828 的 AEC-Q200 只证明车规可靠性，不等于数据中心 UL/系统认证；在公司正式宣布 DC design-in 前，收入预测不应给高权重。
+
+## 十一、基于 backlog、供给与交付窗口的未来一年增长预测
+
+### 11.1 已知订单证据
+
+| 证据 | 已知事实 | 能推断什么 | 不能推断什么 |
+|---|---|---|---|
+| 2025 年末 backlog | **$1,070.9m，同比 +61.1%**；三分部均增；基本计划 2026 交付 | FY2026 订单覆盖强，约占 $2.79bn 收入共识 38% | 不知道其中 AI、Basler、分销补库各占多少 |
+| 2026Q1 B2B | 明显 >1 | 新订单快于当季 $657m 交付，backlog 方向仍升 | 没有精确 B2B，不能算季度末 backlog |
+| 2026Q1 bookings | 同比 >20%，Q4→Q1及季内均改善 | 需求广泛而非单一客户；Q2 仍有动能 | 没有分部/产品 bookings |
+| 2025 DC design wins | 数量同比 >2 倍 | 客户平台渗透加速 | 公司定义 design win 为“上平台并有早期样机收入”，不是不可取消订单 |
+| Basler 800V win | 2026Q1 获得，计划 2027 起出货 | 800V 收入有明确时间锚 | 客户、订单金额、数量、取消条款均未披露 |
+| 单一 hyperscaler | 当前 20+ solutions；5 年后收入可 3 倍、约 $100m | 当前隐含约 $33m，证明已有真实规模 | 不是 2027 指引，也不能假设所有 hyperscaler 同样金额 |
+
+### 11.2 交期与取消率推断
+
+- **标准/成熟板级器件：**本报告采用 8–16 周生产/补库窗口；分销现货可立即交付。不是公司披露。
+- **新封装高功率 TVS/708：**渠道与设计导入约 12–24 周；Mouser 对 DFNAK3 显示 17 周是一个可见样本。
+- **定制高功率 fuse、power stack、relay/control：**约 20–40+ 周制造/配置窗口，外加系统资格认证；新 800V 平台从规格到量产通常 12–24 个月。
+- **取消率：**公司未披露。基准采用 3%–8%，乐观 1%–4%，极乐观 <2%；如果 backlog 中分销补库或客户重复下单较多，实际取消可能高于基准。
+
+### 11.3 FY2027 公司与数据中心收入情景
+
+| 情景 | 订单/供给假设 | FY2027 LFUS 总收入 | 同比 FY2026E | 数据中心收入 | 数据中心增速 | 主要验证条件 |
+|---|---|---:|---:|---:|---:|---|
+| **基准** | 2025 backlog 正常转化；Q1 B2B 回落至约 1；取消 3%–8%；800V 小批 | **$3.05bn–$3.15bn** | **+9%–13%** | **$260m–$345m** | **+22%–35%** | 接近分析师 $3.04bn 共识；708/DFNAK3 放量，Basler 2027 出货 |
+| **乐观** | bookings 保持 +15%–20%；取消 1%–4%；多平台采用；power stack 产能释放 | **$3.20bn–$3.35bn** | **+15%–20%** | **$360m–$490m** | **+50%–80%** | 两个以上未命名 800V 客户/系统 win，Electronics margin 继续扩张 |
+| **极度乐观** | 多 hyperscaler 1MW/800V 同步提前；取消 <2%；固态模块量产；产能上限提升 | **$3.40bn–$3.60bn** | **+22%–29%** | **$510m–$710m** | **+100%–180%** | 需要公司正式提高 2030 目标/产能、公布大额客户项目；当前证据不足 |
+
+**概率判断：基准 60%，乐观 30%，极度乐观 10%。** 2027 总公司增速不会完全跟随数据中心，因为 Basler 并购贡献周年化、Transportation/consumer/HVAC 较慢、低价值 power semi 主动退出会形成抵消。
+
+## 十二、竞争格局、技术主流性、替代方案与切换成本
+
+### 12.1 分产品竞争
+
+| 产品层 | 主要竞争者 | LFUS 相对优势 | 主要替代/风险 | 客户切换成本 |
+|---|---|---|---|---|
+| 高电流/高压 fuse | **Eaton Bussmann、Mersen、Bel Fuse、Bourns** | 规格从板级到工业高功率完整；708 的 80V/14kA SMD 组合领先；品牌/UL/配合经验 | 并联 fuse、bolt-down、断路器、eFuse/solid-state breaker；竞争者也能迭代高压 | 标准件 **中**（6–12 月）；800V/高分断 **高**（12–24 月） |
+| TVS/MOV/GDT/ESD | **Bourns、Vishay、TDK/EPCOS、onsemi、ST、Nexperia、Semtech** | 同时拥有快 TVS 与高浪涌 MOV，可做协同；高功率 TVS 增长快 | SiC/GaN 更耐压可减少部分保护；客户多源采购 | 低压离散 **中低**；高功率协同保护 **中高** |
+| 48V hot-swap/eFuse 周边 | **MPS、TI、ADI、Infineon、Renesas、onsemi、ST、AOS** | LFUS 强在熔断/浪涌，不必与控制 IC 正面替代，可共同入 BOM | 集成 eFuse/hot-swap 控制器减少离散熔断 socket | **中**；多数平台会保留独立终极保护以满足失效安全 |
+| UPS/STS power semiconductor | **Infineon、onsemi、ST、Mitsubishi Electric、Fuji Electric、Semikron Danfoss、Wolfspeed** | die+module+stack+gate driver+保护组合；MW 级 2–3ms STS 实绩 | OEM 自研 stack、宽禁带替代硅 IGBT/晶闸管、竞争者规模更大 | 单器件 **中**；验证后的 stack **高** |
+| 保护继电器/控制 | **Schweitzer Engineering Laboratories、GE Vernova、Siemens、ABB、Eaton、Schneider、Beckwith** | Basler 在励磁、发电机控制和保护组合强，1,600+ 客户；与 LFUS fuse/semis 可 bundle | 大型电气 OEM 一站式方案、客户既有继保标准 | **很高**：逻辑配置、通信、现场调试和运行记录可锁定 2–5 年 |
+| 固态 breaker/protection module | **Eaton、ABB、Schneider、Siemens、Sensata 及初创公司；Infineon/ST/onsemi 提供核心器件** | LFUS 五功能集成、保护 know-how、UL 经验和全技术组合 | 机械 fuse+contactor 仍低成本可靠；SST/固态架构未定；热管理/故障安全难 | 若通过平台认证则 **高**，当前尚未形成护城河 |
+
+公司 10-K 明示的核心竞争者包括 Electronics 的 Eaton、Bourns、TDK、onsemi、Infineon、ST、Semtech、Vishay；Transportation 的 Eaton、Pacific Engineering、MTA、Amphenol、Sensata、TE；Industrial 的 Eaton、GE Multilin、Mersen。
+
+### 12.2 新技术是否是主流
+
+- **48V/54V 仍是 2026–2027 现实主流。** 708/DFNAK3 是当前最确定的 LFUS AI 产品；NVIDIA 自己也指出现有 54V power shelves 在 >200kW rack 面临空间和铜排瓶颈。
+- **800V/±400V 很可能成为 1MW rack 的主流方向，但实施路径未统一。** 可能是 facility-level 800V、sidecar、±400V、1,000V、甚至 solid-state transformer；管理层承认因此只能给 2–4 倍内容区间。
+- **固态保护是潜在主流而非既成事实。** 电子可复位、远程监控和毫秒级动作适合 AI uptime，但成本、热管理、短路失效模式和认证仍会让机械 fuse/contactor 长期共存。
+- **保护不会被更高效电源消灭。** 电压越高、故障能量越大，DC 又没有 AC 自然过零，熔断/隔离/浪涌/控制反而更重要；但每个 socket 的实现方案可能从 fuse 转为 eFuse/solid-state breaker，LFUS 必须用半导体/系统产品自我替代。
+
+### 12.3 主要风险
+
+1. **估值先行：**28x FY2026 调整 PE、4.22x sales 已隐含高增长；若数据中心仅按公司 25%–30% CAGR、非超额增长，估值可能压缩。
+2. **收入披露不足：**纯 DC/AI 收入、订单、客户、取消率均未披露，第三方很容易把 17% 合并池或全部 backlog 误算为 AI。
+3. **800V 时间/标准风险：**UL/OCP 标准仍在更新，NVIDIA 量产锚在 2027；任何延期会把 2–4 倍内容推迟。
+4. **客户背书风险：**公司称已设计在平台内，但未被 NVIDIA 公开伙伴名单点名；未命名 hyperscaler/market leader 不能独立核实。
+5. **技术替代：**集成 eFuse、固态断路器、SST、SiC/GaN 和 OEM 自研 stack 会改变 LFUS 的 socket；公司需靠组合而非单一 fuse 维持份额。
+6. **功率半导体执行：**2025 $301.2m goodwill impairment 证明历史回报差；产能并非越多越好，关键是 mix、良率和退出低价值产品。
+7. **原材料/价格：**银、铜上涨；若无法 price-cost neutral，会侵蚀 30%–35% 增量 EBITDA 转化目标。
+8. **Basler 整合：**13.5x 2025E EBITDA（扣税收利益后）不算便宜；若数据中心/电网协同慢，EPS 增厚有限。
+9. **渠道周期：**约 1/3 收入来自分销，补库可能放大 bookings/backlog，去库也可能快速逆转。
+10. **全球制造/宏观：**65% 销售在美国以外，多国工厂带来 FX、关税、地缘和供应链中断风险。
+
+## 十三、未来 12 个月跟踪清单与可证伪点
+
+| 优先级 | 跟踪指标 | 基准阈值 | 乐观阈值 | 负面/证伪信号 |
+|---|---|---|---|---|
+| 1 | 数据中心增速/收入披露 | 强劲双位数、约 25%–35% | >40% 或首次给美元口径 | 降至低双位数且不解释 |
+| 2 | B2B/bookings/backlog | B2B 约 1、bookings 双位数 | B2B >1、bookings >20% 持续 | B2B <1、backlog 环比明显降、取消增加 |
+| 3 | 800V 客户与认证 | 2027 首个 Basler win 按期 | 第二/第三个 OEM/hyperscaler win，公布 UL 路径 | 出货推迟到 2028、产品资格测试失败 |
+| 4 | 708/DFNAK3 渠道和设计导入 | 交期稳定、量产库存增加 | 多平台 reference design/扩充电流档 | 新品缺乏 design-in 或被 Eaton/Mersen/Bourns 快速替代 |
+| 5 | Electronics margin | 25% 左右 EBITDA margin | 向 27%–30% 走 | power semi 重组费用/利用率拖回 22% 以下 |
+| 6 | Basler | FY2026 $130m–$135m、高十几% EBITDA | 20%+ EBITDA、交叉销售量化 | 低于 $125m 或 margin 下滑 |
+| 7 | 价格/材料 | price-cost neutral | 价格与 mix 正贡献 | 银铜成本连续侵蚀 GM >100bp |
+| 8 | FY2027 总收入 | $3.05bn–$3.15bn | >$3.2bn | 低于 $3.0bn，表明 backlog/并购基数/退出业务抵消过大 |
+
+## 十四、最终投资结论
+
+LFUS 的 AI 数据中心逻辑有三层，必须分开估值：
+
+1. **当前已兑现：**48/54V fuse、TVS/MOV、UPS/STS、设施高功率保护和 Basler 控制，FY2026 纯数据中心收入中枢约 **$230m**，AI 相关约 **$180m**，约占公司 6%–7%。这是可以由季度强劲双位数增长、产品发布、渠道库存和客户 20+ solutions 交叉验证的层。
+2. **已设计、待放量：**Basler 800V system win 2027 开始出货、2025 design wins 超过翻倍、单一 hyperscaler 五年收入约 3 倍至 $100m。这一层有平台证据，但缺订单金额与客户公布。
+3. **高弹性期权：**800V 内容量 2–4 倍、固态保护 >10 倍价值捕获、STS/UPS >$400m opportunity。这一层技术方向合理，却高度依赖标准、认证、量产和份额，不能按 100% 概率折现。
+
+**综合评价：业务质量 8/10，财务健康 8.5/10，AI 当前暴露 6.5/10，AI 中期弹性 8.5/10，订单可验证性 6/10，估值安全边际 4.5/10。** 适合把 LFUS 看作“AI 电力保护与电网升级的高质量 picks-and-shovels”，不适合按 AI 芯片纯度或把全部 backlog 资本化。最优验证路径不是等待 2030 口号，而是观察 2026H2 bookings、708/DFNAK3 量产、第二个 800V 客户、Basler 2027 出货以及 Electronics margin 是否同步兑现。
+
+## 十五、核心来源
+
+### 公司与财务一手资料
+
+- [Littelfuse 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/889331/000162828026009585/lfus-20251227.htm)
+- [Littelfuse 2026Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/889331/000162828026031041/lfus-20260328.htm)
+- [2026Q1 earnings release](https://investor.littelfuse.com/news/news-details/2026/Littelfuse-Reports-First-Quarter-Results-for-2026/default.aspx)
+- [2026Q1 earnings call transcript](https://stockanalysis.com/stocks/lfus/transcripts/547816-q1-2026/)
+- [2026 Investor Day slides](https://s202.q4cdn.com/691005561/files/doc_presentations/2026/May/14/Littelfuse-2026-Investor-Day_FINAL.pdf)
+- [2026 Investor Day transcript](https://stockanalysis.com/stocks/lfus/transcripts/618732-investor-day-2026/)
+- [Basler acquisition announcement](https://investor.littelfuse.com/news/news-details/2025/Littelfuse-to-Acquire-Basler-Electric-Enhancing-High-Growth-Industrial-Market-Positioning/default.aspx)
+- [StockAnalysis valuation/statistics](https://stockanalysis.com/stocks/lfus/statistics/)；[forecast](https://stockanalysis.com/stocks/lfus/forecast/)
+
+### 产品、行业会议与技术资料
+
+- [708 Series launch](https://www.littelfuse.com/de/company/news-and-events/in-the-news/newspages-articles/press-releases/2026/littelfuse-nano2-smd-708-series-fuse-enables-high-current-48-vdc-ai-data-center-protection)；[708 datasheet](https://www.littelfuse.com/assetdocs/0708-nano2-smd-fuse-datasheet?assetguid=aa4e184c-f52e-4aee-9498-1732e8c47d37)
+- [456 datasheet](https://www.littelfuse.com/assetdocs/fuse-456-datasheet?assetguid=d86b18f9-14fa-4764-87ff-8aec12e9a89d)；[881 datasheet](https://www.littelfuse.com/assetdocs/littelfuse-fuse-881f-datasheet?assetguid=cb5b813b-01fb-43c3-8c4d-a6cea158ffef)
+- [DFNAK3-072C-D1](https://www.littelfuse.com/products/overvoltage-protection/tvs-diodes/high-power/dfnak3/dfnak3-072c-d1)；[827/828 release](https://www.littelfuse.com/de/company/news-and-events/in-the-news/newspages-articles/press-releases/2025/littelfuse-launches-industry-first-aec-q200-compliant-high-voltage-fuses-rated-up-to-1000-vdc)
+- [Basler Data Centers](https://www.basler.com/industry/data-centers/)；[DGC-2020HD](https://www.basler.com/product/dgc-2020hd-digital-genset-controller/)
+- [NVIDIA 800V architecture](https://developer.nvidia.com/blog/?p=100571)；[2026 OCP EMEA](https://www.opencompute.org/events/past-events/2026-ocp-emea-summit)；[APEC 2026 program](https://apec-conf.org/wp-content/uploads/2026/03/APEC-2026-Program-Book-20260223.pdf)
+- [UL Solutions/OCP 800–1,500VDC safety standards initiative](https://www.ul.com/news/ul-solutions-and-open-compute-project-help-advance-safety-and-scalability-new-ai-data-center)
+
+### 项目内允许调用的行业研究
+
+- [功率半导体与高压保护器件](../../行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-07-10.md)
+- [数据中心低压配电、PDU 与母线槽](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-07-10.md)
+- [机柜级供电与服务器电源架构](../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md)
+- [数据中心 UPS 与电池储能](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-07-10.md)
+- [AI 服务器整机与机架集成](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-07-10.md)
+- [AI 数据中心建设规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+- [AI 产业链全局图谱与口径字典](../../行业调研/产业背景/AI产业链全局图谱与口径字典_T03_2026-07-09.md)
+
+> **免责声明：**本文为投资研究资料，不构成投资建议。预测尤其是 AI 收入、BOM、产能、取消率及三情景模型包含较大估计误差；应在 2026Q2 财报后用实际订单、利润率和管理层新披露更新。

@@ -1,0 +1,620 @@
+# 公司：INTC Intel Corporation（英特尔）
+
+> **研究日期：2026-07-18｜信息截止：2026-07-17 美股收盘、2026-07-18 公开信息｜货币：美元**  
+> **研究范围：**项目内仅使用“基本面/行业调研”中的产业资料；其余项目研究目录、公司索引和历史公司报告均未作为证据。联网资料优先采用 Intel/SEC/产品规格等一手来源，辅以过去半年的会议、产业媒体和渠道信息。  
+> **会计口径：**Intel Products 的 CCG、DCAI 与 Intel Foundry 存在内部交易；讨论合并收入时，只计 Foundry 外部收入，绝不把 Foundry 的内部晶圆收入重复相加。  
+> **预测口径：**“未来一年收入”指 2026-07 至 2027-06 累计；“一年后产能/认证”指 2027 年中状态。所有未披露拆分均标记为“模型估算”，不是公司指引。
+
+## 结论摘要
+
+1. **Intel 已从“成熟 x86 PC 公司”变成三重资产的组合：**仍占主导地位的 x86 主机/控制平面 CPU、处于高投入转折点的 18A/先进封装代工平台、以及 AI PC/边缘 AI。它不是当前主流训练加速器供应商；其最现实的 AI 收益来自每个 GPU/ASIC 集群仍需要的 Xeon 主机、云控制面、IPU/网络，以及先进封装。
+2. **Q1 2026 的产品经营拐点是真实的。**收入 $13.577B、同比 +7%；DCAI $5.052B、同比 +22%，其中服务器 CPU 约 $4.117B、同比约 +20%；DCAI 经营利润率由一年前 14.0% 升至 30.5%。服务器 ASP 同比 +27%、出货量 -5%，说明增长主要由高端混合、供给紧张和定价推动，而不是单位量扩张。[Q1 2026 10-Q](https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000079/intc-20260328.htm)
+3. **“AI 驱动业务占收入 60%”不能等同于纯 AI 数据中心收入。**管理层定义的 60% 对应约 $8.15B，包含 AI PC、服务器/网络/边缘等广义业务；本报告估算，直接或高概率附着于 AI 数据中心的收入约 $1.4–2.3B，约占公司收入 10%–17%，中值约 13%。[Q1 2026 prepared remarks](https://d1io3yog0oux5.cloudfront.net/_63e6aa17e2de71bf900d5c8f98728d4a/intel/db/887/9254/prepared_remarks/1Q2026-Earnings-Call.pdf)
+4. **需求证据强于正式订单披露，但弱于“可审计 backlog”。**Intel 不披露 backlog、bookings、book-to-bill、平均交期或取消率；可核实的替代证据是：Q1 新签长期协议带来 $1.7B 可执行客户预付款、Xeon 需求持续高于供给、先进封装 backlog 增长、Google 多年 Xeon/IPU 合作、NVIDIA DGX Rubin/B300 主机 CPU 采用，以及 SambaNova/Foxconn/Together.ai 的 H2 2026 交付路径。$1.7B 是现金/合同保障，不应直接当作当期订单收入。
+5. **Foundry 的技术验证领先于商业验证。**18A 已由 Core Ultra Series 3 和 Xeon 6+ 内部量产验证，18A-P 进入风险生产；但 Q1 外部 Foundry 收入仅 $174M，其中约 $139M 来自已去并表的 Altera。除 Altera 外约 $35M 的外部收入与“数十亿美元先进封装机会”之间仍有巨大兑现缺口。
+6. **资产负债表尚有缓冲，但不再“宽松”。**2026-03-28 流动性 $32.8B、总债务 $45.0B、净债务 $12.2B、流动比率 2.31；4 月回购爱尔兰 Fab 34 合资权益后，粗略备考净债务约升至 $26.4B（收到 $1.7B 客户预付款后约 $24.7B）。同时 Foundry 单季经营亏损 $2.44B、调整后自由现金流约 -$2B，健康度评为**中等、可融资但资本密集且对执行敏感**。
+7. **估值已明显预支转型。**2026-07-17 收盘价 $95.04，市值约 $477.7B–$483.1B；过去十二个月净亏损使 trailing PE 无意义，forward PE 约 87.7 倍、P/S 约 8.9 倍。即使本报告基准情景未来一年收入增至 $58.8B（+9.4%），对应静态 forward P/S 仍约 8.1 倍，显著高于传统 CPU/晶圆制造公司的容错区间。[StockAnalysis INTC](https://stockanalysis.com/stocks/intc/)｜[Valuation ratios](https://stockanalysis.com/stocks/intc/statistics/)
+8. **未来一年基准/乐观/极度乐观合并收入为 $58.8B/$65.0B/$72.9B，增速 +9.4%/+20.9%/+35.6%。**基准依赖 Xeon 供给改善和价格保持，乐观依赖 18A/封装外部收入开始放量，极度乐观还要求服务器单位量、AI PC 混合和外部 Foundry 同时超预期。极度乐观情景缺少同等强度的已披露 backlog 支撑，只能视作上行情景，不是概率最高路径。
+
+---
+
+## 一、公司整体业务、投资人定位与近三年转型
+
+### 1.1 公司做什么、位于产业链哪里
+
+Intel 是少数同时覆盖**指令集/CPU 架构、芯片设计、晶圆制造、先进封装、平台软件与网络接口**的半导体公司。其产业链位置可分为四层：
+
+| 层级 | Intel 业务/资产 | 主要产品或能力 | AI 基建中的实际作用 |
+|---|---|---|---|
+| 计算与控制平面 | DCAI | Xeon 6/6+、定制 x86、云基础设施处理器、部分 ASIC/IPU | 为 GPU/ASIC 集群提供主机、编排、存储/网络控制、agentic AI 的 action/CPU 阶段 |
+| 客户端与边缘 | CCG | Core Ultra Series 3（Panther Lake）、商用 PC、边缘模块 | AI PC 与端侧推理；更重要的是作为 18A 首个大规模产品验证良率和成本 |
+| 制造与封装 | Intel Foundry | Intel 3、18A/18A-P/18A-PT、未来 14A，EMIB/EMIB-T、Foveros Direct | 内部产品制造；争取外部 AI ASIC、先进封装和 chiplet 客户 |
+| 网络、定制与卫星资产 | DCAI/All Other | Google IPU、E835 200G NIC、Crescent Island、Mobileye EyeQ | 控制面、网络、推理加速和物理 AI；规模与成熟度差异很大 |
+
+Intel 在投资人心中同时是：
+
+- **x86 现金流与份额防守标的：**仍拥有约 66.8% 的 x86 服务器单位份额，但收入份额约 53.8%，说明 AMD 已占据更多高价值份额；Intel 的存量软件兼容、OEM 认证和企业采购惯性仍构成护城河。
+- **AI 基建“铲子旁边的铲子”：**不是 NVIDIA 式加速器龙头，而是 GPU 主机 CPU、控制面、IPU/网络和封装的附着受益者。Agentic inference 的 CPU 调度、数据库、工具调用和网络处理提高 CPU attach，但 CPU 内容量远低于 GPU。
+- **国家战略制造资产与高资本开支 turnaround：**美国政府直接持股、18A/14A 和美国/爱尔兰产能使其具有政策稀缺性；同时 Foundry 亏损、良率、客户资格认证和资本回报仍是核心风险。
+- **高估值的技术期权：**当前估值并不是按“低增速 PC 公司”定价，而是提前计入 Xeon 再加速、18A 商业成功、先进封装外部订单和 NVIDIA/Google 合作兑现。
+
+上述定位与项目内行业研究一致：AI 服务器 CPU 正从单纯“喂 GPU”转向编排/控制平面，CPU 与 DPU/IPU 附着率在 agentic inference 中可能提高；但 AMD、Arm 和云厂自研 CPU 同时侵蚀传统 x86 池。[项目行业研究：AI服务器CPU与控制平面芯片](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器CPU与控制平面芯片_2026-07-10.md)
+
+### 1.2 最近三年的重大业务变动、转型、投资与收购
+
+| 时间 | 事件 | 金额/结构 | 战略含义与尽调判断 |
+|---|---|---:|---|
+| 2024-06 | Apollo 取得爱尔兰 Fab 34 合资实体 49% | Intel 获得约 $11B 资金 | 以制造资产换流动性；不是出售核心工艺控制权 |
+| 2025-03 | Lip-Bu Tan 出任 CEO | — | 战略从“建设规模优先”转向客户、工程纪律、扁平化和资本回报。[官方任命](https://www.intc.com/news-events/press-releases/detail/1730/intel-appoints-lip-bu-tan-as-chief-executive-officer) |
+| 2025 Q2–Q4 | 大规模重组与建厂收缩 | 核心员工约减 15% 至约 75,000；Q2 重组费约 $1.9B | 取消德国/波兰项目、整合 Costa Rica A&T 至越南/马来西亚、放缓 Ohio；减轻固定成本，但也提高执行和人才流失风险。[Q2 2025 results](https://www.intc.com/news-events/press-releases/detail/1745/intel-reports-second-quarter-2025-financial-results) |
+| 2025-09 | 出售 Altera 51% 给 Silver Lake，保留 49% | 企业价值 $8.75B；Intel 获得约 $3.3B 权益价值 | FPGA 去并表、提高资本聚焦；Altera 此后成为 Foundry 外部客户，因此外部收入中存在“关联生态”成分。[交易公告](https://www.intc.com/news-events/press-releases/detail/1736/intel-announces-strategic-investment-by-silver-lake-in) |
+| 2025-08 | 美国政府投资并取得约 9.9% | $8.9B、433.3M 股、每股 $20.47 | 强化美国制造政策支持，也带来政府治理、稀释和政策条件风险。[官方协议](https://www.intc.com/news-events/press-releases/detail/1748/intel-and-trump-administration-reach-historic-agreement-to) |
+| 2025-08/09 | SoftBank 与 NVIDIA 入股 | $2B + $5B | 提供资本与战略背书；NVIDIA 合作包括多代定制 x86 数据中心 CPU、客户端 x86 SoC + RTX GPU chiplet，时间表未披露。[NVIDIA/Intel 合作](https://www.intc.com/news-events/press-releases/detail/1750/nvidia-and-intel-to-develop-ai-infrastructure-and-personal) |
+| 2026-02 | 收购 Mentee Robotics | 约 $637M，现金净额约 $596M | 扩展机器人/物理 AI 软件与人才；近期财务贡献不重大，整合风险高 |
+| 2026-04 | 回购 Apollo 持有的 Fab 34 49% | $14.2B：$7.7B 现金 + $6.5B 364 天贷款 | 恢复爱尔兰制造资产全部经济权益，代价是显著提高净债务与短期再融资需求。[官方公告](https://www.intc.com/news-events/press-releases/detail/1764/intel-to-repurchase-49-equity-interest-in-ireland-fab) |
+| 2026-07 | 爱尔兰 Intel 3 产能扩建 | €5B，约 $5.7B | 以既有厂房和设备升级支持 Xeon 6/后续产品，低于绿地厂风险；同时证明服务器需求需要更多供给。[官方扩建公告](https://newsroom.intel.com/intel-foundry/intel-invests-5-billion-euro-to-expand-manufacturing-in-europe) |
+
+**转型实质：**Intel 不是通过大型收入型收购转型，而是通过去并表 Altera、缩减低回报厂务、引入战略股东、恢复 Fab 34 控制、内部产品首发 18A，再以 Google/NVIDIA/先进封装合作争取外部收入。未来价值的关键不是“拥有 18A”，而是能否在良率、单位成本、PDK/IP 生态和客户量产资格上把内部技术里程碑转为外部毛利。
+
+### 1.3 最新市场与经营指标
+
+| 指标 | 最新值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | **$95.04** | 2026-07-17 收盘；盘后约 $93.97 | 52 周区间约 $18.97–$142.35，波动反映 Foundry/政策/AI 期权 |
+| 市值 | **约 $477.7B–$483.1B** | 2026-07-17；不同数据源流通股口径不同 | 本报告估值以约 $477.7B 为主 |
+| Trailing PE | **N/M** | TTM 归母净亏损约 $3.174B | 机械计算负 PE 没有经济意义 |
+| Forward PE | **约 87.7×** | 2026-07-17 市场一致预期口径 | 对盈利恢复要求极高 |
+| P/S | **约 8.88×** | 市值/TTM 收入 | 对资本密集型、35% 左右 TTM 毛利率公司偏高 |
+| TTM 收入 | **$53.763B** | 截至 2026 Q1；本报告按季报滚动计算 | 同比约 **+1.4%** |
+| TTM 毛利率 | **35.4%** | TTM 毛利约 $19.050B | Q1 单季已恢复至 39.4%，但 18A 初期成本仍压制 |
+| TTM 净利率 | **-5.9%** | TTM 归母净亏损约 $3.174B | Q1 Mobileye 商誉减值和重组使 GAAP 失真，但现金流压力真实 |
+| Q1 非 GAAP 净利润/EPS | **$1.5B / $0.29** | 2026 Q1 | 显示核心产品盈利显著好于 GAAP，但不能忽略制造资本开支 |
+
+来源：[Intel Q1 2026 results](https://www.intc.com/news-events/press-releases/detail/1767/intel-reports-first-quarter-2026-financial-results)；[StockAnalysis market data](https://stockanalysis.com/stocks/intc/)；TTM 收入、毛利率和净利率由 2025 全年减 Q1 2025 加 Q1 2026 计算。
+
+### 1.4 资产负债表与财务健康度
+
+| 项目 | 2026-03-28 实际 | 回购 Fab 34 后粗略备考 | 判断 |
+|---|---:|---:|---|
+| 现金及现金等价物 | $17.247B | 约 $9.55B | 未计 Q2 经营现金流和 $1.7B 客户预付款 |
+| 短期投资 | $15.542B | $15.542B | 备考假设未出售短投 |
+| 总流动性 | **$32.789B** | **约 $25.089B**；收到预付款后约 $26.789B | 仍可覆盖运营，但缓冲显著下降 |
+| 总债务 | **$45.031B** | **约 $51.531B** | 新增 $6.5B 364 天贷款带来短期再融资风险 |
+| 净债务 | **$12.242B** | **约 $26.442B**；收到预付款后约 $24.742B | 杠杆增幅大于表面收入增速 |
+| 流动资产/流动负债 | $62.157B / $26.885B | 压力测试约 $54.46B / $33.39B | 实际流动比率 **2.31**；若贷款均列流动且现金支付，粗略降至约 **1.63** |
+| 库存 | $12.426B | — | 供给紧张与新节点爬坡并存；需观察旧节点/客户端库存减值 |
+| 总资产/股东权益 | $205.332B / $124.989B | — | 账面资本厚，但晶圆厂资产回报率低 |
+| Q1 经营现金流 | $1.096B | — | 正值但不足以覆盖约 $5B 单季 gross capex |
+| Q1 调整后自由现金流 | 约 **-$2B** | — | 说明产品盈利改善尚未转化为自由现金流 |
+
+**健康度：中等（5.5/10）。**正面是流动资产充足、战略股东在 2025 年合计注入约 $15.9B、产品业务恢复盈利、Q1 新增长期协议对应 $1.7B 预付款；负面是 Foundry 单季经营亏损 $2.437B、资本开支高、Fab 34 回购后净债务翻倍、贷款期限短，以及 Q1 约 $3.45B Mobileye 商誉减值暴露此前资本配置假设过于乐观。公司短期没有偿付危机，但已进入“必须以增长、良率和外部客户证明资本开支”的阶段。
+
+---
+
+## 二、最新及最近四次财报：五季度经营与订单信号
+
+### 2.1 五季度核心财务与分部数据
+
+> 分部收入含内部口径：Foundry 收入绝大部分来自 Intel Products 内部，合并时由 eliminations 抵销。分部利润率为经营利润率。Q1 2026 服务器收入由 DCAI $5.052B 减其他 DCAI $0.935B 得出。
+
+| 财报季度 | 合并收入 / YoY | GAAP GM / 净利润率 | CCG：收入 / YoY / OP margin | DCAI：收入 / YoY / OP margin | 其中服务器 CPU / 其他 DCAI | Foundry：收入 / YoY / OP margin | All Other | AI 数据中心占比 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| **Q1 2026（最新）** | **$13.577B / +7%** | **39.4% / -27.5%** | $7.727B / +1% / 32.6% | **$5.052B / +22% / 30.5%** | **$4.117B / $0.935B**；约 +20% / +33% | $5.421B / +16% / -45.0%；外部仅 $174M | $0.628B / -33% / 16.2% | 公司披露广义 AI-driven **60%=$8.15B**；本报告纯 AI DC 估 **10%–17%** |
+| **Q4 2025** | $13.674B / -4% | 36.1% / -4.3% | $8.193B / -7% / 27.0% | $4.737B / +9% / 26.4% | 未单列 | $4.507B / +4% / -55.7% | $0.574B / -48% / -1.4% | 未披露；估约 8%–14% |
+| **Q3 2025** | $13.653B / +3% | 38.2% / +29.8%* | $8.535B / +5% / 31.6% | $4.117B / -1% / 23.4% | 未单列 | $4.235B / -2% / -54.8% | $0.993B / +3% / 10.1% | 未披露；估约 7%–12% |
+| **Q2 2025** | $12.859B / 约持平 | 27.5% / -22.7% | $7.871B / -3% / 26.1% | $3.939B / +4% / 16.1% | 未单列 | $4.417B / +3% / -71.7% | $1.053B / +20% / 6.6% | 未披露；估约 7%–11% |
+| **Q1 2025** | $12.667B / 约持平 | 36.9% / -6.5% | $7.629B / -8% / 31.0% | $4.126B / +8% / 13.9% | 服务器约 $3.421B / 其他 $0.705B | $4.667B / +7% / -49.7% | $0.943B / +47% / 10.9% | 未披露；估约 7%–11% |
+
+\* Q3 2025 GAAP 净利润约 $4.1B，主要受一次性收益推动，不代表持续经营净利率。  
+来源：[Q1 2026](https://www.intc.com/news-events/press-releases/detail/1767/intel-reports-first-quarter-2026-financial-results)｜[Q4 2025/FY2025](https://www.intc.com/news-events/press-releases/detail/1759/intel-reports-fourth-quarter-and-full-year-2025-financial)｜[Q3 2025](https://www.intc.com/news-events/press-releases/detail/1753/intel-reports-third-quarter-2025-financial-results)｜[Q2 2025](https://www.intc.com/news-events/press-releases/detail/1745/intel-reports-second-quarter-2025-financial-results)｜[Q1 2025](https://www.intc.com/news-events/press-releases/detail/1737/intel-reports-first-quarter-2025-financial-results)
+
+### 2.2 Backlog、Bookings、B2B、交期与取消率
+
+Intel 没有按季度披露标准化 backlog、bookings、book-to-bill（B2B）、交期天数或取消率。以下表格只列可核实信号；“N/D”表示未披露，不能用 0 代替。
+
+| 季度 | Backlog / bookings / B2B | 供需与交期信号 | 取消率/客户行为 | 结论 |
+|---|---|---|---|---|
+| Q1 2025 | N/D | 客户端和服务器需求改善，但未给出缺口或交期 | N/D；宏观、关税与企业库存不确定 | 订单证据弱，不能外推高增长 |
+| Q2 2025 | N/D | 管理层开始强调后续季度内部供给约束 | N/D | 需求好于收入表面，但重组/减值掩盖经营趋势 |
+| Q3 2025 | N/D | 明确称需求超过供给，并将延续到 2026 | N/D；未披露推迟或取消金额 | 供给端成为收入上限 |
+| Q4 2025 | N/D | Q1 2026 将是可用供给低点，Q2 起改善 | N/D | 对 Q1 的低指引更像供给约束而非需求崩塌 |
+| **Q1 2026** | **无正式 backlog；新签长期协议对应 $1.7B 可执行客户预付款；先进封装 backlog 增长** | **CCG 需求 > 供给，预计至少持续 H1；服务器和关键元件约束贯穿 2026；Xeon 最紧** | **N/D；管理层称近期订单模式 robust，未披露取消率** | **证据支持强需求和客户锁量，但预付款不等于当期收入，封装 backlog 金额未披露** |
+
+五季交叉验证最强的一组数字是：Q4 预告 Q1 供给低点、Q1 实际收入却比此前指引中点 $12.2B 高 $1.377B；与此同时服务器 ASP +27%、volume -5%、DCAI 收入 +22%、利润率升至 30.5%。这组数据更符合“高端 Xeon 供不应求、价格/组合上升”，而不是普遍需求衰退。风险在于：如果供给恢复后 ASP 正常化而单位量没有转正，收入增速会回落。
+
+---
+
+## 三、2026 最新财报指引、业务占比与重点产品
+
+### 3.1 Q1 2026 实际业务结构与 Q2 2026 指引
+
+| 项目 | Q1 2026 实际 | 占合并收入 | YoY | Q2 2026 指引/方向 |
+|---|---:|---:|---:|---|
+| CCG | $7.727B | 56.9% | +1% | sequential growth；但 2026 PC TAM 预计低双位数下降 |
+| 其中 client computing | $6.6B | 48.6% | 约 +1% | AI PC mix/ASP 抵消单位量压力 |
+| DCAI | $5.052B | 37.2% | +22% | **环比双位数增长** |
+| 其中服务器 CPU | $4.117B | 30.3% | 约 +20.3% | Xeon 仍是最紧供给和增长主力 |
+| 其他 DCAI | $0.935B | 6.9% | 约 +32.6% | custom ASIC、IPU/网络为主；custom ASIC 环比 >30%、同比接近 2× |
+| Foundry 分部 | $5.421B | 不可直接使用 | +16% | 内部 18A/Intel 3 量继续增；外部封装收入主要在 2027 转化 |
+| Foundry 外部 | $0.174B | 1.3% | +461%（低基数） | 约 $139M 来自 Altera；非 Altera 外部收入仅约 $35M |
+| All Other | $0.628B | 4.6% | -33% | Mobileye Q1 收入 $558M、同比 +27%，但资产减值显著 |
+| **合并** | **$13.577B** | **100%** | **+7%** | **Q2 收入 $13.8–14.8B，中点 $14.3B：环比 +5.3%、同比约 +11.2%** |
+
+Q2 其他指引：GAAP 毛利率 37.5%、non-GAAP 39.0%，GAAP EPS $0.08、non-GAAP EPS $0.20、non-GAAP 税率 11%。收入环比增长而毛利率低于 Q1，说明 18A 初期爬坡、供应链成本、产品混合和 Foundry 利用率仍会吞噬部分增量利润；这是本报告根据成本结构作出的推断，不是公司单独量化的毛利桥。
+
+### 3.2 “60% AI-driven”与纯 AI 数据中心收入的拆分
+
+管理层称 Q1 约 60% 收入来自 AI-driven businesses，并同比增长约 40%，对应约 **$8.15B**。这一定义包括 AI PC，不能用于与 NVIDIA 数据中心收入直接比较。
+
+| 组成 | Q1 2026 披露基础 | 本报告估算的 AI DC 相关比例 | AI DC 相关收入估算 | 估算逻辑 |
+|---|---:|---:|---:|---|
+| Xeon 服务器 CPU | $4.117B | 25%–40% | $1.03–1.65B | AI 集群主机、云控制面、推理/存储服务器；无公司拆分 |
+| 其他 DCAI | $0.935B | 40%–65% | $0.37–0.61B | custom ASIC、IPU、网络、边缘产品中与 AI DC 直接相关部分 |
+| 商用加速器 | 包含于 DCAI | 很小 | <$0.10B | Gaudi 已缩减，Crescent Island 尚未量产 |
+| 外部 Foundry/封装 | 外部 $0.174B | 很小 | $0.00–0.05B | Altera 占绝大部分，AI 封装 backlog 主要 2027 才转收入 |
+| **合计** | — | — | **约 $1.4–2.3B** | **约占总收入 10%–17%，中值约 $1.8B/13.3%** |
+
+因此，当前 Intel 的 AI 投资逻辑应表述为“AI 基建 CPU/控制面和制造封装期权”，而不是“已有 $8B 单季 AI 数据中心收入”。
+
+### 3.3 重点产品、型号、经营交叉验证
+
+| 业务/产品 | 具体产品与公开状态 | 收入/增速证据 | 估算利润率与销售规模 | 交叉验证及判断 |
+|---|---|---|---|---|
+| **Xeon 6 / Xeon 6+** | Xeon 6700P/6776P；Xeon 6+ 为首个 18A 数据中心 CPU，最高 288 E-core、12 通道 DDR5、96 条 PCIe 5/CXL | Q1 服务器约 $4.117B、+20%；ASP +27%、volume -5% | 估算产品 GM 50%–62%；DCAI OP margin 已达 30.5% | NVIDIA DGX B300 使用 2×Xeon 6776P；Rubin NVL8 延续 Xeon host；Google C4/N4 多年部署；公司预计服务器单位量 2026 双位数增长 |
+| **定制 ASIC/IPU** | Google 多代定制 IPU；NVIDIA 定制 x86 数据中心 CPU；SambaNova/Foxconn/Together.ai 异构系统 | custom ASIC Q1 环比 >30%、同比近 2×；包含于其他 DCAI $0.935B、+33% | 估算 GM 35%–50%；当前单季贡献估 $0.35–0.55B | Google 是生产级多年客户；NVIDIA 多代合作未给量产日程；SambaNova 系统计划 H2 2026 |
+| **E835 Ethernet NIC** | E835-CC-QDA1：1×200G，建议价 $553–574；另有 2×100G；支持 RDMA | 不单列、包含其他 DCAI；估当前规模不重大 | 估 GM 35%–50%；年化估 <$0.2B | Cisco/Dell/HPE/Lenovo/Supermicro 支持、10+ 年生命周期；但不是 800G GPU scale-out fabric，更多用于 host/企业/电信控制面 |
+| **18A/18A-P/18A-PT** | RibbonFET + PowerVia；18A 内部 HVM，18A-P 已 risk production；18A-PT 面向 3D/HBM | Foundry 总收入 $5.421B，但外部仅 $174M | Foundry OP margin -45%；外部新项目初期 GM 可能 0%–25%，成熟后 25%–40% | Core Ultra Series 3、Xeon 6+ 验证制造；18A-P 相对 18A 约 +9% iso-power 或 -18% iso-performance power；外部量产客户仍不足 |
+| **EMIB/EMIB-T/Foveros Direct** | 2.5D/3D chiplet、HBM 大封装；2026 目标可达 >8× reticle、120×120mm、12 HBM | 公司称 packaging backlog 增长，已承诺需求主要 2027 转收入；未披露金额 | 估服务 GM 25%–40%；当前外部年化贡献可能仅 <$0.1–0.15B | 大封装、组合良率和客户 6–12+ 月认证决定兑现；Google/Amazon 洽谈属渠道信息，不是订单 |
+| **Core Ultra Series 3 / Panther Lake** | 首个 18A AI PC SoC；最高 16 CPU core、12 Xe-core、50 NPU TOPS；CES >200 designs，Computex >325 | AI PC 收入环比 +8%，占 client CPU mix >60%；client revenue $6.6B | 本报告估 AI PC 单季 $4.0–4.5B；产品 GM 45%–55%；CCG OP margin 32.6% | 2026 PC TAM 低双位数下降，增长主要来自 mix/ASP；更关键价值是证明 18A 良率、成本与大批量交付 |
+| **Crescent Island / Xe3P** | 350W 风冷 PCIe 卡；160GB 起、合作配置最高 480GB LPDDR5X；FP4/MXFP4 到 FP64；H2 2026 sampling | 尚无可核实商用收入/订单 | 初期 GM 可能 -10% 至 20%；未来一年收入为情景期权 | 定位低成本推理/大内存，不与顶级训练 GPU 正面竞争；吞吐、价格、软件生态、OEM 认证均未披露 |
+| **Mobileye EyeQ / 物理 AI** | EyeQ ADAS SoC；Mentee Robotics 扩展机器人软件 | Q1 Mobileye $558M、+27% | All Other OP margin 16.2%；并非 AI DC | 高增长但与 AI 基建主题弱相关；约 $3.45B 商誉减值降低估值可信度 |
+
+产品官方来源：[Core Ultra Series 3](https://newsroom.intel.com/artificial-intelligence/ces-2026-intel-core-ultra-series-3-debut-first-built-on-intel-18a)｜[Xeon 6 in DGX Rubin/B300](https://newsroom.intel.com/data-center/intel-xeon-6-used-as-host-cpus-in-nvidia-dgx-rubin-nvl8-systems)｜[Xeon 6+ and agentic AI](https://newsroom.intel.com/data-center/intel-puts-agentic-ai-xeon-6-networking-ai-systems)｜[Google collaboration](https://newsroom.intel.com/data-center/intel-google-deepen-collaboration-to-advance-ai-infrastructure)｜[SambaNova](https://newsroom.intel.com/artificial-intelligence/intel-and-sambanova-advance-agentic-ai-with-xeon-6)｜[E835 specifications](https://www.intel.com/content/www/us/en/products/sku/245160/intel-ethernet-network-adapter-e835ccqda1/specifications.html)｜[Crescent Island](https://newsroom.intel.com/artificial-intelligence/intel-to-expand-ai-accelerator-portfolio-with-new-gpu)｜[18A-P at VLSI](https://newsroom.intel.com/intel-foundry/intel-foundry-details-process-milestones-future-innovation-at-vlsi-symposium)
+
+### 3.4 应跳过、降权及不可漏掉的小业务
+
+**本次降低权重或跳过：**
+
+- 非 AI 的旧 Core 桌面/移动 CPU、低速客户端 SKU、普通芯片组和 Wi-Fi：收入仍重要，但 2026 PC TAM 下降，不能解释 AI 基建上行。
+- Gaudi 与 Falcon Shores：2024/2025 分别出现约 $922M/$375M Gaudi 库存相关费用，Falcon Shores 未商业化；不应继续作为主增长曲线。
+- Altera：已去并表，Intel 仅保留 49% 权益；不能把 Altera 销售计入 Intel 合并收入。
+- IMS mask writer、量子、神经拟态、Terafab 等：技术或战略价值存在，但未来一年缺少可核实收入、订单与量产节点。
+- Mobileye：保留为高增长卫星业务，但不纳入 AI 数据中心核心估值。
+- 低于 200G 的传统 Ethernet 和通用网络产品：竞争激烈、AI fabric 内容量有限。
+
+**不可漏掉的潜力小产品/项目：**
+
+- E835 200G NIC：单品规模小，但能随 host/control-plane 节点增长。
+- Google 定制 IPU 与 NVIDIA 定制 x86：可能形成多年、高切换成本的平台收入。
+- EMIB-T、Foveros Direct 和 18A-PT：真正对应 HBM/大封装与 3D chiplet 的外部制造机会。
+- Crescent Island：当前未验证，但低功耗、大内存推理卡可补 Intel 加速器空白。
+- Intel Optical Compute Interconnect/光 I/O：尚无可计收入，若进入共封装/scale-up 网络才具备估值意义。
+- Core Ultra Series 3 的边缘/机器人版本：Computex 披露约 130 个边缘与机器人客户，既是小业务也是 18A 量产验证。
+- Mentee Robotics：短期不贡献规模收入，但可能把 Intel 的边缘计算、视觉和机器人软件组合起来。
+
+---
+
+## 四、关键产品/业务的当前收入贡献、供需与竞争能力
+
+### 4.1 评分方法
+
+下表 1–5 分中，5 分分别代表：对 AI 基建不可或缺、时间窗口最紧迫、需求最供不应求、最接近垄断、最有能力向客户提价。评分是相对判断，不是财务披露。收入优先使用 Q1 实际；无法拆分者给出区间并说明其所属分部，避免重复计算。
+
+| 关键产品/业务 | 当前收入贡献 | 当前增速 | AI 栈重要性 | 时间紧急性 | 供需紧张 | 垄断能力 | 溢价能力 | 核心理由 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| **Xeon 服务器 CPU** | Q1 **$4.117B**；年化 $16.47B | **约 +20% YoY**；ASP +27%、量 -5% | **5.0** | **5.0** | **5.0** | 3.0 | 4.0 | 每个主流 GPU/ASIC 集群仍需 host/control plane；供给受限到 2026，且已确认选择性涨价 |
+| **定制 ASIC/IPU/网络（其他 DCAI）** | Q1 总池 $0.935B；其中 AI 相关估 $0.60–0.90B | 总池 +33%；custom ASIC 近 2× YoY | 4.5 | 4.5 | 4.0 | 3.0 | 3.5 | Google 多年 IPU 和 agentic AI 网络/编排拉动；但 Broadcom/Marvell/NVIDIA/云厂自研竞争强 |
+| **E835 200G NIC** | 未单列；估年化 **<$0.2B**，包含于上行 | 新产品，N/D | 3.0 | 3.0 | 2.5 | 1.5 | 2.0 | 适合 host/control plane，不是顶级 800G scale-out 网络；OEM 采用广但替代多 |
+| **Core Ultra Series 3 / AI PC** | Q1 估 **$4.0–4.5B**；中值年化约 $16.8B | +8% QoQ；client 总收入约 +1% YoY | 2.0（AI DC）/5.0（18A 验证） | 3.5 | 4.0 | 3.0 | 3.0 | >60% client CPU mix，供给受限；PC TAM 下滑意味着增长来自高 ASP/mix，而非终端量 |
+| **18A/18A-P 外部晶圆代工** | 外部 Foundry Q1 $174M；非 Altera 仅约 $35M，纯 18A 外部收入接近零 | 低基数高增，经济意义有限 | **5.0** | 4.5 | 3.0 | 2.0 | 2.0 | 技术已内部量产，外部客户资格和设计胜出尚未证明；TSMC/Samsung 替代强 |
+| **先进封装 EMIB/Foveros** | 未单列；估当前外部年化 **<$0.1–0.15B** | backlog 增长，收入主要 2027 | **5.0** | **5.0** | **4.5** | 2.5 | 3.5 | AI 大封装最紧缺环节之一；组合良率、尺寸、HBM 数和认证带来切换成本 |
+| **Crescent Island / Xe3P** | 当前约 0；H2 2026 才 sampling | N/M | 3.0 | 2.5 | 1.0（尚未商用，不是供不应求） | 1.0 | 1.0 | 大内存/低功耗推理定位有空间，但性能、软件和客户都未验证 |
+| **Mobileye EyeQ** | Q1 $0.558B；年化 $2.23B | **+27% YoY** | 1.0（AI DC）/4.0（物理 AI） | 3.0 | 2.5 | 3.5 | 3.0 | ADAS 视觉 SoC 份额和认证强，但与本次 AI 数据中心主题弱相关 |
+
+### 4.2 当前利润率、规模与价格传导
+
+| 业务 | 当前可观测利润率 | 产品 GM 模型 | 价格/成本传导判断 |
+|---|---:|---:|---|
+| Xeon/服务器平台 | DCAI OP margin **30.5%** | **50%–62%** | substrate、memory 和关键元件短缺抬高成本；高端 mix 与选择性涨价使 ASP +27%，价格传导目前大于单位量下降 |
+| custom ASIC/IPU/network | 含于 DCAI 30.5% | **35%–50%** | 定制 NRE、软件和多年平台锁定支持价格；但大客户议价强、量产初期成本高 |
+| AI PC | CCG OP margin **32.6%** | **45%–55%** | client ASP +16%、量 -13%；18A 初期良率/折旧压成本，供给紧张暂时支持定价 |
+| Intel Foundry | OP margin **-45.0%** | 新项目 **0%–25%**，成熟目标 25%–40% | 每片良品成本高度取决于良率/利用率；内部转移定价不能替代外部市场验证 |
+| 先进封装服务 | 未单列 | **25%–40%** | 大 package、更多 HBM、桥接数和更低组合良率提升 ASP；认证通过后切换成本高 |
+| Crescent Island | 未商业化 | 初期 **-10% 至 20%** | 若用 LPDDR5X 降 BOM 可形成价格差异；软件投入和低初始利用率可能使首年亏损 |
+| Mobileye | All Other OP margin 16.2% | 估 **45%–55%** | 汽车认证和软件价值支持 ASP，但 OEM 周期长、客户集中和减值提示增长假设风险 |
+
+这些利润率估算不是公司披露。Xeon 范围参考项目行业研究的高端 x86 CPU 价格/毛利框架；先进封装范围结合服务 BOM、组合良率和同业代工结构。[CPU 行业研究](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器CPU与控制平面芯片_2026-07-10.md)｜[先进封装行业研究](../../行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-07-10.md)
+
+---
+
+## 五、一年后关键业务：基准、乐观与极度乐观情景
+
+### 5.1 可加总业务的未来一年收入与利润率
+
+| 可加总业务 | 当前年化基础 | 基准：收入 / 增速 / GM | 乐观：收入 / 增速 / GM | 极度乐观：收入 / 增速 / GM | 主要触发条件 |
+|---|---:|---:|---:|---:|---|
+| **Xeon 服务器 CPU** | $16.5B | **$18.5B / +12% / 52%–60%** | **$20.6B / +25% / 55%–62%** | **$23.1B / +40% / 58%–65%** | 供给改善、服务器单位量转正、ASP 不显著回落；极度乐观还需 NVIDIA/Google 和 agentic CPU attach 超预期 |
+| **其他 DCAI：ASIC/IPU/network/accelerator** | $3.74B | **$4.7B / +26% / 38%–48%** | **$5.6B / +50% / 42%–52%** | **$6.7B / +79% / 45%–55%** | Google IPU、网络和定制 ASIC 延续高增；Crescent 只在乐观以上产生有意义收入 |
+| **AI PC（CCG 子集）** | 估 $16.8B | **$17.0B / +1% / 43%–50%** | **$19.3B / +15% / 47%–54%** | **$22.0B / +31% / 50%–57%** | PC TAM 下滑由 Series 3 mix、ASP、商用换机与边缘设计胜出抵消 |
+| **外部 Foundry + 封装** | $0.70B | **$1.1B / +58% / 5%–20%** | **$2.0B / +187% / 20%–30%** | **$3.4B / +388% / 30%–40%** | Altera 外再获得量产客户；2027 封装 committed demand 按期转收入；极度乐观需一个以上 hyperscaler anchor |
+| **Mobileye/All Other 核心** | $2.23B | **$2.4B / +8% / 45%–53%** | **$2.7B / +21% / 48%–55%** | **$3.1B / +39% / 50%–58%** | EyeQ 需求持续、汽车去库存结束；不影响 AI DC 核心判断 |
+
+说明：AI PC 是 CCG 子集；上表不能把 AI PC 再加到完整 CCG。其他 DCAI 包含 E835、custom ASIC/IPU、网络和 Crescent；外部 Foundry + 封装已经包含以下产品期权，不得重复相加。
+
+### 5.2 子产品期权：只用于观察，不得重复加总
+
+| 子产品期权 | 当前收入 | 基准未来一年 | 乐观未来一年 | 极度乐观未来一年 | 所属总池 |
+|---|---:|---:|---:|---:|---|
+| Advanced packaging 外部服务 | 估年化 <$0.10–0.15B | $0.25B | $0.75B | $1.50B | 外部 Foundry + 封装 |
+| 18A/18A-P 外部 wafer | 接近零 | $0.25B | $0.75B | $1.50B | 外部 Foundry + 封装 |
+| Crescent Island | 0 | $0.15B | $0.45B | $1.00B | 其他 DCAI |
+| E835/后续 host NIC | 估年化 <$0.2B | $0.15B | $0.30B | $0.55B | 其他 DCAI |
+| NVIDIA 定制 x86/IP 预量产 | 0 或接近零 | $0.00B | $0.10B | $0.30B | Xeon/其他 DCAI |
+| Optical I/O/OCI | 接近零 | <$0.02B | $0.05B | $0.10B | 其他 DCAI/Foundry |
+
+### 5.3 一年后战略评分
+
+每格依次为“基准/乐观/极度乐观”。供需紧张分数越高，表示即使扩产后需求仍更可能超过可用供给；它不是库存短缺的概率。
+
+| 产品/业务 | AI 重要性 | 时间紧迫性 | 供需紧张 | 供应链采用 | 垄断能力 | 溢价能力 | 一年后判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Xeon | 5.0/5.0/5.0 | 5.0/5.0/5.0 | 4.0/4.5/5.0 | 4.5/4.8/5.0 | 3.0/3.5/4.0 | 3.5/4.0/4.5 | 基准下供给改善使紧张略缓；上行情景中 CPU attach 与服务器单位量压过扩产 |
+| custom ASIC/IPU/network | 4.5/4.7/5.0 | 4.5/4.7/5.0 | 3.5/4.0/4.5 | 3.5/4.0/4.5 | 2.5/3.0/3.5 | 3.0/3.5/4.0 | Google 等平台量产越多，软件和接口锁定越强 |
+| AI PC / Series 3 | 2.0/2.0/2.0；18A 验证 5.0 | 3.0/3.5/4.0 | 3.0/4.0/4.5 | 4.0/4.5/5.0 | 3.0/3.2/3.5 | 2.5/3.0/3.5 | 终端 TAM 是上限，最大价值是 18A 学习曲线 |
+| 18A 外部 Foundry | 5.0/5.0/5.0 | 4.0/4.5/5.0 | 2.5/3.5/4.5 | 2.0/3.0/4.0 | 2.0/2.5/3.0 | 2.0/3.0/4.0 | 采用分数比技术分数低；只有外部量产和良率证明后才有定价权 |
+| EMIB/Foveros | 5.0/5.0/5.0 | 5.0/5.0/5.0 | 4.0/4.5/5.0 | 2.5/3.5/4.5 | 2.5/3.0/3.5 | 3.0/4.0/4.5 | AI 大封装供需最有利，但 TSMC/ASE/Samsung 替代存在 |
+| Crescent Island | 3.0/3.5/4.0 | 2.5/3.0/4.0 | 1.5/2.5/4.0 | 1.5/2.5/3.5 | 1.0/1.5/2.0 | 1.0/2.0/3.0 | sampling 成功、软件栈和真实客户是从“产品”变“业务”的门槛 |
+| E835/host NIC | 3.0/3.2/3.5 | 3.0/3.5/4.0 | 2.5/3.0/3.5 | 3.5/4.0/4.5 | 1.5/2.0/2.5 | 2.0/2.5/3.0 | OEM 支持强，但速率和竞争限制垄断能力 |
+| Mobileye | 1.0/1.0/1.0（AI DC） | 3.0/3.5/4.0 | 2.5/3.0/3.5 | 4.0/4.2/4.5 | 3.5/3.8/4.0 | 3.0/3.5/4.0 | 汽车认证提高切换成本，仍受车型周期和客户集中影响 |
+
+### 5.4 情景的关键可证伪点
+
+- **基准情景失败条件：**服务器 volume 继续下降且 ASP 正常化；PC TAM 下滑无法被 Series 3 mix 抵消；Foundry 外部收入仍停留在 Altera；Q2 后供给改善却没有转为收入。
+- **乐观情景成立条件：**2026 下半年 Xeon 单位量恢复双位数增长；封装 backlog 在 2027 上半年形成至少约 $0.75B 年收入；18A 出现至少 1–2 个非 Intel、非 Altera 的明确量产项目；DCAI 保持约 30% OP margin。
+- **极度乐观情景成立条件：**Xeon 价格和单位量同时上行；NVIDIA/Google 的多代合作提前进入收入；外部 Foundry + 封装达到 $3.4B；AI PC 在下滑市场中仍增长 30% 以上。当前公开合同金额不足以覆盖该情景，因此概率明显低于前两者。
+
+---
+
+## 六、BOM、每 MW/rack/GPU/port 内容量、当前产能与认证
+
+### 6.1 可核实的系统内容量
+
+“真实内容量”只在公开系统 BOM 足够明确时给出；没有公开数量的产品不制造伪精确数字。设施侧 MW 均指 **IT load，不含 PUE、备用冗余和机房空置**。
+
+#### A. Xeon 在 NVIDIA DGX B300 中的明确内容量
+
+NVIDIA DGX B300 官方系统为 8×B300 GPU、2×Intel Xeon 6776P、10RU、约 14.5kW，并提供 8×800G 与 2×400G 高速接口。Xeon 6776P 官方 RCP 为 $11,060、64 core、350W、Intel 3 制程。[DGX B300 system](https://docs.nvidia.com/dgx/dgxb300-user-guide/introduction-to-dgxb300.html)｜[Xeon 6776P specifications](https://www.intel.com/content/www/us/en/products/sku/243691/intel-xeon-6776p-processor-336m-cache-2-30-ghz/specifications.html)
+
+| 单位 | GPU 数 | Xeon 数 | CPU/GPU | Xeon 官方价内容量 | 功率/空间 | 说明 |
+|---|---:|---:|---:|---:|---:|---|
+| 每 GPU | 1 | **0.25** | 0.25 | **$2,765/GPU** | — | 按 2 CPU/8 GPU 精确分摊 |
+| 每 DGX B300 node | 8 | **2** | 0.25 | **$22,120** | 14.5kW / 10RU | 不含 NIC、内存和主板上的其他 Intel 内容 |
+| 40RU 纯计算装载 | 32 | **8** | 0.25 | **$88,480/rack** | 58kW / 40RU | 4 台理论装载；实际机柜还需交换机、PDU、留空和散热 |
+| 每 1MW IT load | 约 **552** | 约 **138** | 0.25 | **约 $1.53M/MW** | 约 69 nodes | 与项目行业研究的约 450–650 accelerator/MW 区间一致 |
+| 每高速端口分摊 | — | — | — | **约 $2,212/port** | 10 个接口/node | 仅为 2 CPU 价值除以 10，不代表端口因果 attach |
+
+注意：GB300 NVL72 的 Grace CPU/GPU 物理比约 36/72=0.5，但 CPU 是 NVIDIA Grace，不是 Intel；不能把该内容量算给 Intel。Rubin NVL8 已确认继续采用 Xeon host，但未公开足以计算的具体 Xeon 数量和 SKU，因此不在本表虚构。
+
+#### B. Xeon 6+ CPU-dense agentic AI rack
+
+Intel 在 Computex 2026 展示的液冷 Xeon 6+ 方案为约 36,864 cores、32U、约 100kW。若全部使用最高 288 E-core SKU，则推算为 128 颗 CPU；这是由公开 core 数反推，不是公司披露的 BOM。按项目行业研究中的高端 x86 CPU $10,000–15,000 价格区间：
+
+| 指标 | 推算值 |
+|---|---:|
+| CPU/rack | **约 128** |
+| CPU 价值/rack | **约 $1.28–1.92M** |
+| CPU/MW | **约 1,280** |
+| CPU 价值/MW | **约 $12.8–19.2M** |
+| GPU/optical port 内容量 | 不适用；这是 CPU-dense rack，不是 GPU rack |
+
+这类架构对应数据库、RAG、工具调用、KV cache 管理和 agent action 阶段，CPU 内容量显著高于传统 GPU host，但应用是否成为大规模主流仍需真实订单验证。[Computex 2026 项目会议更新](../../行业调研/产业背景/顶级会议信息/conference_update_computex_2026_2026-06-10.md)
+
+#### C. E835、IPU 与网络内容量
+
+| 产品 | 每 port | 每 server | 每 GPU（模型） | 每 rack/MW（模型） | 可信度 |
+|---|---:|---:|---:|---:|---|
+| E835 1×200G | **$553–574/200G port** | 1–2 卡即 $553–1,148 | 若用于 8-GPU server，$69–144/GPU | 4 nodes/58kW 纯计算 rack：$2.2–4.6K/rack；约 $38–79K/MW | Port 价格 A；attach 是 D |
+| E835 2×100G | **$277–287/100G port** | 1 卡 $553–574 | 同上 | 同上 | Port 价格 A；attach 是 D |
+| Google/通用 IPU | 未披露 | 行业模型 1–2 张/8-GPU host、$1.5–3K/卡 | **$188–750/GPU** | $6–24K/纯计算 rack；约 $0.10–0.41M/MW | 全部为 D，不能当正式 Google BOM |
+
+E835 的真实 RCP 和 port 数来自官方规格；attach 假设不是 DGX B300 实际 BOM。Google IPU 没有公开单机数量、ASP 或物料清单，本表只给敏感性范围，不用于收入主模型。
+
+#### D. Intel 先进封装的每 GPU/rack/MW 内容量
+
+项目内先进封装研究给出的可比服务价格——**不含 logic die 与 HBM 本体**——为：
+
+- 成熟 custom ASIC 2.5D：$1,500–4,000/package；
+- 大型双 compute die + 8 HBM：$4,000–10,000/package；
+- 3.5D/12 HBM：$8,000–20,000/package。
+
+以 72 accelerator、142kW 的高密 AI rack 为统一换算基础：
+
+| 封装类型 | 每 GPU/package 服务内容 | 每 72-GPU rack | 每 MW IT load | 每 optical endpoint 分摊* |
+|---|---:|---:|---:|---:|
+| 成熟 2.5D custom ASIC | $1.5–4K | $0.108–0.288M | $0.76–2.03M | $0.5–2.7K |
+| 大型 8-HBM package | **$4–10K** | **$0.288–0.720M** | **$2.03–5.07M** | $1.3–6.7K |
+| 3.5D / 12-HBM | **$8–20K** | **$0.576–1.440M** | **$4.06–10.14M** | $2.7–13.3K |
+
+\* 项目行业研究使用 1.5–3.0 optical endpoint-equivalent/accelerator；这里是封装价值除以 endpoint 数的经济分摊，不代表每个光端口物理含有 Intel 封装。[AI 数据中心建设规模与订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+
+### 6.2 AI package 与封装服务 BOM
+
+#### 完整 AI package 价值 BOM（logic/HBM/封装合计）
+
+| BOM 项 | 价值占比区间 | Intel 可捕获部分 | 关键价格驱动 |
+|---|---:|---|---|
+| Logic compute dies | 28%–40% | 若 Intel 代工或自有 accelerator 才捕获 | 节点、die size、良率、wafer ASP |
+| HBM | 35%–50% | Intel 通常不生产，只对封装良率负责 | HBM 代际、stack 数、供应紧张 |
+| Interposer/RDL/LSI + ABF | 8%–14% | **EMIB/EMIB-T 核心可捕获** | package size、bridge 数、层数 |
+| Bonding/underfill/assembly | 4%–8% | **Foundry packaging 可捕获** | bump pitch、thermal cycle、组合良率 |
+| Inspection/test | 4%–8% | 部分捕获 | known-good-die、测试时间、返工率 |
+| Thermal materials | 2%–5% | 部分或外购 | 350W–1kW+ 热设计、液冷兼容 |
+
+#### 仅先进封装服务的成本 BOM（100%）
+
+| 服务成本项 | 占服务成本 | 传导机制 |
+|---|---:|---|
+| RDL/LSI/interposer | 24% | 尺寸、层数、桥接数增加直接抬价 |
+| ABF substrate | 18% | 高层数、大尺寸 substrate 供给影响交期 |
+| Bonding/assembly | 18% | micro-bump/hybrid bonding 精度决定 throughput |
+| Underfill/材料 | 10% | 热循环与翘曲要求提高材料规格 |
+| Inspection/test | 14% | die 越贵，known-good-die 和测试价值越高 |
+| Yield loss | 9% | 多颗良品组合后，任何单点缺陷放大整包损失 |
+| 折旧与其他 | 7% | 利用率低时单位成本快速上升 |
+
+Intel 的溢价能力来自**可制造的大 package、EMIB bridge 数、Foveros 3D 密度和组合良率**，而不是简单“每片封装加工费”。[项目先进封装研究](../../行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-07-10.md)
+
+### 6.3 18A wafer 产能与价格链
+
+渠道报告称 D1X 与 Fab 52 合计约 **30K wafer starts/month（WSPM）**，各约 12K–15K；Intel 未确认该数字，且 wafer start 不能证明经济良率。[Tom's Hardware channel report](https://www.tomshardware.com/tech-industry/semiconductors/intel-18a-wafer-to-wafer-yield-issues-fixed-report-claims-says-production-up-to-15-000-wafers-per-month-at-both-sites)
+
+本报告以领先节点等效 wafer ASP **$18K–25K** 作容量货币化敏感性：
+
+> 30K WSPM × 12 × $18K–25K = **$6.48–9.00B/年 gross wafer-equivalent value**
+
+该数值是**物理 starts 的理论货值，不是 Foundry 外部收入、也不是毛利**。考虑良率、利用率、内部转移和产品 mix，当前可实现等效产值估 $5–7B，且主要被 Intel 自有 Core/Xeon 消耗。单颗 die 成本还需要 die size、gross dies/wafer、缺陷密度和良率；这些数据未公开，因此不能诚实地给出“每 GPU 的 18A 内容”。Intel 当前也不制造 NVIDIA B300 GPU。
+
+价格传导链如下：
+
+1. 设备/wafer/substrate/HBM/关键材料成本上升；
+2. 良率和利用率决定每颗 good die 与每个 good package 的成本；
+3. 内部产品通过高端 mix、选择性涨价和供给分配传给 Xeon/Core 客户；
+4. 外部客户通过 wafer ASP、mask/NRE、capacity reservation、封装尺寸/HBM 数和测试收费承担；
+5. 客户预付款/长期协议降低扩产融资风险，但只有验收和出货后才形成收入；
+6. 终端客户若不能接受价格，会转向 AMD/Arm、TSMC/Samsung 或延迟部署，因此 Intel 的传导能力不是无限。
+
+### 6.4 当前年化产能能力、供应链采用与认证
+
+| 产品/业务 | 当前美元产能能力（估） | 当前采用程度 | 当前认证/量产阶段 | 主要瓶颈 |
+|---|---:|---|---|---|
+| Xeon 服务器 CPU | **$18–20B/年收入能力** | x86 server unit share 约 66.8%；NVIDIA DGX、Google C4/N4、多 OEM | Xeon 6 广泛量产；6776P 已在 DGX B300；Rubin NVL8 已 design-in | Intel 3 wafer、substrate、memory/关键元件与高端 SKU mix |
+| 其他 DCAI | **$4.0–4.5B/年** | Google IPU 生产级；OEM/network 客户；custom ASIC 高增 | 多代 IPU 已部署；NVIDIA 定制 x86 未给量产期；SambaNova H2 2026 | 客户项目节奏、定制验证、软件 |
+| E835 | 估 **$0.2–0.4B/年** | Cisco/Dell/HPE/Lenovo/Supermicro 支持 | Q1 2026 launched，正式产品；10+ 年 life-cycle | 200G 速率非前沿、竞争同质化 |
+| AI PC / Series 3 | **$18–20B/年收入能力** | >60% client CPU mix；>325 PC designs；约 130 edge/robotics customers | 18A HVM、产品已发布/出货 | 18A 良率、封装、PC 需求下滑 |
+| 18A 总物理 starts | gross value **$6.5–9.0B/年**；可实现估 $5–7B | 主要内部 Core/Xeon | 18A 内部 HVM；18A-P risk production | 经济良率、PDK/IP、外部客户 tapeout |
+| 外部 Foundry | 当前 run-rate **$0.70B**；商业可兑现能力低于物理产能 | 外部收入 80% 左右来自 Altera | 非 Altera 外部量产验证仍很弱；14A 客户评估中 | 客户信任、资格认证、利益冲突、良率 |
+| Advanced packaging | 未披露；当前外部收入估 <$0.15B/年 | 已有 committed demand/backlog，主要 2027 转收入 | EMIB/Foveros 量产；EMIB-T 客户准备/认证 | Penang 扩产、大 package 组合良率、6–12+ 月认证 |
+| Crescent Island | 0 商业产能；工程能力阶段 | 无可核实生产客户 | H2 2026 engineering samples | 性能/软件/OEM/量产资格全部待证 |
+| Mobileye | 当前销售 run-rate **$2.23B**，产能能力估 $2.4–2.6B | 多家车厂量产 | EyeQ 车规量产；单车型认证周期长 | 汽车周期、客户集中、设计延迟 |
+
+外部市场份额参考：Q1 2026 AMD 约占 x86 服务器单位 33.2%、收入 46.2%，对应 Intel 约 66.8%/53.8%；Arm 服务器出货份额另有约 13.2% 的行业估算。两者统计口径不同，不能相加为同一分母。[x86 share report](https://www.tomshardware.com/pc-components/cpus/amd-reaches-46-percent-of-server-x86-cpu-revenue-intel-still-controls-70-percent-of-the-consumer-pc-market-share)｜[Arm/server shipment discussion](https://www.theregister.com/systems/2026/06/04/amd-takes-a-third-of-server-cpu-market-as-shipments-grow/5251283)
+
+---
+
+## 七、一年后产能能力、供应链采用与认证情景
+
+### 7.1 2027 年中产能与商业采用
+
+| 产品/业务 | 基准：美元产能 / 采用 / 认证 | 乐观：美元产能 / 采用 / 认证 | 极度乐观：美元产能 / 采用 / 认证 |
+|---|---|---|---|
+| **Xeon** | **$20.5B/年**；x86 unit share 约 62%–65%；Xeon 6/6+ OEM 全面量产，Rubin host 按期 | **$23B**；份额约 64%–67%；Google/NVIDIA/agentic 机架增量明显 | **$26B**；份额稳定或回升至 66%–69%；CPU attach 和 volume 同时超预期 |
+| **其他 DCAI** | **$5.0B**；Google IPU/网络延续，SambaNova 小规模量产 | **$6.0B**；新增 1–2 个 custom ASIC/IPU 量产平台 | **$7.2B**；NVIDIA 定制 x86、Crescent 和多个 cloud program 同时贡献 |
+| **E835/host NIC** | **$0.3B**；现有 OEM 扩大 | **$0.5B**；更多 agentic/enterprise host attach | **$0.8B**；后续更高速产品补齐性能差距 |
+| **AI PC / Series 3** | **$20B**；AI CPU mix 约 65% | **$23B**；mix 约 70%、edge wins 转收入 | **$26B**；mix 约 75% 且商用换机超预期 |
+| **18A gross wafer-equivalent** | 约 **35K WSPM / $7.6–10.5B**；以内部产品为主 | **45K / $9.7–13.5B**；外部项目开始占用 | **60K / $13.0–18.0B**；多个 Fab 模块顺利爬坡 | 
+| **外部 Foundry 可确认 run-rate** | **$1.6B**；1–2 个非 Altera 18A/封装量产项目 | **$3.0B**；2–4 个项目、至少 1 个 hyperscaler | **$5.0B**；4–6 个项目，wafer + packaging 均量产 |
+| **Advanced packaging** | **$0.5B/年服务能力**；1 个 anchor、EMIB-T 完成初期资格 | **$1.2B**；2–3 个量产客户、Penang 提升利用率 | **$2.5B**；Google/Amazon 类客户至少一个大规模量产 |
+| **Crescent Island** | **$0.3B**；sampling 后 1 个试点/有限量产认证 | **$0.8B**；1–2 OEM/cloud 客户通过 production qualification | **$1.5B**；3–5 个客户、软件性能验证成功 |
+| **Mobileye** | **$2.6B**；既有 EyeQ programs 增长 | **$3.0B**；新车型量产提前 | **$3.5B**；物理 AI/机器人协同开始贡献 |
+
+18A WSPM 与 wafer ASP 为低置信度容量模型，不能与外部 Foundry revenue run-rate 相加。外部客户数量是情景假设，不是 design-win 披露。
+
+### 7.2 关键认证时间线
+
+| 技术/产品 | 现在 | 2026 H2–2027 H1 基准路径 | 一年后仍可能缺失的证明 |
+|---|---|---|---|
+| 18A | Core Ultra Series 3、Xeon 6+ 内部 HVM | 扩大良率/成本数据；外部 test chip/tapeout 进入 qualification | 非 Altera 外部客户的量产名称、wafer volume、经济毛利 |
+| 18A-P | 2026-06 risk production；设计规则兼容 18A | 客户 silicon、risk-to-HVM 转换 | 大规模外部量产和 PPA 独立验证 |
+| 18A-PT | 面向 3D/HBM 的平台规划 | PDK、test vehicle、封装协同验证 | 真实 AI ASIC/HBM 客户 |
+| 14A | 客户 evaluation；管理层称早期 design commitments 预期 H2 2026–H1 2027 | PDK/IP/early commitments | HVM 尚远，不能在一年模型中计大量 revenue |
+| EMIB-T/Foveros Direct | 内部量产经验、外部 backlog | 大 package qualification、Penang capacity ready，2027 revenue conversion | 客户名、金额、良率、取消/推迟条款 |
+| Xeon 6+ | 发布并进入 OEM testing/availability | 大规模服务器和 CPU-dense agentic rack 量产 | 单位量、实际 ASP、AMD/Arm 竞争后的份额 |
+| NVIDIA 定制 x86 | 多代合作已签，时间未披露 | 架构/样片/平台 qualification | 量产窗口、每系统内容量与收入 |
+| Crescent Island | 产品宣布 | H2 2026 engineering sample；软件/OEM qualification | 量产 SKU、benchmark、ASP、客户和生产订单 |
+| E835 | 正式 launched，多 OEM 支持 | 企业/电信/host 平台量产扩张 | 是否进入 hyperscaler AI rack、是否有 400/800G 路线 |
+
+18A-P 的 PPA 与热/互连改进来自 Intel VLSI Symposium 2026 披露；项目会议整理指出其 iso-power 性能约 +9%、iso-performance power 约 -18%，热阻约改善 20%–40%、via resistance 约改善 10%–30%。这些是技术指标，不等同于 yield 或客户收入。[VLSI Symposium 项目更新](../../行业调研/产业背景/顶级会议信息/conference_update_ieee_vlsi_symposium_2026_2026-06-20.md)
+
+---
+
+## 八、以真实订单、供给和扩产约束推断未来一年增速
+
+### 8.1 可核实项目、交付窗口和取消信息
+
+| 客户/项目 | 产品 | 金额/数量 | 交付窗口 | 取消率/约束 | 证据等级与可用性 |
+|---|---|---:|---|---|---|
+| 未具名长期客户协议 | 多项产品/制造服务 | **$1.7B 可执行客户预付款** | 现金预计 Q2 2026 收到；收入确认期未披露 | 合同可执行，但退款、里程碑、取消条款 N/D | **A：10-Q。**最接近 backlog 的硬证据，但不是 $1.7B 当期收入 |
+| Google C4/N4 + custom IPU | Xeon 与多代定制 IPU | 金额 N/D | Xeon 已部署；IPU 为多年合作 | 取消率 N/D；定制 silicon 切换成本高 | **A：双方官方。**量产/多年关系强，缺金额 |
+| NVIDIA DGX B300 / Rubin NVL8 | Xeon host CPU | B300 每 node 2×6776P；Rubin 数量 N/D | B300 当前；Rubin 后续平台 | design-in 后短期替换概率较低；采购量可变 | **A：官方系统与 Intel。**可核 BOM、不可核订单金额 |
+| NVIDIA 多代定制 x86 | 定制数据中心 CPU、client x86+RTX | 金额 N/D | 时间 N/D | 多代框架降低战略取消概率，但产品里程碑未知 | **A：官方合作。**不计入基准期内大额收入 |
+| SambaNova/Foxconn/Together.ai | Xeon + GPU prefill + RDU decode 异构系统 | 金额 N/D | **H2 2026 availability** | pilot 转 production 比率 N/D | **A/B：官方产品合作。**计入小规模采用，不当作大订单 |
+| Advanced packaging committed demand | EMIB/Foveros/EMIB-T | backlog 金额 N/D | **主要在 2027 转收入** | 取消率 N/D；6–12+ 月资格认证可导致延期 | **A：管理层 prepared remarks。**方向强、量化弱 |
+| Google/Amazon 封装洽谈 | Advanced packaging | 媒体称机会可达每年数十亿美元，未签约 | 可能 2027 后 | 不适用；洽谈不是订单 | **C：渠道。**只进入乐观敏感性，不进入基准硬覆盖 |
+| Google >3M TPU packages | Intel packaging | 渠道称 2028 年 >3M | **2028，超出预测期** | 未确认；仍可能由 TSMC 制造 logic die | **C：渠道。**不计未来一年收入 |
+| 爱尔兰 Intel 3 扩产 | Xeon 6/后续产品 | **€5B capex** | 2026 已启动，逐步释放 | 不是客户订单；扩产可因需求变化调整 | **A：官方。**证明供给建设，不证明销售 |
+| 18A 约 30K WSPM | Core/Xeon/潜在 Foundry | 渠道产能数字 | 2026 当前 | yield 和 good-die output 不明 | **C：供应链报告。**只做物理容量敏感性 |
+
+渠道来源：[Google/Amazon packaging talks](https://www.tomshardware.com/tech-industry/semiconductors/intel-reportedly-in-talks-with-google-and-amazon-over-advanced-packaging)｜[Google TPU packaging rumor](https://www.tomshardware.com/tech-industry/google-reportedly-books-intel-for-more-than-3-million-tpus-in-2028)｜[Intel confirmed selective CPU price increases](https://www.tomshardware.com/pc-components/cpus/intel-confirms-price-hikes-on-select-consumer-and-server-cpus-citing-supply-costs-and-demand-select-xeon-processors-now-over-usd1-000-more-expensive)
+
+业内论坛方面，r/IntelStock 与 r/hardware 在 2026 年围绕“18A 约 30K WSPM、yield variability 已修复、hyperscaler packaging”形成明显看多叙事，同时也有大量评论指出 wafer starts 不等于 good-die yield、媒体重复引用单一渠道。论坛没有合同、客户采购单或独立良率数据，本报告将其定为 **D 级情绪样本，不用于数值模型**。[r/IntelStock](https://www.reddit.com/r/IntelStock/)｜[r/hardware](https://www.reddit.com/r/hardware/)
+
+### 8.2 供给、订单与收入增速的产品级推断
+
+| 业务 | 当前真实信号 | 当前/未来产能 | 基准增速 | 乐观增速 | 极度乐观增速 | 置信度 |
+|---|---|---|---:|---:|---:|---|
+| Xeon | Q1 revenue +20%；ASP +27%、量 -5%；需求 > 供给；DGX/Google design-in | $18–20B → $20.5/$23/$26B | **+12%** | **+25%** | **+40%** | 中高；运行率和 named platforms 强，但 bookings/取消率缺失 |
+| custom ASIC/IPU/network | other DCAI +33%；custom ASIC 近 2×；Google 多年项目 | $4–4.5B → $5/$6/$7.2B | **+26%** | **+50%** | **+79%** | 中；客户项目强、拆分和订单金额弱 |
+| AI PC | mix >60%、收入 QoQ +8%；PC TAM 低双位数下降 | $18–20B → $20/$23/$26B | **+1%** | **+15%** | **+31%** | 中；供给/设计数强，终端 TAM 负面 |
+| 外部 Foundry/packaging | 外部仅 $174M；backlog 增长、主要 2027 revenue | $0.7B run-rate → $1.6/$3/$5B | **+58%** | **+187%** | **+388%** | 低至中；低基数、客户未命名、qualification 易延期 |
+| Crescent | H2 sampling；无订单金额 | 0 → $0.3/$0.8/$1.5B | N/M，收入 $0.15B | N/M，$0.45B | N/M，$1.0B | 低；产品与软件尚未验证 |
+| Mobileye | EyeQ demand 使收入 +27% | $2.4–2.6B → $2.6/$3/$3.5B | **+8%** | **+21%** | **+39%** | 中；汽车项目可见度较高，但减值/周期风险 |
+
+**取消率处理：**没有足够证据给出 Intel 整体取消率或按产品取消率。本报告没有虚构 2%、5% 等数字；对 Foundry/封装渠道机会，基准情景只确认少量 2027 转化，实质上已对未签约机会施加大幅折扣。对 Xeon 则使用实际运行率、Q2 指引和供给约束，而不是把所有“需求”当 bookings。
+
+### 8.3 合并收入桥：未来一年公司增速
+
+合并收入近似为 CCG + DCAI + Foundry 外部收入 + All Other；Foundry 内部收入由 eliminations 抵销。
+
+| 合并业务 | 当前 TTM 参考 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|---:|
+| CCG | 约 $32.33B | $32.0B | $34.0B | $36.5B |
+| DCAI | 约 $17.85B | **$23.2B** | **$26.2B** | **$29.8B** |
+| Foundry 外部 | 当前 run-rate $0.70B | $1.1B | $2.0B | $3.4B |
+| All Other | 约 $3.25B | $2.5B | $2.8B | $3.2B |
+| **未来一年合并收入** | **TTM $53.763B** | **$58.8B** | **$65.0B** | **$72.9B** |
+| **同比增长** | 当前约 +1.4% | **+9.4%** | **+20.9%** | **+35.6%** |
+| 对当前市值约 $477.7B 的 P/S | 8.88× TTM | **8.12×** | **7.35×** | **6.55×** |
+| 公开订单/运行率支撑强度 | — | **中高** | **中** | **低** |
+
+为什么基准 DCAI 比 TTM 增长约 30%：TTM 仍包含较弱的 2025 Q2/Q3，而 Q1 2026 已达 $5.052B，Q2 又指引 DCAI 环比双位数增长；$23.2B 相当于约 $5.8B 平均季度。为什么不能把它直接外推成极度乐观：Q1 服务器 volume 仍 -5%，当前增长的很大部分来自 ASP 和 mix，供给释放后价格未必继续以同样速度上升。
+
+### 8.4 对订单挤压的最终判断
+
+- **最紧的是 Xeon 高端 SKU、substrate/memory/关键元件以及大型先进封装，不是全公司所有产品。**
+- **Q1 的 $1.7B 客户预付款是强合同信号，但缺少产品归属、交付期和退款条款，不能作为全额 backlog。**
+- **服务器供需紧张可由 ASP +27%、volume -5%、收入 +20% 和选择性涨价相互验证；这是当前最可靠的价格传导链。**
+- **先进封装有 backlog 和扩产，但只有“2027 转收入”的方向，没有客户名/金额；Google/Amazon/3M TPU 均不应进入基准订单表。**
+- **客户端同样供给紧，但 PC TAM 下滑；短缺可能提高 ASP，并不保证单位销量增长。**
+- **Crescent Island 没有商业 backlog，任何未来一年收入都是新产品成功情景。**
+
+---
+
+## 九、竞争格局、技术主流性、替代方案与客户切换成本
+
+### 9.1 分产品竞争矩阵
+
+| Intel 业务 | 主要竞争者/替代 | Intel 优势 | Intel 劣势/风险 | 是否属于未来主流 | 客户切换成本 |
+|---|---|---|---|---|---|
+| **Xeon 6/6+** | AMD EPYC Turin/Venice；NVIDIA Grace/Vera；AWS Graviton、Google Axion、Microsoft Cobalt 等 Arm CPU | x86 软件兼容、企业/OEM 认证、I/O/内存平台、DGX/Google design-in、供应链规模 | AMD 收入份额高；Arm 由 hyperscaler 自用降低外采；Intel 高端单位量仍降 | **是，但份额下降。**AI host/control plane 长期存在，agentic workload 可提高 CPU attach | 中高：同为 x86 转 AMD 较容易但仍需平台/BIOS/性能认证；转 Arm 需软件和运维迁移 |
+| **custom ASIC/IPU** | Broadcom、Marvell、NVIDIA BlueField、AMD Pensando、CSP 自研 | Intel 同时拥有 x86、制造/封装和平台 IP；Google 多年经验 | 大客户议价强；merchant ASIC 生态与 IP 库不如 Broadcom/Marvell | **是。**网络/存储/安全/编排卸载将随 AI 集群增长 | 高：通常 12–24+ 月 co-design、firmware、driver、网络状态与数据面验证 |
+| **E835 NIC** | NVIDIA/Mellanox ConnectX、Broadcom、Marvell、Pensando | Intel host 生态、OEM 覆盖、长期供货 | 200G 不是 800G scale-out 前沿；可替代性高 | **作为 host NIC 是主流，作为 AI fabric 不是领先路线** | 中：3–9 月平台/driver/网络认证，标准 Ethernet 降低锁定 |
+| **18A/18A-P/14A** | TSMC N2/A16、Samsung SF2、未来 Rapidus | GAA + backside power、美国/欧洲本土制造、内部产品先行验证、封装共优化 | 良率/成本未独立验证；PDK/IP/客户服务生态落后；与自有产品潜在利益冲突 | **技术方向主流。**GAA、背供电和 3D 集成是领先逻辑方向；Intel 商业份额未证明 | 很高：mask set 约 $20–50M，完整项目 $100–500M+，18–36 月移植/验证 |
+| **EMIB/Foveros** | TSMC CoWoS/SoIC、Samsung I-Cube/X-Cube、ASE/SPIL、Amkor | EMIB 局部 bridge 可避免大面积 silicon interposer；多年内部量产；大尺寸路线 | TSMC 与 GPU/ASIC wafer 绑定，客户可一站式采购；组合良率风险 | **是。**chiplet、HBM、2.5D/3D 是 AI package 主流 | 高：6–12+ 月 package/substrate/thermal/signal-integrity qualification；重做成本高 |
+| **Core Ultra Series 3** | AMD Ryzen AI、Qualcomm Snapdragon X、Apple M 系列 | x86 Windows 兼容、>325 designs、18A 本土制造 | PC TAM 下降；NPU 使用率和 AI PC 支付意愿不确定；ARM 能效竞争 | **NPU/端侧 AI 是主流功能，但未必形成独立高增 TAM** | 低至中：终端 OEM 可跨代换平台，企业软件/镜像提高惯性 |
+| **Crescent Island** | NVIDIA B/Rubin、AMD MI350/MI450、Google TPU、AWS Trainium/Inferentia、各类推理 ASIC | 350W 风冷、潜在 160–480GB 低成本内存、FP4–FP64 覆盖 | 无成熟 CUDA 等价生态；性能/互连/客户未知；Intel 加速器历史执行不佳 | **大内存、低精度推理是主流需求；该具体产品是否主流尚未证明** | 对既有 NVIDIA 客户非常高，软件锁定反而不利于 Intel |
+| **Mobileye EyeQ** | Qualcomm Snapdragon Ride、NVIDIA DRIVE、Tesla 自研、地平线等 | 车规量产历史、视觉算法、长车型周期 | OEM 自研、集中度、汽车周期；商誉减值提示长期假设下修 | **ADAS/物理 AI 是主流，但非数据中心主线** | 很高：车型定点到 SOP 常为 3–5 年，功能安全和法规需重认证 |
+
+制造与封装切换成本范围参考项目研究：[先进逻辑晶圆代工和封装](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-07-10.md)。EMIB-T 在 Chiplet Summit 2026 展示 >10× reticle、<45µm pitch、冗余 lanes 和液冷/翘曲设计，但未给无限 top-die 数或商业良率；技术展示不应替代订单验证。[Chiplet Summit 项目更新](../../行业调研/产业背景/顶级会议信息/chiplet_summit_2026_update.md)
+
+### 9.2 新技术是否会成为主流
+
+1. **Xeon 作为 AI host/control plane：主流且必要，但不是垄断。**DGX B300 的实际 CPU/GPU 为 1:4；随着 agentic inference 增加数据库、检索、网络和工具调用，CPU:GPU 有机会向 1:4、甚至部分 CPU-dense 负载的 1:2 靠近。相反，Grace/Vera 和 hyperscaler Arm 会把一部分内容量从 Intel 移走。
+2. **18A 的 RibbonFET + PowerVia：技术方向主流，商业结果未定。**GAA 与 backside power 都符合领先逻辑路线；18A-P 的 PPA 改进和内部产品量产降低技术风险，但 TSMC 的生态、良率和客户信任仍是更强商业基准。
+3. **EMIB/Foveros：chiplet/HBM 时代的主流。**AI package 越大、HBM 越多，传统单片 SoC 越不可经济；EMIB 的局部 bridge 与 Foveros 3D 都有真实价值。风险是客户将 logic wafer 与 CoWoS/SoIC 一并交给 TSMC。
+4. **IPU/DPU：规模扩大但供应商分散。**AI 集群网络、存储、安全和虚拟化卸载是刚需，Google 多年项目验证 Intel 能力；但标准并未收敛，云厂自研和 BlueField/Pensando 都可替代。
+5. **Crescent Island 的 LPDDR 大内存推理：可能是有用细分，不是已确认主流。**若性能/美元和每瓦 token 优于 GPU+HBM，可进入中低端推理；若软件迁移成本和带宽不足，则只会是小众卡。
+6. **AI PC：功能主流、收入增量不一定主流。**NPU 将成为 PC 标配，但用户是否为本地 AI 支付显著溢价仍不确定；2026 PC TAM 下滑是现实约束。
+
+### 9.3 主要风险与替代路径
+
+| 风险 | 触发信号 | 财务影响 | 替代/缓解 |
+|---|---|---|---|
+| 18A 良率/成本不达标 | 内部产品毛利低、wafer starts 增但 good die 不增、18A-P 延迟 | CCG/DCAI GM 下滑，Foundry 亏损扩大 | 延长 Intel 3、外包部分 tile、缩减扩产；但削弱 Foundry 叙事 |
+| 外部 Foundry 客户不转量产 | 外部收入仍主要 Altera、backlog 无金额/客户 | 无法摊薄折旧，估值核心期权失效 | 聚焦 advanced packaging/政府订单；利润天花板降低 |
+| Xeon ASP 正常化、volume 不恢复 | ASP 增速下降、units 仍负、AMD/Arm 份额升 | DCAI 收入和 30% margin 回落 | 加速 Xeon 6+、定制 x86、CPU-dense agentic system |
+| 关键材料约束持续 | substrate/memory/元件短缺延续至 2027 | 丢失收入、客户改投 AMD/Arm | 多供方、预付款锁产能、Penang/爱尔兰扩产 |
+| NVIDIA/云厂 vertically integrate | Vera/Grace/自研 Arm/IPU 比例上升 | 每 GPU 的 Intel CPU/IPU 内容量下降 | 定制 x86、NVLink/平台合作、开放 UCIe/PCIe |
+| 加速器软件生态失败 | Crescent 无 benchmark/客户、Gaudi 再减值 | 研发和库存损失，无法参与 accelerator TAM | 定位开放软件/低成本推理，避免追逐顶级训练 |
+| 资本结构恶化 | FCF 持续负、Fab 34 贷款需高成本再融资 | 利息、稀释、capex 下调 | 资产合作、政府支持、外部客户预付款；均可能牺牲经济权益 |
+| 政策/治理 | 政府股东条件变化、补贴延迟、出口限制 | capex、客户和估值波动 | 地域多元化与合规；无法完全消除 |
+| 估值倍数收缩 | 业务增长但 Foundry/GM 未达预期 | 股价可在盈利改善时仍下跌 | 只有持续 FCF、外部收入和毛利证明能缓解 |
+
+### 9.4 未来四个季度必须跟踪的验证项
+
+1. DCAI 服务器 **volume 是否由 -5% 转正**，ASP +27% 是否可持续；只看收入会误判。
+2. Q2 2026 收入是否落在 $13.8–14.8B、DCAI 是否环比双位数增长、non-GAAP GM 是否守住约 39%。
+3. 外部 Foundry 收入中 **剔除 Altera 后**的金额、客户数与 18A/advanced packaging 占比。
+4. $1.7B 客户预付款是否按期收现、资产负债表列示、对应交付期和收入确认。
+5. Packaging backlog 是否披露客户名、金额、package 类型、2027 产能和取消/延期条款。
+6. 18A/18A-P 的经济良率、Core/Xeon 单位成本、外部 tapeout；不要只看 WSPM。
+7. 14A 是否在 H2 2026–H1 2027 获得可识别 design commitment。
+8. Crescent Island H2 samples 的 benchmark、软件兼容、OEM/cloud 客户与生产资格。
+9. Foundry OP loss 是否从 Q1 的 $2.437B 收窄，全年 FCF 是否在排除 Fab 34 回购后转正。
+10. 回购 Fab 34 后净债务、$6.5B 贷款再融资条件和 gross capex 是否继续上调。
+
+---
+
+## 十、综合判断
+
+Intel 的业务基本面已出现两类可信改善：
+
+- **产品改善：**Xeon 供不应求、高端 mix 和平台 design-in 使 DCAI 收入、利润率同时跃升；AI PC 已成为 client 主流 mix；custom ASIC/IPU/network 从小基数高速增长。
+- **技术改善：**18A 内部 HVM、18A-P risk production、EMIB/Foveros 大封装路线与 Penang/爱尔兰扩产表明制造平台不再只是路线图。
+
+但投资逻辑还有两处未完成：
+
+- **商业验证缺口：**外部 Foundry $174M 中约 $139M 是 Altera，真正独立外部客户收入约 $35M；先进封装 backlog 无金额、无客户名、主要到 2027 才收入化。
+- **估值与现金流缺口：**约 8.9× TTM sales、87.7× forward earnings 已要求高增长和大幅利润恢复；Foundry 仍亏损、调整后 FCF 为负、Fab 34 回购使净债务明显上升。
+
+因此，本报告的核心判断是：**Intel 是“经营拐点已确认、外部代工商模未确认、估值已按成功定价”的高波动 AI 基建平台。**基准业务可以依靠 Xeon、AI PC mix 和 custom silicon 增长到约 $58.8B，但要证明当前市值合理，至少需要在未来四个季度看到：服务器单位量转正、DCAI 约 30% 利润率保持、非 Altera 外部 Foundry 收入显著增长、封装 backlog 量化、18A 良率/成本改善以及自由现金流转正。任何只引用“60% AI-driven”或“30K WSPM”而不检查收入定义、良率和客户归属的分析，都会系统性高估当前兑现程度。
+
+---
+
+## 资料来源与证据等级
+
+### A 级：公司、监管和产品一手资料
+
+- [Intel Q1 2026 earnings release](https://www.intc.com/news-events/press-releases/detail/1767/intel-reports-first-quarter-2026-financial-results)
+- [Intel Q1 2026 Form 10-Q](https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000079/intc-20260328.htm)
+- [Intel Q1 2026 prepared remarks](https://d1io3yog0oux5.cloudfront.net/_63e6aa17e2de71bf900d5c8f98728d4a/intel/db/887/9254/prepared_remarks/1Q2026-Earnings-Call.pdf)
+- [Intel Q4/FY2025](https://www.intc.com/news-events/press-releases/detail/1759/intel-reports-fourth-quarter-and-full-year-2025-financial)｜[Q3 2025](https://www.intc.com/news-events/press-releases/detail/1753/intel-reports-third-quarter-2025-financial-results)｜[Q2 2025](https://www.intc.com/news-events/press-releases/detail/1745/intel-reports-second-quarter-2025-financial-results)｜[Q1 2025](https://www.intc.com/news-events/press-releases/detail/1737/intel-reports-first-quarter-2025-financial-results)
+- [Intel/NVIDIA product collaboration](https://www.intc.com/news-events/press-releases/detail/1750/nvidia-and-intel-to-develop-ai-infrastructure-and-personal)
+- [Intel/Google AI infrastructure collaboration](https://newsroom.intel.com/data-center/intel-google-deepen-collaboration-to-advance-ai-infrastructure)
+- [Core Ultra Series 3 on Intel 18A](https://newsroom.intel.com/artificial-intelligence/ces-2026-intel-core-ultra-series-3-debut-first-built-on-intel-18a)
+- [Xeon 6 in NVIDIA DGX Rubin/B300](https://newsroom.intel.com/data-center/intel-xeon-6-used-as-host-cpus-in-nvidia-dgx-rubin-nvl8-systems)
+- [Xeon 6+ agentic AI systems](https://newsroom.intel.com/data-center/intel-puts-agentic-ai-xeon-6-networking-ai-systems)
+- [Intel/SambaNova](https://newsroom.intel.com/artificial-intelligence/intel-and-sambanova-advance-agentic-ai-with-xeon-6)
+- [Crescent Island announcement](https://newsroom.intel.com/artificial-intelligence/intel-to-expand-ai-accelerator-portfolio-with-new-gpu)
+- [Intel Foundry 18A-P at VLSI Symposium](https://newsroom.intel.com/intel-foundry/intel-foundry-details-process-milestones-future-innovation-at-vlsi-symposium)
+- [Intel Foundry HPC/AI platform brief](https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2025-11/intel-foundry-hpc-ai-brief.pdf)
+- [NVIDIA DGX B300 hardware](https://docs.nvidia.com/dgx/dgxb300-user-guide/introduction-to-dgxb300.html)
+- [Xeon 6776P specifications/RCP](https://www.intel.com/content/www/us/en/products/sku/243691/intel-xeon-6776p-processor-336m-cache-2-30-ghz/specifications.html)
+- [Intel E835 specifications/RCP](https://www.intel.com/content/www/us/en/products/sku/245160/intel-ethernet-network-adapter-e835ccqda1/specifications.html)
+- [Fab 34 repurchase](https://www.intc.com/news-events/press-releases/detail/1764/intel-to-repurchase-49-equity-interest-in-ireland-fab)｜[Ireland expansion](https://newsroom.intel.com/intel-foundry/intel-invests-5-billion-euro-to-expand-manufacturing-in-europe)
+
+### B 级：项目内允许使用的行业与会议资料
+
+- [AI服务器CPU与控制平面芯片](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器CPU与控制平面芯片_2026-07-10.md)
+- [AI芯片先进封装](../../行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-07-10.md)
+- [先进逻辑晶圆代工和封装](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-07-10.md)
+- [AI数据中心建设规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+- [VLSI Symposium 2026 更新](../../行业调研/产业背景/顶级会议信息/conference_update_ieee_vlsi_symposium_2026_2026-06-20.md)
+- [Computex 2026 更新](../../行业调研/产业背景/顶级会议信息/conference_update_computex_2026_2026-06-10.md)
+- [Chiplet Summit 2026 更新](../../行业调研/产业背景/顶级会议信息/chiplet_summit_2026_update.md)
+
+### C/D 级：产业渠道、市场数据与论坛
+
+- [18A 约 30K WSPM channel report](https://www.tomshardware.com/tech-industry/semiconductors/intel-18a-wafer-to-wafer-yield-issues-fixed-report-claims-says-production-up-to-15-000-wafers-per-month-at-both-sites)
+- [Google/Amazon packaging talks](https://www.tomshardware.com/tech-industry/semiconductors/intel-reportedly-in-talks-with-google-and-amazon-over-advanced-packaging)
+- [Google 2028 TPU packaging rumor](https://www.tomshardware.com/tech-industry/google-reportedly-books-intel-for-more-than-3-million-tpus-in-2028)
+- [Selective Intel CPU price increases](https://www.tomshardware.com/pc-components/cpus/intel-confirms-price-hikes-on-select-consumer-and-server-cpus-citing-supply-costs-and-demand-select-xeon-processors-now-over-usd1-000-more-expensive)
+- [StockAnalysis INTC market data](https://stockanalysis.com/stocks/intc/)｜[Ratios](https://stockanalysis.com/stocks/intc/statistics/)
+- [r/IntelStock](https://www.reddit.com/r/IntelStock/)｜[r/hardware](https://www.reddit.com/r/hardware/)：仅作叙事情绪样本，不作事实来源
+
+### 模型限制
+
+- Intel 不披露标准 backlog、bookings、B2B、平均 lead time、取消率、Xeon/AI PC/custom ASIC/先进封装独立收入或实际 WSPM；所有相应数字均为区间或情景。
+- 2026-07-18 为周六，最新可交易市场数据为 2026-07-17 收盘。
+- 产能美元值不等于收入：wafer starts 还需良率、利用率、客户资格和出货；internal Foundry 必须在合并层抵销。
+- 场景没有使用论坛传闻作硬订单，也没有把 2028 Google TPU 渠道说法计入未来一年。
+- 本报告是公司与产业尽调，不构成买卖、仓位或价格目标建议。

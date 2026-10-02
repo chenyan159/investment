@@ -1,0 +1,11 @@
+{
+  "verified_comparison_and_input_hashes": 216,
+  "verified_historical_scenario_evaluation_files": 384,
+  "study_price_missing_cells": 1,
+  "study_trading_dates": 38,
+  "endpoints": {
+    "2026-09-04": 191,
+    "MICLF_2026-09-03": 1
+  },
+  "scenario_positive_37_return": 0.05790692784202372
+}

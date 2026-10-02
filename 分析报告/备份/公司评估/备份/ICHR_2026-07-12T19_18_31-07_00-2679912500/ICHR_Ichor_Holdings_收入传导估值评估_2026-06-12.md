@@ -1,0 +1,167 @@
+# 公司收入传导与价值传导评估：Ichor Holdings
+
+报告日期：2026-06-12  
+公司代号：ICHR  
+公司名称：Ichor Holdings  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM，即 2026Q2-2027Q1 或自 2026-06-12 起未来 12 个月。  
+货币单位：除特别说明外均为美元。  
+边界说明：本报告只评估经营收入、利润和现金流传导，不输出投资评级、目标价、股价区间、估值倍数判断，也不把金融市场价格作为经营证据。  
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口；FY2026、FY2027、HBM4、3D DRAM、长期产能和专有产品平台化仅作为补充或远期期权，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：Ichor 2025 收入 9.4765 亿美元，同比 +11.6%；2026Q1 收入 2.56068 亿美元，环比 +14.5%、同比 +4.7%；2026Q2 官方收入指引 2.90-3.10 亿美元，中位数 3.00 亿美元，对应年化 run-rate 约 12.0 亿美元。2026Q1 TTM 收入约 9.5926 亿美元。
+- 重要产品/业务线：Gas delivery systems / gas panels；Chemical delivery / blending / slurry / plating / clean；Precision machining / weldments / chamber assemblies；Proprietary liquid flow controller / remote plasma source / process monitoring-control；其他非核心半导体和低复杂度组件。
+- NTM 公司收入四情景：悲观 10.5-11.5 亿美元；基准 12.5-13.5 亿美元；乐观 14.5-16.0 亿美元；极度乐观 17.0-19.0 亿美元。极度乐观是上限情景，校准后不作为主判断。
+- 利润或 EBITDA 四情景：悲观 EBITDA 0.55-0.80 亿美元、净利润接近盈亏平衡到小幅盈利；基准 EBITDA 1.05-1.40 亿美元、non-GAAP 净利润 0.55-0.85 亿美元；乐观 EBITDA 1.70-2.30 亿美元、non-GAAP 净利润 1.00-1.45 亿美元；极度乐观 EBITDA 2.60-3.40 亿美元、non-GAAP 净利润 1.60-2.30 亿美元。
+- 最大传导瓶颈：Ichor 不披露 backlog/bookings/book-to-bill，产品线收入也不披露；因此 Q2 以后能否持续增长，需要用 Q3 指引、客户 Lam/Applied/TEL 的 etch/deposition 与 memory/advanced packaging 订单、库存转收入和现金流转正来验证。
+- 最大利润率变量：non-GAAP 毛利率能否从 2026Q1 的 12.8% 提升到 Q2 管理层电话会口径 13%-14%，并在 2026H2 每季再改善约 100bp；改善来源必须是产能利用率、Mexico/Malaysia/India footprint、Ichor-branded content 和 mix，而不能只是低毛利 BOM pass-through 放大收入。
+- 最大现金流变量：2026Q1 operating cash flow 为 -290 万美元、capex 为 710 万美元、free cash flow 为 -998 万美元，且库存环比增加 2050 万美元。基准情景要求库存和应收在 H2 转成收入和现金，否则收入增长质量会被下修。
+- 可信度：公司层收入基准为中高，利润率为中，产品拆分为中到低；专有产品和极度乐观情景可信度低。
+
+核心判断：Ichor 的 AI/HBM 传导链真实，但它不是 AI 数据中心直接 BOM，也不是高毛利核心器件公司。最可确认的 NTM 经营路径是：WFE 上行和客户交付加速先让 gas/chemical delivery 子系统收入从 2025 低谷修复到 12.5-13.5 亿美元级别 NTM 收入；若毛利率按管理层路径逐季改善，经营利润弹性会明显大于收入弹性。真正决定经营质量的不是“AI 题材”，而是订单可见度、客户份额、低成本产能转移、Ichor-branded content、库存周转和现金流。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Gas delivery systems / gas panels / gas sticks | 2026Q1 估算 1.15-1.45 亿美元；当前年化 5.2-7.0 亿美元 | 45%-57% | 最高；直接绑定 etch、deposition、ALD/CVD、strip 等前道工具 | B/C：公司总收入 A，产品拆分 C | 进入基准主口径；按 Q2 指引和 WFE 上行保守折算 | 3D DRAM/HAR etch、HBM4、GAA/背面供电带来的更高气体通道复杂度 |
+| Chemical delivery / blending / slurry / plating / clean | 2026Q1 估算 0.50-0.75 亿美元；当前年化 2.5-3.8 亿美元 | 20%-29% | 很高；受 CMP、clean、electroplating、advanced packaging、hybrid bonding 拉动 | B/C：产品官方存在，收入拆分估算 | 进入基准；先进封装增量按折扣纳入 | HBM4 P&T、hybrid bonding、advanced packaging wet process 更大规模放量 |
+| Precision machining / weldments / chamber assemblies / brazing / surface treatment | 2026Q1 估算 0.25-0.40 亿美元；当前年化 1.2-1.9 亿美元 | 10%-16% | 高；随 WFE 工具和洁净组件需求同步增长 | B/C：产品官方存在，产品收入拆分估算 | 进入基准，但利润率折扣高于 gas/chemical 核心模块 | 客户外包比例提升、复杂洁净腔体和特殊焊接件进入更多工具平台 |
+| Proprietary liquid flow controller / remote plasma source / process monitoring-control | 2026Q1 估算 0.08-0.20 亿美元；当前年化 0.4-0.9 亿美元 | 3%-8% | 高但小基数；决定长期毛利率上限 | C/D：管理层和公司资料有产品/qualification 线索，未披露量产收入 | 只把已在收入表中可见的低额 run-rate 纳入基准；qualification 增量不进基准 | 多个新工具平台 design-in、Ichor-branded content 占比持续提高 |
+| 其他非核心半导体、商业航天/防务/医疗和低复杂度组件 | 估算 0.4-0.8 亿美元 NTM | 4%-8% | 低到中；可缓冲或拖累，但不是 AI/HBM 主线 | C：残差估算 | 基准仅保留保守残差，不作为增长主线 | 若非半导体高可靠制造客户扩大，作为补充，不进入 AI 主线 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 Ichor 份额、收入确认、利润率或公司汇总。需求锚点来自 WFE、advanced packaging、memory/HBM、etch/deposition/clean/CMP 工具强度，以及行业调研中对 gas/chemical delivery、flow control、precision assemblies 的未来 12 个月订单池估算。Ichor 的产品需求单位以“工具级 gas/chemical delivery 子系统金额、外包/模块化率、先进工具 attach rate、客户交付节奏”为主，不用 AI rack、MW、GPU 颗数或数据中心建设金额直接反推。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Gas delivery systems / gas panels | 外部锚：SEMI 预计 2026/2027 半导体设备销售约 1450/1560 亿美元；半导体设备子系统报告估算 gas/chemical delivery subsystem 未来 12 个月需求池约 42-65 亿美元，当前渗透率约 45% 向 58% 提升 | WFE push-out，etch/deposition 客户 H2 拉货弱于 Q2；需求池低于当前路径约 5%-15%，约 38-55 亿美元 | WFE 复苏、leading-edge logic/HBM/3D NAND 正常兑现；需求池约 42-65 亿美元，同比增长约 12%-20% | Lam/AMAT/TEL etch/deposition 订单继续上修，HBM/advanced DRAM 拉动气体通道复杂度；需求池约 55-80 亿美元 | Rubin/MI400/HBM4、3D NAND conversion、GAA/2nm 同时 pull-in，客户提前锁模块产能；需求池约 70-100 亿美元 | 悲观较基准少约 4-10 亿美元；乐观较基准多约 10-20 亿美元；极度多约 25-35 亿美元 | 基准符合当前 WFE 与 Q2 指引；乐观需 Q3/Q4 订单继续增强 | 正证：Ichor Q2 指引 3.00 亿美元中位数、SEMI Q1 设备 billings 同比 +14%。反证：Ichor 不披露 backlog，客户可 push-out 或内制 |
+| Chemical delivery / blending / slurry / plating / clean | 锚：advanced packaging、CMP、clean、electroplating、hybrid bonding；高纯水/气体/化学流体系统报告估算 bulk/high-purity chemical delivery 未来 1 年 18-28 亿美元基准、flow control 68-90 亿美元基准，其中工具级子系统只取相关部分 | advanced packaging 或 CMP/clean 订单滞后，客户项目延期；需求低于当前路径 5%-15% | new fab、HBM P&T、clean/CMP/plating 正常推进；chemical delivery 与 flow control 维持中双位数增长 | HBM4、CoWoS/SoIC/hybrid bonding 对 POU blending、slurry、plating、clean 模块需求上修；增长 20%-35% | HBM P&T 和 advanced packaging 厂务/工具同时锁单，PFA/valves/filters 交期拉长；增长 40%+ | 悲观少约 3-7 亿美元相关需求；乐观多约 8-15 亿美元；极度多约 18-25 亿美元 | 基准略高于当前预期但仍需收入确认验证 | 正证：Air Liquide/SK hynix HBM P&T 长约、SEMI 材料和设备数据。反证：Ichor 在化学 delivery 的具体订单和份额未披露 |
+| Precision machining / weldments / chamber assemblies | 锚：WFE 工具数量、复杂真空腔体、洁净焊接、半导体设备子系统报告估算 precision chamber assemblies / weldments / cleaning/refurb 未来 12 个月 52-78 亿美元 | 工具出货后移，普通 machining 价格竞争，客户内部制造或区域二供增加；需求低于预期 5%-15% | WFE 工具出货上行，复杂洁净组件随 gas/chemical 子系统同步恢复；需求约 52-78 亿美元 | 先进工具复杂度提升，客户外包比例提高；需求增长 22%-35% | 供应商洁净加工和焊接产能紧张，客户抢交付；需求增长 40%-60% | 悲观少约 5-10 亿美元；乐观多约 10-18 亿美元；极度多约 25 亿美元以上 | 基准符合 WFE 正常复苏；乐观需要外包率提升 | 正证：行业报告把精密组件列为关键子系统。反证：该环节竞争更分散，价格权弱 |
+| Proprietary liquid flow controller / remote plasma source / process monitoring-control | 锚：公司披露 proprietary product portfolio、Ichor-branded content 和 qualification；行业需求来自更高精度 flow control、sensorized modules、process monitoring | qualification 延迟或只停留样品，需求不进入量产；基准外增量为 0-0.2 亿美元 | 当前已在收入表的少量自有产品维持小基数增长；新增 qualification 少量折扣纳入 | 多个客户工具平台 design-in，Ichor-branded content 明显提高；需求翻倍但基数小 | 自有模块成为客户标准配置，毛利率和内容量同时提升；但 NTM 证据不足 | 悲观较基准少约 0.2-0.4 亿美元；乐观多约 0.4-0.8 亿美元；极度多约 1 亿美元以上 | 基准只保留低额收入；乐观以上才反映产品组合变化 | 正证：管理层强调自有产品和 branded content。反证：未披露客户名、订单金额、量产节点 |
+| 其他非核心/低复杂度业务 | 锚：非半导体 served markets、低复杂度组件和残差收入；不受 AI/HBM 直接驱动 | 非半导体需求继续弱，抵消部分 WFE 增长 | 维持 0.5-0.7 亿美元 NTM 残差 | 防务/航天/医疗等高可靠小业务改善 | 非核心业务不能成为极度乐观主线 | 绝对变化通常在 +/-0.2 亿美元内 | 对当前预期影响小 | 反证优先级低；只在公司汇总中防止过度外推 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断外部需求中哪些能进入 Ichor NTM 收入表，以及当前可收入化基数。Ichor 披露单一经营分部，未披露产品线收入、backlog、bookings 或 RPO。因此公司总收入、Q2 指引、毛利率和现金流是 A 级证据；产品线拆分是基于公司产品描述、Q1/Q2 run-rate、行业资料和本地公司调研的估算，多数为 C 级，不等同于公司披露分部。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Gas delivery systems / gas panels | 公司官方核心产品；2026Q1 产品拆分估算 1.15-1.45 亿美元；Q2 公司总收入指引中位数 3.00 亿美元提供收入表锚 | 直接卖给 WFE OEM；对 AI/HBM 是间接受益 | BOM pass-through 较高，毛利随利用率和复杂度改善；价格权中等 | 5.2-6.0 亿美元 | 6.5-7.2 亿美元 | 7.6-8.5 亿美元 | 8.5-9.6 亿美元 | 基准略高于 Q1 年化，符合 Q2 指引和 H2 温和增长 | B/C | 是 | 公司收入 A 级；产品为官方核心；行业 demand 上行；但分拆为估算 | 基准主口径；乐观需客户拉货延续 |
+| Chemical delivery / blending / slurry / plating / clean | 公司官方核心产品；2026Q1 估算 0.50-0.75 亿美元；advanced packaging 与 wet/clean 需求为行业锚 | 直接卖给 WFE/advanced packaging 设备 OEM；对 HBM/CoWoS 是间接 | 毛利可略好于普通 machining，但受 PFA/valves/filters 采购和项目竞价限制 | 2.3-2.9 亿美元 | 3.2-3.8 亿美元 | 3.8-4.8 亿美元 | 4.8-6.0 亿美元 | 基准符合 Q2/H2 恢复；乐观高于当前预期 | B/C | 是 | 公司产品 A/B；收入拆分 C；行业 HBM/chemical delivery 需求支持 | 基准纳入；advanced packaging 加速部分放入乐观 |
+| Precision machining / weldments / chamber assemblies | 公司官方产品；2026Q1 估算 0.25-0.40 亿美元；随工具平台和洁净组件需求确认 | 直接卖给 OEM 或子系统项目；对 AI/HBM 间接 | 竞争较分散，毛利低于核心高端部件；靠复杂件、洁净焊接和利用率改善 | 1.1-1.5 亿美元 | 1.5-1.9 亿美元 | 1.8-2.2 亿美元 | 2.3-3.0 亿美元 | 基准略高于当前 run-rate；乐观需外包率提升 | B/C | 是 | 产品官方存在；行业 precision assemblies 需求上行；分拆估算 | 基准纳入但毛利折扣 |
+| Proprietary products: liquid flow controller / remote plasma source / process monitoring-control | 公司披露自有/更高附加值产品和 qualification；具体收入、客户和量产节点未披露 | 直接进入客户工具平台时可确认；当前多为参与和认证线索 | 毛利率上限最高，但收入基数小、确认风险高 | 0.35-0.55 亿美元 | 0.45-0.75 亿美元 | 0.9-1.3 亿美元 | 1.5-2.2 亿美元 | 基准只承认低额当前收入；乐观和极度才体现设计导入 | C/D | 部分进入 | C 级当前收入可小比例进基准；D 级 qualification 不进基准 | 基准小额；新增 design win 仅进乐观/极度 |
+| 其他非核心/低复杂度业务 | 残差估算；非半导体 served markets 和低复杂度组件未单独披露 | 直接收入，但与 AI/HBM 关系弱 | 毛利率低到中；可抵消或拖累 | 0.45-0.65 亿美元 | 0.50-0.70 亿美元 | 0.60-0.80 亿美元 | 0.70-0.90 亿美元 | 大体符合当前残差预期 | C | 是，低权重 | 残差估算；不作为增长引擎 | 保守纳入，防止把全部增长归因 AI |
+
+排除项：AI 数据中心 MW、GPU rack、光模块、液冷、机电工程总额、云厂 CapEx 总额不进入 Ichor NTM 基准收入；只有通过 WFE OEM 的工具订单、交付和收入确认路径才能进入公司收入。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求池和可收入化基数出发，估算每个产品在 NTM 内对 Ichor 的收入和毛利贡献。由于公司不披露产品线毛利、订单或 opex，本表“利润贡献”指产品层毛利美元贡献的研究估算；产品级经营利润无法可靠量化，经营利润统一在第 6 节公司层面处理。四情景不是固定百分比公式，而是按需求、份额、交付、价格/mix、成本和执行约束逐项校准。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Gas delivery systems / gas panels | 悲观产品 | 5.2-6.0 亿美元 | 毛利约 0.60-0.78 亿美元 | GM 11.5%-13.0%，低利用率或价格压力 | 低于当前 Q2 run-rate 延续预期 | 只承认 Q1/Q2 可见收入，H2 push-out | 保留为下行情景 | WFE 订单后移、客户内制、核心 MFC/valve 成本不能传导 |
+| Gas delivery systems / gas panels | 基准产品 | 6.5-7.2 亿美元 | 毛利约 0.95-1.20 亿美元 | GM 14.5%-16.5%，随规模吸收改善 | 符合 Q2 指引和 WFE 正常兑现 | Q2 指引、SEMI WFE/设备上行、etch/deposition 强度提升 | 保留 | 公司不披露 backlog，客户集中 |
+| Gas delivery systems / gas panels | 乐观产品 | 7.6-8.5 亿美元 | 毛利约 1.25-1.60 亿美元 | GM 16.5%-19.0%，rush order/复杂平台改善 | 高于当前预期 | 客户交付加速、HBM/DRAM/GAA tool pull-in | 保留但需 Q3 指引验证 | 低毛利 BOM pass-through 使收入上修不等于利润等比例上修 |
+| Gas delivery systems / gas panels | 极度乐观产品 | 8.5-9.6 亿美元 | 毛利约 1.55-2.00 亿美元 | GM 18%-21%，满产和 mix 同时改善 | 显著高于当前预期 | HBM4/Rubin/3D NAND/GAA 同时 pull-in | 下移为乐观上限 | 没有公开 backlog/book-to-bill；供应链和劳动力可能限制交付 |
+| Chemical delivery / blending / slurry / plating / clean | 悲观产品 | 2.3-2.9 亿美元 | 毛利约 0.28-0.40 亿美元 | GM 12%-14%，项目 mix 差 | 低于当前预期 | 只承认现有工具平台和保守 advanced packaging 节奏 | 保留 | advanced packaging 订单延期，PFA/filters 成本挤压 |
+| Chemical delivery / blending / slurry / plating / clean | 基准产品 | 3.2-3.8 亿美元 | 毛利约 0.48-0.68 亿美元 | GM 15%-18%，利用率改善 | 符合当前预期 | HBM/CoWoS/CMP/clean 对高纯流体需求上行 | 保留 | Ichor 具体份额未披露 |
+| Chemical delivery / blending / slurry / plating / clean | 乐观产品 | 3.8-4.8 亿美元 | 毛利约 0.68-0.95 亿美元 | GM 17%-20%，先进封装 mix 更好 | 高于当前预期 | HBM P&T、hybrid bonding、wet chemical modules 放量 | 保留 | 客户项目总额不能直接等于 Ichor 收入 |
+| Chemical delivery / blending / slurry / plating / clean | 极度乐观产品 | 4.8-6.0 亿美元 | 毛利约 0.95-1.32 亿美元 | GM 19%-22%，若供给紧张 | 上限情景 | PFA/valve/filter 交期紧，客户提前锁产能 | 下移为乐观上限 | NTM 内缺少公司特定订单披露 |
+| Precision machining / weldments / chamber assemblies | 悲观产品 | 1.1-1.5 亿美元 | 毛利约 0.11-0.18 亿美元 | GM 10%-12%，竞争和利用率拖累 | 低于当前预期 | 只承认可见 WFE 组件出货 | 保留 | 区域二供、低复杂度件价格竞争 |
+| Precision machining / weldments / chamber assemblies | 基准产品 | 1.5-1.9 亿美元 | 毛利约 0.20-0.30 亿美元 | GM 13%-16%，复杂件占比正常 | 符合当前预期 | WFE 工具数量恢复、洁净加工需求上行 | 保留 | 不是最高毛利环节 |
+| Precision machining / weldments / chamber assemblies | 乐观产品 | 1.8-2.2 亿美元 | 毛利约 0.27-0.40 亿美元 | GM 15%-18%，复杂腔体和焊接件 mix 改善 | 小幅高于当前预期 | 客户外包比例提升、洁净加工产能紧 | 保留 | 需求可能被低端竞争稀释 |
+| Precision machining / weldments / chamber assemblies | 极度乐观产品 | 2.3-3.0 亿美元 | 毛利约 0.40-0.60 亿美元 | GM 17%-20%，满产吸收固定成本 | 上限情景 | 客户内部产能不足，复杂件抢交付 | 仅作跟踪 | 缺少客户项目名和长期份额证据 |
+| Proprietary products | 悲观产品 | 0.35-0.55 亿美元 | 毛利约 0.07-0.13 亿美元 | GM 18%-24%，小基数 | 低于产品组合改善预期 | 只承认已在收入表的低额产品 | 保留 | qualification 不转量产 |
+| Proprietary products | 基准产品 | 0.45-0.75 亿美元 | 毛利约 0.10-0.21 亿美元 | GM 22%-28%，但规模小 | 符合保守预期 | 公司披露自有产品组合和 Ichor-branded content 方向 | 保留，低权重 | 未披露客户、订单金额和量产节点 |
+| Proprietary products | 乐观产品 | 0.9-1.3 亿美元 | 毛利约 0.25-0.42 亿美元 | GM 28%-32%，mix 提升 | 高于当前预期 | 多个新工具平台 design-in | 下移为乐观而非基准 | 需要具体 design win 和量产收入验证 |
+| Proprietary products | 极度乐观产品 | 1.5-2.2 亿美元 | 毛利约 0.48-0.80 亿美元 | GM 32%-36%，成为公司毛利率杠杆 | 显著高于当前预期 | 自有模块成为标准配置 | 移入附录/仅作跟踪 | NTM 证据不足，不能靠产品叙事进入主表 |
+| 其他非核心/低复杂度业务 | 悲观产品 | 0.45-0.65 亿美元 | 毛利约 0.04-0.07 亿美元 | GM 8%-11% | 小幅拖累 | 非半导体需求偏弱 | 保留 | 不能用 AI 叙事弥补 |
+| 其他非核心/低复杂度业务 | 基准产品 | 0.50-0.70 亿美元 | 毛利约 0.05-0.09 亿美元 | GM 10%-13% | 符合预期 | 残差稳定 | 保留 | 规模小 |
+| 其他非核心/低复杂度业务 | 乐观产品 | 0.60-0.80 亿美元 | 毛利约 0.07-0.11 亿美元 | GM 11%-14% | 小幅高于预期 | 防务/航天/医疗高可靠小业务改善 | 仅作补充 | 非主线 |
+| 其他非核心/低复杂度业务 | 极度乐观产品 | 0.70-0.90 亿美元 | 毛利约 0.08-0.13 亿美元 | GM 12%-15% | 不构成极度乐观来源 | 无足够主线证据 | 仅作跟踪 | 不能作为公司极度乐观核心 |
+
+产品层结论：NTM 收入贡献的主引擎是 gas delivery 与 chemical delivery，利润弹性的主变量是公司能否把这两项从低毛利集成业务推向更高复杂度、更高 Ichor-branded content、更高利用率的组合。Precision assemblies 是收入 beta，不是利润质量核心；proprietary products 是利润质量期权，但 NTM 基准必须小比例处理。
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：将产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。公司层面不使用估值、股价或市场倍数。收入增速以 2026Q1 TTM 收入约 9.5926 亿美元为比较基准；当前预期锚为 2026Q2 官方收入指引 2.90-3.10 亿美元、中位数年化约 12.0 亿美元，以及管理层电话会对 Q2 gross margin 13%-14% 和 H2 毛利率逐季改善的描述。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 10.5-11.5 亿美元 | 较 TTM +9%-20% | 低于 Q2 midpoint run-rate 延续；Q2 达标但 H2 回落，或 Q2 低端后客户 push-out | GAAP 11.8%-12.8%；non-GAAP 12.0%-13.2% | GAAP -1%-2%；non-GAAP 1%-4% | EBITDA 0.55-0.80 亿美元；GAAP 净利润约 -0.10 至 0.20 亿美元；non-GAAP 净利润 0.20-0.40 亿美元 | FCF 接近持平或小幅为负；库存和应收占用继续 | 中 | WFE push-out、客户集中、毛利率不随收入改善、库存无法转收入 |
+| 基准公司 | 12.5-13.5 亿美元 | 较 TTM +30%-41% | 符合 Q2 指引正常兑现和 H2 温和增长；不假设 backlog 非线性上修 | GAAP 14.0%-15.3%；non-GAAP 14.5%-16.0% | GAAP 4%-6%；non-GAAP 5.5%-7.5% | EBITDA 1.05-1.40 亿美元；GAAP 净利润 0.35-0.65 亿美元；non-GAAP 净利润 0.55-0.85 亿美元 | H2 转正；全年 NTM FCF 约 0.30-0.70 亿美元 | 中高 | Q3/Q4 收入连续性、GM 是否按 100bp/季改善、库存周转 |
+| 乐观公司 | 14.5-16.0 亿美元 | 较 TTM +51%-67% | 高于当前可见 run-rate；需要 etch/deposition、HBM/advanced packaging、客户 pull-in 同时强于当前预期 | GAAP 16.0%-18.0%；non-GAAP 16.5%-18.5% | GAAP 7%-9%；non-GAAP 8%-11% | EBITDA 1.70-2.30 亿美元；GAAP 净利润 0.80-1.20 亿美元；non-GAAP 净利润 1.00-1.45 亿美元 | 明显转正；但应收/库存先升后降 | 中 | 供应链、劳动力和良率/验收能否支撑高收入；低毛利 pass-through 是否拖累 |
+| 极度乐观公司 | 17.0-19.0 亿美元 | 较 TTM +77%-98% | 显著高于当前预期；要求需求、公司捕获、利润质量和执行同时突破 | GAAP 18.5%-20.5%；non-GAAP 19.0%-21.0% | GAAP 10%-13%；non-GAAP 11%-14% | EBITDA 2.60-3.40 亿美元；GAAP 净利润 1.30-1.90 亿美元；non-GAAP 净利润 1.60-2.30 亿美元 | 强正向，但营运资本波动大 | 低 | 缺少 backlog/bookings 证据；需要客户锁产能、产能利用率、Ichor-branded content 和供应链同时成立 |
+
+汇总校验：
+
+- 不重复计算：gas delivery、chemical delivery、precision assemblies 与 proprietary products 可能服务同一 OEM 工具预算，不能把各产品乐观上限简单相加；公司层收入已做去重。
+- 一次性项目：重组、设施退出、库存减值等影响 GAAP 利润，基准经营质量主要用 non-GAAP 趋势判断，但现金流必须回到 GAAP 现金口径验证。
+- 低毛利 pass-through：Ichor 增收可能来自采购件和外包集成放大，若 non-GAAP 毛利率不上升，收入上修对经营价值传导会被降权。
+- 传统/非核心抵消：其他非核心业务不是增长主线；若非半导体需求继续弱，抵消项在悲观和基准下已处理，不在第五步重复惩罚。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：只校准前四步情景，不重新预测。校准动作限定为：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次：需求风险在第一步，收入确认风险在第二步，份额/价格/成本风险在第三步，公司组合和现金流风险在第四步，可信度在本节校准。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q2 官方收入指引 2.90-3.10 亿美元，中位数 3.00 亿美元 | 收入基数、公司汇总 | 把基准 NTM 起点从 Q1 年化 10.24 亿美元上修到至少 12.0 亿美元 run-rate 附近 | Q2 EPS 指引显示经营杠杆开始恢复 | 若 Q2 达标但库存继续升，现金流仍需验证 | 基准保留；悲观不能低于已可见 Q2 路径太多 |
+| 2026Q1 non-GAAP GM 12.8%，电话会口径 Q2 GM 13%-14%、H2 每季约 +100bp | 产品贡献、公司利润 | 不直接提高收入 | 是最大利润率上修证据；支持基准和乐观毛利率改善 | 需要 Mexico/Malaysia/India 转移和利用率兑现 | 基准保留，乐观保留；若 Q3 GM 未改善则下移 |
+| SEMI 与行业资料显示 2026/2027 WFE、DRAM/HBM、advanced packaging 上行 | 产品需求 | 支持 gas/chemical delivery 和 precision assemblies 需求池扩张 | 高端 mix 有利，但 Ichor 属低毛利集成商，不能自动给高毛利 | 订单转收入有 1-3 季度滞后 | 需求基准和乐观保留；极度乐观需公司证据 |
+| Ichor 不披露 backlog/bookings/RPO/product split | 证据可信度 | 限制基准以上收入可见度 | 限制产品 margin 估算精度 | 无法判断订单取消和 push-out | 极度乐观下移为上限；产品拆分可信度降到中/低 |
+| 客户集中和 OEM 议价 | 产品贡献 | 若客户转内制或 share loss，gas/chemical 收入下修 | 价格、BOM 和成本传导受限 | 客户排产变化会造成库存和应收波动 | 在第三步处理，不在公司层重复扣减 |
+| 库存增加与 Q1 FCF 为负 | 公司汇总 | 短期支持 Q2/H2 交付，但若订单延迟会压收入确认 | 库存减值风险会压 GAAP margin | Q1 operating cash flow -290 万美元、FCF -998 万美元，是现金流反证 | 在第四步现金流处理；不再重复压需求 |
+| Proprietary products 和 Ichor-branded content | 产品贡献、利润质量 | 小基数可提升收入上限 | 若 design-in 成功，是毛利率上修关键 | 需要客户 qualification 转量产 | 基准小比例保留；大幅增量移入乐观/附录 |
+| HBM4、3D DRAM、Rubin/MI400 等 2027+ 技术路线 | 需求和远期期权 | 可能提高 2027H2 以后订单 | 有利高复杂度模块，但 NTM 时间表不充分 | 客户认证和量产节点可能后移 | NTM 极度乐观仅作上限；远期跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | WFE 订单或客户交付后移，NTM 收入仅 10.5-11.5 亿美元，利润率修复不足 | Q2 指引已明显高于 Q1，说明不能假设需求立即坍塌 | backlog 不披露、库存高、客户集中 | 保留 | 下行情景，主要用于判断 Q2 后断档或毛利率失败 | 中 | WFE push-out 已在需求和收入确认处理，不再重复压产品毛利和公司汇总 |
+| 基准 | Q2 指引兑现，H2 温和增长，NTM 收入 12.5-13.5 亿美元，non-GAAP GM 14.5%-16.0% | Q1/Q2 A 级收入锚，SEMI/WFE 上行，管理层毛利率改善路径 | 产品线收入拆分为估算，未披露订单质量 | 保留 | 主情景 | 中高 | 客户集中作为份额/价格风险处理一次，不再作为需求反证重复扣减 |
+| 乐观 | WFE/HBM/advanced packaging 强于当前预期，收入 14.5-16.0 亿美元，毛利率和现金流同步改善 | 行业需求强、Q2 ramp 陡、管理层称客户交付时间加速 | 供应链、劳动力、验收和 BOM pass-through 可能限制利润兑现 | 保留 | 上行情景，需要 Q3 指引和 GM 验证 | 中 | 库存增加同时是交付准备和现金流占用，只在现金流层处理 |
+| 极度乐观 | 需求、公司捕获、利润质量和执行同时突破，收入 17.0-19.0 亿美元 | HBM4/Rubin/MI400/3D NAND/GAA 都可能提高工具复杂度；Ichor 当前 run-rate 已上修 | 缺少 backlog/book-to-bill、客户锁产能、产品线订单和专有产品量产证据 | 下移 | 乐观上限/附录跟踪，不作为当前 NTM 主判断 | 低 | 远期技术路线不能同时作为需求、收入基数和利润率三次加分 |
+
+可信度结论：公司总收入基准由 A 级财务指引支撑，可信度中高；产品拆分依赖 C 级估算，可信度中；proprietary products 的增量和极度乐观情景依赖 C/D 级证据，可信度低。极度乐观仍可保留为上限，但校准后不应进入主经营判断。
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。Ichor NTM 收入最可能处在 12.5-13.5 亿美元，较 2026Q1 TTM 增长约 30%-41%；收入增长主要来自 gas delivery 和 chemical delivery 随 WFE、etch/deposition、HBM/advanced packaging 订单恢复，而不是来自数据中心直接采购。
+- NTM 收入结论：Q2 指引已经把公司从 2025Q4 trough 拉回约 12 亿美元年化 run-rate，基准不需要激进假设；但从 13.5 亿美元向 16 亿美元以上走，需要 Q3/Q4 指引继续顺季增长、客户交付时间继续加速，并看到 Lam/Applied/TEL 在 etch/deposition、memory/HBM、advanced packaging 上持续上修。
+- 利润/现金流结论：利润弹性大于收入弹性，但前提是 non-GAAP 毛利率从 12.8% 向 15%-16% 以上修复。若收入达标但毛利率停在 13%附近，收入增长大部分是低毛利 pass-through，经营价值传导会明显打折。现金流必须从 Q1 的负 FCF 转正，否则库存和应收会成为反证。
+- 主要传导瓶颈：订单可见度低、客户集中、OEM 议价、核心部件非完全自有、产品线拆分不披露、库存周转和产能转移执行。Ichor 的竞争力在 design-in、工程协同和交付可靠性，不在不可替代核心 RF/valve/MFC/filtration IP。
+- 乐观情景成立条件：Q2 实际收入接近或超过 3.00 亿美元中位数；Q3 指引继续高于 Q2；non-GAAP GM 进入 14.5%-15%区间；管理层继续确认 gas panel pull-in、etch/deposition strength、leading-edge memory/logic strength；库存转化为收入且 operating cash flow 转正。
+- 极度乐观情景成立条件：客户在 H2 2026 到 2027Q1 明确锁定产能或给出更长交付窗口；Lam/AMAT/TEL 等 OEM 的 WFE 订单持续上修；Ichor 在 proprietary products 或 Ichor-branded content 上披露可量化量产收入；Mexico/Malaysia/India footprint 改善使 GM 接近或超过 19%；供应链和劳动力不限制交付。当前证据不足，因此只作为上限跟踪。
+- 悲观情景触发条件：Q2 低于 2.90 亿美元或 Q3 指引不再增长；non-GAAP GM 未达到 13%-14%并停在 13%以下；客户 push-out 或内制迹象增加；库存继续上升但收入和现金流不转正；WFE/DRAM/HBM/advanced packaging 订单被主要客户下修。
+- 后续跟踪数据：Ichor Q2 实际收入、Q3 指引、non-GAAP GM、operating cash flow、inventory turns、DSO、capex；管理层是否披露 backlog 替代线索、gas panel pull-in、proprietary product 量产收入、Ichor-branded content；Lam/Applied/TEL/ASML/KLA 对 WFE、memory、etch/deposition、advanced packaging 的订单和客户交付描述；SEMI WWSEMS、300mm Fab Outlook、DRAM/HBM/NAND capex 更新。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司经营数据截至 Ichor 2026Q1 财报发布日 2026-05-04；报告撰写和外部资料核验日为 2026-06-12；行业资料主要使用 2026-06-11 项目内正式行业报告和 2025H2-2026H1 公开资料。
+- 主要收入、订单、指引和利润率来源：
+  - Ichor Holdings, Ltd. Announces First Quarter 2026 Financial Results, Business Wire, 2026-05-04: https://www.businesswire.com/news/home/20260504264377/en/Ichor-Holdings-Ltd.-Announces-First-Quarter-2026-Financial-Results
+  - Ichor Holdings Q1 2026 earnings exhibit, SEC: https://www.sec.gov/Archives/edgar/data/1652535/000165253526000028/ex-991_26q1xearnings.htm
+  - Ichor Holdings, Ltd. Announces Fourth Quarter and Fiscal Year 2025 Financial Results, Business Wire, 2026-02-09: https://www.businesswire.com/news/home/20260209131552/en/Ichor-Holdings-Ltd.-Announces-Fourth-Quarter-and-Fiscal-Year-2025-Financial-Results
+  - Ichor 2024 Form 10-K business description and customer concentration discussion, SEC: https://www.sec.gov/Archives/edgar/data/1652535/000162828025006992/ichr-20241227.htm
+  - Ichor Q1 2026 earnings call transcript, gross margin and operating leverage remarks, The Motley Fool / Investing.com transcript copies, 2026-05-04: https://www.fool.com/earnings/call-transcripts/2026/05/04/ichor-ichr-q1-2026-earnings-call-transcript/ and https://www.investing.com/news/transcripts/earnings-call-transcript-ichor-holdings-q1-2026-earnings-beat-boosts-stock-93CH-4657499
+- 项目内公司与行业来源：
+  - `公司调研/晶圆制造_前道设备/ICHR_Ichor_Holdings_公司调研_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体设备子系统与真空_RF_流体模块_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体高纯水、气体与化学流体系统_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_存储前道制造设备_2026-06-11.md`
+- 主要行业来源：
+  - SEMI, Global Semiconductor Equipment Sales Projected to Reach a Record of $156 Billion in 2027, 2025-12: https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-projected-to-reach-a-record-of-156-billion-dollars-in-2027-semi-reports
+  - SEMI / PRNewswire, SEMI Projects Double-Digit Growth in Global 300mm Fab Equipment Spending for 2026 and 2027, 2026-04-01: https://www.prnewswire.com/news-releases/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027-302730416.html
+  - SEMI, Global Semiconductor Equipment Billings Increased 14% Year-Over-Year in Q1 2026, 2026-06-04: https://www.semi.org/en/semi-press-release/semi-reports-global-semiconductor-equipment-billings-increased-14-percent-year-over-year-in-q1-2026
+  - Lam Research, How Deposition and Etch Are Reshaping Chips for the AI Era, 2026-04-14: https://newsroom.lamresearch.com/how-deposition-and-etch-are-reshaping-chips-for-the-ai-era?blog=true
+  - Applied Materials Q2 FY2026 Results and memory/HBM materials engineering materials, 2026-05-14 / 2026-02-12: https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-second-quarter-2026-results
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 若 Q2 midpoint 兑现且 H2 每季继续增长，全年收入大概率高于 2025 的 9.4765 亿美元，并可能进入 12 亿美元以上年化区间；但本报告不把 FY2026 全年精确值作为主口径。
+  - FY2027 的主要弹性来自 HBM4/Rubin/MI400/custom ASIC、advanced packaging、3D NAND conversion、GAA/2nm 和客户工具平台延续；对 Ichor 来说，这些必须通过 WFE OEM 订单和收入确认进入报表。
+  - 长期 run-rate 若超过 17-19 亿美元，需要公司层 backlog 或客户锁单、产能和供应链可交付、proprietary products 量产、毛利率接近 19%-21%等多项证据；截至 2026-06-12 仍是极度乐观上限。
+- 未使用资料：未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、模型比较、全公司排序结果、市场定价或估值倍数作为经营证据。

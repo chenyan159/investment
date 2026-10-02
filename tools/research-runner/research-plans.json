@@ -1,0 +1,98 @@
+[
+  {
+    "id": "company",
+    "label": "公司调研",
+    "legacy": "基本面/公司调研/研究方法/调研方案.md",
+    "directory": "基本面/公司调研/研究方案"
+  },
+  {
+    "id": "industry",
+    "label": "行业调研",
+    "legacy": "基本面/行业调研/研究方法/行业调研方案.md",
+    "directory": "基本面/行业调研/研究方案"
+  },
+  {
+    "id": "company-investment-decision",
+    "label": "公司情景投资决策",
+    "legacy": "分析报告/公司情景投资决策/研究方案.md",
+    "directory": "分析报告/公司情景投资决策/研究方案"
+  },
+  {
+    "id": "company-comparison",
+    "label": "公司对比",
+    "legacy": "分析报告/公司对比/研究方案.md",
+    "directory": "分析报告/公司对比/研究方案"
+  },
+  {
+    "id": "company-sentiment",
+    "label": "公司情绪",
+    "legacy": "情绪面/研究方法/研究方案.md",
+    "directory": "情绪面/研究方案"
+  },
+  {
+    "id": "background-1",
+    "label": "AI产业链全局图谱与口径字典",
+    "legacy": "基本面/行业调研/研究方法/产业背景：AI产业链全局图谱与口径字典.md",
+    "directory": "基本面/行业调研/横向专题/AI产业链全局图谱与口径字典/研究方案",
+    "directoryAliases": [
+      "基本面/行业调研/AI产业链全局图谱与口径字典/研究方案"
+    ],
+    "outputRoot": "基本面/行业调研/产业背景",
+    "defaultOutputDir": "基本面/行业调研/产业背景"
+  },
+  {
+    "id": "background-2",
+    "label": "AI产业链瓶颈与反证指标总表",
+    "legacy": "基本面/行业调研/研究方法/产业背景：AI产业链瓶颈与反证指标总表.md",
+    "directory": "基本面/行业调研/横向专题/AI产业链瓶颈与反证指标总表/研究方案",
+    "directoryAliases": [
+      "基本面/行业调研/AI产业链瓶颈与反证指标总表/研究方案"
+    ],
+    "outputRoot": "基本面/行业调研/产业背景",
+    "defaultOutputDir": "基本面/行业调研/产业背景"
+  },
+  {
+    "id": "background-3",
+    "label": "全球AI需求与Token经济框架",
+    "legacy": "基本面/行业调研/研究方法/产业背景：全球AI需求与Token经济框架.md",
+    "directory": "基本面/行业调研/横向专题/全球AI需求与Token经济框架/研究方案",
+    "directoryAliases": [
+      "基本面/行业调研/全球AI需求与Token经济框架/研究方案"
+    ],
+    "outputRoot": "基本面/行业调研/产业背景",
+    "defaultOutputDir": "基本面/行业调研/产业背景"
+  },
+  {
+    "id": "background-4",
+    "label": "数据中心建设规模",
+    "legacy": "基本面/行业调研/研究方法/产业背景：数据中心建设规模.md",
+    "directory": "基本面/行业调研/横向专题/数据中心建设规模/研究方案",
+    "directoryAliases": [
+      "基本面/行业调研/数据中心建设规模/研究方案"
+    ],
+    "outputRoot": "基本面/行业调研/产业背景",
+    "defaultOutputDir": "基本面/行业调研/产业背景"
+  },
+  {
+    "id": "background-5",
+    "label": "头部AI芯片",
+    "legacy": "基本面/行业调研/研究方法/产业背景：头部AI芯片.md",
+    "directory": "基本面/行业调研/横向专题/头部AI芯片/研究方案",
+    "directoryAliases": [
+      "基本面/行业调研/头部AI芯片/研究方案"
+    ],
+    "outputRoot": "基本面/行业调研/产业背景",
+    "defaultOutputDir": "基本面/行业调研/产业背景"
+  },
+  {
+    "id": "conference",
+    "label": "会议调研",
+    "legacy": "基本面/行业调研/研究方法/会议调研方案.md",
+    "directory": "基本面/行业调研/横向专题/会议调研/研究方案",
+    "directoryAliases": [
+      "基本面/行业调研/会议调研/研究方案"
+    ],
+    "outputRoot": "基本面/行业调研/产业背景",
+    "defaultOutputDir": "基本面/行业调研/产业背景/顶级会议信息"
+  }
+]

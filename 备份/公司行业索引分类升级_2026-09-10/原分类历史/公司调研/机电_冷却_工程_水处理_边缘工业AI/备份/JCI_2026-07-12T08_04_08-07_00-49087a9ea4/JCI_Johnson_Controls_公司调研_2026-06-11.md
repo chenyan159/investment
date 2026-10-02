@@ -1,0 +1,294 @@
+# JCI / Johnson Controls 公司调研：商业楼宇、数据中心热管理与 OpenBlue 平台（2026-06-11）
+
+> 研究范围：本报告只结合 `基本面/行业调研/` 中与数据中心机电、冷却、液冷、DCIM/BMS、MEP、冷却液/水处理相关的行业资料，以及联网检索到的 Johnson Controls 官方公告、SEC 文件、投资者材料、产品页和公开行业报道。未读取、引用或继承 `特征量化/` 内容；未以同目录既有公司报告为底稿。
+>
+> 关键口径：JCI 不披露“AI 数据中心收入”单列数据。本报告中所有“AI/DC 相关收入、BOM、每 MW/每 rack/每 GPU 含量、产能美元计、取消率/交期”等为基于官方 backlog/order、分部收入、产品规格和行业资料的模型估算，均标注为估算，不等同于公司披露。
+
+## 结论摘要
+
+- Johnson Controls（JCI）已经从“综合楼宇设备 + 住宅/轻商 HVAC + 安防消防”的传统建筑系统公司，转成更纯粹的商业楼宇解决方案公司。2025 年完成出售 Residential & Light Commercial HVAC 给 Bosch 后，JCI 的投资叙事明显转向商业建筑生命周期服务、Applied HVAC、Controls、数据中心热管理、OpenBlue/Metasys 数字化和高利润服务。
+- 投资人眼中的 JCI 当前不是纯 AI 硬件股，而是 AI 数据中心 facility layer 受益者：它不卖 GPU、服务器或交换机，但卖 AI 数据中心必须采购的冷源、热排、CDU/液冷接口、BMS/控制、消防安防和生命周期服务。相对 Vertiv，JCI 的 AI 纯度较低；相对传统 HVAC 公司，它的数据中心订单、YORK/Silent-Aire 产品栈和服务网络更完整。
+- 最新 FY2026 Q2（截至 2026-03-31，2026-05-06 披露）显示需求明显加速：销售额 $6.142B，同比 +8%，有机 +6%；调整 EPS $1.19，同比 +45%；订单 +30% 有机增长；backlog 达 $20.0B，同比 +26%。其中 Americas backlog $14.9B，同比 +32%，Q2 订单 $5.3B，同比 +40%，官方明确说大规模数据中心项目需求支撑 backlog 和 orders。
+- 数据中心是 JCI 最近 12 个月最重要的边际变化。模型估算 FY2026 Q2 AI/DC 相关收入约 $0.8-1.1B，占季度收入 13-18%；FY2026 年化 AI/DC 相关收入约 $3.2-4.5B，占 continuing revenue 约 13-18%。更高比例体现在新增订单和 backlog，而不是当季收入。
+- 高增长关键产品：YORK YVAM/YDAM/YK-HT 等高密度 chillers、Silent-Aire CDU/模块化热管理、OpenBlue/Metasys 控制与服务、Alloy 冷板/微通道液冷（2026-05 已完成收购）、Accelsius NeuCool 两相 D2C 液冷（战略投资）、数据中心消防/安防 attach。
+- 未来 12 个月公司整体增长仍会低于纯数据中心订单增长，因为 JCI 还有大量教育、医疗、工业、传统楼宇服务和区域业务。基准情景看 FY2027 continuing organic sales +6-8%；乐观 +9-12%；极度乐观 +13-17%。AI/DC 相关收入基准 +25-35%，乐观 +45-60%，极度乐观 +75-100%。
+
+## 1. 公司整体业务、产业链位置与近三年变动
+
+### 1.1 公司做什么
+
+Johnson Controls 是商业建筑与关键设施的系统供应商，业务覆盖：
+
+| 类别 | 主要内容 | 与 AI 数据中心关系 |
+|---|---:|---|
+| HVAC / Applied HVAC | YORK 冷水机组、空气冷却/水冷磁悬浮机组、工业制冷、空气处理、热泵、冷却塔、dry cooler/economizer 等 | AI 数据中心 facility cooling 核心设备；高 rack density 使高温冷水、低水耗、占地紧凑、快速部署更重要 |
+| Silent-Aire / 数据中心热管理 | CDU、模块化冷却、机房/机列侧热管理、定制化 hyperscale 方案 | 从传统风冷延伸到液冷接口，连接 rack/chip 侧热量和 facility chilled-water / warm-water loop |
+| Controls / Building Automation | Metasys、OpenBlue、Facility Explorer、HVAC controls、能效优化、数字孪生/远程运维 | DCIM/BMS/EPMS 的楼宇控制层，控制冷源、气流、水路、能耗、告警和服务闭环 |
+| Fire & Security | Simplex、Tyco、Ansul、Zettler、access control、video/security 等 | 数据中心是高价值、低容错资产，消防、气体灭火、门禁、视频、合规检测是必配项，但 AI 纯度低于冷却 |
+| Services | 维护、改造、retrofit、commissioning、managed services、能源效率项目 | 高毛利、粘性强；数据中心追求 uptime，使服务 attach 和长期合同价值上升 |
+
+产业链位置：JCI 位于 AI 基建的 facility infrastructure 层，主要在“芯片/服务器/rack 产生热量之后”的热移除和楼宇控制链条上变现。它的直接上游包括压缩机、换热器、泵阀、传感器、控制器、冷板/CDU 组件、制冷剂、钢/铜/铝和施工安装资源；直接下游是 hyperscaler、colocation、企业数据中心、EPC/MEP 总包、商业建筑业主、医疗/教育/工业客户。
+
+### 1.2 投资人心中的 JCI
+
+JCI 传统上被看作：
+
+- 大型成熟楼宇系统公司，增长中速、现金流稳、服务占比较高；
+- HVAC、消防安防、楼宇自动化的综合供应商；
+- 估值通常低于高纯度数据中心电力/散热平台，但高于低增长建筑设备公司。
+
+2025-2026 年重新定价的原因：
+
+- 住宅/轻商 HVAC 剥离后，JCI 业务更偏商业楼宇和关键设施；
+- Americas 数据中心订单快速放大，Q1 FY2026 Americas systems orders 同比大幅增长，Q2 FY2026 total orders +30%，backlog $20B；
+- YORK/Silent-Aire/OpenBlue 加上 Alloy/Accelsius，使 JCI 开始讲“chip-to-chiller / chip-to-ambient”的完整热管理叙事；
+- FY2026 指引连续上调，利润率扩张和 $5B ASR 支撑 EPS。
+
+### 1.3 最近三年重大变动、转型和收购
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2024-07-23 宣布，2025-08-01 完成 | 向 Bosch 出售 Residential & Light Commercial HVAC；交易总价值最初披露 $8.1B，JCI 对价约 $6.7B；完成公告称税后和交易费后净现金约 $5.0B，并启动 $5.0B 加速回购 | 战略上退出大部分住宅/轻商 HVAC，转向 commercial building solutions；FY2023 R&LC HVAC 收入约 $4.5B，剥离后收入规模下降但组合更聚焦、利润率更可控 |
+| FY2025-FY2027 | 多年重组计划，目标处理剥离后的 stranded costs；预计一次性成本约 $400M，完成后年化节省约 $500M | 利润率扩张和 EPS 提升的重要来源；执行风险在组织整合、ERP、区域安防资产处置 |
+| 2025-09 | 推出 Silent-Aire CDU 平台，冷却能力 500kW 到 10MW；1MW in-row 样本 1050kW 冷却能力、约 21kW 功耗、25% 丙二醇 | 从房间级/设备级冷却进入高密度液冷 facility interface；直接对应 AI rack density 上升 |
+| 2025-10 | 对 Accelsius 进行 multi-million dollar 战略投资；Accelsius NeuCool 为两相 direct-to-chip 液冷 | 期权属性强，不等同于并表收入；若两相液冷被 hyperscaler 采纳，可补齐芯片侧技术栈 |
+| 2026-02 | 发布 gigawatt-scale AI 数据中心热管理 reference design；推出 YORK YDAM、预览 YK-HT | 把 YORK、Silent-Aire、OpenBlue、冷却塔/economizer 打包为大项目解决方案，帮助进入早期设计/spec-in 阶段 |
+| 2026-02 签署，2026-05-13 完成 | 收购 Alloy Enterprises；Alloy 拥有 proprietary thermal management platform、advanced direct liquid cooling components 和 Stack Forging 制造能力，JCI 公告称可提升热管理效率、降低压降 | 使 JCI 从 facility cooling 进一步靠近 GPU/CPU/memory/network interface 冷板侧，但客户认证和规模化仍需验证 |
+| 2025-10 / FY2026 Q1 | 出售 ADT Mexico Security，净 proceeds $207M；FY2026 Q1 录得 $70M pre-tax gain；FY2026 Q2 后完成一项 EMEA Security 业务出售 | 继续梳理安防资产；暗示低协同或低增长安防资产可能被优化 |
+
+## 2. 最新股价、估值、财务状况
+
+### 2.1 市场数据快照
+
+| 指标 | 数值 | 日期/口径 |
+|---|---:|---|
+| 股价 | $144.01 收盘；$144.51 盘后 | StockAnalysis，2026-06-11 4:00 PM / 5:54 PM EDT |
+| 市值 | $87.86B | StockAnalysis，2026-06-11 |
+| 企业价值 EV | $95.69B | StockAnalysis，2026-06-11 |
+| PE | 42.77x | StockAnalysis valuation table，2026-06-11；同页 TTM EPS 因 discontinued operations/调整项存在口径差异，后文更重视指引 PE 和 forward PE |
+| Forward PE | 26.22x | StockAnalysis，2026-06-11 |
+| PS / Forward PS | 3.56x / 3.32x | StockAnalysis，2026-06-11 |
+| TTM 收入 | $24.43B | StockAnalysis，2026-06-11 |
+| 收入增速 | FY2026 Q2 reported +8%，organic +6%；FY2026 guide organic 约 +6% | JCI FY2026 Q2 公告，2026-05-06 |
+| 毛利率 | 36.56% | StockAnalysis TTM，2026-06-11 |
+| 营业利润率 | 14.39% | StockAnalysis TTM，2026-06-11 |
+| 净利率 | 14.45% | StockAnalysis TTM，包含出售/非经常项影响；2026-06-11 |
+| FY2026 指引 | Q3 organic sales +~6%，adj EPS ~$1.28；FY2026 organic sales +~6%，adj EPS ~$4.85，adjusted FCF conversion ~100% | JCI FY2026 Q2 公告 |
+
+估值判断：以 $144 股价和 FY2026 adjusted EPS 指引 ~$4.85 计，指引 PE 约 29.7x；数据商 forward PE 26.22x 反映下一年度盈利预期。由于 FY2025-FY2026 受住宅/轻商 HVAC 出售、ASR、discontinued operations 和重组项影响，trailing PE 的可比性弱于 forward PE。这个估值已经显著包含数据中心热管理和利润率改善预期，不再是低估值传统楼宇设备股。
+
+### 2.2 资产负债表与财务健康
+
+| 指标 | 数值 | 评价 |
+|---|---:|---|
+| 现金 | $698M | 现金不高，但有 $2.5B committed revolver，2026-03-31 无提款 |
+| 总债务 | $9.523B | 绝对债务较高，但可由稳定服务现金流和 backlog 支撑 |
+| 净债务 | $8.825B | 较 2025-09-30 的 $9.501B 降低 |
+| Net debt / adjusted EBITDA | 2.0x | 比 2025-09-30 的 2.4x 改善，处于可控水平 |
+| Current ratio | 1.04 | 短期流动性中性偏紧，但 deferred revenue 和项目型营运资本结构会压低流动比率 |
+| 工作资本 | $386M | 较 2025-09-30 的 -$779M 改善 |
+| RPO | $26.3B，约 67% 预计两年内确认收入 | 长期项目与服务合同提供收入可见度 |
+| 回购 | $5.0B ASR 已完成，平均 $114.43/股；FY2026 Q2 另回购 $215M | 对 EPS 有明显增厚，同时降低现金冗余 |
+
+财务健康结论：健康但不是“净现金型”公司。核心风险不是偿债，而是估值、订单转换、项目执行和数据中心扩产导致的营运资本压力。JCI 的财务状态适合承接大型项目，但如果 AI 数据中心订单快速放大，瓶颈更可能来自供应链、现场交付、工程资源、客户电力接入延期，而不是资产负债表本身。
+
+## 3. 最新及最近 4 次财报：收入、订单、backlog、AI/DC 占比
+
+| 财报季度 | 披露日期 | 收入与增长 | 调整 EPS / 利润率 | 订单、backlog、交期与取消率 | 分部/业务收入 | AI/DC 相关收入占比估算 |
+|---|---:|---:|---:|---|---|---:|
+| FY2026 Q2（截至 2026-03-31） | 2026-05-06 | $6.142B，reported +8%，organic +6% | GAAP EPS $0.99；adj EPS $1.19；adjusted segment EBITA margin 18.5% | orders $7.4B，organic +30%；backlog $20.0B，organic +26%；Americas orders $5.3B +40%，backlog $14.9B +32%；大型 DC 项目是主要支撑。大型项目交付窗口估算 6-24 个月；取消率未披露，模型假设低个位数但延期风险高 | Americas $4.121B（67.1%），EMEA $1.282B（20.9%），APAC $0.739B（12.0%）；Products & Systems $4.199B（68.4%），Services $1.943B（31.6%） | 13-18%，约 $0.8-1.1B；新增订单占比高于收入占比 |
+| FY2026 Q1（截至 2025-12-31） | 2026-02-04 | $5.797B，reported +7%，organic +6% | GAAP EPS $0.90；adj EPS $0.89 | orders organic +39%；backlog $18.2B，organic +20%；Americas orders +56%，backlog $13.3B +22%，官方称由数据中心项目加速投资驱动 | Americas $3.843B（66.3%），EMEA $1.261B（21.8%），APAC $0.693B（12.0%） | 12-17%，约 $0.7-1.0B |
+| FY2025 Q4（截至 2025-09-30） | 2025-11-05 | $6.4B，reported +3%，organic +4%；FY2025 全年 $23.6B，organic +6% | GAAP EPS $0.42；adj EPS $1.26；FY2025 adj EPS $3.76 | Q4 orders +6%；systems & services backlog $14.9B，organic +13%；Americas backlog $10.6B +13%。公司称 advanced data center cooling 是技术领导力重点 | Americas $4.325B，EMEA $1.337B，APAC $0.780B | 10-14%，约 $0.64-0.90B |
+| FY2025 Q3（截至 2025-06-30） | 2025-07-29 | $6.1B，reported +3%，organic +6% | GAAP EPS $0.94；adj EPS $1.05 | orders +2%；systems & services backlog $14.6B，organic +11%；Americas backlog $10.3B +10%，Applied HVAC/Controls 继续强 | Americas $4.042B，EMEA $1.273B，APAC $0.737B | 9-12%，约 $0.55-0.73B |
+| FY2025 Q2（截至 2025-03-31） | 2025-05-07 | $5.7B，reported +1%，organic +7% | GAAP EPS $0.71；adj EPS $0.82；segment margin 扩张 | orders +5%；Building Solutions backlog $14.0B，organic +12%；North America backlog $9.8B +11%。交期/取消率未披露 | 当时仍披露 Building Solutions North America $2.916B、EMEA/LA $1.085B、APAC $0.542B、Global Products $1.133B；Global Products organic +8%，剔除剥离后 Applied HVAC >20% | 8-11%，约 $0.45-0.62B |
+
+财报核心变化：FY2025 Q2 到 FY2026 Q2，backlog 从 $14.0B 增至 $20.0B，约 +43% 绝对增长；订单增长从 +5% 到 +30%。这不是普通 HVAC 周期，而是大项目、长交期、数据中心/关键设施驱动的订单曲线变化。
+
+## 4. FY2026 最新指引、收入占比和突出业务
+
+### 4.1 FY2026 Q2 后指引
+
+| 指引项 | 最新指引 |
+|---|---:|
+| FY2026 Q3 organic sales growth | 约 +6% |
+| FY2026 Q3 operating leverage | 约 45% |
+| FY2026 Q3 adjusted EPS | 约 $1.28 |
+| FY2026 full-year organic sales growth | 约 +6%，此前为 mid-single digits |
+| FY2026 full-year operating leverage | 约 50% |
+| FY2026 full-year adjusted EPS | 约 $4.85，此前约 $4.70 |
+| FY2026 adjusted FCF conversion | 约 100% |
+
+### 4.2 最新季度收入占比和增长
+
+| 维度 | FY2026 Q2 收入 | 占比 | 同比/有机变化 | 判断 |
+|---|---:|---:|---:|---|
+| Americas | $4.121B | 67.1% | reported +7%，organic +7% | 最关键增长引擎；Americas backlog $14.9B，占总 backlog 74.5% |
+| EMEA | $1.282B | 20.9% | reported +7%，organic +1% | 中东冲突和一次性服务收入下滑压制；利润率改善显著 |
+| APAC | $0.739B | 12.0% | reported +16%，organic +13%；Applied HVAC >20%，主要由数据中心应用带动 | 小基数但数据中心带动明显 |
+| Products & Systems | $4.199B | 68.4% | 约 +8.6% reported | 数据中心项目主要先体现为系统订单和 backlog |
+| Services | $1.943B | 31.6% | 约 +7.3% reported | 高粘性、高毛利；数据中心服务 attach 是未来二阶增长点 |
+
+### 4.3 公司最侧重的业务
+
+最突出业务不是传统低密度楼宇 HVAC，而是以下组合：
+
+1. 高密度数据中心热管理：YORK YVAM/YDAM/YK-HT、水冷/风冷 chillers、dry cooler/economizer、cooling tower arrays。
+2. Silent-Aire CDU 与模块化冷却：500kW 到 >10MW CDU 平台，面向 in-row、white-space perimeter、edge inference 和 AI factories。
+3. OpenBlue/Metasys 控制与服务：把冷源、泵阀、传感器、BMS、告警、能效、远程运维和服务合同绑定。
+4. 液冷期权：Alloy 微通道冷板/Stack Forging 平台、Accelsius 两相 D2C NeuCool。
+5. 数据中心消防安防 attach：Simplex/Tyco/Ansul/access/video，对收入贡献稳定但 AI 纯度和增速低于热管理。
+
+可跳过/低优先业务：
+
+- 已剥离的住宅/轻商 HVAC，不应再作为 continuing JCI 的核心成长资产；
+- 普通低密度商业舒适性 HVAC、传统楼宇改造项目，增长低于 AI 数据中心；
+- 低端、分散、价格竞争强的消防安防硬件；
+- 中国/低景气 APAC 普通楼宇项目；
+- 与 AI 数据中心无关的零售、普通商业地产和小型安防安装。
+
+## 5. 重点产品和业务：当前收入贡献、增长、供需和定价力
+
+评分：1 低，5 高。收入为 FY2026 年化模型估算。
+
+| 关键产品/业务 | 对应产品/型号 | 当前收入贡献估算 | 当前增速估算 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 交叉验证 |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| 数据中心 central plant / 高密度 chillers | YORK YVAM、YDAM、YK-HT、YMC2、YZ、YVWH、YVFA、cooling tower/dry cooler/economizer | $2.0-2.8B/年 | +25-45% | 5 | 5 | 4 | 3.5 | Q2 Americas backlog +32%，orders +40%；APAC Applied HVAC >20% 且主要由 DC application 带动；YDAM 3.5MW、YK-HT 高温高 lift 对应 AI factory |
+| Silent-Aire CDU / 模块化热管理 | Silent-Aire CDU 500kW-10MW、in-row 1050kW、模块化 cooling/hydronic skid | $0.5-0.9B/年 | +50-90% | 5 | 5 | 4.5 | 3.5 | 2025-09 官方推出 CDU；1MW 样本 1050kW、21kW 功耗；1.8M sqft 生产面积；与 YORK/M&M Carnot 生态结合 |
+| OpenBlue / Metasys / controls / 数据中心服务 | OpenBlue、Metasys、Facility Explorer、HVAC controls、remote diagnostics、managed services | $0.4-0.7B/年 | +15-30% | 4 | 4 | 3 | 4 | Services 占 Q2 收入 31.6%，Americas services +10%；数据中心 uptime 和能耗优化提高 attach |
+| Alloy 微通道冷板 / Stack Forging 平台 | Cold plates、GPU/CPU/memory/network interface 液冷组件 | 目前 < $0.1B/年；2026-05 完成收购后处于整合/导入早期 | 从低基数高增 | 4.5 | 4 | 4 | 3 | 2026-05-13 完成收购；官方称补齐 GPU/CPU/memory/network interface 侧液冷，Alloy 平台可提升热管理效率并降低压降 |
+| Accelsius 两相 D2C 期权 | NeuCool two-phase D2C，single rack 到 entire data center | JCI 仅战略投资，收入贡献目前非并表/很小 | 高不确定 | 4 | 3 | 3.5 | 2.5 | 官方称两相 D2C 可较单相 D2C 降低 35% OpEx、8-17% TCO；但 JCI 并非控股并表 |
+| 数据中心消防/安防 attach | Simplex、Tyco、Ansul、气体灭火、水雾、门禁、视频、security services | $0.2-0.5B/年 | +8-18% | 3.5 | 4 | 2.5 | 3 | 数据中心方案页明确包含 fire protection / facility security；但竞争者多、AI 纯度低 |
+
+## 6. 一年后收入贡献三情景
+
+| 关键业务 | 基准情景：12 个月后 | 乐观情景：12 个月后 | 极度乐观情景：12 个月后 |
+|---|---:|---:|---:|
+| 高密度 chillers / central plant | $2.7-3.5B，+25-35%；重要性 5，紧急性 5，供需 4，溢价 3.5 | $3.5-4.5B，+45-60%；供需 4.5，溢价 4 | $4.5-5.8B，+75-100%；前提是 hyperscaler multi-site 订单集中转换、YDAM/YK-HT 快速放量；供需 5，溢价 4 |
+| Silent-Aire CDU / modular cooling | $0.8-1.2B，+40-60%；重要性 5，紧急性 5，供需 4.5，溢价 3.5 | $1.2-1.8B，+70-110%；AI rack 转液冷速度快 | $1.8-2.5B，+120-180%；前提是 CDU 成为多个 hyperscaler 标准配置并扩产顺利 |
+| OpenBlue / Metasys / controls / service | $0.55-0.9B，+20-30%；重要性 4，紧急性 4，供需 3，溢价 4 | $0.9-1.3B，+35-60%；更多数据中心将 controls + service 捆绑 | $1.3-1.8B，+70-120%；前提是 OpenBlue 成为跨站点 energy/thermal ops 层 |
+| Alloy / cold plate | $50-150M；重要性 4.5，紧急性 4，供需 4，溢价 3；前提是完成收购后的整合顺利 | $150-350M；若进入 OEM/hyperscaler 设计导入 | $350-700M；前提是 Alloy 冷板平台获得 GPU/OEM/hyperscaler 快速认证，JCI 能规模化制造 |
+| Accelsius / two-phase D2C | 非并表贡献小；可能以渠道/联合方案带来 $0-50M 影响 | $50-150M 生态收入/服务 attach | $150-300M 等效影响；前提是两相 D2C 被大客户拉入标准架构 |
+| Fire/security attach | $0.25-0.6B，+8-15%；重要性 3.5，紧急性 4，供需 2.5，溢价 3 | $0.6-0.9B，+20-35% | $0.9-1.2B，+50%+；前提是 JCI 能把消防安防和热管理一起打包 |
+
+合计模型：JCI AI/DC 相关收入 12 个月后基准约 $4.0-5.2B，乐观 $5.2-6.8B，极度乐观 $7.0-8.5B。对应全公司 continuing sales 增速分别约 +6-8%、+9-12%、+13-17%。
+
+## 7. BOM、每 MW / 每 rack / 每 GPU / 每 optical port 含量与价格传导
+
+JCI 的价值量主要按 MW 和 rack 计量；按 GPU 或 optical port 分摊只是用于理解 AI 硬件升级带来的冷却含量，不是客户真实采购单位。
+
+| 产品/业务 | BOM 内容 | JCI 内容量估算 | 价格传导链 | 备注 |
+|---|---|---:|---|---|
+| Central plant / chiller package | 高效冷水机组、压缩机、换热器、冷却塔/dry cooler、economizer、泵阀、传感器、控制柜、低 GWP 制冷剂、现场调试、服务 | $0.4-1.5M / MW IT；按 100-200kW/rack 分摊约 $40k-300k/rack；按 72 GPU/rack 分摊约 $550-4,200/GPU；optical port 直接含量约 $0 | GPU 功耗上升 -> rack thermal density 上升 -> facility cooling capacity 和 redundancy 上升 -> chiller/CDU/controls 价值量上升。长周期项目可通过 change order 和价格条款传导钢铜、压缩机、制冷剂和人工成本 | 若客户采用 warm-water / dry cooler / chillerless 架构，传统 chiller 含量下降，但高 lift、低水耗、高温热回收机组含量上升 |
+| Silent-Aire CDU / 液冷接口 | CDU、plate heat exchanger、pump、filter、valves、manifold interface、glycol/water loop、controls、冗余电源、FAT/SAT | $0.25-0.9M / MW；行业资料 100-200kW rack 中 CDU allocation 约 $30k-180k/rack；按 72 GPU/rack 约 $420-2,500/GPU；optical port 直接含量接近 $0 | GPU/rack 从 50kW 到 100-200kW -> CDU 从可选变必配 -> in-row/perimeter CDU 单 rack 或多 rack 共享 -> JCI 按项目系统报价 | Silent-Aire 1MW 样本：1050kW capacity、21kW power draw、25% propylene glycol、secondary filtration 25 micron |
+| Alloy cold plate / microchannel | GPU/CPU/memory/network interface cold plate、微通道换热结构、TIM、manifold、quick disconnect | 100-200kW rack：cold plate/TIM 约 $15k-70k；QD + manifold 约 $16k-85k；按 72 GPU/rack 冷板约 $200-1,000/GPU；按 optical port 直接约 $0，若给 network ASIC/接口分摊约 <$1-5/port | GPU TDP 和封装密度上升 -> 冷板和接口复杂度上升 -> 客户/OEM 认证后按 rack/node BOM 导入 | JCI 尚未完成并购；大规模收入取决于 NVIDIA/OEM/hyperscaler design-in，不应提前视作确定订单 |
+| OpenBlue / Metasys / controls | BMS controller、HVAC control、sensor、software subscription、digital twin、analytics、remote service、cyber/OT integration | $50k-250k / MW；$1k-10k/rack；$15-140/GPU 分摊；optical port <$1 | 数据中心能耗、PUE、告警、热冗余要求提升 -> 控制点位和软件服务增加 -> recurring service/subscription 提升 blended margin | 软件和服务毛利高，但竞争强，且客户常有自研 DCIM/EPMS |
+| Fire/security attach | 火灾探测、气体/水雾/预作用喷淋、消防阀件、access control、video、security software、inspection service | $100k-400k / MW；$5k-50k/rack 视机房面积和防火分区；GPU/optical port 直接 $0 | 数据中心 capex -> code-required 消防安防 -> 安装 + recurring inspection | 高确定性 attach，但不是 AI 性能瓶颈，溢价不如液冷/高密度热管理 |
+
+## 8. 当前产能、采纳程度、认证阶段
+
+| 产品/业务 | 当前产能能力（美元计，模型估算） | 供应链采纳程度 | 当前认证/阶段 |
+|---|---:|---|---|
+| YORK 高密度 chillers / thermal plant | 可支撑约 $3-5B/年数据中心相关 thermal plant 出货/项目交付；实际收入受现场交付和客户电力接入节奏限制 | 高。YORK 是成熟商业 HVAC 品牌，JCI 官方 reference design 已用于 gigawatt-scale AI DC 规划；Americas backlog 和 APAC applied HVAC 增长验证 demand | 成熟商用产品走 AHRI/UL/ASHRAE/低 GWP refrigerant 合规、客户 FAT/SAT、项目 commissioning；YDAM 计划 2026 年底出货，YK-HT 预计 2026 年秋季销售/可用 |
+| Silent-Aire CDU / modular cooling | $1.0-1.8B/年潜在出货能力；官方称 Silent-Aire + JCI 全球生产面积超 1.8M sqft | 中高。已经推出 500kW-10MW CDU；面向 hyperscale、colocation、AI factories；采纳由项目 spec 和客户 qualification 决定 | 走电气安全、压力/水路、控制、FAT/SAT、现场 commissioning；未看到公开 NVIDIA/OCP 认证 |
+| OpenBlue / Metasys | $0.8-1.2B/年数据中心 controls/service 可承接能力 | 高。BMS/controls 是 JCI 传统强项；数据中心需要跨冷源、泵阀、传感器、告警、能耗的集成 | 成熟商用软件/OT 系统；认证重点在客户网络安全、BMS/DCIM/EPMS 集成和运行 SLA |
+| Alloy cold plate / microchannel | 目前对 JCI 产能贡献很小；完成收购后 12 个月可形成 $0.1-0.5B 年化能力的早期区间 | 早期。技术上补齐冷板，但客户采纳需 OEM/hyperscaler 设计导入 | 收购已于 2026-05-13 完成；认证应包括泄漏、压力降、热阻、长期可靠性、材料兼容、OEM design-in；未见公开大客户认证 |
+| Accelsius NeuCool | JCI 不控股，不按产能并表；对 JCI 是生态期权 | 早期到中期。两相 D2C 技术有优势，但 hyperscaler 采用更谨慎 | 需客户安全性、介质、维护、泄漏、长期可靠性认证；JCI 目前是战略投资和方案互补 |
+| Fire/security | $0.5-1.0B/年数据中心 attach 能力 | 高但竞争充分 | NFPA/UL/FM/当地消防规范、客户 security standard、inspection service |
+
+## 9. 一年后产能、采纳和认证三情景
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| YORK / thermal plant | 产能能力 $4-6B/年；YDAM 初步交付，YK-HT 开始商用；客户采纳高 | $6-8B/年；多站点 hyperscaler 标准化采购；高温/低水耗方案成为主要 spec | $8-10B/年；大规模 AI factory 项目集中下单，JCI 取得 full thermal package 地位 |
+| Silent-Aire CDU | $1.5-2.5B/年；500kW-10MW 平台成为常规投标项 | $2.5-3.5B/年；多客户将 CDU 作为标准 rack/row interface | $3.5-5B/年；JCI 在液冷 facility interface 中与 Vertiv/Schneider/CoolIT 等形成第一梯队 |
+| OpenBlue / Metasys | $1-1.5B/年；更多项目捆绑 service | $1.5-2.2B/年；OpenBlue 进入多站点能控平台 | $2.2-3B/年；形成跨站点 AI thermal ops OS，服务 attach 明显提高 |
+| Alloy | $0.1-0.25B/年；并购完成、少量项目导入 | $0.25-0.6B/年；通过 OEM/hyperscaler 认证 | $0.6-1.0B/年；进入下一代 GPU/AI rack 冷板标准 BOM |
+| Accelsius | 主要是生态协同，JCI 收入有限 | 通过联合方案产生 $0.1-0.3B 等效项目带动 | 若两相 D2C 被大客户标准化，带动 JCI thermal plant + services 显著增长 |
+| Fire/security | $0.6-1.0B/年 | $1.0-1.4B/年 | $1.4-2.0B/年，但前提是 JCI 打包率显著提升 |
+
+## 10. 基于真实 backlog/供给的未来一年业务增速推断
+
+官方事实：
+
+- FY2026 Q2 total backlog $20.0B，同比 +26%；orders $7.4B，同比 +30%。
+- Americas backlog $14.9B，同比 +32%；orders $5.3B，同比 +40%；官方称大规模数据中心项目需求支撑。
+- Q2 remaining performance obligations $26.3B，约 67% 预计两年内确认收入。
+- FY2026 公司指引只是 organic sales +~6%，说明 backlog 强劲但并不全部在 12 个月内转换；大型项目确认受施工、电力接入、客户交付窗口影响。
+
+推断：
+
+| 情景 | 公司整体未来一年 continuing sales 增速 | AI/DC 相关收入增速 | backlog 转收入假设 | 取消/延期假设 | 供给假设 |
+|---|---:|---:|---|---|---|
+| 基准 | +6-8% | +25-35% | $20B backlog 中约 35-45% 在 12 个月内转收入；大部分 DC 项目按阶段确认 | 取消率低个位数；延期 10-20%，主要由电力接入、site readiness、GPU/rack 到货影响 | chiller/CDU 产能紧但可扩；现场调试与 skilled labor 是约束 |
+| 乐观 | +9-12% | +45-60% | DC 项目优先级高，客户支付能力强，JCI 交付窗口提前 | 取消率极低，延期 <10-15%；change order 提价顺利 | Silent-Aire/JCI 制造与供应链扩产顺利，YDAM/YK-HT 初期导入 |
+| 极度乐观 | +13-17% | +75-100% | 多个 hyperscaler/colo 大项目在 2026H2-2027H1 集中确认；JCI full thermal package 份额提高 | 取消率接近 0；延期被加急交付抵消 | CDU、chiller、control、service 同时放量；Alloy 早期导入带来增量 |
+
+反向风险：数据中心项目不取消但延期很常见。电力 interconnect、变压器/开关设备、施工许可、GPU 供货节奏、冷却方案切换都可能使 JCI backlog 延后确认。JCI 的 backlog 质量高，但 timing 风险高于普通短周期设备订单。
+
+## 11. 竞争格局、技术主流性和替代风险
+
+| 领域 | 主要竞争对手 | JCI 优势 | 风险/替代 |
+|---|---|---|---|
+| 数据中心 thermal plant / chillers | Trane Technologies、Carrier、Daikin、Vertiv、Schneider/Motivair、STULZ、Modine/Airedale、Munters、Delta | YORK 产品线深，YVAM/YDAM/YK-HT 对高密度、低水耗、紧凑 footprint 有明确产品；Silent-Aire 可做模块化 DC 方案；全球服务网络强 | Trane/Carrier 在 chillers 和大型商业 HVAC 同样强；Vertiv/Schneider 在数据中心全栈电力+热管理地位更纯；客户可能多供应商分散采购 |
+| CDU / 液冷 facility interface | Vertiv、Schneider/Motivair、CoolIT/Ecolab、LiquidStack、Delta、nVent、Eaton/Boyd、Supermicro、Cooler Master、Chilldyne | Silent-Aire CDU 500kW-10MW，能和 YORK plant、controls、service 打包 | 进入门槛在客户认证、泄漏可靠性、快速维护、压力降和现场服务；JCI 需要证明其液冷速度不慢于专业液冷厂 |
+| Cold plate / D2C | CoolIT/Ecolab、Boyd/Eaton、nVent、Delta、Aavid/BOYD、NVIDIA/OEM 自研生态、Alloy、Accelsius、LiquidStack | Alloy/Accelsius 使 JCI 有芯片侧期权，能讲 chip-to-ambient | Alloy 已完成收购，但整合、客户认证和规模化仍早期；冷板更靠近服务器/OEM，JCI 历史优势不在此；客户切换认证成本高但一旦定型，赢家集中 |
+| Controls / DCIM / BMS | Schneider EcoStruxure、Siemens Desigo、Honeywell Forge/EBI、Eaton、ABB、Vertiv、Carrier Abound、Trane controls、客户自研 DCIM | Metasys/OpenBlue installed base、HVAC 控制经验、服务网络和现场 OT 集成能力强 | 大型 hyperscaler 常自研 DCIM/energy ops；JCI 可能被限制在设备控制层，难以上升到全站操作系统 |
+| Fire/security | Honeywell、Siemens、Carrier/Kidde、Bosch、Fike、Marioff、local integrators | Tyco/Simplex/Ansul 品牌和服务网络强，可随整体数据中心方案 attach | 硬件竞争充分，局部安防资产仍在战略审视，增长和溢价不如热管理 |
+
+技术主流性判断：
+
+- 短中期主流是混合架构：高密度 GPU rack 采用 direct-to-chip / CDU / warm-water loop，facility 侧仍需要冷源、热排、冗余和控制。JCI 的 central plant + CDU + controls 符合主流。
+- 极端情景下，部分气候区和 warm-water 方案会降低传统 chilled-water 运行小时数，但不会消灭热排、泵阀、控制和服务需求。JCI 的 YK-HT/YDAM 方向本质是在适应 chillerless/dry-cooler/warm-water 趋势。
+- 真正风险在冷板/两相 D2C 的标准化归属。如果芯片/OEM 厂商控制冷板和 CDU specification，JCI 可能只能保留 facility plant 和服务份额；如果 JCI 通过 Alloy/Silent-Aire 进入早期 design-in，则 upside 明显。
+
+客户切换成本：
+
+- Chiller/central plant：高。项目设计、施工、能效、服务、备件和 commissioning 绑定，切换通常发生在新项目投标阶段，而不是运行期。
+- CDU/液冷：中高。客户认证、泄漏风险和维护流程形成壁垒，但标准化后多供应商可能并存。
+- Controls/BMS：高。点位、协议、OT 网络安全、操作培训、服务合同带来粘性。
+- Fire/security：中。合规、施工和检测服务带来一定粘性，但硬件替代更容易。
+- Alloy/Accelsius：认证前切换成本低；一旦进入 GPU/OEM rack BOM，切换成本高。
+
+## 12. 投资判断
+
+JCI 是 AI 数据中心热管理的“二阶基础设施平台”，不是纯液冷或纯 AI 硬件公司。最确定的投资逻辑是：AI rack density 提升使 central plant、CDU、controls、service 的 dollar content per MW 上升；JCI 已经通过 backlog、orders 和产品发布验证了这一趋势。最不确定的部分是芯片侧液冷：Alloy/Accelsius 代表上行期权，但不能把它们提前计入确定收入。
+
+从估值看，$144 股价、约 $87.9B 市值、forward PE 约 26x、FY2026 指引 PE 约 30x，已经反映相当多的执行改善和数据中心订单预期。后续股价继续上行需要看到三个证据：第一，Americas backlog 继续高双位数增长且转收入顺利；第二，Silent-Aire CDU 和 YDAM/YK-HT 形成可量化收入；第三，OpenBlue/服务 attach 提升，使数据中心项目不只是一次性设备销售，而是长期高毛利服务。
+
+最重要的监控指标：
+
+- FY2026 Q3 orders/backlog，尤其 Americas Products & Systems backlog；
+- 数据中心相关项目是否继续被 management 点名；
+- Silent-Aire CDU、YDAM、YK-HT 的出货/客户案例；
+- Alloy 完成收购后的整合进度，以及是否披露设计导入或客户认证；
+- Services 增速是否跟随 systems backlog 滞后上行；
+- Net debt / adjusted EBITDA 是否保持约 2x，回购是否挤压扩产/研发。
+
+## 资料来源
+
+- Johnson Controls FY2026 Q2 earnings release, 2026-05-06: https://investors.johnsoncontrols.com/news/news-details/2026/Johnson-Controls-Reports-Strong-Q2-Results-Raises-FY26-Guidance/default.aspx
+- Johnson Controls FY2026 Q2 10-Q, quarter ended 2026-03-31: https://www.sec.gov/Archives/edgar/data/833444/000083344426000050/jci-20260331.htm
+- Johnson Controls FY2026 Q1 earnings release, 2026-02-04: https://investors.johnsoncontrols.com/news/news-details/2026/Johnson-Controls-Reports-Strong-Q1-Results-Raises-FY26-Guidance/default.aspx
+- Johnson Controls FY2025 Q4/FY2025 results, 2025-11-05: https://www.prnewswire.com/news-releases/johnson-controls-reports-q4-and-fy25-results-initiates-fy26-guidance-302604936.html
+- Johnson Controls FY2025 Q3 results, 2025-07-29: https://www.prnewswire.com/news-releases/johnson-controls-reports-strong-q3-results-raises-fy25-guidance-302515480.html
+- Johnson Controls FY2025 Q2 results, 2025-05-07: https://www.prnewswire.com/news-releases/johnson-controls-reports-strong-q2-results-raises-fy25-guidance-302447970.html
+- Johnson Controls R&LC HVAC sale completion, 2025-08-01: https://www.johnsoncontrols.com/media-center/news/press-releases/2025/08/01/johnson-controls-completes-sale-of-residential-and-light-commercial-hvac-business
+- Johnson Controls R&LC HVAC sale announcement, 2024-07-23: https://www.johnsoncontrols.com/media-center/news/press-releases/2024/07/23/johnson-controls-to-sell-residential-and-light-commercial-hvac-businesses
+- Johnson Controls thermal management reference guides for gigawatt-scale AI data centers, 2026-02-02: https://www.johnsoncontrols.com/media-center/news/press-releases/2026/02/02/johnson-controls-launches-series-of-thermal-management-reference-design-guides-for-gigawattscale-ai
+- Johnson Controls YORK YDAM launch, 2026-02-03: https://www.johnsoncontrols.com/media-center/news/press-releases/2026/02/03/johnson-controls-launches-york-ydam-the-ultimate-highdensity-chiller-for-multistory-data-centers-and
+- Johnson Controls YORK YK-HT preview, 2026-02-02: https://www.johnsoncontrols.com/media-center/news/press-releases/2026/02/02/johnson-controls-previews-york-ykht-twostage-economized-centrifugal-chiller-at-ahr-expo-delivering-e
+- Johnson Controls Silent-Aire CDU launch, 2025-09-08: https://www.johnsoncontrols.com/media-center/news/press-releases/2025/09/08/johnson-controls-expands-thermal-management-offering-with-scalable-liquid-cooling-solution-to-meet-t
+- Silent-Aire CDU product page/data sheet: https://www.silent-aire.com/cdu/
+- Johnson Controls Alloy acquisition agreement, 2026-02-18: https://www.johnsoncontrols.com/media-center/news/press-releases/2026/02/18/johnson-controls-signs-agreement-to-acquire-alloy-enterprises-strengthening-data-center-thermal-mana
+- Johnson Controls Alloy acquisition completion, 2026-05-13: https://www.johnsoncontrols.com/media-center/news/press-releases/2026/05/13/johnson-controls-completes-acquisition-of-alloy-enterprises
+- Johnson Controls Accelsius strategic investment, 2025-10-06: https://www.johnsoncontrols.com/media-center/news/press-releases/2025/10/06/johnson-controls-announces-investment-in-data-center-liquid-cooling-company-accelsius
+- StockAnalysis JCI statistics and valuation, checked 2026-06-11: https://stockanalysis.com/stocks/jci/statistics/
+- Facilities Dive: data center cooling drives Johnson Controls growth, 2025-11-07: https://www.facilitiesdive.com/news/data-center-cooling-drives-johnson-controls-growth/804990/
+- Facilities Dive: Johnson Controls sees 84% systems order growth in the Americas, 2026-02: https://www.facilitiesdive.com/news/johnson-controls-sees-84-systems-order-growth-in-the-americas/811368/
+- JLL North America Data Center Report Year-end 2025: https://www.jll.com/en-us/insights/market-dynamics/north-america-data-centers
+- 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-06-11.md`
+- 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`
+- 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-06-10.md`
+- 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-06-11.md`
+- 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`

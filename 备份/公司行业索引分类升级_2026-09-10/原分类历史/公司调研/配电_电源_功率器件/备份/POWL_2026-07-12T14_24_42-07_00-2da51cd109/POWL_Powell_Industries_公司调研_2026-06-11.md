@@ -1,0 +1,416 @@
+# 公司：POWL Powell Industries 公司调研（2026-06-11）
+
+## 0. 结论先行
+
+Powell Industries（NASDAQ: POWL，下称 Powell）是北美工程定制型中压/低压配电设备、开关柜、断路器、Power Control Room / eHouse、保护控制、自动化和现场服务供应商。它不是 AI 芯片、服务器、UPS 或 rack PDU 公司；它在 AI 基建链条中的位置是 `grid / onsite generation -> MV switchgear -> eHouse / power control room -> LV distribution / controls -> data hall` 的设施侧电力瓶颈。
+
+投资人目前把 Powell 看成“AI 数据中心电力设备短缺 + 公用事业电网升级 + LNG 周期”三重暴露的小盘高弹性标的，而不是传统油气工程配套公司。这个认知变化已经有硬订单验证：FY2026Q1 数据中心订单超过 `1 亿美元`、含约 `7500 万美元`数据中心 megaproject；FY2026Q2 又收到一个超过 `7500 万美元`的数据中心 mega order；FY2026Q2 结束后，公司再披露一个超过 `4 亿美元`、与 behind-the-meter onsite generation 设计相关的数据中心 mega order，是公司史上最大订单。
+
+最新财报是 FY2026Q2，季度截至 `2026-03-31`，公告日 `2026-05-04`，10-Q filing 日 `2026-05-05`。FY2026Q2 收入 `2.966 亿美元`，同比 `+6%`；毛利率 `29.6%`；净利润 `4590 万美元`；新订单 `4.897 亿美元`，同比 `+97%`；book-to-bill 约 `1.65x`；期末 backlog `18 亿美元`，同比 `+33%`。10-Q 还披露 backlog 中约 `11 亿美元`预计未来 12 个月确认为收入。期后 `>4 亿美元`数据中心订单若加入，pro forma backlog 可超过 `22 亿美元`。
+
+核心判断：Powell 的 2026-2027 弹性不来自“800VDC 机柜电源本体”，而来自 AI 园区为了抢通电时间提前锁定中压开关柜、成套电气房/eHouse、保护控制和 onsite generation 接入包。800VDC 和 1MW rack 会提高长期电力系统复杂度，但 2026 收入主线仍是传统 AC 中压/低压成套配电。
+
+估值已经很贵。按 `2026-06-12 00:15 UTC / 2026-06-11 17:15 PT` 金融数据快照，POWL 股价约 `290.50 美元`，市值约 `106.3 亿美元`，TTM EPS `5.13 美元`，TTM P/E `56.6x`。StockAnalysis 同日附近口径给出 trailing P/E `56.7x`、forward P/E `50.0x`、P/S `9.35x`、forward P/S `8.45x`。这个估值基本要求：`>4 亿美元`数据中心订单能顺利转收入、backlog 继续上修、毛利率维持接近 `30%`，且扩产不引发项目执行失误。
+
+## 1. 业务整体、产业链位置和过去三年变化
+
+### 1.1 公司做什么
+
+Powell 设计、制造、集成和服务用于管理、控制、分配和监测电能的定制工程设备。核心客户在油气、石化、公用事业、商业和其他工业、轻轨牵引电力、政府和大学等市场。
+
+主要产品和服务：
+
+| 类别 | 代表产品/型号 | 电压/能力 | 对 AI 数据中心的意义 |
+|---|---:|---:|---|
+| ANSI metal-clad medium-voltage switchgear | `PowlVac`、`Power/Vac` switchgear | 5kV、15kV；Power/Vac breaker ratings 可到 `4000A`、`63kA` interrupting capability；UL/CSA、seismic tested | AI 园区中压配电、发电/变电接入、arc-resistant 和 FAT 交付的核心 |
+| ANSI metal-enclosed switchgear | 600V class switchgear；5kV-38kV load interrupter switchgear | indoor/outdoor；standard / arc-resistant | 数据中心、utility、LNG、工业项目的成套配电 |
+| Circuit breakers | PowlVac、Power/Vac circuit breakers、replacement breakers | Power/Vac circuit breakers UL listed、KEMA tested、ANSI C37.06-2009 | 高可靠中压保护、改造和备件 |
+| Integrated packaged solutions | PCR、eHouse、protected aisle enclosure、mobile power distribution、offshore modules | 工厂预制、集成 switchgear / motor control / automation / HVAC / fire / cabling | 缩短现场施工周期；AI campus 需要可复制 MW block |
+| Digital solutions & automation | PowlSmart intelligent devices、condition monitoring、asset management、PMS、ENMCS、SCADA/SCADA-H、Remsdaq RTU | LV/MV/HV condition monitoring、remote monitoring、SCADA/RTU | 电力可观测性、预测维护、commissioning 数据包、服务粘性 |
+| Services | start-up / commissioning、retrofit、replacement breakers、BLEU、spares、training、field service | 维护、改造、备件 | 已安装 base 的高毛利服务和客户锁定 |
+
+### 1.2 投资人心中的 Powell
+
+2023 以前，Powell 的主叙事更像工程定制型油气/石化电气设备公司，利润周期受 LNG、炼化、海工、矿业和工业 capex 影响。2024-2026 的认知变成：Powell 是北美 `switchgear / eHouse / engineered power` 紧缺供应商，受益于 AI 数据中心、电网升级和 LNG 三条长周期。
+
+市场愿意给高估值的原因：
+
+- **backlog 可见度强。** FY2026Q2 backlog `18 亿美元`，公司预计其中约 `11 亿美元`未来 12 个月确认为收入；期后 `>4 亿美元`数据中心订单进一步提高 2027 可见度。
+- **book-to-bill 快速上行。** FY2026Q1 新订单 `4.388 亿美元`、book-to-bill `1.7x`；FY2026Q2 新订单 `4.897 亿美元`、book-to-bill 约 `1.65x`。
+- **毛利率跳到新平台。** FY2025 全年毛利率 `29.4%`，FY2026Q1 `28.4%`，FY2026Q2 `29.6%`，远高于 Powell 历史中低二十区间。
+- **资产负债表给扩产和项目担保空间。** FY2026Q2 现金及短期投资 `5.449 亿美元`，无 revolver 借款，流动资产/流动负债 `2.3x`。
+
+估值风险也明显：Powell 是小体量项目型公司，订单大、客户集中、固定价项目和产能爬坡会放大执行风险；`50x`左右 forward P/E 对任何一个大单延期或毛利率回落都很敏感。
+
+### 1.3 最近三年重大业务变化
+
+| 时间 | 事件 | 对业务和估值的意义 |
+|---|---|---|
+| FY2023-FY2024 | 大型石化订单进入执行，随后 FY2025 petrochemical revenue 因 FY2023 大单接近完成而下降 | 公司从石化大单周期切到 utility / commercial / data center 多元化周期 |
+| FY2024-FY2025 | Electric Utility 和 Commercial & Other Industrial 成为增长重点 | FY2025 electric utility 收入 `2.790 亿美元`、同比 `+50%`；commercial & other industrial 收入 `1.782 亿美元`、同比 `+19%` |
+| 2025-08-15 | 完成收购 Remsdaq，现金对价净额约 `1060 万美元`，另有 milestone payment；Remsdaq 是英国 substation control / automation RTU 制造商 | 强化 SCADA、RTU、保护控制和自动化，提升开关柜/eHouse 的软件和服务 attach |
+| FY2025 | Houston electrical products facility 扩建改善项目完成并投产 | 增加电气产品制造能力，为数据中心和 utility 订单提供容量 |
+| 2025-08 宣布、FY2026 施工 | Jacintoport manufacturing facility 投资 `1240 万美元`，增加 `33.5 万平方英尺`Power Control Room laydown area，yard capacity `+62%`，bulkhead 扩至 `1150 英尺`，预计 FY2026 下半年完成 | 支撑大型 PCR/eHouse/offshore modules；对 data center / onsite generation power block 也有潜在复用 |
+| FY2026Q1 | 首个数据中心 megaproject order，约 `7500 万美元`；季度数据中心订单超过 `1 亿美元` | 证明 Powell 进入 AI 数据中心大型 RFP / AVL，不再只是潜在供应商 |
+| FY2026Q2 | quarter 内有 `>7500 万美元`数据中心 mega order，quarter 后获 `>4 亿美元`数据中心订单 | `>4 亿美元`订单是公司史上最大订单，直接改变 backlog 和投资人预期 |
+| 2026-04-02 / 2026-04-06 | 3-for-1 forward stock split，2026-04-06 开始 split-adjusted trading | 交易层面提高流动性，不改变基本面 |
+
+### 1.4 产业链定位
+
+AI 数据中心电力链条可简化为：
+
+`utility interconnection / onsite generation -> transformer -> MV switchgear -> eHouse / modular electrical room -> UPS / ATS / BESS / LV switchgear -> busway / PDU -> rack power shelf / 48V / 800VDC -> GPU / ASIC rack`
+
+Powell 的位置主要在中游设施侧：`MV switchgear + eHouse/PCR + protection/control + field service`。它通常不直接做大型变压器、不做 GPU rack power shelf、不做高端 rack PDU、不做冷板/CDU，也不是电力 EPC 总包。Powell 的客户买的不是单一零部件，而是“按项目标准完成工程、工厂测试、发货、现场调试并可按时上电”的成套电气子系统。
+
+本地行业资料对这一位置的判断是：2026 年 AI 数据中心最确定的放量产品不是 800VDC，而是传统且高可靠的中压/低压开关设备、变压器、eHouse、成套配电、保护控制和 UPS/BESS 接入。Powell 正好处在其中 `switchgear + eHouse + controls` 这段。
+
+## 2. 最新估值和财务健康度
+
+### 2.1 市场快照
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | `290.50 美元` | 2026-06-12 00:15 UTC / 2026-06-11 17:15 PT 金融数据快照 | split-adjusted |
+| 市值 | `约 106.3 亿美元` | 同上 | 约 3660 万 diluted shares 量级 |
+| TTM P/E | `56.6x` | 同上；StockAnalysis 近似 `56.7x` | TTM EPS 约 `5.13 美元` |
+| Forward P/E | `约 50.0x` | StockAnalysis 估值页 | Yahoo / GuruFocus 等口径差异较大，约 `40-53x` |
+| P/S | `9.35x` | StockAnalysis 估值页 | 按 TTM revenue `11.32 亿美元`附近 |
+| Forward P/S | `8.45x` | StockAnalysis 估值页 | 反映市场预期 FY2026/FY2027 收入上行 |
+| 最近季度收入增速 | `+6% YoY` | FY2026Q2 | 6M FY2026 收入 `+5%`；FY2025 全年 `+9%` |
+| TTM 收入 | `约 11.321 亿美元` | FY2025Q3-FY2026Q2 | 由四季收入相加 |
+| TTM 毛利率 | `30.1%` | 同上 | 毛利 `3.408 亿美元` |
+| TTM 净利率 | `16.5%` | 同上 | 净利润 `1.869 亿美元` |
+
+估值解读：Powell 当前估值已从周期工业股变成“AI 电力瓶颈稀缺资产”估值。若 FY2027 收入只能低双位数增长，`50x` forward P/E 很难消化；若 `>4 亿美元`数据中心订单在 2027 开始高毛利确认，同时新订单继续维持 `>1.3x` book-to-bill，则高估值才有基本面支撑。
+
+### 2.2 资产负债表和现金流
+
+| 指标 | FY2026Q2 / 2026-03-31 | 评价 |
+|---|---:|---|
+| Cash + short-term investments | `5.449 亿美元` | 对 `11.8 亿美元`总资产是极高现金比例 |
+| 总资产 | `11.800 亿美元` | 资产轻于大型电气设备集团 |
+| Current liabilities | `4.473 亿美元` | 项目型公司正常含合同负债、应付和应计 |
+| Stockholders' equity | `7.091 亿美元` | 权益厚、无明显杠杆 |
+| Working capital | `5.611 亿美元` | 强；支持大项目 working capital |
+| Current assets / current liabilities | `2.3x` | 10-Q 披露 |
+| U.S. revolver | `1.50 亿美元`额度，2028-10-04 到期 | FY2026Q2 无借款 |
+| Letters of credit outstanding | `7870 万美元` | 仍有 `7130 万美元`可用于 LC/借款 |
+| 6M FY2026 operating cash flow | `9480 万美元` | 受强利润和 milestone payments 支持 |
+| 6M FY2026 capex | `386 万美元` | 轻资本，但后续扩产可能提高 |
+
+财务健康度：很强。Powell 净现金、无 revolver 借款、经营现金流为正、股东权益充足，能承受扩产和项目担保。主要风险不是偿债，而是大项目履约：固定价合同、材料成本、工程变更、现场验收、客户延期、保函/LC 和工人/测试产能都可能影响毛利与现金周转。
+
+## 3. 最新和最近四次财报
+
+说明：Powell 财年截至 9 月 30 日。下表列出最新 FY2026Q2 及之前四个季度。公司不单独披露“AI 数据中心收入”，因此 AI/DC 收入口径为本报告估算；订单和 backlog 使用公司披露。
+
+| 财报季度 | 公告日期 / 截止日 | 收入 / YoY | 毛利率 / 净利率 | 新订单 / B2B | Backlog | 终端市场收入结构 | AI 数据中心相关收入和订单估算 | 关键解读 |
+|---|---:|---:|---:|---:|---:|---|---|---|
+| FY2026Q2 | 2026-05-04 / 2026-03-31 | `2.966 亿美元` / `+6%` | GM `29.6%`；NI `4590 万美元`；NM `15.5%` | `4.897 亿美元` / `1.65x` | `18 亿美元`，YoY `+33%` | O&G ex-petro `1.127 亿`；Electric Utility `8050 万`；C&I `5440 万`；Petro `2760 万`；Light rail `900 万`；Other `约1240 万` | revenue 估 `3000-4500 万美元`；quarter 内 `>7500 万`数据中心 mega order；quarter 后 `>4 亿美元`数据中心 mega order | C&I revenue `+35%`，utility `+14%`；期后订单是最大变化，backlog pro forma 可到 `22 亿美元+` |
+| FY2026Q1 | 2026-02-03 / 2025-12-31 | `2.512 亿美元` / `+4%` | GM `28.4%`；NI `4140 万`；NM `16.5%` | `4.388 亿美元` / `1.75x` | `16 亿美元`，QoQ `+14%` | Utility `6930 万`；O&G `9790 万`；C&I `4060 万`；Petro `2280 万`；Light rail `860 万`；Other `1200 万` | revenue 估 `2000-3500 万`；数据中心订单 `>1 亿美元`，含 `~7500 万`首个 data center megaproject | 数据中心从 pipeline 进入订单；Commercial & Other Industrial 占季度 awards 近一半 |
+| FY2025Q4 | 2025-11-18 / 2025-09-30 | `2.980 亿美元` / `+8%` | GM `31.4%`；NI `5140 万`；NM `17.3%` | `2.71 亿美元` / `0.91x` | `14 亿美元`，YoY `+3%` | 估算：O&G `1.043 亿`；Utility `8250 万`；C&I `4400 万`；Petro `3800 万`；Light rail `1450 万`；Other `1480 万` | revenue 估 `1500-2500 万`；数据中心机会 growing in size and volume，但未披露大单 | 收购 Remsdaq；FY2025 revenue `11.04 亿`、GM `29.4%`、NI `1.807 亿` |
+| FY2025Q3 | 2025-08-05 / 2025-06-30 | `2.863 亿美元` / `-1%` | GM `30.7%`；NI `4820 万`；NM `16.8%` | `3.62 亿美元` / `1.26x` | `14 亿美元`，QoQ `+7%` | O&G `1.055 亿`；Utility `7490 万`；C&I `4950 万`；Petro `3630 万`；Light rail `850 万`；Other `1150 万` | revenue 估 `1500-2500 万`；尚未披露 data-center mega order | `6000 万`utility 订单、`8000 万+`offshore modules、`3000 万`traction power；订单均衡但 AI 还未主导 |
+| FY2025Q2 | 2025-05-06 / 2025-03-31 | `2.786 亿美元` / `+9%` | GM `29.9%`；NI `4630 万`；NM `16.6%` | `2.49 亿美元` / `0.89x` | `13 亿美元`，QoQ 基本持平 | Utility `7030 万`；C&I `4040 万`；Petro `4370 万`；O&G 估 `1.011 亿`；Light rail 估 `1010 万`；Other 估 `1300 万` | revenue 估 `<1500-2000 万`；公司称 data centers 是 Commercial markets 增量之一 | LNG greenfield 和加拿大 mining 大单；Houston electrical products capacity 扩建接近完成 |
+
+### 3.1 订单、交期和取消率判断
+
+| 指标 | 目前披露 | 推断 |
+|---|---|---|
+| Backlog | FY2026Q2 `18 亿美元`，其中约 `11 亿美元`预计 12 个月确认；期后 `>4 亿美元`订单未包含在 3/31 backlog 中 | pro forma backlog `>22 亿美元`，约为 TTM revenue `1.9x` |
+| Book-to-bill | FY2026Q1 `1.7x`；FY2026Q2 约 `1.65x` | 如果 FY2026Q3 仍 `>1.3x`，说明 AI/utility/LNG 订单继续高于产能 |
+| Lead time | 公司未披露标准 lead time；行业口径 switchgear / transformer / eHouse 通常 `12-48`个月，数据中心客户提前 `12-36`个月锁定长交期设备 | Powell backlog 中 `11 亿美元` 12 个月确认，说明部分订单为短中交期；`>4 亿美元`新 data center order 很可能跨 2027-2028 确认 |
+| 取消率 | 公司未披露取消率；backlog 定义已扣除 cancellations and scope reductions，并提示 backlog 不是未来收入保证 | 已签 mega order 近端取消风险估 `0-5%`；未签 pipeline / data center funnel 延期或 scope reduction 风险估 `5-15%` |
+| 价格 | 公司称 pricing environment stable；行业紧缺支持 expedite / reservation / change order | 若客户抢 time-to-power，价格弹性主要体现在交期溢价和工程变更，而不是简单 list price 提价 |
+
+## 4. FY2026 最新指引、业务收入占比和侧重点
+
+Powell 没有给出精确 FY2026 revenue / EPS 指引。管理层给出的有效信息是：
+
+- FY2026 仍有望实现 solid financial performance；
+- backlog 的组成、margin profile 和 schedule 支撑 FY2026；
+- 毛利率预计维持 FY2025 已实现水平附近，即接近 `29%-30%`；
+- 数据中心建设、AI capacity growth、未来电力需求将继续支撑 Commercial 和 Electric Utility；
+- LNG、gas pipeline、gas-to-chemical 仍活跃；
+- backlog 增长提高公司对新增产能投资的信心。
+
+FY2026Q2 收入结构：
+
+| 终端市场 | FY2026Q2 收入 | 占比 | YoY | 重要性判断 |
+|---|---:|---:|---:|---|
+| Oil & Gas excluding petrochemical | `1.127 亿美元` | `38.0%` | `+11%` | 仍是最大收入池，LNG 和 offshore modules 对产能占用大；非 AI 但现金流重要 |
+| Electric Utility | `8050 万美元` | `27.1%` | `+14%` | 与数据中心电网扩容同周期，确定性高 |
+| Commercial & Other Industrial | `5440 万美元` | `18.3%` | `+35%` | 数据中心主要落在这里，是增速最高和估值最敏感部分 |
+| Petrochemical | `2760 万美元` | `9.3%` | `-37%` | FY2023 大单消化尾声，低增速/下降 |
+| Light Rail Traction Power | `900 万美元` | `3.0%` | `-10%` | 项目制，非 AI |
+| Other | `约1240 万美元` | `4.2%` | 未披露 | 大学、政府、其他渠道 |
+
+### 4.1 跳过或低优先级业务
+
+本报告后续重点分析 AI / 电力瓶颈高相关产品。以下业务不作为 AI 估值主线：
+
+| 业务/产品 | 跳过原因 |
+|---|---|
+| Petrochemical 项目 | FY2026Q2 收入 `-37%`，FY2023 大单接近完成；与 AI 数据中心无直接关系 |
+| Light Rail Traction Power | 收入小、项目制、FY2026Q2 `-10%`；不是 AI 电力瓶颈 |
+| Nextron heat tracing | 工业配套，可能服务油气/化工，不是 AI 数据中心核心电力链 |
+| 普通 replacement breakers / spares | 服务毛利好，但不是高增速主线；作为 installed base 附加价值处理 |
+| 传统 mining / generic industrial modules | 可贡献收入，但 AI 相关性低，除非转化为 power block / eHouse 产能复用 |
+
+### 4.2 重点产品和小而有潜力产品
+
+| 产品/业务 | 当前收入贡献估算 | 2026 增速 | AI 基建重要性 | 供需紧张 | 垄断/溢价能力 | 备注 |
+|---|---:|---:|---:|---:|---:|---|
+| MV metal-clad / metal-enclosed switchgear：PowlVac、Power/Vac、5kV-38kV | 总收入估 `1.3-1.6 亿美元/季`；AI/DC 估 `2000-3500 万/季` | 总体 `+15-30%`；AI/DC `+100%+` | 5/5 | 4.5/5 | 3.5/5 | AI 园区中压配电和 onsite generation 接入关键 |
+| eHouse / PCR / integrated packaged power rooms | 总收入估 `6000-9000 万美元/季`；AI/DC 估 `1000-2500 万/季` | 总体 `+20-35%`；AI/DC `+150%+` | 5/5 | 5/5 | 4/5 | `>4 亿美元`data center mega order 可能大量落在此类系统 |
+| Protection / monitoring / PowlSmart / SCADA / Remsdaq RTU | 总收入估 `1000-2000 万美元/季`；AI/DC `<500 万/季` | `+20-50%`，基数小 | 3.5/5 | 3/5 | 3.5/5 | 小业务但有高毛利 attach 和客户锁定潜力 |
+| Commissioning / field service / retrofit / spares | 总收入估 `1500-3000 万美元/季`；AI/DC `300-800 万/季` | `+15-30%`，随 installed base 增长 | 4/5 | 4/5 | 4/5 | time-to-power 和 uptime 驱动高价值服务 |
+| Utility switchgear / substation control | Electric Utility FY2026Q2 `8050 万美元` | `+14%`；6M `+23%` | 4/5 | 4/5 | 3.5/5 | 数据中心、电网和发电互相抢同一供应链 |
+| LNG / Oil & Gas power modules | O&G ex-petro FY2026Q2 `1.127 亿美元` | `+11%` | 2/5 AI；4/5 公司收入 | 3/5 | 3/5 | 非 AI，但会占用工厂产能；LNG 周期支撑总收入 |
+
+## 5. 关键产品当前贡献、AI 重要性和供需
+
+### 5.1 MV switchgear：PowlVac / Power-Vac / ANSI metal-clad / metal-enclosed
+
+Powell 的中压开关柜是数据中心订单最直接的产品。大型 AI 园区通常需要 `13.8kV / 34.5kV` 中压配电、switchgear lineup、断路器、保护继电器、计量、SCADA、arc-resistant enclosure、厂内 FAT 和现场 SAT。Powell 的 Power/Vac 公开参数覆盖 5kV / 15kV，breaker ratings 到 `4000A`、`63kA`，并具备 UL/CSA label 和 seismic tested；metal-enclosed 公开覆盖 600V class 和 5kV-38kV load interrupter switchgear。
+
+当前贡献估算：
+
+- 总公司层面：约 `45%-55%`收入与 switchgear / breaker / distribution hardware 直接相关，即 FY2026Q2 `1.3-1.6 亿美元`。
+- AI 数据中心直接：目前 revenue 约 `2000-3500 万美元/季`，但 backlog 已显著高于 revenue；FY2026 年内数据中心订单至少 `>5.5 亿美元`（Q1 `>1 亿` + Q2 `>7500 万` + Q2 后 `>4 亿`），其中很大一部分应落在中压开关柜和成套电气房。
+- 供需：行业对中压 switchgear 的 2026-2027 需求受 AI campus、utility、发电接入、LNG 和工业项目共同拉动；本地行业资料给出中压 switchgear 未来一年订单池 `65-110 亿美元`、乐观增速 `+35-55%`。
+
+### 5.2 eHouse / Power Control Room / integrated packaged solutions
+
+Powell 的 eHouse/PCR 是 AI 数据中心“time-to-power”价值最容易货币化的产品。客户把 switchgear、motor control、保护、自动化、HVAC、消防、线缆、测试和文档在工厂集成，减少现场施工和调试。AI 园区客户要的是可复制 `5/12.5/25/50MW`电力 block，而不是单台低价开关柜。
+
+当前贡献估算：
+
+- 总公司层面：约 FY2026Q2 `6000-9000 万美元`，受 Oil & Gas modules、utility eHouse 和 Commercial/Data Center power room 共同驱动。
+- AI 数据中心：目前 revenue 约 `1000-2500 万美元/季`，但 `>4 亿美元` behind-the-meter data center order 很可能显著提高 2027 确认。
+- 供需：eHouse 受工厂面积、laydown yard、测试工位、工程师、现场调试队伍限制。Powell 的 Jacintoport 项目增加 `33.5 万平方英尺`PCR laydown area、yard capacity `+62%`，正是为大型模块化交付扩容。
+
+### 5.3 Digital solutions、PowlSmart、Remsdaq SCADA/RTU
+
+这个业务收入基数小，但战略价值高。AI 数据中心不是只要通电，还要能实时监控 breaker health、bus integrity、温升、绝缘、环境、保护整定和故障定位。Powell 的 PowlSmart、condition monitoring、asset management、PMS/ENMCS/SCADA/SCADA-H 与 Remsdaq RTU 能提高硬件 attach 和后续服务毛利。
+
+当前贡献估算：
+
+- 总收入：约 `1000-2000 万美元/季`，取决于项目 attach。
+- AI 数据中心：当前 `<500 万美元/季`，但随着大型 eHouse 和 switchgear 项目交付，software / monitoring / commissioning attach 有望放大。
+- 供需：不是硬短缺产品，但客户认证、网络安全、SCADA 协议、utility acceptance 和故障责任会形成粘性。
+
+## 6. 未来一年三情景预测：产品收入、重要性、供需和溢价
+
+口径：以下为未来 12 个月滚动收入贡献估算，不是公司指引。基准假设 `>4 亿美元`data center order 从 FY2027 起逐步确认；乐观假设 FY2026H2-FY2027H1 新增 data center / utility orders 维持高位；极度乐观假设 Powell 快速扩产、客户预付款支持、多个 AI campus 同时进入生产。
+
+| 产品/业务 | 当前年化贡献估算 | 基准：12M 后收入 | 乐观：12M 后收入 | 极度乐观：12M 后收入 | AI 重要性 / 紧急性 | 供需和溢价 |
+|---|---:|---:|---:|---:|---|---|
+| Data center MV switchgear + eHouse + controls | `1.2-1.8 亿美元` | `2.2-3.0 亿`，增速 `+70-120%` | `4.0-5.5 亿`，增速 `+180-250%` | `7.0-9.0 亿`，增速 `+350%+` | 5/5；time-to-power 最高 | 基准供不应求；乐观可加 expedite / capacity reservation；极度乐观毛利上行但执行风险显著 |
+| Utility MV switchgear / substation control | `3.0-3.3 亿美元` | `3.5-4.3 亿`，`+15-30%` | `4.8-6.0 亿`，`+45-80%` | `6.5-8.0 亿`，`+100%+` | 4/5；电网和数据中心电力接入绑定 | 与数据中心抢产能；客户认证强，价格弹性中高 |
+| LNG / oil & gas power modules | `4.2-4.7 亿美元` | `4.5-5.2 亿`，`+5-15%` | `5.5-6.5 亿`，`+20-40%` | `7.0 亿+`，`+50%+` | AI 低；公司收入高 | LNG 周期强，但会挤占 AI/utility 产能 |
+| Digital automation / PowlSmart / Remsdaq | `0.4-0.8 亿美元` | `0.6-1.0 亿`，`+20-40%` | `1.0-1.5 亿`，`+50-100%` | `1.8 亿+`，`+150%+` | 3.5/5；长期粘性高 | 短期不缺产能；长期靠软件、认证和服务溢价 |
+| Services / commissioning / spares | `0.8-1.2 亿美元` | `1.1-1.5 亿`，`+20-35%` | `1.6-2.2 亿`，`+60%+` | `2.5 亿+` | 4/5；上电验收必须 | installed base 扩大后毛利质量最好 |
+
+## 7. BOM、每 MW / rack / GPU / optical port 内容量和价格传导
+
+### 7.1 Powell 产品在 100MW AI 园区中的位置
+
+以 `100MW IT load`、PUE `1.20`、utility interconnection `120-160MW` 的 AI 园区一期为例，本地行业资料给出设施电力成本：
+
+| 项目 | 成本区间 / 100MW IT | Powell 是否直接参与 |
+|---|---:|---|
+| 高压接入、开关站、utility study / upgrade 分摊 | `1500-4500 万美元` | 通常不是主承包，但可能参与 downstream switchgear / controls |
+| 主变/配变、padmount/substation transformer | `1200-3500 万美元` | Powell 通常不制造大型变压器，但可集成和保护 |
+| MV switchgear、relay、metering、SCADA、eHouse | `1500-4000 万美元` | Powell 核心 |
+| UPS / ATS / busway / PDU / LV distribution | `3500-9000 万美元` | Powell 可参与 LV switchgear / controls / eHouse，通常不做主 UPS/rack PDU |
+| 现场发电 / BESS / microgrid 增量 | `100-450 万美元/MW IT` | Powell 可参与 onsite generation switchgear / eHouse / controls |
+
+Powell 可服务内容量：
+
+- **每 MW IT load：** 典型 `20-60 万美元/MW`，若包含 onsite generation / complex eHouse / protection / fast-track 交付，可到 `60-100 万美元/MW`。
+- **每 120kW AI rack：** 按 `20-60 万美元/MW`，约 `2.4-7.2 万美元/rack`；高端复杂方案 `7-12 万美元/rack`。
+- **每 GPU：** 以 NVL72 约 `72 GPU / 120kW`、约 `600 GPU/MW`估算，Powell 设施侧内容量约 `333-1000 美元/GPU`；复杂 power block 可到 `1000-1700 美元/GPU`。
+- **每 optical port：** Powell 不直接按 optical port 销售。若用 `200-500`个 800G-equivalent ports/rack 作分母，只能得到设施侧分摊 `50-600 美元/port`，投资意义低；更合理的单位是 `美元/MW`和`美元/通电时间缩短`。
+
+### 7.2 MV switchgear 粗略 BOM
+
+| BOM 项 | 成本占比 | 价格传导 |
+|---|---:|---|
+| 断路器/开关 | `15-30%` | 真空断路器、interrupting rating、短路等级、arc-resistant 设计决定 ASP |
+| 铜/铝母线 | `10-25%` | 铜铝价格可通过项目报价、指数条款、change order 传导 |
+| 保护继电器、CT/PT、metering、SCADA I/O | `10-20%` | 客户标准和 utility acceptance 提高粘性 |
+| 金属柜体、enclosure、结构件 | `10-20%` | 钢材和制造产能影响成本 |
+| 控制 wiring、terminal、通信 | `5-10%` | 工程复杂度和测试文档决定人工 |
+| 人工、工程、FAT、质保 | `20-30%` | Powell 溢价核心；客户愿为缩短 lead time 和降低验收风险付费 |
+
+### 7.3 eHouse / PCR 粗略 BOM
+
+| BOM 项 | 成本占比 | 价格传导 |
+|---|---:|---|
+| 内部电气设备：MV/LV switchgear、MCC、relay、metering、controls | `45-65%` | 设备短缺、客户认证和 design freeze 后变更可传导 |
+| Enclosure、结构、HVAC、消防、防护、照明 | `15-25%` | 工厂预制、环境等级、运输限制影响 ASP |
+| 工程、集成、FAT、项目管理 | `15-25%` | time-to-power 价值最大，毛利高于金属箱体 |
+| 物流、吊装、现场 SAT / commissioning | `5-15%` | 大型模块、港口/船运/现场吊装路径影响成本 |
+
+### 7.4 认证和采用阶段
+
+| 产品 | 当前认证/采用阶段 | 未来一年关键节点 |
+|---|---|---|
+| Power/Vac switchgear / circuit breakers | 公开资料披露 UL/CSA label、seismic tested；Power/Vac breakers UL listed、KEMA tested、ANSI C37.06-2009 | 数据中心客户 AVL、项目 FAT/SAT、arc-resistant / short-circuit test 文档 |
+| PowlVac / ANSI metal-clad | 按 ANSI、NEMA、IEEE 标准设计制造；公司公开称 all equipment tested to applicable standards | 高短路容量、复杂保护整定、utility / hyperscaler 客户标准化 |
+| eHouse / PCR | 工厂预制和项目验收驱动，不是单一 UL 证书问题 | 100MW+ AI campus 的 repeatable block 设计、现场缩短工期证明 |
+| PowlSmart / Remsdaq | condition monitoring、SCADA/RTU 和 substation automation | 网络安全、utility protocol、customer integration、DCIM/SCADA 互联 |
+
+## 8. 当前产能、未来产能和供应链采纳
+
+### 8.1 当前产能能力
+
+Powell 10-K 披露截至 2025-09-30 自有主要设施约 `161.5 万平方英尺`：
+
+| 地点 | 功能 | 面积 |
+|---|---|---:|
+| Houston, TX | corporate office and manufacturing | `428,515 sq ft` |
+| Houston, TX | office and manufacturing | `346,554 sq ft` |
+| Houston, TX | fabrication facility / bulkhead / yard | `82,320 sq ft` |
+| Houston, TX | office and warehouse | `37,200 sq ft` |
+| North Canton, OH | office and manufacturing | `115,200 sq ft` |
+| Northlake, IL | office and manufacturing | `103,500 sq ft` |
+| Bradford, U.K. | office and manufacturing | `129,200 sq ft` |
+| Deeside, U.K. | office and manufacturing | `42,329 sq ft` |
+| Acheson, Alberta, Canada | office and manufacturing | `330,168 sq ft` |
+
+以 TTM revenue `11.32 亿美元`、FY2026Q2 backlog `18 亿美元`、12 个月可确认 backlog `11 亿美元`看，当前可稳定交付年收入能力约 `11.5-13.0 亿美元`。公司已经完成 Houston electrical products facility 扩建；Jacintoport 项目预计 FY2026 下半年完成，可提升大型 PCR/eHouse laydown 和发运灵活度。
+
+Q2 FY2026 call 外部摘要还显示：公司在 Ohio 和 Houston 附近新增租赁空间，考虑约 `5 万平方英尺`额外租赁空间和约 `800 万美元`快速扩产设备；同时评估 `7000万-1亿美元`greenfield 投资，可能增加 `25-30 万平方英尺`，潜在年收入能力 `1-2.5 亿美元`。
+
+### 8.2 未来一年产能三情景
+
+| 情景 | 未来一年收入产能 | 采用/客户状态 | 认证/交付状态 | 主要约束 |
+|---|---:|---|---|---|
+| 基准 | `13.0-14.5 亿美元` | 已签 backlog 转化；data center `>4 亿`订单开始工程和部分确认 | 主要沿用成熟 ANSI/UL/客户 FAT | 熟练工、工程设计、测试工位、项目排程 |
+| 乐观 | `15.5-17.0 亿美元` | data center、utility、LNG 新订单继续；客户预付款支持产能保留 | eHouse / switchgear 标准化提升复制效率 | 供应商断路器/继电器、铜、field commissioning |
+| 极度乐观 | `18.0-20.5 亿美元` | 多个 100MW+ AI campus 同时锁产能，Powell 进入更多 hyperscaler AVL | 数据中心 repeatable power block 通过客户验收 | greenfield 12 个月内完全转化难度高；项目执行风险显著 |
+
+## 9. 根据 backlog 和供给预测未来一年业务增速
+
+基础事实：
+
+- TTM revenue `11.32 亿美元`。
+- FY2026Q2 backlog `18 亿美元`，约 `11 亿美元`预计未来 12 个月确认。
+- FY2026Q2 后新增 `>4 亿美元`数据中心 mega order。
+- FY2026H1 bookings `9.285 亿美元`，6M revenue `5.478 亿美元`，book-to-bill 约 `1.70x`。
+
+### 9.1 公司总收入三情景
+
+| 情景 | 未来 12M revenue | 增速 vs TTM | FY2027 附近 backlog | 毛利率 | 逻辑 |
+|---|---:|---:|---:|---:|---|
+| 基准 | `13.5-14.5 亿美元` | `+19-28%` | `21-24 亿美元` | `29-31%` | `11 亿`12M backlog 覆盖大部分收入；新增数据中心订单分期确认；产能平稳扩张 |
+| 乐观 | `15.5-17.0 亿美元` | `+37-50%` | `26-30 亿美元` | `30-33%` | AI/data center 和 utility book-to-bill 继续 `>1.3x`；Jacintoport 和租赁空间释放；data center power block 复制 |
+| 极度乐观 | `18.0-20.5 亿美元` | `+59-81%` | `32-40 亿美元` | `32-35%` | 多个 mega data center / onsite generation orders 快速进入生产；客户预付款和标准化 block 缩短周期 |
+
+### 9.2 数据中心相关收入三情景
+
+| 情景 | 当前 data center revenue run-rate | 未来 12M data center revenue | 增速 | 订单和取消率假设 |
+|---|---:|---:|---:|---|
+| 基准 | `1.2-1.8 亿美元/年化` | `2.2-3.0 亿美元` | `+70-120%` | 已披露 `>5.5 亿美元`FY2026 data center awards 分期确认；取消率 `0-5%` |
+| 乐观 | 同上 | `4.0-5.5 亿美元` | `+180-250%` | Q3/Q4 继续拿到 `>1 亿美元`级 data center orders；客户抢 time-to-power，scope 增加 |
+| 极度乐观 | 同上 | `7.0-9.0 亿美元` | `+350%+` | `>4 亿美元`订单快速转收入，另有 hyperscaler/NeoCloud 园区复制；取消率仍低但工程变更高 |
+
+## 10. 竞争格局、替代方案和客户切换成本
+
+### 10.1 主要竞争对手
+
+| 细分 | 主要竞争对手 | Powell 相对位置 |
+|---|---|---|
+| MV/HV switchgear | Eaton、Schneider Electric、Siemens、ABB、GE Vernova、Hitachi Energy、Hubbell、S&C Electric、G&W Electric、Mitsubishi、Toshiba、LS Electric | Powell 规模小于电气巨头，但在 North America engineered-to-order switchgear 和 project execution 上有差异化 |
+| LV switchgear / switchboard / PDU / busway | Eaton、Schneider、ABB、Siemens、Vertiv/PDI、Legrand、nVent、Hubbell、Rittal、Delta | Powell 不是 rack PDU/busway 龙头；更多参与成套柜和集成 |
+| eHouse / modular electrical room | Vertiv、Schneider、Eaton、ABB、Siemens、Powell、GE Vernova、Hitachi Energy、IEM、nVent、Rittal、Legrand | Powell 的 eHouse/PCR 是核心产品，工厂化交付和工程项目管理是护城河 |
+| Protection / automation / SCADA | SEL、GE Vernova、Siemens、Hitachi Energy、ABB、Schneider/ETAP、Eaton、OSI、AspenTech、Doble、OMICRON | Powell 通过 PowlSmart 和 Remsdaq 补强，但软件规模仍小 |
+| Data center critical power full stack | Schneider、Vertiv、Eaton、ABB、Siemens、Delta | Powell 产品线较窄，无法像 Schneider/Vertiv 一样打包 UPS、冷却、rack power 和 DCIM |
+
+### 10.2 新技术是否是未来主流
+
+Powell 当前收入主线是传统 AC 中压/低压 switchgear 和 eHouse。这不是过时路线。2026 年 AI 数据中心大规模交付仍以 AC facility power、MV switchgear、transformer、UPS、LV distribution、busway/PDU 为主；800VDC 是 2027 起高密 rack 的重要 design-in，而不是 2026 全面替代。
+
+新技术影响：
+
+- **800VDC / ±400VDC sidecar：** NVIDIA 公开推动 800VDC 支持 `1MW IT racks and beyond`，从 2027 起成为高密 AI factory 方向。它会改变 data-hall-to-rack 电力架构，但仍需要 facility-side MV switchgear、保护、eHouse、SCADA 和接入。
+- **MV UPS / 34.5kV direct-grid UPS：** 若大型园区把 UPS 前移到中压侧，会提升中压保护和成套系统复杂度，对 Powell 可能是机会；但若 ABB/Schneider/Vertiv 提供全套 MV UPS block，Powell 可能只能作为部分配套。
+- **onsite generation / behind-the-meter：** Powell `>4 亿美元`data center order 与 onsite generation assets 相关，这是最大机会。AI 园区如果绕开慢速 utility interconnection，会需要发电、switchgear、eHouse、ATS、保护控制和 microgrid 集成。
+- **modular power block：** 未来客户会按 `12.5/25/50MW`模块采购可复制电力 block。Powell 若把 eHouse/switchgear 标准化，毛利和交付效率可上一个台阶。
+
+### 10.3 替代和风险
+
+| 风险 | 影响 | 观察指标 |
+|---|---|---|
+| 大型电气集团打包降价 | Schneider/Eaton/ABB/Siemens 可用 UPS、transformer、DCIM、service 套餐压缩 Powell 份额 | data center orders 是否转向 full-stack suppliers |
+| 800VDC full-stack 生态绕开部分低压柜 | 高密 rack 可能减少部分传统 LV distribution 内容量 | 2026H2-2027 RFP 是否从 AC low-voltage block 转向 800V sidecar |
+| 变压器/utility interconnection 卡住项目 | Powell 已拿订单但客户无法上电，收入确认拉长 | customer NTP、utility approvals、onsite generation permits |
+| 产能扩张过快 | 工程、FAT、现场调试跟不上，毛利率下滑 | gross margin、warranty、working capital、deferred revenue |
+| 客户集中和项目取消 | 单个 `>4 亿美元`订单对 backlog 影响过大 | backlog cancellations、scope reductions、customer financing |
+| LNG/油气与数据中心抢产能 | 高毛利数据中心订单可能被传统项目产能挤压 | product mix、capex、headcount、lead time |
+
+### 10.4 客户切换成本
+
+Powell 的客户切换成本高，尤其在大型数据中心、utility 和 LNG 项目：
+
+- switchgear / eHouse 进入设计后，替换供应商会触发电气图纸、短路/弧闪分析、保护整定、FAT/SAT 计划和现场接口重做；
+- hyperscaler / utility AVL 认证周期通常可达 `6-18`个月；
+- eHouse 是接口集合，换供应商可能让 transformer、UPS、BESS、消防、HVAC、SCADA 和现场 EPC 责任重新划分；
+- data center 延迟一周的机会成本远大于 switchgear 差价，客户更看重交付确定性。
+
+因此 Powell 的 moat 不是技术垄断，而是 `认证 + 工程履约 + 工厂测试 + 交期 + 现场服务 + 客户信任`。在高景气阶段，这足以形成溢价；在需求回落时，溢价会回归。
+
+## 11. 投资跟踪指标
+
+| 优先级 | 指标 | 为什么重要 | 反证阈值 |
+|---|---|---|---|
+| 1 | FY2026Q3/Q4 new orders、book-to-bill | 验证 `>4 亿美元`订单后是否还有持续性 | book-to-bill 连续低于 `1.0` |
+| 1 | Backlog 和 12M revenue conversion | 验证订单是否转收入 | backlog 上升但 12M conversion 不升，说明项目拉长 |
+| 1 | Data center order commentary | 验证 AI 订单是否从一次性 mega 变成系列化 | FY2026H2 无新增 `>5000 万`data center order |
+| 2 | Gross margin | 检验交付和定价 | 毛利率跌破 `27%`且管理层归因执行/成本 |
+| 2 | Capacity expansion | 检验收入上限 | Jacintoport 延期、leased capacity 不落地、greenfield 不推进 |
+| 2 | Working capital / cash conversion | 项目型大单会吃现金 | CFO 转负且 contract assets 激增 |
+| 3 | 800VDC / MV UPS reference design | 判断 Powell 是否进入下一代数据中心电力 block | 相关 RFP 全被 full-stack 对手拿走 |
+| 3 | Utility / transformer lead time | 行业供需温度计 | lead time 回落到 `<52 周`且 backlog 放缓 |
+
+## 12. 最终判断
+
+Powell 是 AI 数据中心“电力侧小而尖”的高弹性标的。它的直接优势不是拥有独家芯片或独家电源架构，而是在一个订单变大、交期变长、客户更愿意为 time-to-power 付费的行业里，已经拿到可验证的 data center mega orders，并且以接近 `30%`毛利率执行项目。
+
+短期最重要的是 FY2026H2 能否继续证明三件事：第一，`>4 亿美元`数据中心订单不是孤例；第二，Jacintoport、租赁空间和潜在 greenfield 能把 backlog 转为收入；第三，毛利率在大项目爬坡中不明显回落。只要这三点成立，Powell 的收入可以从 `11 亿美元`级走向 `15-17 亿美元`级；若再拿到多个 AI campus 电力 block，极度乐观情景可挑战 `20 亿美元`年收入。但当前 `50x`左右 forward P/E 已经把相当多的乐观计入，风险收益更取决于订单持续性和执行，而不是“AI 电力”叙事本身。
+
+## 13. 主要资料来源
+
+本地项目资料（仅使用 `行业调研/`）：
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+
+公司和 SEC：
+
+- Powell FY2026Q2 results: https://powellindustriesinc.gcs-web.com/news-releases/news-release-details/powell-industries-announces-second-quarter-fiscal-2026-results
+- Powell FY2026Q1 results: https://powellindustriesinc.gcs-web.com/news-releases/news-release-details/powell-industries-announces-first-quarter-fiscal-2026-results
+- Powell FY2025Q4 / FY2025 results: https://powellindustriesinc.gcs-web.com/news-releases/news-release-details/powell-industries-announces-fourth-quarter-and-full-year-0
+- Powell FY2025Q3 results: https://powellindustriesinc.gcs-web.com/news-releases/news-release-details/powell-industries-announces-third-quarter-fiscal-2025-results
+- Powell FY2025Q2 results: https://powellindustriesinc.gcs-web.com/news-releases/news-release-details/powell-industries-announces-second-quarter-fiscal-2025-results
+- Powell FY2026Q2 10-Q: https://www.sec.gov/Archives/edgar/data/80420/000008042026000070/powl-20260331.htm
+- Powell FY2026Q1 10-Q: https://www.sec.gov/Archives/edgar/data/80420/000008042026000015/powl-20251231.htm
+- Powell FY2025 10-K: https://www.sec.gov/Archives/edgar/data/80420/000008042025000152/powl-20250930.htm
+- Remsdaq acquisition announcement: https://powellindustriesinc.gcs-web.com/news-releases/news-release-details/powell-industries-announces-agreement-acquire-remsdaq-ltd
+- Powell product pages: https://www.powellind.com/ansi-metal-clad-switchgear , https://www.powellind.com/power-vac-switchgear , https://www.powellind.com/ansi-metal-enclosed-switchgear , https://www.powellind.com/integrated-package-solutions , https://www.powellind.com/powlsmart-intelligent-devices-3
+
+行业、估值和技术：
+
+- StockAnalysis POWL statistics / valuation: https://stockanalysis.com/stocks/powl/statistics/
+- StockStory POWL Q1 CY2026 update: https://stockstory.org/us/stocks/nasdaq/powl
+- Motley Fool Q2 FY2026 transcript summary: https://www.fool.com/earnings/call-transcripts/2026/05/05/powell-powl-q2-2026-earnings-call-transcript/
+- Wood Mackenzie data center electrical equipment market: https://www.woodmac.com/press-releases/data-center-demand-drives-us-electrical-equipment-market-to-%2465b-reshaping-industry-dynamics/
+- NVIDIA 800VDC architecture: https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/
+- NVIDIA 800VDC ecosystem: https://developer.nvidia.com/blog/building-the-800-vdc-ecosystem-for-efficient-scalable-ai-factories/
+- Future Market Insights switchgear for data centers market: https://www.futuremarketinsights.com/reports/switchgear-for-data-centers-market
+- Data Center World Power: https://datacenterworld.com/power/

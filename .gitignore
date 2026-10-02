@@ -1,0 +1,26 @@
+# Local dependencies and disposable work, at any depth.
+node_modules/
+tmp/
+_work/
+__pycache__/
+.pytest_cache/
+.cache/
+
+# Runtime diagnostics.
+prompt-debug/
+logs/
+*.log
+
+# Site build and publication copies. Keep public/data for retained assets.
+/tools/site/dist/
+/tools/site/docs/
+
+# Local credentials; keep a shareable example if provided.
+.env
+.env.*
+!.env.example
+
+# Operating-system metadata.
+.DS_Store
+Thumbs.db
+desktop.ini

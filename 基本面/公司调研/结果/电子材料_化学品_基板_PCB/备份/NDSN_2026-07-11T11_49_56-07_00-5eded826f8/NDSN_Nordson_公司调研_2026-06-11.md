@@ -1,0 +1,425 @@
+# NDSN Nordson 公司调研：精密点胶、检测计量与先进封装间接受益链（2026-06-11）
+
+> 自动化任务对象：company / NDSN / Nordson。  
+> 输出日期：2026-06-11（America/Los_Angeles）。  
+> 项目内资料边界：仅读取 `基本面/行业调研/` 下与 AI 产业、先进封装、半导体设备/材料、液冷流体控制相关资料，并读取 `公司调研/公司索引.md` 用于确认正式归档目录；未读取、引用或继承 `特征量化/`、`日度资料/`、`tmp/`、`data/`、`分析报告/` 或现有公司调研正文。  
+> 关键口径：Nordson 不是 GPU、HBM、服务器、IDC 或液冷主设备公司；它的 AI 相关性主要来自 **先进封装/电子组装的精密点胶、底部填充、封装涂覆、等离子表面处理、X-ray/光学/声学检测计量、WaferSense 传感器**，属于 AI 芯片制造与封装良率链条的间接受益。
+
+## 一页结论
+
+1. **Nordson 是高毛利、小批量高价值工业精密技术平台，而不是传统大设备商。** 2025 财年收入约 `27.92 亿美元`、毛利率 `55.2%`、EBITDA `9.00 亿美元`、EBITDA margin `32%`；2026 财年上半年收入 `14.10 亿美元`，同比 `+8.6%`，调整 EPS `5.23 美元`，自由现金流 `2.93 亿美元`。投资人通常把它看成“分散终端 + 高毛利 + 直接销售/应用工程 + 连续分红 + bolt-on M&A”的复利型工业股。
+2. **最新财报明显好转，且 ATS 是弹性核心。** FY2026Q2 收入 `7.408 亿美元`，同比 `+8.5%`；Advanced Technology Solutions（ATS）收入 `1.775 亿美元`，同比 `+10.1%`，有机 `+8.5%`，EBITDA margin `27%`，是五个季度里最高的 ATS 绝对利润。公司披露 Q2 期末 backlog 同比 `+18%`，订单动能 broad-based。
+3. **AI 数据中心收入不可直接从 Nordson 财报读取。** 公司只按 IPS/MFS/ATS 三段披露，不披露 AI、半导体先进封装、HBM、CoWoS、服务器或数据中心收入。按产品和客户链估算，2026Q2 ATS 中“半导体/电子制造”可能约 `1.1-1.35 亿美元/季`，其中与 AI/HPC 先进封装、服务器/5G、半导体测试检测直接相邻的收入可能约 `0.45-0.80 亿美元/季`，约占公司收入 `6%-11%`；这是模型估算，不是公司披露。
+4. **最值得研究的产品不是普通胶机，而是先进封装点胶 + 检测计量组合。** Nordson 官方资料把 ATS 角色定义在 semiconductor front-end、advanced packaging、automotive electronics；Q2 2026 投资者材料列出 RDL、die attach、bump placement、wire bond、overmold/underfill/encapsulation、WaferSense sensors、optical/X-ray/acoustic inspection。项目内行业资料也把先进封装检测量测、underfill/TIM/表面处理列为 2026-2027 AI 芯片封装良率链条的重要环节。
+5. **最大缺口是订单透明度和客户名。** 公司披露 backlog 百分比和 FY2025 年末约 `6 亿美元` backlog，但不披露 ATS backlog 金额、AI 客户订单、交付窗口、取消率、lead time 或单台设备 ASP。报告里的 backlog、AI 收入和单位含量只能用财报、产品页、行业容量和客户案例反推，置信度低于财务披露。
+6. **资产负债表健康。** 2026Q2 现金 `1.02 亿美元`、总债务约 `18.86 亿美元`、净债务约 `17.84 亿美元`；净债务/TTM EBITDA 约 `1.9x`，较 2025 财年末 `2.1x` 改善。经营现金流强、资本开支轻、股息和回购持续，财务风险主要来自并购杠杆、周期订单和无形资产/商誉占比较高。
+
+## 1. 公司整体业务、产业定位与估值快照
+
+### 1.1 公司做什么
+
+Nordson 是总部位于 Ohio Westlake 的精密技术公司，成立于 1954 年。公司制造并销售用于 **精密点胶、涂覆、流体控制、聚合物处理、表面处理/固化、检测计量、医疗流体组件和介入医疗器械** 的设备、系统和耗材/组件。2025 年公司约 `8,000` 名员工，在 `35+` 个国家有直接业务，约 `67%` 收入来自美国以外；公司称 2025 年没有单一客户超过销售额 `10%`。
+
+公司分三大分部：
+
+| 分部 | 2025 收入占比 | FY2026Q2 收入 | FY2026Q2 EBITDA margin | 核心产品/终端 |
+|---|---:|---:|---:|---|
+| Industrial Precision Solutions（IPS） | 约 `48%` | `3.505 亿美元` | `35%` | 胶粘剂点胶、工业涂装、聚合物加工、包装、非织造、精密农业 ARAG/CapstanAG |
+| Medical and Fluid Solutions（MFS） | 约 `30%` | `2.129 亿美元` | `37%` | 医疗流体组件、导管/球囊/介入器械、工程流体解决方案、高技术工业流体件 |
+| Advanced Technology Solutions（ATS） | 约 `22%` | `1.775 亿美元` | `27%` | 电子制造点胶/涂覆/等离子处理，X-ray/光学/声学检测计量，半导体传感器 |
+
+### 1.2 在投资人心中的公司形象
+
+Nordson 的投资叙事不是“短期爆发”，而是：
+
+- **高毛利复利工业股**：2020-2025 平均毛利率约 `55%`，EBITDA margin `30%+`，2025 ROIC `12%`，连续 `62` 年提高年度股息。
+- **小众工艺 know-how + 直接销售**：点胶、涂覆、检测和流体控制往往是客户产线上的良率/可靠性环节，单台或单件金额不一定大，但工艺参数、材料兼容、现场应用工程和客户认证形成切换成本。
+- **M&A 平台**：Ascend strategy 用 NBS Next 做有机增长，用 bolt-on/平台型收购扩展高增长终端。过去三年收购和剥离都在把组合向医疗、半导体/电子、精密农业等更高差异化市场推。
+- **半导体 beta 有弹性但披露不透明**：ATS 收入小于大型半导体设备公司，但先进封装复苏时订单弹性明显；缺点是公司不披露 ATS 内部产品、客户和 AI/HPC 占比。
+
+### 1.3 最近三年重大业务变动、转型与收购
+
+| 时间 | 事件 | 业务含义 | 对 AI/半导体链条的意义 |
+|---|---|---|---|
+| 2022-11 | 收购 CyberOptics | 将 3D optical sensing、MRS、WaferSense 等纳入 Nordson Test & Inspection | 强化先进封装/SMT/半导体检测计量和工具设置传感器能力 |
+| 2023 | 收购 ARAG | 扩大 precision agriculture spraying 平台 | 非 AI；提高 IPS 中精密流体控制/喷洒控制占比 |
+| 2024-08 | 收购 Atrion，2023 年 Atrion 收入约 `1.69 亿美元` | 扩大 MFS 的专有医疗流体、输注和心血管产品 | 非 AI；提高 MFS sticky proprietary components |
+| 2025-09 | 剥离部分 medical contract manufacturing 产品线 | 降低较低差异化合同制造暴露，聚焦专有医疗/流体组件 | 改善 MFS mix，不是 AI |
+| 2025 | 达成 Ascend 初始财务目标 | FY2025 EBITDA 达 `9.00 亿美元`、margin `32%` | 证明组合管理和成本效率；为继续并购提供空间 |
+| 2026-03 | 收购 CapstanAG Systems | 扩大北美 precision agriculture 中端 OEM 客户和 PWM/nozzle-by-nozzle 控制 | 非 AI；但验证公司继续围绕精密流体控制做 bolt-on |
+
+### 1.4 产业链位置
+
+Nordson 位于 **材料/流体/检测工艺设备层**，不是终端芯片/服务器层。
+
+```text
+AI 需求 / 云厂 CapEx
+-> GPU/ASIC/HBM/网络芯片出货
+-> 先进封装、电子组装、封装检测、服务器/5G 电子制造
+-> Nordson ATS: underfill/encapsulation/precise coating/plasma/X-ray/optical/acoustic inspection/WaferSense
+-> 客户良率、cycle time、可靠性、维护效率改善
+```
+
+在 AI 产业链里，Nordson 最接近项目内 `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md` 与 `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md` 里提到的 **advanced packaging inspection/metrology、underfill、encapsulation、RDL、bump、void/warpage/defect detection** 环节。它不是 CoWoS/TCB/hybrid bonding 主设备商，但能在后段封装和电子组装良率链条中受益。
+
+### 1.5 估值与财务快照
+
+| 指标 | 数值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | `286.49 美元` | 2026-06-11 18:26 UTC，盘中 | web finance quote |
+| 市值 | `160.43 亿美元` | 2026-06-11 18:26 UTC | web finance quote |
+| Trailing PE | `30.55x` | 2026-06-11，EPS `9.36` | web finance quote |
+| Forward PE | `24.8x` | 股价 / FY2026 调整 EPS 指引中点 `11.55 美元` | 公司 Q2 指引口径；Yahoo 2026-06-10 页面显示 forward PE 约 `24.0x` |
+| PS | `5.5x` | 市值 / TTM revenue `29.04 亿美元` | TTM revenue = FY2025 sales + FY2026H1 - FY2025H1 |
+| TTM 收入 | `29.04 亿美元` | 截至 2026-04-30 | 同比约 `+7.4%`，由官方季度/年度数据推算 |
+| FY2026 指引收入 | `29.30-30.10 亿美元` | 2026-05-20 指引 | 中点 `29.70 亿美元`，同比 FY2025 约 `+6.4%` |
+| FY2026 调整 EPS 指引 | `11.30-11.80 美元` | 2026-05-20 指引 | Q2 后第二次上调 |
+| Q2 gross margin | `54.5%` | FY2026Q2 | H1 gross margin `54.6%` |
+| TTM gross margin | 约 `55.1%-55.2%` | 截至 2026-04-30 | 2025 毛利率 `55.2%`，H1 2026 `54.6%` |
+| TTM net margin | 约 `18.2%` | 截至 2026-04-30 | TTM net income 约 `5.28 亿美元` |
+| TTM EBITDA | 约 `9.33 亿美元` | 截至 2026-04-30 | FY2025 EBITDA `9.00 亿美元` + H1 2026 - H1 2025 |
+| 净债务/TTM EBITDA | `1.9x` | FY2026Q2 投资者材料 | 较 FY2025 年末 `2.1x` 改善 |
+
+### 1.6 资产负债表健康度
+
+截至 2026-04-30：
+
+- 现金及等价物 `1.020 亿美元`。
+- 应收账款 `6.067 亿美元`，库存 `4.678 亿美元`。
+- 流动资产 `12.774 亿美元`，流动负债 `4.919 亿美元`，流动比率约 `2.6x`。
+- 一年内债务 `0.50 亿美元`，长期债务 `18.364 亿美元`，总债务约 `18.864 亿美元`，净债务约 `17.844 亿美元`。
+- 股东权益 `32.022 亿美元`，总资产 `59.644 亿美元`。
+- FY2026H1 经营现金流 `3.211 亿美元`，自由现金流 `2.934 亿美元`；Q2 单季自由现金流 `1.705 亿美元`，公司给出的 Q2 FCF conversion 为 `119%`。
+- FY2026H1 回购 `1.293 亿美元`、分红 `0.916 亿美元`、偿债 `1.071 亿美元`。
+
+健康度判断：**健康且有并购余量，但不是净现金公司。** 公司高毛利、轻资本开支、现金转化强，1.9x 净杠杆对其收入质量可控；主要风险是过去收购带来较高 goodwill/无形资产，若半导体/工业周期恶化或并购资产增长不达预期，会放大利润和减值风险。
+
+## 2. 最新与最近四次财报复盘
+
+### 2.1 五个季度核心财务与订单表
+
+> 注：Nordson 不披露 bookings dollar、segment backlog、lead time、取消率和 AI revenue。下表中 backlog 仅列公司披露口径；AI 数据中心相关收入为基于 ATS 产品与先进封装链条的估算。
+
+| 财报季度 | 总收入 / YoY | GAAP EPS / Adj EPS | Backlog / bookings / lead time | IPS 收入 / 增速 / EBITDA | MFS 收入 / 增速 / EBITDA | ATS 收入 / 增速 / EBITDA | AI 数据中心相关收入估算 |
+|---|---:|---:|---|---:|---:|---:|---:|
+| FY2026Q2，2026-04-30 | `740.8M` / `+8.5%` | `2.09` / `2.86` | backlog 同比 `+18%`；订单动能 broad-based；未披露金额、交期、取消率 | `350.5M` / `+9.9%`，有机 `+5.0%`；EBITDA `123.6M` / `35%` | `212.9M` / `+5.0%`，有机 `+7.8%`；EBITDA `79.2M` / `37%` | `177.5M` / `+10.1%`，有机 `+8.5%`；EBITDA `48.3M` / `27%` | `45-80M`/季；约公司 `6%-11%`，来自 advanced packaging dispense + inspection/metrology |
+| FY2026Q1，2026-01-31 | `669.5M` / `+8.8%` | `2.38` / `2.37` | backlog 同比约 `+4%`；ATS 订单尤其强；未披露金额 | `326.9M` / `+9%`，有机 `+3%`；EBITDA 约 `110M` / `34%` | `193.2M` / 约持平，有机 `+3%`；EBITDA 约 `70M` / `36%` | `149.4M` / `+23%`，有机 `+21%`；EBITDA 约 `33M` / `22%` | `40-65M`/季；x-ray recovery + electronics dispense growth |
+| FY2025Q4，2025-10-31 | `752M` / `+1%` | `2.69` / `3.03` | FY2025 年末 backlog 约 `600M`，同比 `+5%`（剔除已剥离业务）；FY2026 起始订单可见度改善 | `362M` / `-2%`，有机 `-4%`；EBITDA `137M` / `38%` | `220M` / `+10%`，有机 `+7%`；EBITDA `88M` / `40%` | `171M` / `-4%`，有机 `-5%`；EBITDA `43M` / `25%` | `40-65M`/季；electronics dispense 强但 x-ray 系统交付减少 |
+| FY2025Q3，2025-07-31 | `742M` / `+12%` | `2.22` / `2.73` | backlog 在强 Q3 后环比 `-5%`；公司称仍支持全年指引 | `351M` / `+1%`，有机 `-2%`；EBITDA `130M` / `37%` | `219M` / `+32%`，Atrion 贡献；核心有机剔除待剥离业务约 `+4%`；EBITDA `83M` / `38%` | `171M` / `+17%`，有机 `+15%`；EBITDA `42M` / `24%` | `45-70M`/季；electronics dispense robust growth |
+| FY2025Q2，2025-04-30 | `682.9M` / `+5%` | `1.97` / `2.42` | backlog 季内增长约 `+5%`；订单从 Q2 初开始改善 | `318.8M` / `-8%`，有机 `-7%`；EBITDA `113.5M` / `36%` | `202.8M` / `+20%`，Atrion 贡献但有机 `-10%`；EBITDA `76.5M` / `38%` | `161.3M` / 有机 `+18%`；EBITDA `39.5M` / `25%` | `40-70M`/季；半导体和电子需求 broad-based recovery |
+
+### 2.2 财报趋势判断
+
+- **ATS 的周期拐点从 FY2025Q2 开始显现。** FY2025Q1 ATS 仍同比下滑，Q2 有机 `+18%`，Q3 有机 `+15%`，Q4 因 x-ray 交付减少回落，FY2026Q1 有机 `+21%`，Q2 有机 `+8.5%`。这说明先进封装/电子点胶需求和 x-ray recovery 在拉动，但系统交付存在季度波动。
+- **IPS 仍是收入底盘，但非 AI。** IPS 的 polymer processing、industrial coating 对宏观工业和消费耐用品敏感；precision agriculture 是更好的增长口径，但与 AI 数据中心无直接关系。
+- **MFS 是高利润稳定器。** Q2 2026 MFS EBITDA margin `37%`，Q4 2025 达 `40%`。Atrion 与合同制造剥离改善 mix；MFS 对 AI 基建不是主线，但现金流质量高。
+- **Backlog 确认度上升，但金额不透明。** FY2025 年末公司给出约 `600M` backlog；FY2026Q1 同比 `+4%`，Q2 同比 `+18%`。若以 FY2025 年末为基准并考虑 H1 销售高于去年、订单加速，FY2026Q2 期末公司总 backlog 合理区间可能在 `6.5-7.5 亿美元`，但这是推断，不是披露。
+
+## 3. 2026 最新指引、业务占比、产品映射与重点/跳过清单
+
+### 3.1 最新指引与收入占比
+
+Nordson 在 2026-05-20 上调 FY2026 指引：
+
+| 指标 | 原始 FY2026 指引（2025Q4） | FY2026Q1 后指引 | FY2026Q2 后最新指引 | 最新指引含义 |
+|---|---:|---:|---:|---|
+| 全年收入 | `2.83-2.95B` | `2.86-2.98B` | `2.93-3.01B` | 中点 `2.97B`，同比 FY2025 `+6.4%` |
+| 调整 EPS | `10.80-11.50` | `11.00-11.60` | `11.30-11.80` | 中点 `11.55`，同比 FY2025 `+12.8%` |
+| Q3 收入 | 未给 | `710-740M`（Q2 指引） | `760-790M` | Q3 中点较 Q2 实际 `+4.6%` |
+| Q3 调整 EPS | 未给 | `2.70-2.90`（Q2 指引） | `2.95-3.15` | 继续受 backlog 和订单支持 |
+
+FY2026Q2 收入占比：
+
+| 分部 | Q2 收入 | Q2 占比 | Q2 同比 | H1 收入 | H1 同比 | 公司侧增长描述 |
+|---|---:|---:|---:|---:|---:|---|
+| IPS | `350.5M` | `47.3%` | `+9.9%` | `677.3M` | `+9.4%` | 工业涂装和聚合物加工改善，precision agriculture 延续增长，消费/工业稳定 |
+| MFS | `212.9M` | `28.7%` | `+5.0%` | `406.0M` | `+2.4%` | engineered fluid solutions 与 medical product lines 增长，剥离业务拖累约 `4%` |
+| ATS | `177.5M` | `24.0%` | `+10.1%` | `326.9M` | `+15.7%` | electronics dispense systems 持续增长，x-ray systems 恢复 |
+
+最突出、公司最侧重的业务：**ATS 的半导体/电子先进封装链条是增长弹性最高的业务；MFS 是利润稳定器；IPS 的 precision agriculture 是非 AI 的结构性增长点。**
+
+### 3.2 产品与型号映射
+
+#### ATS：先进封装点胶、涂覆、等离子与电子制造
+
+| 产品/平台 | 公开型号/系列 | 应用 | AI/HPC 相关性 | 当前判断 |
+|---|---|---|---|---|
+| 高端半导体点胶平台 | ASYMTEK Vantage Series | 高端 semiconductor packaging / assembly，underfill、encapsulation、precise coating | 高；用于 chiplet、2.5D/3D、PLP、HBM/AI package 的可靠性和良率环节 | FY2025-2026 ATS 增长核心之一 |
+| 高吞吐点胶平台 | ASYMTEK Forte Series、Spectrum II S2-900 | PCB assembly、mobile electronics、semiconductors、MEMS | 中；更多电子组装/消费/汽车，也可进入服务器板级制造 | 成熟放量但不一定全是 AI |
+| 喷射阀 | IntelliJet Jetting System、ReadiSet Jet Cartridge | 微小胶点、快速非接触点胶、underfill | 高；官方 PTI PLP 案例显示 underfill void 降低、cycle time 近 `-30%`、yield `>99%` | AI advanced packaging 的小而关键工艺 |
+| 等离子表面处理 | Nordson MARCH plasma systems | RDL/表面清洁活化、提升附着、封装可靠性 | 中高；hybrid/advanced packaging 对表面洁净和 adhesion 要求提高 | 与 underfill/涂覆形成组合销售 |
+| Conformal coating / selective solder | ASYMTEK Select Coat、SELECT Synchro | 电子板级可靠性、汽车电子、服务器/通信板 | 中；服务器/网络板级可受益，AI 直接性弱 | 低速稳健，非核心 AI 弹性 |
+
+#### ATS：Test & Inspection / CyberOptics / WaferSense
+
+| 产品/平台 | 公开型号/系列 | 应用 | AI/HPC 相关性 | 当前判断 |
+|---|---|---|---|---|
+| 自动 X-ray metrology | XM8000-7 Pro / XM8000 Pro | advanced packaging 3D metrology，sub-micron 3D reconstruction | 高；AI package 内部结构复杂，X-ray 可查 void、TSV、bump、underfill/overmold 缺陷 | 高价值但竞争强 |
+| 手动/自动 X-ray inspection | Quadra Pro、AXI XS/X series、MIPS software | PCB/半导体封装缺陷检测、BGA/flip-chip/micro-BGA void | 中高；服务器/5G/AI 板级与封装均需要检测 | FY2026Q1 起 x-ray recovery |
+| 光学 AOI/SPI/CMM | SQ7000+、SQ5000Pro、SQ3000 系列 | SMT、advanced packaging、wirebond inspection、3D AOI/SPI/CMM | 中高；MRS 技术适合高反光表面测量 | CyberOptics 收购后的核心能力 |
+| MRS sensor | 5-micron MRS、NanoResolution MRS | wafer-level / advanced packaging inspection，抑制高反射多重反射误差 | 高；advanced packaging shiny surfaces 测量难度高 | 小基数、技术差异化强 |
+| 声学检测 | AMI SpinSAM、Gen7、D9650 系列 | void/delamination、wafer-based assembly 缺陷 | 中高；advanced packaging 可靠性测试 | 2025 年报重点提到 SpinSAM 高吞吐和高灵敏度 |
+| WaferSense / ReticleSense | Auto Centering、Auto Gapping、Airborne Particle、Vibration/Leveling sensors | 半导体工具 setup、maintenance、particle/vibration/teaching | 中；前道/中道设备 uptime 和 setup 时间 | 工具传感器小众、高粘性 |
+| Nordson Intelligence AI | AI-Hub、deep learning / advanced AI 软件 | inspection 模型、自动化缺陷分类 | 中；不是 AI 数据中心收入，而是 inspection 软件用 AI | 软件 attach 和良率闭环可提升毛利 |
+
+#### MFS 与 IPS：财务重要但 AI 直接性低
+
+| 分部/产品 | 代表产品 | 增长质量 | AI 相关性 | 处理方式 |
+|---|---|---|---|---|
+| MFS 医疗流体组件/介入器械 | tubing、balloons、catheters、syringes、cartridges、tips、fluid connection components | 高 margin、稳定、Atrion 提升 proprietary mix | 低；医疗/biopharma 为主 | 财务上重点，AI 分析中降权 |
+| MFS engineered fluid solutions / industrial technology | 高技术工业流体件，电子/无线、EV、航空/海事等 | 稳健；Q2 organic growth 较好 | 低到中；可能有电子/EV/工业链暴露，但无数据中心 liquid cooling 披露 | 不把它当数据中心液冷公司 |
+| IPS precision agriculture | ARAG、CapstanAG、spray nozzles、pumps、filters、PWM/nozzle-by-nozzle control | 非 AI 高增长点 | 低 | 单列为非 AI 小成长 |
+| IPS polymer processing / industrial coatings / packaging / nonwovens | 聚合物加工、涂装、包装胶、非织造 | 周期恢复或稳健 | 低 | 低 AI 权重，可跳过深挖 |
+
+### 3.3 跳过或降权的业务
+
+以下业务不作为本报告 AI 基建重点：
+
+- Nonwovens、packaging adhesive dispensing、consumer non-durable 胶粘剂系统：现金流好，但不是 AI/HPC 瓶颈。
+- 工业涂装、普通 polymer processing：受工业周期影响，AI 相关性弱。
+- 医疗合同制造已剥离业务：公司已主动退出部分产品线。
+- Atrion 医疗输注/心血管组件：战略好、margin 好，但与 AI 数据中心无关。
+- Precision agriculture：ARAG/CapstanAG 是重要成长点，但不是 AI 基建。
+- 普通 PCB/SMT 检测和选择性焊接：可随服务器和汽车电子增长，但 AI 直接价值小于 advanced packaging inspection/metrology。
+
+## 4. 关键产品/业务当前贡献、增速、AI 重要性与供需
+
+### 4.1 当前贡献拆分
+
+> 公司不披露 ATS 内部收入。下表为基于 FY2026H1 ATS `326.9M`、Q2 ATS `177.5M`、官方产品组合、季度增长原因和行业景气的模型估算。
+
+| 关键产品/业务 | 当前公司收入贡献估算 | 当前增速估算 | 对 AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---:|---:|---|---|---|---|
+| Advanced packaging 点胶/underfill/encapsulation/plasma（ASYMTEK Vantage/IntelliJet/MARCH） | 总收入 `3.5-4.5 亿美元/年`；其中 AI/HPC advanced packaging 约 `0.9-1.4 亿美元/年` | 总线 `+8%-15%`；AI/HPC 子线 `+20%-35%` | 高：AI package 越大，underfill、void、warpage、adhesion、cycle time 越关键 | 高：GB300/Rubin/ASIC 封装扩产在 2026-2027 发生 | 中高：客户需工艺验证，Nordson 未披露交期紧张 | 中高：点胶工艺和应用工程有粘性，但不是唯一供应商 |
+| Test & Inspection：X-ray/optical/acoustic/MRS/WaferSense | 总收入 `2.6-3.3 亿美元/年`；其中 AI/HPC advanced packaging 约 `0.7-1.2 亿美元/年` | 总线 `+5%-15%`；x-ray recovery 和先进封装计量 `+15%-30%` | 高：复杂封装和服务器板级良率需要 X-ray/3D/AOI/acoustic | 高：先进封装检测量测是 2026-2027 瓶颈之一 | 中高：高端 inspection tool qualification 长，订单有波动 | 中：MRS/WaferSense 差异化强；高端 in-line 量测面临 KLA/Onto/Camtek |
+| Nordson Intelligence AI / inspection software | `0.2-0.5 亿美元/年` 含软件/升级/服务，估算 | `+15%-30%`，小基数 | 中：提升检测吞吐和缺陷分类，不是算力硬件 | 中 | 中 | 中高：软件/算法与设备装机绑定 |
+| MFS engineered fluid solutions / medical components | MFS 2026E 约 `8.2-8.8 亿美元`；高技术工业/流体组件约 `2.0-2.5 亿美元` | MFS Q2 organic `+7.8%` | 低到中：可能服务电子/EV/工业流体，但无数据中心液冷披露 | 低 | 中 | 中高：医疗/biopharma 认证粘性高 |
+| IPS precision agriculture（ARAG + CapstanAG） | `1.5-2.5 亿美元/年`，估算 | `+8%-15%` | 低 | 低 | 中 | 中：OEM 关系和喷洒控制算法/硬件有壁垒 |
+
+### 4.2 价格传导链
+
+Nordson 的价格传导不是“GPU 价格 -> Nordson 单件价格”，而是：
+
+```text
+AI GPU/ASIC/HBM package 面积、I/O、stack 数、RDL/underfill/inspection step 增加
+-> OSAT/foundry/EMS 需要新增点胶、plasma、X-ray、AOI/acoustic、tool setup sensors
+-> 设备 capex + spares/service + software attach 增加
+-> Nordson ATS 收入增长
+```
+
+关键点：
+
+- **设备收入滞后于客户扩产。** 客户先定工艺/材料/良率窗口，再下设备订单，设备交付后随量产爬坡。
+- **Nordson 内容量更接近“每条产线/每 10k wafer capacity”的 capex，而不是每 GPU BOM。** 单颗 AI GPU 的 Nordson 设备摊销可能只有几美分到数美元，但客户损失一批先进封装良率的成本远大于设备价格。
+- **服务/备件/软件比新机更稳定。** 2026Q2 投资者材料显示公司总体产品结构中约 `40%` 为 parts and consumables，这是复利属性来源之一；但公司未披露 ATS 的 recurring mix。
+
+## 5. 一年后收入贡献三情景
+
+### 5.1 情景假设
+
+| 变量 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| AI 芯片/先进封装 | GB300/MI350/TPU/Trainium/ASIC 正常拉动，CoWoS/HBM 仍偏紧 | Rubin/MI400/Trainium3/ASIC pull-in，OSAT 二供扩产 | AI capex 再上修，HBM4/advanced packaging 供给仍短缺到 2027H2 |
+| Nordson ATS 订单 | Backlog 同比增长放缓但保持正增 | ATS backlog 增速继续高于公司平均 | ATS 设备交期拉长，客户加急/预定 capacity |
+| X-ray/Test & Inspection | 恢复到正常增长 | advanced packaging metrology 需求显著提升 | X-ray/optical/acoustic 成良率瓶颈，重复订单超预期 |
+| 点胶/underfill | 先进封装和 PLP 温和放量 | OSAT/PLP 订单转 HVM | underfill/encapsulation 成大包体 AI package 的高频工序瓶颈 |
+
+### 5.2 一年后贡献预测
+
+| 关键产品/业务 | 当前 AI/HPC 相关收入估算 | 基准：一年后贡献 | 乐观：一年后贡献 | 极度乐观：一年后贡献 | 重要性/紧急性/供需/溢价变化 |
+|---|---:|---:|---:|---:|---|
+| Advanced packaging 点胶/underfill/encapsulation/plasma | `0.9-1.4 亿美元/年` | `1.1-1.6 亿美元`，增速 `+15%-25%` | `1.6-2.2 亿美元`，增速 `+30%-55%` | `2.3-3.2 亿美元`，增速 `+75%-120%` | 重要性高；紧急性随 CoWoS/PLP/HBM4 上升；供需从中高到高；溢价取决于客户 recipe/POR |
+| Test & Inspection / MRS / WaferSense | `0.7-1.2 亿美元/年` | `0.85-1.4 亿美元`，增速 `+15%-25%` | `1.3-1.9 亿美元`，增速 `+35%-60%` | `1.9-2.8 亿美元`，增速 `+80%-130%` | 重要性高；检测量测是良率闸门；供需在高端 tool 上可能偏紧；高端竞争强 |
+| Inspection software / Nordson Intelligence AI | `0.2-0.5 亿美元/年` | `0.25-0.6 亿美元`，增速 `+10%-25%` | `0.4-0.8 亿美元`，增速 `+30%-60%` | `0.7-1.2 亿美元`，增速 `+70%-150%` | 重要性中；软件 attach 可提升毛利；收入基数小，披露弱 |
+| MFS engineered fluid / medical components | 非 AI，`8.2-8.8 亿美元` MFS 年收入级别 | `8.6-9.2 亿美元` MFS，增速 `+4%-7%` | `9.0-9.7 亿美元`，增速 `+7%-11%` | `9.6-10.5 亿美元`，增速 `+12%-18%` | 财务重要但 AI 低；医疗认证粘性高 |
+| IPS precision agriculture | 非 AI，`1.5-2.5 亿美元/年` | `1.7-2.7 亿美元` | `2.0-3.1 亿美元` | `2.5-3.8 亿美元` | 非 AI；受农业 capex/OEM adoption 驱动 |
+
+## 6. BOM、单位内容量、价格传导、产能与认证
+
+### 6.1 先进封装点胶/underfill/encapsulation/plasma
+
+| 维度 | 当前判断 |
+|---|---|
+| BOM 位置 | 不在 GPU 材料 BOM 的主成本项；属于 OSAT/foundry/EMS 设备 capex、spares、服务和工艺开发成本。下游真实 BOM 对应 underfill/encapsulation/TIM/adhesive 材料，但 Nordson主要卖设备/系统，不主要卖封装材料。 |
+| 每 GPU 内容量 | 若按设备摊销估算，`0.2-3.0 美元/GPU package`，取决于是否 100% 经过 Nordson 点胶/等离子设备、设备 ASP、产线稼动率和折旧年限。 |
+| 每 rack 内容量 | 以 `72 GPU/rack` 粗算，约 `15-220 美元/rack` 的设备摊销；若加入 service/spares 可上调至 `20-300 美元/rack`。这不是采购价，而是分摊价值。 |
+| 每 MW 内容量 | 若 `6-8` 个高密 rack/MW，约 `100-1,800 美元/MW` 的点胶/等离子设备摊销。相对 GPU/服务器/BMS/液冷 BOM 很小。 |
+| 每 optical port 内容量 | 对光模块/CPO/封装光 I/O 的点胶/涂覆可有少量设备摊销，通常 `0.01-0.20 美元/port` 级别，除非特定 active alignment/封装工序使用 Nordson 设备。 |
+| 每 10k wpm 先进封装产能 | 更合理口径：每新增 `10k wafer/month` CoWoS-like/PLP/advanced package capacity，Nordson dispense/plasma 相关设备、夹治具、service 可能贡献 `2-8M 美元`，高端/多工序场景可到 `10M+`；置信度中低。 |
+| 价格传导链 | 大包体/warpage/underfill void 约束 -> 客户为良率和 cycle time 付费 -> 设备 ASP 与应用工程价值上升 -> Nordson ATS 收入。 |
+| 当前产能能力 | ATS 年化 revenue run-rate `6.5-7.1 亿美元`，估算其中点胶/电子处理 `3.5-4.5 亿美元`；公司未披露 capacity utilization。 |
+| 供应链采纳 | 官方 PTI PLP case：ASYMTEK Vantage + IntelliJet 在 PLP underfill 中帮助 yield `>99%`、cycle time 接近 `-30%`；说明 Nordson 进入 OSAT advanced packaging 工艺验证。 |
+| 认证阶段 | 客户 POR/qualification 未公开。合理阶段：已在部分 OSAT/电子客户 HVM 使用；AI/HBM/Rubin 相关客户需逐代 recipe qualification。 |
+
+### 6.2 X-ray/optical/acoustic/MRS/WaferSense 检测计量
+
+| 维度 | 当前判断 |
+|---|---|
+| BOM 位置 | 产线检测/计量设备、软件和传感器；不是每颗 GPU 的材料 BOM。 |
+| 每 GPU 内容量 | 设备摊销约 `0.05-2.0 美元/GPU package`；若 advanced package 做高覆盖率 X-ray/3D/acoustic inspection，摊销上升。 |
+| 每 rack 内容量 | `4-150 美元/rack`；极高覆盖率和多次检测场景可更高。 |
+| 每 MW 内容量 | `25-1,200 美元/MW`，相对系统 BOM 小，但对良率/报废风险影响大。 |
+| 每 optical port 内容量 | 对 800G/1.6T 光模块、CPO/硅光封装，AOI/X-ray/计量设备摊销可能为 `0.02-0.50 美元/port`；取决于检测覆盖率和端口价值。 |
+| 每 10k wpm 先进封装产能 | 若 Nordson 被选为部分 X-ray/acoustic/optical tool，每 `10k wpm` advanced packaging capacity 可能对应 `1-5M 美元` Nordson 检测/传感设备，若 3D metrology/X-ray 高覆盖率可达 `5-15M 美元`；置信度中低。 |
+| 当前产能能力 | 估算 T&I 年收入 `2.6-3.3 亿美元`，其中 advanced packaging/server/AI 相邻 `0.7-1.2 亿美元`。 |
+| 供应链采纳 | 官方 Test & Inspection 覆盖 Advanced Packaging、Front/Mid/Back-End semiconductor、AI、Server & 5G；XM8000 Pro 定位 advanced packaging 3D metrology，MRS 定位 wafer-level/advanced packaging 高反射测量。 |
+| 认证阶段 | 已进入 SMT、半导体和 advanced packaging 客户；但与 KLA/Onto/Camtek 不同，Nordson 没有披露 HBM4/CoWoS tier-1 订单。 |
+
+### 6.3 MFS engineered fluid / 医疗流体组件
+
+| 维度 | 当前判断 |
+|---|---|
+| BOM 位置 | 医疗器械、biopharma、patient care、device manufacturing 和部分 high-tech industrial fluid handling。 |
+| 每 MW/rack/GPU/optical port | 公司未披露数据中心液冷 QD/CDU/cold plate 暴露；不要把 MFS 自动映射到 AI rack 液冷。若有电子/无线/EV 工业流体件，更多是设备/工艺流体而非 IDC rack。 |
+| 当前产能能力 | MFS FY2026 年化 revenue 约 `8.1-8.7 亿美元`，EBITDA margin `36%-40%`。 |
+| 供应链采纳 | 医疗/biopharma 组件通常客户认证粘性高；Atrion 提升 proprietary portfolio。 |
+| 认证阶段 | 医疗器械和 biopharma 客户认证强，但不是 AI 基建认证。 |
+
+### 6.4 IPS precision agriculture
+
+| 维度 | 当前判断 |
+|---|---|
+| BOM 位置 | 农业喷洒 OEM：nozzles、pumps、filters、PWM/nozzle-by-nozzle control、liquid distribution。 |
+| 每 MW/rack/GPU/optical port | 不适用。 |
+| 当前产能能力 | 估算 `1.5-2.5 亿美元/年` revenue 级别，实际未披露。 |
+| 供应链采纳 | ARAG + CapstanAG 组合增强北美 OEM 客户和 precision spraying 平台。 |
+| 认证阶段 | OEM design-in / dealer channel / field reliability，而非半导体认证。 |
+
+## 7. 一年后产能、采纳与认证三情景
+
+| 产品/业务 | 当前产能/收入能力 | 基准：一年后 | 乐观：一年后 | 极度乐观：一年后 |
+|---|---:|---|---|---|
+| Advanced packaging 点胶/plasma | 总线 `3.5-4.5 亿美元/年`，AI/HPC `0.9-1.4 亿美元` | 总线 `4.0-5.0 亿美元`；AI/HPC `1.1-1.6 亿美元`；更多 OSAT PLP/CoWoS-like qualification | 总线 `4.8-5.8 亿美元`；AI/HPC `1.6-2.2 亿美元`；部分客户 POR/HVM 重复订单 | 总线 `6.0-7.2 亿美元`；AI/HPC `2.3-3.2 亿美元`；高端点胶设备交期拉长、客户加急 |
+| X-ray/optical/acoustic/MRS/WaferSense | 总线 `2.6-3.3 亿美元/年`，AI/HPC `0.7-1.2 亿美元` | 总线 `3.0-3.7 亿美元`；AI/HPC `0.85-1.4 亿美元`；x-ray recovery 稳定 | 总线 `3.7-4.5 亿美元`；AI/HPC `1.3-1.9 亿美元`；先进封装检测采纳提升 | 总线 `4.8-6.0 亿美元`；AI/HPC `1.9-2.8 亿美元`；若 HBM4/large package 需要更多 3D inspection |
+| Nordson Intelligence AI / inspection software | `0.2-0.5 亿美元/年` | 随装机增加，更多软件升级 | 软件 attach、defect library、自动化编程提高毛利 | 若客户要求高吞吐 AI 缺陷分类，软件收入小基数高增 |
+| MFS engineered / medical | MFS `8.1-8.7 亿美元/年` | `8.6-9.2 亿美元`，认证稳健 | `9.0-9.7 亿美元`，Atrion 协同好 | `9.6-10.5 亿美元`，医疗和 biopharma 同时强 |
+| IPS precision agriculture | `1.5-2.5 亿美元/年` 估算 | 北美 CapstanAG synergies 温和 | 中端 OEM cross-sell 增强 | 农机周期反弹 + precision spraying adoption 加速 |
+
+## 8. 订单积压、供给与未来一年业务增速推演
+
+### 8.1 真实订单与 backlog 能见度
+
+公司披露：
+
+- FY2025 年末 backlog 约 `600M`，同比 `+5%`，剔除 divested business。
+- FY2026Q1 期末 backlog 同比约 `+4%`，订单动能 broad-based，ATS 尤其强。
+- FY2026Q2 期末 backlog 同比 `+18%`，order entry momentum broad-based across all segments。
+- 公司未披露 segment backlog、book-to-bill、订单金额、取消率、lead time、客户名或交付窗口。
+
+推断：
+
+- FY2026Q3 指引收入中点 `775M`，高于 FY2026Q2 `741M`，说明 Q2 期末 backlog 和 Q3 book/ship 支持短期继续增长。
+- Q2 backlog 同比 `+18%` 高于 H1 revenue 同比 `+8.6%`，说明订单转化尚未完全进入收入，未来两个季度有一定保障。
+- 若 FY2025 年末 `600M` 是低点，Q2 后总 backlog 可能已进入 `650-750M` 区间；若订单 Q2 后继续加速，则可接近 `800M`。但公司未披露金额，置信度低。
+
+### 8.2 未来一年公司增速三情景
+
+| 情景 | FY2026H2 + FY2027H1 总收入增长 | ATS 增速 | MFS 增速 | IPS 增速 | 主要依据 | 反证 |
+|---|---:|---:|---:|---:|---|---|
+| 基准 | 公司收入 `+5%-8%` | `+10%-15%` | `+4%-7%` | `+4%-7%` | backlog +18% 转化，ATS 半导体/电子恢复，MFS mix 稳定，IPS 工业温和恢复 | Q3/Q4 订单弱化，Q4 ATS x-ray 再次交付空档 |
+| 乐观 | 公司收入 `+8%-12%` | `+18%-25%` | `+7%-10%` | `+7%-10%` | AI advanced packaging 设备订单、x-ray recovery、precision agriculture 收购协同同时兑现 | 半导体客户 CapEx 放缓或 CoWoS/HBM 扩产延后 |
+| 极度乐观 | 公司收入 `+12%-18%` | `+30%-45%` | `+10%-15%` | `+10%-15%` | ATS 进入多个 OSAT/semiconductor HVM POR，backlog 接近 `800M+`，价格/服务 attach 提升 | 没有客户订单披露，竞争对手拿走高端检测/量测，lead time 未延长 |
+
+我的基准模型：FY2026 收入靠近公司指引中点 `29.7 亿美元`，FY2027 可达 `31.0-32.5 亿美元`；若 ATS 先进封装相关收入增速保持 `20%+`，FY2027 收入可向 `33 亿美元+`，但这需要 Q3/Q4 持续 backlog 增长验证。
+
+## 9. 竞争格局、替代风险与客户切换成本
+
+### 9.1 Advanced packaging 点胶/underfill/plasma
+
+| 维度 | 判断 |
+|---|---|
+| 主要竞争对手 | Musashi Engineering、ITW EAE/CAMALOT、Mycronic、ASMPT/K&S 部分封装设备、Speedline/其他电子装配设备商、材料商与客户自研工艺方案。等离子/表面处理还会遇到 PVA TePla、Diener、Plasma Etch、Panasonic/其他 plasma tool。 |
+| Nordson 优势 | ASYMTEK 在高精度点胶和电子制造应用工程中装机基础深；Vantage/IntelliJet 有 PLP 客户案例；能把点胶、涂覆、等离子和应用工程组合销售。 |
+| 是否未来主流 | underfill/encapsulation/表面处理不会消失；advanced package 越大、越高密，良率价值越高。路线会从普通 capillary underfill 扩展到 molded underfill、non-conductive paste/film、TIM/adhesive、plasma surface prep 等组合。 |
+| 风险 | hybrid bonding、molded underfill、material innovation 或客户自研 turnkey 可能减少某些点胶步骤；低端点胶设备容易价格竞争；OSAT 若标准化设备采购会压价。 |
+| 切换成本 | 中高。客户切换设备需要重做流体、pattern、速度、温度、void、warpage、可靠性和量产 recipe，通常至少季度级验证。 |
+
+### 9.2 X-ray/optical/acoustic/MRS/WaferSense
+
+| 维度 | 判断 |
+|---|---|
+| 主要竞争对手 | 高端 process control：KLA、Onto Innovation、Camtek、Nova、Bruker；X-ray/CT：Comet/YXLON、Waygate、Nikon Metrology、Viscom、Rigaku；SMT AOI/SPI：Koh Young、Saki、Omron、ViTrox、Mirtec；acoustic：Sonoscan/Sonix 等。 |
+| Nordson 优势 | DAGE X-ray、MATRIX/YES TECH、CyberOptics MRS、WaferSense、acoustic inspection 形成多技术组合；MRS 对高反射表面测量有差异化；WaferSense 在 tool setup/maintenance 小众领域粘性强。 |
+| 是否未来主流 | advanced packaging 需要更多 2D/3D/X-ray/acoustic/optical 检测，检测覆盖率和软件闭环会提高。 |
+| 风险 | 高端 HBM/CoWoS in-line metrology 的头部订单可能更多流向 KLA/Onto/Camtek；Nordson 若停留在 lab/manual/SMT 端，AI 弹性会低于市场想象。 |
+| 切换成本 | 中到高。对已认证的检测 recipe、缺陷库、软件接口和客户 SPC 数据，切换成本高；但新线采购时竞争激烈。 |
+
+### 9.3 MFS engineered fluid / 医疗与高技术工业流体
+
+| 维度 | 判断 |
+|---|---|
+| 主要竞争对手 | 医疗/流体组件：Parker Hannifin、IDEX、TE Connectivity、Dover/CPC、Danaher 相关生命科学部件、Merit Medical、Integer、Freudenberg Medical 等。 |
+| Nordson 优势 | 医疗/biopharma 认证、专有流体连接组件、Atrion 加入后 proprietary mix 提升，margin 高。 |
+| AI 替代风险 | 无直接 AI 逻辑；若市场把 MFS 当数据中心液冷标的，会高估。 |
+| 切换成本 | 医疗高，工业中等。医疗器械客户认证和法规使切换慢。 |
+
+### 9.4 Precision agriculture
+
+| 维度 | 判断 |
+|---|---|
+| 主要竞争对手 | Raven/CNH、John Deere/Blue River、TeeJet/Spraying Systems、Topcon、Trimble、Bosch BASF、AGCO 精准农业生态。 |
+| Nordson 优势 | ARAG + CapstanAG 形成流体控制、喷嘴、PWM/nozzle-by-nozzle control 和北美 OEM 关系。 |
+| AI 替代风险 | 与 AI 数据中心无关；农业机器视觉/AI 可能改变喷洒控制，但不是 Nordson 当前估值主线。 |
+| 切换成本 | OEM design-in 中等；农机客户和渠道认证需要时间。 |
+
+## 10. 投资跟踪清单与反证
+
+### 10.1 未来 12 个月最重要的跟踪指标
+
+| 优先级 | 指标 | 为什么重要 |
+|---:|---|---|
+| 1 | FY2026Q3/Q4 ATS organic growth 是否继续 `10%+` | 验证半导体/电子复苏不是一两个季度的交付波动 |
+| 2 | Backlog 同比增速是否维持 `15%+` 或公司给出 dollar backlog 上修 | 订单能见度是 FY2027 增长的先行指标 |
+| 3 | X-ray systems recovery 是否连续两个季度贡献增长 | FY2025Q4 ATS 回落的主要拖累是 x-ray deliveries |
+| 4 | 是否出现 OSAT/foundry/advanced packaging 客户案例，尤其 CoWoS-like、PLP、HBM4、RDL、underfill | 验证 AI/HPC 先进封装相关收入 |
+| 5 | ATS EBITDA margin 是否维持 `25%-28%+` | 如果增长来自高端设备和软件/服务，margin 应保持 |
+| 6 | FY2026 指引是否第三次上调 | 若 Q3 后继续上调，说明 backlog 转收入顺利 |
+| 7 | 同业 KLA/Onto/Camtek/ASMPT/SUSS/Besi 先进封装订单 | 如果先进封装链上修而 Nordson ATS 不跟随，说明份额或产品定位不够核心 |
+| 8 | MFS 剥离后 organic growth 和 margin | 验证组合质量改善 |
+
+### 10.2 需要下修的反证
+
+1. FY2026Q3 以后 ATS organic growth 降至 `0%-5%`，而先进封装同业仍高增长，说明 Nordson 产品链未吃到 AI/HPC 主线。
+2. Backlog 同比增速快速回落，或公司停止强调 order entry momentum。
+3. X-ray systems 再次出现交付减少，T&I 收入波动超过点胶增长。
+4. 先进封装路线转向客户自研/其他设备商 turnkey，Nordson 只能拿低端电子装配订单。
+5. MFS/IPS 周期下行抵消 ATS 增长，公司 FY2026 或 FY2027 指引下修。
+6. 净杠杆因并购上升到 `3x+`，且收购资产增长不达预期。
+7. 估值继续维持 `25x+ forward PE`，但收入增长回到低个位数，复利股重估空间受限。
+
+## 11. 结论
+
+Nordson 的最佳定位是 **“先进制造良率链条里的精密工艺和检测平台”**。它不是 AI 数据中心建设的一线收入公司，但在 AI 芯片先进封装扩产、PLP/CoWoS-like、HBM/RDL/underfill、服务器/5G 电子制造检测中有真实产品暴露。FY2026Q2 的 ATS 增长、backlog `+18%`、FY2026 指引上调，说明公司正在走出 2024-2025 半导体/工业弱周期。
+
+投资上最应关注两件事：第一，ATS 先进封装相关收入是否能从估算的公司 `6%-11%` 收入占比继续上升到 `10%-15%+`；第二，Nordson 在 X-ray/optical/acoustic/underfill/plasma 的客户案例是否从 PTI PLP 这类技术验证扩展到更多 HBM/CoWoS-like/HPC package 量产线。如果这两点兑现，Nordson 可以从“稳定工业复利股”多一层 AI 先进封装 beta；如果不兑现，它仍是一家高质量工业平台，但不应给直接 AI 基建标的的估值溢价。
+
+## 主要来源
+
+### 公司与财报
+
+- Nordson, FY2026 Q2 earnings release, 2026-05-20: https://www.nordson.com/en/About-Us/Newsroom/Corporate-News/Nordson-Corporation-Reports-Record-Second-Quarter-2026-Results-and-Increases-Full-Year-Guidance
+- Nordson, FY2026 Q2 investor presentation, 2026-05-21: https://s202.q4cdn.com/528247721/files/doc_financials/2026/q2/FY26-Nordson-Investor-Presentation-5-21-26RevA.pdf
+- Nordson, FY2026 Q1 earnings release, 2026-02-18: https://www.nordson.com/en/about-us/newsroom/corporate-news/nordson-corporation-reports-record-first-quarter-fiscal-2026-results
+- Nordson, FY2025 Q4 and fiscal year earnings release, 2025-12-10: https://www.nordson.com/en/about-us/newsroom/corporate-news/nordson-corporation-reports-record-fourth-quarter-and-fiscal-year-2025-results
+- Nordson, FY2025 Q3 earnings release PDF, 2025-08-20: https://nc-p-001.sitecorecontenthub.cloud/api/public/content/ab3efef03dca4f5ebc7b21416a8b1835?v=db3e8a88
+- Nordson, FY2025 Q2 earnings release, 2025-05-28: https://www.nordson.com/en/about-us/newsroom/corporate-news/nordson-corporation-reports-second-quarter-fiscal-2025-results-and-third-quarter-guidance
+- Nordson, FY2025 Form 10-K / Annual Report: https://s202.q4cdn.com/528247721/files/doc_financials/2025/ar/10-K.pdf
+- Nordson, CapstanAG acquisition news, 2026-03-18: https://www.nordson.com/en/about-us/newsroom/precision-agriculture-news/nordson-aquires-capstanag
+
+### 产品与技术
+
+- Nordson Test & Inspection product overview: https://www.nordson.com/en/divisions/test-and-inspection
+- Nordson Electronics Solutions overview: https://www.nordson.com/en/divisions/electronics-solutions
+- Nordson Semiconductor Packaging product page: https://www.nordson.com/en/divisions/electronics-solutions/your-process/industries/semiconductor-packaging
+- Nordson PTI panel-level packaging / ASYMTEK Vantage case, 2025-06-10: https://www.nordson.com/en/about-us/newsroom/electronics-solutions-news/nordson-electronics-solutions-develops-panel-level-packaging-solution-for-powertech-technology-inc
+- Nordson Automated X-ray Metrology / XM8000 Pro page: https://www.nordson.com/en/divisions/test-and-inspection/our-technologies---semiconductor-metrology
+- Nordson MRS sensor technology page: https://www.nordson.com/en/products/test-and-inspection-products/mrs-sensor-technology-and-options
+- Nordson FY2025 investor presentation, December 2025: https://s202.q4cdn.com/528247721/files/doc_presentations/2025/Dec/22/FY25-Nordson-Investor-Presentation-12-2025.pdf
+
+### 项目内行业资料
+
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装湿化学与表面处理材料_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`

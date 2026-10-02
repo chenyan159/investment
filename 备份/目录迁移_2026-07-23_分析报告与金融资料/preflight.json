@@ -1,0 +1,28 @@
+{
+  "recordedAt": "2026-07-23T21:14:19.5231967-07:00",
+  "workspace": "D:\\drive\\Investment",
+  "sources": {
+    "analysis": "D:\\drive\\Investment\\基本面\\分析报告",
+    "daily": "D:\\drive\\Investment\\基本面\\日度资料"
+  },
+  "targets": {
+    "analysis": "D:\\drive\\Investment\\分析报告",
+    "financialMaterials": "D:\\drive\\Investment\\金融资料"
+  },
+  "fileCounts": {
+    "analysis": 6300,
+    "daily": 300
+  },
+  "byteCounts": {
+    "analysis": 306948524,
+    "daily": 508094559
+  },
+  "junctionCount": 24,
+  "queueBytes": 0,
+  "runnerLockExists": false,
+  "site": {
+    "head": "33104f8f14e643cb49eaa475478f14d682cc6ac8",
+    "originMain": "33104f8f14e643cb49eaa475478f14d682cc6ac8",
+    "statusPorcelain": ""
+  }
+}

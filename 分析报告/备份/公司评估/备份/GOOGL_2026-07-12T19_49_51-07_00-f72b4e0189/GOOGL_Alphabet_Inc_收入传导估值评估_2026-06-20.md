@@ -1,0 +1,173 @@
+# 公司收入传导与价值传导评估：Alphabet Inc（GOOGL）
+
+报告日期：2026-06-20  
+公司：Alphabet Inc.  
+公司代号：GOOGL / GOOG  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM，即 2026Q2 至 2027Q1。  
+金额单位：除特别注明外，均为美元；`B` 为十亿美元。  
+资料边界：项目内只使用 `公司调研/` 和 `行业调研/`；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、模型比较、排序结果或估值倍数。  
+结论边界：本报告只做经营收入传导、利润传导和现金流传导；不输出投资评级、目标价、股价区间、估值倍数判断或全公司排序。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM，即 2026Q2-2027Q1。FY2026、FY2027、TPU 2027 大规模收入、长期 run-rate 和 Waymo 远期机会只作补充或跟踪，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：Alphabet 2026Q1 收入 `109.896B`，同比 `+22%`，TTM 收入约 `422.5B`；2026Q1 年化 run-rate 约 `439.6B`，但 Q1 季节性低于 Q4。公开共识辅助锚显示 FY2026 收入约 `487.7B`、2026Q2-2027Q1 季度收入合计约 `509.3B`。管理层没有给全年收入指引，但给出 2026 CapEx `180-190B`，并披露 Cloud backlog `462B`、超过一半预计 24 个月内确认。
+- 重要产品/业务线：Search & other advertising、YouTube ads、Google Network、Google subscriptions/platforms/devices、Google Cloud core/Workspace/security、Google Cloud AI infrastructure/TPU/GPU/Vertex/Gemini Enterprise、Other Bets/Waymo。
+- NTM 公司收入四情景：悲观 `455-485B`，基准 `500-520B`，乐观 `540-575B`，极度乐观 `600-650B`。基准约等于当前共识和 backlog/run-rate 可见路径正常兑现；极度乐观需要 Search、Cloud、TPU 硬件、订阅和执行质量同时超预期，可信度低。
+- 利润或 EBITDA 四情景：悲观 EBITDA/标准化净利润约 `190-215B / 120-140B`；基准约 `220-245B / 140-160B`；乐观约 `255-285B / 165-190B`；极度乐观约 `305-345B / 200-230B`。标准化净利润不外推 2026Q1 非上市股权重估收益。
+- 最大传导瓶颈：Cloud backlog 到收入确认的物理交付、TPU/GPU/网络/电力上电、客户验收和合同确认节奏。Cloud backlog 是强证据，但不是当期收入。
+- 最大利润率变量：AI infrastructure 折旧、能源和数据中心运营成本能否被 TPU/TCO、Cloud 软件 attach、Search 广告现金流和规模效率吸收。Wiz 并入 Cloud 对 2026 剩余季度 Cloud operating margin 有 low-single-digit percentage point headwind。
+- 最大现金流变量：2026 CapEx `180-190B`、2027 CapEx 显著高于 2026 的可能性、`332.4B` purchase commitments、`75.6B` 未开始数据中心租赁和数据中心/能源 backstop。2026Q1 FCF 仍为正 `10.1B`，但 FCF 弹性被 AI 基建投入压住。
+- 可信度：基准为中高；乐观为中；极度乐观为低。原因是 Search/Services 和 Cloud segment 收入证据为 A 级，Cloud backlog 为 B 级，但 AI infrastructure/TPU 单独收入拆分、TPU 硬件利润率、客户验收节奏仍需估算。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Google Search & other advertising | 2026Q1 `60.4B`；TTM 约 `234.2B` | 2026Q1 `55.0%` | 最大现金牛；AI Mode/AI Overviews 决定广告库存是否扩张 | A | 进入基准主口径；NTM 基准 `260-275B` | Agentic commerce、UCP、Gemini App 广告化只进乐观/远期期权 |
+| YouTube ads | 2026Q1 `9.9B`；TTM 约 `41.3B` | 2026Q1 `9.0%` | 视频广告与 CTV/creator/shopping 的现金流 | A | 进入基准；NTM 基准 `43-47B` | AI video、creator tools 的增量广告效率列为跟踪 |
+| Google Network | 2026Q1 `7.0B`；TTM 约 `29.5B` | 2026Q1 `6.3%` | 传统广告网络，当前是抵消项 | A | 进入公司汇总，但按低增长或下滑处理 | 无 |
+| Google subscriptions, platforms and devices | 2026Q1 `12.4B`；TTM 约 `50.0B` | 2026Q1 `11.3%` | Google One、YouTube Premium、Play、devices 和 AI plans 的混合收入 | A，子项拆分为 C | 进入基准；NTM 基准 `55-60B` | Gemini consumer paid tier 的非线性增长进乐观或极度乐观 |
+| Google Cloud core / Workspace / security / data analytics | Cloud 总收入 2026Q1 `20.0B`；本子项未单独披露，估算当前年化 `40-50B` | 公司收入约 `9-11%` | 企业云基础盘，承接 Workspace seat、data/security、Wiz attach | A for Cloud segment；C for split | 进入基准，按 Cloud 总收入内的保守拆分处理；NTM 基准 `50-58B` | Wiz 大规模 attach 到企业 AI security 进乐观 |
+| Google Cloud AI infrastructure / TPU / GPU / Vertex / Gemini Enterprise | Cloud 总收入内估算 2026Q1 `7.5-11.0B`；Cloud backlog `462B` | 公司收入约 `7-10%` | 未来 12 个月最大增量和再定价来源 | B for backlog；C for revenue split；D for部分新品 | 基准仅纳入有 Cloud/RPO/客户路径的部分；NTM 基准 `48-62B` | TPU 2027 大规模硬件收入、Anthropic 多 GW next-gen TPU、大规模外部 TPU hardware sales |
+| Other Bets / Waymo | 2026Q1 `0.4B`；经营亏损 `2.1B` | 2026Q1 `0.4%` | 长期可选项，NTM 利润拖累 | A | 收入进入汇总，但不作为 NTM 公司增长主线 | Waymo 城市扩张和外部资本结构调整 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池和需求强弱，不评估 Alphabet 份额、收入确认、利润率或公司汇总。需求强弱均相对当前需求锚，即 2026Q1 实际表现、Cloud backlog、公开行业需求和当前 NTM 预期。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Search & other advertising | 2026Q1 Search & other `+19%`，AI experiences 推动查询和 commercial queries | 商业查询/广告预算仍增长但放缓至 `+3-7%`；AI 答案压低部分点击 | 商业查询和广告覆盖正常扩张，需求 `+8-14%` | AI Mode/AI Overviews 改善复杂查询广告覆盖，需求 `+15-22%` | Agentic commerce 形成新高意图库存，需求 `+25%+` | 悲观仍可能绝对增长；极度乐观为 `+60B+` 年化广告需求池 | 基准符合当前预期；悲观低于预期；乐观高于预期 | 正证：Search 查询 all-time high、AI 对复杂查询广告覆盖有帮助。反证：AI 搜索替代、广告预算周期、默认搜索监管 |
+| YouTube ads | 2026Q1 `+11%`，DR 与 brand 均有贡献 | CTV/品牌预算弱，需求 `0-6%` | 视频广告需求 `+8-13%` | Shopping、short-form、CTV 和 AI creative 改善，需求 `+14-20%` | YouTube 成为 AI video commerce 主入口，需求 `+22%+` | 基准增量约 `3-6B` 广告需求 | 基准略低于 Search；乐观需要广告产品和预算共振 | 正证：YouTube ads 仍双位数增长。反证：短视频竞争、creator 成本、品牌预算波动 |
+| Google Network | 2026Q1 `-4%` | 开放网络继续萎缩，需求 `-8% to -15%` | 需求 `-5% to 0%` | 稳定至 `0-3%` | 小幅恢复 `+5%`，但可信度低 | 负向需求池约 `-2B to -5B` | 基准低于公司整体预期，是抵消项 | 正证有限。反证：隐私变化、开放网络流量质量、广告主预算向 Search/YouTube/PMax 集中 |
+| Subscriptions / platforms / devices | 2026Q1 `+19%`，paid subscriptions `350M`，Google One AI plans 增长 | 订阅增长降至 `+6-10%`；AI plan 转化慢 | 订阅和平台需求 `+12-18%` | Gemini/YouTube Premium/Google One 增强付费，需求 `+20-30%` | Gemini consumer 成为大规模付费入口，需求 `+35%+` | 基准 NTM 增量约 `6-10B` | 基准符合当前预期；极度乐观需付费渗透非线性提高 | 正证：350M paid subscriptions、AI plans 拉动 Google One。反证：消费者 AI 价格竞争、devices mix、Play 监管 |
+| Cloud core / Workspace / security | Cloud 2026Q1 `+63%`，Workspace double-digit，Wiz 并入 Cloud | 非 AI core 云增速放缓至 `+10-20%` | 企业云、Workspace、安全需求 `+25-40%` | Wiz/security/data analytics attach 推动 `+45-60%` | Cloud share gain 明显加速，需求 `+70%+` | 基准需求池增量约 `15-25B` | 基准高于成熟云平均，仍受 AI cloud 拉动 | 正证：Cloud segment 全面加速。反证：云迁移周期、AWS/Azure/OCI 竞争、Wiz 整合 |
+| Cloud AI infrastructure / TPU / GPU / Vertex / Gemini Enterprise | Cloud backlog `462B`，Gemini direct API `16B tokens/min`，Gemini Enterprise paid MAU `+40% QoQ`，AI solutions 为 Cloud 增长最大贡献 | AI compute 需求仍强但确认节奏慢，需求 `+40-70%` | AI infra/enterprise AI 需求 `+70-120%` | TPU/GPU/Vertex/enterprise AI 大单继续，需求 `+130-180%` | 多 GW TPU、agentic inference 和企业 AI 同时放量，需求 `+200%+` | 绝对需求池可能增加 `40-100B+`，但不等于可确认收入 | 基准符合 backlog 支持；极度乐观大部分偏 2027+ | 正证：RPO、TPU hardware agreements、Anthropic/Broadcom。反证：电力、HBM/封装、上电、客户验收、token 价格 |
+| Other Bets / Waymo | Waymo 超过 `500,000` fully autonomous rides/week，但 Q1 revenue 仅 `0.4B` | 扩城、监管或安全事件延迟 | rides 和城市扩张延续，但收入仍小 | Rides、商业合作和外部资本改善 | Robotaxi 需求非线性扩张 | NTM 收入绝对增量仍通常低于 `3B` | 不影响基准公司收入结论 | 正证：rides/week 明确增长。反证：单位经济、事故/监管、车辆成本 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断外部需求有多少能进入 Alphabet 的 NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入。Cloud AI infrastructure 和 TPU 的需求池很大，但只有已在收入表、Cloud backlog、客户合同、交付时间表或管理层明确确认的部分进入基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Search & other advertising | 2026Q1 `60.4B`；TTM `234.2B`；Search revenue `+19%` | 直接 | 高利润广告现金流；AI compute 增加成本但边际仍高 | `240-255B` | `260-275B` | `285-310B` | `320-345B` | 基准符合当前 Search 正常兑现；悲观低于当前路径 | A | 是 | 收入表可确认，Q1 已体现 AI Search 未破坏商业化 | 基准主收入池 |
+| YouTube ads | 2026Q1 `9.9B`；TTM `41.3B` | 直接 | 广告利润高于硬件，但内容、TAC 和 creator ecosystem 成本约束 | `38-42B` | `43-47B` | `48-54B` | `55-62B` | 基准符合当前广告和季节性 | A | 是 | 收入表可确认 | 基准纳入 |
+| Google Network | 2026Q1 `7.0B`；TTM `29.5B`；同比 `-4%` | 直接 | 成熟低增长，利润属性弱于 Search | `23-26B` | `26-28B` | `28-30B` | `30-33B` | 基准低于公司整体增长，是抵消项 | A | 是 | 收入表可确认，但按收缩处理 | 纳入汇总并作为抵消项 |
+| Subscriptions / platforms / devices | 2026Q1 `12.4B`；TTM `50.0B`；350M paid subscriptions | 直接 | Google One/YouTube subscriptions 较好；devices 和 Play mix 较复杂 | `49-54B` | `55-60B` | `63-72B` | `78-90B` | 基准符合当前 subscription momentum | A；子项 C | 是 | 分部收入表可确认；AI plan 子项未拆分，保守纳入 | 基准纳入，AI plan 弹性进乐观 |
+| Cloud core / Workspace / security | Cloud 总收入 2026Q1 `20.0B`；本子项为估算拆分 | 直接 | Subscription/usage 云服务，margin 已改善；Wiz 2026 有低个位数 margin headwind | `42-50B` | `50-58B` | `60-70B` | `75-85B` | 基准符合 Cloud 正常兑现，但子项拆分低置信 | A for Cloud；C for split | 是 | Cloud segment A 级，拆分仅用于传导，不重复加总 | 基准纳入 Cloud 总额内 |
+| Cloud AI infrastructure / TPU / GPU / Vertex / Gemini Enterprise | Cloud total `20.0B`；Cloud backlog `462B`；>50% 24 个月确认；TPU hardware 少量 2026、主要 2027 | 直接 | AI infra 可高收入但折旧重；Vertex/Gemini/Wiz attach 毛利更好；TPU hardware 毛利和验收节奏未披露 | `38-50B` | `48-62B` | `70-90B` | `100-130B` | 基准只纳入可见 Cloud/RPO/交付路径；极度乐观是 NTM 上限 | B for backlog；C for revenue split；D for TPU 8 early | 是，保守折扣 | RPO、客户需求、管理层确认 AI solutions 为增长最大贡献；TPU 硬件 2027 约束 | 基准保守纳入；多数 2027 TPU 硬件列远期期权 |
+| Other Bets / Waymo | 2026Q1 revenue `0.4B`；operating loss `2.1B` | 直接但小 | 收入小、亏损大 | `1.0-1.5B` | `1.5-2.0B` | `2.5-3.5B` | `4-6B` | 对公司收入预期影响小 | A | 是，但权重极低 | 收入表可确认 | 纳入汇总，利润按亏损处理 |
+| Gemini App 广告化、UCP、TPU 8t/8i 大规模外售、Anthropic 2027 next-gen TPU | 产品发布、客户协议、技术路线 | 直接或间接 | 可能改变长期收入结构 | 无法可靠量化 | 不进入基准 | 低可信乐观 | 远期上限 | NTM 当前预期外 | C/D | 否 | 缺 NTM 可确认收入表路径或主要在 2027+ | 附录/后续跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第一步需求和第二步收入基数出发，判断每个产品在 NTM 内可贡献的收入和利润。产品利润为经营贡献估算，因为 Alphabet 不披露 Search、YouTube、subscriptions 或 Cloud AI infrastructure 的单独经营利润；估算时以 Google Services 2026Q1 margin `45.3%`、Google Cloud 2026Q1 margin `32.9%` 和已披露成本压力为锚。行业 TAM、客户总预算、项目总金额和远期 pipeline 不直接转为公司收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Search & other advertising | 悲观产品 | `240-255B` | `112-125B` | 小幅下行 | 低于当前预期 | AI 搜索替代、宏观广告预算、监管影响 commercial query | 保留为下行情景 | AI 体验若压低可货币化点击或默认搜索分发改变 |
+| Search & other advertising | 基准产品 | `260-275B` | `130-148B` | 稳定到小幅上行 | 符合当前预期 | Q1 `+19%`、查询 all-time high、AI Mode/AI Overviews 增加复杂查询 | 保留 | 不能把所有 Gemini 使用直接算作 Search 广告收入 |
+| Search & other advertising | 乐观产品 | `285-310B` | `150-175B` | 上行 | 高于当前预期 | AI 覆盖 long-tail commercial queries，retail/finance/health 垂直强 | 保留 | 广告负载和用户体验边界 |
+| Search & other advertising | 极度乐观产品 | `320-345B` | `180-205B` | 明显上行 | 大幅高于当前预期 | Agentic commerce/UCP/AI Mode 广告库存非线性增加 | 下移为上限 | NTM 证据不足，更多是 2027+ 商业模式期权 |
+| YouTube ads | 悲观产品 | `38-42B` | `9-13B` | 下行 | 低于预期 | 品牌预算弱、short-form 竞争 | 保留 | 内容和 creator 成本、广告周期 |
+| YouTube ads | 基准产品 | `43-47B` | `13-18B` | 稳定 | 符合预期 | Q1 YouTube ads `+11%`，DR 和 brand 均贡献 | 保留 | 不把 YouTube subscriptions 重复计入 ads |
+| YouTube ads | 乐观产品 | `48-54B` | `18-25B` | 上行 | 高于预期 | CTV、shopping、AI creative 和 Shorts 变现改善 | 保留 | TikTok/Meta/streaming 竞争 |
+| YouTube ads | 极度乐观产品 | `55-62B` | `25-32B` | 上行 | 大幅高于预期 | AI video commerce 和 creator economy 广告化 | 下移为乐观上限 | NTM 中缺少单独收入证据 |
+| Google Network | 悲观产品 | `23-26B` | `2-4B` | 下行 | 低于预期 | Q1 `-4%` 且开放网络质量承压 | 保留 | 隐私、流量质量和预算迁移 |
+| Google Network | 基准产品 | `26-28B` | `3-5B` | 稳定偏下 | 符合低增长预期 | 收入表可见，但增长弱 | 保留 | 不重复惩罚到 Search 或 YouTube |
+| Google Network | 乐观产品 | `28-30B` | `4-6B` | 稳定 | 略高于预期 | PMax/measurement 改善稳定下滑 | 保留但低权重 | 缺少结构性增长证据 |
+| Google Network | 极度乐观产品 | `30-33B` | `5-7B` | 小幅上行 | 高于预期 | 无强证据 | 下移 | 行业结构性压力仍在 |
+| Subscriptions / platforms / devices | 悲观产品 | `49-54B` | `7-13B` | 下行 | 低于预期 | AI plan 转化慢、devices mix 拖累 | 保留 | Play/devices/AI subscription mix 未披露 |
+| Subscriptions / platforms / devices | 基准产品 | `55-60B` | `12-20B` | 稳定 | 符合预期 | Q1 `+19%`、350M paid subscriptions、Google One AI plans 贡献 | 保留 | 不能把免费 Gemini MAU 当付费收入 |
+| Subscriptions / platforms / devices | 乐观产品 | `63-72B` | `18-28B` | 上行 | 高于预期 | YouTube Premium、Google One AI、Gemini paid tiers 提升 ARPU | 保留 | 消费者 AI 价格竞争 |
+| Subscriptions / platforms / devices | 极度乐观产品 | `78-90B` | `30-38B` | 明显上行 | 大幅高于预期 | Gemini 成为大规模 paid AI layer | 下移为远期期权 | NTM 缺少 paid seats/ARPU 充分披露 |
+| Cloud core / Workspace / security | 悲观产品 | `42-50B` | `7-13B` | 下行 | 低于预期 | Wiz 整合、云竞争、企业 IT 预算 | 保留 | 分拆利润无法可靠量化 |
+| Cloud core / Workspace / security | 基准产品 | `50-58B` | `14-20B` | 稳定 | 符合预期 | Workspace seats 和 ARPU 增长；core GCP sizable contributor | 保留 | 不与 AI infra 重复计算 Cloud total |
+| Cloud core / Workspace / security | 乐观产品 | `60-70B` | `20-30B` | 上行 | 高于预期 | Wiz/security/data analytics attach 增强 GCP enterprise motion | 保留 | Wiz 2026 margin headwind |
+| Cloud core / Workspace / security | 极度乐观产品 | `75-85B` | `30-40B` | 上行 | 大幅高于预期 | Security + data + Workspace AI bundle 成为大单标准件 | 下移为乐观上限 | 单独证据不足 |
+| Cloud AI infrastructure / TPU / GPU / Vertex / Gemini Enterprise | 悲观产品 | `38-50B` | `3-10B` | 明显下行 | 低于预期 | backlog 转收入慢、上电/验收/电力/HBM/网络瓶颈 | 保留 | 低毛利硬件或折旧吞噬收入 |
+| Cloud AI infrastructure / TPU / GPU / Vertex / Gemini Enterprise | 基准产品 | `48-62B` | `12-22B` | 稳定到小幅上行 | 符合预期 | Cloud `+63%`、AI solutions 最大增长贡献、backlog `462B` | 保留 | TPU 硬件多数 2027，不能提前拉入 2026 基准 |
+| Cloud AI infrastructure / TPU / GPU / Vertex / Gemini Enterprise | 乐观产品 | `70-90B` | `22-35B` | 上行 | 高于预期 | GPU/TPU capacity、Gemini Enterprise、Vertex、external customer demand 共振 | 保留 | 产能约束和合同确认 |
+| Cloud AI infrastructure / TPU / GPU / Vertex / Gemini Enterprise | 极度乐观产品 | `100-130B` | `38-55B` | 上行但依赖结构 | 大幅高于预期 | 多 GW TPU、TPU 8t/8i、Anthropic 和 select customer hardware | 下移为 NTM 上限/附录 | 多数硬件收入 2027，毛利率未知 |
+| Other Bets / Waymo | 悲观产品 | `1.0-1.5B` | `-10B to -13B` | 亏损扩大 | 低于预期 | 扩城慢、监管或安全事件 | 保留 | 亏损不重复惩罚到 Cloud/Search |
+| Other Bets / Waymo | 基准产品 | `1.5-2.0B` | `-8B to -10B` | 亏损延续 | 符合预期 | 500k rides/week，但 Q1 revenue 仍小 | 保留 | 单位经济未充分披露 |
+| Other Bets / Waymo | 乐观产品 | `2.5-3.5B` | `-6B to -8B` | 亏损收窄 | 高于预期 | 城市扩张和外部资本结构优化 | 保留但低权重 | 仍非 NTM 利润核心 |
+| Other Bets / Waymo | 极度乐观产品 | `4-6B` | `-3B to -6B` | 亏损明显收窄 | 大幅高于预期 | Robotaxi 商业扩张加速 | 下移为远期期权 | NTM 收入基数太小 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为 Alphabet NTM 总收入、毛利率、经营利润率、EBITDA/标准化净利润和自由现金流方向。汇总时剔除 Cloud 子项重复计算，并检查 Search/YouTube/Network 广告预算、Subscriptions 和 Gemini、Cloud AI infrastructure 与 TPU hardware 的重叠。`绝对增速`以 TTM 收入约 `422.5B` 为基数。`相对预期`以当前 run-rate、FY2026 公开共识收入约 `487.7B`、2026Q2-2027Q1 公开季度收入合计约 `509.3B`、Cloud backlog 和管理层 commentary 为锚。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `455-485B` | `+32-63B`；`+8-15%` | 低于当前 NTM 预期约 `5-11%`；Search 仍增长但 Cloud 转收入慢 | `59-61%` | `30-33%` | EBITDA `190-215B`；标准化净利润 `120-140B` | FCF 仍为正但压缩，约 `20-45B` | 中 | Cloud backlog 延迟、AI infra 折旧和电力成本、Network 下滑、广告预算走弱 |
+| 基准公司 | `500-520B` | `+77-98B`；`+18-23%` | 大体符合当前预期和 backlog/run-rate 可见路径 | `61-63%` | `33-36%` | EBITDA `220-245B`；标准化净利润 `140-160B` | FCF 正向，约 `35-65B`，但显著低于未重投 CapEx 情形 | 中高 | 高 CapEx、Wiz margin headwind、Cloud AI 收入确认和 Search AI 广告覆盖 |
+| 乐观公司 | `540-575B` | `+118-153B`；`+28-36%` | 高于当前预期约 `6-12%`；需要 Search 和 Cloud 同步超预期 | `62.5-64.5%` | `36-38%` | EBITDA `255-285B`；标准化净利润 `165-190B` | FCF 改善至约 `60-90B`，前提是 OCF 增速覆盖 CapEx | 中 | Cloud capacity 上电、TPU/GPU 交付、Cloud margin 维持、AI subscriptions 转化 |
+| 极度乐观公司 | `600-650B` | `+178-228B`；`+42-54%` | 高于当前预期约 `18-27%`；需要多条链路同时突破 | `64-66%` | `38-41%` | EBITDA `305-345B`；标准化净利润 `200-230B` | FCF `80-120B`，但对 2026H2-2027Q1 上电和验收极敏感 | 低 | TPU 硬件多数 2027、极高 CapEx/折旧、电力/网络/HBM、合同确认和利润率未知 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次：需求风险在第 3 节，收入确认风险在第 4 节，产品份额/价格/成本风险在第 5 节，公司组合和现金流风险在第 6 节，本节只说明情景位置。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 总收入 `109.896B`、经营利润率 `36.1%`、Google Services margin `45.3%` | 公司汇总、Search/Services | 支撑基准收入不低于当前预期 | 支撑 Services 高利润池 | 现金生成能力强 | 基准保留；悲观不能假设 Search 立即失速 |
+| Search AI experiences 推动 queries 和 commercial queries，复杂查询广告覆盖提高 | 产品需求、产品贡献 | 上修 Search 乐观需求和乐观收入 | 若广告覆盖高质量，margin 稳定或上行 | 间接支撑 AI CapEx | 基准和乐观保留；极度乐观下移为上限 |
+| Google Cloud `20.0B`、同比 `+63%`、Cloud backlog `462B`、>50% 预计 24 个月确认 | 收入基数、产品贡献、公司汇总 | 强化 Cloud NTM 收入可见度 | Cloud margin 已到 `32.9%`，但结构不明 | 需要持续上电和验收 | 基准保留；乐观保留 |
+| Cloud backlog 包含 TPU hardware sales，且 majority 仍为 typical GCP contracts | 收入确认 | 避免把全部 backlog 当 TPU 或当期收入 | TPU hardware margin 未披露 | 转收入节奏有季度波动 | 极度乐观下移；TPU 2027+ 仅作跟踪 |
+| TPU hardware 2026 只小比例确认，绝大多数 2027 | 收入确认 | 限制 NTM 2026H2 收入拉入 | 硬件收入可能低于软件/云服务 margin | 验收、交付、客户机房上电 | 基准保守纳入；远期机会移入附录 |
+| Wiz 并入 Cloud，管理层提示 2026 剩余季度 Cloud margin 有 low-single-digit headwind | 利润率 | 收入正向但不是单纯增收 | 压低 2026 Cloud margin | 整合支出和摊销 | 基准利润率不自动上修；乐观需 Cloud margin 证据 |
+| 2026 CapEx 指引 `180-190B`，2027 CapEx 显著高于 2026 的可能性 | 公司现金流、执行 | 说明需求强，但不是收入 | 折旧、能源和数据中心运营成本上升 | FCF 受压；资产 not yet in service 后续折旧 | 公司情景中处理一次，不重复压低需求 |
+| Purchase commitments `332.4B`、not-yet-commenced data center leases `75.6B`、backstops | 执行、现金流 | 支撑未来 capacity，但非收入 | 若利用率不足会压 ROIC | 资本承诺和融资义务上升 | 乐观需要 backlog 转收入；悲观保留 |
+| Google Network `-4%` | 产品贡献 | 对公司收入有小幅抵消 | 利润贡献低 | 无重大现金流正向 | 只在 Network 产品层处理，不重复惩罚广告总盘 |
+| Other Bets revenue 小、亏损大，Waymo rides 增长 | 公司组合 | NTM 收入贡献有限 | NTM 仍亏损拖累 | 资本消耗或外部资本结构调整 | 基准保留为亏损项；远期期权仅作跟踪 |
+| 公开共识 FY2026 revenue `487.7B`、NTM 季度合计约 `509.3B` | 公司汇总 | 校准基准公司收入 `500-520B` | EBIT/EBITDA 预期提供利润锚 | 不作为估值依据 | 基准保留，作为相对预期锚 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Search 增长放缓、Cloud backlog 转收入慢、AI CapEx 折旧压利润，NTM 收入 `455-485B` | Q1 总收入和 Search/Cloud 均强，现金生成能力强 | Cloud 交付、电力/网络/HBM、监管、广告周期 | 保留 | 低于当前预期的下行情景 | 中 | Cloud 转收入慢只在收入确认和公司汇总处理，不再重复压低需求池 |
+| 基准 | 高可信收入正常兑现，低证据机会保守，NTM 收入 `500-520B` | A 级收入表、B 级 Cloud backlog、Q1 Services/Cloud margin | Cloud AI 单独收入拆分不披露；TPU 硬件多数 2027；CapEx/折旧压力 | 保留 | 最可能情景 | 中高 | CapEx 压力只影响利润和 FCF，不否定已确认收入基数 |
+| 乐观 | Search AI 广告、Cloud AI infra、subscriptions 同步强于当前预期，NTM 收入 `540-575B` | AI solutions 是 Cloud 增长最大贡献；Gemini API `16B tokens/min`；subscriptions 和 AI plans 强 | capacity constrained；Wiz margin headwind；TPU/Cloud 收入确认需要验收 | 保留 | 有证据支持的上行情景 | 中 | 广告 AI 和 Cloud AI 分开处理，避免把同一 Gemini 需求重复计入 |
+| 极度乐观 | 多条链路非线性突破，NTM 收入 `600-650B` | Anthropic/Google/Broadcom 多 GW TPU、Broadcom-Google agreement through 2031、TPU 8t/8i 技术路线 | 关键收入多数偏 2027；TPU hardware 2026 小比例确认；利润率和客户验收不透明 | 下移 | NTM 乐观上限；超出 NTM 的 TPU/agentic commerce 移入附录或仅作跟踪 | 低 | 不把 2027+ 多 GW TPU 和 NTM 2026H2 收入重复计算 |
+
+## 8. 结论
+
+- 最可能情景：基准情景。Alphabet NTM 收入最可能落在 `500-520B`，相对 TTM `422.5B` 增长约 `18-23%`；经营利润率约 `33-36%`。收入侧由 Search 现金牛正常兑现、Cloud backlog 逐步转收入、subscriptions 继续双位数增长共同支撑；利润侧由 Services 高 margin 和 Cloud scale efficiency 支撑，但被 AI 基建折旧、能源、Wiz 整合和 Other Bets 亏损抵消一部分。
+- NTM 收入结论：Search 仍是最大绝对收入和利润贡献；Cloud AI infrastructure 是最大增量和最大不确定性；subscriptions 是中等确定性增长；Network 是小幅抵消项；Waymo/Other Bets 不影响 NTM 公司收入主结论。
+- 利润/现金流结论：经营利润大概率继续增长，但 FCF 的弹性弱于经营利润，因为 2026 CapEx 已上修至 `180-190B`，且 2027 CapEx 可能显著增加。2026Q1 FCF `10.1B`、TTM FCF `64.4B` 证明公司仍有现金生成能力，但 AI capacity 的 ROIC 将成为后续经营质量核心变量。
+- 主要传导瓶颈：外部 AI compute 需求很强，但从需求到 Alphabet 收入需要经过 Cloud contract、TPU/GPU allocation、data center power、rack/network/storage、客户验收、使用量 ramp 和收入确认。最大瓶颈不是 TAM，而是可用 capacity 和确认节奏。
+- 乐观情景成立条件：Search AI Mode/AI Overviews 增加 commercial query 覆盖而不压低用户体验；Cloud revenue 持续高于当前 run-rate；Cloud backlog 转收入比例清晰；TPU/GPU capacity 上电快于当前预期；Cloud margin 在 Wiz headwind 后仍维持约 `30%+`；AI subscriptions/Google One AI plans 提升 ARPU。
+- 极度乐观情景成立条件：2026H2-2027Q1 内，TPU hardware 和 external AI infrastructure 明显提前确认；Anthropic/其他客户 capacity 按期上线；Search agentic commerce 形成可见广告收入；Cloud AI software 和 infrastructure mix 同时支持 margin 扩张；CapEx 不再继续显著超收入上修。
+- 悲观情景触发条件：Search 增速回落到中个位数且 AI 搜索压低商业化；Cloud backlog 增长但确认比例下降；TPU hardware 验收或客户机房上电推迟；Cloud margin 跌回 `25%` 以下且不是一次性；CapEx 继续上修但 Cloud revenue 和 OCF 没有同步上修；Network 下滑扩大；监管/默认搜索 remedies 影响广告分发。
+- 后续跟踪数据：Google Cloud backlog/RPO、24 个月确认比例、Cloud revenue growth、Cloud operating margin、TPU hardware revenue timing、Gemini Enterprise paid MAU、Search & other growth、AI Mode 广告覆盖、paid subscriptions、Google One AI plan demand、CapEx、assets not yet in service、depreciation、purchase commitments、data center leases/backstops、Other Bets operating loss、Waymo rides/week。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Alphabet 最新已披露季度为 2026Q1，季度结束日 2026-03-31，财报和 earnings call 发布日 2026-04-29。本报告写作日为 2026-06-20。
+- 主要收入、订单、指引和利润率来源：
+  - Alphabet 2026Q1 earnings release / SEC exhibit：`https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm`
+  - Alphabet 2026Q1 Form 10-Q：`https://s206.q4cdn.com/479360582/files/doc_financials/2026/q1/GOOG-10-Q-Q1-2026.pdf`
+  - Alphabet 2026Q1 earnings call transcript：`https://abc.xyz/investor/events/event-details/2026/2026-Q1-Earnings-Call-2026-nW8kCrBAKS/default.aspx`
+  - Alphabet 2025Q4 / FY2025 earnings release：`https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/googexhibit991q42025.htm`
+  - MarketScreener Alphabet projected financials：`https://www.marketscreener.com/quote/stock/ALPHABET-INC-24203373/finances/`。本报告只用其收入、EBITDA、EBIT 和季度收入共识作为相对当前预期锚，不使用股价、目标价、评级或估值倍数。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 收入共识约 `487.7B`，FY2027 收入共识约 `578.9B`，仅作为相对预期锚。
+  - TPU hardware sales 管理层口径：2026 年晚些时候小比例确认，大部分收入 2027 确认。因此 TPU 2027 大规模硬件收入不进入 NTM 基准，只进入乐观、极度乐观上限或后续跟踪。
+  - Anthropic / Google / Broadcom 多 GW next-generation TPU capacity 从 2027 开始上线，属于 2027+ 重要可见度，不替代 2026Q2-2027Q1 主口径。
+  - Waymo rides/week 是长期经营期权，不改变 NTM 公司收入和利润主结论。
+- 项目内公司资料：
+  - `公司调研/云算力_IDC_AI软件平台/GOOGL_Alphabet Inc_公司调研_2026-06-20.md`：用于收入分部、AI Cloud/TPU、RPO、CapEx、Search/Cloud/Subscriptions/Waymo 经营脉络和本地交叉验证。
+- 项目内行业资料：
+  - `行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`：用于 TPU、云厂自研 ASIC、HBM/CoWoS/网络/软件迁移和多 GW capacity 背景。
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`：用于 AI cloud、AI-optimized IaaS、reserved capacity、推理和 NeoCloud 供需背景。
+  - `行业调研/产业背景/全球AI需求与Token经济框架_2026-06-11.md`：用于 token demand、Gemini API token 锚、AI revenue 与 CapEx 回收期框架。
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`：用于 AI data center CapEx、MW/GW、服务器/网络/电力/液冷瓶颈和订单映射。
+- 主要外部技术和客户来源：
+  - Google Cloud TPU 8t / 8i technical deep dive：`https://cloud.google.com/blog/products/compute/tpu-8t-and-tpu-8i-technical-deep-dive`
+  - Google Cloud AI infrastructure at Next 26：`https://cloud.google.com/blog/products/compute/ai-infrastructure-at-next26`
+  - Anthropic expands partnership with Google and Broadcom：`https://www.anthropic.com/news/google-broadcom-partnership-compute`
+  - Broadcom 8-K on Google TPU and AI rack supply agreement：`https://www.sec.gov/Archives/edgar/data/1730168/000119312526144028/d87999d8k.htm`
+  - Google Ads / Commerce AI Search ads update：`https://blog.google/products/ads-commerce/google-marketing-live-search-ads/`

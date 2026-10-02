@@ -1,0 +1,175 @@
+# 公司收入传导与价值传导评估：DTE Energy Company（DTE）
+
+报告日期：2026-06-12  
+主口径：NTM，定义为从 2026-06-12 起未来 12 个月/未来 4 个季度的经营窗口。  
+研究边界：使用 `公司调研/`、`行业调研/` 和 DTE/MPSC/SEC 官方披露作为经营锚点；未使用根目录排除的下游验证、排序或市场定价资料。  
+重要限制：本报告只评估收入、利润、现金流和经营价值传导，不输出投资评级、目标价、股价区间或估值倍数判断；金融市场价格不作为经营传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM。FY2026 guidance、FY2027/2028 ramp、2026-2030 capex、Google/Oracle 全合同期收益和新增 hyperscaler pipeline 只作为补充口径。
+- 当前收入基准、指引和 run-rate：DTE 2025 全年分部收入为 Electric `69.35 亿美元`、Gas `20.52 亿美元`、DTE Vantage `6.96 亿美元`、Energy Trading `64.77 亿美元`；2026Q1 合并 operating revenue `51.41 亿美元`，TTM operating revenue 约 `165.15 亿美元`。公司 2026 operating earnings guidance 为 `15.85-16.15 亿美元`，operating EPS guidance 为 `7.59-7.73 美元`。
+- 重要产品/业务线：DTE Electric 基础受监管售电与电网；Oracle / Green Chile Ventures `1.383GW` 数据中心供电与储能协议；Google `1.0GW` 数据中心供电与 clean capacity agreement；DTE Gas；DTE Vantage RNG/custom energy/behind-the-meter；Energy Trading；额外 `约5GW` 数据中心 pipeline。
+- NTM 公司收入四情景：悲观 `152-160 亿美元`；基准 `164-172 亿美元`；乐观 `172-182 亿美元`；极度乐观 `182-195 亿美元`。相对当前 TTM `165.15 亿美元`，基准是大体持平到中个位数增长，乐观才要求 Oracle 初期负荷、Google 审批和 Electric rate/base sales 同时好于当前预期。
+- 利润或 EBITDA 四情景：因 DTE 以 operating earnings 管理，主利润口径使用 operating earnings/净利润方向而非制造业 EBITDA。悲观 operating earnings `14.5-15.5 亿美元`；基准 `15.9-16.3 亿美元`；乐观 `16.5-17.5 亿美元`；极度乐观 `17.5-19.0 亿美元`。GAAP 净利润会受 Energy Trading MTM、DTE Vantage litigation/税收抵免和利息费用影响，不能机械等同。
+- 最大传导瓶颈：不是行业需求，而是 NTM 内可上电、可监管批准、可成本回收、可交付的 MW。Oracle 已批但仍需设备、储能、并网、施工和地方条件；Google 已签并提交 MPSC，但 NTM 直接收入仍取决于审批和初期 ramp；额外 pipeline 没有签约和上电时间表，不能进入基准 NTM。
+- 最大利润率变量：DTE Electric rate case/ROE 和成本回收、数据中心客户是否承担全部新增成本、Energy Trading 毛利波动、DTE Vantage RNG tax credits 与项目成本、融资成本。
+- 最大现金流变量：2026-2030 五年 capex `365 亿美元`，其中 DTE Electric 约 `300 亿美元`；公司计划 2026-2028 每年发行 `5-6 亿美元` equity，2030 前类似水平。数据中心负荷提高长期 rate base 质量，但 NTM 自由现金流仍大概率为负。
+- 可信度：公司基准情景为中高；Oracle NTM revenue ramp 为中；Google NTM revenue 为低到中；额外 pipeline 为低，只能作为远期期权或乐观上限。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| DTE Electric 基础受监管售电、电网、发电和 interconnection | 2025 收入 `69.35 亿美元`；2026Q1 `17.44 亿美元`；TTM 粗算约 `72.20 亿美元` | 约 `44%`，按 TTM 合并收入粗算 | 公司利润核心；2026 guidance 中 Electric operating earnings `13.40-13.60 亿美元` | A | 进入基准；以 rate implementation、reliability capex、天气和正常售电/成本回收为主 | 数据中心负荷会扩大 2027+ rate base，但 NTM 只承认可见 ramp |
+| Oracle / Green Chile Ventures / OpenAI / Related Digital `1.383GW` 数据中心供电与储能 | 2026Q1 直接收入未单独披露，当前近似 `0-低个位数`；已批合同规模 `1.383GW` | 当前收入占比很低，NTM 增量基准约 `0.1-0.3 亿美元`到`数亿美元`量级 | 最核心增量需求；19 年 PSA、80% minimum billing、最高 10 年 termination payment、15 年 `1.383GW` storage | B | 小比例进入基准；只纳入 NTM 可上电/可 billing 部分，不把 full ramp 年收入全部放入 NTM | full ramp 后年售电收入估算约 `5.8-9.8 亿美元`，主要是 2027-2029 口径 |
+| Google Van Buren Township `1.0GW` 数据中心供电与 clean capacity | 2026Q1 直接收入近似 `0`；合同已签并于 2026-03 提交 MPSC | 当前 `0%`；NTM 基准收入通常为 `0-0.05 亿美元` | 审批通过会强化 DTE 数据中心平台属性，但公司披露 Google 为 upside to plan | C，若 MPSC 批准后升至 B | 不进入基准主要收入；只可在基准中承认可审批/前期资本开支可见性，收入进入乐观 | 预计 2028 年底 fully ramp；全合同期 affordability benefit 约 `17 亿美元` |
+| DTE Gas 受监管天然气配送 | 2025 收入 `20.52 亿美元`；2026Q1 `9.32 亿美元`；TTM 粗算约 `21.08 亿美元` | 约 `13%` | 稳定利润与现金流；AI 直接相关性低 | A | 进入基准；按天气、gas cost recovery、管网投资和正常客户需求处理 | 若 CCGT/工业负荷提高燃气需求，更多是中长期间接受益 |
+| DTE Vantage：RNG、custom energy、CHP、behind-the-meter | 2025 收入 `6.96 亿美元`；2026Q1 `2.27 亿美元`；2026 operating earnings guidance `1.80-1.90 亿美元` | 约 `4%-5%` | 小体量但对数据中心 BTM/custom power 有经营选项 | A 对现有收入；C 对新增数据中心 BTM | 现有业务进入基准；新增 data center BTM 只进乐观/远期期权 | 若 large data center customer BTM 项目签约并给出 COD，可成为 2027+ 增量 |
+| Energy Trading | 2025 收入 `64.77 亿美元`；2026Q1 `23.51 亿美元`；TTM 粗算约 `68.02 亿美元` | 约 `41%`，但利润贡献低且波动 | 收入体量大，利润质量低，不能当作高质量增长 | A | 进入公司收入表，但基准利润只按 `0.50-0.60 亿美元` guidance 处理 | 无 AI 数据中心核心期权；更多是交易波动 |
+| 额外 hyperscaler / co-location pipeline | 无当前收入；DTE 披露约 `2GW` advanced discussions 和 `3-4GW` 其他机会 | `0%` | 若签约会改变 2028+ capex/rate base 路径 | D/E | 不进入 NTM 基准；乐观只承认签约信号，不承认收入 | 远期期权；必须看到客户、合同、MPSC 路径和上电时间表 |
+
+注：分部收入占比用 TTM 合并收入 `165.15 亿美元`粗算，分部加总与合并口径存在抵销和分类差异，比例只用于收入暴露排序。
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只看外部需求池和客户需求强弱，不判断 DTE 能捕获多少收入、不判断利润率。需求单位使用最贴近业务的 MW/GW、MWh、客户/费率需求、项目 COD、交易量和 regulatory/capex 需求。所有情景都相对当前需求锚，而不是相对题材热度。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| DTE Electric 基础受监管售电、电网、发电和 interconnection | 2026Q1 DTE Electric sales `11.474 百万MWh`，deliveries `10.572 百万MWh`；2026 guidance Electric operating earnings `13.40-13.60 亿美元`；2026-2030 Electric capex `300 亿美元` | 零售/工业用电、天气和 interconnection sales 弱于正常；rate case 成本回收滞后 | 用电与费率机制大体按当前 guidance 兑现；reliability capex 继续进入 rate base | 数据中心、工业/商业负荷和 rate implementation 推动 Electric revenue 高个位数到低双位数增长 | Oracle/Google/新负荷共同推动 Electric 需求非线性上修，但 NTM 仍受上电节奏约束 | 悲观约 `-1% to -4%` volume/机制压力；基准 `0% to +6%`；乐观 `+6% to +12%`；极乐观 `+12%+` | Q1 Electric revenue +19.5%，但 sales MWh 低于去年；说明收入受机制和费率影响，不是单纯电量增长。反证是天气、industrial demand、MPSC rate outcome |
+| Oracle `1.383GW` 数据中心需求 | MPSC 条件批准 `1,383MW`；19 年供电协议；80% minimum billing；DTE 称项目 approved and moving forward | 施工/设备/地方条件拖延，NTM 平均 billed load 仅 `0-0.20GW` | NTM 开始部分 ramp，平均 billed load `0.20-0.45GW` | 上电顺利，平均 billed load `0.45-0.75GW` | Oracle/OpenAI 需求和工程交付超预期，平均 billed load `0.75-0.90GW` | 相对当前近似 0 直接负荷，增量 `0-0.90GW`；相对 full contract 为 `0%-65%` | 合同和监管保护强，需求锚强于普通 pipeline；反证是大型变压器、switchgear、BESS、MISO/utility coordination、社区/施工 |
+| Google `1.0GW` 数据中心需求 | 2026-03 提交 MPSC，DTE 披露 20 年 PSA、clean capacity agreement，预计 2028 年底 fully ramp | MPSC 推迟或加重条件，NTM 需求只停留在待批状态 | 获批或接近获批，NTM 主要是前期资源/建设需求，售电负荷很小 | 获批顺利且早期负荷 `0.10-0.20GW` | 早期施工、demand response、renewables/storage 同步提前，NTM 负荷 `0.30GW`左右 | 相对当前近似 0，NTM 增量 `0-0.30GW`；相对 full contract 为 `0%-30%` | Google 会支付新增发电、储能、输电、配电成本，客户质量高；反证是 MPSC 待批、地方选址/水/社区、2028 年底 fully ramp 暗示 NTM 收入有限 |
+| DTE Gas | 2026Q1 Gas revenue `9.32 亿美元`，Gas net income `2.10 亿美元`；2026 guidance `3.15-3.25 亿美元` operating earnings | 天气偏暖、客户节能、gas cost recovery 下降，需求低于正常 | 正常天气和管网投资支持稳定需求 | 冷天气、工业/发电燃气需求或成本回收好于预期 | 数据中心带动燃气发电/工业侧需求显性上升，但 NTM 证据弱 | 需求量通常 `-3% to +5%`区间，收入受 gas cost pass-through 影响更大 | 这是稳定 regulated gas，不是 AI 电力主线；反证是天气和 commodity pass-through |
+| DTE Vantage RNG/custom energy/BTM | 2026 guidance `1.80-1.90 亿美元` operating earnings；Ford fixed-fee project 2026 COD；42MW CHP 2027 初 COD；large data center BTM 开发中 | RNG tax credits、项目 COD、litigation/成本拖累，需求/项目交付低于当前计划 | 现有项目按计划 COD，RNG/custom energy 正常贡献 | BTM/data center custom energy 项目给出更明确合同或 COD | BTM 成为 DTE 数据中心上电加速平台，新增项目显著高于 guidance | 现有业务收入约 `7-8 亿美元`；新增 data center BTM NTM 通常 `0-低千万美元`到`低亿美元`上限 | 当前预期是小幅增长和税收抵免支持；反证是项目型业务、客户和设备/许可不透明 |
+| Energy Trading | 2025 revenue `64.77 亿美元`，2026Q1 `23.51 亿美元`；2026 operating earnings guidance `0.50-0.60 亿美元` | 交易量/价格/MTM 回落，收入和利润低于 guidance | 收入波动但利润接近 guidance | 波动性和 structured transactions 贡献高于 guidance | commodity volatility 极强带来收入大幅上行，但质量低 | 收入可上下 `10-20 亿美元`，利润弹性却通常仅 `数千万美元` | 这是交易业务，不是产品需求；反证是 MTM、gas price 和风险限额 |
+| 额外 hyperscaler / co-location pipeline | advanced discussions `约2GW`，其他机会 `3-4GW`，未签约 | 无签约或客户推迟，不构成 NTM 需求 | 仅作为跟踪项，不进入 NTM 基准 | 签下 `1GW+`并披露客户/监管路径 | 签下 `2-3GW+`且给出 MPSC/上电时间表 | NTM 可确认需求 `0GW`到签约负荷 `1-3GW`，但收入滞后 | 相对当前预期是 upside，不是基准；反证是缺客户、合同、审批、上电日期 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断外部需求能否进入 DTE NTM 收入表，以及当前可收入化基数。能参与 `GW` 需求不等于能确认 NTM 收入；项目全周期 capex、客户总预算、全合同期 affordability benefit 和 full ramp 年收入都不能直接放入基准 NTM。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| DTE Electric 基础受监管售电、电网、发电和 interconnection | 2025 Electric revenue `69.35 亿美元`；2026Q1 `17.44 亿美元`；TTM 粗算 `72.20 亿美元` | 直接 | 受监管回报、fuel/purchased power pass-through、rate base 增长；利润质量高于 trading | `68-71 亿美元` | `72-78 亿美元` | `78-84 亿美元` | `84-90 亿美元` | 基准符合 current guidance；乐观高于当前 Electric run-rate | A | 是 | 收入表、分部披露、guidance 和 rate/capex 计划 | 作为公司基准主口径；需要避免与 Oracle/Google 增量重复计算 |
+| Oracle `1.383GW` 数据中心供电与储能 | 已批合同；当前直接收入未披露且尚未 fully ramp；收入锚来自 MPSC special contract 和 DTE AGA | 直接售电 + 间接 rate base/storage | 售电收入含成本回收；利润来自 regulated return、固定成本摊薄和储能/电网资产回收，不是硬件毛利 | `0-0.10 亿美元` | `0.10-0.30 亿美元` | `0.30-0.55 亿美元` | `0.55-0.75 亿美元` | 基准为当前已批合同的保守 NTM ramp；乐观需要上电快于计划 | B | 是，小比例 | 19 年 PSA、80% minimum billing、termination fee、1.383GW storage；但 ramp 2-3 年 | 纳入 NTM，但只纳入可 billing 的初期负荷；full ramp 年收入只放附录 |
+| Google `1.0GW` 数据中心供电与 clean capacity | 已签并提交 MPSC；当前收入为 0；DTE 称 Google upside to plan | 直接售电 + 间接 capex/rate base | 若获批，客户承担新增发电、储能、输电、配电；利润取决于 regulatory cost recovery | `0` | `0-0.05 亿美元` | `0.05-0.15 亿美元` | `0.15-0.25 亿美元` | 当前预期更偏 2028 fully ramp；NTM 收入若出现属于高于预期 | C | 否，收入不进基准主贡献；只承认审批/前期可见性 | MPSC 待批，目标 2026H2 审批；预计 2028 年底 fully ramp | NTM 基准不把 Google 作为主要收入；乐观才计早期收入 |
+| DTE Gas | 2025 Gas revenue `20.52 亿美元`；2026Q1 `9.32 亿美元`；TTM 粗算 `21.08 亿美元` | 直接 | 受监管 gas distribution，利润稳定，收入受 gas cost pass-through | `19.5-20.5 亿美元` | `20.5-22.0 亿美元` | `22.0-23.0 亿美元` | `23.0-24.0 亿美元` | 基准符合当前 guidance；不是 AI 增量 | A | 是 | 收入表、分部利润、utility customer base | 进入基准，作为稳定器 |
+| DTE Vantage RNG/custom energy/BTM | 2025 revenue `6.96 亿美元`；2026Q1 `2.27 亿美元`；2026 operating earnings guidance `1.80-1.90 亿美元` | 直接 | 项目型、固定费率、RNG tax credits、custom energy；利润质量高于 trading但有项目/税项波动 | `6.5-7.2 亿美元` | `7.0-8.2 亿美元` | `8.2-9.5 亿美元` | `9.5-11.0 亿美元` | 基准符合 guidance；data center BTM 另作 upside | A/C | 是，现有业务进入；新增 BTM 不进基准 | 分部收入与 operating earnings guidance；BTM 项目缺量化合同 | 现有纳入；新增 data center BTM 只进乐观或附录 |
+| Energy Trading | 2025 revenue `64.77 亿美元`；2026Q1 `23.51 亿美元`；2026 guidance `0.50-0.60 亿美元` operating earnings | 直接 | 大收入、低利润、MTM/commodity volatility，利润质量低 | `52-60 亿美元` | `60-70 亿美元` | `70-80 亿美元` | `80-90 亿美元` | 收入可能高于或低于 run-rate，但不提高核心经营质量 | A | 是，但低权重 | 收入表和 guidance | 进入收入汇总；利润按低质量和波动处理 |
+| 额外 hyperscaler / co-location pipeline | 无合同收入；只有 discussion/pipeline | 主题相关/潜在直接 | 若签约后才可能变成受监管售电和 capex/rate base | `0` | `0` | `0-0.05 亿美元` | `0.05-0.15 亿美元` | 全部高于当前基准；当前只是 NTM 上限 | D/E | 否 | 无客户、无 MPSC 申请、无可确认交付时间表 | 不纳入 NTM 基准；仅作跟踪或附录 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第三节需求和第四节收入基数出发，判断每条业务线在 NTM 内能为 DTE 贡献多少收入和利润。DTE 是受监管 utility + 项目能源 + 交易业务，不按制造业毛利率管理；产品级利润主要用 operating earnings、净利润方向或“无法可靠量化”表达。Oracle/Google 的全合同期金额、客户 capex 和 MW 负荷不是 NTM 收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| DTE Electric 基础受监管售电、电网、发电和 interconnection | 悲观 | `68-71 亿美元` | Electric operating earnings `12.5-13.2 亿美元` | 低于当前结构 | 低于 2026 guidance 或只能触及低端 | sales MWh 不强、rate case 或天气不利 | 保留为下行情景 | MPSC rate outcome、天气、industrial sales、设备/工程成本 |
+| DTE Electric 基础受监管售电、电网、发电和 interconnection | 基准 | `72-78 亿美元` | `13.4-13.8 亿美元` | 稳定到小幅改善 | 符合 guidance 和正常 rate base 增长 | 2026 guidance、Q1 Electric revenue +19.5%、capex 计划 | 保留 | 不把 Google/pipeline 提前并入基准 |
+| DTE Electric 基础受监管售电、电网、发电和 interconnection | 乐观 | `78-84 亿美元` | `13.8-14.5 亿美元` | 小幅改善 | 高于当前预期 | Oracle 初期负荷、rate implementation、reliability capex 回收顺利 | 保留 | 客户 affordability 和 regulatory lag 限制利润扩张 |
+| DTE Electric 基础受监管售电、电网、发电和 interconnection | 极度乐观 | `84-90 亿美元` | `14.5-15.5 亿美元` | 改善但非爆发 | 明显高于当前预期 | Oracle快 ramp + Google获批 + 新负荷签约 | 下移为乐观上限 | NTM 时间太短；新增负荷收入滞后于签约 |
+| Oracle `1.383GW` 数据中心供电与储能 | 悲观 | `0-0.10 亿美元` | 无法可靠量化；对 Electric 利润贡献接近 0 到小幅正 | 利润率不扩张 | 低于当前 approved-and-in-plan 预期 | 合同已批但上电慢 | 保留 | 设备、BESS、interconnection、施工和地方条件 |
+| Oracle `1.383GW` 数据中心供电与储能 | 基准 | `0.10-0.30 亿美元` | 无法可靠量化；利润主要进入 Electric regulated return，短期小幅正 | 中性到小幅正 | 符合初期 ramp | 19 年 PSA、80% minimum billing、storage agreement | 保留 | NTM 只含初期负荷，不含 full ramp |
+| Oracle `1.383GW` 数据中心供电与储能 | 乐观 | `0.30-0.55 亿美元` | 无法可靠量化；固定成本摊薄和储能回收改善 | 小幅改善 | 高于当前 NTM ramp 预期 | 项目已批并推进；客户成本保护条款强 | 保留 | 必须看到 energization/billing 节奏 |
+| Oracle `1.383GW` 数据中心供电与储能 | 极度乐观 | `0.55-0.75 亿美元` | 无法可靠量化；仍不能按收入等比例放大利润 | 改善但受监管约束 | NTM 上限 | 平均 billed load 接近 `0.75-0.90GW` | 下移为乐观上限 | full ramp 更像 2027-2029，不是 2026-2027 NTM 基准 |
+| Google `1.0GW` 数据中心供电与 clean capacity | 悲观 | `0` | `0`或前期成本压力 | 中性到负 | 低于审批预期 | MPSC 未批或延迟 | 保留 | 监管、地方、水资源、资源计划 |
+| Google `1.0GW` 数据中心供电与 clean capacity | 基准 | `0-0.05 亿美元` | 无法可靠量化；主要是 capex 可见性而非利润 | 中性 | 基本符合公司“upside to plan”表述 | 已签并提交 MPSC；客户承担新增成本 | 保留，但收入贡献保守 | 完全 ramp 到 2028 年底，NTM 收入很小 |
+| Google `1.0GW` 数据中心供电与 clean capacity | 乐观 | `0.05-0.15 亿美元` | 无法可靠量化；若获批提升 Electric 长期可信度 | 中性到小幅正 | 高于当前 NTM 收入预期 | 20 年合同、clean capacity、约 `17 亿美元` affordability benefit | 保留 | approval conditions 和 early load timing |
+| Google `1.0GW` 数据中心供电与 clean capacity | 极度乐观 | `0.15-0.25 亿美元` | 无法可靠量化；仍以长期 rate base 为主 | 小幅正 | NTM 上限 | 审批、施工、DR、renewables/storage 同步提前 | 下移为乐观上限 | 2028 fully ramp 抑制 NTM 极端收入 |
+| DTE Gas | 悲观 | `19.5-20.5 亿美元` | `2.9-3.1 亿美元` | 稳定但低于 guidance | 低于当前预期 | 暖冬/需求弱/gas cost回落 | 保留 | 天气和 pass-through |
+| DTE Gas | 基准 | `20.5-22.0 亿美元` | `3.15-3.30 亿美元` | 稳定 | 符合 guidance | 2026Q1 net income `2.10 亿美元`，2026 guidance `3.15-3.25 亿美元` | 保留 | 非 AI 主线，不能上调过多 |
+| DTE Gas | 乐观 | `22.0-23.0 亿美元` | `3.30-3.50 亿美元` | 小幅改善 | 高于当前预期 | 冷天气、管网投资、工业需求 | 保留 | commodity pass-through 不等于利润 |
+| DTE Gas | 极度乐观 | `23.0-24.0 亿美元` | `3.50-3.70 亿美元` | 小幅改善 | NTM 上限 | 发电/工业燃气需求上修 | 下移为乐观上限 | 数据中心燃气传导缺直接合同 |
+| DTE Vantage RNG/custom energy/BTM | 悲观 | `6.5-7.2 亿美元` | `1.2-1.6 亿美元` | 下行 | 低于 guidance | litigation/成本/税项扰动，项目 COD 延迟 | 保留 | 项目型执行和 RNG credits |
+| DTE Vantage RNG/custom energy/BTM | 基准 | `7.0-8.2 亿美元` | `1.80-1.90 亿美元` | 符合结构 | 符合 guidance | 2026 guidance、Ford 2026 COD、42MW CHP 2027 初 COD | 保留 | data center BTM 不进基准 |
+| DTE Vantage RNG/custom energy/BTM | 乐观 | `8.2-9.5 亿美元` | `1.90-2.20 亿美元` | 小幅改善 | 高于 guidance | BTM data center 合同更清楚，RNG credits 支持 | 保留 | 客户、COD、设备/许可需要验证 |
+| DTE Vantage RNG/custom energy/BTM | 极度乐观 | `9.5-11.0 亿美元` | `2.20-2.60 亿美元` | 改善 | 明显高于当前预期 | 多个 fixed-fee/BTM 项目落地 | 下移为附录跟踪 | NTM 公开证据不足 |
+| Energy Trading | 悲观 | `52-60 亿美元` | `-0.5-0.3 亿美元` | 下行 | 低于 guidance | MTM/commodity/structured交易不利 | 保留 | 波动大，不代表核心恶化 |
+| Energy Trading | 基准 | `60-70 亿美元` | `0.50-0.60 亿美元` | 低利润率 | 符合 guidance | 公司 2026 guidance | 保留 | 收入大但质量低，不提升公司质量 |
+| Energy Trading | 乐观 | `70-80 亿美元` | `0.70-1.00 亿美元` | 小幅改善 | 高于 guidance | 波动与交易机会增加 | 保留但低权重 | 不可持续、MTM 反转 |
+| Energy Trading | 极度乐观 | `80-90 亿美元` | `1.00-1.50 亿美元` | 改善但低质量 | 上限 | commodity volatility 极高 | 下移为低质量上限 | 不作为经营质量突破证据 |
+| 额外 hyperscaler / co-location pipeline | 悲观 | `0` | `0` | 无 | 符合排除 | 无签约 | 保留排除 | 缺客户/合同/审批 |
+| 额外 hyperscaler / co-location pipeline | 基准 | `0` | `0` | 无 | 符合排除 | 仅 discussions | 保留排除 | 不可确认收入 |
+| 额外 hyperscaler / co-location pipeline | 乐观 | `0-0.05 亿美元` | 无法可靠量化 | 中性 | 高于当前预期 | `1GW+`签约或监管申请 | 仅作跟踪 | 签约不等于 NTM 上电 |
+| 额外 hyperscaler / co-location pipeline | 极度乐观 | `0.05-0.15 亿美元` | 无法可靠量化 | 中性到小幅正 | NTM 上限 | `2-3GW`新增合同且时间表明确 | 移入附录 | 证据等级 D/E，不进基准 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成公司 NTM 总收入、准毛利率、经营利润率、operating earnings/净利润和自由现金流方向。公司收入口径以 2025 全年、2026Q1、TTM 和 2026 operating earnings guidance 为锚；不讨论市场定价、估值倍数、目标价或排名。准毛利率为 revenue 减 fuel/purchased power/gas/energy trading direct costs 后的粗略经营毛利率，utility 披露并不等同制造业 gross margin。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `152-160 亿美元` | 相对 TTM `-8% to -3%` | 低于 2026 guidance / 当前 run-rate；Oracle 上电慢，Google 审批或初期建设延后，Trading 收入回落 | `31%-33%` | `9.0%-9.7%` | Operating earnings `14.5-15.5 亿美元`；GAAP 净利润可能低于 operating earnings | 明显为负；高 capex 继续依赖债务/股权 | 中 | 监管滞后、设备/变压器/BESS、施工和地方阻力、Trading MTM、融资成本 |
+| 基准公司 | `164-172 亿美元` | 相对 TTM `0% to +4%` | 接近公司 2026 guidance 和当前 run-rate；Oracle 小比例 ramp，Google 主要作为审批/长期 capex 可见性，不作为 NTM 主要收入 | `33%-35%` | `9.3%-9.9%` | Operating earnings `15.9-16.3 亿美元`；净利润方向接近 2026 operating earnings 但受 MTM/税项调整 | 负；capex 高于 OCF，融资计划可执行 | 中高 | 主要瓶颈是上电节奏和 cost recovery，而非需求不足 |
+| 乐观公司 | `172-182 亿美元` | 相对 TTM `+4% to +10%` | 高于当前预期；Oracle 负荷更快、Google 获批、Electric rate/capex 回收更顺，Vantage 稳定贡献 | `34%-36%` | `9.6%-10.2%` | Operating earnings `16.5-17.5 亿美元`；净利润方向改善 | 更负或持平偏负；更高 capex 由合同和 rate base 可见性支撑 | 中 | 是否能把高收入变成 regulated return；低毛利 pass-through 不应被当作利润扩张 |
+| 极度乐观公司 | `182-195 亿美元` | 相对 TTM `+10% to +18%` | 显著高于当前预期；Oracle/Google 初期负荷、额外 `1-3GW`签约、rate case 和融资都顺利 | `35%-37%` | `9.8%-10.8%` | Operating earnings `17.5-19.0 亿美元`；净利润改善但不按收入非线性放大 | 明显为负但质量更好；capex/rate base 增长加速 | 低到中 | 需要需求、公司捕获、利润质量和执行同时突破；任一缺证据就降为乐观上限或附录 |
+
+汇总检查：
+
+- Oracle 与 Google 的售电收入已从 DTE Electric 基础业务中拆分，避免把同一负荷重复计入 Electric core 和 data center rows。
+- Energy Trading 收入大但利润 guidance 很小，不能用收入增速判断经营质量。
+- Google `约50 亿美元 through 2032` 增量 capex、Oracle full ramp 年收入、全合同期 affordability benefit 和额外 pipeline 都不是 NTM 基准收入。
+- 数据中心收入增长若主要来自成本回收、电力成本和配套资产，利润率不会像软件或硬件稀缺产品一样非线性扩张。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步。正向证据必须说明提升的是需求、收入基数、产品贡献、公司利润还是执行可信度；反证只限制它实际影响的层级，不重复惩罚。校准动作仅使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Oracle `1.383GW` 已获 MPSC 条件批准，19 年 PSA、80% minimum billing、termination payment、1.383GW storage | 需求、收入基数、执行可信度 | 支撑 Oracle 小比例进入 NTM 基准；full ramp 不进 NTM | 支撑成本回收和固定成本摊薄，但利润无法单独量化 | 提升 capex/rate base 可见性；仍有上电执行风险 | 保留基准，乐观保留，极度乐观下移为上限 |
+| Google `1.0GW` 已签并提交 MPSC，客户承担新增发电/储能/输配电成本 | 需求、收入基数、公司长期利润 | 提升 2027+ 可见性；NTM 基准收入很小 | 若获批，长期改善 Electric asset utilization；NTM 利润有限 | MPSC approval、地方/资源计划决定执行 | 基准收入保守保留；乐观保留；极度乐观下移 |
+| DTE Electric `365 亿美元`五年 capex 计划和 Electric `300 亿美元` capex | 公司利润、现金流、执行 | 支撑 rate base 增长，不直接等于当期收入 | 长期 regulated return；短期折旧、利息、监管滞后压利润 | 自由现金流为负，需债务/股权融资 | 保留基准；现金流风险单独处理 |
+| 变压器、switchgear、BESS、interconnection 和 commissioning 是行业第一瓶颈 | 需求兑现、产品贡献、执行可信度 | 限制 Oracle/Google NTM ramp，不限制全部 Gas/Trading | 延迟会压低 Electric 利润兑现时间 | 影响上电日期和 capex 回收 | 保留悲观；乐观不排除但需证据 |
+| DTE Electric 2026 rate case 请求 `4.74 亿美元` base rate increase 和 ROE 从 `9.9%`到`10.25%` | 公司利润率 | rate case 对收入和成本回收有正向潜力 | 决定 Electric operating earnings 高低 | 最终 order 预计 2027-02，落在 NTM 后半 | 保留基准，不提前上移 |
+| DTE Vantage guidance 受 RNG tax credits 支持，但 Q1 reported 受 litigation/项目扰动 | 产品利润、公司利润 | 现有收入进入基准；新增 BTM 不进基准 | credits 支撑 operating earnings，项目/法律成本可拖累 GAAP | 项目 COD 和税收政策影响执行 | 保留基准，新增 BTM 仅作跟踪 |
+| Energy Trading 收入大但 operating earnings guidance 只有 `0.50-0.60 亿美元` | 公司组合、利润质量 | 收入可明显波动 | 利润率低且 MTM 不稳定 | 不改善核心经营质量 | 保留低权重，不上移公司质量 |
+| 额外 `约5GW` data center pipeline 缺客户、合同和审批时间表 | 需求、收入基数 | 不进入 NTM 基准 | 无法确认利润 | 签约前只是 pipeline | 排除 NTM 基准，移入附录 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Oracle/Google ramp 慢，Electric rate recovery 或 Trading/Vantage 低于当前预期，公司收入 `152-160 亿美元`、operating earnings `14.5-15.5 亿美元` | Oracle 合同保护降低完全失效概率；Gas 稳定；公司仍有 investment-grade 目标 | 设备、监管、社区、融资和 MTM 均可能拖累 | 保留 | 低于当前预期的经营下行情景 | 中 | 设备延迟只惩罚 Oracle/Google ramp，不重复压低 Gas 和已确认 Electric base |
+| 基准 | 当前 guidance 正常兑现，Oracle 小比例进入 NTM，Google 主要是审批和长期 capex 可见性，公司收入 `164-172 亿美元`、operating earnings `15.9-16.3 亿美元` | A/B 级收入表、guidance、MPSC Oracle 批准、Q1 capex 和 Electric/Gas customer base | Google 未批；Oracle NTM ramp 不等于 full ramp；Energy Trading 低质量 | 保留 | 最可能经营情景 | 中高 | 数据中心长期机会不在基准重复上调；Trading 收入不作为利润质量上修 |
+| 乐观 | Oracle ramp 快、Google 获批且早期负荷/资源计划清楚，Electric/Vantage 高于 guidance，公司收入 `172-182 亿美元`、operating earnings `16.5-17.5 亿美元` | Oracle/Google 合同结构、客户承担新增成本、行业 time-to-power 紧张、DTE 区域 utility 位置 | 上电和审批仍是硬约束；利润率受 regulated return 限制 | 保留 | 有证据支持的超预期情景 | 中 | 不因行业 AI 建设高景气而把所有 pipeline 计入收入 |
+| 极度乐观 | Oracle/Google/新增 pipeline 同时突破，NTM 收入 `182-195 亿美元`、operating earnings `17.5-19.0 亿美元` | 额外 `约5GW`机会和行业电力瓶颈给 DTE 长期期权 | 任一核心环节缺 NTM 客户、合同、MPSC、上电时间表；新增负荷收入通常滞后 | 下移 | 乐观上限和附录跟踪，不作为基准或普通乐观主线 | 低 | pipeline 缺证据只处理 pipeline，不再重复压低 Oracle 已批合同 |
+
+## 8. 结论
+
+- 最可能情景：基准。DTE NTM 收入大概率落在 `164-172 亿美元`，operating earnings 落在 `15.9-16.3 亿美元`附近。公司经营质量的改善不是 NTM 收入爆发，而是 Oracle 合同和 Google 审批路径提高 2027-2030 Electric rate base 和大客户固定成本摊薄的可见性。
+- NTM 收入结论：Electric、Gas 和 Energy Trading 仍决定绝大多数 NTM 收入；Oracle 只贡献小比例初期售电收入；Google 基准收入接近 0；额外 `约5GW` pipeline 不进入基准。把 `GW` 负荷、客户 capex、full ramp 年收入或全合同期 affordability benefit 直接写成 NTM 收入是不合格传导。
+- 利润/现金流结论：DTE 的利润主要由 Electric/Gas regulated earnings 和 DTE Vantage/Trading guidance 决定。数据中心合同短期利润弹性低于收入弹性，因为新增售电包含燃料、购电、储能、输配电和折旧/融资成本；长期利润来自可回收 rate base、ROE 和固定成本摊薄。自由现金流在 NTM 仍偏负，`365 亿美元`五年 capex 和每年 `5-6 亿美元` equity 发行计划是核心现金流变量。
+- 主要传导瓶颈：外部 AI 数据中心需求强，但 DTE 的经营传导瓶颈是 MPSC 审批、large-load tariff/特殊合同、Oracle/Google 上电时间、变压器/switchgear/BESS/CCGT 交付、地方许可和融资成本。
+- 乐观情景成立条件：Oracle 平均 billed load 明显高于基准；Google 在 2026H2 获清晰批准且资源计划可执行；DTE Electric rate case 结果接近公司请求；DTE Vantage BTM/custom energy 给出量化合同或 COD；Energy Trading 不产生大额 MTM 拖累。
+- 极度乐观情景成立条件：Oracle 与 Google 均提前上电，同时 DTE 再签 `1-3GW`以上可验证 data center load，且客户承担新增成本、MPSC/IRP/CEP 路径、设备供应和融资均同步顺利。缺任何一个环节，极度乐观应降为乐观上限或附录。
+- 悲观情景触发条件：Google 审批推迟或条件显著加重；Oracle 建设/储能/并网延迟超过 2 个季度；DTE Electric rate order 明显低于请求；设备交期继续恶化；equity/debt financing 成本上升压低 EPS；Energy Trading 或 DTE Vantage 出现大额负向 MTM/诉讼/项目成本。
+- 后续跟踪数据：Google MPSC order 与条件；Oracle energization/billed load；DTE Electric rate case 进展；DTE 2026Q2/Q3 Electric revenue、sales MWh、capex 和 operating earnings；变压器/switchgear/BESS/CCGT lead time；DTE Vantage BTM 项目合同和 COD；公司融资和 FFO/debt；额外 hyperscaler pipeline 是否从 discussion 进入正式合同和监管申请。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：报告生成日为 2026-06-12。最新公司季度经营数据为 2026Q1，资产负债表日 2026-03-31；公司 2026 AGA presentation 日期为 2026-05；MPSC Oracle 批准日期为 2025-12-18。
+- 主要收入、订单、指引和利润率来源：
+  - `公司调研/电力_发电_能源_储能/DTE_DTE_Energy_Company_公司调研_2026-06-11.md`
+  - DTE 2026Q1 earnings release，2026-04-30：https://ir.dteenergy.com/news/press-release-details/2026/DTE-Energy-reports-first-quarter-2026-accomplishments-investments-and-financial-results/default.aspx
+  - DTE 2026Q1 Form 10-Q：https://www.sec.gov/Archives/edgar/data/936340/000093634026000081/dte-20260331.htm
+  - DTE 2026 AGA presentation，2026-05：https://s24.q4cdn.com/970999156/files/doc_presentations/2026/May/2026-AGA-presentation-FINAL.pdf
+  - DTE 2025 Form 10-K revenue table：https://www.sec.gov/Archives/edgar/data/936340/000093634026000054/R47.htm
+  - DTE 2025 full-year earnings release，2026-02-17：https://ir.dteenergy.com/news/press-release-details/2026/DTE-Energy-reports-2025-accomplishments-earnings-and-investments/default.aspx
+  - MPSC Oracle / Green Chile Ventures approval，2025-12-18：https://www.michigan.gov/mpsc/commission/news-releases/2025/12/18/mpsc-approves-dte-electric-energy-contracts-for-data-center
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 operating earnings guidance `15.85-16.15 亿美元`、operating EPS guidance `7.59-7.73 美元`来自 DTE 2026 AGA/Q1 materials。
+  - Oracle `1.383GW` full ramp 年售电收入估算约 `5.8-9.8 亿美元`，使用 `1MW * 8,760小时 * 80%-90% utilization * 0.06-0.09美元/kWh` 的研究口径；实际特殊合同电价、demand charges、capacity charges、fuel riders、tax/rider adjustment 未公开，因此不作为 NTM 基准。
+  - Google `1.0GW` full ramp 预计到 2028 年底；全合同期 affordability benefit `约17 亿美元`是对既有客户账单压力的长期 benefit，不是 DTE 当期利润。
+  - 额外 hyperscaler / co-location `约5GW` pipeline 缺少客户、合同、MPSC 路径和上电时间表，全部作为远期期权。
+- 主要行业来源：
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+- 关键推算口径：
+  - TTM revenue = 2025 全年 operating revenue `158.14 亿美元` - 2025Q1 `44.40 亿美元` + 2026Q1 `51.41 亿美元` = `165.15 亿美元`。
+  - TTM Electric revenue 粗算 = 2025 Electric `69.35 亿美元` - 2025Q1 Electric `14.59 亿美元` + 2026Q1 Electric `17.44 亿美元` = `72.20 亿美元`。
+  - TTM Gas revenue 粗算 = 2025 Gas `20.52 亿美元` - 2025Q1 Gas `8.76 亿美元` + 2026Q1 Gas `9.32 亿美元` = `21.08 亿美元`。
+  - TTM DTE Vantage revenue 粗算 = 2025 Vantage `6.96 亿美元` - 2025Q1 Vantage `1.88 亿美元` + 2026Q1 Vantage `2.27 亿美元` = `7.35 亿美元`。
+  - TTM Energy Trading revenue 粗算 = 2025 Trading `64.77 亿美元` - 2025Q1 Trading `20.26 亿美元` + 2026Q1 Trading `23.51 亿美元` = `68.02 亿美元`。
+  - 分部 TTM 粗算之和与合并 TTM 不完全一致，原因是分部口径、抵销、regulatory adjustments、intercompany 和分类差异；报告用其做暴露排序，不机械加总做合并收入。

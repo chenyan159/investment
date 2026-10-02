@@ -1,0 +1,826 @@
+{
+  "asof": "2026-09-09",
+  "results": [
+    {
+      "ticker": "NVDA",
+      "endpoint": 223.67,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 208.19000244140625,
+          "return": 7.43551437487997
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 182.64999389648438,
+          "return": 22.458257582402897
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 170.75999450683594,
+          "return": 30.985012412287194
+        }
+      },
+      "events": {
+        "dividends": {
+          "1757597400": {
+            "amount": 0.01,
+            "date": 1757597400
+          },
+          "1764858600": {
+            "amount": 0.01,
+            "date": 1764858600
+          },
+          "1773235800": {
+            "amount": 0.01,
+            "date": 1773235800
+          },
+          "1780579800": {
+            "amount": 0.25,
+            "date": 1780579800
+          }
+        }
+      }
+    },
+    {
+      "ticker": "MSFT",
+      "endpoint": 491.65,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 403.4100036621094,
+          "return": 21.873527065977072
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 409.4100036621094,
+          "return": 20.087441831481033
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 498.4100036621094,
+          "return": -1.3563138003731323
+        }
+      },
+      "events": {
+        "dividends": {
+          "1763649000": {
+            "amount": 0.91,
+            "date": 1763649000
+          },
+          "1771511400": {
+            "amount": 0.91,
+            "date": 1771511400
+          },
+          "1779370200": {
+            "amount": 0.91,
+            "date": 1779370200
+          },
+          "1787232600": {
+            "amount": 0.91,
+            "date": 1787232600
+          }
+        }
+      }
+    },
+    {
+      "ticker": "MU",
+      "endpoint": 1027.77,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 935.8900146484375,
+          "return": 9.81739135084978
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 389.32000732421875,
+          "return": 163.99105637129293
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 135.24000549316406,
+          "return": 659.9600401169389
+        }
+      },
+      "events": {
+        "dividends": {
+          "1759498200": {
+            "amount": 0.115,
+            "date": 1759498200
+          },
+          "1767018600": {
+            "amount": 0.115,
+            "date": 1767018600
+          },
+          "1774877400": {
+            "amount": 0.15,
+            "date": 1774877400
+          },
+          "1783344600": {
+            "amount": 0.15,
+            "date": 1783344600
+          }
+        }
+      }
+    },
+    {
+      "ticker": "META",
+      "endpoint": 653.69,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 584.5900268554688,
+          "return": 11.820244952898463
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 647.3900146484375,
+          "return": 0.9731360090537988
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 765.7000122070312,
+          "return": -14.628445921553123
+        }
+      },
+      "events": {
+        "dividends": {
+          "1758547800": {
+            "amount": 0.525,
+            "date": 1758547800
+          },
+          "1765809000": {
+            "amount": 0.525,
+            "date": 1765809000
+          },
+          "1773667800": {
+            "amount": 0.525,
+            "date": 1773667800
+          },
+          "1781530200": {
+            "amount": 0.525,
+            "date": 1781530200
+          }
+        }
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "endpoint": 330.65,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 364.260009765625,
+          "return": -9.226928255794709
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 306.3599853515625,
+          "return": 7.928585915214592
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 239.6300048828125,
+          "return": 37.98355517361003
+        }
+      },
+      "events": {
+        "dividends": {
+          "1757338200": {
+            "amount": 0.21,
+            "date": 1757338200
+          },
+          "1765204200": {
+            "amount": 0.21,
+            "date": 1765204200
+          },
+          "1773063000": {
+            "amount": 0.21,
+            "date": 1773063000
+          },
+          "1780925400": {
+            "amount": 0.22,
+            "date": 1780925400
+          },
+          "1788528600": {
+            "amount": 0.22,
+            "date": 1788528600
+          }
+        }
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "endpoint": 252.4,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 244.19000244140625,
+          "return": 3.3621350081946
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 213.49000549316406,
+          "return": 18.225674975722384
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 238.24000549316406,
+          "return": 5.943583856760037
+        }
+      },
+      "events": {}
+    },
+    {
+      "ticker": "AVGO",
+      "endpoint": 364.38,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 392.1600036621094,
+          "return": -7.083844196932699
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 345.75,
+          "return": 5.388286334056391
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 336.6700134277344,
+          "return": 8.230607261437473
+        }
+      },
+      "events": {
+        "dividends": {
+          "1758547800": {
+            "amount": 0.59,
+            "date": 1758547800
+          },
+          "1766413800": {
+            "amount": 0.65,
+            "date": 1766413800
+          },
+          "1774272600": {
+            "amount": 0.65,
+            "date": 1774272600
+          },
+          "1782135000": {
+            "amount": 0.65,
+            "date": 1782135000
+          }
+        }
+      }
+    },
+    {
+      "ticker": "TSM",
+      "endpoint": 435.36,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TSM?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 427.9200134277344,
+          "return": 1.738639544495646
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 348.70001220703125,
+          "return": 24.85230420396909
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 250.9199981689453,
+          "return": 73.50550102701283
+        }
+      },
+      "events": {
+        "dividends": {
+          "1758029400": {
+            "amount": 0.822,
+            "date": 1758029400
+          },
+          "1765463400": {
+            "amount": 0.835,
+            "date": 1765463400
+          },
+          "1773754200": {
+            "amount": 0.956,
+            "date": 1773754200
+          },
+          "1781184600": {
+            "amount": 0.955,
+            "date": 1781184600
+          }
+        }
+      }
+    },
+    {
+      "ticker": "BABA",
+      "endpoint": 109.4,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BABA?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 119.69999694824219,
+          "return": -8.604843116826366
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 132.63999938964844,
+          "return": -17.521109391276234
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 147.10000610351562,
+          "return": -25.62882701512995
+        }
+      },
+      "events": {
+        "dividends": {
+          "1781184600": {
+            "amount": 1.05,
+            "date": 1781184600
+          }
+        }
+      }
+    },
+    {
+      "ticker": "CRDO",
+      "endpoint": 167.92,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CRDO?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 234.32000732421875,
+          "return": -28.337318730254157
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 115.9800033569336,
+          "return": 44.7835791858177
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 149.02999877929688,
+          "return": 12.675301198034571
+        }
+      },
+      "events": {}
+    },
+    {
+      "ticker": "ASML",
+      "endpoint": 1729.52,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ASML?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 1777.77001953125,
+          "return": -2.7140754428951475
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 1357.4200439453125,
+          "return": 27.41229273240926
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 805.1300048828125,
+          "return": 114.81251344641335
+        }
+      },
+      "events": {
+        "dividends": {
+          "1761744600": {
+            "amount": 1.864,
+            "date": 1761744600
+          },
+          "1770733800": {
+            "amount": 1.883,
+            "date": 1770733800
+          },
+          "1777296600": {
+            "amount": 3.177,
+            "date": 1777296600
+          },
+          "1785245400": {
+            "amount": 2.138,
+            "date": 1785245400
+          }
+        }
+      }
+    },
+    {
+      "ticker": "HTHIY",
+      "endpoint": 33.35,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HTHIY?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 30.299999237060547,
+          "return": 10.06600937206934
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 30.8799991607666,
+          "return": 7.998707598320021
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 27.020000457763672,
+          "return": 23.4270889526115
+        }
+      },
+      "events": {}
+    },
+    {
+      "ticker": "NVT",
+      "endpoint": 158.54,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NVT?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 163.8000030517578,
+          "return": -3.2112350145046986
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 108.12999725341797,
+          "return": 46.61981321283033
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 91.44000244140625,
+          "return": 73.3814476892547
+        }
+      },
+      "events": {
+        "dividends": {
+          "1760707800": {
+            "amount": 0.2,
+            "date": 1760707800
+          },
+          "1769178600": {
+            "amount": 0.21,
+            "date": 1769178600
+          },
+          "1777037400": {
+            "amount": 0.21,
+            "date": 1777037400
+          },
+          "1784899800": {
+            "amount": 0.21,
+            "date": 1784899800
+          }
+        }
+      }
+    },
+    {
+      "ticker": "EME",
+      "endpoint": 754.29,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/EME?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 827.780029296875,
+          "return": -8.877965968724599
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 719.1799926757812,
+          "return": 4.881949954362397
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 623.030029296875,
+          "return": 21.06800066302732
+        }
+      },
+      "events": {
+        "dividends": {
+          "1760535000": {
+            "amount": 0.25,
+            "date": 1760535000
+          },
+          "1768401000": {
+            "amount": 0.4,
+            "date": 1768401000
+          },
+          "1776346200": {
+            "amount": 0.4,
+            "date": 1776346200
+          },
+          "1784122200": {
+            "amount": 0.4,
+            "date": 1784122200
+          }
+        }
+      }
+    },
+    {
+      "ticker": "ADBE",
+      "endpoint": 254.86,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ADBE?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 237.8800048828125,
+          "return": 7.138050600575863
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 282.44000244140625,
+          "return": -9.764906600695788
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 354.05999755859375,
+          "return": -28.01784958555704
+        }
+      },
+      "events": {}
+    },
+    {
+      "ticker": "TEL",
+      "endpoint": 204.68,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TEL?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 210.91000366210938,
+          "return": -2.953868263209658
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 206.24000549316406,
+          "return": -0.7564029536528349
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 208.64999389648438,
+          "return": -1.9027050144338697
+        }
+      },
+      "events": {
+        "dividends": {
+          "1771597800": {
+            "amount": 0.71,
+            "date": 1771597800
+          },
+          "1779456600": {
+            "amount": 0.78,
+            "date": 1779456600
+          },
+          "1787319000": {
+            "amount": 0.78,
+            "date": 1787319000
+          }
+        }
+      }
+    },
+    {
+      "ticker": "APH",
+      "endpoint": 81.34,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/APH?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 77.03500366210938,
+          "return": 5.588363903730298
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 68.02999877929688,
+          "return": 19.56489998461337
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 58.39500045776367,
+          "return": 39.29274657482389
+        }
+      },
+      "events": {
+        "dividends": {
+          "1758029400": {
+            "amount": 0.0825,
+            "date": 1758029400
+          },
+          "1765895400": {
+            "amount": 0.125,
+            "date": 1765895400
+          },
+          "1774272600": {
+            "amount": 0.125,
+            "date": 1774272600
+          },
+          "1782221400": {
+            "amount": 0.125,
+            "date": 1782221400
+          }
+        },
+        "splits": {
+          "1788442200": {
+            "date": 1788442200,
+            "numerator": 2.0,
+            "denominator": 1.0,
+            "splitRatio": "2:1"
+          }
+        }
+      }
+    },
+    {
+      "ticker": "JBL",
+      "endpoint": 311.37,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/JBL?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 362.3800048828125,
+          "return": -14.076385064156138
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 247.4600067138672,
+          "return": 25.826392771430974
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 209.22000122070312,
+          "return": 48.824203318658974
+        }
+      },
+      "events": {
+        "dividends": {
+          "1763389800": {
+            "amount": 0.08,
+            "date": 1763389800
+          },
+          "1771338600": {
+            "amount": 0.08,
+            "date": 1771338600
+          },
+          "1778851800": {
+            "amount": 0.08,
+            "date": 1778851800
+          },
+          "1786714200": {
+            "amount": 0.08,
+            "date": 1786714200
+          }
+        }
+      }
+    },
+    {
+      "ticker": "SNDK",
+      "endpoint": 1764.17,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SNDK?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 1646.5400390625,
+          "return": 7.144069269307041
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 588.72998046875,
+          "return": 199.6568984979087
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 70.51000213623047,
+          "return": 2402.0138229346453
+        }
+      },
+      "events": {}
+    },
+    {
+      "ticker": "ET",
+      "endpoint": 21.68,
+      "endpoint_date": "2026-09-09",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ET?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "anchors": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 19.059999465942383,
+          "return": 13.746068244855936
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 18.59000015258789,
+          "return": 16.621838741523387
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 17.170000076293945,
+          "return": 26.266743760431677
+        }
+      },
+      "events": {
+        "dividends": {
+          "1762525800": {
+            "amount": 0.333,
+            "date": 1762525800
+          },
+          "1770388200": {
+            "amount": 0.335,
+            "date": 1770388200
+          },
+          "1778247000": {
+            "amount": 0.338,
+            "date": 1778247000
+          },
+          "1786109400": {
+            "amount": 0.34,
+            "date": 1786109400
+          }
+        }
+      }
+    }
+  ]
+}

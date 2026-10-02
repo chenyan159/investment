@@ -1,0 +1,17 @@
+{
+  "queue_domains": {
+    "file-run": 9,
+    "industry": 77,
+    "company": 24,
+    "company-evaluation": 24,
+    "company-sentiment": 24,
+    "company-investment-decision": 24
+  },
+  "queue_statuses": {
+    "done": 182
+  },
+  "file_run_current_distinct_prompts": 9,
+  "file_run_current_and_backup_distinct_prompts": 415,
+  "file_run_historical_unique_tasks": 418,
+  "discovered_plan_code_files": 436
+}

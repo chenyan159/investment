@@ -1,0 +1,687 @@
+# Digital Realty Trust（NYSE: DLR）全面尽调：全球数据中心 REIT、AI 电力容量与互联平台
+
+> **报告日期：2026-07-31（美国太平洋时间）**  
+> **调研边界：**公司公告、SEC 文件、财报电话会、过去半年行业报告/会议/产品资料，以及项目内 `基本面/行业调研/` 的相关产业资料；未调用项目其他研究目录。  
+> **单位：**除每股、倍数、百分比、MW/kW、另有注明外，货币均为美元；`100% share` 指项目全口径，`DLR share` 指 Digital Realty 经济权益口径。  
+> **估算标记：**“公司披露”是原始披露；“本报告测算”是由披露数字推导；“情景假设”不是公司指引。DLR 是 REIT，不生产 GPU、交换机、液冷设备；其 AI 变现主要是电力、机电、冷却、空间、网络互联和建设/资产管理服务。
+
+## 核心结论
+
+1. **DLR 不是“AI 芯片股”，而是全球规模最大的云中立、运营商中立数据中心地产—运营—互联平台。**截至 2026Q2，公司有 **310 座数据中心、55+ 都市圈、30+ 国家、6 大洲、约 6,000 个客户、235,500+ 条 cross-connect、3.102 GW 在役 IT 容量**。其产业链位置是：电网/土地/土建/MEP 之后，GPU 云与企业应用之前；客户买的是“已经拿到电、能按期交付、可高密度冷却、可低时延互联”的物理入口。
+2. **投资者当前把 DLR 看成“数据中心 REIT + AI 电力期权 + 私募资本管理平台”，而不是传统低增长房东。**传统防御性来自 5—15 年租约和投资级客户；成长性来自供电稀缺、旧租约重定价、1.427B 美元 DLR-share backlog、1.402 GW 在建项目，以及 ServiceFabric/高密度托管；资本管理则以合资和基金把资产负债表周转成管理费和 promote。代价是高资本开支、持续发股稀释和合资口径复杂。
+3. **2026Q2 基本面很强，但表面利润被一次性项目严重放大。**GAAP 收入 **1.924B，同比 +28.9%**，其中约 200M 是 Blackstone JV 的 gross promote；剔除 promote 后本报告估算正常化收入约 **1.720B，同比约 +15.2%**。Core FFO/share 为 **2.65**，剔除 net promote 后为 **2.13，同比 +14%**。不能把 2.65 直接年化。
+4. **订单可见度达到历史峰值。**Q2 DLR-share 新签年化 GAAP 租金 **208.5M**，季末 backlog **1.427B**；7 月又签两份 hyperscale 租约，DLR share **205M**，尚未进入季末 backlog。已披露 backlog 的开通排期为 **2026H2 635M、2027 年 480M、2028+ 312M**。backlog 约为在租数据中心收入的 **30%**，但公司不披露 backlog 取消率；真正需要建模的是延迟，而不是把在役 churn 当作取消率。
+5. **供需仍明显偏向房东。**Q2 续租现金租金上涨 **25.6%**，其中 >1MW 大客户续租上涨 **66.7%**；2026 全年现金续租指引上调至 **9%—11%**。外部交叉验证显示北弗吉尼亚空置率仅 **0.3%**、Atlanta **1%**，全球在建容量 **77% 已预租**，美国设备平均交期 **42 周**，2025 年 **57%** 项目延期至少三个月。
+6. **最关键的增长矢量有四个：**① >1MW hyperscale/BTS；② 0—1MW 企业托管与 30—150kW/柜高密度 AI 托管；③ cross-connect、Internet Exchange、ServiceFabric/AIPx；④ Strategic Private Capital。按 Q2 正常化年化收入分配模型，四者当前贡献约 **3.86B、2.04B、0.52B、0.18B**；其中 AI 纯工作负载未单独披露，本报告估算只占正常化收入 **8%—15%（0.55B—1.03B）**，广义“AI-enabled hyperscale/cloud”则可能占 **25%—35%（1.72B—2.41B）**，两者不可相加。
+7. **未来一年基准情景仍可实现双位数退出增速，但确认收入增速会低于退出 run-rate。**本报告基准/乐观/极度乐观情景下，2027-07-31 年化退出收入为 **7.84B/8.36B/9.05B**，较当前正常化 run-rate **+14.0%/+21.5%/+31.5%**；未来 12 个月实际确认收入约 **7.55B/8.05B/8.70B**，增速约 **+9.4%/+16.7%/+26.1%**。差额来自租约在期间中途开通。
+8. **资产负债表“健康但资本饥渴”。**季末现金 **1.865B**、总债务约 **18.635B**、净债务/Adjusted EBITDA **4.7x**、固定费用覆盖 **5.2x**、流动性约 **6B**，评级为 S&P **BBB+ 稳定**、Moody’s **Baa2 正面**、Fitch **BBB 稳定**；但 2026 年净合作伙伴出资后的 capex 指引仍有 **4.25B—4.75B**，年内 ATM 已发股融资 **2.5B**，期末 shares+units 同比增加约 **8.7%**。
+9. **核心风险不是短期需求不够，而是交付、资本与技术密度能否同步升级。**电网接入、变压器/开关设备、许可和社区阻力可把签约推迟；150kW/柜足以承载当前 Blackwell/NVL72，但下一代 187—600kW 甚至 MW 级机柜会要求更高压配电、DLC 和 CDU 扩容。若 hyperscaler 自建、AI 资本开支放缓或长期电力供应放松，当前高租金与续租价差会回落。
+
+## 1. 公司、投资者定位、三年转型与最新财务快照
+
+### 1.1 整体业务和产业链位置
+
+Digital Realty Trust, Inc. 通过 Digital Realty Trust, L.P. 持有、开发和运营数据中心，是美国上市专业 REIT。公司只披露**一个财务报告分部**，但商业上可拆成三大增长支柱：
+
+| 商业支柱 | 典型产品/合同 | 客户购买的核心价值 | 产业链位置 |
+|---|---|---|---|
+| Colocation & Connectivity | 单柜/机笼、0—1MW Turn-Key Flex、High-Density Colocation、Cross Connect、Metro/Campus Connect、Internet Exchange、IP Bandwidth、ServiceFabric、AIPx | 已通电空间、快速部署、网络/云生态、低时延、主权与合规 | 企业/服务商自有服务器或 GPU 与公有云、网络运营商之间的“接入与交换层” |
+| Hyperscale | >1MW Turn-Key Flex、Powered Base Building、Build-to-Suit，通常 5—15 年 | 大规模电力、土地、MEP、交付确定性和长期扩容 | 电网—土地—机电基础设施与 hyperscaler/AI 云自建 IT 设备之间 |
+| Strategic Private Capital | JV、开发基金、运营/租赁/资产管理/施工/fit-out fee、promote | 用第三方权益资本扩大交付能力，同时保留运营与客户界面 | 数据中心资产融资、开发与运营管理层 |
+
+公司自称“全球最大 cloud- and carrier-neutral data center platform”，但竞争优势并非某一台硬件。它把五类稀缺资源打包：**已锁定的电力、合适的土地与许可、可复制的机电设计、全球运营能力、网络/客户生态**。与 GPU 云不同，DLR 通常不购买 NVIDIA/AMD 加速器；GPU、CPU、光模块和服务器通常归租户所有，[JLL 2026 Outlook](https://www.jll.com/content/dam/jllcom/en/global/documents/reports/research-reports/26-research-global-data-center-outlook-new.pdf)也明确把高频迭代 IT 设备与建筑/机电资产分开。
+
+### 1.2 投资者心中的 DLR
+
+DLR 同时具有四种股票属性：
+
+- **REIT/利率资产：**长租约、季度股息 1.22 美元、年化股息 4.88 美元；利率和资本化率仍影响估值。
+- **AI 基础设施“卖铲人”：**不押单一芯片架构，而押 AI 带来的 MW、机柜密度、液冷和互联需求。
+- **电力与交付稀缺资产：**成熟市场新增 50MW 项目的并网等待平均超过四年；在役资产比空地更有价值。
+- **正在形成的资产管理人：**20% co-invest、80% 第三方资本的基金模式，使 DLR 同时赚开发收益、租金、管理费和可能的 promote。
+
+因此，最准确的定位不是“房地产公司”或“AI 公司”二选一，而是**以 REIT 资产负债表承载的全球数字基础设施运营商**。当前估值已经计入较强增长：按 GAAP EPS 看 PE 很高；按 REIT 更适用的 2026 Core FFO 中值看，估值约 23 倍。
+
+### 1.3 最近三年的重大变动、转型与收购
+
+| 时间 | 事件 | 金额/容量 | 战略含义 |
+|---|---|---:|---|
+| 2023-07 | 与 TPG 设立北弗吉尼亚 JV，出售 3 座成熟 hyperscale 数据中心 80% 权益 | 资产组合估值约 1.5B | 从全额持有转向资产循环；降低杠杆并保留运营权。来源：[TPG 公告](https://www.tpg.com/news-and-insights/digital-realty-and-tpg-announce-joint-venture-hyperscale-data) |
+| 2023-11 | 与 Realty Income 设立北弗吉尼亚 BTS JV | 2 座在建中心 | 引入净租赁资本，为预租项目提供外部资金。来源：[SEC/Realty Income 公告](https://www.sec.gov/Archives/edgar/data/726728/000072672823000124/pressreleasenovember132023.htm) |
+| 2023-12—2024 | 与 Blackstone 设立开发 JV；后续完成第二阶段 | 4 个园区、10 座数据中心、约 500MW、预计总成本约 7B；DLR 20%、Blackstone 80% | 确立“资本轻型 hyperscale 开发”模板；覆盖北弗吉尼亚、Frankfurt、Paris。来源：[Blackstone/DLR 公告](https://www.blackstone.com/news/press/digital-realty-and-blackstone-announce-7-billion-hyperscale-data-center-development-joint-venture/) |
+| 2024-03 | 与 Mitsubishi 设立 Dallas 开发 JV | 两座 100% 预租数据中心 | 把 Blackstone 模式复制给产业资本，扩大可融资伙伴池。来源：[2024-03 Investor Presentation](https://investor.digitalrealty.com/static-files/3a3995f0-ffde-4651-9fa5-383a42472d92) |
+| 2025-09—2026 | 推出 DRIL 和 High-Density Colo；从北弗吉尼亚扩至日本，计划进入 Singapore/London 等 | 30—150kW/柜；NRT14 支持 100kW+，最高 150kW/柜 | 从“提供机房”向“先验证后部署的 AI 基础设施平台”上移。来源：[DRIL](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-launches-innovation-lab-accelerate-ai-and-hybrid)、[日本 DRIL](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-opens-first-asia-pacific-innovation-lab-japan) |
+| 2026-03 | 美国 Hyperscale Fund 最终关闭 | 3.25B equity commitments；DLR 保留 20%，担任管理人 | 正式由零散 JV 进入基金化；覆盖 NoVA、Santa Clara、Dallas、Atlanta、Charlotte、New York。来源：[基金公告](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-announces-final-close-325-billion-us-hyperscale) |
+| 2026-03/04 | 收购 Sofia 两座互联中心、Lisbon 2.4MW 设施，并收购 Malaysia 运营/土地资产 | Sofia 有 110+ 网络服务商；Lisbon 可达 2.4MW；Malaysia 两座约 16.5MW+土地约 14MW | 小规模但有潜力：补齐东南欧、海缆和东南亚互联节点，增强 0—1MW/IX 网络效应。来源：[Sofia](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-enters-bulgaria-acquisition-highly-connected)、[Lisbon](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-enters-portugal-strengthening-southern-europes) |
+| 2026-06 | Kansas City powered land；增持 Teraco；拟收购 Columbia Capital | 1,440 英亩、首批 600MW 2028 年起、长期最高 2GW，价格 475M；Teraco 16% 权益约 650M 股票，持股拟升至 77%；Columbia 约 485M，带来 9B+ fund commitments | 同时扩 hyperscale 土地、电力、非洲 colo 和资产管理规模。Teraco/Columbia 预计 2026H2 交割。来源：[组合交易公告](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-announces-transactions-drive-continued-platform) |
+| 2026-06-30 | 买回 Blackstone 在 3 座 NoVA 在建/预租中心的混合 64% 权益 | 288MW、100% 租给 3 个投资级 hyperscaler、15 年、平均 AA-、3.6% 年递增；gross value 7.8B，支付 1.2B 现金+2.3B DLR 股票 | 说明资本轻并非永久去资产化：当租约、收益率和信用质量足够好时，DLR 会重新提高所有权。稳定化 cap rate >6.5%。来源：[官方公告](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-announces-purchase-blackstone-interest-three) |
+
+三年主线可以概括为：**2023 去杠杆/资产循环 → 2024 模板化 JV 开发 → 2025 产品升级和基金化 → 2026 扩大 AUM、全球互联节点与选择性回购优质 hyperscale 资产。**这不是退出重资产，而是把“由谁出权益资本”与“谁控制开发、运营和客户”分开。
+
+### 1.4 最新股价、估值与利润率
+
+| 指标 | 最新值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | **$189.45** | 2026-07-31 12:30:30 PT，盘中 | 当日开盘 194.92，日内 189.42—196.17；来源为实时市场数据。可复核：[StockAnalysis DLR](https://stockanalysis.com/stocks/dlr/) |
+| 市值 | **约 $71.36B** | $189.45 × 376.68M shares+units；2026Q2 全摊薄经济权益口径 | 若只乘 370.01M common shares，约 70.10B；公司 IR 首页显示约 68B，主要是价格时点/股数口径差异。 |
+| 企业价值 | **$89.80B** | 2026-07-31，S&P Global MI 聚合 | 与 2026 Adjusted EBITDA 指引中值 3.80B 对应约 **23.6x EV/Adj. EBITDA**。 |
+| Trailing PE | **92.73x** | TTM EPS 2.08 | REIT 折旧和处置收益使 GAAP PE 可比性弱。 |
+| Forward PE | **83.61x** | 市场一致预期口径 | 与公司指引口径不同；不能与 Core FFO 倍数混用。 |
+| P/2026 Core FFO | **23.17x** | 189.45 ÷ 指引中值 8.175；剔除 net promote | 对 DLR 更有经济意义的主估值口径。 |
+| P/S / Forward P/S | **10.63x / 9.77x** | 2026-07-31 | 收入含公用事业转嫁和 promote，跨公司比较前要正常化。 |
+| TTM 收入/增速 | **$6.76B / +18.8%** | 截至 2026Q2；S&P Global MI | Q2 报告收入同比 +28.9%，剔除约 200M promote 后本报告估算约 +15.2%。 |
+| 第三方“毛利率” | **57.00%** | TTM 聚合口径 | DLR 没有制造业式 gross margin 分部披露。更可复核的运营替代是本报告计算的 TTM 数据中心 NOI margin **54.6%**。 |
+| 营业利润率/净利率 | **18.07% / 11.83%** | TTM GAAP | TTM 净利润 758.3M；一次性处置、保险和 promote 使季度间波动大。 |
+| 股息/收益率 | **$4.88 / 2.58%** | 年化，股价 189.45 | GAAP payout ratio 无意义偏高；应看 AFFO/可分配现金覆盖。 |
+
+以上市场统计来自 [StockAnalysis/S&P Global Market Intelligence，2026-07-31 更新](https://stockanalysis.com/stocks/dlr/statistics/)。其中 PE、P/S、EV 等聚合值为该页面 15:05 ET 左右的快照，最新股价与市值按 15:30:30 ET 行情重算。需要特别说明：某些行情源给出约 66.9B 市值和约 50x PE，是因为使用 common-only/加权股数或不同 EPS；本报告优先采用**透明的 376.68M shares+units × 当日股价**和可复算的 Core FFO 倍数。
+
+### 1.5 资产负债表健康度
+
+| 指标（2026-06-30） | 数值 | 判断 |
+|---|---:|---|
+| 现金及等价物 | **1.865B** | 对短期到期债务和施工支出有缓冲，但不足以覆盖年度增长 capex。 |
+| 总资产/总负债/总权益 | **54.518B / 25.653B / 27.979B** | 账面权益厚；房地产折旧使账面值不等于市场重置价值。 |
+| 净房地产/CIP/商誉 | **36.406B / 9.770B / 9.592B** | CIP 较 Q1 的约 5.38B 大增，主要受 NoVA 交易和扩建影响；施工/稳定化执行风险上升。 |
+| 总债务 | **18.635B** | 约 17.0B 无担保、1.6B 有担保及其他；第三方数据约 19.84B，包含租赁/JV 等扩展口径。 |
+| 净债务/Adjusted EBITDA | **4.7x** | 同比改善约 0.4x，低于公司 5.5x 长期阈值。 |
+| 固定费用覆盖 | **5.2x** | 利息覆盖充足，较五季前 4.7x 改善。 |
+| 债务+优先股/EV | **22.3%** | 相对资产规模可控。 |
+| 债务结构 | **92% 无担保、90% 固定利率、平均期限 4.5 年、平均票息约 2.9%** | 短期利率敏感性较低，但 2028—2030 再融资墙不小。 |
+| 到期分布 | **2026 0.5B；2027 1.9B；2028 3.0B；2029 3.7B；2030 3.1B** | 2028—2030 合计约 9.8B；若长期利率高企，利息成本会逐步上行。 |
+| 流动性 | **约 6B** | 管理层电话会口径，含现金和未提款融资。 |
+| 信用评级 | **S&P BBB+ Stable；Moody’s Baa2 Positive；Fitch BBB Stable** | 均为投资级；来源：[DLR Credit Ratings](https://investor.digitalrealty.com/financials/credit-ratings)。 |
+| 2026 capex 指引 | **4.25B—4.75B** | 已扣合作伙伴出资；另有 recurring capex+leasing 约 400M—425M。资本消耗仍高。 |
+| 2026 YTD ATM 发股 | **13.5M 股、净募资约 2.5B、均价 184.94** | 保持杠杆的代价是每股稀释；Q2 期末 shares+units 376.675M，较 2025Q2 346.644M 增约 8.7%。 |
+
+**综合评级：健康但资本饥渴，约 B+/A-。**正面是投资级评级、低于阈值的杠杆、5.2x 覆盖、约 6B 流动性、强续租价差和高信用租户；负面是 9.77B CIP、4.25B—4.75B 年度净 capex、2028—2030 到期集中、持续发股、JV 负债/少数股权/fee-promote 使穿透分析更复杂。若只看 4.7x 杠杆会低估项目级资本承诺；若只看 18.6B 债务又会忽略预租和第三方资本带来的风险缓释。官方基础数据见 [2026Q2 Results](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-reports-second-quarter-2026-results)及 [SEC 2026Q2 8-K 材料](https://www.sec.gov/Archives/edgar/data/1297996/000110465926086270/0001104659-26-086270-index.htm)。
+
+## 2. 最新及最近四次财报：五季财务、订单、交期与利润率
+
+### 2.1 五季损益和业务收入
+
+| 季度 | 总收入 | YoY | 数据中心收入¹ | YoY | 租金 | 电力报销 | 其他报销 | IX+其他 | Fee income | 数据中心 NOI | NOI margin | 净利润 | Adj. EBITDA | Core FFO/share（剔除 promote） |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| **2026Q2** | **1,924.0** | **+28.9%** | **1,674.6** | **+14.9%** | 1,145.9 | 352.9 | 45.4 | 130.4 | **248.9** | **926.9** | **55.4%** | 457.6 | 977.6 | **2.13** |
+| **2026Q1** | 1,635.2 | +16.2% | 1,600.2 | +15.4% | 1,103.9 | 333.9 | 38.1 | 124.3 | 34.9 | 902.0 | 56.4% | 174.8 | 920.3 | 2.04 |
+| **2025Q4** | 1,634.7 | +13.8% | 1,588.6 | +12.5% | 1,074.7 | 356.1 | 34.4 | 123.4 | 45.7 | 839.0 | 52.8% | 96.1 | 856.8 | 1.86 |
+| **2025Q3** | 1,577.2 | +10.2% | 1,536.1 | +8.7% | 1,045.7 | 332.7 | 37.3 | 120.4 | 36.4 | 825.8 | 53.8% | 63.7 | 867.8 | 1.89 |
+| **2025Q2** | 1,493.2 | +10.1% | 1,457.4 | +8.8% | 1,003.6 | 294.5 | 37.4 | 122.0 | 34.4 | 795.8 | 54.6% | **1,046.9** | 823.3 | 1.87 |
+
+¹ 数据中心收入 = 租金 + utilities/other reimbursements + interconnection and other，不含 fee income。NOI = 数据中心收入 − utilities − rental property operating − property tax − insurance。五季原始数据来自各季 DLR supplemental：[2026Q2](https://www.sec.gov/Archives/edgar/data/1297996/000110465926086270/dlr-20260723xex99d1.htm)、[2026Q1](https://www.sec.gov/Archives/edgar/data/1297996/000110465926047702/dlr-20260423xex99d1.htm)、[2025Q4](https://www.sec.gov/Archives/edgar/data/1297996/000110465926010887/dlr-20260205xex99d1.htm)、[2025Q3](https://www.sec.gov/Archives/edgar/data/1297996/000110465925101827/dlr-20251023xex99d1.htm)、[2025Q2](https://www.sec.gov/Archives/edgar/data/1297996/000155837025009543/dlr-20250724xex99d1.htm)。
+
+关键解读：
+
+- **2026Q2 fee income 248.9M 不是可持续 run-rate。**其中约 200M gross promote 与 Blackstone JV 三座数据中心成功开发/出租有关，相关费用后 net promote 约 188M；管理层给出的正常化 fee income 是“略高于 45M”。按 45M 替换，Q2 正常化总收入约 **1.720B**。
+- Q2 另有保险和解净额 **94M**；其中 **27M/约 0.07 美元每股**是业务中断补偿，计入 Core FFO，约 67M 财产损失补偿被剔除。故 2.13 的 Core FFO 也含 0.07 保险收益，但该项已纳入全年指引。
+- 2025Q2 净利润 1.047B 主要由资产处置收益抬高，所以 2026Q2 净利润同比下降不代表经营恶化。对 DLR 应以 Core FFO、同店 NOI、续租价差和 backlog 为核心，而非单季 GAAP 净利。
+- 截至 2026Q2 的四季数据中心收入约 **6.400B**，NOI 约 **3.494B**，本报告计算 TTM NOI margin **54.6%**；这是比聚合网站 57% “毛利率”更透明的经营口径。
+- Q2 rent、utility reimbursement、IX+other 分别同比 **+14.2%、+19.8%、+6.9%**。电力报销增长快于租金会抬高收入、但不等比例抬高利润，因此不能把全部收入增速视为租金经济增速。
+
+### 2.2 五季 bookings、backlog、交付期、续租与取消口径
+
+| 季度 | 新签年化租金 DLR share | 100% share | 0—1MW+IX | 其中 IX | >1MW | 期末 backlog（DLR share） | 签约至开通 lag | 当季开通 | 续租 | 现金/GAAP 续租价差 | 在役 churn | 期末容量/已占用 | 占用率 | Cross-connects |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| **2026Q2** | **208.5M** | 306.9M | **108.3M** | **20.5M** | 99.8M | **1.427B** | **9 月** | **208M** | 262M | **+25.6% / +32.0%** | **1.1%** | 3,102/2,799MW | 90.2% | 235,500 |
+| **2026Q1** | **422.8M** | 707M | 97.5M | 18.6M | **324.5M** | 1.032B | **19 月** | 207M² | 193M | +5.0% / +6.3% | 1.4% | 3,024/2,725MW | 90.1% | 234,000 |
+| **2025Q4** | 174.7M | 400M | 96.0M | 18.9M | 78.0M | 817M | 8 月 | 188M² | 269M | +6.1% / +12.0% | 1.5% | 2,963/2,663MW | 89.9% | 232,500 |
+| **2025Q3** | 161.8M | 201M | 84.5M | 19.6M | 76.1M | 852M | 8 月 | 125M² | 192M | +8.0% / +11.5% | 1.6% | 2,879/2,602MW | 90.4% | 231,000 |
+| **2025Q2** | 135.3M | 177M | 89.8M | 17.3M | 45.0M | 826M | 4 月 | 170M² | 177M | +7.3% / +9.9% | 1.0% | 2,858/2,565MW | 89.7% | 229,000 |
+
+² 早期季度“当季开通”按 supplemental/backlog roll 的年化租金近似，表内用于观察量级，不应与季度 GAAP 收入相加。Bookings、backlog、lag、续租和容量来自相应季度 [earnings presentations](https://digitalrealtytrust.gcs-web.com/financials/quarterly-results)。
+
+Q2 订单的价格和期限进一步显示产品差异：
+
+| Q2 新签产品 | DLR-share MW | 年化 base rent | GAAP 租金 | 稳定化现金租金 | 平均期限 | 经济含义 |
+|---|---:|---:|---:|---:|---:|---|
+| 0—1MW | 26.1MW | 87.8M | **$280/kW/月** | $278/kW/月 | 4.1 年 | 更快开通、更强网络效应和更高单价；客户更分散。 |
+| >1MW | 52.9MW | 99.8M | **$157/kW/月** | $147/kW/月 | 8.8 年 | 单价较低但容量、合同期和信用质量更高。 |
+| 合计（不含 IX） | 79.0MW | 188.0M | **$198/kW/月** | $190/kW/月 | 6.6 年 | 相当于每 MW 年化 GAAP base rent 约 2.376M。 |
+
+Q2 renewal 中，0—1MW 约占续租金额 55%，现金 mark-to-market **+5.2%**；>1MW 约占 44%，现金 mark-to-market **+66.7%**，主要由供应极紧的 Singapore 等市场驱动。管理层明确提示 66.7% 不是每季可重复，但未来几年到期租金下降、市场租金上升，重定价机会仍在。[2026Q2 电话会全文](https://stockanalysis.com/stocks/dlr/transcripts/653921-q2-2026/)
+
+### 2.3 Backlog roll、交付压力和“取消率”结论
+
+- Q2 DLR-share backlog 大致由 **Q1 调整后 1.324B + 新签 208M − 开通 208M + NoVA 交易带入约 380M = 1.427B**。季末之后两份 hyperscale 租约另增 **205M**，所以“已签但未进季末报表”的总量约 **1.632B**。
+- 1.427B 的排期恰好分为 **2026H2 635M、2027 480M、2028+ 312M**；2026H2 中约 45% 在 Q3、55% 在 Q4 开通。由于中途开通，只能按占用月份确认当年收入。
+- Q1 lag 达 19 个月，Q2 回落到 9 个月，主要是 hyperscale/colo 产品组合变化，不代表全行业交期突然缩短。外部 [JLL 2026](https://www.jll.com/content/dam/jllcom/en/global/documents/reports/research-reports/26-research-global-data-center-outlook-new.pdf)显示 50MW 项目平均建设约 18 个月、材料可提前 24 个月预订、美国设备交期 42 周。
+- **公司没有披露 backlog cancellation rate。**表中的 1.1% churn 是已投入运营收入流失率，不是未开通订单取消率。考虑大型项目主要由投资级传统 hyperscaler 签署、NoVA 三份合同为 15 年且平均 AA-，本报告判断**彻底取消概率低于延期概率**；未来情景分别对取消和延期单独扣减。
+
+## 3. 2026 最新指引、业务占比、产品和 AI 交叉验证
+
+### 3.1 2026 指引：年内连续三次上修
+
+| 指标 | 2026-02-05 初始 | 2026-04-23 | **2026-07-23 最新** | 最新中值较初始中值 |
+|---|---:|---:|---:|---:|
+| 收入（剔除 promote） | 6.60B—6.70B | 6.65B—6.75B | **6.85B—6.95B** | **+250M / +3.8%** |
+| Adjusted EBITDA | 3.60B—3.70B | 3.65B—3.75B | **3.75B—3.85B** | **+150M / +4.1%** |
+| Core FFO/share（剔除 net promote） | 7.90—8.00 | 8.00—8.10 | **8.15—8.20** | **+0.225 / +2.8%** |
+| Constant-currency Core FFO/share | — | — | **8.10—8.15** | 中值同比约 +10% |
+| 续租现金价差 | +6%—8% | +6.5%—8.5% | **+9%—11%** | 中值 +300bp |
+| 续租 GAAP 价差 | — | — | **+12%—14%** | — |
+| Constant-currency same-capital cash NOI | — | 约 +4.0%—5.0% | **+4.25%—5.25%** | 中值再上调 25bp |
+| 年末占用率变化 | — | — | **+75—125bp** | 由 backlog 开通和低 churn 支撑 |
+| Capex（扣伙伴出资） | — | 约 3.50B—4.00B | **4.25B—4.75B** | 较上次中值 +750M |
+| Recurring capex + leasing costs | — | — | **400M—425M** | 维持资产和签约所需 |
+| GAAP EPS | — | — | **3.10—3.15** | 含处置/保险/JV 等 GAAP 波动 |
+
+来源：[2026Q2 Earnings Release](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-reports-second-quarter-2026-results)、[2026Q2 Supplemental/SEC](https://www.sec.gov/Archives/edgar/data/1297996/000110465926086270/dlr-20260723xex99d1.htm)。最重要的信号不是一次性 promote，而是**收入、EBITDA、Core FFO、续租价差、same-cap NOI 和 capex 同时上调**：需求和定价超预期，且公司愿意用更高当期投入锁定未来交付。
+
+### 3.2 最新季度收入占比：报告口径与正常化口径
+
+| 2026Q2 收入项 | 报告值 | 报告收入占比 | 剔除 promote 后估算值 | 正常化收入占比 | YoY |
+|---|---:|---:|---:|---:|---:|
+| Rental | 1,145.9M | 59.6% | 1,145.9M | **66.6%** | +14.2% |
+| Utility reimbursements | 352.9M | 18.3% | 352.9M | **20.5%** | +19.8% |
+| Other reimbursements | 45.4M | 2.4% | 45.4M | 2.6% | +21.5% |
+| Interconnection and other | 130.4M | 6.8% | 130.4M | **7.6%** | +6.9% |
+| Fee income | 248.9M | 12.9% | **约 45M** | **2.6%** | 报告 +623%；正常化约 +31%³ |
+| Other | 0.5M | ~0% | 0.5M | ~0% | — |
+| **合计** | **1,924.0M** | **100%** | **约 1,720.1M** | **100%** | 报告 +28.9%；正常化约 +15.2% |
+
+³ 45M 与 2025Q2 34.4M 的简单比较约 +31%；公司 presentation 使用更精细的 promote 调整后给出 fee income **+38%**。这说明“正常化”也存在四舍五入/费用归类差异，不应伪造到小数点。
+
+另一种更接近产品需求的口径是期末 100% share annualized base rent：
+
+| 租赁产品 | 2026Q2 年化 base rent | 占比 | 2025Q2 | YoY | 趋势 |
+|---|---:|---:|---:|---:|---|
+| 0—1MW | **1.587B** | **33.0%** | 1.419B | **+11.9%** | 企业托管、私有 AI、网络节点；单价更高、开通更快。 |
+| >1MW | **3.004B** | **62.5%** | 2.365B | **+27.0%** | 最大增长和收入主体；包含收购、JV、汇率和新开通，不等于同店增速。 |
+| 其他空间/office/storage/shell | 0.218B | 4.5% | 0.224B | **-2.9%** | 非核心、低增长。 |
+| **合计** | **4.809B** | **100%** | 4.008B | **+20.0%** | 100% project-share，不等于 consolidated GAAP revenue。 |
+
+**最突出业务是 >1MW hyperscale；公司当前最强调的是“三支柱同时增长”，而非只做大块容量。**Q2 电话会中，>1MW 在 H1+7 月累计签约约 1.4B，0—1MW+IX 连续三季创新高、Q2 首次超过 100M，private capital 正从一次性 JV 走向经常性管理费。仅看 >1MW 会漏掉更高单价、更高黏性的 colo/IX；仅看 AI colo 又会漏掉 backlog 的绝大部分美元价值。
+
+### 3.3 重点业务、产品/“型号”和利润率判断
+
+DLR 卖的是服务与设施规格，不是统一硬件 SKU；“型号”应理解为**服务层级、供电密度、冷却架构和具体 facility/campus ID**。
+
+| 业务 | 对应产品/规格/设施 | 近期证据 | 当前规模与增速 | 本报告利润率判断⁴ |
+|---|---|---|---|---|
+| >1MW Hyperscale | Turn-Key Flex、Powered Base Building、Build-to-Suit；中型 300kW+ 到数百 MW；5—15 年合同 | 2026Q1 Charlotte **200MW**，公司史上最大单笔；Q2 后两单 **410M 100% share/205M DLR share**；NoVA 3×96MW 全租 | Q2 100% base rent **3.004B，YoY +27%**；Q2 DLR-share 新签 99.8M，7 月另增 205M | **稳定化 NOI margin 约 50%—58%**；项目级 expected stabilized yield **11.5%**。大客户价格低于 colo，但合同长、信用损失低。 |
+| 0—1MW Colocation | 单柜、机笼、Turn-Key Flex；2—5 年；Q2 以 sub-300kW 最强 | Q2 0—1MW+IX bookings **108M，连续第三季纪录**；新增 **142 logos**，渠道贡献近 40% bookings | 100% base rent **1.587B，YoY +11.9%**；Q2 0—1MW 新签 87.8M | **NOI margin 约 56%—64%**；售价高、服务/销售成本也高，网络密度提高边际利润。 |
+| High-Density Colocation | **30—150kW/柜**、multi-MW；AALC、DLC、混合风液冷；NRT14/ICN10 等 | 官方框架覆盖 **170 sites/33 markets**；NRT14 最高 150kW/柜并获 NVIDIA DGX-Ready；Macnica DGX H100 案例称密度翻倍 | 公司未单列收入；本报告估算纯 AI 设施收入 **0.55B—1.03B**，与 hyperscale/colo/IX 重叠；Q2 0—1MW+IX 中 AI wins 约 **21.6M 年化** | **成熟后 NOI margin 约 50%—60%**；液冷初期 capex/调试高，但可用高租金、更多 kW/机柜和更低交付时间回收。 |
+| Interconnection | Cross Connect、Metro Connect、Campus Connect、Internet Exchange、IP Bandwidth | 235,500 cross-connects；Q2 IX bookings **20.5M，YoY +18%**；Q2 IX+other revenue **130.4M，+6.9%** | Q2 年化收入约 **522M**；cross-connect 数量同比约 +2.8% | **边际 EBITDA margin 约 65%—80%**，但公司未分配网络、销售和设施成本；不可当作披露利润率。 |
+| ServiceFabric/AIPx | ServiceFabric Virtual Router、cloud on-ramp、AIPx、2026-06 推出的 **ServiceFabric MCP** | MCP 已可用，覆盖 DLR 与第三方合计 **800+ 数据中心**；PTC 材料显示约 300+ cloud on-ramps、170+ partners、285+ services | 未单列；体现在 IX+other 和 customer retention；电话会称 ServiceFabric 客户新增约翻倍 | 软件/编排的增量毛利高，但目前收入规模小；真正价值是拉动 cross-connect、colo 和多园区部署。 |
+| DRIL | Digital Realty Innovation Lab；真实生产级高密度/混合云验证；合作方 AMD、Cisco、Lenovo Neptune、Supermicro、CommScope、ePlus、Vcinity、Zenlayer 等 | NoVA 2025 已开；Tokyo 2026-04 开；Singapore 2026H2，London/其他节点推进 | 直接收入未披露、短期很小；销售漏斗和认证加速器 | 独立利润可能不高，属于降低客户部署风险、缩短销售周期的获客基础设施。 |
+| Strategic Private Capital | U.S. Hyperscale Fund、各类 JV；管理、开发、施工、fit-out、leasing、financing fee 与 promote | Fund **3.25B commitments、DLR 20%**；管理层称现有 private-capital structure 可部署 **10B—12B**；Columbia 拟带来 9B+ commitments | Q2 正常化 fee income 约 **45M**，年化约 **180M**；公司 presentation 口径同比 +38% | 当前综合 EBITDA margin 估计 **35%—55%**；稳定资产管理费可能 >60%，施工/fit-out 较低，promote 高但非经常性。 |
+
+⁴ DLR 不披露产品级毛利率；范围由公司整体 54.6% TTM 数据中心 NOI margin、产品售价/服务强度、项目 11.5% 稳定化收益率和行业成本结构推导，均为本报告估算，不能当作 management guidance。
+
+重点产品资料：[High-Density Colocation](https://www.digitalrealty.com/platform-digital/colocation/high-density-colocation)、[NRT14/DGX-Ready](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-opens-nrt14-data-center-third-facility-nrt-campus)、[ServiceFabric MCP](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-launches-servicefabricr-mcp-bringing-ai-native)、[DRIL](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-launches-innovation-lab-accelerate-ai-and-hybrid)。
+
+### 3.4 AI 收入占比：可以确认什么，不能确认什么
+
+**公司没有披露“AI data center revenue”这一分部。**原因是同一个 hyperscaler 租约可同时承载传统云、训练、推理和存储；租户也会在合同期内换 GPU。把所有 Microsoft/Oracle/Meta/云客户收入都标为 AI 会严重高估。
+
+本报告采用三层口径：
+
+| AI 口径 | 当前贡献估算 | 证据与限制 |
+|---|---:|---|
+| 可直接识别的新签 AI | Q2 0—1MW+IX 约 **21.6M 年化** | CEO 称 AI-related wins 约占该类 108M 的 20%；这是新订单，不是存量收入。另有 Mistral Paris **10MW** 已公开。 |
+| “纯 AI 工作负载”存量 | 正常化 run-rate 的 **8%—15%，约 0.55B—1.03B** | 结合 2024—2026 AI bookings 频率、高密度站点、已公开项目与存量传统云基数估算；低置信度。 |
+| 广义 AI-enabled cloud/hyperscale | **25%—35%，约 1.72B—2.41B** | 包括同时服务云与 AI 的 hyperscaler；更符合资产用途，但不是纯 AI 收入。**不得与上一行相加。** |
+
+交叉验证支持“AI 是增量驱动、不是全部收入”：
+
+- 2026Q2 大块容量仍由**传统强投资级 hyperscaler**主导。CEO 表示过去 10 季度最大订单来自 6 个不同顶级 hyperscaler、分布在 6 个市场；H1+7 月约 1.4B 签约基本都是传统 hyperscaler，未出现 material NeoCloud concentration。[Q2 call](https://stockanalysis.com/stocks/dlr/transcripts/653921-q2-2026/)
+- 企业侧 AI 更明确：金融机构私有推理、Barcelona 的 GPU-as-a-Service + AI infrastructure provider、Mistral 10MW、NRT14 DGX-Ready、See All AI 的 DGX B200 环境都依赖高密度 colo+连接。
+- 业内 [PTC’26](https://www.ptc.org/2026/02/ptc26-brought-global-infrastructure-leaders-together-to-define-the-future-of-ai-driven-connectivity/)把推理、分布式部署和跨物理/数字层连接列为主线；[JLL](https://www.jll.com/content/dam/jllcom/en/global/documents/reports/research-reports/26-research-global-data-center-outlook-new.pdf)预计 2027 年推理需求可能超过训练、2030 年 AI 可占全球数据中心负载约一半。这更利好 DLR 的城市 colo/IX，而不仅是偏远训练园区。
+
+### 3.5 明确跳过的低增长或非关键业务
+
+以下项目存在，但因不重要、低增长或无独立披露，不作为未来一年主模型：
+
+| 跳过项 | 已知规模/状态 | 跳过原因 |
+|---|---:|---|
+| Office、storage、传统 shell/辅助空间 | 100% annualized base rent 约 **218M，占 4.5%，YoY -2.9%** | 低增长、非 AI 核心；保留在公司总收入模型的“其他”中。 |
+| 低密度 legacy air-cooled 企业 IT | 收入未单列 | 存量现金流重要，但不是增长催化；主要风险是 retrofit，而非销售增长。 |
+| Critical Facilities Management、remote hands、传统 IP bandwidth | 未单列 | 属于配套服务，无法独立验证收入/利润率；不伪造 SKU 规模。 |
+| 非 AI 的常规金融、医疗、制造、社交/内容托管 | 客户行业广泛 | 提供防御性，但本报告重点是高增长 AI/云基础设施；不把所有数字化需求冒充 AI。 |
+| 可持续性/可再生能源覆盖 | 2025 年全球 93% renewable coverage、1.7GW contracted renewables | 是获客、许可和成本能力，不是可单独销售的收入分部。 |
+| Promote、保险收益、资产处置收益 | Q2 net promote 188M；保险净额 94M | 非经常性，不进入产品增长 run-rate。 |
+
+## 4. 当前高增长/关键产品：收入、增速、AI 重要性、紧迫性和定价权
+
+### 4.1 当前收入贡献的统一分配模型
+
+为了避免把 100% project share 与 consolidated revenue 混在一起，本报告从 2026Q2 数据中心收入年化 **6.699B**出发：先扣除 IX+other 年化 **0.522B**，再按期末 base-rent mix 的 >1MW 62.5%、0—1MW 33.0%、其他 4.5% 分配租金及报销，最后加回约 **180M** 正常化 fee run-rate。得到：
+
+| 产品/业务 | 当前正常化年化收入贡献 | 公司披露/本报告估算 | 可观察增速 | 估算利润率 | AI 栈重要性 | 时间紧迫性 | 供需紧张度 | 垄断/护城河 | 溢价能力 |
+|---|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| >1MW hyperscale | **3.86B** | 本报告按 62.5% mix 分配；交叉验证 100% base rent 3.004B | base rent **+27% YoY**；Q2+7月订单强 | NOI **50%—58%** | **5/5** | **5/5** | **5/5** | **3/5** | **4/5** |
+| 0—1MW colo | **2.04B** | 本报告按 33.0% mix 分配；100% base rent 1.587B | base rent **+11.9%**；Q2 bookings 达纪录 | NOI **56%—64%** | **4/5** | **4/5** | **4/5** | **4/5** | **4/5** |
+| High-density AI 子集⁵ | **0.55B—1.03B** | 低置信度，跨 >1MW/0—1MW/IX，不能加总 | 本报告估计 **+25%—45%**；Q2 可识别 AI 0—1 wins 21.6M | NOI **50%—60%** | **5/5** | **5/5** | **4/5** | **3/5** | **4/5** |
+| IX/Cross-connect/ServiceFabric | **0.522B** | Q2 130.409M ×4；含“other” | 收入 **+6.9%**；bookings **+18%**；ports +2.8% | 边际 EBITDA **65%—80%** | **4/5** | **4/5** | **3/5** | **4/5** | **4/5** |
+| Strategic Private Capital fees | **0.180B** | Q2 正常化约 45M ×4 | presentation 调整后 **+38%**；部署资本将扩大 | EBITDA **35%—55%** | **3/5** | **4/5** | 不适用 | **3/5** | **4/5** |
+| 其他低增长空间 | **0.278B** | 分配模型 | base rent -2.9% | 低于组合 | 1/5 | 1/5 | 2/5 | 2/5 | 2/5 |
+| **合计** | **约 6.88B** | 接近 2026 指引中值 6.90B | — | — | — | — | — | — | — |
+
+⁵ AI 子集是父业务中的重叠切片，不能与 3.86B、2.04B、0.522B 相加。评分：1=弱/不紧张，5=对 AI 基建不可替代性、时间压力、供不应求或定价权最强。这里的“垄断”不是法律垄断，而是客户可替代性和本地稀缺资源控制力。
+
+### 4.2 逐项判断
+
+**>1MW hyperscale：绝对收入和 backlog 的主发动机。**AI/云训练集群需要连续几十至数百 MW，时间窗口受模型代际和客户 capex 周期约束；Charlotte 200MW、NoVA 288MW、Q2 后两单 205M DLR-share 年租证明需求真实。其弱点是单一客户议价权强、单价仅 157 美元/kW/月，且 AWS/Microsoft/Google/Meta 可自建或双供应商。DLR 的稀缺性来自“有电且能按时交付”，不是独家技术；因此垄断力 3/5、供需/紧迫性 5/5。
+
+**0—1MW colo：更高质量、更快兑现的复利业务。**Q2 每 kW GAAP 租金 280 美元，较 >1MW 高 78%；平均期限 4.1 年、可更快转收入；客户进入后会叠加 cross-connect、云 on-ramp 和多园区部署。网络密度形成局部双边市场，替换成本高于纯 wholesale；新增 142 logos、连续三季纪录说明不是由单一巨单造成。
+
+**High-Density Colo：潜力最大但收入透明度最低。**官方已经把产品从概念推进到 170 sites/33 markets、30—150kW/柜、AALC/DLC、NRT14 DGX-Ready 和 DRIL 生产验证。当前 150kW 足以覆盖 GB200 NVL72 等主流部署；但下一代更高密度平台若超过 150kW，需要一次/二次侧电力和冷却改造。它能同时提高每柜收入和机房利用效率，但也可能把资本瓶颈从地板面积转移到变压器、母线、CDU 和热排放。
+
+**Interconnection/ServiceFabric：收入占比小、战略价值大。**Q2 IX+other 只占正常化收入约 7.6%，却显著提高 colo 黏性。训练集中、推理分布式、agentic 双向流量会增加云、数据、模型、终端之间的连接；ServiceFabric MCP 的开放协议本身不形成封闭垄断，但 800+ 设施、235,500 物理 cross-connects 和客户生态形成运营惯性。
+
+**Private Capital：解决的是 DLR 自身最稀缺的“权益资本产能”。**3.25B 基金、10B—12B 可部署能力和 Columbia 的 9B+ commitments 能让 DLR 在不把净杠杆推过 5.5x 的情况下扩大 1.4GW pipeline。其风险是 promote/fee 分类使报表复杂、第三方投资回报要求可能抬高客户租金、资产转入基金会减少 consolidated rent，但长期应提高资本周转和每股回报。
+
+## 5. 一年后产品收入贡献：基准、乐观、极度乐观
+
+### 5.1 模型定义与主要假设
+
+- **起点：**2026Q2 正常化年化 run-rate 约 6.88B；与公司 2026 收入指引中值 6.90B 基本一致。
+- **“一年后贡献”：**指 2027-07-31 的年化退出 run-rate，不等于 2026-08 至 2027-07 实际确认收入。
+- **基准：**已签 backlog 按计划大体交付，延期 4%—7%、彻底取消 1%—2%；续租价差回到全年指引，容量季度交付约等于 Q2 的 76MW。
+- **乐观：**7 月新签和后续订单较快开通，延期 2%—4%、取消 0.5%—1%；0—1/IX 连续创纪录，private capital 加速部署。
+- **极度乐观：**主要电力/设备无实质延期、取消 0%—0.5%，1.5GW 客户对话显著转签；高密度 AI 和价格继续超预期。这不是最可能情景。
+
+### 5.2 各产品一年后收入与增速
+
+| 产品/业务 | 当前 run-rate | **基准：一年后贡献 / 增速** | **乐观：一年后贡献 / 增速** | **极度乐观：一年后贡献 / 增速** | 主要驱动 |
+|---|---:|---:|---:|---:|---|
+| >1MW hyperscale | 3.86B | **4.48B / +16%** | **4.79B / +24%** | **5.17B / +34%** | 635M/480M 排期开通、205M 7 月订单、NoVA 稳定化、>1MW 续租价差。 |
+| 0—1MW colo | 2.04B | **2.28B / +12%** | **2.41B / +18%** | **2.57B / +26%** | 新 logos、sub-300kW 强势、Sofia/Lisbon/Malaysia/Barcelona 新节点、高密度需求。 |
+| High-density AI 子集⁶ | 0.55B—1.03B | **0.75B—1.25B / +25%—40%** | **0.90B—1.50B / +45%—65%** | **1.15B—2.00B / +80%—110%** | NRT14/DRIL 扩散、私有 AI、Mistral、GPUaaS、DLC 渗透；与父业务重叠。 |
+| IX/ServiceFabric | 0.522B | **0.574B / +10%** | **0.611B / +17%** | **0.663B / +27%** | cross-connect、bulk fiber、ServiceFabric 使用量、分布式 inference/agentic traffic。 |
+| Private-capital fee | 0.180B | **0.234B / +30%** | **0.279B / +55%** | **0.360B / +100%** | 10B—12B 资本 1—2 年部署、construction→management fee、Columbia 交割；不含新 promote。 |
+| 其他 | 0.278B | **0.270B / -3%** | **0.278B / 0%** | **0.284B / +2%** | 非核心空间持平或继续下降。 |
+| **公司退出 run-rate（不另加 AI 子集）** | **6.88B** | **7.84B / +14.0%** | **8.36B / +21.5%** | **9.05B / +31.5%** | 各父业务合计。 |
+
+⁶ AI 子集是 hyperscale/colo/IX 的用途切片，不进入公司合计。区间宽是为了正面承认公司没有 AI 分部披露。
+
+### 5.3 一年后质量评分
+
+| 产品 | 情景 | AI 栈重要性 | 时间紧迫性 | 供需紧张度 | 垄断/护城河 | 溢价能力 | 判断 |
+|---|---|---:|---:|---:|---:|---:|---|
+| >1MW | 基准 / 乐观 / 极乐观 | 5 / 5 / 5 | 5 / 5 / 5 | 4 / 5 / 5 | 3 / 3 / 4 | 4 / 5 / 5 | 电力和交付窗口决定价格；极乐观需客户对话转签且无严重延期。 |
+| 0—1MW | 基准 / 乐观 / 极乐观 | 4 / 5 / 5 | 4 / 5 / 5 | 4 / 4 / 5 | 4 / 4 / 4 | 4 / 4 / 5 | 分布式推理和私有 AI 增强网络密集 colo 的相对价值。 |
+| High-density AI | 基准 / 乐观 / 极乐观 | 5 / 5 / 5 | 5 / 5 / 5 | 4 / 5 / 5 | 3 / 3 / 4 | 4 / 5 / 5 | 若 150kW 以上认证/部署顺利，DLR 可对“快速可用液冷容量”收显著溢价。 |
+| IX/ServiceFabric | 基准 / 乐观 / 极乐观 | 4 / 4 / 5 | 4 / 4 / 5 | 3 / 4 / 4 | 4 / 4 / 4 | 4 / 4 / 5 | 物理生态是护城河；软件协议开放，不能靠 API 封闭垄断。 |
+| Private capital | 基准 / 乐观 / 极乐观 | 3 / 4 / 4 | 4 / 4 / 5 | 不适用 | 3 / 3 / 4 | 4 / 4 / 5 | 溢价来自独特项目管线、运营和客户，而非资本本身稀缺。 |
+
+### 5.4 退出 run-rate 与未来 12 个月 GAAP 收入的区别
+
+| 情景 | 2027-07-31 退出年化收入 | 较当前 +% | 未来 12 个月实际确认收入 | 较 6.90B 2026 指引中值 +% | 差异原因 |
+|---|---:|---:|---:|---:|---|
+| **基准** | **7.84B** | +14.0% | **约 7.55B** | **+9.4%** | 许多 2027 项目在期中开通，第一年只确认部分月份。 |
+| **乐观** | **8.36B** | +21.5% | **约 8.05B** | **+16.7%** | 开通较早、价差更强、fee 部署较快。 |
+| **极度乐观** | **9.05B** | +31.5% | **约 8.70B** | **+26.1%** | 大额 hyperscale 提前交付、AI colo 爆发、几乎无延期。 |
+
+本模型没有把 1.427B backlog 在一天内全部计入收入，也没有把 205M 7 月租约假设为即时开通；这是与“订单金额直接等于下一年收入”的主要区别。
+
+## 6. 当前 BOM、每 MW/机柜/GPU/光端口价值量、产能与认证
+
+### 6.1 先划清 DLR 与客户的 BOM 边界
+
+| 层级 | 主要内容 | 通常由谁投资/拥有 | DLR 如何变现 |
+|---|---|---|---|
+| 电网与园区 | 土地、变电站、输配电、长期电力协议、备用发电/储能、道路与许可 | DLR/JV、utility，部分由客户共同承担 | 把“未来可用电”变成长期租约；开发收益、租金、费用。 |
+| 建筑与 MEP | shell、开关柜、变压器、UPS/PDU、母线、冷机/冷却塔/CDU、消防、安保、BMS/DCIM | DLR/JV 为主；PBB 中一部分 tenant fit-out 由客户承担 | $/kW/月租金、电力和其他报销、设施管理。 |
+| 机柜与液冷末端 | 机柜、rear-door HX、CDU、manifold、软管、QDC、冷板；责任因合同而异 | DLR、租户或设备伙伴共同界面 | 高密度租金、fit-out/施工费、较快开通；并非所有硬件销售收入归 DLR。 |
+| IT 设备 | GPU/CPU、服务器、存储、交换机、NIC/DPU、光模块 | **通常由租户拥有** | DLR 不确认硬件销售；通过 IT kW 和空间收租。 |
+| 互联 | MMR、光纤路径、ODF/patch panel、cross-connect、metro/campus fiber、cloud on-ramp、ServiceFabric 编排 | DLR 提供设施和服务；主动光器件多由租户/运营商拥有 | 一次安装费+经常性连接费+虚拟连接/服务收入。 |
+
+这一区分来自本项目的 [AI 云算力外包/NeoCloud 行业调研](<../../行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-07-10.md>)和 [AI 产业链口径字典](<../../行业调研/研究方法/产业背景：AI产业链全局图谱与口径字典.md>)：**GPU 云收入、服务器 BOM 和数据中心房租是不同层，不能重复计算。**
+
+### 6.2 每 MW 真实设施成本和价格传导链
+
+DLR 2026Q2 在建 pipeline 为 **1,402MW、100% total investment 20.180B**，等效约 **14.39M/MW**；这是跨地区、不同完工阶段、不同权属和 scope 的混合项目成本，不是单一工程报价。独立 [JLL 2026](https://www.jll.com/content/dam/jllcom/en/global/documents/reports/research-reports/26-research-global-data-center-outlook-new.pdf)给出的 50MW 单租户 air-cooled shell/core 平均成本约 **11.3M/MW**，液冷设施约再加 **10%**，而租户 AI tech fit-out 可高至 **25M/MW**。两者说明 DLR 的 14.39M/MW 处于合理量级。
+
+以 DLR 14.39M/MW 为归一化总成本，本项目 [土建、MEP 与预制化交付调研](<../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-07-10.md>)的成本结构可映射如下；金额只是结构化估算：
+
+| 每 MW 设施 BOM | 传统风冷结构/金额 | 高密度液冷结构/金额 | 价格如何传导给 DLR |
+|---|---:|---:|---|
+| Electrical：变压器、开关柜、UPS/PDU、母线、发电机等 | **54% / 7.77M** | **48% / 6.91M** | 设备交期和铜/变压器成本进入开发总成本；通过初始租金、annual escalator、客户 fit-out contribution 回收。 |
+| Mechanical：冷机、泵、冷却塔、CDU、管路等 | **22% / 3.17M** | **33% / 4.75M** | 液冷机械占比提高；可支撑更高 $/柜、更多 kW/面积和更短 time-to-power。 |
+| Shell/core | **14% / 2.01M** | **9% / 1.30M** | 高密度把价值从面积转向电力/冷却；传统 $/平方英尺指标重要性下降。 |
+| GC、设计、调试与软成本 | **10% / 1.44M** | **10% / 1.44M** | 施工延误、调试和许可直接推迟 rent commencement。 |
+| **总计** | **14.39M/MW** | **14.39M/MW 的结构化基准；实际液冷一般更贵** | DLR 项目平均 expected stabilized yield **11.5%**，全 pipeline 对应约 2.32B 年化稳定 NOI（100% share）。 |
+
+对一个完整 AI 工厂，项目内产业调研给出的全栈价值量约 **39M—70M/critical IT MW**：GPU/服务器约 20M—38M、网络/存储 4M—8M、shell/MEP 7M—13M、高密度供配电与液冷增量 3M—8M、电网/现场电源 2M—10M、软件/集成 1.5M—4M。部分范围重叠，不能机械相加；其中只有设施、fit-out 和服务部分直接或间接成为 DLR 收入。
+
+**成本→租金→客户 AI 服务的传导链：**
+
+`变压器/开关柜/冷却设备涨价与延期 → DLR 每 MW 开发成本及交付时间上升 → 新租 $/kW/月与续租 mark-to-market 上升 → GPU 云/企业把设施成本摊入 $/GPU-hour 或 AI 服务价格`。
+
+DLR Q2 新签价格为最直接的价值量锚：
+
+| 产品 | Q2 GAAP rent | 每 MW 年化 DLR base rent | 6 个月延期的租金机会成本/MW | 说明 |
+|---|---:|---:|---:|---|
+| 0—1MW | **$280/kW/月** | **3.360M** | **1.680M** | 连接密度、交付速度和小块容量溢价。 |
+| >1MW | **$157/kW/月** | **1.884M** | **0.942M** | 大宗折扣和长约；客户信用更强。 |
+| 混合 | **$198/kW/月** | **2.376M** | **1.188M** | 与 JLL 2025 Americas 1—20MW 均价 158 美元和 2030 预测 222 美元同量级；DLR mix 不同。 |
+
+### 6.3 关键机电子系统 BOM
+
+| 子系统 | 典型 BOM 分配 | 当前供给含义 |
+|---|---|---|
+| Electrical e-house/预制电力舱 | 核心电力设备 **50%—65%**；enclosure/steel/fire 10%—18%；bus/copper/cable 10%—15%；factory labor 5%—10%；engineering/FAT 5%—8%；freight 3%—7% | 工厂预制可减少现场工时，但变压器、开关柜和铜仍是瓶颈；需要提前锁单。 |
+| 1MW UPS | power modules 15%—21%；transformer/magnetics 10%—16%；bypass/breaker 10%—16%；copper 8%—14%；capacitor/EMI 6%—10%；control 5%—9%；enclosure 6%—10%；assembly/FAT 9%—14%；logistics/warranty 6%—11% | 800VDC 若进入规模部署，部分传统 UPS/PDU 拓扑会变化，旧园区 retrofit 风险上升。 |
+| Cooling skid/CDU | chiller/CDU/HEX/pump **45%—60%**；pipes/valves/QDC 15%—22%；skid 7%—12%；controls 5%—10%；labor/test 8%—15%；logistics 3%—8% | 100kW+ 机柜的供给不只看 chiller，还要看 CDU、QDC、漏液监控和调试认证。 |
+| 开关设备/变压器 | 硅钢、铜/铝绕组、绝缘、壳体、断路器/继保、工程/FAT/物流 | 项目内 [开关设备与变压器调研](<../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-07-10.md>)显示大型变压器可达 **3—4 年**、常规关键设备约 **12—30 个月**；这比租户签约更可能决定开通日期。 |
+
+相关独立研究还包括 [UPS 与电池储能](<../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-07-10.md>)、[机柜级供电架构](<../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md>)和 [电力接入与高压变电](<../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-07-10.md>)。
+
+### 6.4 每 rack / 每 GPU 的 DLR 内容量
+
+High-Density Colo 官方规格从 **30kW/柜到 150kW/柜**。按 Q2 新签租金，DLR 的年化设施收入内容量为：
+
+| 密度/产品 | 0—1MW $280/kW/月 | 混合 $198/kW/月 | >1MW $157/kW/月 |
+|---|---:|---:|---:|
+| 30kW 机柜 | **100.8k/年** | 71.3k/年 | 56.5k/年 |
+| 100kW 机柜 | **336.0k/年** | **237.6k/年** | 188.4k/年 |
+| 150kW 机柜 | **504.0k/年** | **356.4k/年** | 282.6k/年 |
+| 每 GPU（假设设施计费 IT 负载 1.2—2.0kW/GPU） | **4.03k—6.72k/年** | **2.85k—4.75k/年** | **2.26k—3.77k/年** |
+
+这些是**设施租金除以工程分母**，不是 GPU 销售收入；CPU、网络、存储、冗余和 PUE 会改变每 GPU 对应的计费 kW。项目内研究给出约 **350—800 GPU/MW**，NVL72 类 100—150kW 机柜约 **7—10 柜/MW、约 504—720 GPU/MW**，可作为交叉检查。
+
+高密度液冷的设施增量 BOM 约 **150k—400k/100—150kW 机柜**，不含服务器/GPU和通用建筑供电：
+
+| 液冷末端 BOM | 占比 |
+|---|---:|
+| cold plate/TIM/in-server loop | 28%—38% |
+| CDU | 18%—28% |
+| manifold/hoses/QDC | 12%—18% |
+| pump/HEX/filter | 8%—14% |
+| sensor/leak detection/control | 4%—8% |
+| coolant/flushing | 2%—5% |
+| installation/commissioning/spares/warranty | 10%—18% |
+
+换算约 **1.0M—4.0M/MW**，更聚焦的一次侧设施增量约 **1.2M—2.5M/MW**。来源：[直液冷系统调研](<../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-07-10.md>)。这解释了为什么 150kW/柜可以收取较高租金，但也会占用更昂贵的机械/电气容量。
+
+### 6.5 每 optical port/cross-connect 的真实内容量
+
+公司不披露 cross-connect 单价或 active optical port 数量，故不能把 235,500 直接当成收费光端口。可做一个**上限代理**：
+
+- Q2 interconnection and other revenue 年化：130.409M × 4 = **521.636M**。
+- 521.636M ÷ 235,500 cross-connects = **约 2,215 美元/条/年，约 185 美元/月**。
+- 若粗略把一条点到点连接视为两个端口，等效 **约 92 美元/端口/月**；但分子还含 Internet Exchange、IP、ServiceFabric 和其他服务，分母也未必对应所有计费连接，所以这只是**收入密度上限，不是报价单**。
+
+单条光连接的设施/服务 BOM 包括：两个终端的 MMR/ODF 或 patch panel 位、LC/MPO/MTP adapter/connector、fiber jumper 或 structured trunk、双路由管道空间（若客户购买冗余）、安装与 label、光功率/OTDR 测试、LOA/CFA 流程、工单与持续运维；tenant/carrier 通常自行提供 transceiver。项目内 [高速连接器与结构化布线调研](<../../行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-07-10.md>)给出的预端接 MTP trunk 成本结构为 fiber/cable 20%—35%、ferrule/connector 20%—30%、termination/polish/test 18%—28%、panel/cassette 10%—20%、custom/logistics 8%—15%。DLR 的高毛利来自**稀缺 MMR 路径、生态和经常性服务**，不是光纤材料本身。
+
+### 6.6 当前实物产能、美元产能和开发采用度
+
+| 当前指标 | 2026Q2 | 美元化/含义 |
+|---|---:|---|
+| 在役总容量 | **3,102MW** | 按 Q2 混合新租 198 美元/kW/月，理论 nameplate annual rent equivalent **7.37B**。 |
+| 已占用容量 | **2,799MW / 90.2%** | 同价换算 **6.65B**；与实际 Q2 数据中心收入年化 **6.70B**接近，但只是巧合性 sanity check。 |
+| 同容量占用率 | **92.5%** | 高于全组合，因为新交付容量尚在爬坡。 |
+| 在建容量 | **1,402MW** | 100% project-share；按 198 美元/kW/月对应潜在年租 **3.33B**。 |
+| 在建预租率 | **54% 季末；计入 7 月签约后约 63%** | 以同价粗算已预租美元容量约 **2.10B/年**；官方 contractual backlog 是更可靠口径。 |
+| 在建总投资 | **20.180B 100% / 13.612B DLR share** | 约 14.39M/MW；expected stabilized yield 11.5%，对应 annual NOI potential **2.32B 100% / 1.57B DLR share**。 |
+| 季度交付/新开工 | **76MW / 312MW** | 交付约 60% 预租；新开工大于交付，pipeline 继续扩张。 |
+| 未来土地/壳体容量 | **6,560MW land + 550MW shell** | 与约 9GW 总增长 runway 同方向；并非都已获电或开工。 |
+
+在建 pipeline 的区域/项目集中度：
+
+| 区域/项目 | 在建 MW | 预租率 | 预计稳定化收益率/状态 |
+|---|---:|---:|---|
+| Americas | **1,140MW** | **62%** | **11.8%**；占总 pipeline 81%，AI/cloud hyperscale 最强。 |
+| EMEA | 183MW | 12% | 10.4%；Marseille、Frankfurt/Paris 等受电力/许可约束。 |
+| APAC | 80MW | 47% | 11.2%；Singapore/Tokyo/Indonesia 等供给受限。 |
+| Northern Virginia | **422MW** | 56% | 最大开发市场；含 3×96MW 新资产。 |
+| Charlotte | **212MW** | **94%** | 200MW 历史最大单签，平均完工约 2028Q2。 |
+| Atlanta | **192MW** | 0% | speculative capacity 风险最高；平均完工约 2029Q1。 |
+| 其他 | 314MW | 85% | São Paulo 等市场预租强。 |
+
+### 6.7 当前每项业务的供应链采用和认证阶段
+
+| 产品/业务 | 当前产能能力（美元计） | 供应链采用程度 | 当前认证/验证阶段 |
+|---|---:|---|---|
+| >1MW hyperscale | 现有分配 run-rate **3.86B**；在建 marginal annual-rent capacity 100% share 约 **3.33B** | 计入 7 月后 1.4GW pipeline **约 63% 预租**；过去 10 季最大单来自 6 个投资级 hyperscaler/6 市场 | 租户/项目级设计、commissioning 和 SLA；没有统一硬件认证。NoVA 288MW 已 100% 签约、预计 2027H1/2028H1 稳定化。 |
+| 0—1MW colo | run-rate **2.04B**；100% base rent 1.587B | 连续三季 bookings 纪录、142 新 logos、Q2 sub-300kW 最强 | 标准 colocation 已规模商用；各站点按 Tier/ISO/SOC 等合规，本文不把站点清单误作产品认证。 |
+| High-Density Colo | AI 纯负载收入估算 0.55B—1.03B；官方可售框架 **170 sites/33 markets** | 30—150kW/柜、AALC/DLC 已商用；NRT14、ICN10、Paris 等出现真实客户/设施 | **NRT14 已获 NVIDIA DGX-Ready Data Center**，支持 100kW+、最高 150kW/柜；DRIL NoVA/Tokyo 已运行，Singapore 计划 2026H2。 |
+| IX/ServiceFabric | IX+other run-rate **0.522B**；235,500 cross-connects | ServiceFabric MCP 已覆盖 DLR/第三方 **800+ 数据中心**；300+ cloud on-ramps、170+ partners、285+ services 为会议材料口径 | ServiceFabric MCP **2026-06-17 已 GA/available today**；Indonesia CGK10/11 预计 2026H2 上线。 |
+| Private Capital | Fund commitments 3.25B；公司称现有结构可部署 **10B—12B** | U.S. fund final close；DLR 20% co-invest 并管理运营/租赁/开发/融资 | 不适用技术认证；关键里程碑是资金 final close、资产 seed、Columbia/Teraco 交易交割。 |
+
+## 7. 一年后产能、采用与认证：三情景
+
+### 7.1 总体物理容量和美元容量
+
+| 2027-07-31 指标 | **基准** | **乐观** | **极度乐观** | 推导逻辑 |
+|---|---:|---:|---:|---|
+| 在役 nameplate | **3.40GW** | **3.60GW** | **3.85GW** | 较 3.102GW 分别新增约 300/500/750MW；基准等于 Q2 76MW×约 4 季。 |
+| 占用率 | **91.0%** | **91.8%** | **92.5%** | 2026 指引年末 +75—125bp，随后 backlog 爬坡。 |
+| 未来新租等效价格 | **$206/kW/月** | **$212/kW/月** | **$222/kW/月** | 较当前混合 198 分别 +4%/+7%/+12%；极乐观接近 JLL 2030 Americas 预测提前兑现。 |
+| 已占用 marginal annual-rent capacity | **7.65B** | **8.41B** | **9.49B** | nameplate × occupancy × $/kW/月×12；100% 边际价格等效，非 consolidated GAAP guidance。 |
+| 仍在建/新开工补充 | **约 1.35GW** | **约 1.55GW** | **约 1.75GW** | 交付减少 pipeline，但新开工补充；受 9GW runway 和 1.5GW 客户对话支撑。 |
+| 在建预租率 | **70%** | **78%** | **85%** | 从 pro-forma 63% 起步；极乐观需客户对话快速转签。 |
+| 当年关键设备延期 | **4—7% 项目时点** | **2—4%** | **0—2%** | JLL 的 57% 延期基准很严峻；DLR 规模采购和预库存可好于行业平均，但不能归零。 |
+
+这张表的“美元容量”是**若新增/存量容量都按当前边际租金出租的容量价值**，用于检查开发规模是否支持收入情景；它高于或不同于 consolidated revenue，因为 JV 权属、电费报销、旧约价格和开通月份不同。
+
+### 7.2 各产品的未来产能、采用和认证阶段
+
+| 产品 | **基准** | **乐观** | **极度乐观** |
+|---|---|---|---|
+| >1MW hyperscale | 退出 run-rate 4.48B；pipeline 预租约 70%；2027 排期基本兑现，NoVA 前两座稳定化 | 4.79B；预租约 78%；7 月两单和一部分后续签约更早开通 | 5.17B；预租约 85%；1.5GW 对话大量转签，Atlanta speculative block 也取得客户 |
+| 0—1MW colo | 退出 run-rate 2.28B；High-Density 可售站点估计 **约 190/36 markets** | 2.41B；约 **215/40 markets**；新 metro 和现有园区同步改造 | 2.57B；约 **240/45 markets**；30—150kW 成为全球核心 colo 的常规选项 |
+| High-Density AI | NRT14 认证复制到若干核心园区；DRIL 至少 NoVA/Tokyo/Singapore 三节点；150kW 商用扩大 | 顶级市场标准化 AALC/DLC、DGX-ready/伙伴验证；部分站点验证 **150kW+** | 完成下一代 **>200kW/柜**验证并出现商业租约；若 Rubin 级 600kW 需求提前，需 800VDC/更大 CDU 试点 |
+| IX/ServiceFabric | cross-connects **约 245k**；ServiceFabric reach 约 **850+** 设施；Indonesia 上线 | **约 252k / 900+**；AIPx/MCP 从网络控制扩展到更多 inventory/power workflow | **约 264k / 1,000+**；agentic/分布式 inference 带来虚拟连接和 bulk fiber 快速增长 |
+| Private Capital | 可支配/管理型资本容量 **13B—16B**；Columbia 完成交割并整合 | **17B—20B**；新基金/JV、施工费和运营费同步增长 | **22B—28B**；DLR 成为跨 data center/fiber/mobility 的大型数字基建 GP；执行与冲突管理难度也最高 |
+
+上表的站点数、ServiceFabric reach 和资金容量均是**本报告情景里程碑**，不是公司正式目标。认证方面，最可靠的基准是 NRT14 已完成 DGX-Ready；未来是否获得某一厂商“Rubin-ready”认证取决于厂商规范和正式项目，不应提前视为已获批。
+
+### 7.3 认证和被采用程度的判定原则
+
+1. **“设计可支持”不等于“客户已采用”。**170 sites/33 markets 是 High-Density framework 覆盖，不能据此说 170 站点都已跑 150kW 机柜。
+2. **“预租”不等于“已确认收入”。**63% 在建预租大幅降低需求风险，但仍有建筑、供电、commissioning 和客户 fit-out 风险。
+3. **“DGX-Ready”是设施能力验证，不是 NVIDIA 对 DLR 收入的保证。**认证降低客户技术审查和部署时间，但租约仍需单独签署。
+4. **开放协议同时增强采用、削弱封闭锁定。**ServiceFabric MCP 可降低客户接入摩擦；护城河更多来自底层物理网络和运营生态，而非协议专有性。
+
+## 8. 基于真实订单积压和供给的未来一年业务增速
+
+### 8.1 可核验的客户项目、订单金额和交付窗口
+
+| 项目/订单 | 可核验规模 | 签约/交付窗口 | 对模型的作用 |
+|---|---:|---|---|
+| 2026Q1 Charlotte 历史最大租约 | **200MW** | 土地约提前 18 个月取得；开发平均完成约 2028Q2 | 证明大单不是意向书；Charlotte 在建 212MW、约 94% 预租。短期先形成 backlog，不应全部算入未来 12 个月收入。 |
+| 2026Q2 当季 bookings | **306.9M 100% / 208.5M DLR share；79MW DLR share** | 平均 lag 9 个月 | 0—1MW 26.1MW、>1MW 52.9MW；是近期收入转化的直接订单基础。 |
+| 2026Q2 期末 backlog | **1.9B 100% / 1.427B DLR share** | 2026H2 635M、2027 480M、2028+ 312M | 已签但未开通；约为 in-place data center rent 的 30%。 |
+| 2026-07 两份美国 hyperscale 租约 | **410M 100% / 205M DLR share** | 尚未进入 Q2 backlog；具体 commencement 未披露 | 把 pro-forma 在建预租率从 54% 推到约 63%；对 2027/28 更重要。 |
+| NoVA 三座新中心 | **288MW，gross value 7.8B** | 两座 2027H1、第三座 2028H1 稳定化 | 100% 租给三个投资级客户、15 年、平均 AA-、3.6% escalator；降低信用/重租风险。 |
+| Mistral Paris South | **10MW** | 2026-05 公告，部署先进冷却 | 少数公开实名的纯 AI 客户容量，验证欧洲主权/本地化 AI 需求。来源：[Mistral/DLR](https://investor.digitalrealty.com/news-releases/news-release-details/mistral-ai-leverages-digital-realty-expand-its-ai-services) |
+| NRT14/Tokyo | Campus 接近 **100MW**；单柜最高 150kW | 2026-04 开业 | DGX-Ready、混合风液冷；验证高密度产品已经到商业设施，而非 roadmap。 |
+| Kansas City | 初始 **600MW** 电力，长期最高 **2GW** | 2028 年起线性 ramp | 不贡献未来 12 个月收入；是 2028+ 供给期权，不能拿来解释 2027 收入。 |
+| 2027/2028 客户 active dialogue | **约 1.5GW** | 未签，管理层电话会口径 | 只进入乐观/极乐观转签假设；不能当 backlog。 |
+
+来源以 [2026Q2 presentation](https://www.sec.gov/Archives/edgar/data/1297996/000110465926086270/dlr-20260723xex99d2.htm)和 [Q2 call](https://stockanalysis.com/stocks/dlr/transcripts/653921-q2-2026/)为主。
+
+### 8.2 渠道、行业会议和技术报告交叉验证
+
+| 证据等级 | 过去半年信号 | 对 DLR 的含义 |
+|---|---|---|
+| 一级：独立行业研究 | [JLL 2026](https://www.jll.com/content/dam/jllcom/en/global/documents/reports/research-reports/26-research-global-data-center-outlook-new.pdf)：全球容量 2025 年 **103GW**、2030 年 **200GW**，14% CAGR；全球 occupancy **97%**、在建 **77% 已承诺**；全球设备平均 33 周、美国 42 周；57% 项目延误 ≥3 月；50MW 平均建设 18 月；开发商持有 6—12 月关键库存 | 需求强，但 DLR 的 revenue timing 仍受供应制约。价格权来自稀缺，延期是 backlog 模型中最大扣减。 |
+| 一级：市场供需 | [CBRE Global Data Center Trends 2026](https://www.cbre.com/insights/reports/global-data-center-trends-2026)：NoVA vacancy **0.3%**、Atlanta **1%**；NoVA absorption **1,148.3MW** | 支持 25.6% 续租价差的方向，也解释 DLR 买回 NoVA 资产；同时 Atlanta 192MW 0% 预租并非无风险。 |
+| 一级：运营者调查 | [AFCOM State of the Data Center 2026](https://afcom.com/news/720973/)及其行业讨论：平均机柜密度由 16kW 升至 **27kW**；36% 已部署液冷，另 28% 计划 12—24 个月采用 | 30—150kW High-Density Colo 方向主流；液冷仍处于快速渗透而非全行业完成状态。 |
+| 一级：业内会议 | [PTC’26](https://www.ptc.org/2026/02/ptc26-brought-global-infrastructure-leaders-together-to-define-the-future-of-ai-driven-connectivity/)和 [PTC’26 Rewind](https://www.ptc.org/ptc26-rewind/)：推理、edge/distributed infrastructure、subsea-to-edge 和 AI-driven connectivity 成为主线 | 利好 DLR 的都市圈 colo、海缆/互联节点和 ServiceFabric；训练园区并非唯一 AI 受益环节。 |
+| 公司参加的资本市场会议 | 2026-03 Morgan Stanley、Citi、Raymond James、Deutsche；2026-05 JPMorgan；2026-06 NAREIT；2026-07 Q2 call，均可在 [DLR Events](https://investor.digitalrealty.com/news-events/events)查验 | 管理层在多次场合一致强调供电、供应链、AI+cloud 双驱动、private capital 和全球 full-spectrum；Q2 数字验证此前叙事，而非只在财报后改口。 |
+| 三级：匿名论坛，**只作弱证据** | 2026 年一则 [r/sysadmin 1—10MW 采购讨论](https://www.reddit.com/r/sysadmin/comments/1t614zu/colocation_capacity_planning_in_2026_what_has/)称 Tier-1 容量难在 location、speed、density、redundancy、price 五项同时满足，部分交付承诺延至 2027；[r/datacenter 液冷讨论](https://www.reddit.com/r/datacenter/comments/1twueft/with_rack_densities_soaring_is_liquid_cooling/)认为 30—50kW 以上通常需要液冷/RDHx | 与 JLL/AFCOM 方向一致，但身份、项目和报价不可验证；本报告**不以匿名帖子决定收入、价格或取消率**。 |
+
+### 8.3 订单转化模型：取消与延期分开
+
+季末 backlog 1.427B 加 7 月 205M，形成 **1.632B DLR-share 已签年化租金池**。但 2028+ 项目不应放进未来一年。模型如下：
+
+| 未来一年订单变量 | **基准** | **乐观** | **极度乐观** |
+|---|---:|---:|---:|
+| 进入 12 个月交付窗口的 gross annualized rent | **0.88B** | **1.05B** | **1.20B** |
+| 因电力/设备/施工延期而移出窗口 | **7.0%** | **3.0%** | **1.0%** |
+| 真正取消/规模永久缩减 | **1.5%** | **0.75%** | **0.25%** |
+| 有效年化退出租金增量 | **约 0.81B** | **约 1.01B** | **约 1.19B** |
+| 在未来 12 个月 GAAP 收入中实际贡献 | **约 0.40B—0.45B** | **约 0.52B—0.58B** | **约 0.65B—0.72B** |
+
+取消假设不是披露数据。其方向依据是：大单由强投资级 hyperscaler 签署、NoVA 15 年合约和低在役 churn；延期假设则由 42 周设备交期、四年以上并网等待和行业 57% 延误率支持。若未来 supplemental 出现 backlog roll 中“调整/取消”显著增大，应立即覆盖本假设。
+
+### 8.4 未来一年公司业务增速预测
+
+| 指标 | **基准** | **乐观** | **极度乐观** | 主要约束 |
+|---|---:|---:|---:|---|
+| 实际确认总收入 | **约 7.55B / +9.4%** | **约 8.05B / +16.7%** | **约 8.70B / +26.1%** | 中途开通、电费报销、JV consolidation 和资产循环。 |
+| 数据中心业务收入增速 | **+9%—11%** | **+15%—18%** | **+23%—27%** | backlog conversion、occupancy、renewal spread、NoVA。 |
+| Adjusted EBITDA 增速 | **+10%—13%** | **+17%—21%** | **+27%—32%** | NOI 增长快于报销收入；高 fee/IX mix 有正经营杠杆。 |
+| Core FFO/share 增速 | **+10%—12%** | **+15%—18%** | **+21%—26%** | 利息、发股稀释、JV fee、资产处置；不含新 promote。 |
+| 年末净债务/EBITDA | **4.7x—5.1x** | **4.5x—4.9x** | **4.3x—4.8x** | 极乐观仍需要第三方资本和股权融资，不能只靠债务。 |
+
+**最可能结果是收入高个位数至低双位数、退出 run-rate 中双位数。**管理层已经公开表示 backlog 支撑 2027 及以后多年的 double-digit Core FFO/share growth；本报告基准与该表述一致，但没有把 promote 或所有 1.5GW customer dialogue 纳入。
+
+## 9. 竞争格局、技术主流性、替代方案与客户切换成本
+
+### 9.1 按业务划分的竞争对手
+
+DLR 2025 10-K 直接列出 Equinix、NTT、Global Switch 以及众多区域/私营运营商；现实竞争还包括客户自建和资本所有者。来源：[2025 10-K](https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm)。
+
+| 产品市场 | 主要竞争对手/替代 | DLR 相对优势 | DLR 相对弱点 |
+|---|---|---|---|
+| Network-dense colo/IX | **Equinix**、NTT Global Data Centers、CoreSite/American Tower、Telehouse、Iron Mountain、区域 carrier hotels | 310 设施、55+ metros、全客户频谱、Interxion/Teraco 生态、235.5k cross-connects；能把 colo 与 hyperscale 园区连接 | Equinix 在高密度互联、云 on-ramp 和企业品牌上通常更强；DLR IX 收入占比仍小。 |
+| >1MW hyperscale/BTS | QTS/Blackstone、Vantage、CyrusOne、STACK、Aligned、CloudHQ、Compass、EdgeConneX、DataBank、NTT，以及区域开发商 | 全球土地/电力库、投资级资产负债表、标准化设计、private capital、同一客户跨洲部署 | 私营开发商可接受更低回报或更快决策；DLR 的 REIT 分红和公开市场每股约束更强。 |
+| High-Density/Liquid-cooled colo | Equinix、CoreSite、QTS、CyrusOne、Vantage、专门 AI 数据中心/NeoCloud 设施 | 170 sites/33 markets 的改造/可售框架、DRIL、NRT14 DGX-Ready、连接生态 | 150kW 上限不是永久领先；新建 greenfield AI sites 可直接设计 200—600kW+，旧楼改造昂贵。 |
+| Interconnection software | Equinix Fabric、Megaport、PacketFabric、Aviatrix、各 cloud Direct Connect/ExpressRoute/Interconnect | 物理设施+cross-connect+软件一体，800+ DLR/第三方站点；AIPx policy/orchestration | MCP 是开放标准，软件功能可复制；客户可直接采购 cloud/network fabric。 |
+| Strategic Private Capital | QTS/Blackstone、Brookfield、KKR、GIP/BlackRock、DigitalBridge、Macquarie、Stonepeak 等数字基建平台 | DLR 自带项目、租户、开发和运营，能 seed 资产并持续收费 | 资本本身高度可替代；GP 业务需要新人才、治理、冲突管理和业绩记录。 |
+| 客户自建 | AWS、Microsoft、Google、Meta、Oracle 及大型主权 AI 项目自建园区 | DLR 可更快进入多市场，避免客户一次性投入和本地许可/运营复杂度 | 超大客户具备自建能力，若电力/土地充足，可能把成熟负载迁回自有园区。 |
+
+### 9.2 新技术是否是未来主流
+
+| 技术/产品 | 主流判断 | 风险与替代 |
+|---|---|---|
+| 30—150kW High-Density Colo | **正在成为 AI/HPC 托管主流。**AFCOM 平均机柜密度一年由 16kW 升至 27kW，64% 已采用或计划采用液冷；NRT14 已支持 100kW+。 | 低密度企业负载仍大量存在；高密度不等于每个机柜都要 150kW。混合密度设计通常更经济。 |
+| Direct-to-chip liquid cooling | **100kW+ 的当前主流路径。**DLR 的 AALC+DLC/风液混合能覆盖现阶段部署。 | Rear-door HX 可覆盖部分 30—70kW；immersion 是替代，但 DLR 2026 presentation 称尚未看到客户兴趣。CDU/QDC 标准和漏液责任仍碎片化。 |
+| 150kW/柜能力 | **当前 Blackwell/NVL72 适用，但不是终局。** | 下一代 187—227kW、甚至 600kW/MW 级 rack 可能要求更高压配电、800VDC、不同母线和 CDU；若 DLR retrofit 慢，新建 AI 园区会替代。 |
+| PlatformDIGITAL/PDx | **标准化多园区架构是主流运营方法。** | 大客户可用自有 reference design；“架构方法论”本身专利壁垒有限，核心仍是资产和执行。 |
+| ServiceFabric/AIPx/MCP | **分布式推理和 agentic traffic 的方向正确。**网络需可编程、跨云、跨 metro。 | Equinix Fabric/Megaport/cloud-native connectivity 是直接替代；开放 MCP 增长采用但降低封闭锁定。 |
+| PBB/BTS + private capital | **大型 AI/云园区融资和交付主流。**JLL 预计 2026 core fund capital formation 可超 50B、目标回报 ≥10%。 | 若第三方资本要求回报上升、ABS/CMBS 市场关闭或客户信用下降，基金模式成本会升高。 |
+| Immersion cooling | **暂非 DLR 客户主流。** | 若极高密度和特定芯片封装推动 immersion 标准化，DLC-only 设施需要适配；但运维、液体兼容和保修仍是障碍。 |
+
+### 9.3 客户集中度与议价风险
+
+2026Q2 按 DLR share annualized recurring revenue：
+
+| 客户（未披露者沿用公司描述） | 年化收入 | 占比 | 剩余租期 |
+|---|---:|---:|---:|
+| Fortune 50 software company | **550.1M** | **10.8%** | 8.4 年 |
+| Oracle | **509.2M** | **10.0%** | 10.8 年 |
+| Social content platform | 282.1M | 5.6% | 2.5 年 |
+| Global cloud provider | 225.4M | 4.4% | 2.7 年 |
+| Fortune 25 technology company | 128.9M | 2.5% | — |
+| IBM | 105.6M | 2.1% | — |
+| Meta | 103.3M | 2.0% | — |
+| Equinix | 97.6M | 1.9% | — |
+| 未具名 leading AI chip maker | 81.3M | 1.6% | **13.7 年** |
+| LinkedIn | 71.8M | 1.4% | — |
+| 未具名 specialized cloud provider | 67.1M | 1.3% | — |
+| **Top 20 合计** | **约 2.698B** | **53.1%** | — |
+
+Top 2 合计 **20.8%**，Top 20 为 53.1%。好处是信用质量和规模，坏处是续租谈判、客户自建和项目集中风险。公司没有把“leading AI chip maker”实名，本报告也不把它擅自认定为 NVIDIA。
+
+### 9.4 客户替换成本
+
+| 产品 | 替换成本 | 原因 | 可降低锁定的替代方案 |
+|---|---|---|---|
+| >1MW hyperscale | **高，4/5** | 5—15 年租约、定制 MEP、搬迁停机、重新并网/许可、数十至数百 MW 迁移复杂 | 在合同到期时自建、双供应商、跨区域分流；大客户议价力仍强。 |
+| 0—1MW colo | **很高，4.5/5** | 网络/云邻接、cross-connect 数量、合规审批、数据重力、短期迁移双租成本 | 使用标准化机柜/网络 overlay、多云架构；小工作负载比 hyperscale 更易搬，但连接生态难复制。 |
+| High-density AI | **高，4/5** | 液冷接口、CDU、机柜/地板承重、供电和 GPU 集群调试；迁移会损失昂贵 GPU 运行时间 | 模块化 CDU/QDC 标准、租户自有 cooling skid、选择 greenfield AI 专用站点。 |
+| Physical cross-connect | **很高，5/5** | 对端网络/云/伙伴共同决定位置，物理线路需重新布放和审批 | 运营商多归属、dark fiber、第三方 exchange；但同一生态位置仍不可瞬时复制。 |
+| ServiceFabric | **中等，3/5** | policy/API 和运营流程有惯性，但 MCP/网络标准开放 | Megaport/Equinix Fabric/cloud direct connect/SD-WAN overlay。 |
+
+### 9.5 主要风险、先行指标和反证
+
+| 风险 | 传导路径 | 应监控的先行指标 | 反证/触发阈值 |
+|---|---|---|---|
+| 电力/设备/许可延迟 | backlog 开通后移→资本化利息增加→收入/FFO 推迟 | 平均 lag、当季 commenced rent、在建 MW、JLL lead times、utility commitments | lag 连续两季 >15 月且 commenced rent <新签的 50%；backlog 被反复重排。 |
+| AI capex/需求回落 | 1.5GW 对话不转签→speculative blocks 空置→租金/续租价差回落 | >1MW bookings、pipeline prelease、Atlanta 等 0% 预租项目、hyperscaler capex | 连续两季 >1MW bookings <50M DLR share，或 pipeline prelease <55%。 |
+| 客户集中/自建 | 大客户延迟或不续租→大块容量难重租 | Top 20 占比、客户 credit、renewal churn、lease expirations | churn >3%、大客户续租转负或 200MW+ 项目缩量。 |
+| 资本和稀释 | capex >内部现金→发股/高息债→每股增长落后资产增长 | ATM shares、净债务/EBITDA、AFFO/share、JV partner contributions | 股数年增 >8% 且 Core FFO/share 增长 <8%；杠杆 >5.5x。 |
+| JV/fee/promote 透明度 | 报告收入/FFO 被一次性收益抬高→估值误判 | Core FFO ex promote、normalized fee、合并/比例口径差异 | promote/保险贡献 >年度 Core FFO 的 10% 且公司不提供剔除口径。 |
+| 技术密度过时 | 150kW 上限/旧电气架构不足→客户转向新园区 | >150kW 客户询盘、DLC/800VDC 验证、retrofit capex、DRIL 结果 | 下一代商业部署普遍 >200kW，而 DLR 12—18 月内无认证/可售容量。 |
+| 社区/能源政策 | 许可被否、并网成本和电价上升→项目延期/租户成本上升 | NoVA/Atlanta/Kansas 政策、税收优惠、水/噪音/电价规则 | 已获地块失去 zoning/power，或客户承担成本机制被限制。 |
+| 建设成本与固定价风险 | 变压器、铜、机械和人工涨价→yield 下滑 | development cost/MW、11.5% expected yield、liquid premium | expected stabilized yield 低于 9% 或 cost/MW 连续两季显著上升。 |
+| 竞争/租金正常化 | 私营资本加速供给→空置率回升→定价权下降 | CBRE vacancy、市场 $/kW/月、prelease、renewal spreads | NoVA/Atlanta vacancy >5%、全年 cash renewal spread <3%。 |
+
+风险框架与项目内 [AI 产业链瓶颈与反证指标总表](<../../行业调研/研究方法/产业背景：AI产业链瓶颈与反证指标总表.md>)一致：必须把“签约需求、可交付电力、设备交期、客户开通、收入确认”逐段验证，不能用上游 GPU 需求直接替代 DLR 收入证据。
+
+## 10. 最终判断与未来四季监控清单
+
+### 10.1 最终判断
+
+DLR 当前处于过去三年转型的兑现阶段：2023—2024 通过 JV 修复资产负债表并建立资本轻型开发模板，2025—2026 把模板扩展为基金、管理费和全球 AI-ready 产品，同时在回报足够高时重新买回最优资产。2026Q2 的**正常化收入约 +15%、Core FFO ex promote +14%、续租 +25.6%、backlog 1.427B、在建 1.402GW/63% pro-forma preleased、杠杆 4.7x**共同表明基本面不是单一一次性收益驱动。
+
+最有价值的资产不是“数据中心面积”，而是**在正确都市圈、正确时间、以可接受成本交付的 MW，并且能连接客户生态**。这使 DLR 同时受益于集中训练园区和分布式推理节点。>1MW 提供美元规模，0—1MW/IX 提供单价、速度和黏性，private capital 提供权益资本产能；三者缺一都会限制每股增长。
+
+估值层面，约 **23.2x 2026 Core FFO**已经不是便宜的传统 REIT；投资回报要求公司兑现双位数每股增长，而不是仅扩大资产和 shares outstanding。基准情景支持这一要求，但容错率有限：如果 backlog 延期、发股超过 FFO 增长、或高密度能力落后下一代机柜，估值会先于收入下修。
+
+### 10.2 每季必须更新的 15 个数字
+
+1. DLR-share bookings：总额、0—1MW、IX、>1MW。
+2. Backlog：DLR share 与 100% share，以及新增/开通/收购/调整 roll-forward。
+3. 未来 8 个季度的 commencement schedule。
+4. 平均签约至开通 lag；是否出现明确 cancellation/downsizing。
+5. 在建 MW、当季开工/交付 MW、预租率。
+6. development cost/MW 与 expected stabilized yield。
+7. 0—1MW 和 >1MW 新签 $/kW/月、合同年限。
+8. renewal cash/GAAP spread 与 churn。
+9. 全组合/同容量 occupancy。
+10. 数据中心 revenue、NOI 和 NOI margin；utility reimbursement 单独看。
+11. IX+other revenue、IX bookings、cross-connect count、ServiceFabric adoption。
+12. fee income 剔除 promote 后的 run-rate、AUM/commitments、资本实际部署额。
+13. Core FFO/share **剔除 promote、保险、FX**后的增长。
+14. 净债务/EBITDA、流动性、ATM 发股和 shares+units。
+15. High-Density 可售站点、100/150/200kW+ 客户部署、DLC/800VDC/下一代 GPU 认证里程碑。
+
+## 资料来源与方法说明
+
+### 项目内独立行业资料
+
+本报告只使用以下 `基本面/行业调研/` 相关材料作为产业背景，未读取项目其他研究目录：
+
+- [AI 云算力外包、NeoCloud 与 AI 数据中心运营商](<../../行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-07-10.md>)
+- [数据中心建设规模方法](<../../行业调研/研究方法/产业背景：数据中心建设规模.md>)
+- [AI 产业链瓶颈与反证指标总表](<../../行业调研/研究方法/产业背景：AI产业链瓶颈与反证指标总表.md>)
+- [AI 产业链全局图谱与口径字典](<../../行业调研/研究方法/产业背景：AI产业链全局图谱与口径字典.md>)
+- [数据中心电力接入与高压变电](<../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-07-10.md>)
+- [数据中心直液冷系统](<../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-07-10.md>)
+- [数据中心土建、MEP 与预制化交付](<../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-07-10.md>)
+- [DCIM、能控与 AI 工厂数字孪生](<../../行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-07-10.md>)
+- [数据中心开关设备与变压器](<../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-07-10.md>)
+- [数据中心 UPS 与电池储能](<../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-07-10.md>)
+- [机柜级供电与服务器电源架构](<../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md>)
+- [高速连接器、背板与结构化布线](<../../行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-07-10.md>)
+
+### 公司、SEC、市场与行业一手/高质量来源
+
+- [Digital Realty 2026Q2 Results](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-reports-second-quarter-2026-results)
+- [2026Q2 SEC filing index、supplemental 与 presentation](https://www.sec.gov/Archives/edgar/data/1297996/000110465926086270/0001104659-26-086270-index.htm)
+- [Digital Realty 2026Q2 earnings call transcript（Quartr/StockAnalysis）](https://stockanalysis.com/stocks/dlr/transcripts/653921-q2-2026/)
+- [Digital Realty 2026Q1 Results](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-reports-first-quarter-2026-results)
+- [Digital Realty 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm)
+- [Digital Realty 2026Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1297996/000110465926054255/dlr-20260331x10q.htm)
+- [DLR Investor Relations/2026Q2 materials](https://investor.digitalrealty.com/)
+- [DLR 2026 Events and conference archive](https://investor.digitalrealty.com/news-events/events)
+- [DLR 2026 presentations](https://investor.digitalrealty.com/news-events/presentations)
+- [High-Density Colocation product page](https://www.digitalrealty.com/platform-digital/colocation/high-density-colocation)
+- [NRT14 opening and DGX-Ready certification](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-opens-nrt14-data-center-third-facility-nrt-campus)
+- [ServiceFabric MCP launch](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-launches-servicefabricr-mcp-bringing-ai-native)
+- [Mistral AI 10MW Paris deployment](https://investor.digitalrealty.com/news-releases/news-release-details/mistral-ai-leverages-digital-realty-expand-its-ai-services)
+- [U.S. Hyperscale Fund final close](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-announces-final-close-325-billion-us-hyperscale)
+- [Kansas City/Teraco/Columbia transactions](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-announces-transactions-drive-continued-platform)
+- [NoVA Blackstone interest acquisition](https://investor.digitalrealty.com/news-releases/news-release-details/digital-realty-announces-purchase-blackstone-interest-three)
+- [DLR credit ratings](https://investor.digitalrealty.com/financials/credit-ratings)
+- [DLR price/statistics, S&P Global Market Intelligence](https://stockanalysis.com/stocks/dlr/statistics/)
+- [JLL 2026 Global Data Center Outlook](https://www.jll.com/content/dam/jllcom/en/global/documents/reports/research-reports/26-research-global-data-center-outlook-new.pdf)
+- [CBRE Global Data Center Trends 2026](https://www.cbre.com/insights/reports/global-data-center-trends-2026)
+- [AFCOM State of the Data Center 2026](https://afcom.com/news/720973/)
+- [PTC’26 industry conference synthesis](https://www.ptc.org/2026/02/ptc26-brought-global-infrastructure-leaders-together-to-define-the-future-of-ai-driven-connectivity/)
+
+### 计算口径
+
+- 五季收入、费用、NOI、bookings、backlog、容量均优先取公司 supplemental；百分比由未四舍五入数字计算，表中展示值可能有 0.1 个百分点误差。
+- Q2 正常化收入 = 1.924B 报告收入 − 248.9M 报告 fee + 约 45M 正常化 fee ≈ 1.720B。
+- 当前产品 run-rate = Q2 数据中心收入×4，扣 IX+other 后按 100% base-rent mix 分配；这是**分配模型，不是公司分部披露**。
+- “美元产能”同时给出两种：按 $/kW/月换算的 annual-rent equivalent，以及按 development investment×11.5% 得出的 stabilized NOI potential。两者 scope 不同，不能相加。
+- 所有 AI 收入、产品利润率、取消率、未来容量/收入均标为估算或情景；没有用匿名论坛替代公司/行业一手数据。
+
+> **免责声明：**本报告是研究资料，不构成投资建议。数据中心 REIT 的 GAAP EPS、FFO、比例合并、JV 经济权益、开发成本和租金口径差异很大，投资决策前应以最新 SEC 文件和公司 supplemental 为准。

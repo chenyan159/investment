@@ -1,0 +1,71 @@
+{
+  "rank_lists": 28,
+  "rank_rows": 5376,
+  "ranking_mismatches": 0,
+  "comparison_reports": 192,
+  "comparison_directed_rows": 36672,
+  "comparison_warnings": 2,
+  "comparison_versus_july17_rank_differences": 0,
+  "comparison_dates": {
+    "2026-07-14": 192
+  },
+  "comparison_backup_count": 16,
+  "reciprocal": {
+    "near": {
+      "sameWinner": 11829,
+      "eachSelf": 485,
+      "eachOther": 3147,
+      "bothClose": 150,
+      "oneDecisiveOneClose": 2722,
+      "unavailable": 3
+    },
+    "long": {
+      "sameWinner": 12129,
+      "eachSelf": 151,
+      "eachOther": 1857,
+      "bothClose": 363,
+      "oneDecisiveOneClose": 3833,
+      "unavailable": 3
+    },
+    "odds": {
+      "sameWinner": 11945,
+      "eachSelf": 263,
+      "eachOther": 2516,
+      "bothClose": 130,
+      "oneDecisiveOneClose": 2419,
+      "unavailable": 1063
+    },
+    "defense": {
+      "sameWinner": 12547,
+      "eachSelf": 694,
+      "eachOther": 1751,
+      "bothClose": 277,
+      "oneDecisiveOneClose": 3063,
+      "unavailable": 4
+    },
+    "explosion": {
+      "sameWinner": 11697,
+      "eachSelf": 543,
+      "eachOther": 3081,
+      "bothClose": 159,
+      "oneDecisiveOneClose": 2854,
+      "unavailable": 2
+    },
+    "mispricing": {
+      "sameWinner": 8621,
+      "eachSelf": 210,
+      "eachOther": 3866,
+      "bothClose": 381,
+      "oneDecisiveOneClose": 4287,
+      "unavailable": 971
+    },
+    "overall": {
+      "sameWinner": 9369,
+      "eachSelf": 146,
+      "eachOther": 3198,
+      "bothClose": 528,
+      "oneDecisiveOneClose": 4768,
+      "unavailable": 327
+    }
+  }
+}

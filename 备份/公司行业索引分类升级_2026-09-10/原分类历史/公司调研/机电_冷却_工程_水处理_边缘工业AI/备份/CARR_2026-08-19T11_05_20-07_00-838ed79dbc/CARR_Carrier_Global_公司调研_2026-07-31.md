@@ -1,0 +1,482 @@
+# 公司：CARR Carrier Global Corporation（开利全球）
+
+> **报告日期：2026-07-31；行情截点：2026-07-31 12:13 PT/15:13 ET（估值数据商约 14:50 ET 更新）。** 货币除特别注明外均为美元。本文只使用本项目 `基本面/行业调研/` 中与数据中心冷却、直液冷相关的产业资料，以及公开联网资料；未读取其他项目研究目录，也未修改公司索引。
+>
+> **口径标识：**“披露”=公司/SEC/产品官网直接给出；“反推”=由披露数字算术推导；“估算”=产业单位量、渠道信号和公司口径交叉验证；“情景”=本文预测。Carrier 不单独披露数据中心季度收入、产品收入/毛利、交期、取消率、客户名单和 CDU 产能，因此这些项目绝不能当成公司报告数字。
+
+## 核心结论
+
+Carrier 已从带消防安防、制冷和 HVAC 的综合工业集团，重塑为以智能气候、能源管理和冷链为核心的 HVAC 平台。投资者目前通常把它看成三种资产叠加：**成熟 HVAC/高黏性售后现金流 + 欧洲 Viessmann 热泵整合修复 + AI 数据中心冷却高速成长权**。其中第三项正在迅速改变估值叙事：2025 年数据中心收入约 **10 亿美元**，2026 年指引升至约 **20 亿美元**，连续第二年翻倍；但 2026 上半年仅约 **5 亿美元**，意味着下半年约 **15 亿美元**，交付与利润确认高度后置。
+
+最强证据不是宣传性 TAM，而是订单与供给同时收紧：2026Q2 公司订单（剔除 NORESCO、Riello）约增 **40%**、商业 HVAC 约增 **65%**、数据中心订单增 **>300%**；总 backlog **>80 亿美元**，同比约增 **40%**、环比约增 **20%**。管理层称约 70% backlog 属商业业务，其中约 40% 为数据中心；机械反推数据中心 backlog **>22.4 亿美元**。该 backlog 还不包括与 hyperscaler/大型 colo 的长期协议（LTA）预期量，因此对 2027 有实质支撑，但不能将 LTA 未下达量当作无条件订单。[2026Q2 业绩发布](https://ir.carrier.com/news/news-details/2026/Carrier-Reports-Second-Quarter-2026-Results/default.aspx)；[2026Q2 电话会文字实录](https://www.investing.com/news/transcripts/earnings-call-transcript-carrier-raises-2026-outlook-after-q2-beat-shares-slip-premarket-93CH-4816774)
+
+供给端是未来 12 个月的约束。现有产能可支持约 **25 亿美元/年**的数据中心销售；北美过去四年水冷冷水机组产能扩到约 **4 倍**、风冷约 **3 倍**。公司又把一座北美设施整体转作数据中心风冷/水冷冷水机组，Charlotte 扩容，并计划在 Texas 或 Alabama 建新厂，目标 2027Q1 末投产。基准情景下，本报告预计未来 12 个月数据中心收入约 **28 亿美元（+40%）**；乐观 **35 亿美元（+75%）**；极度乐观 **43 亿美元（+115%）**。极度乐观情景明显受投产爬坡、调试工程师、换热器/压缩机/VFD 和客户现场接电进度约束，不应只看订单增幅。[2026-06 Wells Fargo 会议实录](https://s205.q4cdn.com/164393362/files/doc_events/2026/Jun/09/2026-06-09-CARR-Wells-Fargo-Industrials-and-Materials-Conference-Corrected-Transcript.pdf)
+
+Carrier 的 AI 护城河是**系统集成、全球制造/服务、客户共同设计和交付责任**，不是单一零件垄断。管理层话语暗示当前数据中心份额约在 **10% 左右**、有机会向 **15%–20%**靠拢；这反而说明它是快速抢份额的挑战者，而非垄断者。客户在 greenfield 设计初期可双供、切换成本中等；一旦完成选型、FAT/SAT、BMS/DCIM 集成、备件与服务体系，切换成本升为高。长期的主要替代风险不是“液冷让冷水机消失”，而是 45°C 暖水、干冷器/free cooling、两相直冷和更高比例 heat reuse 降低压缩机制冷小时数与每 MW 冷水机内容量。
+
+财务上，公司不是“堡垒型”资产负债表。2026-06-30 净债务 **106.08 亿美元**，流动比率仅 **1.02**，商誉和无形资产合计 **210.23 亿美元/总资产 56.3%**，有形股东权益约 **-75.51 亿美元**；但现金 **13.44 亿美元**、未用循环额度约 **25 亿美元**、2026 自由现金流指引约 **20 亿美元**，短期偿付可控。合理定性是：**流动性足够、杠杆偏高、并购商誉风险显著，健康度中等（约 6/10）**。[2026Q2 10-Q](https://www.sec.gov/Archives/edgar/data/1783180/000178318026000032/carr-20260630.htm)
+
+## 1. 公司全貌、三年转型、产业链位置与即时估值
+
+### 1.1 业务定位与产业链位置
+
+Carrier 是全球 HVAC、建筑自动化、能源服务和运输制冷供应商。公司不生产 GPU、光模块、服务器或冷板；在 AI 基建链条中位于 **IT 设备下游、园区电力/机电设施层**：
+
+1. 芯片/GPU 与机柜产生热量；服务器侧冷板、歧管、软管和快速接头把热带到技术冷却水（TCS）回路；
+2. Carrier 的 CDU 把 TCS 与设施水（FWS）隔离并换热；
+3. AquaEdge/AquaForce 冷水机、泵和换热系统把热移至室外；39DC/39CV CRAH/AHU 处理液冷仍未覆盖的内存、电源、网络和房间余热；
+4. WebCTRL、Nlyte、Abound、75F 统一 BMS/DCIM/资产和能耗数据；BluEdge/本地技术员负责调试、备件、预测维护与 uptime SLA。
+
+这是一条从 **chip-to-chiller、equipment-to-controls、sale-to-lifetime service** 的价值链。Carrier 的差异点是可同时提供冷水机、空气侧、CDU、控制和服务；弱点是冷板、连接器、泵阀专用件及服务器验证仍依赖合作伙伴/客户生态。[Carrier QuantumLeap 数据中心组合](https://www.carrier.com/us/en/commercial/data-centers/)
+
+### 1.2 2023–2026 的重大业务变化
+
+| 时间 | 交易/转型 | 规模与意义 |
+|---|---|---|
+| 2023-04 至 2024-01 | 宣布并完成 Viessmann Climate Solutions（VCS）收购 | 2024-01-02 完成，总对价约 **141.57 亿美元**：现金 **111.56 亿** + 5,860.9 万股、按交易日约 **30.01 亿**计；形成约 **76.07 亿美元商誉**。把 Carrier 推入欧洲热泵、锅炉、家庭能源管理和安装渠道，也显著加杠杆。[2025 10-K](https://www.sec.gov/Archives/edgar/data/1783180/000178318026000008/carr-20251231.htm) |
+| 2024 | 大规模退出非核心业务 | Access Solutions 约 **50 亿美元**、Industrial Fire 约 **14 亿**、Commercial Refrigeration 企业价值约 **7.75 亿**、Commercial & Residential Fire 约 **29 亿**；把资本和管理资源转回气候/能源，降低业务多元化。 |
+| 2025 | 数据中心从产品销售升级为 QuantumLeap 系统方案 | 数据中心收入约 **10 亿美元**；自研 1.3–5MW CDU 路线，收购/整合 Nlyte DCIM 能力，首次投资 ZutaCore 两相直冷。 |
+| 2026-04 | 加码 ZutaCore | 扩大对水less、两相 direct-to-chip HyperCool 的投资；属于战略少数股权/合作，不等同于 Carrier 已并表的产品收入。[官方公告](https://www.carrier.com/us/en/news/carrierventures-expands-investment-in-zutacore-to-scale-liquid-cooling-for-ai-data-centers/) |
+| 2026-07-01 | 出售 Riello | 约 **4.40 亿美元**总现金对价，进一步退出锅炉/燃烧器非核心资产。[官方公告](https://www.carrier.com/us/en/news/carriercompletes-sale-of-riello-to-ariston-group/) |
+| 2026-07-23 | 收购 75F | 金额未披露；获得 cloud-native、无线传感、生成式/agentic AI、自动调试 BAS，计划接入 WebCTRL/Abound/Nlyte/QuantumLeap。[官方公告](https://www.carrier.com/us/en/news/carrieraccelerates-intelligent-building-strategy-with-acquisition-of-75f/) |
+| 2026-07-27 | 同意出售 NORESCO | 买方 OPTERRA/LS Power，价格未披露；2026 收入指引因此较此前少约 **2 亿美元**，进一步简化为设备+数字+服务平台。[官方公告](https://www.carrier.com/us/en/news/carrierannounces-agreement-to-sell-noresco-to-opterra-energy-services/) |
+
+**投资者画像：**多头把 CARR 视作能从数据中心冷却、商业 HVAC 份额、连接设备售后和欧洲热泵周期复苏同时获益的“质量成长工业股”；空头则看到 20 倍左右调整后 forward P/E 已计入相当增长、VCS 商誉和债务沉重、住宅/欧洲需求仍有周期性、2026 数据中心收入过度集中在下半年，以及 tariffs/产品组合已经压低 Q2 毛利和经营利润率。
+
+### 1.3 最新股价与估值快照
+
+| 指标 | 最新值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | **$62.20** | 2026-07-31 12:13 PT，盘中行情 | 当日区间 $60.80–62.74；非收盘价。 |
+| 市值 | **$51.2–52.0B** | 2026-07-31；不同数据商对稀释股数处理不同 | 即时行情源约 $52.04B；估值数据库约 $51.17B，用区间而非伪精确。 |
+| GAAP TTM P/E | **42.9–44.2x** | 2026-07-31；TTM EPS 约 $1.4–1.45 | 受处置、重组、并购摊销等影响，明显高于调整后口径。 |
+| Forward P/E（市场一致预期） | **19.98x** | 2026-07-31 [StockAnalysis](https://stockanalysis.com/stocks/carr/statistics/) | 数据商预测口径。 |
+| 2026 指引隐含调整后 P/E | **21.4x** | $62.20 / 调整后 EPS 指引 $2.90 | 与一致预期差别来自年份/稀释股数/调整口径。 |
+| P/S | **2.32x** | 2026-07-31，TTM | 对成熟工业股不低，需要利润率和增长兑现。 |
+| TTM 收入 | **$22.108B，-1.58% YoY** | 截至 2026Q2；[收入历史](https://stockanalysis.com/stocks/carr/revenue/) | 处置和住宅下行拖累；最新单季报告增长 3.89%、organic +3%。 |
+| TTM 毛利率 | **24.34%** | 截至 2026Q2；[财务数据](https://stockanalysis.com/stocks/carr/financials/) | 产品组合、关税与 input-cost timing 使 2026Q2 承压。 |
+| TTM 净利率 | **5.78%** | 截至 2026Q2 | 低于调整后经营能力，显示利息、摊销与一次性项目负担。 |
+| TTM FCF | **$1.928B** | 截至 2026Q2 | 对中位市值的 FCF yield 约 **3.7%**。 |
+
+### 1.4 资产负债表健康度
+
+| 2026-06-30 项目 | 数值 | 计算/风险 |
+|---|---:|---|
+| 现金 | **$1.344B** | 加约 $2.5B 未用 revolver，流动性来源约 $3.84B。 |
+| 应收账款 / 存货 | **$3.246B / $2.759B** | 较 2025 年末分别约增 **23% / 11%**；既反映 H2 交付准备，也增加回款和库存执行风险。 |
+| 流动资产 / 流动负债 | **$9.414B / $9.231B** | 营运资本仅约 **$183M**；流动比率 **1.02x**。 |
+| 速动比率 | **约 0.50x** | 仅现金+应收/流动负债；不宽裕。 |
+| 短债 / 长债 | **$1.638B / $10.314B** | 总债务 **$11.952B**；其中约 $900M notes 于 2027-02 到期。 |
+| 净债务 | **$10.608B** | 净债务/2026 调整后经营利润指引约 **3.0x**；净债务/TTM FCF 约 **5.5x**。 |
+| 商誉 / 无形资产 | **$15.267B / $5.756B** | 合计占总资产 $37.372B 的 **56.3%**。VCS 整合和欧洲盈利若失速，会放大减值风险。 |
+| 股东权益 / 有形权益 | **$13.472B / 约 -$7.551B** | 账面权益为正，但扣商誉无形后为负。 |
+| 2026H1 OCF / capex / FCF | **$1.006B / $0.211B / $0.795B** | Q2 FCF $810M，弥补 Q1 季节性；全年 FCF 指引约 $2B。 |
+
+**判断：**短期不会因 2027 到期债务陷入流动性困境，且约 $2B 年 FCF 足以支持去杠杆、工厂投资和回购；但公司仍用约 **$1.5B**年度回购计划与扩产争夺现金，资产端又高度依赖并购商誉。若欧洲恢复延后、数据中心项目推迟或价格/关税传导失效，债务下降速度会慢于市场预期。资产负债表应定性为“**可控但不保守**”。
+
+## 2. 最新五次财报：收入、利润、订单、交期与 AI 暴露
+
+### 2.1 五季度集团与分部数字
+
+下表每个分部为“**收入 / organic 增速 / segment operating margin**”。收入单位亿美元；Q4 季节性、住宅预购/库存和处置会显著改变季度组合。
+
+| 财报季度 | 集团收入 / organic | 调整后经营利润率 / EPS | CSA | CSE | CSAME | CST | FCF |
+|---|---:|---:|---|---|---|---|---:|
+| **2026Q2（最新）** | **63.51 / +3%** | **17.2% / $0.86** | 33.72 / +4% / 24.4% | 13.24 / +3% / 7.2% | 9.17 / +4% / 11.8% | 7.38 / 0% / 16.0% | **$810M** |
+| **2026Q1** | **53.41 / -1%** | **11.1% / $0.57** | 25.01 / -3% / 14.9% | 12.93 / 0% / 6.9% | 8.34 / -1% / 9.7% | 7.13 / +5% / 14.2% | **-$15M** |
+| **2025Q4** | **48.37 / -9%** | **9.4% / $0.34** | 19.35 / -17% / 8.7% | 13.32 / -2% / 9.0% | 7.98 / -9% / 11.9% | 7.72 / +10% / 14.5% | **$909M** |
+| **2025Q3** | **55.79 / -4%** | **14.8% / $0.67** | 27.11 / -8% / 19.7% | 12.90 / -3% / 9.3% | 8.33 / -2% / 11.6% | 7.45 / +6% / 15.4% | **$224M** |
+| **2025Q2** | **61.13 / +6%** | **19.1% / $0.92** | 32.52 / +14% / 27.0% | 12.53 / 0% / 7.9% | 8.82 / -4% / 15.3% | 7.26 / -1% / 17.6% | **$568M** |
+
+来源：[2026Q2](https://ir.carrier.com/news/news-details/2026/Carrier-Reports-Second-Quarter-2026-Results/default.aspx)、[2026Q1](https://ir.carrier.com/news/news-details/2026/Carrier-Reports-First-Quarter-2026-Results/default.aspx)、[2025Q4](https://ir.carrier.com/news/news-details/2026/Carrier-Reports-2025-Results-and-Announces-2026-Outlook/default.aspx)、[2025Q3](https://ir.carrier.com/news/news-details/2025/Carrier-Reports-Third-Quarter-2025-Results/default.aspx)、[2025Q2](https://ir.carrier.com/news/news-details/2025/Carrier-Reports-Strong-Second-Quarter-2025-Results/default.aspx)。
+
+### 2.2 五季度业务增速、订单、backlog、交期与取消率
+
+| 财报季度 | 各业务关键增速 | Orders / bookings / backlog | 交付窗口与 lead time | 取消率 | AI 数据中心收入与占集团比重 |
+|---|---|---|---|---|---|
+| **2026Q2** | CSA：residential +9%、light commercial +10%、commercial -8%（交付时点）；CSE RLC 高个位数、commercial 中个位数下降；欧洲 heat pump +20%；CSAME 印度/东南亚/澳洲 >20%、中东 +35%、aftermarket +12%；CST container +40%、truck/trailer 低双位数降 | 剔除 NORESCO/Riello：公司订单 **~+40%**、commercial HVAC **~+65%**、DC **>+300%**；总 backlog **>$8B，+~40% YoY、+~20% QoQ**；反推 DC backlog **>$2.24B**，LTA 预期量另计 | 2026 H2 约 $1.5B DC **fully booked**，客户总体要求提前而非延后；Q4 > Q3，Q4 年化显著 >$2.5B。公司不披露周数；产业读数相当于 **约 32–60 周**订单可见度 | **未披露**。本文基准只设 5%–8%“取消/延期/范围变化折扣”，不是已发生取消率 | H1 披露约 $0.5B；据交付节奏反推 Q2 **~$0.22B（$0.20–0.23B）/ ~3.5%** |
+| **2026Q1** | CSA residential -12%、LC +9%、commercial +1%；CSE RLC 低个位数增、commercial 中个位数降；CST container +38%、truck/trailer 高个位数降 | 公司 **+11%**、commercial HVAC **+35%**、DC **>+500%**；backlog 已完全覆盖当时 **$1.5B** DC 年指引并开始订 2027 | 仍可接部分 H2 单，但主要转向 2027；模型 **26–52 周** | 未披露；无公开“大规模撤单”证据 | 反推 **~$0.28B（$0.27–0.30B）/ ~5.2%** |
+| **2025Q4** | CSA commercial 双位数增、residential -38%、LC -20%；CSE commercial 中个位数增、RLC 中个位数降；CST container 近 +50%、T&T 持平 | 公司订单 **+16%**、commercial HVAC **>+45%**、CSA commercial **+80%**、applied >3 倍、CSA DC **>5 倍**；最大 hyperscaler 订单在 Q4 入账 | 2026 DC 指引 $1.5B，backlog 形成全年较强覆盖；模型 **26–52 周** | 未披露 | 反推 **~$0.31B（$0.28–0.33B）/ ~6.4%** |
+| **2025Q3** | CSA commercial +30%、residential -30%、LC -4%；CSE -3%；CST container +50%、T&T 中个位数降；DC sales **+250%**，applied +60% | 集团订单高个位数降，主要由 CSA 住宅高基数；剔除该项低个位数增。DC 当季订单因项目时点下降，但 10 月取得史上最大 hyperscaler 订单；面向下一年交付的 DC backlog **略高于 $0.7B**、年末目标 $0.9B | 订单已跨入 2026，模型 **24–48 周** | 未披露 | 反推 **~$0.27B（$0.25–0.30B）/ ~4.8%** |
+| **2025Q2** | CSA commercial（剔 NORESCO）+45%、residential >+10%；company aftermarket +13%；CST 相对平淡；Americas DC sales **>+300%** | 总订单高双位数降，因北美住宅订单 -60% 对比上年 >+100%；剔除 CSA residential 后公司中个位数增；Americas commercial 高双位数、LC >+20%；取得一个**未具名中东 DC $45M**订单，2026+ backlog 建立 | 2026 交付订单已出现；新增 Charlotte/北美产能，当时公司称供给充足。模型 **20–40 周** | 未披露 | 反推 **~$0.22B（$0.20–0.25B）/ ~3.6%** |
+
+**为什么季度 AI 数字只能估：**公司只确认 2025 全年约 $1B、2026H1 约 $0.5B、2026 全年约 $2B，未发布季度拆分。上表按已知年/H1锚点、季度 DC sales 增速和交付节奏校准；不可拿来与管理层逐季对账。Carrier 也不报告 B2B 或标准化 bookings，只报告 orders/backlog；把“订单增长”直接当收入增长会忽略交期、客户现场 readiness、范围变化和产能爬坡。
+
+### 2.3 五季趋势判断
+
+- **增长质量在改善，但利润率尚未同步。** Q2 organic 已从 Q1 -1% 转为 +3%，service sales 同比从 $636M 增至 **$717M（+12.7%）**；然而 adjusted margin 从 19.1% 降至 17.2%，主要是 tariff/input-cost timing 和 mix，而非需求弱。
+- **商业 HVAC 与住宅正在分化。** 数据中心订单数倍增长，住宅在 2025H2 去库存后 2026Q2回升；这使 Q2 CSA revenue +4% 但 commercial 当季因交付时点 -8%，说明 orders、sales、margin 的季度相关性很低。
+- **CSE 是最大修复空间也是最大执行风险。** Q2 热泵 +20%，但 CSE margin 仅 7.2%，因为商业下滑、销售投入和低吸收；长期目标是 mid-teens，但要靠销量、价格纪律、成本削减及 Viessmann 新产品共同完成。
+- **CST 的 container 周期强，而 truck/trailer 弱。** container Q1/Q2 分别 +38%/+40%，但集团 AI 估值不应把冷链增长误算成数据中心增长。
+
+## 3. 2026 最新指引、收入结构与产品交叉验证
+
+### 3.1 2026Q2 更新后的全年指引
+
+| 项目 | 2026 最新指引 | 与此前/含义 |
+|---|---:|---|
+| 收入 | **约 $23B** | organic 为 mid-to-high single digit；NORESCO 相对旧指引约 -$0.2B。 |
+| 调整后经营利润 | **约 $3.5B** | 隐含约 15.2% adjusted operating margin；包括新美国厂前置成本。 |
+| 调整后 EPS | **约 $2.90** | NORESCO 出售+新厂合计约 -$0.05 EPS；仍较原指引提高。 |
+| FCF / capex | **约 $2.0B / 约 $0.6B** | capex 从约 $0.5B 上调，主要支持数据中心产能。 |
+| 回购 | **约 $1.5B** | 与去杠杆/扩产并行，降低财务缓冲。 |
+| 数据中心收入 | **约 $2.0B** | 2025 $1B 后再次翻倍；约占集团收入 **8.7%**。H2 约 $1.5B。 |
+| Q3 | 收入略低于 $6B；organic **~+10%**；margin **~16.5%**；EPS **~$0.75** | 数据中心放量开始，但 Q4 更高。 |
+
+### 3.2 最新可核实的收入占比
+
+公司只按地理/业务 segment 披露收入，不披露 residential、commercial、data center、heat pump 或具体产品美元收入。最新季度可核实份额如下：
+
+| 2026Q2 segment | 收入 | 占集团 | organic 增速 | 利润率 | 核心驱动 |
+|---|---:|---:|---:|---:|---|
+| CSA | $3.372B | **53.1%** | +4% | 24.4% | 北美 residential/LC 回升；DC 订单强、收入因交付时点暂弱。 |
+| CSE | $1.324B | **20.8%** | +3% | 7.2% | heat pump +20%，boiler 高个位数降。 |
+| CSAME | $0.917B | **14.4%** | +4% | 11.8% | 印度、东南亚、澳洲、中东高增；中国住宅弱。 |
+| CST | $0.738B | **11.6%** | 0% | 16.0% | container +40% 被 truck/trailer 下滑抵消。 |
+
+作为结构锚点，2025 全年 $21.747B 中 CSA **$10.470B/48.1%**、CSE **$5.044B/23.2%**、CSAME **$3.339B/15.4%**、CST **$2.894B/13.3%**；equipment 约 **72%**、parts/service 约 **28%**，国际收入约 **52%**。[2025 10-K](https://www.sec.gov/Archives/edgar/data/1783180/000178318026000008/carr-20251231.htm)
+
+### 3.3 重点产品、型号、规模与利润率交叉验证
+
+| 业务/产品 | 主要型号与能力 | 2026E 收入贡献（本文） | 销售增速 | 毛利率/经营利润率估算 | 交叉验证与置信度 |
+|---|---|---:|---:|---|---|
+| **AI/DC 冷水机+设施热管理硬件** | AquaEdge **19MV4 2.1–3.3MW** 水冷磁悬浮离心机；19DV **1.05–3.8MW**；AquaForce 30XWV-ZE 水冷螺杆最高约 **2.1MW**；北美 30CF/30XV 风冷；39DC **150/250/300/500kW**；AiroVision 39CV **20–250kW** | **$1.72B 中值（$1.65–1.78B）**，占 DC 约 86% | 约 **+90%–110%** | chiller/airside 混合 GM **27%–38%**；OP margin **16%–22%** | 年 DC $2B、硬件仍为绝对主体；DC 对 commercial HVAC margin accretive。产品官网、产能和订单三方一致；**中高置信**。[19MV4](https://www.carrier.com/commercial/en/eu/products/air-conditioning/water-cooled-chillers/19mv/)；[39DC](https://www.carrier.com/us/en/commercial/airside/39dc/technical-specifications/)；[39CV](https://www.carrier.com/commercial/en/eu/news/news-article/carrier-launches-airovision-39cv-to-deliver-precision-cooling-for-medium-to-large-scale-data-centres.html) |
+| **自研 CDU/单相液冷** | 已售 **1.3MW**；2026Q3 推 **2.5–2.6MW**；年末目标 **5MW**。模块化换热器、约 2°C approach（公司称典型约 4°C） | **$0.06B 中值（$0.04–0.08B）** | 低基数 **>+200%** | 早期 GM **26%–35%**，量产后可向 32%–40%靠拢 | 公司称 1.3MW 已获若干 colo 销售、与 hyperscaler 洽谈；无独立收入披露，**中低置信**。[CDU 官方发布](https://www.carrier.com/commercial/en/us/news/news-article/new-carrier-coolant-distribution-unit-expands-data-center-solutions.html) |
+| **DCIM/BMS/AI 控制+DC 售后** | Nlyte Asset/Energy Optimizer、WebCTRL、Abound、IDCM、75F 无线/agentic AI/autocommissioning、BluEdge tiers | **$0.22B 中值（$0.14–0.31B）**；与设备合同存在打包分配误差 | **+30%–50%** | software GM **65%–85%**；service **40%–60%**；混合 **45%–65%** | Nlyte 历史客户留存 98%；Abound 已连接 >275,000 台设备；75F 交易金额/收入未披露。DC 售后随 installed base 滞后，**中低置信**。[Nlyte](https://www.carrier.com/carrier/en/worldwide/news/news-article/carrier-announces-agreement-to-acquire-nlyte-software-to-strengthen-and-expand-data-center-offerings.html)；[Abound](https://abound.carrier.com/en/worldwide/services/abound-insights/) |
+| **ZutaCore 两相直冷期权** | HyperCool 水less、closed-loop、two-phase direct-to-chip；Carrier 负责系统级整合 | Carrier 直接并表贡献**接近零或未披露**；不计入上表核心桥接 | 商业化早期，潜在高增 | 无可靠 Carrier 产品毛利；合作/少数股权收益不能套用设备 GM | 2025 首投、2026 加码，证明方向性；客户/认证/订单金额均未披露，**低置信、战略期权**。 |
+| **欧洲热泵/Vitocal** | Viessmann Vitocal 系列；2026 秋推出更低产品+安装成本的新 Vitocal 200 平台/变体，细分型号未在 IR 明确 | **$1.4–1.8B** | Q2 **+20%**；2026E 约 +10%–20% | 产品 GM **25%–35%**；CSE segment OP margin 仅 7.2% | 管理层称新品 margin 不低于既有 Vitocal；波兰等 price-sensitive 市场扩 TAM。规模由 CSE/RLC mix 反推，**中低置信**。[2026 Wolfe 会议](https://s205.q4cdn.com/164393362/files/doc_events/2026/May/19/2026-05-19-CARR-Wolfe-Research-Global-Transportation-Industrials-Conference-CORRECTED-TRANSCRIPT.pdf) |
+| **Container refrigeration + Lynx** | PrimeLINE/NaturaLINE 等冷藏箱机组；Lynx Fleet 混合车队 IoT、GPS、远控、预测维护和月费订阅 | **$1.2–1.5B**；Lynx 单独收入未披露且很小 | container Q1 +38%、Q2 +40%；Lynx 连接量稳增 | hardware GM **26%–34%**；CST OP margin 16%；Lynx software **60%–80%**估算 | 2025 年末约 **110k** connected containers、全球前十船公司中 **6 家**；非 AI 但高增、现金质量好，**中等置信**。[Lynx](https://www.carrier.com/container-refrigeration/en/worldwide/products/options/lynx-fleet/) |
+| **全公司 aftermarket（横向层，不能与上列相加）** | 零件、改造、远程监控、Elite uptime、技术员和长期服务 | 2025 约 **$6.09B**（28%）；2026E **$6.4–6.7B** | H1 高个位数，全年目标双位数；连续第六年双位数目标 | GM **40%–60%** | CSA 新设备 service attachment 接近 60%，connected chillers 三年由 17k 升至 >70k；高复杂 chiller 服务覆盖率约 70%–80%。**中高置信**。 |
+
+**$2B 数据中心收入桥接：**$1.72B 冷水机/空气侧硬件 + $0.06B CDU + $0.22B 控制/软件/服务 = **$2.00B**。这是用于避免重复计算的中值模型；真实合同常把设备、调试和控制打包，公司不会按该方式记账。
+
+### 3.4 最突出业务与容易被漏掉的小产品
+
+1. **最突出：大型 applied chiller + CRAH/AHU。** 这是 2026 收入增量主体，也是 $2.5B 当前产能、北美新厂和长期协议的直接对象。19MV4 采用两级磁悬浮离心压缩、低 GWP R1234ze、10%–100% load、最高 35°C 蒸发器/55°C 冷凝器水温；官网列 COP 6.75、IPLV 11.4、restart 约 180 秒，某些 brochure 配置写 <150 秒，应按项目规格书而非宣传页验收。
+2. **最有凸性的小业务：CDU。** 收入基数可能仅数千万美元，但从 1.3MW 到 2.6MW、5MW 可覆盖 GB300/Rubin 多机柜或 row-level 负载；它同时提高 Carrier 在冷水机之外的 content/MW，并把客户接口从设施团队推进至 IT/ODM thermal team。
+3. **最可能被低估：控制、数字孪生、自动调试和售后。** 75F 本身短期财务不重要，但其 wireless commissioning/agentic AI 若与 Nlyte+WebCTRL 打通，可以缩短现场调试瓶颈并形成 recurring revenue。管理层称数据中心 aftermarket 生命周期收入通常可达 OEM 初始收入的 **5–10 倍**，且偏向区间高端；这不是一年收入，而是多年生命周期池。
+4. **技术期权：ZutaCore 两相直冷。** 若 Rubin 以后 100% 液冷与更高 rack density 使单相水路受泵功/流量约束，两相可提高 heat flux；但 coolant、材料兼容、服务和 hyperscaler 标准化仍在验证，当前不应给高收入估值。
+5. **非 AI 高增：欧洲热泵和 container。** 两者能分散 AI capex 风险，但对 AI 技术栈重要性低；热泵利润恢复依赖欧洲补贴/天然气价格/安装渠道，container 则受船公司设备周期影响。
+
+### 3.5 明确跳过或降权的产品/业务
+
+| 跳过/降权项 | 原因 |
+|---|---|
+| 北美住宅 split/package HVAC | Q2 +9% 是库存与周期修复，非 AI、结构增速较低；只保留其对 CSA mix/margin 的影响。 |
+| 普通 light-commercial rooftop/VRF | Q2 +10% 但 AI 相关性有限；双燃料 rooftop 等新品不影响核心 AI 估值。 |
+| 传统 boiler/Riello | 欧洲 boiler 高个位数下降，Riello 已于 2026-07-01 出售。 |
+| NORESCO 能效工程 | 已签出售协议，且 2026 指引已反映约 $0.2B 收入减少。 |
+| 中国住宅 HVAC | 需求持续弱，非当前增长支柱。 |
+| Truck & Trailer refrigeration | 2026H1 下降；只保留 Lynx 平台的数字化可复用价值。 |
+| 已售消防安防、工业消防、商业制冷 | 不再是持续经营的战略入口，不能拿历史收入支撑当前估值。 |
+
+## 4. 当前高增长/关键产品：收入贡献、AI 重要性、供需与定价权
+
+评分均为 **1–5**，5 代表对 AI 栈最关键、时间最紧、供给最紧、垄断/定价力最强。“垄断力”衡量 Carrier 自身，不是行业集中度；“供需紧张”越高越供不应求。
+
+| 产品/业务 | 2026E 收入贡献 | 当前增速 | AI 栈重要性 | 时间紧急性 | 供需紧张 | Carrier 垄断力 | 溢价能力 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| DC 冷水机+CRAH/AHU | **$1.65–1.78B** | **+90%–110%** | **5.0** | **5.0** | **4.0** | **2.0** | **4.0** | 芯片可运行但园区无法排热就不能上线；长交期、客户规格化和调试形成溢价，但 Trane/JCI/Daikin/Vertiv 等可替代。 |
+| Carrier CDU 1.3/2.6/5MW | **$0.04–0.08B** | **>+200%**低基数 | **5.0** | **5.0** | **4.0** | **2.0** | **3.5** | Rubin/高密机柜的必要接口；Carrier 进入较晚，必须用系统打包而非单机垄断获胜。 |
+| DCIM/BMS/75F/Abound + DC service | **$0.14–0.31B** | **+30%–50%** | **4.0** | **4.0** | **3.0** | **2.5** | **4.0** | 不是上电硬门槛，但调试/稳定运行和 PUE 的软件层；数据黏性和 SLA 支撑高毛利。 |
+| ZutaCore two-phase | Carrier 直接收入**未披露/接近零** | 商业化早期 | **4.5**（远期） | **3.0** | **3.5** | **1.0** | **3.0** | 技术方向有潜力，但 Carrier 只通过投资/合作占位，不能把 ZutaCore 全部销售算给 Carrier。 |
+| 欧洲 heat pump | **$1.4–1.8B** | **+10%–20%**；Q2 +20% | **1.0** | **3.0**（对 CSE） | **2.0** | **2.0** | **2.5** | 对 AI 不关键，但对 VCS 回报和 CSE margin 修复关键；安装商渠道比硬件专利更重要。 |
+| Container refrigeration + Lynx | **$1.2–1.5B** | hardware H1 **+~40%** | **1.0** | **3.0** | **3.0** | **2.5** | **3.0** | 设备周期强，Lynx 通过 fleet data/订阅提升黏性；主要对手 Thermo King。 |
+| 全公司 aftermarket（重叠层） | **$6.4–6.7B** | **+8%–12%** | DC 部分 **4.0** | **4.0** | 技术员 **3.5** | **3.0** | **4.5** | 已安装机组、授权备件、软件和 uptime 形成最强定价力；该收入与上列产品交叉，不能相加。 |
+
+**真正的稀缺项排序：**客户现场电力/水系统 readiness 与跨域调试工程师 > 大型冷水机/磁悬浮压缩机及换热器交付槽位 > MW 级 CDU、泵/VFD/快速接头与兼容验证 > 标准 CRAH/AHU 箱体。Carrier 对前两项有较强项目控制，但对电网、发电机、变压器和服务器侧冷板没有控制权。
+
+## 5. 一年后收入与竞争力三情景
+
+### 5.1 情景定义
+
+- **基准：**2026 已订交付基本完成；firm backlog 施加 6%取消/延期/范围变化 haircut；新美国厂 2027Q1 末投产、正常 2–3 季爬坡；AI capex 高增但客户双供。
+- **乐观：**haircut 3%；客户持续要求提前，LTA 转订单快；新厂/印度扩产按时、CDU 2.6MW 和 5MW 顺利通过客户 qualification，Carrier 份额向 14%–16%靠拢。
+- **极度乐观：**haircut 1%；订单强度接近 2026Q2、关键物料和调试无重大瓶颈；新线提前达到较高良率，Carrier 份额走向 17%–20%。这不是最可能情景，而是供需极紧时的上限。
+
+预测窗口为 **2027-08-01 前后未来 12 个月收入能力/年化贡献**，基准为 2026E。产品数字彼此尽量互斥；aftermarket 为重叠横向层，另列但不加总。
+
+### 5.2 每项业务的一年后收入预测
+
+| 产品/业务 | 2026E 中值 | 基准：收入 / 增速 | 乐观：收入 / 增速 | 极度乐观：收入 / 增速 | 主要 swing factor |
+|---|---:|---:|---:|---:|---|
+| DC 冷水机+CRAH/AHU | **$1.72B** | **$2.30B / +34%** | **$2.80B / +63%** | **$3.35B / +95%** | 新厂爬坡、压缩机/换热器/VFD、客户现场取货和 Carrier share。 |
+| CDU 1.3/2.6/5MW | **$0.06B** | **$0.18B / +200%** | **$0.32B / +433%** | **$0.48B / +700%** | 2.6/5MW qualification、hyperscaler design-in、是否与 chiller 打包。 |
+| DCIM/BMS/75F + DC service | **$0.22B** | **$0.32B / +45%** | **$0.38B / +73%** | **$0.47B / +114%** | 75F 集成、Nlyte/WebCTRL attach、connected chiller 和服务技术员。 |
+| **DC 合计** | **$2.00B** | **$2.80B / +40%** | **$3.50B / +75%** | **$4.30B / +115%** | 由 demand 与实际 invoice capacity 较低者决定。 |
+| 欧洲 heat pump | **$1.60B** | **$1.80B / +13%** | **$2.10B / +31%** | **$2.50B / +56%** | Vitocal 200 price point、安装成本、德国/波兰需求、补贴与 CSE 渠道。 |
+| Container refrigeration + Lynx | **$1.35B** | **$1.45B / +7%** | **$1.70B / +26%** | **$2.00B / +48%** | 船公司换机周期、产线、运价/贸易、Lynx attach。 |
+| 全公司 aftermarket（重叠） | **$6.50B** | **$7.20B / +11%** | **$7.60B / +17%** | **$8.10B / +25%** | service attachment、改造/升级、零件可得性和数字订阅。 |
+
+### 5.3 每项业务的一年后“重要性/紧迫性/紧张度/垄断/溢价”
+
+单元格依次为 **AI重要性 / 时间紧迫 / 供需紧张 / Carrier垄断力 / 溢价力**。
+
+| 产品/业务 | 当前 | 基准一年后 | 乐观一年后 | 极度乐观一年后 | 解释 |
+|---|---|---|---|---|---|
+| DC 冷水机+CRAH/AHU | 5/5/4/2/4 | **5/5/4/2.5/4** | **5/5/4.5/2.5/4.5** | **5/5/5/3/5** | 份额和服务提高，但多供应商结构不会变成真正垄断。 |
+| CDU | 5/5/4/2/3.5 | **5/5/4/2.5/3.5** | **5/5/4.5/3/4** | **5/5/5/3/4.5** | 标准化削弱纯硬件垄断，系统 qualification/控制整合提高切换成本。 |
+| DCIM/BMS/AI controls/service | 4/4/3/2.5/4 | **4/4/3/3/4** | **4.5/4.5/3.5/3/4.5** | **4.5/5/4/3.5/5** | installed data、工作流和 SLA 的黏性随 fleet 扩大。 |
+| ZutaCore two-phase | 4.5/3/3.5/1/3 | **4.5/3.5/3.5/1/3** | **5/4/4/1.5/3.5** | **5/5/4.5/2/4** | 只有被平台/客户正式验证后才从技术期权变收入。 |
+| 欧洲 heat pump | 1/3/2/2/2.5 | **1/3/2/2/2.5** | **1/3.5/2.5/2.5/3** | **1/4/3/2.5/3** | 分值是 AI 重要性；对 CSE 财务的重要性约 4–5。 |
+| Container + Lynx | 1/3/3/2.5/3 | **1/3/2.5/2.5/3** | **1/3.5/3.5/3/3.5** | **1/4/4/3/4** | 硬件不是 AI，但 connected fleet 提升全生命周期锁定。 |
+
+## 6. BOM、真实内容量与价格传导链
+
+### 6.1 设施级冷水机与空气侧 BOM
+
+以下来自项目内相关行业研究的供应链模型，不是 Carrier 披露成本表。比例是销售成本/设备价值的大致构成，区间不要求上下限逐项机械相加到 100%，因为配置和安装范围不同。
+
+| 产品 | BOM/价值构成 | Carrier 关键控制点 | 易卡脖子项 |
+|---|---|---|---|
+| 约 3MW 磁悬浮冷水机 | 压缩机/电机/磁轴承/VSD **22%–28%**；换热器 **18%–24%**；风机 **7%–10%**（风冷配置）；控制/电气 **8%–11%**；框架/管路 **12%–16%**；制冷剂 **1%–3%**；装配/FAT **10%–14%**；物流/保修/启动 **6%–10%** | 压缩机/控制算法、系统设计、FAT、全球服务；新厂含压缩机垂直整合 | 铜/铝换热器、磁悬浮压缩机、VFD/功率器件、EC fan、项目型电控和调试槽位 |
+| 水冷离心机 | 压缩机/drive **22%–30%**；蒸发器/冷凝器 **26%–34%**；控制/VFD **8%–13%**；框架/管路/制冷剂 **10%–15%**；装配/FAT **10%–15%**；物流/commissioning/warranty **8%–13%** | 19MV4/19DV 系统效率、部分压缩机技术、客户点设计 | 大型壳管换热器、冷却塔/泵配套、现场水质和控制联调 |
+| 39DC/39CV CRAH | coil/HX **25%–34%**；EC fans/VFD **20%–29%**；casing/filter **12%–18%**；valves/controls **8%–14%**；装配/FAT **10%–15%**；物流/保修 **7%–12%** | 150–500kW/20–250kW 模块、native BMS、工厂 performance test | EC fan、coil、EPIV/control、客户 N+1/ATS/THDi 规格 |
+
+### 6.2 CDU BOM 与 Carrier 不拥有的服务器侧 BOM
+
+| 层级 | 典型构成 | 价值/说明 |
+|---|---|---|
+| Carrier CDU 本体 | plate HX **20%–30%**；pumps/VFD **15%–25%**；valves/manifold/filter **10%–15%**；PLC/sensors/electrical **10%–15%**；frame/piping **10%–15%**；assembly/FAT **10%–15%**；startup/warranty/logistics **8%–12%** | 本文估 CDU 厂价约 **$0.10–0.25M/MW**；1.3MW 约 $0.18–0.35M、2.6MW 约 $0.30–0.55M、5MW 约 $0.50–0.90M。均非公开报价。 |
+| 100–150kW rack 的完整 D2C 交付 | cold plates/server loop **28%–38%**；CDU 分摊 **18%–28%**；manifold/hoses/connectors **12%–18%**；pumps/HX/filter **8%–14%**；sensors/control **4%–8%**；coolant/flushing **2%–5%**；install/commission/SLA **10%–18%** | 完整液冷交付约 **$150k–400k/rack**。Carrier 通常只抓 CDU、部分 controls 和 facility side，不拥有 cold plate/服务器 loop 的全部收入。 |
+| Rubin 187–227kW rack | 同上，但需 100% liquid cooling、45°C warm-water-compatible loop | 行业模型完整 rack cooling **$230k–600k/rack**；设施 primary-side 增量约 **$1.2–2.5M/MW IT**。 |
+
+### 6.3 每 MW、每 rack、每 GPU、每 optical port 的真实内容量
+
+“每 GPU 内容量”只是把设施设备按热负载分摊，不代表 Carrier 有零件装进 GPU。实际合同按机组、MW、site 或 service scope 计价。
+
+| 单位 | 冷水机/空气侧/控制的 Carrier 可争取内容量 | 若再赢得 CDU | 计算与边界 |
+|---|---:|---:|---|
+| **每 1MW IT** | **$0.70–1.50M/MW** | 另加约 **$0.10–0.25M/MW** | 冷水机单体约 $0.60–1.20M/MW，airside/control/service-startup 再加约 $0.10–0.30M/MW；完整 facility primary side 行业交付 $1.2–2.5M/MW，Carrier 不一定拿到泵塔管路全部价值。 |
+| **GB300 NVL72，假设 142kW/rack** | **$99k–213k/rack** | **+$14k–36k/rack** | 142kW × 上述 $/kW；合计 $114k–249k/rack。 |
+| **每 GB300 GPU（72 GPU）** | **$1.38k–2.96k/GPU** | 合计约 **$1.58k–3.45k/GPU** | 设施分摊值，不是 GPU BOM。 |
+| **Rubin NVL72，187–227kW/rack** | **$131k–341k/rack** | **+$19k–57k/rack** | 2026 GTC 给出最高约 **227kW/rack**、72 GPU；范围覆盖不同配置。[NVIDIA GTC 2026 session](https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-s82227/) |
+| **每 Rubin GPU（72 GPU）** | **$1.82k–4.74k/GPU** | 合计约 **$2.08k–5.52k/GPU** | 高端取 227kW、高 $/MW；切勿把整厂冗余重复分配。 |
+| **每 optical port：直接 BOM** | **$0** | **$0** | Carrier 不向光模块/交换端口供货，真实直接内容量为零。 |
+| **每 optical port：设施热负荷示例** | **约 $219–938/port** | liquid network 可再分摊约 $31–156/port | 仅示例：假设 64-port network rack 总负载 20–40kW，按 $0.7–1.5M/MW 分摊。不同 switch/optics/冗余差异很大，不用于收入预测。 |
+
+**为什么液冷没有消灭冷水机：**Rubin 100% liquid cooling 指的是 IT 组件无风扇、液体直接带走芯片/网络热；热最终仍须经 CDU/设施水排到 dry cooler、cooling tower 或 chiller。45°C warm water 在合适气候可更多使用 dry cooling/free cooling，从而降低压缩机制冷内容量；高温、湿热、供水约束或严格 redundancy 场景仍需要 chiller。NVIDIA 2026 明确称 Rubin 采用 45°C、100% liquid-cooled 架构；OCP EMEA 同时讨论 1MW racks、CDU、cold plate、两相和互操作标准，说明主流将是**混合技术栈**而非单一路线。[NVIDIA 45°C 技术说明](https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/)；[2026 OCP EMEA agenda](https://www.opencompute.org/events/past-events/2026-ocp-emea-summit)
+
+### 6.4 价格传导链
+
+1. **原材料/组件 → Carrier：**铜、铝、钢、制冷剂、磁轴承/压缩机、VFD/EC fan、plate HX、泵阀、PLC 和传感器。通用金属可通过指数/季度采购传导，定制长交期件需要 capacity reservation、预付款或提前采购。
+2. **Carrier → hyperscaler/colo/EPC：**标准设备可 list-price/surcharge；项目型机组常在 6–18 个月前锁 scope，固定价合同会出现成本先涨、客户提价后生效的 margin lag。2026Q2 正是 price 尚未完全抵消 tariffs/input cost。
+3. **EPC/机电包 → 数据中心业主：**设备价之外加管路、泵塔、电气、N+1/2N、FAT/SAT、运费、现场启动和 liquid flushing；因此 facility-side $1.2–2.5M/MW 明显高于单台 chiller 厂价。
+4. **运行期 → service/software：**BluEdge、备件、远程监控、Nlyte/Abound/75F 以 site、asset、subscription 或 SLA 收费。这里与金属成本相关性低、按 uptime/节能价值定价，利润率和传导速度最好。
+
+## 7. 当前及一年后产能、供应链采纳与认证阶段
+
+### 7.1 当前产能与采纳状态
+
+| 产品/业务 | 当前美元产能能力 | 当前采纳证据 | 当前认证/qualification 阶段 | 置信度 |
+|---|---:|---|---|---|
+| DC 冷水机/airside/系统 | 公司披露现有设施支持约 **$2.5B/年 DC sales**；水冷产能四年约 4x、风冷约 3x | 多个 hyperscaler 与大型 colo 正建立 LTA；2026 全年 $2B 已在 backlog，H2 fully booked；管理层称客户总体要求加速 | 产品规格、FAT/现场 SAT 已商业交付；**客户 AVL、site approval 与认证名单不公开**。39DC 可选设计点 factory performance test | **高**（产能总额），客户细分中等 |
+| CDU | 公司未披露；本文按产线/低基数估 **$0.10–0.20B/年** | 1.3MW 在美国 Q2 有较好需求；已售给“a few colos”，与 hyperscalers 商谈 | 1.3MW **commercial/field-qualified at some customers**；2.5–2.6MW Q3 launch；5MW 年末前 commercial readiness。未见 OCP Accepted/Recognized 声明 | **中低** |
+| Nlyte/WebCTRL/Abound/75F + service | 软件无传统物理产能；实施/技术员约可支撑 **$0.3–0.5B/年 DC 数字+服务交付**的模型上限 | Nlyte 历史留存 98%；Abound >275k 连接设备；connected chillers >70k；CSA service attach 近 60% | 已商用；75F 于 2026-07 才收购，接入 QuantumLeap 属 **integration/early deployment**，非统一认证 | **低**（美元产能），采纳中高 |
+| ZutaCore two-phase | Carrier 自身无可确认并表产能 | 2025/2026 两次投资，公开合作；未披露 Carrier 客户订单 | **技术合作/客户验证期**；coolant、材料、server platform、FAT/SAT 需独立验证 | **低** |
+| 欧洲 heat pump | 未披露；按 VCS 规模估年销售承载 **$2.0–2.5B** | Q2 demand +20%；新品针对波兰等 price-sensitive 市场 | 既有 Vitocal 商业成熟；新低成本 Vitocal 200 为 **launch/渠道导入** | **低至中** |
+| Container + Lynx | 未披露；按当前出货估 **$1.5–1.8B/年** | Q1/Q2 container +38%/+40%；110k connected containers、top-10 shipping lines 中 6 家 | hardware 商业成熟；Lynx 多品牌 fleet/API 已商用 | **中** |
+
+重要边界：**“有 LTA”不等于每个型号都通过所有客户认证**；**“产品发布”也不等于量产出货**。大型冷水机 qualification 通常围绕性能曲线、谐波、制冷剂、安全、FAT/SAT、控制协议和维护方案；CDU 还要增加 coolant chemistry、leak detection、quick disconnect、pressure/flow transients、materials compatibility 和服务器平台热循环。公司没有公开 hyperscaler AVL，本文不凭空补客户名。
+
+### 7.2 一年后产能、采纳和认证三情景
+
+| 产品 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| **DC 冷水机/airside** | **$3.0–3.3B/年** invoice capacity；新厂 Q1末上线、正常爬坡；share 11%–13%；现有 LTA 客户重复下单，客户级 qualification 不变 | **$3.6–4.0B/年**；新厂顺利、India/NA 扩产协同；share 14%–16%；多个站点模板化复制 | **$4.5–5.0B/年**；高利用率/物料无瓶颈；share 17%–20%；成为更多客户 reference design/主供之一，但仍非单供垄断 |
+| **CDU** | **$0.25–0.35B/年**；2.6MW 商业成熟，5MW 进行 field qualification；2–3 个客户群/colo 重复使用 | **$0.45–0.60B/年**；5MW 在多个客户 production-qualified，与 chiller/controls 打包；hyperscaler design-in | **$0.70–1.00B/年**；1.3/2.6/5MW 共平台高利用；5MW 多站点参考设计、订单接近供给上限 |
+| **DC controls/service/75F** | 约 **$0.45–0.65B/年交付能力**；75F 与 WebCTRL/Nlyte 完成基础数据层整合；service attach 继续升 | **$0.65–0.85B**；自动调试/数字孪生进入大型 DC 项目，多年 SaaS/SLA attach 提高 | **$0.9–1.2B**；agentic operations 成为 QuantumLeap 标准选件，技术员/实施伙伴是主要瓶颈 |
+| **ZutaCore two-phase** | Carrier 仍以 partner option 为主；完成若干 pilot/平台验证 | 至少一个 hyperscaler/ODM 方案通过 production qualification，开始项目级收入分成/打包 | two-phase 成为超高 heat-flux 平台重要路线；多客户规模部署，但材料/fluids regulation 风险仍在 |
+| **欧洲 heat pump** | **$2.2–2.6B/年**销售能力；Vitocal 新品完成核心市场渠道导入 | **$2.6–3.0B**；安装商覆盖扩大、波兰/德国份额提升 | **$3.0–3.5B**；政策/能源价格共振、吸收率迅速恢复；产能而非需求成为局部约束 |
+| **Container + Lynx** | **$1.6–1.9B/年**；Lynx attach 稳升 | **$2.0–2.3B**；船公司 fleet refresh 与订阅加速 | **$2.4–2.8B**；换机超级周期、供应链顺畅；top shipping lines 进一步渗透 |
+
+**认证时间基准：**普通 CDU 设计变更至客户认可通常约 **6–12 个月**；全新 coolant/material compatibility 约 **12–24 个月**；服务器/ODM 平台 design-in 约 **6–18 个月**。因此极度乐观收入情景需要 2026 年已开始的 qualification，而不可能等到 2027 才启动。
+
+## 8. 基于 backlog、渠道订单与供给的未来一年增速
+
+### 8.1 可核实订单证据与缺失项
+
+| 日期/渠道 | 客户/项目 | 金额/订单 | 交付窗口 | 能说明什么 | 不能说明什么 |
+|---|---|---:|---|---|---|
+| 2025Q2 财报/电话会 | **未具名中东数据中心客户** | **$45M** | 2026+ backlog | Carrier 已进入大型区域项目，非仅北美需求 | 客户名、具体 chiller 数、margin、取消条款均未披露 |
+| 2025-10 / Q3 call | **未具名北美 hyperscaler** | “largest-ever” DC order，金额未披露 | 主要支持 2026 | 单一大客户能迅速拉高 backlog；后续 Q4 orders >5x | 无法检验集中度或双订购 |
+| 2026Q1 | 多客户 | DC orders **>+500%**；当时 $1.5B 年目标 fully covered | H2 2026，开始接 2027 | 需求跨年、不是短单 | 订单增长基数和绝对订单额不披露 |
+| 2026Q2 | hyperscalers + major colos | DC orders **>+300%**；总 backlog >$8B；反推 DC >$2.24B | H2 fully booked；2027+ | backlog 对 $2B 指引覆盖高；LTA pool 可跨多个 site 配置 | LTA forecast 未全部入 backlog，不能直接当 firm purchase order |
+| 2026-06 Wells Fargo | 客户匿名 | 水冷 4x/风冷 3x capacity；正在 solidify LTA | 2027–2030 | 资本开支得到客户共同规划，而非纯投机扩产 | 客户可在最终 PO/项目节点调整 location、mix、week |
+
+**没有可信公开客户名单。** 管理层刻意只称 hyperscaler、major colo、Middle East customer；业内论坛和产品发布没有提供可与 SEC/客户采购文件交叉验证的名称。本文不采用社交媒体“某云厂商就是某订单”的猜测。公开材料也没有实际 cancellation rate、delivery acceptance rate 或 deposits 数据。更重要的是，Carrier 在 Q2 release 的非 GAAP 定义中明确写明：orders 是客户的合同承诺，**取消时可能不受罚则约束**；因此订单和 backlog 必须施加延期/范围变化折扣，不能按 100% 现金化。[2026Q2 release，Orders 定义](https://ir.carrier.com/news/news-details/2026/Carrier-Reports-Second-Quarter-2026-Results/default.aspx)
+
+### 8.2 Backlog 桥接
+
+1. 总 backlog **>$8.0B**。
+2. 约 70% 为 commercial，得到 **>$5.6B**。
+3. commercial 中约 40% 为 DC，得到 **>$2.24B**数据中心 backlog。
+4. 2026H2 计划交付约 **$1.5B**；若全从该池消耗，仍留下 **>$0.74B**给 2027+，且不含 LTA 未下达量与 Q3/Q4 新订单。
+5. 当前 DC 年收入产能约 **$2.5B**，所以 2026 指引 $2.0B 的产能利用率约 **80%**；H2 短周期产能/物流利用率更高。
+
+这条桥接支持增长，但有三项折扣：
+
+- **scope/重复计算：**一份项目可同时包含设备、控制、启动，不能将 commercial backlog 与 DC 子集相加；
+- **timing：**现场电力、管路和 building completion 延后会把收入跨季，不一定取消订单；
+- **price/mix：**backlog 美元增长可能含价格和更大 MW，不等于 unit 增长，且高硬件 mix 初期可能稀释集团 margin。
+
+### 8.3 数据中心订单—产能—收入模型
+
+| 参数 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| 未来 12 月可服务需求（firm backlog + LTA 转单 + 新单，毛额） | $3.15B | $3.85B | $4.85B |
+| 取消/延期/scope haircut（模型，不是披露取消率） | **6%** | **3%** | **1%** |
+| haircut 后需求 | $2.96B | $3.73B | $4.80B |
+| 平均可用 invoice capacity | $3.0–3.3B | $3.6–4.0B | $4.5–5.0B |
+| 现场验收/交付窗口转化率 | **94%** | **94%** | **90%**（绝对量大、现场约束上升） |
+| **预测 DC 收入** | **$2.80B** | **$3.50B** | **$4.30B** |
+| **YoY 增速** | **+40%** | **+75%** | **+115%** |
+
+极度乐观不是把 >300% orders growth 直接外推；模型把收入压在 $4.3B，低于毛需求和理论产能上限，因为新厂 ramp、客户 site readiness 和 commissioning 必然制造摩擦。
+
+### 8.4 集团未来一年收入三情景
+
+以 2026 指引约 $23B 为锚。2027 将承受 Riello/NORESCO 的全年处置拖累约 $0.3–0.4B，同时受益于 DC、heat pump、aftermarket 和 commercial HVAC。
+
+| 桥接项目 | 基准增量 | 乐观增量 | 极度乐观增量 |
+|---|---:|---:|---:|
+| 数据中心（含硬件/CDU/controls/service） | +$0.80B | +$1.50B | +$2.30B |
+| Heat pump/CSE recovery | +$0.20–0.30B | +$0.50–0.60B | +$0.80–0.90B |
+| Container/Lynx | +$0.10B | +$0.30B | +$0.50–0.60B |
+| 非 DC commercial + aftermarket/price | +$0.7–0.9B | +$1.0–1.3B | +$1.4–1.8B |
+| Riello/NORESCO 全年处置与其他 | -$0.35B | -$0.35B | -$0.35B |
+| **未来 12 月集团收入** | **$24.5–25.0B** | **$26.0–26.7B** | **$27.8–28.8B** |
+| **相对 $23B 增速** | **+6%–9%** | **+13%–16%** | **+21%–25%** |
+
+集团极度乐观需要住宅/欧洲/运输也不拖累，概率远低于 DC 单项极度乐观。若仅 DC 达极度乐观而其他业务平淡，集团更可能落在乐观区间。
+
+### 8.5 需要持续监控的领先指标
+
+| 指标 | 偏多阈值 | 正常 | 红旗 |
+|---|---|---|---|
+| DC orders / commercial HVAC orders | 连续 >+50% / >+25% | +10%–25% | 转负且 backlog 环比下降 |
+| 总 backlog / DC backlog | 总额继续环比增；DC >$2.2B | 持平、按时转收入 | backlog 增但收入/现金不转化，或取消/延期被首次明确提及 |
+| 大型 chiller/CDU lead time | **>40 周**且价格稳定 | 20–40 周 | <16 周且客户要求推迟 |
+| H2/Q4 DC revenue | 2026Q4 年化 >$2.5B兑现 | 约达管理层节奏 | H2 <$1.5B 或 Q4 不高于 Q3 |
+| 新美国厂 | 2027Q1 末按时，上线即有 LTA 订单 | 延后一个季度 | 设备/许可/客户取货延后 >2 季 |
+| CDU qualification | 2.6MW Q3 出货、5MW 年末，新增 hyperscaler | colo 采用、hyperscaler pilot | 发布无量产、5MW 延至 2027H2 |
+| 服务 attach | CSA >60%，DC Elite/长期 SLA 增 | 保持 | 设备高增但服务 attach 降，说明客户自维或压价 |
+| 营运资本 | inventory/AR 随 H2 回落、FCF ~$2B | 季节性波动 | inventory/AR 继续快于收入、FCF 指引下调 |
+
+## 9. 竞争格局、主流技术、替代风险与切换成本
+
+### 9.1 竞争对手地图
+
+| 战场 | Carrier | 主要竞争对手 | Carrier 优势 | Carrier 劣势 |
+|---|---|---|---|---|
+| 大型 chiller / applied HVAC | 19MV4/19DV/30CF/30XV/AquaForce、全球工厂与服务 | **Trane Technologies**、**Johnson Controls/York**、Daikin、Mitsubishi Heavy、Mitsubishi Electric、Modine/Airedale、Munters、STULZ | 产品效率、磁悬浮、风水冷齐全、全球调试和 LTA；份额从较低基数提升 | JCI/Trane 在部分 applied/DC 客户历史份额更高；Carrier 当前约 10% 暗示仍需抢份额 |
+| CRAH/AHU/room cooling | 39DC、39CV、custom AHU | Vertiv、Schneider Electric、STULZ、Modine/Airedale、Munters、Delta、JCI/Silent-Aire | 与 chiller/control 一体投标，150–500kW 39DC、欧洲 20–250kW 39CV | 标准箱体差异化有限；风机/coil 供应商可复制 |
+| CDU/单相 liquid cooling | 1.3/2.6/5MW，自研 chip-to-chiller | Schneider/Motivair、Vertiv、CoolIT、Boyd、Delta、Eaton、nVent、STULZ、Trane/LiquidStack、Munters、JCI/Silent-Aire | MW 级路线、chiller/controls/service 打包，客户设施团队关系 | 进入晚；缺少公开 hyperscaler qualification、冷板/connector 组合和大规模 CDU收入证明 |
+| 两相/immersion | ZutaCore partnership | Accelsius、Submer、LiquidStack、GRC、Calyos 及 ODM 自研 | 提前占位，无水两相可降低流量/泵功 | 非全资控制；fluid regulation、材料可靠性、平台生态尚未定型 |
+| DCIM/BMS/AI optimization | Nlyte、WebCTRL、Abound、75F | Schneider EcoStruxure、JCI Metasys、Siemens、Honeywell、Vertiv、Trane/BrainBox AI、Daikin、Phaidra | equipment+controls+DCIM 数据闭环、75F auto-commissioning、全球服务 | 客户可选择 vendor-neutral software；云厂商常自建 orchestration，数据归属限制锁定 |
+| 欧洲 heat pump | Viessmann/Vitocal + Carrier/Toshiba 渠道 | Daikin、Bosch、Vaillant、NIBE、Mitsubishi Electric、Panasonic、LG、Samsung | Viessmann installer/brand、跨品牌渠道、产品与家庭能源整合 | 欧洲需求/补贴波动；CSE margin 低、锅炉向热泵转型蚕食既有利润 |
+| Container refrigeration/telematics | Carrier Transicold + Lynx | **Thermo King/Trane**为主，另有区域供应商 | 全球 service network、混合 fleet telematics、六家 top-10 shipping line | 船公司议价强、换机周期大、hardware 易受贸易/运价影响 |
+
+### 9.2 Carrier 技术是不是未来主流
+
+**冷水机+液冷混合架构是未来 3–5 年主流，单一技术不会通吃。** GB300 及 Rubin 把 rack 从约百 kW 推至 187–227kW，并向 45°C/100% liquid cooling 发展；但液体把热带出 chip 后仍需 facility loop 和 heat rejection。Carrier 同时押注水冷/风冷 chiller、CRAH、单相 CDU、两相 ZutaCore 和控制层，方向比只押传统房间空调更稳健。
+
+19MV4 等高温 chilled-water/mag-bearing 产品适合高负载、可靠性和效率场景；39DC/39CV 仍处理 residual air load。其弱点是气候适宜时 45°C warm water 可直连 dry cooler，减少 compressor hours；若 hyperscaler 采用 chillerless 设计，Carrier 的每 MW chiller content 会下降，但 CDU、dry-side integration、controls 和 service 仍可部分补回。
+
+**CDU 硬件会标准化，系统 qualification 和服务更值钱。** OCP 已把 CDU、cold plate、blind-mate quick connector、coolant/material compatibility 纳入开放规格；标准化会压低 generic CDU 毛利，却能扩大总市场。Carrier 若只卖“mini-chiller”会被 Delta/Motivair/Vertiv 等压价；若把 CDU 与 chiller、Nlyte/WebCTRL、FAT/SAT 和 uptime SLA 绑定，切换成本更高。
+
+**两相并非确定主流。** 它能在极高 heat flux 下减少液体流量且避免水进入服务器，但冷媒法规、材料相容、泄漏检测、维护工具、heat reuse 温度和客户标准尚未统一。Carrier 的小额投资保留上行而限制资本风险，是合理但尚未财务验证的策略。
+
+### 9.3 替代方案与关键风险
+
+| 风险/替代 | 触发方式 | 对 Carrier 影响 | 缓释因素 |
+|---|---|---|---|
+| Warm-water dry cooling / chillerless | Rubin 45°C，适宜气候直接 dry cooler/free cooling | chiller $/MW、运行小时和 service parts 下降 | 高温/湿热、N+1、极端天气仍需机械制冷；Carrier 可转 CDU/controls/airside/heat rejection |
+| Hyperscaler 自研/指定 ODM | 云厂商统一冷板、CDU、控制协议并双供 | 压低 CDU/软件定价，客户集中度高 | Carrier 的全球 field service、FAT/SAT、LTA 和 facility integration 难完全自建 |
+| 标准化与中国/亚洲供应 | OCP UQD/BMQC/CDU 标准成熟，通用硬件价格下降 | generic BOM 毛利下滑 | 安全可靠、全球认证、交付和 service 仍有溢价 |
+| 项目电力/许可延迟 | 变压器、发电、并网、施工晚于冷却设备 | backlog 跨季、inventory/AR 上升，H2 revenue miss | pooled multi-site LTA 可改 allocation；客户当前多要求提前 |
+| 产能扩张过快 | AI capex 2028 后减速、竞争同时扩产 | 新厂利用率低、价格竞争、折旧拖 margin | 生产线设计为可服务非 DC commercial applications；Carrier 当前份额较低，仍有 share runway |
+| Tariff/commodity lag | 铜铝钢、电控/压缩机先涨，合同后提价 | 2026Q2 已出现 margin 压力 | surcharge、price actions、垂直整合和 productivity |
+| CDU/两相 qualification 失败 | 泄漏、材料、pump reliability、客户拒绝 | 小业务收入不兑现，QuantumLeap 完整性受损 | 初始收入基数小，不影响既有 chiller 核心；可与 ZutaCore/生态合作 |
+| Viessmann goodwill/欧洲需求 | 补贴、气价、安装商库存和低吸收持续 | CSE margin 无法向 mid-teens、商誉减值 | Q2 heat pump +20%、新品降安装成本、G&A 已削减 |
+| 财务杠杆/资本配置 | 新厂+回购+并购同时占用 FCF | 去杠杆慢、利息和估值风险 | $2B FCF、$3.84B liquidity、可继续处置非核心资产 |
+
+### 9.4 客户切换成本
+
+| 阶段 | 切换成本 | 原因 |
+|---|---|---|
+| Greenfield 概念/初设 | **中低** | 客户可在 Trane/JCI/Carrier/Daikin/Vertiv 等间双供，EPC 可重做设备表。 |
+| 详细设计/PO 前 | **中等** | 冷量曲线、approach temperature、THDi、声学、制冷剂、空间、BMS points 和管路开始固化。 |
+| FAT/qualification 完成 | **高** | 更换需重新性能验证、控制联调、spares、技师训练、风险审批，可能延误数月。 |
+| 已运行+service/DCIM | **高至很高** | installed base、历史 telemetry、predictive model、备件、SLA 和现场知识形成经济锁定；但开放 BACnet/API 和 vendor-neutral Nlyte 也限制“硬锁死”。 |
+
+综合看，Carrier 的竞争优势不是不可替代 IP，而是**在时间最紧的项目中降低交付风险**。当客户最重视“按周上线 MW”时，它能得到溢价；当供给正常、标准化完成后，定价权会回落到效率、service attach 和全生命周期成本。
+
+## 10. 投资判断、催化剂与证伪条件
+
+### 10.1 基准判断
+
+Carrier 的数据中心业务已经从概念进入收入/订单/产能三重验证：$1B→$2B、orders 数倍增长、backlog >$2.24B 反推、现有 $2.5B capacity 和新厂并行。最值得付估值的是 applied chiller 的 share gain 加上未来售后，而不是当期只有数千万美元的 CDU 或未经披露的“AI 软件收入”。
+
+以 **$62.20**盘中股价看，市场用约 **20x forward consensus / 21.4x 2026 adjusted guide P/E**定价，已经不是传统低增长 HVAC 估值；要获得持续超额收益，需要 2027 数据中心收入至少接近本报告基准 **$2.8B**、CSE margin 修复、FCF 约 $2B 并且 net debt 下行。若仅达到 $2B 后迅速降速，而住宅/欧洲也不强，则 GAAP P/E 40x+ 的压缩风险大。
+
+### 10.2 未来 2–4 季催化剂
+
+- 2026Q3 约 +10% organic、2.5–2.6MW CDU launch 及 H2 DC 交付起量；
+- 2026Q4 DC 年化显著高于 $2.5B、5MW CDU 达到 commercial readiness；
+- 公布新美国厂最终选址、设备安装和 2027Q1 末投产进度；
+- hyperscaler/colo LTA 转成可见 backlog，且 backlog 增长不伴随 AR/inventory 恶化；
+- 75F 与 Nlyte/WebCTRL/Abound 形成首个可量化 data-center attach/订阅指标；
+- CSE heat pump 保持双位数、margin 从 7% 向 10%+修复；
+- connected chillers/service attachment 继续提升，数据中心 Elite SLA 成为 recurring revenue。
+
+### 10.3 证伪条件
+
+以下任意两项同时出现，应显著下调基准情景：
+
+1. 2026H2 DC 收入低于约 $1.5B，且公司明确提到客户 pushout/cancellation；
+2. 总 backlog 环比下降、commercial/DC orders 转负，或 $8B backlog 无法转 FCF；
+3. 新厂延至 2027H2 后，现有 $2.5B capacity 已满导致收入封顶；
+4. 2.6MW/5MW CDU 持续只“发布”不出货，未获 hyperscaler design-in；
+5. CSA margin 在价格措施生效后仍同比大降，说明 DC mix 并不 accretive 或 tariff 传导失败；
+6. CSE heat pump 增长转负、margin 仍停在 7%附近，触发 VCS 商誉担忧；
+7. inventory/AR 连续两个季度快于收入，FCF 指引从约 $2B 下调；
+8. Warm-water chillerless 设计占比快速超过行业基准，Carrier 又未用 CDU/controls/service 补足 content/MW。
+
+## 11. 调研范围、产业会议与主要来源
+
+### 11.1 本地行业资料（只使用允许目录）
+
+- [数据中心风冷、冷水机组与 HVAC 行业调研（2026-07-10）](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-07-10.md)：市场规模、chiller/CRAH BOM、$ / MW、lead-time 阈值、产品 margin、Carrier 型号和竞争格局。
+- [数据中心直液冷系统行业调研（2026-07-10）](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-07-10.md)：CDU 市场、rack cooling BOM、GB300/Rubin 密度、qualification 时间和供需情景。
+
+上述行业研究汇总/交叉验证了 2026 年 AHR Expo、Data Center World、DCD Connect、OCP EMEA、Datacloud Global、ASHRAE、NVIDIA GTC 等会议与技术资料。共同信号是：AI rack 走向 100–227kW 乃至 1MW 路线，液冷 attach 上升，但 residual air cooling、facility heat rejection、commissioning 和互操作标准仍是必要环节。
+
+### 11.2 公司、SEC 与产品一手来源
+
+- [Carrier 2026Q2 results，2026-07-28](https://ir.carrier.com/news/news-details/2026/Carrier-Reports-Second-Quarter-2026-Results/default.aspx)
+- [Carrier 2026Q1 results，2026-04-30](https://ir.carrier.com/news/news-details/2026/Carrier-Reports-First-Quarter-2026-Results/default.aspx)
+- [Carrier 2025Q4/全年 results，2026-02-05](https://ir.carrier.com/news/news-details/2026/Carrier-Reports-2025-Results-and-Announces-2026-Outlook/default.aspx)
+- [Carrier 2025Q3 results，2025-10-28](https://ir.carrier.com/news/news-details/2025/Carrier-Reports-Third-Quarter-2025-Results/default.aspx)
+- [Carrier 2025Q2 results，2025-07-29](https://ir.carrier.com/news/news-details/2025/Carrier-Reports-Strong-Second-Quarter-2025-Results/default.aspx)
+- [2026Q2 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1783180/000178318026000032/carr-20260630.htm)；[2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1783180/000178318026000008/carr-20251231.htm)
+- [2026-06-09 Wells Fargo Industrials Conference transcript](https://s205.q4cdn.com/164393362/files/doc_events/2026/Jun/09/2026-06-09-CARR-Wells-Fargo-Industrials-and-Materials-Conference-Corrected-Transcript.pdf)
+- [2026-03-18 J.P. Morgan Industrials Conference transcript](https://s205.q4cdn.com/164393362/files/doc_events/2026/Mar/18/2026-03-18-CARR-J-P-Morgan-Industrials-Conference-CORRECTED-TRANSCRIPT.pdf)
+- [Carrier data-center/QuantumLeap portfolio](https://www.carrier.com/us/en/commercial/data-centers/)；[19MV4](https://www.carrier.com/commercial/en/eu/products/air-conditioning/water-cooled-chillers/19mv/)；[39DC](https://www.carrier.com/us/en/commercial/airside/39dc/technical-specifications/)；[39CV](https://www.carrier.com/commercial/en/eu/news/news-article/carrier-launches-airovision-39cv-to-deliver-precision-cooling-for-medium-to-large-scale-data-centres.html)；[CDU](https://www.carrier.com/commercial/en/us/news/news-article/new-carrier-coolant-distribution-unit-expands-data-center-solutions.html)
+- [75F acquisition](https://www.carrier.com/us/en/news/carrieraccelerates-intelligent-building-strategy-with-acquisition-of-75f/)；[ZutaCore follow-on investment](https://www.carrier.com/us/en/news/carrierventures-expands-investment-in-zutacore-to-scale-liquid-cooling-for-ai-data-centers/)；[Nlyte](https://www.carrier.com/carrier/en/worldwide/news/news-article/carrier-announces-agreement-to-acquire-nlyte-software-to-strengthen-and-expand-data-center-offerings.html)
+
+### 11.3 独立技术/产业原始资料
+
+- [NVIDIA GTC Taipei 2026：Rubin 45°C、100% liquid cooling](https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/)
+- [NVIDIA GTC 2026 liquid cooling session：Rubin NVL72 最高约 227kW/rack](https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-s82227/)
+- [Open Compute Project 2026 EMEA Summit agenda](https://www.opencompute.org/events/past-events/2026-ocp-emea-summit)：1MW rack、cold plate、CDU、两相、互操作与 cooling environment。
+- [OCP Cooling Environments](https://www.opencompute.org/community/cooling-environments)：cold plate、CDU、immersion、door HX、heat reuse 标准工作流。
+- [OCP Open Data Center Specification 0.5.0，2026-02](https://www.opencompute.org/documents/open-data-center-spec-version-0-5-0-pdf)：CDU/sidecar 及 Project Deschutes 引用。
+
+### 11.4 数据限制
+
+- 行情与估值来自当日盘中数据/第三方数据库，收盘后会变化；Forward P/E 是预测而非公司披露。
+- 产品收入、产品 GM、CDU 价格/产能、客户份额和 quarterly DC revenue 均为估算；公司 segment accounting 无法直接复核。
+- backlog 不是不可取消的现金；LTA forecast 也不是 purchase order。本文用 haircut 显式处理，但无法替代合同条款。
+- 任何“每 GPU/每 rack/每 port”都是热负荷分摊；Carrier 对 GPU 和 optical port 的直接 BOM 均为零。
+- 本文刻意不把匿名 hyperscaler 猜成某一家，也不把公司/合作伙伴 TAM 宣传当成收入。

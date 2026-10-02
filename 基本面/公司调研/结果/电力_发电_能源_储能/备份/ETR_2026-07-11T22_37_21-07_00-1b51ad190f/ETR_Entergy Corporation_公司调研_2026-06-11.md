@@ -1,0 +1,310 @@
+# ETR Entergy Corporation 公司调研：AI 数据中心把南部公用事业重估为 time-to-power 资产
+
+信息截止日：2026-06-11。正式分类目录依据 `公司调研/公司索引.md`，ETR 归入 `电力_发电_能源_储能/`。本报告只使用 `行业调研/` 内相关产业资料与联网资料，没有读取或引用 `特征量化/`。
+
+## 0. 核心结论
+
+Entergy Corporation（NYSE: ETR）是美国南部受监管垂直一体化电力公用事业公司，服务 Arkansas、Louisiana、Mississippi、Texas 及 New Orleans，2025 年年报口径约 310 万电力客户，业务本质是发电、输电、配电和受监管零售售电。它不是 AI 芯片、服务器、光模块或电力设备供应商，AI 数据中心相关收入不是按 GPU 或光端口卖设备，而是通过三条链条进入利润表和资产负债表：第一，数据中心和工业负荷带来更多 kWh 和需求电费；第二，为大负荷建设燃气发电、输电、变电、储能和配套资产，形成可获得监管准许回报的 rate base；第三，长期 electric service agreement（ESA）、special rate contract、fuel pass-through、rider 和客户成本分担机制降低传统用户补贴风险。
+
+投资人眼中，ETR 过去是 Gulf South 区域高工业负荷、核电和燃气发电占比较高、股息型受监管 utility。2025 年至 2026 年，市场重新给它贴上“AI 数据中心电力供给瓶颈受益者”标签。核心变化是数据中心管线从普通 load growth 变成资本计划的主轴：公司在 2026Q1 将 2026-2029 四年资本计划提高到约 570 亿美元，其中新建发电约 270 亿美元，Meta Louisiana 项目推动公司从稳健 utility 转向高 capex、高 rate base、高监管执行风险的增长型 utility。
+
+投资判断的关键不是“ETR 有多少 AI 收入”，而是“ETR 能否把 7-12GW 数据中心管线转化为已签 ESA、获批 CCN/发电/输电项目、准时投运资产和不伤害信用评级的融资结构”。目前披露的直接 AI 数据中心收入占比仍很低，估计 2025 年和 2026Q1 确认收入占公司收入低个位数；但已签和推进中的负荷如果按 1GW 平均负荷、PUE 1.15-1.30、电价 55-85 美元/MWh 粗算，单 1GW IT 负荷可带来约 5.5-9.7 亿美元/年 gross electric revenue，5.2GW 级别供电框架完全投运后可以变成数十亿美元级年收入机会。利润贡献会明显低于收入，因为燃料和购电大量 pass-through，股东收益主要来自 rate base 和准许 ROE。
+
+## 1. 公司整体业务、定位与最近三年变化
+
+### 1.1 业务结构
+
+ETR 的主要资产和业务：
+
+| 模块 | 内容 | 收入/利润机制 | 对 AI 数据中心的相关性 |
+|---|---:|---|---|
+| 受监管零售电力 | 向 residential、commercial、industrial、government 用户售电 | 电费、需求费、燃料和购电成本调整、基本费率 | 最高。数据中心属于大工业/商业负荷，直接推高售电量和需求容量 |
+| 发电资产 | 核电、现代燃气、传统燃气/煤、可再生能源和储能 | 成本回收、准许回报、燃料 pass-through | 最高。Meta 等超大负荷要求新增 CCGT、储能、可再生和核电延寿/增容 |
+| 输电/变电/配电 | 500kV 输电、变电站、配电、grid hardening | rate base、rider、FERC/州监管回收 | 最高。AI 数据中心的第一瓶颈是 time-to-power 和并网 |
+| Parent & Other | 母公司融资、少量非公用事业权益和历史项目 | 利息、养老金、非经常项目 | 对 AI 低，主要影响融资成本和每股摊薄 |
+| 传统燃气 LDC | 历史上有 New Orleans / Louisiana gas distribution | 已处置或退出为主 | 低。近年战略转向聚焦电力 |
+
+### 1.2 投资人心中的 ETR
+
+2024 年以前，ETR 的典型投资叙事是“南部受监管 utility + 工业电力需求 + 核电/燃气基荷 + 分红”。2025 年以后，投资人叙事转为“数据中心电力紧缺下的 regulated growth utility”。这个变化带来三重重估：
+
+| 维度 | 过去 | 2025-2026 新叙事 |
+|---|---|---|
+| 增长来源 | 天气、工业电量、费率案、grid hardening | hyperscale data center、工业回流、天然气和输电大项目 |
+| 估值关注 | 股息率、准许 ROE、利率敏感性 | 7-12GW 管线转化率、资本计划执行、客户是否承担成本 |
+| 主要风险 | 飓风、监管滞后、利率、燃料成本 | 数据中心取消/延迟、监管反弹、ratepayer cost shift、信用评级和股权融资摊薄 |
+
+### 1.3 最近三年重大业务变动、转型和收购/处置
+
+1. 聚焦电力，退出非核心燃气分销。公司完成或推进 Louisiana / New Orleans gas LDC 相关资产处置，战略重心回到发电、输电、配电和大型电力客户。
+2. 数据中心 ESA 成为增长主轴。2025 年公司多次强调已经获得多项 electric service agreements，2025Q4/FY2025 新闻稿称公司继续与数据中心和传统工业客户签署重要电力服务协议。2026 年 Meta Louisiana 协议进一步把大负荷供电从“机会”变成资本计划。
+3. 资本计划跃迁。2025 年市场仍主要讨论约 400-430 亿美元级别资本计划；2026Q1 后，公司披露 2026-2029 四年资本计划约 570 亿美元，其中新 generation 约 270 亿美元，明显是 AI/data center load 触发。
+4. 监管资产化加速。APSC、LPSC、PUCT 对 Google special rate、Jefferson Power Station、West Bank 500kV、Cypress-Legend 500kV、Texas generation/transmission 等项目的审批，说明公司正把负荷需求转换为可进入 rate base 的实物资产。
+5. 资产负债表从传统 utility 杠杆转为“高 capex 增长杠杆”。2026Q1 总债务约 340.6 亿美元，现金约 35.7 亿美元，未来四年 570 亿美元资本支出要求持续债务、权益、forward equity 和客户预付/成本分担。
+
+### 1.4 产业链位置
+
+在 AI 基建栈中，ETR 位于“能源/电力交付层”，上游连接天然气、发电设备、输变电设备、EPC 和监管许可，下游连接 hyperscaler、data center developer、工业客户和州经济发展。它不拥有 GPU、server、networking 或 optical 模块的技术溢价，但控制服务区域内并网、输电容量、发电资源和正式电力服务合同。对 hyperscaler 来说，ETR 的价值不是 unit price，而是更快拿到可兑现的 MW。
+
+## 2. 估值、利润率和资产负债表快照
+
+市场数据采用 Yahoo Finance / yfinance 快照，时间为 2026-06-11 美国交易日。公司指引采用 Entergy 2026Q1 和 2025FY 官方公告口径。
+
+| 指标 | 最新值 | 日期/口径 | 评价 |
+|---|---:|---|---|
+| 股价 | 110.77 美元 | 2026-06-11，Yahoo/yfinance | 2024 拆股后口径 |
+| 市值 | 507.2 亿美元 | 2026-06-11 | 已明显反映 AI power scarcity 溢价 |
+| 企业价值 EV | 813.8 亿美元 | 2026-06-11 | 体现高债务 utility 结构 |
+| TTM 收入 | 132.9 亿美元 | 2026-06-11，TTM | Q1 收入同比约 +12% |
+| P/S | 3.82x | 2026-06-11，TTM | 对 regulated utility 偏高，市场押注 rate base 增长 |
+| Trailing PE | 28.3x | 2026-06-11 | 高于传统 utility 区间 |
+| Forward PE | 21.9x | 2026-06-11，Yahoo consensus | 若按公司 2026 adj EPS 指引中点 4.35 美元，则约 25.5x |
+| TTM 毛利率 | 47.0% | 2026-06-11，yfinance | utility 毛利率受燃料 pass-through 影响，不能与工业设备商横比 |
+| TTM operating margin | 18.6% | 2026-06-11 | Q3 季节性高，Q4/Q1 较低 |
+| TTM 净利率 | 13.4% | 2026-06-11 | 母公司利息和 Parent & Other 拉低净利 |
+| Revenue growth | +12.0% | 2026-06-11，TTM/YoY 口径 | 负荷、天气和费率共同驱动 |
+| 总债务 | 340.6 亿美元 | 2026Q1 balance sheet | 高杠杆，但符合大型 regulated utility 特征 |
+| 现金 | 35.7 亿美元 | 2026Q1 balance sheet | Q1 现金提升，仍不足以自筹大资本计划 |
+| Debt / equity | 192.9% | 2026Q1 | 杠杆高，未来融资和评级是核心约束 |
+| Book value / share | 37.89 美元 | 2026Q1 | P/B 约 2.92x |
+
+资产负债表评价：ETR 财务状况可以描述为“utility 模式下可承受，但不是低杠杆”。现金流和受监管资产支持债务融资，且大型数据中心 ESA 如果能做到客户全成本承担，可以降低 stranded cost 风险；但 570 亿美元四年资本计划对信用指标、股权融资和监管滞后提出更高要求。风险点包括利率上行、燃气价格、项目 delay、监管机构要求股东承担更多风险、以及 forward equity/增发带来的每股摊薄。
+
+## 3. 最近五次财报和订单/交期代理
+
+ETR 不披露制造业意义上的 bookings/backlog。这里用“已签 ESA、special rate contract、监管申请/批准、数据中心管线 GW、资本计划和设备锁定”做代理。季度收入和利润率采用 yfinance 标准化利润表；EPS、净利润和指引采用公司公告优先。AI 数据中心收入占比为研究估计，因公司未单独披露。
+
+| 财报期 | 披露/来源 | 收入与利润 | 指引/资本计划 | 订单、backlog、交期代理 | AI 数据中心收入占比判断 |
+|---|---|---:|---|---|---|
+| 2026Q1 | 2026-04-29，1Q26 earnings | 收入 31.88 亿美元，同比约 +12.0%；GAAP earnings 3.85 亿美元，EPS 0.83；adjusted earnings 3.99 亿美元，adj EPS 0.86；毛利率约 47.5%，经营利润率约 18.5%，净利率约 12.3% | 2026 adj EPS guide 4.25-4.45 美元；2026-2029 capex 提升至约 570 亿美元；公司展示 retail sales CAGR 约 8.5%、industrial CAGR 约 16% 到 2029 | Meta 协议触发 5.2GW 新燃气发电、500kV 输电、储能和可再生配套；数据中心管线公开口径约 7-12GW；新 generation capex 约 270 亿美元 | 当期确认收入仍低，估计低个位数；AI 价值主要体现在未来 rate base 和 signed load，而不是 Q1 P&L |
+| 2025Q4 / FY2025 | 2026-02，FY2025 release | Q4 收入 29.59 亿美元；Q4 earnings 2.36 亿美元，EPS 0.51；FY2025 earnings 17.58 亿美元，EPS 3.91；FY utility earnings 22.80 亿美元，EPS 5.06 | 初始 2026 adj EPS guide 4.25-4.45 美元；公司强调“transformational growth story” | 2025 年 secured data center 与 traditional industrial ESAs；APSC 批准 E-AR Google special rate；LPSC/PUCT 多个 500kV 与发电项目推进 | FY2025 AI 直接收入仍小，估计不超过低个位数；订单代理强于收入 |
+| 2025Q3 | 2025-10-29，3Q25 | 收入 38.12 亿美元；earnings 约 6.94 亿美元，EPS 1.53，adj EPS 1.56；毛利率约 50.4%，经营利润率约 29.7% | 2025 adj EPS guide 收窄至 3.85-3.95 美元 | 市场和公司材料显示 data center pipeline 约 7-12GW，较前季 5-10GW 上修；约 4.5GW generation equipment/resources secured for large growth opportunities；LPSC 批准支持 Meta Louisiana data center 的 generation/transmission resources | 收入占比仍小；Q3 的重要性在于管线扩张和监管批准，而不是已确认 AI 电费 |
+| 2025Q2 | 2025-07-30，2Q25 | 收入 33.29 亿美元；earnings 4.68 亿美元，EPS 1.05；utility earnings 5.99 亿美元，EPS 1.34；毛利率约 46.9%，经营利润率约 25.2% | 维持 2025 指引；推进资本计划和大型负荷 | Google / large industrial load、E-TX 资源需求、E-LA 项目申请持续推进；gas LDC 出售完成后业务更纯电力化 | 仍为低个位数；早期数据中心负荷和工业负荷混在 retail/industrial sales |
+| 2025Q1 | 2025-04-29，1Q25 | 收入 28.47 亿美元；earnings 3.61 亿美元，EPS 0.82；utility earnings 4.90 亿美元，EPS 1.11；毛利率约 51.0%，经营利润率约 24.6% | 2025 adj EPS guide 3.75-3.95 美元 | 公司已经把 load growth、regulatory actions 和 industrial demand 列为主驱动，但 Meta/Google 等项目还处于早期转化 | AI/DC 收入贡献很小，主要是叙事和负荷管线开始进入估值 |
+
+季度解读：2025 年 EPS 增长不是单靠 AI 数据中心，而是费率行动、天气和零售电量共同驱动。2026Q1 的真正变化是资本计划和 pipeline quality，Meta 协议把“潜在需求”变成“客户承担成本、监管申请、设备和工程建设”的链条。对 ETR 而言，backlog 的质量顺序应为：已签 ESA 且客户承担 cost-of-service > 已获州监管批准的发电/输电 > 已提交 CCN/费率申请 > 非约束性 pipeline > 经济开发线索。
+
+## 4. 2026 最新指引、收入占比和重点业务
+
+### 4.1 2026 指引
+
+| 项目 | 2026 最新口径 |
+|---|---:|
+| Adjusted EPS guidance | 4.25-4.45 美元 |
+| 2026 指引中点隐含 EPS 增速 | 较 2025 adj EPS 3.91 美元约 +11.3% |
+| 2026-2029 资本计划 | 约 570 亿美元 |
+| 2026-2029 新 generation capex | 约 270 亿美元 |
+| 2026-2029 工业电量 CAGR | 约 16% |
+| 2026-2029 retail sales CAGR | 约 8.5% |
+| 数据中心 pipeline | 约 7-12GW，公开资料口径 |
+
+### 4.2 业务收入占比
+
+ETR 披露的是 utility 与 Parent & Other 的利润贡献，不是设备厂商式产品收入。2025 年公司几乎全部经营收入来自受监管 utility。更有用的拆分是客户类型和州公司位置：
+
+| 口径 | 估计占比/方向 | 增长性 | 解释 |
+|---|---:|---|---|
+| Industrial / large load | 零售电量约 45%-50% 区间，未来增速最高 | 高 | 数据中心、LNG、化工、制造业是 Gulf South 电力需求主轴 |
+| Residential | 约 25%-30% 区间 | 中低 | 天气和人口驱动，AI 相关性低 |
+| Commercial | 约 20%-25% 区间 | 中 | 普通商业和部分数据中心口径可能混合 |
+| Government / other | 低个位数 | 低 | 非重点 |
+| E-LA / Louisiana | 最大单一区域，约接近一半零售电量 | 高 | Meta Richland Parish、工业走廊和 Gulf South 负荷核心 |
+| E-AR / Arkansas | 约两成 | 中高 | Google special rate 和工业/数据中心机会 |
+| E-TX / Texas | 十几个百分点 | 高 | PUCT 批准 transmission/generation，ERCOT 周边竞争压力也大 |
+| E-MS / Mississippi、E-NO | 中低 | 中 | 仍可受益于数据中心和工业发展 |
+
+### 4.3 产品和业务映射
+
+重点业务和产品不是“型号”，而是 utility service + asset packages。可以按客户购买的“供电产品”理解：
+
+| 重点业务/产品 | 对应实物内容 | 客户/项目线索 | 利润率/回报机制 | 是否重点 |
+|---|---|---|---|---|
+| Hyperscale ESA / special rate contract | 长期售电、需求容量、fuel pass-through、客户成本保护条款 | Meta Louisiana、Google Arkansas、其他 data center pipeline | 受监管电价和准许回报；毛利率看燃料 pass-through，股东收益看 rate base | 是，最关键 |
+| Dedicated generation package | 5.2GW 新燃气 CCGT、既有/新电源、核电增容、可再生和 BESS | Meta Richland Parish，其他大负荷 | 新 plant 进入 rate base，准许 ROE；燃料成本大多转嫁 | 是 |
+| 500kV transmission / substation / interconnection | 500kV 线路、变电站、互联、保护和控制系统 | West Bank、Babel-Webre、Cypress-Legend、SETEX 等 | FERC/州监管回收，通常稳定且重要 | 是 |
+| Renewables and storage | 太阳能、风电、BESS、客户配套 clean capacity | Meta 承诺支持 up to 2.5GW renewable，Google clean energy 需求 | 回报相对稳定，但受供应链、税抵和容量价值影响 | 是，辅助但不可漏 |
+| Nuclear uprate / future nuclear MoU | 现有核电增容、长期核电开发讨论 | Meta 协议中 future nuclear exploration | 长周期、高监管门槛，不是一年内收入主驱动 | 有期权价值 |
+| 普通 residential / small commercial distribution | 常规配电、可靠性、灾害恢复 | 普通用户 | 低增速，监管刚性 | 本报告略过细节 |
+| legacy gas distribution | 燃气分销 | 已处置/非核心 | 低相关性 | 跳过 |
+
+最突出的业务是 data center ESA + dedicated generation + 500kV transmission 的组合，而不是单个设备。潜力小业务包括：BESS 作为桥接容量、nuclear uprate 作为 2030 年以后 clean firm capacity、客户资金担保/大型负荷 tariff 作为降低取消率和 stranded cost 的金融产品。
+
+## 5. 关键业务当前贡献、增速、紧迫性和垄断能力
+
+评分：1 低，5 高。收入贡献为研究估计，指对 ETR gross electric revenue 或 capital/rate-base conversion 的当前贡献，不等同于净利润。
+
+| 关键业务 | 2025-2026 当前贡献估计 | 收入/资产增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 依据 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 数据中心 ESA / 大负荷售电 | 已确认收入估计低个位数，可能低于 5 亿美元/年 run-rate；已签/管线潜在年 gross revenue 可达数十亿美元 | 高 | 5 | 5 | 5 | 4 | AI training/inference 项目先问 MW 和 interconnection，再问机房细节；ETR 服务区内具备 regulated franchise，但价格受监管 |
+| 新燃气发电 / CCGT | 当前收入尚小，Meta 5.2GW 触发约百亿美元级 capex；完全投运后单 GW 年 gross revenue 约 5.5-9.7 亿美元 | 很高 | 5 | 5 | 5 | 3 | 美国数据中心短期需要 firm power，燃机、汽轮机、变压器、EPC 交期紧 |
+| 500kV 输电和变电 | 2026-2029 资本计划中约 90 亿美元 transmission 量级，项目逐步 rate base 化 | 高 | 5 | 5 | 5 | 4 | 数据中心不能只靠发电，送电和变电是第二瓶颈；服务区内路径稀缺 |
+| Renewables + BESS | 资本计划中约 70 亿美元 renewables/storage 量级；Meta 最高 2.5GW clean resource 支持 | 中高 | 3 | 4 | 4 | 3 | 不是 24/7 firm power 的唯一答案，但对 hyperscaler clean energy pledge 和峰谷管理重要 |
+| Nuclear uprate / future nuclear | 一年内收入贡献低，长期 option value 高 | 中 | 4 | 2 | 3 | 3 | 清洁稳定电源稀缺，但监管、建设周期和成本不适合短期 AI 交付 |
+| 大型负荷 tariff / cost protection | 不直接形成收入，但决定负荷能否进 rate base | 高 | 5 | 5 | 5 | 4 | 如果客户承担 cost-of-service 和退出成本，取消率和监管反弹显著下降 |
+
+## 6. 一年后关键业务三情景预测
+
+以下预测为研究估算，不是公司指引。基准情形假设主要项目正常推进但大规模新负荷仍在建设；乐观情形假设 Meta/Google 之外新增 ESA 并加速监管批准；极度乐观情形假设多个 hyperscaler 项目在 12 个月内进入已签/已批和局部 energization 阶段。
+
+| 关键业务 | 基准情形，2027 年中 | 乐观情形，2027 年中 | 极度乐观情形，2027 年中 |
+|---|---|---|---|
+| 数据中心 ESA / 大负荷售电 | 已确认 data-center gross revenue run-rate 约 4-8 亿美元，增速 +30%-60%；pipeline 维持 7-12GW | run-rate 约 8-15 亿美元，增速 +60%-120%；新增 signed ESA 2-4GW | run-rate 约 15-30 亿美元，增速 +100%-250%；新增 signed/advanced pipeline 5GW+ |
+| 新燃气发电 / CCGT | 新增/推进 data-center generation capex 约 20-40 亿美元，收益主要来自后续 rate-base conversion | generation capex 约 40-80 亿美元，1-2GW 级资源进入可执行窗口 | generation capex 约 80-150 亿美元，2-3.5GW 通过快速资源、桥接供电或已批项目推进 |
+| 500kV 输电和变电 | 数据中心相关 transmission capex 约 10-20 亿美元进入执行 | 约 20-40 亿美元进入执行，多个 500kV 项目加速 | 约 40-60 亿美元，若客户资金担保和监管快速批准 |
+| Renewables + BESS | 0.5-1.0GW 新增/签约 clean capacity，BESS 作为桥接和容量价值 | 1-2GW clean resources/BESS 进入采购和监管 | 2.5GW clean resource 支持框架实质落地，BESS 形成独立调峰和备用价值 |
+| Nuclear uprate / future nuclear | MoU/可研阶段，收入贡献低 | 部分核电增容进入监管和采购计划 | 未来核电框架成为长期估值期权，但仍非 12 个月利润主驱动 |
+| 大型负荷 tariff / cost protection | Fair-share / special contract 模型被更多项目采用 | 州监管认可客户全成本承担，降低 ratepayer 反弹 | 形成标准化 hyperscaler tariff，ETR 获得更高 pipeline 转化率 |
+
+公司整体未来一年增速情景：
+
+| 情景 | 收入增速 | Adjusted EPS 增速 | 关键前提 |
+|---|---:|---:|---|
+| 基准 | +8%-12% | +8%-10% | 零售电量和费率增长，数据中心主要贡献资本计划和少量早期电量 |
+| 乐观 | +12%-18% | +10%-13% | 新 ESA、监管批准和 customer-backed capex 更快落地，融资成本可控 |
+| 极度乐观 | +18%-25% | +13%-16% | 多个数据中心分期提前 energize，gas/transmission/BESS 快速推进，监管允许较快成本回收 |
+
+## 7. BOM、单位含量和价格传导链
+
+ETR 的“content”不是服务器 BOM，而是每 MW 需要的 utility-side generation/transmission/distribution 和售电收入。结合本项目 `行业调研/` 资料，2026 年美国 AI 数据中心真实瓶颈顺序大致是：并网/变压器/开关设备 > HBM/CoWoS > 液冷 > MEP > 资金和利用率。对 ETR，最关键是前两层中的电力侧。
+
+### 7.1 每 MW / rack / GPU / optical port 含量
+
+| 单位 | 真实电力含量 | 对 ETR 的收入/资产含量 | 说明 |
+|---|---:|---:|---|
+| 1MW IT load | PUE 1.15-1.30 对应 utility 侧 1.15-1.30MW；年用电 10.1-11.4GWh | 按 55-85 美元/MWh，约 55-97 万美元/年 gross electric revenue；若需新电源/输变电，utility-side capex 可能 100-400 万美元/MW，项目差异很大 | 收入不是利润，燃料和购电 pass-through 后股东收益来自 rate base |
+| 100MW IT campus | 设施侧 115-130MW；年用电 1.01-1.14TWh | 年 gross revenue 约 5500-9700 万美元；需要变电、接入、可能专用电源 | 对 utility 已是大型工业客户 |
+| 1GW IT campus | 设施侧 1.15-1.30GW；年用电 10.1-11.4TWh | 年 gross revenue 约 5.5-9.7 亿美元；通常需要新增 generation/transmission | 接近大型工业区级负荷 |
+| 100kW/rack | 设施侧约 115-130kW；年用电约 1.0-1.1GWh/rack | 约 5.8-8.9 万美元/rack-year gross electric revenue | 2026 AI rack 常见 60-160kW/rack，未来 500kW+ 讨论增加 |
+| 1 GPU | 假设 IT 侧 0.8-1.5kW/GPU，含 PUE 后 0.92-1.95kW | 年电费收入约 440-1450 美元/GPU-year | GPU 型号、利用率和配套网络差异很大 |
+| 1 optical port | 假设 15-30W/port，含 PUE 后年电量约 158-315kWh | 约 9-27 美元/port-year | 对 utility 来说 port 是错误主尺度，只适合说明电力尾部含量 |
+
+### 7.2 Utility 侧 BOM 拆分
+
+| BOM 层级 | 每 MW 参考美元含量 | ETR 是否直接捕获 | 供需紧张程度 | 说明 |
+|---|---:|---|---:|---|
+| 发电资源，gas CCGT / aeroderivative / reciprocating | 约 140-480 万美元/MW，项目差异大 | 若由 ETR 投资并获监管批准，则进入 rate base | 5 | 燃机、汽轮机和 EPC 交期紧，2028-2029 前后窗口拥挤 |
+| 自备电/微电网，gas + BESS | 约 140-380 万美元/MW；BESS-heavy bridge 约 90-270 万美元/MW | 若客户自建则不进入 ETR rate base，可能只是互联/备用服务 | 4 | 是 ETR 的替代方案，也是桥接方案 |
+| 500kV / HV 输电线路和变电站 | 粗略 60-140 万美元/MW，取决于线路距离、地权和变电站 | 高，若由 ETR 建设 | 5 | 变压器、高压断路器、保护控制和施工队是瓶颈 |
+| MV switchgear / eHouse / UPS / PDU | 约 150-350 万美元/MW，更多在数据中心业主侧 | ETR 一般不直接捕获，除非 utility-side station/equipment | 5 | 这是 Eaton、Schneider、Vertiv、GE Vernova、Siemens 等的内容量 |
+| BESS / clean capacity | BESS 约 30-120 万美元/MW，按时长变化；renewables 按项目 | ETR 可部分捕获 | 4 | 用于容量、调峰、clean claim，不能完全替代 firm gas |
+| 监管、互联、土地、EPC、融资 | 差异很大 | 间接捕获，决定项目能否 rate-base 化 | 4 | 大项目真正瓶颈经常是许可和监管顺序 |
+
+### 7.3 价格传导链
+
+AI lab / cloud customer 向 hyperscaler 或 data center developer 购买算力和云服务；hyperscaler 确定园区和上电窗口；数据中心开发商向 ETR 提交 interconnection/load request；ETR 设计 generation + transmission + substation + tariff/ESA；监管机构批准 cost recovery、special rate、CCN 或 rider；EPC 和设备商获得燃机、变压器、开关设备、线路、BESS 订单；ETR 的收入来自售电和需求费，股东收益来自新增 rate base 的准许 ROE。核心传导不是“涨价给客户”，而是“把客户的 time-to-power 需求变成客户可接受、监管可批准、信用评级可承受的长期资产”。
+
+## 8. 产能能力、采纳程度和认证/监管阶段
+
+公用事业没有制造业产能。这里把“产能能力”定义为 ETR 未来一年能承接和推进的数据中心相关 MW、capex 和监管项目规模。
+
+| 业务 | 当前产能/供给能力 | 被供应链采纳程度 | 认证/监管阶段 | 一年后基准 | 一年后乐观 | 一年后极度乐观 |
+|---|---|---|---|---|---|---|
+| 数据中心 ESA / 售电 | 公开 pipeline 约 7-12GW；已签/推进项目包括 Meta、Google 和其他未具名 hyperscaler/industrial | 高。Meta、Google 等已把 ETR 服务区纳入大项目选址 | Special rate / ESA / cost-of-service 需要州监管认可 | pipeline 维持 7-12GW，新增 signed 0-2GW | 新增 signed 2-4GW，pipeline 上修 | 新增 signed/advanced 5GW+，但依赖监管和客户担保 |
+| Meta Louisiana generation package | 新增 5.2GW gas generation、500kV transmission、BESS/renewables/nuclear MoU，仍需完整审批和建设 | 极高，Meta 是锚定客户 | LPSC 申请和批准链；部分基础资源已有批准，新增七台/多台 gas units 仍需批准 | 进入主要审批和 EPC 准备，少量 early works | 关键审批通过，设备锁定和施工加速 | 分期桥接供电更快，但完整 5.2GW 投运仍不现实 |
+| 500kV transmission | 多条线路项目：West Bank、Babel-Webre、Cypress-Legend、SETEX 等 | 高，因大负荷必须配套 | LPSC/PUCT/APSC/FERC 相关审批 | 10-20 亿美元 data-center related transmission capex 执行 | 20-40 亿美元执行 | 40-60 亿美元执行，需强客户担保 |
+| Renewables + BESS | 资本计划中约 70 亿美元级别；Meta 支持 up to 2.5GW renewable | 中高，hyperscaler 有 clean energy 要求 | 州监管、interconnection、PPA/ownership | 0.5-1GW clean/storage 签约或推进 | 1-2GW | 2.5GW 框架更实质化 |
+| Nuclear uprate / future nuclear | 现有核电是差异化资产，future nuclear 仍为 MoU/可研 | 中。AI 客户需要 clean firm，但短期不可交付 | NRC、州监管、长期开发 | 可研/增容评估 | 小规模 uprate 推进 | 成为长期估值故事，非短期产能 |
+
+## 9. Backlog、取消率和未来一年增速推断
+
+ETR 未披露可与工业公司 backlog 直接相加的订单金额。更实用的订单框架如下：
+
+| 订单层级 | 可信度 | 当前证据 | 取消/延迟风险 |
+|---|---:|---|---|
+| 已签长期 ESA，客户全成本承担 | 最高 | Meta 协议、Google Arkansas special rate | 低到中。客户仍可能延迟 ramp，但退出成本和声誉成本高 |
+| 已获监管批准的发电/输电/费率 | 高 | APSC、LPSC、PUCT 多项目批准 | 低到中。施工和供应链 delay 仍可能发生 |
+| 已提交监管申请/CCN | 中高 | E-LA/E-TX 多个 generation/transmission application | 中。监管可能修改成本分摊或时间表 |
+| 设备锁定和 EPC early works | 中 | 公开材料提到 secured generation resources / equipment | 中。设备有交期优势，但项目仍需批准 |
+| 非约束性 pipeline，7-12GW | 中 | 公司季度材料和行业报道 | 中到高。AI 利用率、融资、站点选择和替代电源会影响转化 |
+
+未来一年公司业务增速推断：
+
+1. 基准：2026-2027 主要体现为 8%-12% 收入增长和 8%-10% EPS 增长，符合公司“高于传统 utility”的增长框架。数据中心当期收入不是最大项，最大变化是 capex visibility 和 rate base runway。
+2. 乐观：若 Meta 新增资源审批顺利、Google/其他 hyperscaler 新签 ESA、客户担保条款明确，则收入增长可达 12%-18%，EPS 增速 10%-13%。估值可继续维持高于 utility 平均。
+3. 极度乐观：若 7-12GW 管线中超过 5GW 在 12 个月内变成 signed/advanced load，且有可执行的 bridge power、BESS、gas turbine 和 500kV 路径，则收入增速可能接近 18%-25%。但这一情形的最大约束是监管和建设，不是客户需求。
+
+取消率判断：signed ESA 的取消率应低于普通 data center pipeline，尤其在客户承担 full cost-of-service 和退出成本时。未签 pipeline 的取消/延迟率可能显著高于传统 utility load forecast，因为 AI 算力需求、GPU 供给、模型训练经济性和融资成本都可能变化。真实风险是“延迟多于取消”：客户保留站点，但上电窗口从 2027 推到 2028-2030。
+
+## 10. 竞争格局、替代方案和客户替换成本
+
+### 10.1 竞争对手
+
+ETR 在自身服务区内是受监管公用事业，不像设备商面对逐单竞价。但在数据中心选址阶段，它与其他州和电力市场竞争。
+
+| 竞争类别 | 主要对手 | ETR 相对优劣 |
+|---|---|---|
+| 受监管 utility | AEP、Dominion、Duke、Southern / Georgia Power、NextEra / FPL、TVA、Oncor / ERCOT 周边 utility | ETR 有 Gulf South 工业基础、天然气资源、核电和低成本土地；但 Dominion/AEP 有成熟 data center corridor，ERCOT 部分区域上电速度可能更快 |
+| IPP / merchant power | Vistra、Constellation、NRG、Calpine、NextEra Energy Resources | IPP 可给客户提供 PPA 或 behind-the-meter 电源；ETR 的优势是 regulated interconnection 和综合供电 |
+| 自备发电和微电网 | GE Vernova、Caterpillar、Cummins、Wärtsilä、Bloom Energy、燃料电池/燃机 EPC | 是替代也是补充。若 utility queue 太慢，hyperscaler 可用 BTM gas/BESS/fuel cell 桥接 |
+| 输配电和 EPC 供应商 | Quanta、MasTec、MYR、Burns & McDonnell、Black & Veatch 等 | ETR 是买方和项目业主，瓶颈在施工队、变压器、开关设备和许可 |
+| 电力设备供应商 | GE Vernova、Siemens Energy、Mitsubishi Power、Eaton、Schneider、Hitachi Energy、ABB | 设备商获得更直接的订单毛利，ETR 获得长期资产回报 |
+
+### 10.2 ETR 新技术/新产品是否是主流
+
+短期主流是 gas-fired firm power + 500kV transmission + BESS/renewables + regulated contract，不是完全离网，也不是纯可再生。2026 年 AI 数据中心真实需求是“快、稳、可融资、监管可批准”的电力。ETR 的方案符合主流：燃气 CCGT 提供 firm capacity，500kV 线路解决输电，BESS 处理短时调节，可再生和核电 option 满足 clean energy 叙事。
+
+替代方案包括：
+
+1. Behind-the-meter gas turbines：速度可能更快，但燃料、排放、并网备用和长期成本复杂。
+2. Fuel cell / SOFC：Bloom 等在 Oracle 项目中获得大单，适合部分站点，但规模、燃料供应和成本仍有限制。
+3. ERCOT / merchant market：上电速度和市场化选择更灵活，但价格波动和拥塞风险高。
+4. Nuclear / SMR：长期 clean firm 方案，但 12-24 个月内难以成为核心供给。
+5. 需求侧优化：推理效率、模型架构和 GPU 利用率改善可能降低负荷增速，但短期不太会消除 time-to-power 瓶颈。
+
+客户替换成本：在签 ESA 和确定站点前，替换成本中等，客户可以比较州政策、电价、上电窗口和土地。签署长期 ESA、完成 interconnection study、购买土地、开始土建、锁定变电站和输电路径后，替换成本很高。对 Meta 这种 5GW 级园区，替换不仅是电价问题，还涉及州税收、土地、社区、光纤、水、permit、construction labor 和政治承诺。
+
+## 11. 风险清单
+
+| 风险 | 影响 | 观察指标 |
+|---|---|---|
+| 监管反弹 | 若监管机构认为普通用户承担 AI 数据中心成本，项目回报和时间表会受压 | LPSC/APSC/PUCT docket、special rate 条款、客户担保金额 |
+| 资本强度和融资 | 570 亿美元 capex 可能带来增发、forward equity、信用指标恶化 | FFO/debt、评级展望、equity plan、利息费用 |
+| 数据中心需求延迟 | 已签 load ramp 低于预期，rate base 投资回收变慢 | ESA MW 转化、construction start、energization date |
+| 设备和 EPC 交期 | 燃机、变压器、500kV 开关和施工队供给紧张 | turbine slot、transformer lead time、EPC 合同 |
+| 燃气和排放政治 | 新燃气发电可能面临环保和政策压力 | LPSC 审批、EPA/州排放规则、天然气管网 |
+| 替代供电 | 客户选择 BTM、fuel cell 或其他州 utility | 新签 ESA share、数据中心选址新闻 |
+| 普通 utility 风险 | 飓风、极端天气、核电 outage、费率滞后 | storm cost recovery、nuclear capacity factor、O&M |
+
+## 12. 需要继续跟踪的高频指标
+
+1. Entergy 2026 Investor Day 后续完整材料中的 2026-2029 capex、equity plan、FFO/debt 和 EPS CAGR。
+2. Meta Louisiana 5.2GW generation package 的 LPSC docket：是否批准、是否修改成本分摊、建设里程碑。
+3. Google Arkansas special rate 的负荷规模、上电时间和 clean capacity 配套。
+4. 数据中心 pipeline 是否从 7-12GW 上修，尤其是 signed ESA MW，而不是非约束性 inquiry。
+5. 每季 industrial sales growth 是否接近公司 2026-2029 CAGR 约 16% 的轨道。
+6. 500kV transmission 项目是否按期进入 construction work in progress。
+7. 股权融资和信用评级：若为保障评级而大额增发，EPS 增长会被摊薄。
+
+## 13. 资料来源
+
+公司与市场资料：
+
+- Entergy 2026Q1 earnings presentation：<https://s201.q4cdn.com/714390239/files/doc_financials/2026/q1/1Q26-Presentation.pdf>
+- Entergy 2026Q1 earnings release：<https://www.entergy.com/news/entergy-reports-first-quarter-2026-financial-results>
+- Entergy FY2025 earnings release and 2026 guidance：<https://www.entergy.com/news/entergy-reports-2025-financial-results-initiates-2026-guidance>
+- Entergy 2025 annual report：<https://s201.q4cdn.com/714390239/files/doc_financials/2025/ar/Annual-Report.pdf>
+- Entergy 2025Q3 earnings release：<https://www.entergy.com/news/entergy-reports-third-quarter-2025-financial-results>
+- Entergy 2025Q3 presentation：<https://s201.q4cdn.com/714390239/files/doc_financials/2025/q3/3Q25-Presentation.pdf>
+- Entergy 2025Q2 earnings presentation page：<https://investors.entergy.com/investors/events-and-presentations/presentations/presentation-details/2025/2Q25-Earnings-Call-Presentation/default.aspx>
+- Entergy data centers page：<https://www.entergy.com/datacenters>
+- Entergy Meta agreement news：<https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings>
+- Entergy 2026 Investor Day announcement：<https://www.entergy.com/news/entergy-to-host-its-2026-investor-day-on-june-9>
+- Yahoo Finance ETR key statistics：<https://finance.yahoo.com/quote/ETR/key-statistics/>
+
+行业与渠道资料：
+
+- Utility Dive, Meta deal and $57B capital plan：<https://www.utilitydive.com/news/new-generation-adds-12b-entergy-capital-plan/818790/>
+- Utility Dive, Entergy data center pipeline 7-12GW：<https://www.utilitydive.com/news/gas-continues-to-dominate-entergy-plans-as-data-center-pipeline-grows/804521/>
+- ENR, Meta data center and Louisiana power expansion：<https://www.enr.com/articles/62766-27b-meta-data-center-pushes-louisiana-toward-massive-power-expansion>
+- Meta Richland Parish data center：<https://datacenters.atmeta.com/richland-parish-data-center/>
+- Goldman Sachs, US data center power demand：<https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027>
+- LBNL data center electricity demand report：<https://newscenter.lbl.gov/2025/01/15/berkeley-lab-report-evaluates-increase-in-electricity-demand-from-data-centers/>
+- CBRE 2026 data center outlook：<https://www.cbre.com/insights/books/us-real-estate-market-outlook-2026/data-centers>
+- JLL data center outlook：<https://www.jll.com/en-us/insights/market-outlook/data-center-outlook>
+
+项目内行业资料：
+
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`

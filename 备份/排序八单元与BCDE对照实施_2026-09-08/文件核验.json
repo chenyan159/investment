@@ -1,0 +1,30 @@
+{
+  "protectedFilesUnchanged": 1112,
+  "generatorOriginalBackedUp": true,
+  "editableOriginalsBackedUp": 9,
+  "executionModes": {
+    "routine": 8,
+    "experiment": 2,
+    "paired_experiment": 3,
+    "absorbed": 5,
+    "historical": 11
+  },
+  "newPlans": 9,
+  "pairedRules": [
+    {
+      "id": "E04",
+      "rules_identical_outside_input_and_output": true
+    },
+    {
+      "id": "E05",
+      "rules_identical_outside_input_and_output": true
+    },
+    {
+      "id": "E06",
+      "rules_identical_outside_input_and_output": true
+    }
+  ],
+  "historicalResultRowsUnchanged": 28,
+  "historicalPerformanceColumnsUnchanged": true,
+  "newResearchResults": 0
+}

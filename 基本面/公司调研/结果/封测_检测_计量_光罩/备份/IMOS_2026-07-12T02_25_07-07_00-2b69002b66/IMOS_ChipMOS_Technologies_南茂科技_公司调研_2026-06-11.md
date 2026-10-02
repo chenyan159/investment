@@ -1,0 +1,347 @@
+# IMOS ChipMOS Technologies（南茂科技）公司调研_2026-06-11
+
+> 研究对象：ChipMOS Technologies Inc. / 南茂科技，NASDAQ: IMOS，TWSE: 8150。  
+> 本报告只使用项目内 `行业调研/` 的相关产业资料和联网公开资料；未读取、引用或继承 `特征量化/`，也未复用同目录其他公司报告。  
+> 货币口径：公司财报主口径为新台币 NT$；美元换算优先采用公司公告当季汇率。估值和股价使用 2026-06-11 美股收盘/延时数据。  
+> 结论先行：IMOS 是台湾中型 OSAT/封测公司，强项在存储、DDIC、金凸块、晶圆测试和后段组装。2026 年的主要弹性来自 AI/数据中心拉动的 DRAM、DDR5、enterprise NAND/eSSD、存储后道瓶颈和价格传导；但目前没有公开证据表明公司是 NVIDIA GPU、HBM 堆叠、CoWoS 或 CPO 光口的直接主链瓶颈供应商。把 IMOS 当作“AI 存储后道景气弹性 + DDIC 周期修复 + 小型 AI ASIC/PMIC 期权”更接近事实。
+
+## 1. 公司整体业务、投资人认知与产业链位置
+
+### 1.1 公司做什么
+
+ChipMOS 是台湾外包半导体封装测试服务商（OSAT）。公司官网定义其为“back-end testing service for memory, LCD driver, bumping and MEMS”服务商，主要为无晶圆厂公司、IDM 和晶圆代工客户提供后段服务。核心服务链条包括：
+
+| 业务/能力 | 具体服务 | 对应产品/封装形态 | 与 AI 数据中心关系 |
+|---|---|---|---|
+| Testing / 测试 | wafer sort、final test、test program conversion、engineering lot、pilot lot | memory、mixed-signal、DDIC、ASIC/high-speed digital | 间接相关。DDR4/DDR5、NAND/eSSD、PMIC、控制器和未来 AI ASIC 测试可能受益；未验证为 HBM/GPU 主测试环节 |
+| Assembly / 组装 | die attach、wire bond、molding、substrate/leadframe package、drop shipment | SOP、TSOP、LQFP/TQFP、FBGA、VFBGA、stacked CSP、TFBGA、LGA、WLCSP、flip-chip CSP、SiP、KGD、MEMS | 对存储和混合信号后道有弹性；不是先进 2.5D/CoWoS 的核心主承包商 |
+| DDIC assembly/test | LCD/OLED/display panel driver IC 封装测试 | COF、COG、COP、reel-to-reel、DDIC final test | AI 服务器内容量基本可忽略；更偏汽车、手机、电视、OLED 面板周期 |
+| Bumping / 凸块 | gold bump、solder bump、copper bump、RDL、copper pillar、MCB（金属复合凸块） | DDIC 上游凸块、WLCSP/RDL 相关 | 金价/BT substrate 成本可传导；AI 直接内容量低，除非未来进入更高阶逻辑或 PMIC/RDL 项目 |
+| Turnkey | wafer bumping/RDL -> wafer sort -> assembly -> final test -> drop shipment | display driver IC、memory IC、logic mixed-signal IC | 对客户 time-to-market 有价值，切换成本中等 |
+
+投资人心中的 IMOS 通常不是“高端先进封装龙头”，而是“小市值、高周期、低流动性、台湾后道封测弹性股”：
+
+- 2022-2024 年，投资人主要看 DDIC 和存储周期；低利用率、汇兑和面板周期压制估值。
+- 2025H2-2026，叙事转向 AI 数据中心带动的存储后道需求：DRAM、DDR5、enterprise NAND/eSSD、存储测试、瓶颈产能、OSAT 价格传导。
+- 公司股价 2026 年已大幅重估，2026-06-11 收盘 $63.76，单日 +15.67%，52 周涨幅约 +218.5%。这说明市场已经在交易“存储封测景气向上”和“AI 相关需求/供给失衡”。
+
+### 1.2 最近 3 年重大业务变化
+
+| 时间 | 事件 | 业务含义 | 投资含义 |
+|---|---|---|---|
+| 2023-2024 | 半导体后段和 DDIC 周期下行，面板、手机、消费电子需求弱 | 利用率和毛利率受压；DDIC 设备折旧刚性高 | 公司更像低估值周期股，ROE 低 |
+| 2025H1 | Q2 出现 NT$533.1M 净亏损，主要受汇兑损失和低毛利影响；但营收已开始环比修复 | 存储需求先行修复，DDIC 仍弱 | 市场开始寻找存储后道拐点 |
+| 2025Q3-Q4 | 存储收入快速提升，Q4 memory products 接近 50% 收入；公司上调/计划上调 memory OSAT 价格 | AI、computing、datacenter 支撑 DRAM/Flash；利用率和毛利率改善 | 核心投资变量从 DDIC 周期切换到存储后道周期 |
+| 2025Q4 | 公司决定由季度电话会改为半年电话会，但季度财报仍按监管发布 | 信息披露频率下降，需更依赖月营收和公告 | 对研究者要求更高，月营收变成关键高频指标 |
+| 2026Q1-Q2 | 公司公开称 AI/data center 相关需求-供给失衡持续支撑增长和定价；3-5 月营收同比 +23.1%、+32.2%、+17.7% | 客户需求可见度延伸到 2026；新产能用于现有客户预测和长期供货协议 | 订单不是传统 backlog 披露，但 LTAs/客户预测/扩产成为准 backlog 线索 |
+| 2026 | 公司继续投资 memory bottleneck capacity、automation、新产品项目，并提到 PMIC of DDR5 modules、高端 logic test、AI-related ASIC support | 小型 AI 相关业务期权出现，但尚未形成可量化披露 | 需要跟踪认证和量产，而不是提前按主链龙头估值 |
+
+### 1.3 产业链位置
+
+IMOS 位于半导体后段：晶圆制造之后、成品芯片交付之前。它不生产 DRAM/NAND/HBM 本体，也不拥有 GPU/AI ASIC 设计；公司收入来自封装、组装、晶圆测试、终测、凸块和 turnkey 服务费。
+
+在 AI 基建链条中，项目内 `行业调研/` 资料显示，2026 年硬瓶颈集中在 HBM/DRAM、先进封装/基板、测试/探针/SLT、供电/机电/冷却和整机交付。IMOS 能沾边的是“存储后道封测”和“测试复杂度提升”，不是 HBM 堆叠、CoWoS 或 GPU 2.5D 封装的核心稀缺环节。因此估值应拆成三层：
+
+1. 当前可验证：memory products、DRAM、Flash、testing、assembly 利用率提升。
+2. 近端可观察：客户长期供货协议、take-or-pay、存储 OSAT 价格上调、Tainan footprint expansion。
+3. 长期可选：DDR5 module PMIC、高端 logic test、AI-related ASIC support，尚需客户认证和量产数据验证。
+
+## 2. 最新股价、估值、收入增速和财务健康度
+
+### 2.1 2026-06-11 估值快照
+
+| 指标 | 最新值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | $63.76/ADS | 2026-06-11 美股收盘 | StockAnalysis 显示当日 +15.67%；盘后 $62.87 |
+| 市值 | $2.15B | 2026-06-11 | StockAnalysis；按 ADS 等价股本口径 |
+| EV | $2.25B | 2026-06-11 | StockAnalysis |
+| Trailing PE | 83.35x | 2026-06-11 | TTM 利润低，因 2025 汇兑和周期压制 |
+| Forward PE | 21.88x | 2026-06-11 | 隐含市场预期 2026-2027 盈利显著恢复 |
+| PS | 2.71x | 2026-06-11 | TTM revenue $792.25M |
+| PB | 2.79x | 2026-06-11 | 高于公司历史低迷期，已反映重估 |
+| TTM 收入 | $792.25M | 2026-06-11 更新 | StockAnalysis/S&P Global 数据 |
+| TTM 净利润 | $25.76M | 2026-06-11 更新 | 低基数，导致 trailing PE 虚高 |
+| TTM 毛利率 | 11.96% | 2026-06-11 更新 | 2026Q1 已改善到约 13.8% |
+| TTM 经营利润率 | 6.10% | 2026-06-11 更新 | Q4 2025 为 9.7%，Q1 2026 约 7.5% |
+| TTM 净利率 | 3.25% | 2026-06-11 更新 | 2025 汇兑损失拖累 |
+| 3 年收入预测增速 | 12.92% | 2026-06-11 | StockAnalysis analyst forecast 字段 |
+| ROE / ROIC | 3.32% / 4.84% | TTM | 仍未恢复到高景气状态 |
+| ADS / common | 1 ADS = 20 common shares | ADR 资料口径 | 2026-01-31 公司称约 3.5M ADS，占 common shares 约 9.9% |
+
+估值解读：$2.15B 市值相当于约 2.7x TTM revenue。若 2026 收入恢复到 $0.95-1.05B、净利率回到 8-10%，则净利润约 $76-105M，对应当前市值约 20-28x 正常化净利；这与 forward PE 21.9x 大致一致。风险是股价在 2026-06-11 已快速反映“存储封测紧缺”，后续必须看到 Q2-Q4 月营收、毛利率和客户协议兑现。
+
+### 2.2 资产负债表健康程度
+
+| 项目 | 最新值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| Q1 2026 现金及约当现金 | NT$12.3869B / $386.5M | 2026-03-31 公司公告 | 现金充足，能支持 capex 和股东回报 |
+| Q1 2026 总资产 | NT$44.831B | 2026-03-31 6-K 摘要 | 资产规模稳定 |
+| Q1 2026 总负债 | NT$20.224B | 2026-03-31 6-K 摘要 | 负债/资产约 45.1%，可控 |
+| Q1 2026 归母权益 | NT$24.607B | 2026-03-31 6-K 摘要 | 权益占比约 54.9% |
+| TTM 现金 | $390.41M | 2026-06-11 StockAnalysis | 与公司 Q1 现金大体一致 |
+| TTM 总债务 | $494.67M | 2026-06-11 StockAnalysis | 净债务约 $104M |
+| Current ratio / Quick ratio | 2.44 / 1.97 | 2026-06-11 | 短债偿付能力较好 |
+| Debt / Equity | 0.64x | 2026-06-11 | 不高，但 OSAT 重资产周期需看利用率 |
+| Interest coverage | 4.88x | 2026-06-11 | 可接受，盈利若恢复则改善 |
+| Q1 2026 FCF | NT$1.109B / $34.6M | 2026Q1 公司公告 | Q1 强现金流，说明复苏不是纯账面 |
+| 2025 capex | NT$3.666B | FY2025 电话会 | 约 2025 收入 15.3%；Q4 capex 55.2% 用于 testing |
+
+财务健康评级：中上。公司现金充足、流动性好、负债率可控；主要风险不是破产式财务压力，而是封测资产折旧刚性、利用率回落、DDIC 低迷、汇兑损失和材料成本（金、BT substrate）对毛利率的冲击。公司在 Q3/Q4 2025 明确通过 memory OSAT 价格上调转嫁材料成本，说明定价权在紧缺期改善，但还不是长期垄断型定价权。
+
+## 3. 最近 5 个财报季度：数字、订单线索和业务结构
+
+说明：ChipMOS 自 Q1 2026 起未召开季度电话会，Q1 2026 未披露完整分业务收入比例；本节对 Q1 2026 的业务占比用 Q4 2025 结构、2026 年 1-5 月月营收注释和公司管理层评论推算。公司没有公开传统 backlog/bookings/B2B/cancel rate；订单线索来自“客户可见度 through 2026”、“long-term supply agreements”、“take-or-pay 合约表述”和月营收。
+
+| 财报季度 | 收入 | QoQ / YoY | 毛利率 / 经营利润率 / 净利率 | 净利润 | 利用率与订单/交期线索 | 业务收入结构与 AI/DC 相关度 |
+|---|---:|---:|---:|---:|---|---|
+| 2026Q1 | NT$6.936B / $216.4M | +6.4% QoQ / +25.4% YoY | 13.8% / 7.5% / 7.3% | NT$504.9M / $15.8M | 公司称 AI-related applications、data center demand-supply imbalance 支撑增长和定价；capacity-constrained environment 提升 utilization 和 revenue quality；未披露 backlog | 未披露 mix；估算 memory 50-55%、DDIC+gold bump 35-40%、mixed-signal/logic 8-10%。AI/DC 直接披露为 0，间接 AI/DC memory 约 18-28% 总收入 |
+| 2025Q4 | NT$6.521B / $207.9M | +6.1% QoQ / +20.8% YoY | 14.3% / 9.7% / 7.7% | NT$499.7M / $15.9M | Overall UT 65%；assembly 75%、test 65%、DDIC 60%、bumping 53%；公司称客户可见度支持 2026 增长，Q1 计划再涨 memory OSAT 价格 | Memory <50%，+8% QoQ、>+55% YoY；DRAM >20%，Flash 29%；DDIC+gold bump 约 40%；computing 7.5%，+26% QoQ、FY +57%。AI/DC 间接相关约 15-25% |
+| 2025Q3 | NT$6.144B / $201.7M | +7.1% QoQ / +1.2% YoY | 12.4% / 6.0% / 5.7% | NT$352.2M / $11.6M | Overall UT 66%；assembly 68%、test 70%、DDIC 67%、bumping 57%；Q&A 称若扩 bottleneck capacity，会要求客户签 take-or-pay | Memory 49%，+16% QoQ、+35% YoY；DRAM/SRAM 19%，Flash 30%；DDIC+gold bump 41%；mixed-signal 10%。AI/DC 通过 memory 和 computing 间接受益 |
+| 2025Q2 | NT$5.736B / $196.6M | +3.7% QoQ / -1.3% YoY | 6.6% / 0.4% / -9.3% | -NT$533.1M / -$18.3M | Overall UT 65%，高于 Q1 62%；收入增长由 memory recovery 带动；净亏主要因 NT$690M FX loss | Memory 估算 43-45%；DDIC+gold bump 约 41-46%；DRAM/Flash 修复但毛利率受电费、汇率、DDIC ASP 压制。AI/DC 相关度低于 Q3-Q4 |
+| 2025Q1 | NT$5.532B / $189.6M | +2.5% QoQ / +2.1% YoY | 9.4% / 2.1% / 3.2% | NT$176.3M / $6.0M | Overall UT 62%；DDIC 有短期 rush orders，但整体仍在周期修复早期 | Memory 38.8%；DRAM 13.6%、Flash 24.7%；DDIC+gold bump 约 51%；auto/industrial 27%。AI/DC 相关度仍低，主要是普通存储和 DDIC 周期 |
+
+关键观察：
+
+- 收入拐点很清楚：2025Q1 NT$5.53B -> 2026Q1 NT$6.94B，4 个季度增长 25.4%。
+- 利润率修复比收入更快：2025Q2 毛利率只有 6.6%，Q4 升到 14.3%，Q1 2026 约 13.8%。
+- 结构变化比总收入更重要：memory products 从 2025Q1 38.8% 升到 2025Q3/Q4 接近 50%；这是 AI/数据中心相关叙事的核心事实基础。
+- Q2 2026 已有强开局：2026 年 4 月 NT$2.4605B，同比 +32.2%；5 月 NT$2.3843B，同比 +17.7%。4-5 月合计 NT$4.8448B，若 6 月在 NT$2.3-2.6B，Q2 2026 将约 NT$7.15-7.45B，同比 Q2 2025 的 NT$5.736B 增长约 +25-30%。
+
+## 4. 2026 最新指引、收入占比与业务侧重点
+
+### 4.1 公司没有给传统数值指引，但给了强方向性指引
+
+Q1 2026 公司未开电话会，未给正式 revenue/gross margin guidance。可用的“准指引”是：
+
+- Q1 2026 新闻稿：AI-related applications、data center markets 的 persistent demand-supply imbalance 继续支撑增长和 pricing。
+- 2026 年 4 月月营收：公司称 customer demand visibility now extending through 2026，由 persistent AI-related demand/supply imbalance 驱动。
+- 2026 年 5 月月营收：公司称 new capacity is being used to meet existing customer forecasts and long-term supply agreements。
+- 2025Q3/Q4 电话会：若扩 memory bottleneck capacity，管理层会要求客户签 take-or-pay contract；Q4 还称 Q1 起继续提高 memory products OSAT price，以反映材料成本上涨并维持利润率。
+
+因此，2026 的可验证主线不是“公司拿到某个 GPU/HBM 主订单”，而是：
+
+1. memory products 需求强，客户视野延伸至全年；
+2. 存储后道/测试存在瓶颈，IMOS 可涨价和扩产；
+3. 公司将 capex 重点放在 testing、memory bottleneck capacity、automation、新产品项目；
+4. 价格和利用率改善会放大利润，但 OSAT 的价格传导仍弱于 HBM 厂、TSMC CoWoS 和高端 ATE/探针卡厂。
+
+### 4.2 2026Q1-Q2 当前收入占比估计
+
+| 业务/产品组 | 2025Q4 披露占比 | 2026Q1-Q2 估计占比 | 2026 增长状态 | 公司侧重点 | AI/DC 相关度 |
+|---|---:|---:|---|---|---|
+| Memory products | <50% | 50-55% | 高增长；Q4 +55% YoY，Q1/Q2 继续受 AI/DC 供需失衡推动 | 最突出；扩 bottleneck capacity、涨价、支持客户 LTAs | 中高，主要是间接 AI/DC |
+| DRAM / SRAM | >20% of Q4 revenue | 20-23% | DDR4/DDR5 release to production 维持强动能 | 高重点 | 与服务器/数据中心相关，但未披露 HBM 直接收入 |
+| Flash / NAND / NOR | 29% of Q4 revenue | 28-31% | enterprise NAND/eSSD 由 AI cloud datacenter 拉动；Flash 也有库存调整 | 高重点 | 与 AI 存储/eSSD 相关 |
+| DDIC + gold bump | ~40% | 35-40% | 低到中增长；auto/OLED 稳，TV/smartphone 较弱 | 维持现金流，部分 idle assets 转向 memory/logic test | 低 |
+| Bumping service | ~22% service category / gold bump ~19% product basis | 18-22% | 金价/材料涨价可传导；DDIC 绑定强 | 中等 | 低，除非转向更高阶 RDL/WLCSP |
+| Mixed-signal / logic | <10% | 8-10% | 小基数高潜力；PMIC of DDR5 modules、AI-related ASIC support 尚早 | 潜在重点 | 中到高，但当前收入贡献小 |
+| High-end logic test / AI ASIC support | 未单列 | 当前接近 0-低个位数 | 期权阶段 | 未来重点，需认证 | 潜在高，但未验证 |
+
+### 4.3 跳过的低增速/非重点业务
+
+以下业务不作为本报告的 AI 高增长主线，只在风险和现金流里保留：
+
+- 普通 TV/smartphone DDIC assembly/test：受补贴、面板库存、手机周期影响，AI 基建内容量低。
+- 传统 COF/COG/COP 低阶显示驱动封装：与 AI rack/GPU/光口无直接关系。
+- 普通 NOR/低密度存储封测：可受周期修复，但不一定属于 AI data center 硬瓶颈。
+- 设备租赁/工程测试等零散收入：披露有限，规模通常不是估值主驱动。
+
+## 5. 关键/高增长产品业务：当前收入贡献、增速、AI 重要性、供需和溢价能力
+
+评分口径：5 = 最强/最紧/最重要；1 = 弱。收入贡献为估算，因公司不披露所有分业务季度美元收入。
+
+| 关键业务 | 当前收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 证据与判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Memory products 后道封测 | 2026Q1 约 $108-119M；年化 $440-520M | Q4 2025 +55% YoY；2026Q1 总收入 +25.4% YoY | 4 | 5 | 4 | 3 | 公司称 AI/data center 需求-供给失衡支撑价格和收入；memory 接近 50% 收入，是主要弹性来源 |
+| DRAM/DDR4/DDR5 assembly/test | Q4 2025 >20% revenue，约 $42M/季；2026 年化 $180-230M | Q4 DRAM +20% QoQ、FY2025 +24% YoY | 4 | 5 | 4 | 3 | DDR4/DDR5 release to production；客户强需求；但不是 HBM 主链披露 |
+| Flash/NAND/eSSD/NOR 后道 | Q4 2025 29% revenue，约 $60M/季；2026 年化 $240-310M | Q4 Flash +46% YoY，FY2025 +28% YoY；NAND FY +38% | 4 | 4 | 4 | 2.5 | AI cloud datacenter 拉动 enterprise NAND/eSSD；Flash 也有库存调整风险 |
+| Testing service / wafer sort / final test | Q4 2025 service category 约 24%；年化 $210-270M | 与 memory/mixed-signal 同步上行 | 4 | 5 | 4 | 3 | Q4 capex 55.2% 投向 testing；项目内行业资料显示 HBM/AI memory/ATE/test 是 2026 瓶颈 |
+| DDIC + gold bump | Q4 2025 约 40%，年化 $330-380M | Q4 +2.6% QoQ、-5% YoY；auto/OLED 较稳 | 1 | 2 | 2 | 2.5 | 现金流基石但不是 AI 基建；auto panel 和 OLED 是结构性较好部分 |
+| Mixed-signal / DDR5 PMIC / high-end logic test | 当前约 $70-90M 年化；AI ASIC 支持当前未量化 | Q3 mixed-signal 10%，Q4 <10%；management 预计 2026 动能增加 | 3-4 | 3 | 2-3 | 2.5 | 未来 PMIC of DDR5 modules、AI-related ASIC support 可能打开新市场，但当前仍需认证 |
+| AI-related ASIC support | 当前可验证收入接近 0 | 未披露 | 4 | 3 | 3 | 2 | 公司提到 support ASIC for AI related application products；没有客户、项目名、订单金额或认证阶段披露 |
+
+核心判断：IMOS 最值得跟的是 memory products + testing，而不是 DDIC。DDIC/金凸块仍贡献大量收入，但 AI 基建重要性低；mixed-signal/AI ASIC 是小业务期权，不能按已兑现收入估值。
+
+## 6. 一年后收入贡献三情景预测
+
+基准假设：2026H2 仍强于 H1，但增长不线性外推；美元汇率按 NT$31-32/USD；Q2 2026 总收入约 NT$7.15-7.45B；全年收入约 $0.95-1.10B。乐观和极度乐观取决于客户长期协议、take-or-pay、存储 OSAT 涨价、Tainan 新产能工具装机/认证速度和 memory 供需紧张持续时间。
+
+| 业务 | 当前年化收入估算 | 2027 年中基准 | 2027 年中乐观 | 2027 年中极度乐观 | AI 重要性变化 | 供需/溢价变化 |
+|---|---:|---:|---:|---:|---|---|
+| Memory products 合计 | $440-520M | $560-650M，+20-30% | $700-850M，+45-65% | $900M-1.05B，+80-110% | 维持 4/5；若 AI eSSD/DDR5 增强可到 4.5 | 基准紧；乐观供不应求；极度乐观需 LTAs/take-or-pay 和扩产认证兑现 |
+| DRAM/DDR4/DDR5 | $180-230M | $230-290M | $310-390M | $420-520M | 4/5 | DDR5/服务器内存需求维持紧张；非 HBM 溢价低于 HBM |
+| Flash/NAND/eSSD/NOR | $240-310M | $300-370M | $390-500M | $520-650M | 4/5 | eSSD 若继续由 AI cloud 拉动，供需紧；但 Flash 库存周期反复较大 |
+| Testing service | $210-270M | $260-330M | $350-450M | $500-620M | 4/5 | 测试/ATE/探针/SLT 是 AI 存储复杂度放大的瓶颈；IMOS 受益但不垄断 |
+| DDIC + gold bump | $330-380M | $350-410M | $430-500M | $530-600M | 1/5 | 汽车/OLED 修复可增，但 TV/smartphone 周期不强 |
+| Mixed-signal / PMIC / logic | $70-90M | $95-125M | $140-190M | $230-320M | 从 3 到 4，取决于 AI ASIC/DDR5 PMIC 量产 | 若进入新项目，认证后黏性高；当前证据不足 |
+| AI-related ASIC support | 接近 0-低个位数 | $10-25M | $40-80M | $120-200M | 潜在 4/5 | 极度乐观必须出现客户项目名、认证、量产线和订单金额，否则不成立 |
+
+对整体收入的三情景：
+
+| 情景 | 未来 12 个月总收入预测 | 同比增速 | 毛利率 | 净利率 | 逻辑 |
+|---|---:|---:|---:|---:|---|
+| 基准 | $0.95-1.05B | +18-28% | 14.5-16.5% | 7-9% | Q2 强、H2 好于 H1；memory 继续紧但不极端；DDIC 温和修复 |
+| 乐观 | $1.10-1.25B | +35-50% | 16.5-19.0% | 9-12% | LTAs、take-or-pay、memory OSAT 涨价和测试利用率持续；Tainan 新产能部分贡献 |
+| 极度乐观 | $1.30-1.45B | +55-75% | 19-22% | 12-15% | 数据中心/eSSD/DDR5 极度紧缺，客户抢产能；新产能快速认证；AI ASIC/PMIC 小业务放量。该情景概率较低，需月营收连续验证 |
+
+## 7. BOM、单位内容量、价格传导链、产能与认证
+
+### 7.1 必须先澄清：IMOS 不是 AI rack/GPU/光口 BOM 里的直接器件供应商
+
+对于“每 MW / 每 rack / 每 GPU / 每 optical port”的真实内容量，IMOS 的可验证口径如下：
+
+- 每 MW：无直接设计进 BOM 的内容量。IMOS 不卖电力、冷却、机柜、PDU、PSU、switch、光模块或 GPU。
+- 每 rack：无可验证固定内容量。若客户把服务器 DRAM、NAND/eSSD、PMIC、控制器、mixed-signal 的后道封测外包给 IMOS，则 IMOS 按芯片/晶圆/封装/测试收费，间接摊到 rack；公开资料无法确认具体客户和每 rack 用量。
+- 每 GPU：无公开证据显示 IMOS 参与 GPU die、HBM stack、CoWoS/2.5D 封装或 GPU 级 SLT 主链。因此可验证 direct content = 0。潜在间接内容来自 GPU 服务器外围存储/PMIC/控制器，不是 GPU 本体。
+- 每 optical port：direct content = 0。IMOS 不是 CPO/硅光/光模块封装的公开主供应商。
+
+这并不代表没有投资价值，而是投资价值来自“AI 数据中心拉高存储/后道测试需求 -> 存储客户外包产能紧 -> IMOS 利用率/价格/收入提升”的二阶传导。
+
+### 7.2 关键业务 BOM 与价格传导链
+
+| 业务 | 真实经济计量单位 | AI rack/GPU/port 内容量 | 价格传导链 | 当前产能能力（美元计） | 供应链采纳与认证 |
+|---|---|---:|---|---:|---|
+| Memory assembly/test | 每 wafer、die、package、test insertion、final test lot | 每 GPU 直接 0；每 rack 间接、不可核验，可能从低个位美元到数百美元，取决于客户是否把 DDR/eSSD/控制器后道交给 IMOS | AI/cloud demand -> DRAM/NAND/eSSD 客户产能紧 -> backend bottleneck -> OSAT price +5-18%（2025Q3 已披露区间）-> material/gold/BT substrate 传导 | 当前年化收入能力 $0.45-0.52B；按 65-70% UT 推算满载 revenue capacity $0.65-0.75B | 已被现有 memory customers 采用；具体客户名/产品认证未公开 |
+| DRAM/DDR4/DDR5 后道 | 每颗 DRAM package/test；DDR5 module PMIC 为未来小业务 | GPU HBM 直接 0；CPU host memory/DDR5 可能间接 | DDR4/DDR5 release to production -> 客户强需求 -> assembly/test 瓶颈 -> take-or-pay 扩产 | $0.18-0.23B 年化收入；满载 $0.27-0.33B | DDR4/DDR5 客户量产中；DDR5 PMIC 项目处于公司规划/支持阶段，未披露认证 |
+| Flash/NAND/eSSD 后道 | 每 NAND package、controller/PMIC test、SSD 相关 IC 后道 | GPU 直接 0；AI storage/eSSD 间接 | AI cloud eSSD demand -> enterprise NAND -> 后道测试/封装需求 -> 利用率/ASP | $0.24-0.31B 年化收入；满载 $0.35-0.45B | Flash/NAND 量产业务已存在；enterprise eSSD 客户项目未披露 |
+| Testing / wafer sort / final test | 每 test hour、insertion、wafer sort、final test | 不是按 rack/GPU/port 报价 | 芯片复杂度/测试时间上升 -> ATE/handler/probe/test floor 紧张 -> 测试 capex 与价格传导 | $0.21-0.27B 年化收入；总 testing 相关满载可到 $0.35-0.45B | Q4 2025 capex 55.2% 投向 testing，说明公司主动押注测试瓶颈 |
+| DDIC/gold bump | 每 display driver die、COF/COG/COP、gold bump wafer | AI rack/GPU/port 约 0 | 面板/汽车/OLED demand -> DDIC wafer bump/assembly/test -> 金价/材料成本传导 | $0.33-0.38B 年化收入；满载 $0.45-0.55B | 台湾 LCD driver gold bump 市占曾公开称超过 40%；成熟客户黏性中等 |
+| Mixed-signal / high-end logic / AI ASIC support | 每 PMIC、logic IC、ASIC test/assembly lot | 若进入 AI ASIC support，可按 chip 计费；当前 direct content 0 | DDR5 module PMIC/ASIC 设计定案 -> qualification -> pilot lot -> production -> 后道服务费 | 当前 $0.07-0.09B 年化；新增项目可把能力推到 $0.15B+ | 规划/早期支持阶段；未披露客户认证节点 |
+
+### 7.3 一年后产能、采纳和认证三情景
+
+| 业务 | 基准：一年后产能/采纳 | 乐观：一年后产能/采纳 | 极度乐观：一年后产能/采纳 |
+|---|---|---|---|
+| Memory products | revenue capacity $0.60-0.70B；现有客户 LTAs 吸收；认证以现有客户扩量为主 | $0.75-0.90B；take-or-pay 保护新增设备；Tainan footprint 部分投产 | $1.0B+；多客户抢产能，涨价延续；但需公开订单/认证，否则只是假设 |
+| DRAM/DDR4/DDR5 | $0.25-0.32B；DDR4/DDR5 持续量产 | $0.35-0.45B；DDR5 相关 PMIC/logic test 开始贡献 | $0.50B+；DDR5 module PMIC 或高端逻辑测试拿到大客户项目 |
+| Flash/NAND/eSSD | $0.32-0.40B；enterprise NAND/eSSD 后道延续 | $0.45-0.55B；AI cloud eSSD 项目稳定放量 | $0.65B+；极度紧缺且客户长期锁产能 |
+| Testing | $0.30-0.38B；Q4 2025 testing capex 转产 | $0.45-0.55B；test floor/ATE 利用率持续高 | $0.65B+；进入更多高端 logic/AI ASIC test，需客户认证披露 |
+| DDIC/gold bump | $0.38-0.45B；汽车/OLED 修复 | $0.50-0.58B；auto panel/OLED 加速，TV/手机不拖累 | $0.60B+；显示周期强修复，但 AI 权重仍低 |
+| Mixed-signal/AI ASIC support | $0.10-0.13B；小幅放量 | $0.15-0.22B；DDR5 PMIC 和部分高端 logic 项目量产 | $0.30B+；AI-related ASIC support 形成可披露大客户订单 |
+
+## 8. 订单积压、供给和未来一年业务增速推断
+
+### 8.1 真实 backlog 披露情况
+
+ChipMOS 不披露标准 backlog、bookings、book-to-bill、lead time 或 cancellation rate。历史 20-F 也提示，多数客户不提前很久下采购订单，合同通常不要求最低采购量。这意味着不能像设备公司那样直接用 backlog 覆盖未来收入。
+
+但 2025Q3-2026Q2 有若干准订单信号：
+
+| 信号 | 强度 | 含义 | 风险 |
+|---|---:|---|---|
+| 2025Q3 Q&A：若扩 bottleneck capacity，将要求客户签 take-or-pay | 高 | 公司不愿为短周期投机扩产，说明新增产能需要客户承诺 | 未披露客户、金额、期限 |
+| 2026 年 5 月月营收：new capacity 用于 existing customer forecasts and long-term supply agreements | 高 | 已有客户预测和 LTAs 支撑产能吸收 | forecasts 不等于不可取消订单 |
+| 2026 年 4 月月营收：customer demand visibility through 2026 | 中高 | 管理层能看到全年需求 | 可见度不是 backlog，宏观/库存可能变 |
+| 2026 年 3-5 月月营收连续强同比 | 高 | 订单正在转化为收入，不只是口头需求 | 6 月和 Q3 需继续验证 |
+| 2025Q4 memory OSAT price increase again since Q1 | 高 | 供需足够紧，能传导材料和产能成本 | 小客户双倍价格也不一定优先，显示产能分配紧 |
+| 台湾媒体/渠道关于三年产能合约、双位数增长的报道 | 中 | 方向上支持供需紧张 | 公司提醒以官方公告为准，不能当确定订单 |
+
+### 8.2 未来一年增速推断
+
+| 口径 | 收入增速预测 | 毛利率预测 | 订单/供给假设 | 取消率/风险假设 |
+|---|---:|---:|---|---|
+| 基准 | 总收入 +18-28%；memory +25-40%；DDIC +0-10%；mixed-signal +20-40% | 14.5-16.5% | LTAs 覆盖新增产能的一部分；H2 强于 H1；Q2 约 +25-30% YoY | 低到中；Flash 库存调整、DDIC 消费需求弱 |
+| 乐观 | 总收入 +35-50%；memory +50-70%；testing +50%+ | 16.5-19.0% | take-or-pay 或类 take-or-pay 客户承诺兑现；memory bottleneck 持续；测试 capex 快速转收入 | 低；客户为保产能接受涨价 |
+| 极度乐观 | 总收入 +55-75%；memory 接近翻倍；mixed-signal/AI ASIC 开始贡献 | 19-22% | 数据中心/eSSD/DDR5 持续供不应求，新 fab/工具/认证快于预期 | 中；一旦 AI 存储价格反转，极度乐观会迅速失效 |
+
+## 9. 竞争格局、技术主流性、替代方案和客户切换成本
+
+### 9.1 主要竞争对手
+
+| 领域 | 竞争对手 | IMOS 相对位置 |
+|---|---|---|
+| 综合 OSAT | ASE/SPIL、Amkor、JCET、Tongfu、Huatian、UTAC | IMOS 规模更小，优势更集中在台湾存储/DDIC/金凸块/测试，不是最强先进封装平台 |
+| 存储后道/测试 | Powertech Technology (PTI)、ASE、Amkor、KYEC、IDM 内部后道、部分中国 OSAT | PTI 在存储 OSAT 更强；IMOS 能从客户结构和瓶颈扩产受益，但不垄断 |
+| DDIC/gold bump/COF/COG | Chipbond、ASE、LB Semicon、Nepes、显示驱动生态内封测厂 | IMOS 在台湾 gold bump/DDIC 有历史地位；但 DDIC 增长慢、周期性强 |
+| 高端 AI 封装/HBM | TSMC CoWoS、SK hynix/Samsung/Micron 内部 HBM、ASE/Amkor 高端封装、Advantest/Teradyne/FormFactor 等测试设备/探针链 | IMOS 不是公开主链。AI 受益是二阶，不应与 CoWoS/HBM 龙头等同 |
+| AI ASIC/高端 logic test | KYEC、ASE、Amkor、Teradyne/Advantest 生态、客户自有测试 | IMOS 处于规划/切入阶段，需认证证明 |
+
+### 9.2 新技术是否是未来主流
+
+- 存储测试/封测复杂度上升是主流：AI 基建推动 HBM、DDR5、LPDDR、eSSD、CXL/memory expansion、AI ASIC 周边 PMIC/控制器需求，后道测试时间和质量要求上升。IMOS 的 testing 和 memory 后道方向符合主流。
+- 但 IMOS 的当前主力不是最高端 AI 主流封装：主流 AI 加速器仍在 TSMC CoWoS/SoIC、HBM3E/HBM4、ABF/RDL/大尺寸基板、HBM stack、KGD/SLT 这条链上。IMOS 未披露进入这些核心项目。
+- DDIC/gold bump 是成熟技术，不是 AI 主流。它能提供现金流和周期修复，但不是高估值 AI 逻辑。
+- AI-related ASIC support 是潜在主流方向之一，但公司只披露“plan to support”，没有客户项目名、认证、量产收入，必须按期权处理。
+
+### 9.3 替代方案与风险
+
+| 风险/替代 | 对 IMOS 的影响 | 观察指标 |
+|---|---|---|
+| 存储客户内部化后道或转向 PTI/ASE/Amkor | 压制 IMOS 扩产兑现和价格 | memory revenue share、客户 LTAs、capex 转收入速度 |
+| HBM/CoWoS 瓶颈转移但 IMOS 不在主链 | AI 叙事可能被证伪 | 是否披露 HBM/AI ASIC/PMIC 认证或客户项目 |
+| DRAM/NAND 价格反转 | OSAT 涨价能力和利用率下降 | 月营收 MoM、DRAM/NAND 现货/合约价、客户库存 |
+| DDIC 需求走弱 | 现金流和毛利拖累 | auto/OLED/TV/smartphone mix、DDIC UT、bumping UT |
+| 金价/BT substrate/电费上涨 | 毛利率受压；若不能传导则利润回落 | Q2/H1 2026 毛利率、management 对材料成本传导表述 |
+| 新产能认证慢 | 收入不及预期、折旧先行 | capex、depreciation、UT、客户 take-or-pay 披露 |
+| 台湾地缘/汇率 | 非经营项波动大，2025 已被 FX 拖累 | NT$/USD、non-operating income/expense |
+
+### 9.4 客户切换成本
+
+客户切换成本中等偏高，但不是不可替代：
+
+- 技术切换成本：测试程序、yield data、qualification、package reliability、wafer maps、工程批和量产爬坡都需要时间，通常是数月到 1-2 年；高复杂度/车规/新产品更长。
+- 商务切换成本：若签 LTAs/take-or-pay，短期锁定更强；但 OSAT 行业本质仍有多个可替代厂商。
+- 产能切换成本：紧缺期客户更看重供货确定性，愿意接受涨价；宽松期则议价回到客户。
+- IMOS 的 moat：在台湾本地、DDIC/gold bump、memory 后道和 turnkey 上有工程和客户关系优势；但不是 TSMC CoWoS/HBM 那种系统级瓶颈垄断。
+
+## 10. 投资判断：三个需要分开的变量
+
+### 10.1 当前最强事实
+
+1. 2026Q1 收入 NT$6.936B，同比 +25.4%，净利 NT$504.9M，Q1 已经超过 2025 全年净利的一半以上。
+2. 2026 年 4-5 月收入仍强，4 月同比 +32.2%，5 月同比 +17.7%，Q2 同比大概率继续高增长。
+3. 2025Q4 memory products 接近 50% 收入，且同比 >55%；DRAM、Flash、testing 是最重要的增长线。
+4. 公司明确提到 AI/data center demand-supply imbalance、客户可见度 through 2026、existing customer forecasts、long-term supply agreements。
+5. Q4 2025 毛利率 14.3%，Q1 2026 约 13.8%，明显高于 2025Q2 的 6.6%。
+
+### 10.2 当前最容易被误读的地方
+
+- IMOS 不是 HBM 龙头，也不是 CoWoS 龙头；目前没有可验证 GPU/HBM/光口直接 BOM 内容量。
+- “AI 相关”收入大多是二阶：数据中心拉动 memory 客户，memory 客户拉动后道封测和测试。
+- DDIC/gold bump 收入占比仍大，但 AI 基建重要性低；不能把全部收入按 AI 倍数重估。
+- 2026-06-11 股价已快速上涨，短期估值容错下降。
+
+### 10.3 最值得跟踪的验证清单
+
+| 优先级 | 指标 | 为什么重要 | 触发条件 |
+|---|---|---|---|
+| 高 | 2026 年 6 月和 Q2 月营收 | 验证 Q2 是否 +25-30% YoY | 6 月 ≥ NT$2.35B 强；<NT$2.1B 要警惕 |
+| 高 | H1 2026 毛利率 | 验证涨价和利用率是否覆盖材料/折旧 | ≥15% 强；<13% 弱 |
+| 高 | memory revenue share | 验证 AI/DC 间接受益 | >52% 强；回落到 <45% 弱 |
+| 高 | testing capex 转收入 | 验证测试瓶颈投资回报 | testing revenue/UT 上升 |
+| 高 | LTAs/take-or-pay/客户承诺披露 | 验证 backlog 替代指标 | 披露金额、期限、客户行业最好 |
+| 中 | PMIC of DDR5 modules / AI-related ASIC support | 验证小业务期权 | 出现客户认证、pilot lot、量产收入 |
+| 中 | DDIC auto/OLED mix | 防止 DDIC 拖累 | auto panel/OLED 占比持续上升 |
+| 中 | FX 和材料成本传导 | 防止 2025 式非经营拖累 | FX loss 缩小、价格传导明确 |
+
+## 11. 资料来源
+
+### 公司与财务数据
+
+- ChipMOS Q1 2026 Results PDF（2026-05-12）：`https://chipmostechnologiesinc.gcs-web.com/static-files/9b3e494b-5e2f-4eda-93af-42cfcdba4996`
+- ChipMOS Q4/FY2025 Results PR（2026-02-24）：`https://www.prnewswire.com/news-releases/chipmos-reports-fourth-quarter-and-full-year-2025-results-302695386.html`
+- ChipMOS Q4/FY2025 Earnings Call Transcript PDF：`https://chipmostechnologiesinc.gcs-web.com/static-files/0b09b826-c72c-4ba8-a5b3-df33507cdaa8`
+- ChipMOS Q3 2025 Results PR（2025-11-11）：`https://www.prnewswire.com/news-releases/chipmos-reports-third-quarter-2025-results-302611165.html`
+- ChipMOS Q3 2025 Earnings Call Transcript PDF：`https://chipmostechnologiesinc.gcs-web.com/static-files/7488f6bf-0cf2-4ee3-9959-655781e50fc5`
+- ChipMOS Q2 2025 Results PR（2025-08-12）：`https://www.prnewswire.com/news-releases/chipmos-reports-second-quarter-2025-results-302527273.html`
+- ChipMOS March 2026 revenue / Q1 2026 revenue PR：`https://www.barchart.com/story/news/1237831/chipmos-reports-23-1-yoy-increase-in-march-2026-revenue-25-4-yoy-increase-in-1q26-revenue`
+- ChipMOS April 2026 revenue PR：`https://www.prnewswire.com/news-releases/chipmos-reports-32-2-yoy-increase-in-april-2026-revenue-302766541.html`
+- ChipMOS May 2026 revenue PR：`https://www.prnewswire.com/news-releases/chipmos-reports-17-7-yoy-increase-in-may-2026-revenue-302796285.html`
+- ChipMOS Product pages：`https://www.chipmos.com/english/product/detail.aspx?MID=15`、`https://www.chipmos.com/english/product/detail.aspx?MID=5`、`https://www.chipmos.com/english/product/detail.aspx?MID=6`、`https://www.chipmos.com/english/product/detail.aspx?MID=1`
+- StockAnalysis IMOS statistics（2026-06-11）：`https://stockanalysis.com/stocks/imos/statistics/`
+- ChipMOS dividend/ADS related PR（ADS dividend ratio side evidence）：`https://www.prnewswire.com/news-releases/chipmos-shareholders-approve-cash-dividend-distribution-of-nt1-23-per-common-share-or-approximately-us0-78-per-ads-302782672.html`
+
+### 项目内行业资料
+
+- `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_存储晶圆制造_2026-06-11.md`
+- `行业调研/产业背景/conference_update_semicon_china_2026_2026-06-10.md`
+- `行业调研/产业背景/conference_update_ectc_2026_2026-06-11.md`
+
+## 12. 一句话结论
+
+IMOS 的 2026 投资核心不是“直接卖给 AI GPU 的 HBM/CoWoS 内容量”，而是“AI 数据中心拉动 DRAM/DDR5/NAND/eSSD 供需失衡，进而推高存储后道封测、测试利用率和价格”的二阶弹性。基准情况下它是一只存储后道周期复苏股；乐观情况下是 memory/test bottleneck 扩产和客户 LTAs 驱动的高经营杠杆股；极度乐观情况必须看到 AI ASIC/PMIC 或高端逻辑测试的明确客户认证和量产披露，否则不能提前当作已兑现 AI 主链标的。

@@ -1,0 +1,166 @@
+# 公司收入传导与价值传导评估：nVent Electric（NVT）
+
+报告日期：2026-06-12  
+资料截止：2026-06-12，美西时间。  
+主口径：NTM = 2026Q2 至 2027Q1 的未来四个季度经营窗口。金额除特别说明外为“亿美元”。1 亿美元 = 100 million dollars。  
+研究边界：只评估行业与产品需求如何传导为 NVT 可确认收入、利润、现金流和经营质量；不做公司排序，不给投资评级，不判断股价区间，不使用市场价格或估值倍数作为经营传导证据。  
+当前预期锚：管理层 2026 全年销售增长指引 +26%-28% reported、+21%-23% organic，对应 2026 年 continuing operations 收入约 49.05-49.84 亿美元；Q1 2026 销售 12.420 亿美元、调整后营业利润率 20.0%、backlog 26 亿美元、有机订单约 +40%；Investor Day 披露 2025 年数据中心收入超过 10 亿美元。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口，即 2026Q2-2027Q1；FY2026 指引、2027 年中 run-rate、Rubin/800VDC/1MW rack 等只作为补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：2025 continuing revenue 38.931 亿美元；Q1 2026 revenue 12.420 亿美元，年化约 49.68 亿美元；2026 全年管理层指引 49.05-49.84 亿美元；Q1 backlog 26 亿美元，相当于 2026 指引收入的约 52%-53%。
+- 重要产品/业务线：液冷系统与液冷小组件/服务；高密度机柜、围护与白空间 PDU；灰空间工程化电气建筑和预制电力模块；Electrical Connections 的电力连接、接地、线缆管理和低压配电；工业/商住等非 AI 基础业务。
+- NTM 公司收入四情景：悲观 47.0-49.5 亿美元；基准 50.5-52.5 亿美元；乐观 54.0-57.5 亿美元；极度乐观 59.0-63.5 亿美元。基准不是把 AI 行业高增直接外推，而是让 Q1 backlog、2026 指引和已可见订单正常兑现。
+- 利润或 EBITDA 四情景：悲观 adjusted operating margin 18.5%-19.5%，adjusted EBITDA 11.0-12.0 亿美元；基准 adjusted operating margin 20.0%-20.8%，adjusted EBITDA 12.3-13.4 亿美元；乐观 adjusted operating margin 21.0%-22.0%，adjusted EBITDA 13.7-15.0 亿美元；极度乐观 adjusted operating margin 22.5%-24.0%，adjusted EBITDA 15.8-18.0 亿美元。
+- 最大传导瓶颈：backlog 转收入不是简单发货问题，液冷/CDU/manifold 客户认证、现场调试、灰空间工程项目交付、外部 switchgear/变压器/并网节奏和客户架构变更共同决定收入确认。
+- 最大利润率变量：Q1 2026 毛利率 35.9%，同比下降 290bp；关税约 8000 万美元、铜/钢/电子件/人工通胀、并购整合和扩产投入决定收入能否留下来。
+- 最大现金流变量：Q1 2026 FCF 0.538 亿美元，但 working capital 消耗 1.28 亿美元；未来一年若 backlog 快速转收入，应收、库存、项目预制件和服务网络会继续占用现金。
+- 可信度：中高。公司级收入、分部收入、指引、backlog 和数据中心收入有 A/B 级证据；产品级拆分、液冷/机柜/PDU/灰空间的精确收入需要估算，属于 B/C 级；800VDC、1MW rack、传感/软件订阅属于 C/D 级，不能进入基准 NTM。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 液冷系统与液冷小组件/服务：CDU、RDHx、HRU、manifold、leak detection、传感、现场服务 | 2025 估算 3.5-5.0 亿美元；Q1 2026 年化估算 6.5-9.0 亿美元 | 约 13%-18% run-rate | 数据中心增长核心，决定 NVT 是否从机柜/电气件升级为 AI rack 系统供应商 | B/C：数据中心收入、orders/backlog、NVIDIA/Siemens/Google OCP 相关披露强；产品收入未逐项披露 | 进入基准，但用保守折扣；C/D 级新品只进乐观或极度乐观 | 800VDC e-pump CDU、smart manifold telemetry、Rubin/Rubin Ultra 高温水方案 |
+| 高密度机柜、围护、白空间 PDU 与 power management | Q1 2026 年化估算 3.0-4.5 亿美元，不含已归入液冷系统的 manifold/CDU | 约 6%-9% run-rate | 受 100kW+ rack、液冷 ready cabinet、PDU/telemetry 和 rack-scale 验收驱动 | B/C：white-space 产品被披露，具体客户/产品收入未拆分 | 进入基准，按已披露数据中心收入和 Systems Protection 增长保守纳入 | 500kW-1MW rack、800VDC sidecar 机械/安全围护、rack-level telemetry/security |
+| 灰空间工程化电气建筑、控制建筑、预制电力模块和 power utility/data center engineered solutions | Q1 2026 年化估算 7.0-9.0 亿美元，含 Trachte/EPG 相关贡献和 power utility/data center 项目 | 约 14%-18% run-rate | time-to-power、并网、预制化交付和电力公用事业订单的主载体 | B：并购、segment 收入、backlog 和基础设施增长可见；项目级客户未完全披露 | 进入基准；项目交付节奏决定 NTM 确认 | 大型 AI campus 标准化 e-house / modular electrical building |
+| Electrical Connections 基础设施：电力连接、接地/等电位、线缆管理、低压配电、CADDY/ERICO/ILSCO/ERIFLEX 等 | Q1 2026 Electrical Connections 收入 3.472 亿美元；其中 infrastructure 年化估算 5.5-7.0 亿美元 | 约 11%-14% run-rate | 利润率底盘和 AI/utility pull-through；单件不大但认证、安装效率和渠道价值高 | A/B：分部收入和利润率 A，infrastructure 拆分 B/C | 进入基准；但不把全部 Electrical Connections 当作 AI 增量 | DC-rated/HVDC protection、智能线缆管理、预制化 fast-install kit |
+| 工业、商业/住宅和非 AI continuing operations 基础业务 | Q1 2026 非 Infrastructure 约 44% 销售，年化约 21.9 亿美元 | 约 42%-45% run-rate | 稳定现金流和规模底盘，也可能稀释 AI 高增长 | A：分部和终端市场披露 | 进入基准，按低速增长或稳定处理 | 不作为 AI 远期期权；只作为利润底盘和抵消项 |
+| 已出售 Thermal Management | 0，continuing operations 不含 | 0 | 不再贡献 continuing revenue | A：已完成出售并重列 discontinued operations | 排除 | 排除 |
+
+证据等级说明：A = 已披露收入/分部收入/正式指引；B = 订单、backlog、正式合同、可验证客户项目或明确交付路径；C = design win、客户认证、产能规划或管理层可验证披露；D = 产品发布、样品、测试、早期合作；E = 只有主题相关性。
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不判断 NVT 份额、收入确认或利润率。需求锚以行业资料、客户资本开支、AI rack 功率密度、项目订单池和公司披露的终端需求为基础；相对当前预期以“2026 AI 基建高增长、但电力/液冷/MEP 仍限制交付”的当前路径为基准。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 液冷系统与液冷小组件/服务 | 严格全球液冷供应商收入 2026E 约 40-60 亿美元；AI 高密 rack 液冷小组件/流体控制订单池约 80-180 亿美元；GB200/GB300/Rubin 类 rack 推动单相 D2C + CDU + manifold | NTM 严格收入池只增至约 50-65 亿美元；AI rack 验收慢，液冷项目推迟 | NTM 严格收入池约 60-80 亿美元；GB200/GB300 正常放量，CDU/manifold 成为高密 rack 标配 | NTM 严格收入池约 80-110 亿美元；2026H2 大客户锁产能、液冷 retrofit 和 colo 扩散 | NTM 严格收入池 120 亿美元以上；Rubin/ASIC 同步加速，液冷从训练扩到推理/enterprise | 相对 2026 严格收入池约 -10 至 +60 亿美元；订单池弹性更大但不可全映射为收入 | 悲观低于当前预期；基准符合当前预期；乐观/极度乐观高于当前预期 | 正向：NVT Q1 data center growth led by liquid cooling、行业资料显示液冷成为 100kW+ rack 前提。反证：field failure、客户自研、CDU/服务产能和 facility loop 拖累 |
+| 高密度机柜、围护、白空间 PDU 与 power management | 2026 高密 AI rack 约 4-12 万柜；rack density 基准 60-160kW/rack，乐观 80-200kW/rack；低压配电/PDU/母线槽美国 AI 项目订单池约 80-140 亿美元 | rack 采购延迟或改规格，100kW+ rack 渗透低于预期；PDU/机柜以双供压价为主 | GB200/GB300 交付带动 reinforced rack、liquid-ready cabinet、smart PDU 正常增长 | 80-200kW rack 占比提高，PDU/机柜与液冷 bundle，客户愿为认证和短交期付溢价 | Rubin/MI400/Trainium3 把 180-250kW rack 变成 2027 主线，500kW+ 试点提前形成 NTM 订单 | 高密 rack 需求相对基准可少 2-4 万柜或多 3-8 万柜；PDU/低压项目池可从 80 亿美元下沿扩到 180 亿美元以上 | 基准符合当前预期；乐观需要客户加速和 high-density attach 上升 | 正向：机柜行业资料指向“裸机柜温和增长，AI 高密附加件高速增长”。反证：ODM/JDM 自研、机柜/PDU commodity 化、800VDC 架构改写价值位置 |
+| 灰空间工程化电气建筑和预制电力模块 | 美国 AI 数据中心 2026 务实建设规模 3100-3900 亿美元；电力/UPS/BESS/配电订单 300-490 亿美元；建筑/土建/MEP 320-520 亿美元 | 电力接入、审批、变压器/switchgear 或融资拖慢开工，工程建筑订单推迟 | power utility 和 data center gray-space 正常扩张；time-to-power 维持客户愿付溢价 | hyperscaler/colo 为压缩交付周期扩大预制化模块、电气建筑和 e-house 采购 | 多个 300MW+ / 500MW+ AI campus 同时推进，预制化成为标准采购方式 | 相对务实需求，悲观少 20%-30%，乐观多 25%-45%，极度乐观多 50%+ | 基准符合当前预期；乐观高于当前项目节奏 | 正向：行业最大瓶颈在电力接入/变压器/switchgear，NVT Trachte/EPG 正好在灰空间和电力建筑。反证：外部开关设备/变压器缺货导致 NVT 自身建筑无法验收 |
+| Electrical Connections 基础设施：连接、接地、线缆管理、低压配电 | AI 项目提高电力路径、接地、线缆管理、支撑/快装、低压连接件需求；高端项目重视 UL/NEMA/CSA/IEC、NEC、安装效率和本地交付 | 普通连接件价格竞争、铜/钢/关税吞噬需求；工业/商住低速拖累 | infrastructure pull-through 正常，电力公用事业和数据中心抵消普通工业周期 | 预制化、认证件和快装支撑成为 AI 项目标准，Electrical Connections organic growth 重回双位数 | 电力/液冷/线缆路径一体化 kit 成为高端 AI hall 标配，连接件和传感/监控 attach 上升 | 相对基准增量约 -1 至 +4 亿美元 NVT 年化可服务需求，行业订单池更大但分散 | 基准符合当前预期；乐观需要 EC segment ROS 修复并伴随需求上修 | 正向：NVT Q1 EC organic +7.9%，基础设施贡献约 6%。反证：低端 conduit/tray/connection 商品化和固定价项目成本 |
+| 工业、商业/住宅和非 AI 基础业务 | Q1 2026 Industrial 25%、Comm/Resi 19%；工业自动化、制造、商建和住宅电气升级低速增长 | 工业/商住需求下滑 5%-10%，抵消部分 AI 增长 | 低个位数至中个位数增长，作为现金流底盘 | 工业自动化、半导体厂、商建改造带来中个位数到高个位数增长 | 与 AI 无关，极度乐观弹性有限 | 绝对变化多为数亿美元级，不是公司 alpha 主来源 | 基准按当前预期处理；不因 AI 叙事上调 | 反证：传统短周期业务若降速，会压低公司 mix 和利润杠杆 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断外部需求中哪些能进入 NVT 的 NTM 收入表，以及当前可收入化基数。公司参与某个需求池不等于能确认收入；基准优先使用 A/B 级收入表、分部、指引、backlog 和明确交付路径，C 级设计/产能证据只有保守折扣后才进入基准，D/E 级只进乐观、极度乐观或附录跟踪。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 液冷系统与液冷小组件/服务 | 2025 data center sales >10 亿美元；Q1 2026 data center 增长由 liquid cooling 带动；NVT 在 Investor Day 称数据中心已约 10 亿美元销售且液冷容量年末约翻倍 | 直接 | 高成长、高认证、高服务价值；短期受扩产和调试成本影响 | 6.0-7.5 亿美元 | 8.0-10.0 亿美元 | 10.5-13.0 亿美元 | 15.0-18.0 亿美元 | 基准符合当前指引和 backlog 转收入；乐观高于当前预期 | B/C | 是，保守纳入 | 订单/backlog、数据中心收入、NVIDIA partner/reference architecture、Siemens reference、产能扩张 | NTM 基准收入可以纳入；GB300/Rubin/800VDC 相关额外收入只进乐观/极度乐观 |
+| 高密度机柜、围护、白空间 PDU 与 power management | Systems Protection Q1 2026 revenue 8.948 亿美元；white-space 产品披露包括 racks/cabinets/liquid cooling/PDU/enclosures/precision slides/power connections | 直接 | 中高毛利，受 bundle、认证和交期支撑；空柜和普通 PDU 容易商品化 | 3.2-4.2 亿美元 | 4.0-5.5 亿美元 | 5.5-7.0 亿美元 | 8.0-10.0 亿美元 | 基准略高于 2025 run-rate，但符合高密 rack 交付；极度乐观只是上限 | B/C | 是，保守纳入 | Systems Protection 增长、数据中心白空间产品、行业 rack/PDU 需求 | NTM 基准纳入；500kW-1MW rack 和 800VDC sidecar 不进基准 |
+| 灰空间工程化电气建筑和预制电力模块 | Trachte、EPG 并入；Q1 2026 backlog 26 亿美元；Infrastructure Q1 约 56% 销售，power utilities/data centers 领先 | 直接 | 项目型利润，中高经营杠杆；长周期交付和外部电力设备决定确认 | 6.5-7.8 亿美元 | 7.8-9.5 亿美元 | 9.5-11.0 亿美元 | 12.0-14.0 亿美元 | 基准符合 current backlog 和指引；乐观要求项目集中交付 | B | 是 | Trachte/EPG 收购、record backlog、Infrastructure vertical 增长 | NTM 基准纳入；大型新 campus 超额订单只作为乐观/极度乐观 |
+| Electrical Connections 基础设施 | Electrical Connections Q1 2026 revenue 3.472 亿美元，organic +7.9%，segment ROS 24.4%；infrastructure 贡献约 6% organic | 直接 | 高分部利润率，但 Q1 受通胀、mix、投资和关税压制 | 5.0-6.0 亿美元 | 6.0-7.2 亿美元 | 7.2-8.5 亿美元 | 9.0-10.5 亿美元 | 基准符合 segment growth；乐观需要 organic 从高个位数走向双位数且 ROS 修复 | A/B | 是 | 分部披露 A；infrastructure 细分由管理层/10-Q 描述和行业需求映射 | NTM 基准纳入；HVDC/智能监测等 C/D 机会只作上限 |
+| 工业、商业/住宅和非 AI 基础业务 | Q1 2026 Industrial 25%、Commercial/Residential 19%，合计约 5.46 亿美元；年化约 21.9 亿美元 | 直接 | 现金流底盘，增速低于 AI 基建；可稀释或稳定利润 | 21.5-23.0 亿美元 | 22.0-23.5 亿美元 | 22.0-24.0 亿美元 | 23.0-25.0 亿美元 | 基准按当前 run-rate；不因 AI 叙事上调 | A | 是 | 终端市场 mix 和分部收入 | NTM 基准纳入，作为公司级抵消项 |
+| 已出售 Thermal Management | 2025 年 1 月出售，continuing operations 不含 | 无 | 无 | 0 | 0 | 0 | 0 | 排除 | A | 否 | discontinued operations | 排除 |
+| 800VDC、1MW rack、Rubin Ultra、独立软件/telemetry subscription | 产品发布、标准参与、reference architecture 或行业资料；当前未披露可确认收入 | 间接或早期直接 | 潜在高毛利，但认证和商业化时间不明 | 0 | 0 | 0-0.5 亿美元 | 1.0-3.0 亿美元 | 不属于当前预期主口径 | C/D | 否 | NTM 客户、价格、交付和收入确认路径不足 | 不进基准；列乐观上限、极度乐观或附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求和收入基数出发，判断每个重要产品在 NTM 对 NVT 的收入、利润和经营质量贡献。产品级数字为公司未完全披露口径下的估算，用于传导校准，不等于公司正式指引。产品级乐观和极度乐观值不能机械相加为公司情景；公司汇总已按共享客户预算、bundle 归属、交付瓶颈和非 AI 基础业务去重。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 液冷系统与液冷小组件/服务 | 悲观 | 6.0-7.5 亿美元 | 调整后经营利润 1.0-1.4 亿美元 | 低于公司平均或接近平均，扩产/调试成本吞噬 | 低于当前预期 | backlog 转收入慢、客户 qualification 拉长、CDU/manifold/服务瓶颈 | 保留为悲观下限 | field failure、客户自研液冷、facility water loop 不足 |
+| 液冷系统与液冷小组件/服务 | 基准 | 8.0-10.0 亿美元 | 1.7-2.2 亿美元 | 高于公司平均但非线性扩张有限 | 符合当前预期 | Q1 data center led by liquid cooling；NVIDIA/Siemens/OCP 相关证据；产能扩张 | 保留 | 产品级收入未披露，需用公司 data center 收入和 SP segment 估算 |
+| 液冷系统与液冷小组件/服务 | 乐观 | 10.5-13.0 亿美元 | 2.5-3.4 亿美元 | 上行，来自 mix、服务、认证和规模效应 | 高于当前预期 | 2026H2 orders 继续强、液冷容量顺利爬坡、客户把 CDU/manifold/leak detection 纳入标准 BOM | 保留，但不作为基准 | 需要“谁买、买什么、何时确认”的后续披露 |
+| 液冷系统与液冷小组件/服务 | 极度乐观 | 15.0-18.0 亿美元 | 4.0-5.4 亿美元 | 明显上行，若服务/telemetry attach 高 | 显著高于当前预期 | Rubin/GB300/ASIC 同步放量、NVT attach rate 上升、产能和现场服务同步突破 | 下移为乐观上限，除非 Q2/Q3 backlog 继续扩张 | 任一核心环节缺证据会降为乐观 |
+| 高密度机柜、围护、白空间 PDU 与 power management | 悲观 | 3.2-4.2 亿美元 | 0.5-0.8 亿美元 | 低于或接近公司平均 | 低于当前预期 | 机柜/PDU 双供、客户压价、设计变更造成库存/返工 | 保留 | 空柜和普通 PDU commodity 化 |
+| 高密度机柜、围护、白空间 PDU 与 power management | 基准 | 4.0-5.5 亿美元 | 0.8-1.2 亿美元 | 接近公司平均，认证件优于普通机柜 | 符合当前预期 | GB200/GB300 高密 rack、liquid-ready cabinet、smart PDU 与 Systems Protection 增长 | 保留 | 产品收入未逐项披露；需要防止与液冷 bundle 重复 |
+| 高密度机柜、围护、白空间 PDU 与 power management | 乐观 | 5.5-7.0 亿美元 | 1.2-1.8 亿美元 | 小幅上行 | 高于当前预期 | 80-200kW rack 渗透提升，PDU/机柜与液冷打包，客户为短交期付溢价 | 保留 | ODM/JDM 自研机柜和 power shelf 集成压缩第三方内容量 |
+| 高密度机柜、围护、白空间 PDU 与 power management | 极度乐观 | 8.0-10.0 亿美元 | 2.0-2.8 亿美元 | 上行但低于液冷极度弹性 | 显著高于当前预期 | Rubin 180-250kW rack 成为主线，NVT 进入多个标准 rack design | 下移为乐观上限 | 800VDC/sidecar 价值可能转向 Schneider/Vertiv/Delta/ABB/电源电子链 |
+| 灰空间工程化电气建筑和预制电力模块 | 悲观 | 6.5-7.8 亿美元 | 1.0-1.4 亿美元 | 下行或持平，项目成本和低利用率压制 | 低于当前预期 | utility interconnect、switchgear/transformer、EPC 接口延迟 | 保留 | 项目收入确认和验收受外部供给瓶颈影响 |
+| 灰空间工程化电气建筑和预制电力模块 | 基准 | 7.8-9.5 亿美元 | 1.6-2.0 亿美元 | 接近公司平均，Trachte/EPG 整合改善 | 符合当前预期 | 26 亿美元 backlog、Infrastructure 56% mix、power utility/data center 需求 | 保留 | backlog 期限未披露，不能把总 backlog 全部当 NTM 收入 |
+| 灰空间工程化电气建筑和预制电力模块 | 乐观 | 9.5-11.0 亿美元 | 2.1-2.8 亿美元 | 上行，来自规模和预制化交付溢价 | 高于当前预期 | 300MW+ / 500MW+ AI campus 为 time-to-power 采购预制化模块 | 保留 | 客户项目集中，一旦并网推迟会滑出 NTM |
+| 灰空间工程化电气建筑和预制电力模块 | 极度乐观 | 12.0-14.0 亿美元 | 2.9-3.8 亿美元 | 上行，但项目执行风险高 | 显著高于当前预期 | 预制电气建筑成为大客户标准采购，Trachte/EPG 产能爬坡 | 下移为乐观上限 | 固定价项目、现场变更和外部设备缺货 |
+| Electrical Connections 基础设施 | 悲观 | 5.0-6.0 亿美元 | 1.0-1.4 亿美元 | 低于历史分部利润率 | 低于当前预期 | Q1 ROS 24.4%，同比 -390bp；通胀、关税和 mix 压制 | 保留 | 需求增长不等于价格保留 |
+| Electrical Connections 基础设施 | 基准 | 6.0-7.2 亿美元 | 1.5-1.9 亿美元 | 稳定到小幅修复 | 符合当前预期 | EC Q1 organic +7.9%，infrastructure 贡献约 6%，品牌/渠道/认证强 | 保留 | 工业/商住稀释，低端连接件分散竞争 |
+| Electrical Connections 基础设施 | 乐观 | 7.2-8.5 亿美元 | 2.0-2.6 亿美元 | 上行，ROS 向 26%-28% 修复 | 高于当前预期 | 数据中心和 power utility pull-through 强，价格/生产率抵消关税 | 保留 | 需要 EC organic 回到双位数或 backlog 证据增强 |
+| Electrical Connections 基础设施 | 极度乐观 | 9.0-10.5 亿美元 | 2.7-3.4 亿美元 | 明显上行但需高附加值 mix | 显著高于当前预期 | 线缆/接地/低压连接成为高密 AI hall 标准 kit，HVDC 保护早期起量 | 下移为乐观上限 | 普通连接件不能按 HVDC/telemetry 高毛利外推 |
+| 工业、商业/住宅和非 AI 基础业务 | 悲观 | 21.5-23.0 亿美元 | 3.7-4.4 亿美元 | 下行，需求和 mix 拖累 | 低于当前预期 | 商住和工业短周期走弱 | 保留 | 周期下行抵消 AI 增长 |
+| 工业、商业/住宅和非 AI 基础业务 | 基准 | 22.0-23.5 亿美元 | 4.2-4.8 亿美元 | 稳定 | 符合当前预期 | Q1 非 Infrastructure 仍约 44%，现金流底盘可见 | 保留 | 不是 AI 增量，不得因为题材上调 |
+| 工业、商业/住宅和非 AI 基础业务 | 乐观 | 22.0-24.0 亿美元 | 4.4-5.1 亿美元 | 稳定到小幅上行 | 略高于当前预期 | 工业自动化、制造建设、商建电气化改善 | 保留但权重低 | 对公司极度乐观贡献有限 |
+| 工业、商业/住宅和非 AI 基础业务 | 极度乐观 | 23.0-25.0 亿美元 | 4.8-5.6 亿美元 | 小幅上行 | 不是核心超预期来源 | 多终端同步改善 | 仅作跟踪 | 不构成 AI 传导核心 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献去重后合成为 NTM 公司总收入、毛利率、经营利润率、EBITDA、净利润和自由现金流方向。公司表不讨论市场定价，不把产品级极值机械相加；已排除已出售 Thermal Management、远期 800VDC/1MW rack 无客户时间表收入和重复 bundle。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 47.0-49.5 亿美元 | 较 2025 continuing revenue +21%-27% | 低于 FY2026 指引隐含 run-rate 和 Q1 backlog 兑现路径；增长仍高但低于当前经营预期 | 34.5%-35.5% | adjusted operating margin 18.5%-19.5% | adjusted EBITDA 11.0-12.0 亿美元；adjusted net income 6.5-7.2 亿美元 | FCF 5.5-6.5 亿美元；working capital 占用上升，现金转化低于 90% | 中 | backlog 转收入推迟、液冷现场验收慢、EC ROS 不修复、关税/原材料压制 |
+| 基准公司 | 50.5-52.5 亿美元 | 较 2025 continuing revenue +30%-35% | 接近 2026 指引、Q1 run-rate 和 Q1 2027 温和增长；高可信业务正常兑现，低证据机会保守处理 | 36.0%-37.0% | adjusted operating margin 20.0%-20.8% | adjusted EBITDA 12.3-13.4 亿美元；adjusted net income 7.5-8.2 亿美元 | FCF 6.8-7.8 亿美元；接近 90%-95% adjusted net income conversion | 中高 | 产能和服务交付需要追上 backlog；毛利率需从 Q1 35.9% 修复 |
+| 乐观公司 | 54.0-57.5 亿美元 | 较 2025 continuing revenue +39%-48% | 高于当前预期；不是单一小基数项目，而是液冷、灰空间、电力连接和机柜/PDU 同时强于基准 | 37.0%-38.2% | adjusted operating margin 21.0%-22.0% | adjusted EBITDA 13.7-15.0 亿美元；adjusted net income 8.5-9.6 亿美元 | FCF 7.8-9.0 亿美元；若客户预付款或 milestone 改善，现金流质量上升 | 中 | Q2/Q3 orders 需继续强，液冷产能、客户认证和工程交付不能掉链 |
+| 极度乐观公司 | 59.0-63.5 亿美元 | 较 2025 continuing revenue +52%-63% | 显著高于当前预期；需要需求、公司捕获、利润质量和执行质量同时突破 | 38.0%-40.0% | adjusted operating margin 22.5%-24.0% | adjusted EBITDA 15.8-18.0 亿美元；adjusted net income 10.0-12.0 亿美元 | FCF 9.0-11.0 亿美元，但大规模 ramp 可能先消耗应收和库存 | 中低 | 极度乐观不能只靠 Rubin/800VDC 远期期权；必须看到 backlog 继续扩张、液冷认证扩展、margin 明确修复 |
+
+公司汇总校验：
+
+- 2026 全年管理层收入指引为 49.05-49.84 亿美元，基准 NTM 高于 FY2026 指引的原因是 NTM 包含 2027Q1，同时扣除已披露的 2026Q1。
+- Q1 2026 backlog 26 亿美元为收入可见性强锚，但公司未披露产品级 backlog、客户项目名和取消率；因此第二步和第三步不把总 backlog 全额塞进单一产品。
+- Q1 2026 毛利率 35.9%，低于 2025Q1 38.8%；利润情景必须先处理关税、通胀、mix、扩产和并购整合，不能因收入增长自动假设经营杠杆。
+- 基准现金流用公司 90%-95% adjusted net income conversion 作为目标，但高增长 NTM 中应收、库存和项目交付会阶段性压低 FCF。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测，只校准前四步的情景位置。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在影响的层级处理一次，市场定价不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 revenue 12.420 亿美元、organic +34.4%、2026 指引上调至 +26%-28% reported | 公司汇总 | 支撑基准 NTM 50.5-52.5 亿美元，悲观不能低到普通工业周期口径 | 收入强但 Q1 adjusted ROS 20.0% 持平，不能自动上调利润率 | 高收入需要营运资金支持 | 基准保留，乐观需 Q2/Q3 继续验证 |
+| Organic orders 约 +40%，backlog 26 亿美元且低双位数环比增长 | 收入基数、执行可信度 | 增强未来四季度收入可见性 | backlog mix 未披露，不能直接证明高毛利 | 支持收入但可能消耗应收/库存 | 基准保留；若 backlog 连续增长，乐观上移 |
+| 2025 数据中心收入 >10 亿美元、data center growth led by liquid cooling | 需求、收入基数、产品贡献 | 液冷和 data center 已经是收入表可见，不是 E 级题材映射 | 液冷可能高毛利，但扩产/服务成本短期抵消 | 现场安装和服务决定验收 | 液冷基准保留；smart telemetry/800VDC 不进基准 |
+| Systems Protection Q1 revenue 8.948 亿美元，organic +50.1%，ROS 22.7% | 产品贡献、公司利润 | 支撑液冷、机柜、灰空间主战场 | ROS 同比 +220bp，说明规模效应存在 | 仍需交付能力 | Systems Protection 乐观保留 |
+| Electrical Connections Q1 revenue 3.472 亿美元，organic +7.9%，ROS 24.4% 且同比 -390bp | 产品贡献、利润率 | 收入进入基准，但不是高弹性主引擎 | 通胀、投资、mix 压制，限制公司利润率上修 | 库存和价格传导是关键 | 基准保留；利润率乐观需下半年 ROS 修复 |
+| Investor Day 中数据中心约 10 亿美元销售、约 75% white space / 25% gray space、每 MW 约 100 万美元机会 | 收入基数、需求映射 | 支撑每 MW 内容量，但不是 guaranteed revenue | 组合销售可提升 mix | 需要客户架构和交付节奏兑现 | 用作基准/乐观映射，不能单独驱动极度乐观 |
+| 新 Blaine 液冷设施、产能扩张、capex 约 1.30 亿美元 | 执行可信度 | 提高液冷转收入能力 | 短期压毛利，长期带规模效应 | 资本开支和库存上升 | 保留基准，乐观需看产线良率和交付 |
+| NVIDIA Partner Network、Siemens reference architecture、OCP/Google Project Deschutes 相关产品 | 产品贡献、执行可信度 | 提升客户采用概率 | 认证件和服务提高毛利质量 | 缩短客户 design-in，但仍需 PO 和验收 | C 级证据进入乐观；已与收入/backlog 交叉验证的部分小比例进基准 |
+| 800VDC、1MW rack、Rubin Ultra、高温水和 smart manifold telemetry | 需求和远期期权 | NTM 可收入化证据不足 | 潜在高毛利，但无法量化 | 标准、安全和客户架构未固化 | 排除出基准，移入附录/仅作跟踪 |
+| 关税约 8000 万美元、原材料/人工通胀、unfavorable product mix | 利润率、现金流 | 不直接降低需求，但会限制利润传导 | 直接压毛利率和 EC ROS | 可能推高库存和项目成本 | 在利润率层级处理一次，不重复惩罚收入 |
+| 电力接入、switchgear/transformer、MEP 劳动力、NeoCloud 融资 | 需求和收入确认 | 可能把订单推迟出 NTM | 延迟和变更增加项目成本 | 验收和收款延后 | 在需求/收入确认层级处理，不在所有步骤重复扣分 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 47.0-49.5 亿美元，利润率低于当前结构 | 仍有 26 亿美元 backlog 和 FY2026 指引支撑，悲观不是收入崩塌 | backlog 交付慢、液冷验收慢、EC ROS 不修复、关税/原材料压制 | 保留 | 悲观下限 | 中 | 同一并网/MEP 延迟只影响需求和收入确认，不再重复压低所有产品利润 |
+| 基准 | NTM 收入 50.5-52.5 亿美元，adjusted operating margin 20.0%-20.8% | Q1 revenue、orders、backlog、2026 指引、Systems Protection organic +50.1% 均支持 | 产品级拆分估算；毛利率需从 35.9% 修复；部分 C 级机会不可过度纳入 | 保留 | 最可能情景 | 中高 | 关税和 mix 已在利润率处理，不再重复下调需求 |
+| 乐观 | NTM 收入 54.0-57.5 亿美元，利润率 21.0%-22.0% | 液冷、灰空间、PDU/机柜和 EC pull-through 同时强；Investor Day 中数据中心/每 MW 内容量提供支撑 | 需要 Q2/Q3 orders、backlog 和 margin 修复验证；不能只靠行业 capex 总额 | 保留 | 乐观上修情景 | 中 | 客户集中风险只在收入确认和执行可信度处理 |
+| 极度乐观 | NTM 收入 59.0-63.5 亿美元，利润率 22.5%-24.0% | 若 liquid cooling capacity、标准 rack attach、gray-space 项目和 EC ROS 同时突破，可以形成经营上限 | Rubin/800VDC/1MW rack 证据多为 C/D；任一需求、捕获、利润或执行环节缺证据即不能成立 | 下移 | 极度乐观仅作为可验证上限，不作为当前预期 | 中低 | 远期期权不进入基准，也不在悲观中反向惩罚现有业务 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NVT 的 NTM 收入更可能落在 50.5-52.5 亿美元区间，较 2025 continuing revenue 增长约 30%-35%，核心来自 Q1 2026 backlog、数据中心液冷/机柜/PDU、灰空间工程化电气建筑和 power utility/data center 需求正常兑现。公司不是把 AI 建设 TAM 直接变成收入，而是通过“每 MW 约 100 万美元机会、约 75% white space / 25% gray space、液冷和电力连接/保护组合”逐步确认收入。
+- 利润/现金流结论：基准 adjusted operating margin 20.0%-20.8%，adjusted EBITDA 12.3-13.4 亿美元，adjusted net income 7.5-8.2 亿美元，FCF 6.8-7.8 亿美元。利润质量的核心不是收入增速，而是毛利率能否从 Q1 35.9% 修复、Electrical Connections ROS 能否回到 26%-28%、液冷和工程化建筑能否在扩产时保持项目利润。
+- 主要传导瓶颈：第一是液冷系统的客户认证、产线爬坡、现场调试和服务；第二是灰空间项目依赖外部电力设备、并网和 EPC sequencing；第三是普通连接件/机柜/PDU 的商品化和客户双供；第四是高增长带来的应收、库存、预制件和售后服务现金占用。
+- 乐观情景成立条件：Q2/Q3 2026 organic orders 继续 >20%、backlog 保持在 26 亿美元以上且继续环比增长；Systems Protection organic growth 维持 30%+；液冷新增认证或公开客户 wins；Electrical Connections ROS 从 24.4% 修复到 26%-28%；2026 下半年毛利率回到 37% 附近。
+- 极度乐观情景成立条件：GB300/Rubin/ASIC 高密 rack 在 NTM 内超预期放量，NVT 液冷/CDU/manifold/PDU/机柜 attach rate 上升，Blaine 等产能顺利爬坡，gray-space engineering building 项目集中验收，同时价格/生产率覆盖关税和通胀。缺少其中任一环节，极度乐观应降为乐观上限。
+- 悲观情景触发条件：backlog 连续环比下降或 book-to-bill 低于 1；Q2/Q3 organic orders 回落到个位数；毛利率持续低于 36%；液冷现场 failure 或客户设计改动导致交付推迟；外部并网/switchgear/MEP 把灰空间订单推迟出 NTM；EC ROS 不能修复且非 AI 工业/商住业务走弱。
+- 后续跟踪数据：Q2/Q3 2026 orders、backlog 和 book-to-bill；data center revenue 是否继续披露或可估算；liquid cooling record orders/backlog 是否延续；Blaine 液冷产能利用率和服务中心投入；Systems Protection ROS；Electrical Connections ROS；毛利率和 tariff offset；working capital、inventory、receivables 和 FCF conversion；GB300/Rubin/800VDC 相关正式 customer qualification。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新正式财务主数据为 2026Q1，发布日期 2026-05-01；Investor Day 日期 2026-03-18；本地行业资料日期集中在 2026-06-10 至 2026-06-11；本报告生成日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - nVent Q1 2026 Earnings Deck：Q1 revenue 12.420 亿美元、organic +34%、adjusted operating income 2.485 亿美元、ROS 20.0%、organic orders 约 +40%、backlog 26 亿美元、2026 指引上调至 +26%-28% reported / +21%-23% organic、Q2 指引 +28%-30% reported。
+  - nVent Q1 2026 Form 10-Q：Q1 revenue、gross margin 35.9%、Systems Protection revenue 8.948 亿美元 / organic +50.1% / ROS 22.7%、Electrical Connections revenue 3.472 亿美元 / organic +7.9% / ROS 24.4%、毛利率下滑原因。
+  - nVent 2026 Investor Day transcript：2025 data center sales >10 亿美元、white space 约 75% / gray space 约 25%、NVT portfolio opportunity 约 100 万美元/MW、Blaine 液冷产能到年末约翻倍、三年 organic sales CAGR target +10%-13%、adjusted operating margin target 约 22%。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 指引只作为 NTM 基准锚，不替代 NTM 主表。
+  - 2027 年中 run-rate 用于验证液冷、机柜/PDU、灰空间和 EC infrastructure 是否在公司之外继续放大，不作为本报告基准收入。
+  - 800VDC、500kW-1MW rack、Rubin Ultra、smart manifold telemetry、AI rack security/asset software、HVDC protection 和 DC busway 均列远期期权；无明确客户、时间表和收入确认路径前，不进入 NTM 基准。
+- 主要本地来源：
+  - `公司调研/配电_电源_功率器件/NVT_nVent_Electric_公司调研_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜、围护结构与物理安防_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_导管、桥架与线缆管理_2026-06-10.md`
+- 主要官方外部来源：
+  - https://s22.q4cdn.com/268397047/files/doc_financials/2026/q1/2026-Q1-Earnings-Deck.pdf
+  - https://s22.q4cdn.com/268397047/files/doc_financials/2026/q1/Q1-2026-NVT-Press-Release.pdf
+  - https://www.sec.gov/Archives/edgar/data/1720635/000162828026029370/nvt-20260331.htm
+  - https://s22.q4cdn.com/268397047/files/doc_downloads/2026/Investor-Day-Transcript.pdf
+  - https://investors.nvent.com/press-releases/press-release-details/2026/nVent-Highlights-Portfolio-Transformation-and-Growth-Priorities-at-2026-Investor-Day/default.aspx
+  - https://investors.nvent.com/press-releases/press-release-details/2025/nVent-Unveils-New-Liquid-Cooling-and-Power-Portfolio-at-SC25/default.aspx
+  - https://press.siemens.com/global/en/pressrelease/siemens-and-nvent-release-joint-reference-architecture-purpose-built-nvidia-ai-data
+  - https://investors.nvent.com/press-releases/press-release-details/2024/nVent-to-Showcase-AI-Enabling-High-Performance-Liquid-Cooling-and-Power-Distribution-Solutions-at-SC24/default.aspx

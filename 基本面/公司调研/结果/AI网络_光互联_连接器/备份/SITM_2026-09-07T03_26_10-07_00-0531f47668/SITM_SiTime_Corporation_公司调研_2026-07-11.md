@@ -1,0 +1,542 @@
+# SITM：SiTime Corporation 公司全面尽调（2026-07-11）
+
+> 研究日期：2026-07-11（美国太平洋时间）  
+> 最新财务期：2026Q1（截至 2026-03-31）；下一次财报预计 2026-08-05 发布  
+> 行情截止：2026-07-10 美股收盘（2026-07-11 为周六）  
+> 金额单位：除特别说明外均为美元；收入、利润和产能以百万美元计  
+> 研究边界：公司事实优先采用 SEC、SiTime/Renesas 官方资料及行业标准/论文；项目内只使用与精密时钟、同步、AI 基建直接相关的行业资料，不读取或继承既有公司报告及特征量化内容。
+
+## 核心结论
+
+SiTime 已不再只是“MEMS 振荡器替代石英”的小型器件公司。2023 年收购 Aura 时钟资产、2025 年由 AI 光互联带动高端振荡器放量、2026 年 7 月完成 Renesas/原 IDT 时钟业务收购后，公司成为少数可同时提供“谐振器—振荡器—时钟发生器/缓冲器—抖动衰减器/网络同步器—PTP/holdover 软件”的纯时序平台。产业链位置从单颗参考时钟供应商上移到板卡和网络的时钟树、同步域与系统方案层。
+
+投资人目前把 SITM 定价为“AI 数据中心高增长、强定价权、可持续 25%–30% 长期增长的精密时序平台”，而不是普通模拟芯片公司。这个认知有事实支撑：2025 年收入增长 61%，而出货量只增长 14%，意味着产品组合与 ASP 的有效提升约 41%；2026Q1 有机收入又增长 88.3%，CED（通信、企业、数据中心）增长 158%，非 GAAP 毛利率升至 64.5%。但估值已经把相当多的成功计入：按 7 月 10 日股价和收购后估算股数，股权价值约 188.4 亿美元；对有机 TTM 收入为 49.6 倍，对同口径合并 LTM 收入仍约 30.9 倍。
+
+最重要的正面变量有四个：
+
+1. 800G 仍有至少两年需求，1.6T 光模块 2026 年开始更明显放量；公司称 1.6T 高级振荡器 ASP 高于 800G，2026 年客户预测自 2025 年 11 月以来又上调约 50%。
+2. Elite 2、SiT5977、Cascade/Chorus 2、TimeFabric 与收购来的 ClockMatrix、FemtoClock 3、PhiClock/PCIe 时钟形成端到端组合，单机内容量与交叉销售都可能上升。
+3. 被收购业务 2026Q1 收入 6,930.6 万美元、同比增长 47.4%，明显快于 2025 全年仅 3.1% 的增长；公司给出的交割后 12 个月目标是至少 3 亿美元收入、约 70% 毛利率。
+4. SiTime 的供给核心使用 Bosch MEMS、TSMC 180/150/130nm 等成熟节点，当前不是先进制程或晶圆配额瓶颈；真正约束是高端产品良率、温度补偿/老化校准、测试吞吐、系统验证和 9–24 个月设计认证。
+
+最重要的反面变量同样有四个：
+
+1. 公司不披露标准化 backlog、lead time、取消率或客户项目金额；多数采购单可在很少通知、很少或没有罚金的情况下取消/改期。“数亿美元 design-win funnel”不是不可撤销订单。
+2. 管理层在 2026 年 6 月采访中称 2026Q1 约 66% 收入来自 AI，但这一数字几乎等于 CED 的 66.6% 收入占比；CED 还包括通信和企业网络，故不能把 GAAP 市场分类机械等同为纯 AI 收入。
+3. 精密时钟重要，但不是 AI 基建第一瓶颈。HBM、先进封装、电力、液冷、网络交换与整机交付通常更紧；Firefly 等软件方案已经证明在特定数据中心可实现亚 10ns 设备间同步，硬件并非所有场景的唯一答案。
+4. Renesas 交易规模极大：实际支付 15 亿美元现金并发行 355.87 万股；按 7 月 10 日股价，发行股份现值约 22.38 亿美元，经济对价约 37.38 亿美元，相当于被收购业务 LTM 收入约 16.3 倍。交易还引入 13.5 亿美元可转债、巨额商誉/无形资产、整合和渠道迁移风险。
+
+**总判断：业务质量高、AI 增长真实、产品组合显著增强，但“高增长器件公司”与“高质量投资标的”是两件事。当前股价要求 1.6T、Elite 2、全栈时钟交叉销售和收购整合至少大部分同时成功；任何一项只达到普通模拟芯片水平，都可能首先通过估值倍数而非收入本身体现下行。**
+
+## 口径、证据等级与不可比事项
+
+- “公司披露”指 SEC、财报或公司正式产品资料；“管理层称”指电话会、访谈或新闻稿中的陈述；“研究估算”是本文根据公开数字建立的可复核模型。
+- SiTime 在 2026-07-01 才完成 Renesas timing business 收购，因此 2026Q1 及以前的 SiTime 财报均为有机业务；本文将被收购业务单独列示，不能直接塞进历史五季度。
+- SiTime 只报告一个会计分部；CED、AID、MIC 是终端市场分类，不披露分业务毛利率，也不披露单一产品收入。
+- 被收购业务的历史报表只是“收入与直接费用”，并非完整独立公司报表；缺少完整总部费用、税、利息和现金流，直接毛利率不能等同于并表后的 GAAP 毛利率。
+- 评分均为 1–5：5 代表最高的重要性、紧迫性、供需紧张、垄断/技术控制或溢价能力；评分是相对比较，不是会计数据。
+- 项目内行业基准来自：[精密时钟与同步芯片行业调研（2026-07-10）](../../行业调研/AI服务器_存储_芯片/行业调研_精密时钟与同步芯片_2026-07-10.md)。
+
+## 1. 公司全貌、投资人认知、产业链位置与财务健康
+
+### 1.1 业务结构与产业链位置
+
+所有高速数字系统都需要参考频率、低抖动时钟分配和跨设备时间同步。SiTime 的产品从下到上覆盖：
+
+| 层级 | 功能 | 主要产品/型号 | 单机价值与竞争性质 |
+|---|---|---|---|
+| MEMS 谐振器 | 产生基础机械谐振，替代石英晶体 | Titan SiT11100–SiT11104 | 潜在 ASP 低于 0.20 美元，但一旦与 MCU/SoC 共封装，设计寿命长、替换成本极高 |
+| 普通/高性能振荡器 XO | 输出稳定参考频率 | SiT936x/937x/939x 等 | 典型行业价约 1–15 美元；高速差分、耐热/振动型号更高 |
+| TCXO/Super-TCXO/OCXO | 温补、超稳、holdover 与同步 | Elite/Elite RF、SiT5977、Elite 2 SiT5234/5235/5434/5435、Epoch SiT5811/5812、Endura SiT7101/7201/7202 | 典型 30–150 美元以上；高性能、认证和系统价值带来最高定价权 |
+| 时钟发生器/缓冲器 | 一个参考源产生和分配多路频率 | Chorus/Chorus 2 SiT95272/95278、SiT921xx/922xx/923xx；收购来的 PhiClock、9SQ440 等 | 约 2–30 美元；可替代 8–12 颗离散时钟，但也会压缩系统器件颗数 |
+| 抖动衰减/网络同步 | DPLL、PTP、SyncE、GNSS、多个时间域 | Cascade SiT95145/147/148；ClockMatrix RC32614A；FemtoClock 3 RC32308A/RC32312A | 约 20–100 美元以上；算法、固件、验证和时钟树绑定提高替换成本 |
+| 软件/系统 | IEEE 1588 servo、24 小时 holdover | TimeFabric PTP、Holdover Extension；原 Renesas PTP Clock Manager | 软件收入目前未单独披露，主要作用是提高硬件 attach rate、锁定平台和延长生命周期 |
+
+过去的产业链位置是“光模块、交换机、SmartNIC、GPU/XPU 板卡上的一个参考振荡器”；收购后可向上承接整张服务器主板、交换机和同步网络的时钟树。其客户包括模块厂、板卡厂、交换机/服务器 OEM、芯片厂、工业/汽车与国防航天客户，并通过分销商出货。公司仍是 fabless：MEMS 由 Bosch 供应，模拟芯片主要依赖 TSMC 成熟节点，封测由 OSAT 完成。
+
+### 1.2 最近三年重大变化、转型与收购
+
+| 日期 | 事件 | 对业务模式的影响 |
+|---|---|---|
+| 2023 | 行业库存调整，收入由 2022 年 2.836 亿美元降至 1.440 亿美元，同比 -49.2% | 暴露消费/渠道周期性，也促使公司加速向高 ASP 的 CED、AI、A&D 转型 |
+| 2023-12 | 完成 Aura Semiconductor 时钟产品/IP 收购：固定现金对价 1.48 亿美元，另有最高 1.20 亿美元 earnout | 由振荡器进入 clock IC；取得约 20 款产品并计划继续扩展。管理层称该类 clocks 毛利率高于公司长期目标 |
+| 2024 | 收入恢复至 2.027 亿美元，同比 +40.8%；持续投入 Cascade、Chorus、Elite RF、Epoch 等 | 产品组合开始从普通振荡器转向高精度与系统时钟，但 GAAP 仍大幅亏损 |
+| 2025 | 收入 3.267 亿美元，同比 +61.2%；CED 连续七个季度同比增长超过 100%；TimeFabric、Titan 发布 | AI 光互联和高端网络时钟成为核心增长引擎；收入增速远高于 14% 的出货量增速，体现 ASP/mix 上升 |
+| 2026-02 至 2026-07 | 宣布并完成 Renesas/原 IDT timing business 收购；15 亿美元现金 + 355.87 万股；时钟产品组合约扩大 10 倍，客户超过 1 万家 | 从“MEMS 振荡器龙头”转为纯时序全栈平台；同时显著增加负债、摊销、商誉、股本和整合风险 |
+| 2026-05 至 2026-06 | Elite 2、Chorus 2 发布；发行 13.5 亿美元 0% 可转债 | 进攻亚纳秒同步和 PCIe Gen7；以低现金利息融资完成大型收购，但保留远期稀释风险 |
+
+Aura 交易是产品纵向延伸，Renesas 交易则是规模与客户横向跃迁。后者所收资产包括 IP、设计数据库、成品库存、专用设备和人员，但 SEC 历史说明中明确写明不包括若干客户、供应商和 foundry 合同；因此“产品与客户历史”并不等于“所有合同无摩擦转移”，过渡服务、重新签约和分销迁移是实际整合风险。
+
+### 1.3 当前行情、估值和盈利指标
+
+| 指标 | 最新值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | 628.94 美元 | 2026-07-10 收盘 | 2026-07-11 为非交易日 |
+| 市值（行情商口径） | 166.0 亿美元 | 2026-07-10；26.40m 股 | 行情商尚未完整反映 7 月 1 日发行的收购股份 |
+| 收购后估算普通股数 | 29.956m 股 | 2026-05-01 的 26.397m + 新发 3.559m | 未计未来 RSU、期权与可转债潜在稀释 |
+| 收购后股权价值 | 188.4 亿美元 | 29.956m × 628.94 美元 | 更接近当前经济市值 |
+| GAAP TTM PE | N/M；机械值约 -662 倍 | TTM EPS 约 -0.95 美元 | 亏损时负 PE 没有估值意义；部分行情商以 -0.91 美元 EPS 显示约 -691 倍 |
+| Forward PE | 68.0 倍；按 FY2026 EPS 8.49 美元则 74.1 倍 | 2026-07-09/10；非 GAAP 分析师一致预期 | 口径差来自预测期间和数据商更新 |
+| 有机 TTM 收入 | 3.799 亿美元 | 2025Q2–2026Q1 | 尚未包含 Renesas 业务 |
+| 被收购业务 LTM 收入 | 2.300 亿美元 | FY2025 - 2025Q1 + 2026Q1 | 2026Q1 为 6,930.6 万美元，同比 +47.4% |
+| 同口径合并 LTM 收入 | 6.099 亿美元 | 研究重构 | 只是可比收入，不是历史 GAAP 报告数 |
+| P/S（行情商市值/有机 TTM） | 43.7 倍 | 166.0 亿/3.799 亿 | 使用未更新股数 |
+| P/S（收购后市值/有机 TTM） | 49.6 倍 | 188.4 亿/3.799 亿 | 体现股权发行、但未计收购收入 |
+| P/S（收购后市值/合并 LTM） | 30.9 倍 | 188.4 亿/6.099 亿 | 更可比，但仍非常高 |
+| P/S（收购后市值/FY2026 共识） | 约 25.3 倍 | FY2026 共识收入约 7.448 亿美元 | 共识约 +128%，含约半年收购贡献 |
+| 最新收入增速 | +88.3% | 2026Q1 有机同比 | 2025 全年为 +61.2% |
+| 有机 TTM GAAP 毛利率 | 55.7% | 2025Q2–2026Q1 | 由 2025Q2 的 51.9% 升至 2026Q1 的 59.0% |
+| 有机 TTM non-GAAP 毛利率 | 约 61.1% | 同期 | 2026Q1 为 64.5% |
+| 有机 TTM GAAP 净利率 | -6.4% | 同期净亏损约 2,424 万美元 | SBC、收购与无形资产摊销使 GAAP 仍亏损 |
+| 有机 TTM non-GAAP 净利率 | 约 30.3% | 同期估算 | 高于 GAAP 的差异很大，估值应同时看稀释和摊销 |
+
+行情和一致预期参考 [StockAnalysis SITM](https://stockanalysis.com/stocks/sitm/) 与 [SITM Forecast](https://stockanalysis.com/stocks/sitm/forecast/)；股数与交易发行数分别来自 [2026Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1451809/000145180926000041/sitm-20260331.htm) 和 [交割 8-K](https://www.sec.gov/Archives/edgar/data/1451809/000119312526291561/d71116d8k.htm)。
+
+### 1.4 资产负债表健康度
+
+#### 交割前：非常健康
+
+截至 2026-03-31，SiTime 有现金 4.985 亿美元、短期投资 2.902 亿美元，合计流动性 7.887 亿美元；流动资产 9.492 亿美元、流动负债约 7,608 万美元，流动比率约 12.5 倍；无重大有息债务。季度经营现金流 3,120 万美元。库存为 9,112 万美元，其中在制品约 6,031 万美元、成品约 1,820 万美元；以有机 TTM 销售成本测算，库存天数约 198 天，说明公司为可编程产品、晶圆与高端需求准备了较厚缓冲，但也增加需求逆转后的减值风险。
+
+公司剩余采购承诺约 3,068 万美元，其中 2026 年余下 1,314 万美元；这属于供应承诺，不能当作客户订单。与 MEMS 晶圆相关的多年承诺有助于供给安全，但金额远小于收入指引，不构成“被锁定收入”。
+
+#### 交割后：流动性仍可用，但风险结构发生根本变化
+
+- 2026-05-22 完成 13.5 亿美元 0% 可转债，2031-06-15 到期；初始转股价约 1,040.47 美元，较 7 月 10 日股价高约 65%。公司为 capped call 支付约 1.08 亿美元，保护上限初始约 1,734.15 美元。
+- 票息为 0，短期现金利息压力低；但本金是真实债务。按 SEC 交割前的示意性 pro forma，现金约 3.625 亿美元、总负债约 13.46 亿美元。实际融资为 13.5 亿美元且 Q2 还有经营现金流，最终现金可能高于该旧示意值，但 7 月 11 日尚无交割后正式资产负债表。
+- SEC 的旧 pro forma 以当时更高的股份估值推算商誉约 29.89 亿美元、无形资产约 17.04 亿美元，合计接近总资产的 88%；实际购买价分摊尚未发布，数字会改变，但“资产质量主要由商誉和技术/客户无形资产组成”不会改变。
+- 被收购业务 2025 年直接产品毛利率为 75.7%，2026Q1 为 77.0%；计入其历史无形资产摊销后分别约 53.7% 和 60.6%。新一轮购买价重估会产生更高 GAAP 摊销，故未来 non-GAAP 与 GAAP 差距可能进一步扩大。
+- 发行 355.87 万股相当于交割前普通股约 13.5% 的即时稀释。可转债在股价低于转股价时没有近端股份稀释，但到期偿债和高股价情景下仍需关注。
+
+**财务健康评分：交割前 9/10，交割后约 6.5/10。** 结论不是“资金紧张”，而是从净现金、低风险资产负债表转成有充足流动性但净债务、商誉、摊销和执行风险都显著提高的并购型资产负债表。若收购业务能实现 3 亿美元收入、70% 毛利率并保持现金生成，风险会快速下降；若收入停留在 2.1–2.3 亿美元，交易回报率和减值风险都会变差。
+
+## 2. 最新及最近四次财报：五季度数字、订单、交期和 AI 暴露
+
+### 2.1 五季度财务与终端市场
+
+| 财报季度 | 收入 / 同比 | CED 收入 / 同比 / 占比 | AID 收入 / 同比 / 占比 | MIC 收入 / 同比 / 占比 | GAAP：毛利率 / 营业率 / 净利率 | non-GAAP：毛利率 / 营业率 / 净利率 | AI/数据中心收入占比 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 2026Q1（最新） | 113.6 / +88.3% | 75.7 / +158% / 66.6% | 21.2 / +51% / 18.7% | 16.7 / -1% / 14.7% | 59.0% / -10.9% / -4.6% | 64.5% / 28.0% / 34.2% | 管理层 2026-06 访谈称约 66%；本文审慎区间 60%–67%，约 68–76m |
+| 2025Q4 | 113.3 / +66% | 64.6 / +160% / 57.0% | 24.5 / +19% / 21.6% | 24.2 / +7% / 21.4% | 56.4% / 1.6% / 8.1% | 61.2% / 29.9% / 36.5% | 研究估算 47%–52%，约 53–59m |
+| 2025Q3 | 83.6 / +45% | 42.1 / +115% / 50.4% | 20.2 / +14% / 24.2% | 21.3 / +4% / 25.5% | 53.5% / -19.2% / -9.6% | 58.8% / 18.5% / 约 28.0% | 研究估算 40%–45%，约 34–38m |
+| 2025Q2 | 69.5 / +58% | 36.0 / +137% / 51.8% | 16.5 / +11% / 23.7% | 17.0 / +23% / 24.5% | 51.9% / -35.4% / -29.0% | 58.2% / 10.4% / 16.7% | 研究估算 39%–45%，约 27–31m |
+| 2025Q1 | 60.3 / +83% | 29.3 / +198% / 48.6% | 14.1 / +10% / 23.4% | 16.9 / +64% / 28.0% | 50.3% / -46.6% / -39.6% | 57.4% / 3.4% / 10.4% | 研究估算 34%–40%，约 21–24m |
+
+注：
+
+- CED = Communications, Enterprise and Datacenter；AID = Automotive, Industrial and Aerospace/Defense；MIC = Mobile, IoT and Consumer。
+- 公司不披露各终端市场或各产品毛利率。表中的业务利润率只能用公司整体利润率替代，产品毛利率在后文单独估算。
+- AI 占比不是 GAAP 披露。2026Q1 的 66% 来自 CEO 访谈，而不是财报脚注；历史区间按 CED 中 AI 数据中心/高速网络占比、管理层产品描述与增速反推，并明确排除部分传统通信/企业网络。
+- 五季度财务来源为公司 [2025Q1](https://investor.sitime.com/news-releases/news-release-details/sitime-reports-first-quarter-2025-financial-results)、[2025Q2](https://investor.sitime.com/news-releases/news-release-details/sitime-reports-second-quarter-2025-financial-results)、[2025Q3](https://investor.sitime.com/news-releases/news-release-details/sitime-reports-third-quarter-2025-financial-results)、[2025Q4/FY2025](https://investor.sitime.com/news-releases/news-release-details/sitime-reports-fourth-quarter-and-fiscal-year-2025-financial) 和 [2026Q1](https://investor.sitime.com/news-releases/news-release-details/sitime-reports-first-quarter-2026-financial-results)。
+
+### 2.2 订单、book-to-bill、交期、取消率和渠道状态
+
+| 财报季度 | Bookings / B2B / backlog 证据 | 交期、交付窗口和供给 | 取消率/订单质量 | 关键产品或需求变化 |
+|---|---|---|---|---|
+| 2026Q1 | 管理层称 B2B 继续增长，订单簿深度和客户预测支持全年有机收入至少 +80%；未披露金额或比率 | 供应“solid”；Bosch MEMS、TSMC 180/150/130nm 产能足；偶有 OSAT 后段问题但可管理 | 未披露；公司 10-Q 明确多数客户无长期/最低采购承诺，PO 可少量通知甚至无通知、少量或无罚金取消/改期 | CED +158%；1.6T 采用快于此前预期；高级振荡器 ASP 高于 800G；15–20 家模块厂生态 |
+| 2025Q4 | B2B 大于 1.5；若按 113.3m 当季收入机械计算，gross bookings 大于约 170m，但公司未给精确值 | 大多数订单在 12 个月内，明显偏向 2026Q1/Q2；渠道库存处于目标范围 | 未披露；B2B 不能视作不可取消 backlog | 1.6T 振荡器的 2026 客户预测自 11 月上调约 50%；Super-TCXO 预测也上调约 50%；CED 主导 bookings |
+| 2025Q3 | “exceptionally strong bookings”；clock design-win funnel 扩至约 300m；没有披露正式 backlog | CED 客户订单更短 lead time；公司没有看到自身囤货或缺货 | 未披露；管理层听到光学元件/基板短缺，但不等于 SiTime 器件短缺 | 1.6T 需求相对前期约翻倍；高性能时钟 funnel 快速扩大 |
+| 2025Q2 | bookings 与 funnel 强；管理层称 AI design wins 达“数亿美元”、有“nice backlog” | 未披露量化 lead time；供给可支持指引 | design wins 是平台生命周期潜在收入，不是 PO；取消率未披露 | 1.6T 客户机会超过 20 个；AI/数据中心推动 CED +137% |
+| 2025Q1 | bookings 强；客户能见度超过 90 天；未披露 B2B 数值 | 未见关税导致提前拉货；供应无明显约束 | 未披露；同一可取消 PO 风险适用 | 超过 20 个 1.6T 客户机会；Elite RF、Symphonic 与高端网络产品推动 mix |
+
+最可靠的“订单”结论只有三条：
+
+1. 2025Q4 B2B >1.5 是强信号，但由于 PO 可取消，不能折算成同额未来收入。
+2. 2026Q1 订单深度足以让管理层把 2026 有机增长下限从此前约 25%–30% 长期目标大幅提高到至少 80%，这比模糊 funnel 更有用。
+3. 渠道库存一直被描述为目标水平，且公司否认自身供不应求；因此短期增长主要是终端需求、份额和 ASP/mix，而不是缺货涨价或渠道囤积。
+
+### 2.3 收购业务的独立历史交叉验证
+
+| 期间 | 收入 | 同比 | 直接产品毛利率 | 含历史无形资产摊销后的毛利率 | 渠道集中度 |
+|---|---:|---:|---:|---:|---|
+| FY2024 | 201.4 | — | 74.5% | 51.8% | WT Micro 41.6%、Macnica 20.6%、Avnet 12.6% |
+| FY2025 | 207.7 | +3.1% | 75.7% | 53.7% | WT Micro 47.6%、Macnica 20.1%、Avnet 11.9% |
+| 2025Q1 | 47.0 | — | 74.5% | 50.2% | 三家合计约 82.4% |
+| 2026Q1 | 69.3 | +47.4% | 77.0% | 60.6% | WT Micro 50.2%、Macnica 20.3%、Avnet 11.5%，合计 82.0% |
+
+2026Q1 的加速与 AI 网络时钟需求一致，但只有一个季度，且被收购业务库存、合同和渠道原本嵌在 Renesas 体系内。公司提出的“交割后 12 个月至少 3 亿美元收入”相对 LTM 2.300 亿美元仍要求约 30.4% 增长；相对 FY2025 要求约 44.4% 增长。这个目标需要持续的 AI mix、交叉销售和渠道迁移，而不是仅靠 2025 年自然增长。
+
+历史数据来自 SEC 的 [被收购业务 FY2025/FY2024 财务报表](https://www.sec.gov/Archives/edgar/data/1451809/000145180926000045/ex991-renesastimingbusines.htm) 和 [2026Q1/2025Q1 财务报表](https://www.sec.gov/Archives/edgar/data/1451809/000145180926000045/ex992-renesastimingbusines.htm)。
+
+## 3. 2026 年最新指引、业务占比、产品型号与增长重点
+
+### 3.1 最新指引及隐含增速
+
+截至研究日，最新正式业绩仍是 2026Q1；公司已宣布 2026Q2 财报将于 2026-08-05 发布。
+
+| 指标 | 2026Q2 指引 | 隐含含义 |
+|---|---:|---|
+| 有机收入 | 140–150m；中值 145m | 同比超过 100%；环比中值 +27.7% |
+| non-GAAP 毛利率 | 65% ±1pct | 高端 CED mix、吸收率和产品成本继续改善 |
+| non-GAAP Opex | 46–47m | 并购前有机口径，继续投入研发/销售 |
+| non-GAAP EPS | 1.85–2.00 美元 | 有机盈利杠杆进一步释放 |
+| FY2026 有机收入增速 | 至少 +80% | 以 FY2025 的 326.7m 为基数，收入下限约 588.0m |
+| Renesas 业务 | 上述指引均不包含 | 7 月 1 日后才并表；公司给出交割后 12 个月至少 300m、约 70% 毛利率 |
+
+若 Q2 取 145m，全年有机收入下限 588m 意味着 H2 至少需要约 329m，即每季平均 164.7m，较 Q2 中值再高约 13.6%。若收购业务 H2 贡献约 150–170m，则 FY2026 合并收入约 738–758m，和市场一致预期约 744.8m 高度吻合。这说明共识并没有额外包含很大的超预期空间。
+
+### 3.2 2026Q1 业务收入占比和侧重点
+
+| 业务 | 收入 | 占比 | 同比 | 公司侧重与判断 |
+|---|---:|---:|---:|---|
+| CED | 75.7m | 66.6% | +158% | 绝对主引擎；AI XPU/GPU/TPU、交换机、800G/1.6T 光模块、AEC、SmartNIC、同步网络 |
+| AID | 21.2m | 18.7% | +51% | 第二增长曲线；国防、LEO、GNSS challenged、工业与汽车，产品寿命长、ASP/毛利高 |
+| MIC | 16.7m | 14.7% | -1% | 消费/移动/IoT；最大消费客户收入约 10.2m。除 Titan 共封装外，不是本报告重点 |
+
+CED 增长既来自单位量，也来自 ASP、客户扩张和份额。公司称推理集群时序内容量可达训练集群 2–4 倍、CPO 交换机最多可达传统方案约 3 倍，但这些是管理层架构推演，并非客户 BOM 或审计收入。应把它们当作上行情景，而非当前事实。
+
+### 3.3 产品—业务—收入—毛利的交叉验证
+
+下表产品收入和毛利均为研究估算；公司没有按型号披露。
+
+| 重点产品组 | 对应型号 | 当前状态（2026-07-11） | 2026Q1 有机收入估算 | 增速估算 | 产品毛利率估算 | 交叉验证 |
+|---|---|---|---:|---:|---:|---|
+| AI 高速数据面振荡器 | SiT936x/937x/939x；400G/800G/1.6T 用高频差分 XO；SiT5977 | 400G/800G 已量产；1.6T 开始放量。SiT5977 的 2025 新闻稿称量产，但当前产品页又标“Pre-Production Sampling”，状态存在公开页面不一致 | 44–50m | +150% 至 +200% | 65%–75% | CED +158%；1.6T 预测上调 50%；高频高级振荡器 ASP 高于 800G |
+| Elite/Elite RF/Elite 2 与同步稳定源 | Elite RF SiT5376/5377、SiT5977；Elite 2 SiT5234/5235/5434/5435；Epoch SiT5811/5812/7101；TimeFabric | Elite 2 采样，预计 2026Q3 商业量产；TimeFabric/24h holdover 可用 | 12–16m | +100% 至 +180% | 68%–80% | SiT5376 官网 1,000 颗价 54.79 美元、5,000 颗价 49.43 美元，4–8 周到货，是高 ASP/可供货的零售锚；大客户合同价通常更低 |
+| 原生 clock IC / 网络同步 | Chorus/Chorus 2 SiT95272/95278；Cascade SiT95141/145/147/148；SiT921/922/923 系列 | Cascade 量产；Chorus 2 博客称量产且立即供样，但产品页仍标 pre-production，需等待财报澄清 | 8–12m | +80% 至 +140% | 62%–75% | Aura 收购时管理层称 clocks 毛利率高于公司目标；Chorus 2 可替代 8/12 个离散时钟，PCIe Gen1–7 |
+| 被收购全栈时钟 | PhiClock 9FGV1002/1006、9SQ440；FemtoClock 3 RC32308A/RC32312A；ClockMatrix RC32614A；buffers/jitter attenuators | 2026-07-01 起并表；Renesas 文档/样品支持至 2026 年末，之后转 SiTime | LTM 230.0m；2026Q1 单季 69.3m | 2026Q1 +47.4%；FY2025 +3.1% | 直接 70%–77%；并表 GAAP 受摊销影响显著 | 约 75% 收入被公司归为 AI-datacenter-comms；9SQ440 active、寿命至 2040，公开小批量价 7.316 美元 |
+| A&D/LEO/高可靠 | Endura SiT7101/7201/7202、SiT554x；Epoch/Elite 高可靠型号 | 已有生产与设计；具体军工/航天认证和客户项目未披露 | AID 中关键高增长部分约 7–10m | +50% 至 +100% | 65%–80% | AID +51%；管理层称单颗 LEO 卫星 SiTime 内容量最多约 2,000 美元，未来数年目标 A&D 年收入约 100m |
+| Titan MEMS 谐振器 | SiT11100 32MHz、11101 76.8MHz、11102 38.4MHz、11103 48MHz、11104 40MHz | SiT11100 production samples；其余工程样品；有 PCB 与 known-good-die 形态 | 低于 0.5m | 从零起步，N/M | 规模化后约 55%–70% | 当前 funnel 约 400m 是生命周期机会，不是订单；管理层预期明显收入在 2026 年末或 2027 年，规模 ASP 低于约 0.20 美元 |
+
+关键产品的公开技术事实：
+
+- [Elite 2](https://investor.sitime.com/news-releases/news-release-details/sitime-boosts-gpu-utilization-ai-data-centers-elite-2-super-tcxo)：1ns 同步精度、±2ppb/°C 温度斜率、6×10^-12 ADEV、-40–105°C 下 ±50ppb、3.2×2.5mm；2026Q3 预计量产。累计 2030 年 SAM 15 亿美元不是年度收入。
+- [Chorus 2](https://www.sitime.com/company/newsroom/blog/product-spotlight-2x-better-performance-and-2x-lower-jitter-chorus-2-clock)：SiT95272 12 输出、SiT95278 8 输出；可替代 8–12 个离散时钟，支持 PCIe Gen1–7，典型抖动约 110fs。
+- [Cascade SiT95147/95148](https://www.sitime.com/products/jitter-cleaners-network-synchronizers/mems-network-synchronizers)：4 个独立时间域，8/11 输出，8kHz–2.1GHz、120fs、9×9mm，支持 PTP/SyncE 和 hitless switching。
+- [SiT5977](https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5977)：156.25MHz、80fs、±100ppb，用于 SmartNIC、加速卡、交换机、计算节点和 800G+ SerDes。
+- [TimeFabric Holdover](https://www.sitime.com/products/timefabric-software-suite/timefabric-holdover-extension)：以 Epoch/Cascade 为基础，软件扩展至 24 小时 holdover。
+- 收购产品 [9FGV1002](https://www.renesas.com/en/products/9fgv1002?tab=videos) 的 PCIe Gen7 common-clock jitter 低于 41fs；[9SQ440](https://www.renesas.com/en/products/9sq440?partno=9SQ440NQQI) 有 20 个差分输出、标称 PCIe Gen7 phase jitter 低于 18fs，但产品描述仍写 PCIe Gen6-compliant，存在资料版本不一致；[RC32614A](https://www.renesas.com/en/products/rc32614a?tab=boards-kits) 支持 PTP/SyncE、6 个独立通道和低于 88fs 抖动。
+
+### 3.4 明确跳过的低相关/低增长业务
+
+| 跳过业务/产品 | 跳过原因 | 仍需监控的例外 |
+|---|---|---|
+| 传统移动、相机、消费电子 XO/32kHz 产品 | MIC 2026Q1 -1%，价格竞争强，与 AI 基建关联弱 | 最大消费客户约占 Q1 收入 9%，突然波动会影响公司整体 |
+| 普通低功耗 IoT 32.768kHz、RTC | 单价低、增长对总收入贡献有限 | Titan 若与 MCU/SoC 共封装，会转为高粘性的结构性机会 |
+| 普通工业/汽车通用时钟 | 增速低于 CED/A&D，认证长、短期催化弱 | Renesas MOU 可能把 Titan 集成进 MCU/电源/SoC，形成新平台 |
+| 传统 4G/5G 中低端通信时钟 | 不是当前增长核心，易与 AI 网络收入混淆 | O-RAN、SyncE、GNSS holdover 仍是 Cascade/ClockMatrix/TimeFabric 的高价值场景 |
+| 400G 传统产品 | 不是“低质量”，但高增速阶段已过 | 管理层仍预期至少未来两年保持强出货，是 1.6T 爬坡时的重要现金流底座 |
+
+## 4. 当前高增长/关键产品：收入贡献、AI 重要性、供需与定价权
+
+下表把产品组分成互斥收入桶，避免 Elite、SiT5977、clock IC 与 CED 重复计数。当前贡献以 2026Q1 有机年化为主，被收购业务以 LTM 为主。
+
+| 产品组 | 当前收入贡献 | 当前收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张度 | 垄断/技术控制 | 溢价能力 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| A. AI 高速数据面振荡器 | Q1 约 47m；年化约 188m | 约 +150% 至 +200% | 5 | 5 | 3 | 3 | 4 | 800G/1.6T 每链路需要低抖动参考时钟，是当前最大增长与收入桶；但石英和 BAW 仍有可信竞争 |
+| B. Elite/同步稳定源/TimeFabric | Q1 约 14m；年化约 56m | 约 +100% 至 +180% | 4 | 4 | 3 | 4 | 5 | 动态温变、holdover、亚纳秒同步有差异化；Elite 2 尚在采样，当前收入主要来自旧 Elite/Epoch |
+| C. 原生 clock IC/Cascade/Chorus | Q1 约 10m；年化约 40m | 约 +80% 至 +140% | 5 | 4 | 2 | 3 | 4 | 板级时钟树不可缺；SiTime 产品仍在扩张期，收购后交叉销售可放大 |
+| D. 收购来的全栈时钟 | LTM 230m；Q1 年化 277m | Q1 +47.4%；FY2025 +3.1% | 5 | 5 | 3 | 4 | 4 | 立即增加规模、客户和 PCIe/PTP/SyncE 产品；主要风险是 82% 分销集中与迁移执行 |
+| E. A&D/LEO 高可靠 | Q1 关键部分约 8m；年化约 32m | 约 +50% 至 +100% | 2 | 3 | 3 | 4 | 5 | 与 AI 关联低但 ASP、寿命、转换率与毛利高，是重要第二曲线 |
+| F. Titan 谐振器 | 当前低于 2m 年化 | 从零起步 | 1 | 2 | 1 | 4 | 3 | 近期不是 AI 数据中心收入；若共封装被 MCU/SoC 采用，生命周期锁定和单位量极大 |
+
+公司没有形成法律意义上的产品垄断。SiTime 的“垄断能力”来自性能区间、MEMS 工艺、可编程平台、校准数据、系统软件、设计认证和供货可靠性，而不是客户没有第二供应商。管理层在电话会中明确承认即使在 1.6T 也存在可信竞争者，部分设计与石英供应商共享，因此 A 组不能给 5 分。
+
+## 5. 一年后收入贡献：基准、乐观、极度乐观三情景
+
+### 5.1 收入模型
+
+预测期为 2026-07-01 至 2027-06-30。以下为模型点估计，不是公司指引。
+
+| 产品组 | 当前可比基数 | 基准收入 / 增速 | 乐观收入 / 增速 | 极度乐观收入 / 增速 | 主要驱动 |
+|---|---:|---:|---:|---:|---|
+| A. AI 高速数据面振荡器 | 约 188m 年化 | 300m / +60% | 370m / +97% | 460m / +145% | 800G 保持、1.6T 放量、625MHz/高频产品、模块客户扩张 |
+| B. Elite/同步稳定源/TimeFabric | 约 56m 年化 | 95m / +70% | 140m / +150% | 205m / +266% | Elite 2 Q3 量产、PTP/OCS/推理同步、TimeFabric attach |
+| C. 原生 clock IC/Cascade/Chorus | 约 40m 年化 | 75m / +88% | 115m / +188% | 170m / +325% | Chorus 2、Cascade、Aura clocks 与新销售渠道 |
+| D. 收购来的全栈时钟 | LTM 230m | 310m / +35% | 375m / +63% | 460m / +100% | 公司 300m 下限、AI datacenter-comms mix、交叉销售和渠道迁移 |
+| E. A&D/LEO 高可靠 | 约 32m 年化 | 55m / +72% | 75m / +134% | 100m / +213% | 卫星、PNT、雷达、军用通信；长认证后量产 |
+| F. Titan 谐振器 | 低于 2m | 8m / N/M | 18m / N/M | 35m / N/M | MCU/SoC 共封装、IoT/可穿戴/医疗量产 |
+| 其他/跳过业务 | 约 140m 年化 | 125m / -11% | 140m / 0% | 160m / +14% | MIC、普通工业/汽车、传统通信 |
+| **合并收入** | 同口径 LTM 609.9m | **968m / +59%** | **1,233m / +102%** | **1,590m / +161%** | 并购、AI 产品和 mix |
+| 其中：有机收入 | 有机 LTM 379.9m | **658m / +73%** | **858m / +126%** | **1,130m / +197%** | 排除收购的机械增厚 |
+
+基准情景接近公司“加速迈向 10 亿美元收入”的表述；乐观和极度乐观要求的不只是 AI capex 增长，还要有明显份额提升、Elite 2/Chorus 2 快速认证、收购交叉销售和足够测试/校准产能。
+
+### 5.2 一年后的战略属性评分
+
+评分顺序为“AI 重要性 / 时间紧急性 / 供需紧张 / 垄断或技术控制 / 溢价能力”。
+
+| 产品组 | 基准情景评分 | 乐观情景评分 | 极度乐观情景评分 | 一年后判断 |
+|---|---|---|---|---|
+| A. 高速数据面振荡器 | 5/5/3/3/4 | 5/5/4/4/4 | 5/5/5/4/5 | 1.6T 与 625MHz 使规格升级快于供应商认证，极端情景下高端料号而非晶圆总量紧张 |
+| B. Elite/同步/TimeFabric | 4/4/3/4/5 | 5/5/4/4/5 | 5/5/5/5/5 | 若 OCS/CPO/推理集群将亚 10ns 变成架构要求，Elite 2 从“优化器”变成关键基础件 |
+| C. 原生 clock IC | 5/4/2/3/4 | 5/5/3/4/4 | 5/5/4/4/5 | PCIe Gen7、更多时钟域和异构计算提高板级价值，但多输出整合也减少器件颗数 |
+| D. 收购全栈时钟 | 5/5/3/4/4 | 5/5/4/4/4 | 5/5/5/5/5 | 现成客户和认证是最大优势；迁移成功后，SiTime 可捆绑振荡器+clock+软件 |
+| E. A&D/LEO | 2/3/3/4/5 | 2/4/4/4/5 | 2/4/5/5/5 | 对 AI 不关键，但对公司收入质量和溢价重要；高可靠认证形成长期锁定 |
+| F. Titan | 1/2/1/4/3 | 1/3/2/4/4 | 2/4/3/5/4 | 如果集成进 MCU/SoC，替换成本最高；但当前与 AI 数据中心关联有限 |
+
+### 5.3 估值敏感性
+
+以收购后当前股权价值约 188.4 亿美元计：
+
+| NTM P/S | 基准 968m | 乐观 1,233m | 极度乐观 1,590m |
+|---:|---:|---:|---:|
+| 15 倍 | 145 亿美元，较当前约 -23% | 185 亿美元，约 -2% | 239 亿美元，约 +27% |
+| 20 倍 | 194 亿美元，约 +3% | 247 亿美元，约 +31% | 318 亿美元，约 +69% |
+| 25 倍 | 242 亿美元，约 +28% | 308 亿美元，约 +64% | 398 亿美元，约 +111% |
+
+这不是目标价，而是说明当前估值隐含的组合：如果市场只愿给成熟高增长模拟/时序平台 15–20 倍 NTM 销售，基准收入情景几乎没有安全边际；要获得高回报，需要更高收入或长期保持极高倍数。
+
+## 6. 当前 BOM、真实内容量、价格传导、产能和认证
+
+### 6.1 产品级 BOM 与真实物理内容量
+
+| 产品组 | 典型物理内容 | 可观察价格/价值锚 | 主要被替代器件 | 价格传导方式 |
+|---|---|---|---|---|
+| 高速数据面 XO | 每个光模块通常 1 个主参考振荡器；每个交换机/加速卡还有板级参考源 | 行业 3–20 美元/高速光模块；1.6T 高级型号偏 5–20 美元 | 石英 XO、BAW、集成 PLL | 由 800G→1.6T、频率、抖动、温变和可靠性提升 ASP；不是原材料成本加成定价 |
+| Super-TCXO/Elite | 每个 SmartNIC、time card、网络同步域通常 1 个；高可靠系统可冗余 | SiT5376 官网 1,000 颗价 54.79 美元、5,000 颗价 49.43 美元；大客户价更低 | 高端 quartz TCXO/OCXO、BAW | 以 holdover、动态稳定、尺寸/功耗与减少外部 LDO/jitter cleaner 的系统节省定价 |
+| Clock generator/buffer | 每个 compute tray/baseboard 约 1–4 颗；交换机约 1–3 颗；多输出器件可替代 8–12 路离散时钟 | 行业约 2–30 美元；9SQ440 官网小批量约 7.316 美元 | TI、Skyworks、Microchip、ADI、Diodes、Montage | PCIe 代际、输出数、抖动、功耗和可编程性决定 ASP；器件整合会提高单颗价但降低颗数 |
+| DPLL/网络同步器 | 每台交换机、路由器、SmartNIC/time card 约 1–2 颗；冗余系统更多 | 行业约 20–100 美元以上 | Microchip ZL30/TimeProvider、ADI AD9545、TI LMK5B、Skyworks | PTP/SyncE/ITU-T 合规、servo/固件、holdover、系统认证和支持决定价格 |
+| A&D/LEO | 每颗卫星或军用平台多颗 XO/TCXO/OCXO/clock；管理层称单颗 LEO 卫星 SiTime 总内容最多约 2,000 美元 | 单器件几十至数百美元，总系统可到约 2,000 美元 | 高可靠 quartz、Rakon、Microchip、专用原子钟/OCXO | 认证、辐照/温度/振动可靠性与供应寿命带来高溢价 |
+| Titan | 每个 MCU/无线 SoC/模块通常 1 颗；可作为 KGD 与芯片共封装 | 规模 ASP 预计低于约 0.20 美元 | 0402/0201 石英晶体、片上 RC/LC | 通过尺寸、功耗、抗冲击和共封装节省板面积；单位价低、靠十亿级单位量 |
+
+### 6.2 按 optical port、GPU、rack、MW 归一化
+
+以下是“物理器件数 × 可观察价格”的工程化区间，而不是公司披露的客户 BOM。
+
+| 归一化单位 | 行业总时序内容量 | SiTime 当前/收购后可获取内容量估算 | 计算和限制 |
+|---|---:|---:|---|
+| 每个已装载 800G/1.6T optical port | 约 3.5–23 美元 | 约 1–15 美元 | 光模块主 XO 约 3–20 美元，加上交换机时钟树 30–200 美元按 64 端口摊约 0.47–3.13 美元；并非所有架构每端口完全独立 |
+| 每颗 GPU/XPU（普通高密度 rack） | 约 4.2–12.5 美元 | 约 1.3–7.5 美元 | 行业每 rack 300–900 美元 ÷ 72 GPU；是 rack 时序总额分摊，不代表每 GPU 上焊有同额器件 |
+| 每颗 GPU/XPU（强同步/OCS/CPO/推理） | 约 11.1–27.8 美元 | 约 4–17 美元 | 行业每 rack 800–2,000 美元 ÷ 72；管理层“推理为训练 2–4 倍”仅支持上端情景 |
+| 每 rack（普通 AI） | 约 300–900 美元 | 约 120–540 美元 | 包括 GPU/XPU tray、NIC/DPU、交换机/光模块与板级 clock；SiTime 份额研究假设 40%–60% |
+| 每 rack（亚 10ns、OCS/CPO/强同步） | 约 800–2,000 美元 | 约 320–1,200 美元 | 需要 Elite/OCXO、网络同步器、软件和更高端光链路；尚非所有 AI rack 的标准配置 |
+| 每 MW IT 负载 | 行业约 1,200–16,700 美元 | SiTime 约 500–10,000 美元 | 假设 120–250kW/rack，即每 MW 约 4–8.3 个 rack；设施级 capex 中占比极小，价值来自系统可靠性而非金额占比 |
+
+价格链应理解为：
+
+AI 芯片/交换 ASIC 代际升级 → SerDes/PCIe/以太网频率与抖动预算收紧 → OEM/模块厂重新认证参考时钟与 clock tree → 高性能器件 mix/ASP 上升 → SiTime 毛利率提升。PCI-SIG 的 PCIe 7.0 资料显示 128GT/s common-clock jitter 限值约 0.067ps RMS，相比 PCIe 3.0 参考时钟约收紧 15 倍，这是 Chorus 2、PhiClock、9SQ440 等升级的技术基础。
+
+### 6.3 高精度时钟 COGS 和毛利来源
+
+| 成本项 | 高精度时钟 COGS 占比估算 | SiTime 影响 |
+|---|---:|---|
+| 模拟/数字 die | 25%–35% | TSMC 成熟节点，晶圆不昂贵；设计 IP 和 mask 复用重要 |
+| MEMS/BAW/石英元件 | 10%–20% | Bosch MEMS 是核心单一来源之一；MEMS 一致性和长期协议有利 |
+| 封装/基板 | 10%–18% | 高端陶瓷、微型封装、共封装增加复杂度 |
+| 测试、温补、老化、校准 | 20%–30% | 高端产品真正的产能瓶颈；自动化和算法可显著提升毛利 |
+| 良率损失 | 5%–10% | 625MHz、超低抖动和极端温度规格爬坡时最敏感 |
+| 其他/物流 | 5%–10% | 分销、编程、SKU 和全球支持 |
+
+SiTime 的价格不是简单把晶圆涨价转嫁给客户；高毛利来自把校准、温度模型、MEMS、模拟 die、可编程性和系统支持封装成可认证平台。普通 XO 年度 ASP 仍可能下降 5%–10%，必须靠高端 mix 抵消。
+
+### 6.4 当前产能、采用和认证
+
+“产能（美元计）”是按可交付收入估算的年化上限，不是公司披露的设备产值。
+
+| 产品组 | 当前可交付年化产能估算 | 供应链采用 | 当前认证/阶段 | 主要约束 |
+|---|---:|---|---|---|
+| A. 高速数据面 XO | 240–300m | 400G/800G 广泛量产；1.6T 早期量产/爬坡；覆盖约 15–20 家模块厂生态 | 客户级认证未逐项公开；高频 1.6T 平台验证中 | 高频良率、OSAT、模块客户认证，不是成熟节点晶圆 |
+| B. Elite/同步/TimeFabric | 75–100m | Elite/Epoch 已采用；Elite 2 正由 hyperscaler/芯片/系统客户采样 | Elite 2：sampling，2026Q3 目标量产；TimeFabric/holdover：production | 9–24 个月系统验证、温补/老化数据、servo 集成 |
+| C. 原生 clock IC | 60–80m | Cascade 生产；Chorus 2 已供样，公开页面对“量产/预量产”状态不一致 | Chorus 2：公司称 PCIe Gen7 compliant；Cascade 支持 PTP/SyncE | 新产品良率、固件/配置、客户时钟树验证 |
+| D. 收购全栈时钟 | 300–330m | 超过 1 万客户；原 IDT 产品在服务器、网络、通信长期采用 | 多款 active、产品寿命至 2040；Renesas 文档/样品过渡至 2026 年末 | 客户/供应合同迁移、分销集中、Malaysia 封测与 FAE 承接 |
+| E. A&D/LEO | 45–60m | 已有设计，转换率高于普通业务 | 具体项目/军标/航天认证未披露 | 长认证、客户集中、项目节奏 |
+| F. Titan | 约 10m 商业收入能力；物理单位能力更高 | production/engineering samples；设计 funnel 约 400m | SoC/MCU 共封装验证，未披露量产客户 | known-good-die 良率、伙伴封装、低 ASP 下规模效率 |
+| 其他 | 160–180m | 成熟 | 量产 | 需求而非供给 |
+| **合计** | **约 0.89–1.06bn** | — | — | 高端测试/认证比 wafer 更紧 |
+
+2026Q2 有机收入指引中值年化为 580m，且管理层称供应 solid；因此有机 650–750m 的当前可交付能力合理。加上收购业务约 300m，合并能力约 0.9–1.1bn，说明基准情景的第一年约束主要是需求转化和整合，而不是晶圆总量。
+
+## 7. 一年后产能、供应链采用和认证三情景
+
+| 产品组 | 基准：产能 / 采用 / 认证 | 乐观：产能 / 采用 / 认证 | 极度乐观：产能 / 采用 / 认证 |
+|---|---|---|---|
+| A. 高速数据面 XO | 360m；1.6T 进入主要模块厂量产；多个客户完成系统认证 | 450m；1.6T 高速放量、625MHz 多客户；供给偏紧 | 600m；CPO/1.6T 同时拉动；高频料号阶段性短缺、分配供应 |
+| B. Elite/同步/TimeFabric | 130m；Elite 2 Q3 量产并进入少数平台；PTP/holdover attach 上升 | 190m；亚 10ns 同步在 OCS/推理架构扩大；多家 hyperscaler 量产认证 | 280m；强同步成为高端 AI cluster 标准；校准/老化测试成为瓶颈 |
+| C. 原生 clock IC | 100m；Chorus 2/Cascade 稳定量产；PCIe Gen7 仍以验证为主 | 150m；PCIe Gen7、异构计算时钟树提前采用 | 230m；服务器/交换机大规模平台转换，SiTime clock 与 MEMS 绑定 |
+| D. 收购全栈时钟 | 350m；过渡完成、收入超过公司 300m 下限；关键产品留存 | 430m；交叉销售、Top cloud/AI server 客户扩份额 | 560m；原 IDT 认证+SiTime MEMS 形成事实标准，渠道和供应紧张 |
+| E. A&D/LEO | 75m；已认证项目放量 | 110m；LEO/国防订单窗口集中 | 160m；多个大项目并行，长周期产能锁定 |
+| F. Titan | 15m；1–2 个量产平台 | 35m；多款 MCU/SoC 共封装 | 70m；十亿级单位量路径明确，成为平台级嵌入 |
+| 其他 | 170m；平稳/小幅下降 | 190m；周期回升 | 220m；消费与工业同步复苏 |
+| **合计产能** | **约 1.20bn** | **约 1.56bn** | **约 2.12bn** |
+
+扩产路径并不要求建先进晶圆厂，主要是：
+
+1. 提前锁定 Bosch MEMS 和 TSMC 成熟节点晶圆；
+2. 增加高端封装、温度循环、老化、校准和自动测试吞吐；
+3. 通过 AI/自动化缩短 characterization 和测试程序开发；
+4. 扩充模拟/PLL、servo、固件、FAE 和客户实验室；
+5. 接管 Renesas Malaysia 封测/运营流程并完成分销、文档和客户支持迁移。
+
+极度乐观情景下，产能总额仍高于收入点估计，不代表没有缺货：短缺会集中在 625MHz、高端 Super-TCXO、特定封装/温度等级和已认证料号，普通低端 SKU 可能同时过剩。
+
+## 8. 基于订单积压与供给的未来一年增速推断
+
+### 8.1 证据阶梯
+
+| 证据 | 可信度 | 可用于模型的内容 | 不能推导的内容 |
+|---|---:|---|---|
+| 2026Q2 140–150m 有机收入指引 | 高 | 近期需求和供给已较清晰 | 不能外推全年同一环比增速 |
+| FY2026 有机至少 +80% | 中高 | 订单簿/客户预测支持约 588m 下限 | 指引可调整，且没有合同保障 |
+| 2025Q4 B2B >1.5 | 中 | 订单动能强，若字面计算 bookings >170m | 无精确数、取消率和交期，不能当 backlog |
+| 大多数订单在 12 个月内、偏 Q1/Q2 | 中 | 2026H1 能见度强 | H2 和 2027 项目不确定 |
+| AI design-win funnel 数亿美元、clock funnel 300m、Titan funnel 400m、A&D funnel 500m | 中低 | 显示 SAM、客户接触和平台广度 | 是生命周期机会，跨多年、会丢单、会延迟，绝非当年订单 |
+| 渠道小批量价格和交期 | 低至中 | 证明部分料号可购、价格等级和非全面短缺 | 不能代表 hyperscaler 合同价、量产 lead time 或 backlog |
+| 客户/项目名 | 很低 | 公司公开称覆盖 top 10 cloud hyperscalers、top 7 AI server leaders；9SQ440 绑定 Intel cloud/HPC 平台 | 未披露具体 hyperscaler、GPU 平台、订单金额和交付窗口，不应猜测 |
+
+### 8.2 取消、转化和供给假设
+
+| 情景 | PO/forecast 取消或改期 | 12 个月 funnel/design-win 收入转化 | 高端产能利用率 | 核心假设 |
+|---|---:|---:|---:|---|
+| 基准 | 10%–15% | 20%–30% | 75%–85% | 800G 稳、1.6T 按计划、Elite 2 小规模、收购业务约 310m |
+| 乐观 | 5%–10% | 30%–40% | 80%–90% | 1.6T/PCIe Gen7 提前、交叉销售顺利、几乎无渠道流失 |
+| 极度乐观 | 低于 5% | 40%–55% | 90%+ 的关键 SKU | OCS/CPO/推理同步成为标准、客户争抢已认证高端料号 |
+
+这些取消率是模型假设，不是公司披露。由于客户无最低采购承诺，基准情景不能使用接近零的取消率。
+
+### 8.3 未来一年业务增速
+
+| 业务 | 基准 | 乐观 | 极度乐观 | 订单与供给解释 |
+|---|---:|---:|---:|---|
+| 有机 SiTime | 658m，+73% | 858m，+126% | 1,130m，+197% | 基准略低于 FY2026 +80% 的当年增速但覆盖 2027H1 正常化；乐观以上要求份额和新产品同时超预期 |
+| 收购 timing business | 310m，+35% | 375m，+63% | 460m，+100% | 基准略高于公司 300m 下限；极度乐观要求 2026Q1 的 +47% 再加交叉销售 |
+| 同口径合并 | 968m，+59% | 1,233m，+102% | 1,590m，+161% | 相对合并 LTM 609.9m；消除了并购起始日的机械不可比 |
+| 财报显示的报告收入增速 | 约 +155% | 约 +225% | 约 +319% | 若直接拿未来并表收入和历史 SiTime-only TTM 379.9m 比，会出现夸大的并购机械增速，不能代表有机质量 |
+
+最值得跟踪的真实验证点：
+
+1. 2026Q2 有机收入是否达到 145m 中值、CED 是否继续超过 100% 增长、non-GAAP 毛利率是否达到约 65%。
+2. 交割后首个完整季度的收购业务收入是否达到 75m 左右；低于 70m 会让 300m 目标承压。
+3. 1.6T 客户预测上调能否转成 shipments，而不是继续停留在 forecast/design win。
+4. Elite 2 是否在 2026Q3 如期商业量产；Chorus 2 和 SiT5977 官网状态不一致是否得到澄清。
+5. 分销商库存是否继续处于目标、WT Micro/Macnica/Avnet 迁移是否平稳。
+6. 合并库存、应收、经营现金流和新增摊销；收入增长若不能转换为现金，订单质量应下调。
+
+## 9. 竞争格局、技术主流性、替代方案与客户替换成本
+
+### 9.1 竞争图谱
+
+| 产品/技术 | 主要竞争对手 | SiTime 优势 | 替代方案/风险 | 客户替换成本 | 是否未来主流 |
+|---|---|---|---|---:|---|
+| 高速 MEMS XO | NDK、Epson、Kyocera、TXC、Daishinku、Rakon、Siward/Taitien；Skyworks BAW | 可编程、抗温变/气流/振动、无 activity dip、短交付和高可靠 | 高端石英持续进步；BAW 可与模拟 IC 集成；客户会双供 | 3–4 | 低抖动参考时钟必然主流；MEMS 份额上升但不会完全消灭石英 |
+| Super-TCXO/OCXO | Rakon、Microchip、高端石英厂、部分原子钟/OCXO | 动态稳定、尺寸/功耗、数字调谐、可与 clock/软件组合 | 在静态温度、低成本场景石英足够；Elite 2 的 GPU 利用率收益仍需客户实证 | 4–5 | 高端同步场景主流，普通 rack 非必需 |
+| Clock generator/buffer | Renesas 原业务已归 SiTime；TI、Skyworks、Microchip、ADI、Diodes、Montage | 收购后产品宽度、MEMS+clock 组合、纯时序专注 | 竞争者规模/渠道强；SoC 可集成更多时钟；多输出整合压缩总颗数 | 3–4 | PCIe/异构计算时钟树是主流，供应商份额仍开放 |
+| DPLL/网络同步/PTP | Microchip ZL30/TimeProvider、ADI AD9545、TI LMK5B、Skyworks；软件 PTP | Cascade/ClockMatrix+Elite/Epoch+TimeFabric 的端到端组合 | 软件 servo、NIC/交换 ASIC PHC、cross-timestamping 可减少专用硬件；GNSS/原子钟替代 | 4–5 | OCS、5G、金融、分布式 AI 的高精度同步趋于主流，但实施层可能软硬混合 |
+| CPO/OCS timing | 同上，并受 NVIDIA/Broadcom/Marvell/交换 ASIC 自研架构影响 | 公司称 CPO timing content 最高可达传统 3 倍；环境稳定优势 | CPO 可减少离散光模块 XO 数量；共享高端时钟价值增加但颗数可能下降 | 4 | 架构方向主流，SiTime 单机价值仍未由公开 BOM 证明 |
+| Titan 共封装 resonator | 日本/台湾微型石英、片上振荡器、BAW/MEMS 新进入者 | 0.46×0.46mm、known-good-die、抗冲击；共封装后寿命锁定 | ASP 极低、需要十亿单位量；SoC 厂自研或选石英 | 5（量产后） | 对超小 IoT/可穿戴可能主流，对 AI 数据中心近期不重要 |
+| A&D/LEO | Rakon、Microchip、Vectron/石英高可靠厂、原子钟供应商 | MEMS 抗冲击/振动、尺寸、可编程、组合产品 | 认证长、项目集中、出口管制；传统供应商关系深 | 5 | MEMS 渗透率上升，但不会快速单一化 |
+
+### 9.2 技术是否真能成为主流
+
+支持 SiTime 的证据：
+
+- [PCI-SIG PCIe 7.0](https://pcisig.com/sites/default/files/files/PCI-SIG%20PCIe%207.0%20Webinar_Rev5_FINAL.pdf) 把 128GT/s common-clock jitter 压至约 0.067ps RMS，相比 PCIe 3.0 收紧约 15 倍，说明高性能 clock 不是营销伪需求。
+- [OCP 2026 Data Center Timing Test Guide](https://www.opencompute.org/documents/test-guide-for-data-center-timing-pdf) 已把 time receiver、boundary clock、transparent clock 的误差测试制度化，说明数据中心同步正走向标准化。
+- [USENIX NSDI 2026 SyncWise](https://www.usenix.org/conference/nsdi26/presentation/lei-syncwise) 在 OCS+Tofino2 测试床做到最大约 9ns 同步误差、理论约 15ns，证明可重构光网络对高精度同步有真实系统需求。
+
+限制 SiTime 叙事的证据：
+
+- [Firefly](https://govindan.usc.edu/) 在 248 台机器 Clos 网络中实现亚 10ns 设备间同步和不超过 1μs 的 UTC 同步，证明软件与现有硬件时钟也能在部分场景达到高精度。
+- GPU 利用率低由计算不均衡、通信拥塞、内存、软件调度、故障和功率/散热共同决定。Elite 2 可以缩小时间误差与 guard band，但不能把 20%–40% GPU 利用率问题全部归因于振荡器。
+- OCS、CPO 和强同步 rack 仍是高端/新架构，不应把每个普通 AI rack 都按 800–2,000 美元时序内容计算。
+
+结论是：**更高性能、更完整的时序栈是主流；“每个 AI 集群都必须使用 SiTime 的亚纳秒硬件方案”不是已证实主流。**
+
+### 9.3 客户替换成本
+
+替换成本来自六层：
+
+1. **电气与信号完整性**：抖动、相噪、频率、输出标准、端接、供电噪声和 EMI 必须重新验证。
+2. **热与机械**：风流、温度阶跃、板弯、振动和老化数据需重新收集。
+3. **时钟树/固件**：DPLL、寄存器、OTP、EEPROM、BIOS、servo 与 PTP/SyncE 配置绑定。
+4. **系统认证**：服务器、交换机、光模块、汽车、军工和航天认证通常 9–24 个月。
+5. **供应与质量**：量产良率、长期供货、失效率和现场数据形成路径依赖。
+6. **平台寿命**：一旦进入服务器/网络平台，常维持 3–7 年；A&D/汽车更长。
+
+但并非所有产品同样高粘性。普通 pin-compatible buffer/XO 最容易替换；Chorus 2 主打兼容和减少离散器件，既有利于 SiTime 进入，也意味着竞争对手可用兼容方案反向替换。Titan 一旦与 MCU/SoC 共封装，替换成本最高；Elite/ClockMatrix/TimeFabric 形成系统闭环时次之。
+
+### 9.4 主要风险清单
+
+| 风险 | 概率 | 影响 | 观察指标 |
+|---|---:|---:|---|
+| 估值压缩 | 高 | 极高 | NTM P/S、利率、盈利兑现；即使收入达标也可能跌估值 |
+| Renesas 整合、合同/渠道迁移 | 中 | 极高 | 收购业务季度收入、三大分销商库存、客户/供应协议迁移、人员流失 |
+| 收购价格与商誉减值 | 中 | 高 | 最终 PPA、商誉/无形资产、GAAP 摊销、ROIC |
+| AI 收入口径夸大 | 中高 | 高 | CED 中传统通信比例、客户/应用披露、纯 AI 产品收入 |
+| 1.6T/CPO/OCS 延迟 | 中 | 高 | 1.6T shipments、625MHz 认证、CPO switch 架构和端口数 |
+| Elite 2 系统收益不达营销值 | 中 | 高 | 客户实测、量产设计、GPU 利用率改善证据 |
+| 石英/BAW/集成方案竞争 | 中高 | 中高 | 份额、ASP、双供、竞争者 PCIe7/1.6T 产品 |
+| 软件同步替代部分硬件 | 中 | 中 | Firefly/SyncWise 类部署、NIC/ASIC PHC 集成、专用 time card 需求 |
+| Bosch/TSMC/OSAT 单点与高端测试瓶颈 | 中 | 中高 | lead time、库存、良率、OSAT/封装问题 |
+| 客户/渠道集中 | 高 | 高 | 有机三家分销商占 Q1 66%；收购业务三家占 82%；最大消费客户波动 |
+| 产品状态披露不一致 | 中 | 中 | 新闻稿“production”与产品页“pre-production”差异、Q3 财报确认 |
+| SBC、股份和可转债稀释 | 高 | 中高 | GAAP/non-GAAP 差、稀释股数、股价接近 1,040.47 美元转股价 |
+
+## 过去半年重要资料与事件时间线
+
+| 日期 | 事件 | 投资含义 |
+|---|---|---|
+| 2026-02-04 | FY2025/Q4 财报；宣布收购 Renesas timing business | FY2025 +61%；交易把公司从振荡器扩至全栈 clock/sync |
+| 2026-02 | OCP 发布 Data Center Timing Test Guide | 高精度数据中心时钟开始形成可重复测试框架 |
+| 2026-03-04 | Morgan Stanley TMT Conference；3 月另有 Roth/Needham 等会议 | 管理层持续强化 AI、1.6T、收购协同和长期 25%–30% 增长叙事 |
+| 2026-05-04 | 发布 Elite 2 | 亚纳秒同步产品进入采样，Q3 计划量产 |
+| 2026-05-06 | 2026Q1 财报 | 收入 +88.3%、CED +158%、non-GAAP GM 64.5%；上调/确认全年有机至少 +80% |
+| 2026-05-04 至 05-06 | USENIX NSDI 2026 发布 SyncWise | OCS 网络最大约 9ns 同步误差，证明高精度同步场景真实 |
+| 2026-05-22 | 完成 13.5 亿美元 0% 可转债 | 为现金对价融资；低票息但增加本金和远期稀释 |
+| 2026-06-03 | Evercore Global TMT Conference | 收购前最后阶段的投资者沟通；无新的正式财务指引 |
+| 2026-06-12 | Nikkei 采访 | CEO 称 Q1 约 66% 收入来自 AI、2026 有机 +80%；应视为管理层口径 |
+| 2026-06-24 | Chorus 2 发布 | 8/12 输出、PCIe Gen7、面向 AI/HPC；公开页面量产状态需澄清 |
+| 2026-07-01 | 正式完成 Renesas timing business 收购 | 支付 15 亿美元现金、发行 355.87 万股；Q3 开始并表 |
+| 2026-07-09 | 宣布 8 月 5 日发布 Q2 业绩 | 研究日没有比 2026Q1 更晚的正式财报 |
+
+## 最终投资判断与验证门槛
+
+### 基准判断
+
+SiTime 的业务转型是真实的：AI 数据面振荡器已从小业务变成最大增长引擎，毛利率和盈利杠杆同步改善；Renesas/IDT 资产让它首次具备完整时钟树与同步平台，且被收购业务自身已在 2026Q1 加速。公司在高温变、振动、低抖动、可编程和系统同步上的优势足以获取高于普通时钟的 ASP 与设计粘性。
+
+但该公司不是 HBM、GPU、网络 ASIC 或电力设备那样的绝对供给瓶颈。每 rack/MW 的时序金额很小，增长靠性能升级、份额和产品组合，而非物理短缺。当前约 30.9 倍同口径 LTM P/S 和约 68–74 倍 forward PE，使投资回报对“增长持续时间”异常敏感。
+
+### 未来四个季度必须兑现的门槛
+
+1. 2026Q2 有机收入至少接近 145m、non-GAAP GM 约 65%，且增长不是渠道提前拉货。
+2. 2026H2 有机收入至少约 329m，才能达到全年 +80% 下限。
+3. 收购业务首年收入至少 300m、调整后毛利率约 70%，且分销商库存和客户留存稳定。
+4. Elite 2 在 2026Q3 量产；Chorus 2、SiT5977 的生产状态由 shipments 而非网页文案确认。
+5. 1.6T 由预测上调转成已出货收入，625MHz/PCIe Gen7 进入明确客户平台。
+6. 合并后经营现金流改善，净债务下降；不能只靠 SBC 和剔除摊销后的 non-GAAP EPS。
+
+若前四项兑现，基准约 10 亿美元 NTM 收入可成立；若再出现 OCS/CPO/推理同步规模化与交叉销售，乐观情景才有依据。若收购业务回落到 2025 年约 2.08 亿美元年收入、Elite 2 延期或 CED 增速快速降到 30% 以下，则当前估值缺乏足够缓冲。
+
+## 主要来源
+
+### 公司、SEC 与交易
+
+- [SiTime 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1451809/000145180926000012/sitm-20251231.htm)
+- [SiTime 2026Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1451809/000145180926000041/sitm-20260331.htm)
+- [2026Q1 财报与指引](https://investor.sitime.com/news-releases/news-release-details/sitime-reports-first-quarter-2026-financial-results)
+- [2026Q1 官方电话会页面/Transcript](https://investor.sitime.com/events/event-details/sitimes-first-quarter-2026-financial-results-conference-call)
+- [Renesas timing business 收购公告](https://investor.sitime.com/news-releases/news-release-details/sitime-acquire-renesas-timing-business)
+- [2026-07-01 收购完成公告](https://investor.sitime.com/news-releases/news-release-details/sitime-completes-acquisition-renesas-timing-business)
+- [交割 8-K：15 亿美元现金及 355.87 万股](https://www.sec.gov/Archives/edgar/data/1451809/000119312526291561/d71116d8k.htm)
+- [被收购业务 2025/2024 历史财务](https://www.sec.gov/Archives/edgar/data/1451809/000145180926000045/ex991-renesastimingbusines.htm)
+- [被收购业务 2026Q1/2025Q1 历史财务](https://www.sec.gov/Archives/edgar/data/1451809/000145180926000045/ex992-renesastimingbusines.htm)
+- [收购示意性 pro forma](https://www.sec.gov/Archives/edgar/data/1451809/000145180926000045/ex993-sitimeproformafs.htm)
+- [13.5 亿美元 0% 可转债 8-K](https://www.sec.gov/Archives/edgar/data/1451809/000119312526237180/d47334d8k.htm)
+- [可转债条款、转股价与 capped call](https://www.sec.gov/Archives/edgar/data/1451809/000119312526233298/d132434d424b5.htm)
+- [Aura clock products 收购](https://investor.sitime.com/news-releases/news-release-details/sitime-acquires-clock-products-aura-semiconductor)
+- [2026-06 Nikkei 采访的 SiTime 官方转载](https://www.sitime.com/company/newsroom/blog/sitime-ceo-vashist-acquisition-renesas-business-drive-ai-expansion)
+
+### 产品、行业标准和技术论文
+
+- [Elite 2 Super-TCXO](https://investor.sitime.com/news-releases/news-release-details/sitime-boosts-gpu-utilization-ai-data-centers-elite-2-super-tcxo)
+- [Chorus 2](https://www.sitime.com/company/newsroom/blog/product-spotlight-2x-better-performance-and-2x-lower-jitter-chorus-2-clock)
+- [Cascade MEMS Network Synchronizers](https://www.sitime.com/products/jitter-cleaners-network-synchronizers/mems-network-synchronizers)
+- [SiT5977](https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5977)
+- [Titan 平台](https://investor.sitime.com/news-releases/news-release-details/sitime-enters-4b-resonator-market-titan-platformtm)
+- [Renesas/SiTime 9FGV1002](https://www.renesas.com/en/products/9fgv1002?tab=videos)
+- [Renesas/SiTime 9SQ440](https://www.renesas.com/en/products/9sq440?partno=9SQ440NQQI)
+- [Renesas/SiTime RC32614A](https://www.renesas.com/en/products/rc32614a?tab=boards-kits)
+- [OCP Test Guide for Data Center Timing，2026-02](https://www.opencompute.org/documents/test-guide-for-data-center-timing-pdf)
+- [USENIX NSDI 2026 SyncWise](https://www.usenix.org/conference/nsdi26/presentation/lei-syncwise)
+- [Firefly：248 机器数据中心亚 10ns 同步](https://govindan.usc.edu/)
+- [PCI-SIG PCIe 7.0 技术资料](https://pcisig.com/sites/default/files/files/PCI-SIG%20PCIe%207.0%20Webinar_Rev5_FINAL.pdf)
+
+### 市场数据
+
+- [StockAnalysis SITM 行情与 TTM 指标](https://stockanalysis.com/stocks/sitm/)
+- [StockAnalysis/S&P Global 分析师预测](https://stockanalysis.com/stocks/sitm/forecast/)
+
+---
+
+本报告中的 AI 收入拆分、产品收入、产品毛利率、BOM、美元产能、取消率与三情景均为公开信息基础上的研究估算；它们用于检验叙事与财务是否相互一致，不应被误读为公司披露、客户订单或确定性预测。

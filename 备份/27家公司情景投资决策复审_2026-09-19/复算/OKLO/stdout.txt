@@ -1,0 +1,36 @@
+X feasible True value 0 new equity 0.0 maxdebt 0.0
+1 {'mw': 0.0, 'rev': 22.44, 'ebit': -330.0, 'capex': 270.0, 'cash': 2593.0, 'debt': 0.0, 'shares': 203.0, 'value': 0, 'cumdps': 0.0}
+3 {'mw': 0.0, 'rev': 35.02, 'ebit': -467.5, 'capex': 382.5, 'cash': 1025.41, 'debt': 0.0, 'shares': 203.0, 'value': 0, 'cumdps': 0.0}
+7 {'mw': 0.0, 'rev': 0.0, 'ebit': 0.0, 'capex': 0.0, 'cash': 0, 'debt': 0.0, 'shares': 203.0, 'value': 0, 'cumdps': 0.0}
+10 {'mw': 0.0, 'rev': 0.0, 'ebit': 0.0, 'capex': 0.0, 'cash': 0, 'debt': 0.0, 'shares': 203.0, 'value': 0, 'cumdps': 0.0}
+20 {'mw': 0.0, 'rev': 0.0, 'ebit': 0.0, 'capex': 0.0, 'cash': 0, 'debt': 0.0, 'shares': 203.0, 'value': 0, 'cumdps': 0.0}
+D feasible True value 3.96 new equity 0.0 maxdebt 0.0
+1 {'mw': 0.0, 'rev': 22.44, 'ebit': -209.0, 'capex': 171.0, 'cash': 2813.0, 'debt': 0.0, 'shares': 203.0, 'value': 4.44, 'cumdps': 0.0}
+3 {'mw': 0.0, 'rev': 35.02, 'ebit': -165.0, 'capex': 135.0, 'cash': 2292.91, 'debt': 0.0, 'shares': 203.0, 'value': 5.57, 'cumdps': 0.0}
+7 {'mw': 0.0, 'rev': 70.07, 'ebit': -49.5, 'capex': 40.5, 'cash': 1914.5, 'debt': 0.0, 'shares': 203.0, 'value': 8.76, 'cumdps': 0.0}
+10 {'mw': 0.0, 'rev': 0.0, 'ebit': 0.0, 'capex': 0.0, 'cash': 0, 'debt': 0.0, 'shares': 203.0, 'value': 0, 'cumdps': 9.81}
+20 {'mw': 0.0, 'rev': 0.0, 'ebit': 0.0, 'capex': 0.0, 'cash': 0, 'debt': 0.0, 'shares': 203.0, 'value': 0, 'cumdps': 9.81}
+L feasible True value 2.82 new equity 2081.4 maxdebt 6314.2
+1 {'mw': 0.0, 'rev': 26.52, 'ebit': -222.69, 'capex': 61.86, 'cash': 2905.46, 'debt': 0, 'shares': 203.0, 'value': 3.16, 'cumdps': 0.0}
+3 {'mw': 0.0, 'rev': 57.0, 'ebit': -232.37, 'capex': 287.95, 'cash': 2248.15, 'debt': 0, 'shares': 203.0, 'value': 3.97, 'cumdps': 0.0}
+7 {'mw': 225.0, 'rev': 421.5, 'ebit': 17.11, 'capex': 1181.78, 'cash': 439.77, 'debt': 870.63, 'shares': 345.57, 'value': 6.24, 'cumdps': 0.0}
+10 {'mw': 825.0, 'rev': 1316.36, 'ebit': 437.57, 'capex': 1861.39, 'cash': 669.45, 'debt': 3324.5, 'shares': 604.95, 'value': 8.77, 'cumdps': 0.0}
+20 {'mw': 2100.0, 'rev': 4057.64, 'ebit': 1822.23, 'capex': 12.26, 'cash': 300, 'debt': 5272.55, 'shares': 611.01, 'value': 18.07, 'cumdps': 7.56}
+B feasible True value 4.72 new equity 2717.9 maxdebt 6069.0
+1 {'mw': 0.0, 'rev': 26.52, 'ebit': -222.69, 'capex': 245.46, 'cash': 2719.81, 'debt': 0, 'shares': 203.0, 'value': 5.29, 'cumdps': 0.0}
+3 {'mw': 75.0, 'rev': 102.49, 'ebit': -213.23, 'capex': 981.53, 'cash': 849.3, 'debt': 60.26, 'shares': 203.0, 'value': 6.63, 'cumdps': 0.0}
+7 {'mw': 600.0, 'rev': 815.45, 'ebit': 219.34, 'capex': 1846.38, 'cash': 440.31, 'debt': 2413.86, 'shares': 430.14, 'value': 10.43, 'cumdps': 0.0}
+10 {'mw': 1275.0, 'rev': 1943.45, 'ebit': 769.09, 'capex': 1672.01, 'cash': 300, 'debt': 4588.38, 'shares': 548.56, 'value': 12.3, 'cumdps': 2.11}
+20 {'mw': 2100.0, 'rev': 4057.64, 'ebit': 1852.23, 'capex': 12.26, 'cash': 300, 'debt': 4436.01, 'shares': 564.3, 'value': 19.01, 'cumdps': 15.33}
+O feasible True value 25.95 new equity 8627.7 maxdebt 39092.3
+1 {'mw': 0.0, 'rev': 26.52, 'ebit': -232.48, 'capex': 992.1, 'cash': 1964.82, 'debt': 0, 'shares': 203.0, 'value': 29.06, 'cumdps': 0.0}
+3 {'mw': 150.0, 'rev': 213.94, 'ebit': -203.25, 'capex': 1635.63, 'cash': 300.0, 'debt': 637.37, 'shares': 229.35, 'value': 36.46, 'cumdps': 0.0}
+7 {'mw': 1500.0, 'rev': 1896.69, 'ebit': 648.29, 'capex': 4686.8, 'cash': 473.25, 'debt': 7415.81, 'shares': 349.4, 'value': 57.37, 'cumdps': 0.0}
+10 {'mw': 3900.0, 'rev': 5484.71, 'ebit': 2548.32, 'capex': 6052.51, 'cash': 399.79, 'debt': 16370.34, 'shares': 407.19, 'value': 74.14, 'cumdps': 6.0}
+20 {'mw': 12900.0, 'rev': 22314.75, 'ebit': 11790.86, 'capex': 2978.21, 'cash': 300, 'debt': 38650.98, 'shares': 422.32, 'value': 171.85, 'cumdps': 49.3}
+T feasible True value 143.5 new equity 10764.9 maxdebt 92644.4
+1 {'mw': 0.0, 'rev': 26.52, 'ebit': -233.7, 'capex': 1108.38, 'cash': 1935.04, 'debt': 89.5, 'shares': 203.0, 'value': 160.72, 'cumdps': 0.0}
+3 {'mw': 225.0, 'rev': 267.27, 'ebit': -171.67, 'capex': 2371.96, 'cash': 300.0, 'debt': 1557.19, 'shares': 210.04, 'value': 201.6, 'cumdps': 0.0}
+7 {'mw': 3000.0, 'rev': 3598.06, 'ebit': 1719.69, 'capex': 8592.01, 'cash': 983.17, 'debt': 14911.18, 'shares': 238.62, 'value': 317.22, 'cumdps': 0.0}
+10 {'mw': 8500.0, 'rev': 11539.52, 'ebit': 6461.29, 'capex': 12635.08, 'cash': 300, 'debt': 34219.54, 'shares': 252.33, 'value': 418.81, 'cumdps': 24.5}
+20 {'mw': 33500.0, 'rev': 58050.72, 'ebit': 34814.5, 'capex': 6722.8, 'cash': 300, 'debt': 91833.53, 'shares': 253.87, 'value': 878.86, 'cumdps': 326.21}

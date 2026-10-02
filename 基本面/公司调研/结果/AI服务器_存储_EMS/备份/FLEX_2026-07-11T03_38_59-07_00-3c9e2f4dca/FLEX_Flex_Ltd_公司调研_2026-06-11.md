@@ -1,0 +1,421 @@
+# 公司：FLEX Flex Ltd 公司调研（2026-06-11）
+
+> 研究边界：本报告只使用 `基本面/行业调研/` 内与 AI 服务器、机架集成、AI 数据中心电力、冷却、供电架构相关的资料，并结合联网搜索、Flex 官方 IR/SEC/产品页面、JetCool/Flex Power Modules 页面和市场数据。未读取、引用或继承 `特征量化/` 内容；未读取同目录旧版 FLEX 公司报告；未修改 `公司调研/公司索引.md`。
+
+## 0. 核心结论
+
+Flex Ltd（NASDAQ: FLEX）正在从传统 EMS/JDM 制造商重估为“AI 数据中心电力、冷却、机架集成和先进制造平台”的混合体。公司原本的投资人印象是低毛利、强现金流、客户分散的全球电子制造服务商；2024-2026 年，叙事核心明显转向 Cloud and Power Infrastructure（CPI）：AI 数据中心的 grid-to-rack 电力、in-rack power、chip-level power、direct-to-chip liquid cooling、整机/整柜集成、现场部署服务。市场给予的估值已经不再是普通 EMS：截至 2026-06-11 11:26 EDT，股价约 146.36 美元，市值约 536 亿美元，TTM GAAP PE 约 62.8x，forward PE 约 32.2x，PS 约 1.92x。
+
+最关键变化是 2026-05-05 公司宣布计划把 CPI 拆成独立上市公司 SpinCo，目标 2027 年第一季度完成。管理层给出的 SpinCo 画像不是单纯代工，而是“端到端电力与热管理技术 + 集成基础设施系统”，从 grid to chip / grid to rack 服务 AI 数据中心和关键任务应用。Flex 同时披露 SpinCo FY2027 收入目标增长约 65%-75%，FY2028 加速到 80%+。这意味着 CPI 已经从一个 FY2024 收入 32.44 亿美元、FY2025 47.99 亿美元的业务，增长为 FY2026 66.14 亿美元，并计划在 FY2027 接近或超过 110 亿美元。
+
+当前基本面最突出的不是 Flex 整体收入增长，而是收入结构和利润率重构。FY2026 公司总收入 279.14 亿美元，同比增长 8.1%；但 CPI 收入 66.14 亿美元，同比增长 37.8%，占总收入 23.7%；CPI segment income 6.10 亿美元，segment margin 9.2%，明显高于 ITS 5.4% 和 RMS 6.0%。Q4 FY2026 单季 CPI 收入约 18 亿美元，同比增长约 70%，CPI segment margin 8.9%。FY2027 公司总收入指引 323-338 亿美元，增长中点约 18%，调整后 EPS 指引 4.21-4.51 美元，调整后经营利润率 7.0%-7.1%；该指引“不包含计划拆分 CPI 造成的影响”。
+
+AI 数据中心相关收入占比的可观测下限是 CPI：FY2026 CPI 占公司收入 23.7%，Q4 FY2026 CPI 占单季收入约 24.1%。考虑 ITS 中仍可能包含通信、网络、企业/云平台制造，真实 AI/云基础设施敞口可能高于 CPI，但可审计口径应以 CPI 为下限。公司未披露 backlog、bookings、取消率、客户名单和按产品收入；本报告对订单、交期和细分产品收入采用“官方指引 + segment 数据 + 产品发布 + 项目内行业容量”的交叉反推，相关位置均标注为估算。
+
+## 1. 公司整体业务、定位和最近三年变化
+
+### 1.1 公司是什么业务
+
+Flex 是总部位于 Austin, Texas 的全球先进制造、供应链、工程和产品化服务公司。公司帮助品牌客户设计、制造、交付和维护产品，传统业务横跨通信、企业 IT、消费者/商用、汽车、医疗、工业、能源和数据中心。和纯品牌厂不同，Flex 通常不是终端产品品牌，也不是 GPU/ASIC/CPU/HBM 平台拥有者；它的位置更接近 OEM/ODM/JDM/EMS、供应链组织者、工程制造平台和数据中心基础设施集成商。
+
+FY2026 开始，公司按三个 segment 披露：
+
+| Segment | FY2026收入 | 占总收入 | YoY | FY2026 segment income | segment margin | 主要内容 |
+|---|---:|---:|---:|---:|---:|---|
+| ITS: Integrated Technology Solutions | 111.09亿美元 | 39.8% | -2.0% | 5.96亿美元 | 5.4% | 通信、企业、云/AI 数据中心、智能设备、生活方式、商用/消费等制造与工程 |
+| RMS: Regulated Manufacturing Solutions | 101.91亿美元 | 36.5% | +5.3% | 6.11亿美元 | 6.0% | 汽车、医疗健康、工业等受监管/高可靠制造 |
+| CPI: Cloud and Power Infrastructure | 66.14亿美元 | 23.7% | +37.8% | 6.10亿美元 | 9.2% | 云、数据中心、能源解决方案、grid edge、发电、电力转换、工业自动化、Anord Mardix 等 |
+| 合计 | 279.14亿美元 | 100.0% | +8.1% | 18.17亿美元 | 6.5% | segment income 口径，不等同 GAAP operating income |
+
+投资人对 Flex 的重新定价，核心是 CPI 的可拆分价值。普通 EMS 的收入通常高但毛利率低，估值受客户周期、营运资本和议价权限制；CPI 更接近“电力基础设施 + 热管理 + 机架系统 + 现场服务”的组合，利润率、增长、订单可见度和客户粘性都更高。
+
+### 1.2 产业链位置
+
+在 AI 基建技术栈中，Flex 不是 GPU、ASIC、HBM 或光模块核心器件供应商，而处在“把芯片平台变成可部署数据中心容量”的中下游关键位置：
+
+| 层级 | 主要参与方 | Flex 的位置 | 价值来源 |
+|---|---|---|---|
+| 芯片/加速器 | NVIDIA、AMD、Broadcom、AWS Trainium、Google TPU、Microsoft Maia、Meta MTIA 等 | 非核心芯片供应商；通过客户平台做板级/系统级电源和热设计适配 | 不掌握 GPU 分配权，但能参与 xPU 周边电力、热、制造工程 |
+| 服务器/节点 | Dell、HPE、Lenovo、Supermicro、ODM/JDM、CSP 自研 | PCA、box build、JDM、NPI、服务器/存储/网络制造 | 良率、交付速度、供应链、客户定制 |
+| 整柜/机架 | GB200/GB300 NVL72、ORv3/HPR、CSP ASIC rack | rack enclosure、node/rack-level integration、pre-test、burn-in、cabling、busbar、power shelf、BBU、液冷集成 | 高密度机架从“部件”到“可验收容量”的工程集成 |
+| 电力/配电 | Vertiv、Schneider、Eaton、Delta、Lite-On、Advanced Energy、Anord Mardix 等 | 关键电力产品、power pods、LV/MV switchgear、PDU、RPP、busway、power shelf、CESS、DC/DC/IBC/VPD | AI 机房最硬瓶颈之一；利润率和可见度优于低端 EMS |
+| 冷却 | JetCool、CoolIT、Boyd、Auras、Vertiv、nVent、Schneider 等 | JetCool direct-to-chip、SmartPlate、SmartSense CDU、manifold、quick disconnect、现场服务 | GB200/GB300 级别机架转向液冷，认证和可靠性形成粘性 |
+| 现场部署/生命周期 | 数据中心业主、EPC、MEP、服务商 | project deployment、commissioning、system validation、spares、maintenance、reverse logistics | 验收节奏决定收入确认；服务提升毛利和客户锁定 |
+
+项目内行业研究对 2026 年 AI 服务器/整柜交付的判断是：价值不在低端组装，而在整柜交付、液冷交付、电力交付、网络交付、现场验收交付的组合能力。Flex 的 CPI 正好覆盖其中的电力、冷却、机架集成和部署服务，因此在 AI 数据中心扩张中具备“非芯片但卡交付”的位置。
+
+### 1.3 最近三年重大业务变动/转型/收购
+
+| 时间 | 事件 | 战略含义 |
+|---|---|---|
+| 2024-01 | 完成 Nextracker 剩余权益剥离/分拆 | 太阳能跟踪器业务从 Flex 报表中剥离，Flex 回归先进制造与数据中心/电力主线；也让市场重新评估剩余业务质量 |
+| 2024-10 | OCP Global Summit 发布 liquid-cooled rack、AI 数据中心 power/rack/reference platform、IBC 等 | Flex 明确把 compute、rack、power、liquid cooling、lifecycle services 组合成 AI 数据中心方案，而不只是代工 |
+| 2024-11 | 收购 JetCool Technologies | 补齐 direct-to-chip liquid cooling、SmartPlate、CDU、微对流冷却技术，提升 CPI 中热管理/IP 属性 |
+| 2024-11 | 完成 3.25 亿美元现金收购 Crown Technical Systems | 增强全电力分配和保护系统，扩大模块化数据中心、中压配电和美国数据中心电力业务；公司称 FY2025 预计贡献约 1.2 亿美元收入、高 teens EBITDA margin |
+| 2025-2026 | CPI 独立成段并高速增长 | FY2026 CPI 收入 66.14 亿美元、segment margin 9.2%；Q4 FY2026 CPI 单季收入约 18 亿美元、同比约 +70% |
+| 2026-05 | 宣布计划拆分 CPI 为 SpinCo | 把 AI 数据中心电力/热管理/集成基础设施从 Flex 中拆出，目标 2027 年 Q1 完成，SpinCo FY2027 目标收入增长 65%-75% |
+| 2026-06 | 被宣布将加入 S&P 500（市场事件） | 不是经营事件，但强化机构持仓需求；也说明市场已把 Flex 从低估 EMS 重新定价为 AI 基建相关公司 |
+
+### 1.4 估值和财务快照
+
+市场数据口径：StockAnalysis，2026-06-11 11:26 EDT，盘中实时价格；财务口径：FY2026 年报期末 2026-03-31 / TTM。
+
+| 指标 | 数值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | 146.36美元 | 2026-06-11 11:26 EDT | 当日盘中，+4.93% |
+| 市值 | 536.2亿美元 | 2026-06-11 | 已显著高于传统 EMS 估值区间 |
+| 企业价值 EV | 555.8亿美元 | 2026-06-11 | 约含净债务 19.3亿美元 |
+| TTM收入 | 279.14亿美元 | FY2026/TTM | 同比 +8.1% |
+| FY2027收入指引 | 323-338亿美元 | Flex 2026-05-05 | 中点 330.5亿美元，同比 +18.4%；不含计划拆分影响 |
+| GAAP PE | 62.80x | 2026-06-11 / TTM EPS 2.33美元 | 受 GAAP 重组、摊销和股价重估影响，高于传统 EMS |
+| Forward PE | 32.22x | 2026-06-11 / 市场预期 | 若用公司 FY2027 adj EPS 中点 4.36美元，约 33.6x |
+| PS | 1.92x | 2026-06-11 / TTM | 对 EMS 偏高，对 AI 电力/热管理平台仍低于纯电力设备龙头 |
+| Forward PS | 1.61x | 2026-06-11 | 反映 FY2027 收入跳升 |
+| EV/EBITDA | 26.98x | 2026-06-11 / TTM | 估值核心在 CPI 拆分与增长，而不是现有 GAAP 利润 |
+| 毛利率 | 9.41% | TTM / FY2026 | 传统制造基因仍明显，毛利率绝对值低 |
+| 净利率 | 3.15% | TTM / FY2026 | 净利润 8.80亿美元 |
+| FCF | 10.60亿美元 | FY2026 | FCF margin 3.8%；FY2026 回购超过 12亿美元 |
+| 现金 | 23.89亿美元 | 2026-03-31 | 年报/StockAnalysis balance sheet |
+| 总债务 | 43.16亿美元 | 2026-03-31 | 净债务约 19.27亿美元 |
+| Current ratio | 1.36x | TTM | 制造业正常但非宽裕 |
+| Quick ratio | 0.68x | TTM | 库存和应收占用高，CPI 高增速会放大营运资本需求 |
+| Debt/EBITDA | 1.96x | TTM | 健康，远未到高杠杆 |
+| Interest coverage | 7.00x | TTM | 利息覆盖充足 |
+| ROE / ROIC | 17.35% / 16.21% | TTM | CPI 高利润率、回购和资产周转改善回报率 |
+
+资产负债表评价：健康但不是“轻资产无风险”。Flex 有 23.89 亿美元现金、43.16 亿美元总债务、19.27 亿美元净债务，Debt/EBITDA 1.96x、利息覆盖 7.0x，短中期偿债压力可控。风险在营运资本：FY2026 期末库存 58.45 亿美元、应收 46.79 亿美元、应付 80.55 亿美元，AI 数据中心项目若出现客户验收延迟、GPU/电力器件错配、液冷现场问题或取消，会先体现在库存和现金转换周期上。
+
+## 2. 最新和最近四次财报分析
+
+### 2.1 最近五个季度核心财务表
+
+说明：Flex 不披露正式 backlog/bookings/book-to-bill、取消率、按客户/按产品订单金额。表中“CPI/AI DC 收入”只有 Q4 FY2026 管理层披露单季约 18 亿美元，其余季度为基于 FY2026 CPI 全年 66.14 亿美元、Q4 CPI 18 亿美元、季度收入趋势、管理层对数据中心需求的表述做的模型反推，非公司披露。
+
+| 财报 | 披露日期 | 总收入 | YoY | 毛利率 | GAAP经营利润 / margin | 调整后经营利润 / EPS | FCF | CPI/AI数据中心收入 | 订单、交期、取消率判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| Q4 FY2026，季末 2026-03-31 | 2026-05-05 | 74.77亿美元 | +16.9% | 9.39% | 3.72亿美元 / 5.0% | 5.00亿美元 / 0.93美元 | 2.11-2.12亿美元 | 披露 CPI 约 18亿美元，约占总收入 24.1%，同比约 +70%；CPI margin 8.9% | 未披露 backlog；FY2027 总收入 +18% 中点、SpinCo FY2027 +65%-75% 目标，意味着已获客户项目/容量承诺覆盖未来 12个月主要增量；取消率未披露，基准假设已定制项目取消低但验收延迟风险高 |
+| Q3 FY2026，季末 2025-12-31 | 2026-02-04 | 70.58亿美元 | +7.7% | 9.62% | 3.89亿美元 / 5.5% | 4.60亿美元 / 0.87美元 | 2.72-2.75亿美元 | 估算 CPI 约 16.5-18.0亿美元，占比 23%-25%；数据中心和电力继续拉动 | Q3 超出指引并上调 FY2026，说明 book-to-bill 对 CPI 大概率 >1；供应约束主要在电力设备、液冷认证、整柜调试 |
+| Q2 FY2026，季末 2025-09-26 | 2025-10-29 | 68.04亿美元 | +4.0% | 9.02% | 2.96亿美元 / 4.4% | 4.09亿美元 / 0.79美元 | 3.03-3.05亿美元 | 估算 CPI 约 15.0-16.5亿美元，占比 22%-24%；公司称 data center demand in Power and Cloud 强 | Q2 提高全年收入、调整后利润率和 EPS 指引，订单能见度改善；Ukraine missile strike 带来 4100万美元/0.11美元成本，属于非核心扰动 |
+| Q1 FY2026，季末 2025-06-27 | 2025-07-24 | 65.75亿美元 | +4.1% | 8.70% | 3.11亿美元 / 4.7% | 3.95亿美元 / 0.72美元 | 2.66亿美元 | 估算 CPI 约 13.5-15.0亿美元，占比 21%-23%；CEO 点名 data center and power 为高增长市场 | FY2026 开局即上调全年指引；反映 CPI 订单从 2024 OCP/JetCool/Crown 组合进入量产和交付 |
+| Q4 FY2025，季末 2025-03-31 | 2025-05-07 | 63.98亿美元 | +3.7% | 8.80% | 3.05亿美元 / 4.8% | 约 0.73美元 | 3.21亿美元 | 由 Q4 FY2026 CPI +70% 反推，Q4 FY2025 CPI 约 10.5-10.7亿美元，占比约 16%-17% | CPI 仍在早期爬坡，JetCool/Crown 收购尚未完全体现在全年；订单可见度从 FY2026 指引开始体现 |
+
+五个季度的主线非常清楚：总收入从 63.98 亿美元升至 74.77 亿美元，毛利率从 8.8% 升至 9.39%，GAAP 经营利润率从 4.77% 升至 4.98%，调整后经营利润率 Q4 FY2026 达 6.7%。真正的拐点不是传统业务全面加速，而是 CPI 快速从 FY2025 Q4 约 10.6 亿美元级别变成 FY2026 Q4 18 亿美元级别，并把公司调整后经营利润率推到 6%+ 的新平台。
+
+### 2.2 最近五季业务结构和利润率变化
+
+Flex 的旧披露口径在 FY2026 前后调整，季度 segment 明细不完整；可审计的全年 segment 表更可靠：
+
+| Fiscal year | ITS收入 | ITS margin | RMS收入 | RMS margin | CPI收入 | CPI margin | 总收入 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| FY2024 | 126.36亿美元 | 3.9% | 105.35亿美元 | 5.1% | 32.44亿美元 | 9.4% | 264.15亿美元 | CPI 已经高于公司平均利润率，但规模仍小 |
+| FY2025 | 113.36亿美元 | 4.8% | 96.78亿美元 | 5.2% | 47.99亿美元 | 10.2% | 258.13亿美元 | CPI +48.0%，Nextracker 剥离后 CPI 成为增长主线 |
+| FY2026 | 111.09亿美元 | 5.4% | 101.91亿美元 | 6.0% | 66.14亿美元 | 9.2% | 279.14亿美元 | CPI +37.8%，贡献公司主要增量和更高利润率 |
+
+FY2026 相比 FY2025：
+
+- ITS：收入 -2.0%，但 margin 从 4.8% 升至 5.4%，说明组合和执行改善；其 AI/云相关部分可能有转入 CPI 的影响。
+- RMS：收入 +5.3%，margin 6.0%，属于稳定现金流业务，不是本报告重点。
+- CPI：收入 +37.8%，segment income +24.0%，margin 9.2%。毛利/利润率没有因高增长坍塌，说明电力/热管理/系统集成比普通 EMS 更有议价能力。
+
+### 2.3 Backlog/Bookings/Lead time/取消率的可得信息和推断
+
+Flex 未披露 backlog、bookings、book-to-bill、取消率，也未披露 hyperscaler 客户项目名和订单金额。可用于推断的硬信息有四类：
+
+1. Q4 FY2026 CPI 单季约 18 亿美元、同比 +70%；FY2026 CPI 全年 66.14 亿美元、同比 +37.8%。
+2. FY2027 总收入指引 323-338 亿美元，同比增长中点约 +18.4%；调整后经营利润率 7.0%-7.1%，明显高于 FY2026 6.3%。
+3. 拆分公告中，Flex 对 SpinCo 给出 FY2027 收入 +65%-75%、FY2028 +80%+ 的目标。
+4. 公司产品和项目材料显示，CPI 覆盖 power pods、switchgear、PDU、RPP、busway、power shelf、CESS、DC/DC、rack integration、liquid cooling 和 field service，这类项目通常先有客户平台设计、认证、产能锁定和站点排产，再形成交付收入。
+
+由此反推：FY2027 CPI 收入若按 +65%-75%，对应约 109-116 亿美元，较 FY2026 增加约 43-50 亿美元。Q4 FY2026 CPI 年化 run-rate 为 72 亿美元；要达到 FY2027 109-116 亿美元，后续季度 run-rate 需要继续上台阶到 27-32 亿美元/季。这不可能只靠短周期 spot order，必须来自已获 hyperscaler、colocation、utility/data center power 项目的客户设计导入、容量预留和供应链排产。基准取消率可假设低于普通消费电子，但“验收延期”比“订单取消”更现实，尤其是电力接入、液冷可靠性、GPU 交付窗口和现场 commissioning。
+
+## 3. 2026 最新指引、收入占比和重点产品
+
+### 3.1 FY2027 指引和收入占比
+
+Flex 2026-05-05 给出的 FY2027 指引：
+
+| 指标 | FY2027指引 | 同比/含义 |
+|---|---:|---|
+| 总收入 | 323-338亿美元 | 中点 330.5亿美元，较 FY2026 279.14亿美元增长约 +18.4% |
+| 调整后经营利润率 | 7.0%-7.1% | 较 FY2026 调整后经营利润率 6.3% 再提升 |
+| 调整后 EPS | 4.21-4.51美元 | 中点 4.36美元，较 FY2026 3.30美元约 +32% |
+| Q1 FY2027收入 | 73.5-76.5亿美元 | 中点同比 +14% |
+| Q1 FY2027调整后 EPS | 0.86-0.92美元 | 中点同比 +24% |
+| SpinCo/CPI FY2027目标 | +65%-75%收入增长 | 对 FY2026 CPI 66.14亿美元，隐含约 109-116亿美元 |
+| SpinCo/CPI FY2028目标 | +80%+收入增长 | 管理层强调 AI 数据中心电力/热/集成平台的多年度增长 |
+
+若 CPI FY2027 达 109-116 亿美元，按公司 FY2027 总收入中点 330.5 亿美元计算，CPI 占比可能从 FY2026 的 23.7% 升至约 33%-35%。这会显著改变 Flex 的收入结构：公司将不再只是广泛制造商，而是三分之一收入来自 AI/云/电力基础设施。
+
+### 3.2 重点业务和产品图谱
+
+Flex 的 AI 数据中心产品不是单一型号服务器，而是一组“电力 + 热 + rack + compute/storage/network manufacturing + lifecycle service”的组合。需要区分“公开产品名/官方能力”和“客户定制型号未披露”。
+
+| 业务/产品线 | 官方披露的产品/能力 | 是否高增长 | AI相关性 | 备注 |
+|---|---|---:|---:|---|
+| CPI 云/数据中心整柜与 IT 基础设施 | vertically integrated system rack manufacturing、server/storage manufacturing、PCA、box build、DFX、NPI、JDM、rack integration、pretested rack designs | 高 | 高 | 不是自有 GPU 服务器品牌；更多是客户定制/白牌/JDM |
+| Critical power | Anord Mardix modular power pods、low-voltage switchgear、PDU、remote power panels、Databar/IBar/Resinbar busway、field service | 高 | 很高 | 数据中心电力交付瓶颈强；利润率高于普通 EMS |
+| Power distribution/protection | Crown Technical Systems relay panels、MV/LV switchgear、control enclosures | 高 | 高 | 3.25亿美元收购，补美国数据中心与 utility power |
+| Embedded/in-rack/chip-level power | power shelves、CESS、电源模块、VRM、VPD、DC/DC、IBC、BMR316/BMR317/BMR352/BMR720、Flex Power Designer | 高 | 很高 | 48/54V、800VDC、xPU 供电架构变化带来的小而关键产品 |
+| Liquid cooling | JetCool SmartPlate、SmartSense CDU、cold plates、direct-to-chip、in-rack manifolds、quick disconnects、Modular Rack-Level CDU、field service | 高 | 很高 | JetCool 公开客户/生态包括 Dell PowerEdge、Sabey、Broadcom/XPU、OCP 展示 NVIDIA GB200 cooling demo |
+| Racks/enclosures/components | OCP ORv3 rack、19英寸/OCP 标准 rack、fan trays、chassis、indoor/outdoor cabinets、Coreworks electrical/mechanical/connectivity/liquid cooling components | 中高 | 高 | 价值取决于是否绑定液冷/电力/预集成，而非单纯金属件 |
+| RMS 汽车/医疗/工业 | 受监管制造、工业自动化、汽车电子、医疗设备 | 中低 | 低到中 | 稳定现金流，非本报告重点；工业电力相关部分可能间接受益 |
+| ITS consumer/lifestyle/普通通信 | lifestyle、consumer、部分企业/通信制造 | 低 | 低到中 | 跳过低增长部分；只有先进网络/云基础设施与 AI 相关 |
+
+跳过或降低权重的业务：普通 consumer/lifestyle、成熟汽车/医疗制造、非 AI 低密度通信硬件、传统低端 EMS、单纯金属机柜/机箱、非数据中心工业制造。这些业务对 Flex 现金流有用，但不是当前估值和高增长的主要解释。
+
+### 3.3 重点和潜力小产品
+
+不能漏掉的小业务/小产品主要在 power 和 cooling 的“连接层”：
+
+| 小产品/小能力 | 为什么重要 | 当前公开证据 | 可能利润率 |
+|---|---|---|---|
+| BMR317 / BMR316 / BMR352 IBC | xPU 从 48/54V 到板级/芯片级供电的中间转换；AI rack 功率越高，IBC 数量和功率密度越重要 | Flex Power Modules 页面显示 BMR317 面向 peak AI loads，BMR316/352 为高功率密度 IBC | 估算 GM 25%-40%，高于 EMS |
+| BMR720 / 800VDC DC/DC | 800VDC/±400V 架构若进入 300kW-1MW rack，HVDC 到 48/54V 的转换模块成为关键 | Flex Power Modules 披露 800/±400V DC/DC module，峰值最高 15kW | 早期高，估算 GM 30%-45%，但认证周期长 |
+| Power shelf for NVIDIA Vera Rubin NVL72 | GB300/Rubin NVL72 级 rack 直接拉动 power shelf 设计导入 | Flex data center 资源页列出 2026-06-01 “Power shelf for NVIDIA Vera Rubin NVL72” | 估算 GM 20%-35%，取决于是否自有设计/IP |
+| CESS / battery backup | AI rack 峰值削峰、供电稳定、减少 grid peak demand；GB300/Rubin 级别重要性上升 | Flex data center 页面列出 capacitive energy storage、CESS | 估算 GM 20%-35%，项目制 |
+| SmartSense CDU | 300kW per 6U、row-level 2.1MW，直接服务高密度 rack 液冷 | JetCool/Flex 页面披露 300kW/rack、2.1MW row-level；2025-09 模块化 rack-level CDU 最高 1.8MW | 估算 GM 25%-45% |
+| SmartPlate cold plates / SmartLid | 芯片/封装级热阻，尤其多 die、高 TDP xPU | JetCool 披露支持最高 3kW TDP processor、500 W/cm2 thermal load；OCP 展示 GB200 cooling demo | 估算 GM 30%-50%，但客户认证强 |
+| Manifolds / quick disconnects | 液冷部署可靠性瓶颈，小件但故障代价高 | Flex data center 页面列为智能液冷产品 | 估算 GM 25%-45% |
+| Field commissioning / telemetry / spare parts | 影响收入确认、正常运行时间和客户替换成本 | Flex 披露 commissioning、system validation、spares、maintenance、telemetry | 服务毛利估算 20%-35% |
+
+## 4. 关键产品当前收入贡献、增速和供需/壁垒评估
+
+以下拆分为研究估算，不是公司披露。估算原则：FY2026 CPI 66.14 亿美元为上限池；结合 Q4 CPI 18 亿美元、产品发布、Crown/JetCool/Anord Mardix 资产属性、项目内行业容量，对 CPI 内部做“收入贡献区间”而非精确点估计。多个产品线存在交叉，不能简单相加到超过 CPI 总额。
+
+评分：1=低，5=极高。
+
+| 关键业务/产品 | FY2026当前收入贡献估算 | 当前增速估算 | AI基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 云/AI 数据中心整柜、compute/storage/rack integration | 30-38亿美元 | +35%-70% | 5 | 5 | 4 | 3 | CPI 最大收入池；客户要的是速度、良率、预集成和验收，而不是单纯组装 |
+| Critical power：power pods、switchgear、PDU、RPP、busway、Anord Mardix | 14-20亿美元 | +25%-60% | 5 | 5 | 5 | 4 | 电力接入和配电是 AI DC 硬瓶颈；产品定制、认证、现场服务提高粘性 |
+| Crown power distribution/protection：relay panels、MV/LV switchgear、control enclosures | 2-4亿美元 | +50%-150%（收购并表+数据中心） | 4 | 5 | 5 | 3 | 收购时 FY2025 约 1.2亿美元收入，数据中心/utility power 可放大 |
+| Embedded/in-rack/chip-level power：power shelves、CESS、DC/DC、IBC、VRM、VPD、800VDC | 5-9亿美元 | +40%-100% | 5 | 5 | 4 | 3-4 | 单机价值小于整柜，但对 48/54V、800VDC、GPU 峰值功耗非常关键 |
+| Liquid cooling：JetCool SmartPlate、SmartSense CDU、cold plates、manifold、field service | 4-8亿美元 | +80%-200% | 5 | 5 | 5 | 4 | 液冷从可选变成 GB200/GB300 级部署前提；JetCool 有技术差异但竞争强 |
+| Racks/enclosures/Coreworks 定制组件 | 4-7亿美元 | +20%-60% | 4 | 4 | 3 | 2-3 | 单独金属件壁垒不高；绑定电力/液冷/预集成后价值上升 |
+| Field service、commissioning、lifecycle、reverse logistics | 3-6亿美元 | +30%-80% | 4 | 4 | 3 | 3 | 收入确认和客户停机风险使服务更重要，能提高替换成本 |
+
+当前最稀缺的是电力和液冷，不是普通 EMS 产线。项目内行业资料判断，2026 年 AI 数据中心硬瓶颈顺序包含 power interconnection/transformers/switchgear、HBM/CoWoS、liquid-cooling integration、MEP labor/commissioning。Flex 在 switchgear/PDU/RPP/busway、rack power、liquid cooling 和 commissioning 上都有直接产品，因此供需紧张度可给 4-5 分；但公司不拥有 GPU/HBM，也不独占 power/cooling 行业，垄断能力不能给满分。
+
+## 5. 一年后收入贡献预测：基准、乐观、极度乐观
+
+口径：预测 FY2027 或 2027 年中 run-rate。基准场景对齐公司 FY2027 指引和 SpinCo +65%-75% 目标；乐观场景假设 CPI 超出拆分目标、AI rack 交付和电力模块验收顺利；极度乐观场景假设 GB300/Rubin/ASIC rack、800VDC/高功率 power shelf、液冷 CDU 和模块化 power pod 同时放量，且 Flex 获得更高 wallet share。金额为收入贡献，不代表增量利润；多个产品线有交叉。
+
+| 关键业务/产品 | FY2026估算收入 | 基准：一年后收入/增速 | 乐观：一年后收入/增速 | 极度乐观：一年后收入/增速 | 重要性/紧急性/供需/溢价变化 |
+|---|---:|---:|---:|---:|---|
+| 云/AI 数据中心整柜与 rack integration | 30-38亿美元 | 48-58亿美元，+45%-65% | 60-75亿美元，+70%-100% | 80-100亿美元，+120%-160% | 重要性 5、紧急性 5；供需从 4 到 5；溢价 3，取决于客户是否把更多 rack-level 责任交给 Flex |
+| Critical power / Anord Mardix | 14-20亿美元 | 25-32亿美元，+45%-80% | 34-45亿美元，+80%-130% | 50-65亿美元，+150%-250% | 电力瓶颈最硬；若模块化 power pod、switchgear、PDU 交付窗口吃紧，溢价 4-5 |
+| Crown power distribution/protection | 2-4亿美元 | 4-6亿美元，+50%-100% | 6-9亿美元，+100%-180% | 9-14亿美元，+200%+ | 中压配电、控制房、relay panel 受美国 AI DC 和 utility grid 拉动；集成认证决定速度 |
+| Embedded/in-rack/chip-level power | 5-9亿美元 | 10-15亿美元，+60%-120% | 16-24亿美元，+120%-220% | 25-38亿美元，+250%-400% | 48/54V 仍是主流，800VDC 设计导入抬高 ASP；BMR720/Power shelf/CCESS 是小而关键产品 |
+| Liquid cooling / JetCool | 4-8亿美元 | 9-14亿美元，+80%-160% | 15-24亿美元，+180%-300% | 25-38亿美元，+350%-500% | 供需紧张 5；认证和可靠性是主要瓶颈；若 SmartSense/SmartPlate 被更多 OEM/CSP 平台采用，溢价 4-5 |
+| Racks/enclosures/Coreworks components | 4-7亿美元 | 6-10亿美元，+30%-70% | 10-16亿美元，+80%-150% | 16-25亿美元，+180%-300% | 普通件溢价 2；如果绑定 OCP ORv3、busbar、液冷 manifold、pretest，溢价升至 3 |
+| Field service / commissioning / lifecycle | 3-6亿美元 | 6-10亿美元，+60%-120% | 10-16亿美元，+120%-250% | 16-25亿美元，+250%-400% | 服务的价值随停机成本上升；若客户把 commissioning 交给 Flex，替换成本提升 |
+
+公司层面的一年后增长：
+
+| 场景 | FY2027总收入 | YoY | CPI/SpinCo收入 | CPI YoY | 调整后经营利润率 | 触发条件 |
+|---|---:|---:|---:|---:|---:|---|
+| 基准 | 323-338亿美元 | +16%-21% | 109-116亿美元 | +65%-75% | 7.0%-7.1% | 官方指引兑现；Q4 FY2026 后订单按计划交付 |
+| 乐观 | 345-370亿美元 | +24%-33% | 125-145亿美元 | +90%-120% | 7.2%-7.8% | CPI 出现追加订单/提前验收，液冷和 power shelf ASP 提升 |
+| 极度乐观 | 390-430亿美元 | +40%-54% | 160-200亿美元 | +140%-200% | 8.0%+ | 1MW rack、800VDC power rack、GB300/Rubin/ASIC rack 同时拉动；Flex 成为少数端到端交付主供应商 |
+
+## 6. BOM、单位含量、价格传导链和产能/认证
+
+### 6.1 AI rack BOM 与 Flex 可捕获内容量
+
+项目内行业研究给出的高端 AI rack 经济模型：单个高端 AI rack 系统总价值约 200万-700万美元以上，其中 GPU/ASIC+HBM 占 60%-80%，网络占 8%-18%，液冷 2%-8%，电力 2%-7%，结构/PCB 2%-5%，工厂集成/burn-in/field service 3%-8%。Flex 不掌握 GPU/HBM，因此收入质量取决于它是否能捕获 power/cooling/integration/service，而不是简单把 GPU pass-through 记入收入。
+
+| 单位 | 总系统价值 | Flex可捕获内容量（基准） | 乐观内容量 | 极度乐观内容量 | 说明 |
+|---|---:|---:|---:|---:|---|
+| 每 rack（80-160kW，高端液冷） | 200万-700万美元+ | 15万-45万美元 | 30万-70万美元 | 50万-110万美元 | 不含大部分 GPU/HBM；含 rack integration、power shelf/busbar/PDU/BBU、液冷、测试、服务 |
+| 每 MW IT load | 约 6-12 racks/MW | 150万-500万美元/MW | 400万-1000万美元/MW | 800万-1800万美元/MW | 若包含模块化 power pod、switchgear、PDU、CDU、commissioning，单位含量明显上升 |
+| 每 GPU（以 NVL72 72 GPU/rack 近似） | GPU 系统价值由 NVIDIA/客户决定 | 2000-6000美元/GPU | 4000-10000美元/GPU | 7000-15000美元/GPU | Flex 的每 GPU 内容主要来自电力、热和集成，不是 GPU 本身 |
+| 每 optical port | 由网络架构决定 | 1-10美元/port | 10-40美元/port | 40美元+/port | Flex 非光模块核心供应商；仅在网络 tray、cabling、测试、rack integration 中捕获小额内容 |
+
+### 6.2 关键产品 BOM 拆分
+
+| 产品/业务 | BOM/内容 | 每 rack / 每 MW 内容量 | 价格传导链 | 当前产能能力（收入计） | 被采纳程度/认证阶段 |
+|---|---|---:|---|---:|---|
+| Rack integration / compute-storage-network assembly | rack frame、node assembly、PCA/box build、server/storage、cabling、switch integration、burn-in、firmware/test、logistics | 7万-25万美元/rack；50万-250万美元/MW | CSP/OEM 平台设计 -> Flex NPI/JDM -> 物料采购 -> 工厂预集成 -> 客户现场验收 | FY2026估算 30-38亿美元 | 已被 hyperscaler/enterprise/custom rack 采用；客户型号和认证不公开 |
+| Critical power：Anord Mardix | modular power pods、LV switchgear、PDU、RPP、Databar/IBar/Resinbar busway、static transfer、field service | 5万-30万美元/rack 等效；100万-600万美元/MW，取决于是否含配电室/模块 | 数据中心业主/EPC -> 电力系统设计 -> switchgear/PDU/pod 制造 -> 现场安装验收 | FY2026估算 14-20亿美元 | 数据中心和 utility power 采用度高；UL/IEC/客户站点认证逐项执行，公开阶段不细分 |
+| Crown power distribution/protection | relay panels、metering/communication panels、MV/LV switchgear、control enclosure/building | 站点级，折算 20万-150万美元/MW | utility/grid interconnect -> MV/LV 配电 -> 数据中心/模块化控制房 | FY2026估算 2-4亿美元 | 2024-11 并入 Flex；FY2025 收购时预计约 1.2亿美元收入、高 teens EBITDA margin |
+| Power shelves / CESS / DC/DC / IBC / VRM / VPD | power shelf、battery backup/Capacitive Energy Storage、BMR316/BMR317/BMR352 IBC、BMR720 800VDC、VRM、VPD、Flex Power Designer | 2万-18万美元/rack；800VDC/300kW+ 可达 25万-60万美元/rack 等效 | rack power architecture -> power shelf/IBC/VPD design-in -> 客户认证 -> 量产 | FY2026估算 5-9亿美元 | 48/54V 已主流；800VDC/±400V 处在 2026H2-2027 设计导入和早期认证 |
+| JetCool liquid cooling | SmartPlate cold plates、SmartSense CDU、Modular Rack-Level CDU、manifold、quick disconnect、direct-to-chip、field service | 4万-30万美元/rack；CDU 300kW per 6U，row-level 2.1MW；模块化 rack CDU 600kW-1.8MW | chip/OEM thermal design -> cold plate/CDU/manifold -> rack integration -> facility water loop -> commissioning | FY2026估算 4-8亿美元 | 公开显示 Dell PowerEdge、Sabey、Broadcom/XPU、OCP GB200 demo 等生态；大规模客户认证仍是核心瓶颈 |
+| Racks/enclosures/Coreworks components | OCP ORv3 racks、19英寸 rack、chassis、fan tray、sheet metal、connectivity、liquid-cooling components | 2万-10万美元/rack；20万-100万美元/MW | rack spec -> mechanical/electrical component manufacturing -> integration | FY2026估算 4-7亿美元 | 普通 rack 竞争强；OCP/液冷/电力一体化提高采用度 |
+| Field service / lifecycle | commissioning、system validation、spares、maintenance、telemetry、retrofit、reverse logistics | 2万-10万美元/rack；50万-200万美元/MW | 项目交付 -> acceptance -> 运维 SLA -> 备件/升级/回收 | FY2026估算 3-6亿美元 | 与客户站点绑定，公开认证不适用；实际壁垒来自响应速度和故障责任 |
+
+### 6.3 48/54V、800VDC 和电力价格传导
+
+当前主流不是立即全部转 800VDC，而是 48/54V rack power 继续作为 100kW-155kW AI rack 的主流中间母线。项目内供电架构研究指出，NVIDIA GB200 NVL72 级 rack 约 120kW，GB300 NVL72 可到 135kW TDP、155kW peak，48/50V power shelf、busbar、PDU、BBU 仍是 2026 年收入主体；800VDC 更像 2026H2-2027 的设计导入和高功率 rack 方向。Flex Power Modules 的公开材料也强调 48/54V 在安全、认证、成熟生态和 HVDC 终端转换中的持续作用，同时展示 800VDC/±400V DC/DC module 和 1MW+ DC PDU 等产品。
+
+价格传导链：
+
+1. Hyperscaler/NeoCloud/colocation 决定 AI capex 和 rack/cluster 架构。
+2. GPU/ASIC 平台分配决定 rack 数量、功率密度和交付窗口。
+3. OEM/ODM/JDM 确定 rack design、power architecture、liquid cooling、network cabling。
+4. Flex/CPI 获得设计导入和制造/集成订单，采购/制造 power shelf、busbar、PDU、Crown/Anord switchgear、JetCool cold plate/CDU、rack components。
+5. 工厂预集成和 burn-in 后进入客户站点，完成 liquid loop、电气、安全和性能验收。
+6. 收入确认取决于交付和验收；利润率取决于自有 IP/定制化、紧缺程度和服务责任范围。
+
+## 7. 一年后产能、采纳和认证预测
+
+| 产品/业务 | 当前产能能力（收入计） | 基准：一年后产能/采纳 | 乐观：一年后产能/采纳 | 极度乐观：一年后产能/采纳 | 认证/导入阶段 |
+|---|---:|---|---|---|---|
+| Rack integration / compute-storage | 30-38亿美元 | 50-60亿美元；更多 ORv3/液冷 rack 客户量产 | 65-80亿美元；客户把 pretest/burn-in/现场部分交给 Flex | 90-110亿美元；成为多家 CSP/NeoCloud 主力整柜供应商 | 客户平台认证，不公开；关键是 GB300/Rubin/ASIC rack NPI 到量产 |
+| Critical power / Anord Mardix | 14-20亿美元 | 28-35亿美元；power pod/PDU/RPP/busway 交付扩大 | 40-55亿美元；美国数据中心和 utility power 需求继续吃紧 | 65亿美元+；电力设备成为收入最大瓶颈之一 | UL/IEC/站点级认证；低压/中压开关柜和 PDU 项目制 |
+| Crown power distribution/protection | 2-4亿美元 | 4-7亿美元；并表后产能爬坡 | 7-10亿美元；模块化数据中心控制房和 MV switchgear 放量 | 12-16亿美元；美国项目中成为 Flex 电力入口 | 继电保护、中压/低压开关柜、控制建筑按客户和 utility 标准认证 |
+| Embedded/in-rack/chip power | 5-9亿美元 | 12-18亿美元；48/54V power shelf 和 IBC 量产 | 20-30亿美元；CESS、VPD、BMR317/BMR720 设计导入扩大 | 35-45亿美元；800VDC/1MW rack 早期量产 | 48/54V 成熟；800VDC 处设计导入/客户验证/安全规范爬坡 |
+| JetCool liquid cooling | 4-8亿美元 | 10-16亿美元；SmartSense/SmartPlate 多平台采用 | 18-28亿美元；Dell/Sabey/Broadcom 生态外扩到更多 CSP/OEM | 35亿美元+；GB300/Rubin/ASIC rack 液冷标配且 Flex share 提升 | 冷板/CDU/manifold 需芯片、OEM、站点水路、安全和维护认证 |
+| Racks/enclosures/Coreworks | 4-7亿美元 | 7-11亿美元；OCP/ORv3/液冷 rack 增加 | 12-18亿美元；客户要求区域化制造和定制件 | 25亿美元+；Flex 获得更多机械+电气+液冷总包 | OCP/客户 rack spec；普通件认证门槛低，集成件门槛高 |
+| Field service/lifecycle | 3-6亿美元 | 7-11亿美元；commissioning 与 spares 随装机增长 | 12-18亿美元；服务 SLA 和 telemetry 绑定 | 25亿美元+；Flex 承担关键现场责任 | 站点和客户流程认证；不是单一产品认证 |
+
+产能瓶颈判断：Flex 的制造 footprint 足够大（75+ manufacturing/logistics sites、30 countries、约 15 万员工），但 CPI 的真实产能不是普通产线面积，而是工程、认证、供应链和现场交付能力。最容易卡住的不是 rack 金属件，而是 switchgear/PDU/power pod 的交期、液冷部件可靠性、power shelf/IBC 认证、客户站点供电和现场验收。
+
+## 8. 基于订单积压和供给的未来一年增速预测
+
+由于公司不披露 backlog，本节使用“可见指引 + 现有 run-rate + 行业供需 + 产品采纳”的推断。
+
+### 8.1 订单积压/供给的可观测事实
+
+| 证据 | 数字 | 对 backlog 的含义 |
+|---|---:|---|
+| FY2026 CPI收入 | 66.14亿美元 | 已具备规模化交付能力，不是概念业务 |
+| Q4 FY2026 CPI收入 | 约 18亿美元 | 年化 run-rate 约 72亿美元 |
+| SpinCo FY2027目标 | 收入 +65%-75% | 隐含 FY2027 CPI 约 109-116亿美元 |
+| FY2027总收入指引 | 323-338亿美元 | 总公司中点 +18.4%，高于 FY2026 +8.1% |
+| FY2027调整后经营利润率指引 | 7.0%-7.1% | 增长不是低毛利 pass-through，产品组合改善 |
+| CPI FY2028目标 | +80%+ | 管理层看见多年度 pipeline，而非一年性抢单 |
+
+结论：Flex 至少拥有足够支持 FY2027 CPI 40亿-50亿美元增量的订单、项目 pipeline、客户设计导入或产能预留。若没有相当高的可见性，公司不太可能在拆分公告中给出 65%-75% 的 SpinCo 增长目标。
+
+### 8.2 未来一年业务增速预测
+
+| 场景 | 关键假设 | CPI/SpinCo未来一年收入 | CPI增速 | Flex总收入 | 总收入增速 | 取消率/延期假设 |
+|---|---|---:|---:|---:|---:|---|
+| 基准 | 官方指引兑现；GB200/GB300/ASIC rack 和电力项目按正常节奏验收；48/54V power 和液冷放量 | 109-116亿美元 | +65%-75% | 323-338亿美元 | +16%-21% | 取消率低，估算 <5%；延期/验收错期影响 5%-10% 季度收入 |
+| 乐观 | 订单提前交付；CPI 在 power/cooling 中拿到更多 wallet share；Q4 run-rate 快速升至 30亿美元+/季 | 125-145亿美元 | +90%-120% | 345-370亿美元 | +24%-33% | 取消率 <3%；延期被产能扩张抵消 |
+| 极度乐观 | AI 数据中心电力/液冷供不应求，Flex 成为多个客户端到端供应商；800VDC/1MW rack early ramp | 160-200亿美元 | +140%-200% | 390-430亿美元 | +40%-54% | 实质取消率极低；主要风险变成 Flex 自身产能和客户站点 energization |
+| 下行风险 | GPU/电力接入/液冷认证延迟，客户 capex 消化，拆分扰动 | 90-100亿美元 | +36%-51% | 300-315亿美元 | +7%-13% | 项目取消仍可能不高，但 10%-20% 收入被推迟 |
+
+### 8.3 渠道/客户项目名的证据强弱
+
+Flex 官方没有披露 hyperscaler 客户名和合同金额；公开证据更多来自产品/生态：
+
+- JetCool/Flex 在 OCP EMEA 2025 展示 Flex liquid-cooled modular compute platform、Flex 1OU/2OU cloud servers、NVIDIA GB200 cooling demo、SmartSense CDU、SmartPlate。
+- JetCool/Flex 页面显示 hyperscalers 正在部署 customized ORv3-based rack designs，并让 Flex 管理 rack 方案的垂直集成，包括 frames、enclosures、servers、storage、racks、cabling、switches、busbars、power shelves、battery backup 和 liquid cooling systems。
+- Sabey Data Centers 2026-01 扩大与 JetCool 的合作，将模块化冷却架构用于高密度 AI/HPC 部署。
+- JetCool 与 Broadcom 2026-03 宣传面向 next-generation AI XPUs 的液冷合作；这说明 JetCool 不只绑定传统 CPU/GPU，也可能进入 custom ASIC/XPU 冷却生态。
+- Flex data center 页面列出 “Power shelf for NVIDIA Vera Rubin NVL72”（2026-06-01），说明公司已把下一代 NVIDIA rack power 当作产品化方向。
+
+证据强度排序：官方财务指引 > 官方产品发布和客户/伙伴命名 > JetCool/Flex 生态页面 > 行业论坛/会议展示。没有披露订单金额，因此不能把上述客户/伙伴直接等同为已确认大额订单。
+
+## 9. 竞争格局、主流性、替代方案和风险
+
+### 9.1 主要竞争对手
+
+| 领域 | 竞争者 | Flex 相对位置 |
+|---|---|---|
+| EMS/JDM/ODM | Jabil、Celestica、Sanmina、Foxconn/FII、Wistron、Inventec、Pegatron、Quanta/QCT、Wiwynn | Flex 优势是制造 footprint、供应链、CPI 电力/冷却组合；劣势是不如 Quanta/Wiwynn 在部分 CSP AI server ODM 中具备历史份额 |
+| AI server/OEM | Dell、HPE、Lenovo、Supermicro、Gigabyte、ASUS | Flex 更多是 behind-the-brand/JDM/集成，不是终端服务器品牌；客户替换成本取决于平台认证 |
+| Critical power | Vertiv、Schneider Electric、Eaton、ABB、Siemens、Delta、nVent、Rittal | Flex/Anord Mardix/Crown 在定制 power pods、PDU、switchgear、busway 上有位置，但电力设备龙头规模和品牌更强 |
+| Rack power/PSU/power shelf | Delta、Lite-On、Advanced Energy、AcBel、Murata、Vertiv、Flex Power Modules | Flex 有 DC/DC、IBC、VPD、power shelf、CESS 和系统集成；不是唯一供应商 |
+| Liquid cooling | CoolIT、Boyd、Auras、Delta、Vertiv、Schneider、nVent、LiquidStack、Submer、JetCool | JetCool 具备 microconvective/SmartPlate/SmartSense 差异化；但冷板/CDU 竞争激烈，客户更看可靠性和认证 |
+| Busbar/connectivity/components | Molex、TE Connectivity、Amphenol、nVent、Rittal、Coreworks/Flex | Flex 能自供/集成部分组件，但 connector/busbar 不是完全垄断 |
+| Field deployment/MEP/EPC | 大型 EPC/MEP、数据中心服务商、OEM 服务团队 | Flex 如果承担 rack/power/cooling 端到端责任，替换成本较高；但站点施工不由 Flex 独占 |
+
+### 9.2 新技术是否会成为主流
+
+| 技术 | 主流性判断 | Flex 受益程度 | 风险 |
+|---|---|---:|---|
+| 48/54V rack power / ORv3 / HPR | 2026 主流，尤其 100kW-155kW AI rack | 高 | Delta/Vertiv/Advanced Energy 等竞争强；客户可多供 |
+| Direct-to-chip liquid cooling | GB200/GB300 和高密度 ASIC rack 主流化 | 很高 | 冷却可靠性、漏液、维护、设施水路、客户认证周期 |
+| Rack-level pre-integration / burn-in | 主流，尤其整柜交付和现场验收压力上升 | 很高 | 若客户转回自建或 ODM 替代，Flex share 受压 |
+| Modular power pods / prefabricated power | 高增长，解决部署速度和现场施工瓶颈 | 高 | EPC/MEP、Vertiv/Schneider/Eaton 竞争，站点规范复杂 |
+| 800VDC / ±400V power distribution | 2026 仍早期，2027-2028 可能放量 | 中高到很高 | 安全规范、人员培训、客户保守性；48/54V 仍会长期存在 |
+| Chip-level VPD / advanced power modules | 随 xPU 功率提升重要性上升 | 中高 | 芯片厂/板卡厂可能自研或使用其他模块供应商 |
+
+Flex 押注的方向总体是主流：高密度 AI rack 必然需要更强的供电、液冷、整柜预集成和现场验收能力。风险不是“方向错”，而是“价值归属和份额”：GPU/ASIC 平台、CSP 架构和 power/cooling 大厂都可能把利润留在自己链条里，Flex 必须证明自己不只是替客户组装，而是能提供稀缺工程、IP、认证和交付能力。
+
+### 9.3 客户替换成本
+
+| 业务 | 替换成本 | 原因 |
+|---|---:|---|
+| 普通 EMS / box build | 低到中 | 可换 Jabil、Celestica、Foxconn、Wistron 等，成本主要是转厂和良率 |
+| AI rack pre-integration | 中到高 | rack design、测试流程、firmware、cabling、液冷/电力集成和客户验收绑定 |
+| Critical power / switchgear / PDU / power pod | 高 | 站点设计、安规、utility/客户验收、交期和现场服务绑定 |
+| Liquid cooling cold plate/CDU/manifold | 高 | 芯片/OEM/站点认证、可靠性、维护和故障责任；一旦量产，替换风险高 |
+| Power shelf / IBC / VPD / CESS | 中到高 | 与 rack power architecture 和板级供电认证绑定，但可由多家电源厂竞争 |
+| Field service / lifecycle | 中到高 | 客户停机成本高，服务响应和备件体系形成粘性 |
+
+### 9.4 关键风险和反证指标
+
+| 风险 | 观察指标 | 对投资逻辑的影响 |
+|---|---|---|
+| CPI 拆分延期或成本高于预期 | Form 10 进度、税务意见、资本结构、dis-synergy、管理层变动 | 影响估值重估节奏；不一定破坏业务需求 |
+| AI 数据中心 capex 消化 | hyperscaler capex 指引、NeoCloud 融资、GPU 租赁价格、数据中心空置/利用率 | 若需求放缓，CPI 订单和营运资本压力显现 |
+| 电力接入/变压器/switchgear 延迟 | energization 日期、interconnection queue、MEP 工期 | 订单不取消但收入确认推迟，季度波动加大 |
+| 液冷可靠性问题 | 漏液、维护成本、客户验收失败、现场故障、保修费用 | JetCool/Flex 的溢价和认证速度下降 |
+| 竞争压价 | Delta/Vertiv/Schneider/Eaton/Jabil/Celestica/Quanta 抢单 | 毛利率难以继续提升，CPI 估值折价 |
+| GPU/HBM 供给错配 | NVIDIA/ASIC 交付窗口、HBM 供给、CoWoS/advanced packaging | rack integration 交期和库存风险上升 |
+| 客户集中和未披露 | 10-K customer concentration、应收账款、单一客户 capex | 订单可见度高但议价权可能在大客户手中 |
+| 营运资本恶化 | 库存、应收、应付、FCF conversion、cash conversion cycle | 高增长变成现金流压力，市场重新按 EMS 折价 |
+
+## 10. 投资判断框架
+
+### 10.1 看多 Flex 的核心条件
+
+1. CPI/SpinCo FY2027 +65%-75% 收入增长兑现，且 FY2028 +80%+ 目标不被下修。
+2. CPI margin 维持 9%+ 并向双位数靠近，证明不是低毛利 pass-through。
+3. JetCool 和 Flex Power Modules 产品从展示/设计导入进入批量客户平台，尤其 SmartSense、SmartPlate、power shelf、CESS、BMR317/BMR720。
+4. Anord Mardix/Crown 的 critical power 产品获得更多美国 AI 数据中心/utility 项目，电力设备交期成为 Flex 议价权来源。
+5. SpinCo 拆分后获得接近 Vertiv/Eaton/Schneider AI power/thermal peer 的估值，RemainCo 作为现金流制造平台保留回购能力。
+
+### 10.2 看空或降权的触发点
+
+1. Q1/Q2 FY2027 CPI 收入无法显示 run-rate 上行，仍停在 18亿-20亿美元/季附近。
+2. 毛利率/调整后经营利润率未随 CPI 提升而改善，说明增长主要是 pass-through 或价格竞争。
+3. 库存和应收显著增长但 FCF 下滑，表明项目验收和现金回款落后。
+4. JetCool/液冷客户进展停留在 PR 和会议展示，没有大规模客户量产证据。
+5. 800VDC/1MW rack 等高端电力产品导入慢，Flex 只留在普通 rack/box build。
+6. 拆分披露显示 SpinCo 负债高、dis-synergy 大、客户集中严重或资本开支需求远超预期。
+
+### 10.3 最重要的下一次验证
+
+| 时间 | 事件 | 需要验证 |
+|---|---|---|
+| 2026-07-23 预计 Q1 FY2027财报 | Q1收入、CPI增速、margin、全年指引是否上调 | CPI 单季是否超过 20亿美元并靠近 25亿美元；公司是否维持/提高 SpinCo +65%-75% |
+| 2026H2 | Form 10 / SpinCo 资本结构 | SpinCo 负债、客户集中、capex、毛利率、产品收入拆分 |
+| 2026H2 OCP / AI infra events | GB300/Rubin、800VDC、液冷 CDU、power shelf 新导入 | Flex 产品是否从展示走向客户平台量产 |
+| FY2027各季 | FCF、库存、应收、延期 | 增长是否转化为现金，而非堆库存 |
+
+## 11. 来源
+
+### 公司与财务来源
+
+- Flex FY2026 Form 10-K（SEC）：https://www.sec.gov/Archives/edgar/data/866374/000086637426000012/flex-20260331.htm
+- Flex Q4/FY2026 results（2026-05-05）：https://investors.flex.com/news/news-details/2026/FLEX-REPORTS-FOURTH-QUARTER-AND-FISCAL-2026-RESULTS/default.aspx
+- Flex spin-off announcement（2026-05-05）：https://investors.flex.com/news/news-details/2026/Flex-Announces-Intention-to-Spin-Off-its-Cloud-and-Power-Infrastructure-Segment-into-a-New-Independent-Publicly-Traded-Company/default.aspx
+- Flex SpinCo FAQ（2026-05-05 PDF）：https://s202.q4cdn.com/732614612/files/doc_downloads/2026/05/Flex-SpinCo-FAQs-v1-0.pdf
+- Flex Nextracker 剩余权益分拆完成公告（2024-01-02）：https://investors.flex.com/news/news-details/2024/FLEX-ANNOUNCES-COMPLETION-OF-THE-SPIN-OFF-OF-ITS-REMAINING-INTEREST-IN-NEXTRACKER/default.aspx
+- Flex Q1 FY2026 results：https://investors.flex.com/news/news-details/2025/FLEX-REPORTS-FIRST-QUARTER-FISCAL-2026-RESULTS/default.aspx
+- Flex Q2 FY2026 results：https://investors.flex.com/news/news-details/2025/FLEX-REPORTS-SECOND-QUARTER-FISCAL-2026-RESULTS/default.aspx
+- Flex Q3 FY2026 results：https://investors.flex.com/news/news-details/2026/FLEX-REPORTS-THIRD-QUARTER-FISCAL-2026-RESULTS/default.aspx
+- StockAnalysis FLEX overview/statistics/forecast/quarterly financials（2026-06-11盘中访问）：https://stockanalysis.com/stocks/flex/ ，https://stockanalysis.com/stocks/flex/statistics/ ，https://stockanalysis.com/stocks/flex/forecast/ ，https://stockanalysis.com/stocks/flex/financials/?p=quarterly
+
+### 产品、技术和行业来源
+
+- Flex data center solutions：https://flex.com/industries/data-center
+- Flex OCP 2024 AI data center rack/power/liquid-cooled solutions：https://investors.flex.com/news/news-details/2024/Flex-Announces-Liquid-Cooled-Rack-and-Power-Solutions-for-AI-Data-Centers-at-2024-OCP-Global-Summit/default.aspx
+- Flex Power Modules：https://flex.com/products/power-modules
+- Flex 48V AI data center power architecture：https://flex.com/resources/why-48-v-still-matters-in-ai-data-center-systems
+- Flex acquires JetCool（2024-11-14）：https://investors.flex.com/news/news-details/2024/Flex-Acquires-JetCool-to-Expand-Data-Center-and-Power-Portfolio/default.aspx
+- JetCool/Flex modular rack-level CDU（2025-09-23）：https://jetcool.com/post/flex-expands-data-center-cooling-portfolio-with-launch-of-modular-rack-level-coolant-distribution-unit/
+- JetCool/Flex OCP EMEA 2025：https://jetcool.com/post/jetcool-and-flex-showcase-scalable-rack-level-liquid-cooling-solutions-at-ocp-emea-summit/
+- JetCool/Flex liquid-cooled racks：https://jetcool.com/flex/
+- Sabey + JetCool expanded partnership（2026-01-21）：https://jetcool.com/post/sabey-data-centers-expands-partnership-with-jetcool-technologies-to-accelerate-sustainable-high-density-compute/
+
+### 项目内行业资料
+
+- `基本面/行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md`
+- `基本面/行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `基本面/行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- `基本面/行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`

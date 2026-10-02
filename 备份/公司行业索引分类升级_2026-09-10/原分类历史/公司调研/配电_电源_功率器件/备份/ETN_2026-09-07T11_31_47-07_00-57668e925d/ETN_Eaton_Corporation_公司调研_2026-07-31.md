@@ -1,0 +1,488 @@
+# 公司：ETN Eaton Corporation plc（伊顿公司）
+
+> **报告日期：** 2026-07-31  
+> **证券：** NYSE: ETN；注册地爱尔兰、主要经营与管理中心在美国  
+> **研究边界：** 联网资料以 2026-01-31—2026-07-31 为重点，财务数据截至 2026Q2；项目内只调用“基本面/行业调研”中的相关产业资料，未读取其他项目目录；未修改公司索引。  
+> **证据标签：** **[R]** 公司、SEC、客户或标准组织直接披露；**[C]** 行业会议、技术文件及多源交叉验证；**[E]** 本报告估算；**[U]** 无法独立验证的传闻。金额默认美元。  
+> **重要口径：** Eaton 不披露“AI 数据中心收入”、产品级收入、产品级毛利率、订单取消率或工厂美元名义产能。凡涉及这些项目均明确标记为 [E]；“数据中心及分布式 IT”也不等于纯 AI。
+
+## 核心结论
+
+1. **Eaton 已从综合工业公司变成“电气化＋航空航天”复合增长平台，并正在剥离低增长 Mobility。** 2025 年电气业务收入占 73.2%，2026Q2 在 Boyd 液冷并表后进一步升至 75.8%；Dana 反向莫里斯信托交易预计 2027Q1 把 Mobility 移出公司。投资人因此把 ETN 同时视作高质量工业复利股、北美电网升级受益者和 AI 数据中心“grid-to-chip”基础设施代理标的，而不是传统汽车零部件股。
+2. **AI 电力需求已经进入财报，而非停留在主题。** 2026Q2 Electrical Sector 数据中心订单同比约 **+85%**、收入约 **+65%**；Electrical Americas（EA）滚动 12 个月订单 **+41%**、book-to-bill **1.3x**、backlog **$15.2B/+33%**。Electrical Global（EG）订单 **+33%**、backlog **+103%**。这组数据同时说明需求强和交付瓶颈仍在。[Eaton 2026Q2 演示稿](https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-2026-analyst-presentation.pdf)
+3. **真正的近期盈利主线仍是成熟交流电力链，而不是 800V/SST。** 三相变压器、中压/低压开关柜、UPS、STS/PDU、母线槽和预制电力舱已认证、已进入客户 AVL、能立即兑现 backlog；800V sidecar 预计 2026 年末完成 DVT、2027Q1 制造就绪，2MW 中压固态变压器（MVSST）仍在约十个客户试点/报价，收入主峰更可能在 2027 年末以后。
+4. **Boyd 是最重要的新增长腿。** 收购价 **$9.55B**，2026 年预计销售约 **$1.7B**、约 80% 来自数据中心，交易隐含约 **5.6x 2026E sales、22x 2026E EBITDA**。它把 Eaton 从电力室推进到芯片冷板、机架歧管和 MW 级 CDU；NVIDIA MGX/Vera Rubin 认证是强 design-in 证据，但不是已披露采购订单。[Boyd 收购完成公告](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-completes-acquisition-of-leading-liquid-cooling-solutions-provider-boyd-thermal.html)
+5. **估值已充分反映高增长。** 截至 2026-07-31 12:55 PT，股价 **$416.69**、市值 **$162.27B**；行情服务的 trailing PE 为 **40.79x**。按同日发布财报重算，TTM 销售 **$30.03B**、P/S **5.40x**、TTM GAAP 净利润 **$3.83B**、P/E **42.38x**；按 2026 年调整后 EPS 指引中点 $13.50，forward P/E **30.87x**。高估值要求 EA 中双位数增长、Boyd 高增长和扩产兑现三者同时成立。
+6. **资产负债表“可承受但不再宽松”。** Boyd/Ultra PCS 使总债务升至 **$20.61B**，净债务约 **$19.92B**，债务/权益 **1.02x**；速动比率仅 **0.62x**，商誉与无形资产合计 **$32.84B**、相当于权益 **1.62x**。正面是 Q2 利息保障倍数约 **6.7x**、2026 自由现金流指引 **$3.9–4.3B**、A-/A3 投资级评级仍在。关键风险不是短期偿付，而是收购整合、营运资本与高估值共同降低容错率。
+7. **未来 12 个月本报告基准情景：** 数据中心及分布式 IT 相关收入由约 **$8.8B** 年化/2026E 水平升至 **$10.5B（+19%）**；EA 有机增长约 **15–17%**、EG **14–17%**、Aerospace **8–10%**。乐观情景分别对应数据中心 **$12.0B（+36%）**；极度乐观为 **$14.0B（+59%）**。后两者需要 backlog 低取消/低延期、Boyd 液冷快速爬坡、扩产准时及 800V 首批商业订单共同出现，不能视作基准预测。
+
+## 1. 整体业务、产业链定位与财务健康
+
+### 1.1 公司是什么、位于产业链哪里
+
+Eaton 以电能管理为核心，覆盖从公用事业/园区中压接入到机架侧电力和芯片液冷的多数关键层级：
+
+| 产业链层级 | Eaton 主要能力/产品 | 价值与位置 |
+|---|---|---|
+| 电网与园区接入 | 三相/单相变压器、稳压器、中压 AIS/GIS、真空断路器、继保与计量 | 数据中心 time-to-power 的最上游瓶颈；订单通常领先投产 3–8 个季度 |
+| 数据中心 gray space | 低压开关柜、UPS、储能、STS、PDU/RPP、Pow-R-Way 母线槽、预制 skid/e-house | Eaton 最成熟、收入最大、认证最深的 AI 暴露 |
+| white space / 机架 | Tripp Lite 智能 rPDU、机柜与连接、800VDC sidecar、DC busway、固态断路器 | 从 54V 交流架构向 800VDC 过渡；2026 多数仍在验证 |
+| 热管理 | Boyd 冷板、TIM、歧管、泵/过滤、CDU、换热器、机箱与服务 | 直接进入 GPU/CPU 附近，随单柜热密度上升而提高内容量 |
+| 软件与服务 | Brightlayer、Power Xpert、Exertherm、Beam Rubin DSX、能控/数字孪生、调试与维保 | 硬件安装基数上的高毛利附着层，但公司未单列收入 |
+| 航空航天 | 液压、燃油、作动、氧气、互连、任务系统；Ultra PCS 控制/传感/数据处理 | 与 AI 无关但高认证、高切换成本、长项目周期，是第二增长与现金流支柱 |
+| Mobility | 商用车/轻型车动力、传动、电气化部件 | 低增长且周期性较强；已签 Dana 组合交易，预计 2027Q1 分拆 |
+
+公司 2025 年终端市场结构为：数据中心及分布式 IT **21%**、商业/机构 **20%**、公用事业 **11%**、工业设施 **11%**、商业航空 **9%**、国防航空 **6%**、住宅 **6%**、商用车 **6%**、机械 **5%**、内燃机轻型车 **3%**、电动车 **2%**。[2026Q2 演示稿](https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-2026-analyst-presentation.pdf)
+
+**投资人心智：** 市场不再按低估值多元工业公司定价，而把 Eaton 看成“北美电力设备长周期＋AI 数据中心电力/液冷＋航空航天”的稀缺组合。2026 年 7 月公开卖方统计中 27 位分析师约为 22 Buy、4 Hold、1 Sell，长期 EPS 增长预期约 10%；这只能代表市场情绪，不构成基本面证据。[Kiplinger 2026-07-22 汇总](https://www.kiplinger.com/investing/blue-chip-stocks/sleeper-blue-chip-stock-picks-for-steady-long-term-gains)
+
+### 1.2 最近三年重大业务变化、转型与收购
+
+| 日期 | 事项 | 金额/规模 | 战略意义 |
+|---|---:|---:|---|
+| 2023 | 收购江苏睿恩 49% | 目标公司 2022 销售约 $100M | 扩大亚太配电变压器能力 |
+| 2024 | 收购 Exertherm；入股 NordicEPOD 49% | 未披露 | 前者补充开关柜/母线热故障监测；后者获得标准化数据中心 power module |
+| 2025-04-01 | 完成 Fibrebond 收购 | **$1.43B**；收购前 TTM 销售 $378M；2025E 调整后 EBITDA $110M | 获得预制模块、电力舱和区域制造，压缩客户现场工期。[公告](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-completes-acquisition-of-fibrebond.html) |
+| 2025-06-01 | Paulo Ruiz 接任 CEO | — | Craig Arnold 退休；管理层延续高增长电气化和组合优化路线 |
+| 2025-08-06 | 收购 Resilient Power Systems | 初始公允价值约 **$86M** | 补中压固态变压器和多端口电能转换技术 |
+| 2026-01-23 | 完成 Ultra PCS 收购 | **$1.53B**；2026E 销售约 $250M | 扩充航空控制、传感、弹射/挂载和数据处理 |
+| 2026-03 | 投资并合作 SPAN | **$75M**、约 7% 股权 [R] | 智能配电盘、家庭/分布式能源软件小业务期权。[公告](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-and-span-establish-strategic-partnership.html) |
+| 2026-03-12 | 完成 Boyd Thermal 收购 | **$9.55B**；2026E 销售约 $1.7B、EBITDA margin 约 25%、约 80% 数据中心 | 最大转型：从供电进入芯片到设施的液冷全链；也是杠杆上升主因 |
+| 2026-06-10/11 | 与 Dana 组合 Mobility | Mobility 交易价值 **$5.1B**；Eaton 收现金约 $1.1B；股东持合并公司至少 50.1% | 预计 2027Q1 完成免税 RMT；合并公司 2026E 销售约 $11B、EBITDA $1.7B（含 $250M 协同）。[公告](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-mobility-group-enters-agreement-to-combine-with-dana.html) |
+
+这条路线本质上是：**卖出/分拆低增长交通资产，把资本投入数据中心供电、预制化、液冷和高认证航空资产。** 好处是组合增长和毛利率提高；代价是 Boyd 价格昂贵、债务显著增加，且液冷系统整合能力尚需 4–8 个季度验证。
+
+### 1.3 最新市场与经营估值快照
+
+| 指标 | 最新数值 | 日期/算法与解读 |
+|---|---:|---|
+| 股价 | **$416.69** | 2026-07-31 12:55 PT 最新成交；当日区间 $392.21–421.89 |
+| 市值 | **$162.27B** | 同一行情快照 |
+| 行情服务 trailing P/E | **40.79x** | 行情服务基于其 EPS $10.22；财报入库时差会造成差异 |
+| 本报告 TTM GAAP P/E | **42.38x** | $162.27B / TTM 归母净利 $3.829B |
+| 2026E forward P/E | **30.87x adjusted / 39.84x GAAP** | 分别按管理层 EPS 指引中点 $13.50 / $10.46 |
+| TTM P/S | **5.40x** | TTM 销售 $30.026B；市值/销售 |
+| TTM 收入增速 | **+15.5%** | 当前 TTM $30.026B，对比前一 TTM $25.990B |
+| TTM 毛利率 | **35.90%** | TTM 毛利 $10.780B；Q2 单季因 Boyd 并购摊销/组合为 33.47% |
+| TTM 净利率 | **12.75%** | TTM 归母净利 $3.829B；Q2 单季 9.62% |
+| 2025 收入 | **$27.448B，+10.3%** | 2024 为 $24.878B，2023 为 $23.196B |
+
+> **估值口径提醒：** 公司调整后 EPS 剔除并购/剥离成本、无形资产摊销和重组等项目；Boyd 带来的无形资产摊销很大。不能把 adjusted forward P/E 与 GAAP trailing P/E 直接比较而不说明差异。
+
+### 1.4 资产负债表评估
+
+2026-06-30 资产负债表核心数据来自同日 Q2 完整财报：[Eaton 2026Q2 earnings complete](https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-20265-earnings-complete.pdf)。
+
+| 项目 | 2026-06-30 | 诊断 |
+|---|---:|---|
+| 现金＋短期投资 | **$0.695B** | 现金缓冲相对总债务不高 |
+| 应收账款 / 存货 | **$6.673B / $5.417B** | 高 backlog 和扩产推升营运资本；需观察周转和客户预付款 |
+| 流动资产 / 流动负债 | **$14.772B / $11.909B** | 流动比率 **1.24x**，尚可 |
+| 速动比率 | **0.62x** | 剔除存货后偏紧；不是危机，但依赖持续经营现金流 |
+| 短债＋长期债务 | **$20.611B** | Boyd 主要以债融资；短债 $2.091B、长期 $18.509B |
+| 净债务 | **$19.916B** | 约为 2026E FCF 中点的 **4.9x**；不是净债务/EBITDA |
+| 股东权益 | **$20.299B** | 总债务/权益 **1.02x** |
+| 商誉＋无形资产 | **$32.840B** | 占资产 **58.5%**、权益 **161.8%**；收购减值是尾部风险 |
+| Q2 利息费用 / 利息保障 | **$201M / 6.7x** | 保障倍数按（税前利润＋利息）/利息；覆盖仍充足 |
+| Q2 OCF / FCF | **$1.127B / $0.874B** | H1 OCF $1.634B、FCF $1.188B；全年指引明显后置到 H2 |
+| 2026 OCF / FCF 指引 | **$5.0–5.4B / $3.9–4.3B** | 若兑现，可逐步去杠杆；若扩产/营运资本超支，降债速度会慢 |
+
+**结论：健康度 6.5/10。** Eaton 仍有投资级融资能力（公司投资者页面所列 S&P **A-**、Moody’s **A3**；[评级与投资概览](https://www.eaton.com/se/sv-se/company/investor-relations/why-invest-in-eaton.html)），盈利与现金流能覆盖利息；但 Boyd 后资产负债表由“稳健”降为“可管理的高杠杆整合期”。最应监控：H2 FCF 是否达到至少约 $2.7B、库存/应收是否随交付正常回落、商誉减值迹象、Mobility 交易 $1.1B 现金是否按期用于降债。
+
+## 2. 最新及最近四次财报：财务、订单、交期和 AI 暴露
+
+### 2.1 五个季度总览
+
+| 财报季度 | 销售额 / 同比 | 有机/并购/汇率 | 分部经营利润率 | GAAP / 调整后 EPS | OCF / FCF | 数据中心订单/收入及 AI 占比 |
+|---|---:|---|---:|---:|---:|---|
+| **2025Q2** | **$7.028B / +11%** | +8% / +2% / +1% | **23.9%** | $2.51 / $2.95 | **$0.918B / $0.716B** | Electrical 数据中心季度订单约 **+55%** [R]；DC 收入 [E] $1.3–1.5B、AI 子集约 $0.7–1.0B（总收入 10–14%） |
+| **2025Q3** | **$6.988B / +10%** | +7% / +3% / 0% | **25.0%** | $2.59 / $3.07 | **$1.4B / $1.2B** | DC 订单约 **+70%**、收入约 **+40%**、B2B **1.7x** [R]；DC [E] $1.45–1.65B，AI 子集 $0.9–1.2B（13–17%） |
+| **2025Q4** | **$7.055B / +13%** | +9% / +2% / +2% | **24.9%** | $2.91 / $3.33 | **$2.0B / $1.6B** | DC 订单约 **+200%**、收入 **>+40%** [R]；DC [E] $1.55–1.80B，AI 子集 $1.0–1.4B（14–20%） |
+| **2026Q1** | **$7.451B / +17%** | +10% / +4% / +3% | **22.7%** | $2.22 / $2.81 | $0.507B / $0.314B | DC 订单约 **+240%**、收入约 **+50%**、议价/报价 pipeline **+81%** [R]；DC [E] $1.8–2.0B，AI 子集 $1.2–1.6B（16–21%） |
+| **2026Q2 最新** | **$8.531B / +21%** | +14% / +7% / 0% | **23.1%** | $2.11 / $3.15 | **$1.127B / $0.874B** | Electrical Sector DC 订单约 **+85%**、收入约 **+65%** [R]；DC [E] $2.2–2.4B，AI 子集 $1.5–1.9B（18–22%） |
+
+**AI 估算方法：** 2025 公司披露“数据中心及分布式 IT”为销售额 21%，即约 **$5.76B**，但其中包括传统企业 IT、colocation 和非 AI 负载。季度 DC 估算以该基数、公司披露的 DC 增速、Boyd 约 80% 数据中心组合及季度并表天数重建；AI 子集再用高密度机架/液冷/加速器项目占比范围折算。该序列适合看趋势，不应当作公司披露精确收入。
+
+### 2.2 分部收入、增速和利润率（按财报次数为行）
+
+| 财报季度 | Electrical Americas | Electrical Global | Aerospace | Mobility（Vehicle＋eMobility） |
+|---|---|---|---|---|
+| **2025Q2** | **$3.350B，+16%**；organic +12%；margin **29.5%** | **$1.753B，+9%**；organic +7%；margin **20.1%** | **$1.080B，+13%**；organic +11%；margin **22.2%** | **$0.845B**；Vehicle $663M、eMobility $182M；合计 margin 约 **12.2%** [E] |
+| **2025Q3** | **$3.410B，+15%**；organic +9%；margin **30.3%** | **$1.724B，+10%**；organic +8%；margin **19.1%** | **$1.079B，+14%**；margin **25.9%** | **$0.775B**；Vehicle $639M、eMobility $136M；合计 margin 约 **13.5%** [E] |
+| **2025Q4** | **$3.506B，+21%**；organic +15%；margin **29.8%** | **$1.728B，+10%**；organic +6%；margin **19.7%** | **$1.111B，+14%**；margin **24.1%** | **$0.711B，约 -10%** [E]；margin **14.9%** |
+| **2026Q1** | **$3.600B，+20%**；organic +14%；margin **25.6%** | **$1.945B，+21%**；organic +9%；margin **19.2%** | **$1.139B，+16%**；organic +9%；margin **26.7%**（含设施出售收益） | **$0.766B，-2%**；organic -6%；margin **11.7%** |
+| **2026Q2** | **$3.951B，+18%**；全部为 organic +18%；margin **27.5%** | **$2.517B，+44%**；organic +18%、acq +25%、FX +1%；margin **19.8%** | **$1.222B，+13%**；organic +7%、acq +6%；margin **22.8%** | **$0.841B，持平**；organic -2%、FX +2%；margin **13.0%** |
+
+来源：[2025Q2](https://www.eaton.com/in/en-us/company/news-insights/news-releases/2025/eaton-reports-record-second-quarter-2025-results.html)、[2025Q3](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-reports-record-third-quarter-2025-results-with-accelerating-orders.html)、[2025Q4](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-reports-record-fourth-quarter-2025-results.html)、[2026Q1](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-reports-record-first-quarter-2026-results.html)、[2026Q2](https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-2026-analyst-presentation.pdf)。
+
+### 2.3 Backlog、bookings、B2B、交期与取消率
+
+| 财报季度 | Electrical Americas | Electrical Global | Aerospace | 交期与取消判断 |
+|---|---|---|---|---|
+| **2025Q2** | 滚动订单 **+2%**；backlog **约 $11.4B/+17%**；B2B >1.0x | 订单 **-1%**；backlog **+1%** | 订单 **+10%**；backlog **+16%**；B2B **1.1x** | 公司未披露取消率/平均 lead time |
+| **2025Q3** | 订单 **+7%**；backlog **$12.0B/+20%**；B2B **1.1x** | 订单 **+2%**；backlog **+7%** | 订单 **+11%**；backlog **+15%**；B2B **1.1x** | DC B2B 1.7x，订单增速开始显著高于分部平均 |
+| **2025Q4** | 订单 **+16%**；backlog **$13.246B/+31%**；B2B **1.2x** | 订单 **+6%**；backlog **$2.034B/+19%**；Electrical B2B **1.1x** | 订单 **+11%**；backlog **$4.316B/+16%**；B2B **1.1x** | 三个披露分部 firm backlog 合计约 **$19.6B**；公司总口径约 $19.8B |
+| **2026Q1** | 订单 **+42%**；backlog **约 $14.5B/+44%**；B2B **1.2x** | 订单 **+13%**；backlog **+73%**；B2B **1.1x** | 订单 **+13%**；backlog **+28%**；B2B **1.1x** | Boyd Q1 收入 >+100%、backlog 在六个月约翻倍 [R]；并表仅 19 天 |
+| **2026Q2** | 订单 **+41%**；backlog **$15.2B/+33%**；季度净增约 $0.7B；B2B **1.3x** | 订单 **+33%**；backlog **+103%** | 订单 **+17%**；backlog **+28%**；B2B **1.2x** | 全部核心 B2B >1，需求仍快于交付；没有公开取消率 |
+
+**订单质量边界：**
+
+- 2025 10-K 明确把 backlog 定义为**客户已坚定承诺的订单**；尚待客户 release 的 open orders 不计入。2025 年末约 **69%** backlog 计划在未来 12 个月交付。这比“pipeline/MOU”质量高，但仍可能延期、改配或依法取消。[Eaton 2025 10-K](https://www.sec.gov/Archives/edgar/data/1551182/000155118226000007/etn-20251231.htm)
+- Eaton 未公布客户项目名、单个 hyperscaler 订单金额、取消率或产品平均交期。不能把 NVIDIA 参考设计、Flexnode 合作、Siemens Energy 联盟或 SST 试点当成 firm backlog。
+- 行业交期仅作 [C] 代理：美国配电变压器普遍约 **1–2 年以上**、大型变压器约 **3–4 年**；高规格 MV/LV、断路器、FAT 与 commissioning 也可能成为关键路径。液冷 MW 级 CDU 基准约 **20–32 周**。这些不是 Eaton 自己披露的平均交期。
+
+## 3. 2026 最新指引、业务占比与产品穿透
+
+### 3.1 2026Q2 后最新指引
+
+| 指标 | 2026 最新指引 | Q2 前/含义 |
+|---|---:|---|
+| 公司有机增长 | **11–13%** | 上调后中点 12%；不含并购销售 |
+| 分部经营利润率 | **24.1–24.5%** | 中点 24.3%；Boyd 初期摊销/整合压制总毛利不代表分部需求弱 |
+| 调整后 EPS | **$13.40–13.60** | 中点 $13.50 |
+| GAAP EPS | **$10.36–10.56** | 中点 $10.46；调整差额约 $3.04/股 |
+| OCF / FCF | **$5.0–5.4B / $3.9–4.3B** | H1 FCF 仅 $1.188B，兑现依赖 H2 交付和营运资本释放 |
+| Q3 有机增长 | **13.5–15.5%** | 需求继续加速 |
+| Q3 分部 margin / adjusted EPS | **24.6–25.0% / $3.46–3.56** | 扩产爬坡和价格成本改善 |
+
+### 3.2 分部收入占比、增长和公司侧重点
+
+| 分部 | 2026Q2 收入 | 占比 | Q2 增长 | 2026 有机增长指引 | 2026 margin 指引 | 判断 |
+|---|---:|---:|---:|---:|---:|---|
+| Electrical Americas | **$3.951B** | **46.3%** | **+18%** | **+14–16%** | **28.8–29.2%** | 最大利润池；数据中心、utility、commercial/institutional 是最重要 |
+| Electrical Global | **$2.517B** | **29.5%** | **+44%**（organic +18%、acq +25%） | **+11–13%** | **19.6–20.0%** | Boyd 并入使增长跳升；液冷成为关键 |
+| Aerospace | **$1.222B** | **14.3%** | **+13%** | **+7.5–9.5%** | **24.3–24.7%** | 第二现金流支柱；Ultra PCS 增加任务系统内容 |
+| Mobility | **$0.841B** | **9.9%** | 0%（organic -2%） | **+2–4%** | **13–15%** | 明确非战略核心，等待 Dana 交易 |
+
+**公司最侧重：** （1）EA 中数据中心/公用事业容量扩张；（2）EG 中 Boyd 液冷整合；（3）把成熟 AC 电力链延伸到 800VDC/SST 和 white space；（4）航空并购；（5）Mobility 退出。2026 建模给出的 Boyd 并表销售约 **$1.5B**、Ultra PCS **$250M**、Fibrebond **$140M**；这些是并购增长，不应与有机增长重复相加。
+
+### 3.3 重点业务、产品与型号
+
+| 业务 | 主要产品/型号 | AI 价值 | 当前商业状态 |
+|---|---|---|---|
+| 中压接入与变压 | MV AIS/GIS、金属铠装开关柜、真空断路器、三相变压器、稳压器、保护/计量 | 决定园区能否取得 MW；AI 园区大功率、短路容量、弧光保护要求提高 | **规模收入/供给紧**；Nebraska 新厂 2027H1 投产，南卡变压器厂 2027 投产 |
+| UPS、低压和机架配电 | **9395XR UPS、9PX Gen2、EnergyAware UPS、STS、PDU/RPP、Pow-R-Way busway、Tripp Lite rPDU/机柜** | 电能质量、短时后备、故障穿越、机架分配与可观测性 | **规模收入**；客户 AVL/UL 认证和安装基数是壁垒 |
+| 预制化 power train | **Fibrebond e-house、NordicEPOD power module、Flexnode 3.5–35MW 模块化 AI hall** | 工厂 FAT 与现场土建并行，Flexnode 宣称平均工期缩短约 35% | **放量期**；合作/产品能力已证实，未披露具名订单金额。[Flexnode](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-expands-modular-data-center-offering.html) |
+| 液冷 | **Boyd 冷板/TIM、inner/rack manifold、泵/过滤/换热器、ROL2300 in-row CDU（最高 2.3MW）、Project Deschutes 2MW CDU** | 从设施侧进入 GPU 芯片热路径；Vera Rubin 高密机架不可缺 | **高增长规模业务**；NVIDIA MGX 验证覆盖 VR200 内部/机架歧管与 CDU 链 |
+| 800VDC 与固态电力 | **800V sidecar（800kW nominal/900kW max）、最高 2.5MW DC busway、100–2000A SSCB、2MW/15kV MVSST（12.47kV→800VDC，效率 >97%）** | 减少变换级、铜损与占地，适配 >1MW rack | **试点/NRE/报价**；sidecar DVT 2026 年末、制造就绪 2027Q1；SST 商业出货偏 2027 年末以后 |
+| 数字化与能控 | **Brightlayer、Power Xpert、Exertherm、PXQ、Beam Rubin DSX/Omniverse 数字孪生** | 设计/运行协同、热/电约束、灵活负载与预测维护 | **小规模、附着型**；Beam DSX 是 NVIDIA 参考设计合作，不是订单。[Beam Rubin DSX](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-collaborates-with-nvidia-to-unveil-its-beam-rubin-dsx-platform.html) |
+| 航空航天 | 液压泵/马达/HPU、燃油/惰化、作动/控制、软管管路、氧气、任务载荷、Ultra PCS 控制/传感/弹射/数据处理 | 非 AI；高认证、高售后、高切换成本 | **稳定高增长**；商用航空产量和国防项目支撑 |
+| 智能配电小期权 | **SPAN 智能面板、分布式能源控制** | 住宅/边缘 DER，不是 AI 主线；可复用软件与负载管理 | **小基数潜力业务**；不可因 $75M 投资外推大额 Eaton 收入 |
+
+### 3.4 产品毛利、规模与增速交叉验证
+
+Eaton 不披露产品毛利。下表用分部 margin、行业 BOM/毛利区间、收购披露和订单增速交叉验证；为**产品毛利率**而非分部经营利润率。
+
+| 产品群 | 2026E Eaton 收入贡献 [E] | 当前增速 [R/E] | 产品毛利率 [E] | 交叉验证 |
+|---|---:|---:|---:|---|
+| DC/分布式 IT 总计（非纯 AI） | **$8.4–9.2B** | Q2 约 **+65%** | 混合 **30–38%** | 2025 $5.76B 基数＋Q2 增速＋Boyd 并表；各子项有重叠，不可相加 |
+| MV、变压器、开关设备和保护 | **$3.0–3.5B** | 订单/收入约 +20–50% 区间 [E] | HV/MV gear **28–38%**；LV gear **25–35%** | EA backlog、数据中心订单和三地扩产；EA margin 27.5%/全年目标约 29% |
+| UPS、STS/PDU、busway、rPDU | **$2.4–2.9B** | **约 +20–35%** | UPS **30–38%**；busway **25–35%**；smart rPDU **32–44%** | AI power-block 内容量和现有客户认证；普通机架 PDU 增速低于高功率版本 |
+| 预制模块/电力舱集成 | **$0.60–0.75B** | **约 +25–45%** | e-house **20–30%**；预制集成 **18–28%** | Fibrebond 2025 前 TTM $378M、Q2 organic 电力增长与 Flexnode/Nordic 产品；内部硬件可能重复 |
+| Boyd 总业务 / 其中 DC | **约 $1.7B / $1.36B** | Q1 Boyd 收入 >+100%；Q2 DC 收入含并购约 +65% | 交易披露 EBITDA margin 约 **25%**；产品 GM [E] 冷板 **24–32%**、CDU **26–35%**、接口 **30–42%** | 2026 交易模型、backlog 六个月翻倍、NVIDIA MGX 验证 |
+| 800V sidecar/SST/SSCB | **<$20–50M** | 小基数数倍但无意义 | 早期系统 GM **10–25%**；成熟后 **25–40%** | 尚在 DVT/试点；目前主要是样机、NRE 和工程收入，不能按新闻曝光估值 |
+| DCIM/数字孪生/监测/服务 | **$0.35–0.55B** | **约 +20–40%** | 软件 **55–75%**；集成/硬件 **25–52%** | Installed base 支持 attach，但公司没有独立披露，范围与硬件服务重叠 |
+| Aerospace | **$4.75–4.90B** | 全年 organic **+7.5–9.5%** | 由分部 operating margin **24.3–24.7%** 反推产品 GM 更高 | Q2 backlog +28%、B2B 1.2；Ultra PCS 2026E $250M |
+
+### 3.5 明确跳过的低增速业务，以及不能漏掉的小业务
+
+**低重要度、后文不逐项建三情景：**
+
+- Mobility：Q2 organic **-2%**，且已签 Dana 交易；只保留交易/现金回收风险。
+- 住宅常规配电、普通单相变压器和非数据中心商业配电：可受电气化支持，但不直接决定 AI 基建弹性。
+- 传统低功率 rPDU、普通 VRLA 更新、通用机柜/连接线：有安装基数，产品差异和增长不如高功率/智能版本。
+- 一般工业机械和 ICE 轻型车：2025 收入权重分别约 5%/3%，不是本次 AI 核心。
+
+**小但不能漏掉：**
+
+- SPAN 智能面板与分布式能源控制；
+- EnergyAware/grid-interactive UPS、PXQ 电能质量与灵活负载；
+- Exertherm 连续热监测、Beam Rubin DSX/Brightlayer 数字孪生；
+- 800VDC solid-state circuit breaker、DC busway 和 MVSST；
+- Boyd 高温液冷的流体质量、泄漏监测、快接/歧管和全生命周期服务。这些收入目前小，但接口认证、软件和服务的长期毛利/粘性可能高于整机。
+
+## 4. 当前高增长/关键产品：收入、AI 重要性、紧迫度与定价权
+
+评分均为 1–5，5 代表最高；“供需紧张”分数越高越供不应求。“垄断”不是法律垄断，而是客户 AVL、技术、安装基数和交付网络形成的有效份额壁垒。
+
+| 关键产品/业务 | 当前年化/2026E 收入贡献 [E] | 当前收入增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 有效垄断力 | 溢价能力 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| **MV 开关柜、三相变压器、保护/稳压** | **$3.0–3.5B** | **约 +20–50%**；DC 子集更高 | **5.0** | **5.0** | **5.0** | **4.5** | **4.5** | 2026–2028 最确定的 Eaton AI 利润池；标准和地域许可限制新进入者，客户愿为交期付费 |
+| **UPS、STS/PDU/RPP、busway、智能 rPDU** | **$2.4–2.9B** | **约 +20–35%** | **5.0** | **4.5** | **4.0** | **4.0** | **4.0** | 已规模化、已认证；高功率与预制版本比普通 rPDU/UPS 更有弹性 |
+| **Fibrebond/NordicEPOD/Flexnode 预制交付** | **$0.60–0.75B** | **约 +25–45%** | **4.0** | **5.0** | **4.0** | **3.5** | **3.5** | 价值是缩短 time-to-token，不是单纯箱体；Eaton 全栈设备可提高 attach |
+| **Boyd 直液冷** | **总业务约 $1.7B；DC 约 $1.36B** | Q1 独立口径 **>+100%**；未来正常化 | **5.0** | **5.0** | **4.5** | **4.5** | **4.5** | Rubin 时代每柜 187–227kW，冷板/CDU/歧管进入关键路径；系统责任和验证比钣金更有价值 |
+| **800V sidecar、DC busway、SSCB、MVSST** | **<$20–50M** | 小基数、无法用百分比评价 | **当前 3.0 / 未来 5.0** | **3.0** | **3.0** | **4.0** | **4.0** | 2026 是 design-in/NRE 年；技术期权大，但短期绝对利润小 |
+| **Brightlayer/Beam DSX/Exertherm/服务** | **$0.35–0.55B** | **约 +20–40%** | **3.5** | **3.0** | **2.0（硬件）/4.0（工程人才）** | **3.5** | **3.5** | 依托硬件 installed base；如果无法单独披露 ARR/attach，市场会继续给较低可信度 |
+| **Aerospace＋Ultra PCS** | **$4.75–4.90B** | **+7.5–9.5% organic** | **非 AI；公司重要性 4.0** | **4.0** | **4.0** | **4.5** | **4.0** | 资格验证和项目寿命形成深壁垒；为公司提供与 AI 周期不同的现金流 |
+
+### 4.1 为什么“成熟交流链”比 800V 更紧急
+
+项目内行业研究显示，AI 园区 2026 主流仍是“公用电网高压接入→34.5/13.8/10kV 中压交流→工频变压器/开关柜→415/480/690VAC→UPS/PDU/busway→54V/机架”。变压器在美国的行业交期约 1–2 年以上，大型变压器可达 3–4 年；800V/SST 不能消除上游并网、站房、许可和施工。因此：
+
+- **近期内容量和价格权：** 传统 AC 设备 > 预制 power train > 液冷 > 800V/SST；
+- **2027–2029 增量弹性：** 液冷 ≈ 800V sidecar > 数字控制 > 成熟 AC；
+- **失败代价：** 变压器/开关柜延期会让整个园区无电；冷却失效会让 GPU 降频/停机；普通机柜/通用 rPDU 的替换代价较低。
+
+## 5. 一年后收入与战略地位：基准、乐观、极度乐观
+
+预测窗口为 **2026Q3–2027Q2 的未来 12 个月**。各产品收入存在系统集成重叠：预制舱会包含 Eaton 开关柜/UPS，DC 总收入也包含 Boyd；只有同一行可纵向比较，不能把所有行横向相加。
+
+### 5.1 收入贡献和增速情景
+
+| 产品/业务 | 当前基数中点 [E] | 基准：一年后收入 / 增速 | 乐观：一年后收入 / 增速 | 极度乐观：一年后收入 / 增速 | 关键必要条件 |
+|---|---:|---:|---:|---:|---|
+| **DC/分布式 IT 总计** | **$8.8B** | **$10.5B / +19%** | **$12.0B / +36%** | **$14.0B / +59%** | EA/EG backlog 转换、Boyd 与新增产能；不是 AI-only |
+| **MV/变压器/开关保护** | **$3.25B** | **$3.9B / +20%** | **$4.4B / +35%** | **$5.0B / +54%** | 现有 24 个 EA 扩产项目爬坡、铜/GOES/断路器到料和 FAT 工程师充足 |
+| **UPS/LV/PDU/busway/rPDU** | **$2.65B** | **$3.2B / +21%** | **$3.6B / +36%** | **$4.1B / +55%** | 高功率产品 mix、客户标准化复购、预制 power train attach |
+| **预制 e-house/power module** | **$0.675B** | **$0.85B / +26%** | **$1.05B / +56%** | **$1.35B / +100%** | Fibrebond/Nordic/Flexnode 多站点复制；运输、FAT/SAT 不成为瓶颈 |
+| **Boyd 液冷总业务** | **$1.70B** | **$2.10B / +24%** | **$2.40B / +41%** | **$2.80B / +65%** | Rubin 量产、ROL2300/CDU 与歧管多客户采用、良率和服务网络扩张 |
+| **800V/SST/SSCB** | **$0.035B** | **$0.12B / +243%** | **$0.30B / +757%** | **$0.60B / +1,614%** | DVT/UL/AHJ、H2 定点、2027H1 小批；极端情景需要提前规模交付，概率低 |
+| **数字化/监测/服务** | **$0.45B** | **$0.55B / +22%** | **$0.70B / +56%** | **$0.95B / +111%** | Beam/Brightlayer 从参考设计转成付费许可、服务 attach 和跨设备控制 |
+| **Aerospace** | **$4.825B** | **$5.25B / +9%** | **$5.50B / +14%** | **$5.80B / +20%** | OEM 产量、国防项目、供应链解堵和 Ultra PCS 交叉销售 |
+
+### 5.2 一年后重要性、紧迫度、供需与定价评分
+
+每格顺序为“**AI 重要性 / 时间紧急性 / 供需紧张 / 有效垄断 / 溢价**”；1–5 分。Aerospace 的第一项改为对公司的战略重要性。
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 | 评分变化逻辑 |
+|---|---|---|---|---|
+| MV/变压器/开关保护 | **5/5/4.5/4.5/4.5** | **5/5/5/4.5/5** | **5/5/5/5/5** | 新产能缓和部分交期；若 AI 园区集中抢设备，slot 与本地认证价值反而提高 |
+| UPS/LV/PDU/busway | **5/4.5/3.5/4/4** | **5/5/4.5/4.5/4.5** | **5/5/5/4.5/5** | 标准产品竞争较多，只有高功率、智能和预制组合能维持高分 |
+| 预制模块 | **4/5/3.5/3.5/3.5** | **4.5/5/4.5/4/4** | **5/5/5/4/4.5** | 客户为提前 3–9 个月通电支付价值；物流/集成质量决定而非箱体专利 |
+| Boyd 液冷 | **5/5/4/4.5/4.5** | **5/5/5/4.5/5** | **5/5/5/5/5** | Rubin/下一代 GPU 热密度越快上升，已验证冷板/接口/CDU 的替代风险越小 |
+| 800V/SST/SSCB | **4.5/3.5/3/4/4** | **5/4.5/4.5/4.5/4.5** | **5/5/5/4.5/5** | 当前约束是验证，不是产品短缺；一旦 hyperscaler 定点，认证名额和 SiC 供给形成稀缺 |
+| 数字化/服务 | **3.5/3/2.5/3.5/3.5** | **4/4/3.5/4/4** | **4.5/4.5/4/4.5/4.5** | 只有实现控制闭环、跨园区复制和可验证节能/可用性才提高定价 |
+| Aerospace | **4/4/4/4.5/4** | **4/4.5/4.5/4.5/4.5** | **4.5/5/5/5/5** | 认证、适航与平台寿命带来很高切换成本；不是 AI 供需 |
+
+## 6. BOM、每 MW/机架/GPU/光口内容量、价格传导与当前产能
+
+### 6.1 真实内容量：先定义分母
+
+项目内行业口径给出的 AI 基建成本为：shell/core **$10–15M/MW**，不含加速器的 technical fit-out **$18–32M/MW**，GPU/host **$20–38M/MW**，现场能源/并网 **$2–10M/MW**，合计 **$39–70M/MW**。Eaton 的产品跨越其中多个层，不能用单一百分比粗算。
+
+| 分母 | 2026 主流假设 | Eaton 可服务内容量 [E] | 解释 |
+|---|---|---:|---|
+| **每 1MW IT 负载：成熟电力链** | MV/变压器、UPS、LV/PDU/busway、保护与部分预制 | **$1.2–2.5M/MW** | 行业全套电力内容约 $3.1–6.3M/MW，剔除 Eaton 不供的发电、线缆/施工和竞争者份额；不同架构差异很大 |
+| **每 1MW：Boyd 直液冷** | 7 个约 142kW Rubin 级机架，含冷板/歧管/CDU/部分二次侧 | **$1.2–3.0M/MW** | 设施一次侧冷站另可达 $1.2–2.5M/MW，不应全部归给 Boyd |
+| **每 Rubin 级机架** | 约 142–227kW、72 GPU | 电力 **$170–$355k/rack**；液冷系统 **$230–$600k/rack** | 液冷为完整交付价值，不等于 Boyd 净收入；不同机架设计会把 CDU 放在行级而非每柜 |
+| **每 GPU** | GB300 示例约 72 GPU/142kW，即约 507 GPU/MW | 电力 **$2.4–4.9k/GPU**；液冷 **$3.2–8.3k/GPU** | 只是把设施/机架系统摊到 GPU，不是 GPU 上单件售价 |
+| **每 optical port** | 800G/1.6T 光网络端口 | **直接内容量 $0** | Eaton 不销售光模块、激光器或交换 ASIC；只能分摊园区电力/冷却，不能伪称“每光口 BOM” |
+| **每 3.5–35MW Flexnode 模块** | 模块化 AI hall | 嵌入式电气 **$4.2–87.5M**；纯壳体/集成增量 [E] **$1.1–28M** | 范围随是否含变压器、UPS、母线和冷却变化；不能把完整模块值与内部 Eaton 设备重复相加 |
+
+### 6.2 关键产品 BOM 拆分
+
+以下比例是供应商出货成本/交付价值的行业模型，并非 Eaton 披露；范围之和可能因设计不同略有重叠。
+
+| 产品 | BOM/成本拆分 | Eaton 定价抓手 |
+|---|---|---|
+| **液浸配电变压器** | 绕组/铜铝 **20–30%**；GOES 铁芯 **15–25%**；油箱 **8–13%**；套管/OLTC/绝缘/油 **15–23%**；人工 **10–16%**；干燥测试 **5–10%**；制造间接/物流 **10–18%** | 高短路等级、低损耗、认证、现场服务与稀缺交期；铜/钢指数条款降低原料风险 |
+| **干式变压器** | 绕组 **24–34%**；铁芯 **14–22%**；树脂 **10–18%**；外壳 **8–13%**；人工/测试 **12–20%**；间接/渠道 **12–20%** | 数据中心安全/占地、局放与温升性能、客户规格和交付 slot |
+| **MV 开关柜** | 铜排/外壳 **28–42%**；VCB **15–25%**；CT/PT/继保/计量 **12–22%**；布线 **8–14%**；工程/FAT **8–15%**；间接/质保 **8–14%** | 选择性保护、弧光等级、继保软件、FAT 和现场 commissioning |
+| **1MW UPS** | 功率模块 **15–21%**；磁件 **10–16%**；旁路/断路器 **10–16%**；铜 **8–14%**；电容/EMI **6–10%**；控制 **5–9%**；机箱/冷却 **6–10%**；装配/FAT **9–14%**；物流/质保 **6–11%** | 效率、并机、故障穿越、认证、服务和 EnergyAware 电网友好能力 |
+| **Busway / LV PDU** | busway：导体 **35–50%**、壳体/绝缘 **12–20%**、断路器/触点 **15–25%**、计量 **5–12%**、装配 **8–15%**；LV/PDU：保护 **25–40%**、铜 **15–25%**、机箱 **10–18%**、计量 **10–20%**、工程/FAT **15–25%** | 铜指数＋conversion premium；智能计量、插接可靠性、高故障电流和客户 AVL |
+| **智能 rPDU** | 插座/电缆 **25–35%**；断路器 **15–25%**；壳体 **8–12%**；控制/网络 **15–25%**；装配 **10–18%**；认证/质保 **5–10%** | 固件、遥测、平台兼容、备件和机架标准化；普通硬件更易商品化 |
+| **预制 power module/e-house** | 内部电气设备 **55–70%**；壳体 **10–18%**；工程集成 **10–18%**；测试/物流 **8–15%** | 工厂并行制造、一次 FAT、现场接口责任和提前通电；内部设备 attach 是利润源 |
+| **800V sidecar（含 BBU）** | AC/DC **25–36%**；BBU/双向 DC **18–32%**；800V bus/protection **10–18%**；CBU/电容 **6–12%**；控制 **4–8%**；冷却/外壳 **5–10%**；装配/认证/质保 **10–18%** | 效率、故障隔离、动态负载响应、DVT/UL/AHJ、SiC 采购能力 |
+| **2MW MVSST** | 高压 SiC **22–34%**；高频变压器 **14–24%**；电容 **8–14%**；冷却 **6–12%**；控制软件 **7–13%**；MV 外壳/端口 **9–17%**；保护 **4–9%**；测试认证质保 **8–16%** | 12.47kV 绝缘/保护、>97% 效率、多端口、现场运行数据和可维护性 |
+| **100–227kW 直液冷机架** | 冷板/TIM/服务器环路 **28–38%**；CDU **18–28%**；歧管/快接 **12–18%**；泵/PHE/过滤 **8–14%**；传感 **4–8%**；冷却液 **2–5%**；安装/SLA **10–18%** | 与 GPU 封装共同设计、低热阻、零泄漏接口、流体兼容、控制与全球 RMA |
+| **DCIM/数字孪生** | 100MW 项目初始值约 **$40–101M**：telemetry $70–150k/MW、DCIM $40–100k/MW、BMS/EPMS $100–220k/MW、twin $40–120k/MW、historian/AI/OT security/integration 余下 | 软件许可证/订阅、跨设备数据、commissioning 模型与节能/可用性 SLA |
+
+### 6.3 价格传导链
+
+**原料/器件（铜、铝、GOES、SiC、电容、断路器）→ Eaton 部件/整机 → Fibrebond/Nordic/第三方预制模块 → EPC/commissioning → hyperscaler/colo → 每可用 MW 与每 token 的经济价值。**
+
+1. 成熟 busway/变压器通常采用金属指数、短报价有效期、季度重定价或 change order；关键器件用长期协议和 capacity reservation。
+2. 客户可通过预付款、不可取消工程费、slot reservation 和 expedite fee 锁交付。项目内行业模型显示，提前 3–9 个月通电可支持 **5–20%** 加急溢价；这不是 Eaton 披露的统一收费。
+3. Eaton 2026-04-01 已实施价格调整，用于抵消商品成本和扩产爬坡；Q2/Q3 利润率恢复是验证价格传导的关键。
+4. 固定价长周期订单仍有时滞：铜/电工钢先涨、收入后确认，会短暂压 margin；若扩产使标准品交期降到 6–9 个月，普通设备 ASP/增量毛利会先正常化。
+5. 液冷与 SST 的真正溢价来自共同设计、验证和系统责任，而非铜/钣金。普通冷板、泵和机箱更容易商品化；快接、极低热阻冷板、控制和现场服务更能守住价格。
+
+### 6.4 当前美元产能、采用与认证
+
+这里的“产能”是本报告根据收入、backlog、厂房扩建和合理利用率反推的**未来 12 个月可出货收入能力**，不是公司披露的名义产能。
+
+| 产品/业务 | 当前可出货收入能力 [E] | 供应链采用证据 | 当前认证/工程阶段 |
+|---|---:|---|---|
+| MV/变压器/开关保护 | **$3.3–3.8B** | EA backlog $15.2B；24 个 EA 扩产设施中 12 个完成/爬坡、6 个预计 2026 年末前完成、6 个延至 2027+ [R] | ANSI/IEEE、UL、客户 AVL；成熟量产。Nebraska 新 MV AIS/GIS 产线 2027H1，南卡三相变压器厂 2027 |
+| UPS/LV/PDU/busway | **$2.8–3.2B** | 9395XR、STS/PDU/RPP、Pow-R-Way 和 Tripp Lite 已被大型数据中心采用；弗吉尼亚新厂将使相关 footprint 约翻倍 | UL1778/IEC62040、UL857、UL2416、IEC61439/60947、客户保护协调/FAT；成熟量产 |
+| 预制 power module | **$0.7–0.9B** | Fibrebond 已有规模收入；NordicEPOD/Flexnode 为产品与渠道整合证据 | 工厂 FAT＋现场 SAT/AHJ；Flexnode 为商业产品，具名客户与订单金额未披露 |
+| Boyd 液冷 | **$1.8–2.0B** | NVIDIA MGX 对 VR200 内部/机架歧管与 CDU 链验证；ROL2300 最高 2.3MW，多机架 | 冷板/CDU 已量产；OCP UQD/BMQC/PBMC 接口规范仍演进，客户材料兼容、泄漏和 RMA 验证通常 6–18 个月 |
+| 800V/SST/SSCB | **试点收入 < $50M** | 800V 项目已报价；MVSST 试点客户“超过五家、接近十家”，含 hyperscaler [C] | sidecar DVT 预计 2026 年末、制造就绪 2027Q1；SSCB 工程样品/找 pilot；MVSST 2MW/15kV 原型与试点，34.5kV 计划 2027 |
+| 数字/监测/服务 | **$0.5–0.7B** | 依托 Eaton 电气 installed base；Beam DSX 与 NVIDIA Omniverse/DSX 集成 | 软件/参考设计可用；付费采用率与 ARR 未披露，需客户生产部署验证 |
+| Aerospace | **$5.0–5.3B** | B2B 1.2、backlog +28%；多 OEM/国防项目 | FAA/EASA/军标和 OEM 逐平台适航；Ultra PCS 已并表 |
+
+扩产事实：
+
+- Nebraska：投资 **>$30M**、37 万平方英尺、>200 个岗位，生产 MV AIS/GIS，目标 2027H1 投产。[Eaton Nebraska 公告](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-expands-operations-in-nebraska-with-new-manufacturing-facility.html)
+- South Carolina：投资 **$340M**、约 700 个岗位，建设美国第三座三相变压器厂，2027 投产。[公告](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-invests-in-new-south-carolina-transformer-manufacturing.html)
+- Virginia：投资 **>$50M**、35 万平方英尺、约 200 个岗位，生产 STS/PDU/RPP，2027 开始生产、相关 footprint 约翻倍。[公告](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-invests-fifty-million-dollar-in-new-virginia-facility.html)
+- Texas：2025 年完成 **$100M** 扩建，稳压器和三相变压器产能超过翻倍。[公告](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-begins-production-at-newly-expanded-texas-manufacturing-facility.html)
+
+## 7. 一年后产能、采用和认证的三种情景
+
+| 产品/业务 | 当前能力 [E] | 基准：一年后能力 / 采用 / 认证 | 乐观 | 极度乐观 |
+|---|---:|---|---|---|
+| **MV/变压器/开关保护** | $3.3–3.8B | **$4.0–4.5B**；既有 hyperscaler/colo 多站点；新增线完成 FAT/客户资格 | **$4.5–5.1B**；扩产提前、双班/区域化供货 | **$5.2–6.0B**；slot 全满、外协与定价共同放大美元能力 |
+| **UPS/LV/PDU/busway** | $2.8–3.2B | **$3.3–3.8B**；高功率/智能产品在主流 AVL；弗州爬坡 | **$3.8–4.5B**；预制模块 attach 提升 | **$4.5–5.3B**；AI power block 标准化且加急溢价持续 |
+| **预制模块** | $0.7–0.9B | **$0.9–1.1B**；Flexnode 取得重复项目、FAT/SAT 稳定 | **$1.1–1.4B**；多个 10–35MW 项目复制 | **$1.4–1.8B**；工厂/物流满负荷、客户接受标准接口 |
+| **Boyd 液冷** | $1.8–2.0B | **$2.2–2.4B**；Rubin 平台量产、UQD/材料兼容完成 | **$2.5–2.8B**；多家 hyperscaler 和 OEM 采用 2MW 级 CDU | **$2.9–3.3B**；高热流冷板/接口供不应求，服务 attach 高 |
+| **800V/SST/SSCB** | < $0.05B | **$0.10–0.20B**；sidecar 制造就绪、1–2 家首批客户；MVSST 仍小批 | **$0.30–0.50B**；多家客户定点、UL/AHJ/field data 初步通过 | **$0.60–1.00B**；GW 级 800V 订单、SST 提前量产；需 SiC/保护/标准同时成熟 |
+| **数字/监测/服务** | $0.5–0.7B | **$0.65–0.85B**；Beam/Brightlayer 有生产客户、服务 attach 提升 | **$0.85–1.10B**；跨园区订阅和能控闭环 | **$1.10–1.50B**；成为 DSX/Omniverse 事实控制层；概率最低 |
+| **Aerospace** | $5.0–5.3B | **$5.4–5.7B**；供应链恢复、Ultra PCS 交叉销售 | **$5.7–6.1B**；OEM 产量和国防需求强 | **$6.1–6.5B**；高利用率与价格/mix 同时改善 |
+
+**认证里程碑应如何判定：**
+
+- 800V sidecar：DVT 完成不等于量产；至少需要制造就绪、UL/IEC 对应测试、AHJ/保险接受、客户 integrated system test 和 6–12 个月运行数据。
+- MVSST：2MW/12.47kV→800V 的 >97% 效率是产品规格；规模采用还需要 15–35kV 绝缘、固态保护、谐波/电能质量、并网、现场维护和备件体系。[Eaton 2MW MVSST brochure](https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/medium-voltage-solid-state-transformer/eaton-medium-voltage-solid-state-transformer-brochure-br153252en.pdf)
+- 液冷：NVIDIA MGX 验证是 design-in 强证据，但客户仍需对冷却液、材料、快接、泄漏、泵冗余、控制和 RMA 做平台/站点验证。OCP 接口标准降低未来切换成本，也可能压低标准件溢价。
+- 成熟电气：认证风险较低，真正瓶颈在产线良率、FAT、现场 commissioning、保护整定和可交付人员，不只是厂房面积。
+
+## 8. 用真实 backlog 与供给预测未来一年增速
+
+### 8.1 已确认的需求锚
+
+1. **2025 年末 firm backlog 约 $19.8B，约 69%（约 $13.7B）计划在随后 12 个月交付。** 这不含未 release 的开放订单。[2025 10-K](https://www.sec.gov/Archives/edgar/data/1551182/000155118226000007/etn-20251231.htm)
+2. **2026Q2 EA backlog $15.2B、同比 +33%、B2B 1.3x；EG backlog +103%；Aerospace backlog +28%、B2B 1.2x。** 因订单继续快于收入，Q4’25 的“未来 12 个月 backlog”并非唯一需求来源。
+3. **数据中心订单约 +85%、收入约 +65%。** 从 Q1 的订单 +240% 降到 Q2 +85% 是高基数正常化，不等同于需求收缩；绝对 backlog 仍增加。
+4. **供给扩张真实存在但跨年：** 12 个 EA 设施已完成/爬坡，另 6 个 2026 年内、6 个 2027+；South Carolina、Virginia 和 Nebraska 的主要增量在 2027。
+5. **没有公开取消率。** 本报告不采用“某客户取消一半订单”等无法核验的社交媒体说法；对延期/取消直接做 haircut，而不是把传闻写成事实。
+
+### 8.2 客户/项目/会议渠道验证：订单与非订单分开
+
+| 证据 | 已证实内容 | 能否计入 firm order | 交付窗口/金额边界 |
+|---|---|---|---|
+| **NVIDIA Beam Rubin DSX** | Eaton grid-to-chip 设计与 NVIDIA Vera Rubin DSX/Omniverse 集成；2026 GTC 发布 [R] | **否**；参考设计/design ecosystem | 没有客户、金额或交付期 |
+| **Boyd NVIDIA MGX 验证** | VR200 inner/rack manifolds 和 CDU 链获验证 [R] | **否**；是产品资格而非 PO | 证明可进入 BOM；实际份额仍取决于 OEM/hyperscaler 定点 |
+| **Flexnode 3.5–35MW** | 模块化 AI hall、支持 800V 和 >1MW racks；宣称平均工期缩短 35% [R] | **否**；合作产品能力 | 未披露具名客户/订单金额 |
+| **Project Deschutes 2MW CDU** | Boyd 的 2MW 级 CDU 工程/产品参考 [C] | **不能单独确认** | 证明 MW 级能力，不给出 Eaton 可确认合同值 |
+| **Siemens Energy 合作** | 现场模块化发电＋Eaton 电气集成，可比纯并网路径节省最多约两年（厂商口径） | **否**；渠道和方案合作 | 没有公开客户、MW、金额或取消条款 |
+| **MVSST hyperscaler pilots** | 约十个试点/报价；管理层预计 2026H2 订单、2027 年末/2028 年初出货 [C] | 试点/NRE 可有小收入；**不能当规模订单** | 客户未具名、金额未披露；最重要待验证项 |
+| **行业外部锚** | GE Vernova 单季 DC 电气订单 $2.4B；Powell >$400M 单一 BTM 数据中心配电单；HPS backlog +94.6% [C] | 不是 Eaton 订单 | 证明行业需求和交期紧，不证明 Eaton 份额 |
+
+相关会议/技术核验：
+
+- 2026-02 IEEE Nashville 技术资料给出 Eaton 800V sidecar、100–2000A SSCB、2MW MVSST 的工程状态；属于技术路线和认证日程，不是销售预测。[IEEE 技术资料](https://ewh.ieee.org/r3/nashville/events/2026/Eaton_DC%20Next%20Gen%20Architecture%20-%20202602%20-%20IEEE.pdf)
+- 2026-03 NVIDIA GTC 的 Eaton 800V/AI factory session 说明路线进入头部平台讨论。[GTC session](https://www.nvidia.com/ja-jp/gtc/session-catalog/sessions/gtc26-ex82160/)
+- 2026-04 OCP EMEA 有 2,110 名参会者，议题直接覆盖 1MW rack、800VDC/LVDC、开放接口；说明标准正在形成，也说明 Eaton 不会独占生态。
+- 2026-06 上海 IDCE 展示 MVSST 2.0（10kV AC→800VDC）；证明亚洲工程样机，不代表北美 UL/AHJ 已完成。[Eaton IDCE](https://www.eaton.com.cn/cn/zh-cn/company/news-insights/news-releases/2026/eaton-introduces-mv-sst-to-power-future-data-centers.html)
+- 2026-07-27 DCD AI Week 的 Eaton 800VDC session 继续强调部署路线；仍应等待具名订单和制造就绪。[DCD AI Week](https://www.datacenterdynamics.com/en/dcd-broadcasts/ai-week-2026/powering-ai-growth-why-800vdc-is-reshaping-data-center-design/)
+
+### 8.3 Backlog 转收入假设与未来一年分部增速
+
+| 情景 | 取消/实质重排 haircut [E] | 可在 12 个月转换的相关 backlog [E] | 产能/价格假设 | EA organic | EG organic | Aerospace organic | 持续经营公司（剔除 Mobility） |
+|---|---:|---:|---|---:|---:|---:|---:|
+| **基准** | **5–8%** | **65–72%** | 已完成扩产正常爬坡；新厂按时；价格基本覆盖成本 | **+15–17%** | **+14–17%** | **+8–10%** | **+13–15%** |
+| **乐观** | **2–4%** | **72–80%** | 两班/外协/FAT 提效，Boyd CDU 和预制 attach 强 | **+19–22%** | **+20–24%** | **+12–15%** | **+17–20%** |
+| **极度乐观** | **0–2%** | **80–88%** | 几乎无延期、产能提前、加急溢价持续、800V 小批提前 | **+25–30%** | **+28–35%** | **+17–20%** | **+23–27%** |
+
+**为什么基准不直接套订单 +85%：**
+
+- backlog 是多季度交付，收入受产能、验收和客户施工进度约束；
+- Boyd 并购增长与 organic 必须分开；
+- Q2 DC 收入已经 +65%，比较基数迅速抬高；
+- firm order 仍可能 rephase；标准设备扩产后也可能出现 mix/价格正常化；
+- Mobility 预计 2027Q1 移出，reported total revenue 会受会计列报/交易时间影响，故用“持续经营剔除 Mobility”更可比。
+
+**下修触发器：** EA 或 DC B2B 连续两季 <1.0x；EA backlog 增速降至 <10%；客户取消/重排 >10%；H2 FCF 明显低于指引；南卡/弗州/Nebraska 延迟 >2 季；Boyd backlog/收入低于 +20%；800V 在 2027Q1 后仍无具名客户或制造就绪。  
+**上修触发器：** EA B2B 保持 >1.2x；具名 hyperscaler 公布 MW、金额、ship date；South Carolina/弗州提前；Boyd 获第二/第三家平台系统认证；800V sidecar 有不可取消首批订单；价格与 mix 使 EA margin >29.2% 而非仅靠一次性项目。
+
+## 9. 竞争格局、技术主流性、替代风险与切换成本
+
+### 9.1 分产品竞争
+
+| 业务 | 主要竞争对手 | Eaton 优势 | 风险/替代方案 | 客户切换成本 |
+|---|---|---|---|---|
+| **变压器/MV/保护** | Schneider Electric、Siemens、ABB、GE Vernova/Prolec、Hitachi Energy、Powell、Hubbell/HPS、Mitsubishi、LS Electric | 北美 ANSI/UL、完整 MV→LV→机架产品、区域制造、installed base 和服务 | 客户双供；大型主变/高压层 Eaton 并非处处领先；产能扩张后标准品价格回落 | **高，9–24 月**：规格、短路/保护、FAT、utility/AHJ、备件重做 |
+| **UPS/LV/PDU/busway/rPDU** | Vertiv、Schneider/APC、Legrand/Starline/Raritan、ABB、Siemens、nVent/Enlogic、Flex E&I/Anord Mardix、Delta、Huawei | 全链组合、客户 AVL、服务、Power Xpert/Brightlayer、预制 attach | 高效模块化 UPS/800V 会蚕食传统 UPS；母线/普通 PDU 标准化压价 | **中高，6–18 月**：保护协调、UL/IEC、固件、FAT、备件和停机风险 |
+| **预制 power module** | Vertiv、Schneider、Flex、Huawei、Delta、区域 e-house 厂 | Fibrebond 区域制造＋NordicEPOD 标准化＋自有电气 BOM | 箱体/集成易被区域供应商复制；运输尺寸、现场接口和质量事故风险 | **中高**：设计冻结后更换需重做工厂/现场测试；greenfield 早期仍可竞争 |
+| **Boyd 液冷** | Vertiv、Schneider/Motivair、Delta、CoolIT、nVent、Modine、Carrier、Trane、STULZ、Auras/AVC/Nidec、Parker、Alfa Laval | 芯片到设施共同设计、NVIDIA MGX 验证、冷板＋歧管＋CDU＋服务全套 | OCP 接口标准化；普通冷板/CDU 被 ODM 商品化；客户可能自研或双供；整合/客户集中未充分披露 | **高，6–18 月或更长**：材料兼容、泄漏、热阻、RMA、固件和平台重验证 |
+| **800V sidecar/SSCB/SST** | Schneider、Vertiv、Delta、ABB、Siemens、GE Vernova、DG Matrix、Amperesand、Heron；Infineon/onsemi/Wolfspeed 等器件生态 | Eaton 同时拥有 MV、保护、UPS、busway、SST 和现场服务，可做完整故障责任 | 方案仍未收敛；SiC 成本/可靠性、DC 拉弧/接地/AHJ；客户可用传统 AC＋sidecar 过渡；SST 可能晚于预期 | **试点期中等、量产后高**：标准开放降低接口锁定，但现场保护/运维数据形成深壁垒 |
+| **数字化/能控** | Schneider EcoStruxure/AVEVA/ETAP、Siemens、Vertiv、ABB、Honeywell、Johnson Controls、Carrier/Nlyte | 设备 installed base、保护/电能质量数据、与 NVIDIA DSX/Omniverse 集成 | hyperscaler 自研；多云/开放协议；若只是 dashboard，切换成本低 | **低到中高**：看是否进入控制闭环、历史数据和运维流程 |
+| **Aerospace** | Parker-Hannifin、RTX/Collins、Honeywell、Safran、Woodward、Crane、Moog、TransDigm | 多系统内容、适航资格、全球售后、长平台寿命 | OEM 降价、供应商去库存、项目延迟、国防预算；Ultra PCS 整合 | **很高，数年**：重新适航、飞行测试、安全责任和备件体系 |
+
+### 9.2 新技术会不会成为主流
+
+| 技术 | 本报告判断 | 2026–2027 路径 | 主要反证 |
+|---|---|---|---|
+| **高规格传统 AC＋预制化** | **确定的主流** | 绝大多数园区继续使用；容量、故障等级、智能保护和工厂预制升级 | 标准品交期回落到 ≤9 月且 B2B <1 两季，说明稀缺溢价消退 |
+| **800VDC sidecar** | **很可能成为 >1MW rack 的主流桥接架构之一** | 2026 DVT/design-in，2027 开始商业放量；仍与 AC 上游共存 | 非 NVIDIA 平台不采用、UL/AHJ 延迟、效率收益被成本/运维抵消 |
+| **中压 SST 直达 800V** | **可信 0→1，但非 2026 大收入** | 2026–27 试点和小批，2027 年末/2028 后更可能放量 | 15–35kV 可靠性、保护/维护、SiC 成本、工频变压器扩产使经济性不足 |
+| **直液冷** | **对 Rubin 级高密机架近乎必需** | CDU、冷板、歧管、快接和服务 2026–27 快速增长；风冷仍保留在低密度负载 | GPU 功耗/部署推迟；冷板标准化压价；浸没式或两相在特定负载替代 |
+| **数字孪生/灵活负载** | **会成为功能，但供应商份额未定** | 先附着在电气和冷却系统，随后形成跨园区能控 | hyperscaler 自研、数据不开放、节能/提前并网价值无法量化 |
+
+### 9.3 主要风险排序
+
+1. **估值风险（高）：** 30.9x adjusted forward P/E 需要多年两位数 EPS 增长；订单只要从“超强”降到“正常强”，估值也可能压缩。
+2. **Boyd 整合/商誉风险（高）：** 收购价高、商誉无形资产大；若液冷增长 <20%、平台双供压价或客户集中暴露，回报率会低于资本成本。
+3. **订单转收入而非需求消失（高）：** 变压器、开关柜、CDU、FAT 和现场调试都可能让交付右移；收入、现金流和毛利会不同步。
+4. **800V/SST 时间线（中高）：** 参考设计、样机、DVT、UL/AHJ、客户资格、field data、firm order、收入是七个不同阶段。把其中任一阶段当量产会高估 2026–27。
+5. **价格/产能周期（中高）：** 2027–28 扩产集中释放后，普通 UPS、busway、箱体和标准冷板可能先降价；稀缺利润将转向接口、软件、服务和最难认证的设备。
+6. **原料、供应链和营运资本（中）：** 铜、GOES、SiC、断路器、电容及工程人员；固定价订单有 price-cost 时滞，高库存也占用 FCF。
+7. **客户集中/自研（中）：** 公司整体无单一客户超过 10% 销售，但数据中心子业务的 hyperscaler 集中度未披露；头部客户议价和双供能力强。
+8. **Mobility/Dana 执行（中）：** RMT 税务、监管、协同和 2027Q1 时间；若 RMT 未完成，Eaton 仍计划 spin，可能造成过渡成本。
+9. **航空周期/质量（中）：** OEM 产量、适航质量事件和国防项目时点；高壁垒同时意味着事故成本高。
+
+## 10. 投资判断与可验证监测表
+
+### 10.1 最终判断
+
+**基本面结论：高质量、高确定性需求、但估值和执行要求同样高。** Eaton 的最强资产不是某一个 800V 样机，而是北美电力设备的客户资格、产品全链、区域制造、FAT/现场服务和不断扩大的 firm backlog。2026–2027 的利润应主要由 EA 成熟电气、Boyd 液冷和 Aerospace 驱动；800V/SST 是 2027–2029 的期权，当前不应贡献主要估值。
+
+**基准情景下：** 公司持续经营 organic 增长 13–15%，DC/分布式 IT 约增长 19%，EA margin 保持约 29%，FCF 达到或接近 $4.1B 中点，Mobility 交易释放 $1.1B 用于降债。这个路径能支撑优质工业溢价，但未必支持估值继续扩张。  
+**乐观情景下：** DC 收入约 $12B、Boyd >$2.4B、EA B2B >1.2x 且新产能准时，800V 有具名首单，增长和 mix 抵消估值。  
+**极度乐观情景下：** 需要近乎零取消/延期、AI 电力/液冷继续供不应求、扩产提前、800V/SST 早于计划商业化、Aerospace 同步强劲。条件过多，适合作为上行期权，不适合作为目标价基准。
+
+### 10.2 未来四个季度最重要的核验指标
+
+| 频率 | 指标 | 偏多阈值 | 预警阈值 |
+|---|---|---|---|
+| 每季 | EA orders / B2B / backlog | orders >+20%、B2B >1.2x、backlog >+20% | B2B <1.0x 连续两季、backlog <+10% |
+| 每季 | Electrical DC orders/revenue | 均 >+30%，且收入追上订单 | 订单转负或取消/重排 >10% |
+| 每季 | EG organic 与 Boyd | Boyd >+25%、EG margin ≥20% | Boyd <+20%、EG margin <19% |
+| 每季 | EA margin 与价格成本 | ≥29%、价格覆盖铜/扩产成本 | <27.5% 且非一次性 ramp |
+| 每季 | OCF/FCF、库存、应收 | FY FCF ≥$3.9B，H2 营运资本释放 | FCF 低于指引、库存/应收快于收入 |
+| 月度/季度 | 具名 AI 电力/液冷项目 | 客户＋MW＋金额＋ship date＋不可取消条款齐全 | 只有 pipeline、MOU 或 TAM |
+| 里程碑 | 800V sidecar | DVT 2026 年末、制造就绪 2027Q1、至少 1–2 个具名客户 | 2027Q1 后仍无认证/客户 |
+| 里程碑 | MVSST | H2’26 firm order，2027 年末首批出货，现场运行数据 | pilot 数不增、出货再延一年 |
+| 里程碑 | 新厂 | South Carolina/Virginia/Nebraska 按计划 2027 投产 | 延迟 >2 季或良率/FAT 人手不足 |
+| 交易 | Mobility/Dana | 2027Q1 完成、$1.1B 现金主要降债 | 税务/监管延迟、过渡成本显著 |
+
+## 资料来源与模型说明
+
+### 公司与监管一手资料
+
+- [Eaton 2026Q2 analyst presentation](https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-2026-analyst-presentation.pdf)；[Q2 earnings complete](https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q2/q2-20265-earnings-complete.pdf)
+- [2026Q1](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-reports-record-first-quarter-2026-results.html)；[2025Q4](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-reports-record-fourth-quarter-2025-results.html)；[2025Q3](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-reports-record-third-quarter-2025-results-with-accelerating-orders.html)；[2025Q2](https://www.eaton.com/in/en-us/company/news-insights/news-releases/2025/eaton-reports-record-second-quarter-2025-results.html)
+- [Eaton 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1551182/000155118226000007/etn-20251231.htm)
+- [Eaton investor relations presentations](https://www.eaton.com/us/en-us/company/investor-relations/financial-presentations-webcasts.html)
+
+### 近半年产品、技术与行业资料
+
+- [Boyd Thermal 收购完成](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-completes-acquisition-of-leading-liquid-cooling-solutions-provider-boyd-thermal.html)、[Mobility 与 Dana 组合](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-mobility-group-enters-agreement-to-combine-with-dana.html)
+- [Flexnode 模块化数据中心](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-expands-modular-data-center-offering.html)、[Beam Rubin DSX](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-collaborates-with-nvidia-to-unveil-its-beam-rubin-dsx-platform.html)
+- [Eaton future white-space / 800V 架构](https://www.eaton.com/us/en-us/markets/data-centers/knowledge-center/the-future-of-white-space-and-data-hall-design.html)、[2MW MVSST brochure](https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/medium-voltage-solid-state-transformer/eaton-medium-voltage-solid-state-transformer-brochure-br153252en.pdf)
+- [IEEE Nashville 2026 Eaton 800V/SST technical presentation](https://ewh.ieee.org/r3/nashville/events/2026/Eaton_DC%20Next%20Gen%20Architecture%20-%20202602%20-%20IEEE.pdf)、[NVIDIA GTC 2026 session](https://www.nvidia.com/ja-jp/gtc/session-catalog/sessions/gtc26-ex82160/)、[DCD AI Week 2026](https://www.datacenterdynamics.com/en/dcd-broadcasts/ai-week-2026/powering-ai-growth-why-800vdc-is-reshaping-data-center-design/)
+- [Nebraska MV 扩产](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-expands-operations-in-nebraska-with-new-manufacturing-facility.html)、[South Carolina 变压器厂](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-invests-in-new-south-carolina-transformer-manufacturing.html)、[Virginia STS/PDU/RPP 厂](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-invests-fifty-million-dollar-in-new-virginia-facility.html)、[Texas 扩产](https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-begins-production-at-newly-expanded-texas-manufacturing-facility.html)
+
+### 项目内行业资料（仅“基本面/行业调研”）
+
+- 产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md
+- 产业背景/AI产业链全局图谱与口径字典_T03_2026-07-09.md
+- AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-07-10.md
+- AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-07-10.md
+- AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-07-10.md
+- AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-07-10.md
+- AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-07-10.md
+- AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-07-10.md
+- AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-07-10.md
+- AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-07-10.md
+- AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-07-10.md
+- AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-07-10.md
+
+### 估算方法与局限
+
+1. 产品收入由分部收入、终端市场占比、收购披露、DC 增速、B2B/backlog 和行业每 MW 内容量交叉推导；产品间有集成重叠，严禁求和当公司收入。
+2. 产品毛利率来自行业 BOM、可比产品和 Eaton 分部 margin 约束；不是公司披露。
+3. 产能以“可在未来 12 个月确认的供应商收入”表达，综合产线、良率、FAT/commissioning 和价格，不等于厂房标称台数或最终 TAM。
+4. 情景不含股票回购、利率或估值倍数变化，也不构成目标价；极度乐观情景是压力测试，不是最高概率预测。
+5. 截止 2026-07-31，未找到 Eaton 对单个 hyperscaler 项目的公开订单金额、统一取消率或产品级 backlog。所有此类数字均未假装为已披露事实。

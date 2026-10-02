@@ -1,0 +1,404 @@
+# TSEM_Tower Semiconductor 公司调研_2026-06-11
+
+报告日期：2026-06-11（America/Los_Angeles）  
+研究对象：company / TSEM / Tower Semiconductor  
+正式分类目录：`公司调研/晶圆制造_前道设备/`  
+本地资料边界：仅使用 `行业调研/` 下正式行业资料和 `公司调研/公司索引.md` 的目录归属；未读取、引用或继承 `特征量化/`、`日度资料/`、`tmp/`、`备份/` 或目标目录旧公司报告。  
+核心结论：Tower Semiconductor 不是 AI 主计算芯片公司，而是被 AI 数据中心光互联和供电升级重新定价的特种模拟晶圆代工厂。投资主线集中在 `SiPho/SiGe 光互联 + BCD/Power Management`，其中 SiPho 已经从主题进入合同和预付款阶段；当前股价和估值已经把 2027-2028 年 SiPho 扩产兑现计入很大部分。
+
+## 0. 高浓度结论
+
+1. **投资人心智已经从“成熟特色模拟代工厂”切换为“AI 硅光代工稀缺资产”。** 2025 年前 Tower 的核心标签是 RF-SOI、SiGe、BCD、电源管理、CIS/传感、特色模拟代工；2026 年以来，NVIDIA 1.6T 光模块合作、SiPho 2027 年 `13 亿美元`合同、`2.90 亿美元`客户预付款和 `9.20 亿美元`SiPho/SiGe CapEx，把公司估值锚从普通成熟节点周期股拉到 AI 光互联产能锁定股。
+2. **最新可验证订单能见度很强，但集中在 SiPho。** Tower 2026-05-13 披露：最大 SiPho 客户已签 2027 年 `13 亿美元`SiPho 收入合同，并收到 `2.90 亿美元`客户预付款；2028 年合同 wafer commitment 更高，额外预付款应在 2027-01 前支付。该信息比普通“客户 forecast”更硬，但仍不是全公司 backlog 披露。
+3. **2026 年 Q1 业务结构已经明显 AI 化。** Q1 2026 收入 `4.136 亿美元`，RF Infrastructure 占 `38%`，约 `1.57 亿美元`；Q1 2025 该项仅 `22%`，约 `0.79 亿美元`。RF Infrastructure 是 SiPho/SiGe 光互联和数据中心 RF 基础设施的主要口径，Q1 2026 已成为第一大业务。
+4. **Tower 的 AI 暴露分三层。** 当前收入层：1.6T 可插拔光模块用 SiPho PIC、SiGe EIC/TIA/driver、RF Infrastructure。未来 12-24 个月扩张层：NPO/CPO、DWDM 激光源、300mm SiPh、SiPho+SiGe wafer bonding。期权层：SOH/EOP 调制器、400G/lane、光路交换 OCS、近封装光 I/O。Power/BCD 是第二曲线，但 2026 收入小于 SiPho。
+5. **财务状况健康，资产负债表很强。** 截至 2026-03-31，现金和短期存款合计 `14.99 亿美元`，总债务约 `1.56 亿美元`，净现金约 `13.42 亿美元`；current ratio `5.63x`，债务/权益约 `0.05x`。风险不是偿债，而是高 CapEx、客户集中、扩产交付、Fab 3 租赁/法律争议、Intel New Mexico corridor 失效后重新承接 300mm 需求。
+6. **估值已经非常紧。** 截至 2026-06-11 美股收盘，TSEM 股价约 `260.00 美元`，市值约 `291.2 亿美元`，TTM P/E `119.6x`，forward P/E `68.2x`，P/S `17.8x`。这不是传统 foundry 估值，而是市场在押注 2027-2028 年 Tower 把收入从 2025 年 `15.66 亿美元`推向管理层模型的 `28.40 亿美元`、净利 `7.50 亿美元`。
+
+## 1. 公司整体业务、产业链定位与三年变化
+
+### 1.1 公司是什么
+
+Tower Semiconductor 是以色列总部的 **高价值模拟特色晶圆代工厂**，向 fabless、IDM 和系统客户提供工艺平台、PDK、设计使能、开发/转移/优化服务。它不生产自有品牌 AI GPU/ASIC，也不是先进逻辑主计算 die 代工厂；它的价值在于用成熟节点、专用器件结构和长期工艺 know-how，生产 AI/通信/汽车/工业/医疗/国防等场景中的模拟、光子、射频和功率芯片。
+
+主要工艺平台：
+
+| 平台 | 典型产品 | 与 AI 数据中心关系 | 投资权重 |
+|---|---|---|---|
+| Silicon Photonics / SiPho / PH18、PH18M、300mm SiPh | 光模块 PIC、1.6T/3.2T 光引擎、CPO/NPO 光子芯片、OCS、LiDAR/传感 | AI scale-out/scale-up 网络的核心增量，当前最大催化 | 最高 |
+| SiGe BiCMOS / RF HPA | TIA、driver、EIC、高速模拟、RF beamforming、active copper 相关器件 | 与光模块 SiPho 成对出现，CPO/NPO 价值上升 | 高 |
+| RF-SOI / RF CMOS | 手机 RF switch、front-end、部分 RF infrastructure | 手机周期仍重要，AI 直接弹性低于 SiPho | 中 |
+| Power Management / BCD / 700V / 65nm BCD | PMIC、DrMOS、smart power stage、POL、hot-swap/eFuse、驱动控制 | AI processor power wall 第二主线，2026 早期导入 | 中高 |
+| CMOS Image Sensor / Non-imaging sensors / MEMS | CIS、BSI stacked sensor、MEMS、传感器 | 高密度封装、wafer bonding know-how 可迁移到 CPO；直接 AI 收入较小 | 中 |
+| Discrete、MS/CMOS/Misc. | 分立器件、混合信号、传统成熟节点 | 周期性/低增长部分 | 低 |
+
+### 1.2 投资人心中是什么样的公司
+
+2024 年以前，Tower 更像“模拟特色代工 + RF/汽车/工业周期股”：收入稳定但成长性有限，毛利率明显低于 TSMC/GF 的高端平台，也低于高毛利 fabless 芯片公司。2025 年后，市场认知发生变化：
+
+- **AI 硅光稀缺 foundry。** Tower 的 PH18/PH18M 平台已在 200mm 高量产，且提供开放平台和 MPW；2024 年又发布 300mm SiPh 标准 foundry offering，给客户从 200mm 迁移到 300mm 的路径。
+- **SiPho 与 SiGe 组合平台。** 1.6T/3.2T 光模块不只需要 PIC，也需要 EIC/TIA/driver/SiGe 高速模拟；Tower 管理层多次强调 SiPho 与 SiGe “hand in hand”。
+- **NVIDIA/超大客户生态入口。** 2026-02 Tower 与 NVIDIA 宣布围绕 1.6T data-center optical modules 扩展高性能 silicon photonics；2026-05 又披露 2027 SiPho `13 亿美元`合同。
+- **但不是 AI 主算力逻辑代工。** Tower 不制造 Blackwell/Rubin/TPU/Trainium 主计算 die，不拿 CoWoS/HBM 主收入；它是 AI 光互联和电源管理的“特色工艺层”。
+
+### 1.3 最近三年重大业务变化、转型和交易
+
+| 时间 | 事件 | 对公司定位的影响 |
+|---|---|---|
+| 2023-08 | Intel 终止以约 `54 亿美元`收购 Tower 的协议，向 Tower 支付 `3.53 亿美元`reverse termination fee。 | Tower 保持独立；现金增强，但未进入 Intel 体系。市场重新评估其独立 foundry 价值。 |
+| 2023-09 | Intel Foundry Services 与 Tower 宣布 New Mexico 300mm capacity corridor，原计划 Tower 投资设备、使用 Intel 300mm 产能。 | 曾被视为 Tower 扩张 300mm 的重要路径。 |
+| 2024 | ST Agrate Italy 300mm Fab 10 相关流程完成 qualification 并开始 volume production；Tower 发布 300mm SiPh 标准 offering。 | 增强 300mm RF-SOI/SiPh 能力，给高端客户多地供给选项。 |
+| 2025 Q1 | Tower 停止 Fab 1 低毛利 legacy 150mm flows，并把部分流程整合到 Fab 2。 | 退出低毛利老产能，给高价值 SiPho/SiGe/BCD 腾出管理和厂务资源。 |
+| 2025 Q3-Q4 | 宣布加大 SiPho/SiGe 产能投资，Q3 追加 `3 亿美元`，Q4 总投资提高到 `9.20 亿美元`；目标 2026Q4 完成安装和 qualification，2027 起 full starts。 | 公司从“产能谨慎扩张”转为“围绕 AI 光互联锁产能”。 |
+| 2025-11 | 发布 CPO foundry technology：把成熟的 300mm wafer bonding/stacked BSI 经验扩展到 SiPho PIC + SiGe EIC 3D-IC，Cadence 支持异构集成设计流。 | 为 NPO/CPO 和 SiPho+EIC 价值上移铺路。 |
+| 2026-02 | 与 NVIDIA 宣布 1.6T data center optical modules 相关合作。 | 把 Tower SiPho 直接放入 NVIDIA AI networking 叙事。 |
+| 2026-03 | 与 NTCJ/Nuvoton 重组日本 TPSCo：Tower 拟获得 Fab 7 300mm full ownership，NTCJ 获得 Fab 5 200mm，目标 2027-04-01 交割。 | 强化 300mm 战略；原 Intel corridor 不执行后，Fab 7 成为重要承接路径。 |
+| 2026-03 | APEC 2026 发布 Gen3 BCD LDMOS，定位 AI power wall、Smart Power Stage 和 DrMOS。 | 从“光互联”拓展到“AI processor power delivery”。 |
+| 2026-05 | 披露 2027 年 SiPho `13 亿美元`客户合同和 `2.90 亿美元`预付款，2028 年合同承诺更高；Q1 财报给出 Q2 `4.55 亿美元`创纪录收入指引。 | 从概念验证进入合同验证，当前估值核心锚。 |
+
+### 1.4 产业链位置
+
+```text
+AI GPU/ASIC/交换芯片需求
+  -> 800G/1.6T/3.2T 光模块、NPO/CPO、OCS、active copper
+      -> SiPho PIC / SiGe EIC / TIA / driver / laser integration / wafer bonding
+          -> Tower Semiconductor：特色晶圆代工、PDK、MPW、客户专用量产
+      -> OSAT/EMS/模块厂：Fabrinet/Jabil/Coherent/Lumentum/Innolight/Eoptolink 等
+  -> AI processor power wall
+      -> PMIC / SPS / DrMOS / POL / hot-swap / eFuse
+          -> Tower BCD/65nm BCD/Gen3 LDMOS/700V 平台
+```
+
+Tower 捕获的是 **wafer foundry revenue**，不是光模块整机 ASP、交换机收入或云厂 CapEx。其收入对 AI 的弹性来自客户把光子/高速模拟/电源芯片设计进 Tower 工艺平台后，形成多季度/多年度 wafer commitment。
+
+### 1.5 最新行情、估值和财务健康度
+
+估值日期：2026-06-11 美股收盘，除非另有说明。
+
+| 指标 | 最新值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | `260.00 美元` | 2026-06-11 close，StockAnalysis；盘中金融工具约 `258.34 美元` | 2026 年显著重估，主要来自 SiPho 合同与 NVIDIA 叙事 |
+| 市值 | `291.2 亿美元` | 2026-06-11，StockAnalysis | 已接近大型半导体成长股估值，不再是传统成熟节点 foundry |
+| 企业价值 EV | `275.5 亿美元` | 2026-06-11，StockAnalysis | 净现金充足，EV 低于市值 |
+| TTM P/E | `119.6x` | 2026-06-11，StockAnalysis | 反映市场提前买 2027-2028 净利提升 |
+| Forward P/E | `68.2x` | 2026-06-11，StockAnalysis | 仍高，要求 SiPho/SiGe 扩产高确定兑现 |
+| P/S | `17.8x` | 2026-06-11，StockAnalysis | 远高于普通代工厂，接近高成长 AI 基础设施资产定价 |
+| Forward P/S | `14.3x` | 2026-06-11，StockAnalysis | 即使按 forward revenue，仍需很高增速和毛利改善 |
+| FY2025 收入增速 | `+9%` | 2025 revenue `15.66 亿美元` vs 2024 `14.36 亿美元` | 2025 已恢复增长，但估值押的是 2026-2028 加速 |
+| Q1 2026 收入增速 | `+15% YoY` | Q1 revenue `4.136 亿美元` vs Q1 2025 `3.582 亿美元` | 增速开始加速 |
+| Q2 2026 指引增速 | `+22% YoY`，`+10% QoQ` | 指引 `4.55 亿美元 +/-5%` | 创公司季度收入纪录 |
+| Q1 2026 毛利率 | `26.8%` | gross profit `1.1095 亿美元` / revenue `4.1363 亿美元` | 仍低于长期模型，但较 Q1 2025 的 `20.4%`显著改善 |
+| Q1 2026 净利率 | `15.7%` | attributable net profit `6503 万美元` | 财务杠杆低，税率和财务收入会影响季度波动 |
+| TTM 毛利率 | 约 `24.8%` | Q2 2025-Q1 2026 合计 | 低于管理层 built-out 模型的 `39.4%`，margin uplift 是投资关键 |
+| TTM 净利率 | 约 `15.1%` | Q2 2025-Q1 2026 attributable net profit / revenue | 净现金利息收入支撑净利 |
+| Current ratio | `5.63x` | 2026-03-31 | 流动性很强 |
+| Debt / Equity | `0.05x` | 2026-03-31 | 负债率极低 |
+| 现金+短存 | `14.99 亿美元` | 2026-03-31 | 扩产资金缓冲强 |
+| 总债务 | 约 `1.56 亿美元` | short-term debt `2511 万` + long-term debt `1.307 亿` | 净现金约 `13.42 亿美元` |
+| 客户预付款/递延收入 | current `1.273 亿美元` + long-term advances `2.154 亿美元` | 2026-03-31 | SiPho 客户锁产能的结果，提高能见度，也带来交付责任 |
+
+财务健康判断：**健康度高，但扩产执行风险上升。** Tower 资产负债表很强，净现金厚，债务小；Q1 2026 经营现金流包含 SiPho 预付款，剔除预付款后经营现金流仍有 `2.248 亿美元`，显示现金生成能力不错。主要风险不是短期偿债，而是 `9.20 亿美元`SiPho/SiGe 设备投资、Fab 7 300mm 扩张、Fab 3 租赁争议、客户集中和技术 qualification 延误。
+
+## 2. 最新及最近四次财报分析
+
+### 2.1 五个季度核心财务与业务表
+
+说明：Tower 不披露标准意义的 backlog/bookings/cancellation rate。下表的“订单与交期”列用已披露合同、客户预付款、capacity reservation、CapEx/qualification 节点和管理层指引推断；“AI/DC 占比”以 RF Infrastructure 为硬锚，并少量加入 AI power/BCD 早期贡献，属于估算。
+
+| 财报季度 | 收入/增速 | 毛利/毛利率 | 经营利润/净利润 | 技术收入拆分（按披露PPT百分比估算，百万美元） | 订单、交期、客户承诺 | AI数据中心相关收入占比估算 |
+|---|---:|---:|---:|---|---|---:|
+| Q1 2026 | `413.6M`，`+15% YoY`，`-6% QoQ`（Q4 高基数后季节性回落） | `111.0M`，`26.8%` | OP `64.6M`，NM `65.0M`，净利率 `15.7%`，diluted EPS `0.57`；adjusted EPS `0.65` | RF Infrastructure `38%/157M`；RF Mobile `16%/66M`；Power `17%/70M`；Sensors/Displays `15%/62M`；Discrete `10%/41M`；MS/CMOS/Misc `4%/17M` | SiPho 客户预付款 `290M`；已签 2027 SiPho revenue `1.3B`；Q2 指引 `455M +/-5%`；全年目标 sequential revenue/margin growth | `38%-42%`，约 `157-174M`；主要为 SiPho/SiGe optical，少量 AI power |
+| Q4 2025 | `440.2M`，`+14% YoY`，`+11% QoQ`，公司历史纪录 | `117.6M`，`26.7%` | OP `70.8M`，NM `80.1M`，净利率 `18.2%`，diluted EPS `0.70` | RF Infrastructure `32%/141M`；RF Mobile `24%/106M`；Power `15%/66M`；Sensors/Displays `15%/66M`；Discrete `9%/40M`；MS/CMOS/Misc `5%/22M` | 总 SiPho/SiGe CapEx 提高到 `920M`；目标 2026Q4 全部安装和 qualification；2027 full starts；目标 SiPho starts capacity > Q4 2025 monthly shipments 的 `5x`；>70% 2028前容量已 reserved 或在 reservation 过程中 | `32%-36%`，约 `141-158M`；SiPho 高增量、SiGe 配套 |
+| Q3 2025 | `395.7M`，`+7% YoY`，`+6% QoQ` | `93.0M`，`23.5%` | OP `50.6M`，NM `53.6M`，净利率 `13.6%`，diluted EPS `0.47` | RF Infrastructure `27%/107M`；RF Mobile `26%/103M`；Power `17%/67M`；Sensors/Displays `14%/55M`；Discrete `10%/40M`；MS/CMOS/Misc `6%/24M` | 追加 `300M` SiPho/SiGe capacity growth and next-gen capability；Q4 指引 `440M +/-5%`；管理层称客户 qualifications 正在推进，三座额外 fab 转向 SiPho/SiGe mix | `27%-31%`，约 `107-123M`；SiPho Q3 公开转录口径约 `52M`，同比约 `+70%` |
+| Q2 2025 | `372.1M`，`+6% YoY`，`+4% QoQ` | `80.0M`，`21.5%` | OP `39.9M`，NM `46.6M`，净利率 `12.5%`，diluted EPS `0.41` | RF Infrastructure `25%/93M`；RF Mobile `23%/86M`；Power `17%/63M`；Sensors/Displays `15%/56M`；Discrete `11%/41M`；MS/CMOS/Misc `9%/34M` | Q3 指引 `395M +/-5%`，并提出 Q4 还会额外增加约 `40M`收入；管理层称 RF infrastructure momentum 由 data centers and AI expansions 驱动，客户 forecast 继续增加 | `25%-28%`，约 `93-104M`；AI 光互联开始成为季度增长核心 |
+| Q1 2025 | `358.2M`，`+9% YoY` | `73.2M`，`20.4%` | OP `32.9M`，NM `40.1M`，净利率 `11.2%`，diluted EPS `0.35` | RF Infrastructure `22%/79M`；RF Mobile `19%/68M`；Power `18%/64M`；Sensors/Displays `17%/61M`；Discrete `16%/57M`；MS/CMOS/Misc `8%/29M` | 仍处 SiPho 扩产和客户验证早期；经营现金流 `94M`，CapEx `111M`；未披露订单簿 | `22%-24%`，约 `79-86M`；主要为 RF infrastructure/SiPho 初始放量 |
+
+### 2.2 四个关键观察
+
+1. **收入增长不均衡：RF Infrastructure 是主发动机。** Q1 2026 RF Infrastructure `157M`，较 Q1 2025 `79M`约翻倍；同期 RF Mobile、Power、Sensors/Displays只是温和变化，Discrete/Misc 下滑。公司增长质量取决于 RF Infrastructure 能否持续扩大，而不是所有成熟节点一起涨。
+2. **毛利率改善来自 mix，而非全线涨价。** Q1 2026 毛利率 `26.8%`，比 Q1 2025 `20.4%`提升 `6.4pct`。管理层 2028 built-out 模型给出 `39.4%`毛利率，隐含增量收入毛利率约 `59%`；这要求 SiPho/SiGe 扩产有高利用率和高良率。
+3. **订单能见度集中在 2027 SiPho。** `13 亿美元`2027 SiPho 合同相当于 2025 全年收入的 `83%`，相当于 Q1 2026 年化 revenue 的 `79%`。这会显著提升 2027 收入基准，但也提高客户集中和交付风险。
+4. **CapEx 已经前置。** 2025 CapEx `4.37 亿美元`，Q1 2026 又投入 `1.56 亿美元`。若客户订单兑现，固定成本吸收和毛利率改善明显；若 1.6T/CPO/NPO 延迟，公司会承受折旧和利用率压力。
+
+### 2.3 Backlog / Bookings / Lead time / 取消率判断
+
+Tower 风险披露明确表示公司 forecast 能力受 **limited order backlog and lengthy sales cycles** 影响，因此不能把客户 forecast 当成 backlog。当前可分三层：
+
+| 证据层级 | 已知事实 | 投资含义 |
+|---|---|---|
+| 硬合同/预付款 | 2027 SiPho revenue `1.3B`签约；`290M`客户预付款；2028 wafer commitment 更高，额外预付款应在 2027-01 前支付 | 这是最强的订单锚，说明客户愿意为 Tower SiPho 产能提前付钱 |
+| 产能预约/qualification | Q4 2025披露 >70% 2028前 SiPho capacity 已 reserved 或正在 reservation；目标 2026Q4 SiPho starts capacity > Q4 2025 run-rate `5x` | 说明 2027 供给被客户锁住，但还要看设备安装、良率、客户 qual |
+| 软 forecast/design-in | Q2/Q3 2025 管理层称 RF infrastructure 客户 forecast 增加；OFC 2026 多个 partner demos；NVIDIA 1.6T ecosystem | 说明需求方向强，但取消/延迟风险仍存在 |
+
+取消率：公司未披露。由于 `290M`预付款和长期合同存在，2027 SiPho 大客户取消概率低于普通 foundry forecast；但若 Tower 交付不达标，存在 prepayment repayment、赔偿、客户转单和声誉风险。对于非 SiPho 业务，仍按半导体成熟节点周期处理，订单可见度明显低。
+
+## 3. 2026 指引、业务占比、产品和小业务排查
+
+### 3.1 最新指引
+
+Tower 对 Q2 2026 指引：
+
+- 收入 `455M 美元 +/-5%`，公司历史季度纪录；
+- 环比 Q1 2026 增长 `10%`，同比 Q2 2025 增长 `22%`；
+- 管理层目标：2026 年内每个季度收入和 margin sequential growth；
+- 长期 built-out capacity 模型：收入 `28.40 亿美元`、gross profit `11.20 亿美元`、operating profit `9.00 亿美元`、net profit `7.50 亿美元`，净利率 `26.4%`；该模型包含 `9.20 亿美元` SiGe/SiPho CapEx，不包含 Intel Fab11 capacity corridor。
+
+这意味着 2026-2028 的核心不是“行业复苏”，而是 Tower 能否把已锁定 SiPho/SiGe 产能转化为高毛利收入。
+
+### 3.2 Q1 2026 收入占比和增长
+
+| 技术平台 | Q1 2026 占比 | Q1 2026 收入估算 | Q1 2025 占比 | Q1 2025 收入估算 | 同比变化 | 投资判断 |
+|---|---:|---:|---:|---:|---:|---|
+| RF Infrastructure | `38%` | `157M` | `22%` | `79M` | `+100%`左右 | 最大增长项；主要承接 SiPho/SiGe/AI 光互联 |
+| RF Mobile | `16%` | `66M` | `19%` | `68M` | `-3%`左右 | 手机 RF 周期，AI 低相关 |
+| Power | `17%` | `70M` | `18%` | `64M` | `+9%`左右 | AI power wall 未来潜力，但当前以传统电源/工业/汽车为主 |
+| Sensors & Displays | `15%` | `62M` | `17%` | `61M` | 基本持平 | CIS/显示/传感；wafer bonding know-how 对 CPO 有迁移价值 |
+| Discrete | `10%` | `41M` | `16%` | `57M` | 下滑 | 低权重，非 AI 核心 |
+| MS/CMOS/Misc. | `4%` | `17M` | `8%` | `29M` | 下滑 | 低权重，非 AI 核心 |
+
+### 3.3 重点产品和型号/平台映射
+
+| 业务 | 重点产品/平台 | 已有事实 | 预计毛利/增速/规模 | AI 重要性 |
+|---|---|---|---|---|
+| RF Infrastructure / SiPho | PH18/PH18M 200mm SiPho；300mm SiPh；1.6T DR8/2xFR4/DR8 PIC；NPO/CPO PIC；OCS；PH18DA/PH18DB 异构平台 | NVIDIA 1.6T 合作；2027 `1.3B` SiPho 合同；`290M`预付款；2026 OFC 多个 partner demos；300mm SiPh offering | 当前 RF Infrastructure Q1 2026 `157M`；2027 SiPho alone 合同 `1.3B`；成熟后平台毛利率估计 `45%-60%+` | 极高；AI 光互联功耗/带宽瓶颈的直接受益 |
+| SiGe / High-speed EIC | SiGe BiCMOS、TIA、driver、EIC、RF HPA、active copper/short-reach support | Q1 call 转录显示 SiGe demand for drivers/TIAs；CPO 需要 SiPho PIC + SiGe EIC 3D integration | 当前未单独披露；估计 Q1 2026 与 SiPho共同构成 RF Infrastructure `157M`，SiGe非光应用也有贡献 | 高；与 SiPho 绑定，CPO/NPO 会增加内容量 |
+| CPO / NPO / wafer bonding | 300mm wafer bonding、SiPho PIC + SiGe EIC stacked 3D-IC、Cadence multi-PDK flow、TSV/3D integration | 2025-11 发布 CPO foundry technology；Scintil DWDM laser source validated；NLM SOH modulator PH18M PDK 路径 | 当前收入小，更多是 NRE/early design；2027-2028 若 NPO/CPO ramp，可显著提高 ASP/wafer content | 高但节奏不确定；2026 不是大收入，2027-2028 是期权 |
+| Power / BCD | 65nm 300mm BCD；Gen3 BCD LDMOS；700V；SW2001 12V-to-1V POL；monolithic Smart Power Stage/DrMOS | APEC 2026 Gen3 LDMOS；Switch Semiconductor SW2001 Q1 2026 sampling、2026 volume production；目标 SPS/DrMOS TAM `2.5B`到 2031 `4.7B+` | Q1 2026 Power 全部 `70M`，AI-specific 估计仍低；未来高增长取决于 AI accelerator power design win | 中高；AI rack 供电效率硬约束，但竞争者多 |
+| RF Mobile / RF-SOI | 200mm RF-SOI迁移到300mm，天线开关、front-end | Q1 2026 RF Mobile `66M`，较 Q1 2025略降；管理层称300mm RFSOI Ron-Coff 改善和 design win momentum | 成熟手机周期，利润可稳但 AI 弹性低 | 低到中；可释放 200mm 产能给 SiPho/SiGe |
+| Sensors/CIS/Display/MEMS | stacked BSI image sensor、CIS、non-imaging sensor、MEMS | wafer bonding 经验迁移到CPO；Q1 2026 `62M` | 直接 AI 收入有限；MEMS/传感可受液冷/AI factory 小幅拉动 | 中低 |
+
+### 3.4 明确跳过或降权的产品和业务
+
+以下业务不是本次 AI 数据中心投资主线，只在财务稳定性中考虑：
+
+- **普通 RF Mobile / 手机 RF-SOI**：收入不小，但主要跟手机/Android/移动终端周期相关；AI 数据中心直接拉动低。
+- **普通 CIS、Display、传统传感**：除 wafer bonding know-how 外，直接 AI 光互联收入小。
+- **Discrete 普通分立器件**：Q1 2026 收入占比降至 `10%`，增速弱，估值贡献应低。
+- **MS/CMOS/Misc. 老成熟节点**：收入小且下滑，不应拿 AI 估值。
+- **非 AI 工业/汽车普通电源**：可提供底盘，但不是高弹性部分。
+
+### 3.5 不应漏掉的小业务/小产品
+
+| 小业务/产品 | 为什么值得跟踪 | 证据 |
+|---|---|---|
+| SOH/EOP modulators on PH18M | 若 400G/lane 或 CPO 需要更低功耗调制器，SOH/EOP 可显著提高 Tower 平台吸引力 | NLM 2026-03 完成 Tower PH18M MPW 初始 processing，计划定义 PDK，称有 400G/lane roadmap |
+| Scintil SHIP DWDM laser source | CPO/NPO 需要高功率、可量产、低功耗 DWDM laser；若通过客户 qual，Tower 的 SiPho 平台内容量上移 | 2026-02 Scintil/Tower 宣布 DWDM laser source availability，并称客户 evaluations 路径从 qualification 到 volume |
+| PH18DA/heterogeneous InP integration | OCS、NPO、CPO、optical switch 需要放大器/激光/调制器异构集成 | OFC 2026 demos 和 partner 生态显示 Tower 平台不仅是传统 PIC |
+| 300mm SiPh 和 Fab7 full ownership | 若 200mm 光子产能成为瓶颈，300mm SiPh 是提高产能和 OSAT 兼容性的长期路径 | 2024 release 300mm SiPh；2026 日本 Fab7 重组拟 full ownership |
+| 65nm BCD / SW2001 POL | AI accelerator 12V-to-1V / 48V-to-board power 价值可能被低估 | Switch Semi SW2001 2026 sample / volume roadmap，Tower 65nm BCD |
+
+## 4. 当前关键产品/业务的收入贡献与 AI 重要性
+
+评分口径：5 为最高。供需紧张度越高代表越供不应求；垄断/溢价能力代表客户切换成本、PDK锁定、产能预约和良率壁垒。
+
+| 关键产品/业务 | 当前收入贡献估算 | 当前收入增速 | AI基建重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| SiPho PIC / 1.6T 光模块 foundry | Q1 2026 RF Infrastructure `157M`，其中 SiPho 是最大增量；2027 SiPho合同 `1.3B` | Q1 2026 RF Infrastructure约 `+100% YoY`；SiPho Q1 call 口径为约 `3x YoY` | 5 | 5 | 5 | 4 | 最核心资产。需求来自1.6T、AI optical、NPO/CPO；有预付款和客户锁产能 |
+| SiGe EIC / TIA / driver / high-speed analog | 与 SiPho共同构成 RF Infrastructure；当前未单独披露，估计 Q1 run-rate `50-100M`级 | 管理层称 SiGe Q1 `+24% YoY`，且 drivers/TIAs demand unprecedented | 4 | 4 | 4 | 4 | 与 SiPho 成对，CPO/NPO 和 active copper 会提高内容量 |
+| CPO/NPO / wafer bonding / DWDM laser integration | 当前主要为开发、qualification、客户 evaluation；收入估计 `<10-20M/季` | 基数小，高不确定 | 5 | 3 | 4 | 4 | 2026 是 design-in/qualification，2027-2028 才可能贡献大收入 |
+| Gen3 BCD / 65nm BCD / Smart Power Stage / DrMOS | Q1 2026 Power segment `70M`，AI-specific 估计 `5-15M/季` | Power segment Q1约 `+9% YoY`；AI PMIC/SPS 仍早期 | 4 | 4 | 3 | 3 | AI power wall 逻辑强，但 Tower 不是唯一供给；需看真实 design win |
+| 300mm capacity / Fab7 / 300mm SiPh | 不是单独收入项；支撑 2027后 SiPho/SiGe/Power 放量 | 2026-2027 扩产驱动 | 5 | 5 | 4 | 4 | 产能是收入瓶颈。Fab7 full ownership 若完成，可提高 300mm 控制力 |
+| SOH/EOP / 400G/lane modulator option | 当前几乎无材料性收入 | 期权型 | 3 | 2 | 2 | 3 | 不给当前估值主权重，但若 400G/lane 提前，可能增厚 PDK/平台价值 |
+
+## 5. 一年后关键产品/业务三情景预测
+
+时间窗口：从 2026-06-11 到 2027-06-11 的年化/滚动贡献估算。收入为 Tower wafer foundry / process service revenue，不是下游模块或电源芯片销售额。
+
+| 关键产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| SiPho PIC / 1.6T optical | 年化收入 `0.95-1.30B`；增速 `+60%-100%`；重要性5、紧急性5、供需5、溢价4 | 年化 `1.30-1.70B`；增速 `+100%-150%`；1.6T成为新增AI集群默认，客户提前拉货；供需5、溢价4-5 | 年化 `1.80-2.20B`；增速 `+160%+`；2028 commitment提前、NPO/XPO共同锁产能；供需5、溢价5 |
+| SiGe EIC / TIA / driver | 年化 `0.25-0.40B`；增速 `+25%-45%`；重要性4、紧急性4、供需4、溢价4 | 年化 `0.45-0.65B`；SiPho ratio上升、active copper/TIA/driver一起放量；供需4-5、溢价4 | 年化 `0.70-0.90B`；CPO/NPO带来更多EIC和3D stack，客户锁定；供需5、溢价5 |
+| CPO/NPO / DWDM / wafer bonding | 年化 `20-60M`；主要NRE、pilot和small volume；重要性5但紧急性3 | 年化 `80-180M`；NPO优先于CPO ramp，XPO/near-package demos转订单 | 年化 `250-400M`；一个或多个hyperscaler把NPO/CPO提前写入2027平台 |
+| Gen3 BCD / AI power | AI-specific 年化 `40-80M`；Power总业务稳定 `280-330M`；重要性4、紧急性4、供需3 | AI-specific `100-180M`；SPS/DrMOS/POL design wins进入量产，65nm/Gen3 BCD利用率提升 | AI-specific `200-300M`；Rubin/MI400/ASIC power delivery升级造成高端BCD紧张 |
+| 300mm SiPh/Fab7支撑能力 | 2026Q4装机与qualification完成，2027 full starts；产能支撑 `1.3B`合同 | Fab7 300mm qualification顺利，2027H1更多客户转入300mm | 300mm平台被客户视为主扩产路径，2027额外capacity reservation提前签约 |
+| SOH/EOP/400G lane | `0-20M`，以PDK/MPW为主 | `20-60M`，select customer evaluation和小批 | `80-150M`，400G/lane在高端AI optical提前进入design-in |
+
+## 6. BOM、单位内容量、价格传导链、产能与认证
+
+### 6.1 单位内容量口径
+
+Tower 是 foundry，不能把光模块 ASP 或服务器 BOM 全部算作 Tower 收入。下表为 **Tower可捕获晶圆代工内容量**，按行业公开 ASP、本地行业调研和 Tower 合同规模反推，置信度中等到低；用于判断数量级，不用于会计预测。
+
+| 场景 | SiPho PIC Tower内容量 | SiGe EIC/TIA/driver Tower内容量 | BCD/Power Tower内容量 | 备注 |
+|---|---:|---:|---:|---|
+| 每个 800G optical port/module | `25-60美元` | `5-25美元` | 不适用 | 取决于是否 SiPh PIC、模块架构、是否 Tower SiGe |
+| 每个 1.6T optical port/module | `50-120美元` | `10-50美元` | 不适用 | 2027 `1.3B` SiPho合同若对应约 `1000万-2500万`只高端模块，内容量落在该区间 |
+| 每个 CPO/NPO 1.6T-equivalent channel | `80-200美元` | `30-100美元` | 不适用 | PIC+EIC+wafer bonding/TSV可提高 foundry content |
+| 每个 6.4T/12.8T optical engine | `300-1200美元` | `100-600美元` | 不适用 | 高不确定，取决于是否包含DWDM laser、EIC stack、known-good-die |
+| 每颗 AI GPU/XPU（scale-out optical） | `50-400美元` | `10-150美元` | `1-10美元` | 假设每GPU对应约 `1-4` 个800G/1.6T光口等效，拓扑差异很大 |
+| 每个 72-GPU AI rack | `3,000-25,000美元` | `1,000-8,000美元` | `100-1,000美元` | 取决于rack外部光口、NPO/CPO、是否高功率PMIC使用Tower BCD |
+| 每 MW IT load | `15,000-150,000美元` | `5,000-50,000美元` | `1,000-10,000美元` | 约 4-6 个高密rack/MW，若scale-out光端口更多则上沿提高 |
+
+### 6.2 价格传导链
+
+```text
+AI CapEx / GPU&ASIC 集群放量
+  -> 交换机/NIC/光模块/OCS/CPO 订单
+  -> 光模块厂和光引擎厂锁定 SiPho PIC、SiGe EIC、laser、TIA/driver 产能
+  -> Tower 签 LTA / capacity reservation / prepayment
+  -> Tower 扩设备、转产能、完成 qualification
+  -> wafer starts 增加 + 高价值 mix 提升
+  -> 毛利率从 2025 的 23%左右向管理层 built-out 39% 模型靠拢
+```
+
+Power/BCD 传导链：
+
+```text
+GPU/XPU TDP 和 rack 功率提升
+  -> 48V/12V/1.xV power delivery、vertical/lateral power delivery、DrMOS/SPS/POL 需求上升
+  -> PMIC/SPS fabless/IDM 需要更低 R_on、更高效率、更小 die size
+  -> Tower 65nm BCD / Gen3 LDMOS design-in
+  -> 客户板级 qualification、可靠性、EMI/thermal validation
+  -> 2026 late / 2027 放量，毛利取决于是否成为客户主平台或二供
+```
+
+### 6.3 当前产能能力、采纳程度和认证阶段
+
+| 产品/平台 | 当前产能能力（美元计） | 采纳程度 | 认证/阶段 |
+|---|---:|---|---|
+| SiPho 200mm PH18/PH18M | Q4 2025 SiPho wafer shipment run-rate 已作为扩产基准；目标 2026Q4 starts capacity > `5x` Q4 2025 monthly shipment run-rate | 高，2027 `1.3B`合同 + `290M`预付款；>50 active SiPho customers；NVIDIA 1.6T ecosystem | 已高量产，1.6T/200G/lane ramp；新客户持续qualification |
+| 300mm SiPh / Fab7 | 2026-2027 建设和转移期；单独收入未披露 | 中高，作为 2027后扩张主路径 | 300mm SiPh offering已发布；Fab7 full ownership预计 2027-04-01 close，仍需监管和交易完成 |
+| SiGe EIC | 与SiPho扩产共同推进，含Fab2/Fab3/Fab9/Fab7多地生产 | 高，光模块driver/TIA和active copper需求同步增长 | 已量产；CPO/3D stack 需要进一步联合qualification |
+| CPO/NPO wafer bonding | 当前收入小，产能能力未披露；由成熟300mm wafer bonding经验迁移 | 早期，高端客户/partner demos | 已展示 precision alignment/reliability，Cadence design flow可用；客户仍在design-in/evaluation |
+| Scintil DWDM laser / integrated laser | 当前主要 customer evaluation；产能待验证 | 早期但战略价值高 | SHIP已在Tower SiPho平台验证；从qualification到volume路径已定义 |
+| NLM SOH/EOP on PH18M | 当前MPW/PDK阶段 | 早期 | 2026-03 完成初始processing，计划定义PDK；400G/lane仍为路线图 |
+| Gen3 BCD / 65nm BCD | Power segment Q1 2026 `70M`季度收入，其中AI-specific小 | 中，Switch Semi SW2001已采样路径 | SW2001 Q1 2026 sampling、2026 later volume；Gen3 LDMOS在APEC 2026发布，需客户design win |
+
+## 7. 一年后产能能力、采纳和认证三情景
+
+| 平台 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| SiPho 200mm/300mm | 2026Q4装机/qualification完成；2027H1支撑 `1.3B`全年合同run-rate；多厂良率稳定 | 2027H1新增capacity reservation；Fab7 300mm转移顺利，客户二代1.6T/3.2T导入 | 2027H1 2028 commitment提前转化为更高 starts；客户排队，Tower 对价格和预付款条件更强 |
+| SiGe EIC | 与 SiPho同步扩产，TIA/driver需求提升；收入按 `0.25-0.40B`年化 | NPO/XPO/active copper增加EIC attach；SiGe收入 `0.45-0.65B`年化 | CPO/3D stack设计胜出，SiGe+SiPho组合成为客户平台默认 |
+| CPO/NPO/wafer bonding | 完成更多客户qualification，小批收入 | NPO先行，CPO客户pilot进入生产资格 | 一个头部客户在2027平台大规模采用，Tower 3D-IC成为关键瓶颈 |
+| DWDM laser / SOH/EOP | 继续客户evaluation，PDK可用但收入小 | 1.6T/3.2T select customers 小批导入 | 400G/lane或CPO低功耗需求提前，SOH/DWDM成为平台差异化 |
+| Gen3 BCD / AI power | 多个客户板级验证，AI-specific年化 `40-80M` | SPS/DrMOS/POL 量产，AI-specific `100-180M` | AI rack power wall加剧，高端BCD紧张，AI-specific `200-300M` |
+
+## 8. 未来一年业务增速：基于真实订单、供给和扩产的推断
+
+### 8.1 全公司收入情景
+
+| 情景 | 未来12个月收入 | 同比/年化增速 | 关键假设 |
+|---|---:|---:|---|
+| 基准 | `20-23亿美元` | 相对2025 `+28%-47%` | Q2 2026 `455M`兑现，2026后续 sequential growth；SiPho扩产如期，2027合同开始转收入 |
+| 乐观 | `23-27亿美元` | `+47%-72%` | 1.6T demand强于预期，SiPho/SiGe良率好，300mm转移顺利，Power/BCD开始放量 |
+| 极度乐观 | `27-31亿美元` | `+72%-98%` | 2028 SiPho commitment部分提前，NPO/CPO/3.2T导入，客户继续预付款锁产能 |
+
+### 8.2 按关键业务增速推断
+
+| 业务 | 当前真实订单/供给锚 | 基准 | 乐观 | 极度乐观 |
+|---|---|---:|---:|---:|
+| SiPho | 2027 `1.3B`合同、`290M`预付款、>70% 2028前 capacity reserved/in-process、2026Q4 capacity > Q4 2025 `5x` | `+60%-100%` | `+100%-150%` | `+160%+` |
+| SiGe optical/EIC | 与 SiPho共同扩产；CPO/NPO需要EIC；管理层称需求 unprecedented | `+25%-45%` | `+50%-80%` | `+90%-130%` |
+| BCD/Power AI-specific | Gen3 LDMOS、Switch Semi SW2001；暂无大额披露合同 | `+20%-50%` | `+80%-150%` | `+200%+`，但从小基数 |
+| RF Mobile | 手机周期、300mm迁移和Ron-Coff改进 | `0%-10%` | `+10%-20%` | `+25%`，不作为AI核心 |
+| Sensors/Displays | 稳定，CIS/stacking经验间接支撑CPO | `0%-8%` | `+10%-15%` | `+20%` |
+| Discrete/Misc | 低增长/下滑 | `-10%-0%` | `0%-5%` | `+10%` |
+
+取消/延迟风险：如果 1.6T 客户库存、交换 ASIC/GPU交付、电力/液冷建设、CPO/NPO qualification 或 Tower 良率延迟，SiPho合同仍可能推迟收入确认；如果 Tower 不能按 minimum capacity commitments交付，预付款相关义务会反向变成风险。
+
+## 9. 竞争格局、主流路线、替代风险与客户切换成本
+
+### 9.1 主要竞争对手
+
+| 领域 | 竞争者 | Tower 相对优势 | Tower 风险 |
+|---|---|---|---|
+| SiPho foundry / PIC | GlobalFoundries/AMF、TSMC COUPE、Intel、UMC/HyperLight/Wavetek、OpenLight ecosystem、AIM/imec、Broadcom/Marvell内部生态 | 200mm PH18高量产、开放平台、300mm路径、多厂生产、客户预付款和合同已验证 | GF/TSMC有300mm/先进封装资源；客户可能双供；CPO若更靠近先进封装，TSMC优势上升 |
+| SiGe/TIA/driver foundry | GF、IHP/欧洲SiGe、TSMC/UMC、IDM/内部工艺 | 与SiPho同一客户群、EIC+PIC组合、美国/以色列/日本多地 | 高端DSP/TIA设计权在Broadcom/Marvell/Coherent/Lumentum等客户手中，Tower只是制造层 |
+| BCD/Power foundry | TSMC、UMC、VIS、DB HiTek、X-FAB、Hua Hong、SMIC、Samsung、IDM captive fabs | 65nm 300mm BCD、Gen3 LDMOS、AI power wall叙事、长期模拟客户 | BCD市场竞争更分散，客户二供多；AI-specific订单尚未像SiPho一样硬 |
+| RF-SOI/RF Mobile | GF、Soitec生态、TSMC/UMC/Samsung、SkyWater等 | 300mm RFSOI迁移和低layer count | 手机周期强，价格竞争，AI弱相关 |
+| CPO/NPO/3D integration | TSMC 3DFabric/COUPE、GF SCALE、Intel photonics、Broadcom/Coherent/Cisco/Marvell生态、ASE/Amkor/OSAT | 成熟wafer bonding经验、SiPho+SiGe双平台、Cadence flow | CPO责任边界、现场维护和客户平台选择未定；若CPO由交换ASIC厂主导，Tower捕获可能低于预期 |
+
+### 9.2 Tower 的新技术是否是主流
+
+| 技术 | 是否主流 | 判断 |
+|---|---|---|
+| 1.6T SiPho PIC | 是，2026-2027主流化 | 本地行业调研和外部OFC/TrendForce/Dell'Oro线索都指向1.6T成为高端AI新增端口核心；Tower已有合同和NVIDIA合作，是最确定主线 |
+| 200mm PH18/PH18M open SiPho | 是，当前量产主力之一 | 成熟量产和客户基数是优势；长期需向300mm迁移以应对成本/产能 |
+| 300mm SiPh | 是，长期主流方向 | 300mm兼容OSAT和大规模生产，但客户转移/qualification需要时间 |
+| SiPho + SiGe wafer bonding for CPO/NPO | 大概率是未来主流之一，但2026仍早 | CPO/NPO、near-package optics需要PIC+EIC紧密集成；问题在标准、维护、ELS和客户接受度 |
+| Gen3 BCD / AI power | 是AI power delivery的合理路径之一 | 高效PMIC/SPS/DrMOS是AI rack必需，但Tower不是唯一供应者 |
+| SOH/EOP/400G/lane | 期权，不是2026主流 | 如果400G/lane提前，它可能成为重要路线；目前仍在PDK/客户评估阶段 |
+
+### 9.3 替代方案和风险
+
+1. **EML/InP/传统光模块路线替代 SiPho：** 高端1.6T会长期多路线共存。若InP/EML供应改善且SiPh良率/封装不如预期，Tower内容量会受压。
+2. **GF/TSMC/Intel/UMC双供：** 大客户会避免单一foundry；Tower当前合同强，但2028以后客户可能用GF AMF、TSMC COUPE、UMC TFLN/SiPh分散风险。
+3. **CPO延迟反而利好pluggable但降低3D集成溢价：** 如果客户继续使用OSFP/XPO/LPO，可插拔SiPho仍有收入，但CPO/wafer bonding增量延后。
+4. **高端DSP/laser价值被客户内部化：** Broadcom、Marvell、Coherent、Lumentum等控制DSP/laser/PIC设计，Tower只能捕获wafer服务；若客户自建或转移foundry，Tower议价受限。
+5. **AI电源BCD被IDM和亚洲foundry分流：** MPS、Infineon、TI、Renesas、onsemi、AOS、Navitas等可使用自有或其他foundry；Tower需用性能/良率/300mm能力赢单。
+6. **以色列地缘和Fab3租赁争议：** SEC风险披露指出以色列运营、Fab3 lease、Intel mediation、GF专利诉讼等都可能影响供给和成本。
+7. **估值风险：** 当前 `119.6x` TTM P/E 和 `17.8x` P/S 要求2027合同兑现、2028更高commitment兑现、毛利率显著上行；任何延迟都会放大股价波动。
+
+### 9.4 客户替换成本
+
+客户切换成本总体 **高**，尤其在 SiPho/SiGe：
+
+- **PDK 和器件模型锁定：** 光子器件、waveguide、coupler、modulator、Ge PD、SiGe器件模型都与PDK深度绑定，换foundry需重做版图、仿真、mask和验证。
+- **光电封装和测试绑定：** SiPho不是普通CMOS，fiber attach、known-good-die、wafer-level optical test、burn-in、temperature drift都要重新验证。
+- **系统资格周期长：** 1.6T/NPO/CPO进入hyperscaler和NVIDIA/Arista/Broadcom生态后，替换foundry可能影响整机平台上市时间。
+- **预付款和capacity reservation增加粘性：** `290M`预付款和2027/2028 contract commitment显著提高客户退出成本。
+- **但客户不会放弃二供：** 高速光互联是AI基建硬瓶颈，客户一定会推动GF/TSMC/UMC/Intel/内部路线作为第二来源，Tower不能按完全垄断估值。
+
+## 10. 投资跟踪清单
+
+| 频率 | 跟踪项 | 强化乐观 | 证伪/下修 |
+|---|---|---|---|
+| 季度 | RF Infrastructure收入占比和金额 | Q2-Q4 2026连续上升，2026H2单季超过 `180-220M` | 占比回落或增长低于公司sequential growth承诺 |
+| 季度 | SiPho客户预付款和deferred/customer advances | 新增预付款，2028 commitment额外预付款按期到位 | 预付款减少、延期、或客户未追加 |
+| 季度 | Gross margin | 从Q1 `26.8%`向 `30%+`推进 | CapEx折旧上升但毛利率不升 |
+| 事件 | 2026Q4 SiPho/SiGe CapEx installation/qualification | 公司确认全量完成，2027 full starts | 设备、良率、客户qualification延迟 |
+| 事件 | Fab7 full ownership / 300mm SiPh | 2027-04-01按计划close，300mm客户转入 | 监管/交易/客户迁移延迟 |
+| 事件 | NVIDIA/Coherent/Scintil/NLM/OpenLight等生态 | 真实量产、客户订单、qualification进展 | 仍停留在demo/PR |
+| 季度 | Power/BCD AI design win | Gen3 BCD客户量产、Power segment增速明显高于公司均值 | 只看到发布会，没有量产收入 |
+| 季度 | 1.6T/光模块产业ASP和库存 | 1.6T ASP坚挺、EML/CW/SiPh供给紧 | 光模块库存上升、ASP连续下跌、客户延迟拉货 |
+
+## 11. 资料来源和证据等级
+
+### 11.1 公司和监管资料
+
+| 来源 | 日期 | 用途 | 链接 |
+|---|---:|---|---|
+| Tower Q1 2026 financial results press release and tables | 2026-05-13 | Q1收入、利润、预付款、Q2指引、资产负债表、风险披露 | https://towersemi.com/2026/05/13/05132026/ |
+| Tower Q1 2026 supporting slides | 2026-05-13 | Q1 2026技术收入占比、长期模型、资产负债表 | https://towersemi.com/wp-content/uploads/2026/05/TSEM_Q12026_IRCALL_SLIDES_FF.pdf |
+| Tower SiPho 2027 contracts press release | 2026-05-13 | `13亿美元` 2027 SiPho合同、`2.90亿美元`预付款、2028更高commitment | https://towersemi.com/2026/05/13/05132026_1/ |
+| Tower Q4/FY2025 financial results | 2026-02-11 | Q4收入利润、FY2025收入利润、`9.20亿美元`SiPho/SiGe CapEx、>5x capacity目标 | https://towersemi.com/2026/02/11/02112026/ |
+| Tower Q4/FY2025 supporting slides | 2026-02-11 | FY2025和Q4 2025技术收入占比、长期模型、资产负债表 | https://ir.towersemi.com/static-files/efd72ce5-fcad-44b6-a3eb-b723fa57165b |
+| Tower Q3 2025 results and slides | 2025-11-10 | Q3收入、利润、技术收入占比、`3亿美元`追加投资 | https://towersemi.com/2025/11/10/11102025/ |
+| Tower Q2 2025 results and slides | 2025-08-04 | Q2收入、利润、RF infrastructure增长和技术收入占比 | https://ir.towersemi.com/news-releases/news-release-details/tower-semiconductor-reports-2025-second-quarter-financial |
+| Tower 2025 annual report / SEC Form 20-F | 2026 filing | fab结构、Fab1停产、Fab7/Fab5重组、Fab10、风险和CapEx | https://www.sec.gov/Archives/edgar/data/928876/000117891326002318/zk2635149.htm |
+| Tower Gen3 BCD APEC 2026 release | 2026-03-17 | Gen3 LDMOS、AI power wall、SPS/DrMOS TAM | https://towersemi.com/2026/03/17/03172026/ |
+| Tower NVIDIA 1.6T optical modules release | 2026-02-05 | 1.6T data center optical modules、NVIDIA networking protocols | https://towersemi.com/2026/02/05/02052026/ |
+| Tower 300mm SiPh release | 2024-11-26 | 300mm SiPh standard foundry offering、200mm PH18 high volume | https://ir.towerjazz.com/news-releases/news-release-details/tower-semiconductor-releases-300mm-silicon-photonics-process |
+| Tower CPO foundry technology release | 2025-11-12 | SiPho+SiGe wafer bonding、3D-IC、Cadence flow | https://towersemi.com/2025/11/12/11122025/ |
+| Tower/Scintil DWDM laser release | 2026-02-17 | DWDM laser source、CPO customer evaluation、SHIP validated on Tower platform | https://www.scintil-photonics.com/post/tower-semiconductor-and-scintil-photonics-announce-availability-of-world-s-first-heterogeneously-int |
+| NLM/Tower PH18M SOH modulator validation | 2026-03-16 | SOH/OEO material on Tower PH18M、PDK路径、400G/lane roadmap | https://www.nlmphotonics.com/2026/03/16/nlm-validates-silicon-organic-hybrid-modulator-technology-with-tower-semiconductors-high-volume-ph18m-platform/ |
+| Tower events / OFC 2026 | 2026-03 | OFC demos、Tower PDK integrations、DustPhotonics 1.6T/800G demos、panel participation | https://towersemi.com/news-events/events/ |
+| Intel-Tower acquisition termination | 2023-08-16 | `3.53亿美元`终止费、三年重大变化 | https://ir.towerjazz.com/news-releases/news-release-details/tower-announces-termination-intel-acquisition-agreement/ |
+| Tower/NTCJ Japan 300mm restructuring | 2026-03-25 | Fab7 full ownership、Fab5转给NTCJ、2027 close | https://towersemi.com/2026/03/25/03252026_300mm/ |
+
+### 11.2 市场和行业资料
+
+| 来源 | 日期 | 用途 | 链接 |
+|---|---:|---|---|
+| StockAnalysis TSEM statistics | 2026-06-11 | 股价、market cap、P/E、forward P/E、P/S、current ratio等 | https://stockanalysis.com/stocks/tsem/statistics/ |
+| 本地行业调研：特种晶圆代工 | 2026-06-11 | SiPho/BCD/SiGe在AI特色代工中的价值排序、市场规模和竞争格局 | `行业调研/晶圆制造_设备_材料_测试/行业调研_特种晶圆代工_2026-06-11.md` |
+| 本地行业调研：硅光材料、光子材料与电光聚合物 | 2026-06-11 | 1.6T、CPO、ELS、EOP/SOH、光互联材料路线 | `行业调研/晶圆制造_设备_材料_测试/行业调研_硅光材料、光子材料与电光聚合物_2026-06-11.md` |
+| 本地行业调研：800G/1.6T可插拔光模块 | 2026-06-11 | 800G/1.6T市场、BOM、光模块ASP、1.6T design-in路径 | `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md` |
+| 本地行业调研：光DSP、TIA与CDR芯片 | 2026-06-11 | TIA/driver/DSP/linear optics/CPO芯片利润池 | `行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md` |
+| 本地产业背景：AI产业链全局图谱、AI数据中心建设规模、头部AI芯片、OFC 2026会议资料 | 2026-06-10/11 | AI rack、1.6T/CPO、Rubin/MI400/TPU/Trainium等需求背景 | `行业调研/产业背景/` |
+
+### 11.3 证据等级
+
+- A级：Tower财报、SEC、公司PPT、已签合同、预付款、资产负债表。
+- B级：公司/partner技术发布、OFC/APEC会议、客户生态公开合作。
+- C级：行业研究公开摘要、本地行业调研的市场规模和BOM推演。
+- D级：渠道/论坛/小道消息。本文未把未证实社媒传言作为核心结论；只把NLM/Scintil/OFC等可验证技术线索列为期权。
+
+## 12. 最终判断
+
+Tower Semiconductor 的正确投资框架是：**AI 光互联特色代工龙头 + BCD power第二曲线 + CPO/300mm/新型调制材料期权**。
+
+最强事实是 2027 年 `13 亿美元` SiPho 合同和 `2.90 亿美元`预付款；这使 Tower 不再只是“AI 光互联主题股”，而是有明确产能预约和收入锚的上游供给方。最强变量是毛利率：若 `9.20 亿美元`SiPho/SiGe CapEx在2026Q4按期qualification，2027年高利用率启动，Tower 有机会从 2025 年 `23%`左右毛利率向长期模型 `39%`靠近，净利弹性很大。
+
+但当前市值已经大幅透支传统 foundry 估值。若用 2025 收入 `15.66 亿美元`、TTM收入约 `16.22 亿美元`看，`291亿美元`市值和 `17.8x` P/S要求公司在2027-2028把 SiPho/SiGe 做成接近“稀缺AI基础设施产能”的利润池。投资上应把 `1.3B SiPho合同兑现率、Q2-Q4 2026 sequential growth、毛利率上升、2028预付款、Fab7/300mm进度、1.6T/CPO产业节奏`作为核心复核项；如果这些项连续兑现，Tower 可能继续享受高估值；如果任何关键项延迟，当前估值下的下修空间同样很大。

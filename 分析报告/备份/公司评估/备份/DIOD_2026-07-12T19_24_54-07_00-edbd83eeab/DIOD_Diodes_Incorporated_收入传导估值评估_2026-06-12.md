@@ -1,0 +1,152 @@
+# 公司收入传导与价值传导评估：Diodes Incorporated（DIOD）
+
+报告日期：2026-06-12  
+NTM 主窗口：2026Q2-2027Q1  
+正式输出目录：`分析报告/公司评估/`  
+资料边界：本报告使用 `公司调研/` 与 `行业调研/` 的正式上游资料，并用 Diodes Incorporated 官方财报公告、SEC 文件、IR 演示、业绩会转录稿和产品公告校验最新经营锚点；未读取、引用或继承 `特征量化/`、Signals、回归、评分、排序或市场估值结论。  
+口径限制：本报告只评估需求、收入确认、利润和经营质量传导，不给投资评级，不判断目标价，不使用股价或估值倍数作为经营证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM（2026Q2-2027Q1）经营收入、毛利、经营利润、EBITDA、净利润和自由现金流。FY2026、FY2027、公司 2028 中期目标和 800VDC/PCIe Gen7 远期机会只作为补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：DIOD 2025 年收入 14.821 亿美元，2026Q1 收入 4.055 亿美元，同比 +22.1%、环比 +3.5%；2026Q2 管理层指引收入 4.35 亿美元上下 3%，中位数同比 +18.8%、环比 +7.3%，GAAP 毛利率 32.8% 上下 1pct，non-GAAP EPS 0.60 美元上下 0.10。Q1 年化收入约 16.22 亿美元，Q2 指引年化约 17.40 亿美元，2025Q2-2026Q1 TTM 约 15.56 亿美元。
+- 重要产品/业务线：Power / Discrete / Protection，Analog / Power Management / Sensors / Isolation，Mixed-signal / Connectivity / Timing；AI data-center socket 是横跨三大产品族的非加总观察项，包含 AI server power/protection、PCIe timing、redriver/mux、data-center networking/optical support。
+- NTM 公司收入四情景：悲观 15.8-17.0 亿美元；基准 18.0-19.5 亿美元；乐观 20.5-22.0 亿美元；极度乐观 23.0-25.0 亿美元。
+- 利润或 EBITDA 四情景：悲观 EBITDA 1.6-2.1 亿美元、净利润 0.45-0.75 亿美元；基准 EBITDA 2.4-3.1 亿美元、净利润 1.0-1.5 亿美元；乐观 EBITDA 3.4-4.3 亿美元、净利润 1.6-2.3 亿美元；极度乐观 EBITDA 4.8-6.0 亿美元、净利润 2.5-3.5 亿美元。
+- 最大传导瓶颈：公司不披露 backlog、bookings、book-to-bill、客户级订单或 AI data-center revenue；因此 AI 需求只能通过 Q2 指引、POS、渠道库存、终端 mix 和产品设计赢线索校准，不能直接按 AI 基础设施 TAM 外推。
+- 最大利润率变量：汽车/工业占比、AI power/protection 和 timing mix、产能利用率、价格稳定性、库存周转和封测/晶圆厂 loading。Q1 毛利率 31.8%，距离 2028 目标 35%+ 仍需 mix 与利用率共同改善。
+- 最大现金流变量：库存金额和库存天数。Q1 总库存约 4.928 亿美元，库存天数 157 天，较 2025Q4 的 161 天和 2025Q1 的 187 天下降；若收入增长伴随 raw material 继续上升而 finished goods 不降，FCF 弹性会被压缩。
+- 可信度：公司总收入基准为中高，因 Q1 已实现和 Q2 指引强；产品级 AI socket 贡献为中，因管理层点名多个 AI/server/data-center 应用但未量化；极度乐观为低，因需要需求、份额、价格、产能和客户认证同时突破。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Power / Discrete / Protection | 2026Q1 约 1.6-1.7 亿美元产品族 proxy；FY2025 约 41% 产品收入 | 约 41% | 最大收入基座；覆盖 SBR、Schottky、bridge rectifier、TVS/ESD、MOSFET、BJT、SiC diode/MOSFET、保护器件 | A：公司产品族/收入表与终端收入可见；C：AI 细分 socket 需估算 | 进入基准。基准按已披露收入和当前指引推演，不把 AI rack TAM 直接计入 | 800VDC/HV sidecar、1MW rack 高压保护、更多 SiC/GaN 认证作为乐观/极度乐观或附录跟踪 |
+| Analog / Power Management / Sensors / Isolation | 2026Q1 约 1.1-1.2 亿美元产品族 proxy；FY2025 约 29% 产品收入 | 约 29% | 支撑汽车、工业、AI PSU、SSD、server board、optical/networking 的 LDO、buck、ideal diode controller、load switch、isolation、Hall sensor、voltage reference | A：收入表和产品组合可见；B/C：AI PSU、thermal fan、server/SSD 等 design-win 线索 | 进入基准。汽车/工业与部分 AI power 管理需求按当前恢复路径纳入 | 800VDC 隔离、solid-state protection、更多 power telemetry 属于乐观以上 |
+| Mixed-signal / Connectivity / Timing | 2026Q1 约 1.2 亿美元产品族 proxy；FY2025 约 30% 产品收入 | 约 30% | AI data-center 相关性最高；包含 PCIe clock/buffer、crystal oscillator、redriver、mux/switch、packet switch、USB/eUSB、connectivity | A：产品族收入可见；C：PCIe Gen7 timing 和 AI platform adoption 需客户认证 | 进入基准。仅把现有 Gen5/Gen6/通信/计算恢复和可见设计导入保守纳入 | PCIe 7 clock 在多个 AI server/NIC/switch 平台成为主供或强二供，属乐观/极度乐观 |
+| AI data-center socket overlay（非加总） | 2026Q1 模型估计约 4,000-6,500 万美元，约 10-16% 公司收入，已包含在前三项中 | 非加总 | 未来 12 个月最关键增量观察项，横跨 AI server power/protection、PCIe timing、redriver/mux、networking/optical support | B/C：管理层点名 AI server、data center、networking、optical、power supply 机会；未披露收入 | 不作为独立加总行；在前三大产品族内折扣纳入基准 | 若公司开始量化 AI/data-center revenue、公开客户或订单，才可上移 |
+| Fortemedia / voice / HMI / audio software | 收购资产小，无法从公司披露中可靠拆分 | 无法可靠量化 | 对汽车与 compute HMI 有补强，但不是数据中心 AI 主线 | A：收购事实；D：NTM 收入和客户缺少量化 | 仅作为 mixed-signal 附属项；不单独进入 AI 基准 | 汽车座舱和边缘语音处理，列为低优先级跟踪 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不评估 DIOD 份额、收入确认或利润率。由于 broad-line analog/discrete 的外部 TAM 与公司产品线不一一对应，统一用 `NTM 需求指数` 表示，100 = 当前需求锚，即 2026Q1 已实现收入、2026Q2 指引、管理层对 POS/渠道库存/终端恢复的表述，以及本地行业报告对 AI power、PCIe/CXL、timing 的 2026-2027 需求判断。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Power / Discrete / Protection | Q1 收入 proxy 约 1.6-1.7 亿美元；汽车+工业 44% 产品收入；AI rack 2026 主线为 48/54V、PSU、BBU、hot-swap、TVS/ESD、rectifier | 85-95 | 100-112 | 118-138 | 145-180 | 指数 -15 至 +80；AI power/protection 外部需求可从正常放量到供不应求 | 悲观低于当前恢复路径；基准符合 Q2 指引；乐观需 AI rack power 和工业恢复同步强；极度乐观需 48V/800V 认证与供给紧张同时发生 | 本地功率半导体行业报告认为 2026 最确定是 48/54V、PSU、保护和近负载电源，不是 800VDC 全面替代；反证是通用 MOSFET/SiC 仍可能受 EV/工业价格压力拖累 |
+| Analog / Power Management / Sensors / Isolation | Q1 收入 proxy 约 1.1-1.2 亿美元；汽车、工业、AI PSU、fan thermal、SSD/server power、voltage reference 与 LDO 需求 | 88-96 | 100-110 | 114-130 | 135-160 | 指数 -12 至 +60；需求以恢复和 mix 改善为主 | 悲观为汽车/工业补库不足；基准为当前恢复延续；乐观为工业 AI infrastructure + auto design wins 同步；极度乐观需 800V/isolation 和高压保护提前放量 | Q1 管理层称汽车同比 +32% 以上、工业同比 +31% 左右；反证是客户认证周期、欧洲工业恢复不持续、价格稳定但未上行 |
+| Mixed-signal / Connectivity / Timing | Q1 收入 proxy 约 1.2 亿美元；computing 26%、communications 13%；AI server/data-center、PCIe Gen6/7、SmartNIC、optical networking | 82-95 | 100-115 | 125-155 | 165-220 | 指数 -18 至 +120；弹性最大但收入确认最不透明 | 悲观为 PC/consumer softness 抵消 AI；基准为 Gen5/6 与 data-center networking 正常增长；乐观需 PCIe 7/800G/1.6T 设计导入强；极度乐观需多个 AI platform AVL | Diodes 2026-05 发布 PCIe 7.0 clock generator，sub-30fs RMS jitter，低于 PCIe 7.0 67fs 最大要求；反证是高端 retimer/switch 价值主要由 Astera、Marvell、Microchip、Broadcom 等捕获 |
+| AI data-center socket overlay（非加总） | Q1 模型估计 4,000-6,500 万美元；管理层点名 AI server、data center、networking、optical、power supply、800V 机会 | 75-95 | 100-140 | 160-230 | 280-380 | 指数 -25 至 +280；对应 AI-adjacent 年收入从约 2 亿美元以下到 7-8.5 亿美元上限 | 悲观为 AI socket 只是普通周期恢复；基准为可见 socket 扩张；乐观为多产品进入 AI 平台；极度乐观需平台胜率、价格、供给和认证同时突破 | 公司没有量化 AI revenue，不能把外部 AI capex、rack 数或 hyperscaler 预算直接变成 DIOD 收入 |
+| Fortemedia / voice / HMI | 汽车和 compute HMI 小型补强；收入不单独披露 | 80-95 | 95-110 | 115-135 | 140-170 | 无法可靠量化 | 不影响公司 NTM 主情景 | 收购增强 HMI/software 能力，但与 AI data-center 主线无直接收入锚 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断需求能否进入 DIOD NTM 收入表，以及当前可收入化基数。A/B 级证据可进入基准；C 级 design win、客户认证、产能规划通常只折扣纳入；D/E 级产品发布、样品、主题映射不进入 NTM 基准。所有产品收入基数均以公司披露收入、终端 mix、Q2 指引和正式产品/业绩会信息校准；AI data-center 细分数字为模型估算，不是公司披露。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Power / Discrete / Protection | FY2025 约 41% 产品收入；2026Q1 按 mix 推算约 1.6-1.7 亿美元；Q2 指引支持环比增长 | 直接 | 标准分立毛利中等；高可靠保护、车规/工业和 AI power mix 高于通用件 | 6.1-6.8 亿美元 | 7.2-7.9 亿美元 | 8.2-9.3 亿美元 | 9.3-10.5 亿美元 | 基准符合 Q2 指引延续；乐观高于当前 run-rate | A/B；AI 子项 C | 是 | 收入表、产品组合、管理层点名 AI server/PSU/BBU/protection；行业资料支持 48V/保护需求 | 基准主口径纳入；800VDC 和主供替代只进乐观以上 |
+| Analog / Power Management / Sensors / Isolation | FY2025 约 29% 产品收入；2026Q1 proxy 约 1.1-1.2 亿美元 | 直接 | 毛利通常高于通用分立；费用和研发支持较重 | 4.3-4.9 亿美元 | 5.0-5.6 亿美元 | 5.8-6.6 亿美元 | 6.5-7.6 亿美元 | 基准略高于 Q1 年化，符合恢复；乐观需工业/汽车和 AI power 管理同步 | A/B；AI 子项 C | 是 | 终端收入、汽车/工业同比增长、AI PSU/fan/SSD/server power 设计线索 | 基准纳入；高压 isolation 和 800V 机会折扣处理 |
+| Mixed-signal / Connectivity / Timing | FY2025 约 30% 产品收入；2026Q1 proxy 约 1.2 亿美元；computing+communications 合计 39% 产品收入 | 直接 | timing/connectivity 若进入平台毛利可高，但 redriver/mux 竞争强 | 4.6-5.2 亿美元 | 5.5-6.1 亿美元 | 6.4-7.2 亿美元 | 7.2-8.5 亿美元 | 基准符合 AI server/networking 恢复；乐观高于当前已披露路径 | A/C | 是 | Q1 computing 同比 >21%、communications 同比 >17%；PCIe 6/7 mux buffers 和 ultra-low jitter timing 被点名 | 基准纳入现有出货和保守 design-in；PCIe 7 多平台量产只进乐观以上 |
+| AI data-center socket overlay（非加总） | Q1 模型估计约 4,000-6,500 万美元；含 AI power/protection、PCIe timing、redriver、networking/optical support | 直接+间接 | 高质量在 timing/高可靠保护；低质量在通用 pass-through 器件 | 1.8-2.5 亿美元 | 2.5-3.6 亿美元 | 4.2-6.0 亿美元 | 7.0-8.5 亿美元 | 基准为当前预期可见 AI-adjacent；乐观以上明显高于当前预期 | B/C | 部分进入基准；不得重复加总 | 业绩会点名、产品公告、行业 BOM 映射；无公司披露收入 | 作为三大产品族内的 mix 校准项；非独立加总项 |
+| 800VDC / HV sidecar / next-gen SiC-isolation | 管理层称 800V power system/PSU/BBU/isolation 有机会；未披露收入 | 直接潜在 | 若通过认证，毛利和粘性较好；2026 更多为 design-in | 0 | 0-0.2 亿美元 | 0.3-0.8 亿美元 | 1.0-2.0 亿美元 | 基准不应上修；只是 NTM 小额或上限 | C/D | 通常不进入基准 | 需要客户、时间表、交付和认证；当前主要为机会描述 | 基准只留极小折扣；主体移入乐观、极度乐观或附录跟踪 |
+| Fortemedia / voice / HMI | 收购事实可见；收入不单独披露 | 间接 | 软件/voice mix 可能较好，但规模小 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 对 NTM 公司收入影响小 | A/D | 不单独进入 AI 基准 | 非数据中心主线，缺少量化收入锚 | 仅作为 mixed-signal 附属项 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，评估产品在 NTM 内能给 DIOD 贡献多少收入和利润。利润贡献以毛利润为主，因公司不披露产品级经营费用；经营利润只在公司层面汇总。AI data-center overlay 和 Automotive/Industrial overlay 是 mix 校准项，已包含在三大产品族中，不与前三项重复相加。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Power / Discrete / Protection | 悲观产品 | 6.1-6.8 亿美元 | 毛利约 1.8-2.2 亿美元 | 毛利率 29-32%，低于目标 | 低于当前预期 | 若汽车/工业恢复放缓、通用 MOSFET/SiC 价格承压，AI 保护件不足以抵消 | 保留为悲观 | 通用品价格和库存去化慢；AI power socket 未量化 |
+| Power / Discrete / Protection | 基准产品 | 7.2-7.9 亿美元 | 毛利约 2.3-2.7 亿美元 | 毛利率 32-34%，随利用率改善 | 符合 Q2 指引延续 | Q1/Q2 收入恢复、汽车/工业 44%、AI PSU/BBU/protection 被点名 | 保留为基准 | 仍缺 backlog 和客户级订单 |
+| Power / Discrete / Protection | 乐观产品 | 8.2-9.3 亿美元 | 毛利约 2.85-3.35 亿美元 | mix 上行，毛利率 34-36% | 高于当前预期 | 48V/54V rack power、PSU、hot-swap、TVS/ESD、rectifier 同步强 | 保留为乐观 | 高端 power module/控制器价值被 TI/MPS/Infineon/onsemi 等捕获 |
+| Power / Discrete / Protection | 极度乐观产品 | 9.3-10.5 亿美元 | 毛利约 3.45-4.10 亿美元 | 毛利率 36-39% 才成立 | 明显高于当前预期 | AI rack power 紧张、客户二供导入、DIOD 关键料号供给受限并提价 | 下移风险高，作为上限 | 需要需求、份额、价格和产能同时突破；否则只是乐观上限 |
+| Analog / Power Management / Sensors / Isolation | 悲观产品 | 4.3-4.9 亿美元 | 毛利约 1.25-1.55 亿美元 | 毛利率低 30% 左右 | 低于当前预期 | 汽车/工业订单恢复不持续，价格稳定但无 mix 改善 | 保留为悲观 | 认证周期长，无法快速从机会转收入 |
+| Analog / Power Management / Sensors / Isolation | 基准产品 | 5.0-5.6 亿美元 | 毛利约 1.60-1.95 亿美元 | 毛利率 32-35% | 符合当前预期 | LDO、switch、Hall sensor、voltage reference、ideal diode controller 在车规/工业/AI power 中有可见需求 | 保留为基准 | 产品级收入未披露，需要估算 |
+| Analog / Power Management / Sensors / Isolation | 乐观产品 | 5.8-6.6 亿美元 | 毛利约 2.00-2.40 亿美元 | mix 改善，毛利率 34-37% | 高于当前预期 | AI PSU/thermal fan、industrial automation、EV/industrial power 同步走强 | 保留为乐观 | 客户自研或替代供应商压价 |
+| Analog / Power Management / Sensors / Isolation | 极度乐观产品 | 6.5-7.6 亿美元 | 毛利约 2.35-3.00 亿美元 | 高可靠 analog 占比显著上升 | 明显高于当前预期 | 800V/isolation、power rail protection、sensing 在多个 AI/industrial 平台获量产认证 | 下移风险高 | 800V 仍更偏 2027+，NTM 时间表不足 |
+| Mixed-signal / Connectivity / Timing | 悲观产品 | 4.6-5.2 亿美元 | 毛利约 1.35-1.70 亿美元 | redriver/mux 竞争压制 | 低于当前预期 | 普通 PC/consumer softness、redriver 被 retimer/光互联替代、Gen7 只停留在 design-in | 保留为悲观 | AI 计算/通信终端被过度叙事化 |
+| Mixed-signal / Connectivity / Timing | 基准产品 | 5.5-6.1 亿美元 | 毛利约 1.80-2.15 亿美元 | 毛利率 33-36% | 符合当前预期 | Computing 26%、communications 13%；PCIe 6/7 mux buffers 和 timing 需求可见 | 保留为基准 | 高端 timing 和 retimer 价值不一定由 DIOD 捕获 |
+| Mixed-signal / Connectivity / Timing | 乐观产品 | 6.4-7.2 亿美元 | 毛利约 2.25-2.75 亿美元 | timing/connectivity mix 上升 | 高于当前预期 | PCIe Gen6 量产、Gen7 设计导入、800G/1.6T networking、SmartNIC/optical module 需求强 | 保留为乐观 | 多源采购和低 ASP 限制溢价 |
+| Mixed-signal / Connectivity / Timing | 极度乐观产品 | 7.2-8.5 亿美元 | 毛利约 2.70-3.40 亿美元 | 毛利率 37-40% 才可支撑 | 明显高于当前预期 | PI6CG33A06/Gen7 timing 多平台 AVL，signal path 不被更高端 retimer 完全替代 | 下移为乐观上限概率较高 | 缺客户、订单和出货量披露 |
+| AI data-center socket overlay（非加总） | 悲观产品 | 1.8-2.5 亿美元 | 毛利约 0.55-0.80 亿美元 | 只是普通周期恢复 | 低于当前 AI 预期 | AI server 和 networking 需求存在，但 DIOD 捕获弱或被低 ASP 稀释 | 保留为悲观 | 不能重复惩罚到三大产品族之外 |
+| AI data-center socket overlay（非加总） | 基准产品 | 2.5-3.6 亿美元 | 毛利约 0.85-1.30 亿美元 | 略高于公司平均 | 符合当前可见路径 | 管理层点名 AI server/data center/networking/optical/power supply，Q2 指引强 | 保留为基准 mix | 无法精确拆分收入 |
+| AI data-center socket overlay（非加总） | 乐观产品 | 4.2-6.0 亿美元 | 毛利约 1.55-2.35 亿美元 | 高可靠保护和 timing mix 改善 | 高于当前预期 | 多产品进入 AI platform BOM，客户为供货和认证付溢价 | 保留为乐观 | 需证明谁买、买什么、何时确认 |
+| AI data-center socket overlay（非加总） | 极度乐观产品 | 7.0-8.5 亿美元 | 毛利约 2.8-3.6 亿美元 | 高毛利 socket 占比大幅上升 | 只代表上限 | AI power/PCIe/optical 同时供给偏紧，DIOD 成为关键二供/主供 | 移入附录或上限跟踪 | 缺少收入量化和客户披露 |
+| Automotive/Industrial high-reliability overlay（非加总） | 悲观产品 | 7.0-7.8 亿美元 | 毛利约 2.1-2.5 亿美元 | 毛利率低于当前 mix 目标 | 低于当前预期 | 欧洲/北美工业恢复放缓，汽车库存再调整 | 保留为悲观 | 与 Power/Analog 重叠，不再重复压低 |
+| Automotive/Industrial high-reliability overlay（非加总） | 基准产品 | 7.8-9.0 亿美元 | 毛利约 2.6-3.2 亿美元 | 高于公司平均 | 符合当前预期 | Q1 汽车和工业同比均超过 30%，合计 44% 产品收入 | 保留为基准 mix | 非 AI 主线，不能给 AI 溢价假设 |
+| Automotive/Industrial high-reliability overlay（非加总） | 乐观产品 | 9.0-10.5 亿美元 | 毛利约 3.1-3.9 亿美元 | 认证和 mix 支撑毛利 | 高于当前预期 | 汽车电子、电气化、工业自动化、电力基础设施同步改善 | 保留为乐观 | 宏观周期和客户预算 |
+| Automotive/Industrial high-reliability overlay（非加总） | 极度乐观产品 | 10.5-12.5 亿美元 | 毛利约 3.8-5.0 亿美元 | 毛利显著扩张 | 非 AI 的公司组合极强情景 | 汽车/工业全面补库且高可靠产品供给紧张 | 下移为乐观上限 | 不应把该情景归因于 AI data center |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA、净利润和自由现金流方向。汇总时避免把 AI overlay 与三大产品族重复计算；避免把 800VDC、PCIe 7 产品发布、客户总预算或 AI 基础设施 TAM 直接当作 DIOD NTM 收入。绝对增速以 2025Q2-2026Q1 TTM 收入约 15.56 亿美元为比较基数。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 15.8-17.0 亿美元 | 较 TTM +2%-9% | 低于 Q2 指引延续路径；Q2 可达但 H2/Q1 恢复放慢 | 30.0%-31.5% | 3.5%-5.5% | EBITDA 1.6-2.1 亿美元；净利润 0.45-0.75 亿美元 | 仍为正，但库存和 capex 吞噬，FCF 0.7-1.2 亿美元 | 中 | AI socket 未放量，汽车/工业恢复减速，通用分立价格压力，库存天数不降 |
+| 基准公司 | 18.0-19.5 亿美元 | 较 TTM +16%-25% | 符合 Q2 指引、POS 改善和正常恢复；接近但不提前完成 2028 年 20 亿美元目标 | 32.5%-34.0% | 6.5%-9.0% | EBITDA 2.4-3.1 亿美元；净利润 1.0-1.5 亿美元 | 经营现金流改善，FCF 1.3-1.9 亿美元 | 中高 | 产品级 AI 收入缺披露，毛利率仍需 mix 与利用率验证 |
+| 乐观公司 | 20.5-22.0 亿美元 | 较 TTM +32%-41% | 高于当前 run-rate 和 Q2 指引正常外推；2028 收入目标明显提前 | 34.0%-35.8% | 9.5%-12.5% | EBITDA 3.4-4.3 亿美元；净利润 1.6-2.3 亿美元 | FCF 1.9-2.8 亿美元，库存周转改善 | 中 | 需要 computing/communications 与汽车/工业同步强，且 AI power/timing 毛利留下来 |
+| 极度乐观公司 | 23.0-25.0 亿美元 | 较 TTM +48%-61% | 显著高于当前预期；代表多个核心传导环节同时突破 | 35.5%-38.0% | 13.0%-17.0% | EBITDA 4.8-6.0 亿美元；净利润 2.5-3.5 亿美元 | FCF 2.8-4.2 亿美元，前提是库存不再大幅占用现金 | 低 | 需要 AI rack power、PCIe timing、optical/networking、汽车/工业和产能利用率同时成立；任何一环缺证据都应下移 |
+
+汇总判断：最可能路径是基准偏上，而不是极度乐观。公司有明确收入恢复、Q2 指引、POS 和渠道库存证据；但产品级 AI 收入、backlog、客户、价格和产能利用率没有充分披露，不能把 AI 数据中心外部高增长完整传导到 DIOD NTM 收入和利润。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在它影响的层级处理一次，避免在需求、收入基数、产品利润和公司汇总中重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 收入 4.055 亿美元，同比 +22.1%，Q2 指引 4.35 亿美元中位 | 公司收入、收入基数 | 支撑基准收入 18.0-19.5 亿美元，不支持悲观作为主情景 | Q2 指引 GM 32.8% 上下 1pct，支持小幅改善 | 指引说明短期订单可见度较强 | 基准保留；悲观只作下行情景 |
+| POS 上升且渠道库存降至 11-14 周正常区间低端 | 需求、执行可信度 | 说明需求不是单纯 restocking，可提高收入兑现可信度 | 有助于价格稳定和库存风险下降 | 库存周转改善支撑 FCF | 基准保留；乐观需进一步订单/lead time 证据 |
+| 汽车和工业 Q1 同比均约 +30% 以上，合计 44% 产品收入 | 产品贡献、公司利润 | 支撑核心基数和 mix，不等同于 AI revenue | 高可靠产品 mix 有利于毛利率 | 认证周期长，收入更稳 | 基准保留；不得重复归因到 AI |
+| AI server、data center networking、optical、power supply 被管理层多次点名 | 需求、产品贡献 | 支撑 AI-adjacent 基准 2.5-3.6 亿美元；不支持独立加总 | timing/protection 可改善 mix，但 redriver/通用品溢价有限 | 需要客户认证和交付节奏 | 乐观保留；极度乐观下移为上限跟踪 |
+| 公司不披露 backlog/bookings/B2B/客户级 AI revenue | 收入基数、可信度 | 限制 C 级 AI 假设进入基准比例 | 无法验证高毛利产品占比 | 无法验证订单可持续性 | 极度乐观下移；部分移入附录 |
+| PCIe 7.0 clock generator PI6CG33A06 发布，sub-30fs RMS jitter，3k 量价 2.80 美元 | 产品需求、产品贡献 | 支撑 Gen7 design-in 机会，但单价显示需要量而非高 ASP | 若进入平台，毛利可能好于普通分立 | 需平台 AVL 和量产 BOM | 基准保守纳入；乐观保留；极度需客户证据 |
+| 800VDC/HV sidecar 是 2026 重要 design-in，但规模收入偏 2027+ | 需求、远期期权 | NTM 基准只允许极小折扣，不可把 800V 外部 TAM 当收入 | 若成立毛利好，但时间错配 | 认证、安规、现场可靠性慢 | 基准排除主体；乐观/极度或附录跟踪 |
+| 库存 4.928 亿美元，库存天数 157 天，raw material 增加 | 现金流、利润率 | 库存可支持增长，也可能产生去化压力 | 若需求不及预期，毛利和减值风险上升 | FCF 对库存周转敏感 | 悲观保留；基准需跟踪库存天数继续下降 |
+| 高端 retimer/smart fabric/power module 价值由其他头部供应商捕获 | 产品份额、利润率 | 限制 DIOD 在 AI 互联和电源主链的收入上限 | DIOD 可能只获得低/中 ASP socket | 多源采购削弱价格权 | 乐观收入保留但利润折扣；极度下移 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 收入低于 Q2 指引正常延续，NTM 15.8-17.0 亿美元 | 仍有 Q1/Q2 指引和 POS 支撑，说明不是严重衰退 | AI 收入未量化、库存高、通用品价格压力、客户认证慢 | 保留 | 下行情景 | 中 | `无 backlog` 只限制 AI 可收入化可信度，不再在每个产品重复压低 |
+| 基准 | Q2 指引兑现，NTM 18.0-19.5 亿美元，毛利率 32.5%-34.0% | Q1 已实现、Q2 guide、POS 增长、渠道库存下降、汽车/工业强 | 产品级 AI socket 为 C 级估算，PCIe 7 和 800V 仍需要客户认证 | 保留 | 最可能情景 | 中高 | 汽车/工业非 AI 属性不应削弱其作为核心收入和利润基座的价值 |
+| 乐观 | AI socket 和核心终端同步强，NTM 20.5-22.0 亿美元 | 管理层点名 AI server、networking、optical、power supply；行业需求强；PCIe 7 新品 | 谁买、买什么、何时确认仍不透明；高端价值可能被竞品捕获 | 保留 | 上行情景 | 中 | redriver 替代风险只限制 mixed-signal/connectivity，不重复打击 power/protection |
+| 极度乐观 | NTM 23.0-25.0 亿美元，毛利率 35.5%-38.0% | 只有在 AI rack power、timing、optical、汽车/工业、价格和利用率同时强时成立 | 缺 backlog、客户、AI revenue、产能利用率和价格披露；800V 多为 design-in | 下移 | 乐观上限/附录跟踪 | 低 | 800VDC 时间错配只限制极度乐观，不否定 48V/PSU/保护的基准需求 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景，NTM 收入 18.0-19.5 亿美元，较 TTM 约 +16%-25%，毛利率 32.5%-34.0%，经营利润率 6.5%-9.0%。这一路径要求 Q2 指引兑现、渠道库存继续健康、汽车/工业恢复延续、AI server/data-center socket 按管理层描述正常放量，但不要求 DIOD 成为 AI 核心芯片或高端 retimer 主供应商。
+- NTM 收入结论：DIOD 的 NTM 增长更像“库存周期修复 + 汽车/工业高可靠恢复 + AI data-center 小芯片 socket 增加”的组合，不是单一 AI 爆品驱动。AI-adjacent 收入基准约 2.5-3.6 亿美元，乐观约 4.2-6.0 亿美元，极度乐观 7.0-8.5 亿美元只能作为上限跟踪。
+- 利润/现金流结论：收入恢复已经发生，但 Q1 毛利率 31.8% 说明经营杠杆仍在早期。基准情景下 EBITDA 2.4-3.1 亿美元、净利润 1.0-1.5 亿美元、FCF 1.3-1.9 亿美元；若毛利率不能穿越 33%-34%，收入增长会更多体现为恢复而非经营质量跃迁。
+- 主要传导瓶颈：从外部需求到 DIOD 收入的核心瓶颈是客户认证、份额、低/中 ASP socket 数量、封测和晶圆产能、以及客户是否愿意把 DIOD 作为主供或强二供。公司披露不足使 AI 细分贡献只能保守折扣。
+- 乐观情景成立条件：Q2/Q3 继续高于季节性，computing+communications 合计占比稳定高于 39%-42%，汽车/工业合计保持 44% 左右或更高，毛利率进入 34%-36%，管理层开始披露更多 AI/data-center design win、客户、订单或收入线索。
+- 极度乐观情景成立条件：AI rack power/protection、PCIe Gen6/7 timing、AI networking/optical support 同时出现供需偏紧；DIOD 不只是参与，而是在多个平台成为主供/强二供；库存周转改善且毛利率接近或超过公司 35%+ 中期目标。若任一核心环节缺证据，应降为乐观上限或附录跟踪。
+- 悲观情景触发条件：Q2 指引未达或 Q3 指引回落；POS 转弱而渠道库存周数上升；库存天数无法继续下降；汽车/工业恢复被客户库存调整打断；AI server/networking 需求被竞品或客户自研吸收，DIOD 只获得低 ASP 通用件。
+- 后续跟踪数据：Q2/Q3 收入和毛利率；computing+communications 收入占比；汽车+工业收入占比；渠道库存周数和 POS；库存天数、finished goods 与 raw material 结构；管理层是否量化 AI/data-center revenue；PCIe 7 clock 的平台/客户线索；AI PSU/BBU/48V/800V power protection design win；capex 占收入比例和自由现金流。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务主锚截至 2026-03-31；最新经营指引来自 2026-05-07 1Q26 财报公告和业绩会；本报告成文日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Diodes Incorporated, Q1 2026 Financial Results press release, 2026-05-07: https://investor.diodes.com/news-releases/news-release-details/diodes-incorporated-reports-first-quarter-2026-financial-results
+  - Diodes Incorporated, Q1 2026 Form 10-Q, period ended 2026-03-31: https://www.sec.gov/Archives/edgar/data/29002/000119312526212380/diod-20260331.htm
+  - Diodes Incorporated, Q1 2026 Earnings Call corrected transcript, Exhibit 99.1: https://www.sec.gov/Archives/edgar/data/29002/000119312526219765/diod-ex99_1.htm
+  - Diodes Incorporated, Q4/FY2025 Financial Results press release, 2026-02-10: https://investor.diodes.com/news-releases/news-release-details/diodes-incorporated-reports-fourth-quarter-fiscal-2025-financial
+  - Diodes Incorporated, PCIe 7.0 clock generator PI6CG33A06 product release, 2026-05-06: https://www.diodes.com/about/news/press-releases/pcie-7-0-clock-generator-from-diodes-incorporated-delivers-sub-30fs-jitter-for-next-gen-ai-infrastructure
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - 公司 2028 中期目标为年收入 20 亿美元、gross profit 7 亿美元、gross margin 35%+、non-GAAP EPS 4.00+；本报告只将其作为利润率和收入上限参照，不把 2028 目标提前写入 NTM 基准。
+  - 800VDC/HV sidecar、1MW rack power、PCIe 7 多平台量产、AI timing 更高精度同步、LEO satellite 和 humanoid robotics 均属于 NTM 低证据或远期期权；除非出现客户、订单、交付和收入确认路径，否则不进入基准。
+- 主要项目内来源：
+  - `公司调研/配电_电源_功率器件/DIOD_Diodes_Incorporated_公司调研_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_精密时钟与同步芯片_2026-06-10.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_PCIe_CXL高速IO交换与Retimer_2026-06-11.md`
+- 关键估算说明：
+  - 产品族收入按公司披露的 FY2025 产品 mix 和 2026Q1/Q2 收入锚点估算；DIOD 没有按 Power、Analog、Mixed-signal 或 AI data-center 细分披露财务分部。
+  - AI data-center socket overlay 是非加总观察项，已包含在三大产品族内，不能再与公司总收入相加。
+  - 产品级利润贡献按毛利润估算；公司不披露产品级经营费用，因此经营利润率、EBITDA、净利润和自由现金流只在公司层面给出。
+  - 报告未使用股价、市值、P/E、P/S、EV 或目标价作为经营价值传导证据。

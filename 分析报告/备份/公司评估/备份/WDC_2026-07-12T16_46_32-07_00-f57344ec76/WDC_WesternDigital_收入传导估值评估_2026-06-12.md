@@ -1,0 +1,155 @@
+# 公司收入传导与价值传导评估：Western Digital（WDC）
+
+资料日期：2026-06-12  
+主口径：NTM，即 FY2026Q4-FY2027Q3 附近未来 4 个季度。  
+资料边界：使用 `公司调研/AI服务器_存储_EMS/WDC_WesternDigital_公司调研_2026-06-11.md`、`行业调研/AI服务器_存储_芯片/` 和 `行业调研/晶圆制造_设备_材料_测试/` 中与 HDD、对象存储、AI-native 存储、企业级 SSD、存储晶圆制造相关的正式资料，并用 WDC 一手财报、10-Q、Innovation Day、Computex 和客户调查公告补充核验。未读取、引用或继承 `特征量化/`、Signals、回归、排序或市场价格资料。  
+估值边界：本报告中的“价值传导”只指经营价值传导，不输出投资评级、目标价、股价区间、估值倍数判断或市场定价结论。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口，即从 FY2026Q4 指引到 FY2027Q3 附近的 12 个月收入、利润率和自由现金流。FY2026E、FY2027、长期 3-5 年模型、100TB+ HDD 路线、2028 双轴/高带宽 HDD 只作补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：WDC FY2026Q3 revenue 为 `$3.337B`，同比 `+45%`；Cloud revenue `$2.972B`，占 `89.1%`；non-GAAP gross margin `50.5%`，non-GAAP operating margin `38.6%`，free cash flow `$978M`。FY2026Q4 指引 revenue `$3.65B +/- $0.10B`，non-GAAP gross margin `51%-52%`，non-GAAP EPS `$3.25 +/- $0.15`。FY2026E revenue 用 9M FY2026 `$9.172B` 加 Q4 指引中点，约 `$12.82B`；Q4 指引中点年化 run-rate 约 `$14.6B`。
+- 当前预期定义：本报告不用市场价格和估值资料；“当前预期”主要锚定管理层 FY2026Q4 指引、FY2026E run-rate、Q3/Q4 cloud mix、10-Q 对 AI/hybrid data 需求和更长 production lead time 的披露、公司 Innovation Day 对 40TB UltraSMR/ePMR 和 HAMR qualification 的时间表，以及项目内行业资料对 HDD/QLC/对象存储供需的判断。若某字段需要第三方一致预期但允许资料无法可靠量化，表内写“无法可靠量化”。
+- 重要产品/业务线：1）Cloud nearline 高容量 HDD，含 ePMR/UltraSMR 主力盘；2）40TB UltraSMR/ePMR 与 44TB HAMR 代际转换；3）Ultrastar Data/JBOD/OpenFlex/RapidFlex 与平台软件；4）Client HDD；5）Consumer/NAS/creator/surveillance HDD；6）High Bandwidth、Dual Pivot、Power-optimized HDD 等远期期权。
+- NTM 公司收入四情景：悲观 `$13.5-$15.2B`；基准 `$15.8-$17.5B`；乐观 `$17.5-$20.5B`；极度乐观 `$20.5-$25.0B`。这些不是固定百分比公式，而是按需求、公司捕获、收入确认、利润质量和执行可信度逐层传导后的结果。
+- 利润或 EBITDA 四情景：悲观 non-GAAP gross margin `45%-49%`、operating margin `30%-36%`；基准 `50%-54%`、`38%-42%`；乐观 `54%-58%`、`42%-47%`；极度乐观 `58%-63%`、`47%-52%`。净利润/EBITDA 无法按产品可靠量化，主表用 non-GAAP operating income 和 core net income 方向近似。
+- 最大传导瓶颈：不是 AI 总数据量，而是 high-capacity nearline HDD 的客户 qualification、盘片/磁头/良率、40TB ePMR/UltraSMR 和 44TB HAMR 放量节奏、hyperscaler PO/LTA 是否从 2026 延续到 2027。
+- 最大利润率变量：Cloud mix、ASP per exabyte、40TB+ 高容量盘溢价、生产良率和利用率。低毛利平台硬件或一次性系统项目不能自动提高公司利润率。
+- 最大现金流变量：FCF 主要由高毛利 Cloud revenue、营运资本、capex discipline、回购/股息节奏决定。若客户提前下单但项目上电延后，收入可推迟而库存、应收或预付安排先占用现金。
+- 可信度：基准为“中高”。理由是 Q3/Q4 指引、Cloud revenue 和利润率为 A 级证据，但 2027 PO/LTA、客户取消率、40TB/HAMR ramp 和产品级利润率没有完整定量披露。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Cloud nearline 高容量 HDD，含 ePMR/UltraSMR 主力盘 | FY2026Q3 Cloud `$2.972B`；Q4 implied `$3.23-$3.30B` | Q3 `89.1%` | 公司收入、毛利、FCF 的主体；AI/cloud 数据持久化直接暴露 | A | 进入基准主口径；NTM 公司收入大部分来自此线 | 100TB+ HDD 路线只作长期技术支撑 |
+| 40TB UltraSMR/ePMR 与 44TB HAMR 代际转换 | 当前单独收入未披露；40TB in qualification，HAMR qualification/ramp 线索明确 | 无法可靠量化，已包含在 Cloud | 决定 2026H2-2027 高容量 mix、ASP 和份额上限 | C | 基准只小比例隐含在 Cloud mix；乐观/极度乐观才作为显性增量 | 50TB/60TB/100TB+ 为 FY2027 以后期权 |
+| Ultrastar Data/JBOD/OpenFlex/RapidFlex 与平台软件 | 独立收入未披露；系统/平台展示和产品页证据 | 无法可靠量化，主要拉动 Cloud drive pull-through | 提高客户导入效率、降低 qualification 风险、扩展 neo-cloud/HPC/enterprise AI 客户 | C/D | 不单独进入基准大额收入；可作为小额平台收入和 Cloud 拉动因素 | 2027 open API/intelligent software 若收费才上修 |
+| Client HDD | FY2026Q3 `$179M` | `5.4%` | 低战略权重；可能稳定或小幅恢复，但不是 AI 主线 | A | 进入基准，但仅作小额稳定项 | 无 |
+| Consumer/NAS/creator/surveillance HDD | FY2026Q3 `$186M` | `5.6%` | 品牌和渠道现金流；NAS/creator/surveillance 有低到中 AI/数据增长相关性 | A | 进入基准，但不作为主要增量 | G-DRIVE/creator AI 内容数据为小期权 |
+| High Bandwidth、Dual Pivot、Power-optimized HDD | High Bandwidth 已客户接触；Dual Pivot lab；power-optimized 预计 2027 customer qualification | NTM 当前收入无法可靠量化 | 可能改变 HDD warm tier 性能、W/TB 和长期 ASP | D | 不进入 NTM 基准；只放入乐观上限、极度乐观或附录跟踪 | 2027-2028 以后更重要 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 WDC 份额、收入确认、利润率或公司收入汇总。需求单位按每条业务最能解释需求的指标选择：Cloud nearline 用 exabyte 和高容量盘 mix；新代际盘用 hyperscaler qualification/volume ramp；平台用 PB/EB 级 AI 数据系统部署；Client/Consumer 用终端出货和替换周期。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Cloud nearline 高容量 HDD | FY2026Q3 nearline `199EB`，Cloud revenue `$2.972B`；Q4 guide implied Cloud `$3.23-$3.30B`；10-Q 披露 AI/hybrid data 增长使高容量盘需求加速、交期拉长 | NTM nearline demand 约 `780-900EB`，仍增长但低于 mid-20s 路径 | `900-1,050EB`，30-36TB 继续主力，40TB 小批导入 | `1,050-1,300EB`，AI 数据湖/RAG/log retention 和 LTA 同时上修 | `1.3-1.7ZB`，agent/multimodal/sovereign AI 带来非线性冷温容量规划 | 相对 Q3 annualized `~796EB`，悲观 `-2% to +13%`，基准 `+13% to +32%`，乐观 `+32% to +63%`，极度 `+63% to +114%` | 基准符合当前指引和行业资料；反证是 AI capex 通电延迟、lead time 恢复、QLC SSD 在 warm tier 大幅替代 |
+| 40TB UltraSMR/ePMR 与 44TB HAMR | 40TB UltraSMR/ePMR 已在客户 qualification，volume production planned 2026H2；HAMR customer qualification，ramp production 2027 | 仅少数客户 qualification，2026H2 收入贡献小，主力仍 30-36TB | 40TB 小批进入 top customers，HAMR 2027 前期验证 | 40TB 2026H2 扩大，HAMR 2027H1 多客户 production qualification | 40TB/44TB 同时短缺并形成高溢价，WDC 不被 Seagate HAMR 拉开差距 | 绝对量无法可靠量化；用客户数量、qualification 阶段和高容量 mix 衡量 | 基准只略高于当前预期；乐观才明显高于当前预期 | 正证是官方路线和 qualification；反证是 HAMR 良率、field reliability、Seagate 44TB 量产证据更强 |
+| Ultrastar Data/JBOD/OpenFlex/RapidFlex 与平台软件 | Computex 2026 展示 Data 3000 JBOD、OpenFlex EBOF、RapidFlex NVMe-oF；AI 数据系统需要 tiered architecture | 仅作为 drive attach 工具，系统独立需求低 | neo-cloud/HPC/企业 AI 采用小幅提高，主要拉动 HDD 销售 | 中型 AI builders 需要 turnkey EB/PB 平台，系统收入和 pull-through 同升 | 平台软件降低 qualification 风险，成为非 hyperscaler AI 存储标准路径之一 | 绝对独立需求无法可靠量化；以 PB/EB 项目数和系统 attach 判断 | 基准符合当前产品展示；乐观高于当前预期 | 反证是客户仍自建对象存储，系统/软件价值被 Dell/NetApp/Pure/MinIO/VAST 等拿走 |
+| Client HDD | FY2026Q3 `$179M`，Q4 implied `$180-$210M` | PC/OEM HDD 替换继续萎缩，需求 `flat to -15%` | 低个位数到中个位数恢复或稳定 | PC refresh/边缘存储回补带来 `+10%-25%` | 非 AI 主线，极度乐观也只是渠道补库存和特殊 OEM 项目 | NTM 需求约 `$0.55-$1.30B` revenue-equivalent | 基准大体符合当前小业务 run-rate | SSD 替代和 OEM HDD attach 下滑是主要反证 |
+| Consumer/NAS/creator/surveillance HDD | FY2026Q3 `$186M`，Q4 implied `$190-$230M` | 零售/外置盘需求疲弱，`flat to -10%` | NAS、surveillance、creator 替换维持低增长 | Creator AI 内容、SOHO NAS 和安全视频保留带来 `+10%-25%` | 小概率渠道补库存和多媒体数据暴增，`+30%+` | NTM 需求约 `$0.60-$1.60B` revenue-equivalent | 基准接近当前 run-rate，非主要超预期来源 | 反证是消费可选品、渠道库存和 SSD/云存储替代 |
+| High Bandwidth、Dual Pivot、Power-optimized HDD | High Bandwidth 客户接触，Dual Pivot lab，Power-optimized 预计 2027 qualification | NTM 几乎无采购需求，只是技术验证 | 作为 2027+ 设计评估，不形成基准收入 | 少数客户试点并影响 2027 采购标准 | 若 QLC SSD 太贵或电力约束极强，HDD performance/W/TB 变成采购指标 | NTM 绝对收入无法可靠量化；大多为 design-in 和 qualification | 不能进入 NTM 基准 | 反证是 2027 以后时间表、客户收费路径不清、QLC SSD 性能更好 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断需求能否进入 WDC NTM 收入表，以及当前可收入化基数；不预测增长，不判断利润率。A/B 级证据可进基准，C 级只在客户、产品和时间表清楚时保守折扣，D/E 级不进入基准 NTM 收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Cloud nearline 高容量 HDD | Q3 Cloud `$2.972B`；Q4 implied `$3.23-$3.30B`；Q3 nearline `199EB` | 直接收入 | 高容量 HDD mix 推动 GM/FCF，利润质量高于历史 consumer/client 周期 | `$11.9-$13.2B` run-rate | `$13.0-$14.5B` 可收入化基数 | `$14.5-$16.5B` | `$16.5-$18.5B` | 基准符合 Q4 指引和 current run-rate；乐观需 2027 LTA/ASP 延续 | A/B | 是 | 已披露收入、财务指引、10-Q demand/lead time、公司产品路线 | 基准主口径，NTM 总收入核心 |
+| 40TB UltraSMR/ePMR 与 44TB HAMR | 未单独披露收入；40TB/HAMR qualification 和 volume/ramp 时间表 | 直接，但收入嵌入 Cloud | 若良率/价格成立，GM accretive；若爬坡慢则 R&D/制造成本先行 | `$0-$0.3B`，且含在 Cloud | `$0.3-$1.0B`，小比例隐含在 Cloud | `$1.0-$2.5B` | `$2.5-$5.0B` | 基准只能小幅高于当前 mix；乐观才显著上修 | C | 小比例进入基准，且不单独加总 | 客户 qualification、2026H2/2027 时间表明确，但缺少订单和收入拆分 | 作为 Cloud mix/ASP 因子，不作为独立基准收入池 |
+| Ultrastar Data/JBOD/OpenFlex/RapidFlex 与平台软件 | 独立收入未披露；Computex 产品展示和平台方案 | 直接系统收入 + 间接 drive pull-through | 系统硬件毛利可能低于 drive；软件若收费可提高锁定 | `$0.2-$0.5B` | `$0.4-$0.9B` | `$0.9-$1.8B` | `$1.8-$3.0B` | 基准仅为小额平台/系统和 pull-through；高值是上限 | C/D | 小额进入，需与 Cloud drive 去重 | 产品可验证，但客户项目、软件收费、RPO 未披露 | 基准保守；乐观/极度需要客户项目和定价证据 |
+| Client HDD | Q3 `$179M`，Q4 implied `$180-$210M` | 直接收入 | 成熟低增速，利润率低于 high-capacity Cloud 的概率更高 | `$0.55-$0.75B` | `$0.65-$0.85B` | `$0.85-$1.05B` | `$1.0-$1.3B` | 基准接近当前 run-rate | A | 是 | end market revenue 已披露 | 小额进入基准，不驱动公司情景 |
+| Consumer/NAS/creator/surveillance HDD | Q3 `$186M`，Q4 implied `$190-$230M` | 直接收入 | 品牌/渠道利润稳定，但战略权重低 | `$0.60-$0.80B` | `$0.70-$0.95B` | `$0.95-$1.20B` | `$1.20-$1.60B` | 基准接近当前 run-rate | A | 是 | end market revenue 已披露 | 小额进入基准，不驱动公司情景 |
+| High Bandwidth、Dual Pivot、Power-optimized HDD | 技术发布/客户接触；无收入拆分 | 未来直接收入或 ASP/mix 影响 | 若形成性能/功耗 SKU，利润率可能高；当前更多是研发和客户验证 | `$0` | `$0` | `<$0.5B` | `$0.5-$1.0B` | 不属于当前预期基准 | D | 否 | 2027/2028 时间表居多，收入确认路径不足 | NTM 基准排除；乐观上限或附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步可收入化基数出发，评估每个产品在 NTM 内可贡献给 WDC 的收入和利润。40TB/HAMR 行是 Cloud nearline 的 mix/代际增量，不与 Cloud 行机械加总；High Bandwidth/Dual Pivot/Power-optimized 只在乐观上限和附录处理。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Cloud nearline 高容量 HDD | 悲观 | `$12.0-$13.5B` | gross profit 约 `$5.4-$6.6B`；operating contribution 仍为主体但杠杆减弱 | GM `45%-49%`，OM `30%-36%` | 低于当前 Q4 run-rate 和 sold-out/LTA 叙事 | 已披露 Cloud revenue、Q4 guide | 保留为悲观，不下移到衰退，因为收入基数强 | AI capex 延迟、lead time 缩短、ASP/TB 回落 |
+| Cloud nearline 高容量 HDD | 基准 | `$14.0-$15.8B` | gross profit 约 `$7.0-$8.5B`；core operating profit 主要来自此线 | GM `50%-54%`，OM `38%-42%` | 符合当前预期正常兑现 | Q3/Q4 指引、Cloud 89%、10-Q AI/hybrid data 和 lead time | 保留为基准 | 未披露 backlog/RPO，2027 价格和 EB 需估算 |
+| Cloud nearline 高容量 HDD | 乐观 | `$15.8-$18.5B` | gross profit 约 `$8.5-$10.7B`；经营杠杆明显 | GM `54%-58%`，OM `42%-47%` | 高于当前预期 | 40TB early ramp、客户更早锁定、industry tightness | 保留为乐观 | 40TB qualification 延迟、Seagate HAMR 夺 share |
+| Cloud nearline 高容量 HDD | 极度乐观 | `$18.5-$22.5B` | gross profit 约 `$10.7-$14.0B`；若 ASP/mix 同升才成立 | GM `58%-63%`，OM `47%-52%` | 显著高于当前预期 | 多模态/agent 数据留存、HDD allocation 持续紧、客户 LTA 延长 | 保留为上限，可信度低到中 | 单一 AI 数据叙事不足；必须有 EB、ASP、LTA 同时验证 |
+| 40TB UltraSMR/ePMR 与 44TB HAMR | 悲观 | `$0-$0.3B`，含在 Cloud | 几乎不贡献利润，qualification/爬坡成本先行 | 中性到压低 | 低于代际转换预期 | qualification 不等于 revenue | 保留为 Cloud 反证 | 良率、可靠性、field failure |
+| 40TB UltraSMR/ePMR 与 44TB HAMR | 基准 | `$0.3-$1.0B`，含在 Cloud | 若良率正常，mix 小幅增厚 GM | 小幅上行 | 符合 2026H2 小批导入 | 40TB in qualification，volume production planned 2026H2 | 小比例保留在基准 | 没有订单/收入拆分 |
+| 40TB UltraSMR/ePMR 与 44TB HAMR | 乐观 | `$1.0-$2.5B`，含在 Cloud | 高容量溢价支撑 GM `+100-300bps` 可能性 | 上行 | 高于当前预期 | 多客户 production qualification，Seagate 供给仍紧 | 保留为乐观 | WDC HAMR 证据弱于 Seagate 44TB 量产 |
+| 40TB UltraSMR/ePMR 与 44TB HAMR | 极度乐观 | `$2.5-$5.0B`，含在 Cloud | 非线性利润改善只有在良率、ASP 和客户锁定都成立时可用 | 显著上行 | 显著高于当前预期 | 40TB/44TB 同步短缺和高价 | 部分下移为乐观上限 | 不能把路线图当成 NTM 收入 |
+| Ultrastar Data/JBOD/OpenFlex/RapidFlex 与平台软件 | 悲观 | `$0.2-$0.5B` | 系统硬件利润有限，主要提供 drive attach | 中性 | 低于平台化预期 | 产品存在但客户项目未披露 | 保留为悲观 | 系统价值被 OEM/软件平台截走 |
+| Ultrastar Data/JBOD/OpenFlex/RapidFlex 与平台软件 | 基准 | `$0.4-$0.9B` | 小额 operating contribution；更重要是降低 Cloud 导入摩擦 | 中性到小幅上行 | 符合当前预期 | Computex 展示 Data 3000、OpenFlex、RapidFlex | 保守纳入 | 软件收费、RPO 和客户项目缺失 |
+| Ultrastar Data/JBOD/OpenFlex/RapidFlex 与平台软件 | 乐观 | `$0.9-$1.8B` | 若带动 drive pull-through，利润贡献大于独立系统毛利 | 小幅上行 | 高于当前预期 | neo-cloud/HPC/enterprise AI 采用 | 保留为乐观 | 低毛利 pass-through 风险 |
+| Ultrastar Data/JBOD/OpenFlex/RapidFlex 与平台软件 | 极度乐观 | `$1.8-$3.0B` | 只有软件/API 收费或强锁定时才明显改善利润 | 上行但证据低 | 显著高于当前预期 | open API/intelligent software 2027 设想 | 下移部分到附录跟踪 | NTM 收入确认路径不足 |
+| Client HDD | 悲观 | `$0.55-$0.75B` | 利润低到中，费用摊薄有限 | 轻微下行 | 低于 run-rate | Q3 revenue A 级 | 保留 | SSD 替代、PC HDD attach 下降 |
+| Client HDD | 基准 | `$0.65-$0.85B` | 小额利润，稳定但不驱动公司 | 中性 | 符合 run-rate | Q3/Q4 implied revenue | 保留 | 需求恢复有限 |
+| Client HDD | 乐观 | `$0.85-$1.05B` | 小幅利润增量 | 中性到小幅上行 | 略高于当前预期 | OEM refresh/channel rebound | 保留但低权重 | 非 AI 主线，难带动估值叙事 |
+| Client HDD | 极度乐观 | `$1.0-$1.3B` | 仍不是公司利润主因 | 中性 | 高于当前预期但权重小 | 特殊 OEM/边缘项目 | 保留为低权重上限 | HDD 在 PC 中长期被 SSD 压制 |
+| Consumer/NAS/creator/surveillance HDD | 悲观 | `$0.60-$0.80B` | 渠道利润承压 | 轻微下行 | 低于 run-rate | Q3 revenue A 级 | 保留 | 消费可选品弱、渠道库存 |
+| Consumer/NAS/creator/surveillance HDD | 基准 | `$0.70-$0.95B` | 小额稳定利润 | 中性 | 符合 run-rate | Q3/Q4 implied revenue | 保留 | 云存储/SSD 替代 |
+| Consumer/NAS/creator/surveillance HDD | 乐观 | `$0.95-$1.20B` | 品牌渠道利润小幅上行 | 小幅上行 | 高于当前预期 | NAS、creator、surveillance 数据增长 | 保留但低权重 | 无法证明 AI 数据中心传导 |
+| Consumer/NAS/creator/surveillance HDD | 极度乐观 | `$1.20-$1.60B` | 对公司总利润仍次要 | 小幅上行 | 高于当前预期但权重小 | Creator AI 内容和视频存储 | 保留为小业务上限 | 需求弹性与 Cloud 不同，不能重复计算 |
+| High Bandwidth、Dual Pivot、Power-optimized HDD | 悲观 | `$0` | R&D 成本，不贡献利润 | 下行 | 低于技术期权预期 | 2027/2028 时间表 | 排除出基准 | 时间表不在 NTM |
+| High Bandwidth、Dual Pivot、Power-optimized HDD | 基准 | `$0` | 不贡献 NTM 利润 | 中性 | 符合保守预期 | 技术演示/客户接触 | 移入附录 | 收入确认路径不足 |
+| High Bandwidth、Dual Pivot、Power-optimized HDD | 乐观 | `<$0.5B` | 样品/客户资助项目可小幅贡献，但无法可靠量化 | 中性到小幅上行 | 高于当前预期 | High Bandwidth with customers、Power-optimized 2027 qual | 仅作跟踪 | 量产、定价、客户标准未确定 |
+| High Bandwidth、Dual Pivot、Power-optimized HDD | 极度乐观 | `$0.5-$1.0B` | 只有性能/TCO 被写入采购标准才明显增厚利润 | 上行但可信度低 | 显著高于当前预期 | QLC SSD 过贵、电力约束极强 | 移入附录 | 2028 双轴时间表，不适合 NTM 基准 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为 WDC NTM 总收入、毛利率、经营利润率、core net income 和 FCF 方向。不讨论市场定价。公司总收入不是产品表高值机械相加：40TB/HAMR 已包含在 Cloud，平台 drive pull-through 也包含在 Cloud；Client/Consumer 与 Cloud 客户预算不同，但权重小。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$13.5-$15.2B` | vs FY2026E `$12.82B` 为 `+5%-19%` | 低于当前 Q4 run-rate 正常外推和 sold-out/LTA 叙事；但仍不等于需求崩塌 | `45%-49%` | `30%-36%` | core net income 约 `$3.4-$4.6B`；EBITDA 无法可靠量化 | FCF margin 约 `18%-25%`，仍为正但低于 Q3 强度 | 中 | AI capex/上电延迟、lead time 正常化、ASP/TB 回落、40TB/HAMR 延迟 |
+| 基准公司 | `$15.8-$17.5B` | `+23%-37%` | 符合当前指引、Q4 run-rate、Cloud 89% mix、2026 PO/LTA 线索和 nearline tightness 正常兑现 | `50%-54%` | `38%-42%` | core net income 约 `$5.0-$6.2B`；operating income 约 `$6.0-$7.3B` | FCF margin 约 `25%-32%`，继续支持债务净现金和股东回报 | 中高 | 高容量盘良率、客户 qualification、Cloud ASP/mix、营运资本 |
+| 乐观公司 | `$17.5-$20.5B` | `+37%-60%` | 高于当前预期；需要 Cloud revenue/TB、nearline EB、40TB adoption 至少一项明显上修 | `54%-58%` | `42%-47%` | core net income 约 `$6.2-$8.1B`；operating income 约 `$7.4-$9.6B` | FCF margin 约 `30%-36%`，若营运资本不占用可接近公司长期目标以上 | 中 | 40TB UltraSMR/ePMR volume、HAMR production qualification、2027 LTA 价格和 EB 锁定 |
+| 极度乐观公司 | `$20.5-$25.0B` | `+60%-95%` | 显著高于当前预期；必须由需求、捕获、利润率和执行同时突破 | `58%-63%` | `47%-52%` | core net income 约 `$8.1-$10.9B`；operating income 约 `$9.6-$13.0B` | FCF margin `35%+`，前提是高价 allocation 不被库存/应收吞噬 | 低到中 | 多模态/agent 数据留存非线性、HDD 双寡头持续紧缺、40TB/44TB 良率、竞争者和 QLC 替代 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：只校准前四步情景，不重新预测。校准动作仅使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在它影响的层级处理一次：AI capex 放缓属于需求/收入确认风险，不在利润率和公司组合中重复惩罚；QLC SSD 替代主要限制 warm tier 和 high-bandwidth HDD，不否定 cold/bulk HDD 基准。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026Q3 revenue `$3.337B`、Cloud `$2.972B`、non-GAAP GM `50.5%`、Q4 revenue guide `$3.65B +/- $0.10B` | 收入基数/公司汇总 | 支撑基准 `$15.8-$17.5B`，悲观也不应低估到 FY2025 水平 | 支撑 GM `50%+` 基准 | Q3 FCF `$978M` 证明现金转换强，但不能直接年化到所有情景 | 保留 |
+| 10-Q 披露 AI/hybrid data 推动高容量需求、制造复杂度和更长 lead time | 需求/执行可信度 | 支撑 Cloud nearline 需求不只是一次性补库存 | 若供给紧和 mix 持续，GM 上行 | 长 lead time 提高可见度，也可能导致交付延迟 | 保留 |
+| Cloud 占比 `89.1%`，Client/Consumer 各约 `5%-6%` | 公司组合 | 确认公司已是 pure-play HDD/cloud 容量层 | 高 Cloud mix 支撑利润率高于历史消费 HDD 周期 | 客户集中和 hyperscaler 议价提高执行风险 | 保留 |
+| 40TB UltraSMR/ePMR qualification、HAMR qualification/ramp 时间表 | 产品贡献 | 只支持小比例基准和乐观增量；不能把路线图直接当 NTM 收入 | 良率正常才增厚 GM；否则成本先行 | qualification 到 revenue 有时间差 | 下移 |
+| Computex 2026 平台展示、Data 3000/JBOD/OpenFlex/RapidFlex | 收入基数/产品贡献 | 支持小额平台收入和 drive pull-through | 系统硬件利润率未必高；软件收费未披露 | 可能降低客户 adoption time-to-value | 仅作跟踪 |
+| WD 客户调查：TCO/capacity/reliability 和 HDD-majority infrastructure 仍被重视 | 需求可信度 | 支撑 bulk/cold/warm capacity demand | 间接支撑高容量 HDD 定价 | 调查为公司样本，不能替代订单 | 保留 |
+| QLC 122TB/245TB SSD 放量和 AI warm tier 需求 | 需求/产品替代 | 限制 high-bandwidth/warm HDD 上限；不直接否定 cold/bulk HDD | 若 warm tier 被 QLC 抢走，WDC mix/ASP 有压力 | NAND 紧缺或高价反而缓解替代风险 | 下移 |
+| Seagate 44TB HAMR 和 Toshiba 高容量样品 | 份额/价格 | 限制 WDC 40TB/HAMR 乐观和极度乐观 | 若 WDC 落后，premium GM 下修 | 客户二供增加议价 | 下移 |
+| Hyperscaler capex、NeoCloud 融资和电力/MEP 上电节奏 | 需求/收入确认 | 可能把 shipment 推迟到后续季度 | 利用率下降会压毛利 | 应收、库存和产能节奏受影响 | 保留 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM revenue `$13.5-$15.2B`，仍增长但低于当前预期 | Q3/Q4 收入和 GM 基数强，Cloud 已占 89%，现金流为正 | AI capex 延迟、ASP/TB 回落、QLC 替代 warm tier、40TB/HAMR 延迟 | 保留 | 悲观公司 | 中 | AI capex 延迟只在需求和收入确认处理，不再重复压低所有产品利润 |
+| 基准 | NTM revenue `$15.8-$17.5B`，high-capacity Cloud 正常兑现 | A 级收入/指引、10-Q demand/lead time、Cloud mix、行业 HDD tightness | 2027 PO/LTA 没有完整公开量化，产品级 margin 未披露 | 保留 | 基准公司 | 中高 | 客户集中已在执行可信度处理，不再重复削减需求、收入和利润 |
+| 乐观 | NTM revenue `$17.5-$20.5B`，40TB/mix/ASP 或 LTA 至少一项上修 | 40TB qualification、HAMR ramp 线索、客户提前锁定、AI 数据层行业需求强 | Seagate HAMR 证据更强、WDC qualification 到 revenue 时间差 | 保留 | 乐观公司 | 中 | QLC 替代只限制 warm tier 和高带宽 HDD，不否定 Cloud cold/bulk 基准 |
+| 极度乐观 | NTM revenue `$20.5-$25.0B`，需求、捕获、利润率、执行同时突破 | 多模态/agent 数据留存、HDD 双寡头、40TB/44TB 高容量短缺、平台降低导入摩擦 | 缺少 broad PO/RPO、40TB/HAMR 收入拆分、2028 技术不应进 NTM 基准 | 下移 | 极度乐观上限；部分技术机会移入附录 | 低到中 | 远期期权不能作为 NTM 基准收入，也不能与 Cloud 主收入重复计算 |
+
+## 8. 结论
+
+- 最可能情景：基准偏上，但仍属于“当前预期正常兑现”，不是自动乐观。NTM revenue 以 `$15.8-$17.5B` 为主口径，较 FY2026E `$12.82B` 增长 `+23%-37%`；核心传导来自 Cloud nearline 高容量 HDD 的 EB 出货、ASP/TB、40TB 小批导入和高产能利用率。
+- NTM 收入结论：Cloud nearline 是公司收入表唯一决定性变量。Client/Consumer 可贡献约 `$1.4-$1.8B` 稳定收入，但不能改变公司情景；平台/JBOD/OpenFlex/RapidFlex 对收入的直接贡献小于对 drive pull-through 和客户导入速度的贡献。
+- 利润/现金流结论：基准 non-GAAP gross margin `50%-54%`、operating margin `38%-42%` 可成立，因为 Q3 已达 `50.5%/38.6%`，Q4 guide GM 中点 `51.5%`。但利润率上修必须来自 high-capacity mix、ASP 和良率，不应由收入增长自动推导。基准 FCF margin 估计 `25%-32%`，若营运资本稳定可继续高现金转换。
+- 主要传导瓶颈：第一是客户需求是否从 AI 数据量传到 high-capacity HDD PO/LTA；第二是 40TB UltraSMR/ePMR 和 44TB HAMR 的 qualification 到 production revenue；第三是高容量盘良率和 field reliability；第四是 QLC SSD 对 warm tier 的替代边界。
+- 乐观情景成立条件：Q4/FY2027 指引继续上修；Cloud revenue/TB 维持或高于 Q3 的约 `$14.9/TB` 粗略口径；nearline EB growth 高于 mid-20s 路径；40TB UltraSMR/ePMR 在 2026H2 顺利 volume；2027 LTA 同时锁定 EB 和价格；non-GAAP GM 维持 `54%+`。
+- 极度乐观情景成立条件：多模态、agent、主权 AI 和企业私有 AI 同时拉动冷温对象存储；WDC 在 40TB/44TB 上不被 Seagate 拉开；客户接受 UltraSMR/平台软件，且 HDD allocation 继续短缺；利润率不是低毛利系统 pass-through，而是高容量盘 ASP/mix 和利用率共同扩张。
+- 悲观情景触发条件：FY2027 初始指引明显低于 Q4 annualized run-rate；non-GAAP GM 连续两个季度低于 `48%`；nearline EB 增长低于 mid-teens；Cloud revenue share 跌破 `85%`；Cloud revenue per nearline TB 回落到 `$13/TB` 以下；40TB/HAMR qualification 延迟或 field reliability 出问题；QLC 122/245TB SSD 在 warm tier 快速替代并压低 HDD 采购。
+- 后续跟踪数据：1）WDC FY2026Q4 和 FY2027Q1 guide；2）Cloud revenue、nearline EB、Cloud revenue/TB；3）40TB UltraSMR/ePMR 量产客户数和出货；4）HAMR qualification/ramp；5）non-GAAP GM/OM 和 FCF margin；6）Seagate 44TB/50TB 进度；7）QLC SSD 122/245TB 价格、供给和 hyperscaler adoption；8）hyperscaler/NeoCloud capex 和上电节奏；9）platform/JBOD/OpenFlex 是否出现可量化项目或 RPO。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：本报告完成日为 2026-06-12；最新硬财务数据为 WDC FY2026Q3，period ended 2026-04-03，released 2026-04-30；FY2026Q4 为管理层 2026-04-30 指引。项目内 WDC 公司报告日期为 2026-06-11，行业资料日期为 2026-06-10 至 2026-06-11。
+- 主要收入、订单、指引和利润率来源：
+  - WDC FY2026Q3 press release，2026-04-30：https://investor.wdc.com/news-releases/news-release-details/wd-reports-fiscal-third-quarter-2026-financial-results
+  - WDC FY2026Q3 Form 10-Q，filed 2026-05-01：https://investor.wdc.com/node/28216/html
+  - WDC earnings documents and presentations：https://investor.wdc.com/financial-information/earnings-documents
+  - WDC Innovation Day 2026 / storage innovation announcement，2026-02-03：https://www.westerndigital.com/company/newsroom/press-releases/2026/2026-02-03-western-digital-accelerates-storage-innovation-for-ai-era
+  - WDC customer survey on AI infrastructure storage，2026-05-20：https://investor.wdc.com/news-releases/news-release-details/wd-customer-survey-highlights-growing-focus-scale-economics-and
+  - WDC Computex 2026 announcement，2026-06-01：https://investor.wdc.com/news-releases/news-release-details/wd-computex-2026-ai-doesnt-just-run-compute-it-runs-data
+- 项目内公司和行业资料：
+  - `公司调研/AI服务器_存储_EMS/WDC_WesternDigital_公司调研_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_HDD、对象存储与冷温数据存储_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_存储晶圆制造_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026E revenue 约 `$12.82B`，来自 9M FY2026 revenue `$9.172B` 加 Q4 指引中点 `$3.65B`，仅作当前基准，不是估值预测。
+  - Q4 FY2026 guide annualized revenue run-rate 约 `$14.6B`，其中 Cloud implied annualized 约 `$12.9-$13.2B`，用于校准 NTM 基准收入。
+  - 公司 Innovation Day 的 3-5 年模型、100TB+ HDD 路线、60TB ePMR、Dual Pivot 2028 可用、Power-optimized 2027 qualification 等只作为长期技术路线和极度乐观/附录跟踪，不进入 NTM 基准收入。
+  - 本报告未使用金融市场价格、PE/P/S、目标价、评级、全公司排序或 `特征量化/` 下游模型作为经营价值传导证据。
+- 主要来源：见上列 WDC 一手资料、10-Q、项目内正式公司和行业报告。所有缺少订单、客户、RPO、backlog、产品级毛利率或客户取消率明细的字段均按“无法可靠量化”或保守折扣处理。

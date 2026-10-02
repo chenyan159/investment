@@ -1,0 +1,14 @@
+{
+  "name": "research-runner-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Localhost-only dashboard for the standalone research runner.",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test spec/*.spec.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

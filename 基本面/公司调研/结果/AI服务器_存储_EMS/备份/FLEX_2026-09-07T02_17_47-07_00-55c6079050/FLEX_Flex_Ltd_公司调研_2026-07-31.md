@@ -1,0 +1,395 @@
+# 公司：FLEX — Flex Ltd. 全面公司调研
+
+> **报告日期：2026-07-31；公司财年：截至次年 3 月末，FY27Q1 指 2026-06-26 结束季度。** 货币均为美元。股价与估值为盘中快照，会随市场变化。本报告只使用 Flex/SEC/客户与技术生态的一手资料、近半年行业会议和技术资料，以及项目内 `基本面/行业调研/` 的相关产业研究；未调用项目内其他研究目录，也未修改公司索引。
+
+## 核心结论
+
+1. **Flex 已不应只按传统低毛利 EMS 定价，但也不能被误认为 AI 芯片公司。** 它正在从“替品牌商采购、组装、测试”的全球电子制造服务商，转成“EMS + 自有电源/冷却产品 + 预制电力基础设施 + 机架集成”的 AI 基建平台。最强差异化位于**电网到芯片（grid-to-chip）的电力、液冷、模块化数据中心和复杂整机集成**；其中电力/冷却更接近产品公司，计算机架制造仍具有 EMS 的资本和营运资金属性。
+2. **增长正在从愿景变为收入。** FY27Q1 销售额 $7.928B、同比 +20.6%；CPI（Cloud and Power Infrastructure）收入约 $2.2B、同比 +35%，调整后营业利润 $214M、利润率 9.7%。公司把 FY27 CPI 增长指引维持在 **+65%—75%**，并明确 FY28 **+80% 以上**；FY27 全公司收入指引上调至 $33.7B—$35.2B，中值同比约 +23%。[FY27Q1 官方财报页](https://investors.flex.com/financials/quarterly-results/default.aspx)｜[FY27Q1 演示稿](https://s202.q4cdn.com/732614612/files/doc_earnings/2027/q1/presentation/Flex_EP_FY27Q1.pdf)
+3. **订单可见度强，但“backlog 数字”不存在。** 管理层在 FY27Q1 电话会称未来三个季度“90% 以上业务已锁定”，FY26Q4 又称数据中心相关产能与 backlog 已排到未来数年；然而 10-K 不披露美元 backlog、book-to-bill、取消率或标准交期，反而明确客户通常能短期改量、延期或取消。因此最严谨结论是：**排产/客户预测可见度很高，法律不可撤销订单的可见度不明。** [FY27Q1 电话会文字稿](https://s202.q4cdn.com/732614612/files/doc_earnings/2027/q1/transcript/FLEX_FY27Q1_Transcript.pdf)｜[FY26 10-K](https://www.sec.gov/Archives/edgar/data/866374/000086637426000012/flex-20260331.htm)
+4. **当前真正瓶颈是产能安装与爬坡，而非产品需求。** FY27 资本开支指引 $1.4B—$1.6B，远高于历史维持性水平；Dallas、Iowa、California、Mexico、Poland 等基地同时扩产。管理层称 CPI 的“唯一重大限制”是及时安装和爬坡产能。高增长也因此伴随库存、合同资产、应收款和资本开支的现金占用。
+5. **估值已经反映相当部分 AI 预期。** 2026-07-31 12:30 PDT 左右股价 $113.66、市值约 $42.76B；行情商显示滞后口径 trailing P/E 约 49.2 倍。本报告按最新五季滚动重算 GAAP TTM EPS 约 $2.59，对应约 **43.9 倍**；按 FY27 调整后 EPS 指引中值 $4.58，forward P/E 约 **24.8 倍**；TTM P/S 约 **1.46 倍**。这已经不是传统 EMS 的估值，核心变量是 FY28 CPI 翻近一倍能否在不牺牲毛利和现金转换的情况下兑现。[Nasdaq FLEX 行情页](https://www.nasdaq.com/market-activity/stocks/flex)｜[市值历史与实时口径](https://stockanalysis.com/stocks/flex/market-cap/)
+6. **一年后的基准情景并不保守：** 本报告估计 FY28 CPI 收入约 $20.5B（同比约 +80%），乐观 $23.3B（+103%），极度乐观 $27.5B（+140%）。但这些是从公司指引、排产可见度和单位内容量推导的**情景值，不是公司产品级指引**。最大上行来自 800VDC/110kW 电源架、预制配电和整机架；最大风险来自产线爬坡、客户自制/多供、800V 时间表延后、SpinCo 分拆执行和营运资金吞噬。
+
+## 研究口径与证据等级
+
+| 标记 | 含义 | 在本报告中的处理 |
+|---|---|---|
+| **披露值** | 财报、SEC、公司/客户正式公告或数据表直接给出 | 可直接用于历史表和指引 |
+| **管理层口径** | 电话会对订单、产能、客户项目的定性或百分比表述 | 保留原始边界，不升级为不可撤销订单 |
+| **推算值** | 用已披露分部/业务单元收入、产品功率、行业 BOM 和同行利润率交叉计算 | 给出范围、公式和重叠风险 |
+| **情景值** | 基准、乐观、极度乐观的 FY28 预测 | 不是公司指引，不应用于简单相加估值 |
+
+三套收入定义必须区分：
+
+- **CPI 分部收入：** FY27Q1 约 $2.2B，占公司 28%；它包含数据中心，也包含公用事业、电网和其他关键电力场景，不能全部称为 AI。
+- **数据中心收入：** 管理层曾给出 FY26 约 $6.5B、同比约 +35% 的目标/运行口径，约占 FY26 公司收入 23%；它同时跨 Cloud & Cooling、Power 和部分复杂制造。
+- **广义 AI 相关收入：** 再加入 ITS 内先进网络、光互联设备和部分服务器控制板制造。本报告估计 FY27Q1 占比约 30%—36%，但公司没有披露这一口径，不能与 CPI 相加。
+
+评分均为 1—5：5 代表对 AI 技术栈不可缺、交付最紧急、供需最紧、客户最难替换或定价权最强；1 代表通用、宽松、易替换或接近纯成本加成。
+
+## 1. 公司整体业务、投资者定位与三年转型
+
+### 1.1 Flex 到底做什么
+
+Flex（原 Flextronics）在约 30 个国家经营 75 个以上制造和物流基地，服务从设计、采购、印刷电路板/机电件制造、系统集成、测试、物流到售后的全生命周期。FY26 起公司把经营分成三段：
+
+| 分部 | FY26 收入 | FY26 占比 | 主要终端/能力 | 经济属性 |
+|---|---:|---:|---|---|
+| RMS：Regulated Manufacturing Solutions | $10.2B | 36.6% | 医疗、汽车、工业；高合规、高追溯制造 | 认证周期长、客户黏性较高、增长中低个位数至高个位数 |
+| ITS：Integrated Technology Solutions | $11.1B | 39.8% | 通信、网络、消费/生活方式、复杂 IT 产品制造 | 规模大、周转快、客户议价强；先进网络是 AI 邻接增量 |
+| CPI：Cloud and Power Infrastructure | $6.6B | 23.7% | 云/计算机架、存储、液冷、嵌入式电源、中低压配电、预制电力舱 | 当前增长最快；产品/IP 占比提高，利润率与资本强度同步上升 |
+
+FY26 业务单元更细的收入为：Industrial $3.8B（+13%）、Automotive $3.6B（-2%）、Healthcare $2.8B（+5%）、Communications $5.5B（+6%）、Lifestyle $5.6B（-9%）、Cloud & Cooling $4.5B（+29%）、Power $2.1B（+61%）。这说明公司表面是多元 EMS，实际增量高度集中在最后两项。[FY26Q4 演示稿](https://s202.q4cdn.com/732614612/files/doc_earnings/2026/q4/presentation/Flex_EP_FY26Q4.pdf)
+
+在 AI 产业链中的位置可概括为：
+
+`电网/变电站 → 中压开关柜与 e-house → 低压配电/母线槽/PDU → 400/800V 电源架、BBU/CBU/CESS → 48/54V 中间总线电源 → GPU/CPU VRM；同时提供冷板/CDU → 服务器/交换机/机架制造、集成、验证 → 现场部署与生命周期服务。`
+
+Flex 不拥有 GPU、交换 ASIC 或 HBM；它的价值是把这些高价器件变成可按时上电、散热、联网并通过验收的系统。随着单机架从约 125kW 走向 400—880kW，约束由“买到芯片”扩展为“拿到电、变换电、排出热、完成系统测试”。这使 Flex 的电力和热管理资产获得高于普通 EMS 的战略地位。[项目行业调研：机柜级供电与服务器电源架构](../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md)｜[项目行业调研：AI 服务器整机与机架集成](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-07-10.md)
+
+### 1.2 投资者心中的公司
+
+- **旧叙事：** 大型、周期性、低个位数利润率的 EMS；收入大但客户掌握设计和核心芯片，制造商赚取薄利，库存与应收占用高。
+- **新叙事：** AI 基建“卖铲人”，以电力、液冷、模块化和美国本土制造解决机械/电气瓶颈；CPI 兼具 Vertiv/Eaton 式产品属性和 Foxconn/Celestica 式制造属性。
+- **估值重估催化：** CPI 连续高增长、Google/Amazon/Cerebras 等公开项目、800V 与 NVIDIA Vera Rubin 协同、S&P 500 纳入，以及把 CPI 分拆成独立公司以提高透明度。[Flex 2026-06-09 S&P 500 公告汇总](https://flex.com/newsroom)
+- **仍应保留的折价：** 无美元 backlog；计算机架收入可能含大额低毛利材料；客户有取消和多供权；FY27 大扩产压低自由现金流；2027 年分拆会重置资本结构和可比口径。
+
+### 1.3 最近三年的重大业务变动、转型与收购
+
+| 日期 | 交易/变化 | 金额与已知财务 | 战略含义 |
+|---|---|---:|---|
+| 2024-01-02 | 完成 Nextracker 剩余权益分拆 | 每股 FLEX 获约 0.17 股 NXT；合计分发 74.43M 股 | 退出太阳能跟踪器控股，留下更纯粹的制造与电力平台；也证明管理层愿意用分拆释放价值。[官方公告](https://investors.flex.com/news/news-details/2024/FLEX-ANNOUNCES-COMPLETION-OF-THE-SPIN-OFF-OF-ITS-REMAINING-INTEREST-IN-NEXTRACKER/default.aspx) |
+| 2024-11 | 收购 Crown Technical Systems | $325M 现金；当时预计 FY25 收入约 $120M、高十位数 EBITDA margin | 获得中压开关柜、保护控制、模块化 power pod/e-house 和美国工程制造能力；从机柜内电源向“电网到机房”延伸。[官方公告](https://investors.flex.com/news/news-details/2024/Flex-Completes-Acquisition-of-Crown-Technical-Systems/default.aspx) |
+| 2024-11 | 收购 JetCool | SEC 后续披露总对价约 $53M | 获得 microconvective direct-to-chip 冷板、CDU 和控制技术，填上液冷缺口；小收购、潜在高毛利，但仍在大客户资格认证期。[官方公告](https://investors.flex.com/news/news-details/2024/Flex-Acquires-JetCool-to-Expand-Data-Center-and-Power-Portfolio/default.aspx) |
+| FY26Q1 | 收购波兰电力制造业务 | 约 $35M | 管理层称欧洲电力产能近乎翻倍；缩短本地交期并降低跨境交付风险。 |
+| 2025—2026 | Dallas、Milpitas、Mexico、Poland 等扩产；推出 AI Infrastructure Platform | FY27 capex 指引 $1.4B—$1.6B | 从单点器件/代工转为预制、集成、测试、现场可落地的平台交付；平台宣称可把部署时间缩短最高约 30%。[Flex AI 数据中心产品与资料中心](https://flex.com/industries/data-center) |
+| 2026-05-04 | 完成 Electrical Power Products（EP²）收购 | 交易约 $1.1B 现金；税收利益后有效价约 $1.0B；目标公司年收入约 $323M、调整后 EBITDA margin 中高十位数 | 增加中西部工程定制控制/继保柜、模块控制建筑和公用事业客户；补强电网侧并扩大美国关键电力产能。[完成公告](https://investors.flex.com/news/news-details/2026/Flex-Completes-Acquisition-of-Electrical-Power-Products-EP/default.aspx) |
+| 2026-05-05 | 宣布分拆 CPI 为独立 SpinCo | 目标 2027Q1 日历年完成；2026-09 计划提交 Form 10，2026-11-10 投资者日 | SpinCo 由 Revathi Advaithi 任 CEO，保留 power/cloud/thermal；剩余 Flex 由 Michael Hartung 任 CEO，预计低至中个位数增长。分拆提高透明度，也带来税务、债务分配、客户/系统割裂风险。[官方交易公告](https://investors.flex.com/news/news-details/2026/Flex-Announces-Intention-to-Spin-Off-its-Cloud-and-Power-Infrastructure-Segment-into-a-New-Independent-Publicly-Traded-Company/default.aspx) |
+
+### 1.4 最新股价、估值、增长与利润率
+
+| 指标 | 2026-07-31 口径 | 计算/说明 |
+|---|---:|---|
+| 股价 | **$113.66** | 约 12:30 PDT 盘中；当日区间约 $111.99—$119.00 |
+| 市值 | **$42.76B** | 行情商盘中值；隐含稀释前后股数约 376M |
+| 行情商 trailing P/E | **49.2x** | 其 EPS $2.31 尚未完整纳入刚发布季度，故仅作市场屏幕值 |
+| 重算 GAAP TTM P/E | **43.9x** | FY26 EPS 约 $2.33 - FY26Q1 $0.50 + FY27Q1 $0.76 = $2.59；$113.66 / $2.59 |
+| Forward P/E | **24.8x** | FY27 调整后 EPS 指引 $4.42—$4.74，中值 $4.58；不是 GAAP 口径 |
+| TTM P/S | **1.46x** | TTM 收入约 $29.25B = FY26 $27.90B - $6.575B + $7.928B |
+| 最新季度收入增速 | **+20.6%** | $7.928B / $6.575B - 1；FY26 全年为 +8% |
+| 最新季度 GAAP 毛利率 | **9.4%** | 毛利约 $747M / $7.928B；调整后毛利率 9.6% |
+| 最新季度 GAAP 净利率 | **3.6%** | GAAP 净利润 $285M / $7.928B |
+| TTM GAAP 净利率 | **约 3.3%** | TTM 净利润约 $973M / $29.25B |
+| 最新季度调整后营业利润率 | **6.7%** | $534M / $7.928B；CPI 单段为 9.7% |
+
+**解释：** 从 49 倍屏幕 P/E 到 25 倍 forward P/E 的巨大差距来自 EPS 增长和非 GAAP 调整，而不是股票突然便宜一半。FY27 分拆成本、股权激励、无形资产摊销以及新增债务利息都会造成 GAAP 与 adjusted 的落差。估值判断应同时盯住 CPI 利润率和自由现金流，不能只看调整后 EPS。
+
+### 1.5 资产负债表与财务健康度
+
+| 2026-06-26 | 数值 | 诊断 |
+|---|---:|---|
+| 现金 | $2.840B | 绝对流动性充足，但很大部分来自当季新增债务和并购融资 |
+| 应收账款 / 合同资产 / 存货 | $5.036B / $1.386B / $6.453B | 三项合计 $12.875B，相当于季度收入 1.62 倍；快速扩产的核心现金风险 |
+| 流动资产 / 流动负债 | $18.237B / $13.220B | 流动比率 **1.38x**，尚可 |
+| 排除存货的流动比率代理 | **0.89x** | 低于 1；若客户预测下修或回款延迟，不能只靠非存货流动资产覆盖短债 |
+| 长期债务 / 股东权益 | $5.219B / $5.500B | 债务权益比约 **0.95x**；EP² 后杠杆显著上升 |
+| 净债务 | **$2.379B** | 债务减现金；按推算 TTM 调整后 EBITDA 约 $2.4B—$2.5B，净杠杆约 1.0x，仍可控 |
+| FY27Q1 经营现金流 / capex / FCF | $276M / $236M / $41M | 会计利润强而现金转换弱；公司因扩产与分拆把 FY27 FCF 转换率从约 60% 下修至约 40% |
+| 客户预付款/递延收入等 | $2.053B 流动负债 | 客户在一定程度上为原料与产能提供资金，缓冲库存风险，但也对应未来履约义务 |
+
+**健康度结论：中等偏健康（6.5/10），但不是“轻资产健康”。** 净杠杆可控、盈利和客户预付款提供支撑；风险集中在三个地方：① EP² 并购使债务和商誉/无形资产跳升；② 存货、应收和合同资产随 CPI 加速；③ FY27 capex 使自由现金流短期接近盈亏平衡。若 FY28 CPI 如期大增，固定资产和营运资金能高周转；若 800V 或客户项目延期，库存减值、产能利用率和利息费用会同时恶化。
+
+## 2. 最新及最近四次财报
+
+### 2.1 五个季度核心数字
+
+| 财报季度（截止日） | 销售额 / 同比 | GAAP 净利润 | 调整后营业利润 / margin | 调整后 EPS | 分部收入、增速与调整后利润率 | CPI/数据中心收入与公司占比 |
+|---|---:|---:|---:|---:|---|---|
+| **FY26Q1**（2025-06-27） | $6.575B / +4.1% | $192M | $395M / 6.0% | $0.72 | 旧口径 Reliability $2.9B/-2%，OI $172M/6.0%；Agility $3.7B/+10%，OI $240M/6.5% | CPI 重列推算约 **$1.63B/24.8%**；管理层称数据中心全年目标 +35%，季度大致符合 |
+| **FY26Q2**（2025-09-26） | $6.804B / +4.0% | $199M | $409M / 6.0% | $0.79 | Reliability $3.0B/+3%，OI $197M/6.5%；Agility $3.8B/+4%，OI $227M/6.0% | CPI 推算约 **$1.50B/22.0%**；数据中心约 +35%—40%，其中 power 预计下半年快于平均 |
+| **FY26Q3**（2025-12-31） | $7.058B / +7.7% | $239M | $460M / 6.5% | $0.87 | Reliability $3.2B/+10%，OI $233M/7.2%；Agility $3.8B/+6%，OI $239M/6.3% | CPI 推算约 **$1.65B/23.4%**；以全年 $6.6B 和 Q1/Q4 重列倒推，误差约 ±$0.1B |
+| **FY26Q4**（2026-03-31） | $7.477B / +17% | 约 $250M | $500M / 6.7% | $0.93 | RMS $2.7B/+13%，OI $180M/6.6%；ITS $2.9B/+13%，OI $147M/5.0%；CPI $1.8B/+31%，OI $182M/9.9% | **约 $1.84B/24.6%**；CPI 为披露值，AI 占比未单列 |
+| **FY27Q1**（2026-06-26） | **$7.928B / +20.6%** | **$285M** | **$534M / 6.7%** | **$1.00** | RMS $2.7B/+12%，OI $176M/6.6%；ITS $3.1B/+20%，OI $158M/5.2%；CPI $2.2B/+35%，OI $214M/9.7% | **$2.2B/27.7%** 为 CPI；纯数据中心/AI 推算约 $1.8B—$2.1B/23%—27% |
+
+注：FY26Q1—Q3 当时仍以 Reliability/Agility 对外报告；CPI 季度数为年度和已重列端点的约束推算，不能冒充法定分部数字。分部收入均因四舍五入与总收入略有差异。历史来源：[FY26Q1](https://s202.q4cdn.com/732614612/files/doc_earnings/2026/q1/presentation/Flex_EP_FY26Q1.pdf)、[FY26Q2](https://s202.q4cdn.com/732614612/files/doc_earnings/2026/q2/presentation/Flex_EP_FY26Q2.pdf)、[FY26Q3](https://s202.q4cdn.com/732614612/files/doc_earnings/2026/q3/presentation/Flex_EP_FY26Q3.pdf)、[FY26Q4](https://s202.q4cdn.com/732614612/files/doc_earnings/2026/q4/presentation/Flex_EP_FY26Q4.pdf)、[FY27Q1](https://s202.q4cdn.com/732614612/files/doc_earnings/2027/q1/presentation/Flex_EP_FY27Q1.pdf)。
+
+### 2.2 订单、交期（Lead time）、bookings、取消率与供给证据
+
+| 季度 | Backlog / bookings / B2B | 交期与产能 | 客户/项目与取消证据 | 研究判断 |
+|---|---|---|---|---|
+| FY26Q1 | 未披露美元 backlog、bookings、B2B | 波兰交易使欧洲 power 产能近翻倍；Dallas 爬坡；管理层称现有/新增产能足以压低交期 | 未披露订单金额或取消率 | 数据中心 FY26 $6.5B/+35% 目标已有项目支撑，但订单法律强度未知 |
+| FY26Q2 | 未披露；公司仍以年度收入可见度表述 | Poland、Guadalajara、美国 compute；Dallas、Fontana、Columbia power；JetCool 冷却共同扩张 | 宣布 Amazon 合作；SEC 后续显示 Amazon 获最多 3.86M 股、$51.29 行权价的采购挂钩认股权证，但截至 FY26 年末尚未归属 | Amazon 的采购挂钩安排是采用信号，不是最低采购承诺或订单金额 |
+| FY26Q3 | 未披露 | capex $145M；CPI/数据中心产能继续装机 | 没有新增可量化客户订单 | 只能从收入和营运资金上升验证，不足以构造 B2B |
+| FY26Q4 | 管理层称数据中心 capacity/backlog **未来数年基本订满**；无金额 | FY27 capex $1.4B—$1.6B；CPI capex 强度显著高于 RMS/ITS | 披露 Google 多年项目，覆盖计算/机架/机柜、400V/800VDC、分布式电力、数据中心/公用事业；客户还包括 hyperscaler、colo、neocloud，但未全部点名 | “多年订满”代表排产和客户预测，不等于不可取消采购订单 |
+| FY27Q1 | **未来三个季度 90%+ 业务已锁定**；仍无美元 backlog/B2B | 公司称 FY27/FY28 安装计划正常，唯一重大限制是装机与爬坡；Dallas/Crown 和 Iowa/EP² 面对容量约束 | Power 增长 70%+；Cloud/compute 新项目爬坡；Cerebras 扩产；液冷产品仍在若干终端客户资格认证中 | 短期收入可见度很高，FY28 仍取决于产线按期、良率和客户平台进度 |
+
+**取消率为何不能伪造：** Flex 10-K 明确说明客户常可在短通知下改变数量、地点、交付时间，甚至便利终止，很多协议没有最低量承诺；公司有时也无法完全收回在制品。因此本报告不把“90% booked”转写成 90% 不可取消订单，也不给出虚假的 0%—5% 取消率。可以验证的是：FY26 年末客户控制库存达 $1.3B、客户工作资本预付款增加、合同资产和存货上升——客户确实为项目锁料，但风险并未完全转移。[FY26 10-K 风险与营运资金披露](https://www.sec.gov/Archives/edgar/data/866374/000086637426000012/flex-20260331.htm)
+
+## 3. FY27Q1 最新指引、业务占比与重点产品
+
+### 3.1 最新指引及分部收入模型
+
+| 口径 | 最新指引/实际 | 同比增长 | 备注 |
+|---|---:|---:|---|
+| FY27Q2 销售额 | $7.95B—$8.25B | 中值约 +19% | 调整后营业利润 $535M—$565M；调整后 EPS $1.00—$1.07，中值约 +32% |
+| FY27 全年销售额 | **$33.7B—$35.2B** | 中值约 **+23%** | 从此前 $32.3B—$33.8B 上调 |
+| FY27 调整后营业利润率 | **7.0%—7.2%** | FY26 约 6.3% | 产品组合、CPI 规模和效率改善共同推动 |
+| FY27 调整后 EPS | **$4.42—$4.74** | 中值约 **+39%** | 不含分拆后口径变化；税率约 21% |
+| RMS | 管理层：中至高个位数 | 约 +6%—9% | 医疗、工业、汽车；非本报告 AI 核心 |
+| ITS | 管理层：高个位数至低双位数 | 约 +8%—12% | 通信/先进网络与复杂制造是主要增量，Lifestyle 不是 |
+| CPI | **+65%—75%** | FY27Q2 预计 +45%—55% | FY28 指引性表述为 +80% 以上；最突出、资本投入最大 |
+
+按 FY26 基数与管理层分部增长中值推算，FY27 RMS 约 $10.8B—$11.1B（31%—32%）、ITS 约 $12.0B—$12.4B（35%—36%）、CPI 约 $10.9B—$11.6B（32%—34%）。也就是说，CPI 将在一年内从 FY26 的 23.7% 接近三分之一，并在 FY28 很可能成为最大分部。
+
+### 3.2 CPI 重点业务和产品：披露值与模型交叉验证
+
+| 重点业务/产品 | 代表产品、型号与公开项目 | FY26 披露基数 | FY27 收入贡献推算 | FY27 增速推算 | 利润率推算与交叉验证 |
+|---|---|---:|---:|---:|---|
+| **关键电力：中压至机房配电** | Crown/EP² 的 switchgear、relay/control panel、modular e-house/power pod；Databar、IBar、Resinbar；PDU/RPP | Power 合计 $2.1B/+61%；Crown 收购时年收入约 $120M；EP² 年收入约 $323M | **$2.7B—$3.2B** | +55%—80% | 推算毛利 25%—35%、营业 12%—20%；Crown/EP² 的高十位数 EBITDA、行业预制电力舱 18%—26% 毛利/8%—15%+ 营业率支持高于 EMS 的判断 |
+| **机柜级嵌入式电源** | GB300 33kW shelf；Vera Rubin NVL72 110kW 3RU shelf（`NVD-R-11E4ADT00-101`）；800VDC Power Rack；30kW CESS；BMR317/BMR352/BMR353 等 IBC | 包含在 Power $2.1B，未单列 | **$1.0B—$1.3B** | +80%—120% | 推算毛利 20%—35%、营业 10%—20%；标准化电源架/模块的 IP 和认证价值高于机架代工，800V 初期 NRE/低良率可能压低首年利润 |
+| **云计算、服务器与机架集成** | hyperscaler 私有机架、server/storage、网络与机柜；Google 多年项目；Cerebras CS-3/WSE-3 整机架，美国 Milpitas 产能 2026 年扩大 7 倍 | Cloud & Cooling $4.5B/+29% | **$6.5B—$7.0B** | +45%—65% | 推算毛利 8%—14%、营业 4%—8%；系统总收入大但 GPU/HBM 等高值材料利润薄，复杂液冷 L11/L12 与整架测试可提高至行业毛利 10%—17% |
+| **液冷与热管理** | JetCool SmartPlate/SmartLid；SmartSense CDU 300kW、2—6 台并联最高约 1.8MW；Dell XE7745 turnkey（最高 8× RTX PRO 6000 Blackwell） | 包含在 Cloud & Cooling；收购规模仅 $53M，收入未披露 | **$0.3B—$0.6B**，与云计算行有重叠，不能重复相加 | +80%—150% | 独立冷板/流控产品毛利推算 30%—50%，完整方案 20%—35%；管理层明确大型客户 CDU/冷板仍在资格认证，故高增速基数小、短期有爬坡拖累 |
+| **先进网络制造（ITS，AI 邻接）** | 51.2T/102.4T 交换系统、网络/光学验证、交换机与机柜集成；客户/型号未披露 | Communications $5.5B/+6%，其中 AI 比例未披露 | **$1.5B—$2.2B** 的 AI 相关部分，可信度较低 | +15%—30% | 推算毛利 8%—14%、营业 4%—8%；行业龙头 Celestica CCS 利润率和交换系统 BOM 说明收入弹性高但 ASIC/光模块价值不归 Flex。不能声称 Flex 是领先以太网交换 ODM |
+| **安全控制模块小业务** | SCM202A，OCP DC-SCM 2.0，含 BMC SoC、Root of Trust、TPM、DC-SCI 2.0 接口 | 未单列，估计低于 $30M | **<$30M—$60M** | 基数太小，可能 >100% | 推算毛利 15%—30%；OCP Marketplace 认证降低采用门槛，但 ASPEED/服务器 ODM 和客户自研压限定价权 |
+
+产品与项目来源：[110kW Vera Rubin NVL72 电源架数据表](https://flex.com/resources/power-shelf-for-nvidia-vera-rubin-nvl72)、[800VDC Power Rack 与 NVIDIA 协作公告](https://investors.flex.com/news/news-details/2026/Flex-Launches-800-VDC-Power-Rack-for-Next-Generation-NVIDIA-AI-Infrastructure/default.aspx)、[COMPUTEX 2026 产品公告](https://investors.flex.com/news/news-details/2026/Flex-Showcases-Scalable-Power-Solutions-for-Next-Generation-AI-Infrastructure-at-COMPUTEX-2026/)、[Cerebras 2026-07-09 扩产公告](https://investors.flex.com/news/news-details/2026/Flex-and-Cerebras-Expand-Partnership-to-Scale-American-Manufacturing-of-Cerebras-AI-Supercomputers/default.aspx)、[JetCool 模块 CDU 行业报道](https://www.datacenterdynamics.com/en/news/flex-and-jetcool-launch-new-modular-cdu/)、[SCM202A 产品资料](https://flex.com/downloads/product-brief-flex-secure-control-module-dc-scm-2-0-scm202a)。利润率和行业容量参照：[项目行业调研：低压配电/PDU/母线槽](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-07-10.md)、[项目行业调研：液冷小组件与流体控制](../../行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-07-10.md)。
+
+### 3.3 最突出、最侧重与暂不展开业务
+
+**公司最侧重的优先级：** ① CPI 产能安装；② critical power/prefabricated pods，解决电网和中压瓶颈；③ 400/800V rack power 与 BBU/CESS；④ 高密度 compute/rack manufacturing；⑤ 将 JetCool 的冷板/CDU 嵌入上述平台。证据不是产品发布数量，而是 CPI +65%—75% 指引、FY27 $1.4B—$1.6B capex、EP² $1.1B 并购和 SpinCo 组织设计。
+
+**本报告列出但不逐产品预测的低增长/非 AI 项目：**
+
+- Lifestyle：FY26 $5.6B、-9%，消费电子/生活方式需求和客户换代周期主导；体量大但不是 AI 增量。
+- Automotive：FY26 $3.6B、-2%；汽车电子长期内容量上升，但近期平台调整和行业库存更重要。
+- Healthcare：FY26 $2.8B、+5%；药物递送、诊断和医疗器械具备黏性，却不属于 AI 基建。
+- Industrial 中非数据中心电网、可再生能源、机器人等：部分增长较好，但与本题 AI 电力产品存在披露重叠，不能全部计入 AI。
+- 通用存储、消费网络、非 AI 通信设备：可能受益于更新周期，但没有足够产品级披露。
+
+这些业务并非没有价值；它们为分拆后的剩余 Flex 提供现金流和客户分散，只是在未来一年不太可能决定当前 AI 溢价。
+
+### 3.4 过去半年会议、行业论坛与“渠道消息”筛选
+
+| 时间/场合 | 可验证信息 | 可信度与用途 |
+|---|---|---|
+| 2026-03 NVIDIA GTC | Flex 展示与 NVIDIA 协作的 800VDC Power Rack，披露 125kW 至最高 880kW、可选 BBU/CBU/CESS | 高：生态共同开发与原型/设计赢单证据；仍不是终端客户批量订单 |
+| 2026-04 Data Center Dynamics 行业访谈 | Flex 管理层把瓶颈定义为 power、heat、scale，强调 grid-to-chip 与 compute/network/storage 集成 | 中：行业媒体但内容带公司宣传属性；只用于验证行业焦点，不用于预测订单金额 |
+| 2026-06 COMPUTEX | 发布 110kW 3RU Vera Rubin NVL72 power shelf、30kW CESS、BMR317 等，并给出产品规格/认证 | 高：产品已从概念进入数据表和工程导入；缺客户份额与批量出货量 |
+| 2026-07 公司技术博客/数据中心资料中心 | 连续讨论中压瓶颈、标准碎片化、模块化把工期缩短约 30%、Cerebras 扩产 | 中高：技术方向与产能动作可核验，市场规模和节省幅度仍是公司口径 |
+| 公开投资论坛/社交媒体 | Q4 后讨论重点集中于 CPI 分拆、AI 重估和单日股价大涨 | 低：可描述投资人情绪，不能证明客户、订单、毛利率或产能；本报告未把匿名“Google/Amazon 爆单”升级为事实 |
+
+因此，本报告所用最接近“渠道验证”的材料是**公开客户项目、采购挂钩 warrant、会议实物/数据表、工厂扩产与营运资金变化**。没有可独立交叉验证的匿名论坛订单金额、交付窗口或取消率；这些缺口已作为模型折损，而不是用传闻填空。
+
+## 4. 每项高增长或关键业务的当前收入贡献与战略评分
+
+下表收入是 **FY27Q1 单季推算**；为了让分部总额可核对，计算机架一行不含单列的液冷，critical power 与 rack power 也分开。CPI 四项合计中值约 $2.20B。网络和 SCM 位于 ITS，不能与 CPI 加总后再称为数据中心分部收入。
+
+| 业务 | FY27Q1 收入贡献推算 | 同比增速推算 | AI 栈位置 | 重要性 | 时间紧急性 | 供需紧张 | 垄断/替换壁垒 | 溢价能力 | 结论 |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---|
+| 关键电力、预制 power pod/e-house、开关柜/母线/PDU | **$0.55B—$0.70B** | +55%—80% | 电网/中压至机房低压，决定项目能否按期受电 | 5 | 5 | 5 | 4 | 4 | 电气工程、UL/IEC、现场调试和多年项目经验构成壁垒；不是全市场垄断，但短期合格供给有限 |
+| 110kW/800V 电源架、CESS/BBU、BMR 模块 | **$0.20B—$0.30B** | +80%—120% | 机柜至板级，把 3 相 AC/800VDC 变为 52/48V 和芯片可用电压 | 5 | 5 | 4 | 4 | 4 | 与 NVIDIA 平台协同和效率/瞬态响应形成设计导入优势；Delta、Lite-On 等仍可竞争 |
+| 云计算、服务器、存储与整机架集成 | **$1.25B—$1.45B** | +40%—60% | 将 GPU/CPU/网络、电源、液冷整成可上线系统 | 5 | 5 | 4 | 3 | 2 | 排产和全架验证紧，但客户通常保持双供；收入大、单位利润率低 |
+| JetCool 液冷/热管理 | **$0.05B—$0.10B** | +80%—150% | 冷板—歧管—CDU，把芯片热量移到设施水环 | 5 | 4 | 3 | 3 | 4 | 微射流可提高局部换热，但大型客户认证仍在进行；小收入、高期权价值 |
+| AI 先进网络制造与系统验证 | **$0.35B—$0.55B** | +15%—30% | GPU fabric 的交换机、机架、布线和系统测试 | 4 | 4 | 2 | 2 | 2 | ASIC/光模块价值大多归上游；Flex 缺少公开的主流交换机设计赢单，当前应按 AI 邻接制造看待 |
+| SCM202A 安全控制模块 | **<$15M** | 基数过小，N/M | BMC、安全根、带外管理和模块化服务器控制 | 3 | 2 | 1 | 2 | 2 | OCP 认证有利导入，但开放标准本身降低锁定；是不能漏掉的小产品，不是近期利润中心 |
+
+这里的“垄断能力”不是市场份额，而是**客户在某一平台/站点完成设计冻结后更换 Flex 的难度**。Flex 最强壁垒是把配电、机架电源、冷却和制造进度统一负责；单个 PSU、CDU 或机架本身均有强劲替代者。
+
+## 5. 一年后各关键业务的基准、乐观、极度乐观预测
+
+### 5.1 预测框架
+
+- **基准：** FY27 指引兑现；FY28 CPI 按公司“80%+”的下沿增长；客户预测有 8%—12% 延期/降量折损；新增产线约 90% 按期爬坡。
+- **乐观：** Google/Cerebras 和未点名 hyperscaler/colo 项目按期；800V 在 Vera Rubin 周期形成多客户量产；JetCool 通过核心资格认证；预测折损仅 3%—6%。
+- **极度乐观：** 400—800V 双周期重叠、AI 园区电力仍严重短缺、客户以预付款和加急费争夺产能；Flex 通过额外外协/班次/工厂把名义能力转成收入。该情景概率低，主要用于测上限。
+
+评分串顺序为 **重要性/紧急性/供需紧张/替换壁垒/溢价能力**。
+
+| 业务 | FY27E 收入基准 | FY28 基准 | FY28 乐观 | FY28 极度乐观 |
+|---|---:|---|---|---|
+| 关键电力与预制系统 | $2.95B | **$5.2B / +76%**；5/5/5/4/4 | **$6.0B / +103%**；5/5/5/4/4 | **$7.0B / +137%**；5/5/5/4/5 |
+| 机柜级/嵌入式电源 | $1.15B | **$2.3B / +100%**；5/5/4/4/4 | **$3.0B / +161%**；5/5/5/4/4 | **$3.8B / +230%**；5/5/5/5/5 |
+| 计算、服务器与机架集成（不含单列冷却） | $6.75B | **$11.8B / +75%**；5/5/4/3/2 | **$12.5B / +85%**；5/5/5/3/3 | **$14.0B / +107%**；5/5/5/3/3 |
+| 液冷与热管理 | $0.45B | **$1.3B / +189%**；5/4/3/3/4 | **$1.8B / +300%**；5/5/4/4/4 | **$2.7B / +500%**；5/5/5/4/5 |
+| **CPI 合计** | **$11.3B** | **$20.6B / +82%** | **$23.3B / +106%** | **$27.5B / +143%** |
+| AI 先进网络制造（ITS 内） | $1.8B | **$2.35B / +31%**；4/4/2/2/2 | **$3.2B / +78%**；5/4/3/3/3 | **$4.3B / +139%**；5/5/4/3/3 |
+| SCM202A/后续 DC-SCM | 约 $30M | **$70M / +133%**；3/2/1/2/2 | **$150M / +400%**；3/3/2/3/3 | **$300M / +900%**；4/4/3/3/3 |
+
+**为什么 FY28 CPI 基准看似夸张却符合公司口径：** FY26 CPI $6.6B，FY27 若增长 70% 约为 $11.2B，再增长 80% 就是约 $20.2B。报告的 $20.6B 只比这个机械推导略高。真正需要质疑的不是算术，而是：扩产是否按时、客户提供的 GPU/ASIC 是否到位、收入确认是总额还是净额、毛利率能否在爬坡中维持。
+
+### 5.2 情景下的利润含义
+
+| 情景 | CPI 收入 | 组合营业利润率推算 | CPI 营业利润推算 | 关键假设 |
+|---|---:|---:|---:|---|
+| 基准 | $20.6B | 10.0%—11.0% | $2.1B—$2.3B | 高利润 power/cooling 抵消计算制造薄利；产线良率正常 |
+| 乐观 | $23.3B | 10.8%—12.0% | $2.5B—$2.8B | 标准化产品复用、采购规模和工厂利用率共同改善 |
+| 极度乐观 | $27.5B | 11.5%—13.0% | $3.2B—$3.6B | 短缺带来加急/NRE 溢价且无大规模降价；这是最脆弱假设 |
+
+FY27Q1 CPI 已实现 9.7% 调整后营业率，管理层预计 FY27 至少同比提高约 100bp，因此基准并未假定软件式利润率。若 compute 占比大幅高于模型，收入可以更高但利润率会低；若 critical power、800V 和冷却占比提高，收入稍低也可能创造更多利润。
+
+## 6. BOM、每 MW / 每 rack / 每 GPU / 每 optical port 内容量与价格传导链
+
+### 6.1 单位内容量
+
+以下为**行业系统 BOM 与 Flex 可获取内容量模型**，不是 Flex 报价单。机架基准采用 72 GPU、约 110—142kW；800V Power Rack 可容纳 8 个 110kW shelf、服务多个计算机架，因此不能把整座 880kW 电源架金额只除以 72 个 GPU。
+
+| 产品/系统 | 主要 BOM 拆分 | 系统/产品金额 | 每 IT MW | 每 72-GPU rack | 每 GPU | 每 optical port |
+|---|---|---:|---:|---:|---:|---:|
+| **中低压配电、PDU、母线、power pod** | 铜/铝导体 15%—50%；断路器/保护 15%—40%；柜体/结构 10%—18%；控制计量 5%—20%；工程、FAT、装配物流 15%—30% | Flex 可获取约 **$0.9M—$1.8M/IT MW**；更完整预制系统可到约 $2.2M/MW | $0.9M—$2.2M | 110kW：$99k—$242k；142kW：$128k—$312k | 约 $1.4k—$4.3k | 不适用 |
+| **110kW 52V power shelf** | 6×18.4kW PSU 约 50%—60%；busbar/frame 10%—15%；PSC/telemetry 5%—8%；thermal 5%—8%；测试/NRE/服务 12%—18% | **$45k—$100k/rack** 推算 | $0.41M—$0.91M | $45k—$100k | $625—$1,390 | 不适用 |
+| **800VDC Power Rack / sidecar** | 8×110kW shelf；800V bus/protection；CESS/BBU/CBU；控制与通信；结构、冷却、系统测试 | **$0.8M—$2.5M/880kW power rack**，选配储能决定区间 | $0.91M—$2.84M | 若服务 8 个 NVL72：折算 $100k—$313k/计算架 | 按 576 GPU：$1.4k—$4.3k | 不适用 |
+| **BMR317 等 IBC** | 磁性器件、功率半导体、控制 IC、基板/封装、热管理和测试 | BMR317 800W 连续/2kW 峰值、效率最高约 97.2%；推算 2—4 颗/GPU、$50—$150/颗 | 约 $0.05M—$0.30M | $7k—$43k | **$100—$600** | 不适用 |
+| **JetCool 冷板+流控+CDU** | 冷板 $20k—$48k；QD $9k—$24k；manifold $7k—$18k；软管 $6k—$15k；泵阀/PHE/过滤 $11k—$30k；传感器 $3k—$9k | **$56k—$144k/142kW rack**；高热流 Rubin 可达 $95k—$190k | $0.39M—$1.34M | $56k—$190k | $780—$2,640 | 不适用 |
+| **AI 服务器/机架制造与集成** | 完整系统：GPU/HBM 68%—80%、CPU/内存 4%—7%、网络 5%—10%、板卡 2%—5%、电源 2%—5%、液冷 2%—5%、机箱/测试等 4%—10% | 完整机架 ASP 约 $4.5M—$9M；Flex 真正 assembly/test/power/cooling value-add 约 **3%—7%**，即 $135k—$630k | $0.95M—$4.44M value-add | $135k—$630k | $1.9k—$8.8k | 取决于网络口数，不宜分摊 |
+| **AI 以太网交换系统制造** | ASIC 35%—40%；PCB/高速连接 16%；控制 5%—6%；power/cooling 12%—16%；chassis/assembly/test 11%—13%；固件/NRE/质保 12%—18%；光模块另计 | 64 口交换系统（不含光）模型 $40k—$120k；Flex 型制造/测试可获取 15%—25% | 不适用 | 视每架交换机数量 | 不适用 | **$95—$470/port** 的制造内容；光模块自身通常不归 Flex |
+| **SCM202A** | BMC SoC、RoT/TPM、内存/存储、PCB、连接器、固件与测试 | 推算 $150—$400/服务器；18—36 台服务器/架 | $0.02M—$0.10M | $3k—$14k | $40—$200 | 不适用 |
+
+BOM 参照：[项目行业调研：AI 服务器整机与机架集成](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-07-10.md)、[项目行业调研：机柜级供电](../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md)、[项目行业调研：低压配电/PDU/母线](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-07-10.md)、[项目行业调研：液冷组件](../../行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-07-10.md)、[项目行业调研：AI 以太网交换系统](../../行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-07-10.md)、[项目行业调研：服务器 BMC/嵌入式控制](../../行业调研/AI服务器_存储_芯片/行业调研_服务器BMC、MCU与嵌入式控制_2026-07-10.md)。
+
+### 6.2 价格传导链
+
+1. **上游原料/器件：** 铜、铝、钢、断路器、功率半导体、磁性器件、泵阀、ASIC、CPU/GPU。通用 EMS 合同多通过季度重报价、材料 pass-through 或客户供料转嫁价格，Flex 赚采购/周转/制造费，不应把整机芯片价格当成高毛利内容。
+2. **NRE 与资格认证：** 电气单线图、热设计、DVT/PVT、UL/IEC、客户 AVL 和现场 FAT/SAT 先发生；独特工程费和加急费有较高毛利。客户一旦冻结设计，替换会引发重新验证，Flex 的定价权在这个阶段增强。
+3. **量产：** 标准计算机架趋向年度降价/成本分享；关键电力、power shelf、CDU 若供给紧且产品自有，能维持较高毛利。客户工作资本预付款降低 Flex 的原料融资成本，但也可能换取价格优惠。
+4. **现场与生命周期：** 预制系统运输、安装、调试、备件、固件/遥测、维修回收形成服务收入。Flex 把 power+cooling+compute 统一交付，可减少多供应商界面成本；这部分是平台溢价的核心，而不是某一块金属柜体。
+5. **会计口径陷阱：** 若客户提供 GPU/ASIC，Flex 只确认制造服务；若 Flex 主导采购并承担库存风险，可能按总额确认，收入和营运资金都变大但毛利率变薄。因此 rack 收入增长与经济利润不能一比一外推。
+
+## 7. 当前产能、供应链采用与认证阶段
+
+### 7.1 当前可变现产能
+
+Flex 不披露工厂按产品的美元产能。下表用 FY27 指引、FY27Q1 年化运行率、capex、基地和管理层排产表述估计**可变现收入能力**，不是厂房理论产值；同一基地可同时生产 rack、power 和 cooling，行间不可机械相加。
+
+| 业务 | 2026-07 当前/在建可变现年产能推算 | 产能地点与证据 | 供应链采用程度（0—5） | 当前采用判断 |
+|---|---:|---|---:|---|
+| CPI 整体 | **$11.2B—$12.5B** | Q1 年化仅 $8.8B，但 FY27 指引约 $11.2B、未来三季 90%+ booked，说明在建产线必须在年内释放 | 4 | 多 hyperscaler/colo/neocloud/utility；客户全名单和量未披露 |
+| 关键电力/预制系统 | **$3.2B—$4.0B** | Dallas（Crown）、Iowa（EP²）、California/Canada 等；公司明确“fighting capacity constraints” | 4—5 | 已有量产和多年工程客户；Google 项目覆盖数据中心及 utility power |
+| 机柜级/嵌入式电源 | **$1.2B—$1.5B** | 全球 Power 制造、Poland 扩容、北美 800V 能力 | 3—4 | GB300/400V 已量产；110kW Rubin 与 800V 处于设计导入至初期产业化 |
+| Compute/rack integration | **$7.0B—$8.0B** | Guadalajara/美国等 cloud 线；Milpitas 为 Cerebras 新增产线，2026 年产能目标约 7× | 5 | 私有云/服务器业务已量产，Google 多年项目及 Cerebras 为公开锚点 |
+| 液冷 | **$0.4B—$0.9B** | JetCool Littleton 技术、Flex 全球制造；CDU 可 300kW、2—6 台并到 1.8MW | 3 | 产品已商用，Dell turnkey 已发布；部分核心终端客户仍在 qualification |
+| AI 网络制造 | **$2.0B—$3.0B** 的潜在 AI 相关能力 | 通信/网络制造基地和光学验证能力；产品级利用率未披露 | 3—4 | 有成熟通信客户基础，但缺少可验证的 AI switch 型号/客户份额 |
+| SCM | **<$0.1B** | 可借服务器 PCB/模块线扩张，物理产能不是瓶颈 | 2—3 | OCP 合格但公开量产客户缺失 |
+
+### 7.2 当前认证/资格状态
+
+| 产品 | 标准/客户资格证据 | 2026-07 阶段 | 还缺什么 |
+|---|---|---|---|
+| Crown/EP² switchgear、busway、PDU、pod | 相关产品族通常需要 UL 857（busway）、UL 2416（数据中心设备）、UL/IEC 61439、现场 FAT/SAT；Flex 未逐型号公开证书清单 | **量产/AVL，4—5** | 每个站点/电压等级仍需工程审批、短路/弧闪和现场验收 |
+| 33kW GB300 shelf | 公司称已进入完整生产；对应 NVIDIA GB300 平台 | **量产，4** | 客户份额、良率和 ASP 未披露 |
+| 110kW Vera Rubin NVL72 shelf | UL/IEC 62368-1；EN 55032 Class A、FCC Part 15 Class A；6×18.4kW、52V、Redfish | **数据表完成/设计导入，3** | 大规模客户 PVT、现场运行数据和量产份额 |
+| 800VDC Power Rack | 与 NVIDIA 协作、GTC 2026 展示；8×110kW，可选 BBU/CBU/CESS | **生态设计赢单/DVT-PVT，2—3** | Rubin/Kyber 量产时点、端到端安全/保护认证、多个客户量产验收 |
+| 30kW CESS | Flex 公告为 UL 1973 认证产品 | **认证产品/导入，3—4** | 在不同 power shelf 与客户 BMS/控制栈中的批量验证 |
+| BMR317/BMR352/BMR353 | 已发布工程规格；BMR317 800W 连续/2kW 峰值、尺寸约 23.4×17.8×8.7mm | **样品至量产导入，3** | 平台客户份额、长期可靠性与量产 ASP |
+| JetCool SmartPlate/SmartSense | Dell XE7745 turnkey 可用；公司称 cold plate/CDU 正与合适终端客户认证 | **局部商用、广泛 qualification，3** | hyperscaler 批量 AVL、漏液/水质/维护寿命和长期现场数据 |
+| Cerebras CS-3 | 既有生产关系扩大；整机架机械、电力、液冷、光学和系统验证 | **量产，5** | Cerebras 最终需求与客户集中度，而非技术认证 |
+| SCM202A | OCP DC-SCM 2.0；OCP Marketplace approved | **标准认证/早期采用，3** | 主流服务器 OEM/hyperscaler 的公开 design win |
+
+## 8. 一年后产能、采用与认证的三情景
+
+产能数字表示在合理产品组合下可确认的年收入上限，通常比预测收入保留 10%—25% 缓冲。共享工厂、客户供料和总额/净额会使数字误差达到 ±20%。
+
+| 业务 | FY28 基准产能 / 采用 / 认证 | FY28 乐观产能 / 采用 / 认证 | FY28 极度乐观产能 / 采用 / 认证 |
+|---|---|---|---|
+| 关键电力/预制系统 | **$5.8B；采用 5**；Dallas/Iowa 达稳定量产，主要站点完成 FAT/SAT | **$7.0B；采用 5**；模块参考设计跨多 hyperscaler/utility 复用 | **$8.5B；采用 5**；行业短缺使 Flex 成为少数可交付 turnkey 供应商，需外协和加班 |
+| 机柜级/嵌入式电源 | **$2.7B；采用 4**；110kW/800V 至少一个主平台批量 PVT | **$3.6B；采用 4—5**；多个客户采用 800V，CESS/BBU attach rate 上升 | **$4.8B；采用 5**；800V 成为 >400kW 机架事实标准且 Flex 获高份额 |
+| Compute/rack integration | **$13.0B；采用 5**；主要新线良率稳定、Cerebras 7× 计划兑现 | **$15.0B；采用 5**；Google 和其他项目提前、组件供应同步 | **$17.0B；采用 5**；额外客户迁入北美产能、客户预付锁线 |
+| 液冷 | **$1.7B；采用 4**；JetCool 通过至少一个大客户 AVL，Dell/企业方案出货 | **$2.4B；采用 4—5**；SmartPlate+CDU 随 Flex rack 平台捆绑 | **$3.5B；采用 5**；微射流获得多平台标准化、冷却供给持续短缺 |
+| AI 网络制造 | **$3.0B；采用 4**；51.2T/102.4T 项目量产但仍多供 | **$4.2B；采用 4—5**；获得公开或可验证的大型 AI fabric 项目 | **$5.5B；采用 5**；从代工扩展到更高系统设计/验证内容 |
+| SCM | **$0.12B；采用 4**；至少一个批量平台 | **$0.25B；采用 4**；DC-SCM 成多客户标准模块 | **$0.50B；采用 5**；伴随服务器安全法规/可维护性快速普及 |
+
+**最有价值的认证里程碑不是一张 UL 证书，而是“客户平台量产批准”。** 2027 年应重点寻找：① 800V Power Rack 的具体终端客户/量产站点；② JetCool hyperscaler AVL 和现场运行时间；③ 110kW shelf/IBC 的出货量或 attach rate；④ Google 项目的交付窗口；⑤ SpinCo Form 10 中产品收入、集中度、capex 与 backlog 的首次独立披露。
+
+## 9. 根据订单积压与供给预测未来一年业务增速
+
+### 9.1 渠道、客户项目、订单窗口与取消风险的联合推断
+
+| 证据 | 可推导内容 | 不能推导内容 | 对 FY28 的权重 |
+|---|---|---|---|
+| 未来三个季度 90%+ booked | FY27Q2—Q4 需求和排产高度可见，FY27 上调指引可信度较高 | 不能证明全部不可取消，不能直接外推完整 FY28 | 高（FY27），中（FY28） |
+| capacity/backlog 订满未来数年 | 数据中心扩产不是没有客户的投机建厂；至少存在多年 forecast/项目排期 | 无美元额、客户分布、毛利和法律承诺 | 中高 |
+| Google 多年项目 | 计算/机架/400V-800V/分布式电力跨产品采用；能验证平台交叉销售 | 未披露金额、交期、最低量和取消条款 | 高，但集中度未知 |
+| Amazon 采购挂钩 warrant | Amazon 对 Flex 产品/服务有合资格采购安排，且潜在量足以用股权激励 | 截至 FY26 年末无归属；不能反推订单额或必购量 | 中 |
+| Cerebras CS-3 产能 7× | 公开客户、美国制造、整机+电力+液冷+光学测试全链条，2026 有明确扩产窗口 | Cerebras 自身销售规模与最终用户需求未披露 | 中高，基数较小 |
+| EP²/Crown、Dallas/Iowa/Poland 产能 | 电网和关键电力供给是现实瓶颈；并购提供客户与工程能力而非纯绿地 | 新线良率、利用率、人员和供应商约束未知 | 高 |
+| 存货、合同资产、客户预付款上升 | 已为具体项目锁料/在制；客户承担部分资金 | 若项目延期，仍可能形成库存和应收压力 | 高风险校验项 |
+| 10-K 短承诺/可取消条款 | 必须对 forecast 做折损，不能把 booked 当合同负债 | 公司未给实际历史取消率 | 高风险校验项 |
+
+### 9.2 一年业务增速结果
+
+考虑 2027Q1 日历年计划完成 CPI 分拆，FY28 很可能不再有可比的“合并 Flex”报表。下表先给**分拆前同口径的需求等价值**，便于判断原股东所持两家公司的总业务动量；实际 SpinCo/RemainCo 的债务、现金、股份分配会改变每股价值。
+
+| 情景 | 订单/延期折损 | FY28 CPI | FY28 RMS | FY28 ITS | 分拆前同口径总收入 | 相对 FY27 中值增速 | 供给解释 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| **基准** | 对客户 forecast 折损 8%—12%；约 90% capex 按期 | $20.6B（+82%） | $11.3B—$11.6B（+3%—5%） | $12.8B—$13.4B（+6%—10%） | **$44.7B—$45.6B** | **+30%—32%** | 电力与 compute 仍供不应求；800V 只贡献部分年度，液冷一至两个核心 design win |
+| **乐观** | 折损 3%—6%；良率和组件供给正常 | $23.3B（+106%） | $11.6B—$12.0B | $13.5B—$14.0B | **$48.4B—$49.3B** | **+40%—43%** | 400V 与 800V 同时爬坡，power/cooling attach rate 上升，Google 等项目无重大延期 |
+| **极度乐观** | 近零净折损；延期由新增客户/加急单补足 | $27.5B（+143%） | $12.0B—$12.4B | $14.5B—$15.5B | **$54.0B—$55.4B** | **+57%—61%** | 新产能满负荷、客户预付锁线、价格不降；对人力、断路器/铜/功率器件和客户 GPU 同步要求极高 |
+
+**概率判断：** 基准约 50%—60%，乐观约 25%—35%，极度乐观低于 10%；剩余概率是低于基准。市场最容易高估的是 FY28 “80%+”等于低风险合同收入，最容易低估的是 Flex 的电力产品从单设备升级为跨层系统后，客户为节省数月部署时间愿意支付的集成溢价。
+
+## 10. 竞争格局、技术主流性、替代方案与客户替换成本
+
+| 业务/技术 | 主要竞争者 | 是否未来主流 | 替代方案与风险 | 客户替换成本 |
+|---|---|---|---|---|
+| **中低压配电、switchgear、pod/e-house、busway/PDU** | Vertiv、Eaton、Schneider Electric、ABB、Siemens、GE Vernova、Powell、nVent、Delta，以及区域工程商 | **预制模块化是主流增量。** 它减少现场工时、接口和调试，Flex 资料称可把部署加快最高约 30% | 传统现场施工/EPC、自建标准舱、竞争者成套方案；风险为 utility interconnect 延期、项目许可和铜/断路器短缺 | **高：6—18 个月。** 需重做单线图、短路/保护配合、UL/IEC/FAT/SAT、现场基础和运维备件 |
+| **400/800V rack power、110kW shelf、CESS/BBU、IBC** | Delta、Lite-On、AcBel、Advanced Energy、Bel、Vicor、Infineon 生态，以及 ODM/客户自研 | 50/54V 在 2026 继续放量；**800V 是 >400kW—1MW 机架的强势方向，但不会一夜替代全部 AC/48V** | 传统 415/480VAC+48/54V、±400V、HVDC、固态变压器、客户自研 sidecar；800V 安全标准/连接器/保护尚演进 | **中高：设计前可多供，冻结后 6—18 个月。** 要重做电气、瞬态、热、固件、EMI和系统认证 |
+| **服务器/整机架制造、集成与测试** | Foxconn、Quanta/QCT、Wiwynn/Wistron、Inventec、Celestica、Jabil、Sanmina、Dell、HPE、Supermicro | **整机架、液冷 L11/L12 和工厂预集成是高密度 AI 主流** | 客户/芯片商把设计交给其他 ODM，或 hyperscaler 自研并双供；GPU 分配变化可使产线闲置 | **中：普通产品 1—3 季；液冷 3—9 个月；新平台 NPI 9—18 个月。** 量产后仍可分流第二供应商 |
+| **JetCool microconvective cold plate/CDU** | Vertiv/Motivair、Schneider、CoolIT、Boyd、Delta、Auras/AVC、LiquidStack、Chilldyne、ZutaCore | **direct-to-chip cold plate 是近期主流；微射流是其中一种增强技术，不是唯一标准** | 常规微通道冷板、rear-door heat exchanger、浸没式、两相/单相方案、提高风冷能力；水质/漏液/泵功耗和维护是风险 | **中高：design-in 6—18 个月，已量产切换 3—9 个月。** manifold、QD、固件和保修责任需整体复验 |
+| **AI Ethernet switch 制造** | Celestica、Accton、Foxconn、Quanta、Wiwynn/Wistron、Jabil，以及 Arista/Cisco/NVIDIA 系统生态 | 51.2T/800G 在 2026 主流放量，102.4T/1.6T 进入导入；但主价值在 ASIC、SerDes 和光学 | 其他 ODM、客户自研白盒、InfiniBand、共封装光学改变 BOM；Flex 未公开领先平台份额 | **中低至中：3—9 个月。** merchant silicon 和开放网络降低硬锁定，量产良率与高速信号验证提高软壁垒 |
+| **SCM202A / DC-SCM 2.0** | 服务器 ODM 自研模块、Jabil/Celestica 类模块商；ASPEED/AMI 等 BMC 生态 | 模块化安全控制有利维护和平台复用，可能成为 OCP 服务器常见配置 | 主板集成 BMC、客户自研安全模块、不同开放规范；开放标准会压缩单一供应商控制 | **低至中：1—2 季。** 标准接口降低物理切换，固件、密钥、远程管理栈提高软件迁移成本 |
+
+### 10.1 Flex 的相对优势
+
+1. **纵向跨层：** 大多数竞争者只覆盖电气、冷却或 ODM 中一至两层；Flex 能从中压 power pod 到 800V/52V、冷板/CDU、整机架和现场服务统一排程。
+2. **区域化制造：** 北美 Dallas/Iowa/California、Mexico、Europe/Poland 与全球 EMS 网络符合 hyperscaler 对交付速度、关税和供应韧性的需求。
+3. **客户项目数据：** Google 多年项目、Amazon 采购挂钩 warrant、Cerebras 公开 7× 扩产，以及 NVIDIA 共同开发/平台数据表，比一般“AI 概念产品”更接近商业采用。
+4. **收购拼图完整：** Crown/EP² 把能力延伸至电网/中压，JetCool 延伸至芯片热端；平台交付可以提高每 MW 内容量和客户切换成本。
+
+### 10.2 Flex 的相对弱点与替代风险
+
+1. **不是核心芯片/协议所有者：** NVIDIA、Broadcom/Marvell、hyperscaler 决定架构，Flex 可能被重新分配制造份额。
+2. **多供是行业常态：** 大客户不会把全部机架、电源或网络交给单一供应商；一旦供需从短缺转宽松，EMS 价格年降会回来。
+3. **800V 时序风险：** 2026 是设计赢单/验证，真正体量取决于 2027 Rubin/Kyber 和客户设施是否同步。若 400/415/480VAC+48/54V 寿命延长，800V 资本开支回收变慢。
+4. **液冷资格认证尚未完成：** JetCool 的技术参数强，但公司自己承认还在若干终端客户认证；规模模型比公开订单走得更快。
+5. **系统责任上升：** turnkey 把接口收益给 Flex，也把故障、漏液、延误、质保和现场赔偿集中给 Flex。
+6. **SpinCo 分拆：** 可能释放估值，也可能把采购、客户和工厂共享协同拆开；债务、税务、服务协议、dis-synergy 尚待 Form 10。
+
+## 11. 关键风险、证伪指标与跟踪清单
+
+| 风险 | 领先证伪指标 | 何时判定模型需要下修 |
+|---|---|---|
+| 订单被延期/取消 | 客户预付款下降、合同资产/库存继续升但 CPI 收入放缓；90% booked 表述消失 | CPI 连续两季低于指引下沿，或存货增速持续高于收入 20pct 以上 |
+| 产能爬坡失败 | capex 高、折旧上升而 CPI margin 下滑；交付/良率费用增加 | CPI 调整后营业率跌破 9% 且收入仍高速增长 |
+| 800V 推迟 | Rubin shelf/Power Rack 一年后仍无客户量产证据 | FY28 机柜级电源收入低于 $1.8B 或认证停在 DVT |
+| 液冷未获大客户 AVL | 仅有企业级 turnkey、没有 hyperscaler/colo 批量项目 | FY28 液冷收入低于 $0.8B、JetCool 仍被描述为 qualification |
+| 收入质量偏低 | 收入大增但毛利额/FCF 不跟随，客户供料与总额法变化 | FY27—FY28 累计 FCF 转换显著低于 40% 且无营运资金回收 |
+| 客户集中/自制 | 新披露单一客户超过 10%；hyperscaler 自研电源/机架并转移份额 | Google/Amazon 等项目缩减且没有新客户填补 |
+| 分拆价值流失 | Form 10 显示 SpinCo 高净债务、一次性成本或共享成本异常 | 独立 SpinCo 净杠杆 >2.5x，或分拆延期超过 2027H1 |
+
+未来最重要的公开节点：2026 年 9 月 Form 10、2026-11-10 SpinCo 投资者日、FY27Q2/Q3 的 CPI 收入和 margin、FY27 capex/FCF、800V 和 JetCool 客户量产认证、Google 多年项目的实际爬坡、Cerebras 7× 产能的利用率。
+
+## 12. 最终投资判断
+
+**业务质量：从中等 EMS 向中高质量基础设施平台跃迁。** Flex 的优势不在单项发明绝对垄断，而在 AI 园区最紧缺的电力、热和系统交付同时发生时，能用全球制造和本地电气工程把多层 BOM 变成按期容量。CPI 9.7% 调整后营业率已经证明它不是纯低毛利代工，Crown/EP²/JetCool 又提高了自有产品与工程比例。
+
+**增长确定性：FY27 高，FY28 中高但高度执行敏感。** 90%+ 三季度 booked、未来数年排产和 $1.4B—$1.6B capex 支持 FY27；FY28 +80% 则要求几乎所有新增产线、客户 GPU、电力器件、800V/液冷认证同时到位。它更像“有客户的产能建设”，但还不是“不可取消合同覆盖的公用事业”。
+
+**估值与风险回报：好公司叙事已部分反映在价格。** 约 24.8 倍 FY27 adjusted forward P/E 对 +39% EPS 不离谱；约 43.9 倍 GAAP TTM 和 1.46 倍销售额则显著高于传统 EMS。若 FY28 CPI 约 $20B、营业利润率 10%+ 且分拆顺利，当前估值有盈利兑现路径；若增长主要来自低毛利计算机架且 FCF 长期低于 40% 转换，市场会重新按制造商而非电力/冷却产品平台定价。
+
+**结论：FLEX 是 AI 基建中“电力+冷却+整机架交付”的高弹性标的，最值得跟踪的是每 MW 内容量和产能转换，而不是笼统 AI 收入。** 当前最强产品是关键电力预制系统、400/800V 电源架与大型整机架；JetCool 和 SCM202A 是值得保留但必须等待量产证据的小业务。投资上应把 FY27 指引兑现视为基准，把 FY28 +80% 和 SpinCo 分拆视为需要季度证据逐步解锁的期权，而非无条件线性外推。
+
+## 主要一手资料与近半年产业资料
+
+- [Flex FY27Q1 财报、演示稿、文字稿与 10-Q 入口](https://investors.flex.com/financials/quarterly-results/default.aspx)，2026-07-29。
+- [Flex FY26 10-K](https://www.sec.gov/Archives/edgar/data/866374/000086637426000012/flex-20260331.htm)，客户承诺、取消权、库存、工作资本、客户集中和收购资料。
+- [Flex FY26Q4 财报公告](https://investors.flex.com/news/news-details/2026/FLEX-REPORTS-FOURTH-QUARTER-AND-FISCAL-2026-RESULTS/default.aspx)及[电话会文字稿](https://s202.q4cdn.com/732614612/files/doc_earnings/2026/q4/transcript/FLEX_FY26Q4_Transcript.pdf)，2026-05-05。
+- [Flex CPI 分拆公告](https://investors.flex.com/news/news-details/2026/Flex-Announces-Intention-to-Spin-Off-its-Cloud-and-Power-Infrastructure-Segment-into-a-New-Independent-Publicly-Traded-Company/default.aspx)，2026-05-05。
+- [Flex 完成 EP² 收购](https://investors.flex.com/news/news-details/2026/Flex-Completes-Acquisition-of-Electrical-Power-Products-EP/default.aspx)，2026-05-04。
+- [Flex 800VDC Power Rack / NVIDIA Vera Rubin](https://investors.flex.com/news/news-details/2026/Flex-Launches-800-VDC-Power-Rack-for-Next-Generation-NVIDIA-AI-Infrastructure/default.aspx)，2026-03-16；[800V solution brief](https://flex.com/downloads/800-vdc-power-rack-solution-brief)，2026-05。
+- [Flex 110kW Vera Rubin NVL72 power shelf 数据表](https://flex.com/resources/power-shelf-for-nvidia-vera-rubin-nvl72)，2026-06-01。
+- [Flex COMPUTEX 2026 新产品公告](https://investors.flex.com/news/news-details/2026/Flex-Showcases-Scalable-Power-Solutions-for-Next-Generation-AI-Infrastructure-at-COMPUTEX-2026/)，2026-06-01。
+- [Flex 与 Cerebras 扩大美国 AI 超算制造](https://investors.flex.com/news/news-details/2026/Flex-and-Cerebras-Expand-Partnership-to-Scale-American-Manufacturing-of-Cerebras-AI-Supercomputers/default.aspx)，2026-07-09。
+- [Flex 数据中心资料中心](https://flex.com/industries/data-center)，含 2026-05 至 2026-07 中压瓶颈、模块化、液冷、效率和产品资料。
+- [Data Center Dynamics：AI 数据中心冲击与 Flex 跨层能力](https://www.datacenterdynamics.com/en/marketwatch/absorbing-the-shockwaves-of-the-ai-data-center/)，2026-04-08；该文带赞助/公司观点属性，只作行业访谈旁证，不作订单证据。
+- [Data Center Dynamics：JetCool 模块 CDU](https://www.datacenterdynamics.com/en/news/flex-and-jetcool-launch-new-modular-cdu/)，产品功率和推出时间旁证。
+- 项目内产业基准仅采用 `基本面/行业调研/` 中 2026-07-10 版的配电、机柜供电、液冷、服务器整机、AI 以太网及 BMC/嵌入式控制报告，具体链接已放在相应 BOM 与竞争章节。

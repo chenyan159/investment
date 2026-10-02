@@ -1,0 +1,366 @@
+# Rolls-Royce Holdings（RYCEY / RR.L）公司调研：航空发动机现金牛、数据中心电力高增量与 SMR 长周期期权
+
+报告日期：2026-06-11  
+股票：RYCEY（OTC ADR，美元）；RR.L / RR.（伦敦普通股，英镑）  
+公司：Rolls-Royce Holdings plc（注意不是 Rolls-Royce Motor Cars）  
+正式分类目录：`公司调研/电力_发电_能源_储能/`  
+项目内资料边界：只读取 `基本面/行业调研/` 相关产业资料，以及 `公司调研/公司索引.md` 用于确认正式目录；未读取、引用或继承本目录下既有 RYCEY 或其他公司报告，未读取 `日度资料/`、`特征量化/`、`tmp/`、`data/` 等目录。  
+外部资料窗口：重点为 2025-07 至 2026-06-11，优先使用 Rolls-Royce 官方年报、财报、交易更新、产品页和订单公告；估值行情采用 2026-06-11 可得公开行情页。  
+汇率口径：业务美元换算使用 `GBP/USD = 1.37-1.38` 的 2026-06-11 近似市场口径，仅用于量级比较；公司披露原币以英镑为准。
+
+## 0. 结论先行
+
+1. **Rolls-Royce 是“宽体飞机发动机售后现金流 + 国防长周期订单 + 数据中心/关键电力设备”的组合，不是纯 AI 公司。** 2025 年集团 underlying revenue `£20.06bn`、underlying operating profit `£3.46bn`、underlying operating margin `17.3%`、free cash flow `£3.27bn`、净现金 `£1.90bn`；2026 指引为 underlying operating profit `£4.0-4.2bn`、free cash flow `£3.6-3.8bn`。
+2. **投资人心中的 Rolls-Royce 已从 2020-2022 的高杠杆复苏股，变成 2023 以来 Tufan Erginbilgic 领导的自助改善/现金流复利股。** 过去三年最大的变化不是收购，而是重新谈 Civil Aerospace 长协、提高 Trent time-on-wing、扩 MRO、降成本、退出非核心业务、恢复股东回报、将资产负债表从净债务推到净现金。
+3. **AI 数据中心相关收入主要来自 Power Systems 的 mtu 备用/桥接发电机和关键电源，不来自 AI 芯片或服务器。** 2025 年 Power Systems revenue `£4.892bn`，其中 power generation 占 `54%`，data centres 占 power generation revenue `>80%`，可推得 2025 数据中心相关收入 `>£2.1bn`（`>$2.9bn`），约集团 underlying revenue 的 `>10.5%`。2025 年 data centre revenue `+35%`；2026Q1 power generation gas/diesel order intake 同比约 `+50%`，Power Systems backlog 升至 `£7.3bn`。
+4. **数据中心电力最值得跟踪的产品是 mtu Series 4000 柴油/燃气发电机、2026 上线的 20V4000 L64 45 秒快启燃气机组、mtu Kinetic PowerPack/DRUPS、以及 mtu EnergyPack BESS。** 其中直接 AI 弹性最大的是发电机；BESS 和 DRUPS 属于小基数、高认证价值配套；SMR 是 2030 年代前后期权，不应把 2026-2027 当成反应堆设备收入爆发。
+5. **供需判断偏乐观但要有边界。** 项目内行业资料显示，2026-2027 AI 数据中心最大瓶颈之一是 power-to-market，数据中心自备发电/微电网从“备用”升级为缩短上电周期的工具。Rolls-Royce 的优势是 mtu 在数据中心/mission-critical backup 关键市场 `20-25%` 份额、服务 hyperscale 数据中心超过 15 年、美国 Mankato/Aiken 扩产；约束是排放许可、燃气供应、客户双供应商策略，以及 Caterpillar、Cummins、Kohler/Rehlko、Wartsila、GE Vernova、Bloom 等竞争。
+6. **估值快照偏高。** 2026-06-11，RYCEY 约 `$17.26`，Google Finance 显示市值 `$144.47bn`、P/E `18.67x`；普通股 RR.L 约 `1,250-1,251p`，HL 显示市值 `£103.93bn`、P/E `41.75x`，Yahoo/类似口径显示 forward P/E 约 `32-34x`、P/S 约 `4.9x`。差异来自 statutory EPS 被衍生品公允价值、税项和 SMR 去并表收益扭曲；用 2025 underlying EPS `29.55p` 计算，普通股 underlying P/E 约 `42x`，更接近经营估值。
+
+## 1. 公司整体业务、产业链定位与最近三年变化
+
+### 1.1 三大主业
+
+| 业务 | 2025 underlying revenue | 2025 revenue 占比 | 2025 underlying operating profit | 2025 margin | 产业链位置 | AI 数据中心关系 |
+|---|---:|---:|---:|---:|---|---|
+| Civil Aerospace | `£10.382bn` | `51.8%` | `£2.130bn` | `20.5%` | 宽体飞机/公务机发动机 OEM + 长协售后 | 不是 AI 收入；现金流核心 |
+| Power Systems（mtu） | `£4.892bn` | `24.4%` | `£0.852bn` | `17.4%` | 数据中心备用/连续电源、军用/陆海动力、工业、BESS | **直接相关**：数据中心发电机、快启燃气机、关键电源、BESS/微电网 |
+| Defence | `£4.772bn` | `23.8%` | `£0.689bn` | `14.4%` | 军用航空发动机、舰船燃机、潜艇核动力和长周期国防项目 | 间接无关；高 backlog、低周期性 |
+| All Other / SMR | `£0.013bn` 量级 | `<0.1%` | 亏损/早期 | 不适用 | Rolls-Royce SMR、民用核、少数新技术 | 远期期权；短期为设计/开发收入 |
+
+资料锚：2025 年报披露集团 underlying revenue `£20.059bn`、statutory revenue `£21.207bn`、underlying operating profit `£3.462bn`、underlying margin `17.3%`；Civil Aerospace revenue `£10.382bn`、margin `20.5%`；Power Systems revenue `£4.892bn`、margin `17.4%`；Defence revenue `£4.772bn`、margin `14.4%`。
+
+### 1.2 投资人眼中的公司
+
+| 视角 | 2020-2022 | 2023-2026 当前形象 |
+|---|---|---|
+| 核心叙事 | 疫后航空复苏、高债务、Civil Aerospace LTSA 现金流修复 | 转型兑现、宽体售后现金流、高 margin、净现金、回购、数据中心电力增量 |
+| 经营变量 | widebody EFH 恢复、shop visit 高峰、供应链扰动 | price/mix、contract renegotiation、time-on-wing、Power Systems data centre backlog、Defence 长订单 |
+| 财务质量 | 杠杆高，FCF 不稳定 | 2025 净现金 `£1.895bn`，2026 FCF 指引 `£3.6-3.8bn`，信用评级上调 |
+| 估值状态 | 复苏股/深度价值 | 高质量工业成长股，估值不低，需要盈利继续兑现 |
+
+### 1.3 最近三年重大业务变动、转型和资产调整
+
+| 时间 | 事件 | 对公司影响 |
+|---|---|---|
+| 2023 | Tufan Erginbilgic 上任并启动 transformation programme | 将核心从“规模/工程自豪感”转向商业条款、现金流、成本和资本回报；是利润率重估的主因 |
+| 2023-2025 | Civil Aerospace 重新谈 OE 和售后合同，提升 time-on-wing，扩 MRO | 2025 Civil services revenue `£7.165bn`、同比 `+21%`，Civil margin 到 `20.5%` |
+| 2024 | 出售 lower power range engines business；退出 advanced air mobility | 减少非核心/低回报业务，使 Power Systems 更聚焦高功率、数据中心、政府和能源 |
+| 2025-07 | Naval propulsors business 出售给 Fairbanks Morse Defense，naval handling sale 预计 2026 完成 | 国防业务更聚焦高价值推进/发动机/核能力，减少低协同资产 |
+| 2025-03 | CEZ 投资导致 Rolls-Royce SMR 去并表，SMR 转为权益法投资 | 降低集团报表亏损/资本压力，同时保留 SMR 期权 |
+| 2025-2026 | Mankato、Aiken 等美国数据中心发电机产能扩张 | 支撑 mtu Series 4000 数据中心 generator 需求，Mankato 产量预计到 2026 较上一年提升 `>120%` |
+| 2026-02 | 宣布 2026-2028 年 `£7-9bn` 多年回购，2026 首段 `£2.5bn` | 显示现金流和资产负债表已修复，但也提高资本回报兑现压力 |
+| 2026-04 | UK GBE-N SMR 合同、CEZ 商业条款进入执行；Power Systems Q1 backlog `£7.3bn` | SMR 从竞标进入合同执行，Power Systems 数据中心/政府订单继续前置 |
+
+### 1.4 最新估值与财务健康快照
+
+| 指标 | 数值 | 日期 | 口径和说明 |
+|---|---:|---:|---|
+| RYCEY 股价 | `$17.26` | 2026-06-11 15:45 ET | OTC ADR，Google Finance |
+| RR.L 普通股 | 卖 `1,250.20p` / 买 `1,251.20p` | 2026-06-11 | HL；MarketWatch 当日收 `£12.53` |
+| 市值 | `$144.47bn` / `£103.93bn` | 2026-06-11 | Google Finance / HL |
+| P/E | reported `18.67x`；underlying 约 `42x` | 2026-06-11 | reported P/E 受 statutory EPS 扭曲；underlying P/E 用 `1,250p / 29.55p` |
+| Forward P/E | 约 `32-34x` | 2026-06-08 至 2026-06-10 | Yahoo/GuruFocus 口径，随价格和预测 EPS 变动 |
+| P/S | 约 `4.9x` | 2026-06-10 | Yahoo RR.L key statistics |
+| 2025 underlying revenue growth | `+12.4%` | FY2025 | `£20.059bn` vs `£17.848bn` |
+| 2025 underlying gross margin | 约 `25.6%` | FY2025 | 三大分部 gross profit 合计 `£5.130bn` / revenue `£20.046bn`，估算 |
+| 2025 underlying operating margin | `17.3%` | FY2025 | 官方 APM |
+| 2025 underlying net margin | 约 `12.4%` | FY2025 | underlying EPS `29.55p` × 约 `8.37bn` 股 / underlying revenue |
+| 2025 statutory net margin | 约 `27.5%` | FY2025 | HL 显示 2025 net income `£5.84bn` / statutory revenue `£21.21bn`；包含非经营重估收益，不可线性外推 |
+| 净现金 | `£1.895bn` | 2025-12-31 | 2024 年底 `£475m`，2023 年底为净债务 `£1.95bn` |
+| 流动性 | `£8.5bn` | 2025-06-30 | H1 2025 披露：cash/equivalents + undrawn facilities |
+| 2026 指引 | UOP `£4.0-4.2bn`，FCF `£3.6-3.8bn` | 2026-02-26，2026-04-30 重申 | Q1 交易更新保持不变 |
+
+资产负债表评价：**健康程度高。** 2025 年底净现金 `£1.895bn`，2026 年 2 月用 free cash flow 偿还 `€750m` bond，Moody's/Fitch 在 2026Q1/Q2 将评级上调至 `A3` / `A-`（稳定）。主要风险不是偿债，而是高额回购与长期技术/产能投资之间的资本分配、Civil Aerospace 供应链现金影响、以及数据中心 generator 需求若因许可/融资延迟而导致 working capital 前置。
+
+## 2. 最新和最近四次财报/更新
+
+Rolls-Royce 通常按半年/全年披露完整财务；Q1/Q3 多为 trading update。因此下表把最新 2026Q1 交易更新与最近四个完整半年度/年度披露放在一起。季度级收入未披露处，使用披露的半年/全年和订单口径推断，并明确标注。
+
+| 披露期 | 集团收入/利润 | 分部收入与增速 | 订单、backlog、交期 | AI 数据中心相关收入占比 | 取消率/风险 | 关键结论 |
+|---|---|---|---|---|---|---|
+| **2026Q1 trading update**（截至 2026-03-31，2026-04-30 发布） | 未披露 Q1 revenue/profit；重申 2026 UOP `£4.0-4.2bn`、FCF `£3.6-3.8bn` | Civil：large EFH 到 `115%` of 2019，large engine OE deliveries `+18%`，large engine shop visits `+12%`；Defence OE deliveries `>+20%`；Power Systems revenue growth strong | Power Systems power generation gas/diesel order intake 约 `+50% YoY`；3 月为 record order month；Power Systems backlog `£7.3bn`；Civil AOG 降至个位数 | 未披露；按 2025 data centre revenue `>£2.1bn` 和 Q1 订单强度，2026 年化数据中心相关收入推测 `£2.6-3.1bn`，约集团 `11-14%` | 未披露取消率；电力项目主要风险是客户上电/许可延后而非订单即时取消 | 最新最重要信号：Power Systems 订单继续加速，数据中心已是 Power Systems 最强增量 |
+| **FY2025**（2026-02-26 发布） | underlying revenue `£20.059bn`，`+12.4%`；UOP `£3.462bn`，margin `17.3%`；FCF `£3.270bn`；net cash `£1.895bn` | Civil `£10.382bn` `+15%`，op margin `20.5%`；Defence `£4.772bn` organic `+8%`，margin `14.4%`；Power Systems `£4.892bn` organic `+19%`，margin `17.4%` | Total backlog `£88.1bn`（Civil `£64.6bn`、Defence `£17.4bn`、Power Systems `£6.1bn`）；Power Systems order intake `£6.1bn`、book-to-bill `1.2x`、OE coverage 2026 `79%`；power generation 已在接 2027/2028 订单 | Power Systems power generation `54%` × data centres `>80%`，即 2025 data centre revenue `>£2.1bn`；集团占比 `>10.5%`；data centre revenue `+35%` | 年报说明 Civil backlog 排除超过 7-12 个月且客户仍有取消权的 OE orders；历史经验预计履约。Power Systems backlog 主要三年内确认 | 数据中心电力已不是小主题；它直接推动 Power Systems revenue、margin 和 backlog |
+| **H1 2025**（2025-07-31 发布） | underlying revenue `£9.057bn`，`+13%`；UOP `£1.733bn`，margin `19.1%`；FCF `£1.582bn`；net cash `£1.1bn` | Civil `£4.786bn` `+17%`，margin `24.9%`；Defence `£2.223bn` `+1%`，margin `15.4%`；Power Systems `£2.042bn` `+20%`，margin `15.3%` | Power Systems order intake `£2.9bn`，book-to-bill `1.4x`；power generation order intake `+68%`，data centre orders `+85%`；OE coverage remainder 2025 `100%`、2026 `43%` | Power generation revenue `+26%`，data centre revenue `+45%`；按结构估，H1 data centre revenue 约 `£0.8-1.0bn`，集团约 `9-11%` | 未披露取消率；高客户 advance 改善 H1 working capital，但也说明产能/排产紧 | 半年时已确认数据中心订单爆发，之后 FY2025 与 2026Q1 继续强化 |
+| **FY2024**（2025-02-26 发布） | underlying revenue `£17.848bn`，2023 为 `£15.409bn`；UOP `£2.464bn`，margin `13.8%`；FCF `£2.425bn`；net cash `£475m` | Civil revenue `£9.040bn`，margin `16.6%`；Defence `£4.522bn`，margin `14.2%`；Power Systems `£4.271bn`，margin `13.1%` | Total backlog 2024 `£82.1bn`；Power Systems backlog `£4.8bn`；Civil LTSA balance growth `£0.7bn`，large EFH `103%` of 2019 | 年报未给 2024 data centre revenue 绝对值；2025 data centre `+35%` 倒推，2024 data centre revenue 约 `£1.5-1.7bn` | 供应链现金影响 `£150-200m`；parts availability constrained | 2024 是资产负债表由净债务转净现金、Power Systems 数据中心开始被市场重估的一年 |
+| **H1 2024**（2024-08 发布） | underlying revenue `£8.182bn`；UOP `£1.149bn`，margin `14.0%`；FCF `£1.158bn`；net debt 降至 `£0.8bn` | revenue mix：Civil `50%`、Defence `27%`、Power Systems `23%`；H1 2025 详细表反推 Power Systems H1 2024 revenue `£1.837bn`、Civil `£4.119bn` | 2024 guidance 上调；Civil net LTSA balance growth `£544m`，large EFH `101%` of 2019 | 数据中心未给绝对值；作为基期，H1 2025 data centre orders `+85%`、revenue `+45%` | supply chain still challenging | turnaround 进入“现金流可信”阶段的基准期 |
+
+## 3. 2026 最新指引、业务收入占比和重点产品
+
+### 3.1 2026 指引
+
+| 项目 | 2026 指引 / 最新状态 | 解释 |
+|---|---:|---|
+| Group underlying operating profit | `£4.0-4.2bn` | 2026-02-26 给出，2026-04-30 重申 |
+| Group free cash flow | `£3.6-3.8bn` | 包含供应链相关现金影响 `£150-200m` |
+| Civil large EFH | `115-120%` of 2019 | Q1 已到 `115%` of 2019 |
+| Civil total OE deliveries | `550-600` | Q1 large engine OE deliveries `+18%` |
+| Civil total shop visits | `1,480-1,550` | Q1 large engine shop visits `+12%` |
+| Power Systems backlog | `£7.3bn` at 2026-03-31 | FY2025 为 `£6.1bn`，Q1 继续上升 |
+| Share buyback | 2026 tranche `£2.5bn`，2026-2028 total `£7-9bn` | 2026-04-30 已完成 `>£750m` |
+
+### 3.2 业务收入占比和 2026 侧重点
+
+| 业务/产品群 | 2025 收入 | 2025 占集团 | 2025 增长 | 2026 重点 | 是否保留为重点 |
+|---|---:|---:|---:|---|---|
+| Civil Aerospace services | `£7.165bn` | `35.7%` | `+21%` | Trent fleet EFH、shop visits、TotalCare、MRO capacity、pricing | 是，现金流核心 |
+| Civil Aerospace OE | `£3.217bn` | `16.0%` | `+3%` | Trent XWB/7000/1000 XE deliveries；OE profitability 改善 | 是，但非 AI |
+| Power Systems power generation | 约 `£2.642bn` | `13.2%` | `+30%` | data centre backup/bridge power、mtu diesel/gas gensets | **是，AI 数据中心主线** |
+| 其中 data centres | `>£2.1bn` | `>10.5%` | `+35%` | hyperscale / mission-critical power | **最高优先级** |
+| Power Systems governmental | 约 `£1.223bn` | `6.1%` | `+14%` | German armed forces Puma/Boxer/Leopard engines | 是，国防增量 |
+| Power Systems BESS | 约 `£98m` | `0.5%` | 高增，2025 breakeven | grid stability、Baltic storage contracts | 小基数重点 |
+| Defence transport/combat/submarines/naval/helicopters | `£4.772bn` | `23.8%` | organic `+8%` | EJ200、F130、AE 1107F、AE3007、MT30、submarines/AUKUS | 是，长周期订单 |
+| SMR / civil nuclear | 当前收入小 | `<1%` | 合同执行起步 | UK Wylfa + CEZ Temelin early works | 长期期权，短期不按设备收入估值 |
+
+### 3.3 重点产品和应跳过产品
+
+**跳过或低权重产品/业务：**
+
+| 产品/业务 | 跳过理由 |
+|---|---|
+| 普通 marine yacht / commercial marine 柴油推进 | 不是 AI 数据中心核心增量，收入占比相对小 |
+| Industrial rail/mining engines | 需求稳但 AI 相关性低，增长和估值弹性低于数据中心 power generation |
+| Civil narrowbody engine re-entry / UltraFan 远期窄体机会 | 技术重要但短期不贡献收入，且需要高额研发/政府支持 |
+| 传统柴油 backup 的低端/非 hyperscale 项目 | 基础盘，但投资弹性弱于快启 gas、数据中心大客户和服务 |
+
+**重点产品：**
+
+| 产品/业务 | 对应产品/型号 | 当前收入贡献估算 | 增长/利润判断 | 证据 |
+|---|---|---:|---|---|
+| mtu 数据中心柴油发电机 | mtu Series 4000 diesel generator sets，约 `1,125-3,250 kWe` 级 | 2025 data centre power revenue `>£2.1bn` 的主体 | gross margin 估计 `25-35%`，服务/备件更高；2025 data centre revenue `+35%` | Mankato/Aiken 扩产，Power Systems data centres >80% power gen revenue |
+| mtu 20V4000 L64 快启燃气机 | 60Hz 北美，`2.8MW`，`45秒` full output，2026 起 | 2026 初期订单/交付，2027-2028 放大 | gas bridge/prime power 价值高，ASP/MW 高于纯 standby diesel；受排放/燃气约束 | Rolls-Royce 2025-10 官方产品发布 |
+| mtu Kinetic PowerPack / DRUPS | Kinetic PowerPack `480kVA/400kW` 到 `2,750kVA/2,640kW` | 小于 generator 主线，估计 `£50-200m` 级相关机会 | 高认证、高服务，毛利估计 `25-40%`；适合 AI 负载 ride-through | mtu 数据中心产品页 + 本地动态 UPS 行业资料 |
+| mtu EnergyPack BESS | mtu EnergyPack + EnergetIQ software | 2025 BESS revenue 约 `£98m`；Sunly 490MWh、Baltic >1.5GWh | 2026-2027 高增长但基数小；硬件毛利低于软件/集成 | 2026-06 Sunly 490MWh 合同 |
+| Civil Trent family aftermarket | Trent XWB、Trent 7000、Trent 1000 TEN/XE、Trent 700 等 TotalCare/LTSA | 2025 Civil services `£7.165bn` | 高现金流，margin 稳定提升；AI 无关但决定集团估值底座 | FY2025 Civil services `+21%`、margin `20.5%` |
+| Defence engines / naval / nuclear | EJ200、F130、AE 1107F、AE3007、MT30、submarine nuclear | 2025 Defence `£4.772bn` | 长周期、客户锁定强、margin 14-16% | 2026Q1 Türkiye EJ200、Australian Navy MT30、B-52 F130/MV-75 进展 |
+| Rolls-Royce SMR | UK GBE-N Wylfa、CEZ Temelin early works | 2026 收入/利润开始，但短期体量小 | 2030s 期权；数据中心可长期用核 PPA，但不是 12 个月收入 | 2026-04 合同执行 |
+
+## 4. 当前高增长/关键产品：收入贡献、AI 基建重要性、供需和定价权
+
+评分：5 = 最高。美元收入为 2025A 或 2026E 的大致年化贡献，不代表公司指引。
+
+| 产品/业务 | 当前收入贡献 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 评价 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| mtu 数据中心 diesel/gas gensets | 2025 `>£2.1bn` / `>$2.9bn`；2026E `£2.6-3.1bn` / `$3.6-4.3bn` | 2025 data centre `+35%`；2026 orders implied `+30-50%` | 4 | 5 | 4 | 3 | AI campus “可上电 MW”直接瓶颈；客户双供应商限制垄断，但认证/服务/交期可溢价 |
+| 20V4000 L64 45秒快启 gas genset | 2026E 小规模，2027 起贡献更明显；单台 `2.8MW` | 新产品，潜在数十到数百台 | 4 | 5 | 4 | 3 | gas bridge power 正中北美 AI 数据中心缺电痛点；排放/燃气管线是最大约束 |
+| Kinetic PowerPack / DRUPS | 估计 `£50-200m` 年化机会，数据中心相关小基数 | `+20-50%` 情景 | 3 | 4 | 3 | 3.5 | AI 负载动态功率、ride-through 和发电机桥接需求提高；但不是每个数据中心标配 |
+| BESS / mtu EnergyPack | 2025 约 `£98m`；2026E `£150-300m` | `+50-150%` 小基数 | 3 | 3 | 3 | 2.5 | 更偏电网稳定/可再生能源，非当前 Rolls-Royce AI DC 主线；软件/总包有溢价 |
+| Civil Aerospace services | `£7.165bn` / `$9.8bn` | 2025 `+21%`，2026E `+8-12%` | 0 | 3 | 3 | 4 | 不属于 AI，但是真正现金牛；TotalCare/installed base 带强客户锁定 |
+| Defence engines / nuclear propulsion | `£4.772bn` / `$6.5bn` | 2025 organic `+8%`，2026E `+6-10%` | 0 | 4 | 4 | 4 | 国防预算和平台寿命带来强订单能见度；客户替换成本极高 |
+| SMR | 2026E `£50-150m` 级开发/工程口径，低置信 | 高百分比，小绝对值 | 2（长期 4） | 2 | 2 | 3（若首堆成功） | 不能按 2026-2027 设备收入估值；更像长久期能源期权 |
+
+## 5. 一年后收入贡献三情景预测
+
+时间窗口：2026-06 至 2027-06 附近的年化贡献。此为研究模型，不是公司指引。
+
+| 产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 | 关键触发 / 反证 |
+|---|---:|---:|---:|---|
+| mtu 数据中心 diesel/gas gensets | revenue `£3.0-3.4bn`（`$4.1-4.7bn`），同比 `+20-30%`；AI 重要性 4、紧急性 5、供需 4、定价权 3 | `£3.5-4.0bn`（`$4.8-5.5bn`），同比 `+35-55%`；供需 4.5 | `£4.1-4.8bn`（`$5.6-6.6bn`），同比 `+60%+`；供需 5 | 触发：北美 AI campus 大规模采用 behind-the-meter gas/diesel bridge power，Mankato/Aiken 顺利扩产；反证：排放/燃气/融资导致项目延后 |
+| 20V4000 L64 fast-start gas | `£150-300m`（`$0.2-0.4bn`） | `£350-700m`（`$0.5-1.0bn`） | `£0.8-1.4bn`（`$1.1-1.9bn`） | 触发：45秒快启成为北美 100MW+ 项目标准选项；反证：客户改用 Caterpillar/Wartsila/Bloom/utility generation |
+| Kinetic PowerPack / DRUPS | `£100-250m`（`$0.14-0.35bn`） | `£250-500m`（`$0.35-0.69bn`） | `£0.5-0.9bn`（`$0.7-1.2bn`） | 触发：AI dynamic load / grid code 强化；反证：客户继续使用静态 UPS + Li-ion/NiZn + standalone generator |
+| BESS / mtu EnergyPack | `£200-350m`（`$0.27-0.48bn`） | `£350-700m`（`$0.48-0.97bn`） | `£0.7-1.2bn`（`$1.0-1.7bn`） | 触发：Baltic 项目复制、grid stability 订单增长；反证：BESS 价格战/项目延期 |
+| Civil Aerospace services | `£7.8-8.1bn`（`$10.7-11.2bn`），`+9-13%` | `£8.2-8.6bn`（`$11.3-11.9bn`），`+14-20%` | `£8.6-9.1bn`（`$11.9-12.6bn`），`+20%+` | 触发：EFH 120%+、shop visits 和 pricing 继续强；反证：中东/宏观/供应链扰动 |
+| Defence | `£5.1-5.3bn`（`$7.0-7.3bn`），`+6-10%` | `£5.4-5.7bn`（`$7.5-7.9bn`） | `£5.8-6.2bn`（`$8.0-8.6bn`） | 触发：EJ200/F130/MV-75/MT30/European defence 更快转收入；反证：政府预算/供应链延迟 |
+| SMR | `£50-150m`（`$70-210m`） | `£150-350m`（`$210-480m`） | `£350-700m`（`$480-970m`） | 触发：UK/CEZ long-lead procurement 和 FEED 加速；反证：监管/融资/政治节奏拖慢 |
+
+## 6. BOM、每 MW / rack / GPU / optical port 内容量与价格传导
+
+### 6.1 mtu 数据中心发电机：每 MW 内容量
+
+Rolls-Royce 不披露数据中心单台 ASP。以下是用行业设备/EPC 常见区间做的 BOM 和每 MW 内容量估计，用于判断订单弹性，不能作为报价。
+
+| 项目 | 2.8MW fast-start gas genset / Series 4000 data center genset 内容 | 每 MW Rolls-Royce 可捕获价值估算 | 价格传导 |
+|---|---|---:|---|
+| Engine block / turbo / fuel system | mtu Series 4000 20-cylinder engine、gas/diesel fuel train、controls | `$0.20-0.45m/MW` | 发动机和控制系统是 Rolls-Royce 核心价值，短交期/认证可溢价 |
+| Alternator / generator | 交流发电机、AVR、同步/保护 | `$0.08-0.20m/MW` | 部分外购/集成，受铜钢价格传导 |
+| Controls / digital monitoring | genset controller、remote monitoring、predictive maintenance、integration | `$0.03-0.10m/MW` | 软件和服务毛利高，客户锁定强 |
+| Cooling / exhaust / aftertreatment | radiator、SCR/oxidation catalyst、silencer、exhaust stack | `$0.08-0.25m/MW` | 排放许可越严，aftertreatment 和工程价值越高 |
+| Enclosure / container / skid | 声学 enclosure、container、skid、工厂测试 | `$0.08-0.20m/MW` | 数据中心占地/噪声要求提高 ASP |
+| Commissioning / service / LTSA | FAT/SAT、备件、长期服务 | `$0.05-0.15m/MW` 初装，生命周期更高 | Rolls-Royce 长期服务网络可复利 |
+| **合计：发电机组硬件+RR集成** | 不含变压器、switchgear、燃气管线、土建、电气总包 | **`$0.5-1.3m/MW`** | fast-start gas / mission-critical data center 取上沿 |
+
+完整项目 CapEx 不止 generator。若把 switchgear、变压器、ATS、燃气管线、SCR、土建、EPC、commissioning、冗余和 BESS 计算进去，behind-the-meter power plant 可达数百万美元/MW。Rolls-Royce 的可捕获部分主要是 genset、controls、package、commissioning 和服务。
+
+### 6.2 每 rack / 每 GPU 内容量
+
+假设一个 AI rack 为 `120-155kW IT`，PUE/设施负载折算 `1.15-1.25x`，备电冗余/余量 `1.05-1.20x`。
+
+| 指标 | 计算口径 | Rolls-Royce generator 内容量估算 |
+|---|---|---:|
+| 每 rack 需要备电/桥接发电容量 | `120-155kW × 1.15-1.25 × 1.05-1.20` | `0.15-0.23MW/rack` |
+| 每 rack Rolls-Royce generator 初装价值 | `0.15-0.23MW × $0.5-1.3m/MW` | `$75k-300k/rack` |
+| 每 GB200/GB300 NVL72 GPU 需要设施发电容量 | `120-155kW/rack / 72 GPU × 1.15-1.25 × 1.05-1.20` | `2.0-3.2kW/GPU` |
+| 每 GPU Rolls-Royce generator 初装价值 | `2.0-3.2kW × $500-1,300/kW` | `$1,000-4,200/GPU` |
+| 100MW IT AI hall 对应 2.8MW gas genset 台数 | facility `115-125MW`，N+1/maintenance 余量后 `125-145MW` | 约 `45-55` 台 2.8MW 机组 |
+| 100MW IT AI hall Rolls-Royce generator 初装价值 | 仅 generator/package，不含全电站 EPC | 约 `$60-180m` |
+
+### 6.3 每 optical port 内容量
+
+Rolls-Royce 的产品不直接按 optical port attach。对 optical port 的内容量只能做设施侧摊销：
+
+```text
+$ / optical port = data hall facility MW × generator $/MW ÷ optical port count
+```
+
+示例：若 10MW IT AI hall 使用约 `12,800` 个 800G equivalent optical ports，设施/冗余折算到 `12-14MW` generator capacity，Rolls-Royce generator value 为 `$6-18m`，则约 `$470-1,400/optical port`。这个口径只用于说明“电力设施成本会摊入每个网络端口的总拥有成本”，不是 Rolls-Royce 的销售计价方式。
+
+### 6.4 BESS / DRUPS 内容量
+
+| 产品 | 每 MW / MWh 内容量 | 关键 BOM | Rolls-Royce 定价权 |
+|---|---:|---|---|
+| mtu EnergyPack BESS | turnkey `2h/4h` BESS 约 `$200-500/kWh`，欧洲高可靠/总包项目可能更高 | LFP/NMC cells、PCS、BMS、thermal/fire、container、EMS/EnergetIQ、grid compliance、EPC | 硬件电芯定价权低，系统集成、EMS、网络安全、总包责任有溢价 |
+| mtu Kinetic PowerPack / DRUPS | 每 MW 估计 `$0.4-1.2m/MW`，取决于 kVA、冗余、燃料和现场工程 | flywheel/kinetic module、alternator/motor-generator、switchgear、controls、diesel/gas interface、enclosure | 客户认证、短时 ride-through、无电池、服务网络构成壁垒 |
+| 现场 gas + BESS 混合微电网 | Rolls-Royce 可捕获 genset + controls + BESS 部分 | generator、BESS、EMS、switchgear interface、commissioning | 若能做一体化 solution，价格传导强于单卖 generator |
+
+## 7. 产能能力、供应链采纳和认证阶段：当前与一年后
+
+### 7.1 当前产能和采纳
+
+| 产品/业务 | 当前产能能力（美元计，估算） | 供应链采纳程度 | 认证/客户验证 |
+|---|---:|---|---|
+| mtu Series 4000 data center gensets | 2025 data centre revenue `>$2.9bn`，2026 可服务订单/收入能力估计 `$3.5-4.5bn`，Mankato 2026 产量预计 `>+120%` | 高。mtu 在数据中心/mission-critical backup 关键市场份额 `20-25%`，hyperscale 客户使用 15 年以上 | 高。数据中心白名单、UL/局部电气认证、现场 FAT/SAT、长期服务体系 |
+| 20V4000 L64 fast-start gas | 2026 新产品，首年能力估计 `$0.2-0.6bn`，受发动机与封装产能限制 | 中。客户兴趣强，但产品商业规模尚待验证 | 2026 北美 60Hz 市场导入；认证重点为排放、并网、数据中心现场 acceptance |
+| Kinetic PowerPack / DRUPS | 估计 `$0.1-0.3bn` 级年能力，受大型旋转机械/工程团队限制 | 中高。成熟但 niche，适合高可靠客户 | 动态 UPS/DRUPS 需客户 site-specific 验证，认证周期长 |
+| mtu EnergyPack BESS | 2025 revenue 约 `$0.13bn`，合同 backlog 支撑 2026-2027 `$0.2-0.5bn` 级收入机会 | 中。Baltic grid storage 已有 >200 项目全球经验，数据中心采纳仍需验证 | Grid code、cybersecurity、fire safety、PCS/BMS/EMS 验证 |
+| SMR | 2026 主要为开发/设计/long-lead procurement；设备制造能力未进入规模收入 | 低到中。UK/CEZ 已合同化，但非数据中心专用 | 欧洲 regulatory process 领先，但商业投运仍长 |
+
+### 7.2 一年后产能和认证三情景
+
+| 产品 | 基准：2027 年中 | 乐观：2027 年中 | 极度乐观：2027 年中 |
+|---|---|---|---|
+| mtu data center gensets | 年收入/产能 `£3.0-3.4bn`，排产覆盖 2027/2028，客户多为 backup/bridge power | `£3.5-4.0bn`，fast-start gas 与 diesel 双线扩张，北美数据中心订单持续加速 | `£4.1-4.8bn`，behind-the-meter AI power plant 成为多个 100MW+ campus 一期标配 |
+| 20V4000 L64 gas | 完成首批客户部署，形成 reference sites，排放许可和燃气供应为主要门槛 | 多个北美 hyperscale/colo 项目批量采用，进入 2028 长单 | 快启 gas 标准化为 bridge power SKU，产能成为瓶颈，价格上行 |
+| Kinetic PowerPack / DRUPS | 保持高可靠 niche，认证客户扩展 | 与 AI onsite generation / dynamic stabilization 项目绑定 | 电网 ride-through / grid-safe data center 要求推动 DRUPS 或等价系统大幅放量 |
+| BESS / EnergyPack | Baltic projects 转收入，AI data center 仍为小比例 | BESS 与 generator/UPS 形成 hybrid offering，进入部分数据中心项目 | 数据中心 flexible interconnection 政策催化，BESS 成为大园区标配选项 |
+| SMR | UK/CEZ design 与 early works 收入，仍小 | long-lead supply chain 订单提高，合作客户增加 | 多个欧洲/数据中心 PPA 或 site-control 事件催化，但仍不是 reactor delivery revenue |
+
+## 8. 基于真实订单积压和供给预测未来一年业务增速
+
+| 业务 | 真实订单/供给锚 | 基准增速 | 乐观增速 | 极度乐观增速 | 判断 |
+|---|---|---:|---:|---:|---|
+| Group underlying revenue | 2025 `£20.059bn`，2026 UOP/FCF 指引强于 2025 | `+8-12%` | `+12-16%` | `+16-20%` | 收入高增主要来自 Power Systems 和 Civil services，利润增速可能高于收入 |
+| Civil Aerospace | 2026 EFH guide `115-120%`，OE `550-600`，shop visits `1,480-1,550` | `+7-11%` | `+11-15%` | `+15-20%` | time-on-wing/MRO capacity/contract pricing 仍支撑，但合同改善贡献边际下降 |
+| Power Systems | Q1 backlog `£7.3bn`，2025 order intake `£6.1bn`，2026 OE coverage `79%` | `+18-25%` | `+25-35%` | `+35-50%` | 数据中心和 governmental 是主驱动；受产能和项目交期限制 |
+| Power generation / data centers | 2025 data centre `+35%`；H1 2025 orders `+85%`；Q1 2026 gas/diesel orders `+50%` | `+25-35%` | `+40-55%` | `+60%+` | 最强高增产品群；若客户项目延迟，订单可能转为 backlog 而非当年 revenue |
+| BESS | 490MWh Sunly + Baltic >1.5GWh 完成后容量 | `+50-100%` | `+100-200%` | `+200%+` | 小基数，绝对贡献仍有限 |
+| Defence | backlog `£17.4bn`，2026Q1 OE deliveries `>+20%` | `+6-10%` | `+10-15%` | `+15-20%` | 平台和政府预算支持，但供应链约束不可忽略 |
+| SMR | UK/CEZ contract execution | 小额增长 | 明显增长但小基数 | 高百分比低绝对值 | 不应影响 2027 集团收入主模型 |
+
+## 9. 竞争格局、替代路线和客户替换成本
+
+### 9.1 数据中心发电机 / onsite power
+
+| 竞争对手 | 强项 | 对 Rolls-Royce 的威胁 |
+|---|---|---|
+| Caterpillar / Solar Turbines | 全球最大工程机械/发动机服务网络，gas/diesel gensets，AIP `2GW` 快响应天然气项目 | 强。北美渠道、服务和产能强，客户多源采购 |
+| Cummins | 数据中心柴油/燃气/微电网生态强，全球服务网络 | 强。尤其在标准 genset 和美国市场 |
+| Kohler / Rehlko | mission-critical backup power 深耕，数据中心客户基础强 | 中高。更偏 backup，但客户认证强 |
+| Wartsila | 大型 gas engine power plant，2026 德州 `790MW` data center off-grid order，累计美国 data center orders `>2.4GW` | 强。更适合大规模离网/prime power |
+| GE Vernova / Siemens Energy / Mitsubishi | 航改燃机/重型燃机、utility power island | 在 `100MW-1GW` bridge/prime power 上强，但交期和项目复杂度不同 |
+| INNIO Jenbacher / Waukesha | gas engines，CHP/industrial power | 中。特定地区/燃气项目竞争 |
+| Bloom Energy | SOFC fuel cell，Oracle `2.8GW` MSA，低 NOx/低水耗 | 替代风险高。若 air permit/水/ESG 成为第一约束，SOFC 抢 gas/diesel bridge power |
+| Tesla/Fluence/储能 + utility flexible interconnection | BESS/PCS/EMS 可做接入加速和负载平滑 | 中。不能完全替代 generator，但可减少 generator 容量或推迟采购 |
+
+**Rolls-Royce 竞争优势：**
+
+- `20-25%` 数据中心/mission-critical backup key markets 份额。
+- Data centre customers 使用 Rolls-Royce mtu 方案超过 15 年。
+- mtu Series 4000 高功率密度、可靠性、服务网络和美国本土制造扩张。
+- 2026 20V4000 L64 45 秒快启 gas genset 把“备用”拓展为“bridge/prime power”。
+- 从 generator、Kinetic PowerPack、BESS、controls 到 service 可以做系统组合。
+
+**替换成本：中高但不是垄断。** 数据中心发电机是客户白名单和现场认证产品，换供应商会涉及短路电流、控制接口、排放、燃料、备件、服务、FAT/SAT、现场调试和保险；但 hyperscaler 和 colo 通常会保持多供应商。因此 Rolls-Royce 有定价权，但不是像 GPU 或 HBM 那样的垄断定价。
+
+### 9.2 DRUPS / dynamic UPS / kinetic power
+
+| 竞争对手 | 强项 | Rolls-Royce 定位 |
+|---|---|---|
+| HITEC Power Protection / Air Water | Dynamic rotary UPS、数据中心高可靠案例 | 直接竞争 |
+| Piller / Active Power | Flywheel UPS、battery-free UPS，AI 数据中心案例 | 直接竞争，技术和客户引用强 |
+| ABB / Schneider / Eaton / Vertiv | UPS、MV UPS、BESS、power block 和数据中心集成能力强 | 更强系统集成竞争者 |
+| Caterpillar/Cummins/Kohler ecosystem | generator + flywheel/UPS 配套 | 通过 generator 渠道竞争 |
+
+DRUPS 的主流性风险：客户可能选择 `static UPS + Li-ion/NiZn + BESS + genset` 的分体式架构，而不是旋转式一体化。AI 负载动态功率越被 utility/grid code 重视，DRUPS/kinetic power 价值越高。
+
+### 9.3 BESS
+
+| 竞争对手 | 强项 | Rolls-Royce 风险 |
+|---|---|---|
+| Tesla Energy | Megapack、软件、规模、项目融资 | 成本和规模优势强 |
+| Fluence / Wartsila / Powin / Sungrow / CATL / BYD | 全球 BESS 集成和供应链规模 | 价格竞争压低硬件毛利 |
+| Schneider / Eaton / ABB / Siemens / GE Vernova | 电气集成、EMS、grid interface | 大客户系统总包竞争强 |
+
+Rolls-Royce BESS 优势在欧洲高可靠、网络安全、单一责任总包，尤其 Baltic 项目；在美国 AI 数据中心大规模 BESS 领域不是最纯粹龙头。
+
+### 9.4 Civil Aerospace 和 Defence
+
+| 业务 | 竞争对手 | 替换成本 |
+|---|---|---|
+| Widebody civil engines | GE Aerospace、Pratt & Whitney（部分平台） | 极高。机型/发动机选型决定几十年 MRO，但新飞机订单竞争激烈 |
+| Trent 1000 XE / 787 | GE GEnx | 中高。787 可选发动机，Rolls 需要用 reliability/time-on-wing 重建信任 |
+| Trent XWB / A350 | GE 无直接同平台竞争 | 高。Rolls 在 A350 平台强势，售后现金流可见度高 |
+| Defence aero/naval/nuclear | GE Aerospace、Pratt & Whitney、Safran、MTU Aero、Honeywell、GE Vernova/MAN/Siemens 等 | 极高。国防平台认证、长期保障、出口许可和主权能力壁垒强 |
+
+## 10. 风险、反证指标和跟踪清单
+
+| 风险 | 观察指标 | 对估值/模型影响 |
+|---|---|---|
+| 数据中心 power generation 订单不能转收入 | Power Systems backlog 增但 revenue/FCF 不跟，客户项目延期，advance 下降 | 下修 Power Systems 2026-2027 增速，上修 working capital 风险 |
+| 排放/燃气/社区许可限制 gas/diesel bridge power | 州环保 permit、燃气管线、NOx/水/噪声争议 | Bloom/SOFC、BESS、utility generation 替代，上调非燃烧方案 |
+| 客户双供应商和价格压制 | Caterpillar/Cummins/Wartsila 抢单，book-to-bill 降 | 下修每 MW ASP 和 margin |
+| Civil Aerospace 供应链或 reliability 反复 | AOG、shop visit delays、Trent 1000/XWB durability 事件 | 影响最大，因为 Civil services 是集团现金牛 |
+| 估值过高 | forward P/E 维持 30x+，但 2026/2027 指引没有上修 | 股价对小失误敏感 |
+| SMR 期权被过度资本化 | UK/CEZ 节点延迟、监管/融资慢 | 不影响短期利润，但影响长期 narrative multiple |
+| 回购与投资冲突 | 高回购下仍需扩产/研发/SMR long lead | 若 FCF 下行，资本配置会被重新审视 |
+
+**未来 3-6 个月必跟踪：**
+
+1. 2026-07-30 H1 2026 results：Power Systems revenue、order intake、book-to-bill、data centre order/revenue、2026 OE coverage。
+2. Civil Aerospace：large EFH 是否超过 `115%`、shop visits 是否按 `1,480-1,550` 路径走、supply chain cash impact 是否仍为 `£150-200m`。
+3. mtu 20V4000 L64：是否披露首批北美数据中心客户、订单台数、交付窗口、排放认证。
+4. BESS：Sunly 490MWh 与 Baltic >1.5GWh 项目的收入确认节奏、EnergetIQ/EMS 是否提升毛利。
+5. SMR：UK GBE-N Wylfa、CEZ Temelin early works 是否进入更明确 long-lead procurement。
+6. 外部行业反证：Caterpillar/AIP、Wartsila、Bloom/Oracle、GE Vernova/Crusoe 等项目的实际交付速度。
+
+## 11. 资料来源
+
+### 11.1 外部公司和行情资料
+
+| 来源 | 日期 | 关键使用 |
+|---|---:|---|
+| Rolls-Royce 2025 Annual Report PDF，https://www.rolls-royce.com/~/media/Files/R/Rolls-Royce/documents/annual-report/2026/2025-annual-report-interactive.pdf | 2026-02 | 2025 revenue、profit、segment、backlog、balance sheet、Power Systems data centre mix |
+| Rolls-Royce FY2025 results，https://www.rolls-royce.com/media/press-releases/2026/26-02-2026-rr-holdings-plc-2025-full-year-results.aspx | 2026-02-26 | 2025 performance、2026 guidance、buyback、净现金 |
+| Rolls-Royce AGM statement and trading update，https://www.rolls-royce.com/media/press-releases/2026/30-04-2026-rr-holdings-plc-agm-statement-and-trading-update.aspx | 2026-04-30 | Q1 2026 trading update、Power Systems order intake、backlog、guidance maintained |
+| Rolls-Royce H1 2025 results full text，https://www.investegate.co.uk/announcement/rns/rolls-royce-holdings--rr./2025-half-year-results/9014671 | 2025-07-31 | H1 2025 revenue/profit、Power Systems orders、data centre order growth |
+| Rolls-Royce FY2024 results full text，https://www.investegate.co.uk/announcement/rns/rolls-royce-holdings--rr./full-year-results-2024/8754593 | 2025-02-26 | FY2024 base、segment revenue、backlog、net cash |
+| Rolls-Royce 2024 half year results，https://www.rolls-royce.com/investors/2024-half-year-results.aspx | 2024-08 | H1 2024 base、FCF、net debt、revenue mix |
+| mtu fast-start gas gensets for data centers，https://www.mtu-solutions.com/eu/en/pressreleases/2025/Rolls-Royce-introduces-fast-start-mtu-gas-gensets-for-powering-data-centers.html | 2025-10-22 | 20V4000 L64 `2.8MW`、45 秒快启、2026 commercial launch |
+| Rolls-Royce data center solutions，https://www.mtu-solutions.com/eu/en/applications/power-generation/data-center.html | 2026 access | Series 4000 data center gensets、market share、hyperscale history、Mankato/Aiken expansion |
+| Rolls-Royce Kinetic PowerPack，https://www.mtu-solutions.com/eu/en/applications/power-generation/data-center.html | 2026 access | Kinetic PowerPack `480kVA/400kW` 到 `2,750kVA/2,640kW` |
+| Rolls-Royce mtu EnergyPack Sunly 490MWh，https://www.rolls-royce.com/media/press-releases/2026/05-06-2026-rr-and-sunly-extend-battery-storage-partnership-in-baltics-with-490mwh-projects.aspx | 2026-06-05 | BESS 490MWh、Baltic >1.5GWh pipeline |
+| Rolls-Royce SMR / GBE-N contract，https://www.rolls-royce-smr.com/press/rolls-royce-smr-signs-contract-with-gbe-n-to-progress-development | 2026-04 | UK SMR contract、Wylfa development |
+| Rolls-Royce SMR / CEZ commercial terms，https://www.rolls-royce-smr.com/press/rolls-royce-smr-and-cez-group-sign-commercial-terms-to-progress-development-in-czechia | 2026-04 | CEZ Temelin early works、future Czech SMR deployment |
+| Google Finance RYCEY，https://www.google.com/finance/beta/quote/RYCEY%3AOTCMKTS | 2026-06-11 | RYCEY price、market cap、P/E |
+| HL RR.L，https://www.hl.co.uk/shares/shares-search-results/r/rolls-royce-holdings-plc-ordinary-20p | 2026-06-11 | RR.L price、market cap、P/E、EPS |
+| Yahoo Finance RR.L key statistics，https://finance.yahoo.com/quote/RR.L/key-statistics/ | 2026-06-10 | forward P/E、P/S 交叉验证 |
+
+### 11.2 项目内行业资料
+
+| 项目内文件 | 使用方式 |
+|---|---|
+| `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` | AI 数据中心 CapEx、MW、power bottleneck、订单池框架 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md` | 自备发电、gas engine、fuel cell、BESS、SMR 的技术路径和竞争格局 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md` | power-to-market、变压器/switchgear、onsite generation 与数据中心电力瓶颈 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md` | BESS、UPS、rack/row BBU、动态电力质量框架 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_动态UPS、飞轮与超级电容_2026-06-11.md` | DRUPS、flywheel、Kinetic PowerPack 竞争和 BOM |
+| `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md` | 每 rack / GPU 功率密度、GB200/GB300 rack power assumptions |
+
+## 12. 最终判断
+
+Rolls-Royce 的可投资主线分三层：
+
+1. **基本盘：Civil Aerospace 售后 + Defence backlog。** 这是 2026-2028 年利润和 FCF 的底座，也是高回购的基础。
+2. **AI 相关增量：Power Systems data centre power。** 这是报告最重要的新增长点，2025 已贡献 `>£2.1bn`，且订单强度继续上行。它是 AI 数据中心“可上电 MW”的卖铲环节，但不是 AI 芯片/服务器高垄断利润池。
+3. **远期期权：SMR + BESS/微电网系统化。** SMR 对数据中心长期 clean firm power 有战略意义，但 2026-2027 主要是 PPA/许可/工程/开发节点，不是反应堆收入爆发。BESS 和 DRUPS 有 AI 负载动态功率期权，但当前绝对收入仍小。
+
+股票层面，RYCEY/RR.L 已经从“困境反转”进入“高质量工业成长股高估值阶段”。若 Power Systems data centre revenue 在 2026H1/H2 继续保持 `30%+` 量级增长，且 Civil margin 不回落，估值可继续被支撑；若数据中心订单延迟、Civil 供应链现金拖累或回购无法抵消估值压力，30x+ forward P/E 的容错率并不高。

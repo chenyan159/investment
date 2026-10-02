@@ -1,0 +1,23 @@
+{
+  "removed": 13,
+  "retained": [
+    {
+      "id": "file-run-sorting-E04-BCDE-2026-09-08-2026-09-08T01_23_55-07_00-bae4544454",
+      "name": "风险调整赔率输入隔离 BCDE",
+      "status": "pending"
+    },
+    {
+      "id": "file-run-sorting-E05-BCDE-2026-09-08-2026-09-08T01_23_56-07_00-6a73e7ceda",
+      "name": "极简基准兑现输入隔离 BCDE",
+      "status": "pending"
+    },
+    {
+      "id": "file-run-sorting-E06-BCDE-2026-09-08-2026-09-08T01_23_56-07_00-6a73e7ceda",
+      "name": "尾部生存输入隔离 BCDE",
+      "status": "pending"
+    }
+  ],
+  "activeQueueCount": 13,
+  "otherTasksPreserved": 10,
+  "backup": "D:\\drive\\Investment\\tools\\research-runner\\queue-backups\\retain-bcde-2026-09-08T08-26-01-287Z"
+}

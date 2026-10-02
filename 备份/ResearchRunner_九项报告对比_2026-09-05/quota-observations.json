@@ -1,0 +1,52 @@
+{
+  "first": {
+    "time": "2026-09-05T17:49:20.935Z",
+    "limit_id": "codex",
+    "limit_name": null,
+    "primary": {
+      "used_percent": 30,
+      "window_minutes": 10080,
+      "resets_at": 1788748070
+    },
+    "secondary": null,
+    "credits": {
+      "has_credits": true,
+      "unlimited": false,
+      "balance": "2500"
+    },
+    "individual_limit": null,
+    "spend_control_reached": null,
+    "plan_type": "pro",
+    "rate_limit_reached_type": null
+  },
+  "last": {
+    "time": "2026-09-05T19:49:44.561Z",
+    "limit_id": "codex",
+    "limit_name": null,
+    "primary": {
+      "used_percent": 36,
+      "window_minutes": 10080,
+      "resets_at": 1788748070
+    },
+    "secondary": null,
+    "credits": {
+      "has_credits": true,
+      "unlimited": false,
+      "balance": "2500"
+    },
+    "individual_limit": null,
+    "spend_control_reached": null,
+    "plan_type": "pro",
+    "rate_limit_reached_type": null
+  },
+  "min": 30,
+  "max": 36,
+  "note": "Account-wide weekly usage sampled in nine sessions; not per-task usage",
+  "observedCurrent": {
+    "usedPercent": 38,
+    "windowDurationMins": 10080,
+    "resetsAt": 1788748070,
+    "creditsBalance": 2500,
+    "planType": "pro"
+  }
+}

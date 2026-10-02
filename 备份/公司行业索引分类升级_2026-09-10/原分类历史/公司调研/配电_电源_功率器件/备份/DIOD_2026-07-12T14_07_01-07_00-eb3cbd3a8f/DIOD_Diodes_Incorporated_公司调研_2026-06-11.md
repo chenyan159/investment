@@ -1,0 +1,322 @@
+# DIOD Diodes Incorporated 公司调研：模拟/分立/Timing 的 AI 数据中心边缘受益者
+
+报告日期：2026-06-11（工作区本地日期，America/Los_Angeles）  
+研究边界：本报告只结合 `行业调研/` 下与 AI 电力、机柜供电、时钟同步、PCIe/CXL 高速互联相关的项目内行业资料，以及联网检索的公司公告、SEC 文件、业绩会、产品页和市场数据；未读取、引用或继承 `特征量化/`、其他目录资料或既有公司调研报告。  
+核心判断：DIOD 不是 AI GPU、ASIC、HBM、CPO 或高端 retimer 的核心供应商，而是一家覆盖分立、模拟、电源管理、保护、时钟和连接芯片的长尾型半导体供应商。它在 AI 数据中心的真实价值来自“每台 AI 服务器、交换机、电源架、光模块都需要很多低到中 ASP 的可靠小芯片”，而不是单颗高价核心芯片。AI 相关收入正在提高，但当前仍应定义为 AI-adjacent，而非纯 AI 基建主链标的。
+
+## 0. 投资结论摘要
+
+DIOD 是一家典型的 broad-line analog/discrete/mixed-signal 公司：产品颗粒小、SKU 多、客户分散、周期性强、资产负债表很稳。2025 年产品结构约为 Power 41%、Analog 29%、Mixed-signal/Connectivity 30%；终端结构约为 Computing 27%、Industrial 23%、Automotive 21%、Consumer 16%、Communications 13%。这意味着它既受汽车/工业库存周期影响，也能通过 AI server、data center networking、optical transceiver、48V data-center power、PCIe clock tree 等应用获得增量。
+
+截至 2026-06-11 市场数据，DIOD 股价约 106.84 美元，市值约 49.3 亿美元，TTM P/E 约 57-58 倍，forward P/E 约 32-34 倍，P/S 约 3.1 倍。这个估值已经把“2025-2026 从库存低谷恢复 + AI 相关 socket 增加 + 毛利率修复”计入不少，短期安全边际不低；但如果公司能证明 computing/communications 中 AI 数据中心产品从几十百万美元季度收入走向数亿美元年化收入，估值弹性仍存在。
+
+最新 Q1 2026 收入 4.055 亿美元，同比 +22.1%，环比 +3.6%，毛利率 31.8%，GAAP 净利 1,500 万美元，非 GAAP EPS 0.43 美元。Q2 2026 指引收入 4.35 亿美元上下 3%，中位数隐含环比 +7.3%、同比 +18.8%，毛利率约 32% 上下 1 个百分点。管理层表述的关键不是“渠道补库存”，而是 POS 增长、分销库存继续降至正常低端、部分供应扰动带来需求流入。这比纯 restocking 更健康，但公司不披露 backlog、bookings、book-to-bill、取消率，需要通过渠道和收入指引反推。
+
+本报告对 DIOD 当前 AI 数据中心直接/间接收入的估计为 Q1 2026 约 4,000-6,500 万美元，占公司收入约 10-16%；如果包括汽车/工业中与电气化、48V、能源基础设施相关但非 AI 数据中心的业务，则“高增长/高质量”收入占比更高。未来一年基准情景下，公司总收入可到 18.5-20.0 亿美元，AI-adjacent 年收入约 2.5-3.6 亿美元；乐观情景下总收入 20.5-22.5 亿美元，AI-adjacent 4.2-6.0 亿美元；极度乐观情景需要 AI 平台 socket 胜率明显提高、分销/供应扰动持续、产能和测试端跟上，总收入可冲 23-25 亿美元，但概率明显低于基准和乐观。
+
+## 1. 公司整体业务、投资人认知和产业链位置
+
+### 1.1 公司是什么
+
+Diodes Incorporated 是总部位于美国得州 Plano 的全球半导体公司，核心产品包括：
+
+| 大类 | 典型产品 | 对 AI/数据中心的关系 | 价值捕获特征 |
+|---|---:|---|---|
+| Power / Discrete | SBR、Schottky、bridge rectifier、TVS/ESD、MOSFET、BJT、SiC Schottky/MOSFET | AI server PSU、48V power shelf、BBU、network switch、optical transceiver 的保护/整流/开关 | 单价低到中等，量大，设计认证后替换成本上升 |
+| Analog / Power Management | LDO、buck、ideal diode controller、load switch、hot-swap/保护相关模拟器件、isolation | 服务器主板、交换机、光模块、工业电源、电动车电源管理 | 毛利率高于纯分立，但竞争强 |
+| Mixed-signal / Connectivity | PCIe clock generator/buffer、crystal oscillator、redriver、mux/switch、packet switch、USB/PCIe 接口 | AI server PCIe Gen5/6/7 clock tree、NIC/switch、AI optical networking | AI 相关性最高，但 DIOD 不等同于 Astera/Marvell 类高端 retimer/fabric switch |
+| Voice / Audio software and IC | Fortemedia 语音处理、HMI 相关 | 主要面向汽车和 compute 语音接口，不是 AI 数据中心核心 | 2024 年收购带来的小型扩展 |
+
+公司在产业链中的位置不是晶圆代工、GPU 设计、内存或整机厂，而是下游系统里大量“小而必须”的标准/准标准芯片供应商。客户通常是 ODM/OEM、汽车 Tier 1、工业设备、电源供应商、网络设备和消费电子客户。由于产品 ASP 通常不高，单颗器件不会成为 AI rack 成本中心；但当 AI rack 功耗从几十 kW 推到 100-155kW，PCIe 和以太网速率从 Gen5/800G 推向 Gen6/Gen7/1.6T，保护、时钟、整流、电源管理和 signal conditioning 的 socket 数量会增加。
+
+### 1.2 投资人眼中的 DIOD
+
+投资人通常把 DIOD 看成四类属性叠加：
+
+| 属性 | 正面 | 负面 |
+|---|---|---|
+| 周期复苏股 | 2025 从库存周期低点恢复，Q1 2026 同比 +22.1%，Q2 指引继续增长 | 终端库存、分销渠道和通用半导体周期会放大盈利波动 |
+| 长尾模拟/分立平台 | SKU 多、客户广、收购整合历史长，产品可跨汽车、工业、计算、通信 | 很多产品 commodity-like，缺少单一垄断爆品 |
+| AI 数据中心二阶受益 | AI server、networking、optical、48V power 都需要 timing、protection、rectifier、LDO、redriver | 不是 GPU、HBM、CPO、retimer 主链；AI 叙事容易被过度放大 |
+| 资产负债表稳健 | Q1 2026 现金+短投 4.087 亿美元，总债务 5,500 万美元，净现金 3.537 亿美元 | 库存 4.933 亿美元仍高，需要继续消化和转化为现金 |
+
+### 1.3 近三年重大业务变化、转型和收购
+
+| 时间 | 事项 | 影响 |
+|---|---|---|
+| 2022-2023 延续影响 | 完成 onsemi South Portland, Maine 200mm wafer fab 收购后整合 | 增强美国 200mm 产能，主要服务汽车、工业、电源/模拟器件，降低部分外部产能依赖 |
+| 2023-2024 | 半导体库存调整，公司经历低增长/盈利压缩周期 | 毛利率和利润率处于低位，分销库存成为主要变量 |
+| 2024-10-31 | 完成 Fortemedia 收购，现金价格约 6,080 万美元 | 扩展语音处理、汽车和 compute HMI 技术，不是数据中心 AI 主线，但补强 mixed-signal/software 能力 |
+| 2025 | 汽车、工业、计算和通信恢复，AI server/data center 应用在业绩会中反复出现 | 公司叙事从单纯周期修复转向“汽车/工业恢复 + AI-adjacent socket 增量” |
+| 2025-05 | Gary Yu 接任 CEO，Dr. Keh-Shew Lu 留任董事长 | 管理层进入传承期；短期战略仍是扩展 addressable market、提升汽车/工业/数据中心权重 |
+| 2026 Q1 | 推出 PCIe 7.0 clock generator PI6CG33A06；Q1 call 提到 AI server、AI data-center networking 需求 | 表明公司在 PCIe Gen7 timing、AI optical/networking、server power/protection 上有设计进入机会 |
+
+### 1.4 最新估值和财务快照
+
+价格和估值数据为 2026-06-11 附近市场快照；不同行情源对实时价格和 TTM EPS 口径会有小差异。
+
+| 指标 | 最新值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | 106.84 美元 | 2026-06-11 21:35 UTC 附近 | 当日收盘附近市场数据 |
+| 市值 | 约 49.1-49.3 亿美元 | 2026-06-11/12 市场数据 | 股本约 4,594 万股 |
+| 企业价值 | 约 44.8 亿美元 | 2026-06-11/12 StockAnalysis | 净现金降低 EV |
+| TTM P/E | 约 57.6-57.8 倍 | 2026-06-11/12 | 周期低位利润导致 PE 偏高 |
+| Forward P/E | 约 32.1-33.9 倍 | 2026-06-11/12 | 依赖 2026-2027 盈利修复 |
+| P/S | 约 3.1 倍 | 2026-06-11/12 | TTM 收入约 15.56 亿美元 |
+| Forward P/S | 约 2.6 倍 | 2026-06-11/12 | 隐含收入继续增长 |
+| Q1 2026 收入 | 4.055 亿美元 | 2026Q1 | 同比 +22.1%，环比 +3.6% |
+| FY2025 收入 | 14.82 亿美元 | 2025 全年 | 同比 +13.0% |
+| Q1 2026 毛利率 | 31.8% | 2026Q1 | 尚未回到高景气模拟/分立周期水平 |
+| TTM 净利率 | 约 5.5% | Q2 2025-Q1 2026 GAAP 净利/收入估算 | 利润率仍处恢复早期 |
+| Q1 2026 非 GAAP EBITDA margin | 14.9% | 2026Q1 | 调整后 EBITDA 6,060 万美元 |
+
+### 1.5 资产负债表健康度
+
+截至 2026-03-31：
+
+| 项目 | 金额 | 解释 |
+|---|---:|---|
+| 现金及等价物 | 3.403 亿美元 | 账面现金充足 |
+| 短期投资 | 0.684 亿美元 | 与现金合计 4.087 亿美元 |
+| 总债务 | 0.550 亿美元 | 其中流动部分 0.251 亿美元，长期债务 0.299 亿美元 |
+| 净现金 | 约 3.537 亿美元 | 财务弹性强 |
+| 存货 | 4.933 亿美元 | 仍然偏高，是周期恢复期最大观察项 |
+| 流动资产 | 13.027 亿美元 |  |
+| 流动负债 | 4.114 亿美元 |  |
+| 流动比率 | 约 3.17 倍 | 短债偿付能力强 |
+| 股东权益 | 19.514 亿美元 | 债务/权益约 2.8% |
+| Q1 2026 经营现金流 | 6,430 万美元 | 现金流质量较好 |
+| Q1 2026 自由现金流 | 3,240 万美元 | 有能力支持小规模收购/资本开支 |
+
+判断：资产负债表健康，几乎没有偿债压力，净现金和经营现金流给公司留出逆周期收购和扩产空间。主要风险不是债务，而是存货、价格竞争和毛利率修复速度。存货 4.933 亿美元相当于 Q1 2026 年化收入的约 30%，仍需看后续 POS 和渠道库存是否持续健康。
+
+## 2. 最近五次财报：收入、利润、订单/交期和 AI 数据中心暴露
+
+DIOD 不披露标准化 backlog、bookings、book-to-bill、lead time 或取消率。下表中的订单/交期判断基于公司业绩会、指引、分销库存描述和渠道信息；AI 数据中心收入占比为模型估算，不是公司披露。
+
+| 财报季度 | 收入/增长 | 毛利率与利润 | 终端收入结构（约） | 订单、交期、渠道库存 | AI 数据中心相关收入估计 |
+|---|---:|---:|---|---|---:|
+| 2025Q1 | 收入 3.321 亿美元；环比 -2.1%；同比 +10.0% | GAAP 净亏损 440 万美元；非 GAAP EPS 0.19 美元；毛利率 31.5%；adj. EBITDA 3,230 万美元 | Industrial 23%/约 7,640 万；Automotive 19%/约 6,310 万；Computing 27%/约 8,970 万；Consumer 17%/约 5,650 万；Communications 14%/约 4,650 万 | 库存周期仍在修复，Q2 指引显示需求改善但未证明全面缺货；未披露 backlog/B2B/取消率 | 约 1,500-2,500 万美元，约 5-8%；主要来自 AI server computing 与 data-center networking 的 timing/protection/rectifier/redriver |
+| 2025Q2 | 收入 3.662 亿美元；环比 +10.3%；同比 +14.7% | GAAP 净利 4,610 万美元；非 GAAP EPS 0.42 美元；毛利率 31.8%；adj. EBITDA 5,050 万美元 | Industrial 24%/约 8,790 万；Automotive 21%/约 7,690 万；Computing 26%/约 9,520 万；Consumer 16%/约 5,860 万；Communications 13%/约 4,760 万 | POS 在亚洲和北美改善，分销库存下降；公司称进入 Q3 时 backlog 较强，但未量化 | 约 2,000-3,500 万美元，约 6-10%；AI server 和 high-speed networking 开始更明显 |
+| 2025Q3 | 收入 3.922 亿美元；环比 +7.1%；同比 +12.3% | GAAP 净利 1,430 万美元；非 GAAP EPS 0.45 美元；毛利率 31.5%；adj. EBITDA 5,640 万美元 | Industrial 24%/约 9,410 万；Automotive 21%/约 8,240 万；Computing 28%/约 1.098 亿；Consumer 16%/约 6,280 万；Communications 11%/约 4,310 万 | 分销库存按金额和周数较高点下降超过 25%；POS 继续改善；未披露取消率 | 约 2,800-4,500 万美元，约 7-11%；computing 占比升至 28%，AI server/data center 是主要增量解释之一 |
+| 2025Q4 | 收入 3.916 亿美元；环比 +0.9%；同比 +26.9% | GAAP 净利 1,020 万美元；非 GAAP EPS 0.44 美元；毛利率 31.6%；adj. EBITDA 6,140 万美元 | Industrial 23%/约 9,010 万；Automotive 21%/约 8,220 万；Computing 28%/约 1.096 亿；Consumer 16%/约 6,270 万；Communications 12%/约 4,700 万 | 公司称处于正向增长周期早期，渠道库存继续下降；Q1 2026 指引收入 4.00 亿美元上下 3% | 约 3,500-5,500 万美元，约 9-14%；AI server-related 与 high-speed networking 继续支撑 computing/communications |
+| 2026Q1 | 收入 4.055 亿美元；环比 +3.6%；同比 +22.1% | GAAP 净利 1,500 万美元；非 GAAP EPS 0.43 美元；毛利率 31.8%；adj. EBITDA 6,060 万美元 | Industrial 24%/约 9,730 万；Automotive 20%/约 8,110 万；Computing 26%/约 1.054 亿；Consumer 17%/约 6,890 万；Communications 13%/约 5,270 万 | POS 上升，分销库存继续下降到正常区间低端；管理层强调不是 restocking 驱动；Q2 指引 4.35 亿美元，所有地区和终端预计环比增长 | 约 4,000-6,500 万美元，约 10-16%；AI server、data-center networking、AI optical transceiver、power/protection 产品共同贡献 |
+
+关键观察：
+
+1. Q1 2026 的同比增长不是单一业务驱动。官方材料显示 automotive 同比 +32.1%，industrial 同比 +30.6%；computing 和 communications 则受 AI server/data-center networking 拉动。
+2. 毛利率连续几个季度约 31.5-31.8%，说明收入恢复已经发生，但产品价格、产能利用率和 mix 还没有显著恢复到高景气毛利。
+3. backlog 未量化是估值上的最大盲点。Q2 指引强、POS 改善和渠道库存下降可以证明需求方向，但不能证明 DIOD 已经形成 AI 供应链瓶颈。
+
+## 3. 2026 最新指引、业务占比和产品映射
+
+### 3.1 Q2 2026 指引
+
+| 指标 | Q2 2026 指引中位数 | 隐含含义 |
+|---|---:|---|
+| 收入 | 4.35 亿美元上下 3% | 中位数环比 Q1 +7.3%，同比 Q2 2025 +18.8% |
+| 毛利率 | 约 32% 上下 1 个百分点 | 较 Q1 31.8% 小幅改善，尚未明显扩张 |
+| 非 GAAP opex | 约收入 23.3% | 仍需收入规模摊薄费用 |
+| 税率 | 约 18% | 正常化税率 |
+| 稀释股数 | 约 4,700 万股 | 股本稳定 |
+| 非 GAAP EPS | 约 0.60 美元上下 0.10 美元 | 相对 Q1 0.43 美元明显改善 |
+| 终端展望 | 所有地区和终端预计环比增长 | 说明恢复广泛，不只是单一 AI 项目 |
+
+### 3.2 Q1 2026 已披露终端占比和 Q2 2026 合理推演
+
+公司没有给 Q2 终端拆分指引，下表为基于 Q1 mix、Q2 收入中位数和管理层“所有终端环比增长”的推演。
+
+| 终端 | Q1 2026 占比/收入 | 已知增长信号 | Q2 2026 推演收入 | AI 相关性 |
+|---|---:|---|---:|---|
+| Computing | 26% / 约 1.054 亿美元 | AI server-related、data center 应用推动；Q4 2025 computing 同比 +25.2% | 约 1.15-1.22 亿美元 | 高；AI server timing、PCIe clock/redriver、SBR、SiC MOSFET、ideal diode controller、LDO |
+| Communications | 13% / 约 5,270 万美元 | AI data-center high-speed networking、AI optical transceiver 需求 | 约 5,500-6,100 万美元 | 高；312.5MHz oscillator、TVS/ESD、SiC Schottky、regulator、timing |
+| Industrial | 24% / 约 9,730 万美元 | Q1 同比 +30.6%；solar optimizer、industrial isolation、48V networking 等 | 约 1.04-1.09 亿美元 | 中；部分与数据中心电力/48V/能源基础设施相关 |
+| Automotive | 20% / 约 8,110 万美元 | Q1 同比 +32.1%；EV charging、BMS、traction inverter | 约 8,700-9,100 万美元 | 低到中；非 AI，但高质量增长和高认证壁垒 |
+| Consumer | 17% / 约 6,890 万美元 | Q4 2025 consumer 同比 +56.8%，但更多为周期恢复 | 约 7,000-7,400 万美元 | 低；除 PC/边缘 AI 外，估值权重较低 |
+
+### 3.3 重点产品和型号
+
+| 业务/产品线 | 已知产品或型号 | 关键事实 | 对应收入池 |
+|---|---|---|---|
+| PCIe timing / clock tree | PI6CG33A06 PCIe 7.0 clock generator；PI6CG/PI6CB 系列 PCIe Gen5/6/7 clock generator/buffer | PI6CG33A06 具备 6 路输出、sub-30fs RMS jitter，低于 PCIe 7.0 67fs 最大 jitter 规格；3k 量价 2.80 美元，标准交期约 8 周 | Computing、communications；AI server motherboard、NIC、switch、storage |
+| PCIe signal conditioning / redriver / mux | PCIe packet switch；linear ReDriver；PI3EQX 系列 32/64Gbps redriver；USB/PCIe mux/switch | AI server/data center 应用被管理层点名；但 DIOD 在高端 retimer/fabric switch 上不是主导厂商 | Computing；AI server、PCIe riser、backplane、AEC/near-cable 辅助 |
+| Power discrete / protection | SBR bridge rectifier、SiC MOSFET、SiC Schottky、TVS、ESD protector、MOSFET/BJT、bridge rectifier | Q1 call 提到 AI server bridge rectifier、data-center networking 48V BJT、AI optical TVS/ESD/Schottky | Computing、communications、industrial |
+| Analog power management | ideal diode controller、LDO、buck converter、regulator、load switch、isolation/robustISO | 在 AI server、optical module、networking board 和 EV/industrial power 中都有 socket | Computing、communications、industrial、automotive |
+| Automotive/industrial high-reliability | EV fast-charging SiC bridge rectifier、PFC TVS、EV BMS dual n-channel MOSFET array、traction inverter buck、solar optimizer digital isolator | 当前汽车和工业同比增长最强，认证壁垒高 | Automotive、industrial；不是 AI 数据中心主线 |
+
+### 3.4 低优先级或本报告跳过的产品
+
+以下业务对公司收入仍重要，但对 AI 数据中心增量和高估值叙事贡献较弱，本报告不展开：
+
+| 跳过/低优先级产品 | 原因 |
+|---|---|
+| 传统消费电子小信号二极管、低端开关、普通低压 MOSFET | 量大但 ASP 低，竞争充分，AI 基建关联弱 |
+| 普通 PC/外设/显示/LED driver | 周期恢复可能拉动收入，但不是高增 AI 基建瓶颈 |
+| 传统 12V server PSU 辅助器件 | 48V/54V 和高功率 AI rack 电源才是增量核心 |
+| Fortemedia 语音处理 | 对汽车和 compute HMI 有意义，但不是数据中心 AI 价值链核心 |
+| 通用 consumer IoT/charger/adapter | 增速和利润弹性弱于 AI server、汽车、工业电源 |
+
+## 4. 高增长/关键产品当前贡献、重要性和供需状态
+
+下表中的收入贡献为模型估计，基于公司披露的 end-market mix、业绩会点名应用、项目内行业 BOM 和可比产品 ASP，不是公司正式分部披露。
+
+| 关键业务 | 当前收入贡献估计 | 当前增速判断 | 对 AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---:|---|---|---|---|---|
+| PCIe timing / clock generator / buffer | Q1 2026 约 1,200-2,200 万美元；年化约 5,000-9,000 万美元 | 同比约 +25-50%，Gen5/6 量产和 Gen7 design-in 推动 | 高。AI server 的 PCIe/CXL clock tree、NIC/switch、storage 都需要低 jitter 时钟 | 高。PCIe 6/7 和 800G/1.6T 设计窗口正在发生 | 中到偏高。标准交期 8 周，但高端低 jitter/特定平台料号可能更紧 | 中。DIOD 有低价集成优势，但高端系统 timing 仍面对 SiTime、Renesas/IDT、Microchip、Skyworks、TI |
+| PCIe redriver / mux / packet switch | Q1 2026 约 800-1,800 万美元；年化约 3,500-7,500 万美元 | 同比约 +25-60%，取决于 AI server 内部互联设计 | 中高。信号完整性、主板走线、riser、cable 距离增加都需要 redriver/retimer | 高。Gen5/Gen6 平台更新快 | 中。高端 retimer 更紧，DIOD redriver/mux 相对不一定缺货 | 低到中。redriver 替代性强，真正高溢价在 Astera/Marvell/Microchip/Broadcom 等 retimer/switch |
+| AI power/protection/discrete | Q1 2026 约 1,400-2,500 万美元；年化约 6,000-1.1 亿美元 | 同比约 +30-70%，受 AI rack power、48V、PSU、BBU、optical protection 拉动 | 高。100-155kW AI rack 对整流、保护、MOSFET、TVS、ESD、ideal diode 的可靠性要求提高 | 高。GB200/GB300 类平台和 48V rack power 正在拉动 | 中到高。渠道称高压 MOSFET、Schottky、timing 部分料号有更长交期；但需要低权重看待 | 中。认证后替换成本较高，但长期面对 Infineon、ST、onsemi、Vishay、Nexperia、Littelfuse、TI、MPS |
+| AI networking / optical support | Q1 2026 约 600-1,200 万美元；年化约 2,500-5,000 万美元 | 同比约 +20-45%，800G/1.6T 光互联和 switch 升级带动 | 中高。单 port 价值低，但 port 数暴增 | 高。AI 集群网络扩容紧迫 | 中到偏高。光模块保护、时钟、regulator 是高量器件 | 低到中。单颗 ASP 不高，客户可替代；通过认证和供货稳定性获得粘性 |
+| Automotive/industrial high-reliability power | Q1 2026 合计约 1.78 亿美元，但其中 AI 直接占比低 | Q1 官方：Auto +32.1%，Industrial +30.6% | 对 AI 数据中心为间接。对公司收入和毛利质量很重要 | 中。汽车/工业项目周期长 | 中。认证/车规供应链更稳定，不是短期 AI 缺货逻辑 | 中到高。车规、工业认证后切换成本高 |
+
+当前最值得跟踪的是前三类：PCIe timing、PCIe signal conditioning、AI power/protection。它们共同决定 DIOD 能否从“广谱周期恢复股”变成“AI server/networking 小芯片组合供应商”。
+
+## 5. 未来一年关键业务三种情景预测
+
+未来一年定义为 2026Q2-2027Q1。收入贡献为年化/滚动四季度估计。
+
+| 关键业务 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---:|---:|---:|
+| PCIe timing / clock generator / buffer | 收入 0.9-1.4 亿美元；增速 +25-40%；AI 重要性高；供需中偏紧；溢价能力中 | 收入 1.5-2.2 亿美元；增速 +50-80%；PCIe Gen6/7 design-in 扩大；部分低 jitter 料号紧张；溢价能力中偏高 | 收入 2.4-3.3 亿美元；增速 +100% 以上；若 Gen7 clock tree 在 AI server/NIC/switch 快速导入且 DIOD 获多平台 AVL，供需偏紧；但需警惕高端 timing 被 SiTime/Microchip/Renesas 抢走 |
+| PCIe redriver / mux / packet switch | 收入 0.65-1.1 亿美元；增速 +25-45%；重要性中高；供需中性 | 收入 1.2-1.9 亿美元；增速 +60-100%；AI server 主板、riser、cable 设计复杂化提升 redriver attach；供需偏紧 | 收入 2.2-3.2 亿美元；增速 +150% 以上；仅在 DIOD 从 redriver 扩展到更多 packet switch/线性 signal socket 且没有被 retimer/光互联替代时成立 |
+| AI power/protection/discrete | 收入 0.8-1.4 亿美元；增速 +30-50%；重要性高；供需中偏紧；溢价中 | 收入 1.6-2.6 亿美元；增速 +70-120%；AI rack 48V/54V power shelf、PSU、BBU、optical protection 共同拉动；部分料号提价 | 收入 3.0-4.2 亿美元；增速 +150% 以上；需要 AI power socket 大规模获胜、渠道供给偏紧和客户第二来源转换同时发生 |
+| AI networking / optical support | 收入 0.35-0.7 亿美元；增速 +20-40%；重要性中高；供需中 | 收入 0.8-1.3 亿美元；增速 +60-120%；800G/1.6T port 数扩张、312.5MHz oscillator/ESD/TVS/LDO attach 增加 | 收入 1.5-2.2 亿美元；增速 +150% 以上；需要 DIOD 在多个 optical module、switch line-card 设计中成为主供应或强二供 |
+| Automotive/industrial high-reliability power | 收入 7.8-9.0 亿美元；增速 +10-20%；AI 直接性低；毛利质量高 | 收入 9.0-10.5 亿美元；增速 +20-35%；工业自动化、电动车、电力基础设施复苏 | 收入 10.5-12.5 亿美元；增速 +35-55%；需要汽车/工业全面补库和新品放量，不应归因于 AI |
+
+DIOD 的一年后上行情景不是某一个爆品，而是多个中低 ASP 产品同时提高 attach rate：AI server 主板上多颗 clock/buffer/redriver，AI networking/optical 上大量 oscillator/TVS/LDO，AI rack power 上 SBR/Schottky/MOSFET/ESD/ideal diode controller 增加。
+
+## 6. BOM 拆分、单位含量、价格传导链和当前产能/认证
+
+### 6.1 AI rack 真实内容量估算
+
+基准假设：GB200/GB300 类 100-155kW AI rack；按 120kW/rack 折算约 8.3 racks/MW；每 rack 72 GPU 作为 GPU 口径示例。下表为 DIOD 可争取内容量，不代表已经全部进入。
+
+| DIOD 产品层 | 每 rack DIOD 内容量 | 每 MW 内容量 | 每 GPU 内容量 | 每 optical port 内容量 | 主要 BOM 位置 |
+|---|---:|---:|---:|---:|---|
+| PCIe timing/clock | 100-600 美元；乐观 500-1,500 美元 | 0.8k-5.0k 美元；乐观 4.2k-12.5k | 1.4-8.3 美元；乐观 6.9-20.8 | 若进入 switch/optical，约 0.2-1.5 美元 | AI server motherboard、GPU baseboard、NIC、storage、switch board |
+| Redriver/mux/packet switch | 50-400 美元；乐观 300-1,200 美元 | 0.4k-3.3k；乐观 2.5k-10.0k | 0.7-5.6；乐观 4.2-16.7 | 一般不按 optical port 直接计算 | PCIe riser、retimer/redriver path、AEC/near-cable、board-to-board |
+| Power/protection/discrete | 300-1,200 美元；乐观 800-3,000 美元 | 2.5k-10.0k；乐观 6.7k-25.0k | 4.2-16.7；乐观 11.1-41.7 | 0.5-3.0 美元；乐观 2-8 | PSU、48V power shelf、BBU、ORing、hot-swap、TVS/ESD、rectifier |
+| Networking/optical support | 50-250 美元；乐观 200-800 美元 | 0.4k-2.1k；乐观 1.7k-6.7k | 0.7-3.5；乐观 2.8-11.1 | 0.5-3.0 美元；乐观 2-8 | 800G/1.6T optical module、switch line card、regulator/timing/protection |
+| 合计可争取内容量 | 基准 500-2,200 美元；乐观 1,800-6,500 美元；极度乐观 7,000-15,000 美元 | 基准 4.2k-18.3k；乐观 15k-54k；极度乐观 58k-125k | 基准 6.9-30.6；乐观 25-90；极度乐观 97-208 | 基准 0.5-3；乐观 2-8；极度乐观 5-15 | 占整 rack BOM 比例很小，但 socket 数高 |
+
+价格传导链：
+
+1. AI 平台功耗上升导致 PSU、power shelf、BBU、48V distribution、主板电源保护器件增加。
+2. PCIe/CXL/以太网速率上升导致 clock jitter、signal integrity、redriver/retimer、switch board timing 要求提高。
+3. 光互联 port 数增加导致每 port 的 ESD/TVS、LDO、oscillator、small-signal protection 需求增加。
+4. DIOD 的价格传导通常不是“单颗涨价 5 倍”，而是“socket 数增加 + 高可靠料号 mix 提升 + 认证后降价压力减弱”。这类公司最理想的利润模型是低 ASP 高量 socket 叠加供应稳定性溢价。
+
+### 6.2 当前产能能力、供应链采纳和认证状态
+
+| 产品层 | 当前可服务收入能力（美元计，估计） | 当前供应链采纳程度 | 认证/资格状态 |
+|---|---:|---|---|
+| PCIe timing/clock | 年化 0.7-1.3 亿美元 AI/data-center 可服务 shipping 能力 | 已被公司明确放入 server、AI data center、PCIe 7 产品路线；PI6CG33A06 已公开供货 | 产品级满足 PCIe 7 jitter 规格；客户平台 AVL 和主板认证不公开 |
+| Redriver/mux/packet switch | 年化 0.5-1.2 亿美元 | AI server-related 应用被点名；但在高端 retimer/fabric switch 中不是行业第一梯队 | PCIe 5/6/相关协议合规由型号决定；客户认证不公开 |
+| Power/protection/discrete | 年化 0.8-1.7 亿美元 | AI server bridge rectifier、48V data-center networking BJT、AI optical TVS/ESD 等被管理层点名 | SiC/TVS/ESD/MOSFET/rectifier 需通过客户电源、网络设备、光模块认证；车规型号有 AEC-Q 体系 |
+| Networking/optical support | 年化 0.3-0.8 亿美元 | 通信终端中 AI data-center high-speed networking 稳定，产品包括 oscillator、SiC Schottky、TVS、ESD、regulator、timing | 光模块/交换机厂认证不公开；保护器件更看可靠性、浪涌/ESD测试和客户 AVL |
+| Automotive/industrial high-reliability | 年化 7.0-8.0 亿美元级别当前收入池 | 汽车和工业 Q1 同比增速最高，产品 wins 覆盖 EV charging、BMS、traction inverter、solar optimizer | 车规/工业认证周期长，进入后粘性更高 |
+
+公司并未披露按产品线的产能利用率、封测瓶颈或 AI 专用产能。由于 DIOD 拥有自有/整合的 200mm 产能和外部供应链，短期真正的约束更可能来自特定晶圆工艺、封装测试、认证料号、客户 allocation，而非总晶圆面积。
+
+## 7. 未来一年产能、采纳和认证三情景
+
+| 产品层 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| PCIe timing/clock | 可出货能力 1.1-1.8 亿美元；Gen6 平台扩大，Gen7 进入更多设计验证；认证从 product compliance 转向客户板级 AVL | 可出货能力 2.0-3.0 亿美元；多个 AI server/NIC/switch 平台采用；部分低 jitter clock 出现偏紧 | 可出货能力 3.5-4.5 亿美元；DIOD 成为若干 AI 平台 timing 主供应/强二供；需要封测和晶体/clock 供应链同步扩张 |
+| Redriver/mux/packet switch | 可出货能力 0.9-1.5 亿美元；主要是 redriver/mux/socket 扩张 | 可出货能力 1.8-2.8 亿美元；PCIe Gen6/near-cable/AEC 相关设计采用增加 | 可出货能力 3.2-4.5 亿美元；前提是 DIOD 不只拿低端 redriver，而是拿到更多 packet switch/signal path 价值 |
+| Power/protection/discrete | 可出货能力 1.5-2.5 亿美元；AI rack power、optical protection、48V networking 增加 | 可出货能力 3.0-4.5 亿美元；特定 Schottky/MOSFET/TVS/bridge rectifier 紧张，客户二供导入 DIOD | 可出货能力 5.0-6.5 亿美元；需要 AI rack power 大规模放量、供应扰动持续、DIOD 产能优先分配 |
+| Networking/optical support | 可出货能力 0.6-1.0 亿美元；800G port 数增加 | 可出货能力 1.2-1.8 亿美元；1.6T 设计和 AI optical 认证增加 | 可出货能力 2.0-3.0 亿美元；要求 DIOD 在多个光模块/交换机平台实现高 attach |
+| Automotive/industrial | 可出货能力 8.5-10 亿美元；常规恢复 | 可出货能力 10-12 亿美元；汽车/工业补库和电气化订单转强 | 可出货能力 12-14 亿美元；需要宏观工业周期明显转强，不应视为 AI 直接产能 |
+
+认证路线判断：
+
+| 认证类型 | 当前阶段 | 未来一年看点 |
+|---|---|---|
+| PCIe 7 clock generator | 产品规格已公开，关键参数满足 PCIe 7 jitter 约束 | 需要观察是否进入主流 AI server motherboard、NIC、switch 的 AVL 和量产 BOM |
+| PCIe Gen6 redriver/signal | 部分产品已有公开资料，AI server 应用被点名 | 需要观察 redriver 是否被 retimer/光互联/更短走线替代 |
+| TVS/ESD/SiC/rectifier/power | 已在 AI server、AI optical、data-center networking 等应用中被点名 | 认证多在客户侧非公开，关注渠道 lead time、设计 win、分销库存变化 |
+| Automotive/industrial AEC-Q/industrial qual | 多产品长期具备车规/工业认证路径 | 认证周期提高切换成本，支撑毛利和订单稳定性 |
+
+## 8. 订单积压、供给和未来一年业务增速
+
+### 8.1 可验证订单/供需证据
+
+| 证据 | 强度 | 含义 |
+|---|---|---|
+| Q2 2026 收入指引 4.35 亿美元，中位数环比 +7.3%、同比 +18.8% | 高 | 公司短期订单可见度足以支撑加速增长 |
+| Q1 2026 管理层称 POS 上升、分销库存继续下降、不是 restocking 驱动 | 高 | 当前需求质量优于单纯渠道补库 |
+| Q3 2025 时分销库存金额和周数较高点下降超过 25% | 中高 | 2024-2025 库存压力已明显缓解 |
+| 管理层多次点名 AI server-related、data-center applications、AI data-center networking、AI optical transceivers | 中高 | AI 相关产品已经在收入中体现 |
+| 渠道报道高压 MOSFET、Schottky、timing 等部分料号交期拉长至 48-52 周、价格上调约 20% | 中低 | 不是 DIOD 官方披露，可作为供需偏紧信号，但不能当作公司 backlog |
+| 公司不披露 backlog/bookings/B2B/cancellation | 高 | 无法精确计算订单积压；必须用收入指引和渠道库存反推 |
+
+### 8.2 未来一年增速情景
+
+| 情景 | 公司总收入预测（2026Q2-2027Q1） | 总收入增速 | AI-adjacent 收入 | AI-adjacent 增速 | 关键前提 |
+|---|---:|---:|---:|---:|---|
+| 基准 | 18.5-20.0 亿美元 | 较 TTM 约 +19-29% | 2.5-3.6 亿美元 | +35-60% | Q2 指引兑现；库存正常化；AI server/networking socket 增加但无大规模缺货 |
+| 乐观 | 20.5-22.5 亿美元 | 约 +32-45% | 4.2-6.0 亿美元 | +80-140% | computing/communications 持续强于公司均值；timing、redriver、power/protection 多产品进入 AI 平台；毛利率向 33-35% 修复 |
+| 极度乐观 | 23.0-25.0 亿美元 | 约 +48-61% | 7.0-8.5 亿美元 | +180-250% | AI rack power/PCIe/optical 全面紧张，客户将 DIOD 作为主供应或强二供；供应扰动使价格和订单可见度提高；需要产能、封测和认证同步通过 |
+
+极度乐观情景不是基准投资假设。DIOD 的产品种类决定它更可能通过多个 socket 的组合增长，而不是单个核心产品暴涨。因此收入上行路径更依赖“平台采用广度”和“渠道库存不再反噬”。
+
+## 9. 竞争格局、技术主流性、替代风险和切换成本
+
+| 业务 | 主要竞争对手 | DIOD 优势 | 替代/风险 | 客户切换成本 |
+|---|---|---|---|---|
+| PCIe timing / clock | SiTime、Renesas/IDT、Skyworks/Silicon Labs、Microchip、TI、ADI | 低价、高集成、广泛分销；PI6CG33A06 在 PCIe 7 jitter 指标上有公开竞争力 | 高端系统 timing 可能选择 MEMS/OCXO/SyncE/PTP 方案；大客户可能优先用更强 timing 平台厂商 | 中。板级验证后替换成本上升，但标准 clock 产品仍有二供 |
+| PCIe redriver / mux / packet switch | Astera Labs、Marvell、Microchip、Broadcom、Montage、Credo、TI、Semtech | DIOD 在低/中 ASP redriver、mux、switch 上有成本和目录覆盖 | AI 平台可能转向 full retimer、active electrical cable、光互联或更高集成 switch；DIOD 不是高端 retimer 领导者 | 中低到中。高速信号链验证有成本，但客户可替代供应商多 |
+| Power/protection/discrete | Infineon、ST、onsemi、Vishay、Nexperia、Rohm、AOSL、Littelfuse、Bourns、Semtech、TI、MPS | SKU 广、价格/供货稳定、自有产能补强、分销触达强 | 高端 SiC/GaN/power stage 价值被 Infineon/TI/MPS/Vicor/Navitas 等占据；TVS/ESD/rectifier 竞争激烈 | 中。认证后切换难度提高，未认证前替代性强 |
+| AI networking/optical support | Semtech、TI、ADI、Microchip、Renesas、Littelfuse、Bourns、Vishay、Nexperia | oscillator、protection、regulator 多产品组合 | 单 port ASP 低，光模块厂会多源采购；光模块架构变化可能改变 BOM | 中。光模块和 switch line card 的可靠性测试提升粘性 |
+| Automotive/industrial power | Infineon、ST、onsemi、Rohm、Nexperia、Vishay、AOSL、Littelfuse、TI | 车规/工业认证、长生命周期、客户关系 | 汽车电气化周期、价格竞争、终端需求波动 | 中到高。车规认证后替换成本较高 |
+
+技术主流性判断：
+
+1. 48V/54V rack power、AI PSU、hot-swap/eFuse/protection、high-density DC/DC 是 2026 AI 数据中心电力主线，DIOD 的 power/protection 产品方向正确，但它不是最高价值的 power module 或 power stage 核心玩家。
+2. PCIe Gen6/Gen7 clock tree 是 AI server 内部互联的确定性需求，DIOD 的 PCIe 7 clock generator 是有效切入点；但 timing 高端价值链中 SiTime、Renesas、Microchip 等竞争更强。
+3. Redriver 和 mux 是有需求的，但长期可能被高端 retimer、CXL/PCIe switch、AEC 或光互联替代。DIOD 在这条链上要避免只拿到低 ASP 边角料。
+4. TVS/ESD/rectifier/Schottky/MOSFET 是确定性数量增长，但行业容易多源化。DIOD 的壁垒在认证、供应稳定和组合销售，而不是单点垄断。
+
+## 10. 需要持续跟踪的指标
+
+| 指标 | 为什么重要 | 触发判断 |
+|---|---|---|
+| Computing + Communications 合计收入占比 | 最接近 AI server/networking 暴露 | 若持续高于 42-45%，说明 AI/data center 正在成为更核心驱动 |
+| Q2/Q3 2026 毛利率 | 判断收入恢复是否转化为定价/利用率改善 | 若毛利率突破 33-34%，说明 mix 和产能利用率明显变好 |
+| 管理层是否开始量化 AI/data center revenue | 现在缺乏直接披露 | 若首次披露数亿美元 pipeline 或收入，估值框架会改变 |
+| PCIe 7 clock 产品客户/平台线索 | 决定 timing 业务是否从产品发布进入平台量产 | 重点看 AI server motherboard、NIC、switch 设计导入 |
+| 分销库存周数和 POS | 避免把 restocking 当作终端需求 | 库存下降但 POS 增长是最健康组合 |
+| 渠道 lead time | 判断是否真的供不应求 | 若 timing、Schottky、MOSFET、TVS 交期持续拉长，DIOD 议价力改善 |
+| 库存周转和存货绝对额 | 资产负债表最大风险点 | 收入增长但库存不降会压低现金流和毛利 |
+
+## 11. 结论
+
+DIOD 适合被归类为“AI 数据中心边缘受益的广谱模拟/分立/连接芯片公司”，而不是 AI 核心芯片公司。公司最大的优势是产品面宽、财务稳、客户和应用覆盖广，能够在 AI server、AI networking、optical transceiver、48V power、汽车和工业恢复中同时拿到小额但高数量的 socket。最大的不足是产品差异化不如高端 retimer、GPU、CPO、power module 或 MEMS timing 平台公司，很多收入需要靠规模、认证和供应稳定性，而不是技术垄断。
+
+短期最硬的数据是 Q1 2026 收入同比 +22.1%、Q2 指引中位数环比 +7.3%、分销库存下降且 POS 改善。资产负债表非常健康，净现金约 3.54 亿美元。但估值也已经较高，TTM PE 接近 58 倍，forward PE 约 32-34 倍。投资上需要回答两个问题：第一，AI-adjacent 收入能否从当前约 10-16% 提升到 20% 以上；第二，毛利率能否从 31-32% 修复到 34-36% 甚至更高。如果两者都兑现，DIOD 会从周期修复股升级为 AI 基建长尾器件组合供应商；如果只有 restocking 和普通周期恢复，当前估值的容错率会偏低。
+
+## 12. 主要资料来源
+
+公司与财务资料：
+
+- Diodes Incorporated, Q1 2026 Financial Results press release, 2026-05-07.
+- Diodes Incorporated, Q1 2026 Form 10-Q, SEC filing, period ended 2026-03-31.
+- Diodes Incorporated, Q1 2026 investor presentation, 2026-05.
+- Diodes Incorporated, Q1 2026 earnings call transcript, 2026-05-07.
+- Diodes Incorporated, Q4 2025 Financial Results press release and transcript, 2026-02.
+- Diodes Incorporated, Q3 2025 Financial Results press release, 2025-11.
+- Diodes Incorporated, Q2 2025 Financial Results press release, 2025-08.
+- Diodes Incorporated, Q1 2025 Financial Results press release, 2025-05.
+- Diodes Incorporated, PCIe 7.0 clock generator PI6CG33A06 product release, 2026-05.
+- Diodes Incorporated, Fortemedia acquisition disclosures, 2024 Form 10-Q/Form 10-K.
+- Diodes Incorporated, Gary Yu CEO appointment announcement, 2025-05.
+- StockAnalysis DIOD statistics and valuation, accessed 2026-06-11/12.
+- Market data snapshot for DIOD, 2026-06-11.
+
+项目内行业资料：
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_精密时钟与同步芯片_2026-06-10.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_PCIe_CXL高速IO交换与Retimer_2026-06-11.md`
+
+注：报告中的 AI 数据中心收入、BOM 单位内容量、未来一年产能和情景预测属于基于公开资料、项目内行业资料和公司披露的模型估算；DIOD 并未按这些口径披露分部收入、backlog、bookings、B2B、lead time 或取消率。

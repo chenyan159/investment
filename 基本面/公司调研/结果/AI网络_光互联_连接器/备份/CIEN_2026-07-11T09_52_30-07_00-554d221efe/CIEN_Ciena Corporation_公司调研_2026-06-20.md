@@ -1,0 +1,456 @@
+# CIEN_Ciena Corporation 公司调研：AI scale-across 光网络、相干光与数据中心互联的高弹性供应商
+
+报告日期：2026-06-20  
+股票代码：CIEN  
+公司名称：Ciena Corporation  
+正式归属目录：`公司调研/AI网络_光互联_连接器/`  
+资料边界：项目内只使用 `行业调研/` 下 AI 网络、光互联、光模块、OCS、CPO 和 AI 数据中心建设相关资料；未读取、引用或继承 `公司调研/` 旧报告、`日度资料/`、`特征量化/` 或其他目录内容。联网资料优先使用 Ciena 财报、10-Q、电话会、公司产品页、OFC 2026 材料和高权重行业资料。  
+时间口径：财务与业务截至 Ciena FY2026 Q2，季度截至 2026-05-02；股价和估值采用 2026-06-18 美股最近交易日快照，因 2026-06-19 为 Juneteenth 美股休市。  
+核心判断：CIEN 不是普通电信设备股，2026 年投资人已把它重估为“AI 数据中心 scale-across / DCI / coherent optics / photonic line system”的稀缺卖铲公司。但当前股价已经把 2027-2028 高增长提前资本化，风险在于估值过高、客户集中、供应链交付和光模块/网络链条的周期化。
+
+## 0. 一页结论
+
+1. **公司定位正在从“运营商光传输设备龙头”转向“AI 数据中心外部网络和跨园区互联的核心供应商”。** Ciena 的主业仍是光网络系统、相干 DSP/光模块、路由交换、自动化软件和服务；新增弹性来自 AI 训练/推理需要把数据从单个数据中心扩展到 campus、metro、regional、long-haul 的 `scale-across` 网络。管理层在 FY2026 Q2 电话会明确说，AI 带来 WAN 以及数据中心内外的新机会，TAM 预计到 2029 年约翻倍至约 500 亿美元。
+2. **FY2026 Q2 是明显拐点。** 2026-06-04 Ciena 披露 FY2026 Q2 收入 15.707 亿美元，同比 +39.5%，GAAP 毛利率 44.0%，non-GAAP 毛利率 44.9%，调整后 EPS 1.64 美元，同比接近 4 倍；FY2026 收入指引上调至 63 亿美元 +/- 1 亿美元，中点同比 +32%。公司电话会披露 backlog 顺季增加超过 6 亿美元至 77 亿美元，并预计年末 backlog 更高。
+3. **订单质量强，取消/推迟信号当前没有出现。** 管理层称没有看到类似 COVID 周期中的客户库存堆积、推迟交付请求或订单取消，相反需求仍强；但供需失衡仍存在，Ciena 正用 FY2026 预计 2.50-2.75 亿美元 CapEx 和供应商投资来锁产能。
+4. **AI 数据中心相关收入没有单独披露，必须模型化。** 基于 Q2 直接云客户收入同比 +70%、服务商同比 +28%、两个云客户均为 10%+ 客户、外部媒体称 hyperscaler 约占 Q2 收入三分之一，以及 RLS/Waveserver、DCOM、pluggables 的披露，本报告估算 FY2026 Q2 中 AI/DCI/scale-across 相关收入约 5.5-7.0 亿美元，占收入约 35%-45%。其中已确认收入主要在 Optical Networking 和 Routing/Switching，CPO/Nubis 仍偏 2027+ 期权。
+5. **最关键产品不是一个，而是五层组合。** 重点是 `RLS Hyper-Rail`、`RLS/Waveserver/WaveLogic 6` 光系统、`WaveLogic 5/6 Nano 400G/800G/1.6T coherent pluggables`、`DCOM 数据中心 out-of-band management`、`Nubis Vesta 200 CPX/CPO optical engine + Nitro active copper cable redriver`。低增长传统企业/普通运营商接入、普通软件和一般服务不应按 AI 倍数估值。
+6. **2027 的最大 upside 在 Hyper-Rail 和 CPO/ACC。** Hyper-Rail 已拿到行业首个 leading hyperscaler multi-rail 订单，并与多个 hyperscaler、neoscaler、service provider 讨论。管理层称从单 rail 100km 扩到 1000km Hyper-Rail 后，photonics component 可能是 4-5 倍，并预计 Hyper-Rail 收入占比和毛利率都更高。Nubis 的 Nitro 和 Vesta 200 在 2026 仍不大，但 2027-2028 可能把 Ciena 从光传输延伸到 rack / switch / XPU 附近。
+7. **资产负债表健康但不是“净现金高息债无风险”。** 截至 2026-05-02，现金及投资约 14.03 亿美元，长期债务约 15.24 亿美元，净债务约 1.38 亿美元，gross leverage 约 1.6x，current ratio 约 2.73。经营现金流强，前六个月经营现金流 4.873 亿美元，但公司有 28 亿美元供应商/制造采购承诺、客户集中和库存减值风险。
+8. **当前估值已经极高。** 2026-06-18 CIEN 收盘约 429 美元，市值约 626.5 亿美元；公开估值口径显示 trailing PE 约 142x，forward PE 约 55-65x，PS 约 10.9x。按 FY2026 指引 63 亿美元收入计算，市值/当年收入约 9.9x。除非 FY2027-2028 继续保持 20%-30%+ 收入增长且毛利率上台阶，否则估值回撤风险大。
+
+## 1. 公司整体业务、投资人认知和产业链位置
+
+### 1.1 公司做什么
+
+Ciena 是全球光网络和高速连接基础设施公司，核心收入来自：
+
+| 业务层 | 主要产品 | 收入属性 | AI 数据中心相关性 |
+|---|---|---|---|
+| Optical Networking | RLS / RLS Hyper-Rail、Waveserver、6500 photonic line system、WaveLogic coherent modems、line systems、ROADM/放大/传输系统 | 最大收入池，高硬件+系统收入，服务商和云厂共同采购 | 极高，支撑 DCI、scale-across、metro/long-haul AI backbone |
+| Routing and Switching | WaveRouter、路由交换平台、PON/out-of-band management 组合 DCOM | 收入规模小于光系统，但 FY2026 增速高 | 高，DCOM 直接进入 hyperscaler 数据中心管理网络 |
+| Interconnects / Pluggables / Components | WaveLogic 5/6 Nano coherent pluggables、400G/800G、1.6T Coherent-Lite、Nubis Vesta 200 CPX/CPO、Nitro redriver | 部分计入 Networking Platforms 或产品收入，利润率取决于芯片/模块 mix | 极高，直接绑定 800G/1.6T、CPO、scale-up/out/across |
+| Blue Planet / Platform Software | 网络自动化、编排、inventory、service assurance | 软件收入小，战略上提高粘性 | 中，AI 网络自动化需要但短期不是主收入 |
+| Global Services | 维护、实施、咨询、网络设计 | 稳定，随系统部署增长 | 中，高速部署和复杂项目提升服务 attach |
+
+Ciena 在产业链位置上属于 **AI 网络/光互联上游系统和核心光电技术供应商**，既不是 GPU/服务器，也不是数据中心业主；它提供的是 AI 基础设施从“单楼/单园区训练集群”走向“多园区、多区域、长距离推理和数据调度”所需的光层和相干技术。
+
+### 1.2 投资人心中的公司形象
+
+过去投资人更常把 Ciena 看成通信设备周期股：运营商 capex 复苏时好，库存消化和电信资本开支低迷时差。2025-2026 的变化是：
+
+- **从 telco beta 转向 AI optical beta。** 2024-2025 运营商库存周期结束，云厂 AI DCI 和服务商 AI 流量同时拉动。
+- **从系统商转向“coherent IP + photonics platform”公司。** WaveLogic 6、coherent pluggables、Hyper-Rail、Vesta/Nitro 让市场开始按技术平台估值。
+- **从低个位数至十几倍 PE 的周期股，重估到高增长稀缺资产。** 这也带来最大风险：当前市值已经不允许公司只做到普通通信设备增长。
+
+### 1.3 最近 3 年重大业务变化、转型和收购
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2023-2024 | 运营商库存消化、供应链正常化 | 收入和毛利一度被 telco capex 拖累，市场对 Ciena 的周期属性仍重 |
+| 2024-2025 | 云厂 AI 数据中心互联需求放量，800G/1.6T、coherent pluggables、RLS/Waveserver 增强 | Ciena 从光传输系统向 AI cloud DCI 和 scale-across 迁移 |
+| 2025-09 | 宣布收购 Nubis Communications，交易价值约 2.7 亿美元；Nubis 提供 CPO/NPO optical engine 和线性驱动技术 | Ciena 获得 inside-the-data-center / CPO / active copper cable 入口，不再只在数据中心外部网络 |
+| 2025-12 | FY2025 收入 47.695 亿美元，同比 +18.8%；FY2026 初始指引 57-61 亿美元 | 进入加速增长期，毛利和经营杠杆开始改善 |
+| 2026-02 至 2026-03 | 发布 Vesta 200 6.4T CPX、OFC 2026 展示 1.6T Coherent-Lite、800G WL6n、Nitro 等 | 明确切入 200G/lane switches、XPUs、NICs、CPO 与 AI 数据中心功耗约束 |
+| 2026-06 | FY2026 Q2 披露首个 leading hyperscaler multi-rail order，backlog 77 亿美元，FY2026 指引升至 63 亿美元 | Hyper-Rail 从技术叙事进入订单验证，AI scale-across 成主线 |
+
+### 1.4 产业链定位
+
+本项目 `行业调研/AI网络_光互联_铜互联/` 的核心结论是：2026 年 AI 网络从 800G scale-out 走向 1.6T、CPO/XPO、scale-up/scale-across 多层架构。Ciena 的位置如下：
+
+| AI 网络层级 | 典型玩家 | Ciena 参与方式 | 定价权 |
+|---|---|---|---|
+| Rack 内 scale-up | NVIDIA NVLink/NVSwitch、UALink、Broadcom/Cisco/Marvell silicon、CPO optical engine | 当前参与度低；Nubis Vesta 200 / Nitro 是未来入口 | 当前低，2027+ 若 design-in 成功上升 |
+| 数据中心内 scale-out | Arista、NVIDIA Spectrum-X、Cisco、Broadcom switch ASIC、光模块厂 | Ciena 的 pluggables、coherent-lite、DCOM 和部分路由交换参与 | 中高，取决于客户认证 |
+| Campus/metro DCI | Ciena、Nokia、Cisco/Acacia、Marvell DSP、Coherent/Lumentum | Ciena 最强区域，WaveLogic/RLS/Waveserver/Hyper-Rail | 高 |
+| Long-haul AI backbone | Ciena、Nokia、Cisco、Huawei、ZTE、Ribbon | Hyper-Rail、line systems、coherent optics | 高，技术和部署经验壁垒高 |
+| 自动化/运维 | Ciena Blue Planet、Cisco、Nokia、Juniper/HPE、Arista、SONiC ecosystem | Blue Planet 和服务 attach | 中 |
+
+## 2. 最新股价、估值、利润率和资产负债表
+
+### 2.1 市场估值快照
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 最新股价 | 429.00 美元 | 2026-06-18 收盘，CIEN，NYSE | 2026-06-19 为 Juneteenth 休市，2026-06-20 是周六 |
+| 市值 | 626.5 亿美元 | 2026-06-18 | 按最新市场数据口径 |
+| Trailing PE | 约 142x | 2026-06-18，StockAnalysis 口径 | GAAP TTM 盈利仍低，PE 被早期重估放大 |
+| Forward PE | 约 55x-65x | 2026-06-18，StockAnalysis/Yahoo/GuruFocus 口径区间 | 取决于前瞻 EPS 共识口径 |
+| PS, TTM | 约 10.9x | 2026-06-18，StockAnalysis 口径 | 按 TTM 收入；按 FY2026 指引 63 亿美元，市值/当年收入约 9.9x |
+| FY2026 收入指引 | 63 亿美元 +/- 1 亿美元 | 2026-06-04 公司指引 | 中点同比 +32% |
+| FY2026 Q2 收入增速 | +39.5% YoY | 季度截至 2026-05-02 | 收入 15.707 亿美元 |
+| FY2026 Q2 GAAP 毛利率 | 44.0% | 2026-05-02 季度 | YoY +3.8pct |
+| FY2026 Q2 non-GAAP 毛利率 | 44.9% | 2026-05-02 季度 | 公司指引 Q3 约 45% +/- 50bps |
+| FY2026 Q2 GAAP 净利率 | 13.9% | 净利润 2.182 亿美元 / 收入 15.707 亿美元 | 大幅高于 FY2025 Q2 的 0.8% |
+| FY2026 Q2 non-GAAP 经营利润率 | 19.5% | 2026-05-02 季度 | FY2026 全年指引 19% +/- 50bps |
+
+来源：Ciena FY2026 Q2 财报与电话会、CIEN 市场数据、StockAnalysis/Yahoo Finance 估值页。
+
+### 2.2 资产负债表和现金流健康度
+
+| 项目 | FY2026 Q2 数值 | FY2025 年末数值 | 评价 |
+|---|---:|---:|---|
+| 现金及现金等价物 | 10.45 亿美元 | 10.92 亿美元 | 现金充足 |
+| 短期投资 | 1.58 亿美元 | 2.16 亿美元 | 可动用流动性 |
+| 长期投资 | 2.00 亿美元 | 0.57 亿美元 | 投资组合增加 |
+| 现金+投资合计 | 14.03 亿美元 | 13.65 亿美元 | 基本稳定 |
+| 存货 | 8.08 亿美元 | 8.26 亿美元 | 存货仍高，但周转改善 |
+| 总资产 | 60.39 亿美元 | 58.65 亿美元 | 资产规模温和上升 |
+| 流动负债 | 约 13.07 亿美元 | 13.08 亿美元 | 流动性压力低 |
+| 长期债务净额 | 15.24 亿美元 | 15.24 亿美元 | 债务规模稳定 |
+| 净债务 | 约 1.38 亿美元 | 约 2.09 亿美元 | 公司口径 Q2 净债务降至 1.38 亿美元 |
+| Gross leverage | 1.6x | 3.2x 同比比较口径下降 | 杠杆明显改善 |
+| 当前比率 | 约 2.73 | 约 2.72 | 健康 |
+| FY2026 前 6 个月经营现金流 | 4.873 亿美元 | 2.607 亿美元，同比口径 | 现金转化显著改善 |
+| FY2026 Q2 自由现金流 | 2.19 亿美元 | 不适用 | Q2 FCF margin 13.9% |
+| 回购 | FY2026 上半年约 3.44 亿美元；Q2 约 0.83 亿美元 | FY2025 全年 3.30 亿美元 | 高估值下仍回购，需观察资本配置纪律 |
+| 供应商/制造采购承诺 | 约 28 亿美元 | 10-Q 披露 | 有利于锁供给，也增加需求变化风险 |
+
+健康度判断：**财务状况健康，短期偿债和现金生成能力强；风险不在破产或流动性，而在高估值、采购承诺、客户集中和供应链库存错配。** 如果 AI/cloud 订单持续，采购承诺是供给锁定优势；如果客户推迟，采购承诺和库存会放大毛利压力。
+
+## 3. 最近五次财报对比：收入、订单、业务分部、AI 数据中心占比
+
+说明：Ciena 不披露 bookings、book-to-bill、lead time、取消率和 AI 数据中心收入。表中 `AI/DCI 相关收入占比` 为本报告模型估算，核心依据是直接云客户、10%+ 客户集中度、RLS/Waveserver、DCOM、coherent modules/pluggables、服务商 AI 流量升级和电话会表述。未披露项明确标为“未披露/估算”。
+
+| 财报季度 | 总收入 / YoY | GAAP 毛利率 / non-GAAP 毛利率 | GAAP 净利润 / EPS | 分业务收入，百万美元 | 订单、backlog、交期、取消 | AI/DCI 相关收入占比，模型估算 | 关键解读 |
+|---|---:|---:|---:|---|---|---:|---|
+| FY2026 Q2，截至 2026-05-02，2026-06-04 发布 | 1,570.7 / +39.5% | 44.0% / 44.9% | 218.2 / GAAP EPS 1.49；adj EPS 1.64 | Optical Networking 约 1,100；Routing & Switching 约 174；PSS+Blue Planet 约 117；Global Services 179.4 | Backlog 顺季 +6 亿至 77 亿美元；RPO 25 亿美元；预计年末 backlog 更高；供给仍不及需求；未看到客户库存堆积、推迟交付或取消 | 35%-45%，约 5.5-7.0 亿美元 | 直接云客户收入 +70%，服务商 +28%；RLS/Waveserver 均 +55%+；Routing & Switching +88%，DCOM 拉动；首个 Hyper-Rail hyperscaler multi-rail 订单 |
+| FY2026 Q1，截至 2026-01-31，2026-03-05 发布 | 1,426.9 / +33.1% | 43.8% 左右 / 指引区间上沿附近 | 150.3 / GAAP EPS 1.06；adj EPS 1.35 | Optical Networking 1,023.2；Routing & Switching 126.0；PSS 93.3；Blue Planet 20.4；Global Services 164.1 | Q2 指引 15.0 亿美元 +/- 0.5 亿；FY2026 指引上调至 59-63 亿；Q2 backlog 可由后续披露反推 Q1 约 71 亿美元 | 32%-40%，约 4.6-5.7 亿美元 | AI 数据中心和云需求继续强；CapEx 提高用于产能和 supply security；市场因预期过高出现股价回撤 |
+| FY2025 Q4，截至 2025-11-01，2025-12-11 发布 | 1,352.0 / +20.3% | 42.7% / 43.4% | 19.5 / GAAP EPS 0.13；adj EPS 0.91 | Optical Networking 929.2；Routing & Switching 118.4；PSS 93.3；Blue Planet 33.8；Global Services 177.3 | FY2026 初始收入指引 57-61 亿美元；三名 10%+ 客户合计 43.6% Q4 收入；FY2025 服务商订单据业内转述同比 +70% | 35%-45%，约 4.7-6.1 亿美元 | Q4 客户集中最高，说明 hyperscaler/大服务商项目集中确认；FY2026 指引首次体现 AI/DCI 强度 |
+| FY2025 Q3，截至 2025-08-02，2025-09-04 发布 | 1,219.4 / +29.4% | 41.3% / 41.9% | 50.3 / GAAP EPS 0.35；adj EPS 0.67 | Optical Networking 815.5；Routing & Switching 125.9；PSS 90.0；Blue Planet 27.8；Global Services 160.2 | 两名 10%+ 客户合计 28.8%；Q4 指引 12.4-13.2 亿美元；管理层称 visibility well into FY2026 | 28%-36%，约 3.4-4.4 亿美元 | AI 需求从订单可见度转成收入；Routing/Switching 高于 Q2，可能已有 DCOM/云项目贡献 |
+| FY2025 Q2，截至 2025-05-03，2025-06-05 发布 | 1,125.9 / +23.6% | 40.2% / 41.0% | 9.0 / GAAP EPS 0.06；adj EPS 0.42 | Optical Networking 773.6；Routing & Switching 92.7；PSS 85.4；Blue Planet 28.0；Global Services 146.2 | 两名 10%+ 客户合计 23.9%；未披露 backlog；订单环境由 cloud/AI 加速需求支撑 | 22%-30%，约 2.5-3.4 亿美元 | 从普通恢复周期转向 AI/cloud 驱动；毛利仍低，经营杠杆尚未充分释放 |
+
+### 3.1 财报趋势的含义
+
+1. **收入增速阶梯上行。** 过去五个季度总收入从 11.26 亿美元升至 15.71 亿美元，YoY 从 +23.6% 升到 +39.5%。
+2. **收入质量改善。** FY2026 Q2 non-GAAP operating margin 19.5%，已显著高于 FY2025 Q2 的 8.2%。Ciena 不只是 revenue beat，经营杠杆开始体现。
+3. **需求不是单一客户短单。** FY2026 Q2 管理层提到 direct cloud +70%、service provider +28%、印度服务商收入翻倍、多个 hyperscaler/neoscales/service providers 讨论 Hyper-Rail。
+4. **但客户集中度必须折价。** FY2025 Q4 三个客户占 43.6%，FY2026 Q2 两个客户均为 cloud provider 且超过 10%。若任一大客户项目节奏变化，季度收入波动会很大。
+
+## 4. FY2026 最新指引、业务占比和最突出的产品
+
+### 4.1 最新指引和业务结构
+
+| 指引项目 | 公司最新口径 | 含义 |
+|---|---:|---|
+| FY2026 Q3 收入 | 16.25 亿美元 +/- 0.50 亿 | 中点环比 Q2 +3.5%，同比仍高增长 |
+| FY2026 Q3 non-GAAP 毛利率 | 45% +/- 50bps | 说明 Q2 高毛利不是一次性 |
+| FY2026 Q3 non-GAAP opex | 4.10 亿美元 +/- 0.10 亿 | 因 variable compensation 和供应安全投资提高 |
+| FY2026 Q3 non-GAAP operating margin | 19%-20% | 接近 Q2 19.5% |
+| FY2026 全年收入 | 63 亿美元 +/- 1 亿 | 中点同比 +32%，高于 Q1 后的 59-63 亿区间 |
+| FY2026 全年 non-GAAP 毛利率 | 44.5%-45.0% | 高于 FY2025 年度 42.7% non-GAAP |
+| FY2026 全年 opex | 16.1 亿美元 +/- 0.2 亿 | 加大研发、供应链和激励 |
+| FY2026 全年 operating margin | 19% +/- 50bps | 公司进入高经营杠杆区间 |
+
+FY2026 Q2 分业务收入占比：
+
+| 分部 | FY2026 Q2 收入 | 占比 | 同比/趋势 | AI 相关性 |
+|---|---:|---:|---|---|
+| Optical Networking | 约 11.0 亿美元 | 约 70% | 约 +42%，RLS/Waveserver 均 +55%+ | 极高 |
+| Routing and Switching | 约 1.74 亿美元 | 约 11% | +88%，DCOM 拉动 | 高 |
+| Platform Software + Blue Planet | 约 1.17 亿美元 | 约 7% | 稳定，Blue Planet 非主线 | 中 |
+| Global Services | 1.794 亿美元 | 11.4% | +22.7% | 中，高复杂部署带动 |
+
+### 4.2 重点产品与跳过产品
+
+#### 应重点跟踪的高增长产品
+
+| 产品/业务 | 对应产品型号或技术 | 为什么重要 |
+|---|---|---|
+| RLS Hyper-Rail | Reconfigurable Line System Hyper-Rail，多 fiber pairs / rails 并行，面向 AI scale-across | 已拿到行业首个 leading hyperscaler multi-rail 订单；1000km scale-across 的 photonics component 可能是 100km 单 rail 的 4-5 倍；2027+ 毛利扩张点 |
+| RLS / Waveserver / WaveLogic 光系统 | RLS、Waveserver、6500、WaveLogic 6 Extreme 1.6Tb/s coherent、WaveLogic 6 Nano 400G-800G | Q2 RLS/Waveserver 均 +55%+；Ciena 在 coherent optical systems 最有历史优势 |
+| Coherent pluggables / interconnect modules | WaveLogic 5/6 Nano plugs、400G/800G pluggables、1.6T Coherent-Lite、800G ZR/ZR+ | Pluggable revenue 预计较 2025 年翻倍；拿到 major hyperscaler 高性能 coherent module win 和 major switch OEM win |
+| DCOM | Data Center Out-of-band Management，结合 routing/switching 与 PON 技术 | Routing & Switching +88%，管理层称 DCOM ramp extremely well；已有 Meta，第二 hyperscaler 初始订单，第三家 lab qualification |
+| Nubis Vesta / Nitro | Vesta 200 6.4T CPX/CPO optical engine；Nitro 2004 copper cable extender / Linear Redriver | Vesta 200 目标满足 AI 数据中心功耗约束；Nitro 2026 summer GA，2027-2028 才可能显著收入化 |
+| Coherent routing / WaveRouter | WaveRouter、coherent routing、routing/switching 与 optical integration | 服务商 MOFN、AI WAN 和数据中心外部网络需要路由+光层融合 |
+
+#### 可以跳过或低权重处理的业务
+
+| 业务 | 跳过原因 |
+|---|---|
+| 普通企业网、传统低速接入、非 AI PON | 与 AI 数据中心高增长关系弱，收入弹性低 |
+| 常规 Blue Planet 自动化软件 | 粘性高但收入占比小，短期不是 AI 主增量 |
+| 普通维护支持服务 | 随装机增长，利润稳定，但不应按 AI 高倍数定价 |
+| 低速传统光传输升级 | 服务商复苏有价值，但不是本报告 AI 网络主线 |
+| 非核心咨询/设计服务 | 有 attach，但不构成独立高增长产品 |
+
+## 5. 当前高增长产品：收入贡献、增速、AI 重要性、供需和定价权
+
+| 产品/业务 | 当前收入贡献，FY2026 Q2 模型估算 | 收入增速 | 对 AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 证据和判断 |
+|---|---:|---:|---|---|---|---|---|
+| RLS/Waveserver/WaveLogic 光系统 | Optical Networking 约 11.0 亿美元；其中 AI/DCI/云相关约 3.5-5.0 亿美元 | RLS/Waveserver 均 +55%+ YoY | 极高，AI 流量离开数据中心、跨园区训练/推理和 DCI 必需 | 高，云厂 2026 capex 已在执行 | 高，Ciena称供给未跟上需求 | 高，coherent DSP、系统集成、客户 installed base 壁垒强 | 直接支撑 FY2026 指引上调和 backlog 扩张 |
+| RLS Hyper-Rail | 当前收入较小，订单已出现；Q2 确认收入估计 0-0.5 亿美元，主要进 backlog/2027 | 早期从 0 到 1 | 极高，multi-rail 是 AI scale-across 新架构 | 高，领先 hyperscaler 已下首单 | 高，属于新系统和联合开发 | 很高，first order 和 co-creation 提高早期定价 | 2027+ 可能带来公司级毛利扩张 |
+| Coherent pluggables / WL5/WL6 Nano / 400G/800G / 1.6T | 当前约 1.5-2.5 亿美元/季；AI/DCI 相关占多数 | 公司称 2026 pluggable revenue 有望较 2025 翻倍 | 极高，800G/1.6T DCI 和 scale-across 直接组件 | 高，客户 design-in 正在决定 2027 份额 | 高端紧，低端 800G 需防周期化 | 中高，coherent DSP 和客户认证强，但模块标准化会压价 | 新 major hyperscaler coherent module win、major switch OEM WL5/WL6 Nano win |
+| DCOM / Routing & Switching | Q2 Routing & Switching 约 1.74 亿美元；DCOM 估 0.7-1.1 亿美元 | Segment +88% YoY | 高，AI 数据中心 out-of-band 管理网络是上线和运维基础 | 高，hyperscaler 数据中心快速建设 | 中高，客户认证和部署节奏限制 | 中高，PON+routing/switching 组合有差异化，但竞品多 | Meta 部署，第二 hyperscaler 初始订单，第三家 lab qualification |
+| Nubis Vesta 200 CPX/CPO | 当前样品/验证和 NRE，收入估 <0.2 亿美元/季 | 2026 不显著，2027 起 | 高，CPO/near-package optical 是 200G/lane、switch/XPU/NIC 功耗路径 | 中高，2027-2028 更急 | 早期供给稀缺但认证慢 | 早期高，若被 switch/XPU 平台采用则强 | Vesta 200 6.4T CPX 是收购后首个产品；管理层称 CPO momentum 上升 |
+| Nitro ACC redriver | 当前不显著；2026 主要 GA | 2027-2028 ramp | 中高，active copper cable 是 rack 内短距互联过渡方案 | 中，CPO/光化前窗口 | 中，ACC/AEC 竞品多 | 中，芯片模型毛利好但需 design-in | Nitro final chip back，summer 2026 GA；4m 距离、约 90% power consumption 的公司口径优势 |
+
+## 6. 一年后产品收入预测：基准、乐观、极度乐观
+
+时间窗口：从 2026-06 到 2027-06 的年化收入能力，不等同于公司正式 FY2027 指引。
+
+| 产品/业务 | 基准情景，一年后 | 乐观情景，一年后 | 极度乐观情景，一年后 |
+|---|---|---|---|
+| RLS/Waveserver/WaveLogic 光系统 | 年化收入 45-55 亿美元；AI/DCI 相关 18-24 亿美元；增速 15%-25%；供需仍紧但可交付 | 年化收入 55-65 亿美元；AI/DCI 相关 25-32 亿美元；增速 25%-35%；云厂和服务商同时扩张 | 年化收入 65-75 亿美元；AI/DCI 相关 33-42 亿美元；增速 35%+；多个 hyperscaler 项目并行上电 |
+| RLS Hyper-Rail | 年化收入 1.5-3.0 亿美元；从首单进入早期交付；重要性极高，客户 2-3 家 | 年化收入 3-6 亿美元；2-4 个 hyperscaler/neocloud/service provider 进入订单；毛利率高于公司平均 | 年化收入 6-10 亿美元；Hyper-Rail 成为 2027 AI scale-across 默认方案之一；供应链紧 |
+| Coherent pluggables / modules | 年化收入 10-14 亿美元；800G 继续、1.6T 初放量；毛利中高 | 年化收入 14-20 亿美元；1.6T Coherent-Lite 和高性能 coherent modules 多客户 design-in | 年化收入 20-28 亿美元；major switch OEM 和 hyperscaler wins 大规模交付 |
+| DCOM | 年化收入 5-7 亿美元；Meta + 第二客户扩大；第三客户通过 qualification | 年化收入 7-11 亿美元；至少 3 家 hyperscaler 量产；与服务 attach 增强 | 年化收入 11-16 亿美元；DCOM 成为多家 AI 数据中心 OOB 管理标准方案 |
+| Vesta 200 CPX/CPO | 年化收入 0.5-1.5 亿美元；以样品、NRE、小批量 design-in 为主 | 年化收入 1.5-4 亿美元；进入 1-2 家 switch/XPU/NIC 平台 pilot | 年化收入 4-8 亿美元；200G/lane switch/XPU 的 CPO 需求提前，Ciena 成早期供应商 |
+| Nitro ACC | 年化收入 0.3-1.0 亿美元；GA 后小批量 | 年化收入 1-2.5 亿美元；多个 ACC 客户 design-in | 年化收入 2.5-5 亿美元；active copper cable 被高密 rack 采用，芯片毛利显著 |
+
+公司总收入一年后情景：
+
+| 情景 | 未来一年公司收入增速 | 收入能力 | 背后假设 |
+|---|---:|---:|---|
+| 基准 | +15%-22% | 72-78 亿美元年化 | FY2026 63 亿美元后继续增长，但供应链和客户验收限制斜率 |
+| 乐观 | +22%-32% | 78-86 亿美元年化 | Hyper-Rail、pluggables、DCOM 同时扩张，毛利 45%+ |
+| 极度乐观 | +32%-45% | 86-100 亿美元年化 | 多 hyperscaler multi-rail、1.6T coherent、DCOM 和 CPO/ACC 提前放量 |
+
+## 7. BOM、单位内容量和价格传导链
+
+### 7.1 先定义 Ciena 的真实“内容量”
+
+Ciena 不直接卖 GPU、服务器或 rack，因此不能把每台 GPU 服务器的内部交换机/光模块全部算给 Ciena。Ciena 的价值量主要在：
+
+1. **AI 数据中心之间的 DCI / campus / metro / long-haul optical network。**
+2. **数据中心出入口和 out-of-band management 的 routing/switching/PON。**
+3. **coherent pluggables、1.6T Coherent-Lite、400G/800G plugs。**
+4. **未来进入 rack / switch / XPU 附近的 CPO optical engine 和 ACC redriver。**
+
+### 7.2 每 MW / 每 rack / 每 GPU / 每 optical port 模型
+
+模型前提：1MW AI IT load 约对应 8-12 个 80-120kW 高密 rack，约 600-1,000 个高端 accelerators。实际随 GB200/GB300、MI350/MI400、TPU、Trainium、液冷密度不同而变动。
+
+| 单位 | Ciena 当前可捕获内容量，基准 | 乐观 | 极度乐观 | 解释 |
+|---|---:|---:|---:|---|
+| 每 MW AI IT load，外部 DCI/scale-across 光层 | 20-80 万美元 | 80-200 万美元 | 200-400 万美元 | 取决于是否跨 campus/metro/long-haul；多园区 AI factory 明显提高 Ciena 内容量 |
+| 每 MW，coherent pluggables / DCI ports | 16-64 个 800G/1.6T 端口，Ciena 收入 8-80 万美元 | 64-160 个端口，30-200 万美元 | 160-320 个端口，100-400 万美元 | coherent port ASP 和 line-system attach 是关键 |
+| 每 100kW rack，当前 Ciena 内容量 | 1-8 万美元 | 8-20 万美元 | 20-50 万美元 | 当前主要是 rack 外部网络和管理；Vesta/Nitro 成功后 rack 内容量上升 |
+| 每 GPU / accelerator，当前 Ciena 内容量 | 200-1,500 美元 | 1,500-4,000 美元 | 4,000-8,000 美元 | 只统计 Ciena 可捕获的 external/management/near-optical 内容，不含全部 AI network BOM |
+| 每 800G coherent optical port | 3,000-12,000 美元 | 8,000-18,000 美元 | 15,000-30,000 美元 | 受 ZR/ZR+、coherent-lite、距离、line-system attach 影响 |
+| 每 1.6T coherent-lite / DCI port | 8,000-25,000 美元 | 18,000-40,000 美元 | 30,000-60,000 美元 | 早期 1.6T 高端端口、客户认证和供给紧张带来溢价 |
+
+### 7.3 产品 BOM 拆分
+
+#### RLS / RLS Hyper-Rail / optical line systems
+
+| BOM 项 | 价值占比，模型 | 关键供应或能力 | Ciena 定价能力 |
+|---|---:|---|---|
+| Coherent modems / DSP / transponder cards | 25%-40% | WaveLogic 6、相干算法、DAC/ADC、SerDes | 强，Ciena 核心 IP |
+| Photonic line system shelves / RLS modules | 20%-30% | ROADM、WSS、光放大、滤波、监控 | 强，系统设计和 installed base |
+| Amplifiers / intermediate sites | 15%-25% | EDFA/Raman、站点电源和散热 | Hyper-Rail 长距离下价值显著上升 |
+| Fiber management / panels / connectorization | 5%-12% | Corning、Senko、US Conec、Molex 等生态 | 中，更多依赖合作伙伴 |
+| Software / telemetry / planning / automation | 5%-15% | Blue Planet、控制平面、网络规划 | 中高，随规模提高 |
+| Installation / services | 5%-15% | 设计、部署、维护 | 中，复杂项目 attach 提高 |
+
+价格传导链：AI cloud capex -> 多园区 AI 数据流量 -> DCI/scale-across 光层容量 -> Hyper-Rail/RLS/Waveserver 订单 -> Ciena 产品收入和服务 attach。若从 100km 扩到 1000km，管理层认为 photonics component 可到 4-5 倍。
+
+#### WaveLogic coherent pluggables / interconnect modules
+
+| BOM 项 | 价值占比，模型 | 备注 |
+|---|---:|---|
+| Coherent DSP / SerDes / FEC | 30%-45% | Ciena 自研能力强，是高 ROIC 部分 |
+| Laser / modulator / receiver / TIA / driver | 20%-35% | 受 EML/CW laser、SiPh/InP 供给影响 |
+| PIC / optical assembly / packaging | 10%-20% | 良率、热和光耦合决定成本 |
+| PCB / cage / connector / thermal | 8%-15% | 1.6T 功耗更高，热设计重要 |
+| Test / burn-in / qualification | 8%-18% | 1.6T、coherent-lite、客户互通提高测试价值 |
+
+价格传导链：800G/1.6T 端口需求 -> hyperscaler qualification -> DSP/laser/assembly 供给 -> module ASP -> Ciena pluggable revenue。风险是 800G 标准化后 ASP 下行。
+
+#### DCOM / Routing and Switching
+
+| BOM 项 | 价值占比，模型 | 备注 |
+|---|---:|---|
+| Routing/switching hardware | 30%-45% | 以数据中心管理网络和 OOB 为主 |
+| PON OLT/ONT/optics | 15%-30% | Ciena 复用 PON 技术 |
+| Software / provisioning / automation | 10%-20% | 运维粘性来源 |
+| Installation / services | 10%-20% | 数据中心 rollout 相关 |
+| Support / lifecycle | 5%-15% | 长期服务收入 |
+
+价格传导链：hyperscaler 新建 AI 数据中心 -> OOB 管理网络 -> DCOM 采购和 qualification -> routing/switching 收入。当前第二客户初始订单、第三客户 lab qualification 是关键认证节点。
+
+#### Vesta 200 CPX/CPO 和 Nitro ACC
+
+| 产品 | 单位内容量 | BOM/价值链 | 当前阶段 |
+|---|---|---|---|
+| Vesta 200 6.4T CPX/CPO optical engine | 6.4T full-duplex optical engine；若用于 51.2T switch，满配模型约 8 个 engine；102.4T switch 约 16 个 engine | SiPh/InP 光引擎、MZM/laser、driver/TIA、connector、thermal、socket、test | 2026 样品/客户验证；2027+ 取决于 switch/XPU/NIC design-in |
+| Nitro Linear Redriver / ACC | 每条 active copper cable 或短距链路若采用，Ciena 捕获芯片/模块级收入 | redriver silicon、线缆、连接器、板级 SI、测试 | final chip back，2026 summer GA；2027-2028 才有实质 ramp |
+
+## 8. 产能能力、供应链采纳和认证阶段
+
+### 8.1 当前产能能力
+
+| 层级 | 当前能力，美元计 | 证据 | 风险 |
+|---|---:|---|---|
+| 公司整体 FY2026 交付能力 | FY2026 指引 62-64 亿美元，Q3 单季 15.75-16.75 亿美元 | 公司 Q2 指引上调 | 供给不及需求，客户验收节奏 |
+| Backlog 支撑 | 77 亿美元 backlog，RPO 25 亿美元 | Q2 电话会和 10-Q | backlog 转收入受产能、组件和站点上电影响 |
+| Supply security | FY2026 CapEx 2.50-2.75 亿美元，用于供应安全和产能 | Q2 电话会 | 采购承诺和需求错配 |
+| Optical Networking | 当前年化收入能力约 44-48 亿美元 | Q2 Optical Networking 约 11 亿美元 | 高端光器件和供应链约束 |
+| Routing/Switching | 当前年化收入能力约 7 亿美元 | Q2 约 1.74 亿美元，+88% | DCOM 客户认证和部署节奏 |
+| Interconnects/pluggables | 当前年化模型约 6-10 亿美元 | 公司称 2026 pluggable revenue 将较 2025 翻倍 | 模块 ASP、1.6T 认证、激光器/DSP |
+
+### 8.2 供应链采纳和认证阶段
+
+| 产品 | 当前采纳阶段 | 关键客户/渠道线索 | 认证阶段 |
+|---|---|---|---|
+| RLS Hyper-Rail | 已获行业首个 multi-rail order | leading hyperscaler；多个 hyperscalers、neoscalers、service providers 讨论中 | 首单商业订单，2027 ramp 需交付验证 |
+| RLS / Waveserver | 大规模在产 | 云厂和服务商；Q2 RLS/Waveserver +55%+ | 量产成熟 |
+| Coherent modules / WL5/WL6 Nano | 已有 major hyperscaler win 和 major switch OEM win | metro/long-haul DCI、WAN 和 data center 应用 | 商业 win，扩产和客户 qualification 中 |
+| DCOM | Meta 已用；第二 hyperscaler 初始订单；第三 lab qualification | hyperscaler 数据中心 OOB | 从单客户放大到多客户认证 |
+| Nitro ACC | final chip back，summer 2026 GA | ACC / active copper cable 生态 | GA 前后，尚未大规模收入 |
+| Vesta 200 CPO | OFC 2026 产品展示、CPO use cases | open CPO ecosystem、switch/XPU/NIC | 早期 qualification / design-in |
+
+## 9. 一年后产能能力和供应链采纳预测
+
+| 产品 | 基准，2027-06 | 乐观，2027-06 | 极度乐观，2027-06 |
+|---|---|---|---|
+| RLS Hyper-Rail | 年化交付能力 1.5-3 亿美元；1-2 个大客户部署；认证从订单转初量产 | 年化 3-6 亿美元；2-4 个大客户；供应链和 field deployment 稳定 | 年化 6-10 亿美元；成为 2027 AI scale-across 关键新平台 |
+| RLS/Waveserver/WL6 systems | 年化 45-55 亿美元；继续供需偏紧 | 年化 55-65 亿美元；毛利率 >45% | 年化 65-75 亿美元；主要瓶颈转向组件和现场交付 |
+| Coherent pluggables | 年化 10-14 亿美元；800G/1.6T 并行 | 年化 14-20 亿美元；1.6T design-in 增多 | 年化 20-28 亿美元；coherent-lite 大规模进入 AI DCI |
+| DCOM | 年化 5-7 亿美元；第三 hyperscaler 进入早期部署 | 年化 7-11 亿美元；多客户 OOB 标准方案 | 年化 11-16 亿美元；大规模 AI DC OOB rollout |
+| Vesta 200 CPO | 0.5-1.5 亿美元；小批量和 NRE | 1.5-4 亿美元；进入至少一个平台 pilot | 4-8 亿美元；200G/lane CPO 提前规模导入 |
+| Nitro ACC | 0.3-1 亿美元；GA 后导入 | 1-2.5 亿美元；多客户 ACC 采用 | 2.5-5 亿美元；rack 短距铜互联窗口放大 |
+
+## 10. 基于真实 backlog 和供给的未来一年增长预测
+
+### 10.1 已知订单和供给约束
+
+| 信号 | 数值/描述 | 对增长的含义 |
+|---|---|---|
+| Backlog | 77 亿美元，Q2 顺季 +6 亿美元以上 | 超过 FY2026 指引 63 亿美元，显示收入能见度高 |
+| RPO | 25 亿美元 | non-cancelable purchase orders 形成未来收入支撑 |
+| FY2026 指引 | 63 亿美元 +/- 1 亿美元 | 管理层已根据供给约束上调 |
+| FY2026 Q3 指引 | 16.25 亿美元 +/- 0.5 亿美元 | Q3 继续创新高概率高 |
+| 取消/推迟 | 管理层称未见库存堆积、推迟交付或订单取消 | 当前 backlog 质量较好 |
+| 供应 | 供给未跟上需求，正在投 CapEx 和供应商投资 | 增长上限由产能/组件/站点交付决定 |
+| 客户集中 | Q2 两个 10%+ 客户均为 cloud provider | upside 和 downside 都被大客户放大 |
+
+### 10.2 未来一年收入增速三情景
+
+| 情景 | 公司收入增速 | 关键产品增速 | Backlog 转收入假设 | 取消率/推迟率假设 | 供给假设 |
+|---|---:|---|---|---|---|
+| 基准 | +15%-22% | Optical systems +15%-25%；DCOM +25%-45%；pluggables +25%-50%；Hyper-Rail 初量 | 77 亿 backlog 中 55%-65% 在未来 12-18 个月转收入 | 取消率 <2%，推迟率 5%-10% | 供应链改善但仍约束极端上修 |
+| 乐观 | +22%-32% | Hyper-Rail、WL6、DCOM 同时加速；CPO/ACC 小贡献 | backlog 65%-75% 转收入，新增订单继续大于收入 | 取消率 <1%，推迟率 <5% | Ciena 供应安全投资有效，组件无大扰动 |
+| 极度乐观 | +32%-45% | 多 hyperscaler multi-rail、1.6T、DCOM 大规模 rollout；Vesta/Nitro 早期收入 | backlog 高质量转化且年末 backlog 继续高于当前 | 取消率接近 0，客户加急交付 | 供应商扩产、现场部署和电力上电同步顺利 |
+
+## 11. 竞争格局、替代风险和客户替换成本
+
+### 11.1 主要竞争对手
+
+| 领域 | 竞争对手 | Ciena 优势 | Ciena 风险 |
+|---|---|---|---|
+| Coherent optical systems / long-haul / metro | Nokia/Infinera、Cisco/Acacia、Huawei、ZTE、Ribbon/Adtran、NEC | WaveLogic、RLS/Waveserver installed base、北美云厂关系强 | Huawei/ZTE 在部分海外市场价格强；Nokia/Infinera 合并后规模更强 |
+| Coherent DSP / pluggables | Marvell、Cisco/Acacia、Nokia/Infinera、Coherent、Lumentum、Broadcom ecosystem | 自研 WaveLogic 5/6、coherent-lite 和客户联合开发 | pluggables 标准化后模块价格竞争；Marvell/Cisco DSP 竞争强 |
+| AI data center Ethernet / OOB / switching | Arista、Cisco、NVIDIA、Juniper/HPE、Nokia、whitebox/SONiC、Broadcom merchant ecosystem | DCOM 的 PON+routing/switching 差异化，已有 Meta 和第二客户 | 不是主流 AI Ethernet switch 龙头，核心 back-end fabric 仍被 Arista/NVIDIA/Cisco/Broadcom 主导 |
+| CPO/NPO/optical engine | Broadcom、NVIDIA、Marvell、Coherent、Lumentum、Ayar Labs、Celestial AI/Marvell、Ranovus、Lightmatter、POET、OpenLight | Nubis Vesta + Ciena SerDes/coherent IP；focused connectivity supplier | 进入时间偏后，客户 design-in 未确认，CPO 标准和维修模型未完全成熟 |
+| Optical modules | Innolight、新易盛、Coherent、Lumentum、AAOI、Fabrinet ecosystem、光迅等 | coherent 高端差异化强 | 普通 800G/1.6T datacom 模块不适合和中国头部模块厂打价格战 |
+| Network automation | Cisco、Nokia、Juniper/HPE、Arista EOS/CloudVision、SONiC ecosystem | Blue Planet 与 Ciena optical installed base | 软件收入占比低，独立估值不如纯软件 |
+
+### 11.2 新技术是否是未来主流
+
+| 技术 | 是否主流 | Ciena 位置 | 风险 |
+|---|---|---|---|
+| AI scale-across optical networking | 是，尤其多园区/多区域 AI factory | Ciena 核心优势区 | 如果 AI workload 更集中在单园区或 token 收入不支撑 capex，需求下修 |
+| Multi-rail photonic line systems | 高概率成为 hyperscale long-haul/campus DCI 的重要路线 | Hyper-Rail 领先，已有首单 | 需要现场交付和多个客户复用证明 |
+| 800G/1.6T coherent pluggables | 是，2026-2027 高增长 | WaveLogic 6 Nano / Coherent-Lite 有竞争力 | 800G ASP 下行和标准化 |
+| CPO/CPX/NPO | 长期可能主流，2026-2027 仍是 pilot/design-in | Vesta 200 是期权 | 可靠性、field replace、ELS 冗余、客户维护模型 |
+| ACC / active copper cable | 过渡性主流之一 | Nitro 进入 2027-2028 | CPO/optics 提前、AEC/ACC 竞争、短距铜物理限制 |
+| DCOM / OOB PON 管理 | 在 hyperscaler 数据中心管理网有明确机会 | 已有 Meta 和新客户 | 客户可自研或采用其他 OOB 架构 |
+
+### 11.3 客户替换成本
+
+替换成本高的部分：
+
+- **RLS/Waveserver/Hyper-Rail 光层系统。** 设计、光预算、放大站点、运维软件和现场服务深度绑定，替换成本高。
+- **WaveLogic coherent DSP / modules。** 一旦进入客户 DCI 架构和 switch OEM qualification，切换需要重新测试 BER、FEC、功耗、热、互操作和供应链。
+- **DCOM。** 进入 hyperscaler OOB 管理网络后，架构、运维和 rollout 工具绑定，替换成本中高。
+
+替换成本较低或仍未形成的部分：
+
+- **普通 800G datacom modules。** 标准化强，客户多供应商化，价格战风险高。
+- **CPO / ACC 早期产品。** 还在 design-in 早期，Ciena 尚未形成大规模 installed base。
+- **通用软件/服务。** 服务粘性存在，但收入不是核心增长驱动。
+
+## 12. 风险和反证指标
+
+| 风险 | 反证或跟踪指标 | 影响 |
+|---|---|---|
+| 估值过高 | Forward PE 仍 55-65x，若 FY2027 增速低于 20% 或毛利未扩张 | 股价对“好但不够好”的财报非常敏感，Q1/Q2 后均出现回撤 |
+| 客户集中 | 前两三大客户订单节奏、10%+ customer concentration、direct cloud 增速 | 季度波动大 |
+| Backlog 转收入慢 | backlog 增长但收入不跟、DSO 上升、库存上升 | 估值下修 |
+| 供应链短缺 | optical components、substrates、contract manufacturers、site readiness | 增长受限，即使需求强也无法确认收入 |
+| 光模块周期化 | 800G/1.6T ASP 连续两季下跌 10%+、客户库存 >1 季需求 | pluggables 毛利下修 |
+| CPO 推迟 | Vesta/Nitro 没有 design-in，客户继续使用传统 pluggables/ACC/AEC | 2027+ 期权价值下修 |
+| 竞争 | Nokia/Infinera、Cisco/Acacia、Marvell、Broadcom、Arista/NVIDIA 等抢份额 | 定价权和毛利受压 |
+| AI capex ROI | hyperscaler capex 下修，token/AI 收入无法覆盖网络扩张 | 全链条订单池下修 |
+
+## 13. 投资框架
+
+### 13.1 该怎么看 CIEN
+
+CIEN 当前应被拆成三块估值：
+
+1. **基础光网络系统和服务商复苏业务。** 值得给高于传统 telco 设备的倍数，但不应按纯 AI 高倍数。
+2. **AI DCI / scale-across / Hyper-Rail / coherent pluggables。** 这是 2026-2027 的核心重估来源，订单、backlog、客户认证和毛利率最关键。
+3. **CPO/inside-DC 期权。** Nubis Vesta/Nitro 可能带来第二曲线，但 2026 仍不是收入主线。它应该作为期权估值，而非当前收入估值。
+
+### 13.2 估值容忍度
+
+以 2026-06-18 市值约 626.5 亿美元计：
+
+| 情景 | 2027 收入 | 净利率/FCF margin | 合理解释 |
+|---|---:|---:|---|
+| 保守 | 70-75 亿美元 | 净利率 12%-14% | 市销率仍 8x+，股价承压 |
+| 基准 | 75-85 亿美元 | 净利率 14%-16%，毛利 45%+ | 当前估值部分合理，但需要持续 beat |
+| 乐观 | 85-100 亿美元 | 净利率 16%-18%，Hyper-Rail 毛利扩张 | 当前估值可被消化 |
+| 极度乐观 | 100 亿美元+ | 净利率 18%+，CPO/ACC 出现收入 | 股价仍有上行叙事，但执行要求很高 |
+
+### 13.3 最重要的后续跟踪清单
+
+| 指标 | 乐观信号 | 反证信号 |
+|---|---|---|
+| Backlog | 2026 年末高于 77 亿美元且收入同步上修 | backlog 高但收入和现金转化慢 |
+| Hyper-Rail | 第二、第三个 hyperscaler 或 service provider 订单 | 首单交付推迟、毛利不如预期 |
+| DCOM | 第二客户扩大、第三客户通过 lab qualification | Meta 之外无规模化 |
+| Pluggables | 2026 revenue >2x 兑现，1.6T Coherent-Lite design-in | 800G ASP 下行、客户库存 |
+| Vesta/Nitro | 2027 进入 switch/XPU/NIC platform design-in | 仍停留 demo/NRE |
+| 毛利率 | FY2026 45% 附近，2027 因 Hyper-Rail 上行 | 因供应链/价格战回落至 42%-43% |
+| 现金流 | FCF margin 维持双位数 | CapEx、库存和应收账款吞噬现金 |
+
+## 14. 主要来源
+
+### 14.1 公司一手资料
+
+- Ciena FY2026 Q2 results, 2026-06-04: https://investor.ciena.com/news/news-details/2026/Ciena-Reports-Fiscal-Second-Quarter-2026-Financial-Results/default.aspx
+- Ciena FY2026 Q2 earnings presentation PDF, 2026-06-04: https://s25.q4cdn.com/550667411/files/doc_financials/2026/q2/2026-Q2-Earnings-Presentation_FINAL.pdf
+- Ciena FY2026 Q2 earnings call transcript PDF, 2026-06-04: https://s25.q4cdn.com/550667411/files/content_files/Ciena-Fiscal-Q2-2026-Financial-Results-Call.pdf
+- Ciena FY2026 Q1 results, 2026-03-05: https://investor.ciena.com/news/news-details/2026/Ciena-Reports-Fiscal-First-Quarter-2026-Financial-Results-03-05-2026/default.aspx
+- Ciena FY2025 Q4 and FY2025 results, 2025-12-11: https://investor.ciena.com/news/news-details/2025/Ciena-Reports-Fiscal-Fourth-Quarter-2025-and-Year-End-Financial-Results-12-11-2025/default.aspx
+- Ciena FY2025 Q3 results, 2025-09-04: https://investor.ciena.com/news/news-details/2025/Ciena-Reports-Fiscal-Third-Quarter-2025-Financial-Results-09-04-2025/default.aspx
+- Ciena FY2025 Q2 results, 2025-06-05: https://investor.ciena.com/news/news-details/2025/Ciena-Reports-Fiscal-Second-Quarter-2025-Financial-Results-06-05-2025/default.aspx
+- Ciena, What is multi-rail / RLS Hyper-Rail: https://www.ciena.com/insights/what-is/what-is-multi-rail
+- Ciena at OFC 2026 PDF: https://s25.q4cdn.com/550667411/files/doc_presentations/2026/03/Ciena-at-OFC-2026.pdf
+- Ciena to acquire Nubis Communications, 2025-09: https://www.ciena.com/about/newsroom/press-releases/ciena-to-acquire-nubis-communications-to-expand-its-inside-the-data-center-strategy-and-further-address-growing-ai-workloads
+- Ciena Vesta 200 6.4T CPX press release, 2026-02: https://www.ciena.com/about/newsroom/press-releases/ciena-unveils-the-industrys-highest-density-lowest-power-pluggable-optical-engine-to-meet-data-center-ai-demands
+- Ciena WaveLogic 6: https://www.ciena.com/products/wavelogic/wavelogic-6
+- Ciena WaveLogic 6 Nano: https://www.ciena.com/products/wavelogic/wavelogic-6/wavelogic-6-nano
+- Ciena WaveLogic 6 Nano 1.6T Coherent-Lite: https://www.ciena.com/insights/infobriefs/wavelogic-6-nano-1-6t-coherent-lite-pluggable-transceiver
+
+### 14.2 外部市场和估值资料
+
+- CIEN market data, latest close 2026-06-18: OpenAI finance tool / market quote snapshot.
+- StockAnalysis CIEN statistics and valuation: https://stockanalysis.com/stocks/cien/statistics/
+- Yahoo Finance CIEN quote and valuation snapshot: https://finance.yahoo.com/quote/CIEN/
+- StockTitan CIEN FY2026 Q2 10-Q summary: https://www.stocktitan.net/sec-filings/CIEN/10-q-ciena-corp-quarterly-earnings-report-62e0ec736ce0.html
+- Fierce Network, Ciena FY2026 Q2 revenue and hyperscaler demand: https://www.fierce-network.com/broadband/ciena-reports-q2-2026-revenue-157b-40-yoy
+
+### 14.3 项目内行业资料
+
+- `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_激光器、EML与光器件_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_OCS光路交换_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_LPO_LRO线性光模块_2026-06-11.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+- `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+

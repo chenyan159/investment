@@ -1,0 +1,3054 @@
+{
+  "scope": "Recalculate total return from published current price, target value and modeled cumulative dividends only; this does not verify valuation assumptions, full models, or source authenticity.",
+  "stats": {
+    "cells": 117,
+    "endpoints": 234,
+    "passingCells": 117,
+    "maximumErrorPercentagePoints": 0.07451486193343726,
+    "exceptions": []
+  },
+  "results": [
+    {
+      "ticker": "SOMMY",
+      "line": 424,
+      "scenario": 1,
+      "horizon": 6,
+      "price": 20,
+      "dividend": 0.25806451612903225,
+      "exits": [
+        7.84,
+        14.28
+      ],
+      "reported": [
+        -59.5,
+        -27.3
+      ],
+      "recalculated": [
+        -59.50967741935484,
+        -27.30967741935484
+      ],
+      "errors": [
+        0.009677419354837014,
+        0.009677419354840566
+      ],
+      "tolerance": 0.075001,
+      "passes": true
+    },
+    {
+      "ticker": "SOMMY",
+      "line": 425,
+      "scenario": 1,
+      "horizon": 12,
+      "price": 20,
+      "dividend": 0.5161290322580645,
+      "exits": [
+        8.38,
+        14.93
+      ],
+      "reported": [
+        -55.5,
+        -22.8
+      ],
+      "recalculated": [
+        -55.51935483870968,
+        -22.769354838709674
+      ],
+      "errors": [
+        0.019354838709681133,
+        0.030645161290326683
+      ],
+      "tolerance": 0.075001,
+      "passes": true
+    },
+    {
+      "ticker": "SOMMY",
+      "line": 426,
+      "scenario": 1,
+      "horizon": 36,
+      "price": 20,
+      "dividend": 1.8064516129032258,
+      "exits": [
+        10.45,
+        17.33
+      ],
+      "reported": [
+        -38.7,
+        -4.3
+      ],
+      "recalculated": [
+        -38.71774193548387,
+        -4.317741935483895
+      ],
+      "errors": [
+        0.017741935483869042,
+        0.0177419354838948
+      ],
+      "tolerance": 0.075001,
+      "passes": true
+    },
+    {
+      "ticker": "SOMMY",
+      "line": 427,
+      "scenario": 2,
+      "horizon": 6,
+      "price": 20,
+      "dividend": 0.25806451612903225,
+      "exits": [
+        19.32,
+        29.96
+      ],
+      "reported": [
+        -2.1,
+        51.1
+      ],
+      "recalculated": [
+        -2.1096774193548384,
+        51.090322580645164
+      ],
+      "errors": [
+        0.009677419354838346,
+        0.009677419354837014
+      ],
+      "tolerance": 0.075001,
+      "passes": true
+    },
+    {
+      "ticker": "SOMMY",
+      "line": 428,
+      "scenario": 2,
+      "horizon": 12,
+      "price": 20,
+      "dividend": 0.5161290322580645,
+      "exits": [
+        20.43,
+        31.24
+      ],
+      "reported": [
+        4.7,
+        58.8
+      ],
+      "recalculated": [
+        4.730645161290312,
+        58.78064516129032
+      ],
+      "errors": [
+        0.030645161290311584,
+        0.019354838709674027
+      ],
+      "tolerance": 0.075001,
+      "passes": true
+    },
+    {
+      "ticker": "SOMMY",
+      "line": 429,
+      "scenario": 2,
+      "horizon": 36,
+      "price": 20,
+      "dividend": 2.129032258064516,
+      "exits": [
+        24.6,
+        36.03
+      ],
+      "reported": [
+        33.6,
+        90.8
+      ],
+      "recalculated": [
+        33.64516129032259,
+        90.79516129032257
+      ],
+      "errors": [
+        0.04516129032258931,
+        0.004838709677429165
+      ],
+      "tolerance": 0.075001,
+      "passes": true
+    },
+    {
+      "ticker": "SOMMY",
+      "line": 430,
+      "scenario": 3,
+      "horizon": 6,
+      "price": 20,
+      "dividend": 0.25806451612903225,
+      "exits": [
+        29.06,
+        43.96
+      ],
+      "reported": [
+        46.6,
+        121.1
+      ],
+      "recalculated": [
+        46.590322580645136,
+        121.09032258064519
+      ],
+      "errors": [
+        0.009677419354865435,
+        0.009677419354801486
+      ],
+      "tolerance": 0.075001,
+      "passes": true
+    },
+    {
+      "ticker": "SOMMY",
+      "line": 431,
+      "scenario": 3,
+      "horizon": 12,
+      "price": 20,
+      "dividend": 0.5161290322580645,
+      "exits": [
+        30.64,
+        45.81
+      ],
+      "reported": [
+        55.8,
+        131.6
+      ],
+      "recalculated": [
+        55.78064516129032,
+        131.63064516129035
+      ],
+      "errors": [
+        0.019354838709674027,
+        0.030645161290351552
+      ],
+      "tolerance": 0.075001,
+      "passes": true
+    },
+    {
+      "ticker": "SOMMY",
+      "line": 432,
+      "scenario": 3,
+      "horizon": 36,
+      "price": 20,
+      "dividend": 2.3225806451612905,
+      "exits": [
+        36.74,
+        52.87
+      ],
+      "reported": [
+        95.3,
+        176
+      ],
+      "recalculated": [
+        95.31290322580645,
+        175.96290322580643
+      ],
+      "errors": [
+        0.012903225806454088,
+        0.03709677419357149
+      ],
+      "tolerance": 0.075001,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 461,
+      "scenario": 0,
+      "horizon": 6,
+      "price": 40.49,
+      "dividend": 0,
+      "exits": [
+        12.48,
+        15.45
+      ],
+      "reported": [
+        -69.2,
+        -61.8
+      ],
+      "recalculated": [
+        -69.17757470980489,
+        -61.84243022968634
+      ],
+      "errors": [
+        0.022425290195116077,
+        0.04243022968634591
+      ],
+      "tolerance": 0.06234972808100765,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 462,
+      "scenario": 0,
+      "horizon": 12,
+      "price": 40.49,
+      "dividend": 0,
+      "exits": [
+        13.23,
+        16.2
+      ],
+      "reported": [
+        -67.3,
+        -60
+      ],
+      "recalculated": [
+        -67.32526549765373,
+        -59.990121017535195
+      ],
+      "errors": [
+        0.025265497653734315,
+        0.00987898246480512
+      ],
+      "tolerance": 0.06234972808100765,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 463,
+      "scenario": 0,
+      "horizon": 36,
+      "price": 40.49,
+      "dividend": 0,
+      "exits": [
+        16.15,
+        19.17
+      ],
+      "reported": [
+        -60.1,
+        -52.6
+      ],
+      "recalculated": [
+        -60.11360829834528,
+        -52.654976537416644
+      ],
+      "errors": [
+        0.013608298345275216,
+        0.05497653741664266
+      ],
+      "tolerance": 0.06234972808100765,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 464,
+      "scenario": 1,
+      "horizon": 6,
+      "price": 40.49,
+      "dividend": 0,
+      "exits": [
+        35.52,
+        48.89
+      ],
+      "reported": [
+        -12.3,
+        20.8
+      ],
+      "recalculated": [
+        -12.274635712521615,
+        20.745863176092854
+      ],
+      "errors": [
+        0.025364287478385705,
+        0.05413682390714669
+      ],
+      "tolerance": 0.06234972808100765,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 465,
+      "scenario": 1,
+      "horizon": 12,
+      "price": 40.49,
+      "dividend": 0,
+      "exits": [
+        37.73,
+        51.32
+      ],
+      "reported": [
+        -6.8,
+        26.8
+      ],
+      "recalculated": [
+        -6.816497900716229,
+        26.747345023462586
+      ],
+      "errors": [
+        0.01649790071622892,
+        0.05265497653741491
+      ],
+      "tolerance": 0.06234972808100765,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 466,
+      "scenario": 1,
+      "horizon": 36,
+      "price": 40.49,
+      "dividend": 0,
+      "exits": [
+        47.21,
+        61.64
+      ],
+      "reported": [
+        16.6,
+        52.2
+      ],
+      "recalculated": [
+        16.59669054087429,
+        52.235119782662366
+      ],
+      "errors": [
+        0.0033094591257096795,
+        0.035119782662363264
+      ],
+      "tolerance": 0.06234972808100765,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 467,
+      "scenario": 2,
+      "horizon": 6,
+      "price": 40.49,
+      "dividend": 0,
+      "exits": [
+        58.14,
+        84.12
+      ],
+      "reported": [
+        43.6,
+        107.8
+      ],
+      "recalculated": [
+        43.59101012595704,
+        107.75500123487282
+      ],
+      "errors": [
+        0.008989874042960366,
+        0.04499876512717549
+      ],
+      "tolerance": 0.06234972808100765,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 468,
+      "scenario": 2,
+      "horizon": 12,
+      "price": 40.49,
+      "dividend": 0,
+      "exits": [
+        61.88,
+        88.41
+      ],
+      "reported": [
+        52.8,
+        118.4
+      ],
+      "recalculated": [
+        52.82785873055076,
+        118.35020992837735
+      ],
+      "errors": [
+        0.02785873055076138,
+        0.049790071622652476
+      ],
+      "tolerance": 0.06234972808100765,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 469,
+      "scenario": 2,
+      "horizon": 36,
+      "price": 40.49,
+      "dividend": 0,
+      "exits": [
+        78.37,
+        107.05
+      ],
+      "reported": [
+        93.6,
+        164.4
+      ],
+      "recalculated": [
+        93.55396394171402,
+        164.3862682143739
+      ],
+      "errors": [
+        0.04603605828597779,
+        0.01373178562610633
+      ],
+      "tolerance": 0.06234972808100765,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 470,
+      "scenario": 3,
+      "horizon": 6,
+      "price": 40.49,
+      "dividend": 0,
+      "exits": [
+        67.16,
+        101.65
+      ],
+      "reported": [
+        65.9,
+        151
+      ],
+      "recalculated": [
+        65.86811558409482,
+        151.04964188688564
+      ],
+      "errors": [
+        0.031884415905182095,
+        0.04964188688563809
+      ],
+      "tolerance": 0.06234972808100765,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 471,
+      "scenario": 3,
+      "horizon": 12,
+      "price": 40.49,
+      "dividend": 0,
+      "exits": [
+        71.56,
+        106.9
+      ],
+      "reported": [
+        76.7,
+        164
+      ],
+      "recalculated": [
+        76.73499629538156,
+        164.0158063719437
+      ],
+      "errors": [
+        0.03499629538156057,
+        0.01580637194371093
+      ],
+      "tolerance": 0.06234972808100765,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 472,
+      "scenario": 3,
+      "horizon": 36,
+      "price": 40.49,
+      "dividend": 0,
+      "exits": [
+        91.56,
+        130.19
+      ],
+      "reported": [
+        126.1,
+        221.5
+      ],
+      "recalculated": [
+        126.12990861941219,
+        221.5361817732773
+      ],
+      "errors": [
+        0.029908619412196913,
+        0.036181773277291995
+      ],
+      "tolerance": 0.06234972808100765,
+      "passes": true
+    },
+    {
+      "ticker": "ET",
+      "line": 505,
+      "scenario": 0,
+      "horizon": 6,
+      "price": 21.5,
+      "dividend": 0.5925,
+      "exits": [
+        11.28,
+        14.79
+      ],
+      "reported": [
+        -44.8,
+        -28.4
+      ],
+      "recalculated": [
+        -44.77906976744187,
+        -28.453488372093034
+      ],
+      "errors": [
+        0.02093023255812909,
+        0.05348837209303525
+      ],
+      "tolerance": 0.07325681395348838,
+      "passes": true
+    },
+    {
+      "ticker": "ET",
+      "line": 506,
+      "scenario": 0,
+      "horizon": 12,
+      "price": 21.5,
+      "dividend": 1.0925,
+      "exits": [
+        11.49,
+        15.08
+      ],
+      "reported": [
+        -41.5,
+        -24.8
+      ],
+      "recalculated": [
+        -41.47674418604651,
+        -24.779069767441868
+      ],
+      "errors": [
+        0.02325581395349019,
+        0.020930232558132644
+      ],
+      "tolerance": 0.07325681395348838,
+      "passes": true
+    },
+    {
+      "ticker": "ET",
+      "line": 507,
+      "scenario": 0,
+      "horizon": 36,
+      "price": 21.5,
+      "dividend": 3.117575,
+      "exits": [
+        12.4,
+        16.35
+      ],
+      "reported": [
+        -27.8,
+        -9.5
+      ],
+      "recalculated": [
+        -27.825232558139533,
+        -9.453139534883732
+      ],
+      "errors": [
+        0.025232558139531847,
+        0.046860465116267846
+      ],
+      "tolerance": 0.07325681395348838,
+      "passes": true
+    },
+    {
+      "ticker": "ET",
+      "line": 508,
+      "scenario": 1,
+      "horizon": 6,
+      "price": 21.5,
+      "dividend": 0.6875,
+      "exits": [
+        22.59,
+        30.34
+      ],
+      "reported": [
+        8.3,
+        44.3
+      ],
+      "recalculated": [
+        8.267441860465112,
+        44.31395348837208
+      ],
+      "errors": [
+        0.0325581395348884,
+        0.013953488372081324
+      ],
+      "tolerance": 0.07325681395348838,
+      "passes": true
+    },
+    {
+      "ticker": "ET",
+      "line": 509,
+      "scenario": 1,
+      "horizon": 12,
+      "price": 21.5,
+      "dividend": 1.3775,
+      "exits": [
+        23.16,
+        31.13
+      ],
+      "reported": [
+        14.1,
+        51.2
+      ],
+      "recalculated": [
+        14.1279069767442,
+        51.19767441860466
+      ],
+      "errors": [
+        0.02790697674419995,
+        0.002325581395339782
+      ],
+      "tolerance": 0.07325681395348838,
+      "passes": true
+    },
+    {
+      "ticker": "ET",
+      "line": 510,
+      "scenario": 1,
+      "horizon": 36,
+      "price": 21.5,
+      "dividend": 4.2419315,
+      "exits": [
+        25.62,
+        34.54
+      ],
+      "reported": [
+        38.9,
+        80.4
+      ],
+      "recalculated": [
+        38.8927046511628,
+        80.38107674418603
+      ],
+      "errors": [
+        0.007295348837196514,
+        0.018923255813973583
+      ],
+      "tolerance": 0.07325681395348838,
+      "passes": true
+    },
+    {
+      "ticker": "ET",
+      "line": 511,
+      "scenario": 2,
+      "horizon": 6,
+      "price": 21.5,
+      "dividend": 0.6875,
+      "exits": [
+        30.78,
+        43.49
+      ],
+      "reported": [
+        46.4,
+        105.5
+      ],
+      "recalculated": [
+        46.36046511627907,
+        105.47674418604652
+      ],
+      "errors": [
+        0.03953488372092551,
+        0.023255813953483084
+      ],
+      "tolerance": 0.07325681395348838,
+      "passes": true
+    },
+    {
+      "ticker": "ET",
+      "line": 512,
+      "scenario": 2,
+      "horizon": 12,
+      "price": 21.5,
+      "dividend": 1.3775,
+      "exits": [
+        31.74,
+        44.82
+      ],
+      "reported": [
+        54,
+        114.9
+      ],
+      "recalculated": [
+        54.034883720930225,
+        114.87209302325581
+      ],
+      "errors": [
+        0.034883720930224626,
+        0.02790697674419107
+      ],
+      "tolerance": 0.07325681395348838,
+      "passes": true
+    },
+    {
+      "ticker": "ET",
+      "line": 513,
+      "scenario": 2,
+      "horizon": 36,
+      "price": 21.5,
+      "dividend": 4.277156,
+      "exits": [
+        35.91,
+        50.59
+      ],
+      "reported": [
+        86.9,
+        155.2
+      ],
+      "recalculated": [
+        86.91700465116276,
+        155.19607441860467
+      ],
+      "errors": [
+        0.017004651162750406,
+        0.003925581395321842
+      ],
+      "tolerance": 0.07325681395348838,
+      "passes": true
+    },
+    {
+      "ticker": "ET",
+      "line": 514,
+      "scenario": 3,
+      "horizon": 6,
+      "price": 21.5,
+      "dividend": 0.6875,
+      "exits": [
+        35.52,
+        49.12
+      ],
+      "reported": [
+        68.4,
+        131.6
+      ],
+      "recalculated": [
+        68.40697674418607,
+        131.66279069767438
+      ],
+      "errors": [
+        0.006976744186061978,
+        0.06279069767438727
+      ],
+      "tolerance": 0.07325681395348838,
+      "passes": true
+    },
+    {
+      "ticker": "ET",
+      "line": 515,
+      "scenario": 3,
+      "horizon": 12,
+      "price": 21.5,
+      "dividend": 1.3775,
+      "exits": [
+        36.82,
+        50.83
+      ],
+      "reported": [
+        77.7,
+        142.8
+      ],
+      "recalculated": [
+        77.66279069767441,
+        142.82558139534882
+      ],
+      "errors": [
+        0.03720930232559283,
+        0.025581395348808655
+      ],
+      "tolerance": 0.07325681395348838,
+      "passes": true
+    },
+    {
+      "ticker": "ET",
+      "line": 516,
+      "scenario": 3,
+      "horizon": 36,
+      "price": 21.5,
+      "dividend": 4.3125875,
+      "exits": [
+        42.53,
+        58.3
+      ],
+      "reported": [
+        117.9,
+        191.2
+      ],
+      "recalculated": [
+        117.8725,
+        191.2213372093023
+      ],
+      "errors": [
+        0.02750000000000341,
+        0.02133720930231675
+      ],
+      "tolerance": 0.07325681395348838,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 616,
+      "scenario": 0,
+      "horizon": 6,
+      "price": 147.95,
+      "dividend": 0,
+      "exits": [
+        0.75,
+        1.31
+      ],
+      "reported": [
+        -99.5,
+        -99.1
+      ],
+      "recalculated": [
+        -99.49307198377831,
+        -99.1145657316661
+      ],
+      "errors": [
+        0.006928016221692701,
+        0.014565731666110082
+      ],
+      "tolerance": 0.08379620108144643,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 617,
+      "scenario": 0,
+      "horizon": 12,
+      "price": 147.95,
+      "dividend": 0,
+      "exits": [
+        0.76,
+        1.34
+      ],
+      "reported": [
+        -99.5,
+        -99.1
+      ],
+      "recalculated": [
+        -99.48631294356201,
+        -99.09428861101723
+      ],
+      "errors": [
+        0.013687056437987621,
+        0.005711388982760468
+      ],
+      "tolerance": 0.08379620108144643,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 618,
+      "scenario": 0,
+      "horizon": 36,
+      "price": 147.95,
+      "dividend": 0,
+      "exits": [
+        1.29,
+        1.97
+      ],
+      "reported": [
+        -99.1,
+        -98.7
+      ],
+      "recalculated": [
+        -99.12808381209868,
+        -98.66846907739101
+      ],
+      "errors": [
+        0.028083812098685712,
+        0.031530922608993706
+      ],
+      "tolerance": 0.08379620108144643,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 619,
+      "scenario": 1,
+      "horizon": 6,
+      "price": 147.95,
+      "dividend": 0,
+      "exits": [
+        13.87,
+        23.93
+      ],
+      "reported": [
+        -90.6,
+        -83.8
+      ],
+      "recalculated": [
+        -90.62521122000676,
+        -83.82561676241974
+      ],
+      "errors": [
+        0.02521122000676712,
+        0.025616762419744532
+      ],
+      "tolerance": 0.08379620108144643,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 620,
+      "scenario": 1,
+      "horizon": 12,
+      "price": 147.95,
+      "dividend": 0,
+      "exits": [
+        14.58,
+        24.95
+      ],
+      "reported": [
+        -90.1,
+        -83.1
+      ],
+      "recalculated": [
+        -90.14531936465022,
+        -83.13619466035823
+      ],
+      "errors": [
+        0.04531936465022568,
+        0.03619466035823393
+      ],
+      "tolerance": 0.08379620108144643,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 621,
+      "scenario": 1,
+      "horizon": 36,
+      "price": 147.95,
+      "dividend": 0,
+      "exits": [
+        19.12,
+        30.58
+      ],
+      "reported": [
+        -87.1,
+        -79.3
+      ],
+      "recalculated": [
+        -87.07671510645488,
+        -79.33085501858736
+      ],
+      "errors": [
+        0.023284893545110208,
+        0.03085501858735995
+      ],
+      "tolerance": 0.08379620108144643,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 622,
+      "scenario": 2,
+      "horizon": 6,
+      "price": 147.95,
+      "dividend": 0,
+      "exits": [
+        59.78,
+        104.23
+      ],
+      "reported": [
+        -59.6,
+        -29.6
+      ],
+      "recalculated": [
+        -59.59445758702264,
+        -29.550523825616764
+      ],
+      "errors": [
+        0.005542412977362687,
+        0.04947617438323704
+      ],
+      "tolerance": 0.08379620108144643,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 623,
+      "scenario": 2,
+      "horizon": 12,
+      "price": 147.95,
+      "dividend": 0,
+      "exits": [
+        62.48,
+        107.92
+      ],
+      "reported": [
+        -57.8,
+        -27.1
+      ],
+      "recalculated": [
+        -57.76951672862453,
+        -27.056437985806
+      ],
+      "errors": [
+        0.03048327137546636,
+        0.043562014194002074
+      ],
+      "tolerance": 0.08379620108144643,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 624,
+      "scenario": 2,
+      "horizon": 36,
+      "price": 147.95,
+      "dividend": 0,
+      "exits": [
+        76.61,
+        125.31
+      ],
+      "reported": [
+        -48.2,
+        -15.3
+      ],
+      "recalculated": [
+        -48.21899290300777,
+        -15.302467049678938
+      ],
+      "errors": [
+        0.01899290300777068,
+        0.0024670496789376273
+      ],
+      "tolerance": 0.08379620108144643,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 625,
+      "scenario": 3,
+      "horizon": 6,
+      "price": 147.95,
+      "dividend": 0,
+      "exits": [
+        109.38,
+        210.81
+      ],
+      "reported": [
+        -26.1,
+        42.5
+      ],
+      "recalculated": [
+        -26.06961811422778,
+        42.487326799594456
+      ],
+      "errors": [
+        0.030381885772222006,
+        0.012673200405544094
+      ],
+      "tolerance": 0.08379620108144643,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 626,
+      "scenario": 3,
+      "horizon": 12,
+      "price": 147.95,
+      "dividend": 0,
+      "exits": [
+        113.75,
+        217.21
+      ],
+      "reported": [
+        -23.1,
+        46.8
+      ],
+      "recalculated": [
+        -23.115917539709358,
+        46.813112538019595
+      ],
+      "errors": [
+        0.015917539709356276,
+        0.013112538019598219
+      ],
+      "tolerance": 0.08379620108144643,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 627,
+      "scenario": 3,
+      "horizon": 36,
+      "price": 147.95,
+      "dividend": 0,
+      "exits": [
+        135.25,
+        244.91
+      ],
+      "reported": [
+        -8.6,
+        65.5
+      ],
+      "recalculated": [
+        -8.583981074687387,
+        65.53565393714095
+      ],
+      "errors": [
+        0.016018925312613064,
+        0.035653937140949665
+      ],
+      "tolerance": 0.08379620108144643,
+      "passes": true
+    },
+    {
+      "ticker": "GOOGL",
+      "line": 663,
+      "scenario": 0,
+      "horizon": 6,
+      "price": 338.46,
+      "dividend": 0.44,
+      "exits": [
+        26,
+        38.3
+      ],
+      "reported": [
+        -92.2,
+        -88.6
+      ],
+      "recalculated": [
+        -92.18814630975595,
+        -88.55403888199491
+      ],
+      "errors": [
+        0.011853690244052473,
+        0.0459611180050814
+      ],
+      "tolerance": 0.06477379442179282,
+      "passes": true
+    },
+    {
+      "ticker": "GOOGL",
+      "line": 664,
+      "scenario": 0,
+      "horizon": 12,
+      "price": 338.46,
+      "dividend": 0.88,
+      "exits": [
+        27.3,
+        39.9
+      ],
+      "reported": [
+        -91.7,
+        -87.9
+      ],
+      "recalculated": [
+        -91.67405306387757,
+        -87.95130886958577
+      ],
+      "errors": [
+        0.02594693612243759,
+        0.051308869585767525
+      ],
+      "tolerance": 0.06477379442179282,
+      "passes": true
+    },
+    {
+      "ticker": "GOOGL",
+      "line": 665,
+      "scenario": 0,
+      "horizon": 36,
+      "price": 338.46,
+      "dividend": 2.64,
+      "exits": [
+        36.3,
+        49.7
+      ],
+      "reported": [
+        -88.5,
+        -84.5
+      ],
+      "recalculated": [
+        -88.49494770430775,
+        -84.53583879926727
+      ],
+      "errors": [
+        0.005052295692252073,
+        0.03583879926726752
+      ],
+      "tolerance": 0.06477379442179282,
+      "passes": true
+    },
+    {
+      "ticker": "GOOGL",
+      "line": 666,
+      "scenario": 1,
+      "horizon": 6,
+      "price": 338.46,
+      "dividend": 0.44,
+      "exits": [
+        172.2,
+        287.2
+      ],
+      "reported": [
+        -49,
+        -15
+      ],
+      "recalculated": [
+        -48.992495420433734,
+        -15.015068250310222
+      ],
+      "errors": [
+        0.007504579566266045,
+        0.015068250310221742
+      ],
+      "tolerance": 0.06477379442179282,
+      "passes": true
+    },
+    {
+      "ticker": "GOOGL",
+      "line": 667,
+      "scenario": 1,
+      "horizon": 12,
+      "price": 338.46,
+      "dividend": 0.88,
+      "exits": [
+        180.4,
+        298.2
+      ],
+      "reported": [
+        -46.4,
+        -11.6
+      ],
+      "recalculated": [
+        -46.43975654434792,
+        -11.63505288660403
+      ],
+      "errors": [
+        0.03975654434792375,
+        0.03505288660402961
+      ],
+      "tolerance": 0.06477379442179282,
+      "passes": true
+    },
+    {
+      "ticker": "GOOGL",
+      "line": 668,
+      "scenario": 1,
+      "horizon": 36,
+      "price": 338.46,
+      "dividend": 2.64,
+      "exits": [
+        218.4,
+        346.3
+      ],
+      "reported": [
+        -34.7,
+        3.1
+      ],
+      "recalculated": [
+        -34.69243042013828,
+        3.096377710807772
+      ],
+      "errors": [
+        0.007569579861723241,
+        0.0036222891922279565
+      ],
+      "tolerance": 0.06477379442179282,
+      "passes": true
+    },
+    {
+      "ticker": "GOOGL",
+      "line": 669,
+      "scenario": 2,
+      "horizon": 6,
+      "price": 338.46,
+      "dividend": 0.44,
+      "exits": [
+        355.9,
+        659.2
+      ],
+      "reported": [
+        5.3,
+        94.9
+      ],
+      "recalculated": [
+        5.282751285233118,
+        94.89452224782843
+      ],
+      "errors": [
+        0.017248714766881612,
+        0.005477752171572092
+      ],
+      "tolerance": 0.06477379442179282,
+      "passes": true
+    },
+    {
+      "ticker": "GOOGL",
+      "line": 670,
+      "scenario": 2,
+      "horizon": 12,
+      "price": 338.46,
+      "dividend": 0.88,
+      "exits": [
+        372.1,
+        683.3
+      ],
+      "reported": [
+        10.2,
+        102.1
+      ],
+      "recalculated": [
+        10.19913726880577,
+        102.1450097500443
+      ],
+      "errors": [
+        0.0008627311942284166,
+        0.045009750044300745
+      ],
+      "tolerance": 0.06477379442179282,
+      "passes": true
+    },
+    {
+      "ticker": "GOOGL",
+      "line": 671,
+      "scenario": 2,
+      "horizon": 36,
+      "price": 338.46,
+      "dividend": 2.64,
+      "exits": [
+        443.9,
+        785.3
+      ],
+      "reported": [
+        31.9,
+        132.8
+      ],
+      "recalculated": [
+        31.93287242214737,
+        132.8015127341488
+      ],
+      "errors": [
+        0.03287242214737063,
+        0.0015127341487755075
+      ],
+      "tolerance": 0.06477379442179282,
+      "passes": true
+    },
+    {
+      "ticker": "GOOGL",
+      "line": 672,
+      "scenario": 3,
+      "horizon": 6,
+      "price": 338.46,
+      "dividend": 0.44,
+      "exits": [
+        463.4,
+        955.2
+      ],
+      "reported": [
+        37,
+        182.3
+      ],
+      "recalculated": [
+        37.0442592920877,
+        182.349465224842
+      ],
+      "errors": [
+        0.04425929208770185,
+        0.049465224841981126
+      ],
+      "tolerance": 0.06477379442179282,
+      "passes": true
+    },
+    {
+      "ticker": "GOOGL",
+      "line": 673,
+      "scenario": 3,
+      "horizon": 12,
+      "price": 338.46,
+      "dividend": 0.88,
+      "exits": [
+        486.9,
+        992.6
+      ],
+      "reported": [
+        44.1,
+        193.5
+      ],
+      "recalculated": [
+        44.11747326124208,
+        193.52951604325477
+      ],
+      "errors": [
+        0.01747326124208115,
+        0.029516043254773194
+      ],
+      "tolerance": 0.06477379442179282,
+      "passes": true
+    },
+    {
+      "ticker": "GOOGL",
+      "line": 674,
+      "scenario": 3,
+      "horizon": 36,
+      "price": 338.46,
+      "dividend": 2.64,
+      "exits": [
+        591.5,
+        1151.4
+      ],
+      "reported": [
+        75.5,
+        241
+      ],
+      "recalculated": [
+        75.54216155527979,
+        240.96791349051597
+      ],
+      "errors": [
+        0.042161555279790264,
+        0.03208650948403147
+      ],
+      "tolerance": 0.06477379442179282,
+      "passes": true
+    },
+    {
+      "ticker": "MU",
+      "line": 460,
+      "scenario": 0,
+      "horizon": 6,
+      "price": 1016.59,
+      "dividend": 0.3,
+      "exits": [
+        250.8,
+        272
+      ],
+      "reported": [
+        -75.3,
+        -73.2
+      ],
+      "recalculated": [
+        -75.29977670447279,
+        -73.21437354292291
+      ],
+      "errors": [
+        0.00022329552720634638,
+        0.014373542922911042
+      ],
+      "tolerance": 0.05491940368290067,
+      "passes": true
+    },
+    {
+      "ticker": "MU",
+      "line": 461,
+      "scenario": 0,
+      "horizon": 12,
+      "price": 1016.59,
+      "dividend": 0.6,
+      "exits": [
+        263.2,
+        283.8
+      ],
+      "reported": [
+        -74.1,
+        -72
+      ],
+      "recalculated": [
+        -74.05050216901603,
+        -72.02411985166094
+      ],
+      "errors": [
+        0.04949783098396665,
+        0.02411985166094155
+      ],
+      "tolerance": 0.05491940368290067,
+      "passes": true
+    },
+    {
+      "ticker": "MU",
+      "line": 462,
+      "scenario": 0,
+      "horizon": 36,
+      "price": 1016.59,
+      "dividend": 1.8,
+      "exits": [
+        309.4,
+        328.3
+      ],
+      "reported": [
+        -69.4,
+        -67.5
+      ],
+      "recalculated": [
+        -69.38785547762618,
+        -67.52869888548972
+      ],
+      "errors": [
+        0.012144522373830569,
+        0.02869888548971744
+      ],
+      "tolerance": 0.05491940368290067,
+      "passes": true
+    },
+    {
+      "ticker": "MU",
+      "line": 463,
+      "scenario": 1,
+      "horizon": 6,
+      "price": 1016.59,
+      "dividend": 0.3,
+      "exits": [
+        991.5,
+        1202.9
+      ],
+      "reported": [
+        -2.4,
+        18.4
+      ],
+      "recalculated": [
+        -2.438544545982168,
+        18.356466225321924
+      ],
+      "errors": [
+        0.03854454598216828,
+        0.04353377467807462
+      ],
+      "tolerance": 0.05491940368290067,
+      "passes": true
+    },
+    {
+      "ticker": "MU",
+      "line": 464,
+      "scenario": 1,
+      "horizon": 12,
+      "price": 1016.59,
+      "dividend": 0.6,
+      "exits": [
+        1045.1,
+        1258.4
+      ],
+      "reported": [
+        2.9,
+        23.8
+      ],
+      "recalculated": [
+        2.863494624184753,
+        23.84540473543906
+      ],
+      "errors": [
+        0.03650537581524693,
+        0.04540473543906032
+      ],
+      "tolerance": 0.05491940368290067,
+      "passes": true
+    },
+    {
+      "ticker": "MU",
+      "line": 465,
+      "scenario": 1,
+      "horizon": 36,
+      "price": 1016.59,
+      "dividend": 1.8,
+      "exits": [
+        1268.8,
+        1489.7
+      ],
+      "reported": [
+        25,
+        46.7
+      ],
+      "recalculated": [
+        24.986474389872,
+        46.7159818609272
+      ],
+      "errors": [
+        0.013525610127999244,
+        0.015981860927198
+      ],
+      "tolerance": 0.05491940368290067,
+      "passes": true
+    },
+    {
+      "ticker": "MU",
+      "line": 466,
+      "scenario": 2,
+      "horizon": 6,
+      "price": 1016.59,
+      "dividend": 0.3,
+      "exits": [
+        1997.9,
+        2588.6
+      ],
+      "reported": [
+        96.6,
+        154.7
+      ],
+      "recalculated": [
+        96.55908478344267,
+        154.6651058932313
+      ],
+      "errors": [
+        0.04091521655732322,
+        0.034894106768689426
+      ],
+      "tolerance": 0.05491940368290067,
+      "passes": true
+    },
+    {
+      "ticker": "MU",
+      "line": 467,
+      "scenario": 2,
+      "horizon": 12,
+      "price": 1016.59,
+      "dividend": 0.6,
+      "exits": [
+        2105.8,
+        2706
+      ],
+      "reported": [
+        107.2,
+        166.2
+      ],
+      "recalculated": [
+        107.20251035323975,
+        166.24302816277947
+      ],
+      "errors": [
+        0.002510353239742358,
+        0.04302816277947841
+      ],
+      "tolerance": 0.05491940368290067,
+      "passes": true
+    },
+    {
+      "ticker": "MU",
+      "line": 468,
+      "scenario": 2,
+      "horizon": 36,
+      "price": 1016.59,
+      "dividend": 1.8,
+      "exits": [
+        2570.1,
+        3208
+      ],
+      "reported": [
+        153,
+        215.7
+      ],
+      "recalculated": [
+        152.99284864104504,
+        215.74184282749195
+      ],
+      "errors": [
+        0.007151358954956777,
+        0.041842827491962
+      ],
+      "tolerance": 0.05491940368290067,
+      "passes": true
+    },
+    {
+      "ticker": "MU",
+      "line": 469,
+      "scenario": 3,
+      "horizon": 6,
+      "price": 1016.59,
+      "dividend": 0.3,
+      "exits": [
+        3223.6,
+        4360.4
+      ],
+      "reported": [
+        217.1,
+        329
+      ],
+      "recalculated": [
+        217.1288326660699,
+        328.9536588004997
+      ],
+      "errors": [
+        0.028832666069916968,
+        0.04634119950031845
+      ],
+      "tolerance": 0.05491940368290067,
+      "passes": true
+    },
+    {
+      "ticker": "MU",
+      "line": 470,
+      "scenario": 3,
+      "horizon": 12,
+      "price": 1016.59,
+      "dividend": 0.6,
+      "exits": [
+        3400.5,
+        4560.6
+      ],
+      "reported": [
+        234.6,
+        348.7
+      ],
+      "recalculated": [
+        234.5596553182699,
+        348.6764575689315
+      ],
+      "errors": [
+        0.040344681730090315,
+        0.023542431068506176
+      ],
+      "tolerance": 0.05491940368290067,
+      "passes": true
+    },
+    {
+      "ticker": "MU",
+      "line": 471,
+      "scenario": 3,
+      "horizon": 36,
+      "price": 1016.59,
+      "dividend": 1.8,
+      "exits": [
+        4175.5,
+        5428.6
+      ],
+      "reported": [
+        310.9,
+        434.2
+      ],
+      "recalculated": [
+        310.91295409162,
+        434.17798719247685
+      ],
+      "errors": [
+        0.01295409162003125,
+        0.022012807523140054
+      ],
+      "tolerance": 0.05491940368290067,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 440,
+      "scenario": 0,
+      "horizon": 6,
+      "price": 89.36,
+      "dividend": 0,
+      "exits": [
+        0,
+        0
+      ],
+      "reported": [
+        -100,
+        -100
+      ],
+      "recalculated": [
+        -100,
+        -100
+      ],
+      "errors": [
+        0,
+        0
+      ],
+      "tolerance": 0.055596344673231865,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 441,
+      "scenario": 0,
+      "horizon": 12,
+      "price": 89.36,
+      "dividend": 0,
+      "exits": [
+        0,
+        0
+      ],
+      "reported": [
+        -100,
+        -100
+      ],
+      "recalculated": [
+        -100,
+        -100
+      ],
+      "errors": [
+        0,
+        0
+      ],
+      "tolerance": 0.055596344673231865,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 442,
+      "scenario": 0,
+      "horizon": 36,
+      "price": 89.36,
+      "dividend": 0,
+      "exits": [
+        0,
+        0
+      ],
+      "reported": [
+        -100,
+        -100
+      ],
+      "recalculated": [
+        -100,
+        -100
+      ],
+      "errors": [
+        0,
+        0
+      ],
+      "tolerance": 0.055596344673231865,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 443,
+      "scenario": 1,
+      "horizon": 6,
+      "price": 89.36,
+      "dividend": 0,
+      "exits": [
+        12.3,
+        57.47
+      ],
+      "reported": [
+        -86.2,
+        -35.7
+      ],
+      "recalculated": [
+        -86.2354521038496,
+        -35.68710832587287
+      ],
+      "errors": [
+        0.035452103849593186,
+        0.012891674127132546
+      ],
+      "tolerance": 0.055596344673231865,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 444,
+      "scenario": 1,
+      "horizon": 12,
+      "price": 89.36,
+      "dividend": 0,
+      "exits": [
+        16.77,
+        62.53
+      ],
+      "reported": [
+        -81.2,
+        -30
+      ],
+      "recalculated": [
+        -81.2332139659803,
+        -30.024619516562225
+      ],
+      "errors": [
+        0.0332139659802948,
+        0.024619516562225385
+      ],
+      "tolerance": 0.055596344673231865,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 445,
+      "scenario": 1,
+      "horizon": 36,
+      "price": 89.36,
+      "dividend": 0,
+      "exits": [
+        41.21,
+        88.09
+      ],
+      "reported": [
+        -53.9,
+        -1.4
+      ],
+      "recalculated": [
+        -53.88316920322292,
+        -1.4212175470008788
+      ],
+      "errors": [
+        0.01683079677707866,
+        0.021217547000878856
+      ],
+      "tolerance": 0.055596344673231865,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 446,
+      "scenario": 2,
+      "horizon": 6,
+      "price": 89.36,
+      "dividend": 0,
+      "exits": [
+        94.22,
+        186.53
+      ],
+      "reported": [
+        5.4,
+        108.7
+      ],
+      "recalculated": [
+        5.438675022381375,
+        108.73992837958818
+      ],
+      "errors": [
+        0.038675022381374546,
+        0.039928379588175744
+      ],
+      "tolerance": 0.055596344673231865,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 447,
+      "scenario": 2,
+      "horizon": 12,
+      "price": 89.36,
+      "dividend": 0,
+      "exits": [
+        102.38,
+        195.45
+      ],
+      "reported": [
+        14.6,
+        118.7
+      ],
+      "recalculated": [
+        14.57027752909579,
+        118.72202327663382
+      ],
+      "errors": [
+        0.02972247090420943,
+        0.02202327663381709
+      ],
+      "tolerance": 0.055596344673231865,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 448,
+      "scenario": 2,
+      "horizon": 36,
+      "price": 89.36,
+      "dividend": 0,
+      "exits": [
+        143.09,
+        238.79
+      ],
+      "reported": [
+        60.1,
+        167.2
+      ],
+      "recalculated": [
+        60.12757385854971,
+        167.22247090420768
+      ],
+      "errors": [
+        0.027573858549708063,
+        0.02247090420769382
+      ],
+      "tolerance": 0.055596344673231865,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 449,
+      "scenario": 3,
+      "horizon": 6,
+      "price": 89.36,
+      "dividend": 0,
+      "exits": [
+        163.91,
+        315.4
+      ],
+      "reported": [
+        83.4,
+        253
+      ],
+      "recalculated": [
+        83.4265890778872,
+        252.95434198746642
+      ],
+      "errors": [
+        0.02658907788719489,
+        0.04565801253357904
+      ],
+      "tolerance": 0.055596344673231865,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 450,
+      "scenario": 3,
+      "horizon": 12,
+      "price": 89.36,
+      "dividend": 0,
+      "exits": [
+        175.23,
+        326.43
+      ],
+      "reported": [
+        96.1,
+        265.3
+      ],
+      "recalculated": [
+        96.09444941808414,
+        265.29767233661596
+      ],
+      "errors": [
+        0.005550581915855446,
+        0.002327663384050993
+      ],
+      "tolerance": 0.055596344673231865,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 451,
+      "scenario": 3,
+      "horizon": 36,
+      "price": 89.36,
+      "dividend": 0,
+      "exits": [
+        233.57,
+        387.04
+      ],
+      "reported": [
+        161.4,
+        333.1
+      ],
+      "recalculated": [
+        161.3809310653536,
+        333.1244404655327
+      ],
+      "errors": [
+        0.019068934646412572,
+        0.024440465532677536
+      ],
+      "tolerance": 0.055596344673231865,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 450,
+      "scenario": 0,
+      "horizon": 6,
+      "price": 1740,
+      "dividend": 0,
+      "exits": [
+        535,
+        598
+      ],
+      "reported": [
+        -69.2,
+        -65.6
+      ],
+      "recalculated": [
+        -69.2528735632184,
+        -65.63218390804597
+      ],
+      "errors": [
+        0.05287356321839809,
+        0.03218390804597959
+      ],
+      "tolerance": 0.07873663218390804,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 451,
+      "scenario": 0,
+      "horizon": 12,
+      "price": 1740,
+      "dividend": 0,
+      "exits": [
+        559,
+        623
+      ],
+      "reported": [
+        -67.9,
+        -64.2
+      ],
+      "recalculated": [
+        -67.87356321839081,
+        -64.19540229885058
+      ],
+      "errors": [
+        0.02643678160919194,
+        0.004597701149421596
+      ],
+      "tolerance": 0.07873663218390804,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 452,
+      "scenario": 0,
+      "horizon": 36,
+      "price": 1740,
+      "dividend": 0,
+      "exits": [
+        666,
+        735
+      ],
+      "reported": [
+        -61.7,
+        -57.7
+      ],
+      "recalculated": [
+        -61.724137931034484,
+        -57.758620689655174
+      ],
+      "errors": [
+        0.02413793103448114,
+        0.05862068965517153
+      ],
+      "tolerance": 0.07873663218390804,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 453,
+      "scenario": 1,
+      "horizon": 6,
+      "price": 1740,
+      "dividend": 0,
+      "exits": [
+        1455,
+        1854
+      ],
+      "reported": [
+        -16.4,
+        6.5
+      ],
+      "recalculated": [
+        -16.379310344827587,
+        6.551724137931032
+      ],
+      "errors": [
+        0.020689655172411392,
+        0.05172413793103203
+      ],
+      "tolerance": 0.07873663218390804,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 454,
+      "scenario": 1,
+      "horizon": 12,
+      "price": 1740,
+      "dividend": 0,
+      "exits": [
+        1532,
+        1945
+      ],
+      "reported": [
+        -12,
+        11.8
+      ],
+      "recalculated": [
+        -11.954022988505756,
+        11.781609195402297
+      ],
+      "errors": [
+        0.04597701149424438,
+        0.018390804597704147
+      ],
+      "tolerance": 0.07873663218390804,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 455,
+      "scenario": 1,
+      "horizon": 36,
+      "price": 1740,
+      "dividend": 0,
+      "exits": [
+        1848,
+        2321
+      ],
+      "reported": [
+        6.2,
+        33.4
+      ],
+      "recalculated": [
+        6.206896551724128,
+        33.390804597701134
+      ],
+      "errors": [
+        0.006896551724127953,
+        0.009195402298864508
+      ],
+      "tolerance": 0.07873663218390804,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 456,
+      "scenario": 2,
+      "horizon": 6,
+      "price": 1740,
+      "dividend": 0,
+      "exits": [
+        2827,
+        3989
+      ],
+      "reported": [
+        62.5,
+        129.2
+      ],
+      "recalculated": [
+        62.471264367816104,
+        129.2528735632184
+      ],
+      "errors": [
+        0.028735632183895632,
+        0.0528735632184123
+      ],
+      "tolerance": 0.07873663218390804,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 457,
+      "scenario": 2,
+      "horizon": 12,
+      "price": 1740,
+      "dividend": 0,
+      "exits": [
+        2996,
+        4209
+      ],
+      "reported": [
+        72.2,
+        141.9
+      ],
+      "recalculated": [
+        72.183908045977,
+        141.8965517241379
+      ],
+      "errors": [
+        0.0160919540229969,
+        0.0034482758620981713
+      ],
+      "tolerance": 0.07873663218390804,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 458,
+      "scenario": 2,
+      "horizon": 36,
+      "price": 1740,
+      "dividend": 0,
+      "exits": [
+        3685,
+        5107
+      ],
+      "reported": [
+        111.8,
+        193.5
+      ],
+      "recalculated": [
+        111.7816091954023,
+        193.5057471264368
+      ],
+      "errors": [
+        0.018390804597700594,
+        0.005747126436801864
+      ],
+      "tolerance": 0.07873663218390804,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 459,
+      "scenario": 3,
+      "horizon": 6,
+      "price": 1740,
+      "dividend": 0,
+      "exits": [
+        3428,
+        4781
+      ],
+      "reported": [
+        97,
+        174.8
+      ],
+      "recalculated": [
+        97.01149425287358,
+        174.77011494252872
+      ],
+      "errors": [
+        0.011494252873575306,
+        0.02988505747129011
+      ],
+      "tolerance": 0.07873663218390804,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 460,
+      "scenario": 3,
+      "horizon": 12,
+      "price": 1740,
+      "dividend": 0,
+      "exits": [
+        3646,
+        5060
+      ],
+      "reported": [
+        109.6,
+        190.8
+      ],
+      "recalculated": [
+        109.54022988505744,
+        190.80459770114942
+      ],
+      "errors": [
+        0.0597701149425518,
+        0.004597701149407385
+      ],
+      "tolerance": 0.07873663218390804,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 461,
+      "scenario": 3,
+      "horizon": 36,
+      "price": 1740,
+      "dividend": 0,
+      "exits": [
+        4528,
+        6185
+      ],
+      "reported": [
+        160.2,
+        255.5
+      ],
+      "recalculated": [
+        160.22988505747128,
+        255.45977011494256
+      ],
+      "errors": [
+        0.02988505747129011,
+        0.040229885057442516
+      ],
+      "tolerance": 0.07873663218390804,
+      "passes": true
+    },
+    {
+      "ticker": "AVGO",
+      "line": 438,
+      "scenario": 0,
+      "horizon": 6,
+      "price": 357.9,
+      "dividend": 1.3,
+      "exits": [
+        87.5,
+        110.6
+      ],
+      "reported": [
+        -75.2,
+        -68.7
+      ],
+      "recalculated": [
+        -75.1886001676446,
+        -68.73428331936294
+      ],
+      "errors": [
+        0.011399832355408535,
+        0.03428331936294171
+      ],
+      "tolerance": 0.0639713827884884,
+      "passes": true
+    },
+    {
+      "ticker": "AVGO",
+      "line": 439,
+      "scenario": 0,
+      "horizon": 12,
+      "price": 357.9,
+      "dividend": 2.6,
+      "exits": [
+        91.1,
+        114.4
+      ],
+      "reported": [
+        -73.8,
+        -67.3
+      ],
+      "recalculated": [
+        -73.81950265437273,
+        -67.30930427493713
+      ],
+      "errors": [
+        0.019502654372729467,
+        0.00930427493713637
+      ],
+      "tolerance": 0.0639713827884884,
+      "passes": true
+    },
+    {
+      "ticker": "AVGO",
+      "line": 440,
+      "scenario": 0,
+      "horizon": 36,
+      "price": 357.9,
+      "dividend": 7.8,
+      "exits": [
+        106.8,
+        130.8
+      ],
+      "reported": [
+        -68,
+        -61.3
+      ],
+      "recalculated": [
+        -67.97988264878458,
+        -61.27409891031013
+      ],
+      "errors": [
+        0.020117351215418466,
+        0.025901089689867263
+      ],
+      "tolerance": 0.0639713827884884,
+      "passes": true
+    },
+    {
+      "ticker": "AVGO",
+      "line": 441,
+      "scenario": 1,
+      "horizon": 6,
+      "price": 357.9,
+      "dividend": 1.3,
+      "exits": [
+        334.6,
+        455.3
+      ],
+      "reported": [
+        -6.2,
+        27.6
+      ],
+      "recalculated": [
+        -6.14696842693489,
+        27.57753562447614
+      ],
+      "errors": [
+        0.05303157306510986,
+        0.02246437552386027
+      ],
+      "tolerance": 0.0639713827884884,
+      "passes": true
+    },
+    {
+      "ticker": "AVGO",
+      "line": 442,
+      "scenario": 1,
+      "horizon": 12,
+      "price": 357.9,
+      "dividend": 2.6,
+      "exits": [
+        351.8,
+        475.1
+      ],
+      "reported": [
+        -1,
+        33.5
+      ],
+      "recalculated": [
+        -0.977926795194179,
+        33.47303716121823
+      ],
+      "errors": [
+        0.02207320480582098,
+        0.026962838781770415
+      ],
+      "tolerance": 0.0639713827884884,
+      "passes": true
+    },
+    {
+      "ticker": "AVGO",
+      "line": 443,
+      "scenario": 1,
+      "horizon": 36,
+      "price": 357.9,
+      "dividend": 7.8,
+      "exits": [
+        426.8,
+        560.3
+      ],
+      "reported": [
+        21.4,
+        58.7
+      ],
+      "recalculated": [
+        21.430567197541222,
+        58.73148924280525
+      ],
+      "errors": [
+        0.030567197541223834,
+        0.03148924280525023
+      ],
+      "tolerance": 0.0639713827884884,
+      "passes": true
+    },
+    {
+      "ticker": "AVGO",
+      "line": 444,
+      "scenario": 2,
+      "horizon": 6,
+      "price": 357.9,
+      "dividend": 1.3,
+      "exits": [
+        530.8,
+        746.2
+      ],
+      "reported": [
+        48.7,
+        108.9
+      ],
+      "recalculated": [
+        48.672813635093604,
+        108.85722268790167
+      ],
+      "errors": [
+        0.027186364906398808,
+        0.04277731209833746
+      ],
+      "tolerance": 0.0639713827884884,
+      "passes": true
+    },
+    {
+      "ticker": "AVGO",
+      "line": 445,
+      "scenario": 2,
+      "horizon": 12,
+      "price": 357.9,
+      "dividend": 2.6,
+      "exits": [
+        559.1,
+        779.8
+      ],
+      "reported": [
+        57,
+        118.6
+      ],
+      "recalculated": [
+        56.94328024587875,
+        118.60854987426657
+      ],
+      "errors": [
+        0.056719754121246524,
+        0.008549874266577717
+      ],
+      "tolerance": 0.0639713827884884,
+      "passes": true
+    },
+    {
+      "ticker": "AVGO",
+      "line": 446,
+      "scenario": 2,
+      "horizon": 36,
+      "price": 357.9,
+      "dividend": 7.8,
+      "exits": [
+        684,
+        926.1
+      ],
+      "reported": [
+        93.3,
+        160.9
+      ],
+      "recalculated": [
+        93.29421626152558,
+        160.93880972338638
+      ],
+      "errors": [
+        0.005783738474420375,
+        0.03880972338637889
+      ],
+      "tolerance": 0.0639713827884884,
+      "passes": true
+    },
+    {
+      "ticker": "AVGO",
+      "line": 447,
+      "scenario": 3,
+      "horizon": 6,
+      "price": 357.9,
+      "dividend": 1.3,
+      "exits": [
+        713.3,
+        1040.3
+      ],
+      "reported": [
+        99.7,
+        191
+      ],
+      "recalculated": [
+        99.66471081307625,
+        191.03101424979047
+      ],
+      "errors": [
+        0.03528918692374816,
+        0.031014249790473514
+      ],
+      "tolerance": 0.0639713827884884,
+      "passes": true
+    },
+    {
+      "ticker": "AVGO",
+      "line": 448,
+      "scenario": 3,
+      "horizon": 12,
+      "price": 357.9,
+      "dividend": 2.6,
+      "exits": [
+        752.1,
+        1088
+      ],
+      "reported": [
+        110.9,
+        204.7
+      ],
+      "recalculated": [
+        110.868957809444,
+        204.7219893825091
+      ],
+      "errors": [
+        0.031042190556007654,
+        0.02198938250910487
+      ],
+      "tolerance": 0.0639713827884884,
+      "passes": true
+    },
+    {
+      "ticker": "AVGO",
+      "line": 449,
+      "scenario": 3,
+      "horizon": 36,
+      "price": 357.9,
+      "dividend": 7.8,
+      "exits": [
+        924.6,
+        1297.1
+      ],
+      "reported": [
+        160.5,
+        264.6
+      ],
+      "recalculated": [
+        160.51969823973178,
+        264.5990500139704
+      ],
+      "errors": [
+        0.019698239731781086,
+        0.0009499860296386942
+      ],
+      "tolerance": 0.0639713827884884,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 469,
+      "scenario": 0,
+      "horizon": 6,
+      "price": 170.57,
+      "dividend": 0,
+      "exits": [
+        32,
+        42.4
+      ],
+      "reported": [
+        -81.3,
+        -75.1
+      ],
+      "recalculated": [
+        -81.23937386410272,
+        -75.1421703699361
+      ],
+      "errors": [
+        0.060626135897280164,
+        0.04217036993610179
+      ],
+      "tolerance": 0.07931447833733951,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 470,
+      "scenario": 0,
+      "horizon": 12,
+      "price": 170.57,
+      "dividend": 0,
+      "exits": [
+        33.6,
+        44.2
+      ],
+      "reported": [
+        -80.3,
+        -74.1
+      ],
+      "recalculated": [
+        -80.30134255730785,
+        -74.08688514979187
+      ],
+      "errors": [
+        0.0013425573078507114,
+        0.013114850208125972
+      ],
+      "tolerance": 0.07931447833733951,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 471,
+      "scenario": 0,
+      "horizon": 36,
+      "price": 170.57,
+      "dividend": 0,
+      "exits": [
+        40,
+        51.2
+      ],
+      "reported": [
+        -76.5,
+        -70
+      ],
+      "recalculated": [
+        -76.54921733012839,
+        -69.98299818256433
+      ],
+      "errors": [
+        0.049217330128385584,
+        0.017001817435669864
+      ],
+      "tolerance": 0.07931447833733951,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 472,
+      "scenario": 1,
+      "horizon": 6,
+      "price": 170.57,
+      "dividend": 0,
+      "exits": [
+        114.8,
+        171.2
+      ],
+      "reported": [
+        -32.7,
+        0.4
+      ],
+      "recalculated": [
+        -32.69625373746848,
+        0.3693498270504847
+      ],
+      "errors": [
+        0.003746262531521438,
+        0.03065017294951533
+      ],
+      "tolerance": 0.07931447833733951,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 473,
+      "scenario": 1,
+      "horizon": 12,
+      "price": 170.57,
+      "dividend": 0,
+      "exits": [
+        121.7,
+        179.3
+      ],
+      "reported": [
+        -28.7,
+        5.1
+      ],
+      "recalculated": [
+        -28.65099372691563,
+        5.118133317699474
+      ],
+      "errors": [
+        0.04900627308436967,
+        0.01813331769947446
+      ],
+      "tolerance": 0.07931447833733951,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 474,
+      "scenario": 1,
+      "horizon": 36,
+      "price": 170.57,
+      "dividend": 0,
+      "exits": [
+        150.9,
+        213.5
+      ],
+      "reported": [
+        -11.5,
+        25.2
+      ],
+      "recalculated": [
+        -11.531922377909353,
+        25.168552500439702
+      ],
+      "errors": [
+        0.03192237790935337,
+        0.03144749956029713
+      ],
+      "tolerance": 0.07931447833733951,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 475,
+      "scenario": 2,
+      "horizon": 6,
+      "price": 170.57,
+      "dividend": 0,
+      "exits": [
+        212.8,
+        331.4
+      ],
+      "reported": [
+        24.8,
+        94.3
+      ],
+      "recalculated": [
+        24.758163803716954,
+        94.28973441988626
+      ],
+      "errors": [
+        0.04183619628304669,
+        0.010265580113738793
+      ],
+      "tolerance": 0.07931447833733951,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 476,
+      "scenario": 2,
+      "horizon": 12,
+      "price": 170.57,
+      "dividend": 0,
+      "exits": [
+        225.8,
+        347.3
+      ],
+      "reported": [
+        32.4,
+        103.6
+      ],
+      "recalculated": [
+        32.37966817142524,
+        103.61142053116023
+      ],
+      "errors": [
+        0.020331828574761346,
+        0.011420531160240444
+      ],
+      "tolerance": 0.07931447833733951,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 477,
+      "scenario": 2,
+      "horizon": 36,
+      "price": 170.57,
+      "dividend": 0,
+      "exits": [
+        282.8,
+        416
+      ],
+      "reported": [
+        65.8,
+        143.9
+      ],
+      "recalculated": [
+        65.7970334759923,
+        143.8881397666647
+      ],
+      "errors": [
+        0.002966524007703697,
+        0.011860233335312387
+      ],
+      "tolerance": 0.07931447833733951,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 478,
+      "scenario": 3,
+      "horizon": 6,
+      "price": 170.57,
+      "dividend": 0,
+      "exits": [
+        309.6,
+        492.9
+      ],
+      "reported": [
+        81.5,
+        189
+      ],
+      "recalculated": [
+        81.50905786480627,
+        188.97226944949284
+      ],
+      "errors": [
+        0.009057864806266025,
+        0.027730550507158114
+      ],
+      "tolerance": 0.07931447833733951,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 479,
+      "scenario": 3,
+      "horizon": 12,
+      "price": 170.57,
+      "dividend": 0,
+      "exits": [
+        328.7,
+        516.7
+      ],
+      "reported": [
+        92.7,
+        203
+      ],
+      "recalculated": [
+        92.70680658966992,
+        202.92548513806656
+      ],
+      "errors": [
+        0.006806589669920982,
+        0.07451486193343726
+      ],
+      "tolerance": 0.07931447833733951,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 480,
+      "scenario": 3,
+      "horizon": 36,
+      "price": 170.57,
+      "dividend": 0,
+      "exits": [
+        413.5,
+        620.5
+      ],
+      "reported": [
+        142.4,
+        263.8
+      ],
+      "recalculated": [
+        142.42246584979776,
+        263.78026616638334
+      ],
+      "errors": [
+        0.022465849797754345,
+        0.01973383361666947
+      ],
+      "tolerance": 0.07931447833733951,
+      "passes": true
+    }
+  ]
+}

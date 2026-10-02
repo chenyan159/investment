@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "input_boundary_unchanged": true,
+    "date_and_horizon_contract_unchanged": true,
+    "business_model_section_preserved": true,
+    "annual_opportunity_and_joint_cash_model_preserved": true,
+    "four_scenarios_and_common_model_requirements_preserved": true,
+    "valuation_formulas_and_target_date_capital_bridge_preserved": true,
+    "matrix_and_twelve_cell_contract_unchanged": true,
+    "report_output_contract_unchanged": true,
+    "nine_numbered_chapters": true,
+    "company_plan_unchanged": true,
+    "original_backup_matches_pre_edit_hash": true,
+    "no_case_specific_or_iteration_instructions": true
+  },
+  "characters_before": 16173,
+  "characters_after": 17415,
+  "character_change_percent": 7.68,
+  "current_sha256": "E3A89EE326581733723AB73014FFE785A28C5D16119CB15EA34B2FF029859A51",
+  "company_plan_sha256": "047EF9E4219B899E7A660F871A83CC69587782A97668789694518463117CD59B",
+  "scope": "Formal edit: scenario plan only. Company research plan reviewed without modification. No runner or queue changes; no research run performed."
+}

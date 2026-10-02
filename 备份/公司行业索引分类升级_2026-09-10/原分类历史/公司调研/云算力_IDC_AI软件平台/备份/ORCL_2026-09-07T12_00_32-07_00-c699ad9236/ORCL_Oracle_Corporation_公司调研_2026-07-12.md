@@ -1,0 +1,500 @@
+# 公司：ORCL Oracle Corporation（甲骨文公司）全面尽调
+
+> 研究截止日：2026-07-12（America/Los_Angeles）。股价采用最近交易日 2026-07-10 收盘快照；财务主口径为截至 2026-05-31 的 FY2026 10-K 与 2026-06-10 发布的 FY2026Q4 财报。金额若无特别说明均为美元。  
+> 证据边界：公司事实优先使用 Oracle/SEC/产品文档；行业校准仅使用项目内 `基本面/行业调研/` 的相关产业资料。Oracle 不披露 AI 基础设施、Multicloud Database、Oracle Health 等产品的绝对收入，相关数字均以区间表示，并明确标注为本报告模型估算。  
+> 核心口径：RPO、bookings、收入、CapEx、客户自供硬件是不同状态，不能相加；客户自供 GPU 不属于 Oracle 自有 CapEx，也不能把全部 RPO 当成 AI 订单或一年收入。
+
+## 一、结论先行
+
+1. **Oracle 已从“高毛利数据库/维护现金牛”转成“数据库与应用现金牛为 AI 云扩张融资”的双重公司。** FY2026 收入 **673.57 亿美元、同比 +17%**；OCI IaaS **181.01 亿美元、+77%**，已是几乎全部增量的来源；软件仍有 **245.41 亿美元**收入，但同比 **-1%**。投资者不再只给 Oracle 传统数据库估值，而是在“AI 云订单兑现”与“债务、稀释、负自由现金流”之间定价。
+2. **需求端极强，收入端仍处于交付初段。** FY2026Q4 RPO 达 **6,380 亿美元、同比 +363%**，但 10-K 预计仅约 **12%（约 765.6 亿美元）**在未来 12 个月确认；34%在第 13–36 个月、34%在第 37–60 个月、余下约 20%更晚。Oracle 当季签下 **670 亿美元 AI 基础设施合同**，四个客户各签约超过 80 亿美元；这是真实合同强度，但绝不是 FY2027 当年收入。
+3. **供应端正在高速扩张，仍受电力、机房、整架制造、GPU/内存/网络共同约束。** FY2026 已向客户交付 **>1.2GW**，FY2027Q1 计划交付接近 **1GW**；截至 2026Q3 管理层称未来三年已锁定 **>10GW** 电力与数据中心容量，机架产出同比提高 **4 倍**、制造站点增至原来的 **3 倍**、机架到收入的时间缩短 **60%**。Q4 全球 GPU 利用率 **97.5%**，显示当前仍接近满载。
+4. **现有 AI 云经济性可盈利，但明显低于传统软件。** 管理层披露 FY2026Q3 新交付 AI 容量毛利率 **32%**，长期 AI 基础设施毛利率目标约 **30%–40%**。公司整体 GAAP 毛利率已由 FY2025Q4 的约 **70.2%**降至 FY2026Q4 的约 **65.2%**，正是低毛利 IaaS 混合占比上升的结果。规模能增加毛利美元，但不应假设 OCI 会复制维护软件的 80%+毛利。
+5. **资产负债表可运行，但不再“保守”。** 2026-05-31 现金及有价证券 **318.94 亿美元**，有息借款 **1,295.41 亿美元**，净债务约 **976.47 亿美元**；FY2026 经营现金流 **319.77 亿美元**，但 CapEx **556.63 亿美元**，自由现金流 **-236.86 亿美元**。此外，尚未入表、主要与数据中心有关的租赁承诺达 **2,600 亿美元**，期限多为 15–19 年。结论是：**短期流动性尚可、偿息尚可，长期资本与客户信用风险显著提高，财务健康度为“中等偏弱/可控但高杠杆”。**
+6. **数据库的护城河比通用 GPU 租赁更强。** Oracle Multicloud AI Database Q4 增长 **404%**，Q3 增长 **531%**；它把 Exadata、Autonomous AI Database 和 Oracle AI Database 26ai 直接放进 AWS/Azure/Google 数据中心，既利用对手分发，又保留 Oracle 数据库经济。企业 PL/SQL、RAC、Exadata、数据治理和合规依赖令替换成本很高，毛利也显著高于 GPU 云。
+7. **未来一年最关键的判断不是“AI 有没有需求”，而是五件事能否同时成立：** RPO 按期转收入；OpenAI 等大客户融资与付款持续；1H/2H27 五大站点按期交付；AI 容量毛利守住 30%–40%；新增债务/股权融资不破坏每股价值。基准情景采用公司 FY2027 收入指引 **900 亿美元（+33.6%）**；乐观情景 **960–1,000 亿美元**；极度乐观情景 **1,070–1,130 亿美元**。
+
+## 二、公司整体业务、投资者定位与产业链位置
+
+### 2.1 业务全景
+
+Oracle 是企业 IT 的全栈供应商，覆盖“算力基础设施—数据库/中间件—业务应用—行业软件—实施服务”。FY2026 公司按对外收入分为五个可分析层：
+
+| 业务层 | FY2026 收入 | 同比 | 占总收入 | 核心产品/作用 | 产业链位置 |
+|---|---:|---:|---:|---|---|
+| OCI Cloud Infrastructure（IaaS） | **181.01 亿** | **+77%** | **26.9%** | GPU/CPU bare metal、Supercluster、RDMA/Acceleron 网络、存储、数据库云、分布式云 | AI 模型公司、企业和政府的算力运营商；同时是 NVIDIA/AMD/服务器/网络/电力的最终买方 |
+| Cloud Applications（SaaS） | **158.88 亿** | **+11%** | **23.6%** | Fusion ERP/HCM/SCM/CX/EPM、NetSuite、Oracle Health | 企业交易系统与行业应用平台，掌握高粘性业务数据和工作流 |
+| Software（license + support） | **245.41 亿** | **-1%** | **36.4%** | Oracle AI Database、Java、MySQL、Fusion Middleware、传统应用维护 | 企业核心数据库/中间件的存量授权与维护现金牛 |
+| Hardware | **30.84 亿** | **+5%** | **4.6%** | Exadata X11M、数据库/存储服务器、SPARC、行业硬件 | 数据库优化硬件与 Cloud@Customer 交付载体；Exadata 是战略核心 |
+| Services | **57.43 亿** | **+10%** | **8.5%** | 咨询、实施、客户成功、教育 | 帮助数据库、SaaS、Health 与云迁移落地；毛利最低 |
+| **合计** | **673.57 亿** | **+17%** | **100%** |  |  |
+
+Oracle 的独特产业位置不是单纯“第四大公有云”：
+
+- 向上游采购 GPU/CPU、HBM/DRAM/SSD、网络交换机/网卡/光模块、液冷与电力设施，承担超大规模数据中心资本开支；
+- 在中层自研 Acceleron 网络、云控制面、安全、数据库和 Exadata，将通用硬件组合成可计费的 OCI 服务；
+- 向下游服务 OpenAI、Meta、NVIDIA、xAI、TikTok、AMD 等大客户，也服务传统企业、政府、医疗与金融机构；
+- 通过 Database@AWS/Azure/Google 把 Oracle 数据库嵌入竞争对手云内，形成“竞争公有云、合作数据库分发”的双重关系；
+- Fusion、NetSuite、Oracle Health 又把企业交易数据和行业工作流带回 OCI/AI Database，形成应用—数据库—基础设施交叉销售。
+
+### 2.2 投资者心中的 Oracle
+
+| 阶段 | 典型认知 | 决定估值的指标 |
+|---|---|---|
+| 传统阶段 | 数据库垄断、高续费、高毛利、低增长、强回购的成熟软件公司 | 维护续费、数据库份额、营业利润率、FCF |
+| 2023–2024 | Cerner 整合 + OCI 追赶；云转型能否抵消 license 下滑 | OCI 增速、Fusion/NetSuite、Cerner 改善、CapEx |
+| 2025–2026 | OpenAI/Stargate 等大单把 Oracle 变成 AI 云基础设施重资产运营商 | RPO、MW 交付、GPU 利用率、AI 容量毛利、债务/租赁承诺、客户信用 |
+| 当前股价所反映的矛盾 | 前向 P/E 已回落至约 18 倍，增长看似便宜；但 FCF 为负、资产久期和客户集中风险大幅上升 | RPO 兑现率、FY27 900 亿收入、融资规模、OpenAI 付款能力、毛利率 |
+
+因此，Oracle 既不是纯软件公司，也不能只按数据中心运营商看待。正确拆分是：**高护城河数据库/应用利润池 + 高增长但资本密集的 AI IaaS + 高杠杆交付平台**。
+
+### 2.3 最近三年的重大变化、转型和资本动作
+
+| 时间 | 变化 | 战略意义 |
+|---|---|---|
+| 2023–2024 | Oracle Database@Azure GA，随后与 Google Cloud、AWS 建立 Database@Cloud；数据库从“只能在 OCI 获得完整能力”转为嵌入三大云 | 降低客户迁移阻力，扩大 Oracle 数据库可服务市场；竞争关系变为“云层竞争、数据库层合作” |
+| 2023–2025 | 继续消化 2022 年约 283 亿美元收购 Cerner，重构为 Oracle Health，并建设 OCI 原生、AI-first EHR | 将公司从通用企业软件扩到医疗核心系统；带来长期高粘性，但迁移、客户满意度和执行复杂度高 |
+| 2024–2026 | OCI 从普通云容量扩张为 AI Supercluster/Stargate GW 级建设；FY2026 IaaS 增长 77%，RPO 从 FY2025Q4 的 1,380 亿跃升至 6,380 亿 | 公司增长引擎和资产结构彻底改变；订单可见性上升，资本与信用风险同步上升 |
+| 2025-09 | Clay Magouyrk 与 Mike Sicilia 升任联席 CEO；Safra Catz 转任董事会执行副主席 | 管理重心明确转向 OCI/AI 基础设施、AI Database 与行业应用；同时带来交接风险 |
+| FY2026 | Oracle 出售 Ampere 持股，确认约 27 亿美元税前收益；SoftBank 对 Ampere 的整体交易估值 65 亿美元 | 放弃持有通用 Arm CPU 设计公司的资本占用，转向“芯片中立”采购 NVIDIA、AMD、Cerebras、Positron 等；Q2 净利润受一次性收益显著抬高 |
+| FY2026 | 全球全职员工由约 16.2 万降至 14.1 万，减少约 2.1 万；FY2026 重组费用 18.38 亿美元 | 利用 AI 编码与组织重构降低软件研发/销售成本，为基础设施扩张腾挪利润；短期可能伤害交付与客户支持 |
+| 2026-01 | TikTok USDS 合资落地，Oracle、Silver Lake、MGX 各持 15%；美国用户数据继续由 Oracle 系统承载 | 增加战略客户、数据托管和治理地位，但投资回报、监管与政治风险仍需跟踪 |
+
+### 2.4 估值与盈利快照
+
+| 指标 | 最新值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | **140.64 美元** | 2026-07-10 收盘 | 2026-07-12 为周日，采用最近交易日 |
+| 市值 | **4,095.4 亿美元** | 2026-07-10 | 市场数据快照 |
+| TTM GAAP P/E | **25.25×（行情源）/ 24.12×（机械计算）** | 2026-07-10 | 行情源的 TTM 口径为 25.25×；用 140.64 美元股价 / FY2026 GAAP diluted EPS 5.83 美元直接计算为 24.12×，差异来自数据源的 TTM EPS/股数更新时点 |
+| Forward P/E（forward PE） | **约 17.5–17.9×** | 2026-07-10 | 第三方一致预期约 17.9×；按公司 FY2027 non-GAAP EPS 8.05 美元直接计算为 17.47×，二者口径接近 |
+| P/S | **约 6.08×** | 2026-07-10 | 4,095.4 亿市值 / FY2026 收入 673.57 亿；不含净债务 |
+| FY2026 收入增速 | **+17%** | 截至 2026-05-31 | 最新季度 +21%；FY2027 指引 +33.6%至 900 亿美元 |
+| GAAP 毛利率 | **65.82%** | FY2026 | 由收入减去 cloud/software、hardware、services 直接成本推导；FY2026Q4 约 65.2% |
+| GAAP 营业利润率 | **30.6%** | FY2026 | 营业利润 206.06 亿 / 收入 673.57 亿 |
+| GAAP 净利率 | **25.37%** | FY2026 | 净利润 170.87 亿 / 收入 673.57 亿；含 Ampere/Bloom 等一次性投资收益 |
+
+估值解读：17.5–17.9 倍 forward P/E 对一家管理层指引收入增长 34%的公司不高，但该倍数使用 non-GAAP EPS，且没有体现负 FCF、净债务与 2,600 亿美元未入表租赁承诺。P/S 约 6.1 倍也会随着低毛利 IaaS 占比上升而失去与历史纯软件时期的可比性。
+
+### 2.5 资产负债表与财务健康度
+
+| 项目 | 2026-05-31 | 2025-05-31 | 变化/解读 |
+|---|---:|---:|---|
+| 现金及现金等价物 | **312.89 亿** | 107.86 亿 | 通过债务/股权融资显著补充 |
+| 有价证券 | **6.05 亿** | 4.17 亿 | 流动性补充较小 |
+| 应收账款 | **103.85 亿** | 85.58 亿 | 随收入和大客户规模上升 |
+| 流动资产 | **465.67 亿** | 245.79 亿 |  |
+| 流动负债 | **417.64 亿** | 326.43 亿 | 流动比率约 **1.12×**；速动比率约 **1.01×** |
+| PP&E 净额 | **999.57 亿** | 435.22 亿 | 一年增加 564.35 亿，重资产转型最直接证据 |
+| 有息借款（流动+非流动） | **1,295.41 亿** | 925.68 亿 | 增加约 369.73 亿；净债务约 **976.47 亿** |
+| 经营租赁负债（非流动） | **266.48 亿** | 115.36 亿 | 尚未包括未来未起租的 2,600 亿承诺 |
+| 股东权益 | **430.56 亿** | 209.69 亿 | 受利润、融资和强势资产增长影响 |
+| FY2026 经营现金流 | **319.77 亿** | 208.21 亿 | +54%，核心业务现金生成仍强 |
+| FY2026 CapEx | **556.63 亿** | 212.15 亿 | +162%；公司此前约 500 亿指引被实际支出超过 |
+| FY2026 FCF | **-236.86 亿** | -3.94 亿 | 连续大规模建设导致显著负 FCF |
+| 未入表数据中心租赁承诺 | **2,600 亿** | 434 亿 | 预计 FY2027Q1–FY2029 起租，多为 15–19 年 |
+
+关键比率（本报告计算）：
+
+- 净债务/粗略 EBITDA ≈ **3.3×**；若加入非流动经营租赁负债，约 **4.2×**。
+- GAAP 营业利润/利息费用 = 206.06/45.99 ≈ **4.48×**，尚可但安全垫明显低于传统 Oracle。
+- 有息债务/权益 ≈ **3.0×**；FY2027 还计划通过债务和股权合计再筹约 **400 亿美元**，其中包括已宣布的 **200 亿美元 ATM 股权发行**。
+- FY2026 取得 **46 亿美元**带重大融资成分的客户预付款；管理层所称 **750 亿美元**“预付或客户自供硬件”并不等于 750 亿现金已进入 Oracle，必须区分现金预付与客户直接持有/供应 GPU。
+
+**健康度结论：5.5/10。** Oracle 没有短期偿付危机：现金接近 313 亿、OCF 接近 320 亿、利息覆盖 4.5 倍、还有 100 亿美元循环信贷。但风险已经从传统软件公司的运营风险，转成长期租约、GPU 折旧、项目交付、大客户信用与资本市场再融资的组合风险。若 FY2027 900 亿收入和 30%–40% AI 容量毛利兑现，杠杆可被快速增长吸收；若 OpenAI 等客户延迟、取消或重谈，15–19 年租赁与电力义务将比 GPU 合同更长久。
+
+## 三、最新五次财报：收入、利润、订单与交付
+
+### 3.1 五季收入与增速
+
+| 财报季度（截止日） | 总收入/同比 | OCI IaaS | SaaS | Software | Hardware | Services | GAAP 营业利润/率 | GAAP 净利润/率 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| **FY2025Q4**（2025-05-31） | **159.03 亿 / +11%** | **29.95 亿 / +52%** | **37.42 亿 / +12%** | **69.68 亿 / +3%** | **8.50 亿 / +1%** | **13.48 亿 / -2%** | **51.09 亿 / 32.1%** | **34.27 亿 / 21.5%** |
+| **FY2026Q1**（2025-08-31） | **149.26 亿 / +12%** | **33.47 亿 / +55%** | **38.39 亿 / +11%** | **57.21 亿 / -1%** | **6.70 亿 / +2%** | **13.49 亿 / +7%** | **42.77 亿 / 28.7%** | **29.27 亿 / 19.6%** |
+| **FY2026Q2**（2025-11-30） | **160.58 亿 / +14%** | **40.79 亿 / +68%** | **38.98 亿 / +11%** | **58.77 亿 / -3%** | **7.76 亿 / +7%** | **14.28 亿 / +7%** | **47.31 亿 / 29.5%** | **61.35 亿 / 38.2%*** |
+| **FY2026Q3**（2026-02-28） | **171.90 亿 / +22%** | **48.88 亿 / +84%** | **40.26 亿 / +13%** | **61.19 亿 / +3%** | **7.14 亿 / +2%** | **14.43 亿 / +12%** | **54.64 亿 / 31.8%** | **37.21 亿 / 21.6%** |
+| **FY2026Q4**（2026-05-31） | **191.84 亿 / +21%** | **57.87 亿 / +93%** | **41.26 亿 / +10%** | **68.24 亿 / -2%** | **9.24 亿 / +9%** | **15.23 亿 / +13%** | **61.33 亿 / 32.0%** | **43.04 亿 / 22.4%** |
+
+\* FY2026Q2 净利润包含出售 Ampere 持股产生的约 27 亿美元税前收益，不代表正常季度净利率。Software 为 software license + software support；FY2025Q4 按新披露口径重构。
+
+### 3.2 五季直接毛利率与 AI 数据中心收入占比估算
+
+Oracle 不单独披露 IaaS/SaaS 毛利，也不披露 AI 基础设施绝对收入。下表“Cloud+Software/Hardware/Services 直接毛利率”使用财报中各业务收入减去对应直接运营成本计算，尚未扣除销售、研发、总部、无形资产摊销与重组费用；“AI 数据中心收入”以管理层披露的 AI 基础设施增速、MW 交付、GPU 利用率和 OCI 构成为约束，不是 GAAP 披露。
+
+| 季度 | 公司 GAAP 毛利率（推导） | Cloud+Software 直接毛利率 | Hardware 直接毛利率 | Services 直接毛利率 | AI 基础设施收入估算 | AI 数据中心占总收入估算 |
+|---|---:|---:|---:|---:|---:|---:|
+| FY2025Q4 | **70.2%** | **75.6%** | **70.4%** | **15.1%** | **9–12 亿** | **6%–8%** |
+| FY2026Q1 | **67.3%** | **72.1%** | **73.4%** | **18.5%** | **12–16 亿** | **8%–11%** |
+| FY2026Q2 | **66.5%** | **71.2%** | **72.3%** | **18.1%** | **17–22 亿** | **11%–14%** |
+| FY2026Q3 | **64.6%** | **68.2%** | **74.4%** | **21.5%** | **24–30 亿** | **14%–17%** |
+| FY2026Q4 | **65.2%** | **68.8%** | **68.3%** | **24.2%** | **32–39 亿** | **17%–20%** |
+
+交叉验证：管理层披露 FY2026Q3 AI infrastructure 收入同比 **+243%**、当季交付容量毛利率 **32%**；IaaS 同期为 48.88 亿美元。FY2026Q4 IaaS 增至 57.87 亿美元且全年交付 >1.2GW，故本报告将 AI 基础设施占 Q4 IaaS 的约 55%–67%作为合理区间。该估算不包括 Oracle AI Database、Fusion AI、Health AI 在软件/SaaS 中的间接收入。
+
+### 3.3 RPO、book-to-bill 代理、交期与取消/续约
+
+| 季度 | RPO / 环比净增 | 简化隐含 bookings / B2B 代理* | 订单、客户与交付信息 | 交期/交付窗口/供给 | 取消率/续约证据 |
+|---|---:|---:|---|---|---|
+| FY2025Q4 | **1,380 亿 / +约 80 亿** | **约 239 亿 / 1.5×** | RPO +41%；MultiCloud DB Q3→Q4 收入 +115%；23 个 multicloud 数据中心 live、未来 12 个月再建 47 个；Cloud@Customer 29 个 live、FY26 再建 30 个 | 数据库区域和客户侧机房交付约 6–12 个月；OCI consumption +62% | 未披露取消率 |
+| FY2026Q1 | **4,550 亿 / +3,170 亿** | **约 3,319 亿 / 22.2×** | 与三个客户签四份数十亿美元合同；增量主要受超大 AI 合同驱动，市场报道的 OpenAI 五年约 3,000 亿美元/4.5GW 合同是主要解释 | 新建 GW 级站点普遍指向 2027 开始交付 | 未披露；RPO 规模不能视为无条件现金 |
+| FY2026Q2 | **5,230 亿 / +680 亿** | **约 841 亿 / 5.2×** | 新增承诺包括 Meta、NVIDIA 等；RPO 同比 +438% | 截至期末未起租数据中心/云容量承诺约 2,480 亿，计划 FY26Q3–FY28 起租 | 未披露取消率；公司强调只在盈利与融资条件满足时扩张 |
+| FY2026Q3 | **5,530 亿 / +约 300 亿** | **约 472 亿 / 2.7×** | 新商业模式下签约 **>290 亿**（客户自供硬件或预付），另有其他合同；AI infra 收入 +243%、Multicloud DB +531% | 交付 **>400MW**；90%承诺容量按时或提前；未来三年 >10GW，机架到收入时间缩短 60% | 未披露取消率；供给仍小于需求 |
+| FY2026Q4 | **6,380 亿 / +850 亿** | **约 1,042 亿 / 5.4×** | 当季签 **670 亿 AI infra**；四客户各 >80 亿；预付/客户自供硬件部分累计 750 亿；FY26 交付 >1.2GW | FY27Q1 接近 1GW；Shackelford/Doña Ana 1H27，Saline/Port Washington 2H27 | 35,000 GPU 到期，49%客户续约但覆盖 **92% GPU**；未续约 GPU 多数再售，全球利用率 **97.5%**。这是数量续约代理，不是 RPO 取消率 |
+
+\* 简化隐含 bookings = 当季收入 + RPO 环比净增；B2B = 简化隐含 bookings / 当季收入。它忽略汇率、合同修改、取消、变量对价与收入分类，只用于比较订单流量强弱，不能当作 Oracle 正式披露的 bookings。
+
+订单质量的三点判断：
+
+1. **会计强度高于普通 pipeline。** RPO 是已签合同未履约义务，通常比销售 pipeline 严格；但只有 12%预计一年内确认，长久期仍受客户信用、项目里程碑、供给和合同条款影响。
+2. **资本风险正在部分转移给客户。** Q3/Q4 大合同中累计 750 亿美元硬件由客户预付或自供，降低 Oracle 的 GPU 融资压力；但 FY2026 真正带重大融资成分的现金预付款只有 46 亿美元，其余可能是客户直接购买并拥有设备。
+3. **取消数据缺失，但已有可用代理。** GPU 数量续约率 92%、利用率 97.5%、未续约容量被迅速转售，说明当前通用算力的再营销风险低；它不能证明五年期大客户 RPO 没有信用或重谈风险。
+
+## 四、FY2026 最新指引、收入占比与重点产品
+
+### 4.1 FY2027 指引
+
+| 指标 | 公司指引 | 本报告解读 |
+|---|---:|---|
+| FY2027 总收入 | **900 亿美元** | 相对 FY2026 的 673.57 亿为 **+33.6%**；增量几乎必须来自 IaaS |
+| FY2027 non-GAAP EPS | **8.05 美元** | 公司称剔除 FY2026 Ampere/Bloom 一次性收益后同比 +18%；收入增速快于 EPS，暗示 IaaS 混合与融资成本压制利润增速 |
+| FY2027Q1 总收入增速 | **+27%至 +29%** | 对 FY2026Q1 149.26 亿基数，对应约 **189.6–192.5 亿美元** |
+| FY2027Q1 Cloud 增速 | **+58%至 +64%** | 对 FY2026Q1 Cloud 71.86 亿基数，对应约 **113.5–117.9 亿美元**；IaaS 仍是主要增量 |
+| FY2027Q1 non-GAAP EPS | **1.72–1.76 美元** | 同比 +17%至 +20%（美元口径） |
+| FY2027 融资 | **约 400 亿美元债务+股权** | 包含 200 亿美元 ATM 股权发行；管理层称 2026 日历年不再额外发债 |
+
+若 FY2027 SaaS 约增长 11%–14%、software 约 -3%至 0%、hardware/services 约 +5%至 +10%，则 900 亿美元总收入隐含 IaaS 约 **370–400 亿美元、同比约 +104%至 +121%**。这高于 FY2026Q1 时给出的 FY2027 IaaS 320 亿旧规划，但与随后 RPO、MW 交付和总收入上调相符。
+
+### 4.2 最新季度收入占比与增长
+
+| 业务 | FY2026Q4 收入 | 占比 | 同比 | 战略判断 |
+|---|---:|---:|---:|---|
+| OCI IaaS | **57.87 亿** | **30.2%** | **+93%** | 绝对核心；AI 训练/推理与数据库云共同驱动 |
+| Cloud Applications SaaS | **41.26 亿** | **21.5%** | **+10%** | 稳定经常性收入；AI agents 是提速而非当前独立大收入 |
+| Software | **68.24 亿** | **35.6%** | **-2%** | 维护现金牛，license 向云迁移；仍为利润和客户入口 |
+| Hardware | **9.24 亿** | **4.8%** | **+9%** | Exadata X11M 等战略硬件增长，非战略硬件重要性下降 |
+| Services | **15.23 亿** | **7.9%** | **+13%** | 云/Health 迁移带动，但直接毛利仅约 24% |
+
+### 4.3 重点产品、型号与收入交叉验证
+
+| 重点业务/产品 | 具体产品/型号 | 当前状态与官方/渠道信号 | 收入与利润率交叉验证 |
+|---|---|---|---|
+| **OCI AI Infrastructure** | OCI Supercluster；H100/H200；B200/GB200 NVL72；B300/GB300 NVL72；AMD MI300X/MI355X；MI450/Helios；Vera Rubin Supercluster；OCI Generative AI、OKE、Slurm/Kubernetes | GB300/B300 已进入 OCI 价目表并可订购；GB300 每 rack 72 GPU。MI450 50,000 GPU 公有 supercluster 计划 2026Q3 起；Rubin 于 2026-03 宣布，尚属下一代交付/认证阶段 | IaaS FY26 181.01 亿、+77%；Q4 57.87 亿、+93%；AI infra Q3 +243%；新交付容量 GM 32%，管理层长期 30%–40% |
+| **Acceleron/RDMA AI Fabric** | Oracle Acceleron 多平面网络、RoCEv2、MRC、ConnectX-8/9、BlueField-4、Spectrum-X/InfiniBand；未来 Spectrum-X Photonics/CPO | Stargate Abilene 使用 MRC；800G NIC 可拆为 4×200G 多平面；OIP 2026 Oracle 主题为 resilient AI fabrics；CPO 是 early production，规模端口未验证 | 网络不单独计费，价值体现在更高 GPU 利用率、低尾延迟与 30%–40% AI infra GM；也是 OCI 相对普通 GPU reseller 的差异化核心 |
+| **Oracle AI Database / Multicloud** | Oracle AI Database 26ai、AI Vector Search、Select AI、MCP、Autonomous AI Database、Autonomous AI Lakehouse、Exadata Database Service；Database@AWS/Azure/Google | Q3 Azure 33、Google 14、AWS 由 2 增到 8；Q4 末目标 AWS 22，2026-07 文档已覆盖更多 AWS 区域。Q4 Multicloud AI Database +404%，Q3 +531% | Oracle Cloud Database Q3 +35%；Multicloud 是低基数高增子集。数据库服务使用 Exadata 与软件许可，估计直接毛利 65%–80%，显著高于 GPU 云 |
+| **Exadata/Distributed Cloud** | Exadata X11M、Exadata Exascale、Cloud@Customer、Compute Cloud@Customer、Dedicated Region、Alloy、Sovereign/Government/Isolated Cloud | X11M GA；Cloud@Customer 已在 60+国家管理部署。FY2025Q4 Cloud@Customer 收入同比 +104%；FY2026 hardware 增长主要来自 Exadata 等战略硬件 | 收入跨 IaaS、hardware、software，不能简单相加；本报告估计 FY2026 相关收入 15–25 亿，直接毛利约 40%–65%，数据库许可附着后更高 |
+| **Fusion/NetSuite Agentic SaaS** | Fusion ERP/HCM/SCM/CX/EPM；NetSuite；AI Agent Studio；22 个 Fusion Agentic Applications；供应链、收款、排班、交叉销售 agent | 2026-03 宣布 22 个 agentic applications 已可用，2026-06 再增供应链 agents；原生位于交易系统、权限、审批和审计链内 | Q3 Fusion ERP 11 亿、+17%；NetSuite 11 亿、+14%；两者 FY2026 合计估计 82–88 亿。AI 多为捆绑/续费与席位扩张，不应单列重复收入；估计 GM 75%–85% |
+| **Oracle Health / Life Sciences AI** | 新一代 Oracle Health EHR、Clinical AI Agent、Foundation EHR、Life Sciences AI Data Platform、AI clinical trial、Theator Surgery-to-Text 集成 | Clinical AI Agent 已为医生节省 >20 万小时；美国门诊、住院/急诊和英国 Clinical Note 分阶段 GA；急性护理新 EHR 功能计划 2026 推出 | 公司预计 FY2027 Oracle Health 增长转为双位数；绝对收入不披露，本报告估计 FY2026 40–50 亿、GM 45%–65%。医疗实施和托管令毛利低于成熟 SaaS |
+| **小而有潜力：AI-native 存储/Context Memory** | OCI 与 NVIDIA BlueField-4 STX/CMX、DOCA Memos、NIXL；WEKA/OCI 长上下文方案；NVMe/并行文件/对象存储 | OCI 是 STX 计划采用者；合作伙伴计划 2026H2 供货。项目内行业资料明确指出尚无可核验采购金额/机架/PB，2027 才可能物理放量 | 当前不应单列收入；潜力在提升长上下文 TTFT、tokens/s 和 GPU 利用率，未来可增加存储/网络 attach 与 OCI 每 GPU 收入 |
+
+### 4.4 渠道消息与官方交叉验证
+
+| 渠道说法 | 官方/一手验证 | 判断 |
+|---|---|---|
+| “Oracle/OpenAI 的 Abilene 或 4.5GW 扩张被取消” | 2026-03 Oracle 反驳并称 Abilene 两栋楼已运营、4.5GW 租赁安排仍在；2026-06 CEO 给出五大站点逐站交期 | **部分报道混淆了单一扩建租约与总协议。**整体 4.5GW 合同未见取消，但具体站点和起租可调整 |
+| “材料和劳工短缺把多个 OpenAI 站点由 2027 推迟到 2028” | CEO 最新口径：Shackelford/Doña Ana 1H27，Saline/Port Washington 2H27；Abilene 仅交付当前总容量的 42% | **供应延误是真风险，但最新公司口径仍指向 2027 分批交付。**以逐站上电和客户验收为准 |
+| “H100/H200 spot 租价在 2026 年中明显下降，旧 GPU 可能过剩” | Oracle Q4 仍披露 97.5%全球 GPU 利用率，未续约 GPU 多数迅速再售；新合同以 B300/GB300/Rubin/MI450 为主 | **旧代 spot 市场可能降价，但 Oracle 大单/新平台当前仍供不应求。**需监控 H200 续约价格而非只看利用率 |
+| “OCI 将全面涨价，内存/SSD 成本推动价格上调” | 2026-06 Oracle 全球价目表已列 GB300 18美元/GPU时、B300 15、H200 10、MI355X 8.6；社区存在涨价说法，但大客户实际折扣不公开 | **价目表可验证，企业净价不可验证。**长期合同的价格传导取决于合同中硬件/电力指数条款 |
+| “Microsoft 与 Oracle 的约 30 亿美元 OCI 合作因安全认证失败而取消” | Oracle 公开否认细节，称 Microsoft 同时是 OCI 客户与合作伙伴 | **低置信渠道冲突。**在客户/合同未由双方披露前，不纳入收入模型 |
+
+### 4.5 跳过深度预测的低增速/非关键业务
+
+以下业务仍贡献收入和现金流，但因与 AI 基建直接关系弱、增速低或产品线过于成熟，不进入后文逐产品三情景模型：
+
+- Software support：FY2026 **198.04 亿美元、+1%**；极高粘性现金牛，但不是高增长 AI 产品。
+- Software license：FY2026 **47.37 亿美元、-9%**；客户向订阅/云迁移，季度波动与季节性强。
+- 传统 E-Business Suite、PeopleSoft、JD Edwards、Siebel 的非云新增 license；保留维护价值，不作为增长引擎。
+- 非 Exadata 的 SPARC/通用服务器、传统存储和行业硬件；Hardware 总体仅 30.84 亿美元。
+- 与 Oracle Health/云迁移无关的通用咨询、教育与传统实施服务；Services 毛利低。
+- Java、MySQL 非 HeatWave/AI 场景、普通 VM/块存储/对象存储的非 AI 负载。它们可交叉销售，但不宜强行归为 AI 收入。
+
+## 五、关键产品当前收入贡献、增长、重要性与定价权
+
+评分为 1–5，5 代表最重要/最紧急/最紧张/最强；“供需紧张”越高越供不应求。估算区间存在重叠：Multicloud Database、Distributed Cloud 是 OCI/数据库的子集，Fusion/NetSuite 与 Health 是 SaaS 子集，**不得横向相加为公司总收入**。
+
+| 关键产品/业务 | FY2026 当前收入贡献 | 当前增速 | 估计直接/产品毛利率 | AI 栈重要性 | 时间紧急性 | 供需紧张 | 垄断/控制力 | 溢价能力 | 依据 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| OCI IaaS（披露总口径） | **181.01 亿** | **+77%** | 约 **45%–60%**混合 | 5 | 5 | 5 | 3 | 3 | 包含低毛利 AI GPU 与高毛利数据库/网络/存储 |
+| OCI AI Infrastructure 子集 | **估 80–100 亿** | **估 +160%至 +230%** | **30%–40%**；Q3 实际 32% | 5 | 5 | 5 | 3 | 3–4 | >1.2GW、97.5%利用率、AI infra Q3 +243%、670 亿新合同 |
+| Oracle Cloud Database（含 OCI/多云） | **估 40–50 亿** | **约 +35%** | **65%–80%** | 5 | 4 | 4 | 5 | 4–5 | 企业核心数据进入 AI/RAG/agent 的控制点；Oracle 兼容和 Exadata 壁垒高 |
+| Multicloud AI Database 子集 | **估 5–9 亿** | **Q4 +404%；Q3 +531%** | **65%–80%** | 5 | 4 | 4 | 5 | 4 | 低基数；AWS/Azure/GCP 区域快速复制，避免客户为用其他云而迁出 Oracle DB |
+| Exadata/Distributed Cloud 子集 | **估 15–25 亿** | **估 +25%至 +60%** | **40%–65%**；附着许可更高 | 4 | 4 | 3–4 | 4–5 | 4 | X11M、Cloud@Customer、主权云满足数据驻留和低延迟 |
+| Fusion ERP + NetSuite | **估 82–88 亿** | **约 +14%至 +17%** | **75%–85%** | 4 | 3 | 2 | 4 | 4 | 交易系统、权限与工作流使 agent 能执行，不只是回答；迁移成本高 |
+| Oracle Health/生命科学 AI | **估 40–50 亿** | FY26 估低个位至中个位；FY27 指引双位数 | **45%–65%** | 4 | 4 | 2–3 | 3–4 | 3–4 | Cerner 安装基础与临床数据强；Epic/环境式 AI 竞争激烈，交付复杂 |
+| OCI AI-native 存储/STX/CMX | **当前不可单列，估 <2 亿增量** | 从零起步 | 成熟后估 **45%–65%** | 4 | 3 | 3 | 2–3 | 3 | 2026H2 首批/认证；当前没有订单金额、机架或 PB 证据 |
+
+## 六、一年后收入贡献与三情景预测
+
+预测期以 FY2027（2026-06-01 至 2027-05-31）为主；“极度乐观”不是目标价假设，而是订单、供应、客户融资与交付同时超预期的上界。
+
+| 产品/业务 | 基准：FY2027 收入/增速 | 乐观：FY2027 收入/增速 | 极度乐观：FY2027 收入/增速 | 一年后重要性/紧急性/紧张/控制力/溢价（基准→极乐） |
+|---|---:|---:|---:|---|
+| **OCI IaaS 总口径** | **370–400 亿 / +104%至 +121%** | **420–455 亿 / +132%至 +151%** | **500–550 亿 / +176%至 +204%** | 5/5/4/3/3 → 5/5/5/3–4/4 |
+| **OCI AI Infrastructure 子集** | **230–270 亿 / +150%至 +210%** | **290–330 亿 / +210%至 +300%** | **360–420 亿 / +300%至 +420%** | 5/5/4/3/3 → 5/5/5/4/4 |
+| **Oracle Cloud Database** | **55–65 亿 / +25%至 +50%** | **68–78 亿 / +45%至 +80%** | **85–100 亿 / +80%至 +130%** | 5/4/3/5/4 → 5/5/4/5/5 |
+| **Multicloud AI Database 子集** | **16–22 亿 / +150%至 +260%** | **24–32 亿 / +250%至 +450%** | **35–45 亿 / +400%至 +700%** | 5/4/3/5/4 → 5/5/4/5/5 |
+| **Exadata/Distributed Cloud** | **21–30 亿 / +25%至 +45%** | **29–38 亿 / +45%至 +75%** | **40–52 亿 / +75%至 +120%** | 4/4/3/5/4 → 5/5/4/5/5 |
+| **Fusion ERP + NetSuite** | **94–100 亿 / +11%至 +18%** | **102–108 亿 / +18%至 +27%** | **112–120 亿 / +30%至 +40%** | 4/3/2/4/4 → 5/4/3/5/5 |
+| **Oracle Health/生命科学 AI** | **48–55 亿 / +10%至 +20%** | **55–62 亿 / +20%至 +35%** | **63–72 亿 / +35%至 +55%** | 4/4/2/4/3 → 5/5/4/4/4 |
+| **AI-native 存储/STX/CMX 增量** | **3–6 亿** | **7–12 亿** | **15–25 亿** | 4/3/3/2/3 → 5/5/5/3/4 |
+
+情景驱动：
+
+- **基准：** RPO 按 10-K 的 12%节奏确认；FY27Q1 近 1GW 按期；1H27 两站、2H27 两站分批；AI 容量毛利 30%–35%；SaaS 维持低双位数。
+- **乐观：** RPO 一年确认比率提高到 13%–14%；FY27 累计新增上电 4–5GW；GB300/B300 和 MI450 供给顺利；Multicloud 区域复制和客户迁移加速；AI infra GM 35%–38%。
+- **极度乐观：** RPO 一年确认达到约 15%；OpenAI/Meta/xAI/NVIDIA 等同时扩单且预付；全年新增上电 5–7GW；Rubin/MI450、800G/1.6T、液冷和电力没有系统性瓶颈；AI infra GM 接近 40%，未发生大客户重谈。
+
+## 七、BOM、真实内容量与价格传导链
+
+### 7.1 OCI AI Supercluster：以 GB300 NVL72 为代表
+
+#### 每 rack 的可验证内容量
+
+| 组件 | GB300 NVL72 单 rack 内容 | 价值/约束 |
+|---|---:|---|
+| GPU | **72× NVIDIA Blackwell Ultra B300** | 核心算力与最大 BOM；每 GPU 约 279GB HBM，整 rack 约 20TB GPU memory |
+| CPU | **36× Grace CPU，2,592 Arm cores** | 数据预处理、控制和 CPU memory；约 17TB LPDDR5X/总 fast memory 约 37TB |
+| Scale-up | NVLink，单 rack **130TB/s** | 72 GPU 作为单一 NVLink domain；替换为普通以太网会显著降低大模型训练/推理效率 |
+| Scale-out NIC | **72× 800Gb/s ConnectX-8 OSFP 单端口** | 每 GPU 800G 外部 RDMA；另有 18×双口 200G BlueField-3 用于前端/管理等 |
+| 计算托盘 | **18 trays，每 tray 4 GPU + 2 Grace** | OCI 价目表的 `BM.GPU.GB300.4` 对应 4 GPU bare-metal 形态 |
+| 冷却 | 全液冷 rack | 冷板、CDU、歧管、软管、快速接头和水侧系统是交付前提 |
+| 功率 | 参考电力域约 **135kW/rack**；8×33kW power shelves 带冗余 | 不是所有 264kW 铭牌同时使用；真实运行受功率封顶、负载和冗余设计影响 |
+| 性能 | BF16 约 **360PFLOPS**；FP4 约 1.08–1.44EFLOPS（稀疏口径差异） | 厂商峰值，不等于客户有效 tokens/s；网络、存储和软件决定 goodput |
+
+#### 每 MW / 每 GPU / 每 optical port 的内容量
+
+以设施 PUE 1.15、IT 可用功率约 0.87MW、135kW/rack 估算：
+
+- **每设施 MW：约 6.4 个 GB300 NVL72 rack、约 460–470 个 GPU。**若用 IT MW 口径则约 7.4 rack、533 GPU。报告统一使用设施 MW，避免把 PUE 忽略。
+- **每 GPU：**约 0.5 Grace CPU、约 279GB HBM、约 0.24TB CPU/fast memory 分摊、1×800G RDMA endpoint、NVLink switch 分摊、液冷与约 1.9kW rack power 分摊（135kW/72）。
+- **每 800G 网络端口：**对应约 1 GPU 的 scale-out 带宽；双平面/4×200G fan-out 时等价为 4 条 200G lane。模块可为可插拔光、AEC/DAC 或机内铜，不能把所有 800G endpoint 都假设为一对外置光模块。
+- **每 800G 可插拔 optical port 的行业估计内容：**DSP/SerDes + 光引擎/激光器 + TIA/driver + 封装 + 连接器/光纤；2026 大宗价格约 **700–1,500 美元/模块**，1.6T 约 **1,500–3,000 美元/模块**，加交换端口与布线后的安装价值约 **1,100–2,500 美元/800G 端口**。CPO 把价值从可插拔模块转向交换机光引擎、外置激光与封装，尚处 early production。
+
+#### 单 GPU、单 MW 价格传导
+
+Oracle 2026-06 全球价目表的 PAYG 列表价约为：GB300 **18美元/GPU时**、GB200 16美元、B300 15美元、B200 14美元、H200/H100 10美元、MI355X 8.6美元。
+
+- GB300 在 97.5%利用率下，列表价年收入能力 = 18×8,760×97.5% ≈ **15.37 万美元/GPU年**。
+- 按约 464 GPU/设施 MW，列表价理论能力约 **7,130 万美元/MW年**。
+- 超大客户多年合同存在批量折扣、预付和客户自供硬件，本报告采用 **2,500万–6,000万美元/MW年**作为更审慎的实际服务收入能力区间；它包含 compute 主费，网络/存储/软件可能另计。
+- GB300 NVL72 整 rack 硬件市场价值约 **500万–700万美元**的工程区间：GPU/HBM 约 45%–60%，Grace/NVLink/主板约 10%–15%，NIC/交换/光互联约 10%–15%，DRAM/SSD/存储约 5%–10%，电源/机柜/液冷约 8%–12%。具体 Oracle 采购价保密。
+- 数据中心壳体、变电、备用电源、冷却、网络骨干与土地约再增加 **1,000万–2,500万美元/设施 MW**；高密度新建 AI 园区全栈投入常见约 **4,000万–8,000万美元/设施 MW**。FY2026 CapEx 556.63 亿/当年交付 >1.2GW 给出约 <4,640 万美元/交付 MW 的表面下界，但 CapEx 与交付期错配、客户自供 GPU 和在建工程使该比值不能作为完整成本。
+
+价格传导链：
+
+`NVIDIA/AMD GPU + HBM → NVL72/Helios 整架制造商 → Oracle/客户采购 → 数据中心电力/液冷/网络安装 → OCI GPU-hour/预留容量合同 → 模型训练、推理或 token API`
+
+Oracle 的定价权来自 97.5%利用率、GW 交付、Acceleron/RDMA goodput 和可在多地部署，而不是对 GPU 本身的垄断。若 GPU 供给转松，列表价会下降；若电力、机房和高质量 fabric 仍稀缺，整集群合同仍能保持溢价。
+
+### 7.2 Oracle AI Database / Exadata X11M
+
+| 单位 | 可验证内容量/价格 |
+|---|---|
+| X11M 最小/quarter-rack 等效起配 | **2 个数据库服务器 + 3 个存储服务器**；约 1,520 ECPU、2.78TB VM memory、81.6TB flash cache、约 240TB 可用高容量存储或 111TB Extreme Flash |
+| 扩展能力 | 初始 rack 最多 16 个服务器；多 rack 最多 32 个数据库服务器 + 64 个存储服务器 |
+| 存储扩展 rack | 4–19 个 storage servers；3 个 RoCE fabric switches、2 个 PDU、1 个管理交换机 |
+| 单服务器功率 | X11M DB server typical 约 0.8kW；HC storage 约 0.7kW；EF storage 约 0.6kW；最小 2+3 起配的 IT 功率约 3.4–3.8kW，另加交换/PDU损耗 |
+| Cloud@Customer 列表价 | X11M rack 基础设施约 **4,320美元/月**，ECPU 约 **0.336美元/小时**；ECPU、数据库许可/服务另计，标准合约通常 4 年 |
+| 满载 ECPU 年化 | 1,520×0.336×8,760 ≈ **447 万美元/年**，再加 rack、存储服务器、数据库服务与支持；证明软件/ECPU 才是主要收入，而非机柜租金 |
+| 每 MW / 每 GPU / optical port | 非 GPU 产品；单 rack 通常仅十几至几十 kW，按 MW 计没有投资意义。内部以 RoCE 交换连接 DB/storage，光端口数量随 elastic configuration 变化，Oracle 未披露统一 port/rack |
+
+价格传导链：
+
+`AMD/Intel CPU + DRAM + NVMe/硬盘 + RoCE → Exadata X11M 硬件 → Database 26ai/Autonomous/Exadata software → ECPU/存储/许可/支持计费 → AWS/Azure/GCP/OCI/客户机房`
+
+Oracle 通过软硬一体、RAC/MAA、Smart Scan、RDMA Memory 和 license 兼容捕获大部分价值。AWS/Azure/GCP 提供分发、账单和邻近 AI 服务，但 Oracle 保留数据库控制面和核心经济。
+
+### 7.3 Fusion/NetSuite Agentic SaaS 与 Oracle Health
+
+这些是软件产品，不应伪造“每 MW/每 rack/每 GPU”固定 BOM：多租户推理会动态共享 OCI GPU/CPU，客户购买单位是 seat、employee、transaction、message、token pool、受管理业务量或模块订阅。
+
+| 产品 | 软件 BOM/价格链 | 真实内容量与限制 |
+|---|---|---|
+| Fusion Agentic Applications | Fusion 交易数据 + 权限/审批 + AI Agent Studio + LLM/向量检索 + observability/ROI/safety | 2026-03 已有 22 个 agentic apps；AI 多捆绑于 Fusion 模块，通过续费、模块 attach、席位和消费扩大变现；独立 AI 收入未披露 |
+| NetSuite AI | ERP/CRM/库存/电商数据 + agent/生成式功能 + OCI 推理 | 中型企业数据和流程统一是优势；客户可迁移至 Dynamics、SAP、Acumatica，但数据/定制/实施迁移通常 12–36 个月 |
+| Oracle Health Clinical AI Agent/EHR | 临床语音/屏幕输入 + EHR 上下文 + 医疗知识/安全规则 + OCI 推理 + 医生审核 | 已披露节省 >20 万小时文档时间；真正收入取决于部署医院、临床席位、使用强度和是否从旧 Cerner 环境迁到新 OCI EHR |
+
+价格传导链：
+
+`模型/API与 OCI 推理成本 → Oracle 将 AI 嵌入交易/临床工作流 → 按模块/席位/业务量订阅 → 客户通过人时节省、收款加速、库存/排班优化或临床文档减少获得 ROI`
+
+## 八、当前产能、供应链采纳与认证阶段
+
+| 产品/业务 | 当前产能能力（物理/美元） | 供应链与客户采纳 | 当前认证/商业阶段 |
+|---|---|---|---|
+| OCI AI Infrastructure | FY2026 客户交付 **>1.2GW**；按 2,500万–6,000万美元/MW年，成熟年化服务能力约 **300–720 亿美元**，但多数容量在年内后段交付，FY26 实际 AI infra 收入仅估 80–100 亿 | 97.5% GPU 利用率；35,000 GPU 续约数量留存 92%；数百 AI 客户；大客户含 OpenAI、Meta、NVIDIA、xAI、TikTok、AMD | H100/H200/B200/GB200/GB300/B300 商业；MI450 为已承诺/2026Q3 起首批；Rubin 为下一代平台导入，尚未规模收入 |
+| Acceleron/MRC/800G fabric | 随 >1.2GW OCI 容量部署；无法独立美元化 | Abilene Stargate 采用 MRC；Oracle 在 OIP 讨论 resilient AI fabrics | Acceleron/MRC 生产；Spectrum-X Photonics/CPO 初始量产/待规模现场数据 |
+| Oracle Multicloud AI Database | Q3 已有 Azure 33、Google 14、AWS 8 regions；Q4 目标 AWS 22，2026-07 官方文档显示 AWS 扩展已基本达到该量级；估计当前收入 run-rate 8–12 亿 | 金融、公共部门、交通、保险等在 AWS/Azure/GCP 内使用 Exadata/Autonomous | 多云服务 GA；不同 region、KMS、Data Guard、Autonomous Serverless 按月扩展功能 |
+| Exadata/Cloud@Customer | 已在 60+国家管理部署；X11M 可从 2 DB+3 storage 扩到多 rack | 传统 Oracle DB 大客户、主权/政府/受监管行业 | X11M/Exadata Cloud@Customer GA；各国安全/数据驻留认证依 region 推进 |
+| Fusion/NetSuite Agentic | 物理容量不是约束；FY26 合计收入估 82–88 亿 | 大型企业 ERP 与中型企业 ERP 存量；22 个 agentic apps 可用 | GA/生产可用；关键验证是付费 attach、活跃 agent、任务成功率和客户 ROI，而非硬件认证 |
+| Oracle Health AI | FY26 收入估 40–50 亿；临床 AI 推理容量未披露 | 美国门诊、住院/急诊与英国 NHS 部分机构已部署；Theator 等伙伴接入 | Clinical Note/订单生成分地区 GA；新 EHR 门诊 GA，急性护理/更大规模迁移仍处 rollout |
+| STX/CMX/AI-native storage | 当前 OCI 可归因收入估 <2 亿；没有机架/PB/订单披露 | OCI 为八家计划采用者之一；WEKA/OCI 披露长上下文吞吐提升 10×的厂商案例 | 2026H2 伙伴首批/认证，2027 才可能形成规模物理收入；不能把“计划采用”当订单 |
+
+## 九、一年后产能与认证三情景
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| OCI AI Infrastructure | FY27 新增交付 **3–4GW**，期末累计客户容量约 **4.2–5.2GW**；成熟年化服务能力约 **1,050–3,120 亿美元**区间上部不可在当年完全确认；90%按期交付 | 新增 **4–5GW**，期末 **5.2–6.2GW**；多站点并行、客户预付减少融资约束 | 新增 **5.5–7GW**，期末 **6.7–8.2GW**；接近管理层三年 >10GW 计划的前置兑现 |
+| GB300/B300 → Rubin | GB300/B300 主力，Rubin 在少数 region/大客户 early access；MI450 50,000 进入客户验收 | Rubin/MI450 2026H2 顺利，2027H1 多 region GA；AMD 成为有效第二来源 | Rubin、MI450、CPO/1.6T 同时成熟，供应不再由单一 GPU 平台限制 |
+| Multicloud AI Database | 跨 AWS/Azure/GCP 的 live region/zone 约 **85–100**；收入 16–22 亿 | **105–120**；Exascale、Autonomous Serverless、跨云 KMS/Data Guard 全面复制 | **125–145**；多云成为 Oracle DB 新部署默认，收入 35–45 亿 |
+| Exadata/Distributed Cloud | 70–80 个国家/主权环境，X11M/Exascale 逐步替换旧代 | 85–100 个国家/环境，主权 AI 与政府云扩张 | >100 个国家/环境；客户机房小型 OCI 成为受监管行业标准架构 |
+| Fusion/NetSuite Agentic | GA 功能进入付费续约和模块 attach；披露首批 ROI、活跃 agent | Agentic Applications 成为新模块/高阶套餐，Fusion 增速升至 18%–22% | 大规模自动执行被客户接受，增速 25%+、净收入留存显著提高 |
+| Oracle Health | 急性护理 AI EHR 进入有限生产/迁移，Clinical AI Agent 扩科室/地区 | 大型医疗系统按期迁移，Health 全年 +20%至 +35% | 多个大型系统替换/扩展，临床 AI 与生命科学平台交叉销售，+35%至 +55% |
+| STX/CMX | H2 2026 认证和小批生产，2027H1 少数长上下文集群 | OCI 将 STX/CMX 作为 Rubin 高端集群选配，出现可披露 PB/机架订单 | 成为高端推理 rack/POD 标配，独立收入 15–25 亿；需看到真实 attach、客户 benchmark 与故障率 |
+
+说明：OCI 美元产能是“期末容量×单位年服务能力”的静态上限，不是 FY2027 GAAP 收入；新增 GW 在不同季度交付，只有上电、客户验收并开始计费后才产生收入。
+
+## 十、根据真实订单与供给预测未来一年业务增速
+
+### 10.1 RPO 到收入的桥
+
+| 桥接项 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| 期初 RPO | 6,380 亿 | 6,380 亿 | 6,380 亿 |
+| 未来 12 个月确认比例 | **12.0%**（公司 10-K） | **13.0%–14.0%** | **约 15.0%** |
+| 对应 RPO 收入 | **约 765.6 亿** | **829–893 亿** | **约 957 亿** |
+| 非 RPO/短期消费、续约与新签当年收入 | **约 134 亿** | **约 130–170 亿** | **约 150–175 亿** |
+| FY2027 总收入 | **约 900 亿** | **960–1,000 亿** | **1,070–1,130 亿** |
+| 总收入增速 | **+33.6%** | **+42%至 +48%** | **+59%至 +68%** |
+
+这不是把 RPO 与收入相加，而是把 10-K 明示的未来 12 个月履约部分与不进入长期 RPO 的消费、续约、短期合同等合并。基准与公司 900 亿美元指引一致。
+
+### 10.2 订单与供给约束如何映射到业务
+
+| 变量 | 当前真实证据 | 对未来一年增速的含义 | 下修触发器 |
+|---|---|---|---|
+| 合同需求 | RPO 6,380 亿；Q4 +850 亿；670 亿 AI 新签；四客户各 >80 亿 | 需求不是首要短板，FY27 收入主要受交付约束 | RPO 减少、12个月确认比例下修、大客户重谈/信用恶化 |
+| 可用电力/机房 | >10GW 三年容量；五大站点逐站给出 1H/2H27；未入表租赁承诺 2,600 亿 | 支持 IaaS 100%+增速，但形成长期固定义务 | 并网/燃料/许可/社区诉讼、起租早于客户验收 |
+| 整架制造/安装 | 制造站点 3×、rack output 4×、rack-to-revenue 时间 -60%；Q3 90%按时或提前 | 基准假设 FY27 新增 3–4GW 可行 | 低于 85%按时、MI450/Rubin 认证后移、液冷/配电短缺 |
+| GPU/网络/存储 | GB300/B300 已商业，MI450 50k 待首批，Rubin/STX 待规模；800G 主流、1.6T/CPO 初期 | 多平台降低单一 GPU 风险；新代转换可能造成验收空档 | HBM4/SSD/光模块/交换机短缺，ROCm 或新 fabric 稳定性不足 |
+| 需求留存 | 35k 到期 GPU 数量留存 92%，利用率 97.5% | 支持持续计费与旧 GPU 再售；当前取消率低的最佳代理 | 利用率 <90%、H200/B200 续约价格大降、客户自建替代 |
+| 资本 | FY26 筹债 430 亿+股权 50 亿；FY27 计划再筹 400 亿；750 亿硬件由客户预付或自供 | 基准融资足以支持在建项目，但摊薄和利息上升 | 债券利差扩大、评级下调、ATM 大幅摊薄、客户预付不及预期 |
+
+### 10.3 关键业务未来一年增速结论
+
+- **OCI IaaS：基准 +104%至 +121%。**Q1 云增速指引 58%–64%与接近 1GW交付是第一验证；全年需要 1H27 站点开始贡献。
+- **Cloud Database：基准 +25%至 +50%。**增长不依赖 GW 级 GPU，同样受 multicloud region 的 Exadata 安装速度约束；毛利质量优于通用 GPU。
+- **SaaS：基准 +11%至 +14%。**AI agents 当前主要提高赢单、续费和开发效率，尚不足以假设收入突然翻倍。
+- **Oracle Health：基准 +10%至 +20%。**公司明确目标双位数；是否达到上沿取决于新 EHR 急性护理 GA、旧 Cerner 客户迁移和临床 agent 付费。
+- **Hardware：基准 +5%至 +12%。**Exadata 增长被非战略硬件抵消；客户自供 GPU不计入 Oracle hardware revenue。
+- **Services：基准 +8%至 +13%。**云/Health 实施增长，但服务能力和裁员可能成为约束。
+
+## 十一、竞争格局、技术主流性、替代方案与替换成本
+
+### 11.1 分业务竞争
+
+| 业务 | 主要竞争对手 | Oracle 优势 | 主要替代/风险 | 客户替换成本 |
+|---|---|---|---|---|
+| OCI AI Infrastructure | AWS、Azure、Google Cloud；CoreWeave、Crusoe、Nebius、Lambda、Nscale、IREN；自建集群 | bare metal、低虚拟化开销、Acceleron/RDMA、多平面网络、GW 交付、芯片中立、Oracle DB/应用附着 | 客户多云；AWS Trainium、Google TPU、自研 ASIC；GPU 租价压缩；OpenAI/Meta 自建 | **中等至高。**原始 GPU-hour 可迁移，但万卡集群网络调优、数据、预留合同和生产 SLA 迁移困难 |
+| AI fabric/network | NVIDIA NVLink/InfiniBand/Spectrum-X；Broadcom Ethernet/UEC；Arista/Cisco；UALink | Acceleron/MRC 已在 Stargate 生产；可整合 RoCE、IB、多平面和安全隔离 | NVLink 锁定 NVIDIA；标准碎片化；CPO 故障与可维护性；AWS/GCP 自研网络 | **高。**训练作业 goodput、故障域和调度软件依赖整套网络 |
+| Oracle AI Database/Exadata | Microsoft SQL/Azure SQL、AWS Aurora/RDS、Google Spanner/AlloyDB/BigQuery、PostgreSQL、IBM Db2、SAP HANA、Snowflake、Databricks、MongoDB | Oracle 兼容、RAC/MAA、PL/SQL、Exadata、数据安全、全球企业安装基础；可在三大云内交付 | PostgreSQL/开源、云原生数据库、湖仓、应用重构；许可复杂/成本高 | **极高。**模式、存储过程、应用逻辑、数据治理、审计与 24×7 SLA 迁移常需多年 |
+| Multicloud Database | 三大云自有数据库、第三方 SaaS 数据平台 | 不要求客户离开 AWS/Azure/GCP；同机房低延迟、统一 Oracle 许可与性能 | 合作云可能强化自有数据库；经济分成压毛利；region 建设慢 | **高至极高。**迁移 Oracle DB 本身困难；但在三大云之间的外围应用选择更灵活 |
+| Distributed/Sovereign Cloud | AWS Outposts/Dedicated Local Zones、Azure Stack/Arc、Google Distributed Cloud、IBM、主权本地云 | 完整 OCI/Exadata 可进客户机房，60+国家经验，数据库和应用一体 | 本地云、监管变化、项目定制成本、规模经济不足 | **极高。**设备、数据、合规认证和运维流程嵌入客户现场 |
+| Fusion/NetSuite | SAP S/4HANA/SuccessFactors、Workday、Microsoft Dynamics 365、Salesforce、ServiceNow、Infor、Acumatica | ERP+HCM+SCM+CX 统一数据；NetSuite 覆盖中型市场；agents 原生权限/审批/交易 | SAP 迁移周期、Workday HCM、Microsoft 生态；AI 功能商品化 | **极高。**数据、流程、定制、接口、培训和审计迁移常为 1–3 年或更久 |
+| Oracle Health | Epic、MEDITECH、athenahealth；Microsoft/Nuance DAX、Abridge、Suki；医疗数据平台 | Cerner 安装基础、EHR+临床 agent+生命科学数据+OCI 全栈 | Epic 客户满意度与生态；临床安全/监管；旧 Cerner 迁移失败；专业 AI 厂商更快 | **极高但双向。**医院 EHR 更换成本巨大，既保护存量也使 Oracle 很难赢走 Epic 客户 |
+| STX/CMX/AI-native storage | NVIDIA 生态、WEKA、VAST、DDN、IBM、Dell/HPE/NetApp、对象存储、本地 NVMe、LMCache/Mooncake 等软件 | OCI 可把存储、RDMA 和 GPU 调度作为单一服务；大规模生产负载可验证 | 现有 DRAM/NVMe/并行存储够用；cache hit 低时重算更便宜；标准未成熟 | **中等。**接口趋向 NIXL/开放软件，硬件更可替换；生产数据路径和性能调优增加粘性 |
+
+### 11.2 新技术是否为主流
+
+1. **GB300/B300 NVL72 + 液冷 + 800G fabric：是 2026 主流高端路径。**单 rack 72 GPU、约 135kW、20TB HBM和每 GPU 800G 网络，符合从服务器向 rack/POD 采购的转变。
+2. **Vera Rubin/MI450：大概率成为 2027 主流增量，但截至 2026-07 仍要经过整架资格认证、软件稳定性和客户验收。**Oracle 的 50,000 MI450 是承诺/部署计划，不能写成已安装收入。
+3. **Ethernet 不会简单取代 InfiniBand/NVLink。**NVLink 继续控制 scale-up，InfiniBand 在最高性能训练中强，Spectrum-X/开放以太网在多租户 scale-out 增长。Oracle 的多平面 RoCE 是主流方向之一。
+4. **CPO/光学 scale-up 是未来方向，不是当前收入主力。**2026 处 early production/first adopter，公开资料缺少客户端口量、良率和现场故障率。可插拔 800G/1.6T 仍是未来一年主要交付。
+5. **Multicloud Database 是 Oracle 最具防御力的新主流。**企业不会为了 AI 立即重写 Oracle 核心数据库；将 Exadata/Autonomous 直接放进三大云是阻止流失、提高云化率的高胜率路径。
+6. **Agentic ERP/EHR 是合理方向，但商业验证慢于基础设施。**必须观察付费 attach、任务成功率、人工审核、责任归属和可量化 ROI，不能把“22 个 agents 已可用”当成独立收入。
+
+### 11.3 风险清单与可验证反证
+
+| 风险 | 影响 | 未来 12 个月应监控的反证/验证 |
+|---|---|---|
+| OpenAI/大客户集中与信用 | RPO 延迟、重谈、坏账；专用站点闲置 | 四大客户合同分散、预付比例、OpenAI融资/收入、客户集中披露、站点是否可转租给其他客户 |
+| 长租约与短 GPU 寿命错配 | 15–19年租约覆盖 4–6年加速器经济寿命，技术过时后仍付租 | 旧 GPU 续约价格、再营销速度、利用率、资产减值、租约转让条款 |
+| 毛利稀释 | IaaS 增长快于 software，整体 GM 下滑 | AI 容量 GM 是否持续 >30%；公司 GAAP GM 能否在 63%–66%稳定 |
+| 电力/施工/供应链 | 收入确认推迟、CapEx 先发生 | 每季交付 MW、按期率、Shackelford/Doña Ana/Saline/Port Washington 上电、变压器/开关设备/液冷/内存/SSD 交期 |
+| 融资与稀释 | 利息吞噬 EPS、ATM 摊薄每股价值、评级压力 | 净债务/EBITDA、利息覆盖、400 亿融资结构、债券利差、每股数、FCF |
+| GPU/云价格竞争 | 30%–40% GM 下破、旧代减值 | OCI 净价、H200/B200 续约价、AWS/Azure/GCP/NeoCloud 价格、Trainium/TPU 渗透 |
+| 技术转换 | Rubin/MI450/ROCm/CPO 不稳导致验收延期 | GA region、客户 benchmark、ROCm 稳定、光端口故障率、MI450 50k 交付确认 |
+| 数据库开源替代 | 核心利润池缓慢流失 | Oracle DB renewal、Cloud DB +35%能否持续、PostgreSQL 迁移、大客户 license 优化 |
+| Oracle Health 执行 | 存量客户流失、实施成本高、声誉/监管风险 | Health 双位数增长、新 EHR急性护理 GA、医生使用量、Epic 竞标结果、Clinical AI 安全事件 |
+| 组织重构 | 2.1万人减少影响产品质量、销售和客户支持 | 研发产出、重大事故、客户支持指标、进一步重组费用、关键工程师流失 |
+
+## 十二、投资判断与监控框架
+
+### 12.1 多头逻辑
+
+- 6,380 亿美元 RPO 相当于 FY2026 收入的 **9.5 倍**，且约 12%已覆盖未来一年大部分收入；订单可见性远超历史。
+- IaaS 从 FY2025Q4 +52%加速至 FY2026Q4 +93%，不是只靠故事；管理层已交付 >1.2GW、利用率 97.5%。
+- Oracle 数据库/Exadata/应用存量为 AI 云提供差异化数据与客户入口，Multicloud +404%是“把对手云变成 Oracle 分发渠道”的高质量增长。
+- 30%–40% AI infra 毛利虽低于软件，但在 GW 级规模可创造巨额毛利美元；客户自供/预付硬件减少部分资本负担。
+- 140.64 美元股价对应约 17.5–17.9 倍 forward P/E，若 FY2027 900 亿收入与 8.05美元 non-GAAP EPS兑现，估值不昂贵。
+
+### 12.2 空头逻辑
+
+- 12% RPO 一年确认意味着 88%在更远期；RPO 久期、客户信用与站点交付风险远高于普通软件订阅。
+- FY2026 FCF -236.86 亿、借款 1,295 亿、未入表数据中心租赁承诺 2,600 亿；Oracle 用软件现金流、债务和股权为低毛利硬件云融资。
+- OpenAI 五年约 3,000 亿/4.5GW 被广泛报道，是订单集中风险中心；客户本身仍需持续融资与快速收入增长。
+- 整体毛利率一年从约 70.2%降到 65.2%；收入增长快于 EPS 指引，说明资本、折旧、利息和业务混合正在吞噬经营杠杆。
+- GPU 云的切换成本低于数据库/SaaS；随着 H200/B200 供给转松和自研 ASIC 增长，OCI 租价可能下降。
+
+### 12.3 最重要的季度仪表盘
+
+| 指标 | 看多阈值 | 警戒阈值 |
+|---|---:|---:|
+| OCI IaaS 增速 | FY27 保持 **>90%** | 连续两季 <70% |
+| FY27Q1 Cloud 增速 | 达到或超过 **58%–64%** | <55% |
+| RPO 一年确认比例 | 维持/上升于 **12%** | 降至 <10% |
+| GPU 利用率 | **>95%** | <90% |
+| GPU 数量续约/再售 | 数量留存 >90%、未续约快速再售 | 留存 <80%且闲置上升 |
+| 每季交付 MW | FY27Q1 接近 **1GW**，全年累计 3–4GW+ | Q1 <0.7GW或五大站点推迟 >2季度 |
+| AI capacity GM | **≥32%并向 35%靠近** | <30% |
+| 公司 GAAP 毛利率 | 稳定在 **63%–66%** | <60% |
+| 净债务/EBITDA | 见顶并向 <3×下降 | >4×且 RPO 转化放缓 |
+| FCF | FY27 亏损收窄、客户预付增加 | 进一步恶化且需要超计划融资 |
+| Multicloud DB | 继续 >100%增长、live region 扩张 | 增速快速降至 <50%或区域计划延误 |
+| Oracle Health | FY27 达双位数 | 仍为负增长/重大客户流失 |
+
+**综合判断：业务动量 8.5/10，产品护城河 8/10，订单可见性 9/10，资产负债表 5.5/10，现金流 3.5/10，估值 7/10。** Oracle 是 AI 基础设施周期中少见的“有传统高毛利利润池、又有超大订单”的平台，但当前股票的核心并非数据库是否稳固，而是管理层能否把 15–19 年资本义务与 5 年左右客户合同、4–6 年 GPU 经济寿命协调起来。对投资者而言，**最具性价比的上行来自 Multicloud Database 与数据库/应用 AI；最大尾部风险来自 OCI 大客户信用、GW 交付和融资。**
+
+## 十三、主要资料与方法
+
+### 13.1 公司与监管一手资料
+
+- [Oracle FY2026Q4/FY2026 财报（2026-06-10）](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/)
+- [Oracle FY2026 10-K（截至 2026-05-31）](https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm)
+- [Oracle FY2026Q3 财报](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Fiscal-Year-2026-Third-Quarter-Financial-Results/)
+- [Oracle FY2026Q2 财报](https://investor.oracle.com/investor-news/news-details/2025/Oracle-Announces-Fiscal-Year-2026-Second-Quarter-Financial-Results/)
+- [Oracle FY2026Q1 财报](https://investor.oracle.com/investor-news/news-details/2025/Oracle-Announces-Fiscal-Year-2026-First-Quarter-Financial-Results/)
+- [Oracle FY2025Q4/FY2025 财报](https://investor.oracle.com/investor-news/news-details/2025/Oracle-Announces-Fiscal-2025-Fourth-Quarter-and-Fiscal-Full-Year-Financial-Results/)
+- [Oracle CEO：FY2026Q4 合同、GW交付、续约与五大站点](https://blogs.oracle.com/ceo/from-the-q4-earnings-call)
+- [Oracle CEO：FY2026Q3 AI infra/Multicloud、10GW与毛利率](https://blogs.oracle.com/ceo/from-the-q3-earnings-call)
+- [Oracle 2026 融资计划及大客户名单](https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/)
+- [Oracle 全球 IaaS/PaaS 美元价目表](https://www.oracle.com/il-en/a/ocom/docs/corporate/pricing/oracle-paas-and-iaas-global-price-list.pdf)
+- [OCI 与 NVIDIA GTC 2026：Vera Rubin、Acceleron、STX](https://blogs.oracle.com/cloud-infrastructure/oracle-nvidia-gtc-2026-key-announcements)
+- [Oracle Acceleron/MRC 技术说明](https://blogs.oracle.com/cloud-infrastructure/first-principles-multipath-reliable-connection)
+- [Oracle/AMD：50,000 MI450 计划](https://www.oracle.com/anz/news/announcement/ai-world-oracle-and-amd-expand-partnership-to-help-customers-achieve-next-generation-ai-scale-2025-10-14/)
+- [Oracle AI Database Agentic Innovations](https://www.oracle.com/news/announcement/oracle-unveils-ai-database-agentic-innovations-for-business-data-2026-03-24/)
+- [Oracle AI Database@AWS 2026 区域与功能更新](https://docs.oracle.com/en-us/iaas/Content/database-at-aws/oaaws-whats-new.htm)
+- [Oracle Fusion Agentic Applications（22个应用）](https://www.oracle.com/news/announcement/oracle-introduces-fusion-agentic-applications-2026-03-24/)
+- [Oracle Health Clinical AI Agent 订单生成与 20万小时节省](https://www.oracle.com/news/announcement/oracle-health-adds-order-creation-capabilities-to-clinical-ai-agent-2026-02-02/)
+- [NVIDIA GB300 NVL72 产品规格](https://www.nvidia.com/en-us/data-center/gb300-nvl72/)
+- [Oracle Exadata X11M Cloud@Customer 配置](https://docs.oracle.com/en-us/iaas/exadata/doc/ecc-system-config-options.html)
+- [OpenAI Stargate 社区与站点进度](https://openai.com/index/stargate-community/)
+
+### 13.2 行业与市场资料
+
+- [Synergy Research：2026Q1 全球云基础设施市场](https://www.srgresearch.com/articles/cloud-market-annual-revenue-run-rate-topped-half-a-trillion-dollars-in-q1-as-growth-surge-continues)
+- [StockAnalysis：ORCL 估值统计，2026-07-10 更新](https://stockanalysis.com/stocks/orcl/statistics/)
+- [Forbes/S&P/Xignite：ORCL 估值与利润率快照](https://www.forbes.com/companies/oracle/)
+- [项目内：AI云算力外包、NeoCloud与AI数据中心运营商](../../行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-07-10.md)
+- [项目内：AI产业链全局图谱与口径字典](../../行业调研/产业背景/AI产业链全局图谱与口径字典_T03_2026-07-09.md)
+- [项目内：AI-native存储与KV Cache基础设施](../../行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV%20Cache基础设施_2026-07-10.md)
+- [项目内：Data Center World 2026](../../行业调研/产业背景/顶级会议信息/data_center_world_2026_research_report.md)
+- [项目内：ISC High Performance 2026](../../行业调研/产业背景/顶级会议信息/conference_update_isc_high_performance_2026_2026-07-10.md)
+- [项目内：OIP 2026 光互连会议](../../行业调研/产业背景/顶级会议信息/conference_update_oip_2026_2026-06-20.md)
+- [项目内：NVIDIA GTC 2026](../../行业调研/产业背景/顶级会议信息/nvidia_gtc_2026_research.md)
+
+### 13.3 模型限制
+
+1. Oracle 不披露 AI infrastructure、Cloud Database、Multicloud Database、Fusion/NetSuite 全年和 Oracle Health 的完整绝对收入；本报告使用披露总额、增速、MW、利用率、区域数、价目表和管理层毛利率作区间估算。
+2. RPO 不能全部归 AI，也不能与 bookings/backlog/收入相加。报告的 book-to-bill 只是 `收入 + ΔRPO` 的比较代理。
+3. 每 MW 收入能力受 PUE、GPU 型号、rack power、合同折扣、利用率、客户自供硬件和网络/存储附加费影响；报告给出的是工程区间，不是 Oracle 合同净价。
+4. 三情景不构成公司指引或投资建议。极度乐观情景要求需求、供应、融资、认证和客户信用同时顺利，概率显著低于基准情景。

@@ -1,0 +1,359 @@
+# Broadcom（AVGO）公司调研：定制 AI XPU、以太网网络芯片与 VMware 软件平台（2026-06-11）
+
+报告日期：2026-06-11  
+股票代码：AVGO  
+公司名称：Broadcom Inc.  
+正式归属目录：`公司调研/AI计算芯片_EDA_IP_custom_ASIC/`  
+资料边界：本报告仅使用 `行业调研/` 下与 AI 芯片、云厂自研 ASIC、AI 网络、光互联、CPO/NPO、先进封装、AI 数据中心建设相关的行业资料，并结合联网搜索。未读取、引用或继承 `特征量化/`、`日度资料/`、`tmp/`、`data/` 或既有 AVGO 公司报告内容。为确认输出位置，仅核对 `公司调研/公司索引.md` 中 AVGO 的正式分类。  
+财报口径：Broadcom 财年截至每年 10 月或 11 月初附近；FY2026 Q2 截至 2026-05-03，10-Q 签署日期 2026-06-09。  
+市场数据快照：股价使用 2026-06-11 15:32 UTC 附近实时快照；估值倍数为本文基于该股价、公司披露财务和公开估值页交叉估算，日内会变动。
+
+## 0. 结论摘要
+
+1. **AVGO 现在不是传统“通信半导体 + Apple 无线芯片”公司，而是 AI 定制 ASIC/XPU、AI 以太网网络、光互联芯片和 VMware 基础设施软件的组合体。** FY2026 Q2 总收入 221.87 亿美元，同比 +48%；其中 Semiconductor Solutions 150.09 亿美元，同比 +79%，Infrastructure Software 71.78 亿美元，同比 +9%。AI semiconductor revenue 已达 108 亿美元，同比 +143%，占总收入约 48.7%，占半导体收入约 72.0%。
+2. **短期最硬的订单证据来自 10-Q 的 RPO 和采购承诺，而不是传闻。** 截至 2026-05-03，Broadcom 披露 firmly committed remaining performance obligations 约 1,646 亿美元，约 30% 预计未来 12 个月确认收入，且明确包含 FY2026 Q2 新签的长期 custom AI accelerators 合同；采购承诺 1,281.10 亿美元，主要集中在 2027 年 552.14 亿美元和 2028 年 728.70 亿美元。这说明 AI 项目已经从“设计赢单”进入长期排产和供给锁定阶段。
+3. **FY2026 Q3 指引显示增长仍在加速。** 公司指引 FY2026 Q3 总收入约 294 亿美元，同比 +84%，Non-GAAP operating income 约收入 67%，Adjusted EBITDA 约收入 68%。管理层同时指引 Q3 AI semiconductor revenue 约 160 亿美元，同比 +200% 以上。以 Q1 84 亿、Q2 108 亿、Q3 指引 160 亿看，AI 半导体年化 run-rate 已从 336 亿美元跃迁到 640 亿美元。
+4. **投资人眼中的 AVGO：高现金流的“AI 基建卖铲者 + 私有云软件收费权”。** 半导体端靠 custom AI accelerators、Tomahawk/Jericho/Thor、optical DSP/SerDes 抓住 AI 数据中心的算力和网络瓶颈；软件端靠 VMware Cloud Foundation、mainframe、security 等高毛利资产提供现金流和 RPO。市场给它高估值，是因为它同时有 NVIDIA 之外的 AI ASIC beta 和 VMware 软件现金流。
+5. **最大争议不是需求，而是客户集中、毛利 mix 和融资模式。** FY2026 H1 前五大终端客户约占收入 45%；AI 客户可能要求 lease XPU/AI rack 或 deferred payment。10-Q 也提示 custom AI accelerators、XPU rack 销售或租赁会提升经营利润但压低未来 gross margin。AI XPV Platform 和 290 亿美元级 lease backstop 风险说明 AVGO 开始承担更多“硬件 + 融资 + 客户信用”的复合暴露。
+6. **最值得重点跟踪的产品不是单一 ASIC，而是四个联动层：custom XPU、AI Ethernet switch/router、AI NIC/endpoint、optical DSP/CPO。** OpenAI 10GW 官方合作、AI XPV 20GW 平台、Tomahawk 6 102.4T 量产、Jericho4 100km+ RoCE、Thor Ultra 800G NIC、Taurus 400G/lane optical DSP 共同构成 AVGO 的 AI 数据中心技术栈。VMware VCF 是第五个关键现金流层，但增长弹性低于 AI 半导体。
+7. **未来一年基准情景：AVGO AI 半导体收入可从 FY2026 Q2 的 108 亿美元单季水平提升到 FY2027 上半年 180-230 亿美元/季；乐观情景 240-300 亿美元/季；极度乐观 300 亿美元以上/季。** 关键条件是 OpenAI/Anthropic/Google/Meta 类客户部署不延迟、HBM/CoWoS/光互联/电力不形成硬断点，并且 lease/financing 风险不放大。
+
+## 1. 公司业务、投资人认知和产业链位置
+
+### 1.1 Broadcom 做什么
+
+Broadcom 是 fabless 和系统级半导体设计公司，同时拥有大型基础设施软件资产。公司只有两个报表分部：
+
+| 分部 | FY2026 Q2 收入 | 同比 | 收入占比 | 主要产品 | 投资含义 |
+|---|---:|---:|---:|---|---|
+| Semiconductor Solutions | 150.09 亿美元 | +79% | 68% | custom AI accelerators/XPU、Ethernet switch/router silicon、NIC/DPU、SerDes/PHY、optical DSP/TIA/CDR、PCIe/CXL、storage/broadband/wireless/industrial 芯片 | 当前增长主引擎，AI 相关收入占半导体收入大头 |
+| Infrastructure Software | 71.78 亿美元 | +9% | 32% | VMware Cloud Foundation、Tanzu/Spring、mainframe software、security、observability、automation | 高毛利、高现金流、RPO 稳定，但增速低于 AI 半导体 |
+
+业务本质：
+
+- **AI 定制硅片商。** 为 hyperscaler 和 frontier AI lab 联合设计或供应 custom AI accelerators/XPU，并提供 Ethernet、PCIe、optical connectivity 和 rack-level networking。
+- **以太网 AI 网络芯片平台商。** Tomahawk、Jericho、Thor、SUE、CPO/Davisson、optical DSP/SerDes 组成 scale-out、scale-up、scale-across 网络组合。
+- **VMware 私有云软件商。** 通过 VMware Cloud Foundation 把企业私有云、混合云和 AI inference 部署绑定在订阅/许可证体系里。
+- **传统半导体现金流提供者。** Apple 无线、broadband、storage、enterprise networking、industrial 等仍有收入，但在本次 AI 尽调中不是主要增量。
+
+### 1.2 投资人心中的公司画像
+
+| 画像 | 为什么成立 | 反面约束 |
+|---|---|---|
+| AI ASIC 卖铲者 | Q2 AI semiconductor 108 亿美元、Q3 指引 160 亿美元；OpenAI 10GW、AI XPV 20GW+ 平台；Q2 新增长期 custom AI accelerators RPO | 客户高度集中；Google/Meta/OpenAI/Anthropic 项目节奏可能 lumpiness 极强 |
+| 以太网 AI 网络核心供应商 | Tomahawk 6 102.4T 量产，Jericho4、Thor Ultra、Taurus DSP、CPO/Davisson 覆盖交换、路由、NIC、光电 | NVIDIA NVLink/InfiniBand、Cisco、Marvell、Arista 自研/多供应商压价 |
+| VMware 高毛利现金牛 | FY2026 Q2 software 收入 71.78 亿美元，分部经营利润率约 78.7% | VMware 客户对涨价、授权变化和迁移替代仍有反弹；软件增速只有高个位数到低双位数 |
+| Serial acquirer / capital allocator | CA、Symantec Enterprise、VMware 等收购后强力整合、降本、提高现金流 | 高杠杆、商誉/无形资产摊销、监管和客户关系风险 |
+| 高估值复合平台 | AI 增速 + 软件现金流 + 强 FCF，使估值显著高于多数传统半导体 | PE/PS 已很贵，市场对“没有上调长期 AI 指引”反应很剧烈 |
+
+### 1.3 最近 3 年重大业务变化
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2023-11-22 | 完成 VMware 收购。 | Broadcom 从半导体 + CA/Symantec 软件，升级为拥有企业虚拟化和私有云核心控制面的基础设施软件公司；同时承担更高债务和客户迁移/涨价争议。 |
+| 2024-2025 | VMware 集成、产品组合收缩到 VCF 等核心套件，推动许可证/订阅和大客户续约。 | 软件收入从“收购整合”进入“高毛利续约 + RPO”阶段，但客户替代讨论增加。 |
+| 2024-2026 | AI semiconductor revenue 连续加速，定制 AI accelerators 和 AI networking 从项目收入变成公司主增长项。 | 半导体分部收入 mix 快速向 AI 数据中心迁移，非 AI 半导体被边缘化。 |
+| 2025-10-13 | OpenAI 与 Broadcom 官方宣布 10GW OpenAI-designed AI accelerators，目标 2026H2 开始部署、2029 年底完成。 | 把“神秘大客户”从传闻变为官方项目，确认 Broadcom 不只是 Google/Meta 的 ASIC 供应商，而是 frontier lab XPU 平台伙伴。 |
+| 2026-03 | Tomahawk 6 102.4T production volume shipping、Taurus 400G/lane optical DSP sampling。 | AI 网络从 800G/51.2T 过渡到 1.6T/102.4T 和 3.2T 前夜，Broadcom 抢先锁住交换 ASIC 与光 DSP 路线。 |
+| 2026-06 | Q2 10-Q 披露 RPO 1,646 亿美元、采购承诺 1,281 亿美元，并包含新增长期 custom AI accelerators 合同；AI XPV 与 Apollo/Blackstone 启动 350 亿美元首期、20GW+ 平台。 | 订单、融资、供给和客户部署从芯片销售扩展到 XPU/rack/platform，机会更大但资产负债表外和客户信用风险也更大。 |
+
+### 1.4 产业链定位
+
+AVGO 位于 AI 基建价值链的“定制芯片和网络控制层”，不是晶圆代工、HBM 供应商或普通服务器厂。
+
+```text
+模型/云客户：OpenAI、Anthropic、Google、Meta、Microsoft、AWS、Oracle、NeoCloud
+  -> Broadcom custom XPU / AI ASIC design and supply
+  -> Broadcom Ethernet / PCIe / SerDes / optical connectivity
+  -> TSMC / HBM / CoWoS / OSAT / substrate / ATE / ODM
+  -> AI rack / AI cluster / data center
+  -> VMware private cloud and enterprise AI inference stack
+```
+
+与 NVIDIA 的差异：NVIDIA 是 GPU + NVLink + CUDA 全栈平台，AVGO 是客户自研 ASIC/XPU、开放以太网、merchant silicon 和软件现金流平台。与 Marvell 的差异：Marvell 在 custom silicon、optics、storage、DPU/PHY 也有 AI 暴露，但 AVGO 当前 AI 半导体收入基数、RPO、switch ASIC 和 VMware 软件现金流更大。
+
+## 2. 估值快照与资产负债表健康度
+
+### 2.1 最新估值与利润率
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | 376.08 美元 | 2026-06-11 15:32 UTC 快照 | 日内变动；Q2 财报后股价从高位明显回撤。 |
+| 稀释股本 | 48.76 亿股 | FY2026 Q2 10-Q 加权稀释股数 | 用于估算市值。 |
+| 市值 | 约 1.83 万亿美元 | 股价 376.08 美元 × 稀释股本 48.76 亿股 | 若用基本股本 47.47 亿股，约 1.79 万亿美元。 |
+| TTM 收入 | 754.65 亿美元 | FY2025 Q3 至 FY2026 Q2 | Q3 159.52 + Q4 180.15 + Q1 193.11 + Q2 221.87。 |
+| TTM 收入增速 | +32.3% | 对比前四个季度约 570.46 亿美元 | 增长主要来自 AI 半导体和 VMware。 |
+| FY2026 Q2 毛利率 | 69% | 公司 10-Q | Q2 gross margin 154.15 亿美元。 |
+| FY2026 Q2 净利率 | 42.0% | GAAP net income 93.10 亿美元 / revenue 221.87 亿美元 | 受软件收入、高经营杠杆和税项影响。 |
+| TTM GAAP 净利率 | 38.9% | TTM GAAP net income 293.17 亿美元 / revenue 754.65 亿美元 | 高于传统半导体平均。 |
+| GAAP TTM PE | 约 62.7x | 股价 376.08 / TTM GAAP EPS 约 6.00 | TTM EPS 为 Q3 0.85 + Q4 1.74 + Q1 1.50 + Q2 1.91。 |
+| Non-GAAP TTM PE | 约 46.3x | 股价 376.08 / TTM Non-GAAP EPS 约 8.13 | Q3 1.69 + Q4 1.95 + Q1 2.05 + Q2 2.44。 |
+| Forward PE | 约 24x-32x | 2026-06 公开估值页与 FY2026/FY2027 EPS 估算区间 | Yahoo 口径 forward PE 约 32x；StockAnalysis 口径 forward PE 约 23.6x。差异来自 next fiscal year 与 NTM 口径不同。 |
+| TTM PS | 约 24.3x | 市值 1.83 万亿美元 / TTM revenue 754.65 亿美元 | 与 Yahoo/StockAnalysis 的约 23.5x-24.1x 接近。 |
+| FY2026E PS | 约 17x-18x | 本文按 H1 414.98 亿 + Q3 guide 294 亿 + Q4 约 300-350 亿估算 | 若 FY2027 AI 收入继续高增，forward PS 会继续下降。 |
+
+估值判断：AVGO 已按“AI 半导体高速增长 + VMware 软件现金流”定价，不再是低 PE 半导体股。股价短期弹性取决于 Q3/Q4 AI revenue 是否继续上修、RPO 转收入是否顺利、毛利率是否被 AI rack/lease mix 压低，以及大客户是否出现竞争替代。
+
+### 2.2 资产负债表和现金流
+
+| 项目 | 数值 | 日期 | 解读 |
+|---|---:|---|---|
+| Cash and equivalents | 196.28 亿美元 | 2026-05-03 | Q2 现金显著高于 Q1 141.74 亿美元。 |
+| Debt principal | 667.20 亿美元 | 2026-05-03 | 绝对债务高，主要来自收购和长期票据。 |
+| Net debt | 约 470.92 亿美元 | 2026-05-03 | 用 cash 抵减 debt principal。 |
+| TTM adjusted EBITDA | 约 512.92 亿美元 | FY2025 Q3 至 FY2026 Q2 | Q3 107.02 + Q4 122.18 + Q1 131.28 + Q2 152.44。 |
+| Net debt / TTM adjusted EBITDA | 约 0.9x | 本文估算 | 杠杆对当前现金流来说可控。 |
+| FY2026 Q2 operating cash flow | 104.93 亿美元 | Q2 | 同比 +60%。 |
+| FY2026 Q2 free cash flow | 102.62 亿美元 | Q2 | FCF margin 46%。 |
+| TTM free cash flow | 约 327.62 亿美元 | FY2025 Q3 至 FY2026 Q2 | 现金创造能力强。 |
+| RPO | 1,646 亿美元 | 2026-05-03 | 约 30% 预计 12 个月内确认，包含 Q2 新增长期 custom AI accelerator 合同。 |
+| Purchase commitments | 1,281.10 亿美元 | 2026-05-03 | 2027 年 552.14 亿、2028 年 728.70 亿，显示 AI 供应链锁产强度。 |
+| Contract liabilities | 142.42 亿美元 | 2026-05-03 | 约 64% 与 termination-for-convenience 合同相关。 |
+| Inventory | 43.28 亿美元 | 2026-05-03 | 从 2025-11-02 的 22.70 亿显著上升，符合 AI 供给准备。 |
+
+健康度评估：
+
+- **短期健康。** FCF 强、net leverage 低、债务期限分散，7.5B revolving credit 未提取，足以覆盖股息、回购和近期偿债。
+- **长期要看 AI 合同质量。** 1,646 亿美元 RPO 和 1,281 亿美元采购承诺是增长证据，也意味着若客户推迟、融资断裂或需求回撤，AVGO 的采购/租赁/客户信用风险上升。
+- **毛利率结构会变差但经营利润仍强。** 10-Q 明示 semiconductor gross margin 低于 software；custom AI accelerators、XPU rack 销售或租赁可能压低 gross margin，但规模和软件现金流使 Non-GAAP operating margin 指引仍在 67%。
+- **VMware 收购后的债务风险被现金流快速稀释。** 当前最大风险不再是“还不起债”，而是 AI 硬件融资模式让 AVGO 承担类似供应链金融或租赁 backstop 的新风险。
+
+## 3. 最新和最近 4 次财报对比
+
+说明：AI semiconductor revenue 是管理层披露口径，包含 custom AI accelerators 和 AI networking，不等于全部 semiconductor revenue。订单/交期列中，只有 RPO、采购承诺、合同负债等为 10-Q 披露；客户名、项目金额、交付窗口若无公司披露则按“推断/渠道”标注。
+
+| 财报季度 | 总收入 / 同比 | Semiconductor Solutions | Infrastructure Software | AI semiconductor revenue | 利润和现金流 | 订单、交期、取消率和关键线索 |
+|---|---:|---:|---:|---:|---:|---|
+| FY2026 Q2，截至 2026-05-03，披露 2026-06-03/10-Q 2026-06-09 | 221.87 亿美元，+48% | 150.09 亿美元，+79%，占 68%；分部经营利润 92.81 亿美元，分部经营利润率 61.8% | 71.78 亿美元，+9%，占 32%；分部经营利润 56.47 亿美元，利润率 78.7% | 108 亿美元，+143%；占总收入 48.7%，占半导体 72.0% | GAAP NI 93.10 亿；Non-GAAP NI 120.74 亿；Adj EBITDA 152.44 亿，69%；FCF 102.62 亿，46% | RPO 1,646 亿美元，约 30% 未来 12 个月确认，包含 Q2 新增长期 custom AI accelerators 合同；采购承诺 1,281 亿美元；Q3 AI semi 指引 160 亿；库存 43.28 亿。订单大幅超过短期出货能力，交付主要受先进制程、HBM、封装、光互联、电力/机架验收约束。 |
+| FY2026 Q1，截至 2026-02-01，披露 2026-03-04 | 193.11 亿美元，+29% | 125.15 亿美元，+52%，占 65%；本文由 H1/Q2 差分估算分部经营利润 75.03 亿，利润率 59.9% | 67.96 亿美元，+1%，占 35%；差分估算分部经营利润 53.23 亿，利润率 78.3% | 84 亿美元，+106%；占总收入 43.5%，占半导体 67.1% | GAAP NI 73.49 亿；Non-GAAP NI 101.85 亿；Adj EBITDA 131.28 亿，68%；FCF 80.10 亿，41% | Q1 10-Q RPO 450 亿美元，约 33% 未来 12 个月确认；Q2 指引 AI semi 107 亿。Q1 到 Q2 RPO 跳升说明 Q2 新签 AI accelerator 长约是订单拐点。 |
+| FY2025 Q4，截至 2025-11-02，披露 2025-12-11 | 180.15 亿美元，+28% | 110.72 亿美元，+35%，占 61% | 69.43 亿美元，+19%，占 39% | 约 65 亿美元，+74%；占总收入 36.1%，占半导体 58.7% | GAAP NI 85.18 亿；Non-GAAP NI 97.14 亿；Adj EBITDA 122.18 亿，68%；FCF 74.66 亿，41% | 公司指引 FY2026 Q1 AI semi 82 亿美元，同比翻倍，主要来自 custom AI accelerators 和 Ethernet AI switches。软件端 FY2026 预期低双位数增长，Q1 renewal seasonality 明显。 |
+| FY2025 Q3，截至 2025-08-03，披露 2025-09-04 | 159.52 亿美元，+22% | 91.66 亿美元，+26%，占 57% | 67.86 亿美元，+17%，占 43% | 52 亿美元，+63%；占总收入 32.6%，占半导体 56.7% | GAAP NI 41.40 亿；Non-GAAP NI 84.04 亿；Adj EBITDA 107.02 亿，67%；FCF 70.24 亿，44% | Q4 AI semi 指引 62 亿美元，预计连续第 11 个季度增长。公司称增长来自 custom AI accelerators、networking 和 VMware。Q3 是 AI 加速从高双位数向三位数增长前的基线。 |
+| FY2025 Q2，截至 2025-05-04，对比数据来自 FY2026 Q2 10-Q | 150.04 亿美元 | 84.08 亿美元，占 56%；分部经营利润 48.06 亿，利润率 57.2% | 65.96 亿美元，占 44%；分部经营利润 49.87 亿，利润率 75.6% | 约 44.4 亿美元，由 FY2026 Q2 108 亿 / 2.43 反推；占总收入约 29.6%，占半导体约 52.8% | GAAP NI 49.65 亿；Non-GAAP NI 77.87 亿；Adj EBITDA 100.01 亿；FCF 64.11 亿 | 该季度 AI 已是半导体收入半数以上，但公司总收入仍主要由 VMware 和非 AI 半导体共同支撑。与 FY2026 Q2 对比，AI 半导体单季多了约 63.6 亿美元。 |
+
+### 3.1 五个季度的核心变化
+
+- **AI semiconductor revenue 占总收入从约 29.6% 上升到 48.7%，占半导体收入从约 52.8% 上升到 72.0%。** 这意味着 AVGO 半导体分部已经被 AI 重塑。
+- **Software 收入增长慢，但利润率极高。** Q2 FY2026 infrastructure software 经营利润率约 78.7%，是公司 FCF 和估值稳定器。
+- **Q2 FY2026 是 backlog/RPO 结构性拐点。** Q1 RPO 450 亿美元，Q2 跳到 1,646 亿美元，核心变化是新增长期 custom AI accelerator 合同。
+- **非 AI 半导体被稀释。** Q3 FY2026 指引中市场资料显示非 AI 半导体约 45 亿美元，同比约 +12%，相比 AI semi 160 亿美元增速不重要。
+
+## 4. FY2026 最新指引、业务收入占比和产品映射
+
+### 4.1 FY2026 Q3 指引
+
+| 指标 | FY2026 Q3 指引 | 同比/含义 |
+|---|---:|---|
+| 总收入 | 约 294 亿美元 | 同比 +84%，高于 Q2 的 221.87 亿美元。 |
+| AI semiconductor revenue | 约 160 亿美元 | 同比 +200% 以上，较 Q2 +48%。 |
+| Non-GAAP operating income | 约收入 67% | 约 197 亿美元级别。 |
+| Adjusted EBITDA | 约收入 68% | 约 200 亿美元级别。 |
+| 增长主轴 | custom AI accelerators + AI networking + VMware VCF | AI 是绝对主轴，software 提供高 margin。 |
+
+### 4.2 业务和产品矩阵
+
+| 业务/产品层 | 代表产品和型号 | 当前收入贡献 | 增速 | 是否重点 | 判断 |
+|---|---|---:|---:|---|---|
+| Custom AI accelerators / XPU | OpenAI-designed accelerators with Broadcom；hyperscaler custom XPU；3.5D XDSiP；HBM + advanced package + Ethernet rack | Q2 AI semi 108 亿美元中最大组成之一，本文估计 55-70% 属于 custom accelerator/XPU 和强绑定 silicon | Q2 +143%，Q3 指引 +200%+ | 是 | 未来一年最大收入弹性和最大客户集中风险都在这里。 |
+| AI Ethernet switch / router silicon | Tomahawk 5/6、Tomahawk Ultra、Jericho4、SUE、TH6-Davisson CPO | Q2 AI semi 中第二大组成，本文估计 20-30% | 高双位数到三位数，随 800G/1.6T 和 AI cluster 放量 | 是 | Broadcom 在 merchant switch ASIC 领先，Tomahawk 6 production volume 是强证据。 |
+| AI NIC / endpoint / PCIe connectivity | Thor Ultra 800G AI Ethernet NIC、PCIe Gen6、PCIe switches、SerDes/PHY | 当前收入基数小于 switch/XPU，但 attach rate 高 | sampling 到量产导入期，2027 弹性更大 | 是，小基数潜力 | 非 NVIDIA XPU/AMD/open Ethernet rack 的关键小产品，不能漏。 |
+| Optical DSP / TIA / CDR / laser/PD | Taurus BCM83640 3nm 400G/lane optical DSP；800G/1.6T DSP；EML/PD interoperability | 当前可能数亿美元到低十亿美元/季级别，随 1.6T 增长 | 高增长，但 ASP 周期性强 | 是，小产品但高利润池 | 每 optical port 的真实 Broadcom content 高，且与 Tomahawk/Jericho 互相拉动。 |
+| CPO/NPO / optical engine | Tomahawk 6-Davisson CPO、CPO switch、ELS/optical connectivity ecosystem | 2026 收入仍早期，更多是 design-in 和客户验证 | 2027 以后弹性大 | 是，早期期权 | 2026 不应高估收入，但应重视认证和架构卡位。 |
+| VMware Cloud Foundation / private cloud | VMware Cloud Foundation、vSphere/vSAN/NSX、Tanzu/Spring、private AI inference | Q2 71.78 亿美元，32% 总收入 | +9%，FY2026 低双位数到中个位数/低双位数 | 是，但不是高 beta AI 芯片 | 高利润现金流。AI private cloud 叙事有帮助，但不是 GPU/XPU BOM。 |
+| 跳过：Apple wireless / broadband / storage / industrial / legacy software | RF front-end、Wi-Fi/Bluetooth/GPS、broadband modem、HDD/SSD controller、mainframe/security 非 AI 部分 | 仍有现金流 | 多为稳定或低增速 | 本报告降权 | 与 AI 数据中心主题弱相关，除非影响总毛利和现金流。 |
+
+## 5. 高增长/关键产品当前评估
+
+评分说明：5 为最高。重要性表示对 AI 基建技术栈的重要程度；时间紧急性表示客户未来 12 个月必须锁产/认证的程度；供需紧张表示越高越供不应求；垄断/溢价表示 Broadcom 定价权和替换难度。
+
+| 产品/业务 | 当前对 AVGO 收入贡献 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 当前判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Custom AI accelerators / XPU | 本文估计 Q2 约 60-75 亿美元；Q3 可能 95-120 亿美元 | >100%，Q3 AI semi 总口径 +200%+ | 5 | 5 | 5 | 4 | 直接决定 frontier lab 和 hyperscaler 的非 NVIDIA 第二路径。OpenAI 10GW、Anthropic/AI XPV、Q2 新增长约和 RPO 跳升是硬证据。 |
+| AI Ethernet switch/router silicon | 本文估计 Q2 约 22-32 亿美元；Q3 可能 35-50 亿美元 | 60%-120% 区间 | 5 | 5 | 4 | 5 | Tomahawk 6、Jericho4、Tomahawk Ultra 是 AI fabric 的核心控制点，200G SerDes 和 102.4T 提前量产提升溢价。 |
+| Thor Ultra / AI NIC / endpoint | 当前估计 Q2 低个位亿美元，2026H2-2027 提升 | 早期导入，高增长 | 4 | 4 | 4 | 3 | 800G NIC 仍 sampling/客户导入，小基数但对开放 Ethernet AI cluster 非常关键。 |
+| Optical DSP/TIA/CDR/Taurus | 当前估计 Q2 数亿美元到 10 亿美元级别；与 800G/1.6T optics 绑定 | 高双位数到三位数 | 4 | 5 | 4 | 4 | Taurus 400G/lane sampling，1.6T/3.2T 路线卡位；DSP/TIA/CDR 是光模块利润池核心。 |
+| CPO/NPO/Davisson | 当前收入低，更多是 2026 design-in | 低基数高弹性 | 4 | 3 | 3 | 4 | 2026 不是主要收入，但如果 2027 102.4T/204.8T 和 CPO 量产，溢价很高。 |
+| VMware VCF/private AI | Q2 71.78 亿美元 | +9% | 3 | 3 | 2 | 4 | 对 AI 基建不是物理 BOM，但企业私有云和 AI inference 能提高 VCF 续约和价格韧性。 |
+
+## 6. 一年后关键产品三情景预测
+
+口径：下表预测 2027 年中附近的季度收入能力或年化收入能力，不代表公司正式指引。
+
+| 产品/业务 | 基准情景，2027 年中 | 乐观情景，2027 年中 | 极度乐观情景，2027 年中 | 关键触发 |
+|---|---:|---:|---:|---|
+| Custom AI accelerators / XPU | 季度收入 110-150 亿美元，年化 440-600 亿；增速 45%-75%；重要性 5、紧急性 5、供需 4、溢价 4 | 季度 160-210 亿，年化 640-840 亿；增速 80%-120%；供需 5 | 季度 220-300 亿，年化 880-1,200 亿；增速 130%+；供需 5、溢价 5 | OpenAI 2H26 racks 顺利、AI XPV/Anthropic >1GW 兑现、Google/Meta/其他客户继续扩张，HBM/CoWoS 供给不掉链。 |
+| AI Ethernet switch/router silicon | 季度 40-60 亿，年化 160-240 亿；增速 35%-70%；重要性 5、供需 4、溢价 5 | 季度 65-90 亿，年化 260-360 亿；增速 80%-120% | 季度 95-130 亿，年化 380-520 亿；增速 130%+ | 1.6T/102.4T 新建 AI fabric 成为默认，高端客户从 800G spine 迁移到 1.6T，Tomahawk/Jericho 继续领先。 |
+| AI NIC / Thor Ultra / endpoint | 季度 5-10 亿，年化 20-40 亿；重要性 4、供需 3-4、溢价 3 | 季度 12-20 亿，年化 48-80 亿；供需 4 | 季度 25 亿以上，年化 100 亿以上；供需 5 | UEC 1.0、open Ethernet XPU rack、AMD/Meta/Microsoft/OCP 生态加速，Thor Ultra 从 sampling 进入量产。 |
+| Optical DSP/TIA/CDR/Taurus | 季度 10-18 亿，年化 40-72 亿；重要性 4、供需 4、溢价 4 | 季度 20-32 亿，年化 80-128 亿 | 季度 35-50 亿，年化 140-200 亿 | 1.6T modules near 10M 级别后继续扩张，Taurus 400G/lane 转客户量产，3.2T 提前导入。 |
+| CPO/NPO/Davisson | 季度 2-6 亿，年化 8-24 亿；重要性 4、供需 3、溢价 4 | 季度 8-18 亿，年化 32-72 亿 | 季度 20-40 亿，年化 80-160 亿 | Rubin/MI400/custom XPU 对 102.4T/204.8T 和低功耗交换提出硬要求，Davisson/Open CPX/ELS 进入客户量产。 |
+| VMware VCF/private AI | 季度 80-95 亿，年化 320-380 亿；增速 10%-20%；重要性 3、供需 2、溢价 4 | 季度 100-115 亿，年化 400-460 亿 | 季度 120 亿以上，年化 480 亿以上 | AI inference 和数据主权推动 private cloud，客户迁移替代率低于预期，VCF 大单续约顺利。 |
+
+## 7. BOM、每 MW / 每 rack / 每 GPU / 每 optical port 含量和价格传导链
+
+### 7.1 计算口径
+
+AI ASIC/XPU 没有统一公开 ASP。本文用三层估算：
+
+1. 公司确认收入：FY2026 Q2 AI semiconductor revenue 108 亿美元，Q3 指引 160 亿美元。
+2. 项目容量：OpenAI 10GW，AI XPV 20GW+，首期 350 亿美元支持 Anthropic >1GW。
+3. BOM 等价值：每 rack、每 XPU、每 800G/1.6T optical port、每 MW 的芯片和网络含量。
+
+### 7.2 当前 BOM 和内容量
+
+| 产品/业务 | 每 MW 内容量，当前估算 | 每 rack 内容量，当前估算 | 每 GPU/XPU 内容量 | 每 optical port 内容量 | 价格传导链 | 当前产能/收入能力 | 供应链采纳和认证 |
+|---|---:|---:|---:|---:|---|---:|---|
+| Custom AI XPU | 若 1MW 对应 5-10 个 100-200kW ASIC racks，Broadcom XPU + board/rack silicon revenue 约 1,500-4,000 万美元/MW；高端训练/推理可更高 | 150-600 万美元/rack，取决于 XPU 数量、HBM、package、network attach 和是否 AVGO 负责 rack silicon/lease | 5,000-25,000 美元/XPU 的 Broadcom 可确认 silicon revenue；内部转移价值可更高 | 间接带动 1-4 个 800G/1.6T 端口/XPU 等效 | 客户容量合同 -> XPU design/NRE -> TSMC/HBM/CoWoS -> Broadcom 交付 silicon/rack -> 客户按芯片、系统或 lease 确认 | Q2 已交付 AI semi 108 亿美元，Q3 指引 160 亿美元 | OpenAI 10GW 官方 term sheet；Q2 RPO 包含长期 custom AI accelerators；AI XPV 首期 >1GW Anthropic mid-2026。 |
+| Tomahawk/Jericho AI switch/router silicon | 1MW XPU cluster 网络 silicon 约 100-400 万美元/MW；若包含系统和 optics，网络订单显著更高 | 每 rack 通常分摊 1-4 个 switch ASIC 等值，Broadcom silicon 约 5-25 万美元/rack；高 radix/102.4T 集群更高 | 每 XPU 网络 switch silicon 分摊约 100-600 美元 | 800G/1.6T switch ASIC allocation 约 50-200 美元/port，视 radix 和 tiers | XPU/rack 需求 -> switch ASIC/SerDes -> switch system vendor -> optics/copper -> cluster acceptance | Tomahawk 6 已 production volume shipping，102.4T；Jericho4 sampling | Tomahawk 6 支持 512×200G 或 1024×100G SerDes；128K-XPU two-tier network；Jericho4 支持 100km+ RoCE 和 3.2Tbps HyperPort。 |
+| Thor Ultra / AI NIC | 每 MW 约 50-250 万美元的 NIC silicon/card content，取决于是否每 XPU 800G NIC attach | 每 rack 5-40 万美元，取决于 800G endpoint 数量 | 每 XPU 300-1,200 美元 chip/card silicon 等效，卡级 ASP 更高 | 不适用，endpoint 到 optical port 间接一一或多对一 | XPU endpoint bandwidth -> NIC/UEC/PCIe Gen6 -> server/OCP card -> switch fabric | 2025-10 sampling，2026-2027 转量产 | Thor Ultra 800G、PCIe Gen6 x16、UEC feature compliant；合作背书包括 Arista、Dell、HPE、Lenovo、Celestica、Inventec 等。 |
+| Optical DSP/TIA/CDR/Taurus | 每 MW 光 DSP/TIA content 约 30-150 万美元；大 pod/1.6T/CPO adoption 越高越高 | 每 rack 2-15 万美元，取决于 800G/1.6T 端口数 | 每 GPU/XPU 分摊 20-250 美元 | 800G FRO DSP 约 60-150 美元/颗；1.6T DSP 约 140-320 美元/颗；TIA/driver 25-90 美元/模块等效 | 端口速率升级 -> module vendor 采购 DSP/TIA/driver -> optics qualification -> hyperscaler volume PO | Taurus BCM83640 2026-03 开始 sampling；800G/1.6T DSP 已有成熟收入池 | Taurus 3nm 400G/lane，支持 1.6T 到 3.2T，符合 IEEE/OIF，已与 Broadcom 400G EML/PD 互通。 |
+| CPO/NPO/Davisson | 2026 当前每 MW 低，约 0-50 万美元；2027 若 CPO 进入高端 switch，可上升到 50-300 万美元/MW | 当前 0-5 万美元/rack；量产后可到 5-30 万美元/rack | 每 XPU 分摊小，但对网络功耗和可靠性重要 | CPO optical engine/ELS/connector/DSP 含量可达数百美元/port | switch ASIC power density -> CPO/NPO design-in -> ELS/optical engine/connector -> field reliability acceptance | 2026 主要是客户验证和小批量 | Tomahawk 6-Davisson 是第三代 CPO Ethernet switch；OCP 2025 展示多 ODM demo；Open CPX/OCI 标准化提升 2027 采用概率。 |
+| VMware VCF/private AI | 不按 MW 计价；若企业私有 AI 每 MW 需要虚拟化、Kubernetes、网络、安全和运维，软件 annual value 可为硬件 CapEx 的低个位数百分比 | 按 core/socket/cluster 订阅，不按 rack 标准 | 不适用 | 不适用 | 企业 AI/data sovereignty -> private cloud -> VCF bundle/renewal -> upfront license + subscription/service | Q2 software revenue 71.78 亿美元，分部经营利润率 78.7% | VCF 是核心产品，Broadcom Private Cloud Outlook 2026 强调生产 inference 向 private cloud 迁移。 |
+
+### 7.3 一年后产能和认证阶段三情景
+
+| 产品/业务 | 基准，2027 年中 | 乐观，2027 年中 | 极度乐观，2027 年中 |
+|---|---|---|---|
+| Custom AI XPU | 年化可交付 AI semi capacity 700-900 亿美元，其中 XPU 450-650 亿；OpenAI/Anthropic/Google/Meta 类项目进入多客户量产；取消率低但交付窗口可能按数据中心通电延后 | 年化 AI semi 1,000-1,250 亿，XPU 700-900 亿；2027 RPO 继续上修；大客户愿意接受 lease/advance payment | 年化 AI semi 1,300 亿以上，XPU 1,000 亿以上；AI XPV 扩张到多 GW，多客户竞争产能，Broadcom 拥有类似平台 bottleneck 溢价 |
+| AI switch/router | Tomahawk 6/Ultra/Jericho4 成为 1.6T/102.4T 标配之一；产能能力 200-300 亿美元年化 silicon/system influence | 产能能力 350-500 亿美元年化；102.4T 在新增高端 AI fabric 中占比快速提升 | 产能能力 600 亿美元以上；AI fabric bottleneck 反向拉动 XPU/rack 设计，Broadcom 定价权上升 |
+| AI NIC / Thor Ultra | 从 sampling/early adoption 进入量产，年化 20-40 亿美元 revenue pool | 年化 50-80 亿美元，UEC/OCP 生态把 endpoint 标准化 | 年化 100 亿美元级，open Ethernet rack 形成事实标准，部分替代 proprietary endpoint |
+| Optical DSP/TIA/CDR | Taurus 等 400G/lane 产品进入客户 qualification 和小量收入，年化 40-70 亿 | 1.6T 和早期 3.2T 同步上量，年化 80-130 亿 | 3.2T/400G-lane 提前，年化 150 亿以上，DSP/TIA 短缺维持高毛利 |
+| CPO/NPO/Davisson | 2027 小批量，年化 10-25 亿，主要为高端 switch 试产 | 年化 30-70 亿，Open CPX/ELS/Davisson 多客户认证 | 年化 100 亿以上，高端 102.4T/204.8T AI switch 开始默认采用 CPO/NPO |
+| VMware VCF/private AI | 年化 320-380 亿，高续约和低双位数增长 | 年化 400-460 亿，private AI 提高 VCF attach | 年化 480 亿以上，企业从 public cloud AI 成本压力回流 private cloud |
+
+## 8. 根据订单积压和供给预测未来一年业务增速
+
+### 8.1 真实订单证据
+
+| 证据 | 数字 | 置信度 | 对未来一年增速的含义 |
+|---|---:|---|---|
+| FY2026 Q2 AI semiconductor revenue | 108 亿美元，同比 +143% | 高 | 已确认收入，说明 AI 业务不是远期叙事。 |
+| FY2026 Q3 AI semiconductor guide | 160 亿美元，同比 +200%+ | 高 | 单季环比 +48%，未来 12 个月 run-rate 抬升。 |
+| RPO | 1,646 亿美元，约 30% 未来 12 个月确认 | 高 | 仅已承诺多年度合同；包含 Q2 新增长期 custom AI accelerators 合同。 |
+| Purchase commitments | 1,281 亿美元，其中 2027 552 亿、2028 729 亿 | 高 | AVGO 已为未来交付锁定大量供应，订单能见度强但也有采购义务。 |
+| OpenAI-Broadcom | 10GW custom AI accelerators，2H2026 开始，2029 年底完成 | 高，官方 | 2026H2-2029 长周期 XPU 和网络收入来源。 |
+| AI XPV Platform | 20GW+ through 2028，首期 350 亿美元支持 Anthropic >1GW，mid-2026 起部署 | 高，官方 | 让 XPU/rack 融资和客户部署更可行，但引入 financing/backstop 风险。 |
+| 客户集中 | FY2026 H1 前五大终端客户约 45% 收入 | 高，10-Q | 大客户任何延迟或替代都会放大季度波动。 |
+| 取消/延期风险 | 10-Q 明示客户可能 cancel/reduce/delay orders，或要求 lease/deferred payment | 高，风险披露 | 基准假设取消率低，但延期和融资结构变化是主要风险。 |
+
+### 8.2 未来一年增长预测
+
+| 业务 | 基准未来 12 个月增速 | 乐观未来 12 个月增速 | 极度乐观未来 12 个月增速 | 推导 |
+|---|---:|---:|---:|---|
+| AI semiconductor | +70%-110% | +120%-170% | +180%-240% | 从 Q2 108 亿和 Q3 160 亿出发，RPO 与采购承诺支持继续上行；瓶颈在 HBM/CoWoS/网络/通电。 |
+| Total Semiconductor Solutions | +45%-80% | +80%-120% | +120%-170% | AI 占比提升，非 AI 半导体低增长或稳定。 |
+| Infrastructure Software | +8%-15% | +15%-25% | +25%-35% | VCF 续约和 private AI 带动，但客户迁移和价格争议限制增速。 |
+| Company total revenue | +35%-65% | +65%-95% | +95%-130% | Q3 指引已是 +84%，未来取决于 FY2027 Q1/Q2 是否维持 250-300 亿美元级季度收入。 |
+| Free cash flow | +25%-55% | +55%-85% | +85%+ | AI hardware mix 可能压低 gross margin，但规模和 VMware 软件可维持高 FCF。 |
+
+### 8.3 订单和供给的关键反证指标
+
+1. Q3/Q4 AI semiconductor revenue 是否低于 160 亿/200 亿美元级别的市场预期路径。
+2. RPO 中 custom AI accelerators 是否继续增加，或下季度停止上修。
+3. Inventory 和 purchase commitments 是否转为积压而非收入。
+4. AI XPV、OpenAI、Anthropic 相关部署是否因电力、数据中心、融资、客户利用率延迟。
+5. Gross margin 是否因 rack lease/backstop 或硬件 mix 下降超过市场容忍。
+6. Google/Meta/其他客户是否把新增代际转给 MediaTek、Marvell、内部团队或其他 ASIC design service。
+
+## 9. 竞争格局、替代方案和客户替换成本
+
+### 9.1 Custom AI XPU / ASIC
+
+| 竞争对手 | 竞争方式 | AVGO 优势 | 风险 |
+|---|---|---|---|
+| Marvell | custom XPU、XPU attach、optics、switch/PHY | AVGO 当前 AI semi revenue 和 RPO 大很多，switch ASIC 更强 | Marvell 在 optics/NPO/CPO 和部分 custom wins 上有高弹性。 |
+| MediaTek / Alchip / GUC / Socionext | ASIC design service、implementation、Google/云厂潜在分工 | AVGO 拥有端到端 Ethernet/SerDes/networking/IP 和大客户历史 | 客户会多供应商化，尤其 Google TPU 后续代际可能拆分。 |
+| 云厂内部团队 | Google TPU、AWS Trainium、Microsoft Maia、Meta MTIA | 内部团队仍需 IP、SerDes、networking、advanced packaging support | 长期客户可能把更多设计能力内化，只保留 AVGO 作为 IP/implementation 伙伴。 |
+| NVIDIA / AMD merchant GPU | 通用训练/推理平台 | AVGO 在定制 workload 和成本/功耗优化上有优势 | CUDA/NVLink 生态和 GPU 泛用性仍强，ASIC 需要 workload 稳定和软件迁移。 |
+
+客户替换成本：高。定制 ASIC/XPU 涉及 RTL/physical design、HBM、SerDes、package、software stack、rack/network validation、数据中心验收，通常 18-36 个月周期。客户可在下一代项目引入二供，但难以在已量产代际中快速替换。
+
+### 9.2 AI Ethernet switch/router/NIC
+
+| 竞争对手 | 竞争方式 | AVGO 优势 | 风险 |
+|---|---|---|---|
+| NVIDIA | Spectrum-X、NVLink/NVSwitch、InfiniBand、BlueField/ConnectX | NVIDIA 在 GPU 集群全栈强，但 AVGO 是开放 Ethernet merchant silicon 领导者 | NVIDIA 若把 Spectrum-X 绑定 GPU 销售，能压缩 AVGO 在 NVIDIA GPU 集群份额。 |
+| Cisco Silicon One | G300 102.4T、Nexus/8000 系统 | AVGO merchant ecosystem 更广，ODM/OCP 更深 | Cisco 有系统、客户关系和 ASIC 路线，能在企业/云网络抢份额。 |
+| Marvell Teralynx | 102.4T switch、optics/NPO/CPO | AVGO Tomahawk 6 production volume 更早 | Marvell 低功耗和 optics attach 可能赢特定云厂。 |
+| Arista | switch system、EOS、Etherlink | Arista 同时是客户/生态伙伴，也可能通过 merchant silicon 受益 | 系统利润更多被 Arista/Celestica/Cisco 捕获，AVGO 只拿 silicon content。 |
+| AMD/Pensando、Intel、其他 NIC | endpoint/NIC/DPU | Thor Ultra UEC 800G 先发 | UEC 标准化会降低长期锁定度，价格竞争增强。 |
+
+客户替换成本：中高。Switch ASIC 可在新 generation 换供应商，但 NOS、telemetry、congestion control、optics qualification、rack reference design、data center operations 迁移成本很高。AI cluster 一旦验收，客户倾向维持同一代网络一致性。
+
+### 9.3 Optical DSP / CPO
+
+| 竞争对手 | 竞争方式 | AVGO 优势 | 风险 |
+|---|---|---|---|
+| Marvell | DSP、coherent、NPO/CPO、custom XPU attach | AVGO 同时控制 switch ASIC、SerDes、DSP、EML/PD 互通 | Marvell 在 coherent/optics 生态强，可能拿下非 AVGO switch 的光电份额。 |
+| Cisco/Acacia | coherent DSP、1.6T DSP、system | AVGO 在 merchant optics 和 switch attach 强 | Cisco/Acacia 在 DCI/coherent 算法和系统化强。 |
+| MaxLinear、Semtech、MACOM | 200G/224G DSP/TIA/driver/linear optics | AVGO 产品线完整、客户绑定深 | 线性光/LPO/LRO 若开放多供应商，AVGO ASP 受压。 |
+| Lumentum/Coherent/Sumitomo/Mitsubishi | EML/CW laser/InP/optical engine | AVGO 有部分光芯片和 DSP，但不是所有器件都垄断 | 激光和 InP 供给瓶颈可能被器件厂拿走溢价。 |
+
+客户替换成本：中。Optical DSP/TIA/CDR 可多供应商，但每个模块、交换机、客户链路都需要互操作、BER、thermal、firmware、field reliability 认证。CPO/NPO 的替换成本高于普通 pluggable optics。
+
+### 9.4 VMware / private cloud
+
+| 竞争对手 | 替代方式 | AVGO 优势 | 风险 |
+|---|---|---|---|
+| Nutanix、Red Hat OpenShift、Microsoft Azure Stack、public cloud IaaS | 虚拟化、Kubernetes、HCI、public cloud 迁移 | VMware 装机基数、运维习惯、企业关键 workload、VCF bundling | 授权涨价和产品收缩引发客户迁移，尤其 SMB/中型客户。 |
+| Open-source KVM/Kubernetes | 自建私有云 | 成本低但运维复杂 | 大客户可能逐步替代非核心 VMware workload。 |
+
+客户替换成本：高但不是不可替代。核心生产系统迁移困难、风险高、周期长；但 3-5 年维度客户可通过 Kubernetes、公有云、Nutanix/Red Hat 降低 VMware 暴露。
+
+## 10. 哪些产品和业务被跳过或降权
+
+| 产品/业务 | 为什么跳过或降权 | 仍需跟踪的理由 |
+|---|---|---|
+| Apple wireless / RF front-end / connectivity | 增速相对低，与 AI 数据中心主题弱相关；客户集中但不是本次 AI 基建主线 | Apple cycle 会影响非 AI 半导体稳定性和毛利。 |
+| Broadband / cable / PON / Wi-Fi 7 | 有产品竞争力，但短期不驱动 AVGO 估值重估 | 宽带库存周期和运营商 CapEx 影响非 AI baseline。 |
+| Storage controller / HDD / SSD / SAS/SATA | 与 AI 存储有间接关系，但不是 AVGO 主要 AI 收入弹性 | AI storage、PCIe/CXL、enterprise SSD controller 可能带来小幅增量。 |
+| Industrial / automotive | AVGO 暴露有限，增长不够突出 | 宏观周期影响传统半导体收入。 |
+| Mainframe/Symantec/CA 非 VMware 软件 | 高现金流但增长低，与 AI rack BOM 无关 | 稳定 FCF、支撑债务和回购。 |
+| 普通光模块 assembly | AVGO 主要在 DSP/SerDes/EML/PD/ASIC，不是普通模块装配厂 | 模块 ASP 下行会影响 DSP/TIA 价格和客户采购节奏。 |
+
+## 11. 投资跟踪清单
+
+| 时间窗口 | 应重点看什么 | 结论阈值 |
+|---|---|---|
+| 未来 1-3 个月 | Q3 AI semi 是否接近或超过 160 亿美元；Q3 total revenue 是否接近 294 亿美元；gross margin 是否因 AI hardware mix 下行 | 若 AI semi 低于 150 亿且 RPO 不上修，市场会重新定价增长斜率。 |
+| 未来 3-6 个月 | OpenAI 2H26 custom accelerator/rack 部署信号；AI XPV/Anthropic >1GW 是否 mid-2026 起可见；purchase commitments 是否转为收入 | 若部署延迟但 RPO 增加，属于时间错配；若 RPO/commitments 同时转弱，风险更大。 |
+| 未来 6-12 个月 | FY2027 H1 AI semi 季度 run-rate 是否进入 180-230 亿美元以上；Tomahawk 6/Thor Ultra/Taurus 是否形成客户量产 | 若仅 XPU 增长而 network/optics 不跟，说明平台 attach 低于预期。 |
+| 未来 12-24 个月 | CPO/NPO/Davisson、3.2T/400G-lane、UEC/Thor、SUE 是否在客户集群中放量 | 这是从“ASIC 供应商”升级为“AI network platform”估值的关键。 |
+
+## 12. 来源和证据链
+
+### 12.1 公司和监管来源
+
+- Broadcom FY2026 Q2 financial results, 2026-06-03: https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial
+- Broadcom FY2026 Q2 Form 10-Q, filed 2026-06-09: https://www.sec.gov/Archives/edgar/data/1730168/000173016826000054/avgo-20260503.htm
+- Broadcom FY2026 Q1 financial results, 2026-03-04: https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-first-quarter-fiscal-year-2026-financial
+- Broadcom FY2025 Q4 and FY2025 financial results, 2025-12-11: https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-fourth-quarter-and-fiscal-year-2025
+- Broadcom FY2025 Q3 financial results, 2025-09-04: https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2025-financial
+- Broadcom completes VMware acquisition, 2023-11-22: https://investors.broadcom.com/news-releases/news-release-details/broadcom-completes-acquisition-vmware
+- Broadcom, Apollo and Blackstone AI XPV Platform, 2026-06-09: https://investors.broadcom.com/news-releases/news-release-details/broadcom-apollo-and-blackstone-establish-landmark-strategic
+- OpenAI and Broadcom 10GW custom accelerator collaboration, 2025-10-13: https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10
+
+### 12.2 产品和技术来源
+
+- Tomahawk 6 102.4 Tbps production volume shipping, 2026-03-12: https://investors.broadcom.com/news-releases/news-release-details/broadcom-now-shipping-worlds-first-1024-tbps-switch-production
+- Thor Ultra 800G AI Ethernet NIC, 2025-10-14: https://investors.broadcom.com/news-releases/news-release-details/broadcom-introduces-industrys-first-800g-ai-ethernet-nic
+- Jericho4 distributed AI router, 2025-08-04: https://investors.broadcom.com/news-releases/news-release-details/broadcom-ships-jericho4-enabling-distributed-ai-computing-across
+- Taurus BCM83640 400G/lane optical DSP, 2026-03-11: https://investors.broadcom.com/news-releases/news-release-details/broadcom-delivers-industrys-first-400glane-optical-dsp-next
+- Broadcom OCP AI networking portfolio, 2025-10: https://investors.broadcom.com/news-releases/news-release-details/broadcom-delivers-future-ai-infrastructure-end-end-ai-networking
+- Valuation cross-checks: Yahoo Finance AVGO key statistics and StockAnalysis AVGO statistics pages, retrieved 2026-06-11.
+
+### 12.3 本地行业资料
+
+- `行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+- `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+
+## 13. 最后判断
+
+AVGO 的投资主线已经从“稳健高现金流半导体收购平台”切换为“非 NVIDIA AI 算力和以太网网络的核心卖铲者”。公司最新财报和 10-Q 给出的证据非常硬：AI 半导体单季 108 亿美元，下一季指引 160 亿美元，RPO 1,646 亿美元并包含新增长期 custom AI accelerator 合同，采购承诺 1,281 亿美元。  
+
+但这也意味着估值对未来兑现要求很高。最乐观的叙事是：OpenAI、Anthropic、Google、Meta 等客户把多 GW 自研 XPU 和 Ethernet AI fabric 作为 NVIDIA 之外的第二主线，Broadcom 同时卖 XPU、switch ASIC、NIC、DSP、CPO 和软件。最重要的反证是：客户多供应商化导致下一代 ASIC 转单，数据中心通电/融资延迟让 RPO 转收入变慢，或者 AI rack/lease 模式压低毛利并提高信用风险。  
+
+基准投资判断：AVGO 仍是 AI 基建中最强的“定制 ASIC + 网络 silicon + 软件现金流”组合之一，但当前估值已经不能只看收入高增，必须每季度跟踪 AI semi run-rate、RPO、purchase commitments、gross margin、客户集中和融资 backstop 六个指标。

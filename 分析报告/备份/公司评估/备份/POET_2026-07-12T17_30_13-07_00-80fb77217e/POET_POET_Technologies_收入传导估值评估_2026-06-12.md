@@ -1,0 +1,166 @@
+# 公司收入传导与价值传导评估：POET Technologies
+
+报告日期：2026-06-12  
+公司代号：POET  
+公司名称：POET Technologies  
+主口径：NTM，2026-06-12 至 2027-06-12  
+资料边界：使用 `公司调研/`、`行业调研/` 内相关资料，并用 POET 官方公告、SEC/EDGAR 文件和公司产品页校验关键经营数据；未读取、引用或继承 `特征量化/`、Signals、回归、评分或排序结果。  
+结论边界：本报告只评估收入、利润、现金流和经营质量传导，不给投资评级，不判断股价区间，不使用市场价格或估值倍数作为经营证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表全部使用 NTM。FY2026/FY2027、5 年采购框架、长期 run-rate 和 CPO/optical I/O 期权只作为补充，不替代 NTM 基准。
+- 当前收入基准、指引和 run-rate：POET 2025 全年 NRE 和产品收入为 `$1.075M`；2026Q1 收入为 `$0.503M`，Q1 年化仅约 `$2.0M`。公司没有传统年度收入指引，但给出 2026 年 `>30,000` 台/颗 optical engines 出货目标、`>$5M` POET Infinity 800G optical engine 订单、Lumilens `$50M` EOI-based engine 初始 PO、Lessengers 1.6T 样品、LITEON 2026 年底原型和 2027 高量产目标等经营节点。
+- 重要产品/业务线：`POET Infinity 800G/400G optical engines`、`POET Teralight/1.6T engines 与 Lessengers 2xDR4`、`Lumilens EOI-based engines`、`Blazar/LightBar/Starlight 外置光源 ELS`、`Wavelight/LITEON 模块合作`、`3.2T/TFLN/optical I/O 远期期权`。
+- NTM 公司收入四情景：悲观 `$6M-$15M`；基准 `$22M-$50M`；乐观 `$75M-$150M`；极度乐观 `$180M-$320M`。基准并不把 Lumilens `$50M` 全额计入，只承认 2026H2-2027H1 内有开发、样品、首批确认和部分量产收入的可能。
+- 利润或 EBITDA 四情景：悲观和基准仍明显亏损；乐观可把净亏损压到 `$0-$35M` 级别或接近 EBITDA break-even；极度乐观才可能出现正 EBITDA/经营利润。POET 当前仍是从 NRE/样品向产品收入切换的小收入公司，利润率尚未被量产验证。
+- 最大传导瓶颈：不是 AI 光互联行业需求，而是 POET 从客户设计导入到可确认收入的路径，包括客户 qualification、订单取消/延迟、Malaysia 产线良率、产品验收、Lumilens 项目开发成功和 revenue-recognition 节奏。
+- 最大利润率变量：Optical engine/ELS 是否凭 passive alignment、wafer-level integration 和高功率光源取得高毛利，而不是变成低毛利模块/EMS pass-through；同时要看 800G ASP 下行和 1.6T/ELS mix 上升谁占主导。
+- 最大现金流变量：客户预付款、应收账款、库存和产线爬坡成本。2026Q1 经营现金流为 `-$8.81M`，但现金与短期投资为 `$429M`，5 月又完成 `$400M` 融资，短期现金风险低于执行风险。
+- 可信度：基准收入可信度为“中”，因为 `$5M` 订单和 `$50M` Lumilens 初始 PO是真实正向证据，但 NTM 收入确认比例、毛利率和客户重复订单仍需要估算；极度乐观可信度为“低”。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| POET Infinity 800G/400G optical engines | 2026Q1 未分拆；已披露 `>$5M` production order，预计 2026H2 交付 | 报表无法分拆；NTM 基准贡献约 25-35% | 最先收入化的产品线；直接连到 800G AI data server 模块 | B | 进入基准；基准只纳入已披露订单和少量重复订单，不假设大客户全面转单 | 后续 repeat order、1.6T daisy-chain 设计 |
+| Teralight / 1.6T engines / Lessengers 2xDR4 | 无已披露大额 production PO；样品目标 2026Q2 | 当前收入无法可靠量化；NTM 基准 5-10% | 对 2027 新增 AI fabric 最关键，但 NTM 多数仍是样品、NRE、初量产 | C/D | 小比例进入基准，仅限 NRE、样品和小批量；大额收入放在乐观以上 | 2027 1.6T 默认端口、3.2T 延伸 |
+| Lumilens EOI-based engines | 初始 PO `$50M`，但 fulfillment 与 revenue subject to development、qualification 和 manufacturing scale-up | 当前 0；NTM 基准 35-45% 的增量锚，但不全额纳入 | 订单金额最大，可能改变收入级别 | B/C | 部分进入基准；按开发样品、首批交付和生产 ramp 折扣纳入 | 5 年 `$500M+` cumulative purchases 只作为补充跟踪 |
+| Blazar / LightBar / Starlight ELS | OFC 2026 演示、产品页和合作线索；未披露独立大额 PO | 当前收入无法可靠量化；NTM 基准 5-15% | 高毛利潜力，服务 CPO、SiPh、chip-to-chip optical links | C/D | 基准只纳入少量 NRE/样品/首批 light-source；大规模 ELS 在乐观以上 | CPO/NPO/CPX 和 optical I/O 外置供光 |
+| Wavelight / LITEON custom optical module | LITEON 联合开发，原型预计 2026 年底，HVM 预计 2027 | 当前 0；NTM 基准 0-5% | 可扩大收入池，但模块层毛利可能低于 optical engine/ELS | C/D | 基准只保留小额开发收入，不把 2027 HVM 提前纳入 | POET 捕获整模块或 module reference design |
+| 3.2T/TFLN/optical I/O | QCI 3.2T/TFLN 等合作线索，当前多为研发/样品 | 当前接近 0 | 可能改变长期技术路线，但不是 NTM 主收入 | D | 不进入基准主口径，只允许 NRE 小额或附录跟踪 | 400G/lane、OCI、custom XPU optical I/O |
+| Celestial AI / Marvell 相关 PO | 已取消 | 0 | 重要反证，不是收入来源 | 负面证据 | 排除 | 仅跟踪是否恢复关系，不纳入 NTM |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估产品外部需求池，不评估 POET 份额、收入确认或利润率。需求单位按产品选择：800G/1.6T 模块金额和出货、EOI/ELS/CPO/NPO 订单池、样品到量产时间、客户 qualification 周期。当前需求锚来自本地行业报告、POET 官方公告和公开行业口径：2026 AI-focused optical transceiver 市场约 `$26B`，1.6T 在 2026 进入百万级出货，CPO/NPO/ELS 在 2026 多为 pilot/design-in，2027 进入早期收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| POET Infinity 800G/400G optical engines | 800G 是 2026 AI back-end 最大出货口径；行业报告认为 800G 仍主力但 ASP 风险上升 | 800G 需求仍增长，但客户库存、ASP 和 switch/XPU 约束使 2026H2 订单推迟 | 800G 继续主力放量，AI 集群扩张支撑模块和 engine 需求 | GB300、TPU、Trainium、MI350 等同步放量，800G 紧缺延续到 2027H1 | 1.6T 供应不足反而延长 800G 高景气，客户加急采购 | 需求池绝对增长，但低端 800G 单价可能下行 | 基准为符合当前行业预期；悲观是低于已定价采购节奏 | 本地 800G/1.6T 报告；反证是 ASP 连续下行、库存超过一季、AI rack 交付延迟 |
+| Teralight / 1.6T / Lessengers | Cignal/本地资料给出 2026 年 1.6T 模块出货 `>5M`，2027 新增高端 AI fabric 继续上行 | 1.6T 样品多但 qual 拉长，2026H2 只有少量 production | 2026H2 初规模，2027H1 进入新增高端集群设计 | 2027 1.6T 成为新增 AI fabric 默认端口，2xDR4/DR8 design-in 加速 | 2027 1.6T 出货接近 3000 万只级，短缺和高 ASP 延续 | 从样品/初量产向千万级年化出货迁移 | 基准符合行业升级路径；乐观需客户设计赢单 | 本地行业报告；反证是客户坚持 800G、1.6T 功耗/散热/测试不达标 |
+| Lumilens EOI-based engines | Lumilens/POET 公告指向 800G、1.6T pluggable 到 NPO/CPO 的多年路线；工程样品预期 late 2026，production ramp 对齐 2027 hyperscaler deployments | EOI 仍停留在开发和样品，`$50M` PO 无实质 NTM 收入 | late 2026 样品按期，2027H1 有部分 production/工程收入 | 样品顺利、终端 hyperscaler 部署提前，`$50M` 在 NTM 内大部分确认 | Lumilens 后续 PO 提前，EOI 成为近封装光互联关键路线 | 需求从 0 到首批工程样品/量产；绝对金额由订单节奏决定 | 基准只承认有条件订单的部分收入，不全额纳入 | 官方 Lumilens 公告明确 fulfillment subject to qualification 和 scale-up |
+| Blazar / LightBar / Starlight ELS | CPO、SiPh、NPO、optical I/O 都需要高功率、多波长、可冗余外置光源；2026 多为 demo/pilot | CPO 推迟、ELS 只做演示，客户使用传统 DFB/大厂光源 | ELS 在 2026H2-2027H1 获得少量客户工程订单和 NRE | CPO/SiPh 设计把 ELS 写入规格，POET 拿到 1-2 个 production line | 外置光源成为 CPO/NPO 短缺环节，POET 被多客户认证 | 从 demo 到小批量；绝对需求取决于 CPO/NPO pilot 数量 | 基准为小额需求；乐观需客户明确采购 | POET OFC 2026 ELS 演示；反证是 CPO field service 失败或激光器大厂锁死客户 |
+| Wavelight / LITEON modules | LITEON 合作目标是 AI optical modules，prototype late 2026、HVM 2027 | 原型延后，NTM 只产生开发收入 | 原型按期，2027H1 开始客户测试 | LITEON 将 POET engine 写入高端模块 reference，获得初始 PO | 2027 HVM 提前且 POET 捕获更大 module 内容量 | 从 0 到原型/客户测试 | 基准不把 2027 HVM提前当 NTM 大收入 | 官方 LITEON 公告；反证是模块客户选择既有 Coherent/Lumentum/Innolight/Eoptolink |
+| 3.2T/TFLN/optical I/O | 3.2T/400G-per-lane、OCI、optical I/O 在 2026 多为样品/标准，2027 qual，2028 规模化 | 只停留在研究和 PR | 少量 NRE 和评估板，不形成主收入 | 2027H1 进入 early design-in 或 paid eval | 400G/lane 提前被 204.8T switch 或 custom XPU 拉入小批量 | 从 0 到小额 NRE；大规模在 NTM 外 | 基准仅作跟踪 | 本地 CPO/Optical Interposer 报告；反证是 3.2T 测试、功耗和客户需求不成熟 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断外部需求中哪些能进入 POET NTM 收入表，以及当前可收入化收入基数。可参与需求不等于可确认收入。POET 的当前收入锚点来自 2025 Form 20-F、2026Q1 6-K/Q1 results、正式订单、官方合作公告和产品交付节点；行业需求池、TAM、5 年框架和长期 run-rate 不直接计入基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| POET Infinity 800G/400G optical engines | `>$5M` production order，预计 2026H2 交付；Q1 收入未分拆 | 直接 | Engine 毛利潜力高于 EMS，但 800G ASP 有下行 | `$2M-$5M` | `$5M-$10M` | `$15M-$35M` | `$50M-$70M` | 基准等于已披露订单正常兑现，乐观需要 repeat order | B | 是 | 正式 PO、明确产品和交付窗口 | 基准主口径收入锚；不得把全部 800G 行业需求映射成 POET 收入 |
+| Teralight / 1.6T / Lessengers | Lessengers 1.6T 2xDR4 样品目标 2026Q2；无大额 PO | 直接/间接 | 1.6T engine 若设计导入，毛利和锁定强 | `$0-$1M` | `$1M-$4M` | `$8M-$25M` | `$40M-$70M` | 基准低于题材预期，只承认 NRE/样品/小批量 | C/D | 小比例 | 客户、产品和样品时间表清楚，但生产 PO 不清楚 | 基准少量纳入；production ramp 主要在乐观以上 |
+| Lumilens EOI-based engines | 初始 PO `$50M`；工程样品 late 2026，production ramp aligned to 2027 hyperscaler deployments；收入取决于开发/qualification/scale-up | 直接 | EOI/optical engine 若成功可高于普通模块；初期也有研发和良率成本 | `$0-$5M` | `$10M-$25M` | `$35M-$60M` | `$80M-$140M` | 基准为当前订单的折扣确认，不代表 `$50M` 全额无条件收入 | B/C | 是，折扣 | PO 是正式正向证据，但 fulfillment 条件很强 | 进入基准但强折扣；5 年 `$500M+` 只进附录 |
+| Blazar / LightBar / Starlight ELS | OFC 2026 live demo、Starlight/Blazar 产品；无独立披露大额 PO | 直接/间接 | 高功率 ELS 潜在高毛利，但认证和 field service 风险高 | `$0-$1M` | `$1M-$6M` | `$10M-$25M` | `$35M-$70M` | 基准低于叙事预期，只承认小额客户工程收入 | C/D | 小比例 | 产品演示和客户会议支持需求，但客户/价格/交付未量化 | 基准保守纳入；大规模 ELS 进入乐观/极度乐观 |
+| Wavelight / LITEON modules | LITEON joint development，prototype late 2026，HVM 2027 | 直接/间接 | 若捕获模块收入规模更大但毛利可能较低 | `$0` | `$0-$3M` | `$5M-$15M` | `$20M-$40M` | 基准只作为开发收入，不把 HVM 提前确认 | C/D | 小比例 | 开发时间表明确，采购金额不明确 | 主要作为 2027 期权；NTM 基准仅小额 |
+| 3.2T/TFLN/optical I/O | 合作/研发线索；无可验证 NTM production PO | 间接 | 若进入 XPU/ASIC package，长期高毛利；当前研发消耗 | `$0` | `$0-$1M` | `$2M-$8M` | `$10M-$25M` | 当前预期中不应作为 NTM 主收入 | D | 否，仅小额 NRE | 缺少客户、价格和生产时间表 | 移入附录/仅跟踪，不进基准主收入 |
+| Celestial AI / Marvell 相关 PO | 2026-04 Marvell 取消 Celestial AI 所有 PO | 直接负面 | 无收入，反而暴露客户关系和披露风险 | `$0` | `$0` | `$0` | `$0` | 低于此前乐观预期 | 负面 | 否 | 官方取消公告 | 排除；不再计入 NTM |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，判断各产品在 NTM 内能给 POET 贡献多少收入和利润。收入贡献是可确认收入估算，不是行业 TAM、客户总预算、项目总金额或 5 年框架。利润贡献主要指产品毛利/直接经营贡献，尚未扣除全部公司级 R&D、SG&A、股权激励和融资相关费用；POET 未披露成熟量产毛利率，关键字段用区间和方向表达。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| POET Infinity 800G/400G optical engines | 悲观 | `$2M-$5M` | `$0-$1M` | 低量产、爬坡成本高 | 低于当前交付预期 | `>$5M` PO 存在但交付/验收延后 | 保留悲观 | 客户验收、Malaysia 良率、800G ASP |
+| POET Infinity 800G/400G optical engines | 基准 | `$5M-$10M` | `$1M-$4M` | 毛利率从低位改善 | 符合当前订单正常兑现 | 2026H2 交付窗口、Infinity 产品配置明确 | 保留基准 | 订单不等于 repeat order |
+| POET Infinity 800G/400G optical engines | 乐观 | `$15M-$35M` | `$5M-$15M` | 规模效应和良率改善 | 高于当前可见订单 | 系统集成商 repeat order、`>30,000` engines 达成 | 保留乐观 | 竞争对手和客户二供压价 |
+| POET Infinity 800G/400G optical engines | 极度乐观 | `$50M-$70M` | `$20M-$35M` | 高端短缺维持较高毛利 | 显著高于当前预期 | 多客户把 POET engine 写入 800G/1.6T 平台 | 下移为低可信上限 | 单一产品无法支撑公司极度乐观全部结论 |
+| Teralight / 1.6T / Lessengers | 悲观 | `$0-$1M` | 负或接近 0 | 样品/NRE 无规模毛利 | 低于 1.6T 叙事 | 样品未转 production | 保留悲观 | qual 拉长、1.6T 功耗/散热 |
+| Teralight / 1.6T / Lessengers | 基准 | `$1M-$4M` | `$0-$1M` | 小额 NRE/样品 | 符合保守确认 | Q2 2026 samples 目标、1.6T 行业需求强 | 保留基准 | 无正式大额 PO |
+| Teralight / 1.6T / Lessengers | 乐观 | `$8M-$25M` | `$3M-$12M` | 1.6T 早期 mix 改善 | 高于当前基准 | 样品转 production、至少一名模块客户采用 | 保留乐观 | 大厂 SiPh/EML 方案竞争 |
+| Teralight / 1.6T / Lessengers | 极度乐观 | `$40M-$70M` | `$18M-$40M` | 高速 engine 高毛利 | 显著超预期 | 1.6T 成为客户 2027 平台默认，POET 拿到多客户 PO | 下移为极度乐观低可信 | 需要客户、产能、良率和测试同时突破 |
+| Lumilens EOI-based engines | 悲观 | `$0-$5M` | 负至 `$1M` | 开发成本先行 | 低于订单叙事 | fulfillment 条件未满足 | 保留悲观 | 开发、qualification、scale-up 失败或推迟 |
+| Lumilens EOI-based engines | 基准 | `$10M-$25M` | `$2M-$10M` | 初期毛利不稳，随良率改善 | 折扣纳入当前订单预期 | `$50M` initial PO、late 2026 samples、2027 ramp | 下移后保留基准 | `$50M` 不等于 NTM 全额收入 |
+| Lumilens EOI-based engines | 乐观 | `$35M-$60M` | `$14M-$30M` | 高密度 EOI 毛利改善 | 明显高于基准 | 工程样品顺利并提前进入 hyperscaler 部署 | 保留乐观 | 终端客户透明度不足、订单可取消/延迟 |
+| Lumilens EOI-based engines | 极度乐观 | `$80M-$140M` | `$40M-$85M` | 平台型 engine 高毛利 | 大幅超预期 | 后续 PO 提前、EOI 成为 NPO/CPO 关键路线 | 下移为极度乐观上限 | 5 年框架不能机械前置到 NTM |
+| Blazar / LightBar / Starlight ELS | 悲观 | `$0-$1M` | 负或接近 0 | 演示和样品阶段 | 低于题材预期 | OFC demo 未转订单 | 保留悲观 | CPO 推迟，客户选择传统光源 |
+| Blazar / LightBar / Starlight ELS | 基准 | `$1M-$6M` | `$0-$2M` | 小批量高成本 | 符合保守预期 | Blazar/Starlight 演示、ELS 行业需求 | 保留基准 | 可靠性、冗余、field replacement |
+| Blazar / LightBar / Starlight ELS | 乐观 | `$10M-$25M` | `$4M-$15M` | 高功率 ELS 具备溢价 | 高于当前基准 | 1-2 个客户工程订单或 production readiness | 保留乐观 | Lumentum/Coherent/Broadcom 锁客户 |
+| Blazar / LightBar / Starlight ELS | 极度乐观 | `$35M-$70M` | `$18M-$45M` | 高毛利瓶颈件 | 显著超预期 | CPO/NPO/SiPh 客户同时导入 POET ELS | 下移为附条件上限 | CPO field service 若失败，ELS 需求后移 |
+| Wavelight / LITEON modules | 悲观 | `$0` | `$0` | 无收入 | 低于合作叙事 | 原型延迟 | 保留悲观 | prototype 不等于客户 PO |
+| Wavelight / LITEON modules | 基准 | `$0-$3M` | `$0-$1M` | 开发/NRE | 符合当前时间表 | LITEON prototype late 2026，HVM 2027 | 保留基准 | NTM 内难大规模确认 |
+| Wavelight / LITEON modules | 乐观 | `$5M-$15M` | `$1M-$5M` | 模块收入毛利较 engine 低 | 高于基准 | 原型转客户测试并出现首批采购 | 保留乐观 | 模块层竞争激烈 |
+| Wavelight / LITEON modules | 极度乐观 | `$20M-$40M` | `$4M-$12M` | 规模收入但利润率有限 | 超预期 | HVM 提前到 2027H1 且 POET 捕获更大内容量 | 下移为低可信 | module pass-through 压低利润质量 |
+| 3.2T/TFLN/optical I/O | 悲观 | `$0` | 负 | 研发投入 | 符合排除项 | 缺生产 PO | 排除 | NTM 时间表不足 |
+| 3.2T/TFLN/optical I/O | 基准 | `$0-$1M` | 负至 0 | NRE 小额 | 不进入主基准 | 合作和样品线索 | 移入附录 | 技术路线和客户未验证 |
+| 3.2T/TFLN/optical I/O | 乐观 | `$2M-$8M` | `$0-$3M` | NRE/样品改善 | 高于当前预期 | 付费评估或 customer design-in | 仅作跟踪 | 2028 前规模化不确定 |
+| 3.2T/TFLN/optical I/O | 极度乐观 | `$10M-$25M` | `$4M-$15M` | 若进入 package，利润率高 | 极度超预期 | 400G/lane 提前进入客户 qual | 移入附录 | 不是 NTM 基准收入来源 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为 POET NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。汇总时不重复计算 Lumilens EOI、ELS、LITEON module 和 1.6T engine 的重叠收入；`$50M` Lumilens PO、`>30,000` engines 和 5 年 `$500M+` framework 不是简单相加。因 POET 未披露成熟产品 COGS 和分部毛利，毛利率为方向性区间；无法可靠量化处明确标注。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$6M-$15M` | 较 2025 全年 `$1.075M` 增加约 `$5M-$14M`；仍只是订单叙事的低端兑现 | 低于当前订单和管理层 ramp 预期；`>$5M` 订单延迟或只部分确认，Lumilens 基本不确认 | 无法可靠量化；方向 `10-25%`，受低利用率和 ramp 成本拖累 | 无法可靠量化；经营亏损约 `-$70M` 至 `-$95M` | 净亏损约 `-$65M` 至 `-$95M` | 明显为负；现金消耗主要来自 R&D、SG&A、设备和营运资本 | 中 | 订单确认延迟、客户取消、良率和验收不足 |
+| 基准公司 | `$22M-$50M` | 较 2025 增加约 `$21M-$49M`；较 Q1 年化 run-rate 有数量级提升 | 当前预期正常兑现：`>$5M` 订单、Lumilens 部分、少量 1.6T/ELS/NRE；不把 5 年框架前置 | 无法可靠量化；方向 `20-40%`，取决于 engine/ELS mix 和良率 | 仍为负；约 `-100%` 至 `-250%`，因为固定 R&D/SG&A 仍大 | 净亏损约 `-$45M` 至 `-$75M` | 为负；若有客户预付款可缓解，但产品收入仍不足以覆盖费用 | 中 | Lumilens 收入确认比例、Malaysia 产线良率、产品验收 |
+| 乐观公司 | `$75M-$150M` | 较 2025 增加约 `$74M-$149M`；从准商业化进入可见 product revenue | 高于当前基准：Lumilens 大部分确认，800G repeat order，1.6T/ELS 至少两条线转 PO | 无法可靠量化；方向 `35-55%`，高毛利 engine/ELS mix 上升 | `-40%` 至 `+5%`；收入规模开始吸收固定费用 | EBITDA/净利润约 `-$35M` 至 `+$10M` | 负到接近持平；取决于预付款和库存周转 | 中低 | 多客户 PO、良率、应收回款和高毛利结构必须同步 |
+| 极度乐观公司 | `$180M-$320M` | 较 2025 增加约 `$179M-$319M`；相当于多条产品线非线性放量 | 显著高于当前预期：Lumilens 后续 PO 提前、800G/1.6T/ELS 多客户 repeat order、module/engine 内容量扩大 | 无法可靠量化；方向 `45-65%`，前提是 EOI/ELS 成为瓶颈件而非 pass-through | `+5%` 至 `+25%`，只有高毛利和规模效应同时成立才可能 | EBITDA/净利润约 `+$10M` 至 `+$70M` | 可能转正；若客户预付款覆盖产能和库存则改善更快 | 低 | 需求、份额、利润质量、执行质量必须同时突破 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。正向证据只提升它实际影响的层级，反证只限制它实际影响的层级。Celestial/Marvell 取消只处理为客户/订单可信度和收入确认反证，不重复惩罚行业需求；800G ASP 风险只处理为利润率和订单节奏风险，不否定 1.6T/ELS 的结构性需求。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 `$503k`、2025 全年收入 `$1.075M` | 收入基数 | 当前报表收入仍极小，所有高收入情景都依赖未来确认 | 无成熟产品毛利，筛选器式 100% GM 没有经营意义 | 经营现金流 `-$8.81M`，仍靠融资支持 | 压低基准，保留悲观 |
+| `>$5M` POET Infinity production order，2026H2 交付 | 产品收入 | 给 800G line 提供 B 级基准锚 | 若按期交付，可验证 engine 毛利和良率 | 需要产线、验收、应收回款 | 保留基准 |
+| Lumilens `$50M` initial PO | 收入基数/产品贡献 | 最大正向收入锚，但收入需开发、qualification、scale-up | EOI 若成功毛利高；初期可能有良率成本 | 工程样品 late 2026，production ramp 对齐 2027 | 下移后纳入基准；不全额纳入 |
+| Lumilens 5 年 `$500M+` potential framework | 远期期权 | 不是 NTM backlog，不能作为基准收入 | 长期可能提高毛利结构 | 取决于后续 PO、客户部署和制造规模 | 移入附录 |
+| Celestial/Marvell 取消所有 PO | 收入确认/客户可信度 | 删除此前相关收入期望，降低大客户关系可信度 | 不直接影响其他产品毛利，但提高客户折价 | 暴露保密、披露和订单取消风险 | 排除相关收入；保留为校准反证 |
+| Lessengers Q2 2026 1.6T samples 与 LITEON late-2026 prototype | 产品贡献 | 支持 1.6T/module 开发收入，但不等于 production PO | 1.6T/engine mix 可改善毛利 | 客户 qual 多季度 | 小比例进入基准，主要保留乐观 |
+| Blazar/Starlight OFC 2026 ELS demo | 需求/产品贡献 | 支持 ELS 路线，但缺金额和客户时间表 | 高功率 ELS 可能高毛利 | field service、冗余、激光寿命需要验证 | 基准小额，乐观保留 |
+| Malaysia Globetronics/NationGate manufacturing footprint | 执行可信度 | 支持从样品到量产 | 良率和测试成本决定毛利 | 产线资格、设备 bring-up、供应链去风险 | 提升基准可信度，但不提升收入上限 |
+| 2026Q1 现金与短投 `$429M`，5 月 `$400M` 融资 | 现金流/执行 | 不直接产生收入 | 可能吸收 ramp 成本和收购/产能投入 | 降低短期 liquidity risk，提高执行 runway | 提升执行可信度，不上调收入 |
+| 800G ASP、库存和客户 qualification 风险 | 利润率/收入节奏 | 可能让 800G 收入递延或 ASP 低于预期 | 压缩普通模块和低差异 engine 毛利 | 库存和测试周期拉长 | 在产品层处理一次，不重复惩罚全公司 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | `$6M-$15M`，只有已披露订单部分确认，Lumilens/ELS 基本后移 | `>$5M` 订单和现金充足使收入不至于完全为零 | Celestial/Marvell 取消、Q1 收入极小、无毛利验证 | 保留 | 悲观公司 | 中 | Celestial 取消只作为订单/客户可信度反证，不再重复压低行业需求 |
+| 基准 | 若机械纳入 `$50M` Lumilens 和 `>30,000` engines，原始可到 `$35M-$70M` | 正式 PO、明确产品线、Q1 后融资、Malaysia 产线 | Lumilens revenue subject to qualification；没有完整收入指引和 backlog 表 | 下移 | `$22M-$50M` 基准公司 | 中 | Lumilens 条件性只在收入基数处折扣，不在利润和公司层重复扣减 |
+| 乐观 | `$75M-$150M`，多条线转 PO 且高毛利 mix 改善 | Lumilens、800G repeat、1.6T/ELS 行业需求共同支持 | 客户、价格、良率和确认时间仍需假设 | 保留 | 乐观公司 | 中低 | 800G ASP 风险只影响 800G 利润和收入节奏，不否定 EOI/ELS 上修 |
+| 极度乐观 | 原始 pipeline 相加可超过 `$300M`，甚至有人会把 5 年框架前置 | 5 年 `$500M+` framework、行业 1.6T/CPO 高景气、现金充足 | 任一核心环节缺证据；5 年框架不是 NTM backlog | 下移 | `$180M-$320M` 极度乐观上限，5 年框架移入附录 | 低 | 远期期权不能在 NTM 和附录同时计入 |
+
+## 8. 结论
+
+- 最可能情景：基准公司，即 NTM 收入 `$22M-$50M`，但仍大概率经营亏损。POET 最可能从 `$1M` 级年收入跃迁到数千万美元级，但这不是行业需求自然传导，而是依赖 `>$5M` 800G 订单、Lumilens 部分确认、1.6T/ELS 小额开发收入和 Malaysia 产线执行。
+- NTM 收入结论：当前可确认性最强的是 POET Infinity 800G/400G optical engines；最大上行锚是 Lumilens EOI-based engine；1.6T 和 ELS 是提高收入质量和 2027 run-rate 的关键，但在 NTM 基准中只能保守折扣。
+- 利润/现金流结论：基准情景仍难覆盖公司级 R&D、SG&A 和 ramp 成本。现金流风险短期较低，因为公司有大量现金和后续融资；真正风险是现金是否换来可重复订单、良率、回款和产品毛利，而不是单纯现金余额。
+- 主要传导瓶颈：客户 qualification、订单可撤销/延迟、保密和客户关系、Lumilens 开发进度、Malaysia 量产良率、1.6T/ELS 可靠性、800G ASP 下行。
+- 乐观情景成立条件：2026H2 `>$5M` 订单按期确认；Lumilens `$50M` 大部分在 NTM 内形成收入/合同负债/应收；Lessengers 或 LITEON 至少一条线转 production PO；ELS 获得可验证客户工程订单；产品毛利开始接近 35-55%。
+- 极度乐观情景成立条件：Lumilens 后续 PO 提前、800G/1.6T/ELS 至少三条线同时多客户 repeat order、Malaysia 产线良率和测试瓶颈显著好于预期、没有新的取消订单或披露/治理事故，并且 POET 捕获 engine/ELS 高毛利而非低毛利模块 pass-through。
+- 悲观情景触发条件：2026H2 收入仍停留在 `$0.5M-$2M` 季度级；`>$5M` 订单交付递延；Lumilens 无工程样品或无付款/合同负债变化；出现新的客户取消或 confidentiality 争议；产品收入放大但毛利低、应收和库存压力上升。
+- 后续跟踪数据：2026Q2/Q3 收入、合同负债、应收账款、product revenue 占比；`>30,000` engines 出货验证；800G order 实际确认金额；Lumilens 样品和生产 ramp 证据；Lessengers/LITEON prototype 进度；Malaysia 良率、测试产能和客户验收；是否新增 repeat PO 或订单取消；产品毛利/COGS 披露。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：本报告写作日为 2026-06-12；最新已披露财务为截至 2026-03-31 的 Q1 2026 财务报表和 MD&A，后续经营事件纳入截至 2026-05-18 的官方公告。
+- 主要收入、订单、指引和利润率来源：
+  - POET 2026Q1 results：`https://www.poet-technologies.com/news/poet-technologies-reports-first-quarter-2026-financial-results`
+  - POET Q1 2026 condensed interim consolidated financial statements：`https://www.sec.gov/Archives/edgar/data/1437424/000149315226023471/ex99-1.htm`
+  - POET Q1 2026 MD&A：`https://www.sec.gov/Archives/edgar/data/1437424/000149315226023471/ex99-2.htm`
+  - POET 2025 Form 20-F：`https://www.sec.gov/Archives/edgar/data/1437424/000149315226014253/form20-f.htm`
+  - POET Q4 2025 results：`https://www.poet-technologies.com/news/poet-technologies-reports-fourth-quarter-2025-financial-results`
+  - POET Infinity `>$5M` 800G optical engine order：`https://www.poet-technologies.com/news/poet-technologies-receives-5-million-production-order-for-800g-optical-engines`
+  - POET Lumilens `$50M` EOI-based engine PO and qualification condition：`https://www.globenewswire.com/news-release/2026/05/14/3294762/0/en/poet-technologies-and-lumilens-advance-wafer-level-photonic-integration-for-next-generation-ai-optical-networks.html`
+  - POET Celestial/Marvell purchase order cancellation：`https://www.poet-technologies.com/news/poet-technologies-provides-purchase-order-update`
+  - POET LITEON collaboration：`https://www.poet-technologies.com/news/poet-technologies-and-liteon-announce-joint-development-of-optical-modules-for-ai-applications`
+  - POET Lessengers 1.6T collaboration：`https://www.poet-technologies.com/news/poet-technologies-and-lessengers-expand-partnership-to-deliver-1-6t-2xdr4-optical-transceivers-for-ai-network-connectivity`
+  - POET NationGate manufacturing agreement：`https://www.poet-technologies.com/news/poet-signs-manufacturing-agreement-with-nationgate-solutions-in-malaysia`
+  - POET Globetronics manufacturing agreement：`https://www.poet-technologies.com/news/poet-technologies-signs-manufacturing-agreement-with-globetronics-in-malaysia`
+  - POET `$400M` financing close：`https://www.poet-technologies.com/news/poet-technologies-announces-closing-of-us400-million-investment`
+  - POET ELS OFC 2026 demo：`https://www.poet-technologies.com/news/poet-to-demonstrate-extraordinary-hybrid-laser-and-next-generation-high-powered-light-sources-for-ai-applications-at-ofc-conference`
+- 项目内行业来源：
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_Optical Interposer与新型光引擎_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_硅光材料、光子材料与电光聚合物_2026-06-11.md`
+  - `行业调研/产业背景/顶级会议信息/ofc_2026_conference_update.md`
+- 项目内公司交叉资料：`公司调研/tmp/第二批_2026-06-11T20-20-47/AI网络_光互联_连接器/POET_POET_Technologies_公司调研_2026-06-12.md` 仅用于线索交叉核对；本报告的财务、订单和正式经营节点以官方公告和 SEC 文件为准。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 是否超出 `$20M-$50M` 收入，主要看 2026H2 POET Infinity 和 Lumilens 的确认节奏。
+  - FY2027 是否能进入 `$100M+` 年化 run-rate，主要看 Lumilens、1.6T、ELS、LITEON 四条线是否出现 repeat PO。
+  - 5 年 `$500M+` Lumilens 框架、3.2T/TFLN、OCI/optical I/O 和 CPO/NPO 大规模部署属于远期期权，只有出现生产 PO、客户部署、合同负债/应收和毛利披露后，才能从附录移入 NTM 基准。

@@ -1,0 +1,334 @@
+# Thermo Fisher Scientific（TMO）公司调研：生命科学平台型巨头与 AI 芯片检测量测的边缘受益
+
+报告日期：2026-06-11  
+公司：Thermo Fisher Scientific Inc.  
+股票代码：TMO / NYSE  
+正式分类：`公司调研/封测_检测_计量_光罩/`  
+本报告只结合项目内 `行业调研/` 资料与联网资料；未读取、引用或继承 `特征量化/` 内容。
+
+## 0. 结论先行
+
+TMO 是全球最大的生命科学工具、分析仪器、实验室渠道、诊断、CRO/CDMO 综合平台，不是 AI 数据中心设备公司。投资人心中的 TMO 通常是“高质量、强现金流、长期 M&A 复利”的生命科学平台型公司；2022-2024 年后的核心问题是 COVID 高基数消退、biotech/academic funding 弱、China/industrial capex 慢、债务与大额并购再上杠杆，而不是 AI rack 出货弹性。
+
+AI 相关要分三层看：
+
+1. **直接 AI 数据中心收入：几乎为 0。** TMO 不卖 GPU、服务器、交换机、光模块、PDU、冷却、机柜、数据中心施工服务。
+2. **AI 芯片制造/先进封装的间接暴露：有，但占比小。** 主要是 Analytical Instruments 里的 electron microscopy、FIB-SEM、TEM/STEM、材料分析、失效分析、化学/污染分析工具。2026Q1 electron microscopy 收入 6.33 亿美元，同比 -4%；其中半导体/先进封装/材料分析只是子集。模型估算 TMO 当前“AI 芯片制造间接相关”收入约 5-12 亿美元年化，占公司收入约 1-3%，置信度中低。
+3. **AI 用于药物研发/临床试验效率：对 TMO 更真实。** 2026 年完成 Clario 后，PPD + Clario + clinical research data solutions 会把 AI/数据平台嵌入临床试验、影像/心电/eCOA/可穿戴端点数据、patient data workflow。它不是 AI 基建供应链，但可能是 TMO 未来三年更大的“AI productivity”收入层。
+
+最新财务健康度：TMO 2026Q1 收入 110.05 亿美元、同比 +6%、organic +1%、调整 EPS 5.44 美元、调整 operating margin 21.8%。Q1 后资产负债表仍健康但杠杆上升：现金 32.54 亿美元，短债和长期债合计约 431.61 亿美元，总资产 1,132.81 亿美元，股东权益 519.34 亿美元；Q1 为 Clario 支付/结清债务导致现金减少、债务增加，同时仍回购 30 亿美元股票。公司有稳定 FCF 和 294.1 亿美元 remaining performance obligations（RPO）支撑，但若未来 12-18 个月生命科学终端需求不恢复，估值弹性有限。
+
+## 1. 整体业务、投资人定位和产业链位置
+
+### 1.1 四大业务分部
+
+| 分部 | 2026Q1 收入 | 同比 | 分部利润率 | 主要内容 | AI/半导体相关性 |
+|---|---:|---:|---:|---|---|
+| Life Sciences Solutions | 26.36 亿美元 | +12.6% | 36.2% | biosciences、genetic sciences、bioproduction、Olink/proteomics、Gibco/Invitrogen/Applied Biosystems 等 | AI 数据中心无直接关系；bioproduction 和 proteomics 是药物研发/AI biology 的工具层 |
+| Analytical Instruments | 17.16 亿美元 | -0.1% | 20.7% | chromatography & mass spectrometry、chemical analysis、electron microscopy | 半导体/先进封装/失效分析的核心间接暴露在这里，但 TMO 更偏实验室/FA/R&D，不是 KLA 式 inline process-control 主链 |
+| Specialty Diagnostics | 11.42 亿美元 | -0.5% | 27.4% | clinical diagnostics、immunodiagnostics、microbiology、transplant diagnostics、healthcare market channel | 基本无 AI 基建暴露；医院/临床诊断稳定现金流 |
+| Laboratory Products and Biopharma Services | 60.36 亿美元 | +7.0% | 12.9% | Fisher Scientific 渠道、research & safety、Patheon pharma services、PPD/Clario clinical research | 临床研究数据和 CDMO 是增长主线；AI 体现在药企效率工具，不是数据中心硬件 |
+| Eliminations | -5.24 亿美元 | - | - | 分部内部交易抵销 | - |
+| 合计 | 110.05 亿美元 | +6.2% | GAAP operating margin 16.9%；adjusted operating margin 21.8% | 多元化生命科学平台 | 直接 AI DC = 0%；AI 芯片制造间接暴露估算 1-3% 收入 |
+
+### 1.2 投资人心中的 TMO
+
+TMO 的主叙事不是“高 beta 成长股”，而是大型生命科学平台公司：品牌、渠道、装机、耗材、服务、并购整合和 PPI Business System 形成长期复利。投资人愿意给它高于普通工业公司的估值，原因是收入来源分散、客户研发和生产流程粘性高、耗材和服务占比大、现金流稳、管理层并购整合历史强。
+
+过去三年投资人对 TMO 的分歧主要来自三点：
+
+- **疫情后正常化。** COVID 相关检测、疫苗/生物制药扩产和一次性高需求消退后，生命科学工具行业经历库存和预算消化。
+- **客户预算分化。** 大药企相对稳，biotech funding、academic/government funding、中国科研与工业资本开支恢复较慢。
+- **大额并购重新抬高杠杆。** Olink、Solventum filtration、Clario 都是战略补强，但 Clario 交易规模大，短期压低现金、抬高债务和商誉。
+
+### 1.3 最近 3 年重大业务变动/转型/收购
+
+| 时间 | 事件 | 金额/规模 | 战略含义 |
+|---|---:|---:|---|
+| 2023 | 收购 CorEvitas | 约 9 亿美元级 | 补强 real-world evidence 和真实世界数据，服务药企上市后研究和监管证据 |
+| 2024 | 完成 Olink 收购 | 约 31 亿美元 | 进入高通量 proteomics 平台，增强 Life Sciences Solutions 在蛋白质组学、biomarker discovery、precision medicine 的工具链 |
+| 2025-09 | 完成 Solventum Purification & Filtration 业务收购 | 公司披露为大额交易；10-Q 已纳入 purchase accounting | 加强 bioproduction、filtration、separation、工业/生命科学过滤材料；对半导体高纯流体只是边缘协同，不是主收购逻辑 |
+| 2026-03-24 | 完成 Clario 收购 | purchase price 90.99 亿美元；现金 58.06 亿、结清债务 31.80 亿、或有对价 1.10 亿；确认 backlog 4.61 亿、goodwill 61.20 亿 | 把 PPD 临床研究服务与 endpoint data solutions 组合，强化 clinical trial data、eCOA、imaging、cardiac、sensor endpoint workflow |
+| 2026 | 继续推进 AI/automation/clinical productivity | 未单独披露收入 | 更像内部效率和药企客户 workflow 方案，不是独立 AI 数据中心产品 |
+
+### 1.4 产业链位置
+
+TMO 的主位置在生命科学和医药研发制造链：
+
+- 上游工具：试剂、培养基、蛋白质组学、基因分析、样本制备、分析仪器。
+- 中游研发/生产服务：CRO、clinical research、CDMO、bioproduction、filtration、single-use、Patheon。
+- 下游临床和诊断：immunodiagnostics、microbiology、clinical diagnostics、transplant diagnostics。
+- 实验室渠道：Fisher Scientific、Unity Lab Services、research & safety market channel。
+
+在 AI 芯片/半导体链中，TMO 只处于“R&D/FA/材料分析/污染分析/实验室工具”层：
+
+- 与项目内 `行业调研_半导体检测量测设备_2026-06-11.md` 的判断一致，AI 芯片良率瓶颈来自先进节点、HBM、CoWoS/SoIC、混合键合、RDL、TGV、glass、warpage、void/contamination 和失效分析。
+- TMO 的 electron microscopy、FIB-SEM、TEM/STEM、chemical analysis 可以进入失效分析、样品制备、材料表征、contamination analysis、process development。
+- 但量产线核心 process control 更集中在 KLA、Applied Materials、ASML/HMI、Hitachi High-Tech、Onto、Nova、Camtek 等公司。TMO 的定位更像高端实验室/FA/材料科学工具供应商，而不是 AI 芯片产线吞吐瓶颈设备龙头。
+
+## 2. 最新股价、估值和资产负债表
+
+行情口径：2026-06-11 美股盘中可见快照，盘中数据会变化。Google Finance 快照显示市值约 1,767.7 亿美元、P/E 约 26.17、股本约 3.716 亿股，对应隐含股价约 475.7 美元。forward P/E 用 2026 年调整 EPS 指引中点 24.88 美元估算。
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | 约 475.7 美元 | 2026-06-11 盘中隐含 | 由市值/股本反推，实际交易价格随盘中变化 |
+| 市值 | 约 1,767.7 亿美元 | 2026-06-11 盘中快照 | 大型生命科学平台股 |
+| TTM P/E | 约 26.2x | 2026-06-11；用 TTM GAAP EPS 约 18.2 美元估算 | 与 Google Finance P/E 26.17 接近 |
+| Forward P/E | 约 19.1x | 2026-06-11；股价 / FY2026 adj EPS 指引中点 24.88 | 这是非 GAAP forward 口径 |
+| P/S | 约 3.9x | 2026-06-11；市值 / TTM revenue 约 452.0 亿美元 | TTM revenue = FY2025 + 2026Q1 - 2025Q1 |
+| TTM 收入增速 | 约 +5.4% | 截至 2026Q1 | 受 Clario、Solventum、Olink 与低个位数 organic 共同驱动 |
+| 2026Q1 毛利率 | 约 40.3% | 2026Q1 GAAP | 总收入 110.05 亿，产品+服务成本 65.75 亿 |
+| 2026Q1 净利率 | 约 15.0% | 2026Q1 GAAP | 净利润 16.56 亿 / 收入 110.05 亿 |
+| 2026Q1 adjusted operating margin | 21.8% | 2026Q1 | 同比 -10 bps |
+| FY2026 指引 | revenue 473-481 亿美元；adj EPS 24.64-25.12 美元 | Q1 2026 call 摘要口径 | 包含 Clario 并表；官方 press release 表示 call 中更新指引 |
+
+### 2.1 资产负债表健康度
+
+| 项目 | 2026-03-28 | 2025-12-31 | 变化 | 判断 |
+|---|---:|---:|---:|---|
+| 现金及等价物 | 32.54 亿美元 | 98.52 亿美元 | -65.98 亿美元 | Clario 现金支出和回购导致现金下降 |
+| 短期投资 | 0.02 亿美元 | 2.53 亿美元 | -2.51 亿美元 | 基本清空 |
+| 应收账款 | 92.04 亿美元 | 89.00 亿美元 | +3.04 亿美元 | 与收入规模匹配 |
+| 存货 | 54.96 亿美元 | 54.25 亿美元 | +0.71 亿美元 | 可控 |
+| 总资产 | 1,132.81 亿美元 | 1,103.43 亿美元 | +29.38 亿美元 | Clario 增加 goodwill 和 intangibles |
+| 短债+一年内到期长期债 | 30.90 亿美元 | 35.33 亿美元 | -4.43 亿美元 | 2026 到期压力可管理 |
+| 长期债务 | 400.71 亿美元 | 358.52 亿美元 | +42.19 亿美元 | Clario 交易后杠杆抬升 |
+| 股东权益 | 519.34 亿美元 | 534.07 亿美元 | -14.73 亿美元 | Q1 回购 30 亿美元抵消净利润 |
+| Q1 operating cash flow | 11.92 亿美元 | 2025Q1 为 7.23 亿美元 | +4.69 亿美元 | 现金生成恢复 |
+| Q1 capex | 3.76 亿美元 | 2025Q1 为 3.62 亿美元 | +0.14 亿美元 | capex intensity 约 3.4% revenue |
+| Q1 FCF | 约 8.16 亿美元 | 2025Q1 约 3.61 亿美元 | +4.55 亿美元 | 仍可支撑去杠杆/股东回报 |
+
+结论：财务状况仍健康，但不是“净现金型”安全资产。TMO 具备大规模 FCF、分散客户和高 RPO，可承受 400 亿美元级长期债务；但 Clario 后短期净债务显著上升，同时 Q1 仍回购 30 亿美元，意味着资本配置对未来恢复有信心，也提高了如果需求恢复慢时的财务弹性压力。投资上应盯 adjusted operating margin、FCF conversion、debt repayment pace 和 Clario integration。
+
+## 3. 最近五个财报季度：收入、订单、分部和 AI 暴露
+
+TMO 不披露统一 bookings、B2B、取消率和 lead time；可用 RPO 作为 backlog 近似。RPO 主要来自 contract manufacturing、clinical research 和 extended warranty service agreements，典型 duration 为 3-5 年。仪器订单交期未系统披露；electron microscopy/高端分析仪器存在客户 qualification 和装机周期，但不是公司级 backlog 主体。
+
+| 财报季度 | 总收入 / YoY / organic | EPS 和利润 | RPO / 交付窗口 | 分部收入、同比和分部利润率 | AI 数据中心/AI 芯片相关收入占比 |
+|---|---|---|---|---|---|
+| 2026Q1 | 110.05 亿美元；+6%；organic +1% | GAAP EPS 4.43；adj EPS 5.44；GAAP OM 16.9%；adj OM 21.8% | RPO 294.1 亿美元；约 52% 未来 12 个月确认；Clario 并表后 RPO QoQ +5.3% | LSS 26.36 亿、+12.6%、36.2%；AI 17.16 亿、-0.1%、20.7%；SD 11.42 亿、-0.5%、27.4%；LPBS 60.36 亿、+7.0%、12.9% | 直接 AI DC 0%；AI 芯片制造间接相关估算 1-3%；electron microscopy 6.33 亿、同比 -4% |
+| 2025Q4 | 122.15 亿美元；+7%；organic +3% | GAAP EPS 5.21；adj EPS 6.57；GAAP OM 18.5%；adj OM 23.6% | RPO 279.2 亿美元；约 52% 未来 12 个月确认 | LSS 29.46 亿、+13.1%、35.5%；AI 22.15 亿、+1.3%、26.3%；SD 12.20 亿、+5.4%、26.6%；LPBS 63.79 亿、+7.5%、14.5% | 直接 AI DC 0%；半导体/FA 间接暴露在 AI 分部，估算 1-3%；Q4 仪器季节性强 |
+| 2025Q3 | 111.22 亿美元；+5%；organic +3% | GAAP EPS 4.27；adj EPS 5.79；GAAP OM 17.4%；adj OM 23.3% | RPO 264.6 亿美元；约 53% 未来 12 个月确认 | LSS 25.88 亿、+8.4%、37.4%；AI 18.93 亿、+4.7%、22.6%；SD 11.74 亿、+4.0%、27.4%；LPBS 59.70 亿、+4.0%、14.5% | 直接 AI DC 0%；半导体/FA 间接暴露估算 1-3%；Olink/Solventum 开始提升 LSS 结构 |
+| 2025Q2 | 108.55 亿美元；+3%；organic +2% | GAAP EPS 4.28；adj EPS 5.36；GAAP OM 16.9%；adj OM 21.9% | RPO 250.4 亿美元；约 54% 未来 12 个月确认 | LSS 24.99 亿、+6.1%、36.8%；AI 17.28 亿、-3.0%、18.8%；SD 11.34 亿、+1.5%、27.0%；LPBS 59.95 亿、+4.1%、13.8% | 直接 AI DC 0%；Analytical Instruments 弱，说明半导体/材料需求不足以抵消工业/China/仪器周期压力 |
+| 2025Q1 | 103.64 亿美元；约持平；organic +1% | GAAP EPS 3.98；adj EPS 5.15；GAAP OM 16.6%；adj OM 21.9% | RPO 245.4 亿美元；约 54% 未来 12 个月确认 | LSS 23.41 亿、+2.5%、35.6%；AI 17.18 亿、+1.8%、23.2%；SD 11.48 亿、+3.5%、26.5%；LPBS 56.40 亿、-1.5%、13.0% | 直接 AI DC 0%；半导体/FA 间接暴露估算 1-3%；TMO 尚未显出 AI 芯片量测 beta |
+
+要点：
+
+- RPO 从 2025Q1 的 245.4 亿美元升至 2026Q1 的 294.1 亿美元，四个季度增长约 19.8%。这比收入增速高，主要来自 clinical research、contract manufacturing、extended warranty 和并购。
+- 过去五个季度真正改善的是 LSS、LPBS 和 RPO；Analytical Instruments 的 margin 从 2025Q4 的 26.3% 回落到 2026Q1 的 20.7%，显示 AI 半导体相关 demand 并未成为分部主导变量。
+- 公司级取消率未披露；临床研究行业通常存在 trial cancellation/延期风险，TMO 的 RPO 只说明已签约但未履约的价格，不等于无风险订单。
+
+## 4. 2026 最新指引、收入占比和产品拆分
+
+### 4.1 最新指引和业务占比
+
+| 项目 | 最新口径 |
+|---|---|
+| FY2026 revenue guide | 473-481 亿美元，约 +6% 至 +8% |
+| FY2026 adjusted EPS guide | 24.64-25.12 美元，约 +8% 至 +10% |
+| Q1 organic growth | +1%，受销售天数和 pharma services phasing 等影响 |
+| Q1 reported growth driver | Clario、Olink、Solventum、bioproduction、clinical research、operational execution |
+| 最突出的业务 | LPBS 的 clinical research/Pharma services、LSS 的 bioproduction、Analytical Instruments 中的 electron microscopy/chemical analysis 是半导体映射点 |
+| 最需要降权的业务 | 传统 lab products、routine diagnostics、academic/government 仪器预算恢复，对 AI 基建相关性很低 |
+
+### 4.2 2026Q1 子业务收入拆分
+
+| 子业务 | 2026Q1 收入 | 2025Q1 收入 | 同比 | 产品/服务 | 对本报告的意义 |
+|---|---:|---:|---:|---|---|
+| BioProduction | 8.93 亿美元 | 6.71 亿美元 | +33.1% | Gibco media、single-use、bioprocess containers、purification/filtration、resins | LSS 最强增长点；受并购和 biologics/GLP-1/biopharma demand 支撑 |
+| Biosciences | 未在摘录中单列金额，归入 LSS | - | - | Invitrogen antibodies、assays、cell biology、protein biology | AI biology/药物发现间接受益，但短期不等于 AI capex |
+| Genetic Sciences | 未在摘录中单列金额，归入 LSS | - | - | Applied Biosystems PCR、qPCR、sequencing sample prep、Ion Torrent | 中低速工具链 |
+| Chromatography & Mass Spectrometry | 7.98 亿美元 | 7.73 亿美元 | +3.2% | Orbitrap、TSQ、LC-MS、GC-MS、Vanquish、Dionex、ICP-MS | 半导体 contamination/材料分析和药物研发双用途；更大收入来自生命科学/工业分析 |
+| Chemical Analysis | 2.85 亿美元 | 2.86 亿美元 | -0.3% | FTIR、Raman、XRF、process analyzer、materials analyzer | 半导体材料/工业 QA 有用但增长平 |
+| Electron Microscopy | 6.33 亿美元 | 6.59 亿美元 | -3.9% | SEM、FIB-SEM、DualBeam、PFIB、TEM/STEM、cryo-EM | AI 芯片制造间接暴露的核心；Q1 下滑说明当前不是强 beta |
+| Clinical Diagnostics | 2.71 亿美元 | 2.63 亿美元 | +3.0% | clinical chemistry/control、specialty diagnostics | 稳定但低 AI 相关 |
+| ImmunoDiagnostics | 2.30 亿美元 | 2.17 亿美元 | +6.0% | ImmunoCAP、allergy/autoimmune | 稳定诊断 |
+| Microbiology | 1.60 亿美元 | 1.52 亿美元 | +5.3% | Oxoid/Remel 等 | 2026Q2 后拟出售/调整的业务需关注 |
+| Transplant Diagnostics | 1.21 亿美元 | 1.13 亿美元 | +7.1% | HLA/transplant test | 稳定小业务 |
+| Healthcare market channel | 4.30 亿美元 | 4.74 亿美元 | -9.3% | healthcare channel | 低优先级 |
+| Laboratory products | 5.69 亿美元 | 5.82 亿美元 | -2.2% | basic lab equipment/consumables | 大但低增速，AI 相关性弱 |
+| Research & safety market channel | 18.27 亿美元 | 17.27 亿美元 | +5.8% | Fisher channel、safety、research supplies | 规模大，利润率低于仪器/耗材品牌 |
+| Pharma services | 17.41 亿美元 | 16.07 亿美元 | +8.3% | Patheon CDMO、drug substance/product、fill-finish | RPO 和长期合同的重要来源 |
+| Clinical research | 21.28 亿美元 | 19.39 亿美元 | +9.7% | PPD、Clario endpoint data、trial operations | TMO 当前最大“AI workflow/数据平台”潜在受益层 |
+
+### 4.3 跳过或降权的产品/业务
+
+以下业务不是本文重点，不是因为不重要，而是因为与 AI 芯片或 AI 数据中心收入弹性弱：
+
+- 常规 laboratory products、freezers、centrifuges、pipettes、plastics、safety products、basic consumables。
+- Specialty Diagnostics 中的 routine clinical diagnostics、healthcare market channel、allergy/autoimmune、microbiology、transplant diagnostics。
+- Academic/government 预算驱动的通用仪器采购，除非用于半导体材料/AI biology 特定项目。
+- 数据中心设施侧产品：TMO 基本没有 PDU、UPS、冷却、变压器、光模块、机柜、服务器或网络 BOM。
+
+### 4.4 重点和潜力小业务
+
+| 产品/业务 | 重点产品/型号/平台 | 为什么值得看 |
+|---|---|---|
+| Semiconductor / materials electron microscopy | Helios PFIB/DualBeam、Hydra PFIB、Scios、Apreo/Verios SEM、Spectra/Talos/Krios/TEM-STEM、AutoTEM、Maps/Avizo/Amira software | 用于 advanced node、HBM、CoWoS、hybrid bonding、RDL、TGV、CPO/optical chiplet 的截面、缺陷定位、FA、材料结构分析 |
+| Mass spec / chromatography / chemical analysis | Orbitrap Astral/Orbitrap Ascend/Exploris、TSQ、Vanquish UHPLC、Dionex IC、ICP-MS、FTIR/Raman/XRF | 药物研发是主市场；半导体侧用于 UPW/chemical contamination、materials characterization、failure lab |
+| Clinical research + Clario | PPD clinical research、Clario imaging/cardiac/eCOA/sensor endpoint data platform | 这是 TMO 2026 最大新并购和最明显数据/AI workflow 方向；RPO 贡献高 |
+| Bioproduction + filtration | Gibco media、single-use systems、bioprocess containers、POROS resin、purification/filtration、Solventum filtration/separation assets | 生物药、细胞/基因治疗、GLP-1/antibody/ADC 生产工具链；毛利和粘性好 |
+| Olink/proteomics | Olink Explore/Target 蛋白质组学平台 | precision medicine、biomarker、AI biology 数据层；当前收入规模小但战略位置好 |
+
+## 5. 关键产品/业务：当前贡献、增长和 AI 基建重要性
+
+评分口径：重要性/紧急性/供需紧张/垄断与溢价，1=低，5=高。AI 基建这里特指 AI 芯片、先进封装、AI 研发/药物数据 workflow，不把 TMO 强行归入 GPU 数据中心硬件。
+
+| 关键业务 | 当前收入贡献估算 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Electron microscopy / FIB-SEM / TEM for semiconductor FA | EM 总收入 6.33 亿美元/季；半导体+材料子集估算 1.25-2.5 亿美元/季；AI 芯片更窄子集 0.5-1.5 亿美元/季 | EM 总体 -3.9%；半导体子集估计中个位数到低双位数 | 3 | 3 | 3 | 3 | 先进封装和 HBM4 需要 FA/材料分析，但 TMO 多为 lab/FA，不是 HVM inline 主瓶颈 |
+| Chromatography/MS/Chemical analysis for pharma + semiconductor contamination | 10.83 亿美元/季；半导体污染/材料分析子集估计 <0.5 亿美元/季 | +2%左右综合；MS 产品周期好于 chemical analysis | 2 | 2 | 2 | 3 | 药物研发是主需求；半导体用量真实但分散 |
+| Clinical research + Clario/PPD | 21.28 亿美元/季；Clario 只并表少数天，2026 年化增量更大 | +9.7%；并购后 reported growth 更高 | 3 | 4 | 3 | 3 | AI 用于 trial productivity、endpoint data、patient monitoring；RPO 强，但 cancellation/延期风险存在 |
+| Pharma services / CDMO | 17.41 亿美元/季 | +8.3% | 2 | 3 | 3 | 3 | 与 AI drug discovery 的生产落地相关，但不是 AI infrastructure；长期合同和产能利用率关键 |
+| BioProduction / filtration | 8.93 亿美元/季 | +33.1% | 3 | 3 | 3 | 4 | biologics/GLP-1/ADC/CGT 工具链，毛利和切换成本好；并购影响大 |
+| Olink / proteomics | 未单独披露；归入 LSS，小于 bioproduction | reported 高，organic 需继续验证 | 2 | 2 | 2 | 3 | AI biology 数据层潜力好，但当前公司收入贡献小 |
+
+## 6. 一年后收入贡献三情景
+
+以下为 2027 年中附近的 run-rate 估算，不是公司指引。基准情景假设生命科学需求温和恢复、Clario 正常并表、AI 半导体工具需求不恶化；乐观情景假设 biopharma funding、clinical outsourcing、HBM/advanced packaging FA 需求同步改善；极度乐观情景假设 AI drug development、HBM4/CoWoS、药企临床试验恢复和并购协同同时超预期。
+
+| 关键业务 | 当前年化收入贡献 | 基准 1 年后 | 乐观 1 年后 | 极度乐观 1 年后 | 增速和约束 |
+|---|---:|---:|---:|---:|---|
+| Electron microscopy / semiconductor FA | EM 总体约 25 亿美元；半导体+材料子集约 5-10 亿美元；AI 芯片窄口径约 2-6 亿美元 | EM 26-28 亿；半导体+材料 6-11 亿；AI 芯片 3-7 亿 | EM 28-31 亿；半导体+材料 8-14 亿；AI 芯片 4-9 亿 | EM 31-35 亿；半导体+材料 10-18 亿；AI 芯片 6-12 亿 | 取决于 HBM4、CoWoS、SoIC、glass/TGV、CPO 的 FA lab 扩容；最大约束是 TMO 不是 inline 主设备商 |
+| Chromatography/MS/Chemical analysis | 43 亿美元年化 | 44-46 亿 | 46-49 亿 | 49-53 亿 | 药物研发和工艺分析为主，半导体 contamination 是小增量 |
+| Clinical research + Clario/PPD | 85 亿美元年化；Clario 2026Q1 只部分并表 | 105-112 亿 | 112-123 亿 | 123-138 亿 | Clario full-year、RPO、trial starts、药企 outsourcing；取消率和整合执行是风险 |
+| Pharma services / CDMO | 70 亿美元年化 | 72-77 亿 | 77-84 亿 | 84-92 亿 | biologics/fill-finish/sterile manufacturing 利用率；大型项目 phasing 影响季度 |
+| BioProduction / filtration | 36 亿美元年化 | 38-42 亿 | 42-47 亿 | 47-53 亿 | 并购协同、biologics demand、客户库存正常化；价格传导强于通用 lab products |
+| Olink/proteomics | 未披露；估算低个位数亿美元年化 | 低双位数增长 | 20%+ | 30%+ | 数据平台潜力高，但收入基数小，不足以单独决定 TMO |
+
+## 7. BOM、单位内容量、价格传导、产能和认证
+
+### 7.1 对 AI 数据中心单位 BOM 的真实内容量
+
+TMO 对 AI 数据中心物理 BOM 的直接内容量可以近似为 0：
+
+| 单位 | TMO 直接内容量 | 说明 |
+|---|---:|---|
+| 每 MW AI 数据中心 | 0 美元 | 不卖电力、冷却、机电、服务器、网络、PDU 或 UPS |
+| 每 rack | 0 美元 | 不在 GB200/GB300/NVL72 rack BOM 中直接出现 |
+| 每 GPU / ASIC | 0 美元直接 BOM；间接制造/FA 摊销可粗略低于 1-5 美元/GPU，取决于客户是否使用 TMO FA 工具 | TMO 工具是 fab/OSAT/FA lab capex，不随每颗 GPU 线性装配 |
+| 每 optical port | 0 美元直接 BOM；若用于硅光/光引擎 FA，按实验室工具摊销极小 | CPO/optical chiplet 的材料和截面分析可能用到 EM/FIB/TEM，但不是端口 BOM |
+
+### 7.2 关键工具和服务 BOM/价格链
+
+| 产品/业务 | 工具/服务 BOM 或交付内容 | 价格传导链 | 当前产能能力（美元计） | 采纳程度/认证阶段 |
+|---|---|---|---:|---|
+| FIB-SEM / PFIB / DualBeam | electron column、ion/plasma ion source、SEM detectors、EDS/EBSD、vacuum、stage、gas injection、sample prep、software、service contract | AI package 价值上升 -> FA/截面/void/defect 定位价值上升 -> fab/OSAT/IDM 采购高端 FA 工具 -> 工具 ASP 和 service attach 提升 | EM 总年化约 25 亿美元；半导体+材料子集估算 5-10 亿美元 | 已被半导体 R&D/FA lab 广泛采纳；HVM inline 认证能力弱于 KLA/Applied/Hitachi/ASML/HMI |
+| TEM/STEM / EELS / EDS | electron optics、aberration correction、detectors、sample stage、cryogenic/analytical modules、软件 | GAA/HBM/hybrid bonding 材料界面更复杂 -> 原子级结构和成分分析价值上升 -> R&D/FA lab 配置升级 | 同属 EM；高端单机 ASP 可达数百万至千万美元级 | 先进制程研发和失效分析必需，但吞吐不足以大规模 inline |
+| LC-MS/GC-MS/IC/ICP-MS/Raman/FTIR/XRF | ion source、mass analyzer、chromatography module、detector、autosampler、software、columns/consumables | 药物发现/QA 和半导体 contamination 规格提高 -> 分析仪器和 consumables 需求 | chromatography/MS/chemical analysis 合计年化约 43 亿美元 | 药企、工业、半导体实验室采纳高；半导体最高端污染分析需要客户方法验证 |
+| Clinical research + Clario | trial operations、site management、data capture、imaging/cardiac/eCOA/sensor endpoint、analytics、regulatory workflow | 药企降低开发周期和试验失败成本 -> outsourcing + endpoint data 价值提高 -> 长周期服务合同进入 RPO | clinical research 年化约 85 亿美元；Clario full run-rate 增量未完全体现在 Q1 | GxP/ICH/FDA/EMA 监管流程、客户 SOP、数据完整性认证；切换成本高 |
+| Pharma services / Patheon CDMO | drug substance、drug product、sterile fill-finish、process development、quality systems、batch release | 药物 pipeline 和商业化生产需求 -> CDMO 长约 -> capacity utilization 和 mix 决定 margin | 年化约 70 亿美元 | GMP/FDA/EMA/客户审计为核心；产能认证慢，客户切换成本高 |
+| BioProduction / filtration | cell culture media、single-use bioreactors/bags、resins、filters、purification/separation、sterile fluid path | biologics/GLP-1/ADC/CGT 产量和工艺复杂度提高 -> 耗材和过滤件 attach -> recurring revenue | 年化约 36 亿美元 | 客户工艺验证和材料认证锁定；配方/耗材替换会触发 revalidation |
+
+## 8. 一年后产能、采纳和认证三情景
+
+| 产品/业务 | 基准 1 年后 | 乐观 1 年后 | 极度乐观 1 年后 | 认证/客户验证变化 |
+|---|---|---|---|---|
+| FIB-SEM / PFIB / DualBeam | 半导体+材料收入能力 6-11 亿美元；AI 封装 FA 项目温和增加 | 8-14 亿美元；HBM4/CoWoS-like/SoIC FA lab 扩容明显 | 10-18 亿美元；glass/TGV/CPO/SoIC 同时拉动 FA 工具抢装 | 更多客户 lab 成为 standard tool，但 inline POR 仍主要在 KLA/AMAT/Hitachi/ASML/HMI |
+| TEM/STEM | 高端 R&D/FA 需求稳定，收入跟随 EM 小幅增 | advanced packaging/hybrid bonding 材料分析增加 | HBM4E/SoIC/optical chiplet 材料界面问题推动高端 TEM 配置升级 | 客户 qualification 以应用方法和 FA workflow 为主 |
+| Mass spec / chemical analysis | 44-46 亿美元年化，半导体污染分析小幅增 | 46-49 亿美元，药物研发+半导体高纯化学品分析双增 | 49-53 亿美元，AI biology 和 advanced fab contamination 同时增强 | 方法学 validation 和 QA SOP 锁定提高耗材 attach |
+| Clinical research + Clario | 105-112 亿美元，Clario integration 正常 | 112-123 亿美元，endpoint data attach 提升 | 123-138 亿美元，AI/自动化明显提高 win rate 和 trial execution | 客户数据平台整合、GxP/data integrity、监管接受度是关键 |
+| Pharma services | 72-77 亿美元，利用率正常化 | 77-84 亿美元，大药企外包和 fill-finish 需求好 | 84-92 亿美元，biologics/GLP-1/ADC/CGT 产能偏紧 | GMP capacity 和客户工艺验证决定产能释放 |
+| BioProduction / filtration | 38-42 亿美元，耗材库存正常 | 42-47 亿美元，biologics demand 回暖 | 47-53 亿美元，客户为保障供应签更长合约 | 工艺 revalidation 使客户替换成本高，利于续约和价格 |
+
+## 9. 基于 backlog/RPO 和供给的未来一年增速预测
+
+TMO 最可用的订单积压指标是 RPO：
+
+| 日期 | RPO | 未来 12 个月预计确认比例 | 未来 12 个月可见收入 | 含义 |
+|---|---:|---:|---:|---|
+| 2025-03-29 | 245.4 亿美元 | 54% | 约 132.5 亿美元 | 基准 backlog |
+| 2025-06-28 | 250.4 亿美元 | 54% | 约 135.2 亿美元 | 小幅增长 |
+| 2025-09-27 | 264.6 亿美元 | 53% | 约 140.2 亿美元 | Solventum/Olink/organic 合同累积 |
+| 2025-12-31 | 279.2 亿美元 | 52% | 约 145.2 亿美元 | FY2025 结束时合同基础增强 |
+| 2026-03-28 | 294.1 亿美元 | 52% | 约 152.9 亿美元 | Clario 并表后 RPO 进一步上升 |
+
+未来一年公司收入增速三情景：
+
+| 情景 | FY2026/FY2027 中段收入 run-rate | 增速判断 | 订单/供给依据 | 主要风险 |
+|---|---:|---:|---|---|
+| 基准 | FY2026 473-481 亿美元；2027 中段 run-rate 490-505 亿美元 | 2026 reported +6-8%；2027 中段 +3-5% | RPO +20% YoY，但只有约 153 亿美元未来 12 个月可见；clinical/CDMO 合同支撑，仪器端低个位数恢复 | biotech funding 慢、China/industrial 预算弱、Clario synergy 慢 |
+| 乐观 | 2027 中段 run-rate 510-535 亿美元 | +6-8% | Clario full-year、bioproduction/filtration、clinical trial starts、AI drug discovery workflow、半导体 FA 小幅增量 | integration cost、margin 稀释、clinical cancellations |
+| 极度乐观 | 2027 中段 run-rate 540-570 亿美元 | +9-12% | 药企研发外包恢复、AI biology/endpoint data 提高 win rate、HBM4/CoWoS/hybrid bonding FA lab 采购加速、pricing 改善 | 需要多条线同时超预期；TMO 历史体量大，单一 AI 半导体工具难拉动公司级增长 |
+
+取消率与订单质量：TMO 未披露公司级 cancellation rate。临床研究合同天然存在项目终止、延期和 scope change；CDMO 合同存在客户 pipeline、监管和产能利用率风险；仪器订单存在客户预算周期和出口管制风险。因此 RPO 是强可见性指标，但不能等同于无风险 backlog。
+
+## 10. 竞争格局、替代方案和客户切换成本
+
+### 10.1 按业务看竞争
+
+| 业务 | 主要竞争对手 | TMO 优势 | 风险/替代 |
+|---|---|---|---|
+| Life science tools / bioproduction | Danaher/Cytiva/Pall、Sartorius、Merck KGaA/Millipore、Revvity、Bio-Rad、Agilent | 规模、渠道、Gibco/Invitrogen/Applied Biosystems、workflow 覆盖、并购整合 | 客户库存周期、价格压力、biotech funding、Danaher/Sartorius 在 bioprocessing 的强竞争 |
+| Analytical Instruments / LC-MS | Agilent、Waters、Bruker、Shimadzu、SCIEX/Danaher、PerkinElmer/Revvity | Orbitrap、LC-MS、综合实验室渠道、服务 | 高端 MS 竞争强，采购周期明显，China/industrial 弱会拖累 |
+| Electron microscopy / semiconductor FA | ZEISS、JEOL、Hitachi High-Tech、TESCAN、Bruker、Oxford Instruments、KLA、Applied Materials、ASML/HMI、Nova/Onto/Camtek | 高端 EM/FIB/TEM 产品线和材料科学基础强 | TMO 不是 HVM inline process-control 龙头；KLA/AMAT/Hitachi/ASML/HMI 更贴近前道量产 |
+| CRO / clinical research | IQVIA、ICON、Labcorp/Fortrea、Charles River、Parexel、Medpace、Syneos、Eurofins | PPD 规模 + Clario endpoint data，和 TMO drug development/manufacturing workflow 协同 | trial cancellation、定价、项目延期、整合复杂度 |
+| CDMO / pharma services | Lonza、Catalent/Novo Holdings、Samsung Biologics、WuXi Biologics、Fujifilm、Recipharm、Eurofins | Patheon 全球网络、客户关系、分析/生产一体化 | 利用率、监管检查、客户集中、价格竞争、地缘 |
+| Diagnostics | Roche、Abbott、Danaher/Cepheid、Siemens Healthineers、bioMerieux、Hologic、Qiagen | 特定免疫诊断/微生物/移植诊断和渠道 | 增速低，医院预算和报销压力 |
+
+### 10.2 新技术是否是未来主流
+
+在 AI 芯片制造链，未来主流不是单纯“更高分辨率显微镜”，而是 high-throughput inspection/metrology + FA feedback + AI defect classification + process recipe lock-in。项目内行业资料显示 2026-2027 最强主线是 HBM/2.5D/CoWoS advanced packaging inspection、e-beam defect review、CD/e-beam metrology、X-ray/materials/chemical metrology、mask inspection。TMO 的 EM/FA 工具在这些流程中重要，但大多位于 R&D、process development、yield excursion debug、failure analysis，而非所有 wafer/package 的 inline high-throughput 检测。
+
+在药物研发链，clinical endpoint data、patient data integration、AI-assisted clinical operations 和 real-world evidence 会成为主流 workflow。Clario 对 TMO 的意义在这里更大：它把 PPD 的临床执行和 endpoint data 抓取/分析结合，使 TMO 能向药企卖更完整的 trial productivity package。
+
+### 10.3 客户替换成本
+
+| 环节 | 替换成本 | 原因 |
+|---|---:|---|
+| Bioproduction media/resin/filter/single-use | 高 | 客户工艺验证、质量文件、监管申报、批次一致性绑定，替换会触发 revalidation |
+| Clinical research / endpoint data | 中高 | SOP、site network、数据平台、监管合规、historical trial data 和项目团队嵌入 |
+| CDMO / pharma services | 高 | GMP 产线、工艺转移、客户审计、监管批准、batch history，迁移成本高 |
+| LC-MS/analytical workflows | 中 | 方法学、软件、耗材和 service network 有粘性，但可被 Agilent/Waters/Bruker/SCIEX 替代 |
+| EM/FIB/TEM | 中 | 样品制备 recipe、operator training、service 和数据 workflow 有粘性；但 ZEISS/JEOL/Hitachi/TESCAN 等替代存在 |
+| Routine lab products | 低到中 | 渠道便利性强，但产品可多源替代 |
+
+## 11. 投资跟踪重点和反证指标
+
+### 11.1 最值得盯的正向指标
+
+- RPO 是否继续高于收入增速增长，且 12 个月确认比例维持 52-54%。
+- Clinical research + Clario 的 reported growth 是否能在 2026H2 保持双位数附近，同时不牺牲 margin。
+- BioProduction 增长是否剔除并购后仍能恢复到中高个位数 organic。
+- Analytical Instruments 的 margin 是否从 2026Q1 的 20.7% 回升，electron microscopy 是否恢复增长。
+- 半导体客户是否增加 FA、FIB-SEM、TEM、materials analysis 采购，尤其 HBM4、CoWoS-like、hybrid bonding、glass/TGV、CPO/optical chiplet。
+- FCF conversion 是否回到历史强水平，并用于去杠杆而不只是回购。
+
+### 11.2 反证指标
+
+- RPO 增长放缓或 future 12-month recognition 比例下降。
+- Clario integration cost 超预期、临床项目 cancellation/延期上升。
+- Analytical Instruments 连续两个季度收入或 margin 下滑，说明仪器周期未恢复。
+- Bioproduction 增速剔除并购后低于预期，客户库存仍未消化。
+- 净债务/EBITDA 因并购和回购维持高位，评级或利息压力上升。
+- 半导体检测量测行业订单强，但 TMO electron microscopy 不增长，说明 AI 芯片制造红利更多流向 KLA/AMAT/Onto/Nova/Camtek/Hitachi/ASML/HMI。
+
+## 12. 资料来源和口径
+
+主要外部资料：
+
+- TMO 2026Q1 earnings release / SEC 8-K exhibit: `https://www.sec.gov/Archives/edgar/data/97745/000009774526000086/q12026earnings8kex99_1.htm`
+- TMO 2025Q4 earnings release / SEC 8-K exhibit: `https://www.sec.gov/Archives/edgar/data/97745/000009774526000012/q42025earnings8kex99_1.htm`
+- TMO 2025Q3 earnings release / SEC 8-K exhibit: `https://www.sec.gov/Archives/edgar/data/97745/000009774525000150/q32025earnings8kex99_1.htm`
+- TMO 2025Q2 earnings release / SEC 8-K exhibit: `https://www.sec.gov/Archives/edgar/data/97745/000009774525000093/q22025earnings8kex99_1.htm`
+- TMO 2025Q1 earnings release / SEC 8-K exhibit: `https://www.sec.gov/Archives/edgar/data/97745/000009774525000034/q12025earnings8kex99_1.htm`
+- TMO 2026Q1 10-Q: `https://www.sec.gov/Archives/edgar/data/97745/000009774526000092/tmo-20260328.htm`
+- TMO 2025 10-K: `https://www.sec.gov/Archives/edgar/data/97745/000009774526000018/tmo-20251231.htm`
+- TMO Q1 2026 guidance summaries: GenomeWeb / Betafinch / Yahoo transcript summaries, used only for revenue and adjusted EPS guide because official press release deferred guidance to conference call.
+- TMO product and acquisition pages: Clario acquisition, Olink acquisition, Solventum filtration and separation acquisition, Thermo Scientific electron microscopy, Orbitrap/LC-MS, PPD/Clario/Patheon product pages.
+
+项目内行业资料：
+
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+- `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+
+关键口径说明：
+
+- “AI 数据中心收入”只指 GPU/服务器/网络/电力/冷却/IDC 物理建设和直接运行相关收入；TMO 为 0。
+- “AI 芯片制造间接相关收入”包括半导体材料分析、FIB-SEM/TEM/FA、化学污染分析、先进封装失效分析等，TMO 未披露，本文为模型估算。
+- RPO 是合同剩余履约义务，不等于无风险 backlog，也不代表单季 bookings。
+- 所有 2026-2027 情景预测均为研究估算，不是公司指引。

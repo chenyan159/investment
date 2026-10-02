@@ -1,0 +1,549 @@
+# 公司：MICLF Mycronic AB（MYCR.ST，迈克罗尼克）
+
+> **研究截止：**2026-07-31（America/Los_Angeles）  
+> **公司：**Mycronic AB (publ)；主要上市地 Nasdaq Stockholm，代码 `MYCR`/数据代码 `MYCR.ST`；美国场外普通股代码 `MICLF`。  
+> **计量口径：**除另行注明，财务数字均为百万瑞典克朗（SEK m）；美元换算采用 2026-07-31 日线收盘 `USD/SEK=9.51551`。[汇率序列](https://query1.finance.yahoo.com/v8/finance/chart/SEK=X?interval=1d&range=1mo&events=history)  
+> **证据边界：**项目内只读取并使用 `基本面/行业调研/` 下的相关产业资料；没有调用其他研究目录，也没有修改公司索引。联网证据优先使用公司监管报告、产品规格、客户/订单公告、NVIDIA 技术文档和行业会议一手资料。  
+> **标识：**“披露”是公司/客户直接披露；“推算”是以披露总量反推；“R-est”是本文模型，不是公司指引或产品报价。三情景中的“极度乐观”是低概率压力测试上沿，不是目标价所隐含的基准预测。
+
+## 核心结论
+
+1. **Mycronic 不是纯 AI 公司，而是“光罩设备高利润现金牛 + 电子制造自动化 + AI 数据中心设备期权”的组合。**滚动 12 个月收入 `SEK 8.649bn`（约 `$909m`）中，Pattern Generators 仍占分部收入 **37.5%**、贡献绝大部分利润；AI 增量主要来自 Global Technologies 的 AI 服务器 PCB 测试和 800G/1.6T 光模块精密键合，以及 High Volume 的服务器 TIM 点胶、光模块点胶与终装。本文估算“窄口径直接 AI”约占集团收入 **15%–22%**，“含半导体光罩等间接 AI”的宽口径约 **18%–25%**，公司没有披露该指标。
+2. **订单拐点已经进入报表。**2026Q2 集团订单 `SEK 2.917bn`、同比 **+119%**，期末 backlog `SEK 5.255bn`、同比 **+29%**。Global Technologies（GT）Q2 订单 `SEK 1.111bn`、同比 **+176%**，剔除 Surfx/ETZ 后仍 **+156%**；其 backlog `SEK 2.099bn`、同比 **+195%**，滚动 B/B **1.65**、按滚动收入计算覆盖约 **11.5 个月**。这是全公司最强的前瞻信号。[2026Q2 监管报告](https://storage.mfn.se/c8f3d92b-f205-4f1a-9552-77f0d11afede/interim-report-january-june-2026.pdf)
+3. **MRSI-LEAP 已越过“只有展会样机”的阶段。**公司 2026-07-27 明确称 LEAP 已交付多家头部光通信客户，并在 **800G/1.6T 光模块产线稳定量产**；6 月深圳新址扩建 LEAP 与 MRSI-A-L 两条生产线。这比奖项本身更重要。但客户仍未具名，也没有披露台数、订单金额、良率或终端 hyperscaler 认证，故不能把 CFCF 奖项等同于 NVIDIA/云客户认证。[CFCF2026 量产说明](https://www.mycronic.com/product-areas/die-bonding/news--events/news/mrsi-leap-wins-cfcf2026-most-influential-product-award/)；[MRSI 深圳扩产](https://www.mycronic.com/product-areas/die-bonding/news--events/news/mrsi-china-relocates-to-expanded-facility/)
+4. **AI PCB Test 的证据更硬、收入可见度更高。**公司连续三个季度明确指向 AI 服务器/数据中心 PCB；Wertheim 新厂可使 PCB Test 生产能力较旧厂约**翻倍**，A9XL 覆盖 `1,220×660mm`、最大 `20kg` 的大尺寸重型板，RoBAT 补上高速信号完整性测试。Bomin 的 `RMB 3bn` 园区面向 AI 服务器/光模块，Shennan 已累计采购 atg 超过 **100 台**，但 2026 年 GT 大单仍无客户名和单笔金额。[Wertheim 扩产](https://www.mycronic.com/news-events/news/new-facility-in-wertheim-opens-successfully/)；[Bomin 客户验证](https://www.mycronic.com/product-areas/bare-board-testing/news-events/all-news-bareboard-testing/best-support-award-from-bomin/)；[Shennan 客户验证](https://www.mycronic.com/product-areas/bare-board-testing/news-events/all-news-bareboard-testing/excellent-partner-award-from-scc/)
+5. **财务很健康，估值却不便宜。**2026-06-30 净现金 `SEK 2.267bn`，流动比率 **2.22x**、速动比率 **1.48x**；H1 经营现金流 `SEK 1.312bn`，扣除有形资本开支和资本化研发后的近似自由现金流 `SEK 1.184bn`。但 2026-07-31 主上市股收盘 `SEK 313.80`，对应市值 `SEK 61.28bn/$6.44bn`、TTM PE **35.3x**、2026E PE **30.6x**、P/S **7.08x**。市场已按“高质量利基复利 + AI 订单持续”定价，若 GT 订单重复下单、光模块扩产周期后移或 PG 交付 mix 转弱，估值压缩会快于收入下修。
+6. **最值得跟踪的七个对象依次为：**PCB Test（A9/A9XL + RoBAT + ETZ）、MRSI Die Bonding（LEAP/HVM/S-HVM/A-L）、High Volume AI 点胶、SLX/MMX 半导体光罩设备、Surfx 大气等离子、Vanguard 光子线键合，以及尚在研发的光罩检测。前四项决定未来一年收入；后三项体量小，却可能决定 2027–2029 年第二增长曲线。
+
+## 1. 公司整体业务、投资者定位与财务状况
+
+### 1.1 公司做什么、处在产业链哪里
+
+Mycronic 开发、制造并维护电子工业用高精度生产设备。它不是晶圆厂、光模块厂或 PCB 厂，而是在客户资本开支与量产良率之间出售“生产工具 + 工艺 know-how + 软件/耗材/服务”。设备寿命长、客户验证和 recipe 沉淀形成切换成本，系统交付又使季度收入天然波动。
+
+| 分部 | 2026Q2 收入 / YoY | Q2 分部收入占比 | 滚动12月收入 | 产业链位置 | AI 关联度与判断 |
+|---|---:|---:|---:|---|---|
+| Pattern Generators（PG） | `905 / -7%` | **37.3%** | `3,257`（`$342m`） | 半导体/显示光罩厂上游；SLX 激光写版、MMX 量测、Prexision 显示光罩写版 | **间接、中等。**多数光罩数量仍可由激光写版，但最先进关键层多用电子束；AI GPU 数量不会线性变成 SLX 收入 |
+| PCB Assembly Solutions（PCBA） | `303 / -8%` | **12.5%** | `1,373`（`$144m`） | 高混合 SMT 贴装、喷印、AOI 与软件 | **低。**数据中心重型 PCBA AOI 有应用，但标准工业业务仍弱，2026Q2 因重组亏损 |
+| High Volume（HV/Axxon） | `513 / +16%` | **21.2%** | `1,869`（`$196m`） | 批量点胶、涂覆、印刷、终装 | **新进入、中等偏高。**服务器导热界面材料（TIM）点胶、光模块点胶和终装是新增机会 |
+| Global Technologies（GT） | `704 / +118%`；有机 **+115%** | **29.0%** | `2,181`（`$229m`） | PCB Test、Die Bonding、Photonic Interconnects、Magnetic Test、Applied Plasma 五条利基设备线 | **最高。**AI 服务器板、800G/1.6T/CPO 光子封装和先进封装直接受益；Q2 毛利率 **56.2%**、EBIT margin **35.6%** |
+
+分部占比以四分部收入合计 `SEK 2.425bn` 为分母，集团报表另有 `SEK -9m` 内部抵销。滚动收入来自 [2026Q2 报告](https://www.mycronic.com/news-events/our-press-releases/interim-report-january-june-2026/)。公司 2025 年系统销售约占 **75%**、aftermarket 约 **25%**；服务、升级、耗材平滑了资本设备周期，但 PG 的少数高价系统仍能显著改变单季利润。
+
+### 1.2 投资者眼中的公司
+
+市场通常同时用四个标签看 Mycronic：
+
+- **高质量利基复利公司：**超过 5,500 家客户、约 35,000 套在役系统、产品寿命长、售后占比高；客户通常不会仅因便宜几个百分点就更换已验证平台。2025 年任何单一客户均未超过集团收入 10%，降低了终端客户集中风险。[2025 年报](https://storage.mfn.se/74466bcb-9f6d-45f8-9c6a-71c20d3e0d6e/annual-report-2025.pdf)
+- **PG 准垄断现金牛：**全球先进平板显示厂均使用 Mycronic 生产的光罩，半导体成熟/特殊层激光写版也以 SLX 为重要标准；PG 2026Q2 毛利率 **71.6%**、EBIT margin **53.2%**。但 Applied Materials/Heidelberg 及电子束写版仍是替代，不应写成全光罩市场垄断。
+- **并购驱动的平台公司：**GT 通过连续收购把 PCB Test、光子键合、光子互连、MRAM 测试和等离子清洗拼成利基设备组合。优点是 TAM 扩张，代价是整合、商誉和产品线估值不透明。
+- **AI 基建“卖铲人”而非纯 beta：**AI 增量真实但业务映射复杂：服务器板测试和光模块键合最直接；SLX 受新设计/掩模层/复刻与替换周期驱动；显示和普通 SMT 与 AI 基本无关。
+
+### 1.3 最近三年的重大转型、收购与产能变动
+
+| 时间 | 事件与已知金额/规模 | 业务变化 | 尽调判断 |
+|---|---|---|---|
+| 2024-04 | 收购 Vanguard Automation；2023 收入 `EUR 5.2m`、26 人；基础对价约 `EUR 18m`，另有最高约 `EUR 8m` earn-out | 新建 Photonic Interconnects，进入 3D 纳米打印光子线键合/微透镜 | 技术稀缺但约 40 台安装中多数仍在研发机构，商业量产客户较少；是远期期权，不是当前利润柱。[收购公告](https://www.mycronic.com/news-events/our-press-releases/global-technologies-makes-acquisition-in-germany/) |
+| 2024-10 | 收购 Modus；2023 收入 `EUR 4m`、18 人、在役 1,650 台扫描器及 650 台相机系统；对价约 `EUR 8m` | 补齐 HV 涂覆/焊接/元件 AOI | 有交叉销售，但普通 AOI 竞争强、不是本文 AI 核心。[公告](https://www.mycronic.com/news-events/our-press-releases/high-volume-division-makes-acquisition-in-germany/) |
+| 2025-03 | 收购 Hprobe；2024 收入 `EUR 4m`、14 人；对价约 `EUR 16m` | 新建 Magnetic Test，进入 MRAM/TMR 3D 磁场 ATE | MRAM 可服务 edge/AI，但目前数据中心收入证据不足；短期不列核心增长项。[公告](https://www.mycronic.com/news-events/our-press-releases/global-technologies-makes-acquisition-in-france/) |
+| 2025-04 | 收购 RoBAT；2024 收入 `GBP 3m`、27 人；基础对价约 `GBP 7.5m`，潜在 earn-out 最高约 `GBP 4m` | 将 TDR/高速信号完整性测试并入 PCB Test | 与 AI 服务器、高速 backplane/交换板高度协同，战略价值大于收购体量。[公告](https://www.mycronic.com/news-events/our-press-releases/global-technologies-makes-acquisition-in-the-united-kingdom/) |
+| 2025-06 | 收购 Surfx；2025 预计收入 `$25m–30m`、34 人；交易/留任安排金额较高 | 新建 Applied Plasma，进入无需真空的大气等离子清洗、氧化物去除和 hybrid bonding 表面活化 | 是先进封装高潜力小业务；需验证 STW-10 是否从 demo/qualification 进入头部 HVM。[公告](https://www.mycronic.com/news-events/our-press-releases/global-technologies-acquires-surfx-in-the-us/) |
+| 2025Q3 | PCBA 生产从 Täby 迁至 Kista | 同时释放 PG 生产空间、改善两分部生产流 | 对 2026 PG 交付能力有实质帮助；不是需求本身。[2025Q3 报告](https://www.mycronic.com/news-events/our-press-releases/interim-report-january-september-2025/) |
+| 2025-07 / 2026-03 | 签约并完成 Cowin DST；2025 收入 `SEK 78m`，对价 `$20.5m` | 加入显示面板/光罩激光修复，研发检测、清洗 | H1 贡献收入 `SEK 31m`、EBIT `-21m`；短期稀释，光罩检测是潜在新品。[2026Q2 报告](https://storage.mfn.se/c8f3d92b-f205-4f1a-9552-77f0d11afede/interim-report-january-june-2026.pdf) |
+| 2026-01 | 收购 ETZ；2025 收入近 `EUR 4m`，其中约 85% 已来自 Mycronic；对价 `EUR 3.5m` | 内部化 PCB Test 探针研发与制造 | 不是大额外部收入收购，而是把关键耗材、交期和毛利握在手中。[公告](https://www.mycronic.com/news-events/our-press-releases/global-technologies-makes-acquisition-in-germany2/) |
+| 2026-06 | MRSI 深圳迁入更大设施，扩建 **LEAP、A-L 两条产线**和研发实验室 | 光模块键合从单纯需求故事转向实际供给扩张 | 未来 12 个月最有用的产能信号之一，但公司未披露台数/美元产能。 |
+| 2026-07 | Axxon 深圳新园区开工：建筑面积 `85,000m²`、远期年产能最高 **15,000 台**，计划 2028 年底竣工 | HV 的长期制造与研发总部 | 对 2029 后容量重要；不能计入 2027 年产能。[园区公告](https://www.mycronic.com/news-events/news/axxon-mycronic-groundbreaking-ceremony-in-shenzhen-china/) |
+
+此外，High Flex 于 2025 年更名 PCB Assembly Solutions；Axxon 中国分部的潜在分拆上市已暂缓。公司 2027–2030 财务目标是收入达到 `SEK 10bn`、EBIT 超过 `SEK 2bn`，集团 EBIT margin 持续高于 20%，且每个分部高于 10%。[公司财务目标](https://www.mycronic.com/investors/financial-sustainability-targets/)
+
+### 1.4 最新股价、估值和利润率
+
+| 指标 | 最新值 | 日期/计算口径 |
+|---|---:|---|
+| MYCR.ST 收盘价 | **SEK 313.80** | 2026-07-31，Nasdaq Stockholm；成交量 209,817 股。[行情序列](https://query1.finance.yahoo.com/v8/finance/chart/MYCR.ST?interval=1d&range=1mo&events=history) |
+| MICLF 场外最近价 | **$32.50** | 2026-07-30，Yahoo 记录成交量为 **0**，报价滞后且流动性很差；不可把它当作可靠实时价格。[MICLF 行情](https://query1.finance.yahoo.com/v8/finance/chart/MICLF?interval=1d&range=1mo&events=history) |
+| 主上市价折算美元 | **$32.98/股** | `313.80 / 9.51551`；比 MICLF 场外价更适合估值 |
+| 期末已发行在外/平均基本股数 | **约 195.27m 股** | 2026-06-30 期末与 2026H1 平均基本股数均约 195.27m；2025 年已完成 2:1 拆股 |
+| 市值 | **SEK 61.28bn / $6.44bn** | `313.80 × 195.27m` |
+| TTM PE | **35.3x** | TTM EPS `SEK 8.88` |
+| 2026E forward PE | **30.6x** | 7 位分析师平均 EPS `SEK 10.24`；不是公司指引。[FactSet 汇总](https://www.finanzen.net/schaetzungen/mycronic_registered) |
+| TTM P/S | **7.08x** | 市值 / TTM 收入 `SEK 8.649bn` |
+| TTM 收入增速 | **约 +7.5%** | TTM `8.649bn` 对可比 TTM `8.047bn`；2026Q2 报告增速 **+17%**、恒汇率 **+18%**，H1 **+17%**、恒汇率 **+25%** |
+| TTM 毛利率 | **53.7%** | 毛利 `SEK 4.641bn` / 收入 `8.649bn` |
+| TTM EBIT margin | **25.8%** | EBIT `SEK 2.232bn` |
+| TTM 净利率 | **20.0%** | 净利润 `SEK 1.734bn` / 收入 `8.649bn` |
+| 2026E 收入 / EBIT | **SEK 9.387bn / 2.514bn** | FactSet 均值；隐含 EBIT margin **26.8%**，收入略高于公司 `9.25bn` 指引 |
+
+`MICLF` 是美国 OTC 交易符号，不是单独经营实体；估值应以 `MYCR.ST` 的主上市价格、瑞典克朗报表和实时汇率为准。
+
+### 1.5 资产负债表健康度
+
+截至 2026-06-30，公司资产负债表为**健康偏强**，足以承担现有扩产与小型并购，但并非没有资产质量和营运资本风险。
+
+| 项目 | 数值 | 判断 |
+|---|---:|---|
+| 现金 / 有息负债 / 净现金 | `2,687 / 421 / 2,267` | 净现金为公司披露值；分项以 SEK m 四舍五入，故表面相减差 1m。净现金约占市值 **3.7%**；融资风险低 |
+| 流动资产 / 流动负债 | `7,321 / 3,291` | 流动比率 **2.22x** |
+| 速动资产 / 流动负债 | `(7,321-2,461)/3,291` | 速动比率 **1.48x**，短债覆盖充足 |
+| 库存 | `2,461`，YoY **+15.0%** | 占 TTM 收入 **28.5%**；设备长交期与增长备料可解释，但若订单反转会形成减值/现金占用 |
+| 应收账款 | `1,768`，YoY **+26.9%** | 增速高于 TTM 收入；部分来自高增长和收购，仍需观察 DSO 与验收延迟 |
+| 无形资产 | `3,805` | 占总资产 **30.9%**、占权益 **48.3%**；连续并购使商誉/技术减值成为主要资产质量风险 |
+| 权益 / 总资产 | `7,881 / 12,296` | 权益比率 **64.1%**，杠杆很低 |
+| H1 经营现金流 | `1,312` | 对 H1 净利润 `1,241` 的转换率 **106%** |
+| H1 近似自由现金流 | `1,312-102-26=1,184` | 扣有形资本开支与资本化研发、未扣收购；现金创造力强 |
+| ROE / ROCE（滚动） | **23.7% / 29.8%** | 资本回报高；未来需观察并购无形资产是否拉低回报 |
+
+主要黄灯是 H1 营运资本流出 `SEK 382m`、库存和应收快速增长，以及 Cowin H1 EBIT `-21m`。不过净现金、现金转换和低负债足以把当前评级维持在“健康偏强”。[资产负债表与现金流原表](https://storage.mfn.se/c8f3d92b-f205-4f1a-9552-77f0d11afede/interim-report-january-june-2026.pdf)
+
+## 2. 最新及最近四次财报：五季重建
+
+### 2.1 集团订单、收入、利润与 backlog
+
+| 财报季度 | 订单 | 收入 | 订单/收入 B/B | 期末 backlog | backlog 覆盖月数* | 毛利率 | EBIT / margin | EPS | 当季最重要信息 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| **2026Q2** | **2,917**（+119%） | **2,416**（+17%） | **1.21x** | **5,255**（+29%） | **6.5** | **56.9%** | `698 / 28.9%` | `2.70` | GT 订单首破 10 亿；HV AI 点胶新增；PG 四台 SLX 订单；指引升至 9.25bn |
+| **2026Q1** | 2,529（+23%） | **2,503**（+17%） | 1.01x | 4,707（+2%） | 5.6 | **60.6%** | **938 / 37.5%** | **3.66** | PG 高价系统 mix 令利润创纪录；GT/HV 订单强，AI 服务器板和光通信延续 |
+| **2025Q4** | 1,939（-19%） | 2,021（-2%） | 0.96x | 4,681（约持平） | 6.9 | 46.8% | 342 / 16.9% | 1.42 | PG 交付 mix 转弱拖累集团毛利；GT 收入 +41%，公司首次给出 2026 指引 8.25bn |
+| **2025Q3** | 2,431（+67%） | 1,709（-4%） | **1.42x** | 4,763（+9%） | **8.4** | 47.1% | 255 / 14.9% | 1.11 | PG 低收入/低 mix，GT 的 AI PCB Test、Die Bonding 均强；Kista 搬迁完成 |
+| **2025Q2** | 1,330（-37%） | 2,066（+35%） | **0.64x** | 4,068（-12%） | 5.9 | 53.4% | 568 / 27.5% | 2.28 | PG 当季无新系统订单但交付强；GT 完成 RoBAT、Surfx，AI 订单尚未完全进入 backlog |
+
+\*覆盖月数为 `期末 backlog /（当季收入×4）×12`，仅为当季 run-rate 代理；backlog 是**商品订单**，订单额含商品、服务及汇率重估，不能据此做严格递延收入桥。五季原表来自 [2026Q2 报告第 22 页](https://storage.mfn.se/c8f3d92b-f205-4f1a-9552-77f0d11afede/interim-report-january-june-2026.pdf)；季度叙述分别交叉核验 [2026Q1](https://www.mycronic.com/news-events/our-press-releases/interim-report-january-march-2026/)、[2025Q4](https://www.mycronic.com/news-events/our-press-releases/year-end-report-january-december-2025/)、[2025Q3](https://www.mycronic.com/news-events/our-press-releases/interim-report-january-september-2025/) 和 [2025Q2](https://www.mycronic.com/news-events/our-press-releases/interim-report-january-june-2025/)。
+
+### 2.2 五季各分部收入、增速和利润率
+
+每格依次为“`收入 / YoY / 毛利率 / EBIT margin`”。EBIT margin 由公司披露的分部 EBIT/收入计算；少量内部交易使分部合计与集团略有差异。
+
+| 财报季度 | Pattern Generators | PCB Assembly | High Volume | Global Technologies |
+|---|---|---|---|---|
+| **2026Q2** | `905 / -7.1% / 71.6% / 53.2%` | `303 / -7.6% / 34.8% / -14.5%` | `513 / +15.8% / 43.8% / 13.2%` | **`704 / +118.0% / 56.2% / 35.6%`** |
+| **2026Q1** | **`1,291 / +7.9% / 77.2% / 64.4%`** | `318 / +8.9% / 36.5% / 2.5%` | `408 / +23.6% / 41.6% / 9.6%` | `492 / +52.3% / 48.7% / 24.2%` |
+| **2025Q4** | `577 / -17.8% / 58.2% / 30.0%` | `438 / -9.9% / 40.5% / 13.5%` | `448 / -4.1% / 41.1% / 12.3%` | `570 / +41.4% / 44.9% / 20.7%` |
+| **2025Q3** | `485 / -39.9% / 59.0% / 33.2%` | `314 / -11.0% / 36.0% / 6.4%` | `499 / +48.5% / 38.5% / 15.8%` | `416 / +46.5% / 51.8% / 10.1%` |
+| **2025Q2** | `974 / +49.8% / 69.4% / 55.1%` | `328 / -7.1% / 37.2% / 4.3%` | `443 / +38.4% / 38.5% / 16.7%` | `323 / +59.1% / 42.2% / 3.4%` |
+
+最重要的利润结构变化是：GT 不再只是低利润并购组合，Q2 在有机收入翻倍和产品 mix 改善下实现 **56.2% GM/35.6% EBIT margin**；反之 PCBA 因标准工业需求弱和 `SEK 39m` 当季重组费转亏。PG 的 58%–77% 毛利区间说明系统交付 mix 会让集团单季利润率大幅摆动。
+
+### 2.3 分部订单与 backlog、交期和 AI 占比估算
+
+每格为“`当季订单 / 季末 backlog`”。
+
+| 财报季度 | PG | PCBA | HV | GT | AI 相关收入占集团估算（R-est） |
+|---|---:|---:|---:|---:|---:|
+| **2026Q2** | `675 / 1,706` | `444 / 257` | `695 / 1,193` | **`1,111 / 2,099`** | 窄口径 **15%–22%**；宽口径 **18%–25%** |
+| **2026Q1** | `597 / 1,888` | `287 / 116` | `737 / 1,011` | `915 / 1,692` | 窄口径 10%–15%；宽口径 12%–18% |
+| **2025Q4** | `545 / 2,582` | `362 / 147` | `271 / 683` | `773 / 1,269` | 窄口径 11%–17%；宽口径 13%–20% |
+| **2025Q3** | `789 / 2,614` | `405 / 224` | `444 / 860` | `797 / 1,066` | 窄口径 10%–15%；宽口径 12%–18% |
+| **2025Q2** | `191 / 2,309` | `356 / 133` | `383 / 915` | `402 / 711` | 窄口径 6%–10%；宽口径 7%–13% |
+
+AI 估算的窄口径只纳入 AI 服务器板测试、高速光模块/CPO 键合与主动对准、服务器 TIM/光模块点胶、AI 先进封装等离子；宽口径再纳入 SLX 半导体光罩中可由 AI 新设计/扩产解释的部分。由于公司不披露客户、应用收入或产品线收入，区间是以 GT/HV 增长、并购收入锚和产品用途反推，**不能与分部披露混作审计数字**。
+
+截至 2026Q2，滚动口径给出的实际交期压力更清楚：
+
+| 分部 | TTM 订单 | TTM 收入 | TTM B/B | backlog | backlog/TTM 收入 | Q2 B/B | 交期解释 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| PG | 2,606 | 3,257 | **0.80x** | 1,706 | **6.3 个月** | 0.75x | 数量覆盖不长，但定制 SLX 延至 2028，单机交期可远超均值 |
+| PCBA | 1,497 | 1,373 | 1.09x | 257 | 2.2 个月 | **1.47x** | 两笔国防整线订单拉高 Q2；标准工业业务仍弱 |
+| HV | 2,147 | 1,869 | 1.15x | 1,193 | **7.7 个月** | **1.35x** | AI 新应用与中国消费电子共同驱动；需剥离前置采购 |
+| GT | **3,597** | 2,181 | **1.65x** | **2,099** | **11.5 个月** | **1.58x** | AI PCB/光通信设备最紧；交付能力而非订单不足成为约束 |
+
+公司未披露 bookings 与 backlog 的取消率、客户 rolling forecast 或 lead-time 中位数。PG 只披露了交期调整：一台 SLX 从 Q2 移至 Q3，Prexision Lite 8 Evo 与 MMX 从 Q3 移至 Q4，另有一台 SLX 从 Q4 提前至 Q3；没有说明取消。故本文在第 8 节用低取消率区间建模，不把 backlog 桥残差直接当作取消。
+
+## 3. 2026 最新指引、业务占比与产品交叉验证
+
+### 3.1 2026 指引和隐含下半年要求
+
+公司对 2026 收入指引连续上调：
+
+| 公布时间 | 2026 收入指引 | 变化 | 当时依据 |
+|---|---:|---:|---|
+| 2026-02-05 | `SEK 8.25bn` | 初始 | 2025 年末 backlog 与已签并购 |
+| 2026-04-24 | `SEK 8.75bn` | +0.50bn | Q1 收入/EBIT 创纪录，GT/HV 订单强 |
+| 2026-07-14 | **`SEK 9.25bn`** | 再 +0.50bn | H1 收入 4.919bn、订单 5.446bn，GT backlog 上升 |
+
+实现 9.25bn 需要 H2 收入 `9.25-4.919=SEK 4.331bn`，相对 2025H2 的 `3.730bn` 增长 **16.1%**。这并不激进：仅期末 backlog 就有 5.255bn，但并非全部在未来 12 个月确认，且商品 backlog 与含服务/汇率重估的订单额口径不同。FactSet 2026E 收入 `SEK 9.387bn`、Q3/Q4 分别约 `2.136/2.329bn`，比公司指引仅高约 **1.5%**，市场共识基本相信上调后的指引，而非明显押注超额。[分析师共识说明](https://www.mycronic.com/investors/consensus-estimates/)；[FactSet 数字](https://www.finanzen.net/schaetzungen/mycronic_registered)
+
+### 3.2 最新收入结构和最突出的业务
+
+| 分部 | 2026Q2 收入占比 | Q2 YoY | H1 YoY | TTM 收入占比 | Q2 毛利率 | 当前优先级 |
+|---|---:|---:|---:|---:|---:|---|
+| PG | 37.3% | -7% | +1% | 37.5% | **71.6%** | **利润第一，增长第二**；SLX/MMX 关注半导体，显示系统仅作现金流 |
+| PCBA | 12.5% | -8% | 约持平 | 15.8% | 34.8% | **重组/修复**；目标 2027 年底 EBIT margin >10% |
+| HV | 21.2% | +16% | +19% | 21.5% | 43.8% | **增长第二梯队**；服务器 TIM、光模块点胶/终装是新增量 |
+| GT | 29.0% | **+118%** | **+85%** | 25.1% | **56.2%** | **公司最侧重、订单最突出**；PCB Test 与 Die Bonding 是未来一年核心 |
+
+### 3.3 重点产品、型号、销售与利润率交叉验证
+
+| 关键业务 | 对应产品/型号 | 公司与渠道事实 | 销售/毛利交叉验证与判断 |
+|---|---|---|---|
+| **PCB Test** | atg `A9/A9 plus/A9a/A9a plus/A9L/A9XL`、`A7-16 Pro`、S3、LM1000；RoBAT `RCI` 高速信号测试；ETZ 探针 | A9 系列 8 探头；A9XL 最大板 `1,220×660mm`、20kg；A9 可达约 220 test points/s。Shennan 累计 >100 台，Bomin、Founder、SYE 有客户奖项；Wertheim 新厂设计为约翻倍产能。[A9XL 规格](https://www.mycronic.com/globalassets/pdf/product-areas/bare-board-testing/2026-brochures/a9xl-specification-03_2026.pdf) | GT Q2 订单/收入/毛利同步创新高，且收购贡献仅 31m，有机收入 **+115%**，证明不是 Surfx 并表幻觉。R-est 产品 GM **50%–60%**、成熟量产 EBIT margin **25%–35%** |
+| **Die Bonding / 光子封装** | `MRSI-LEAP`、`MRSI-HVM/H`、`HVM1/H1`、`S-HVM 0.5µm`、`MRSI-A-L` 主动对准、175Ag 点胶 | LEAP 贴装精度最高约 `±1µm @3σ`、贴装 >1,000 UPH，支持 CoC/CoS/CoB、晶圆/waffle/Gel-Pak、环氧/共晶/倒装/UV；CFCF2026 公司称已在多家 tier-1 客户 800G/1.6T 线稳定 HVM。[LEAP 2026 技术手册](https://www.mycronic.com/globalassets/pdf/product-areas/die-bonding/brochures/mrsi-leap-2-page-brochure-may-2026.pdf) | Q2 明确称 optical communications die bonder 强劲；深圳扩两条线验证供给扩张。R-est GM **50%–60%**、EBIT margin **20%–30%**；量产 mix 高时可更高 |
+| **HV AI 点胶/终装** | `MYD10/10i/10X`、`MYD50/50X`、`MYC60`、Axxon TIM 泵/计量/点胶、APJ1500；部分 MY700JD 技术可交叉使用 | Q2 首次明确点名“服务器散热点胶”和“光模块点胶与终装”。MYD50 面向复杂芯片封装，MYC60 支持导热材料；Axxon 泰国于 2026Q1 开始出机。[MYD50](https://www.mycronic.com/product-areas/dispensing-and-coating/dispensing-coating/in-line-dispensing/myd50/)；[MYC60](https://www.mycronic.com/product-areas/dispensing-and-coating/dispensing-coating/Industrial-dispensing/myc60/) | HV Q2 订单 +82%、收入 +16%、GM 从 38.5% 升至 43.8%；R-est AI 型号 GM **45%–55%**、EBIT margin **15%–25%**，高于传统中国消费电子整线 |
+| **SLX/MMX 半导体光罩** | `SLX 1 e2`、`SLX 2 e2`、`SLX Lite 3 e2`、`SLX 3 e2`；`MMX` 半导体光罩量测 | SLX 写版时间约 17–169 分钟，覆盖 i-line/DUV，SLX3 可到约 90nm addressable node；公司称 70%–75% 光罩仍由激光写入。2026Q2 收到 4 台 SLX；标准机公开价通常 `$5m–8m`，定制机 `$27m–30m`。[SLX 规格](https://www.mycronic.com/de/product-areas/photomask-equipment/Products/slx-series/) | PG GM 58%–77%，SLX/MMX R-est GM **60%–75%**、EBIT margin **40%–55%**。AI 关系来自新设计/成熟层/二次层和产能替换，不应按 GPU 出货线性外推 |
+| **Surfx Applied Plasma** | `STW-10`、`STA-10iL`、`Atomflo-INT/600`、`SPS-25/50/100/M` | STW-10 面向 hybrid wafer bonding，最大 60 wafer/h，兼容 150/200/300mm、Class 10/ISO4、SEMI、SECS/GEM ready；无需真空，可集成 TCB/hybrid bonder。[STW-10 规格](https://www.surfxtechnologies.com/wp-content/uploads/2023/07/STW-10-Datasheet-1.5.pdf) | 2025 收入锚 `$25m–30m`；公司称技术在 3D stacking 获得 traction，但未披露头部 fab 量产客户。R-est GM **45%–60%**、成熟 EBIT **15%–25%** |
+| **Vanguard Photonic Interconnects** | 3D 纳米打印 photonic wire bond、facet-attached micro-lens、预/后处理与 `BRIGHTWIRE 3D` 软件 | 约 40 套安装，多数在北美/亚洲研发中心，仅少数商业客户；技术可绕过传统精密被动/主动对准。[产品介绍](https://www.mycronic.com/sv/produktomraden/photonics-interconnects/) | 当前收入很小；R-est GM **45%–60%**，EBIT **0%–15%**。真正拐点是 tier-1 商业量产，不是研发装机数 |
+| **新光罩检测** | Cowin 检测/清洗技术 + PG 光罩 know-how；未公布正式型号 | 公司已把新 mask inspection system 列入研发，尚无订单、客户、规格或收入 | 目前为零收入/负研发贡献；若量产，设备 GM 潜力 **55%–65%**，但竞争将面对 KLA/Lasertec/Applied 等强者 |
+
+### 3.4 按要求跳过的低增长或非 AI 业务
+
+- **显示光罩写版：**Prexision 8/8000 Evo、Prexision Lite、FPS、MMS 的金额和利润很大，但主要由 AMOLED/G8.6 显示投资驱动，不纳入 AI 产品情景；仅在集团收入、backlog 和估值中保留。
+- **标准 PCBA 高混合 SMT：**MYPro S20/S30、MY700JP/JX、A40/A41 placement、普通 SPI/AOI、MYTower；欧洲标准工业业务仍弱。国防整线订单有价值，但不是 AI 主线。
+- **传统消费电子点胶、涂覆、印刷：**仍是 HV 主体之一，却容易受中国消费电子资本开支与客户前置采购波动影响。
+- **Modus 普通 AOI/涂覆检测：**与 HV 有协同，但通用 AOI 竞争激烈、利润率通常低于先进检测设备。
+- **Cowin 显示面板修复**和大部分显示光罩修复：短期并表且亏损，AI 相关性低。
+- **Hprobe MRAM/磁传感测试：**技术有 edge AI、汽车和低功耗存储期权，但尚无数据中心收入或大单证据，暂不列未来一年关键业务。
+- **非 AI 航空航天/国防键合、汽车 LiDAR、5G TO-can：**可平滑周期，但不计入本文 AI 收入。 
+
+上述跳过不等于业务没有价值，而是避免把集团所有收入都贴上 AI 标签。
+
+### 3.5 过去半年行业会议、论坛和技术报告：信号与证据权重
+
+会议/论坛材料容易把产品展示、行业情绪和真实订单混在一起。本文只保留能落到产品规格、产线、量产状态或公司订单的内容，并明确其商业宣传偏差。
+
+| 日期/场合 | 一手信号 | 证据权重 | 如何进入模型 |
+|---|---|---|---|
+| **2026-03-16 Optica Executive Forum / OFC 2026** | MRSI 是论坛赞助商；其会后总结称业内认为 AI/光网络景气仍可延续 2–3 年。[OFC 会后观点](https://www.mycronic.com/product-areas/die-bonding/news--events/news/ais-unstoppable-momentum-why-the-artificial-intelligence-boom-is-here-to-stayinsights-from-the-optica-executive-forum--ofc/) | **中低。**方向来自行业会议，但文章由供应商发布，没有发言人逐条归因、订单或数量预测 | 只作为 800G/1.6T 扩产方向验证，不用于收入数字或极度乐观概率 |
+| **2026-03 A9XL 技术报告** | 8 probe heads、最大板 `1,220×660mm/20kg`、最高 1,000V、最小 pad 50µm、repeatability `±4µm`，并有 backdrill stripe detection。[A9XL 规格书](https://www.mycronic.com/globalassets/pdf/product-areas/bare-board-testing/2026-brochures/a9xl-specification-03_2026.pdf) | **高（规格），低（销量）。**可验证产品能力，但不证明客户采购 | 用于确认 AI server/switch 大板适配与测试价值；销量仍由 GT orders/backlog 约束 |
+| **2026-04-21 公司制造调查/Prismark 引用** | 公司称开发周期缩短、客户更早为 volume 准备，并把瓶颈从 demo 转向 precision、repeatability、yield 与 HVM。[制造现实文章](https://www.mycronic.com/news-events/news/from-ai-momentum-to-manufacturing-reality/) | **中。**是管理层/客户接触的渠道观察，Prismark 原始页未随文公开 | 支撑“qualification 和量产良率比 nominal UPH 更紧迫”，不单独上调订单 |
+| **2026-05 SEMICON Southeast Asia** | 展示 die bonding、active alignment、fluid dispensing，并在东南亚建立客户关系。[SEMICON SEA 参展说明](https://www.mycronic.com/product-areas/die-bonding/news--events/news/mrsi-mycronic-at-semicon-southeast-asia-showcasing-innovation-in-southeast-asia/) | **低至中。**证明 go-to-market 和产品组合，不是订单/产能利用证据 | 仅佐证 China+N 客户触达；未把展台线索计入 bookings |
+| **2026-05 LEAP/A-L 技术手册** | LEAP >1,000 UPH、最高约 `±1µm @3σ`；A-L 对应精密主动对准。[LEAP 手册](https://www.mycronic.com/globalassets/pdf/product-areas/die-bonding/brochures/mrsi-leap-2-page-brochure-may-2026.pdf)；[A-L 手册](https://www.mycronic.com/globalassets/pdf/product-areas/die-bonding/brochures/mrsi-a-l-2-page-brochure-may-2026.pdf) | **高（规格），低（客户采用）** | 用于产能/单位内容量的 throughput 约束；不从 UPH 直接倒推设备收入 |
+| **2026-06-25–27 CFCF Optical Connectivity Conference** | LEAP 获 “Most Influential Product Award”；公司称已交付多家 leading 客户，并在 800G/1.6T 线稳定 24/7 HVM，MRSI 中国负责人参与圆桌。[CFCF2026 说明](https://www.mycronic.com/product-areas/die-bonding/news--events/news/mrsi-leap-wins-cfcf2026-most-influential-product-award/) | **中高（量产状态），中低（独立性）。**会议/奖项真实，但客户反馈仍由 Mycronic 转述且未具名 | 允许把 LEAP 纳入当前收入与基准增长；不视为 hyperscaler certification，也不采用无法核实的客户传言 |
+
+过去半年公开论坛/社交渠道中，没有找到可同时核实**客户名、项目名、金额、台数、交付窗和取消条款**的 GT/HV 小道订单。与其将匿名帖或展会洽谈写成 backlog，本文把这些字段标为“未披露”；这也是第 8 节情景区间较宽的原因。
+
+财报所引行业数据提供了另一个规模校验：2025 年 data/telecom optical-components 市场约 **$40.8bn/+50.4%**，公司引用的 2026–2031 CAGR 为 **14.2%**、到期约 `$79.2bn`；2025 年 PCB 市场约 **$85.8bn/+16.7%**，2025–2030 CAGR **11.0%**、到期约 `$144.6bn`；2026 年 semiconductor-photomask 市场预计 **$12.2bn/+15.0%**。这些是下游市场，不是 Mycronic 可直接获取的设备 TAM；尤其最高价值的先进光罩主要由 e-beam 写入，反而限制了 SLX 的 AI 外推。[2026Q2 行业展望](https://storage.mfn.se/c8f3d92b-f205-4f1a-9552-77f0d11afede/interim-report-january-june-2026.pdf)
+
+## 4. 高增长/关键产品的当前收入贡献、增速和竞争力
+
+### 4.1 产品线收入反推方法
+
+公司只披露四个分部，不披露 GT 五条 business line 或 HV 应用收入。本文先用 GT 滚动收入 `SEK 2.181bn/$229m` 做硬上限，再用并购标的历史收入、并表贡献、公司季度用词及客户安装证据反推。PCB Test、Die Bonding、Surfx、Vanguard、Hprobe/其他的区间**只有中值组合可以相加**，不能把各区间上沿同时相加。按中值，GT 分项约 `$232m`，与披露总额闭合。
+
+评分均为 1–5：5 代表对 AI 技术栈最关键/最紧迫/最供不应求/最强垄断或最强溢价。这里的“供需紧张”指 Mycronic 对应设备的合格交付能力相对客户需求，不是下游模块或 GPU 的总供需。
+
+| 关键产品/业务 | 当前滚动收入贡献（R-est） | 其中 AI 直接/间接收入 | 当前增速（R-est） | 产品 GM / EBIT margin（R-est） | AI重要性 | 时间紧迫性 | 供需紧张 | 垄断能力 | 溢价能力 | 证据与限制 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| **PCB Test：A9/A9XL + RoBAT + ETZ** | **$95m–120m** | **$55m–85m** | **+35%–60%** | GM 50%–60%；EBIT 25%–35% | **5.0** | **5.0** | **4.0** | 3.5 | **4.0** | GT 有机 Q2 +115%；AI server board 与 China+N 同时拉动。A9 recipe、探针、服务和 RoBAT TDR 提高锁定，但客户可双供 |
+| **Die Bonding：LEAP/HVM/S-HVM/A-L** | **$70m–90m** | **$40m–65m** | **+35%–65%** | GM 50%–60%；EBIT 20%–30% | **5.0** | **5.0** | **4.5** | **4.0** | **4.0** | 800G/1.6T 已在未具名 tier-1 线稳定 HVM；深圳扩产。精度、良率、24/7 uptime 和工艺 recipe 带来高切换成本 |
+| **HV AI 点胶/光模块终装** | **$20m–40m** | **$20m–40m** | **+80%–150%**（低基数） | GM 45%–55%；EBIT 15%–25% | 4.0 | 4.0 | 3.5 | 3.0 | 3.0 | Q2 首次明确披露 AI server TIM 与 optical module；尚无客户名、订单额或专线台数，区间置信度低于 GT |
+| **SLX/MMX 半导体设备** | **$75m–105m** | **$15m–30m** | -10% 至 +10%（交付波动） | GM **60%–75%**；EBIT **40%–55%** | 2.5 | 2.5 | 3.0 | **4.5** | **4.5** | 标准 SLX `$5m–8m/台`、MMX `$2m–4m`，公开订单可验证；激光写版的数量地位强，但先进关键层被 e-beam 占据 |
+| **Surfx Applied Plasma** | **$22m–30m** | **$9m–18m** | +10%–30% | GM 45%–60%；EBIT 15%–25% | **4.5** | 3.5 | 3.0 | **4.0** | **4.0** | 无真空、H₂/Ar 氧化物去除和 inline integration 有差异化；hybrid-bonding 头部 HVM 客户未披露 |
+| **Vanguard Photonic Interconnects** | **$6m–11m** | **$2m–5m** | +20%–60%（低基数） | GM 45%–60%；EBIT 0%–15% | **4.5** | 2.5 | 2.0 | **4.0** | 3.5 | 全球独特 IP 和材料/软件组合，但安装以研发为主；量产采用率而非技术演示决定价值 |
+| **新光罩检测系统** | **$0** | $0 | N/M | 研发期 EBIT 为负；成熟 GM 潜力 55%–65% | 3.0 | 1.0 | 1.0 | 3.0 | 2.0 | 仅披露研发方向，未命名、未送样/未订单；不能计入 backlog |
+
+按上述口径，剔除 AI 关联较弱的 SLX 并对 Surfx/Vanguard 的非 AI 用途打折后，**窄口径 AI 直接/强相关 TTM 收入约 `$135m–200m`**，即集团的约 **15%–22%**；纳入半导体光罩和早期光子互连等间接暴露后，宽口径中值约 **`$190m`**，约为集团 `$909m` 的 **21%**，落在本报告宽口径 **18%–25%**内。区间上沿存在应用重叠，例如同一 1.6T 模块产线可能同时使用 MRSI 键合、HV 点胶和 Surfx 表面处理，不能把“设备用途”误作同一终端价值的三次新增需求。
+
+### 4.2 对 AI 基建技术栈的真实重要性
+
+- **PCB Test 是近期最不可跳过的环节。**GPU/交换/电源板层数、尺寸、低损耗材料和 112G/224G SerDes 使 opens/shorts 之外的阻抗、时延、skew、backdrill 残桩检查更重要。坏板进入昂贵 PCBA 后才暴露会造成更高报废，因此测试设备 ROI 来自避免良率损失。
+- **Die Bonding 是光模块扩产的合格产能约束。**1.6T 模块将激光器、PD、driver/TIA、SiPho PIC、FAU 等多种 die/亚组件在微米级放置；UPH 只有在最高约 `±1µm @3σ` 的贴装精度、共晶/环氧良率、换头、温控和 24/7 稳定同时成立时才有意义。
+- **HV 点胶解决功率密度而非算力本身。**TIM 泵送、计量、轨迹和固化对服务器热阻/可靠性重要，但泵阀、运动平台和 MES 的替代厂商更多，垄断性低于 MRSI/SLX。
+- **SLX 是设计与光罩资本开支的函数。**项目内光罩行业底稿指出，AI 对光罩的弹性取决于新 tape-out、mask layers、ASP、respins 与 fab replication，而不是 GPU 出货量；先进封装还存在 maskless 替代。[项目内高端光罩研究](../../行业调研/晶圆制造_设备_材料_测试/行业调研_高端光罩与先进封装掩模_2026-07-10.md)
+- **Surfx 与 Vanguard 是“若路线被采用则单位价值跳升”的期权。**前者押注 hybrid bonding/TCB 前处理从真空 batch 向 atmospheric inline 扩散；后者押注 3D 打印光子线键合替代部分亚微米主动对准。两者都不应在客户 HVM 前按成熟设备倍数估值。
+
+## 5. 一年后产品收入与竞争力：三情景
+
+### 5.1 情景定义
+
+- **基准：**800G 继续扩产、1.6T 进入主力增量；GT 当前 backlog 正常转化，集团取消率 1%–3%；公司 2027 年收入接近现有共识。概率权重最高。
+- **乐观：**1.6T/CPO、AI 服务器 PCB 和先进封装扩产提前 1–2 季；LEAP/A9 产能利用率高，Surfx/Vanguard 获得更多量产客户；订单/收入维持 1.15–1.30x。
+- **极度乐观：**光模块、网络板和 CPO 同时供不应求，客户锁定专线、验收顺利、无明显重复订单取消；新产品 qualification 提前 2–4 季。该情景低概率且会把 2028 需求前置。
+
+下表收入是截至约 2027Q2 的滚动 12 个月产品线收入；“增速”相对第 4 节区间中值。五项评分仍为 `重要性/紧迫性/供需紧张/垄断/溢价`。
+
+| 关键产品/业务 | 情景 | 一年后收入贡献 | 同比增速 | 五项评分（1–5） | 成立条件 |
+|---|---|---:|---:|---|---|
+| PCB Test | 基准 | **$135m** | **+26%** | `5.0/5.0/4.0/3.5/4.0` | A9/A9XL 交付现有 AI PCB 客户，Wertheim 扩产正常爬坡 |
+| PCB Test | 乐观 | **$165m** | **+53%** | `5.0/5.0/4.5/3.5/4.5` | 东南亚新厂和中国 AI PCB 扩产并行，RoBAT attach rate 提升 |
+| PCB Test | 极度乐观 | **$205m** | **+91%** | `5.0/5.0/5.0/4.0/5.0` | 大尺寸板 100% 测试强度显著上升，客户预付/锁产能且无验收延迟 |
+| Die Bonding | 基准 | **$105m** | **+31%** | `5.0/5.0/4.5/4.0/4.0` | 现有 tier-1 800G/1.6T 线复制，深圳两线提高交付 |
+| Die Bonding | 乐观 | **$135m** | **+69%** | `5.0/5.0/5.0/4.0/4.5` | 多家模块厂百万只级 1.6T 扩产，A-L/S-HVM attach 增加 |
+| Die Bonding | 极度乐观 | **$170m** | **+113%** | `5.0/5.0/5.0/4.5/5.0` | CPO/硅光/EML 三路线同时建线，精密键合设备成为瓶颈 |
+| HV AI 点胶 | 基准 | **$42m** | **+40%** | `4.0/4.0/3.5/3.0/3.0` | 服务器 TIM 与光模块应用由 NPI 转量产，但仍是 HV 少数收入 |
+| HV AI 点胶 | 乐观 | **$58m** | **+93%** | `4.0/4.5/4.0/3.0/3.5` | 多个客户导入整线，材料/泵阀 recipe 增加切换成本 |
+| HV AI 点胶 | 极度乐观 | **$80m** | **+167%** | `4.5/5.0/5.0/3.5/4.0` | 高功率 rack TIM 自动化成为标配，光模块终装由点设备变整线 |
+| SLX/MMX | 基准 | **$95m** | **+6%** | `2.5/2.5/3.0/4.5/4.5` | 标准替换需求稳定，公开订单按期验收 |
+| SLX/MMX | 乐观 | **$115m** | **+28%** | `3.0/3.0/3.5/4.5/4.5` | 新欧洲客户扩产，成熟/特殊层和 AI respin 提升 mask shop 利用率 |
+| SLX/MMX | 极度乐观 | **$140m** | **+56%** | `3.5/4.0/4.0/4.5/5.0` | 多区域复制 mask capacity、定制规格外溢到标准产品；不含 2028 定制机提前确认 |
+| Surfx | 基准 | **$34m** | **+31%** | `4.5/3.5/3.0/4.0/4.0` | 现有先进封装客户扩产，STW/INT 在若干量产线通过验收 |
+| Surfx | 乐观 | **$44m** | **+69%** | `4.5/4.0/4.0/4.0/4.5` | hybrid bonding 前处理形成多台 repeat order，向 bonder OEM 集成 |
+| Surfx | 极度乐观 | **$58m** | **+123%** | `5.0/5.0/5.0/4.5/5.0` | 大气等离子成为高通量 HBM/chiplet 标准步骤并获得头部 fab 放量 |
+| Vanguard | 基准 | **$12m** | **+41%** | `4.5/2.5/2.0/4.0/3.5` | 研发系统增长，少量商业客户 repeat order |
+| Vanguard | 乐观 | **$19m** | **+124%** | `4.5/3.5/3.5/4.0/4.0` | 至少 2–3 家 tier-1 从 pilot 转低量量产，材料/软件开始经常性收入 |
+| Vanguard | 极度乐观 | **$30m** | **+253%** | `5.0/5.0/5.0/4.5/5.0` | photonic wire bond 获平台 design-win，设备从实验室工具转 HVM cell |
+| 新光罩检测 | 基准 | **$0m–3m** | N/M | `3.0/1.0/1.0/3.0/2.0` | alpha 工具/工程收入，无正式量产 |
+| 新光罩检测 | 乐观 | **$5m–12m** | N/M | `3.5/2.5/2.0/3.5/3.0` | 一家既有光罩客户付费 beta/首台验收 |
+| 新光罩检测 | 极度乐观 | **$15m–25m** | N/M | `4.0/4.0/4.0/4.0/4.0` | 首台生产工具获订单并进入高价值检测环节；目前证据不足 |
+
+产品线收入不能直接相加成集团收入：HV AI 是 HV 的子集，SLX/MMX 之外 PG 还有显示和服务，GT 还有 Hprobe。集团情景在第 8 节用完整分部/backlog 重新约束。
+
+## 6. BOM、单位设备内容量、价格传导、当前产能与认证
+
+### 6.1 统一的 AI rack/MW/端口换算基准
+
+设备商没有“每 GPU 一颗 Mycronic 零件”。Mycronic 的真实内容量是客户为生产大量 PCB、光模块或封装而采购的设备及服务，必须把设备资本开支摊入生命周期产量。本文使用如下透明基准：
+
+- NVIDIA DGX GB200/GB300 NVL72 一 rack 均有 **72 GPU**、18 个 compute tray、9 个 NVLink switch tray；GB200 满载约 **120kW**，所以 `1MW≈8.33 racks≈600 GPU`。[GB200 硬件文档](https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html) 最新 GB300 企业参考架构给出的 full-rack 上限是 **142kW**，即 `1MW≈7.04 racks≈507 GPU`；下表统一用 600-GPU 的 GB200 基准，换成 GB300 上限时将每 MW 数值乘约 **0.845**。[GB300 组件文档](https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory/latest/components.html)
+- GB300 参考架构中每 GPU 有两条 400G 路径，ConnectX-8 的 800G 端口拆为 `2×400G`，推荐 dual-port optics。跨架构归一化采用 **0.5–2 个 800G-equivalent 光端点/GPU**；真实数字受网络层数、radix、scale-up/scale-out/CPO 影响。[NVIDIA 网络架构](https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory/latest/network-logical-architecture.html)
+- 项目内 2026 行业底稿给出：800G 单模 FRO ASP `$280–420`，1.6T SiPho `$750–1,050`、1.6T EML `$850–1,200`；封装、主动对准与测试约占模块 ASP **12%–18%**。这部分价值池不是全部归 MRSI。[800G/1.6T 行业调研](../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md)
+
+### 6.2 下游 BOM 与 Mycronic 所在环节
+
+| 下游对象 | 典型售价/BOM | 与 Mycronic 相关的环节 | 不能做的错误外推 |
+|---|---:|---|---|
+| 800G 单模可插拔 | ASP `$280–420`；光芯片/PIC/激光/PD 22%–32%；封装/对准/测试 12%–18% | MRSI 放置 LD/PD/PIC/driver 等，A-L 主动对准，HV 点胶/终装；Vanguard 仅在采用 3D 光连接时进入 | 不能把 12%–18% 全算成 MRSI 收入；设备成本会摊到大量模块 |
+| 1.6T SiPho/EML | ASP `$750–1,050/$850–1,200`；封装/对准/测试约 `$90–216/只` | LEAP/HVM/S-HVM 对应多 die、共晶/环氧/flip-chip；Surfx 可做 bonding 前活化 | 模块 ASP 翻倍不代表设备 ASP 或台数同步翻倍；UPH 提高会抵消部分台数需求 |
+| 102.4T CPO switch | 项目内模型 BOM `$75,803`，其中 72 个 1.6T optical engine `$32,400`、FAU `$3,600`、ELS `$7,200`，全部光连接约占 84% | MRSI/Vanguard 位于 optical engine/laser attach/精密组装设备层；Surfx 位于表面处理层 | CPO 将价值从 pluggable 移到 engine 周边，不等于 Mycronic 自动获得 engine BOM。[CPO 行业调研](../../行业调研/AI网络_光互联_铜互联/行业调研_CPO_NPO与交换侧光引擎_2026-07-10.md) |
+| AI server/switch PCB | 多层低损耗大尺寸板、背钻/阻抗/skew 与高压电源板 | A9/A9XL 做 bare-board opens/shorts/高压；RoBAT 做 TDR/信号完整性；ETZ 提供探针 | PCB 成品价值不是设备收入；测试设备按多年、数万至数十万块板摊销 |
+| AI GPU/chiplet 封装 | GPU/HBM/interposer/RDL/hybrid bond 多工序 | Surfx 清洗/活化；SLX 只对应部分掩模层；MRSI 只在所选 die attach/光子集成步骤进入 | 先进封装并不都使用激光光罩，maskless 和电子束可替代；也并不都用 atmospheric plasma |
+
+### 6.3 每板、每端口、每 GPU、每 rack、每 MW 的设备内容量
+
+以下为**设备折旧 + 重大服务的 R-est**，不是客户采购清单。设备 ASP 未披露处用可比精密设备与已知业务收入反推；范围故意较宽。
+
+| Mycronic 产品 | 关键模型假设 | 最接近的真实单位内容量 | 每 optical port | 每 GPU | 每 72-GPU rack | 每 1MW（600-GPU 基准） |
+|---|---|---:|---:|---:|---:|---:|
+| **PCB Test** | 工具/组合线 ASP `$0.4m–1.5m`；生命周期约 5万–40万块高阶板；A9 + RoBAT 并非每块板都同时使用 | **$5–40/块高级 bare board** | N/A | **$1.4–33** | **$100–2,400**（假设 20–60 块相关板/rack） | **$0.8k–20k** |
+| **MRSI Die Bonding/A-L** | LEAP/HVM 组合 ASP R-est `$0.8m–1.6m`；>1,000 UPH；5–8 年、40%–75% 利用率；每模块 4–12 次关键精密放置 | **$0.3–2.0/光端口** | **$0.3–2.0** | **$0.15–4.0** | **$11–288** | **$90–2,400** |
+| **HV AI 点胶/终装** | 工具 ASP R-est `$0.1m–0.6m`；TIM/胶路/终装节拍远高于精密 die bond | **$0.2–2.0/服务器或光模块相关组件** | `$0.1–1.0`（若用于模块） | **$0.2–3.0** | **$14–216** | **$0.12k–1.8k** |
+| **SLX/MMX** | 标准 SLX `$5m–8m`；17–169 分钟/片；65%–85% 利用率、约10年；生命周期约 3.5万–25万片 mask | **$30–300/片 mask**；20–60 个激光可写层约 `$0.6k–18k/tape-out` | N/A | **通常 < $0.04** | **通常 < $3** | **通常 < $25** |
+| **Surfx STW/STA/INT** | 工具 ASP R-est `$0.3m–1.2m`；STW 最大 60 wafer/h；5–8 年；不假设每个 package 都采用 | **$0.05–0.50/先进封装路径** | N/A | **$0.05–0.50** | **$4–36** | **$30–300** |
+| **Vanguard 3D photonic interconnect** | 工具 ASP R-est `$0.5m–1.5m`；当前低量；材料/软件随 write time 变化 | **$1–10/采用该工艺的 optical engine** | **$1–10** | **$0.5–20** | **$36–1,440** | **$0.3k–12k** |
+| **新光罩检测** | 无规格、无 ASP、无量产数据 | 不可估 | 不可估 | 不可估 | 不可估 | 不可估 |
+
+为何 SLX 每 GPU 很小却仍是高利润业务：一套 mask set 的写版资本成本在设计投片前发生，随后可复制几十万至数百万颗芯片；Mycronic 的价值由 mask shop 产能/替换决定，而不是附着在每颗 GPU 上。相反，MRSI/Vanguard 的设备使用次数更接近每只光模块/engine，单位 GPU 的相关性更直接。
+
+### 6.4 CPO worked example
+
+若一台 102.4T CPO switch 有 72 个 1.6T engine，按 MRSI `$1–5/engine` 的中间设备内容量，精密键合设备摊销约 **$72–360/switch**；Vanguard 若被采用，按 `$1–10/engine` 为 **$72–720/switch**。两者都是生产设备摊销，不是 `$75,803` 物理 BOM 中可见的一颗器件。设计锁定通常领先收入 12–24 个月，需重新做 BER、温循、震动、burn-in 和 field diagnostics，故一旦进入 HVM，设备/recipe 切换成本较高。
+
+### 6.5 价格传导链
+
+`GPU/交换平台推出 → 云厂/模块厂给滚动 forecast → PCB/光模块厂锁材料与合格产线 → 采购 Mycronic 设备/NRE/服务 → 工厂安装、recipe qualification、site acceptance → Mycronic 确认系统收入 → 保修、耗材、升级形成 aftermarket`
+
+1. **缺货期不是简单涨设备标价。**价格先通过加急、专用配置、NRE、预付款、take-or-pay、产能保留与更高端产品 mix 传导；客户得到的是交期和合格产能。
+2. **成熟后 ASP 会回落，但测试/精度强度可能上升。**项目内光模块底稿估计 2026 需求曾比供应高约 30%，也警告供给恢复后重复下单取消与 ASP 下跌共振。对 Mycronic 而言，模块 ASP 下跌不必然压设备收入，只要模块数量、die 数、测试点和 line count 上升；真正风险是客户停止建线。
+3. **PG 的价格传导最强。**标准 SLX 单机公开价 `$5m–8m`、定制 `$27m–30m`，少数工具供应商、长期服务和验证使其可按性能/mix 定价；但定制订单不可重复。
+4. **HV 的价格传导最弱。**点胶泵阀、运动平台与本土厂商较多，需靠整线、软件、良率和服务维持溢价。
+
+### 6.6 当前产能、供应链采用和认证阶段
+
+“收入产能”指按现有设施、人员、供应链和产品 mix 估算的年化可确认收入上限，不是公司披露的 nominal 台数，也不是订单保证。
+
+| 关键业务 | 当前收入产能（R-est） | 当前收入/产能利用 | 供应链采用程度 | 当前资格/认证阶段 |
+|---|---:|---:|---|---|
+| PCB Test | **$125m–155m/年** | 约 70%–85% | A9/A9a 已成熟生产采用；Shennan >100 台；Bomin/Founder/SYE 有客户验证；A9XL 处于新产品爬坡 | 工厂/板型逐项 recipe 与 site acceptance；无“NVIDIA 设备认证”这种统一证书；A9XL 需客户逐板族验证 |
+| Die Bonding | **$105m–135m/年** | 约 65%–80% | HVM/H 系列成熟；公司称 LEAP 已在多家 tier-1 的 800G/1.6T 线稳定 HVM | LEAP 已跨过 HVM 门槛但客户未具名；CFCF2026 奖项是行业认可，不是 hyperscaler 认证；A-L/S-HVM 仍按应用验证 |
+| HV AI 点胶 | **$45m–70m/年**（HV 总体约 `$210m–240m`） | AI 专用约 45%–65% | 传统点胶成熟，AI server/optics 是 2026 新增采用 | CE/机器安全不等于客户量产资格；目前只确认机会与收入增长，未披露 named HVM line |
+| SLX/MMX | **$100m–135m/年** | 约 70%–85% | SLX 是成熟激光光罩标准，Q2 backlog 含 5 台 2026 内交付 SLX、合计 13 套 PG 系统 | 客户 site acceptance/性能验收成熟；MMX 已获新客户但仍在扩大安装；定制 SLX 到 2028 |
+| Surfx | **$32m–42m/年** | 约 65%–80% | 已有商业收入；STW/INT 的 hybrid-bonding 采用程度未具名 | STW 满足 Class 10/ISO4、SEMI、SECS/GEM ready，这是设备规范；头部 fab process qualification 未披露 |
+| Vanguard | **$10m–16m/年** | 约 55%–75% | 约 40 台，多数研发中心，少数商业客户 | 研发/试产为主；尚无公开 tier-1 HVM certification 或大额 repeat order |
+| 新光罩检测 | **$0** | 0% | 研发 | 无型号、客户、beta、订单或认证披露 |
+
+## 7. 一年后产能、采用与认证：三情景
+
+| 关键业务 | 基准：一年后收入产能 / 采用与资格 | 乐观：一年后收入产能 / 采用与资格 | 极度乐观：一年后收入产能 / 采用与资格 |
+|---|---|---|---|
+| **PCB Test** | **$170m**；Wertheim 扩产完全利用，A9XL 在既有 AI PCB 客户完成多板型 HVM | **$210m**；东南亚和中国多家 tier-1 repeat order，RoBAT/ETZ attach 提升 | **$255m**；大板 A9XL + RCI 成为 AI server/switch PCB 事实标准，需供应商和现场服务无瓶颈 |
+| **Die Bonding** | **$150m**；深圳 LEAP/A-L 两线爬坡，多家现有客户复制 800G/1.6T 线 | **$185m**；更多 tier-1 optical OEM 完成 LEAP HVM，S-HVM/A-L 在 SiPho/CPO 获生产资格 | **$230m**；CPO 与 1.6T 同时建专线，客户预付锁产能；需主要模块良率/验收一次通过 |
+| **HV AI 点胶** | **$65m**；至少若干服务器 TIM/光模块项目由 NPI 转稳定量产 | **$95m**；客户从单机转整线，泵阀/recipe/AVI 共同验收 | **$130m**；AI 应用成为 HV 主要新增量；不使用 2028 才完工的 15,000 台园区能力 |
+| **SLX/MMX** | **$110m**；现有公开订单按期交付、标准替换维持 | **$145m**；新欧洲客户与亚洲扩产增加，MMX attach 提升 | **$185m**；多个 mask shop 同时复制/更新；仍不假设 2028 定制机提前确认 |
+| **Surfx** | **$45m**；STW/INT 在少量 advanced-packaging HVM line 获 process qualification | **$60m**；进入 bonder OEM/OSAT repeat-order，至少一家头部客户扩大 hybrid-bonding 线 | **$80m**；大气等离子获多家 HBM/chiplet fab 标准流程资格，专利/IP 支撑溢价 |
+| **Vanguard** | **$18m**；研发安装增加、1–2 个商业 lead customer 进入小批 | **$28m**；2–3 家 tier-1 完成 pilot-to-production，材料/软件收入开始规模化 | **$45m**；photonic wire bond 获平台级 HVM design-win；当前证据距离此情景最远 |
+| **新光罩检测** | **$3m**；alpha/工程工具，无量产资格 | **$15m**；首家客户付费 beta，完成部分 site acceptance | **$30m**；生产型首单与 repeat order，进入现有 PG 客户；需披露规格和检测性能才能提高置信度 |
+
+未来产能表与收入预测表不同：产能是上限，收入取决于订单、site acceptance 和 mix。Axxon 85,000m² 园区到 2028 年底才完成，所以没有纳入一年后 HV 基准/乐观能力；把远期 15,000 台直接放入 2027 模型会高估供给。
+
+## 8. 用真实订单积压与供给约束预测未来一年增速
+
+### 8.1 先审计 backlog：没有披露取消率，不等于没有取消
+
+Mycronic 对订单的定义是已收到的产品和服务订单；backlog 是期末尚未确认为收入的剩余履约价值，并按期末汇率折算。公司**不披露统一 lead time、取消率、客户 project name、预付款比例或 backlog 中不可取消比例**，也没有分别披露 B2B；本文把 `B2B` 统一解释为 book-to-bill（订单/收入）。因此，取消率只能作情景参数，不能伪装成公司事实。
+
+下表用 `期初 backlog + 当季订单 − 当季收入` 回算期末 backlog。残差可能来自汇率、范围/合同价值调整、订单重新分类和取消，**不能单独等同于取消**。金额为 SEK m。
+
+| 财报季度 | 期初 backlog | 当季订单 | 当季收入 | 机械推算期末 | 披露期末 backlog | 残差 | B2B | 订单质量解读 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| **2026Q2** | 4,707 | 2,917 | 2,416 | 5,208 | **5,255** | **+47** | **1.21x** | 没有出现可见的大额净取消；PG 定制 SLX 与 GT/HV 增单抬高覆盖期 |
+| **2026Q1** | 4,681 | 2,529 | 2,503 | 4,707 | **4,707** | **0** | **1.01x** | 完全勾稽；收入高但新增订单仍覆盖交付 |
+| **2025Q4** | 4,763 | 1,939 | 2,021 | 4,681 | **4,681** | **0** | **0.96x** | 正常消耗 backlog，非需求断崖 |
+| **2025Q3** | 4,068 | 2,431 | 1,709 | 4,790 | **4,763** | **−27** | **1.42x** | 小幅负残差约为期末 backlog 的 0.6%，不足以证明大规模取消 |
+| **2025Q2** | 4,617 | 1,330 | 2,066 | 3,881 | **4,068** | **+187** | **0.64x** | 订单低谷但正残差；随后 Q3–Q2 连续补单，说明单季 B2B 噪音很大 |
+
+五季累计订单 **SEK 11.15bn**、累计收入 **SEK 10.72bn**，机械“订单减收入”为 **SEK 0.43bn**；因残差存在，它不等于账面 backlog 的实际变动。期末 backlog 同比增加 **SEK 1.19bn/+29%**。最近四季订单 **SEK 9.82bn**、收入 **SEK 8.65bn**，TTM B2B **1.13x**。最重要的结构不是集团总额，而是：GT TTM B2B **1.65x**、backlog 相当于 **11.5 个月**收入；HV 为 **1.15x/7.7 个月**；PCBA 为 **1.09x/2.2 个月**；PG 为 **0.80x/6.3 个月**，但 PG 的订单是单台大额且交付节奏离散。
+
+### 8.2 过去半年可核实的公开系统订单台账
+
+公司仅逐单公告金额较大的 Pattern Generators 订单；GT/HV/PCBA 通常不会公告客户和金额。因此“公开订单”是 backlog 的**下限样本**，不是完整订单簿。
+
+| 公告日 | 产品/区域 | 订单金额 | 计划交付 | 截至 2026-07-31 的订单簿归属 | 验证结论 |
+|---|---|---:|---|---|---|
+| 2026-02-04 | Prexision 8 Evo / 亚洲既有客户 | **$21m–24m** | 2027Q1 | 已进入 2026Q1/期末 backlog | 高端显示光罩替换订单；金额大但不是 AI 半导体 SLX 收入 |
+| 2026-03-27 | SLX / 未具名客户 | **$5m–7m** | 2027Q2 | 已进入 2026Q1/期末 backlog | 标准 SLX，交期约 12–15 个月 |
+| 2026-04-14 | 定制 SLX / 未具名客户 | **$27m–30m** | 2028 年 | 已进入 2026Q2/期末 backlog | 高 ASP、长交期、客户专用规格；不能类推为标准机 ASP |
+| 2026-06-15 | SLX / **欧洲新客户** | **$6m–8m** | 2026Q3 | 已进入 2026Q2/期末 backlog | 新客户是份额扩张信号，交期仅约 3–4 个月，表明设备接近完工或预留产能 |
+| 2026-06-25 | SLX / 亚洲客户 | **$5m–7m** | 2026Q4 | 已进入 2026Q2/期末 backlog | 标准替换/扩产订单，交付窗口清晰 |
+| 2026-06-30 | SLX / 亚洲客户 | **$5m–7m** | 2026Q3 | 已进入 2026Q2/期末 backlog | 与 6 月 15/25 日订单共同支撑 2026H2 交付 |
+| 2026-07-23 | SLX / 亚洲客户 | **$5m–7m** | 2027Q2 | **不在** 2026Q2 期末 backlog | 季后新增，延长 2027 可见度 |
+
+上述七单中值合计 **$82.0m**；其中 2026Q2 公告的四单中值 **$47.5m≈SEK 452m**，约覆盖 Q2 PG 订单 **SEK 675m 的 67%**。除 2028 定制机外，Prexision 8 Evo 与五台标准 SLX 中值合计 **$53.5m**，交付都落在未来约 12 个月。订单及交期可从公司 [Photomask Equipment 新闻台账](https://www.mycronic.com/product-areas/photomask-equipment/photomask-equipment-news/) 逐笔核验；例如 [2026-06-15 欧洲新客户 SLX](https://www.mycronic.com/product-areas/photomask-equipment/press-releases/mycronic-receives-order-for-an-slx-mask-writer11/)。1 月 23 日的 MMX `$2m–4m` 订单比严格六个月窗口早 8 天，故未计入七单合计。
+
+公开台账带来三个重要约束：
+
+1. **PG 的 backlog 久期不等于未来一年收入。**2028 定制机约 `$28.5m/SEK271m` 占用订单簿但不会在未来 12 个月确认；模型已将其从近期可转化 backlog 中剔除。
+2. **Q2 PG 收入下降 7% 不是需求弱。**Q2 末已有 13 套系统，明确排产为 2026Q3 的 `1 FPS + 4 SLX`、Q4 的 `Prexision Lite 8 Evo + MMS + SLX`、2027Q1 的 `3 Prexision 8 Evo`、2027Q2 的 `SLX` 和 2028 定制 `SLX`；收入取决于系统验收时点。
+3. **交期高度分化。**标准 SLX 从约 3 个月到 15 个月，定制机近两年；PCBA/HV 通常是更短周期系统，GT 的量产线需要设备制造、客户工厂安装、recipe 和 site acceptance，不能用一个全公司 lead time。
+
+### 8.3 渠道和客户项目交叉验证
+
+| 产品 | 可核实的客户/产线证据 | 订单金额、交付与取消信息 | 对预测的约束 |
+|---|---|---|---|
+| **PCB Test** | 公司案例显示 Shennan Circuits 已部署 **100+** 台测试系统；Bomin 的高端 PCB 园区投资约 **RMB3bn**、规划年产 **3.6m m²**，聚焦服务器、数据中心与光模块；Founder/SYE 亦有验证 | 这些是 installed-base/客户采用证据，不是 2026 新增订单；GT 不披露分线订单额或取消率 | 证明供应链采用已过早期验证，但不能把客户总资本开支直接当 Mycronic backlog；基准仅假设既有客户复制线与 A9XL 升级 |
+| **MRSI Die Bonding** | 公司在 CFCF 2026 表示 LEAP 已交付多家 leading/tier-1 客户，并在 **800G/1.6T** 生产线上实现稳定 HVM；获 2026 **“Most Influential Product Award”** | 客户名、台数、订单金额、交付窗口均未披露；行业奖项不是采购合同 | 是 AI 光模块收入已经发生的强证据，但仍不足以验证单一 hyperscaler 或 CPO 大单；极度乐观情景需要 named repeat order 或产线扩充数据 |
+| **HV AI 点胶** | Q2 管理层明确指出 AI server 的 TIM 以及 optical module dispense/final assembly 收入增加 | 无客户名、项目名和 AI 子业务订单额；HV backlog 仅披露到分部 | 只能从 HV Q2 订单 **+82%**、收入 **+16%** 与 backlog **SEK1.19bn** 推断扩产；AI 收入占比维持宽区间 |
+| **SLX/MMX** | 过去半年七笔 PG 系统价格/交付公开订单，其中六笔为 SLX；一位欧洲新客户；13 套系统排产。另有具名项目：Photronics 韩国工厂已将 2026Q1 交付的 Prexision 8000 Evo 投产，但它是显示光罩机、不是 SLX AI 收入 | 新系统订单客户仍匿名；系统通常接近交付/验收时才确认收入 | 未来一年 PG 收入下限可见度高，定制机须按 2028 而非 2027 处理；Photronics 项目只验证执行，不计 AI 收入 |
+| **Surfx** | 已有商业收入、STW/INT 面向 hybrid bonding/先进封装；设备规格支持 inline 与 SECS/GEM | 没有披露头部 fab、量产片数、订单额或 repeat order | 仅按小规模成长产品估值；在披露 process qualification 前不把它视为 HBM 量产标准 |
+| **Vanguard** | 安装基础约 **40 台**，主要在研究机构、少量商业客户 | 没有 tier-1 HVM 客户、量产订单、产能锁定或取消率 | 作为期权而非 2027 利润主引擎；基准只计研发/小批 commercial 转化 |
+
+### 8.4 取消率、重复下单与验收延迟的压力测试
+
+由于缺少公司披露，本文按产品属性设置取消/价值下调率：PG **0%–2%**，GT/HV **0%–3%**，PCBA **1%–5%**；若光模块客户存在重复锁产能，另做 GT optical backlog **5%–8%** 的压力情景。这些是 **R-est**，不是公司指引。更常见的短期风险可能不是正式取消，而是客户厂房、关键材料或 downstream demand 延迟导致 site acceptance 跨季度。
+
+以期末 backlog **SEK5.255bn/$552m** 为起点：
+
+- 若未来 12 个月转化 **75%–82%**，可贡献 **SEK3.94bn–4.31bn**；其余收入需来自服务、耗材、PCBA/HV 短周期设备和期内新订单。
+- backlog 价值下调 3% 会减少约 **SEK158m/$16.6m**，相当于 TTM 收入 **1.8%**；若仅 GT optical 相关估算 backlog 遭 8% 压力，集团冲击更小，但由于 GT 毛利高，利润敏感度高于收入。
+- 2026Q2 backlog/TTM sales 为 **0.61x**，远未覆盖一整年，因此一年预测对未来 bookings 的依赖仍然很大；不能把 backlog 直接等同于 2027 收入。
+
+### 8.5 每个关键产品的一年订单—供给预测
+
+| 关键产品 | 订单可见度/供给约束 | 基准 | 乐观 | 极度乐观 | 主要反证信号 |
+|---|---|---|---|---|---|
+| **PCB Test** | GT backlog 未拆产品；Wertheim 扩产 + A9XL/RCI，主要约束为探针、handler、现场工程和客户验收 | 收入 **$135m/+26%**；取消/延期 **1%–3%**；产能利用约 79% | **$165m/+53%**；B2B >1.2x，产能利用约 79% | **$205m/+91%**；需锁班次/外协，利用约 80% | GT orders 转弱、A9XL 无 repeat order、PCB 客户资本开支延后 |
+| **MRSI Die Bonding** | 多家 tier-1 HVM 但无台数；深圳新线提高供给；验收与光学良率是瓶颈 | **$105m/+31%**；取消/延期 **1%–3%**；利用约 70% | **$135m/+69%**；利用约 73% | **$170m/+113%**；利用约 74%，需客户预付款锁产能 | 1.6T 良率/需求下修、订单重复、LEAP/A-L 验收跨季 |
+| **HV AI 点胶** | HV backlog **$125m**但 AI 子项未知；Axxon 2028 园区不计入近期 | **$42m/+40%**；利用约 65% | **$58m/+93%**；利用约 61% | **$80m/+167%**；利用约 62%，需整线 attach | HV 订单回落、AI mix 不再增长、TIM/光模块项目停留在 NPI |
+| **SLX/MMX** | 公开系统和交付窗透明；单台验收决定季度波动；定制机不计一年收入 | **$95m/+6%**；取消 **0%–2%**；利用约 86% | **$115m/+28%**；利用约 79% | **$140m/+56%**；利用约 76%，需增班/更高 mix | 标准订单公告中断、排产延迟、mask shop 利用率下降 |
+| **Surfx** | 无单独 backlog；先进封装 process qualification 慢于设备交付 | **$34m/+31%**；利用约 76% | **$44m/+69%**；利用约 73% | **$58m/+123%**；利用约 73% | 无 repeat order、客户仍停留于研发、hybrid bond 路线延后 |
+| **Vanguard** | 约 40 台 installed base，但 HVM 证据弱；设计导入周期长 | **$12m/+41%**；利用约 67% | **$19m/+124%**；利用约 68% | **$30m/+253%**；利用约 67% | 仍只有研究机构采购、无商业 lead customer、替代封装路线胜出 |
+| **新光罩检测** | 尚无产品/订单/资格披露 | **$0m–3m** | **$5m–12m** | **$15m–25m** | 2026–2027 无 alpha/beta 客户或技术指标披露 |
+
+表中“利用率”是预测收入/第 7 节对应产能上限，主要用来发现不可能的模型，而非公司工厂 OEE。极度乐观仍低于所估收入产能，是因为设备验收、产品 mix 与线体资格会让 nominal capacity 无法 100% 货币化。
+
+### 8.6 集团未来 12 个月：三情景闭环
+
+预测期为 **2026Q3–2027Q2**；比较基数为截至 2026Q2 的 TTM 收入 **SEK8.649bn**。模型是 `现有 backlog 转化 + 未来新订单当期交付 + 服务/耗材`，并受第 7 节产品产能约束。
+
+| 指标 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| 现有 backlog 未来一年转化率 | **75%–82%** | **82%–90%** | **90%–95%** |
+| 加权订单取消/价值下调 | **1%–3%** | **0.5%–2%** | **0%–1%** |
+| 未来订单 B2B | **1.05x–1.15x** | **1.15x–1.30x** | **1.30x–1.45x** |
+| **PG 收入** | **SEK3.40bn / +4%** | **SEK3.65bn / +12%** | **SEK4.00bn / +23%** |
+| **PCBA 收入** | **SEK1.45bn / +6%** | **SEK1.55bn / +13%** | **SEK1.65bn / +20%** |
+| **HV 收入** | **SEK2.20bn / +18%** | **SEK2.45bn / +31%** | **SEK2.75bn / +47%** |
+| **GT 收入** | **SEK3.15bn / +44%** | **SEK3.75bn / +72%** | **SEK4.40bn / +102%** |
+| **集团收入** | **SEK10.20bn / $1.07bn / +18%** | **SEK11.40bn / $1.20bn / +32%** | **SEK12.80bn / $1.35bn / +48%** |
+| 毛利率 | **52%–55%** | **54%–57%** | **56%–59%** |
+| EBIT margin | **25%–27%** | **27%–30%** | **30%–33%** |
+| 最关键约束 | GT backlog 正常转化；PCBA 改善但未拖累 | 1.6T、AI PCB 与 HV 同时扩产 | 合格设备/现场工程、客户验收、无重复订单取消 |
+
+基准 **SEK10.2bn** 与 2027 年市场收入共识约 **SEK10.19bn** 接近；它不是从共识倒推，而是四分部相加后的交叉检查。[Mycronic 官方共识页](https://www.mycronic.com/investors/consensus-estimates/) 极度乐观不是“正常牛市”：它要求 GT 一年翻倍、PG 在高基数仍增长、PCBA 重组不失速，同时毛利 mix 向 GT/PG 倾斜，概率显著低于基准。
+
+## 9. 竞争格局、技术主流性、替代方案与客户切换成本
+
+### 9.1 逐产品竞争地图
+
+官方年报列出的竞争者与市场拆分是本表的底座；对细分设备补充相邻方案。切换周期/成本是本文 **R-est**，代表重新验证、recipe 转移、试产损耗和工程时间，不只是新设备标价。[2025 Annual Report](https://storage.mfn.se/74466bcb-9f6d-45f8-9c6a-71c20d3e0d6e/annual-report-2025.pdf)
+
+| 产品/技术 | 主要竞争者与替代方案 | 是否未来主流 | Mycronic 护城河/短板 | 客户切换成本（R-est） |
+|---|---|---|---|---|
+| **PCB Test：A9/A9XL、RoBAT、ETZ probe** | Hioki、MicroCraft、Nidec；fixture/grid test、flying probe、boundary scan、AOI/X-ray、外包测试可组合替代 | **高阶 AI PCB 的电测/信号完整性是刚需**；flying probe 会增长，但不会取代全部高量 fixture test | 8 个 probe head、大板、高压、TDR/阻抗/skew 与 probe 垂直整合；短板是客户可双供，竞争者在既有 PCB 厂也有 installed base | **中高：3–9 个月**；重新做板型 recipe、探针/治具、GR&R、MES 和良率基线；工程/试产损失约 `$0.2m–1.0m/线`，但新厂可直接双源 |
+| **Die Bonding：LEAP、HVM、A-L、S-HVM** | ASMPT、Besi；光子装联还包括 ficonTEC、Aixemtec 等；替代为 passive alignment、wafer-level integration、laser attach/TCB、供应商自研 cell | **亚微米 die attach 是 800G/1.6T 的主流必要环节**；但每模块放置数会被 SiPho 集成、co-packaging 和 wafer-level 路线改变 | 最高约 `±1µm @3σ`、>1,000 UPH、多工艺与已验证 HVM；短板是头部客户/订单不透明，ASMPT/Besi 规模和封装产品宽度更大 | **高：6–18 个月**；需重做共晶/环氧/flip-chip 温度曲线、视觉、主动对准、可靠性与量产良率；约 `$0.5m–3m/线` 加机会成本 |
+| **HV：TIM、精密点胶、光模块终装** | Nordson、PVA、Anda、GKG 及中国本土自动化商；替代为不同泵阀、预制 TIM、丝印/喷射、客户自研整线 | **点胶/TIM 是主流工艺，但单一厂商不主流垄断** | Axxon 本地交付、整线、软件/视觉和应用工程；短板是泵阀/运动平台可替代、价格竞争强 | **中：3–9 个月**；材料 recipe、轨迹、空洞率/热阻、可靠性重新验证；约 `$0.1m–1m/线`，低于 die bond |
+| **SLX/MMX 激光光罩写入** | Applied Materials、Heidelberg Instruments；替代为电子束/multi-beam writer、direct-write/maskless lithography | **成熟/特殊半导体与显示光罩仍主流**；先进 EUV/最小节点不是 SLX 的主战场；先进封装存在 maskless 替代 | 少数全球厂商、长寿命 installed base、服务与应用知识、公开大额 ASP；短板是需求极度 lumpy、客户少、AI 关联间接 | **高：12–24 个月**；mask shop 需重做 CD、overlay、写入时间、缺陷和客户认证；潜在损失 `$1m–5m+`，但新层可在不同平台分配 |
+| **Surfx atmospheric plasma** | Applied Materials、Lam、TEL 等真空 plasma/clean；湿法清洗、UV-ozone、其他 atmospheric plasma；也可由 bonder OEM 集成 | **plasma activation/clean 是 hybrid bonding 主流步骤；大气式 inline 是否成为主流仍待验证** | 无真空、低损伤、inline 与专利/IP 有差异化；短板是 fab process-of-record 和头部 HVM 客户未公开 | **高（量产后）：9–24 个月**；需表面能、颗粒、金属污染、bond strength、void、可靠性全套验证；研发阶段切换成本仍低 |
+| **Vanguard 3D photonic wire bonding** | Nanoscribe、OpenLight、X-Celeprint；被动对准 V-groove、grating/edge coupler、flip-chip、激光焊接、微透镜与 conventional active alignment | **不是当前主流，是潜在架构跃迁**；若能降低亚微米主动对准和异质芯片耦合成本，价值很大 | 3D 自由曲面、软件/材料/设备一体、研究安装基础；短板是 throughput、材料寿命、可靠性、标准化和 HVM 证据不足 | **前设计导入低，design-in 后高：12–24 个月**；光学接口与封装共同设计，换路线要重做耦合、热循环、老化和 BER |
+| **新光罩检测** | KLA、Lasertec、Applied Materials，以及电子束/光学 mask inspection 方案 | 尚不能判断；高端光罩检测本身是刚需，但 Mycronic 产品仍在研发 | 可利用 PG 客户关系/应用知识；目前没有型号、灵敏度、吞吐、客户或订单，护城河尚未成立 | **若进入量产则很高**；现阶段客户切换成本为零，因为尚无商业 installed base |
+
+### 9.2 哪些技术最可能成为主流
+
+1. **确定性最高：AI PCB 更复杂 → 电测与信号完整性强度上升。**无论 GPU 品牌或 pluggable/CPO 路线如何，服务器、交换、电源和 backplane 仍需高阶 PCB。风险在于客户采用 fixture + flying probe 混合方案，Mycronic 不会独占全部测试价值。
+2. **确定性较高：1.6T/硅光扩产 → 精密 die bonding 与主动/被动对准共同增长。**MRSI 技术是主流工艺的一部分，但更高集成度可能减少 discrete die 数；如果被动对准精度足够，昂贵 active-alignment cell 的单位需求会下降。
+3. **工艺必要、厂商不垄断：TIM/点胶。**功率密度上升强化热界面工艺，但 Nordson/PVA/本土商及材料变化都能分流；HV 需要用整线、软件、良率闭环而不是泵阀本身维持溢价。
+4. **成熟主流但 AI 弹性有限：SLX。**AI 会增加部分成熟逻辑、模拟、电源、显示/封装 mask demand 和 respin，但 leading-edge GPU 主掩模更依赖 e-beam/multi-beam。SLX 的投资逻辑更接近高利润替换周期 + 特殊应用份额，而不是“每颗 GPU 含量”。
+5. **高赔率、低验证：Surfx/Vanguard/新光罩检测。**三者分别押注 atmospheric inline activation、3D photonic interconnect、PG 邻接检测。只有客户付费 beta、量产 qualification、repeat order、良率和吞吐披露后，才应从期权变成基准收入。
+
+项目内先进封装研究也指出，hybrid bonding 的关键是颗粒/表面活化、CMP、对准、界面空洞和量产良率的联合窗口，不应把单台 plasma 或 bonder 当作完整解决方案。[先进封装设备与混合键合研究](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-07-10.md) 检测量测研究同样提示：缺陷类型、灵敏度、throughput 与 process control 闭环比“进入检测市场”的叙事更重要。[半导体检测量测设备研究](../../行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-07-10.md)
+
+### 9.3 公司级风险矩阵
+
+| 风险 | 机制 | 最先出现的数字 | 严重度 | 当前判断 |
+|---|---|---|---:|---|
+| **估值与预期** | TTM P/E 约 35x、forward P/E 约 31x 已计入增长；只要 GT 增速或 PG mix 低于预期，multiple 与盈利可双杀 | GT orders/B2B、2027 EPS 共识、股价相对订单增速 | **高** | 基本面强，但安全边际不宽 |
+| **AI 收入归因过度** | 公司只披露分部，不披露 AI 收入；市场可能把所有 GT/HV 增长都视为 AI | AI 子线具名收入、客户和 repeat order | **高** | 本文仅估 TTM AI 直接/强相关 **$135m–200m**，低于 GT+HV 全部收入 |
+| **backlog 质量/重复下单** | 光模块或 PCB 客户可能多家锁产能，需求正常化后延期/取消；验收也会跨季 | 残差、客户 capex、库存、交付延期、预付款 | **中高** | 五季勾稽未见大额净取消，但透明度不足 |
+| **PG 大单与季度波动** | 单台 `$5m–30m`、验收时点影响收入和 margin；2028 定制订单占用 backlog | 系统交付表、PG backlog、季度 GM | **高（波动）** | 不是偿债风险，但会造成 earnings surprise |
+| **产能/资格瓶颈** | 新产线有设备、人、供应链和现场工程爬坡；客户 qualification 比装机慢 | 深圳/Wertheim 出货、acceptance、利用率、交期 | **中高** | 近期供给可扩，极度乐观需要超常执行 |
+| **中国/地缘与出口** | HV/Axxon、PCB 客户和亚洲 PG 订单暴露较高；制裁、出口许可、国产替代与需求波动影响交付 | 中国订单、应收、出口许可、local competitors | **高** | 本地化是优势，也是集中风险 |
+| **并购与无形资产** | goodwill/无形资产约占总资产 31%、权益 48%；增长不达标会减值 | Surfx/Vanguard/ETZ 增长、ROCE、减值测试 | **中** | 净现金很强，减值更影响利润/估值而非短期流动性 |
+| **PCBA 重组** | Q2 EBIT margin −14.5%，重组总成本约 SEK100m 至 2027；目标是 2027 年底 >10% EBIT | PCBA orders、GM、季度亏损、一次性费用 | **中** | 小于 AI 主线，但若持续亏损会吞噬现金和管理注意力 |
+| **汇率** | 收入美元/欧元/亚洲货币、报表 SEK；订单簿也按期末汇率重估 | constant-currency 与 reported growth 差、hedge | **中** | H1 reported +17% 而 CC +25%，已显示 SEK 变化影响 |
+| **技术替代** | passive alignment、wafer-level integration、maskless、替代 plasma/测试架构降低设备含量 | 客户 process-of-record、UPH、die count、mask layers | **中高** | 产品组合分散风险，但每条新路线都非必胜 |
+
+### 9.4 未来四个季度催化剂与验证清单
+
+1. **2026Q3/Q4 PG 验收：**排产的 `1 FPS + 5 SLX + PL8 + MMS` 是否如期确认，PG gross margin 是否仍显著高于 65%。
+2. **GT backlog 继续增长还是消化：**分部 B2B 是否维持 >1.1x；PCB Test 与 Die Bonding 的增速能否分别披露，避免只看 GT 合计。
+3. **客户/项目可见度：**LEAP/A-L 是否出现具名 tier-1 repeat order、台数、交付窗口；HV 是否披露 AI server TIM/optical module 的量产客户。
+4. **新产能转化：**Wertheim 和深圳线是缩短交期还是只增加固定成本；Axxon 2028 园区不得提前计入 2027 产能。
+5. **Surfx/Vanguard 里程碑：**付费 beta、HVM qualification、repeat order、良率、UPH 和 installed-base 商业客户占比；行业奖项不能替代这些数字。
+6. **PCBA 重组：**剩余约 **SEK57m** 重组费用确认节奏、毛利恢复、2027 年底 >10% EBIT 目标是否可信。
+7. **现金质量：**经营现金流是否继续覆盖 capex/研发资本化；应收与库存增速不能持续快于收入。
+8. **2026-08-31 Capital Markets Day：**公司是否首次提供 GT AI mix、细分 TAM、产能、订单/交期或新光罩检测路线图；这是提高模型置信度的最直接催化剂。
+
+## 10. 结论：这是一家“现金充足的精密设备平台”，不是纯 AI 股
+
+Mycronic 的核心投资矛盾很清楚：**老业务 PG 提供现金、利润率和订单可见度；GT/部分 HV 提供 AI 增长；Surfx、Vanguard 和新光罩检测提供期权；PCBA 是需要修复的拖累。**截至 2026Q2，净现金约 **SEK2.27bn**、TTM EBIT margin **25.8%**、backlog **SEK5.26bn**、TTM B2B **1.13x**，财务和订单基础都强。Q2 订单 +119%、GT backlog +195%、HV 订单 +82% 为未来一年提供了真实支撑。
+
+但投资人必须同时保留三条边界：
+
+- **不把分部增长全部归因 AI。**公司没有披露 AI 收入，本文的 AI 直接/强相关 TTM `$135m–200m` 只是可审计估算；若没有具名订单与 mix 披露，不能提高置信度。
+- **不把 backlog 全部当一年收入。**其中含 2028 定制 SLX，且新订单、验收、取消/价值调整仍影响兑现；基准只取 75%–82% 的一年转化。
+- **不把技术奖项当量产认证。**LEAP 的 HVM 表述较强，但 Surfx/Vanguard/新检测工具仍需要付费客户、repeat order、throughput、良率和可靠性数据。
+
+因此，一年期最合理的中心情景是收入 **SEK10.2bn/$1.07bn、同比 +18%、EBIT margin 25%–27%**；乐观情景为 **SEK11.4bn/+32%**，极度乐观 **SEK12.8bn/+48%**。基准能兑现的关键不是再讲 AI 故事，而是 GT backlog 转成收入、PG 按排产验收、HV AI mix 有可验证的客户扩张，并且 PCBA 亏损收窄。以 2026-07-31 主上市股价 **SEK313.80**、TTM P/E **35.3x** 计，市场已支付成长溢价；资产负债表提供下行缓冲，但估值不提供同等缓冲。
+
+## 11. 证据、口径与可复算说明
+
+### 11.1 主要一手资料
+
+| 资料 | 截止/发布日期 | 本文用途 |
+|---|---|---|
+| [2026Q2 Interim Report](https://storage.mfn.se/c8f3d92b-f205-4f1a-9552-77f0d11afede/interim-report-january-june-2026.pdf) | **2026-07-14** | 最新财务、分部、backlog、交付表、指引、资产负债表、现金流 |
+| [2026Q1 Interim Report](https://www.mycronic.com/news-events/our-press-releases/interim-report-january-march-2026/) | **2026-04-24** | 五季度序列、指引上调、分部经营信息 |
+| [2025 Year-end Report](https://www.mycronic.com/news-events/our-press-releases/year-end-report-january-december-2025/) | 2026-02-05 | 2025Q4 与全年数据、2026 初始指引 |
+| [2025Q3 Interim Report](https://www.mycronic.com/news-events/our-press-releases/interim-report-january-september-2025/) | 2025-10-23 | 2025Q3 财务、订单和分部数据 |
+| [2025Q2 Interim Report](https://www.mycronic.com/news-events/our-press-releases/interim-report-january-june-2025/) | **2025-07-11** | 五季度起点、同比基数 |
+| [2025 Annual Report](https://storage.mfn.se/74466bcb-9f6d-45f8-9c6a-71c20d3e0d6e/annual-report-2025.pdf) | **2026-04-01** | 业务、竞争者、收购、市场定位、会计口径 |
+| [Photomask Equipment order ledger](https://www.mycronic.com/product-areas/photomask-equipment/photomask-equipment-news/) | 检索至 2026-07-31 | SLX/MMX 订单金额、地区和交期逐笔验证 |
+| [Mycronic consensus estimates](https://www.mycronic.com/investors/consensus-estimates/) | 2026-07 | 2026–2028 收入、EBIT、EPS 市场共识交叉检查 |
+
+市场价格使用 Nasdaq Stockholm 的 `MYCR.ST` 日线镜像，2026-07-31 收盘 **SEK313.80**；OTC `MICLF` 最近一笔为 2026-07-30 **$32.50、成交量 0**，所以估值以主上市为准。汇率统一用 2026-07-31 日线收盘 **USD/SEK 9.51551**；所有美元换算均为近似值。P/E、P/S、利润率为本文用价格、195.270m 股本和 TTM 财务重算，不混用不同日期网站倍数。
+
+### 11.2 项目内行业资料边界
+
+本文仅使用用户允许的 `基本面/行业调研/` 中以下相关产业底稿；未读取其他项目目录，也未读取或更改公司索引：
+
+- [高端光罩与先进封装掩模](../../行业调研/晶圆制造_设备_材料_测试/行业调研_高端光罩与先进封装掩模_2026-07-10.md)：mask layer、ASP、respins、fab replication 与 maskless 替代边界。
+- [先进封装设备与混合键合](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-07-10.md)：hybrid bonding 工艺窗口、表面活化、良率与设备资格。
+- [半导体检测量测设备](../../行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-07-10.md)：检测灵敏度、吞吐、process-control 闭环和新产品认证标准。
+- [800G/1.6T 可插拔光模块](../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md)：模块 ASP、封装/对准/测试价值池、供需和取消风险。
+- [CPO/NPO 与交换侧光引擎](../../行业调研/AI网络_光互联_铜互联/行业调研_CPO_NPO与交换侧光引擎_2026-07-10.md)：102.4T CPO BOM、光引擎、FAU/ELS 与 design-in 节奏。
+
+### 11.3 证据标签与模型限制
+
+- **F（公司披露）：**财报、年报、订单公告、产品规格和公司活动材料。
+- **M（市场数据）：**交易所/行情日线和分析师共识；注明日期，OTC 零成交不作价格发现依据。
+- **I（行业资料）：**上述五份项目内行业底稿与官方技术架构资料。
+- **R-est（本文估算）：**AI mix、产品收入、毛利率、设备 ASP、单位内容量、产能、采用率、取消率和三情景。区间通过分部收入/毛利、订单簿、系统公开价格、安装基础和产能事件约束，但**不是公司指引**。
+
+所有产品收入区间都遵守分部边界；产品级预测不能简单相加成集团收入，集团模型另按 PG/PCBA/HV/GT 四分部闭环。`每 GPU/每 rack/每 MW/每 port` 是生产设备成本按生命周期产量摊销，不能与芯片或模块的物理 BOM 重复相加。没有客户名、订单金额或 qualification 的地方均明确写为未知，没有用论坛传闻填空。

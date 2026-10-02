@@ -1,0 +1,575 @@
+# 公司：ENPH — Enphase Energy, Inc. 全面尽调
+
+> **调研截止：2026-07-31（America/Los_Angeles）｜财务截止：2026Q2｜币种：美元**
+>
+> **独立性边界：**项目内只读取“基本面/行业调研”中与 AI 数据中心电力、微电网、UPS/储能、机柜供电和功率半导体直接相关的行业材料；没有调用其他项目目录，也没有修改公司索引。联网证据优先使用公司公告、SEC 文件、产品数据表、标准组织、客户/竞争对手公告；论坛只作低置信度渠道交叉验证。
+>
+> **重要口径：**Enphase 在 SEC 报告中只有一个可报告分部——solar photovoltaic solutions。公司不披露微逆、储能、EV 充电、软件或 SST 的独立收入及毛利率。本文所有产品收入拆分、BOM、ASP、产能金额和三情景预测均标注为“分析估算”，不能当作公司披露。
+
+## 核心结论
+
+1. **当前的 ENPH 仍是住宅分布式光储公司，不是 AI 数据中心收入公司。**其护城河来自组件级微型逆变器、全 AC 架构、监控/控制软件、安装商网络、25 年质保和庞大存量系统；2026Q2 AI 数据中心相关商业收入估计为 **$0、占比 0%**。IQ Solid-State Transformer（IQ SST）是高潜力、但处于 RFI/RFP—样机阶段的远期期权。
+2. **报表收入已经环比见底，但核心需求仍弱。**2026Q2 收入 **$291.9M，环比 +3.2%、同比 -19.6%**；其中约 **$84.3M** 是美国 safe-harbor 交付。剔除后核心收入约 **$207.6M，环比 -16.4%**。Q2 GAAP 毛利率 **60.0%** 还被 **$45.4M** 关税退款抬高约 **15.6 个百分点**；更能代表经营状态的 non-GAAP 毛利率为 **46.8%**。
+3. **资产负债表健康，经营问题不是偿债危机。**现金、受限现金及有价证券 **$937.7M**，票面债务 **$575.0M**，净现金约 **$362.7M**；严格流动比率 **3.45x**、严格速动比率约 **2.14x**，TTM 自由现金流 **$152.6M**。主要风险是应收账款、库存和政策驱动订单的质量，而不是短期流动性。
+4. **最近的“订单”必须分三类。**2026Q3 指引中点的 **70% 已 booked**，这是短周期可见性；2026 年内签署的 5% safe-harbor 协议累计约 **$202.4M**，而管理层给出的 2026Q1-Q4 step-up revenue 节奏合计约 **$255M**、包含以前合同，两者不能逐笔勾稽；另有 **$878.6M physical-work-test（PWT）TPO order backlog**，管理层指向 **2028-2030 安装**。后者不是未来 12 个月收入，也不应与传统设备商可按季度转化的 backlog 等同。
+5. **AI SST 的技术方向合理，但商业位置落后于最强对手。**IQ SST 的目标是 13.8/34.5kV 直接转 800VDC、效率 **98.5%**、可用性 **99.999%**、响应小于 **1ms**；但截至本报告日没有披露付费订单、客户名称、NVIDIA MGX/AVL 定点或完整 UL 系统认证。Delta 已披露 100MW 规划型合作，DG Matrix 已公开进入 NVIDIA MGX 供应体系；NVIDIA 公布的 800VDC 合作伙伴页也未列 Enphase。ENPH 的 SST 价值目前应按“研发期权”而非“AI 收入倍数”估值。
+6. **未来一年三情景收入：基准 $1.395B（+5%）、乐观 $1.655B（+25%）、极度乐观 $2.035B（+53%）。**基准情景接近外部 2027 年恢复预期；乐观和极度乐观主要依赖 G5 电池降本、欧洲 retrofit、IQ9 商用微逆、Propel/TPO 融资恢复，而非 SST。SST 在三情景中的未来 12 个月收入分别取 **$0M / $5M / $15M**。
+7. **估值不算绝对便宜。**截至 2026-07-31 15:20 ET，股价约 **$37.77**、市值约 **$5.10B**；TTM P/E 约 **37.7x**、forward P/E 约 **18.7x**、按公司 TTM 收入计算 P/S 约 **3.84x**。forward P/E 看似较低，但建立在 2027 盈利恢复、45X 制造抵免持续和产品降本兑现上；高达约 **17.9% 流通股**的空头仓位说明市场分歧仍大。
+
+## 一、公司整体业务、投资者定位与三年变动
+
+### 1.1 公司做什么，处在产业链哪里
+
+Enphase 设计并销售以微型逆变器为核心的分布式能源系统。每块太阳能组件后安装一台微逆，将直流电转换成交流电；IQ Gateway、IQ Combiner、Enphase App、负载控制和云端监控把发电、储能、用电与电网连接起来；IQ Battery、IQ EV Charger 和未来双向充电器扩展家庭能源价值。公司采取轻资产模式，由 Flex、Salcomp、Sunwoda 等代工，自己掌握 ASIC、功率电子拓扑、固件、系统软件、质量验证和渠道关系。[2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1463101/000146310126000013/enph-20251231.htm)
+
+产业链位置可以概括为：
+
+**GaN/Si 功率器件、ASIC 晶圆、磁性元件、LFP 电芯 → 合同制造 → Enphase 系统设计、固件与品牌 → 分销商/TPO/安装商 → 住宅与小型商业用户。**
+
+在住宅市场，它位于组件之后、配电盘之前，是每瓦光伏都可能使用的高价值电力电子和控制层；在 AI 数据中心市场，IQ SST 试图进入“中压进线到 800VDC 母线”的设施电力层，但目前尚未进入可验证的量产供应链。
+
+| 业务层 | 主要产品 | 客户/渠道 | 价值主张 | 2026Q2 状态 |
+|---|---|---|---|---|
+| 住宅太阳能 | IQ7/IQ8 系列、IQ8P、IQ9N 微逆；IQ Gateway/Combiner、线缆、控制 | 分销商、安装商、TPO、户主 | 组件级 MPPT、无单点集中逆变器、快速关断、监控、25 年质保 | 核心收入；出货 1.592M 台、725.2MW |
+| 住宅储能 | IQ Battery 5P/10C；下一代 G5 | 安装商、TPO、户主 | AC 耦合、grid-forming、与存量微逆兼容、应用软件统一 | Q2 出货 113.8MWh；仍处周期低位 |
+| 小型商业 | IQ8P-3P、IQ9N-3P、IQ9S-3P；未来 IQ Vault 80 | 商业安装商、连锁零售、校园、小型 C&I | 三相 480Y/277V、组件级可用性、美国本土/FEOC 合规 | 新业务；Q3 目标约 $10M |
+| EV 与家庭负载 | IQ EV Charger、IQ Bidirectional EV Charger、Meter Collar、负载控制 | 户主、汽车 OEM、公用事业 | 车网/车家互动、避免昂贵面板升级、统一能源编排 | 单向产品收入小；双向产品处试点 |
+| AI 数据中心电力 | IQ SST、Kestrel 控制 ASIC | hyperscaler、机电设计院、设施集成商 | MV 直转 800VDC、模块化冗余、高速动态响应 | 样机/RFI/RFP；商业收入约为零 |
+
+### 1.2 投资者心中的公司
+
+市场通常给 ENPH 四个互相冲突的标签：
+
+- **“住宅光伏里的高端系统平台”**：相较集中式/string inverter，Enphase 的组件级电子、软件、全 AC 安全性和安装商生态支持更高价格；用户购买的是系统可靠性和生命周期服务，不只是一块逆变器。
+- **“利率、补贴和渠道库存的高 Beta 周期股”**：住宅光伏高度依赖贷款月供、税收抵免和净计量政策。2023-2024 的急剧去库存证明渠道 sell-in 可以显著偏离终端 sell-through。
+- **“45X 制造抵免受益者”**：美国制造的微逆按 AC 瓦数获得 Section 45X 抵免；2025 年 AMPTC 收益 **$238.7M**，相当于收入的 **16.2 个百分点**。这是真现金/应收价值，但也令毛利率对政策和抵免出售折价敏感。
+- **“住宅修复 + AI SST 免费期权”**：2026 年新叙事使估值不再只看住宅光伏，但没有客户、订单和认证前，SST 不能支撑当期 AI 溢价。31 名分析师中多数仍为 Hold；平均目标价约 $47，但区间约 $27-$85，显示分歧极大。[S&P Global 汇总](https://stockanalysis.com/stocks/enph/forecast/)
+
+### 1.3 最近三年的重大业务变化、转型与收购
+
+| 时间 | 重大变化 | 数字与含义 |
+|---|---|---|
+| 2023 | 住宅光伏需求和渠道库存由短缺转为去化；公司从高速缺货模式进入周期收缩 | 收入 **$2.291B**；随后欧洲和美国渠道库存调整，峰值盈利不再可持续 |
+| 2023Q4-2024Q4 | 第一轮重组、代工和运营收缩；加强美国制造以获取 45X | 2024 收入 **$1.330B，同比 -41.9%**；2023 重组计划于 2024Q4 基本完成 |
+| 2024Q4-2025Q4 | 第二轮重组、压缩费用和地域成本；美国 safe-harbor 与本土内容成为需求结构的重要部分 | 2025 收入 **$1.473B，同比 +10.7%**；美国收入 **$1.189B、+27%**，国际收入 **$284M、-28%**；电池 MWh **+36%**、微逆台数 **-2%** |
+| 2025-2026 | 从纯住宅微逆向“住宅光储平台 + 小型商业 + EV + 数据中心 SST”扩展 | IQ9N/IQ9 商用、G5、Vault 80、双向 EV、IQ SST 同时开发；产品广度明显增加，但也推高研发和认证执行风险 |
+| 2026-01 | 新一轮小型裁员与资源再配置 | 少于 **6%** 员工、约 **160 人**；费用约 **$4.6M**，同时 SST 团队约 120 人 |
+| 2026H1 | 偿还 2026 到期可转债、转售 45X 抵免、加强 TPO 税务结构 | 偿还约 **$632.5M** 票据；签署最多出售 **$150M** 2026 AMPTC、最高收款 **$139.5M** 的协议。[SEC 8-K](https://www.sec.gov/Archives/edgar/data/1463101/000146310126000061/enph-20260615.htm) |
+
+**收购判断：**2023 至 2026H1 没有改变公司规模或业务组合的重大收购，转型主要靠内部研发。最近较重要但更早的交易是 2022 年 GreenCom Networks（能源 IoT/软件）和 2021 年 ClipperCreek（EV 充电）。因此，最近三年的业务变化应归因于需求周期、美国制造、产品线扩展和重组，而不是并购驱动。
+
+### 1.4 最新股价、估值与盈利快照
+
+| 指标 | 最新值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | **$37.77** | 2026-07-31 15:20 ET 市场数据抓取；当日盘中 $36.64-$38.59 | 仅为盘中快照 |
+| 市值 | **$5.10B** | 同上；另一 S&P 标准化口径约 $4.98B，差异来自股数口径 | 以实时报价源作主口径 |
+| TTM P/E | **37.7x** | 股价 / TTM GAAP EPS 约 $1.00-$1.01 | 对周期低谷利润仍不便宜 |
+| Forward P/E | **18.7x** | S&P Global 一致预期 | 依赖 2027 EPS 恢复 |
+| TTM P/S | **3.84x** | $5.10B / 公司 TTM 收入 $1.3285B；供应商标准值约 3.71x | 股数与收入规范化造成小差异 |
+| Forward P/S | **4.12x** | S&P Global 标准化预期 | 2026 收入预计仍下降 |
+| TTM 收入 | **$1.3285B** | 2025Q3-2026Q2 | 同比约 **-10.4%** |
+| 2026E 收入 | **$1.18B** | 2026-07-30 S&P Global 汇总 | 同比约 **-19.7%** |
+| 2027E 收入 | **$1.26B** | 同上 | 同比约 **+6.9%** |
+| TTM GAAP 毛利率 | **46.9%** | 四季 GAAP 毛利 $623.6M / 收入 | 含制造抵免与 Q2 关税退款 |
+| TTM non-GAAP 毛利率 | **46.7%** | 四季 non-GAAP 毛利约 $620.7M | 更接近经营 mix，但仍受口径定义影响 |
+| TTM GAAP 净利率 | **10.1%** | TTM 净利 $134.0M | Q2 退款抬升利润 |
+| TTM 自由现金流率 | **11.5%** | FCF $152.6M | 现金转换尚可 |
+| 空头仓位 | **约 22.9M 股；17.9% float** | 2026-07 下旬标准化数据 | 高分歧与逼空弹性并存 |
+
+估值数据交叉源：[ENPH Statistics & Valuation](https://stockanalysis.com/stocks/enph/statistics/)；财务主口径来自公司 [2026Q2 supplemental data](https://investor.enphase.com/static-files/3bbffb20-9a34-45a3-a9a1-03348bf613fe)。
+
+**毛利率口径警示：**S&P Global 标准化页面给出的 TTM gross margin 约 **30.0%**，明显低于按公司 GAAP gross-profit 行逐季相加得到的 **46.9%**。主要差异是第三方对 Section 45X/AMPTC 政府制造抵免及关税退款的分类调整；Enphase 的 non-GAAP 46.7% 只剔除特定一次性项目，仍保留正常发生的当期 AMPTC。回答“公司报表毛利率”应使用 46.9%，评估不依赖补贴的产品经济性则应同时观察约 30% 的标准化口径和本文产品级 ex-incentive 毛利估算。
+
+### 1.5 资产负债表健康度
+
+截至 2026Q2，公司资产负债表总体评为 **健康（7.5/10）**，足以支持住宅周期修复和研发投入，但并非没有质量问题。
+
+| 项目 | 2026Q2 | 计算/风险含义 |
+|---|---:|---|
+| 现金及现金等价物 | $529.3M | 高流动性 |
+| 有价证券 | $408.4M | 与现金合计 $937.7M |
+| 应收账款 | $273.6M | 按 Q2 日均收入估算 DSO 约 **85 天**，偏高，需监控 TPO/大客户回款 |
+| 库存 | $285.0M | 按 TTM 正常化销货成本估算约 **147 天**；接近一个季度收入，需求错配会形成降价/减值压力 |
+| 流动资产 | $1.951B | 严格流动比率 **3.45x** |
+| 流动负债 | $565.2M | 短期偿债压力低 |
+| 严格速动资产 | $1.211B | 现金+证券+应收；速动比率约 **2.14x**，供应商标准化口径为 2.53x |
+| 票面债务 | $575.0M | 主要为 0% 可转债，2028-03-01 到期 |
+| 净现金 | $362.7M | $937.7M-$575.0M |
+| 股东权益 | $1.182B | 债务/权益约 **48.7%** |
+| 递延收入 | 约 $582.5M | 当前约 $224.3M、长期约 $358.2M；代表合同履约义务，不是可自由使用的利润 |
+| TTM 自由现金流 | $152.6M | FCF/债务约 26.5%；有再融资缓冲 |
+
+Q1 现金较 2025 年末下降约 $582M，主要因为偿还约 $632.5M 的到期票据，而非经营现金大幅流失。剩余 2028 可转债转换价约 **$284.87**，以当前股价看短期稀释概率低。需要重点监控：
+
+1. 2025 年单一客户占收入 **39%**，美国占收入 **81%**；信用和政策集中度高。
+2. 库存天数与应收天数高于理想水平，反映渠道结构和 safe-harbor/TPO 订单复杂性。
+3. 45X 抵免需要出售给税收抵免买方；2026 协议对最高 $150M 面值只支付至多 $139.5M，存在约 7% 折价和付款条件。
+4. 历史回购价格远高于当前股价：2023/2024/2025 分别约 **$103.45/$86.15/$56.58**，资本配置结果不佳。
+
+## 二、最新及最近四次财报
+
+### 2.1 五个财报季度的官方经营与财务数据
+
+| 财报季度 | 收入；QoQ；YoY | 微逆出货 | 电池出货 | 美国/国际收入 | GAAP / non-GAAP GM | GAAP / non-GAAP 营业率 | GAAP 净利；净利率 | FCF；FCF率 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2025Q2 | **$363.2M；+2.0%；+19.7%** | 1.529M；675.4MW | 190.9MWh | $271.3M / $91.9M | 46.9% / 48.6% | 10.2% / 27.2% | $37.1M；10.2% | $18.4M；5.1% |
+| 2025Q3 | **$410.4M；+13.0%；+7.7%** | 1.770M；784.6MW | 195.0MWh | $350.0M / $60.4M | 47.8% / 49.2% | 16.1% / 30.1% | $66.6M；16.2% | $5.9M；1.4% |
+| 2025Q4 | **$343.3M；-16.3%；-10.3%** | 1.551M；682.6MW | 150.1MWh | $304.2M / $39.1M | 44.3% / 46.1% | 6.5% / 23.1% | $38.7M；11.3% | $37.8M；11.0% |
+| 2026Q1 | **$282.9M；-17.6%；-20.6%** | 1.415M；627.6MW | 103.1MWh | $233.9M / $49.0M | 35.5% / 43.9% | -10.5% / 16.7% | -$7.4M；-2.6% | $83.0M；29.3% |
+| 2026Q2（最新） | **$291.9M；+3.2%；-19.6%** | 1.592M；725.2MW | 113.8MWh | $226.9M / $65.0M | **60.0% / 46.8%** | 17.7% / 19.4% | $36.1M；12.4% | $25.9M；8.9% |
+
+五季原始数据来自公司 [2026Q2 新闻稿](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-reports-financial-results-second-quarter-2026) 与 [supplemental data](https://investor.enphase.com/static-files/3bbffb20-9a34-45a3-a9a1-03348bf613fe)。Q2 GAAP 毛利率不应直接外推：一次性关税退款 $45.4M 抬高约 15.6 个百分点。
+
+### 2.2 Backlog、bookings、book-to-bill、交期、取消率与渠道状态
+
+Enphase 不披露标准化 bookings、book-to-bill、产品 lead time 或取消率；本报告将用户问题中的 B2B 按 book-to-bill 理解。其业务经分销/TPO 交付，管理层更常披露“下季指引已 booked 百分比”、sell-through、channel inventory 和 safe-harbor 交付。以下表格不把缺失项填成零。
+
+| 财报季度 | Safe-harbor 收入；核心收入估算 | 下季指引 booked 覆盖 | Backlog/订单与交付信号 | 渠道库存、lead time、取消率 |
+|---|---:|---:|---|---|
+| 2025Q2 | $40.4M；**$322.8M** | Q3 约 **75%** | 美国收入/终端 sell-through 分别约 +3%/+17% QoQ；欧洲收入/sell-through +11%/+5% | 电池正常、微逆略高；B2B、lead time、取消率未披露 |
+| 2025Q3 | $70.9M；**$339.5M** | Q4 约 **75%** | Q4 终端需求预期 $350-$400M，但计划 shipment $310-$350M，主动 under-ship 约 **$45M** | 微逆正常、电池略高；lead time、取消率未披露 |
+| 2025Q4 | $20.3M；**$323.0M** | Q1 约 **90%** | 两笔 TPO 订单合计约 **$123M**；美国 sell-through +21% QoQ，欧洲收入 -29% | 库存结构仍需去化；B2B、lead time、取消率未披露 |
+| 2026Q1 | $34.5M；**$248.4M** | Q2 约 **85%** | Q2 计划相对需求 under-ship 约 **$25M**；累计协议 $843.6M，其中 5% 约 $89.6M、PWT 约 $754M，另有 Q4 $67.7M | 微逆与电池库存均偏高；欧洲电池降价约 10%、美国电池降价约 12%-14%；取消率未披露 |
+| 2026Q2 | $84.3M；**$207.6M** | Q3 约 **70%** | 年内协议总额约 **$1.081B**：5% safe harbor $202.4M；PWT $878.6M。Q3 safe-harbor 约 $75M、Q4 约 $61.2M | 电池正常、微逆略高；全球 sell-through 持平，lead time/取消率未披露 |
+
+核心收入为“总收入减 safe-harbor”分析值。五季核心收入依次约 **$322.8M、$339.5M、$323.0M、$248.4M、$207.6M**；2026Q2 虽然报表收入环比 +3.2%，核心收入却环比 **-16.4%**。订单与渠道原话可交叉查看 [2025Q2](https://stockanalysis.com/stocks/enph/transcripts/338007-q2-2025/)、[2025Q3](https://stockanalysis.com/stocks/enph/transcripts/365537-q3-2025/)、[2025Q4](https://stockanalysis.com/stocks/enph/transcripts/401418-q4-2025/)、[2026Q1](https://stockanalysis.com/stocks/enph/transcripts/551243-q1-2026/) 和 [2026Q2 电话会](https://stockanalysis.com/stocks/enph/transcripts/656436-q2-2026/)。
+
+**PWT 的正确解释：**PWT 是 physical work test，TPO 通过满足项目“开工”测试锁定税收抵免资格。公司将其称为 order backlog，但管理层明确对应 2028-2030 的系统安装。2026-05-07 公告时 PWT backlog 约 $873.7M，Q2 更新至 $878.6M。[公司 PWT 公告](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-announces-new-safe-harbor-agreement-us-tpo) 这类订单期限长、受项目融资/安装节奏影响，不能用 100% 转化率或未来 12 个月收入倍数估值。
+
+### 2.3 各业务收入、增速和 AI 占比——分析拆分
+
+方法：微逆平台收入≈微逆台数×估计净 ASP（逐季约 $118 降至 $110）×约 1.08 的 gateway/combiner/线缆附着；电池收入≈MWh×估计净 ASP（约 $720/kWh 降至 $660/kWh）；余数归入 EV、软件、附件和其他。误差范围至少 ±10%-15%，公司并未验证。
+
+| 财报季度 | 住宅/商用微逆平台估算 | QoQ | 储能估算 | QoQ | EV/软件/附件/其他估算 | QoQ | AI 数据中心收入占比 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 2025Q2 | $194.8M；53.6% | — | $137.4M；37.8% | — | $30.9M；8.5% | — | **约 0.0%** |
+| 2025Q3 | $225.6M；55.0% | +15.8% | $140.4M；34.2% | +2.2% | $44.4M；10.8% | +43.7% | **约 0.0%** |
+| 2025Q4 | $194.3M；56.6% | -13.9% | $105.1M；30.6% | -25.1% | $43.9M；12.8% | -1.1% | **约 0.0%** |
+| 2026Q1 | $171.2M；60.5% | -11.9% | $70.1M；24.8% | -33.3% | $41.6M；14.7% | -5.2% | **约 0.0%** |
+| 2026Q2 | $189.1M；64.8% | +10.5% | $75.1M；25.7% | +7.1% | $27.7M；9.5% | -33.4% | **约 0.0%** |
+
+最新季度微逆台数同比 **+4.1%**，但微逆平台收入点估同比约 **-2.9%**，反映 ASP/地域 mix；电池 MWh 同比 **-40.4%**，估计电池收入同比约 **-45%**。AI SST 尚无商业交付，OCP 会员费、工程 RFI/RFP 或样机不能记成 AI 收入。
+
+公司没有按产品披露毛利。为满足五季度横向比较，以下以单位 ASP、45X、tariff、降价和合并毛利反推产品组合区间；这些不是会计分部利润，单季误差可能超过 ±5 个百分点。
+
+| 财报季度 | 微逆平台 GM 估算 | 储能 GM 估算 | EV/软件/附件/其他 GM 估算 | AI 数据中心 GM |
+|---|---:|---:|---:|---:|
+| 2025Q2 | 45%-55%（含 45X） | 30%-40% | 50%-70% | 不适用；收入 $0 |
+| 2025Q3 | 48%-58%（美国 mix/safe-harbor 较高） | 30%-40% | 50%-70% | 不适用；收入 $0 |
+| 2025Q4 | 43%-53% | 25%-35% | 50%-70% | 不适用；收入 $0 |
+| 2026Q1 | 35%-45%（AMPTC 出售折价、tariff 压力） | 20%-30% | 45%-65% | 不适用；收入 $0 |
+| 2026Q2 | 正常化 45%-55%；GAAP 另受退款抬升 | 25%-35% | 50%-70% | 不适用；收入 $0 |
+
+## 三、2026 最新财报指引、收入占比与产品调查
+
+### 3.1 2026Q3 指引
+
+| 指标 | 2026Q3 指引 | 中点相对 Q2 | 关键解释 |
+|---|---:|---:|---|
+| 收入 | **$290M-$320M**；中点 $305M | +4.5% | 约 70% booked |
+| 电池出货 | **130-150MWh**；中点 140MWh | +23.0% | 欧洲 retrofit、价格下降和渠道改善 |
+| GAAP 毛利率 | **42%-45%** | 中点 -16.5ppt | Q2 关税退款不再重复 |
+| non-GAAP 毛利率 | **44%-47%** | 中点 -1.3ppt | 产品/地域/降价 mix |
+| GAAP Opex | **$120M-$124M** | — | 含股权薪酬、重组/摊销 |
+| non-GAAP Opex | **$76M-$80M** | — | SST、G5、商用和双向 EV 同时研发 |
+| safe-harbor 收入 | 约 **$75M** | -11.0% | 约占中点 24.6% |
+| 核心收入估算 | 约 **$230M** | +10.8% | 才是下季真实需求修复幅度 |
+| 小型商用收入 | 约 **$10M** | 新基数增长 | IQ9N-3P/IQ9S-3P 开始贡献 |
+
+管理层预计 Q3 sell-through 环比约 +10%，但全球短周期可见性只有 70% booked，低于此前五季常见的 75%-90%。因此中点有合理支撑，但区间上沿需要欧洲与美国核心需求同步回升。[2026Q2 电话会](https://stockanalysis.com/stocks/enph/transcripts/656436-q2-2026/)
+
+### 3.2 最新季度真实收入占比
+
+2026Q2 官方地域结构为美国 **$226.9M、77.7%**，国际 **$65.0M、22.3%**；美国收入环比 -3%，欧洲收入约 +35%。产品结构没有官方分部披露，本文点估为：
+
+- 微逆、gateway、combiner、线缆及太阳能 BOS：**约 $189M、64.8%**；
+- IQ Battery：**约 $75M、25.7%**；
+- EV 充电、软件、服务、附件及估算误差余项：**约 $28M、9.5%**；
+- AI 数据中心 SST：**约 $0、0%**；
+- safe-harbor 是交付/税务渠道属性，嵌在上述产品中，不能再与产品收入相加；其金额 **$84.3M、占总收入 28.9%**。
+
+### 3.3 重点业务、产品型号、规模、增速与毛利率推测
+
+| 业务/产品 | 关键型号与事实 | 最新规模/销售斜率 | 产品毛利率分析估算 | 证据与判断 |
+|---|---|---:|---:|---|
+| 住宅微逆平台 | IQ8/IQ8P；新 IQ9N：427VA、16A、CEC 97.5%、25 年质保、GaN、向后兼容 IQ7/IQ8/现有电池 | Q2 1.592M 台、725.2MW；台数 +12.5% QoQ/+4.1% YoY；平台收入点估 $189M | **含 45X 45%-55%；剔除激励 32%-40%** | [IQ9N 官方发布](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-launches-iq9n-microinverters-gan-technology-us)；成熟核心业务，增长由周期修复而非供给决定 |
+| 住宅储能 | IQ Battery 5P/10C；G5 为 5kWh 模块、5-30kWh 堆叠、100Ah 方形 LFP，能量密度较 4G +50%，目标成本/kWh -40% | Q2 113.8MWh，+10.4% QoQ/-40.4% YoY；G5 目标 2026Q4 初始出货、欧洲 2027Q1 | 现款 **25%-35%**；G5 稳态 **30%-40%** | [Intersolar Europe 产品展示](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-showcase-product-innovations-intersolar-europe)；G5 是未来一年最重要的毛利与量价产品 |
+| 小型商业微逆 | IQ9N-3P：427VA/约 600W 组件；IQ9S-3P：548VA/约 770W 组件；480Y/277V，无外置降压变压器；UL 1741-SB、IEEE 1547-2018 | Q3 公司目标约 $10M；公司给出的美国商用太阳能 TAM 约 $400M/年 | **35%-50%**，取决于 45X、本土内容和渠道折扣 | [IQ9 商用出货](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-begins-shipments-iq9-commercial-microinverters)、[IQ9S 预订/规格](https://newsroom.enphase.com/news-releases/news-release-details/enphase-energy-opens-us-pre-orders-gan-based-548-va-iq9s)；潜力小业务，不能漏掉 |
+| IQ Vault 80 | 80kWh/40kVA（480V）或 33kVA（208V）；5×16kWh LFP 模块、314Ah；25 柜=2MWh；>90% AC round-trip；15 年/7,000 cycles | 2026Q2 仅内部 12 柜约 0.96MWh 系统；目标 2027Q1 初始商用 | **25%-40%** | [IQ Vault 80 preliminary data sheet](https://enphase.com/download/iq-vault-80-data-sheet)；UL 9540A 大规模火烧测试不等于完整 UL 9540 系统 listing |
+| 双向 EV 充电 | IQ Bidirectional EV Charger：11.5kW、支持 400V/800V 车辆；三个美国和一个欧洲 OEM 接洽/试点 | 目标 2026Q4 pilot，商业收入当前约零 | 早期 **20%-35%**，软件/聚合可提高全生命周期毛利 | [双向充电演示](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-demonstrates-global-iq-bidirectional-ev-charging/)；依赖 OEM 软件、ISO 15118-20 和并网认证 |
+| AI 数据中心 IQ SST | 初始 1.25MW；13.8/34.5kV→800V/±400V；342 个约 4kW GaN 模块；Kestrel 22nm ASIC；98.5% 效率、99.999% 可用性、<1ms | RFI/RFP 潜在 multi-GW，但 **无公开客户、订单、售价或收入**；2026 完整 demo、2027 pilot、2028 volume | 若量产 **35%-55%**，当前没有可验证毛利 | [SST 公告](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-announces-development-iq-solid-state-transformer)、[技术白皮书](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-publishes-technical-white-paper-iq-sst/)、[Kestrel ASIC](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-publishes-white-paper-kestrel-asic-its-fifth)；高期权、低确定性 |
+| Propel/TPO 融资渠道 | 不是独立硬件 SKU；通过融资、仓储和税收抵免买方拉动 Enphase 光储 | 约 290 个安装商，6→12 州；约 200 originations/周，目标年末 500/周；电池 attach 约 75% | 直接收入未披露；通过提高硬件附着与渠道周转贡献 | 约束在 warehouse capacity、tax-credit buyer 和安装商执行；未来一年美国修复的关键变量 |
+
+**不应漏掉的微型使能产品：IQ Meter Collar。**它本身收入未披露、不会成为独立分部，但已获约 **69 家美国/加拿大公用事业**资格，可让 G5 和独立 BiDi 系统减少主配电盘改造，是提高 attach、缩短安装时间和降低总安装价的重要“小产品”。其战略价值高于直接收入。
+
+### 3.4 过去半年会议、技术报告、渠道与论坛交叉验证
+
+| 时间/来源 | 观察 | 证据等级 | 对 ENPH 的含义 |
+|---|---|---|---|
+| 2026Q1-Q2 财报/电话会 | 美国 Q2 sell-through -7% QoQ、-34% YoY；若剔除一次性约持平；欧洲 Q2 sell-through +30% | A/B | 报表修复仍由 safe-harbor 主导，欧洲是真实改善 |
+| 2026 Intersolar Europe | G5、IQ9、商业储能和 EV 产品集中展示；G5 欧洲 2027Q1 | A | 产品管线完整，但认证与量产重叠使执行风险上升 |
+| 2026 OCP/公司白皮书 | Enphase 成为 OCP Platinum member，并发布 SST/Kestrel 架构 | A | 是参与标准的信号，不是客户 AVL、订单或认证 |
+| SEIA/Wood Mackenzie 2026Q1 | 美国新增太阳能 7.8GW；住宅电池 attach rate 创纪录约 45% | B | 电池长期渗透有支撑，但不等于 Enphase 份额 |
+| SolarPower Europe 2025 数据 | 欧洲全年储能 36GWh、+48%，但住宅储能约 9.8GWh、-6% | B | ENPH 欧洲增长更像国别/渠道/份额修复，不应直接套用全市场 +48% |
+| EnergySage 2026-07 | Enphase 家储平均安装价约 **$1,429/kWh**，高于 Tesla 约 $967/kWh、FranklinWH 约 $1,232/kWh | B | 品牌溢价真实，但 G5 降本可能被渠道留存，终端降价幅度不一定等于 40% |
+| Reddit 安装商/用户，2026-04/06 | 有用户认为 5P/10C 价格偏高、调试和 Meter Collar 审批复杂；也有人用第三方电池与 Enphase 微逆 AC 耦合 | C | 证明电池生态并非封闭垄断；仅为个案，不能量化故障率或份额 |
+
+行业与渠道来源：[SEIA 2026Q1](https://seia.org/news/solar-and-storage-provide-over-90-of-new-power-in-q1/)、[Wood Mackenzie 储能](https://www.woodmac.com/press-releases/u.s.-energy-storage-market-sets-q1-2026-records-across-sectors)、[SolarPower Europe](https://www.solarpowereurope.org/press-releases/new-report-european-battery-storage-surges-in-2025-as-utility-scale-drives-next-growth-phase)、[EnergySage 电池价格](https://www.energysage.com/energy-storage/how-much-do-batteries-cost/)、[G5 论坛](https://www.reddit.com/r/enphase/comments/1uge853/enphase_g5_battery/)、[5P 安装论坛](https://www.reddit.com/r/enphase/comments/1sv3t8m/5p_battery_install/)。
+
+### 3.5 明确跳过或降权的低增速产品
+
+以下产品不是“没有价值”，而是未来一年对增量收入或 AI 基建不重要，因此不逐项建立三情景：
+
+1. **旧 IQ7/IQ8 住宅 SKU 的单型号拆分**：仍贡献存量收入和保修生态，但会被 IQ9N 自然替代；公司不披露型号收入。
+2. **传统单向 IQ EV Charger**：市场竞争激烈、收入未披露、短期增长不及双向产品，归入“EV/软件/其他”。
+3. **旧代 IQ Battery 3/10/3T/10T**：主要是存量服务，增量由 5P/10C/G5 决定。
+4. **便携式 PowerPack、小型 accessories 单品**：可能提高用户触点，但当前规模不足以影响合并收入。
+5. **纯软件订阅、安装商工具和保修延伸**：潜在高毛利，但独立收入未披露；在“其他”中观察，不假设突然成为材料级 SaaS。
+6. **非 AI 的大规模 utility solar/string inverter**：Enphase 并非主要参与者，也不是本次重点。
+
+## 四、当前每个高增长或关键产品的收入贡献与战略评分
+
+评分均为 1-5：**AI 重要性、时间紧迫性、供需紧张度、垄断/替换壁垒、溢价能力越高越好**；供需紧张度 5 代表供不应求，1 代表明显过剩或尚无商业需求。收入为截至 2026Q2 的 TTM 分析估算。
+
+| 关键产品/业务 | 当前 TTM 收入贡献 | 最近增速/状态 | AI重要性 | 时间紧迫性 | 供需紧张度 | 垄断/壁垒 | 溢价能力 | 结论 |
+|---|---:|---|---:|---:|---:|---:|---:|---|
+| 住宅微逆、gateway、BOS | **$755M-$765M** | Q2 平台收入点估 +10.5% QoQ、-2.9% YoY | 1 | 3 | 1 | 4 | 3 | 公司现金牛；产能严重富余，壁垒来自存量、软件和安装商，不来自供给短缺 |
+| 住宅 IQ Battery 5P/10C；未来 G5 | **约 $391M** | Q2 收入点估 +7.1% QoQ、约 -45% YoY；MWh -40.4% YoY | 1 | 4 | 2 | 3 | 2 | G5 是一年期最重要增量；电芯不稀缺，关键是成本、认证、融资和 attach |
+| IQ9 小型商业微逆 | **$15M-$25M** | 新基数；Q3 公司目标约 $10M/季 | 1 | 4 | 2 | 3 | 3 | 美国本土内容、无外置变压器和 panel-level uptime 有差异化；string inverter 仍是强替代 |
+| IQ Vault 80 商业储能 | **$0** | 内部 12 柜 demo；目标 2027Q1 | 1 | 3 | 1 | 2 | 2 | 小 C&I 市场有空间，但 full-system listing、AHJ 与安装服务是门槛 |
+| IQ Bidirectional EV Charger | **约 $0** | 2026Q4 目标 pilot；4 家 OEM 接触/试点 | 1 | 3 | 1 | 2 | 3 | 车家互动有潜力；必须同时打通汽车软件、并网与充电标准 |
+| EV、软件、服务及其他现行业务 | **约 $150M-$165M** | Q2 余项约 $27.7M、-33.4% QoQ；拆分误差大 | 0 | 2 | 1 | 3 | 3 | 提高生态粘性，但没有证据成为独立高增长分部 |
+| Propel/TPO 渠道 | **直接收入未披露；间接拉动硬件** | 约 200 originations/周，目标 500；电池 attach 约 75% | 0 | 5 | 2 | 2 | 2 | 美国需求修复的关键执行层；融资仓储和抵免买方比硬件产能更稀缺 |
+| IQ SST + Kestrel | **$0；AI 占比约 0%** | 样机、RFI/RFP、无订单；2027 pilot、2028 volume | 5 | **5（design-in）** | 2 | 2 | 2 | 最有想象力、也最容易被误估；当前竞争者订单/认证证据更强 |
+
+### 4.1 为什么当前核心光储不“供不应求”
+
+- 最近一次明确披露的全球微逆产能约 **7M 台/季**、其中美国约 **5M 台/季**；2026Q2 仅出货 **1.592M 台**，对应利用率约 **22.7%**，美国出货约 1.58M 台时对应美国名义产能利用率约 **31.6%**。即使产能口径已被公司调整，方向仍清楚：微逆增长受需求和渠道约束，不受工厂 slot 约束。
+- 电池 2025Q3 曾出货 **195.0MWh**，而 2026Q2 只有 **113.8MWh**；电芯供给不是主要瓶颈。公司称非中国电芯来源已经进入生产，真正限制是价格、终端融资、安装能力和地区认证。
+- 2026Q2 channel inventory 为电池正常、微逆略高，没有“客户因缺货抢单”的证据；booked coverage 由 Q1 的 85% 降至 Q2 的 70%。
+
+### 4.2 为什么 SST 的时间紧迫性仍为 5
+
+时间紧迫性指 **2026-2027 必须完成 design-in、DVT、绝缘/保护和客户 AVL**，不是说 2026 已有收入。项目内行业研究显示，2026 量产主线仍是 50/54V power shelf、UPS、BBU 和 bridge 800V；原生 800VDC 在 2027H2 才有有限项目，规模更多在 2028-2029。[机柜级供电研究](../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md)｜[UPS 与储能研究](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-07-10.md)
+
+客户会在机房通电前 12-24 个月冻结 basis-of-design。若 Enphase 不能在 2026H2-2027H1 获得付费 pilot、完整安全路线和至少一家 hyperscaler/colo/EPC 的 named design-in，即使 800V 市场最终成功，首代规模项目也可能被 Delta、DG Matrix、Eaton、Heron、Vertiv 等锁定。
+
+## 五、未来一年产品级收入三情景
+
+### 5.1 情景定义
+
+预测窗口为 **2026-08-01 至 2027-07-31**，基准为截至 2026Q2 的 TTM 收入 **$1.3285B**。情景不是目标价模型：
+
+- **基准 B：**美国住宅缓慢修复；Propel 低于 500 originations/周目标；欧洲保持温和增长；G5 按期但爬坡正常；IQ9 商用达到数千万美元；SST 无收入。
+- **乐观 O：**美国 TPO 融资改善、Propel 接近目标；G5 的 40% 成本/kWh 降幅部分传导到销量；欧洲 retrofit 强劲；IQ9 商用进入多个连锁/校园项目；SST 获一个付费 pilot。
+- **极度乐观 X：**美国利率/融资、欧洲需求和新品量产同时顺利；G5 以低价扩大 attach 和份额；小型商用微逆/储能成为第二增长曲线；双向 EV 获多个 OEM；SST 获 2 个以上付费 pilot。即便如此，SST 仍不假设 2028 量产提前一个完整年度。
+
+### 5.2 一年后收入贡献、增速与公司总增长
+
+| 产品/业务 | 当前 TTM 点估 | 基准 B：一年收入；增速 | 乐观 O：一年收入；增速 | 极度乐观 X：一年收入；增速 | 主要驱动 |
+|---|---:|---:|---:|---:|---|
+| 住宅微逆、gateway、BOS | $760M | **$730M；-4%** | **$800M；+5%** | **$900M；+18%** | 美国 sell-through、欧洲 retrofit、ASP 下滑与 IQ9 mix |
+| 住宅储能，含 G5 | $391M | **$470M；+20%** | **$570M；+46%** | **$700M；+79%** | G5 降本、attach、TPO/Propel、欧洲国别拓展 |
+| IQ9 小型商业微逆 | $20M | **$55M；+175%** | **$85M；+325%** | **$130M；+550%** | Q3 $10M 起点、美国本土内容、commercial installer 扩张 |
+| IQ Vault 80 | $0 | **$15M；新业务** | **$40M；新业务** | **$80M；新业务** | 2027Q1 上市、UL/AHJ、首批小 C&I 项目 |
+| IQ Bidirectional EV Charger | $0 | **$15M；新业务** | **$35M；新业务** | **$70M；新业务** | OEM 数量、认证、V2H/V2G 软件与 Meter Collar |
+| 现有 EV/软件/服务/其他 | $158M | **$110M；-30%** | **$120M；-24%** | **$140M；-11%** | 将新商业/V2X 单列后余项缩小；口径误差最高 |
+| IQ SST | $0 | **$0** | **$5M；pilot** | **$15M；多个 pilot** | 客户付费工程、样机和验证，不是规模量产 |
+| Propel/TPO 渠道直接收入 | $0/未披露 | **$0；硬件拉动已嵌入** | **$0；硬件拉动已嵌入** | **$0；硬件拉动已嵌入** | 避免将融资渠道与硬件收入重复相加 |
+| **公司合计** | **$1.3285B** | **$1.395B；+5.0%** | **$1.655B；+24.6%** | **$2.035B；+53.2%** | 核心恢复、新品、价格/量和渠道共同作用 |
+
+外部一致预期为 2027 全年收入约 **$1.26B、+6.9%**，与本文窗口和年度口径不同，但方向上说明本文“基准”已经包含修复，不是悲观清算情景。[S&P Global 预测汇总](https://stockanalysis.com/stocks/enph/forecast/)
+
+### 5.3 一年后战略属性三情景
+
+下表每格为 **B/O/X** 三情景评分，1-5 分；供需紧张度越高代表越供不应求。AI 重要性评估的是产品在 AI 基建技术栈中的直接重要程度，而非公司叙事热度。
+
+| 产品/业务 | AI重要性 B/O/X | 时间紧迫性 B/O/X | 供需紧张度 B/O/X | 垄断/替换壁垒 B/O/X | 溢价能力 B/O/X | 一年后关键判定 |
+|---|---:|---:|---:|---:|---:|---|
+| 住宅微逆平台 | 1/1/1 | 2/3/4 | 1/2/3 | 4/4/4 | 3/3/4 | 即使极乐观，28M 台以上名义产能仍高于需求，紧张来自美国合规 SKU 而非总量 |
+| 住宅储能/G5 | 1/1/1 | 3/4/5 | 2/3/4 | 3/3/4 | 2/3/4 | G5 若既降本又维持软件/保修溢价，竞争力改善；普通 LFP 电芯无垄断 |
+| IQ9 商用微逆 | 1/1/1 | 3/4/5 | 2/3/4 | 3/3/4 | 3/3/4 | 国内内容和无变压器架构可提高中标率，但 string inverter 价格替代仍强 |
+| IQ Vault 80 | 1/1/2 | 2/3/4 | 1/2/3 | 2/3/3 | 2/3/3 | 若进入小型 edge/商业韧性项目，AI 邻接度略升；不是 hyperscale BESS |
+| 双向 EV 充电 | 0/1/1 | 2/3/4 | 1/2/3 | 2/3/3 | 3/3/4 | OEM、车辆协议和并网软件认证形成壁垒，硬件本身可替代 |
+| 现有 EV/软件/其他 | 0/0/0 | 2/2/3 | 1/1/2 | 3/3/3 | 3/3/3 | 生态粘性高于独立收入成长性 |
+| IQ SST | **5/5/5** | **5/5/5** | **2/3/4** | **2/3/4** | **2/3/4** | 只有 named customer、付费 pilot、UL/AVL 里程碑出现后，壁垒和溢价才真正上升 |
+| Propel/TPO 渠道 | 0/0/0 | **5/5/5** | 2/3/4 | 2/3/3 | 2/2/3 | 紧张度指融资仓储、tax-credit buyer 和安装执行，不是微逆工厂产能 |
+
+## 六、BOM、单位内容量、价格传导链与当前产能
+
+### 6.1 物理内容量与 BOM
+
+“真实内容量”分为两层：公司披露或可从规格直接计算的物理量为硬锚；价格和 COGS 为分析估算区间。没有物理关系的维度明确写为 0 或不适用，避免强行把住宅产品分摊到 GPU/optical port。
+
+| 产品 | BOM 拆分 | 可验证的每 MW / MWh 内容量 | 每 rack / GPU / optical port | 价格传导链分析估算 |
+|---|---|---|---|---|
+| 住宅微逆平台 | GaN/Si 开关与驱动、Kestrel/控制 ASIC、磁性件、电容、PCB、继电/保护/PLC、连接器线缆、灌封与外壳、测试；另有 Gateway/Combiner | Q2 实绩 **1.592M 台/725.2MW=2,195 台/MW DC**，对应平均组件约 456W；Enphase 净硬件内容约 **$0.25M-$0.32M/MW**（含 BOS） | AI rack/GPU/optical port：**0** | 工厂 COGS 约 $45-$65/台（45X 前）→ ENPH 净 ASP $105-$120 → 分销/零售约 $150-$270 → 安装后的 inverter/BOS 约 $200-$300/台 |
+| IQ9 商用微逆 | 与住宅相似，但三相拓扑、480Y/277V 接口、商业级保护/通信和更高功率 GaN | IQ9N-3P 配约 600W 组件：**1,667 台/MW DC**；IQ9S-3P 配约 770W：**1,299 台/MW DC**；ENPH 内容估 **$0.17M-$0.32M/MW** | AI rack/GPU/port：0；只适合小型商业屋顶，不是数据中心机柜 PSU | 制造约 $65-$100/台 → ENPH $130-$190 → 商业 EPC/BOS 与安装后总成本显著更高 |
+| G5 住宅电池 | 100Ah 方形 LFP 电芯、母排/熔断、grid-forming 微逆、BMS、热管理/消防、结构件、通信、连接器、固件 | 每模块 **5kWh**；每 MWh **200 个模块**；每 stack 1-6 模块、5-30kWh；ENPH 内容约 **$0.45M-$0.65M/MWh** | rack/GPU/port：0；住宅光伏每 MW 的电池 attach 没有固定物理比率 | 电芯/pack/电力电子 COGS约 $250-$380/kWh → ENPH ASP $450-$650/kWh → 渠道 $550-$800/kWh → 安装约 $900-$1,400/kWh；当前 Enphase 市场平均约 $1,429/kWh |
+| IQ Vault 80 | 5×16kWh、314Ah LFP 模组，双向 PCS/微逆，BMS/EMS，AC 断路、热管理、主动冷却、消防、机柜与服务接口 | **80kWh、40kW/柜**；每 MWh **12.5 柜**；每 1MW 功率需 **25 柜=2MWh**；ENPH 内容约 **$0.875M-$1.25M/每 1MW/2MWh** | AI rack/GPU/port：无固定关系；直接分摊为 0 | COGS约 $280-$400/kWh → ENPH $438-$625/kWh（约 $35k-$50k/柜）→ integrator $45k-$65k/柜 → 安装 $60k-$90k/柜 |
+| 双向 EV 充电 | 约三组 GaN 双向功率模块、接触器/熔断、隔离与计量、ISO 15118 控制器、400/800V 车辆接口、线缆/枪头、外壳与热管理 | 11.5kW/台；聚合 **1MW≈87 台**；ENPH 内容约 **$0.304M-$0.478M/MW** | AI rack/GPU/port：0 | COGS约 $2.0k-$3.5k → ENPH ASP $3.5k-$5.5k → 零售 $5k-$8k → 安装 $7k-$12k |
+| IQ SST | 342 个约 4kW GaN 模块；高频隔离磁性件；每模块 2 个 Kestrel；fiber 控制；MV 绝缘、母排、保护、热管理、机柜/背板、冗余与测试 | 初始 1.25MW 配 **342 模块**；等于 **273.6 模块/MW**、约 **547.2 Kestrel/MW**；342×4kW=1.368MW，对 1.25MW 输出约 **9.4% 冗余** | 以 GB300 142kW/72GPU：**38.9 模块/rack、77.7 Kestrel/rack；0.54 模块/GPU、1.08 Kestrel/GPU**。SST 对光口直接内容量 **0/optical port** | 制造/组件约 $0.14M-$0.24M/MW → ENPH ASP约 $0.25M-$0.45M/MW → skid/integrator $0.4M-$0.8M/MW → 安装后的 MV-to-800V 系统约 $0.7M-$1.4M/MW |
+
+美国合格生产的微逆可按 AC 容量获得约 **$0.11/W** 的 45X 制造抵免；以 427VA IQ9N 为例，理论抵免约 **$46.97/台**。这笔价值先降低 Enphase 的会计成本，再由公司、渠道和终端价格竞争分配，不应机械地全部加到利润；它也解释了美国制造 mix 对微逆毛利率的重要性。[2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1463101/000146310126000013/enph-20251231.htm)
+
+SST 的 GB300 内容量使用项目内行业研究的 **142kW、72 GPU/柜、约 507 GPU/MW** 物理锚。[AI 数据中心规模与订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md) 按 ENPH SST 净 ASP $0.25M-$0.45M/MW 估算，直接内容量为：
+
+- 每个 GB300 rack：**$35.5k-$63.9k**；
+- 每颗 GPU：**$493-$887**；
+- 每个 optical port：**$0**。SST 内部 fiber 是控制链路，不是按 AI 网络光口销售的光学 BOM，把 SST 金额分摊到 optical port 会制造虚假内容量；
+- 每 1MW、800VDC 母线电流约 **1,250A**；1.25MW 约 **1,563A**，说明 DC 保护、母排、连接与热管理不是可忽略的外围件；
+- 若数据中心另配置管理层设想的第二套 BESS SST，内容量理论上可接近 2 倍，但公司没有承诺它会成为每个项目的标准 BOM，基准模型不计入。
+
+公司后来称架构可扩到 1.25-2.5MW，但没有公开解释同一 342×4kW 模块拓扑如何输出 2.5MW；因此本文只对初始 1.25MW 白皮书配置做硬计算，不把 2.5MW 标称直接套用。[IQ SST 技术演示材料](https://investor.enphase.com/static-files/dde327a8-77e0-43f6-8ca6-b6ae71a72fb8)
+
+### 6.2 SST BOM 价值池
+
+| SST BOM 层 | 估计占制造成本 | 价值/瓶颈 |
+|---|---:|---|
+| GaN 功率器件与 gate driver | 18%-25% | 高 dv/dt、可靠性筛选和封装；GaN 本身不是 ENPH 垄断 |
+| 高频变压器/磁性与 MV 绝缘 | 20%-30% | 局部放电、绝缘寿命、热循环；最难规模制造的环节之一 |
+| Kestrel ASIC、控制、fiber、安全 | 8%-12% | 100kHz 级控制、同步、故障隔离与网络安全；ENPH 最可差异化的 IP |
+| PCB、母排、电容和其他被动件 | 12%-18% | 电流密度、寄生参数和寿命 |
+| 热管理、外壳、背板与连接 | 10%-15% | 可维护性、hot swap、数据中心机械适配 |
+| MV/DC 保护、监测与接地 | 5%-10% | 800VDC 标准仍在形成，保护认证是关键 gate |
+| 组装、burn-in、测试、质保准备金 | 8%-12% | 五个九可用性必须靠系统验证而非器件宣传 |
+
+项目内功率半导体研究判断：2026 的确定性收入仍在成熟 48/54V 链，2.3/3.3kV SiC/SST 更偏 2027 pilot、2028-2029 ramp；普通 SiC 产能并不稀缺，真正稀缺的是通过系统认证的平台、保护和磁性集成。[功率半导体与高压保护研究](../../行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-07-10.md)
+
+### 6.3 当前产能能力、供应链采纳与认证
+
+| 产品/业务 | 当前物理产能/能力 | 当前美元产能能力估算 | 采用程度 | 认证/阶段 |
+|---|---|---:|---|---|
+| 住宅微逆 | 最近明确名义产能约 **7M 台/季、28M/年**；美国约 5M/季 | 按 $105-$120 净 ASP，约 **$2.94B-$3.36B/年**，未含 BOS | 86.4M 累计微逆、约 5.1M 系统；成熟大规模 | IQ9N 已商业出货；美国本土、FEOC/domestic-content/BAA 定位；具体项目仍需 utility/AHJ |
+| 住宅电池 | 公司未披露名义线；以 195MWh 历史季度出货为可验证下限，至少 **780MWh/年**；当前 annualized 455MWh | 按 $450-$650/kWh，至少 **$0.35B-$0.51B/年** | 约 25,000 安装商网络；美国住宅 attach 市场提高，但 ENPH 份额未披露 | 现款产品已上市；G5 区域认证尚未完整公开，非中国电芯进入生产 |
+| IQ9 商用 | 与微逆线共享制造；没有单列产能 | 名义可支持 **数亿美元/年**，当前需求远低于产能 | 已有 IQ8P 商用存量；IQ9 起步，Q3 目标 $10M | IQ9N/S-3P：UL 1741-SB、IEEE 1547-2018、rapid shutdown；生产/预订单阶段 |
+| IQ Vault 80 | 仅见内部 12 柜 demo；量产线未披露 | **当前可确认商业产能 $0** | 尚无 named external customer | 已披露 UL 9540A large-scale fire test；完整 UL 9540 system listing 未公开，状态视为 pending/未披露 |
+| 双向 EV | pilot 工程能力；量产线未披露 | **当前商业产能 $0** | 3 家美国、1 家欧洲 OEM 互动；没有 named production award | 目标 UL 1741/IEEE 1547、EN 50549、VDE 4105、G99、ISO 15118-20；尚处 pilot/certification |
+| IQ SST | 342 模块级 prototype/完整 demo 开发；量产线未披露 | **当前商业产能 $0** | 少数 multi-GW RFI/RFP；无 named customer/AVL | OCP Platinum member；无公开 UL listing、NVIDIA MGX 资格或 hyperscaler AVL；2027 pilot |
+| Propel/TPO 渠道 | 约 200 originations/周，年化约 10.4k 系统 | 按每单 $6k-$9k ENPH 光储内容，间接 throughput 约 **$62M-$94M/年**；不是 Propel 独立收入 | 290 安装商、6 州，目标 12 州；battery attach 约 75% | 融资、仓储和税收抵免买方资格；不适用硬件 UL |
+
+**容量结论：**未来一年住宅微逆和电池不需要大规模扩产才能满足本文任何收入情景；真正可能卡住的是新品认证、G5 良率、安装商/融资通道，以及 Vault/BiDi/SST 从工程样机转向可保修量产的 NPI 能力。
+
+## 七、一年后产能、供应链采纳与认证三情景
+
+以下为“年化可生产/可交付能力”，不是收入预测。产能金额按 ENPH 净 ASP 估算，不能与第五节收入相加。
+
+| 产品 | 基准 B：一年后产能能力 | 乐观 O：一年后产能能力 | 极度乐观 X：一年后产能能力 | 供应链采纳与认证里程碑 |
+|---|---|---|---|---|
+| 住宅微逆/IQ9N | **28M 台/年；$2.94B-$3.36B** | **32M；$3.36B-$3.84B** | **36M；$3.78B-$4.32B** | B：现有认证/本土产能稳定；O：更多国家/utility SKU；X：美国合规 SKU 局部紧张但总产能仍宽松 |
+| 住宅电池/G5 | **1.0GWh/年；$0.45B-$0.65B** | **1.5GWh；$0.68B-$0.98B** | **2.0GWh；$0.90B-$1.30B** | B：美国及欧洲首批区域认证；O：多个欧洲国家和 TPO 标准 BOM；X：utility/VPP 与 retrofit 广泛采用 |
+| IQ9 商用微逆 | **$0.25B-$0.40B/年能力** | **$0.45B-$0.65B** | **$0.80B-$1.00B** | B：UL 产品在数个商业渠道；O：全国连锁/校园 repeat order；X：进入大型 national installer 标准清单 |
+| IQ Vault 80 | **20-40MWh/季；年化 $35M-$100M** | **60-100MWh/季；$105M-$250M** | **150-250MWh/季；$263M-$625M** | B：完整 UL 9540/AHJ 路线、少数 pilot；O：多州/多客户 repeat；X：全国 C&I 渠道并进入小型 edge/韧性项目 |
+| 双向 EV | **10k 台/年；$35M-$55M** | **25k；$88M-$138M** | **50k；$175M-$275M** | B：至少 1 家 OEM 和美国核心并网认证；O：3+1 OEM 中多个量产；X：多 OEM/VPP、车辆软件和 utility 批量互操作 |
+| IQ SST | **2-5MW pilot 能力；$0.5M-$2.3M** | **10-25MW；$2.5M-$11.3M** | **50-100MW；$12.5M-$45M** | B：完整 demo、实验室认证路线；O：至少 1 个付费客户 pilot/部分 safety listing；X：至少 2 个 hyperscaler/colo facility BOM、明确 UL/AVL 计划 |
+| Propel/TPO 渠道 | **300 单/周；间接 $94M-$140M/年** | **500 单/周；$156M-$234M** | **800 单/周；$250M-$374M** | 假设每单 ENPH 光储内容 $6k-$9k；均嵌入硬件收入，不能再与第五节相加 |
+
+### 7.1 认证阶段判定原则
+
+1. **OCP 会员不等于产品认证。**它说明公司可以参与规范制定和生态交流，但不能替代 DVT、UL、NRTL、NEC/NFPA、客户 AVL 或现场验收。
+2. **UL 9540A 火灾传播测试不等于 UL 9540 完整系统 listing。**Vault 只有在完整系统、当地 AHJ、消防间距和安装手册均通过后，才具备可复制交付能力。
+3. **EV 充电需要三套认证同时成立：**充电硬件、车辆协议/软件、并网/公用事业规则；任一延误都会把 pilot 推迟。
+4. **SST 的认证不仅是效率。**关键包含 15/35kV 绝缘与局部放电、MV 开关和短路保护、800VDC 接地/电弧、EMI、网络安全、hot-swap、安全停机、热循环和现场五个九。项目内行业研究指出 hyperscaler AVL 和 UL/IEEE/NFPA 联合验证常需 **12-24 个月**。[自备发电与微电网研究](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-07-10.md)
+
+## 八、用真实订单积压与供给预测未来一年增速
+
+### 8.1 订单证据分层
+
+| 证据 | 金额/数量 | 交付窗口 | 取消/转化风险 | 能否进入未来一年收入模型 |
+|---|---:|---|---|---|
+| 2026Q3 指引 booked coverage | 指引中点 $305M 的 **>70%**，即至少约 $213.5M | 2026Q3 | 公司未披露取消率；其中包含约 $75M safe-harbor | **可以**，但只能覆盖单季，且核心订单 booked 比例未知 |
+| 2026Q3 core shipment/sell-through | 核心收入约 $230M；sell-through 约 $245M；主动 under-ship 约 $15M | 2026Q3 | 需求改善若未兑现，under-ship 可变成库存修正 | **可以**，是短期最重要硬锚 |
+| 5% safe-harbor agreements | 2026 年新签约累计约 **$202M** | 多批交付；公司给出的 2026Q1-Q4 step-up revenue 节奏约 $34.5M/$84.3M/$75M/$61.2M | 新签 agreement 与当季收入包含以前合同，不能一一勾稽；安装在一年以后，后续 battery attach 仍不确定 | **只计已给出的 2026 收入节奏** |
+| PWT TPO backlog | **$878.6M**（另有以前年度一笔） | 管理层称 **2028 起、可能线性**；安装 2028-2030 | 项目融资、税务、客户、安装与长周期取消/变更；公司未披露取消率 | **未来一年取 $0** |
+| SST RFI/RFP | “few”、潜在 multi-GW | 2027 pilot、2028 volume | RFI/RFP 不是订单；没有价格、客户、定金、交付排期 | B/O/X 只取 $0M/$5M/$15M 工程收入 |
+| 2025 年末采购义务 | 约 **$252.3M** | 多期供应合同 | 是供应承诺，不是客户需求 backlog | **不作为收入** |
+| Propel | 约 200 originations/周、75% 电池 attach，目标 500/周 | 2026H2 ramp | warehousing、tax-credit buyer、州覆盖、安装商转化 | 作为终端需求因子，不单独加收入 |
+
+公司在 Q2 电话会上明确：尚未确认 2026 年新签 PWT 的任何收入，预计 2028 才开始确认。[2026Q2 电话会](https://stockanalysis.com/stocks/enph/transcripts/656436-q2-2026/) 因此，把 $878.6M 除以两年或三年并加入 2027，是最危险的估值错误之一。
+
+### 8.2 真实供给与订单“挤压”在哪里
+
+Enphase 当前不存在微逆或住宅电池的工厂产能挤压。相反：
+
+- 微逆名义产能约 28M 台/年，而 TTM 实际出货约 **6.33M 台**，粗略利用率约 **22.6%**；
+- 电池最近四季实际出货约 **562MWh**，低于最近单季峰值 195MWh 对应的 780MWh 年化能力；
+- Q2 微逆 channel inventory 略高，Q3 仍计划 under-ship $15M；
+- 所以“越乐观越供不应求”的表现首先会出现在 **合规美国 SKU、G5 新品良率、安装工时、TPO 融资和税收抵免买方**，而不是现有总装线。
+
+真正有行业供给挤压的是 AI 数据中心的完整电力平台。项目内研究显示 Eaton 数据中心订单约 +240%、Vertiv 2025Q4 book-to-bill 2.9x/backlog $15B，PMIC 交期一度由 21-26 周延至 35-40 周；但这些是成熟 UPS、配电、BBU、power shelf 和已验证器件的紧张，不能传导成 Enphase SST 的订单。[机柜级供电研究](../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md)
+
+### 8.3 未来一年物理出货与收入增速三情景
+
+| 情景 | 微逆台数 | 电池 MWh | 商用/Vault/BiDi | safe-harbor/PWT 假设 | 订单取消/滑期假设（分析值） | 公司收入与增速 |
+|---|---:|---:|---|---|---|---:|
+| 基准 B | **6.2M-6.8M** | **750-850MWh** | 商用 $55M；Vault $15M；BiDi $15M | 5% 按已给节奏，2027 无额外异常拉动；PWT $0 | 短周期订单/项目滑期 10%-20%；PWT 长期 attrition 20%-30%；SST RFI→付费 pilot <10% | **$1.395B；+5.0%** |
+| 乐观 O | **7.2M-8.0M** | **1.0-1.2GWh** | 商用 $85M；Vault $40M；BiDi $35M | TPO 融资改善、Propel 接近 500/周；PWT 仍 $0 | 短周期滑期 5%-10%；PWT attrition 10%-20%；SST RFI→pilot 10%-20% | **$1.655B；+24.6%** |
+| 极度乐观 X | **8.5M-9.5M** | **1.35-1.55GWh** | 商用 $130M；Vault $80M；BiDi $70M | 新 TPO/欧洲需求强，G5 高 attach；PWT 仍不提前量产 | 短周期滑期 <5%；PWT attrition <10%；SST RFI→pilot >20% | **$2.035B；+53.2%** |
+
+取消/滑期是模型假设，不是公司披露。即使极度乐观，微逆出货 9.5M 台也只占 28M 名义产能约 **34%**；增长所需的物理产能已经存在。电池极度乐观情景则要求 G5 把可交付能力扩大到约 2GWh/年并显著提高安装/融资转化，是更难的执行任务。
+
+### 8.4 情景交叉验证
+
+**基准情景可成立的最小条件：**
+
+1. Q3 实现 $290M-$320M，并且核心收入约 $230M、sell-through 约 $245M；
+2. 2026Q4 G5 初始出货，2027Q1 欧洲按计划上市；
+3. Q3 商用收入接近 $10M，之后没有回落；
+4. non-GAAP 毛利率在 Q3 的 44%-47% 之内，说明降价和 tariff 可控；
+5. Propel 到年底至少 300-400 originations/周，而非停在约 200。
+
+**乐观情景的额外条件：**
+
+- G5 以 30%-40% 产品毛利率提供明显低于当前安装价的系统经济性；
+- 荷兰、法国约 900k 存量客户 retrofit 转化延续，德国激活量不回落；
+- IQ9 商用取得 repeat order，Q3 的 $10M 不是一次性 launch fill；
+- Vault 取得完整 system listing 和外部 named pilot；BiDi 至少一家 OEM 具名；
+- SST 至少一份付费 pilot，而不是继续只披露 multi-GW RFI/RFP。
+
+**极度乐观情景的必要条件：**
+
+- Propel 达到或超过 500 originations/周并保持约 75% battery attach；
+- G5 能量密度/成本目标按时兑现且渠道把部分降本传给终端，电池年出货超过 1.35GWh；
+- 商用 solar+storage 合计超过 $200M，建立独立渠道和服务能力；
+- SST 出现 2 个以上具名客户、明确 MW 与交付窗口；即便如此，一年期 SST 收入仍只取 $15M。
+
+## 九、竞争格局、技术主流性、替代方案与客户切换成本
+
+### 9.1 产品级竞争矩阵
+
+| 产品/业务 | 主要竞争者 | 主流技术判断 | Enphase 优势 | 风险/替代方案 | 客户切换成本 |
+|---|---|---|---|---|---|
+| 住宅微逆 | SolarEdge optimizer+string、Tesla、SMA、APsystems、Hoymiles；美国外还有 Huawei/Sungrow | 组件级电力电子已成熟，但微逆不是唯一主流；string+optimizer/rapid-shutdown 长期共存 | 组件级 MPPT、无集中单点、监控、全 AC、25 年质保、安装商/存量系统 | 更高初始价、屋顶电子数量多；竞争者用更便宜 string/optimizer、混合 inverter | **存量高、绿地中等。**已有 IQ Gateway/Battery/监控和保修的户主更难换；新安装可重新比价 |
+| 住宅储能/G5 | Tesla Powerwall 3、FranklinWH aPower 2、SolarEdge、Generac、SMA/BYD、Sungrow/Huawei/Sigenergy | LFP、模块化、AC/DC coupling 都是主流；G5 的 stackable AC coupling 是优秀实现，不是独占标准 | 与 86.4M 微逆和 App 兼容、grid-forming、69 个 utility Meter Collar 资格、25k 安装商 | Enphase 安装价约 $1,429/kWh，较 Tesla/Franklin 高；普通 LFP、电池柜和第三方 AC coupling 可替代 | **存量中高、绿地中低。**已装 Enphase 用户重视单一 App/保修，但论坛显示第三方电池可 AC 耦合 |
+| IQ9 小型商业 | SolarEdge、SMA、CPS、Yaskawa Solectria、Delta、Huawei、Sungrow | 商用屋顶目前仍以集中/string inverter 为主；微逆适合遮挡、分散屋面、维护敏感和快速关断场景，未必成为全市场主流 | 480Y/277V、无外置变压器、panel-level uptime、美国本土/FEOC、25 年质保 | 单位数量和安装工时更多；string inverter $/W 更低、现场维修集中 | **设计前中等，竣工后高。**电气设计、监控、备件和屋面布线锁定后更换昂贵 |
+| IQ Vault 80 | Tesla、Fluence、Sungrow、Wärtsilä、Generac、Eaton，以及大量小 C&I integrator | 80kWh 模块化 LFP 是主流形态；分布式微逆和现场可维护是差异，不是技术垄断 | 可与 Enphase 商用微逆/App 统一，2h、25 柜扩展、模块级消防/维护 | 大厂有更大项目经验、EMS/服务和融资；标准 LFP 柜价格竞争激烈 | **投标前低、投运后高。**消防批准、EMS、保修和现场服务使运行中替换困难 |
+| 双向 EV | Tesla Powershare、Ford/Sunrun、GM Energy、Wallbox Quasar 2、dcbel、Sigenergy | V2H/V2G 会增长，但 OEM 协议、区域并网和用户经济性决定节奏；不会由单一供应商垄断 | 11.5kW、400/800V、Meter Collar、现有家庭能源 App 与安装商 | OEM 可能采用自有/其他 charger；ISO 15118 实现差异、utility 限制、车辆质保和循环损耗 | **认证后中高。**硬件可替代，车辆软件、utility 许可、家庭电气设计和 VPP 合约形成锁定 |
+| IQ SST | Delta、Eaton、Heron、DG Matrix、Amperesand；Vertiv、Schneider、ABB、Hitachi、Siemens 等设施巨头 | **800VDC 很可能成为 600kW-1MW 级新建 AI 机柜主流；但 MV SST 只是实现路径之一。**2027 首批更可能用 sidecar/central rectifier+BBU，SST 规模化偏 2028+ | 模块化冗余、sub-ms 控制、Kestrel ASIC、GaN 高频、潜在美国制造/45X、住宅电力电子经验 | 传统 MV transformer+UPS+PDU+PSU；800V sidecar；竞争 SST；可靠性、MV 绝缘、保护、效率和服务网络风险 | **design-in 前低、AVL 后极高。**一旦通过 12-24 月验证并投运，5%-10% 价格差通常不足以承担停机和重认证风险 |
+
+### 9.2 IQ SST 与最强对手的证据对比
+
+| 厂商/方案 | 已披露规格 | 商业/客户证据 | 相对 ENPH 的判断 |
+|---|---|---|---|
+| **Enphase IQ SST** | 1.25MW 初始、342×约4kW、98.5%、99.999%、<1ms、13.8/34.5kV→800V | few RFI/RFP、潜在 multi-GW；无具名客户/订单；2027 pilot、2028 volume | 控制与模块化有创意；商业证据最弱的一组 |
+| **Delta** | 98.5% SST；660kW power rack；480kW BBU | 2026-07 与 X Labs MOU 规划 **100MW** Delta SST、可向 GW 扩展 | 至少有具名 100MW 规划型客户证据；仍需看 MOU 转订单 |
+| **DG Matrix** | 模块化 SST/Power Router | 2026-06 宣布成为 NVIDIA MGX SST supplier；pre-cert units shipping、UL 目标由公司披露；Exowatt 等合作 | 生态/资格证据领先 ENPH，但量产与认证仍应独立验证 |
+| **Eaton** | **2MW、12.47kV→800V、>97%、12 isolated ports、15kV class** | 数据中心电力渠道和服务成熟；产品合规路线公开 | 效率目标低于 ENPH，但传统设施客户、开关保护和服务优势大 |
+| **Heron Power Link** | **4.2MW、34.5kV→800V、98.5%、40 outputs、集成 SuperBBU** | 公司称 24 周 lead time、40GW 年产能；未审计 | 规格/产能声明激进，必须用订单和工厂验证；架构集成度高 |
+| **Amperesand** | 中压 SST 平台 | 公司称 2026 有 Fortune 100 deployments | 客户层级声明领先，但缺项目名/金额/验收细节 |
+
+来源：[Delta AI 电力平台](https://www.delta-americas.com/en-US/news/40116)、[Delta/X Labs 100MW MOU](https://www.delta-americas.com/en-us/news/delta-electronics-americas-and-x-labs-sign-technology-partnership-mou-to-power-next-gen-ai-data-centers)、[DG Matrix 新闻](https://www.dgmatrix.com/news-and-media)、[Eaton 2MW SST brochure](https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/medium-voltage-solid-state-transformer/eaton-medium-voltage-solid-state-transformer-brochure-br153252en.pdf)、[Heron Data Center Link](https://heronpower.com/product/data-centers)、[Amperesand](https://www.amperesand.io/)。
+
+### 9.3 NVIDIA/OCP 技术栈中的位置
+
+NVIDIA 公开路线显示 800VDC 面向 2027 以后高功率机柜，并列出 ABB、Delta、Eaton、GE Vernova、Hitachi、Infineon、Heron 等合作伙伴；截至 2026-07-31 页面没有列 Enphase。[NVIDIA 800VDC architecture](https://www.nvidia.com/en-au/data-center/technologies/800-vdc-architecture/) 这不能证明 ENPH 永远不会入选，但证明其尚未得到与已列伙伴同等级的公开背书。
+
+OCP Diablo 400 的方向是约 0.8-1.1MW、±400V sidecar，允许 45-90 秒 BBU/CBU，并以 800V→50V 作为现实桥梁。[OCP Power](https://www.opencompute.org/wiki/Data_Center_Facility/Power) 这意味着：
+
+1. **800V 母线大方向是主流；**
+2. **SST 直接 MV→800V 不是唯一入口；**
+3. 2027 项目可以用传统 MV transformer + 800V rectifier/sidecar + BBU，绕开 SST 的 MV 高频绝缘风险；
+4. ENPH 必须证明总拥有成本、故障域和现场服务优于成熟设施方案，而不只是峰值效率相同。
+
+项目内研究的 1GW 效率锚是：每提高 1 个百分点效率约减少 **10MW** 损耗，按 $50-$100/MWh 电价约节省 **$4.4M-$8.8M/年**。[功率半导体研究](../../行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-07-10.md) 因此 ENPH 的 98.5% 若能在真实负载曲线、冗余和热环境下兑现，有经济价值；但 Delta/Heron 同样宣传 98.5%，效率不是独占护城河。
+
+### 9.4 主要风险与可证伪指标
+
+| 风险 | 当前证据 | 影响 | 未来 2-4 季度可证伪指标 |
+|---|---|---|---|
+| 美国住宅需求/融资 | sell-through -34% YoY；25D 到期后现金/贷款需求受压 | 高 | permits、Propel originations、TPO tax equity、核心收入而非 safe-harbor |
+| 产品降价压毛利 | 欧洲电池约 -10%、美国约 -12%-14%；G5 成本目标 -40% | 高 | non-GAAP GM 是否守住 44%-47%；G5 ASP/attach 与 warranty reserve |
+| safe-harbor 质量 | Q2 28.9% 收入来自 step-up；PWT 安装远至 2028-2030 | 高 | core sell-through、客户集中度、PWT 取消/修改、battery attach |
+| 客户集中 | 2025 最大客户 39%；美国 81% | 高 | 单一客户占比、应收 DSO、TPO 信用和 parent support |
+| 45X/FEOC/税务 | 2025 AMPTC $238.7M；税收抵免出售有折价 | 高 | 45X 规则、PTC 出售价、美国合格出货、FEOC guidance |
+| 库存/应收 | 库存约 147 天、DSO 约 85 天 | 中高 | inventory/AR 相对收入、折价促销、坏账/减值 |
+| G5/Vault/BiDi 并行 NPI | 多个新品集中 2026Q4-2027Q1 | 中高 | shipment 日期、认证、良率、named customer、服务响应 |
+| SST 技术与商业化 | 120 人研发、无订单/认证、竞争者众多 | 极高但远期 | 2026 full demo；付费 pilot；客户名；MW；UL/AVL；成本和 warranty |
+| 住宅保修/质量 | 25 年微逆质保形成长期义务 | 中 | warranty reserve、field failure/NPS、召回、installer service time |
+| 资本配置 | 历史高价回购；当前需新品研发 | 中 | 回购与研发/营运资本平衡、FCF 和净现金 |
+
+## 十、最终判断与跟踪清单
+
+### 10.1 业务质量判断
+
+**Enphase 的高质量部分**是系统架构、ASIC/固件、安装商网络、存量用户、全 AC 安全/监控和美国本土制造能力；**低质量部分**是住宅光伏政策/利率敏感、单一客户/TPO 集中、渠道库存可见性差，以及毛利率对 45X、tariff refund 和产品降价的依赖。
+
+2026Q2 不能简单解释为“拐点已经确认”：报表收入环比增长主要由 safe-harbor 放大，核心收入仍下降。更稳健的确认顺序应是：
+
+1. Q3 core revenue 约 $230M、sell-through 约 $245M；
+2. 微逆 channel inventory 回到 normal；
+3. G5 按时出货且 non-GAAP GM 不跌破 44%；
+4. Propel 从约 200 originations/周持续走向 500；
+5. 商用业务由 Q3 $10M 起点形成 repeat orders；
+6. Vault/BiDi 取得完整认证与 named customer；
+7. SST 从 RFI/RFP 跨越到付费 pilot、named MW 和客户 AVL。
+
+### 10.2 投资视角
+
+- **核心住宅光储：**当前更像周期修复标的，而非供不应求成长股。约 3.8x TTM sales 和 37.7x TTM earnings 已经隐含部分恢复；若 2027 只实现一致预期约 +6.9% 收入，估值压缩空间有限。
+- **G5 与小型商业：**是未来一年最可验证的上行。G5 把成本/kWh 降约 40% 的目标若兑现，既能提高 attach，也能保护毛利；IQ9 商用从 $10M/季起步，虽小但增长弹性大。
+- **SST：**技术路线值得跟踪，但当前合理估值是低概率期权。对 ENPH 最重要的不是再发布一份白皮书，而是具名客户、付费 pilot、MW、交付窗口、UL/AVL、制造良率和保修结构。
+- **下行保护：**$362.7M 净现金和 $152.6M TTM FCF 降低财务破产风险；但不能保护投资者免受需求继续下滑、政策变化或估值倍数下降。
+- **上行条件：**只有核心 sell-through、G5 attach、商用 repeat order 和 SST 定点四条证据链同时改善，极度乐观情景才有可信度。
+
+### 10.3 下一次财报必须核对的 15 个数字
+
+1. Q3 revenue 是否落在 $290M-$320M；
+2. Q3 safe-harbor 是否约 $75M；
+3. Q3 core revenue 是否约 $230M；
+4. Q3 sell-through 是否约 $245M、QoQ +10%；
+5. Q3 battery 是否 130-150MWh；
+6. 微逆 channel inventory 是否从 slightly elevated 变 normal；
+7. non-GAAP GM 是否 44%-47%；
+8. PTC receivable **$193.5M** 中 2024 IRS refund **$108.3M** 是否到账；
+9. Propel 是否超过 300 originations/周、扩展至 12 州；
+10. Propel battery attach 是否保持约 75%；
+11. IQ9 小型商业收入是否约 $10M，并出现 repeat customer；
+12. G5 是否在 2026Q4 按时初始出货；
+13. Vault 80 是否取得完整 system listing 和外部 pilot；
+14. BiDi 是否披露具名 OEM 与认证；
+15. SST 是否出现付费 pilot、客户名、MW、价格/交付窗口和 UL/AVL 路线。
+
+## 主要证据索引
+
+### 公司与财务
+
+- [Enphase 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1463101/000146310126000013/enph-20251231.htm)
+- [2026Q2 earnings release](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-reports-financial-results-second-quarter-2026)
+- [2026Q2 supplemental data](https://investor.enphase.com/static-files/3bbffb20-9a34-45a3-a9a1-03348bf613fe)
+- [2026Q2 earnings-call transcript](https://stockanalysis.com/stocks/enph/transcripts/656436-q2-2026/)
+- [2026 45X tax-credit transfer 8-K](https://www.sec.gov/Archives/edgar/data/1463101/000146310126000061/enph-20260615.htm)
+- [ENPH valuation statistics](https://stockanalysis.com/stocks/enph/statistics/)
+
+### 产品与技术
+
+- [IQ9N residential microinverter](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-launches-iq9n-microinverters-gan-technology-us)
+- [IQ9 commercial shipments](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-begins-shipments-iq9-commercial-microinverters)
+- [IQ9S-3P](https://newsroom.enphase.com/news-releases/news-release-details/enphase-energy-opens-us-pre-orders-gan-based-548-va-iq9s)
+- [G5 / Intersolar Europe](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-showcase-product-innovations-intersolar-europe)
+- [IQ Vault 80 data sheet](https://enphase.com/download/iq-vault-80-data-sheet)
+- [IQ Bidirectional EV Charger](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-demonstrates-global-iq-bidirectional-ev-charging/)
+- [IQ SST announcement](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-announces-development-iq-solid-state-transformer)
+- [IQ SST technical white paper](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-publishes-technical-white-paper-iq-sst/)
+- [IQ SST technical presentation](https://investor.enphase.com/static-files/dde327a8-77e0-43f6-8ca6-b6ae71a72fb8)
+- [Kestrel ASIC white paper](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-publishes-white-paper-kestrel-asic-its-fifth)
+
+### AI 数据中心行业与竞争
+
+- [NVIDIA 800VDC architecture](https://www.nvidia.com/en-au/data-center/technologies/800-vdc-architecture/)
+- [OCP Data Center Facility Power](https://www.opencompute.org/wiki/Data_Center_Facility/Power)
+- [Delta AI power platform](https://www.delta-americas.com/en-US/news/40116)
+- [Delta/X Labs 100MW MOU](https://www.delta-americas.com/en-us/news/delta-electronics-americas-and-x-labs-sign-technology-partnership-mou-to-power-next-gen-ai-data-centers)
+- [Eaton 2MW SST brochure](https://www.eaton.com/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/medium-voltage-solid-state-transformer/eaton-medium-voltage-solid-state-transformer-brochure-br153252en.pdf)
+- [Heron Power data-center SST](https://heronpower.com/product/data-centers)
+- [DG Matrix news](https://www.dgmatrix.com/news-and-media)
+
+### 项目内允许使用的行业资料
+
+- [AI 数据中心建设规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+- [数据中心自备发电与微电网](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-07-10.md)
+- [数据中心 UPS 与电池储能](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-07-10.md)
+- [机柜级供电与服务器电源架构](../../行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-07-10.md)
+- [功率半导体与高压保护器件](../../行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-07-10.md)
+
+> **免责声明：**本报告是基于截至 2026-07-31 可获得资料的独立研究，不构成证券买卖建议。产品收入、BOM、ASP、产能金额、取消率和三情景均为分析估算；公司披露与估算之间已尽量明确区分。

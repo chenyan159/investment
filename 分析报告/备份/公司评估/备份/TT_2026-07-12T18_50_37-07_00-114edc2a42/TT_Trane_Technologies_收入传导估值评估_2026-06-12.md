@@ -1,0 +1,161 @@
+# 公司收入传导与价值传导评估：Trane Technologies（TT）
+
+> 报告日期：2026-06-12  
+> 正式输出目录：`分析报告/公司评估/`  
+> 研究对象：TT / Trane Technologies plc  
+> 研究边界：本文只评估从行业需求到 TT NTM 收入、利润和经营质量的传导，不做全公司排序，不输出投资评级、目标价、股价区间或估值倍数判断。本文未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归或模型比较资料。  
+> 主要本地资料：`公司调研/机电_冷却_工程_水处理_边缘工业AI/TT_Trane Technologies_公司调研_2026-06-11.md`，以及 `行业调研/AI园区电力_机电_冷却/`、`行业调研/产业背景/` 中 HVAC、直液冷、DCIM/能控、AI 数据中心建设规模相关正式报告。  
+> 最新官方披露校正：TT 2026Q1 全公司 bookings 为 66.91 亿美元，同比 +27%，organic +24%；record backlog 为 107 亿美元，较 2025 年末 +30% 以上。Americas Commercial HVAC bookings 约 +40%，Applied Solutions bookings 超 +160%。若本地公司稿中出现更高的全公司 bookings 增速，本文以官方 2026Q1 新闻稿和电话会为准。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即 2026Q2-2027Q1 滚动 12 个月。FY2026 指引、2027 数据中心建设和 LiquidStack / Stellar 长期机会只作补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：FY2025 revenue 为 213 亿美元；2026Q1 revenue 为 49.69 亿美元，Q1 后公司把 FY2026 reported revenue growth 指引上调至约 +9.5%、organic growth 约 +7%，对应 FY2026 revenue 约 233-234 亿美元。用 FY2025 收入、2026Q1 实际和 2026 指引外推，NTM 当前基准为约 235-242 亿美元。
+- 重要产品/业务线：Commercial HVAC / Applied Systems / 中央冷站；Global Services / commissioning / rental；Stellar 模块化 cooling plant；LiquidStack direct-to-chip / immersion；Controls / BrainBox AI / Tracer / Kieback&Peter；Residential HVAC；Thermo King transport refrigeration。
+- NTM 公司收入四情景：悲观 220-230 亿美元；基准 235-242 亿美元；乐观 245-260 亿美元；极度乐观上限 260-280 亿美元。极度乐观经证据校准后只保留为上限，不是当前经营预期。
+- 利润或 EBITDA 四情景：悲观 adjusted operating margin 18.0%-19.0%，adjusted EBITDA 约 42-45 亿美元；基准 adjusted operating margin 19.2%-20.2%，adjusted EBITDA 约 47-50 亿美元；乐观 adjusted operating margin 20.2%-21.5%，adjusted EBITDA 约 50-56 亿美元；极度乐观上限 adjusted operating margin 21.5%-23.0%，adjusted EBITDA 约 56-64 亿美元。
+- 最大传导瓶颈：订单和 backlog 很强，但 TT 并不披露 data center revenue / backlog 的精确金额；NTM 最大瓶颈是 commercial HVAC applied backlog、Stellar backlog 和数据中心项目能否按客户验收节奏转为收入，而不是行业需求是否存在。
+- 最大利润率变量：服务 attach、controls / software mix、Stellar 项目执行、LiquidStack 认证后的硬件/服务毛利，以及大客户框架协议价格传导。低毛利项目工程、收购摊销、扩产吸收和固定价合同会压低收入上修对利润的传导。
+- 最大现金流变量：Q1 2026 FCF 为 5.73 亿美元，全年仍以 100%+ adjusted net earnings FCF conversion 为目标；但高订单期会带来库存、应收、项目里程碑、CapEx 和收购整合支出上升。现金流质量好，短期最大变量是 working capital 与扩产，而不是偿债。
+- 可信度：基准为高，乐观为中高，极度乐观为低到中。原因是全公司 revenue、bookings、backlog、guidance 和服务收入证据强，但 AI/DC 子收入、LiquidStack 收入、Stellar NTM 确认节奏没有逐项披露。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Commercial HVAC / Applied Systems / 中央冷站 | 无单独披露；按 FY2026 revenue 指引、Americas CHVAC 和 applied backlog 推算，NTM 约 88-105 亿美元 | 约 37%-44% | 当前收入与 backlog 主引擎；数据中心冷站、chiller、air-side 和 heat rejection 是 AI 项目收入化入口 | A/B：分部收入、bookings、backlog 和电话会有明确证据；产品拆分为估算 | 进入基准，按官方指引和 backlog 正常确认处理 | 高温水环路、chillerless / dry-cooling 设计改变产品 mix |
+| Global Services / rental / commissioning / lifecycle | 管理层称 services 约占 enterprise revenue 三分之一；NTM 约 76-86 亿美元 | 约 32%-36% | 高利润率和现金流质量核心；数据中心 uptime、commissioning、维护和临时冷却提高黏性 | A/B：服务占比和增长有管理层证据，AI/DC 服务拆分为估算 | 进入基准；AI/DC 增量按服务 attach 而不是硬件 TAM 处理 | 远程监控、预测维护和长期服务合约提高利润质量 |
+| Stellar 模块化 cooling plant / prefab thermal systems | 收购后并表；2026Q1 backlog 增量中约 10 亿美元来自 Stellar；NTM revenue 约 5-10 亿美元 | 约 2%-4% | 缩短 data center time-to-cool / time-to-commission，是订单转收入速度变量 | B：收购完成、backlog 有明确管理层披露；收入确认节奏仍需假设 | 小比例进入基准，按 backlog 分期确认而非全额转收入 | 若 12.5MW/25MW/50MW cooling block 标准化，可进入乐观上修 |
+| LiquidStack direct-to-chip / immersion liquid cooling | 收购完成但未披露 revenue / backlog；NTM revenue 约 2-5 亿美元作为保守纳入，较大机会放入乐观 | 约 1%-2% | 战略意义大于当前收入；让 TT 从中央冷站进入 rack/chip 侧液冷 | C/D：产品、收购和技术路径明确，但未披露客户、订单和 revenue | 基准只保守纳入已并表与可确认小规模收入；大额收入放入乐观/极度乐观 | 两相浸没、特殊高密项目、客户认证后的多区域标准供应 |
+| Controls / BrainBox AI / Tracer / Kieback&Peter | 未单独披露；NTM 约 8-13 亿美元，其中 AI/DC 相关为较小部分 | 约 3%-5% | 利润率、客户锁定和能效优化变量；收入规模小于设备和服务 | B/C：controls 业务存在，收购/投资明确；AI/DC 数字孪生收入需估算 | 进入基准，但只按附着式 controls / service 处理，不把广义 DCIM TAM 直接纳入 | AI cooling optimization、tokens/W、workload-aware BMS 作为远期高毛利期权 |
+| Residential HVAC | 未单独披露；NTM 约 24-28 亿美元 | 约 10%-12% | 不是 AI 主线，但能影响公司总收入和工厂吸收 | A/C：业务存在与 2026 flattish 指引明确；收入拆分为估算 | 进入基准，按 flattish 到小幅增长处理 | 住宅替换周期改善，不作为 AI 情景上修来源 |
+| Thermo King transport refrigeration | 未单独披露；NTM 约 20-25 亿美元 | 约 8%-10% | 非 AI 主线；2026 仍有市场下滑，2027 可能复苏 | A/C：业务存在、2026 市场 mid-single decline 指引明确；收入拆分为估算 | 进入基准，作为抵消项而非成长引擎 | 2027 卡车/拖车周期复苏只作补充上修 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不评估 TT 份额、收入确认或利润率。需求单位按各业务最能解释收入传导的指标选择：Commercial HVAC 用 data center cooling / HVAC 订单池、bookings 和 backlog；Stellar 用模块化 cooling plant / prefab block 订单；LiquidStack 用 D2C / CDU / 液冷系统订单；Controls 用 DCIM / BMS / thermal controls 订单；服务用装机和 commissioning / maintenance attach；住宅和运输用管理层对终端市场的当前预期。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Commercial HVAC / Applied Systems / 中央冷站 | 本地行业模型：美国 AI 数据中心冷却/液冷/HVAC 订单池 2026 务实约 160-310 亿美元、2027 务实 220-450 亿美元；TT 2026Q1 Americas CHVAC bookings 约 +40%，Applied bookings 超 +160% | AI 项目电力/验收延期，冷却/HVAC 订单池落到 2026 悲观 90-170 亿美元、2027 悲观 120-230 亿美元；传统商用楼宇只低个位数增长 | 订单池按务实路径推进，数据中心和核心垂直足以支撑 TT FY2026 organic +7% 指引；NTM 外部需求大体符合当前 backlog | 高密 rack、GB300/Rubin 设计和 capacity reservation 使 2027 cooling/HVAC 订单池向 370-700 亿美元乐观区间靠拢 | 电力、自备电、液冷标准和模块化交付同时突破，多个 GW campus 提前进入采购；2027 乐观上沿甚至更高 | 相对当前预期：悲观低 15%-30%；基准符合；乐观高 20%-50%；极乐高 50%+ | 正向：TT backlog、Carrier/JCI/Modine/Munters 同业订单。反证：电力并网、MEP 劳动力、chillerless / dry cooler 降低传统 chiller 强度 |
+| Global Services / rental / commissioning / lifecycle | 管理层称 services 约占收入三分之一，2020 以来 low-teens CAGR；Q1 2026 global services double-digit growth | 新建项目延期，服务需求仍增长但 commissioning / rental 节奏推后；服务需求只中个位数增长 | 存量 HVAC、data center commissioning 和维护需求正常增长，服务继续低双位数附近增长 | 装机后服务 attach 提升、临时冷却和调试窗口紧张，服务需求低到中双位数增长 | 多年 uptime / remote monitoring / energy service 合约快速普及，服务需求明显高于设备增长 | 悲观 +4%-8%；基准 +9%-13%；乐观 +14%-20%；极乐 +20%+ | 正向：服务为企业收入三分之一且持续增长。反证：客户自维、项目延迟、服务人员瓶颈 |
+| Stellar 模块化 cooling plant / prefab thermal systems | HVAC 行业报告：模块化 cooling plant / 预制 cooling block 一年市场规模基准约 25-50 亿美元、乐观 50-80 亿美元；TT Q1 backlog 中约 10 亿美元来自 Stellar | 大型项目推迟 NTP，prefab attach 率提升慢，需求维持 20-35 亿美元附近 | 12.5MW/25MW/50MW block 开始规模采购，一年需求约 25-50 亿美元 | 大客户为了缩短工期锁定 capacity，一年需求 50-80 亿美元 | 多个 hyperscaler / colo 将 prefab cooling block 写入标准设计，一年需求 80-120 亿美元 | 相对基准：悲观低 20%-35%；乐观高 60%-100%；极乐高 2x+ | 正向：Stellar backlog、行业强调 time-to-cool。反证：项目工程化重、固定价合同、运输吊装和现场并网 |
+| LiquidStack D2C / immersion | 直液冷行业报告：严格供应商 revenue 口径 2027 更接近 55-80 亿美元；广义 AI 项目订单池更高但不能直接当供应商收入。D2C 是 2026 主线，immersion 不是基准主线 | GB300/Rubin 验收慢、OCP 标准化压价、客户延迟 facility loop，D2C strict pool 约 35-55 亿美元 | D2C cold plate + CDU + manifold 正常随 80kW+ rack 放量，strict pool 约 55-80 亿美元 | 100kW+ AI rack 大比例液冷 ready，CDU / UQD / 服务缺货，strict pool 约 80-120 亿美元 | 250kW+ rack、两相 D2C、特殊浸没和 warm-water loop 提前，strict pool 120 亿美元以上 | 悲观低 20%-35%；乐观高 40%-60%；极乐高 100%+ | 正向：NVIDIA rack-scale、OCP Deschutes/UQD、Ecolab/CoolIT 和 Eaton/Boyd 并购。反证：液冷事故、客户多供压价、LiquidStack 未披露订单 |
+| Controls / BrainBox AI / Tracer / Kieback&Peter | DCIM/能控报告：2026 宽口径全球订单/服务池约 85-135 亿美元，AI 相关 30-58 亿美元；狭义 DCIM 2026 约 40-43 亿美元 | 客户把 controls 当附属 BMS，AI cooling optimization 不闭环，AI 相关需求低于 30 亿美元 | BMS / HVAC controls / telemetry 随高密项目成为标配，AI 相关需求约 30-58 亿美元 | workload-aware cooling、digital twin、液冷 telemetry 前置，AI 相关需求 58-90 亿美元 | tokens/W、grid-interactive AI factory 和半闭环控制前置，AI 相关需求 90 亿美元以上 | 悲观低 20%-40%；乐观高 50%+；极乐 2x | 正向：NVIDIA DSX、Schneider/AVEVA/ETAP、行业 telemetry 需求。反证：hyperscaler 自研、IT/OT 协议复杂、客户安全限制 |
+| Residential HVAC | 管理层 Q1 2026 后把 2026 residential 从 flat-to-down 5% 调整为 flattish | 利率/住房和替换需求疲弱，需求 -5% 到 -8% | 需求接近 flattish，H2 因低基数改善 | 夏季替换和渠道库存良性，需求 +3%-6% | 利率下降和天气/替换周期共振，需求 +8%+ | 相对当前预期：悲观低 5-8 pct；基准符合；乐观高 3-6 pct | 正向：渠道库存“set properly”。反证：利率、住房交易、天气和消费者压力 |
+| Thermo King transport refrigeration | 管理层仍预计 Americas transport market FY2026 mid-single decline，late 2026 / 2027 recovery | 卡车/拖车/海运需求继续弱，需求 -8% 到 -12% | 2026 NTM 前半段下滑、后半段修复，全年约 -5% 到 0% | late 2026 recovery 提前，需求 +2%-5% | 2027 复苏斜率大幅提高，需求 +8%+ | 相对当前预期：悲观低 5 pct；基准符合；乐观高 5-10 pct | 正向：Q1 transport orders double-digit、end-market fundamentals improving。反证：货运周期和客户交付时点波动 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些外部需求可以进入 TT NTM 收入表，以及当前可收入化基数，不预测增长和利润率。公司能参与 AI 数据中心冷却需求，不等于能在 NTM 确认收入。TT 没有披露 data center revenue / backlog 的精确金额，因此数据中心相关产品收入为研究估算；A/B 级披露只用于支撑全公司与分部收入、bookings、backlog、services 占比和收购事实。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Commercial HVAC / Applied Systems / 中央冷站 | FY2026 公司指引、Americas Q1 revenue 39.98 亿美元、Americas bookings 55.08 亿美元、CHVAC bookings 约 +40%、applied bookings 超 +160%、Americas/EMEA backlog 年末以来 +27 亿美元 | 直接收入；AI/DC 通过 chiller、air-side、heat rejection、equipment、controls 初装进入收入表 | 中高毛利设备 + 项目工程；价格/交期好时利润扩张，固定价和扩产会压利润 | 82-90 亿美元 | 88-105 亿美元 | 105-120 亿美元 | 120-140 亿美元 | 基准符合当前订单和指引；乐观需 backlog 转化加速 | A/B；产品拆分为估算 | 是 | 已有分部收入、bookings、backlog 和 FY2026 指引；数据中心需求由官方电话会和行业订单池支持 | NTM 基准收入核心，不能把行业 cooling TAM 全额映射给 TT |
+| Global Services / rental / commissioning / lifecycle | 管理层称 services 为 enterprise revenue 三分之一，Q1 global services double-digit growth | 直接收入；与设备装机、维护、commissioning 和 retrofit 绑定 | 通常高于设备毛利，现金流质量高 | 72-78 亿美元 | 76-86 亿美元 | 86-98 亿美元 | 98-112 亿美元 | 基准略高于 FY2025 run-rate，符合低双位数服务增长 | A/B | 是 | 服务占比与增长由管理层披露；AI/DC 服务 attach 由行业和项目节奏估算 | 进入基准，是利润质量和现金流关键 |
+| Stellar 模块化 cooling plant / prefab thermal systems | 2026-02 完成收购；Q1 电话会称 backlog 增量约 10 亿美元来自 Stellar；公司披露其为 turnkey data center cooling solutions provider | 直接收入，但确认需看项目里程碑、FAT/SAT 和现场验收 | 项目型收入，毛利取决于预制化、供应链、固定价和现场执行 | 3-5 亿美元 | 5-10 亿美元 | 10-16 亿美元 | 16-24 亿美元 | 当前基准只承认部分 backlog 转收入；乐观需新增订单和交付扩张 | B | 是，小比例 | 已披露收购完成和 backlog；收入表确认节奏未逐项披露，需保守折扣 | 基准纳入 5-10 亿美元；超过 10 亿美元进入乐观 |
+| LiquidStack D2C / immersion | 2026-03 完成收购；官方称组合可从 central plant 到 chip；未披露 revenue、bookings 或 backlog | 直接收入，但当前规模小；产品需客户认证与项目级验收 | 早期毛利可好，但规模小、认证/服务成本和标准化压价并存 | 1-2 亿美元 | 2-5 亿美元 | 5-10 亿美元 | 10-16 亿美元 | 基准只纳入小规模已并表收入；大额贡献高于当前可见收入路径 | C/D | 是，保守小比例 | 收购完成是事实；收入锚点没有 A/B 级量化，不能把 D2C 行业订单池直接作为 TT 收入 | 基准保守，乐观/极乐是客户认证和多站点采用后的上限 |
+| Controls / BrainBox AI / Tracer / Kieback&Peter | Controls 属于商业 HVAC、building controls and solutions；BrainBox AI 收购和 Kieback&Peter 49% 权益已发生；未披露独立收入 | 直接/附着式收入；部分嵌入设备和服务，需避免重复计算 | 软件/控制层利润率高于硬件，但实施和集成会稀释 | 6-8 亿美元 | 8-13 亿美元 | 13-20 亿美元 | 20-30 亿美元 | 基准为附着式 controls；乐观需 AI cooling optimization 形成付费合同 | B/C | 是，保守 | 业务存在与收购明确；AI/DC 软件收入缺少单独披露 | 进入基准但不把广义 DCIM/数字孪生 TAM 直接收入化 |
+| Residential HVAC | Americas 分部内业务；管理层 Q1 后指引为 2026 flattish | 直接收入；非 AI | 周期性设备，利润受工厂吸收、渠道库存和价格影响 | 22-24 亿美元 | 24-28 亿美元 | 28-31 亿美元 | 31-34 亿美元 | 基准符合 flattish；乐观来自住宅周期，不来自 AI | A/C | 是 | 业务与当前指引明确，产品收入拆分未披露 | 作为公司收入底盘和抵消项进入基准 |
+| Thermo King transport refrigeration | Americas / EMEA / APAC 分部内业务；管理层预计 2026 transport market mid-single decline、late 2026/2027 recovery | 直接收入；非 AI | 周期性，低于 services 黏性，恢复期有经营杠杆 | 18-20 亿美元 | 20-25 亿美元 | 25-28 亿美元 | 28-32 亿美元 | 基准符合 2026 仍弱、2027 修复；乐观需周期恢复提前 | A/C | 是 | 业务与终端市场指引明确，收入拆分未披露 | 进入基准，但不是 AI/DC 上修核心 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第三节需求和第四节收入基数出发，评估每个重要产品/业务线在 NTM 内能给 TT 贡献的收入和利润。收入为 TT 可确认 revenue，不等于客户 CapEx、项目总金额、行业 TAM 或 backlog 全额。利润贡献为 adjusted operating income 近似口径的研究估算，TT 不披露产品级利润；如精确拆分不可得，表中以区间和方向表达。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Commercial HVAC / Applied Systems / 中央冷站 | 悲观产品 | 82-90 亿美元 | 13-16 亿美元 | 持平到下行 | 低于当前预期 | 电力/验收延期使 applied backlog duration 拉长 | 保留为下限 | 客户项目延期、固定价合同、chillerless / dry cooling 降低传统 chiller 强度 |
+| Commercial HVAC / Applied Systems / 中央冷站 | 基准产品 | 88-105 亿美元 | 16-21 亿美元 | 小幅上行 | 符合当前指引和 backlog | Q1 CHVAC bookings +40%、Applied bookings >160%、backlog 强 | 保留 | TT 不披露 DC 收入；产品拆分需估算 |
+| Commercial HVAC / Applied Systems / 中央冷站 | 乐观产品 | 105-120 亿美元 | 21-27 亿美元 | 上行 | 高于当前预期 | 数据中心 multi-site / capacity reservation 转收入快于指引 | 保留 | 大客户多供和价格重谈 |
+| Commercial HVAC / Applied Systems / 中央冷站 | 极度乐观产品 | 120-140 亿美元 | 27-35 亿美元 | 明显上行 | 只作为上限 | AI campus 批量开工且 TT 获得更高 wallet share | 下移为乐观上限 | 工厂 slot、测试台、field commissioning 和电力接入需同时突破 |
+| Global Services / rental / commissioning / lifecycle | 悲观产品 | 72-78 亿美元 | 16-18 亿美元 | 持平 | 略低于预期 | 项目延迟降低 commissioning / rental 增量 | 保留 | 服务人员和备件瓶颈 |
+| Global Services / rental / commissioning / lifecycle | 基准产品 | 76-86 亿美元 | 18-23 亿美元 | 上行 | 符合预期 | Services 占收入三分之一、Q1 double-digit growth | 保留 | AI/DC 服务拆分未披露 |
+| Global Services / rental / commissioning / lifecycle | 乐观产品 | 86-98 亿美元 | 23-29 亿美元 | 上行 | 高于预期 | 设备装机后 attach rate、remote monitoring 和临时冷却提升 | 保留 | 客户自维、服务合同价格压力 |
+| Global Services / rental / commissioning / lifecycle | 极度乐观产品 | 98-112 亿美元 | 29-36 亿美元 | 明显上行 | 上限 | 多年 uptime / monitoring 合约成为大客户标配 | 保留为上限 | 需要合同披露或服务 backlog 验证 |
+| Stellar 模块化 cooling plant / prefab thermal systems | 悲观产品 | 3-5 亿美元 | 0-0.4 亿美元 | 下行 | 低于预期 | backlog 转收入慢、项目成本高 | 保留 | 固定价、物流、现场验收、收购整合 |
+| Stellar 模块化 cooling plant / prefab thermal systems | 基准产品 | 5-10 亿美元 | 0.4-1.2 亿美元 | 小幅稀释到持平 | 符合保守纳入 | Stellar 已完成收购，约 10 亿美元 backlog 进入可见路径 | 保留 | 并非全部 backlog 在 NTM 确认 |
+| Stellar 模块化 cooling plant / prefab thermal systems | 乐观产品 | 10-16 亿美元 | 1.2-2.6 亿美元 | 上行 | 高于预期 | prefab cooling block 新订单、Florida/Texas 扩产兑现 | 保留 | 项目执行和供应链 |
+| Stellar 模块化 cooling plant / prefab thermal systems | 极度乐观产品 | 16-24 亿美元 | 2.6-4.8 亿美元 | 明显上行 | 上限 | TT 把 Stellar 与 Trane chiller / controls 标准化打包 | 下移为乐观上限 | 需要多客户订单和产能验证 |
+| LiquidStack D2C / immersion | 悲观产品 | 1-2 亿美元 | -0.2-0.1 亿美元 | 稀释 | 低于当前乐观叙事 | 客户认证慢或浸没项目不进入主流 | 保留 | revenue / backlog 未披露，field failure 风险 |
+| LiquidStack D2C / immersion | 基准产品 | 2-5 亿美元 | -0.1-0.5 亿美元 | 持平到小幅上行 | 仅小比例符合预期 | 收购完成；D2C 行业需求强，但 TT 可确认收入仍小 | 保留，小比例 | C/D 级收入锚，不得扩大进基准 |
+| LiquidStack D2C / immersion | 乐观产品 | 5-10 亿美元 | 0.5-1.8 亿美元 | 上行 | 高于预期 | LiquidStack 进入多客户 D2C / CDU 项目 | 保留 | 标准化后 ASP 压力、客户多供 |
+| LiquidStack D2C / immersion | 极度乐观产品 | 10-16 亿美元 | 1.8-3.5 亿美元 | 上行但不自动非线性 | 上限 | hyperscaler 把 LiquidStack 列入多区域供应商 | 下移为远期期权/乐观上限 | 缺少订单、客户、收入确认路径的 A/B 证据 |
+| Controls / BrainBox AI / Tracer / Kieback&Peter | 悲观产品 | 6-8 亿美元 | 1.0-1.8 亿美元 | 持平 | 低于题材预期 | 客户只买传统 BMS，AI optimization 不付费 | 保留 | hyperscaler 自研、IT/OT 复杂 |
+| Controls / BrainBox AI / Tracer / Kieback&Peter | 基准产品 | 8-13 亿美元 | 1.8-3.2 亿美元 | 上行 | 符合当前可见路径 | controls 随 equipment / services attach，BrainBox / Kieback 提供能力 | 保留 | 独立收入和 ARR 未披露 |
+| Controls / BrainBox AI / Tracer / Kieback&Peter | 乐观产品 | 13-20 亿美元 | 3.2-5.8 亿美元 | 明显上行 | 高于预期 | thermal controls、liquid telemetry 和 energy optimization 形成付费增购 | 保留 | 客户安全、闭环控制责任 |
+| Controls / BrainBox AI / Tracer / Kieback&Peter | 极度乐观产品 | 20-30 亿美元 | 5.8-9.5 亿美元 | 高毛利上行 | 上限 | AI factory digital twin / workload-aware cooling 标准化 | 下移为附录跟踪 | 2026 NTM 缺少大额软件合同证据 |
+| Residential HVAC | 悲观产品 | 22-24 亿美元 | 2.5-3.5 亿美元 | 下行 | 低于当前 flattish 预期 | 利率和住房替换需求疲弱 | 保留 | 住宅不是 AI 需求；不可用 AI 叙事上修 |
+| Residential HVAC | 基准产品 | 24-28 亿美元 | 3.5-5.0 亿美元 | 持平 | 符合预期 | 管理层指引为 2026 flattish | 保留 | 天气和渠道库存 |
+| Residential HVAC | 乐观产品 | 28-31 亿美元 | 5.0-6.5 亿美元 | 上行 | 高于当前预期 | H2 替换周期和渠道正常化 | 保留 | 宏观/利率 |
+| Residential HVAC | 极度乐观产品 | 31-34 亿美元 | 6.5-8.0 亿美元 | 上行 | 上限 | 利率、天气和替换周期共振 | 下移为乐观上限 | 与 AI/DC 无关，不应放大公司 AI 情景 |
+| Thermo King transport refrigeration | 悲观产品 | 18-20 亿美元 | 2.0-3.0 亿美元 | 下行 | 低于预期 | 市场延续 mid-single 以上下滑 | 保留 | 货运周期 |
+| Thermo King transport refrigeration | 基准产品 | 20-25 亿美元 | 3.0-4.5 亿美元 | 持平到小幅上行 | 符合预期 | 管理层预计 late 2026 / 2027 恢复 | 保留 | 客户交付时点和终端需求 |
+| Thermo King transport refrigeration | 乐观产品 | 25-28 亿美元 | 4.5-6.0 亿美元 | 上行 | 高于预期 | 复苏提前且大客户交付顺利 | 保留 | 仍非 AI 主线 |
+| Thermo King transport refrigeration | 极度乐观产品 | 28-32 亿美元 | 6.0-7.5 亿美元 | 上行 | 上限 | 2027 周期快速回升 | 下移为乐观上限 | 周期业务不能支撑 AI 极度乐观结论 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为 TT NTM 总收入、毛利率、经营利润率、EBITDA / adjusted net earnings 和自由现金流方向。汇总时已扣除产品之间重复计算：Commercial HVAC 设备、controls、services、Stellar 和 LiquidStack 经常来自同一数据中心项目，不能把行业订单池或各子产品上限机械相加。绝对增速以 TTM revenue 约 216 亿美元为比较基数；相对预期以 FY2026 reported revenue growth 约 +9.5%、organic growth 约 +7%、Q1 backlog / book-to-bill 和当前 run-rate 为锚。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 220-230 亿美元 | +2%-6% | 低于 FY2026 指引和当前 backlog 转化路径；需求仍可能增长，但收入确认和非 AI 业务抵消明显 | 35.0%-36.0% | adjusted OPM 18.0%-19.0% | adjusted EBITDA 42-45 亿美元；adjusted net earnings 29-32 亿美元 | FCF 仍为正，但 working capital / 项目延期使 conversion 低于 100% adjusted net earnings | 中 | 电力/MEP 延迟、Stellar 转收入慢、transport/住宅弱、固定价项目和扩产吸收 |
+| 基准公司 | 235-242 亿美元 | +9%-12% | 接近当前 FY2026 指引和 Q1 后 backlog 兑现路径；高可信 business 正常增长，LiquidStack 只小比例纳入 | 36.0%-37.0% | adjusted OPM 19.2%-20.2% | adjusted EBITDA 47-50 亿美元；adjusted net earnings 33-36 亿美元 | FCF 约等于或高于 adjusted net earnings；CapEx 和库存上升但可控 | 高 | applied backlog 转收入节奏、services attach、收购整合成本 |
+| 乐观公司 | 245-260 亿美元 | +13%-20% | 高于当前指引；不是单一小基数项目，需 Commercial HVAC、services、Stellar 同步好于预期 | 36.8%-38.0% | adjusted OPM 20.2%-21.5% | adjusted EBITDA 50-56 亿美元；adjusted net earnings 36-41 亿美元 | FCF 增长但 working capital 先占用，全年 conversion 仍接近 100% | 中高 | 工厂产能、field commissioning、价格传导、大客户多供压价 |
+| 极度乐观公司 | 260-280 亿美元 | +20%-30% | 显著高于当前预期；需要 data center demand、TT 捕获、Stellar/LiquidStack 认证和服务利润同时突破 | 37.5%-39.0% | adjusted OPM 21.5%-23.0% | adjusted EBITDA 56-64 亿美元；adjusted net earnings 41-48 亿美元 | FCF 绝对额上升，但短期可能因扩产、库存、应收和项目里程碑低于利润增速 | 低到中 | 缺少 data center revenue/backlog 分项披露；LiquidStack 和 controls 大额收入确认仍是 C/D 级证据 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。正向证据只提升其实际影响的层级：需求、收入基数、产品贡献、公司利润或执行可信度。反证只在实际影响的层级处理一次，不重复惩罚。市场价格、估值倍数和股价表现不作为经营价值传导证据。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 enterprise bookings 66.91 亿美元、organic +24%，backlog 107 亿美元、较 2025 年末 +30% 以上 | 收入基数 / 公司汇总 | 支撑 NTM 基准收入 235-242 亿美元；悲观不能只因宏观担忧下修到低增长 | backlog 转收入通常有利润，但 Q1 adjusted OPM 16.0% 说明季节性和成本仍需跟踪 | backlog 提高收入能见度，同时增加库存/应收和交付压力 | 保留基准，上调基准可信度 |
+| Americas Commercial HVAC bookings 约 +40%，Applied bookings 超 +160%，Q1 book-to-bill 约 150%，backlog 同比近 +70% | 产品需求 / 产品贡献 | 明确支撑 Commercial HVAC / central plant 高于普通 HVAC 市场增长 | Applied 和 data center mix 可提升毛利，但固定价和扩产会抵消 | 客户要求更长交付可见度，有利生产排程但延后收入确认 | 保留乐观，但不直接进入极度乐观 |
+| Stellar 收购完成，Q1 backlog 增量中约 10 亿美元来自 Stellar | 收入基数 / 执行可信度 | 支撑 Stellar NTM 基准 5-10 亿美元，而不是零收入 | 项目型和并购初期可能稀释利润；执行好才增厚 | 提高 time-to-cool 交付能力，但需要工厂/现场验收 | 小比例进入基准，超出 backlog 转化部分放乐观 |
+| LiquidStack 收购完成，官方组合从 central plant 到 chip | 产品贡献 / 远期期权 | 支撑 LiquidStack 进入 NTM 小比例收入；不能把 D2C 行业订单池直接给 TT | 早期可能因认证、服务和整合成本稀释；标准化后硬件毛利可能下行 | 客户认证、漏液可靠性和全球服务是关键 | 基准保守，乐观保留，极度乐观下移为上限 |
+| Services 占企业收入约三分之一且 Q1 double-digit growth | 利润质量 / 现金流 | 支撑 NTM revenue 稳定性和服务上修 | 服务 mix 是利润率最强正向变量之一 | 服务合同和维护提高 FCF 质量 | 保留基准和乐观 |
+| AI 数据中心建设受电力、变压器、MEP、并网和客户验收约束 | 需求 / 收入确认 | 不否定长期需求，但可能把 bookings 转 revenue 从 NTM 推后 | 若收入推后而扩产已发生，会压利润率 | 延迟会推高 working capital 和 commissioning 成本 | 在第一步需求和第二步收入确认处理一次，不在利润层重复惩罚 |
+| Chillerless / warm-water / dry cooler 路线可能降低传统 chiller per MW | 产品需求 / mix | 压低传统冷水机组单 MW 强度，但可能提高 controls、dry cooler、系统工程和服务价值 | 对单品毛利不利，对系统方案可能中性到正向 | 需要设计能力和产品组合适配 | 限制 central plant 极度乐观；不惩罚 services / controls 基准 |
+| Hyperscaler 多供应商和框架协议议价 | 利润率 | 收入仍可增长，但 TT wallet share 和 ASP 不能线性扩大 | 压低硬件毛利，服务/controls 才能留住利润 | 价格条款和预付款影响现金流 | 限制乐观利润率，不重复下修需求 |
+| Residential 和 transport 不是 AI 主线 | 公司组合 | 可作为收入底盘或抵消项，但不能支撑 AI/DC 情景上修 | 周期改善可带来 operating leverage，但利润质量低于 services | 周期业务影响库存和产能吸收 | 进入公司汇总；从极度乐观的核心驱动中排除 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 数据中心项目延迟、住宅/transport 弱、Stellar/LiquidStack 不能快速转收入，NTM revenue 220-230 亿美元 | Backlog 107 亿美元和 services 稳定性使公司很难进入深度衰退式收入下滑 | 电力/MEP 延迟是真风险，但目前没有看到订单取消或 management 下修 | 保留 | 悲观下限；主要是收入确认低于当前预期，不是需求消失 | 中 | 电力接入延期只在需求/收入确认处理，不再重复压低所有产品利润 |
+| 基准 | FY2026 指引和 Q1 backlog 正常兑现，NTM revenue 235-242 亿美元，adjusted OPM 19.2%-20.2% | 全公司 bookings、backlog、services、CHVAC 和 applied orders 均为 A/B 级证据；Stellar 有 backlog 支撑 | TT 未披露 data center revenue；LiquidStack 只能小比例纳入 | 保留 | 最可能经营情景 | 高 | LiquidStack 缺披露只限制该产品，不惩罚 Commercial HVAC 和 services 基准 |
+| 乐观 | Commercial HVAC、services 和 Stellar 均超预期，LiquidStack 有可见客户认证，NTM revenue 245-260 亿美元 | Applied bookings >160%、CHVAC book-to-bill 约 150%、industry cooling/HVAC 订单池强 | 大客户多供、固定价、扩产和项目验收可能使利润低于收入增速 | 保留 | 有证据的超预期情景 | 中高 | 大客户议价只限制利润率，不否定收入增长 |
+| 极度乐观 | NTM revenue 260-280 亿美元，Stellar / LiquidStack / controls 同时突破，margin 非线性扩张 | 行业需求强、端到端 thermal platform 逻辑成立 | 缺少 TT data center revenue/backlog 分项、LiquidStack 订单和 controls ARR 披露；极度乐观依赖多个 C/D 级假设 | 下移 | 乐观上限 / 远期期权跟踪，不作为当前 NTM 主判断 | 低到中 | 不因极度乐观证据不足而下修基准；只限制上限情景 |
+
+## 8. 结论
+
+- 最可能情景：基准。TT 的 NTM 经营主线是 FY2026 指引上修、record backlog、Americas Commercial HVAC / Applied Systems 高订单和服务收入继续兑现。最可能 NTM revenue 为 235-242 亿美元，adjusted OPM 约 19.2%-20.2%，adjusted EBITDA 约 47-50 亿美元，FCF 接近或高于 adjusted net earnings。
+- NTM 收入结论：收入增长不是来自“AI 题材映射”，而是来自可见订单和 backlog 转化。Commercial HVAC / Applied Systems 与 services 是 A/B 级证据支持的基准；Stellar 小比例进入基准；LiquidStack 和 AI controls 的大额贡献仍是乐观或远期期权。
+- 利润/现金流结论：TT 利润质量好于普通设备制造商，主要因为 services、controls、pricing 和运营纪律。但 NTM 收入上修不必然全额传导到利润，原因是项目型模块化交付、收购整合、扩产、固定价合同、客户议价和 field commissioning 成本。现金流仍强，但高订单期的 working capital 和 CapEx 会提高波动。
+- 主要传导瓶颈：从行业需求到 TT 收入要经过四道门：客户 AI capex / power 项目成立、TT 进入客户设计和供应名单、设备/模块/服务完成生产与现场验收、项目按里程碑确认收入。当前最强证据在第 1-2 道门，第三和第四道门需要后续订单转收入验证。
+- 乐观情景成立条件：Americas CHVAC backlog 继续同比高增；Applied orders 高增不是一次性；Stellar backlog 在 NTM 内顺利确认；services attach 和 controls 形成可见增购；Q2-H2 revenue growth 确实加速到管理层所说的约 10%/low-teens 路径。
+- 极度乐观情景成立条件：data center demand、TT 捕获、Stellar 产能、LiquidStack 客户认证、controls / service attach 和利润率同时突破；且公司开始披露或明确提示 data center revenue / backlog / orders 的量级。否则极度乐观只应作为上限和附录跟踪。
+- 悲观情景触发条件：Top hyperscaler capex 或 data center orders 明显下修；power / MEP / chiller / CDU 验收导致 backlog duration 大幅拉长；Americas CHVAC book-to-bill 回落到 1.0 附近；Stellar integration 或 LiquidStack field reliability 出现负面；服务增长跌出高个位数。
+- 后续跟踪数据：每季度 TT enterprise bookings、organic bookings、backlog、book-to-bill；Americas CHVAC orders / applied orders / backlog；Stellar 收入和 backlog 转化；LiquidStack 客户认证、订单或收入披露；services growth 和 margin；CapEx / inventory / receivables；data center 项目是否出现取消、延期或固定价毛利压力。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司官方披露截至 2026Q1，Q1 新闻稿与电话会日期为 2026-04-30；本地公司/行业资料主要为 2026-06-10 至 2026-06-11；报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Trane Technologies Q1 2026 earnings release：2026Q1 bookings 66.91 亿美元、organic bookings +24%、revenue 49.69 亿美元、adjusted OPM 16.0%、adjusted EPS 2.63 美元、record backlog 107 亿美元、FY2026 revenue growth 指引约 +9.5% reported / +7% organic、cash flow 与 FCF。链接：https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-Reports-Strong-First-Quarter-Results-Raises-Full-Year-Revenue-and-EPS-Guidance/default.aspx
+  - Trane Technologies Q1 2026 earnings transcript：Americas Commercial HVAC bookings 约 +40%、Applied Solutions bookings 超 +160%、Americas CHVAC book-to-bill 约 150%、backlog 同比近 +70%、Stellar 约 10 亿美元 backlog、services 占 enterprise revenue 三分之一、住宅/transport 2026 当前预期。链接：https://s2.q4cdn.com/950394465/files/doc_financials/2026/q1/Trane-Technologies-Q1-2026-Earnings-Transcript.pdf
+  - Trane Technologies Q4 / FY2025 earnings release：FY2025 revenue 213 亿美元、organic revenue +6%、FY2025 adjusted EBITDA margin 20.1%、year-end backlog 78 亿美元、初始 FY2026 revenue / EPS 指引。链接：https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-Reports-Strong-Fourth-Quarter-and-Full-Year-2025-Results-Robust-Bookings-and-Backlog-Provide-Strong-Visibility-Entering-2026/default.aspx
+  - Stellar Energy acquisition completion：Stellar 是 turnkey data center cooling solutions provider，模块化 data center solutions 和 prefabricated cooling systems 是收购逻辑。链接：https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-Completes-Acquisition-of-Stellar-Energy/default.aspx
+  - LiquidStack acquisition completion：Trane + LiquidStack 组合覆盖 central plant to chip，LiquidStack 包含 high-density liquid、direct-to-chip 和 immersion cooling。链接：https://liquidstack.com/news/trane-technologies-completes-acquisition-of-liquidstack
+- 项目内公司资料：
+  - `公司调研/机电_冷却_工程_水处理_边缘工业AI/TT_Trane Technologies_公司调研_2026-06-11.md`
+- 项目内行业资料：
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-06-10.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 reported revenue growth 指引约 +9.5%，organic growth 约 +7%，是本文基准情景的重要锚，但 NTM 滚动窗口包含 2027Q1，因此本文基准收入略高于 FY2026 单年指引。
+  - 2027 Rubin / MI400 / Trainium / TPU、高温水环路、chillerless / dry-cooling、AI factory digital twin、workload-aware cooling、two-phase / immersion 均作为乐观或远期期权处理，未替代 NTM 基准。
+  - 本文所有 AI/DC 相关收入、分产品收入、产品利润贡献、Stellar / LiquidStack NTM revenue 和 controls 收入均为研究估算，不是公司披露值；已披露值仅包括公司/分部 revenue、bookings、backlog、guidance、cash flow、services 占比和收购事实。

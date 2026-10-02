@@ -1,0 +1,143 @@
+# 公司收入传导与价值传导评估：Meta Platforms
+
+报告日期：2026-06-12  
+评估对象：`META` / Meta Platforms  
+主口径：NTM 经营窗口，约为 2026Q2-2027Q1。FY2026、FY2027、长期 run-rate、AI 数据中心全周期容量和 MTIA 多代路线只作补充口径。  
+资料边界：使用 `公司调研/` 与 `行业调研/` 上游资料，并重新核对 Meta 2026Q1 结果、2025 全年结果、2026Q1 10-Q、Q1 earnings call、Meta AI/MTIA、CoreWeave、Broadcom、Reliance 等公开披露；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归或模型比较内容。  
+重要限制：本文只评估经营收入、利润、现金流和执行传导，不输出二级市场定价判断。
+
+## 1. 一页结论
+- 主口径与补充口径：主口径为 NTM，即 2026Q2-2027Q1；FY2026 费用和 CapEx 指引用于校准 NTM，不替代 NTM 主表。超过 NTM 的 MTIA 450/500、Hyperion/Richland、多 GW 数据中心、Meta AI 直接收费、AR glasses 平台化只进入乐观、极度乐观或附录跟踪。
+- 当前收入基准、指引和 run-rate：2026Q1 总收入 `$56.31B`，Advertising `$55.02B`、FoA other `$0.89B`、Reality Labs `$0.40B`；Q2 2026 收入指引 `$58-61B`；2026 全年费用指引 `$162-169B`；2026 CapEx 指引 `$125-145B`；公司仍预期 2026 operating income 高于 2025 的 `$83.28B`。
+- 重要产品/业务线：Family of Apps 广告与 AI 推荐/广告工具；FoA other / WhatsApp paid messaging / Meta Verified / Business AI；Meta AI / Muse Spark / Llama / agent；AI 基础设施与 MTIA / CoreWeave / 数据中心容量；Reality Labs / AI glasses / Quest。
+- NTM 公司收入四情景：悲观 `$232-245B`；基准 `$258-270B`；乐观 `$275-295B`；极度乐观 `$305-330B`。基准相当于 Q2 指引正常兑现、广告增速从 Q1 的高位自然放缓但仍保持强量价；极度乐观要求广告、商业消息、Meta AI 使用和 AI glasses 同时超预期。
+- 利润或 EBITDA 四情景：经营利润悲观 `$63-76B`，基准 `$83-97B`，乐观 `$100-118B`，极度乐观 `$120-145B`；净利润使用剔除 Q1 2026 一次性税收收益后的经营口径，EBITDA 因公司不披露完整 NTM 折旧/摊销节奏而不作精确量化。
+- 最大传导瓶颈：AI 基础设施不是收入分部，而是成本、折旧、云容量和现金流承诺；只有当推荐/广告/商业消息/Meta AI 使用量把算力转成广告价格、转化率、时长或付费产品时，CapEx 才能进入经营价值。
+- 最大利润率变量：FoA 广告 ROI 与广告价格能否覆盖第三方云、服务器/网络折旧、数据中心运营、AI 人才和 Reality Labs 亏损。
+- 最大现金流变量：2026 CapEx `$125-145B`、未开始租赁 `$182.88B`、不可取消合同承诺 `$237.67B`、以及 2026/2027 到期承诺 `$42.25B` / `$47.65B`。
+- 可信度：基准收入为中高；基准利润为中；Meta AI 直接收入为低；MTIA 成本节省为中；极度乐观为低到中。
+
+## 2. 重要产品清单
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Family of Apps 广告与 AI 推荐/广告工具 | 2026Q1 Advertising `$55.02B`；Q1 impressions `+19%`、average price per ad `+12%` | `97.7%` | 核心收入与利润主机；AI 已经在推荐、广告模型、创意工具和商家工具中传导 | A | 进入基准；NTM 基准收入 `$248-260B` | Threads 广告、WhatsApp Status ads、更深层 AI creative/agentic ads |
+| FoA other / WhatsApp paid messaging / Meta Verified / Business AI | 2026Q1 FoA other `$0.885B`，同比 `+74%` | `1.6%` | 小而高增，可能成为广告外第二曲线 | A/B | 进入基准但保守；NTM 基准 `$4.5-5.5B` | Business AI 收费、WhatsApp commerce、agent 服务 |
+| Meta AI / Muse Spark / Llama / consumer and business agents | 直接收入未披露；Muse Spark 已在 Meta AI app 和 FoA chat 中推出，API 私测 | 直接收入接近 `0%` | 改善用户时长、广告库存和未来付费入口，但 NTM 直接收入可见度低 | C/D | 直接收入不进入基准；间接作用并入广告和 FoA other | 个人 AI 入口、API、business agent、AI 搜索/推荐广告 |
+| AI 基础设施 / MTIA / CoreWeave / 数据中心容量 | 外部收入 `0`；2026 CapEx 指引 `$125-145B`；CoreWeave `$21B`；Broadcom-MTIA `>1GW` 起步；Reliance `168MW` | 收入 `0%` | 成本、算力供给、推理 TCO、折旧和 FCF 核心变量 | A/B（成本与容量）；E（外部收入） | 不进入 NTM 收入；进入成本、利润率和现金流校准 | MTIA 450/500、multi-GW 自研 ASIC、Hyperion/Richland、印度 AI capacity |
+| Reality Labs / AI glasses / Quest | 2026Q1 RL revenue `$0.402B`，同比 `-2%`；Q1 RL operating loss `-$4.03B` | `0.7%` | 小收入、大亏损；AI glasses 是更贴近个人 AI 的硬件入口 | A/C | 收入进入基准但不加大权重；亏损进入公司利润汇总 | AI glasses 成为个人 agent 入口、AR display、wearable commerce |
+
+## 3. 产品需求四情景
+- 本步口径：本步只评估每条业务线的需求池，不判断公司份额和收入确认。广告需求用广告主预算、impressions、ad price、engagement、ROI 和新广告库存衡量；FoA other 用 paid messaging、订阅和 Business AI 使用衡量；Meta AI 用 sessions、token、API/agent 试用衡量；AI 基础设施用内部训练/推理 token、有效算力、CapEx 和可上电 MW 衡量；Reality Labs 用 AI glasses/Quest 终端需求衡量。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Family of Apps 广告与 AI 推荐/广告工具 | Q1 2026 impressions `+19%`、ad price `+12%`；Q2 revenue guide `$58-61B` | impressions `+6-12%`、price `-3%` 至 `+2%`；预算或转化回落 | impressions `+12-18%`、price `+4-8%`；Q2 指引兑现，后续自然放缓 | impressions `+18-24%`、price `+8-13%`；AI creative、Value Optimization、Reels/Threads 库存超预期 | impressions `+25%+`、price `+14%+`；AI agent/creative 明显抬升 ROI | 相对 TTM advertising `$206.9B`，NTM 需求池从 `$225B` 到 `$315B+` | 基准符合当前预期；悲观低于指引隐含路径；乐观/极度乐观高于当前预期 | 正向：8M+ advertiser 使用 gen AI creative，Value Optimization run-rate >`$20B`。反证：广告价格转弱、监管限制个性化、TikTok/Google/Amazon 分流 |
+| FoA other / WhatsApp paid messaging / Meta Verified / Business AI | Q1 2026 FoA other `$0.885B`、`+74%`；Business AI weekly conversations >`10M`，多数仍免费 | paid messaging 增速降至 `+10-25%`，Business AI 不收费 | paid messaging 和订阅延续高增，NTM 需求池 `$4.5-5.5B` | WhatsApp business、Status、Meta Verified、Business AI 试点带来 `$6-8B` 需求 | Business AI 成为 SMB 客服/销售入口，需求池 `$10B+` | 相对 Q1 年化 `$3.5B`，绝对增量约 `$0-8B+` | 基准略高于 run-rate；乐观需商业化进展 | 正向：Q1 other `+74%`。反证：消息商业化损害体验、地区监管、免费工具难收费 |
+| Meta AI / Muse Spark / Llama / agents | Muse Spark 已上线 Meta AI app 和 FoA chat；API 私测；直接收入未披露 | 使用量高但低付费，token 成本增加 | sessions/user 提升，主要贡献 engagement 和广告，直接收入 `$0-0.5B` | business agents/API/广告入口形成 `$1-3B` 直接或可归因需求 | consumer AI + business agent + API 形成 `$5B+` NTM 收入需求上限 | 直接收入从近 `0` 到 `$5B+` 上限；间接需求无法可靠量化 | 基准不把 Meta AI 当独立收入；乐观以上高于当前预期 | 正向：Muse Spark、double-digit Meta AI sessions/user 增长。反证：模型能力/品牌/付费习惯落后，免费使用消耗成本 |
+| AI 基础设施 / MTIA / CoreWeave / 数据中心容量 | 2026 CapEx `$125-145B`；Q1 10-Q 显示未开始租赁 `$182.88B`、不可取消承诺 `$237.67B`；CoreWeave `$21B`；MTIA `>1GW` 起步 | 有效上电低于采购，GPU/ASIC/电力/液冷延迟，利用率低 | 按 2026 指引和已签容量正常推进，支撑广告和 Meta AI 需求 | 组件交付、MTIA 迁移、外部云容量更快，推理成本下降 | 多 GW MTIA 和多区域数据中心同步上电，算力明显领先 | 需求的绝对变化是 CapEx/lease/commitment 的跃升，不是收入跃升 | 基准符合当前成本侧预期；极度乐观不等于收入极度乐观 | 正向：MTIA 多代、Broadcom、CoreWeave、Reliance。反证：CapEx 先行但广告/AI 收入不跟、GPU cloud 价格下跌、上电延期 |
+| Reality Labs / AI glasses / Quest | Q1 2026 RL revenue `$0.402B`、`-2%`；AI glasses 增长抵消 Quest 下滑 | Quest 继续下滑，AI glasses 增长不足，需求 `$1.6-2.1B` | AI glasses 增长抵消 Quest，需求 `$2.2-2.8B` | 新款 glasses/渠道扩张，需求 `$3.0-4.5B` | AI glasses 成为个人 AI 入口，需求 `$5-8B` | 相对 FY2025 RL revenue `$2.21B`，绝对变化 `-$0.6B` 到 `+$5.8B` | 基准大体符合当前预期；乐观以上需硬件放量证据 | 正向：daily AI glasses users tripled YoY。反证：隐私、续航、成本、应用不足和 RL 亏损 |
+
+## 4. 可收入化暴露与收入基数
+- 本步口径：本步只判断哪些需求能在 NTM 进入 META 收入表。广告和 FoA other 是 A 级收入表证据；Reality Labs 是 A 级收入表证据但商业质量低；Meta AI 直接收入是 C/D 级，不进基准；AI 基础设施和 MTIA 是成本/产能资产，外部收入证据为 E，不进入收入基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Family of Apps 广告与 AI 推荐/广告工具 | 2026Q1 Advertising `$55.024B`；FY2025 advertising `$196.175B`；Q2 total revenue guide `$58-61B` | 直接 | 高毛利但受折旧、云费用和 R&D 吞噬 | `$225-238B` | `$248-260B` | `$265-285B` | `$295-318B` | 基准符合 Q2 指引和广告 run-rate；悲观低于当前路径；乐观以上高于当前预期 | A | 是 | 收入表和指引可确认；广告量价披露清楚 | 基准主收入；全部公司收入判断先看该项 |
+| FoA other / WhatsApp paid messaging / Meta Verified / Business AI | 2026Q1 Other revenue `$0.885B`；FY2025 other `$2.584B` | 直接 | 软件/消息服务属性较好，但 Business AI 多数未收费 | `$3.5-4.2B` | `$4.5-5.5B` | `$6.0-8.0B` | `$10.0-12.0B` | 基准略高于 Q1 年化，符合高增 run-rate；极度乐观只代表上限 | A/B | 是，保守纳入 | 收入表有 FoA other；Business AI 使用量可作辅助但非收入锚 | 基准可纳入；Business AI 收费只进乐观以上 |
+| Meta AI / Muse Spark / Llama / agents | 直接收入未披露；API 私测；Meta AI sessions/user 提升 | 主要间接 | 短期成本先行，长期可变成广告/订阅/API | `$0` | `$0-0.5B` | `$1-3B` | `$5-8B` | 基准不高于当前预期；乐观以上高于当前预期 | C/D | 否，直接收入不进入基准主口径 | 产品发布和使用量披露强于主题映射，但没有正式收入表 | 间接收入并入广告；直接收入只作乐观/极度乐观 |
+| AI 基础设施 / MTIA / CoreWeave / 数据中心容量 | 外部收入 `0`；CapEx `$125-145B`；contractual commitments `$237.67B`；CoreWeave `$21B`；Broadcom/MTIA `>1GW` | 间接 | 成本/折旧/FCF 变量；MTIA 成本节省不等于收入 | `0` | `0` | `0` | `0` | 收入层面低于任何 AI 题材映射；成本层面显著高于 2025 | A/B（成本）；E（收入） | 否，收入不进基准；成本进利润/FCF | 10-Q、指引和合同证明成本侧，不证明外部收入 | 作为收入排除项；作为利润率和现金流核心校准项 |
+| Reality Labs / AI glasses / Quest | 2026Q1 RL revenue `$0.402B`；FY2025 RL revenue `$2.207B`；Q1 RL loss `-$4.028B` | 直接 | 低规模硬件/内容收入，大额经营亏损 | `$1.6-2.1B` | `$2.2-2.8B` | `$3.0-4.5B` | `$5.0-8.0B` | 基准接近当前 run-rate；乐观需 glasses 放量 | A/C | 是，但低权重 | 分部收入可确认；AI glasses 未单独披露 | 纳入公司收入，但不作为利润正贡献 |
+
+## 5. 产品级收入和利润贡献
+- 本步口径：本步从需求和收入基数出发，判断 NTM 产品级收入和经营利润贡献。广告、FoA other 和 Reality Labs 可进入收入；Meta AI 直接收入与 AI 基础设施收入不得与广告重复计算。AI 基础设施的“贡献”主要是成本/折旧/云费用/FCF 与潜在推理 TCO 改善，不是收入贡献。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Family of Apps 广告与 AI 推荐/广告工具 | 悲观产品 | `$225-238B` | FoA 广告相关经营利润 `$78-92B` | 下行 | 低于当前预期 | 广告仍有基数，但价格/ROI 弱化 | 保留 | 广告价格、监管、用户时长、AI search 和 retail media 分流 |
+| Family of Apps 广告与 AI 推荐/广告工具 | 基准产品 | `$248-260B` | `$98-115B` | 小幅下行至持平 | 符合当前预期 | Q1 ad `+33%`、Q2 guide、AI ads 工具转化改善 | 保留 | 基础设施折旧和云费用增长 |
+| Family of Apps 广告与 AI 推荐/广告工具 | 乐观产品 | `$265-285B` | `$118-135B` | 持平至上行 | 高于当前预期 | 8M+ gen AI ad creative users，Value Optimization run-rate >`$20B` | 保留 | 必须由广告 ROI 和价格验证 |
+| Family of Apps 广告与 AI 推荐/广告工具 | 极度乐观产品 | `$295-318B` | `$138-160B` | 上行 | 显著高于当前预期 | Reels/Threads/WhatsApp/AI creative 同时带来库存和价格 | 下移为上限 | 单靠 AI 叙事不足，需多季度量价同时高增 |
+| FoA other / WhatsApp paid messaging / Meta Verified / Business AI | 悲观产品 | `$3.5-4.2B` | `$1.5-2.2B` | 持平至下行 | 低于当前预期 | Q1 other 有收入但增速回落 | 保留 | 商业消息体验、监管、免费 Business AI 难收费 |
+| FoA other / WhatsApp paid messaging / Meta Verified / Business AI | 基准产品 | `$4.5-5.5B` | `$2.3-3.5B` | 持平 | 符合当前预期 | Q1 other `+74%`，WhatsApp paid messaging 和订阅驱动 | 保留 | 规模仍小，不能显著改变公司层面 |
+| FoA other / WhatsApp paid messaging / Meta Verified / Business AI | 乐观产品 | `$6.0-8.0B` | `$3.5-5.2B` | 上行 | 高于当前预期 | Business AI weekly conversations >`10M`，跨地区扩张 | 保留 | 需从使用量转收入 |
+| FoA other / WhatsApp paid messaging / Meta Verified / Business AI | 极度乐观产品 | `$10.0-12.0B` | `$6.0-8.0B` | 上行 | 显著高于当前预期 | WhatsApp business 成为 SMB agent/commerce 入口 | 下移为上限 | 公司尚未披露收费模型 |
+| Meta AI / Muse Spark / Llama / agents | 悲观产品 | `$0` | 直接利润为负；成本并入 R&D/infra | 下行 | 低于 AI 产品预期 | 使用量存在但无收费 | 保留 | 免费使用消耗 token，模型品牌弱 |
+| Meta AI / Muse Spark / Llama / agents | 基准产品 | `$0-0.5B` | 直接利润无法可靠量化；间接利润并入广告 | 持平至下行 | 符合当前预期 | Muse Spark 可用，API 私测，sessions/user 双位数提升 | 保留但不进基准收入主口径 | 无正式收入锚点 |
+| Meta AI / Muse Spark / Llama / agents | 乐观产品 | `$1-3B` | 直接利润仍可能为负，广告/Business AI 间接改善 | 不确定 | 高于当前预期 | API、business agent、AI ad surface 初步收费 | 下移为乐观上限 | 需要客户、价格和确认路径 |
+| Meta AI / Muse Spark / Llama / agents | 极度乐观产品 | `$5-8B` | 无法可靠量化，可能被推理成本抵消 | 不确定 | 显著高于当前预期 | 个人 AI 入口和 agent 广告商业化 | 下移为上限/附录跟踪 | D 级收入证据，不可作为基准 |
+| AI 基础设施 / MTIA / CoreWeave / 数据中心容量 | 悲观产品 | `0` 外部收入 | 经营成本和折旧拖累 `$25-38B`；FCF 大幅受压 | 下行 | 低于当前预期 | CapEx/commitments 已锁定但利用率不足 | 保留 | 上电、利用率、GPU cloud 价格、折旧 |
+| AI 基础设施 / MTIA / CoreWeave / 数据中心容量 | 基准产品 | `0` 外部收入 | 成本拖累 `$18-32B`，被广告增长部分覆盖 | 下行但可控 | 符合当前预期 | 2026 CapEx `$125-145B`，公司仍指引 operating income >2025 | 保留 | 折旧和云费用滞后释放 |
+| AI 基础设施 / MTIA / CoreWeave / 数据中心容量 | 乐观产品 | `0` 外部收入 | MTIA/调度降低单位推理成本，利润拖累降至 `$10-22B` | 持平至改善 | 高于当前预期 | MTIA 300/400/450/500 路线，PyTorch/vLLM/Triton 原生 | 保留 | 芯片、软件、HBM、网络和数据中心必须同步 |
+| AI 基础设施 / MTIA / CoreWeave / 数据中心容量 | 极度乐观产品 | `0` 外部收入 | 可归因成本节省和广告 uplift 显著，但无法可靠单独量化 | 上行 | 显著高于当前预期 | >`1GW` MTIA 起步、multi-GW rollout、CoreWeave/Reliance 加速 | 下移为上限 | 不得把 CapEx 当收入或利润 |
+| Reality Labs / AI glasses / Quest | 悲观产品 | `$1.6-2.1B` | `-$20-24B` | 下行 | 低于当前预期 | Quest 弱，AI glasses 未补足 | 保留 | 产品周期、隐私、续航、成本 |
+| Reality Labs / AI glasses / Quest | 基准产品 | `$2.2-2.8B` | `-$18-22B` | 持平 | 符合当前预期 | 公司预计 RL losses 近似 2025，AI glasses 增长 | 保留 | 亏损大、收入小 |
+| Reality Labs / AI glasses / Quest | 乐观产品 | `$3.0-4.5B` | `-$16-20B` | 小幅改善 | 高于当前预期 | AI glasses daily users tripled YoY | 保留但低权重 | 单品放量仍不足以扭转公司利润 |
+| Reality Labs / AI glasses / Quest | 极度乐观产品 | `$5.0-8.0B` | `-$14-19B` | 改善 | 显著高于当前预期 | glasses 成为个人 AI 入口 | 下移为上限 | 仍需硬件毛利、应用和渠道证据 |
+
+## 6. 公司收入和利润四情景
+- 本步口径：公司层面合成时去重处理。广告 AI、Meta AI 和 MTIA 的收益不可重复计算：如果 AI 提升广告价格和转化率，收入已经进入广告；如果 MTIA 降低推理成本，只进入利润率/FCF，不进入收入。Reality Labs 收入进入总收入，但亏损冲减经营利润。毛利率为经营估算口径，Q1 2026 报表毛利率约 `81.9%`，未来受基础设施成本影响。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$232-245B` | 相对 TTM `$214.96B` 为 `+8-14%` | 低于 Q2 指引后续延展和当前广告 run-rate | `78-80%` | `27-31%` | 经营利润 `$63-76B`；调整后净利润约 `$48-62B`；EBITDA 无法可靠量化 | FCF 可能接近 `0` 或转负，因 CapEx/lease 上行快于 OCF | 中 | 广告价格放缓、AI CapEx 转化慢、RL 亏损、监管 |
+| 基准公司 | `$258-270B` | `+20-26%` | 符合 Q2 `$58-61B` 指引、2026 operating income >2025 和正常季节性 | `79-81%` | `32-36%` | 经营利润 `$83-97B`；调整后净利润约 `$65-78B`；EBITDA 无法可靠量化 | FCF 低正，约 `$5-25B` 方向，明显低于广告利润增幅 | 中高收入 / 中利润 | 基础设施折旧、第三方云 spend、CapEx 节奏 |
+| 乐观公司 | `$275-295B` | `+28-37%` | 高于当前预期，需广告量价和 FoA other 同步上修 | `80-82%` | `36-40%` | 经营利润 `$100-118B`；调整后净利润约 `$78-92B`；EBITDA 无法可靠量化 | FCF 改善至 `$25-45B` 方向，但仍受 CapEx 上限压制 | 中 | AI 广告 ROI、MTIA 迁移、Business AI 收费 |
+| 极度乐观公司 | `$305-330B` | `+42-54%` | 显著高于当前预期；要求多个核心传导环节同时成立 | `81-83%` | `39-44%` | 经营利润 `$120-145B`；调整后净利润约 `$95-115B`；EBITDA 无法可靠量化 | FCF 不一定最高，约 `$20-55B` 方向，因为 CapEx 也可能继续上修 | 低到中 | 非线性广告价格、AI 产品商业化、MTIA/数据中心同步成功 |
+
+## 7. 证据校准、反证和可信度
+- 本步口径：本步只校准前四步，不重新估值。正向证据分别作用于需求、收入基数、产品贡献、利润率和执行可信度；同一风险只在影响层级处理一次。二级市场定价反应不作为经营传导证据。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 Advertising `$55.02B`、`+33%`，impressions `+19%`、price `+12%` | 需求 / 收入基数 / 产品贡献 | 支撑广告基准 `$248-260B` NTM | 高广告价格可吸收部分成本 | 强化 Q2 指引可信度 | 保留基准，保留乐观 |
+| Q2 2026 revenue guide `$58-61B` | 收入基数 / 公司汇总 | 给 NTM 起点提供 A 级锚 | 间接支撑 operating income >2025 | 无法覆盖全年 CapEx，但收入路径清楚 | 保留基准 |
+| 2026 expense `$162-169B`、CapEx `$125-145B` | 利润率 / 现金流 | 不增加收入 | 压低经营杠杆，限制极度乐观利润 | FCF 被显著压缩 | 下移极度乐观利润弹性 |
+| 10-Q 未开始租赁 `$182.88B`、不可取消承诺 `$237.67B` | 执行 / 现金流 | 证明供给扩张，不证明收入 | 增加未来折旧、租赁和云成本 | 提高融资和上电执行风险 | 保留成本侧反证 |
+| Meta AI / Muse Spark / Business AI 使用量改善 | 需求 / 远期期权 | 直接收入仍无法可靠量化 | 短期可能增加推理成本，长期改善广告/Business AI | 需要收费、广告加载或 agent 商业模式 | 基准只作间接，乐观保留 |
+| MTIA 300/400/450/500 与 Broadcom `>1GW` 起步 | 成本 / 执行可信度 | 外部收入为 `0` | 若迁移顺利，可降低单位推理成本 | 需 HBM、封装、软件、数据中心共同兑现 | 保留乐观成本改善，收入排除 |
+| CoreWeave `$21B` 和 Reliance `168MW` | 执行 / 算力供给 | 外部容量不是 Meta 收入 | 第三方云可加速但成本可能高于自建 | 增加可用容量，也增加长期承诺 | 保留基准执行，现金流风险不重复惩罚 |
+| Reality Labs Q1 revenue `-2%`、loss `-$4.03B` | 公司组合 / 利润 | 收入小，对总收入贡献弱 | 大额亏损冲减 FoA | 若 AI glasses 不放量，亏损持续 | 保留基准亏损，乐观低权重 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 广告需求低于当前路径，CapEx/折旧吞噬利润，RL 继续亏损 | 广告仍有高基数和 Q2 guide，FoA other 高增 | 广告价格转弱、监管、AI 使用无法商业化、CapEx 加速 | 保留 | 悲观下限 | 中 | CapEx 风险只在利润率/FCF 处理，不再重复压低广告需求 |
+| 基准 | 广告主业正常兑现，FoA other 小幅增量，Meta AI 主要间接贡献，AI 基建成本可控 | Q1 广告量价、Q2 guide、2026 operating income >2025、Q1 FCF 仍正 | CapEx `$125-145B`、承诺跃升、Meta AI 直接收入未披露 | 保留 | 基准主情景 | 中高收入 / 中利润 | Meta AI 无直接收入已在第二步排除，不再在公司收入重复扣减 |
+| 乐观 | 广告 ROI、FoA other、AI 工具和 MTIA 成本改善带来上修 | 8M+ gen AI ad creative users、Business AI >`10M` weekly conversations、MTIA 多代和 CoreWeave 容量 | Business AI 多数仍免费、MTIA 节省未披露、基础设施上电不确定 | 保留 | 乐观情景 | 中 | RL 亏损已在公司组合处理，不再下调每条 FoA 产品 |
+| 极度乐观 | 广告、商业消息、Meta AI、AI glasses、MTIA 成本和数据中心执行同时突破 | 多 GW MTIA、Muse Spark、Reliance/India、CoreWeave、广告工具全面使用 | 缺少 Meta AI 直接收入、硬件毛利和多季度广告价格持续上修证据 | 下移 | 极度乐观上限 / 附录跟踪 | 低到中 | 不把 CapEx、MTIA 供应链订单或外部云合同重复当作收入 |
+
+## 8. 结论
+- 最可能情景：基准。NTM 收入最可能落在 `$258-270B`，主要由广告贡献；FoA other 提供小幅高质量增量；Reality Labs 继续拖累利润；Meta AI 和 MTIA 主要体现为广告效率、用户时长和成本/token，而不是独立收入。
+- NTM 收入结论：广告是唯一足以决定公司 NTM 收入的业务线。AI 数据中心、MTIA、CoreWeave 和 Reliance 都是成本侧/供给侧证据，不能把行业 AI CapEx 或 MW 直接转成 META 收入。Meta AI 直接收入在 NTM 基准中只能接近 `0-0.5B`，乐观以上才可讨论 `$1B+`。
+- 利润/现金流结论：基准下经营利润可高于 2025，但经营利润率大概率低于 Q1 的 `41%`，因为第三方云、折旧、数据中心运营和 AI 人才费用会加速进入成本。FCF 是最脆弱指标，收入强也可能被 `$125-145B` CapEx 吸收。
+- 主要传导瓶颈：从“AI demand”到 META 经营价值的关键不是算力采购金额，而是 `广告转化率/价格 -> FoA operating income -> MTIA/云容量单位成本 -> FCF`。只要其中一个环节断裂，AI 支出就会从增长资产变成固定成本。
+- 乐观情景成立条件：Q2/Q3 广告价格和 impressions 均继续强于预期；Business AI/WhatsApp paid messaging 开始形成付费线索；Value Optimization、AI creative、Threads/WhatsApp Status ads 贡献可见；MTIA 300/400 迁移顺利并降低 inference TCO；CapEx 不再继续上修。
+- 极度乐观情景成立条件：广告量价连续多个季度非线性上修；Meta AI 成为默认个人 AI 入口并开始广告/API/agent 变现；FoA other NTM run-rate 超 `$10B`；MTIA 450/500 和 multi-GW capacity 提前上线；RL AI glasses 放量且亏损不再扩大。
+- 悲观情景触发条件：广告价格同比转负或明显低于 Q2 指引延展；EU/美国监管限制个性化广告；Q3/Q4 费用增长显著快于收入；2026 CapEx 或合同承诺继续上修但不披露 AI 收入/使用量；MTIA 或数据中心上电延期；RL 亏损超过 2025 水平。
+- 情景切换条件：从基准上移到乐观，需要广告价格、impressions、FoA other 和 MTIA 成本证据至少两项同时改善；从基准下移到悲观，只需广告价格/ROI 或 AI 基建成本任一核心传导环节连续两个季度弱于当前预期。
+- 后续跟踪指标：Q2/Q3 revenue guide 与实际广告量价；FoA other 增速和 WhatsApp paid messaging；Business AI conversations 是否转收费；Meta AI sessions/user 和付费入口；MTIA 400/450/500 部署；CoreWeave/Reliance/Richland 上电；depreciation and amortization、cost of revenue、R&D、third-party cloud spend；FCF margin；未开始租赁和合同承诺变化。
+
+## 附录：来源和补充口径
+- 经营数据日期：Meta 2026Q1 数据截至 2026-03-31；Q1 results 发布于 2026-04-29；Reliance 数据中心披露更新至 2026-06-12；本报告成文日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Meta Q1 2026 Results：`https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/default.aspx`
+  - Meta FY2025/Q4 2025 Results：`https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx`
+  - Meta Q1 2026 Form 10-Q：`https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/meta-20260331.htm`
+  - Meta Q1 2026 Earnings Call Transcript：`https://s21.q4cdn.com/399680738/files/doc_financials/2026/q1/META-Q1-2026-Earnings-Call-Transcript.pdf`
+  - Meta MTIA: Four MTIA Chips in Two Years：`https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/`
+  - Meta Muse Spark：`https://ai.meta.com/blog/introducing-muse-spark-msl/`
+  - CoreWeave-Meta `$21B` AI infrastructure agreement：`https://investors.coreweave.com/news/news-details/2026/CoreWeave-and-Meta-Announce-21-Billion-Expanded-AI-Infrastructure-Agreement/default.aspx`
+  - Broadcom-Meta custom silicon partnership：`https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/`
+  - Meta-Reliance India AI data center：`https://about.fb.com/news/2026/06/meta-partners-with-reliance-on-ai-enabled-data-center-in-india/`
+- 项目内公司资料：
+  - `公司调研/云算力_IDC_AI软件平台/META_Meta Platforms_公司调研_2026-06-11.md`
+- 项目内行业资料：
+  - `行业调研/产业背景/全球AI需求与Token经济框架_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 收入不是公司正式全年收入指引，本文从 Q1 actual、Q2 guide、季节性和当前 run-rate 推导；主表仍用 NTM。
+  - MTIA 450/500、Hyperion/Richland、Reliance 扩容、Meta AI API、Business AI 收费和下一代 AI glasses 均属于 2027+ 或 NTM 上限变量；除非有正式收费、交付或收入确认披露，不进入 NTM 基准收入。
+  - AI 数据中心 MW、CapEx、GPU/ASIC 订单和云容量合同只证明供给建设和成本承诺，不能直接等同为 META 可确认收入。

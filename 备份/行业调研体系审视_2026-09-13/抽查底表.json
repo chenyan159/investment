@@ -1,0 +1,620 @@
+{
+  "audit_date": "2026-09-13",
+  "scope": "Direct markdown reports in seven indexed active industry category directories; excludes backgrounds, methods and backups. URL overlap is screening only, not semantic duplication.",
+  "report_count": 80,
+  "characters_including_markdown_urls": 2741496,
+  "median_characters": 33749.5,
+  "category_counts": {
+    "AI园区电力_机电_冷却": 17,
+    "AI服务器_存储_芯片": 21,
+    "AI网络_光互联_铜互联": 18,
+    "半导体与电子制造_设备_材料_测试": 19,
+    "工业自动化_机器人_感知": 0,
+    "商业航天_火箭_卫星": 0,
+    "AI应用_软件_数据平台": 5
+  },
+  "files": [
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_DCIM、能控与AI工厂数字孪生_2026-09-06.md",
+      "sha256": "5b50dc6588a8e8037d6b3d6a5c03edb8a67084e5b84eab4c3f86741c94f3d2b2",
+      "characters": 39135,
+      "lines": 464
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_中压直流、800VDC与固态变压器_2026-09-06.md",
+      "sha256": "050ca14dbfac1b5008dee30e277f9ead16ac814ea48af4494ffc63426255092c",
+      "characters": 30456,
+      "lines": 461
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_冷却液、水处理、过滤与制冷剂_2026-09-06.md",
+      "sha256": "7f4e2d9b9f38e8b1d9829add72cd3a90c83b9a60a76a82b0d238a0bd3e0106d4",
+      "characters": 34204,
+      "lines": 554
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_功率半导体与高压保护器件_2026-09-06.md",
+      "sha256": "82c2981c4e68bfe2b09da4c0787919bc667f640850f500ee26a148edb519f129",
+      "characters": 43519,
+      "lines": 473
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_动态UPS、飞轮与超级电容_2026-09-06.md",
+      "sha256": "8a8faadeb336580df47ed34c97f174ee97074a8fda9853f899ac29eae5221cfc",
+      "characters": 32970,
+      "lines": 492
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_导管、桥架与线缆管理_2026-09-06.md",
+      "sha256": "cb1a2d51d8a0b7ad467c11710f118323913bec5215836144a450f95aee6b33b3",
+      "characters": 40805,
+      "lines": 526
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心UPS与电池储能_2026-09-06.md",
+      "sha256": "7ffd3f56630d68c59bec7b46aea7c44e45b9b179f7f072ad07a93c74149756c7",
+      "characters": 39111,
+      "lines": 593
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心低压配电、PDU与母线槽_2026-09-06.md",
+      "sha256": "93537694af38431633860bcbeede8929c1ecfab3a6a70e89dd888bab4cad8e30",
+      "characters": 28674,
+      "lines": 470
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心土建、MEP与预制化交付_2026-09-06.md",
+      "sha256": "2830c552245f9e38b54bef36b20065ef8d6c9e2219ed40a760d40a9c689bfa1f",
+      "characters": 39128,
+      "lines": 467
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心开关设备与变压器_2026-09-06.md",
+      "sha256": "28ffa37b0aa89e469596c7bfd3892b57f1060261bdf4521bea284dcb77945856",
+      "characters": 28667,
+      "lines": 389
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心电力接入与高压变电_2026-09-06.md",
+      "sha256": "337720bea470f9c8fa11fd33e3f0ffa9b11744ae41b38b6dfc67593731a51b1c",
+      "characters": 30782,
+      "lines": 505
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心直液冷系统_2026-09-06.md",
+      "sha256": "cc70a733b91177fcaa0bd66f8286793483ddad21c5804c11f5ee26292ab26374",
+      "characters": 32214,
+      "lines": 538
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心自备发电与微电网_2026-09-06.md",
+      "sha256": "0be01c9f1aed1ea1644c6ab0ad3ba08c9de49ca68c2c4da54cf4214a018e03a0",
+      "characters": 38015,
+      "lines": 587
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心风冷、冷水机组与HVAC_2026-09-06.md",
+      "sha256": "1aa1a378629ad67312030bd0908e24c760dd25a3c775febd13e9636b1e92d99a",
+      "characters": 31249,
+      "lines": 475
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_机柜、围护结构与物理安防_2026-09-06.md",
+      "sha256": "2d9535faede08b1469fb6fcf22656135e0ebf15f11a4da1ed37de556305622ad",
+      "characters": 36888,
+      "lines": 489
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_机柜级供电与服务器电源架构_2026-09-06.md",
+      "sha256": "656c7995aa4786e20bac41183bf04276aba6a50692e1a1fcdde716a25e900423",
+      "characters": 38121,
+      "lines": 572
+    },
+    {
+      "path": "基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_液冷小组件与流体控制_2026-09-06.md",
+      "sha256": "70718cebd3410beb3712f8706bde1fb2244a1a756475440459d69e350339e011",
+      "characters": 32620,
+      "lines": 569
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI-native存储与KV_Cache基础设施_2026-09-06.md",
+      "sha256": "0ea553debfee59cd74965d2fd7c34560677a31b29c908babc105b140e2df1c76",
+      "characters": 27558,
+      "lines": 430
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-09-06.md",
+      "sha256": "327db67eaea2f7a6a54279a027f22ca012b22f6fe024ecc38bcf191ca5f658c3",
+      "characters": 37503,
+      "lines": 587
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI服务器CPU与控制平面芯片_2026-09-06.md",
+      "sha256": "9fe08555d1426d858ae3572cde490dd8ccb3e97cee3b1d45350760d7aa8e6dd9",
+      "characters": 28332,
+      "lines": 398
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI服务器整机与机架集成_2026-09-06.md",
+      "sha256": "9ef6acb1ff074d11c5fcdb29db9071a91b59cf2913cee2b14a8ee229207184a7",
+      "characters": 36354,
+      "lines": 579
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI芯片先进封装_2026-09-06.md",
+      "sha256": "f4951898e7ba39f8109487d91b607b0577dfd0bb3e6a40152d478872449578ce",
+      "characters": 33123,
+      "lines": 549
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI边缘推理芯片_2026-09-06.md",
+      "sha256": "0337d7347e5d77c719af513200d94666b6bf17da3234fcfc1c154ffbfe65aff3",
+      "characters": 30441,
+      "lines": 417
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI集群调度与推理运行时_2026-09-06.md",
+      "sha256": "7a847b5033557fe579e0ec2cb27f18515fd023669b5381aeb488697e4241642f",
+      "characters": 33974,
+      "lines": 570
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_CXL内存扩展与内存池化_2026-09-06.md",
+      "sha256": "0558bd61d2c83c87461488eba6f6eeda31f1d7d865af3fed7bbb3e5f60404f79",
+      "characters": 27068,
+      "lines": 433
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_EDA工具、接口IP与Chiplet_IP_2026-09-06.md",
+      "sha256": "e67e40163ebb8535a73a033586b041b47d33b20dcbb50c6a84aa4582cf4fae5d",
+      "characters": 38815,
+      "lines": 602
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_HBM与高带宽内存_2026-09-06.md",
+      "sha256": "5f24d8b799d32d0eda22f6ec0487a1b1a2f01d7d73b99e819fbbadd2435c5e78",
+      "characters": 31676,
+      "lines": 521
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_HDD、对象存储与冷温数据存储_2026-09-06.md",
+      "sha256": "c79aa44fce47e0dd8bef9371405f229dcbc652b922923a9209421ab2cb1c0980",
+      "characters": 35755,
+      "lines": 512
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_MLCC与高端陶瓷电容_2026-09-06.md",
+      "sha256": "4ca6903f5cae7fb3419015f97169bd5669925c09d9b7ba7aec3d97cc798789b6",
+      "characters": 28856,
+      "lines": 509
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_云厂自研AI_ASIC_2026-09-06.md",
+      "sha256": "94b6f44e0a55692e92ee9df3f94d5c300940924b0fffcbcd557cf222737b45e7",
+      "characters": 38431,
+      "lines": 498
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_企业级SSD与高速存储控制器_2026-09-06.md",
+      "sha256": "f3acb68e1f91065c2edadf7e38f98a8c3fd14285324a8fcf6277bf709b195cff",
+      "characters": 44791,
+      "lines": 577
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_先进封装材料与热界面材料_2026-09-06.md",
+      "sha256": "c223bb0fed8447a20de9d5b653084246b3748b5845bbcd48363c46435751bc7e",
+      "characters": 31295,
+      "lines": 462
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_商用AI加速芯片_2026-09-06.md",
+      "sha256": "5ba247ed20c167267ce29d704b18a8bfbfd349221da55fc6e17f846bccbf8d27",
+      "characters": 31827,
+      "lines": 549
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_封装基板、中介层与RDL_2026-09-06.md",
+      "sha256": "2c7e45aae20b5c43530f8912615ff5c0e72e9f27e346a8983b2a2db212716f53",
+      "characters": 31916,
+      "lines": 503
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_服务器BMC、MCU与嵌入式控制_2026-09-06.md",
+      "sha256": "d3e3d962b94c5d91ecacd0f018e7f3add5e9c7aede41b8df5f744a05d4d9d215",
+      "characters": 31565,
+      "lines": 486
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_片上SRAM、MRAM与近存计算_2026-09-06.md",
+      "sha256": "64d258900435b85ceebd02510e5eab33adbde144fd69de7285a10be0130d6599",
+      "characters": 39082,
+      "lines": 505
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_精密时钟与同步芯片_2026-09-06.md",
+      "sha256": "d9d37b28feac08372bfa78e2c31db7b6220df1fed66a01d5d74f0ab560c2d3aa",
+      "characters": 33452,
+      "lines": 522
+    },
+    {
+      "path": "基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_系统内存、SOCAMM与内存模组_2026-09-06.md",
+      "sha256": "0dc9c308e392fa0b2b115e2da1c1443eaaf42fa08521b290270692eaebe726d5",
+      "characters": 32759,
+      "lines": 507
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_800G_1.6T可插拔光模块_2026-09-06.md",
+      "sha256": "1bba349dbff25aa27bb3cabfe712b0ac87969c53a7fbdf2c348790523075836d",
+      "characters": 32125,
+      "lines": 423
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_AEC、DAC与高速铜缆_2026-09-06.md",
+      "sha256": "32d00ff4d7ee0fd59a9045ce6363530976380b48538b76b02c01c9e4e135cfdc",
+      "characters": 29411,
+      "lines": 500
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_AI_Fabric网络操作系统与遥测软件_2026-09-06.md",
+      "sha256": "2d36e5a896276364a935e5c3c0e9240f9a7fbfda45c8339bded06eb9d63d691a",
+      "characters": 35460,
+      "lines": 520
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_AI以太网交换系统与Fabric芯片_2026-09-06.md",
+      "sha256": "5ec2b768a025222a7db08dd5a2ac77c9eed94187bf870791595e27af2fc13117",
+      "characters": 37826,
+      "lines": 547
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_CPO_NPO与交换侧光引擎_2026-09-06.md",
+      "sha256": "5ef77f7b34083072ef7c93092be0b7889d15e60db8966bb6979c359d29fc072a",
+      "characters": 36881,
+      "lines": 584
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_InfiniBand与专有Scale-up互联_2026-09-06.md",
+      "sha256": "248d280165470ba42e62a7f229563b766d9092c57040b196bafadc706f32ee4e",
+      "characters": 40889,
+      "lines": 558
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_LPO_LRO线性光模块_2026-09-06.md",
+      "sha256": "34a935016b508e9121c6f9a29623d30fe29ac1e83d72fbfcfd4b3633d34ad11e",
+      "characters": 32306,
+      "lines": 520
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_OCI_（光学计算互连）_Open_CPX_XPO_2026-09-06.md",
+      "sha256": "e0eee5dbfce301f94aa81ad96f33d465be8fa3938fa860a045a0ef495f51fe85",
+      "characters": 38642,
+      "lines": 726
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_OCS光路交换_2026-09-06.md",
+      "sha256": "829a92a6baa2a2243a18b7481318daa1ccbe01288067d1f0d3dd99b1b7c8d60a",
+      "characters": 33099,
+      "lines": 493
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_Optical_Interposer与新型光引擎_2026-09-06.md",
+      "sha256": "6a6c75d94eb7e92e86c9a2e92f0a2be796b4d14ae2afe1b6944a608d4a584f30",
+      "characters": 33749,
+      "lines": 482
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_PCIe_CXL高速I_O交换与Retimer_2026-09-06.md",
+      "sha256": "df402ede213557776d42449d22cf1257b12cb61b6a3cf60d01288b3204a87fe8",
+      "characters": 32330,
+      "lines": 539
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_光DSP、TIA与CDR芯片_2026-09-06.md",
+      "sha256": "7705c77cbf46f64eaed6971e69cdb8ab16023a8de489da287341cee1b71d5a9e",
+      "characters": 40820,
+      "lines": 540
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_宽带接入、PON、DOCSIS_4.0与Wi-Fi_7_2026-09-06.md",
+      "sha256": "77b9c66bfcbf256e38c821c0c7f2e29999b7dfd8432a9a51f944e02a02819b01",
+      "characters": 35353,
+      "lines": 507
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_封装内光I_O与Optical_Chiplet_2026-09-06.md",
+      "sha256": "780ddda9f03109fdf07bce39d665b2764bd57bef5ac11d3dd569f6c664ae62e1",
+      "characters": 36448,
+      "lines": 494
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_开放Scale-up互联_2026-09-06.md",
+      "sha256": "38928146552119d4e55f7857222bf5522d0d8d646a60cd2389aa43ae958c22f2",
+      "characters": 35408,
+      "lines": 550
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_激光器、EML与光器件_2026-09-06.md",
+      "sha256": "dbdb290e525dde41d0b9f3dcbb49ce3c142ee2a0d3d8ad6b49c8b0c646fe2a7f",
+      "characters": 31068,
+      "lines": 490
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_网卡、DPU与SmartNIC_2026-09-06.md",
+      "sha256": "c5c287b1effc47d2b992d7ecf5555cffa2b18b58631ae02168218c1b6a899a4b",
+      "characters": 29491,
+      "lines": 396
+    },
+    {
+      "path": "基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_高速连接器、背板与结构化布线_2026-09-06.md",
+      "sha256": "8e54247ffc3c7a2d6542c7f9145473dec817b265f1923533f645a129eaf645e1",
+      "characters": 33005,
+      "lines": 515
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_AI芯片前道制造设备_2026-09-06.md",
+      "sha256": "38a6831bd0d2fd7cee64d8910983c59deafda389b8cad58d17ffbe2ca7123331",
+      "characters": 33750,
+      "lines": 522
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_HBM与存储测试设备_2026-09-06.md",
+      "sha256": "a0687d157f36d5ec3ed9db7d0959a3e5575e7adb4eb850eb4b2ffdb8b12cf836",
+      "characters": 37152,
+      "lines": 519
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_先进封装湿化学与表面处理材料_2026-09-06.md",
+      "sha256": "f500a7c7380983a948496c24f89cca616a24553b446a4d79a22b78403a640470",
+      "characters": 28609,
+      "lines": 414
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_先进封装设备与混合键合_2026-09-06.md",
+      "sha256": "d5d8fbc26375f040a79a6d367aa15bb237c78bc573fe557fb40e9404c609d7a7",
+      "characters": 30800,
+      "lines": 492
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_先进逻辑晶圆代工和封装_2026-09-06.md",
+      "sha256": "7ceb451fc8b4e35b5ea0adb968c647adc7d1484a867c0c829b3a2fbf38bdd708",
+      "characters": 35236,
+      "lines": 532
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_半导体检测量测设备_2026-09-06.md",
+      "sha256": "d09d98aad0a03cbf8e4538f4cde89bd4f6531c875e5e1644a811723d814555bb",
+      "characters": 37814,
+      "lines": 577
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_半导体设备子系统与真空_RF_流体模块_2026-09-06.md",
+      "sha256": "0fd1778ef7f80511dbe26d11e9b4342b969b32951a77cd6a65cabf34b5ebb53c",
+      "characters": 36861,
+      "lines": 528
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_半导体高纯水、气体与化学流体系统_2026-09-06.md",
+      "sha256": "b613b6a4934e73134831844b33191ac853bd16026024e64214b4a784189c1f39",
+      "characters": 29323,
+      "lines": 458
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_存储前道制造设备_2026-09-06.md",
+      "sha256": "defc84f26a49e0323d0473e5f4aade3283991216bb6156360cf6b90bb7e7f41c",
+      "characters": 32791,
+      "lines": 507
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_存储晶圆制造_2026-09-06.md",
+      "sha256": "e232844fedc7bb163c39d9559e38aea9b275b45ef7b5d340771883f97ab091c6",
+      "characters": 37348,
+      "lines": 558
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_探针卡、ATE与系统级测试_2026-09-06.md",
+      "sha256": "426e14d183bc7ff2e684d3a8f76e376a7ccdd56ca072d0441e2d3ac44a68342a",
+      "characters": 37338,
+      "lines": 566
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_晶圆厂洁净室与厂务系统_2026-09-06.md",
+      "sha256": "0dbfbd9a45c91e71af307350ca42a80b0ae88f55abd938935a2737aff1f2649e",
+      "characters": 30269,
+      "lines": 423
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_特种晶圆代工_2026-09-06.md",
+      "sha256": "c0c58721a95aa05916b768fd9c7a7995597ed45af63de8b1159728230dbeaecf",
+      "characters": 33873,
+      "lines": 430
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_玻璃基板、TGV与玻璃检测_2026-09-06.md",
+      "sha256": "3ae564c0d8578e5b8600b84484ec79eab8ed99a1ed7b893c7397cb2c36201ff8",
+      "characters": 35044,
+      "lines": 496
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_硅光材料、光子材料与电光聚合物_2026-09-06.md",
+      "sha256": "75b38df19d2074ad4c2b1cb1e76d461902c1ca6efa3f4716e9f3c73f0a5ec359",
+      "characters": 40926,
+      "lines": 616
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_硅片、光刻胶与前道材料_2026-09-06.md",
+      "sha256": "28785bcd0a7f061ccb0e82e13a104e93a77fa11cf3cd1fd16e496e9d0b4fed0f",
+      "characters": 33865,
+      "lines": 452
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_高端光罩与先进封装掩模_2026-09-06.md",
+      "sha256": "693f7bbe9236c085e01da655871237af4dee574ab87e61f79fd4cb02b3f99c34",
+      "characters": 32522,
+      "lines": 502
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_高纯氟聚合物流体系统_2026-09-06.md",
+      "sha256": "2add136510829e1a90cc2184306d3befa09e34eae75969cebfbbbfed008c8ebc",
+      "characters": 30234,
+      "lines": 508
+    },
+    {
+      "path": "基本面\\行业调研\\半导体与电子制造_设备_材料_测试\\行业调研_高速互连与光学验证测试_2026-09-06.md",
+      "sha256": "130e8b5908a67b10b77cee1728ad69981b708aac6cb7cbb291d87a58d9420ff0",
+      "characters": 31503,
+      "lines": 473
+    },
+    {
+      "path": "基本面\\行业调研\\AI应用_软件_数据平台\\行业调研_AI创作与文档生产软件_2026-09-06.md",
+      "sha256": "ba509f65828689312b790d4f4148cb15f7f8518bd433fc8b5c3fdf2b12cea457",
+      "characters": 30751,
+      "lines": 450
+    },
+    {
+      "path": "基本面\\行业调研\\AI应用_软件_数据平台\\行业调研_企业AI与Agent工作流软件_2026-09-06.md",
+      "sha256": "2c246b5690f63fe054e72e41a28e49572b3d5adacfebcbbec42587f410572d88",
+      "characters": 35107,
+      "lines": 544
+    },
+    {
+      "path": "基本面\\行业调研\\AI应用_软件_数据平台\\行业调研_广告推荐、搜索与数字分发_2026-09-06.md",
+      "sha256": "d3b3b9a6d2305acfd7d25b4d229a1de72cc73509d7a93b8ecfdd5a154683f7e6",
+      "characters": 38338,
+      "lines": 486
+    },
+    {
+      "path": "基本面\\行业调研\\AI应用_软件_数据平台\\行业调研_数据平台、数据库与AI数据软件_2026-09-06.md",
+      "sha256": "0c2ddc5672763fa2ee1eb7121a7136835f3c6a11f2d9a142654b6512d5544502",
+      "characters": 34347,
+      "lines": 602
+    },
+    {
+      "path": "基本面\\行业调研\\AI应用_软件_数据平台\\行业调研_网络安全、身份权限与AI治理_2026-09-06.md",
+      "sha256": "82581dff8ceeb1c4910b4b469c7d95c8a55f7ad640ae0f80403e12679835d266",
+      "characters": 32253,
+      "lines": 533
+    }
+  ],
+  "top_url_overlap_pairs": [
+    {
+      "left": "行业调研_CPO_NPO与交换侧光引擎_2026-09-06.md",
+      "right": "行业调研_OCI_（光学计算互连）_Open_CPX_XPO_2026-09-06.md",
+      "shared_exact_urls": 12,
+      "left_urls": 47,
+      "right_urls": 43,
+      "jaccard": 0.15384615384615385
+    },
+    {
+      "left": "行业调研_Optical_Interposer与新型光引擎_2026-09-06.md",
+      "right": "行业调研_封装内光I_O与Optical_Chiplet_2026-09-06.md",
+      "shared_exact_urls": 14,
+      "left_urls": 54,
+      "right_urls": 51,
+      "jaccard": 0.15384615384615385
+    },
+    {
+      "left": "行业调研_云厂自研AI_ASIC_2026-09-06.md",
+      "right": "行业调研_商用AI加速芯片_2026-09-06.md",
+      "shared_exact_urls": 11,
+      "left_urls": 43,
+      "right_urls": 42,
+      "jaccard": 0.14864864864864866
+    },
+    {
+      "left": "行业调研_AI芯片先进封装_2026-09-06.md",
+      "right": "行业调研_商用AI加速芯片_2026-09-06.md",
+      "shared_exact_urls": 10,
+      "left_urls": 37,
+      "right_urls": 42,
+      "jaccard": 0.14492753623188406
+    },
+    {
+      "left": "行业调研_OCI_（光学计算互连）_Open_CPX_XPO_2026-09-06.md",
+      "right": "行业调研_Optical_Interposer与新型光引擎_2026-09-06.md",
+      "shared_exact_urls": 11,
+      "left_urls": 43,
+      "right_urls": 54,
+      "jaccard": 0.12790697674418605
+    },
+    {
+      "left": "行业调研_LPO_LRO线性光模块_2026-09-06.md",
+      "right": "行业调研_光DSP、TIA与CDR芯片_2026-09-06.md",
+      "shared_exact_urls": 9,
+      "left_urls": 39,
+      "right_urls": 41,
+      "jaccard": 0.1267605633802817
+    },
+    {
+      "left": "行业调研_CPO_NPO与交换侧光引擎_2026-09-06.md",
+      "right": "行业调研_Optical_Interposer与新型光引擎_2026-09-06.md",
+      "shared_exact_urls": 11,
+      "left_urls": 47,
+      "right_urls": 54,
+      "jaccard": 0.12222222222222222
+    },
+    {
+      "left": "行业调研_OCI_（光学计算互连）_Open_CPX_XPO_2026-09-06.md",
+      "right": "行业调研_封装内光I_O与Optical_Chiplet_2026-09-06.md",
+      "shared_exact_urls": 10,
+      "left_urls": 43,
+      "right_urls": 51,
+      "jaccard": 0.11904761904761904
+    },
+    {
+      "left": "行业调研_800G_1.6T可插拔光模块_2026-09-06.md",
+      "right": "行业调研_激光器、EML与光器件_2026-09-06.md",
+      "shared_exact_urls": 8,
+      "left_urls": 42,
+      "right_urls": 34,
+      "jaccard": 0.11764705882352941
+    },
+    {
+      "left": "行业调研_HBM与高带宽内存_2026-09-06.md",
+      "right": "行业调研_HBM与存储测试设备_2026-09-06.md",
+      "shared_exact_urls": 9,
+      "left_urls": 49,
+      "right_urls": 38,
+      "jaccard": 0.11538461538461539
+    },
+    {
+      "left": "行业调研_CPO_NPO与交换侧光引擎_2026-09-06.md",
+      "right": "行业调研_封装内光I_O与Optical_Chiplet_2026-09-06.md",
+      "shared_exact_urls": 10,
+      "left_urls": 47,
+      "right_urls": 51,
+      "jaccard": 0.11363636363636363
+    },
+    {
+      "left": "行业调研_AI-native存储与KV_Cache基础设施_2026-09-06.md",
+      "right": "行业调研_企业级SSD与高速存储控制器_2026-09-06.md",
+      "shared_exact_urls": 9,
+      "left_urls": 41,
+      "right_urls": 49,
+      "jaccard": 0.1111111111111111
+    },
+    {
+      "left": "行业调研_AI芯片前道制造设备_2026-09-06.md",
+      "right": "行业调研_存储前道制造设备_2026-09-06.md",
+      "shared_exact_urls": 9,
+      "left_urls": 51,
+      "right_urls": 45,
+      "jaccard": 0.10344827586206896
+    },
+    {
+      "left": "行业调研_商用AI加速芯片_2026-09-06.md",
+      "right": "行业调研_存储晶圆制造_2026-09-06.md",
+      "shared_exact_urls": 7,
+      "left_urls": 42,
+      "right_urls": 33,
+      "jaccard": 0.10294117647058823
+    },
+    {
+      "left": "行业调研_AI服务器整机与机架集成_2026-09-06.md",
+      "right": "行业调研_商用AI加速芯片_2026-09-06.md",
+      "shared_exact_urls": 8,
+      "left_urls": 44,
+      "right_urls": 42,
+      "jaccard": 0.10256410256410256
+    }
+  ]
+}

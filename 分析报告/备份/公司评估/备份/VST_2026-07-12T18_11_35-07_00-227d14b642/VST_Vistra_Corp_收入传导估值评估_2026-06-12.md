@@ -1,0 +1,177 @@
+# 公司收入传导与价值传导评估：Vistra Corp
+
+报告日期：2026-06-12  
+公司代号：VST  
+公司名称：Vistra Corp  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM，即 2026-06-12 至 2027-06-12 附近的未来 12 个月经营窗口。FY2026、FY2027、项目全周期、长期 run-rate 和远期期权只作为补充口径。  
+资料边界：本报告优先使用 `公司调研/电力_发电_能源_储能/VST_Vistra_Corp_公司调研_2026-06-11.md`、`行业调研/AI园区电力_机电_冷却/` 及 `行业调研/产业背景/` 中与数据中心电力、PPA、自备发电、微电网、UPS/BESS、AI 数据中心建设规模相关的上游资料，并用 Vistra IR、SEC、Meta、KKR、Goldman Sachs、JLL、CBRE、LBNL/DOE 等外部高置信来源核对关键时点。未读取、引用或继承 `特征量化/`、Signals、排序结果、回归结论或模型比较。  
+估值边界：文件名按任务指定保留“估值评估”，但本文不做市场定价、目标价、投资评级、估值倍数判断，也不把股价或估值数据作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径是 NTM 经营收入、Ongoing Operations Adjusted EBITDA、Ongoing Operations Adjusted FCFbG 和关键业务传导。FY2026 指引、FY2027 midpoint opportunity、Meta/AWS PPA 全周期、Cogentrix 全年化和 Helix 平台只作补充。
+- 当前收入基准、指引和 run-rate：Vistra 2025 年收入约 `$17.738B`，2026Q1 收入 `$5.640B`，2026Q1 Ongoing Operations Adjusted EBITDA `$1.494B`。公司重申 2026 Ongoing Operations Adjusted EBITDA `$6.8-7.6B`、Ongoing Operations Adjusted FCFbG `$3.925-4.725B`。该指引排除 Cogentrix 和 Meta PPA 潜在影响。
+- 重要产品/业务线：Retail 零售电力与综合套保、East PJM 核电/容量/PPA、Texas ERCOT 发电与 Comanche Peak/气电、dispatchable gas 和待交割 Cogentrix、West/储能与 Asset Closure 风险、Helix preferred power partner 期权。
+- NTM 公司收入四情景：悲观 `$17.5-19.0B`；基准 `$19.5-21.5B`；乐观 `$21.5-24.0B`；极度乐观 `$24.0-27.0B`。收入没有正式指引，区间是基于 FY2025、TTM、2026Q1 run-rate、分部收入、套保/容量收入和潜在并购贡献的经营估算，可信度低于 EBITDA。
+- 利润或 EBITDA 四情景：悲观 Ongoing Adj. EBITDA `$6.2-6.8B`；基准 `$7.0-7.6B`；乐观 `$7.7-8.5B`；极度乐观 `$8.5-9.5B+`。基准锚是公司 2026 指引与 2027 opportunity 的 NTM 交叉区间，乐观以上需要 Meta 初期贡献、PJM/ERCOT 容量/电价强于预期、Cogentrix 交割和气电价差改善共同成立。
+- 最大传导瓶颈：数据中心和 AI 用电需求真实，但 VST 只有在合同、ISO/RTO 规则、PPA 交付、容量市场、核电运行、气电供给和收入确认路径成立时，才能把行业需求变成 NTM 可确认收入。
+- 最大利润率变量：East/PJM 核电容量和 Meta PPA 的价格/时间表、Texas 和 East 的 realized energy/capacity price、天然气 spark spread、Retail 天气和采购成本、核电/气电维护成本、套保结算与抵押品。
+- 最大现金流变量：Ongoing Adj. FCFbG 指引、Cogentrix 现金对价和债务承接、Meta uprate/延寿 capex、Nuveen/少数股权相关付款、Moss Landing/Asset Closure 成本、衍生品 margin/collateral。
+- 可信度：基准公司情景为中高；产品级收入基数中 Retail、现有 Texas/East/West 发电为高，Meta operating PPA 初期贡献为中高，Cogentrix 为中，Helix 和 AWS NTM 收入为低或远期期权。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Retail 零售电力与综合套保 | FY2025 segment operating revenue `$14.340B`；2026Q1 `$3.689B` | FY2025 reportable segment revenue 约 `55%`，但合并层有 eliminations | 收入最大、现金流和天然对冲核心，直接 AI 暴露低 | A | 进入基准。按天气正常化、客户留存、采购成本和 retail margin 处理 | 低，主要是综合套保与负荷管理能力 |
+| East PJM 发电、核电、容量和 Meta PPA | FY2025 segment revenue `$6.174B`；2026Q1 `$2.260B`；2026Q1 Adj. EBITDA `$801M` | FY2025 reportable segment revenue 约 `24%` | 利润和 AI 核电 PPA 传导核心 | A/B | 现有 East 业务进入基准；Meta 2,176MW operating PPA 的晚 2026/2027 初期交付小比例进入基准，433MW uprate 不进 NTM | Meta uprate 2031-2034、更多 PJM CFE PPA |
+| Texas/ERCOT 发电、Comanche Peak、气电、容量和零售协同 | FY2025 segment revenue `$5.353B`；2026Q1 `$2.987B`；2026Q1 Adj. EBITDA `$586M` | FY2025 reportable segment revenue 约 `20%` | ERCOT 供需、Comanche Peak、气电和 Retail hedge 的利润弹性 | A/B | 现有 Texas 业务进入基准；AWS Comanche Peak PPA 预计 Q4 2027 开始，通常不进 NTM 基准 | AWS 1,200MW PPA、Comanche Peak 长期 CFE 溢价、Texas 新 gas units |
+| Dispatchable gas 扩张：Lotus、Cogentrix、Permian 860MW、gas uprates | Lotus 2.6GW 已收购并在 Q1 贡献；Cogentrix 5.5GW 待交割；Permian 860MW 预计 2028 | 当前收入嵌在 Texas/East/West；Cogentrix 尚未入表 | AI time-to-power 和容量市场的可执行供给 | Lotus A；Cogentrix B；Permian C | Lotus 进入基准；Cogentrix因未交割且指引排除，基准不纳入或仅作为敏感性，乐观纳入部分 NTM；Permian 不进 NTM | Cogentrix 全年化、更多 gas-backed AI PPA、Permian 2028 |
+| West、Solar/BESS、Moss Landing 与储能/可再生 | FY2025 West revenue `$325M`；2026Q1 `$89M`；West Adj. EBITDA `$56M` | 小于 `2%` 的 segment revenue | 组合补充和风险项，非主增长引擎 | A/C | West 正常经营进入基准；Moss Landing 作为执行/现金流反证处理；新增 BESS/solar 只按已披露项目纳入 | AI campus 储能、grid services、BESS 安全反证消除 |
+| Helix Digital Infrastructure preferred power partner | 当前未披露 VST 可确认收入；平台 committed capital `>$10B` | 当前合并收入 `0` 或无法分辨 | 可带来早期项目入口，但 NTM 收入确认不清 | D | 不进 NTM 基准；乐观/极度乐观只作为潜在项目入口，需具体 PPA/供电合同 | Helix 项目、NVIDIA DSX AI factory 配套、VST first look/priority rights |
+| Asset Closure、煤电退役、复垦和事故处置 | 2026Q1 Asset Closure Adj. EBITDA `-$19M` | 收入小，现金流风险可能不小 | 风险和抵消项 | A | 作为公司层面利润/现金流扣减项，不作为成长业务 | Moss Landing 保险回收或成本收敛 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池和需求强弱，不判断 VST 份额、收入确认和利润率。需求锚来自行业数据中心电力需求、PJM/ERCOT 容量和电价、客户 24/7 carbon-free energy 需求、Retail 负荷、发电容量和已签 PPA 时间表。当前预期以公司 2026 指引、2027 midpoint opportunity、已套保发电量、已披露 PPA、行业电力瓶颈和本地行业调研为锚。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Retail 零售电力与综合套保 | 约 500 万零售客户；FY2025 Retail revenue `$14.340B`；天气正常化负荷和客户留存 | 负荷/天气低于正常，竞争加剧，Retail EBITDA 低于季节性预期 | 客户数、用电量和采购成本大体正常，Retail 作为发电组合 hedge 正常发挥 | Texas/多州负荷和天气强于正常，采购成本有利，客户留存改善 | 极端天气和供需紧张显著提高 retail margin，但非可持续 | 需求单位为零售 MWh/客户数，无法可靠量化为单一需求池 | 悲观低于当前预期；基准符合；乐观高于；极度乐观为天气/供需上限 | Q1 2026 Retail Adj. EBITDA 受 mild weather 压低；天气本身不能重复惩罚到发电和 Retail 两层 |
+| East PJM 核电、容量和 Meta operating PPA | Meta 2,176MW operating nuclear energy/capacity，晚 2026 开始部分交付，2027 年底 operating full delivery；PJM 容量紧张 | PJM 大负荷规则、核电检修或交付条款导致初期 PPA/容量兑现低于节奏 | operating PPA 按晚 2026 起小比例进入 NTM，PJM 容量和核电 availability 正常 | Meta ramp 更顺，PJM capacity/energy price 强，更多 CFE 客户询价 | 新增 `1GW+` CFE PPA 或 Helix/PJM 大客户在 NTM 内转正式合同 | 已签 Meta `2,176MW` operating；uprate `433MW` 不在 NTM；新增 PPA 为上行 | 基准符合当前披露；乐观高于当前预期；极度乐观需新增预算和合同 | 证据强在 MW 和时间表，弱在价格未披露；FERC/PUC/co-location 规则是反证 |
+| Texas/ERCOT 发电和 Comanche Peak | ERCOT 负荷增长、Comanche Peak、AWS 1,200MW PPA 但 Q4 2027 开始，Q1 2026 Texas Adj. EBITDA `$586M` | ERCOT reserve margin 改善、spark spread 或 realized price 低于预期，AWS 不影响 NTM | 现有 Texas fleet 和 hedging 支撑 2026 指引，AWS 不进入 NTM 基准 | ERCOT 热夏、工业/AI/油气负荷强、容量和价格强于套保路径 | 新 Texas CFE/gas-backed customer contract 在 NTM 内签约并确认 | AWS `1,200MW` 是远期；NTM 主要是现有 Texas fleet 和 Lotus/气电优化 | 基准符合；乐观高于；极度乐观需新增合同 | 2026 generation volumes 98% hedged，限制短期电价上行和下行的利润传导 |
+| Dispatchable gas 扩张：Lotus、Cogentrix、Permian | Lotus 2.6GW 已入表；Cogentrix 5.5GW expected H2 2026 close；数据中心自备发电/桥接电力需求强 | Cogentrix 延迟或审批受阻，spark spread 不利，gas fuel/排放约束压低需求 | Lotus 正常贡献；Cogentrix 不在公司指引内，基准仅列敏感性 | Cogentrix 2026H2 交割并贡献部分 NTM，PJM/ISO-NE/ISO 容量价格强 | Cogentrix 交割、gas fleet 与 AI time-to-power 客户形成新长约 | 可参与需求以 MW 计：Lotus 2.6GW、Cogentrix 5.5GW、Permian 860MW 远期 | 基准不超越指引；乐观高于当前正式指引 | 本地行业资料支持 gas as bridge power，但 VST 未披露具体 gas-backed AI PPA |
+| West、Solar/BESS、储能与可再生 | West FY2025 revenue `$325M`；Oak Hill Solar 200MW；BESS/solar 是 AI PPA 辅助而非主电源 | Moss Landing 事故成本扩大或 BESS 许可/保险收紧 | West 小基数稳定，solar/BESS 只按已投运或已披露项目计 | BESS/grid services 和 solar PPA attach 改善，事故影响收敛 | BESS 与 AI campus/Helix 项目绑定，但需合同 | 当前需求基数小；绝对变化多数低于 `$0.5B` 收入级别 | 基准符合；乐观小幅高于；极度乐观仅上限 | 数据中心 BESS 需求强，但 VST 当前不是纯 BESS 设备商 |
+| Helix preferred power partner | Helix committed capital `>$10B`，VST preferred power partner；无项目级 VST 收入披露 | 平台成立但无 VST 供电合同或项目延迟 | 作为 pipeline，不进入 NTM 需求基准 | 首批 Helix 项目披露 VST 供电框架或 PPA | 多项目 NTP，VST 获得 `1-3GW` 新 power opportunity | 绝对需求可很大，但 NTM 可确认需求目前为 `0` 或无法可靠量化 | 当前预期：期权，不是基准需求 | 只有平台公告是 D 级收入证据；必须有客户、项目、PPA 和交付时间 |
+| Asset Closure/退役煤电与事故处置 | 需求不是增长项；主要是退役/合规/保险/事故处置工作量 | 处置成本和停运时间高于预期 | 成本按公司当前经营计划处理 | 保险回收或成本低于预期 | 大幅回收或风险出清 | 无法可靠量化为需求收入 | 基准为成本/风险中性 | 只在现金流/执行层处理，不重复压低需求和收入 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些需求能进入 VST NTM 收入表，以及当前可收入化基数，不预测增长和利润率。证据等级按收入表可确认性处理：A=已披露收入/指引/已确认出货，B=正式合同/backlog/RPO/交付时间表，C=管理层披露/产能规划/认证，D=平台、样品、早期合作或未量化 pipeline，E=主题相关。合并收入受 intersegment eliminations 和 hedge accounting 影响，分部收入不可简单相加。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Retail 零售电力与综合套保 | FY2025 Retail revenue `$14.340B`，2026Q1 `$3.689B`；客户约 500 万 | 直接 | 大收入、利润天气和采购成本敏感，对发电组合有 hedge 价值 | `$12.5-13.5B` | `$14.0-15.5B` | `$15.5-16.5B` | `$16.5B+` | 基准符合 FY2025/NTM run-rate；悲观低于当前正常化 | A | 是 | 收入表和分部披露 | 进入 NTM 基准，利润不可按收入线性外推 |
+| East PJM 核电/容量/Meta operating PPA | FY2025 East revenue `$6.174B`，2026Q1 `$2.260B`；Meta operating `2,176MW` 有 late 2026/2027 时间表 | 直接 | 高 EBITDA、核电和容量价格敏感，Meta PPA 可提高合同化质量 | `$5.8-6.5B` | `$6.5-8.0B` | `$8.0-9.5B` | `$9.5-11.0B` | 基准符合现有 East 和 Meta 初期小比例；乐观高于当前指引 | A/B | 是，Meta 小比例 | East 已入表，Meta 是正式 20 年 PPA 且 operating delivery 在 NTM 内开始 | 现有 East 进入基准；Meta operating 初期可折扣纳入；uprate 不进 NTM |
+| Texas/ERCOT 发电/Comanche Peak/gas | FY2025 Texas revenue `$5.353B`，2026Q1 `$2.987B`；AWS PPA 预计 Q4 2027 | 直接 | 高经营杠杆，受 spark spread、容量、套保、核电可用率影响 | `$4.8-5.8B` | `$5.5-7.0B` | `$7.0-8.5B` | `$8.5-10.0B` | 基准符合指引；AWS NTM 基准为 `0` | A/B | 是，但 AWS 不进入 NTM 基准 | Texas 已入表；AWS 正式 PPA 但服务开始通常晚于 NTM | 现有 Texas 进入基准；AWS 作为远期补充 |
+| Lotus/Cogentrix/dispatchable gas 扩张 | Lotus 已入表；Cogentrix 5.5GW definitive agreement，expected H2 2026 close；Permian 860MW 预计 2028 | 直接 | gas fleet 利润取决于 capacity、energy spread、fuel、maintenance、利用率 | Lotus 随现有分部；Cogentrix `$0` | Lotus 随现有分部；Cogentrix `$0-0.4B` 敏感性 | Cogentrix `$0.6-1.5B` 部分 NTM revenue | `$1.5-2.5B+` 部分年化上限 | Cogentrix 基准低于市场可能预期但符合公司指引排除口径 | Lotus A；Cogentrix B；Permian C | Lotus 是；Cogentrix基准不作为主口径 | Cogentrix未交割、监管仍在；公司指引排除 | Cogentrix 放入乐观/极度乐观和补充口径 |
+| West、Solar/BESS、储能/可再生 | FY2025 West revenue `$325M`，2026Q1 `$89M`；BESS/solar 资产和 Oak Hill Solar | 直接/间接 | 小基数、grid services/solar PPA，Moss Landing 风险 | `$0.20-0.30B` | `$0.30-0.45B` | `$0.45-0.70B` | `$0.70-1.00B` | 基准符合小基数；乐观需新增合同 | A/C | 是，小比例 | 已披露分部收入和项目 | 进入基准但非公司层面主驱动 |
+| Helix preferred power partner | Helix 平台公告，VST 为 founding investor/preferred power partner；无 VST 项目收入 | 间接，未来可能直接 | 期权属性，取决于 PPA/供电合同 | `$0` | `$0` | `$0-0.2B` 或无法可靠量化 | `$0.2-0.8B` 仅项目成功上限 | 基准低于题材预期但符合收入确认口径 | D | 否 | 平台不等于收入合同 | 不进 NTM 基准，只列乐观/极度乐观跟踪 |
+| Asset Closure/退役与事故处置 | 2026Q1 Asset Closure Adj. EBITDA `-$19M`；收入不是主问题 | 间接 | 现金流和执行风险 | 收入无法可靠量化；成本偏高 | 收入无法可靠量化；成本按计划 | 保险回收改善 | 风险出清 | 基准为扣减项 | A | 是，作为扣减 | 已披露 Asset Closure | 不作为收入增长，作为现金流/执行扣减 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第三步需求和第四步收入基数出发，判断每个业务线在 NTM 内可能贡献的收入和利润。利润贡献用 Ongoing Adjusted EBITDA 或 EBITDA 方向表示；由于 VST 不按单项 PPA/核电/gas fleet披露净利润和毛利率，部分项目填写“无法可靠量化”并说明原因。不得将 TAM、客户总预算、Helix committed capital 或项目全周期金额直接写成公司收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Retail 零售电力与综合套保 | 悲观产品 | `$12.5-13.5B` | Adj. EBITDA `$0.8-1.2B` | 低于正常化 | 低于当前预期 | Q1 2026 Retail Adj. EBITDA 仅 `$68M`，天气偏温和 | 保留悲观 | 天气、竞争、坏账和采购成本，不重复惩罚发电价格 |
+| Retail 零售电力与综合套保 | 基准产品 | `$14.0-15.5B` | `$1.3-1.8B` | 稳定到小幅改善 | 符合当前预期 | FY2025 Retail revenue `$14.340B`、客户基数、TXU/多州品牌 | 保留基准 | 无收入指引，利润季节性强 |
+| Retail 零售电力与综合套保 | 乐观产品 | `$15.5-16.5B` | `$1.8-2.2B` | 改善 | 高于当前预期 | 正常或偏热天气、采购成本有利、客户留存 | 保留乐观 | 乐观主要是天气和成本，不应长期化 |
+| Retail 零售电力与综合套保 | 极度乐观产品 | `$16.5B+` | `$2.2B+` | 明显改善但可持续性低 | 明显高于当前预期 | 极端天气与高价环境同时出现 | 下移为乐观上限 | 极端天气不是高可信经营质量改善 |
+| East PJM 核电/容量/Meta operating PPA | 悲观产品 | `$5.8-6.5B` | `$2.2-2.7B` | 低于当前结构 | 低于当前预期 | PPA delivery 延迟、PJM 规则扰动或核电 outage | 保留悲观 | FERC/PJM/co-location 规则和核电可用率 |
+| East PJM 核电/容量/Meta operating PPA | 基准产品 | `$6.5-8.0B` | `$2.7-3.4B` | 稳定到改善 | 符合当前预期 | East 2026Q1 Adj. EBITDA `$801M`；Meta operating delivery late 2026 起 | 保留基准 | 价格未披露，Meta 初期贡献需折扣 |
+| East PJM 核电/容量/Meta operating PPA | 乐观产品 | `$8.0-9.5B` | `$3.4-4.1B` | 改善 | 高于当前预期 | Meta ramp 顺、PJM capacity/energy strong、新 CFE 需求 | 保留乐观 | 新 PPA 需要具体客户、价格、交付时间 |
+| East PJM 核电/容量/Meta operating PPA | 极度乐观产品 | `$9.5-11.0B` | `$4.1-4.8B` | 明显改善 | 明显高于当前预期 | 新增 `1GW+` CFE 合同或 Helix 项目落地 | 下移为乐观上限，除非新合同披露 | uprate 433MW 是 2031-2034，不进 NTM |
+| Texas/ERCOT 发电/Comanche Peak/gas | 悲观产品 | `$4.8-5.8B` | `$1.6-2.0B` | 低于预期 | 低于当前预期 | ERCOT reserve margin 改善、spark spread 收窄、检修成本高 | 保留悲观 | 2026/2027 hedging 降低价格波动传导 |
+| Texas/ERCOT 发电/Comanche Peak/gas | 基准产品 | `$5.5-7.0B` | `$2.0-2.5B` | 稳定 | 符合当前预期 | 2026Q1 Texas Adj. EBITDA `$586M`，Lotus 三个月贡献，hedging 支撑指引 | 保留基准 | AWS PPA Q4 2027 起，不进 NTM |
+| Texas/ERCOT 发电/Comanche Peak/gas | 乐观产品 | `$7.0-8.5B` | `$2.5-3.1B` | 改善 | 高于当前预期 | ERCOT 负荷强、价格和容量强、气电优化 | 保留乐观 | 上行受套保覆盖率限制 |
+| Texas/ERCOT 发电/Comanche Peak/gas | 极度乐观产品 | `$8.5-10.0B` | `$3.1-3.8B` | 明显改善 | 明显高于当前预期 | 新 Texas customer PPA 或 heat rate 非线性扩张 | 下移为乐观上限 | 需要新增合同，不可只靠行业热度 |
+| Dispatchable gas 扩张：Lotus、Cogentrix、Permian | 悲观产品 | Lotus 随现有分部；Cogentrix `$0` | Cogentrix `$0` 或交易成本为负 | 不改善 | 低于并购期待 | 交割延迟、监管条件、融资成本 | 保留悲观 | Cogentrix 未入指引，不重复惩罚现有 gas fleet |
+| Dispatchable gas 扩张：Lotus、Cogentrix、Permian | 基准产品 | Lotus 已在现有分部；Cogentrix `$0-0.4B` 敏感性 | `$0-0.1B` 敏感性 | 中性 | 符合公司指引排除口径 | Lotus 已闭合；Cogentrix expected H2 2026 但未闭合 | 保留基准但不进主口径 | 指引排除；交易 closing 条件未完成 |
+| Dispatchable gas 扩张：Lotus、Cogentrix、Permian | 乐观产品 | Cogentrix 部分 NTM `$0.6-1.5B` | `$0.15-0.45B` | 小幅改善到改善 | 高于当前正式指引 | H2 2026 close、PJM/ISO-NE capacity 价格和 gas fleet 可用率 | 保留乐观 | 整合、燃气、排放、维护成本 |
+| Dispatchable gas 扩张：Lotus、Cogentrix、Permian | 极度乐观产品 | `$1.5-2.5B+` | `$0.45-0.80B+` | 改善 | 明显高于当前指引 | Cogentrix close + 新 gas-backed AI PPA | 下移为乐观上限，除非合同披露 | gas 是可调度但非垄断，客户可选 utility/onsite |
+| West、Solar/BESS、储能/可再生 | 悲观产品 | `$0.20-0.30B` | `$0.05-0.15B` 或为负 | 下行 | 低于当前预期 | Moss Landing/储能安全/许可反证 | 保留悲观 | 事故成本和保险回收不确定 |
+| West、Solar/BESS、储能/可再生 | 基准产品 | `$0.30-0.45B` | `$0.15-0.30B` | 稳定 | 符合当前预期 | 2026Q1 West Adj. EBITDA `$56M`，小基数 | 保留基准 | 业务体量小，对公司不构成主传导 |
+| West、Solar/BESS、储能/可再生 | 乐观产品 | `$0.45-0.70B` | `$0.25-0.45B` | 改善 | 高于当前预期 | BESS/grid services 或 solar PPA attach | 保留乐观 | 需要具体项目和安全/许可证据 |
+| West、Solar/BESS、储能/可再生 | 极度乐观产品 | `$0.70-1.00B` | `$0.45B+` | 改善 | 高于当前预期但公司影响有限 | AI campus BESS 或 Helix 附加项目 | 移入附录 | 小基数不足以驱动公司极度乐观 |
+| Helix preferred power partner | 悲观产品 | `$0` | `$0` 或少量投资费用 | 无 | 符合收入确认保守口径 | 平台无项目级收入披露 | 保留悲观/基准为零 | 平台公告不等于 VST 收入 |
+| Helix preferred power partner | 基准产品 | `$0` | `$0` | 无 | 符合当前可确认收入 | KKR 公告显示 VST 可有 priority/first look rights，但未披露 PPA | 保留基准 | 需要客户、项目、合同、交付、价格 |
+| Helix preferred power partner | 乐观产品 | `$0-0.2B` 或无法可靠量化 | 无法可靠量化 | 可能改善 | 高于当前可确认收入 | 首批项目披露 VST 供电框架 | 下移为跟踪，除非正式合同 | D 级证据，不进基准 |
+| Helix preferred power partner | 极度乐观产品 | `$0.2-0.8B` 上限 | 无法可靠量化 | 可能改善 | 上限情景 | `1-3GW` 项目机会转 PPA/NTP | 仅作跟踪 | 没有项目级收入确认路径 |
+| Asset Closure/退役和事故处置 | 悲观产品 | 收入无法可靠量化 | EBITDA/FCF 扣减扩大 | 下行 | 低于预期 | Moss Landing、复垦和保险争议 | 保留悲观 | 只在现金流层处理一次 |
+| Asset Closure/退役和事故处置 | 基准产品 | 收入无法可靠量化 | EBITDA 扣减约 `-$0.1B` 量级 | 中性 | 符合当前预期 | Q1 Asset Closure Adj. EBITDA `-$19M` | 保留基准 | 非成长业务 |
+| Asset Closure/退役和事故处置 | 乐观产品 | 收入无法可靠量化 | 扣减收窄 | 改善 | 高于当前预期 | 保险回收、成本受控 | 保留乐观 | 不能把一次性回收外推 |
+| Asset Closure/退役和事故处置 | 极度乐观产品 | 收入无法可靠量化 | 风险显著出清 | 改善 | 高于当前预期 | 大额回收或责任收敛 | 移入附录 | 不是核心收入传导 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为公司 NTM 总收入、利润率、Ongoing Adj. EBITDA、净利润方向和自由现金流方向。合并收入区间不能由分部收入直接相加，因为 Vistra 存在 intersegment eliminations、hedge accounting 和容量/电力收入确认差异。利润主锚是公司 2026 指引、2027 midpoint opportunity、2026Q1 已实现 EBITDA、hedging 和可见 PPA/并购时间表。表内“毛利率”采用发电公司经营毛利方向，不等同制造业产品毛利。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$17.5-19.0B` | 相比 FY2025 约 `-1%` 到 `+7%`；相比 TTM 约 `-10%` 到 `-2%` | 低于 2026 指引隐含经营质量，且低于正常 run-rate | 低于当前结构；燃料/购电/运维和低 Retail margin 压制 | Ongoing EBITDA margin 约 `33-36%` | Ongoing Adj. EBITDA `$6.2-6.8B`；GAAP 净利润受 hedging MTM 无法可靠量化 | FCFbG `$3.3-3.9B`，低于指引或下沿附近 | 中 | Retail 温和天气、PJM/ERCOT 价格低于预期、核电/气电 outage、Cogentrix 延迟、Moss Landing/Asset Closure |
+| 基准公司 | `$19.5-21.5B` | 相比 FY2025 约 `+10%` 到 `+21%`；相比 TTM 约 `0%` 到 `+11%` | 接近 2026 指引和当前 run-rate，低证据机会保守处理 | 稳定到小幅改善；East/Texas 结构支持 | Ongoing EBITDA margin 约 `34-38%` | Ongoing Adj. EBITDA `$7.0-7.6B`；净利润方向正常但 hedging MTM 不可靠 | FCFbG `$3.9-4.6B`，接近公司 2026 指引 | 中高 | Meta 初期贡献折扣、Cogentrix 不进主口径、套保限制短期电价弹性 |
+| 乐观公司 | `$21.5-24.0B` | 相比 FY2025 约 `+21%` 到 `+35%`；相比 TTM 约 `+11%` 到 `+23%` | 高于当前正式指引/基准，且不只来自单一小项目 | 改善；核电/容量/气电 mix 更好 | Ongoing EBITDA margin 约 `35-39%` | Ongoing Adj. EBITDA `$7.7-8.5B`；净利润方向改善但仍受 MTM | FCFbG `$4.4-5.2B`，高于指引中位 | 中 | Meta ramp、Cogentrix H2 close、PJM/ERCOT tightness、gas spread 和 Retail 正常化同时成立 |
+| 极度乐观公司 | `$24.0-27.0B` | 相比 FY2025 约 `+35%` 到 `+52%`；相比 TTM 约 `+23%` 到 `+39%` | 明显高于当前预期，代表 NTM 上限而非基准 | 明显改善，但必须由高毛利核电/CFE/容量或强气电利用支撑 | Ongoing EBITDA margin 约 `36-40%+` | Ongoing Adj. EBITDA `$8.5-9.5B+`；净利润无法可靠量化 | FCFbG `$5.0-6.0B`，但并购/capex/collateral 可能吞噬部分 | 低到中 | 新增 `1GW+` AI/CFE/gas-backed PPA、Helix 项目可确认、Cogentrix 顺利且高利用、PJM/ERCOT 容量价格强 |
+
+公司汇总检查：
+
+| 检查项 | 结论 |
+| --- | --- |
+| 重复计算 | Meta PPA 只计入 East，不再在 Helix 或行业需求中重复；AWS PPA因 Q4 2027 后开始，作为远期补充，不进入 NTM 基准 |
+| 替代或共用预算 | AI 数据中心客户预算可能在 utility tariff、onsite generation、nuclear PPA、gas PPA 之间切换，不能把所有预算同时给 VST |
+| 一次性/并购 | Cogentrix 不在公司 2026 指引内，基准主口径排除或仅敏感性；乐观以上纳入部分贡献 |
+| 会计口径 | Revenue 受 hedging MTM、intersegment eliminations 和 segment operating revenue 影响，EBITDA/FCFbG 比 revenue 更可靠 |
+| 低毛利 pass-through | Retail 高收入不等于高利润；gas revenue 上修也需 spark spread、fuel、维护和容量价格支撑 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一个风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026 Ongoing Adj. EBITDA 和 FCFbG 指引重申 | 公司利润/现金流 | 对 revenue 只是间接锚 | 支撑基准 EBITDA margin | 支撑 FCFbG `$3.925-4.725B` | 保留基准公司 |
+| 2026Q1 Ongoing Adj. EBITDA `$1.494B`，East/Texas 是主要利润来源 | 产品贡献/公司汇总 | East/Texas 需求可收入化已在报表体现 | East/Texas 利润质量高于 Retail Q1 | 说明利润比 revenue 更适合作主锚 | 保留 East/Texas 基准 |
+| Meta 20 年 PPA：2,176MW operating + 433MW uprate | 需求/收入基数/产品贡献 | operating capacity 晚 2026/2027 可小比例进入 NTM；uprate 不进 NTM | PPA 可能提高核电合同化质量，但价格未披露 | uprate capex 2026-2034，短期少量、长期较大 | operating PPA 保留基准折扣；uprate 移入附录 |
+| AWS Comanche Peak 1,200MW PPA | 需求/收入基数 | Q4 2027 开始，通常不在 NTM | 长期 CFE 价值，但 NTM 不贡献 | 长期合同支持，但不替代 NTM | 移入附录 |
+| Cogentrix 5.5GW definitive agreement，expected H2 2026 close | 收入基数/产品贡献/公司汇总 | 未交割，不进正式基准主口径 | 交割后可改善 gas/容量利润 | 需要现金、股票、债务承接和监管批准 | 基准敏感性保留；乐观保留 |
+| 2026/2027 generation hedged 约 98%/89% | 利润贡献 | 降低短期电价波动对 revenue/EBITDA 的冲击 | 限制极度乐观电价上行直接传导，也保护悲观下行 | 降低 collateral/现金流波动但不消除 | 保留基准；极度乐观下移 |
+| Helix `>$10B` committed capital，Vistra preferred power partner | 需求/远期期权 | 没有项目级 VST revenue，NTM 为 `0` 或无法可靠量化 | 可能改善未来项目 mix，但无价格 | 可能带来 first look/priority rights | 基准排除；仅作跟踪 |
+| LBNL/Goldman/JLL/CBRE 支持数据中心电力需求强 | 需求 | 提升行业需求可信度 | 不自动提升 VST 利润率 | 电力接入瓶颈提高 time-to-power 价值 | 保留需求乐观，但不直接上移收入基准 |
+| Moss Landing/Asset Closure 和核电/气电 outage | 执行/现金流 | 不直接影响全部需求 | 可能压低 West/Asset Closure 和维护成本 | 可能吞噬 FCF/保险回收不确定 | 保留悲观；不重复惩罚 East/Texas 需求 |
+| FERC/PJM/ERCOT/PUC 大负荷和 co-location 规则 | 收入确认/执行 | 可能延迟 PPA、BTM 或大负荷接入 | 可能增加电网成本或削弱 PPA premium | 影响交付时间和合同经济性 | 保留悲观，限制极度乐观 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 需求仍可能增长但低于当前预期，收入/利润传导被天气、价格、交付或执行拖累 | 2026 指引和 hedging 保护下行；Retail 和发电组合有一体化 hedge | Retail mild weather、PJM/ERCOT 价格低、PPA延迟、Cogentrix延迟、Moss Landing/Asset Closure | 保留 | 悲观公司 `$17.5-19.0B` revenue，`$6.2-6.8B` Ongoing Adj. EBITDA | 中 | 天气只处理在 Retail/负荷层；Moss Landing 只处理在 West/Asset Closure/现金流层 |
+| 基准 | 2026 指引正常兑现，现有 Retail/East/Texas/Lotus 正常运行，Meta operating PPA 小比例折扣纳入 | A/B 级收入表、指引、正式 PPA、RPO、hedging、Q1 EBITDA 支撑 | 收入无正式指引；Meta价格未披露；Cogentrix未交割；Helix未量化 | 保留 | 基准公司 `$19.5-21.5B` revenue，`$7.0-7.6B` Ongoing Adj. EBITDA | 中高 | Helix 和 AWS 不因热门叙事进入基准；Cogentrix不因并购公告重复推高 |
+| 乐观 | Meta ramp、PJM/ERCOT tightness、Cogentrix close、Retail正常化中至少两项成立 | 现有核电/气电资产、Meta 交付时间、Cogentrix definitive agreement、行业 power scarcity | hedging 限制短期 price upside；监管和交割仍有条件 | 保留 | 乐观公司 `$21.5-24.0B` revenue，`$7.7-8.5B` Ongoing Adj. EBITDA | 中 | 行业需求强只提升需求，不直接替代公司合同和收入确认 |
+| 极度乐观 | 需求、公司捕获、利润质量和执行同时突破 | Helix、CFE 稀缺、gas time-to-power、Cogentrix 和新增PPA理论上可共振 | 任一关键环节缺项目级合同或价格；uprate/AWS多数在 NTM 后；gas 非垄断 | 下移 | 作为 NTM 上限和后续跟踪，不作为主结论 | 低到中 | 不能把 Helix committed capital、数据中心总 capex、客户总预算直接当 VST 收入 |
+
+## 8. 结论
+
+- 最可能情景：基准。VST 的 NTM 经营价值传导更像“已套保的现有发电/零售平台 + PJM/East 核电和容量利润 + Meta operating PPA 初期贡献 + Lotus 正常化”的组合，而不是 Helix 或远期核电 uprate 驱动的短期爆发。基准 NTM revenue 估算 `$19.5-21.5B`，Ongoing Adj. EBITDA `$7.0-7.6B`，FCFbG 接近 `$3.9-4.6B`。
+- NTM 收入结论：收入增长可见但可信度低于 EBITDA。Retail 和现有发电分部是 A 级收入基数，Meta operating PPA 是 B 级并可小比例折扣纳入，Cogentrix 是未交割 B 级并购敏感性，Helix 是 D 级平台期权。合并 revenue 受套保和 intersegment 影响，不宜作为唯一经营质量指标。
+- 利润/现金流结论：利润传导比收入传导更有价值。2026 指引和 2027 opportunity 说明 Ongoing Adj. EBITDA 的锚强于 revenue；East/Texas 是主利润载体，Retail 是高收入和 hedge 载体，Cogentrix/Meta 是乐观增量。现金流上行需扣除并购、核电 uprate/延寿 capex、维护、衍生品 margin 和 Asset Closure。
+- 主要传导瓶颈：行业电力需求不能自动成为 VST 收入。必须经过客户合同、PPA/容量价格、PJM/ERCOT/ISO 规则、核电/气电可用率、交割/交付时间和收入确认路径。Helix、AWS、uprate 和 gas-backed AI PPA 都有长期价值，但基准 NTM 不能提前确认。
+- 乐观情景成立条件：Meta operating delivery 按 late 2026/2027 节奏顺利，PJM/ ERCOT capacity 和 realized energy price 高于当前预期，Cogentrix 在 2026H2 顺利 close 且贡献部分 NTM，Retail 从 Q1 mild weather 中恢复，West/Asset Closure 不扩大拖累。
+- 极度乐观情景成立条件：新增 `1GW+` CFE 或 gas-backed AI customer PPA 在 NTM 内披露并有交付路径，Helix 由平台公告转为项目级合同，Cogentrix 快速整合并高利用，核电可用率和 PJM/ERCOT 容量价格同时强，FCF 未被并购/capex/collateral 吞噬。
+- 悲观情景触发条件：PJM/FERC/co-location 或大负荷规则导致 PPA 交付延迟，Cogentrix 交割延后或条件恶化，Retail margin 持续低于正常化，gas/spark spread 收窄，核电或气电 outage 增多，Moss Landing/Asset Closure 现金流风险扩大。
+- 后续跟踪数据：Meta delivery commencement、Perry/Davis-Besse/Beaver Valley uprate planning、AWS Comanche Peak milestones、Cogentrix regulatory approvals/close date、PJM capacity auction、ERCOT reserve margin和 summer scarcity、2026Q2/Q3 segment Adj. EBITDA、RPO、hedging percentages、liquidity/collateral、Helix 项目级 PPA 或 supply rights、Moss Landing/Asset Closure 成本和保险回收。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务主锚截至 2026Q1 和 FY2025；报告日期 2026-06-12；行业资料多截至 2026-06-11。
+- 主要收入、订单、指引和利润率来源：
+  - 本地公司资料：`公司调研/电力_发电_能源_储能/VST_Vistra_Corp_公司调研_2026-06-11.md`。
+  - 本地行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`、`行业调研_数据中心自备发电与微电网_2026-06-11.md`、`行业调研_数据中心UPS与电池储能_2026-06-11.md`，以及 `行业调研/产业背景/` 中 AI 数据中心建设规模、瓶颈和口径字典。
+  - Vistra Q1 2026 results：2026Q1 net income `$1.029B`、Ongoing Operations Adj. EBITDA `$1.494B`、2026 guidance、hedging 和 liquidity。来源：https://investor.vistracorp.com/2026-05-07-Vistra-Reports-First-Quarter-2026-Results
+  - Vistra FY2025/Q4 results：FY2025 Ongoing Operations Adj. EBITDA `$5.912B`、FCFbG `$3.592B`、2026 指引、AWS/Meta PPA、Lotus/Cogentrix。来源：https://investor.vistracorp.com/2026-02-26-Vistra-Reports-Fourth-Quarter-and-Full-Year-2025-Results
+  - Vistra 2026Q1 Form 10-Q：Cogentrix、Lotus、Meta PPA timing、AWS Comanche Peak timing、gas projects、IRA/nuclear PTC、风险和会计口径。来源：https://www.sec.gov/Archives/edgar/data/1692819/000169281926000014/vistra-20260331.htm
+  - Vistra/Meta PPA official release：Meta 20 年 PPA，2,176MW operating generation/capacity 和 433MW uprate。来源：https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid
+  - SEC 8-K for Meta PPA：Perry/Davis-Besse/Beaver Valley 分项 MW、operating delivery late 2026/full by 2027、uprate 2031-2034。来源：https://www.sec.gov/Archives/edgar/data/1692819/000119312526008508/d20785d8k.htm
+  - Meta nuclear projects：Meta 对 Vistra、TerraPower、Oklo 的核电需求背景和 Vistra operating/uprate 说明。来源：https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership/
+  - KKR Helix Digital Infrastructure：Helix committed capital `>$10B`，NVIDIA 和 Vistra 角色，VST priority/first look 相关权利描述。来源：https://www.businesswire.com/news/home/20260610500794/en/KKR-Launches-Helix-Digital-Infrastructure-a-New-Company-to-Finance-and-Deliver-the-Next-Generation-of-AI-Infrastructure
+  - Goldman Sachs data center power demand：美国数据中心 power demand 2025 `31GW`、2026 `41GW`、2027 `66GW`。来源：https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027
+  - JLL 2026 Global Data Center Outlook：2026-2030 近 `100GW` 新数据中心容量和约 `$3T` 投资需求。来源：https://www.jll.com/en-us/insights/market-outlook/data-center-outlook
+  - CBRE U.S. Data Centers Outlook 2026：500MW+ AI campus 和高压接入/新增发电可能导致 `24/36/48+` 个月 interconnection。来源：https://www.cbre.com/insights/books/us-real-estate-market-outlook-2026/data-centers
+  - LBNL/Berkeley Lab data center electricity report：美国数据中心用电从 2023 年 `176TWh` 到 2028 年 `325-580TWh` 情景。来源：https://newscenter.lbl.gov/2025/01/15/berkeley-lab-report-evaluates-increase-in-electricity-demand-from-data-centers/
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 指引是最重要基准，但不是 NTM 的完整替代，因为 NTM 包含 2027H1。
+  - FY2027 Ongoing Operations Adj. EBITDA midpoint opportunity `$7.4-7.8B` 不是正式 guidance，且公司披露其不含 Cogentrix 和 Meta PPA 执行影响。
+  - AWS Comanche Peak 1,200MW PPA 预计 Q4 2027 开始并到 2032 full capacity，主要为远期补充。
+  - Meta 433MW uprate 预计 2031-2034，明确不进入 NTM。
+  - Helix 是平台期权，不等于 VST 可确认收入。
+- 主要来源：见上表。本报告没有使用 `特征量化/`、Signals、排序表、回归输出或市场估值作为经营价值传导证据。

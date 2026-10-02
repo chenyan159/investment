@@ -1,0 +1,369 @@
+{
+  "scope": "Independent reproduction from published rounded tables, not original author code or proof of economic assumptions",
+  "sha256": {
+    "MU_cl_hi.md": "6a4c9c6e116d4df3c3231f3ebf12bf36c8c21074a8045b5421dc010f32358ea6",
+    "MU_op_hi.md": "5be508d71deb61feb0630f89e78b840015ebb745e24d2bc1da7f98820f1492a9",
+    "mu_op_ex.md": "5eb1153c46b37a4b0b7458df4c88dcfdf3a5b7dd8c2a71727d34ed19a41f7f72",
+    "mu_op_sol_mx.md": "52edc7d891f23847520a73f7d492371294725dc754977b12a314d6762c8c7b4a"
+  },
+  "returns": {
+    "MU_cl_hi.md": [
+      [
+        -67.661,
+        -53.339
+      ],
+      [
+        -43.176,
+        -19.152
+      ],
+      [
+        -11.298,
+        24.275
+      ],
+      [
+        51.994,
+        116.21
+      ]
+    ],
+    "MU_op_hi.md": [
+      [
+        -68.677,
+        -59.899
+      ],
+      [
+        -13.331,
+        12.54
+      ],
+      [
+        61.418,
+        107.063
+      ],
+      [
+        20.394,
+        54.581
+      ]
+    ],
+    "mu_op_ex.md": [
+      [
+        -52.877,
+        -40.866
+      ],
+      [
+        2.561,
+        30.281
+      ],
+      [
+        61.696,
+        106.97
+      ],
+      [
+        26.585,
+        62.62
+      ]
+    ],
+    "mu_op_sol_mx.md": [
+      [
+        -75.053,
+        -66.737
+      ],
+      [
+        -45.485,
+        -20.538
+      ],
+      [
+        -10.374,
+        25.661
+      ],
+      [
+        0.713,
+        59.848
+      ]
+    ]
+  },
+  "base_annualized_returns": {
+    "MU_cl_hi.md": [
+      -42.76,
+      -18.93
+    ],
+    "MU_op_hi.md": [
+      -6.59,
+      5.79
+    ],
+    "mu_op_ex.md": [
+      1.21,
+      13.42
+    ],
+    "mu_op_sol_mx.md": [
+      -42.61,
+      -18.98
+    ]
+  },
+  "MU_cl_hi.md_near_term": [
+    {
+      "scenario": 0,
+      "FY": 2027,
+      "revenue": 178.52378000000002,
+      "COGS": 30.253138,
+      "EBIT": 139.970642
+    },
+    {
+      "scenario": 0,
+      "FY": 2028,
+      "revenue": 110.16727945000001,
+      "COGS": 36.03424041325,
+      "EBIT": 65.33303903675001
+    },
+    {
+      "scenario": 1,
+      "FY": 2027,
+      "revenue": 230.8633128,
+      "COGS": 31.561687000000003,
+      "EBIT": 190.80162579999998
+    },
+    {
+      "scenario": 1,
+      "FY": 2028,
+      "revenue": 206.2451352492,
+      "COGS": 37.83831084450001,
+      "EBIT": 158.60682440469998
+    },
+    {
+      "scenario": 2,
+      "FY": 2027,
+      "revenue": 269.722644,
+      "COGS": 32.924486,
+      "EBIT": 227.998158
+    },
+    {
+      "scenario": 2,
+      "FY": 2028,
+      "revenue": 281.8202961632,
+      "COGS": 40.3471272047,
+      "EBIT": 230.9731689585
+    },
+    {
+      "scenario": 3,
+      "FY": 2027,
+      "revenue": 275.3148992,
+      "COGS": 33.28161,
+      "EBIT": 233.0332892
+    },
+    {
+      "scenario": 3,
+      "FY": 2028,
+      "revenue": 346.38584951999997,
+      "COGS": 42.5156128025,
+      "EBIT": 292.37023671749995
+    }
+  ],
+  "mu_op_sol_mx.md_near_term": [
+    {
+      "scenario": 0,
+      "FY": 2027,
+      "revenue": 129.60864,
+      "COGS": 31.88467,
+      "EBIT": 89.22397000000001
+    },
+    {
+      "scenario": 0,
+      "FY": 2028,
+      "revenue": 97.779417128,
+      "COGS": 39.846521602500005,
+      "EBIT": 48.9328955255
+    },
+    {
+      "scenario": 1,
+      "FY": 2027,
+      "revenue": 191.91968559999998,
+      "COGS": 36.32128,
+      "EBIT": 146.59840559999998
+    },
+    {
+      "scenario": 1,
+      "FY": 2028,
+      "revenue": 184.55936101632,
+      "COGS": 45.81583996230001,
+      "EBIT": 128.24352105402
+    },
+    {
+      "scenario": 2,
+      "FY": 2027,
+      "revenue": 235.83828,
+      "COGS": 39.109184,
+      "EBIT": 187.229096
+    },
+    {
+      "scenario": 2,
+      "FY": 2028,
+      "revenue": 279.963885036,
+      "COGS": 51.6209560904,
+      "EBIT": 216.84292894560002
+    },
+    {
+      "scenario": 3,
+      "FY": 2027,
+      "revenue": 202.2696856,
+      "COGS": 37.93338000000001,
+      "EBIT": 154.3363056
+    },
+    {
+      "scenario": 3,
+      "FY": 2028,
+      "revenue": 213.32516101632,
+      "COGS": 50.86400199730001,
+      "EBIT": 150.46115901902
+    }
+  ],
+  "hi_cash_identity_max_error_B": 0.010000000000019327,
+  "hi_DCF": {
+    "受损": {
+      "price": 363.00241078073896,
+      "terminal_share": 0.43704701936142965
+    },
+    "基准": {
+      "price": 715.1318914909725,
+      "terminal_share": 0.4742290284038993
+    },
+    "乐观": {
+      "price": 1386.869182490353,
+      "terminal_share": 0.4962896208948165
+    },
+    "突破": {
+      "price": 1033.115360696587,
+      "terminal_share": 0.5270281145234971
+    }
+  },
+  "ex_cash_identity_max_error_B": 0.11000000000001364,
+  "ex_DCF": {
+    "悲观": {
+      "deduct_already_counted_3B": {
+        "price": 447.98799931786493,
+        "terminal_share": 0.45102316387467767
+      },
+      "without_deduction": {
+        "price": 450.37521817203066,
+        "terminal_share": 0.4484587192428864
+      }
+    },
+    "基准": {
+      "deduct_already_counted_3B": {
+        "price": 985.1308883809469,
+        "terminal_share": 0.5015433979352991
+      },
+      "without_deduction": {
+        "price": 987.5181072351126,
+        "terminal_share": 0.5002923024289445
+      }
+    },
+    "乐观": {
+      "deduct_already_counted_3B": {
+        "price": 1713.06962685814,
+        "terminal_share": 0.539507427127478
+      },
+      "without_deduction": {
+        "price": 1715.456845712306,
+        "terminal_share": 0.5387430521097281
+      }
+    },
+    "突破": {
+      "deduct_already_counted_3B": {
+        "price": 1450.1304778406527,
+        "terminal_share": 0.5718628549608284
+      },
+      "without_deduction": {
+        "price": 1452.5176966948186,
+        "terminal_share": 0.5709028228439313
+      }
+    }
+  },
+  "common_discount_comparison": {
+    "hi_at_10pct": {
+      "price": 856.1854997631895,
+      "terminal_share": 0.5389561753141301
+    },
+    "ex_at_11_5pct": {
+      "price": 833.4775579133844,
+      "terminal_share": 0.4402792461848102
+    }
+  },
+  "sol_DCF": [
+    {
+      "scenario": "受损",
+      "endpoints": [
+        {
+          "price": 269.4901171548467,
+          "pv": 110.13641823588907,
+          "tv": 121.07721649218466,
+          "g_inferred_not_explicit": 0
+        },
+        {
+          "price": 355.4577789508687,
+          "pv": 114.5497995430653,
+          "tv": 215.52664625043374,
+          "g_inferred_not_explicit": 0.01
+        }
+      ]
+    },
+    {
+      "scenario": "基准",
+      "endpoints": [
+        {
+          "price": 590.8462645640868,
+          "pv": 238.00948709707825,
+          "tv": 320.4637171516216,
+          "g_inferred_not_explicit": 0.01
+        },
+        {
+          "price": 864.8959198553576,
+          "pv": 246.8723447555578,
+          "tv": 626.7579630781033,
+          "g_inferred_not_explicit": 0.02
+        }
+      ]
+    },
+    {
+      "scenario": "乐观",
+      "endpoints": [
+        {
+          "price": 968.6634252399671,
+          "pv": 432.74724987837294,
+          "tv": 536.7156891475892,
+          "g_inferred_not_explicit": 0.01
+        },
+        {
+          "price": 1355.856353211376,
+          "pv": 449.1224608355406,
+          "tv": 965.6123453575416,
+          "g_inferred_not_explicit": 0.02
+        }
+      ]
+    },
+    {
+      "scenario": "突破",
+      "endpoints": [
+        {
+          "price": 1094.049045293411,
+          "pv": 380.20917579500485,
+          "tv": 760.3472262924179,
+          "g_inferred_not_explicit": 0.01
+        },
+        {
+          "price": 1730.9480369378775,
+          "pv": 396.7175221723177,
+          "tv": 1476.2727203062416,
+          "g_inferred_not_explicit": 0.02
+        }
+      ]
+    }
+  ],
+  "sol_deferred_10B_terminal_sensitivity_per_share": 58.647332032460284,
+  "trade_DSO": 59.034976842917786,
+  "total_receivables_ratio_days": 68.10292840602084,
+  "ex_minus_hi_midpoint": {
+    "NOPAT_effect": 62.20434782608697,
+    "multiple_effect": 99.73913043478262,
+    "cash_effect": 20.17391304347825
+  },
+  "cl_vs_sol_base_2027_profit_difference_B": 44.20000000000002,
+  "cl_vs_sol_base_2032_profit_difference_B": -6
+}

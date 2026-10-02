@@ -1,0 +1,154 @@
+# 公司收入传导与价值传导评估：Cadence Design Systems（CDNS）
+
+> 报告日期：2026-06-12  
+> 研究对象：Cadence Design Systems, Inc.（Nasdaq: CDNS）  
+> 主口径：NTM 经营窗口 = 2026Q2-2027Q1。FY2026、FY2027、长期 run-rate 和新品远期期权只作为补充口径。  
+> 资料边界：项目内只使用 `公司调研/` 与 `行业调研/`，未读取、引用或继承 `特征量化/`、Signals、回归、结构化评分或全公司排序资料。外部资料优先使用 Cadence 官方财报、SEC 文件、产品公告和 SEMI 等行业一手来源。  
+> 经营边界：本报告只评估收入、利润、现金流和经营质量传导，不输出投资评级、目标价、股价区间或估值倍数判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 2026Q2-2027Q1 NTM。补充口径包括 Cadence FY2026 指引、2026Q1 实际、2025 10-K 产品结构、2026Q1 backlog/RPO，以及 2027 设计导入期的 HBM4、UCIe、PCIe 7/8、Agentic EDA、AI factory digital twin 远期期权。
+- 当前收入基准、指引和 run-rate：2026Q1 收入 14.742 亿美元，同比 +18.7%；2026Q1 GAAP 毛利率 85.4%，非 GAAP 毛利率 88.0%，GAAP 经营利润率 29.3%，非 GAAP 经营利润率 44.7%。截至 2026Q1 期末，backlog 为 80 亿美元，其中未来 12 个月预计可确认收入约 40 亿美元。FY2026 收入指引为 61.25-62.25 亿美元，约 +16%-18% YoY；Q2 2026 收入指引为 15.55-15.95 亿美元。2026Q1 产品 mix：Core EDA 71%，Semiconductor IP 14%，System Design and Analysis 15%。
+- 重要产品/业务线：Core EDA + verification + hardware acceleration（Palladium/Protium）；Semiconductor IP（HBM、PCIe/CXL、UCIe、SerDes、Tensilica/foundation/security IP）；System Design & Analysis（3DIC/package/SI/PI/thermal、多物理场、AI factory digital twin、Hexagon D&E/MSC）；Agentic EDA（ChipStack/AgentStack/ViraStack/InnoStack，当前作为嵌入式增量和远期期权处理）。
+- NTM 公司收入四情景：悲观 59.5-62.0 亿美元；基准 63.5-65.5 亿美元；乐观 67.0-70.5 亿美元；极度乐观 71.5-76.5 亿美元。基准相当于 FY2026 指引正常兑现，并在 2027Q1 延续低双位数至中双位数增长；乐观需要 IP、验证硬件、3DIC/SD&A 和 AI/HPC 客户需求同步强于当前路径。
+- 利润或 EBITDA 四情景：以非 GAAP 经营利润为主口径，悲观约 24.7-26.7 亿美元；基准约 27.6-29.1 亿美元；乐观约 29.8-32.4 亿美元；极度乐观约 32.9-36.7 亿美元。产品级净利润无法可靠披露，报告只给公司层面非 GAAP 净利润估计区间。
+- 最大传导瓶颈：不是“AI 需求是否存在”，而是需求如何从客户设计活动转为 Cadence 可确认收入：backlog/RPO 转收入、验证硬件交付、IP license/NRE/royalty 确认节奏、客户 tapeout 变更、Hexagon D&E 整合和出口管制。
+- 最大利润率变量：高毛利软件/IP mix 与较低毛利硬件、服务、收购摊销、云算力成本和整合费用之间的 mix。Agentic EDA 若能以高价模块/云用量收费，会提高增量利润率；若只是已有合约功能，利润率改善有限。
+- 最大现金流变量：RPO 续约和预收、硬件/IP up-front 收入时点、DSO、收购整合现金支出、CapEx 以及客户付款周期。FY2026 官方经营现金流指引 18.75-19.75 亿美元，CapEx 约 2.40 亿美元，提示 NTM 自由现金流基准不应简单按收入增速外推。
+- 可信度：基准情景中高。原因是收入、产品 mix、backlog、cRPO、指引和利润率均有 A 级官方证据；但产品级 backlog、按产品 bookings、AI 数据中心收入、客户拆分、Agentic EDA 付费转化未披露，乐观和极度乐观需要折扣。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Core EDA + verification + hardware acceleration | 2026Q1 官方 Core EDA mix 71%，折算约 10.47 亿美元；NTM 基准估计 44.5-46.5 亿美元 | 约 71% | 最大收入底座；AI/HPC 复杂度、验证、signoff、Palladium/Protium 需求核心承接层 | A：官方产品 mix、Q1 Core EDA +18% YoY、硬件 record quarter、backlog/cRPO | 进入基准。按 FY2026 指引、RPO 转收入和正常续约处理，不把 AI capex 线性映射为收入 | Agentic EDA 高价模块、EDA Cloud 用量、验证硬件超额扩容 |
+| Semiconductor IP：HBM/PCIe/CXL/UCIe/SerDes/Tensilica/foundation/security | 2026Q1 官方 IP mix 14%，折算约 2.06 亿美元；NTM 基准估计 8.8-9.8 亿美元 | 约 14% | AI/HPC 弹性最高，受 HBM4、UCIe、PCIe 7/8、224G/448G SerDes 和 custom ASIC 设计导入拉动 | A/B：官方 IP mix、Q1 IP +22% YoY；具体 HBM4/UCIe 客户项目未逐项披露，属 B/C | IP 类别进入基准；未量化 design win、单客户 HBM4/UCIe 项目只进入乐观或极度乐观 | HBM4E、PCIe 8、448G SerDes、D2D security、Chiplet management |
+| System Design & Analysis：3DIC/package/SI/PI/thermal/multiphysics/digital twin | 2026Q1 官方 SD&A mix 15%，折算约 2.21 亿美元；NTM 基准估计 9.5-11.0 亿美元 | 约 15% | 3DIC、advanced package signoff、多物理场、Hexagon D&E/MSC、AI factory digital twin 是结构扩张方向 | A/B：官方 SD&A mix、Q1 SD&A +18% YoY、Hexagon D&E 已完成收购；AI factory 项目收入未披露 | 进入基准，但 AI factory digital twin 只保守小比例纳入；Hexagon 协同按已完成收购与 FY2026 增量处理 | Gigawatt-scale AI factory digital twin、Physical AI、多物理场仿真平台化 |
+| Agentic EDA：ChipStack/AgentStack/ViraStack/InnoStack | 单独收入未披露；2026Q1 仍嵌入 Core EDA/SD&A，NTM 基准单独增量按 0-0.5 亿美元处理 | 单独占比无法可靠量化，估计 <1% | 可能改变 ASP、续约和工程效率，但 NTM 内仍是产品化早期 | C/D：官方发布、早期部署和产品页支持；无独立收入、无明确付费率 | 不作为独立基准收入线，除非已包含在 Core EDA 合同；乐观以上才给显性增量 | 若 top 客户证明设计/验证效率提升并以 premium module/usage 收费，成为 2027+ 上修来源 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不判断 Cadence 份额、收入确认和利润率。需求单位以最能解释产品的变量表示：EDA seat/license、验证硬件 capacity、IP design win/NRE/VIP、3DIC/SD&A 项目、agentic EDA 付费模块渗透。绝对变化是相对当前需求锚的 NTM 需求池变化，不等于 Cadence 可确认收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Core EDA + verification + hardware acceleration | Cadence 2026Q1 Core EDA +18% YoY，硬件 record quarter；SEMI Q4 2025 ESD 行业 +10.3%；公司 backlog 80 亿美元、cRPO 40 亿美元 | 先进 AI/HPC tapeout 和验证硬件采购仍增长，但客户项目延后，需求池仅低双位数增长；Palladium/Protium 大单递延 | 需求按当前指引和 RPO 节奏正常兑现，先进数字实现、custom、verification 与 AI/HPC 客户保持双位数增长 | Rubin/MI400/custom ASIC、HBM4 和大规模 firmware/software co-verification 同步加速，验证硬件和云仿真 capacity 高于当前计划 | 多个 hyperscaler/AI lab 同时提前下一代 ASIC/GPU tapeout，emulation/prototyping 和 signoff capacity 成为瓶颈 | 悲观较基准少约 2.5-3.5 亿美元 NTM 可服务需求池；乐观多约 3-5 亿美元；极度乐观多约 6-9 亿美元 | 基准符合当前预期；乐观高于当前预期；极度乐观需多个客户节点同时提前 | 正向：Core EDA +18%、硬件 record、RPO 高。反证：按产品 backlog 未披露，客户设计延期和出口管制会影响确认 |
+| Semiconductor IP：HBM/PCIe/CXL/UCIe/SerDes | Cadence 2026Q1 IP +22% YoY；SEMI Q4 2025 SIP +18.3%；行业资料显示 HBM4、PCIe 7/8、UCIe 3.0、224G/448G SerDes 和 custom ASIC 是 2026-2027 设计窗口 | HBM4/UCIe design-in 慢于预期，客户用内部 IP 或多源压价；IP 需求仍高个位数至低双位数增长 | HBM3E/HBM4、PCIe/CXL、UCIe、SerDes/VIP 随 AI/HPC 项目正常导入，需求高双位数增长 | HBM4 设计 win、UCIe/D2D、PCIe 7/224G 项目增多，客户为 silicon-proven IP 支付更高 NRE 和 license | 多家云厂 custom ASIC 同时采用外部高端 IP/VIP，并在 NTM 内确认更多 license/NRE；HBM4 和 D2D 变成高端默认 | 悲观较基准少约 1-2 亿美元 CDNS 可捕获需求池；乐观多约 1.5-2.5 亿美元；极度乐观多约 3-5 亿美元 | 基准符合当前 IP 高增路径；乐观需要公司特定 design-win 证据；极度乐观是上限 | 正向：IP +22%、行业 HBM4/UCIe 强。反证：单客户 IP win、royalty、NRE 时点未披露；IP 错误风险和客户自研替代 |
+| System Design & Analysis：3DIC/package/multiphysics/digital twin | Cadence 2026Q1 SD&A +18% YoY；2026-02 完成 Hexagon D&E/MSC 收购；行业资料显示 3DIC EDA、多物理场、热/电/机械协同成为先进封装瓶颈 | Hexagon 整合、CAE 销售协同和 AI factory pilot 慢于预期；需求接近中个位数至低双位数 | 3DIC/package/SI/PI/thermal 与传统 CAE 正常增长，Hexagon 增量纳入，AI factory digital twin 保守试点 | 先进封装、HBM4、液冷 rack 和 AI factory 设计推动 SD&A 项目数高于预期，NVIDIA/CUDA-X/Omniverse 协同扩大 | SD&A 从 EDA 附属工具变成 AI factory/Physical AI 平台，多物理场项目在多个大型数据中心落地 | 悲观较基准少约 1-1.5 亿美元需求池；乐观多约 1.5-2.5 亿美元；极度乐观多约 3-5 亿美元 | 基准符合当前整合路径；乐观高于当前预期；极度乐观缺少 NTM 收入闭环 | 正向：SD&A +18%、Hexagon 已完成、行业 3DIC/热瓶颈明确。反证：AI factory digital twin 商业收入未披露，CAE 客户惯性强 |
+| Agentic EDA | 官方推出 ChipStack/AgentStack/ViraStack/InnoStack；Cadence/NVIDIA 披露早期部署和生产力提升线索；项目内行业资料认为 agentic verification 最先付费 | 客户只把 agentic 功能当作现有工具增强，不形成新增预算；付费模块需求无法可靠量化 | 少量早期客户付费或嵌入 enterprise agreement；需求存在但不改变 NTM 公司基准 | Top 客户将 RTL/verification/custom/implementation agent 接入私有设计流，新增 premium module/云用量 | Agentic EDA 被证明能显著缩短 tapeout 周期，形成新 SKU 和 usage-based 收费层 | 悲观与基准差异很小；乐观新增需求池约 0.5-1.5 亿美元；极度乐观约 2.5-5 亿美元 | 基准仅小比例纳入；乐观需要付费转化证据；极度乐观目前是跟踪项 | 正向：官方产品和早期部署。反证：没有独立收入、没有付费率、芯片设计不能容忍错误，客户验证周期长 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断哪些需求能进入 Cadence NTM 收入表，以及当前可收入化基数是多少，不预测增长和利润率。A/B 级证据才能进入基准；C 级只有客户、产品和时间表清楚时折扣纳入；D/E 级不进基准。公司披露 backlog 和 cRPO，但不披露标准 bookings、按产品 backlog、按客户 backlog、AI 数据中心收入或按产品取消率，相关字段填“未披露”并使用指引、收入节奏、RPO、产品 mix 和客户/生态信号作代理。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Core EDA + verification + hardware acceleration | 2026Q1 Core EDA 71%≈10.47 亿美元；Core EDA +18% YoY；硬件 record quarter；FY2026 指引和 cRPO 支撑 | 直接收入；软件、硬件、云和维护均进收入表 | 高毛利软件为主，验证硬件毛利低于软件但绑定强；增量经营杠杆高 | 42.5-44.0 亿美元 | 44.5-46.5 亿美元 | 47.5-50.5 亿美元 | 51.0-54.5 亿美元 | 基准符合 FY2026 指引和 RPO 转收入；悲观低于当前预期；乐观/极度乐观高于当前路径 | A | 是 | 官方产品 mix、收入增速、backlog/cRPO、Q2/FY2026 指引 | 作为 NTM 基准主口径；未披露按产品 backlog，乐观需要验证硬件和 AI/HPC 设计活动继续强 |
+| Semiconductor IP | 2026Q1 IP 14%≈2.06 亿美元；IP +22% YoY；Cadence AI IP 产品覆盖 HBM、PCIe/CXL、UCIe、SerDes、memory interfaces | 直接收入；license、NRE、维护、部分 royalty | 高毛利，但高速 PHY/test chip/FAE 成本和项目风险更高；收入时点更 lumpier | 7.8-8.5 亿美元 | 8.8-9.8 亿美元 | 10.5-12.0 亿美元 | 12.5-15.0 亿美元 | 基准符合当前 IP 增长；乐观为 design win/NRE 上修；极度乐观是 NTM 上限 | A/B；具体客户项目多为 C | 是，类别进入；未披露客户项目折扣纳入 | 官方 IP mix 和增速；行业 HBM4/UCIe/PCIe/CXL 需求；AI IP 产品页 | 基准纳入类别收入；未披露客户、未量化 pipeline 和单客户 design win 不进入基准 |
+| System Design & Analysis | 2026Q1 SD&A 15%≈2.21 亿美元；SD&A +18% YoY；Hexagon D&E/MSC 于 2026-02 完成，官方称 2026 收入增量约 1.60 亿美元 | 直接收入；CAE、3DIC、PCB/SI/PI/thermal、多物理场、服务和云 | 软件/CAE 毛利高，但服务、整合和收购摊销影响 GAAP；短期协同成本高 | 8.5-9.5 亿美元 | 9.5-11.0 亿美元 | 11.0-13.0 亿美元 | 13.5-16.5 亿美元 | 基准符合当前整合和产品 mix；乐观需 AI factory/3DIC 大项目确认 | A/B | 是 | 官方 SD&A mix、增长、Hexagon 完成收购和 2026 增量；行业 3DIC/先进封装需求 | 基准纳入已披露类别和收购收入；AI factory digital twin 未披露项目只进入乐观/跟踪 |
+| Agentic EDA | 单独收入未披露；官方产品和早期部署存在，但无独立财务项目 | 直接/间接都有：若作为新模块收费则直接；若嵌入续约则间接提高 ASP/续约 | 理论上高增量毛利，但云算力、客户数据隔离和正确性验证会增加成本 | 0 | 0-0.5 亿美元，且已嵌入 Core EDA/SD&A 不单独加总 | 0.8-2.0 亿美元 | 2.5-5.0 亿美元 | 基准仅作很小的已包含增量；乐观以上高于当前预期 | C/D | 不作为独立基准；只允许嵌入已披露类别 | 官方产品发布、Cadence/NVIDIA 合作和早期部署；无收入表拆分 | NTM 基准不单独确认；乐观/极度乐观必须证明付费转化和不会重复计入 Core EDA |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内能给公司贡献多少收入和利润。Cadence 不披露产品级毛利率、产品级经营利润、按产品 backlog 或 AI 数据中心收入；产品级利润贡献为模型估算和方向判断，不是公司披露数字。Agentic EDA 是嵌入式增量，汇总公司收入时不与 Core EDA/SD&A 重复计算。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Core EDA + verification + hardware acceleration | 悲观产品 | 42.5-44.0 亿美元 | 产品级经营利润无法可靠披露；估计约 17.5-18.8 亿美元 | 低于公司基准，硬件 mix 和支持成本压制 | 低于当前预期 | 仍有 RPO，但客户项目延期或硬件交付递延 | 保留悲观下沿 | 按产品 backlog 未披露；出口管制、客户项目推迟、验证硬件大单波动 |
+| Core EDA + verification + hardware acceleration | 基准产品 | 44.5-46.5 亿美元 | 约 19.0-21.0 亿美元 | 支撑公司 43.5%-44.5% 非 GAAP 经营利润率 | 符合当前指引和 RPO 路径 | 2026Q1 Core EDA +18%、硬件 record、backlog/cRPO | 保留基准 | 不能把 AI 芯片出货增速直接映射为 EDA 收入 |
+| Core EDA + verification + hardware acceleration | 乐观产品 | 47.5-50.5 亿美元 | 约 21.5-23.8 亿美元 | 高毛利软件和验证 capacity 扩张推动利润率上行 | 高于当前预期 | Rubin/MI400/custom ASIC 并发、emulation/prototyping 紧张、EDA Cloud 用量上行 | 保留乐观 | 需要谁买、买什么、何时确认的合同/收入线索 |
+| Core EDA + verification + hardware acceleration | 极度乐观产品 | 51.0-54.5 亿美元 | 约 24.0-26.5 亿美元 | 软件/云用量和平台合同显著提价才成立 | 显著高于当前预期 | 多客户下一代 tapeout 同步提前，验证硬件和 signoff capacity 成瓶颈 | 下移为乐观上限/低可信上限 | 缺少按产品 bookings 和客户确认，不能只靠行业热度 |
+| Semiconductor IP | 悲观产品 | 7.8-8.5 亿美元 | 约 2.6-3.2 亿美元 | 高速 IP 支持成本上升，royalty/NRE 时点不利 | 低于当前 IP 增长路径 | IP 类别仍在收入表，但 HBM4/UCIe 项目慢 | 保留悲观 | 客户自研、Synopsys/Rambus/Arm/Alphawave 竞争、IP silicon issue |
+| Semiconductor IP | 基准产品 | 8.8-9.8 亿美元 | 约 3.3-4.2 亿美元 | 高毛利 license/VIP 支撑；FAE/test chip 成本可控 | 符合当前预期 | 2026Q1 IP +22%，行业 SIP +18.3%，AI/HPC IP 需求明确 | 保留基准 | 单客户 design win 未披露，不能把行业 HBM4 TAM 全部给 Cadence |
+| Semiconductor IP | 乐观产品 | 10.5-12.0 亿美元 | 约 4.2-5.4 亿美元 | HBM4/UCIe/PCIe/CXL/SerDes mix 改善，利润率上行 | 高于当前预期 | 高端 IP design win、NRE、VIP、silicon-proven 溢价 | 保留乐观 | 收入确认可能前置/后置，客户项目制导致季度波动 |
+| Semiconductor IP | 极度乐观产品 | 12.5-15.0 亿美元 | 约 5.2-7.0 亿美元 | 非线性上行需高端 IP 稀缺和多客户同步采用 | 显著高于当前预期 | HBM4 和 UCIe 成高端默认，多个 hyperscaler 采用外部 Cadence IP/VIP | 下移为乐观上限/低可信上限 | 没有客户/项目/时间表的 pipeline 不得进入 NTM 基准 |
+| System Design & Analysis | 悲观产品 | 8.5-9.5 亿美元 | 约 1.8-2.5 亿美元 | 收购摊销、服务 mix 和整合费用压制 GAAP；非 GAAP 仍稳 | 低于当前预期 | Hexagon 已完成但协同慢；AI factory pilot 未转大单 | 保留悲观 | 传统 CAE 客户迁移慢，AI factory 收入未披露 |
+| System Design & Analysis | 基准产品 | 9.5-11.0 亿美元 | 约 2.4-3.4 亿美元 | 多物理场软件高毛利，但整合期利润率略低于成熟 EDA | 符合当前预期 | SD&A +18%，Hexagon 2026 增量，3DIC/thermal/signoff 需求 | 保留基准 | 不能把整座 AI 数据中心 capex 当 Cadence digital twin 收入 |
+| System Design & Analysis | 乐观产品 | 11.0-13.0 亿美元 | 约 3.2-4.4 亿美元 | 3DIC、thermal、digital twin 高价值项目增加，利润率上行 | 高于当前预期 | NVIDIA/CUDA-X/Omniverse 合作、HBM4/先进封装热电机械瓶颈 | 保留乐观 | AI factory 项目需要客户采购和验收，不是产品页即可收入化 |
+| System Design & Analysis | 极度乐观产品 | 13.5-16.5 亿美元 | 约 4.4-6.3 亿美元 | 只有多物理场平台化、AI factory 多项目落地才成立 | 显著高于当前预期 | SD&A 成为 silicon-to-systems 平台，Hexagon/BETA/Reality DT 协同超预期 | 下移为乐观上限/跟踪 | NTM 缺少大规模 AI factory 商业收入披露 |
+| Agentic EDA | 悲观产品 | 0，或只作为既有合同功能 | 无法可靠量化；几乎不贡献独立利润 | 无新增付费，云/研发成本先发生 | 低于市场叙事 | 产品存在但付费转化未证实 | 保留悲观 | ROI、正确性、安全和责任边界未验证 |
+| Agentic EDA | 基准产品 | 0-0.5 亿美元，且嵌入 Core EDA/SD&A | 无法可靠量化；小幅提高续约质量 | 对 NTM 利润率影响有限 | 符合保守预期 | 官方产品、早期部署；但无收入拆分 | 保留基准但不单独加总 | 不能重复计入 Core EDA |
+| Agentic EDA | 乐观产品 | 0.8-2.0 亿美元 | 约 0.4-1.2 亿美元增量经营利润 | 高毛利模块/usage 收费，增量利润率高 | 高于当前预期 | Top 客户证明验证、RTL、custom、signoff 效率提升并付费 | 保留乐观 | 需要付费率和合同证据 |
+| Agentic EDA | 极度乐观产品 | 2.5-5.0 亿美元 | 约 1.3-3.0 亿美元 | 成为新收费层才可显著上修 | 显著高于当前预期 | Agentic EDA 从 demo 转为生产流，形成新 SKU | 仅作跟踪/下移 | 当前缺少独立收入和 NTM 时间表 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：第一个表为公司 NTM 收入和利润四情景。NTM 为 2026Q2-2027Q1。绝对增速以 2026Q1 LTM 收入约 55.29 亿美元为比较基数。毛利率和经营利润率采用非 GAAP 主口径；GAAP 受收购摊销、SBC、整合费用和利息/税率影响，另在来源中标注。公司层面不讨论市场定价。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 59.5-62.0 亿美元 | +8%-12% vs 2026Q1 LTM | 低于当前预期；FY2026 指引下沿难完全兑现或 2027Q1 低于 run-rate | 非 GAAP 86.5%-87.5% | 非 GAAP 41.5%-43.0% | 非 GAAP 经营利润约 24.7-26.7 亿美元；非 GAAP 净利润约 18.5-20.5 亿美元 | FCF 约 14.5-17.0 亿美元，低于正常兑现路径 | 中 | AI/HPC 项目延期、验证硬件交付/验收延后、IP NRE 时点不利、Hexagon 整合慢、出口管制 |
+| 基准公司 | 63.5-65.5 亿美元 | +15%-19% vs 2026Q1 LTM | 符合当前预期；FY2026 指引正常兑现，2027Q1 延续低双位数至中双位数增长 | 非 GAAP 87.5%-88.5% | 非 GAAP 43.5%-44.5% | 非 GAAP 经营利润约 27.6-29.1 亿美元；非 GAAP 净利润约 21.5-23.5 亿美元 | FCF 约 16.5-19.5 亿美元；与官方 FY2026 CFFO/CapEx 指引相容 | 中高 | RPO 正常转收入、硬件/IP mix 可控、SD&A 整合正常、DSO 不继续恶化 |
+| 乐观公司 | 67.0-70.5 亿美元 | +21%-28% vs 2026Q1 LTM | 高于当前预期 2.5-6.0 亿美元；不是单一小产品造成 | 非 GAAP 88.0%-89.0% | 非 GAAP 44.5%-46.0% | 非 GAAP 经营利润约 29.8-32.4 亿美元；非 GAAP 净利润约 23.5-26.5 亿美元 | FCF 约 19.0-23.0 亿美元；up-front IP/硬件和续约改善 | 中 | 需 Core EDA、IP、SD&A 至少两条线同步强于预期；Agentic/SD&A 不应重复计入 |
+| 极度乐观公司 | 71.5-76.5 亿美元 | +29%-38% vs 2026Q1 LTM | 显著高于当前预期；需要需求、捕获、利润率和执行同时突破 | 非 GAAP 88.5%-90.0% | 非 GAAP 46.0%-48.0% | 非 GAAP 经营利润约 32.9-36.7 亿美元；非 GAAP 净利润约 26.0-30.5 亿美元 | FCF 约 22.5-27.5 亿美元；需要高预收、高续约和低 DSO | 低 | 缺少产品级 bookings 和 Agentic/AI factory 收入证据；多个客户 tapeout、HBM4/CoWoS、IP 和验证硬件必须同时超预期 |
+
+汇总检查：
+
+- 产品之间存在嵌入关系：Agentic EDA 不能与 Core EDA/SD&A 重复加总；3DIC/package 既可能在 Core EDA 也可能在 SD&A 中体现，汇总时按官方三类产品结构校准。
+- 一次性项目和并购影响：Hexagon D&E 已完成收购，2026 增量可纳入基准；但 GAAP 摊销和非 GAAP EPS 稀释不能被忽略。
+- 传统/非 AI base：Cadence 大量收入来自非 AI/传统半导体、汽车、工业、通信、航空、生命科学等客户，构成稳定底座，也会在悲观情景中缓冲 AI 单点波动。
+- 低毛利 pass-through：Cadence 不是硬件 BOM 公司，收入主体不是低毛利 pass-through；但 Palladium/Protium 硬件和服务 mix 会使毛利低于纯软件/IP。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。校准动作仅使用保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次：AI capex 和芯片 tapeout 是需求层风险；RPO/硬件/IP 确认是收入基数风险；Synopsys/Ansys 或客户自研是捕获/份额风险；Hexagon 整合和 mix 是公司利润率风险；未披露产品 bookings 是可信度风险。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 14.742 亿美元、FY2026 指引 61.25-62.25 亿美元、Q2 指引 15.55-15.95 亿美元 | 公司收入基准 | 支撑 NTM 基准 63.5-65.5 亿美元 | 支撑非 GAAP 43.5%-44.5% 经营利润率 | 指引兑现需要 Q2-Q4 稳定交付 | 基准保留 |
+| Backlog 80 亿美元、未来 12 个月可确认 RPO 40 亿美元 | 收入确认可信度 | 对 FY2026 指引覆盖度高，降低悲观概率 | 高可见性有利于资源规划 | 需要续约、新订单和 up-front 收入补足非 RPO 部分 | 基准可信度上调到中高 |
+| Core EDA +18%、IP +22%、SD&A +18%、硬件 record quarter | 产品贡献 | 证明增长不是单一产品线 | Core/IP 高毛利支持利润质量，硬件 mix 稍压毛利 | 硬件交付和 IP 时点带来波动 | 乐观保留 |
+| SEMI Q4 2025 ESD +10.3%、SIP +18.3%；项目内 EDA/IP 行业资料指向 HBM4、UCIe、PCIe 7/8、SerDes、3DIC 需求 | 产品需求 | 支撑 EDA/IP 需求池双位数增长 | 高端 IP/3DIC 软件利润质量高 | 需求领先收入确认，不能直接等同收入 | 基准和乐观保留 |
+| Cadence AI IP 产品覆盖 PCIe/CXL、UCIe、SerDes、HBM/HBM4E、DDR/LPDDR/GDDR 等 | 收入基数和产品捕获 | 证明公司可参与 AI/HPC 接口 IP 需求池 | IP license/VIP 毛利高，但 test chip/FAE 成本存在 | 具体客户、合同和 royalty 未披露 | 类别纳入基准；未量化 design win 放入乐观 |
+| Hexagon D&E/MSC 收购完成，官方预期 2026 增量收入约 1.60 亿美元、2026 EPS 稀释后 2027 accretive | SD&A 收入和公司利润 | 已完成收购可进入基准 | GAAP 摊销和整合费用压低 GAAP；非 GAAP 看协同 | 现金支出、债务、整合执行影响 FCF | SD&A 基准保留，利润率保守处理 |
+| Cadence/NVIDIA 合作、AgentStack/ChipStack/ViraStack/InnoStack 官方发布和早期部署 | Agentic EDA 需求和执行可信度 | 支撑乐观/极度乐观上限，但不支撑独立基准收入 | 若付费模块化，增量利润率高；若免费增强，利润有限 | 客户正确性、安全、数据隔离验证周期长 | 基准只小比例嵌入，乐观保留，极度乐观下移 |
+| 按产品 backlog、bookings、AI 数据中心收入、客户拆分、取消率均未披露 | 可信度 | 限制产品级和极度乐观收入上限 | 限制产品级利润量化 | 增加模型误差 | 极度乐观下移；产品级利润填估计或无法可靠量化 |
+| 出口管制、中国收入 mix 13%、DOJ/BIS settlement 后续合规 | 收入确认和风险 | 可能影响高端 EDA/IP 区域收入和客户节奏 | 合规成本和区域 mix 可能影响利润 | 合同审核、许可和客户可得性影响执行 | 只在收入确认/风险层处理一次，不重复压低需求和利润 |
+| Synopsys/Ansys、Siemens EDA、Rambus/Arm/Alphawave/Qualcomm、客户自研工具/IP | 产品捕获和价格 | 限制份额和 ASP 上修 | 多供采购和竞争压价限制超额利润 | 客户 flow 锁定缓冲短期替代 | 乐观需要公司特定证据；极度乐观降权 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入低于当前指引和 run-rate，产品需求或收入确认任一关键环节低于预期 | Backlog/cRPO 高、产品线均双位数增长、非 AI base 有缓冲 | 按产品 backlog 未披露，AI/HPC 项目可能延期，出口管制和客户自研影响确认 | 保留 | 作为下行情景，不作为主判断 | 中 | 出口管制只在收入确认/区域风险处理，不再重复压低所有产品利润 |
+| 基准 | FY2026 指引正常兑现，2027Q1 延续稳健增长；Core EDA/IP/SD&A 按官方结构运行 | 2026Q1 收入、Q2/FY2026 指引、80 亿 backlog、40 亿 cRPO、产品 mix 和非 GAAP 利润率均为 A 级证据 | 产品级 bookings、客户拆分、AI 数据中心收入未披露；Agentic 付费未验证 | 保留 | 主判断位置 | 中高 | 未披露产品 bookings 只降低产品级精度，不否定公司级基准 |
+| 乐观 | NTM 收入和利润率高于当前预期，来自 Core EDA、IP、SD&A 中至少两条线同步超预期 | Core EDA +18%、IP +22%、SD&A +18%、硬件 record；行业 HBM4/custom ASIC/3DIC 需求强 | 需要明确客户、产品、确认时间和利润留存证据；不能用 AI capex 总额替代 CDNS 收入 | 保留 | 上行情景 | 中 | AI capex 上修只在需求层使用，不能在收入、利润和可信度层重复上调 |
+| 极度乐观 | NTM 收入、业务结构和利润率均显著高于当前预期，多个核心环节同时突破 | 行业 AI 芯片、HBM4、先进封装、自研 ASIC 和 Agentic EDA 需求均有强叙事和部分证据 | 缺少产品级 bookings、独立 Agentic EDA 收入、AI factory digital twin 大单和客户确认；SD&A/Hexagon 整合仍在早期 | 下移 | 乐观上限；极度乐观仅作跟踪 | 低 | 不把 Agentic、AI factory、3DIC 和 Core EDA 重复加总；不把远期期权放入 NTM 基准 |
+
+## 8. 结论
+
+- 最可能情景：基准。NTM 收入最可能落在 63.5-65.5 亿美元，非 GAAP 经营利润约 27.6-29.1 亿美元，自由现金流约 16.5-19.5 亿美元。这个结论的核心不是 AI capex 本身，而是 Cadence 已有 backlog、cRPO、FY2026 指引、产品 mix 和三条业务线均双位数增长。
+- NTM 收入结论：Core EDA 仍是最大收入确认层，Semiconductor IP 是弹性层，SD&A 是结构扩张层，Agentic EDA 目前不作为独立基准收入线。AI/HPC 和 custom ASIC 设计复杂度会提高需求池，但只有已进入收入表、RPO、合同、订单、交付或明确产品时间表的部分才能进入基准。
+- 利润/现金流结论：利润质量高，非 GAAP 经营利润率基准维持 43.5%-44.5%。上行来自高毛利 IP、软件、EDA Cloud、Agentic 模块和 SD&A 平台化；下行来自硬件 mix、服务/整合成本、收购摊销、云算力成本、DSO 和合规/出口管制。
+- 主要传导瓶颈：需求到收入的瓶颈是产品级确认路径，而不是行业 TAM。尤其是 HBM4/UCIe/PCIe/SerDes design win、Palladium/Protium 硬件交付、SD&A/AI factory 项目验收、Agentic EDA 付费转化和 Hexagon 整合。
+- 乐观情景成立条件：2026H2-2027Q1 Rubin/MI400/custom ASIC/TPU/Trainium/MTIA/Maia 设计活动强于当前预期；Palladium/Protium 继续强；IP design win/NRE 增加；3DIC/package/thermal 项目转收入；非 GAAP 经营利润率不被硬件和整合成本吞噬。
+- 极度乐观情景成立条件：需求、公司捕获、利润质量和执行同时突破。具体表现为多家头部客户提前下一代 AI ASIC/GPU tapeout，HBM4/UCIe/SerDes IP 确认高额 NRE/license，Agentic EDA 成为新收费层，SD&A/AI factory digital twin 多项目落地，且 RPO/DSO/FCF 同步改善。当前证据不足以把极度乐观纳入主判断。
+- 悲观情景触发条件：FY2026 Q2-Q4 指引或 RPO 转收入走弱；hardware record 后回落；IP 增速从 +22% 降至低双位数；China/export control 影响高端 EDA/IP；Synopsys/Ansys 或客户自研导致高端项目份额低于预期；Hexagon 整合拖累利润率和现金流。
+- 后续跟踪数据：每季 Cadence backlog、cRPO、FY2026/FY2027 revenue guide、Core EDA/IP/SD&A mix、非 GAAP gross/operating margin、CFO/CapEx/FCF、DSO；每事件跟踪 HBM4/UCIe/PCIe 7/8/SerDes IP、Palladium/Protium 需求、ChipStack/AgentStack 付费转化、AI factory digital twin 客户、Synopsys/Ansys 整合竞争、出口管制和 China mix。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Cadence 最新官方经营数据截至 2026Q1，财报发布日期 2026-04-27；SEC 10-Q 覆盖截至 2026-03-31；本报告日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Cadence 2026Q1 results：<https://investor.cadence.com/news/news-details/2026/Cadence-Reports-First-Quarter-2026-Financial-Results/default.aspx>
+  - Cadence Q1 2026 CFO Commentary PDF：<https://s206.q4cdn.com/597110084/files/doc_financials/2026/q1/Q1-2026-CFO-Commentary-FINAL.pdf>
+  - Cadence 2026Q1 Form 10-Q：<https://www.sec.gov/Archives/edgar/data/813672/000081367226000047/cdns-20260331.htm>
+  - Cadence FY2025 Form 10-K：<https://s206.q4cdn.com/597110084/files/doc_financials/2025/q4/d0c91eef-b024-4f77-925f-bd540cb7bdef.pdf>
+  - SEMI ESD Alliance Q4 2025 EDMD：<https://www.semi.org/en/semi-press-release/esd-alliance-reports-electronic-system-design-industry-posts-5.5-billion-dollars-in-revenue-in-q4-2025>
+  - Cadence Design IP for AI：<https://www.cadence.com/en_US/home/tools/silicon-solutions/ai-ip-platform/protocol-ip-ai.html>
+  - Cadence Agentic AI for Chip Design：<https://www.cadence.com/en_US/home/ai/ai-for-design.html>
+  - Cadence and NVIDIA expanded partnership：<https://www.businesswire.com/news/home/20260415332711/en/Cadence-and-NVIDIA-Expand-Partnership-to-Reinvent-Engineering-for-the-Age-of-AI-and-Accelerated-Computing>
+  - Cadence completes Hexagon D&E acquisition：<https://www.hpcwire.com/off-the-wire/cadence-completes-acquisition-of-hexagons-design-and-engineering-business/>
+- 项目内公司和行业资料：
+  - `公司调研/AI计算芯片_EDA_IP_custom_ASIC/CDNS_Cadence Design Systems_公司调研_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_EDA工具、接口IP与Chiplet IP_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 官方指引：收入 61.25-62.25 亿美元，非 GAAP 经营利润率 43.5%-44.5%，经营现金流 18.75-19.75 亿美元，CapEx 约 2.40 亿美元。
+  - NTM 基准估算：FY2026 Q2-Q4 指引路径约 46.5-47.5 亿美元，加 2027Q1 正常增长 run-rate，得出 63.5-65.5 亿美元。
+  - 远期期权：Agentic EDA、AI factory digital twin、HBM4E/PCIe 8/448G SerDes、UCIe 3.0 D2D management/security、Physical AI/multiphysics 平台。除已进入合同和收入确认路径的部分外，不进入 NTM 基准。
+- 排除项：
+  - 未使用市场价格、估值倍数、目标价或评级作为经营价值传导证据。
+  - 未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论或模型比较。
+  - 未把行业 TAM、AI capex、GPU/ASIC 出货金额、客户总预算或数据中心项目总金额直接当作 Cadence NTM 收入。

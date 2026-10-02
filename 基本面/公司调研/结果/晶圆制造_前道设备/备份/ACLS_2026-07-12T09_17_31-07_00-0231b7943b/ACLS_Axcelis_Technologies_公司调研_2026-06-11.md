@@ -1,0 +1,480 @@
+# 公司：ACLS Axcelis Technologies 公司调研（2026-06-11）
+
+> 报告日期：2026-06-11（America/Los_Angeles）  
+> 股票代码：ACLS  
+> 公司名称：Axcelis Technologies, Inc.  
+> 正式目录：`基本面/公司调研/晶圆制造_前道设备/`  
+> 项目内资料边界：本报告只使用 `公司调研/公司索引.md` 确认正式分类目录；本地产业资料只参考 `基本面/行业调研/` 下与前道设备、AI 芯片制造、功率半导体、SiC/GaN 和 AI 数据中心电力链相关的文件。未读取、引用或继承 `特征量化/`、`日度资料/`、既有 ACLS 公司报告或其他公司调研正文。  
+> 关键口径：ACLS 不是 AI 数据中心硬件 BOM 供应商，而是晶圆制造前道设备供应商。AI 暴露主要通过 `DRAM/HBM WFE`、`先进逻辑/2nm/背面供电导入`、`SiC/GaN/功率器件制造设备` 间接传导。本文把直接、强绑定间接和远期可选性分开处理。
+
+## 0. 一句话结论
+
+Axcelis 是全球离子注入设备核心供应商之一，核心产品是 Purion 平台的高电流、高能量、中电流和批量离子注入机，历史强项在 SiC/功率器件和成熟制程，2026 年的边际变化是 `Memory/DRAM/HBM` 回升、SiC 从 EV 周期底部向数据中心电源可选性扩展、以及通过 Veeco 全股票合并试图从单一离子注入公司变成更宽的美国中型 WFE 平台。投资上它不是 NVIDIA/TSMC/ASML 级别的 AI 核心瓶颈，而是一个“AI 上游制造设备 + SiC 功率器件设备”的二阶弹性标的：财务安全垫很强，但当前估值已经把 2027 复苏、HBM/DRAM 订单和 Veeco 协同预期提前计入。
+
+最重要的判断：
+
+| 维度 | 判断 |
+|---|---|
+| 业务本质 | 离子注入 WFE 设备公司，收入来自 Systems 和 CS&I（Customer Solutions & Innovation，备件、升级、服务、二手机等） |
+| AI 数据中心相关性 | 当前直接收入为 0；强绑定间接收入主要来自 Memory/DRAM/HBM 和少量 Advanced Logic；SiC/GaN 数据中心电源是 2027 以后更明显的可选性 |
+| 2026 主线 | FY2026 收入管理层仍预计接近 FY2025 的 8.39 亿美元，2H 加权；Memory 强增长，Power/General Mature 同比下降但 bookings/利用率改善 |
+| 最大亮点 | Q1 2026 Memory 占 shipped systems revenue 32%，由 DRAM/HBM 支撑 AI demand；CS&I Q1 2026 达 72.6 百万美元，同比 +32%；Systems bookings 连续两个季度约 128 百万美元 |
+| 最大风险 | Q1 2026 GAAP 净利率降至 4.7%，gross margin 40.5%；Power/SiC 周期仍在消化；中国收入占比高；backlog 从 2025Q1 的 618.2 百万美元降至 2026Q1 的 453.3 百万美元 |
+| 估值状态 | 2026-06-11 盘中价 173.57 美元，市值约 53.8 亿美元；按最近四季 GAAP EPS 约 3.21 美元，TTM P/E 约 54x；按 FY2026/FY2027 consensus EPS 3.65/4.36 美元，forward P/E 约 47.6x/39.8x |
+
+## 1. 公司整体业务、投资人认知和产业链位置
+
+### 1.1 公司做什么
+
+Axcelis 的核心业务是设计、制造、销售和维护离子注入系统。离子注入是晶圆制造前道步骤之一，通过把硼、磷、砷、氢、氦、铝等离子注入晶圆，改变半导体器件的掺杂、阈值、电阻、缺陷和材料性质。公司在 2025 10-K 中明确把业务集中在 ion implantation systems 和完整生命周期支持。
+
+核心产品族：
+
+| 产品族 | 典型产品/型号 | 主要应用 | 投资含义 |
+|---|---|---|---|
+| High Current | Purion H、Purion H6、Purion Dragon、Purion H200+ SiC | 高剂量、浅结、逻辑、DRAM、图像传感、成熟节点、SiC 中能量应用 | 2026 年 H6 是新产品；Memory/DRAM/HBM 回升时最直接 |
+| High Energy | Purion XE、EXE、Purion XEmax、Purion XE+/EXE+ SiC | 深层注入、功率器件、SiC superjunction、先进逻辑材料修改 | 公司差异化最强方向之一；GE Aerospace JDP 使用 XEmax |
+| Medium Current | Purion M、Purion M+ SiC | 中剂量、中能量、成熟和功率器件 | SiC/成熟节点工具 |
+| Batch / Legacy | GSD Ovation、GSD Ovation ES | 批量高能注入、engineered substrate、H/He wafer splitting | 小但不应忽视：ES 可处理 SiC、LiTaO3、LiNbO3 等 engineered substrates，可能外溢到光子材料和功率材料 |
+| CS&I | spares、consumables、upgrades、service contracts、used systems | 安装基数售后与升级 | FY2025 record，Q1 2026 72.6 百万美元，是稳定器 |
+
+Axcelis 的业务不是按“AI 芯片、汽车、工业”直接收费，而是向晶圆厂、功率器件厂、存储厂、代工厂销售设备。客户下游再服务 EV、工业、AI 数据中心、通信、消费电子、航空航天和国防等终端市场。
+
+### 1.2 投资人心中的 ACLS 是什么公司
+
+投资人通常把 ACLS 看成三类叠加：
+
+1. **离子注入细分龙头**：不是 ASML/KLA 那种超大 WFE 平台，而是单一工艺环节的高技术设备商。Ion implant 的物理复杂度高、客户验证难、服务绑定强，壁垒比普通设备零部件高。
+2. **SiC/功率半导体周期股**：2021-2024 年公司最强叙事来自 EV 和工业电气化推动 SiC power device 扩产，ACLS 的 Purion Power 系列在 SiC implant 中市占和口碑强。2025 年开始 EV/工业放缓导致客户消化前期产能，收入和 backlog 下行。
+3. **AI 上游制造二阶标的**：2026 年 AI 叙事来自 HBM/DRAM WFE、先进逻辑 2nm/背面供电、AI 数据中心电源链中的 SiC/GaN。ACLS 不直接卖给云厂，但如果 HBM4、DRAM 和数据中心电源器件加速扩产，离子注入工具和售后可受益。
+
+### 1.3 最近 3 年重大业务变动、转型和收购
+
+| 时间 | 事件 | 对业务的影响 |
+|---:|---|---|
+| 2023-2024 | SiC/Power 设备周期高位，公司年收入在 10-11 亿美元级别 | Axcelis 从传统 implant 小公司被市场重新定价为 SiC WFE 受益者；backlog 曾处于高位 |
+| 2024-2025 | Power 和 General Mature 周期消化，FY2025 收入 839.0 百万美元，同比 -17.6% | 公司从高增长回到周期底部验证期；CS&I 和现金流成为稳定器 |
+| 2025-08-20 | 与 GE Aerospace 启动高压 SiC superjunction power devices JDP，使用 Purion XEmax，目标 6.5-10kV 器件 | 将 SiC implant 从 EV 扩展到航空航天、国防、电网和高压电源；对 AI 数据中心是间接高压 power 可选性 |
+| 2025-09-08 | 发布 Purion Power Series+，覆盖 H200+ SiC、M+ SiC、XE+ SiC、EXE+ SiC，支持 150/200mm、SiC/Si/GaN/GaAs、室温/温/热注入 | 明确押注下一代 SiC/compound semiconductor 工艺，尤其是 trench、superjunction、200mm 转换 |
+| 2025-09-08 | 发布 GSD Ovation ES，用于 engineered substrates，支持 SiC、LiTaO3、LiNbO3 等 | 小产品但有潜力：H/He wafer splitting 与功率/光子材料相关，可能和 TFLN/LiNbO3 光子材料链产生交集 |
+| 2025-10-01 | 宣布与 Veeco 全股票合并，交易 EV 约 44 亿美元，预期 2026H2 完成；Axcelis 股东约 58%，Veeco 股东约 42% | 如果完成，公司产品扩展到 laser annealing、MOCVD、ion beam deposition、advanced packaging 等，成为更宽的美国中型 WFE 平台 |
+| 2026-02-04 | 发布 Purion H6 高电流离子注入机 | 面向 logic、advanced memory、image sensor 和 mature market；对 DRAM/HBM 和先进器件缩放有更直接意义 |
+| 2026-03 | SEMICON China / CS Asia 2026：CEO keynote，介绍 Power Series+；应用总监报告 SiC superjunction 降本 | 在中国复合半导体论坛强化 power/compound 定位；也暴露中国收入和出口管制风险 |
+
+### 1.4 在产业链中的位置
+
+```text
+AI 数据中心 CapEx / GPU 与 ASIC 需求
+-> TSMC / Samsung / Intel / 存储厂 / 功率器件厂扩产
+-> WFE 工具：光刻、刻蚀、沉积、清洗、量测、离子注入
+-> ACLS：离子注入设备 + installed base service
+-> 芯片/功率器件/HBM/PMIC/SiC/GaN
+-> AI 服务器、机架电源、数据中心电力链
+```
+
+项目内 `行业调研_AI芯片前道制造设备_2026-06-11.md` 的结论是：2026 年 AI 芯片前道设备的核心机会不是新概念设备替代，而是 AI 计算中心扩建把先进逻辑和 HBM 相关产能投资强度推高。SEMI 2026-06-04 披露 Q1 2026 全球半导体设备 billings 为 365.5 亿美元，同比 +14%，创季度纪录，驱动来自 AI 相关 capacity expansion、leading-edge logic、DRAM 和 advanced packaging。SEMI 2026-04-01 的 300mm Fab Outlook 预计 2026 年 300mm fab equipment spending 为 1330 亿美元、2027 年 1510 亿美元。
+
+这对 ACLS 的含义是：它不掌握 AI 主芯片架构，也不是 HBM 瓶颈最硬环节，但它是 DRAM/HBM、功率器件、成熟节点和下一代材料修改的设备环节之一，需求会滞后并放大到订单、backlog、CS&I 和工具利用率中。
+
+## 2. 最新行情、估值和财务健康度
+
+### 2.1 最新市场数据
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | 173.57 美元 | 2026-06-11 21:35 UTC / 14:35 PDT 行情快照 | 盘中快照，非收盘价 |
+| 当日涨跌 | +16.13 美元，约 +10.25% | 2026-06-11 同一快照 | 股价对半导体设备/AI WFE 预期非常敏感 |
+| 市值 | 53.77 亿美元 | 2026-06-11 同一快照 | 约 30.98 百万股隐含股本 |
+| TTM 收入 | 845.44 百万美元 | 2025Q2-2026Q1 已披露季度相加 | 194.5 + 213.6 + 238.3 + 199.0 |
+| P/S | 约 6.36x | 市值 / TTM 收入 | 对周期底部 WFE 公司不便宜 |
+| TTM GAAP EPS | 约 3.21 美元 | 2025Q2-2026Q1 稀释 EPS 相加 | 0.98 + 0.83 + 1.10 + 0.30 |
+| TTM P/E | 约 54.1x | 173.57 / 3.21 | 当前估值主要看 2027 复苏，不看 2026 trough earnings |
+| FY2026 forward P/E | 约 47.6x | 173.57 / consensus EPS 约 3.65 | MarketWatch/WSJ 类 consensus 口径，可能随股价和估计更新 |
+| FY2027 forward P/E | 约 39.8x | 173.57 / next-year EPS 约 4.36 | MarketBeat 等第三方估计，非公司指引 |
+| 最新季度收入增速 | +3.3% YoY | 2026Q1 vs 2025Q1 | Q1 2026 revenue 198.956 百万美元 |
+| FY2025 收入增速 | -17.6% YoY | FY2025 vs FY2024 | 839.0 vs 1,017.9 百万美元 |
+| 最新 GAAP 毛利率 | 40.5% | 2026Q1 | 受 mix、服务合同和客户 settlement 影响 |
+| 最新 non-GAAP 毛利率 | 40.7% | 2026Q1 | Q2 2026 指引回到约 43.0% |
+| 最新 GAAP 净利率 | 4.7% | 2026Q1 | 10-Q common-size；net income 9.2 百万美元 |
+| TTM GAAP 净利率 | 11.9% | 2025Q2-2026Q1 | TTM net income 100.9 百万美元 / TTM revenue 845.4 百万美元 |
+
+估值结论：ACLS 的股价已经不在“周期底部廉价小盘设备股”状态。按 FY2026 flat revenue 和低到中 40% non-GAAP GM 指引看，2026 earnings 仍是低谷；现价需要 2027 Memory/DRAM/HBM、SiC/Power bookings、Veeco 交易、AI WFE 多重变量同时兑现。
+
+### 2.2 资产负债表和财务健康度
+
+| 项目 | 2026-03-31 | 判断 |
+|---|---:|---|
+| Cash & cash equivalents | 150.8 百万美元 | 现金充足 |
+| Short-term investments | 215.8 百万美元 | 高流动性金融资产 |
+| Long-term investments | 203.3 百万美元 | 与现金合计后形成大额资金缓冲 |
+| Cash + ST/LT investments | 569.9 百万美元 | 接近市值 10.6%，对小型 WFE 公司很强 |
+| Restricted cash | 10.6 百万美元 | 租赁/信用证等限制性现金 |
+| Accounts receivable | 161.8 百万美元 | 相当于 Q1 收入 0.81x，设备业务正常但需跟踪中国回款 |
+| Inventory | 326.1 百万美元 | 相当于 Q1 收入 1.64x，反映长周期设备备料，也有订单放缓时的减值风险 |
+| Total current assets | 935.7 百万美元 | 现金、投资、AR、库存构成 |
+| Total current liabilities | 203.9 百万美元 | current ratio 约 4.59x |
+| Finance lease obligation | 42.0 百万美元 | 不是银行借款，主要为总部融资租赁 |
+| Total liabilities | 329.9 百万美元 | 负债/资产约 24.0% |
+| Stockholders' equity | 1,044.6 百万美元 | 账面资本厚 |
+| 近似净现金 | 约 527.9 百万美元 | Cash+investments - finance lease |
+
+财务健康度评估：
+
+- **偿债风险低**：2025 10-K 披露年底无 bank debt，2026Q1 只有约 42.0 百万美元融资租赁义务；现金和投资约 569.9 百万美元，显著覆盖负债。
+- **营运资金安全但库存偏高**：current ratio 4.6x 很强；库存 326.1 百万美元是 Q1 revenue 的 1.64x，适合突然订单恢复，但如果 Power/General Mature 恢复推迟，会拖累现金转换或带来 write-down 风险。
+- **盈利质量短期下滑**：Q1 2026 GAAP operating margin 4.0%、net margin 4.7%，明显低于 FY2025 的 14.2% operating margin；但 non-GAAP operating margin 11.7%，说明交易费用、mix、客户 settlement 是主要扰动之一。
+- **并购弹性与风险并存**：Veeco 是全股票合并，对现金消耗有限；但交易和整合费用已经影响 2025Q4-2026Q1 GAAP opex，若监管或整合延迟，会压制利润率。
+
+## 3. 最新一次和最近四次财报：订单、收入、利润率和 AI 暴露
+
+### 3.1 最近五个季度核心表
+
+说明：Axcelis 不披露每个终端行业的 backlog、lead time 和取消率。下表使用公司披露的 Systems bookings、Systems backlog、Systems revenue、shipped system revenue by segment 进行交叉估算。`AI强绑定间接收入` 只计 Memory/DRAM/HBM 和 Advanced Logic shipped systems，不把所有 SiC/General Mature 机械算成 AI。
+
+| 季度 | 总收入 | YoY | Systems / CS&I | Systems bookings | Book-to-bill | Systems backlog | GAAP GM / OM | non-GAAP GM / OM | GAAP EPS / non-GAAP EPS | Shipped systems mix 与 AI 暴露 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| 2026Q1 | 199.0M | +3.3% | 126.3M / 72.6M | 128.2M | 1.02x | 453.3M | 40.5% / 4.0% | 40.7% / 11.7% | 0.30 / 0.72 | SiC 25%、Other Power 10%、General Mature 33%、Memory 32%、Advanced Logic 0%。Memory 约 40.4M，占总收入 20.3%，由 DRAM/HBM 支撑 AI-driven demand；SiC shipments 降但 bookings 增强 |
+| 2025Q4 | 238.3M | -5.6% | 156.5M / 81.9M | 127.6M | 0.82x | 457.0M | 47.0% / 15.2% | 47.3% / 21.1% | 1.10 / 1.49 | SiC 41%、Other Power 12%、General Mature 35%、Memory 9%、Advanced Logic 3%。Memory+Advanced Logic 约 18.8M，占总收入 7.9%；Q4 memory 受 DRAM/HBM 需求拉动 |
+| 2025Q3 | 213.6M | -16.7% | 143.7M / 69.9M | 52.2M | 0.36x | 484.5M | 41.6% / 11.7% | 41.8% / 18.2% | 0.83 / 1.21 | SiC 52%、Other Power 18%、General Mature 25%、Memory 2%、Advanced Logic 3%。Power 共 70% systems revenue；Memory+Advanced Logic 约 7.2M，占总收入 3.4%；AI 仍小 |
+| 2025Q2 | 194.5M | -24.2% | 133.3M / 61.3M | 96.2M | 0.72x | 575.7M 修正后 | 44.9% / 14.9% | 45.2% / 17.7% | 0.98 / 1.13 | SiC 40%、Other Power 15%、General Mature 43%、Memory 3%、Advanced Logic 0%。Memory 约 4.0M，占总收入 2.1%；中国 150/200mm SiC 仍稳 |
+| 2025Q1 | 192.6M | -23.7% | 137.6M / 55.0M | 109.9M | 0.80x | 618.2M | 46.1% / 15.1% | 46.4% / 18.3% | 0.88 / 1.04 | SiC 37%、Si IGBT 2%、General Mature 47%、Memory 14%、Advanced Logic 0%。Memory 约 19.3M，占总收入 10.0%；SiC 长期需求仍在但 ROW 消化产能 |
+
+### 3.2 关键趋势
+
+1. **Backlog 仍高但趋势下降**：Systems backlog 从 2025Q1 的 618.2M 降至 2026Q1 的 453.3M，同比 -26.7%。这说明公司并没有处在“订单无限、供给完全不够”的状态，至少从 2025 到 2026Q1 是客户消化和订单重置期。
+2. **Bookings 在 2025Q4-2026Q1 稳住**：Systems bookings 2025Q3 只有 52.2M，2025Q4 回到 127.6M，2026Q1 128.2M。Q1 book-to-bill 约 1.02x，是业务触底后的正信号。
+3. **CS&I 是抗周期稳定器**：CS&I Q1 2026 为 72.6M，同比 +32.0%；FY2025 CS&I 268.0M，同比 +13.9%，占 FY2025 收入 31.9%。这代表 installed base 的 spares、consumables、upgrades 和 services 正在更重要。
+4. **Memory 从低基数转为 AI 强绑定主线**：Memory shipped systems mix 从 2025Q3 的 2%、Q4 的 9% 跳到 2026Q1 的 32%。公司明确称 Q1 memory 由 DRAM 和 HBM applications 驱动，用于支持 AI-driven demand，并预计 2026 strong growth、momentum into 2027。
+5. **Power/SiC 仍是最大历史利润池，但正在重构**：2025Q3 power 共 70% systems revenue，2026Q1 降至 35%。公司说 Q1 SiC shipments moderated sequentially but bookings strengthened，长线 driver 是 SiC penetration、200mm 转换、channeling 和 AI data center power conversion。
+6. **Advanced Logic 仍小**：Q1 2026 没有 advanced logic shipped systems revenue，但有一台 system early Q2 shipped for material modification application for 2nm production。这里可选性高，但目前收入贡献小。
+
+### 3.3 订单、交期、取消率和渠道验证
+
+| 项目 | 当前证据 | 判断 |
+|---|---|---|
+| Backlog | 2026Q1 Systems backlog 453.3M，略低于 2025Q4 的 457.0M，明显低于 2025Q1 的 618.2M | 订单池尚未恢复到 2024/2025 初高位；对 2026 flat revenue 指引形成支撑但不是爆发信号 |
+| Bookings | 2026Q1 128.2M，2025Q4 127.6M，2025Q3 52.2M | 订单底部改善；Q1 book-to-bill 约 1.02x |
+| Lead time | 公司未披露标准 lead time | 用 backlog / systems revenue 粗略看，Q1 2026 backlog coverage 约 3.6 个季度 systems revenue；但设备收入确认受安装、客户验收和出口许可影响，不能直接等同交期 |
+| 取消率 | 未披露取消率；2025Q2 backlog 曾在 Q3 presentation 中修正 -6.4M | 未看到大规模取消公开证据；但客户 delay、order conversion timing 和 export control 是明确风险 |
+| 客户项目 | Q4 2025 leading North American memory manufacturer high current order；Q1 2026 leading North American memory manufacturer evaluation completed；GE Aerospace SiC JDP；China SiC capacity/customer wins | Memory/SiC 具备项目证据；AI hyperscaler 不是直接客户 |
+| 交付窗口 | Q2 2026 revenue guide 205M；FY2026 flat vs FY2025，2H weighted | 一年增长更多取决于 2026H2 bookings 和 2027 DRAM/HBM fab capex，而不是当前 backlog 单独决定 |
+
+## 4. 2026 最新指引、业务收入占比和产品映射
+
+### 4.1 2026Q1 与 Q2/FY2026 指引
+
+| 项目 | 公司披露 | 解读 |
+|---|---|---|
+| Q2 2026 revenue guide | 约 205M | 环比 Q1 +3.0%，同比 Q2 2025 +5.4% |
+| Q2 non-GAAP GM guide | 约 43.0% | 从 Q1 40.7% 修复，但仍低于 2025Q4 47.3% |
+| Q2 non-GAAP EPS guide | 约 0.90 | 环比改善 |
+| FY2026 revenue view | 仍预计相对 FY2025 flat，且 2H weighted | FY2026 大致 839M 附近，不是爆发年 |
+| FY2026 non-GAAP GM view | low-to-mid 40% | Memory mix 上升和 tariff 影响压制毛利；公司称 tariff modest YoY impact <100bp |
+| Market trend | Memory strong growth；Power/General Mature Y/Y decline but bookings/utilization improving；Advanced Logic similar to 2025 | 2026 最突出业务是 Memory/DRAM/HBM 增量，不是 SiC 出货本身 |
+
+### 4.2 2026Q1 业务占比和产品
+
+| 业务/应用 | 2026Q1 收入贡献估算 | 占总收入 | 对应产品/型号 | 增长状态 | AI 数据中心相关性 |
+|---|---:|---:|---|---|---|
+| CS&I | 72.6M | 36.5% | spares、consumables、upgrades、service、used systems | +32% YoY | 间接受益：fab utilization、installed base、HBM/SiC 工具利用率上升 |
+| Memory / DRAM / HBM | 约 40.4M | 20.3% | Purion H6 / High Current、部分 high energy/medium current flow | Q1 2026 强 sequential increase；2026 strong growth | **最高强绑定**：HBM/DRAM 扩产直接由 AI demand 驱动 |
+| General Mature | 约 41.7M | 20.9% | Purion H/H6、M、XE 等成熟节点 implant | Q1 sequential decline；utilization/spares 改善 | 中低：AI data center 相关 PMIC、power management、industrial control 有外溢，但混在汽车/工业/消费中 |
+| SiC Power | 约 31.6M | 15.9% | Purion Power Series+、H200+ SiC、M+ SiC、XE+/EXE+ SiC、XEmax | Q1 shipments sequential moderated，bookings strengthened | 中：AI PSU/UPS/HVDC 需要 SiC/GaN，但当前主要仍是 EV/工业/中国 SiC |
+| Other Power | 约 12.6M | 6.3% | IGBT/other power device implant | 低增长/周期性 | 中低：数据中心电源可外溢，但通用品价格压力大 |
+| Advanced Logic | 0M Q1；Q2 有 2nm material modification system shipped | 0% Q1 | Purion H6、XE/XEmax、material modification flow | 当前小，2027 potential | 高可选性：2nm、BSPDN、AI ASIC/GPU advanced node |
+| Engineered Substrates | 未披露，估计很小 | <1%-2% | GSD Ovation ES | 2025 新发布，factory demo available | 小而高赔率：SiC、LiTaO3、LiNbO3 wafer splitting，可能与功率和光子材料相关 |
+
+### 4.3 跳过或降权的产品和业务
+
+以下业务存在收入，但在本次 AI 数据中心/高增长框架下权重较低：
+
+| 低权重业务 | 降权理由 |
+|---|---|
+| 传统普通 mature capacity tools | 汽车、工业、消费恢复慢，客户仍在管理 capacity；AI 绑定弱 |
+| 普通 IGBT / legacy silicon power | 通用价格竞争和 EV/工业周期拖累，AI 数据中心受益被稀释 |
+| NAND capacity-related implant | 公司多次称 NAND 客户更优先 layer count scaling via deposition/etch，near-term implant demand muted |
+| 非专有普通 spares/第三方可替代服务 | 10-K 明确 aftermarket parts 会面对第三方供应商竞争，定价权弱于 proprietary upgrades |
+| 纯概念 800VDC/SiC/GaN AI 数据中心收入 | 真实客户和订单未由 ACLS 单独披露，不能提前计入当前收入 |
+
+### 4.4 重点和突出产品，含小业务可选性
+
+| 产品/业务 | 为什么重要 | 当前证据 |
+|---|---|---|
+| Memory/DRAM/HBM high current implant | 2026 最直接 AI 强绑定增量，Q1 2026 贡献约 40M systems revenue | Q1 2026 memory 32% shipped systems；公司称 strong growth in 2026 and momentum into 2027 |
+| Purion H6 | 高电流新平台，面向 logic、advanced memory、image sensor、mature；强调 dose control、particle control、ELS7 source、throughput | 2026-02 发布；Q1 presentation 称已 introduced 并获得 China new High Current customer win |
+| Purion Power Series+ | SiC/GaN/GaAs power device roadmaps，覆盖 150/200mm 和多温度 implant，面向 superjunction、trench、200mm SiC | 2025-09 发布；SEMICON China 2026 推广；Q4 一客户从 150mm 升级到 200mm |
+| Purion XEmax | 高能深注入，6.5-10kV SiC superjunction JDP，channeling >7um aluminum implanted depth | GE Aerospace JDP；高压 SiC 和电网/航空/AI power 可选性 |
+| GSD Ovation ES | H/He wafer splitting for engineered substrates；支持 SiC、LiTaO3、LiNbO3 | 2025-09 发布；对 SiC substrate 和光子材料是小而可跟踪的产品 |
+| CS&I upgrades/service | 高安装基数下的稳定收入，可在工具利用率改善时放大 | FY2025 record CS&I 268M；Q1 2026 72.6M |
+| Advanced logic material modification / 2nm | 当前小但技术含量高，若 2nm/GAA/BSPDN 需要 implant/material modification，弹性高 | Q1 2026 presentation：system shipped early Q2 for material modification application for 2nm production |
+
+## 5. 关键产品和业务：当前收入、增速、AI 重要性、紧急性、供需与溢价能力
+
+评分：1 低，5 高。收入为 standalone ACLS 当前估算，不含未完成的 Veeco。
+
+| 产品/业务 | 当前收入贡献 | 增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Memory/DRAM/HBM implant | 2026Q1 约 40M；2025Q4 约 14M | 高，从低基数跳升 | 4 | 5 | 4 | 3 | 2026 最强增量。HBM/DRAM 为 AI 真实瓶颈，但 ACLS 不是唯一设备商，毛利受 memory mix 影响 |
+| CS&I installed base | 2026Q1 72.6M；FY2025 268M | 中高，Q1 +32% YoY | 3 | 4 | 3 | 4 | 稳定器。客户停机成本高，专有备件/升级有定价权，但服务合同 mix 可拖累毛利 |
+| SiC Power / Purion Power Series+ | 2026Q1 约 31.6M SiC；Power total 44.2M | 短期下行但 bookings strengthening | 3 | 3 | 3 | 4 | 当前主要是 EV/工业/中国 SiC；AI data center power 是远期新增需求，不应全额算 AI |
+| Other Power / high voltage power | 2026Q1 约 12.6M | 低到中 | 2-3 | 3 | 2 | 2 | 普通 IGBT/MOSFET 竞争强；高压 superjunction/SiC 才值得高权重 |
+| Advanced Logic / 2nm material modification | Q1 0M；Q2 有 system shipped | 低基数高弹性 | 4 | 4 | 3 | 3 | 还不是收入主线；若 BSPDN/material modification design-in 成立，2027 弹性大 |
+| GSD Ovation ES / engineered substrates | 未披露，当前很小 | 新产品，低基数 | 2-3 | 2-3 | 2 | 3 | 不要忽视：SiC、LiTaO3、LiNbO3 支持功率和光子材料，但目前没有大客户收入证据 |
+
+## 6. 一年后产品收入贡献三情景预测
+
+口径：未来 12 个月滚动收入贡献，standalone ACLS，不把 Veeco 收入并入。若 Veeco 在 2026H2 完成，合并公司口径会显著不同，需另做 pro forma。
+
+### 6.1 分产品三情景
+
+| 产品/业务 | 基准情景：未来一年收入贡献 | 乐观情景：未来一年收入贡献 | 极度乐观情景：未来一年收入贡献 | 关键触发 |
+|---|---:|---:|---:|---|
+| Memory/DRAM/HBM implant | 160-220M，YoY +40%-80% | 220-300M，YoY +80%-140% | 300-380M，YoY +140%+ | SK hynix/Samsung/Micron HBM4/DRAM WFE pull-in；leading North American memory customer 扩大采用 |
+| CS&I installed base | 300-330M，YoY +10%-20% | 330-370M，YoY +20%-35% | 370-420M，YoY +35%-55% | installed base utilization 改善，SiC/memory 工具 uptime 与 upgrades 需求提升 |
+| SiC Power / Power Series+ | 210-260M，低个位到中个位恢复 | 280-350M，+20%-40% | 360-450M，+50%+ | 中国 SiC 继续扩产，ROW 200mm/trench/superjunction 恢复，AI PSU/UPS SiC design-in 由 demo 变订单 |
+| Other Power / high voltage power | 40-70M，平稳 | 70-100M | 100-140M | 高压 superjunction、UPS/BESS、工业电网项目拉动 |
+| Advanced Logic / 2nm material modification | 20-40M | 50-90M | 100-160M | 2nm/GAA/BSPDN material modification 进入多客户验证；AI ASIC/GPU N2/N3 tape-out 需要更多 implant |
+| GSD Ovation ES / engineered substrates | 0-10M | 10-30M | 30-60M | SiC substrate/engineered substrate、LiNbO3/LiTaO3 wafer splitting 样品转产线 |
+| General Mature 非 AI | 150-190M | 190-230M | 230-280M | 汽车/工业/消费成熟节点恢复；300mm PMIC/BCDMOS 订单增长 |
+
+### 6.2 三情景下的战略指标评分
+
+| 产品/业务 | 情景 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 解释 |
+|---|---|---:|---:|---:|---:|---|
+| Memory/DRAM/HBM | 基准 | 4 | 5 | 3 | 3 | HBM/DRAM 扩产真实，但 ACLS 工具不是唯一瓶颈 |
+| Memory/DRAM/HBM | 乐观 | 5 | 5 | 4 | 3 | HBM4/Rubin/MI400/ASIC 同时 pull-in，implant tools 跟随 WFE |
+| Memory/DRAM/HBM | 极度乐观 | 5 | 5 | 5 | 4 | 多家 memory fab 预付款/长期订单锁工具，ACLS high current win 扩大 |
+| SiC Power | 基准 | 3 | 3 | 3 | 4 | EV/工业消化仍压制，AI power 仅小比例 |
+| SiC Power | 乐观 | 4 | 4 | 4 | 4 | 48V/800V PSU、UPS、SST 和 high voltage SiC 订单出现 |
+| SiC Power | 极度乐观 | 4 | 5 | 5 | 4-5 | 1MW rack / HVDC 验证提前，superjunction high-energy implant 变关键工艺 |
+| CS&I | 基准 | 3 | 4 | 3 | 4 | 工具利用率改善，备件和服务稳定 |
+| CS&I | 乐观 | 3 | 4 | 4 | 4 | installed base service attach 提升 |
+| CS&I | 极度乐观 | 4 | 5 | 4 | 4 | 客户为 uptime 付溢价，upgrades 放大 |
+| Advanced Logic / 2nm | 基准 | 4 | 3 | 2 | 3 | 单台/少量验证，不构成主线 |
+| Advanced Logic / 2nm | 乐观 | 4 | 4 | 3 | 3 | N2/BSPDN 客户扩大 |
+| Advanced Logic / 2nm | 极度乐观 | 5 | 5 | 4 | 4 | 多客户 2nm material modification 复制，ACLS 获得 POR |
+| Engineered Substrates | 基准 | 2 | 2 | 2 | 3 | 工厂 demo/早期应用 |
+| Engineered Substrates | 乐观 | 3 | 3 | 3 | 3 | SiC/光子材料客户试产 |
+| Engineered Substrates | 极度乐观 | 4 | 4 | 4 | 4 | TFLN/LiNbO3 和 SiC wafer splitting 成为瓶颈 |
+
+## 7. BOM、每 MW/rack/GPU/optical port 内容量、价格传导链、当前产能和认证
+
+### 7.1 先给边界：ACLS 的“真实内容量”不是机架 BOM
+
+ACLS 的设备不会出现在 AI rack、GPU、optical port 或数据中心电力柜里。真实物理 BOM 为：
+
+| 口径 | ACLS 直接物理内容 |
+|---|---:|
+| 每 MW 数据中心 | 0 美元直接 BOM |
+| 每 rack | 0 美元直接 BOM |
+| 每 GPU/ASIC | 0 美元直接 BOM |
+| 每 optical port | 0 美元直接 BOM |
+
+但 ACLS 可以通过“制造能力折算内容量”体现价值：
+
+```text
+GPU/ASIC/HBM/SiC 器件需求
+-> 晶圆厂新增或升级产线
+-> 离子注入设备采购
+-> 工具折旧/产能成本进入每颗芯片或每个功率器件成本
+-> 芯片/功率器件卖给服务器、电源或光模块链条
+```
+
+因此本节所有 per GPU/per rack 数字都是“制造 capex shadow content”，不是服务器硬件 BOM。该口径适合判断 ACLS 的订单弹性，不适合和 VRT/ETN/MPWR/光模块公司直接相加。
+
+### 7.2 制造 capex shadow BOM 估算
+
+假设和范围：
+
+- 高端 AI rack 以 72 GPU 级别为参考，功率约 100kW；1MW 约等于 10 个 100kW rack，约 720 GPU。
+- HBM/DRAM、GPU/ASIC 和功率器件的 WFE 成本通过多年折旧进入器件成本；ion implant 通常只是 WFE 的小部分。
+- 估算只用于方向性，不代表公司披露或客户报价。
+
+| 产品链条 | 每 GPU / 每 rack / 每 MW 的 ACLS shadow content | 价格传导链 | 可信度 |
+|---|---:|---|---|
+| DRAM/HBM implant | 每 GPU 约 5-30 美元；每 72-GPU rack 约 0.4K-2.2K 美元；每 MW 约 4K-22K 美元 | HBM stack ASP -> DRAM fab capex/折旧 -> implant tools -> ACLS systems + CS&I | 中。Q1 2026 Memory 真实放量，但每 GPU 折算需模型 |
+| Advanced logic / GPU/ASIC implant | 每 GPU 约 5-50 美元；每 rack 约 0.4K-3.6K 美元；每 MW 约 4K-36K 美元 | GPU/ASIC wafer price -> foundry WFE capex -> implant/material modification tools | 低到中。ACLS advanced logic 当前收入很小 |
+| SiC/GaN AI power device implant | 每 rack 约 5-100 美元；每 MW 约 50-1,000 美元，2027 后可能上修 | AI PSU/UPS/800VDC power semiconductor BOM -> SiC/GaN device ASP -> power fab capex -> implant tools | 低到中。AI data center power conversion 是真实需求，但 ACLS 未披露 direct AI power split |
+| Engineered substrate / optical material | 每 optical port 约 0-0.5 美元；1.6T/3.2T 若 TFLN/LiNbO3 wafer splitting 大规模使用，可能升至 0.5-2 美元 | optical engine / modulator ASP -> engineered substrate wafer -> H/He implant / splitting tools | 低。GSD Ovation ES 支持 LiTaO3/LiNbO3，但未披露光通信客户 |
+
+更重要的价格传导结论：
+
+1. **ACLS 的订单弹性来自 fab capex，不来自 rack BOM 单价**。当 AI rack 需求上升，首先反映在 GPU/HBM/SiC 器件短缺，再反映到晶圆厂 WFE 预算和工具订单。
+2. **客户愿意为良率、throughput 和 uptime 付费**。离子注入的设备价差相对于 wafer scrap、yield loss 和 downtime 代价很小，因此高良率/低污染/高 throughput 工具能保留定价权。
+3. **功率器件的价格链更长且更不确定**。AI PSU/UPS 是否使用高端 SiC/GaN、何时从 48V 走向 800VDC，会决定 ACLS Power Series+ 的 AI 贡献。
+
+### 7.3 当前产能能力、采纳程度和认证阶段
+
+| 产品/业务 | 当前“产能能力（美元计）” | 供应链采纳程度 | 认证/验证阶段 |
+|---|---:|---|---|
+| Standalone ACLS 总收入产能 | 历史已验证年收入能力 1.13B（FY2023），FY2026 管理层指向约 0.84B | 全球客户，principal locations 覆盖中国、德国、意大利、日本、韩国、马来西亚、新加坡、台湾、美国 | 成熟供应商 |
+| Memory/DRAM/HBM implant | 2026Q1 约 40M systems，年化约 160M；若客户 pull-in，可向 200M+ | leading North American memory manufacturer 完成 system evaluation；Q4 有 high current order | 从 evaluation 向 adoption 推进；具体 POR 未披露 |
+| SiC Power / Power Series+ | FY2025 power shipped system 约 314M；2026Q1 power 年化约 177M，处于消化期 | 中国 SiC 客户仍在扩；ROW 关注 200mm/trench/superjunction；GE Aerospace JDP | Power Series+ 已发布；部分客户升级 150mm 到 200mm；GE JDP 为研发/production-worthy process 开发 |
+| CS&I | FY2025 268M，Q1 2026 年化约 290M | installed base 直接驱动 | 成熟商业模式；service gross margin 会因合同 mix 波动 |
+| Advanced Logic / 2nm material modification | 当前小于 50M 年化；Q1 0，Q2 有 system shipped | 有 existing customer 和 2nm production material modification application | 客户验证/早期导入，未证明规模化 |
+| GSD Ovation ES | 未披露，当前估计 <10M 年化 | factory demo available；supports SiC/LiTaO3/LiNbO3 | 早期产品/应用开发 |
+
+## 8. 一年后产能能力、供应链采纳和认证阶段三情景
+
+| 产品/业务 | 基准：一年后产能/采纳 | 乐观：一年后产能/采纳 | 极度乐观：一年后产能/采纳 |
+|---|---|---|---|
+| Memory/DRAM/HBM implant | 年收入能力 180-230M；1-2 家主要 memory 客户扩大 follow-on | 230-320M；North America + Korea/Japan memory 客户同步采用 | 320-400M；HBM4/DRAM WFE pull-in，ACLS high current tools 获多区域 POR |
+| SiC Power / Power Series+ | 年收入能力 220-280M；China SiC 稳定，ROW 少量 200mm/trench | 300-380M；AI PSU/UPS/SiC power design-in 开始形成设备订单 | 400-500M；HVDC/1MW rack/高压 SiC superjunction 明确客户资本开支 |
+| CS&I | 300-330M；utilization 改善 | 330-380M；spares/upgrades 随 Memory/Power tool usage 增强 | 380-450M；客户为 uptime 付费，tool upgrade backlog 拉长 |
+| Advanced Logic / 2nm | 20-50M；单客户/少数工具验证 | 60-100M；2nm material modification 多客户复制 | 120-180M；BSPDN/material modification 被主流 AI ASIC/GPU 工艺采纳 |
+| GSD Ovation ES | 0-15M；demo/小批量 | 15-40M；SiC/engineered substrate 客户试产 | 40-80M；LiNbO3/LiTaO3/SiC wafer splitting 变成 AI optics/power 材料瓶颈之一 |
+| Total standalone ACLS | 0.85-0.95B revenue run-rate | 1.0-1.2B revenue run-rate | 1.25-1.4B revenue run-rate | 
+
+认证阶段判断：
+
+- **Memory**：已从 evaluation 走向 adoption，但公司没有披露大规模 POR 或长期协议。2026H2 应跟踪是否出现更多 follow-on orders。
+- **SiC Power**：Power Series+ 商业产品已发布；GE Aerospace JDP 是技术信用背书，但不是量产订单。需看 high voltage superjunction 是否从研发转 production-worthy process。
+- **Advanced Logic**：2nm material modification system early Q2 shipped 是重要早期证据，但目前仍处客户验证/小量导入。
+- **GSD Ovation ES**：factory demo available，属于早期验证。对光子材料不要提前高估。
+
+## 9. 根据 backlog、订单和供给预测未来一年业务增速
+
+### 9.1 基于真实订单积压的框架
+
+核心事实：
+
+- 2026Q1 systems backlog 453.3M。
+- 2026Q1 systems bookings 128.2M，systems revenue 126.3M，book-to-bill 约 1.02x。
+- 2026Q2 revenue guide 205M，总收入环比小幅增长。
+- FY2026 revenue 仍预计 relatively flat compared to FY2025，weighted to 2H。
+- FY2025 revenue 839.0M，FY2024 revenue 1,017.9M。
+
+用 backlog 直接推断：
+
+| 指标 | 数值 | 对未来一年含义 |
+|---|---:|---|
+| backlog / Q1 systems revenue | 453.3 / 126.3 = 3.59x | 约 3-4 个季度 systems revenue visibility，但不是全部收入 visibility |
+| backlog / FY2025 systems revenue | 453.3 / 571.0 = 79.4% | 当前 backlog 可覆盖多数一年 systems revenue，但需要 bookings 补充 |
+| Q1 book-to-bill | 1.02x | 订单开始稳定，不是大爆发 |
+| Q1+Q2 guide revenue run-rate | 199M + 205M = 404M | FY2026 若 flat，则 2H 需要约 435M，即每季约 217M |
+
+### 9.2 三情景增速预测
+
+| 情景 | 未来一年总收入增速 | 预测收入区间 | 订单/供给假设 | 取消率/延迟假设 |
+|---|---:|---:|---|---|
+| 基准 | +5% 到 +12% | 885-940M | Q1 bookings 稳住，Q2/Q3 维持 120-150M systems bookings；Memory 增长抵消 Power/General Mature digestion | 取消率低但客户验收/出口许可导致 1-2 季度波动 |
+| 乐观 | +18% 到 +35% | 990M-1.13B | DRAM/HBM tools、SiC 200mm/Power Series+、CS&I 同时改善；backlog 回到 550-650M | 取消率低；客户 pull-in，部分预付款/expedite |
+| 极度乐观 | +45% 到 +65% | 1.22-1.38B | HBM4/DRAM WFE、AI power SiC/GaN、2nm material modification 同时启动，book-to-bill 连续 >1.3x | cancel 很低，供给/关键组件/安装团队成为瓶颈 |
+
+更保守地说：如果只看公司当前 FY2026 指引，2026 不是高增长年；一年后的高增长要靠 2026H2 和 2027 的订单重新加速。当前证据支持“触底改善”，还不支持“供不应求爆发”。
+
+## 10. 竞争格局、技术主流性、替代方案和客户切换成本
+
+### 10.1 离子注入竞争格局
+
+| 竞争者 | 位置 | 对 ACLS 的威胁 |
+|---|---|---|
+| Applied Materials / Varian | 全球最大半导体设备平台之一，ion implant 历史强 | 最核心竞争对手；平台资源、客户覆盖和研发强 |
+| Sumitomo Heavy Industries Ion Technology | 日本 ion implant 供应商 | 在日本/亚洲和特定工艺中竞争 |
+| Nissin Ion Equipment | 日本供应商 | power/mature 等应用竞争 |
+| Advanced Ion Beam Technology (AIBT) | 台湾供应商 | 中国/台湾成熟和功率市场潜在替代 |
+| Kingstone Semiconductor | 中国本土 implant | 出口管制和国产替代推动下，对 ACLS 中国收入长期威胁 |
+| CETC Electronics Equipment Group | 中国本土设备 | 国产替代威胁，短期高端能力需验证 |
+
+2025 10-K 明确提示，出口管制和中美贸易紧张会提高中国客户转向非美国供应商或本土供应商的风险。2026Q1 ACLS 中国收入占总收入 40%，FY2025 中国占 42%，这是最重要地缘风险。
+
+### 10.2 新技术是不是未来主流
+
+| 技术/产品 | 是否主流 | 原因 | 风险 |
+|---|---|---|---|
+| High current implant for DRAM/HBM | 是，属于存储制造常规关键工具 | AI HBM/DRAM 扩产需要 WFE；Q1 2026 已体现 | Dep/etch/litho/inspection 可能是更硬瓶颈，implant 不是唯一受益者 |
+| Purion Power Series+ for SiC | 是，在 SiC power device roadmap 中重要 | SiC trench、superjunction、200mm 转换需要更高能量、更高 throughput、更复杂温控/晶圆处理 | EV SiC 过剩和中国价格竞争可能压低客户 capex |
+| Purion XEmax high energy channeling | 潜在主流，取决于高压 SiC superjunction 是否放量 | GE Aerospace JDP 和 6.5-10kV high voltage 方向有技术含量 | JDP 到量产可能需要多年，不一定转为大额订单 |
+| 2nm material modification / backside power contacts | 可能成为先进逻辑小而高价值方向 | AI ASIC/GPU 2nm、GAA、BSPDN 需要新材料/结构修改 | ACLS 当前收入小，客户可能用其他工艺或其他供应商 |
+| GSD Ovation ES for engineered substrates | 小众可选性 | SiC、LiTaO3、LiNbO3 wafer splitting 与功率/光子材料相关 | 没有披露 AI optics 大客户，容易停留在 demo |
+| General mature implant | 是成熟主流，但不是高增长主线 | 每颗芯片都需要 implant；install base 大 | 客户 capex 与 auto/industrial/consumer 周期强相关 |
+
+### 10.3 客户替换成本
+
+客户替换成本中高，原因：
+
+- **工艺 recipe 和良率锁定**：implant dose、energy、beam current、uniformity、particle contamination、thermal control 直接影响器件性能和良率。
+- **产线认证周期长**：新工具从 evaluation 到 POR 需要客户工艺验证、可靠性测试、量产稳定性和 service 支撑。
+- **停机成本高**：如果工具 uptime 或备件交付失效，客户损失远超设备价差。
+- **但不是不可替代**：AMAT/Varian 是强竞争对手；中国本土设备在 mature/power 市场会持续缩小差距；出口管制可能迫使客户换供应商。
+
+综合判断：在高能 SiC、专有 channeling、客户已验证 high current applications 和 installed base service 上，ACLS 有中高切换成本；在普通 mature/power 和中国市场，替代风险更高。
+
+## 11. 风险、反证指标和后续跟踪清单
+
+### 11.1 主要风险
+
+| 风险 | 具体触发 | 影响 |
+|---|---|---|
+| 2026 revenue flat 之后 2027 未加速 | Q2/Q3 bookings 低于 120M，backlog 跌破 400M | 当前高 forward P/E 难支撑 |
+| Memory/HBM WFE 节奏后移 | HBM4 良率、DRAM capex 或客户采用推迟 | Q1 2026 最大亮点回落 |
+| SiC/Power 长周期消化 | EV SiC 价格继续下行，中国 SiC 产能过剩 | Power Series+ 订单恢复慢 |
+| 中国出口管制 | 美国进一步限制高端 implant 或相关服务 | 40%+ 中国收入面临波动 |
+| Veeco 交易失败或整合不顺 | 监管、股东、客户、文化或成本协同问题 | GAAP 费用上升，战略转型延迟 |
+| 服务毛利波动 | 服务合同 cost mix 不利 | Q1 2026 services gross margin 为负，说明服务收入不天然高毛利 |
+| 估值风险 | 股价已按 2027 复苏定价 | 一旦 bookings 没有继续上行，回撤可能较大 |
+
+### 11.2 反证和确认指标
+
+| 指标 | 看什么 | 正面信号 | 负面信号 |
+|---|---|---|---|
+| Systems bookings | 季度 bookings | 连续 2-3 季度 >150M，book-to-bill >1.1x | 回落到 <100M |
+| Systems backlog | 季末 backlog | 回升到 550M+ | 跌破 400M |
+| Memory mix | shipped systems 中 Memory 占比 | 维持 25%-35%，且有 follow-on orders | 回到个位数 |
+| Power/SiC | SiC shipments/bookings | bookings 增强转为 shipments，200mm 升级客户增加 | 仅中国局部订单，ROW 继续消化 |
+| Advanced logic | 2nm/material modification | Q2 2026 system 后有更多客户或 revenue | 单一客户、无后续订单 |
+| CS&I | CS&I revenue 与 gross margin | revenue >75M/季且服务/产品 mix 改善 | revenue 下滑或服务毛利持续为负 |
+| Veeco | 交易进度 | 2026H2 按期完成并给出清晰协同目标 | 延迟、监管约束、客户流失 |
+| 行业 WFE | SEMI/客户 capex | 300mm spend/DRAM equipment spending 继续上修 | AI capex 或 memory WFE 下修 |
+
+## 12. 最终投资判断
+
+ACLS 的好处是资产负债表极强、技术壁垒真实、CS&I 稳定、Memory/DRAM/HBM 在 2026 明确转强，并且 SiC/Power Series+ 和 2nm material modification 提供 2027 可选性。它的问题也很清楚：当前不是所有业务都在高增长，Power/General Mature 仍在客户消化期，backlog 尚未回到高位，Q1 GAAP 盈利率明显下滑，且股价已经把半导体设备 AI upcycle 提前定价。
+
+更适合的投资表述不是“ACLS 是 AI 数据中心核心 BOM 标的”，而是：
+
+> ACLS 是 AI 时代半导体制造链的二阶设备弹性标的。2026 年看 Memory/DRAM/HBM 和 CS&I 兑现，2027 年看 SiC/AI power、2nm material modification 和 Veeco 合并后平台化能否兑现。
+
+如果未来两个季度看到 `systems bookings 连续 >150M`、`backlog 回升`、`Memory mix 维持高位`、`Power/SiC bookings 转 shipments`，则可把 2027 standalone revenue 从 0.9-1.0B 上调到 1.1B+。如果 bookings 再次跌破 100M 或 Memory 只是一次性订单，当前估值会很难用 2026 earnings 支撑。
+
+## 13. 主要资料来源
+
+### 13.1 本地行业资料
+
+| 来源 | 用途 |
+|---|---|
+| `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md` | AI 芯片前道 WFE、SEMI 设备 billings、DRAM/HBM/先进逻辑对设备链的拉动 |
+| `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体设备子系统与真空_RF_流体模块_2026-06-11.md` | AI 数据中心到 WFE/子系统的传导链、WFE attach、设备周期 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md` | AI PSU、48V/800VDC、SiC/GaN、数据中心功率半导体情景 |
+| `行业调研/晶圆制造_设备_材料_测试/行业调研_特种晶圆代工_2026-06-11.md` | BCD/HV/SiC/GaN/SiPh 与 AI 机架系统的间接需求映射 |
+
+### 13.2 公司一手资料
+
+| 来源 | 日期 | 用途 |
+|---|---:|---|
+| Axcelis Q1 2026 financial results, https://investor.axcelis.com/news-releases/news-release-details/axcelis-announces-financial-results-first-quarter-2026 | 2026-05-07 | Q1 revenue、GM、EPS、Q2 guide |
+| Axcelis Q1 2026 earnings presentation, https://investor.axcelis.com/static-files/5b86ae99-1113-4b89-aec7-065b222fd506 | 2026-05 | Q1 systems/CS&I、bookings、backlog、segment mix、balance sheet |
+| Axcelis 2026Q1 Form 10-Q, https://www.sec.gov/Archives/edgar/data/1113232/000110465926057725/acls-20260331x10q.htm | 2026-05-08 | 资产负债表、收入、毛利、现金流 |
+| Axcelis Q4/FY2025 results, https://www.prnewswire.com/news-releases/axcelis-announces-financial-results-for-fourth-quarter-and-full-year-2025-302689906.html | 2026-02-17 | Q4/FY2025 financials |
+| Axcelis Q4 2025 earnings presentation, https://investor.axcelis.com/static-files/449e628a-922a-48b2-a95a-0248c5092560 | 2026-02 | Q4 systems/CS&I、bookings、backlog、segment mix、FY2026 commentary |
+| Axcelis Q3 2025 earnings presentation, https://investor.axcelis.com/static-files/be27f810-a5d8-4ea6-b34f-634d9fb82380 | 2025-11 | Q3 segment mix、bookings、backlog、Power/Memory commentary |
+| Axcelis Q2 2025 earnings presentation, https://investor.axcelis.com/static-files/77cd4fd9-c4be-49f7-b70e-fad8bb074e6f | 2025-08 | Q2 segment mix、bookings、backlog、SiC and DRAM commentary |
+| Axcelis Q1 2025 earnings presentation, https://investor.axcelis.com/static-files/9fcfe668-73c3-43da-a20a-91c4ba681b85 | 2025-05 | Q1 2025 baseline |
+| Axcelis 2025 Form 10-K, https://www.sec.gov/Archives/edgar/data/1113232/000110465926020461/acls-20251231x10k.htm | 2026-02-26 | 产品、竞争、出口管制、风险 |
+| Axcelis + Veeco merger release, https://investor.axcelis.com/news-releases/news-release-details/axcelis-technologies-and-veeco-instruments-combine-creating | 2025-10-01 | 交易结构、pro forma、战略转型 |
+| Purion Power Series+ release, https://axcelis.gcs-web.com/news-releases/news-release-details/axcelis-announces-launch-companys-new-purion-power-series-ion | 2025-09-08 | SiC/compound semiconductor product platform |
+| GSD Ovation ES release, https://investor.axcelis.com/news-releases/news-release-details/axcelis-announces-launch-companys-new-gsd-ovation-es-enabling | 2025-09-08 | engineered substrates / wafer splitting |
+| GE Aerospace JDP release, https://investor.axcelis.com/news-releases/news-release-details/axcelis-announces-joint-development-program-ge-aerospace | 2025-08-20 | high voltage SiC superjunction, Purion XEmax |
+| Purion H6 release, https://investor.axcelis.com/news-releases/news-release-details/axcelis-unveils-purion-h6-next-generation-high-current-ion | 2026-02-04 | high current new product |
+| SEMICON China 2026 participation, https://www.prnewswire.com/news-releases/axcelis-announces-participation-in-semicon-china-2026-302718110.html | 2026-03-19 | CS Asia、SiC/GaN forum、Power Series+ China push |
+
+### 13.3 行业和估值资料
+
+| 来源 | 日期 | 用途 |
+|---|---:|---|
+| SEMI Q1 2026 equipment billings, https://www.semi.org/en/semi-press-release/semi-reports-global-semiconductor-equipment-billings-increased-14-percent-year-over-year-in-q1-2026 | 2026-06-04 | Q1 equipment billings 36.55B、AI-related investment |
+| SEMI 300mm Fab Outlook, https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027 | 2026-04-01 | 2026/2027 300mm fab equipment spending 133B/151B |
+| TechInsights power market 2026 outlook, https://www.techinsights.com/outlook-summit-series-2026/power-market | 2026 | AI datacenter power conversion、SiC oversupply、GaN transition |
+| Yole Power SiC/GaN Compound Semiconductor Market Monitor, https://www.yolegroup.com/product/quarterly-monitor/power-sicgan-compound-semiconductor-market-monitor/ | 2026 | SiC/GaN 2031 market reference and AI data center demand |
+| 2026-06-11 market snapshot via finance quote | 2026-06-11 | ACLS price、market cap、day change |
+| MarketWatch/WSJ/MarketBeat analyst estimate pages | 2026-06 | FY2026/FY2027 EPS consensus for forward P/E approximation |

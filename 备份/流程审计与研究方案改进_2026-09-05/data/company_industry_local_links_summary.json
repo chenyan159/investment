@@ -1,0 +1,19 @@
+{
+  "company": {
+    "reports_indexed": 192,
+    "reports_with_parsed_local_md_links": 162,
+    "parsed_local_md_link_occurrences": 1419,
+    "nonresolving_occurrences": 991,
+    "reports_with_nonresolving_links": 143,
+    "unique_nonresolving_targets": 75
+  },
+  "industry": {
+    "reports_indexed": 77,
+    "reports_with_parsed_local_md_links": 63,
+    "parsed_local_md_link_occurrences": 400,
+    "nonresolving_occurrences": 0,
+    "reports_with_nonresolving_links": 0,
+    "unique_nonresolving_targets": 0
+  },
+  "scope": "Markdown inline links with local .md target (optional fragment or :line suffix), unquoted title unsupported; repeated occurrences counted; existence checked 2026-09-05. Broken link is retrieval failure, not proof cited facts wrong or files absent from backups."
+}

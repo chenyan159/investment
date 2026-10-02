@@ -1,0 +1,173 @@
+# 公司收入传导与价值传导评估：Qnity Electronics
+
+> 评估对象：`Q / Qnity Electronics`  
+> 报告日期：2026-06-12（America/Los_Angeles）  
+> 主口径：NTM，约指 2026Q2-2027Q1。公司没有直接给出 NTM 指引，因此本报告以 2026Q1 实际、FY2026 指引、Q1 年化 run-rate、已披露分部收入和项目内行业资料共同校准。  
+> 资料边界：使用 `公司调研/`、`行业调研/` 与公司官方/SEC/行业协会公开来源；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论或模型比较。  
+> 禁止项处理：本报告只做经营传导，不输出投资评级、目标价、股价区间或估值倍数判断；金融市场价格不作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 收入、毛利率、调整后 Operating EBITDA、净利润方向和自由现金流方向。FY2026 指引和 2027 以后 HBM4、Rubin、MI400、玻璃基板、CPO 等只作校准和远期期权，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：2026Q1 净销售额 `1.315B`，同比 `+18%`，有机增长 `+17%`；Semiconductor Technologies `722M`，同比 `+12%`；Interconnect Solutions `593M`，同比 `+25%`。公司 2026-05-12 上调 FY2026 指引至收入 `5.225B-5.375B`、调整后 Operating EBITDA `1.535B-1.625B`、调整后 FCF `500M-600M`。
+- 重要产品/业务线：披露层面以 `Semiconductor Technologies` 和 `Interconnect Solutions` 为唯一可加总主轴；产品层面重点看光刻/配套材料、CMP pads/slurries、advanced cleans/金属化材料、Intervia/Cyclotene 先进封装材料、高速 PCB/IC substrate/flex 材料、Laird/TIM/EMI/signal integrity。公司没有披露这些产品线收入，产品级收入均为分部锚定估算。
+- NTM 公司收入四情景：悲观 `4.95B-5.20B`；基准 `5.35B-5.65B`；乐观 `5.75B-6.15B`；极度乐观 `6.25B-6.85B`。基准等于 FY2026 指引正常兑现并延续 Q1 run-rate，不把 2026 年 6 月新品全部前置为 NTM 收入。
+- 利润或 EBITDA 四情景：悲观调整后 Operating EBITDA `1.38B-1.52B`；基准 `1.60B-1.75B`；乐观 `1.82B-2.05B`；极度乐观 `2.10B-2.45B`。极度乐观必须同时满足先进封装、CMP/clean、PCB/TIM、高毛利 mix 和执行效率，而不是单靠 Intervia/Cyclotene 或 NVIDIA 合作新闻。
+- 最大传导瓶颈：公司能参与 AI/HPC 材料需求池，但只有已经进入客户 recipe、AVL、HVM 或明确订单/产能节奏的材料才能转为 NTM 可确认收入。Qnity 未披露 backlog、bookings、B/B、lead time 或产品线订单，收入确认锚主要来自已披露分部收入和 FY 指引。
+- 最大利润率变量：高端材料 mix 和客户良率价值是否能够抵消普通 PCB/消费/汽车/成熟材料价格压力、贵金属或金属 pass-through、分拆后独立公司成本、转型费用和利息负担。
+- 最大现金流变量：Q1 2026 经营现金流 `135M`、capex `122M`、调整后 FCF `28M`，全年指引要求后续季度释放营运资本和 FCF；若库存/应收、客户产能拉货或 capex 提前，收入强也可能短期吃现金。
+- 可信度：公司层面基准为中高，因为收入、分部、指引、毛利率和 EBITDA 有 A 级披露；产品级上修为中，因为多依赖产品发布、客户认证、行业需求和模型拆分，缺少分产品收入、订单和交付表。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Semiconductor Technologies 分部：光刻、CMP、advanced cleans、沉积/前驱体、特殊密封等 | 2026Q1 `722M`；FY2025 `2.642B`；NTM 基准估算 `2.90B-3.15B` | Q1 `54.9%` | 公司最大收入池，先进节点、HBM、CMP/clean、客户良率核心 | A：分部收入；C：产品级拆分 | 进入基准；按分部收入和 FY 指引处理，不单独把每个产品估成可加总收入 | MOR/dry resist、BSPDN/new-metal CMP、High-NA 相关材料更多是 2027+ |
+| Interconnect Solutions 分部：先进封装、PCB/IC substrate/flex、热管理、EMI/signal integrity | 2026Q1 `593M`；FY2025 `2.112B`；NTM 基准估算 `2.45B-2.70B` | Q1 `45.1%` | Q1 增速最高，直接连接 AI/HPC advanced packaging、高速互连和 TIM | A：分部收入；C：产品级拆分 | 进入基准；以 Q1 `+25%` 增长和 FY 指引校准，但不简单全年外推 25% | organic interposer、glass core、CPO、panel-level packaging 是 2027+ 弹性 |
+| CMP pads/slurries 与 advanced cleans | 无单独收入披露；属于 Semiconductor Technologies；产品级 NTM 可归因池估算 `0.85B-1.20B` | 无法可靠量化 | 高良率杠杆；Optivision Max 于 2026-06 推出，CMP 是先进节点/HBM/advanced wafer bonding 的核心耗材 | A：产品存在和分部收入；C：产品收入 | 既有 CMP/clean 进入基准；Optivision Max 增量主要进乐观 | hybrid bonding post-CMP clean、BSPDN/new-metal CMP |
+| 光刻材料与配套材料 | 无单独收入披露；属于 Semiconductor Technologies；产品级 NTM 可归因池估算 `0.55B-0.85B` | 无法可靠量化 | EUV/ArF、ancillaries、non-fluorine photoresist；客户认证和 local support 重要 | A：产品存在和分部收入；C：产品收入 | 进入基准但按成熟材料增长，不把 PFAS-free/next-gen resist 前置为大收入 | MOR、dry resist、High-NA、PFAS/PFOS-free 大规模替代 |
+| Intervia 8540HSP copper、Cyclotene DF6800M、RDL/micro-bump/有机或玻璃中介层材料 | 无单独收入披露；2026-06 新品；产品级 NTM 可归因池估算 `0.35B-0.70B`，其中新品增量无法可靠量化 | 无法可靠量化 | 直接对准 AI-driven GPU advanced packaging、micro-bump、Cu-RDL、glass core substrates/interposers | C/D：已有材料平台和新品发布，但缺订单/客户量产收入 | 既有 advanced packaging 材料进入基准；新品增量不大比例进基准，主要进乐观/极度乐观 | glass/TGV、organic interposer 大规模放量更偏 2027-2028 |
+| 高速 PCB、IC substrate、flex、imaging、Kapton/Pyralux/Riston/Circuposit 等 | 无单独收入披露；属于 Interconnect Solutions；产品级 NTM 可归因池估算 `0.95B-1.35B` | 无法可靠量化 | AI server、switch、OAM/baseboard、800G/1.6T、IC substrate 与先进互连 | A：产品存在和分部收入；C：产品收入 | 进入基准；普通 PCB/消费电子部分需折价，AI 高速互连部分上修 | CPO/optical I/O、1.6T、organic bridge、panel RDL |
+| Laird/Tflex/TIM/EMI/signal integrity | 无单独收入披露；2026-03 Tflex SF16 新品；产品级 NTM 可归因池估算 `0.20B-0.45B` | 无法可靠量化 | AI rack 功耗、液冷、光模块、冷板界面、EMI/signal integrity | C/D：成熟 Laird 组合 + 新品发布，无客户量产金额 | 成熟 Laird/TIM 进入基准；Tflex SF16 单品增量主要进乐观 | direct-to-silicon cooling、diamond/metal TIM、CPO thermal materials |
+| 成熟显示、普通消费/汽车/工业电子材料与非 AI 特殊品 | 无单独披露；为两个分部中的非 AI 或低增长部分 | 无法可靠量化 | 现金流和抵消项，可能拖累高增长材料的公司层面增速 | A：分部总收入；C：拆分 | 进入公司基准，但作为稀释和风险处理 | 不作为 AI 远期期权 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只看外部需求池，不判断 Qnity 份额、收入确认或利润率。需求锚来自项目内行业资料、SEMI 2026 资料、Qnity Q1 结果和 2026 年产品新闻。需求强弱均相对“当前行业预期、公司指引和 Q1 run-rate”，不是相对题材热度。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Semiconductor Technologies 分部 | 先进逻辑、HBM、CMP/clean、EUV/ArF、前驱体；2026Q1 分部收入 `722M`，同比 `+12%` | AI/HBM 投片强但非 AI 200mm、成熟制程、消费/汽车弱；需求只增 `0%-6%` | N3/N4/HBM、DRAM EUV、CMP/clean 正常增长；需求 `+8%-14%` | HBM4/Rubin/MI400/N2 认证提前，CMP/clean/前驱体强；需求 `+15%-23%` | 多客户 ASIC、HBM4、N2/GAA、BSPDN 同时提前；需求 `+25%-40%` | NTM 需求池从高个位数到高双位数上修 | 基准略高于 FY2026 指引隐含路径；乐观需 Q2/Q3 继续强 | SEMI 2026Q1 silicon wafer +13.1%、2025 半导体材料市场创 `73.2B`；反证是 wafer 库存回升、客户 node migration 推迟 |
+| Interconnect Solutions 分部 | Advanced packaging、PCB/IC substrate、thermal/EMI；2026Q1 分部收入 `593M`，同比 `+25%` | Q1 强度回落，普通 PCB/消费/汽车抵消 AI；需求 `+5%-10%` | GB300、TPU、Trainium、MI350、AI server 互连正常兑现；需求 `+15%-24%` | 高端 substrate、RDL、TIM、AI board、thermal 同步强；需求 `+25%-38%` | AI rack 出货、HBM/CoWoS、1.6T/CPO、organic interposer 同时上修；需求 `+40%-65%` | Q1 run-rate 强，但需防止一次性和季节性 | 基准已高于公司整体收入增速；乐观需产品级证据 | Qnity Q1 Interconnect volume `+23%`、currency 后总增 `+25%`；反证是 CoWoS lead time 回落且 AI server board 订单降温 |
+| CMP pads/slurries 与 advanced cleans | Advanced nodes、HBM、wafer bonding、post-CMP clean；Optivision Max 2026-06 可 sampling/orders | 客户维持旧 pad/slurry，先进节点需求放缓；需求 `+3%-8%` | CMP step count、HBM、advanced wafer bonding 维持；需求 `+10%-18%` | Optivision/Emblem 等高端 pad 进入更多 HVM；需求 `+20%-35%` | BSPDN/hybrid bonding/HBM4 把 CMP/clean 变成瓶颈；需求 `+40%-60%` | 全球 CMP/clean 池增量为数亿美元级 | 基准符合行业资料，乐观依赖客户导入 | Qnity 称 Optivision Max 改善 defect control 和 pad lifetime；反证是客户二供、价格压制和新品仅 sampling |
+| 光刻材料与配套 | EUV/ArF、ancillaries、advanced resist；2026 收入仍以成熟 EUV CAR/ArF 为主 | 先进节点不推迟但 mix 不改善；需求 `+2%-6%` | EUV/ArF 层数和 ancillaries 稳健；需求 `+6%-12%` | DRAM EUV、N3/N2、non-fluorine/photoresist 认证带动；需求 `+13%-22%` | MOR/dry resist/PFAS-free 与 high-NA 预研提前进入商业化；需求 `+25%-40%` | NTM 主收入为成熟光刻，远期技术只小比例 | 基准保守；极度乐观更多是 2027+ | 行业资料显示 2026 不应把 MOR/dry resist 当作主收入；反证是客户认证慢和日本/美欧强竞争 |
+| Intervia/Cyclotene/RDL/micro-bump/advanced packaging metallization | CoWoS/2.5D、RDL、micro-bump、有机/玻璃中介层；2026-06 发布新品 | 新品停留 sample/design-in，玻璃/organic 路线慢；需求 `+5%-15%` | 既有 Cu/RDL/advanced package 材料随 AI 封装增长；需求 `+20%-35%` | AI GPU organic interposer、Cu-RDL、micro-bump 获得客户导入；需求 `+40%-80%` | 多客户把 organic/glass interposer 作为 CoWoS 补充，新增预算明确；需求 `+100%+` 小基数 | 绝对需求池小于 GPU/CoWoS 服务，但高毛利 | 基准进入；新品增量不完全进入基准 | Qnity 明确 Intervia 面向 AI-driven GPUs、micro-bump、Cu-RDL；反证是 glass/TGV 2026-2027 多为 qualification |
+| 高速 PCB/IC substrate/flex/imaging | AI server board、switch ASIC、OAM、800G/1.6T、high-speed interconnect | 普通 PCB/消费电子拖累，AI 板强度不扩散；需求 `+3%-8%` | AI server 和 network board 继续高端化；需求 `+12%-22%` | 高速低损耗、HDI、高层板、CPO/near-package optics 规格升级；需求 `+25%-45%` | Rack-scale 系统出货超预期，1.6T/CPO 和 ASIC board 同时放量；需求 `+50%-80%` | 高端材料收入上修，普通材料不等比例上修 | 基准可见，乐观需 ODM/PCB 客户节奏验证 | 行业资料显示封装基板/中介层/RDL 是算力交付瓶颈；反证是普通 PCB 价格竞争 |
+| Laird/TIM/EMI/signal integrity | AI rack 功耗、liquid cooling、optical module TIM、cold plate interface；Tflex SF16 2026-03 发布 | 普通 TIM 竞争，多数平台沿用既有供应；需求 `+5%-12%` | AI liquid cooling 与 high-power modules 推动；需求 `+18%-35%` | Tflex SF16 等高导热低应力材料进入更多 AVL；需求 `+40%-80%` | TIM 从配套件变成系统可靠性瓶颈；需求 `+100%+` 小基数 | 绝对收入小但利润率弹性高 | 基准纳入成熟产品；新品进乐观 | Qnity 称 Tflex SF16 为 16 W/mK non-silicone gap filler，面向 AI/data center；反证是 TIM 供应商多、客户二供 |
+| 成熟/非 AI 材料组合 | 普通显示、消费电子、汽车、成熟 PCB、普通湿化学 | 需求 `-5%-0%`，抵消成长业务 | 需求 `0%-4%`，作为现金流底盘 | 手机/汽车/工业复苏，需求 `+5%-10%` | 多终端补库存，需求 `+10%-15%` | 可能抵消或稀释高增长业务 | 基准只给低增长 | 反证是库存、价格战、出口管制或客户去库存 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断需求能否进入 Qnity NTM 收入表，以及当前可收入化基数。披露分部收入为 A 级证据；产品级收入拆分、AI-enabling revenue 和新品 run-rate 为估算，不能等同公司披露。D/E 级机会不进入 NTM 基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Semiconductor Technologies 分部 | Q1 2026 `722M`；FY2025 `2.642B`；Q1 年化 `2.888B` | 直接材料收入，客户为晶圆厂、存储厂、先进制造生态 | 高毛利耗材/配方/客户认证；segment EBITDA margin Q1 `36.4%` | `2.65B-2.85B` | `2.90B-3.15B` | `3.20B-3.55B` | `3.65B-4.05B` | 基准符合 FY 指引和 Q1 run-rate | A | 是 | 已披露分部收入、Q1 organic growth、FY 指引 | 基准主口径 |
+| Interconnect Solutions 分部 | Q1 2026 `593M`；FY2025 `2.112B`；Q1 年化 `2.372B` | 直接材料收入，客户为封装/PCB/基板/系统厂 | 高增长但 mix 分化；segment EBITDA margin Q1 `28.5%` | `2.20B-2.40B` | `2.45B-2.70B` | `2.80B-3.15B` | `3.30B-3.85B` | 基准略高于 FY2026 隐含增长，但低于 Q1 +25% 年化 | A | 是 | 已披露分部收入、Q1 volume +23%、产品发布 | 基准主口径 |
+| CMP pads/slurries 与 advanced cleans | 无单独收入；嵌在 Semiconductor Technologies | 直接 | 高毛利、高客户粘性；新品若改善 defect/pad lifetime 可改善 mix | 无法可靠量化；只在 ST 悲观中保守计入 | 无法可靠量化；随 ST 基准计入 | 产品池估算 `1.05B-1.40B` | 产品池估算 `1.55B-2.05B` | 基准只按现有收入；新品不额外大幅上修 | C | 间接进入 | 10-K 产品披露、Optivision Max 新闻、行业 CMP/clean 需求 | 进入基准但不单独加总 |
+| 光刻材料与配套 | 无单独收入；嵌在 Semiconductor Technologies | 直接 | 高认证壁垒；普通 resist 与 advanced ancillaries 差异大 | 无法可靠量化 | 无法可靠量化；随 ST 基准计入 | 产品池估算 `0.70B-1.00B` | 产品池估算 `1.05B-1.35B` | 基准按成熟 EUV/ArF/ancillaries | C | 间接进入 | 10-K 产品披露、行业前道材料资料 | 进入基准；MOR/dry resist 不进 NTM 主基准 |
+| Intervia/Cyclotene/RDL/micro-bump/advanced packaging metallization | Qnity 2026-06 产品新闻，未披露收入或客户订单 | 直接，但需客户量产和订单确认 | 若进入 HVM，毛利/ROIC 较好；新品早期费用和认证风险高 | 无法可靠量化；只承认既有 IS 收入 | 小比例在 IS 基准内，新增新品不单列 | 产品池估算 `0.55B-0.90B` | 产品池估算 `1.00B-1.60B` | 基准为当前路径；乐观为客户导入 | C/D | 部分进入 | 新品面向 AI GPU、micro-bump、Cu-RDL、glass/organic interposer，但无订单金额 | 既有 advanced packaging 材料进基准；新品增量进乐观/极度乐观 |
+| 高速 PCB/IC substrate/flex/imaging | 无单独收入；嵌在 Interconnect Solutions | 直接 | 普通 PCB 周期性强，高速/低损耗材料毛利更好 | 无法可靠量化 | 随 IS 基准计入 | 产品池估算 `1.20B-1.60B` | 产品池估算 `1.70B-2.25B` | 基准反映 AI server/network 强但不全算 AI | C | 间接进入 | 产品组合、Q1 Interconnect 高增、行业封装基板/RDL资料 | 进入基准 |
+| Laird/TIM/EMI/signal integrity | Tflex SF16 新闻，未披露单品收入；成熟 Laird 组合存在 | 直接 | 高端 TIM/EMI 如果进入平台认证，利润质量好；普通 TIM 竞争强 | 无法可靠量化 | 随 IS 基准小比例计入 | 产品池估算 `0.30B-0.55B` | 产品池估算 `0.65B-1.00B` | 基准不假设 Tflex 快速放量 | C/D | 部分进入 | Tflex SF16 规格和应用场景清楚，但客户和订单未披露 | 成熟 Laird 进基准；Tflex 增量进乐观 |
+| 成熟/非 AI 材料组合 | 包含在两分部披露收入内 | 直接 | 现金流稳定但增速和定价弱 | `0.85B-1.10B` | `0.90B-1.20B` | `1.00B-1.30B` | `1.20B-1.45B` | 基准低增长 | C | 是 | 作为分部收入中不可忽略底盘 | 进入公司汇总并作为抵消项 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从需求和收入基数出发，判断 NTM 内对 Qnity 的收入与利润贡献。分部行可加总；产品线行用于解释传导和 mix，因公司不披露产品线收入，不直接加总到公司表。利润贡献使用调整后 Operating EBITDA 或方向性利润池，不等于 GAAP 净利润。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Semiconductor Technologies 分部 | 悲观 | `2.65B-2.85B` | AEBITDA `0.88B-1.00B` | margin 低于 Q1，约 `33%-35%` | 低于当前预期 | AI/HBM 强但成熟材料拖累、客户推迟节点 | 保留 | 半导体材料需求下行、客户库存、价格/mix 弱 |
+| Semiconductor Technologies 分部 | 基准 | `2.90B-3.15B` | AEBITDA `1.03B-1.17B` | 接近 Q1，约 `35%-37%` | 符合当前指引/run-rate | Q1 `722M`、+12%，FY2026 指引上调 | 保留 | 产品级订单未披露 |
+| Semiconductor Technologies 分部 | 乐观 | `3.20B-3.55B` | AEBITDA `1.18B-1.38B` | 上行到 `37%-39%` | 高于预期 | CMP/clean、HBM、N3/N2、先进材料 mix 改善 | 保留但需 Q2/Q3 验证 | 客户二供、竞争、价格不传导 |
+| Semiconductor Technologies 分部 | 极度乐观 | `3.65B-4.05B` | AEBITDA `1.45B-1.70B` | `39%-42%` | 显著高于预期 | HBM4/Rubin/N2/BSPDN 多线提前且 Qnity 获得 socket | 下移为上限 | 需要多核心环节同时成立，NTM 证据不足 |
+| Interconnect Solutions 分部 | 悲观 | `2.20B-2.40B` | AEBITDA `0.55B-0.65B` | margin `25%-27%` | 低于当前预期 | Q1 高增不能延续，普通 PCB/消费/汽车稀释 | 保留 | 普通 PCB 价格战、AI board 拉货放缓 |
+| Interconnect Solutions 分部 | 基准 | `2.45B-2.70B` | AEBITDA `0.68B-0.80B` | margin `27%-30%` | 符合至略高于当前预期 | Q1 `593M`、+25%，volume +23%，AI/advanced packaging 需求 | 保留 | 需防止 Q1 强度全年外推 |
+| Interconnect Solutions 分部 | 乐观 | `2.80B-3.15B` | AEBITDA `0.82B-1.00B` | margin `29%-32%` | 高于预期 | Intervia/Cyclotene、high-speed PCB、TIM、advanced packaging 多线导入 | 保留 | 新品客户/订单未量化 |
+| Interconnect Solutions 分部 | 极度乐观 | `3.30B-3.85B` | AEBITDA `1.05B-1.35B` | margin `32%-35%` | 显著高于预期 | AI rack、advanced packaging、high-speed interconnect、TIM 同时成为瓶颈 | 下移为上限 | 若低毛利 pass-through 或普通 PCB 占比高，利润不随收入线性上修 |
+| CMP pads/slurries 与 advanced cleans | 悲观 | 无法可靠量化；随 ST 悲观 | 利润率承压 | 持平或下行 | 低于预期 | 新品 sampling 慢，客户维持二供 | 保留为 ST 内部风险 | 产品级收入未披露 |
+| CMP pads/slurries 与 advanced cleans | 基准 | 无法可靠量化；现有收入随 ST 增长 | 高于公司平均 | 稳定 | 符合预期 | 高端 CMP 是先进节点和 HBM/HBM4 良率变量 | 保留 | 客户认证周期 |
+| CMP pads/slurries 与 advanced cleans | 乐观 | 产品池 `1.05B-1.40B` | 高毛利 mix 上修 | 上行 | 高于预期 | Optivision Max 改善 defect control、pad lifetime、yield/process efficiency | 保留 | 需客户订单/量产披露 |
+| CMP pads/slurries 与 advanced cleans | 极度乐观 | 产品池 `1.55B-2.05B` | 非线性利润弹性 | 明显上行 | 远高于预期 | BSPDN/hybrid bonding/HBM4 提前 | 移为上限 | NTM 内证据不足 |
+| 光刻材料与配套 | 悲观 | 无法可靠量化；随 ST 悲观 | 稳中偏弱 | 下行或持平 | 低于预期 | 普通 resist/成熟节点弱 | 保留 | 高端竞争激烈 |
+| 光刻材料与配套 | 基准 | 无法可靠量化；随 ST 基准 | 高毛利但增速温和 | 稳定 | 符合预期 | EUV/ArF/ancillaries 稳健，客户认证强 | 保留 | 新技术收入小 |
+| 光刻材料与配套 | 乐观 | 产品池 `0.70B-1.00B` | mix 改善 | 小幅上行 | 高于预期 | DRAM EUV、N3/N2、non-fluorine/photoresist 进展 | 保留 | MOR/dry resist 仍早 |
+| 光刻材料与配套 | 极度乐观 | 产品池 `1.05B-1.35B` | 高毛利 | 上行 | 远高于预期 | MOR/dry/high-NA 进入商业化 | 移入附录/远期期权 | 2026-2027 多为验证 |
+| Intervia/Cyclotene/RDL/micro-bump | 悲观 | 小比例随 IS 悲观；新品增量接近 `0` | 费用先行 | 下行 | 低于预期 | 新品停留 design-in | 保留 | 客户量产和订单缺失 |
+| Intervia/Cyclotene/RDL/micro-bump | 基准 | 小比例随 IS 基准；新增无法可靠量化 | 中高毛利但规模有限 | 稳定 | 符合预期 | 既有先进封装材料受 AI/HPC 拉动 | 保留 | 新品不单独进大额基准 |
+| Intervia/Cyclotene/RDL/micro-bump | 乐观 | 产品池 `0.55B-0.90B` | 高毛利增量 | 上行 | 高于预期 | Intervia 面向 AI GPU micro-bump/Cu-RDL；Cyclotene 面向 glass core/interposer | 保留 | 需要客户、时间表和订单 |
+| Intervia/Cyclotene/RDL/micro-bump | 极度乐观 | 产品池 `1.00B-1.60B` | 若量产，利润弹性高 | 明显上行 | 远高于预期 | 有机/玻璃中介层成为 AI package 快速补充 | 下移为乐观上限/附录 | glass/TGV 2026-2027 多为 pilot |
+| 高速 PCB/IC substrate/flex/imaging | 悲观 | 随 IS 悲观；普通材料拖累 | 利润率弱 | 下行 | 低于预期 | 普通 PCB 竞争、消费/汽车弱 | 保留 | AI 与普通 PCB 混合 |
+| 高速 PCB/IC substrate/flex/imaging | 基准 | 随 IS 基准；产品池 `1.05B-1.35B` | 现金流稳定，AI mix 改善 | 稳定到小幅上行 | 符合预期 | Q1 Interconnect 高增、高速互连需求 | 保留 | 分产品订单未披露 |
+| 高速 PCB/IC substrate/flex/imaging | 乐观 | 产品池 `1.20B-1.60B` | mix 上行 | 上行 | 高于预期 | AI server、switch、OAM、1.6T、ASIC board 规格升级 | 保留 | 价格传导需验证 |
+| 高速 PCB/IC substrate/flex/imaging | 极度乐观 | 产品池 `1.70B-2.25B` | 取决于高端占比 | 上行但不必然非线性 | 远高于预期 | rack/pod 交付超预期 | 下移为上限 | 普通 PCB 低毛利 pass-through |
+| Laird/TIM/EMI/signal integrity | 悲观 | 成熟小基数，随 IS 悲观 | 普通 TIM 竞争 | 下行 | 低于预期 | Tflex SF16 导入慢 | 保留 | 供应商多 |
+| Laird/TIM/EMI/signal integrity | 基准 | 随 IS 基准；成熟产品贡献，单品无法可靠量化 | 中高 | 稳定 | 符合预期 | AI/data center 热管理需求真实 | 保留 | 无客户订单 |
+| Laird/TIM/EMI/signal integrity | 乐观 | 产品池 `0.30B-0.55B` | 高端 TIM/EMI mix 改善 | 上行 | 高于预期 | Tflex SF16 16 W/mK、low hardness、non-silicone | 保留 | 客户 AVL 需验证 |
+| Laird/TIM/EMI/signal integrity | 极度乐观 | 产品池 `0.65B-1.00B` | 高毛利但基数小 | 明显上行 | 远高于预期 | TIM 成为 AI rack/光模块可靠性瓶颈 | 仅作跟踪 | NTM 收入证据不足 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节第一个表为公司 NTM 收入和利润四情景。公司级收入以披露分部和 FY2026 指引为主，不把产品级估算简单相加。毛利率和经营利润率是经营质量指标，不是估值指标。经营利润率使用 GAAP operating margin 近似区间，并辅以调整后 Operating EBITDA，因为公司指引核心为 Adjusted Operating EBITDA。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `4.95B-5.20B` | 相对 FY2025 `+4%-9%`，低于 Q1 run-rate | 低于 FY2026 指引中位数 `5.30B`；表示 Q2-Q4 明显降温 | `44.0%-45.5%` | `17%-19%` | 调整后 Operating EBITDA `1.38B-1.52B`；GAAP 净利受利息和转型费用压制 | 调整后 FCF 低于 `500M`，约 `350M-500M` | 中 | Interconnect Q1 高增不能延续；普通 PCB/消费/汽车拖累；独立公司费用和利息吞噬利润 |
+| 基准公司 | `5.35B-5.65B` | 相对 FY2025 `+13%-19%`；相对 FY2026 指引正常到略高 | 接近 FY2026 上调指引并延续 Q1 run-rate；不提前计入 2027 大新品 | `46.0%-47.5%` | `20%-22%` | 调整后 Operating EBITDA `1.60B-1.75B`；GAAP 净利稳健但低于调整后利润质量 | 调整后 FCF `550M-700M`，后续季度需释放现金 | 中高 | 产品级订单不披露；需把高端材料增长和非 AI 成熟材料稀释同时处理 |
+| 乐观公司 | `5.75B-6.15B` | 相对 FY2025 `+21%-29%` | 高于当前指引，且不是单一小新品造成 | `47.5%-49.0%` | `22%-24%` | 调整后 Operating EBITDA `1.82B-2.05B`；净利方向上行 | 调整后 FCF `700M-900M`，营运资本周转改善 | 中 | 需要 Interconnect 20%+ 延续，Semiconductor 高端 mix 改善，且 Q2/Q3 再次验证 |
+| 极度乐观公司 | `6.25B-6.85B` | 相对 FY2025 `+31%-44%` | 显著高于当前预期；多个传导环节同时突破 | `49.0%-51.0%` | `24%-27%` | 调整后 Operating EBITDA `2.10B-2.45B`；净利显著上行但利息仍是扣减 | 调整后 FCF `900M+`，前提是高毛利产品放量且库存/应收不失控 | 低到中 | 需要需求、公司捕获、客户认证、产能、mix、成本和执行同时成立；NTM 证据不足，主要是上限 |
+
+汇总校验：
+
+- 重复计算：公司级只使用两个披露分部合成；产品级估算只解释 mix，不与分部收入相加。
+- 一次性项目：Q3 2025 曾有分拆前 system cut-over 订单 timing benefit 的线索，不能把类似时点提前下单年化。
+- 并购/剥离/会计：分拆后独立公司成本、Transition Services Agreement、债务利息和 transformation charges 会压制 GAAP 净利和现金流。
+- 低毛利 pass-through：Interconnect 中普通 PCB、金属/贵金属相关处理和普通电子材料可能产生收入但不等比例贡献利润。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测，而是校准前四步。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 总收入 `1.315B`、organic `+17%`，FY2026 指引上调至 `5.225B-5.375B` | 公司收入/执行可信度 | 抬高基准锚，支持 NTM `5.35B-5.65B` | 支持 46%+ 毛利和 30% 左右调整后 EBITDA margin | Q1 FCF 弱，全年仍需后续兑现 | 保留基准，保留乐观 |
+| Semiconductor Technologies Q1 `722M`、+12%、segment AEBITDA `263M` | 产品/分部贡献 | 支持前道材料基准增长 | ST margin 高，利润质量强 | 需要客户投片和材料消耗持续 | 保留 |
+| Interconnect Solutions Q1 `593M`、+25%、volume +23%、segment AEBITDA `169M` | 产品/分部贡献 | 支持 Interconnect 高于公司平均增长 | margin 低于 ST 但改善空间大 | 需确认不是订单时点或短期拉货 | 保留乐观，基准不外推 25% |
+| Qnity 未披露 backlog、bookings、lead time、取消率和分产品收入 | 收入基数/产品贡献 | 限制产品级收入量化，C/D 证据不得升为 A/B | 限制极度乐观利润上修 | 执行可见度低 | 下移极度乐观为上限 |
+| Intervia 8540HSP/Cyclotene DF6800M 2026-06 发布，明确指向 AI GPU、micro-bump、Cu-RDL、glass/organic interposer | 产品收入/远期期权 | 提升 advanced packaging 乐观上限 | 若 HVM 进入，可提高 mix | 需要客户、订单、量产时间表 | 乐观保留；极度乐观仅作上限 |
+| Optivision Max CMP pad 2026-06 发布，可 sampling/orders，强调 defect control 和 pad lifetime | 产品利润率 | 提升 CMP/clean 乐观情景 | 高端 pad 有毛利改善潜力 | 客户认证和量产节奏待验证 | 保留乐观 |
+| Tflex SF16 16 W/mK non-silicone TIM，面向 AI/data center/汽车/高性能电子 | 产品收入/利润率 | 提升 TIM 小基数乐观 | 高端 TIM 认证后利润较好 | 单品客户订单未披露 | 保留乐观，极度乐观仅作跟踪 |
+| Samsung Q1 2026 占销售 `11%`，TSMC `8%`，亚太 Q1 销售 `1.042B` | 公司组合/风险 | 大客户和区域强需求能支撑增长，也放大客户集中风险 | 大客户议价可能压制价格 | 地缘、出口管制、客户 capex 变化影响执行 | 风险只在公司组合层处理一次 |
+| Q1 2026 OCF `135M`、capex `122M`、调整后 FCF `28M`；全年调整后 FCF 指引 `500M-600M` | 现金流 | 收入增长短期可能占用营运资本 | FCF 不必随 EBITDA 同步 | 后续季度现金释放是验证点 | 保留基准现金流；悲观触发条件明确 |
+| 行业资料显示 2026 玻璃/TGV、D2W hybrid bonding、CPO 多为 qualification/pilot | 需求/收入确认 | 限制远期期权进入 NTM 基准 | 短期利润贡献有限 | 认证周期长 | 移入附录或仅作跟踪 |
+| 普通 PCB、消费/汽车、成熟材料、价格竞争和 commodity 化 | 公司组合/利润率 | 抵消 AI 高增长 | 压低 mix 和经营杠杆 | 库存和价格战影响现金 | 保留悲观/基准约束 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Q2-Q4 需求从 Q1 高点降温，收入低于 FY 指引；高增长业务不足以抵消成熟材料、价格、费用和现金流压力 | 公司已上调指引，Q1 两分部均增长，ST/IS 均有正利润贡献 | 没有公开 evidence 显示订单取消或客户大幅下修；悲观不能只因估值或题材回撤触发 | 保留 | 悲观下限 `4.95B-5.20B` | 中 | 客户集中风险只在公司组合层处理，不在每个产品重复扣减 |
+| 基准 | FY2026 指引正常兑现，Q1 run-rate 延续但不简单外推 Interconnect +25% | A 级分部收入、FY 指引、Q1 organic +17%、产品组合和行业需求支持 | 产品线收入、订单、backlog 未披露；新品多为 C/D 证据 | 保留 | 基准 `5.35B-5.65B` | 中高 | 分产品不可量化不等于分部收入不可确认 |
+| 乐观 | Interconnect 继续高双位数增长，ST 高端 mix 改善；Qnity 在 CMP/clean、RDL、PCB/TIM 多线捕获增量 | Q1 Interconnect +25%、Optivision Max、Intervia/Cyclotene、Tflex SF16、行业 AI/HPC advanced packaging 强 | 客户、订单、量产时间表不足；普通 PCB/非 AI 业务稀释 | 保留 | 乐观 `5.75B-6.15B` | 中 | 同一新品认证风险只限制对应产品线，不重复压低 ST/IS 所有业务 |
+| 极度乐观 | 需求、公司捕获、利润率和执行质量同时突破，NTM 收入明显高于现有指引 | 多产品组合都有 AI/HPC 暴露，客户认证后材料切换成本高，Qnity 有两分部覆盖 | 任一核心环节缺证据：无 backlog、无产品收入、无新品客户订单、glass/CPO 多为远期期权 | 下移 | 公司级作为上限；部分产品移入附录/仅作跟踪 | 低到中 | 远期期权缺证据不应惩罚成熟基准业务，只限制极度乐观 |
+
+## 8. 结论
+
+- 最可能情景：基准偏乐观。最可 defend 的 NTM 结论是收入 `5.35B-5.65B`、毛利率 `46.0%-47.5%`、调整后 Operating EBITDA `1.60B-1.75B`、调整后 FCF `550M-700M`。这表示 Qnity 继续受益于 AI/HPC 材料复杂度上升，但不把 2026 年 6 月新品和 2027+ 技术路线提前确认为 NTM 主收入。
+- 乐观情景成立条件：Q2/Q3 继续高于 FY2026 指引隐含节奏；Interconnect Solutions 继续 20% 左右或以上增长；Semiconductor Technologies 中 CMP/clean/advanced materials mix 改善；Optivision Max、Intervia/Cyclotene、Tflex 等至少部分拿到客户导入、订单、量产或奖项披露；调整后 FCF 不被库存/应收吞噬。
+- 极度乐观情景成立条件：GB300/Rubin/MI350/TPU/Trainium/custom ASIC 拉动的前道、先进封装、高速互连和 TIM 同时超预期；Qnity 不是只参与需求池，而是在 RDL/micro-bump、CMP/clean、高速材料、TIM 多个 socket 上获得明确量产路径；毛利率和 EBITDA margin 同步上行，证明收入能留下来。
+- 悲观情景触发条件：Q2/Q3 收入显著低于指引 run-rate；Interconnect 从 +25% 快速回落到个位数；ST 高端 mix 不升反降；成熟/普通材料价格压力扩大；客户库存上升、capex 推迟或材料订单被二供/本土化替代；Q1 低 FCF 延续到下半年。
+- 后续跟踪数据：Q2/Q3 2026 分部收入和 segment AEBITDA；FY2026 指引是否再上调；Interconnect volume 是否仍强；Optivision Max、Intervia/Cyclotene、Tflex SF16 是否出现客户/订单/量产披露；Samsung/TSMC/亚太销售占比变化；OCF、capex、调整后 FCF 和净债务；客户是否披露 CoWoS/RDL/organic interposer/glass/TIM 相关认证。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司经营数据以 2026Q1（截至 2026-03-31）和 2026-05-12 Q1 新闻稿/10-Q 为主；行业资料主要截至 2026-06-11；新品资料包括 2026-06-08 Intervia/Cyclotene 和 2026-06-10 Optivision Max。
+- 主要收入、订单、指引和利润率来源：
+  - Qnity 2026Q1 新闻稿：收入 `1.315B`、Semiconductor Technologies `722M`、Interconnect Solutions `593M`、adjusted Operating EBITDA `411M`、FY2026 指引 `5.225B-5.375B`，https://ir.qnityelectronics.com/press-releases/detail/56/qnity-reports-first-quarter-2026-results-raises-full-year-financial-guidance
+  - Qnity 2026Q1 10-Q：客户集中、分部/地区收入、deferred revenue、现金流、债务，https://www.sec.gov/Archives/edgar/data/2058873/000205887326000015/q-20260331.htm
+  - Qnity FY2025 10-K：FY2025 收入 `4.754B`、两个分部、客户集中和业务描述，https://ir.qnityelectronics.com/sec-filings/all-sec-filings/content/0002058873-26-000010/q-20251231.htm
+  - Qnity FY2025 新闻稿：FY2025 收入、adjusted pro forma Operating EBITDA、FY2026 初始指引、转型计划，https://ir.qnityelectronics.com/press-releases/detail/50/qnity-reports-fourth-quarter-and-full-year-2025-results
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 指引是当前公司预期锚，不直接等同 NTM 但用于校准。
+  - 2027+ 远期期权包括 HBM4/Rubin/MI400/N2/BSPDN、glass/TGV、organic interposer、panel-level RDL、D2W hybrid bonding、CPO/optical I/O 和 advanced TIM。除非出现客户、订单、交付、价格或量产披露，否则不进入 NTM 基准。
+- 主要来源：
+  - Qnity Intervia 8540HSP 与 Cyclotene DF6800M 新闻，2026-06-08，https://www.qnityelectronics.com/news/qnity-introduces-enhanced-advanced-packaging-materials-for-organic-interposer-applications.html
+  - Qnity Optivision Max CMP pad 新闻，2026-06-10，https://www.qnityelectronics.com/news/qnity-expands-cmp-product-family-with-Launch-of-optivision-max.html
+  - Qnity Laird Tflex SF16 新闻，2026-03-12，https://www.qnityelectronics.com/news/qnity-expands-Laird-portfolio-of-non-silicone-gap-filler.html
+  - Qnity 与 NVIDIA 材料研发合作新闻，2026-03-18，https://www.qnityelectronics.com/news/qnity-collaborates-with-nvidia-to-accelerate-innovation-for-semiconductor-and-advanced-electronics-materials.html
+  - Qnity 新闻列表，含 2026-05-28 ASE advanced packaging supplier、2026-06-08 advanced packaging materials、2026-06-10 Optivision Max，https://ir.qnityelectronics.com/press-releases
+  - SEMI 2026Q1 silicon wafer shipments，2026-04-29，https://www.semi.org/en/semi-press-release/semi-reports-worldwide-silicon-wafer-shipments-increase-13-percent-year-on-year-in-q1-2026
+  - SEMI 300mm Fab Outlook，2026-04-01，https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027
+  - 项目内公司调研：`公司调研/半导体材料_化学品_基板/Q_Qnity Electronics_公司调研_2026-06-11.md`
+  - 项目内行业资料：`行业调研/晶圆制造_设备_材料_测试/行业调研_硅片、光刻胶与前道材料_2026-06-11.md`
+  - 项目内行业资料：`行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装湿化学与表面处理材料_2026-06-11.md`
+  - 项目内行业资料：`行业调研/AI服务器_存储_芯片/行业调研_先进封装材料与热界面材料_2026-06-10.md`
+  - 项目内行业资料：`行业调研/AI服务器_存储_芯片/行业调研_封装基板、中介层与RDL_2026-06-10.md`

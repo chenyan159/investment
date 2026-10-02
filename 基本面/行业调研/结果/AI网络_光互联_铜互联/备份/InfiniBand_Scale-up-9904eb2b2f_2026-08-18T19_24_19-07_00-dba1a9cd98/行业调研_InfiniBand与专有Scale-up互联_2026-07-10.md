@@ -1,0 +1,591 @@
+# 行业调研：InfiniBand与专有Scale-up互联
+
+> 研究日期：2026-07-10  
+> 研究范围：InfiniBand scale-out，以及 NVLink/NVSwitch、Google ICI、AWS NeuronLink/NeuronSwitch、AMD Infinity Fabric、华为 UnifiedBus/HCCS 等专有 scale-up；UALink、UALoE、Scale-Up Ethernet 仅作为竞争路线与相邻增量市场纳入。  
+> 项目内资料边界：只使用“行业调研/产业背景/”中的背景资料，并以“行业调研/行业索引.md”确认标准名称和目录；未读取公司调研、日度资料、特征量化或其他行业报告。  
+> 证据截止：2026-07-10。金额均为美元。除公司已披露数字外，市场规模、产品拆分、毛利率和渗透率均为本报告模型估算，不是公司指引。
+
+## 核心结论
+
+1. **这是两个相邻但不能混算的市场。**InfiniBand主要连接服务器、机架和存储，是 scale-out；NVLink、ICI、NeuronLink、Infinity Fabric、UnifiedBus 让一组加速器共享高带宽、低时延、近似单机内存语义，是 scale-up。2026 年的标准 AI 工厂通常同时需要 scale-up 和 scale-out，而不是二选一。
+2. **2026 年最大的增量利润池已经从传统 InfiniBand 转向 NVLink/NVSwitch。**NVIDIA 截至 2026-04-26 的季度网络收入达到 **148 亿美元，同比 +199%、环比 +35%**；公司没有拆分 NVLink、Spectrum-X 与 InfiniBand，但 Blackwell NVL72 的每架 9 个 NVLink switch tray、72 个 scale-out SuperNIC 使 scale-up 和 scale-out 同时成为强制 attach。[NVIDIA FY2027 Q1](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx)
+3. **InfiniBand 的份额下行不等于收入崩塌。**Dell’Oro 的 2026Q1 数据显示，以太网约占 AI 后端交换机销售的三分之二，InfiniBand 约三分之一，但 InfiniBand 当季仍明显反弹；本报告基准情景预计其全球全栈收入池未来 12 个月为 **120–180 亿美元**，未来 24 个月累计 **280–450 亿美元**。[Dell’Oro 2026Q1 摘要](https://www.prnewswire.com/news-releases/ethernet-extends-lead-in-ai-scale-out-networks-despite-strong-infiniband-rebound-according-to-delloro-group-302788112.html)
+4. **NVLink 是 2026 最确定的专有 scale-up 路线。**NVLink 5 在 Blackwell/Blackwell Ultra 上提供每 GPU 1.8TB/s、NVL72 合计 130TB/s；NVLink 6 在 Rubin 上升至每 GPU 3.6TB/s、NVL72 合计 260TB/s。Rubin 芯片已进入全面生产，合作伙伴系统计划 2026H2 出货，2027 是全年放量年。[NVIDIA NVLink](https://www.nvidia.com/en-us/data-center/nvlink/)；[Vera Rubin 2026-03-16](https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform)
+5. **未来 12 个月，行业经济价值池的基准/乐观/极度乐观情景为 424–676 亿/586–908 亿/823–1,235 亿美元；未来 24 个月累计为 1,005–1,710 亿/1,450–2,370 亿/2,165–3,375 亿美元。**这里同时列示商用收入与云厂自用互联的嵌入式等效价值，不能直接与供应商财报收入相加。
+6. **2026 年出货量/绑定价值前十芯片共同决定互联路径。**项目内背景口径下，B200/GB200、B300/GB300、Rubin、H100/H200、MI450/Helios、Trainium3、Ironwood TPU7、Ascend 910C、Trainium2、MI350/MI355X 是前十；其互联分别指向 NVLink、Infinity Fabric/UALoE、NeuronLink、ICI、UnifiedBus 和 InfiniBand/以太网 scale-out。专有 scale-up 的需求不依赖某一款 GPU，而是由更多芯片进入机架级/超节点级系统共同驱动。
+7. **2026 最可能的物理路径是“架内铜、架间光”。**NVLink 5/6、Infinity Fabric、NeuronLink 等在短距离继续用高密度铜、背板和连接器；800G/1.6T InfiniBand/以太网在跨架使用可插拔光，CPO 先在交换机侧量产。直接光 scale-up 在 2027–2028 才有机会从多架 NVLink 域和开放 scale-up 进入规模收入。
+8. **InfiniBand 的长期壁垒不是协议名称，而是端到端闭环。**Quantum switch、ConnectX SuperNIC、SHARP in-network compute、UFM、LinkX、NCCL/CUDA 和经过大规模验证的拓扑共同形成切换成本。对极大模型训练、科学计算、主权/HPC 客户，节省 5%–15% job completion time 足以覆盖较高网络 ASP。
+9. **开放路线在 2026 从“标准”进入“第一批可交付产品”，但尚未证明可大规模替代 NVLink。**UALink 2.0 于 2026-04-07 增加 in-network compute、chiplet 和管理规范；AMD Helios/UALoE 计划 2026 年末交付；Astera Scorpio X 320-lane 已开始出货并计划 2026H2 爬坡。2027 才是互操作性、软件效率和现场可靠性的真正验证年。[UALink 2.0](https://ualinkconsortium.org/wp-content/uploads/2026/04/UALink-2.0-Specification-PR_FINAL.pdf)；[AMD/Celestica Helios](https://corporate.celestica.com/news-releases/news-release-details/celestica-and-amd-announce-collaboration-advance-next-era-ai)；[Astera Q1 2026](https://www.asteralabs.com/news/astera-labs-reports-first-quarter-2026-financial-results/)
+10. **最高长期 ROIC 位于协议/IP、交换 ASIC/SerDes、系统软件和经过量产验证的光引擎；最低在通用组装。**NVIDIA 季度公司非 GAAP 毛利率 75.0%，Astera 76.4%，Credo 68.3%，Marvell 58.9%；Celestica 2026Q1 GAAP 毛利率仅 10.8%、CCS segment margin 8.6%。同一条互联链上，价值从 ODM 组装明显向硅、协议和软件集中。
+11. **供给瓶颈至少有九个：**200G/lane SerDes 良率、先进制程/大封装、800G/1.6T 光源与封装、OSFP/连接器和高层 PCB、CPO 激光耦合与现场可维护性、整架供电/液冷、协议互操作与固件、系统级 burn-in/验收、网络架构人才。单独扩充交换机组装能力不能解决交付。
+12. **投资上，NVIDIA 是“垄断质量+高估值风险”，Broadcom 是“开放 scale-up+定制 XPU+网络硅”复合弹性，Astera/Marvell/Credo 是高弹性连接硅，Celestica/HPE 是收入弹性大但利润率较低的系统层。**2026–2027 最值得跟踪的不是发布会峰值带宽，而是实际端口、switch tray、客户验收、field failure、网络收入、订单转收入和毛利。
+
+## 一、行业定义、技术边界与计量口径
+
+### 1.1 三张网络不能混为一谈
+
+| 网络层 | 典型范围 | 语义/目标 | 当前主流技术 | 典型产品 | 是否计入本报告 |
+|---|---|---|---|---|---|
+| Scale-up | 芯片内、板内、单机架，正在扩到多机架 | load/store、原子操作、collective；把多颗 XPU 变成一个大计算域 | NVLink/NVSwitch、ICI、NeuronLink/NeuronSwitch、Infinity Fabric、UnifiedBus；UALink/UALoE | NVLink switch tray、NeuronSwitch、ICI torus/OCS、UnifiedBus 总线柜 | 核心 |
+| Scale-out | 服务器/机架到集群 | RDMA、消息传递、拥塞控制；把多个计算域连接成集群 | InfiniBand、RoCE/Ultra Ethernet、Spectrum-X | Quantum-X800、ConnectX-8/9、LinkX、UFM | InfiniBand为核心；以太网用于竞争验证 |
+| Scale-across | 楼栋、园区、城域和多数据中心 | 跨域调度、弹性和容灾 | Ethernet、coherent optics、OCS、Spectrum-XGS | Jericho、路由器、DCI | 只讨论对核心市场的外溢 |
+
+NVIDIA 的官方参考架构明确区分：NVLink 是机架内 scale-up，CIN 可以选择 InfiniBand 或 Ethernet 做 scale-out；GB200/GB300 NVL72 每架有 18 个 compute tray、9 个 NVLink switch tray，GB300 还有 72 个 ConnectX-8 和 18 个 BlueField-3。[NVIDIA NCP architecture](https://docs.nvidia.com/ncx/ncp-software-reference-guide/latest/data-center-architecture.html)
+
+### 1.2 市场规模口径
+
+- **未来 3 个月：**2026-07-01 至 2026-09-30，近似 2026Q3。
+- **未来 1 年：**2026-07-01 至 2027-06-30。
+- **未来 2 年：**2026-07-01 至 2028-06-30。
+- **金额：**期间累计供应商发票收入；Google/AWS/华为等不单独销售的自用 fabric 用“可替代商用 BOM+设计摊销”的嵌入式等效价值。
+- **InfiniBand：**计交换机、HCA/SuperNIC、LinkX/AOC/DAC/光模块、UFM和必要 fabric software；不计 GPU/HBM。
+- **NVLink/其他 scale-up：**只计 switch ASIC/switch tray、retimer、铜/光连接、管理/协议软件的嵌入价值；不计整架 GPU、HBM、CPU、液冷和电源。
+- **不重复计量：**如果 NVL72 平台价格已经包含 NVSwitch、铜缆和管理软件，则只做价值拆分，不再把它作为独立 CapEx 加回整架市场。
+
+### 1.3 情景定义
+
+| 情景 | 核心假设 | 供应条件 | 客户条件 | 置信度 |
+|---|---|---|---|---|
+| 基准 | 2026 AI 基建强劲，Rubin/Helios按公开时间爬坡，电力和内存造成季度错位 | 200G/lane、HBM、封装、光源逐季改善；CPO仍需认证 | 云厂 CapEx 高，但按可通电/可验收量采购 | 中 |
+| 乐观 | 加速器交付比基准高 25%–45%，高端网络 ASP 维持，Rubin/UALoE提前 1 个季度 | 关键部件利用率 90%+，field failure 可控 | 大客户锁量、预付款和多年度框架订单转成实际收货 | 中低 |
+| 极度超预期乐观 | 加速器、网络、电力、液冷、光模块、融资同时解除约束，且供不应求溢价延续 | XDR/CPO、NVLink 6、UnifiedBus 2、UALoE 多线同步成功 | AI token 需求和利用率快速增长，客户不因 TCO/电力推迟 | 低；任一关键环节不满足即失效 |
+
+## 二、2026–2027 前十 AI 芯片与互联路径
+
+本节的芯片排序与出货区间仅来自允许使用的项目内产业背景：[头部AI芯片全景与产能释放](../产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md)。外部资料只用于验证互联产品状态，不重新制作芯片排名。
+
+| 排名 | 芯片/平台 | 2026 出货当量粗估 | 主要 scale-up | 主要 scale-out | 对本行业的含义 |
+|---:|---|---:|---|---|---|
+| 1 | NVIDIA B200/GB200 NVL72 | 240–390 万 GPU | NVLink 5，1.8TB/s/GPU；NVL72 130TB/s | Quantum-2/Quantum-X800 InfiniBand 或 Spectrum-X | 2026 NVLink switch tray、铜缆和 ConnectX 最大成熟需求 |
+| 2 | NVIDIA B300/GB300 NVL72 | 160–300 万 GPU | NVLink 5；9 个 switch tray/架 | 72 个 ConnectX-8/架，800G IB/Ethernet | XDR 800G 和 1.6T 光口最直接 attach |
+| 3 | NVIDIA Rubin/Vera Rubin | 35–75 万 GPU | NVLink 6，3.6TB/s/GPU；NVL72 260TB/s | ConnectX-9、Quantum-X800 或 Spectrum-6 | 2026H2 初始，2027 最大网络代际增量 |
+| 4 | NVIDIA H100/H200 | 80–150 万 GPU | NVLink 4，900GB/s/GPU；HGX8 | NDR 400G IB/以太网 | NDR 存量延续，但 ASP 与份额转弱 |
+| 5 | AMD MI450/MI455X、Helios | 25–65 万 GPU | UALoE/开放 Ethernet scale-up，72 GPU/架 | 43TB/s 以太网 scale-out | 2026Q4–2027 对 NVLink 的首个大规模开放挑战 |
+| 6 | AWS Trainium3 | 60–170 万芯片 | NeuronSwitch-v1、NeuronLink-v4，144 芯片、2TB/s/芯片 | EFA/以太网 | 自用 fabric 数量大，单颗价值低于 NVLink |
+| 7 | Google Ironwood TPU7x | 80–200 万芯片 | ICI 1.2TB/s/芯片、3D torus、OCS，9,216 芯片/pod | 100Gb/s DCN/芯片 | 最大 captive scale-up 域之一 |
+| 8 | 华为 Ascend 910C/Atlas 900 A3 | 50–120 万卡当量 | UnifiedBus 1/HCCS；384 NPU SuperPoD | RoCE/UBoE/光互联 | 中国市场专有超节点路线，数量和机柜数高 |
+| 9 | AWS Trainium2 | 60–140 万芯片 | NeuronLink、UltraServer | EFA/以太网 | 成熟量产，逐步被 Trainium3 替换 |
+| 10 | AMD MI350/MI355X | 30–80 万 GPU | 8 GPU 全互联 Infinity Fabric | 400G RoCE 或 InfiniBand | 2026 成熟 AMD 路线，2027 转向 Helios/UALoE |
+
+Google 官方确认 TPU7x 为 9,216 芯片 pod、每芯片 ICI 双向 1.2TB/s；AWS 官方确认 Trn3 UltraServer 最多 144 颗 Trainium3、NeuronLink-v4 每芯片 2TB/s；华为官方确认 Atlas 900 A3 可连接 384 张 NPU，D2D 双向 784GB/s、单跳约 200ns。[Google TPU7x](https://docs.cloud.google.com/tpu/docs/tpu7x)；[AWS Trn3](https://aws.amazon.com/ec2/instance-types/trn3/)；[Huawei Atlas 900 A3](https://e.huawei.com/cn/products/computing/ascend/atlas-900-a3-superpod)
+
+### 2.1 从芯片数量推导 2026 网络物理量
+
+| 推导项 | 基准估算 | 公式/假设 | 置信度 |
+|---|---:|---|---|
+| 前十平台 2026 加速器端点 | 820–1,690 万 | 项目内十款芯片出货区间求和 | 中低；代际可能重叠 |
+| NVIDIA B200/B300/Rubin 端点 | 435–765 万 | 三代相加 | 中 |
+| 进入 NVL72/等效大 scale-up 域的 NVIDIA 端点 | 240–570 万 | NVIDIA端点 × 55%–75% | 中低 |
+| NVL72 等效机架 | 3.3–7.9 万架 | 上述端点 ÷ 72 | 中低 |
+| NVLink switch tray | 30–71 万个 | NVL72 等效机架 × 9 | 中低；实际 SKU/配置不同 |
+| InfiniBand 等效 endpoint | 140–350 万 | 全部高端端点 × 17%–25%，并考虑 Ethernet 已占约 2/3 AI switch sales | 中低 |
+| TPU7 ICI endpoint | 80–200 万 | 项目内出货区间 | 中 |
+| Trainium2+3 NeuronLink endpoint | 120–310 万 | 项目内出货区间 | 中 |
+| UnifiedBus/HCCS endpoint | 50–120 万 | 项目内出货区间 | 低至中 |
+
+### 2.2 2026 最可能技术路径排序
+
+1. **NVLink 5 + 架内铜 + 800G scale-out：确定性最高。**GB200/GB300 已量产，网络部件随 rack 强绑定。
+2. **NDR 400G 与 XDR 800G InfiniBand 并存：**NDR 承接 Hopper/存量和成本敏感项目，XDR 承接 GB300、Rubin、HPC 和极大训练集群。
+3. **ICI、NeuronLink、UnifiedBus captive scale-up：**不形成开放 merchant 市场，却通过百万级端点形成真实硅、PCB、连接器、光学、测试和 ODM 需求。
+4. **NVLink 6：**2026H2 初始出货、2027 全年化；它是未来一年最大的代际升级。
+5. **UALoE/Scale-Up Ethernet：**2026 年末第一批 Helios，2027 才进入客户 benchmark 和量产验证。
+6. **交换侧 CPO：**Quantum-X/Spectrum-X/Broadcom TH6-Davisson 先行；GPU 封装内/多机架直接光 scale-up 仍是后续。
+
+## 三、2026 机遇、挑战与新技术成熟时间
+
+### 3.1 最近半年一手事实时间线
+
+| 日期 | 一手事实 | 对行业的含义 |
+|---|---|---|
+| 2026-01-05 | NVIDIA 披露 Rubin/NVLink 6：每 GPU 3.6TB/s、每 switch tray 28.8TB/s、NVL72 260TB/s | scale-up 带宽翻倍，switch tray/铜缆/电源/散热价值同步上升 |
+| 2026-03-12 | Broadcom 宣布 Tomahawk 6 102.4T 已进入 production volume | 开放 Ethernet 同时争夺 scale-up 和 scale-out，200G SerDes成为核心 |
+| 2026-03-16 | NVIDIA 宣布 Rubin 七颗芯片 full production；AMD/Celestica 宣布 Helios/UALoE 于 2026 年末可用 | 专有 NVLink 与开放 UALoE 在同一天进入交付竞赛 |
+| 2026-03-31 | NVIDIA 与 Marvell 扩展 NVLink Fusion，Marvell提供 custom XPU 和兼容 scale-up networking | NVLink 从纯 NVIDIA GPU fabric 延伸为半定制生态 |
+| 2026-04-07 | UALink 2.0 发布 in-network compute、chiplet、manageability | 开放 scale-up 从物理链路转向完整系统语义 |
+| 2026-04-27/05-05 | Astera Scorpio X 320-lane 已开始出货；Q1 收入 3.084 亿美元、同比 +93%、非 GAAP 毛利率 76.4% | merchant scale-up switch 首批商业化，硅/IP毛利高 |
+| 2026-05-20 | NVIDIA 季度网络收入 148 亿美元，同比 +199% | 网络不再是 GPU 附件，而是数十亿美元季度级主产品 |
+| 2026-05-31 | NVIDIA 宣布 Rubin 供应链规模爬坡，Spectrum-X Ethernet Photonics 已生产 | CPO由 demo 进入生产，但出货端口/可靠性仍待披露 |
+| 2026-06-03 | Broadcom FY2026Q2 AI 半导体收入 108 亿美元，同比 +143% | custom XPU、switch、NIC、DSP/SerDes 同步受益 |
+| 2026-06-16 | HPE 发布 QFX5252 switch tray for AMD Helios | UALoE不再只有芯片/标准，出现 OEM 可交付模块 |
+| 2026-06-22 | NVIDIA 确认 LANL Mission/Vision/Veritas 选择 Rubin + Quantum-X800；NERSC Doudna 也采用 Quantum-X800 | InfiniBand在科学/HPC和高可靠大集群保持高端订单 |
+
+来源：[Broadcom TH6 volume](https://investors.broadcom.com/news-releases/news-release-details/broadcom-now-shipping-worlds-first-1024-tbps-switch-production)；[NVIDIA-Marvell](https://nvidianews.nvidia.com/news/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion)；[HPE QFX5252](https://www.hpe.com/us/en/newsroom/press-release/2026/06/hpe-expands-self-driving-networks-across-edge-campus-data-center-and-ai-factories.html)；[NVIDIA 科学超算订单](https://nvidianews.nvidia.com/news/nvidia-vera-rubin-delivers-world-class-supercomputers-for-science)；[NERSC Doudna](https://www.nersc.gov/what-we-do/computing-for-science/doudna-system)。
+
+### 3.2 机遇
+
+- **带宽增长快于加速器颗数。**从 NVLink 5 的 1.8TB/s/GPU 到 NVLink 6 的 3.6TB/s/GPU，单 GPU scale-up 带宽翻倍；Quantum-X800 由 400G NDR 升至 800G XDR，ConnectX-9 再提供最高 1.6Tb/s/GPU。
+- **机架成为采购单元。**每个 NVL72 强制配置 switch tray、连接、管理和验收，网络 attach 不再依赖客户后装。
+- **MoE、RL、长上下文和 test-time compute 增加 all-to-all。**模型计算并非只增长 FLOPS，expert routing、KV移动和 collective 让网络利用率成为 token 成本变量。
+- **异构 XPU 增加协议/IP市场。**Google、AWS、Meta、OpenAI、华为、AMD 的芯片数量上升，使 NVLink Fusion、UALink、UALoE、PCIe/CXL fabric 和定制 SerDes 都出现新设计机会。
+- **CPO 增加每台交换机价值。**光引擎、外置激光、硅光封装、液冷和现场监控进入交换系统，单端口 ASP 可能在初期提高而不是下降。
+- **网络收入能以高毛利增长。**NVIDIA、Broadcom、Astera、Credo 的硅/IP毛利显著高于 OEM/ODM；供不应求时 200G SerDes、switch ASIC 和 AEC/retimer 可维持溢价。
+
+### 3.3 挑战
+
+- **以太网夺走 InfiniBand 份额。**Dell’Oro 表明 2025 全年及 2026Q1 以太网已约占 AI 后端交换机销售的三分之二；InfiniBand需要靠绝对性能、SHARP和HPC客户维持价格。
+- **专有锁定引发客户反制。**NVLink性能最强，但客户希望避免 GPU、switch、NIC、软件和运维全部由单一供应商定价；UALink/UALoE/ESUN直接针对这个痛点。
+- **CPO 维修模式尚未完全验证。**激光耦合、光引擎良率、热应力、现场更换和污染控制会把实验室性能转化成长期 warranty 风险。
+- **多架 scale-up 放大故障域。**NVL576/1152 让一次链路、switch tray或控制面故障影响更多 GPU；可热插拔、降级运行和隔离成为与带宽同等重要的指标。
+- **电力和液冷可能比网络先卡住。**GB300 约 142kW/架、Rubin 参考设计约 227kW/架；网络已交货不代表 rack 可上电验收。
+- **数字容易重复计算。**NVIDIA networking revenue 同时包含 NVLink、Ethernet、InfiniBand、NIC/DPU/线缆；Broadcom AI revenue 同时包含 XPU 和 networking，不能直接相加得行业 TAM。
+
+### 3.4 新技术成熟与放量时间：三情景
+
+“成熟”定义为协议/硅/系统通过客户验证并具有可重复的现场可靠性；“放量”定义为年化收入超过 10 亿美元或占适用新部署 10%以上。
+
+| 技术 | 当前状态（2026-07） | 基准：成熟/放量 | 乐观：成熟/放量 | 极度乐观：成熟/放量 | 核心验证指标 |
+|---|---|---|---|---|---|
+| NDR 400G InfiniBand | 大规模量产 | 已成熟；2026–2027存量放量、份额下降 | 需求强使生命周期延至2028 | XDR供给不足令NDR继续高价至2028 | NDR ASP、Hopper/B200 attach、lead time |
+| XDR 800G Quantum-X800 | end-to-end MP，GB300已验证 | 2026H2成熟；2027主放量 | 2026Q3大规模；2027占IB新端口75%+ | 2026Q3供不应求，2027占80%–90% | ConnectX-8/9、Q34xx出货、800G端口、field failure |
+| Quantum-X CPO InfiniBand | 生产/早期客户 | 2027H1成熟；2027H2放量 | 2026Q4成熟；2027H1放量 | 2026Q3端口快速爬坡，2027成主流 | CPO ports、激光良率、RMA、功耗/端口 |
+| GDR 1.6T end-to-end InfiniBand | 规范/路线图 | 2028成熟并放量 | 2027Q4小批，2028放量 | 2027H1样品、H2提前量产 | IBTA Plugfest、NIC/switch同代、1.6T optics |
+| NVLink 5/NVSwitch Blackwell | 大规模量产 | 2026峰值；2027逐步让位NVLink6 | 2027仍因B300强需求高位 | 2027绝对量继续增长 | NVL72 rack、switch tray、network revenue |
+| NVLink 6/Rubin | 硅已full production，系统H2 | 2026Q4成熟；2027全年放量 | 2026Q3客户交付；2027Q1大规模 | 2026Q3供不应求，H2快速替代NVLink5 | Rubin partner shipment、验收、hot-swap、goodput |
+| NVLink Fusion | 合作/设计导入 | 2027H2首批；2028放量 | 2027H1首批；H2放量 | 2026Q4首个客户硅，2027占非NV XPU 20%+ | tape-out、客户名、NVLink兼容测试、软件支持 |
+| NVLink直接光多架NVL576 | GB200原型运行，产品路线 | 2027H2产品；2028放量 | 2027H1小批；H2放量 | 2026Q4客户原型，2027H1量产 | optical link BER、NVL576 job success、维护时长 |
+| Google TPU8 ICI/OCS | 规格/工程导入 | 2027成熟并主放量 | 2026Q4首批；2027Q1放量 | 2026Q3–Q4快速转生产 | Cloud SKU、9,600-chip pod、ICI/OCS可用率 |
+| Trainium4 fabric/NVLink Fusion | 设计/预订 | 2027H2成熟；2028放量 | 2027H1成熟；H2放量 | 2026Q4样品、2027Q1客户容量 | AWS实例、UltraServer数量、Neuron软件效率 |
+| UnifiedBus 2/Atlas 950 | 规格已发布，Q4 2026可用目标 | 2026Q4首批；2027放量 | 2026Q3–Q4提前；2027大规模 | 2026Q3客户部署，2027国内超节点主导 | 实际交付SuperPoD、良率、UBoE互联、客户数 |
+| UALoE/Helios | switch/OEM开发，late-2026目标 | 2026Q4首批；2027H2放量 | 2026Q3样机、2027H1放量 | 2026Q3订单、Q4大规模，2027份额20%+ | 标杆客户、ROCm MFU、QFX5252/Celestica出货 |
+| UALink 2.0 merchant switch | 标准完成，首批硅/平台 | 2027成熟；2028放量 | 2026Q4首批；2027H2放量 | 2026Q3多厂互通，2027份额15%+ | plugfest、multi-vendor互通、Scorpio客户、INC效率 |
+
+IBTA 2025 年 Release 2.0 已支持 200Gb/s/lane、800Gb/s QSFP以及 1.6Tb/s OSFP/QSFP-DD物理能力，但 IBTA 面向完整 GDR 1.6Tb/s 产品的路线仍指向约 2028；因此不能把“规范支持1.6T”写成“2026已有端到端1.6T InfiniBand规模产品”。[IBTA Release 2.0](https://www.infinibandta.org/infiniband-trade-association-advances-high-performance-networking-with-new-specification-updates-and-record-plugfest-participation/)；[IBTA roadmap](https://www.infinibandta.org/about-infiniband/)
+
+## 四、已经开始放量的关键产品
+
+### 4.1 全行业价值池：三情景
+
+| 技术池 | 未来3个月 基准/乐观/极乐 | 未来1年 基准/乐观/极乐 | 未来2年累计 基准/乐观/极乐 | 计量说明 |
+|---|---:|---:|---:|---|
+| InfiniBand end-to-end | 28–42 / 38–55 / 50–70 亿 | 120–180 / 160–240 / 220–320 亿 | 280–450 / 380–600 / 550–800 亿 | switch+HCA/SuperNIC+cable/optics+UFM |
+| NVIDIA NVLink/NVSwitch/Fusion | 50–75 / 65–95 / 90–130 亿 | 230–360 / 320–480 / 450–650 亿 | 520–880 / 750–1,200 / 1,100–1,700 亿 | 仅scale-up fabric嵌入价值 |
+| Google ICI/OCS | 6–10 / 8–13 / 11–18 亿 | 25–42 / 35–58 / 50–80 亿 | 60–100 / 90–150 / 140–230 亿 | captive等效价值 |
+| AWS NeuronLink/NeuronSwitch | 5–9 / 7–12 / 9–16 亿 | 23–40 / 32–55 / 45–75 亿 | 55–90 / 80–130 / 120–190 亿 | captive等效价值 |
+| AMD Infinity Fabric | 1.5–3 / 2–4 / 3–5.5 亿 | 6–12 / 9–17 / 13–24 亿 | 10–20 / 15–30 / 25–45 亿 | 只含MI350等专有IF；不含UALoE |
+| Huawei UnifiedBus/HCCS | 3–6 / 4.5–8.5 / 7–12 亿 | 15–30 / 22–40 / 32–58 亿 | 60–120 / 100–180 / 170–280 亿 | UB1+UB2 captive/系统嵌入价值 |
+| 其他 proprietary/captive fabric | 1–3 / 2–4 / 3–7 亿 | 5–12 / 8–18 / 13–28 亿 | 20–50 / 35–80 / 60–130 亿 | 小型ASIC、PCIe专有fabric等 |
+| **总经济价值池** | **约95–148 / 127–192 / 173–259 亿** | **约424–676 / 586–908 / 823–1,235 亿** | **约1,005–1,710 / 1,450–2,370 / 2,165–3,375 亿** | captive价值不等于可投资供应商收入 |
+
+合理性校验：
+
+- NVIDIA 单季网络收入 148 亿美元，已相当于 592 亿美元年化，但其中含 Ethernet、InfiniBand、NVLink、NIC/DPU和线缆；本报告未来一年 NVIDIA NVLink 价值 230–360 亿，加上其 IB/Ethernet/NIC后与财报量级一致。
+- 项目内美国 AI 建设背景对 2026/2027 的 AI fabric switch/routing、NIC/DPU/switch silicon、DAC/AEC和CPO订单池分别给出 200–280/270–390 亿、110–160/150–230 亿、40–70/60–100 亿、10–30/30–70 亿美元的区间；本报告只抽取 InfiniBand 与专有 scale-up，不把全部 Ethernet/optics 重复加总。[项目内AI数据中心订单映射](../产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+- LightCounting 2026-04 预计 2026 数据中心交换机销售同比 +86%，五年 CAGR 36%，scale-up switch ASIC 五年 CAGR 53%；并指出 NVLink 仍占未来 scale-up 大头，UALink/SUE merchant 市场从 2026 开始出现。[LightCounting 2026-04](https://www.lightcounting.com/newsletter/en/april-2026-ethernet-optical-and-scale-up-switches-for-cloud-datacenters-378)
+
+### 4.2 分产品市场规模、渗透率和增长
+
+以下金额均为该代产品在对应期间的累计收入/等效价值。B/O/X 分别为基准、乐观、极度乐观。
+
+| 已放量产品 | 未来3个月 B/O/X | 未来1年 B/O/X | 未来2年 B/O/X | 渗透率路径 | 增长判断 |
+|---|---:|---:|---:|---|---|
+| Quantum-2 NDR 400G IB全栈 | 18–25 / 23–32 / 28–38 亿 | 65–90 / 85–115 / 105–145 亿 | 90–140 / 130–190 / 170–240 亿 | 占IB新端点：当前65%–75%→1年45%–55%→2年20%–30%（基准） | 量稳价降；12个月 -5%至+10%，2年收入CAGR -10%至+3% |
+| Quantum-X800 XDR 800G IB全栈 | 12–18 / 17–24 / 22–32 亿 | 60–90 / 90–130 / 120–170 亿 | 180–280 / 270–400 / 380–550 亿 | 占IB新端点：当前20%–30%→1年40%–55%→2年65%–78%（基准） | 12个月 +90%至+150%；2年CAGR 75%–110% |
+| NVLink 5/NVSwitch（Blackwell） | 48–70 / 62–88 / 80–115 亿 | 200–310 / 270–390 / 360–500 亿 | 330–530 / 470–700 / 650–950 亿 | 占NVIDIA新scale-up端点：当前75%–85%→1年55%–70%→2年20%–35% | 2026量价齐升，2027被NVLink6替代；绝对收入先峰值后下降 |
+| Google ICI/OCS（Ironwood） | 6–10 / 8–13 / 11–17 亿 | 25–42 / 36–58 / 50–78 亿 | 60–100 / 90–140 / 130–200 亿 | ICI在TPU适用平台内近100%；占全球加速器端点约8%–13%→9%–15% | 12个月 +45%至+75%；2年CAGR 35%–55% |
+| AWS NeuronLink/NeuronSwitch（Trn2/3） | 5–9 / 7–12 / 9–16 亿 | 23–40 / 32–55 / 45–75 亿 | 55–90 / 80–130 / 120–190 亿 | 在Trainium平台内近100%；占全球端点约9%–14%→10%–16% | 12个月 +50%至+90%；Trn3替代Trn2但fabric总量增 |
+| AMD Infinity Fabric（MI350/355） | 1.5–3 / 2–4 / 3–5.5 亿 | 6–12 / 9–16 / 12–22 亿 | 10–20 / 15–28 / 22–40 亿 | MI350 8-GPU内100%；全行业scale-up价值仅2%–4%，后转UALoE | 12个月 +10%至+35%，2027传统IF增速放缓 |
+| UnifiedBus 1（Atlas 900 A3） | 3–6 / 4.5–8 / 6–11 亿 | 13–25 / 20–35 / 28–50 亿 | 28–55 / 45–80 / 70–120 亿 | 中国专有超节点新部署约55%–70%，随后被UB2迭代 | 12个月 +40%至+80%，但供应链/披露置信度低 |
+
+Quantum-X800 的 144 个 800Gb/s端口、SHARP v4、ConnectX-8/9和LinkX构成端到端产品；NVIDIA validated configuration 已把 ConnectX-8 标为 mass production 并批准用于 GB300 NVL72。[Quantum-X800产品页](https://www.nvidia.com/en-us/networking/products/infiniband/quantum-x800/)；[Quantum-X800集群配置](https://networking-docs.nvidia.com/nvidia-quantum-x800-xdr-clusters)
+
+### 4.3 当前毛利率：三情景
+
+毛利率均指产品/经济毛利，不是净利率。captive fabric 没有外部售价，以下为相对商用替代方案的经济毛利；ODM 和系统集成毛利单独列示。
+
+| 产品/层级 | 基准毛利率 | 乐观毛利率 | 极度乐观毛利率 | 定价逻辑 |
+|---|---:|---:|---:|---|
+| NVIDIA Quantum IB端到端 | 60%–70% | 68%–75% | 74%–80% | 单一端到端供应、SHARP/UFM/NCCL、XDR供不应求 |
+| NVIDIA NVLink 5/NVSwitch | 72%–80% | 78%–84% | 82%–87% | rack强绑定、协议+ASIC+软件、切换即更换计算平台 |
+| Google ICI/OCS captive | 40%–55% | 50%–62% | 58%–68% | 规模摊销、工作负载共设计；不含Google Cloud服务毛利 |
+| AWS NeuronLink/NeuronSwitch captive | 38%–52% | 48%–60% | 55%–66% | 自研ASIC/软件摊销，内部规模降低单位成本 |
+| AMD Infinity Fabric | 42%–56% | 52%–63% | 58%–68% | 与GPU板级系统绑定，但生态和规模弱于NVLink |
+| Huawei UnifiedBus/HCCS | 40%–55% | 50%–62% | 57%–68% | 国内替代、超节点强绑定；先进制造良率可能吞噬毛利 |
+| Merchant switch ASIC/IP（Broadcom/Astera） | 65%–78% | 72%–82% | 78%–86% | 200G SerDes、协议IP、少数供应商、长验证周期 |
+| AEC/retimer/高速连接硅 | 55%–68% | 63%–72% | 68%–76% | 短距低功耗和signal integrity溢价；光化后承压 |
+| 光模块/光引擎 | 30%–45% | 40%–52% | 48%–60% | 2026光源/封装紧；组装竞争强，核心laser/engine更高 |
+| switch tray/系统ODM | 8%–15% | 12%–18% | 15%–22% | 规模和交付溢价有限，客户掌握BOM与价格 |
+
+财务锚点：
+
+- NVIDIA FY2027Q1 非 GAAP 毛利率 **75.0%**。[NVIDIA FY2027Q1](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx)
+- Astera 2026Q1 非 GAAP 毛利率 **76.4%**。[Astera](https://www.asteralabs.com/news/astera-labs-reports-first-quarter-2026-financial-results/)
+- Credo FY2026Q4 收入 **4.37 亿美元，同比 +157%**，非 GAAP 毛利率 **68.3%**。[Credo](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Financial-Results/default.aspx)
+- Marvell FY2027Q1 非 GAAP 毛利率 **58.9%**。[Marvell](https://investor.marvell.com/news-events/press-releases/detail/1023/marvell-technology-inc-reports-first-quarter-of-fiscal-year-2027-financial-results)
+- Celestica 2026Q1 GAAP毛利率 **10.8%**、CCS segment margin **8.6%**，说明系统设计制造的收入弹性远高于利润率。[Celestica 10-Q](https://corporate.celestica.com/node/17401/html)
+
+## 五、在研和刚进入生产的关键产品
+
+### 5.1 市场规模、渗透率与利润率
+
+| 在研/早期产品 | 未来3个月 B/O/X | 未来1年 B/O/X | 未来2年 B/O/X | 2年末渗透率（基准/乐观/极乐） | 稳态毛利率 B/O/X |
+|---|---:|---:|---:|---:|---:|
+| NVLink 6 / Vera Rubin NVL72 | 10–20 / 18–30 / 30–50 亿 | 150–250 / 230–360 / 350–500 亿 | 550–900 / 800–1,250 / 1,150–1,700 亿 | 占NVIDIA新scale-up端点60%–75% / 70%–82% / 78%–88% | 70%–79% / 76%–83% / 80%–86% |
+| Quantum-X CPO InfiniBand | 1–3 / 2.5–6 / 5–10 亿 | 10–25 / 25–50 / 50–90 亿 | 60–120 / 120–220 / 220–350 亿 | 占IB新端口30%–45% / 45%–60% / 60%–75% | 55%–68% / 65%–75% / 72%–80% |
+| NVLink Fusion半定制fabric | 0.5–2 / 1–4 / 3–8 亿 | 5–15 / 20–40 / 50–100 亿 | 40–90 / 90–180 / 180–350 亿 | 占非NVIDIA XPU可服务scale-up价值15%–25% / 25%–40% / 40%–55% | 65%–76% / 72%–82% / 78%–86% |
+| NVLink直接光 NVL576/NVL1152 | 0–0.5 / 0.5–1.5 / 1.5–4 亿 | 2–8 / 10–30 / 30–70 亿 | 70–150 / 150–300 / 300–550 亿 | 占NVLink价值8%–15% / 15%–25% / 25%–40% | 58%–70% / 68%–78% / 75%–84% |
+| TPU8 ICI/OCS | 0.5–2 / 1–4 / 3–8 亿 | 7–20 / 20–40 / 40–80 亿 | 50–100 / 100–180 / 180–300 亿 | 占Google新TPU fabric价值55%–70% / 65%–80% / 75%–88% | 42%–56% / 52%–64% / 58%–70% |
+| Trainium4新fabric/NVLink Fusion | 0.2–1 / 0.5–2 / 1–4 亿 | 4–12 / 12–30 / 30–60 亿 | 30–70 / 70–130 / 130–220 亿 | 占AWS新Trainium fabric30%–45% / 45%–60% / 60%–75% | 40%–54% / 50%–62% / 56%–68% |
+| UnifiedBus 2 / Atlas 950 | 1–3 / 3–7 / 6–12 亿 | 15–35 / 30–60 / 60–100 亿 | 70–140 / 140–250 / 250–400 亿 | 占中国新超节点价值50%–65% / 65%–78% / 75%–88% | 42%–56% / 52%–64% / 58%–70% |
+| UALoE/Helios（相邻开放路线） | 1–4 / 3–8 / 8–15 亿 | 15–35 / 30–70 / 70–120 亿 | 70–140 / 140–260 / 250–450 亿 | 占开放scale-up新部署20%–35% / 35%–50% / 50%–65% | 硅65%–78%；系统10%–18% |
+| UALink/Scorpio/ESUN merchant | 0.5–2 / 1–4 / 3–8 亿 | 5–15 / 15–35 / 35–70 亿 | 40–80 / 80–160 / 150–280 亿 | 占merchant非NVLink新部署10%–20% / 20%–35% / 35%–50% | 硅62%–76% / 70%–80% / 76%–84% |
+
+这些产品之间存在代际替代，表格不可逐行机械相加。例如 NVLink 6 增加会减少 NVLink 5；TPU8 ICI 增加会替代部分 Ironwood ICI；UnifiedBus 2 会替代 UB1。
+
+### 5.2 技术判断
+
+#### NVLink 6 和直接光多架 scale-up
+
+NVLink 6 已是生产硅，而不是纸面规范。Rubin NVL72 的重要变化包括：带宽翻倍、switch tray可热维护、部分switch不可用时仍可降级运行、链路加密。真正的远期期权是 NVL576：八个72-GPU机架组成一个576-GPU NVLink域，架内铜、架间直接光；NVIDIA 已用 GB200 原型运行多架工作负载，但 Vera Rubin Ultra 商用目标仍在 2027H2。[NVIDIA Vera Rubin POD技术博客](https://developer.nvidia.com/blog/?p=113993)
+
+#### NVLink Fusion
+
+NVLink Fusion 不是把协议“完全开放”，而是让第三方 CPU/XPU 通过 NVIDIA 许可的 IP、switch、软件和供应链进入 NVLink 域。首批生态包括 Marvell、MediaTek、Alchip、Astera、Synopsys、Cadence，Fujitsu和Qualcomm CPU也计划与NVIDIA GPU连接；这扩大 NVIDIA 的 TAM，同时保留协议控制和认证租金。[NVLink Fusion生态](https://nvidianews.nvidia.com/_gallery/download_pdf/682aab363d633270c96f8bae/)
+
+#### Quantum-X CPO
+
+CPO的投资逻辑不是“所有可插拔光模块立即消失”，而是 200G/lane 条件下将电通道缩短、降低DSP/retimer功耗并提高端口密度。早期毛利会被良率和保修成本压制；一旦 field failure、激光更换和热漂移通过验证，switch silicon+光引擎的一体化供应商可获得更高 BOM 占比。
+
+#### UALoE/UALink
+
+HPE Helios 公开规格为 72颗 MI455X、260TB/s aggregate scale-up、31TB HBM4和1.4PB/s内存带宽；Celestica负责另一套scale-up switch设计制造，均计划 2026 年末提供。UALink 1.0支持200GT/s/lane、每4-lane station 800Gb/s双向，最多1,024 endpoints；UALink 2.0再补齐 in-network compute、chiplet和管理。理论上具备替代条件，现实障碍是 collective库、故障恢复、拓扑调优和跨厂互通。[HPE Helios](https://www.hpe.com/us/en/newsroom/press-release/2025/12/hpe-accelerates-ai-deployments-with-first-amd-helios-ai-rack-scale-architecture-with-open-scale-up-networking-built-with-broadcom.html)；[UALink 1.0白皮书](https://ualinkconsortium.org/wp-content/uploads/2025/04/UALink-1.0-White_Paper_v3.pdf)
+
+#### UnifiedBus 2
+
+华为披露 Atlas 900 A3/UB1 自 2025-03 开始交付，已部署超过300套、覆盖20多个客户；Atlas 950/UB2目标 2026Q4 可用，最多扩到8,192颗Ascend 950。该路线以更多芯片和更大互联域弥补单芯片制造劣势，是中国市场最重要的专有 scale-up 变量，但其良率、成本、实际客户利用率和国际可投资性均不透明。[Huawei SuperPoD keynote](https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech)
+
+## 六、供给侧：产能、瓶颈、成本与价格传导
+
+### 6.1 产能结构
+
+| 环节 | 主要地区 | 主要公司/生态 | 关键工艺 | 集中度判断 |
+|---|---|---|---|---|
+| 协议、架构、软件 | 美国、以色列、中国 | NVIDIA/Mellanox、Broadcom、AMD/Pensando、Google、AWS/Annapurna、Huawei、Marvell、Astera | fabric架构、collective、拥塞控制、遥测、固件 | 极高 |
+| Switch/NIC/retimer ASIC设计 | 美国、以色列 | NVIDIA、Broadcom、Marvell、Astera、Credo、Cisco Silicon One、AMD | 100/200G SerDes、交换矩阵、DMA、in-network compute | 高 |
+| 先进晶圆 | 台湾、韩国、美国 | TSMC为主；Samsung/Intel为补充 | 5/4/3nm及后续2nm，低功耗SerDes | 很高 |
+| 先进封装/基板 | 台湾、韩国、日本、马来西亚 | TSMC、ASE、Amkor、Ibiden、Shinko、Unimicron、Kinsus | FC-BGA、2.5D、RDL、高层ABF、低损耗材料 | 高 |
+| 光源/光引擎/CPO | 美国、日本、台湾、中国、马来西亚 | Broadcom、NVIDIA、Coherent、Lumentum、Marvell、Fabrinet、MACOM、Semtech、Innolight、Eoptolink | InP EML/CW laser、硅光、光纤耦合、burn-in | 高且分层 |
+| 高速铜、AEC、连接器 | 美国、瑞士、台湾、中国、东南亚 | Amphenol、TE、Molex、Credo、Astera、Samtec、Luxshare、BizLink | 224G通道、twinax、AEC DSP、背板/线束 | 中高 |
+| PCB/电源/机框 | 台湾、中国、泰国、马来西亚、墨西哥 | WUS、Tripod、TTM、Delta、Lite-On、Celestica、Quanta、Wiwynn、Foxconn | 高层低损耗PCB、SI/PI、高电流供电、液冷机框 | 中 |
+| 系统设计制造 | 台湾、泰国、马来西亚、墨西哥、美国 | Celestica、Accton/Edgecore、Quanta、Wiwynn、Foxconn、HPE、Dell、Supermicro、Lenovo | switch tray、rack集成、burn-in、线缆和现场验收 | 中 |
+| 测试与验证 | 美国、欧洲、日本、台湾 | Keysight、Anritsu、Rohde & Schwarz、Teledyne LeCroy、Advantest、Teradyne、Spirent、UNH-IOL | BER、PAM4、FEC、protocol analyzer、ATE/SLT、plugfest | 高端高集中 |
+
+### 6.2 关键供给瓶颈
+
+| 瓶颈 | 为什么难 | 2026影响 | 缓解窗口 | 可量化指标 |
+|---|---|---|---|---|
+| 200G/lane SerDes和交换ASIC良率 | 102.4T die巨大、时钟/功耗/模拟前端复杂 | XDR/1.6T/UALoE switch数量和毛利 | 2026H2–2027 | good die、功耗/Tb、switch lead time |
+| 先进制程与FC-BGA/ABF | 大die、高层基板、翘曲和低损耗材料 | ASIC交期、ASP、系统验收 | 2027扩产但需求也升 | substrate lead time、package yield |
+| 800G/1.6T激光与光封装 | EML/CW laser、DSP、耦合、burn-in同时吃紧 | IB/Ethernet跨架端口 | 2026H2局部缓解、2027产能大增 | laser utilization、module yield、ASP |
+| OSFP cage、连接器、twinax/AEC | 224G signal integrity和插拔可靠性 | NVL72架内/相邻架连接 | 2027标准化 | BER、插损、AEC功耗、lead time |
+| CPO激光耦合和现场维修 | 光引擎与热源靠近，坏件更换影响整机 | CPO只在少数平台早期放量 | 2027H2–2028 | RMA、laser attach yield、MTTR |
+| 高层PCB与SI/PI | 200G PAM4、巨大交换矩阵、高电流同时存在 | switch tray良率和可靠性 | 2027 | PCB良率、层数、材料交期 |
+| 整架电力和液冷 | 142–227kW/rack，switch/optics也发热 | 已交货网络等待通电 | 2027局部改善 | dock-to-live、CDU capacity、leak/RMA |
+| 固件/collective/互操作 | 性能依赖端到端调优，不是链路up就完成 | UALink/UALoE、NVLink Fusion验证慢 | 2027–2028 | NCCL/RCCL效率、MFU、job completion |
+| 系统级测试与验收 | 数十万链路下极低单链路错误也会放大 | 出货转收入延迟 | 自动化和遥测在2027改善 | first-pass yield、burn-in小时、field failure |
+| 网络架构与运维人才 | 拓扑、PFC/ECN、SHARP、路由和故障定位经验稀缺 | 客户部署周期、软件attach | 2027以后培训/自动化 | 部署周期、incident MTTR、认证人数 |
+| 出口管制和区域割裂 | 高端ASIC、光器件和EDA/IP受限制 | 中国形成独立UB/HCCS供应链 | 长期存在 | 许可、受限SKU、国产化率 |
+
+### 6.3 单位BOM
+
+#### InfiniBand 端点全栈BOM（模型）
+
+| 项目 | NDR 400G 每加速器等效 | XDR 800G 每加速器等效 | BOM占比 | 毛利决定因素 |
+|---|---:|---:|---:|---|
+| HCA/SuperNIC | 1,200–2,200 | 2,200–4,000 | 25%–35% | NIC ASIC、PCIe 5/6、DMA/SHARP、供给 |
+| Switch silicon/chassis端口 | 1,000–2,000 | 1,800–3,500 | 25%–35% | radix、200G SerDes、机框/电源、拓扑层级 |
+| 光模块/DAC/AOC/LACC | 800–1,800 | 1,500–3,000 | 20%–30% | 距离、single/multimode、laser/DSP、双端口计数 |
+| UFM/软件/集成和服务 | 400–900 | 600–1,200 | 8%–15% | 集群规模、订阅/支持、自动化 |
+| 其他机械/电源/测试 | 300–700 | 500–1,000 | 5%–10% | 可靠性、burn-in、液冷 |
+| **合计** | **3,700–7,600** | **6,600–12,700** | 100% | 规模越大，共享spine呈阶梯增长 |
+
+#### 72-GPU scale-up机架互联BOM（模型）
+
+| 项目 | Blackwell NVLink 5 | Rubin NVLink 6 | BOM占比 | 说明 |
+|---|---:|---:|---:|---|
+| NVLink switch ASIC及封装 | 11–22 万 | 20–38 万 | 30%–40% | 9个switch tray中的核心硅/封装价值 |
+| Switch tray PCB、电源、retimer | 7–13 万 | 11–20 万 | 15%–22% | 高层低损耗PCB和高电流供电 |
+| 铜缆、连接器、背板 | 7–14 万 | 10–20 万 | 18%–25% | 短距铜仍最省功耗和时延 |
+| 管理、固件、NCCL/collective价值 | 4–9 万 | 7–14 万 | 10%–15% | 不等同软件单独售价 |
+| 机械、散热、测试和ODM | 5–10 万 | 8–14 万 | 10%–18% | 不含整架主液冷/电源 |
+| **每NVL72互联嵌入价值** | **34–68 万** | **56–106 万** | 100% | 不含GPU/HBM/CPU |
+
+### 6.4 价格传导
+
+1. **需求上修先传到switch ASIC和NIC allocation。**协议/硅供应商提高 mix、减少折扣，随后系统厂把成本转给CSP。
+2. **光源、连接器、基板涨价以BOM surcharge或新代际ASP体现。**由于客户不愿中途改设计，已认证供应商能把部分成本向下游传导。
+3. **ODM最难保留涨价。**客户掌握BOM且可多厂生产，Celestica/Quanta/Accton更多依靠规模、工程NRE和交付效率，而非长期高毛利。
+4. **供给缓解后，价格先在通用光模块/AEC/连接器回落，最后才在协议/交换ASIC回落。**协议和软件切换成本不随晶圆供给增加而消失。
+5. **CPO初期ASP高但利润未必高。**若良率、RMA和保修差，高售价会被返工与现场服务吞噬；只有量产可靠性稳定后才形成结构性高毛利。
+
+## 七、竞争格局、壁垒与价值捕获
+
+### 7.1 市场结构
+
+| 细分市场 | 2026结构估算 | CR1/CR2 | 2027变化 | 依据 |
+|---|---|---:|---|---|
+| AI级InfiniBand switch ASIC/HCA | NVIDIA近乎唯一端到端高端供应商 | CR1约90%–98% | 份额仍极高；总AI scale-out被Ethernet稀释 | Quantum/ConnectX/UFM全栈，其他厂商缺同级量产ASIC |
+| Merchant proprietary scale-up | NVLink绝对主导 | CR1约90%+ | NVLink Fusion扩大可服务范围；UALink/UALoE分流 | LightCounting称NVLink仍占未来scale-up大头 |
+| 全球scale-up经济价值（含captive） | NVIDIA 75%–88%；Google/AWS/Huawei/AMD分占余量 | CR4约92%–97% | NVIDIA降至约60%–78%，但绝对额增 | 前十芯片路径及各云厂自研端点 |
+| 102.4T/200G SerDes merchant switch ASIC | Broadcom领先，NVIDIA/Cisco/Marvell竞争 | CR2约75%–90% | Astera/Marvell/自研ASIC增加 | TH6 volume、Spectrum-6、Silicon One G300 |
+| Scale-up switch系统/ODM | Celestica、Accton、Quanta、Wiwynn、HPE等 | CR5约55%–75% | 客户多源化，集中度下降 | OEM/ODM扩产与OCP设计 |
+| AEC/retimer | Credo、Astera、Broadcom、Marvell等 | CR4约65%–80% | 量增但光化压低部分ASP | Credo收入、Scorpio/Taurus、200G SerDes |
+| CPO/硅光引擎 | Broadcom/NVIDIA先发，Coherent/Lumentum/Marvell/TSMC生态 | 早期CR2约70%+ | 2027更多平台加入，份额快速变化 | 生产端口与field data尚少 |
+
+Dell’Oro 2026Q1显示 Ethernet 在 AI后端交换机销售约占三分之二；LightCounting预计 NVLink仍占 scale-up switch 大头，merchant UALink/SUE从2026开始；两项结论相互不矛盾：Ethernet已赢得多数 scale-out，而专有NVLink仍赢得多数scale-up。
+
+### 7.2 可量化壁垒：为什么能定价
+
+| 壁垒 | 量化表现 | 为什么能定价 | 被打破的条件 |
+|---|---|---|---|
+| 协议和内存语义 | NVLink 6 3.6TB/s/GPU，超PCIe 6约14倍；ICI/NeuronLink为专用拓扑 | 链路不是通用I/O，直接影响模型并行和collective | UALink/UALoE在同功耗、同可靠性达到相近MFU |
+| In-network compute | SHARP v4、UALink INC、collective offload | 减少GPU等待和网络流量，节省昂贵GPU时间 | 软件collective在普通Ethernet达到同等job time |
+| 软件生态 | CUDA/NCCL/UFM/DOCA；Google XLA；AWS Neuron；华为CANN | 更换fabric会重写调优、监控、故障处置 | 标准API和自动化实现跨厂无损迁移 |
+| 大规模验证 | 72、144、384、576、9,216 endpoints | 单链路BER很低也会在百万链路放大；现场数据稀缺 | 多厂平台连续两季field failure低于1% |
+| SerDes/ASIC | 102.4T、200G/lane、低ns级pipeline | 大die、模拟IP、封装和软件共同验证，研发摊销巨大 | 多家同代量产、lead time降至6–8周 |
+| 系统共设计 | GPU/CPU/HBM/switch/power/cooling一体化 | 单部件最优不等于系统goodput最优 | OCP/UALink使部件真正可互换且不损性能 |
+| 客户认证 | 6–18个月设计/资格验证，HPC政府项目更长 | 一旦进入BOM，改供应商会重新验证和冒停机风险 | 标准Plugfest+现场数据缩短到一季度 |
+| Installed base/运维 | UFM、遥测、备件、训练和支持 | 运维团队和工具链形成经常性收入 | 开源管理栈覆盖同等功能和SLA |
+| 供应规模 | 先进晶圆、基板、光源、ODM同时锁量 | 高峰期只有少数供应商能按期交付完整系统 | 产能利用率低于80%、ASP同比降20%+ |
+
+### 7.3 价值捕获和长期ROIC
+
+| 价值层 | 典型毛利/利润率 | ROIC判断 | 代表公司 | 投资含义 |
+|---|---:|---|---|---|
+| 协议/IP/软件许可 | 75%–90%毛利 | 极高；轻资产、切换成本高 | NVIDIA、Synopsys、Cadence、云厂自研 | 最优质，但常嵌在平台内 |
+| Switch/NIC/SerDes ASIC | 60%–80%毛利 | 高；研发高但量产资本由foundry承担 | NVIDIA、Broadcom、Astera、Marvell、Credo | 2026–2027核心利润池 |
+| 核心激光/硅光引擎 | 40%–65%毛利 | 中高；良率/IP/客户认证 | Coherent、Lumentum、Broadcom、Marvell | CPO放量后价值上移 |
+| 高速连接器/AEC | 35%–70%毛利，分化大 | 中高；专用硅高、通用线缆低 | Amphenol、TE、Credo、Astera | 2026铜互联强，2027后看光化边界 |
+| Switch系统/OEM品牌 | 20%–40%产品毛利或约15%–25% segment OP | 中；渠道/服务有价值 | Cisco、Arista、HPE Juniper | 开放Ethernet受益，需看软件attach |
+| ODM/系统组装 | 8%–15%毛利/约6%–10% OP | 中低；资本和营运资金较重 | Celestica、Accton、Quanta、Wiwynn | 收入弹性大，利润弹性小 |
+| 通用PCB/线缆/结构件 | 15%–30%毛利 | 周期性 | 多家亚洲供应商 | 易扩产、价格回落最快 |
+
+**长期最可能拥有高ROIC的层：**
+
+1. NVIDIA NVLink/Quantum/ConnectX/UFM 的协议+硅+软件闭环；
+2. Broadcom 200G SerDes、Tomahawk/Thor、CPO以及custom XPU接口；
+3. Astera/Marvell/Cadence/Synopsys 等跨平台 scale-up/PCIe/UALink/NVLink Fusion IP和交换硅；
+4. 经量产验证的硅光/CPO核心光引擎，而不是纯模块组装；
+5. 能承担系统可靠性责任并收取软件/服务费的网络品牌商。
+
+## 八、2026 三个关键拐点
+
+### 拐点一：InfiniBand从“主流AI后端默认”转成“高端性能/科学计算溢价”
+
+- **事实：**2025全年和2026Q1，以太网约占 AI后端交换机销售三分之二；同时 NVIDIA InfiniBand 绝对收入反弹，Quantum-X800进入MP并获得NERSC、LANL、RIKEN等客户。
+- **判断：**2026 InfiniBand份额继续下降，但XDR、ConnectX和SHARP提高单端口ASP，收入仍可增长 10%–25%。
+- **最可能放量：**Quantum-X800 800G、ConnectX-8/9、UFM、XDR光/铜互联。
+- **反证：**IB lead time降至8周以下、ASP同比跌20%+、新大集群不再选IB且HPC订单减少。
+
+### 拐点二：NVLink成为比独立scale-out switch更大的新增网络价值池
+
+- **事实：**Blackwell NVL72每架固定9个switch tray，NVIDIA网络单季收入148亿美元；NVLink 6又将带宽翻倍。
+- **判断：**2026 NVLink 5嵌入价值约200–310亿美元（未来一年基准），Rubin/NVLink 6在未来一年再贡献150–250亿美元早期/替换价值；二者有重叠，合并后NVLink总池230–360亿美元。
+- **最可能放量：**NVSwitch ASIC、switch tray、高速铜缆/连接器、管理/可靠性软件。
+- **反证：**NVL72交付量显著低于GPU出货、rack验收延迟、客户大量选择HGX8而非NVL72。
+
+### 拐点三：开放scale-up从标准转为第一批产品，但2026仍是验证年
+
+- **事实：**TH6 production volume、UALink 2.0发布、Scorpio X开始出货、Helios/QFX5252/Celestica计划年末可用。
+- **判断：**2026Q4会出现可验收的UALoE/UALink产品和小规模订单；真正改变NVLink份额需要2027公开客户、真实MFU和field reliability。
+- **最可能放量：**Broadcom TH6/TH Ultra、HPE QFX5252、Celestica Helios switch、Astera Scorpio、200G SerDes/retimer。
+- **反证：**2026年底没有公开客户/云实例，或RCCL/ROCm训练效率明显落后NVLink/NCCL。
+
+## 九、2027 三个关键拐点
+
+### 拐点一：Rubin/NVLink 6全年化，scale-up价值超过传统InfiniBand数倍
+
+- **基准：**NVLink 6占NVIDIA新scale-up端点60%–75%，未来24个月累计价值550–900亿美元。
+- **乐观：**Rubin 2026Q3提前交付、2027客户验收顺畅，NVLink 6份额70%–82%。
+- **极乐：**HBM4、先进封装、227kW机架、电力和液冷同步解除，2027 NVLink 6供不应求。
+- **受益：**NVIDIA、NVLink Fusion生态、Amphenol/TE、switch tray ODM、高层PCB、测试设备。
+
+### 拐点二：开放scale-up获得首个10%–20%新增部署份额
+
+- **基准：**UALoE/UALink/ESUN在非NVIDIA新scale-up部署中达到10%–20%，AMD Helios是主要实物载体。
+- **乐观：**Meta/OpenAI/Oracle等MI450部署按期，HPE/Celestica/Broadcom多供应链量产，份额20%–35%。
+- **极乐：**多家custom XPU同时采用，merchant scale-up价值在2027年化超过100亿美元。
+- **受益：**Broadcom、Astera、Marvell、Celestica、HPE Juniper、Cadence、Synopsys、Credo、连接器/光学链。
+
+### 拐点三：光从scale-out交换侧进入多架scale-up，铜/光边界重画
+
+- **基准：**Quantum-X/Spectrum-X CPO在2027H2规模化；NVL576直接光仍为高端早期产品。
+- **乐观：**NVL576/NVL144和开放scale-up都采用直接光，CPO/光引擎价值提高。
+- **极乐：**2027H1完成可靠性验证，光scale-up带动光引擎、laser、fiber attach、CPO test出现供不应求。
+- **受益：**NVIDIA、Broadcom、Marvell、Coherent、Lumentum、Fabrinet、MACOM、硅光封装/测试；部分高端AEC增长转弱。
+
+## 十、头部公司与细分技术全景
+
+| 细分技术/产品 | 核心头部 | 高弹性/小公司与细分优势者 | OEM/ODM/配套 | 技术/产能优势 | 主要风险 |
+|---|---|---|---|---|---|
+| InfiniBand switch/NIC/UFM | **NVIDIA/Mellanox** | Cornelis Networks为相邻HPC fabric，不是同级IB替代 | HPE、Dell、Lenovo、Supermicro | Quantum、ConnectX、SHARP、UFM、LinkX端到端 | Ethernet份额、单一供应商反制 |
+| NVLink/NVSwitch | **NVIDIA** | Marvell、Astera、MediaTek、Alchip（NVLink Fusion） | Dell、HPE、Supermicro、Lenovo、Quanta、Wiwynn、Foxconn | 协议+GPU+switch+NCCL强绑定 | 客户锁定担忧、开放标准 |
+| Google ICI/OCS | **Google** | Broadcom为可能的设计/网络生态参与者，具体分工未完全公开 | Google自研/ODM | 9,216-chip torus、OCS、XLA共设计 | captive、供应商不可见、外部TAM有限 |
+| AWS NeuronLink/NeuronSwitch | **AWS/Annapurna Labs** | Marvell/Broadcom/定制IP生态，具体项目需逐项确认 | AWS自研/ODM | 144-chip all-to-all、2TB/s/chip、Neuron软件 | captive、Neuron软件迁移 |
+| AMD Infinity Fabric | **AMD** | — | Supermicro、Dell、HPE等 | MI355X 8-GPU全互联、成熟RCCL/ROCm | 仅8-GPU域，Helios转UALoE |
+| UALoE/Scale-Up Ethernet | **AMD、Broadcom、HPE Juniper、Celestica** | Arista、Cisco、UpscaleAI、Enfabrica等相邻生态 | Accton、Quanta、Wiwynn | 统一Ethernet运维、开放OCP | 现场效率和互通未充分验证 |
+| UALink | **AMD、Intel、Google、Meta、Microsoft、HPE、Cisco等联盟成员** | Astera、Marvell、Cadence、Synopsys、Keysight、Teledyne LeCroy、GigaIO、UnifabriX | 多家ODM | memory semantic、1,024 endpoints、INC/management | 产品节奏慢于NVLink |
+| UnifiedBus/HCCS/UBoE | **Huawei** | 中国高速连接、光模块、液冷、服务器生态 | 华为及国内ODM | 384到8,192 NPU超节点、光电融合 | 制程、良率、软件、出口限制 |
+| Merchant switch ASIC | **Broadcom、NVIDIA、Cisco** | Marvell、Astera、UpscaleAI | Celestica、Accton、Arista、HPE | TH6 102.4T、Spectrum-6、Silicon One、Scorpio | 大客户自研、设计周期 |
+| NIC/DPU/SmartNIC | **NVIDIA、Broadcom、AMD Pensando、Intel、Marvell** | Napatech、Achronix等特定加速 | 多家服务器OEM | RDMA、拥塞、DMA、security、telemetry | attach被集成、价格竞争 |
+| SerDes/retimer/AEC | **Broadcom、Marvell、Credo、Astera** | Alphawave/Qualcomm生态、Rambus、Semtech | Amphenol、TE、Molex、Samtec、Luxshare、BizLink | 112/224G signal integrity、低功耗短距 | CPO/光化、客户集中 |
+| CPO/硅光/光引擎 | **Broadcom、NVIDIA、Marvell、Coherent、Lumentum** | Ayar Labs、Lightmatter、Celestial AI、DustPhotonics、Ranovus、POET、MACOM | Fabrinet、TSMC/ASE/Amkor生态 | 激光、硅光、耦合、封装和系统共设计 | 良率、维修、量产时点 |
+| 高速光模块 | **Coherent、Lumentum、Innolight、中际旭创、Eoptolink、新易盛、Fabrinet** | AOI、光迅、天孚、源杰、仕佳等 | 云厂/OEM | 800G/1.6T量产、InP/EML/CW激光 | 2027扩产、ASP下跌 |
+| 高速连接器/铜缆 | **Amphenol、TE Connectivity、Molex** | Samtec、Credo、BizLink、Luxshare | NVL/Helios/ODM | 客户认证、材料、插损和机械可靠性 | 标准化、光替代 |
+| PCB/基板/封装 | **TSMC、ASE、Amkor、Ibiden、Shinko、Unimicron** | Kinsus、WUS、Tripod、TTM等 | switch/NIC厂商 | 高层低损耗、ABF、FC-BGA、良率 | 扩产后周期、客户集中 |
+| 测试仪器/协议验证 | **Keysight、Anritsu、Rohde & Schwarz、Teledyne LeCroy、Advantest、Teradyne** | Spirent、UNH-IOL、FormFactor等 | IBTA/UALink/OIF生态 | 200G PAM4、BER/FEC、protocol/plugfest | 设备周期、客户CapEx |
+| Fabric OS/遥测/AIOps | **NVIDIA UFM/DOCA、Arista EOS/CloudVision、Cisco、HPE Juniper/Mist** | DriveNets、Nexthop、Arrcus、Aviz、UpscaleAI | CSP自研SONiC/FBOSS | 故障定位、拥塞调优、多租户 | 开源替代、客户自研 |
+
+### 10.1 投资优先级
+
+| 层级 | 公司 | 核心逻辑 | 2026–2027需验证 |
+|---|---|---|---|
+| A：核心平台 | NVIDIA | NVLink和InfiniBand近垄断、高毛利、网络收入已达季度148亿美元 | networking拆分、NVL72/Rubin rack验收、Ethernet/IB mix、75%毛利能否维持 |
+| A：开放scale-up核心硅 | Broadcom | TH6 102.4T量产、200G SerDes、CPO、custom XPU和networking同池 | AI收入中network比例、TH6客户/端口、已披露AI backlog转收入、客户集中 |
+| A-：高弹性连接平台 | Astera Labs | Scorpio X已出货、PCIe6/UALink/NVLink Fusion、76%毛利 | 2026H2 production ramp、非单一客户、UALink真实订单 |
+| A-：定制与光互联 | Marvell | custom XPU、NVLink Fusion、silicon photonics、数据中心收入占比高 | AI bookings转收入、59%毛利、客户项目时间 |
+| B+：AEC/SerDes | Credo | FY26Q4收入+157%、68.3%毛利，短距scale-up需求强 | 客户集中、AEC ASP、铜到光边界 |
+| B：系统设计制造 | Celestica | switch/AI compute快速增长、Helios、1.6T/CPO项目 | 10.8%毛利能否提升、capex回报、三大客户集中 |
+| B：网络品牌/OEM | HPE Juniper | QFX5252/Helios、网络segment 21.6% OP margin、AI系统渠道 | Helios客户订单、QFX出货、Juniper整合、网络attach |
+| B：Ethernet受益/IB竞争者 | Arista、Cisco | AI Ethernet份额提升；Cisco FY26 AI订单目标90亿美元 | scale-up产品、1.6T端口、AI收入/订单转化、毛利 |
+| B：光/CPO | Coherent、Lumentum、Fabrinet、MACOM | 800G/1.6T与CPO光源/光引擎 | laser产能、yield、CPO field data、2027 ASP |
+| B：连接器 | Amphenol、TE | NVL/Helios高密铜与连接器强制attach | AI收入拆分、224G产品mix、光替代 |
+| 区域性/高风险 | 华为及中国UB生态 | 国内超节点和替代需求，已部署300+ A3 SuperPoD | UB2真实交付、Ascend产量、客户利用率、可投资标的直接暴露 |
+
+Broadcom 2026Q2 AI semiconductor revenue为108亿美元、同比+143%，但包括custom XPU和AI networking；Cisco 2026Q3披露FY26截至当季AI infrastructure orders 53亿美元，并将全年订单目标由50亿提高到90亿美元；HPE 2026Q2 Data Center Networking收入3.2亿美元、同比+233%，Networking segment operating margin 21.6%。这些是开放网络需求的交叉验证，不应误写成专有scale-up收入。[Broadcom Q2](https://www.broadcom.com/company/news/financial-releases/64371)；[Cisco Q3](https://investor.cisco.com/financials/quarterly-results/default.aspx)；[HPE Q2](https://investors.hpe.com/)
+
+## 十一、行业报告交叉验证与反共识判断
+
+### 11.1 多方验证
+
+| 课题 | 公司一手 | 行业报告 | 本报告结论 |
+|---|---|---|---|
+| InfiniBand份额 | NVIDIA只披露网络总收入和产品/订单，不拆份额 | Dell’Oro：2026Q1 Ethernet约2/3 AI后端switch sales；650 Group：Ethernet将占多数增长 | IB份额下降、绝对额增长，成为高端/HPC溢价市场 |
+| Scale-up增速 | NVIDIA网络+199%；NVLink6量产；TH6量产；Scorpio出货 | LightCounting：scale-up switch ASIC五年CAGR 53% | 2026–2028网络最快子赛道之一 |
+| 开放scale-up时间 | Helios late-2026；UALink 2.0；QFX5252/Celestica | 650 Group：2026 Ethernet scale-up从PoC到production | 2026小批、2027验证和放量，不假设立即取代NVLink |
+| CPO时间 | NVIDIA Spectrum-X Photonics production；Broadcom TH6-Davisson/OFC展示 | LightCounting：2026 CPO先在scale-out有意义，长期scale-up更大 | 交换侧先行，直接光多架scale-up在2027–2028 |
+| 需求强度 | NVIDIA、Broadcom、Cisco、Astera、Credo、Celestica收入/订单均大增 | Dell’Oro、650 Group、LightCounting均上修网络市场 | 需求真实；最大风险是交付/重复计算而非当下缺订单 |
+
+行业参考：[650 Group 2026-01](https://650group.com/blog/in-the-ai-era-ethernet-set-to-surge-in-scale-out-and-ramp-in-scale-up/)预计AI scale-out Ethernet 2030年超过1,000亿美元，并认为当前scale-up几乎由NVLink占据；[Dell’Oro 2026长期预测](https://www.prnewswire.com/news-releases/ai-back-end-switch-market-will-push-past-100-billion-by-2030-according-to-delloro-group-302678344.html)预计2030年AI后端switch spending超过1,000亿美元；[LightCounting 2026-04](https://www.lightcounting.com/newsletter/en/april-2026-ethernet-optical-and-scale-up-switches-for-cloud-datacenters-378)给出2026数据中心switch sales +86%和scale-up ASIC 53% CAGR。三家口径不同，但方向一致。
+
+### 11.2 反共识判断
+
+1. **“以太网赢了，所以InfiniBand收入要下降”不成立。**份额、端口速率、端口ASP和总市场同时变化；当总AI后端网络翻倍，IB份额从50%降到30%仍可增长。
+2. **“UALink开放，所以NVLink毛利马上下降”过早。**标准发布到大规模可靠运行通常需6–18个月，CUDA/NCCL、switch telemetry和故障恢复是隐藏壁垒。
+3. **“CPO量产，所以铜缆马上消失”错误。**铜在机架内短距仍有最低功耗/成本；光先替代跨架和高损耗电通道，多种距离将长期共存。
+4. **“云厂自研fabric没有投资价值”错误。**它们不形成独立品牌收入，却形成switch ASIC、SerDes、PCB、连接器、光学、测试和ODM订单；投资要找到真实外部供应商，不能只按Google/AWS内部价值计入上市公司收入。
+5. **“系统厂收入高等于高利润”错误。**Celestica 10.8% GAAP毛利、HPE Cloud & AI 12.4% operating margin远低于NVIDIA 75%公司毛利；价值集中在硅、协议和软件。
+
+## 十二、风险、反证与跟踪仪表盘
+
+### 12.1 三情景切换条件
+
+| 指标 | 基准维持 | 上修乐观 | 进入极乐 | 下修/证伪 |
+|---|---|---|---|---|
+| NVIDIA networking revenue | 同比+50%–100%，环比正增长 | 连续两季+100%且毛利稳定 | 年化超过800亿美元、仍供不应求 | 连续两季环比下降且compute也放缓 |
+| IB vs Ethernet份额 | IB 22%–35%，绝对额增 | IB份额稳定30%+且XDR ASP高 | IB份额反升、XDR/CPO供不应求 | IB份额<20%且收入同比下降 |
+| XDR端口 | 2027占IB新端口40%–55% | 55%–70% | 70%+且CPO快速attach | 量产延迟、RMA>1%或ASP大降 |
+| NVLink 6 | 2026H2出货，2027主放量 | 2026Q3大客户上线 | 2026Q3大规模、2027供不应求 | 合作伙伴出货晚于2026Q4 |
+| Helios/UALoE | 2026Q4首批，2027标杆客户 | 2026Q3订单、2027H1规模 | 2026Q4多个云厂量产 | 2027Q1仍无公开客户/benchmark |
+| UALink merchant | 2027互通/量产 | 2026Q4多厂产品 | 2026H2多个生产客户 | 只有demo，无volume ports |
+| CPO | 2026早期生产，2027放量 | 2026Q4可靠性稳定 | 2026Q3大规模且毛利提高 | field failure、laser维护或yield恶化 |
+| 铜/AEC | 收入增30%–60%、ASP稳定 | lead time>12周、利用率>90% | 供不应求且CPO不侵蚀 | ASP同比跌>15%、lead time≤6周 |
+
+### 12.2 主要风险
+
+- **需求风险：**token收入、AI服务利用率和模型经济性不及预期，网络订单通常滞后GPU订单1–2季度下修。
+- **电力/园区风险：**网络设备已交货但AI rack无法energize，造成库存、验收和收入错位。
+- **技术替代风险：**Ethernet/UALink使InfiniBand和NVLink溢价下降；直接光使高端AEC价值下降。
+- **客户集中：**NVIDIA、Broadcom、Astera、Credo、Celestica、Marvell均依赖少数hyperscaler和平台周期。
+- **供应过剩：**2027 laser、光模块、PCB、连接器扩产可能快于端口需求，收入增而毛利降。
+- **可靠性：**CPO、224G铜、液冷switch tray和多架scale-up任一field failure会放大为大规模停机。
+- **出口管制/地缘：**形成中美分裂的协议、供应链和客户市场，限制可服务TAM。
+- **重复计量：**GPU rack售价、NVIDIA networking、Broadcom AI revenue、光模块和captive fabric价值可能在同一平台重复出现。
+- **估值风险：**高增速供应商可能已经计入极乐情景，基本面兑现仍可能对应股价下跌。
+
+### 12.3 更新频率
+
+| 频率 | 跟踪项 |
+|---|---|
+| 月度 | Quantum-X/TH6/Scorpio/QFX出货线索、800G/1.6T lead time、AEC/光模块ASP、CPO客户和field data |
+| 季度 | NVIDIA networking、Broadcom AI/network mix、Cisco AI orders、Arista/HPE DC networking、Astera/Credo/Marvell/Celestica收入和毛利 |
+| 半年 | Dell’Oro/650/LightCounting份额与端口预测、IBTA/UALink Plugfest、TOP500互联结构 |
+| 事件驱动 | Rubin/Helios/TPU8/Trainium4/Atlas950首次客户验收，NVLink Fusion tape-out，NVL576直接光生产 |
+
+## 十三、最终投资判断
+
+### 13.1 2026
+
+- **最确定：**NVLink 5/NVSwitch、Quantum-X800/ConnectX、NDR到XDR升级、高速铜/连接器、switch ASIC/SerDes。
+- **最有上修弹性：**Rubin/NVLink 6提前、XDR CPO、TH6/开放scale-up首批客户、NVLink Fusion设计订单。
+- **最易被误判：**InfiniBand份额下行被等同于收入下行；CPO demo被等同于volume；ODM收入增长被等同于硅级毛利。
+- **价值排序：**协议/交换硅/SerDes > 核心光引擎 > 品牌交换系统/软件 > AEC/连接器 > ODM/通用组件。
+
+### 13.2 2027
+
+- **主线一：**Rubin/NVLink 6全年化，专有scale-up继续是最大网络利润池。
+- **主线二：**UALoE/UALink/ESUN获得首个可量化份额，Broadcom/Astera/Marvell/HPE/Celestica受益。
+- **主线三：**Quantum-X CPO和直接光多架scale-up开始重画铜/光边界，光引擎和可靠性测试价值上升。
+- **结构性判断：**InfiniBand不会消失，而会像高端并行文件系统一样集中在对延迟、collective和可靠性最敏感的客户；Ethernet获得规模，NVLink获得利润，captive fabric获得成本控制，开放scale-up获得期权。
+
+### 13.3 一句话结论
+
+**对2026 AI基础设施极度乐观时，最优投资表达不是笼统押注“更多网络端口”，而是押注每个加速器的scale-up带宽翻倍、每架强绑定switch tray、XDR/200G SerDes升级和2027直接光化；NVIDIA拥有当前最强定价权，Broadcom拥有开放路线的最大份额弹性，Astera/Marvell/Credo拥有高弹性连接硅期权，而系统/ODM必须用利润率和客户集中度折价。**
+
+## 附录A：关键来源
+
+### 公司一手与技术资料
+
+1. [NVIDIA FY2027 Q1：网络收入148亿美元、同比+199%](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx)
+2. [NVIDIA Vera Rubin 2026-03-16](https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform)
+3. [NVIDIA Rubin供应链/CPO production 2026-05-31](https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory)
+4. [NVIDIA NVLink 4/5/6规格](https://www.nvidia.com/en-us/data-center/nvlink/)
+5. [NVIDIA Vera Rubin POD、NVL576/NVL1152](https://developer.nvidia.com/blog/?p=113993)
+6. [NVIDIA Quantum-X800](https://www.nvidia.com/en-us/networking/products/infiniband/quantum-x800/)
+7. [NVIDIA GB200/GB300 NVL72](https://www.nvidia.com/en-gb/data-center/gb200-nvl72/)
+8. [NVIDIA NCP网络架构和每架BOM边界](https://docs.nvidia.com/ncx/ncp-software-reference-guide/latest/data-center-architecture.html)
+9. [NVIDIA-Marvell NVLink Fusion 2026-03-31](https://nvidianews.nvidia.com/news/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion)
+10. [Broadcom FY2026 Q2](https://www.broadcom.com/company/news/financial-releases/64371)
+11. [Broadcom Tomahawk 6 production volume](https://investors.broadcom.com/news-releases/news-release-details/broadcom-now-shipping-worlds-first-1024-tbps-switch-production)
+12. [Broadcom OFC 2026：TH6、CPO、Tomahawk Ultra、Jericho 4](https://investors.broadcom.com/news-releases/news-release-details/broadcom-showcases-industry-leading-solutions-scaling-ai)
+13. [AMD Helios参考架构](https://www.amd.com/en/blogs/2025/amd-helios-ai-rack-built-on-metas-2025-ocp-design.html)
+14. [AMD/Celestica Helios UALoE 2026-03-16](https://corporate.celestica.com/news-releases/news-release-details/celestica-and-amd-announce-collaboration-advance-next-era-ai)
+15. [HPE Helios/Broadcom scale-up Ethernet](https://www.hpe.com/us/en/newsroom/press-release/2025/12/hpe-accelerates-ai-deployments-with-first-amd-helios-ai-rack-scale-architecture-with-open-scale-up-networking-built-with-broadcom.html)
+16. [HPE QFX5252 2026-06](https://www.hpe.com/us/en/newsroom/press-release/2026/06/hpe-expands-self-driving-networks-across-edge-campus-data-center-and-ai-factories.html)
+17. [Google TPU7x/Ironwood](https://docs.cloud.google.com/tpu/docs/tpu7x)
+18. [Google Ironwood系统：ICI+OCS+DCN](https://cloud.google.com/blog/products/compute/training-large-models-on-ironwood-tpus)
+19. [AWS Trainium3/NeuronSwitch/NeuronLink](https://aws.amazon.com/ec2/instance-types/trn3/)
+20. [Huawei Atlas 900 A3](https://e.huawei.com/cn/products/computing/ascend/atlas-900-a3-superpod)
+21. [Huawei UnifiedBus/SuperPoD路线](https://www.huawei.com/en/news/2025/9/hc-xu-keynote-speech)
+22. [UALink 1.0 white paper](https://ualinkconsortium.org/wp-content/uploads/2025/04/UALink-1.0-White_Paper_v3.pdf)
+23. [UALink 2.0 2026-04-07](https://ualinkconsortium.org/wp-content/uploads/2026/04/UALink-2.0-Specification-PR_FINAL.pdf)
+24. [Astera Labs Q1 2026/Scorpio X](https://www.asteralabs.com/news/astera-labs-reports-first-quarter-2026-financial-results/)
+25. [Cadence UALink subsystem IP](https://www.cadence.com/en_US/home/tools/silicon-solutions/design-ip/high-speed-ethernet/ualink-subsystem.html)
+26. [Credo FY2026Q4](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Financial-Results/default.aspx)
+27. [Marvell FY2027Q1](https://investor.marvell.com/news-events/press-releases/detail/1023/marvell-technology-inc-reports-first-quarter-of-fiscal-year-2027-financial-results)
+28. [Celestica Q1 2026](https://corporate.celestica.com/news-releases/news-release-details/celestica-announces-first-quarter-2026-financial-results)
+29. [Cisco FY2026Q3](https://investor.cisco.com/financials/quarterly-results/default.aspx)
+30. [Arista Q1 2026](https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-First-Quarter-2026-Financial-Results/default.aspx)
+31. [HPE FY2026Q2](https://investors.hpe.com/)
+32. [IBTA Release 2.0/XDR](https://www.infinibandta.org/infiniband-trade-association-advances-high-performance-networking-with-new-specification-updates-and-record-plugfest-participation/)
+33. [NERSC Doudna/Quantum-X800](https://www.nersc.gov/what-we-do/computing-for-science/doudna-system)
+34. [NVIDIA 2026科学超算订单](https://nvidianews.nvidia.com/news/nvidia-vera-rubin-delivers-world-class-supercomputers-for-science)
+
+### 行业报告与交叉验证
+
+35. [Dell’Oro：2026Q1 Ethernet约占AI后端switch sales三分之二](https://www.prnewswire.com/news-releases/ethernet-extends-lead-in-ai-scale-out-networks-despite-strong-infiniband-rebound-according-to-delloro-group-302788112.html)
+36. [Dell’Oro：AI back-end switch spending 2030超过1,000亿美元](https://www.prnewswire.com/news-releases/ai-back-end-switch-market-will-push-past-100-billion-by-2030-according-to-delloro-group-302678344.html)
+37. [650 Group：2026 scale-out和scale-up路线](https://650group.com/blog/in-the-ai-era-ethernet-set-to-surge-in-scale-out-and-ramp-in-scale-up/)
+38. [650 Group：数据中心网络向2,000亿美元演进](https://650group.com/blog/navigating-the-explosion-in-data-center-networking-demand-2/)
+39. [LightCounting：2026 scale-up switch market](https://www.lightcounting.com/newsletter/en/april-2026-ethernet-optical-and-scale-up-switches-for-cloud-datacenters-378)
+
+## 附录B：项目内背景引用
+
+- [头部AI芯片全景与2026/2027产能释放](../产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md)
+- [AI数据中心建设规模与产业链订单映射](../产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+- [AI产业链全局图谱与口径字典](../产业背景/AI产业链全局图谱与口径字典_T03_2026-07-09.md)
+- [AI产业链瓶颈与反证指标总表](../产业背景/AI产业链瓶颈与反证指标总表_2026-07-10.md)
+
+---
+
+**模型提醒：**本报告的极度乐观情景有意采用“AI基础设施建设、芯片供给、网络部件、电力/液冷和客户验收同时超预期”的联合假设，用于测算上行弹性，不代表最高概率预测。任何估值或仓位决策都应以基准情景为锚，并用第十二节指标逐季切换。

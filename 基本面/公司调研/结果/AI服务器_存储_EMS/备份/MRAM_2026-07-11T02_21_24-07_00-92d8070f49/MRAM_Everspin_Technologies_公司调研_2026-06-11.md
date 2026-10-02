@@ -1,0 +1,385 @@
+# MRAM / Everspin Technologies 公司调研：高可靠 MRAM 小盘龙头，AI 主链暴露有限但边缘与国防期权升温
+
+报告日期：2026-06-11（America/Los_Angeles）  
+研究对象：MRAM / Everspin Technologies, Inc. / 纳斯达克  
+输出目录：`基本面/公司调研/AI服务器_存储_EMS/`，与 `公司调研/公司索引.md` 中 MRAM 归属一致。  
+资料边界：项目内仅读取 `公司调研/公司索引.md` 用于确定正式输出目录，并参考 `行业调研/` 下的相关行业和产业背景资料；未读取、引用或继承 `特征量化/`、`日度资料/` 或既有公司调研报告内容。  
+外部资料范围：2025-06 至 2026-06 的公司财报、SEC 文件、投资者材料、产品公告、产业会议/论坛、技术资料、第三方市场争议材料；优先使用公司与 SEC 一手资料。  
+
+## 0. 一页结论
+
+1. **Everspin 是全球少数已有商业化收入、量产历史和美国本土 MRAM 制造能力的纯 MRAM 公司，但不是 HBM/DRAM/AI GPU 主数据路径公司。** 公司产品核心价值是“非易失 + SRAM/DRAM 类性能 + 高耐久 + 高可靠”，主要进入工业自动化、数据中心持久化、航空航天/国防、交通/汽车、医疗、博彩/游戏机、FPGA 配置和嵌入式系统。2026 年市场把所有 memory 名字都往 AI 交易里重估，MRAM 因 ticker 和技术叙事获得高关注，但公司当前收入仍是 `$60M` 年化量级的高可靠小众存储，不是几百亿美元级 HBM 供应链。
+2. **最新基本面有实质改善。** 2026Q1 收入 `$14.872M`，同比 `+13.2%`；MRAM 产品销售 `$14.100M`，同比 `+27.9%`；GAAP gross margin `52.7%`；GAAP net loss `$0.296M`。公司给 2026Q2 指引收入 `$15.5-16.5M`，中值 `$16.0M`，环比约 `+7.6%`、同比约 `+21%`。这是真实订单/需求回暖，但绝对规模仍小。
+3. **过去半年三件大事改变了投资叙事：** 2026-03 发布 UNISYST 统一代码/数据 MRAM，目标边缘 AI、工业、航空航天；2026-04 与 Microchip 签初始 10 年美国 Oregon foundry 协议，建立 MRAM/TMR 第二来源和扩产能力；2026-04 与 Amentum 相关美国政府微电子项目签 `$40M`、30 个月 subcontract，用于 domestic Toggle MRAM 的 Mil-Aero 工艺开发与认证。三者分别对应“产品路线图上移、供应链韧性、国防资金”。
+4. **公司财务健康度高于多数小盘半导体。** 2026Q1 末现金 `$40.5M`，无金融债；current assets `$63.7M`，current liabilities `$11.1M`，current ratio `5.8x`；total liabilities/assets 仅 `15.6%`。问题不是偿债，而是规模太小、经营杠杆尚未稳定释放、GAAP 利润主要被研发/销售/G&A 和诉讼费用吞噬。
+5. **Backlog 不披露，必须用 design wins、指引、渠道库存、合同与产能协议推断。** 已知强信号：2025 年 design wins `238` 个，高于 2024 年 `178` 个，管理层称预计 2026-2027 ramp；2026Q1 需求来自 Industrial Automation、Transportation、Data Center，并称日本客户库存已消化；Amentum `$40M` 是明确工程服务合同；Microchip 协议有最低采购承诺，逐步 ramp 至最高 `1,300 wafers/quarter`，但 Toggle/Sensor capacity 约 2027H2 才开始、STT flows 约 2028H2 才开始。取消率、bookings、lead time 未披露。
+6. **AI 数据中心直接收入占比应保守估算。** 公司 2025 年市场收入拆分约为 LEO/Mil/Aero & Transportation `30%`、Enterprise `30%`、Industrial Automation `30%`、Casino Gaming `10%`；Enterprise/Data Center 中包含 IBM FlashCore 等持久化应用，但这不是 HBM 或 GPU 显存。当前可验证 AI 数据中心主链收入接近零；可验证数据中心持久化/企业存储收入可能是 `$10-17M` 年化区间；真正 AI/edge AI 新产品 UNISYST/D-MRAM 多数仍是 2026H2 样品或更远期路线。
+7. **投资上应把 MRAM 分成三层：** 第一层是 PERSYST 存量产品，贡献几乎全部产品收入、毛利 50%+，稳健但 TAM 小；第二层是 A&D/LEO/FPGA/工业高可靠扩张，受益于美国本土供应与认证，未来 12-24 个月最实；第三层是 UNISYST、D-MRAM、edge AI/FPGA/chiplet，TAM 叙事大但 2027 前收入不宜给过高权重。
+8. **估值已把很多乐观预期提前折现。** 2026-06-11 盘中附近股价约 `$23.58`、市值约 `$544M`；按 TTM revenue 约 `$57.0M` 计算 P/S 约 `9.6x`；Yahoo 2026-06-10 显示 forward P/E `42.37x`，但 trailing GAAP EPS 接近零、trailing P/E 超 `2000x`，因此 trailing P/E 没有分析意义。公司要支撑当前市值，需要从 `$55M` FY2025 收入向管理层 FY2029 `$100M+` 路径兑现，同时证明国防/UNISYST/高密度 STT-MRAM 可以转化为持续订单。
+
+## 1. 公司业务、投资人认知、三年变化和产业链位置
+
+### 1.1 公司整体业务
+
+Everspin 的主营业务是 MRAM 产品和相关 IP/工程服务。MRAM 是磁阻式随机存取存储器，利用磁性隧道结而非电荷存储数据，因此具备非易失、低延迟、高耐久、抗断电、抗辐射/高温等属性。公司的核心产品和收入来源如下：
+
+| 产品/收入层 | 代表产品 | 当前商业状态 | 主要应用 | 2026 投资含义 |
+|---|---|---|---|---|
+| PERSYST Toggle MRAM | Parallel / Serial Toggle MRAM，SRAM/nvSRAM/FRAM 替代 | 已量产多年，是存量产品基座 | 工业控制、博彩/游戏机、医疗、交通、电网、航空航天、日志和配置 | 现金流主力，客户生命周期长，单位 TAM 小 |
+| PERSYST ST-DDR MRAM | 1Gb DDR3/DDR4-like STT-MRAM，IBM FlashCore FCM4 使用 1Gb STT-MRAM | 已进入数据中心持久化小众场景 | SSD/存储控制器断电保护、企业存储缓存、工业 SSD | 数据中心真实暴露，但不是 GPU/HBM 主链 |
+| PERSYST xSPI / EMxxLX | 4-64Mb shipping；HR 64Mb AEC-Q100 Grade 1 完成生产资格；128Mb/256Mb 2026H1-H2 qualification | 高可靠 xSPI 产品正在密度上移 | 工业、汽车、A&D、LEO、FPGA 配置、边缘嵌入式 | 未来 12 个月最现实的产品升级线 |
+| UNISYST | 128Mb-2Gb high-density xSPI STT-MRAM，统一代码和数据存储 | 2026Q4 engineering samples 目标 | edge AI、工业、汽车、航空航天、FPGA/code storage、NOR 替代 | 大 TAM 叙事，2027 前收入很小 |
+| Custom MRAM / IP / Licensing / Foundry / NRE | GF eMRAM license、设计服务、政府/国防工程服务、TMR sensor 相关 | 高波动、项目制 | eMRAM foundry、Mil-Aero、A&D supply chain、传感 | Amentum `$40M` 合同提高收入能见度，但非传统产品销售 |
+| D-MRAM / AgILYST / distributed MRAM for AI | 分布式 MRAM、edge AI、FPGA/chiplet、in-memory compute 路线 | 仍在 development / roadmap | edge AI weight storage、FPGA config、chiplet NVM | 长期期权，不能等同当前 AI 数据中心收入 |
+
+公司一手投资者材料显示：Everspin 有 `20+` 年生产历史、`200M+` MRAM units shipped、`700+` patents & applications、`2,000+` customers；2025 年 10-K 显示 2025 年有 `1,405+` end customers 实际采购，两大终端客户合计占收入 `33%`，客户集中度可控但仍有大客户波动。
+
+### 1.2 投资人心中的公司形象
+
+| 投资人视角 | 核心看法 | 证据和反证 |
+|---|---|---|
+| 多头叙事 | 美国本土 MRAM 稀缺资产；MRAM 是“universal memory”长期候选；A&D/LEO/工业/边缘 AI 需要高可靠 NVM；Microchip 第二来源和 Amentum `$40M` 合同提升可见度；UNISYST 把 TAM 从存量 PERSYST 扩到 NOR/edge AI | 2026Q1 产品销售 `+27.9%`，2026Q2 指引中值 `$16M`；2025 design wins `238`，预计 2026-2027 ramp；PERSYST + UNISYST company TAM 2029 口径超过 `$4.3B` |
+| 空头/怀疑叙事 | MRAM 不是 HBM/DRAM，不会进入 2026 AI GPU 主存；公司年收入仅 `$55M`，AI 数据中心直接收入很小；估值因 memory/AI 热潮提前上修；博彩、工业、A&D 小众市场无法支撑高 AI multiple | 2026-05 Kerrisdale/媒体争议称市场把 MRAM 当作 AI memory 交易存在误解；公司产品分拆显示 Casino Gaming、Industrial、Enterprise、LEO/Mil/Aero/Transportation 为主 |
+| 更平衡的判断 | Everspin 是真实高可靠 MRAM 公司，技术壁垒和客户认证存在；但 AI 受益主要是间接、边缘、控制面、FPGA/config、A&D supply chain，不是 AI DC 中的 HBM/HBM4/CoWoS/网络直接瓶颈 | 项目内行业调研将 eMRAM/STT-MRAM 排在 2026 AI 数据中心主链后段，认为 MRAM 主要在工业、汽车、国防、数据中心持久化小众场景稳步增长 |
+
+### 1.3 最近三年重大变化、转型、收购
+
+Everspin 最近三年没有披露改变公司边界的大型并购；变化主要是产品密度升级、客户认证、制造合作和国防/美国本土供应链强化。
+
+| 时间 | 事件 | 业务含义 |
+|---|---|---|
+| 2024-04 | IBM FlashCore Module 4 采用 Everspin PERSYST 1Gb STT-MRAM，DDR4 interface，读写带宽 `2.7GB/s` | 证明 STT-MRAM 可在企业级存储做 power-loss protection / persistent buffer；这是数据中心真实但小众的收入线 |
+| 2024-08 | 获得 aerospace/defense manufacturing services strategic award，最高约 `$14.6M`、2.5 年 | 强化美国本土 MRAM supply chain 和 A&D 定制/工程服务属性 |
+| 2025-02 | Everspin PERSYST MRAM validated for configuration across Lattice FPGA families | 打开 FPGA 配置、A&D/工业/LEO 稳健场景；客户替换 NOR/flash 的认证路径更清晰 |
+| 2025 全年 | 2025 revenue `$55.2M`，同比 `+9.5%`；product sales `$48.3M`，同比 `+14.5%`；design wins `238` vs 2024 `178` | 业务从 2024 周期低点修复；design wins 是 2026-2027 product sales 领先指标 |
+| 2026-03-05 | HR xSPI STT-MRAM：64Mb 完成 AEC-Q100 Grade 1 qualification；128Mb 预计 2026-05 完成；256Mb 预计 2026-07 完成、H2 volume availability | xSPI density 从 64Mb 扩到 256Mb，面向 high-reliability A&D/auto/industrial；这是近期最可转收入的产品升级 |
+| 2026-03-10 | 推出 UNISYST MRAM，128Mb-2Gb、xSPI 200MHz、read up to 400MB/s、write about 90MB/s、约 400x NOR write speed；Q4 2026 engineering samples | 进入更高密度 code+data unified memory，目标 edge AI / enhanced NOR / FPGA / A&D；当前偏样品和设计导入 |
+| 2026-04-08 | 与 Microchip 签初始 10 年 foundry services agreement，在 Oregon Fab 4 建 copy exact plus MRAM line | 增加美国本土第二来源和 ITAR wafer processing；minimum purchase commitments ramp 至最高 1,300 wafers/q；Toggle/Sensor capacity 预计约 18 个月后，STT flows 约 30 个月后 |
+| 2026-04-24 / 2026Q1 10-Q | 与 Amentum Services 签 U.S. government Microelectronics RDT&E subcontract，aggregate value `$40.0M`，30 个月 | 国防工业客户 domestic Toggle MRAM 研发、工艺和 qualification；对 2026-2028 服务收入有明显贡献，但不是 AI 数据中心产品订单 |
+
+### 1.4 产业链位置
+
+Everspin 位于 **高可靠非易失性存储器 / 嵌入式存储 IP / A&D 与工业控制 NVM / 企业存储持久化缓冲** 这一层。它不是 commodity DRAM、HBM、NAND 或主流 AI 加速器公司。
+
+| 产业链层级 | Everspin 的位置 | 直接上游 | 直接下游 | 议价力 |
+|---|---|---|---|---|
+| MRAM 材料与制造 | Toggle MRAM BEOL 8-inch line；STT-MRAM 与 GF 300mm 合作；Microchip 未来 8-inch second source | GF、Microchip、Chandler/NXP co-located fab、OSAT（Amkor/OSE/GTC/ChipMos/Sigurd UTC） | 工业、A&D、存储、汽车、FPGA、分销商 | 对高可靠小批量强；对大宗存储弱 |
+| 存储产品 | Toggle、ST-DDR、xSPI、UNISYST | wafer / MTJ / packaging / qualification | IBM FlashCore、工业控制、LEO/space、FPGA、casino、medical | design-in 后较强；新客户导入周期长 |
+| IP/License | GF eMRAM license、MRAM/TMR IP | 专利和工艺经验 | Foundry、SoC 客户、A&D | 毛利高但收入波动 |
+| AI 基建映射 | edge AI NVM、FPGA config、数据中心持久化、控制面高可靠存储 | AI/edge workload 对快速非易失小容量存储需求 | edge AI board、storage module、mission-critical controller | 当前小，长期视 UNISYST/D-MRAM 是否量产 |
+
+## 2. 最新股价、估值、盈利质量和资产负债表
+
+### 2.1 市场数据快照
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | `$23.58` | 2026-06-11，web finance quote | 盘中/工具口径；日内会变动 |
+| 市值 | `$544.2M` | 2026-06-11，web finance quote | 用于下文 P/S 估算 |
+| Yahoo market cap | `$536.25M` | Yahoo Finance，2026-06-10 | 与 6/11 盘中差异来自股价波动 |
+| Yahoo enterprise value | `$498.75M` | Yahoo Finance，2026-06-10 | 净现金公司，EV 低于 market cap |
+| TTM revenue | `$57.0M` | FY2025 `$55.202M` - 2025Q1 `$13.138M` + 2026Q1 `$14.872M` | 自算 TTM |
+| P/S | `9.6x` | 2026-06-11 market cap / TTM revenue | 对 `$57M` 收入公司很高 |
+| EV/S | `8.7x` | Yahoo EV / TTM revenue | 反映净现金 |
+| Trailing P/E | `>2,000x`，不具分析意义 | 2026-06-11 finance quote PE `2352x`；TTM net income 近零 | 因 GAAP EPS 接近 `$0.01` |
+| Forward P/E | `42.37x` | Yahoo Finance，2026-06-10 | 基于 sell-side/平台 forward EPS，注意覆盖有限 |
+| P/B | `7.7x` | market cap `$544.2M` / 2026Q1 equity `$70.245M` | 估值主要看未来收入和 IP，而非账面资产 |
+| 最新季度收入增速 | `+13.2%` total revenue；`+27.9%` product sales | 2026Q1 vs 2025Q1 | 产品收入明显好于 license/other |
+| 最新季度 gross margin | `52.7%` | 2026Q1 | 高于 2025Q1 `51.4%`，管理层称 mix/yield 改善 |
+| 最新季度 net margin | `-2.0%` | 2026Q1 net loss `$0.296M` / revenue `$14.872M` | GAAP 小亏 |
+| TTM net margin | 约 `0.5%` | TTM net income 约 `$0.29M` / TTM revenue `$57.0M` | 近似盈亏平衡 |
+
+### 2.2 资产负债表健康度
+
+| 指标 | 2026-03-31 | 2025-12-31 | 变化 | 解释 |
+|---|---:|---:|---:|---|
+| Cash and cash equivalents | `$40.494M` | `$44.450M` | `-$3.956M` | 现金仍充足；后续 Microchip line installation 有 reimbursement obligations |
+| Accounts receivable, net | `$10.164M` | `$8.101M` | `+$2.063M` | 收入和分销商占比上升带来 AR 增加 |
+| Inventory | `$11.255M` | `$10.734M` | `+$0.521M` | 支持需求回暖，库存周转需跟踪 |
+| Total current assets | `$63.724M` | `$65.162M` | `-$1.438M` | 流动性很强 |
+| Total current liabilities | `$11.060M` | `$13.453M` | `-$2.393M` | current ratio `5.8x` |
+| Total assets | `$83.191M` | `$84.609M` | `-$1.418M` | 资产轻 |
+| Total liabilities | `$12.946M` | `$15.692M` | `-$2.746M` | liabilities/assets `15.6%` |
+| Stockholders' equity | `$70.245M` | `$68.917M` | `+$1.328M` | 资本缓冲充足 |
+| Financial debt | `0` | `0` | - | 无金融债，主要是 lease/software/contract obligations |
+
+**财务健康程度判断：健康但规模小。** 资产负债表最强点是净现金和低负债；最大风险是收入小、经营费用刚性、诉讼费用与产品研发投入会让 GAAP 利润大幅波动。公司可以自筹资金执行 Microchip foundry bring-up，但 `$13.95M` installation reimbursement obligations 对 `$40.5M` cash 不是小数，需要跟踪现金消耗和政府/客户付款节奏。
+
+## 3. 最近五次财报对比：收入、订单代理指标、业务结构和 AI 数据中心占比
+
+公司只披露一个 reportable segment，不披露 backlog、bookings、取消率或 lead time。下表将“订单与交期”列改为公开可验证的代理指标：design wins、指引、客户库存、已签合同、制造协议、资格认证阶段和管理层 demand commentary。
+
+| 财报季度（发布日） | 总收入 / YoY | MRAM 产品收入 / YoY | License/royalty/other | Gross margin | GAAP net income | 指引 | 订单/交期/Backlog 代理指标 | 业务收入与 AI 数据中心判断 |
+|---|---:|---:|---:|---:|---:|---|---|---|
+| 2026Q1（2026-04-29） | `$14.872M` / `+13.2%` | `$14.100M` / `+27.9%` | `$0.772M` / `-63.4%` | `52.7%` | `-$0.296M` | 2026Q2 revenue `$15.5-16.5M`；GAAP EPS `-$0.12` to `-$0.07`；不含新 subcontract impact | 管理层称 Industrial Automation、Transportation、Data Center 强；日本客户库存消化；新 `$40M` Amentum subcontract；Microchip 10 年 foundry 协议，最高 `1,300 wafers/q` purchase commitment ramp | 产品收入 `95%`；distributor revenue `90%`；APAC `$9.194M`。AI DC 直接收入未披露，估计仍很小；data center persistent/storage 是真实 niche |
+| 2025Q4（2026-03-04） | `$14.8M` / `+12.1%` | `$13.5M` / `+22.7%` | `$1.3M` / `-40.9%` | `50.8%` | `$1.2M` | 2026Q1 revenue `$14-15M`；GAAP EPS `-$0.03` to `$0.02` | 2025 design wins `238` vs 2024 `178`，预计 2026-2027 ramp；Q4 strength 来自 Data Center、Energy Management、Industrial Automation | FY2025 revenue `$55.2M`，product `$48.3M`，license/other `$6.9M`；公司开始被市场按 AI memory 重估，但实际 AI GPU/HBM 暴露有限 |
+| 2025Q3（2025-11-05） | `$14.1M` / `+16.5%` | `$12.7M` / `+22.1%` | `$1.4M` / `-17.6%` | `51.3%` | `$0.054M` | 2025Q4 revenue `$14-15M`；GAAP EPS `$0.02-0.07` | 管理层称 Low Earth Orbital Satellite、Casino Gaming、Energy Management 应用强 | A&D/LEO 和博彩仍是主要增长源之一；AI DC 不是主驱动 |
+| 2025Q2（2025-08-06） | `$13.2M` / `+24.5%` | `$11.1M` / `+12.1%` | `$2.1M` / `+200%` | `51.3%` | `-$0.7M` | 2025Q3 revenue `$13.5-14.5M`；GAAP EPS `-$0.05` to `$0.00` | 管理层称产品组合和 design wins ramp；未见 tariff impact | license/other 带来季度波动；产品收入仍占大头 |
+| 2025Q1（2025-04-30） | `$13.1M` / `-9.0%` | `$11.0M` / `+0.9%` | `$2.1M` / `-41.7%` | `51.4%` | `-$1.2M` | 2025Q2 revenue `$12.5-13.5M`；GAAP EPS `-$0.05` to `$0.00` | Astro Digital / space design win；Orion xSPI automotive temperature range；semiconductor tariff impact not included | 2025 初仍处恢复期；收入下降主要是 license/other 下滑，产品相对稳 |
+
+### 3.1 最近五个季度的结构性解读
+
+1. **产品收入已连续修复，license/other 波动大。** 2025Q1 到 2026Q1，产品收入从 `$11.0M` 上升到 `$14.1M`，年化 run-rate 从 `$44M` 到 `$56M+`；license/other 从 2025Q1/Q2 的 `$2.1M` 回落到 2026Q1 `$0.8M`，说明当前增长质量主要来自 product mix 而不是一次性 license。
+2. **毛利稳定在 50%-53%，说明公司具备高可靠小批量定价权。** 但 GAAP operating expenses 从 2025Q1 `$8.7M` 到 2026Q1 `$10.6M`，其中 2026Q1 含 litigation costs，使经营杠杆尚未充分释放。
+3. **FY2025 design wins 是最有用的“订单先行指标”。** 238 个 design wins 若在 2026-2027 转量产，能支撑产品收入从 `$55M` run-rate 向 `$70M+` 推进；若 design wins 仍停留小批项目，当前估值会承压。
+4. **数据中心收入要拆成“企业存储持久化”与“AI 数据中心主链”。** IBM FlashCore / ST-DDR4 属于真实数据中心/企业存储；但 GB200/GB300/Rubin/TPU/Trainium/MI400 的主内存层是 HBM/DRAM/SRAM/CXL，不是 Everspin discrete MRAM。
+
+## 4. 2026 指引、业务收入占比和重点产品拆解
+
+### 4.1 2026 最新指引
+
+最新指引是 2026Q2：
+
+| 指引项 | 公司口径 | 研究解读 |
+|---|---:|---|
+| Revenue | `$15.5-16.5M` | 中值 `$16.0M`，较 2026Q1 `$14.872M` 环比 `+7.6%`，较 2025Q2 `$13.2M` 同比约 `+21%` |
+| GAAP net loss per share | `-$0.12` to `-$0.07` | GAAP 受费用、诉讼和投资影响，短期利润低于 non-GAAP |
+| Non-GAAP net income per diluted share | `$0.00-0.03` | 仍接近盈亏平衡 |
+| Subcontract impact | 指引不含 2026-04 宣布的新 subcontract | `$40M` Amentum 可能使 2026H2/2027 服务收入上修，但 timing 取决 milestone |
+
+若 2026H2 每季 revenue 维持 `$16-17M`，FY2026 revenue 可达约 `$63-66M`，同比 FY2025 `$55.2M` 增长 `14-20%`；若 Amentum milestone 提前确认，收入可高于该区间，但毛利/费用结构与产品收入不同。
+
+### 4.2 2025 收入占比和 2026 业务侧重点
+
+公司披露口径不是 GAAP segment，而是投资者材料中的市场和产品拆分。按 FY2025 revenue `$55.2M` 估算：
+
+| 维度 | 公司披露/估算占比 | FY2025 美元贡献估算 | 2026 增长质量 | 备注 |
+|---|---:|---:|---|---|
+| LEO / Mil-Aero / Transportation | `30%` | `$16.6M` | 高 | A&D、LEO、交通/汽车高可靠需求，Amentum 和 Astro Digital/space 线索强化 |
+| Enterprise / Data Center | `30%` | `$16.6M` | 中高 | IBM FlashCore、enterprise storage、数据中心 power-loss protection；AI GPU 主链小 |
+| Industrial Automation | `30%` | `$16.6M` | 中高 | PLC、data logging、energy management、factory automation；2026Q1 管理层明确称强 |
+| Casino Gaming | `10%` | `$5.5M` | 低到中 | 稳定高可靠 NVM，但不是 AI 增长线 |
+| Product sales | FY2025 `$48.3M`，占 `87.5%` | `$48.3M` | 中高 | 2026Q1 product sales `+27.9%` |
+| License/royalty/patent/engineering/other | FY2025 `$6.9M`，占 `12.5%` | `$6.9M` | 高波动 | GF royalty、NRE、government award、Amentum milestone 会带来波动 |
+
+### 4.3 产品和型号：哪些跳过，哪些重点
+
+#### 可以降权/跳过的低增长或非 AI 主线业务
+
+| 跳过/低权重业务 | 为什么降权 | 仍需跟踪的原因 |
+|---|---|---|
+| Casino / lottery / arcade 等博彩设备存量 Toggle MRAM | 稳定但 TAM 小，与 AI 基建无关，增速大概率低 | 高可靠 design-in 生命周期长，现金流好 |
+| 传统低容量 parallel/serial MRAM 存量替换 | 主要替代 BBSRAM/FRAM/nvSRAM，增长依赖长尾客户 | 毛利稳定，客户粘性强 |
+| 通用 TMR sensors | Microchip 协议包含 TMR sensor，但公司披露少，收入贡献不透明 | 若 automotive/industrial sensors 放量可成为小额增量 |
+| License/royalty 非核心 IP 一次性交易 | 季度波动大，不能按线性增长外推 | GF eMRAM royalty 或政府项目可带来高毛利上修 |
+
+#### 重点和突出产品
+
+| 重点产品/业务 | 对应型号/路线 | 当前收入贡献估算 | 2026-2027 关键催化 |
+|---|---|---:|---|
+| PERSYST 存量产品 | Toggle MRAM、ST-DDR MRAM、xSPI STT-MRAM | 几乎全部 product sales；2026Q1 `$14.1M`，年化 `$56M+` | 2025 238 design wins ramp；工业、交通、数据中心需求复苏 |
+| ST-DDR / 1Gb STT-MRAM 数据中心持久化 | EMD4E001G 1Gb STT-MRAM、DDR4-like / ST-DDR4 | 年化估计 `$8-17M`，取决于 Enterprise/Data Center 实际占比 | IBM FlashCore 等企业存储 design-in；power-loss protection 替代 supercap/BBSRAM |
+| HR xSPI / EMxxLX | 64Mb AEC-Q100 Grade 1 qualified；128Mb expected May 2026；256Mb expected July 2026；H2 2026 volume | 当前估计数百万美元年化，增长率高于公司平均 | A&D/LEO/auto/industrial 高密度 persistent memory；客户认证完成后转量产 |
+| UNISYST | 128Mb-2Gb，xSPI 200MHz，400MB/s read、约 90MB/s write、10-year data retention，Q4 2026 samples | 2026 revenue 接近零；2027 样品/early design revenue | edge AI weight/code storage、enhanced NOR replacement、FPGA/LEO/A&D；公司宣称 UNISYST TAM `$3B+` |
+| Amentum / U.S. government subcontract | domestic Toggle MRAM process technology / engineering services，`$40M` aggregate over 30 months | 2026Q2 指引未含；未来 12 个月估计 `$8-16M` recognition 可能性 | 国防供应链、安全本土化、Mil-Aero qualification；对服务收入和 IP 价值有催化 |
+| Microchip foundry capacity | Oregon Fab 4 copy exact plus MRAM/TMR line；max `1,300 wafers/q` purchase commitment ramp | 2026-2027H1 无显著产品收入；短期是 cash/capex pressure | Toggle/Sensor capacity 约 2027H2；STT flows 约 2028H2；改善供给和客户信任 |
+| D-MRAM / AgILYST / distributed MRAM for AI | roadmap：in-memory compute、FPGA config、edge AI、chiplet | 2026 几乎零 | 长期期权，需看到样片、客户和 benchmark；不应计入当前 AI DC 收入 |
+
+## 5. 高增长/关键业务当前贡献、AI 重要性、供需和定价权
+
+评分：1 低、3 中、5 高。收入贡献为研究估算，因公司不披露产品 family revenue，需用 FY2025 product sales、投资者材料 split 和应用信息交叉推断。
+
+| 关键产品/业务 | 当前收入贡献（美元） | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 解释 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| PERSYST 存量产品总体 | 2026Q1 `$14.1M`；年化 `$56M+` | 2026Q1 `+27.9%` YoY | 2 | 4 | 3 | 4 | 公司主要收入；对 AI 主链弱，但对 mission-critical control / storage / industrial 强 |
+| ST-DDR / 企业存储持久化 | 年化估计 `$8-17M` | 中到高 | 2.5 | 3 | 3 | 4 | IBM FlashCore 证明真实 data center use；但 TAM 远小于 HBM/eSSD |
+| HR xSPI / EMxxLX 64-256Mb | 年化估计 `$5-10M` 起步 | 高 | 2 | 4 | 3.5 | 4 | AEC-Q100 Grade 1 和 high-reliability qualification 是关键；A&D/LEO/industrial 切换成本高 |
+| UNISYST 128Mb-2Gb | 2026 当前接近 `$0` | 2027 从零起步 | 3（edge AI）/1（AI DC GPU） | 3 | 2 | 3.5 | 有 edge AI / NOR 替代叙事；Q4 2026 才 samples，短期无订单验证 |
+| Amentum / Gov RDT&E | 合同总额 `$40M`，30 个月；当前 Q1 未计入新合同 | 从零到 `$8-16M`/年可能 | 1.5（AI DC）/4（Mil-Aero） | 5 | 4 | 4 | 明确合同、milestone-based；对 domestic MRAM qualification 极重要 |
+| Microchip capacity | 当前收入 `$0`，未来产能能力潜在数千万美元/年 | 2027H2 后 | 1.5 | 4 | 4 | 4 | 真正提升供给可信度和 second-source；短期是执行风险 |
+| D-MRAM / AI inferencing | 当前 `$0` | 未知 | 4（若成功） | 2 | 1 | 2 | 技术期权，不可计入 2026 收入 |
+
+**最关键判断：** Everspin 当前的“AI 重要性”不在每 GPU/HBM 的 content，而在 edge AI、FPGA 配置、工业控制、A&D/LEO、数据中心存储断电保护这类高可靠小容量 persistent memory。对 2026 AI 基建主链，MRAM 的时间紧急性低；对美国国防/LEO/mission-critical supply chain，时间紧急性高。
+
+## 6. 一年后收入贡献三情景预测
+
+时间窗口：截至 2027-06-11 的滚动 12 个月或年化 run-rate。基准假设 2026Q2 指引兑现、2026H2 产品销售继续温和增长、Amentum milestone 部分确认；乐观假设 design wins 转量产快、xSPI 256Mb qualification 顺利、政府服务收入确认较快；极度乐观假设 UNISYST/HR xSPI 提前拿到 A&D/edge/FPGA 大客户，Amentum 和产品销售同时上修。
+
+| 产品/业务 | 当前贡献 | 2027-06 基准 | 2027-06 乐观 | 2027-06 极度乐观 | AI 基建重要性变化 | 供需/溢价变化 |
+|---|---:|---:|---:|---:|---|---|
+| PERSYST product sales overall | TTM product sales 约 `$51-52M`；Q1 annualized `$56.4M` | `$60-68M` | `$70-82M` | `$85-100M` | AI DC 仍低；data center storage/industrial/A&D 增强 | 若 design wins ramp，GM 维持 `51-55%` |
+| ST-DDR / enterprise storage persistent buffer | 估计 `$8-17M` 年化 | `$10-18M` | `$16-26M` | `$25-40M` | 可能受 AI storage/KV cache 间接拉动，但主用途仍 power-loss/data integrity | IBM/enterprise design-in 带来高切换成本 |
+| HR xSPI / EMxxLX 64-256Mb | 估计 `$5-10M` 年化 | `$8-15M` | `$15-25M` | `$25-40M` | edge/FPGA/A&D 增强，AI DC 主链仍低 | AEC-Q100/space qualification 提供溢价 |
+| UNISYST 128Mb-2Gb | `$0` | `<$1M` 样品/NRE | `$1-3M` | `$3-8M` | edge AI code+weight storage 叙事增强 | 仍需客户验证，2027 前不应假设大规模供不应求 |
+| Amentum / Gov subcontract | 新合同 `$40M` over 30 months | `$8-12M` recognition | `$12-16M` | `$16-20M` | Mil-Aero 重要性高；AI DC 低 | milestone execution 决定收入，毛利可能低于 royalty 高于普通服务 |
+| License / royalty / NRE excluding Amentum | FY2025 `$6.9M`，Q1 `$0.8M` | `$3-6M` | `$6-10M` | `$10-15M` | GF/eMRAM/edge NRE 影响 | 高波动，不能线性 |
+| Total company revenue | TTM `$57.0M` | `$70-82M` | `$85-105M` | `$110-130M` | 公司叙事从 pure niche memory 向 U.S. high-reliability memory/defense/edge AI 扩展 | 极度乐观需要产品和政府服务同时兑现 |
+
+## 7. BOM、每 MW / rack / GPU / optical port 含量、价格传导和认证
+
+### 7.1 BOM 含量：先给结论
+
+Everspin 在 AI 数据中心主计算 rack 的 **每 GPU、每 optical port 直接 content 基本为零**。公开 GB200/GB300/Rubin/TPU/Trainium/MI400 主数据路径不需要 discrete MRAM；主价值在 HBM、SRAM/cache、CXL/DRAM/eSSD、DPU/NIC、光互联和存储系统。Everspin 可能进入的是 **控制面/持久化/存储模块/FPGA 配置/边缘设备**，不是 GPU die 或 HBM stack。
+
+### 7.2 具体 BOM 拆分和真实含量估算
+
+| 应用场景 | Everspin 可能产品 | 单位内容量 | 每 rack / MW / GPU / optical port 映射 | 单位 ASP/价格估算 | 置信度 |
+|---|---|---:|---|---:|---|
+| 主流 AI GPU compute rack（GB200/GB300/Rubin 类） | 默认无 Everspin MRAM | `0` | 每 GPU `0`；每 optical port `0`；每 rack `0` | `$0` | 高 |
+| AI rack 控制板 / FPGA 配置 / 安全日志（若客户采用） | xSPI / Toggle MRAM | `1-8` devices/rack 估算 | 100kW rack：`$20-400/rack`；1MW 约 10 racks：`$200-4,000/MW`，占 rack BOM 极低 | `$5-50/device` 估算 | 低到中：公开未披露具体客户 |
+| 企业存储 / IBM FlashCore / SSD power-loss buffer | 1Gb STT-MRAM / ST-DDR | `1-2` devices/module 估算；IBM FCM4 明确采用 1Gb STT-MRAM | 与 GPU 无直接关系；若每 storage array 24-48 modules，则 `$240-2,400/array` 估算 | `$10-50/module` 估算 | 中：IBM 采用明确，数量和 ASP 未披露 |
+| 工业 SSD / Buffalo industrial SSD | STT-MRAM cache | `1+` devices/SSD | 数据中心冷/热存储不是主要路径；工业可靠 SSD 价值更高 | `$5-50/SSD` 估算 | 中 |
+| LEO / A&D / FPGA configuration | HR xSPI / Toggle / STT-MRAM | 每 board `1-4+` devices | 每 satellite/defense payload 可是数十到数百美元 MRAM content | `$10-100+ / device`，高可靠等级溢价 | 中 |
+| Edge AI embedded system | UNISYST 128Mb-2Gb | 每 board `1` device，替代 NOR + data NVM | 不适合 MW/rack 口径；按 edge device 计 `$10-80/device` 估算 | 取决密度和 qualification | 低：samples Q4 2026 |
+| D-MRAM / chiplet / in-memory compute | D-MRAM/AgILYST | 未量产 | 若成功才可能按 accelerator/chiplet content 计；当前为 `0` | 未知 | 低 |
+
+### 7.3 价格传导链
+
+| 成本/价格环节 | 传导机制 | Everspin 定价能力 |
+|---|---|---|
+| Wafer / MTJ / BEOL process | Toggle 在 8-inch MRAM line；STT 在 GF 300mm；Microchip second source 2027/2028 后改善供给 | 自有工艺/IP 强，但 GF/Microchip capacity 和 yield 是约束 |
+| Qualification / reliability | AEC-Q100 Grade 1、space/radiation、industrial high temperature、long lifecycle | 高可靠客户更看重 qualification 和 supply continuity，价格不完全按 bit 成本 |
+| Customer design-in | MRAM 替代 nvSRAM/FRAM/NOR/DRAM 需要 board、firmware、controller、qualification | 设计导入后切换成本高，生命周期通常多年 |
+| Distributor channel | 2026Q1 distributor revenue `90%`，说明渠道库存和分销折扣影响收入节奏 | 渠道可放大订单，也可能放大库存周期 |
+| End-market system value | 高端工业/航天/数据中心存储模块中 MRAM 占 BOM 很低，但失效成本高 | 小金额高可靠部件易获得溢价 |
+
+### 7.4 当前产能能力和认证阶段
+
+| 产品/产能 | 当前能力 | 认证/采用 | 未来 12 个月要看 |
+|---|---|---|---|
+| Chandler 8-inch Toggle MRAM line | 20 年生产经验，美国本土，ISO 9001:2015 / ISO 14001:2015；co-located at NXP | 现有 Toggle、TMR、foundry services | 是否受 Amentum/Mil-Aero 项目拉动 utilization；是否限制产品交付 |
+| GF 300mm STT-MRAM | STT-MRAM products produced at GF 300mm fabs；JDA 扩至 12nm MRAM development | GF 有 eMRAM license/royalty 关系；Everspin discrete STT 依赖 GF | GF capacity/yield、royalty、12nm/advanced STT milestones |
+| Microchip Oregon Fab 4 | 2026-04 signed；initial 10-year；max purchase commitments 1,300 wafers/q | 建 copy exact plus line；ITAR wafer processing；Toggle/Sensor capacity ~18 months，STT ~30 months | 2027H2 first product shipment；installation cost vs cash |
+| HR xSPI 64/128/256Mb | 64Mb 完成 AEC-Q100 Grade 1；128Mb expected May 2026；256Mb expected July 2026/H2 volume | A&D/auto/industrial/LEO 高可靠 | 128/256 资格是否按期完成；volume availability 和客户订单 |
+| UNISYST | 128Mb-2Gb，planned AEC-Q100 Grade 1，samples Q4 2026 | 目标 edge AI、industrial、auto、A&D | 样品是否按期；是否出现公开 design win |
+| Amentum domestic Toggle MRAM | `$40M` subcontract，30 个月 | U.S. government microelectronics RDT&E / Mil-Aero | milestone recognition、工艺 qualification 进度 |
+
+## 8. 一年后产能、采纳和认证三情景
+
+| 产品/业务 | 当前状态 | 2027-06 基准 | 2027-06 乐观 | 2027-06 极度乐观 |
+|---|---|---|---|---|
+| PERSYST/Toggle existing line | 当前可支撑 `$55-65M` 年化产品销售 | `$65-75M` 销售能力，产能不是主要瓶颈 | `$80-90M`，若 design wins 和渠道补库加速 | `$100M+`，需要 A&D/enterprise/storage 大客户同步 |
+| GF STT-MRAM | 300mm STT 量产，1Gb/DDR、xSPI 相关产品 | 支撑 64/128/256Mb xSPI 出货 | 高密度 xSPI 与 DDR 订单增加，GF 供给仍够 | 若 UNISYST/高密度 STT 提前放量，需额外 allocation |
+| Microchip second-source | 2026-04 启动，18/30 个月 timeline | 2027-06 仍在 bring-up；产品收入贡献很小 | 2027H2 Toggle/Sensor first shipments 可见，客户信心提升 | 少量提前客户样品/qualification，锁定 2028 高可靠订单 |
+| HR xSPI 64/128/256Mb | 64Mb qualified，128/256 qualification 进行中 | 256Mb 完成 qualification 并开始 H2 2026 volume，2027H1 转设计订单 | A&D/LEO/auto 客户批量化，成为 product growth 主线 | 关键客户将 xSPI MRAM 作为 FPGA/config 标准件 |
+| UNISYST | Q4 2026 samples 目标 | 样品与早期评估，收入 `<$1M` | 多个 edge AI / A&D design-ins，收入 `$1-3M` | 一家或多家客户进入 early production，收入 `$3-8M` |
+| Amentum / Mil-Aero | 合同已签 | 30 个月 milestone 稳步执行，未来 12 个月 `$8-12M` | `$12-16M`，且带动其他 defense interest | `$16-20M`，并推动 domestic Toggle MRAM certification 提前 |
+
+## 9. 基于订单积压、产能和供给的未来一年增速推断
+
+Everspin 不披露 backlog/bookings，因此未来一年增速只能用四类公开信号推断：
+
+1. **公司指引：** 2026Q2 revenue `$15.5-16.5M`，中值同比约 `+21%`。
+2. **design wins：** 2025 design wins `238`，较 2024 `178` 增加 `34%`，管理层称预计 2026-2027 ramp。
+3. **合同：** Amentum subcontract `$40M` over 30 months，若线性为约 `$16M/year` revenue opportunity，但实际 milestone timing 不确定。
+4. **供应：** Microchip second source 明确，但 2027H2 前不贡献大规模产品；短期不是供给释放，而是中长期 supply assurance。
+
+### 9.1 未来一年公司级收入增速三情景
+
+| 情景 | 未来 12 个月收入 | 增速 vs TTM `$57.0M` | 推断依据 | 主要反证 |
+|---|---:|---:|---|---|
+| 基准 | `$70-82M` | `+23-44%` | Q2 guide 兑现；PERSYST product `$60-68M`；Amentum `$8-12M`；license/other `$3-6M` | Amentum milestone 延后；产品 Q3/Q4 回落到 `$14-15M` |
+| 乐观 | `$85-105M` | `+49-84%` | 238 design wins 转量产快；xSPI 256Mb qualification 后有 A&D/LEO/auto 订单；Amentum `$12-16M` | 客户仍在 qualification，渠道库存反复 |
+| 极度乐观 | `$110-130M` | `+93-128%` | 产品销售接近 `$90-100M`，Amentum `$16-20M`，UNISYST/HR xSPI early adoption 超预期 | 需要多条线同时兑现，当前证据不足，应视为上沿而非基准 |
+
+### 9.2 订单、取消率和交付窗口推断
+
+| 项目 | 公开证据 | 推断 |
+|---|---|---|
+| Backlog | 未披露 | 不能用 backlog 估值；只能跟踪指引和 design wins |
+| Bookings / B2B | 未披露 | 2026Q2 guide、渠道收入 90%、AR 增加是订单强于去年同期的间接信号 |
+| Lead time | 未披露产品 lead time | 高可靠 qualification 节点可视为“认证 lead time”：128Mb May 2026、256Mb July 2026、UNISYST samples Q4 2026 |
+| Cancellation rate | 未披露 | 工业/A&D/LEO design-in 取消率通常低于消费电子，但缺少公司数据 |
+| 客户项目名 | IBM FlashCore Module 4、Lattice FPGA validation、Astro Digital/space、Amentum subcontract | 真实客户验证存在，但大多不是 hyperscaler AI compute rack |
+| 交付窗口 | Q2 2026 revenue guide；Microchip Toggle/Sensor ~18 months，STT ~30 months；Amentum 2026-04-16 到 2028-11-21 | 2026 产品增长靠现有产线/GF；Microchip 是 2027H2/2028 产能 story |
+
+## 10. 竞争格局、新技术主流性、替代方案和客户切换成本
+
+### 10.1 主要竞争对手
+
+公司 2025 10-K 将竞争分为 Toggle MRAM、STT-MRAM 和未来 MRAM/替代 NVM：
+
+| 领域 | Everspin 竞争对手 | 竞争焦点 |
+|---|---|---|
+| Toggle MRAM / nvSRAM / SRAM / FRAM 替代 | Infineon、Fujitsu、ISSI、Macronix、Microchip、Micron、Renesas、Samsung、Toshiba | 价格/bit、封装、可靠性、长期供货、pin compatibility |
+| STT-MRAM 替代 NOR/DRAM/nvSRAM | SK hynix、Micron、Winbond、Samsung、其他 DRAM/nvSRAM 厂商 | 密度、成本、DDR/xSPI interface、controller 支持 |
+| MRAM 技术开发 | Avalanche、Samsung、GF、TSMC、Intel research、Spin Memory 等 | STT/SOT-MRAM scaling、embedded MRAM、cache 替代 |
+| 其它新型 NVM | ReRAM/RRAM（Weebit、CrossBar 等）、PCM、FeRAM/FRAM、FeFET | 成本、密度、工艺兼容、endurance、temperature |
+| AI 主内存/缓存 | HBM/DRAM/SRAM/CXL/eSSD 生态：SK hynix、Samsung、Micron、TSMC/GF/Samsung Foundry、Marvell/Astera/Rambus 等 | Everspin 当前不直接竞争 HBM；MRAM 仅在边缘/控制/持久化小容量竞争 |
+
+### 10.2 新技术是否会成为主流
+
+| 技术 | 成为主流概率 | 时间 | 对 Everspin 的影响 |
+|---|---:|---|---|
+| Discrete high-reliability MRAM 替代 nvSRAM/FRAM/NOR/小容量 SRAM | 高 | 已发生，继续渗透 | 存量 PERSYST 业务稳健增长 |
+| xSPI high-reliability STT-MRAM 64-256Mb | 中高 | 2026-2027 | A&D/industrial/LEO 最现实增长点 |
+| UNISYST code+data MRAM 替代 enhanced NOR / edge storage | 中 | 2027-2029 | 若样品和客户通过，能打开 `$3B+` 公司宣称 TAM；目前仍需验证 |
+| eMRAM foundry option 替代 eFlash/OTP | 中高 | 2026-2028 | GF/Samsung/TSMC 推动行业接受 MRAM，但也可能把价值留在 foundry/SoC，而不是 Everspin discrete |
+| SOT-MRAM 替代 SRAM/LLC/cache | 低到中 | 2028+ | 长期期权；2026-2027 不应作为收入主线 |
+| MRAM 成为 AI GPU/HBM 主存 | 低 | 2026-2028 很低 | 当前技术/密度/成本/生态均不支持 |
+
+### 10.3 客户替换成本
+
+| 客户类型 | 替换成本 | 原因 |
+|---|---:|---|
+| A&D / LEO / aerospace | 高 | 辐射、温度、qualification、供应链审计、ITAR/国内产能、长期生命周期 |
+| 工业自动化 / 电网 / 医疗 | 中高 | 现场可靠性、长生命周期、认证、重新设计和停机成本 |
+| 企业存储 / FlashCore / SSD controller | 中高 | controller/firmware/qualification、power-loss protection 验证、数据完整性责任 |
+| 博彩/游戏机 | 中 | 认证和平台稳定性强，但增长低 |
+| 通用嵌入式 / 消费类 | 低到中 | 价格敏感，NOR/FRAM/nvSRAM/flash 替代多 |
+| Edge AI 新产品 | 未验证 | UNISYST 是否降低总 BOM 和更新/boot 成本，需要客户实证 |
+
+## 11. 风险、反证指标和后续跟踪
+
+### 11.1 核心风险
+
+1. **AI 叙事过度。** Everspin 当前不是 HBM/DRAM/GPU 主链，公司收入不能跟 AI capex 线性外推。
+2. **估值风险。** P/S 约 `9-10x`、trailing P/E 无意义；若 2026H2 revenue 不能上到 `$17M+/quarter` 或 Amentum revenue 延后，估值会承压。
+3. **产品密度和成本。** MRAM price/bit 高于 NOR/NAND/DRAM；UNISYST 必须证明 total system cost、write speed、reliability 足以抵消价格。
+4. **客户集中和渠道库存。** 两大终端客户 2025 合计 `33%` revenue；2026Q1 distributor revenue `90%`，渠道库存可能放大波动。
+5. **制造执行。** Microchip second source 需要 process transfer、yield ramp、ITAR/qualification；STT flows 约 30 个月后才开始，短期不能解决所有产能/客户要求。
+6. **诉讼。** Avalanche 2026-01 发起 District Court 和 USITC patent disputes，USITC target date 2027-07-06；2026Q1 litigation costs `$1.629M` 已影响 non-GAAP reconciliation。
+7. **竞争和替代。** FRAM/nvSRAM/NOR/RRAM/eMRAM foundry/低功耗 flash/电容断电保护等替代方案持续存在。
+
+### 11.2 反证指标
+
+| 假设 | 要跟踪 | 证伪/下修信号 |
+|---|---|---|
+| 产品收入进入可持续上行 | Quarterly product sales、gross margin、AR/inventory、distributor mix | 产品收入跌回 `$12-13M/q`，毛利跌破 `50%` |
+| 238 design wins 转量产 | 2026Q3/Q4 revenue guide、管理层订单评论 | design wins 不再转化为 revenue，guidance 平 |
+| Amentum `$40M` 合同实质贡献 | 10-Q revenue/other income、contract liabilities、milestone billing | 2026H2 无明显服务收入，或 milestone 延后 |
+| UNISYST 不是 PPT 产品 | Q4 2026 samples、客户名单、AEC qualification、2027 design wins | 样品延期、无公开客户、性能/成本被 NOR/RRAM 压制 |
+| Microchip 扩产可行 | installation spend、process bring-up、first shipment H2 2027 | capex 超预算、qualification 延后、minimum purchase commitments 成负担 |
+| AI/edge AI 暴露真实 | edge AI 客户、FPGA/chiplet design-in、D-MRAM/AgILYST benchmark | 仅有营销语言，无产品订单 |
+
+## 12. 资料来源
+
+### 12.1 项目内行业资料
+
+- `行业调研/AI服务器_存储_芯片/行业调研_片上SRAM、MRAM与近存计算_2026-06-11.md`：用于 MRAM 在 2026 AI 数据中心主链中的位置、eMRAM/STT-MRAM/SOT-MRAM 成熟度、与 HBM/SRAM/CXL/PIM 的比较。
+- `行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md`：用于数据中心存储/KV cache 主线与 Everspin data-center persistent memory 的区分。
+- `行业调研/AI服务器_存储_芯片/行业调研_服务器BMC、MCU与嵌入式控制_2026-06-10.md`：用于 AI rack 控制面与高可靠小容量 NVM 的映射。
+- `行业调研/AI服务器_存储_芯片/行业调研_AI边缘推理芯片_2026-06-11.md`：用于 edge AI 对 code/data storage、fast boot、local update 的需求判断。
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_特种晶圆代工_2026-06-11.md`：用于 eMRAM/FDX、特殊工艺、Microchip/GF/TSMC/Samsung 相关产业位置。
+
+### 12.2 外部一手资料和交叉验证
+
+- Everspin 2026Q1 financial results, 2026-04-29: https://investor.everspin.com/news-releases/news-release-details/everspin-reports-unaudited-first-quarter-2026-financial-results
+- Everspin 2026Q1 Form 10-Q, SEC: https://www.sec.gov/Archives/edgar/data/1438423/000162828026028464/mram-20260331.htm
+- Everspin FY2025 / 2025Q4 financial results, 2026-03-04: https://investor.everspin.com/news-releases/news-release-details/everspin-reports-unaudited-fourth-quarter-and-full-year-2025
+- Everspin 2025 Form 10-K, SEC: https://www.sec.gov/Archives/edgar/data/1438423/000162828026014733/mram-20251231.htm
+- Everspin 2025Q3 financial results, 2025-11-05: https://investor.everspin.com/news-releases/news-release-details/everspin-reports-unaudited-third-quarter-2025-financial-results
+- Everspin 2025Q2 financial results, 2025-08-06: https://investor.everspin.com/news-releases/news-release-details/everspin-reports-unaudited-second-quarter-2025-financial-results
+- Everspin 2025Q1 financial results, 2025-04-30: https://investor.everspin.com/news-releases/news-release-details/everspin-reports-unaudited-first-quarter-2025-financial-results
+- Everspin investor presentation, 2026: https://investor.everspin.com/static-files/114f31fa-b364-4dd0-970f-957f0786e875
+- Everspin-Microchip manufacturing agreement, 2026-04-08: https://www.businesswire.com/news/home/20260408498761/en/Everspin-Technologies-Expands-On-Shore-MRAM-Manufacturing-Capacity
+- Everspin UNISYST launch, 2026-03-10: https://investor.everspin.com/news-releases/news-release-details/everspin-launches-new-generation-unified-memory-embedded-systems
+- Everspin HR xSPI 256Mb qualification milestones, 2026-03-05: https://investor.everspin.com/news-releases/news-release-details/everspin-advances-high-reliability-xspi-mram-portfolio-256mb
+- IBM FlashCore Module 4 with Everspin PERSYST 1Gb STT-MRAM, 2024-04-30: https://investor.everspin.com/news-releases/news-release-details/next-generation-ibm-flashcore-modules-feature-everspins-persyst
+- Everspin storage solutions / ST-DDR / SSD application notes: https://www.everspin.com/storage-solutions
+- Everspin homepage/product highlights, accessed 2026-06-11: https://www.everspin.com/
+- Yahoo Finance MRAM quote, accessed 2026-06-10/11: https://finance.yahoo.com/quote/MRAM/
+- Kerrisdale short report, 2026-05: https://www.kerrisdalecap.com/wp-content/uploads/2026/05/Kerrisdale-Everspin.pdf
+- Business Insider summary of Kerrisdale short thesis, 2026-05-19: https://www.businessinsider.com/memory-stocks-everspin-ai-chips-dram-mram-short-seller-2026-5
+- MRAM Global Innovation Forum 2025 information: https://sites.google.com/view/mramforum
+- Samsung eMRAM roadmap technical blog: https://semiconductor.samsung.com/news-events/tech-blog/developing-the-industrys-most-energy-efficient-next-generation-mram-selected-as-iedm-highlight-paper/
+- GlobalFoundries AutoPro150 eMRAM on FDX platform, 2026-03: https://gf.com/gf-press-release/globalfoundries-announces-availability-of-autopro-150-emram-technology-on-enhanced-fdx-platform-for-advanced-automotive-applications/
+- TSMC MRAM research page: https://research.tsmc.com/english/research/memory/mram/publish-time-1.html
+
+## 13. 最终判断
+
+Everspin 是一个值得跟踪的“小而真”的 MRAM 资产：产品已量产、毛利率稳定在 50%+、客户验证和美国本土供应链价值真实存在，2026 年又出现了 UNISYST、Microchip second source 和 Amentum `$40M` 国防合同三个重要催化。公司短期最强逻辑不是“AI GPU 需要 MRAM”，而是 **A&D/LEO/工业/数据中心持久化/FPGA 配置/edge AI 对高可靠小容量或中容量非易失存储的需求继续扩大**。
+
+但估值层面必须严格分清叙事和收入。当前 MRAM 直接进入每 GPU、每 optical port、每 HBM stack 的内容量基本为零；GB300/Rubin/TPU/Trainium/MI400 的主链机会仍属于 HBM、SRAM/cache、CXL/DRAM/eSSD、网络和先进封装。Everspin 要兑现当前市值，需要证明：2025 的 238 个 design wins 能转化为 `$70M+` 年收入，Amentum 合同能按 milestone 落地，xSPI 128/256Mb 和 UNISYST 能进入真实客户量产，而 Microchip 产能扩张不会变成现金消耗和延迟风险。
+
+未来 12 个月最务实的跟踪顺序是：`2026Q2/Q3 revenue guide -> product sales run-rate -> Amentum milestone revenue -> 128/256Mb qualification and orders -> UNISYST Q4 samples -> Microchip bring-up progress -> customer proof beyond generic AI wording`。若这些连续兑现，MRAM 可以从 `$55M` FY2025 收入小盘成长为 `$80-100M` run-rate 的高可靠存储/国防/edge AI 公司；若产品收入回落或 AI 叙事没有订单支撑，当前估值会明显脆弱。

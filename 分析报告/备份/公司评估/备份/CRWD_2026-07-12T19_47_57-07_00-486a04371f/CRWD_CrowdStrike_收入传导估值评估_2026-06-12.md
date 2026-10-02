@@ -1,0 +1,173 @@
+# 公司收入传导与价值传导评估：CrowdStrike
+
+报告日期：2026-06-12  
+公司代号：CRWD  
+公司名称：CrowdStrike Holdings, Inc.  
+正式输出目录：`分析报告/公司评估/`  
+资料边界：仅使用 `公司调研/`、`行业调研/` 与外部公开一手资料；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、模型比较、公司排序结果或市场定价资料。  
+主口径：NTM，约指从 2026-06-12 起未来 12 个月，近似覆盖 FY2027 Q2-Q4 与 FY2028 Q1。FY2027 全年指引只作为 NTM 桥接锚，不替代 NTM 主表。  
+关键限制：CrowdStrike 不披露产品线收入，官方口径只有 subscription、professional services、ARR、net new ARR、RPO、deferred revenue、backlog、毛利率、现金流和模块采用率；所有产品级收入拆分均为研究估算，不能当作公司披露数据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口。补充口径使用 FY2027 指引、FY2027 Q1 actual、FY2027 ending ARR 指引、RPO/deferred revenue、模块采用率和本地行业需求资料校准。长期 AI 安全、Project QuiltWorks、Pangea/AIDR、AgentWorks 只在乐观、极度乐观或后续跟踪中处理，不替代基准 NTM 收入。
+- 当前收入基准、指引和 run-rate：FY2027 Q1 收入 `13.856亿美元`，同比 `+26%`；subscription revenue `13.209亿美元`，占 `95.3%`；ARR `55.1亿美元`，同比 `+24%`；net new ARR `2.558亿美元`，同比 `+32%`。FY2027 revenue 指引为 `59.147-59.587亿美元`，ending ARR 指引为 `65.317-65.555亿美元`，non-GAAP operating income 指引为 `14.523-14.803亿美元`。Q1 年化 revenue run-rate 约 `55.4亿美元`，ARR run-rate `55.1亿美元`。
+- 重要产品/业务线：Core Endpoint / EDR / XDR / MDR；Cloud Security / CNAPP / CDR；Next-Gen SIEM / LogScale / Onum / Charlotte AI SOC；Identity / Privileged Access / SGNL；Data Security / Browser Security / SaaS Security / Seraphic；AI Security / AIDR / Pangea / Project QuiltWorks；Professional Services / Incident Response / MDR services。
+- NTM 公司收入四情景：悲观 `58.5-61.0亿美元`；基准 `62.5-64.0亿美元`；乐观 `65.5-68.5亿美元`；极度乐观 `71.0-75.0亿美元`。基准来自 FY2027 剩余三季指引约 `45.3-45.7亿美元`，叠加 FY2028 Q1 约 `17.2-18.3亿美元` 的研究估算。
+- 利润或 EBITDA 四情景：本报告不使用 EBITDA 作为主口径，使用 non-GAAP operating income / non-GAAP net income / FCF 方向。基准 NTM non-GAAP operating income 约 `15.5-16.5亿美元`，non-GAAP operating margin 约 `24.5%-25.8%`；FCF margin 维持 `30%+` 的概率较高。GAAP 净利润受 SBC、收购摊销和 July 19 Incident 相关费用影响，无法作为产品级利润传导主锚。
+- 最大传导瓶颈：不是外部安全需求，而是产品需求转成可确认收入的路径。SIEM 迁移、identity/browser 整合、AIDR 计费、云数据处理成本和大客户采购周期决定 CRWD 能把多少 AI-era 安全需求收入化。
+- 最大利润率变量：Next-Gen SIEM/LogScale/Onum 的数据摄取、存储和查询成本；Professional services / MDR 人力占比；SBC 和收购摊销；Microsoft/Palo Alto/Wiz/CyberArk 等竞争导致的折扣。
+- 最大现金流变量：RPO/deferred revenue 转收入、Falcon Flex 续签和 re-flex、data center / cloud infrastructure purchase commitments、July 19 Incident 相关诉讼/客户补偿、SBC 稀释。
+- 可信度：公司层基准为中高；产品级收入拆分为中；AIDR/Pangea/QuiltWorks 的 NTM 收入贡献为低到中；极度乐观情景为低。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Core Endpoint / EDR / XDR / MDR | 估算 ARR `28-32亿美元` | `50%-58%` | 最大历史基座，带动单 agent、多模块和威胁数据网络效应 | A/B：官方 subscription revenue、ARR、模块采用率支撑；产品拆分非披露 | 进入基准，按成熟低双位数至高十几增长处理 | 大客户全平台替换可进入乐观，不作为极度乐观主因 |
+| Cloud Security / CNAPP / CDR | 估算 ARR `6.5-8.5亿美元` | `12%-15%` | 云工作负载、Kubernetes、AI workload 和 GPU cloud 安全控制层 | B/C：官方持续强调 Cloud/CDR，收入不拆分 | 进入基准，但对 Wiz/Palo Alto/Microsoft 竞争做折扣 | 大型 AI cloud / sovereign AI 安全验收成为强制项时进入乐观以上 |
+| Next-Gen SIEM / LogScale / Onum / Charlotte AI SOC | 估算 ARR `6.5-9.0亿美元`；FY2026 Q4 Next-Gen SIEM ending ARR 已披露 `>5.85亿美元` | `12%-16%` | NTM 最大增量候选；替代 legacy SIEM、降低日志成本、支撑 AI SOC | B/C：官方披露 SIEM ARR 下限、Onum 收购、AWS/EY 等合作；产品合并估算非披露 | 进入基准，作为高增长主线；但迁移周期和数据成本限制上限 | 若 Onum 显著降低迁移摩擦并出现更多大单，进入乐观/极度乐观 |
+| Identity / Privileged Access / SGNL | 估算 ARR `4.5-7.0亿美元` | `8%-13%` | AI agent、非人类身份、zero standing privilege 的安全控制点 | C：身份模块存在，SGNL 收购有明确产品路径，收入未拆 | 小比例进入基准；SGNL 增量更多在乐观 | 保险、监管或企业 AI agent 权限治理强制化时上移 |
+| Data Security / Browser Security / SaaS Security / Seraphic | 估算 ARR `2.0-4.0亿美元` | `4%-7%` | SaaS/浏览器/数据流是 GenAI 和 agentic workflow 的泄漏面 | C/D：Data Security 发布、Seraphic 收购；NTM 收入证据较弱 | 保守进入基准，主要作为 attach 与交叉销售 | 企业浏览器 runtime 安全成为独立预算时上移 |
+| AI Security / AIDR / Pangea / Project QuiltWorks | 估算 ARR `0.5-1.5亿美元`，部分服务线索另计 | `1%-3%` | 叙事弹性最大，但商业化仍早 | D/C：Pangea/AIDR 和 QuiltWorks 有产品/生态证据，收入披露不足 | 不作为基准主驱动，只保守纳入小额试点收入 | frontier AI、prompt/agent security 成为强制预算时进入极度乐观上限 |
+| Professional Services / Incident Response / MDR services | FY2027 Q1 professional services `0.648亿美元`，年化约 `2.6亿美元` | `4%-6%` | 增强信任、事故响应、MDR 和 QuiltWorks 服务入口 | A：官方收入和毛利披露 | 进入基准，但利润率折价 | 高端 AI 风险服务规模化可进入乐观，但毛利仍低于软件 |
+
+说明：产品级占比为研究估算，Falcon Flex、多模块 bundle、MDR 和平台数据层存在归因重叠；公司汇总以官方收入、ARR、RPO 和指引校准，不能把各产品高端估算简单相加。
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不评估 CrowdStrike 份额、收入确认或利润率。需求单位使用最能解释该业务的指标：endpoint/server seat、cloud workload、Kubernetes cluster、identity / non-human identity、log volume、SIEM replacement project、browser session、SaaS/data flow、AI prompt / agent interaction、MDR/IR 服务项目。公开资料没有披露可统一加总的全球 seat、log GB 或 AI prompt 基数，因此“绝对变化”以可观察预算/项目/使用强度变化表达，无法可靠量化时明确标注。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Core Endpoint / EDR / XDR / MDR | 企业端点安全已是标配，需求锚是端点/server seat 替换、XDR 平台整合和 MDR 外包；当前预期为成熟市场低双位数至高十几增长 | Endpoint 替换周期拉长，Defender 套件化压价，客户因 July 19 事故提高 rollout 审查 | 端点基座正常续费，多模块 attach 抵消成熟化，MDR 保持稳健 | 大客户平台整合提速，Falcon Flex 促使更多 endpoint + cloud + identity bundle | 端点重新成为 AI security 控制面，企业大规模从单点/Defender 迁移到 Falcon | 公开 seat 基数无法可靠量化；需求强度从低于当前预算约 `5-10pct` 到高于预算 `15pct+` | 基准为符合预期；乐观需平台替换证据 | 支持：模块采用率 6+/7+/8+ 达 `51%/35%/25%`；反证：Microsoft Defender 折扣和事故信任折价 |
+| Cloud Security / CNAPP / CDR | 云工作负载、Kubernetes、容器、cloud identity 和 GPU cloud runtime 风险；AI workload 多云化提升 CDR 需求 | 企业 AI 项目延迟或选择 Wiz/云厂工具，Falcon 云安全只作为 endpoint 附加项 | 云/K8s/AI workload 按当前节奏增长，安全预算随工作负载扩张 | AI cloud、Kubernetes runtime 和 cloud identity 安全进入上线验收清单 | 大型 AI cloud、主权 AI、金融/医疗 AI 强制 CDR/MDR 审计 | workload 数和 cloud account 基数未公开；需求变化以 cloud security 项目和 CDR attach 率表达 | 基准符合；乐观高于当前预期 | 本地行业资料强调安全/审计和多租户隔离是 AI runtime 约束；反证是 Wiz/Palo Alto/Microsoft 分流 |
+| Next-Gen SIEM / LogScale / Onum / Charlotte AI SOC | legacy SIEM 替换、日志成本优化、SOC 自动化、第三方数据 ingest；当前预期为高增长但迁移慢 | 客户保留 Splunk/Sentinel，日志迁移成本和规则迁移拖慢采购 | 以 2-4 个季度迁移周期正常推进，Onum 降低数据 pipeline 摩擦 | Onum 与 Charlotte AI 明显降低 SIEM TCO，EY/AWS/Defender ingest 带动大客户 | 安全数据湖和 AI SOC agent 成为默认架构，SIEM 替换非线性加速 | log volume/TB-day 无公开统一基数；绝对变化体现为 SIEM 替换项目数量和 ingest 数据量高于/低于计划 | 基准符合；乐观和极度乐观高于预期 | 支持：FY2026 Q4 Next-Gen SIEM ARR `>5.85亿美元` 且高增；反证：高频数据存储/查询成本可能压缩 SaaS 毛利 |
+| Identity / Privileged Access / SGNL | 身份威胁、standing privilege、non-human identity、AI agent 权限；当前预期为 identity security 高景气但竞争强 | IAM/PAM 预算继续留在 CyberArk/Okta/SailPoint/Microsoft，SGNL 整合慢 | 身份模块随 Falcon bundle 增长，SGNL 开始进入现有客户 | AI agent / NHI 权限治理成为独立预算，continuous authorization 被更多客户采用 | 监管、保险和大客户安全策略要求 zero standing privilege 覆盖 AI agent | NHI/agent 数量无法可靠量化；需求变化用身份项目、privileged session 和 agent access policy 覆盖率表示 | 基准符合；乐观高于当前预期 | 支持：SGNL 收购有明确路径；反证：传统 IAM/PAM 系统粘性强，CRWD 不是身份系统主账本 |
+| Data Security / Browser Security / SaaS Security / Seraphic | GenAI/SaaS 数据泄漏、浏览器 runtime、SaaS posture、员工和 agent 工作界面 | 客户把 DLP/SSE/浏览器安全预算给 Zscaler/Netskope/Microsoft/Palo Alto | Data Security 和 browser security 作为 Falcon attach 增量，预算稳步形成 | 浏览器 runtime 与 data security 打包，成为 AI/SaaS 防泄漏标准控制 | agentic browser / SaaS agent 成为企业工作流入口，浏览器安全爆发 | browser session、SaaS app 和敏感数据流基数未公开；需求变化以 DLP/SaaS/browser 安全项目表达 | 基准偏保守；乐观需付费客户案例 | 支持：Seraphic/Data Security 产品路径；反证：市场已有 SSE/DLP/enterprise browser 供应商 |
+| AI Security / AIDR / Pangea / Project QuiltWorks | AI prompt、model、agent、tool call、frontier vulnerability 和 shadow AI；当前预期为早期高增长但预算归属未定 | AI 安全停留在试点和咨询，云厂/模型厂内置 guardrail 抢占预算 | 少量高端客户试点进入 subscription/service，收入小但增长快 | OpenAI/Anthropic 生态背书转成付费部署，prompt/agent security 有可重复 playbook | AI 漏洞、prompt injection 或 agent abuse 事件触发强制预算，AIDR 成为企业 AI 上线前必选 | AI prompt/agent interaction 没有公开收入基数；NTM 绝对需求可从低个位数亿美元级试点池到十亿美元级潜在预算，但可信度低 | 基准不提前上调；乐观/极度乐观高于当前预期 | 支持：Pangea/AIDR/QuiltWorks；反证：产品早期、标准未定、计费模型未稳定 |
+| Professional Services / Incident Response / MDR services | Incident response、MDR、Falcon Complete、AI 风险评估和客户上线服务 | 事故响应需求正常但服务价格受竞争影响，专业服务毛利低 | 服务收入随 subscription 增长，作为平台信任和高端入口 | Agentic MDR、QuiltWorks、IR 和大客户迁移服务带动项目增加 | AI 攻击/合规事件造成高端服务需求激增 | 项目数量未披露；绝对需求以服务 revenue 和项目 backlog 近似 | 基准符合；乐观收入可能高于预期但利润弱 | 支持：FY2027 Q1 services revenue 同比 `+23%`；反证：服务 GAAP GM 低，不能把服务收入等同软件利润 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断哪些产品需求能进入 CrowdStrike NTM 收入表，以及当前可收入化基数是多少；不预测增长、不判断利润率。CrowdStrike 订阅收入按合同期 ratably recognized，通常 1-3 年；能参与 AI/security 需求池不等于 NTM 可确认收入。证据等级按收入表可确认性定义：A 为已披露收入/财务指引；B 为 RPO/backlog/合同/明确交付节奏；C 为客户认证、收购、管理层可验证披露；D 为产品发布/早期合作；E 为主题相关。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Core Endpoint / EDR / XDR / MDR | 官方 subscription revenue、ARR `55.1亿美元`、模块采用率；产品估算 ARR `28-32亿美元` | 直接 | 高毛利 subscription，MDR/托管服务拉低部分毛利 | ARR `27-29亿美元` | ARR `28-32亿美元` | ARR `32-35亿美元` | ARR `36-40亿美元` | 基准符合当前预期；悲观低于预期 | A/B | 是 | 最大历史基座已在收入表和 ARR 中 | NTM 主收入基座，不能用 AI 叙事额外加倍 |
+| Cloud Security / CNAPP / CDR | subscription ARR 内含；管理层强调 CDR/Cloud；产品估算 ARR `6.5-8.5亿美元` | 直接 + AI cloud 间接受益 | 软件毛利高，但云数据处理成本较 endpoint 高 | ARR `5.8-6.8亿美元` | ARR `6.5-8.5亿美元` | ARR `9-11亿美元` | ARR `12-16亿美元` | 基准符合；乐观高于当前预期 | B/C | 是，折扣纳入 | 产品线已商业化，但收入不拆分 | NTM 增长业务，估算需保守 |
+| Next-Gen SIEM / LogScale / Onum / Charlotte AI SOC | FY2026 Q4 Next-Gen SIEM ending ARR `>5.85亿美元`；产品估算 ARR `6.5-9.0亿美元` | 直接 | 高毛利潜力，但 log ingest/storage/query 成本是利润约束 | ARR `5.8-7.0亿美元` | ARR `6.5-9.0亿美元` | ARR `10-13亿美元` | ARR `15-20亿美元` | 基准符合；乐观高于当前预期 | B/C | 是，按迁移周期折扣 | 已有 ARR 下限、Onum 收购和客户/渠道证据 | NTM 核心增量，但不能把全部 legacy SIEM TAM 当公司收入 |
+| Identity / Privileged Access / SGNL | subscription ARR 内含；SGNL 收购；产品估算 ARR `4.5-7.0亿美元` | 直接 + AI agent 间接受益 | 软件毛利高，收购摊销影响 GAAP | ARR `4.0-5.2亿美元` | ARR `4.5-7.0亿美元` | ARR `7.5-10亿美元` | ARR `12-15亿美元` | 基准略低于乐观叙事，符合当前可见证据 | C | 是，小比例折扣 | 已有 identity 模块和 SGNL 交易，但收入未拆 | NTM 基准纳入，SGNL 爆发只进乐观以上 |
+| Data Security / Browser Security / SaaS Security / Seraphic | Data Security 发布、Seraphic 收购、subscription 内含；估算 ARR `2.0-4.0亿美元` | 直接 + AI/SaaS 间接受益 | 软件毛利高；整合和渠道成本前置 | ARR `1.5-2.2亿美元` | ARR `2.0-4.0亿美元` | ARR `4.5-7.0亿美元` | ARR `8-12亿美元` | 基准低于产品叙事，符合可确认收入 | C/D | 是，保守小额 | 产品已有，但 Seraphic/浏览器收入证据仍弱 | NTM 辅助增量，不作为基准主驱动 |
+| AI Security / AIDR / Pangea / Project QuiltWorks | Pangea/AIDR、QuiltWorks、OpenAI/Anthropic 生态；估算 ARR `0.5-1.5亿美元` | 直接早期 + 主题/生态间接受益 | 软件毛利潜力高，服务/咨询毛利较低 | ARR `0-0.5亿美元` | ARR `0.5-1.5亿美元` 的小额试点 | ARR `2-4亿美元` | ARR `6-10亿美元` | 基准只承认小额；极度乐观代表 NTM 上限 | D/C | 仅小额进入基准 | 有产品和合作，但缺少规模化收入披露 | 不得把 AI security TAM 直接当 NTM 收入；超额列乐观/附录 |
+| Professional Services / Incident Response / MDR services | FY2027 Q1 services revenue `0.648亿美元`，年化约 `2.6亿美元` | 直接 | 服务毛利低，FY2027 Q1 GAAP services GM 约 `17%` | 年收入 `2.5-3.0亿美元` | 年收入 `3.0-3.8亿美元` | 年收入 `4.0-5.2亿美元` | 年收入 `6.0-8.0亿美元` | 基准符合当前 run-rate | A | 是 | 已在收入表披露 | 可贡献收入和信任，但利润弹性弱于 software |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第三节需求和第四节收入基数出发，估算每个重要产品在 NTM 内能贡献多少收入和利润。由于公司不披露产品级收入/毛利，利润贡献使用“估算毛利贡献/利润率方向”表示，非公司披露 product operating income。Falcon Flex 与多模块 bundle 会造成产品归因重叠，合成到公司层面时以官方总收入、ARR 和指引去重校准。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Core Endpoint / EDR / XDR / MDR | 悲观 | `28.0-30.0亿美元` | 毛利约 `21.5-23.5亿美元`，折扣和客户承诺压低 | 持平到小幅下行 | 低于当前预期 | 端点为最大基座但成熟化 | 保留悲观 | Defender 价格、事故后信任、rollout 审查 |
+| Core Endpoint / EDR / XDR / MDR | 基准 | `30.5-32.5亿美元` | 毛利约 `23.5-25.5亿美元` | 稳定 | 符合当前预期 | ARR、subscription revenue、模块采用率 | 保留基准 | 产品拆分非披露 |
+| Core Endpoint / EDR / XDR / MDR | 乐观 | `33.0-35.5亿美元` | 毛利约 `25.5-28.0亿美元` | 小幅上行 | 高于当前预期 | Falcon Flex、多模块平台采购 | 保留乐观 | 需要大客户平台替换证据 |
+| Core Endpoint / EDR / XDR / MDR | 极度乐观 | `36.5-39.5亿美元` | 毛利约 `28.5-31.5亿美元` | 上行但受折扣限制 | 明显高于预期 | Endpoint 成 AI security 控制面 | 下移为乐观上限 | 成熟大基数难非线性加速 |
+| Cloud Security / CNAPP / CDR | 悲观 | `6.5-7.8亿美元` | 毛利约 `4.8-6.0亿美元` | 下行或持平 | 低于预期 | 云安全商业化但竞争强 | 保留悲观 | Wiz/Prisma/Microsoft 分流 |
+| Cloud Security / CNAPP / CDR | 基准 | `8.0-9.5亿美元` | 毛利约 `6.0-7.5亿美元` | 稳定 | 符合当前预期 | 云/K8s/AI workload 安全需求 | 保留基准 | 云数据处理成本 |
+| Cloud Security / CNAPP / CDR | 乐观 | `10.0-12.0亿美元` | 毛利约 `7.7-9.5亿美元` | 小幅上行 | 高于预期 | CDR 进入 AI workload 验收 | 保留乐观 | 需客户案例和 win rate |
+| Cloud Security / CNAPP / CDR | 极度乐观 | `13.0-16.0亿美元` | 毛利约 `10.0-12.8亿美元` | 上行 | 明显高于预期 | 主权 AI / AI cloud 强制 CDR | 下移为乐观上限 | 云厂原生工具可能内置 |
+| Next-Gen SIEM / LogScale / Onum / Charlotte AI SOC | 悲观 | `6.5-8.0亿美元` | 毛利约 `4.7-6.2亿美元` | 下行 | 低于预期 | SIEM ARR 基座存在 | 保留悲观 | 迁移慢、日志成本高 |
+| Next-Gen SIEM / LogScale / Onum / Charlotte AI SOC | 基准 | `8.5-10.5亿美元` | 毛利约 `6.3-8.3亿美元` | 持平到小幅上行 | 符合当前预期 | Next-Gen SIEM ARR、Onum、Charlotte AI | 保留基准 | 数据成本和生态兼容 |
+| Next-Gen SIEM / LogScale / Onum / Charlotte AI SOC | 乐观 | `11.5-14.5亿美元` | 毛利约 `8.8-11.8亿美元` | 上行 | 高于预期 | Onum 降低 data tax，Falcon 数据面增强 | 保留乐观 | 需大客户迁移转收入 |
+| Next-Gen SIEM / LogScale / Onum / Charlotte AI SOC | 极度乐观 | `16.5-21.0亿美元` | 毛利约 `12.8-17.0亿美元` | 明显上行 | 非线性高于预期 | AI SOC 数据湖成为默认 | 下移为乐观上限 | LogScale/Onum 云成本可能吞噬利润 |
+| Identity / Privileged Access / SGNL | 悲观 | `4.8-6.0亿美元` | 毛利约 `3.7-4.8亿美元` | 持平 | 低于预期 | 身份模块存在但竞争强 | 保留悲观 | CyberArk/Okta/SailPoint/Microsoft 粘性 |
+| Identity / Privileged Access / SGNL | 基准 | `6.2-8.2亿美元` | 毛利约 `4.9-6.7亿美元` | 稳定 | 符合当前预期 | SGNL 路径清楚，bundle attach | 保留基准 | 收入未拆，整合需时间 |
+| Identity / Privileged Access / SGNL | 乐观 | `9.0-11.5亿美元` | 毛利约 `7.2-9.5亿美元` | 上行 | 高于预期 | AI agent/NHI 权限成为预算线 | 保留乐观 | 需证明不是传统 IAM 替代失败 |
+| Identity / Privileged Access / SGNL | 极度乐观 | `13.5-17.0亿美元` | 毛利约 `10.8-14.2亿美元` | 明显上行 | 明显高于预期 | zero standing privilege 强制化 | 下移 | NTM 内监管/保险强制化证据不足 |
+| Data Security / Browser Security / SaaS Security / Seraphic | 悲观 | `1.8-2.8亿美元` | 毛利约 `1.3-2.2亿美元` | 下行到持平 | 低于预期 | 产品发布但收入证据弱 | 保留悲观 | DLP/SSE/浏览器供应商分流 |
+| Data Security / Browser Security / SaaS Security / Seraphic | 基准 | `3.0-4.8亿美元` | 毛利约 `2.3-3.9亿美元` | 持平 | 符合保守预期 | Data Security、Seraphic、SaaS posture | 保留基准 | 整合和渠道时间 |
+| Data Security / Browser Security / SaaS Security / Seraphic | 乐观 | `5.5-8.0亿美元` | 毛利约 `4.3-6.6亿美元` | 上行 | 高于预期 | browser runtime + data security attach | 保留乐观 | 需明确付费客户和 bundle 披露 |
+| Data Security / Browser Security / SaaS Security / Seraphic | 极度乐观 | `9.5-13.0亿美元` | 毛利约 `7.6-10.8亿美元` | 上行 | 明显高于预期 | agentic browser 成工作入口 | 下移为附录跟踪 | NTM 时间表不足 |
+| AI Security / AIDR / Pangea / Project QuiltWorks | 悲观 | `0.3-0.8亿美元` | 毛利/服务混合约 `0.1-0.5亿美元` | 不稳定 | 低于叙事预期 | 早期产品 | 保留悲观 | 试点不转规模收入 |
+| AI Security / AIDR / Pangea / Project QuiltWorks | 基准 | `0.8-2.0亿美元` | 毛利/服务混合约 `0.4-1.3亿美元` | 持平到小幅上行 | 小额符合预期 | Pangea/AIDR/QuiltWorks 已有产品生态 | 保留小额基准 | D/C 级证据，未披露 ARR |
+| AI Security / AIDR / Pangea / Project QuiltWorks | 乐观 | `2.5-4.5亿美元` | 毛利/服务混合约 `1.5-3.3亿美元` | 上行但服务拖累 | 高于预期 | OpenAI/Anthropic 生态转付费 | 保留乐观 | 预算归属未定 |
+| AI Security / AIDR / Pangea / Project QuiltWorks | 极度乐观 | `6.0-9.5亿美元` | 毛利/服务混合约 `4.0-7.5亿美元` | 上行 | 极高于预期 | AI security 强制预算爆发 | 移入附录/仅作跟踪 | 缺客户、价格和收入确认披露 |
+| Professional Services / Incident Response / MDR services | 悲观 | `2.6-3.0亿美元` | 毛利约 `0.4-0.7亿美元` | 下行 | 低于预期 | services revenue A 级 | 保留悲观 | 服务毛利低，人力成本高 |
+| Professional Services / Incident Response / MDR services | 基准 | `3.1-3.8亿美元` | 毛利约 `0.6-1.0亿美元` | 持平 | 符合预期 | FY2027 Q1 services `+23%` | 保留基准 | 不能把服务收入当软件利润 |
+| Professional Services / Incident Response / MDR services | 乐观 | `4.0-5.2亿美元` | 毛利约 `0.9-1.5亿美元` | 小幅上行 | 高于预期 | Agentic MDR、QuiltWorks、高端 IR | 保留乐观 | 专业服务扩张需人力 |
+| Professional Services / Incident Response / MDR services | 极度乐观 | `6.0-8.0亿美元` | 毛利约 `1.5-2.6亿美元` | 上行有限 | 明显高于预期 | AI 风险事件驱动咨询/IR | 下移 | 收入高不代表利润高 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、non-GAAP net income 和自由现金流方向，不讨论市场定价。公司层面先用官方 FY2027 指引、FY2027 Q1 actual、ARR/RPO/deferred revenue 和 current run-rate 校准，再把产品超额贡献作为上修/下修因素。已检查产品之间的 bundle 重叠、Falcon Flex 归因重叠、services 和 subscription 口径差异、一次性事故费用、收购摊销和云数据成本。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `58.5-61.0亿美元` | 较 TTM 约 `+15%-20%` | 低于 FY2027 指引桥接和当前 ARR/run-rate；约低于基准 `4%-8%` | GAAP 总 GM `74%-75%`；订阅 GM 约 `77%-78%` | non-GAAP OPM `21%-23%` | EBITDA 未作为主口径；non-GAAP net income 约 `11.5-13.0亿美元`；GAAP 净利无法可靠量化 | FCF margin 降至 `24%-28%`，但仍为正 | 中 | SIEM 迁移慢、Microsoft 套件化压价、July 19 相关成本、services mix 上升 |
+| 基准公司 | `62.5-64.0亿美元` | 较 TTM 约 `+23%-26%` | 符合 FY2027 上调后指引、RPO 转化、ARR `65.3-65.6亿美元` 年末路径和 Q1 record net new ARR | GAAP 总 GM `75%-77%`；订阅 GM `78%-81%` | non-GAAP OPM `24.5%-25.8%` | EBITDA 未作为主口径；non-GAAP operating income `15.5-16.5亿美元`，non-GAAP net income `13.5-14.5亿美元` | FCF margin `30%+`；经营现金流强 | 中高 | 产品级拆分不披露，需靠 ARR/RPO 和模块采用率校准；SIEM 数据成本约束利润 |
+| 乐观公司 | `65.5-68.5亿美元` | 较 TTM 约 `+29%-35%` | 高于当前预期约 `4%-8%`；需 FY2027 net new ARR 超指引、SIEM/identity/cloud 同时增强 | GAAP 总 GM `76%-78%`；subscription mix 更高 | non-GAAP OPM `25.5%-28.0%` | non-GAAP operating income `17.0-19.0亿美元`，non-GAAP net income `15.0-17.0亿美元` | FCF margin `31%-34%`，deferred revenue 和 Flex 支撑现金 | 中 | 乐观必须来自 SIEM、cloud、identity 多线，而不是单一 AIDR 小基数 |
+| 极度乐观公司 | `71.0-75.0亿美元` | 较 TTM 约 `+39%-47%` | 显著高于当前预期约 `12%-18%`；要求需求、公司捕获、利润和执行同时突破 | GAAP 总 GM `77%-79%`，需数据成本受控 | non-GAAP OPM `28%-32%` | non-GAAP operating income `20.0-24.0亿美元`，non-GAAP net income `18.5-22.0亿美元` | FCF margin `34%-38%`，接近长期目标 | 低 | 需要 Next-Gen SIEM 非线性、identity/AI agent 强制预算、AIDR 规模付费、竞争折扣不扩大；任一环节缺证据即下移 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景：保留、上移、下移、排除、移入附录、仅作跟踪。正向证据必须说明提升的是需求、收入基数、产品贡献、公司利润还是执行可信度；反证只限制它实际影响的层级，不重复惩罚。市场价格、估值倍数和股价表现不作为经营价值传导证据。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2027 Q1 actual：revenue `13.856亿美元`、ARR `55.1亿美元`、net new ARR `2.558亿美元` | 收入基数 / 公司汇总 | 支撑基准 NTM revenue `62.5-64.0亿美元` | Q1 non-GAAP OPM `23.5%` 支撑基准利润率 | Q1 FCF `4.685亿美元` 支撑现金质量 | 基准保留，悲观不因需求好转而排除 |
+| FY2027 指引上修：revenue `59.147-59.587亿美元`、ending ARR `65.317-65.555亿美元` | 公司汇总 / 执行可信度 | 提供 FY2027 剩余三季收入桥接 | non-GAAP OPM 指引中值约 `24.7%` | 公司预计 FY2027 FCF margin 至少 `30%` | 基准保留，乐观需继续超指引 |
+| RPO `88亿美元`、52% 预计 12 个月内确认，deferred revenue `47亿美元` | 收入基数 / 可确认性 | A/B 级可见性强，支持订阅收入 | 预收款模型降低营运资本压力 | 转收入节奏是执行关键 | 基准保留；若转化慢，下移到悲观 |
+| 模块采用率 6+/7+/8+ 为 `51%/35%/25%` | 产品贡献 / 公司组合 | 支撑多模块交叉销售和 Falcon Flex | 高毛利模块 mix 改善 | 降低 churn、提高 re-flex 机会 | 基准保留，乐观需继续上升 |
+| Next-Gen SIEM ARR 下限、Onum 数据 pipeline、Charlotte AI SOC | 产品贡献 / 利润率 | 最大高增长产品线；乐观收入弹性明确 | 数据成本既可能优化，也可能拖累 GM | SIEM 迁移周期 2-4 个季度 | 基准保留；极度乐观下移为乐观上限 |
+| SGNL、Seraphic、Pangea 收购 | 产品需求 / 收入基数 | 支撑 identity、browser、AIDR 产品线，但收入尚未完全披露 | 收购摊销压低 GAAP；subscription 毛利潜力高 | 整合、包装和销售 enablement 是执行变量 | 小额进基准；超额进乐观或附录 |
+| Project QuiltWorks、OpenAI/Anthropic、AgentWorks 生态 | 需求 / 执行可信度 | 提升 AI security 需求可信度，不等于 NTM revenue | 服务/咨询和早期模块利润率不稳定 | 需证明可重复付费部署 | 乐观保留；极度乐观移入附录/仅作跟踪 |
+| Microsoft Defender/Sentinel、Palo Alto、Wiz、CyberArk/Okta 等竞争 | 公司捕获 / 价格 | 限制份额和 ASP，不否定行业需求 | 折扣扩大、bundle 竞争压低利润率 | 大客户采购周期拉长 | 只在第三步/第四步处理，不重复压低需求层 |
+| July 19 Incident 后续诉讼、客户承诺和信任修复 | 执行 / 现金流 | 影响 retention 和新单审批，不直接影响外部需求 | 相关费用和补偿可能压低 GAAP/FCF | 诉讼损失仍有不确定性 | 作为悲观触发，不重复惩罚所有产品 |
+| SBC、收购摊销和云基础设施采购承诺 | 利润 / 现金流 | 不直接影响收入 | GAAP 盈利质量和 FCF 留存受影响 | data center / cloud capacity purchase commitments 需现金覆盖 | 基准利润不自动扩张；乐观需 FCF 同步改善 |
+| Professional services 低毛利 | 公司组合 | 可增加收入和客户入口 | 服务 GM 低，不能按软件毛利处理 | 人力交付影响规模化 | 收入保留，利润贡献折扣 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM revenue `58.5-61.0亿美元`，non-GAAP OPM `21%-23%` | RPO/deferred revenue 和 ARR 基座使收入不易断崖 | Microsoft 压价、SIEM 迁移慢、July 19 成本、services mix 上升 | 保留 | 经营低于当前预期情景 | 中 | July 19 只在 retention/现金流处理，不再重复压低行业需求 |
+| 基准 | NTM revenue `62.5-64.0亿美元`，non-GAAP OPM `24.5%-25.8%` | FY2027 指引上修、Q1 record net new ARR、模块采用率、RPO 52% 12个月转化 | 产品级收入不披露，Cloud/SIEM/Identity 需估算 | 保留 | 最可能经营情景 | 中高 | 产品拆分不披露只影响产品归因，不重复惩罚公司总收入 |
+| 乐观 | NTM revenue `65.5-68.5亿美元`，non-GAAP OPM `25.5%-28.0%` | SIEM/Onum、Cloud/CDR、Identity/SGNL、Falcon Flex 同时增强 | 竞争、迁移周期和数据成本限制利润留存 | 保留 | 有证据的超预期情景 | 中 | 竞争风险只在份额/价格处理，不再重复压低产品需求 |
+| 极度乐观 | NTM revenue `71.0-75.0亿美元`，non-GAAP OPM `28%-32%` | AI agent、AIDR、QuiltWorks、SIEM 数据湖若同时突破可形成上限 | AIDR/Pangea/QuiltWorks 缺少规模 ARR 披露，SGNL/Seraphic 整合时间短 | 下移 | 乐观上限；AIDR/QuiltWorks 超额部分移入附录跟踪 | 低 | AI security 早期证据不足只限制极度乐观，不重复下调基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM revenue `62.5-64.0亿美元`，较 TTM 约 `+23%-26%`；non-GAAP operating margin 约 `24.5%-25.8%`；FCF margin 大概率保持 `30%+`。这代表 FY2027 上调后指引正常兑现，并假设 FY2028 Q1 延续 ARR `20%+` 增长。
+- NTM 收入结论：CRWD 的收入传导主线是 `ARR/RPO/deferred revenue -> subscription revenue -> Falcon Flex/multi-module expansion`。当前可确认收入基数强，悲观情景也更像“低于当前高预期的增长放缓”，不是收入收缩。最重要的新增收入来自 Next-Gen SIEM、Cloud Security/CDR、Identity/SGNL 和 Data/Browser attach；AIDR/Pangea/QuiltWorks 目前不应成为基准主驱动。
+- 利润/现金流结论：subscription gross margin 和预收款模型支撑高 FCF，但利润传导不是自动的。SIEM/log 数据成本、MDR/IR 服务 mix、SBC、收购摊销、cloud/data center purchase commitments 和 July 19 相关费用决定收入能否留下来。基准假设 non-GAAP 利润正常兑现；GAAP 净利润质量仍需观察。
+- 主要传导瓶颈：第一是可收入化路径，尤其 AI security、browser 和 identity 新品从发布/收购到 ARR 的时间；第二是 SIEM 迁移和数据成本；第三是 Microsoft/Palo Alto/Wiz/CyberArk 等平台竞争下的份额和折扣；第四是事故后客户信任和法律尾部风险。
+- 乐观情景成立条件：FY2027 Q2-Q4 net new ARR 同比持续 `25%-35%+`；FY2027 ending ARR 超过 `65.6亿美元` 指引上沿；Next-Gen SIEM 客户/ARR 或数据量继续量化披露；Falcon Flex ARR 和 re-flex 继续高增；Cloud/CDR 与 Identity/SGNL 出现大客户标准化部署；FCF margin 不因云数据成本和 services mix 下滑。
+- 极度乐观情景成立条件：Next-Gen SIEM/Onum、Identity/SGNL、Cloud/CDR 和 AIDR/Pangea 同时突破；AI agent / non-human identity 安全成为强制预算；AIDR 从试点转成可重复订阅；Microsoft 套件化没有明显侵蚀 win rate；数据成本被 Onum/LogScale 架构有效压住；non-GAAP OPM 接近长期 `28%-32%` 目标区间。
+- 悲观情景触发条件：Q2/Q3 ARR 指引只维持或下修；net new ARR 同比跌回 `10%-15%`；gross retention 低于 `95%` 或管理层不再强调 retention 强；SIEM 大客户迁移停滞；Defender/Sentinel 或 Palo Alto XSIAM 在大客户明显赢单；July 19 相关诉讼出现大额和解；SBC/收入比长期维持 `20%+` 且 FCF margin 低于 `25%-28%`。
+- 后续跟踪数据：季度 revenue、subscription revenue、ARR、net new ARR、RPO 12个月转化比例、deferred revenue、Falcon Flex ARR/customers/re-flex、6+/7+/8+ 模块采用率、Next-Gen SIEM ARR/客户数、Cloud/CDR 大客户、Identity/SGNL 和 Seraphic bundle 进展、AIDR/QuiltWorks 付费客户、gross retention/net retention、subscription GM、services GM、non-GAAP OPM、FCF margin、SBC/收入比、July 19 相关费用和法律进展。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新财务数据为 FY2027 Q1，截至 2026-04-30，2026-06-03 earnings release，2026-06-04 10-Q；本地行业资料日期为 2026-06-11；报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - CrowdStrike FY2027 Q1 earnings release：`https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-first-quarter-fiscal-year-2027-financial`
+  - CrowdStrike FY2027 Q1 Form 10-Q：`https://www.sec.gov/Archives/edgar/data/1535527/000153552726000025/crwd-20260430.htm`
+  - CrowdStrike FY2026 Q4/FY2026 earnings release：`https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-fourth-quarter-and-fiscal-year-2026`
+  - CrowdStrike FY2027 Q1 investor presentation：`https://ir.crowdstrike.com/static-files/f774ef12-cf94-48bf-ace2-c7f3dcf8ec97`
+- 产品、收购和生态来源：
+  - SGNL acquisition：`https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-acquire-sgnl-transform-identity-security-ai-era/`
+  - Seraphic acquisition：`https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-acquire-seraphic-turning-any-browser-secure/`
+  - Onum acquisition：`https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-agrees-acquire-onum-supercharge-falcon-next-gen-siem/`
+  - Pangea/AIDR acquisition：`https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-acquire-pangea-secure-every-layer-enterprise-ai/`
+  - CrowdStrike AIDR product/blog explanation：`https://www.crowdstrike.com/en-us/blog/crowdstrike-to-acquire-pangea/`
+  - CrowdStrike 2026 Global Threat Report announcement：`https://ir.crowdstrike.com/news-releases/news-release-details/2026-crowdstrike-global-threat-report-ai-accelerates-adversaries`
+- 项目内本地资料：
+  - `公司调研/云算力_IDC_AI软件平台/CRWD_CrowdStrike_公司调研_2026-06-11.md`
+  - `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+  - `行业调研/产业背景/全球AI需求与Token经济框架_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AI Fabric网络操作系统与遥测软件_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 revenue `48.1亿美元`，同比约 `+22%`，用于 TTM 桥接，不作为 NTM 主表替代。
+  - FY2027 revenue 指引 `59.147-59.587亿美元`，ending ARR 指引 `65.317-65.555亿美元`，用于 NTM 前三季可见收入和 FY2028 Q1 run-rate 推算。
+  - 公司长期目标、FY2036 ARR 目标、AIDR/QuiltWorks 长期期权不进入 NTM 基准收入；只作为乐观、极度乐观或后续跟踪。
+- 主要来源：
+  - 官方财报和 SEC 文件优先级最高；产品收购公告用于 C/D 级证据；本地行业资料用于需求层和口径校准；未使用金融市场价格、估值倍数、目标价、股票评级或公司排序作为经营价值传导证据。

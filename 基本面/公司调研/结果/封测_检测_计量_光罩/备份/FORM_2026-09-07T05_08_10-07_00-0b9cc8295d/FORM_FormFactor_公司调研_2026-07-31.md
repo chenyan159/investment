@@ -1,0 +1,475 @@
+# 公司：FORM FormFactor 全面尽调（2026-07-31）
+
+> 研究日期：2026-07-31。最新已披露季度为截至 2026-06-27 的 FY2026 Q2，财报发布于 2026-07-29。除明确标注外，金额均为美元。行情为 2026-07-31 15:41 ET 的盘中快照。  
+> 研究边界：项目内只调用 `基本面/行业调研/` 的相关产业资料；没有调用其他目录、旧公司报告或公司索引，也没有修改公司索引。联网资料优先采用 SEC、公司财报/投资者日、产品页、客户或竞争对手资料及产业会议材料。  
+> 证据标记：**[披露]**＝公司/SEC 直接披露；**[推算]**＝由披露数据交叉计算；**[估算]**＝研究模型区间；**[情景]**＝并非公司指引。凡公司没有披露 backlog、产品收入、ASP、产能美元值或取消率之处，均不会把渠道可见度写成确定订单。
+
+## 核心结论先行
+
+1. **业务本质。** FormFactor 是半导体测试接口与晶圆级测试系统供应商，FY2026 Q2 的探针卡收入为 **$209.7m、占 81.2%**，系统收入 **$48.5m、占 18.8%**。它卖的不是芯片，而是连接晶圆与 ATE 的定制探针卡、探针台/低温与硅光测试系统，以及校准、软件和服务。AI 带来的价值不是简单的 GPU 出货乘数，而是 **更多裸片/堆叠层、更高 I/O 速率、更大电流、更细 pitch、更多测试插入和更高良率损失成本**。
+2. **近期增长的三根主轴。** 一是 HBM：Q2 DRAM 收入 $85.0m，其中约 **2/3，即约 $56.7m** 来自 HBM；二是数据中心 CPU、交换/网络 ASIC 推动 Foundry & Logic（F&L）至 **$121.8m**；三是 CPO 带动 Systems 环比增长 **73.8%**。Q2 总收入 **$258.2m，同比 +31.9%、环比 +14.2%**，Q3 指引中点进一步升至 **$270m**。[Q2 财报](https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-second-quarter-results)；[Q2 电话会](https://stockanalysis.com/stocks/form/transcripts/657372-q2-2026/)
+3. **真正的“期权”而非当前主体。** GPU Apollo 高级 MEMS 卡已完成资格并于 Q3'26 开始生产出货，但 Q2 对台积电这一 10% 客户尚无 GPU 收入；定制 ASIC/XPU 在 2026 年仍小、管理层预期 2027 年才显著；CPO 2026 年收入虽预计显著高于 $20m，但相对公司仍小。这些业务决定 2027 年份额上行，而不是解释全部 Q2 收入。
+4. **供应与毛利。** 现有工厂已经把约 $850m 的旧产能认知提升到 Q3 指引中点对应的 **$1.08bn 年化收入**。Farmers Branch 新厂计划 2026 年末开始资格/生产、2027 年爬坡、2028 年初达到第一阶段目标；它解决的是 2027–2028 年约束，不会在 2026 年下半年瞬间翻倍产能。Q2 非 GAAP 毛利率 **53.3%** 中约三分之一环比改善来自关税退款和贵金属等非经常因素，管理层给出的可持续化水平更接近 **约 51%**，不宜直接外推 53.3%。
+5. **订单证据要降温。** FORM 明确表示其大部分具体设计采购单仍在一个季度内，2025 年 10-K 还写明公司没有足以覆盖季度收入目标的 backlog。客户会给约六个月原材料/产能预测，产业渠道则称探针卡可见度从一季延至两年；两者并不矛盾：后者是项目/晶圆计划可见度，前者才是可执行订单。因此本文对未来一年的基准/乐观/极度乐观收入增速采用 **约 +20% / +40% / +65% 的 Q3'27 年化退出率情景**，同时对预测需求施加 10–15% / 5–8% / 2–4% 的推迟或不转单折扣。
+6. **资产负债表很强，估值很贵。** Q2 现金与有价证券 **$345.6m**，含租赁总债务约 **$29.9m**，净现金 **$315.7m**；流动比率 **4.08x**、速动比率 **3.05x**。但盘中价约 **$108.25** 对应市值约 **$8.44bn**、TTM P/E **74.8x**、NTM forward P/E **31.4x**、P/S **9.29x**。股价已在定价 HBM 份额、GPU/ASIC 资格转量、CPO 量产和 Texas 爬坡同时成功，任何一个兑现延迟都会产生估值压缩。
+
+## 1. 公司整体业务、投资者定位、三年变动与财务健康度
+
+### 1.1 业务地图与产业链位置
+
+FormFactor 位于“**芯片设计/晶圆制造 → 晶圆测试 → 先进封装 → 最终测试**”之间的晶圆测试接口层：
+
+`芯片设计规格/Pad map → ATE 测试机 → FORM 探针卡或测试系统 → Foundry/IDM/OSAT 量产 → 已知良品裸片/堆叠/封装`
+
+其产品贯穿研发到量产，但收入以量产探针卡为主：
+
+| 业务/会计分类 | Q2'26 收入 | 占比 | 主要产品 | 买方与用途 | AI 相关性 |
+|---|---:|---:|---|---|---|
+| Foundry & Logic 探针卡 | $121.8m | 47.2% | Apollo、Pyramid、RF/高频与微凸点方案 | Foundry、IDM、Fabless 的 CPU、GPU、交换 ASIC、移动/PC/汽车芯片晶圆测试 | **高**；当前由数据中心 CPU/网络驱动，GPU/ASIC 为增量份额 |
+| DRAM 探针卡 | $85.0m | 32.9% | SmartMatrix、IntelliFusion、Altius 等 | SK hynix、Samsung、Micron 等 DRAM/HBM 厂商的 core die、stack/final、DDR 测试 | **很高**；HBM 约 $56.7m、占公司 22.0% |
+| Flash 探针卡 | $2.9m | 1.1% | NAND/Flash 探针卡 | 存储厂商 | 低且正在收缩 |
+| Systems | $48.5m | 18.8% | CM300xi、Triton、Pharos/Keystone 光探针、IQ2000/3000、低温/可靠性系统、Velox 软件 | 硅光/CPO、量子、功率/RF、研发与小批量生产 | **中高**；CPO 是 AI 数据中心增量，其余系统并非都属 AI |
+
+公司在高级探针卡中具有三项结构性优势：一是自有 MEMS 探针和高并行架构；二是同时覆盖 DRAM/HBM 与逻辑，能服务 custom HBM/base die 交叉需求；三是探针卡为设计专用消耗件，换代、新掩模/Pad map、产量增加和维修更换都会产生收入。公司投资者日称其为全球探针卡领导者及唯一同时在 DRAM 与 F&L 具有规模的厂商；但 2026 年行业研究认为 Technoprobe 可能在总收入上反超，故更准确的定位是 **全球前三高度集中市场中的第一梯队、HBM 高速堆叠插入领先者、GPU 卡份额挑战者**。[2026 Investor Day](https://investors.formfactor.com/static-files/29f1154b-e1e4-4b57-afbd-f296b3f36504)；[TrendForce 2026 探针卡研究摘要](https://www.trendforce.com/research/download/RP260626XO3)
+
+### 1.2 投资人心中的公司：从周期测试件到 AI“卖铲人”
+
+过去投资者常把 FORM 看成依赖 Intel、PC/mobile 和 DRAM 周期的探针卡公司；2025 下半年至 2026 年，叙事转为 **AI/HPC 与先进封装测试强度的纯度提升**：
+
+- HBM 从单一龙头客户向三家内存厂量产扩散，HBM4 由 8/12-high 走向 16-high，管理层给出的同层数代际测试强度经验值也约 **+20%–25%**；高速 stack final 需要在 10Gbps+ 同时测试数百颗完整堆叠，SmartMatrix 的并行与高速组合形成差异化。[Q4'25 电话会](https://stockanalysis.com/stocks/form/transcripts/399909-q4-2025/)
+- F&L 的增量从 PC/mobile 转向数据中心 CPU、网络交换芯片，GPU 与定制 ASIC/XPU 则提供份额增量；GPU 高级 MEMS 需求此前由竞争对手先取得，FORM 当前是第二来源/挑战者，并非垄断者。
+- CPO 将光耦合、光电协同和自动晶圆测试从实验室推向 fab，FORM 通过 Triton、CM300xi 与 Keystone/Pharos 把探针台、光探针、自动对准和软件拼成生产测试单元。
+- 投资者日目标是 2030 年收入 **$1.6bn、非 GAAP 毛利率 55%、营业费用率 23%、EPS $5**，相对 2025 年收入 $785m 隐含约 16% CAGR。目标是长期模型而非年度指引；现价约 21.7x 这一 2030 EPS，说明市场已经提前资本化多年增长。
+
+### 1.3 最近三年的重大变动、转型与收购
+
+| 时间 | 事项 | 金额/规模 | 战略含义与判断 |
+|---|---|---:|---|
+| 2023-11 | 出售 FRT 计量业务给 Camtek | 净现金约 $100.1m | 退出较独立的光学计量资产，集中于半导体测试与测量；也为后续产能/并购提供现金。[出售公告](https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2023-third-quarter-results/) |
+| 2024 | 出售中国运营资产并改为独家分销合作 | 现金 $25m；税前收益约 $20.3m | 降低直接运营/合规复杂度，但保留渠道；出口限制和经销执行仍是风险。[2025 10-K](https://www.sec.gov/Archives/edgar/data/1039399/000103939926000009/form-20251227.htm) |
+| 2025-02 | 取得 FICT 相关 HoldCo 约 20% 权益 | 初始投资约 $67.2m；2025 向其采购存货约 $10.3m | 锁定高级探针卡关键的 MLO/复杂 PCB/基板供应，与竞争对手共享上游的同时增强协同和供应可见度；也引入权益法波动。 |
+| 2025-06 | 买入 Texas Farmers Branch 制造基地 | 购置价 $55m；约 283,495 平方英尺、约 50,000 平方英尺洁净室；2026 现金 CapEx 计划 $140m–$170m | 以棕地方式扩充高级探针卡能力并降低单位成本。2026 年末开始资格/小量，2027 爬坡，第一阶段目标到 2028 年初；不是立刻产生收入。[厂房公告](https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-announces-purchase-new-manufacturing-facility) |
+| 2025-12 | 收购 Keystone Photonics | 净对价约 $20.6m；确认商誉约 $15.1m、无形资产约 $8.4m | 补齐硅光/CPO 的边缘耦合光探针与晶圆级光连接能力，使 FORM 从探针台供应商向电光联合测试方案扩展。[收购公告](https://investors.formfactor.com/news-releases/news-release-details/formfactor-expands-silicon-photonics-test-capabilities/) |
+| 2026 | 加州 Carlsbad/Baldwin Park 整合与 Texas 启动 | 预计重组费 $30m–$40m；Q2 Texas 启动费 $4.9m，H1 $11.9m；获 Texas grant $24.2m | 短期压 GAAP 利润，长期通过良率、cycle time、地点成本和产能弹性改善毛利。Q1 GAAP 毛利率因约 $21.5m 重组项目显著低于非 GAAP。 |
+| 2026-05/06 | 发布 2030 目标并扩展 Taiwan Keystone Microtech 合作 | 目标收入 $1.6bn | 台湾本地组装/服务有利于 foundry 端 GPU/ASIC 快速 ramp；战略重心明确落在 HBM、数据中心逻辑、CPO 和先进封装。 |
+
+过去三年的方向非常一致：**卖掉非核心计量和中国直运资产 → 保障高级卡基板供应 → 扩高级探针卡产能 → 买入 CPO 光耦合能力**。这不是跨行业转型，而是从“探针卡组件商”向“先进封装与 HPC 测试平台”纵向加深。
+
+### 1.4 2026-07-31 盘中估值与经营指标
+
+| 指标 | 最新值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | **$108.25** | 2026-07-31 15:41 ET 盘中 | 当日盘中而非收盘；应避免与财报日价格混用 |
+| 市值 | **约 $8.44bn** | $108.25 × 约 77.95m 已发行股 | 财务网站因稀释股/更新时间不同会显示约 $8.4–$8.6bn |
+| 企业价值 | **约 $8.12bn** | 市值减净现金约 $315.7m | 租赁负债已包含在总债务口径中 |
+| TTM P/E | **74.8x** | TTM GAAP EPS $1.46 | Q2 含若干一次性收益/退款，且过去四季 GAAP 利润基数波动 |
+| Forward P/E | **31.4x** | NTM 一致预期 | 并非单纯 FY2026 P/E；FY2026 共识 EPS 约 $2.97 时为约 36.4x |
+| P/S | **9.29x** | TTM 收入 $902.2m | 对测试设备/耗材公司属于很高估值 |
+| TTM 收入及增速 | **$902.2m，+18.0%** | 截至 Q2'26 的四季对前四季 | FY2026 一致预期约 $1.03bn、+30.6%；Q3 指引年化 $1.08bn |
+| TTM GAAP 毛利率 | **43.1%** | 官方季度求和 | 不能用 Q2 单季 50.7% 代表全年常态 |
+| TTM GAAP 净利率 | **12.8%** | TTM 净利 $115.5m | Q2 单季 21.8%，受毛利跳升与税/权益法影响 |
+| TTM FCF / FCF margin | **$136.1m / 15.1%** | 截至 Q2'26 | 2026 Texas CapEx 很高，季度间波动大 |
+
+行情与比率来自 2026-07-31 当日的 [StockAnalysis 财务页](https://stockanalysis.com/stocks/form/financials/)；估值的分母使用已发布 Q2 的 TTM 财务。该页面显示 TTM 收入 $902.23m、收入增速 18.01%、GAAP 毛利率 43.13%、净利率 12.80%、P/E 74.83x、forward P/E 31.44x、P/S 9.29x。由于股价盘中变化，市值与倍数需视为快照。
+
+### 1.5 资产负债表：健康，但 2026–2027 是重投资执行期
+
+截至 2026-06-27：
+
+| 项目 | 数值 | 计算/评价 |
+|---|---:|---|
+| 现金 + 有价证券 | **$345.6m** | 现金 $109.8m + 有价证券 $235.9m |
+| 应收账款 / 存货 | $155.8m / $121.4m | Q2 高增长下均需关注周转；目前没有流动性压力信号 |
+| 流动资产 / 流动负债 | $669.5m / $164.2m | 营运资本 **$505.3m**；流动比率 **4.08x** |
+| 速动资产 / 速动比率 | $501.4m / **3.05x** | 现金、证券与应收合计，剔除存货 |
+| 总债务 | **$29.9m** | 其中银行定期债务仅约 $11.6m，其余主要为租赁；债务/权益约 0.03x |
+| 净现金 | **$315.7m** | 约 $4.00/股，足以覆盖厂房启动与正常波动 |
+| 总资产 / 总负债 / 权益 | $1.342bn / $231.1m / $1.111bn | 权益占资产约 82.8%，杠杆很低 |
+| 商誉 + 无形资产 | $230.5m | 约占权益 20.7%；Keystone 与历史并购若不达预期存在减值风险 |
+| H1'26 经营现金流 / FCF | $106.8m / $83.3m | 现金生成强；但全年 $140m–$170m 现金 CapEx 与 $25m–$30m 启动费会消耗现金 |
+
+结论：**财务健康度 4.5/5**。短期偿债与扩产资金充裕，几乎无金融杠杆风险。主要风险不是破产或再融资，而是 (a) Texas 高资本开支先发生、收入和毛利后兑现；(b) SK hynix、TSMC 等客户集中造成应收与产能错配；(c) 高估值下的执行风险。Q2 前两大 10% 客户为 SK hynix **24.3%** 与 TSMC **11.0%**，合计 **35.3%**；Q1 NVIDIA 曾占 **10.2%**，显示收入可随单一设计/ramp 在季度间跳动。
+
+## 2. 最新及最近四次财报：五季度数字、订单与 AI 暴露
+
+### 2.1 五季度收入、增速和利润率
+
+| 财报季度 | 总收入；环比/同比 | F&L 收入；环比 | DRAM 收入；环比；其中 HBM | Flash；环比 | Systems；环比 | 探针卡 / Systems 分部毛利率 | GAAP / 非 GAAP 毛利率 | GAAP 净利；净利率 |
+|---|---|---|---|---|---|---|---|---|
+| **Q2'25** | **$195.8m；+14.3% / -0.8%** | $99.5m；+16.7% | $57.1m；+16.9%；**HBM $37.0m** | $5.5m；+130% | $33.7m；-3.3% | 38.3% / 39.4% | 37.3% / 38.5% | $9.1m；4.6% |
+| **Q3'25** | **$202.7m；+3.5%** | $92.9m；-6.6% | $68.2m；+19.4%；**HBM 约 $40m** | $5.3m；-3.6% | $36.3m；+7.7% | 40.8% / 42.0% | 39.8% / 41.0% | $15.7m；7.7% |
+| **Q4'25** | **$215.2m；+6.2% / +13.6%** | $92.2m；-0.8% | $73.3m；+7.5%；**HBM 约中 $40m** | $7.4m；+39.6% | $42.3m；+16.5% | **44.5% / 41.5%** | 42.2% / 43.9% | $23.2m；10.8% |
+| **Q1'26** | **$226.1m；+5.1% / +32.0%** | $111.2m；+20.6% | $82.9m；+13.1%；**HBM 约低 $50m** | $4.1m；-44.6% | $27.9m；-34.0% | 50.5% / 38.0% | 38.4% / 49.0% | $20.4m；9.0% |
+| **Q2'26** | **$258.2m；+14.2% / +31.9%** | $121.8m；+9.5% | $85.0m；+2.5%；**HBM 约 $56.7m** | $2.9m；-29.3% | $48.5m；+73.8% | **54.4% / 48.5%** | **50.7% / 53.3%** | **$56.2m；21.8%** |
+
+注：Q4'25 分部毛利率由全年减去前三季的分部收入/毛利倒算；其余为公司补充材料。Q1'26 GAAP 毛利率因约 $21.5m 重组相关成本与非 GAAP 差距异常大。Q2'26 的 HBM 是管理层披露“约占 DRAM 的三分之二”推算；早期季度 HBM 数字来自电话会。原始财报：[Q2'25](https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2025-second-quarter-results/)、[Q3'25](https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2025-third-quarter-results)、[Q4'25](https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2025-fourth-quarter-results)、[Q1'26](https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-first-quarter-results/)、[Q2'26](https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-second-quarter-results)。
+
+### 2.2 五季度订单、交期、取消率与 AI 数据中心占比
+
+FORM 在这五个季度都**没有披露 bookings、book-to-bill（B2B）、firm backlog 或实际取消率**；因此表中只记录可观察的 PO/forecast/lead-time、项目里程碑与推迟事实，不用收入反推一个虚假的 B2B。
+
+| 季度 | Backlog / Bookings / 交期 / 取消率 | 关键业务、客户与项目证据 | AI 数据中心相关收入占比（研究估算） |
+|---|---|---|---:|
+| **Q2'25** | **未披露 backlog/bookings/取消率**；多数 HBM 设计短交期、订单集中在少数 ramp；Systems 有推迟但随后已交付 | HBM 从 Q1 $29.5m 增至 $37.0m；开始向三家 HBM 厂量产。第二家 HBM4 客户因单一设计规格返工产生启动成本，说明资格已转量但执行不成熟。定制 ASIC 已有“数百万美元”贡献；CPO 多套 CM300xi 在主要客户/其 foundry 试产 | **30%–38%**；HBM 已知 18.9%，其余来自数据中心逻辑、custom ASIC 和 CPO |
+| **Q3'25** | 多数卡交期仍在一季内；无取消率；客户对 HBM4 的计划可见度强于正式 PO | HBM 约 $40m；HBM3E/HBM4 crossover；Apollo GPU 已达技术要求、进入 pilot production；多套 Triton 安装，CPO 从 pilot 向 volume 准备 | **31%–40%**；HBM 19.7%，网络/CPU/CPO 为增量 |
+| **Q4'25** | 复杂 DRAM 卡可见度约 **6–8 周并延伸至季末**，交期仍小于一季；无 firm backlog 数字 | HBM 约中 $40m、Q4 增长主要来自 DDR4/5；GPU 继续资格，custom ASIC 基于 2025 年中数百万美元设计赢单；Systems 由 CPO 与量子推动 | **34%–42%**；HBM 约 21%，但 DDR 拉升使 DRAM 增长不能全算 AI |
+| **Q1'26** | 具体设计 PO 一般仍在季内；公司开始收到约 **六个月**的原材料/总体产能预测；取消率未披露 | HBM 低 $50m；第二客户采用 SmartMatrix 高速 stack final；网络探针卡大增，NVIDIA 为 10.2% 客户；大型 fabless CPU/XPU 客户多项 win，GPU 资格接近完成；CPO 处于 $10m–$20m 年度目标的上沿趋势 | **43%–52%**；HBM 约 23%，网络及 HPC 客户使 F&L 的 AI 纯度明显上升 |
+| **Q2'26** | 仍无 backlog/bookings/cancel rate；最长生产规划约 **六个月**，并讨论 capacity agreements，但具体卡 PO 仍在一季内 | HBM $56.7m；F&L 由数据中心 CPU、网络和初始 custom ASIC 推动；TSMC 为 11% 客户但 Q2 其中无 GPU 收入，GPU 已资格并于 Q3 生产出货；CPO 全年预计显著高于 $20m | **50%–60%**；严格只计 HBM、明确 AI 逻辑和 CPO 约 **40%–49%**，宽口径含数据中心 CPU/网络约 50%–60% |
+
+AI 占比不是公司会计披露。本文采用：`HBM 直接收入 + F&L 中数据中心 CPU/网络/GPU/ASIC 部分 + Systems 中 CPO 部分`，不把全部 F&L、全部 Systems 或 DDR 都计入 AI。区间之所以较宽，是 FORM 不披露 F&L 终端拆分和 CPO 单季收入。2025 年 10-K 明确表示，公司通常没有足以达成季度收入目标的 backlog，客户主要以采购单而非长期合同下单，订单可取消、减少或延期；这比渠道“两年可见度”更接近法律和财务口径。[2025 10-K](https://www.sec.gov/Archives/edgar/data/1039399/000103939926000009/form-20251227.htm)；[Q3'25 电话会](https://stockanalysis.com/stocks/form/transcripts/368918-q3-2025/)；[Q4'25 电话会](https://stockanalysis.com/stocks/form/transcripts/399909-q4-2025/)
+
+### 2.3 五季度最重要的变化
+
+- **收入结构发生质变。** Q2'25 仍由季节性 mobile/PC 与 HBM 共同拉动；Q1'26 起，网络、数据中心 CPU、HBM、CPO 同时增长，Q2'26 形成跨市场的 record quarter。
+- **HBM 由单客户扩散到三客户，但仍集中。** Q2'25 三家量产，Q3/Q4 FORM 在另外两家整体 DRAM 仍是第二来源、离 50/50 entitlement share 很远；Q1/Q2'26 在高速堆叠 final insertion 已在两家取得强份额，并与第三家合作。收入仍随各家 wafer start 在 HBM 与 DDR 间切换。
+- **毛利改善既有结构性也有一次性。** 2025 H2 由 yield/cycle time、成本削减和 mix 改善；Q1'26 非 GAAP 49.0%；Q2 53.3% 中约三分之一环比提升来自关税退款/贵金属等一次性，剔除后约 51%。故 Q3 非 GAAP 54% 指引虽高，但不能假设长期线性上升到 60%。
+- **GPU 从资格进入出货，份额仍待验证。** Q2'25 管理层承认高级 GPU 卡先由竞争对手获得；Q3 pilot、Q1'26 接近完成、Q2 已资格、Q3 开始生产。技术完成不是份额完成，需观察 2027 复购、第二设计和供货份额。
+- **CPO 从 pilot 进入第一批生产系统。** Q2'25 CM300xi pilot，Q3 多套 Triton，2026 Q2 Systems 创纪录。客户产品量产进度、测试时间/良率和 first insertion 是否成为标准，决定 $20m 级业务能否跨到 $100m 级。
+
+## 3. 2026 最新财报指引、业务占比、产品型号与重点业务交叉验证
+
+### 3.1 Q3'26 官方指引与研究拆分
+
+公司对截至 2026-09-26 的 Q3 指引为：
+
+| 指标 | 低端 | 中点 | 高端 | 中点环比/年化 |
+|---|---:|---:|---:|---:|
+| 收入 | $260m | **$270m** | $280m | 环比 **+4.6%**；年化 **$1.08bn** |
+| GAAP 毛利率 | 50.5% | **52.0%** | 53.5% | Q2 为 50.7% |
+| 非 GAAP 毛利率 | 52.5% | **54.0%** | 55.5% | Q2 为 53.3% |
+| GAAP EPS | $0.66 | **$0.75** | $0.84 | Q2 为 $0.71 |
+| 非 GAAP EPS | $0.77 | **$0.86** | $0.95 | Q2 为 $0.82 |
+
+公司只给总收入/毛利/EPS 指引，没有给各业务数字。管理层的方向性描述是：**F&L 继续增长；DRAM 总体约持平但内部从 HBM 转向供不应求、价格高的 DDR；Systems 保持 momentum，CPO 在 Q3 末累计超过 $20m；Flash 很小。**据此对 $270m 中点作以下可核验拆分，而非公司指引：
+
+| Q3'26 业务 | 研究估算 | 占比 | 环比估算 | 推断依据 |
+|---|---:|---:|---:|---|
+| Foundry & Logic | **$130m–$140m** | 48%–52% | +7%–+15% | 数据中心 CPU、network、custom ASIC 与首批 GPU 生产出货；PC/mobile 大致稳定 |
+| DRAM | **$82m–$88m** | 30%–33% | -4%–+4% | 管理层称接近 Q2；内部 HBM 降、DDR 升，不应把 DRAM 持平理解成 HBM 持平 |
+| Flash | **$2m–$4m** | 1% | -31%–+38% | 基数极小，不构成投资主线 |
+| Systems | **$44m–$54m** | 16%–20% | -9%–+11% | CPO 增长，但 Q2 的系统项目确认可能使季度波动；区间保留普通实验室/量子系统变化 |
+| 合计 | **约 $270m** | 100% | +4.6% | 四项中点与总指引中点勾稽 |
+
+最突出、公司最侧重的顺序为：**(1) HBM 高速/高并行测试；(2) 数据中心 CPU 与网络高级 MEMS 卡；(3) GPU 与 hyperscaler custom ASIC 份额获取；(4) CPO 光电晶圆测试；(5) 微凸点/custom HBM/120GHz 等前置技术期权。**
+
+### 3.2 重点业务、具体产品与利润/规模交叉验证
+
+| 重点业务 | 主要产品/型号 | 当前披露和技术证据 | Q2'26 收入贡献 | 研究估算毛利率 | 销售增速/规模判断 |
+|---|---|---|---:|---:|---|
+| **HBM core die、stack/final、DDR 高并行测试** | **SmartMatrix 3000XP**、SmartMatrix、IntelliFusion、**Altius**；配套高频/温控方案 | 3000XP 单次 touchdown 可测 **>3,000 die、>150k probes、125MHz、-40°C 至 125°C**，公司称可降低 DRAM 测试成本 >25%；SmartMatrix 高速 stack final 可同时测数百个完整 HBM stack、10Gbps+；Altius 面向 KGD/KGS，项目行业资料给出的能力锚为 **≥3Gbps、约 45µm pitch**。[SmartMatrix 产品页](https://www.formfactor.com/product/probe-cards/dram/smartmatrix/)；[3000XP 发布](https://www.formfactor.com/press-release/new-smartmatrix-3000xp-probe-card-lowers-dram-test-costs-by-more-than-25/) | **HBM 约 $56.7m**；全部 DRAM $85.0m | **50%–60%**；早期客户/新设计 ramp 可降至 35%–45%，成熟高速卡和高利用率可至区间上沿 | HBM 同比约 **+53%**（$37m→$56.7m）；Q2 DRAM 同比 +48.9%。HBM4 高速卡 ASP 较高，HBM4/5 代际测试强度约 +20%–25% |
+| **数据中心 CPU、网络/交换 ASIC 高级逻辑卡** | **Apollo** 高级 MEMS、Pyramid 系列、RF/高速探针卡 | Apollo 面向 fine-pitch flip-chip、高电流和高 pin-count；三个关系分别覆盖传统数据中心 CPU 龙头、GPU/CPU/network HPC 龙头和大型 fabless XPU/CPU 客户。公司在 networking 有强 incumbent 份额，在第三个 CPU 客户仍仅 low-single-digit share | **$55m–$70m [估算]**，包含于 F&L $121.8m | **55%–65% [估算]**；设计复杂度、急单和高利用率有溢价 | F&L 环比 +9.5%、同比约 +22%；AI/DC 子集估计同比 **+35%–60%**，显著快于 PC/mobile |
+| **GPU 与 custom ASIC/XPU** | GPU 专用 **Apollo MEMS 新变体**；custom ASIC/XPU 设计专用 Apollo/高级 MEMS | GPU 卡 Q2 已完成资格、Q3 开始生产；Q2 TSMC 收入不含 GPU，故当前很小。2025 年中 custom ASIC 有数百万美元设计 win；公司与全部 hyperscaler 及 ASIC 设计伙伴接触，预计 advanced MEMS 量在 2027 才显著 | **$3m–$8m [估算]**；GPU 接近零、主要为 ASIC/前置批量 | ramp **35%–50%**；成熟 **55%–65%** | 低基数，未来一年可增长 **2–5 倍**；最大不确定是份额而非 TAM |
+| **CPO/硅光自动晶圆测试** | **Triton**、CM300xi、Keystone/**Pharos** optical probes、MF80/MF130、SiPh Tools、Velox | Triton 与 Advantest/TEL 协作，集成 V93000、自动九轴光对准、光/电 probing、OHT 与 SECS/GEM；公司自 2017 年已装 **>160 套**硅光系统。Pharos 支持 edge coupling，官方资料称耦合损耗可低于约 1.5dB/facet。[Triton](https://www.formfactor.com/product/probe-systems/300-mm-systems/triton/)；[Pharos](https://www.formfactor.com/product/probes/specialty/pharos-probe-series/) | **$10m–$15m [估算]**，包含于 Systems $48.5m；FY2026 预计 **$25m–$35m**，公司口径“显著高于 $20m” | 当前 **45%–60%**；放量、软件/探针和服务占比提高后 **55%–65%** | Systems 环比 +73.8%、同比 +43.9%；CPO 从小基数估计 >100% 增长。2030 公司 served market 约 $300m–$400m |
+| **微凸点/先进封装与 custom HBM base die** | Apollo/微凸点探针头、Altius、铜/混合键合相关 probing | Intel/FormFactor 在 SWTest 2026 披露：Foveros 微凸点 HVM 自 2019 年，覆盖 **>25 个产品、>300k wafers、>1,500 个 FORM probe heads**；EMIB 45µm 仍在开发。HBM base die 把逻辑控制器和内存测试结合，正好利用 FORM 双市场能力。[SWTest 微凸点材料](https://www.formfactor.com/blog/2026/swtest-2026-advancing-high-volume-micro-bump-probing-for-next-generation-3d-and-2-5d-packaging/) | **$5m–$10m [估算、与 F&L/HBM 重叠，不可相加]** | **45%–60%** | 当前稳定小业务；混合键合、EMIB/Foveros 和 custom HBM 可在 2027–2028 加速 |
+| **120GHz/224G/1.6Tbps 高频测试期权** | 120GHz probe card、RF/mmWave 探针与校准 | SWTest 2026 展示首个支持 DUT 120GHz、面向 1.6Tbps 的卡；属于技术/资格前置，不等于量产收入。[SWTest 2026 项目](https://www.formfactor.com/blog/2026/driving-the-future-of-wafer-test-formfactor-at-swtest-2026/) | **< $3m [估算]** | 研发期不可可靠估计；成熟专用卡可高于公司均值 | 目前非财务主线；可能随 224G SerDes、1.6T optics、CPO 验证放量 |
+
+利润率均非公司产品级披露。估算以分部毛利率、客户 ramp 成本、公司“交付更高良率/性能便可获得更高 ASP”的表述，以及本地产业 BOM/竞争资料为锚。Q2 Probe Cards 分部毛利率 54.4%、Systems 48.5%，但单一季度含一次性有利因素，故产品成熟毛利区间不应简单高于 60%–65%。
+
+### 3.3 明确跳过或降权的低增长/非 AI 业务
+
+以下业务仍有收入和客户价值，但不是本报告未来一年预测主线：
+
+- **Flash/NAND 探针卡：**Q2 收入仅 $2.9m、环比 -29.3%，占 1.1%；除非 NAND 技术转型带来新卡，否则对公司增长影响很小。
+- **传统 mobile application processor、client PC、一般 MCU/汽车/模拟卡：**可填充产能并贡献现金，但管理层称 PC/mobile 需求平淡，Q2/Q3 增长不是由其主导。
+- **普通 DDR4/DDR5：**Q3 因供给紧张和价格上涨会支持收入，且测试卡本身可能高利润；但它不是 AI 专属，本文不把 DDR 增量计入 AI 暴露。
+- **常规实验室探针台、功率器件/RF characterization、可靠性系统：**Systems 内有价值但终端拆分不披露；除 CPO 外不纳入 AI 产品情景。
+- **量子计算 IQ2000/IQ3000：**潜在长期高增长，但高量产仍可能数年之后，与未来一年 AI 数据中心收入不直接重合，作为 Systems 的上行期权而非核心模型。
+- **服务、维修、软件：**有经常性、高毛利属性，但公司未拆收入；已经包含在各产品/分部而不单独预测。
+
+## 4. 当前每项高增长/关键产品的收入、AI 重要性、紧迫性、供需与定价力
+
+评分采用 1–5：**5 为对 AI 技术栈不可替代/客户必须立即部署/严重供不应求/接近双寡头或强定价**；1 为可延后、供给宽松或商品化。收入不能相加的重叠项已标注。
+
+| 产品集群 | 当前季度贡献 / 年化退出率 | 当前收入增速 | AI 基建重要性 | 时间紧迫性 | 供需紧张度 | 垄断/份额能力 | 溢价能力 | 关键判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| **HBM 高速/高并行探针卡** | **$56.7m / $227m** | 同比约 +53% | **5.0** | **5.0** | **4.5** | **4.0** | **4.5** | HBM 需要 core die、stack/final 多次插入；SmartMatrix 在高速+高并行 insertion 强，但 core die 更竞争、另外两客户整体仍是第二来源 |
+| **数据中心 CPU/网络 Apollo** | **$55m–$70m / 中点约 $250m [估]** | 子集约 +35%–60% | **4.5** | **4.5** | **4.0** | **3.5** | **4.0** | 网络带宽和 CPU/GPU 高功耗使普通 probe 技术失效；FORM 有 network/部分 CPU incumbent，但大型 fabless CPU 份额仍低 |
+| **GPU + custom ASIC/XPU Apollo** | **$3m–$8m / 中点约 $22m [估]** | 低基数、不可比 | **5.0** | **4.5** | **4.0** | **2.5 当前 / 4.0 潜在** | **4.0** | GPU 主要份额在竞争对手，FORM 是刚转量的第二来源；若 qualification 跨设计复用，增长弹性最大 |
+| **CPO Triton/Pharos** | **$10m–$15m / 中点约 $50m [估]** | 估计 >100% | **4.5** | **3.5** | **3.5** | **3.5** | **4.0** | CPO 对电力/带宽关键但量产时间可推迟；FORM 在 wafer alignment/probing 强，ATE 与光仪器由伙伴提供，不控制整条栈 |
+| **微凸点/custom HBM/混合键合** | **$5m–$10m [估、重叠]** | 尚未单列 | **4.5** | **3.5** | **3.5** | **3.5** | **4.0** | KGD 与先进封装失效率使测试必要；Foveros 已验证，EMIB45/custom HBM/混合键合仍是下一阶段资格 |
+| **120GHz/224G 高频卡** | **< $3m [估]** | 研发期 | **4.0** | **2.5** | **2.5** | **3.0** | **4.0** | 1.6Tbps 测量技术重要，但标准、客户产品和量产插入尚未形成规模 |
+
+“垄断能力”要谨慎理解：探针卡市场是全球少数厂商、具体设计经资格后有高粘性，但客户普遍保留双供。FORM 在 HBM 高速 stack insertion 接近双寡头领先，在 GPU 则是追赶者；因此公司整体不是垄断者。
+
+## 5. 一年后收入贡献与三情景预测
+
+### 5.1 模型口径与公司收入勾稽
+
+“一年后”定义为 **Q3'27 单季年化退出率**，而不是未来十二个月累计收入。起点以 Q2'26 $258.2m 年化 **$1.033bn**；产品拆分采用上节中点，并用“其他业务”把总额勾稽。这样避免把 CPO、custom HBM 等重叠技术重复相加。
+
+| 年化收入集群 | Q2'26 起点 | 基准：Q3'27 年化 | 增速 | 乐观：Q3'27 年化 | 增速 | 极度乐观：Q3'27 年化 | 增速 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| HBM 高速/高并行探针卡 | $227m | **$285m** | **+26%** | **$330m** | **+45%** | **$380m** | **+67%** |
+| 数据中心 CPU/网络高级卡 | $250m | **$310m** | **+24%** | **$365m** | **+46%** | **$420m** | **+68%** |
+| GPU + custom ASIC/XPU | $22m | **$70m** | **+218%** | **$110m** | **+400%** | **$165m** | **+650%** |
+| CPO 测试系统/光探针 | $50m | **$75m** | **+50%** | **$105m** | **+110%** | **$145m** | **+190%** |
+| 其他/非 AI/量子/Flash/服务 | $484m | **$500m** | **+3%** | **$540m** | **+12%** | **$590m** | **+22%** |
+| **公司合计** | **$1.033bn** | **$1.240bn** | **+20%** | **$1.450bn** | **+40%** | **$1.700bn** | **+65%** |
+
+基准情景仍高于当前 FY2027 市场一致预期约 $1.16bn，原因是本表是 Q3'27 退出率而非 FY2027 全年；若 Q3'27 单季达到 $310m，前两季较低，FY2027 可仍接近 $1.18bn–$1.24bn。极度乐观情景要求 Texas 爬坡前置、GPU/ASIC 取得实质份额且 CPO 客户量产同时成功，**不是估值基准**。
+
+### 5.2 各情景的技术栈、供需、份额与溢价评分
+
+| 产品 | 情景 | 一年后重要性 | 紧迫性 | 供需紧张度 | 垄断/份额能力 | 溢价能力 | 情景成立的必要条件 |
+|---|---|---:|---:|---:|---:|---:|---|
+| HBM 高速卡 | 基准 | 5.0 | 5.0 | 4.0 | 4.0 | 4.5 | HBM4 正常 ramp，三客户份额温和提升，DDR 分流不恶化 |
+|  | 乐观 | 5.0 | 5.0 | 4.5 | 4.3 | 4.7 | HBM4E/16-high 增加插入，另外两家高速 insertion 份额快速升 |
+|  | 极度乐观 | 5.0 | 5.0 | 5.0 | 4.5 | 5.0 | HBM 供应与测试能力同时成瓶颈，客户为交期/良率支付明显溢价 |
+| 数据中心 CPU/网络 | 基准 | 4.5 | 4.0 | 3.5 | 3.5 | 4.0 | 现有 networking 和 CPU 设计正常 ramp |
+|  | 乐观 | 4.7 | 4.5 | 4.0 | 4.0 | 4.3 | 1.6T network、高功耗 CPU/XPU 加速切换高级 MEMS |
+|  | 极度乐观 | 5.0 | 5.0 | 4.5 | 4.2 | 4.5 | 多个新设计同季 ramp、Texas 供货能力成为拿份额条件 |
+| GPU/ASIC | 基准 | 5.0 | 4.0 | 3.5 | 3.0 | 4.0 | 已资格 GPU 转为持续 PO；ASIC 在 2027 出现有意义量产 |
+|  | 乐观 | 5.0 | 4.5 | 4.0 | 3.7 | 4.3 | 获第二设计/第二大项目，达到可信双供份额 |
+|  | 极度乐观 | 5.0 | 5.0 | 4.5 | 4.2 | 4.7 | 竞争对手产能受限，FORM 从第二来源转接近 entitlement share |
+| CPO | 基准 | 4.5 | 3.0 | 3.0 | 3.5 | 4.0 | first insertion 随首批 CPO 产品小量产，客户不延后 |
+|  | 乐观 | 4.7 | 4.0 | 3.8 | 3.8 | 4.3 | 多客户由 pilot 转 HVM，Triton/Pharos 成为重复配置 |
+|  | 极度乐观 | 5.0 | 4.5 | 4.5 | 4.2 | 4.7 | CPO 成 scale-up 标准且测试时间/良率使更多插入必须自动化 |
+
+微凸点/custom HBM/120GHz 的收入已嵌入上述 HBM、逻辑和 CPO 集群；其作用是提高 ASP、资格壁垒与后续份额，而不是额外创造一份可相加的公司收入。
+
+## 6. BOM、每 MW/rack/GPU/optical port 内容量与价格传导链
+
+### 6.1 先说明“真实内容量”的物理边界
+
+探针卡和 Triton 测试单元是 **晶圆厂/内存厂/OSAT 反复使用的资本品与消耗件**，并不会像 HBM、铜缆或光模块那样物理装进每一颗 GPU 或每一个 rack。因此：
+
+- **物理 BOM** 存在于一张探针卡或一套测试 cell；
+- **每 GPU/rack/MW/port 内容量**只能是客户把 FORM 的卡、维护、探针头和系统成本，在其测试的合格芯片/端口上摊销后的“FORM 收入内容量”；
+- 它受 wafer yield、卡寿命、并行度、每 SKU 所需卡数、插入次数、测试秒数、客户份额及产能利用率共同影响，不是固定料号价格；
+- 微凸点、HBM base die 和 GPU card 可能测试同一颗加速器的不同 die/阶段，本文分项显示但在公司收入情景中不重复相加。
+
+参考配置只为可复算：**72 颗加速 GPU + 36 颗主机 CPU / rack，约 120kW/rack，即 8.33 rack/MW；每 GPU 8 颗 HBM stack；每 rack 18–72 个高速 optical ports。**不同客户的 air/liquid cooling、scale-up/scale-out 和 GPU 数会使结果显著变化。
+
+### 6.2 高级探针卡 BOM
+
+以下为项目内行业资料汇总的典型高级卡成本/价值构成，区间因卡型而异，不能取各项上限相加：
+
+| 探针卡 BOM/交付环节 | 典型价值占比 | 核心内容 | AI/HBM 价格驱动 |
+|---|---:|---|---|
+| MEMS/vertical probe head、针尖与镀层 | **25%–35%** | 数万至 >150k 根探针、微加工、磨耗与接触一致性 | pin 数、电流密度、pitch、针尖寿命、10Gbps+/120GHz 信号完整性 |
+| MLO/MLC/MLOC/陶瓷空间转换层 | **18%–25%** | 高密度布线、低翘曲、高温稳定；FICT 是关键上游之一 | HBM/logic 高并行、复杂 routing、材料和良率瓶颈 |
+| PCB/interposer/连接器 | **15%–22%** | 与 ATE tester head 连接、供电与高速通道 | 更大电流、更多通道、更高层数和低损耗材料 |
+| Stiffener、机械、热管理 | **8%–14%** | 刚性、平坦度、冷/热测试与载荷 | GPU 未来器件功耗可达 kW 级，温度范围扩大 |
+| 对准、组装、校准、验证 | **10%–16%** | card-to-card correlation、平坦度、信号/电源校准、客户资格 | 设计专用、急单、小批量工程和多温 qualification |
+| 报废、返修、清洁、现场支持 | **5%–10%** | probe head 更换、维修、清洁、良率保护 | touchdown 次数、污染、客户 uptime 与快速响应 |
+
+资料来源：项目内 [探针卡、ATE 与系统级测试行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-07-10.md) 与 [HBM/存储测试设备行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-07-10.md)。SmartMatrix 3000XP 的公开性能为 >3,000 sites、>150k probes、单 touchdown；这说明卡价由可避免的 ATE 秒数和良率损失决定，不是由金属/陶瓷成本简单加成。
+
+### 6.3 CPO 高量产测试 cell BOM 与 FORM 可捕获部分
+
+| CPO/PIC 测试 cell | 全 cell 典型价值占比 | 主要供应方/内容 | FORM 参与度 |
+|---|---:|---|---|
+| ATE 电测试平台 | 约 30% | Advantest V93000、Teradyne UltraFLEXplus 等 | 伙伴接口，不是 FORM 主收入 |
+| 光源、探测器、OSA/OMA、光开关 | 约 22% | 光测量仪器厂商 | 部分集成，主体非 FORM |
+| Prober 与 6/9 轴光对准 | 约 18% | CM300xi/Triton、自动对准 | **FORM 核心** |
+| Handler、thermal、robot | 约 13% | fab automation/OHT/温控 | FORM/伙伴集成 |
+| Optical/electrical probe、FAU、socket/fixture | 约 8% | Pharos/Keystone、MF80/MF130 等 | **FORM 核心** |
+| 软件、集成、校准、recipe | 约 9% | SiPh Tools、Velox、SECS/GEM | **FORM 高附加值部分** |
+
+因此在一套完整 CPO cell 中，FORM 对 prober/alignment、probe/FAU、软件/集成的可捕获价值约 **25%–40% [估算]**。若完整自动 cell 总值约 **$3m–$7m [行业工程估算]**，FORM 对应约 **$0.8m–$2.5m/cell**；具体合同可能只买 FORM 子系统，不能把整 cell 价值都算给 FORM。资料来源：项目内 [高速互连与光学验证测试行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-07-10.md) 与官方 [Triton 产品页](https://www.formfactor.com/product/probe-systems/300-mm-systems/triton/)。
+
+### 6.4 每 GPU、rack、MW、optical port 的摊销内容量
+
+| FORM 价值项 | 计算锚与假设 | 每 GPU/相关 die | 每参考 rack | 每 MW | 每 optical port | 可信度 |
+|---|---|---:|---:|---:|---:|---|
+| **HBM core/stack 探针卡** | Q2 HBM 年化 $227m；项目内 2026 全球 HBM stack-equivalent 约 55m–105m，FORM 覆盖三家但各插入份额不同；按全球平均和份额校正 | **$16–$48/GPU**（8 stack × $2–$6/stack） | **$1.15k–$3.46k** | **$9.6k–$28.8k** | 不适用 | 中；公司收入锚可靠，全球 stack 与份额为区间 |
+| **GPU advanced MEMS wafer-sort** | 行业总内容约 $5–$25/GPU；FORM 当前 GPU 份额很低，Q3 才生产 | **当前 FORM <$2；成熟目标 $5–$20** | 当前 <$144；成熟 $360–$1.44k | 当前 <$1.2k；成熟 $3.0k–$12.0k | 不适用 | 低至中；ASP、卡寿命和 GPU 数均未披露 |
+| **CPU + network ASIC 高级卡** | 36 CPU × $2–$10，加 1–4 颗高端 switch/network ASIC × $20–$75 的摊销内容 | 折合 **$2–$10/CPU**；network 按 die 计 | **$0.09k–$0.66k** | **$0.75k–$5.5k** | 不适用 | 低；适合做数量级而非目标价 |
+| **微凸点/base die/custom HBM** | 每颗 GPU-equivalent 增加测试插入；与 HBM/GPU 项重叠 | **$2–$10 [重叠]** | $0.14k–$0.72k | $1.2k–$6.0k | 不适用 | 低；不可与前三项机械相加 |
+| **CPO Triton/Pharos：成熟摊销** | FORM cell 子系统 $0.8m–$2.5m，按其生命周期测试端口数摊销 | 与 GPU 数无固定一一对应 | **$2–$72**（18–72 port） | **$17–$600** | **$0.1–$1.0/port** | 低至中；量产 throughput 决定分母 |
+| **CPO：2026 安装阶段收入/当期出货 port** | 新 cell 收入在前、port 量在后，不能当长期 BOM | 不适用 | **$90–$2.16k** | **$0.75k–$18k** | **$5–$30/当期 port** | 低；只解释 ramp 阶段会计收入前置 |
+
+HBM 内容量的复算示例：`$2–$6/stack × 8 stack/GPU × 72 GPU/rack × 8.33 rack/MW = $9.6k–$28.8k/MW`。这不是一张卡的报价，而是 FORM 收入在全球 HBM 产量上的平均摊销。项目内 HBM 行业资料估计 2026 年先进探针/interface 当前市场约 **$0.55bn–$0.80bn**，与 FORM HBM 年化 $227m 的数量级和领先份额相容；若模型得出每 GPU 数百美元，就会与整个探针卡市场规模冲突，应判为重复计算。
+
+### 6.5 价格传导链
+
+**探针卡：**
+
+`CSP/GPU/CPU/内存产品路线 → 芯片设计的 pad map、功耗、速率和测试规范 → Foundry/IDM 选择 ATE 与插入流程 → FORM 设计探针头/空间转换层/PCB → 客户资格与 correlation → 量产卡、备卡、维修 → 成本摊入合格 die/stack → 最终封装/GPU/rack`
+
+价格不是“金属涨价→卡价同比例上涨”，而主要按客户价值定价：
+
+1. **测试秒数和并行度：**3,000 DUT 一次 touchdown 可少用 tester hours，ATE 利用率节省是高 ASP 的上限；
+2. **良率与报废避免：**HBM/2.5D 封装把多个昂贵 die 组合，漏测一颗坏 die 会报废整个 package，known-good-die 的经济价值随封装价值非线性上升；
+3. **功耗、速率和 pin-count：**更厚 PCB/MLO、更复杂电源与信号路径、更多 probes 推升 BOM 与工程费；
+4. **稀缺交期：**具体 PO 在一季内，若客户 ramp 快于供给，会为快速 qualification、备用卡和服务付溢价；
+5. **原材料传导：**贵金属、陶瓷/MLO 与关税影响成本，合同是否完全转嫁未披露。Q2 关税退款说明短期毛利也会受会计时点影响。
+
+**CPO：**
+
+`CSP/网络 ASIC 路线 → PIC/光引擎与 foundry flow → ATE/光仪器/FORM 联合定义 test cell → foundry/OSAT 购买并资格 → 自动 alignment + 光电测试 → 合格 port/optical engine → switch/rack`
+
+Triton 的定价锚是减少人工光纤对准、稳定 <dB 级 coupling、提高 first-insertion yield、缩短 test seconds 和支持 fab automation。客户不会按端口直接向 FORM 采购，所以每 port 只应作摊销指标。
+
+## 7. 当前与一年后的产能、供应链采纳和认证阶段
+
+### 7.1 当前总产能与约束
+
+- 2025 年中市场仍把现有 footprint 的年化能力理解为约 **$850m**；Q4'25 公司通过良率/cycle time 改进确认可运行在 **$225m/季，即 $900m 年化**。Q2'26 实际 $258.2m、Q3 指引中点 $270m，证明当前有效能力已提升至 **约 $1.05bn–$1.10bn 年化**。
+- 这不代表设备名义产能没有余量，而是 mix、客户资格、特定 MLO/探针头和工程资源限制了可交付“good output”。公司与主要竞争对手均在扩产；Q2 管理层明确称内部和外部供应链都有约束。
+- Farmers Branch 第一阶段目标大致相当于公司加州高级探针制造 footprint 的规模，但并非整个公司的收入产能翻倍；Systems、亚洲组装、低端卡和现有其他厂点不在同一口径。2026 年末资格和小量，2027 逐步贡献，2028 年初完成第一阶段目标。
+- 2026 现金 CapEx **$140m–$170m**、Texas 启动费用 **$25m–$30m**；Q2 启动费 $4.9m。Texas grant $24.2m 缓解部分现金成本。资格失败/延期会同时拖累收入和毛利。
+
+### 7.2 当前产品产能、采纳与资格
+
+| 产品 | 当前可货币化年化产能 [估算] | 当前采纳 | 当前资格/认证阶段 | 约束与证据 |
+|---|---:|---|---|---|
+| HBM/DRAM 高级卡 | **$240m–$280m HBM；$350m–$390m 全 DRAM** | 三家 HBM 厂均量产；高速 stack/final 在两家强势，第三家参与；总体在后两家仍第二来源 | HBM3E 成熟；**HBM4 量产**；HBM5 联合研发/预资格 | 高速并行探针头、MLO、客户 design mix、wafer starts；Q3 HBM→DDR 切换说明需求而非单一产线可完全锁定 |
+| DC CPU/network 高级卡 | **$270m–$320m** | 传统 DC CPU 客户强 incumbent；HPC/network 客户强增长；大型 fabless CPU/XPU 客户 low-single-digit share | incumbent 量产；大型 fabless 客户已有具体资格与多个 win | Apollo 产能和客户-specific qualification；Texas 本地化前限制更大 |
+| GPU/custom ASIC | **$25m–$50m** | GPU 为新第二来源；custom ASIC 初始项目，全部 hyperscaler 有 engagement | **GPU 完成 qualification、Q3'26 production shipment**；ASIC 当前设计量产，next-gen advanced MEMS qualification | 竞争对手已有多数 GPU 份额；从技术通过到多设计复购尚需验证 |
+| CPO Triton/Pharos | **$60m–$90m** | >160 套历史 SiPh 系统；多套 CM300xi/Triton 在主要客户/foundry pilot/初产 | Triton 为 production-ready；first insertion 已部署；客户 CPO 产品处于 pilot→HVM | 客户 CPO 产品时程、光学良率/test seconds、伙伴 ATE/光仪器交付 |
+| 微凸点/Foveros | **已含 F&L；独立 $10m–$25m** | Foveros 自 2019 HVM，>25 产品、>300k wafers、>1,500 probe heads | Foveros 量产；**EMIB 45µm 开发/展示**；custom HBM/base die 前期合作 | pitch、铜表面损伤、清洁、热/平坦度；不可把展示当量产认证 |
+| 120GHz/224G | **< $5m** | 技术展示/characterization | SWTest 2026 demo，未披露量产客户资格 | 标准与客户硅未成熟；测试插入和量产经济性待定 |
+
+“产能美元计”并非公司披露，系以 Q2/Q3 收入运行率、产品 mix 与管理层约束分配。各项不能与“其他业务”之外无限相加；其用途是识别哪一集群最可能撞产能墙。
+
+### 7.3 一年后产能与资格的三情景
+
+| 产品 | 情景 | Q3'27 年化可货币化产能 | 供应链采纳程度 | 一年后资格/认证阶段 |
+|---|---|---:|---|---|
+| HBM 高级卡 | 基准 | **$300m** | 三家稳定双供；高速插入份额温和提升 | HBM4/4E 多设计量产；HBM5 工程样/客户相关性 |
+|  | 乐观 | **$360m** | 两家低份额客户显著提升，FORM 获更多 core/stack insertions | HBM4E 全面量产；HBM5 pre-production qualification |
+|  | 极度乐观 | **$430m** | 竞争对手/上游容量紧，FORM 成多插入优先供应商 | HBM5 部分早期 production qual；Texas 全速复制成熟流程 |
+| DC CPU/network | 基准 | **$350m** | 现有 network/CPU ramp；fabless CPU 份额仍个位数 | 已赢设计进入量产、120GHz/1.6T 仍小量 |
+|  | 乐观 | **$420m** | 多个 CPU/XPU/network 平台重复采用 Apollo | 第二/第三平台量产资格；Texas 成认证来源 |
+|  | 极度乐观 | **$490m** | 高功耗/高速芯片大面积从 pseudo-MEMS 转高级 MEMS | 新一代 224G/1.6T 与高功耗平台同步量产 |
+| GPU/custom ASIC | 基准 | **$90m** | GPU 获稳定第二来源份额；一个或数个 ASIC 转量 | 现有 GPU 量产、next-gen GPU/ASIC qualification |
+|  | 乐观 | **$140m** | GPU 第二设计 + 多 hyperscaler ASIC，份额接近可信双供 | 多设计/多客户 production qualified |
+|  | 极度乐观 | **$210m** | competitor capacity 紧，FORM 接近 entitlement share | 跨代、跨 foundry 复用；Texas 全面获客户认证 |
+| CPO | 基准 | **$100m** | 主要客户 first insertion 小规模 HVM；新增 1–2 客户 | Triton/Pharos 重复订单、HVM correlation 完成 |
+|  | 乐观 | **$145m** | 多客户 CPO/optical engine 量产，系统+探针+软件 attach 上升 | 多 foundry/OSAT 生产资格 |
+|  | 极度乐观 | **$190m** | CPO 快速成为 AI scale-up 主流，交付受 alignment/tool 约束 | 标准化 cell recipe、跨产品量产复制 |
+| 公司合计 | 基准 | **$1.25bn–$1.32bn** | Texas 初期贡献、现有 footprint 继续改善 | Texas 获关键客户认证并稳定小量 |
+|  | 乐观 | **$1.42bn–$1.52bn** | Texas 爬坡顺、上游 MLO/MEMS 供给扩张 | 多产品转厂资格完成 |
+|  | 极度乐观 | **$1.62bn–$1.75bn** | Texas ramp 前置且现有厂无良率回退 | 第一阶段接近满目标，接近 2028 初原计划 |
+
+收入情景必须低于或等于产能情景。第 5 节基准/乐观/极度乐观公司收入 $1.24bn/$1.45bn/$1.70bn 分别处于这里相应产能区间内，模型勾稽成立；极度乐观几乎没有执行缓冲，因此概率显著低于前两种。
+
+## 8. 基于订单积压、供给和扩产的一年业务增速推断
+
+### 8.1 证据阶梯：什么是订单，什么不是
+
+| 证据层级 | 已知事实 | 对一年预测的含义 |
+|---|---|---|
+| **法律/财务口径** | 10-K：通常没有足够 backlog 覆盖季度目标；客户按 PO 下单，可取消、减少或延期 | 不能用“backlog 倍增”建模；季度预测首先依赖当季转单和交付 |
+| **公司运营口径** | 具体 design PO 多在一季内；复杂 DRAM 卡约 6–8 周；原材料/总产能讨论可到六个月；讨论 capacity agreements | 六个月预测可支持备料和人力，但不等于不可取消订单；产能协议若未披露金额也不能进确定收入 |
+| **客户/项目口径** | HBM 三客户量产；SK hynix Q2 占 24.3%；TSMC Q2 占 11.0%；NVIDIA Q1 占 10.2%；Intel 2026 EPIC Supplier Award；GPU Q3 量产；custom ASIC 数百万美元 design win；Triton 多套安装 | 说明真实项目存在并已跨若干资格门槛；客户集中和设计波动也高 |
+| **渠道口径** | TrendForce 2026-06 称高级探针卡可见度从一季延至最长两年、三大厂共同扩产 | 是晶圆/项目与 capacity reservation 可见度，不是 FORM firm backlog；可作需求强度上行佐证 |
+| **供给口径** | FORM 现有 output 接近高利用率、Farmers Branch 2027 ramp；Technoprobe 投资约 €240m 至 2027 Q1；ATE 厂也扩产 | 需求强但行业同步扩产；2027 下半年供需可能缓解，价格不能永远按短缺外推 |
+
+客户证据链接：[Intel 2026 EPIC Award](https://www.formfactor.com/blog/2026/formfactor-named-a-2026-intel-epic-supplier-award-winner/)、[SWTest 2026 与 SK hynix/Intel 合作](https://www.formfactor.com/blog/2026/driving-the-future-of-wafer-test-formfactor-at-swtest-2026/)、[TrendForce 渠道摘要](https://www.trendforce.com/research/download/RP260626XO3)。管理层没有点名的“三个 CPU/HPC 关系”仅在客户披露和产品线相互印证时作 Intel/NVIDIA/AMD 的**推断**，不把未确认的 GPU 代号（例如 Rubin）写成确定订单。
+
+### 8.2 订单转化/取消与推迟模型
+
+公司未披露实际取消率。本文不伪造取消率，而对客户 forecast 和项目 pipeline 施加“**推迟或不转 PO**”折扣：
+
+| 情景 | 六至十二个月需求信号 | forecast→PO→收入折扣 | 产能利用 | 主要假设 |
+|---|---|---:|---:|---|
+| **基准** | HBM4/DDR/DC network 正常；GPU 作为第二来源渐进；CPO 小量 HVM | **10%–15%** | 88%–93% | 设计 ramp 有一季左右 pushout，Texas 按计划但贡献有限 |
+| **乐观** | 两家 HBM 客户份额提升；GPU/ASIC 多设计；CPO 重复订单 | **5%–8%** | 92%–96% | capacity agreement 提高备料可见度，Texas 良率爬坡顺利 |
+| **极度乐观** | AI silicon、HBM4E 与 CPO 同时受限，客户争抢卡与 test cell | **2%–4%** | 96%–99% | 几乎无项目取消/延后，竞争对手产能无法满足，Texas 前置 ramp |
+
+折扣并不是历史取消率；它把以下风险合并处理：客户 wafer-start 在 HBM 与 DDR 间重分配、GPU/ASIC tape-out 或封装延迟、Systems 项目验收推迟、双供份额变化和供应商自身交付失败。
+
+### 8.3 公司未来一年增长预测
+
+| 项目 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| Q3'27 单季收入 | **约 $310m** | **约 $363m** | **约 $425m** |
+| 年化退出率 | **$1.24bn** | **$1.45bn** | **$1.70bn** |
+| 对 Q2'26 年化起点增速 | **约 +20%** | **约 +40%** | **约 +65%** |
+| 估计非 GAAP 毛利率 | **52%–55%** | **54%–57%** | **56%–59%** |
+| 最大收入驱动 | HBM4 + network/CPU；GPU/ASIC 初步 | HBM 份额 + GPU/ASIC 多设计 + CPO | 所有 AI 业务同时加速且产能成为定价筹码 |
+| 最大限制 | Texas 仍早期、HBM/DDR mix | 上游 MLO/MEMS、客户转厂资格 | 几乎无产能缓冲；良率/交期一处失败即下修 |
+| 主观概率 | **55%** | **30%** | **15%** |
+
+概率用于约束叙事，不是统计置信度。概率加权年化退出率约 **$1.37bn**，对应起点约 +33%；鉴于市场 FY2027 共识收入约 $1.16bn，股价反映的预期明显更接近基准偏乐观而非保守情景。若 Q3/Q4'26 的 HBM 转 DDR 幅度大、GPU 没有第二张设计复购或 CPO 验收推迟，实际可低于基准。
+
+## 9. 竞争格局、技术主流性、替代方案与客户替换成本
+
+### 9.1 分产品竞争格局
+
+| 市场 | 主要竞争对手 | FORM 相对位置 | 新技术是否主流 | 替代方案/风险 | 客户替换成本 |
+|---|---|---|---|---|---|
+| **HBM/DRAM 探针卡** | Micronics Japan（MJC）、Japan Electronic Materials（JEM）、Technoprobe、MPI、TSE、Korea Instrument | SmartMatrix 高速+高并行 stack insertion 领先，三家 HBM 厂量产；在最大客户很强，在另外两家总体第二来源 | **是。**HBM4/4E/5 的层数、速率和 KGD 使高并行 at-speed test 越来越必要 | MJC U-Probe/垂直卡、Technoprobe 高 pin/high current、客户双供；core-die 测试比 stack final 更易被替代 | **高，约 6–18 个月或更久**：设计专用、ATE correlation、多温/高速/良率验证；但同一客户可在新 design 重新分配份额 |
+| **GPU/高端逻辑 Apollo** | **Technoprobe（管理层未点名，依据市场/技术推断为主要 incumbent）**、MPI、CHPT、TSE、WinWay 等 | 高级 MEMS 技术达标、Q3'26 起量，但现有 GPU 多数份额在对手；FORM 是挑战者 | **是。**功耗、pin 数、pitch、speed 已使 GPU 在约两代前采用高级 MEMS | pseudo-MEMS/vertical/cantilever 在低功耗/低速仍可用；DFT/BIST、提高 parallelism 可减少卡需求；竞争对手扩产 | **高**：资格、yield correlation 和 pad damage 风险高；但 GPU 客户主动双供以分散交期风险，故不是锁死 |
+| **CPU/network ASIC** | Technoprobe、MPI/CHPT/TSE、客户历史供应商 | networking incumbent 较强；传统 CPU 客户深，fabless CPU 客户份额低、可上升 | **高端芯片是主流，低端不是。**224G/1.6T、高功率才需要最先进卡 | 现有卡在 legacy node/旧设计可继续使用，PC 复苏不必立即带来新卡；新设计延期 | 高端新设计高、旧节点低；设计换代是重新竞标窗口 |
+| **CPO/PIC 自动测试** | Teradyne **Photon 100**、Advantest/OpenLight 方案、MPI/SUSS/ficonTEC/PI 等探针台/对准厂商 | 在 wafer prober、光探针和自动 alignment 有先发与 >160 套 installed base；但 ATE/光仪器依赖伙伴 | **方向主流、时间不确定。**CPO 若进入量产必需自动光电测试，但 2026–2027 渗透节奏仍可能后移 | 高速铜、LPO、可插拔光、NPO；客户可组合开放式探针台+第三方光仪器；Photon 100 是更完整一体化竞争 | pilot 切换中等；一旦 HVM recipe、alignment、yield correlation 固化则高。开放生态同时降低平台锁定 |
+| **微凸点/混合键合** | Technoprobe、MJC、MPI、客户自研工艺 | Foveros 已有大规模历史；EMIB45/custom HBM/hybrid bonding 仍需扩资格 | **是，先进封装的长期主流之一** | contactless/内建自测、较晚阶段测试、工艺良率提升减少部分插入；铜表面损伤风险 | 很高：pad/bump damage、清洁、热翘曲和封装良率均需长期相关性 |
+| **120GHz/224G RF** | Cascade/MPI、Keysight 生态、专业 RF probe 厂 | FORM 有探针/校准/系统组合与 demo，但未证明量产份额 | **characterization 必需，量产卡尚早** | 低频间接测试、DFT、封装后测试、其他 RF probe | 研发阶段中等，量产 correlation 后升高 |
+
+竞争对手扩产是关键反证：Technoprobe Q1'26 收入约 **€187m、同比 +19%、毛利率 48.7%**，并规划至 2027 Q1 约 **€240m** 扩产；MPI Q1'26 收入约 **TWD3.93bn、同比 +39%、毛利率 59.4%**。行业不是只有 FORM 受益，短缺期也会吸引台湾厂商提升份额。[Technoprobe Q1'26](https://www.technoprobe.com/wp-content/uploads/2026/05/Q1-2026-Results.pdf)；[MPI 2026 conference sheet](https://www.mpi-corporation.com/wp-content/uploads/2026/05/MPI_20260518_Macquarie-Asia-Conference_EN_2Pages.pdf)
+
+在 CPO，一体化威胁尤其明确：Teradyne [Photon 100](https://investors.teradyne.com/news-events/press-releases/detail/436/teradyne-introduces-photon-100) 把 UltraFLEXplus、wafer/engine/module 光电测试与开放 probe 生态结合；Advantest 与 OpenLight 也发布 [端到端 HVM 方案](https://www.advantest.com/en/news/2026/20260623.html)。FORM 与 Advantest、TEL 的合作是渠道优势，但也说明价值链由多家共持，不能把 $3m–$7m 的整 cell 都算为 FORM TAM。
+
+### 9.2 技术是否会成为未来主流
+
+- **高级 MEMS 高并行探针卡：确定性最高。**高 pin-count、高电流、fine pitch、高速和多温测试使普通 vertical/pseudo-MEMS 的可用范围收缩。GPU 已经跨过采用点，network/CPU 正持续迁移；这是未来主流。
+- **HBM at-speed stack final：确定性高、份额集中。**HBM4 10Gbps+、16-high 与 KGS/KGD 经济性强化测试，但客户可以调整 core-die/final 插入与并行度。FORM 最强的是特定高速插入，不等于全部 HBM 流程垄断。
+- **CPO 自动晶圆测试：技术方向正确，时间确定性较低。**若 CPO 量产，人工/实验室式光纤对准无法支撑成本与 throughput，Triton 类自动 cell 会成为主流；但 CPO 本身可能被可插拔光、LPO/NPO 或更长距离铜延后。
+- **微凸点/混合键合测试：长期主流。**先进封装的 known-good-die 和 bump damage 控制不可绕过，但插入位置、是否全量 at-speed 和测试秒数会随良率改善变化。
+- **120GHz 量产卡：潜在主流、尚未证实。**技术 demo 证明能力，不能证明客户会在量产 wafer sort 采用相同带宽或愿意承担测试成本。
+
+### 9.3 主要风险与替代路径
+
+1. **估值风险：**74.8x TTM P/E、9.29x sales 要求收入、毛利和份额同时兑现；即使业务增长，倍数回归也可能使股价下跌。
+2. **客户/设计集中：**Q2 SK hynix 24.3%、TSMC 11.0%；少数 HBM/GPU/ASIC design 的 wafer-start、良率或优先级变化会造成季度波动。
+3. **没有 firm backlog 保护：**六个月 forecast 和两年项目可见度可被推迟，具体 PO 仍短；系统验收尤其容易跨季度。
+4. **HBM 与 DDR mix：**Q3 管理层预期 DRAM 大致持平但 HBM 降、DDR 升。DDR 可支撑收入，却可能降低 AI 纯度、ASP 或投资者叙事溢价。
+5. **GPU 份额风险：**完成资格不等于获得 entitlement share；主要竞争对手已经量产、也在扩产，FORM 可能长期只作小比例第二来源。
+6. **CPO 时程与架构风险：**客户产品若推迟，Triton 收入会先跌；若一体化 ATE 厂商主导、或客户选择开放组合，FORM 的整机 capture 低于模型。
+7. **Texas 执行：**$140m–$170m CapEx、客户转厂资格、良率、工程师招聘和上游供给均可能延误；新厂早期还会稀释毛利。
+8. **毛利正常化：**Q2 非 GAAP 53.3% 含关税退款/贵金属等一次性因素；价格不是主要毛利改善路径，长期仍依赖 yield、cycle time 和成本结构。
+9. **供应链与地缘：**MLO/复杂 PCB、陶瓷、贵金属和精密 MEMS 上游集中；台湾/韩国客户与出口管制、关税和中国分销模式增加运营风险。
+10. **测试效率反噬内容量：**并行度提高和自适应测试可增加单卡 ASP，却减少测试秒数/卡数；良率提高也可能减少部分重复插入。不能只按 GPU/HBM unit 增长线性放大探针卡收入。
+
+### 9.4 一年内最值得跟踪的验证点
+
+| 时间/指标 | 支持基准及以上的阈值 | 预警信号 |
+|---|---|---|
+| Q3/Q4'26 HBM | HBM 在 DDR 分流后恢复、三客户保持；HBM4 高速插入继续增 | DRAM 增长完全由 DDR，HBM 连续两季低于约 $50m |
+| GPU/ASIC | Q3 生产收入后出现复购、第二 design 或 2027 capacity agreement | 只确认一次性工程/小批量，未进入 10% 客户或无设计扩展 |
+| CPO | 2026 全年显著 >$20m，2027 订单来自多客户/重复配置 | Systems 收入再次大幅推迟，Triton 仍只在 pilot |
+| 毛利率 | 剔除一次性后非 GAAP维持约 51%+，Q3/Q4 接近 54% 指引 | Q2 退款消失后回落至 <50%，Texas 启动费持续上升 |
+| Texas | 2026 年末按期 qualification/首产，2027 每季 output 增 | 客户认证或 tool install 延后，CapEx 上修、良率不达标 |
+| 订单质量 | 六个月 forecast 逐步转 PO，客户愿签 capacity agreement | 管理层仍只讲可见度、没有复购/交期证据，系统 pushout 增多 |
+| 竞争份额 | HBM 后两家从第二来源上升、GPU 获可信双供份额 | Technoprobe/MJC/MPI 扩产先转收入，FORM 只能以价格守份额 |
+
+## 综合投资判断
+
+FORM 当前最可验证的盈利引擎是 **HBM 高速探针卡 + 数据中心 CPU/network 高级逻辑卡**，这两项已经贡献估计超过公司一半收入并处在供给受限的高级测试环节。**GPU/custom ASIC 与 CPO 是下一年增长斜率的决定项，但当前收入仍小、资格和客户量产具有二元性。**
+
+从业务质量看，公司拥有高切换成本、设计专用消耗、先进封装测试强度提升和净现金资产负债表；从股票性价比看，约 31.4x NTM P/E、9.29x sales 已把它从普通测试件公司重估为 AI 基础设施平台。基准情景下经营仍可约 +20% 年化增长，但股价需要基准偏乐观的收入与 52%–55% 非 GAAP 毛利同步兑现才有安全垫。最重要的反证不是 AI 总需求变弱，而是 **GPU/ASIC 份额转化慢、HBM mix 波动、CPO 延后或 Texas 资格失速**。
+
+因此，基本面结论为：**公司质量偏强、AI 测试位置真实、近期财务动量强；供需与份额上行有证据但没有 firm backlog 保护；股票估值处于高预期区，适合用季度资格/复购/产能里程碑验证，而不宜只凭 HBM/CPO TAM 线性外推。**
+
+## 主要资料与方法说明
+
+### 公司、SEC 与财报
+
+- [FormFactor FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1039399/000103939926000009/form-20251227.htm)：业务、竞争者、客户 PO/backlog 风险、收购投资和年度财务。
+- [FY2026 Q2 财报](https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-second-quarter-results)、[Q2 电话会](https://stockanalysis.com/stocks/form/transcripts/657372-q2-2026/)：最新业绩、Q3 指引、HBM/CPU/network/GPU/CPO、产能与毛利正常化。
+- [FY2026 Q1 财报](https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-first-quarter-results/)、[FY2025 Q4 财报](https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2025-fourth-quarter-results)、[Q4 电话会](https://stockanalysis.com/stocks/form/transcripts/399909-q4-2025/)、[FY2025 Q3 财报](https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2025-third-quarter-results)、[Q3 电话会](https://stockanalysis.com/stocks/form/transcripts/368918-q3-2025/)、[FY2025 Q2 财报](https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2025-second-quarter-results/)、[Q2 电话会](https://stockanalysis.com/stocks/form/transcripts/340519-q2-2025/)：五季度序列和资格进展。
+- [2026 Investor Day presentation](https://investors.formfactor.com/static-files/29f1154b-e1e4-4b57-afbd-f296b3f36504)：2030 目标、TAM、产能、Apollo/SmartMatrix/Triton 技术和测试强度。
+- [StockAnalysis 财务与估值](https://stockanalysis.com/stocks/form/financials/)：2026-07-31 盘中价、TTM 汇总和一致预期估值；关键财务分母已与公司财报复核。
+
+### 产品、会议与竞争交叉验证
+
+- [SmartMatrix](https://www.formfactor.com/product/probe-cards/dram/smartmatrix/)、[Apollo](https://www.formfactor.com/product/probe-cards/foundry-logic/apollo/)、[Triton](https://www.formfactor.com/product/probe-systems/300-mm-systems/triton/)、[Pharos](https://www.formfactor.com/product/probes/specialty/pharos-probe-series/)：型号和规格。
+- [SWTest 2026 公司议程](https://www.formfactor.com/blog/2026/driving-the-future-of-wafer-test-formfactor-at-swtest-2026/)、[微凸点联合报告摘要](https://www.formfactor.com/blog/2026/swtest-2026-advancing-high-volume-micro-bump-probing-for-next-generation-3d-and-2-5d-packaging/)、[COMPASS 2026 Japan](https://compass.formfactor.com/2026-japan/)：SK hynix 多温 HBM、Intel 微凸点、120GHz 与 custom HBM 等工程证据。
+- [TrendForce Probe Card 2026 摘要](https://www.trendforce.com/research/download/RP260626XO3)：产业集中、供给瓶颈和渠道可见度；仅作渠道信号，不替代公司 backlog。
+- [Technoprobe Q1'26](https://www.technoprobe.com/wp-content/uploads/2026/05/Q1-2026-Results.pdf)、[MPI 2026 conference sheet](https://www.mpi-corporation.com/wp-content/uploads/2026/05/MPI_20260518_Macquarie-Asia-Conference_EN_2Pages.pdf)、[MJC U-Probe](https://www.mjc.co.jp/products_service/probecard/u_probe/)：竞争对手能力、毛利和扩产。
+- [Teradyne Photon 100](https://investors.teradyne.com/news-events/press-releases/detail/436/teradyne-introduces-photon-100)、[Advantest/OpenLight CPO HVM](https://www.advantest.com/en/news/2026/20260623.html)：CPO 替代平台。
+
+### 项目内行业资料（仅限 `基本面/行业调研/`）
+
+- [探针卡、ATE 与系统级测试](../../行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-07-10.md)
+- [HBM 与存储测试设备](../../行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-07-10.md)
+- [高速互连与光学验证测试](../../行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-07-10.md)
+- [先进逻辑晶圆代工和封装](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-07-10.md)
+- [HBM 与高带宽内存](../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-07-10.md)
+- [AI 芯片先进封装](../../行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-07-10.md)
+- [商用 AI 加速芯片](../../行业调研/AI服务器_存储_芯片/行业调研_商用AI加速芯片_2026-07-10.md)
+- [云厂自研 AI ASIC](../../行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-07-10.md)
+
+> 本报告中的产品收入、产品毛利率、美元产能、每 GPU/rack/MW/port 内容量、AI 收入占比和三情景预测均非公司指引；它们以披露总额为边界、用产业物理量和资格进度交叉约束。使用时应优先跟踪实际季度收入、客户复购和产能资格，而不是把情景上限当作目标价输入。

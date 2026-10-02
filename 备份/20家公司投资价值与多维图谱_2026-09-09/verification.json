@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-09-09T17:51:42.902690-07:00",
+  "companies": 193,
+  "selected": 20,
+  "selected_price_anchors": 60,
+  "selected_pe_available": 19,
+  "selected_forward_pe_available": 19,
+  "source_hash_mismatches": [],
+  "momentum_points": 187,
+  "valuation_points": 143,
+  "same_day_scenario_companies": 191,
+  "visuals": {
+    "market-momentum-opportunity": 93545,
+    "earnings-valuation-mirror": 93522,
+    "sector-time-horizons": 93247,
+    "top20-price-performance": 93289,
+    "defense-and-upside": 93434
+  }
+}

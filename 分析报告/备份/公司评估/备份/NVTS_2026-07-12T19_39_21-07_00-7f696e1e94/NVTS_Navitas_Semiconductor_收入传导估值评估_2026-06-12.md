@@ -1,0 +1,168 @@
+# 公司收入传导与价值传导评估：Navitas Semiconductor
+
+报告日期：2026-06-12  
+公司代号：NVTS  
+公司名称：Navitas Semiconductor  
+主口径窗口：NTM，即 2026Q2-2027Q1。FY2026、FY2027、2030 SAM、长期 run-rate 和项目总金额只作补充，不替代 NTM 主表。  
+资料边界：使用 `公司调研/`、`行业调研/` 与公司公开披露、SEC 文件、公司技术发布、NVIDIA/OCP 等公开技术资料；未读取、引用或继承 `特征量化/`，未使用 Signals、回归、评分或排序结论。  
+重要限制：本报告只评估经营收入、利润、现金流和执行传导，不输出投资评级、目标价、股价区间、估值倍数判断，也不把市场价格作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 2026Q2-2027Q1；补充口径只用于说明 2027 以后 800VDC、SST/MVDC 和高压 SiC 的远期期权。当前经营主锚是 2026Q1 实际收入、2026Q2 管理层指引、管理层对全年顺序增长的表述，以及未量化的 customer engagements / order backlog 扩大。
+- 当前收入基准、指引和 run-rate：2026Q1 收入 860 万美元，2026Q2 指引 950-1050 万美元，midpoint 1000 万美元，环比约 +16%；2026Q1 后 TTM 收入约 4050 万美元，FY2025 收入约 4592 万美元。公司没有披露 AI 数据中心收入、产品级 backlog、bookings 或客户项目金额。
+- 重要产品/业务线：低功率 mobile/consumer/普通适配器存量业务；AI PSU / power shelf 用 650V GaNFast/GaNSafe 与 GeneSiC；100V GaN for 48V/50V IBC；10kW 800V-to-50V HV IBC；20kW 800V-to-6V direct PDB；GeneSiC/SiCPAK for UPS、SST、grid、energy infrastructure。
+- NTM 公司收入四情景：悲观 3200-4000 万美元；基准 4500-5500 万美元；乐观 7000-9000 万美元；极度乐观 1.20-1.70 亿美元。基准只是“从低点恢复并小幅超 TTM run-rate”，不是 AI 数据中心已经大规模兑现。
+- 利润或 EBITDA 四情景：悲观仍深度亏损，non-GAAP gross margin 约 34%-38%；基准 gross margin 约 39%-42%，non-GAAP operating loss 仍约 3500-4400 万美元；乐观 gross margin 约 42%-46%，经营亏损明显收窄；极度乐观需要至少一个 AI PSU/HV IBC 年度量产项目，才可能接近 EBITDA breakeven 或小幅正贡献。
+- 最大传导瓶颈：从 “NVIDIA/MGX/OCP 生态展示、客户 evaluation、design-in” 到 “命名客户、量产平台、交付窗口、可确认订单/backlog” 的转换。当前最缺的是可量化订单和客户认证结果。
+- 最大利润率变量：高功率 AI PSU、HV IBC 和高压 SiC 的 mix 是否足够大，能否抵消低收入基数、研发/应用工程投入、初期认证成本和多源压价。
+- 最大现金流变量：收入是否连续环比增长并接近 1500 万美元/季度以上；否则即使现金充足，经营现金流仍会按季度 1000 万美元以上消耗。2026Q1 经营现金流为 -1636 万美元，现金及受限现金约 2.234 亿美元。
+- 可信度：基准情景为中；乐观情景为低到中；极度乐观为低。原因不是行业需求不足，而是 NVTS 的收入确认证据仍以 C/D 级设计导入、样品、生态展示和未量化 backlog 为主。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 低功率 mobile / consumer / 普通适配器 | FY2025 mobile + consumer 约 2965 万美元；2026 run-rate 明显下台阶 | FY2025 约 64.6%，2026Q1 未披露 | 存量现金收入和抵消项 | A | 进入基准，但按下滑或低增长处理 | 无 |
+| AI PSU / power shelf 用 650V GaNFast/GaNSafe + GeneSiC | 2026Q1 高功率收入未披露；模型估计 AI PSU 相关约 150-350 万美元/季度，其中直接 AI DC 约 50-150 万美元/季度 | 低到中，取决于是否把 indirect high-power 算入 | NTM 最现实增量 | B/C | 保守进入基准；必须折扣 design-in 和未量化 backlog | 若进入主流 PSU BOM，2027 弹性很大 |
+| 100V GaN for 48V/50V IBC / HV buck | 当前可能小于 100 万美元/季度 | 很低 | 2026 主流 48V/50V rack 的器件机会 | C | 小比例进入基准；更多放在乐观 | 2027 以后随高功率 rack 扩散 |
+| 10kW 800V-to-50V HV IBC | 当前小于 100 万美元/季度，多为样品、评估、NRE 或工程支持 | 很低 | 800VDC 关键期权 | C/D | 基准只给 pilot/工程收入，不把客户 evaluation 当订单 | 2027 800VDC first production |
+| 20kW 800V-to-6V direct PDB | 当前接近 0 | 近零 | 极早期架构期权 | D | 不进入基准，乐观只给小额，极度乐观才纳入 | 若 GPU/server 平台接受直达 6V |
+| GeneSiC / SiCPAK for UPS、SST、grid、energy infrastructure | FY2025 solar/energy 约 463 万美元；另有部分 high-power / other 收入未披露 | FY2025 solar/energy 约 10.1%；2026 高功率 mix 上升 | 设施侧和高压可靠性期权 | A/C | 已有 energy/industrial 收入进入基准；AI SST/MVDC 只进乐观或附录 | 2300V/3300V SiC、SST/MVSST、AI campus grid-to-rack |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只判断产品外部需求池，不判断 NVTS 份额、收入确认或利润率。需求强弱与该产品当前预期比较；“AI 数据中心 CapEx 大”不自动等于 NVTS 收入。需求单位按业务线选择：低功率业务看终端出货和适配器需求；AI PSU/48V IBC 看 high-density rack、power shelf、PSU 和器件 BOM；800VDC/HV IBC 看 design-in、sidecar、reference design 和小批量订单；SiC/grid 看 UPS、BESS、SST、MVDC 和高压可靠性项目。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 低功率 mobile / consumer / 普通适配器 | FY2025 仍是最大收入来源，但公司主动降低低功率中国 mobile/consumer 优先级 | 终端需求、渠道库存或价格继续下滑，需求低于公司存量 run-rate | 需求低位稳定，作为现金收入而非成长引擎 | 消费电子补库存带来短期改善 | 不设极度乐观主口径，因不改变公司 AI 高功率结构 | 悲观较当前 run-rate 再低 15%-30%；基准约持平到小幅下降 | 低于或符合当前预期 | 公司已转向 high-power；该业务不是增量主线 |
+| AI PSU / power shelf 用 GaN + SiC | 2026 年主线是 48/50V ORv3/HPR、12kW/18.5kW PSU、power shelf；行业资料给出 2026H2-2027H1 AI 机柜级供电直接市场基准约 95-165 亿美元 | GB300/Blackwell rack 验收慢，PSU/power shelf 订单低于预期 | 高密 AI rack 按当前节奏放量，PSU、power shelf、BBU 和 48V bus 正常采购 | GB300、ASIC rack 和 BBU attach 加速，认证型号溢价 | 高密 rack 数量和单位 power BOM 同时上修，PSU 紧缺持续 | 行业需求池从悲观约 70-100 亿美元到极度乐观 250-420 亿美元，不是 NVTS 收入 | 基准符合当前行业预期；乐观需订单增强 | 行业资料显示 2026 赚钱主线是 48/50V 与高密 PSU；反证是 rack acceptance 延迟和 PSU 多源压价 |
+| 100V GaN for 48V/50V IBC / HV buck | 48V/50V 是 2026 高密 AI rack 主流，IBC/HV buck、hot-swap、VR/TLVR 是现实需求 | AI rack 仍用传统 silicon/MOSFET 或模块厂多源，GaN 采用低于预期 | 100V GaN 在部分 IBC/高频转换中小比例导入 | 模块厂因效率、功率密度、热约束提高 GaN attach | 多个 PSU/IBC 平台把 100V GaN 作为主方案或二供标准 | 从几百万美元级可参与需求上升到数千万美元级行业器件机会 | 基准略高于历史但符合 48V 主线 | 48V 主线明确；反证是 MPS、Infineon、TI、Renesas、EPC、Innoscience 等竞争密集 |
+| 10kW 800V-to-50V HV IBC | 2026 是 design-in、小批量和 reference design；行业资料给出未来 12 个月 800VDC/HV IBC/sidecar 需求池基准约 1.5-4 亿美元 | 800VDC 安规、OCP/UL/IEC、连接器和客户运维流程延迟，需求停留 demo | 少量 new-build AI hall 和 sidecar design-in，HV IBC 小批量验证 | Rubin/MI400/ASIC 新平台提前锁定 800VDC RFQ，2027 订单前置 | 多个 hyperscaler 把 800VDC 写入 300kW-1MW rack 标准，需求非线性上修 | 基准 1.5-4 亿美元；乐观 4-8 亿美元；极度乐观 8-15 亿美元 | 基准符合当前“2026 design-in、2027 first production”预期 | NVIDIA 800VDC 生态和 Navitas 10kW 平台支持需求；反证是 2026 仍非全面量产 |
+| 20kW 800V-to-6V direct PDB | 直接 800V-to-6V 是比 800V-to-50V 更激进的近端转换路线，当前以展示和生态验证为主 | 架构不被主流 GPU/server tray 接受，需求仍为实验室 | 只有少量样机、工程验证或客户共同开发 | NVIDIA/MGX 或 hyperscaler 平台继续验证 direct conversion，出现小批量样机 | 直达 6V 被下一代 GPU/ASIC tray 采用，减少传统 48V/12V 级数 | 基准无法可靠量化；乐观为百万美元级样机需求；极度乐观才形成千万美元级机会 | 基准低于题材热度，符合证据等级 | Navitas 已展示 PDB；反证是安全、隔离、VRM 生态、主板布局和客户认证周期 |
+| GeneSiC / SiCPAK for UPS、SST、grid、energy infrastructure | AI 园区电力瓶颈真实；UPS/BESS/MVDC/SST 是设施侧需求，但 SST/MVSST 2026 仍早期 | EV/工业 SiC 价格压力外溢，UPS/SST 认证慢，AI 设施侧订单不落地 | 1200V SiC、UPS/solar/energy 小幅增长；2300V/3300V SiC 主要采样 | AI campus 电力瓶颈推动 UPS、BESS、SST 样机和小项目 | MVSST/SST 进入大型 AI campus 标准化项目 | 基准更多是千万美元级公司可参与高压收入；行业 SST/MVSST 2027 才更大 | 基准符合当前预期，极度乐观偏远期 | 电力瓶颈支持需求；反证是 SiC 大厂规模强、设施侧认证周期长 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断可参与需求中哪些能进入 NVTS 的 NTM 收入表，以及当前可收入化基数。证据等级以收入表可确认性为准；A/B 可作为基准主锚，C 级只有客户、产品、时间表清楚时小比例进入基准，D/E 不进基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 低功率 mobile / consumer / 普通适配器 | FY2025 mobile 2149 万美元、consumer 816 万美元；2026Q1 未披露拆分 | 直接 | 成熟但增长弱，毛利和渠道质量低于高功率业务 | 1600-2000 万美元 | 1500-2000 万美元 | 1200-1600 万美元 | 1000-1500 万美元 | 基准为低位稳定；乐观/极度乐观情景下占比反而下降 | A | 是 | 已披露 FY2025 终端收入；公司主动降低低功率优先级 | 作为存量和抵消项纳入，不作为成长业务 |
+| AI PSU / power shelf 用 650V GaNFast/GaNSafe + GeneSiC | 公司披露 high-power markets 贡献上升、Q1 环比增长 18%、order backlog 扩大；未披露 AI PSU 金额 | 直接和间接 | 若进 PSU BOM，毛利可高于公司平均；初期有认证和应用工程成本 | 400-700 万美元 | 1200-1700 万美元 | 2500-3500 万美元 | 5000-7000 万美元 | 基准符合 Q2 指引与顺序增长；乐观需量产 design-in | B/C | 是，保守纳入 | 管理层指引、high-power mix、12kW PSU 平台、客户 engagement；无量化 backlog 需折扣 | NTM 最现实成长线，但不能把 PSU 市场直接当公司收入 |
+| 100V GaN for 48V/50V IBC / HV buck | 100V GaN、PSMC 200mm 计划和 48V 基础设施适配；收入未单列 | 直接 | 器件毛利可较好，但多源竞争强 | 50-200 万美元 | 200-500 万美元 | 600-1000 万美元 | 1200-2000 万美元 | 基准小比例，高于基准必须看到模块客户 | C | 是，小比例 | 48V 需求现实、产品适配、产能路线存在；缺客户命名和订单 | 基准纳入很小，乐观才成为明显增量 |
+| 10kW 800V-to-50V HV IBC | 2026-02 产品发布，客户 collaborative development/evaluation；无订单金额 | 直接 | 若量产毛利弹性高；pilot 阶段利润被工程成本抵消 | 0-100 万美元 | 100-400 万美元 | 700-1500 万美元 | 2800-4500 万美元 | 基准只代表 pilot/样品；乐观才高于当前预期 | C/D | 是，但只限小额 pilot | 有明确产品、参数和客户评估，但无量产合同、交付窗口和 backlog | 基准低权重；远期期权价值高 |
+| 20kW 800V-to-6V direct PDB | 2026 GTC/MGX 展示；无收入、订单或客户量产披露 | 直接 | 早期高技术含量，NTM 利润不可验证 | 0 | 0 | 100-300 万美元 | 500-1200 万美元 | 当前预期外，不能进基准 | D | 否 | 产品展示和生态展示不足以构成 A/B/C 基准收入 | 不进入基准；只作乐观小额或极度乐观上限 |
+| GeneSiC / SiCPAK for UPS、SST、grid、energy infrastructure | FY2025 solar/energy 463 万美元；Q1 高功率收入未拆；1200V/2300V/3300V SiC 产品扩展 | 直接和间接 | 高压可靠性有溢价；SiC 价格和大厂竞争约束明显 | 800-1200 万美元 | 1000-1400 万美元 | 1500-2000 万美元 | 2000-3200 万美元 | 基准为既有 energy/industrial + 小批量；SST/MVDC 不进基准主锚 | A/C | 是，限既有 energy/high-power | FY2025 solar/energy 已披露；新高压 SiC 采样和 SST 展示只作上修 | 基准纳入现有高压收入，AI SST/MVDC 放入乐观/附录 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从需求和可收入化基数出发，判断产品在 NTM 内对 NVTS 的收入和利润贡献。利润贡献以产品毛利贡献为主，未把公司全部研发、销售、管理费用机械分摊到单个产品；公司层面经营亏损在第 6 节处理。产品区间不是简单相加，公司汇总会扣除同一客户预算、产品重叠和概率折扣。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 低功率 mobile / consumer / 普通适配器 | 悲观 | 1600-2000 万美元 | 毛利 500-700 万美元 | 持平到下行 | 低于当前存量预期 | FY2025 收入仍大但公司降优先级 | 保留 | 渠道库存、价格、公司主动收缩 |
+| 低功率 mobile / consumer / 普通适配器 | 基准 | 1500-2000 万美元 | 毛利 500-800 万美元 | 稳定但低于高功率业务 | 符合低位 run-rate | 收入表 A 级证据 | 保留 | 不应把消费补库当 AI 增量 |
+| 低功率 mobile / consumer / 普通适配器 | 乐观 | 1200-1600 万美元 | 毛利 400-700 万美元 | 占比下降、结构改善 | 经营质量高于收入增长 | 高功率业务占比提高 | 保留 | 绝对收入可能下降但 mix 改善 |
+| 低功率 mobile / consumer / 普通适配器 | 极度乐观 | 1000-1500 万美元 | 毛利 300-600 万美元 | 占比显著下降 | 不作为极度乐观来源 | 公司转型成功时低功率占比下降 | 下移 | 不能靠旧业务构成极度乐观 |
+| AI PSU / power shelf 用 GaN + SiC | 悲观 | 400-700 万美元 | 毛利 100-300 万美元 | 低利用率和认证成本压制 | 明显低于顺序增长期待 | Q2 指引仍有增长，但无订单金额 | 保留 | PSU 厂多源、认证延迟、价格重谈 |
+| AI PSU / power shelf 用 GaN + SiC | 基准 | 1200-1700 万美元 | 毛利 500-800 万美元 | 高于公司平均但仍未规模化 | 符合 Q2 指引和 high-power mix | Q1 高功率驱动环比增长、12kW 平台 | 保留 | 未披露 named customer 和 backlog 金额 |
+| AI PSU / power shelf 用 GaN + SiC | 乐观 | 2500-3500 万美元 | 毛利 1100-1700 万美元 | mix 改善，GM 42%-48% 可能 | 高于当前预期 | 若 PSU/ODM 平台生产导入 | 保留 | 必须回答谁买、何时确认、为什么 Navitas 捕获 |
+| AI PSU / power shelf 用 GaN + SiC | 极度乐观 | 5000-7000 万美元 | 毛利 2500-3800 万美元 | 运营杠杆开始显性 | 远高于当前预期 | 需要 1-2 个高容量年度订单 | 保留但低可信 | 单一平台若延迟，极度乐观失效 |
+| 100V GaN for 48V/50V IBC | 悲观 | 50-200 万美元 | 毛利小于 100 万美元 | 初期低 | 低于 48V 题材预期 | 48V 需求强但公司订单缺失 | 保留 | MPS/Infineon/TI/Renesas/EPC 等竞争 |
+| 100V GaN for 48V/50V IBC | 基准 | 200-500 万美元 | 毛利 100-200 万美元 | 小幅正贡献 | 符合保守纳入 | 100V family、48V rack 主线 | 保留 | 模块客户未命名 |
+| 100V GaN for 48V/50V IBC | 乐观 | 600-1000 万美元 | 毛利 300-500 万美元 | 高功率 mix 改善 | 高于当前预期 | 模块厂采用或 PSU BOM 绑定 | 保留 | 100V GaN 可能被 silicon/MOSFET 方案压价 |
+| 100V GaN for 48V/50V IBC | 极度乐观 | 1200-2000 万美元 | 毛利 600-1100 万美元 | 明显扩张 | 显著超预期 | 多个平台标准化采用 | 下移为乐观上限 | 缺公开平台和年度订单 |
+| 10kW 800V-to-50V HV IBC | 悲观 | 0-100 万美元 | 接近 0 或负贡献 | 工程成本抵消 | 低于题材预期 | 800VDC 仍停留安全和标准验证 | 保留 | 认证、EMI、热、安规、客户运维 |
+| 10kW 800V-to-50V HV IBC | 基准 | 100-400 万美元 | 0-200 万美元 | 毛利率方向好但规模不足 | 符合 2026 design-in 预期 | 10kW 98.5% 平台、客户 evaluation | 保留 | evaluation 不等于订单 |
+| 10kW 800V-to-50V HV IBC | 乐观 | 700-1500 万美元 | 300-700 万美元 | 高毛利早期模块 | 高于当前预期 | 进入 2027 试生产或 sidecar RFQ | 保留 | 需要客户、产品、交付窗口 |
+| 10kW 800V-to-50V HV IBC | 极度乐观 | 2800-4500 万美元 | 1300-2500 万美元 | 非线性上修 | 大幅超预期 | 800VDC pilot 转生产，full-brick 成标杆 | 保留但低可信 | 800VDC 2026 大规模量产证据不足 |
+| 20kW 800V-to-6V direct PDB | 悲观 | 0 | 0 | 无 | 符合保守处理 | 仅展示/样机 | 保留 | 架构不确定 |
+| 20kW 800V-to-6V direct PDB | 基准 | 0 | 0 | 无 | 不进入基准 | D 级证据 | 排除 | D 级样品不能进基准 |
+| 20kW 800V-to-6V direct PDB | 乐观 | 100-300 万美元 | 0-100 万美元 | 初期不确定 | 小幅高于当前预期 | MGX/GTC 展示、直接转换逻辑 | 仅作跟踪 | 缺生产平台 |
+| 20kW 800V-to-6V direct PDB | 极度乐观 | 500-1200 万美元 | 200-600 万美元 | 先发溢价可能高 | 显著超预期但证据弱 | 需要 GPU/server OEM 平台样机转订单 | 移入附录 | NTM 内缺认证和收入确认路径 |
+| GeneSiC / SiCPAK for UPS、SST、grid | 悲观 | 800-1200 万美元 | 毛利 300-500 万美元 | SiC 价格承压 | 低于 high-power 预期 | FY2025 energy 收入 A 级，但新 SiC 订单未披露 | 保留 | 大厂竞争、设施认证慢 |
+| GeneSiC / SiCPAK for UPS、SST、grid | 基准 | 1000-1400 万美元 | 毛利 400-600 万美元 | 稳定到小幅改善 | 符合当前预期 | 1200V/2300V/3300V 产品扩展、energy run-rate | 保留 | AI SST 不进基准 |
+| GeneSiC / SiCPAK for UPS、SST、grid | 乐观 | 1500-2000 万美元 | 毛利 700-1000 万美元 | 高压可靠性 mix 提升 | 高于当前预期 | UPS/BESS/grid 客户认证转小批量 | 保留 | SiC ASP 和客户认证 |
+| GeneSiC / SiCPAK for UPS、SST、grid | 极度乐观 | 2000-3200 万美元 | 毛利 1000-1800 万美元 | 明显扩张 | 超预期 | AI campus UPS/SST 年度项目订单 | 下移为乐观上限 | SST/MVSST NTM 证据不足 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为 NVTS NTM 公司收入、毛利率、经营利润率、净利润/EBITDA 和自由现金流方向。公司汇总先和 NVTS 自身 Q2 指引、TTM run-rate、FY2025 收入和管理层顺序增长预期比较，不使用市场价格或估值作为经营证据。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观 | 3200-4000 万美元 | 较 TTM 4050 万美元约 -21% 到 -1%；较 FY2025 约 -30% 到 -13% | 低于 Q2 指引隐含的顺序恢复；Q2 后增长中断 | 34%-38% non-GAAP | -150% 到 -105% | non-GAAP 净亏损约 5000-7000 万美元；EBITDA 仍深负 | 经营现金流约 -6000 到 -8500 万美元 | 中 | 高功率订单不能转收入，低功率业务继续下滑，费用刚性 |
+| 基准 | 4500-5500 万美元 | 较 TTM 约 +11% 到 +36%；较 FY2025 约 -2% 到 +20% | 符合 Q2 指引和管理层“全年顺序增长”表述；未假设大型 AI 订单 | 39%-42% non-GAAP | -85% 到 -60% | non-GAAP 净亏损约 3500-4500 万美元；EBITDA 仍负 | 经营现金流约 -4500 到 -6500 万美元 | 中 | 设计导入多、订单金额少；季度收入仍太低 |
+| 乐观 | 7000-9000 万美元 | 较 TTM 约 +73% 到 +122%；较 FY2025 约 +52% 到 +96% | 高于当前可见 run-rate，需 AI PSU/48V/SiC 若干项目量产 | 42%-46% non-GAAP | -45% 到 -20% | non-GAAP 净亏损约 1500-3500 万美元；EBITDA 接近改善但未必转正 | 经营现金流约 -2000 到 -4500 万美元 | 低到中 | 命名客户、PSU/ODM BOM、确认节奏和高功率良率 |
+| 极度乐观 | 1.20-1.70 亿美元 | 较 TTM 约 +196% 到 +320%；较 FY2025 约 +161% 到 +270% | 明显高于当前预期；需要大客户年度订单或 800VDC pilot 转 production | 45%-52% non-GAAP | -10% 到 +10% | EBITDA breakeven 到小幅正；GAAP 净利润仍受 SBC、摊销和 earnout 波动影响 | 自由现金流 -1000 万美元到 +1500 万美元，取决于预收、库存和应收 | 低 | 多个核心环节必须同时成立：需求、份额、价格、产能、认证、收款 |
+
+汇总检查：
+
+- 未把行业 TAM、AI 数据中心 CapEx、GPU rack 采购总额或 800VDC 市场规模直接写成 NVTS 收入。
+- 10kW 800V-to-50V、20kW 800V-to-6V 与 SST/MVDC 不在基准中大额确认；它们主要是乐观和极度乐观的情景变量。
+- 低功率 mobile/consumer 是抵消项，不因为 FY2025 占比高就被当成成长业务。
+- 公司收入上修只有在高功率产品 mix 上升且不被多源压价、认证成本和费用刚性吞噬时，才传导到利润率改善。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测，只对前四步情景做证据校准。校准动作只使用保留、上移、下移、排除、移入附录、仅作跟踪。同一个风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 860 万美元、Q2 指引 950-1050 万美元 | 收入基数、公司汇总 | 支持基准 4500-5500 万美元，但不足以支持乐观 | Q2 GM guide 39.25% +/-75bp 支持基准毛利率 | 费用仍高于季度收入，现金流仍负 | 基准保留 |
+| high-power markets 贡献上升、customer engagements 和 order backlog 扩大但未量化 | 收入基数、产品贡献 | 支持 AI PSU/GeneSiC/48V 小比例进入基准 | mix 改善支持 GM 39%-42% | 未量化 backlog 限制可信度 | 基准保留，乐观保留 |
+| NVIDIA MGX / 800VDC 生态和 Navitas 10kW、20kW 产品展示 | 产品需求、收入基数 | 支持 800VDC 需求和公司参与资格，不支持基准大额收入 | 若量产可提高 mix，但当前不证明利润 | 认证、安规、客户平台节奏是关键 | 乐观保留，极度乐观仅作跟踪 |
+| 20kW 800V-to-6V direct PDB 仍是 D 级证据 | 收入基数 | 不进入基准 | NTM 利润不可验证 | 平台和认证未定 | 基准排除，移入附录 |
+| FY2025 mobile/consumer 仍高、公司主动降优先级 | 公司组合 | 形成存量收入和下滑抵消 | mix 改善可能来自占比下降而非绝对增长 | 渠道库存和价格仍影响现金 | 悲观保留，基准保留 |
+| SiC/UPS/SST/grid 需求真实但认证周期长 | 产品贡献、现金流 | 既有 energy 收入进入基准；SST/MVDC 不进基准 | 高压可靠性可溢价，但大厂竞争压制 | 项目型收入确认慢 | 基准保留，极度乐观下移 |
+| 2026-06-09 董事辞任 8-K | 执行可信度 | 不直接改变 NTM 收入模型 | 不直接改变毛利率 | 对 GeneSiC/SiC 战略连续性形成需要跟踪的治理变量 | 仅作跟踪 |
+| Q1 经营现金流 -1636 万美元、现金及受限现金约 2.234 亿美元 | 现金流、执行 | 不限制 NTM 研发和样品投入 | 低收入基数放大费用率 | runway 充足但仍烧钱；ATM 有稀释风险 | 基准保留 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 收入低于 Q2 后顺序增长路径，高功率订单无法按期确认 | 现金充足、Q2 指引仍增长，降低破产式风险 | 无量化 backlog、mobile 下滑、认证延迟、收入基数小 | 保留 | 悲观公司情景 3200-4000 万美元 | 中 | 800VDC 延后只约束 HV IBC/direct PDB，不再重复压低已披露低功率存量 |
+| 基准 | Q2 指引正常兑现，全年顺序增长但无大型 AI 量产订单 | Q1 环比 +18%、GM 改善、high-power mix 上升、现金充足 | AI 数据中心收入未单列，product backlog 未披露 | 保留 | 基准公司情景 4500-5500 万美元 | 中 | 未披露 backlog 已在收入基数和可信度处理，不再在需求端二次惩罚 |
+| 乐观 | AI PSU/48V/GeneSiC 若干项目进入生产，10kW HV IBC pilot 出货 | NVIDIA 生态、10kW/20kW 平台、PSMC/GF 产能路线、AI power 需求强 | 客户未命名、PSU 多源、800VDC 2026 主要 design-in | 保留 | 乐观公司情景 7000-9000 万美元 | 低到中 | 行业 CapEx 强只处理为需求上修，不能重复当作公司份额上修 |
+| 极度乐观 | 大客户年度订单或 800VDC pilot 转 production，使收入非线性上修 | 小基数、产品位置对、若进入主 BOM 切换成本高 | 任一核心环节缺证据：客户、订单、认证、交付、收款 | 保留 | 极度乐观上限 1.20-1.70 亿美元 | 低 | 同一客户认证风险只在收入确认/执行层处理，不再同时压低需求、价格和毛利三次 |
+
+## 8. 结论
+
+- 最可能情景：基准情景。NVTS 的 NTM 经营最可能是从 2025-2026 低点恢复，收入约 4500-5500 万美元，non-GAAP gross margin 稳在 39%-42%，但公司仍处在显著经营亏损和现金消耗阶段。这个情景承认 high-power mix 变好，但不把 800VDC 或 direct-to-6V 提前大规模收入化。
+- 乐观情景成立条件：Q2 实际收入不低于 1000 万美元 midpoint，Q3/Q4 指引继续环比增长；披露至少 1-2 个 AI PSU、48V IBC 或 high-power SiC 客户项目进入生产；non-GAAP gross margin 站上 40%-42%；order backlog 或 LTA 能被量化。
+- 极度乐观情景成立条件：某个 NVIDIA/MGX、hyperscaler、PSU/ODM 或 800VDC sidecar/HV IBC 平台明确采用 NVTS 器件或模块，并给出年度订单、交付窗口或量产认证；同时 100V/650V GaN 和 GeneSiC 供应链能支撑数千万美元级收入，费用率随收入放大而下降。
+- 悲观情景触发条件：Q2 实际收入接近或低于 950 万美元、Q3 指引不继续增长；high-power markets 仍不披露具体客户/订单；800VDC/OCP/UL/客户认证推迟；mobile/consumer 下滑继续抵消高功率增量；库存和应收上升导致现金流恶化。
+- NTM 收入结论：基准 4500-5500 万美元是最可验证口径，乐观 7000-9000 万美元需要产品级订单证据，极度乐观 1.20-1.70 亿美元必须有命名客户和量产路径，不应由 TAM 或 NVIDIA 生态展示单独推出。
+- 利润/现金流结论：基准下毛利率改善不足以覆盖费用，经营现金流仍负；只有收入接近 8000 万美元以上且 GM 42%+、费用受控时，现金流压力才明显缓解。极度乐观的关键不是收入倍增本身，而是高毛利产品 mix 和应收/库存周转没有恶化。
+- 主要传导瓶颈：行业需求 -> 客户架构选择 -> PSU/IBC/UPS/SST 认证 -> BOM 定点 -> 量产订单 -> 收入确认。NVTS 目前主要卡在 BOM 定点和量产订单之间。
+- 后续跟踪数据：Q2 实际收入和 Q3 指引；high-power revenue 占比；AI data center、grid/energy、performance computing 是否分拆；backlog、bookings、LTA 或客户交付窗口；10kW 800V-to-50V 认证进度；20kW 800V-to-6V 是否进入平台样机；PSMC/GF GaN 量产节点；non-GAAP GM 是否突破 40%-42%；经营现金流和库存周转。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司经营主数据截至 2026Q1 Form 10-Q 与 2026Q1 财报；产品和行业资料补充至 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Navitas 2026Q1 财报：收入 860 万美元，GAAP GM -9.3%，non-GAAP GM 39.0%，GAAP operating loss 2780 万美元，non-GAAP operating loss 1170 万美元，现金 2.210 亿美元，Q2 revenue guide 1000 万美元 +/-50 万美元，non-GAAP GM guide 39.25% +/-75bp。
+  - Navitas 2026Q1 Form 10-Q：现金及受限现金 2.234 亿美元，经营现金流 -1636 万美元，存货 1493 万美元，Q1 地区收入香港 658.3 万美元/76%，Distributor A 占收入 59%。
+  - Navitas FY2025 财报和公司调研：FY2025 收入约 4592 万美元，mobile 2149 万美元、consumer 816 万美元、solar/energy 463 万美元；Q4 2025 high-power markets 首次成为季度收入多数。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 若只按 Q2 指引 annualized，大约 3800-4200 万美元；若 Q2 后持续环比增长，基准 NTM 可到 4500-5500 万美元。
+  - FY2027 的主要变量不是行业需求，而是 800VDC/HV IBC、AI PSU 和 high-voltage SiC 是否从 design-in 转 production。
+  - 2030 SAM、60%+ CAGR、NVIDIA 800VDC 生态、SST/MVDC 等只用于远期期权，不进入 NTM 基准主表。
+- 本地来源：
+  - `公司调研/配电_电源_功率器件/NVTS_Navitas_Semiconductor_公司调研_2026-06-12.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- 主要公开来源：
+  - Navitas 2026Q1 results: https://navitassemi.com/navitas-semiconductor-announces-first-quarter-2026-financial-results/
+  - Navitas 2026Q1 Form 10-Q: https://ir.navitassemi.com/static-files/9c93cc68-df9b-4701-ba8e-6d685c58ea77
+  - Navitas FY2025 Form 10-K: https://www.sec.gov/Archives/edgar/data/1821769/000182176926000007/nvts-20251231.htm
+  - Navitas FY2025/Q4 results: https://navitassemi.com/navitas-semiconductor-announces-fourth-quarterand-full-year-2025-financial-results/
+  - Navitas 10kW 800V-to-50V platform: https://navitassemi.com/navitas-unveils-breakthrough-10-kw-dc-dc-platform-delivering-98-5-efficiency-for-800-vdc-next-gen-ai-data-centers/
+  - Navitas 20kW 800V-to-6V PDB at GTC 2026: https://navitassemi.com/navitas-debuts-revolutionary-800-v-6-v-power-delivery-board-at-nvidia-gtc-2026/
+  - Navitas NVIDIA MGX ecosystem announcement: https://navitassemi.com/navitas-collaborates-with-nvidia-mgx-ecosystem-to-accelerate-800-vdc-ai-infrastructure/
+  - NVIDIA 800VDC ecosystem technical blog: https://developer.nvidia.com/blog/building-the-800-vdc-ecosystem-for-efficient-scalable-ai-factories/
+  - GlobalFoundries / Navitas GaN manufacturing partnership: https://gf.com/news-and-events/news/globalfoundries-and-navitas-semiconductor-partner-to-accelerate-u-s-gan-technology-and-manufacturing-for-ai-datacenters-and-critical-power-applications/
+  - Navitas 2026-06-09 Form 8-K on director resignation: https://www.sec.gov/Archives/edgar/data/1821769/000110465926071850/tm2617349d1_8k.htm

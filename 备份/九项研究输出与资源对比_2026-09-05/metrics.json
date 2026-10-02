@@ -1,0 +1,2000 @@
+{
+  "tasks": [
+    {
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "threadId": "01a0735b-3c12-78f1-a16c-1ddb65856597",
+      "inputTokens": 4045793,
+      "cachedInputTokens": 3805696,
+      "uncachedInputTokens": 240097,
+      "outputTokens": 21969,
+      "reasoningOutputTokens": 2698,
+      "totalTokens": 4067762,
+      "cohort": "astra_new",
+      "id": "file-run-conference_sigcomm_2026_20260905",
+      "name": "ACM SIGCOMM 2026",
+      "outputFile": "基本面/行业调研/产业背景/顶级会议信息/conference_update_sigcomm_2026_2026-09-05.md",
+      "start": "2026-09-05 13:55:53",
+      "end": "2026-09-05 14:09:07",
+      "attempts": 1,
+      "minutes": 13.233333333333333,
+      "bytes": 48104,
+      "chars": 25036,
+      "lines": 371,
+      "uniqueUrls": 39,
+      "uniqueHosts": 16,
+      "formalSessionFirstUsage": "2026-09-05T20:56:09.163Z",
+      "formalSessionLastUsage": "2026-09-05T21:09:05.599Z"
+    },
+    {
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "threadId": "01a0735b-3902-7583-9333-5ff25e7acf19",
+      "inputTokens": 3181697,
+      "cachedInputTokens": 2990464,
+      "uncachedInputTokens": 191233,
+      "outputTokens": 25978,
+      "reasoningOutputTokens": 2091,
+      "totalTokens": 3207675,
+      "cohort": "astra_new",
+      "id": "file-run-conference_hot_interconnects_2026_20260905",
+      "name": "Hot Interconnects 2026",
+      "outputFile": "基本面/行业调研/产业背景/顶级会议信息/conference_update_hot_interconnects_2026_2026-09-05.md",
+      "start": "2026-09-05 13:55:52",
+      "end": "2026-09-05 14:10:57",
+      "attempts": 1,
+      "minutes": 15.083333333333334,
+      "bytes": 56121,
+      "chars": 29849,
+      "lines": 492,
+      "uniqueUrls": 58,
+      "uniqueHosts": 36,
+      "formalSessionFirstUsage": "2026-09-05T20:56:03.803Z",
+      "formalSessionLastUsage": "2026-09-05T21:10:54.305Z"
+    },
+    {
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "threadId": "01a0735b-35b3-7b71-8863-e44055b6cf11",
+      "inputTokens": 3903979,
+      "cachedInputTokens": 3680000,
+      "uncachedInputTokens": 223979,
+      "outputTokens": 27144,
+      "reasoningOutputTokens": 2215,
+      "totalTokens": 3931123,
+      "cohort": "astra_new",
+      "id": "file-run-conference_semicon_taiwan_2026_20260905",
+      "name": "SEMICON Taiwan 2026",
+      "outputFile": "基本面/行业调研/产业背景/顶级会议信息/conference_update_semicon_taiwan_2026_2026-09-05.md",
+      "start": "2026-09-05 13:55:51",
+      "end": "2026-09-05 14:11:26",
+      "attempts": 1,
+      "minutes": 15.583333333333334,
+      "bytes": 57351,
+      "chars": 29146,
+      "lines": 469,
+      "uniqueUrls": 49,
+      "uniqueHosts": 18,
+      "formalSessionFirstUsage": "2026-09-05T20:56:09.500Z",
+      "formalSessionLastUsage": "2026-09-05T21:11:25.198Z"
+    },
+    {
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "threadId": "01a0735b-3302-7a61-8ebf-d785dd3c7cdb",
+      "inputTokens": 4146508,
+      "cachedInputTokens": 3882368,
+      "uncachedInputTokens": 264140,
+      "outputTokens": 26809,
+      "reasoningOutputTokens": 2428,
+      "totalTokens": 4173317,
+      "cohort": "astra_new",
+      "id": "file-run-conference_hot_chips_2026_20260905",
+      "name": "Hot Chips 2026",
+      "outputFile": "基本面/行业调研/产业背景/顶级会议信息/conference_update_hot_chips_2026_2026-09-05.md",
+      "start": "2026-09-05 13:55:50",
+      "end": "2026-09-05 14:14:23",
+      "attempts": 1,
+      "minutes": 18.55,
+      "bytes": 61528,
+      "chars": 32572,
+      "lines": 510,
+      "uniqueUrls": 54,
+      "uniqueHosts": 39,
+      "formalSessionFirstUsage": "2026-09-05T20:56:07.335Z",
+      "formalSessionLastUsage": "2026-09-05T21:14:21.519Z"
+    },
+    {
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "threadId": "01a0735b-4bd9-73d0-b761-155f621fd369",
+      "inputTokens": 3685501,
+      "cachedInputTokens": 3458816,
+      "uncachedInputTokens": 226685,
+      "outputTokens": 41297,
+      "reasoningOutputTokens": 3351,
+      "totalTokens": 3726798,
+      "cohort": "astra_new",
+      "id": "file-run-background_global_map_20260905",
+      "name": "AI产业链全局图谱与口径字典",
+      "outputFile": "基本面/行业调研/产业背景/AI产业链全局图谱与口径字典_2026-09-05.md",
+      "start": "2026-09-05 13:55:57",
+      "end": "2026-09-05 14:18:33",
+      "attempts": 1,
+      "minutes": 22.6,
+      "bytes": 109441,
+      "chars": 55664,
+      "lines": 973,
+      "uniqueUrls": 47,
+      "uniqueHosts": 40,
+      "formalSessionFirstUsage": "2026-09-05T20:56:06.264Z",
+      "formalSessionLastUsage": "2026-09-05T21:18:32.451Z"
+    },
+    {
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "threadId": "01a0735b-4620-7761-85f3-366ea19fec15",
+      "inputTokens": 3298287,
+      "cachedInputTokens": 3047168,
+      "uncachedInputTokens": 251119,
+      "outputTokens": 45447,
+      "reasoningOutputTokens": 5647,
+      "totalTokens": 3343734,
+      "cohort": "astra_new",
+      "id": "file-run-background_token_demand_20260905",
+      "name": "全球AI需求与Token经济框架",
+      "outputFile": "基本面/行业调研/产业背景/全球AI需求与Token经济框架_2026-09-05.md",
+      "start": "2026-09-05 13:55:55",
+      "end": "2026-09-05 14:25:36",
+      "attempts": 1,
+      "minutes": 29.683333333333334,
+      "bytes": 97368,
+      "chars": 53610,
+      "lines": 679,
+      "uniqueUrls": 45,
+      "uniqueHosts": 33,
+      "formalSessionFirstUsage": "2026-09-05T20:56:09.639Z",
+      "formalSessionLastUsage": "2026-09-05T21:25:34.814Z"
+    },
+    {
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "threadId": "01a0735b-48e6-7140-9a6a-b2b8ce77898b",
+      "inputTokens": 5221399,
+      "cachedInputTokens": 4921344,
+      "uncachedInputTokens": 300055,
+      "outputTokens": 45479,
+      "reasoningOutputTokens": 3286,
+      "totalTokens": 5266878,
+      "cohort": "astra_new",
+      "id": "file-run-background_bottlenecks_20260905",
+      "name": "AI产业链瓶颈与反证指标总表",
+      "outputFile": "基本面/行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-09-05.md",
+      "start": "2026-09-05 13:55:56",
+      "end": "2026-09-05 14:26:55",
+      "attempts": 1,
+      "minutes": 30.983333333333334,
+      "bytes": 119317,
+      "chars": 58758,
+      "lines": 690,
+      "uniqueUrls": 47,
+      "uniqueHosts": 41,
+      "formalSessionFirstUsage": "2026-09-05T20:56:05.510Z",
+      "formalSessionLastUsage": "2026-09-05T21:26:53.810Z"
+    },
+    {
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "threadId": "01a0735b-427e-7063-97f5-7b1b7ac05ad6",
+      "inputTokens": 6357256,
+      "cachedInputTokens": 5988096,
+      "uncachedInputTokens": 369160,
+      "outputTokens": 53290,
+      "reasoningOutputTokens": 9995,
+      "totalTokens": 6410546,
+      "cohort": "astra_new",
+      "id": "file-run-background_datacenter_scale_20260905",
+      "name": "数据中心建设规模",
+      "outputFile": "基本面/行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-09-05.md",
+      "start": "2026-09-05 13:55:54",
+      "end": "2026-09-05 14:29:31",
+      "attempts": 1,
+      "minutes": 33.61666666666667,
+      "bytes": 129453,
+      "chars": 83778,
+      "lines": 846,
+      "uniqueUrls": 52,
+      "uniqueHosts": 39,
+      "formalSessionFirstUsage": "2026-09-05T20:56:09.157Z",
+      "formalSessionLastUsage": "2026-09-05T21:29:29.663Z"
+    },
+    {
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "threadId": "01a0735b-3ee0-7fe2-8126-399334b4f5cc",
+      "inputTokens": 8106675,
+      "cachedInputTokens": 7685248,
+      "uncachedInputTokens": 421427,
+      "outputTokens": 63555,
+      "reasoningOutputTokens": 7303,
+      "totalTokens": 8170230,
+      "cohort": "astra_new",
+      "id": "file-run-background_head_ai_chips_20260905",
+      "name": "头部AI芯片",
+      "outputFile": "基本面/行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-09-05.md",
+      "start": "2026-09-05 13:55:53",
+      "end": "2026-09-05 15:00:31",
+      "attempts": 1,
+      "minutes": 64.63333333333334,
+      "bytes": 144400,
+      "chars": 88699,
+      "lines": 907,
+      "uniqueUrls": 107,
+      "uniqueHosts": 90,
+      "formalSessionFirstUsage": "2026-09-05T20:56:04.623Z",
+      "formalSessionLastUsage": "2026-09-05T22:00:29.604Z"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "max",
+      "threadId": "01a0178b-627f-7c02-bc9b-0b8b81db1d00",
+      "inputTokens": 8843028,
+      "cachedInputTokens": 8056064,
+      "uncachedInputTokens": 786964,
+      "outputTokens": 53948,
+      "reasoningOutputTokens": 15801,
+      "totalTokens": 8896976,
+      "cohort": "sol_conference",
+      "id": "file-run-conference_dac_2026-2026-08-18T17_54_22-07_00-e00575ba28",
+      "name": "DAC 2026",
+      "outputFile": "基本面/行业调研/产业背景/顶级会议信息/conference_update_dac_2026_2026-08-18.md",
+      "start": "2026-08-18 18:03:24",
+      "end": "2026-08-18 18:31:06",
+      "attempts": 1,
+      "minutes": 27.7,
+      "bytes": 70418,
+      "chars": 44732,
+      "lines": 537,
+      "uniqueUrls": 49,
+      "uniqueHosts": 24,
+      "formalSessionFirstUsage": "2026-08-19T01:03:41.938Z",
+      "formalSessionLastUsage": "2026-08-19T01:31:05.620Z"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "max",
+      "threadId": "01a0178b-67f0-7123-a3bf-cd60ca340faf",
+      "inputTokens": 7809196,
+      "cachedInputTokens": 7262464,
+      "uncachedInputTokens": 546732,
+      "outputTokens": 58071,
+      "reasoningOutputTokens": 21799,
+      "totalTokens": 7867267,
+      "cohort": "sol_conference",
+      "id": "file-run-conference_farnborough_international_airshow_2026-2026-08-18T17_54_23-07_00-5c6ac00c24",
+      "name": "Farnborough International Airshow 2026",
+      "outputFile": "基本面/行业调研/产业背景/顶级会议信息/conference_update_farnborough_international_airshow_2026_2026-08-18.md",
+      "start": "2026-08-18 18:03:26",
+      "end": "2026-08-18 18:31:12",
+      "attempts": 1,
+      "minutes": 27.766666666666666,
+      "bytes": 78553,
+      "chars": 47871,
+      "lines": 409,
+      "uniqueUrls": 97,
+      "uniqueHosts": 35,
+      "formalSessionFirstUsage": "2026-08-19T01:03:43.822Z",
+      "formalSessionLastUsage": "2026-08-19T01:31:12.360Z"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "max",
+      "threadId": "01a0178b-652d-7911-a446-62ebe56c6c72",
+      "inputTokens": 10563819,
+      "cachedInputTokens": 9808640,
+      "uncachedInputTokens": 755179,
+      "outputTokens": 51632,
+      "reasoningOutputTokens": 16841,
+      "totalTokens": 10615451,
+      "cohort": "sol_conference",
+      "id": "file-run-conference_rss_2026-2026-08-18T17_54_22-07_00-e00575ba28",
+      "name": "RSS 2026",
+      "outputFile": "基本面/行业调研/产业背景/顶级会议信息/conference_update_rss_2026_2026-08-18.md",
+      "start": "2026-08-18 18:03:25",
+      "end": "2026-08-18 18:32:45",
+      "attempts": 1,
+      "minutes": 29.333333333333332,
+      "bytes": 67199,
+      "chars": 34479,
+      "lines": 495,
+      "uniqueUrls": 88,
+      "uniqueHosts": 32,
+      "formalSessionFirstUsage": "2026-08-19T01:03:49.361Z",
+      "formalSessionLastUsage": "2026-08-19T01:32:44.503Z"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "max",
+      "threadId": "01a0178b-5ef7-70f1-a203-94c190e32823",
+      "inputTokens": 16045565,
+      "cachedInputTokens": 15140864,
+      "uncachedInputTokens": 904701,
+      "outputTokens": 67139,
+      "reasoningOutputTokens": 21543,
+      "totalTokens": 16112704,
+      "cohort": "sol_conference",
+      "id": "file-run-conference_fms_2026-2026-08-18T17_54_21-07_00-56f0161ddc",
+      "name": "FMS 2026",
+      "outputFile": "基本面/行业调研/产业背景/顶级会议信息/conference_update_fms_2026_2026-08-18.md",
+      "start": "2026-08-18 18:03:22",
+      "end": "2026-08-18 18:39:44",
+      "attempts": 1,
+      "minutes": 36.36666666666667,
+      "bytes": 68276,
+      "chars": 42217,
+      "lines": 464,
+      "uniqueUrls": 58,
+      "uniqueHosts": 29,
+      "formalSessionFirstUsage": "2026-08-19T01:03:54.601Z",
+      "formalSessionLastUsage": "2026-08-19T01:39:44.310Z"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "max",
+      "threadId": "019f4a67-fc05-7ac1-9193-439d7a61f502",
+      "inputTokens": 9511395,
+      "cachedInputTokens": 9175808,
+      "uncachedInputTokens": 335587,
+      "outputTokens": 71163,
+      "reasoningOutputTokens": 17698,
+      "totalTokens": 9582558,
+      "cohort": "sol_background",
+      "id": "file-run-reasoning-test-ai-chain-t02-20260709-2026-07-09T21_53_22-07_00-2a69cc0564",
+      "name": "reasoning-test-ai-chain-t02-20260709",
+      "outputFile": "基本面/行业调研/产业背景/AI产业链全局图谱与口径字典_T02_2026-07-09.md",
+      "start": "2026-07-09 22:02:34",
+      "end": "2026-07-09 22:29:11",
+      "attempts": 1,
+      "minutes": 26.616666666666667,
+      "formalSessionFirstUsage": "2026-07-10T05:03:07.107Z",
+      "formalSessionLastUsage": "2026-07-10T05:28:49.431Z"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "max",
+      "threadId": "019f4a67-fbdf-7502-a4e9-69c78ba6b104",
+      "inputTokens": 9660184,
+      "cachedInputTokens": 9197312,
+      "uncachedInputTokens": 462872,
+      "outputTokens": 89163,
+      "reasoningOutputTokens": 21678,
+      "totalTokens": 9749347,
+      "cohort": "sol_background",
+      "id": "file-run-reasoning-test-datacenter-t05-20260709-2026-07-09T21_53_28-07_00-715212c3fc",
+      "name": "reasoning-test-datacenter-t05-20260709",
+      "outputFile": "基本面/行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md",
+      "start": "2026-07-09 22:02:34",
+      "end": "2026-07-09 22:36:33",
+      "attempts": 1,
+      "minutes": 33.983333333333334,
+      "bytes": 118665,
+      "chars": 84413,
+      "lines": 855,
+      "uniqueUrls": 96,
+      "uniqueHosts": 64,
+      "formalSessionFirstUsage": "2026-07-10T05:02:54.814Z",
+      "formalSessionLastUsage": "2026-07-10T05:36:08.962Z"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "max",
+      "threadId": "019f4b1f-1da6-7401-be84-cc963b3fc41a",
+      "inputTokens": 10608960,
+      "cachedInputTokens": 10115840,
+      "uncachedInputTokens": 493120,
+      "outputTokens": 63838,
+      "reasoningOutputTokens": 16199,
+      "totalTokens": 10672798,
+      "cohort": "sol_background",
+      "id": "file-run-background-global-ai-token-framework-20260710-2026-07-10T00_20_14-07_00-4fd0f2caf9",
+      "name": "background-global-ai-token-framework-20260710",
+      "outputFile": "基本面/行业调研/产业背景/全球AI需求与Token经济框架_2026-07-10.md",
+      "start": "2026-07-10 01:22:37",
+      "end": "2026-07-10 01:50:09",
+      "attempts": 1,
+      "minutes": 27.533333333333335,
+      "bytes": 89902,
+      "chars": 57351,
+      "lines": 750,
+      "uniqueUrls": 62,
+      "uniqueHosts": 36,
+      "formalSessionFirstUsage": "2026-07-10T08:23:26.504Z",
+      "formalSessionLastUsage": "2026-07-10T08:49:51.256Z"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "max",
+      "threadId": "019f4b23-9842-79f3-b000-5a13839ae974",
+      "inputTokens": 14281130,
+      "cachedInputTokens": 13686784,
+      "uncachedInputTokens": 594346,
+      "outputTokens": 74678,
+      "reasoningOutputTokens": 17980,
+      "totalTokens": 14355808,
+      "cohort": "sol_background",
+      "id": "file-run-background-head-ai-chips-20260710-2026-07-10T00_20_15-07_00-58e9a458fb",
+      "name": "background-head-ai-chips-20260710",
+      "outputFile": "基本面/行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md",
+      "start": "2026-07-10 01:27:31",
+      "end": "2026-07-10 02:01:12",
+      "attempts": 1,
+      "minutes": 33.68333333333333,
+      "bytes": 110987,
+      "chars": 71883,
+      "lines": 628,
+      "uniqueUrls": 84,
+      "uniqueHosts": 59,
+      "formalSessionFirstUsage": "2026-07-10T08:27:56.976Z",
+      "formalSessionLastUsage": "2026-07-10T09:00:53.354Z"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "max",
+      "threadId": "019f4b38-50f1-7fd3-b94d-72491b18b244",
+      "inputTokens": 8079800,
+      "cachedInputTokens": 7715072,
+      "uncachedInputTokens": 364728,
+      "outputTokens": 61873,
+      "reasoningOutputTokens": 14729,
+      "totalTokens": 8141673,
+      "cohort": "sol_background",
+      "id": "file-run-background-ai-chain-bottlenecks-20260710-2026-07-10T00_20_16-07_00-064d431a0a",
+      "name": "background-ai-chain-bottlenecks-20260710",
+      "outputFile": "基本面/行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-07-10.md",
+      "start": "2026-07-10 01:50:09",
+      "end": "2026-07-10 02:16:35",
+      "attempts": 1,
+      "minutes": 26.433333333333334,
+      "bytes": 117113,
+      "chars": 79028,
+      "lines": 1073,
+      "uniqueUrls": 69,
+      "uniqueHosts": 47,
+      "formalSessionFirstUsage": "2026-07-10T08:50:27.462Z",
+      "formalSessionLastUsage": "2026-07-10T09:16:19.151Z"
+    }
+  ],
+  "summary": {
+    "astra_new": {
+      "n": 9,
+      "inputTokens": 41947095,
+      "cachedInputTokens": 39459200,
+      "uncachedInputTokens": 2487895,
+      "outputTokens": 350968,
+      "reasoningOutputTokens": 39014,
+      "totalTokens": 42298063,
+      "minutes": 243.96666666666667,
+      "meanMinutes": 27.107407407407408,
+      "medianMinutes": 22.6,
+      "cacheRatio": 0.9406896949598059
+    },
+    "astra_conference": {
+      "n": 4,
+      "inputTokens": 15277977,
+      "cachedInputTokens": 14358528,
+      "uncachedInputTokens": 919449,
+      "outputTokens": 101900,
+      "reasoningOutputTokens": 9432,
+      "totalTokens": 15379877,
+      "minutes": 62.45,
+      "meanMinutes": 15.6125,
+      "medianMinutes": 15.333333333333334,
+      "cacheRatio": 0.9398186684009276
+    },
+    "astra_background": {
+      "n": 5,
+      "inputTokens": 26669118,
+      "cachedInputTokens": 25100672,
+      "uncachedInputTokens": 1568446,
+      "outputTokens": 249068,
+      "reasoningOutputTokens": 29582,
+      "totalTokens": 26918186,
+      "minutes": 181.51666666666668,
+      "meanMinutes": 36.303333333333335,
+      "medianMinutes": 30.983333333333334,
+      "cacheRatio": 0.9411886812304779
+    },
+    "sol_conference": {
+      "n": 4,
+      "inputTokens": 43261608,
+      "cachedInputTokens": 40268032,
+      "uncachedInputTokens": 2993576,
+      "outputTokens": 230790,
+      "reasoningOutputTokens": 75984,
+      "totalTokens": 43492398,
+      "minutes": 121.16666666666666,
+      "meanMinutes": 30.291666666666664,
+      "medianMinutes": 28.549999999999997,
+      "cacheRatio": 0.9308029419525968
+    },
+    "sol_background": {
+      "n": 5,
+      "inputTokens": 52141469,
+      "cachedInputTokens": 49890816,
+      "uncachedInputTokens": 2250653,
+      "outputTokens": 360715,
+      "reasoningOutputTokens": 88284,
+      "totalTokens": 52502184,
+      "minutes": 148.25,
+      "meanMinutes": 29.65,
+      "medianMinutes": 27.533333333333335,
+      "cacheRatio": 0.9568356426628486
+    },
+    "sol_all": {
+      "n": 9,
+      "inputTokens": 95403077,
+      "cachedInputTokens": 90158848,
+      "uncachedInputTokens": 5244229,
+      "outputTokens": 591505,
+      "reasoningOutputTokens": 164268,
+      "totalTokens": 95994582,
+      "minutes": 269.4166666666667,
+      "meanMinutes": 29.935185185185183,
+      "medianMinutes": 27.766666666666666,
+      "cacheRatio": 0.9450308190793469
+    }
+  },
+  "rateDetails": [
+    {
+      "id": "file-run-conference_sigcomm_2026_20260905",
+      "threadId": "01a0735b-3c12-78f1-a16c-1ddb65856597",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T13-55-54-01a0735b-3c12-78f1-a16c-1ddb65856597.jsonl",
+      "rates": [
+        {
+          "time": "2026-09-05T20:56:09.163Z",
+          "value": [
+            39.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T20:57:19.878Z",
+          "value": [
+            40.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:00:23.441Z",
+          "value": [
+            41.0,
+            1788748070,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          435.901,
+          "2026-09-05T21:07:45.097Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          22.983,
+          "2026-09-05T21:00:16.792Z",
+          "event_msg",
+          "item_completed",
+          null
+        ],
+        [
+          22.901,
+          "2026-09-05T21:08:36.580Z",
+          "event_msg",
+          "item_completed",
+          null
+        ],
+        [
+          19.869,
+          "2026-09-05T21:08:05.029Z",
+          "event_msg",
+          "item_completed",
+          null
+        ],
+        [
+          14.241,
+          "2026-09-05T21:09:05.569Z",
+          "event_msg",
+          "item_completed",
+          null
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 4045793,
+        "cached_input_tokens": 3805696,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 21969,
+        "reasoning_output_tokens": 2698,
+        "total_tokens": 4067762
+      }
+    },
+    {
+      "id": "file-run-conference_hot_interconnects_2026_20260905",
+      "threadId": "01a0735b-3902-7583-9333-5ff25e7acf19",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T13-55-53-01a0735b-3902-7583-9333-5ff25e7acf19.jsonl",
+      "rates": [
+        {
+          "time": "2026-09-05T20:56:03.803Z",
+          "value": [
+            39.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T20:57:17.893Z",
+          "value": [
+            40.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:08:45.351Z",
+          "value": [
+            41.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:10:25.189Z",
+          "value": [
+            42.0,
+            1788748070,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          538.348,
+          "2026-09-05T21:08:20.355Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          38.001,
+          "2026-09-05T21:10:00.198Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          29.083,
+          "2026-09-05T21:10:54.272Z",
+          "event_msg",
+          "item_completed",
+          null
+        ],
+        [
+          18.839,
+          "2026-09-05T20:59:21.995Z",
+          "event_msg",
+          "item_completed",
+          null
+        ],
+        [
+          12.411,
+          "2026-09-05T21:10:24.033Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 3181697,
+        "cached_input_tokens": 2990464,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 25978,
+        "reasoning_output_tokens": 2091,
+        "total_tokens": 3207675
+      }
+    },
+    {
+      "id": "file-run-conference_semicon_taiwan_2026_20260905",
+      "threadId": "01a0735b-35b3-7b71-8863-e44055b6cf11",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T13-55-52-01a0735b-35b3-7b71-8863-e44055b6cf11.jsonl",
+      "rates": [
+        {
+          "time": "2026-09-05T20:56:09.500Z",
+          "value": [
+            39.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T20:57:18.505Z",
+          "value": [
+            40.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:08:31.175Z",
+          "value": [
+            41.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:10:16.329Z",
+          "value": [
+            42.0,
+            1788748070,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          541.84,
+          "2026-09-05T21:08:10.888Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          26.129,
+          "2026-09-05T21:08:57.304Z",
+          "event_msg",
+          "item_completed",
+          null
+        ],
+        [
+          21.887,
+          "2026-09-05T21:11:25.150Z",
+          "event_msg",
+          "item_completed",
+          null
+        ],
+        [
+          15.239,
+          "2026-09-05T21:09:58.029Z",
+          "event_msg",
+          "item_completed",
+          null
+        ],
+        [
+          15.14,
+          "2026-09-05T21:10:16.258Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 3903979,
+        "cached_input_tokens": 3680000,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 27144,
+        "reasoning_output_tokens": 2215,
+        "total_tokens": 3931123
+      }
+    },
+    {
+      "id": "file-run-conference_hot_chips_2026_20260905",
+      "threadId": "01a0735b-3302-7a61-8ebf-d785dd3c7cdb",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T13-55-51-01a0735b-3302-7a61-8ebf-d785dd3c7cdb.jsonl",
+      "rates": [
+        {
+          "time": "2026-09-05T20:56:07.335Z",
+          "value": [
+            39.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T20:57:16.902Z",
+          "value": [
+            40.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:00:11.045Z",
+          "value": [
+            41.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:13:02.905Z",
+          "value": [
+            42.0,
+            1788748070,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          547.39,
+          "2026-09-05T21:09:28.653Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          177.337,
+          "2026-09-05T21:12:59.205Z",
+          "token_usage_record",
+          null,
+          null
+        ],
+        [
+          24.652,
+          "2026-09-05T21:09:53.348Z",
+          "event_msg",
+          "item_completed",
+          null
+        ],
+        [
+          21.907,
+          "2026-09-05T20:59:59.908Z",
+          "event_msg",
+          "item_completed",
+          null
+        ],
+        [
+          21.65,
+          "2026-09-05T21:13:48.255Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 4146508,
+        "cached_input_tokens": 3882368,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26809,
+        "reasoning_output_tokens": 2428,
+        "total_tokens": 4173317
+      }
+    },
+    {
+      "id": "file-run-background_global_map_20260905",
+      "threadId": "01a0735b-4bd9-73d0-b761-155f621fd369",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T13-55-58-01a0735b-4bd9-73d0-b761-155f621fd369.jsonl",
+      "rates": [
+        {
+          "time": "2026-09-05T20:56:06.264Z",
+          "value": [
+            39.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T20:57:22.850Z",
+          "value": [
+            40.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:11:21.287Z",
+          "value": [
+            41.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:11:45.443Z",
+          "value": [
+            42.0,
+            1788748070,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          402.699,
+          "2026-09-05T21:11:21.253Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          309.334,
+          "2026-09-05T21:04:29.997Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          305.759,
+          "2026-09-05T21:16:59.811Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          21.866,
+          "2026-09-05T21:17:21.738Z",
+          "event_msg",
+          "item_completed",
+          null
+        ],
+        [
+          20.712,
+          "2026-09-05T20:58:05.895Z",
+          "event_msg",
+          "item_completed",
+          null
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 3685501,
+        "cached_input_tokens": 3458816,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 41297,
+        "reasoning_output_tokens": 3351,
+        "total_tokens": 3726798
+      }
+    },
+    {
+      "id": "file-run-background_token_demand_20260905",
+      "threadId": "01a0735b-4620-7761-85f3-366ea19fec15",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T13-55-56-01a0735b-4620-7761-85f3-366ea19fec15.jsonl",
+      "rates": [
+        {
+          "time": "2026-09-05T20:56:09.639Z",
+          "value": [
+            39.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T20:57:12.571Z",
+          "value": [
+            40.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:00:39.481Z",
+          "value": [
+            41.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:21:48.532Z",
+          "value": [
+            43.0,
+            1788748070,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          615.362,
+          "2026-09-05T21:18:38.741Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          398.036,
+          "2026-09-05T21:07:30.306Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          175.628,
+          "2026-09-05T21:21:34.429Z",
+          "token_usage_record",
+          null,
+          null
+        ],
+        [
+          26.011,
+          "2026-09-05T21:07:56.379Z",
+          "event_msg",
+          "item_completed",
+          null
+        ],
+        [
+          25.404,
+          "2026-09-05T20:58:54.458Z",
+          "event_msg",
+          "item_completed",
+          null
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 3298287,
+        "cached_input_tokens": 3047168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 45447,
+        "reasoning_output_tokens": 5647,
+        "total_tokens": 3343734
+      }
+    },
+    {
+      "id": "file-run-background_bottlenecks_20260905",
+      "threadId": "01a0735b-48e6-7140-9a6a-b2b8ce77898b",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T13-55-57-01a0735b-48e6-7140-9a6a-b2b8ce77898b.jsonl",
+      "rates": [
+        {
+          "time": "2026-09-05T20:56:05.510Z",
+          "value": [
+            39.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T20:57:17.800Z",
+          "value": [
+            40.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:04:13.075Z",
+          "value": [
+            41.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:13:03.150Z",
+          "value": [
+            42.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:23:22.631Z",
+          "value": [
+            43.0,
+            1788748070,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          228.274,
+          "2026-09-05T21:18:10.992Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          184.62,
+          "2026-09-05T21:12:59.924Z",
+          "token_usage_record",
+          null,
+          null
+        ],
+        [
+          181.899,
+          "2026-09-05T21:21:24.452Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          176.497,
+          "2026-09-05T21:09:55.242Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          156.345,
+          "2026-09-05T21:06:52.444Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 5221399,
+        "cached_input_tokens": 4921344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 45479,
+        "reasoning_output_tokens": 3286,
+        "total_tokens": 5266878
+      }
+    },
+    {
+      "id": "file-run-background_datacenter_scale_20260905",
+      "threadId": "01a0735b-427e-7063-97f5-7b1b7ac05ad6",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T13-55-55-01a0735b-427e-7063-97f5-7b1b7ac05ad6.jsonl",
+      "rates": [
+        {
+          "time": "2026-09-05T20:56:09.157Z",
+          "value": [
+            39.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T20:57:18.207Z",
+          "value": [
+            40.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:00:55.120Z",
+          "value": [
+            41.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:11:27.108Z",
+          "value": [
+            42.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:23:08.444Z",
+          "value": [
+            43.0,
+            1788748070,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          139.738,
+          "2026-09-05T21:03:41.747Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          130.442,
+          "2026-09-05T21:11:22.773Z",
+          "token_usage_record",
+          null,
+          null
+        ],
+        [
+          120.375,
+          "2026-09-05T21:15:46.928Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          107.877,
+          "2026-09-05T21:09:12.277Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          103.891,
+          "2026-09-05T21:18:24.867Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 6357256,
+        "cached_input_tokens": 5988096,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 53290,
+        "reasoning_output_tokens": 9995,
+        "total_tokens": 6410546
+      }
+    },
+    {
+      "id": "file-run-background_head_ai_chips_20260905",
+      "threadId": "01a0735b-3ee0-7fe2-8126-399334b4f5cc",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\05\\rollout-2026-09-05T13-55-54-01a0735b-3ee0-7fe2-8126-399334b4f5cc.jsonl",
+      "rates": [
+        {
+          "time": "2026-09-05T20:56:04.623Z",
+          "value": [
+            39.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T20:57:15.360Z",
+          "value": [
+            40.0,
+            1788748070,
+            10080
+          ]
+        },
+        {
+          "time": "2026-09-05T21:00:05.918Z",
+          "value": [
+            41.0,
+            1788748070,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          1219.763,
+          "2026-09-05T21:20:25.681Z",
+          "token_usage_record",
+          null,
+          null
+        ],
+        [
+          250.154,
+          "2026-09-05T21:48:56.699Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          188.098,
+          "2026-09-05T21:55:28.881Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          172.629,
+          "2026-09-05T21:44:21.495Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          158.715,
+          "2026-09-05T21:33:42.330Z",
+          "event_msg",
+          "token_count",
+          null
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 8106675,
+        "cached_input_tokens": 7685248,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 63555,
+        "reasoning_output_tokens": 7303,
+        "total_tokens": 8170230
+      }
+    },
+    {
+      "id": "file-run-conference_dac_2026-2026-08-18T17_54_22-07_00-e00575ba28",
+      "threadId": "01a0178b-627f-7c02-bc9b-0b8b81db1d00",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T18-03-25-01a0178b-627f-7c02-bc9b-0b8b81db1d00.jsonl",
+      "rates": [
+        {
+          "time": "2026-08-19T01:03:41.938Z",
+          "value": [
+            13.0,
+            1787227317,
+            10080
+          ]
+        },
+        {
+          "time": "2026-08-19T01:30:10.779Z",
+          "value": [
+            14.0,
+            1787227317,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          473.477,
+          "2026-08-19T01:25:59.927Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          160.236,
+          "2026-08-19T01:12:44.931Z",
+          "compacted",
+          null,
+          null
+        ],
+        [
+          56.239,
+          "2026-08-19T01:26:56.222Z",
+          "compacted",
+          null,
+          null
+        ],
+        [
+          40.951,
+          "2026-08-19T01:09:58.288Z",
+          "event_msg",
+          "item_completed",
+          null
+        ],
+        [
+          22.309,
+          "2026-08-19T01:30:09.500Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 8843028,
+        "cached_input_tokens": 8056064,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 53948,
+        "reasoning_output_tokens": 15801,
+        "total_tokens": 8896976
+      }
+    },
+    {
+      "id": "file-run-conference_farnborough_international_airshow_2026-2026-08-18T17_54_23-07_00-5c6ac00c24",
+      "threadId": "01a0178b-67f0-7123-a3bf-cd60ca340faf",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T18-03-27-01a0178b-67f0-7123-a3bf-cd60ca340faf.jsonl",
+      "rates": [
+        {
+          "time": "2026-08-19T01:03:43.822Z",
+          "value": [
+            13.0,
+            1787227317,
+            10080
+          ]
+        },
+        {
+          "time": "2026-08-19T01:30:36.780Z",
+          "value": [
+            14.0,
+            1787227317,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          169.759,
+          "2026-08-19T01:10:07.178Z",
+          "compacted",
+          null,
+          null
+        ],
+        [
+          134.855,
+          "2026-08-19T01:21:27.195Z",
+          "compacted",
+          null,
+          null
+        ],
+        [
+          115.469,
+          "2026-08-19T01:19:12.283Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          99.481,
+          "2026-08-19T01:28:59.837Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          98.25,
+          "2026-08-19T01:24:44.648Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 7809196,
+        "cached_input_tokens": 7262464,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 58071,
+        "reasoning_output_tokens": 21799,
+        "total_tokens": 7867267
+      }
+    },
+    {
+      "id": "file-run-conference_rss_2026-2026-08-18T17_54_22-07_00-e00575ba28",
+      "threadId": "01a0178b-652d-7911-a446-62ebe56c6c72",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T18-03-26-01a0178b-652d-7911-a446-62ebe56c6c72.jsonl",
+      "rates": [
+        {
+          "time": "2026-08-19T01:03:49.361Z",
+          "value": [
+            13.0,
+            1787227317,
+            10080
+          ]
+        },
+        {
+          "time": "2026-08-19T01:30:06.981Z",
+          "value": [
+            14.0,
+            1787227317,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          190.44,
+          "2026-08-19T01:29:18.929Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          183.427,
+          "2026-08-19T01:25:27.509Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          144.344,
+          "2026-08-19T01:11:57.919Z",
+          "compacted",
+          null,
+          null
+        ],
+        [
+          131.59,
+          "2026-08-19T01:21:16.659Z",
+          "compacted",
+          null,
+          null
+        ],
+        [
+          17.74,
+          "2026-08-19T01:22:01.341Z",
+          "event_msg",
+          "item_completed",
+          null
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 10563819,
+        "cached_input_tokens": 9808640,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 51632,
+        "reasoning_output_tokens": 16841,
+        "total_tokens": 10615451
+      }
+    },
+    {
+      "id": "file-run-conference_fms_2026-2026-08-18T17_54_21-07_00-56f0161ddc",
+      "threadId": "01a0178b-5ef7-70f1-a203-94c190e32823",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\08\\18\\rollout-2026-08-18T18-03-24-01a0178b-5ef7-70f1-a203-94c190e32823.jsonl",
+      "rates": [
+        {
+          "time": "2026-08-19T01:03:54.601Z",
+          "value": [
+            13.0,
+            1787227317,
+            10080
+          ]
+        },
+        {
+          "time": "2026-08-19T01:33:22.340Z",
+          "value": [
+            14.0,
+            1787227317,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          389.082,
+          "2026-08-19T01:32:53.114Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          170.858,
+          "2026-08-19T01:18:05.770Z",
+          "compacted",
+          null,
+          null
+        ],
+        [
+          123.476,
+          "2026-08-19T01:25:15.366Z",
+          "compacted",
+          null,
+          null
+        ],
+        [
+          116.648,
+          "2026-08-19T01:09:46.715Z",
+          "compacted",
+          null,
+          null
+        ],
+        [
+          38.709,
+          "2026-08-19T01:35:43.765Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 16045565,
+        "cached_input_tokens": 15140864,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 67139,
+        "reasoning_output_tokens": 21543,
+        "total_tokens": 16112704
+      }
+    },
+    {
+      "id": "file-run-reasoning-test-ai-chain-t02-20260709-2026-07-09T21_53_22-07_00-2a69cc0564",
+      "threadId": "019f4a67-fc05-7ac1-9193-439d7a61f502",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\07\\09\\rollout-2026-07-09T22-02-37-019f4a67-fc05-7ac1-9193-439d7a61f502.jsonl",
+      "rates": [
+        {
+          "time": "2026-07-10T05:03:07.107Z",
+          "value": [
+            3.0,
+            1784238761,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T05:04:21.528Z",
+          "value": [
+            4.0,
+            1784238761,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T05:05:59.876Z",
+          "value": [
+            5.0,
+            1784238761,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T05:08:48.745Z",
+          "value": [
+            6.0,
+            1784238761,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T05:16:24.540Z",
+          "value": [
+            7.0,
+            1784238761,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T05:24:37.710Z",
+          "value": [
+            7.0,
+            1784238762,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T05:25:08.782Z",
+          "value": [
+            7.0,
+            1784238761,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          235.11,
+          "2026-07-10T05:13:00.474Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          189.845,
+          "2026-07-10T05:16:13.716Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          163.678,
+          "2026-07-10T05:20:01.523Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          139.204,
+          "2026-07-10T05:23:08.481Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          32.133,
+          "2026-07-10T05:28:49.399Z",
+          "event_msg",
+          "agent_message",
+          null
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 9511395,
+        "cached_input_tokens": 9175808,
+        "output_tokens": 71163,
+        "reasoning_output_tokens": 17698,
+        "total_tokens": 9582558
+      }
+    },
+    {
+      "id": "file-run-reasoning-test-datacenter-t05-20260709-2026-07-09T21_53_28-07_00-715212c3fc",
+      "threadId": "019f4a67-fbdf-7502-a4e9-69c78ba6b104",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\07\\09\\rollout-2026-07-09T22-02-37-019f4a67-fbdf-7502-a4e9-69c78ba6b104.jsonl",
+      "rates": [
+        {
+          "time": "2026-07-10T05:02:54.814Z",
+          "value": [
+            3.0,
+            1784238761,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T05:04:19.894Z",
+          "value": [
+            4.0,
+            1784238761,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T05:05:59.947Z",
+          "value": [
+            5.0,
+            1784238761,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T05:10:45.042Z",
+          "value": [
+            6.0,
+            1784238761,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T05:20:48.216Z",
+          "value": [
+            7.0,
+            1784238761,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T05:31:00.630Z",
+          "value": [
+            8.0,
+            1784238761,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          213.3,
+          "2026-07-10T05:10:32.728Z",
+          "compacted",
+          null,
+          null
+        ],
+        [
+          211.017,
+          "2026-07-10T05:20:48.141Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          208.705,
+          "2026-07-10T05:17:03.780Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          187.83,
+          "2026-07-10T05:30:45.164Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          167.833,
+          "2026-07-10T05:24:11.831Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 9660184,
+        "cached_input_tokens": 9197312,
+        "output_tokens": 89163,
+        "reasoning_output_tokens": 21678,
+        "total_tokens": 9749347
+      }
+    },
+    {
+      "id": "file-run-background-global-ai-token-framework-20260710-2026-07-10T00_20_14-07_00-4fd0f2caf9",
+      "threadId": "019f4b1f-1da6-7401-be84-cc963b3fc41a",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\07\\10\\rollout-2026-07-10T01-22-38-019f4b1f-1da6-7401-be84-cc963b3fc41a.jsonl",
+      "rates": [
+        {
+          "time": "2026-07-10T08:23:26.504Z",
+          "value": [
+            15.0,
+            1784238761,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T08:30:58.959Z",
+          "value": [
+            16.0,
+            1784238761,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          218.558,
+          "2026-07-10T08:30:48.472Z",
+          "compacted",
+          null,
+          null
+        ],
+        [
+          204.265,
+          "2026-07-10T08:36:51.973Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          194.139,
+          "2026-07-10T08:43:08.763Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          126.492,
+          "2026-07-10T08:39:38.984Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          46.965,
+          "2026-07-10T08:45:19.754Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 10608960,
+        "cached_input_tokens": 10115840,
+        "output_tokens": 63838,
+        "reasoning_output_tokens": 16199,
+        "total_tokens": 10672798
+      }
+    },
+    {
+      "id": "file-run-background-head-ai-chips-20260710-2026-07-10T00_20_15-07_00-58e9a458fb",
+      "threadId": "019f4b23-9842-79f3-b000-5a13839ae974",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\07\\10\\rollout-2026-07-10T01-27-32-019f4b23-9842-79f3-b000-5a13839ae974.jsonl",
+      "rates": [
+        {
+          "time": "2026-07-10T08:27:56.976Z",
+          "value": [
+            15.0,
+            1784238761,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T08:30:56.567Z",
+          "value": [
+            16.0,
+            1784238761,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T08:39:28.978Z",
+          "value": [
+            16.0,
+            1784238762,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T08:39:40.507Z",
+          "value": [
+            16.0,
+            1784238761,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          172.677,
+          "2026-07-10T08:36:08.073Z",
+          "compacted",
+          null,
+          null
+        ],
+        [
+          152.097,
+          "2026-07-10T08:42:39.950Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          125.792,
+          "2026-07-10T08:49:51.224Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          121.304,
+          "2026-07-10T08:45:27.978Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          105.975,
+          "2026-07-10T08:55:51.972Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 14281130,
+        "cached_input_tokens": 13686784,
+        "output_tokens": 74678,
+        "reasoning_output_tokens": 17980,
+        "total_tokens": 14355808
+      }
+    },
+    {
+      "id": "file-run-background-ai-chain-bottlenecks-20260710-2026-07-10T00_20_16-07_00-064d431a0a",
+      "threadId": "019f4b38-50f1-7fd3-b94d-72491b18b244",
+      "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\07\\10\\rollout-2026-07-10T01-50-10-019f4b38-50f1-7fd3-b94d-72491b18b244.jsonl",
+      "rates": [
+        {
+          "time": "2026-07-10T08:50:27.462Z",
+          "value": [
+            16.0,
+            1784238761,
+            10080
+          ]
+        },
+        {
+          "time": "2026-07-10T09:05:41.763Z",
+          "value": [
+            17.0,
+            1784238761,
+            10080
+          ]
+        }
+      ],
+      "largestGaps": [
+        [
+          210.831,
+          "2026-07-10T09:09:33.563Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          188.36,
+          "2026-07-10T09:03:55.363Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          138.123,
+          "2026-07-10T09:00:32.323Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          125.68,
+          "2026-07-10T09:11:59.817Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ],
+        [
+          95.342,
+          "2026-07-10T09:05:41.646Z",
+          "response_item",
+          "custom_tool_call",
+          "exec"
+        ]
+      ],
+      "lastSessionUsage": {
+        "input_tokens": 8079800,
+        "cached_input_tokens": 7715072,
+        "output_tokens": 61873,
+        "reasoning_output_tokens": 14729,
+        "total_tokens": 8141673
+      }
+    }
+  ]
+}

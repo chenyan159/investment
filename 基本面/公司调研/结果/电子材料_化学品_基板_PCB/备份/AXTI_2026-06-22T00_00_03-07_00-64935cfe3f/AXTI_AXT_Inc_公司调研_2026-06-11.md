@@ -1,0 +1,412 @@
+# 公司：AXTI AXT Inc 公司调研：AI 光互联把 InP 衬底小厂推到供应链瓶颈位（2026-06-11）
+
+报告日期：2026-06-11（America/Los_Angeles）  
+股票代码：AXTI  
+公司名称：AXT Inc  
+标准归属目录：`公司调研/半导体材料_化学品_基板/`  
+研究口径：只使用公司一手材料、联网公开资料，以及项目内 `行业调研/` 的 AI 数据中心、光互联、硅光/光子材料资料；未使用 `特征量化/`，未读取同目录其他公司调研报告，未修改 `公司调研/公司索引.md`。
+
+## 0. 结论先行
+
+AXT Inc 是一家化合物半导体衬底材料公司，不是光模块公司、不是激光器芯片公司，也不是 AI 芯片公司。它位于 AI 光互联产业链更上游：向激光器、探测器、EML、硅光外置激光源、CPO/光引擎和 PON/数据中心光器件供应 InP、GaAs、Ge 衬底，同时通过中国子公司和合资/控股材料公司提供高纯镓、InP base material、pBN 坩埚、石英、砷、锗等原材料。
+
+当前投资人对 AXTI 的认知已经从“周期性小型 III-V 衬底厂”切换成“AI 数据中心 InP 衬底短缺标的”。这个切换由三个硬事实驱动：第一，2026Q1 InP 收入 1360 万美元，占公司收入 50% 以上；第二，InP backlog 从 2025Q3 的 4900 万美元以上、2025Q4 的 6000 万美元以上，跳到 2026Q1 电话会披露的 1 亿美元以上；第三，公司在 2026 年 4 月完成约 6.325 亿美元股权融资，用于 Tongmei InP 扩产和 6 英寸 InP R&D。
+
+AXTI 最大的真实机会是 800G/1.6T 光模块、EML、CW-DFB、SiPh、CPO/ELS 对 InP 高质量低 EPD 衬底的需求快速上升。项目内光互联资料和 TrendForce/Cignal 等外部摘要给出相同方向：2026 年 AI 光收发器市场约 260 亿美元，较 2025 年 165 亿美元增长 57%+；2026 年 1.6T 模块出货预计超过 500 万只；EML 与 CW-DFB LD 月产能 2026 年预计约 5070 万颗。AXTI 当前收入基数小，因此哪怕只吃到上游衬底的很小 BOM 占比，也会体现为公司级别的高弹性。
+
+但这不是无风险垄断。AXTI 的制造和原材料体系高度在中国，InP/GaAs/Ge 出口需要中国商务部许可；2025-2026 年收入节奏已经被许可证显著扰动。客户会双源化，SiPh/CPO 也会改变价值分布。AXTI 的优势在低 EPD、客户资格、快速扩产、自制晶体生长炉和垂直原材料；短板是规模仍小、产品单价在光模块 BOM 中占比低、客户和监管链条复杂、2026 年之后行业可能出现模块 ASP 下行和扩产节奏错配。
+
+核心判断：AXTI 的基本面已经进入上行周期，但当前股价和市值已经透支了相当多的“极度乐观 InP 扩产兑现”。未来 12 个月最关键的不是“AI 光互联有没有需求”，而是四个验证点：InP 出口许可是否持续改善；Q2/Q3 2026 InP 收入是否从 1700 万美元以上继续爬坡；长期供货协议/LTA 是否落地；2026 年底 3500 万美元/季 InP 产能是否按时形成可出货、可验收、可收款收入。
+
+## 1. 公司整体业务、投资人认知、三年变化和产业链位置
+
+### 1.1 公司业务
+
+AXT 是化合物半导体和单元素半导体衬底供应商。公司在 2025 10-K 中明确说自己“不设计或制造芯片”，而是在芯片/光电器件之前提供材料衬底。核心产品如下：
+
+| 产品组 | 主要产品/尺寸 | 关键用途 | 对 AI 数据中心相关性 |
+|---|---:|---|---|
+| InP 衬底 | 2、3、4、6 英寸 | 高速数据中心光传输、EML/激光器/探测器、PON、SiPh、PIC、5G、传感 | 最高；2026Q1 公司收入 50%+，主要增量来自 AI 数据中心光互联 |
+| GaAs 半绝缘衬底 | 1-6 英寸 | RF 功放、Wi-Fi、卫星通信、无线设备、HPT | 中低；无线/RF 复苏，非 AI 主线 |
+| GaAs 半导电衬底 | 1-8 英寸 | LED、VCSEL、3D sensing、工业激光、机器人/车载 LiDAR、数据中心 VCSEL | 中；机器人/车载 VCSEL 有潜力，数据中心 VCSEL 单位材料消耗小 |
+| Ge 衬底 | 2、4、6 英寸 | 卫星多结太阳能、红外探测、LED carrier wafer | 低；毛利差、价格敏感，不是重点 |
+| 原材料组 | 6N+/7N+ 高纯镓、InP base material、pBN 坩埚、B2O3、石英、砷、锗等 | 自供和外售，支撑 InP/GaAs 成本、交期和质量 | 间接高；pBN 坩埚和高纯铟/镓决定 InP 扩产弹性 |
+
+2025 年，衬底产品组贡献公司 consolidated revenue 的 67%，原材料组贡献 33%；2024 年分别为 68%/32%，2023 年为 63%/37%。这说明公司不是纯 InP 公司，但 2026 年起 InP 已成为边际收入、毛利和估值的核心。
+
+### 1.2 投资人心中的公司形象
+
+2024 年之前，AXTI 更像低市值、低流动性、强周期的小型材料股：收入规模不到 1 亿美元，毛利率受产品 mix、产能利用率、GaAs 良率、Ge 原材料和中国出口管制影响很大。
+
+2025 年下半年开始，投资人把它重新定价为 AI 光互联瓶颈股。背后不是泛 AI 叙事，而是 InP 衬底进入 EML、CW laser、探测器、SiPh 和 CPO 光源链条。Q3 2025 管理层披露：AI 基础设施和数据中心升级周期推动 InP demand，InP order backlog 超过 4900 万美元；客户为了许可证和交期开始下更长期订单。Q1 2026 又披露 InP backlog 超过 1 亿美元，并称 Q2 将是 AXT 历史最大 InP 季度。
+
+投资人当前给它的估值更像“上游瓶颈成长股”，而不是“当前利润公司”。截至 2026-06-11，TTM 收入约 9590 万美元、TTM 仍亏损，但市值已在约 55 亿美元附近波动，P/S 远高于传统半导体材料股。这意味着市场已经假设 2026-2028 年 InP 收入会从几千万美元级跃升到数亿美元级。
+
+### 1.3 最近三年重大业务变化/转型
+
+| 时间 | 变化 | 业务含义 |
+|---|---|---|
+| 2023-2024 | 中国对镓、锗及相关材料实施出口许可；AXT 的 GaAs/Ge 出口需要许可证 | 地缘监管成为收入确认和交期变量，北美收入占比下降 |
+| 2025-02 | 中国将 InP 衬底加入出口管制清单；InP 出口需要许可证 | 短期压制 Q1/Q2 2025，长期反而暴露 InP 供需紧缺和客户锁单需求 |
+| 2025Q3 | InP 收入升至 1310 万美元，backlog 超过 4900 万美元；公司称材料被多个美国 hyperscaler 使用 | AI 光互联主线开始反映到财务数字 |
+| 2025Q4 | InP backlog 超过 6000 万美元；公司新增约 25% InP capacity，计划 2026 年底较 Q4 2025 翻倍 | 从需求验证转入产能验证 |
+| 2025Q4/2026Q1 | 股权融资：2025 年底公开发行带来约 9390 万美元；2026 年 4 月又完成约 6.325 亿美元 gross proceeds | 资产负债表从“够用”变成“扩产资本充足”，但显著稀释股本 |
+| 2026Q1 | InP 收入 1360 万美元，backlog 超 1 亿美元；Q2 指引约 3400 万美元收入并预计 GAAP/non-GAAP 盈利 | 公司从亏损修复进入盈利拐点验证期 |
+| 2026 | 重点投资 6 英寸 InP、4 英寸转移、iron-doped / sulfur-doped 规格、pBN 坩埚、高纯铟和晶体生长能力 | 目标从短期供货转为下一代 EML/CPO/SiPh 客户路线绑定 |
+
+### 1.4 产业链位置
+
+AXT 位于 AI 光互联供应链的上游材料层，价格传导链如下：
+
+AI 数据中心 CapEx / GPU 与 ASIC 集群建设  
+-> 交换机、NIC、DPU、OCS、1.6T/800G 光模块和 CPO/光引擎订单  
+-> 模块厂和器件厂锁定 EML、CW-DFB、PD、SiPh PIC、DSP、driver、封装测试  
+-> 激光器/探测器/EML/外置光源厂采购 InP wafer / epi substrate  
+-> AXT 交付 InP 衬底、InP base material、pBN 坩埚、高纯铟/镓等。
+
+AXT 不直接获得光模块 ASP，也不直接与云厂签光模块订单。它的收入弹性来自“上游内容量小但基数极低、客户资格难、扩产慢、低 EPD 材料短缺”。换言之，AXTI 是 AI 光互联的“材料瓶颈 beta”，不是全价值链捕获者。
+
+### 1.5 最新估值和关键财务指标
+
+时间口径：市场价格和估值为 2026-06-11 当日/延迟数据；财务指标以 2026Q1 已披露报表和 TTM 估算为主。不同数据商对 post-offering share count 更新不一致，本文同时列出数据商口径和手工计算口径。
+
+| 指标 | 数值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | 约 83.5-85.9 美元 | 2026-06-11；Yahoo 历史数据收盘约 83.54，Robinhood/AlphaSpread 同日延迟报价约 83-86 | 当日波动大；盘中区间约 81.8-92.97 美元 |
+| 市值 | 约 5.5-5.6 十亿美元 | 2026-06-10/11；Yahoo/MarketWatch/Public.com 约 5.58B，shares outstanding 约 65.42M | 比部分报价系统的 4.5-4.7B 更能反映 2026 年 4 月增发后股本 |
+| TTM 收入 | 约 95.9 百万美元 | Q2 2025-Q1 2026 | 18.0 + 28.0 + 23.0 + 26.9 |
+| 收入增速 | Q1 2026 YoY +39.1%；Q2 2026 指引 YoY 约 +89% | Q1 实际；Q2 指引 | Q2 指引 3400 万美元，对比 Q2 2025 1800 万美元 |
+| TTM 毛利率 | 约 21.3% | Q2 2025-Q1 2026 手工估算 | Q1 2026 GAAP GM 已升至 29.6%，mix 改善明显 |
+| TTM 净利率 | 约 -14.7% | Q2 2025-Q1 2026 手工估算 | TTM GAAP net loss 约 1410 万美元 |
+| P/E | 无意义/负值 | TTM 亏损；数据商给 N/A 或约 -275x 至 -302x | 不能按 trailing PE 估值 |
+| Forward P/E | 约 278x | Yahoo Finance 2026-06-11 key statistics；GuruFocus 约 281x | 基于未来盈利预测，敏感度极高 |
+| P/S | 数据商约 41x-56x；手工 TTM 约 57x-58x | 2026-06-11；市值约 5.5B / TTM 收入 95.9M | 极高，已反映数年高增长预期 |
+| EV/Sales | 数据商约 28x-50x；手工 pro forma 更低 | 2026-06-11；受 2026 年 4 月 6.325 亿美元融资影响 | 若融资现金 fully reflected，EV 会低于市值很多 |
+| 资产负债表 | Q1 2026 cash + restricted cash + ST investments 约 123.2M；4 月融资 gross proceeds 632.5M 未在 3/31 资产负债表内 | 2026-03-31 + 2026-04 融资事件 | 扩产资金充足，但资本开支和股本稀释都很大 |
+
+### 1.6 资产负债表健康度
+
+2026-03-31，AXT total assets 4.446 亿美元，total liabilities 1.076 亿美元，total stockholders' equity 2.985 亿美元；current assets 2.538 亿美元，current liabilities 9780 万美元，current ratio 约 2.6x。cash 4177 万美元、restricted cash 1610 万美元、short-term investments 6538 万美元，合计约 1.232 亿美元；short-term loans 6887 万美元。
+
+2026 年 4 月，公司又完成约 6.325 亿美元 gross proceeds 股权融资，主要用于 Tongmei InP 扩产、6 英寸 InP R&D、working capital 和 general corporate purposes。由于融资发生在 Q1 资产负债表日之后，3/31 报表没有完整反映这笔现金。pro forma 看，公司短期偿债压力不大，甚至明显净现金；但健康程度不能只看现金，还要看扩产能否转成可售产能、客户是否签长期协议、许可证是否允许出货。
+
+财务健康评级：短期流动性强；经营层面刚走出亏损；扩产执行和许可风险高。若 Q2/Q3 2026 兑现 3400 万美元以上收入且毛利率稳定跨过 30%，资产负债表可以支撑扩张；若许可证/客户认证延迟，融资现金会被资本开支和库存吞噬，估值会先于报表恶化。
+
+## 2. 最新和最近四次财报：收入、订单、利润率和 AI 数据中心暴露
+
+### 2.1 五个季度核心表
+
+单位：百万美元，除非特别说明。AI 数据中心相关收入为估算，因为公司没有逐项披露 AI DC revenue；本文把 InP 中的 data center / EML / SiPh / high-speed detector 相关需求作为直接 proxy，把 pBN/高纯铟等原材料视为间接 proxy。
+
+| 财报季度 | 总收入 / 增速 | 产品收入拆分 | 毛利率 / 净利 | 订单、backlog、交期、取消率 | AI 数据中心相关收入占比估算 | 关键信息 |
+|---|---:|---|---|---|---:|---|
+| 2026Q1（最新） | 26.9；QoQ +17%；YoY +39% | InP 13.6；GaAs 5.4；Ge 0.2；原材料 7.6 | GAAP GM 29.6%；non-GAAP GM 29.9%；GAAP net loss -1.6 | InP backlog 超 100；Q2 有约 34 可确认收入；客户长期订单和 LTA 讨论活跃；许可证仍是最大 gating factor；未披露取消率 | 约 45%-55%；InP 超 50% revenue，主要来自 data center | Q2 指引约 34，预计 GAAP EPS +0.05 到 +0.07，non-GAAP EPS +0.06 到 +0.08；Q2 InP 预计创历史新高并高于 17 |
+| 2025Q4 | 23.0；QoQ -18%；YoY -8% | InP 8.0；GaAs 7.0；Ge 0.231；原材料 7.6 | GAAP GM 20.9%；non-GAAP GM 21.5%；GAAP net loss -3.6 | InP backlog 超 60；客户给更长 lead time；Q1 至少 26 可确认收入，更多许可则有 upside；未披露取消率 | 约 30%-40%；InP 主要来自 data center | Q4 许可不及预期；但 Q1 已收到更多许可；产能自 10 月以来增加约 25%，计划 2026 年底较 Q4 2025 翻倍 |
+| 2025Q3 | 28.0；QoQ +56%；YoY +18% | InP 13.1；GaAs 7.5；Ge 0.64；原材料 6.7 | GAAP GM 22.3%；non-GAAP GM 22.4%；GAAP net loss -1.9 | InP backlog 超 49 且增长；许可证处理约 60 business days / 约 3 个月；客户调整订单模式、给更长可见度；未披露取消率 | 约 40%-50%；InP 为 data center + PON | InP 收入为 2022 年以来最高；公司称材料被多个美国 hyperscaler 使用；Q4 指引 27-30 |
+| 2025Q2 | 18.0；QoQ -7%；YoY -36% | InP 3.6；GaAs 6.2；Ge 1.5；原材料 6.7 | GAAP GM 8.0%；non-GAAP GM 8.2%；GAAP net loss -7.0 | GaAs/InP 许可证延迟；首次取得部分 InP 出口许可；客户订单 backlog 超 10；Q3 指引 19-21；未披露取消率 | 约 10%-20%；中国 AI data center InP 几乎翻倍但基数小 | 管理层预计 Q3 InP 收入 +30% 以上，来自 PON、data center connectivity 和 sensors |
+| 2025Q1 | 19.4；QoQ -23%；YoY -15% | InP 3.8；GaAs 6.7；Ge 0.6；原材料 8.3 | GAAP GM -6.4%；non-GAAP GM -6.1%；GAAP net loss -8.8 | InP 2 月起受中国出口管制；海外 InP 发货预计最早 6 月中；若拿到许可，几百万美元 backlog 可在 Q3 发货；未披露取消率 | 约 10%-15%；InP 来自 PON 和 data center | GaAs 半绝缘放量过快导致良率问题；gross margin 被 mix、良率、低吸收拖累 |
+
+### 2.2 财报解读
+
+AXTI 2025 年的财报不是线性复苏，而是许可证和 InP 需求共同造成的剧烈波动。Q1/Q2 2025 由于 InP 出口管制和 GaAs 良率问题，毛利率从 Q1 2024 的 26.9% 跌到 Q1 2025 的 -6.4%；Q3 2025 许可证恢复后，InP 收入从 360 万美元跳到 1310 万美元，毛利率回到 22.3%；Q4 又因许可少于预期回落；Q1 2026 再度提升到 1360 万美元 InP、29.6% GAAP GM。
+
+这说明 InP 对公司利润率有高度杠杆：Q1 2026 管理层明确说，gross margin 改善主要来自 volume 提高和 mix richer toward InP，InP 占总收入 slightly north of 50%。Q2 2026 如果收入约 3400 万美元且 InP 高于 1700 万美元，毛利率大概率跨过 30% 阈值，公司也会进入 GAAP 盈利。
+
+Backlog 的信号强于单季收入。2025Q3 超 4900 万美元、2025Q4 超 6000 万美元、2026Q1 超 1 亿美元。对比 Q1 2026 InP 单季收入 1360 万美元，backlog 已覆盖约 7 个 Q1 run-rate；对比 Q2 2026 预期 InP 高于 1700 万美元，仍覆盖约 5-6 个季度。需要注意：backlog 是否等同可确认收入取决于许可证、客户拉货、产品 freshness、产能和合格率，不能简单全额乘以毛利率。
+
+## 3. 2026 最新指引、业务占比、产品型号和重点业务
+
+### 3.1 2026Q1 收入占比和 Q2 指引
+
+| 项目 | 2026Q1 收入 | 收入占比 | QoQ | YoY | 2026Q2 指引/趋势 |
+|---|---:|---:|---:|---:|---|
+| InP | 13.6 | 50.5% | +70% vs Q4 2025 | +258% vs Q1 2025 | Q2 expected above 17，创历史新高 |
+| GaAs | 5.4 | 20.1% | -23% vs Q4 2025 | -19% vs Q1 2025 | 稳定；wireless RF、industrial/robotics/data center laser，出口许可仍影响 |
+| Ge | 0.2 | 0.7% | 略降 | -67% vs Q1 2025 | 低优先级，毛利差 |
+| 原材料 JV | 7.6 | 28.2% | 持平 | -8% vs Q1 2025 | pBN crucible、高纯铟/镓更重要；跟随 InP 扩产 |
+| 总收入 | 26.9 | 100% | +17% | +39% | Q2 约 34；预计 GAAP/non-GAAP 盈利 |
+
+最突出的业务：InP 衬底。Q1 2026 这条业务不仅收入占比最高，而且决定毛利率、融资用途、客户 LTA、产能建设和估值。
+
+### 3.2 产品和型号/规格梳理
+
+#### 重点产品 1：InP 衬底，2/3/4/6 英寸，low EPD，S-doped / iron-doped 等规格
+
+对应下游：EML、DFB/CW laser、photodetector、SiPh 外置激光源、PON、1.6T/800G optical transceiver、CPO/CPX/NPO/ELS、high-speed detector。公司披露 InP 尺寸覆盖 2、3、4、6 英寸；电话会里重点提到 3 英寸仍是当前主力，4 英寸转移加速，6 英寸是下一代路线，iron-doped 和 sulfur-doped specifications 都在推进。
+
+利润率：公司不披露单项毛利率，但可以从季度 mix 推断 InP 显著高于公司平均。Q1 2026 InP 占比刚过 50% 时 GAAP GM 29.6%；Q2 管理层暗示收入 3000 万美元以上且 InP mix 好时 GM 应高于 30%。高端 low EPD、大尺寸、高规格 InP 具备涨价能力；低端 2 英寸/PON 价格更敏感。
+
+销售规模和增速：Q1 2025 380 万美元 -> Q1 2026 1360 万美元，YoY +258%；Q2 2026 指引高于 1700 万美元，YoY 至少 +370% 左右。当前真正的瓶颈不是需求，而是许可证、产能和客户资格。
+
+#### 重点产品 2：6 英寸 InP
+
+6 英寸 InP 目前更多是 R&D、客户路线绑定和未来产能平台，不是 2026Q1 的主要收入来源。公司明确将 2026 年 4 月融资用于 6 英寸 InP 等新产品 R&D；Q1 电话会称正在推进 iron-doped 和 sulfur-doped 6 英寸规格，产能扩张中很大一部分会对齐客户未来 6 英寸 roadmap。
+
+利润率和增速：当前收入几乎可以视为小额/非量产；若 2027-2028 进入客户量产资格，利润率可能高于 3/4 英寸成熟产品，因为大尺寸、低缺陷、良率和客户 qualification 难度更高。但量产风险也最高。
+
+#### 重点产品 3：原材料垂直整合，尤其 pBN 坩埚、高纯铟、InP base material
+
+对应下游：AXT 自己的 InP/GaAs crystal growth、外部 MOCVD/MBE/单晶生长、光器件材料链。2025 10-K 披露原材料包括高纯镓、InP base material、pBN crucibles、B2O3、quartz、arsenic、germanium 等。Q4 2025 管理层特别提到 pBN crucible 子公司 Boyu 对 InP 制造相关需求增长；JinMei 已开始 refining high-quality indium，使公司直接控制 InP 衬底关键材料。
+
+利润率：历史上原材料收入占比高时毛利率未必高，因为部分开放市场销售价格周期性强；但当 InP 扩产时，pBN 和高纯铟的战略价值高于短期毛利。它能减少原材料短缺、价格波动和交期风险，提升 InP gross margin 稳定性。
+
+#### 重点产品 4：GaAs，含半绝缘 RF/HPT 和半导电 VCSEL/工业激光/机器人
+
+GaAs 是传统业务，2026 年不是 AI 数据中心主线。公司 Q1 2025 因半绝缘 GaAs wafers 放量过快出现 yield issue，拖累毛利；此后采取更谨慎爬坡。值得保留关注的是半导电 GaAs 用于 autonomous vehicle LiDAR、machine vision/robotic hand VCSEL、industrial lasers，以及公司提到的 data center laser applications。但管理层也说明 data center VCSEL device small，通常不需要太多 AXT material，因此不会像 InP 一样驱动公司级弹性。
+
+#### 跳过/低权重产品
+
+| 产品/业务 | 跳过原因 |
+|---|---|
+| Ge 衬底 | Q1 2026 收入 20 万美元、毛利潜力差、卫星太阳能/红外为主，不是 AI 光互联主链 |
+| 传统 PON 低端 InP | 会贡献基底需求，但价格敏感，不是估值核心；重点仍是 AI data center EML/SiPh/PD |
+| 低端 2 英寸 InP | 管理层提到低端 2 英寸 InP 价格压力更明显；高端 low EPD/4-6 英寸才有溢价 |
+| 普通 GaAs RF/Wi-Fi | 有周期复苏但非 AI 数据中心高弹性 |
+| 原材料开放市场销售中的普通周期品 | 可能贡献收入，但如果不绑定 InP 扩产，估值权重低 |
+
+## 4. 当前高增长/关键产品的收入贡献、增速、供需和定价能力
+
+评分：5 为最高。收入贡献为当前季度或年化 rough estimate。
+
+| 关键产品/业务 | 当前收入贡献 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 评价 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| InP 衬底：EML/CW/PD/SiPh/CPO 用 3/4 英寸 low EPD | Q1 2026 13.6；Q2 预计 >17；Q1 年化 54+ | Q1 YoY +258%；Q2 YoY >+370% | 5 | 5 | 5 | 4 | 当前核心。AI 800G/1.6T、EML、SiPh、CPO 共同拉动；backlog 超 100 |
+| 6 英寸 InP | 当前收入很小，R&D/qualification | 从 0 起步 | 4 | 3 | 4 | 4 | 2027-2028 期权。大尺寸和低 EPD 难度高，若客户转 6 英寸会提高 AXT 技术溢价 |
+| pBN 坩埚、高纯铟、InP base material | Q1 原材料 7.6；其中 InP 相关未拆 | 原材料总收入稳定；InP 相关随扩产上升 | 4 | 4 | 4 | 3 | 不是最大收入，但决定 InP 扩产、良率和成本；垂直整合是 AXT 区别于小竞争者的关键 |
+| GaAs VCSEL/robotics/LiDAR/industrial laser | Q1 GaAs 5.4，相关部分未拆 | 目前不高；潜在随机器人/车载增长 | 2 | 2 | 2 | 2 | 可选增长项；对数据中心当前财务影响小 |
+| Ge / satellite solar / infrared | Q1 0.2 | 低/波动 | 1 | 1 | 1 | 1 | 非重点 |
+
+### 4.1 InP 为何对 AI 基建重要
+
+项目内 `行业调研/AI网络_光互联_铜互联/` 与 `行业调研/晶圆制造_设备_材料_测试/` 资料显示，2026 年 AI 光互联的确定主线是 800G 继续放量、1.6T 进入规模交付、200G/lane EML/EAM 与 SiPh 并行、CPO/ELS 从样机进入生产资格。InP 位于 EML、DFB/CW laser、photodetector 和部分 III-V/SiPh 集成的材料底层。换句话说，AXT 不卖光模块，但它卖的 InP 影响激光器和探测器的 die yield、可靠性、功耗和寿命。
+
+AXT 管理层的说法也与产业数据一致：客户告诉公司“every die counts”；高端光器件电流密度和器件尺寸上升，对 low EPD material 的要求提高；公司称自己约占 InP supply chain 40%，并称客户、客户的客户、GPU/CPU makers 都在关注供货。
+
+### 4.2 当前供需紧张程度
+
+InP 当前供需处于紧张状态，证据包括：
+
+- Backlog 超 1 亿美元，对比 Q1 2026 InP 单季收入 1360 万美元，覆盖倍数很高。
+- 客户下长期订单，且大型客户讨论 long-term supply agreements。
+- 许可证有效期和审批周期改变客户行为，使客户提前下单、给更长可见度。
+- 公司 2026 年 4 月大额融资用于扩产，且 Q2 2026 指引显示有约 3400 万美元可确认收入。
+- 行业侧 1.6T、EML/CW-DFB、CPO/ELS 产能瓶颈仍在。
+
+但“紧张”不等于公司可无限提价。InP 衬底通常是光模块 BOM 很小一部分；客户会要求多供应商；如果 2026H2 光模块厂和激光器厂扩产过快，部分成熟规格可能先出现价格压力。
+
+## 5. 一年后关键产品/业务三情景预测
+
+口径：一年后指 2027 年中附近的年化收入能力或滚动 12 个月收入贡献，不是会计年度精确预测。美元为 AXT 可确认收入估算。
+
+### 5.1 产品级收入和战略指标预测
+
+| 产品/业务 | 情景 | 一年后收入贡献 | 收入增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 关键假设 |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| InP 3/4 英寸 high-end low EPD | 基准 | 100-140 / 年 | +80%-150% | 5 | 5 | 4 | 3-4 | 许可证持续但不完美；2026 年底产能接近 35/季，利用率逐步提升 |
+| InP 3/4 英寸 high-end low EPD | 乐观 | 150-220 / 年 | +180%-300% | 5 | 5 | 5 | 4 | LTA 落地；Q4 2026 出货接近 30-35/季；1.6T/EML/CW 客户同步拉货 |
+| InP 3/4 英寸 high-end low EPD | 极度乐观 | 240-320 / 年化 | +350%+ | 5 | 5 | 5 | 4-5 | 新设施提前形成可售产能；美国/全球许可证顺畅；CPO/ELS 提前拉动；客户预付款锁产能 |
+| 6 英寸 InP | 基准 | 0-5 | 从低基数 | 4 | 3 | 3 | 4 | 2027 仍以 qualification wafers、小批量和工程收入为主 |
+| 6 英寸 InP | 乐观 | 5-15 | 高 | 4 | 4 | 4 | 4 | 重点客户进入 pilot，iron/sulfur-doped specs 通过初步验证 |
+| 6 英寸 InP | 极度乐观 | 15-35 | 高 | 5 | 4 | 5 | 5 | 1.6T/3.2T/CPO 客户提前切大尺寸，6 英寸良率领先 |
+| pBN/高纯铟/InP base material | 基准 | 35-45 | +10%-30% | 4 | 4 | 3 | 3 | 原材料收入稳定，更多用于内部 InP 支撑 |
+| pBN/高纯铟/InP base material | 乐观 | 50-70 | +50%-90% | 4 | 4 | 4 | 3 | pBN crucible 和高纯铟随 InP 扩产外售/自用同步提升 |
+| pBN/高纯铟/InP base material | 极度乐观 | 80-110 | +100%+ | 4 | 5 | 4 | 3-4 | 行业 InP 扩产导致 pBN/高纯铟本身短缺，AXT 获得材料链溢价 |
+| GaAs robotics/VCSEL/industrial | 基准 | 25-35 | 0%-30% | 2 | 2 | 2 | 2 | GaAs 业务修复，良率改善但不是 AI 主线 |
+| GaAs robotics/VCSEL/industrial | 乐观 | 40-55 | +40%-90% | 2-3 | 3 | 3 | 2-3 | 车载/机器人 VCSEL 和 industrial laser 放量，8 英寸产品良率改善 |
+| GaAs robotics/VCSEL/industrial | 极度乐观 | 70-90 | +150%+ | 3 | 3 | 3 | 3 | 中国机器人/自动驾驶 LiDAR 进入高景气，同时数据中心短距 VCSEL 贡献提升 |
+
+### 5.2 公司级三情景
+
+| 情景 | 未来一年公司收入 | 收入增速 vs TTM 95.9 | Gross margin | 订单/产能假设 | 主要风险 |
+|---|---:|---:|---:|---|---|
+| 基准 | 170-220 | +75%-130% | 32%-36% | Q2 2026 约 34；InP 逐季爬坡；年底接近 35/季产能但未满产；许可证有延迟 | 许可证季度错配；客户库存；毛利被 GaAs/原材料 mix 稀释 |
+| 乐观 | 240-320 | +150%-230% | 36%-43% | 多个 LTA；Q4 2026 InP 接近 30-35/季；高端 ASP 稳或涨；Q2-Q4 连续超预期 | 估值已很高；扩产良率和客户验收不达预期 |
+| 极度乐观 | 380-500 | +300%-420% | 40%+ | 2027 新设施提前贡献；InP 年化接近 260-280；CPO/1.6T/CW/PD 多路线同时短缺 | 对时间假设极激进；任何许可证/电力/GPU/光模块 ASP 下行都会压缩估值 |
+
+## 6. BOM、单位含量、价格传导链、产能和认证
+
+### 6.1 光互联 BOM 中 AXT 的真实位置
+
+以 800G/1.6T AI 光模块或 CPO 光引擎为例，粗略 BOM 可分为：DSP/retimer/driver/TIA、EML/EAM/CW laser/PD/InP 器件、SiPh PIC/光引擎、封装/FAU/连接器/隔离器/滤波器、测试烧机和质保。项目内行业资料估算，1.6T 模块中 EML/EAM/CW/PD/InP 器件约占 BOM 20%-30%，SiPh PIC/光引擎和封装约 15%-25%，测试校准烧机约 8%-15%。
+
+AXT 捕获的不是全部 InP 器件价值，而是 InP 衬底/部分基底材料价值。衬底在最终模块 ASP 中通常是低个位数百分比甚至更低，但在高端 low EPD、4/6 英寸、大客户认证和供不应求时，价格/毛利弹性可以高于普通材料。
+
+### 6.2 单位内容量估算
+
+以下为投资分析估算，不是公司披露。实际含量取决于链路 reach、EML vs SiPh、外置光源数量、PD 阵列、客户良率和 wafer/die size。
+
+| 单位 | AXT 可服务 InP 衬底内容量估算 | 说明 |
+|---|---:|---|
+| 每个 800G optical port/module | 约 1-5 美元；高端 EML/PD 方案可更高 | 模块 ASP 远高于衬底价值；AXT 只捕获上游 wafer 部分 |
+| 每个 1.6T optical port/module | 约 3-12 美元；早期紧缺/高端路线可达 10-25 美元 | 1.6T lane 数、良率、200G/lane EML/PD 要求提高 |
+| 每个 CPO/CPX 光引擎或 ELS 相关端口 | 约 5-30 美元；极端高功率 ELS/多通道可更高 | CPO 价值从可插拔向光引擎和 ELS 迁移，InP 激光/PD 重要性提升 |
+| 每 GPU | 基准 5-40 美元；极度乐观 40-120 美元 | 取决于每 GPU 绑定多少 800G-equivalent optical connectivity；不是固定线性关系 |
+| 每 72 GPU rack | 基准 360-3000 美元；高配/多 rail/OCS 3000-10000 美元 | 72 GPU rack 的 scale-out、scale-across 和冗余配置差异极大 |
+| 每 MW AI IT load | 基准 3000-50000 美元；极度乐观 50000-150000 美元 | 假设每 MW 约 8-10 个 100-125kW rack、约 576-720 GPU；AXT 内容量是衬底层，很小但乘以 GW 级建设会放大 |
+
+这个估算也解释了为什么 AXTI 估值弹性大：即使每个 GPU 只含几美元到几十美元 AXT 可服务材料，在数百万 GPU/ASIC、数千万 800G/1.6T 光模块和 CPO/ELS 提前锁单的背景下，也足以让一家 TTM 收入不到 1 亿美元的公司进入数亿美元收入区间。但反过来，AXT 的单位内容量并非光模块核心 ASP，不应按模块厂收入倍率直接外推。
+
+### 6.3 价格传导链
+
+| 上游事件 | 传导路径 | 对 AXT 的影响 |
+|---|---|---|
+| Hyperscaler 上修 AI CapEx / GPU rack 订单 | 光模块 LTA -> 激光器/PD/SiPh 订单 -> InP wafer LTA | 增加 backlog、提升客户预付款/长期协议可能性 |
+| 1.6T design-in 成功 | 1.6T ASP 高、良率低、客户可选供应商少 -> 高端 InP 需求提高 | 高端规格涨价或保价；低端 2 英寸/PON 仍可能降价 |
+| EML/CW-DFB 短缺 | laser vendor allocation -> upstream substrate allocation | AXT 可获得更长期可见度和更强议价 |
+| CPO/ELS 进入生产资格 | 激光可靠性、冗余、热管理成为系统级瓶颈 | 6 英寸、低缺陷、大尺寸 InP 价值提升 |
+| 光模块供给追上需求 | 模块 ASP 先下行 -> 器件厂压价 -> 衬底价格压力滞后出现 | 成熟规格毛利承压，高端认证规格抗跌 |
+| 出口许可延迟 | 客户下更长期订单但收入确认错季 | backlog 增但 quarterly revenue 波动 |
+
+### 6.4 当前产能能力和扩产
+
+| 项目 | 当前/已披露能力 |
+|---|---|
+| Q1 2026 InP 收入能力 | 13.6 百万美元/季 |
+| Q2 2026 InP 预期 | 高于 17 百万美元/季，创历史新高 |
+| 2026 年底 InP 产能目标 | 约 35 百万美元/季，即约 140 百万美元年化 capacity，但公司提醒这是年底 run-rate，全年不能简单乘以 4 |
+| 2027/2028 下一阶段 | 新设施完成后约 65-70 百万美元/季，即 260-280 百万美元年化 capacity，时间可能为 2027 年底或 2028 年初 |
+| 2026 capex | 管理层口径约 30-40 百万美元 |
+| 下一阶段设施 | 约 100 百万美元；更远期 greenfield 可能 220-250 百万美元 |
+| 资金来源 | 2025 年底约 93.9 百万美元公开发行；2026 年 4 月约 632.5 百万美元 gross proceeds |
+
+### 6.5 被供应链采纳和认证阶段
+
+| 产品 | 采纳程度 | 认证/许可阶段 |
+|---|---|---|
+| InP 3/4 英寸 low EPD | 已量产、已进入多个 Tier 1 laser maker / optical transceiver module maker；公司称材料被多个美国 hyperscaler end use | 生产认证已存在；新增 Tier 1 客户 qualification wafers 进行中；出口许可仍决定实际发货 |
+| InP 6 英寸 | 研发/客户路线对齐；公司强调 iron-doped 和 sulfur-doped specs 进展 | 仍在 R&D、qualification、客户 roadmap 阶段，未见量产收入披露 |
+| pBN/高纯铟/InP base material | 内部供应链已使用，部分外售 | 自供已成熟；随 InP 扩产扩大 |
+| GaAs 8 英寸/VCSEL/robotics | 部分客户关系和设计活动；Q1 2025 曾出现放量过快 yield issue | 需要恢复良率和客户量产资格；非 AI 主线 |
+
+## 7. 一年后产能能力和认证三情景
+
+| 产品/业务 | 情景 | 一年后产能能力（美元计） | 供应链采纳 | 认证/许可阶段 |
+|---|---|---:|---|---|
+| InP 3/4 英寸 | 基准 | 35-45/季可用 run-rate，年化 140-180 | 现有客户 + 若干新增 Tier 1 小批量 | 欧洲/日本/英国/加拿大等较顺畅，美国许可仍间歇；LTA 部分落地 |
+| InP 3/4 英寸 | 乐观 | 45-60/季，年化 180-240 | 多数 leading optical customers 进入常规采购 | 美国相关链条通过区域化发货/许可解决；LTA 明确 |
+| InP 3/4 英寸 | 极度乐观 | 65-70/季，年化 260-280 提前接近 | hyperscaler 间接推动客户锁产能，AXT 成为核心 allocation supplier | 许可节奏可预测，客户预付款/供应协议支持 |
+| 6 英寸 InP | 基准 | 工程/小批量 <5/年 | 关键客户验证中 | qualification wafers，未量产 |
+| 6 英寸 InP | 乐观 | 5-15/年 | 1-2 个大客户 pilot | 产品认证进入后期，规格良率可接受 |
+| 6 英寸 InP | 极度乐观 | 15-35/年 | 多个高端 EML/CPO/SiPh 客户提前导入 | 小批量量产资格，通过关键可靠性验证 |
+| 原材料/pBN/高纯铟 | 基准 | 35-45/年 | 内部优先，外售稳定 | 成熟 |
+| 原材料/pBN/高纯铟 | 乐观 | 50-70/年 | 内外部需求共同提升 | pBN/高纯铟成为 InP 扩产协同瓶颈 |
+| 原材料/pBN/高纯铟 | 极度乐观 | 80-110/年 | AXT 材料链被下游视为战略供给 | 客户更愿意接受成本传导 |
+| GaAs 高端应用 | 基准 | 25-35/年 | 稳定修复 | 良率改善 |
+| GaAs 高端应用 | 乐观 | 40-55/年 | 机器人/车载/industrial 客户增加 | 8 英寸和半导电良率通过更多客户 |
+| GaAs 高端应用 | 极度乐观 | 70-90/年 | 中国机器人/车载 VCSEL 加速 | 客户量产资格和出口许可同步改善 |
+
+## 8. 基于 backlog、供给和订单线索的未来一年增速推断
+
+### 8.1 真实订单积压和交付窗口
+
+AXT 没有披露完整 bookings、book-to-bill、取消率，也没有披露每个 backlog 的客户项目名和金额。可用线索如下：
+
+- 2025Q3 InP backlog 超 4900 万美元，且比上季度 more than double。
+- 2025Q4 InP backlog 超 6000 万美元。
+- 2026Q1 InP backlog 超 1 亿美元，record high。
+- Q1 2026 管理层称 Q2 有约 3400 万美元 revenue 可以确认，基于已获许可或不需要许可；还有额外 upside 取决于更多许可证。
+- Q2 2026 InP 收入预计高于 1700 万美元。
+- 客户正在讨论长期供货协议，几乎所有 larger customers 都在谈 LTA；hyperscalers 和硬件公司鼓励其供应商与 AXT 签长期协议。
+- 许可证：Q3 2025 经验约 60 business days；许可可覆盖多个 line items，有效期 6 个月；每个 PO/line item 的申请结构会影响发货。
+- 取消率：未披露。基于供不应求和客户“ship tomorrow”表述，短期取消率推断低；但若光模块库存积压或许可证长期失败，backlog 可推迟或重排。
+
+### 8.2 未来一年公司业务增速三情景
+
+| 情景 | backlog 转化 | 供给/产能 | 未来一年收入 | 增速 | 逻辑 |
+|---|---|---|---:|---:|---|
+| 基准 | 1 亿 InP backlog 在 4-6 个季度逐步转化；部分因许可跨季 | 年底 35/季 capacity 形成，但全年平均低于年底 run-rate | 170-220 | +75%-130% | Q2 已锁定 34；Q3/Q4 若 InP 继续爬坡，FY/NTM 可显著超过 2025 的 88.3 |
+| 乐观 | LTA 落地，许可证节奏改善，客户持续下长期订单 | 2026 年底接近 35/季，2027 上半年继续爬坡 | 240-320 | +150%-230% | InP 从 50M 年化快速上到 150M+，原材料和 GaAs 贡献稳定 |
+| 极度乐观 | backlog 持续超过新增产能，客户预付款/供货协议锁定 | 下一阶段设施提前贡献，或现有 brownfield 超预期 | 380-500 | +300%-420% | 1.6T/CPO/ELS 共同短缺，AXT 年化 capacity 接近 260-280；此情景估值已部分反映 |
+
+### 8.3 反证指标
+
+| 反证 | 影响 |
+|---|---|
+| Q2 2026 收入低于 34 或 InP 未明显高于 17 | 管理层可确认收入口径失效，backlog 质量被质疑 |
+| Q3/Q4 2026 InP backlog 不增反降，或客户 LTA 没有进展 | 需求可能是补库存而非多年周期 |
+| 2026 年底无法接近 35/季 InP capacity | 扩产执行风险高于市场预期 |
+| 800G/1.6T 模块 ASP 连续两个季度下跌 10%+，且 EML/CW utilization 低于 80% | 供应链从硬短缺转向周期下行 |
+| 美国或关键区域许可证持续不能获批 | 直接压制收入确认和客户替代风险 |
+| 6 英寸 InP 客户认证失败或推迟到 2028 后 | 远期估值期权下修 |
+
+## 9. 竞争格局、技术路线和替代风险
+
+### 9.1 主要竞争对手
+
+| 环节 | 竞争者/替代者 | 竞争要点 |
+|---|---|---|
+| InP 衬底 | Sumitomo Electric、Coherent/II-VI 体系、JX Advanced Metals、Wafer Technology/IQE 生态、若干中国本土 III-V 衬底厂 | 晶体生长、低 EPD、尺寸升级、客户 qualification、扩产速度、地缘合规 |
+| InP/激光器垂直整合 | Coherent、Lumentum、Broadcom、Mitsubishi Electric、Sumitomo、Furukawa | 下游器件厂可能自供/锁定 wafer，减少对第三方衬底依赖 |
+| GaAs 衬底 | Freiberger Compound Materials、Sumitomo Electric、AXT、日欧和中国供应商 | RF/VCSEL 客户认证、成本、8 英寸能力、良率 |
+| SiPh / PIC 代工和平台 | Broadcom、Intel、GF/AMF、TSMC、Tower、OpenLight、Ayar、Marvell/Celestial | 可能减少部分 InP 调制器需求，但仍需要 CW laser/III-V/PD |
+| 低功耗替代路线 | LPO/LRO、CPO/CPX/XPO、OCS、铜 AEC/ACC、TFLN/EOP/SOH | 改变 InP 内容量和价值位置，不一定完全替代 |
+
+### 9.2 AXT 的技术和产品是否是未来主流
+
+InP 衬底在 2026-2027 的 AI 光互联中是主流上游材料之一，但不是唯一主流路线。OFC 2026 资料显示，Coherent 同时展示 SiPh、InP、VCSEL；Lumentum 强调 400G differential EML 和 ELS；Broadcom 用 EML/PD + DSP 推 400G/lane；OpenLight 是 III-V integrated SiPh。结论不是“全 InP 赢”或“全硅光赢”，而是 InP laser/PD/EML/CW 与 SiPh PIC、DSP、封装共同构成高端光互联主线。
+
+AXT 的产品会受益于这个多路线格局，因为即使 SiPh 提高渗透率，也通常需要外置或集成 III-V 光源；CPO/ELS 反而把激光可靠性和高功率 CW 源放到系统级核心位置。真正的替代风险不是 SiPh 完全替代 InP，而是价值从通用 InP substrate 迁移到某些垂直整合厂商内部，或者 6 英寸/400G lane 路线由竞争者率先完成资格。
+
+### 9.3 客户替换成本
+
+客户替换成本中高。原因：
+
+- 高速 laser/detector/EML 对 low EPD、晶体缺陷、厚度、掺杂、表面质量和长期可靠性敏感。
+- 客户 qualification cycle 长，尤其用于 AI 数据中心高功耗、长寿命链路，failure cost 高。
+- 一旦进入激光器/PD/SiPh 供应链，后续每代产品倾向沿用已验证材料，除非价格/交期/地缘风险迫使 dual-source。
+- AXT 自制晶体生长炉、pBN、高纯铟/镓和 InP base material 的垂直供应链可以缩短扩产学习曲线。
+
+但客户不会给它完全垄断。光模块和 hyperscaler 供应链天然要求 dual-source；出口许可本身会迫使客户寻找替代来源；Coherent、Sumitomo、日系和本土中国供应商都有技术/合规价值。AXT 的合理定位是“高质量 InP 龙头之一，短期有强定价权和 allocation 能力”，不是不可替代的单一供应商。
+
+### 9.4 主要风险
+
+| 风险 | 触发条件 | 对公司影响 |
+|---|---|---|
+| 出口许可 | 中国商务部审批延迟、美国客户许可长期未批 | 收入跨季波动，客户转单，backlog 质量折扣 |
+| 扩产执行 | 35/季、65-70/季产能未按时形成，或良率低 | 市场对 2026-2028 revenue ramp 下修 |
+| 客户库存 | 模块厂提前备货后 GPU/switch/数据中心上电慢 | InP 拉货放缓，ASP 承压 |
+| 价格周期 | EML/CW/1.6T 扩产快于需求 | 高端价格保不住，gross margin 下修 |
+| 6 英寸路线 | 客户认证推迟或竞争者更快 | 远期估值期权受损 |
+| 技术替代 | SiPh、CPO、OCS、铜互联改变 BOM | InP 内容量变化；但多数路线仍需 III-V 光源/探测器 |
+| 中国制造集中 | PRC 政策、环保、工厂搬迁、现金转移、合资少数权益 | 经营连续性和资本市场折价 |
+| 估值 | 市值约 55 亿美元 vs TTM 收入约 9600 万美元 | 基本面小失误也可能导致高波动 |
+
+## 10. 资料来源和交叉验证
+
+### 10.1 公司一手/财报资料
+
+- AXT Q1 2026 results, 2026-04-30：`https://investors.axt.com/Investors/news/news-details/2026/AXT-Inc--Announces-First-Quarter-2026-Financial-Results/default.aspx`
+- AXT Q1 2026 earnings call transcript, Sahm/Benzinga, 2026-05-01：`https://www.sahmcapital.com/news/content/axt-q1-2026-earnings-call-transcript-2026-05-01`
+- AXT Q4 2025 earnings call transcript, AlphaSpread, 2026-02-19：`https://www.alphaspread.com/security/nasdaq/axti/investor-relations/earnings-call/q4-2025`
+- AXT Q3 2025 transcript, Investing.com, 2025-10-30：`https://www.investing.com/news/transcripts/earnings-call-transcript-axt-inc-beats-q3-2025-earnings-expectations-93CH-4322086`
+- AXT Q2 2025 transcript, Investing.com, 2025-07-31：`https://www.investing.com/news/transcripts/earnings-call-transcript-axt-inc-q2-2025-reveals-revenue-miss-stock-dips-93CH-4164839`
+- AXT Q1 2025 transcript, MLQ, 2025-05-01：`https://mlq.ai/stocks/AXTI/earnings-call-transcript/Q1-2025/`
+- AXT 2025 10-K, SEC, filed 2026-03-17：`https://www.sec.gov/Archives/edgar/data/1051627/000143774926008612/axti20251231_10k.htm`
+- AXT public offering / pricing, 2026-04：`https://investors.axt.com/Investors/news/news-details/2026/AXT-Announces-Pricing-of-550-Million-Public-Offering-of-Common-Stock/default.aspx`
+
+### 10.2 市场和估值资料
+
+- Yahoo Finance AXTI quote/key statistics, 2026-06-11：`https://finance.yahoo.com/quote/AXTI/`
+- Yahoo Finance AXTI key statistics, 2026-06-11：`https://finance.yahoo.com/quote/AXTI/key-statistics/`
+- MarketWatch AXTI quote, 2026-06-11：`https://www.marketwatch.com/investing/stock/axti`
+- Robinhood AXTI quote, 2026-06-11：`https://robinhood.com/us/en/stocks/AXTI/`
+- Public.com AXTI market cap, 2026-06-10：`https://public.com/stocks/axti/market-cap`
+- GuruFocus AXTI summary, 2026-06：`https://www.gurufocus.com/stock/AXTI/summary`
+
+### 10.3 行业/会议/技术资料
+
+- TrendForce, AI optical transceiver market to reach $26B in 2026, 2026-04-20：`https://www.trendforce.com/presscenter/news/20260420-13017.html`
+- TrendForce, EML and CW-DFB LD monthly capacity to 50.7M in 2026, 2026-06-03：`https://www.trendforce.com/presscenter/news/20260603-13077.html`
+- Cignal AI, Optical Component Revenue Reaches Nearly $25B in 2025, 2026-01：`https://cignal.ai/2026/01/optical-component-revenue-reaches-nearly-25b-in-2025/`
+- OFC 2026 conference/company updates via project-local industry file: `行业调研/产业背景/顶级会议信息/ofc_2026_conference_update.md`
+- Project-local industry file: `行业调研/AI网络_光互联_铜互联/行业调研_激光器、EML与光器件_2026-06-11.md`
+- Project-local industry file: `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- Project-local industry file: `行业调研/晶圆制造_设备_材料_测试/行业调研_硅光材料、光子材料与电光聚合物_2026-06-11.md`
+- Project-local industry file: `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+
+### 10.4 本文关键估算说明
+
+- AI 数据中心相关收入：公司未直接披露；本文以 InP 中 data center/EML/SiPh/high-speed detector 为直接 proxy，以 pBN/高纯铟/InP base material 为间接 proxy。
+- 单位 BOM 内容量：公司未披露；本文按光模块 BOM、InP 器件占比、衬底在器件中的价值占比和 AXT 市场份额做范围估算，只用于判断数量级。
+- 三情景预测：不是公司 guidance；基于 backlog、Q2 2026 指引、2026 年底 35M/季 InP capacity、2027/2028 65-70M/季 capacity、行业 1.6T/CPO/EML 节奏和许可证风险做情景模型。
+- 当前估值：2026 年 4 月增发后股本数据在不同数据商之间存在更新差异；本文估值以 65M 左右 shares outstanding 和约 83-86 美元股价作为主口径。

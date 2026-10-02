@@ -1,0 +1,163 @@
+# 公司收入传导与价值传导评估：Celestica Inc（CLS）
+
+报告日期：2026-06-12  
+公司代号：CLS  
+公司名称：Celestica Inc  
+正式输出目录：`分析报告/公司评估/`  
+资料边界：本报告使用 `公司调研/`、`行业调研/` 与 Celestica 官方披露、产品页和财报材料；未读取、引用或继承 `特征量化/`、Signals、回归、结构化评分或全公司排序资料。  
+主口径：NTM 经营窗口，近似使用 2026Q2-2027Q1 作为下一组可报告四季度；FY2026、FY2027、CPO、长期 run-rate 和远期期权只作补充，不替代 NTM 主表。  
+货币单位：除特别说明外均为美元；表内“亿”表示 1 亿美元。  
+边界声明：本报告只评估经营收入、利润、现金流与执行传导，不输出投资评级、目标价、股价区间、市场定价或估值倍数判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即 2026Q2-2027Q1；FY2026 官方收入展望 190 亿美元、adjusted operating margin 8.1%、adjusted EPS 10.15 美元、capex 约 10 亿美元、free cash flow 5 亿美元，只作为当前预期锚；2027 以后 CPO、更多 1.6T、Rubin/Trainium/TPU/ASIC 相关项目作为补充和远期期权。
+- 当前收入基准、指引和 run-rate：2026Q1 收入 40.47 亿美元，同比 +53%；CCS 收入 32.41 亿美元，占 80%，同比 +76%，segment margin 8.6%；ATS 收入 8.06 亿美元，占 20%，segment margin 6.0%；HPS 收入约 17 亿美元，占总收入约 42%，同比 +63%。Q2 2026 指引为 41.5-44.5 亿美元，FY2026 收入展望从 170 亿美元上调到 190 亿美元。Q1 年化收入 161.9 亿美元低于 FY2026 指引，说明当前预期已经隐含 H2 明显加速。
+- 重要产品/业务线：CCS/HPS 800G AI 以太网交换与高性能网络平台；DS6000/DS6001 1.6T 交换机与 2026H2 两家 hyperscaler program；AI/ML compute 与 Enterprise server/storage program；rack integration、testing、software configuration 和 lifecycle service；HPS storage；ATS 稳定型业务；其他低毛利 CCS 制造/pass-through。
+- NTM 公司收入四情景：悲观 188-200 亿美元；基准 210-228 亿美元；乐观 235-258 亿美元；极度乐观 260-290 亿美元。基准高于 FY2026 指引是因为 NTM 含 2027Q1，并且公司披露 2027 需求可见度、新 program wins 和 customer capacity alignment 继续增强。
+- 利润或 EBITDA 四情景：公司未给 NTM EBITDA 指引，无法可靠量化 EBITDA；用调整后经营利润和调整后净利润近似经营价值传导。悲观 adjusted operating margin 7.2%-7.8%、调整后净利润约 10-12 亿美元；基准 8.0%-8.6%、约 12.8-15.0 亿美元；乐观 8.7%-9.5%、约 15.5-18.7 亿美元；极度乐观 9.4%-10.2%、约 18.5-22.5 亿美元。
+- 最大传导瓶颈：不是行业需求总量，而是 HPS/CCS 高速 ramp 能否按客户认证、switch ASIC/optics/测试产能、工作资本和新产能投产节奏转为可确认收入。
+- 最大利润率变量：HPS networking、1.6T、rack integration 和服务附加值占比上升能抬升 margin；低毛利 pass-through、800G ASP 下行、客户多供压价、capex 折旧和项目爬坡成本会抵消。
+- 最大现金流变量：2026 capex 约 10 亿美元、AR/inventory 随高增长扩张、客户 cash deposits 和 AP 自然融资能否覆盖营运资本。
+- 可信度：基准为中高；乐观为中；极度乐观为低到中。原因是总收入和分部收入有 A 级证据，但产品级 1.6T、AI/ML compute 和 rack integration 的客户、价格、份额和收入确认节奏仍有保密或估算成分。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| CCS/HPS 800G AI 网络交换与高性能 networking | HPS 2026Q1 约 17 亿美元；公司未单列 800G，本文估算当前年化 35-50 亿美元 | HPS 占 Q1 总收入约 42%；networking 为 HPS 核心 | NTM 第一收入与利润传导线 | A：HPS/CCS 已披露；B/C：800G 产品拆分为公司和行业映射估算 | 进入基准；基准按 800G program 正常 ramp，未把全部 AI fabric 行业增速等同为 CLS 增速 | 1.6T 替代后的更高端口价值和软件/服务 attach |
+| DS6000/DS6001 1.6T switch 与 102.4T 平台 | 当前收入小；公司披露 1.6T programs with two hyperscalers begin in 2H 2026 | Q1 几乎不是显性主收入；H2 起进入 HPS | 决定乐观和 2027 斜率 | C：产品发布、two hyperscalers、时间表明确；B/C：若已有 PO 未公开则不可完全验证 | 基准只小比例纳入；乐观/极度乐观看客户 qualification、optics/AEC 供应和 H2 ramp | 2027 1.6T 主力、CPO/液冷 switch、更多 hyperscaler 平台 |
+| AI/ML compute 与 Enterprise server/storage program | 2026Q1 Enterprise 收入 8.30 亿美元，同比 +101%；Q2 outlook Enterprise +约 130% | Q1 约 20%；H2 可能继续扩大 | 第二收入增量线，毛利质量低于网络但规模大 | A：Enterprise 已披露；C：AI/ML compute 客户和型号保密 | 进入基准，按管理层 ramp through 2026 和 next-generation programs 保守纳入 | 云厂 ASIC、TPU、Trainium、Maia、MTIA、Rubin/Helios 相关定制平台 |
+| Rack integration / testing / lifecycle / software configuration | 公司官方服务页披露可支持 tens 到 thousands of racks per month；未单独披露收入 | 直接收入无法可靠量化；嵌入 HPS/CCS | 利润质量和客户粘性变量 | C：能力、服务和客户需求明确；A 级收入未单列 | 基准以附加服务和执行能力纳入，不能与 HPS/CCS 机械相加 | 液冷整柜 FAT、现场调试、网络压测、持续运维服务 |
+| HPS storage controllers / storage expansion | 官方 SC4200、SC6100、SC6110、SD6300 等产品；收入未单列 | Enterprise/HPS 内部一部分，本文估算 NTM 12-20 亿美元基准 | 中等：AI data ingest、HPC、object storage 受益，但不是最大弹性 | C：产品明确；A：Enterprise segment 已披露 | 进入基准但折扣处理；不可把 AI storage 总需求直接当公司收入 | KV cache、AI data platform、对象存储和高密度 all-flash attach |
+| ATS：A&D、Industrial、HealthTech、Capital Equipment | 2026Q1 8.06 亿美元；管理层预计 2026 up mid-to-high single-digit | Q1 约 20% | 稳定利润和现金流，不是 AI 主线 | A | 进入基准，作为公司组合稳定器 | 半导体资本设备再加速，工业/医疗新 program |
+| 其他 CCS 制造、供应链与 pass-through | CCS 2026Q1 32.41 亿美元中未归入 HPS 细项的部分 | 大额但透明度低 | 可贡献收入，但利润率和议价能力弱 | A：CCS 已披露；C：产品拆分估算 | 进入基准，但毛利率保守；重点看客户多供和 pass-through | 若转为更高价值 platform / lifecycle，可上修 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池和产品需求强弱，不评估 CLS 份额、收入确认或利润率。需求单位按各业务最能解释的指标选取：networking 用 AI Ethernet / 800G / 1.6T 交换系统收入池和端口代际；compute/rack 用 AI 服务器/机架系统与集成商可捕获收入池；storage 用 AI storage / ingest / object / HPC 需求；ATS 用管理层 end-market 需求判断。行业数字来自项目内行业资料，产品收入化在第 4 节处理。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 800G AI Ethernet / HPS networking | 2026 年 800G 仍是 AI back-end Ethernet 主流；行业资料估算 800G switch systems 未来 1 年基准约 240-360 亿美元 | 仍增长，但 800G ASP 下滑、switch ASIC/optics 限制和客户验收延迟，使需求池降至约 200-280 亿美元 | 240-360 亿美元，符合当前 AI fabric 和 800G program ramp | 360-500 亿美元，GB300/ASIC/推理同步拉动，800G 未被 1.6T 过快替代 | 500-650 亿美元，多个百万卡级集群和 800G 追加订单同时发生 | 相对基准约 -40 至 -80 亿 / +120 至 +290 亿美元 | 基准=符合当前预期；乐观=高于当前预期 | 行业资料显示 800G 仍为 2026 主体；反证是 800G optics 库存化、ASP 连续下滑或客户转向 Arista/NVIDIA/Cisco 全栈 |
+| 1.6T DS6000/DS6001 与 102.4T switch | 1.6T/102.4T 2026H2 起量，2027 成新增高端主流；Celestica 披露两家 hyperscaler 1.6T programs begin in 2H 2026 | qualification 或 optics/AEC 延迟，NTM 需求池仅 30-80 亿美元 | NTM 内 80-150 亿美元；2026H2 进入小规模收入，2027Q1 加速但尚未全面替代 | 150-300 亿美元，两个客户 early production 转量产，AI Ethernet 份额提升 | 300-450 亿美元，1.6T 在 NTM 内提前成为高端默认端口 | 相对基准约 -50 至 -70 亿 / +70 至 +300 亿美元 | 基准只承认有限 NTM ramp；极度乐观低可信 | 正向证据为 DS6000/DS6001 官方产品、Tomahawk 6、two hyperscalers；反证是 1.6T optics、液冷、200G SerDes、客户网络架构延迟 |
+| AI/ML compute 与 Enterprise server/storage | 2026Q1 Enterprise +101%，Q2 outlook +约 130%；行业资料显示整机/机架集成商可捕获收入 2026 基准 340-580 亿美元 | GPU/ASIC allocation、客户机房通电或自研 ASIC schedule 延迟，全球集成收入池约 280-400 亿美元 | 340-580 亿美元；Blackwell/GB300、ASIC、企业 AI 工厂正常兑现 | 580-820 亿美元；GB300、Trainium/TPU/MI350 等同步放量 | 820-1150 亿美元；GPU/ASIC、电力、液冷和资金约束同时缓解 | 相对基准约 -60 至 -180 亿 / +240 至 +570 亿美元 | 基准=当前高景气正常兑现；乐观=客户拉货加速 | 需求不是 GPU TAM，而是可被系统厂捕获的集成、制造、测试、服务收入；反证为云厂 capex 下修、GPU 租赁价格和利用率走弱 |
+| Rack integration / testing / lifecycle | 高密度 AI rack 交付从节点采购转为整柜 FAT、液冷、网络、现场验收；行业资料估计整柜预集成和服务未来 1 年基准 150-320 亿美元 | 客户保留内部集成或数据中心交付延迟，服务需求 80-150 亿美元 | 150-320 亿美元；高端整柜预集成渗透率提升 | 320-480 亿美元；客户愿意为上线速度和故障责任付费 | 480-700 亿美元；整柜交付供不应求，服务与软件 attach 明显提升 | 相对基准约 -70 至 -170 亿 / +170 至 +380 亿美元 | 基准=需求明确但收入确认分散 | 反证为客户自集成、液冷 field issue、rack acceptance 变慢；该需求池不能直接等同 CLS 独立收入 |
+| HPS storage / AI data ingest / object storage | SC6110、SD6300 等面向 AI/HPC、AI data ingest、archive、object storage；行业资料显示 AI storage 受推理和多模态数据拉动 | attach 率低于预期，AI storage 只跟随 compute 温和增长 | 训练、推理、object storage 和 archive 正常增长；CLS 现有产品线可参与 | KV cache、RAG、多模态数据使高性能/高密存储 attach 提升 | AI storage 从附属节点变为推理效率瓶颈，平台化服务上修 | 无法可靠用单一行业口径量化；方向为低/中/高三档 | 基准=中等增量，不是最大需求池 | 反证为存储 ASP/库存周期、客户选择专业存储厂或自研平台 |
+| ATS | 管理层 2026 outlook 为 mid-to-high single-digit 增长；Capital Equipment 受 WFE 需求改善 | flat 到低个位数增长 | mid-to-high single-digit，符合公司预期 | 低双位数，资本设备和工业/医疗新 program 更强 | 15%+，但不是 AI 主线 | 相对基准约 -3 至 -6pct / +4 至 +8pct | 基准=公司当前预期 | 反证为工业/医疗库存和资本设备周期回落；不因 AI data center 热度上调 ATS |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些需求能进入 CLS NTM 收入表，以及当前可收入化基数。能参与需求池不等于能确认收入。收入锚点按收入表、分部、产品披露、管理层展望、客户/项目时间表和公司产能证据分级；低证据远期期权不进入 NTM 基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| CCS/HPS 800G networking | A：2026Q1 HPS 约 17 亿美元，Q1 CCS 32.41 亿美元；B/C：800G 产品拆分为本文估算 | 直接 | 中等偏高，CCS segment margin 8.6%，高于 ATS | 35-45 亿美元 | 50-65 亿美元 | 65-80 亿美元 | 80-95 亿美元 | 基准符合 800G program ramp 和 FY2026 outlook；乐观高于当前预期 | A/B/C | 是 | 管理层称 800G program ramps continue；HPS 已在收入表确认 | NTM 核心基准收入；不把全部行业 800G 增长归给 CLS |
+| DS6000/DS6001 1.6T switch | C：官方 1.6T 产品；B/C：two hyperscalers begin in 2H 2026，客户未命名且订单量未披露 | 直接 | 早期毛利可高于 800G，但爬坡和 qualification 成本存在 | 0-3 亿美元 | 5-12 亿美元 | 12-25 亿美元 | 25-45 亿美元 | 基准为小比例上修；乐观才代表明显超预期 | C，部分 B | 是，但小比例 | 客户和 H2 时间表相对清楚；CPO 和 2027 大规模 ramp 不进基准 | NTM 基准仅纳入 1.6T 初期收入；CPO/full 2027 ramp 进乐观、极度乐观或附录 |
+| AI/ML compute 与 Enterprise programs | A：2026Q1 Enterprise 8.30 亿美元，Q2 outlook +约 130%；C：AI/ML compute expected to ramp through 2026 | 直接 | 规模大，margin 取决于客户 BOM、pass-through 和测试/服务 attach | 35-45 亿美元 | 50-68 亿美元 | 68-90 亿美元 | 90-120 亿美元 | 基准符合当前 Enterprise ramp；乐观来自客户追加或新平台提前 | A/C | 是 | Enterprise segment 已确认，AI/ML compute 有管理层明确时间表 | NTM 第二主收入池；客户/型号保密，产品利润率需折扣 |
+| Rack integration / testing / lifecycle | C：官方服务页披露 rack-level design、turnkey systems、hardware/software configuration、intricate cabling；A 级收入未单列 | 直接和间接 | 若为服务/测试/现场交付，利润率高于普通制造；若只是装配，利润率低 | 0-5 亿美元直接收入 | 6-12 亿美元直接收入，更多价值嵌入 CCS/HPS | 12-22 亿美元 | 22-35 亿美元 | 基准只承认附加服务和执行能力，不把行业 rack 需求全额纳入 | C | 是，但不与 HPS/CCS 重复相加 | 能力和需求明确，但无单列收入；作为 margin 与交付可信度变量 | NTM 中作为附加收入和利润质量提升项；汇总时扣重 |
+| HPS storage | C：SC4200/SC6100/SC6110/SD6300/SD6200/SE4200 官方产品；A：Enterprise/HPS 收入已披露 | 直接 | 中等，低于高端网络；软件/服务 attach 可改善 | 8-12 亿美元 | 12-20 亿美元 | 20-30 亿美元 | 30-45 亿美元 | 基准为正常 AI/HPC/storage attach；乐观来自 KV cache / object / data ingest 增强 | A/C | 是，折扣纳入 | 产品已商业化，AI/HPC 用例明确，但收入拆分未披露 | NTM 基准中等贡献；不可把 AI storage 行业总量直接映射为 CLS 收入 |
+| ATS | A：2026Q1 ATS 8.06 亿美元，margin 6.0%；管理层 2026 revenues expected up mid-to-high single-digit | 直接 | 稳定，segment margin 低于 CCS 但波动较小 | 30-33 亿美元 | 33-37 亿美元 | 37-42 亿美元 | 42-46 亿美元 | 基准符合管理层 outlook；不是 AI 叙事上修来源 | A | 是 | 已披露分部收入和指引 | 稳定器；主要贡献现金流和组合稳定 |
+| 其他 CCS manufacturing / pass-through | A：CCS 总收入已披露；C：未归入具体产品的制造、供应链和 pass-through 估算 | 直接 | 低到中，客户指定 BOM 和多供应商压价 | 40-50 亿美元 | 48-60 亿美元 | 55-70 亿美元 | 65-85 亿美元 | 基准符合总 CCS 高增长；乐观需要订单质量不被 pass-through 稀释 | A/C | 是 | 总 CCS 收入已确认，产品拆分不可过度细化 | 纳入公司汇总，但利润率保守处理 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从需求和收入基数出发，判断每个重要产品/业务线在 NTM 内能贡献多少收入和利润。表中利润贡献主要指调整后经营利润贡献的方向性估算，不是公司披露的单品利润。因 HPS、rack integration、software 和 storage 在实际收入表中可能互相嵌套，产品行不可机械相加；第 6 节公司汇总已做重复计算和 pass-through 折扣。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| CCS/HPS 800G networking | 悲观 | 35-45 亿美元 | 2.5-3.6 亿美元 | 下行或持平 | 低于当前 HPS ramp | 800G 仍有需求，但 ASP/optics/客户验收拖累 | 保留为下行情景 | 800G ASP 快速下跌、客户转全栈供应商、switch ASIC/optics 短缺 |
+| CCS/HPS 800G networking | 基准 | 50-65 亿美元 | 4.2-5.9 亿美元 | 小幅改善 | 符合当前预期 | Q1 HPS 17 亿美元、800G ramps continue、CCS margin 8.6% | 保留 | 毛利扩张不能自动假设，客户压价仍强 |
+| CCS/HPS 800G networking | 乐观 | 65-80 亿美元 | 6.0-8.0 亿美元 | 改善 | 高于当前预期 | AI Ethernet demand、HPS scale、客户追加 | 保留 | 若只是低毛利 pass-through，则利润不随收入线性上修 |
+| CCS/HPS 800G networking | 极度乐观 | 80-95 亿美元 | 8.0-10.5 亿美元 | 明显改善但受限 | 显著高于预期 | 800G 追加和 1.6T 并行，产能顺利 | 下移为上限 | 极度乐观需客户、供应和价格同时成立 |
+| DS6000/DS6001 1.6T | 悲观 | 0-3 亿美元 | 亏损到 0.2 亿美元 | 初期压利润 | 低于当前 2H 2026 program 期待 | 产品存在但 qualification/optics 延迟 | 保留 | 1.6T optics、AEC、224G lane、客户 qual |
+| DS6000/DS6001 1.6T | 基准 | 5-12 亿美元 | 0.3-1.2 亿美元 | 小幅改善 | 小幅高于 FY2026 原始 run-rate，但符合新 outlook | two hyperscalers begin in 2H 2026，DS6000/DS6001 官方发布 | 保留 | 基准只纳入早期 ramp，CPO/full 2027 不进基准 |
+| DS6000/DS6001 1.6T | 乐观 | 12-25 亿美元 | 1.2-3.5 亿美元 | 改善 | 高于当前预期 | two hyperscalers early production 转量产，1.6T 新端口更高 ASP | 保留 | 多供应商竞争和客户压价 |
+| DS6000/DS6001 1.6T | 极度乐观 | 25-45 亿美元 | 3.0-6.5 亿美元 | 明显改善 | 显著高于当前预期 | 1.6T 提前成为高端默认端口 | 下移为乐观上限 | 缺少公开订单量；2027 以后大单不得完全拉入 NTM |
+| AI/ML compute 与 Enterprise programs | 悲观 | 35-45 亿美元 | 2.1-3.2 亿美元 | 持平或下行 | 低于当前 Enterprise ramp | Enterprise 已高增但客户平台或 GPU/ASIC 延迟 | 保留 | 客户私有 ASIC schedule、GPU/HBM allocation、机房通电 |
+| AI/ML compute 与 Enterprise programs | 基准 | 50-68 亿美元 | 3.5-5.5 亿美元 | 小幅改善 | 符合当前预期 | Q1 Enterprise +101%，Q2 outlook +约 130%，AI/ML compute ramp through 2026 | 保留 | BOM pass-through 和客户议价限制 margin |
+| AI/ML compute 与 Enterprise programs | 乐观 | 68-90 亿美元 | 5.5-8.5 亿美元 | 改善 | 高于当前预期 | next-generation programs 和 2027 momentum | 保留 | 若客户转单至台系 ODM 或 OEM，份额受压 |
+| AI/ML compute 与 Enterprise programs | 极度乐观 | 90-120 亿美元 | 8.0-13.0 亿美元 | 明显改善但低于芯片商 | 显著高于预期 | 多客户 ASIC/AI rack 同时放量，CLS 捕获制造与集成 | 下移为上限 | 低毛利制造收入不能自动变高利润 |
+| Rack integration / testing / lifecycle | 悲观 | 0-5 亿美元直接收入 | 0-0.5 亿美元 | 不改善 | 低于当前附加值预期 | 客户自集成或项目延期 | 保留 | 数据中心通电、rack acceptance、现场服务人力 |
+| Rack integration / testing / lifecycle | 基准 | 6-12 亿美元直接收入，另有嵌入式价值 | 0.7-1.8 亿美元 | 改善 | 符合当前交付升级逻辑 | 官方 rack services；行业整柜 FAT 和测试成为交付门槛 | 保留 | 收入未单列，汇总必须扣重 |
+| Rack integration / testing / lifecycle | 乐观 | 12-22 亿美元 | 1.8-3.8 亿美元 | 明显改善 | 高于当前预期 | 客户为上线速度、质量责任和软件配置付费 | 保留 | 服务能力、工程师和客户验收瓶颈 |
+| Rack integration / testing / lifecycle | 极度乐观 | 22-35 亿美元 | 3.5-7.0 亿美元 | 非线性改善 | 显著高于预期 | 高密度液冷整柜/网络压测供不应求 | 下移为乐观上限 | 缺少单列订单和价格证据 |
+| HPS storage | 悲观 | 8-12 亿美元 | 0.4-0.8 亿美元 | 持平 | 低于当前 attach 预期 | AI storage attach 慢 | 保留 | 专业存储厂竞争、SSD/HDD 周期 |
+| HPS storage | 基准 | 12-20 亿美元 | 0.8-1.6 亿美元 | 小幅改善 | 符合当前预期 | SC6110/SD6300 等产品与 AI/HPC/ingest 场景匹配 | 保留 | 产品收入未单列，不能过度上修 |
+| HPS storage | 乐观 | 20-30 亿美元 | 1.6-3.0 亿美元 | 改善 | 高于当前预期 | object storage、KV cache、AI data ingest attach 提升 | 保留 | 毛利和软件 attach 不确定 |
+| HPS storage | 极度乐观 | 30-45 亿美元 | 2.7-5.0 亿美元 | 改善 | 显著高于预期 | 推理/多模态数据爆发 | 下移为上限 | 竞争分散，CLS 软件入口弱于专业存储厂 |
+| ATS | 悲观 | 30-33 亿美元 | 1.5-1.9 亿美元 | 持平 | 低于 mid-to-high single outlook | 周期或库存拖累 | 保留 | 宏观和资本设备周期 |
+| ATS | 基准 | 33-37 亿美元 | 1.9-2.3 亿美元 | 小幅改善 | 符合当前预期 | 管理层 2026 mid-to-high single-digit growth | 保留 | ATS 不是 AI 主线，不上修太多 |
+| ATS | 乐观 | 37-42 亿美元 | 2.3-2.9 亿美元 | 改善 | 高于当前预期 | Capital Equipment re-acceleration 和 new program ramps | 保留 | 周期反转风险 |
+| ATS | 极度乐观 | 42-46 亿美元 | 2.8-3.4 亿美元 | 改善 | 明显高于预期 | 工业/医疗/资本设备同步改善 | 下移为乐观上限 | ATS 不具备 AI 非线性放量证据 |
+| 其他 CCS manufacturing / pass-through | 悲观 | 40-50 亿美元 | 2.0-3.0 亿美元 | 下行 | 低于当前预期 | 客户订单延迟或低毛利项目占比高 | 保留 | pass-through 放大收入但稀释 margin |
+| 其他 CCS manufacturing / pass-through | 基准 | 48-60 亿美元 | 3.0-4.5 亿美元 | 持平 | 符合当前预期 | CCS 2026 预计增长约 70% | 保留 | 无法分拆高/低毛利项目 |
+| 其他 CCS manufacturing / pass-through | 乐观 | 55-70 亿美元 | 4.0-6.0 亿美元 | 小幅改善 | 高于当前预期 | 供应链交付和客户多 program 拉动 | 保留 | 价格重谈和多供压价 |
+| 其他 CCS manufacturing / pass-through | 极度乐观 | 65-85 亿美元 | 5.5-8.0 亿美元 | 不宜大幅扩张 | 高于当前预期 | 客户 capacity roadmap 明显上修 | 下移为上限 | 低毛利 pass-through 不支持非线性利润 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为 NTM 公司总收入和利润，不讨论市场定价。汇总前已做三项扣重：第一，rack integration、software configuration、storage 与 HPS/CCS 可能嵌套，不机械相加；第二，1.6T/CPO 只有 NTM 内客户和时间表清楚的部分进入公司收入；第三，低毛利 pass-through 收入上修弱于高毛利 HPS / service 收入上修。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 188-200 亿美元 | 较 TTM 约 137.9 亿美元增长 +36%-45%；较 FY2026 指引约 -1% 至 +5% | 低于当前 NTM 期待约 -5% 至 -12%，但不一定低于 FY2026 指引 | 10.5%-11.2% | 7.2%-7.8% | EBITDA 无法可靠量化；调整后净利润约 10-12 亿美元 | FCF 约 2-5 亿美元；capex 和库存吸收现金 | 中 | H2 ramp 延迟、800G ASP 下行、1.6T qualification 推迟、客户验收和工作资本 |
+| 基准公司 | 210-228 亿美元 | 较 TTM 增长 +52%-65%；较 FY2026 指引高约 +10%-20%，因含 2027Q1 | 符合当前指引、Q2 outlook、H2 implied revenue 和 2027 visibility | 11.0%-11.8% | 8.0%-8.6% | EBITDA 无法可靠量化；调整后净利润约 12.8-15.0 亿美元 | FCF 约 6-9 亿美元；高于 FY2026 5 亿美元 run-rate 的可能性来自 Q1 2027，但仍受 capex/AR/inventory 约束 | 中高 | 按时投产、客户拉货、HPS/Enterprise mix、客户 cash deposits 和 AP 周转 |
+| 乐观公司 | 235-258 亿美元 | 较 TTM 增长 +70%-87%；较 FY2026 指引高 +24%-36% | 高于当前预期约 +10%-22%，不是单一小项目造成 | 11.8%-12.6% | 8.7%-9.5% | EBITDA 无法可靠量化；调整后净利润约 15.5-18.7 亿美元 | FCF 约 9-14 亿美元；经营杠杆改善但 capex 仍高 | 中 | 1.6T H2 program 转 early production、AI/ML compute 和 rack integration 同步放量、价格/mix 守住 |
+| 极度乐观公司 | 260-290 亿美元 | 较 TTM 增长 +89%-110%；较 FY2026 指引高 +37%-53% | 显著高于当前预期；需多个核心环节同时突破 | 12.4%-13.4% | 9.4%-10.2% | EBITDA 无法可靠量化；调整后净利润约 18.5-22.5 亿美元 | FCF 约 12-18 亿美元；前提是客户预付款/AP 支撑库存且产能利用率高 | 低到中 | 多 hyperscaler 追加、1.6T/AI compute/rack services 同时上修、供应链以价格解决、客户不转单 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测，只校准前四步的情景位置。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一个风险只在影响层级处理一次，避免重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 收入展望上调至 190 亿美元，Q2 指引 41.5-44.5 亿美元 | 公司收入基数 | 强正向；确认 H2 需要高于 Q1/Q2 run-rate | 正向；调整后 op margin 指引 8.1% | 中性到负向；高增长仍需营运资本 | 基准保留；悲观不能低估到无增长 |
+| 2026Q1 CCS 32.41 亿美元、HPS 约 17 亿美元、CCS margin 8.6% | 产品贡献和利润 | 强正向；AI/networking 已进收入表 | 正向；mix 支撑 margin | 中性；收入越快 AR/inventory 越大 | 基准保留；乐观保留 |
+| 1.6T programs with two hyperscalers begin in 2H 2026 | 产品收入基数 | 正向；给 1.6T NTM 小比例收入路径 | 潜在正向；早期 ASP/mix 较好 | 负向；qualification、测试、材料和产能需要投入 | 基准小比例保留；乐观保留；CPO/full ramp 移入附录 |
+| AI/ML compute expected to ramp through 2026，Enterprise Q2 outlook +约 130% | 产品贡献 | 强正向；支持 Enterprise/compute 基准 | 中性到正向；取决于 pass-through | 负向；GPU/ASIC/PCB/电源库存和客户验收 | 基准保留；乐观保留 |
+| 2026 capex 约 10 亿美元，free cash flow outlook 5 亿美元不变 | 现金流和执行 | 中性到正向；产能支持客户 roadmap | 短期负向；折旧、爬坡和低利用率风险 | 强负向约束；FCF 不随收入线性增长 | 公司利润基准保留，现金流不上移 |
+| 2025 年三大客户约 32% / 14% / 12%，top 10 为 79% | 公司组合风险 | 负向；单客户 roadmap 变化会影响收入 | 负向；客户议价和多供压价 | 负向；AR/inventory 集中 | 悲观保留；不在需求层重复惩罚 |
+| 800G ASP、1.6T optics/AEC、switch ASIC 和客户网络架构 | 产品需求和价格 | 双向；需求强但供应/ASP 决定收入 | 强影响；高端 mix vs ASP 下滑 | 影响交期和验收 | 乐观保留，极度乐观下移 |
+| Rack integration、testing、software configuration 未单列收入 | 产品收入基数 | 正向但不可全额确认 | 正向但无法精确量化 | 正向到负向；可提高交付，也需要人力 | 基准作为附加服务保留；直接收入高情景下移 |
+| ATS mid-to-high single-digit outlook | 公司组合 | 稳定正向 | 小幅正向 | 稳定现金流 | 基准保留；不因 AI 主题上移到极度乐观 |
+| 竞争：Arista、Cisco、NVIDIA、台系 ODM、Jabil/Flex/Sanmina | 份额和价格 | 负向；多供降低 CLS 捕获率 | 负向；压价和软件生态弱于全栈厂 | 中性到负向 | 悲观保留；乐观必须有公司特定客户/时间表 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | H2 ramp、1.6T、AI/ML compute 或客户验收低于当前预期，NTM 收入 188-200 亿美元 | FY2026 190 亿美元官方展望、Q1/Q2 数据使深度下修空间有限 | 客户集中、capex、工作资本、800G ASP、1.6T qualification | 保留 | 低于当前 NTM 预期但仍高于或接近 FY2026 指引的经营下行情景 | 中 | 客户集中只在公司组合/收入确认层处理，不在需求层和利润层重复扣减 |
+| 基准 | 当前指引、订单/客户节奏和 HPS/Enterprise ramp 正常兑现，NTM 收入 210-228 亿美元 | A 级分部收入、FY2026 outlook、Q2 guide、HPS 约 17 亿美元、CCS margin 8.6% | 产品拆分需估算；Q1 2027 需假设；rack/service 未单列 | 保留 | 最可能情景 | 中高 | 800G ASP 风险只限制 networking margin，不重复压低 ATS 或 storage |
+| 乐观 | 1.6T、AI/ML compute、rack integration 或 HPS mix 至少一项明确强于当前预期，NTM 收入 235-258 亿美元 | two hyperscalers 1.6T 2H 2026、AI/ML compute ramp、2027 momentum/new wins、行业 AI Ethernet 强需求 | 客户/订单量未全公开；竞争和供应链仍强 | 保留 | 有公司特定证据的超预期情景 | 中 | 行业 capex 上修不能直接替代 CLS 份额；只上修有收入路径的产品 |
+| 极度乐观 | 需求、公司捕获、利润率和执行同时突破，NTM 收入 260-290 亿美元 | 产品线、客户时间表、行业 1.6T/AI rack 需求和 capex 支撑上限 | CPO/full 2027 ramp 时间表偏远；1.6T qualification 和客户份额未量化；低毛利 pass-through 不支持利润同幅上修 | 下移 | NTM 内只保留为极度乐观上限；CPO 和 2027 后大规模机会移入附录或仅作跟踪 | 低到中 | CPO/1.6T 远期期权不得同时在需求、收入和利润层重复加分 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。CLS 的 NTM 收入最可能落在 210-228 亿美元，显著高于 Q1 年化和 FY2026 指引，因为当前 190 亿美元 FY2026 outlook 已经隐含 2026H2 加速，而 NTM 还包含 2027Q1 的新 program ramp。利润端最可能维持 adjusted operating margin 8.0%-8.6%，调整后净利润约 12.8-15.0 亿美元；自由现金流约 6-9 亿美元，但不应按净利润线性外推。
+- 乐观情景成立条件：800G program 不发生 ASP/客户验收拖累；两家 hyperscaler 1.6T program 在 2026H2 顺利从 qualification/early production 进入可确认收入；AI/ML compute 的 Enterprise ramp 不只是 pass-through，而带来 HPS、testing、software configuration 或 rack services attach；2026 capex 按时形成产能，客户预付款/AP 能覆盖营运资本。
+- 极度乐观情景成立条件：1.6T、AI/ML compute、rack integration 和 storage attach 同时超预期；客户 roadmap 和 capacity alignment 转成 2027Q1 可见订单；switch ASIC、optics/AEC、液冷/测试台、现场工程师和机房通电都不形成硬约束；且利润 mix 从普通制造转向高端平台和服务，而不是单纯低毛利收入放大。
+- 悲观情景触发条件：Q2/Q3 收入低于指引或 H2 implied run-rate；CCS/HPS margin 回落；1.6T programs 延迟到 2027 后；Enterprise AI/ML compute ramp 受 GPU/ASIC、客户自研或机房验收拖累；inventory/AR 快速上升但客户 cash deposits、AP 和 FCF 未同步改善；客户集中导致单一 roadmap 调整。
+- 后续跟踪数据：Q2 2026 revenue 和 EPS；Communications/Enterprise revenue growth；HPS revenue 与 CCS segment margin；1.6T DS6000/DS6001 客户量产线索；AI/ML compute program ramp；capex 实际支出和产能投产；inventory、AR、AP、customer cash deposits 和 cash cycle days；2027 revenue visibility/new wins；800G/1.6T optics ASP、switch ASIC 供应、Arista/Cisco/NVIDIA 竞争动态。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司官方 Q1 2026 披露日期为 2026-04-27，Q1 2026 earnings presentation 日期为 2026-04-28；本地公司调研日期为 2026-06-11；本地行业资料主要日期为 2026-06-10 至 2026-06-11；报告当前日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Celestica Q1 2026 press release：收入 40.47 亿美元、CCS 32.41 亿美元、ATS 8.06 亿美元、HPS 约 17 亿美元、Q2 指引、FY2026 outlook、FCF 和 ROIC。链接：<https://corporate.celestica.com/news-releases/news-release-details/celestica-announces-first-quarter-2026-financial-results>
+  - Celestica Q1 2026 earnings presentation：Q1 segment、Communications/Enterprise/ATS、working capital、capex、FY2026 outlook、800G/1.6T/AI/ML compute business outlook。链接：<https://corporate.celestica.com/static-files/55d7e661-e917-442f-a467-fc96ec059740>
+  - Celestica 2025 Annual Report / Form 10-K：2025 segment mix、customer concentration、segment margin、风险因素。链接：<https://corporate.celestica.com/static-files/1c9e65c5-2da9-4aa8-8028-d94577b5ee6a>
+  - Celestica Networking Switches：DS6000/DS6001/DS5000/DS4101/DS4100 产品规格。链接：<https://www.celestica.com/our-expertise/platform-solutions/networking>
+  - Celestica 1.6TbE switches release：DS6000/DS6001、Broadcom Tomahawk 6、102.4Tbps、64-port 1.6TbE、SONiC。链接：<https://corporate.celestica.com/news-releases/news-release-details/celestica-introduces-new-family-16tbe-data-center-switches-power>
+  - Celestica Storage：SC4200、SC6100、SC6110、SD6300、SD6200、SE4200。链接：<https://www.celestica.com/our-expertise/platform-solutions/storage>
+  - Celestica Rack Integration Services：rack-level design、tested turnkey systems、software/hardware configuration、global footprint。链接：<https://www.celestica.com/our-expertise/platform-solutions/rack-integration-services>
+- 项目内公司资料：
+  - `公司调研/AI服务器_存储_EMS/CLS_Celestica Inc_公司调研_2026-06-11.md`
+- 项目内行业资料：
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 官方展望：收入 190 亿美元、adjusted operating margin 8.1%、adjusted EPS 10.15 美元、capex 约 10 亿美元、free cash flow 5 亿美元。
+  - 2027 及以后：公司披露需求可见度和 new program wins 增强；1.6T、CPO、AI/ML compute next-generation programs、Rubin/Trainium/TPU/ASIC 相关机架和 rack integration 是上修项，但除 NTM 内有客户和时间表的部分外，不进入基准收入。
+  - CPO/full 1.6T ramp：列为乐观、极度乐观或附录跟踪，不作为 NTM 基准。

@@ -1,0 +1,147 @@
+# 公司收入传导与价值传导评估：Astera Labs（ALAB）
+
+报告日期：2026-06-12  
+主口径：NTM，即 2026Q2-2027Q1。  
+资料范围：仅使用 `公司调研/`、`行业调研/` 与最新公司公告/SEC/产品资料；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较内容。  
+边界说明：本报告只评估行业需求如何传导为 ALAB 的可确认收入、利润、现金流和经营质量，不输出投资评级、目标价、股价区间、估值倍数或市场定价判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM（2026Q2-2027Q1）；FY2026、FY2027、2030 TAM、长期 run-rate、NVLink Fusion、NPO/CPO 和 CXL pooling 只作补充或远期期权。
+- 当前收入基准、指引和 run-rate：FY2025 收入 `8.525 亿美元`，同比 `+115%`；2026Q1 收入 `3.084 亿美元`，同比 `+93%`、环比 `+14%`；2026Q2 指引 `3.55-3.65 亿美元`，中点 `3.60 亿美元`，对应 Q1+Q2 指引口径合计 `6.684 亿美元`。2026Q1 后 TTM 收入约 `10.014 亿美元`。公司不披露正式 backlog、RPO、bookings 或分产品收入。
+- 重要产品/业务线：`Aries PCIe/CXL Retimer 与 Smart Cable Module`、`Scorpio PCIe 6 / AI Fabric Switch`、`Taurus Ethernet Smart Cable Module/AEC`、`Leo CXL Memory Controller`、`COSMOS 软件/遥测与 Custom/NVLink Fusion/Optical`。
+- NTM 公司收入四情景：悲观 `13.8-15.5 亿美元`；基准 `16.5-18.5 亿美元`；乐观 `19.5-22.5 亿美元`；极度乐观 `24.5-29.0 亿美元`。基准已经是很强兑现，代表 Q2 指引达成、Aries/Scorpio/Taurus 在 H2 正常爬坡；极度乐观只代表 NTM 上限，需要 Scorpio、PCIe 6 retimer、Taurus AEC、Leo/CXL 和 custom connectivity 同时超预期。
+- 利润或 EBITDA 四情景：悲观情景毛利率 `70-72%`、GAAP 经营利润率 `12-17%`；基准毛利率 `73-75%`、GAAP 经营利润率 `18-23%`；乐观毛利率 `75-77%`、GAAP 经营利润率 `24-30%`；极度乐观毛利率 `76-79%`、GAAP 经营利润率 `30-36%`。Non-GAAP 经营利润率基准可维持 `34-39%`，但 SBC、客户协议、研发扩张和供应链预留会让 GAAP 利润质量低于裸毛利率。
+- 最大传导瓶颈：不是行业需求，而是 Scorpio 高 radix switch 的 H2 生产爬坡、客户认证、OSAT/测试/板卡/线缆/ODM 协同，以及客户 PO 可调整性。
+- 最大利润率变量：Scorpio 与 Aries/PCIe 6 的高毛利 silicon mix 能否抵消 Taurus/SCM 模块化、客户协议、一次性非现金影响和新产品研发投入。
+- 最大现金流变量：应收账款、库存和供应链预留随 H2 ramp 同步上升；公司净现金强、fabless capex 轻，但高增长阶段的营运资本占用会影响 FCF 转化节奏。
+- 可信度：公司总收入基准为中高，因 A 级总收入和正式 Q2 指引强；产品级拆分为中，因分产品收入、订单、backlog/RPO 未披露；Leo、NVLink Fusion、Optical 的 NTM 贡献可信度低到中，只能小额纳入基准或作为远期期权。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Aries PCIe/CXL Smart DSP Retimer 与 Aries Smart Cable Module | 无分产品披露；以 2026Q1 总收入 `3.084 亿美元`、Q2 指引和 PCIe 6 端口/retimer 出货口径估算，NTM 可收入化基数约 `4.5-6.5 亿美元` | 估算约 `30-40%` | 当前收入基本盘，PCIe 5/6 signal conditioning 和 CXL/PCIe 链路稳定性直接受益于 AI server/rack 升级 | B/C：总收入 A，产品出货和 PCIe 6 口径 B/C，分产品收入未披露 | 进入基准；但只能按估算进入，不能当公司披露值 | PCIe 7、optical-aware retimer、PCIe over optics |
+| Scorpio P/X Smart Fabric Switch | 已开始出货，2026H2 进入生产爬坡；公司披露/本地公司调研称 Scorpio 可能在 2026 年底成为最大产品线；NTM 可收入化基数约 `3.5-6.0 亿美元` | 估算约 `20-35%`，H2 快速上升 | 未来 12 个月最大增量；把 ALAB 从 retimer supplier 推向 rack-scale fabric silicon supplier | B/C：已 shipping 和明确 H2 ramp 为 B/C；客户数、订单和收入拆分未披露 | 进入基准，但基准需用折扣；大额超预期放入乐观/极度乐观 | UALink/open scale-up、320-lane/更高 radix、in-network compute、memory-semantic fabric |
+| Taurus Ethernet Smart Cable Module / AEC | 已有产品和客户采用，2025-2026 增长明确；NTM 可收入化基数约 `1.8-3.0 亿美元` | 估算约 `10-18%` | 800G/1.6T、rack 内短距铜互联和 Ethernet scale-out 的补充增量 | B/C：产品和量产方向明确，但分产品收入和客户节奏未披露 | 小到中等规模进入基准；乐观取决于 1.6T/224G AEC 正式采购 | 1.6T/224G/448G active copper、hybrid cable、optical-aware retimer |
+| Leo CXL Smart Memory Controller | Azure M-series preview/私测与 CXL Type-3 memory expansion 是主要锚；NTM 可收入化基数约 `0.3-1.0 亿美元` | 估算 `<5%` | 高毛利、长周期战略期权；NTM 更像从 preview 到 GA 的早期收入 | C：客户/产品明确，但收入规模、GA 时间和确认节奏不完全可验证 | 只小额进入基准；大额贡献移入乐观或附录跟踪 | CXL memory pooling、KV cache tier、CXL 3.x fabric、device-assisted telemetry |
+| COSMOS 软件、Custom/NVLink Fusion、Optical/NPO/CPO | COSMOS 嵌入主产品，不单列大额收入；NVLink Fusion/custom 和 optical 仍以 design engagement、收购整合、样品/验证为主；NTM 可收入化基数 `0-0.8 亿美元` | 基准估算 `<5%` | 提升客户锁定、诊断、RAS 和中期内容量；不是 NTM 基准主收入 | D，COSMOS 粘性为 C，但独立软件收入不可量化；NVLink/Optical NTM 收入为 D | COSMOS 作为利润质量增强项进入产品利润判断；Custom/Optical 大多不进基准 | NVLink Fusion 2027、NPO 2027、CPO 2028、aiXscale 光耦合 |
+
+## 3. 产品需求四情景
+
+本步口径：只评估外部需求池，不判断 ALAB 份额、收入确认或利润率。需求单位按产品特性选择：Aries 看 PCIe/CXL 端口、retimer attach 和 AI 平台出货；Scorpio 看 PCIe 6/smart fabric switch lane 数、rack-scale AI 采用和 hyperscaler 平台认证；Taurus 看 800G/1.6T AEC/SCM 线缆端口和短距铜互联；Leo 看 CXL memory controller、CXL memory module、high-memory VM 和 KV cache tier；Custom/Optical 看 design win、样品、NVLink Fusion/NPO/CPO 量产时间表。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Aries PCIe/CXL Retimer/SCM | 2026Q1 公司总收入 `3.084 亿美元`、Q2 指引中点 `3.60 亿美元`，行业资料显示 2026 PCIe 5/6 retimer 与 smart cable 在 AI server/rack 内放量 | PCIe 6 平台交付延迟，retimer attach 保持但新增平台低于预期；需求池较基准少 `10-20%` | GB200/GB300、MI350、自研 ASIC 和 PCIe 6 服务器正常推进；PCIe 6 retimer 继续成为 2026 高确定性子方向 | 新平台 retimer attach 上修，客户为稳定性/telemetry 支付溢价；需求池较基准多 `15-30%` | PCIe 6/7 设计前置、AI rack 内链路复杂度非线性上升；需求池较基准多 `40%+` | NTM 需求池从低双位数亿美元级别向 `60-90 亿美元` PCIe/CXL 高速 I/O 一年窗口传导 | 基准=符合当前行业预期；乐观需证明 PCIe 6 attach 和 ASP/mix 同时更强 | 行业资料把 PCIe/CXL 高速 I/O 2026H2-2027H1 基准需求池估为 `100-150 亿美元`，但这是总行业池，不等于 ALAB 收入；反证是客户多供和 PCIe 7 换代重新认证 |
+| Scorpio Smart Fabric Switch | Scorpio X-Series 320-lane 已开始出货，H2 生产爬坡；P-Series 32-320 lanes 面向多个 hyperscaler | H2 ramp 延迟，新增客户只做小批量验证；需求池较基准少 `25-40%` | 2026H2 smart fabric switch 从初始出货转入 production ramp，非 NVIDIA/open ASIC rack 采用 PCIe/UALink/自定义 fabric | 至少两个新增 hyperscaler 初始出货节奏提前，Scorpio 成为 H2 最大增量；需求池较基准多 `30-60%` | 开放 scale-up 在 NTM 内被多个云厂作为主架构，Scorpio X/P 高 radix 供不应求；需求池较基准多 `80%+` | 从 2025 小基数/设计赢单向 NTM 数亿美元到十亿美元级收入机会切换 | 基准=当前预期正常兑现；乐观=客户加速与高 lane mix；极度乐观=架构级突破 | 正证是 Scorpio shipping、H2 ramp、行业对 PCIe 6 switch/fabric 的 2026 拐点判断；反证是 NVIDIA NVSwitch/NVLink 封闭生态、Broadcom/Marvell 垂直绑定、UALink 成熟度 |
+| Taurus Ethernet SCM/AEC | 800G AEC 已成熟；1.6T/224G AEC/ACC 2026H2 进入样品、认证和早期订单窗口 | 光模块或 passive DAC 替代更多中短距链路，客户多供压价；需求池较基准少 `15-25%` | 800G/1.6T 光和铜分层并行，rack 内 2-5m active copper 继续增长 | 1.6T/224G AEC 在 2026Q4 开始进入 hyperscaler 正式采购，硅片和测试能力偏紧；需求池较基准多 `25-50%` | 1.6T/224G AEC 在新增 AI rack 中成为标准短距方案，2027H1 快速扩散；需求池较基准多 `70%+` | AI 高速铜缆 2026 可投资收入池基准 `75-115 亿美元`，其中 active cable silicon 是高价值子池 | 基准=高端铜互联按行业预期增长；乐观=1.6T 提前收入化 | 正证是行业资料称 2026 铜不是被光替代而是被 AI rack 重定价；反证是模块端长期多供、热功耗、光互联提前下沉 |
+| Leo CXL Memory Controller | Azure M-series preview、CXL Type-3 内存扩展可采购/验证；行业资料称 2026 是 CXL 从 0 到 1，不确定从 1 到 10 | Azure/其他云厂 GA 延迟，CXL 只停留在 preview/IMDB/高内存 VM 小规模；需求池低于基准 `30-50%` | CXL 2.0 Type-3 memory expansion 在高内存 VM、IMDB、部分推理 warm state 小量生产部署 | 至少一家 hyperscaler 从 preview 到 GA，CXL 直接 TAM 上修 `30-80%` | 长上下文/KV cache 推理把 CXL 从内存扩展变为 AI inference TCO 层，多个云厂生产部署 | 2026H2-2027H1 CXL 直接收入/订单池基准 `35-65 亿美元`，但 ALAB 可确认份额小 | 基准=早期采用；乐观=GA 或明确生产 SKU；极度乐观=推理 KPI 绑定 | 正证是 Azure preview、CXL 产业产品齐备、DRAM/HBM 价格和利用率压力；反证是延迟、带宽、软件、认证周期 9-18 个月 |
+| COSMOS/Custom/NVLink Fusion/Optical | COSMOS 随产品嵌入；NVLink Fusion/custom 和 optical/NPO/CPO 为 2027+ 设计窗口 | 仅维持工程验证和客户接触，不形成 NTM 可确认需求 | COSMOS 提升主产品需求弹性；custom/optical NTM 需求主要为小额 NRE/样品 | NVIDIA/hyperscaler hybrid rack 或 NPO media attach 提前确认 2027 revenue design | Custom connectivity、NVLink Fusion 和 optical scale-up 同时进入多客户生产设计 | NTM 绝对需求小，远期可扩展至数亿美元以上年化机会 | 基准=仅辅助；乐观/极度乐观=远期收入确认提前 | 正证是公司进入 NVLink Fusion/custom connectivity、aiXscale 光能力；反证是 2027/2028 时间表、标准分裂、光学良率和 NVIDIA 主导 |
+
+## 4. 可收入化暴露与收入基数
+
+本步口径：只判断产品需求中哪些能进入 ALAB 的 NTM 收入表，以及当前可收入化基数是多少；不预测增长、不判断利润率。ALAB 的总收入、Q2 指引、毛利率、现金流是 A 级证据；分产品收入、订单、RPO、backlog 未披露，因此产品级收入基数均为估算。可参与需求不等于可确认收入；客户总 CapEx、TAM、平台总金额不直接进入 ALAB 收入基数。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Aries PCIe/CXL Retimer/SCM | 总收入 A：2026Q1 `3.084 亿美元`、2026Q2 指引 `3.55-3.65 亿美元`；产品收入未披露；PCIe 6 和 signal conditioning 已在 AI 平台中贡献显著 | 直接 | 高毛利 silicon + firmware/telemetry；SCM 部分毛利低于裸 silicon | `3.8-4.8 亿美元` | `5.0-6.5 亿美元` | `6.8-8.5 亿美元` | `9.0-11.0 亿美元` | 基准符合当前预期；悲观低于 Q2/H2 正常 ramp；乐观高于当前 PCIe 6 attach 预期 | B/C | 是 | 已有收入、产品出货、PCIe 6 平台需求和 Q2 指引；但分产品拆分缺失 | 基准纳入，按估算折扣处理；不得把 PCIe/CXL 行业池直接转成 ALAB 收入 |
+| Scorpio Smart Fabric Switch | 已 shipping，2026H2 production ramp；管理层/公司资料强调 P/X-Series 和 320-lane AI scale-up fabric；未披露收入拆分 | 直接 | 高毛利高 ASP silicon，但早期 bring-up、客户支持和测试成本高 | `2.0-3.5 亿美元` | `5.5-7.5 亿美元` | `8.5-11.5 亿美元` | `13.0-17.0 亿美元` | 基准=Scorpio 成为 H2 最大增量但不过度前置；乐观/极度乐观代表新增 hyperscaler 提前放量 | B/C | 是，折扣纳入 | 已出货、H2 爬坡、有明确产品和时间表；但客户订单、价格和产能未量化 | NTM 最大增量；若 H2 未确认 Scorpio 成最大产品线则下移 |
+| Taurus Ethernet SCM/AEC | 产品线明确，AI rack 内 Ethernet smart cable 和 AEC 需求强；未披露收入拆分 | 直接 | 模块/active cable 毛利低于 Aries/Scorpio 裸 silicon，但含 silicon、firmware、认证，优于普通线缆 | `1.2-1.8 亿美元` | `2.2-3.2 亿美元` | `3.5-5.0 亿美元` | `5.5-7.5 亿美元` | 基准符合 800G/1.6T 铜互联正常增长；乐观取决于 1.6T/224G 正式采购 | B/C | 是 | 800G/1.6T AEC 行业需求强、产品已有商业化；分产品收入未披露 | 基准纳入；极度乐观需证明铜不被光提前替代且 224G silicon 供给紧 |
+| Leo CXL Memory Controller | Azure M-series preview/私测、CXL memory controller 产品明确；收入未量化 | 直接 | 高毛利 controller + firmware/RAS；若以模组/板卡形式进入，DRAM BOM 会稀释毛利 | `0-0.3 亿美元` | `0.4-1.0 亿美元` | `1.2-2.5 亿美元` | `3.5-5.5 亿美元` | 基准只作为早期收入；乐观必须有 GA、SKU 或新增云厂项目 | C | 小额是，大额否 | 客户和产品清楚，但 GA、规模和收入确认不完整；C 级只保守纳入 | 小额基准，较大规模移入乐观/极度乐观；CXL-PNM/大规模 pooling 作附录 |
+| COSMOS 软件/遥测 | 嵌入 Aries/Scorpio/Taurus/Leo；没有独立软件收入披露 | 间接 | 提升定价权、客户粘性、失效率控制和支持效率；不单独高估收入 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 相对预期是利润质量增强，不是独立收入上修 | C | 不单列收入 | 产品功能和客户锁定明确，但收入表不拆分 | 纳入各产品利润率方向和执行可信度，不单独计收入 |
+| Custom/NVLink Fusion/Optical/NPO/CPO | NVLink Fusion/custom connectivity、aiXscale/光耦合、NPO/CPO 主要在 2027+；NTM 收入路径不清 | 直接/间接 | 早期研发和 NRE 可能压利润；成熟后可高毛利 | `0` | `0-0.3 亿美元` | `0.5-1.5 亿美元` | `2.0-4.0 亿美元` | 基准基本不纳入；乐观代表明确 revenue design 提前；极度乐观是 NTM 上限 | D | 基准只允许极小额或 0 | 仅有产品/合作/路线和客户 engagement，未量化合同和交付 | 不进基准主收入；多数列远期期权或后续跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+本步口径：从第一步需求和第二步可收入化基数出发，评估每个重要产品在 NTM 内能贡献多少收入和利润。产品级收入不是公司披露值，而是按已披露总收入、Q2 指引、产品阶段、行业需求和公司调研交叉估算。利润贡献以毛利/经营利润方向表达；不得把行业 TAM、客户总 CapEx、2030 TAM 或长期 run-rate 直接当作 NTM 收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Aries PCIe/CXL Retimer/SCM | 悲观 | `3.8-4.8 亿美元` | 毛利贡献约 `2.6-3.4 亿美元`，经营利润受 R&D/FAE 吞噬 | 毛利率下行到 `68-72%` | 低于当前预期 | PCIe 6 平台延迟、客户多供、SCM mix 增加 | 保留为悲观 | 客户多供、价格重谈、PCIe 7 设计窗口重新洗牌 |
+| Aries PCIe/CXL Retimer/SCM | 基准 | `5.0-6.5 亿美元` | 毛利贡献约 `3.7-4.9 亿美元` | 维持 `73-76%` | 符合当前预期 | Q1/Q2 总收入强、PCIe 6 retimer 是 2026 确定主线 | 保留 | 分产品收入未披露，不能上修过快 |
+| Aries PCIe/CXL Retimer/SCM | 乐观 | `6.8-8.5 亿美元` | 毛利贡献约 `5.1-6.6 亿美元` | `75-78%`，scale 和 silicon mix 支撑 | 高于当前预期 | PCIe 6 attach、低功耗/telemetry、客户认证强 | 保留 | Broadcom/Marvell/Microchip/Montage 多供 |
+| Aries PCIe/CXL Retimer/SCM | 极度乐观 | `9.0-11.0 亿美元` | 毛利贡献约 `6.9-8.6 亿美元` | `77-79%` | 明显高于当前预期 | PCIe 6/7 前置、AI rack 链路数量非线性上升 | 保留为上限 | 需要需求、份额、供应和 ASP 同时突破 |
+| Scorpio Smart Fabric Switch | 悲观 | `2.0-3.5 亿美元` | 毛利贡献约 `1.3-2.4 亿美元`，早期支持成本高 | 初期 `65-72%` | 低于当前预期 | H2 ramp 延后，新增客户验证小量 | 保留 | NVIDIA 封闭生态、UALink 时间表、客户自研 |
+| Scorpio Smart Fabric Switch | 基准 | `5.5-7.5 亿美元` | 毛利贡献约 `4.0-5.6 亿美元` | `72-76%`，H2 scale 稳定 | 符合当前强预期 | Scorpio X shipping、P/X-Series、2026H2 production ramp | 保留 | 高 radix silicon、OSAT、板卡和 ODM validation |
+| Scorpio Smart Fabric Switch | 乐观 | `8.5-11.5 亿美元` | 毛利贡献约 `6.5-8.9 亿美元` | `76-78%`，高 ASP 和稀缺性 | 高于当前预期 | 两个以上新增 hyperscaler 初始出货提前，Scorpio 成最大产品线 | 保留 | 不能只靠 2030 merchant scale-up TAM；必须有 NTM 客户确认 |
+| Scorpio Smart Fabric Switch | 极度乐观 | `13.0-17.0 亿美元` | 毛利贡献约 `10.0-13.5 亿美元` | `77-80%` | 非线性超预期 | 开放 AI fabric 成多个云厂主架构，320-lane 高 radix 供不应求 | 下移为上限，非基准 | 任一环节缺证据即降为乐观；NVIDIA/Marvell/Broadcom 竞争强 |
+| Taurus Ethernet SCM/AEC | 悲观 | `1.2-1.8 亿美元` | 毛利贡献约 `0.7-1.1 亿美元` | `55-62%` | 低于当前预期 | 光替代/ACC 多供/客户压价 | 保留 | 模块端竞争、热功耗、passive DAC 替代 |
+| Taurus Ethernet SCM/AEC | 基准 | `2.2-3.2 亿美元` | 毛利贡献约 `1.4-2.2 亿美元` | `62-68%` | 符合当前预期 | 800G AEC 与 AI rack 短距铜需求强 | 保留 | 1.6T/224G 仍在认证，基准不提前大额纳入 |
+| Taurus Ethernet SCM/AEC | 乐观 | `3.5-5.0 亿美元` | 毛利贡献约 `2.4-3.6 亿美元` | `66-72%` | 高于当前预期 | 1.6T/224G 正式采购，silicon/firmware 供给偏紧 | 保留 | 需要客户平台而非展会样品 |
+| Taurus Ethernet SCM/AEC | 极度乐观 | `5.5-7.5 亿美元` | 毛利贡献约 `3.8-5.5 亿美元` | `68-74%` | 明显高于当前预期 | AEC/SCM 成新增 AI rack 默认短距方案 | 下移为上限 | 多供后 ASP 下降；不能把普通铜缆收入算进 ALAB |
+| Leo CXL Memory Controller | 悲观 | `0-0.3 亿美元` | 低到小额正贡献，研发/支持可能抵消 | 毛利不稳定 | 低于当前预期 | Azure GA 延迟、CXL 停留 preview | 保留 | 延迟、带宽、软件、互操作 |
+| Leo CXL Memory Controller | 基准 | `0.4-1.0 亿美元` | 毛利贡献约 `0.3-0.7 亿美元` | controller 可高毛利，但规模小 | 符合保守预期 | Azure M-series preview、Type-3 memory expansion 可采购/验证 | 保留，小额纳入 | C 级证据，不能大额进基准 |
+| Leo CXL Memory Controller | 乐观 | `1.2-2.5 亿美元` | 毛利贡献约 `0.8-1.8 亿美元` | `65-75%` | 高于当前预期 | Azure GA 或新增 hyperscaler 生产项目 | 保留 | 需明确收入确认时间和客户 SKU |
+| Leo CXL Memory Controller | 极度乐观 | `3.5-5.5 亿美元` | 毛利贡献约 `2.5-4.1 亿美元` | `70%+` 若 controller 稀缺 | 非线性超预期 | CXL 绑定 KV cache/AI inference TCO，多个云厂生产部署 | 移入附录/上限 | NTM 内证据不足，更多是 2027-2028 期权 |
+| COSMOS/Custom/NVLink Fusion/Optical | 悲观 | `0` | 研发投入净消耗 | 稀释 | 低于预期 | custom/optical 仅验证 | 保留 | 无客户时间表 |
+| COSMOS/Custom/NVLink Fusion/Optical | 基准 | `0-0.3 亿美元` | COSMOS 间接提升主产品毛利/支持效率；独立收入无法可靠量化 | 对综合毛利小幅正向，研发负担存在 | 符合当前预期 | COSMOS 嵌入产品，custom/optical 路线明确但未量化 | 保留为辅助 | 不单列大额收入 |
+| COSMOS/Custom/NVLink Fusion/Optical | 乐观 | `0.5-1.5 亿美元` | 若有 NRE/首批设计收入，可小幅增厚利润；光学早期毛利不稳 | 中性到正向 | 高于当前预期 | NVLink Fusion/custom 2027 revenue design 提前明确 | 仅作跟踪/小额上移 | NVIDIA 主导、标准分裂、光良率 |
+| COSMOS/Custom/NVLink Fusion/Optical | 极度乐观 | `2.0-4.0 亿美元` | 高毛利 custom silicon 可能显著增厚，但 optical ramp 需先消化研发 | 不确定 | 明显高于当前预期 | NVLink Fusion、NPO、custom connectivity 同时提前 | 移入附录 | NTM 证据等级 D，不进基准 |
+
+## 6. 公司收入和利润四情景
+
+本步口径：把产品级贡献合成为 ALAB 的 NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。汇总时去重：Scorpio 与 Aries 可能共用同一 AI rack/客户预算，Taurus 与部分 optical/AEC 机会存在替代，Leo 与 CXL/KV cache 期权不能与长期 TAM 重复计算。所有公司层面数字均为经营情景估算，不代表公司指引、市场定价或投资评级。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `13.8-15.5 亿美元` | 较 2026Q1 后 TTM `10.014 亿美元` 增长约 `+38% 至 +55%`；仍高增但低于当前 H2 ramp 预期 | 低于当前预期：Q2 达低端或达成但 Q3/Q4 guide 不强，Scorpio ramp 延后 | `70-72%` | GAAP `12-17%`；Non-GAAP `28-32%` | GAAP 净利润约 `1.8-2.6 亿美元`；Non-GAAP 经营利润约 `3.9-5.0 亿美元` | 正 FCF 但 FCF margin 下降，库存和应收占用上升 | 中 | Scorpio 客户认证/产能延迟、客户 PO 下修、Q2 毛利率下行后不能恢复 |
+| 基准公司 | `16.5-18.5 亿美元` | 较 TTM 增长约 `+65% 至 +85%`；FY2026 可接近 `15.5-17.0 亿美元` | 符合当前预期：Q2 指引达成，H2 Aries/Scorpio/Taurus 正常爬坡，Leo/custom 小额 | `73-75%` | GAAP `18-23%`；Non-GAAP `34-39%` | GAAP 净利润约 `3.2-4.3 亿美元`；Non-GAAP 经营利润约 `5.6-7.2 亿美元` | 正 FCF，营运资本消耗部分抵消利润；净现金支撑供应链预留 | 中高 | 分产品收入不披露，Scorpio 是否真成最大产品线需 Q3/Q4 验证 |
+| 乐观公司 | `19.5-22.5 亿美元` | 较 TTM 增长约 `+95% 至 +125%` | 高于当前预期：Scorpio H2 ramp 超 guide，新增 hyperscaler 提前拉货，Aries/Taurus 同步强 | `75-77%` | GAAP `24-30%`；Non-GAAP `39-43%` | GAAP 净利润约 `5.0-6.8 亿美元`；Non-GAAP 经营利润约 `7.6-9.7 亿美元` | FCF 显著为正，但库存/应收峰值随 ramp 上升 | 中 | 高毛利 silicon mix 必须抵消 Taurus/客户协议/新产品投入 |
+| 极度乐观公司 | `24.5-29.0 亿美元` | 较 TTM 增长约 `+145% 至 +190%` | 显著高于当前预期：Scorpio、PCIe 6 retimer、1.6T/Taurus、Leo 或 custom connectivity 多线同时突破 | `76-79%` | GAAP `30-36%`；Non-GAAP `43-48%` | GAAP 净利润约 `7.5-10.5 亿美元`；Non-GAAP 经营利润约 `10.5-13.9 亿美元` | FCF 很强但波动大；供应链预付款、库存、收购/研发投入可能阶段性拖累 | 低到中 | 需要需求、份额、ASP/mix、产能、认证和利润质量同时成立；任一核心环节缺证据即下移 |
+
+## 7. 证据校准、反证和可信度
+
+本步口径：不重新预测经营结果，只校准前四步情景。正向证据必须说明影响需求、收入基数、产品贡献、公司利润还是执行可信度；反证只在实际影响层级处理一次，避免同一风险重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 `3.084 亿美元`、同比 `+93%`，Q2 指引 `3.55-3.65 亿美元` | 公司收入基数 | 把 NTM 基准下限抬高到 `16.5 亿美元`附近；悲观仍高于 TTM | 高收入 scale 支撑费用杠杆 | Q2/Q3 应收和库存同步上升 | 基准保留；悲观不降到低增长，只定义为低于当前 H2 ramp |
+| 公司不披露分产品收入、backlog、bookings、RPO | 证据可信度 | 产品级贡献可信度下降，不能把 TAM 直接转收入 | 利润 mix 不能精确量化 | 客户 PO 可调整，H2 可见度低于正式 backlog 公司 | 产品级基准保守；Leo/custom 大额移入乐观/附录 |
+| Scorpio X shipping 与 H2 production ramp | 产品贡献/公司收入 | Scorpio 进入基准并成为最大增量 | 高 ASP switch 有助毛利，但 early ramp 支持成本高 | 高 radix、测试、板卡、ODM validation 是执行瓶颈 | 基准保留，乐观保留，极度乐观只作上限 |
+| PCIe/CXL retimer、AEC、smart cable 行业需求强 | 需求/产品贡献 | Aries/Taurus 基准需求池明确 | 高端 silicon 可维持高毛利；模块端较易被压价 | 供应链和认证决定收入确认 | Aries/Taurus 基准保留；普通铜缆不转化为 ALAB 收入 |
+| Q2 2026 毛利率指引约 `73%`，低于 Q1 `76.4%` Non-GAAP 毛利率 | 公司利润 | 不直接压低收入 | 对悲观和基准毛利率形成约束，不能默认规模效应立刻扩张 | 可能来自客户协议、mix、供应链或新产品 | 基准毛利率定为 `73-75%`；乐观需证明 Q2 后恢复 |
+| Leo Azure M-series preview 与 CXL 行业从 0 到 1 | 收入基数/远期期权 | 小额进入基准，大额收入移入乐观 | controller 高毛利，但 CXL 模组 DRAM BOM 稀释 | GA、软件、延迟、互操作决定兑现 | 小额基准保留；极度乐观移入附录/上限 |
+| NVLink Fusion、aiXscale/Optical/NPO/CPO | 远期期权 | NTM 基准只允许极小额或 0 | 早期研发可能稀释利润；成熟后高毛利 | 2027/2028 时间表和客户验证 | 基准排除大额；仅作跟踪或附录 |
+| 客户集中、客户自研和大厂垂直绑定 | 份额/收入确认 | 限制极度乐观和乐观上沿 | 可能压价或要求客户协议 | 客户 PO 变化会放大季度波动 | 不重复惩罚：只在份额/收入确认层处理，不再在需求层重复压低 |
+| NVIDIA 封闭生态与 UALink/open scale-up 成熟度 | Scorpio 需求和份额 | 限制 Scorpio 可服务市场 | 若 ALAB 只能进入非 NVIDIA/混合 rack，margin 仍可高但规模受限 | 标准和生态成熟决定 H2/H1 timing | 极度乐观下移为上限；基准仍保留非 NVIDIA/open/custom ASIC 机会 |
+| 高速 SerDes、OSAT、测试、线缆/连接器、ODM 验证 | 执行可信度 | 影响 H2 可确认收入节奏 | 低良率、加急测试和质保会压毛利 | 库存和交期带来 FCF 波动 | 乐观需要供给同步；悲观触发条件之一 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入低于当前 H2 ramp 预期，但仍高于 TTM | Q1/Q2 指引已经给出高起点，AI connectivity 需求不是消失 | Scorpio 延迟、Q2 后毛利率恢复差、客户 PO 下修、供应链/认证拖延 | 保留 | `13.8-15.5 亿美元`收入、`70-72%`毛利率 | 中 | 客户集中只在收入确认/份额层处理，不再重复压低行业需求 |
+| 基准 | 当前预期正常兑现，A/B 级总收入和 Q2 指引支撑，C 级机会小额处理 | Q1 实际、Q2 指引、Aries/Scorpio/Taurus 产品化、Scorpio H2 ramp | 分产品收入和 backlog/RPO 缺失；Leo/custom 证据不足 | 保留 | `16.5-18.5 亿美元`收入、`73-75%`毛利率 | 中高 | Q2 毛利率下行只在利润率层处理，不再压低收入需求 |
+| 乐观 | 有公司特定证据的超预期：Scorpio、Aries、Taurus 至少两条超基准 | Scorpio shipping/H2 ramp、PCIe 6/800G/1.6T 强需求、新 hyperscaler 可能提前 | 仍缺订单量化和分产品收入；大厂多供/自研可能压份额 | 保留 | `19.5-22.5 亿美元`收入、`75-77%`毛利率 | 中 | 行业 beta 不能替代公司 alpha；只有产品和客户路径明确的部分保留 |
+| 极度乐观 | NTM 上限，需求、捕获、利润质量和执行同时突破 | Scorpio X/P 高 radix、PCIe 6 retimer、Taurus AEC、Leo/custom 同时可能带来非线性 | 任一核心环节缺可验证订单/交付/利润证据；Leo/custom/optical 多为 2027+ | 下移 | 作为 `24.5-29.0 亿美元`上限情景保留，不作为当前预期 | 低到中 | 远期期权不重复计入 Scorpio/Aries 基准收入，也不作为利润率扩张证据 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。ALAB 的 NTM 经营中枢更可能落在 `16.5-18.5 亿美元`收入、`73-75%`毛利率、GAAP `18-23%`经营利润率区间。这个基准不是温和假设，而是建立在 Q2 指引达成、H2 Scorpio/Aries/Taurus 正常生产爬坡、Leo/custom 小额处理的强兑现路径上。
+- NTM 收入结论：行业需求能够明确传导到 ALAB 收入的主线是 Aries/PCIe 6 retimer、Scorpio smart fabric switch 和 Taurus AEC/SCM；Leo CXL 和 custom/optical 是提高中期内容量和客户粘性的期权，但不应在 NTM 基准中大额收入化。
+- 利润/现金流结论：经营价值主要来自高端 connectivity silicon、firmware、COSMOS telemetry、客户认证和低资本开支 fabless 模型。毛利率的核心不是行业热度，而是 Scorpio/Aries silicon mix 是否足以抵消 Taurus 模块化、客户协议、新产品支持和供应链成本。FCF 大概率为正，但 H2 ramp 会带来库存、应收和供应链预留波动。
+- 主要传导瓶颈：第一是 Scorpio 从 shipping 到 production ramp 的收入确认；第二是客户 PO 和认证而非正式 backlog；第三是高 radix switch、PCIe 6 retimer、AEC/SCM 的测试和供应链协同；第四是 Q2 后毛利率能否恢复。
+- 乐观情景成立条件：Q2 实际收入超过指引上沿或 Q3 指引明显上修；管理层确认 Scorpio 成为最大产品线或 H2 新增 hyperscaler 初始出货提前；Aries PCIe 6 attach 继续扩张；Taurus 1.6T/224G AEC 出现正式客户采购；毛利率从 Q2 低点回到 `75%+`。
+- 极度乐观情景成立条件：Scorpio X/P 在多个云厂/AI accelerator 平台成为标准 BOM；PCIe 6 retimer 与 800G/1.6T AEC 同时供不应求；Leo CXL 从 Azure preview 进入 GA 并被至少一家云厂用于生产级内存/推理层；custom/NVLink Fusion 或 optical 在 2027Q1 前出现可确认 revenue design；这些增量的毛利率没有被客户协议和多供压价吞噬。
+- 悲观情景触发条件：Q2 低端达成但 Q3/Q4 指引不支持 H2 ramp；Scorpio 仍停留在小批量试用或客户认证延迟到 2027H2；Q2 毛利率下行后不能恢复；客户 PO 调整、供应链测试/板卡/线缆瓶颈导致 revenue slip；客户多供或大厂绑定压低 Aries/Taurus ASP。
+- 后续跟踪数据：2026Q2 实际收入和 Q3 指引；Scorpio revenue mix、客户数和是否成为最大产品线；新增 hyperscaler 初始出货是否发生；Non-GAAP/GAAP 毛利率是否回到 `74-76%`；库存、应收和经营现金流转化；Leo/Azure M-series 是否 GA；NVLink Fusion/custom/optical 是否出现明确 2027 revenue design。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：最新正式财务口径截至 2026Q1（季度截至 2026-03-31，10-Q filed 2026-05-06）；公司 Q2 2026 指引来自 2026-05-05 Q1 earnings release；本报告写作日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：Astera Labs Q1 2026 earnings release；Astera Labs FY2025 Form 10-K；Astera Labs 2026Q1 Form 10-Q；本项目 `公司调研/AI计算芯片_EDA_IP_custom_ASIC/ALAB_AsteraLabs_公司调研_2026-06-11.md`。公司不披露正式 backlog、RPO、bookings、取消率、交期或分产品收入，产品级收入均为估算。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 基准收入可接近 `15.5-17.0 亿美元`，乐观 `17.5-19.5 亿美元`，极度乐观 `20.5-23.5 亿美元`；FY2027 或长期 run-rate 取决于 Scorpio、Leo、NVLink Fusion 和 optical/NPO/CPO，不能替代 NTM 主表。2030 merchant scale-up TAM、CXL 两年累计 TAM、AI 数据中心 CapEx 等只用于需求背景，不直接等同于 ALAB 收入。
+- 主要来源：
+  - Astera Labs Q1 2026 results, 2026-05-05: https://www.asteralabs.com/news/astera-labs-reports-first-quarter-2026-financial-results/
+  - Astera Labs 2026Q1 Form 10-Q, filed 2026-05-06: https://www.sec.gov/Archives/edgar/data/1736297/000173629726000020/alab-20260331.htm
+  - Astera Labs FY2025 Form 10-K / annual report, filed 2026: SEC company filing record for CIK 1736297.
+  - Astera Labs Aries product pages and PCIe/CXL connectivity product materials.
+  - Astera Labs Scorpio P/X Smart Fabric Switch product announcements and product materials.
+  - Astera Labs Taurus Ethernet Smart Cable Module product materials.
+  - Astera Labs Leo CXL Smart Memory Controller / Microsoft Azure M-series preview materials.
+  - `公司调研/AI计算芯片_EDA_IP_custom_ASIC/ALAB_AsteraLabs_公司调研_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_PCIe_CXL高速IO交换与Retimer_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_CXL内存扩展与内存池化_2026-06-10.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_开放Scale-up互联_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+

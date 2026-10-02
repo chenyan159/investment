@@ -1,0 +1,187 @@
+{
+  "scope": "Frozen prompt and file integrity checks, ticker substitution allowed",
+  "planSha256": "e417a88d8b09a77777225aee6dab6b31d6b94e3033c48524454f1bb5bb465c24",
+  "livePlanSha256": "e417a88d8b09a77777225aee6dab6b31d6b94e3033c48524454f1bb5bb465c24",
+  "checks": [
+    {
+      "ticker": "SOMMY",
+      "status": "done",
+      "attempts": 1,
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "fullPlanInActualPrompt": true,
+      "snapshots": [
+        {
+          "version": "新报告",
+          "sha256Matches": true
+        },
+        {
+          "version": "旧报告",
+          "sha256Matches": true
+        }
+      ]
+    },
+    {
+      "ticker": "PSIX",
+      "status": "done",
+      "attempts": 1,
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "fullPlanInActualPrompt": true,
+      "snapshots": [
+        {
+          "version": "新报告",
+          "sha256Matches": true
+        },
+        {
+          "version": "旧报告",
+          "sha256Matches": true
+        }
+      ]
+    },
+    {
+      "ticker": "ET",
+      "status": "done",
+      "attempts": 1,
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "fullPlanInActualPrompt": true,
+      "snapshots": [
+        {
+          "version": "新报告",
+          "sha256Matches": true
+        },
+        {
+          "version": "旧报告",
+          "sha256Matches": true
+        }
+      ]
+    },
+    {
+      "ticker": "SPACEX",
+      "status": "done",
+      "attempts": 1,
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "fullPlanInActualPrompt": true,
+      "snapshots": [
+        {
+          "version": "新报告",
+          "sha256Matches": true
+        },
+        {
+          "version": "旧报告",
+          "sha256Matches": true
+        }
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "status": "done",
+      "attempts": 1,
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "fullPlanInActualPrompt": true,
+      "snapshots": [
+        {
+          "version": "新报告",
+          "sha256Matches": true
+        },
+        {
+          "version": "旧报告",
+          "sha256Matches": true
+        }
+      ]
+    },
+    {
+      "ticker": "MU",
+      "status": "done",
+      "attempts": 1,
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "fullPlanInActualPrompt": true,
+      "snapshots": [
+        {
+          "version": "新报告",
+          "sha256Matches": true
+        },
+        {
+          "version": "旧报告",
+          "sha256Matches": true
+        }
+      ]
+    },
+    {
+      "ticker": "CRWV",
+      "status": "done",
+      "attempts": 1,
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "fullPlanInActualPrompt": true,
+      "snapshots": [
+        {
+          "version": "新报告",
+          "sha256Matches": true
+        },
+        {
+          "version": "旧报告",
+          "sha256Matches": true
+        }
+      ]
+    },
+    {
+      "ticker": "SNDK",
+      "status": "done",
+      "attempts": 1,
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "fullPlanInActualPrompt": true,
+      "snapshots": [
+        {
+          "version": "新报告",
+          "sha256Matches": true
+        },
+        {
+          "version": "旧报告",
+          "sha256Matches": true
+        }
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "status": "done",
+      "attempts": 1,
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "fullPlanInActualPrompt": true,
+      "snapshots": [
+        {
+          "version": "新报告",
+          "sha256Matches": true
+        },
+        {
+          "version": "旧报告",
+          "sha256Matches": true
+        }
+      ]
+    },
+    {
+      "ticker": "CRDO",
+      "status": "done",
+      "attempts": 1,
+      "model": "gpt-6-astra",
+      "reasoningEffort": "high",
+      "fullPlanInActualPrompt": true,
+      "snapshots": [
+        {
+          "version": "新报告",
+          "sha256Matches": true
+        },
+        {
+          "version": "旧报告",
+          "sha256Matches": true
+        }
+      ]
+    }
+  ]
+}

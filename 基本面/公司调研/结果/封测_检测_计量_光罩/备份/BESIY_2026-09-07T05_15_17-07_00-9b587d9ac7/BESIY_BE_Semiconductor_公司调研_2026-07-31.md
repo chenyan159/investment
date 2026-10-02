@@ -1,0 +1,763 @@
+# BESIY：BE Semiconductor Industries N.V.（Besi）全面公司尽调（2026-07-31）
+
+> **报告日期：** 2026-07-31（America/Los_Angeles）  
+> **证券：** Euronext Amsterdam：BESI；美国 OTC ADR：BESIY；普通股:ADR = 1:1  
+> **公司全称：** BE Semiconductor Industries N.V.，简称 Besi  
+> **报告范围：** 公司最近五个财报季度、过去半年公司与产业链公开信息、相关技术会议/论坛，以及项目内“基本面/行业调研”中的相关产业资料。  
+> **重要提示：** 本报告不是投资建议。Besi 不披露季度产品级收入、产品级利润率、正式 backlog 或取消率；涉及这些项目的数字均为区间估算，而不是公司披露。
+
+## 一页结论
+
+**一句话定位：** Besi 是先进封装“高精度贴装与键合设备”龙头，正从传统后道 die attach 设备商转型为横跨前道式洁净环境与后道封装的 AI 先进封装平台；它既受益于 CoWoS-like、chiplet、光模块和未来 HBM 混合键合，又保留明显的设备周期性。
+
+| 维度 | 结论 | 关键事实 |
+|---|---|---|
+| AI 暴露 | 已从主题变成订单与收入现实 | H1-26 AI 系统订单约占 60%，高于 H1-25 的约 50%；Q2-26 收入同比 +68.7%、订单同比 +128.8% |
+| 产业链地位 | 在最关键的 die placement 环节具有强份额，但不是整个先进封装设备链垄断者 | 2025 年可服务市场份额 70%、die attach 49%、精度 <7µm 的 advanced die placement 83%（TechInsights/Besi 口径） |
+| 最强产品 | D2W hybrid bonding、2.5D flip-chip/bridge attach、光子多芯片贴装 | hybrid bonding 最新为 Q2-26 的 21 家；2025 年报称年末 18 家，而 Q2-26 新闻稿回溯称年末 15 家，官方口径冲突；AP6 约 60 台，AP7 公布产能约为其两倍 |
+| 最大期权 | HBM4E/HBM5 的 hybrid bonding 或先进 TCB | 三大 HBM 厂均在评估，但 2026 年 HBM4 主流仍是 MR-MUF/TCB；Besi 尚未成为 HBM 堆叠既定 POR |
+| 财务质量 | 很强 | Q2-26 毛利率 65.7%、净利率 35.6%；2026-06-30 净现金及存款 €164.0m，流动比率 4.28x |
+| 订单可见度 | 强，但精确 backlog 不披露 | 锚定 Q1 电话会分析师约 €400m 的推算，Q2 机械更新约 €443m；约为 Q3 指引中值的 1.58 倍或 4.7 个月收入 |
+| 估值 | 极贵，要求 2027 年增长兑现 | 2026-07-31 BESI 收盘 €198.25，BESIY 延迟价 $229.58；TTM PE 约 75.7x，2026E PE 46.5x，TTM P/S 21.75x |
+| 主要争议 | HBM 采用时点、订单集中、先进封装过度扩产、极高估值 | 管理层明确提醒典型上行周期约 6–8 个季度后可能出现过剩；订单可延迟或取消 |
+
+**投资判断：**
+
+1. **基本面正在加速，而不是只靠远期故事。** Q3-25 至 Q2-26 的累计订单为 €987.7m、累计收入为 €733.9m，净订单增量 €253.8m。Q2-26 订单 €292.9m、B2B 1.17x，且 Q3 收入指引仍为环比 +10% 至 +15%。
+2. **公司最值得付溢价的是“复杂封装中每增加一种互连，Besi 可多卖一种设备”。** 一套下一代加速器示例包含 8 次 hybrid bond、16 次 flip-chip、15 次 bridge placement 和 1 次大芯片 flip-chip；Besi 的产品组合可以覆盖其中多个步骤。
+3. **HBM hybrid bonding 是巨大期权，但不能计入 2026 年基准收入。** Samsung 已展示可支持 16 层以上的 HCB，Besi 预计 2027 年从 16-high HBM4E 开始；然而 SK hynix 量产 HBM4 明确采用 Advanced MR-MUF，且 2026 年又向 Hanmi 下单 HBM4 TC bonder。基准情景只计资格验证和少量试产，量产放在乐观/极度乐观情景。
+4. **最容易被低估的小业务是 AI 数据中心电源 die attach/molding 与前道式售后服务。** Q2 管理层表示 AI power management 已有多个客户，且只有在确信可成为“显著 mainstream contribution”时才会单独点名；hybrid bonding 售后强度可把集团服务占比由 15%–16%推向 18%–20%。
+5. **股票风险与公司质量同时很高。** 资产负债表和利润率很强，但当前 75.7x TTM PE、21.75x TTM P/S 已隐含从 €733.9m LTM 收入向 2027 年约 €1.34bn 共识快速跃升；任何 HBM 延迟、AP7 订单节奏放缓或毛利率回落都会放大估值压缩。
+
+## 研究方法、证据等级与估算口径
+
+### 证据等级
+
+| 等级 | 定义 | 本报告的用法 |
+|---|---|---|
+| A | 审计/半年度财务报表、正式季报、官方产品规格、正式合同披露 | 收入、利润、现金、订单、产品规格、指引 |
+| B | 公司 Investor Day、管理层财报电话会、客户/竞品官方发布 | 客户采用、产能、交期、资格验证、产品路线 |
+| C | 行业媒体、会议资料、供应链渠道交叉验证 | 客户项目、竞品订单、交付窗口；不会单独作为结论 |
+| M | 本报告模型 | 产品收入、产品利润率、backlog、取消率、单位内容量、未来情景 |
+
+### 统一口径
+
+- **当前期：** 财务“当前贡献”采用 Q3-25 至 Q2-26 的 LTM；最新季度为 Q2-26。
+- **汇率：** 为方便美元表达，采用 2026-07-31 BESIY $229.58 / BESI €198.25 及 1:1 ADR 比率得到的隐含换算 **€1 ≈ $1.158**。这不是独立外汇报价，美元估算只用于量级比较。
+- **产品收入：** Besi 只披露 Die Attach、Packaging、Plating 三个 operating segments，且财务报告仍视为一个 reportable segment。产品级收入和利润率按订单描述、终端结构、ASP、出货节奏及集团毛利率反推。
+- **backlog：** 公司不披露正式 backlog。本报告从 Q1-26 电话会分析师推算约 €400m 出发，以“期末 backlog = 期初 backlog + orders − revenue”机械更新；未调整取消、延迟、验收、外汇和收入确认差异。
+- **单位内容量：** Besi 卖的是资本设备，不是每颗 GPU 的实物 BOM。本报告的“每 GPU / 每 rack / 每 MW / 每 optical port 内容量”是设备售价与五年服务收入按生命周期有效产量摊销后的 **设备资本强度等价值**，不是芯片厂向 Besi 按颗支付的价格。
+- **评分：** 1–5 分，5 分最高。供需紧张程度越高代表越接近供不应求。
+
+## 1. 公司整体业务、三年变化、产业链位置与当前估值
+
+### 1.1 公司做什么
+
+Besi 总部位于荷兰 Duiven，为全球 IDM、foundry 和 OSAT 提供半导体组装设备。其设备完成晶圆切割之后、最终测试之前的关键装配步骤：从晶粒挑选、芯片贴装、flip-chip、热压键合、混合键合，到 molding、trim/form、singulation 和 plating。随着 2.5D/3D、chiplet 与 HBM 进入前道洁净环境，Besi 的 hybrid bonding 和 TC Next 已从传统后道设备延伸到“front-end-like”制造。
+
+| 产品组 | H1-26 收入占比 | 核心设备/型号 | 主要用途 | AI 相关性 |
+|---|---:|---|---|---|
+| Die Attach | 84.3% | 8800 CHAMEO hybrid bonder、3300 HYBRID N50、9800 TC Next、8800 CHAMEO fLex、8800 FC Quantum advX、2200 Evo 系列、Esec 2100 SSI | D2W hybrid bonding、TCB、2.5D bridge/flip-chip、光子多芯片贴装、功率器件贴装 | 极高 |
+| Packaging | 13.7% | AMS-X、MMS-X、Fico molding/trim/form/singulation | 高密度/功率器件 molding、封装成型及切割 | 中等；AI power management 有增量 |
+| Plating | 1.9% | Meco leadframe/connector/solar plating | 镀锡、铜、贵金属及清洗 | 低 |
+| Spares / service | 跨产品组；2025 年约占集团 15.1% | 备件、tooling、conversion kit、现场支持 | 已装机设备 24/7 运行；hybrid bonder 近 900 种关键备件要求四小时可达 | 高增长、低周期 |
+
+### 1.2 产业链位置
+
+产业链可以简化为：
+
+**晶圆制造/晶圆与表面准备 → Besi 的高精度 pick-place / bond / molding → foundry、IDM、OSAT 的 2.5D/3D/HBM/光子封装产线 → GPU/XPU/HBM/交换芯片/光模块 → AI 服务器与数据中心。**
+
+Besi 不生产 GPU、HBM、interposer 或基板；它卖的是把这些昂贵 good die 以高良率、高精度、高吞吐组装起来的设备。其经济价值来自：
+
+- 芯片制程缩小后，单一大 die 的良率和成本恶化，行业转向 chiplet 和 heterogeneous integration；
+- 每个先进封装中的 die 数、bridge 数、HBM 数和键合步骤上升，带来设备资本强度增加；
+- 当互连间距从 mass reflow 的微凸点缩小至 <10µm，TCB 或 copper hybrid bonding 逐步成为必需；
+- 设备一旦进入客户 POR 并完成良率爬坡，客户更换供应商需要重做 recipe、material stack、overlay、yield 和可靠性验证，切换成本显著。
+
+### 1.3 投资人如何看这家公司
+
+投资人通常把 Besi 看作三种公司的叠加：
+
+1. **先进封装“卖铲人”：** 不押注单一 GPU 设计，受益于 2.5D/3D/HBM/光子封装资本开支总量。
+2. **高毛利精密设备平台：** 2025 年约 70%收入来自先进封装，约 60%收入对应 <7µm placement accuracy；Q2-26 毛利率达 65.7%。
+3. **强周期小市值设备股：** 订单可以在短期内翻倍，也可能在客户扩产完成后骤降；管理层承认设备上行周期通常 6–8 个季度后可能出现过剩。
+
+其核心估值矛盾是：**当前业务仍是周期设备，但市场愿意按“AI 前道化设备平台”定价。**
+
+### 1.4 最近三年重大业务变化、转型与收购
+
+| 时间 | 重大变化 | 影响 |
+|---|---|---|
+| 2023 | Computing 仅占终端收入 23.7%，Mobile 30.0%、Automotive 17.5% | 公司仍以消费/汽车后道周期为主 |
+| 2024 | 100nm CHAMEO 开始向多家客户出货；逻辑 D2W hybrid bonding 进入量产扩张 | 从后道 die attach 向前道式 submicron bonding 转型 |
+| 2025 | Computing 占比升至 50.8%；先进封装约占收入 70%，AI 订单约占总订单 50%；hybrid bonding 累计订单超过 150 台、年末 18 家客户；六条 Applied/Besi 集成线、30 台 hybrid bonder 安装于领先逻辑客户 | 收入结构重心正式转到 AI computing、datacenter、photonics |
+| 2025-04 | Applied Materials 在市场买入 Besi 9%股份，定位为战略长期投资；双方共同开发集成 D2W hybrid bonding 系统 | 强化表面准备、清洗、计量、自动化与 Besi 精密键合的一体化壁垒 |
+| 2025 | 马来西亚 cleanroom 产能翻倍；新加坡 advanced packaging 支持扩充；台湾服务团队、越南制造设施扩张 | 为 hybrid/TC Next 放量和亚洲客户支持做准备 |
+| 2026 Q1 | hybrid bonding 单位订单环比超过翻倍并超过 Q2-24 历史峰值；客户达到 20 家；TC Next 客户达到 6 家 | 需求从少数逻辑客户向 memory、CPO、research 和其他逻辑客户扩散 |
+| 2026 Q2 | hybrid 客户增至 21 家；两个重复客户和一个 hyperscaler 新订单；AI 系统订单约占 H1 的 60%；长期收入目标上调至 €1.7–2.2bn | AI 订单和长期目标同时上修 |
+| 2026 Q2 | €175m、2029 年到期可转债全部转股；仅保留约 €350m、2031 年到期 4.5% notes | 杠杆下降、净现金显著改善，但股本摊薄 |
+
+**收购判断：** 最近三年没有改变业务版图的经营性收购。2025 年以 €15.7m 收购的 A12 property B.V. 是投资物业实体，不是技术/产品并购。Besi 当前扩张主要靠有机研发、Applied Materials 合作和产能/服务网络建设。历史上 RD Automation、Laurier、Datacon、Esec 等收购奠定了 flip-chip、die sorting 与 die attach 平台，但均不属于最近三年。
+
+### 1.5 截至 2026-07-31 的股价、估值与经营指标
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| BESIY 股价 | **$229.58** | 2026-07-31 14:56 EDT，OTC 延迟价 | 当日 +0.40% |
+| BESI 普通股 | **€198.25** | 2026-07-31 Euronext 收盘 | 盘后 €198.62 |
+| ADR 比率 | 1 普通股 : 1 DR | 2026-07-31 Citi DR directory | OTC，CUSIP 073320103 |
+| 市值 | **$18.43bn / €15.962bn** | 2026-07-31 | 两市场口径 |
+| LTM 收入 | €733.9m / 约 $849.9m | Q3-25 至 Q2-26 | 四季实际值 |
+| LTM 收入增速 | **+21.9%** | 对比 Q3-24 至 Q2-25 的 €602.2m | 已实现 |
+| 2026E 收入 | €991.5m，**+67.7%** | FactSet 聚合，2026-07-31 页面 | 相对 FY2025 €591.3m |
+| TTM diluted EPS | €2.62 | 最近四季相加 | €0.32 + €0.54 + €0.65 + €1.11 |
+| TTM PE | **75.7x** | €198.25 / €2.62 | 本报告计算 |
+| 2026E forward PE | **46.5x** | 市场一致预期 | 2026E EPS €4.243 |
+| 2027E forward PE | **30.5x** | 市场一致预期 | 2027E EPS €6.484 |
+| TTM P/S | **21.75x** | €15.962bn / €733.9m | 本报告计算 |
+| 2026E P/S | **16.1x** | 市场一致预期 | 参考价 €197.50 |
+| LTM 毛利率 | **64.1%** | 最近四季 gross profit €470.3m / revenue €733.9m | 已实现 |
+| LTM 净利率 | **28.4%** | 最近四季净利 €208.7m / revenue €733.9m | 已实现 |
+
+**估值结论：** 2027 年一致预期收入 €1.339bn、净利 €511.6m，意味着收入较 2025 年增长 126%、净利增长 289%。30.5x 2027E PE 看似低于 75.7x TTM PE，但它依赖订单、交付和毛利率在未来六个季度持续兑现。市场并未给 HBM hybrid bonding 免费期权；相反，已经预付了相当一部分 2.5D、photonics 和逻辑 hybrid 的成长。
+
+数据来源：[BESIY OTC quote](https://www.marketscreener.com/quote/stock/BE-SEMICONDUCTOR-INDUSTRI-120786720/)、[BESI valuation and estimates](https://www.marketscreener.com/quote/stock/BE-SEMICONDUCTOR-INDUSTRI-6318/valuation/)、[Citi ADR ratio](https://depositaryreceipts.citi.com/adr/guides/pgm_dispabook.aspx?cusip=073320103&pageId=15&subpageID=111)。
+
+### 1.6 资产负债表与财务健康度
+
+截至 2026-06-30：
+
+| 项目 | 数值 | 评价 |
+|---|---:|---|
+| Cash + deposits | €349.1m + €160.0m = **€509.1m** | 流动性充足 |
+| Trade receivables | **€254.1m** | 较 2025 年末 €173.7m 增加 46%；由收入快速爬坡推动 |
+| Inventory | **€116.9m** | 较 2025 年末 €104.1m 增加 12%；为交付爬坡备料 |
+| Current assets / liabilities | €912.2m / €213.0m | 流动比率 **4.28x** |
+| Quick ratio | **3.58x** | 仅计 cash、deposits、receivables |
+| Long-term debt | **€345.1m** | 主要是 €350m、4.5%、2031 年到期 notes |
+| Net cash and deposits | **€164.0m** | 现金存款减长期债务 |
+| Equity | **€573.3m** | 可转债转股后显著增加 |
+| Debt / equity | **0.60x** | 有杠杆但净现金为正 |
+| H1-26 CFO | **€140.7m** | 现金转化强 |
+| H1-26 capex + capitalized development | €4.1m + €11.8m | 资产轻型、供应链外包程度高 |
+| H1-26 post-development FCF | 约 **€124.8m** | CFO − capex − capitalized development |
+
+**营运资本观察：**
+
+- 按 Q2 年化收入计算，DSO 约 **92.8 天**；按 Q2 年化 COGS 计算，库存天数约 **124.4 天**。
+- Q2 单季 CFO 为 €47.7m，但应收与库存爬坡造成约 €64.4m 营运资本流出。当前不是偿债风险，而是订单快速增长时的执行/回款监控点。
+- €175m 可转债在 Q2 全部转股，消除了 2029 年现金偿付压力；代价是约 150 万 treasury shares 用于转股，期末基本股数约 80.8m。
+- 2025 年没有单一客户超过总收入 10%，top-10 占 44%；但 hybrid bonding 订单仍集中于少数领先逻辑客户，因此“集团客户分散”不能等同于“关键产品订单分散”。
+
+**财务健康评分：4.5/5。** 现金、利润率和自由现金流都很强；主要财务风险不是破产或再融资，而是高增长期间应收/库存上升、设备周期下行时订单取消，以及高分红/回购与扩张同时进行的资本配置。
+
+来源：[H1-26 interim report](https://www.besi.com/fileadmin/user_upload/Half_Year_2026_Report.pdf)、[Q2-26 results](https://www.besi.com/investor-relations/press-releases/details/be-semiconductor-industries-nv-announces-q2-26-and-h1-26-results/)。
+
+## 2. 最新与最近四次财报：五季度订单、收入、交期与业务变化
+
+### 2.1 五季度财务与订单总表
+
+| 财报季度 | 收入；同比/环比 | 订单；同比/环比；B2B | 毛利率 / 营业利润率 / 净利率 | 业务与 AI 重点 | 推算期末 backlog；交期/取消 |
+|---|---|---|---|---|---|
+| **Q2-26（最新）** | **€249.9m；+68.7% / +35.2%** | **€292.9m；+128.8% / +8.6%；1.17x** | **65.7% / 43.5% / 35.6%** | hybrid、photonics、datacenter 广泛增长；AI power management 多客户新订单；两个 repeat hybrid 客户 + 一个新 hyperscaler；H1 AI 系统订单约 60% | **约 €443m（M）**；100nm HB 约六个月；公司不披露取消率 |
+| **Q1-26** | **€184.9m；+28.3% / +11.1%** | **€269.7m；+104.5% / +7.7%；1.46x** | **63.5% / 34.6% / 27.9%** | high-end mobile、2.5D AI computing；HB 单位/金额订单环比超过翻倍并超 Q2-24 峰值；repeat HBM memory order、另一 memory 客户两台 eval；20 家 HB 客户、6 家 TC Next 客户 | **约 €400m（分析师估算，管理层未否认）**；HB 约六个月；设备产能由 180 台/年扩至 250 台/年 |
+| **Q4-25** | **€166.4m；+8.5% / +25.4%** | **€250.4m；+105.4% / +43.3%；1.50x** | **63.9% / 33.8% / 25.7%** | Asian OSAT 的 2.5D datacenter、photonics capacity、HB 订单共同上升；FY25 AI 订单约 50%、computing 收入 50.8% | **约 €315m（M）**；高端 HB/TC Next 通常 6–9 个月 |
+| **Q3-25** | **€132.7m；−15.3% / −10.4%** | **€174.7m；+15.1% / +36.5%；1.32x** | **62.2% / 25.7% / 19.0%** | Asian subcontractor 的 2.5D datacenter 与 photonics bookings；HB bookings 延至 Q4；mainstream 仍弱 | **约 €231m（M）**；订单开始领先收入拐点 |
+| **Q2-25** | **€148.1m；−2.1% / +2.8%** | **€128.0m；−30.9% / −3.0%；0.86x** | **63.3% / 29.4% / 21.6%** | mainstream computing die attach 和 HB shipments 支撑；mobile 弱；TC Next 有显著新订单；HB 订单同比下降 | **约 €189m（M）**；随后 Q3 指引收入 −5%至−15%，订单预计显著增长 |
+
+**机械 backlog 说明：** Q1-26 电话会上，分析师根据历史订单与收入计算 3 月末 backlog 约 €400m；管理层未给正式确认，只表示订单动能没有变化。以此为锚，Q2-26 的 €292.9m orders 减 €249.9m revenue 得到约 €443m。反向机械推算 Q4-25/Q3-25/Q2-25 分别约 €315m/€231m/€189m。该序列不能替代正式 backlog，因为订单可能取消、延期、改变验收条件或跨期确认。
+
+### 2.2 季度产品/应用收入估算
+
+Besi 不披露季度产品收入。下表是为满足产品交叉验证而构建的 **互斥中值模型（M）**；每行合计等于当季总收入，误差可能达到单项 ±25%–35%。
+
+| 季度（€m） | D2W hybrid 系统 | 2.5D flip-chip / bridge | Photonics MMA | Advanced TCB | AI power attach/molding | Service/spares | 其他 mainstream | 估算 AI datacenter 相关收入占比 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Q2-26 | **50** | **60** | **28** | **9** | **9** | **36** | 57.9 | **约 62%**；合理区间 60%–70% |
+| Q1-26 | **35** | **45** | **22** | **5** | **3** | **27** | 47.9 | **约 60%**；合理区间 55%–65% |
+| Q4-25 | **30** | **40** | **20** | **4** | **2** | **24** | 46.4 | **约 58%**；合理区间 50%–60% |
+| Q3-25 | **15** | **30** | **15** | **2** | **1** | **18** | 51.7 | **约 47%**；合理区间 40%–50% |
+| Q2-25 | **25** | **25** | **10** | **1** | **1** | **22** | 64.1 | **约 42%**；合理区间 35%–45% |
+
+模型与披露的交叉验证：
+
+- Q4-25、Q1-26、Q2-26 的收入与订单描述连续点名 2.5D datacenter、photonics 和 hybrid；管理层又表示 CoWoS-like 已在这三个季度成为“significant part of orders”。
+- H1-26 AI system orders 约占 60%，而收入端通常滞后设备市场 3–6 个月，因此 Q2-26 AI datacenter 收入占比约 60%–70%是可解释的。
+- Q2-26 毛利率升至 65.7%并被公司归因于 favorable product mix，支持高 ASP hybrid/advanced placement 占比继续上升。
+- Q2-25 的 B2B 低于 1，Q3-25 起连续四季高于 1，与上表产品收入从 Q4 开始加速相符。
+
+### 2.3 正式业务分部：H1-26
+
+| Operating segment | H1-26 收入 | 占比 | H1-25 收入 | 同比增速 | 利润率披露 |
+|---|---:|---:|---:|---:|---|
+| Die Attach | **€366.577m** | **84.3%** | €235.135m | **+55.9%** | 不披露产品/segment margin |
+| Packaging | **€59.746m** | **13.7%** | €47.194m | **+26.6%** | 不披露 |
+| Plating | **€8.422m** | **1.9%** | €9.917m | **−15.1%** | 不披露 |
+| 合计 | **€434.745m** | 100% | €292.246m | **+48.8%** | 集团毛利率 64.7%、净利率 32.3% |
+
+Die Attach 的增长显著快于 Packaging，而 Plating 收缩，说明真正的收入与毛利增量来自高精度键合/贴装，而不是传统完整后道产品线。
+
+### 2.4 指引准确度
+
+| 指引季度 | 前一季公司收入指引 | 实际收入 | 毛利率指引 | 实际毛利率 | 结论 |
+|---|---:|---:|---:|---:|---|
+| Q3-25 | 环比 −5%至−15% | **−10.4%** | 60%–62% | **62.2%** | 收入命中，毛利略超 |
+| Q4-25 | 环比 +15%至+25% | **+25.4%** | 61%–63% | **63.9%** | 收入/毛利略超 |
+| Q1-26 | 环比 +5%至+15% | **+11.1%** | 63%–65% | **63.5%** | 命中 |
+| Q2-26 | 环比 +30%至+40% | **+35.2%** | 64%–66% | **65.7%** | 命中 |
+
+最近四次收入指引没有明显高估，且三次毛利率达到或超过区间中高端，这提高了 Q3-26 指引可信度。但订单周期加速时容易兑现，不能把历史命中率外推到下行周期。
+
+来源：[Q2-26 PDF](https://www.besi.com/fileadmin/user_upload/PR_Q2-2026.pdf)、[Q1-26 PDF](https://www.besi.com/fileadmin/user_upload/Q1-2026.pdf)、[Q4-25 PDF](https://www.besi.com/fileadmin/user_upload/Q4-2025.pdf)、[Q3-25 PDF](https://www.besi.com/fileadmin/user_upload/Q3-2025.pdf)、[Q2-25 PDF](https://www.besi.com/fileadmin/user_upload/Q2-2025.pdf)、[Q1-26 call transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-be-semiconductor-q1-2026-shows-robust-growth-93CH-4633326)、[Q2-26 call transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-besi-q2-2026-results-lift-revenue-but-stock-falls-93CH-4809494)。
+
+## 3. 2026 最新指引、业务占比、重点产品与被跳过的业务
+
+### 3.1 Q3-26 最新指引
+
+| 项目 | Q3-26 指引 | 数学含义 | 判断 |
+|---|---:|---:|---|
+| Revenue | 较 Q2 €249.9m 增长 **10%–15%** | **€274.9m–€287.4m；中值 €281.1m** | 即使传统 Q3 季节性偏弱，AI/数据中心订单使季度继续增长 |
+| Gross margin | **63%–65%** | 中值 64% | 低于 Q2 65.7%，说明 Q3 mix 中高毛利 hybrid 占比可能下降或 mainstream 占比回升 |
+| Operating expenses | 较 Q2 €55.3m **flat 至 +5%** | €55.3m–€58.1m | 研发和客户支持继续增加，但收入增速更快，经营杠杆仍强 |
+| Order momentum | 管理层预计 Q3 继续 | 未给金额 | 重点仍是 hybrid、AI、photonics、2.5D 和 mainstream recovery |
+
+Q3 指引依据 2026-06-30 backlog 与客户反馈。按推算 backlog €443m，覆盖 Q3 中值收入 **1.58 倍**；按 Q3 中值月收入 €93.7m，约 **4.7 个月**。因此 Q3 交付风险更多在供应链/验收，而不是缺少订单。
+
+### 3.2 业务结构已经从消费电子转向 AI computing
+
+| 终端市场 | 2023 收入占比 | 2025 收入占比 | 两年变化 |
+|---|---:|---:|---:|
+| Computing | **23.7%** | **50.8%** | **+27.1pct** |
+| Mobile | 30.0% | 16.7% | −13.3pct |
+| Automotive | 17.5% | 9.9% | −7.6pct |
+| Industrial / other | 11.7% | 7.5% | −4.2pct |
+| Spares / tooling / service | 17.1% | 15.1% | −2.0pct；绝对额较稳定 |
+
+这一变化不是传统市场永久消失，而是 AI 相关设备增速远高于 mobile/auto。2025 年 computing 已超过一半，H1-26 AI system orders 又升至约 60%，使 Besi 的季节性从手机上半年备货逐步转向数据中心多年度资本开支。
+
+### 3.3 最突出、公司最侧重的产品
+
+#### 1）D2W hybrid bonding：8800 CHAMEO、3300 HYBRID N50、Applied Kinex 集成线
+
+- 当前量产 CHAMEO：100nm worst-corner GoG 精度、6µm bump pitch；公司 Investor Day 的 process throughput 为 1,500 UPH，官网 dry-cycle 规格最高 2,000 CPH，两者不可混用。
+- 3300 HYBRID N50：50nm、3µm pitch、3,000 UPH，beta test 计划 Q4-26。
+- 后续 3300 HYBRID：25nm、<1µm pitch，仍在开发。
+- Applied/Besi integrated Kinex 把 wafer/die pre-treatment、cleaning、metrology、queue control 与 Besi placement/bonding 合在一条线；Applied 2025 年买入 9%股份，增强长期绑定。
+- 2025 年累计 HB orders >150 台、年报称 18 客户；Q2-26 已到 21 客户。需注意，Q2-26 新闻稿又把 2025 年末基数写成 15 家，与年报冲突，可能是口径变化或新闻稿回溯错误；本报告不据此虚构净新增数。应用从逻辑 CPU/GPU 扩到 CPO、ASIC、consumer/wearables 与 HBM qualification。
+
+#### 2）2.5D flip-chip / bridge / large-die attach：8800 CHAMEO fLex、8800 FC Quantum advX、2200 Evo
+
+- CHAMEO fLex：1µm、4,000 UPH，可处理 IC/HBM/bridge die、310×310mm panel；Q4-25 推出，首个 qualification 已完成，3 家 major IDM + 4 家 major OSAT/subcon 参与。
+- Quantum advX：4µm、最高 10,000 UPH，适合高量 mass reflow C2S。
+- 2200 Evo 系列：用于 multi-module、large die/interposer、photonics 等复杂贴装。
+- 管理层称 CoWoS-like 自 Q4-25、Q1-26、Q2-26 已是订单的重要部分，且将继续扩大；当前行业 shortage 明确存在于 memory 与 CoWoS/CoWoS-like。
+
+#### 3）Advanced TCB：9800 TC Next
+
+- 0.5µm GoG、0.8µm worst-case-corner、最高 2,500 UPH；最高 500N、可选 1kN；支持 flux/fluxless、单模组研发与双模组量产。
+- 面向 <20µm、尤其 10–20µm pitch，应用为 advanced logic C2W、HBM4/5、photonics。
+- 2025 年末 5 客户，Q1-26 达 6；Q2 管理层称 qualification 数量显著，但订单主要仍为单台，仅一家客户为数台，尚未进入大规模量产。
+
+#### 4）Photonics / pluggable / CPO：2200 Evo Advanced、Evo ONE、CHAMEO HB
+
+- 2200 Evo Advanced：3µm，325×200mm substrate；官网最高 7,000 UPH die attach、3,200 UPH flip-chip without dipping。
+- Evo ONE：1µm、300mm wafer、eutectic capability，处于 customer evaluation。
+- 1.6T transceiver 相比 800G 可需要最多约 2 倍 die-attach steps；公司列出的工序对象包括 DSP、PD、TIA、LD、isolator、FAU 与新增 laser。
+- Pluggable 已经量产；CPO 仍以工程验证/早期产品为主。CPO 的 optical engine 与 switch/compute die 3D 连接可进一步使用 CHAMEO hybrid bonding。
+
+#### 5）AI 数据中心 power management：Esec 2100 SSI + AMS-X
+
+- Esec 2100 SSI：soft solder、diffusion solder、direct sinter；可选 300N；soft-solder 精度 50µm、eutectic/diffusion 35µm，dry cycle 265ms。
+- AMS-X：面向 high-density 和 power leadframe molding；公司宣称较竞争设备最高 30% output advantage，并有 flash-free clamping 与 100% in/out vision option。
+- Q2-26 收到多个客户的新订单。管理层未披露客户，但表示只有在“高确定性可成为显著 mainstream contribution”时才会点名，故该业务虽小，值得作为潜力产品单列。
+
+#### 6）前道式 spares/service：不应被忽略的复利业务
+
+- 2025 年约占收入 15%，2024 年约 16%。
+- hybrid bonding 要求 24/7 front-end support，约 900 种关键备件需四小时可达。
+- 管理层预计服务占比可由 15%提升至 18%–20%，接近 front-end 设备行业 20%–25%，并明确称服务是毛利率 tailwind。
+
+### 3.4 本报告主动跳过或降权的低增长/非 AI 业务
+
+| 被跳过/降权业务 | 对应产品 | 原因 |
+|---|---|---|
+| 传统 mobile/auto epoxy、soft-solder die attach（AI power 例外） | Esec 2100 hS、2009 系列等 | 低基数复苏可能贡献收入，但不是 AI 长期增量核心 |
+| 传统 trim & form、saw/singulation | Fico Compact Line、Sawing Line | Packaging 中成熟、竞争充分、增速低 |
+| 一般 molding（AI power/高密度除外） | Fico AMS/MMS 传统型号 | 不具备明显 AI 内容量提升 |
+| Plating / cleaning | Meco leadframe、connector、solar、film/foil plating | H1-26 收入仅 1.9%，同比 −15.1% |
+| Solar plating、普通 connector plating | Meco DPL/PPL/RTR/CPL 等 | 与 AI 数据中心关联弱 |
+| 普通 tooling/molds | 传统模具、conversion kits | 保留在 service 总额，但不做独立高增长预测 |
+
+这些业务仍为客户提供完整产品组合和现金流缓冲，但不会决定当前估值。
+
+核心资料：[2026 Investor Day deck](https://www.besi.com/fileadmin/data/Investor_Relations/Investor_Presentations/2026_Investor_Day_Presentation.pdf)、[CHAMEO specification](https://www.besi.com/products-technology/product-details/product/datacon-8800-chameo-ultra-plus-ac/)、[TC Next specification](https://www.besi.com/products-technology/product-details/product/9800-tc-next/)、[Quantum advX](https://www.besi.com/products-technology/product-details/product/datacon-8800-fc-quantum-advx/)、[2200 Evo Advanced](https://www.besi.com/products-technology/product-details/product/datacon-2200-evo-advanced/)、[Esec 2100 SSI](https://www.besi.com/products-technology/product-details/product/esec-2100-ssi/)、[AMS-X](https://www.besi.com/products-technology/product-details/product/ams-x/)。
+
+## 4. 每个高增长/关键产品的当前收入贡献、增速、供需与定价权
+
+### 4.1 当前 LTM 产品收入与利润率模型
+
+下表把 Q3-25 至 Q2-26 的 €733.9m 收入完整分配到互斥应用桶。由于公司不披露产品数据，区间为本报告估算，**中值加总才与集团收入一致**。
+
+| 关键产品/业务 | LTM 收入估算 | 美元贡献 | 集团占比 | 中值同比增速 | 产品毛利率估算 | 中值毛利贡献 | 估算置信度 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| D2W hybrid bonding systems | **€110–150m；中值 €130m** | **约 $151m** | 17.7% | **约 +100%**；区间 +80%至+130% | **68%–73%** | 约 €91.7m | 中 |
+| 2.5D flip-chip / bridge / large-die systems | **€150–200m；中值 €175m** | **约 $203m** | 23.8% | **约 +67%**；区间 +50%至+85% | **61%–67%** | 约 €112.0m | 中 |
+| Advanced TCB / TC Next | **€12–28m；中值 €20m** | **约 $23m** | 2.7% | **约 +150%**；极低基数 | **60%–68%** | 约 €12.8m | 低 |
+| Photonics MMA / pluggable / early CPO | **€70–100m；中值 €85m** | **约 $98m** | 11.6% | **约 +89%**；区间 +70%至+120% | **62%–68%** | 约 €55.3m | 中 |
+| AI power die attach + molding | **€8–22m；中值 €15m** | **约 $17m** | 2.0% | **约 +200%**；新业务低基数 | **55%–63%** | 约 €8.9m | 低 |
+| Spares / service / tooling | **€95–115m；中值 €105m** | **约 $122m** | 14.3% | **约 +17%** | **66%–74%** | 约 €73.5m | 中高 |
+| 其他 mainstream / plating / packaging | **中值 €203.9m** | **约 $236m** | 27.8% | **约 −28%** | **54%–60%** | 约 €116.1m | 中 |
+| **合计** | **€733.9m** | **约 $849.9m** | 100% | **+21.9%** | **集团实际 64.1%** | **集团实际 €470.3m** | — |
+
+产品毛利率的反推依据是：Q2-26 favorable mix 把集团毛利率推至 65.7%；官方披露 submicron hybrid/TC Next ASP 通常为 €2m–€3.5m，而大多数其他系统 ASP 超过 €400k；服务被管理层明确称为 margin tailwind。产品毛利率不是 audited data，不能用于精确 EPS 模型。
+
+### 4.2 当前战略评分
+
+| 产品/业务 | AI 技术栈重要性 | 时间紧急性 | 当前供需紧张 | 垄断/控制力 | 溢价能力 | 当前判断 |
+|---|---:|---:|---:|---:|---:|---|
+| D2W hybrid bonding | **5/5** | **5/5** | **4/5** | **4.5/5** | **4.5/5** | 逻辑量产已验证，Applied 集成线和良率 recipe 构成壁垒；HBM 尚未量产定型 |
+| 2.5D flip-chip / bridge | **5/5** | **5/5** | **5/5** | **4/5** | **4/5** | CoWoS/CoWoS-like 明确短缺，Besi 在 <7µm placement 份额强，但 ASMPT/K&S 等可替代 |
+| Advanced TCB | **4/5** | **4/5** | **3/5** | **2.5/5** | **3/5** | 技术先进但商业量仍小；Hanmi、ASMPT、K&S 的 HBM installed base 更强 |
+| Photonics / pluggable / CPO | **4/5** | **4/5** | **4/5** | **4/5** | **4/5** | Besi 自称 #1 vendor、覆盖所有 key players；ASMPT 也在快速成长 |
+| AI power management | **3/5** | **4/5** | **3/5** | **2.5/5** | **3/5** | 功率密度提升是刚需，但设备精度壁垒低于 HB；胜负取决于客户 POR 与综合 CoO |
+| Spares / service | **4/5** | **4/5** | **3.5/5** | **4.5/5** | **4/5** | 原厂备件、recipe 与四小时响应带来高粘性；装机量增长自然转化为经常性收入 |
+
+### 4.3 分产品交叉验证
+
+#### D2W hybrid bonding
+
+- **需求：** Q1-26 hybrid 单位与金额订单均环比超过翻倍；Q2 又获得两个 repeat 客户和一个新 hyperscaler。最新客户数为 21；2025 年报的年末 18 家与 Q2 新闻稿回溯的 15 家互相冲突，因此不能可靠地把两季净新增写成 6 家。
+- **供给：** Q1 管理层披露生产能力从 15 台/月、180 台/年提高至 250 台/年；Investor Day 又提出供应链目标 35 台/月、420 台/年。后者应视为目标能力，不等于已经稳定出货。
+- **客户项目：** 领先台湾逻辑客户 AP6 约 60 台 bonder，AP7 公布最终产能约为 AP6 两倍；Q1 收到第一轮，Q2 管理层认为 H2 可能有下一轮，标准 lead time 约六个月。
+- **定价：** 100nm CHAMEO 和 TC Next 的官方 ASP 区间 €2m–€3.5m，远高于普通设备 >€400k。洁净度、overlay、良率、process integration 与 field service 支持了溢价。
+- **约束：** 大规模 D2W hybrid 的主要障碍不是 100nm 精度本身，而是前处理、颗粒、die warpage、overlay、known-good-die、返工、全流程 yield 与成本。管理层称领先逻辑客户从开发到量产耗时超过三年。
+
+#### 2.5D flip-chip / bridge / large-die
+
+- **需求：** 管理层称 CoWoS-like 已是 Q4-25、Q1-26、Q2-26 的显著订单组成，并预计继续扩大。Q2 同时明确 memory 和 CoWoS/CoWoS-like 存在 capacity shortage。
+- **内容量：** 下一代 package 示例需要 16 次 flip-chip、15 次 bridge placement 和 1 次 large-die flip-chip；封装复杂度提高会同时拉动 fLex、Quantum advX、TC Next 和 2200 Evo。
+- **产品验证：** fLex 首个 qualification 已完成，3 家 major IDM 与 4 家 major subcontractor/OSAT 活跃参与；310×310mm panel ready。
+- **竞争：** 该环节速度/精度要求跨度大，Besi 份额强但非单一来源。低精度 mass reflow 容易被 ASMPT、K&S、Hanmi/Hanwha、Yamaha/Shinkawa 等竞争，高精度 bridge/large-die 的切换成本更高。
+
+#### Advanced TCB
+
+- **需求：** 客户数从 5 增到 6，qualification 很多，但管理层明确“single systems, not yet major volume”，只有一位客户拥有数台。
+- **技术：** 0.5µm placement、0.8µm WCC、fluxless capability 和最高 2,500 UPH，使 TC Next 可覆盖微凸点向 hybrid 的过渡区域。
+- **竞争验证：** ASMPT 2025 年 TCB 收入约同比 +146%，Q1-26 获领先先进逻辑客户四台 C2W 工具；K&S 正把 TCB 年销售产能扩至约 $400m；Hanmi 获 SK hynix KRW44.2bn HBM4 TC bonder 订单。Besi 是有潜力的 challenger，不是 HBM TCB incumbent。
+
+#### Photonics
+
+- **需求：** 从 800G 向 1.6T，单模块 bonding steps 最多可增加约一倍；Q4-25 起多个客户扩产 pluggables，Q2-26 photonics 仍是订单和收入主要驱动。
+- **产品组合：** 2200 Evo Advanced 负责成熟 3µm 大基板多芯片贴装；Evo ONE 把精度提高至 1µm、加入 300mm/eutectic；CPO 的 3D optical engine 则可使用 CHAMEO hybrid。
+- **竞争验证：** ASMPT Q1-26 photonics 收入同比约 5 倍，并获得主要光学供应商的 1.6T bulk orders，说明终端需求真实，也说明 Besi 不能独占增长。
+
+#### AI power management
+
+- **需求：** Q2-26 首次单独点名多个客户订单；高功率 AI module 需要更高电流密度、散热与可靠性，推动 diffusion solder/direct sinter 与高密度 molding。
+- **收入：** 当前中值仅约 €15m，但若多个客户转入量产，设备从单一 die bonder 扩展为 attach + molding 的组合销售，增量可能快于传统 packaging。
+- **风险：** 客户未命名、项目金额和交付期均未披露，且功率器件设备竞争更成熟，故置信度低于 hybrid/2.5D。
+
+#### Service
+
+- **需求传导：** hybrid installed base 增长 → 24/7 uptime 和四小时备件要求 → 长期服务合同、spares、retrofit kit 增长。
+- **规模：** 当前 LTM 中值 €105m；若占比从 15%提高到 18%–20%，即使系统收入不再高速增长，也会形成 €150m 以上的中期高毛利业务。
+- **壁垒：** 第三方可做一般维护，但原厂的 calibration、software、process recipe、traceability 和近 900 个关键零件库存难以完全替代。
+
+## 5. 一年后产品收入：基准、乐观、极度乐观三情景
+
+预测窗口为 **Q3-26 至 Q2-27 LTM**。基准情景不是衰退情景：Q2-26 年化收入已接近 €1.0bn，Q3 指引中值年化约 €1.12bn，因此基准只假设 H2-26 继续交付、2027 H1 增速正常化。
+
+### 5.1 情景定义
+
+| 情景 | 核心假设 |
+|---|---|
+| **基准** | Q3 指引兑现；AP7 分批交付；CoWoS-like、1.6T photonics 延续；HBM hybrid 仍以 qualification/少量 beta 为主；订单延迟/取消 12%–15% |
+| **乐观** | AP7 第二轮及其他 logic/CPO 客户扩产；N50 beta 顺利；一个 HBM 客户在 2027 年进入早期 production；TC Next 出现两至三家 volume 客户；取消/延迟 5%–8% |
+| **极度乐观** | 逻辑 AP7 全速、CPO 与 panel-level 同步放量；HBM4E/HBM3 至少一条 hybrid 量产线提前；TC Next 赢得 HBM POR；供应链扩到 600 台/年 HB 等效能力；取消/延迟 0%–3% |
+
+### 5.2 产品收入预测
+
+| 产品/业务 | 当前 LTM | **一年后基准** | **一年后乐观** | **一年后极度乐观** |
+|---|---:|---:|---:|---:|
+| D2W hybrid bonding | €130m / $151m | **€260m / $301m；+100%** | **€360m / $417m；+177%** | **€520m / $602m；+300%** |
+| 2.5D flip-chip / bridge | €175m / $203m | **€280m / $324m；+60%** | **€330m / $382m；+89%** | **€400m / $463m；+129%** |
+| Advanced TCB | €20m / $23m | **€45m / $52m；+125%** | **€70m / $81m；+250%** | **€110m / $127m；+450%** |
+| Photonics / CPO | €85m / $98m | **€155m / $180m；+82%** | **€210m / $243m；+147%** | **€275m / $319m；+224%** |
+| AI power attach/molding | €15m / $17m | **€35m / $41m；+133%** | **€55m / $64m；+267%** | **€85m / $98m；+467%** |
+| Spares / service | €105m / $122m | **€135m / $156m；+29%** | **€155m / $180m；+48%** | **€180m / $208m；+71%** |
+| 其他 mainstream | €203.9m / $236m | **€190m / $220m；−7%** | **€160m / $185m；−22%** | **€110m / $127m；−46%** |
+| **集团合计** | **€733.9m / $849.9m** | **€1.10bn / $1.274bn；+49.9%** | **€1.34bn / $1.552bn；+82.6%** | **€1.68bn / $1.945bn；+128.9%** |
+
+乐观情景约等于当前市场对 FY2027 的 €1.339bn 收入共识；极度乐观情景约等于当前 FY2028 €1.681bn 共识被提前一年兑现。因此三情景不是“都看多”，而是把当前估值所需的交付时间表显式化。
+
+### 5.3 一年后战略属性评分
+
+表内五个数字依次为：**重要性 / 紧急性 / 供需紧张 / 垄断控制 / 溢价能力**。
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 | 变化逻辑 |
+|---|---|---|---|---|
+| D2W hybrid | **5 / 5 / 4 / 4.5 / 4.5** | **5 / 5 / 5 / 4.5 / 5** | **5 / 5 / 5 / 5 / 5** | HBM/CPO 加入后，从逻辑关键工序升级为多终端平台 |
+| 2.5D flip-chip/bridge | **5 / 5 / 4.5 / 4 / 4** | **5 / 5 / 5 / 4 / 4.5** | **5 / 5 / 5 / 4.5 / 4.5** | CoWoS-like shortage 和 panel transition 增强需求，替代设备仍存在 |
+| Advanced TCB | **4 / 4 / 3 / 2.5 / 3** | **5 / 5 / 4 / 3 / 3.5** | **5 / 5 / 5 / 3.5 / 4** | 是否赢得 HBM/logic POR 决定从验证工具变成量产工具 |
+| Photonics/CPO | **4 / 4 / 4 / 4 / 4** | **5 / 5 / 4.5 / 4 / 4.5** | **5 / 5 / 5 / 4.5 / 4.5** | 1.6T 是现实需求，CPO 决定第二阶段资本强度 |
+| AI power | **3 / 4 / 3 / 2.5 / 3** | **4 / 4 / 4 / 3 / 3.5** | **4 / 5 / 5 / 3.5 / 4** | 多客户量产和 attach+molding 组合销售提高议价 |
+| Service | **4 / 4 / 3.5 / 4.5 / 4** | **4 / 5 / 4 / 4.5 / 4.5** | **5 / 5 / 4.5 / 5 / 4.5** | installed base、uptime SLA 与原厂备件形成累积壁垒 |
+
+## 6. BOM、每 MW/rack/GPU/optical port 内容量、价格传导链与当前产能
+
+### 6.1 AI 加速器封装 BOM 与 Besi 所覆盖的工序
+
+项目内行业研究给出的高端 AI package 成本结构区间为：logic die 28%–40%、HBM 35%–50%、interposer/RDL/ABF 8%–14%、bond/underfill/EMC 4%–8%、test 4%–8%、TIM/lid 2%–5%。Besi 不获得 logic/HBM 芯片价值，而是获得 bond/placement/molding 所对应的设备资本开支。
+
+Besi Investor Day 展示的下一代 accelerator package 示例：
+
+| 封装对象/步骤 | 数量 | 主要工艺 | Besi 对应设备 | 是否为当前收入 |
+|---|---:|---|---|---|
+| 3DIC top die ↔ bottom die | **8 次 hybrid bonds** | D2W Cu-Cu hybrid | 8800 CHAMEO；未来 N50 | 是，逻辑已量产 |
+| 3DIC/HBM/I/O ↔ interposer/module | **16 次 flip-chip**：2×3DIC、12×HBM、2×I/O | mass reflow 或 TCB | fLex、Quantum advX、TC Next、2200 Evo | 是 |
+| Local silicon bridges | **15 次 bridge placements** | 高精度 flip-chip/bridge attach | CHAMEO fLex | 早期放量 |
+| Large die/interposer | **1 次 large-die flip-chip** | large-die attach | 2200 Evo / TC Next | 是 |
+| HBM stack 内部 DRAM die | 8–12 个 HBM stack × 每 stack 11–15 个 die-to-die bonds | 当前主要 MR-MUF/TCB；未来可转 HB | TC Next 或 CHAMEO（若获 POR） | **Besi 当前基本未获得；是最大期权** |
+| Power modules | 每 GPU/board 多个 PMIC/power die | diffusion solder/direct sinter + molding | Esec 2100 SSI + AMS-X | 小规模、快速增长 |
+| Optical module | DSP、PD、TIA、LD、IS、FAU、laser 等多个贴装步骤 | MMA/eutectic/flip-chip；CPO 可加 HB | 2200 Evo Advanced/ONE + CHAMEO | pluggable 已量产，CPO 早期 |
+
+### 6.2 设备内容量模型的假设
+
+- 有效生产：330 天/年、24 小时/天、75%综合有效利用率，即 **5,940 小时/年**。
+- 设备经济寿命：五年，即 **29,700 有效小时**。
+- 服务/备件：在设备售价摊销上再加 20%–50%生命周期服务强度。
+- CHAMEO/TC Next ASP：官方区间 €2m–€3.5m。
+- fLex、MMA、Quantum、power 设备 ASP 未披露；使用“多数系统 >€400k”与精度/复杂度建立宽区间。
+- 良率损失、recipe changeover、工程机闲置会提高实际每颗内容量；高利用率和寿命延长会降低内容量。
+
+### 6.3 每颗/每端口的设备资本强度
+
+| 工艺与设备 | Throughput | ASP 假设 | 单位工序 | 单台年有效能力 | 设备+服务内容量 |
+|---|---:|---:|---:|---:|---:|
+| Logic D2W HB：CHAMEO | 1,500 UPH process；2,000 CPH dry max | **€2m–€3.5m（A）** | 8 HB / accelerator package | **约 111 万 package/年**（按 1,500 UPH） | **约 $0.50–$1.10 / GPU package** |
+| 2.5D bridge/flip：fLex | 4,000 UPH | €0.8m–€1.5m（M） | 约 32 次 flip/bridge steps | **约 74 万 package/年** | **约 $0.30–$0.70 / GPU**；加 Quantum/large-die 冗余后约 $0.35–$1.00 |
+| Package-level TCB：TC Next | 2,500 UPH | **€2m–€3.5m（A）** | 约 16 次 package placement | **约 93 万 package/年** | **约 $0.60–$1.31 / GPU** |
+| HBM 内部 TCB（若 Besi 获 POR） | 2,500 UPH | €2m–€3.5m | 8–12 stacks × 11 die bonds = 88–132 | **约 11万–17万 GPU package/年/台** | **增量约 $3.3–$10.8 / GPU** |
+| HBM 内部 HB（若 Besi 获 POR） | 1,500 UPH | €2m–€3.5m | 88–132 HB | **约 6.8万–10.1万 GPU package/年/台** | **增量约 $5.5–$18.0 / GPU** |
+| Photonics MMA：2200 Evo | 3,200 UPH flip-chip | €0.5m–€1.2m（M） | 约 8 个 Besi placement/port | **约 238 万 optical port/年** | **约 $0.06–$0.18 / optical port** |
+| AI power attach + molding | 2100 SSI dry cycle 265ms；实际工艺更慢 | 合计 €0.8m–€1.8m（M） | 约 8–24 个 power die/module 等效 | 与封装形态高度相关 | **约 $0.20–$1.50 / GPU** |
+
+**当前已获份额的 Besi 内容量：** logic HB + 2.5D attach + package-level TCB + power，合计约 **$1.7–$4.9 / advanced GPU package**。  
+**未来 HBM stacking 期权：** 若 TC Next 或 CHAMEO 进入 HBM stack 内部 POR，额外增加约 **$3–$18 / GPU**，使总量升至约 **$5–$23 / GPU**。该增量不应计入当前收入。
+
+### 6.4 每 rack 与每 MW 内容量
+
+采用以下工程假设：
+
+- 一 rack = 72 个 accelerator/GPU；
+- 72-GPU rack 总功率约 100–150kW；
+- 因此每 MW 约 6.7–10 个 rack，即约 480–720 个 GPU；
+- optical ports 每 rack 假设 72–288 个，具体取决于 scale-up/scale-out、铜缆/AEC/光模块/CPO 架构。
+
+| 指标 | 当前 Besi 设备内容量 | 若 HBM TCB/HB 获 POR | Optical 另计 |
+|---|---:|---:|---:|
+| 每 GPU | **$1.7–$4.9** | **$5–$23** | 每 optical port $0.06–$0.18 |
+| 每 72-GPU rack | **$122–$353** | **$360–$1,656** | 72–288 ports → **$4–$52/rack** |
+| 每 MW | **$816–$3,528** | **$2,400–$16,560** | 约 482–2,880 ports/MW → **$29–$518/MW** |
+
+这些数字不是客户 BOM 中的直接发票项，而是 equipment capex 与服务在终端产量上的摊销。对 Besi 投资判断更重要的是：**每颗 GPU 的绝对内容量不大，但当客户为数百万颗 GPU、每个 package 有数十至上百个 placement/bond steps 时，设备需求呈离散台数跃升。**
+
+### 6.5 价格传导链
+
+1. Hyperscaler/GPU/XPU 客户提高 AI cluster 与 accelerator 需求；
+2. 每颗 accelerator 增加 HBM 数、bridge 数、3D die 与 optical bandwidth；
+3. Foundry/OSAT/IDM 的 CoWoS-like、SoIC、HBM 与 photonics 产能利用率上升，出现产能缺口；
+4. 客户先下 Besi equipment order，部分订单可延期或取消；
+5. 普通设备约 4–12 周、submicron HB/TC Next 约 6–9 个月 lead time；2026 年 CHAMEO 标准约六个月；
+6. 出货、安装、验收后确认收入，因而 equipment sales 通常滞后产业需求约 3–6 个月；
+7. installed base 进入 24/7 量产后，service/spares 从系统收入的 15%级向 18%–20%爬升；
+8. 若供不应求，高 ASP hybrid/advanced placement mix 拉高集团毛利率；若客户扩产过度，订单先回落、随后收入和服务增速放缓。
+
+### 6.6 当前产能能力、供应链采用与资格阶段
+
+| 产品 | 当前制造/销售能力（美元计） | 当前供应链采用 | 当前资格/量产阶段 |
+|---|---:|---|---|
+| CHAMEO hybrid | **已披露 250 台/年 × €2m–€3.5m = €0.50–0.875bn，约 $0.58–$1.01bn**；35 台/月目标对应 €0.84–1.47bn、约 $0.97–$1.70bn | 21 客户；领先逻辑客户 AP6 约 60 台；六条 Applied 集成线、30 台于 2025 年末已安装 | Logic HVM；CPO/consumer 开发或早期订单；HBM 三大厂 qualification |
+| 2.5D flip/bridge | **约 €0.30–0.45bn / $0.35–0.52bn（M）** | CoWoS-like 已是连续三季显著订单；fLex 与 3 IDM + 4 OSAT/subcon 接洽 | Quantum/2200 HVM；fLex 首个 qualification 完成，panel 310×310 ready |
+| TC Next | **约 €50–100m / $58–116m（M）** | 6 客户；大量 qualification；大多单台订单、一家数台 | Engineering/qualification，少量 production；尚无公开 HBM volume POR |
+| Photonics | **约 €120–220m / $139–255m（M）** | 公司称 all key players；pluggable 多客户扩产 | 800G/1.6T HVM；Evo ONE evaluation；CPO pilot/early products |
+| AI power | **约 €60–120m / $69–139m（M）** | 多客户订单，未命名 | Esec/AMS 平台成熟；特定 AI module 客户 ramp 尚未披露 |
+| Service | **约 €130–180m / $151–208m 年服务能力（M）** | 全球 installed base；台湾、韩国、新加坡支持扩张 | 已量产经常性业务；HB 四小时备件模式已建立 |
+
+除 hybrid 外，公司不披露单产品产能。上述能力基于 Q2 集团年化收入约 €1.0bn、历史单季可扩产约 50%、产品 ASP 与供应链共用程度反推，**不同产品能力不能相加**，因为它们共享外包件、马来西亚 cleanroom、工程人员与 field service。
+
+## 7. 一年后产能能力、供应链采用与资格阶段：三情景
+
+### 7.1 一年后产品产能
+
+| 产品 | 基准产能 | 乐观产能 | 极度乐观产能 | 关键约束 |
+|---|---:|---:|---:|---|
+| CHAMEO/N50 hybrid | **420 台/年 × €2.5m = €1.05bn / $1.22bn** | **480 台 × €2.8m = €1.34bn / $1.56bn** | **600 台 × €3.1m = €1.86bn / $2.15bn** | 高精度 stage/optics、洁净模组、长交期零件、安装工程师、900 种备件网络 |
+| 2.5D flip/bridge | **€450m / $521m** | **€600m / $695m** | **€750m / $869m** | panel handling、precision module、客户 CoWoS-like 建厂与 OSAT 消化能力 |
+| TC Next | **€120m / $139m** | **€220m / $255m** | **€350m / $405m** | HBM/logic POR、fluxless yield、heater/force module、竞争对手 installed base |
+| Photonics | **€250m / $290m** | **€350m / $405m** | **€500m / $579m** | 1.6T/LPO 出货、CPO 标准与量产时间、客户定制化 |
+| AI power | **€120m / $139m** | **€180m / $208m** | **€250m / $290m** | 客户项目转量产、power package 架构和成熟竞争 |
+| Service | **€170m / $197m** | **€220m / $255m** | **€300m / $347m** | 区域工程师、零部件库存、远程诊断与 SLA 能力 |
+
+极度乐观产能是“可服务上限”而不是收入预测。尤其 hybrid 的 €1.86bn 理论值远高于一年后 €520m 极度乐观收入，因为设备订单以项目批次发生，客户不会立即使用全部供应链上限。
+
+### 7.2 一年后采用与资格阶段
+
+| 产品/应用 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| 100nm logic HB | AP7 分批扩产、现有两大逻辑客户继续 repeat orders；其他客户仍以 small fleet | AP7 第二轮明确、CPO/ASIC 客户进入初量产 | 多个 hyperscaler/custom XPU 客户复制 integrated line |
+| 50nm N50 | Q4-26 beta 后在 H1-27 多客户 qualification | 一家客户 H1-27 small-volume production | 两家以上客户转 production，N50 mix 快速提升 |
+| HBM hybrid | 三大厂继续 eval；一位 first mover 准备 HVM，但收入仅 engineering/少量 beta | 一家 memory 厂在 HBM4E 16-high 进入早期 production | HBM4E + 特定 HBM3 thermal application 同时量产，另一厂跟进 |
+| TC Next | 6 家客户扩大至 8–10 家，一家从数台走向小批量 | 两至三家 logic/HBM 客户量产，fluxless 获 POR | 赢得至少一家 HBM4/4E volume POR，成为 Hanmi/ASMPT 的实质第二来源 |
+| fLex / panel | 首个 qualification 后新增 1–2 家 qualification；310×310 小批量 | 领先 OSAT/foundry 量产；3 IDM/4 OSAT 中多家下 production orders | 310×310 panel 大规模部署，510×515 roadmap 提前拉动新平台 |
+| Photonics | 1.6T pluggable 量产；Evo ONE 完成部分客户验证；CPO pilot | 主要 optical supplier 扩建 1.6T/LPO，至少一个 CPO initial production | CPO 在 switch/XPU 两端加速，CHAMEO + Evo 组合销售 |
+| AI power | 多客户订单交付并通过量产验收 | 两家以上客户持续 repeat orders，成为 Packaging 增长主因 | data-center power module 标准化，attach + molding 形成完整 POR |
+| Service | 占收入 16%–18% | 占比 18%–19% | 接近 20%，前道长期服务合同成为标准 |
+
+**“认证”口径说明：** 半导体设备没有一个统一、公开的产品认证编号可替代客户验证。这里的 qualification/POR/HVM 是客户生产认证阶段；Besi 的 ISO/cleanroom 标准只能证明设备环境能力，不能证明某一 GPU/HBM 项目已量产。
+
+## 8. 基于订单积压、供给与渠道验证的未来一年业务增速
+
+### 8.1 真实可见的订单证据
+
+| 证据 | 已披露事实 | 对未来收入的含义 | 风险/限制 |
+|---|---|---|---|
+| LTM orders | Q3-25 至 Q2-26 **€987.6m**，历史纪录 | 高于同期收入 €733.9m 约 €253.7m | orders 不等于不可取消合同 |
+| Q2 B2B | **1.17x**，连续第四季 >1 | backlog 仍在增加 | 较 Q4-25 1.50x、Q1-26 1.46x 已下降 |
+| 机械 backlog | 2026-06-30 约 **€443m（M）** | 覆盖 Q3 指引中值 1.58x / 约 4.7 个月 | 公司未正式确认；不含取消/延期 |
+| AP6/AP7 | AP6 约 60 台 HB；按 €2m–€3.5m ASP，累计设备值约 **€120m–€210m / $139m–$243m（M）**。AP7 公布最终 capacity 约其两倍，对应全建成理论设备值约 **€240m–€420m / $278m–$486m（M）**；Q1 仅收到首轮订单，H2 可能有第二轮 | 六个月 lead time 指向 H2-26 至 2027 交付 | 设备值是台数乘 ASP，不代表单张订单或当前 backlog；管理层没有保证第二轮，客户项目名也未正式点名 |
+| Q2 hybrid orders | 两个 repeat 客户 + 一个新 hyperscaler | repeat order 证明量产/开发扩展；新客户扩大应用 | hyperscaler 订单可能是 wearables，而非 AI datacenter |
+| HBM | 三大 memory 厂有 Besi tool/evaluation；一位 first mover 最快 | 2027 是潜在插入点 | 当前 hurdle 是 cost/yield；可能推迟 |
+| CoWoS-like | 管理层称 Q4/Q1/Q2 均是订单 significant part | 2.5D 是一年内最确定的增长源 | OSAT 高利润会吸引过度扩产 |
+| TC Next | qualification 显著；多为单台，一位客户数台 | 2027 有从工程机转 volume 的可能 | 尚无大批量订单 |
+| AI power | 多客户 Q2 新订单 | 新的小业务可在低基数快速增长 | 客户、金额、交付窗口未披露 |
+| Service | hybrid 约 900 种关键零件四小时可达；占比可向 18%–20%走 | installed base 转化为高毛利 recurring revenue | 人员与备件库存先行投入 |
+
+**客户项目名边界：** 管理层使用“leading Taiwan logic customer、AP6、AP7”，行业通常将其联系到 TSMC 的 advanced packaging expansion，但财报电话会没有正式点名；本报告只使用 AP6/AP7 作为项目代号，不把客户身份当作已确认事实。Investor Day 对 fLex 的 engagement 页面则公开展示了 AMD、Samsung、Amkor、TFME、TSMC、SK hynix、JCET、SPIL 等 logo，但 logo 代表 engagement，不等于 production order。
+
+### 8.2 订单的取消与延期风险
+
+- Besi 正式风险披露指出，客户订单可能被 postponement 或 cancellation，订单不能可靠预测未来收入。
+- 2025 Annual Report 的一般条款表述是可能收取 cancellation fee，但费用未必覆盖全部成本，客户也可能对费用存在争议。
+- 公司没有披露历史取消率。因此本报告用 **基准 12%–15%、乐观 5%–8%、极度乐观 0%–3%** 的“取消+跨窗延期”假设，而不是声称存在可核验取消率。
+- 先进设备 lead time 6–9 个月、当前 100nm CHAMEO 约六个月；普通产品 4–12 周。订单可能已在 backlog 中，但安装、良率验收和 revenue recognition 仍可能跨季度。
+
+### 8.3 渠道与竞品交叉验证
+
+| 日期 | 外部一手/渠道信号 | 对 Besi 的验证 |
+|---|---|---|
+| 2026-02-12 | Samsung 宣布 HBM4 量产出货并预计 2026 HBM 销售超过 3 倍 | HBM demand 强；但当代 HBM4 仍非 Besi HB 主流收入 |
+| 2026-02-26 | Broadcom 开始出货 2nm、3.5D face-to-face XDSiP custom SoC；更广客户产品自 H2-26 出货 | 逻辑 3D/hybrid 的商业需求真实，不只来自 Besi 自述 |
+| 2026-03-17 | Samsung 展示 HCB，目标支持 16 层以上并较 TCB 降低热阻 >20% | HBM hybrid 的技术价值明确，但仍在下一代导入期 |
+| 2026-04-22 | ASMPT Q1 bookings $727m，同比 +71.6%；TCB/HB/FC/photonics 均受 AI 驱动 | 行业景气不是 Besi 单家公司特例；也说明竞争在增强 |
+| 2026-05-06 | K&S 宣布扩产，目标支持约 $400m 年 TCB system sales | HBM/advanced logic TCB 供给扩张，压低 Besi 垄断概率 |
+| 2026-05-19/28 | ECTC 2026 展示 450nm pitch Cu-Cu、约 2,000 万个 interconnect、>98% single-via yield，以及 300nm pitch/50nm overlay 研究 | hybrid roadmap 继续前进；但 W2W 与 D2W 指标不可直接比较 |
+| 2026-05-29 | Samsung 开始向主要客户送样 12-layer HBM4E，并计划按客户进度量产 | 2027 HBM4E equipment qualification 时间窗存在 |
+| 2026-06-09 | Hanmi 披露/媒体核实 SK hynix KRW44.2bn HBM4 TC Bonder 4.5 Griffin 合同 | 2026 HBM4 的真实量产订单仍偏向 TCB incumbent |
+| 2026-06-18 | SK hynix 送样 12-layer HBM4E；其 2025 HBM4 量产明确采用 Advanced MR-MUF | HBM4E 需求加速，但 MR-MUF/TCB 延寿会推迟 hybrid |
+
+### 8.4 集团未来一年增速情景
+
+| 项目 | **基准** | **乐观** | **极度乐观** |
+|---|---:|---:|---:|
+| Q3-26 revenue | €281m | €287m | €287m |
+| Q4-26 revenue | €285m | €320m | €380m |
+| Q1-27 revenue | €270m | €350m | €470m |
+| Q2-27 revenue | €264m | €383m | €543m |
+| 一年 LTM revenue | **€1.10bn / $1.274bn** | **€1.34bn / $1.552bn** | **€1.68bn / $1.945bn** |
+| 相对当前 LTM 增速 | **+49.9%** | **+82.6%** | **+128.9%** |
+| 未来一年 orders 假设 | **€1.20bn** | **€1.50bn** | **€1.90bn** |
+| B2B | **1.09x** | **1.12x** | **1.13x** |
+| 取消/跨窗延期 | **12%–15%** | **5%–8%** | **0%–3%** |
+| 主要收入驱动 | 2.5D、logic HB、1.6T photonics、service | AP7 第二轮、N50、CPO early production、TC Next volume | HBM4E/HBM3 HB、panel/CPO 同时放量、TCB POR |
+| 最大供给瓶颈 | 安装/服务人员、长交期精密件 | HB 供应链持续 35台/月、客户验收 | 600台/年 HB 等效供应链与大量现场团队，执行难度极高 |
+
+**基准情景为什么仍有 +50%：** 当前 LTM 包含低谷 Q3-25 €132.7m 与 Q4-25 €166.4m；仅以 Q3-26 指引中值 €281.1m 替换 Q3-25，LTM 就增加 €148.4m。它主要是低基数与已有 backlog 的结果，不需要 HBM hybrid 量产。
+
+**乐观情景为什么接近市场共识：** €1.34bn 与 FactSet FY2027 revenue consensus €1.339bn 基本相同，意味着市场已经要求 AP7、2.5D、photonics、service 和至少少量 submicron 新应用在 2027 年同步兑现。
+
+**极度乐观为何难：** 收入不只是增加订单，还需要 Q2-27 单季达到约 €543m，是 Q2-26 的 2.17 倍。公司历史可在强周期单季扩产约 50%，但要持续多个季度，需要客户验收、field support 和 high-ASP product mix 全部无延迟。
+
+### 8.5 需要持续监测的前瞻指标
+
+1. **Orders/revenue：** 若连续两个季度 B2B <1，推算 backlog 开始消化，估值风险上升。
+2. **Q3/Q4 hybrid order cadence：** AP7 是否出现第二轮，HB 客户数是否从 21 家继续上升，repeat orders 是否超过 evaluation tools。
+3. **HBM qualification：** 是否出现“production order、POR、HVM”而非“evaluation、engagement”；三者经济意义完全不同。
+4. **TC Next units：** 是否从 single systems 转为某客户十台级订单。
+5. **Photonics：** 1.6T bulk order 是否持续；CPO 是否从 engineering/pilot 进入 production。
+6. **AI power：** 是否披露 repeat orders、客户数量、量产项目或 Packaging segment 增速明显超过集团。
+7. **Gross margin：** 63%是重要观察线。若 advanced mix 增加但毛利持续低于 63%，说明价格/成本或 mix 假设错误。
+8. **AR/inventory：** DSO 约 93 天、库存约 124 天若继续上升而现金流不跟随，可能预示验收/交付问题。
+
+## 9. 竞争格局、主流技术判断、替代方案与客户切换成本
+
+### 9.1 正确理解 Besi 的市场份额
+
+2026 Investor Day 对 TechInsights 2025 数据的图表口径为：
+
+- **Besi addressable market share：70%**；
+- **Die Attach share：49%**；
+- **Advanced Die Placement share：83%**，定义为 placement accuracy <7µm；
+- 数据排除 TCB、wire bonding、dicing 等不在相应口径中的市场。
+
+这说明 Besi 在高精度 placement 最强，但不能据此声称其占整个 assembly equipment 市场 70%或占所有 die attach 83%。口径混淆会系统性高估垄断程度。
+
+### 9.2 分产品竞争矩阵
+
+| 业务 | Besi 位置 | 主要竞争者/替代供给 | Besi 优势 | Besi 劣势 |
+|---|---|---|---|---|
+| D2W hybrid bonding | 逻辑 HVM 领先；与 Applied 推 integrated Kinex | ASMPT；EV Group 的 W2W/D2W process ecosystem；Tokyo Electron、SUSS/Shibaura 等潜在前道/键合设备；客户自研 | 100nm HVM installed base、N50 roadmap、Applied pre-clean/metrology integration、精度+throughput+service | 客户集中；D2W 全流程良率依赖非 Besi 工序；W2W/其他集成路线可能分流 |
+| HBM hybrid | 领先评估者之一，但非既定量产 POR | Samsung/SK hynix/Micron 自有流程；ASMPT HB；EVG W2W；TCB/MR-MUF 延寿 | 逻辑经验可迁移，21客户、submicron roadmap | 2026 HBM4 量产仍由 MR-MUF/TCB 主导；cost/yield 未过关 |
+| Advanced TCB | 技术参数强、早期商业化 | **Hanmi、ASMPT、K&S**；Hanwha Semitech、Shinkawa/Yamaha 等 | 0.5µm、fluxless、2,500 UPH、可覆盖 logic/memory/photonics | HBM installed base 和 POR 落后；竞争者正快速扩产 |
+| 2.5D flip/bridge | 高精度 placement 龙头，CoWoS-like 订单强 | ASMPT、K&S、Hanmi/Hanwha、Shinkawa/Yamaha、客户定制设备 | 83% advanced placement 份额、fLex 1µm/4k UPH、Quantum 10k UPH、panel ready | mass-reflow 较易多源；客户过度扩产后订单波动大 |
+| Photonics MMA/CPO | 公司自称 #1，all key players engagement | ASMPT、K&S/Palomar、ficonTEC、其他定制 photonics assembly vendors | 多芯片、高精度、大基板、eutectic 与 HB 组合；覆盖 pluggable+CPO | photonics 高度定制；ASMPT Q1 photonics 增长更快，CPO 时点不确定 |
+| Power die attach/molding | 新增量、组合销售 | TOWA、ASMPT、Hanmi/Hanwha、Yamada/APIC、其他 power die bond vendors | Esec SSI + AMS-X 一体化，direct sinter/diffusion + molding | 精度壁垒较低、成熟竞争激烈、客户未披露 |
+| Service | 原厂高粘性 | 第三方 maintenance、客户内部团队 | 软件、calibration、recipe、原厂 parts、全球 SLA | 需要大量工程师与库存，服务事故会影响设备声誉 |
+
+### 9.3 新技术是不是未来主流
+
+#### D2W hybrid bonding：会成为主流，但不是所有封装的唯一主流
+
+**主流理由：**
+
+- 相比先进 TCB/microbump，Besi 披露 hybrid 可显著提高 interconnect density、bandwidth density 和 energy-efficient performance，并降低每互连成本。
+- Broadcom 已在 2nm 3.5D face-to-face 产品中商业出货；逻辑客户已有多年 HVM 经验。
+- ECTC 2026 的 450nm/300nm pitch 研究证明 Cu-Cu 互连继续缩小，长期方向明确。
+- 当逻辑 node <3nm、die-to-die PHY 功耗和互连密度成为瓶颈时，hybrid bonding 重要性上升。
+
+**不会全面替代的原因：**
+
+- W2W 对 wafer size、die yield 和 die matching 更敏感；D2W 可选择 known-good-die、适配异构 die，但 placement/cleanliness/rework 更难。
+- Mass reflow 和 TCB 成本较低、供应链成熟；只要 bump pitch、stack height 和热阻仍满足需求，客户会延长其寿命。
+- 2026 HBM4 的现实路线证明“技术更先进”不等于“立即成为成本最优量产路线”。
+
+#### Advanced TCB：未来数年仍是主流过渡技术
+
+TCB 不是等待 hybrid 淘汰的旧技术。对于 10–20µm pitch、HBM 12H/16H、logic C2W，fluxless TCB 可以在成本、良率、返工与热预算之间提供更平衡方案。ASMPT 将 2028 TCB TAM 估到 $1.6bn 并目标 35%–40%份额；K&S 和 Hanmi 的扩产进一步证明 2026–2028 仍有强需求。
+
+#### 2.5D/panel-level：确定性最高，但设备架构会变化
+
+短期 AI accelerator 仍以 large 2.5D + HBM3E/HBM4 + ABF/interposer/RDL 为主，CoWoS-like shortage 最真实。310×310mm panel 可提高面积利用率并降低成本，fLex 已做好准备；更大 510×515mm panel 会要求新 handling、warpage control 和 metrology，既是升级机会也是设备迭代风险。
+
+#### Photonics/CPO：pluggable 是现实，CPO 是方向但时点风险高
+
+800G/1.6T pluggable 的 die-attach steps 增加已直接形成订单。CPO 能减少高速电气走线与功耗，长期适合 102.4T 交换和 scale-up，但 2026 年仍主要是 engineering/pilot/early product；可靠性、激光器热管理、fiber attach、维修性与标准化决定 2027–2028 放量速度。
+
+### 9.4 ECTC/行业会议对技术风险的提示
+
+- EVG/Applied 在 ECTC 2026 展示 450nm Cu-Cu pitch、约 2,000 万个 interconnect、>98% single-via yield；另有 300nm pitch SiCN、50nm overlay 研究。这里的 **interconnect pitch、overlay 与 Besi placement accuracy 是不同指标**，不能把 300nm pitch 等同于 Besi 需要 300nm placement。
+- W2W 在 CMOS image sensor、3D NAND/DRAM 和同质 wafer stack 中可能更有效；D2W 的价值在 heterogeneous die、known-good-die 和多来源 chiplet。
+- D2W 量产瓶颈包括 die/wafer distortion、surface planarity、particles、Cu protrusion、overlay metrology、rework 和 throughput；任何一项良率不足都会抵消高带宽优势。
+- 先进 AI package 面积已超过 100×100mm、功耗超过 1kW，warpage、thermal cycling、underfill 和 substrate supply 同样可能成为系统瓶颈；Besi 只控制其中的 placement/bonding 部分。
+
+### 9.5 替代方案与风险
+
+| Besi 新技术 | 替代方案 | 何时替代更有吸引力 | 对 Besi 的影响 |
+|---|---|---|---|
+| D2W hybrid | W2W hybrid | die/wafer 同质、wafer yield 高、无需 KGD | 减少逐 die placement 工具需求，利好 EVG/TEL 类 wafer bonder |
+| D2W hybrid | TCB/microbump、mass reflow | pitch/热/高度仍可达标，客户重视成本与返工 | 推迟 CHAMEO 放量，延长 TC Next/flip-chip 生命周期 |
+| HBM hybrid | MR-MUF/TC-NCF/fluxless TCB | 12H/16H package height 放宽、热性能可接受 | HBM hybrid 延后至 HBM4E/HBM5 |
+| Silicon interposer/bridge | Fan-out RDL、organic bridge、glass core/panel | 成本、尺寸或 supply chain 更优 | placement 次数可能增加或减少，设备规格改变 |
+| Pluggable optics | CPO | switch bandwidth/power 达到临界点 | 从 2200 Evo pluggable 向 CHAMEO+CPO 组合迁移 |
+| CPO | 更高效 pluggable、LPO、AEC/copper | 维修性、标准化和 laser reliability 优先 | 推迟 CPO hybrid 收入，但 pluggable MMA 可继续增长 |
+| 原厂 service | 第三方/客户自维 | mature tool、非关键 process、备件通用 | 传统设备服务受压；submicron tool 较难替代 |
+
+### 9.6 客户切换成本
+
+| 产品 | 初次 qualification | 完整替换/第二来源 | 切换成本 | 原因 |
+|---|---:|---:|---|---|
+| Logic/HBM hybrid | **12–24 个月；领先逻辑客户实际超过三年** | 18–36 个月 | **极高** | surface recipe、overlay、yield、cleanroom integration、metrology、reliability 全部重做 |
+| Advanced TCB | 9–18 个月 | 12–24 个月 | 高 | flux/fluxless recipe、温度/压力曲线、bump metallurgy、warpage |
+| 2.5D bridge/flip | 6–12 个月；高端可达 9–18 月 | 9–18 个月 | 中高 | placement 精度、panel/wafer handling、UPH 与良率 |
+| Photonics | 6–12 个月 | 9–18 个月 | 中高 | 光学 alignment、epoxy/eutectic、fiber/laser、客户高度定制 |
+| Power attach/molding | 6–12 个月 | 9–15 个月 | 中 | solder/sinter/mold recipe 与可靠性验证，但成熟供应商较多 |
+| Service | 随设备 installed base | 工具寿命全周期 | 高 | 软件、parts、calibration 与 warranty 绑定 |
+
+高切换成本并不保证永远独供。先进客户常在下一代 node/封装导入第二来源，以降低供应风险并压价；真正的护城河是持续赢得下一代 qualification，而不是上一代 installed base 本身。
+
+## 10. 风险、催化剂与最终判断
+
+### 10.1 主要风险
+
+1. **估值风险：** 75.7x TTM PE、21.75x TTM P/S 对季度 miss 极敏感；即使公司仍增长，估值倍数也可能压缩。
+2. **HBM 时点风险：** 2026 HBM4 的实际量产仍由 MR-MUF/TCB 主导。若 HBM4E/5 hybrid 推迟到 2028–2029，当前 submicron 远期收入会后移。
+3. **客户/项目集中：** 集团收入客户分散，但 HB 订单集中于两家领先逻辑客户；单一 AP 项目节奏可显著影响季度订单。
+4. **周期与过度扩产：** OSAT 在 CoWoS-like 获得高利润会引发集中建厂。管理层自己提醒典型强周期 6–8 季后容易过剩。
+5. **订单质量：** backlog 不披露，订单可延期/取消；取消费可能不足以覆盖成本。
+6. **供应链与服务执行：** 从 250 台/年向 420 台/年甚至更高扩张，瓶颈可能从 cleanroom 转到 optics/stage、长交期零件、安装与四小时服务团队。
+7. **竞争：** ASMPT、Hanmi、K&S 在 TCB/HBM 具有实质订单；EVG/W2W 路线和客户自研可分流 D2W。
+8. **产品 mix：** Q3 毛利指引 63%–65%低于 Q2 的 65.7%；mainstream recovery 会提高收入但稀释毛利。
+9. **中国/出口与地域风险：** Q2-26 39%收入、35%订单来自中国；Asia ex-China 又占 49%收入。出口规则、关税、汇率和区域集中都可能影响交付。
+10. **营运资本：** DSO/库存天数已较高；若 revenue growth 与 CFO 背离，需警惕验收延迟或客户付款变化。
+
+### 10.2 未来 12 个月催化剂
+
+- Q3-26 收入 €274.9m–€287.4m 指引兑现，orders 再次高于 revenue；
+- AP7 第二轮 hybrid order 或其他 leading logic/CPO 客户十台级订单；
+- N50 Q4-26 beta on time，50nm/3µm/3,000 UPH 获客户确认；
+- HBM 客户从 evaluation 转 production order/POR；
+- TC Next 从单台订单转多台 volume；
+- 1.6T photonics repeat bulk order 与 Evo ONE qualification；
+- AI power management repeat order、客户数或量产项目披露；
+- service 占比向 18%提高，毛利率维持 64%–68%长期目标区间；
+- 长期收入目标 €1.7–2.2bn 的 Engine 2（submicron）从 €0.6–1.1bn 逐步获得可验证订单支持。
+
+### 10.3 最终判断
+
+**公司质量：高。** Besi 有真实的高精度 placement 份额、65%级毛利率、净现金、资产轻型供应链和多产品交叉销售能力。  
+**未来一年基本面：强。** 已有订单与 Q3 指引支持基准收入约 €1.10bn；2.5D、logic hybrid、photonics 和 service 足以驱动增长，不需要 HBM hybrid 才能成立。  
+**远期选择权：很大。** 若 HBM4E/HBM5 的内部 stack bonding 转向 Besi TC Next/CHAMEO，每 GPU 的 Besi 设备资本强度可从当前约 $1.7–$4.9 提升到约 $5–$23，且设备台数因 88–132 个 stack bonds 急剧增加。  
+**最大误区：把“评估”当“量产”、把 83% advanced placement 份额当成整个 die attach/assembly 市场份额。**  
+**股票性价比：苛刻。** 当前价格更接近要求乐观情景兑现，而不是只反映基准情景。对投资者最关键的不是再证明 AI 需求存在，而是验证 AP7/2.5D/photonics 的订单能否持续，以及 HBM qualification 能否在 2027 年真正跨过 cost/yield 门槛。
+
+## 11. 主要资料来源
+
+### 11.1 Besi 一手资料
+
+- [Q2-26 and H1-26 results, 2026-07-23](https://www.besi.com/investor-relations/press-releases/details/be-semiconductor-industries-nv-announces-q2-26-and-h1-26-results/)
+- [Q2-26 full PDF](https://www.besi.com/fileadmin/user_upload/PR_Q2-2026.pdf)
+- [H1-26 interim report](https://www.besi.com/fileadmin/user_upload/Half_Year_2026_Report.pdf)
+- [Q1-26 results PDF](https://www.besi.com/fileadmin/user_upload/Q1-2026.pdf)
+- [Q4-25 results PDF](https://www.besi.com/fileadmin/user_upload/Q4-2025.pdf)
+- [Q3-25 results PDF](https://www.besi.com/fileadmin/user_upload/Q3-2025.pdf)
+- [Q2-25 results PDF](https://www.besi.com/fileadmin/user_upload/Q2-2025.pdf)
+- [2025 Annual Report（Besi 官方归档页；年报链接跳转至 Publitas）](https://www.besi.com/investor-relations/financial-reports-and-publications/financial-reports/)
+- [2026 Investor Day announcement](https://www.besi.com/investor-relations/press-releases/details/be-semiconductor-industries-nv-increases-long-term-financial-targets-at-2026-investor-day/)
+- [2026 Investor Day deck](https://www.besi.com/fileadmin/data/Investor_Relations/Investor_Presentations/2026_Investor_Day_Presentation.pdf)
+- [Q2-26 webcast deck](https://www.besi.com/fileadmin/data/Investor_Relations/Webcasts/Webinar_Q2-2026.pdf)
+- [Applied Materials 9% strategic investment and joint system](https://www.besi.com/investor-relations/press-releases/2025/details/be-semiconductor-industries-nv-announces-that-it-has-taken-note-of-the-press-release-from-applied-materials-inc-of-april-14-2025/)
+- [Q1-26 call transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-be-semiconductor-q1-2026-shows-robust-growth-93CH-4633326)
+- [Q2-26 call transcript](https://www.investing.com/news/transcripts/earnings-call-transcript-besi-q2-2026-results-lift-revenue-but-stock-falls-93CH-4809494)
+
+### 11.2 产业链、客户、竞品和技术会议
+
+- [ASMPT Q1-26 results: bookings, TCB/HB/FC/photonics](https://www.asmpt.com/en/investor-relations/news-events/asmpt-announces-2026-first-quarter-results/)
+- [ASMPT Q1-26 detailed announcement](https://www.asmpt.com/site/assets/files/85243/e0522_results_announcement_2026_q1.pdf)
+- [K&S Q2-26 results and $400m TCB sales capacity](https://investor.kns.com/2026-05-06-Kulicke-Soffa-Reports-Second-Quarter-2026-Results)
+- [Hanmi/SK hynix KRW44.2bn HBM4 TC bonder order](https://en.etnews.com/20260609200006)
+- [Samsung commercial HBM4 shipment](https://news.samsung.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing)
+- [Samsung HBM4E samples](https://news.samsung.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples)
+- [Samsung HCB at GTC 2026](https://news.samsung.com/global/samsung-unveils-hbm4e-showcasing-comprehensive-ai-solutions-nvidia-partnership-and-vision-at-nvidia-gtc-2026)
+- [SK hynix HBM4 and Advanced MR-MUF](https://news.skhynix.com/sk-hynix-completes-worlds-first-hbm4-development-and-readies-mass-production/)
+- [SK hynix HBM4E samples](https://news.skhynix.com/12-layer-hbm4e-sample/)
+- [Broadcom 2nm 3.5D XDSiP shipment](https://www.broadcom.com/company/news/product-releases/63946)
+- [EV Group ECTC 2026 hybrid bonding program/results](https://www.evgroup.com/company/news/detail/ev-group-highlights-hybrid-bonding-layer-transfer-and-maskless-lithography-technologies-for-heterogeneous-integration-and-advanced-packaging-at-ectc-2026)
+- [Imec/EVG 200nm W2W hybrid bonding at ECTC 2026](https://www.evgroup.com/company/news/detail/imec-and-ev-group-demonstrate-wafer-to-wafer-hybrid-bonding-with-200nm-interconnect-pitch-and-record-high-overlay-accuracy)
+
+### 11.3 项目内行业资料
+
+- [先进封装设备与混合键合](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-07-10.md)
+- [AI 芯片先进封装](../../行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-07-10.md)
+- [HBM 与高带宽内存](../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-07-10.md)
+- [先进逻辑晶圆代工和封装](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-07-10.md)
+- [封装基板、中介层与 RDL](../../行业调研/AI服务器_存储_芯片/行业调研_封装基板、中介层与RDL_2026-07-10.md)
+- [ECTC 2026 conference update](../../行业调研/产业背景/顶级会议信息/conference_update_ectc_2026_2026-06-11.md)
+- [Chiplet Summit 2026 update](../../行业调研/产业背景/顶级会议信息/chiplet_summit_2026_update.md)
+
+## 12. 披露与模型边界
+
+- 公司没有披露产品级收入、产品级 gross margin、正式 backlog、取消率、单一客户 AP7 金额或 HBM volume order。本报告对这些字段全部使用区间和 M 标记。
+- 市场份额、市场规模与长期 target 来自 Besi 引用的 TechInsights 或公司估算，不能视为独立审计。
+- 每 GPU/rack/MW/port 内容量对利用率、设备寿命、ASP、服务强度和 package architecture 高度敏感，适合比较资本强度，不适合当作精确 BOM 报价。
+- 极度乐观情景用于检验估值与供应链上限，不是概率最高预测。

@@ -1,0 +1,393 @@
+# AMPX：Amprius Technologies 公司调研（2026-06-11）
+
+## 0. 结论先行
+
+Amprius Technologies（NYSE: AMPX）是一家高比能、高功率硅负极锂电池公司，核心产品是面向无人机、HAPS 高空伪卫星、电动航空和轻型电动车的高性能电芯。投资人通常把它看成“硅负极电池商业化小龙头 + 国防无人机供应链期权 + 资本开支转轻后的高增长电池平台”，而不是传统储能、数据中心 UPS 或大宗 EV 电芯公司。
+
+截至 2026-06-11，本报告的核心判断是：
+
+1. **主业已经从实验室技术进入商业放量，但仍是早期高波动公司。** 2025 年收入 `$73.0M`，同比 `+202%`；2026Q1 收入 `$28.5M`，同比 `+153%`；公司把 2026 年收入指引上调到至少 `$130M`，对应 2025 基数至少 `+78%`。毛利率从 2024 年 `-76%`、2025 年 `11%`，改善到 2026Q1 `20%`，但 GAAP 仍亏损。
+2. **业务重心在 UAS/无人机、HAPS 和高性能 mobility，不在 AI 数据中心。** 2025Q2 公司披露 `>90%` 收入来自航空 sector；2025Q3 航空约 `75%`，其余主要是 light electric vehicle（LEV）。2026Q1 未披露 sector mix，但 EMEA 收入 `$16.5M`，其中 Ukraine 客户 `$10.0M`，并且三大客户合计 `49%` 收入，说明国防/无人机链条仍是主导变量。
+3. **订单能见度改善，但“$500M 客户订单”不是 AMPX 自身 backlog。** 2026Q1 公司披露长期美国防务客户在美国军方多个分支获得约 `$500M` 新订单，这提高未来电芯 PO 可见度，但不是 AMPX 已签直接订单。可确认的公司层面订单/履约口径包括：2026Q1 RPO `$46.1M`、2025Q4 RPO `$44.5M`、2025Q3 近端待履约订单 `$53.3M`、2025Q3 单一 UAS 客户 `$35M` 订单、2026Q1 `$21M` 中国 LEV 客户 SiCore cylindrical cell PO、DIU 合同增至 `$18.1M`。
+4. **制造战略发生重大转型。** 2023 年公司曾签下 Colorado Brighton 大型工厂租约，2025 年计提 `$22.5M` impairment/retirement 相关一次性费用，2026-01 以 `$20M` 终止 15 年租约，转向 contract manufacturing。公司披露截至 2025-12-31 通过全球代工协议可获得超过 `2.0GWh/年` SiCore 产能，同时把 Fremont pilot line 扩到 `10MWh`，主要用于快速样品、NDAA 合规和客户 qualification。
+5. **AI 数据中心相关收入应按 `0` 处理。** AMPX 没有公开 OCP ORv3 BBU、UL9540A 数据中心储能、UPS 电池柜、rack energy shelf、hyperscaler data center design-in 或每 MW / 每 rack / 每 GPU 的供货证据。它的电芯高比能优势对无人机极关键，但数据中心更看重安全认证、循环寿命、低成本、系统集成和服务网络，当前主流是 LFP、Li-ion UPS 电池柜、NiZn、飞轮、超级电容和 BESS 集成。
+
+## 1. 公司业务、投资人定位、产业链位置与财务快照
+
+### 1.1 公司整体业务
+
+Amprius 开发、制造并销售硅负极 lithium-ion batteries，定位是用 silicon anode 替代传统 graphite anode，在高比能、高功率、快充和宽温度范围上获得性能优势。公司当前主要应用是：
+
+| 应用方向 | 当前商业性 | 代表客户/线索 | AMPX 价值主张 | 与 AI 数据中心关系 |
+|---|---:|---|---|---|
+| UAS / drones / defense unmanned systems | 最高 | AeroVironment/AV、U.S. Army、Teledyne FLIR、Nordic Wing、ESAero、Ukraine 相关出货 | 更长航时、更大 payload、更好任务经济性；国防小型无人机需求高 | 间接：边缘 AI/autonomy 供电，不是数据中心基础设施 |
+| HAPS / high-altitude pseudo satellites | 高，但项目制 | AALTO Airbus Zephyr、BAE Systems | 极高能量密度、夜间储能、低温高空环境 | 无直接关系 |
+| eVTOL / electric air transportation | 中长期 | tier-one eVTOL 技术评估 | takeoff/landing 高功率 + fast charge | 无直接关系 |
+| LEV / light electric vehicles | 增长快但价格更敏感 | 2026Q1 中国 premier electric mobility customer `$21M` PO | drop-in cylindrical cells、短 design-in 周期 | 无直接关系 |
+| EV-capable cell / USABC | 研发期 | USABC A-sample | 360Wh/kg、1,200W/kg、15min 0-90% 能量充电线索 | 无直接关系 |
+| 数据中心 UPS / BBU / BESS | 未见商业证据 | 无公开客户/认证 | 理论上高功率电芯可做短时储能，但当前无 data center product | 当前收入占比按 `0%` |
+
+### 1.2 投资人眼中的 AMPX
+
+市场给 AMPX 的估值不是传统电池制造商估值，而更接近“高增长、强 narrative、订单可选性很大的 specialty battery platform”：
+
+- **正面叙事**：硅负极高能量密度已经有商业收入；无人机/国防需求加速；美国政策推动 U.S.-made drones 和 NDAA-compliant supply chain；contract manufacturing 让 2026 指引可以在较低 capex 下兑现；2025Q4 首次实现正 Adjusted EBITDA。
+- **负面叙事**：公司仍 GAAP 亏损；客户集中度高；2026Q1 AR 与 bill-and-hold 口径需要跟踪；核心 SiCore 材料来自 Berzelius，中国/韩国代工与 NDAA 本土化存在 tension；Colorado 大厂路线退出说明此前规模化策略有折返；估值已经反映很高增长预期。
+
+### 1.3 最近三年重大业务变化
+
+| 时间 | 事件 | 投资含义 |
+|---|---|---|
+| 2023-04 | 签署 Colorado Brighton 约 `774,000 sq ft` 大型工厂租约 | 原计划走重资产美国本土大规模制造 |
+| 2023-11 | 与 Berzelius 签 Exclusive Supply Agreement，获得其硅负极材料在美国、加拿大、墨西哥购买独家权利 | SiCore 平台的材料和供应链基础，但商业条款逐 PO 约定，供应依赖仍是风险 |
+| 2024-01 | SiCore 全面商业发布 | 从 SiMaxx Gen1 转向更可规模化、可用标准锂电设备生产的 SiCore Gen2 |
+| 2024-2025 | 大规模导入 contract manufacturing，韩国 alliance 和其他全球代工伙伴 | 2025-12-31 可获得 `>2.0GWh/年` SiCore 产能；资本开支显著降低 |
+| 2025-07 起 | DIU 合同支持 NDAA-compliant advanced drone batteries；金额从 `$12.0M`、`$14.8M` 增至 2026Q1 `$18.1M` | 打开美国防务供应链认证和 Fremont `10MWh` pilot line 升级 |
+| 2025Q3 | `$35M` UAS follow-on PO，客户此前已有 `$15M` 订单 | 大订单开始从样品/资格认证转成批量采购 |
+| 2025Q4-2026Q1 | 计提 `$22.5M` Colorado 相关一次性费用，2026-01 支付 `$20M` 终止租约 | 彻底从重资产 Colorado 路线转向 capital-light |
+| 2026Q1 | Nanotech Energy 成为美国生产伙伴；`$21M` 中国 LEV PO；2026 收入指引上调到 `$130M+` | 同时押注美国合规供应和国际商业订单 |
+
+### 1.4 产业链位置
+
+AMPX 位于“高性能电芯 / 硅负极材料系统 / specialty cell supplier”环节：
+
+```text
+硅材料/负极材料与工艺 -> 电芯设计 -> 代工生产/小批量自制 -> pack/system integrator -> 无人机/HAPS/eVTOL/LEV OEM -> 终端任务
+```
+
+它不是：
+
+- 数据中心 UPS 成套商；
+- BESS 系统集成商；
+- 电力设备商；
+- AI GPU、服务器、rack power 或 optical 供应商；
+- 大宗 EV cell 低成本制造商。
+
+### 1.5 最新股价与估值快照
+
+口径：股价和市值为 2026-06-11 UTC 20:00:23 附近快照；财务数据以 2026Q1 10-Q、2025 10-K 和 2026Q1 earnings release 为准。
+
+| 指标 | 数值 | 日期/口径 | 判断 |
+|---|---:|---|---|
+| 股价 | `$17.115` | 2026-06-11 | 当日区间 `$16.25-$17.13` |
+| 市值 | `$2.344B` | 2026-06-11 | 对当前收入规模很高 |
+| GAAP PE | `-55.2x` | 2026-06-11，EPS `-$0.31` | 亏损公司，PE 不适合作为主估值 |
+| Forward PE | N/M | 2026 指引净亏损 `<$8M`、EPS `>- $0.06` | 仍为 GAAP 亏损，Adjusted EBITDA 指引转正 |
+| TTM revenue | `$90.3M` | 2025Q2-Q4 + 2026Q1 | FY2025 `$73.0M`，Q1 之后 TTM 抬升 |
+| TTM P/S | `26.0x` | 市值 / TTM revenue | 高增长高估值 |
+| Forward P/S | `18.0x` | 市值 / 2026 收入指引 `$130M+` | 仍不便宜，需持续超预期 |
+| FY2025 收入增速 | `+202%` | 2025 vs 2024 | `$73.0M` vs `$24.2M` |
+| 2026Q1 收入增速 | `+153%` | 2026Q1 vs 2025Q1 | `$28.5M` vs `$11.3M` |
+| 2026 指引增速 | `>= +78%` | `$130M+` vs FY2025 `$73.0M` | 公司上调自 `$125M+` |
+| 2026Q1 毛利率 | `20%` | GAAP；ex-Colorado 约 `22%` | 产品规模和 mix 改善 |
+| TTM 毛利率 | 约 `18.2%` | FY2025 gross profit `$8.3M` - 2025Q1 gross loss `-$2.36M` + 2026Q1 gross profit `$5.74M` | 仍处爬坡期 |
+| 2026Q1 净利率 | `-18%` | 净亏损 `$5.0M` / revenue `$28.5M` | 比 2025Q1 `-83%` 大幅改善 |
+| TTM GAAP 净利率 | 约 `-43.9%` | TTM net loss 约 `-$39.7M` / `$90.3M` | 受 2025Q4 impairment 影响 |
+
+### 1.6 资产负债表与财务健康
+
+截至 2026-03-31：
+
+| 项目 | 数值 | 解释 |
+|---|---:|---|
+| Cash and cash equivalents | `$62.4M` | 不含 restricted cash |
+| Cash + restricted cash equivalents | `$62.6M` | 2025-12-31 为 `$91.9M`，Q1 下降主要含 Colorado lease termination cash out |
+| Total current assets | `$114.0M` | 包括 AR `$35.3M`、inventory `$8.2M` |
+| Total current liabilities | `$16.0M` | current ratio 约 `7.1x` |
+| Total liabilities | `$21.4M` | 2025-12-31 为 `$53.1M`，Colorado lease 退出后显著下降 |
+| Debt | `0` | 公司披露无债务 |
+| Stockholders' equity | `$109.4M` | 累计亏损 `-$223.4M` |
+| Operating cash flow | `-$37.3M` | 2026Q1；其中 operating lease liabilities 现金流 `-$20.6M`，AR 增加消耗 `$11.5M` |
+| Capex | `$1.0M` | 2026Q1；全年 capex 指引 `<$10M` |
+
+财务健康判断：**短期流动性健康、长期取决于订单转现金和毛利继续爬坡。** 无债、现金 `$62.6M`、current ratio `7x+` 是正面；但 AR 已达 `$35.3M`，约等于 2026Q1 收入的 `124%`，同时 2026Q1 bill-and-hold revenue `$5.8M`、未交付 bill-and-hold 金额 `$17.1M`，说明收入确认、交付、回款和客户验收要持续跟踪。若公司兑现 2026 net loss `<$8M`、Adjusted EBITDA `>= $4M`，现金压力明显降低；若大客户延迟付款/取消订单，仍可能需要进一步股权融资。
+
+## 2. 最新与最近四次财报：五季度经营表
+
+公司只有一个 reportable segment：battery segment。业务收入按产品线/应用拆分披露不完整，因此下表把“业务收入占比”分为披露值与推算值；推算只用于研究，不当作公司正式披露。
+
+| 财报季度 | 收入 / 增速 | 毛利率 / 净利率 | Adjusted EBITDA | 订单、交期、RPO、客户 | 业务结构与重点 | AI 数据中心收入占比 |
+|---|---:|---:|---:|---|---|---:|
+| 2026Q1 | `$28.5M`；QoQ `+13%`；YoY `+153%` | GM `20%`，ex-Colorado `22%`；净亏损 `$5.0M`，净利率 `-18%` | `-$1.8M` | RPO `$46.1M`，预计 1 年内确认；bill-and-hold revenue `$5.8M`，未交付 `$17.1M`；三大客户 `49%` 收入；长期美国防务客户获约 `$500M` 军方订单；DIU 合同增至 `$18.1M`；`$21M` 中国 LEV PO；Nanotech Energy 美国代工伙伴 | Revenue increase 主要来自 SiCore battery sales；地域：North America `$6.1M`、EMEA `$16.5M`、APAC `$6.0M`，Ukraine `$10.0M` | `0%`，无公开 DC/UPS/BBU 订单 |
+| 2025Q4 | `$25.2M`；QoQ `+18%`；YoY `+137%` | GM `24%`；GAAP 净亏损 `$24.4M`，受 `$22.5M` impairment/retirement；调整后净亏损 `$1.9M` | `+$1.8M`，首次正季度 | RPO `$44.5M`，预计 1 年内确认；客户数扩到 `>550`；DIU `$14.8M`；首个美国代工伙伴；NDAA cell design 11 个 components 全部选定；Nokia Drone Networks selected | 全年收入 `$73.0M`，同比 `+202%`；2026 初始指引 `$125M+`、net loss `<$8M`、Adjusted EBITDA `>= $4M` | `0%` |
+| 2025Q3 | `$21.4M`；QoQ `+42%`；YoY `+173%` | GM `15%`；净亏损 `$3.9M`，净利率 `-18%` | `-$1.4M` | 近端待履约订单 `$53.3M`，含 `$35M` leading UAS manufacturer PO，较 Q2 `+83%`；此前同客户有 `$15M` order；现金 `$73.2M`、无债；单一客户 >10% 收入 | shipped to `159` end customers，`80` new；客户总数 `444`；航空约 `75%` 收入，余下主要 LEV；outside U.S. 约 `75%`；Nordic Wing、ESAero、AeroVironment samples；AUSA、Commercial UAV Expo 等论坛反馈强 | `0%` |
+| 2025Q2 | `$15.1M`；QoQ `+34%`；YoY `+350%` | GM `9%`，首次转正；净亏损 `$6.4M`，净利率 `-42%` | `-$3.8M` | RPO `$29.1M`，同比 `+57%`，环比下滑因 2025Q1 有 `$15M` drone OEM PO；现金 `$54.2M`、无债；ATM 剩余额度 `$46.7M` | shipped to `93` customers，`43` new；product revenue `$14.5M`；航空 `>90%` 收入，LEV 为其余；outside U.S. `86%`；AALTO Zephyr `67` 天飞行；Amazon Climate Tech Accelerator 入选 | `0%` |
+| 2025Q1 | `$11.3M`；YoY `+383%` | GM `-21%`；净亏损 `$9.4M`，净利率 `-83%` | `-$5.2M` | Q2 letter 指出 Q1 包含 `$15M` drone OEM purchase order；三大客户集中度高；现金 `$48.4M`、无债 | SiCore commercial ramp 早期；收入开始超过 2024 季度 run-rate | `0%` |
+
+读表重点：
+
+- **收入曲线连续上行**：`$11.3M -> $15.1M -> $21.4M -> $25.2M -> $28.5M`。
+- **毛利率拐点已出现**：2025Q1 `-21%`，Q2 `9%`，Q3 `15%`，Q4 `24%`，2026Q1 `20%`。Q1 回落主要有 Colorado 残余成本，剔除后约 `22%`。
+- **订单口径要保守**：RPO/near-term orders 在 `$29M-$53M` 区间，不等于多年 backlog；公司未披露取消率、标准 lead time 或 book-to-bill。
+- **AI 数据中心暴露为零**：任何“硅负极电池 = AI 数据中心电池”的叙事都缺少订单、认证和 BOM 证据。
+
+## 3. 2026 最新指引、收入结构与重点产品
+
+### 3.1 2026 指引
+
+公司在 2026Q1 把全年收入指引从 `$125M+` 上调到 `$130M+`，并重申：
+
+| 指标 | 2026 指引 | 对比 |
+|---|---:|---|
+| Total revenue | `>= $130M` | 2025 `$73.0M`，至少 `+78%` |
+| Net loss | `< $8M` | 2025 GAAP net loss `$44.0M`；剔除 Q4 一次性 charge 后约 `$21.5M` |
+| Net loss per share | `< $0.06` | 2026Q1 `-$0.04` |
+| Adjusted EBITDA | `>= $4M` | 2025 `-$5.3M`，2025Q4 `+$1.8M` |
+| Capex | `< $10M` | contract manufacturing 模式继续降低资本需求 |
+| Weighted average shares | `136.9M` | 股本仍在增加；2026-05-01 已有 `141.6M` shares outstanding |
+
+### 3.2 2026Q1 业务收入占比
+
+2026Q1 公司没有披露应用端 revenue mix，按披露可得维度：
+
+| 维度 | 2026Q1 数值 | 占收入 |
+|---|---:|---:|
+| North America | `$6.1M` | `21%` |
+| EMEA | `$16.5M` | `58%` |
+| APAC | `$6.0M` | `21%` |
+| Ukraine shipments included in EMEA | `$10.0M` | `35%` |
+| Top 3 customers | 约 `$14.0M` | `49%` |
+| Battery product sales 增量 | YoY `+$17.4M` | 主增长来源 |
+| Government grant / other income | `$0.8M` other income | 不计入 revenue |
+
+基于 Q2/Q3 披露和 Q1 地域推断，2026Q1 主收入仍应来自 UAS/defense/electric aviation。LEV 因 `$21M` PO 进入更高关注度，但短期是否已在 Q1 revenue 中完全体现不明。
+
+### 3.3 产品和型号
+
+| 产品/平台 | 型号/形态 | 关键参数 | 当前收入贡献 | 毛利率判断 | 销售增速判断 |
+|---|---|---|---:|---|---|
+| SiCore Energy | pouch / cylindrical / prismatic | up to `450Wh/kg`、`950Wh/L`、up to `1C`、full DOD cycle life up to `150` | HAPS、高航时 UAS，估计为核心收入之一 | 高于普通电芯，因性能溢价；但代工成本和客户价格压力存在 | 高，随 AALTO/HAPS/长航时无人机扩张 |
+| SiCore Power | 多形态 | up to `360Wh/kg`、`800Wh/L`、up to `10C` continuous，0-80% fast charge `<6min` | eVTOL、电动航空、部分高功率 UAV | 高，但仍需客户验证；eVTOL 量产前收入小 | 中长期高，短期偏 qualification |
+| SiCore Balanced Energy/Power | pouch/cylindrical；SA08 best-selling cell；18650/21700 | up to `340Wh/kg`、`770Wh/L`、up to `3C`；full DOD cycle up to `700`，约 90% DOD up to `1,000`；18650 `4Ah`，21700 `6.5Ah`；SA08 `38Wh` | UAS 主力，2025Q3 `$35M` order、2026 defense 客户订单 visibility | 当前主利润池；Q3/Q4/Q1 公司毛利改善主要来自 SiCore scale 和 mix | 很高，订单和客户数同时增长 |
+| SiMaxx Gen1 / ultra-high-energy | nanowire 100% silicon；commercial high energy | commercially available up to `450Wh/kg`、`1,150Wh/L`；third-party validation `500Wh/kg`、`1,300Wh/L`；部分 samples `520Wh/kg` | 多数客户已转 SiCore；SiMaxx 更像高端/验证/技术品牌 | 可能高 ASP，但制造更难、规模小 | 低到中，更多是技术护城河 |
+| EV-capable A-sample | USABC line | `360Wh/kg` beginning-of-life、`1,200W/kg`、15min charge to `90%` rated energy | 当前小 | EV 竞争价格低，近中期毛利不确定 | 低，非短期重点 |
+| NDAA-compliant SiCore pilot / defense battery supply | Fremont `10MWh` pilot、Nanotech U.S. production partner、DIU contract | DIU `$18.1M`；11 components selected for current design；NDAA compliance push | 直接 revenue 小，但订单 unlock 价值大 | 若合规稀缺，毛利和客户锁定可高 | 高，但取决于 component qualification 和 U.S. supply |
+
+### 3.4 跳过或弱化的产品/业务
+
+以下业务不是本报告的一年期重点：
+
+- **AI 数据中心 UPS/BBU/BESS**：无公开产品、订单、认证或收入。
+- **大宗 EV 主电池**：公司自己说明 EV 行业价格低、规模要求高、竞争激烈，AMPX 需进一步提升 cycle life、form factor、生产数量和降本。
+- **普通 marine / consumer electronics**：可作为客户 funnel，但没有披露重大订单，不构成 2026 投资主线。
+- **Amazon Devices Climate Tech Accelerator**：有技术接触和 integration assessment，但未披露商业订单或收入。
+- **Colorado 自建大厂**：已终止，不再作为 base case 产能路线。
+
+## 4. 高增长/关键产品当前贡献与 AI 基建相关性
+
+评分：`5` 最高，`1` 最低。AI 基建重要性按数据中心基础设施和 AI 训练/推理技术栈衡量；“defense edge AI/autonomy”另列说明。
+
+| 产品/业务 | 当前收入贡献估计 | 收入增速 | AI 数据中心重要性 | Defense/edge AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| SiCore UAS/HAPS/Balanced cells | 2026Q1 估计 `$20-24M`，约 `70-85%`；TTM 估计 `$60M+` | 2025Q2 aviation `>90%`、Q3 aviation `75%`；公司总收入 Q1 `+153%` | `1/5` | `5/5` | `5/5` | `4/5` | `4/5` | AMPX 当前最重要利润池。客户 buying intent 强，但直接 backlog 还不是多年锁定 |
+| LEV SiCore cylindrical cells | 当前估计 `$3-7M/quarter`；`$21M` PO 是强信号 | 高但 lumpier | `1/5` | `1/5` | `3/5` | `3/5` | `2/5` | 增长快但价格/替代压力大，毛利应低于航空 |
+| NDAA-compliant U.S. supply / DIU / Fremont 10MWh | 直接 revenue 小；2026Q1 other income `$0.8M`；DIU total `$18.1M` | 高，低基数 | `1/5` | `5/5` | `5/5` | `4/5` | `4/5` | 战略 unlock，不是 standalone 大收入项；对美国防务订单转化非常关键 |
+| SiMaxx / ultra-high-energy / eVTOL evaluation | 当前估计 `<$5M/quarter` | 中长期可高，短期低 | `1/5` | `3/5` | `2/5` | `2/5` | `4/5` | 技术旗舰；短期收入不如 SiCore UAS |
+| Hypothetical data center high-power battery | `$0` | 无 | `0/5` | `0/5` | `0/5` | `0/5` | `0/5` | 不应纳入当前估值主线 |
+
+## 5. 一年后收入贡献三情景
+
+时间口径：未来一年指 2026Q2-2027Q1 或接近 12 个月 revenue run-rate；所有产品拆分均为研究推算，因公司不披露正式应用端 revenue。
+
+| 产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 | 触发条件 |
+|---|---|---|---|---|
+| SiCore UAS/HAPS/Balanced cells | 未来一年收入 `$95-115M`；增长 `50-80%`；AI DC 重要性 `1/5`；defense edge AI `5/5`；供需 `4/5`；溢价 `4/5` | `$130-170M`；增长 `100-150%`；供需 `5/5`；溢价 `4/5` | `$200-260M`；增长 `200%+`；供需 `5/5`；溢价 `5/5` | `$500M` defense end-customer awards 转成 AMPX 多个 PO；Ukraine/Europe demand 持续；U.S. drone policy 加速 |
+| LEV SiCore cylindrical cells | `$25-35M`；增长 `50%+`；AI DC `1/5`；供需 `3/5`；溢价 `2/5` | `$50-75M`；增长 `2x+`；供需 `4/5`；溢价 `3/5` | `$100M+`；增长 `3x+`；供需 `4/5`；溢价 `3/5` | `$21M` 中国 PO 复制到更多 LEV 平台；18650/21700 量产良率和成本稳定 |
+| NDAA-compliant U.S. supply / DIU | `$5-10M` direct revenue/grant/services；更大价值体现在 UAS 订单 unlock | `$15-30M`，含更多 prototype/qualification/defense procurement | `$40-60M`，若 U.S.-made/NDAA cell 成为多项目硬门槛 | 11 components qualification、Nanotech 产线、Fremont 10MWh pilot、DoD procurement |
+| SiMaxx / eVTOL / EV-capable | `$3-8M`，主要样品和技术评估 | `$10-25M`，若 eVTOL/USABC/高空平台进入更多 A/B sample | `$40-80M`，若一个 tier-one eVTOL 或高空平台进入低量产 | 航空认证进度、cycle life、fast charge、安全测试、客户融资 |
+| Data center UPS/BBU/BESS | `$0` | `$0-5M`，仅在披露首个 pilot 后考虑 | `$10-30M`，需公开认证和客户名，当前不是 base case | OCP/UL9540A/UPS partner/hyperscaler design-in；目前无证据 |
+
+公司整体未来一年增长预测：
+
+| 情景 | 未来一年收入 | 对 2025Q2-2026Q1 TTM `$90.3M` 增速 | 对 2026 指引 `$130M+` 的含义 |
+|---|---:|---:|---|
+| 基准 | `$135-155M` | `+50-72%` | 略高于指引，主要兑现已披露 RPO/PO 和正常新单 |
+| 乐观 | `$175-220M` | `+94-144%` | 需要 Q2/Q3 连续新增 `$50M+` 级订单或多个 `$20M+` PO |
+| 极度乐观 | `$280-360M` | `+210-299%` | 需要美国防务客户订单快速转化，且 contract manufacturing 不掉链、AR 回款顺畅 |
+
+## 6. BOM、单位含量、价格传导、产能与认证
+
+### 6.1 数据中心 BOM 真实含量
+
+结论：**AMPX 当前每 MW / 每 rack / 每 GPU / 每 optical port 的真实公开含量均为 `$0`。**
+
+| 数据中心单位 | AMPX 当前公开产品含量 | 原因 |
+|---|---:|---|
+| 每 MW AI 数据中心 | `$0/MW` | 无公开 UPS/BESS/BBU/energy shelf 产品订单 |
+| 每 AI rack | `$0/rack` | 无 OCP ORv3 BBU、800VDC sidecar、rack BBU design-in |
+| 每 GPU | `$0/GPU` | AMPX 不在 GPU、server、power shelf 或 rack BOM 中 |
+| 每 optical port | `$0/port` | 与 optical transceiver / CPO / switch 供应链无关 |
+
+本地 `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md` 给出的数据中心电池主线是 Li-ion/LFP UPS 电池柜、NiZn 高倍率、ORv3 BBU、BESS、MV UPS、飞轮/超级电容和 EMS/VPP；AMPX 当前没有公开进入这些链条。数据中心更重视 UL/NFPA/OCP、系统可靠性、服务网络、低失效率和总包责任；AMPX 的优势是高 Wh/kg 和高功率密度，更适合飞行器。
+
+### 6.2 AMPX 真实产品 BOM 与价格传导
+
+| 产品 | 典型 BOM/成本拆分（研究估算） | 价格传导链 | 当前真实内容量 |
+|---|---|---|---|
+| SiCore UAS/HAPS cells | Cathode/materials `30-40%`；Si anode material/foil/binder `15-25%`；separator/electrolyte `10-15%`；cell assembly/formation/test `15-25%`；quality/qualification/logistics `5-15%` | silicon material + cell conversion cost -> AMPX cell ASP -> pack integrator/OEM -> drone/HAPS system BOM；公司披露 drone BOM 中 battery 约 `10%` | SA08 best-selling cell `38Wh`；`1.8GWh/38Wh` 约 `50M cells/year`；`2.0GWh` 约 `52.6M SA08-equivalent cells/year` |
+| SiCore LEV cylindrical | Commodity cylindrical inputs `50-65%`；SiCore differentiation `10-20%`；formation/test `10-15%`；logistics `5-10%` | cell ASP 更受客户压价；LEV OEM 以 range/weight/charge 为卖点 | `$21M` PO；18650 `4Ah`、21700 `6.5Ah` |
+| NDAA/U.S. compliant supply | U.S./approved components premium `10-30%`；pilot-line labor/test higher；qualification cost high | defense customer 为 country-of-origin、secure supply、performance 支付溢价；DIU 合同补贴 capex/qualification | Fremont pilot target `10MWh`；DIU total `$18.1M`；current design 11 components selected |
+| SiMaxx/eVTOL/ultra-high energy | proprietary nanowire process and low-volume manufacturing dominate；test/certification high | high ASP specialty cell -> eVTOL/HAPS pack -> aircraft mission economics；低量高价 | 99.5%-99.9% silicon nanowire；commercial/validated high-energy specs |
+
+### 6.3 产能能力（美元计）
+
+公司披露的核心产能口径是 `>2.0GWh/年` contract manufacturing access，而不是自有满产能力。按 specialty battery ASP 做粗略美元计：
+
+| 产能口径 | 能量产能 | ASP 假设 | 理论年收入能力 | 可信度 |
+|---|---:|---:|---:|---|
+| 全球 contract manufacturing access | `>2.0GWh/year` | `$300/kWh` | `>$600M/year` | 中，适合较低价 LEV/mobility |
+| 全球 contract manufacturing access | `>2.0GWh/year` | `$500/kWh` | `>$1.0B/year` | 中，适合 high-performance UAS blended |
+| 全球 contract manufacturing access | `>2.0GWh/year` | `$800/kWh` | `>$1.6B/year` | 低到中，需高端航空 mix 和强溢价 |
+| Fremont pilot line | `10MWh/year` | `$300-$800/kWh` | `$3-8M/year` | 高，用途是 prototype/qualification，不是规模收入 |
+
+注意：理论产能远高于 2026 指引 `$130M+`，所以 AMPX 当前瓶颈不是名义 GWh，而是客户 qualification、已签 PO、材料/代工商业条款、良率、质量控制、回款和 defense/NDAA 合规。
+
+### 6.4 认证与供应链采纳
+
+| 事项 | 当前阶段 | 投资含义 |
+|---|---|---|
+| UN 38.3 / international safety testing | Q3 letter 称新产品经内部和外部实验室按 international safety standards 测试，包括 UN 38.3；印度客户还涉及 Bureau of Indian Standards | 有利于跨国无人机/LEV 客户 shipping 和 qualification |
+| Military nail penetration | 10-K 披露 SiMaxx 390Wh/kg polymer electrolyte cell 通过 MIL-PRF-32383 section 4.7.4.4 nail penetration test | 对 defense applications 安全认证有价值 |
+| NDAA compliant supply chain | 2025Q4 已选定 current cell designs 的 11 个 components；DIU contract `$18.1M` | 仍需 qualification 和生产验证；一旦完成可打开美国防务大单 |
+| eVTOL certification | technical evaluations since 2021，但无公开 FAA/EASA 量产型号认证 | 中长期可选性，不能计入 2026 收入主线 |
+| Data center certification | 无 UL9540A、OCP ORv3 BBU、UPS partner 或 hyperscaler certification 披露 | AI 数据中心收入按 `0` |
+
+## 7. 一年后产能、采纳和认证三情景
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| SiCore UAS/HAPS/Balanced | `>2.0GWh` access 仍足够；美元可服务 `$600M-$1.0B` 理论收入，但实际收入 `$95-115M`；被 `600+` 客户测试/部分采购；更多 defense/UAS qualification | 新增 1-2 个 contract manufacturers；实际可交付收入能力 `$200M+`；UAS top customers 多点复购 | 美国/欧洲 defense primes 批量指定 AMPX；实际可交付收入能力 `$300M+`；客户锁定更强 |
+| LEV cylindrical | 当前中国 `$21M` PO 按期交付；供应链采纳为 1 个 premier customer | PO 复制到多款 scooters/3-wheelers/motorcycles；`$50M+` 年化需求 | LEV 平台化放量，成为非航空第二曲线，收入 `$100M+` |
+| NDAA/U.S. compliant supply | Fremont `10MWh` pilot 完成关键 milestone；Nanotech U.S. partner 小批量 | NDAA compliant cells 获多个 DoD/prime customer qualification；DIU 之外新增合同 | U.S.-made/U.S.-compliant 成为 defense drone 必选，AMPX 获多项目 sole/dual source |
+| SiMaxx/eVTOL | 继续样品和 A/B sample；无大规模产能需求 | 一个 eVTOL/HAPS 客户进入更高阶段 qualification | 出现明确 aircraft/platform design-in，但收入兑现仍偏 2027-2028 |
+| Data center | 无 | 出现实验室级 pilot 或 partner announcement，但不计入主收入 | 若公布 UL/OCP/hyperscaler pilot，才开始建立 `$10M+` 可选性 |
+
+## 8. 基于订单积压和供给的未来一年业务增速预测
+
+### 8.1 已知订单与需求线索
+
+| 线索 | 金额/规模 | 质量判断 |
+|---|---:|---|
+| 2026Q1 RPO | `$46.1M` | 高质量，预计 1 年内确认；不含客户未 committed 的合同 |
+| 2025Q4 RPO | `$44.5M` | 高质量，预计 1 年内确认 |
+| 2025Q3 near-term orders | `$53.3M` | 含 `$35M` UAS PO；公司称 near term fulfillment |
+| 2025Q2 RPO | `$29.1M` | 同比 `+57%`；较 Q1 降，因 Q1 有 `$15M` drone OEM PO |
+| 2026Q1 `$21M` LEV PO | `$21M` | 高质量，但交付窗口未完全披露，客户集中于中国 mobility |
+| DIU contract | `$18.1M` | 政府合同，更多是 capacity/qualification unlock |
+| Longstanding U.S. defense customers awarded orders | `~$500M` | 非 AMPX 直接 backlog；只能作为 pull-through signal |
+| Bill-and-hold undelivered amount | `$17.1M` | 说明部分已确认 revenue 尚未物理交付；需跟踪真实 shipment/pick-up |
+
+### 8.2 未来一年增长模型
+
+| 变量 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| 2026 revenue | `$130-145M` | `$160-200M` | `$240-320M` |
+| 未来 12 个月 run-rate | `$135-155M` | `$175-220M` | `$280-360M` |
+| 2026Q1 后剩余 FY2026 revenue | `$101.5M+` official guide gap | `$130-170M` | `$210M+` |
+| RPO coverage of remaining FY2026 guide | `$46.1M / $101.5M = 45%` | 若 `$21M` PO 未在 RPO 中，visible demand 可到约 `66%` | 需要多项新 PO，不可靠现有 backlog |
+| Gross margin | `20-24%` | `24-30%` | `30%+` |
+| Net income | GAAP 仍小亏或接近 breakeven | GAAP breakeven 可能 | GAAP 正利润可能 |
+| 主要瓶颈 | 客户 qualification、AR 回款、代工质量 | 合规供应、现有客户 repeat orders | 供应链、材料条款、交付质量、客户集中风险 |
+
+结论：**基准增速应锚定公司 `$130M+` 指引，而不是按 `>2GWh` 理论产能外推。** 只要 2026Q2/Q3 没有新增 `$35M+` 级订单，极度乐观情景不应上调。
+
+## 9. 竞争格局、替代风险与客户切换成本
+
+### 9.1 主要竞争对手
+
+| 竞争类别 | 公司 | 对 AMPX 的压力 |
+|---|---|---|
+| Graphite anode tier-one battery makers | ATL、CATL、E-One Moli / Molicel、LG Energy Solution、Murata、Panasonic、Samsung SDI | 成本、产能、品质体系、客户服务网络更强；可持续提升高功率/高能量电芯 |
+| Silicon composite anode/material companies | Berzelius、BTR、Enevate、Enovix、Group14、Nexeon、Shanshan、Sila Nanotechnologies、StoreDot | 可能用更低成本或更易量产的 silicon composite route 挤压 AMPX 性能溢价 |
+| Solid-state / lithium metal / next-gen battery | QuantumScape、Solid Power、SES AI、Factorial 等 | 中长期替代风险；短期商业量产和航空 qualification 仍不确定 |
+| Specialty UAV battery suppliers / pack makers | Tattu/Grepow、Amicell、Molicel pack ecosystem、各军工 pack integrator | 在低端/中端无人机上成本更低；高端 mission endurance 场景 AMPX 更强 |
+| 数据中心电池/UPS | EnerSys、ZincFive、Saft、Samsung SDI、LGES、CATL、BYD、Tesla、Fluence、Vertiv、Schneider、Eaton | 如果 AMPX 试图进入数据中心，会面对强认证和系统集成壁垒 |
+
+### 9.2 AMPX 技术是否是未来主流？
+
+分应用看：
+
+- **高端 UAS/HAPS/电动航空：硅负极高比能很可能成为主流方向之一。** 这类应用对重量极敏感，愿意为 Wh/kg、payload、mission duration 付费；AMPX 的商业 validation、客户名单和订单增长说明它不是纯概念。
+- **LEV：硅负极可成为高端/差异化路线，但不一定主流。** LEV 市场更看价格、寿命、供应稳定性；AMPX 有 `$21M` PO，但长期会被普通圆柱电芯持续压价。
+- **大宗 EV：短期不是主流。** 公司自己承认 EV 需继续改善 cycle life、form factor、production quantity 和 cost。
+- **AI 数据中心：AMPX 当前不是主流，也没有证据会成为主流。** AI 数据中心短时储能主线更可能是 Li-ion/LFP UPS battery cabinet、NiZn、flywheel、supercap、ORv3 BBU、BESS + EMS，而不是高比能航空电芯。
+
+### 9.3 替代方案和风险
+
+| 风险 | 影响 | 观察指标 |
+|---|---|---|
+| 大客户集中 | 2026Q1 top 3 customers `49%` revenue；2025 one customer `$27.1M` | Top customer share、AR aging、repeat PO |
+| 订单从客户获军方订单到 AMPX PO 的转化不确定 | `$500M` 是客户订单，不是 AMPX backlog | AMPX 是否披露 direct PO、RPO 增长、shipment |
+| Contract manufacturing 质量和交付风险 | AMPX 不完全控制制造；Berzelius/CM 价格或供货可能变化 | Gross margin、scrap/return、delivery delay、customer qualification |
+| Foreign supply / NDAA tension | SiCore 材料/代工涉及中国和韩国，U.S. defense 要求本土/合规 | Nanotech ramp、11 components qualification、DIU milestone |
+| Bill-and-hold 和 AR 风险 | 2026Q1 AR `$35.3M`，undelivered bill-and-hold `$17.1M` | Cash conversion、DSO、真实出货 |
+| 技术被追赶 | graphite 和 silicon composite competitors 都会进步 | Wh/kg、cycle life、cost/kWh、customer fly-off result |
+| 估值风险 | Forward P/S 约 `18x`，要求持续高增长 | 每季度 revenue beat、gross margin、new PO |
+
+### 9.4 客户切换成本
+
+| 应用 | 切换成本 | 原因 |
+|---|---|---|
+| HAPS / 长航时无人机 | 高 | 电芯影响 airframe weight、solar/battery energy budget、thermal model、mission duration；qualification 和 flight record 难复制 |
+| Defense UAS | 中高 | Pack integration、采购认证、NDAA、field performance、mission reliability 形成门槛 |
+| eVTOL | 高但尚未收入化 | 一旦进入 aircraft certification，替换电池代价很高；当前仍在 technical evaluation |
+| LEV | 低到中 | form factor 标准化、价格敏感，客户可换供应商；AMPX 需靠性能和交付守住 |
+| Data center | 当前无切换成本 | 无公开 design-in |
+
+## 10. AI 数据中心交叉验证：为什么不能强行纳入
+
+项目内行业资料显示，AI 数据中心 2026-2027 确实会强拉电力、UPS、BESS、BBU、飞轮、超级电容、800VDC 和微电网：
+
+- `行业调研_数据中心UPS与电池储能_2026-06-11.md`：美国 AI 数据中心电力/UPS/BESS/配电 2026 订单池约 `$31-55B`，2027 `$43-78B`；UPS/dynamic UPS/BESS 子环节 2026 `$10-18B`，2027 `$15-28B`。
+- `行业调研_动态UPS、飞轮与超级电容_2026-06-11.md`：AI 负载把 UPS 从后备电源推向毫秒级动态功率、机架级能量缓冲和并网合规。
+- `行业调研_数据中心自备发电与微电网_2026-06-11.md`：AI campus 的 BESS/UPS/飞轮/超级电容是 onsite power 和 microgrid 的关键组件。
+
+但这些结论不能直接外推到 AMPX，因为：
+
+1. **数据中心不缺高 Wh/kg，而是缺认证、系统可靠性、低火灾风险、长寿命、服务网络和总包责任。**
+2. **AMPX 没有公开数据中心产品 certification。** 没有 UL9540A、NFPA 855、OCP ORv3 BBU、800VDC sidecar、UPS partner 或 hyperscaler case。
+3. **主流数据中心电池路线与 AMPX 的优势不同。** LFP 解决成本和长时；NiZn/超级电容/飞轮解决高倍率短时和安全；BESS/PCS/EMS 解决并网和电力市场。AMPX 解决的是飞行器重量和航时。
+4. **如果未来进入数据中心，先看公开 pilot，而不是先给收入。** 必须看到 data center-specific pack/module、thermal/fire certification、UPS/OCP partner、field validation、客户名和订单金额。
+
+## 11. 跟踪清单
+
+未来 4 个季度最关键的验证指标：
+
+| 优先级 | 指标 | 好信号 | 坏信号 |
+|---:|---|---|---|
+| 1 | RPO / direct PO | RPO 连续 `>$60M`，新增 `$30M+` direct PO | RPO 下滑到 `<$30M`，只讲客户终端订单 |
+| 2 | Cash conversion | AR 回落、operating cash burn 明显收窄 | AR/收入继续上升、bill-and-hold 未交付增长 |
+| 3 | Gross margin | 稳定 `22-28%`，LEV 放量不稀释太多 | 回落到 `<15%`，代工成本/价格压力显现 |
+| 4 | Defense/NDAA | Nanotech/U.S. partner 量产、DIU milestones、DoD prime direct awards | 合规进度拖延，防务客户不买 non-U.S. cells |
+| 5 | Customer concentration | Top 3 share 降到 `<40%` 且总收入增长 | 单一大客户决定季度收入 |
+| 6 | LEV PO 复购 | `$21M` 客户复购，新增 LEV 平台 | 一次性订单后无 follow-on，毛利下降 |
+| 7 | eVTOL/HAPS design-in | 明确 platform/customer certification milestone | 长期只停留 samples |
+| 8 | AI 数据中心 | 首个 UPS/BBU/BESS partner、UL/OCP certification | 无披露则继续按 `0` |
+
+## 12. 来源与口径
+
+### 公司与监管来源
+
+- Amprius Q1 2026 earnings release, 2026-05-06: https://ir.amprius.com/news-events/press-releases/detail/165/amprius-technologies-reports-first-quarter-2026-financial-results-and-recent-business-highlights
+- Amprius Q1 2026 10-Q, filed 2026-05-07: https://ir.amprius.com/sec-filings/all-sec-filings/content/0001899287-26-000045/ampx-20260331.htm
+- Amprius FY2025/Q4 2025 earnings release, 2026-03-04: https://ir.amprius.com/news-events/press-releases/detail/160/amprius-technologies-reports-fourth-quarter-and-fiscal-year-2025-financial-results-and-recent-business-highlights
+- Amprius FY2025 10-K, filed 2026-03-06: https://ir.amprius.com/sec-filings/all-sec-filings/content/0001899287-26-000015/ampx-20251231.htm
+- Amprius Q3 2025 shareholder letter / 8-K exhibit, 2025-11-06: https://www.sec.gov/Archives/edgar/data/1899287/000162828025050172/exhibit991q32025letterto.htm
+- Amprius Q2 2025 shareholder letter / 8-K exhibit, 2025-08-07: https://ir.amprius.com/sec-filings/all-sec-filings/content/0001628280-25-038899/exhibit991q22025letterto.htm
+- Amprius June 2026 events schedule, 2026-06-01: https://ir.amprius.com/news-events/press-releases/detail/169/amprius-sets-june-2026-events-schedule
+- 股价、市值、PE 快照：web finance, AMPX, 2026-06-11 20:00:23 UTC。
+
+### 项目内行业资料
+
+只使用 `基本面/行业调研/` 内资料：
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_动态UPS、飞轮与超级电容_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+
+### 关键保守口径
+
+- AMPX 未披露 backlog 取消率、标准交期、book-to-bill 或按产品/应用完整收入拆分，因此订单和收入按 RPO、公开 PO、客户数量、地域和历史 sector mix 推断。
+- `$500M` 美国防务客户订单是客户获得的终端订单，不是 AMPX 直接合同金额。
+- 所有 AI 数据中心收入、每 MW / rack / GPU / optical port 含量按当前公开证据计为 `0`。

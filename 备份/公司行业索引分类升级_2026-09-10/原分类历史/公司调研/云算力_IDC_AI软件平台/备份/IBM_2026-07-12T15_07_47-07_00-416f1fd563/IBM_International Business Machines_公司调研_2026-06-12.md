@@ -1,0 +1,281 @@
+# IBM（International Business Machines，IBM）公司调研_2026-06-12
+
+## 0. 调研边界与核心结论
+
+**资料口径**：本报告只使用联网搜索、IBM 官方财报/产品资料、公开市场数据，以及项目内 `行业调研/` 下与 AI 产业、AI 云算力、AI 集群调度和企业 AI 软件相关的行业资料；未读取 `特征量化/`，未读取或继承 `公司调研/` 下既有 IBM 或其他公司报告，未修改 `公司调研/公司索引.md`。
+
+**时间口径**：财务数据以 IBM 已发布的 2026Q1（2026-04-22 发布，季度截至 2026-03-31）为最新财报；行情数据使用当前可取得的最新完整交易日 2026-06-11 收盘价。
+
+**一句话结论**：IBM 不是 AI 数据中心的 GPU、HBM、交换机、光模块或液冷 BOM 供应商；它的 AI 相关价值主要在企业 AI 的“控制层/数据层/运行平台/改造交付层”：Red Hat OpenShift 与 Red Hat AI、watsonx.data / watsonx Orchestrate、Confluent / DataStax / HashiCorp、IBM Consulting GenAI，以及 z17 主机上的低延迟交易推理。若 AI 基建继续从“买 GPU”进入“把企业核心流程接入 AI、管住成本和合规”的阶段，IBM 的收入弹性来自高毛利软件 ARR 与咨询 backlog 转化，而不是每 MW 的硬件出货。
+
+**投资人眼中的 IBM**：市场已不再把 IBM 只当作衰退型老科技股，而更接近“高现金流、软件化转型、主机周期叠加企业 AI 可选项”的成熟型软件/IT 服务公司。正面是 2025 年自由现金流 147 亿美元、软件毛利率 80%+、OpenShift/Red Hat/Automation/Data 组合在企业混合云中有真实地位；负面是收入增速仍只有中个位数，咨询业务受客户决策周期影响，资产负债表因 Red Hat、HashiCorp、Confluent 等并购而杠杆和商誉较重。
+
+## 1. 公司业务、产业链位置与最新估值
+
+### 1.1 业务结构与定位
+
+IBM 现在的业务可以理解为四层：
+
+| 层级 | IBM 对应业务 | 投资含义 | 与 AI 基建关系 |
+|---|---:|---|---|
+| 企业混合云底座 | Red Hat、OpenShift、RHEL、OpenShift AI、OpenShift Virtualization、Red Hat AI Inference | 软件 ARR、企业级支持、VMware 替代、Kubernetes 标准化 | 是 AI 集群调度/推理运行时的企业分发层，不是 GPU 供应商 |
+| 企业数据与自动化 | watsonx.data、watsonx.ai、watsonx.governance、Confluent、DataStax、StreamSets、webMethods、HashiCorp、Ansible、Instana、Turbonomic、Apptio/Kubecost | 高毛利软件、并购整合、AI-ready data 与 FinOps | 解决企业 AI 的实时数据、治理、成本和自动化问题 |
+| 企业 AI 咨询交付 | IBM Consulting、Consulting Advantage、行业解决方案、GenAI 项目 | backlog 转 revenue；毛利率低于软件但可拉动软件 | 帮客户把 AI 从 POC 放进核心流程，订单能见度高于单点软件 |
+| 主机与关键基础设施 | IBM Z/z17、LinuxONE、z/OS、Transaction Processing、Storage、Power | 周期性硬件 + 高粘性软件/维护 | z17 把 AI 推理嵌入银行、支付、航空等交易系统；不是通用 GPU AI 工厂 |
+
+IBM 在产业链中的位置不是“AI 数据中心硬件供应链”，而是“企业 AI 生产化的软件、数据、治理和改造服务层”。项目内 AI 产业资料把 AI 基建价值链分为模型/算力/数据中心/硬件/半导体/运行时与调度等层；IBM 的有效位置主要落在运行时调度、企业数据、治理、FinOps、混合云平台和咨询交付，不能与 GPU、HBM、光模块、机电工程收入重复计算。
+
+### 1.2 最近 3 年重大转型、收购和业务变化
+
+| 时间 | 事件 | 对 IBM 的意义 |
+|---|---|---|
+| 2021-2023 | Kyndryl 分拆后 IBM 聚焦软件、咨询、基础设施；持续强调 Hybrid Cloud + AI | 削弱低增长外包服务属性，收入结构向软件和咨询倾斜 |
+| 2024-07 | 完成收购 Software AG 的 StreamSets 与 webMethods，补强数据摄取、API、iPaaS | 为 watsonx.data 和企业数据集成提供管道能力 |
+| 2025-02 | 完成 HashiCorp 收购，EV 64 亿美元；Terraform、Vault 并入 IBM Automation | 补强基础设施生命周期管理、Secrets、安全自动化，适合混合云和 AI 集群治理 |
+| 2025-02/05 | 宣布并完成 DataStax 收购；AstraDB、DataStax Enterprise、Langflow 增强 watsonx | 补齐 NoSQL、向量数据库、低代码 AI 应用编排 |
+| 2025 | z17 周期启动；Telum II、Spyre、z/OS 3.2 等带 AI 推理能力 | 主机从“交易系统”升级为“交易系统内的低延迟 AI 推理平台” |
+| 2025-12/2026-03 | 宣布并完成 Confluent 收购，EV 约 110 亿美元；6500+ 企业客户、40% Fortune 500 | 使实时数据流/Kafka/Flink/Iceberg 成为 IBM 企业 AI 数据平台核心 |
+| 2026-05 | 发布 Red Hat AI Inference on IBM Cloud、OpenShift Virtualization Service on IBM Cloud | 将 Red Hat AI / OpenShift 虚拟化以托管服务方式变现，顺应推理与 VMware 替代需求 |
+| 2026-05/06 | Think 2026、ServiceNow 合作：watsonx Orchestrate、watsonx.data MCP、GPU 加速 Presto C++、DataPower Interact Gateway、ServiceNow Workflow Data Fabric 集成 | IBM 把叙事从“卖模型”转向“企业 AI 控制平面、数据治理、传统系统现代化” |
+
+### 1.3 最新股价、估值与盈利质量
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | 274.85 美元 | 2026-06-11 收盘 | Yahoo/StockAnalysis 历史行情；2026-06-12 当前可取得最新完整交易日 |
+| 市值 | 约 2583 亿美元 | 2026-06-11；按 9.399 亿股估算 | Barchart 页面在 272.36 美元附近显示市值 2559.9 亿美元，口径接近 |
+| TTM 收入 | 689.11 亿美元 | 2025 全年 + 2026Q1 - 2025Q1 | 675.35 + 159.17 - 145.41 |
+| 最近季度收入增速 | +9% reported / +6% cc | 2026Q1 | IBM 官方 2026Q1 |
+| FY2025 收入增速 | +7.6% reported | 2025 全年 | 受 z17、软件和并购拉动 |
+| PE（TTM） | 约 24.3x | 以 TTM GAAP EPS 约 11.33 美元估算 | 第三方数据站因 EPS 口径不同显示约 23-24x |
+| Forward PE | 约 22.4x | Barchart 2026-06 页面 | 依赖市场预期 EPS |
+| PS（TTM） | 约 3.75x | 市值 / TTM 收入 | 软件化后高于传统 IT 服务公司 |
+| TTM 毛利率 | 约 58.4% | 2025 全年 + 2026Q1 - 2025Q1 | 软件高毛利拉动 |
+| TTM 净利率 | 约 15.6% | 同上 | 2025 税项收益使净利率偏高，需同时看 FCF |
+| 2025 自由现金流 | 147 亿美元 | FY2025 | IBM 称为十多年最高水平 |
+| 2026 FCF 指引 | 同比增加约 10 亿美元 | 2026 指引 | 隐含约 157 亿美元量级 |
+
+### 1.4 资产负债表健康程度
+
+截至 2026-03-31，IBM 现金、受限现金和有价证券约 118 亿美元；总债务约 664 亿美元，其中 IBM Financing 债务约 128 亿美元。扣除融资业务债务后，经营性债务约 536 亿美元；再扣除现金和证券，经营性净债务约 418 亿美元。以 2026 年自由现金流指引约 157 亿美元估算，经营性净债务/FCF 约 2.7x；若不剔除融资债务，总净债务/FCF 约 3.5x。
+
+评价：IBM 的流动性和偿债能力是健康的，但不是轻资产净现金型科技公司。强项是 100 亿美元以上年度自由现金流、软件毛利率 80%+、高续约率和主机/软件维护现金流；弱项是并购造成的债务、商誉和整合压力，以及持续分红对资本配置的约束。Barchart 显示债务/权益约 2.01x、利息覆盖约 6.34x，说明财务杠杆可控但需要持续 FCF 支撑。
+
+## 2. 最新及最近四次财报：收入、利润率、订单与 AI 相关性
+
+IBM 不披露全公司统一 backlog；可用的订单代理包括 Consulting backlog、GenAI book of business、Software ARR、OpenShift ARR、HashiCorp/Confluent booking/ARR、以及 IBM Z 的 MIPS/硬件 placement 指标。取消率也不单独披露，管理层用 backlog erosion、duration、yield 变化描述咨询质量。
+
+| 财报季度 | 发布日期 | 总收入 / 增速 | Software | Consulting | Infrastructure | 订单、backlog、交期和取消率代理 | AI/数据中心相关收入占比判断 |
+|---|---:|---:|---:|---:|---:|---|---|
+| 2026Q1 | 2026-04-22 | 159.17 亿美元；+9% reported / +6% cc | 70.52 亿美元；+11.3% / +7.9% cc；分部利润率 29.8%；毛利率 82.8% | 52.72 亿美元；+4.0% / +0.9% cc；分部利润率 10.6%；毛利率 27.5% | 33.26 亿美元；+15.3% / +11.7% cc；分部利润率 15.8%；毛利率 56.9% | Software ARR 246 亿美元、+10%；OpenShift ARR 20 亿美元、高 20% 增长；虚拟化合同自 2024 年初以来 >6 亿美元；Consulting GenAI 约占 backlog 30%、收入 >20%、签约约 40%；z17 新 MIPS 连续 4 个季度 >100% 增长 | 物理 AI DC BOM 收入近似 0；可确认企业 AI 相关收入主要为 Consulting GenAI 年化 >40 亿美元，叠加 OpenShift/Red Hat AI、watsonx、z17 AI 但未单独披露；估计企业 AI/混合云 AI 相关年化收入约 50-80 亿美元 |
+| 2025Q4 | 2026-01-28 | 196.86 亿美元；约 +12% reported / +9% cc | 90.31 亿美元；+14.0% / +10.7% cc；分部利润率 37.7%；毛利率 83.4% | 53.49 亿美元；+3.4% / +1.0% cc；分部利润率 12.3%；毛利率 28.4% | 51.32 亿美元；+20.6% / +16.6% cc；分部利润率 31.2%；毛利率 60.6% | FY2025 GenAI book >125 亿美元，其中 Software >20 亿美元、Consulting >105 亿美元；Consulting backlog 约 320 亿美元、+2%，GenAI >25%；OpenShift ARR 19 亿美元、>30% 增长；z17 IBM Z 收入 +61% | GenAI book 不是收入；Consulting GenAI ARR 36 亿美元，退出运行率收入 >15%；Software AI 收入未披露，OpenShift 不是全量 AI |
+| 2025Q3 | 2025-10-22 | 163.31 亿美元；+9.1% reported | 72.09 亿美元；+10.5% / +8.8% cc；分部利润率 32.9%；毛利率 83.1% | 53.24 亿美元；+3.3% / +1.5% cc；分部利润率 12.9%；毛利率 29.3% | 35.59 亿美元；+17.0% / +15.1% cc；分部利润率 18.1%；毛利率 57.2% | GenAI book >95 亿美元；Consulting backlog 约 310 亿美元、+4%，GenAI >22% backlog、30% signings、12% revenue；OpenShift ARR 18 亿美元、>30% 增长；Red Hat bookings 约 +20%；HashiCorp 创历史最高 bookings；z17 两季度为 IBM 史上最强主机启动 | AI 收入主要来自 GenAI Consulting 转化和 OpenShift/Red Hat 平台；IBM Z AI 是硬件周期中的附加功能，未拆收入 |
+| 2025Q2 | 2025-07-23 | 169.77 亿美元；+7.7% reported | 73.87 亿美元；+9.6% / +7.6% cc；分部利润率 31.1%；毛利率 83.9% | 53.14 亿美元；+2.6% / -0.3% cc；分部利润率 10.6%；毛利率 27.5% | 41.42 亿美元；+13.6% / +11.5% cc；分部利润率 23.3%；毛利率 61.5% | GenAI book >75 亿美元；Consulting GenAI 单季新增 >10 亿美元；Consulting backlog 约 320 亿美元，spot 口径 +8%、官方准备稿提到 +4%；OpenShift ARR 17 亿美元；z17 启动，IBM Z 收入 +67%，Telum II 可做 >4500 亿次/日 AI 推理 | GenAI 约占 Consulting revenue >10%，且管理层称 GenAI 项目利润率高于普通咨询约 3pct；Software AI book 约 15 亿美元累计 |
+| 2025Q1 | 2025-04-23 | 145.41 亿美元；+1% reported / +2% cc | 63.36 亿美元；+7.4% / +9.0% cc；分部利润率 29.1%；毛利率 83.6% | 50.68 亿美元；-2.3% / -0.5% cc；分部利润率 11.0%；毛利率 27.3% | 28.86 亿美元；-6.2% / -4.3% cc；分部利润率 8.6%；毛利率 52.8% | GenAI book >60 亿美元，单季增加 >10 亿美元；约 1/5 Software、4/5 Consulting；Software ARR 217 亿美元、+11%；OpenShift ARR 15 亿美元、约 +25%；Red Hat bookings 高 teens；Consulting backlog +6% | AI 还处于 book/backlog 转化阶段；z17 尚未正式贡献，Infrastructure 仍处于前一周期低位 |
+
+**重点读法**：
+
+1. IBM 的“订单挤压”主要不体现在硬件缺货，而体现在 Consulting backlog 与软件 ARR。Consulting backlog 约 310-320 亿美元，其中 GenAI 占比从 2025Q3 的 >22% 升至 2026Q1 的约 30%，说明 AI 项目从试点进入 backlog，但交付速度受客户组织、数据治理、监管和 IBM 咨询产能影响。
+2. Red Hat/OpenShift 是 IBM AI 基建叙事中最硬的 ARR 资产：OpenShift ARR 从 2025Q1 的 15 亿美元到 2026Q1 的 20 亿美元，高 20% 到 30%+ 增长。
+3. z17 是周期性强、客户粘性强的主机产品。它能把 AI 推理放进支付、欺诈、风控、客服等交易系统，但它不是英伟达 GPU 集群替代品，收入弹性更多来自主机周期和 3-4x 软件/维护 stack multiplier。
+4. IBM 从 2026Q1 起不再单独更新累计 GenAI book of business；因此 2025 年底 >125 亿美元是最新完整累计口径，2026Q1 只能用 backlog 占比、收入占比和 ARR 侧面判断。
+
+## 3. 2026 最新指引、收入占比与产品线筛选
+
+### 3.1 2026Q1 业务收入占比
+
+| 业务 | 2026Q1 收入 | 占总收入 | 同比增速 | 2026 管理层侧重点 |
+|---|---:|---:|---:|---|
+| Software | 70.52 亿美元 | 44.3% | +7.9% cc | 全年 10%+ 增长；Red Hat、Automation、Data、Transaction Processing |
+| Consulting | 52.72 亿美元 | 33.1% | +0.9% cc | 全年低到中个位数；GenAI、客户生产化、backlog 质量 |
+| Infrastructure | 33.26 亿美元 | 20.9% | +11.7% cc | 全年低个位数下降；z17 周期强但高基数、Storage/Distributed offset |
+| Financing | 2.20 亿美元 | 1.4% | +10.2% cc | 支持 IBM Z 和企业客户融资，不是核心增长业务 |
+| Other | 0.48 亿美元 | 0.3% | 不重要 | 可忽略 |
+
+**2026 指引**：IBM 在 2026Q1 后维持全年收入按固定汇率增长约 5% 的预期，自由现金流同比增加约 10 亿美元；Software 预计 10%+，Consulting 低到中个位数，Infrastructure 全年低个位数下降。
+
+### 3.2 需要重点研究的产品和业务
+
+| 优先级 | 产品/业务 | 具体产品/型号/模块 | 为什么重要 |
+|---|---|---|---|
+| A | Red Hat / OpenShift / Red Hat AI | OpenShift、OpenShift AI、RHEL AI、Red Hat AI Inference、OpenShift Virtualization、RHEL、Ansible | 企业 Kubernetes、AI 推理运行时、VMware 替代、混合云标准化；OpenShift ARR 20 亿美元 |
+| A | IBM Consulting GenAI | Consulting Advantage、行业 AI 方案、应用现代化、数据治理、AI agents 交付 | GenAI 已占 Consulting backlog 约 30%、收入 >20%、签约约 40%；是 AI 需求变收入的最大通道 |
+| A | Data / Real-time data / watsonx | watsonx.data、watsonx.ai、watsonx.governance、Confluent、DataStax、StreamSets、webMethods、Docling、OpenRAG、watsonx.data MCP | 企业 AI 最大瓶颈是数据；Confluent 110 亿美元收购把实时数据流放进 IBM AI 平台 |
+| A | Automation / HashiCorp / FinOps | Terraform、Vault、Consul、Nomad、Infragraph、Ansible、Instana、Turbonomic、Apptio、Kubecost、Concert、Cloud Pak for AIOps | AI 集群和混合云越来越需要 IaC、secrets、成本治理和自动化 remediation |
+| A- | IBM Z / z17 AI | z17、Telum II、Spyre Accelerator、z/OS 3.2、LinuxONE、watsonx Assistant for Z、watsonx Code Assistant for Z | 高粘性交易系统 AI 推理；Telum II/Spyre 使主机能在数据不出域情况下做实时 AI |
+| B+ | watsonx Orchestrate / agentic control plane | watsonx Orchestrate、AI Editions of Core Software、DataPower Interact Gateway、IBM Bob、ServiceNow 联合方案、Sovereign Core | 潜力大但单独收入未披露；更像拉动核心软件和咨询的套件化入口 |
+
+### 3.3 本报告跳过或弱化的产品/业务
+
+| 跳过/弱化项 | 原因 |
+|---|---|
+| IBM Financing | 金融支持业务，不是 AI 高增长产品 |
+| 传统非 AI 咨询、低端外包、普通系统集成 | 增速低、毛利率低，且与 AI 基建技术栈关联弱 |
+| 非 AI 存储、普通 Distributed Infrastructure、Power 常规刷新 | 有客户基础但没有足够披露证明其是 AI 高增长主线 |
+| 成熟交易处理中未与 z17/AI 现代化绑定的部分 | 利润率高但增长主要来自主机周期，不是新 AI 产品 |
+| Quantum | 战略价值高，但短期收入贡献和 AI 数据中心 BOM 关系有限 |
+
+### 3.4 不应漏掉的小产品/小业务
+
+| 小产品/业务 | 潜在价值 |
+|---|---|
+| Red Hat AI Inference on IBM Cloud | 2026-05-22 GA；把 vLLM/Red Hat AI 推理引擎包装成托管服务，面向生产级推理 |
+| OpenShift Virtualization Service on IBM Cloud | 2026-06 预计 GA；可吃 VMware/Broadcom 价格调整后的迁移需求 |
+| llm-d | Google、NVIDIA、IBM Research、CoreWeave 创建的 Kubernetes-native 分布式推理框架；Red Hat 将其纳入企业 AI 工作负载 |
+| HashiCorp Vault Enterprise 2.0 / Infragraph | Secrets、identity、event-driven infrastructure graph，对 AI agent 和多云治理有粘性 |
+| DataPower Interact Gateway | AI interaction gateway，面向 agent、模型、工具和企业 API 的治理/安全/可观测 |
+| OpenRAG / Docling / Langflow | RAG 和文档结构化组件，适合企业知识库/Agent 项目，能拉动 watsonx.data 和咨询 |
+| IBM zSecure Secret Manager | z/OS 证书生命周期管理；对银行、支付、保险主机环境的安全自动化有价值 |
+| ServiceNow + IBM 联合方案 | 预计 2026H2 可用，把 IBM Bob、watsonx.data、Ansible、Terraform、Vault、Instana 接入 ServiceNow 工作流 |
+
+## 4. 高增长/关键产品的当前收入贡献、技术重要性与供需判断
+
+评分 1-5：5 为最高。供需紧张度在软件场景下不是“缺货”，而是客户需求/交付资源/迁移窗口是否紧。
+
+| 产品/业务 | 当前收入贡献与增速 | AI 基建重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---|
+| IBM Consulting GenAI | 2026Q1 GenAI >20% Consulting revenue，年化 >40 亿美元；约 30% backlog、约 40% signings；2025 年底累计 Consulting GenAI book >105 亿美元 | 4 | 4 | 4 | 3 | 最接近“订单挤压”的业务。企业从 POC 进生产，数据治理、核心系统改造、行业流程让 IBM 有交付权，但咨询毛利率天花板低于软件 |
+| Red Hat OpenShift / Red Hat AI | OpenShift ARR 20 亿美元，高 20% 增长；Red Hat 2026Q1 +10% cc，全年目标回到 mid-teens；Red Hat AI Inference 2026-05 GA | 5 | 4 | 3 | 4 | 企业 AI 集群的 Kubernetes/平台层。供需不受芯片限制，但受企业标准化和平台团队迁移节奏限制 |
+| Data / Confluent / watsonx.data / DataStax | Data 2026Q1 +16% cc；Confluent FY2025 subscription revenue 11.20 亿美元、+21%，Cloud 6.24 亿美元、+27%；IBM 2026-03 完成 110 亿美元收购 | 5 | 5 | 4 | 4 | 企业 AI 的瓶颈是“实时、可信、可治理数据”。Confluent + watsonx.data + DataStax 是 IBM 近半年最重要 AI 数据层增量 |
+| HashiCorp / Automation / Ansible / FinOps | Automation 2026Q1 +7% cc；HashiCorp 并入首年新增 incremental ARR >2 亿美元；虚拟化合同自 2024 年初以来 >6 亿美元 | 4 | 4 | 3 | 4 | Terraform/Vault/Ansible 是混合云和 AI infra 操作层；价值不在 GPU 量，而在多云、secrets、合规和成本治理 |
+| IBM Z z17 / Telum II / Spyre | Infrastructure 2026Q1 33.26 亿美元、+11.7% cc；IBM Z +48% cc；z17 第一整年硬件 placement value 较 z16 增加 >10 亿美元；3-4x stack multiplier | 3 | 3 | 3 | 5 | 对金融/航空/政府核心交易极关键，替换成本极高；但不是通用 AI 训练/推理集群，适用面比 GPU 窄 |
+| watsonx Orchestrate / Agentic control plane / ServiceNow 合作 | 单独收入未披露；Think 2026 更新，ServiceNow 联合方案预计 2026H2；与 IBM Core Software、Consulting 和 Automation 强交叉 | 4 | 4 | 3 | 3 | 潜力来自企业 agent 治理和工作流编排，但竞争激烈，需要证明从平台发布转成 ARR |
+
+## 5. 一年后收入贡献与增速三情景预测
+
+以下是基于 IBM 已披露 ARR/backlog/bookings、2026 指引、并购贡献和行业 AI 软件层需求的估算。由于 IBM 未按产品披露所有收入，表内“收入贡献”是本报告对可识别产品/业务的年化收入或 ARR 贡献估计，不等于 GAAP 分部收入。
+
+| 产品/业务 | 基准情景：12 个月后 | 乐观情景：12 个月后 | 极度乐观情景：12 个月后 |
+|---|---|---|---|
+| Consulting GenAI | 年化收入 50-60 亿美元，+20-35%；GenAI backlog 保持 30% 左右；AI 重要性 4/5、紧急性 4/5、供需 4/5、溢价 3/5 | 年化收入 60-75 亿美元，+40-70%；ServiceNow/Confluent/HashiCorp 拉动更多核心系统项目；供需 5/5 | 年化收入 80-100 亿美元，+80-140%；大型银行/政府/制造把 agent、主机现代化和数据治理集中外包；但交付人力瓶颈明显 |
+| OpenShift / Red Hat AI | OpenShift ARR 25-27 亿美元，+25-35%；Red Hat 回到 mid-teens；AI 平台重要性 5/5、紧急性 4/5、供需 3/5、溢价 4/5 | OpenShift ARR 28-31 亿美元，+40-55%；OpenShift Virtualization + Red Hat AI Inference 吃到 VMware 替代和推理平台标准化 | OpenShift ARR 32-36 亿美元，+60-80%；企业 Kubernetes AI 平台变成默认采购，llm-d/Red Hat AI 打开大型私有推理集群 |
+| Confluent / watsonx.data / DataStax | Confluent 类收入贡献 13-15 亿美元年化，+15-25%；Data 子业务维持 low/mid-teens；重要性 5/5、紧急性 5/5、供需 4/5、溢价 4/5 | 16-19 亿美元，+30-50%；Confluent 进入 IBM 大客户后交叉销售加速，watsonx.data 成为实时数据湖入口 | 20-24 亿美元，+60%+；大型企业 agent 生产化要求实时数据流和治理，Confluent/IBM Z/watsonx 深度绑定 |
+| HashiCorp / Automation / Ansible / FinOps | HashiCorp incremental ARR 累计 3-4 亿美元，Automation 总体 high-single/low-double 增长；重要性 4/5、紧急性 4/5、供需 3/5、溢价 4/5 | incremental ARR 5-6 亿美元；Vault/Terraform/Ansible 与 ServiceNow、OpenShift、IBM Cloud 打包销售 | incremental ARR 8 亿美元+；VMware 替代、多云安全和 AI agent 运行环境催化强替换 |
+| z17 / IBM Z AI stack | z17/TP/维护 stack 维持数十亿美元收入贡献，IBM Z 仍增长但 Infrastructure 全年可能低个位数下降；重要性 3/5、紧急性 3/5、供需 3/5、溢价 5/5 | z17 cycle 延长，银行/支付把更多欺诈、风控、客服推理放回 Z；3-4x stack multiplier 带动 TP 和维护 | 若监管和数据主权推动“AI 留在主机交易域”，z17 AI attach 明显提升；但 TAM 仍小于通用 GPU 推理市场 |
+| watsonx Orchestrate / Agentic control plane | 作为套件拉动 Core Software 与 Consulting，单独 ARR 仍不透明；贡献可能为数亿美元级 | ServiceNow、AI Editions、DataPower Interact Gateway 形成 cross-sell，单独 ARR 开始可见 | 企业 agent 管控成为刚需，IBM 形成治理/安全/审计事实标准之一；收入弹性取决于平台定价是否独立化 |
+
+## 6. BOM、每 MW/rack/GPU/optical port 内容量、价格传导与当前产能/认证
+
+**关键口径**：IBM 在 AI 数据中心物理 BOM 中的直接内容量接近 0。它不卖 GPU、HBM、光模块、CPO、交换 ASIC、液冷 CDU、UPS 或机电工程。下面的“每 MW / 每 rack / 每 GPU / 每 optical port”不是物理零件含量，而是 IBM 软件、支持、咨询、治理工具在一个 AI 集群项目中的可附着收入。项目内 AI 行业资料显示高端 AI rack 价值可达 300-800 万美元以上，1MW IT load 通常约 10-17 个 60-100kW AI rack；IBM 若参与，主要是软件和服务 take-rate。
+
+| 产品/业务 | BOM 真内容量 | 每 MW / rack / GPU / optical port 的 IBM 内容量估算 | 价格传导链 | 当前产能能力（美元计） | 供应链/客户采纳与认证阶段 |
+|---|---|---|---|---|---|
+| Red Hat OpenShift / Red Hat AI | 物理 BOM = 0；软件/支持/运行时 | 私有 AI 集群按软件订阅和支持计，粗略可达 20-100 万美元/MW/年；约 1.5-6 万美元/rack/年；约 200-800 美元/GPU/年；optical port 直接内容量 0 | GPU/服务器采购后，客户需要 Kubernetes、MLOps、推理运行时、治理和支持；OpenShift/Red Hat AI 从平台预算而非硬件 BOM 预算取费 | OpenShift ARR 20 亿美元；软件供给不受晶圆产能限制，主要受销售、认证、企业平台团队迁移节奏限制 | Red Hat AI Inference on IBM Cloud 2026-05-22 GA；OpenShift Virtualization Service 2026-06 预计 GA；llm-d 与 Google/NVIDIA/IBM Research/CoreWeave 生态相关 |
+| Consulting GenAI | 物理 BOM = 0；人力、方法论、行业模板 | 与 MW/GPU 不线性；大型 AI 生产化项目首年咨询费可为 100-1000 万美元/项目；若映射到 1MW 企业私有 AI 项目，可为硬件/平台投入的 1-5% | AI CapEx 决策后，企业需要数据治理、流程改造、应用重构、模型上线、合规；IBM Consulting 以项目、托管服务和后续软件 pull-through 收费 | GenAI Consulting 年化收入 >40 亿美元，backlog 约 30%；供给瓶颈是高级行业顾问、数据工程、主机/云迁移工程师 | IBM Consulting Advantage、ServiceNow 联合方案、Confluent/watsonx/HashiCorp 交付能力；无硬件认证 |
+| Confluent / watsonx.data / DataStax | 物理 BOM = 0；数据流、lakehouse、vector/NoSQL、RAG 组件 | 每 MW 不适用；按数据吞吐、topic、connector、cloud consumption、enterprise license 收费。大型企业 AI 数据层可为 10-100 万美元/年，超大型可数百万美元/年 | AI agent/RAG 需要实时、可信、连续数据；价格从数据平台预算、应用现代化预算传导 | Confluent FY2025 subscription revenue 11.20 亿美元、Cloud 6.24 亿美元；Data 2026Q1 +16% cc | Confluent 6500+ 企业客户、40% Fortune 500；2026-03 完成收购，day-one integration 覆盖 watsonx.data、MQ、webMethods、IBM Z |
+| HashiCorp / Automation / FinOps | 物理 BOM = 0；IaC、secrets、policy、observability、FinOps | 典型按资源、workspace、seat、enterprise support 收费；AI 集群可对应 5-50 万美元/MW/年；per GPU 分摊约 50-400 美元/GPU/年；optical port 0 | 大型 AI 平台带来多云资源、凭证、GPU 成本和故障自动化需求；Terraform/Vault/Ansible/Instana/Turbonomic 从 platform engineering/IT ops 预算收费 | HashiCorp 首年 incremental ARR >2 亿美元；Automation 2026Q1 +7% cc；软件供给不受硬件限制 | HashiCorp 产品已进入 IBM Automation；Vault Enterprise 2.0、Infragraph public preview；OpenShift/ServiceNow/IBM Z 有集成路径 |
+| z17 / Telum II / Spyre | 主机硬件、处理器、I/O、主机软件和维护；不是 GPU rack BOM | per MW/rack/GPU 不适用；z17 是 frame/MIPS/software stack 定价。若按数据中心空间看，单机高价值但公开 ASP 不披露；optical port 内容量不是主要定价单位 | 交易系统容量扩容 -> z17 frame/MIPS -> z/OS/TP/middleware/maintenance/financing；IBM 称硬件可带来 3-4x stack multiplier | z17 第一整年硬件 placement value 比 z16 增加 >10 亿美元；IBM Z 2026Q1 +48% cc | z17 已进入客户部署；Telum II/Spyre 支持主机内 AI；watsonx Assistant for Z、AI Toolkit for IBM Z/LinuxONE、ML for z/OS 使用 Spyre |
+| watsonx Orchestrate / DataPower Interact Gateway | 物理 BOM = 0；agent 控制平面、API/数据治理、软件套件 | per MW 不适用；按企业 seat、agent、workflow、API gateway、core software edition 收费；早期可能以打包折扣进入 | 企业从单个 AI 应用扩展到多 agent 工作流，需要统一治理、审计、成本和 API 安全 | 单独收入未披露；短期靠 Core Software/Consulting pull-through | Think 2026 发布/更新；ServiceNow 联合方案预计 2026H2；部分产品处 private preview/public preview/GA 混合状态 |
+
+## 7. 一年后产能能力、采纳程度与认证阶段预测
+
+| 产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| Red Hat OpenShift / Red Hat AI | 软件收入能力提升到 OpenShift ARR 25-27 亿美元；Red Hat AI Inference 托管服务完成早期企业验证；OpenShift Virtualization GA 后形成稳定 pipeline | OpenShift ARR 28-31 亿美元；Red Hat AI 与 llm-d 被更多私有推理集群采纳；VMware 替代成为新增订单主线 | OpenShift ARR 32-36 亿美元；Red Hat AI 成为企业私有推理运行时的主流分发之一，认证覆盖更多 GPU、CPU、云和 OEM |
+| Consulting GenAI | 交付能力年化 50-60 亿美元；backlog 继续高质量转化，erosion 稳定 | 年化 60-75 亿美元；ServiceNow/Confluent/HashiCorp 联合项目扩大 IBM 可交付范围 | 年化 80-100 亿美元；瓶颈转为高级顾问供给，可能需要并购/外包伙伴扩产 |
+| Confluent / watsonx.data / DataStax | Confluent 并购整合完成第一阶段；Data 子业务持续 double-digit；watsonx.data MCP、OpenRAG、DataStax 进入更多 AI agent 项目 | IBM 大客户渠道带来 Confluent 大单；实时数据与 IBM Z、ServiceNow、watsonx 深度绑定 | Confluent 成为企业 AI agent 实时数据事实标准之一；但需防 AWS/MSFT/GCP 托管 Kafka/Flink 替代 |
+| HashiCorp / Automation | Terraform/Vault/Ansible 与 OpenShift/ServiceNow 打包；incremental ARR 3-4 亿美元 | Infragraph、Vault 2.0、OpenShift Virtualization、AI ops 推动 incremental ARR 5-6 亿美元 | 多云 AI 和 secrets 管理爆发；incremental ARR 8 亿美元+，但 OpenTofu/Pulumi/云厂商原生 IaC 形成价格压力 |
+| z17 / IBM Z AI | z17 继续穿透核心金融/政府客户；Spyre 从技术能力进入更多实际用例 | z17 AI fraud/risk/assistant 成为主机升级销售理由，3-4x stack multiplier 保持 | 数据主权和延迟要求使更多 AI 推理留在主机交易域，但仍是垂直场景而非通用 GPU 市场 |
+| watsonx Orchestrate / ServiceNow / DataPower Interact Gateway | 2026H2 联合方案可用，形成 early adopter；收入多体现为咨询和核心软件 pull-through | agent governance 需求强，独立 SKU/seat 定价提升 ARR 可见度 | AI agent 失控和合规事件增加，企业愿意为控制平面付费；IBM 可凭审计/主机/数据治理差异化 |
+
+## 8. 基于真实 backlog、供给和订单代理的一年业务增速预测
+
+| 产品/业务 | 当前订单/供给证据 | 基准增速 | 乐观增速 | 极度乐观增速 | 取消率/交付风险 |
+|---|---|---:|---:|---:|---|
+| Consulting GenAI | 2026Q1 约 30% Consulting backlog、>20% revenue、约 40% signings；2025 年底 Consulting GenAI book >105 亿美元；Consulting backlog 总量约 310-320 亿美元 | +20-35% | +40-70% | +80%+ | IBM 未披露取消率；管理层称 backlog erosion 稳定/低、duration 缩短、realization/yield 改善。风险是客户预算推迟和 AI ROI 不及预期 |
+| OpenShift / Red Hat AI | OpenShift ARR 20 亿美元，高 20% 增长；虚拟化合同 >6 亿美元；Red Hat Q1 +10% cc，全年目标 mid-teens | +25-35% OpenShift ARR | +40-55% | +60-80% | 软件续约粘性高，取消风险低于咨询；风险是云厂商托管 Kubernetes、NVIDIA AI Enterprise、开源堆栈替代 |
+| Confluent / Data / watsonx.data | Confluent FY2025 subscription +21%、Cloud +27%；6500+ 企业、40% Fortune 500；IBM Q1 Data +16% cc | +15-25% | +30-50% | +60%+ | 并购整合、客户续约和交叉销售节奏是关键；云厂商原生 streaming 是替代风险 |
+| HashiCorp / Automation | HashiCorp 首年 incremental ARR >2 亿美元；Q1 record bookings；Automation +7% cc；虚拟化合同 >6 亿美元 | +10-20% | +25-40% | +50%+ | Terraform 开源分叉 OpenTofu、云厂商原生 IaC、HashiCorp 定价/许可变化影响开发者心智 |
+| z17 / IBM Z AI | IBM Z 2025Q2 +67%、Q3 +59%、Q4 +61%、2026Q1 +48%；z17 第一整年硬件 placement > z16 超 10 亿美元；新 MIPS 连续 >100% | IBM Z stack +5-15%；Infrastructure 全年可能低个位数下降 | +15-25% | +30%+ | 主机周期会自然回落；客户替换成本高，取消率低，但新增 TAM 有限 |
+| watsonx Orchestrate / agent control | Think 2026、ServiceNow 联合方案、AI control gap 研究显示治理需求；但收入未披露 | 数亿美元级 pull-through | 10 亿美元级组合 pull-through | 成为企业 agent 控制平面大单入口 | 竞争对手多，产品需证明可脱离咨询单独变现 |
+
+## 9. 竞争格局、技术主流性、替代方案与客户替换成本
+
+### 9.1 Red Hat / OpenShift / Red Hat AI
+
+| 竞争对手 | IBM 优势 | 风险/替代 |
+|---|---|---|
+| VMware Tanzu / Broadcom、SUSE Rancher、Canonical、Mirantis | OpenShift 企业支持成熟，RHEL/Ansible/Red Hat AI 组合完整；VMware 价格变化给 OpenShift Virtualization 创造窗口 | Broadcom 在大企业仍有深安装基础；Rancher/Canonical 更便宜；云原生团队可能直接用上游 Kubernetes |
+| AWS EKS、Azure AKS、Google GKE、Oracle OKE | IBM 更适合多云/混合云/监管场景，客户可避免单云锁定 | 大量新 AI 工作负载直接建在 hyperscaler 托管 Kubernetes 上，绕过 OpenShift |
+| NVIDIA AI Enterprise、Run:ai、CoreWeave/NeoCloud 平台 | IBM 的优势是企业 IT、合规、混合云和开放生态，不是 GPU 调度硬件绑定 | NVIDIA 从底层 GPU 到上层 AI Enterprise 的控制力越来越强，可能压缩 IBM 平台层价值 |
+
+客户替换成本：中高。OpenShift 一旦承载 CI/CD、security policy、container registry、operator、monitoring、enterprise support，迁移成本高；但新建 AI workload 仍可能被云厂商原生服务抢走。
+
+### 9.2 Confluent / watsonx.data / DataStax
+
+| 竞争对手 | IBM 优势 | 风险/替代 |
+|---|---|---|
+| AWS MSK/Kinesis、Azure Event Hubs、Google Pub/Sub/Dataflow | Confluent 是 Kafka/Flink 商业化龙头，企业多云能力强；IBM 能把它和 watsonx.data、IBM Z、MQ、webMethods 连接 | 单云客户会优先用云厂商原生，价格和运维便利性强 |
+| Snowflake、Databricks、Microsoft Fabric、Palantir AIP | IBM 强在实时数据、主机/企业系统、治理和咨询；Confluent 补“data in motion” | Snowflake/Databricks 在 AI data platform 的开发者心智强，Palantir 在行业流程 AI 交付强 |
+| MongoDB、Elastic、Redis、Oracle、Cassandra 生态 | DataStax/Apache Cassandra/Langflow 增强非结构化和向量能力 | 开源数据库和向量库商品化，单独溢价难维持 |
+
+客户替换成本：中高。Kafka topic、connector、schema registry、stream processing、数据治理一旦进入核心流程，替换成本高；但云托管 Kafka 是持续价格锚。
+
+### 9.3 HashiCorp / Automation / FinOps
+
+| 竞争对手 | IBM 优势 | 风险/替代 |
+|---|---|---|
+| OpenTofu、Pulumi、Crossplane、AWS CloudFormation、Azure ARM/Bicep、Google Deployment Manager | Terraform/Vault 社区和企业渗透强；IBM 可与 Ansible、OpenShift、ServiceNow、IBM Z 组合 | Terraform 许可争议带来 OpenTofu；云原生 IaC 在单云中更便宜 |
+| CyberArk、Akeyless、Doppler、云 KMS/Secrets Manager | Vault 是多云/混合云 secrets 管理强品牌 | Secrets 管理可能被云原生安全套件吸收 |
+| Datadog、Dynatrace、New Relic、ServiceNow、CloudHealth | IBM Instana/Turbonomic/Apptio/Kubecost 组合覆盖 observability + FinOps + automation | 独立可观测性厂商产品力强，IBM 需证明整合体验优于拼装 |
+
+客户替换成本：中高。Terraform/Vault 代码、policy、secrets 和 CI/CD pipeline 深度绑定；但新项目可被开源/云原生替代。
+
+### 9.4 IBM Consulting GenAI
+
+主要竞争对手是 Accenture、Deloitte、Capgemini、EY、PwC、Infosys、TCS、Cognizant、EPAM，以及云厂商专业服务和 Palantir AIP。IBM 的差异化不是人力规模最大，而是能把 Red Hat、watsonx、Confluent、HashiCorp、IBM Z、ServiceNow 联合方案放进咨询交付。风险是咨询项目天然低毛利、交付周期长，客户若 AI ROI 不清楚会推迟签约或压价。
+
+客户替换成本：中。单个咨询项目可替换，但一旦进入主机现代化、数据治理和行业核心流程，切换成本提高。IBM 的关键是把咨询项目转成软件订阅和长期 managed services，而不是一次性工时收入。
+
+### 9.5 IBM Z / z17
+
+z17 的竞争不是另一台主机，而是“把主机工作负载迁到分布式 x86/云/数据库/微服务”。IBM Z 在银行、保险、航空、政府、支付等领域替换成本极高：COBOL/PL/I 应用、交易一致性、审计、数据安全、z/OS 运维和人员技能形成护城河。z17 的 AI 推理路线在高价值交易场景有主流性，因为欺诈/风控/授权需要低延迟、数据不出域和高可靠；但它不是 LLM 训练和通用 GPU 推理的主流路线。
+
+## 10. 需要跟踪的下一批催化剂
+
+| 时间/事件 | 应跟踪指标 |
+|---|---|
+| 2026Q2 财报（IBM 页面显示计划 2026-07-22） | Confluent 并表贡献、Software 是否保持 10%+、Consulting GenAI revenue/backlog 占比、OpenShift ARR 是否继续高 20% 增长 |
+| Red Hat AI Inference / OpenShift Virtualization GA 后 1-2 个季度 | 客户数、签约、是否披露 ARR、是否成为 VMware 替代的明确产品线 |
+| Confluent 整合 | 是否披露 Confluent 与 watsonx.data、IBM Z、ServiceNow 的联合客户/订单；是否保持 20%+ subscription 增速 |
+| HashiCorp 整合 | incremental ARR 是否从 >2 亿美元继续增加；Vault/Terraform 是否进入更多 AI ops/security 项目 |
+| z17 周期 | IBM Z 增速是否在 2026 下半年明显回落；Transaction Processing 是否跟随 z17 增长 |
+| ServiceNow 联合方案 2026H2 可用性 | 是否出现大客户、订单金额、产品化价格，而不是只停留在合作新闻 |
+
+## 11. 来源与证据索引
+
+### IBM 官方财报与 IR
+
+- IBM 1Q 2026 Earnings Announcement：`https://www.ibm.com/investor/events/earnings-1q26`
+- IBM 4Q 2025 Earnings Announcement：`https://www.ibm.com/investor/events/earnings-4q25`
+- IBM 3Q 2025 Earnings Announcement：`https://www.ibm.com/investor/events/earnings-3q25`
+- IBM 2Q 2025 Earnings Announcement：`https://www.ibm.com/investor/events/earnings-2q25`
+- IBM 1Q 2025 Earnings Announcement：`https://www.ibm.com/investor/events/earnings-1q25`
+
+### IBM 官方产品、收购和会议资料
+
+- IBM completes acquisition of Confluent, 2026-03-17：`https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent%2C-making-real-time-data-the-engine-of-enterprise-ai-and-agents`
+- IBM completes acquisition of HashiCorp, 2025-02-27：`https://newsroom.ibm.com/2025-02-27-ibm-completes-acquisition-of-hashicorp%2C-creates-comprehensive%2C-end-to-end-hybrid-cloud-platform`
+- IBM to acquire DataStax, 2025-02-25：`https://newsroom.ibm.com/2025-02-25-ibm-to-acquire-datastax%2C-deepening-watsonx-capabilities-and-addressing-generative-ai-data-needs-for-the-enterprise`
+- IBM completes acquisition of StreamSets and webMethods, 2024-07-01：`https://newsroom.ibm.com/2024-07-01-IBM-Completes-Acquisition-of-StreamSets-and-webMethods%2C-Bolstering-its-Automation%2C-Data-and-AI-Portfolios`
+- IBM Spyre Accelerator and Telum II Processor：`https://www.ibm.com/new/announcements/ibm-spyre-accelerator-and-telum-ii-processor-capturing-ai-value-at-a-trusted-enterprise-level`
+- IBM Red Hat AI Inference and OpenShift Virtualization Service on IBM Cloud, 2026-05-12：`https://newsroom.ibm.com/2026-05-12-ibm-announces-red-hat-ai-inference-and-red-hat-openShift-virtualization-service-on-ibm-cloud`
+- IBM Think 2026 announcements：`https://www.ibm.com/new/announcements/ibm-announcements-at-think-2026`
+- Red Hat llm-d technical page：`https://www.redhat.com/en/topics/ai/what-is-llm-d`
+- IBM and ServiceNow expanded collaboration, 2026-06-11：`https://newsroom.ibm.com/2026-06-11-ibm-and-servicenow-expand-collaboration-to-unlock-enterprise-data-for-ai-at-scale`
+- IBM IBV AI control gap study, 2026-06-08：`https://newsroom.ibm.com/2026-06-08-new-ibm-study-finds-cios-and-ctos-face-growing-ai-control-gap-as-enterprise-deployment-scales`
+
+### 市场与估值数据
+
+- Yahoo Finance IBM historical quote：`https://finance.yahoo.com/quote/IBM/history/`
+- StockAnalysis IBM historical data：`https://stockanalysis.com/stocks/ibm/history/`
+- Barchart IBM profile and ratios：`https://www.barchart.com/stocks/quotes/IBM/profile`
+- TradingView IBM market data：`https://www.tradingview.com/symbols/NYSE-IBM/`
+- Confluent FY2025 financial release via BusinessWire：`https://www.businesswire.com/news/home/20260210008002/en/Confluent-Announces-Fourth-Quarter-and-Fiscal-Year-2025-Financial-Results`
+
+### 项目内行业资料
+
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+

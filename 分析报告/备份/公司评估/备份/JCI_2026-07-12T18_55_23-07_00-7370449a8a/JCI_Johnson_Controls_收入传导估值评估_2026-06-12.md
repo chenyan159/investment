@@ -1,0 +1,166 @@
+# 公司收入传导与价值传导评估：Johnson Controls（JCI）
+
+> 报告日期：2026-06-12  
+> 主口径：NTM，即 2026Q3-2027Q2 或未来 12 个月经营窗口。  
+> 资料边界：公司事实以 `公司调研/机电_冷却_工程_水处理_边缘工业AI/JCI_Johnson_Controls_公司调研_2026-06-11.md`、Johnson Controls FY2026 Q2 公告、FY2026 Q2 10-Q、公司 2025-2026 年产品/并购公告为主；行业需求以 `行业调研/AI园区电力_机电_冷却/` 和 `行业调研/产业背景/` 下数据中心 HVAC、直液冷、DCIM、MEP、AI 数据中心建设规模资料为主。未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较内容。  
+> 重要限制：本报告只评估收入、利润和经营价值传导；不输出投资评级、目标价、估值倍数判断或股价区间。所有 AI/DC 相关产品收入拆分均为模型估算，不是 JCI 单独披露口径。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 公司 continuing operations；补充口径为 FY2026 指引、FY2027 早期订单转化和超过 NTM 的 Alloy/Accelsius/两相液冷远期期权。
+- 当前收入基准、指引和 run-rate：FY2026 Q2 continuing sales 为 **$6.142B**，同比 +8%、有机 +6%；Q2 年化 run-rate 约 **$24.6B**。FY2026 公司指引为 organic sales 约 +6%、adjusted EPS 约 $4.85、adjusted free cash flow conversion 约 100%。FY2026 Q2 backlog **$20.0B**，同比有机 +26%；orders **$7.4B**，同比有机 +30%；RPO **$26.3B**，约 67% 预计两年内确认收入。
+- 重要产品/业务线：商业楼宇核心系统与服务、高密度数据中心 central plant/YORK chillers、Silent-Aire CDU 与模块化热管理、OpenBlue/Metasys/controls 与服务、数据中心 Fire/Security attach、Alloy/Accelsius 芯片侧液冷期权。
+- NTM 公司收入四情景：悲观 **$24.7-25.3B**；基准 **$26.0-26.8B**；乐观 **$26.8-27.8B**；极度乐观 **$27.8-29.0B**。基准是 FY2026 指引正常兑现并叠加 backlog 转收入；乐观和极度乐观要求数据中心 backlog 转收入快于当前预期。
+- 利润或 EBITDA 四情景：公司未给 NTM EBITDA 主指引；本报告以调整后净利润/调整后 EPS 方向替代。悲观调整后净利润约 **$2.7-2.9B**；基准 **$3.0-3.2B**；乐观 **$3.25-3.55B**；极度乐观 **$3.6-4.0B**。极度乐观利润成立条件高于收入成立条件，因为高密项目若扩产、调试、质保和营运资本压力上升，收入上修不一定全部留下来。
+- 最大传导瓶颈：从订单/backlog 到收入确认的现场交付节奏，包括电力接入、客户 site readiness、液冷/冷水侧联调、FAT/SAT、MEP 工程资源和客户验收。
+- 最大利润率变量：Americas 数据中心 Products & Systems 的 price-cost、项目 mix、服务 attach、Silent-Aire/YORK 产能利用率、Alloy/Accelsius 早期导入是否带来高毛利还是先带来整合成本。
+- 最大现金流变量：大项目应收、存货、客户预付款/deferred revenue、工程变更单、commissioning 周期，以及 FY2026 约 100% adjusted FCF conversion 能否在数据中心大项目放量下维持。
+- 可信度：公司层面基准 **中高**；数据中心 central plant 与 backlog 转收入 **中高**；Silent-Aire CDU **中**；OpenBlue/controls 数据中心专属增量 **中**；Alloy/Accelsius NTM 收入 **低**，更适合作为远期期权或极度乐观上限。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 商业楼宇核心系统与服务，剔除数据中心增量后的 residual | 约 $20-21B 年化模型残差；Q2 Services $1.943B，占 31.6%；Products & Systems $4.199B | 约 80-85% | 当前利润和现金流底座；医疗、教育、工业、普通商业楼宇决定 downside | A | 进入基准。按低个位数增长和服务粘性处理，不因 AI 热度上修 | 无，属于成熟主业 |
+| 高密度数据中心 central plant / YORK chillers / heat rejection | FY2026 年化模型估算 $2.0-2.8B；公司未单列披露 | 约 8-11% | AI/DC 收入传导主线；与 Q2 Americas orders/backlog 和 APAC Applied HVAC 增长直接相关 | B | 进入基准。由 backlog、orders、Applied HVAC、YORK YVAM/YDAM/YK-HT 产品线支持 | 高温水、低水耗、1GW reference design 可提高 2027+ 份额 |
+| Silent-Aire CDU / 模块化热管理 / modular data center systems | 当前年化模型估算 $0.5-0.9B；公司未单列披露 | 约 2-4% | 液冷 facility interface，决定 JCI 是否从普通 HVAC 变成 data hall 热管理平台 | C | 小比例进入基准；更多放在乐观，因为收入确认需要客户项目、交付和认证节奏 | Armada modular data center framework、CDU 500kW-10MW 平台、更多 capacity reservation |
+| OpenBlue / Metasys / data center controls / services | 数据中心相关年化估算 $0.4-0.7B；整体服务收入 Q2 $1.943B | 约 2-3% 为 AI/DC 显性估算；整体服务占 31.6% | 利润质量和客户粘性的核心；可把一次性设备变成服务/软件/运维合同 | A/B 对整体服务，C 对 AI/DC 专属拆分 | 进入基准，但数据中心专属增量保守折扣 | Fleet-level AI thermal ops、digital twin、energy optimization |
+| 数据中心 Fire & Security attach | 年化估算 $0.2-0.5B；公司未单列披露 | 约 1-2% | 高确定性配套，但 AI 纯度和溢价弱于热管理 | A/B 对产品族，C 对 AI/DC 拆分 | 进入基准的保守附加项；不作为主要增长引擎 | 若与 thermal/controls 打包率提升，可进入乐观 |
+| Alloy cold plate / Accelsius two-phase D2C | Alloy 完成收购但未披露收入；Accelsius 为战略投资，非并表为主 | <1% | 改变收入结构的芯片侧液冷期权 | Alloy C/D，Accelsius D | 不进入基准主表，只允许极小整合收入或跟踪项 | 若 GPU/OEM/hyperscaler design-in 成立，可进入乐观上限或 2027+ 远期期权 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不判断 JCI 份额、收入确认或利润率。需求基数使用行业订单池、客户 capex、rack density、项目 backlog、正常替换周期和公司指引隐含需求；所有判断均相对当前预期，而不是相对其他题材热度。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 商业楼宇核心系统与服务 | FY2026 Q2 总收入 +8%、有机 +6%；Services +10% Americas；成熟楼宇 retrofit、维护和能源效率需求 | 普通商业地产、EMEA 冲突、服务一次性项目减少使需求低于 FY2026 +6% 指引，NTM 低个位数或持平 | 符合 FY2026 指引，低个位数至中个位数增长；服务维持韧性 | 教育、医疗、工业和 retrofit 同步改善，服务合同续约率上行 | 全区域商业楼宇更新与能源效率项目同时加速，但这不是当前主预期 | 约 $20B+ 年化需求池，变化主要为 $0-1.5B 级 | 基准符合当前预期；乐观需非数据中心主业也改善 | JCI Q2 分部增长；反证是普通商业楼宇预算放缓、EMEA 服务下滑持续 |
+| 高密度数据中心 central plant / YORK chillers | 行业 HVAC/冷却订单池 2026 美国务实 $16-31B；JCI Q2 Americas backlog $14.9B、orders +40%；YORK 高密 chiller 发布 | AI 项目不取消但延后，chiller 订单仍高但 NTM 转收入慢；需求低于 backlog 隐含路径 | GB200/GB300、colo 和 hyperscaler 项目继续按当前订单节奏推进；chiller/heat rejection 成为高密 facility 标配 | GB300/Rubin、低水耗、垂直数据中心、warm-water 方案使高密 chiller 需求上修 | 多个 500MW/GW 级 AI factory 把 cooling plant capacity reservation 前置，需求非线性上修 | 行业 2026-2027 冷却/HVAC 订单池从几十亿美元到数百亿美元级；JCI 可见 demand 来自 $20B backlog | 基准符合当前强订单；乐观高于当前预期但需转收入证据 | 行业 HVAC 报告、JCI orders/backlog；反证是 power interconnect、许可和水权延误 |
+| Silent-Aire CDU / 模块化热管理 | 直液冷系统 2026 全球订单/收入池宽口径约 $7.5-11.5B；CDU 为高密 rack 交付前提；JCI Silent-Aire CDU 500kW-10MW | 液冷 rack 验收慢、客户选用 Vertiv/Schneider/CoolIT 或 OEM 方案，CDU 需求低于 JCI 当前叙事 | 单相 D2C + in-row/rack/row CDU 正常放量，JCI 作为 facility-side 供应商参与部分项目 | Hyperscaler/colo 标准化采购 CDU skid 和 modular cooling，JCI 订单加速 | CDU 与 modular AI data center block 绑定，Armada 等模块化项目持续复制 | NTM JCI 可服务需求从数亿美元到十亿美元级；行业需求池更大但不可直接等同 JCI 收入 | 基准为需求强但 JCI 捕获仍需证明；极度乐观要求客户标准化 | 行业直液冷/MEP 报告、Silent-Aire CDU 公告、Armada framework；反证是认证失败、泄漏或客户多供压价 |
+| OpenBlue / Metasys / controls / services | 狭义 DCIM 2026 市场约 $4.0-4.3B；宽口径 DCIM+BMS+EPMS+服务 NTM $8.5-13.5B；JCI 服务收入大 | Hyperscaler 自研 fleet/workload 控制，JCI 只保留设备控制和常规服务 | BMS/controls、thermal telemetry、commissioning 和服务随 JCI 设备 attach 正常增长 | 数据中心 RFP 将 BMS/thermal controls/service 前置，JCI 能在多站点复制 | OpenBlue 从设备控制上升为跨站点 thermal ops 层，服务/软件 attach 非线性上升 | 数据中心相关 JCI NTM 需求约 $0.5-1B 基准，乐观可超过 $1B | 基准符合当前服务 attach；极度乐观高于当前可验证证据 | DCIM 行业报告、JCI Services +10% Americas；反证是 hyperscaler 自研、IT/OT 安全认证慢 |
+| 数据中心 Fire & Security attach | MEP 行业把消防、安防、漏液检测列为数据中心必需配套；JCI/Tyco/Simplex/Ansul 品牌成熟 | 项目延期或客户选择本地集成商，attach 只跟随低速项目确认 | 随 JCI thermal/controls 项目保守 attach，增速低于 central plant | 打包销售提高，fire/security 与 controls/service 同时进入大项目 | JCI 成为若干数据中心项目的 integrated building package 供应商，fire/security 同步放量 | NTM 需求池数亿美元级；相对 JCI 总收入仍小 | 基准不把配套需求视作高弹性；乐观需打包率证据 | MEP 行业报告；反证是硬件竞争充分、价格受压 |
+| Alloy / Accelsius 芯片侧液冷 | 行业 cold plate、two-phase D2C、microchannel 需求随 100-250kW rack 上行；Alloy 2026-05 完成收购，Accelsius 为战略投资 | 认证周期长，NTM 只停留在样品/设计导入，需求不转收入 | 仅有少量早期项目或并购内生收入，不作为公司基准驱动 | OEM/hyperscaler design-in 成立，冷板/两相方案开始可量化 | 下一代 GPU/ASIC rack 把 Alloy/Accelsius 类方案写入标准 BOM | NTM 可确认需求从接近 0 到数亿美元上限，分布极不稳定 | 基准低于题材热度；乐观/极度乐观才可讨论 | Alloy/Accelsius 公告、直液冷行业报告；反证是无公开认证、芯片侧供应链不归 JCI 主导 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些需求能进入 JCI NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入；行业 TAM、客户 capex、项目总金额和远期 pipeline 不作为基准收入。A/B 级证据可以作为基准锚，C 级只保守折扣，D/E 级不进 NTM 基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 商业楼宇核心系统与服务 | FY2026 Q2 total sales $6.142B；Products & Systems $4.199B，Services $1.943B；按剔除数据中心增量后的 residual 估算 | 直接 | 服务和 controls 利润率高于普通硬件；成熟主业现金流稳定 | $20.4-21.0B | $20.6-21.4B | $20.8-21.7B | $20.8-22.0B | 基准符合 FY2026 指引和 Q2 run-rate；悲观低于当前预期 | A | 是 | 收入表、分部收入、服务收入、FY2026 指引 | 作为公司底盘进入基准；不因 AI 叙事自动上修 |
+| 高密度数据中心 central plant / YORK chillers | JCI 未单列；模型用 Q2 backlog/orders、Applied HVAC、YORK 产品线和公司调研估算当前 AI/DC 年化 $2.0-2.8B | 直接 | 项目型设备毛利受 price-cost、产能利用率、commissioning 影响；服务 attach 可提高质量 | $2.2-2.7B | $2.7-3.5B | $3.5-4.5B | $4.5-5.8B | 基准略高于当前 run-rate但符合 backlog 转化；乐观高于指引隐含路径 | B | 是 | Americas orders +40%、backlog +32%；APAC Applied HVAC >20% 且由 data center applications 带动；YORK YDAM/YK-HT/YVAM | 进入基准，但用 backlog 转收入折扣；不把 AI cooling 订单池直接当收入 |
+| Silent-Aire CDU / 模块化热管理 | 未单列收入；Silent-Aire CDU 500kW-10MW、JCI+Silent-Aire 生产面积和模块化框架提供产品/产能锚 | 直接 | CDU 和模块化 cooling skid 毛利可高于普通 HVAC，但认证、质保和扩产初期成本较高 | $0.55-0.8B | $0.8-1.2B | $1.2-1.8B | $1.8-2.5B | 基准为保守纳入；乐观需客户标准化和交付提前 | C | 是，小比例 | 产品发布、数据中心 backlog 支撑、Armada modular data center framework 为 C 级补强 | 进入基准但不大幅上修；高弹性留给乐观/极度乐观 |
+| OpenBlue / Metasys / controls / data center services | 整体 Services Q2 $1.943B；数据中心相关 controls/service 年化模型 $0.4-0.7B | 直接/间接 | 软件、控制、服务毛利和粘性高；但 AI/DC 专属拆分缺披露 | $0.45-0.6B | $0.55-0.9B | $0.9-1.3B | $1.3-1.8B | 基准符合服务 attach；极度乐观是上限 | A/B 对整体，C 对 AI/DC 拆分 | 是，保守 | 服务收入表、OpenBlue/Metasys installed base、DCIM/BMS 行业需求 | 进入基准；但不把全部 OpenBlue 当 AI/DC 收入 |
+| 数据中心 Fire & Security attach | Tyco/Simplex/Ansul/access/video 产品族成熟；数据中心专属收入未披露 | 直接/间接 | 合规配套、服务检查和耗材较稳；硬件竞争充分，溢价一般 | $0.2-0.35B | $0.25-0.6B | $0.6-0.9B | $0.9-1.2B | 基准为保守 attach；乐观需要与 thermal/controls 打包率提升 | A/B 对产品族，C 对 AI/DC 拆分 | 是，小比例 | 产品族收入可见但 AI/DC 拆分为估算；MEP 报告确认消防/安防必配 | 作为附加收入进入基准，不作为主要利润上修来源 |
+| Alloy / Accelsius 芯片侧液冷 | Alloy 2026-05-13 完成收购但未披露财务；Accelsius 为战略投资，非并表为主 | 直接极小/间接 | 若进入 BOM 毛利可能高；NTM 先有整合、认证和良率成本 | $0-0.05B | $0-0.1B | $0.15-0.5B | $0.5-1.0B | 基准只代表可见并购小基数；乐观/极度乐观为 NTM 上限 | C/D | 否，除极小并购收入外 | 完成收购、战略投资、产品能力；无公开大客户量产/认证收入 | 不进入基准增长桥；移入乐观上限、极度乐观和后续跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从产品需求和收入基数出发，判断每个业务线在 NTM 对公司收入和利润的贡献。表内数字为经营模型区间；公司没有披露 AI/DC 产品分项收入，因此不把行业订单池、客户 capex 或项目总金额直接写成 JCI 收入。产品级区间用于解释传导，不可机械相加；公司汇总在第 6 节去重。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 商业楼宇核心系统与服务 | 悲观产品 | $20.4-21.0B | 经营利润约 $3.0-3.3B | 持平到下行 | 低于当前预期 | Q2 EMEA organic 仅 +1%，服务一次性收入波动 | 保留为公司 downside | 普通商业楼宇预算、区域冲突、服务项目减少 |
+| 商业楼宇核心系统与服务 | 基准产品 | $20.6-21.4B | 经营利润约 $3.3-3.6B | 稳定，小幅改善 | 符合指引/run-rate | Services +10% Americas，FY2026 organic sales guide +6% | 保留 | 服务续约、price-cost、重组节省正常兑现 |
+| 商业楼宇核心系统与服务 | 乐观产品 | $20.8-21.7B | 经营利润约 $3.6-3.9B | 小幅上行 | 高于成熟主业预期 | retrofit、能源效率、医疗/教育/工业需求改善 | 保留但不是主上修来源 | 商业周期和区域预算 |
+| 商业楼宇核心系统与服务 | 极度乐观产品 | $20.8-22.0B | 经营利润约 $3.8-4.1B | 上行 | 高于当前成熟业务预期 | 服务 attach、重组节省、price-cost 同时改善 | 下移为乐观上沿 | 成熟主业很难在 NTM 非线性放量 |
+| 高密度数据中心 central plant / YORK chillers | 悲观产品 | $2.2-2.7B | 经营利润约 $0.35-0.50B | 持平或下行 | 低于 backlog 隐含节奏 | Backlog 强但 10-Q 提示 timing 不必然代表下一年收入 | 保留 | 电力接入、site readiness、客户验收、工程延误 |
+| 高密度数据中心 central plant / YORK chillers | 基准产品 | $2.7-3.5B | 经营利润约 $0.50-0.75B | 小幅上行 | 符合强订单正常兑现 | Q2 Americas orders +40%、backlog +32%；APAC Applied HVAC >20%；YORK YDAM late 2026 shipments | 保留 | backlog 转收入 35-45%、大型项目分阶段确认 |
+| 高密度数据中心 central plant / YORK chillers | 乐观产品 | $3.5-4.5B | 经营利润约 $0.75-1.05B | 上行 | 高于当前预期 | 高密 chiller、低水耗、1GW reference design、客户 urgency | 保留 | 产能、chiller lead time、现场 labor、价格锁定 |
+| 高密度数据中心 central plant / YORK chillers | 极度乐观产品 | $4.5-5.8B | 经营利润约 $1.0-1.4B | 明显上行但非线性受限 | 显著高于当前预期 | 多个 hyperscaler/colo 大项目集中确认，JCI full thermal package 份额提高 | 保留为上限 | 不能只靠 demand；需产能、服务和验收同步成立 |
+| Silent-Aire CDU / 模块化热管理 | 悲观产品 | $0.55-0.8B | 经营利润约 $0.07-0.12B | 下行或低于平均 | 低于当前 AI 叙事 | CDU 产品可见但客户认证和项目确认未单列披露 | 保留 | 泄漏可靠性、CDU 标准、客户选择专业液冷供应商 |
+| Silent-Aire CDU / 模块化热管理 | 基准产品 | $0.8-1.2B | 经营利润约 $0.12-0.22B | 稳定到小幅上行 | 符合保守纳入 | Silent-Aire CDU 500kW-10MW；行业 D2C/CDU 主线；JCI thermal chain 打包 | 保留 | 产能、FAT/SAT、现场水路、服务人力 |
+| Silent-Aire CDU / 模块化热管理 | 乐观产品 | $1.2-1.8B | 经营利润约 $0.22-0.40B | 上行 | 高于当前预期 | Armada framework、modular data center production、客户要求快速部署 | 保留 | 收入确认时间、是否只是框架协议、供应链 ramp |
+| Silent-Aire CDU / 模块化热管理 | 极度乐观产品 | $1.8-2.5B | 经营利润约 $0.38-0.65B | 明显上行 | 显著高于当前预期 | CDU 成为多客户标准架构并与 YORK/controls 打包 | 下移为极度乐观上限 | 无量化客户/订单披露时不能作为基准 |
+| OpenBlue / Metasys / controls / services | 悲观产品 | $0.45-0.6B | 经营利润约 $0.10-0.16B | 稳定 | 低于 attach 预期 | Hyperscaler 自研 DCIM，JCI 停留在设备控制层 | 保留 | IT/OT 安全、数据接口、客户自研 |
+| OpenBlue / Metasys / controls / services | 基准产品 | $0.55-0.9B | 经营利润约 $0.15-0.28B | 上行 | 符合服务 attach | Services 占 Q2 31.6%；BMS/DCIM 需求从监控转向热/电联动 | 保留 | 数字孪生付费率和服务合同 attach |
+| OpenBlue / Metasys / controls / services | 乐观产品 | $0.9-1.3B | 经营利润约 $0.28-0.45B | 明显上行 | 高于当前预期 | 多站点数据中心把 thermal controls、remote service、commissioning 前置 | 保留 | 软件是否标准化、客户自研替代 |
+| OpenBlue / Metasys / controls / services | 极度乐观产品 | $1.3-1.8B | 经营利润约 $0.45-0.70B | 非线性上行 | 显著高于当前预期 | OpenBlue 成为 cross-site thermal ops/energy optimization 层 | 下移为乐观上限，除非出现付费客户和 ARR 证据 | 缺少数据中心专属 ARR 披露 |
+| 数据中心 Fire & Security attach | 悲观产品 | $0.2-0.35B | 经营利润约 $0.03-0.06B | 持平或下行 | 低于 attach 预期 | 竞争充分，本地集成商替代 | 保留 | 价格、客户分包、项目延期 |
+| 数据中心 Fire & Security attach | 基准产品 | $0.25-0.6B | 经营利润约 $0.05-0.12B | 稳定 | 符合配套需求 | 数据中心必须配置消防、安防、漏液/生命安全系统 | 保留 | JCI 打包率不确定 |
+| 数据中心 Fire & Security attach | 乐观产品 | $0.6-0.9B | 经营利润约 $0.12-0.20B | 小幅上行 | 高于当前预期 | thermal + controls + fire/security 一体化采购 | 保留但非主驱动 | 硬件商品化、安防资产梳理 |
+| 数据中心 Fire & Security attach | 极度乐观产品 | $0.9-1.2B | 经营利润约 $0.18-0.30B | 上行 | 高于当前预期 | 大项目 integrated package 采购 | 下移为乐观上限 | 单靠配套项不能驱动公司极度乐观 |
+| Alloy / Accelsius 芯片侧液冷 | 悲观产品 | $0-0.05B | 经营利润接近 0 或负 | 下行 | 低于题材预期 | 无公开量产客户，认证未验证 | 保留 | 认证、良率、客户 BOM |
+| Alloy / Accelsius 芯片侧液冷 | 基准产品 | $0-0.1B | 经营利润接近 0 | 中性 | 不进入基准增长桥 | Alloy 已完成收购但财务未披露；Accelsius 非并表为主 | 移入附录/仅作跟踪 | D 级或 C/D 级证据不能支撑基准 |
+| Alloy / Accelsius 芯片侧液冷 | 乐观产品 | $0.15-0.5B | 经营利润约 $0.02-0.10B | 不确定 | 高于当前可见收入 | OEM/hyperscaler design-in 或联合方案转项目 | 保留为乐观上限 | 无客户、时间表和 ASP 量化则不得上修 |
+| Alloy / Accelsius 芯片侧液冷 | 极度乐观产品 | $0.5-1.0B | 经营利润约 $0.08-0.25B | 可能上行但风险高 | 显著高于当前预期 | 下一代 GPU/ASIC rack 采用 JCI/Alloy 冷板或两相生态 | 移入附录/极度乐观上限 | NTM 时间表弱，2027+ 权重更高 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为公司 NTM continuing operations 经营情景，剔除重复计算和远期期权，不讨论市场定价。收入以 FY2026 Q2 run-rate、FY2026 指引、$20.0B backlog、$26.3B RPO、订单转化和数据中心产品证据校准；利润以 segment EBITA、经营杠杆、服务 mix、重组节省和项目执行成本校准。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | $24.7-25.3B | 约 +1-3% | 低于 FY2026 organic +6% 指引和 backlog 隐含路径；数据中心需求仍在但确认延后 | 35.0-36.0% | 15.5-16.5% | EBITDA 无法可靠量化；调整后净利润约 $2.7-2.9B | FCF conversion 低于 100%，应收和存货占用上升 | 中 | 数据中心项目延期、EMEA/普通楼宇需求弱、CDU/液冷验收慢、price-cost 被扩产成本吞噬 |
+| 基准公司 | $26.0-26.8B | 约 +6-8% | 符合 FY2026 指引、Q2 run-rate 和 backlog 正常转化；AI/DC 收入增速高于公司整体但不改写全部公司 | 36.0-37.0% | 16.8-17.8% | EBITDA 无法可靠量化；调整后净利润约 $3.0-3.2B | 接近 FY2026 指引的 adjusted FCF conversion 约 100%，但项目营运资本波动上升 | 中高 | backlog 转收入 35-45%、现场调试、服务 attach、重组节省落地 |
+| 乐观公司 | $26.8-27.8B | 约 +9-12% | 高于当前指引；需要数据中心 backlog 转化快于预期且成熟主业不拖累 | 36.8-38.0% | 17.8-18.8% | EBITDA 无法可靠量化；调整后净利润约 $3.25-3.55B | FCF conversion 接近或略高于 100%，前提是客户预付款和工程变更单覆盖扩产/存货 | 中 | 高密 chiller/CDU 交付、服务 attach、价格/mix、项目毛利守住 |
+| 极度乐观公司 | $27.8-29.0B | 约 +13-17% | 明显高于当前预期；要求需求、JCI 捕获、利润质量和执行同时突破 | 37.5-39.0% | 18.8-20.0% | EBITDA 无法可靠量化；调整后净利润约 $3.6-4.0B | FCF 方向改善但营运资本压力最高；若预付款不足，收入越高现金流越可能滞后 | 低到中 | 多站点 hyperscaler/colo 集中确认、full thermal package 份额提高、CDU/controls/service 同步放量、Alloy 早期导入不拖累利润 |
+
+补充说明：  
+1. FY2026、FY2027、长期 run-rate 仅作补充，不能替代 NTM 主表。  
+2. JCI 的 NTM 收入主要仍由成熟商业楼宇系统与服务构成；数据中心是边际增长和利润结构变量，不是全部收入。  
+3. 极度乐观收入不能自动等同极度乐观利润；若大客户压价、扩产成本、质保、commissioning 和营运资本占用上升，利润情景应下移。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测，只校准前四步情景。正向证据只提升它实际影响的层级；同一风险只在实际影响层级处理一次，不重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q2 orders +30%、backlog $20.0B +26%、Americas orders +40%、backlog +32% | 收入基数、公司执行可信度 | 支撑基准和乐观的收入可见度，尤其 Products & Systems | 若 price-cost 和 mix 正向，可支撑 margin 上行 | Backlog 不等于 12 个月收入；需折扣处理 | 基准保留，乐观保留；不得直接上移到极度乐观 |
+| RPO $26.3B，约 67% 两年内确认 | 收入确认路径 | 支撑中期可见收入，但 NTM 只取部分 | 长合同服务有助利润质量 | 多年合同和服务期限使 NTM 转化有限 | 基准保留 |
+| FY2026 organic sales 指引约 +6%、adjusted EPS 约 $4.85、FCF conversion 约 100% | 当前预期锚 | 将公司基准锁定在 +6-8% 而非按 AI/DC 订单池外推 | 经营杠杆约 50% 是利润率基准 | FCF conversion 是现金流校准锚 | 基准保留；悲观/乐观相对指引偏离 |
+| YORK YDAM/YK-HT/YVAM 和 1GW reference design | 产品需求、产品贡献 | 支撑 high-density chiller 进入 NTM 基准和乐观 | 高密、低水耗、紧凑 footprint 可改善 mix | 交付时间、late 2026 shipment 和客户验收限制 NTM | 基准保留，乐观保留 |
+| Silent-Aire CDU 500kW-10MW、air/water cooled reference guide 包含 CDUs | 产品贡献 | 支撑 CDU 小比例进入基准 | 若与 YORK/controls 打包，利润率高于普通 HVAC | 认证、产能、FAT/SAT 和现场服务是约束 | 基准保留但不放大；乐观保留 |
+| Armada modular data center framework、JCI 投资和 Arizona dedicated factory 线索 | 收入基数、执行可信度 | 支撑 modular data center systems 的乐观需求，不足以量化基准收入 | 预制化可提高毛利，但初期投资和 ramp 成本不确定 | 框架协议不等于已确认收入；需订单和交付节奏 | 乐观保留；基准不因该项上移 |
+| JADEC 数据中心 training institute、40,000+ field personnel | 执行可信度、服务 | 提升服务 attach 和交付可信度 | 服务毛利和客户粘性上行 | 培训 institute early 2027 才开，NTM 前半段贡献有限 | 基准保留；远期服务可信度上修 |
+| Alloy 完成收购、Accelsius 战略投资 | 远期期权、产品贡献 | 可提高 2027+ chip-to-ambient 叙事和乐观上限 | 若 design-in 成立可能高毛利；NTM 先有整合成本 | 无公开大客户认证、收入和量产节奏 | NTM 基准排除；乐观上限保留；Accelsius 仅作跟踪 |
+| Hyperscaler 自研 DCIM/energy ops | 产品贡献 | 限制 OpenBlue 从设备控制层上升到全站操作系统 | 限制软件毛利扩张 | IT/OT 安全认证和数据接口拉长销售周期 | 极度乐观下移为乐观上限 |
+| 电力接入、变压器、switchgear、许可、水权和 MEP labor | 需求和收入确认 | 不必降低长期需求，但降低 NTM 确认节奏 | 延误和变更会压低项目毛利 | 应收、存货、调试和验收周期变长 | 悲观保留；不在利润率处重复惩罚 |
+| 数据中心低毛利 pass-through 或大客户压价 | 产品利润 | 收入可上修但利润不一定同步上修 | 限制极度乐观利润率 | 若预付款不足会压低 FCF | 极度乐观利润需单独证明 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 $24.7-25.3B，低于当前指引/run-rate；数据中心订单存在但确认延后 | RPO/backlog 仍高，服务收入韧性强，成熟主业提供底盘 | 项目延期、电力接入、MEP labor、EMEA/普通楼宇弱、CDU/液冷验收慢 | 保留 | 悲观公司 | 中 | 项目延期只在收入确认层处理，不再在需求层重复否定 AI/DC 长期需求 |
+| 基准 | NTM 收入 $26.0-26.8B，符合 FY2026 +6% organic 指引和正常 backlog 转化 | Q2 orders +30%、backlog +26%、Americas orders +40%；RPO $26.3B；FY2026 EPS/FCF 指引上修 | AI/DC 单列收入缺披露，CDU/Alloy 等证据等级不够高；大型项目 timing 不确定 | 保留 | 基准公司 | 中高 | 不因 Alloy/Accelsius 缺证据而压低已由 A/B 级 backlog 支撑的 central plant 基准 |
+| 乐观 | NTM 收入 $26.8-27.8B，数据中心项目转化快于当前预期，利润率同步改善 | 高密 chiller、CDU、reference design、Armada framework、服务 training 能提高交付可信度 | 缺少数据中心产品分项收入、客户名单、CDU 订单量；大客户可能多供和压价 | 保留 | 乐观公司 | 中 | 大客户自研 DCIM 只限制 controls/software，不重复惩罚 chiller/CDU 硬件需求 |
+| 极度乐观 | NTM 收入 $27.8-29.0B，AI/DC 成为主要增长引擎，利润率接近 19-20% | 若多个 hyperscaler/colo 项目集中确认、JCI full thermal package 份额提高、CDU/controls/service 同时放量，则有上限路径 | 任一核心环节缺证据：Alloy/Accelsius 未量产、CDU 客户未披露、项目确认受电力/MEP 限制、扩产成本可能吞噬利润 | 下移 | 极度乐观上限，部分移入附录跟踪 | 低到中 | 不能把 data center demand、Alloy 期权和 service attach 三个未完全证实的 upside 简单相加 |
+
+## 8. 结论
+
+- 最可能情景：**基准公司情景**。JCI NTM 最可能收入为 **$26.0-26.8B**，绝对增速约 **+6-8%**，略高于 FY2026 指引的 +6% organic 口径但仍以可见 backlog 和成熟主业服务为锚。利润/现金流最可能是调整后净利润约 **$3.0-3.2B**，经营利润率 **16.8-17.8%**，FCF conversion 接近公司约 100% 指引但季度波动会变大。
+- NTM 收入结论：AI/DC 相关收入是边际增长主线，尤其 high-density YORK chillers、central plant、Silent-Aire CDU、controls/service；但公司总收入仍主要来自商业楼宇系统与服务。基准情景不允许把 AI cooling 行业订单池直接映射为 JCI 收入，只承认 backlog/orders、产品发布和交付路径支持的部分。
+- 利润/现金流结论：利润上修质量高低取决于 mix 和执行，而不是收入增速本身。最有质量的是 services、controls、commissioning、客户运维合同和高密 chiller mix；较弱的是低毛利项目 pass-through、低价硬件、早期液冷整合成本和大客户压价。现金流核心看预付款、deferred revenue、应收、存货和现场验收周期。
+- 主要传导瓶颈：需求不是最大问题，**收入确认和利润留下来**才是瓶颈。JCI 已有 $20.0B backlog 和 $26.3B RPO，但大型数据中心项目可能因电力接入、变压器/switchgear、许可、水权、客户 rack 到货、MEP labor、FAT/SAT 和 commissioning 滞后而跨季度确认。
+- 乐观情景成立条件：FY2026 Q3/Q4 orders/backlog 继续双位数增长；Americas Products & Systems backlog 转收入加速；YDAM/YK-HT/Silent-Aire CDU 出现可量化出货或客户项目；Services 增速跟随 systems backlog 上行；price-cost 和项目毛利不被扩产成本吞噬。
+- 极度乐观情景成立条件：多个 hyperscaler/colo 大项目在 2026H2-2027H1 集中确认，JCI 不只是 chiller 单品供应商，而是取得 central plant + CDU + controls + service + fire/security 的 full thermal/building package；同时 Alloy/Accelsius 至少出现公开 design-in 或客户验证，且不显著拖累利润和现金流。
+- 悲观情景触发条件：Top hyperscaler/NeoCloud capex 或项目 NTP 下调；JCI Q3/Q4 orders/backlog 明显放缓；backlog 增长但收入确认慢于预期；CDU/液冷 field failure、泄漏或认证延误；服务 attach 不跟随系统项目；项目毛利被大客户压价、人工、铜/铝/压缩机、质保或库存成本吞噬。
+- 后续跟踪数据：JCI FY2026 Q3/Q4 orders、backlog、book-to-bill；Americas Products & Systems 与 Services 增速；APAC Applied HVAC data center 应用延续性；Silent-Aire CDU、YDAM、YK-HT 出货和客户案例；Armada framework 是否转订单/收入；Alloy 完成后 design-in 或认证进度；RPO 两年内确认比例；deferred revenue、accounts receivable、inventory、FCF conversion；管理层是否继续明确点名 large-scale data center projects。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：JCI FY2026 Q2 截至 2026-03-31，披露日期 2026-05-06；本报告补充产品和合作公告检索至 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Johnson Controls FY2026 Q2 earnings release, 2026-05-06：Q2 sales $6.1B、organic +6%、orders +30%、backlog $20.0B、FY2026 organic sales guide 约 +6%、adjusted EPS 约 $4.85、adjusted FCF conversion 约 100%。
+  - Johnson Controls FY2026 Q2 10-Q, quarter ended 2026-03-31：Q2 net sales $6.142B；Products & Systems $4.199B，Services $1.943B；Americas $4.121B、EMEA $1.282B、APAC $0.739B；RPO $26.3B，约 67% 两年内确认；orders/backlog by segment；cash flow、net debt、working capital。
+  - JCI 公司调研底稿：`公司调研/机电_冷却_工程_水处理_边缘工业AI/JCI_Johnson_Controls_公司调研_2026-06-11.md`。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 指引用于当前预期锚，不替代 NTM 四情景。
+  - FY2027 更可能体现 Rubin/next-gen ASIC、高密 AI inference、Alloy/Accelsius/两相 D2C 的更大收入弹性；本报告未把这些作为 NTM 基准。
+  - Armada modular data center framework、JADEC data center training institute、Air-cooled/Water-cooled 1GW AI Factory reference design 是执行和远期需求证据；只有转成订单、出货、服务合同或明确收入确认时间表后，才能上移到基准。
+- 主要来源：
+  - Johnson Controls FY2026 Q2 earnings release: https://investors.johnsoncontrols.com/news/news-details/2026/Johnson-Controls-Reports-Strong-Q2-Results-Raises-FY26-Guidance/default.aspx
+  - Johnson Controls FY2026 Q2 Form 10-Q: https://www.sec.gov/Archives/edgar/data/833444/000083344426000050/jci-20260331.htm
+  - Johnson Controls completes acquisition of Alloy Enterprises, 2026-05-13: https://www.johnsoncontrols.com/media-center/news/press-releases/2026/05/13/johnson-controls-completes-acquisition-of-alloy-enterprises
+  - Johnson Controls Silent-Aire CDU launch, 2025-09-08: https://www.johnsoncontrols.com/media-center/news/press-releases/2025/09/08/johnson-controls-expands-thermal-management-offering-with-scalable-liquid-cooling-solution-to-meet-t
+  - Johnson Controls YORK YDAM launch, 2026-02-03: https://www.johnsoncontrols.com/media-center/news/press-releases/2026/02/03/johnson-controls-launches-york-ydam-the-ultimate-highdensity-chiller-for-multistory-data-centers-and
+  - Johnson Controls air-cooled 1GW AI Factory reference design, 2026-05-27: https://www.johnsoncontrols.com/building-insights/2026/feature-story/air-cooled-reference-design-guide
+  - Johnson Controls second data center reference design guide, 2026-05-05: https://www.johnsoncontrols.com/media-center/news/press-releases/2026/05/05/johnson-controls-releases-second-data-center-reference-design-guide-to-advance-industrialscale-ai-fa
+  - Johnson Controls and Armada modular data center production framework, 2026-05-22: https://www.johnsoncontrols.com/media-center/news/news-articles/2026/johnson-controls-announces-agreement-with-armada
+  - Johnson Controls data center training institute, 2026-05-13: https://www.johnsoncontrols.com/media-center/news/press-releases/2026/05/13/johnson-controls-expands-its-investment-in-workforce-development
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-06-11.md`

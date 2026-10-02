@@ -1,0 +1,158 @@
+# 公司收入传导与价值传导评估：ASM International
+
+> 研究对象：ASMIY / ASM International N.V.  
+> 报告日期：2026-06-12。最新公司经营数据以 2026Q1 实际、2026Q2 指引、2025Q4/FY2025 年末 backlog 和 2025 分部披露为主。  
+> 主口径：NTM，即 2026Q2-2027Q1。FY2026、FY2027、2030 目标、4F2 DRAM、1.4nm/1.0nm、SiC 数据中心电源等仅作补充或远期期权。  
+> 边界：只使用 `公司调研/`、`行业调研/` 与公开一手资料；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较结果。本报告不输出投资评级、目标价、估值倍数或股价区间，也不把金融市场价格作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表用 NTM 2026Q2-2027Q1。FY2026 只用于校验 H1/H2 节奏，FY2027 只用于校验 Investor Day 目标区间，2030 目标只放入长期能力，不替代 NTM。
+- 当前收入基准、指引和 run-rate：2025 收入 31.732 亿欧元，其中 Equipment 24.575 亿欧元、Spares & Services 7.157 亿欧元；2025 年末 backlog 12.47 亿欧元；2026Q1 收入 8.625 亿欧元、毛利率 53.3%、调整后经营利润率 33.1%；2026Q2 指引为 9.80 亿欧元 +/-5%，且公司预计 2026H2 收入高于 H1。
+- 重要产品/业务线：先进逻辑/代工 ALD/PEALD、先进逻辑 Silicon Epi、DRAM/HBM 相关 ALD/Epi/热处理、Spares & Services、先进封装 TSV ALD / Axus CMP、功率/模拟/晶圆与成熟制程工具。
+- NTM 公司收入四情景：悲观 35.5-38.0 亿欧元；基准 39.5-42.0 亿欧元；乐观 43.0-46.5 亿欧元；极度乐观 47.5-51.0 亿欧元。基准相对当前 TTM 31.964 亿欧元约 +24%-31%，本质是 Q2 指引兑现、H2 高于 H1、2027Q1 不显著掉速。
+- 利润或 EBITDA 四情景：由于公司不按 EBITDA 作为主披露口径，本报告以调整后经营利润和调整后净利润方向为主。基准调整后经营利润约 11.5-13.2 亿欧元，调整后净利润约 9.0-10.5 亿欧元；乐观约 13.5-15.8 亿欧元调整后经营利润；极度乐观需要毛利 mix、S&S、供应链交付和费用杠杆同时成立。
+- 最大传导瓶颈：从 AI/HPC 需求到 ASM 收入，中间必须经过 TSMC/Samsung/Intel 先进逻辑 wafer starts、SK hynix/Micron/Samsung DRAM/HBM capex、客户工艺认证、设备交付、安装验收和收入确认。最容易断的位置不是需求本身，而是订单 lumpiness、工具交付、客户 cleanroom/验收节奏和出口管制。
+- 最大利润率变量：ALD/PEALD 与 Epi mix、China mix、S&S attach、供应链稀缺成本、客户价格重谈和新项目 ramp cost。Q1 2026 的 53.3% 毛利率高于长期 47%-51% 目标区间上端，不能线性外推到全部 NTM。
+- 最大现金流变量：Q1 2026 自由现金流为 -0.481 亿欧元，主要因应收账款和 back-end-loaded 收入造成营运资金占用；若 Q2/Q3 回款正常，现金流恢复；若强收入伴随应收账款继续上升，利润兑现会滞后。
+- 可信度：基准为中高，因收入、指引、2025 backlog、S&S 和主产品技术位置均有 A/B 级证据；乐观为中，依赖 1.4nm pilot、HBM4/DRAM 和 China/advanced logic 同步强于当前预期；极度乐观为低到中，只能作为 NTM 上限，不是当前预期。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 先进逻辑/代工 ALD/PEALD | NTM 基准约 16.0-18.5 亿欧元 | 约 38%-44% | 最核心收入和利润池；GAA、2nm、1.4nm、Mo ALD、selective ALD 直接提高 ASM 内容量 | A/B 用于总收入和 end-market，C 用于产品拆分 | 进入基准，是 NTM 最大驱动 | 1.4nm/1.0nm 更大 SAM 提前到 NTM 只进乐观/极度乐观 |
+| 先进逻辑 Silicon Epi | NTM 基准约 4.5-6.2 亿欧元 | 约 11%-15% | GAA/nanosheet 源漏、沟道和应变工程；ASM 称 leading-edge Epi 份额提升 | B/C | 保守进入基准，作为 ALD 之外第二增长引擎 | GAA Epi 份额显著上修进入乐观 |
+| DRAM/HBM 相关 ALD/Epi/热处理 | NTM 基准约 5.5-7.5 亿欧元 | 约 13%-18% | HBM3E/4、先进 DRAM、6F2 到 4F2 迁移提高 deposition/Epi 强度 | B/C | 进入基准但低于 logic/foundry 权重 | 4F2/3D DRAM 大规模收入主要是 2027 以后，NTM 只放上限 |
+| Spares & Services / outcome-based services | 2025 收入 7.157 亿欧元；NTM 基准约 8.8-10.0 亿欧元 | 约 21%-24% | installed base、fab utilization、field upgrade 和 uptime 价值；现金流韧性来源 | A | 进入基准，是利润质量和现金流关键 | outcome-based >50% S&S 是 2030 目标，不提前纳入 NTM 主表 |
+| 先进封装 TSV ALD liner / Axus CMP / interface engineering | NTM 基准约 0.4-0.8 亿欧元 | <2% | HBM/3D integration 相邻机会，小基数高弹性 | C/D | 只以极小可见收入进入基准，主要放乐观 | HBM TSV、hybrid bonding、Axus CMP 扩品类属于乐观或附录跟踪 |
+| 功率/模拟/晶圆、SiC Epi、PECVD、Vertical Furnace、成熟制程工具 | NTM 基准约 3.5-4.5 亿欧元 | 约 8%-11% | 可支撑收入，但增长和利润质量弱于 ALD/Epi；China mature 节奏和 SiC 周期影响大 | A/C | 进入基准但作为抵消/低弹性业务处理 | SiC 数据中心电源链尚无 NTM 明确收入路径，仅作远期期权 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不判断 ASM 份额、收入确认、利润率或公司收入汇总。需求锚点优先使用全球 300mm/WFE、先进逻辑、DRAM/HBM、S&S installed base 和公司披露的 ALD/Epi 市场与 SAM 口径。行业需求不能直接等同于 ASM 收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 先进逻辑/代工 ALD/PEALD | ASM Investor Day：单片 ALD 市场 2024 年约 30 亿美元，2030 年 51-61 亿美元；SEMI 2026 300mm 前道设备支出 1420 亿美元、+25%；TSMC N2 已进入 HVM，N3 因 AI 需求追加扩产 | 全球 ALD demand 约 31-35 亿美元；客户 N2/N3 工具 pull-in 放缓，China mature 订单转弱 | 约 36-40 亿美元；N2/GAA、N3 AI/HPC、HBM base die 工具需求正常兑现 | 约 40-46 亿美元；1.4nm pilot、N3 追加 fab、客户加速锁定 ALD chamber | 约 46-52 亿美元；GAA/N3/N2/1.4nm 和区域化扩产同步抢工具 | 相对基准约 -5 亿到 +12 亿美元 | 基准符合当前预期；乐观需要 H2/Q3-Q4 指引继续上修 | 正向：TSMC capex 高端、SEMI billings 创纪录、ASM ALD >55% 目标。反证：客户新 fab 需要 2-3 年，工具交付和验收会延迟收入 |
+| 先进逻辑 Silicon Epi | Epi 市场 2024 年约 15 亿美元，2030 年 25-32 亿美元；GAA/nanosheet 需要 Epi 源漏、沟道和应变工程 | 约 15-17 亿美元；GAA Epi share gain 不及预期或客户分散采购 | 约 17-21 亿美元；GAA Epi 按当前节点节奏扩张 | 约 21-25 亿美元；ASM 在 leading-edge Epi 新 POR 扩份额 | 约 25-30 亿美元；Epi 成为 GAA 产能瓶颈之一 | 相对基准约 -4 亿到 +9 亿美元 | 基准为小幅高增；乐观需份额和层数证据 | 正向：ASM 披露 Epi 成为第二增长引擎。反证：Epi 市场竞争强于 ALD，AMAT/TEL/Veeco/Aixtron 均参与 |
+| DRAM/HBM 相关 ALD/Epi/热处理 | SEMI 预计 memory equipment 2026/2027 分别 +29%/+11%；DRAM equipment 2026 +15.1%、2027 +7.8%；HBM3E/4 拉动 advanced DRAM | DRAM/HBM 工具需求仅低双位数增长，HBM4 认证延后，memory capex 推迟 | DRAM/HBM deposition/Epi/thermal demand +15%-30%；HBM3E/4 和 1b/1c DRAM 正常扩产 | +30%-50%；HBM4/MI400/Rubin/ASIC 拉动客户提前下单 | +50%-80%；HBM4E、4F2 pilot 和多客户 HBM4 同步抢工具 | 无法可靠量化为单一绝对金额，因 ASM 未披露可服务 DRAM/HBM 产品池 | 基准略高于传统存储周期；极度乐观不是 2026 主判断 | 正向：HBM die starts/bit 上升、DRAM node migration。反证：4F2/3D DRAM 大规模量产仍在 2028 以后概率更高 |
+| Spares & Services | 2025 S&S 收入 7.157 亿欧元，按固定汇率 +18%；2026Q1 S&S +23% yoy cc；advanced fab utilization 高 | NTM installed-base 服务需求 7.5-8.2 亿欧元；fab utilization 或客户 upgrade 延后 | 8.8-10.0 亿欧元；installed base 扩大、outcome-based attach 稳步提升 | 10.0-11.5 亿欧元；高利用率、field upgrade、服务价格/mix 改善 | 11.5-13.0 亿欧元；服务工程师和备件变成瓶颈，客户为 uptime 支付溢价 | 相对基准约 -2.0 亿到 +3.0 亿欧元 | 基准高可信；极度乐观需服务 attach 明确加速 | 正向：2025/2026Q1 已披露增长。反证：S&S 随 installed base 走，不会像新设备订单非线性跳升 |
+| 先进封装 TSV ALD liner / Axus CMP | ASM 披露 advanced packaging 为战略重点、TSV ALD wins；Axus 2025Q4 并入，但未形成独立大分部 | NTM 需求仍在验证/小批，ASM 可参与池 <0.5 亿欧元 | 0.4-0.8 亿欧元可收入化需求；主要是小批 TSV/interface | 0.8-1.5 亿欧元；HBM/3D integration 客户认证转订单 | 1.5-3.0 亿欧元；先进封装从附属机会变可见收入项 | 绝对变化小，但相对增速高 | 基准只承认小收入；乐观需客户、工艺和交付时间表 | 正向：HBM/CoWoS/3D integration 紧缺。反证：封装设备生态不是 ASM 传统主场，Ebara/AMAT/Lam/TEL/OSAT 工具有强份额 |
+| 功率/模拟/晶圆、SiC Epi、PECVD、Vertical Furnace、成熟制程工具 | 2025 power/analog/wafer 下滑，2026 公司预计低基数 gradual recovery；China mature logic/foundry Q1 反弹 | 2.2-3.2 亿欧元需求；EV/工业/SiC 低迷，成熟制程价格竞争 | 3.5-4.5 亿欧元；低基数修复和中国成熟节点订单支撑 | 4.5-6.0 亿欧元；China mature 和 SiC 8 英寸认证改善 | 6.0-8.0 亿欧元；SiC 数据中心电源或成熟节点大单进入 NTM | 相对基准约 -1.5 亿到 +3.5 亿欧元 | 基准为修复，不是 AI 主线 | 正向：中国 mature 反弹、PE2O8 产品存在。反证：EV/工业周期与 AI 数据中心收入确认路径不足 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些外部需求能进入 ASM NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入。收入锚点优先按 A/B 级证据进入基准；C 级只保守折扣；D/E 级不进入 NTM 基准收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 先进逻辑/代工 ALD/PEALD | 2025 Equipment 24.575 亿欧元；2026Q1 收入由 logic/foundry 主导；2026Q2 9.80 亿欧元 +/-5% 指引；ASM 披露 ALD >55% 市占目标 | 间接服务 AI/HPC wafer starts；直接卖给 foundry/logic IDM | 高毛利、高替换成本、process-of-record 粘性强 | 13.0-15.0 亿欧元 | 16.0-18.5 亿欧元 | 19.0-22.0 亿欧元 | 22.5-26.0 亿欧元 | 基准符合 Q2/H2 指引和 2027 目标低中位；乐观高于当前预期 | A/B + C | 是 | A/B 来自总收入、指引、end-market；C 来自产品拆分估算 | 基准主线；极度乐观需 1.4nm/N3/N2 同步提前 |
+| 先进逻辑 Silicon Epi | Investor Day 披露 Epi 市场 2024-2030 CAGR 9%-13%，公司在 leading-edge Epi 扩份额；Q1 logic/foundry 强 | 间接受 AI/HPC 先进节点；直接卖 Epi 工具 | 毛利高但竞争比 ALD 更强 | 3.5-4.5 亿欧元 | 4.5-6.2 亿欧元 | 6.2-8.0 亿欧元 | 8.0-10.0 亿欧元 | 基准略高于当前 run-rate，乐观需份额证据 | B/C | 是，保守纳入 | 公司未披露 product revenue，按 equipment/end-market 和 Epi 市场推算 | 进入基准，但权重低于 ALD |
+| DRAM/HBM 相关 ALD/Epi/热处理 | 2025 memory 为 Equipment 16%；2026Q1 memory sales healthy but smaller contributor；SEMI DRAM/HBM equipment 增长 | 间接受 AI/HBM；直接卖给 memory fabs | 技术弹性强，客户压价和周期性也强 | 4.0-5.5 亿欧元 | 5.5-7.5 亿欧元 | 7.5-9.8 亿欧元 | 10.0-13.0 亿欧元 | 基准符合 healthy growth；乐观高于当前预期 | B/C | 是，折扣纳入 | 2025 memory share、2026 管理层表述、行业 HBM/DRAM capex | 基准纳入；4F2/3D DRAM 大规模贡献不进基准 |
+| Spares & Services / outcome-based services | 2025 S&S 7.157 亿欧元、+18% cc；2026Q1 +23% cc；2025 outcome-based 为 S&S 25% | 直接已在收入表 | 高现金流质量，毛利和 uptime 价值强 | 7.5-8.2 亿欧元 | 8.8-10.0 亿欧元 | 10.0-11.5 亿欧元 | 11.5-13.0 亿欧元 | 基准符合当前 run-rate；乐观需 attach 加速 | A | 是 | 已披露收入和增长，installed base 可见 | 基准高可信，是利润/现金流锚 |
+| 先进封装 TSV ALD liner / Axus CMP / interface engineering | Axus 2025Q4 并入；ASM 披露 advanced packaging strategic priority 和 TSV ALD wins，但未披露大收入 | 直接收入小，间接受 HBM/3D integration | 早期业务，毛利可高但 ramp cost 和认证成本大 | 0.2-0.4 亿欧元 | 0.4-0.8 亿欧元 | 0.8-1.5 亿欧元 | 1.5-3.0 亿欧元 | 基准只承认小基数；乐观是上修项 | C/D | 仅小额进入 | Axus 已收购提供 A/C 小收入；TSV wins 为 C/D | 不作为 NTM 基准主要增长，放乐观和附录跟踪 |
+| 功率/模拟/晶圆、SiC Epi、PECVD、Vertical Furnace、成熟制程工具 | 2025 power/analog/wafer 下滑；2026 公司预计 gradual recovery；China mature Q1 反弹 | 直接收入，AI 相关性弱或间接 | 毛利和增长低于 ALD/Epi，存在价格竞争 | 2.2-3.2 亿欧元 | 3.5-4.5 亿欧元 | 4.5-6.0 亿欧元 | 6.0-8.0 亿欧元 | 基准为修复；SiC AI power 不在当前预期 | A/C | 是，但低权重 | 总收入和管理层端市场表述为 A/B；SiC/成熟工具拆分为 C | 作为抵消项和低弹性业务处理 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从需求和可收入化基数出发，估算每个重要产品在 NTM 内对收入和利润的贡献。下表产品利润贡献是对公司调整后经营利润的粗略贡献区间，受共用 R&D、SG&A、汇率、ASMPT 权益收益和税项影响，不能机械相加；公司层面最终口径以第 6 节为准。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 先进逻辑/代工 ALD/PEALD | 悲观 | 13.0-15.0 亿欧元 | 3.6-4.6 亿欧元 | 仍高于公司均值但回落 | 低于当前预期 | 若 Q2 低端、H2 未高于 H1、客户验收延迟 | 保留悲观 | 订单不披露后，收入指引成为唯一强锚；出口管制和 China mix 可能压制 |
+| 先进逻辑/代工 ALD/PEALD | 基准 | 16.0-18.5 亿欧元 | 4.8-5.9 亿欧元 | 对 GM/OPM 正贡献 | 符合当前预期 | Q1 logic/foundry 强、Q2 指引 9.80 亿欧元、H2 高于 H1、ALD >55% | 保留基准 | 不能把 SEMI WFE 全部传导到 ASM；需客户下单和交付验收 |
+| 先进逻辑/代工 ALD/PEALD | 乐观 | 19.0-22.0 亿欧元 | 6.0-7.6 亿欧元 | GM 可维持 51%+ | 高于当前预期 | N3/N2/1.4nm tool pull-in，供应链紧但可交付 | 保留乐观 | 若供应链短缺只造成延迟而非提价，利润不随收入同幅上修 |
+| 先进逻辑/代工 ALD/PEALD | 极度乐观 | 22.5-26.0 亿欧元 | 7.6-9.5 亿欧元 | 稀缺溢价和服务附加同步 | 明显高于当前预期 | 客户预付款/锁产能、1.4nm pilot 提前、N2/N3 多客户并行 | 下移为上限 | 需要多个核心客户同步提前，不可用单一客户 capex 替代 |
+| 先进逻辑 Silicon Epi | 悲观 | 3.5-4.5 亿欧元 | 0.7-1.1 亿欧元 | 中性到小幅稀释 | 低于预期 | GAA Epi 份额未扩大、竞争者分食 | 保留悲观 | Epi 竞争强于 ALD |
+| 先进逻辑 Silicon Epi | 基准 | 4.5-6.2 亿欧元 | 1.1-1.7 亿欧元 | 小幅增厚 | 符合预期 | Epi 成第二增长引擎，GAA 需要 source/drain/channel 工艺 | 保留基准 | 产品拆分未披露，需保守折扣 |
+| 先进逻辑 Silicon Epi | 乐观 | 6.2-8.0 亿欧元 | 1.7-2.5 亿欧元 | 增厚 | 高于预期 | 新 POR、leading-edge share gain、1.4nm pilot | 保留乐观 | 客户认证周期长 |
+| 先进逻辑 Silicon Epi | 极度乐观 | 8.0-10.0 亿欧元 | 2.5-3.6 亿欧元 | 明显增厚 | 明显高于预期 | Epi 成为 GAA 瓶颈、ASM 份额大幅提升 | 下移为乐观上限 | 缺少 NTM 量化订单披露 |
+| DRAM/HBM 相关 ALD/Epi/热处理 | 悲观 | 4.0-5.5 亿欧元 | 0.8-1.4 亿欧元 | 周期和价格压制 | 低于预期 | HBM4 认证慢、memory capex 延后 | 保留悲观 | Memory 客户压价和周期性强 |
+| DRAM/HBM 相关 ALD/Epi/热处理 | 基准 | 5.5-7.5 亿欧元 | 1.3-2.1 亿欧元 | 小幅增厚 | 符合预期 | 2025 memory 为 Equipment 16%，2026 healthy growth | 保留基准 | 4F2/3D DRAM 不提前纳入 |
+| DRAM/HBM 相关 ALD/Epi/热处理 | 乐观 | 7.5-9.8 亿欧元 | 2.1-3.2 亿欧元 | 增厚 | 高于预期 | Rubin/MI400/HBM4、1c DRAM 和 HBM4 base die 拉动 | 保留乐观 | HBM/CoWoS 瓶颈可能限制下游拉货 |
+| DRAM/HBM 相关 ALD/Epi/热处理 | 极度乐观 | 10.0-13.0 亿欧元 | 3.2-4.8 亿欧元 | 明显增厚 | 明显高于预期 | HBM4E、4F2 pilot 和多客户 HBM4 同步抢工具 | 下移为上限 | 4F2/3D DRAM 大规模收入更像远期期权 |
+| Spares & Services / outcome-based services | 悲观 | 7.5-8.2 亿欧元 | 1.7-2.3 亿欧元 | 稳定但扩张不足 | 低于预期 | 工具利用率下降、服务升级延迟 | 保留悲观 | installed base 不会快速消失，悲观下仍有韧性 |
+| Spares & Services / outcome-based services | 基准 | 8.8-10.0 亿欧元 | 2.2-3.0 亿欧元 | 稳定增厚 | 符合预期 | 2025 +18% cc，Q1 +23% cc，outcome-based 25% | 保留基准 | 服务工程师和备件供应限制 |
+| Spares & Services / outcome-based services | 乐观 | 10.0-11.5 亿欧元 | 3.0-4.0 亿欧元 | 增厚 | 高于预期 | 高利用率、field upgrade、outcome-based attach 提升 | 保留乐观 | attach 提升需要客户接受长期服务方案 |
+| Spares & Services / outcome-based services | 极度乐观 | 11.5-13.0 亿欧元 | 4.0-5.2 亿欧元 | 明显增厚 | 明显高于预期 | uptime 成为客户瓶颈，服务 ASP/mix 上修 | 保留为上限 | 2030 >50% outcome-based 不能提前全额纳入 |
+| 先进封装 TSV ALD / Axus CMP | 悲观 | 0.2-0.4 亿欧元 | 约 -0.1 到 0.0 亿欧元 | ramp cost 稀释 | 低于预期 | 认证滞后，Axus 整合成本 | 保留悲观 | 封装生态竞争强 |
+| 先进封装 TSV ALD / Axus CMP | 基准 | 0.4-0.8 亿欧元 | 0.0-0.1 亿欧元 | 基本中性 | 符合小基数预期 | Axus 并入、TSV ALD wins | 保留基准但低权重 | 未披露大客户收入 |
+| 先进封装 TSV ALD / Axus CMP | 乐观 | 0.8-1.5 亿欧元 | 0.1-0.4 亿欧元 | 小幅增厚 | 高于预期 | HBM/3D integration 认证转订单 | 保留乐观 | 需回答谁买、买什么、何时确认 |
+| 先进封装 TSV ALD / Axus CMP | 极度乐观 | 1.5-3.0 亿欧元 | 0.4-1.0 亿欧元 | 增厚但不确定 | 明显高于预期 | TSV liner/界面工程成为可见分部 | 移入附录 | 缺少 NTM 规模订单证据 |
+| 功率/模拟/晶圆、SiC、成熟制程 | 悲观 | 2.2-3.2 亿欧元 | 0.3-0.7 亿欧元 | 稀释 | 低于预期 | EV/工业弱、成熟制程价格竞争 | 保留悲观 | 中国订单和出口管制不重复惩罚 |
+| 功率/模拟/晶圆、SiC、成熟制程 | 基准 | 3.5-4.5 亿欧元 | 0.6-1.1 亿欧元 | 中性到小幅稀释 | 符合预期 | 2026 gradual recovery、China mature 反弹 | 保留基准 | 非 AI 主线，毛利弱于 ALD/Epi |
+| 功率/模拟/晶圆、SiC、成熟制程 | 乐观 | 4.5-6.0 亿欧元 | 1.0-1.8 亿欧元 | 中性 | 高于预期 | China mature 订单、SiC 8 英寸认证改善 | 保留乐观 | 需看到毛利不下滑 |
+| 功率/模拟/晶圆、SiC、成熟制程 | 极度乐观 | 6.0-8.0 亿欧元 | 1.8-2.8 亿欧元 | 取决于 mix | 明显高于预期 | SiC 数据中心电源链或 mature 大单 | 移入附录 | AI power 对 ASM SiC Epi 缺少 NTM 收入路径 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、调整后经营利润、调整后净利润和自由现金流方向。汇总时已去重产品之间的客户预算、设备订单和 S&S installed-base 传导，不讨论市场定价或估值倍数。绝对增速以当前 trailing 四季度收入 31.964 亿欧元为基准。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 35.5-38.0 亿欧元 | +11%-19% | 低于 Q2 指引中点 + H2 高于 H1 的当前路径；等于只承认高可见收入和较弱 2027Q1 | 47.5%-49.0% | 25.0%-28.0% | 调整后经营利润约 8.9-10.6 亿欧元；调整后净利润约 6.8-8.2 亿欧元；EBITDA 无法可靠量化 | 低正到中性，约 1.5-3.5 亿欧元；若应收账款继续上升可阶段性转负 | 中 | H2 未高于 H1、客户验收延迟、China/export-control 冲击、memory capex 推迟 |
+| 基准公司 | 39.5-42.0 亿欧元 | +24%-31% | 符合 Q2 9.80 亿欧元 +/-5%、H2 高于 H1、2027 目标区间低中位和当前 run-rate | 50.0%-51.5% | 29.0%-31.5% | 调整后经营利润约 11.5-13.2 亿欧元；调整后净利润约 9.0-10.5 亿欧元；EBITDA 无法可靠量化 | 恢复为正，约 4.5-7.5 亿欧元；取决于 Q2/Q3 应收账款回收 | 中高 | 订单披露减少导致能见度下降；工具交付和营运资金是主要校验点 |
+| 乐观公司 | 43.0-46.5 亿欧元 | +35%-46% | 高于当前预期，且不是单一小业务造成；需要 ALD/GAA、Epi、HBM 和 S&S 至少三项同步强于基准 | 51.5%-53.0% | 31.5%-34.0% | 调整后经营利润约 13.5-15.8 亿欧元；调整后净利润约 10.8-12.8 亿欧元；EBITDA 无法可靠量化 | 较强，约 6.5-9.5 亿欧元；但若客户拉货导致应收账款增加，FCF 低于利润 | 中 | 供应链是否能把订单转收入；Q3/Q4 指引是否继续上修 |
+| 极度乐观公司 | 47.5-51.0 亿欧元 | +49%-60% | 仅代表 NTM 上限；需求、ASM 捕获、利润质量和执行同时突破 | 53.0%-54.5% | 34.0%-36.0% | 调整后经营利润约 16.2-18.4 亿欧元；调整后净利润约 13.0-15.2 亿欧元；EBITDA 无法可靠量化 | 很强但不稳定，约 8.0-11.0 亿欧元；若预付款/回款同步改善才成立 | 低到中 | 多核心客户抢工具、供应链不延迟、服务 attach 提升、China/memory 不拖累必须同时成立 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只对前四步情景做校准。正向证据只提升它实际影响的层级；反证只在需求、收入确认、份额/价格/成本、公司组合或可信度中处理一次，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 收入 8.625 亿欧元、Q2 指引 9.80 亿欧元 +/-5%、H2 高于 H1 | 收入基数、公司汇总 | 支撑 NTM 39.5-42.0 亿欧元基准 | Q1 高毛利支撑但全年需回到目标区间附近 | Q1 应收账款增加提示收入和现金错配 | 保留基准，悲观需 Q2/H2 指引失守 |
+| 2025 年末 backlog 12.47 亿欧元，Q4 B2B 1.1，但 2026Q1 起不披露季度 bookings/backlog | 收入确认、执行可信度 | 支撑 Q2/H2 收入，但降低逐季订单可见度 | 无直接利润率提升 | 订单强弱只能通过收入指引、合同负债、应收和客户 capex 间接验证 | 保留基准，下调极度乐观可信度 |
+| ALD >55% 市占目标、单片 ALD 市场 2024-2030 CAGR 9%-13%、GAA/1.4nm SAM 增量 | 需求、公司捕获 | 支撑 ALD/PEALD 基准和乐观 | 高毛利产品 mix 正向 | 若 supply chain 能交付，执行可信度增强 | 保留基准和乐观；1.4nm 非线性提前只进极度上限 |
+| Epi 市场 2024-2030 CAGR 9%-13%、ASM 披露 leading-edge Epi share gain | 公司捕获、产品贡献 | 支撑 Epi 进入基准 | 中高毛利正向 | 认证周期长，交付节奏需验证 | 保留基准，乐观需新 POR/份额证据 |
+| SEMI Q1 2026 equipment billings 365.5 亿美元、同比 +14%；300mm front-end equipment spending 2026E 1420 亿美元、+25% | 需求 | 支撑行业需求池，不直接等于 ASM 收入 | 对高端设备 mix 正向 | 若行业过热造成交付瓶颈，收入确认可能延迟 | 保留需求乐观，但不把 WFE 直接映射到收入 |
+| TSMC N2 已 HVM、N3 因 AI demand 追加全球 capacity plan，2026 capex toward high end | 需求、收入确认 | 支撑 advanced logic ALD/Epi 需求 | 高端 mix 正向 | 新 fab 需要 2-3 年，部分为 2027 以后收入 | 保留乐观；超过 NTM 的新 fab 移入附录 |
+| Memory/HBM：HBM3E/4 强、DRAM equipment 2026/2027 增长，但 4F2/3D DRAM 时间更远 | 需求、收入基数 | 支撑 DRAM/HBM 基准和乐观 | mix 正向但 memory 客户压价 | 认证和 HBM/CoWoS bottleneck 影响节奏 | 保留基准；4F2 大规模收入移入附录 |
+| S&S 2025 +18% cc、2026Q1 +23% cc、outcome-based 25% | 产品贡献、现金流 | 支撑 8.8-10.0 亿欧元基准 | 稳定利润率和现金质量 | 高收入季度应收账款会短期拖累 FCF | 保留基准和乐观 |
+| China mature logic/foundry 反弹、2025 China equipment sales >30% total revenue | 收入基数、利润率 | 支撑短期收入 | 若 mix 好可支撑 GM；若出口管制/价格竞争则压制 | 订单验收和回款需跟踪 | 保留基准但作为风险校准，不重复惩罚 |
+| Axus/TSV/advanced packaging 和 SiC 数据中心电源 | 远期期权、产品贡献 | NTM 基准只承认小额收入 | ramp cost 可能稀释 | 缺少客户、金额和确认节奏 | 先进封装小额保留；SiC AI power 仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Q2 低端、H2 未高于 H1、memory/China/验收弱于当前预期，NTM 35.5-38.0 亿欧元 | 2025 backlog、Q1/Q2 指引、S&S 韧性使收入仍不至于断崖式下滑 | 当前公开证据更支持基准而非悲观 | 保留 | 下行情景，仅在 Q2/H2 指引失守时触发 | 中 | AI CapEx 下修只在需求层处理；订单不披露只降低可信度，不重复压收入和利润 |
+| 基准 | Q2 指引兑现、H2 高于 H1、advanced logic 为主驱动，NTM 39.5-42.0 亿欧元 | A/B 级收入、指引、S&S、2025 backlog、ALD/Epi 技术位置均支持 | 产品拆分未披露，Q1 FCF 为负，orders 不再逐季披露 | 保留 | 主情景 | 中高 | 营运资金只在现金流处理，不再重复压低收入情景 |
+| 乐观 | ALD/GAA、Epi、HBM/DRAM 和 S&S 同步强于基准，NTM 43.0-46.5 亿欧元 | SEMI/TSMC/ASM 技术路径均支持更强需求；Q1 毛利和 OPM 已显示经营杠杆 | 需要公司特定收入确认路径；不能只用 WFE/TAM | 保留 | 上行情景 | 中 | HBM/CoWoS bottleneck 只限制 memory/advanced packaging，不惩罚全部公司收入 |
+| 极度乐观 | 多客户锁工具、1.4nm/HBM4/advanced packaging/China/S&S 同时超预期，NTM 47.5-51.0 亿欧元 | 需求池确实强，ALD/Epi 稀缺性强，服务 attach 有长期上行 | 缺少季度 bookings，4F2/3D DRAM 和 SiC AI power 缺少 NTM 收入确认证据，新 fab 需要时间 | 下移 | 仅作为 NTM 上限和附录跟踪，不作为当前经营预期 | 低到中 | 远期期权缺证据时只移入附录，不重复压低基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入更可能落在 39.5-42.0 亿欧元，较当前 trailing 四季度收入约 +24%-31%。主要传导来自 advanced logic/foundry ALD/PEALD、GAA/Epi、DRAM/HBM healthy growth 和 S&S installed-base 增长。这个结论高于 2025 run-rate，但没有把 1.4nm/4F2/advanced packaging 远期期权提前全额放入基准。
+- NTM 收入结论：ASM 可以把 AI/HPC 和 HBM 的行业需求较高比例传导为收入，但传导路径不是 GPU/数据中心 BOM，而是客户先进制程 wafer starts、前道工具采购、交付、安装和验收。2026Q2 指引和 H2 高于 H1 是最强当前锚点；2025 年末 backlog 只提供约 1-2 个季度的硬可见度，之后需要用指引和客户 capex 校验。
+- 利润/现金流结论：基准毛利率 50.0%-51.5%、调整后经营利润率 29.0%-31.5%，利润质量好但不应把 Q1 53.3% 毛利率和 33.1% 调整后经营利润率直接年化。自由现金流基准为正，约 4.5-7.5 亿欧元，但 Q1 应收账款上升说明强收入阶段现金流可能滞后。
+- 主要传导瓶颈：订单不再逐季披露、客户 cleanroom/验收节奏、关键子系统供应、China/export-control、memory/HBM 周期和营运资金回款。最大单点瓶颈是“强需求能否按季度转为可确认收入”，而不是行业需求是否存在。
+- 乐观情景成立条件：2026Q2 收入接近或高于指引上端、Q3/Q4 指引继续上修、H2 明显高于 H1、毛利率保持 51%+、S&S 继续 20% 左右增长、TSMC/Samsung/Intel/SK hynix/Micron 的 N3/N2/HBM 工具需求没有后移。
+- 极度乐观情景成立条件：多个核心客户同时提前锁定 ALD/Epi 工具；1.4nm pilot、HBM4/DRAM、S&S 和 China mature 同时超预期；供应链紧张带来价格/mix 优势而不是交付延迟；营运资金没有吞掉利润增长。任一核心环节缺证据，极度乐观都应降为乐观上限或附录跟踪。
+- 悲观情景触发条件：Q2 落在指引低端以下、管理层撤回 H2 高于 H1 表述、2027Q1 指引/订单信号转弱、毛利率回落至 48% 附近、应收账款继续大幅上升、China/export-control 或 memory capex 明确拖累。
+- 后续跟踪数据：2026Q2 收入相对 9.80 亿欧元 +/-5%；2026H2 是否高于 H1；2026H2 毛利率是否落在目标区间上端；S&S yoy cc 增速和 outcome-based attach；合同负债和应收账款；2025 年末 backlog 之后的下一次年度 backlog；TSMC N2/N3 capex、memory/HBM equipment orders、SEMI quarterly billings；advanced packaging/Axus 是否披露可量化客户收入；SiC PE2O8 是否出现数据中心电源链明确订单。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：2026-06-12。本报告使用的最新公司财务为 ASM 2026Q1 结果，发布日期 2026-04-21；FY2025 结果发布日期 2026-03-03；行业数据包含 SEMI 2026-06-04 Q1 设备 billings 和 SEMI 300mm Fab Outlook 2026Q2。
+- 主要收入、订单、指引和利润率来源：ASM Q1 2026 results、ASM Q1 2026 investor presentation、ASM Q4/FY2025 results、ASM 4Q25 investor presentation、ASM Investor Day 2025。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 用于验证 Q2/H2 经营节奏；FY2027 目标 37-46 亿欧元只作为 NTM 上限校验；2030 收入 >57 亿欧元、GM 47%-51%、OM 28%-32%、FCF >10 亿欧元只作为长期能力，不替代 NTM；4F2/3D DRAM、1.0nm/CFET、SiC 数据中心电源、advanced packaging 大规模独立分部均列入远期期权。
+- 项目内来源：
+  - `公司调研/晶圆制造_前道设备/ASMIY_ASM_International_公司调研_2026-06-11.md`：公司产品线、收入/订单、S&S、风险和技术位置初始资料。
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`：WFE、先进逻辑、ALD/Epi、GAA、设备景气口径。
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_存储前道制造设备_2026-06-11.md`：DRAM/HBM 前道设备、ALD/CVD/Epi/thermal、4F2/3D DRAM 节奏。
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-06-11.md`：N3/N2、CoWoS/HBM、先进封装与需求瓶颈。
+  - `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`：HBM3E/4、AI ASIC/GPU 平台和 HBM 需求节奏。
+- 外部主要来源：
+  - ASM, Q1 2026 Results Press Release, 2026-04-21: https://www.asm.com/press-releases/3278259
+  - ASM, Q1 2026 Investor Presentation, 2026-04-21: https://www.asm.com/downloads/presentations-other/2026-q1-investor-presentation
+  - ASM, Q4 and Full-Year 2025 Results, 2026-03-03: https://www.asm.com/media/yvxbavwe/20260303-asm-reports-q4-and-full-year-2025-results.pdf
+  - ASM, 4Q25 Investor Presentation, 2026-03-03: https://www.asm.com/downloads/presentations-other/2025-q4-investor-presentation
+  - ASM, Investor Day 2025 Targets, 2025-09-23: https://ml-eu.globenewswire.com/Resource/Download/5215595e-b83b-4897-b05f-f73e312d8b07
+  - ASM, ALD product page: https://www.asm.com/our-technology-products/ald
+  - ASM, Epitaxy product page: https://www.asm.com/our-technology-products/epitaxy
+  - ASM, Silicon carbide product page: https://www.asm.com/our-technology-products/silicon-carbide
+  - SEMI, Global Semiconductor Equipment Billings Increased 14% YoY in Q1 2026, 2026-06-04: https://www.semi.org/en/semi-press-release/semi-reports-global-semiconductor-equipment-billings-increased-14-percent-year-over-year-in-q1-2026
+  - SEMI, 300mm Fab Outlook Report Q2 2026: https://www.semi.org/en/products-services/market-data/300mm-fab-outlook
+  - SEMI, Global Semiconductor Equipment Sales Forecast to $156 Billion in 2027, 2025-12-16: https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-projected-to-reach-a-record-of-156-billion-dollars-in-2027-semi-reports
+  - TSMC, 2026Q1 Quarterly Results: https://investor.tsmc.com/english/quarterly-results/2026/q1
+  - TSMC, 2026Q1 Earnings Conference Transcript: https://investor.tsmc.com/chinese/encrypt/files/encrypt_file/reports/2026-04/3cef85204275f94fd111485cfdf4adb3c0263c45/TSMC%201Q26%20Transcript.pdf

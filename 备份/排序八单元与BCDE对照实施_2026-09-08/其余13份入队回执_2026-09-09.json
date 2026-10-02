@@ -1,0 +1,127 @@
+{
+  "tasks": 13,
+  "new": 13,
+  "already_present": 0,
+  "company_decision_unfinished": 0,
+  "backup": "D:/drive/Investment/tools/research-runner/queue-backups/sorting-remaining13-20260909-215013",
+  "validation": "Active items: 13\nErrors: 0\nWarnings: 0",
+  "items": [
+    {
+      "method": "01",
+      "prompt": "分析报告/公司排序/08_常规研究单元/U01_赔率与基准承载/迭代版本/R01_2026-09-08_双判断/01_研究方案.md",
+      "result": "分析报告/公司排序/08_常规研究单元/U01_赔率与基准承载/迭代版本/R01_2026-09-08_双判断/02_排序结果.md",
+      "existing": null,
+      "queue_id": "file-run-sorting-01-ABCDE-2026-09-09-2026-09-09T21_50_14-07_00-66ae842bd4",
+      "status": "pending",
+      "reasoning": "high"
+    },
+    {
+      "method": "02",
+      "prompt": "分析报告/公司排序/01_暂时有效_核心/02_预期兑现概率_十二句话S02_原10/迭代版本/R11_2026-09-07_期限证据与选择语义/01_研究方案.md",
+      "result": "分析报告/公司排序/01_暂时有效_核心/02_预期兑现概率_十二句话S02_原10/迭代版本/R11_2026-09-07_期限证据与选择语义/02_排序结果.md",
+      "existing": null,
+      "queue_id": "file-run-sorting-02-ABCDE-2026-09-09-2026-09-09T21_50_14-07_00-66ae842bd4",
+      "status": "pending",
+      "reasoning": "high"
+    },
+    {
+      "method": "04",
+      "prompt": "分析报告/公司排序/02_暂时有效_辅助/04_极简基准兑现_迭代实验_原06/迭代版本/R24_2026-09-07_期限证据与选择语义/01_研究方案.md",
+      "result": "分析报告/公司排序/02_暂时有效_辅助/04_极简基准兑现_迭代实验_原06/迭代版本/R24_2026-09-07_期限证据与选择语义/02_排序结果.md",
+      "existing": null,
+      "queue_id": "file-run-sorting-04-ABCDE-2026-09-09-2026-09-09T21_50_14-07_00-66ae842bd4",
+      "status": "pending",
+      "reasoning": "high"
+    },
+    {
+      "method": "06",
+      "prompt": "分析报告/公司排序/02_暂时有效_辅助/06_双源三视图_原01/迭代版本/R04_2026-09-07_期限证据与选择语义/01_研究方案.md",
+      "result": "分析报告/公司排序/02_暂时有效_辅助/06_双源三视图_原01/迭代版本/R04_2026-09-07_期限证据与选择语义/02_排序结果.md",
+      "existing": null,
+      "queue_id": "file-run-sorting-06-ABCDE-2026-09-09-2026-09-09T21_50_14-07_00-66ae842bd4",
+      "status": "pending",
+      "reasoning": "high"
+    },
+    {
+      "method": "07",
+      "prompt": "分析报告/公司排序/08_常规研究单元/U07_收入台阶与现金转化/迭代版本/R01_2026-09-08_双判断/01_研究方案.md",
+      "result": "分析报告/公司排序/08_常规研究单元/U07_收入台阶与现金转化/迭代版本/R01_2026-09-08_双判断/02_排序结果.md",
+      "existing": null,
+      "queue_id": "file-run-sorting-07-ABCDE-2026-09-09-2026-09-09T21_50_14-07_00-66ae842bd4",
+      "status": "pending",
+      "reasoning": "high"
+    },
+    {
+      "method": "N02",
+      "prompt": "分析报告/公司排序/08_常规研究单元/U08_证据与经济风险审查/迭代版本/R01_2026-09-08_联合审查/01_研究方案.md",
+      "result": "分析报告/公司排序/08_常规研究单元/U08_证据与经济风险审查/迭代版本/R01_2026-09-08_联合审查/02_排序结果.md",
+      "existing": null,
+      "queue_id": "file-run-sorting-N02-ABCDE-2026-09-09-2026-09-09T21_50_14-07_00-66ae842bd4",
+      "status": "pending",
+      "reasoning": "high"
+    },
+    {
+      "method": "N03",
+      "prompt": "分析报告/公司排序/06_候选新方案_待验证/N03_预期差增量与证据升级/迭代版本/R03_2026-09-07_期限证据与选择语义/01_研究方案.md",
+      "result": "分析报告/公司排序/06_候选新方案_待验证/N03_预期差增量与证据升级/迭代版本/R03_2026-09-07_期限证据与选择语义/02_排序结果.md",
+      "existing": null,
+      "queue_id": "file-run-sorting-N03-ABCDE-2026-09-09-2026-09-09T21_50_14-07_00-66ae842bd4",
+      "status": "pending",
+      "reasoning": "high"
+    },
+    {
+      "method": "N06",
+      "prompt": "分析报告/公司排序/06_候选新方案_待验证/N06_超高增长与多倍价值/迭代版本/R03_2026-09-07_期限证据与选择语义/01_研究方案.md",
+      "result": "分析报告/公司排序/06_候选新方案_待验证/N06_超高增长与多倍价值/迭代版本/R03_2026-09-07_期限证据与选择语义/02_排序结果.md",
+      "existing": null,
+      "queue_id": "file-run-sorting-N06-ABCDE-2026-09-09-2026-09-09T21_50_15-07_00-e3be9fa4b5",
+      "status": "pending",
+      "reasoning": "high"
+    },
+    {
+      "method": "E04",
+      "prompt": "分析报告/公司排序/07_输入扩展对照方案_待验证/E04_风险调整赔率_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/01_研究方案.md",
+      "result": "分析报告/公司排序/07_输入扩展对照方案_待验证/E04_风险调整赔率_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/02_排序结果.md",
+      "existing": null,
+      "queue_id": "file-run-sorting-E04-ABCDE-2026-09-09-2026-09-09T21_50_15-07_00-e3be9fa4b5",
+      "status": "pending",
+      "reasoning": "high"
+    },
+    {
+      "method": "E05",
+      "prompt": "分析报告/公司排序/07_输入扩展对照方案_待验证/E05_极简基准兑现_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/01_研究方案.md",
+      "result": "分析报告/公司排序/07_输入扩展对照方案_待验证/E05_极简基准兑现_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/02_排序结果.md",
+      "existing": null,
+      "queue_id": "file-run-sorting-E05-ABCDE-2026-09-09-2026-09-09T21_50_15-07_00-e3be9fa4b5",
+      "status": "pending",
+      "reasoning": "high"
+    },
+    {
+      "method": "E06",
+      "prompt": "分析报告/公司排序/07_输入扩展对照方案_待验证/E06_尾部生存_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/01_研究方案.md",
+      "result": "分析报告/公司排序/07_输入扩展对照方案_待验证/E06_尾部生存_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/02_排序结果.md",
+      "existing": null,
+      "queue_id": "file-run-sorting-E06-ABCDE-2026-09-09-2026-09-09T21_50_15-07_00-e3be9fa4b5",
+      "status": "pending",
+      "reasoning": "high"
+    },
+    {
+      "method": "09",
+      "prompt": "分析报告/公司排序/03_观察_待更新/09_弹性成长_原02/迭代版本/R10_2026-09-07_期限证据与选择语义/01_研究方案.md",
+      "result": "分析报告/公司排序/03_观察_待更新/09_弹性成长_原02/迭代版本/R10_2026-09-07_期限证据与选择语义/02_排序结果.md",
+      "existing": null,
+      "queue_id": "file-run-sorting-09-ABCDE-2026-09-09-2026-09-09T21_50_15-07_00-e3be9fa4b5",
+      "status": "pending",
+      "reasoning": "high"
+    },
+    {
+      "method": "N05",
+      "prompt": "分析报告/公司排序/06_候选新方案_待验证/N05_市场状态自适应双阶段/迭代版本/R03_2026-09-07_期限证据与选择语义/01_研究方案.md",
+      "result": "分析报告/公司排序/06_候选新方案_待验证/N05_市场状态自适应双阶段/迭代版本/R03_2026-09-07_期限证据与选择语义/02_排序结果.md",
+      "existing": null,
+      "queue_id": "file-run-sorting-N05-ABCDE-2026-09-09-2026-09-09T21_50_15-07_00-e3be9fa4b5",
+      "status": "pending",
+      "reasoning": "high"
+    }
+  ]
+}

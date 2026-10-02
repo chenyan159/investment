@@ -1,0 +1,369 @@
+# GEV GE Vernova 公司调研：AI 数据中心电力、燃机与电网设备超级周期
+
+报告日期：2026-06-11  
+股票代码：GEV  
+公司名称：GE Vernova Inc.  
+正式分类目录：`公司调研/电力_发电_能源_储能/`  
+本次资料边界：只使用联网搜索与项目内 `基本面/行业调研/` 相关产业资料；未读取、引用或继承 `特征量化/`、`日度资料/` 或公司调研旧稿。  
+关键时间口径：行情使用 2026-06-11 19:45 UTC 盘中快照；最新财报为 2026Q1，报告日 2026-04-22。
+
+## 一、核心结论
+
+GE Vernova 是从 GE 拆分出来的全球电力基础设施公司，不是 AI 芯片公司。投资人现在买它，核心是在买一条“电力超级周期”主线：天然气发电设备、重型/航改燃机、电网设备、变压器、开关设备、HVDC/变电站、GridOS/控制软件、长期服务合同，以及这些环节在 AI 数据中心上电压力下的定价权。公司同时有 Wind 业务的拖累和修复，但市场愿意给高估值，主要因为 Power 与 Electrification 的订单、backlog、价格和现金流正在明显加速。
+
+最重要的事实是：2026Q1 公司订单 `18.3B` 美元，同比有机增长 `71%`；总 backlog 到 `163B` 美元；Gas Power equipment backlog + slot reservation 从 2025Q4 的 `83GW` 增到 `100GW`，管理层预计 2026 年底至少 `110GW`；Electrification 单季设备订单中，数据中心相关订单 `2.4B` 美元，已经超过 2025 全年数据中心设备订单。AI 数据中心不是公司全部订单的多数，但已经是最高增速、最高紧迫性和最能解释估值重估的需求来源之一。
+
+报告最需要防止的误判：GEV 的 AI 暴露不是 GPU、HBM、光模块或服务器 BOM，而是“每 MW 能否上电”的基础设施 BOM。它的直接内容量应按 `$/MW`、`$/rack`、`$/GPU` 分摊，而不是按芯片颗数采购。按 100-120kW AI rack 估算，GEV 的燃机主设备内容量约 `$55k-132k/rack`、全能源岛内容量约 `$140k-456k/rack`；折到 GPU 约 `$0.9k-6.3k/GPU`。变压器/开关设备/变电和控制软件是另一个池子，GEV 可捕获的电气设备内容量通常约 `$0.10-0.45M/MW`，项目总电气/变压器/switchgear 可到 `$0.20-0.70M/MW`。
+
+一年维度看，最确定的高增长产品是：1）Gas Power 的 HA 重型燃机、LM2500XPRESS 航改燃机与长期服务；2）Electrification 的 Prolec/GE 变压器、开关设备、HVDC/AC 变电站、Grid Solutions；3）数据中心电力接入、微电网与 GridOS/控制软件；4）Power Conversion & Storage 中与 BESS、PCS、grid-forming、数据中心动态负载相关的小业务。Wind、传统水电、传统蒸汽和未商业化 SMR 对 2026-2027 估值弹性次要，但 SMR 和 carbon capture 是长期期权。
+
+## 二、公司整体业务与产业链位置
+
+### 2.1 公司是什么
+
+GE Vernova 是 GE 在 2024 年完成分拆后的独立能源设备与电网基础设施公司。公司业务分为三大报告分部：
+
+| 分部 | 核心业务 | 主要产品/服务 | 产业链位置 | 投资含义 |
+|---|---|---|---|---|
+| Power | 可调度发电、核电、水电、蒸汽与服务 | HA/F/LM 系列燃气轮机、LM2500XPRESS、汽轮机、发电机、HRSG、核电岛相关设备、燃机/核电长期服务 | 发电侧主设备与长期服务 | 当前订单最热在燃机与服务；AI 数据中心要求 24/7 可调度电力，推高 slot 价值 |
+| Electrification | 电网、变电、输电、配电、功率转换、储能和软件 | 变压器、开关设备、HVDC、AC 变电站、synchronous condenser、STATCOM、GridOS、SCADA/EMS/ADMS、Power Conversion & Storage | 从发电到数据中心/utility 的输配电和控制层 | AI 数据中心直接订单披露最明确；2026Q1 数据中心设备订单 2.4B 美元 |
+| Wind | 陆风、海风、风机服务 | Onshore wind、Offshore wind、repowering、叶片与服务 | 可再生发电设备 | 仍有亏损和执行风险；不是本轮 AI 电力交易的主驱动 |
+
+公司在 IR 页面和年报中反复强调其装机基础：客户使用 GE Vernova 技术产生约全球 `25%` 电力；公司有约 `7,000` 台燃气轮机装机和约 `59,000` 台风机装机。这个 installed base 使服务 backlog 很大，服务收入粘性高，是估值从周期设备公司向“设备 + 服务年金 + 电力瓶颈平台”迁移的基础。
+
+### 2.2 投资人心中的公司画像
+
+2024 拆分时，GEV 仍被看作“GE 能源资产包”：有燃机和电网优质资产，也有 Offshore Wind 和历史合同风险。到 2025-2026，投资人画像已经变成：
+
+| 投资人标签 | 支撑事实 | 风险 |
+|---|---|---|
+| 电力超级周期纯标的 | 2025 订单 `59.3B` 美元，收入 `38.1B` 美元，backlog `150B` 美元；2026Q1 backlog 增至 `163B` 美元 | 若 hyperscaler CapEx 或电网投资降温，估值会先压缩 |
+| AI 数据中心上电瓶颈受益方 | 2026Q1 Electrification 数据中心设备订单 `2.4B` 美元；Crusoe 29 台 LM2500XPRESS 近 `1GW`；AWS、Chevron、NRG 等合作线索 | AI 数据中心占燃机总需求并非多数，不能把全部 Power 增长都归因于 AI |
+| 燃机 slot 与长期服务定价权 | Gas Power backlog + slot 从 2025Q1 `50GW` 增到 2026Q1 `100GW`；新订单价格和服务 attach 上行 | 重型燃机交期拉长会带来客户改用往复式发动机、SOFC、BESS、utility PPA 等替代方案 |
+| 电网设备长交期平台 | Prolec GE 并表后增强变压器；Electrification 2026Q1 订单 `7.1B` 美元，book-to-bill 约 `2.4x` | 变压器和 switchgear 扩产需要资本、劳动力、铜钢和认证周期 |
+| Wind 拖累修复股 | Wind 2026Q1 收入同比 `-23%`，EBITDA margin `-26.7%`；2026 指引仍约 `400M` 美元分部 EBITDA 亏损 | Offshore Wind 合同、关税、质量和服务成本仍可能吞噬 Power/Electrification 改善 |
+
+### 2.3 最近三年重大业务变化
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2024-04 | GE Vernova 从 GE 分拆上市 | 投资人获得纯能源设备/电网资产；公司开始独立资本配置、分红、回购和投资者日指引 |
+| 2024-2025 | Wind 业务重整，Onshore 改善但 Offshore Wind 风险暴露 | 估值折价来源仍在；管理层强调质量、价格、合同纪律和成本转型 |
+| 2025 | 全球电力需求、数据中心和 utility 电网投资推动订单加速 | 2025 年订单 `59.3B` 美元，有机增长 `34%`；backlog `150B` 美元 |
+| 2025-03 | 与 AWS 扩大合作 | GE Vernova 为 AWS 数据中心提供 turnkey substation、主要电气设备、项目管理、施工支持，并探索发电和服务 |
+| 2025-04 | Chevron/Engine No.1/GE Vernova 数据中心供电合作推进 | 目标最多 `4GW`，GE Vernova 提供 `7` 台 7HA 重型燃机；第一批交付计划 2026，目标 2027 起服务 |
+| 2025-07 | GE Vernova 与 Crusoe 公布 29 台 LM2500XPRESS 航改燃机交易 | 合计近 `1GW`，其中 19 台 2025Q2 预订，10 台 2024-12 预订；5 分钟快启、SCR 降 NOx，是 AI 数据中心“先上电”样板 |
+| 2025-10 至 2026-02 | 收购 Prolec GE 剩余 50% 股权，交易现金对价约 `5.275B` 美元，2026-02-02 关闭 | Prolec GE 2025 预期收入约 `3B` 美元、调整 EBITDA margin 约 `25%`，低双位数增长；强化北美变压器与电网设备能力 |
+| 2025-12 至 2026Q1 | 2026/2028 指引连续上调 | 2026Q1 后，公司把 2026 收入指引上调至 `44.5-45.5B` 美元，调整 EBITDA margin 至 `12-14%`，FCF 至 `6.5-7.5B` 美元 |
+
+## 三、股价、估值、利润率与资产负债表
+
+### 3.1 最新估值快照
+
+| 指标 | 数值 | 日期/口径 | 判断 |
+|---|---:|---|---|
+| 股价 | `$916.58` | 2026-06-11 19:45 UTC，Yahoo Finance chart API 盘中价；前收 `$867.09` | 盘中波动大，较 2026-04 高点明显回落后反弹 |
+| 流通/稀释近似股数 | `269M` 股 | 2026Q1 10-Q，2026-03-31 common shares outstanding | 用于估算市值 |
+| 市值 | 约 `$246.6B` | `$916.58 * 269M` | 已按高质量电力平台估值，不是普通重工估值 |
+| TTM 收入 | 约 `$39.4B` | 2025 FY `38.068B` + 2026Q1 `9.339B` - 2025Q1 `8.032B` | TTM 仍没有完全体现 2026 指引和 Prolec 全年并表 |
+| 2026 收入指引 | `$44.5-45.5B` | 2026Q1 公司上调指引 | 相当于对 2025 收入 `38.1B` 增长约 `17-20%` |
+| TTM GAAP P/E | 约 `26.8x` | 按当前价与 TTM diluted EPS 约 `$34.22`，但含 2025 税收收益和 2026Q1 Prolec 一次性收益 | 低估了正常化 PE；不宜单独使用 |
+| Forward P/E | 约 `31-33x` | Yahoo Finance 2026-06-10 forward P/E `30.96x`，按 2026-06-11 当前价等比例折算约 `33x`；其他数据源口径可更高 | 估值已反映强订单与 margin 扩张 |
+| TTM P/S | 约 `6.26x` | `$246.6B / $39.4B` | 对设备公司很高，依赖 2026-2028 margin 上行兑现 |
+| Forward P/S | 约 `5.5x` | `$246.6B / 2026 指引中点 $45B` | 若 2028 收入 `56B`、20% EBITDA margin 成立，PS 会被增长摊薄 |
+| 2026Q1 收入增速 | `+16% GAAP`，`+7% organic` | 最新财报 | Prolec 并表和 Power/Electrification 设备增长共同推动 |
+| 2026Q1 毛利率 | `19.1%` | SEC XBRL：收入 `9.339B`、毛利 `1.781B` | 毛利率仍像工业设备公司，估值依赖高毛利服务/软件/价格改善 |
+| 2026Q1 GAAP 净利率 | `50.9%` | 净利 `4.750B`，含约 `4.5B` pre-tax M&A net gains，主要来自 Prolec GE | 极度失真；经营利润率应看调整 EBITDA margin |
+| 2026Q1 调整 EBITDA margin | `9.6%` | 最新财报 | 2026 指引 `12-14%`，2028 目标 `20%` |
+
+### 3.2 资产负债表健康度
+
+| 项目 | 2026-03-31 数值 | 变化与含义 |
+|---|---:|---|
+| 现金、现金等价物和受限现金 | `$10.172B` | 2026Q1 现金仍高，即使支付 Prolec 约 `5.3B` 现金对价、回购和分红 |
+| 总债务，包括当期部分 | `$2.857B` | 主要因 2026Q1 发行 `$2.6B` senior notes 支持 Prolec 交易；仍是净现金 |
+| 净现金 | 约 `$7.3B` | 财务安全垫强 |
+| 总资产 | `$75.612B` | Prolec 并表后资产扩大 |
+| 总负债 | `$60.547B` | 合同负债、递延收入、项目负债和长期服务责任占比高 |
+| 股东权益 | `$13.922B`；总权益 `$15.065B` | 账面杠杆不高，但资产负债表有大量项目型和服务型负债 |
+| 2026Q1 FCF | `$4.791B` | 主要来自合同负债和 current deferred income 增加 `5.574B`，本质是订单预付款/slot reservation 强劲 |
+| 信用评级 | S&P `BBB`、Fitch `BBB+` | 2025Q4 升级后仍为 investment grade |
+
+结论：GEV 资产负债表健康，净现金、投资级评级和强 FCF 给公司扩产、R&D、回购和小型并购空间。风险不在短期偿债，而在订单预付款背后的执行责任：如果燃机、变压器、HVDC、Wind 合同或 Prolec 并表出现交付/质量/成本问题，合同负债会变成未来毛利压力。现金流质量目前很好，但 2026Q1 的 FCF 不能简单年化，因为它受到大额订单预付款和 slot reservation 的工作资本时点影响。
+
+## 四、最近五个财报季度：订单、交期、分部和 AI 数据中心线索
+
+### 4.1 最近五季总表
+
+注：2026Q1 起公司 realigned 部分业务单元；表内 2025 分部数字采用公司在最新财报中披露或历史财报中的可比口径。AI 数据中心收入占比为本报告估算，因为公司未披露正式 data center revenue，只披露部分 data center orders、项目和订单线索。
+
+| 财报季度 | 订单 / book-to-bill | 总收入 / 增速 | 调整 EBITDA / margin | 净利 / 净利率 | FCF | Backlog 与交期线索 | 分部收入与 margin | AI 数据中心相关收入占比估算 |
+|---|---:|---:|---:|---:|---:|---|---|---|
+| 2026Q1 | 订单 `$18.3B`，有机 `+71%`；B2B `1.96x` | `$9.339B`，`+16%`，有机 `+7%` | `$896M`，`9.6%` | `$4.750B`，`50.9%`，含 `$4.5B` pre-tax M&A gains | `$4.791B` | 总 backlog `$163B`；Gas backlog `44GW` + slot `56GW` = `100GW`；新增 gas contracts `21GW`，其中 `19GW` slot，转换 `6GW`、出货 `4GW`；Electrification equipment backlog `$38.6B`，同比 `+75%`，含 Prolec `$5B` | Power `$4.971B` / `16.3%`；Electrification `$2.959B` / `17.8%`；Wind `$1.432B` / `-26.7%` | 直接可识别订单高：Electrification 数据中心设备订单 `$2.4B`，占公司总订单约 `13%`、占 Electrification 订单约 `34%`；收入确认估计 `$0.6-1.1B`，约总收入 `6-12%` |
+| 2025Q4 | 分部订单合计约 `$22.3B`，B2B 约 `2.0x`；Power 订单 `$11.7B` | `$10.956B`，`+4%`，有机 `+2%` | `$1.158B`，`10.6%` | `$3.670B`，`33.5%`，含 `$2.9B` 税收估值准备释放 | `$1.809B` | 总 backlog `$150B`；Gas backlog `40GW` + slot `43GW` = `83GW`；当季新增 gas contracts `24GW`，其中 `21GW` slot；转换 `8GW`、出货 `3GW`；Electrification equipment backlog `$30.5B`，同比 `+53%` | Power `$5.749B` / `16.9%`；Electrification `$2.960B` / `17.1%`；Wind `$2.368B` / `-9.5%` | 估计 `$0.5-0.9B`，约 `5-8%`；订单端更高，数据中心、电网和中东/北美 grid equipment 推高 Electrification |
+| 2025Q3 | 订单 `$14.6B`，有机 `+55%`；B2B `1.46x` | `$9.969B`，`+12%`，有机 `+10%` | `$811M`，`8.1%` | `$453M`，`4.5%` | `$732M` | 年初至 Q3 backlog 增长约 `$16B`；Gas backlog `33GW` + slot `29GW` = `62GW`；Electrification equipment backlog 约 `$26B`，年初至今 `+6.5B` | Power `$4.838B` / `13.3%`；Electrification `$2.601B` / `15.1%`；Wind `$2.647B` / `-2.3%` | 估计 `$0.4-0.7B`，约 `4-7%`；Power 和 Electrification 都出现 data center / grid 订单线索，但公司未拆收入 |
+| 2025Q2 | 订单 `$12.4B`，有机 `+4%`；B2B `1.36x` | `$9.111B`，`+11%`，有机 `+12%` | `$770M`，`8.5%` | `$492M`，`5.4%` | `$194M` | Gas backlog/slot 从 `50GW` 增至约 `55GW`；新增 gas contracts `9GW`，其中 `7GW` slot，转换 `3GW`、出货 `5GW`；Electrification equipment backlog 环比增 `$2B` | Power `$4.758B` / `16.4%`；Electrification `$2.201B` / `14.6%`；Wind `$2.245B` / `-7.3%` | 估计 `$0.3-0.6B`，约 `3-6%`；Crusoe 后续披露的 19 台 LM2500XPRESS 在 Q2 预订，是 AI DC 订单端重要拐点 |
+| 2025Q1 | 订单 `$10.2B`，有机 `+8%`；B2B `1.27x` | `$8.032B`，`+11%`，有机 `+15%` | `$457M`，`5.7%` | `$264M`，`3.3%` | `$975M` | Gas equipment backlog `29GW`，另有 `21GW` slot reservation；backlog 环比增 `$4.4B`；服务和 Power equipment 是主驱动 | Power `$4.423B` / `11.5%`；Electrification `$1.879B` / `11.4%`；Wind `$1.850B` / `-7.9%` | 估计 `$0.2-0.4B`，约 `2-5%`；早期 data center 主要在 slot reservation、AWS 合作和 grid equipment pipeline 中 |
+
+### 4.2 订单与交期判断
+
+| 项目 | 当前状态 | 交期/取消率判断 |
+|---|---|---|
+| Gas Power heavy-duty turbine slots | 2026Q1 backlog + slot `100GW`，年底目标 `110GW+`；2025Q4 到 2026Q1 又增加 `17GW` | 重型燃机新增交期已不是普通 12 个月设备周期，更接近 2028-2030 delivery slot；有 down payment/slot reservation 的项目取消率低，但非 FID 数据中心项目存在延迟 |
+| LM2500XPRESS / aero turbines | Crusoe 29 台近 `1GW`，35MW 级，95% 工厂预组装，5 分钟快启 | 航改燃机比 heavy-duty 快，适合 bridge power 和先上电；许可、燃气、SCR、噪音和地方审批是主要约束 |
+| Transformers/switchgear/HVDC | Electrification 2026Q1 B2B 约 `2.4x`；equipment backlog `$38.6B` | 变压器和开关设备是 12-36 个月长交期；Prolec 增强北美供应，但扩产仍受铜、钢、绕组、测试和 UL/IEEE/NEMA/utility 认证限制 |
+| Data center turnkey substation | AWS 合作明确覆盖 major electrical equipment、项目管理和 construction support | 对客户而言替换成本高；一旦工程标准化，GEV 可通过参考设计和 global supply chain 锁定后续站点 |
+| Wind | 2026Q1 收入降 `23%`，margin `-26.7%` | 不是供不应求，更多是历史订单、成本、关税和 Offshore contract losses；取消/重谈风险高于 Power/Electrification |
+
+## 五、2026 最新指引、收入占比和业务重心
+
+### 5.1 2026 指引
+
+2026Q1 后，公司把全年指引上调为：
+
+| 指标 | 2026 指引 | 对 2025 的含义 |
+|---|---:|---|
+| 公司收入 | `$44.5-45.5B` | 2025 收入 `$38.1B`，同比约 `+17-20%` |
+| 调整 EBITDA margin | `12-14%` | 2025 为 `8.4%`，相当于 360-560 bps 提升 |
+| FCF | `$6.5-7.5B` | 2025 为 `$3.7B`，几乎翻倍 |
+| Power | 有机收入 `+16-18%`，segment EBITDA margin `17-19%` | 燃机价格、设备出货、服务和核电服务是核心 |
+| Electrification | 收入 `$14.0-14.5B`，含约 `$3B` Prolec GE；segment EBITDA margin `18-20%` | 变压器、开关设备、HVDC、AC 变电和数据中心订单是核心 |
+| Wind | 有机收入低双位数下滑，segment EBITDA loss 约 `$400M` | 仍是拖累，不能作为乐观情景核心 |
+
+### 5.2 2026 收入占比估算
+
+按 2026 指引中点 `$45B` 粗分：
+
+| 分部 | 2026 收入估算 | 占比 | 增长 | 业务侧重点 |
+|---|---:|---:|---:|---|
+| Power | 约 `$23.1-23.3B` | `51-52%` | 有机 `+16-18%` | Gas Power equipment、HA/LM turbine、Nuclear services、LTSA、pricing |
+| Electrification | `$14.0-14.5B` | `31-32%` | 报告口径受 Prolec 并表推动；organic 仍高双位数 | 变压器、switchgear、HVDC、AC substation、数据中心电力接入、GridOS |
+| Wind | 约 `$7.2-7.6B` | `16-17%` | 低双位数下滑 | 收缩亏损、改善质量和服务，不是增长主线 |
+
+最突出业务是 Electrification 的数据中心和电网设备订单，以及 Power 的 gas turbine backlog/slot。公司最侧重的不是单个 AI 数据中心项目，而是把燃机、电网设备、变电、控制软件和服务组合成“上电交付能力”。对客户而言，GPU 买到后如果没有电力、变压器、开关设备、并网、BESS/UPS 和微电网控制，算力不能产生收入；GEV 正处在这个瓶颈层。
+
+## 六、产品地图：重点产品、潜力小业务和跳过项
+
+### 6.1 重点和突出产品
+
+| 产品/业务 | 所属分部 | 典型型号/产品 | 为什么重要 |
+|---|---|---|---|
+| HA 重型燃机 | Power / Gas Power | 7HA、9HA、F-class 升级、发电机、HRSG、controls、LTSA | 适合 GW 级 utility / dedicated power；Chevron 数据中心合作使用 7HA；服务年金强 |
+| LM2500XPRESS 航改燃机 | Power / Gas Power | LM2500XPRESS，约 35MW/台，双燃料、SCR、5 分钟快启、95% 工厂预组装 | 适合 AI 数据中心 bridge power、快速上线、分期扩容；Crusoe 29 台近 1GW 是标杆 |
+| Gas Power services / LTSA | Power | outage、parts、hot gas path、controls、upgrades、remote monitoring | 高毛利、长周期、客户锁定；新增燃机装机将转化为 2030s 服务收入 |
+| Prolec GE transformers | Electrification | 大型电力变压器、配电变压器、substation transformers、监测组件 | 2026 并表约 3B 收入；数据中心、电网和制造回流共同抢变压器产能 |
+| Grid Solutions | Electrification | HVDC converter station、GIS/AIS switchgear、circuit breaker、disconnectors、synchronous condenser、STATCOM、protection | AI 数据中心并网、utility grid modernization 和 renewable integration 都需要 |
+| 数据中心 turnkey substation | Electrification / Consulting | 变电站设计、major electrical equipment、project management、construction support | AWS 合作证明 hyperscaler 需要标准化、快速复制的电力接入方案 |
+| GridOS / software / control | Electrification | GridOS、SCADA、EMS、ADMS、DERMS、APM、network model、AI/analytics | 毛利高、切换成本高，适合把发电、电网、BESS、负载调度打通 |
+| Power Conversion & Storage | Electrification | PCS、grid-forming inverter、BESS integration、industrial drives、microgrid control | 目前较小，但 AI dynamic load、BESS 接入加速和 800VDC/MVDC 会提高价值 |
+| BWRX-300 / SMR 与 nuclear services | Power / Nuclear | GE Hitachi BWRX-300，Darlington SMR，核电汽轮机/服务 | 长期数据中心 24/7 clean power 期权；一年收入贡献小 |
+
+### 6.2 有潜力的小业务小产品，不能漏
+
+| 小业务/产品 | 当前收入贡献 | 潜力来源 |
+|---|---:|---|
+| Synchronous condenser / grid stability | 中小 | Saudi Arabia Q3 2025 同步调相机订单 `$1.6B`；数据中心大负载并网会提高无功、电压稳定、短路容量需求 |
+| GridOS + AI/analytics | 中小 | AWS 云合作、Alteia acquisition、GEV 自身 AI/robotics 投入；若数据中心参与 demand response，软件价值上升 |
+| Consulting Services for data center power integration | 小 | 数据中心选址、并网、微电网、电力市场和可靠性建模复杂；高毛利但规模受人才限制 |
+| PCS / grid-forming / microgrid controls | 小到中 | AI 负载阶跃、BESS、onsite generation 和 utility interconnection 审查需要统一控制 |
+| Hydrogen-ready / carbon capture ready gas power | 小 | 不是 2026 收入核心，但可降低燃气数据中心的 ESG/许可阻力 |
+| SMR engineering | 小 | Darlington FID 是长期验证；若 hyperscaler 签首批 SMR PPA，会重估核电期权 |
+
+### 6.3 本报告主动跳过或低权重的业务
+
+| 跳过/低权重业务 | 原因 |
+|---|---|
+| 普通 Onshore Wind 新机 | 2026 收入下滑、margin 仍弱；与 AI 数据中心电力瓶颈关系间接 |
+| Offshore Wind 大型新项目 | 历史合同亏损、关税和安装风险高；不是一年内高质量增长 |
+| 传统水电和传统蒸汽 | 稳定但增速低；更像 installed base 服务 |
+| Proficy manufacturing software | 已在 2026Q1 完成出售给 TPG，不能再作为未来增长核心 |
+| 纯 renewable PPA 叙事 | AI 数据中心真正短缺的是可上电时间、变压器、switchgear、燃机/BESS/并网；单独 renewable 不能解释 GEV 当前订单跃迁 |
+
+## 七、关键产品当前贡献、AI 重要性和供需紧张度
+
+评分：5 = 极高，1 = 低。收入贡献为 2026 年 run-rate 或本报告估算，不是公司正式披露口径。
+
+| 产品/业务 | 当前对公司收入贡献 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 | 依据 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Gas Power：HA/F 重型燃机 + 发电岛主设备 | 2026 Power 收入中约 `$12-16B`，其中数据中心直接/间接约 `$1.5-3B` | 高双位数 | 5 | 5 | 5 | 4 | 100GW backlog+slot，重型燃机 slot 拉长；utility、IPP、industrial、data center 同时抢产能 |
+| LM2500XPRESS / aero fast power | 当前订单可见近 `1GW`；Crusoe 29 台设备收入估计 `$0.6-1.1B`，按交付确认 | 高，基数小 | 5 | 5 | 4 | 4 | 35MW 级、5 分钟快启、95% 工厂组装，适合先上电 |
+| Gas Power services / LTSA | Power 收入中约 `$6-8B+` run-rate，新增装机会逐年累积 | 中高 | 4 | 4 | 4 | 5 | installed base 大，客户换供应商难；长期服务合同带高毛利 |
+| Prolec GE / transformers | 2026 并表约 `$3B`，低双位数增长；AI/数据中心可归因约 `$0.6-1.2B` | 高 | 5 | 5 | 5 | 4 | Prolec 2025 收入约 3B、EBITDA margin 约 25%；变压器是硬交期瓶颈 |
+| Switchgear / HVDC / AC substation / Grid Solutions | 2026 Electrification 非 Prolec 收入约 `$11-11.5B`；data center/grid modernization 直接高弹性 | 高双位数 | 5 | 5 | 5 | 4 | Q1 Electrification 订单 `$7.1B`、B2B 2.4x、equipment backlog `$38.6B` |
+| Data center turnkey substation / Consulting | 当前估计 `$0.5-1.5B` run-rate，订单快于收入 | 很高 | 5 | 5 | 4 | 4 | AWS 多站点 substation 框架；客户要缩短 interconnection |
+| GridOS / EMS / SCADA / 控制软件 | 当前估计 `$0.5-1.0B`，数据中心直接较小 | 中高 | 4 | 4 | 3 | 4 | 软件小但毛利高；微电网、BESS、demand response、grid stability 需要控制层 |
+| PCS / BESS / Power Conversion & Storage | 当前估计 `$1-2B` 级别，其中 AI direct 小 | 高，基数小 | 4 | 4 | 3 | 3 | 数据中心 BESS/UPS 从备电变接入加速器，但 GE V 的份额不如 Tesla/Fluence/Schneider/Vertiv 清晰 |
+| BWRX-300 / SMR | 当前收入小，主要工程和服务 | 低到中 | 3 长期 5 | 2 一年内低 | 2 | 4 长期 | Darlington FID 是信号，但商用批量在 2030 前后，不是 2026-2027 收入主力 |
+
+## 八、一年后收入贡献三情景
+
+口径：一年后指 2027 年中附近 run-rate；不等同 2027 全年指引。基准已经假设 AI 数据中心和电网投资保持强劲；极度乐观需要更多 hyperscaler / utility / IPP 项目 FID、燃机 slot 和变压器扩产兑现。
+
+| 产品/业务 | 基准情景：一年后 | 乐观情景：一年后 | 极度乐观情景：一年后 |
+|---|---|---|---|
+| HA/F 重型燃机 + 发电岛 | 年收入贡献 `$15-18B`；同比 `+15-25%`；AI 重要性 5；供需 5；溢价 4 | `$18-21B`；同比 `+25-35%`；更多 data center dedicated power 和 utility reserve margin 订单 | `$22B+`；同比 `+35%+`；数据中心、LNG、工业和电网可靠性共振，价格继续上修 |
+| LM2500XPRESS / aero fast power | `$0.8-1.5B`；Crusoe 交付和后续 aero 订单确认；供需 4 | `$1.5-2.5B`；新增 1-2GW AI bridge power 订单，更多 modular power island | `$3B+`；若 Stargate/NeoCloud/BTM power 快速复制，aero slot 变硬瓶颈 |
+| Gas Power services / LTSA | `$7-9B+`；服务收入稳增，新增燃机签长期服务 | `$9-10B+`；更多 LTSA attach、价格和升级 | `$10B+`；客户把 availability SLA 和数字监控纳入 AI power 合同 |
+| Prolec / transformers | `$3.3-3.8B`；低双位数增长，margin 高 | `$3.8-4.5B`；北美扩产和数据中心/utility 订单优先 | `$4.5B+`；如果长交期继续，价格和预付款进一步上行 |
+| Switchgear/HVDC/AC substation/Grid Solutions | `$12-14B`；B2B 高但收入受产能限制 | `$14-16B`；更多 HVDC、GIS、synchronous condenser、data center substation 出货 | `$16B+`；数据中心 500MW+ campus 多地启动，GEV 获多站点框架 |
+| Data center turnkey substation/consulting | `$1.2-2.2B`；AWS 类框架继续复制 | `$2.2-3.5B`；hyperscaler 把 GEV 纳入标准电力接入供应链 | `$4B+`；如果 utility interconnection 变成最大瓶颈，turnkey substation 获溢价 |
+| GridOS / EMS / SCADA / control | `$0.7-1.2B`；更多 grid/demand flexibility 项目 | `$1.2-2.0B`；软件 attach 到 BESS、微电网和 substation | `$2B+`；AI 数据中心参与 VPP、负载调度和电力市场，软件成为标准件 |
+| PCS/BESS/Power Conversion & Storage | `$1.5-2.5B`；PCS/微电网控制受益 | `$2.5-4.0B`；GEV 与 grid equipment 打包，提高 attach | `$4B+`；若 2h/4h BESS 被 utility 视为数据中心接入条件，订单加速 |
+| BWRX-300 / SMR | `$0.1-0.4B`；工程、许可、早期设备 | `$0.4-0.8B`；更多 SMR PPA/engineering award | `$1B+`；若 hyperscaler 或 utility 签首批明确数据中心 SMR 项目，长期期权重估 |
+
+## 九、BOM、每 MW / 每 rack / 每 GPU / 每 optical port 内容量与价格传导
+
+### 9.1 关键假设
+
+| 假设 | 数值 |
+|---|---:|
+| 高密 AI rack | 100-120kW 为 2026 主流高端；2027 300kW+ 和 1MW rack 进入设计/RFP |
+| 100-120kW NVL72 类 rack | 72 GPU / rack；约 8.3-10 rack/MW；约 600-720 GPU/MW |
+| 300kW rack | 约 3.3 rack/MW；若仍按 72 GPU/rack，则约 240 GPU/MW；实际可能因平台架构不同变化 |
+| optical port 折算 | GEV 不供应 optical port；若按 72-144 个高速 scale-out optical ports/rack，仅用于把电力基础设施成本间接摊到网络端口 |
+| 能源侧 CapEx | 项目内行业资料估计：aero/simple cycle 或 engine+BESS 约 `$1.4-3.8M/MW`；重型燃机/联合循环约 `$2.0-4.8M/MW`；SOFC 约 `$2.8-5.9M/MW` |
+
+### 9.2 GE Vernova 可捕获内容量
+
+| 产品/业务 | BOM 内容 | GEV 可捕获 `$ / MW` | 每 100-120kW rack | 每 GPU | 每 optical port | 价格传导 |
+|---|---|---:|---:|---:|---:|---|
+| LM2500XPRESS aero turbine | LM2500 aero gas turbine、generator、gas compressor、controls、SCR、模块化封装、黑启动/快启 | `$0.55-1.10M/MW` 主设备；完整能源岛 `$1.4-3.8M/MW`，GEV 只捕获其中设备/服务部分 | 主设备 `$55k-132k/rack`；能源岛 `$140k-456k/rack` | 主设备 `$0.9k-1.8k/GPU`；能源岛 `$2.3k-6.3k/GPU` | 若 72-144 ports/rack，主设备约 `$380-1,830/port` | GPU 折旧和租金高，提前 6-12 个月上电的机会成本远高于燃机价差；供应商可通过 slot、预付款、价格 escalator 传导 |
+| 7HA/9HA heavy-duty gas turbine | 大型 gas turbine、generator、controls、排放处理、HRSG/CCGT 配套、LTSA | 主设备/GEV 包约 `$0.7-1.4M/MW`；CCGT 全项目 `$2.0-4.8M/MW` | 主设备 `$70k-168k/rack`；全项目 `$200k-576k/rack` | 主设备 `$1.2k-2.3k/GPU`；全项目 `$3.3k-8.0k/GPU` | `$490-2,330/port` 主设备分摊 | 适合 1GW+ 长期基荷；time-to-power 慢于 aero/engine，但效率和 LTSA 经济性更好 |
+| Transformers / Prolec | 大型变压器、配电变压器、油浸/干式、bushing、tap changer、传感器、监测 | GE/Prolec 可捕获约 `$0.05-0.25M/MW`；项目总 transformer/switchgear 约 `$0.20-0.70M/MW` | GE 捕获 `$5k-30k/rack`；项目总 `$20k-84k/rack` | GE 捕获 `$80-420/GPU`；项目总 `$330-1,170/GPU` | `$35-420/port` | 长交期、铜钢、绕组、测试和认证决定议价；客户为排队和可靠性付溢价 |
+| Switchgear / HVDC / AC substation | GIS/AIS、断路器、保护继电器、HVDC converter、STATCOM、synchronous condenser、substation EPC support | GE 可捕获约 `$0.10-0.45M/MW`，大型 HVDC/高压变电可更高 | `$10k-54k/rack` | `$170-750/GPU` | `$70-750/port` | 数据中心从普通负载变成电网稳定性变量；utility 要求模型、保护和 ride-through，设备标准提高 |
+| GridOS / EMS / SCADA / microgrid controls | EMS、SCADA、ADMS、DERMS、GridOS、数字孪生、保护协调、负载调度接口 | 初始 `$0.01-0.06M/MW`， recurring `$0.002-0.01M/MW-year` | 初始 `$1k-7k/rack` | `$17-100/GPU` | `$7-100/port` | 软件小额但高毛利；一旦进入运营和并网责任边界，切换成本高 |
+| PCS / BESS controls / Power Conversion | PCS、grid-forming inverter、BESS controls、microgrid controller、DC bus 接口 | 若只算 GE 可捕获 PCS/control，约 `$0.05-0.25M/MW`；全 2h/4h BESS 可能 `$0.6-1.5M/MW` | GE 捕获 `$5k-30k/rack`；全 BESS `$60k-180k/rack` | GE 捕获 `$80-420/GPU`；全 BESS `$1k-2.5k/GPU` | `$35-420/port` | BESS 从“备电/套利”变成 interconnection accelerator 和 AI load smoothing；软件/VPP attach 决定利润 |
+
+### 9.3 认证与被供应链采纳程度
+
+| 产品 | 当前采纳程度 | 重要认证/客户验证阶段 |
+|---|---|---|
+| LM2500XPRESS | Crusoe 已下 29 台近 1GW；数据中心应用从 pilot 进入大型项目 | 设备成熟，数据中心项目还要完成空气许可、SCR、噪音、燃气供应、并网/离网测试和现场 commissioning |
+| HA 重型燃机 | utility/IPP 标准产品，Chevron 数据中心项目验证 data center dedicated power | 客户 FID、燃气合同、PJM/ERCOT 或地方审批、CCS/renewable integration 规划是关键 |
+| Transformers / Prolec | 已是北美电网设备供应链重要厂商；2026 并表后 GEV 可打包销售 | IEEE C57、UL/CSA/NEMA、utility/hyperscaler approved vendor list、工厂型式试验和短路试验 |
+| Switchgear/HVDC/Grid Solutions | utility、industrial 和 data center 都采用；AWS 框架说明 hyperscaler 认可 | IEC/IEEE、NERC/FERC 相关合规、utility interconnection study、保护协调和现场验收 |
+| GridOS/controls | utility 软件已有基础，data center microgrid 仍在早期复制 | 客户 IT/OT 安全审查、SCADA/EMS 接口、NERC CIP、云部署安全、模型准确性 |
+| PCS/BESS controls | 市场有强竞争者；GEV 有能力但数据中心份额需继续验证 | UL 1741、IEEE 1547、UL 9540/9540A、NFPA 855、grid-forming 功能测试和消防/保险审查 |
+
+## 十、一年后产能、采纳和认证三情景
+
+| 产品/业务 | 基准：一年后产能/采纳 | 乐观：一年后产能/采纳 | 极度乐观：一年后产能/采纳 |
+|---|---|---|---|
+| HA/F 重型燃机 | backlog+slot 达 `110-125GW`；2027-2029 交付窗口基本锁定；数据中心约占新增 slot `20-30%` | `125-145GW`；更多数据中心/utility FID，价格维持高位 | `145GW+`；产能扩张和 slot monetization 继续，2029 前可售 slot 更少 |
+| LM2500XPRESS / aero | Crusoe 项目交付推进，新增 1GW 级订单；数据中心成为 aero 标准用例之一 | 新增 2-3GW；设备、SCR、模块化 EPC 形成标准包 | 新增 4GW+；aero 成为 AI bridge power 快速复制方案 |
+| Transformers / Prolec | Prolec 年化收入 `$3.3-3.8B`；北美扩产继续；认证/AVL 增加 | `$4B+`，数据中心和 utility 共同拉动，价格强 | `$4.5B+`，关键型号排队更长，GEV 可要求更多预付款 |
+| Switchgear/HVDC/Grid Solutions | equipment backlog 继续 `30%+` 增长但收入受交付限制 | 大型 HVDC、synchronous condenser 和 data center substation 订单明显加速 | 多个 hyperscaler 框架签约，GEV 成为标准电力接入平台 |
+| GridOS/control | 更多 utility 和 data center power integration 项目，软件 attach 上升 | 进入 BESS/VPP/AI load management 标准方案 | 与 hyperscaler/utility 共同定义数据中心可调负载接口，软件收入斜率上修 |
+| PCS/BESS controls | 数据中心 BESS 参与接入加速，但 GEV 份额仍待证明 | GEV 通过 grid equipment 打包 PCS/control | 若 utility 强制 flexible connection，BESS/PCS/control 订单显著上行 |
+| SMR/BWRX-300 | Darlington 继续工程/许可，收入小 | 更多 utility/hyperscaler 签 early engineering | 首个明确 AI 数据中心 SMR PPA 或设备框架出现，长期估值上修 |
+
+## 十一、基于 backlog 和供给的未来一年业务增速预测
+
+| 业务 | 当前订单与供给 | 基准未来一年增速 | 乐观未来一年增速 | 极度乐观未来一年增速 | 取消/延迟风险 |
+|---|---|---:|---:|---:|---|
+| Power / Gas Power | 100GW backlog+slot；2026Q1 新增 21GW，出货 4GW；价格和预付款强 | Power 收入 `+16-22%`；Gas Power equipment 更高 | `+22-30%` | `+30%+` | 非 FID data center / BTM power 延迟；燃气管线、空气许可、EPC 和 turbine parts |
+| Electrification | Q1 订单 7.1B，B2B 2.4x；equipment backlog 38.6B；Prolec 并表 | 收入 `+25-35%` 报告口径，organic 高双位数 | `+35-45%` | `+45%+` | transformer/switchgear 产能、铜钢、型式试验、客户变更 |
+| Data center electrical equipment | Q1 订单 2.4B，超过 2025 全年；AWS 框架、多站点需求 | 直接收入 `$3-5B` run-rate | `$5-7B` | `$8B+` | 数据中心项目 permit、financing、utility study、客户 CapEx 调整 |
+| Wind | 2026 指引低双位数下滑，约 400M 亏损 | 收入 `-8% 至 -15%`，亏损收窄有限 | 收入持平到小降，亏损低于 300M | 恢复增长但概率低 | 关税、Offshore contract losses、质量/服务成本 |
+| 公司整体 | 2026 指引 44.5-45.5B；2028 目标 56B 和 20% EBITDA margin | 未来一年 run-rate 向 `$48-51B` 靠近 | `$51-55B` | `$55B+` 提前靠近 2028 目标 | 如果 AI CapEx 降速、融资收紧或订单无法转收入，估值会先受压 |
+
+## 十二、竞争格局、替代方案和客户替换成本
+
+### 12.1 发电设备竞争
+
+| 领域 | 主要竞争对手 | GEV 优势 | 替代风险 | 客户替换成本 |
+|---|---|---|---|---|
+| Heavy-duty gas turbine | Siemens Energy、Mitsubishi Power、Ansaldo、Solar Turbines/Caterpillar 在不同功率段 | HA/F installed base、服务网络、slot、效率、LTSA | 往复式发动机、SOFC、utility PPA、SMR 长期替代 | 极高。燃机选型绑定工程、燃气、排放、备件、控制系统和 20 年服务 |
+| Aero gas turbine | Rolls-Royce、Solar Turbines/Caterpillar、Baker Hughes/Nuovo Pignone、Pratt derivatives | LM2500 系列成熟、模块化、快启、35MW 级适合分期 | 往复式发动机更模块化，SOFC 更低排放，柴油/移动发电更快但许可差 | 高。项目 once designed-in 后，现场布局、燃气、排放和控制系统不易替换 |
+| Gas services | 原厂 GE、第三方服务商、零部件修复商 | 原厂数据、认证零件、性能升级和远程监控 | 第三方价格低，但高端 HA/LM 客户更保守 | 很高。availability SLA 与 warranty/性能风险绑定原厂 |
+
+### 12.2 电网设备竞争
+
+| 领域 | 主要竞争对手 | GEV 优势 | 替代风险 | 客户替换成本 |
+|---|---|---|---|---|
+| Transformers | Hitachi Energy、Siemens Energy、Schneider、Eaton、ABB、Mitsubishi Electric、Hyundai、Hyosung、SGB-SMIT、中国变压器厂商 | Prolec 北美能力、GE grid 客户、数据中心框架打包 | 客户可多供应商采购，但长交期和认证限制替换 | 高。approved vendor、工厂测试、保护协调和 spare strategy 绑定 |
+| Switchgear / HVDC / AC substations | Hitachi Energy、Siemens、Schneider、Eaton、ABB、Mitsubishi、Powell、SEL、S&C | HVDC/Grid Solutions 综合能力、AWS 类 turnkey、全球工程 | 项目可拆分给 EPC/设备商，但接口风险上升 | 中高到高。数据中心客户更偏少数合格供应商 |
+| Synchronous condenser / STATCOM / grid stability | Siemens、Hitachi Energy、ABB、Mitsubishi、Nidec、Ingeteam | GE rotating equipment 与 grid study 能力 | 电力电子替代部分旋转设备；项目取决于 utility study | 高。并网模型和电网稳定性责任绑定 |
+
+### 12.3 软件、控制和 BESS 竞争
+
+| 领域 | 主要竞争对手 | GEV 优势 | 风险 |
+|---|---|---|---|
+| GridOS / EMS / SCADA / ADMS | Schneider/ETAP/AVEVA、Siemens、ABB/Hitachi、SEL、Oracle Utilities、OSI/Emerson | 与自家 grid equipment、发电设备和 consulting 打包；utility installed base | 软件切换慢但销售周期长；云安全、NERC CIP 和系统集成复杂 |
+| PCS / BESS / microgrid | Tesla Energy、Fluence、Wartsila GEMS、Schneider、Eaton、Vertiv、Sungrow、CATL/BYD 系统商、Hitachi Energy | 与 substation、grid controls 和 Power Conversion 结合 | 电池/PCS价格战；GEV 在数据中心 BESS 份额不如电网设备明确 |
+| AI data center power integration | Schneider、Eaton、Vertiv、Siemens、ABB、Quanta、EMCOR、Burns & McDonnell、Black & Veatch、Kiewit | 同时有发电、grid equipment、software 和 consulting | EPC/MEP 和设备商可能分别吃掉项目；GEV 未必总包 |
+
+### 12.4 新技术是否主流
+
+| 技术 | 是否可能成为主流 | 结论 |
+|---|---|---|
+| 天然气发电 + 变电 + BESS/UPS + 微电网控制 | 2026-2028 主流 | 最现实的 AI 数据中心上电路径之一，尤其在电网接入慢、GPU 已到货、客户愿意为 time-to-power 付费时 |
+| LM2500XPRESS/aero bridge power | 2026-2027 高弹性 | 不会替代所有 CCGT，但在快速部署 AI campus 中会成为重要桥接层 |
+| HA 重型燃机/CCGT | 中长期主流 | 适合高效率基荷和 utility/data center dedicated power；交期慢但经济性强 |
+| SOFC fuel cells | 高潜力替代 | Bloom/Oracle 2.8GW 证明方向；如果产能、寿命和服务网络兑现，会抢一部分数据中心 prime power |
+| 800VDC/MVDC/solid-state protection | 2027+ 趋势 | NVIDIA/OCP/行业会议已把 100kW-1MW rack power 推到台前；GEV 更多在园区/中压/控制侧受益，而非服务器内 DC/DC |
+| SMR | 长期潜在主流，短期不是 | 对 2030s 24/7 clean power 很关键，但一年收入贡献小 |
+
+## 十三、风险与反证指标
+
+| 风险 | 观察指标 | 对 GEV 的影响 |
+|---|---|---|
+| AI 数据中心项目延迟 | permit、EPC NTP、燃气管线、utility interconnection、客户融资、GPU 利用率和租金 | 订单仍可能存在，但收入确认后移；估值压缩 |
+| 燃机不是唯一答案 | Bloom/Oracle SOFC、Caterpillar/Wartsila engines、utility PPA、nuclear PPA、SMR | GEV Power 上修幅度受限，但 Electrification 仍受益 |
+| Wind 持续亏损 | Offshore contract loss、tariff、quality cost、service cost | 抵消 Power/Electrification margin 扩张 |
+| Prolec 整合/扩产低于预期 | Prolec revenue、EBITDA margin、工厂扩产、交付质量 | Electrification margin 和 data center transformer 能力低于预期 |
+| 毛利率没有兑现 | 2026 adjusted EBITDA margin 是否达 12-14%；Power 17-19%、Electrification 18-20% | 高 PS 估值需要 2028 20% EBITDA margin 路径 |
+| Backlog 转收入慢 | B2B 高但收入增长低；contract liabilities 增但 delivery 不动 | 现金流阶段性好，但未来执行风险积累 |
+| 监管/排放/社区 | NOx、CO2、噪音、水、燃气价格、地方反对 | 燃机数据中心项目特别敏感；SOFC/renewable/nuclear 替代叙事增强 |
+
+## 十四、最终判断
+
+GEV 是 AI 数据中心电力链里少数同时拥有“发电主设备 + 电网主设备 + 变压器 + HVDC/变电 + 控制软件 + 长期服务”的平台型公司。当前基本面强度来自真实订单，而不是单纯主题叙事：2026Q1 总订单 `18.3B`、总 backlog `163B`、Gas backlog+slot `100GW`、Electrification data center equipment orders `2.4B` 都是硬数据。
+
+但估值也已经很高。当前最合理的投资框架不是用 GAAP PE 低位来判断便宜，因为 2025 税收收益和 2026Q1 Prolec gain 扭曲了净利；应该看 2026-2028 收入、调整 EBITDA margin、FCF 和 backlog 转收入。若公司能把 2026 adjusted EBITDA margin 做到 `12-14%`，并向 2028 `20%` 目标推进，当前高 PS 有支撑；若 Wind 再度恶化、燃机/变压器交付延后，或 AI 数据中心项目融资和 permit 延迟，估值会先于订单下修。
+
+一年内最值得跟踪的指标：
+
+1. Gas Power backlog + slot 是否从 `100GW` 继续向 `110GW+`、`125GW+` 上行，以及 data center 在新增 slot 中的比例。
+2. Electrification 数据中心设备订单是否连续多个季度维持 `$2B+`，而不是 2026Q1 一次性高峰。
+3. Prolec 并表后收入、margin 和交付质量是否接近 `3B` 收入、约 `25%` EBITDA margin 的交易模型。
+4. 2026 adjusted EBITDA margin 是否按季度爬向 `12-14%` 全年指引。
+5. Crusoe、AWS、Chevron、NRG 等项目是否从公告进入 permit、FID、设备交付和上电。
+6. Wind 亏损是否被控制在约 `$400M`，避免吞噬 Power/Electrification 上行。
+
+## 十五、主要资料来源
+
+公司与财报：
+
+- GE Vernova 2026Q1 earnings press release PDF: https://www.gevernova.com/sites/default/files/gev_webcast_pressrelease_04222026.pdf
+- GE Vernova 2026Q1 10-Q PDF: https://www.gevernova.com/sites/default/files/gev_webcast_10-q_04222026.pdf
+- GE Vernova 2025Q4/FY2025 earnings press release PDF: https://www.gevernova.com/sites/default/files/gev_webcast_pressrelease_01282026.pdf
+- GE Vernova 2025Q3 earnings press release PDF: https://www.gevernova.com/sites/default/files/gev_webcast_pressrelease_10222025.pdf
+- GE Vernova 2025Q2 earnings press release PDF: https://www.gevernova.com/sites/default/files/gev_webcast_pressrelease_07232025.pdf
+- GE Vernova 2025Q1 earnings press release PDF: https://www.gevernova.com/sites/default/files/gev_webcast_pressrelease_04232025.pdf
+- GE Vernova 2025 Annual Report: https://www.gevernova.com/sites/default/files/gevernova_2025_annual_report.pdf
+- GE Vernova 2025 Investor Update presentation: https://www.gevernova.com/sites/default/files/gev_webcast_presentation_12092025.pdf
+- GE Vernova Prolec GE acquisition release: https://www.gevernova.com/news/press-releases/ge-vernova-fully-acquire-prolec-ge-joint-venture
+- GE Vernova investor relations page: https://www.gevernova.com/investors
+
+数据中心与订单：
+
+- GE Vernova / Crusoe LM2500XPRESS release: https://www.gevernova.com/news/press-releases/ge-vernova-crusoe-announce-major-29-unit-aeroderivative-gas-turbine-deliver-ai-data-centers
+- GE Vernova / AWS strategic framework agreement: https://www.gevernova.com/news/press-releases/ge-vernova-aws-accelerate-global-energy-demand
+- GE Vernova / Chevron data center power article: https://www.gevernova.com/gas-power/resources/articles/2025/meeting-data-center-demand-with-chevron
+- Chevron / Engine No.1 / GE Vernova release: https://www.chevron.com/newsroom/2025/q1/power-solutions-for-us-data-centers
+- NRG / GE Vernova data center gas generation coverage: https://www.datacenterdynamics.com/en/news/nrg-partners-with-ge-vernova-to-develop-54gw-of-gas-generation-for-us-data-center-market/
+- Power Engineering data center turbine order coverage: https://www.power-eng.com/gas/turbines/data-centers-drive-record-surge-in-ge-vernova-power-equipment-orders-as-turbine-slots-tighten-through-2030/
+
+项目内行业资料：
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- `行业调研/产业背景/顶级会议信息/data_center_world_2026_research_report.md`
+- `行业调研/产业背景/顶级会议信息/OCP_EMEA_Summit_2026_高密度调研报告.md`
+- `行业调研/产业背景/顶级会议信息/conference_update_apec_2026_2026-06-10.md`

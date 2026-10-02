@@ -1,0 +1,2366 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-06-04",
+  "generatedAt": "2026-07-12T13:03:20.282Z",
+  "sourceRoot": "基本面/特征量化",
+  "policy": {
+    "spearmanMin": 0.12,
+    "top30Bottom30Min": 0,
+    "rule": "Spearman >= 0.12 且 Top30-Bottom30 > 0"
+  },
+  "directions": {
+    "upsideDiscovery": {
+      "label": "上涨发现",
+      "evalType": "6个月涨跌",
+      "description": "筛选对过去6个月横截面收益有正向排序能力的特征。"
+    },
+    "downsideProtection": {
+      "label": "下跌保护",
+      "evalType": "三段SOXX下跌区间涨跌",
+      "description": "筛选在三段SOXX下跌压力窗口中更抗跌的特征。"
+    }
+  },
+  "groups": {
+    "upsideDiscovery": [
+      "F10",
+      "F11",
+      "F14",
+      "F36",
+      "F44",
+      "F50"
+    ],
+    "downsideProtection": [
+      "F05",
+      "F06",
+      "F07",
+      "F08",
+      "F09",
+      "F29",
+      "F30",
+      "F32",
+      "F41",
+      "F45",
+      "F46",
+      "F47",
+      "F48",
+      "F49",
+      "F51",
+      "F52"
+    ]
+  },
+  "effectiveFeatureIds": [
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F10",
+    "F11",
+    "F14",
+    "F29",
+    "F30",
+    "F32",
+    "F36",
+    "F41",
+    "F44",
+    "F45",
+    "F46",
+    "F47",
+    "F48",
+    "F49",
+    "F50",
+    "F51",
+    "F52"
+  ],
+  "featureCount": 22,
+  "features": [
+    {
+      "id": "F05",
+      "name": "当前估值赔率",
+      "concept": "当前估值相对基本面、成长和风险的赔率是否有吸引力。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "较强正向",
+          "pearson": 0.286,
+          "spearman": 0.275,
+          "kendall": 0.194,
+          "top30Bottom30": 22.69,
+          "topCompanies": [
+            {
+              "ticker": "SMCI",
+              "companyName": "Super Micro Computer Inc",
+              "return": "-123.92%",
+              "score": 9,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "VST",
+              "companyName": "Vistra Corp",
+              "return": "-66.07%",
+              "score": 9,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "HPE",
+              "companyName": "惠普企业",
+              "return": "-50.37%",
+              "score": 8.9,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "NVDA",
+              "companyName": "NVIDIA",
+              "return": "-59.56%",
+              "score": 8.9,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "TSM",
+              "companyName": "台积电",
+              "return": "-56.76%",
+              "score": 8.9,
+              "rank": 5,
+              "confidence": "中"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "SMR",
+              "companyName": "NuScale Power",
+              "return": "-111.97%",
+              "score": 1,
+              "rank": 179,
+              "confidence": "低"
+            },
+            {
+              "ticker": "RKLB",
+              "companyName": "Rocket Lab",
+              "return": "-90.58%",
+              "score": 1,
+              "rank": 178,
+              "confidence": "低"
+            },
+            {
+              "ticker": "POET",
+              "companyName": "POET Technologies",
+              "return": "-88.77%",
+              "score": 1,
+              "rank": 177,
+              "confidence": "低"
+            },
+            {
+              "ticker": "OKLO",
+              "companyName": "Oklo Inc",
+              "return": "-122.49%",
+              "score": 1,
+              "rank": 176,
+              "confidence": "低"
+            },
+            {
+              "ticker": "NVTS",
+              "companyName": "Navitas Semiconductor",
+              "return": "-117.17%",
+              "score": 1,
+              "rank": 175,
+              "confidence": "低"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F05_当前估值赔率_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F06",
+      "name": "同业历史估值分位",
+      "concept": "估值相对自身历史和同业的位置是否仍有安全边际。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "较强正向",
+          "pearson": 0.23,
+          "spearman": 0.272,
+          "kendall": 0.193,
+          "top30Bottom30": 15.78,
+          "topCompanies": [
+            {
+              "ticker": "ADBE",
+              "companyName": "Adobe",
+              "return": "-39.23%",
+              "score": 10,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ATKR",
+              "companyName": "Atkore",
+              "return": "-49.84%",
+              "score": 10,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "CC",
+              "companyName": "The Chemours Company",
+              "return": "-51.38%",
+              "score": 10,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ET",
+              "companyName": "Energy Transfer LP",
+              "return": "-17.84%",
+              "score": 10,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "PSIX",
+              "companyName": "Power Solutions International",
+              "return": "-130.28%",
+              "score": 10,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "VICR",
+              "companyName": "Vicor Corporation",
+              "return": "-53.05%",
+              "score": 1,
+              "rank": 180,
+              "confidence": "中"
+            },
+            {
+              "ticker": "TSLA",
+              "companyName": "Tesla",
+              "return": "-66.64%",
+              "score": 1,
+              "rank": 179,
+              "confidence": "中"
+            },
+            {
+              "ticker": "SMR",
+              "companyName": "NuScale Power",
+              "return": "-111.97%",
+              "score": 1,
+              "rank": 178,
+              "confidence": "低"
+            },
+            {
+              "ticker": "SITM",
+              "companyName": "SiTime Corporation",
+              "return": "-69.69%",
+              "score": 1,
+              "rank": 177,
+              "confidence": "中"
+            },
+            {
+              "ticker": "RKLB",
+              "companyName": "Rocket Lab",
+              "return": "-90.58%",
+              "score": 1,
+              "rank": 176,
+              "confidence": "低"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F06_同业历史估值分位_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F07",
+      "name": "估值隐含增长压力",
+      "concept": "当前估值隐含的增长要求是否过高、兑现压力是否可承受。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "较强正向",
+          "pearson": 0.327,
+          "spearman": 0.332,
+          "kendall": 0.239,
+          "top30Bottom30": 27.25,
+          "topCompanies": [
+            {
+              "ticker": "VISN",
+              "companyName": "Vistance Networks",
+              "return": "-32.94%",
+              "score": 9.1,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ET",
+              "companyName": "Energy Transfer LP",
+              "return": "-17.84%",
+              "score": 8.8,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ADBE",
+              "companyName": "Adobe",
+              "return": "-39.23%",
+              "score": 8.5,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "PLAB",
+              "companyName": "Photronics",
+              "return": "-55.95%",
+              "score": 8.4,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "PSIX",
+              "companyName": "Power Solutions International",
+              "return": "-130.28%",
+              "score": 8.4,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "SMR",
+              "companyName": "NuScale Power",
+              "return": "-111.97%",
+              "score": 1,
+              "rank": 180,
+              "confidence": "中"
+            },
+            {
+              "ticker": "RKLB",
+              "companyName": "Rocket Lab",
+              "return": "-90.58%",
+              "score": 1,
+              "rank": 179,
+              "confidence": "中"
+            },
+            {
+              "ticker": "POET",
+              "companyName": "POET Technologies",
+              "return": "-88.77%",
+              "score": 1,
+              "rank": 178,
+              "confidence": "中"
+            },
+            {
+              "ticker": "NVTS",
+              "companyName": "Navitas Semiconductor",
+              "return": "-117.17%",
+              "score": 1,
+              "rank": 177,
+              "confidence": "中"
+            },
+            {
+              "ticker": "AXTI",
+              "companyName": "AXT Inc",
+              "return": "+20.00%",
+              "score": 1,
+              "rank": 176,
+              "confidence": "高"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F07_估值隐含增长压力_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F08",
+      "name": "财务承压可控性",
+      "concept": "资产负债表、现金、融资和亏损压力在周期波动中是否可控。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "弱到中等正向",
+          "pearson": 0.301,
+          "spearman": 0.197,
+          "kendall": 0.131,
+          "top30Bottom30": 19.18,
+          "topCompanies": [
+            {
+              "ticker": "NVDA",
+              "companyName": "NVIDIA",
+              "return": "-59.56%",
+              "score": 9.4,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ANET",
+              "companyName": "Arista Networks",
+              "return": "-71.59%",
+              "score": 8.8,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "MSFT",
+              "companyName": "微软",
+              "return": "-36.85%",
+              "score": 8.8,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "SHECY",
+              "companyName": "Shin-Etsu Chemical 信越化学",
+              "return": "-25.75%",
+              "score": 8.8,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ARM",
+              "companyName": "Arm Holdings",
+              "return": "-61.37%",
+              "score": 8.6,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "FLNC",
+              "companyName": "Fluence Energy",
+              "return": "-90.92%",
+              "score": 3.3,
+              "rank": 169,
+              "confidence": "高"
+            },
+            {
+              "ticker": "APLD",
+              "companyName": "Applied Digital",
+              "return": "-117.36%",
+              "score": 3.2,
+              "rank": 170,
+              "confidence": "高"
+            },
+            {
+              "ticker": "SMCI",
+              "companyName": "Super Micro Computer Inc",
+              "return": "-123.92%",
+              "score": 3.2,
+              "rank": 171,
+              "confidence": "高"
+            },
+            {
+              "ticker": "NVTS",
+              "companyName": "Navitas Semiconductor",
+              "return": "-117.17%",
+              "score": 3,
+              "rank": 173,
+              "confidence": "高"
+            },
+            {
+              "ticker": "CC",
+              "companyName": "The Chemours Company",
+              "return": "-51.38%",
+              "score": 2.8,
+              "rank": 174,
+              "confidence": "高"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F08_财务承压可控性_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F09",
+      "name": "现金流转换质量",
+      "concept": "会计利润转为现金流的质量，以及盈利是否可持续。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "较强正向",
+          "pearson": 0.312,
+          "spearman": 0.28,
+          "kendall": 0.198,
+          "top30Bottom30": 23.64,
+          "topCompanies": [
+            {
+              "ticker": "NVDA",
+              "companyName": "NVIDIA",
+              "return": "-59.56%",
+              "score": 9.4,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "SNPS",
+              "companyName": "Synopsys",
+              "return": "-52.77%",
+              "score": 9,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "CDNS",
+              "companyName": "Cadence Design Systems",
+              "return": "-36.05%",
+              "score": 8.9,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ADBE",
+              "companyName": "Adobe",
+              "return": "-39.23%",
+              "score": 8.9,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "KLAC",
+              "companyName": "KLA Corporation",
+              "return": "-44.27%",
+              "score": 8.7,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "RKLB",
+              "companyName": "Rocket Lab",
+              "return": "-90.58%",
+              "score": 3,
+              "rank": 170,
+              "confidence": "中"
+            },
+            {
+              "ticker": "INTC",
+              "companyName": "Intel Corporation 英特尔",
+              "return": "-61.32%",
+              "score": 2.7,
+              "rank": 171,
+              "confidence": "中"
+            },
+            {
+              "ticker": "NVTS",
+              "companyName": "Navitas Semiconductor",
+              "return": "-117.17%",
+              "score": 2.7,
+              "rank": 172,
+              "confidence": "中"
+            },
+            {
+              "ticker": "APLD",
+              "companyName": "Applied Digital",
+              "return": "-117.36%",
+              "score": 2.6,
+              "rank": 173,
+              "confidence": "中"
+            },
+            {
+              "ticker": "SMR",
+              "companyName": "NuScale Power",
+              "return": "-111.97%",
+              "score": 2.5,
+              "rank": 174,
+              "confidence": "中"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F09_现金流转换质量_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F10",
+      "name": "1-3月收入兑现信号",
+      "concept": "未来1-3个月收入是否能由订单、交付或价格快速兑现。",
+      "directions": [
+        "upsideDiscovery"
+      ],
+      "metrics": {
+        "upsideDiscovery": {
+          "label": "弱到中等正向",
+          "pearson": 0.092,
+          "spearman": 0.14,
+          "kendall": 0.106,
+          "top30Bottom30": 22.59,
+          "topCompanies": [
+            {
+              "ticker": "DELL",
+              "companyName": "Dell Technologies",
+              "return": "+129.12%",
+              "score": 9.8,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "NVDA",
+              "companyName": "NVIDIA",
+              "return": "+17.94%",
+              "score": 9.5,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "SNDK",
+              "companyName": "SanDisk",
+              "return": "+639.37%",
+              "score": 9.4,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "VRT",
+              "companyName": "Vertiv",
+              "return": "+85.90%",
+              "score": 9.3,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "MU",
+              "companyName": "Micron Technology",
+              "return": "+303.20%",
+              "score": 9.2,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "OKLO",
+              "companyName": "Oklo",
+              "return": "-23.56%",
+              "score": 2.4,
+              "rank": 180,
+              "confidence": "低"
+            },
+            {
+              "ticker": "SMR",
+              "companyName": "NuScale Power",
+              "return": "-36.61%",
+              "score": 2.8,
+              "rank": 179,
+              "confidence": "低"
+            },
+            {
+              "ticker": "FCEL",
+              "companyName": "FuelCell Energy",
+              "return": "+280.87%",
+              "score": 3,
+              "rank": 178,
+              "confidence": "低"
+            },
+            {
+              "ticker": "WOLF",
+              "companyName": "Wolfspeed",
+              "return": "+208.59%",
+              "score": 3.2,
+              "rank": 177,
+              "confidence": "低"
+            },
+            {
+              "ticker": "LWLG",
+              "companyName": "Lightwave Logic",
+              "return": "+167.90%",
+              "score": 3.4,
+              "rank": 176,
+              "confidence": "低"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F10_1-3月收入兑现信号_特征评估_6个月涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F11",
+      "name": "3-6月收入加速信号",
+      "concept": "未来3-6个月收入斜率是否有加速迹象。",
+      "directions": [
+        "upsideDiscovery"
+      ],
+      "metrics": {
+        "upsideDiscovery": {
+          "label": "弱到中等正向",
+          "pearson": 0.12,
+          "spearman": 0.168,
+          "kendall": 0.118,
+          "top30Bottom30": 40.75,
+          "topCompanies": [
+            {
+              "ticker": "NVDA",
+              "companyName": "NVIDIA",
+              "return": "+17.94%",
+              "score": 9.8,
+              "rank": 1,
+              "confidence": ""
+            },
+            {
+              "ticker": "DELL",
+              "companyName": "Dell Technologies",
+              "return": "+129.12%",
+              "score": 9.6,
+              "rank": 2,
+              "confidence": ""
+            },
+            {
+              "ticker": "ORCL",
+              "companyName": "Oracle Corporation",
+              "return": "-6.83%",
+              "score": 9.5,
+              "rank": 3,
+              "confidence": ""
+            },
+            {
+              "ticker": "VRT",
+              "companyName": "Vertiv",
+              "return": "+85.90%",
+              "score": 9.5,
+              "rank": 4,
+              "confidence": ""
+            },
+            {
+              "ticker": "CRWV",
+              "companyName": "CoreWeave",
+              "return": "+40.36%",
+              "score": 9.4,
+              "rank": 5,
+              "confidence": ""
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "OKLO",
+              "companyName": "Oklo Inc",
+              "return": "-23.56%",
+              "score": 2,
+              "rank": 180,
+              "confidence": ""
+            },
+            {
+              "ticker": "SMR",
+              "companyName": "NuScale Power",
+              "return": "-36.61%",
+              "score": 2.2,
+              "rank": 179,
+              "confidence": ""
+            },
+            {
+              "ticker": "WOLF",
+              "companyName": "Wolfspeed",
+              "return": "+208.59%",
+              "score": 3,
+              "rank": 178,
+              "confidence": ""
+            },
+            {
+              "ticker": "LWLG",
+              "companyName": "Lightwave Logic",
+              "return": "+167.90%",
+              "score": 3.5,
+              "rank": 177,
+              "confidence": ""
+            },
+            {
+              "ticker": "ENPH",
+              "companyName": "Enphase Energy",
+              "return": "+152.62%",
+              "score": 3.8,
+              "rank": 176,
+              "confidence": ""
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F11_3-6月收入加速信号_特征评估_6个月涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F14",
+      "name": "3-6月利润率改善信号",
+      "concept": "未来3-6个月毛利率、费用率或产品结构是否改善。",
+      "directions": [
+        "upsideDiscovery"
+      ],
+      "metrics": {
+        "upsideDiscovery": {
+          "label": "弱到中等正向",
+          "pearson": 0.093,
+          "spearman": 0.165,
+          "kendall": 0.119,
+          "top30Bottom30": 44.13,
+          "topCompanies": [
+            {
+              "ticker": "VRT",
+              "companyName": "Vertiv",
+              "return": "+85.90%",
+              "score": 9.6,
+              "rank": 1,
+              "confidence": ""
+            },
+            {
+              "ticker": "TSM",
+              "companyName": "台积电",
+              "return": "+45.79%",
+              "score": 9.5,
+              "rank": 2,
+              "confidence": ""
+            },
+            {
+              "ticker": "MU",
+              "companyName": "Micron Technology 美光科技",
+              "return": "+303.20%",
+              "score": 9.4,
+              "rank": 3,
+              "confidence": ""
+            },
+            {
+              "ticker": "GEV",
+              "companyName": "GE Vernova",
+              "return": "+74.98%",
+              "score": 9.3,
+              "rank": 4,
+              "confidence": ""
+            },
+            {
+              "ticker": "MPWR",
+              "companyName": "Monolithic Power Systems",
+              "return": "+75.16%",
+              "score": 9.2,
+              "rank": 5,
+              "confidence": ""
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "ALLE",
+              "companyName": "Allegion plc",
+              "return": "-20.79%",
+              "score": 4.5,
+              "rank": 171,
+              "confidence": ""
+            },
+            {
+              "ticker": "INTC",
+              "companyName": "Intel Corporation 英特尔",
+              "return": "+230.81%",
+              "score": 4.2,
+              "rank": 172,
+              "confidence": ""
+            },
+            {
+              "ticker": "ENPH",
+              "companyName": "Enphase Energy",
+              "return": "+152.62%",
+              "score": 4.1,
+              "rank": 173,
+              "confidence": ""
+            },
+            {
+              "ticker": "NVTS",
+              "companyName": "Navitas Semiconductor",
+              "return": "+246.28%",
+              "score": 3.6,
+              "rank": 174,
+              "confidence": ""
+            },
+            {
+              "ticker": "RKLB",
+              "companyName": "Rocket Lab",
+              "return": "+258.29%",
+              "score": 3.2,
+              "rank": 175,
+              "confidence": ""
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F14_3-6月利润率改善信号_特征评估_6个月涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F29",
+      "name": "客户切换成本",
+      "concept": "客户迁移到替代供应商的难度和粘性。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "弱到中等正向",
+          "pearson": 0.195,
+          "spearman": 0.164,
+          "kendall": 0.101,
+          "top30Bottom30": 10.48,
+          "topCompanies": [
+            {
+              "ticker": "ASML",
+              "companyName": "ASML Holding NV",
+              "return": "-46.12%",
+              "score": 9.8,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "NVDA",
+              "companyName": "NVIDIA",
+              "return": "-59.56%",
+              "score": 9.7,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "TSM",
+              "companyName": "台积电",
+              "return": "-56.76%",
+              "score": 9.5,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "SNPS",
+              "companyName": "Synopsys",
+              "return": "-52.77%",
+              "score": 9.3,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "CDNS",
+              "companyName": "Cadence Design Systems",
+              "return": "-36.05%",
+              "score": 9.2,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "FCEL",
+              "companyName": "FuelCell Energy",
+              "return": "-98.87%",
+              "score": 4.6,
+              "rank": 180,
+              "confidence": "低"
+            },
+            {
+              "ticker": "CC",
+              "companyName": "The Chemours Company",
+              "return": "-51.38%",
+              "score": 4.8,
+              "rank": 179,
+              "confidence": "中"
+            },
+            {
+              "ticker": "VISN",
+              "companyName": "Vistance Networks",
+              "return": "-32.94%",
+              "score": 5.2,
+              "rank": 178,
+              "confidence": "低"
+            },
+            {
+              "ticker": "WDC",
+              "companyName": "WesternDigital",
+              "return": "-55.76%",
+              "score": 5.5,
+              "rank": 177,
+              "confidence": "中"
+            },
+            {
+              "ticker": "ENPH",
+              "companyName": "Enphase Energy",
+              "return": "-67.78%",
+              "score": 5.5,
+              "rank": 176,
+              "confidence": "中"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F29_客户切换成本_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F30",
+      "name": "收入可见度",
+      "concept": "backlog、RPO、长约、产能预约等带来的收入可见度。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "弱到中等正向",
+          "pearson": 0.236,
+          "spearman": 0.212,
+          "kendall": 0.15,
+          "top30Bottom30": 23.4,
+          "topCompanies": [
+            {
+              "ticker": "GOOGL",
+              "companyName": "Alphabet Inc",
+              "return": "-28.77%",
+              "score": 9.4,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "MSFT",
+              "companyName": "微软",
+              "return": "-36.85%",
+              "score": 9.3,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ORCL",
+              "companyName": "Oracle Corporation",
+              "return": "-58.88%",
+              "score": 9.3,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "PWR",
+              "companyName": "Quanta Services",
+              "return": "-22.20%",
+              "score": 9.1,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "VRT",
+              "companyName": "Vertiv",
+              "return": "-70.57%",
+              "score": 9.1,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "LWLG",
+              "companyName": "Lightwave Logic",
+              "return": "-1.41%",
+              "score": 2.2,
+              "rank": 180,
+              "confidence": "低"
+            },
+            {
+              "ticker": "OKLO",
+              "companyName": "Oklo Inc",
+              "return": "-122.49%",
+              "score": 2.3,
+              "rank": 179,
+              "confidence": "低"
+            },
+            {
+              "ticker": "SMR",
+              "companyName": "NuScale Power",
+              "return": "-111.97%",
+              "score": 2.5,
+              "rank": 178,
+              "confidence": "低"
+            },
+            {
+              "ticker": "NVTS",
+              "companyName": "Navitas Semiconductor",
+              "return": "-117.17%",
+              "score": 2.8,
+              "rank": 177,
+              "confidence": "低"
+            },
+            {
+              "ticker": "PLAB",
+              "companyName": "Photronics",
+              "return": "-55.95%",
+              "score": 3.4,
+              "rank": 176,
+              "confidence": "低"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F30_收入可见度_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F32",
+      "name": "订单下修风险可控性",
+      "concept": "订单下修、取消、延期或砍单风险是否可控。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "较强正向",
+          "pearson": 0.322,
+          "spearman": 0.277,
+          "kendall": 0.19,
+          "top30Bottom30": 23.32,
+          "topCompanies": [
+            {
+              "ticker": "MU",
+              "companyName": "Micron Technology 美光科技",
+              "return": "-72.62%",
+              "score": 8.6,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "SNPS",
+              "companyName": "Synopsys",
+              "return": "-52.77%",
+              "score": 8.6,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "MSFT",
+              "companyName": "微软",
+              "return": "-36.85%",
+              "score": 8.6,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "EME",
+              "companyName": "EMCOR Group",
+              "return": "-54.09%",
+              "score": 8.6,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "CDNS",
+              "companyName": "Cadence Design Systems",
+              "return": "-36.05%",
+              "score": 8.4,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "FCEL",
+              "companyName": "FuelCell Energy",
+              "return": "-98.87%",
+              "score": 1.8,
+              "rank": 180,
+              "confidence": "高"
+            },
+            {
+              "ticker": "SMR",
+              "companyName": "NuScale Power",
+              "return": "-111.97%",
+              "score": 2.2,
+              "rank": 178,
+              "confidence": "高"
+            },
+            {
+              "ticker": "LWLG",
+              "companyName": "Lightwave Logic",
+              "return": "-1.41%",
+              "score": 2.2,
+              "rank": 177,
+              "confidence": "低"
+            },
+            {
+              "ticker": "OKLO",
+              "companyName": "Oklo Inc",
+              "return": "-122.49%",
+              "score": 2.4,
+              "rank": 176,
+              "confidence": "高"
+            },
+            {
+              "ticker": "POET",
+              "companyName": "POET Technologies",
+              "return": "-88.77%",
+              "score": 2.5,
+              "rank": 175,
+              "confidence": "低"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F32_订单下修风险可控性_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F36",
+      "name": "供给瓶颈受益度",
+      "concept": "公司是否受益于AI产业链的供给瓶颈和稀缺产能。",
+      "directions": [
+        "upsideDiscovery"
+      ],
+      "metrics": {
+        "upsideDiscovery": {
+          "label": "弱到中等正向",
+          "pearson": 0.044,
+          "spearman": 0.147,
+          "kendall": 0.093,
+          "top30Bottom30": 47.63,
+          "topCompanies": [
+            {
+              "ticker": "MU",
+              "companyName": "Micron Technology 美光科技",
+              "return": "+303.20%",
+              "score": 9.5,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "VRT",
+              "companyName": "Vertiv",
+              "return": "+85.90%",
+              "score": 9.5,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "TSM",
+              "companyName": "台积电",
+              "return": "+45.79%",
+              "score": 9.4,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "CRDO",
+              "companyName": "Credo Technology Group",
+              "return": "+34.89%",
+              "score": 9.3,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ETN",
+              "companyName": "Eaton Corporation",
+              "return": "+18.93%",
+              "score": 9.2,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "ADBE",
+              "companyName": "Adobe",
+              "return": "-24.97%",
+              "score": 2.5,
+              "rank": 180,
+              "confidence": "高"
+            },
+            {
+              "ticker": "RKLB",
+              "companyName": "Rocket Lab",
+              "return": "+258.29%",
+              "score": 2.8,
+              "rank": 179,
+              "confidence": "中"
+            },
+            {
+              "ticker": "CRWD",
+              "companyName": "CrowdStrike",
+              "return": "+28.68%",
+              "score": 2.8,
+              "rank": 178,
+              "confidence": "高"
+            },
+            {
+              "ticker": "IBM",
+              "companyName": "International Business Machines",
+              "return": "-15.83%",
+              "score": 3.2,
+              "rank": 177,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ALLE",
+              "companyName": "Allegion plc",
+              "return": "-20.79%",
+              "score": 3.2,
+              "rank": 176,
+              "confidence": "中"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F36_供给瓶颈受益度_特征评估_6个月涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F41",
+      "name": "负向预期差风险可控性",
+      "concept": "负向预期差、失望财报或指引下修风险是否可控。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "较强正向",
+          "pearson": 0.465,
+          "spearman": 0.464,
+          "kendall": 0.332,
+          "top30Bottom30": 40.84,
+          "topCompanies": [
+            {
+              "ticker": "DELL",
+              "companyName": "Dell Technologies",
+              "return": "-34.34%",
+              "score": 8.2,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "EME",
+              "companyName": "EMCOR Group",
+              "return": "-54.09%",
+              "score": 8.2,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ETR",
+              "companyName": "Entergy Corporation",
+              "return": "-5.67%",
+              "score": 8.1,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "TEL",
+              "companyName": "TE Connectivity",
+              "return": "-50.44%",
+              "score": 8.1,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "TSM",
+              "companyName": "台积电",
+              "return": "-56.76%",
+              "score": 8.1,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "LWLG",
+              "companyName": "Lightwave Logic",
+              "return": "-1.41%",
+              "score": 1.5,
+              "rank": 180,
+              "confidence": "低"
+            },
+            {
+              "ticker": "POET",
+              "companyName": "POET Technologies",
+              "return": "-88.77%",
+              "score": 1.7,
+              "rank": 179,
+              "confidence": "低"
+            },
+            {
+              "ticker": "FCEL",
+              "companyName": "FuelCell Energy",
+              "return": "-98.87%",
+              "score": 1.7,
+              "rank": 178,
+              "confidence": "低"
+            },
+            {
+              "ticker": "SMR",
+              "companyName": "NuScale Power",
+              "return": "-111.97%",
+              "score": 1.8,
+              "rank": 177,
+              "confidence": "低"
+            },
+            {
+              "ticker": "NVTS",
+              "companyName": "Navitas Semiconductor",
+              "return": "-117.17%",
+              "score": 1.9,
+              "rank": 176,
+              "confidence": "低"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F41_负向预期差风险可控性_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F44",
+      "name": "上行弹性",
+      "concept": "在乐观情景中收入、利润和估值向上弹性的大小。",
+      "directions": [
+        "upsideDiscovery"
+      ],
+      "metrics": {
+        "upsideDiscovery": {
+          "label": "弱到中等正向",
+          "pearson": 0.224,
+          "spearman": 0.236,
+          "kendall": 0.161,
+          "top30Bottom30": 74.66,
+          "topCompanies": [
+            {
+              "ticker": "CRWV",
+              "companyName": "CoreWeave",
+              "return": "+40.36%",
+              "score": 9.4,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "CRDO",
+              "companyName": "Credo Technology Group",
+              "return": "+34.89%",
+              "score": 8.8,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "NBIS",
+              "companyName": "Nebius Group",
+              "return": "+120.05%",
+              "score": 8.8,
+              "rank": 3,
+              "confidence": "低"
+            },
+            {
+              "ticker": "DELL",
+              "companyName": "Dell Technologies",
+              "return": "+129.12%",
+              "score": 8.6,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "POWL",
+              "companyName": "Powell Industries",
+              "return": "+175.90%",
+              "score": 8.5,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "MMM",
+              "companyName": "3M",
+              "return": "-9.15%",
+              "score": 3.8,
+              "rank": 180,
+              "confidence": "中"
+            },
+            {
+              "ticker": "ADBE",
+              "companyName": "Adobe",
+              "return": "-24.97%",
+              "score": 3.9,
+              "rank": 179,
+              "confidence": "中"
+            },
+            {
+              "ticker": "ALLE",
+              "companyName": "Allegion plc",
+              "return": "-20.79%",
+              "score": 4,
+              "rank": 178,
+              "confidence": "中"
+            },
+            {
+              "ticker": "CC",
+              "companyName": "The Chemours Company",
+              "return": "+80.43%",
+              "score": 4,
+              "rank": 177,
+              "confidence": "中"
+            },
+            {
+              "ticker": "MSI",
+              "companyName": "Motorola Solutions",
+              "return": "+10.61%",
+              "score": 4.1,
+              "rank": 176,
+              "confidence": "中"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F44_上行弹性_特征评估_6个月涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F45",
+      "name": "执行风险可控性",
+      "concept": "项目建设、交付、供应、管理和整合执行风险是否可控。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "弱到中等正向",
+          "pearson": 0.289,
+          "spearman": 0.231,
+          "kendall": 0.153,
+          "top30Bottom30": 32.2,
+          "topCompanies": [
+            {
+              "ticker": "TSM",
+              "companyName": "台积电",
+              "return": "-56.76%",
+              "score": 8.8,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "VRT",
+              "companyName": "Vertiv",
+              "return": "-70.57%",
+              "score": 8.8,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "NVDA",
+              "companyName": "NVIDIA",
+              "return": "-59.56%",
+              "score": 8.6,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ETN",
+              "companyName": "Eaton Corporation",
+              "return": "-41.95%",
+              "score": 8.6,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ANET",
+              "companyName": "Arista Networks",
+              "return": "-71.59%",
+              "score": 8.5,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "OKLO",
+              "companyName": "Oklo Inc",
+              "return": "-122.49%",
+              "score": 2,
+              "rank": 180,
+              "confidence": "低"
+            },
+            {
+              "ticker": "FCEL",
+              "companyName": "FuelCell Energy",
+              "return": "-98.87%",
+              "score": 2.4,
+              "rank": 179,
+              "confidence": "低"
+            },
+            {
+              "ticker": "SMR",
+              "companyName": "NuScale Power",
+              "return": "-111.97%",
+              "score": 2.7,
+              "rank": 178,
+              "confidence": "低"
+            },
+            {
+              "ticker": "LWLG",
+              "companyName": "Lightwave Logic",
+              "return": "-1.41%",
+              "score": 2.7,
+              "rank": 177,
+              "confidence": "低"
+            },
+            {
+              "ticker": "NVTS",
+              "companyName": "Navitas Semiconductor",
+              "return": "-117.17%",
+              "score": 2.9,
+              "rank": 175,
+              "confidence": "低"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F45_执行风险可控性_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F46",
+      "name": "替代风险可控性",
+      "concept": "被替代、绕开、自研或技术路线切换的风险是否可控。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "弱到中等正向",
+          "pearson": 0.157,
+          "spearman": 0.144,
+          "kendall": 0.095,
+          "top30Bottom30": 9.83,
+          "topCompanies": [
+            {
+              "ticker": "ASML",
+              "companyName": "ASML Holding NV",
+              "return": "-46.12%",
+              "score": 9.7,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "TSM",
+              "companyName": "台积电",
+              "return": "-56.76%",
+              "score": 9.3,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "SNPS",
+              "companyName": "Synopsys",
+              "return": "-52.77%",
+              "score": 9.1,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "MU",
+              "companyName": "Micron Technology 美光科技",
+              "return": "-72.62%",
+              "score": 9,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "CDNS",
+              "companyName": "Cadence Design Systems",
+              "return": "-36.05%",
+              "score": 9,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "FCEL",
+              "companyName": "FuelCell Energy",
+              "return": "-98.87%",
+              "score": 2.4,
+              "rank": 180,
+              "confidence": "低"
+            },
+            {
+              "ticker": "LWLG",
+              "companyName": "Lightwave Logic",
+              "return": "-1.41%",
+              "score": 3.1,
+              "rank": 179,
+              "confidence": "低"
+            },
+            {
+              "ticker": "POET",
+              "companyName": "POET Technologies",
+              "return": "-88.77%",
+              "score": 3.4,
+              "rank": 178,
+              "confidence": "低"
+            },
+            {
+              "ticker": "ENPH",
+              "companyName": "Enphase Energy",
+              "return": "-67.78%",
+              "score": 3.7,
+              "rank": 177,
+              "confidence": "中"
+            },
+            {
+              "ticker": "MRAM",
+              "companyName": "Everspin Technologies",
+              "return": "-86.38%",
+              "score": 3.7,
+              "rank": 176,
+              "confidence": "低"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F46_替代风险可控性_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F47",
+      "name": "客户集中风险可控性",
+      "concept": "客户集中、单一大客户议价或采购波动风险是否可控。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "较强正向",
+          "pearson": 0.52,
+          "spearman": 0.524,
+          "kendall": 0.388,
+          "top30Bottom30": 46.74,
+          "topCompanies": [
+            {
+              "ticker": "LIN",
+              "companyName": "Linde plc",
+              "return": "-17.73%",
+              "score": 9,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "TMO",
+              "companyName": "Thermo Fisher Scientific",
+              "return": "-26.01%",
+              "score": 9,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ADBE",
+              "companyName": "Adobe",
+              "return": "-39.23%",
+              "score": 8.8,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "MCHP",
+              "companyName": "Microchip Technology",
+              "return": "-87.08%",
+              "score": 8.8,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "CRWD",
+              "companyName": "CrowdStrike",
+              "return": "-28.96%",
+              "score": 8.7,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "POET",
+              "companyName": "POET Technologies",
+              "return": "-88.77%",
+              "score": 1.7,
+              "rank": 180,
+              "confidence": "低"
+            },
+            {
+              "ticker": "LWLG",
+              "companyName": "Lightwave Logic",
+              "return": "-1.41%",
+              "score": 1.8,
+              "rank": 179,
+              "confidence": "低"
+            },
+            {
+              "ticker": "FCEL",
+              "companyName": "FuelCell Energy",
+              "return": "-98.87%",
+              "score": 2.1,
+              "rank": 178,
+              "confidence": "低"
+            },
+            {
+              "ticker": "SMR",
+              "companyName": "NuScale Power",
+              "return": "-111.97%",
+              "score": 2.2,
+              "rank": 177,
+              "confidence": "低"
+            },
+            {
+              "ticker": "OKLO",
+              "companyName": "Oklo Inc",
+              "return": "-122.49%",
+              "score": 2.3,
+              "rank": 176,
+              "confidence": "低"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F47_客户集中风险可控性_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F48",
+      "name": "非AI业务拖累可控性",
+      "concept": "传统/非AI业务对AI主线估值和利润兑现的拖累是否可控。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "弱到中等正向",
+          "pearson": 0.181,
+          "spearman": 0.143,
+          "kendall": 0.092,
+          "top30Bottom30": 11.77,
+          "topCompanies": [
+            {
+              "ticker": "NVDA",
+              "companyName": "NVIDIA",
+              "return": "-59.56%",
+              "score": 9.7,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ALAB",
+              "companyName": "AsteraLabs",
+              "return": "-80.79%",
+              "score": 9.3,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "TSM",
+              "companyName": "台积电",
+              "return": "-56.76%",
+              "score": 9.2,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "CRDO",
+              "companyName": "Credo Technology Group",
+              "return": "-100.81%",
+              "score": 9.1,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ASML",
+              "companyName": "ASML Holding NV",
+              "return": "-46.12%",
+              "score": 9,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "FCEL",
+              "companyName": "FuelCell Energy",
+              "return": "-98.87%",
+              "score": 1.8,
+              "rank": 180,
+              "confidence": "低"
+            },
+            {
+              "ticker": "POET",
+              "companyName": "POET Technologies",
+              "return": "-88.77%",
+              "score": 2.2,
+              "rank": 179,
+              "confidence": "低"
+            },
+            {
+              "ticker": "LWLG",
+              "companyName": "Lightwave Logic",
+              "return": "-1.41%",
+              "score": 2.4,
+              "rank": 177,
+              "confidence": "低"
+            },
+            {
+              "ticker": "NVTS",
+              "companyName": "Navitas Semiconductor",
+              "return": "-117.17%",
+              "score": 2.5,
+              "rank": 176,
+              "confidence": "低"
+            },
+            {
+              "ticker": "CC",
+              "companyName": "The Chemours Company",
+              "return": "-51.38%",
+              "score": 2.6,
+              "rank": 175,
+              "confidence": "低"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F48_非AI业务拖累可控性_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F49",
+      "name": "披露与证据可信度",
+      "concept": "披露、证据链、数据一致性和管理层可信度。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "较强正向",
+          "pearson": 0.343,
+          "spearman": 0.321,
+          "kendall": 0.231,
+          "top30Bottom30": 30.18,
+          "topCompanies": [
+            {
+              "ticker": "NVDA",
+              "companyName": "NVIDIA",
+              "return": "-59.56%",
+              "score": 9.5,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "TSM",
+              "companyName": "台积电",
+              "return": "-56.76%",
+              "score": 9.3,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ASML",
+              "companyName": "ASML Holding NV",
+              "return": "-46.12%",
+              "score": 9.2,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "VRT",
+              "companyName": "Vertiv",
+              "return": "-70.57%",
+              "score": 9.1,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "TT",
+              "companyName": "Trane Technologies",
+              "return": "-32.63%",
+              "score": 9,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "LWLG",
+              "companyName": "Lightwave Logic",
+              "return": "-1.41%",
+              "score": 3,
+              "rank": 180,
+              "confidence": "低"
+            },
+            {
+              "ticker": "VISN",
+              "companyName": "Vistance Networks",
+              "return": "-32.94%",
+              "score": 4.2,
+              "rank": 179,
+              "confidence": "低"
+            },
+            {
+              "ticker": "POET",
+              "companyName": "POET Technologies",
+              "return": "-88.77%",
+              "score": 4.3,
+              "rank": 178,
+              "confidence": "低"
+            },
+            {
+              "ticker": "OKLO",
+              "companyName": "Oklo Inc",
+              "return": "-122.49%",
+              "score": 4.4,
+              "rank": 177,
+              "confidence": "低"
+            },
+            {
+              "ticker": "SMR",
+              "companyName": "NuScale Power",
+              "return": "-111.97%",
+              "score": 4.5,
+              "rank": 176,
+              "confidence": "低"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F49_披露与证据可信度_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F50",
+      "name": "价格相对强度",
+      "concept": "相对价格强度、短期资金确认和动量状态。",
+      "directions": [
+        "upsideDiscovery"
+      ],
+      "metrics": {
+        "upsideDiscovery": {
+          "label": "弱到中等正向",
+          "pearson": 0.076,
+          "spearman": 0.225,
+          "kendall": 0.155,
+          "top30Bottom30": 17.41,
+          "topCompanies": [
+            {
+              "ticker": "MRVL",
+              "companyName": "Marvell Technology",
+              "return": "+126.52%",
+              "score": 8.9,
+              "rank": 1,
+              "confidence": "中"
+            },
+            {
+              "ticker": "DELL",
+              "companyName": "Dell Technologies",
+              "return": "+129.12%",
+              "score": 8.9,
+              "rank": 2,
+              "confidence": "中"
+            },
+            {
+              "ticker": "VSH",
+              "companyName": "Vishay Intertechnology",
+              "return": "+262.76%",
+              "score": 8.9,
+              "rank": 3,
+              "confidence": "中"
+            },
+            {
+              "ticker": "HPE",
+              "companyName": "惠普企业",
+              "return": "+72.78%",
+              "score": 8.9,
+              "rank": 4,
+              "confidence": "中"
+            },
+            {
+              "ticker": "ACMR",
+              "companyName": "ACM Research",
+              "return": "+169.67%",
+              "score": 8.9,
+              "rank": 5,
+              "confidence": "中"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "MRAM",
+              "companyName": "Everspin Technologies",
+              "return": "+281.30%",
+              "score": 1,
+              "rank": 180,
+              "confidence": "中"
+            },
+            {
+              "ticker": "RKLB",
+              "companyName": "Rocket Lab",
+              "return": "+258.29%",
+              "score": 1,
+              "rank": 179,
+              "confidence": "中"
+            },
+            {
+              "ticker": "LWLG",
+              "companyName": "Lightwave Logic",
+              "return": "+167.90%",
+              "score": 1.1,
+              "rank": 178,
+              "confidence": "中"
+            },
+            {
+              "ticker": "PLAB",
+              "companyName": "Photronics",
+              "return": "+135.62%",
+              "score": 1.2,
+              "rank": 177,
+              "confidence": "中"
+            },
+            {
+              "ticker": "SOMMY",
+              "companyName": "住友化学 Sumitomo Chemical",
+              "return": "+18.79%",
+              "score": 1.2,
+              "rank": 176,
+              "confidence": "中"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F50_价格相对强度_特征评估_6个月涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F51",
+      "name": "交易流动性",
+      "concept": "交易流动性、可建仓性、期权/数据覆盖和交易摩擦。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "弱到中等正向",
+          "pearson": 0.126,
+          "spearman": 0.143,
+          "kendall": 0.098,
+          "top30Bottom30": 10.15,
+          "topCompanies": [
+            {
+              "ticker": "MU",
+              "companyName": "Micron Technology 美光科技",
+              "return": "-72.62%",
+              "score": 9.2,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "AMD",
+              "companyName": "Advanced Micro Devices",
+              "return": "-60.59%",
+              "score": 9.2,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "AVGO",
+              "companyName": "Broadcom",
+              "return": "-53.05%",
+              "score": 9.2,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "NVDA",
+              "companyName": "NVIDIA",
+              "return": "-59.56%",
+              "score": 9.2,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "AMZN",
+              "companyName": "Amazon",
+              "return": "-33.74%",
+              "score": 9.2,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "MICLF",
+              "companyName": "Mycronic AB",
+              "return": "+16.67%",
+              "score": 1.9,
+              "rank": 180,
+              "confidence": "低"
+            },
+            {
+              "ticker": "SOMMY",
+              "companyName": "住友化学 Sumitomo Chemical",
+              "return": "-24.06%",
+              "score": 2.4,
+              "rank": 179,
+              "confidence": "低"
+            },
+            {
+              "ticker": "PSIX",
+              "companyName": "Power Solutions International",
+              "return": "-130.28%",
+              "score": 2.9,
+              "rank": 178,
+              "confidence": "中"
+            },
+            {
+              "ticker": "MRAM",
+              "companyName": "Everspin Technologies",
+              "return": "-86.38%",
+              "score": 2.9,
+              "rank": 177,
+              "confidence": "中"
+            },
+            {
+              "ticker": "ASMVY",
+              "companyName": "ASMPT",
+              "return": "-62.14%",
+              "score": 3.1,
+              "rank": 176,
+              "confidence": "低"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F51_交易流动性_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    },
+    {
+      "id": "F52",
+      "name": "监管地缘风险",
+      "concept": "监管、地缘、出口管制、许可、关税和政策尾部风险可控性。",
+      "directions": [
+        "downsideProtection"
+      ],
+      "metrics": {
+        "downsideProtection": {
+          "label": "较强正向",
+          "pearson": 0.281,
+          "spearman": 0.3,
+          "kendall": 0.197,
+          "top30Bottom30": 19.94,
+          "topCompanies": [
+            {
+              "ticker": "NVT",
+              "companyName": "nVent Electric",
+              "return": "-43.93%",
+              "score": 8.4,
+              "rank": 1,
+              "confidence": "高"
+            },
+            {
+              "ticker": "ETN",
+              "companyName": "Eaton Corporation",
+              "return": "-41.95%",
+              "score": 8.2,
+              "rank": 2,
+              "confidence": "高"
+            },
+            {
+              "ticker": "POWL",
+              "companyName": "Powell Industries",
+              "return": "-49.58%",
+              "score": 8.1,
+              "rank": 3,
+              "confidence": "高"
+            },
+            {
+              "ticker": "HUBB",
+              "companyName": "Hubbell",
+              "return": "-42.85%",
+              "score": 8,
+              "rank": 4,
+              "confidence": "高"
+            },
+            {
+              "ticker": "PWR",
+              "companyName": "Quanta Services",
+              "return": "-22.20%",
+              "score": 7.9,
+              "rank": 5,
+              "confidence": "高"
+            }
+          ],
+          "bottomCompanies": [
+            {
+              "ticker": "OKLO",
+              "companyName": "Oklo Inc",
+              "return": "-122.49%",
+              "score": 2,
+              "rank": 180,
+              "confidence": "中"
+            },
+            {
+              "ticker": "TSM",
+              "companyName": "台积电",
+              "return": "-56.76%",
+              "score": 2.1,
+              "rank": 179,
+              "confidence": "高"
+            },
+            {
+              "ticker": "NVDA",
+              "companyName": "NVIDIA",
+              "return": "-59.56%",
+              "score": 2.2,
+              "rank": 178,
+              "confidence": "高"
+            },
+            {
+              "ticker": "SMR",
+              "companyName": "NuScale Power",
+              "return": "-111.97%",
+              "score": 2.4,
+              "rank": 177,
+              "confidence": "中"
+            },
+            {
+              "ticker": "ASML",
+              "companyName": "ASML Holding NV",
+              "return": "-46.12%",
+              "score": 2.5,
+              "rank": 176,
+              "confidence": "高"
+            }
+          ],
+          "date": "2026-06-04",
+          "sourceEvalFile": "基本面/特征量化/特征评估/F52_监管地缘风险_特征评估_三段SOXX下跌区间涨跌_2026-06-04.md"
+        }
+      },
+      "display": true
+    }
+  ]
+}

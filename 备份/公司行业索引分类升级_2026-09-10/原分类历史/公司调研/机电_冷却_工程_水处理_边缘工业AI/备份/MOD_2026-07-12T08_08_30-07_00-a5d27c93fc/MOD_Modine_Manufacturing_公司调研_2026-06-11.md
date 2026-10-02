@@ -1,0 +1,347 @@
+# 公司：MOD Modine Manufacturing 公司调研（2026-06-11）
+
+## 0. 核心结论
+
+Modine Manufacturing（NYSE: MOD）已经从传统车辆/工业热管理公司，快速变成投资人眼里的“AI 数据中心冷却产能股”。FY2026 数据中心收入约 11.12 亿美元，占公司收入约 35%，同比增长约 73%；FY2026 Q4 数据中心销售同比增长 158%，在单季收入中的估算占比已经接近 42%。公司在 2026-05-26 宣布与一个战略数据中心客户签署 2027-2029 年超过 40 亿美元的 Airedale 数据中心冷却产品长期产能协议，并收到 1.65 亿美元预付款。这是本次调研最关键事实：它把“需求强”变成了“客户愿意为产能预付现金”的强信号。
+
+业务本质上，MOD 不是 GPU、网络、光模块公司，而是 AI 数据中心热管理链条中的设施侧和机房侧供应商：chiller、dry cooler、CRAC/CRAH、fan wall、rear-door heat exchanger、CDU、immersion、控制系统、服务和模块化数据中心方案。AI 机柜从 60-160kW/rack 继续上行后，芯片侧会更多采用液冷，但设施侧的热量最终仍要被排到空气/水/冷源系统；因此“液冷替代风冷”不是完整叙事，真正的主线是“芯片/机柜侧液冷化 + 设施侧冷却价值量上升”。
+
+财务健康度整体偏健康，但不是低风险。FY2026 公司收入 31.81 亿美元、同比 +23%，GAAP 毛利率 23.0%，净利率 3.82%，调整 EBITDA 4.71 亿美元、调整 EBITDA margin 14.8%。截至 2026-03-31，现金 0.735 亿美元，账面有息债务约 4.36 亿美元，净债务约 3.63 亿美元，约为 FY2026 调整 EBITDA 的 0.77 倍；若采用市场数据商把租赁等计入的总债务 5.80 亿美元，净债务约 5.07 亿美元，仍约为 EBITDA 的 1.1 倍。主要财务压力不是偿债，而是快速扩产导致的库存、应收、capex、临时低毛利和供应链短缺。
+
+投资判断的分歧集中在三点：第一，40 亿美元 LTA 是否能按时转成 2027-2029 年收入；第二，扩产后的 Climate/Data Centers 毛利率能否从 Q4 的低谷恢复；第三，客户集中、关键零部件短缺、tariff 和高估值是否会抵消 AI 冷却增长。结论上，MOD 是 AI 数据中心冷却链条中少数已经有十亿美元级别收入、三年产能协议、且还在剥离低增长传统业务的标的；但股价已经按高增长工业股定价，容错率不高。
+
+## 1. 公司整体业务、投资人认知和产业链位置
+
+### 1.1 公司做什么
+
+MOD 是一家热管理技术和解决方案公司，总部在美国 Wisconsin Racine。公司 FY2026 口径分两大段：
+
+| 业务段 | FY2026 销售额 | 占比 | FY2026 同比 | 主要内容 | AI 数据中心相关性 |
+|---|---:|---:|---:|---|---|
+| Climate Solutions | 20.62 亿美元 | 65% | +43% | 数据中心冷却、热交换、商业 HVAC、除湿/空气处理、控制与服务 | 高。数据中心是公司增量核心 |
+| Performance Technologies | 11.32 亿美元 | 35% | -3% | 重型设备、车用/商用车热管理、动力总成冷却、EGR、EV 电池热管理、发电机组冷却 | 低到中。发电机组冷却有数据中心备电间接暴露，其余多为传统工业/车辆 |
+
+FY2027 起，公司已经把 Climate Solutions 拆成 Data Centers 和 Commercial HVAC 两个报告分部，并计划通过 Reverse Morris Trust 把 Performance Technologies 分拆并与 Gentherm 合并。交易完成后，MOD 将更接近“数据中心冷却 + 商业 HVAC&R”纯粹标的。
+
+### 1.2 投资人心中的公司形象
+
+过去 MOD 更像一家周期性工业/汽车热管理公司，估值受车用零部件、商用车、农业/工程机械周期影响。2024-2026 年以后，投资人对 MOD 的主要认知变成：
+
+- AI 数据中心冷却设备供应商：Airedale by Modine 是核心品牌，产品覆盖 chiller、CRAC/CRAH、fan wall、in-row、CDU、rear-door heat exchanger、软件控制和维护服务。
+- Vertiv / nVent / Trane / Johnson Controls / Schneider / STULZ / Munters 等数据中心基础设施链条的同类受益者，但 MOD 的强项更偏机械冷却和定制热管理，不是全栈电力基础设施。
+- “产能被客户锁定”的工业成长股：40 亿美元 LTA 和 1.65 亿美元预付款，是比普通 backlog 更强的客户承诺信号。
+- 风险也明显：FY2026 毛利率因扩产、tariff、材料成本下降 190bp；Q4 毛利率 22.5%，比上年同期低 320bp；数据中心客户集中，FY2026 一个全球科技客户贡献公司销售约 11%，前十大客户贡献 49%。
+
+### 1.3 最近 3 年重大变动、转型和并购
+
+| 时间 | 事件 | 战略含义 |
+|---|---|---|
+| 2023-07-01 | 收购 Napps Technology，价格约 600 万美元 | 增加 air/water-cooled chillers、condensing units、heat pumps 能力 |
+| 2023-10 | 出售德国 3 个汽车业务，FY2024 对应销售约 5,400 万美元 | 削弱低协同汽车业务，腾出管理资源 |
+| 2024-03-01 | 收购 Scott Springfield Manufacturing，价格约 1.84 亿美元 | 强化 air handling units 和数据中心 HVAC 能力，是向 Airedale/Data Centers 组合扩张的重要一步 |
+| 2025-04-01 | 收购 AbsolutAire，价格约 1,100 万美元 | 扩大直燃加热、通风、补风系统，偏 Commercial HVAC |
+| 2025-05-31 | 收购 L.B. White，价格约 1.11 亿美元 | 强化专业加热解决方案，偏农业/建筑/活动场景 HVAC |
+| 2025-07-01 | 收购 Climate by Design，价格约 6,400 万美元 | 增加 desiccant dehumidification 和关键工艺空气处理能力 |
+| 2026-01 | 宣布 Performance Technologies 与 Gentherm 的 Reverse Morris Trust 交易 | 计划把传统车用/工业热管理分出去，交易估值约 10 亿美元，MOD 股东将持有合并后公司约 40%，MOD 预计收到约 2.10 亿美元现金用于偿债 |
+| 2026-05-26 | 与战略数据中心客户签署 2027-2029 年超过 40 亿美元的 Airedale 冷却产品 LTA，并收到 1.65 亿美元预付款 | 锁定产能、客户、订单可见度，是公司 AI 冷却叙事的核心验证 |
+
+### 1.4 产业链位置
+
+MOD 位于 AI 数据中心热管理的中下游设备层：
+
+1. 上游：压缩机、风机/EC motor、VFD、铜/铝/钢/不锈钢、换热器芯体、阀件、传感器、控制器、泵、switchgear、制冷剂。
+2. MOD/Airedale：把上游部件集成为 chiller、dry cooler、CRAC/CRAH、fan wall、RDHx、CDU、液冷/浸没系统、控制软件、模块化冷却/数据中心单元。
+3. 下游：hyperscaler、NeoCloud、colocation、edge data center、EPC/MEP、机械承包商、机房集成商。
+4. 终端驱动：GB200/GB300/Rubin、AMD MI 系列、Google TPU、AWS Trainium/Inferentia、Meta/微软自研 AI 芯片等高功率训练/推理集群。
+
+它的核心价值不是“每颗 GPU 上有一个 MOD 零件”，而是“每 MW IT load 需要多少冷源、空气处理、液冷分配、控制和服务”。因此单位经济应按 MW/rack 分析，不宜按单 GPU 或 optical port 直接套件数。
+
+## 2. 最新股价、估值和财务健康
+
+### 2.1 最新市场数据
+
+市场数据日期：2026-06-11 美股收盘，StockAnalysis/市场数据商；单位为美元。
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | 271.51 | 2026-06-11 收盘 | 当日 +5.17%；盘后 274.30 |
+| 市值 | 143.4 亿 | 2026-06-11 | StockAnalysis 与行情源一致量级 |
+| Enterprise Value | 145.0 亿 | 2026-06-11 | 市场数据商口径 |
+| Trailing PE | 120.1x | 2026-06-11 | 基于 TTM EPS 2.26；行情源用 EPS 1.80 时会显示约 150.8x |
+| Forward PE | 34.8x | 2026-06-11 | 市场对 FY2027/FY2028 增长预期较高 |
+| PS | 4.40x | 2026-06-11 | TTM revenue 31.8 亿美元 |
+| Forward PS | 3.45x | 2026-06-11 | 反映 FY2027 指引 +20% 至 +35% |
+| FY2026 收入增速 | +23% | FY ended 2026-03-31 | 官方 FY2026 net sales 31.811 亿美元 |
+| FY2026 毛利率 | 23.0% | FY2026 | 同比下降 190bp，受数据中心扩产低效、材料和 tariff 影响 |
+| FY2026 净利率 | 3.82% | TTM/FY2026 | GAAP net income 1.215 亿美元；受 1.161 亿美元非现金养老金终止费用压低 |
+| FY2026 调整 EBITDA margin | 14.8% | 4.71 亿 / 31.811 亿 | 调整口径更能反映经营盈利能力 |
+| FY2026 FCF | 1.054 亿 | FY2026 | CFO 2.487 亿，capex 1.433 亿 |
+
+### 2.2 资产负债表健康度
+
+| 项目 | 2026-03-31 | 2025-03-31 | 变化与判断 |
+|---|---:|---:|---|
+| 现金 | 0.735 亿 | 0.716 亿 | 现金不厚，但可用信贷额度和经营现金流支撑扩产 |
+| 应收账款 | 7.310 亿 | 4.789 亿 | +52.6%，与 Q4 数据中心收入激增、项目交付相关 |
+| 存货 | 5.061 亿 | 3.409 亿 | +48.5%，主要为 Climate/Data Centers 扩产备货 |
+| 流动资产 | 14.161 亿 | 9.612 亿 | 流动比率约 1.94 |
+| PP&E | 5.209 亿 | 3.905 亿 | +33.4%，反映数据中心产能扩张 |
+| 总资产 | 26.746 亿 | 19.176 亿 | 并购 + 扩产 + working capital 同时上行 |
+| 短债 + 一年内到期长债 + 长债 | 4.363 亿 | 3.508 亿 | 账面有息债务上升但杠杆仍低 |
+| 净债务（账面债务 - 现金） | 3.628 亿 | 2.792 亿 | 约 FY2026 调整 EBITDA 的 0.77x |
+| 股东权益 | 12.028 亿 | 9.182 亿 | 资产负债率约 55%，权益缓冲尚可 |
+| 可用 revolver capacity | 3.914 亿 | 2026-03-31 | 信贷协议要求净杠杆不超过 3.5x，利息覆盖至少 3x；公司披露合规 |
+
+财务结论：MOD 不是高杠杆故事，短期最大风险是“增长消耗现金”。FY2026 自由现金流从 FY2025 的 1.293 亿美元降到 1.054 亿美元，原因是数据中心业务拉动存货、应收和 capex。1.65 亿美元客户预付款降低了扩产资金压力，但它本质上也是未来交付承诺，不是无成本资本。
+
+## 3. 最近五次财报：收入、利润率、订单和 AI 数据中心暴露
+
+口径说明：
+
+- MOD 财年截至 3 月 31 日，FY2026 Q4 对应自然季度 2026-01 至 2026-03。
+- 公司不按季度完整披露 Data Centers 美元收入；下表“数据中心收入”根据年度 Data Centers 收入 11.121 亿美元、FY2025 Data Centers 6.442 亿美元，以及管理层披露的季度增长额/增长率估算。Q1 使用 “+2,400 万美元/+15%”，Q2 使用 “+6,700 万美元/+42%”，Q3 使用 “+78%”，Q4 使用 “+158%” 反推。该列用于判断趋势，不应视为公司正式分部财报。
+- 公司没有标准化披露 backlog、bookings、B2B、lead time、取消率。订单侧只能用 LTA、客户预付款、管理层“significant order book / record order intake”、供应短缺和产能扩张节奏交叉验证。
+
+| 财报 | 报告日 | 总收入 | 总收入同比 | 毛利率 | 调整 EBITDA / margin | Climate Solutions 收入 / 同比 | Climate adj. EBITDA / margin | Performance Technologies 收入 / 同比 | Performance adj. EBITDA / margin | 数据中心收入估算 / 同比 / 总收入占比 | 订单、交期、取消率和 AI 相关信号 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| FY2026 Q4 | 2026-05-26 | 954.4M | +47% | 22.5% | 146.1M / 15.3% | 665.9M / +87% | 124.3M / 18.7% | 294.0M / 约持平 | 37.4M / 12.7% | 约 398.6M / +158% / 41.8% | Q4 已发生关键零部件短缺和天气损失生产天数；2026-05-26 之后宣布 2027-2029 年 >40 亿美元 LTA、1.65 亿美元预付款。取消率未披露；预付款意味着战略客户取消意愿低，但客户集中风险高 |
+| FY2026 Q3 | 2026-02-04 | 805.0M | +31% | 23.1% | 119.6M / 14.9% | 544.6M / +51% | 97.4M / 17.9% | 266.0M / +1% | 39.3M / 14.8% | 约 302.9M / +78% / 37.6% | 公司披露数据中心产能扩张按计划推进，新产线推动 Q2 到 Q3 环比增长；第三方转录称 Q3 commissioning 4 条新 chiller lines，其中 Jefferson City, Missouri 首 2 条上线；管理层把未来两年 Data Center 年增速上调到 50%-70% |
+| FY2026 Q2 | 2025-10-28 | 738.9M | +12% | 22.3% | 103.8M / 14.0% | 454.4M / +24% | 76.0M / 16.7% | 286.3M / -4% | 42.2M / 14.7% | 约 226.5M / +42% / 30.7% | 数据中心销售增加 6,700 万美元，主要拉动 Climate；扩产导致临时低效，FCF 六个月为 -30.3M，存货和 capex 上升 |
+| FY2026 Q1 | 2025-07-30 | 682.8M | +3% | 24.2% | 101.4M / 14.9% | 397.4M / +11% | 79.4M / 20.0% | 285.5M / -8% | 37.5M / 13.1% | 约 184.0M / +15% / 27.0% | 公司上调 FY2026 收入指引，原因是近期并购和数据中心需求；North America data center 强，扩产预计下半年贡献 |
+| FY2025 Q4 | 2025-05 | 647.2M | +7% | 25.6% | 104.1M / 16.1% | 356.3M / 约 +32% | 约 76.3M / 21.4% | 294.8M / 约 -14% | 约 44.0M / 14.9% | 约 154.5M / 基准季度 / 23.9% | 数据中心开始成为 Climate 的增长主线，但还没有 2026 年这种订单可见度；Scott Springfield/Napps 并购贡献较大 |
+
+从五个季度看，最重要的趋势不是总公司收入稳定上升，而是结构突变：数据中心估算收入从 FY2025 Q4 的约 1.55 亿美元，提升到 FY2026 Q4 的约 3.99 亿美元；同时 Climate Solutions margin 在 Q2-Q4 被扩产、tariff、材料和临时劳动力成本压低。牛熊分界点是 FY2027 产能上线后，收入继续上行时毛利率能否恢复。
+
+## 4. FY2026 最新指引、业务收入占比和重点产品
+
+### 4.1 FY2027 指引
+
+公司在 2026-05-26 给出的 FY2027 指引：
+
+| 指标 | FY2027 指引 | 隐含含义 |
+|---|---:|---|
+| Net sales growth | +20% 至 +35% | 以 FY2026 31.811 亿美元为基数，隐含 FY2027 收入约 38.2-43.0 亿美元 |
+| Adjusted EBITDA | 6.50-6.80 亿美元 | 同比 +38% 至 +44%，明显高于收入增速，隐含扩产低效缓解和 mix 改善 |
+| Outlook 包含 Performance Technologies | 是 | 若 Gentherm 分拆交易在 FY2027 中途完成，公司会更新 remaining business 指引 |
+
+管理层同时在 FY2026 Q3 把 Data Centers 未来两年收入增长预期提升到每年 50%-70%，并称这会使其明显超过 FY2028 数据中心收入 20 亿美元目标。FY2026 Data Centers 已经 11.12 亿美元，若 FY2027 增长 50%-70%，对应 16.7-18.9 亿美元；若受 LTA 和更多产线推动，FY2028 超过 20 亿美元的门槛并不高。
+
+### 4.2 FY2026 收入拆分
+
+| 产品组 | FY2026 收入 | 占 FY2026 公司收入 | FY2025 收入 | 同比 | 是否重点分析 |
+|---|---:|---:|---:|---:|---|
+| Data Centers | 1,112.1M | 35.0% | 644.2M | +72.6% | 是，核心 |
+| Heat Transfer Solutions | 584.1M | 18.4% | 539.4M | +8.3% | 是，数据中心热交换/冷却链有间接增量 |
+| HVAC Technologies | 359.2M | 11.3% | 257.0M | +39.8% | 部分分析，增速含并购，非 AI 部分跳过 |
+| Heavy-Duty Equipment | 409.3M | 12.9% | 422.1M | -3.0% | 跳过大部分，保留发电机组冷却的间接数据中心暴露 |
+| On-Highway Applications | 716.4M | 22.5% | 720.8M | -0.6% | 跳过大部分，即将分拆 |
+
+### 4.3 产品和型号：重点与跳过清单
+
+重点产品/业务：
+
+| 产品/业务 | 具体产品/型号或方案 | 证据 | 当前判断 |
+|---|---|---|---|
+| 数据中心 chiller / heat rejection | Airedale TurboChill DCS 800kW-2MW；TurboChill 3+MW；TurboChill Stainless Steel；air-cooled/free-cooling/hybrid chiller | 官方 2026-01-22 发布 TurboChill 3+MW；Airedale 产品页显示 TurboChill DCS 800kW-2MW、R1234ze、最高 55C 环境验证、最高 36% 节能；Data Center World London 2026 展示 LiquidFirst 和 3MW+ | 当前最大收入池，客户愿意锁 2027-2029 年产能；直接受 AI 高密度机柜驱动 |
+| CRAC/CRAH / precision air handling / fan wall | EdgeDX 30-95kW CRAC；EdgeAire 50-300kW CRAH；Airedale fan walls；custom-made AHU | 官方 2025-09-08 发布 EdgeDX/EdgeAire；Airedale data center overview 列明 data center chillers、CRAC/CRAH、fan walls、in-row coolers 和软件 | 液冷不会消灭空气侧需求，PSU、网络、存储、低密度区和混合机房仍需要 |
+| CDU / liquid cooling interface | CDU、rear-door heat exchanger、in-row coolers、液冷/浸没解决方案；LiquidFirst 可能减少部分 CDU | 10-K 明确 Data Centers 产品包括 CDUs、RDHx、immersion；Data Center World London 2026 讨论 TurboChill Stainless Steel 可能移除 CDU、降低复杂度 | 高潜力但当前收入披露较少。若客户采用 facility-to-chip 或 CDU-lite，MOD 可通过 chiller/SS loop 保留价值，但单独 CDU TAM 会被压缩 |
+| 模块化数据中心/模块化冷却 | modular data center solutions，集成 power/IT/cooling 模块；控制/服务 | 10-K 披露 Data Centers sells modular data center solutions；管理层转录称北美客户 final testing、FY2027 首批出货 | 当前贡献小，但若通过测试，单 MW 捕获价值远大于单设备 |
+| 控制系统和服务 | IQity、ACIS BMS、Cooling AI、Cloud Diagnostics、service parts、maintenance | Airedale data center overview 披露软件管理系统、IQity；10-K 披露 controls/service parts | 收入占比小但毛利/粘性好，是提高 lifetime value 的关键 |
+| Heat Transfer for AI cooling | coils、dry coolers、heat exchanger packages、anti-corrosion coatings、power generation cooling | 10-K 披露 heat exchanger coils 供 HVAC&R 和 data center cooling 市场；本地行业资料将 dry cooler/heat exchanger 列为 AI 机房热排出核心链条 | 增速低于 Data Centers，但可作为上游/旁路受益 |
+
+跳过或低优先级业务：
+
+- On-Highway 传统动力总成冷却：engine oil coolers、EGR coolers、charge air coolers、transmission/retarder oil coolers、fan shrouds、surge tanks。FY2026 约 7.164 亿美元，同比 -0.6%，且拟分拆。
+- Heavy-Duty off-highway 大部分：农业/工程机械 radiator、condensers、charge air coolers、oil coolers、engine cooling modules。FY2026 约 4.093 亿美元，同比 -3.0%。
+- 传统 heating/HVAC：direct-fired/indirect-fired heaters、unit/duct furnaces、agriculture/construction/special event heating。并购拉动增速，但与 AI 数据中心关联弱。
+- EV passenger/commercial battery thermal：有技术相关性，但 FY2026 投资主题弱于数据中心，且将随 Performance Technologies 分拆。
+
+## 5. 当前关键产品/业务贡献、增速和 AI 基建重要性
+
+评分：5 = 最高；1 = 最低。收入贡献为调研估算，因公司不披露产品内拆分。
+
+| 关键产品/业务 | FY2026 当前收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 评估 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Data Center chiller / TurboChill / heat rejection | 4.5-6.5 亿美元 | 70%+，随 Data Centers | 5 | 5 | 5 | 3.5 | AI 机房最终必须排热，冷水机组/空气冷却/混合冷却仍是全球部署刚需；MOD 的强项是客户定制、产能和 Airedale 工程能力，不是绝对技术垄断 |
+| CRAC/CRAH / fan wall / precision air handling | 2.5-4.0 亿美元 | 50%-100% | 4 | 4 | 4 | 3 | 高密度液冷机房仍有空气侧负载和混合负载；客户切换成本中高，但竞争者多 |
+| CDU / RDHx / liquid cooling interface | 0.3-1.0 亿美元 | 高基数不明，可能 100%+ | 5 | 5 | 4 | 2.5-3.5 | 需求强，但 MOD 是否在 CDU/液冷 rack 侧成为核心供应商仍需验证；官方 LTA 包括 CDUs 是积极信号 |
+| Modular data center / modular cooling | 0-0.3 亿美元 | 从低基数启动 | 4 | 4 | 3 | 3 | FY2027 首批出货是验证点；若客户采用可复制模块，收入弹性大 |
+| Controls / software / service parts | 0.5-1.2 亿美元 | 20%-50% | 3.5 | 3 | 3 | 4 | 高粘性、高毛利、生命周期收入，决定冷却系统运维效率和客户锁定 |
+| Heat Transfer / dry cooler / coils for data center | 1.0-2.0 亿美元 AI 相关部分；全产品组 5.841 亿美元 | 全产品组 +8.3%，AI 子集更高 | 3.5 | 4 | 3.5 | 2.5 | 是冷却链必要部件，但更偏制造能力和材料/工艺，竞争更分散 |
+
+当前最高确定性的不是 CDU，而是 chiller + CRAH/fan wall + heat rejection。CDU 是高潜力选项，但必须严控表述：MOD 披露了 CDUs 产品和 LTA 覆盖数据中心冷却产品，但没有披露 CDU 单项收入、客户认证数量或 rack-level 份额。
+
+## 6. 一年后收入贡献三情景预测
+
+时间点：2027-06 左右，覆盖未来 12 个月滚动情况；单位为美元。预测以 FY2027 公司指引 +20% 至 +35%、Data Centers 管理层 50%-70% 年增速、40 亿美元 LTA 2027-2029 起量为约束。
+
+| 产品/业务 | 基准情景：一年后收入贡献 | 乐观情景 | 极度乐观情景 | 重要性/紧急性变化 | 供需和溢价变化 |
+|---|---:|---:|---:|---|---|
+| Data Center chiller / TurboChill / heat rejection | 7.0-9.0 亿，+40%-60% | 9.0-11.5 亿，+60%-85% | 12.0-14.0 亿，+90%+ | 维持 5/5；GB300/Rubin、NeoCloud 和 hyperscale 高密度园区拉动 | 基准仍供不应求；乐观/极度乐观下 compressor、fan/motor、switchgear 继续限制交付，MOD 对 dedicated capacity 有更强议价 |
+| CRAC/CRAH / fan wall | 4.0-5.5 亿，+35%-55% | 5.5-7.0 亿，+60%-80% | 7.0-8.5 亿，+90%+ | 重要性 4；液冷普及后仍需要空气侧冗余和 mixed hall | 竞争比 chiller 更激烈，但项目认证和尺寸/能效定制带来中等溢价 |
+| CDU / RDHx / liquid interface | 1.0-2.0 亿 | 2.5-4.0 亿 | 5.0-7.0 亿 | 重要性从 5 保持；若 rack-level D2C 大规模上量，时间紧急性最高 | 供需紧但竞争强；若 Airedale LiquidFirst 减少 CDU，MOD 可能从 CDU 收入转向 stainless chiller/primary loop 收入 |
+| Modular data center / modular cooling | 0.5-1.5 亿 | 2.0-4.0 亿 | 5.0-8.0 亿 | 从验证期进入商业出货；重要性 4 | 极度乐观需要北美客户 final testing 顺利并形成 repeat orders |
+| Controls / service | 0.8-1.5 亿 | 1.5-2.5 亿 | 2.5-3.5 亿 | 随装机基数增加，重要性从 3.5 提到 4 | 服务和控制软件粘性高，溢价强于硬件平均 |
+| Heat Transfer / dry cooler / AI coils | AI 相关 1.5-2.5 亿；全组 6.3-7.0 亿 | AI 相关 2.5-3.5 亿；全组 7.0-8.0 亿 | AI 相关 4.0 亿+；全组 8.5 亿+ | 重要性 3.5-4；更多作为系统配套 | 原材料传导重要，单独垄断性不高 |
+
+整体 Data Centers 收入预测：
+
+- 基准：FY2027 Data Centers 约 16.5-18.0 亿美元，同比 +48%-62%。这与管理层 50%-70% 年增速基本一致。
+- 乐观：FY2027 Data Centers 约 18.0-20.5 亿美元，同比 +62%-84%。需要新产线顺利爬坡、关键零部件短缺缓解、LTA 客户提前拉货。
+- 极度乐观：FY2027 Data Centers 约 21.0-24.0 亿美元，同比 +89%-116%。这要求 2027 年 LTA 年化贡献高于 13 亿美元，并且其他 hyperscale/colo 客户不被挤出，执行难度高。
+
+## 7. BOM、单位内容量和价格传导链
+
+### 7.1 单位内容量框架
+
+本地行业资料给出的 2026 年实用 AI rack density 区间为 60-160kW/rack，2027 年为 80-180kW/rack。按 100-200kW/rack 粗略换算，1MW IT load 对应约 5-10 个高密度 rack。若按 GPU 等效热负载估算，一个高端加速器连同供电/板级/网络分摊可按约 1.0-1.5kW 热负载粗算，则 1MW 约对应 650-1,000 个高端 GPU 等效负载。光口不是 MOD 直接计价单位，只能把光模块功耗折算为热负载后分摊冷却 capex。
+
+### 7.2 BOM 和单位内容量表
+
+| 产品/业务 | 典型 BOM 拆分 | 每 MW 内容量 | 每 rack 内容量 | 每 GPU 等效内容量 | 每 optical port 内容量 | 价格传导链 |
+|---|---|---:|---:|---:|---:|---|
+| TurboChill / air-cooled or hybrid chiller | compressor/油-free Turbocor 或其他压缩机 20%-30%；heat exchanger/coils 15%-25%；fans/VFD/electrical/control panel 15%-25%；refrigerant/valves/sensors 8%-15%；frame/skid/sheet metal 10%-20%；engineering/testing/service 10%-20% | chiller 单项约 0.4-1.2M/MW；完整冷源/热排出包约 1.0-3.0M/MW | 100kW rack 分摊约 40k-120k；200kW rack 约 80k-240k；完整 thermal plant 可到 100k-600k/rack | chiller-only 约 400-1,800/GPU 等效；完整设施热管理约 1,000-4,500/GPU 等效 | 直接内容量为 0；若按 20-30W/1.6T 光口热负载分摊，约 8-36/port chiller-only | hyperscaler/colo capex -> EPC/MEP -> mechanical contractor/OEM package -> MOD/Airedale -> compressor/fan/metal/electrical suppliers；金属月度/季度传导，专用产能可通过 LTA/预付款传导 |
+| CRAC/CRAH / fan wall / AHU | coils/heat exchangers 20%-35%；EC fans/motors/VFD 20%-30%；controls/sensors 8%-15%；sheet metal/frame/filter 20%-30%；assembly/test/service 10%-20% | 0.15-0.8M/MW | 100kW rack 15k-80k；取决于冗余、回风温度、空气侧负载比例 | 150-1,200/GPU 等效 | 直接为 0；按热负载分摊约 3-24/port | rack heat load/airflow 设计 -> CRAH/fan wall 数量和冗余 -> MOD 定制 AHU/fan wall；风机、电机和控制器成本影响毛利 |
+| CDU / liquid-to-liquid / RDHx | pumps/VFD 20%-30%；plate heat exchanger 15%-25%；valves/UQD/manifold 15%-25%；leak detection/filter/sensor 8%-15%；controls/electrical 10%-20%；skid/enclosure/test/service 10%-20% | 0.1-0.5M/MW；2MW CDU 约 0.2-1.0M/台，按冗余和水质等级浮动 | 100kW rack 10k-50k；200kW rack 20k-100k | 100-750/GPU 等效 | 直接为 0；按热负载分摊约 2-15/port | GPU rack heat load -> D2C cold plate loop -> rack/row CDU 或 facility loop -> MOD CDU/RDHx/chiller；认证、泄漏可靠性和水质控制决定溢价 |
+| Modular data center / modular cooling | thermal equipment 30%-50%；enclosure/skid 15%-25%；electrical/control 15%-30%；integration/FAT/logistics 10%-20%；software/service 5%-15% | 若 MOD 捕获 cooling+integration，可为 1.0-5.0M/MW；若只供应 thermal 子系统则 0.5-2.0M/MW | 100kW rack 100k-500k，取决于模块是否含 power/IT enclosure | 1,000-7,500/GPU 等效，但高度依赖 MOD 捕获范围 | 光口直接为 0 | 客户标准化模块设计 -> factory acceptance test -> 多站点复制；毛利初期可能低，规模复制后提高 |
+| Heat Transfer / dry cooler / coils | coil core/copper/aluminum/stainless 25%-40%；fans/motors/VFD 15%-25%；frame/coating 15%-25%；controls/sensors 5%-10%；test/service 10%-20% | 0.1-0.6M/MW | 100kW rack 10k-60k | 100-900/GPU 等效 | 2-18/port 热负载分摊 | 原材料 + 产能 + 防腐/低水耗设计；单品类价格传导能力低于 chiller/CDU |
+
+### 7.3 当前产能能力、供应链采纳和认证阶段
+
+| 产品/业务 | 当前产能能力（美元计，估算） | 供应链采纳程度 | 认证/验证阶段 |
+|---|---:|---|---|
+| Data center chiller / TurboChill | FY2026 shipped 相关收入估算 4.5-6.5 亿；Q4 run-rate 显示 chiller+air-side 年化可到 10 亿+ | 高。Airedale 已面向 hyperscale/colo，LTA 是强采纳证据 | 已商业量产；TurboChill DCS 800kW-2MW 已产品化；TurboChill 3+MW 2026-01 发布，处于新型号导入和客户项目验证/爬坡阶段 |
+| CRAH/fan wall/AHU | 当前收入估算 2.5-4.0 亿，产能与 chiller 同步扩张 | 高。EdgeDX/EdgeAire 面向北美 edge/telco；custom AHU 与数据中心客户工程绑定 | EdgeDX/EdgeAire 已发布；客户项目型认证，公开认证名单不披露 |
+| CDU/RDHx/liquid interface | 当前收入可能低于 1 亿，产能处于早期爬坡 | 中到高。10-K 列入产品，LTA 覆盖 CDUs；但单独份额未披露 | 行业参考标准包括 OCP/Project Deschutes 一类 2MW CDU 架构；MOD 未公开披露具体 OCP 认证阶段。Airedale LiquidFirst 可能绕开部分 CDU，属于架构路线验证 |
+| Modular data center | 当前几乎无显著收入；FY2027 初始能力估算 0.5-1.5 亿 | 早期。北美客户 final testing 是最强信号 | late validation / pre-commercial shipment；FY2027 首批出货是关键里程碑 |
+| Controls/service | 随装机扩张，当前估算 0.5-1.2 亿 | 中高。IQity/ACIS/Cooling AI/Cloud Diagnostics 增强粘性 | 软件/控制系统更多是客户现场集成认证，不是单一公开认证 |
+| Heat Transfer/dry cooler/coils | 全产品组 5.841 亿，AI 相关部分 1-2 亿 | 中高。供应 HVAC&R/data center cooling markets | 产品成熟，关键在防腐、低 GWP、能效和客户系统认证 |
+
+## 8. 一年后产能和认证三情景
+
+| 产品/业务 | 基准：2027-06 产能/采纳 | 乐观 | 极度乐观 | 认证/验证路径 |
+|---|---|---|---|---|
+| Chiller / TurboChill | 数据中心冷却年化出货能力约 16-20 亿，其中 chiller/heat rejection 占最大部分；部分 2027-2029 LTA 开始转收入 | 年化能力 21-25 亿，压缩机/风机短缺缓解，多地点扩产顺利 | 年化能力 27-32 亿，除 LTA 客户外其他 hyperscale/colo 继续下单 | TurboChill 3+MW 完成更多客户项目验证；Stainless Steel / LiquidFirst 在高温和液冷场景获更多引用设计 |
+| CRAH/fan wall/AHU | 年化能力 5-7 亿，配合 chiller 出货 | 7-9 亿，Edge/colo 标准化产品上量 | 10 亿+，fan wall/custom AHU 成为多个园区标准配置 | EdgeDX/EdgeAire 在北美 edge/telco 项目落地；custom AHU 通过客户级 FAT/SAT |
+| CDU/RDHx/liquid interface | 年化 1-2.5 亿，主要随 LTA 和大客户 D2C rack | 3-5 亿，CDU 进入更多 AI 机房标准包 | 6-8 亿，若 high-density rack 液冷加速且 MOD 被列为多客户合格供应商 | 关键是 leak、pressure drop、water quality、redundancy、OCP/客户参考设计；公开信息不足，需继续跟踪 |
+| Modular data center | 首批出货，年化 0.5-1.5 亿 | 年化 2-4 亿，形成第二/第三客户 | 年化 5-8 亿，客户复制模块化园区 | 北美客户 final testing -> first shipment -> repeat order；若首批质量问题少，采纳会快 |
+| Controls/service | 年化 1-2 亿，装机基数驱动 | 2-3 亿 | 3.5 亿+ | 软件/服务通过现场 SLA、节能率、故障响应能力验证 |
+| Heat Transfer/dry cooler/coils | AI 相关能力 2-3 亿 | 3-4 亿 | 5 亿+ | 系统级客户认证为主；材料/防腐/水质兼容性决定长期替换 |
+
+## 9. 基于订单积压、供给和产能的未来一年业务增速预测
+
+### 9.1 真实订单和供给可见度
+
+已确认订单/产能信号：
+
+- 2026-05-26 LTA：2027-2029 年向一个战略数据中心客户供应超过 40 亿美元 Airedale 数据中心冷却产品，客户预付 1.65 亿美元支持产能投资。年均超过 13.3 亿美元；相对 FY2026 Data Centers 11.12 亿美元，单一 LTA 的年均金额已经大于 FY2026 全年 Data Centers 收入。
+- 10-K 披露：Climate Solutions 有三个受保密协议约束的 Data Centers 重要客户；FY2026 一个全球科技客户占公司销售约 11%。这说明订单并非完全分散，少数客户决定斜率。
+- Q3 管理层：Data Centers 未来两年预计每年 +50% 至 +70%，将超过 FY2028 20 亿美元目标。
+- Q4 管理层：有 significant order book，capacity expansion on track。
+- 供给约束：公司在 FY2026 Q4 已遇到部分采购组件供应短缺，负面影响 FY2027 Q1 生产排程；Q4 还受 severe weather 和关键组件短缺影响；本地行业资料也把 compressor、motor、switchgear、chiller 长交期列为冷却/HVAC 瓶颈。
+
+未披露或只能推断：
+
+- 标准 backlog 美元数未披露。
+- Book-to-bill 未披露。
+- 取消率未披露。LTA 预付款使该战略客户短期取消概率低，但项目延迟、客户自研架构或 capex 节奏变化仍可能改变交付窗口。
+- Lead time 未披露。结合行业 chiller/MEP 项目周期和零部件短缺，核心冷源/大型 AHU/CDU 的实际项目 lead time 可按 6-18 个月区间建模；极紧张项目可能更长。
+
+### 9.2 未来一年公司增速预测
+
+| 情景 | Data Centers 增速 | 公司总收入增速 | 调整 EBITDA 增速 | 关键假设 |
+|---|---:|---:|---:|---|
+| 基准 | +50%-62% | +23%-28% | +38%-42% | FY2027 Data Centers 到 16.5-18.0 亿；LTA 开始小规模转收入；Performance 维持低增或随分拆调整；扩产低效缓解但仍有零部件短缺 |
+| 乐观 | +62%-84% | +28%-35% | +42%-50% | 数据中心收入 18.0-20.5 亿；LTA 客户拉货强，其他 hyperscale/colo 未被产能挤出；毛利率恢复到 24%-25% 区间 |
+| 极度乐观 | +89%-116% | +35%-45% | +50%+ | 数据中心收入 21.0-24.0 亿；多地点产能顺利放量，Q4 组件短缺快速缓解，客户愿意接受价格传导；模块化和 CDU 均超预期 |
+
+我更倾向基准到乐观之间。原因是 40 亿美元 LTA 强到足以支撑 2027-2029 年收入可见度，但 FY2027 的约束不在需求，而在产能爬坡、关键组件、工厂效率和客户交付节奏。极度乐观需要供应链和内部制造同时完美执行，概率低于普通乐观情景。
+
+## 10. 竞争格局、主流性、替代风险和客户切换成本
+
+### 10.1 主要竞争对手
+
+| 领域 | 主要竞争者 | MOD 相对位置 |
+|---|---|---|
+| 数据中心冷却整体/机房热管理 | Vertiv/Liebert、Schneider Electric/Uniflair、STULZ、Rittal、Munters、Johnson Controls、Carrier、Trane、Daikin | MOD/Airedale 在定制 chiller、AHU、fan wall 和 hyperscale/colo 项目中有明显增长，但规模、全球服务和电力一体化不如 Vertiv/Schneider/JCI/Carrier/Trane 全面 |
+| Chiller / heat rejection | Trane、Carrier、JCI/York、Daikin、Mitsubishi、Airedale/MOD、Munters、Baltimore Aircoil 等 | MOD 通过 TurboChill DCS、3+MW、free cooling、高温环境验证、低 GWP 制冷剂切入高密度 AI 场景；不是唯一供应商，但 LTA 证明至少某些大客户认可其产能和工程能力 |
+| CRAH/CRAC/fan wall/AHU | Vertiv、Schneider、STULZ、Rittal、Munters、Trane、Airedale、Canatal 等 | MOD 在 custom AHU、EdgeDX/EdgeAire、fan wall 有产品组合；竞争较分散，交付和认证比单纯技术更重要 |
+| CDU / liquid cooling | Vertiv、Schneider/Motivair、nVent、Eaton/Boyd、CoolIT/Ecolab、Delta、ZutaCore、LiquidStack、Asetek、Supermicro/ODM 集成方案 | MOD 披露 CDUs、RDHx、immersion，但公开证据不如 CoolIT/Boyd/nVent 在 chip/rack 液冷链条清晰。优势可能在 facility-side 系统和 Airedale chiller/CDU 组合 |
+| 模块化数据中心 | Vertiv、Schneider、Eaton、Legrand、Delta、Compass/Prefab specialists、各类 EPC/模块化厂商 | MOD 仍在验证期，若 FY2027 首批北美客户出货顺利才可提高权重 |
+| 控制软件/服务 | Vertiv、Schneider EcoStruxure、Johnson Controls OpenBlue、Carrier/Automated Logic、Trane、Daikin、Airedale IQity/ACIS | MOD 有系统内控制优势，但平台级生态不如大型楼控/电力厂商 |
+
+### 10.2 新技术是否主流
+
+结论：MOD 押注的“hybrid chiller + free cooling + liquid-ready thermal chain”是主流方向之一，而不是边缘技术。
+
+原因：
+
+- AI rack 密度上升会使 direct-to-chip liquid cooling 成为高端训练/推理 rack 的主流，但热量最终仍需要通过 CDU、primary loop、chiller/dry cooler/cooling tower 排出。数据中心不可能因为 GPU 可承受更高温度就完全取消机械冷源。
+- Airedale 的 TurboChill 3+MW 主张是“在可 free cooling 的时候减少机械制冷，在高温/峰值负载/可靠性要求下仍提供机械冷却”，这符合全球数据中心部署差异：美国南部、中东、亚洲高温地区不能只靠 dry cooler。
+- Data Center World London 2026 上 Airedale 展示 LiquidFirst，强调 TurboChill Stainless Steel 可能移除 CDU、降低占地和复杂度。这对 MOD 是双刃剑：可能减少某些 CDU 单机收入，但可以把价值保留在 chiller/primary loop/系统工程中。
+
+### 10.3 风险和替代方案
+
+| 风险 | 替代方案/冲击 | 对 MOD 的影响 |
+|---|---|---|
+| Hyperscaler 自研或指定 ODM 液冷架构 | 客户可能用 CoolIT/Boyd/nVent/ODM rack-level 液冷，MOD 只做 facility heat rejection | CDU/液冷收入低于预期，但 chiller/heat rejection 仍保留 |
+| Dry cooler / warm-water loop 替代机械 chiller | 在气候合适、供水温度更高的场景，可减少 compressor chiller 使用 | Airedale 已用 hybrid/free-cooling 和 Stainless Steel 方案应对；高温地区和可靠性冗余仍需要机械冷却 |
+| Immersion cooling | 可能减少 CRAH/CDU/冷板复杂度 | 当前在大规模 hyperscale GPU 标准化部署仍不是主流；MOD 通过 TMGcore/immersion 有选项但不应作为核心估值 |
+| 供应链短缺 | compressor、motor、switchgear、fans、copper/aluminum、controls 影响交付 | 需求再强也无法确认收入；FY2027 Q1 已被短缺影响 |
+| Tariff 和材料成本 | 压低毛利，若长协价格传导滞后则 margin 低于预期 | FY2026 毛利率已反映压力；需要看 FY2027 EBITDA 指引兑现 |
+| 客户集中 | 一个全球科技客户 FY2026 约 11% 销售，三大 DC 客户有保密协议 | 议价权可能被大客户压制；但预付款也显示客户锁产能意愿 |
+| 高估值 | Forward PE 约 35x，PS 约 4.4x | 任何交付延迟、毛利不恢复或 LTA 节奏低于预期都会放大股价波动 |
+
+### 10.4 客户替换成本
+
+客户替换成本中高，原因包括：
+
+- 数据中心冷却设备进入 design basis 后，会影响机房布局、管路、冗余、控制逻辑、PUE、水耗和 commissioning；替换供应商会造成重新验证。
+- Hyperscale/colo 项目通常需要 FAT/SAT、噪音、能效、制冷剂、消防/水质/泄漏、BMS/DCIM 集成等测试；认证周期长。
+- 大型 chiller/AHU/fan wall 的物理尺寸、风量、水温、维护通道和电气接口都具有项目特异性。
+- LTA 下 dedicated capacity 和客户预付款会进一步提高短期切换成本。
+
+但替换成本不是不可逾越。大型客户可以在项目之间切换供应商，也可以把不同地区、不同数据中心批次分给多个供应商。MOD 的真实壁垒更多来自“产能 + 认证 + 可靠性历史 + 工程响应”，不是专利垄断。
+
+## 11. 需要持续跟踪的反证指标
+
+| 反证指标 | 为什么重要 | 预警阈值 |
+|---|---|---|
+| FY2027 Q1/Q2 Data Centers 增速明显低于 +50% | 管理层两年 +50%-70% 是估值核心 | 若 Q1 因供应短缺大幅低于计划，需下修全年节奏 |
+| Climate/Data Centers 毛利率不恢复 | FY2026 Q4 毛利率 22.5%，Climate Q4 gross margin 24.6%，扩产低效需要结束 | 如果收入增长但毛利率继续下滑，说明长协定价或执行质量有问题 |
+| 40 亿美元 LTA 没有新增产能/采购/客户进展 | LTA 是最强订单证据 | 若 2027 年没有转换为明显收入，市场会重新定价 |
+| 客户集中继续上升 | 大客户议价和项目推迟风险 | 单一客户 >15%-20% 销售需要更高折价 |
+| CDU/液冷公开客户少 | CDU 是潜在高弹性业务 | 若只停留在产品清单，无订单/认证/出货证据，应只给 option value |
+| Gentherm 分拆延迟或成本超预算 | 影响管理层精力、费用和净债务 | 交易成本显著高于 4,500-5,500 万美元或无法获得批准 |
+
+## 12. 调研结论
+
+MOD 的投资主线清晰：Data Centers 已从 FY2025 的 6.44 亿美元增长到 FY2026 的 11.12 亿美元，FY2026 Q4 单季估算接近 4 亿美元；公司还拿到 2027-2029 年超过 40 亿美元 LTA 和 1.65 亿美元预付款。相比很多“AI 数据中心概念股”，MOD 已经有真实收入、真实产能瓶颈、真实客户预付款和真实扩产。
+
+最值得重视的产品不是某一个单点小部件，而是 Airedale 的系统组合：TurboChill/DCS/3+MW chiller、CRAC/CRAH/fan wall、CDU/RDHx、LiquidFirst、控制软件和服务。AI 机柜液冷化会改变热管理路径，但不会消灭设施侧热排出；相反，rack density 上升把冷却系统从普通 HVAC 变成 mission-critical 设备。
+
+估值层面，2026-06-11 收盘价 271.51 美元、市值 143 亿美元、Forward PE 约 35x，已经给了公司相当高的增长信用。若 FY2027 能实现公司指引上沿、Data Centers 增长 60%+、毛利率恢复，估值仍可被验证；若供应短缺、扩产低效或 LTA 转收入慢，股价回撤空间会很大。当前最合理的跟踪顺序是：FY2027 Q1 数据中心收入增速、Climate/Data Centers margin、新产线爬坡、LTA 转收入节奏、CDU/模块化方案的真实客户出货。
+
+## 13. 主要来源
+
+外部来源：
+
+- Modine FY2026 Q4 results, 2026-05-26: https://investors.modine.com/news/news-details/2026/Modine-Reports-Fourth-Quarter-Fiscal-2026-Results/default.aspx
+- Modine 2027-2029 Airedale LTA, 2026-05-26: https://investors.modine.com/news/news-details/2026/Modine-Announces-Landmark-4-Billion-Long-Term-Capacity-Agreement-through-2029-with-Strategic-Data-Center-Customer-for-Airedale-by-Modine-Cooling-Solutions/default.aspx
+- Modine FY2026 Form 10-K: https://www.sec.gov/Archives/edgar/data/67347/000110465926066795/mod-20260331x10k.htm
+- Modine FY2026 Q3 results, 2026-02-04: https://investors.modine.com/news/news-details/2026/Modine-Reports-Third-Quarter-Fiscal-2026-Results/default.aspx
+- Modine FY2026 Q2 results PDF, 2025-10-28: https://s205.q4cdn.com/270741342/files/doc_financials/2026/q2/Modine-Reports-Second-Quarter-Fiscal-2026-Results.pdf
+- Modine FY2026 Q1 results, 2025-07-30: https://investors.modine.com/news/news-details/2025/Modine-Reports-First-Quarter-Fiscal-2026-Results/default.aspx
+- StockAnalysis MOD statistics, checked 2026-06-11: https://stockanalysis.com/stocks/mod/statistics/
+- Airedale TurboChill 3+MW release, 2026-01-22: https://investors.modine.com/news/news-details/2026/Airedale-by-Modine-Unveils-TurboChill-3MW-Redefining-Air-Cooled-Efficiency-for-AI-Data-Centers/default.aspx
+- Airedale Data Center World London 2026, 2026-03-11: https://www.airedale.com/2026/03/11/data-center-world-2026-london/
+- Airedale TurboChill DCS product page: https://www.airedale.com/products/dcs-chillers/turbochill-dcs/
+- Airedale Data Center overview: https://www.airedale.com/data-centers/overview/
+- Airedale EdgeDX / EdgeAire release, 2025-09-08: https://investors.modine.com/news/news-details/2025/Airedale-by-Modine-Unveils-EdgeDX-and-EdgeAire-Cooling-Solutions-for-North-American-Edge-Data-Facilities/default.aspx
+- Modine Q1 FY2026 transcript snippets from Yahoo/Seeking Alpha search results; Q2/Q3 transcript summaries from official transcript-derived sources used only for management commentary on data center growth, order intake and production lines.
+
+项目内行业资料（仅使用 `基本面/行业调研/`，未使用 `特征量化/`、`日度资料/` 或其他目录）：
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`

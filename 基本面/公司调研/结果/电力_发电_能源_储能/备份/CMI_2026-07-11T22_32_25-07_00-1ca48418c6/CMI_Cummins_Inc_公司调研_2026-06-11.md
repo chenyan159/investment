@@ -1,0 +1,343 @@
+# CMI（Cummins Inc）公司调研：AI数据中心电力瓶颈下的发电系统再定价（2026-06-11）
+
+> 研究对象：Cummins Inc.，NYSE: CMI  
+> 报告日期：2026-06-11  
+> 本地资料边界：仅使用 `基本面/行业调研/` 中与 AI 数据中心电力、发电、微电网、数据中心建设规模相关资料；未读取、引用或继承 `特征量化/`，也未读取同目录其他公司调研报告。  
+> 重要口径：Cummins 未按“AI 数据中心”单独披露收入、订单、backlog、取消率或客户清单；本报告将“官方披露”“卖方/渠道线索”“模型估算”分开标注。
+
+## 0. 结论先行
+
+Cummins 不是 AI 芯片公司，也不是纯数据中心设备股；投资人长期把它看成“柴油/天然气发动机、商用车动力总成、工业发电系统、全球售后网络”的高质量周期工业公司。2025-2026 年的重估来自一个很具体的变化：AI 数据中心先被电力接入卡住，备用电源和 bridge-to-grid 现场发电从“低频保险”变成“决定项目能不能开工的基础设施”。这一变化最直接落在 Cummins 的 `Power Systems`、`Distribution power generation`、发电机技术、服务网络和天然气/柴油大功率机组上。
+
+最强信号不是 Engine，而是 Power Systems。2026Q1 Power Systems 销售额 19.56 亿美元，同比增长 19%，EBITDA 5.77 亿美元，EBITDA margin 29.5%；其中 Power Systems 内部的 power generation 销售额 12.83 亿美元，同比增长 28%。Distribution 的 power generation 销售额 12.75 亿美元，同比增长 17%。两者合计的“发电相关收入代理口径”在 2026Q1 达 25.58 亿美元，年化约 102 亿美元。公司官方没有拆出数据中心收入，但卖方/渠道对 2026 Analyst Day 的摘要给出一个非常关键的线索：Cummins 数据中心收入 2026 年约 50 亿美元，2030 年目标约 90 亿美元，同时拟以约 4.5 亿美元扩张高马力机组产能、增加约 20GW、到 2030 年总产能约 55GW。这个口径若成立，CMI 已经不是“偶然受益”，而是数据中心电力设备链条中的核心发电系统供应商之一。
+
+估值已经反映了相当多的好消息。截至 2026-06-11 盘中/延迟行情，CMI 股价约 654.48 美元，市值约 903 亿美元，TTM P/E 约 34.0x；Yahoo/StockAnalysis 等截至 2026-06-10 附近的 forward P/E 约 20.7-22.8x，P/S 约 2.6-2.7x。以公司 2026 收入指引 +8% 至 +11% 估算，forward P/S 约 2.4-2.5x。估值不低，但若数据中心收入能从 50 亿美元走向 90 亿美元，且 Power Systems 保持 20% 以上 EBITDA margin，工业周期属性会被部分“基础设施成长股”属性替代。
+
+资产负债表健康。2026-03-31 公司现金及有价证券 31.82 亿美元，总债务 76.86 亿美元，净债务约 45.04 亿美元；流动资产 173.79 亿美元、流动负债 101.67 亿美元，流动比率 1.71；总债务/总资本 36.5%。这不是轻资产公司，但现金流、信用额度、全球售后和分散终端市场足以支持扩产、股东回报和周期波动。主要风险是：卡车周期、排放监管、氢能/Accelera 投入回收不及预期、数据中心发电项目因许可/燃气管道/云厂商 capex 节奏推迟，以及 Caterpillar、Wartsila、Rolls-Royce mtu、Rehlko、Generac、GE Vernova、Bloom 等在备用电源和现场发电上争抢订单。
+
+## 1. 公司业务、投资人定位、产业链位置与估值财务快照
+
+### 1.1 Cummins 做什么
+
+Cummins 的五个报告分部为：
+
+| 分部 | 核心产品 | 2026Q1 销售额 | YoY | 2026Q1 EBITDA margin | 与 AI 数据中心关系 |
+|---|---:|---:|---:|---:|---|
+| Engine | 重卡/中卡/轻型车/非公路发动机，含 X15、X10、B 系列等 | 26.72 亿美元 | -4% | 10.4% | 间接；大功率发动机平台、天然气/柴油技术可迁移至发电，但卡车周期仍主导 |
+| Components | 传动/制动、排放系统、电子与燃油系统、自动变速箱 | 25.30 亿美元 | -5% | 13.3% | 主要是商用车链条；AI 相关度低 |
+| Distribution | 发电系统销售、零部件、服务、发动机分销 | 31.16 亿美元 | +7% | 14.2% | 高相关；2026Q1 power generation 12.75 亿美元，数据中心/商业市场是增长主因 |
+| Power Systems | 柴油/天然气发电机组、工业动力、Stamford/AvK 发电机、控制/集成 | 19.56 亿美元 | +19% | 29.5% | 最高相关；2026Q1 power generation 12.83 亿美元，数据中心需求核心受益 |
+| Accelera | 电池、电驱、燃料电池、电解槽等零排放技术 | 1.01 亿美元 | -2% | -2.77 亿美元 EBITDA | 近端不是 AI 数据中心主线；低压燃料电池出售，氢能采用放缓 |
+
+注：分部销售额含 intersegment sales，不能简单加总为合并收入；上表主要用于业务规模和利润率比较。合并口径 2026Q1 收入 83.98 亿美元。
+
+### 1.2 投资人心中的 CMI
+
+传统定位：高质量工业周期股，核心是发动机、动力总成、发电系统和全球售后网络；与重卡、中卡、建筑、矿山、油气、电力可靠性等周期相关。投资人通常看重三点：一是 Cummins 在商用车发动机和发电机组中的品牌与可靠性；二是售后、零件、服务带来的稳定现金流；三是管理层长期保持分红、回购和 ROIC 纪律。
+
+2025-2026 年的新定位：数据中心电力基础设施受益股。过去数据中心备用柴油机组是“合规和可靠性成本”；AI 时代高密度机架、变压器/电网接入延迟和桥接电力需求，使发电机组、天然气 prime power、BESS、微电网控制、并机和现场服务成为项目进度的前置条件。Cummins 在 2026-05-21 Analyst Day 明确强调 Power Systems 的容量投资、垂直整合和进入 prime power；2026-06-05 又与 Morgan Stanley 做 Power Systems & Data Center Deep Dive；2026-06-10 公司文章继续强调 bridge-to-grid、onsite generation 和数据中心可靠性。
+
+### 1.3 最近 3 年重大业务变化
+
+| 时间 | 事件 | 对公司定位的影响 |
+|---|---|---|
+| 2023-2024 | Atmus Filtration 分拆/剥离完成 | 削弱过滤件低增长收入，集中资本到动力、发电和零排放平台；历史同比口径需要剔除 Atmus 影响 |
+| 2024-2026 | Meritor 整合继续影响 Components | 增强传动、制动、车桥等商用车零部件内容量，但短期仍受北美重卡/中卡周期拖累 |
+| 2025-02 | 收购 First Mode 部分混动矿卡/铁路资产；2026Q1 已在智利 Caserones 矿山部署 300 吨 Komatsu 矿卡混动改造 | 属于矿山减碳和高马力应用，非 AI 数据中心主线，但增强大功率工业应用能力 |
+| 2025Q3-Q4 | Accelera 电解槽战略复核，2025 全年相关 charge 4.58 亿美元；2026Q1 出售低压燃料电池业务并计提 1.99 亿美元 charge | 氢能采用速度低于预期，说明公司正在削减亏损、聚焦回报更清晰的机会 |
+| 2025-06 至 2026-06 | S17 Centum 17L 600-1000kW 机组发布并获 CSE 2026 Product of the Year Silver | 1MW 以下高功率密度平台，适合空间受限的关键基础设施；late-2026 放量更可能影响 2027 以后 |
+| 2026-05-21 | Analyst Day 提高 2030 财务目标，并宣布大型发动机产能与产品投资 | Power Systems 从备用发电扩展到 prime power；卖方摘要称高马力产能扩张约 20GW、总目标约 55GW，数据中心收入目标约 90 亿美元 |
+
+### 1.4 产业链位置
+
+Cummins 在 AI 基建技术栈中处于“电力可用性/可靠性层”，不在 GPU、AI ASIC、光模块、服务器、冷却 CDU 的直接 BOM 内。它的价值链位置如下：
+
+`AI 训练/推理需求 -> GPU 机柜功率密度上升 -> 数据中心总 IT load 上升 -> 公用电网接入/变压器/输电排队 -> bridge-to-grid 与备用/现场发电 -> 柴油/天然气发动机、发电机、ATS/并机控制、BESS/微电网、服务维保 -> Cummins Power Systems + Distribution`
+
+本地 `行业调研/` 资料的结论与此一致：AI 数据中心建设的瓶颈从单纯“芯片供给”扩展到“电力接入、现场发电、变电、冷却、施工交付”；在自备发电和微电网方向，天然气往复式发动机/发电机组、备用柴油机、BESS 与微电网控制是 2026-2027 年最现实的桥接方案。Cummins 与 Caterpillar、Wartsila、Rolls-Royce mtu、Rehlko、Generac 等共同构成数据中心发电机组主要供应商池。
+
+### 1.5 估值与财务快照
+
+| 指标 | 最新值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | 约 654.48 美元 | 2026-06-11，延迟行情 | 当日股价波动较大，报告采用联网行情快照 |
+| 市值 | 约 903 亿美元 | 2026-06-11，按 1.3799 亿股与股价估算 | 10-Q 披露 2026-03-31 已发行 137,989,067 股 |
+| TTM P/E | 约 34.0x | 2026-06-11/第三方行情 | 受 2025-2026 Accelera charge 与周期影响，GAAP PE 高于历史中枢 |
+| Forward P/E | 约 20.7-22.8x | 2026-06-10 附近，Yahoo/StockAnalysis/FinanceCharts 等 | 对应 2026 EPS 约 28.7-31.6 美元区间 |
+| P/S | 约 2.6-2.7x | 2026-06-10/11，TTM 收入约 340 亿美元 | CMI 历史上不是高 P/S 工业股，目前含数据中心重估 |
+| Forward P/S | 约 2.4-2.5x | 2026 指引收入 2025 年 336.70 亿美元基础上 +8% 至 +11% | 2026 指引收入约 363.6-373.7 亿美元 |
+| 2026Q1 收入 | 83.98 亿美元 | 截至 2026-03-31 | YoY +3% |
+| 2026 指引收入增速 | +8% 至 +11% | 2026-05-05 上调 | 原先 +3% 至 +8%；上调原因包括北美 on-highway 与 power generation |
+| 2026Q1 毛利率 | 26.7% | 22.43 亿美元毛利 / 83.98 亿美元收入 | YoY 毛利额 +0.88 亿美元 |
+| 2026Q1 归母净利率 | 7.8% | 6.54 亿美元归母净利润 / 83.98 亿美元收入 | 含低压燃料电池业务出售 charge |
+| 2026Q1 EBITDA margin | 15.4%；调整后约 17.7% | 官方 release；调整后剔除燃料电池 charge | 2026 全年 EBITDA margin 指引 17.75%-18.50%，不含该 charge |
+| 2026-03-31 现金+有价证券 | 31.82 亿美元 | 10-Q | 其中现金 26.14 亿美元 |
+| 2026-03-31 总债务 | 76.86 亿美元 | 10-Q | 总债务/总资本 36.5% |
+| 2026-03-31 流动比率 | 1.71 | 10-Q | 营运资本 72.12 亿美元 |
+
+资产负债表判断：健康但不是“无杠杆”。净债务约 45 亿美元，相对 2026 指引 EBITDA（按收入 364-374 亿美元、margin 17.75%-18.50%，约 65-69 亿美元）约 0.65-0.70x；流动性充足，且公司还有约 36.51 亿美元循环信贷可用容量。主要需要关注的是应收和库存随数据中心/发电项目放量而上升：2026Q1 应收 65.28 亿美元、库存 61.26 亿美元，DSO 67 天、库存周转 4.0x。
+
+## 2. 最新和最近 4 次财报：收入、利润、订单/交期与 AI 数据中心代理口径
+
+### 2.1 五个季度核心数字
+
+| 财报季度 | 合并收入 / YoY | EBITDA / margin | 归母净利 / EPS | Engine | Components | Distribution | Power Systems | Accelera | 订单/交期与 AI 数据中心线索 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| 2026Q1 | 83.98 亿美元 / +3% | 约 13 亿美元 / 15.4%；调整后约 17.7% | 6.54 亿美元 / 4.71 美元 | 26.72 亿，-4%，EBITDA margin 10.4% | 25.30 亿，-5%，13.3% | 31.16 亿，+7%，14.2% | 19.56 亿，+19%，29.5% | 1.01 亿，-2%，EBITDA -2.77 亿 | 官方称 Power Systems 创纪录，数据中心 backup power 强劲；Power Systems power generation +28%，Distribution power generation +17%。未披露 backlog/book-to-bill/取消率 |
+| 2025Q4 | 85.36 亿美元 / +1% | 11.51 亿美元 / 13.5%；剔除特殊项 16.0% | 5.93 亿美元 / 4.27 美元 | 26.00 亿，-4%，10.1% | 24.45 亿，-7%，13.4% | 32.85 亿，+7%，15.1% | 19.29 亿，+11%，21.7% | 1.31 亿，+31%，EBITDA -3.74 亿 | 官方称 Distribution 和 Power Systems 全年销售/利润创纪录，来自数据中心 backup power；Accelera 电解槽 charge 2.18 亿美元 |
+| 2025Q3 | 约 83 亿美元 / 约 -1% | 约 12 亿美元 / 14.3% | 5.36 亿美元 / 3.86 美元 | 26.05 亿，-11%，10.0% | 23.29 亿，-15%，12.5% | 31.72 亿，+7%，15.5% | 19.96 亿，+18%，22.9% | 1.21 亿，+10%，EBITDA -3.36 亿 | 官方称 North America、India、China 数据中心推动 Power Systems；Accelera 非现金 charge 2.40 亿美元 |
+| 2025Q2 | 86 亿美元 / -2% | 16 亿美元 / 18.4% | 8.90 亿美元 / 6.43 美元 | 28.99 亿，-8%，13.8% | 27.05 亿，-9%，14.7% | 30.41 亿，+7%，14.6% | 18.89 亿，+19%，22.8% | 1.05 亿，-5%，EBITDA -1.00 亿 | 数据中心和 mission critical 市场带动 Power Systems；S17 1MW 17L 平台在当季发布 |
+| 2025Q1 | 81.74 亿美元 / -3% | 约 15 亿美元 / 17.9% | 8.24 亿美元 / 5.96 美元 | 27.71 亿，-5%，16.5% | 26.70 亿，-20%，14.3% | 29.07 亿，+15%，12.9% | 16.49 亿，+19%，23.6% | 1.03 亿，+11%，EBITDA -0.86 亿 | Power Systems 创纪录，增长主要来自数据中心市场；Distribution 受北美 power generation 需求推动 |
+
+### 2.2 发电相关收入和 AI 数据中心收入的交叉验证
+
+Cummins 没有直接披露“AI 数据中心收入”，但有两个可用代理：
+
+1. 官方产品线代理：`Power Systems power generation + Distribution power generation`。这包括数据中心、商业、医疗、工业、公共设施等发电需求，不等同于 AI 数据中心。
+2. 卖方/渠道代理：2026 Analyst Day 后，TIKR/Dealroom/多家财经媒体摘要称 Cummins 2026 年数据中心收入约 50 亿美元、2030 年目标约 90 亿美元；Finimize 对 Morgan Stanley 观点的摘要称管理层预计数据中心销售 2025 年增长 30%-35%，且 2026 年类似节奏。该类信息不是 10-Q 分部披露，可信度低于官方财报，但与官方“data center power generation outpace expectations”的表述一致。
+
+| 季度 | Power Systems power generation | Distribution power generation | 发电相关代理合计 | 占合并收入 | AI/数据中心收入估算 | 估算逻辑 |
+|---|---:|---:|---:|---:|---:|---|
+| 2026Q1 | 12.83 亿美元，+28% | 12.75 亿美元，+17% | 25.58 亿美元 | 30.5% | 约 11-14 亿美元 | 若 2026 全年数据中心约 50 亿美元，Q1 季节性/订单交付约占 22%-28%；官方称中美/亚太数据中心带动 |
+| 2025Q4 | 12.45 亿美元 | 13.95 亿美元 | 26.40 亿美元 | 30.9% | 约 11-13 亿美元 | Q4 发电交付强，Distribution power generation 达全年峰值 |
+| 2025Q3 | 12.80 亿美元 | 12.47 亿美元 | 25.27 亿美元 | 约 30% | 约 10-12 亿美元 | Power Systems +18%，且官方点名 NA/India/China 数据中心 |
+| 2025Q2 | 12.05 亿美元 | 12.00 亿美元 | 24.05 亿美元 | 约 28% | 约 9-11 亿美元 | Power Systems +19%，数据中心和 mission critical 为主因 |
+| 2025Q1 | 10.01 亿美元 | 10.90 亿美元 | 20.91 亿美元 | 25.6% | 约 8-10 亿美元 | Power Systems +19%，Distribution +15%，数据中心初步进入主叙事 |
+
+判断：从 2025Q1 到 2026Q1，发电相关代理收入从 20.91 亿美元增至 25.58 亿美元，增长 22.3%；其中 Power Systems power generation 增长 28.2%。这与“数据中心收入 30%-35% 增长”的卖方口径方向一致，因为数据中心子集增长通常快于整体发电市场。
+
+### 2.3 订单、backlog、交期、取消率
+
+| 指标 | 官方披露 | 渠道/行业线索 | 投资判断 |
+|---|---|---|---|
+| Backlog | CMI 未在五个季度财报中披露发电机组 backlog | 2026 generator lead time 资料显示大功率 1250-3250kW standby diesel lead time 约 52-70 周；750-1000kW 约 12-39 周；ATS 2000A 约 20 周、4000A 约 31 周；大型/mission-critical 项目建议提前 12-18 个月采购 | 若大功率机组仍需 1 年上下交付，说明大型数据中心发电设备供给仍偏紧；Cummins 的 revenue visibility 应高于普通周期业务 |
+| Book-to-bill | 未披露 | 2026Q1 指引上调、Power Systems +19%、Power generation +28%，以及 Analyst Day 扩产，均暗示订单强于此前产能计划 | 基准情景可假设发电相关 book-to-bill 高于 1；但不应把它当官方数字 |
+| Lead time | 未按产品披露 | 行业采购口径显示发动机、发电机、switchgear/ATS 均有约束；本地行业资料也指出 AI 数据中心电力设备和现场发电成为 time-to-power 的关键瓶颈 | 交期越长，越利于价格和毛利，但也增加项目延迟风险 |
+| 取消率 | 未披露 | 数据中心发电机组通常在设计冻结、许可、预付款、并机方案确定后取消成本较高；但电网接入、燃气管线、空气排放许可可能造成延期 | 更可能是交付窗口推迟而非订单取消；若云厂商 capex 降速，则新增订单最先受冲击 |
+| 客户/项目名 | 官方通常不披露 hyperscaler 客户名 | 第三方报道/卖方摘要提到 Microsoft、Google、Amazon 等 hyperscaler 客户，但非 CMI 正式披露 | 可作为渠道信号，不作为估值硬锚 |
+
+## 3. 2026 最新指引、业务占比与产品映射
+
+### 3.1 2026 指引
+
+公司在 2026Q1 后把全年收入指引从 +3% 至 +8% 上调到 +8% 至 +11%，EBITDA margin 从 17.0%-18.0% 上调到 17.75%-18.50%（不含低压燃料电池出售相关 charge）。官方原因是多个市场需求增强，特别是 North America on-highway 和 power generation；CEO 明确称数据中心 power generation demand across products 继续超预期。
+
+分部层面的经济含义：
+
+| 分部 | 2026Q1 规模信号 | 2026 重点判断 |
+|---|---:|---|
+| Power Systems | Q1 19.56 亿美元，+19%，EBITDA margin 29.5% | 当前最突出的业务；Power generation 高增，且 margin 最好。数据中心、China、North America、Asia Pacific 是关键词 |
+| Distribution | Q1 31.16 亿美元，+7%，EBITDA margin 14.2%；power generation +17% | 发电设备交付、服务、零件和区域网络放大 Power Systems 收入；售后粘性高 |
+| Engine | Q1 -4%，但 North America truck 从周期低位改善 | 非 AI 主线；若 2027 EPA/HELM 内容量上升，可带来第二增长腿 |
+| Components | Q1 -5%，但 Meritor/传动制动/排放系统仍是大盘 | 数据中心相关度弱，更多取决于卡车和监管 |
+| Accelera | Q1 销售 1.01 亿、EBITDA -2.77 亿 | 低压燃料电池出售和电解槽 charge 表明短期不是利润贡献者；可选性保留但要压低权重 |
+
+### 3.2 重点产品与业务
+
+| 重点产品/业务 | 对应分部 | 产品/型号/方案 | 为什么重要 |
+|---|---|---|---|
+| 大型柴油 standby / data-center continuous 发电机组 | Power Systems + Distribution | QSK60/QSK78/QSK95 等大功率平台，Centum 系列，数据中心 standby/continuous duty 配置，ATS、并机、控制系统 | 直接对应 hyperscale/colo 数据中心备用电源；供应紧张，设计导入后替换成本高 |
+| S17 Centum 600-1000kW 17L 平台 | Power Systems | S17 Centum Series，600-1000kW、60Hz，17L 平台；2025 发布，2026 获 CSE Product of the Year Silver | 以小排量输出 1MW，提高功率密度；适合空间受限的关键基础设施和中型数据中心/边缘机房 |
+| 天然气 integrated gas generators / prime power / bridge-to-grid | Power Systems | HSK78G、1000/1300kW NG genset、GTA50e、其他 lean-burn gas genset；Analyst Day 口径提到向 prime power 扩展 | 数据中心因电网接入排队转向现场发电；天然气可比柴油更适合长时运行和排放压力 |
+| Stamford / AvK 发电机技术 | Power Systems | Generator technologies，alternators，发电机头、控制等 | 发电系统瓶颈不仅是发动机，也包括 alternator 和电气集成；2026Q1 1.67 亿美元，+11% |
+| Distribution power generation 与服务 | Distribution | 设备销售、零件、服务、PowerCare、现场调试/维护 | 大型数据中心多园区、多年运维，售后和本地响应是护城河的一部分 |
+| BESS / 微电网 / Power Integration Center | Power Systems + Data center solutions | Battery Energy Storage Systems、微电网控制、PIC 测试/验证 | 对 bridge-to-grid、削峰、黑启动、燃气/柴油机组协同重要；当前收入体量小，但 attach rate 潜力高 |
+| Accelera 电解槽/电驱/电池 | Accelera | PEM electrolyzer、电池、电驱、燃料电池历史业务 | 低近端 AI 相关；更像远期脱碳可选项。2025-2026 charge 表明商业化节奏不应高估 |
+
+### 3.3 明确跳过或低权重产品
+
+下列业务仍影响公司总收入和 EPS，但不是本报告 AI 数据中心主线：
+
+| 低权重/跳过项 | 原因 |
+|---|---|
+| 重卡/中卡/轻型车传统柴油发动机 | 规模大但受卡车周期、EPA 2027、OEM 排产影响，非 AI 数据中心直接收入 |
+| Components 中传动/制动/排放/自动变速箱 | 与商用车相关，AI 基建关联度低 |
+| 普通工业、农业、船舶、非数据中心商业发电 | 影响 Power Systems 基本盘，但不是 AI 数据中心弹性来源 |
+| Accelera 低压燃料电池、部分氢能业务 | 2026Q1 已出售低压燃料电池业务并计提 charge；氢能采用放缓 |
+| 小型 residential/轻商用备用电源 | 与 AI 数据中心功率等级和客户群不匹配 |
+
+## 4. 高增长/关键业务当前贡献、增速与战略重要性
+
+评分口径：重要性、紧急性、供需紧张、垄断/溢价均为 1-5 分；5 分最高。收入贡献为模型估算或披露代理，非公司单独披露。
+
+| 业务/产品 | 当前收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 数据中心柴油 standby / DCC 大功率机组 | 2026 年数据中心收入约 50 亿美元卖方口径中最大部分；Power Systems power generation 年化约 51 亿美元 | 2026Q1 PS power generation +28%；卖方称 DC sales 2025/2026 可达约 30%-35% 增速 | 5 | 5 | 4 | 3.5 | 最核心；不是芯片 BOM，但决定项目 time-to-power 和可靠性 |
+| 天然气 prime power / bridge-to-grid | 当前可能数亿美元级，仍在从 backup 向 prime 扩展 | 高基数前早期，若获 GW 级项目可倍增 | 5 | 5 | 4 | 3 | 最大期权；但 Cummins 公开 GW 级 prime power 订单不如 CAT/Wartsila/Bloom/GE 明确 |
+| Distribution power generation + 服务 | 2026Q1 12.75 亿美元，年化约 51 亿美元；其中数据中心子集显著 | +17% | 4 | 4 | 4 | 4 | 售后/服务/调试使收入更持久，客户替换成本高 |
+| Stamford/AvK generator technologies | 2026Q1 1.67 亿美元，年化约 6.7 亿美元 | +11% | 4 | 4 | 4 | 3.5 | 发电机头和电气集成是隐性瓶颈；对外部 OEM 和内部机组均有价值 |
+| S17 Centum 600-1000kW | 2026 年直接收入仍小；late-2026/2027 放量 | 新产品，基数低 | 3.5 | 3.5 | 3.5 | 3.5 | 小功率高密度平台，适合边缘/商业/中型关键负载，不能漏掉 |
+| BESS/微电网/PIC | 当前估计低于数亿美元，更多为方案 attach | 高潜力、低基数 | 4 | 4 | 3 | 2.5 | 不一定由 Cummins 完整捕获硬件价值，但可增强系统方案粘性 |
+| Accelera 电解槽/电池/电驱 | 2026Q1 1.01 亿美元但亏损 | -2%，且 charge 大 | 2 | 2 | 2 | 2 | 对 AI 数据中心近端贡献低；远期若氢能/低碳电力成熟才有期权 |
+
+## 5. 一年后收入贡献预测：基准、乐观、极度乐观
+
+预测窗口：以 2026-06-11 为起点，看 2027 年中附近 run-rate。所有预测为模型估算。
+
+| 业务/产品 | 基准情景 | 乐观情景 | 极度乐观情景 | 关键验证点 |
+|---|---:|---:|---:|---|
+| 数据中心柴油 standby / DCC 大功率机组 | 数据中心相关收入 58-63 亿美元 run-rate；YoY +15%-25% | 65-75 亿美元；YoY +30%-45% | 80-90 亿美元；YoY +60%-80%，提前接近 2030 目标轨迹 | 是否持续披露 Power Systems +20% 左右增速；是否有高马力扩产进度和 lead time 缩短 |
+| 天然气 prime power / bridge-to-grid | 5-8 亿美元；仍主要是项目型 | 10-18 亿美元；获得多个园区级订单 | 25-35 亿美元；拿到类 CAT/Wartsila 的 GW 级数据中心项目 | 是否披露 4MW/大型天然气平台、客户项目、燃气供应/许可落地 |
+| Distribution power generation + 服务 | 55-60 亿美元年化；服务 attach 稳步提升 | 62-70 亿美元；数据中心售后明显放量 | 75-85 亿美元；多园区批量维护合同 | Distribution power generation YoY 是否维持双位数；parts/service mix 是否提升 |
+| Generator technologies | 7.2-8.0 亿美元 | 8.5-10 亿美元 | 11-13 亿美元 | Alternator/发电机头是否成为瓶颈；是否对外部 OEM 放量 |
+| S17 Centum 600-1000kW | 1-3 亿美元新增贡献 | 3-6 亿美元 | 8-12 亿美元 | late-2026 供货、认证、规格书、经销商库存、边缘数据中心采用 |
+| BESS/微电网 | 1-3 亿美元 | 3-7 亿美元 | 8-15 亿美元 | 是否从“文章/方案”变成标准化 SKU + 数据中心订单 |
+| Accelera | 3-5 亿美元全年收入，仍亏损 | 5-8 亿美元，亏损收窄 | 10 亿美元以上但需政策/氢能项目恢复 | EBITDA loss 是否按管理层预期下降，电解槽项目是否准时交付 |
+
+## 6. BOM、每 MW / 每 rack / 每 GPU / 每 optical port 内容量与价格传导链
+
+### 6.1 数据中心电力系统中的 CMI 内容量
+
+以下为模型估算，目的是把 Cummins 与 AI 基建的“非芯片 BOM”连接起来。
+
+基本假设：
+
+- 1MW IT load 对应 1.15-1.35MW 设施电力负载；备用发电容量按 N+1/N+2 和测试冗余，常见为 IT load 的 1.2-1.8 倍 nameplate。
+- 柴油 standby/DCC 发电系统中，Cummins 可捕获发动机、发电机组、alternator、控制、部分 ATS/并机、测试和服务；不包含全部 EPC、土建、燃油系统、UPS、MV/HV 开关柜、变压器。
+- 天然气 prime power 中，Cummins 捕获空间更大，但需要燃气管线、排放许可、并网/孤网控制、BESS 和 EPC 配合。
+- 高密度 AI rack 取 100-250kW/rack；每 GPU 设施侧功率按 1.0-1.6kW/GPU 粗估；每 rack 400-2000 个高速 optical/electrical port 视网络拓扑而定。
+
+| 内容量口径 | 柴油 standby / DCC | 天然气 prime / bridge power | BESS/微电网 attach | 备注 |
+|---|---:|---:|---:|---|
+| 每 1MW IT load 的 CMI 可捕获收入 | 35-90 万美元 | 70-140 万美元 | 5-30 万美元 | 不含全部安装/EPC；若按 installed plant 可高达 100-300 万美元/MW |
+| 每 100MW AI 园区 | 5000 万-1.4 亿美元 | 0.8-1.8 亿美元 | 1000 万-5000 万美元 | 取决于是纯备用、bridge-to-grid 还是长期 onsite prime |
+| 每 100kW rack | 3.5-9 万美元 | 7-14 万美元 | 0.5-3 万美元 | 100kW rack = 0.1MW IT |
+| 每 250kW rack | 8.8-22.5 万美元 | 17.5-35 万美元 | 1.25-7.5 万美元 | 高密度 AI rack 对电力可靠性内容量更高 |
+| 每 GPU | 350-1450 美元 | 700-2200 美元 | 50-480 美元 | 按 1.0-1.6kW/GPU 设施侧功率粗估；不是 GPU 直接 BOM |
+| 每 optical port | 20-175 美元 | 35-275 美元 | 3-60 美元 | Cummins 没有 optical port socket；仅按 rack/port 间接分摊 |
+
+### 6.2 价格传导链
+
+`Hyperscaler/colo AI capex -> EPC/GC/电力系统集成商 -> 发电机组供应商/经销商 -> Cummins Power Systems/Distribution -> 发动机、alternator、控制、ATS、服务 -> 零件与长期维护`
+
+价格传导的核心在交期。若 2-3MW 级大型柴油机组 lead time 仍在 52-70 周，客户为锁定交付窗口会更早下单，标准化规格、预付款、长周期框架协议和服务包都更有利于 Cummins。若供给放松、项目延期或竞争对手释放产能，溢价会先从新订单价格回落，再影响 margin。
+
+### 6.3 当前产能能力、供应链采纳和认证阶段
+
+| 产品/业务 | 当前美元产能/收入能力 | 供应链采纳 | 认证/准入阶段 |
+|---|---:|---|---|
+| 数据中心柴油 standby / DCC | 2025 Power Systems power generation 47.31 亿美元；Distribution power generation 49.32 亿美元；2026Q1 合计年化约 102 亿美元。卖方口径 2026 数据中心收入约 50 亿美元 | 高。Cummins 是全球数据中心备用发电主流供应商之一，客户看重可靠性和全球服务 | 需要满足 EPA/地方空气许可、NFPA 110、UL2200/UL1008/CSA、现场 FAT/SAT、数据中心客户 AVL |
+| 天然气 prime / bridge | 当前直接数据中心收入可能低于柴油 standby，但公司已明确从 backup 向 prime power 扩展 | 中高。行业方向明确，但 Cummins 披露的 GW 级数据中心 prime power 项目少于 CAT/Wartsila/GE/Bloom | 需要排放许可、燃气供应协议、孤网/并网控制验证、黑启动与 BESS 协同测试 |
+| S17 Centum | 2026 年小规模，late-2026/2027 开始贡献更可见 | 中。600-1000kW 关键负载市场适配度高，但数据中心大园区更偏 2-3MW+ 节点 | 2026 获 CSE Product of the Year Silver；仍需各市场型号认证、客户 AVL 和现场验收 |
+| Generator technologies | 2025 销售 6.69 亿美元；2026Q1 1.67 亿美元 | 高。Stamford/AvK 是发电机组关键部件，对内外部需求均可受益 | 按发电机组整体认证及客户规格书验证 |
+| BESS/微电网 | 当前美元收入小，更多作为解决方案 attach | 中。Cummins 数据中心页面已把 BESS、PIC、微电网作为连续创新模块 | BESS 需 UL9540/UL9540A、NFPA855、消防/热失控测试、客户系统集成验证 |
+
+## 7. 一年后产能能力、采纳和认证预测
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| 数据中心柴油 standby / DCC | 高马力扩产开始贡献，数据中心收入能力约 58-63 亿美元；lead time 略改善但大型机组仍偏紧 | 收入能力 65-75 亿美元；更多 hyperscaler 框架协议；标准化设计提升周转 | 收入能力 80-90 亿美元；若扩产提前且需求不降，2027 中即贴近 2030 轨迹 |
+| 天然气 prime / bridge | 4MW/大型天然气平台和 HSK 系列在部分项目验证；收入能力 5-8 亿美元 | 多个园区采用天然气 bridge-to-grid，收入能力 10-18 亿美元 | 获得 GW 级项目，收入能力 25-35 亿美元；需要燃气和许可同时突破 |
+| S17 Centum | late-2026 进入供货/客户验证，数据中心贡献仍小 | 商业/医疗/边缘数据中心批量采用 | 成为 1MW 级高密度标准节点之一，但仍不是 hyperscale 主节点核心 |
+| Generator technologies | 产能能力 7-8 亿美元 | 8.5-10 亿美元，外部 OEM 需求增加 | 11-13 亿美元，alternator 供给成为行业瓶颈 |
+| BESS/微电网 | 作为发电项目 attach，收入能力 1-3 亿美元 | Cummins 把 BESS+genset+控制标准化，收入 3-7 亿美元 | 若 onsite power 长期化，收入 8-15 亿美元；但竞争来自 Fluence/Tesla/Vertiv/Eaton 等 |
+
+## 8. 基于真实订单积压和供给推断的未来一年业务增速
+
+Cummins 未披露 backlog，因此不能给出“官方 backlog 覆盖率”。可用的真实信号是：2026Q1 指引上调、Power Systems +19%、Power generation +28%、Distribution power generation +17%、Analyst Day 扩产、行业大型发电机交期 52-70 周、以及数据中心 power generation 被多次点名。
+
+| 情景 | 订单/供给假设 | 未来一年 Power Systems 增速 | 未来一年 CMI 合并收入增速 | 取消/延期判断 |
+|---|---|---:|---:|---|
+| 基准 | 现有 backlog 足以支撑 2026 指引；大型机组交期维持 9-16 个月；卡车市场温和恢复 | +11% 至 +16% | +8% 至 +11% | 取消率低，延期中等；主要受客户电网接入、许可和施工节奏影响 |
+| 乐观 | 数据中心框架订单继续转化，天然气 bridge-to-grid 进入批量项目；高马力扩产较顺 | +18% 至 +28% | +11% 至 +15% | 设备排产锁定后取消低；价格和 mix 支撑 margin |
+| 极度乐观 | Cummins 拿到多个 GW 级 onsite/prime power 项目，且 20GW 扩产节奏前移 | +30% 至 +45% | +15% 至 +20% | 最大风险不是需求，而是发动机/alternator/switchgear/许可/燃气供应能否同步 |
+
+若要持续验证，应每季跟踪四个指标：`Power Systems power generation`、`Distribution power generation`、Power Systems EBITDA margin、以及管理层是否继续上调/维持数据中心收入与产能目标。只看合并收入会低估数据中心链条的边际变化，因为 Engine/Components 的卡车周期会稀释 Power Systems 的增速。
+
+## 9. 竞争格局、技术主流性、替代方案和客户替换成本
+
+### 9.1 主要竞争对手
+
+| 方向 | 竞争对手 | 对 CMI 的压力 |
+|---|---|---|
+| 柴油/天然气数据中心发电机组 | Caterpillar, Rolls-Royce mtu, Rehlko/Kohler, Generac Industrial, Mitsubishi, Doosan, INNIO/Jenbacher | 产品可替代，客户常多源采购；Cummins 不能被视为垄断 |
+| 大型天然气 engine power plant | Caterpillar, Wartsila, INNIO, Rolls-Royce mtu | Wartsila 已披露 790MW Texas off-grid data center 项目和美国数据中心累计 >2.4GW 订单；Caterpillar/AIP 有 2GW fast-response gas generator 订单，公开项目证据更强 |
+| 燃气轮机/快速发电 | GE Vernova, Siemens Energy, Mitsubishi Power, Solar Turbines/Caterpillar, Baker Hughes | 大型园区/临时电源/长期 onsite power 可用燃机替代往复式发动机 |
+| 燃料电池/低碳 onsite power | Bloom Energy, FuelCell Energy 等 | Bloom/Oracle 等 fuel-cell 订单显示另一条低碳、模块化路径；对柴油/天然气备用构成长期替代压力 |
+| 电力系统集成、UPS、BESS、开关设备 | Vertiv, Schneider, Eaton, ABB, Tesla, Fluence, Siemens | Cummins 可做 BESS/微电网，但不控制整个电力栈；价值分配会被系统集成商和电气设备商分走 |
+
+### 9.2 Cummins 的优势
+
+1. 可靠性和装机历史：数据中心客户对备用电源的容错率极低，老牌 engine/genset 供应商有明显品牌优势。
+2. 全球服务网络：10-Q 披露 Cummins 约 640 个自有/合资/独立 distributor locations 和超过 13,000 个 certified dealer locations，覆盖约 190 个国家和地区。数据中心多区域部署时，服务网络是硬门槛。
+3. 垂直整合：发动机、发电机组、alternator、控制、ATS、服务可组合，减少客户集成风险。
+4. Power Systems margin 已验证：2026Q1 EBITDA margin 29.5%，说明 mix、价格和运营杠杆已经开始体现。
+5. 新产品与容量投资：S17、天然气 prime power、generator technologies、BESS/微电网都在扩展产品边界。
+
+### 9.3 风险和替代方案
+
+| 风险 | 影响 |
+|---|---|
+| 柴油排放和地方空气许可 | 数据中心备用柴油机组在 Northern Virginia、Phoenix、Texas 等地会受到排放、噪声、燃油储备和测试小时限制；许可拖延会推迟交付 |
+| 天然气供应和电网互联 | Prime power 项目需要燃气管线、排放许可和长期燃料经济性；天然气价格/管输约束会影响项目 |
+| 云厂商 capex 周期 | 若 AI capex 放缓或训练集群延期，新增 generator slot 会先受影响；但已有项目取消成本较高 |
+| 竞争对手公开订单更强 | CAT、Wartsila、Bloom、GE Vernova 已披露或被行业资料记录多个 GW 级项目；Cummins 需要证明 prime power 订单能力 |
+| Accelera 亏损和技术转型 | 氢能 adoption 低于预期导致 charge；若继续亏损，会稀释 Power Systems 的质量 |
+| 估值风险 | 当前 P/E/P/S 已高于传统工业周期中枢；若数据中心增速回落，估值压缩会比 EPS 下调更快 |
+
+### 9.4 客户替换成本
+
+替换成本在不同阶段差异很大：
+
+| 阶段 | 替换成本 |
+|---|---|
+| 概念设计/招标前 | 中等。客户可在 CAT、CMI、mtu、Rehlko、Generac 等之间比价 |
+| 设计冻结、空气许可、并机方案确定后 | 高。更换机组会影响排放模型、声学、燃油系统、ATS/并机控制、土建布置、FAT/SAT 和交期 |
+| 已投运后 | 很高。服务合同、备件库存、远程诊断、运维培训、现场经验都会锁定供应商 |
+
+因此，Cummins 的护城河不是“唯一技术”，而是“可靠性认证 + 交期 + 服务网络 + 项目切换成本”。这类护城河在 AI 数据中心扩建期会被放大，但一旦供给宽松，议价能力会回落。
+
+## 10. 投资跟踪框架
+
+未来 4 个季度最需要跟踪：
+
+| 指标 | 为什么重要 | 乐观信号 | 风险信号 |
+|---|---|---|---|
+| Power Systems power generation 收入 | 最直接的数据中心发电代理 | YoY 持续 >20% | 降到个位数或管理层弱化数据中心表述 |
+| Distribution power generation 收入 | 反映项目交付和渠道/服务放量 | YoY 双位数，parts/service mix 提升 | 设备交付高但服务跟不上 |
+| Power Systems EBITDA margin | 判断价格、mix、交付效率 | 维持 22%-30% 区间 | 产能爬坡、关税、竞价导致 margin 回落 |
+| 数据中心收入/产能目标 | 验证卖方口径中的 50 亿 -> 90 亿路径 | 公司在后续材料中正式披露或反复确认 | 目标不再被提及，或扩产延后 |
+| 天然气 prime power 项目名 | 决定 Cummins 是否进入 onsite power 增量池 | 披露 GW 级客户/项目/交付窗口 | 仅停留在产品宣传，订单被 CAT/Wartsila/GE/Bloom 抢走 |
+| Lead time | 衡量供需紧张和价格能力 | 大型机组仍 12 个月以上，但 Cummins 产能提升 | lead time 快速回落，说明订单/供给逆转 |
+| Accelera EBITDA loss | 判断亏损拖累是否收窄 | loss 明显缩小，出售/退出完成 | 新一轮 impairment 或现金消耗扩大 |
+
+## 11. 资料来源与使用说明
+
+### 11.1 公司官方与财报
+
+- Cummins 2026Q1 earnings release（2026-05-05）：https://investor.cummins.com/news/detail/694/cummins-delivered-strong-operating-results-and-returned
+- Cummins 2026Q1 Form 10-Q：https://investor.cummins.com/sec-filings/annual-reports/content/0000026172-26-000016/cmi-20260331.htm
+- Cummins 2025Q4/FY2025 earnings release：https://investor.cummins.com/news/detail/689/cummins-reports-strong-fourth-quarter-and-full-year-2025
+- Cummins 2025Q3 earnings release：https://investor.cummins.com/news/detail/687/cummins-reports-strong-third-quarter-operating-results
+- Cummins 2025Q2 earnings release：https://investor.cummins.com/news/detail/684/cummins-reports-second-quarter-2025-results
+- Cummins 2025Q1 earnings release：https://investor.cummins.com/news/detail/680/cummins-reports-first-quarter-2025-results
+- Cummins 2026 Analyst Day 页面：https://investor.cummins.com/AnalystDay
+- Cummins 2026 Analyst Day press release（2030 targets / large-engine capacity and product investments）：https://investor.cummins.com/news/detail/696/cummins-raises-2030-financial-targets-announces
+
+### 11.2 产品、会议、行业与渠道
+
+- Cummins Powering the data center surge（2026-06-10）：https://www.cummins.com/en-na/news/2026/06/10/powering-data-center-surge
+- Morgan Stanley HQ Call: Power Systems & Data Center Deep Dive w/ Cummins（2026-06-05）：https://investor.cummins.com/events-presentations/ir-calendar/detail/8369/morgan-stanley-hq-call-power-systems-data-center-deep
+- Cummins S17 Centum Series CSE 2026 Product Award（2026-06-02）：https://www.cummins.com/en-na/news/releases/2026/06/02/centumtm-s17-series-earns-latest-product-award-cummins-power-generation
+- Cummins S17 17L 1MW generator set launch（2025-06-25）：https://www.cummins.com/en-na/news/releases/2025/06/25/cummins-redefines-power-density-announcement-groundbreaking-17-liter
+- Cummins Integrated Gas Generators（2026-01-16）：https://www.cummins.com/en-na/news/2026/01/16/powering-today-tomorrow-cummins-integrated-gas-generators
+- Cummins Data Centers product page：https://www.cummins.com/en-na/generators/data-centers
+- Generator lead time industry check（Global Power Supply, 2026-05-11）：https://www.globalpwr.com/blog/generator-lead-times-in-2026/
+- Finimize / Morgan Stanley summary on data center demand and CMI target（2026）：https://finimize.com/content/cummins-sell-off-has-morgan-stanley-seeing-a-bargain
+- TIKR summary of 2026 Analyst Day capacity/data center revenue targets：https://www.tikr.com/blog/cummins-analyst-day-raises-2030-revenue-target-to-50-billion-heres-the-fuller-picture
+- MarketsandMarkets data center generator competitive note：https://www.marketsandmarkets.com/ResearchInsight/data-center-generators-companies.asp
+- POWER Magazine on gas generators for data center prime power（2025-10-28）：https://www.powermag.com/data-centers-are-turning-to-gas-generators-for-prime-power-to-eliminate-long-lead-times-for-grid-connections/
+
+### 11.3 估值与行情
+
+- Yahoo Finance CMI statistics：https://finance.yahoo.com/quote/CMI/key-statistics/
+- StockAnalysis CMI statistics：https://stockanalysis.com/stocks/cmi/statistics/
+- FinanceCharts CMI P/E / forward P/E：https://www.financecharts.com/stocks/CMI/value/pe-ratio
+
+### 11.4 本地行业资料
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+
+这些本地资料主要用于判断 AI 数据中心电力瓶颈、现场发电和微电网的产业位置，以及竞争对手订单强度；本报告的公司财务数字以 Cummins 官方财报和 10-Q 为准。

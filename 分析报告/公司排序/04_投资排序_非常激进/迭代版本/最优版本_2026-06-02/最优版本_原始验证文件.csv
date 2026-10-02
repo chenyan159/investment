@@ -1,0 +1,180 @@
+﻿rank,ticker,name,category,score,ret_2w,within_cat_rank,median_dollar_volume,median_volume,low_liquidity,adr_currency_abnormal,extreme_return
+1,NBIS,Nebius Group,云算力_IDC_AI软件平台,348.2,31.21,1.0,3285944491.101074,14010750.0,False,False,False
+2,IREN,IREN Limited,云算力_IDC_AI软件平台,314.0,24.23,2.0,3101671831.654358,50304200.0,False,False,False
+3,POET,POET Technologies,AI网络_光互联_连接器,265.7,4.06,1.0,574824789.9017334,42377950.0,False,False,False
+4,AAOI,Applied Optoelectronics,AI网络_光互联_连接器,259.9,11.38,2.0,1857256880.6869507,10280300.0,False,False,False
+5,AEHR,Aehr Test Systems,封测_检测_计量_光罩,247.8,39.17,1.0,178919482.91358948,1931850.0,False,False,False
+6,MU,Micron Technology 美光科技,AI服务器_存储_EMS,227.1,47.48,1.0,47049190228.2959,48191400.0,False,False,True
+7,SNDK,SanDisk,AI服务器_存储_EMS,216.8,31.52,2.0,16474642304.754639,9842900.0,False,False,False
+8,APLD,Applied Digital,云算力_IDC_AI软件平台,216.6,13.13,3.0,1018553887.2528076,22023600.0,False,False,False
+9,SITM,SiTime Corporation,AI网络_光互联_连接器,198.8,2.26,3.0,400326010.18066406,580050.0,False,False,False
+10,CRWV,CoreWeave,云算力_IDC_AI软件平台,196.3,9.53,4.0,2708687896.443939,25143100.0,False,False,False
+11,LWLG,Lightwave Logic,AI网络_光互联_连接器,175.6,5.13,4.0,84102430.50556183,6500750.0,False,False,False
+12,CRDO,Credo Technology Group,AI网络_光互联_连接器,168.1,17.28,5.0,1829029580.4977417,8067850.0,False,False,False
+13,AMD,Advanced Micro Devices,AI计算芯片_EDA_IP_custom_ASIC,167.9,21.21,1.0,16035976266.362,31120850.0,False,False,False
+14,LITE,Lumentum,AI网络_光互联_连接器,165.9,8.06,6.0,5357680640.95459,5955250.0,False,False,False
+15,BE,Bloom Energy,电力_发电_能源_储能,163.0,1.77,1.0,2856903727.0751953,9940800.0,False,False,False
+16,SMCI,Super Micro Computer Inc,AI服务器_存储_EMS,162.1,41.72,3.0,1982685999.9931335,46795700.0,False,False,True
+17,NVDA,NVIDIA,AI计算芯片_EDA_IP_custom_ASIC,157.6,-3.9,2.0,40692941263.557434,185702100.0,False,False,False
+18,FCEL,FuelCell Energy,电力_发电_能源_储能,156.2,7.86,2.0,251012662.91046143,10363600.0,False,False,False
+19,ALAB,AsteraLabs,AI计算芯片_EDA_IP_custom_ASIC,153.5,26.46,3.0,1992820831.1462402,5785500.0,False,False,False
+20,PENG,Penguin Solutions,AI服务器_存储_EMS,150.3,49.93,4.0,177236834.62409973,3187150.0,False,False,True
+21,SMR,NuScale Power,电力_发电_能源_储能,149.0,18.09,3.0,442551254.45890427,36198650.0,False,False,False
+22,SIMO,Silicon Motion Technology,AI服务器_存储_EMS,148.8,18.82,5.0,289846850.8453369,1043750.0,False,True,False
+23,MXL,MaxLinear,AI计算芯片_EDA_IP_custom_ASIC,147.1,-5.56,4.0,442828980.14411926,4753550.0,False,False,True
+24,FLNC,Fluence Energy,电力_发电_能源_储能,144.5,31.2,4.0,188465710.50157547,9360200.0,False,False,False
+25,AXTI,AXT Inc,半导体材料_化学品_基板,141.0,2.0,1.0,1091685377.9331207,8956650.0,False,False,False
+26,AVGO,Broadcom,AI计算芯片_EDA_IP_custom_ASIC,138.8,14.71,5.0,8569305628.790283,20209250.0,False,False,False
+27,KLIC,Kulicke Soffa,封测_检测_计量_光罩,136.0,7.08,2.0,90292327.24685669,870950.0,False,False,False
+28,CEG,Constellation Energy,电力_发电_能源_储能,133.9,-4.98,5.0,1026799189.4561768,3476350.0,False,False,False
+29,BELFB,Bel Fuse Inc,AI网络_光互联_连接器,131.1,9.95,7.0,78222360.2218628,280050.0,False,False,False
+30,SMTC,Semtech Corporation,AI网络_光互联_连接器,129.7,15.26,8.0,635707855.7441711,4206050.0,False,False,False
+31,SANM,Sanmina Corporation,AI服务器_存储_EMS,127.7,22.29,6.0,206592332.25631714,828150.0,False,False,False
+32,CLS,Celestica Inc,AI服务器_存储_EMS,127.0,32.23,7.0,840028817.3065186,2214650.0,False,False,False
+33,ORCL,Oracle Corporation,云算力_IDC_AI软件平台,126.7,22.41,5.0,4134806982.5782776,19979500.0,False,False,False
+34,ICHR,Ichor Holdings,晶圆制造_前道设备,126.4,10.17,1.0,69947201.5964508,974350.0,False,False,False
+35,VIAV,VIAVI Solutions,AI网络_光互联_连接器,125.6,8.98,9.0,382540318.8138962,7221850.0,False,False,False
+36,HPE,惠普企业,AI服务器_存储_EMS,124.5,63.17,8.0,1022036402.9705048,27001150.0,False,False,True
+37,CIEN,Ciena Corporation,AI网络_光互联_连接器,124.2,11.83,10.0,1067916678.0548096,1899800.0,False,False,False
+38,MRAM,Everspin Technologies,AI服务器_存储_EMS,122.9,-1.28,9.0,137557589.1691208,4656650.0,False,False,False
+39,VISN,Vistance Networks,AI网络_光互联_连接器,122.4,4.99,11.0,68503554.94389534,5659150.0,False,False,False
+40,ONTO,Onto Innovation,封测_检测_计量_光罩,120.7,6.41,3.0,286261512.29248047,1072700.0,False,False,False
+41,BESIY,BE Semiconductor,封测_检测_计量_光罩,120.5,8.43,4.0,1794654.490661621,5450.0,True,True,False
+42,MCHP,Microchip Technology,AI计算芯片_EDA_IP_custom_ASIC,120.4,2.69,6.0,1030225654.7100067,11108350.0,False,False,False
+43,MTSI,MACOM Technology Solutions,AI网络_光互联_连接器,119.8,3.89,12.0,579279406.9473267,1511050.0,False,False,False
+44,CAMT,Camtek,封测_检测_计量_光罩,118.6,15.11,5.0,59302243.26095581,336350.0,False,False,False
+45,ASMVY,ASMPT,封测_检测_计量_光罩,118.0,3.06,6.0,643574.9996185303,9150.0,True,True,False
+46,VICR,Vicor Corporation,配电_电源_功率器件,117.1,25.09,1.0,208673487.26348877,622050.0,False,False,False
+47,FN,Fabrinet,AI服务器_存储_EMS,116.4,9.48,10.0,525564613.8366699,757000.0,False,False,False
+48,POWL,Powell Industries,配电_电源_功率器件,116.4,10.58,2.0,140898289.29748535,491750.0,False,False,False
+49,ADI,Analog Devices,AI计算芯片_EDA_IP_custom_ASIC,116.2,9.95,7.0,2198895726.9943237,5405700.0,False,False,False
+50,NTNX,Nutanix,云算力_IDC_AI软件平台,114.9,17.79,6.0,275086685.0534439,5691250.0,False,False,False
+51,VECO,Veeco Instruments,晶圆制造_前道设备,114.9,6.74,2.0,52425916.560173035,883950.0,False,False,False
+52,COHR,Coherent,AI网络_光互联_连接器,114.6,16.44,13.0,1733274375.0,4716050.0,False,False,False
+53,FORM,FormFactor,封测_检测_计量_光罩,114.6,0.57,7.0,189906424.78027344,1491500.0,False,False,False
+54,AAON,AAON,机电_冷却_工程_水处理_边缘工业AI,114.0,10.83,1.0,144964133.9553833,1045100.0,False,False,False
+55,BDC,Belden,AI网络_光互联_连接器,113.8,4.82,14.0,54873986.44866943,517100.0,False,False,False
+56,MRVL,Marvell Technology,AI计算芯片_EDA_IP_custom_ASIC,113.1,61.48,8.0,8044159962.028503,38291450.0,False,False,True
+57,PSIX,Power Solutions International,电力_发电_能源_储能,111.5,9.36,6.0,25199033.71486664,641100.0,False,False,False
+58,IESC,IES Holdings,机电_冷却_工程_水处理_边缘工业AI,111.2,10.45,2.0,137572203.78723145,207300.0,False,False,False
+59,TEL,TE Connectivity,AI网络_光互联_连接器,109.6,8.44,15.0,484774128.0723572,2238350.0,False,False,False
+60,COHU,Cohu Inc,封测_检测_计量_光罩,108.4,24.77,8.0,89466079.36515808,1648450.0,False,False,False
+61,DELL,Dell Technologies,AI服务器_存储_EMS,108.2,73.33,11.0,5235479300.184631,14719300.0,False,False,True
+62,IMOS,ChipMOS Technologies 南茂科技,封测_检测_计量_光罩,107.5,29.41,9.0,7508959.120178223,121450.0,False,True,False
+63,TSM,台积电,晶圆制造_前道设备,106.4,8.73,3.0,4310844731.027222,10162300.0,False,True,False
+64,MYRG,MYR Group,机电_冷却_工程_水处理_边缘工业AI,106.3,-0.98,3.0,109154571.33331299,238400.0,False,False,False
+65,MPWR,Monolithic Power Systems,配电_电源_功率器件,105.6,8.8,3.0,1020450660.4614258,643050.0,False,False,False
+66,VSH,Vishay Intertechnology,配电_电源_功率器件,105.5,59.29,4.0,436687106.750679,8809400.0,False,False,True
+67,WOLF,Wolfspeed,配电_电源_功率器件,104.4,5.2,5.0,575115364.966774,9077600.0,False,False,False
+68,WDC,WesternDigital,AI服务器_存储_EMS,104.3,29.26,12.0,3255910513.5620117,6121850.0,False,False,False
+69,INTC,Intel Corporation 英特尔,AI计算芯片_EDA_IP_custom_ASIC,104.2,-5.25,9.0,12743903483.791351,107251750.0,False,False,True
+70,GNRC,Generac Holdings,电力_发电_能源_储能,103.8,16.36,7.0,212632235.54840088,761750.0,False,False,False
+71,TSEM,Tower Semiconductor,晶圆制造_前道设备,103.4,1.3,4.0,448931560.2233887,1654500.0,False,False,False
+72,FLEX,Flex Ltd,AI服务器_存储_EMS,102.3,23.13,13.0,787558547.1969604,5449700.0,False,False,False
+73,LRCX,Lam Research,晶圆制造_前道设备,101.8,17.67,5.0,2790991485.4644775,8614900.0,False,False,False
+74,MOD,Modine Manufacturing,机电_冷却_工程_水处理_边缘工业AI,101.4,17.37,4.0,424480796.635437,1490050.0,False,False,False
+75,APH,Amphenol 安费诺,AI网络_光互联_连接器,100.7,19.97,16.0,1555258240.7470703,10757100.0,False,False,False
+76,BWXT,BWX Technologies,电力_发电_能源_储能,99.9,-8.85,8.0,205624959.68780518,1017600.0,False,False,True
+77,STM,STMicroelectronics,AI计算芯片_EDA_IP_custom_ASIC,99.9,22.76,10.0,703550771.7552185,10484150.0,False,False,False
+78,META,Meta Platforms,云算力_IDC_AI软件平台,99.5,2.96,7.0,10781640238.293457,17512200.0,False,False,False
+79,POWI,Power Integrations,配电_电源_功率器件,98.7,22.94,6.0,91304202.37121582,1164350.0,False,False,False
+80,NVMI,Nova Ltd,晶圆制造_前道设备,98.6,7.29,6.0,172808481.010437,346950.0,False,False,False
+81,MKSI,MKS Inc,晶圆制造_前道设备,98.5,7.59,7.0,340658277.48413086,1072000.0,False,False,False
+82,ACMR,ACM Research,晶圆制造_前道设备,98.0,24.11,8.0,149369018.86749268,1842100.0,False,False,False
+83,DSCSY,DISCO,晶圆制造_前道设备,97.7,8.88,9.0,6382902.119255066,158150.0,False,True,False
+84,PLAB,Photronics,封测_检测_计量_光罩,97.4,-35.56,10.0,85957508.51421356,2152900.0,False,False,True
+85,ET,Energy Transfer LP,电力_发电_能源_储能,97.1,-3.03,9.0,162639094.87543106,8369850.0,False,False,False
+86,RMBS,Rambus,AI服务器_存储_EMS,96.9,27.78,14.0,277347734.4024658,1991450.0,False,False,False
+87,FTV,Fortive Corporation,机电_冷却_工程_水处理_边缘工业AI,96.6,2.66,5.0,193957485.5808258,3237650.0,False,False,False
+88,FIX,Comfort Systems USA,机电_冷却_工程_水处理_边缘工业AI,96.4,0.79,6.0,704828052.7587891,382150.0,False,False,False
+89,VST,Vistra Corp,电力_发电_能源_储能,96.1,6.81,10.0,703458089.5050049,4583150.0,False,False,False
+90,ROG,Rogers Corporation,半导体材料_化学品_基板,96.0,11.28,2.0,41700927.23388672,288800.0,False,False,False
+91,TXN,德州仪器,AI计算芯片_EDA_IP_custom_ASIC,95.9,1.22,11.0,2269991601.7440796,7394900.0,False,False,False
+92,AMAT,Applied Materials,晶圆制造_前道设备,95.7,17.32,10.0,2985256299.925232,6751050.0,False,False,False
+93,ASX,ASE Technology Holding,封测_检测_计量_光罩,95.2,25.94,11.0,341744506.28757477,8890100.0,False,True,False
+94,GLW,Corning,AI网络_光互联_连接器,94.8,11.11,17.0,2284677365.022278,11652300.0,False,False,False
+95,STX,Seagate Technology,AI服务器_存储_EMS,94.7,25.25,15.0,2771386141.7999268,3124500.0,False,False,False
+96,DIOD,Diodes Incorporated,配电_电源_功率器件,93.4,19.63,7.0,98957426.61247253,881400.0,False,False,False
+97,ACLS,Axcelis Technologies,晶圆制造_前道设备,93.0,6.44,11.0,67234282.6675415,433850.0,False,False,False
+98,AMKR,Amkor Technology,封测_检测_计量_光罩,93.0,9.8,12.0,378452219.9295044,5222550.0,False,False,False
+99,ETN,Eaton Corporation,配电_电源_功率器件,93.0,10.94,8.0,933882407.1243286,2346400.0,False,False,False
+100,AOSL,Alpha and Omega Semiconductor,配电_电源_功率器件,92.9,29.85,9.0,48992969.36893463,1030950.0,False,False,False
+101,CDNS,Cadence Design Systems,AI计算芯片_EDA_IP_custom_ASIC,92.8,16.28,12.0,853186870.5657959,2282300.0,False,False,False
+102,PSTG,Everpure PureStorage,AI服务器_存储_EMS,92.7,3.73,16.0,406375300.46791077,4729107.0,False,False,False
+103,ATKR,Atkore,配电_电源_功率器件,92.6,12.79,10.0,41391403.85360718,501600.0,False,False,False
+104,ABBNY,ABB Ltd,配电_电源_功率器件,91.6,3.97,11.0,25794034.01298523,245100.0,False,True,False
+105,GEV,GE Vernova,电力_发电_能源_储能,91.6,-6.36,11.0,2258518280.3771973,2256500.0,False,False,True
+106,NOK,诺基亚,AI网络_光互联_连接器,91.4,22.83,18.0,1958479901.942253,125758350.0,False,True,False
+107,ON,onsemi,AI计算芯片_EDA_IP_custom_ASIC,91.4,21.52,13.0,1227065080.2223206,9947450.0,False,False,False
+108,BABA,Alibaba 阿里巴巴,云算力_IDC_AI软件平台,91.1,-5.4,8.0,1310997292.22641,10419550.0,False,True,True
+109,GOOGL,Alphabet Inc,云算力_IDC_AI软件平台,91.0,-7.69,9.0,10790863592.242432,28209750.0,False,False,True
+110,ATEYY,Advantest,封测_检测_计量_光罩,90.9,2.96,13.0,10637320.18737793,61400.0,True,True,False
+111,ANET,Arista Networks,AI网络_光互联_连接器,90.5,24.12,19.0,1614497580.42984,9804250.0,False,False,False
+112,KEYS,Keysight Technologies,封测_检测_计量_光罩,90.5,2.46,14.0,710789872.4914551,2074250.0,False,False,False
+113,VRT,Vertiv,机电_冷却_工程_水处理_边缘工业AI,90.5,5.0,7.0,1695450780.4779053,5338550.0,False,False,False
+114,PWR,Quanta Services,电力_发电_能源_储能,90.4,0.81,12.0,671486256.9000244,937450.0,False,False,False
+115,ALLE,Allegion plc,机电_冷却_工程_水处理_边缘工业AI,90.3,0.67,8.0,96048142.75283813,736350.0,False,False,False
+116,JBL,Jabil Inc,AI服务器_存储_EMS,90.3,9.82,17.0,426730001.62353516,1173300.0,False,False,False
+117,ENS,EnerSys,电力_发电_能源_储能,90.1,11.92,13.0,126097223.36044312,552650.0,False,False,False
+118,LFUS,Littelfuse,配电_电源_功率器件,89.9,9.83,12.0,135004890.68756104,298550.0,False,False,False
+119,TER,Teradyne,封测_检测_计量_光罩,89.9,18.97,15.0,1249316247.390747,3331250.0,False,False,False
+120,DOV,Dover Corporation,机电_冷却_工程_水处理_边缘工业AI,89.6,1.2,9.0,146345232.85064697,696100.0,False,False,False
+121,ST,Sensata Technologies,配电_电源_功率器件,89.5,12.17,13.0,135905737.4048233,2661000.0,False,False,False
+122,DLR,Digital Realty,云算力_IDC_AI软件平台,89.1,-3.75,10.0,340328951.79138184,1795150.0,False,False,False
+123,SNPS,Synopsys,AI计算芯片_EDA_IP_custom_ASIC,87.7,-0.18,14.0,1160215833.3892822,2303250.0,False,False,False
+124,CC,The Chemours Company,半导体材料_化学品_基板,87.2,1.53,3.0,44757883.16373825,2030650.0,False,False,False
+125,MSFT,微软,云算力_IDC_AI软件平台,86.9,1.49,11.0,14750705958.805847,34215150.0,False,False,False
+126,MSI,Motorola Solutions,机电_冷却_工程_水处理_边缘工业AI,86.7,3.15,10.0,454443807.711792,1104200.0,False,False,False
+127,ETR,Entergy Corporation,电力_发电_能源_储能,86.3,-2.92,14.0,378945578.1234741,3391400.0,False,False,False
+128,IFNNY,Infineon Technologies AG 英飞凌科技,配电_电源_功率器件,86.1,27.32,14.0,60067911.28997803,637950.0,False,True,False
+129,AMZN,Amazon,云算力_IDC_AI软件平台,85.9,-5.66,12.0,10808092510.084534,40346150.0,False,False,True
+130,EME,EMCOR Group,机电_冷却_工程_水处理_边缘工业AI,85.5,-1.6,11.0,259114265.38085938,304300.0,False,False,False
+131,ADBE,Adobe,云算力_IDC_AI软件平台,85.0,1.13,13.0,1110959026.9134521,4460300.0,False,False,False
+132,NTAP,NetApp,AI服务器_存储_EMS,84.7,52.21,18.0,850887264.8292542,5959650.0,False,False,True
+133,ASMIY,ASM International,晶圆制造_前道设备,84.6,4.2,12.0,4786699.9267578125,4600.0,True,True,False
+134,TT,Trane Technologies,机电_冷却_工程_水处理_边缘工业AI,84.1,3.13,12.0,648098767.4957275,1414900.0,False,False,False
+135,CSCO,Cisco Systems,AI网络_光互联_连接器,83.9,10.63,20.0,2949346613.987732,25060800.0,False,False,False
+136,NVT,nVent Electric,配电_电源_功率器件,83.6,8.98,15.0,282369703.061676,1707050.0,False,False,False
+137,HUBB,Hubbell,配电_电源_功率器件,83.4,4.66,16.0,346362694.6906128,735733.5,False,False,False
+138,PNR,Pentair plc,机电_冷却_工程_水处理_边缘工业AI,83.1,-3.69,13.0,182681076.4427185,2560100.0,False,False,False
+139,QCOM,Qualcomm,AI计算芯片_EDA_IP_custom_ASIC,83.1,23.46,15.0,5567519108.692932,23439950.0,False,False,False
+140,CAT,Caterpillar Inc,机电_冷却_工程_水处理_边缘工业AI,82.7,6.15,14.0,2278179752.3864746,2486350.0,False,False,False
+141,EQIX,Equinix,云算力_IDC_AI软件平台,80.8,1.12,14.0,513916547.91259766,481050.0,False,False,False
+142,JCI,Johnson Controls,机电_冷却_工程_水处理_边缘工业AI,80.7,6.69,15.0,461835456.0722351,3390650.0,False,False,False
+143,MICLF,Mycronic AB,封测_检测_计量_光罩,80.6,0.0,16.0,0.0,0.0,True,True,False
+144,PH,Parker-Hannifin,机电_冷却_工程_水处理_边缘工业AI,80.0,-1.01,16.0,678269203.3935547,785300.0,False,False,False
+145,Q,Qnity Electronics,半导体材料_化学品_基板,78.5,1.28,4.0,264152569.29016113,1641650.0,False,False,False
+146,IBM,International Business Machines,云算力_IDC_AI软件平台,78.3,35.84,15.0,4521021826.631165,15477350.0,False,False,False
+147,ASML,ASML Holding NV,晶圆制造_前道设备,78.1,11.37,13.0,2353214429.0527344,1422800.0,False,True,False
+148,CARR,Carrier Global,机电_冷却_工程_水处理_边缘工业AI,77.0,6.27,17.0,474090593.1716919,7213600.0,False,False,False
+149,UMC,United Microelectronics 联华电子,晶圆制造_前道设备,77.0,21.98,14.0,331295753.35388184,14841800.0,False,True,False
+150,DCI,Donaldson Company,机电_冷却_工程_水处理_边缘工业AI,76.8,2.76,18.0,51779855.9425354,625500.0,False,False,False
+151,KLAC,KLA Corporation,晶圆制造_前道设备,76.7,16.16,15.0,1783319125.8239746,925100.0,False,False,False
+152,MIELY,三菱电机 Mitsubishi Electric,配电_电源_功率器件,76.0,1.51,17.0,6073663.958740234,78150.0,True,True,False
+153,RYCEY,Rolls-Royce Holdings,电力_发电_能源_储能,74.8,2.24,15.0,46882488.60397339,2752450.0,False,True,False
+154,CMI,Cummins Inc,电力_发电_能源_储能,74.2,1.86,16.0,638047165.6494141,950850.0,False,False,False
+155,MMM,3M,半导体材料_化学品_基板,73.5,1.25,5.0,491007100.75683594,3216650.0,False,False,False
+156,ENTG,Entegris,半导体材料_化学品_基板,71.2,9.89,6.0,385135972.6097107,2741950.0,False,False,False
+157,ENPH,Enphase Energy,电力_发电_能源_储能,71.1,29.86,17.0,611169580.9112549,10015850.0,False,False,False
+158,MTRN,Materion,半导体材料_化学品_基板,71.0,10.91,7.0,61146284.786987305,282700.0,False,False,False
+159,NDSN,Nordson,半导体材料_化学品_基板,70.6,4.8,8.0,126438332.14111328,446800.0,False,False,False
+160,UCTT,Ultra Clean Holdings,晶圆制造_前道设备,69.4,15.37,16.0,83185206.15615845,968800.0,False,False,False
+161,DTE,DTE Energy Company,电力_发电_能源_储能,69.0,-0.67,18.0,197653797.89352417,1379600.0,False,False,False
+162,GFS,GlobalFoundries,晶圆制造_前道设备,68.8,21.47,17.0,647256610.3076935,8055750.0,False,False,False
+163,SHECY,Shin-Etsu Chemical 信越化学,半导体材料_化学品_基板,68.8,9.95,9.0,5045610.130500793,227800.0,False,True,False
+164,TSLA,Tesla,机电_冷却_工程_水处理_边缘工业AI,67.8,1.54,19.0,18836801327.609253,44797200.0,False,False,False
+165,AEP,American Electric Power,电力_发电_能源_储能,67.2,-1.99,19.0,601976732.3028564,4739850.0,False,False,False
+166,TDY,Teledyne Technologies,封测_检测_计量_光罩,67.0,0.62,17.0,224044849.59716797,366700.0,False,True,False
+167,ASGLY,AGC Inc,半导体材料_化学品_基板,66.1,29.76,10.0,52321.50015830994,6550.0,True,True,False
+168,HOCPY,HOYA Corporation,半导体材料_化学品_基板,64.8,0.75,11.0,4773173.454284668,28000.0,True,True,False
+169,CRWD,CrowdStrike,云算力_IDC_AI软件平台,64.7,15.0,16.0,2480912897.4243164,3729100.0,False,False,False
+170,RKLB,Rocket Lab,机电_冷却_工程_水处理_边缘工业AI,62.2,-14.58,20.0,4126440560.0990295,30009850.0,False,False,True
+171,AJNMY,味之素 Ajinomoto,半导体材料_化学品_基板,60.2,-0.18,12.0,2364112.0544433594,71200.0,True,True,False
+172,LIN,Linde plc,半导体材料_化学品_基板,59.8,0.19,13.0,1109330481.2011719,2182750.0,False,False,False
+173,ECL,Ecolab,半导体材料_化学品_基板,59.3,2.83,14.0,399698053.1097412,1564300.0,False,False,False
+174,TMO,Thermo Fisher Scientific,封测_检测_计量_光罩,55.8,4.9,18.0,1103490848.513794,2432150.0,False,False,False
+175,SOMMY,住友化学 Sumitomo Chemical,半导体材料_化学品_基板,55.6,-1.91,15.0,8165.500068664551,450.0,True,True,False
+176,OKLO,Oklo Inc,电力_发电_能源_储能,53.9,4.2,20.0,1064938868.4654236,16197950.0,False,False,False
+177,APD,Air Products and Chemicals,半导体材料_化学品_基板,49.5,-2.39,16.0,301304773.81744385,1040650.0,False,False,False
+178,NVTS,Navitas Semiconductor,配电_电源_功率器件,43.3,34.15,18.0,892866572.8391647,36881500.0,False,False,False
+179,ARM,Arm Holdings,AI计算芯片_EDA_IP_custom_ASIC,24.3,60.41,16.0,4760385318.986511,14173950.0,False,True,True

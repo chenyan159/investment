@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="dashboard-token" content="__DASHBOARD_TOKEN__">
+    <meta name="color-scheme" content="dark">
+    <title>Research Runner Dashboard</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">LOCAL CONTROL SURFACE</p>
+        <h1>Research Runner</h1>
+        <p class="subtitle">状态、异常、耗时、路径与 quota 的本地总览</p>
+      </div>
+      <div class="header-actions">
+        <div class="refresh-meta" aria-live="polite">
+          <span id="refresh-dot" class="refresh-dot"></span>
+          <span id="last-refresh">等待首次刷新</span>
+        </div>
+        <button id="refresh-button" class="button button-secondary" type="button">立即刷新</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="error-banner" class="banner banner-error hidden" role="alert"></div>
+      <div id="notice-banner" class="banner banner-notice hidden" role="status"></div>
+
+      <section class="kpi-grid" aria-label="关键状态">
+        <article class="kpi-card kpi-runner">
+          <div class="kpi-label">Runner</div>
+          <div class="kpi-line">
+            <span id="runner-status" class="status-pill">读取中</span>
+            <strong id="runner-pid" class="kpi-value compact">—</strong>
+          </div>
+          <p id="runner-detail" class="kpi-detail">等待状态</p>
+        </article>
+        <article class="kpi-card">
+          <div class="kpi-label">Active Queue</div>
+          <strong id="queue-active" class="kpi-value">—</strong>
+          <p id="queue-detail" class="kpi-detail">等待状态</p>
+        </article>
+        <article class="kpi-card">
+          <div class="kpi-label">本轮完成</div>
+          <strong id="completed-count" class="kpi-value">—</strong>
+          <p id="completed-detail" class="kpi-detail">等待状态</p>
+        </article>
+        <article class="kpi-card">
+          <div class="kpi-label">Token Quota 剩余</div>
+          <strong id="quota-remaining" class="kpi-value">—</strong>
+          <div class="meter" aria-hidden="true"><span id="quota-meter"></span></div>
+          <p id="quota-detail" class="kpi-detail">60 秒刷新</p>
+        </article>
+      </section>
+
+      <section class="panel controls-panel" aria-labelledby="controls-title">
+        <div class="panel-heading">
+          <div>
+            <p class="section-kicker">CONTROL</p>
+            <h2 id="controls-title">Runner 控制</h2>
+          </div>
+          <p class="section-note">UI 不修改任务状态；调度、重试和恢复仍由 runner 负责。</p>
+        </div>
+        <div class="controls-row">
+          <label class="field">
+            <span>目标并发</span>
+            <input id="concurrency-input" type="number" min="0" max="128" step="1" value="12" inputmode="numeric">
+          </label>
+          <button id="validate-button" class="button button-secondary" type="button">Validate</button>
+          <button id="runner-toggle-button" class="button button-primary" type="button" disabled>启动 Runner</button>
+          <button id="concurrency-button" class="button button-secondary" type="button">设置并发</button>
+          <button id="shutdown-dashboard-button" class="button button-quiet" type="button">关闭 Dashboard</button>
+        </div>
+        <p class="control-hint">并发设为 0 后不再领取新任务；已运行任务完成后 runner 会正常退出。</p>
+        <pre id="action-output" class="action-output hidden" aria-live="polite"></pre>
+      </section>
+
+      <div class="two-column">
+        <section class="panel" aria-labelledby="queue-title">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">QUEUE</p>
+              <h2 id="queue-title">队列统计</h2>
+            </div>
+            <span id="queue-progress-label" class="metric-caption">—</span>
+          </div>
+          <div class="progress-track"><span id="queue-progress"></span></div>
+          <div id="queue-status-stats" class="stat-strip"></div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Domain</th><th>总数</th><th>Running</th><th>Pending</th><th>Retry</th><th>Failed</th></tr></thead>
+              <tbody id="domain-table-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel" aria-labelledby="forecast-title">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">FORECAST</p>
+              <h2 id="forecast-title">ETA 与剩余 Quota</h2>
+            </div>
+            <span class="metric-caption">估算，不参与调度</span>
+          </div>
+          <div class="forecast-grid">
+            <div class="forecast-item"><span>平均完成时间</span><strong id="eta-mean">—</strong></div>
+            <div class="forecast-item"><span>保守完成时间</span><strong id="eta-p90">—</strong></div>
+            <div class="forecast-item"><span>完成时预计剩余 quota</span><strong id="quota-projected">—</strong></div>
+            <div class="forecast-item"><span>预计触及剩余 1%</span><strong id="quota-threshold-time">—</strong></div>
+          </div>
+          <p id="forecast-note" class="panel-footnote">等待足够数据</p>
+        </section>
+      </div>
+
+      <section class="panel" aria-labelledby="running-title">
+        <div class="panel-heading">
+          <div>
+            <p class="section-kicker">RUNNING</p>
+            <h2 id="running-title">运行中任务</h2>
+          </div>
+          <span id="running-summary" class="metric-caption">—</span>
+        </div>
+        <div id="running-stats" class="stat-strip"></div>
+        <div id="running-table-wrap" class="table-wrap running-table-wrap" tabindex="-1">
+          <table>
+            <thead><tr><th>任务</th><th>Domain</th><th>已运行</th><th>Attempt</th><th>Reasoning</th></tr></thead>
+            <tbody id="running-table-body"></tbody>
+          </table>
+        </div>
+        <p id="running-empty" class="empty-state hidden">当前没有运行中的任务。</p>
+      </section>
+
+      <section class="panel" aria-labelledby="completed-title">
+        <div class="panel-heading">
+          <div>
+            <p class="section-kicker">COMPLETED</p>
+            <h2 id="completed-title">完成统计</h2>
+          </div>
+          <span id="completed-summary" class="metric-caption">—</span>
+        </div>
+        <div id="completed-stats" class="stat-strip"></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>最近完成</th><th>Domain</th><th>耗时</th><th>Attempt</th><th>Tokens</th></tr></thead>
+            <tbody id="completed-table-body"></tbody>
+          </table>
+        </div>
+        <p id="completed-empty" class="empty-state hidden">暂无完成记录。</p>
+      </section>
+
+      <div class="two-column">
+        <section class="panel" aria-labelledby="anomaly-title">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">ANOMALIES</p>
+              <h2 id="anomaly-title">异常统计</h2>
+            </div>
+            <span id="anomaly-summary" class="metric-caption">—</span>
+          </div>
+          <div id="anomaly-stats" class="stat-strip"></div>
+          <ol id="anomaly-list" class="event-list"></ol>
+          <p id="anomaly-empty" class="empty-state hidden">本次运行没有异常事件。</p>
+        </section>
+
+        <section class="panel" aria-labelledby="path-title">
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">OUTPUT HEALTH</p>
+              <h2 id="path-title">输出路径洁净度</h2>
+            </div>
+            <span id="path-health-status" class="status-pill">—</span>
+          </div>
+          <div id="path-stats" class="stat-strip"></div>
+          <ul id="path-problem-list" class="problem-list"></ul>
+          <p id="path-empty" class="empty-state hidden">没有发现路径或文件问题。</p>
+        </section>
+      </div>
+
+      <footer>
+        <span>仅监听 127.0.0.1</span>
+        <span>普通状态 5 秒刷新 · Quota 60 秒刷新</span>
+        <span>Dashboard 与 Runner 生命周期相互独立</span>
+      </footer>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

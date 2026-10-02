@@ -1,0 +1,392 @@
+# SHECY / Shin-Etsu Chemical 信越化学公司调研：AI半导体材料的高壁垒现金牛，不是纯数据中心设备股
+
+报告日期：2026-06-11  
+股票：`SHECY`（OTC unsponsored ADR；1 ADS = 0.5 普通股），主上市 `4063.T`  
+公司：Shin-Etsu Chemical Co., Ltd. / 信越化学工业株式会社  
+正式分类：`公司调研/半导体材料_化学品_基板/`  
+主要资料边界：本报告只使用 `基本面/行业调研/` 内的行业资料、公司官方 IR/产品资料和联网公开资料；不使用 `特征量化/`，不读取同目录旧公司报告。  
+汇率口径：公司 FY2026 损益表平均汇率约 `150.8 日元/美元`；市场快照美元折算使用 2026-06-11 附近 `1 美元约 160.5 日元`。
+
+## 0. 结论先行
+
+1. **信越化学在投资人心中是“日本高质量化学现金牛 + 全球半导体材料隐形龙头”。** 它不是 AI 数据中心设备商，也不是 GPU/HBM 芯片商；真正价值在 `300mm 半导体硅片`、`EUV/ArF 光刻胶及配套材料`、`photomask blanks / synthetic quartz`、`半导体封装胶材 / 有机硅 / TIM` 等材料层。材料单机价值低于 GPU，但客户认证慢、良率影响大、切换成本高，ROIC 与利润率稳定性优于多数化工品。
+2. **公司披露的 AI 相关产品约占总销售 `15%`，对应 FY2026 年化约 `3,861 亿日元 / 25.6 亿美元`。** 管理层在 2026-04-28 电话会重申该比例与三个月前一致；产品主要为 photoresists、mask blanks、silicon wafers，其后是 HDD 稀土磁体、有机硅、光学材料，PVC 也间接用于数据中心管道和电缆。这里的 `15%` 是广义 AI/data center 口径，直接 AI 半导体材料口径更合理估计为 `10-12%` 销售。
+3. **FY2026 财务结果是“收入稳定、利润下滑、结构分化”。** FY2026 营收 `2.574 万亿日元`，同比 `+0.5%`；营业利润 `6,352 亿日元`，同比 `-14.4%`；归母净利 `4,745 亿日元`，同比 `-11.2%`。电子材料收入同比 `+8.7%`、营业利润 `+6.1%`，但 Infrastructure Materials（PVC/烧碱）营业利润同比 `-43.4%`，拉低集团。
+4. **最新 FY2026 Q4（2026 年 1-3 月）最关键的正向信号在订单，不在已确认收入。** 公司没有披露 backlog，但披露了：`300mm wafer` Q4 行业出货同比双位数增长；2026 年 4-6 月客户追加 wafer 订单，增长率可能高于年初预期；部分客户重新表达新 LTA 兴趣；photoresist Q4 环比显著增长；Isesaki 光刻材料新基地开始运营；光纤预制棒需求“极强”、价格飙升、正在进行长期谈判。
+5. **未来 12 个月最值得跟踪的高增长产品排序：** 第一，`EUV/ArF photoresist + underlayer/ancillaries`；第二，`300mm leading-edge silicon wafers for AI logic/HBM`；第三，`photomask blanks / synthetic quartz`；第四，`AI advanced packaging underfill/EMC + silicone TIM/gap filler`；第五，`optical materials / optical fiber preforms`；第六，`QST 300mm GaN substrate`。其中前 3 个是当前利润核心，后 3 个是小基数潜在弹性。
+6. **估值截至 2026-06-11 附近不便宜但可解释。** 主上市 `4063.T` 约 `6,850 日元`，市值约 `13.6 万亿日元 / 848 亿美元`，TTM P/E 约 `27x`，P/S 约 `5.3x`；SHECY ADR 约 `$21`。Forward P/E 因公司未给 FY2027 指引而依赖卖方共识，公开聚合口径约 `23-24x`。这意味着市场已经给半导体材料复苏和 AI 暴露定价，后续要靠电子材料增长与 PVC 利润修复兑现。
+7. **资产负债表非常健康。** FY2026 末现金及存款 `1.708 万亿日元`，有息负债 `2,432 亿日元`，即使扣除新增借款和回购，公司仍是净现金结构；流动资产 `3.106 万亿日元` 对流动负债 `5,226 亿日元`，流动比率约 `5.9x`。风险不在偿债，而在大额回购、PVC 扩产、电子材料区域化扩产后的资本效率。
+
+## 1. 公司整体业务、投资人印象和产业链定位
+
+### 1.1 业务结构
+
+信越化学按四个报告分部披露。FY2026（2025-04 至 2026-03）收入和利润结构如下：
+
+| 分部 | FY2026 收入 | 收入占比 | FY2026 营业利润 | 分部营业利润率 | 主要产品 | AI/数据中心相关性 |
+|---|---:|---:|---:|---:|---|---|
+| Electronics Materials | `1.016 万亿日元` | `39.5%` | `3,445 亿日元` | `33.9%` | 半导体硅片、稀土磁体、半导体封装材料、LED 封装材料、photoresists、photomask blanks、synthetic quartz | 最高：AI logic/HBM wafers、EUV/ArF、mask blanks、advanced packaging |
+| Infrastructure Materials | `9,814 亿日元` | `38.1%` | `1,649 亿日元` | `16.8%` | PVC resin、caustic soda、methanol、chloromethanes、poval | 低到中：PVC 管道/电缆用于 DC 建设，但核心仍是大宗化工 |
+| Functional Materials | `4,408 亿日元` | `17.1%` | `1,010 亿日元` | `22.9%` | silicones、cellulose derivatives、silicon metal、synthetic pheromones、pellicles 等 | 中：高端有机硅、TIM、光学/电子材料；普通硅胶和纤维素非 AI |
+| Processing & Specialized Services | `1,360 亿日元` | `5.3%` | `273 亿日元` | `20.1%` | 加工塑料、工程、技术/设备出口、贸易 | 低：工程与材料配套 |
+| 合计 | `2.574 万亿日元` | `100%` | `6,352 亿日元` | `24.7%` | 多元材料平台 | 广义 AI 产品约 `15%` |
+
+信越的核心不是单一材料，而是多个高壁垒材料平台的组合：
+
+- `semiconductor silicon wafers`：与 SUMCO、GlobalWafers、Siltronic、SK Siltron 共同构成全球高端硅片寡头，300mm leading-edge 和客户认证是壁垒。
+- `photoresists / lithography materials`：覆盖 i-line、KrF、ArF、EUV，并提供 underlayer / hardmask 等配套材料。AI 芯片向 N3/N2、HBM DRAM EUV、更多 EUV 层迁移，提升单片材料价值。
+- `photomask blanks / synthetic quartz`：光掩模的底材和石英体系，受先进节点和高端光罩需求驱动；与 HOYA、AGC 等竞争。
+- `semiconductor encapsulation / silicone / TIM`：在先进封装、HBM attach、underfill、EMC、TIM、gap filler 上有产品基础，但 AI 级高端 TIM 的竞争更分散，信越不是唯一龙头。
+- `PVC / caustic soda`：Shintech 是北美 PVC 成本曲线优势玩家；这部分给现金流和周期弹性，但不是 AI 核心。
+
+### 1.2 投资人眼中的公司
+
+投资人通常把信越看作三层资产：
+
+| 层级 | 投资人认知 | 核心价值 | 估值逻辑 |
+|---|---|---|---|
+| 高质量现金牛 | 日本最大化学品公司之一，长期净现金、高利润率、高股东回报 | 分部组合稳定，周期下行仍强 FCF | 化工龙头 + 低杠杆 + buyback |
+| 半导体材料稀缺资产 | 硅片、光刻胶、mask blanks、封装材料进入先进节点供应链 | 认证周期、良率、客户共研、区域化供给 | 高于普通化工的 P/E 与 P/S |
+| AI 间接受益者 | AI 数据中心通过 GPU/ASIC/HBM/CoWoS 传导到上游材料 | AI 相关产品约 15%，但不直接卖给云厂 | 受益真实但收入弹性慢于 GPU/HBM |
+
+关键判断：**信越是 AI 基础设施的“材料约束受益者”，不是“AI 资本开支高贝塔股”。** 它更像低噪声、高黏性、慢变量的上游瓶颈资产。若市场只按“AI 相关 15%”给高成长倍数，会高估弹性；若只按 PVC 化工周期给低倍数，会低估电子材料长期质量。
+
+### 1.3 最近 3 年重大业务变动 / 转型 / 收购
+
+信越近三年没有以大型并购驱动转型，主要是有机扩产和资本配置变化。
+
+| 时间 | 事件 | 金额 / 状态 | 影响 |
+|---|---:|---:|---|
+| 2024-04 | 决定在日本群马县伊势崎市建设半导体光刻材料第四生产/R&D 基地 | `约 150,000 平方米` 用地；第一阶段投资计划 2026 年完成；FY2026 资料列示 `830 亿日元` | 光刻胶、mask blanks、EUV/ArF 配套材料扩产和供应连续性；2026-2027 对 AI/HPC 材料最关键 |
+| 2025-2026 | 电子材料扩张持续推进 | FY2026 Electronics Materials capex `2,124 亿日元` | 电子材料 capex 占集团 capex 约 `62.5%`，说明公司把增量资本优先给半导体材料 |
+| 2025-11 | IMEC 在信越 `300mm QST™` substrate 上实现高压 GaN HEMT 评估突破 | 官方披露超过 `650V`，部分行业报道提到超过 `800V` | 小基数潜在业务；连接数据中心电源、车载、工业功率器件，但仍处客户评估/技术验证阶段 |
+| 2026-03 | Shintech 宣布美国 Louisiana `34 亿美元` PVC/烧碱/VCM/乙烯等上游原料扩产 | 计划到 2030 年底分阶段完成 | 强化 PVC 成本曲线和供应稳定性；这不是 AI 核心，但会影响集团资本开支和周期利润 |
+| 2026-04/05 | Isesaki 光刻材料新基地开始运营；FY2026 电话会称 photoresist Q4 环比显著增长 | 管理层称正加速 supply capacity | AI 先进节点、HBM DRAM EUV、客户本地化共研是主要需求侧驱动 |
+| 2026-05 起 | 有机硅产品全球提价 | Shin-Etsu Silicone 公告：所有 silicone 产品，出货自 2026-05-01 起，价格上调 `10%+` | 原料/中东冲击下价格传导；高端硅胶/TIM 若进入 AI 平台，有更强毛利弹性 |
+| 2025-2026 | 股东回报大幅加速 | FY2026 内回购 `5,000 亿日元`；2026-04 再宣布上限 `2,500 亿日元` | 净现金转向主动资本效率管理；对 EPS/ROE 有支撑，但也消耗部分现金缓冲 |
+
+## 2. 最新市场快照、估值和资产负债表
+
+### 2.1 股价、估值和利润率
+
+| 指标 | 最新值 | 日期 / 口径 | 说明 |
+|---|---:|---|---|
+| SHECY ADR 价格 | 约 `$21.0` | 2026-06-09 至 2026-06-11 附近公开行情；OTC unsponsored ADR | OTC 流动性低，建议优先看 `4063.T` |
+| `4063.T` 普通股价格 | 约 `6,850 日元` | 2026-06-11 附近 Google Finance/Yahoo Japan 口径 | 与 EPS `252.69 日元` 对应 TTM P/E 约 `27x` |
+| 市值 | 约 `13.6 万亿日元 / 848 亿美元` | 2026-06-11，按 USD/JPY `160.5` 折算 | ADR 数据源会因汇率和 ADR 映射出现差异 |
+| TTM P/E | 约 `26-27x` | 2026-06-11 附近 | Google Finance 4063.T 约 `27.16x`；部分 ADR 聚合源约 `26x` |
+| Forward P/E | 约 `23-24x` | 2026-06-11 附近公开聚合口径 | 公司未给 FY2027 指引，因此该数值依赖卖方共识 |
+| P/S | 约 `5.3x` | 市值 `13.6 万亿日元` / FY2026 销售 `2.574 万亿日元` | 明显高于普通化工，反映半导体材料溢价 |
+| FY2026 收入增速 | `+0.5%` | FY2026 对 FY2025 | 电子材料强，PVC/基础化工拖累 |
+| FY2026 毛利率 | `34.2%` | FY2026 | 毛利 `8,808 亿日元` / 销售 `2.574 万亿日元` |
+| FY2026 营业利润率 | `24.7%` | FY2026 | 营业利润 `6,352 亿日元` |
+| FY2026 净利率 | `18.4%` | FY2026 | 归母净利 `4,745 亿日元` |
+
+估值解释：当前倍数隐含市场相信电子材料会恢复增长，PVC 利润下滑是周期性而非永久性。但如果 FY2027 仍不能给出利润恢复指引，或 300mm wafer / photoresist 的新增订单没有转成收入，`>5x P/S` 容易受压。
+
+### 2.2 资产负债表健康度
+
+| 指标 | FY2025 末 | FY2026 末 | 变化 | 解读 |
+|---|---:|---:|---:|---|
+| 现金及存款 | `1.660 万亿日元` | `1.708 万亿日元` | `+484 亿日元` | 绝对现金极高 |
+| 证券 | `1,032 亿日元` | `70 亿日元` | `-962 亿日元` | 可转现金/存单下降 |
+| 流动资产 | `3.210 万亿日元` | `3.106 万亿日元` | `-1,036 亿日元` | 回购和投资消耗部分流动性 |
+| 流动负债 | `5,370 亿日元` | `5,226 亿日元` | `-144 亿日元` | 流动比率约 `5.9x` |
+| 有息负债 | `168 亿日元` | `2,432 亿日元` | `+2,264 亿日元` | 因长期借款增加，但仍远低于现金 |
+| 总资产 | `5.637 万亿日元` | `5.662 万亿日元` | `+253 亿日元` | 资产规模稳定 |
+| 总负债 | `7,990 亿日元` | `1.019 万亿日元` | `+2,196 亿日元` | 杠杆仍低 |
+| 净资产 | `4.838 万亿日元` | `4.643 万亿日元` | `-1,942 亿日元` | 主要受回购影响 |
+| FY2026 经营现金流 | `7,127 亿日元` | - | - | 仍显著为正 |
+| FY2026 capex / 投资现金流 | capex `3,397 亿日元`；投资现金流 `-5,448 亿日元` | - | - | 电子材料和区域化扩产消耗现金 |
+| FY2026 回购 + 股息 | 回购 `5,000 亿日元`；股息 `2,032 亿日元` | - | - | 股东回报强，资金压力可控 |
+
+结论：资产负债表是 `A` 级健康，偿债风险低。真正风险是 **资本配置回报**：`34 亿美元 Shintech`、`830 亿日元 Isesaki`、`800 亿日元 + 1,000 亿日元有机硅先进功能线` 等项目要证明长期利润率，否则净现金优势会被低回报 capex 稀释。
+
+## 3. 最近五个财报季度：收入、利润、订单和 AI 暴露
+
+说明：公司不披露 backlog/bookings、具体产品收入、AI 产品季度收入。本表中销售和分部利润为官方季度数据；AI 相关收入为按管理层 `约 15%` 广义口径并结合 Q1-Q2 表述做的估算；订单/交期为电话会和行业资料推断。
+
+| 财报季度 | 集团收入 / YoY | 营业利润 / 利润率 | Electronics Materials 收入 / YoY / 利润率 | Infrastructure 收入 / YoY / 利润率 | Functional 收入 / YoY / 利润率 | 估算 AI 相关收入 | 订单、交期、取消率和重点信息 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| FY2025 Q4：2025-01 至 2025-03 | `6,315 亿日元` | `1,576 亿日元 / 25.0%` | `2,251 亿日元 / 28.5%` | `2,639 亿日元 / 24.7%` | `1,072 亿日元 / 20.2%` | 约 `850 亿日元`（13-14%） | 基准期；300mm 去库存接近尾声，AI 芯片价值高但非 AI 仍弱；未披露 backlog |
+| FY2026 Q1：2025-04 至 2025-06 | `6,285 亿日元 / +5.1%` | `1,668 亿日元 / 26.5%` | `2,402 亿日元 / +5.8% / 34.6%` | `2,444 亿日元 / +5.1% / 21.6%` | `1,100 亿日元 / +3.1% / 21.8%` | 约 `880 亿日元`（14%） | 300mm wafer 出货 YoY 和 QoQ 双位数增长；AI 设备强，非 AI 库存仍调整；300mm DRAM wafers 中 HBM 接近 20%，300mm logic AI 接近 10% |
+| FY2026 Q2：2025-07 至 2025-09 | `6,559 亿日元 / -1.9%` | `1,671 亿日元 / 25.5%` | `2,560 亿日元 / +7.8% / 34.2%` | `2,560 亿日元 / -7.5% / 19.3%` | `1,106 亿日元 / -7.3% / 21.8%` | 约 `950 亿日元`（14.5%） | 300mm wafer 行业 Q/Q flat、YoY 单位数增长；10-12 月 300mm 订单 steady；AI wafer 数量占比仍低于 10%，但价格/规格更高 |
+| FY2026 Q3：2025-10 至 2025-12 | `6,494 亿日元 / -2.1%` | `1,640 亿日元 / 25.3%` | `2,540 亿日元 / +3.8% / 34.8%` | `2,474 亿日元 / -7.7% / 17.7%` | `1,131 亿日元 / -1.9% / 21.5%` | 约 `974 亿日元`（15%） | 管理层披露 AI 相关产品约占总销售 `15%`；产品为 photoresists、mask blanks、silicon wafers 等；Isesaki photoresist 新基地计划 2026-04 投运 |
+| FY2026 Q4：2026-01 至 2026-03 | `6,399 亿日元 / +1.3%` | `1,371 亿日元 / 21.4%` | `2,654 亿日元 / +17.9% / 32.1%` | `2,334 亿日元 / -11.6% / 7.9%` | `1,070 亿日元 / -0.2% / 26.4%` | 约 `960 亿日元`（15%） | 最强订单信号：客户 2026Q2 起追加 wafer 订单；2027-2028 device maker 扩产计划明显提升；新 LTA 兴趣回升；photoresist Q4 环比显著增长；光纤 preform 价格/需求极强；未披露取消率，未见大规模取消线索 |
+
+### 3.1 五个季度读法
+
+- `Electronics Materials` 是唯一持续改善的主线。FY2026 Q4 收入同比 `+17.9%`，虽然利润率从 Q3 的 `34.8%` 降至 `32.1%`，但仍是集团利润核心。
+- `Infrastructure Materials` 是利润拖累。FY2026 Q4 收入同比 `-11.6%`，营业利润率只有 `7.9%`，主要因 Shintech 大修和 PVC/烧碱价格问题。管理层 2026-04/05 开始推进北美 PVC 涨价。
+- `Functional Materials` Q4 利润率 `26.4%`，改善明显；有机硅提价和高功能产品 mix 是后续观察点。
+- `AI 相关收入` 并没有像 GPU 公司那样爆发，因为材料通过客户认证、LTA、库存调整和产能爬坡传导；优势是持续性和客户黏性更强。
+
+## 4. FY2026 最新指引、收入占比和业务重点
+
+### 4.1 FY2027 指引状态
+
+公司在 2026-04-28 FY2026 电话会中没有给 FY2027 正式业绩指引。管理层表述是：由于中东局势、市场条件和宏观不确定性，当前 fiscal year 的 earnings forecast 将在可以披露时再公布。
+
+已披露的年度经营锚点：
+
+| 项目 | FY2026 实际 | FY2027 / 当前 fiscal year 已披露口径 |
+|---|---:|---:|
+| 集团销售 | `2.574 万亿日元` | 未给收入/利润指引 |
+| 集团营业利润 | `6,352 亿日元` | 管理层目标是扭转 FY2026 利润下降趋势 |
+| 投资 / capex | `3,397 亿日元` | FY2027 投资预测 `3,500 亿日元` |
+| 折旧摊销 | `2,430 亿日元` | FY2027 预测 `2,400 亿日元` |
+| 股息 | 年度 `106 日元/股` | 年度 `106 日元/股` 预测维持 |
+| 新回购 | FY2026 内已回购 `5,000 亿日元` | 2026-04 再宣布上限 `2,500 亿日元` |
+
+### 4.2 业务侧侧重点
+
+最新电话会和 capex 分布显示，公司最侧重三条线：
+
+1. **Electronics Materials：** AI-related advanced sector 强；300mm wafer 恢复；photoresist / lithography materials 扩产；Isesaki 投运；mask blanks 下一步动作；其他 AI-related materials。
+2. **Infrastructure Materials：** Shintech 通过北美成本优势和上游原料扩产稳住 PVC/caustic soda 利润；短期重点是涨价，而不是纯销量。
+3. **Functional Materials：** 扩大 functional / specialty products，高端有机硅与价格传导；这条线中 AI TIM / electronics silicone 是潜在弹性，但披露不足。
+
+### 4.3 产品、型号和应保留/跳过的业务
+
+| 分类 | 产品 / 型号 / 系列 | 当前判断 | 是否重点分析 |
+|---|---|---|---|
+| 300mm leading-edge silicon wafers | polished / epi / ultra-flat 300mm wafers；AI logic、HBM DRAM、server/data center 相关 wafers | 当前核心利润池；AI 独占 300mm wafer 低于 10%，广义 server/data center 超 20%；2026Q4 后订单改善 | 是 |
+| Photoresists | i-line、KrF、ArF、EUV photoresists；SAIL ArF/KrF；spin-on middle/under-layer hardmasks | 高壁垒、高毛利、Isesaki 新基地投运；AI 芯片 N3/N2/HBM4/EUV 层数上升驱动 | 是 |
+| Photomask blanks / synthetic quartz | photomask blanks、quartz substrates、synthetic quartz products | 与先进光罩和 EUV/ArF patterning 绑定；单位产品认证强 | 是 |
+| Semiconductor encapsulation / underfill | KMC epoxy molding compound、SMC liquid epoxy encapsulant、die attach / underfill / low-stress low-warpage materials | AI 先进封装材料池高增长；信越是参与者但不是唯一龙头 | 是 |
+| Silicone TIM / thermal materials | TC Pad 系列、TIM 1 Thermal Gel、TIM 1.5 two-part curable gap fillers、TIM 2 thermal grease；Shin-Etsu Silicone TIM line | 数据中心液冷、光模块和高功率 AI package 提高热材料价值；需要验证进入客户平台 | 是，小基数潜力 |
+| Optical materials / optical fiber preforms | synthetic quartz / optical materials / fiber preforms | Q4 电话会称价格飙升、需求极强、长期谈判；可能与 AI 网络/通信基础设施相关，也可能是电信周期 | 是，小基数潜力 |
+| Rare earth magnets | HDD 用稀土磁体、工业/汽车磁体 | AI storage/HDD 可带动，但稀土原料和中国供应链风险大 | 中等跟踪 |
+| QST 300mm GaN substrate | QST™ 300mm GaN growth substrate；IMEC high-voltage GaN evaluation | 数据中心电源/车载高压潜在路线；仍在评估和客户认证期 | 是，期权型小业务 |
+| PVC / caustic soda / methanol / chloromethanes | Shintech PVC resin、caustic soda、VCM、ethylene feedstock | 大收入大现金流，AI 只是数据中心管道/电缆间接暴露；周期/价格更重要 | 跳过 AI 深挖，但纳入财务 |
+| Cellulose derivatives、synthetic pheromones、poval、general processed plastics | 医药/日化/农业/普通材料 | 与 AI 基建弱相关 | 跳过 |
+| 普通 i-line/KrF mature-node resist、普通 200mm wafers、普通 silicone consumer products | 成熟制程、周期性和替代压力更大 | 增速低，定价弱于 advanced products | 跳过深挖 |
+
+## 5. 高增长 / 关键产品当前贡献与供应链评分
+
+评分口径：`1` = 低，`5` = 极高。收入贡献为本报告估算，非公司披露。美元折算使用约 `160.5 日元/美元`，FY 年度折算也给出日元范围以便复核。
+
+| 产品 / 业务 | FY2026 当前收入贡献估计 | 当前增速判断 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 关键依据 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 300mm advanced silicon wafers for AI logic/HBM/server | 直接 AI `700-1,100 亿日元 / $0.44-0.69B`；广义 server/DC `1,400-2,000 亿日元 / $0.87-1.25B` | FY2026 电子材料 +8.7%；AI/high-end wafer 子线估计 `+10-20%` | 5 | 4 | 4 | 4 | AI logic/HBM 都需要 300mm 高端 wafer；客户 LTA 和认证锁定；管理层称客户追加订单、新 LTA 兴趣回升 |
+| EUV/ArF photoresists + underlayers / ancillaries | `800-1,400 亿日元 / $0.50-0.87B` AI 相关估算 | Q4 photoresist 环比显著增长；未来 12 月 `+15-30%` | 5 | 5 | 4 | 5 | N3/N2、HBM DRAM EUV、更多 EUV/ArF 层；Isesaki 第四基地投运 |
+| Photomask blanks / synthetic quartz | `500-900 亿日元 / $0.31-0.56B` AI 相关估算 | `+8-20%` | 4 | 4 | 4 | 4 | 每个先进设计都需高端 mask blanks；AI ASIC 增加设计数；切换风险高 |
+| Semiconductor encapsulants / underfill / EMC | `250-500 亿日元 / $0.16-0.31B` AI/HPC 相关估算 | `+15-35%` | 4 | 4 | 3 | 3 | CoWoS/HBM/advanced package 增加 low-warpage、low-stress、高热材料需求；竞争者多 |
+| Silicone TIM / gap filler / thermal materials | `150-350 亿日元 / $0.09-0.22B` AI/data center 相关估算 | `+20-50%`，普通 silicone 不同 | 4 | 5 | 3 | 3 | 液冷 rack、TIM1/2、optical module gap filler；2026-05 全硅胶产品提价 10%+，但高端平台认证需验证 |
+| Optical materials / fiber preforms | `100-300 亿日元 / $0.06-0.19B` AI/network 相关估算 | Q4 管理层称需求极强、价格飙升；`+20-40%` | 3 | 4 | 4 | 3 | AI fabric/telecom 光纤需求与预制棒短缺；并非全部可归因 AI |
+| Rare earth magnets for HDD/data storage | `100-250 亿日元 / $0.06-0.16B` AI storage 相关估算 | `+5-15%`，受 HDD 与稀土价格影响 | 3 | 3 | 3 | 3 | 近线 HDD 受 AI 数据湖/对象存储拉动，但磁体价值占比低 |
+| QST 300mm GaN substrate | `<50 亿日元 / <$0.03B` 当前估算 | 小基数，可 `+50%+` 但从很低基数 | 3 | 3 | 2 | 4 | IMEC 高压 GaN 评估突破；功率器件潜在，但量产认证未完成 |
+
+### 5.1 当前最突出的交叉验证
+
+- 本地行业资料显示，AI 数据中心 2026 的硬瓶颈是 `HBM/DRAM + CoWoS/2.5D/基板 + rack-scale 交付 + 电力`。信越最强相关点在 HBM/AI logic 的前道材料和 advanced packaging materials，而不是数据中心建设本身。
+- SEMI 2026-04 披露 Q1 全球硅片出货 `3,275 MSI`，同比 `+13.1%`；SEMI 2026-05 披露 2025 全球半导体材料市场 `732 亿美元`，其中 wafer fab materials `458 亿美元`，packaging materials `274 亿美元`。这与信越 Q4/Q1 wafer 订单改善一致。
+- TrendForce 2026-04 指出 2.5D packaging 严重短缺到 2027 才开始轻微缓解；TSMC 2026 Symposium 披露已生产 `5.5-reticle CoWoS`，2028 计划 `14-reticle CoWoS` 可集成约 `10` 个 large compute die 和 `20` 个 HBM stacks。信越的 underfill/EMC/TIM 机会来自 package 面积、HBM stack 数和热密度，而不是芯片 ASP 本身。
+
+## 6. 一年后产品收入贡献三情景
+
+时间窗口：2026-06 至 2027-06，按公司 FY2027/FY2028 初期收入转化估算。因为信越没有给 FY2027 指引，以下为模型口径。
+
+| 产品 / 业务 | 基准情景：一年后收入贡献 | 乐观情景：一年后收入贡献 | 极度乐观情景：一年后收入贡献 | 基准增速 | 乐观增速 | 极度乐观增速 | 情景触发条件 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 300mm advanced silicon wafers for AI logic/HBM/server | 直接 AI `800-1,250 亿日元`；广义 DC `1,600-2,300 亿日元` | 直接 AI `1,050-1,600 亿日元`；广义 `2,100-3,000 亿日元` | 直接 AI `1,350-2,100 亿日元`；广义 `2,800-3,800 亿日元` | `+8-15%` | `+15-25%` | `+25-40%` | Rubin/MI400/TPU/Trainium/ASIC 2027 wafer lock；HBM4 sell-out；客户新 LTA 价格上修 |
+| EUV/ArF photoresists + underlayers | `950-1,700 亿日元` | `1,200-2,100 亿日元` | `1,600-2,700 亿日元` | `+15-25%` | `+25-40%` | `+45-70%` | Isesaki 利用率快速爬坡；TSMC N2/N3、HBM DRAM EUV 层数增加；高 NA/MOR 未拖累主线 |
+| Photomask blanks / synthetic quartz | `580-1,050 亿日元` | `700-1,250 亿日元` | `850-1,600 亿日元` | `+10-18%` | `+18-30%` | `+30-50%` | AI ASIC tape-out 增加；EUV mask blanks 紧；中国以外先进节点扩张 |
+| Encapsulants / underfill / EMC | `320-650 亿日元` | `420-850 亿日元` | `600-1,100 亿日元` | `+20-35%` | `+40-60%` | `+70-100%` | CoWoS/HBM4/RDL package 面积上升；客户平台认证通过 |
+| Silicone TIM / gap filler / thermal materials | `200-500 亿日元` | `280-700 亿日元` | `420-1,000 亿日元` | `+25-45%` | `+50-80%` | `+90-150%` | 液冷 rack 默认化；AI package TIM1/2 进入 qualification；光模块 gap filler 通过客户 |
+| Optical materials / fiber preforms | `130-420 亿日元` | `180-550 亿日元` | `250-800 亿日元` | `+20-40%` | `+40-70%` | `+80%+` | 光纤 preform 长约落地；AI 网络/电信补库存同步；价格维持 |
+| Rare earth magnets for HDD/data storage | `110-300 亿日元` | `140-380 亿日元` | `180-500 亿日元` | `+5-15%` | `+15-30%` | `+30-50%` | Nearline HDD 强、稀土供应稳定、重稀土减量技术兑现 |
+| QST 300mm GaN substrate | `30-80 亿日元` | `60-150 亿日元` | `120-300 亿日元` | 小基数 `+50%+` | `+100%+` | `+200%+` | IMEC/客户验证推进到 pilot；功率器件客户导入 300mm GaN |
+
+## 7. BOM 拆分、单位内容量和价格传导链
+
+### 7.1 总体原则
+
+信越的产品多数不是按 rack 或 GPU 明码销售，而是提前进入 foundry、memory、mask shop、OSAT、module 和设备材料供应链。它的价格传导链大致是：
+
+`AI model demand -> cloud/ASIC/GPU orders -> foundry wafer starts + HBM wafer starts -> lithography/CMP/wafer/mask blank consumption -> advanced package/HBM attach/TIM materials -> module/rack acceptance -> cloud capex`
+
+材料供应商的价值来自三点：
+
+- **良率杠杆：** 几十美元材料失效可报废数千到数万美元 die/package。
+- **认证锁定：** 先进硅片、photoresist、mask blank、underfill/TIM 通常需要 `6-24 个月` 客户认证。
+- **区域化供应：** 台湾、日本、韩国、美国、欧洲客户现场支持越来越重要；Isesaki、台湾产能和客户共研缩短迭代周期。
+
+### 7.2 单位内容量估算
+
+以下估算用于判断弹性，不是公司报价。`每 GPU` 指高端 AI accelerator + HBM package 的 look-through 材料机会；`每 rack` 以 `72 GPU`、`100-140kW` 液冷 rack 为参考；`每 MW` 约 `7-10` 个高密度 AI rack；`每 optical port` 指 800G/1.6T 光模块/端口级材料。
+
+| 产品 / 材料 | 每 GPU 真实内容量（估算） | 每 rack 内容量（估算） | 每 MW 内容量（估算） | 每 optical port 内容量 | 价格传导链 |
+|---|---:|---:|---:|---:|---|
+| 300mm silicon wafer：AI logic die | 原始 substrate 内容量约 `$8-20/GPU`；若含 HBM DRAM wafer substrate，合计约 `$30-90/GPU`；信越可得取决于 share | `$2,000-6,500/rack` 全链 wafer substrate opportunity；信越 share 后更低 | `$15,000-65,000/MW` | 不适用 | wafer LTA -> foundry/memory wafer starts -> chip ASP；价格以 LTA 和 mix 调整为主 |
+| EUV/ArF photoresist + ancillaries | 先进 logic + HBM DRAM 的 resist/ancillary look-through 约 `$30-120/GPU`；信越 share 后约 `$5-40/GPU` | `$2,000-9,000/rack` 信越机会量级 | `$15,000-90,000/MW` | 光芯片/SiPh 端口可能 `<$0.5-2/port` | node/layer 数 + defectivity +客户共研决定 ASP；切换成本高 |
+| Photomask blanks / synthetic quartz | 主要是 mask set 前置成本；摊销后约 `$1-10/GPU`，小批 ASIC 可更高 | `$100-700/rack` 摊销口径 | `$1,000-7,000/MW` | SiPh/photonic masks 摊销 `<$0.1-1/port` | design/tape-out -> mask blanks -> mask shop；与出货量摊销，不按单颗线性 |
+| Encapsulants / underfill / EMC | HBM attach、2.5D underfill、molding、die attach 等 `$5-25/GPU package` | `$400-1,800/rack` | `$3,000-18,000/MW` | 光模块封装胶材 `$0.2-2/port` | package area、HBM stack、warpage/void/yield 决定溢价 |
+| TIM1/TIM1.5/TIM2 / gap filler | package/lid/cold plate/board TIM 合计 `$5-30/GPU`；若 metal TIM/PCM 高端化可更高 | `$1,000-6,000/rack`，包括 GPU、CPU、power shelf、optics 冷板界面 | `$8,000-60,000/MW` | `$0.5-3/port`，高功耗 800G/1.6T 模块更高 | 热阻、pump-out、寿命、液冷兼容和 field failure 成本决定定价 |
+| Optical materials / preforms | 不按 GPU | AI 网络光纤/预制棒间接 `$500-5,000/rack`，依部署密度差异极大 | `$5,000-50,000/MW` | 光纤/石英/光学材料直接摊销 `<$0.5-5/port` | 光纤/预制棒长约、光模块端口数、数据中心/电信建设共振 |
+| PVC resin / 管道 / 电缆间接材料 | 不按 GPU | resin 归因约 `$100-1,000/rack` | `$1,000-10,000/MW` | 不适用 | 建设施工材料，受 PVC/乙烯/烧碱价格和区域供应影响；AI 溢价弱 |
+| QST 300mm GaN substrate | 不在 GPU 本体，面向 power devices | 若进入 PSU/UPS/GaN power stage，substrate 摊销可能 `$50-500/rack` 初期 | `$500-5,000/MW` 远期上限，当前接近零 | 不适用 | power semiconductor customer qualification -> GaN device ramp -> PSU/UPS adoption |
+
+### 7.3 当前产能能力和供应链采纳程度
+
+| 产品 / 业务 | 当前产能能力（美元销售额口径估计） | 供应链采纳程度 | 重要认证 / 阶段 |
+|---|---:|---|---|
+| 300mm advanced wafers | 公司整体 wafers 未拆分；估计可支撑数十亿美元年收入，AI/high-end 子线当前 `$0.5-1.3B` 贡献 | 已大规模被 leading-edge logic、memory、power 等客户采用；LTA 主导 | 量产认证；新规格/新 LTA 继续谈判 |
+| EUV/ArF photoresists | lithography materials 未拆分；AI 相关 `$0.5-0.9B` 估计；Isesaki 新基地增加弹性 | 已在先进客户供应链；台湾/日本基地支持客户共研 | Isesaki 2026-04 启动，处于产能爬坡/客户确认 |
+| Photomask blanks / quartz | 当前 `$0.3-0.6B` AI 相关估计 | 高端光罩供应链已采用；受客户设计周期驱动 | 量产认证；新一代 EUV/high-NA 规格需持续验证 |
+| Encapsulation / underfill / EMC | 当前 `$0.15-0.3B` AI/HPC 相关估计 | 电子封装材料已商用；AI/HBM 顶级平台份额需逐项验证 | 客户 package qualification，通常 `6-18` 个月 |
+| Silicone TIM / gap filler | 当前 `$0.1-0.25B` AI/data center 相关估计 | 普通 TIM 已商用，高端 AI rack/TIM1/TIM2 采纳披露不足 | 需要 thermal cycling、pump-out、液冷兼容、platform qualification |
+| Optical materials / preforms | 当前 `$0.06-0.2B` AI/network 归因估计 | 管理层称需求极强且正进行长期谈判 | 长约谈判 / 客户投资合理化阶段 |
+| QST GaN substrate | 当前商业规模小 | IMEC 300mm GaN power device development program 正在评估 | 技术验证 / sample evaluation；未见大规模 HVM |
+
+## 8. 一年后产能、采纳和认证三情景
+
+| 产品 / 业务 | 基准：一年后产能/采纳 | 乐观：一年后产能/采纳 | 极度乐观：一年后产能/采纳 |
+|---|---|---|---|
+| 300mm advanced wafers | 客户追加订单转成 FY2027 收入；AI-exclusive 300mm wafer 占比从 `<10%` 向 `10-12%` | 新 LTA 以更高成本/价值定价签署；AI/server 广义占比超过 `25%` | 2027 HBM4/Rubin/ASIC 提前锁单，先进规格 allocation 再收紧，LTA 溢价回归 |
+| EUV/ArF photoresists | Isesaki 稳定爬坡；EUV/ArF 主流层继续放量 | 新基地 utilization 快速上行；台湾/日本客户迭代周期缩短 | HBM DRAM EUV 和 N2/high-NA pilot 超预期，EUV resist/underlayer ASP 再上修 |
+| Photomask blanks / quartz | 先进 mask blank 稳健增长 | AI ASIC tape-out 与 N2/Rubin 相关设计增加 | 高端 EUV mask blank 紧缺，客户提前锁长期供给 |
+| Encapsulation / underfill / EMC | 进入更多 HBM/2.5D package 二供或局部主供 | CoWoS spillover、OSAT 扩产同步拉动高端材料 | HBM4/Rubin/ASIC package 采用更高规格，void/warpage 认证通过后份额提升 |
+| Silicone TIM / gap filler | 普通 TIM 提价落地，高端 AI TIM 仍以 qualification 为主 | 进入一个或多个 AI rack / optical module 平台，收入曲线变陡 | TIM 成为 rack acceptance 瓶颈之一，高端 phase-change/gel/gap filler 获得平台级锁定 |
+| Optical materials / preforms | 部分长约完成，需求维持强 | AI 网络、宽带和数据中心光纤同步扩产，preform 价格维持高位 | 光纤/预制棒重现长期紧缺，信越推进新产能投资 |
+| QST GaN substrate | IMEC/客户 sample evaluation 继续，少量 pilot | 300mm GaN power device 客户启动试产线 | 数据中心 power conversion 客户导入 QST 路线，形成可见设计订单 |
+
+## 9. 真实订单积压、供给与未来一年业务增速判断
+
+### 9.1 公司披露的“订单线索”而非 backlog
+
+信越不披露 backlog/bookings。可用线索如下：
+
+| 线索 | 披露日期 | 指向 | 对未来 12 个月的含义 |
+|---|---|---|---|
+| 2026Q4 300mm wafer 行业出货 Q/Q 中个位数下降，但 Y/Y 双位数增长 | 2026-04-28 Q&A | wafer 复苏已不是单季噪声 | 300mm 高端需求恢复，非 AI 库存仍影响节奏 |
+| 2026 年 4-6 月收到广泛领域 additional wafer orders，当前预期增长率高于年初 | 2026-04-28 Q&A | backlog 未披露，但 bookings 明显改善 | FY2027 Q1-Q2 电子材料收入有上修空间 |
+| 2027-2028 device makers 扩产和生产计划提升到近年未见水平 | 2026-04-28 Q&A | 客户扩产周期进入材料预定/资格认证阶段 | 2027 年先进 wafer/LTA 和材料资格窗口打开 |
+| 部分客户表达新 wafer LTA 兴趣 | 2026-04-28 Q&A | 价格/量长期锁定可能重启 | 若签约，收入确定性和价格传导提升 |
+| Photoresist Q4 环比显著增长，Isesaki 开始运营 | 2026-04-28 Q&A | lithography materials 强需求 | 新产能利用率是 FY2027 关键 |
+| Optical fiber preform 价格飙升、需求极强、长期谈判中 | 2026-04-28 Q&A | 通信/AI 网络材料短缺线索 | 可能形成新投资与长约，但需区分 AI 与电信周期 |
+| PVC 2026 年 4 月提价 10 cents/lb，5 月再提 4 cents/lb；部分竞争对手运行问题带来询单 | 2026-04-28 Q&A | Infrastructure 利润修复线索 | 若落地，集团利润修复弹性大，但与 AI 关系弱 |
+
+### 9.2 产品未来一年增速预测
+
+| 产品 / 业务 | 供给能力 | 真实订单/客户线索 | 取消率/风险推断 | 基准增速 | 乐观增速 | 极度乐观增速 |
+|---|---|---|---|---:|---:|---:|
+| 300mm advanced wafers | 行业短期仍有总体 surplus，但 high-end/customer-specific 受认证约束 | 追加订单、新 LTA 兴趣、2027-2028 客户扩产 | 取消率低到中；LTA 降低取消风险，但非 AI 库存会影响 pull-in | `+8-15%` | `+15-25%` | `+25-40%` |
+| EUV/ArF photoresists | Isesaki 新基地提供增量；客户认证慢 | Q4 环比显著增长；AI/HBM/EUV 层数增加 | 取消率低；风险是客户节点推迟或二供导入 | `+15-25%` | `+25-40%` | `+45-70%` |
+| Photomask blanks | 高端产能和规格认证约束 | AI ASIC / advanced logic tape-out 支撑 | 取消率低，更多是设计节奏风险 | `+10-18%` | `+18-30%` | `+30-50%` |
+| Encapsulation / underfill / EMC | 产能可扩，但高端配方需客户验证 | CoWoS/HBM4 package 面积上升 | 中；客户可二供但换料风险大 | `+20-35%` | `+40-60%` | `+70-100%` |
+| TIM / gap filler | 普通供应多，高端可靠性数据稀缺 | 液冷 rack、optical module 热密度提升；公司 silicone 提价 | 中；若未进入平台认证，普通 TIM 易被压价 | `+25-45%` | `+50-80%` | `+90-150%` |
+| Optical materials / preforms | 若长期谈判支撑，可能需要投资 | 需求“极强”、价格飙升 | 中；通信补库结束或客户 capex 推迟会回落 | `+20-40%` | `+40-70%` | `+80%+` |
+| QST GaN substrate | 小规模/评估阶段 | IMEC sample evaluation | 高；技术替代和量产良率未证实 | 小基数高增 | 小基数翻倍 | 从零到可见收入 |
+
+### 9.3 集团层面未来一年增速
+
+| 情景 | 集团收入增速 | 集团营业利润增速 | 主要驱动 |
+|---|---:|---:|---|
+| 基准 | `+5-8%` | `+8-15%` | 电子材料稳健增长；Infrastructure 价格略修复；FY2026 Q4 低利润率不再恶化 |
+| 乐观 | `+8-13%` | `+15-25%` | Wafer/photoresist/LTA 放量，PVC 提价落地，Functional Materials 高端 mix 改善 |
+| 极度乐观 | `+13-18%` | `+25-40%` | Rubin/HBM4/AI ASIC 提前锁材料，Isesaki 快速满载，PVC 因供应扰动强势涨价 |
+| 下行情景 | `0-3%` | `-5% 至 +5%` | 非 AI 需求仍弱、PVC 价格失败、客户库存再调整、AI capex 反证出现 |
+
+## 10. 竞争格局、主流技术判断和替代风险
+
+### 10.1 分产品竞争格局
+
+| 产品 / 业务 | 主要竞争对手 | 信越位置 | 客户替换成本 | 技术是否主流 | 风险 / 替代方案 |
+|---|---|---|---|---|---|
+| 300mm advanced silicon wafers | SUMCO、GlobalWafers、Siltronic、SK Siltron、Wafer Works、中国本土硅片厂 | 全球头部之一；高端客户认证和 LTA 强 | 很高：defectivity、flatness、Cpk、长期统计稳定性 | 是，N3/N2/HBM/DRAM 都需要 | 高端供给缓解、客户 dual-source、非 AI 库存导致价格压力 |
+| EUV/ArF photoresists | JSR/Inpria、TOK、Fujifilm、Sumitomo Chemical、DuPont、Merck、部分中国厂 | 日本高端阵营核心；已有台湾/日本布局 | 极高：配方、曝光/刻蚀/清洗全流程联调 | 是，2026 主流仍是 EUV CAR + ArF immersion | MOR/dry resist 改变部分层；客户本地二供；PFAS 合规 |
+| Photomask blanks / synthetic quartz | HOYA、AGC、S&S Tech、Toppan/DNP 生态等 | 高端光罩底材参与者 | 高：mask defect 直接影响整批晶圆 | 是，先进 lithography 必需 | High-NA/EUV 新规格需持续研发；客户集中 |
+| Encapsulants / underfill / EMC | Namics、Resonac、Sumitomo Bakelite、Henkel、Panasonic、Nagase、KCC、中国封装材料公司 | 有产品基础，但高端 AI package 份额需验证 | 中高：void、warpage、moisture、热循环 | 是，HBM/2.5D 必需 | 竞争者强；foundry/OSAT 指定材料；低价二供 |
+| Silicone TIM / gap filler | Honeywell、Henkel/Bergquist、Parker Chomerics、Indium、DuPont/Laird、3M、Dow、Fujipoly、Boyd、Momentive、Wacker、Denka | 有硅材料与 TIM 产品线，但高端 AI TIM 不一定领先 | 中高：热阻漂移和 field failure 代价大 | 是，液冷 rack 和高功率 package 必需 | 金属 TIM、indium、phase-change、石墨/diamond 复合材料替代普通硅胶 |
+| Optical materials / preforms | Corning、Heraeus、Furukawa/OFS、Sumitomo Electric、Fujikura、YOFC 等 | 有光学材料和 quartz 基础，preform 具体份额需验证 | 中：质量和长约重要，但替代供应存在 | 是，AI 网络/电信光纤需求真实 | 光模块瓶颈从光纤转向 ASIC/端口；电信补库回落 |
+| Rare earth magnets | Proterial、TDK、VAC、Magnequench/中国稀土磁材公司等 | 高端磁体参与者 | 中：设计认证和稀土配方重要 | 近线 HDD/工业马达仍需要 | SSD/QLC 替代 HDD；稀土价格和中国供应链 |
+| QST 300mm GaN substrate | Qromis 生态、GaN-on-Si、GaN-on-SiC、SiC substrate 供应商、Soitec 等 engineered substrates | 期权型技术，IMEC 验证加分 | 若进入器件平台则高；当前仍低 | 尚非主流，处于潜在路线 | GaN-on-Si/SiC 成熟路线、SiC MOSFET、客户不愿切换 300mm GaN |
+
+### 10.2 这些新技术是否会成为主流
+
+| 技术 / 产品 | 主流判断 | 时间 |
+|---|---|---|
+| 300mm leading-edge wafer + EUV/ArF lithography materials | 已是主流，AI/HBM 只是提高规格和需求 | 2026 已放量，2027 继续 |
+| MOR / dry resist / high-NA resist | 会局部导入，但 2026 不是信越收入主线；传统 EUV CAR + ArF 仍是现金流主干 | 2027-2028 才看显著收入 |
+| HBM/CoWoS underfill/EMC/RDL/PID 材料 | 已经从配套品变成交付瓶颈材料 | 2026-2027 放量 |
+| 高端 TIM1/TIM2、phase-change、metal TIM、低泵出 gap filler | 会成为高功率 AI rack 的默认升级方向；但具体供应商未定 | 2026 认证，2027 放量更清晰 |
+| QST 300mm GaN substrate | 可能成为部分高压 GaN 路线，但还不是数据中心电源主流 | 2027-2029 观察 |
+| PVC for data center pipes/cables | 是数据中心建设材料，但不是高壁垒 AI 技术主线 | 稳定消耗，不给高 AI 倍数 |
+
+### 10.3 客户替换成本
+
+信越强在客户替换成本高的产品：
+
+- `silicon wafers`：客户需要长期统计稳定性，换供应商会影响良率、defect map、flatness、epi profile 和 edge exclusion；从 sample 到 HVM 可达 `12-24 个月`。
+- `photoresist / underlayer`：必须和曝光、etch、clean、metrology、defectivity 联调；材料成本占芯片成本低，但出错会造成高价值 wafer scrap。
+- `mask blanks / quartz`：先进 mask 的 defect、flatness、thermal expansion、blank quality 直接影响整套光罩。
+- `underfill/TIM`：切换会改变 warpage、void、thermal cycling、pump-out、BLT 和 field failure；AI rack 单次故障代价高。
+
+替换成本低的产品包括普通 PVC、普通 silicone、普通 200mm wafer、成熟制程低端 resist、一般 processed plastics。这些业务可以贡献现金流，但不应按 AI 稀缺资产估值。
+
+## 11. 关键风险和反证指标
+
+| 风险 | 反证 / 观察指标 | 对信越影响 |
+|---|---|---|
+| AI capex 需求反证 | 云厂 AI 收入不跟 CapEx、GPU 租赁价下行、utilization 降至 `60-65%` 以下 | Wafer/photoresist 高端订单延后，估值倍数下修 |
+| HBM/CoWoS 过快缓解 | HBM ASP 连续两季跌 `10%+`、CoWoS lead time 回到 `26 周` 内且利用率 < `85%` | Advanced materials 的涨价和紧缺叙事弱化 |
+| 非 AI 半导体恢复慢 | PC/手机/汽车库存再调整，200mm/成熟逻辑弱 | 300mm broad recovery 被抵消，electronics mix 仍分化 |
+| PVC 价格修复失败 | 北美 PVC 提价无法落地，亚洲/中国供给压价 | Infrastructure Materials 利润率继续拖累集团 |
+| 大额 capex 回报不足 | Isesaki、Shintech、有机硅扩产 utilization 低 | ROIC 下行，净现金消耗，估值压缩 |
+| 地缘/出口管制 | 日本材料出口限制、客户区域化、本土替代加速 | 高端材料可能受益区域化，也可能丢失中国客户 |
+| 高端 TIM/封装材料未进入平台 | 客户指定 Henkel/Honeywell/Indium/Namics 等竞争者 | 信越在 AI thermal/advanced package 的弹性低于市场预期 |
+| 原料和汇率 | 日元大幅升值、能源/石化原料上行 | 海外利润折算和硅胶/PVC/化学品成本压力 |
+
+## 12. 投资跟踪清单
+
+| 频率 | 指标 | 为什么重要 |
+|---|---|---|
+| 季度 | Electronics Materials 收入 YoY、利润率、capex | 判断 AI/advanced node 材料是否兑现 |
+| 季度 | 300mm wafer 行业 MSI、LTA 价格、新 LTA 表述 | 判断 wafer 从去库存到供需紧缺的速度 |
+| 季度 | Photoresist / lithography material 产能和 Isesaki 利用率 | 决定信越 AI 相关收入弹性上限 |
+| 季度 | Infrastructure Materials 利润率 | FY2026 利润下滑主因，修复会显著提高集团利润 |
+| 月度/事件 | HBM ASP、CoWoS lead time、TSMC/DRAM capex | 直接影响上游材料需求和市场叙事 |
+| 事件 | TSMC/NVIDIA/AMD/Google/AWS 2027 平台路线 | 判断 N3/N2、HBM4、CoWoS、TIM 和 mask demand |
+| 事件 | TIM/encapsulant 客户 design-in 或产品认证 | 决定小业务能否从“有产品”变成“高增长收入” |
+| 事件 | QST substrate 客户试产 / 认证 | 判断 GaN substrate 期权价值 |
+
+## 13. 来源和依据
+
+### 13.1 项目内行业资料
+
+| 项目内资料 | 用途 |
+|---|---|
+| `行业调研/晶圆制造_设备_材料_测试/行业调研_硅片、光刻胶与前道材料_2026-06-11.md` | 硅片、光刻胶、EUV/ArF、HBM/AI logic wafer、材料利润率和三情景 |
+| `行业调研/AI服务器_存储_芯片/行业调研_先进封装材料与热界面材料_2026-06-10.md` | HBM/CoWoS underfill、EMC、TIM、液冷 rack、光模块 TIM、先进封装材料 BOM |
+| `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md` | HBM/CoWoS/电力/rack-scale 关键瓶颈、反证阈值 |
+| `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` | AI 数据中心 CapEx、MW/rack、look-through 订单口径 |
+| `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md` | GB300、Rubin、MI350/MI400、TPU、Trainium、custom ASIC 对材料需求的传导 |
+
+### 13.2 公司官方资料
+
+| 来源 | 日期 | 用途 |
+|---|---:|---|
+| Shin-Etsu Chemical, Consolidated Financial Results for FY ended March 31, 2026: https://www.shinetsu.co.jp/wp-content/uploads/2025/07/20260428_con_E.pdf | 2026-04-28 | FY2026 全年、五个季度、分部收入/利润、资产负债表、capex、现金流 |
+| Shin-Etsu Chemical, FY2026 Q4 telephone conference summary: https://www.shinetsu.co.jp/wp-content/uploads/2025/08/20260428_summary_E.pdf | 2026-04-28 | AI 产品 15%、wafer orders/LTA、photoresist、optical preform、PVC 价格 |
+| Shin-Etsu Chemical, FY2026 Q3 telephone conference summary: https://www.shinetsu.co.jp/wp-content/uploads/2025/08/20260127_summary_E.pdf | 2026-01-27 | AI 产品构成、Isesaki 2026-04 投运、采购风险 |
+| Shin-Etsu Chemical, Isesaki lithography materials base: https://www.shinetsu.co.jp/en/news/news-release/shin-etsu-chemical-to-build-a-new-production-base-in-japan-which-will-become-its-fourth-production-base-for-semiconductor-lithography-materials/ | 2024-04-09 | 光刻材料第四基地、150,000 平方米、第一阶段 2026 |
+| Shintech $3.4B investment: https://www.shinetsu.co.jp/en/news/news-release/shintech-announces-capital-investment-of-3-4-billion-to-bolster-pvc-and-caustic-soda-business/ | 2026-03-05 | PVC/烧碱/上游 feedstock 扩产 |
+| IMEC / QST substrate: https://www.shinetsu.co.jp/en/news/news-release/imec-achieves-a-world-record-gan-breakdown-voltage-exceeding-650-v-on-shin-etsu-chemicals-300-mm-qst-substrate/ | 2025-11 | 300mm QST GaN substrate 技术验证 |
+| Shin-Etsu Silicone price increase: https://www.shinetsusilicone-global.com/news/2026/04.shtml | 2026-04 | 2026-05-01 起所有 silicone 产品提价 10%+ |
+| Photoresist product page: https://www.shinetsu.co.jp/en/products/electronics-materials/photoresist/ | 检索 2026-06 | i-line/KrF/ArF/EUV photoresist 和 hardmask |
+| Photomask blanks product page: https://www.shinetsu.co.jp/en/products/electronics-materials/photomask-blanks/ | 检索 2026-06 | mask blanks 定义和用途 |
+| Epoxy encapsulant material page: https://www.shinetsu.co.jp/en/products/electronics-materials/epoxy-encapsulant-material/ | 检索 2026-06 | EMC、low stress、low warpage、高导热 |
+| Shin-Etsu Silicone TIM: https://www.shinetsusilicone-global.com/products/function/heat/index.shtml | 检索 2026-06 | TIM 产品线 |
+
+### 13.3 外部行业资料
+
+| 来源 | 日期 | 用途 |
+|---|---:|---|
+| SEMI, worldwide silicon wafer shipments Q1 2026: https://www.semi.org/en/semi-press-release/semi-reports-worldwide-silicon-wafer-shipments-increase-13-percent-year-on-year-in-q1-2026 | 2026-04-29 | Q1 2026 wafer shipments `3,275 MSI`、同比 `+13.1%` |
+| SEMI, semiconductor materials market 2025: https://www.semi.org/en/semi-press-release/global-semiconductor-materials-market-revenue-reaches-record-73.2-billion-dollars-in-2025-semi-reports | 2026-05-12 | 2025 材料市场 `$73.2B`、wafer fab materials `$45.8B` |
+| TrendForce, AI supply chain arms race: https://www.trendforce.com/presscenter/news/20260430-13028.html | 2026-04-30 | 2.5D packaging shortage、CoWoS 2027 +60% 线索 |
+| TSMC 2026 Technology Symposium: https://pr.tsmc.com/english/news/3302 | 2026-04-23 | 5.5-reticle CoWoS、2028 14-reticle CoWoS、20 HBM stacks |
+| Indium at ECTC 2026: https://www.indium.com/press-releases/indium-corporation-to-highlight-power-device-packaging-solutions-at-ectc-2026/ | 2026 | >1,000W power-dense devices 的 sTIM 线索 |
+| Henkel high-k gap filler for 800G/1.6T optical transceivers: https://www.henkel.com/press-and-media/press-releases-and-kits/2025-10-28-henkel-unveils-high-thermal-conductivity-gap-filler-for-ai-data-center-optical-transceivers-2094874 | 2025-10-28 | 光模块高导热 gap filler 作为 AI thermal 材料方向 |
+| OTC Markets / Citi ADR notice / public quote pages | 2026-06 | SHECY ADR ratio、OTC 价格和市场快照校验 |

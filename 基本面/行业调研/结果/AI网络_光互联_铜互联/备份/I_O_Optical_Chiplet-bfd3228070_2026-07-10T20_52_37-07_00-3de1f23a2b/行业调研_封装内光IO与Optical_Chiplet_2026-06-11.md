@@ -1,0 +1,428 @@
+# 行业调研：封装内光I/O与Optical Chiplet
+
+报告日期：2026-06-11  
+资料截至：2026-06-11，美国太平洋时间  
+标准行业名称：封装内光I/O与Optical Chiplet  
+标准归属目录：AI网络_光互联_铜互联/  
+输出文件名说明：行业索引标准名含 `I/O`，Windows 文件名不能包含 `/`，本文件沿用目录内 runner 既有安全化规则写作 `封装内光IO与Optical_Chiplet`。  
+
+项目内资料边界：本报告仅使用 `行业调研/行业索引.md` 确认标准行业名和归属目录；仅参考 `行业调研/产业背景/` 下资料作为项目内背景。未读取、引用或继承 `公司调研/`、`日度资料/`、`特征量化/` 或其他项目目录内容。外部资料以 2026 年公司公告、OFC/ECTC/DesignCon/ISSCC 等会议资料、行业机构公开摘要和公司财报为主。
+
+## 一页结论
+
+1. **2026 年封装内光 I/O 的投资主线不是“每颗 GPU 已内置光口”，而是 AI fabric 从可插拔模块走向交换侧 CPO、近封装 CPX/NPO、外置激光 ELSFP 和光 chiplet 设计导入。** 当期收入最大仍是 800G/1.6T pluggable optics；最有估值弹性的是真正进入客户设计的 CPO/ELS/硅光 PIC/光引擎/可维护连接器。
+2. **AI 数据中心建设的乐观前提成立时，光互联是被非线性放大的环节。** 项目内产业背景给出 2026/2027 AI compute platform 和 AI back-end network/optics 订单池的高弹性口径；外部 TrendForce 预计 AI optical transceiver 市场从 2025 年约 165 亿美元增至 2026 年 260 亿美元，Cignal AI 2026 年 4 月进一步把 2025 datacom optical component 收入口径上修至 190 亿美元以上，并预计 2026 年 1.6TbE 模块接近 1,000 万只。
+3. **最强一手信号来自 NVIDIA、Broadcom、Marvell、TSMC、Ayar Labs、Lightmatter、Coherent、Lumentum、Ciena/ Nubis 和 Arista。** NVIDIA 已把 Vera Rubin full production、Spectrum-X/Quantum-X Photonics、Coherent/Lumentum/Marvell 战略投资和采购承诺绑定在同一条“AI factory 光互联”路径上；Broadcom 在 OFC 2026 同时展示 400G/lane Taurus 光 DSP、400G EML/PD、102.4T Tomahawk 6、Tomahawk 6-Davisson CPO 和 3.5D XDSiP；Marvell 收购 Celestial AI 并给出 FY2028/FY2029 收入 run-rate 目标。
+4. **2026 最可能落地的技术路径排序：1.6T OSFP/DR/FR/LPO/TRO pluggable > ELSFP/外置高功率 CW laser > 交换侧 CPO/CPX pilot 与早期量产 > socketed NPO/CPX 光引擎 > XPO 高密度液冷可插拔 > Optical I/O chiplet 在 XPU/ASIC 侧 design-in。** 真正的“封装内光 I/O”收入大规模化更偏 2027H2-2029。
+5. **2027 的核心变化是 Rubin、MI400/Helios、TPU/Trainium 下一代、Broadcom/Marvell custom XPU 把 scale-up 和 scale-across 带宽需求上移。** 2027 年 1600G/1.6T port 进入主流高端 AI back-end；3.2T/400G-per-lane 进入客户验证和小批量；光 chiplet 从“融资和样品”变成少数客户 NRE/低量产收入。
+6. **利润池最可能被长期高 ROIC 环节捕获：交换/XPU 平台、硅光 foundry+PDK、光 I/O chiplet、外置激光与 ELS、400G/lane DSP/SerDes、可维护光纤连接、测试验证和可靠性软件。** 纯模块代工、普通 OSAT、普通连接器和低端 800G 模块会被 ASP 下行和多供应商竞争稀释。
+7. **最大风险不是需求不强，而是节奏错配。** 2026 年可插拔模块可能出现“需求强但库存/ASP 转弱”；CPO/Optical Chiplet 则可能出现“客户兴趣强但量产认证、外置激光冗余、现场维修、热漂移、封装良率、测试时间和多标准分裂”拖慢收入确认。
+
+## 0. 研究对象和技术分层
+
+### 0.1 本行业到底包括什么
+
+本报告把“封装内光 I/O 与 Optical Chiplet”定义为：把光电转换、光调制/探测、光纤耦合、外置或封装内激光源、光引擎管理和高密度电接口从传统前面板可插拔模块向 ASIC/XPU/交换芯片封装附近迁移的产业链。它不等同于全部光模块，也不等同于普通硅光。
+
+| 层级 | 典型形态 | 2026 成熟度 | 与本行业关系 | 代表公司 |
+|---|---|---:|---|---|
+| Pluggable optics | 800G/1.6T OSFP/QSFP-DD、LPO/LRO/TRO、DR/FR/LR/ZR | 已规模放量 | 当前收入基座和客户验证入口，不是严格封装内，但决定 CPO 替代节奏 | Innolight、Eoptolink、Coherent、Lumentum、Cisco/Acacia、NVIDIA、Marvell、Fabrinet、AAOI |
+| CPO | 光引擎与交换 ASIC 同 package 或同板极近距离集成 | 2026 早期量产/首批部署 | 交换侧最先落地的封装内/近封装光互联 | NVIDIA、Broadcom、Coherent、Lumentum、TSMC、Ciena/Nubis、Marvell |
+| CPX / NPO / socketed optical engine | 可插拔或可更换的近封装光引擎，保留 serviceability | 2026 样机/产品化，2027 导入 | 解决 CPO 现场维护和多供应商问题，可能先于“真 CPO”扩大 | Open CPX MSA、Ciena Vesta、Coherent socketed CPO、Samtec、Molex |
+| Optical I/O chiplet | 与 XPU/ASIC/HBM 在同一 substrate 或 package 中通过 UCIe/私有 D2D 接口连接的光 I/O chiplet | 2026 design-in/NRE，2027-2028 收入化 | 本行业长期最高弹性方向之一 | Ayar Labs、Celestial AI/Marvell、Lightmatter、Intel OCI、Alchip/GUC、TSMC COUPE |
+| External laser / ELSFP | 外置可维护激光源给 CPO/NPO/PIC 供光 | 2026 订单和初始量产 | CPO 的关键瓶颈和高利润部件 | Lumentum、Coherent、Broadcom、Sumitomo Electric、Mitsubishi Electric、Ayar SuperNova |
+| Detachable fiber / glass coupling | 可插拔 FAU、glass waveguide、expanded beam、fiber-to-PIC connector | 2026 工程验证 | 决定 CPO/Optical Chiplet 能否现场维护、可测、可量产 | Corning GlassBridge、GF Fotonix、Intel、Senko、US Conec、Samtec、Molex |
+| Optical interposer / photonic fabric | 光波导、光中介层、3D 光互联、memory pooling 光 fabric | 2026 样品/NRE | 2027-2029 潜在架构重写 | Lightmatter Passage、Celestial Photonic Fabric、POET Optical Interposer、Ranovus、DustPhotonics |
+| MicroLED / VCSEL NPO | MicroLED/VCSEL 用于短距低功耗光互联 | 2026 POC/评估套件 | 与 CPO/Optical Chiplet 竞争或互补，适合 intra-rack/scale-up | Microsoft/MediaTek MOSAIC、Avicena、ams OSRAM、Coherent VCSEL |
+
+### 0.2 证据分级
+
+证据等级 A：公司一手公告、财报、官方产品页、监管文件、标准组织资料。  
+证据等级 B：OFC/ECTC/ISSCC/DesignCon 会议材料、行业机构公开摘要、公司投资者演示。  
+证据等级 C：媒体报道、供应链线索、非正式行业观察。  
+
+直接数据缺失处，本报告按用户要求采用大胆乐观假设，但会显式标为“测算”。本报告的市场规模是产业投资口径，不等于单一公司收入，也避免把整座数据中心 CapEx 全额算入光 I/O。
+
+## 1. 2026 AI 数据中心建设中的机遇、挑战和最可能路径
+
+### 1.1 需求机会：AI 计算中心越大，I/O 越从配件变成架构
+
+2026 年 AI 基础设施的关键变化，是单个训练/推理集群从“几千卡”扩到“数万到十万级 XPU”，并向 multi-rack、multi-pod、multi-DC scale-across 演进。这样会产生四个直接需求：
+
+1. **带宽密度：** 800G 已经是高端 AI back-end 的基线，1.6T 在 2026 进入量产爬坡，Dell'Oro 预计 AI back-end 网络端口从 800G 转向 2027 年 1600G、2030 年 3200G。
+2. **每 bit 能耗：** 224G/400G lane 的电互连损耗、retimer/DSP 功耗和前面板光模块散热把可插拔形态推到极限，CPO/CPX/NPO 用更短电通道换取功耗和可靠性。
+3. **可维护性：** 真 CPO 把 ASIC、PIC、fiber attach 和激光源绑定，现场故障成本很高，因此 socketed CPO、CPX、外置激光、detachable fiber connector 反而成为商业化关键。
+4. **客户架构锁定：** NVIDIA Spectrum-X/Quantum-X Photonics、Broadcom Tomahawk/Jericho、Google OCS、AWS EFA/Trainium、AMD UALink/Ultra Ethernet 路线不同，供应商一旦进入客户 reference design，后续几代产品粘性很强。
+
+### 1.2 2026 的挑战：不是“能不能做出光芯片”，而是能否工程化交付
+
+| 挑战 | 为什么难 | 2026 观察指标 | 乐观判断 |
+|---|---|---|---|
+| CPO 现场维修 | 光引擎靠近 ASIC 后，传统模块热插拔优势下降 | 外置激光冗余、socketed optical engine、dFAU 插拔寿命 | CPX/NPO 会比全封闭 CPO 更快被客户接受 |
+| 激光源 | 激光放在封装内会带来热和寿命风险，放在外部则要管理光纤、耦合和冗余 | ELSFP 订单、CW laser 功率、laser attach 良率 | 2026-2027 外置 ELS 是主流 CPO 供光策略 |
+| 封装良率 | PIC/EIC/ASIC/基板/光纤耦合绑定后，单点失效会放大成本 | known-good-die、wafer-level optical test、burn-in、插拔损耗 | 高端 OSAT/Foundry/IP 共同制定 reference flow |
+| 224G/400G 电接口 | CPO 不是没有电接口，而是把电通道缩短；SerDes 抖动、FEC 和误码仍是核心 | 224G 部署、400G/lane demo、PCIe 7/8 测试设备 | 2026 工具和测试先赚钱，2027 端口放量 |
+| 热管理 | CPO/XPO/高功率光引擎把热源放在交换芯片附近 | 液冷 cold plate、TEC、thermal drift、400W XPO | 光互联从光学问题变成光-电-热一体设计 |
+| 标准分裂 | CPO、NPO、CPX、XPO、OCI、Open CPX、OIF、UCIe 并行 | Open CPX 规格、OIF HD connector、客户采购清单 | 标准短期分裂，但先导客户会形成事实标准 |
+| 客户认证 | AI 新网络产品 acceptance cycle 可长达多个季度 | hyperscaler design-in、pilot-to-volume、RMA | 首批客户愿意为能耗和 uptime 付溢价 |
+
+### 1.3 当前实际使用的技术
+
+| 技术 | 2026 使用状态 | 主要应用 | 投资含义 |
+|---|---|---|---|
+| 800G pluggable | 大规模使用 | GPU/ASIC scale-out、spine/leaf | 仍是收入基座，但 ASP 竞争开始显性化 |
+| 1.6T pluggable | 2026 快速爬坡 | GB300/Rubin 前后、TPU/ASIC AI fabric、DCI | 未来 12 个月最确定的高增长产品 |
+| LPO/LRO/TRO | 客户验证和分化采用 | 降低 DSP 功耗，适合短距 AI fabric | 价值从 DSP 转向线性驱动、TIA、测试和模块设计 |
+| OCS | Google 等架构先行 | 动态拓扑、spine 替代、AI cluster reconfiguration | 拉动光模块、MEMS switch、光纤管理和软件 |
+| 交换侧 CPO | NVIDIA/Broadcom 等进入部署窗口 | Spectrum-X/Quantum-X、Tomahawk/Jericho 高端端口 | 2026 是早期量产，2027 是多客户验证 |
+| CPX/NPO/socketed CPO | 2026 产品化和标准化 | 可维护近封装光引擎 | 可能是 CPO 大规模商业化的桥梁 |
+| Optical I/O chiplet | 设计导入、NRE、评估套件 | XPU-to-XPU、XPU-to-switch、memory pooling | 2027-2029 收入弹性大，2026 重点看 design win |
+| MicroLED/VCSEL 光互联 | POC/评估 | intra-rack、短距低功耗 | 2027 后可选项，不是 2026 主收入 |
+
+### 1.4 在 2026/2027 出货金额最大的 AI 芯片路径下，光 I/O 的位置
+
+下表仅使用项目内 `产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md` 的芯片排序和技术路径口径，再结合 2026 外部公开资料判断光 I/O 关联；未外部搜索“头部 AI 芯片列表”。
+
+| 排名 | 芯片/平台 | 2026/2027 芯片路径背景 | 当期网络/光 I/O 位置 | 对本行业的拉动 |
+|---:|---|---|---|---|
+| 1 | NVIDIA GB300/B300 NVL72 | 2026 最强金额增量，HBM3E 12H、CoWoS-L、NVLink5/NVSwitch、整 rack 液冷 | 800G/1.6T 网络为主；CPO 在交换侧和下一代 fabric | 1.6T、ELS、CPO switch、测试、液冷高密连接 |
+| 2 | NVIDIA GB200/B200 NVL72 | 2026 上半年基石，NVLink/NVSwitch、800G InfiniBand/Ethernet | 以传统高端光模块和 NVIDIA networking 为主 | 800G/1.6T pluggable 和 NVIDIA optics 生态 |
+| 3 | NVIDIA Vera Rubin/Rubin NVL72 | 2026H2 导入、2027 主升浪，HBM4、NVLink6、Vera CPU、BlueField/Spectrum 绑定 | Spectrum-X/Quantum-X Photonics、CPO 交换机更重要 | 2027 CPO/CPX 和 optical chiplet 估值弹性最大 |
+| 4 | Google TPU v7 Ironwood | 9,216 chip pod、192GiB HBM、ICI/Google DCN、光交换在 pod/DC 层 | OCS、800G+ 模块、光网络重构 | 光模块、OCS、fiber management，chiplet 侧未公开 |
+| 5 | AWS Trainium3 UltraServer | 144 Trainium3、20.7TB HBM3E、EFA/NeuronLink | CPO 未公开，scale-out optics 随 AI 集群扩张 | 1.6T、交换机、DPU/NIC、测试 |
+| 6 | AMD MI350/MI355X | 3nm CDNA4、288GB HBM3E、Ultra Ethernet/Pollara | CPO 非当期核心，开放 Ethernet 路线 | Ultra Ethernet fabric、光模块和连接器受益 |
+| 7 | Broadcom custom XPU | 多客户定制 ASIC、CoWoS/2.5D、Tomahawk/Jericho、AI networking 强绑定 | Broadcom 400G/lane DSP、Tomahawk Davisson CPO、3.5D XDSiP | 交换侧 CPO、400G/lane optics、ASIC+光封装协同 |
+| 8 | AMD MI400/Helios | 2027 主弹性，HBM4、UALink 260TB/s、Ultra Ethernet | 2027 起可能推进更高密度 scale-up/scale-out 光互联 | Optical I/O chiplet 和开放 CPO 的中期选项 |
+| 9 | AWS Trainium2 UltraServer | 2026 Anthropic 存量主力，NeuronLink/EFA | CPO 未公开，AI 网络强需求 | 800G/1.6T optics 和 DCI |
+| 10 | Huawei Ascend 910C/920 | 中国区替代，国产 2.5D/HBM/互联约束 | 以以太网/国产互联为主，CPO 早期 | 区域化国产硅光、模块、连接器、测试 |
+| 11 | Microsoft Maia 200 | 3nm、216GB HBM3E、Ethernet scale-up、闭环液冷 | 标准 Ethernet+自定义传输；Microsoft 同时推进 MicroLED/HCF 网络 | 2027 后 MicroLED/短距光互联可选性 |
+| 12 | Meta MTIA 400/450/500 | 2027 推理 ASIC 颗数弹性，OCP 兼容、HBM 带宽提升 | 以数据中心 Ethernet 网络为主，CPO 可能在交换侧 | 1.6T/3.2T、OCS/光路和 CPO 先导客户可能性 |
+
+### 1.5 成熟时间和放量时间三情景
+
+| 技术路径 | 2026H2 基准 | 2026H2 乐观 | 2026H2 极度超预期乐观 | 2027 基准 | 2027 乐观 | 2027 极度超预期乐观 |
+|---|---|---|---|---|---|---|
+| 1.6T pluggable | 出货继续爬坡；全年 500-1,000 万只区间 | GB300/TPU/ASIC 同时拉动，供应偏紧 | 1.6T 成为新增高端 AI cluster 默认配置 | 1,500-2,500 万只 | 2,500-3,500 万只 | 4,000 万只级别，ASP 降幅低于预期 |
+| 交换侧 CPO | NVIDIA/Broadcom 首批部署，收入小但信号强 | 大客户把 CPO 纳入 2027 采购规格 | ELS/laser 订单提前上修，CPO 端口 2026 已形成明显增量 | 高端 AI switch 5-10% 新端口采用 | 10-20% | 25-35%，成为百万 XPU fabric 默认高端选项 |
+| ELSFP/外置激光 | 2026 市场超过 1 亿美元，订单能见度改善 | 高功率 CW laser 短缺，提前扩产 | NVIDIA/Broadcom 双路线同时放量 | 3-8 亿美元 | 8-15 亿美元 | 20 亿美元级别，毛利持续上行 |
+| CPX/NPO/socketed engine | 标准化和客户样机 | 少数客户小批量 design-in | 可维护结构得到 hyperscaler 接受 | 低个位数亿美元至 10 亿美元 | 10-30 亿美元 | 30-60 亿美元 |
+| Optical I/O chiplet | NRE、评估套件、少量客户设计 | UCIe/客户私有 D2D 参考设计落地 | 某 hyperscaler 把光 chiplet 纳入 2027 ASIC tape-out | 低量产/客户 NRE，渗透率 1-5% | 5-10% | 10-20%，收入 50 亿美元以上 |
+| 3.2T/400G/lane | DSP/EML/EAM/MZM/PIC/测试样品 | 400G/lane 器件订单提前 | 204.8T switch 平台拉动小批量 | demo/qual 为主 | 2027H2 小批量 | 10-30 亿美元早期市场 |
+| MicroLED/VCSEL NPO | 评估套件/PoC | Microsoft/MediaTek/Avicena 进入客户实验室 | 大客户把 MicroLED AOC 纳入 2027 试点 | 商业化前夜 | 2027H2 小规模商用 | 形成 5-15 亿美元短距替代市场 |
+
+## 2. 已开始放量或正在收入化的关键产品
+
+### 2.1 已开始放量产品总表
+
+说明：下面市场规模为全球产业收入/订单池口径，美元计。3 个月指 2026-06 至 2026-09 的新增收入或订单窗口；1 年指至 2027 年中；2 年指至 2028 年中。渗透率指该产品在“新增高端 AI 网络/光互联端口或相关 design-in”中的比例，不是全存量数据中心渗透率。
+
+| 产品/技术 | 2026 当前事实 | 未来 3 个月市场规模/渗透率 | 未来 1 年市场规模/渗透率 | 未来 2 年市场规模/渗透率 | 增长情景 | 毛利率情景 |
+|---|---|---:|---:|---:|---|---|
+| 800G/1.6T pluggable AI 光模块 | TrendForce 预计 2026 AI optical transceiver 260 亿美元；Cignal 2025 400G+ 模块 4,200 万只以上，2026 1.6T 接近 1,000 万只 | 基准 55-75 亿美元/800G+ 新端口 60-70%；乐观 75-95 亿/70-75%；极度 95-120 亿/75%+ | 基准 300-380 亿美元/1.6T 新端口 25-40%；乐观 380-460 亿/40-55%；极度 460-550 亿/55%+ | 基准 380-520 亿/1.6T+3.2T 45-60%；乐观 520-700 亿/60-70%；极度 700-850 亿/70%+ | 未来 1 年基准 +35-55%，乐观 +55-75%，极度 +90%+ | 基准 28-38%；乐观 35-45%；极度短缺 40-50%，2027 竞争后回落 |
+| 1.6T DR/FR/LPO/TRO 子类别 | Coherent/Lumentum/Eoptolink/OpenLight/Broadcom 集中展示，200G/lane host 逐步成熟 | 18-40 亿美元；1.6T 占新增高端模块 8-18% | 140-280 亿美元；25-45% | 220-450 亿美元；35-65% | 基准 +80-120%；乐观 +150%；极度 +200%+ | 早期 35-45%；多供应商后 25-38%；上游 EML/PIC/DSP 更强 |
+| ELSFP/外置激光源 | Cignal 预计 ELSFP 2026 超 1 亿美元、2030 超 15 亿美元；NVIDIA 对 Coherent/Lumentum 有长期采购和投资 | 0.2-0.8 亿美元；CPO 端口供光渗透 <3% | 3-10 亿美元；5-15% | 10-25 亿美元；15-35% | 基准 +100-200%；乐观 +300%；极度 +500% | 基准 40-55%；乐观 50-65%；极度 60%+，因高功率 InP CW laser 短缺 |
+| NVIDIA Spectrum-X/Quantum-X Photonics CPO switch | NVIDIA 宣称 CPO switches integrated silicon photonics，5x power efficiency、10x resiliency/5x runtime 等指标；Vera Rubin full production 绑定 | 2-6 亿美元广义系统/光部件；高端 NVIDIA AI switch 新端口 <5% | 15-50 亿美元；5-15% | 60-180 亿美元；15-35% | 基准：局部 deployment；乐观：更多 AI cloud 跟进；极度：百万 GPU fabric 默认采用 | NVIDIA 平台毛利最高；光部件 40-60%；系统集成利润由 NVIDIA 捕获 |
+| Broadcom 400G/lane DSP/EML/PD + Davisson CPO | OFC 2026 发布 Taurus 400G/lane optical DSP、400G EML/PD、Tomahawk 6-Davisson CPO；Q2 FY2026 AI semi 108 亿美元，Q3 指引 160 亿美元 | 3-8 亿美元相关光 DSP/器件订单 | 20-60 亿美元 | 70-150 亿美元 | 基准：1.6T DSP/交换同步；乐观：CPO 设计赢单扩散；极度：204.8T switch 需求提前 | DSP/交换 ASIC 55-70%+；光器件 35-55%；模块端较低 |
+| Coherent CPO/laser/OCS | OFC 展示 6.4T socketed CPO、InP CW laser/ELS、400G InP modulator；投资者资料提到 CPO 高量订单、OCS production deployment | 2-7 亿美元相关订单/收入 | 12-35 亿美元 | 30-90 亿美元 | 基准：laser+1.6T；乐观：OCS/CPO 双放量；极度：NVIDIA/多客户 CPO 短缺 | 垂直整合 35-50%；高功率 laser/PIC 可 45-60%；EMS 外包低 |
+| Lumentum SHP/UHP laser、1.6T DR4、OCS | OFC 2026 展示 1.6T DR4 OSFP、>1W/800mW SHP laser、16-channel DWDM UHP laser；NVIDIA 有采购承诺和 20 亿美元投资 | 2-6 亿美元 | 10-30 亿美元 | 25-70 亿美元 | 基准：1.6T+OCS；乐观：ELSFP 大单转收入；极度：CPO laser 成硬瓶颈 | 激光器 45-60%；模块 30-40%；OCS 系统 35-50% |
+| XPO 12.8T 液冷可插拔 | Arista XPO：12.8Tbps/module、204.8Tbps/OCP RU、400W+ integrated cold plate、45+ partners | <1 亿美元，样机/开发 | 2-8 亿美元 | 10-35 亿美元 | 基准：2027 验证；乐观：高端 AI switch 小批量；极度：延缓 CPO 替代并成为独立高密度路线 | 早期 40-55%；液冷/service 成本高，成熟后 25-40% |
+| Ciena Vesta 200 / Nubis CPX | 6.4T CPX，200G/lane，低功耗 pluggable CPO/NPO；Nubis 支持 up to 6.4T full-duplex | 0.3-1.0 亿美元 | 3-12 亿美元 | 10-40 亿美元 | 基准：NPO engine design-in；乐观：open CPX 生态采用；极度：scale-up 网络采用 | 40-60%；若做系统/线路集成，35-45% |
+| 可维护连接器/FAU/GlassBridge | GF/Corning detachable fiber connector、Intel fan-out glass coupler、Senko/ASE/Lightmatter dFAU | 0.5-2 亿美元 | 5-18 亿美元 | 15-50 亿美元 | 基准：随 CPO pilot；乐观：成为所有 CPO 必选件；极度：客户把 field-replaceable FAU 写入标准 | 30-50%；精密玻璃/高密 FAU 45%+ |
+| 高速测试/验证 | 1.6T MAC/FEC、224G SerDes、400G/lane、PCIe 7/8、CPO optical test | 1.5-4 亿美元 | 10-20 亿美元 | 25-50 亿美元 | 基准 +30-50%；乐观 +60%；极度 +80%+ | Keysight/VIAVI/Anritsu/Teledyne 等 55-70%，软件 attach 高 |
+
+### 2.2 已放量产品利润率判断
+
+| 产品组 | 当前利润率基准 | 未来 1 年基准 | 未来 1 年乐观 | 未来 1 年极度乐观 | 为什么能定价 |
+|---|---:|---:|---:|---:|---|
+| 1.6T 领先模块 | 32-42% | 28-38% | 35-45% | 40-50% | 客户认证、良率、200G lane、电热设计、交期 |
+| 800G 成熟模块 | 25-35% | 22-32% | 28-36% | 32-40% | 需求仍强但多供应商竞争；高端 DR/FR 保利润 |
+| EML/CW laser/ELS | 40-58% | 45-60% | 50-65% | 60%+ | InP 外延、功率、寿命、窄线宽、客户锁单 |
+| SiPh PIC/光引擎 | 35-55% | 40-60% | 45-65% | 65%+ | PDK、耦合损耗、良率、与 ASIC/封装共同验证 |
+| 交换 ASIC/DSP/SerDes | 55-75% | 55-70% | 60-75% | 70%+ | IP、客户定制、协议生态、软件/telemetry |
+| CPO/CPX 系统集成 | 30-50% | 35-55% | 45-60% | 60% | 非标设计、现场可靠性、客户架构锁定 |
+| OSAT/EMS 组装 | 10-25% | 12-25% | 18-28% | 25-35% | 仅高端封装/美国本土产能/独家良率才有溢价 |
+| 连接器/FAU/光纤管理 | 30-45% | 32-48% | 40-55% | 55%+ | 精密对准、插拔寿命、客户标准、供应认证 |
+| 测试设备/软件 | 55-70% | 55-70% | 60-75% | 75%+ | 标准先行、工具锁定、客户无法跳过 qual |
+
+## 3. 在研和即将快速增长的关键产品
+
+### 3.1 Optical I/O chiplet 与封装内光引擎
+
+| 公司/产品 | 2026 状态 | 关键数字/事实 | 未来 3 个月 | 未来 1 年 | 未来 2 年 | 利润率和投资判断 |
+|---|---|---:|---|---|---|---|
+| Ayar Labs TeraPHY + SuperNova | 2026 完成 5 亿美元 Series E，总融资 8.7 亿美元，估值 37.5 亿美元；目标扩大高量产和测试能力 | UCIe optical chiplet 可达 8Tbps；Alchip 方案宣称每 accelerator >100Tbps scale-up bandwidth、>256 optical ports；SuperNova 可供 16 wavelengths/16 ports | 客户 design-in、台湾/OSAT 测试能力扩建；收入仍以 NRE/kit 为主 | 基准 0.2-0.8 亿美元；乐观 1-3 亿；极度 5 亿+ | 基准 5-15 亿；乐观 20-50 亿；极度 80 亿+ | 光 I/O chiplet 毛利可 45-65%；若被 hyperscaler ASIC 采用，进入多年代际锁定 |
+| Celestial AI Photonic Fabric / Marvell | Marvell 宣布收购 Celestial AI，预计 FY2028H2 开始有意义收入，FY2028Q4 年化 5 亿美元，FY2029Q4 年化 10 亿美元 | 第一代 scale-up photonic fabric chiplet 16Tbps/chiplet；面向 memory disaggregation 和 XPU scale-up | 收购整合、客户架构验证 | 基准 0-2 亿美元；乐观 3-8 亿；极度 10 亿+ NRE/早期收入 | 基准 5-15 亿；乐观 20-40 亿；极度 60 亿+ | 价值捕获在 Marvell custom XPU + optics + NVLink Fusion/客户 ASIC 生态 |
+| Lightmatter Passage L20 / Passage | 2026 OFC 发布 Passage L20，6.4Tbps each direction，32 optical ports，212.5Gbps PAM4，TDP 30W，late 2026 sampling | 同时展示 1.6Tbps per fiber、vClick dFAU 等 CPO 可维护方案 | late-2026 sampling 前客户验证 | 基准 0.5-2 亿美元；乐观 3-8 亿；极度 10 亿+ | 基准 8-25 亿；乐观 30-70 亿；极度 100 亿 | 若从 NPO/CPX engine 切入，可能早于 full optical interposer 规模化 |
+| Intel OCI chiplet | Intel 已演示 fully integrated bidirectional OCI chiplet co-packaged with CPU，64x32Gbps each direction、约 5pJ/bit、100m 光纤 | 2026 更多是 IP/Foundry 能力展示 | 客户/内部平台路线观察 | 基准收入很小；乐观 Intel Foundry 客户验证 | 2 年内若 foundry 客户采用，可达低个位数亿美元 | 技术强但商业化依赖 Intel Foundry 执行和客户 |
+| TSMC COUPE | 2026 North America Technology Symposium 称 COUPE on substrate 2026 开始 production；2x power efficiency、10x latency reduction vs board pluggable | 200Gbps micro-ring modulator 生态，与 NVIDIA/Alchip/Ayar 等路径相关 | 2026H2 客户 tape-out 和封装 flow | 基准：foundry/PDK 支持，不单独披露收入；乐观：多个 ASIC 采用 | 2 年内成为高端 CPO/OIO 的关键代工平台 | TSMC 捕获平台/封装/PDK 价值，毛利高于普通 OSAT |
+| Ciena/Nubis Vesta 200 | 6.4T CPX、200G/lane、retimer-free/low power/open pluggable CPO | Ciena 2025 收购 Nubis，2026 发布第一款 CPX 产品 | OFC 后客户演示 | 低个位数亿美元 | 10 亿美元级别可选 | CPX 标准若成形，Nubis/Ciena 是开放 CPO 强候选 |
+| Avicena LightBundle / MicroLED | 2026 推 microLED optical interconnect eKit，512Gbps links；Microsoft/MediaTek 也做 MicroLED AOC | TrendForce 预计 MicroLED CPO optical transceiver 到 2030 年 8.48 亿美元 | 评估套件和客户实验室 | 0.1-0.5 亿美元 | 2-10 亿美元；极度 20 亿 | 适合短距/低功耗，不一定替代 CPO，但可替代部分 AEC/VCSEL optics |
+| Microsoft/MediaTek MOSAIC | 2026 PoC，MicroLED active optical cable，目标 inside datacenter，MediaTek 称显著降低数据中心传输功耗 | Microsoft 称 HCF 与 MicroLED 互补；HCF 可 47% faster、33% lower latency vs SMF 研究口径 | 非商业收入 | 2027 late commercialization 前准备 | 2028 起若 Azure 内部采用，形成内部规模和供应链机会 | 可能压低传统 VCSEL/AOC 部分利润，也会创造 MicroLED optics 供应链 |
+| POET Optical Interposer | 800G/1.6T optical engine、NPO/CPO 路线，2026 工程样品、2027 ramp 线索 | 小公司，收入基数低，订单需严格验证 | 小额订单/NRE | 0.1-0.5 亿美元 | 0.5-2 亿美元，极度更高 | 高弹性但高风险，需看真实客户和良率 |
+
+### 3.2 在研产品增长区间与渗透率路径
+
+| 产品/技术 | 当前收入基数 | 3 个月基准/乐观/极度 | 1 年基准/乐观/极度 | 2 年基准/乐观/极度 | 渗透率路径 | 利润率路径 |
+|---|---:|---:|---:|---:|---|---|
+| XPU Optical I/O chiplet | 2026 <1 亿美元直接收入，多为 NRE | 0.1/0.3/0.8 亿 | 1/5/15 亿 | 10/40/100 亿 | 新增高端 XPU 2026 <1%，2027 2-8%，2028 8-25% | 45-65%，极度短缺 70%；NRE 阶段高毛利但收入小 |
+| Switch-side CPO optical engine | 2026 1-5 亿美元狭义，广义含系统更大 | 0.5/2/6 亿 | 8/25/60 亿 | 40/120/250 亿 | 高端 AI switch 新端口 2026 <5%，2027 5-20%，2028 15-45% | 40-60%；平台商捕获更高系统毛利 |
+| CPX/NPO socketed engine | 2026 <2 亿美元 | 0.2/0.8/2 亿 | 3/12/30 亿 | 20/60/120 亿 | 2026 试点，2027 5-15%，2028 15-35% | 35-55%；标准成熟后竞争压缩 |
+| Detachable fiber / glass connector | 2026 低个位数亿美元 | 0.5/1.5/3 亿 | 5/15/30 亿 | 15/50/100 亿 | 随 CPO attach，从 <5% 到 30%+ | 30-55%；精密玻璃/FAU 高端可 55%+ |
+| 3.2T / 400G-per-lane engine | 2026 样品收入 <2 亿 | 0.1/0.5/1.5 亿 | 5/15/30 亿 | 50/120/250 亿 | 2027H2 开始，2028 在新 switch 平台扩散 | 器件/DSP 50-70%，模块 30-45% |
+| MicroLED/VCSEL NPO | 2026 POC/kit <0.5 亿 | 0.05/0.2/0.5 亿 | 1/4/10 亿 | 5/15/30 亿 | 2027 late commercialization，2028 小规模 | 35-60%，取决于是否避开昂贵 DSP/laser |
+| Optical interposer / photonic fabric for memory | 2026 NRE | 0.05/0.2/0.8 亿 | 0.5/3/10 亿 | 5/25/80 亿 | 2028 前低，若 memory pooling 成立会非线性 | 50-70%，但客户集中和技术风险最高 |
+
+## 4. 供给侧：产能结构、瓶颈、成本和价格传导
+
+### 4.1 产能结构
+
+| 地区/生态 | 主要公司 | 产能/工艺位置 | 重要性 |
+|---|---|---|---|
+| 美国 | NVIDIA、Broadcom、Marvell/Celestial、Ayar Labs、Lightmatter、Ciena/Nubis、Coherent、Lumentum、Corning、Intel、GF、Cisco/Acacia、Arista | 平台定义、交换 ASIC、DSP/SerDes、光 chiplet、InP/laser、glass connector、CPO 系统 | 最高；标准、订单和高毛利 IP 集中 |
+| 台湾 | TSMC、ASE/SPIL、GUC、Alchip、Foxconn/FIT、Wistron/Wiwynn、Quanta/QCT、Pegatron、Luxshare Taiwan 供应链 | COUPE/CoWoS/SoIC、先进封装、ASIC 设计服务、服务器/交换系统制造 | 最高；决定 high-volume manufacturing 和客户落地 |
+| 中国大陆 | Innolight、中际旭创、新易盛、天孚通信、源杰科技、光迅、华工科技、海信宽带、锐捷、盛科、长电/通富/华天 | 光模块、光器件、部分硅光、连接器/光纤管理、国产网络 | 高；800G/1.6T 份额强，但 CPO 核心平台仍需验证 |
+| 日本 | Sumitomo Electric、Mitsubishi Electric、Fujikura、Furukawa、Hamamatsu、Kyocera、Ibiden、Shinko | EML/CW laser、光纤、连接、基板、材料 | 高；关键光源和材料环节 |
+| 欧洲/以色列 | Nokia、imec、ASML、BESI、ASMPT Europe、Sivers、Scintil、DustPhotonics、Ranovus Europe ecosystem | 光传输、研究平台、混合键合设备、硅光/激光集成 | 中高；技术和设备强，量产平台分散 |
+| 东南亚/墨西哥 | Fabrinet、Coherent/Lumentum/模块 EMS 供应链、泰国/马来西亚/越南产能 | 模块组装、测试、供应链去风险 | 中高；受美国客户供应链重构拉动 |
+
+### 4.2 至少 10 个供给瓶颈
+
+1. **高功率 InP CW laser / ELSFP：** CPO 需要稳定外置光源，功率、寿命、温漂、窄线宽和可维护性同时达标；NVIDIA 对 Lumentum/Coherent 的投资说明光源已经是战略 bottleneck。
+2. **200G/400G EML/EAM/MZM：** 1.6T/3.2T 要求 200G/400G per lane，器件带宽、线性度、良率和测试时间都上升；TrendForce 指 EML 产能集中在少数供应商。
+3. **SiPh PIC 良率和 foundry PDK：** TSMC COUPE、GF Fotonix、Intel silicon photonics 不是普通代工，客户需要 PDK、封装、fiber attach 和测试闭环。
+4. **224G/400G SerDes、DSP、retimer：** CPO 缩短电通道但不消灭高速电接口；Broadcom、Marvell、Synopsys、Cadence、Credo、Astera 的 IP/芯片供给决定能否量产。
+5. **fiber attach / detachable connector：** 低损耗、可插拔、可现场替换、批量自动化对准是 CPO 从 demo 到生产的关键；Corning/GF/Intel/Lightmatter/Senko/ASE 的进展要重点跟踪。
+6. **先进封装和基板：** Optical chiplet 要与 ASIC/HBM/基板共封装，会争用 CoWoS/SoIC/organic substrate、细线 RDL、低翘曲材料、panel/glass 试产。
+7. **热管理：** CPO、XPO、高功率 ELS、400G/lane optics 需要液冷、TEC、cold plate、热仿真和材料；热漂移会直接影响误码和寿命。
+8. **测试和 burn-in：** 光电测试、BER/FEC、224G/448G BERT、光纤耦合、温度循环、现场 RMA 统计都会增加测试成本和交期。
+9. **客户认证和 acceptance cycle：** AI 网络设备不是单件采购，需要整 rack/cluster 验收；Arista 等公司提到 AI 新产品 acceptance cycle 可拉长。
+10. **人才和多物理 EDA：** 光、电、热、机械、封装和可靠性跨域人才稀缺；光封装设计自动化和多物理 sign-off 仍不成熟。
+11. **供应链地缘重构：** 光模块/激光器/封装从中国、台湾、东南亚、美国多地重分配，客户认证重复、资本开支前置。
+
+### 4.3 成本构成和价格传导
+
+以下为测算口径，实际因 reach、lane rate、是否含 DSP、是否含 ELS、是否 socketed、是否系统平台绑定而变化。
+
+| 产品 | 单位价格区间 2026 | 成本构成测算 | 毛利决定因素 | 价格传导机制 |
+|---|---:|---|---|---|
+| 1.6T OSFP/DR/FR module | 1,200-2,200 美元/只；早期高端可更高 | DSP/SerDes/TIA/driver 25-35%；光器件/PIC/EML/PD 25-35%；PCB/壳体/热 10-15%；测试 10-20%；组装 5-10% | 200G lane 良率、客户认证、EML/SiPh/DSP供给 | GPU/ASIC cluster 交期紧 -> 模块 ASP 稳；多供应商扩产 -> 2027 降价 |
+| ELSFP/外置激光 | 200-800 美元/模块；高功率多通道更高 | InP CW laser 35-50%；隔离器/TEC/封装 20-30%；测试 15-25%；光纤/连接 5-10% | 输出功率、寿命、温漂、窄线宽、可维护 | CPO 客户锁单，价格向高功率 laser 供应商传导 |
+| 6.4T CPX/NPO optical engine | 2,500-8,000 美元/engine；早期工程品更高 | PIC/EIC 25-40%；连接/FAU 15-25%；封装/基板 15-25%；laser/ELS 0-25%；测试 15-25% | 耦合损耗、可插拔、热、host loss budget | 由交换 ASIC/XPU 平台绑定议价，非公开 ASP |
+| 12.8T XPO module | 8,000-20,000 美元；2026 以样品/NRE | 64 lane optical engine、液冷 cold plate、DSP/retimer 可选、机械件、测试 | 400W 液冷、可靠性、前面板密度 | 若替代多个 OSFP，客户按 rack footprint 和 uptime 付费 |
+| Optical I/O chiplet | 100-500 美元/port-equivalent；每 XPU 光 I/O 子系统可数百至数千美元 | PIC/EIC 30-45%；D2D interface/IP 15-25%；封装/FAU 20-30%；test 10-20% | 客户 ASIC design-in、UCIe/私有协议、PDK、KGD | 一旦进 ASIC tape-out，随客户 XPU 出货锁定 2-3 年 |
+| Detachable fiber / glass connector | 20-200 美元/port；高密 FAU 更高 | 精密玻璃/光纤阵列、镀膜、对准、机械、测试 | 插拔寿命、损耗、批量对准 | CPO 标准一旦采纳，单价随端口数放大 |
+| 光电测试设备 | 单台数十万至数百万美元 | 高速仪器、软件、校准、夹具 | 频宽、FEC/BER、自动化、标准认证 | lane-rate 升级先买测试，价格刚性高 |
+
+## 5. 竞争格局和可量化壁垒
+
+### 5.1 市场结构
+
+| 环节 | 集中度和事实 | 2026 判断 |
+|---|---|---|
+| AI 光模块 | Cignal 2026 年 4 月称 2025 Innolight datacom revenue 超 50 亿美元，后续 Eoptolink、Coherent；TrendForce 指 2026 AI optical market 260 亿美元 | 头部集中但中国/北美/台系多供应商竞争，2027 ASP 压力上升 |
+| EML/CW laser | TrendForce 项目内摘录：Broadcom、Lumentum、Sumitomo Electric 合计约 55% LD 产能；EML 前三 Lumentum、Broadcom、Mitsubishi Electric 合计约 72% | 光源和 EML 的定价权强于模块组装 |
+| CPO 平台 | NVIDIA、Broadcom 最先商业部署；Marvell/Celestial、Ciena/Nubis、Ayar、Lightmatter 争夺下一层 | 2026-2027 是少数平台/客户定义事实标准 |
+| SiPh foundry | TSMC COUPE、GF Fotonix、Intel silicon photonics、Tower/imec/AIM Photonics 等 | PDK+封装+测试平台壁垒高，数量不会像普通 CMOS foundry 那样多 |
+| 可维护连接器 | Corning、Senko、US Conec、Samtec、Molex、Amphenol、TE、Luxshare/FIT | 标准和客户认证形成强锁定 |
+| 测试设备 | Keysight、VIAVI、Anritsu、Tektronix、Teledyne LeCroy、Rohde & Schwarz | 高集中、高毛利，直接受益于 224G/400G lane |
+
+### 5.2 壁垒清单：为什么能定价
+
+1. **技术壁垒：每 bit 能耗和带宽密度。** 200G/400G lane 下，普通电路和封装误差会被放大；客户愿意为低 pJ/bit、低误码、低 FEC latency 付溢价。
+2. **工艺壁垒：光电封装良率。** PIC/EIC/ASIC/FAU/laser 的组合良率不是线性叠加，谁能做 wafer-level optical test、KGD、rework 和 burn-in，谁能定价。
+3. **规模壁垒：资本开支和客户锁单。** NVIDIA 对 Coherent/Lumentum/Marvell 的投资和采购承诺说明，光互联供给已经进入“客户出资锁产能”阶段。
+4. **渠道/客户锁定：hyperscaler reference design。** 一旦进入 NVIDIA、Google、AWS、Microsoft、Meta、Broadcom custom XPU 或 Arista/Cisco/Ciena 的平台，后续架构、测试、现场运维会沿用，替换成本高。
+5. **认证标准：CPO/CPX/Open CPX/OIF/UCIe。** 标准不是削弱壁垒，而是把合规供应商圈定；早期标准参与者更容易拿到量产 design-in。
+6. **切换成本：故障成本远高于部件价格。** AI cluster 训练/推理中断的成本高于单个光模块或 optical engine 的 BOM，客户优先买 uptime 和可预测交付。
+7. **软件和 telemetry：** CPO/OCS/AI fabric 需要实时链路监测、故障隔离、重路由和运维软件；硬件供应商若拥有控制面，毛利更稳定。
+
+### 5.3 哪一层最可能长期高 ROIC/高毛利
+
+| 排名 | 层级 | 长期毛利/ROIC 判断 | 原因 |
+|---:|---|---|---|
+| 1 | 平台型交换/XPU/ASIC：NVIDIA、Broadcom、Marvell | 最高 | 芯片、协议、软件、客户架构和采购周期绑定；能捕获系统价值 |
+| 2 | 高端光源/ELS/SiPh PIC/Optical chiplet | 很高 | 供给集中、技术难、客户锁单；CPO 没有可靠光源无法量产 |
+| 3 | Foundry/PDK/先进封装平台：TSMC、GF、Intel、ASE/Amkor 高端线 | 高 | 设计入口+制造良率+封装能力；TSMC 价值捕获高于普通 OSAT |
+| 4 | 测试设备/EDA/可靠性软件 | 高 | lane-rate 升级先买工具，客户不能绕开验证 |
+| 5 | 精密连接器/FAU/glass coupling | 中高 | 标准化后可复制，但前期认证和精密制造壁垒明显 |
+| 6 | 光模块品牌商 | 中高但周期强 | 2026-2027 收入弹性大，但 ASP 和客户多供会压毛利 |
+| 7 | EMS/普通组装/低端连接器 | 中低 | 收入弹性大，长期 ROIC 受客户议价和产能周期约束 |
+
+## 6. 2026 关键变化：行业拐点与最可能放量子方向
+
+### 拐点一：NVIDIA 把 CPO 从概念推成生产路线
+
+NVIDIA 2026 年已把 Spectrum-X/Quantum-X Photonics、Vera Rubin full production、Coherent/Lumentum/Marvell 战略投资、multibillion purchase commitment 放进同一条 AI factory 供应链。它的意义不是 2026 年 CPO 收入立刻超过 pluggable，而是首个最大系统平台愿意承担 CPO 技术和供应链风险。若 2026H2 客户从 CoreWeave/Lambda/OCI 等首批生态扩大到更多 hyperscaler，CPO 估值应上修。
+
+最可能放量：ELSFP、高功率 InP CW laser、CPO switch optical engine、NVIDIA CPO 交换系统、CPO 测试。
+
+### 拐点二：1.6T 从样品进入主流采购，400G/lane 的钱先流向器件和测试
+
+OFC 2026、DesignCon 2026、Cignal/TrendForce 数据共同说明，2026 不是“800G 刚开始”，而是 1.6T 已进入高端 AI fabric 的量产爬坡。Broadcom Taurus 400G/lane DSP 和 400G EML/PD、Coherent 400G/lane demos、OpenLight 3.2T DR8 PIC、VIAVI/Keysight 测试平台都表明，下一波资本开支会提前进入 3.2T pathfinding。
+
+最可能放量：1.6T DR/FR、200G EML/SiPh、TIA/driver、224G SerDes、BERT/VNA/oscilloscope、模块测试。
+
+### 拐点三：Open CPX/XPO/可维护连接器把 CPO 商业化路径从“封闭黑盒”改成“可服务生态”
+
+Open CPX MSA 目标定义 socket、connector、thermal、electrical、optical 和 management interface；Arista XPO 用 12.8T 液冷可插拔反击 CPO 的 serviceability 弱点；GF/Corning、Intel、Lightmatter/Senko/ASE 都在解决 detachable fiber。2026 的真正工程拐点是 serviceability，而不是单个光器件速率。
+
+最可能放量：CPX/NPO optical engines、detachable FAU、玻璃波导连接器、XPO 样机、光纤管理和现场测试。
+
+## 7. 2027 关键变化：行业拐点与最可能放量子方向
+
+### 拐点一：Rubin/MI400/Trainium/TPU 下一代把 scale-up 光互联从交换侧推向 XPU 侧
+
+2027 年高端 AI 芯片进入 HBM4、超高机架功率和更大 scale-up domain。项目内产业背景把 Rubin、MI400、Trainium3、TPU、Broadcom/Marvell custom XPU 列为 2027 弹性主线。若单 rack/多 rack 内部带宽继续上升，铜和传统 pluggable 将无法独自承担，Optical I/O chiplet、NPO、CPX 会从“网络设备选择”变成“XPU 架构选择”。
+
+最可能放量：Ayar TeraPHY、Celestial Photonic Fabric、Lightmatter Passage、TSMC COUPE 客户方案、Marvell custom XPU attach。
+
+### 拐点二：1600G/1.6T 成为高端新增端口主流，3.2T 开始客户验证
+
+Dell'Oro 预计 2027 年 AI back-end 端口转向 1600G；Cignal 2026 已大幅上修 1.6T 模块预测。到 2027，1.6T 将从“少数最先进集群”扩散到更多 AI cloud、NeoCloud、大型企业 AI cluster；3.2T 则进入 live demo、qualification 和早期小批量。
+
+最可能放量：1.6T pluggable、1.6T LPO/LRO、400G/lane 器件、3.2T evaluation board、测试设备。
+
+### 拐点三：OCS、coherent-lite、hyper-rail 和 HCF 使 scale-across 成为第二利润池
+
+AI 训练/推理不只在单数据中心内 scale-out，还会跨 campus/metro/region scale-across。Ciena/Nokia/Marvell 的 1600ZR/ZR+、coherent-lite、multi-rail ILA、full-spectrum transponder，以及 Microsoft HCF 都指向同一件事：AI 区域网络会把光纤对数、线路系统、低延迟传输和动态拓扑重构拉进 CapEx。
+
+最可能放量：800ZR/1600ZR、coherent-lite、OCS、HCF、multi-rail amplifier、线路系统自动化。
+
+## 8. 头部公司和细分技术公司清单
+
+### 8.1 平台、交换、XPU 和系统
+
+| 方向 | 公司 | 优势 |
+|---|---|---|
+| AI full-stack + CPO switch | NVIDIA | Spectrum-X/Quantum-X Photonics、Vera Rubin、NVLink、BlueField、投资 Coherent/Lumentum/Marvell |
+| Ethernet AI fabric / CPO / custom XPU | Broadcom | Tomahawk/Jericho、Taurus 400G/lane DSP、Davisson CPO、custom ASIC、3.5D XDSiP |
+| Custom XPU + optical attach | Marvell | Custom silicon、1.6T optics、CPO/NPO、Celestial AI、NVLink Fusion partnership |
+| Ethernet AI switching | Arista | AI Ethernet fabric、XPO MSA、客户网络软件 |
+| Networking / Acacia / optics | Cisco | Silicon One、Acacia coherent optics、AI network products |
+| Ciena + Nubis | Ciena | Vesta 200 6.4T CPX、coherent DCI、Nubis NPO/CPO |
+| Optical transport / AI DCI | Nokia | 1600ZR/ZR+、coherent-lite、multi-rail、line systems |
+| Cloud architecture drivers | Google、Microsoft、AWS、Meta、Oracle、CoreWeave、Lambda | 真实采购和架构选择定义 CPO/OIO 采用节奏 |
+| GPU/ASIC competitors | AMD、Intel、Huawei、Cambricon、Baidu Kunlunxin、Biren、Enflame、MetaX、Hygon | 2027 后开放 scale-up/scale-out 生态可能拉动非 NVIDIA 光互联 |
+
+### 8.2 Optical I/O chiplet、光引擎和光 interposer
+
+| 公司 | 细分 | 技术优势/状态 |
+|---|---|---|
+| Ayar Labs | UCIe optical I/O chiplet | TeraPHY、SuperNova、8Tbps、Alchip/GUC/TSMC 生态、2026 5 亿美元融资 |
+| Celestial AI / Marvell | Photonic Fabric | 光 scale-up/memory fabric；Marvell 给出 FY2028/FY2029 run-rate 目标 |
+| Lightmatter | Passage optical engine / optical interposer | Passage L20 6.4Tbps each direction、vClick dFAU、1.6Tbps per fiber |
+| Intel | OCI chiplet / silicon photonics | fully integrated OCI chiplet demo、64x32Gbps、co-packaged with CPU |
+| TSMC | COUPE / silicon photonics platform | COUPE on substrate 2026 production、2x power、10x latency vs board pluggable |
+| Ciena/Nubis | CPX/NPO optical engine | Vesta 200 6.4T CPX、retimer-free、open pluggable CPO |
+| Coherent | Socketed CPO / InP / SiPh | 6.4T socketed CPO、400G InP modulator、ELS |
+| OpenLight | III-V integrated SiPh PIC | 3.2T DR8 PIC、448G EAM、LPO/LRO variants |
+| Ranovus | Odin optical interconnect | CPO/NPO optical engine、TSMC/OCP ecosystem references |
+| DustPhotonics | Silicon photonics optical connectivity | Carmel 等 SiPh 平台，数据中心 optics |
+| POET Technologies | Optical Interposer | 800G/1.6T engine、wafer-scale optical interposer，小公司高弹性高风险 |
+| Avicena | MicroLED optical interconnect | LightBundle、laser-free short-reach optical links |
+| Xscape Photonics | Photonic chiplets | 数据移动/AI 芯片光互联初创 |
+| Enosemi / AMD | Silicon photonics | AMD 收购以补光互联能力 |
+| Scintil Photonics | III-V on silicon | 集成激光/硅光平台 |
+
+### 8.3 光源、光器件、模块和代工
+
+| 环节 | 公司 |
+|---|---|
+| InP CW laser / ELS / EML | Lumentum、Coherent、Broadcom、Sumitomo Electric、Mitsubishi Electric、Source Photonics、Accelink、Yuanjie Technology、Hamamatsu |
+| VCSEL / MicroLED | Coherent、Lumentum、ams OSRAM、Avicena、Sony Semiconductor、Hamamatsu |
+| 光模块 | Innolight、中际旭创、Eoptolink、新易盛、Coherent、Lumentum/Cloud Light、Fabrinet、NVIDIA/Mellanox、Cisco/Acacia、Ciena、Nokia、Marvell、AAOI、Hisense Broadband、Accelink、HG Genuine、光迅科技、华工科技、Linktel |
+| 硅光 foundry / PDK | TSMC、GlobalFoundries Fotonix、Intel Foundry、Tower Semiconductor、AIM Photonics、imec、Samsung Foundry |
+| OSAT/先进封装 | TSMC、ASE/SPIL、Amkor、Intel、Samsung、JCET、Tongfu、Huatian、Powertech、KYEC |
+| 基板/材料 | Ibiden、Shinko、Unimicron、Nan Ya PCB、Ajinomoto、Resonac、DNP、Kyocera、Samsung Electro-Mechanics、Corning |
+
+### 8.4 连接、测试、软件和系统集成
+
+| 环节 | 公司 |
+|---|---|
+| 高密连接器/FAU/光纤管理 | Corning、Senko、US Conec、Samtec、Molex、Amphenol、TE Connectivity、Luxshare、FIT/Foxconn、Hirose、BizLink、Panduit、Legrand |
+| 高速测试 | Keysight、VIAVI、Anritsu、Tektronix、Teledyne LeCroy、Rohde & Schwarz、Spirent、EXFO |
+| 半导体测试/量测 | Advantest、Teradyne、FormFactor、Technoprobe、Cohu、KLA、Onto Innovation、Camtek、Nova |
+| EDA/IP/SerDes | Synopsys、Cadence、Siemens EDA、Ansys、Marvell、Broadcom、Credo、Astera Labs、Rambus、Alphawave Semi、Ceva |
+| OCS/光交换 | Google Apollo ecosystem、Coherent、Lumentum、Calient、Polatis/HUBER+SUHNER、NTT/IOWN ecosystem |
+| 系统/ODM | Dell、HPE、Lenovo、Supermicro、Foxconn、Quanta/QCT、Wistron/Wiwynn、Pegatron、Inventec、MiTAC |
+
+## 9. 投资价值排序和反证指标
+
+### 9.1 投资价值排序
+
+| 优先级 | 方向 | 2026 确定性 | 2027 弹性 | 适合的投资框架 |
+|---:|---|---:|---:|---|
+| S | 高功率 laser/ELS、200G/400G EML、SiPh PIC | 高 | 高 | 瓶颈资产、客户锁单、毛利扩张 |
+| S | CPO/CPX/NPO 光引擎和可维护连接器 | 中高 | 极高 | 技术拐点、标准参与、design-in |
+| S | 交换 ASIC/DSP/SerDes/AI fabric 平台 | 高 | 高 | 长期高 ROIC，客户架构锁定 |
+| A | 1.6T pluggable 模块和 LPO/LRO | 极高 | 中高 | 量价弹性，但 2027 防 ASP |
+| A | 高速测试/验证/EDA | 高 | 高 | 标准升级先买工具，高毛利 |
+| A | Optical I/O chiplet | 中 | 极高 | 2027-2029 期权，重看客户和 tape-out |
+| B | XPO/MicroLED/OCS/HCF | 中 | 高 | 路线可选项，关注大客户采用 |
+| B | OSAT/EMS/普通模块组装 | 中高 | 中 | 收入弹性强，利润弹性需折价 |
+| C | 普通连接器/普通 PCB/泛硅光概念 | 低中 | 中 | 容易概念化，必须验证技术纯度 |
+
+### 9.2 反证指标
+
+1. 800G/1.6T ASP 连续两个季度跌幅超过 10%，且库存高于 1 个季度需求。
+2. NVIDIA Spectrum-X/Quantum-X Photonics 客户不扩展，CPO 只停留在少数 demo。
+3. Lumentum/Coherent ELS/laser 订单未转成收入，或毛利率被良率/售后成本吞噬。
+4. Open CPX/XPO/CPX/NPO 标准分裂导致客户推迟采购。
+5. CPO field failure、laser 寿命、热漂移、插拔损耗使 RMA 超过客户可接受阈值。
+6. Rubin/MI400/Trainium/TPU 下一代出货延期，导致 2027 scale-up 光 I/O 需求后移。
+7. Hyperscaler AI CapEx 下修，或 AI cloud 融资窗口关闭，使网络/光互联订单从短缺变为消化库存。
+8. 光 chiplet 公司只有融资和样品，没有客户 tape-out、NRE、production test capacity 或 OSAT flow。
+
+## 10. 资料来源和交叉验证
+
+### 10.1 项目内允许资料
+
+- `行业调研/行业索引.md`：确认标准行业名和目录。
+- `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`：用于 2026/2027 头部 AI 芯片技术路径和排序背景。
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`：用于 AI 网络/光互联订单池和 AI CapEx 链条。
+- `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`：用于光模块、CPO、库存/ASP 反证指标。
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`：用于口径、价值链和订单池边界。
+- `行业调研/产业背景/顶级会议信息/ofc_2026_conference_update.md`、`conference_update_ectc_2026_2026-06-11.md`、`designcon_2026_conference_update.md`、`isscc_2026_ai_ic_soc_research.md`、`conference_update_nvidia_gtc_taipei_2026_2026-06-11.md`：用于会议信号、产品路径和技术成熟度。
+
+### 10.2 外部一手和行业资料
+
+- NVIDIA Silicon Photonics / CPO：https://www.nvidia.com/en-us/networking/products/silicon-photonics/
+- NVIDIA Vera Rubin full production：https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory
+- NVIDIA Vera Rubin platform：https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform
+- NVIDIA Coherent strategic partnership：https://nvidianews.nvidia.com/news/nvidia-and-coherent-announce-strategic-partnership-to-develop-optics-technology-to-scale-next-generation-data-center-architecture
+- NVIDIA Lumentum strategic partnership：https://nvidianews.nvidia.com/news/nvidia-announces-strategic-partnership-with-lumentum-to-develop-state-of-the-art-optics-technology
+- NVIDIA Marvell / NVLink Fusion partnership：https://nvidianews.nvidia.com/news/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion
+- Broadcom OFC 2026 AI infrastructure：https://investors.broadcom.com/news-releases/news-release-details/broadcom-showcases-industry-leading-solutions-scaling-ai
+- Broadcom Q2 FY2026 results：https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial
+- Marvell Q1 FY2027 results：https://investor.marvell.com/news-events/press-releases/detail/1023/marvell-technology-inc-reports-first-quarter-of-fiscal-year-2027-financial-results
+- Marvell to acquire Celestial AI：https://investor.marvell.com/news-events/press-releases/detail/1000/marvell-to-acquire-celestial-ai-accelerating-scale-up-connectivity-for-next-generation-data-centers
+- TSMC 2026 technology symposium / COUPE：https://pr.tsmc.com/english/news/3302
+- Ayar Labs 2026 Series E：https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/
+- Ayar Labs + Alchip optical I/O：https://ayarlabs.com/news/alchip-and-ayar-labs-unveil-co-packaged-optics-for-ai-datacenter-scale-up/
+- Ayar Labs TeraPHY：https://ayarlabs.com/teraphy/
+- Lightmatter Passage L20：https://lightmatter.co/press-release/lightmatter-expands-photonic-interconnect-roadmap-with-passage-l20-unified-optical-engine-for-npo-and-obo-applications/
+- Lightmatter OFC 2026：https://lightmatter.co/resource/lightmatter-at-ofc-2026-optical-interconnects-in-action/
+- Intel OCI chiplet：https://newsroom.intel.com/artificial-intelligence/intel-unveils-first-integrated-optical-io-chiplet
+- GlobalFoundries + Corning：https://gf.com/gf-press-release/globalfoundries-and-corning-collaborate-to-deliver-detachable-fiber-connector-solutions-to-scale-next-generation-optical-connectivity/
+- Corning GlassBridge：https://www.corning.com/oem-solutions/worldwide/en/home/products-solutions/optical-communication-components/next-generation-optics/glassbridge-connector.html
+- Coherent CPO OFC 2026：https://www.coherent.com/news/press-releases/coherent-co-packaged-optics-cpo-technologies-ofc-2026
+- Coherent OFC 2026 investor deck：https://www.coherent.com/content/dam/coherent/site/en/documents/investors/investor-presentations/2026/march-17/OFC-2026-Investor%20event-deck-vf.pdf
+- Lumentum OFC 2026：https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Demonstrates-Industry-Leading-Technologies-and-Products-for-Scale-Out-Scale-Up-and-Scale-Across-AI-Infrastructure-at-OFC-2026/default.aspx
+- Arista XPO：https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Announces-XPO-High-Density-Liquid-Cooled-Pluggable-Optics/default.aspx
+- Arista XPO whitepaper：https://www.arista.com/assets/data/pdf/Whitepapers/XPO-Whitepaper.pdf
+- Open CPX MSA：https://www.opencpxmsa.org/
+- Ciena Nubis acquisition：https://www.ciena.com/about/newsroom/press-releases/ciena-to-acquire-nubis-communications-to-expand-its-inside-the-data-center-strategy-and-further-address-growing-ai-workloads
+- Ciena Vesta 200 CPX：https://www.ciena.com/about/newsroom/press-releases/ciena-unveils-the-industrys-highest-density-lowest-power-pluggable-optical-engine-to-meet-data-center-ai-demands
+- TrendForce AI optical transceiver market：https://www.trendforce.com/presscenter/news/20260420-13017.html
+- TrendForce optical interconnect supply chain：https://www.trendforce.com/presscenter/news/20260505-13031.html
+- TrendForce MicroLED CPO：https://www.globenewswire.com/news-release/2026/05/11/3291891/0/en/global-supply-chain-alliances-take-shape-as-micro-led-cpo-optical-transceiver-market-projected-to-reach-us-848-million-by-2030-says-trendforce.html
+- Cignal AI optical components 2025/2026：https://cignal.ai/2026/04/datacom-optical-component-revenue-surpasses-19b-in-2025/
+- Cignal AI ELSFP/CPO forecast：https://cignal.ai/2026/05/elsfp-module-market-to-exceed-1-5-billion-by-2030/
+- Cignal AI OCS forecast：https://cignal.ai/2025/12/optical-circuit-switching-market-to-exceed-2-5b-in-2029/
+- LightCounting AI cluster optics：https://www.lightcounting.com/newsletter/en/march-2026-ethernet-optics-382
+- LightCounting demand surprise：https://www.lightcounting.com/newsletter/en/april-2026-market-forecast-379
+- Dell'Oro AI back-end switch market：https://www.delloro.com/news/ai-back-end-switch-market-will-push-past-100-billion-by-2030/
+- Microsoft MicroLED networking：https://news.microsoft.com/source/features/innovation/using-inexpensive-microleds-microsoft-networking-innovation-aims-to-make-datacenters-more-efficient/
+- MediaTek/Microsoft MicroLED AOC：https://www.mediatek.com/press-room/mediatek-develops-active-optical-cable-technology-with-microsoft-research-to-deliver-significant-improvements-in-data-center-efficiency
+- Avicena LightBundle eKit：https://avicena.tech/avicena-launches-the-worlds-first-microled-optical-interconnect-eval-kit/
+

@@ -1,0 +1,92 @@
+[
+  {
+    "subject": "HBM",
+    "newPromptFile": "0-executed-prompt.txt",
+    "oldPromptFile": "1-executed-prompt.txt",
+    "newHash": "2e7d3a60ddf7b20c351249f7fae944f371eaae2637773cd514a50985d1927a10",
+    "oldHash": "15b80f52e526f92e1db434a37d3da5281f380f90a16c00cff5f00002eed43bd5",
+    "equalAfterDateNormalization": true,
+    "newChars": 1584,
+    "oldChars": 1584
+  },
+  {
+    "subject": "ASIC",
+    "newPromptFile": "2-executed-prompt.txt",
+    "oldPromptFile": "3-executed-prompt.txt",
+    "newHash": "cadb16ab3d6fa4e0d82ec6a79634b2e9f3329caa49ccdb90dc633e82a57eb7da",
+    "oldHash": "a0c7db650b3ce005cbeb53f6ca7b439593ea6967b61784dc6d4e0e4ce6a3dbfc",
+    "equalAfterDateNormalization": true,
+    "newChars": 1590,
+    "oldChars": 1590
+  },
+  {
+    "subject": "NeoCloud",
+    "newPromptFile": "4-executed-prompt.txt",
+    "oldPromptFile": "5-executed-prompt.txt",
+    "newHash": "581074469ddecfed8ad070b0f1f6fb9d3d1433ad5c9586fe9ad5c1fd3eea83ea",
+    "oldHash": "d7876b8fd66785475c46ac4dfa9c11df871305cae0954236beecdbc1964bdfe4",
+    "equalAfterDateNormalization": true,
+    "newChars": 1635,
+    "oldChars": 1635
+  },
+  {
+    "subject": "CRWV company",
+    "newPromptFile": "6-executed-prompt.txt",
+    "oldPromptFile": "7-executed-prompt.txt",
+    "newHash": "bd04b81600cb2af58b459f380f06a5e1763ede75a8270e4849a6dc2fbb1d2e05",
+    "oldHash": "a8209750ef088e2b2fb81a3dd98df270c909f0c00da2e435b4eeb617290e49c9",
+    "equalAfterDateNormalization": true,
+    "newChars": 1696,
+    "oldChars": 1696
+  },
+  {
+    "subject": "GOOGL company",
+    "newPromptFile": "8-executed-prompt.txt",
+    "oldPromptFile": "16-executed-prompt.txt",
+    "newHash": "f3a4542aa6a947e2295766e694b4c47bf040c2f1cda7a0caf4800951a9c77f58",
+    "oldHash": "1a12626838be0ca1b8b592f8ad136e6329b132980fdf97ebc70770200c517b44",
+    "equalAfterDateNormalization": true,
+    "newChars": 1701,
+    "oldChars": 1701
+  },
+  {
+    "subject": "MU company",
+    "newPromptFile": "9-executed-prompt.txt",
+    "oldPromptFile": "10-executed-prompt.txt",
+    "newHash": "d0c169f41c932f6180f86473dfe2a53e87b17365c752bfccfee54c68ca9e2f01",
+    "oldHash": "20ddc4ab9e2bb6aaedb7d3755c6c2427ee7f9f3297bff4773a3e2b179a9cf37a",
+    "equalAfterDateNormalization": true,
+    "newChars": 1703,
+    "oldChars": 1703
+  },
+  {
+    "subject": "MU decision",
+    "newPromptFile": "11-executed-prompt.txt",
+    "oldPromptFile": "12-executed-prompt.txt",
+    "newHash": "be2cbda7d81c53b5a9ad9b2fa2ec0eed5f14a71e88ed97fe75479dd9b087e4e1",
+    "oldHash": "1f6a73ef3bdc954e809be76f3c354c2363395979517f9f328247520f78299393",
+    "equalAfterDateNormalization": false,
+    "newChars": 32934,
+    "oldChars": 31536
+  },
+  {
+    "subject": "CRWV decision",
+    "newPromptFile": "13-executed-prompt.txt",
+    "oldPromptFile": "14-executed-prompt.txt",
+    "newHash": "26e67541769194e3afdd2a1f3892e8eb7df394945f4824c6aba8782858f86cbf",
+    "oldHash": "942082131ea8287750c7567dcba2a2818a569b8bcefea539f4ffee8563e6a7cf",
+    "equalAfterDateNormalization": false,
+    "newChars": 32938,
+    "oldChars": 31540
+  },
+  {
+    "subject": "GOOGL decision",
+    "newPromptFile": "15-executed-prompt.txt",
+    "oldPromptFile": "17-executed-prompt.txt",
+    "newHash": "9bd8907258ce3267f27b2445865e9698cade38a3facdf394ae15253f61500b92",
+    "oldHash": "42e9822926862195e507d381f8802595c03c157ff9f9df2a783b08d6ceeead17",
+    "equalAfterDateNormalization": false,
+    "newChars": 32963,
+    "oldChars": 25400
+  }
+]

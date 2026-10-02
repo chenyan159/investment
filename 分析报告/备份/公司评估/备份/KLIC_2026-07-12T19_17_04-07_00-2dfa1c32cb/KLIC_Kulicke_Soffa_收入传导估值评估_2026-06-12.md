@@ -1,0 +1,164 @@
+# 公司收入传导与价值传导评估：Kulicke & Soffa（KLIC）
+
+> 公司代号：KLIC  
+> 公司名称：Kulicke and Soffa Industries, Inc. / Kulicke & Soffa  
+> 报告日期：2026-06-12  
+> NTM 主口径：以 FY2026 Q3-FY2027 Q2 作为未来 4 个季度经营窗口；FY2026 Q3 指引已由公司在 2026-05-06 给出，但截至本报告日尚未公告实际结果。  
+> 资料边界：公司事实使用 `公司调研/封测_检测_计量_光罩/KLIC_Kulicke Soffa_公司调研_2026-06-11.md` 并用公司官方公告、SEC 10-Q 校准；行业事实使用 `行业调研/` 下先进封装、AI 芯片先进封装、HBM/高带宽内存相关资料。未读取、引用或继承 `特征量化/`、Signals、回归或排序结论。  
+> 排除项：本报告不输出投资评级、目标价、估值倍数判断、全公司排序，也不把金融市场价格作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口，即 FY2026 Q3-FY2027 Q2。FY2026 全年、FY2027、TCB 年化产能和长期 hybrid bonding 只作为补充口径，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：FY2026 Q2 收入 2.426 亿美元，GAAP 毛利率 49.3%，净利润 3515 万美元；FY2026 Q3 指引收入 3.10 亿美元正负 0.20 亿美元，GAAP EPS 0.87 美元正负 10%，Non-GAAP EPS 1.00 美元正负 10%。最近四个季度收入约 7.682 亿美元，Q2 年化收入约 9.70 亿美元，Q3 指引中点年化约 12.4 亿美元。
+- 重要产品/业务线：Ball Bonding Equipment 是当前收入主引擎；Advanced Solutions/TCB 是未来 12 个月主要增量变量；APS 是服务、备件和工具的利润稳定器；Wedge/Power Assembly 是汽车、工业和功率模块周期修复项；Advanced Dispense/All Others 是小基数新品；Future Hybrid Bonding 是远期期权，不进入 NTM 基准收入。
+- NTM 公司收入四情景：悲观 9.5-10.5 亿美元，基准 11.5-13.0 亿美元，乐观 13.5-15.5 亿美元，极度乐观 16.5-19.0 亿美元。基准不是把 TCB 4 亿美元年销售能力全部收入化，而是承认 Ball/Wire bonding 当前强指引正常兑现，加上 Advanced Solutions 从小基数上修。
+- 利润或 EBITDA 四情景：EBITDA 公司未给出标准指引，本报告不强行反推；以经营利润率和净利润方向为主。悲观经营利润率 8%-12%，基准 16%-20%，乐观 22%-27%，极度乐观 28%-33%。极度乐观只有在 TCB/Advanced Solutions 高毛利收入、Ball 高利用率、APS 装机服务和费用杠杆同时成立时才保留为上限。
+- 最大传导瓶颈：不是 AI/HBM 行业需求，而是 KLIC 是否拿到足够明确的 TCB 客户 POR、重复订单、出货验收和收入确认；Ball Bonding 的 FY2026 Q2/Q3 强度能否持续也决定 NTM 下限。
+- 最大利润率变量：Advanced Solutions 毛利率已高，但 FY2026 Q2 仍因研发投入录得分部经营亏损；利润能否留下来取决于 TCB 规模化、客户验收、产能利用率、价格/mix 和 R&D 吸收。
+- 最大现金流变量：FY2026 H1 净利润 5194 万美元，但经营现金流仅约 134 万美元，主要受应收和库存增加影响；若 Q3/Q4 出货验收顺利，这是 ramp 的营运资本占用，若订单延迟，则会转为库存和现金转换风险。
+- 可信度：基准情景中高，乐观情景中，极度乐观情景低到中。公司级收入有 A/B 级锚，TCB 超额放量仍以 C 级产能规划、客户 engagement 和行业订单为主，不能把行业 TAM 直接当公司收入。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Ball Bonding Equipment | FY2026 Q2 1.602 亿美元；FY2026 H1 2.705 亿美元 | Q2 66.0%；H1 61.2% | 当前最大收入和现金流来源；受 general semiconductor、memory、部分先进封装/垂直线互连拉动 | A | 进入基准。Q3 指引和 Q2 同比 +141.7% 支持 NTM 高 run-rate，但需折扣处理周期回落 | memory vertical wire / ProMEM 对高密度存储的增量，进入乐观而非单独基准 |
+| Advanced Solutions / TCB / die attach | FY2026 Q2 2448 万美元；FY2026 H1 4170 万美元；TCB 子项未披露 | Q2 10.1%；H1 9.4% | AI 先进封装主要弹性来源，含 APTURA/Fluxless TCB、FTC、Cu-to-Cu、advanced die attach | A/C | Segment 已确认收入进入基准；TCB 4 亿美元年系统销售能力只作为乐观/极度乐观上限，不全额进入基准 | Future Hybrid Bonding、HBM4E/SoIC/CPO 相关机会只作为跟踪或极度乐观条件 |
+| Wedge Bonding / Power Assembly | FY2026 Q2 1307 万美元；FY2026 H1 3419 万美元 | Q2 5.4%；H1 7.7% | 功率半导体、汽车、工业、能源和数据中心电源模块间接受益；当前处于低位 | A | 进入基准但按低位修复处理；不把数据中心电源需求直接转成收入 | ASTERION-TW 若获得功率模块量产客户，可进入乐观 |
+| APS：tools、spares、service | FY2026 Q2 3469 万美元；FY2026 H1 7432 万美元 | Q2 14.3%；H1 16.8% | 装机量、利用率和服务粘性的利润稳定器，毛利率约 50% | A | 进入基准，随 Ball/TCB 装机和利用率上行 | 若 TCB 装机快速扩张，APS 在 FY2027 后贡献更高服务收入 |
+| All Others / Advanced Dispense / EA wind-down | FY2026 Q2 1017 万美元；FY2026 H1 2154 万美元 | Q2 4.2%；H1 4.9% | ACELON advanced dispense 是大尺寸封装、underfill/TIM 和复杂组装小基数期权；EA 退出降低低协同拖累 | A/D | 当前已确认收入进入基准；ACELON 新品增量以乐观处理 | Advanced dispense 进入 AI package underfill/TIM 关键流程后才可上修 |
+| Future Hybrid Bonding / optical or high-end memory engagements | 公司未披露独立收入 | 无法可靠量化 | 中长期路线图重要，但 NTM 收入确认路径不足 | D | 不进入 NTM 基准；不把行业 hybrid bonding TAM 归给 KLIC | 移入附录跟踪；若披露客户 POR、订单、交付时间表，才进入乐观基数 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估产品外部需求池，不评估 KLIC 份额、收入确认或利润率。需求锚点来自行业扩产、客户资本开支、技术路线、KLIC 管理层指引隐含需求和已披露 end-market 变化。凡无法可靠量化的需求池，不用 TAM 替代，直接标注“无法可靠量化”。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Ball Bonding Equipment | FY2026 Q2 Ball 收入 1.602 亿美元，同比 +141.7%；增长来自 general semiconductor 约 5850 万美元、memory 约 2980 万美元、automotive/industrial 约 560 万美元 | 客户补库存和中国/亚洲 OSAT 扩产放缓，需求回到 FY2025 下半年低位之上但低于 Q2/Q3 run-rate | general semiconductor 与 memory 的产能/技术转换正常兑现，Q3 指引中的强需求延续到 Q4，但 FY2027 上半年不再环比急升 | memory vertical wire、ProMEM、存储封装和成熟封装设备同时强，客户提前锁产能 | 存储、通用半导体和区域封测 CAPEX 同时紧张，Ball 设备进入排队状态 | 外部需求单位无法可靠量化；可观察变化是 KLIC Ball 单季从 6628 万美元升至 1.602 亿美元 | 基准为符合当前强指引；乐观需继续高于 Q3 后 run-rate | 反证是传统 wire bonding 周期短、成熟设备多供、客户可能提前采购后消化 |
+| Advanced Solutions / TCB | 行业资料显示 2026 年先进封装设备主线是 CoWoS/2.5D、HBM3E/HBM4、TCB、临时键合/解键合、检查量测；KLIC 披露 TCB 扩产支持约 4 亿美元年系统销售能力 | HBM/CoWoS 需求仍强，但 KLIC 未拿到足够 POR 或客户验收延迟，需求池无法转成 KLIC 可服务订单 | TCB 仍是 2026-2027 HBM3E/HBM4、C2S/C2W 和 AI chiplet 的重要量产设备，KLIC 已有 FTC/TCB 客户活动正常推进 | HBM4、AI ASIC、foundry/OSAT 二供加速，TCB 订单从少数客户扩到多客户 repeat order | TCB 和 early hybrid bonding 同时非线性上修，客户预算从 2027 提前到 NTM | TCB TAM 外部口径可到 2027 年 10 亿美元以上；KLIC 自身产能上限约 4 亿美元年系统销售 | 需求乐观强于当前预期，但公司捕获尚未同等确认 | 反证是 ASMPT/BESI/Hanwha/SET/Shibaura 等竞争者已披露强订单或 POR，KLIC 客户名称和 backlog 不透明 |
+| Wedge Bonding / Power Assembly | FY2026 Q2 Wedge 收入 1307 万美元，同比 -63.9%，公司说明来自 EV/汽车工业产能需求下降和 general semiconductor 减少 | EV、工业和功率模块客户继续推迟扩产，Wedge 需求低于当前低位修复预期 | 汽车、工业、功率器件需求低位稳定，数据中心电源模块只作为小增量 | ASTERION-TW 对铜端子、高可靠功率模块形成客户验证，汽车/能源/数据中心电源共同修复 | 功率模块 CAPEX 与 AI 数据中心电源、汽车电动化同时上修 | 需求池无法可靠量化；可观察锚点是 Q2 收入已低于历史正常水平 | 基准是低位修复而非高增长 | 反证是 EV/工业客户 CAPEX 弱、多供竞争和价格敏感 |
+| APS：tools、spares、service | APS FY2026 Q2 收入 3469 万美元，同比 +9.7%；受装机基础、利用率和设备出货后服务拉动 | 设备出货被客户延迟，利用率不上升，APS 仅维持低速 | Ball/TCB/Wedge 装机和利用率正常，APS 跟随装机基础增长 | TCB 和 Ball 新装机提高备件、工具和服务需求，APS 同步上修 | 高利用率、产线满负荷和复杂先进封装提高原厂服务粘性 | 当前 Q2 年化约 1.39 亿美元；FY2025 收入约 1.56 亿美元 | 基准接近当前可见装机路径 | 反证是 APS 滞后于设备新订单，无法在 NTM 内完全吃到新装机生命周期 |
+| All Others / Advanced Dispense | FY2026 Q2 All Others 收入 1017 万美元；ACELON 定位高精度 advanced dispense，大尺寸基板和复杂组装 | ACELON 客户评估慢，EA wind-down 继续影响收入，需求只维持当前小基数 | 当前已确认小基数收入延续，advanced dispense 不作为主要 NTM 增量 | underfill/TIM/large substrate/advanced manufacturing 客户采用增加，形成可见订单 | Advanced dispense 成为 AI 大封装关键流程之一，与 TCB 组合销售 | 需求池无法可靠量化；当前收入基数小 | 基准为当前小业务正常延续 | 反证是点胶设备竞争充分，KLIC 尚未披露 AI 封装关键客户订单 |
+| Future Hybrid Bonding | 行业资料显示 hybrid bonding 订单信号增强，但 2026 主力仍是 TCB、temporary bonding、inspection/metrology；KLIC 仅披露早期 interest/engagement | 仍停留研发和客户交流，不形成 NTM 采购 | 不进入基准需求，只作为 2027 后路线图 | 客户 pilot line 或 engineering tool 在 NTM 内出现 | 获得关键 HBM4E/SoIC/CPO POR 前导订单 | NTM 可确认需求无法可靠量化 | 低于可确认收入预期；仅为远期期权 | 反证是 KLIC 公开证据弱于 BESI/EVG/SUSS/AMAT 等 hybrid bonding 生态 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些外部需求能进入 KLIC NTM 收入表，以及当前可收入化基数是多少；不预测增长，不判断利润率。A/B 级证据可进入基准，C 级证据需要折扣，D/E 级不得进入 NTM 基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Ball Bonding Equipment | FY2026 Q2 1.602 亿美元；H1 2.705 亿美元；FY2025 约 2.930 亿美元；Q3 指引隐含设备需求继续强 | 直接收入 | 中高毛利、强周期、装机服务后续可带 APS | 4.2-5.0 亿美元 | 6.0-7.0 亿美元 | 7.2-8.5 亿美元 | 9.0-10.0 亿美元 | 基准符合强指引后正常兑现；乐观高于当前 run-rate | A | 是 | 已披露分部收入、同比和 end-market 增量；Q3 指引提供短期收入确认锚 | 基准主口径，但要防止把 Q2/Q3 峰值线性外推 |
+| Advanced Solutions / TCB / die attach | FY2026 Q2 2448 万美元；H1 4170 万美元；公司称 TCB 扩产可支持约 4 亿美元年系统销售，但 TCB 子项未披露 | 直接收入，但 TCB 子项需要从分部中估算 | 产品毛利高，当前仍被 R&D 吸收；规模化后经营杠杆高 | 0.8-1.2 亿美元 | 1.8-2.6 亿美元 | 3.0-4.0 亿美元 | 4.5-5.5 亿美元 | 基准高于 FY2025，但低于产能上限；乐观需客户验收和重复订单 | A/C | 是，折扣纳入 | 分部收入为 A；TCB 产能规划、客户 engagement 和 FY2026 约 70% sequential growth 说法为 C | NTM 核心增量，基准只纳入可见 segment ramp，不全额纳入 4 亿美元产能 |
+| Wedge Bonding / Power Assembly | FY2026 Q2 1307 万美元；H1 3419 万美元；FY2025 约 1.106 亿美元 | 直接收入 | 毛利中等，受利用率和客户周期影响大 | 0.45-0.65 亿美元 | 0.75-1.10 亿美元 | 1.20-1.60 亿美元 | 1.80-2.20 亿美元 | 基准为低位修复，悲观低于当前正常化预期 | A | 是 | 已披露分部收入和下降原因；新品 ASTERION-TW 尚无量化订单 | 进入基准但不是主要增量；数据中心电源只作间接受益 |
+| APS：tools、spares、service | FY2026 Q2 3469 万美元；H1 7432 万美元；FY2025 约 1.561 亿美元 | 直接收入，跟随装机和利用率 | 毛利约 50%，现金质量通常优于系统设备 | 1.30-1.50 亿美元 | 1.65-2.00 亿美元 | 2.10-2.40 亿美元 | 2.50-2.80 亿美元 | 基准略高于 FY2025，符合装机恢复 | A | 是 | 已披露分部收入；服务、工具、备件和装机基础可见 | 基准稳定器，不能独立解释全部增长 |
+| All Others / Advanced Dispense | FY2026 Q2 1017 万美元；H1 2154 万美元；FY2025 约 2167 万美元；ACELON 仅为产品发布/推广 | 直接收入 | 小基数，毛利和费用吸收不稳定 | 0.25-0.35 亿美元 | 0.45-0.70 亿美元 | 0.80-1.20 亿美元 | 1.40-1.80 亿美元 | 基准为已确认收入延续；新品上修高于当前预期 | A/D | 部分进入 | 已披露 All Others 收入为 A；ACELON 客户采用为 D | 当前收入进入基准，ACELON 放量只进入乐观及以上 |
+| Future Hybrid Bonding / optical chiplet engagements | 未披露独立收入；只有开发和 early customer interest | 间接/潜在直接 | 若成为 POR 毛利可能高，但 NTM 证据不足 | 0 | 0 | 0-0.20 亿美元 | 0-0.50 亿美元 | 当前预期只是期权，不是收入基数 | D | 否 | 无披露订单、客户、交付和验收时间表 | 移入附录跟踪；不得进入 NTM 基准 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内对 KLIC 的收入和利润贡献。收入贡献不是 TAM、客户 CAPEX 或项目金额；利润贡献按产品 mix、毛利、R&D/SG&A 吸收、利用率和执行约束判断。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Ball Bonding Equipment | 悲观 | 4.2-5.0 亿美元 | 经营利润约 0.8-1.2 亿美元 | 毛利和经营利润率低于 Q2 | 低于当前强指引隐含路径 | Q2 强度若来自补库存，FY2027 上半年可能回落 | 保留为 downside | 成熟设备多供、客户周期短、OSAT CAPEX 消化 |
+| Ball Bonding Equipment | 基准 | 6.0-7.0 亿美元 | 约 1.8-2.4 亿美元 | 接近当前结构，利用率较高 | 符合当前 Q3 指引和 run-rate 正常兑现 | Q2 Ball 1.602 亿美元，同比 +141.7%，general semiconductor 和 memory 同时拉动 | 保留 | Q2/Q3 高点不能无证据外推到全年 |
+| Ball Bonding Equipment | 乐观 | 7.2-8.5 亿美元 | 约 2.4-3.2 亿美元 | 利润率小幅上行 | 高于当前预期 | memory vertical wire、ProMEM、成熟封装补产能和亚洲 OSAT 同时强 | 保留但需订单验证 | 客户价格敏感，先进封装路线长期替代部分 wire bonding |
+| Ball Bonding Equipment | 极度乐观 | 9.0-10.0 亿美元 | 约 3.3-4.2 亿美元 | 高利用率带来经营杠杆 | 显著高于当前预期 | 存储和通用半导体同时进入紧缺采购 | 下移为上限 | 无 backlog 披露，且传统 Ball 高收入可能提前透支 |
+| Advanced Solutions / TCB | 悲观 | 0.8-1.2 亿美元 | -0.2 亿至 +0.15 亿美元 | 毛利高但费用吸收不足 | 低于 TCB ramp 预期 | Q2 Advanced Solutions 2448 万美元，仍有 segment operating loss | 保留 | 客户验收、POR、交付和竞争者订单 |
+| Advanced Solutions / TCB | 基准 | 1.8-2.6 亿美元 | 0.1-0.5 亿美元 | 毛利维持高位，经营利润转正或接近转正 | 符合保守 ramp | 公司扩 TCB 产能，FTC/TCB 已有客户活动；但子项未披露 | 保留 | C 级产能规划不能替代 A/B 级订单 |
+| Advanced Solutions / TCB | 乐观 | 3.0-4.0 亿美元 | 0.7-1.3 亿美元 | 明显扩张 | 高于当前基准 | TCB 接近 4 亿美元年系统销售能力，HBM4/AI ASIC/C2S/C2W 拉动 | 保留为有证据上限 | 竞争者 ASMPT/BESI/Hanwha/SET 等订单和 POR 可能分走需求 |
+| Advanced Solutions / TCB | 极度乐观 | 4.5-5.5 亿美元 | 1.4-2.2 亿美元 | 非线性扩张 | 显著超预期 | 多客户 repeat order、量产验收、价格/mix 同时强 | 下移到乐观上限 | 超过当前 4 亿美元能力需进一步扩产或外协；公开 backlog 不足 |
+| Wedge Bonding / Power Assembly | 悲观 | 0.45-0.65 亿美元 | 0.05-0.15 亿美元 | 低位 | 低于正常修复预期 | Q2 Wedge 同比 -63.9%，EV/工业需求弱 | 保留 | EV、工业和功率模块客户继续推迟 |
+| Wedge Bonding / Power Assembly | 基准 | 0.75-1.10 亿美元 | 0.15-0.35 亿美元 | 稳定修复 | 符合低位恢复 | FY2025 基数 1.106 亿美元，当前低位有均值回归空间 | 保留 | 需求不强，不能靠数据中心电源叙事上修 |
+| Wedge Bonding / Power Assembly | 乐观 | 1.20-1.60 亿美元 | 0.30-0.55 亿美元 | 小幅上行 | 高于当前预期 | ASTERION-TW、功率电子、能源和数据中心电源模块需求改善 | 保留但低权重 | 客户多源化、价格敏感 |
+| Wedge Bonding / Power Assembly | 极度乐观 | 1.80-2.20 亿美元 | 0.55-0.85 亿美元 | 利用率上行 | 明显高于预期 | 功率模块 CAPEX 和工业/汽车周期同时修复 | 下移为跟踪 | 新品订单未量化，NTM 时间表不足 |
+| APS | 悲观 | 1.30-1.50 亿美元 | 0.45-0.60 亿美元 | 稳定但无杠杆 | 低于装机恢复预期 | 若系统设备延迟，备件和服务滞后 | 保留 | 服务需求滞后于新装机 |
+| APS | 基准 | 1.65-2.00 亿美元 | 0.65-0.85 亿美元 | 稳定偏上 | 符合装机和利用率恢复 | Q2 APS 3469 万美元，同比 +9.7%，毛利约 50% | 保留 | APS 无法单独驱动公司高增 |
+| APS | 乐观 | 2.10-2.40 亿美元 | 0.85-1.10 亿美元 | 小幅上行 | 高于预期 | Ball/TCB 装机量和利用率共同提升 | 保留 | 需要设备出货先兑现 |
+| APS | 极度乐观 | 2.50-2.80 亿美元 | 1.05-1.35 亿美元 | 高毛利服务杠杆 | 显著超预期 | 装机急增、客户高利用率、原厂服务占比上行 | 保留为公司质量上限 | 新装机转服务收入存在滞后 |
+| All Others / Advanced Dispense | 悲观 | 0.25-0.35 亿美元 | -0.10 亿至 0 | 亏损或低毛利 | 低于小业务延续 | EA wind-down 和新品推广慢 | 保留 | 产品发布不等于订单 |
+| All Others / Advanced Dispense | 基准 | 0.45-0.70 亿美元 | -0.05 亿至 +0.10 亿美元 | 接近盈亏平衡 | 符合小基数延续 | Q2 All Others 1017 万美元 | 保留 | 客户和应用未量化 |
+| All Others / Advanced Dispense | 乐观 | 0.80-1.20 亿美元 | 0.10-0.30 亿美元 | 上行 | 高于当前预期 | ACELON 进入 advanced manufacturing 客户 | 下移为低权重乐观 | 点胶设备竞争充分 |
+| All Others / Advanced Dispense | 极度乐观 | 1.40-1.80 亿美元 | 0.30-0.60 亿美元 | 明显上行 | 显著超预期 | advanced dispense 成为 AI 封装关键工序并组合销售 | 移入附录/跟踪 | 无 NTM 订单和客户时间表 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为 KLIC NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。产品区间不能简单相加为公司区间，因为 Ball 与 TCB 可能共用部分 OSAT/foundry 客户预算，且高低情景不是每个产品上下限同时发生。公司不披露标准 EBITDA 指引，本表以经营利润率和净利润估算为主，EBITDA 标注为无法可靠量化。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 9.5-10.5 亿美元 | 较 TTM 7.682 亿美元约 +24% 至 +37% | 低于 Q3 指引后正常 run-rate；Ball 回落且 TCB 放量慢 | 45%-48% | 8%-12% | EBITDA 无法可靠量化；净利润约 0.7-1.1 亿美元 | 弱正或转负；库存和应收继续占用 | 中 | Ball 周期回落、TCB 验收延迟、客户集中和现金转换差 |
+| 基准公司 | 11.5-13.0 亿美元 | 约 +50% 至 +69% | 接近当前强指引和可见 run-rate 正常兑现 | 49%-52% | 16%-20% | EBITDA 无法可靠量化；净利润约 1.5-2.2 亿美元 | 转正并改善，但营运资本仍占用 | 中高 | TCB 能否从分部小基数升到 0.5 亿美元/季附近，Ball 是否维持健康 run-rate |
+| 乐观公司 | 13.5-15.5 亿美元 | 约 +76% 至 +102% | 高于当前预期，且不只靠单一小基数项目 | 52%-55% | 22%-27% | EBITDA 无法可靠量化；净利润约 2.4-3.4 亿美元 | 明显改善；若应收回款正常，自由现金流可随利润上行 | 中 | TCB 接近 4 亿美元年系统销售能力，Advanced Solutions 转正，APS 随装机放大 |
+| 极度乐观公司 | 16.5-19.0 亿美元 | 约 +115% 至 +147% | 显著高于当前预期；需 Ball、TCB、APS 和新品同时突破 | 55%-58% | 28%-33% | EBITDA 无法可靠量化；净利润约 3.8-5.2 亿美元 | 强正，但需要营运资本周转不恶化 | 低到中 | 超过当前 TCB 产能或接近满产，客户验收、安装工程、供应链和竞争 POR 全部成立 |
+
+补充判断：
+
+- 悲观情景不是“行业不增长”，而是行业需求无法被 KLIC 在 NTM 内收入化，或者收入来自低毛利/高营运资本占用。
+- 基准情景的核心是 FY2026 Q3 指引兑现，FY2026 Q4/FY2027 H1 不明显掉速；Advanced Solutions 进入可见 ramp，但不假设 4 亿美元 TCB capacity 全年满产。
+- 乐观情景需要至少两个环节同时超预期：TCB 客户订单/验收增强，Ball 或 APS 继续高 run-rate，且 Advanced Solutions 亏损收窄或转正。
+- 极度乐观情景需要多个核心环节同时成立，不应作为当前预期：HBM4/AI ASIC/OSAT 二供扩产加速，KLIC 获得明确 POR，TCB 供给接近满负荷，Ball 高需求不回落，现金转换跟上收入。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只对前四步情景做证据校准。正向证据只提升它影响的层级；反证只在实际影响的环节处理一次。市场价格、估值倍数和股价变化不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q2 实际收入 2.426 亿美元、Q3 指引 3.10 亿美元正负 0.20 亿美元 | 公司汇总、收入确认 | 明确抬高 NTM 基准下限，证明短期出货/验收可见度强 | Q2 毛利率 49.3%，Q3 EPS 指引支持经营杠杆 | Q2 经营现金流转正，但 H1 现金转换仍弱 | 基准保留，悲观不能写成行业需求坍塌，只能写成持续性/确认风险 |
+| Ball Bonding Q2 同比 +141.7%，H1 同比 +114.7% | 产品贡献、公司组合 | Ball 是当前最大收入增量，进入基准主口径 | 高利用率可推高利润，但成熟设备价格弹性有限 | 若客户提前采购，库存/应收风险上升 | 基准保留，极度乐观下移为上限 |
+| Advanced Solutions Q2 收入 2448 万美元、毛利率高但分部经营仍亏损 | 收入基数、利润质量 | 已有 A 级 segment 收入，但 TCB 子项未披露 | 毛利高，R&D 吸收是利润瓶颈 | 客户验收和安装节奏决定现金转换 | 基准折扣纳入，乐观保留，极度乐观下移 |
+| TCB capex 从约 1200 万美元上调到约 2200 万美元，支持约 4 亿美元年 TCB system sales | 收入基数、执行可信度 | 提供乐观收入上限，不是已确认订单 | 若利用率高，Advanced Solutions 利润率可非线性改善 | 扩产会增加营运资本和执行复杂度 | 乐观保留；基准只小比例纳入；极度乐观需额外订单 |
+| KLIC memory portfolio：Ball、Vertical Wire、Advanced TCB、future Hybrid Bonding | 需求、产品路线 | 支持 KLIC 参与 HBM/高密度 memory interconnect | TCB/HB 理论上利润质量高于传统 wire bonding | 需要客户认证、POR 和量产良率 | 需求乐观保留；future hybrid 移入附录 |
+| 行业先进封装设备需求强，2026 主线是 TCB、CoWoS/HBM、临时键合、检测量测 | 需求层级 | 支持外部需求池，但不自动转成 KLIC 收入 | 设备和 process control 利润率高于 OSAT 服务 | 设备交付和客户良率爬坡是瓶颈 | 第一步需求上移；第二/三步仍需公司特定证据 |
+| 竞争者 ASMPT/BESI/SUSS/Onto/Camtek 等订单信号强 | 公司捕获、份额 | 行业 beta 强，但 KLIC alpha 需订单验证 | 如果 KLIC 不是 POR，利润上修落空 | 客户锁定竞争者后 KLIC 产能利用率不足 | 限制乐观和极度乐观，不惩罚行业需求 |
+| FY2026 H1 经营现金流仅约 134 万美元，应收和库存增加 | 现金流、执行质量 | 不直接下修收入，除非验收/回款恶化 | 利润质量折扣 | 现金转换是主要校准因素 | 在第六步现金流处理一次，不重复压低需求和收入 |
+| FY2026 H1 前三大客户收入占比较高，且中国/亚洲 OSAT 敏感 | 收入确认、客户集中 | 增加订单集中和区域周期波动 | 大客户议价可能压制 ASP | 客户延迟或地缘约束会放大库存风险 | 作为公司组合风险处理一次，不重复惩罚产品需求 |
+| Future Hybrid Bonding 只有 early customer interest/engagement | 收入基数、证据可信度 | 不进入 NTM 基准 | 若未来成为 POR 利润率可高，但 NTM 无法量化 | 需要 12-24 个月认证/良率验证 | 移入附录/仅作跟踪 |
+
+四情景校准结论表：
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Ball 从高位回落，TCB 验收延迟，收入低于当前强指引后 run-rate | Q2/Q3 指引强使“需求全面下行”不成立 | 客户集中、应收/库存、TCB 订单不透明、Wedge 弱 | 保留 | Downside 情景；触发条件是 Q3 低于指引、Q4 指引下修或 Advanced Solutions 停滞 | 中 | 客户集中只在收入确认和现金流层级处理，不再重复压低行业需求 |
+| 基准 | Q3 指引兑现，Ball 保持健康 run-rate，Advanced Solutions 按保守折扣 ramp，APS 跟随装机 | A 级收入和指引强；Ball/APS 已确认增长；TCB 有产能扩张和客户活动 | TCB 子项未披露、无 backlog、Advanced Solutions 仍需吸收 R&D | 保留 | 主口径；NTM 收入 11.5-13.0 亿美元 | 中高 | TCB 竞争只限制 TCB 捕获，不重复惩罚 Ball/APS |
+| 乐观 | TCB 接近 4 亿美元年系统销售能力，Ball 和 APS 继续强，Advanced Solutions 转正 | TCB capex/产能、memory portfolio、先进封装设备订单强 | 竞争者订单和 POR 更明确；KLIC 客户、交付和收入节奏未完全披露 | 保留 | 有证据的上行情景；需客户订单/验收跟进 | 中 | 行业景气不能直接替代 KLIC 可确认收入 |
+| 极度乐观 | Ball、TCB、APS、Advanced Dispense 和 future hybrid 同时突破，收入和利润率非线性上修 | AI/HBM/CoWoS 需求强，TCB 理论产能有上限指引 | 任一核心环节缺 A/B 级订单证据；4 亿美元 TCB 能力不是已确认收入；hybrid bonding 仍早期 | 下移 | 乐观上限加附录跟踪；不作为当前 NTM 主情景 | 低到中 | future hybrid 缺证据只移出 NTM，不再重复压低 TCB 现有业务 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入更可能落在 11.5-13.0 亿美元，明显高于 TTM，但增长质量取决于 Advanced Solutions 能否从 2448 万美元/季提升到 5000 万美元/季以上并开始吸收 R&D，而不是只靠 Ball Bonding 的周期高点。
+- NTM 收入结论：Ball Bonding 是收入下限和当前最大引擎；Advanced Solutions/TCB 是上修弹性；APS 提供服务化质量；Wedge 和 Advanced Dispense 对 NTM 总收入影响小但可改善组合。不能把 TCB 4 亿美元产能视作已确认收入，也不能把 hybrid bonding 行业 TAM 放入基准。
+- 利润/现金流结论：基准毛利率 49%-52%、经营利润率 16%-20%较合理；乐观需要 Advanced Solutions 规模化、Ball 高利用率、APS 高毛利和费用率下降同时发生。现金流短期最重要，H1 经营现金流低于净利润说明增长正在占用应收和库存。
+- 主要传导瓶颈：需求池充足不等于 KLIC 收入。真正瓶颈是客户 POR、订单、交付、安装、验收、收入确认和回款。TCB 竞争格局强，KLIC 必须用订单和分部收入证明从“可参与”到“可确认收入”。
+- 乐观情景成立条件：FY2026 Q3 实际收入接近或高于 3.30 亿美元；Q4/FY2027 Q1 指引不掉速；Advanced Solutions 单季收入升至 5000-7000 万美元；TCB 重复订单或客户数量披露增加；经营现金流随净利润改善。
+- 极度乐观情景成立条件：TCB 年系统销售能力接近满产且需要继续扩产；KLIC 获得一个或多个 HBM4/AI ASIC/C2W/C2S 明确 POR；Ball Bonding 维持 1.8 亿美元/季以上强度；Advanced Solutions 经营利润率明显转正；APS 服务和备件同步放大，现金转换没有恶化。
+- 悲观情景触发条件：FY2026 Q3 低于 2.90 亿美元或 Q4 指引下修；Advanced Solutions 仍在 2000-3000 万美元/季徘徊；Ball 快速回落至 1.0 亿美元/季以下；应收、库存继续上升而经营现金流不跟随净利；竞争者连续披露 TCB/HB 订单而 KLIC 未披露自身进展。
+- 后续跟踪数据：FY2026 Q3 实际收入和 Q4 指引；Advanced Solutions revenue、gross margin、operating income；TCB customer count、repeat orders、产能利用率；Ball Bonding 收入持续性；APS 与装机服务增速；经营现金流、库存和应收账款；前三大客户占比和地区集中度；ASMPT/BESI/SUSS/Onto/Camtek 等先进封装设备订单。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新正式财报为 FY2026 Q2，季度截至 2026-04-04，公告日 2026-05-06，10-Q 日期 2026-05-07；本报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Kulicke & Soffa FY2026 Q2 results，2026-05-06：https://investor.kns.com/2026-05-06-Kulicke-Soffa-Reports-Second-Quarter-2026-Results
+  - KLIC FY2026 Q2 10-Q，SEC，2026-05-07：https://www.sec.gov/Archives/edgar/data/56978/000005697826000020/klic-20260404.htm
+  - Kulicke & Soffa Expands Memory Solutions Portfolio，2026-03-24：https://investor.kns.com/2026-03-24-Kulicke-Soffa-Expands-Memory-Solutions-Portfolio
+  - Kulicke & Soffa Expands Fluxless Thermo-Compression Customer Base，2024-11-13：https://investor.kns.com/2024-11-13-Kulicke-Soffa-Expands-Fluxless-Thermo-Compression-Customer-Base
+  - Kulicke & Soffa Unveils ACELON，2025-09-09：https://investor.kns.com/2025-09-09-Kulicke-Soffa-Unveils-ACELON-TM-A-Revolutionary-High-Performance-Dispenser-for-Advanced-Manufacturing-Applications
+  - Kulicke & Soffa Launches ASTERION-TW，2026-03-24：https://investor.kns.com/2026-03-24-Kulicke-Soffa-Launches-ASTERION-TM-TW-Innovative-Ultrasonic-System-Expands-Power-Assembly-Portfolio
+- 项目内公司资料：
+  - `公司调研/封测_检测_计量_光罩/KLIC_Kulicke Soffa_公司调研_2026-06-11.md`
+- 项目内行业资料：
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 不是主口径，但可作为短期校准：H1 收入 4.422 亿美元，Q3 指引中点 3.10 亿美元，若 Q4 维持高 run-rate，FY2026 全年可显著高于 FY2025。
+  - FY2027 不是主口径，但决定乐观/极度乐观是否延续：关键是 TCB 产能利用率、客户 POR、Advanced Solutions operating margin 和 Ball 是否从周期高位正常化。
+  - 远期期权包括 Future Hybrid Bonding、CPO/optical chiplet 相关键合、advanced dispense 进入 AI 封装关键流程；这些没有足够 NTM A/B 级证据，已从基准收入中排除。
+- 主要来源：
+  - 公司官方披露：FY2026 Q2 results、FY2026 Q2 10-Q、Memory Solutions Portfolio、FTC/TCB customer base、ACELON、ASTERION-TW。
+  - 项目内行业资料：先进封装设备与混合键合、AI 芯片先进封装、HBM 与高带宽内存。
+  - 本报告所有 NTM 收入和利润情景为基于上述事实的经营模型估算；公司未披露 backlog、TCB 子项收入、客户订单金额、取消率或标准 EBITDA 指引，相关字段均按证据等级折扣处理。

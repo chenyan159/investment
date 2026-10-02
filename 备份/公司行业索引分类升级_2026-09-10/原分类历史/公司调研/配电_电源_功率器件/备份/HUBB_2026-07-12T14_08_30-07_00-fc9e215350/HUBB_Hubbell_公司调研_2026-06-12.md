@@ -1,0 +1,385 @@
+# Hubbell（HUBB）公司调研：AI数据中心“从电网到机柜”的电力连接与模块化配电受益者
+
+报告日期：2026-06-12  
+行情快照：2026-06-12 20:19 UTC（美股盘中）  
+本地资料范围：仅使用 `基本面/行业调研/` 下的相关 AI 数据中心、电力接入、开关设备、PDU、母线槽、导管桥架和产业背景资料；未读取或引用 `特征量化/`，未继承同目录旧 HUBB 报告。  
+核心结论：Hubbell 不是 AI 芯片公司，也不是服务器/光模块公司；它是北美电网 T&D、变电站、数据中心后表配电和高可靠连接件的“time-to-power”供应商。AI 数据中心对它的影响不体现在 GPU 单价，而体现在更高 MW、更高 rack 功率密度、更急的变电站和机柜供电交付窗口。
+
+## 一、结论先行
+
+1. **投资人心中的 Hubbell：高质量、偏北美、现金流强、估值不便宜的电气基础设施复合器。** 2025 年收入 `$5.845B`，Utility Solutions `$3.672B`（约 `62.8%`），Electrical Solutions `$2.172B`（约 `37.2%`）。公司在 S&P 500 内，市场通常把它看作 Eaton、Schneider、nVent、Legrand、Powell、GE Vernova、Siemens/ABB/Hitachi 等电气设备链条中的北美高 ROIC 细分平台，而不是纯周期工业品。
+2. **AI 数据中心暴露正在从“叙事”变成订单和收入。** 2026Q1 Electrical Solutions 数据中心市场销售约 `+40%`，公司把 2026 全年数据中心市场增长展望上修到 `25%+`；Utility Solutions 里的 Grid Infrastructure 2026Q1 有机增长约 `12%`，由输电、变电站、配网、load growth 和数据中心互联驱动。
+3. **Hubbell 的 AI 暴露分两层：**  
+   - `前表/电网侧`：765kV/345kV 输电、变电站、T&D 连接件、绝缘子、避雷器、开关、保护控制、控制/继电器面板和 DMC Power swage 连接系统。  
+   - `后表/数据中心侧`：PowerGain 高安培机柜供电、rack PDU、modular power units、RPP-to-server 连接、模块化配电 skid、机柜/线缆管理、接地、线缆固定和 enclosure。
+4. **2026 指引强度明显上修。** 2026Q1 后，公司把全年总销售增长上调到 `8%-11%`、有机增长 `6%-9%`，GAAP EPS `$17.45-$18.00`，调整后 EPS `$19.30-$19.85`，自由现金流转换率 `>=90%` 调整后净利润。
+5. **财务健康，但 NSI 交易会让杠杆阶段性升高。** 2026Q1 末现金+投资 `$616.7M`，总债务 `$2.573B`，净债务 `$1.956B`，净债务/总资本 `31%`，TTM 调整后 EBITDA 约 `$1.45B`，净债务/EBITDA 约 `1.35x`。若 2026 年中完成 `$3.0B` NSI 收购，短期净杠杆可能升至约 `2.6-3.0x`，但 NSI 本身约 `$570M` 2026 收入、约 `$194M` EBITDA 口径（交易价约 `15.5x 2026E EBITDA`）可部分吸收。
+6. **最值得跟踪的产品不是普通 wiring device，而是三组高增长/高紧缺线索：**  
+   - DMC Power + 传统 Hubbell T&D 连接件：高压变电站、输电和数据中心互联的高毛利连接系统。  
+   - Systems Control：控制/继电器面板与 turnkey substation control buildings。  
+   - PowerGain / rack PDU / modular power distribution skids：AI 数据中心高密度 rack 供电的后表系统。
+
+## 二、整体业务、产业链位置与近三年重大变动
+
+### 2.1 公司定位
+
+Hubbell 是一家 1888 年成立的美国电气与公用事业解决方案制造商。公司产品处在电力基础设施链的中下游：从公用事业输电、配电、变电站，到建筑、工厂、数据中心和通信设施内部的配电、连接、保护、布线和接地。
+
+| 产业链层级 | Hubbell 位置 | 关键产品 | AI 数据中心相关性 |
+|---|---:|---|---|
+| 电网/utility interconnection | 强 | T&D 连接件、绝缘子、避雷器、cutout、switch、bushing、enclosure、substation connectors | 数据中心园区上电、变电站扩容、765kV/345kV 输电 |
+| 变电站与保护控制 | 强，Systems Control 后增强 | 控制/继电器面板、turnkey control building、substation protection/control | 100MW+ AI 园区需要更快工程化、测试和调试 |
+| 数据中心后表配电 | 中强，正在放大 | PowerGain、rack PDU、modular power units、modular power distribution skids、RPP-to-server 连接 | 机柜功率密度从传统 `5-20kW/rack` 升向 `60-160kW/rack`，再到 2027 的 `200kW+` |
+| 机柜、线缆、接地和保护 | 中 | racks/cabinets、basket tray、grounding/bonding、cable cleats、wire management、enclosures | 收入单价不如电力主设备，但 attach 率高、交付确定性强 |
+| AI 芯片/服务器/光模块 | 无直接产品 | 无 GPU、ASIC、HBM、光模块、switch ASIC | 只通过电力和物理基础设施间接受益 |
+
+### 2.2 两大业务分部
+
+| 分部 | 2025 收入 | 收入占比 | 业务内容 | 2026 主要驱动 |
+|---|---:|---:|---|---|
+| Utility Solutions（HUS） | `$3.672B` | `62.8%` | 让电网“conduct / communicate / control energy”：T&D components、smart meters、communications、protection and control devices | Grid Infrastructure、substation/transmission、DMC、Systems Control、utility load growth、数据中心互联 |
+| Electrical Solutions（HES） | `$2.172B` | `37.2%` | wiring devices、rough-in electrical、connectors、grounding、enclosures、power distribution、harsh/hazardous products | 数据中心、light industrial、PowerGain、modular power distribution skids、NSI 交易后的 fittings/connectors/wire management |
+
+### 2.3 最近三年重大业务变动、收购和组合调整
+
+| 日期 | 事件 | 金额/规模 | 业务含义 | 对 AI/电力链的影响 |
+|---|---:|---:|---|---|
+| 2023-10 宣布，2023-12 完成 | 收购 Systems Control | `$1.1B`，2024E 销售约 `$400M`，约 `12x` 2024E EBITDA | 补强 substation control and relay panels、turnkey substation control buildings | 直接进入变电站控制与预制建筑，提升 AI 园区电力 block 的交付能力 |
+| 2023Q4 | 收购 Balestro | 约 `$87M` | 巴西/拉美电力 utility arrester / insulator 等 | 增加受限 T&D 产能和区域产品线 |
+| 2024 | 出售/退出 residential lighting 相关业务 | 2024Q1 披露处置损失 | 降低低增长、低战略相关业务 | 组合更集中在 utility/electrification/data center |
+| 2025Q1 | 收购 Ventev | 约 `$73M` | wireless network power/protect/connect ecosystem | 与网络基础设施、通信和部分数据中心/边缘场景相关 |
+| 2025Q3 | 收购 Nicor | 约 `$56M` | water metering endpoint/AMI network 相关产品 | 更偏 AMI/utility edge，当前不是 AI 主线 |
+| 2025-08 宣布，2025-10 完成 | 收购 DMC Power | `$825M`；2026E 收入约 `$130M`、EBITDA 约 `$60M` | 高压输电、配电、变电站和工业项目连接系统；核心是 swage connectors + 360 度径向压接工具 | 数据中心互联、变电站扩建、输电线升级直接受益；高毛利、强认证、订单支持扩产 |
+| 2026-05 宣布，预计 2026 年中完成 | 拟收购 NSI Industries | `$3.0B`；2026E 收入约 `$570M`，交易价约 `15.5x 2026E EBITDA` | electrical fittings、connectors、components、wire management，品牌包括 Bridgeport、Polaris、Tork | 补强 HES 在 light industrial、datacenter、network infrastructure 的渠道和产品深度；杠杆阶段性升高 |
+
+判断：Hubbell 的转型不是从传统工业转成“AI 公司”，而是把资本配置持续集中到 `utility T&D + substation + datacenter + light industrial`。它用收购把原来偏分散的电气组件业务升级为可向 utility、EPC、hyperscaler/colo、electrical contractor 提供更完整物料包的供应商。
+
+## 三、估值快照与资产负债表
+
+### 3.1 市场和估值指标
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | `$469.32` | 2026-06-12 20:19 UTC | web finance 快照，美股盘中 |
+| 市值 | `$24.80B` | 2026-06-12 20:19 UTC | web finance 快照 |
+| Trailing PE | `27.74x` | 2026-06-12 20:19 UTC | web finance 快照，TTM EPS 约 `$16.92` |
+| Forward PE（调整后 EPS） | `24.0x` | 价格 / 2026 调整后 EPS 指引中点 `$19.575` | 反映公司调整后利润口径 |
+| Forward PE（GAAP EPS） | `26.5x` | 价格 / 2026 GAAP EPS 指引中点 `$17.725` | 收购摊销和交易成本不剔除 |
+| TTM P/S | `4.14x` | 市值 / 2025Q2-2026Q1 收入 `$5.996B` | TTM 收入由最近 4 个季度相加 |
+| 最新季度收入增速 | `+11.1%`，有机 `+8.2%` | 2026Q1 | M&A `+2.3%`，外汇 `+0.6%` |
+| 最新季度毛利率 | `33.3%` | 2026Q1 | `$505.3M / $1.5167B` |
+| 最新季度净利率 | `12.0%` | 2026Q1 | Hubbell attributable NI `$181.8M` |
+| TTM 毛利率 | `35.5%` | 2025Q2-2026Q1 | 模型相加 |
+| TTM 净利率 | `15.1%` | 2025Q2-2026Q1 | 模型相加 |
+
+估值判断：HUBB 已经不是便宜的电气周期股。`24x` 调整后 forward PE 反映市场给了“电网 + 数据中心 + 高 ROIC 并购平台”的质量溢价。若数据中心订单继续落地、NSI 协同兑现、DMC/Systems Control 扩产成功，估值可维持；若数据中心 CapEx 延迟或高毛利 T&D 转弱，回撤空间不小。
+
+### 3.2 资产负债表健康程度
+
+| 指标 | 2026Q1 | 判断 |
+|---|---:|---|
+| 现金及等价物 | `$501.6M` | 现金充足 |
+| 现金+短投+长期投资 | `$616.7M` | 公司用于 net debt 计算的 cash and investments |
+| 流动资产 | `$2.802B` | 应收和库存随增长上升 |
+| 流动负债 | `$1.775B` | 流动比率约 `1.58x` |
+| 总资产 | `$8.418B` | Goodwill `$3.060B`、无形资产 `$1.366B`，并购痕迹重 |
+| 总债务 | `$2.573B` | 2025Q4 `$2.325B`，DMC 后短债和利息增加 |
+| 净债务 | `$1.956B` | 净债务/总资本 `31%` |
+| TTM 调整后 EBITDA | 约 `$1.453B` | FY2025 `$1.4149B` + 2026Q1 `$324.0M` - 2025Q1 `$285.7M` |
+| 净债务/调整后 EBITDA | 约 `1.35x` | 健康 |
+| 2026 自由现金流口径 | `>=90%` 调整后净利润 | 管理层指引 |
+
+财务结论：截至 2026Q1，Hubbell 资产负债表健康，现金流质量强，足以支持内生扩产、小中型 bolt-on 和回购。主要新风险来自 NSI：如果 `$3.0B` 交易 2026 年中完成，债务会明显增加，短期利息负担会抵消一部分 EPS 增厚。因为 NSI 的收入、渠道和 margin profile 较好，风险不是偿债能力，而是收购价格高、协同兑现和整合节奏。
+
+## 四、最近五个季度财报：收入、利润率、订单和 AI 数据中心暴露
+
+Hubbell 不披露正式 backlog。下表中 `Bookings/Backlog/Lead time` 为根据管理层 commentary、book-to-bill、订单描述和行业交期推断；不是公司正式 backlog 数字。
+
+| 财报季度 | 披露日期 | 总收入 / 增速 | 毛利率 / 净利率 | Utility Solutions | Electrical Solutions | 订单、交期、取消率推断 | AI 数据中心相关收入占比（估算） |
+|---|---:|---:|---:|---|---|---|---|
+| 2026Q1 | 2026-04-30 | `$1.5167B`，总增 `+11.1%`，有机 `+8.2%`；调整后 EPS `$3.93` | GM `33.3%`；净利率 `12.0%`；调整后 EBITDA `$324M` | 收入 `$948.9M`，`+10.7%`；有机 `+6.8%`；Grid Infrastructure `+12%`，Grid Automation `-7%`；调整后 OPM `21.8%` | 收入 `$567.8M`，`+11.8%`；有机 `+10.6%`；调整后 OPM `16.4%` | transcript 提到短周期和长周期项目 order rate 约 `1.2x book-to-bill`；DMC 和 Systems Control 订单强、扩产是约束；价格进入 backlog 需 `30-60` 天 | 公司未披露；HES 数据中心销售约 `+40%`，全年数据中心展望 `>25%`；估算当季直接/间接 AI DC 约 `13%-17%` 收入 |
+| 2025Q4 | 2026-02-03 | `$1.4927B`，总增 `+11.9%`，有机 `+8.9%`；调整后 EPS `$4.73` | GM `35.2%`；净利率 `15.0%`；调整后 EBITDA `$373M` | 收入 `$935.9M`，`+10%`；有机 `+6.7%`；Grid Infrastructure `+18%`，Grid Automation `-8%`；调整后 OPM `25.1%` | 收入 `$556.8M`，`+14%`；有机 `+12.7%`；调整后 OPM `20.5%` | Q4 自由现金流 `$388.8M`；数据中心项目、load growth、aging infrastructure 拉动前表和后表需求；DMC 10/1 并表后贡献 M&A | 估算 `12%-16%`；HES 数据中心和 Utility T&D/data center interconnect 同时强 |
+| 2025Q3 | 2025-10-28 | `$1.5024B`，总增 `+4.1%`，有机 `+3.2%`；调整后 EPS `$5.17` | GM `36.2%`；净利率 `17.0%` | 收入 `$943.8M`，`+1%`；有机约 `+1%`；Grid Infrastructure `+9%`，Grid Automation `-18%`；调整后 OPM `25.7%` | 收入 `$558.6M`，`+10%`；有机 `+8%`；调整后 OPM `20.8%` | DMC 收购于 2025-10-01 完成，Q3 未并表；电网侧 transmission/substation 强，AMI/米表拖累 | 估算 `10%-14%`；HES 数据中心强，DMC 尚未贡献 |
+| 2025Q2 | 2025-07-29 | `$1.4843B`，总增 `+2.2%`，有机 `+2.0%`；调整后 EPS `$4.93` | GM `37.2%`；净利率 `16.5%`；FIFO 会计变更降低 COGS `$29M` | 收入 `$935.5M`，`+1%`；有机 `+1.1%`；Grid Infrastructure `+7%`，Grid Automation `-13%`；调整后 OPM `25.5%` | 收入 `$548.8M`，`+4%`；有机 `+3.5%-4%`；调整后 OPM `22.5%` | Grid Infrastructure 和 Electrical Solutions 均强；数据中心是 HES 有机增长主因；AMI 弱 | 估算 `9%-12%`；AI/DC 主要在 HES 和 T&D 订单前置 |
+| 2025Q1 | 2025-05-01 | `$1.3652B`，总增 `-2.4%`，有机 `-0.6%`；调整后 EPS `$3.50` | GM `33.0%`；净利率 `12.4%` | 收入 `$857.1M`，`-4%`；有机 `-3.7%`；Grid Infrastructure `+1%`，Grid Automation `-15%`；调整后 OPM `21.0%` | 收入 `$508.1M`，`+1%`；有机 `+4.8%-5%`；调整后 OPM `16.5%` | Electrical 数据中心已是增长主因；Utility orders 强但 AMI/meter 下行压制报表 | 估算 `7%-10%`；当季仍是早期 ramp |
+
+### 4.1 从五个季度看出的业务拐点
+
+- **2025Q1-Q3：HES 数据中心先跑，HUS 被 Grid Automation/AMI 拖累。** 2025Q1 HES 有机约 `+5%`，Q2 `+4%`，Q3 `+8%`，主要来自 data center / light industrial；但 HUS 的 Grid Automation `-15%/-13%/-18%` 把 Utility 的总增速压住。
+- **2025Q4-2026Q1：Grid Infrastructure 与 HES 数据中心同步上行。** 2025Q4 HES 有机 `+12.7%`、HUS Grid Infrastructure `+18%`；2026Q1 HES 数据中心 `+40%`，Grid Infrastructure `+12%`。这说明 AI 数据中心不只买机柜 PDU，也在推高前表变电站和输电配网需求。
+- **DMC 从 2025Q4 开始并入，是 2026 HUS 增长和 margin mix 的重要补丁。** DMC 2026E 收入约 `$130M`、EBITDA 约 `$60M`，EBITDA margin 约 `46%`，明显高于 Hubbell 公司平均。管理层称 DMC “meeting and even exceeding” expectations，订单支持，约束在扩产。
+
+## 五、2026 最新指引、业务收入占比和重点产品
+
+### 5.1 2026 指引拆解
+
+| 指标 | 2026Q4/FY2025 初始指引 | 2026Q1 后最新指引 | 变化 |
+|---|---:|---:|---|
+| 总销售增长 | `7%-9%` | `8%-11%` | 上修 1-2 pct |
+| 有机销售增长 | `5%-7%` | `6%-9%` | 上修 1-2 pct |
+| GAAP diluted EPS | `$17.30-$18.00` | `$17.45-$18.00` | 下限上修 |
+| 调整后 EPS | `$19.15-$19.85` | `$19.30-$19.85` | 下限上修 |
+| 2026 收入模型 | `$6.25-$6.37B` | `$6.31-$6.49B` | 以 2025 收入 `$5.8446B` 为基数，不含 NSI 全年并表 |
+| 自由现金流转换 | `>=90%` 调整后净利润 | `>=90%` 调整后净利润 | 不变 |
+| 有机增长中价格贡献 | 未明确 | 约 `3 pct` price，其余为 volume | 金属通胀和二季度涨价 |
+| 数据中心增长 | 强劲 | HES 数据中心全年 `>25%` | 可见度提高 |
+
+### 5.2 当前业务收入占比与增长重心
+
+| 业务/产品群 | 2025 收入或 2026 运行率 | 2026 增长判断 | AI/DC 重要性 | 说明 |
+|---|---:|---:|---:|---|
+| Utility Solutions 整体 | 2025 `$3.672B`；2026Q1 `$948.9M` | 2026 高个位数 organic | 高 | Grid Infrastructure 是主引擎，Grid Automation 仍弱 |
+| Grid Infrastructure/T&D/substation | 估算 2026 run-rate `$2.8-$3.2B` | `+10%-15%`，局部更高 | 很高 | 数据中心、load growth、grid resiliency、765kV transmission |
+| Systems Control | 2024E 销售约 `$400M`；估算 2026 `$470-$550M` | 高个位数到低双位数 | 高 | 控制/继电器面板、turnkey substation control buildings |
+| DMC Power | 2026E 收入约 `$130M` | 受产能约束，`+15%-30%` 潜力 | 高 | swage connectors/tooling，EBITDA 约 `$60M` |
+| Electrical Solutions 整体 | 2025 `$2.172B`；2026Q1 `$567.8M` | 中高个位数到低双位数 | 高 | 数据中心和 light industrial 主导 |
+| HES 数据中心：PowerGain / rack PDU / modular skids / RPP-to-server | 估算 2026 `$550-$750M` | `>25%`，2026Q1 数据中心约 `+40%` | 很高 | 当前最直接 AI DC 暴露 |
+| 机柜、光纤/铜缆结构化布线、接地、桥架、enclosure | 估算 2026 DC slice `$250-$450M` | `+15%-30%` | 中高 | attach 率高，但单价/毛利分化 |
+| NSI（待收购） | 2026E 收入 `$570M` | 并表后增强 HES | 中高 | fittings/connectors/wire management，datacenter/network infrastructure 交叉销售 |
+
+### 5.3 重点产品和型号/产品线
+
+| 产品线 | 具体产品/型号线索 | 业务归属 | 为什么重要 |
+|---|---|---|---|
+| PowerGain 高安培机柜供电 | PowerGain flat pin & sleeve connector，如 `HBL4125C250T2`；125A/250VAC、UL-listed、UL 1682；产品线最高 up to `200A` | HES / Wiring Device-Kellems / Premise Wiring | AI 高密 rack 需要更高电流、更小体积、更少硬接线；PowerGain 把 RPP-to-server 连接做成可插拔平台 |
+| PowerGain Rack PDU | basic / monitored / switched；资料称 up to `200A` 和 `115kW per PDU` | HES / Premise Wiring | 与 `60-160kW/rack` AI 机柜直接相关；2027 高密 rack 继续提高 attach |
+| Modular Power Units / modular power distribution skids | RPP-to-MPU-to-rack；PCX/模块化电力 skid 线索 | HES | 缩短数据中心部署周期，管理层明确称 Q1 增长来自 balance-of-system components 和 modular power distribution skids |
+| DMC swage connection system | custom Power Connectors + patented `360° Radial Swage Tool` | HUS / DMC Power | 变电站和输电连接件高可靠、高毛利；减少现场施工时间，适合数据中心互联赶工 |
+| T&D connectors / arresters / insulators / switches | Anderson/Fargo/BURNDY 等品牌连接件；arresters、insulators、cutouts、switches、bushings | HUS | 765kV/345kV transmission 和 substation buildout 的基础物料 |
+| Systems Control control/relay panels | substation control and relay panels；turnkey substation control buildings | HUS | 变电站保护、控制和工厂预制化；客户换供应商成本高 |
+| Grounding/bonding/cable cleats/wire management | BURNDY grounding、Hubbell cable cleats、basket tray、grounding/bonding、wire management | HES / NSI 未来补强 | 短路力、可靠性、维护和标准合规；单品小但每个数据中心都有 |
+| Acme / electrical transformers for PDU | data center PDU transformers、dry-type transformer | HES | 属于数据中心低压/配电环节，重要但不是公司披露的最大增长线 |
+
+### 5.4 明确跳过或低优先级业务
+
+以下业务不是本次 AI 数据中心投资主线，报告中不展开建模：
+
+- **Grid Automation/AMI/meters：** 2025-2026 多个季度下滑（2026Q1 `-7%`），Aclara360 有长期软件价值，但当前不是主要增长引擎。
+- **住宅、普通 commercial wiring device、低端 wall plate / outlet：** 现金流稳定但增速和 AI 相关性低。
+- **Harsh/hazardous oil & gas / mining 产品：** 具备利润贡献，但与 AI 数据中心无直接映射。
+- **普通桥架、普通线缆管理、commodity enclosure：** 需求随 MW 放量增长，但差异化和溢价弱，除非进入 high-density / mission-critical / certified 产品包。
+- **AI 芯片、HBM、光模块、switch ASIC：** Hubbell 不生产这些；只能用 per rack / per MW 的供电内容量间接映射。
+
+## 六、高增长/关键业务：当前贡献、技术重要性、供需紧张和定价权
+
+评分口径：`5` 为最高；收入贡献为 2026 年模型估算，不是公司披露。
+
+| 关键业务/产品 | 2026 公司收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Grid Infrastructure/T&D/substation components（含传统 Hubbell 连接件、insulator、arrester、switch） | `$2.8-$3.2B` 全业务；其中 AI/load-growth 相关 `$350-$650M` | `+10%-15%`，Grid Infrastructure Q1 `+12%` | 5 | 5 | 4 | 4 | 是数据中心“可上电 MW”的前置瓶颈，Hubbell 内容随 765kV/345kV 和变电站扩建增加 |
+| Systems Control substation control/relay panels/buildings | `$470-$550M` | 高个位数/低双位数 | 5 | 5 | 4 | 4 | AI 园区、utility substation 和预制控制建筑高度相关；客户认证和工程能力强 |
+| DMC Power swage connectors/tooling | `$130-$160M` | `+15%-30%` 潜力，产能约束 | 5 | 5 | 5 | 5 | 小而高毛利；2026E EBITDA `$60M` 对 `$130M` 收入口径非常强 |
+| HES 数据中心 balance-of-system / modular power distribution skids | `$350-$500M` | Q1 数据中心 `+40%`；全年 `>25%` | 5 | 5 | 4 | 4 | 直接跟 hyperscaler/colo buildout，管理层明确点名 |
+| PowerGain / rack PDU / MPU / RPP-to-server | `$200-$300M` | 早期高增，估算 `+30%-60%` | 4 | 4 | 3 | 4 | 产品新，UL/第三方测试、200A/115kW PDU 有差异化；需验证批量客户采用 |
+| Grounding/bonding/cable cleats/wire management/enclosures | `$250-$450M` DC slice | `+15%-30%` | 3 | 4 | 3 | 3 | attach 率高，单价小；NSI 若完成可放大渠道和产品深度 |
+| NSI（待收购）fittings/connectors/wire management | `$570M` 2026E（未并表/部分并表取决于 closing） | 高增长 | 3 | 3 | 3 | 3 | 战略补强 HES；不是单一 AI 产品，但 datacenter/network infrastructure 交叉销售重要 |
+
+## 七、一年后情景预测：收入、增速、重要性与供需
+
+### 7.1 2027 年收入贡献情景
+
+| 关键业务/产品 | 基准情景：2027 收入贡献 | 乐观情景 | 极度乐观情景 | 主要驱动 |
+|---|---:|---:|---:|---|
+| Grid Infrastructure/T&D/substation components | `$3.2-$3.5B`，增速 `+10%-13%` | `$3.6-$3.9B`，`+18%-23%` | `$4.1-$4.5B`，`+30%+` | 765kV/345kV、变电站互联、utility CapEx 上修、数据中心 power demand |
+| Systems Control | `$550-$650M`，`+10%-18%` | `$700-$800M`，`+25%-35%` | `$850M-$1.0B`，`+50%+` | turnkey control building 标准化、hyperscaler/utility repeat block、扩产 |
+| DMC Power | `$160-$190M`，`+20%-30%` | `$220-$260M`，`+50%-70%` | `$300-$380M`，`2x+` | swage 采用率、Carson/Olive Branch 扩产、新工具/连接件推出 |
+| HES 数据中心 modular power distribution skids | `$480-$650M`，`+25%-35%` | `$700-$900M`，`+50%-70%` | `$1.0-$1.3B`，`2x` | 数据中心 order activity 持续 robust，客户把模块化 skid 写入标准 RFP |
+| PowerGain / rack PDU / MPU | `$280-$420M`，`+35%-50%` | `$500-$700M`，`+80%-120%` | `$800M-$1.1B`，`3x+` | 200A/115kW PDU 进入更多 AI rack，2027 200kW+ rack 提高 ASP |
+| Grounding/bonding/cable cleats/wire management/enclosures | `$400-$650M`（含 NSI 部分协同） | `$750M-$1.0B` | `$1.2-$1.5B` | MW 放量、NSI 完成、渠道交叉销售 |
+
+### 7.2 一年后评分变化
+
+| 关键业务/产品 | 情景 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 解释 |
+|---|---|---:|---:|---:|---:|---|
+| Grid Infrastructure/T&D | 基准 | 5 | 5 | 4 | 4 | 电网接入仍是瓶颈，供应链局部缓解但客户白名单强 |
+| Grid Infrastructure/T&D | 乐观 | 5 | 5 | 5 | 4 | 765kV/大型变电站和 data center interconnect 继续拉长交期 |
+| Grid Infrastructure/T&D | 极度乐观 | 5 | 5 | 5 | 5 | 大客户抢 2028 产能，短交期和 certified package 溢价上升 |
+| Systems Control | 基准 | 5 | 5 | 4 | 4 | 预制控制建筑和保护控制是调试关键 |
+| Systems Control | 乐观 | 5 | 5 | 5 | 4 | 变电站批量复制，提高工厂预制化价值 |
+| Systems Control | 极度乐观 | 5 | 5 | 5 | 5 | hyperscaler/utility 标准 block 锁定少数供应商 |
+| DMC Power | 基准 | 5 | 5 | 5 | 5 | 高压连接件质量/工具链认证壁垒强，产能约束 |
+| DMC Power | 乐观 | 5 | 5 | 5 | 5 | swage 采用率提升，项目赶工更偏好快速安装 |
+| DMC Power | 极度乐观 | 5 | 5 | 5 | 5 | 若成为更多 utility 标准方法，新增产能被快速吃掉 |
+| HES modular skids | 基准 | 5 | 5 | 4 | 4 | 数据中心希望减少现场工期 |
+| HES modular skids | 乐观 | 5 | 5 | 5 | 4 | 300MW+ campus 需要 repeatable power blocks |
+| HES modular skids | 极度乐观 | 5 | 5 | 5 | 5 | 模块化配电成为头部客户标准 BOM |
+| PowerGain/rack PDU/MPU | 基准 | 4 | 4 | 3 | 4 | 新产品进入更多高密 rack，但还需规模验证 |
+| PowerGain/rack PDU/MPU | 乐观 | 5 | 5 | 4 | 4 | 100-200kW rack 普及，200A 连接/PDU ASP 提升 |
+| PowerGain/rack PDU/MPU | 极度乐观 | 5 | 5 | 5 | 5 | 500kW rack 和 AC/DC 连接标准提前切换，早期 certified product 稀缺 |
+
+## 八、BOM、单位内容量和价格传导链
+
+### 8.1 从 100MW AI 园区看 Hubbell 内容量
+
+本地行业资料给出的 AI 园区电力链路为：`输电/配网 interconnection -> 高压开关站 -> 主变/配变 -> 中压开关柜/eHouse -> UPS/BESS/发电/ATS -> 低压配电/母线/PDU -> rack power shelf/BBU/800VDC sidecar -> GPU/ASIC rack`。Hubbell 不吃完整电力链条，而吃其中连接、保护、控制、配电和机柜供电的一部分。
+
+| BOM 环节（100MW IT load，PUE 约 1.2） | 全行业成本池 | Hubbell 可服务内容 | Hubbell 内容量估算 |
+|---|---:|---|---:|
+| 输电线/变电站互联/T&D 物料 | `$20-$60M+`，视 interconnection 距离和电压等级 | 连接件、绝缘子、避雷器、switch、cutout、bushing、substation connectors、DMC swage | `$2-$8M`，若 Hubbell/DMC/Systems Control 被纳入标准包可更高 |
+| 变电站控制/继电器面板/控制建筑 | `$10-$30M` | Systems Control control/relay panels、turnkey control buildings | `$5-$18M` |
+| UPS/ATS/busway/PDU/低压配电 | `$35-$90M` | modular power distribution skids、PowerGain、rack PDU、MPU、RPP-to-server、power connectors | `$5-$20M`，极端高密和模块化采购可到 `$25M+` |
+| 线缆、桥架、接地、防雷、线缆固定 | `$8-$25M` | BURNDY grounding/bonding、basket tray、cable cleats、wire management、enclosures | `$2-$8M` |
+| 机柜/结构化布线/光纤和铜缆管理 | `$5-$20M` | racks/cabinets、fiber/copper panels、cable management | `$1-$5M` |
+| 合计 Hubbell 内容量 | - | 主要在电网侧和后表配电/连接 | 基准 `$15-$45M / 100MW`，即 `$150k-$450k/MW`；若包含大型 Systems Control / modular skid 标准化订单，乐观 `$500k-$800k/MW` |
+
+### 8.2 每 MW / 每 rack / 每 GPU / 每 optical port 内容量
+
+| 单位 | Hubbell 当前真实可映射内容 | 基准内容量 | 乐观内容量 | 极度乐观内容量 |
+|---|---|---:|---:|---:|
+| 每 MW IT load | T&D/substation connectors + control panels + rack PDU/PowerGain + grounding/wire management | `$150k-$450k/MW` | `$450k-$800k/MW` | `$800k-$1.2M/MW`，需 Hubbell 拿到更多 modular skid / substation control package |
+| 每 100kW rack | PowerGain/rack PDU/MPU、connector、grounding、cable management | `$3k-$12k/rack` | `$12k-$25k/rack` | `$25k-$50k/rack`，前提是 Hubbell 进入高密 rack 标准 BOM |
+| 每 200kW rack | 同上，电流和冗余要求更高 | `$8k-$25k/rack` | `$25k-$55k/rack` | `$55k-$100k/rack`，若含模块化上方/下方 MPU 和高端 monitored/switched PDU |
+| 每 GPU（以 72-GPU rack） | Hubbell 不做 GPU；只摊销 rack-side power/grounding/connector | `$40-$170/GPU` | `$170-$450/GPU` | `$450-$1,400/GPU`，仅在高密 rack + Hubbell 高内容量组合下成立 |
+| 每 optical port | Hubbell 不做 800G/1.6T 光模块；只做 fiber/copper patch、tray、cabinet、management | `$2-$15/port` | `$15-$40/port` | `$40-$80/port`，更多来自结构化布线和机柜管理，不是 optics value pool |
+
+关键边界：如果按 GPU 或 optical port 看，Hubbell 内容量很小；如果按 MW、rack、substation package 和 time-to-power 看，Hubbell 内容量才有投资意义。
+
+### 8.3 价格传导链
+
+| 采购链 | 谁下单 | 谁影响规格 | Hubbell 如何定价 | 主要价格风险 |
+|---|---|---|---|---|
+| Utility T&D / substation | utility、EPC、engineering firm | utility 标准、保护/继电器工程、客户白名单 | 长周期项目报价、金属/钢/铝/铜价格传导、expedited delivery、工程变更、service attach | 固定价订单遇到金属上涨；客户预算延迟 |
+| Hyperscaler / colo 数据中心电力包 | hyperscaler/colo、EPC、electrical contractor、power integrator | hyperscaler reference design、UL/ANSI/IEEE、commissioning 团队 | project bid、repeatable block、modular skid、distributor 合同、标准 SKU + custom NRE | 客户双供、降本、技术路线改为 800VDC 或自研/集成 |
+| Rack-side power / PDU / PowerGain | data center operator、rack integrator、electrical contractor | rack density、冗余、UL、cable routing、维护流程 | 200A/115kW PDU、高密 connector、monitored/switched 功能、第三方测试 | 被 Vertiv/Schneider/Legrand/Raritan/Starline/nVent 等替代 |
+| Wire management / grounding / cable cleats | contractor、EPC、data center operator | 短路电流、维护、消防、可靠性、IEC/UL | 认证和可靠性溢价，中低端更 commodity | 铜价、低价替代、施工方偏好 |
+
+管理层在 2026Q1 transcript 中说明，2026 有机增长指引 `6%-9%` 中约 `3 pct` 来自价格，二季度开始实施的价格动作通常需要 `30-60` 天进入 backlog。这对 Hubbell 很关键：在通胀、铜/铝/钢和关税扰动下，价格传导能力是 margin 维持的核心。
+
+## 九、产能能力、供应链采纳和认证阶段
+
+### 9.1 当前产能/采纳/认证
+
+| 产品/业务 | 当前产能能力（美元计，估算） | 供应链采纳 | 认证/门槛 |
+|---|---:|---|---|
+| Grid Infrastructure/T&D | 年化 `$2.8-$3.2B`，扩产中 | utility/T&D 客户基础深，超过 `90%` 销售暴露美国；765kV 项目已有早期 win | utility acceptance、ANSI/IEEE/IEC、客户白名单、短路/温升/机械测试 |
+| Systems Control | 年化 `$470-$550M`，需求好、扩产重要 | 1962 年以来服务 utility，2023 并入 Hubbell；turnkey control building 适合标准化交付 | protection/control engineering、factory acceptance test、utility relay standards |
+| DMC Power | 2026E 收入 `$130M`，EBITDA `$60M`；Carson CA 和 Olive Branch MS 两个制造基地 | swage system 已在 utility 项目使用；管理层称订单支持、产能是约束 | connector/tool qualification、utility approved methods、现场安装培训 |
+| PowerGain / rack PDU / MPU | 早期高增长，估算 `$200-$300M` 量级 | 2026 Data Center World 展示；产品页和资料强调 AI/high-power computing | UL-listed，UL 1682；PowerGain PDF 称 third-party tested，rack PDU up to `200A / 115kW per PDU` |
+| Modular power distribution skids | 估算 `$350-$500M` HES DC 相关中的一部分 | 管理层明确点名 modular power distribution skids 推动 HES 数据中心增长 | factory build、site commissioning、customer reference design、UL/NEC/客户验收 |
+| Grounding/cable cleats/wire management | 估算 DC slice `$250-$450M`；NSI 完成后能力扩大 | BURNDY、Premise Wiring、Wiring Device-Kellems、NSI 品牌渠道 | grounding/bonding、short-circuit restraint、UL/IEC、contractor acceptance |
+
+### 9.2 一年后产能/采纳/认证情景
+
+| 产品/业务 | 基准：2027 状态 | 乐观：2027 状态 | 极度乐观：2027 状态 |
+|---|---|---|---|
+| Grid Infrastructure/T&D | 产能能力 `$3.2-$3.5B`；utility 客户继续增加 765kV/345kV 和 substation PO | `$3.6-$3.9B`；更多客户锁定 2028 产能，lead time 仍长 | `$4.1-$4.5B`；高压传输 + 数据中心互联形成新增 `1 pct+` 公司增长贡献 |
+| Systems Control | `$550-$650M`；更多 turnkey building 标准化 | `$700-$800M`；工厂预制化成为大型园区常规采购 | `$850M-$1.0B`；客户把 substation control building 纳入 repeatable MW block |
+| DMC Power | `$160-$190M`；扩产逐步兑现 | `$220-$260M`；swage 方法被更多 utility/contractor 标准化 | `$300-$380M`；新增设备/工具产线快速吃满，EBITDA 高弹性 |
+| PowerGain / rack PDU / MPU | `$280-$420M`；UL/第三方测试完成，客户导入扩大 | `$500-$700M`；PowerGain 进入多个 hyperscaler/colo 标准 BOM | `$800M-$1.1B`；高密 rack 供电标准提前切换，AC/DC 两类 connector 都放量 |
+| Modular skids | `$480-$650M`；增长继续超过公司平均 | `$700-$900M`；modular power blocks 被写入 RFP | `$1.0-$1.3B`；Hubbell 成为少数可批量交付后表配电 block 的供应商 |
+| Grounding/wire management/NSI | NSI 并表后交叉销售启动 | NSI 与 HES 渠道整合顺利，datacenter/network infrastructure 提速 | NSI 产品成为 Hubbell 数据中心 bundle 的标准附加项 |
+
+## 十、基于订单积压和供给的未来一年增速预测
+
+Hubbell 不披露 backlog，因此本节使用三组代理变量：`book-to-bill/order rate`、`管理层订单描述`、`产能/交期约束`。
+
+### 10.1 订单和供给事实
+
+- 2026Q1 transcript：短周期和长周期项目 order rate 接近 `1.2x book-to-bill`。以当季收入 `$1.5167B` 粗算，若 book-to-bill `1.2x` 适用于总体订单，当季 bookings 约 `$1.82B`，新增未交付需求约 `$0.30B`。这不是正式 backlog，但说明订单流强于出货。
+- HES 数据中心：2026Q1 数据中心市场 `+40%`，订单活动 robust，hyperscaler 和 colocation buildout 加速，公司上修全年数据中心增长到 `>25%`。
+- HUS/DMC/Systems Control：DMC 订单支持扩产，Systems Control 需求类似；管理层称 DMC “meeting and even exceeding” expectations，产能是限制。
+- 行业交期：本地行业资料显示数据中心电力接入、变压器、switchgear、eHouse、UPS/BESS/发电、PDU/busway 是 2026-2027 的硬瓶颈；Hubbell 虽不做完整大型变压器，但它的连接、控制、配电和线缆管理 attach 在同一订单链上。
+
+### 10.2 未来一年公司增速情景
+
+| 情景 | 公司 2027 前 12 个月收入增长 | HUS 增长 | HES 增长 | 关键假设 |
+|---|---:|---:|---:|---|
+| 基准 | `+8%-11%`；若 NSI 完整并表，报表增长更高但需剔除 M&A | `+8%-12%` organic | `+7%-10%` organic | 数据中心 `>20%`，T&D 高个位数，Grid Automation 稳定，DMC 扩产逐步兑现 |
+| 乐观 | `+13%-18%` organic/pro forma 更高 | `+13%-18%` | `+12%-18%` | book-to-bill 维持 `1.15-1.25`，HES 数据中心 `+35%+`，DMC/Systems Control 产能提升 |
+| 极度乐观 | `+22%-30%` organic/pro forma 高于此 | `+20%-30%` | `+25%-40%` | 765kV、substation、modular power skids、PowerGain 同时进入客户标准化采购；电力瓶颈恶化导致短交期溢价 |
+
+### 10.3 取消率/延迟风险
+
+Hubbell 的 AI 数据中心订单取消率预计低于许多纯服务器/NeoCloud 供应链，因为其订单通常对应 utility/EPC/电气承包和已进入建设的物理项目。更现实的风险不是取消，而是：
+
+- utility interconnection / permits / transformer lead time 导致交付窗口后移；
+- hyperscaler/colo 改 reference design，造成部分后表 PDU/connector/skid 重新认证；
+- 铜、铝、钢和关税引发固定价项目 margin 风险；
+- 800VDC 或 rack-level power architecture 变化改变 PowerGain / PDU 形态；
+- NSI 交易整合占用管理层资源并提高利息负担。
+
+## 十一、竞争格局、替代方案和客户替换成本
+
+### 11.1 主要竞争对手
+
+| 领域 | Hubbell 竞争对手 | Hubbell 优势 | 风险 |
+|---|---|---|---|
+| Utility T&D components | Eaton/Cooper、Schneider、Siemens、ABB/Hitachi、GE Vernova、MacLean Power、Preformed Line Products、S&C、G&W Electric | 北美 utility 关系、宽产品线、DMC/Systems Control 补强、认证和服务 | 大型电气巨头系统能力更强；utility 双供常态 |
+| Substation control / relay panels / buildings | Schweitzer Engineering Laboratories、ABB/Hitachi、Siemens、Eaton、Schneider、Powell、区域 panel builder | Systems Control 是专门的 turnkey substation control solutions 资产，工程质量和预制化强 | SEL 等在 protection/relay 生态强；客户可能指定多供应商 |
+| Data center power distribution / PDU | Schneider/APC、Eaton、Vertiv、Legrand/Raritan/Starline、nVent/Enlogic、ABB、Siemens | PowerGain 高安培连接、Hubbell 后表电气组件组合、渠道和电气承包商关系 | Vertiv/Schneider 在数据中心电源系统和服务生态更完整；Legrand/Starline 在 busway/rack PDU 很强 |
+| Cable management / grounding / fittings | nVent/Erico、Atkore、Panduit、Legrand、Leviton、Belden、CommScope、Prysmian/Ellis cable cleats、NSI | BURNDY、Premise Wiring、Wiring Device-Kellems、NSI 待补强 | 低端产品 commodity；施工方和渠道习惯影响大 |
+| Modular power / eHouse / skids | Powell、Eaton、Schneider、Vertiv、Siemens、ABB、private integrators | Hubbell 有 Systems Control、PCX/模块化线索和 HES bundle | 大项目可能由更大型系统集成商主导，Hubbell 成为部件供应商而非主包 |
+
+### 11.2 新产品是否是未来主流
+
+| 新产品/技术 | 是否主流 | 理由 | 替代方案 |
+|---|---|---|---|
+| PowerGain 200A high-amperage connector/rack PDU/MPU | 中高概率成为部分高密 AI 机柜主流组件之一 | 115kW per PDU、200A、small form factor、UL/第三方测试匹配高密 rack 痛点 | Vertiv/Schneider/Legrand/nVent 自有 high-power PDU、hardwired、busway drop、800VDC sidecar |
+| Modular power distribution skids | 高概率成为 100MW+ 园区重要交付模式 | 客户买的是 time-to-power；工厂预制、测试和 repeatable block 可缩短现场工期 | 现场安装低压/中压 switchgear、EPC 自集成、Powell/Eaton/Schneider 模块 |
+| DMC swage connectors/tooling | 高概率提升份额，但不一定垄断 | 减少安装复杂度，适合赶工和高可靠变电站/输电 | 传统 compression/bolted/welded connectors，其他认证连接件 |
+| Systems Control turnkey substation control building | 高概率维持强需求 | 变电站控制和保护是上电瓶颈，客户替换成本高 | 区域 panel builder + relay vendor + EPC 自集成 |
+| 800VDC / ±400VDC sidecar | 方向确定，但 2026 不应算 Hubbell 主收入 | Rubin/MI400/TPU v7 高密 rack 推动 2027-2028 design-in | 传统 AC + PDU/busway、MV UPS、rack BBU、48V/54V power shelf |
+
+### 11.3 客户替换成本
+
+Hubbell 的替换成本不是来自软件 lock-in，而是来自工程认证和交付责任：
+
+- utility T&D 和 substation：utility approved vendor list、材料测试、现场安装方法、工人培训和故障责任使替换成本高；重新认证可能推迟 `6-18` 个月。
+- 数据中心 power distribution：hyperscaler reference design、UL/NEC、commissioning、rack cable routing 和维护 SOP 使产品一旦纳入标准 BOM，后续 repeat block 复用概率高。
+- 低端 wiring/wire management：替换成本较低，更依赖渠道、价格和库存。
+
+## 十二、主要风险与反证指标
+
+| 风险 | 影响 | 需要跟踪的反证指标 |
+|---|---|---|
+| AI 数据中心 CapEx 下修或延迟 | HES 数据中心、modular skids、PowerGain 增速下降 | hyperscaler CapEx guide 下调 `15%+`；colo pre-lease 下降；CoreWeave/Oracle backlog 转化变慢 |
+| Utility interconnection 延迟 | T&D 和 substation 订单收入确认推迟 | PPA/interconnection queue 缩短或项目 cancel；utility CapEx 延后 |
+| Grid Automation/AMI 继续弱 | Utility 总增长被拖累 | Grid Automation 连续季度 `-10%+`，Aclara/Ami 项目缺乏回归 |
+| 金属/关税/固定价合同 | margin 压力 | price/cost/productivity 不能保持 neutral；价格进入 backlog 超过 `60` 天 |
+| NSI 高价并购整合 | 杠杆和 EPS 稀释风险 | closing 延后、协同低于预期、利息费用高于计划、HES margin 被摊薄 |
+| 800VDC 或 rack power 标准变化 | PowerGain/PDU 形态被替代 | 客户采用非 Hubbell 连接标准；Vertiv/Schneider/Legrand/nVent 标准件被指定 |
+| 大客户集中和双供 | 定价权下降 | hyperscaler 强制二供/三供，项目 bid margin 下行 |
+
+## 十三、投资判断
+
+HUBB 的核心价值不在“AI 芯片弹性”，而在 AI 基础设施兑现过程中的 **电力、连接、控制、配电和交付确定性**。本地行业资料显示，2026-2027 AI 数据中心的硬瓶颈从 GPU 扩展到电力接入、变压器、switchgear、UPS、busway/PDU 和调试；Hubbell 正好覆盖其中一批高认证、短交期、工程责任重的细分产品。
+
+**基准判断：** 未来 12 个月，Hubbell 有能力维持 `8%-11%` 总销售增长和 `6%-9%` 有机增长，HES 数据中心继续 `25%+`，HUS Grid Infrastructure 高个位数到低双位数。  
+**乐观判断：** 如果 2026H2 book-to-bill 维持 `1.15-1.25`、DMC/Systems Control 扩产兑现、PowerGain 被更多客户写入标准 BOM，公司有机增长可上修至 `13%-18%`。  
+**极度乐观判断：** 如果 765kV、AI campus substation、modular power skids 和高密 rack power 同时进入抢产能阶段，Hubbell 可能获得类似 Powell/Eaton 部分产品线的订单溢价，收入增速短期冲到 `20%+`，但这需要数据中心建设节奏和电力瓶颈继续恶化。
+
+估值上，`24x` 调整后 forward PE 已经反映一部分乐观预期。更好的风险回报通常来自两类信号：第一，HES 数据中心增长继续高于 `25%-30%` 且 PowerGain/模块化 skid 进入客户标准 BOM；第二，DMC/Systems Control 扩产后 Utility Solutions margin 继续扩张。反过来，如果数据中心订单热但转化慢、NSI 杠杆压力上来、HES margin 不改善，HUBB 的高质量估值会被压缩。
+
+## 十四、来源和证据清单
+
+### 公司一手资料
+
+- Hubbell 2026Q1 results press release：`https://hubbell.gcs-web.com/news-releases/news-release-details/hubbell-reports-first-quarter-2026-results`
+- Hubbell 2025Q4/FY2025 results press release：`https://hubbell.gcs-web.com/news-releases/news-release-details/hubbell-reports-fourth-quarter-and-full-year-2025-results`
+- Hubbell 2025Q3 results press release：`https://hubbell.gcs-web.com/news-releases/news-release-details/hubbell-reports-third-quarter-2025-results`
+- Hubbell 2025Q2 results press release：`https://hubbell.gcs-web.com/news-releases/news-release-details/hubbell-reports-second-quarter-2025-results`
+- Hubbell 2025Q1 results press release：`https://hubbell.gcs-web.com/news-releases/news-release-details/hubbell-reports-first-quarter-2025-results`
+- Hubbell 2025 Annual Report：`https://investor.hubbell.com/ar2025/docs/HUBB031_COMBO_2026_Full_Combo_Bookmarked.pdf`
+- Systems Control acquisition press releases：`https://hubbell.gcs-web.com/news-releases/news-release-details/hubbell-acquire-systems-control`；`https://hubbell.gcs-web.com/news-releases/news-release-details/hubbell-incorporated-completes-acquisition-systems-control`
+- DMC Power acquisition press releases：`https://hubbell.gcs-web.com/news-releases/news-release-details/hubbell-acquire-dmc-power`；`https://hubbell.gcs-web.com/news-releases/news-release-details/hubbell-incorporated-completes-acquisition-dmc-power`
+- NSI acquisition press release：`https://hubbell.gcs-web.com/news-releases/news-release-details/hubbell-acquire-nsi-industries`
+- PowerGain product and PDF：`https://www.hubbell.com/wiringdevice-kellems/en/products/powergain-high-amperage-flat-pin-sleeve-connector-125a-250-vac-2-threads/p/18170203`；`https://hubbellcdn.com/literature/HES-MULTI-SF-EN-04059.pdf`
+- Systems Control company page：`https://www.hubbell.com/systemscontrol/en/company`
+
+### 会议、业内资料和二级验证
+
+- Hubbell Q1 2026 earnings transcript（Motley Fool）：`https://www.fool.com/earnings/call-transcripts/2026/04/30/hubbell-hubb-q1-2026-earnings-transcript/`
+- Data Center World 2026 expo exhibitor summary（Hubbell booth and data center power messaging）：`https://datacenterworld.com/article/press-release-data-center-world-2026-expo-hall-features-worlds-largest-showcase-of-cutting-edge-technologies-driving-ai-powered-data-center-era/`
+- DTECH 2026 Hubbell grid automation summary：`https://www.hubbell.com/hubbellpowersystems/en/news/hubbell-showcases-grid-automation-breakthroughs-at-dtech-2026`
+- DTECH event positioning：`https://www.distributech.com/`
+
+### 项目内行业资料
+
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_导管、桥架与线缆管理_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+

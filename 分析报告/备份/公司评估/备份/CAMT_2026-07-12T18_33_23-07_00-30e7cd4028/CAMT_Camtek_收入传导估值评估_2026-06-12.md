@@ -1,0 +1,157 @@
+# 公司收入传导与价值传导评估：Camtek（CAMT）
+
+数据日期：2026-06-12  
+主口径：NTM = 2026Q2-2027Q1，美元口径。2027 全年交付订单只在能够合理落入 NTM 的部分纳入主表；FY2026、FY2027、长期 run-rate 和远期期权只作补充。  
+资料边界：使用 `公司调研/`、`行业调研/` 和公司公开一手资料；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、模型比较或全公司排序结果。  
+估值边界：本文只评估收入、利润和经营价值传导，不输出目标价、投资评级、股价区间或估值倍数判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 2026Q2-2027Q1；FY2026 用于校准管理层指引，2027 订单用于校准 NTM 上沿和 2027 run-rate，不直接等同于 NTM 基准收入。
+- 当前收入基准、指引和 run-rate：2025 收入 $496.1M；2026Q1 收入 $121.7M；2026Q2 指引 $129M-$131M，取中点 $130M；管理层称 2026H2 收入预计较 2026H1 增长超过 25%，由此推得 FY2026 指引下限约 $566M。当前可见 NTM 基准更接近 $610M-$650M，而不是简单年化 Q1。
+- 重要产品/业务线：Hawk 高端 AI/HBM/chiplet/hybrid bonding 检测量测平台；Eagle G5/Eagle AP/Eagle family 先进封装平台；MicroProf/FRT 3D surface、warpage、TTV、panel/glass 计量；服务与 ADC/Compass/Visual Layer 软件；CIS、RF、MEMS、compound semiconductor、general inspection 等其他应用。
+- NTM 公司收入四情景：悲观 $545M-$585M；基准 $610M-$650M；乐观 $680M-$760M；极度乐观上限 $800M-$900M。基准已经要求 H2 ramp 正常兑现；乐观要求 2026H2 追加订单或提前交付；极度乐观要求 Hawk/Eagle 在 HBM4/CoWoS-like/OSAT 第二供应链中同时放量。
+- 利润或 EBITDA 四情景：以 non-GAAP 经营利润率作为经营质量口径，悲观 23%-26%，基准 27%-30%，乐观 30%-32%，极度乐观 32%-35%。GAAP 净利润可能受股权激励、并购费用、可转债和一次性项目扰动，不作为产品传导主判据。
+- 最大传导瓶颈：不是 AI 服务器 BOM 内容量，而是客户 HBM/CoWoS-like/advanced packaging capex 是否能转成 Camtek 可交付、可验收、可确认收入的工具订单。
+- 最大利润率变量：Hawk/Eagle G5 高端配置 mix、客户是否接受更高 ASP、Visual AI/ADC 是否提升 throughput 和 defect classification、以及高端光学/精密运动/field service 成本是否受控。
+- 最大现金流变量：设备提前备货、客户验收节点、应收账款和库存。公司 2025 OCF 为 $142.6M、现金/存款/有价证券充足，但 H2 ramp 可能先消耗库存和营运资本。
+- 可信度：基准为中高；乐观为中；极度乐观为低到中。原因是 2026 交付订单和 Q2/H2 指引证据较强，但公司不披露标准 backlog，且 2027 订单未给出季度交付节奏。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Hawk 高端 AI/HBM/chiplet/hybrid bonding inspection/metrology | 2026E 可见收入约 $90M-$160M；2026 已披露 IDM Hawk $45M 交付订单，2027 已披露 HBM Hawk >$50M 订单 | 约 15%-30% 的 2026E 收入弹性，具体占比未披露 | NTM 最大增量和利润率上修核心 | B/C：订单强，分产品收入未披露 | 2026 交付订单进入基准；2027 订单按交付时间折扣进入 NTM 上沿 | HBM4E/16Hi hybrid bonding 多客户 POR、Hawk 成为 HBM/CoWoS-like 标准工具 |
+| Eagle G5 / Eagle AP / Eagle family advanced packaging | 2025-2026E 约 $200M-$270M 级别，来自 AI-related 与 other advanced packaging 主体 | 约 35%-45% | 现金牛、装机基础、RDL/FOWLP/2.5D/CIS 主平台 | A/B：收入表与初始订单支持，细分拆分需估算 | 进入基准，是 NTM 收入稳定器 | 若 G5 在多 RDL、FOWLP、2.5D、CIS 和 CoWoS-like 升级中同步上修，可推升乐观 |
+| MicroProf / FRT metrology | 2026E 约 $40M-$75M，未单独披露 | 约 7%-12% | 3D surface、warpage、TTV、panel/glass、hybrid bonding surface 的第二曲线 | C：收购和产品线明确，但收入拆分缺失 | 基准小比例纳入，按保守折扣处理 | 玻璃/TGV、panel-level packaging、hybrid bonding surface 量产 |
+| 服务、ADC、Compass、Visual Layer AI software | 2025 服务收入 $27.6M；软件直接收入无法可靠量化，2026E 直接贡献可能 <$10M | 服务约 5.6%；软件当前很小 | 服务提高现金流稳定性；AI software 提升工具粘性和毛利期权 | A/C/D：服务 A，Visual Layer 商业收入 C/D | 服务进入基准；软件直接收入不进入基准主体 | recurring software、defect analytics、fleet data、recipe learning |
+| Other applications：CIS、RF、MEMS、compound semiconductor、general 2D/front-end inspection | 2025 约 $149M，约总收入 30% | 约 25%-30% | 稳定器，也可能抵消 AI/AP 波动 | A：公司披露应用组合估算 | 进入基准，但不给高增速假设 | SiC/power、CPO/光学封装、edge AI 相关迁移 |
+
+注：OSAT CoWoS-like 订单是客户/应用证据，本文把其收入按实际工具平台拆入 Hawk、Eagle AP/G5 和服务，不单列为独立产品，以避免重复计算。
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不判断 Camtek 份额、收入确认或利润率。需求单位以客户订单金额、先进封装/HBM 工具需求、产线导入节奏和客户资本开支强度表示。相对预期的锚点是：2026Q2 指引、2026H2 较 H1 增长超过 25%、2026 已披露 OSAT/IDM 交付订单、行业对 HBM/CoWoS-like/先进封装检测量测持续扩张的预期。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Hawk 高端 AI/HBM/chiplet/hybrid bonding | HBM3E/HBM4、CoWoS-like、chiplet、hybrid bonding 需要更高 sensitivity、throughput 和 3D metrology；公司已披露 2026 IDM Hawk $45M、2027 HBM Hawk >$50M | HBM4/CoWoS-like 客户 qualification 推迟，Hawk 需求只覆盖已下单项目，新增 PO 低于预期 | 2026 已披露订单正常消化，HBM/OSAT/HPC 客户按现有扩产节奏继续采购 | HBM 厂和 OSAT 在 2026H2 再次加单，Hawk 成为更多量产 recipe 选项 | HBM4E/16Hi、hybrid bonding、CoWoS-like 二供同时提前，Hawk 成为多个客户 tool-of-record | 需求池从数十套工具上修到连续年度百套级别的订单机会，但公司未披露工具台数 | 基准符合当前订单和行业锚；乐观高于当前预期；极度乐观属于上限 | 正向：2026/2027 公开订单、Hawk 产品定位。反证：客户认证慢、多供、Onto/KLA/Nova 竞争、HBM 路线未完全切到 hybrid bonding |
+| Eagle G5 / Eagle AP / Eagle family advanced packaging | AI-related 约 50% 收入，other AP 约 20%；G5 初始订单 $20M；需求来自 RDL、FOWLP、2.5D、CIS、micro-bump、CoWoS-like | CoWoS/OSAT 扩产低于预期，客户用旧平台或竞品延长替换周期 | Eagle family 随 AP/HBM/CoWoS-like 需求正常升级，G5 承接 throughput/sensitivity upgrade | G5 在 multi-RDL/FOWLP/2.5D 中替换加速，Eagle 与 Hawk 分层清晰，不互相蚕食 | 先进封装产能紧张持续，Eagle G5 也被 AI/AP 大量拉动，与 Hawk 同步高增 | 需求从维持数百台装机换代，变为新产线扩产+换代双驱动 | 基准为符合当前预期；乐观需看到更多 G5 或 AP 订单披露 | 正向：2025 收入 mix 和 G5 产品能力。反证：Hawk 对部分高端需求替代、成熟 AP 价格压力、客户多供 |
+| MicroProf / FRT metrology | Hybrid bonding、panel、glass/TGV、surface roughness、warpage、TTV、thickness 等需求上升；FRT 已并入 Camtek 渠道 | Hybrid bonding 和 glass/panel 仍停留在 pilot/qualification，FRT 只是配套销售 | AP/SiC/front-end surface metrology 稳步增长，FRT 与 Eagle/Hawk 交叉销售 | HBM4/hybrid bonding surface 和 panel-level metrology 成为量产关键，FRT 订单加速 | Glass/TGV/panel-level + hybrid bonding 同时商业化，MicroProf PT/AP 获得多客户产线配置 | 需求从年化几十百万美元配套，扩展到百百万美元以上潜在第二曲线 | 基准仅中等增长；乐观高于当前收入可见度 | 正向：MicroProf PT 支持 600mm panel 和 glass。反证：玻璃基板主流量产多在 2028 以后，NTM 内不应过度纳入 |
+| 服务、ADC、Compass、Visual Layer AI software | 已有 3,000+ 系统装机，2025 服务收入 $27.6M；Visual Layer 已与 Camtek 合作超过一年并被收购 | 客户不单独为 software/analytics 付费，服务只随装机小幅增长 | 服务随装机增长，Visual AI 主要作为硬件性能提升而非单独收入 | ADC/Visual Layer 提升 defect classification 和 throughput，带来更高 attach、服务费或 ASP | 形成跨工具 recurring analytics，客户愿意为 yield data 和 fleet learning 单独付费 | 需求从约 $30M 服务池扩到 $50M+ 软件/服务组合 | 基准符合当前预期；软件乐观需要商业收费证据 | 正向：收购和技术方向。反证：未披露软件 ARR、客户付费模式不清 |
+| Other applications | 2025 约 30% 收入，来自 CIS、RF、MEMS、compound semiconductor、general inspection 等 | 成熟/周期客户 capex 走弱，抵消 AI/AP 增量 | 维持稳定或低个位数增长，提供装机和服务基底 | SiC/power、CPO/光学封装、edge AI 相关应用带来增量 | 多个非 AI 应用同步复苏且高端化 | 需求从约 $140M-$150M 稳定池，上修到 $170M+ | 基准为稳定器，不作为 AI 高增主线 | 正向：多应用覆盖。反证：客户预算可能转向 AI/AP，传统应用被挤出 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断需求能否进入 Camtek NTM 收入表及当前可收入化基数，不预测增长和利润率。收入证据等级按 A=已披露收入/正式指引，B=订单/backlog/正式合同/明确交付，C=design win/认证/产能规划/管理层披露，D=产品发布/样品/早期合作，E=主题相关。2027 交付订单因为未披露季度节奏，只能折扣纳入 NTM，不直接全额进入基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Hawk 高端 AI/HBM/chiplet/hybrid bonding | 2026 IDM Hawk $45M 订单、2027 HBM Hawk >$50M 订单；2025 Hawk 初始订单已进入交付周期；分产品收入未披露 | 直接 | 高 ASP、高毛利设备，需 field service 和 recipe 支持 | $80M-$120M | $145M-$185M | $210M-$280M | $320M-$380M | 基准符合 H2 ramp；乐观高于当前订单节奏 | B/C | 是，折扣纳入 | 2026 交付订单为 B；2027 订单只按可能落入 2027Q1 的部分纳入 | NTM 核心增长项，但不可把 2027 全年订单全额前置 |
+| Eagle G5 / Eagle AP / Eagle family AP | 2025 AI-related 约 $248M、other AP 约 $99M；G5 初始订单 $20M；产品销售 2025 $468.5M | 直接 | 成熟高毛利平台，装机和 recipe 粘性强 | $190M-$220M | $225M-$255M | $280M-$330M | $340M-$380M | 基准为现有收入表和平台换代正常兑现 | A/B | 是 | 收入表可见，产品和应用明确；OSAT CoWoS-like 订单按实际工具拆分 | NTM 基准主干，负责收入稳定和规模效应 |
+| MicroProf / FRT metrology | FRT 2023 收购；MicroProf AP/PT/300 产品线已并入；未披露单独收入 | 直接，且可与 Hawk/Eagle 打包 | 计量工具毛利较好，但整合和销售节奏仍需验证 | $35M-$50M | $50M-$65M | $75M-$110M | $120M-$150M | 基准低于远期期权，不把 glass/TGV 主题直接计入 | C | 是，小比例 | 产品线和客户应用明确，但收入拆分缺失，基准需保守折扣 | NTM 辅助增长项；glass/TGV 主体移入附录跟踪 |
+| 服务、ADC、Compass、Visual Layer AI software | 2025 服务 $27.6M；Visual Layer 2026-04 收购，直接商业收入未披露 | 服务直接；软件既直接也间接提高硬件 ASP/throughput | 服务毛利和现金流稳定；软件潜在高毛利 | $28M-$34M | $32M-$42M | $45M-$65M | $75M-$100M | 服务符合当前预期；软件乐观高于当前证据 | A/C/D | 服务进入，软件小比例或不进入 | 服务为 A；Visual Layer 为 C/D，当前更多体现在产品能力 | 基准只认服务和少量 attach；软件 recurring 属乐观/远期期权 |
+| Other applications | 2025 约 $149M，约 30% 收入；来自 CIS、RF、MEMS、compound、general inspection | 直接 | 成熟业务，利润率低于高端 AI/AP 但提供规模 | $120M-$135M | $130M-$150M | $150M-$170M | $170M-$190M | 基准为稳定或低增，不承担主要超预期 | A | 是 | 公司应用 mix 口径支持 | NTM 稳定器，也可能成为 AI/AP 增长的抵消项 |
+
+排除项：客户 AI capex 总额、HBM 市场收入、CoWoS 项目总金额、glass substrate/TGV 远期市场规模、Visual Layer 未来软件 ARR，均不直接作为 NTM 基准收入；只有出现客户、产品、交付时间和收入确认路径后才可移入 NTM。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求和收入基数出发，判断每个产品在 NTM 内能贡献的收入和利润。表中产品区间是单项情景判断，不应机械相加；公司层面在第 6 节做去重、互相替代和交付节奏校准。利润贡献以毛利率方向和 non-GAAP 经营利润方向描述；Camtek 不披露分产品毛利率，因此无法可靠量化单产品净利润。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Hawk 高端 AI/HBM/chiplet/hybrid bonding | 悲观 | $80M-$120M | 无法可靠量化；增量利润被低利用率、导入成本和服务投入压低 | 毛利率接近或低于公司均值 | 低于 H2 ramp 预期 | 只承认已交付或几乎确定的订单 | 保留为下沿 | 客户验收、HBM4 节奏、Onto/KLA/Nova 多供 |
+| Hawk 高端 AI/HBM/chiplet/hybrid bonding | 基准 | $145M-$185M | 高端工具形成正经营杠杆，支持公司 non-GAAP GM 51%-52% | 小幅上行或稳定 | 符合当前订单和指引 | 2026 IDM Hawk $45M、OSAT/HBM 订单、Hawk 产品定位 | 保留 | 2027 订单季度节奏不明，不能全部纳入 NTM |
+| Hawk 高端 AI/HBM/chiplet/hybrid bonding | 乐观 | $210M-$280M | 若 ASP/mix 上升，经营利润率贡献明显高于公司均值 | 上行 | 高于当前预期 | 2026H2 追加订单、HBM/OSAT 复购、Hawk 成为更多 recipe 选项 | 保留但需订单验证 | 新客户销售周期、field service 能力 |
+| Hawk 高端 AI/HBM/chiplet/hybrid bonding | 极度乐观 | $320M-$380M | 只有高 ASP、强利用率和高端 mix 同时成立才可显著扩张 | 明显上行 | 显著高于当前预期 | HBM4E/16Hi、hybrid bonding、CoWoS-like 二供同时突破 | 下移为上限 | 任一核心客户或路线延迟都会回落到乐观 |
+| Eagle G5 / Eagle AP / Eagle family AP | 悲观 | $190M-$220M | 仍有利润，但不能拉动公司 margin 扩张 | 稳定或小幅下行 | 低于平台升级预期 | 只承认成熟平台和既有装机替换 | 保留 | Hawk 替代部分高端需求，成熟 AP 价格承压 |
+| Eagle G5 / Eagle AP / Eagle family AP | 基准 | $225M-$255M | 作为成熟平台支撑规模效应，利润率接近公司均值 | 稳定 | 符合当前预期 | AI-related/other AP 收入占比、G5 产品能力 | 保留 | 订单拆分不披露，需防止 OSAT 订单重复计入 Hawk |
+| Eagle G5 / Eagle AP / Eagle family AP | 乐观 | $280M-$330M | G5 mix 提升带来毛利率小幅上行 | 小幅上行 | 高于当前预期 | Multi-RDL、FOWLP、2.5D、CIS upgrade，OSAT AP 扩产 | 保留 | 竞品 Dragonfly/KLA，客户多供 |
+| Eagle G5 / Eagle AP / Eagle family AP | 极度乐观 | $340M-$380M | 需 G5 和 Hawk 分层清晰且都放量 | 上行 | 显著高于当前预期 | AI/AP 需求广泛扩散，Eagle 不被 Hawk cannibalize | 下移为上限 | 双平台同时极度放量证据不足 |
+| MicroProf / FRT metrology | 悲观 | $35M-$50M | 贡献有限，整合费用和销售投入压低增量利润 | 稳定或下行 | 低于协同期望 | 只承认成熟 FRT 产品销售 | 保留 | Glass/TGV 主流化晚于 NTM，hybrid bonding 认证慢 |
+| MicroProf / FRT metrology | 基准 | $50M-$65M | 与 Eagle/Hawk 打包销售，提高方案完整性 | 稳定 | 符合保守预期 | FRT 收购、MicroProf AP/PT 产品定位 | 保留 | 单独收入拆分缺失 |
+| MicroProf / FRT metrology | 乐观 | $75M-$110M | 计量工具 mix 改善可支撑毛利率，但需客户量产采用 | 小幅上行 | 高于当前预期 | Hybrid bonding surface、warpage、TTV、panel metrology 需求增强 | 保留但证据中等 | 需求可能停留在 pilot/qualification |
+| MicroProf / FRT metrology | 极度乐观 | $120M-$150M | 若成为 panel/glass/HB 量产标配，利润质量高 | 上行 | 显著高于当前预期 | Glass/TGV/panel-level 与 hybrid bonding 同时商业化 | 移入附录/仅作跟踪 | NTM 内缺客户量产收入路径 |
+| 服务、ADC、Compass、Visual Layer AI software | 悲观 | $28M-$34M | 服务提供稳定毛利；软件投入先压费用 | 稳定 | 略低于装机增长 | 只承认维护服务 | 保留 | 软件无单独收费证据 |
+| 服务、ADC、Compass、Visual Layer AI software | 基准 | $32M-$42M | 服务随装机增长，软件主要提高硬件竞争力 | 稳定或小幅上行 | 符合当前预期 | 2025 服务 $27.6M、3,000+ installed base | 保留 | Visual Layer 并购收入不可量化 |
+| 服务、ADC、Compass、Visual Layer AI software | 乐观 | $45M-$65M | 软件/服务 attach 提升，利润率高于硬件 | 上行 | 高于当前预期 | Visual AI 改善 throughput、classification 和 recipe learning | 保留但需客户付费证据 | 客户可能只把软件视为硬件功能 |
+| 服务、ADC、Compass、Visual Layer AI software | 极度乐观 | $75M-$100M | recurring analytics 若成型，利润质量显著改善 | 明显上行 | 显著高于当前预期 | 跨工具数据闭环和订阅式服务 | 移入附录/仅作跟踪 | 未披露 ARR 或合同结构 |
+| Other applications | 悲观 | $120M-$135M | 成熟业务毛利稳定但无杠杆 | 稳定或下行 | 低于当前预期 | 成熟客户 capex 放缓 | 保留 | 周期业务、客户预算转向 AI/AP |
+| Other applications | 基准 | $130M-$150M | 提供规模和服务基底 | 稳定 | 符合当前预期 | 2025 约 30% 收入 | 保留 | 不应把非 AI 业务写成高增 |
+| Other applications | 乐观 | $150M-$170M | 若 SiC/power/CIS 复苏，利润稳定 | 稳定或小幅上行 | 略高于当前预期 | 多应用覆盖和装机基础 | 保留但权重低 | 不是 NTM 主要增量 |
+| Other applications | 极度乐观 | $170M-$190M | 对公司利润有帮助但不改变结构 | 小幅上行 | 高于当前预期 | 非 AI 应用同步复苏 | 下移为乐观上沿 | 缺少同步复苏证据 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、净利润/现金流方向。已检查 OSAT CoWoS-like 订单不作为独立产品重复计算；2027 交付订单未全额前置；Visual Layer、glass/TGV、CPO/optical I/O 不进入基准。绝对增速以 2025 收入 $496.1M 为参照，但由于 NTM 为 2026Q2-2027Q1，增速只用于经营强弱比较，不等同 FY2026 增速。经营利润率默认 non-GAAP 经营利润率。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | $545M-$585M | 约 +10%-18% vs 2025 | 低于 H2 +25% 指引隐含路径；Q2 仍可能达标但 H2/Q1 兑现慢 | 49.0%-50.5% | 23%-26% | non-GAAP 经营利润约 $125M-$150M；净利润无法可靠量化 | OCF 仍可能为正，但库存和应收占用上升，FCF 弱于 2025 | 中 | 客户验收后移、Hawk 交付慢、OSAT/HBM 订单 push-out、传统应用抵消 |
+| 基准公司 | $610M-$650M | 约 +23%-31% vs 2025 | 接近当前 H2 ramp、订单和 run-rate 正常兑现；高可信业务正常增长，低证据机会保守处理 | 51.0%-52.0% | 27%-30% | non-GAAP 经营利润约 $165M-$195M；净利润方向高于 2025 non-GAAP | OCF 正向，库存先行备货但收入确认可吸收 | 中高 | H2 ramp 执行、供应链交付、客户 acceptance、2027 订单季度节奏 |
+| 乐观公司 | $680M-$760M | 约 +37%-53% vs 2025 | 高于当前预期，需 2026H2 追加订单、部分 2027 订单提前或 Q3/Q4 指引上修 | 52.0%-54.0% | 30%-32% | non-GAAP 经营利润约 $205M-$240M；净利润和 OCF 同步改善 | FCF 改善，但需要营运资本周转不恶化 | 中 | Hawk/G5 mix、OSAT 二供扩产、HBM 客户复购、field service 扩张 |
+| 极度乐观公司 | $800M-$900M | 约 +61%-81% vs 2025 | 显著高于当前预期；必须由需求、捕获、利润质量和执行同时突破 | 54.0%+ | 32%-35% | non-GAAP 经营利润约 $255M-$315M；净利润无法可靠量化 | OCF 强，但库存、安装验收和应收账款波动极大 | 低 | Hawk 多客户 POR、HBM4E/CoWoS-like 供不应求、供应链/服务团队快速扩容、无重大验收延迟 |
+
+补充校准：FY2026 管理层显性下限约 $566M，若公司只达到下限，NTM 公司收入更可能落在悲观上沿或基准下沿；若 2026Q3/Q4 指引明显高于 H2 +25% 路径，才可把 NTM 主口径上移到乐观。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。正向证据只提升对应层级；反证只在实际影响的层级处理一次。校准动作仅使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 $121.7M、Q2 指引 $129M-$131M、H2 收入预计较 H1 +25% 以上 | 公司汇总 | 支撑 FY2026 下限约 $566M，NTM 基准 $610M-$650M | Q1 non-GAAP GM 51.0%、op margin 25.5%，H2 规模效应决定能否回到 27%-30% | H2 ramp 需要库存、安装和验收配合 | 基准保留 |
+| 2026Q1 OSAT orders >$90M，含 $31M CoWoS-like AI packaging 订单，预计 2026 交付 | 收入基数/产品贡献 | 强化 2026H2 可确认收入路径，主要进入 Hawk/Eagle AP | 若高端 AP mix 升高，利润率小幅上行 | 交付和 acceptance 是主要执行点 | 基准保留，乐观可上移 |
+| 2027 >$105M OSAT/HBM 订单，含 $55M tier-1 OSAT 与 >$50M Hawk HBM 订单 | 收入基数/执行可信度 | 延伸 2027 可见度，但未披露季度交付，NTM 只折扣纳入 | 高端 Hawk mix 对毛利率有利 | 对 2027 backlog 可信度正向，但不代表 2026 全额收入 | 乐观保留；极度乐观下移为上限 |
+| Hawk、Eagle G5、MicroProf 产品能力 | 产品贡献 | 支撑先进封装/HBM/2.5D/RDL/warpage/TTV 需求可收入化 | 高端工具和软件能力有利于 ASP/mix | 需要客户 recipe、tool matching、service | 基准保留；MicroProf 远期期权仅作跟踪 |
+| Visual Layer 收购 | 产品贡献/利润率 | 直接收入无法可靠量化，不进入基准主体 | 若提高 throughput/classification，可改善硬件竞争力和未来软件毛利 | 并购整合和商业收费模式需验证 | 服务基准保留；软件乐观保留；recurring 移入附录 |
+| 不披露标准 backlog 和分产品收入 | 证据可信度 | 限制精确量化产品基数，防止把订单全额前置 | 限制分产品利润率判断 | 降低情景可信度，尤其极度乐观 | 极度乐观下移 |
+| HBM/CoWoS/hybrid bonding 客户集中、多供和认证周期 | 需求/收入确认/份额 | 可能导致订单 push-out 或份额低于预期 | 价格和服务成本可能抵消高端 mix | 影响交付节奏和营运资本 | 悲观保留；基准不重复惩罚 |
+| 中国/亚太收入集中、出口管制和以色列运营风险 | 公司组合/执行 | 可能影响区域交付和客户预算 | 若物流、关税或本币成本上升，压低毛利 | 供应链、库存和收款波动上升 | 悲观保留；只在公司层处理一次 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 2026H2 ramp 不达 H1 +25% 路径，Hawk/OSAT 交付或验收后移，NTM $545M-$585M | Q2 指引仍高于 Q1，已有订单降低深度下行风险 | 客户集中、认证慢、多供竞争、出口/地缘、库存和应收占用 | 保留 | 悲观下沿保留，但不作为主情景 | 中 | 客户集中和订单 push-out 只在收入确认/公司执行层处理，不再重复压低产品需求 |
+| 基准 | 管理层指引、2026 交付订单和当前 run-rate 正常兑现，NTM $610M-$650M | Q1/Q2/H2 指引、2026 OSAT/IDM 订单、2025 50% AI-related 和 20% other AP mix | backlog 不披露，分产品拆分需估算，2027 订单季度节奏不明 | 保留 | 最可能情景 | 中高 | 2027 订单时间不明只限制上沿，不否定 2026 基准 |
+| 乐观 | OSAT/HBM/IDM 继续追加，部分 2027 交付提前，NTM $680M-$760M | 2027 >$105M 订单、Hawk/HBM/OSAT 客户验证、行业 AP/HBM 检测需求强 | 尚无连续多个季度追加订单披露，竞品和多供会限制份额 | 保留 | 乐观情景保留，需 Q3/Q4 指引或订单验证 | 中 | 行业景气不能重复当作公司份额证据，必须看到 Camtek 订单或指引 |
+| 极度乐观 | Hawk/Eagle/FRT/software 同时突破，NTM $800M-$900M | HBM4/CoWoS-like/OSAT 二供趋势、Hawk 2027 HBM 订单、Visual AI 能力 | 2027 订单未给季度、software ARR 未披露、glass/TGV 多为远期期权、供应链和验收难度高 | 下移 | 仅保留为极度乐观上限和后续跟踪，不进入基准或乐观主体 | 低 | 远期期权缺证据时只移入附录，不在需求、收入、利润三个层级重复加分 |
+
+## 8. 结论
+
+- 最可能情景：基准。Camtek 的 NTM 主口径更像 $610M-$650M 收入、51%-52% 毛利率、27%-30% non-GAAP 经营利润率的经营兑现问题。2026H2 ramp 是核心，不是 Q1 同比只有低个位数增长的表面问题。
+- NTM 收入结论：当前可收入化证据足以支持高于 2025 run-rate 的基准，但不足以把 2027 全年 OSAT/HBM 订单全部前置。Hawk 与 Eagle AP 是主线，MicroProf/FRT 是辅助上修，服务是稳定器，Visual Layer 软件直接收入暂不进入基准主体。
+- 利润/现金流结论：利润质量好于普通 OSAT，因为公司卖的是高端检测量测设备、recipe、算法和服务能力；但 H2 快速交付会先拉高库存、安装验收和应收波动。自由现金流方向为正，但强度取决于客户验收和营运资本。
+- 主要传导瓶颈：AI 芯片需求 -> HBM/CoWoS-like/OSAT capex -> 高端 inspection/metrology PO -> Camtek 交付 -> 客户验收 -> 收入确认。最薄弱环节在订单交付和验收节奏，而不是终端 AI 需求叙事本身。
+- 乐观情景成立条件：2026Q3/Q4 指引明显高于 H2 +25% 路径；leading OSAT/HBM player 出现第二轮大额订单；Hawk 和 G5 mix 推动毛利率高于 52%；field service 不拖累验收。
+- 极度乐观情景成立条件：Hawk 成为多家 HBM/OSAT/IDM 的量产 POR；HBM4E/16Hi、CoWoS-like 二供和 hybrid bonding 相关检测需求同时提前；2027 订单大部分落入 NTM；non-GAAP 经营利润率能扩到 32%+。
+- 悲观情景触发条件：H2 指引无法兑现；OSAT 或 HBM 订单验收延后；新增订单两个季度低于预期；Hawk 被竞品替代或只能多供低份额；中国/亚太交付受出口管制、物流或客户预算影响。
+- 后续跟踪数据：2026Q2 实际收入和 Q3 指引；2026H2 是否真的较 H1 +25% 以上；Hawk 追加订单金额和客户类型；2027 >$105M 订单的季度交付节奏；non-GAAP GM 是否稳定在 51%+；库存、应收账款和 OCF；Visual Layer 是否带来可收费 software/analytics。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：2026-06-12；公司最近财务数据截至 2026Q1，FY2025 年报和 2026Q1 新闻稿为财务锚点。
+- 主要收入、订单、指引和利润率来源：
+  - Camtek Q1 2026 results, 2026-05-12: https://www.camtek.com/news-and-events/camtek-announces-results-for-the-first-quarter-of-2026/
+  - Camtek Q4 and FY2025 results, 2026-02-18: https://www.prnewswire.com/il/news-releases/camtek-announces-record-results-for-the--fourth-quarter--full-year-2025-302691416.html
+  - Camtek $31M leading OSAT order and Q1 2026 OSAT orders >$90M, 2026-03-30: https://www.camtek.com/news-and-events/camtek-receives-31-million-multi-system-order-from-a-leading-osat/
+  - Camtek >$105M OSAT/HBM orders for 2027 delivery, 2026-06-02: https://www.prnewswire.com/news-releases/camtek-receives-over-105-million-multi-system-orders-from-a-tier-1-osat-and-a-leading-hbm-manufacturer-302788351.html
+  - Camtek 2025 Form 20-F: https://www.camtek.com/wp-content/uploads/20-F-2025.pdf
+  - Camtek Hawk product page: https://www.camtek.com/products/hawk/
+  - Camtek Eagle G5 product page: https://www.camtek.com/products/eagle-g5/
+  - Camtek MicroProf PT product page: https://www.camtek.com/products/microprof-pt/
+  - Camtek Visual Layer acquisition, 2026-04-13: https://www.camtek.com/news-and-events/camtek-announces-acquisition-of-visual-layer-to-deepen-its-visual-ai-capabilities-in-its-inspection-and-metrology-offering/
+- 本地公司资料：
+  - `公司调研/封测_检测_计量_光罩/CAMT_Camtek_公司调研_2026-06-11.md`
+- 本地行业资料：
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_玻璃基板、TGV与玻璃检测_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 下限：2026Q1 $121.7M + Q2 midpoint $130M + H2 至少 $314.6M = 至少约 $566M。
+  - NTM 基准：在 FY2026 下限基础上加入 2027Q1 可见订单和 run-rate，去重后为 $610M-$650M。
+  - FY2027/长期 run-rate：2027 >$105M OSAT/HBM 订单强化 2027 能见度，但未披露季度交付；不能全额计入 NTM 基准。
+  - 远期期权：glass/TGV/panel-level packaging、CPO/optical I/O、Visual Layer recurring analytics、HBM4E/16Hi hybrid bonding 多客户 POR。上述机会有技术和产业逻辑，但缺少 NTM 内客户、产品、交付和收入确认闭环，不进入基准。

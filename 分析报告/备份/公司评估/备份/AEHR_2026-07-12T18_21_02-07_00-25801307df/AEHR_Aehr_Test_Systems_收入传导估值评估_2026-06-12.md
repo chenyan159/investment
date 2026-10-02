@@ -1,0 +1,159 @@
+# 公司收入传导与价值传导评估：Aehr Test Systems (AEHR)
+
+> 报告日期：2026-06-12  
+> 主口径：NTM，约为 2026-06 至 2027-06；由于公司最近完整财年 FY2026 已在 2026-05-29 左右结束但尚未发布全年结果，本报告以 Q3 FY2026 已披露财务、Q4 FY2026 隐含指引、FY2027 初始交付订单和未来 12 个月可见客户节奏为主。  
+> 资料边界：使用 `公司调研/`、`行业调研/` 与公司公告、SEC 文件、公司 2026-06 演示稿等公开一手资料；未读取、引用或继承 `特征量化/`、Signals、回归、结构化评分或排序结果。  
+> 重要限制：Aehr Test Systems 不披露按应用或产品线拆分的收入，也不披露 Sonoma、FOX-XP、WaferPak、BIM/socket 的独立 ASP 与毛利率。本报告中的产品级 NTM 收入和毛利贡献均为订单、backlog、交付窗口、产能和行业需求映射后的经营估算，不等同于公司披露口径。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口，不做目标价、投资评级、估值倍数判断；FY2026、FY2027 和长期 run-rate 只作为订单兑现节奏和收入基准的补充。
+- 当前收入基准、指引和 run-rate：最近披露季度为 Q3 FY2026，收入 1,031.3 万美元、毛利率 32.7%、GAAP 净亏损 320.3 万美元；FY2026 前三季度收入 3,116.6 万美元、经营现金流 -514.2 万美元。管理层在 2026-04-07 预计 FY2026 收入处于 4,500-5,000 万美元区间高端，Q4 FY2026 隐含收入约 1,470-1,970 万美元。
+- 当前订单锚点：Q3 FY2026 bookings 为 3,720 万美元，期末 backlog 为 3,870 万美元，effective backlog 为 5,090 万美元；2026-04-16 公司宣布 lead hyperscale customer 的 4,100 万美元 Sonoma PLBI 订单，FY2026 下半年 bookings 已超过 9,200 万美元，且该订单预计从 FY2027 开始交付。
+- 重要产品/业务线：`Sonoma PLBI + BIM/socket`、`FOX-XP AI processor WLBI + WaferPak/AutoAligner`、`Silicon photonics / optical I/O WLBI`、`SiC/GaN power semiconductor WLBI`、`legacy / memory / Tahoe / service`。专有耗材和服务是利润质量变量，但在收入汇总中随具体应用线处理，避免重复计算。
+- NTM 公司收入四情景：悲观 5,500-7,000 万美元；基准 8,500 万-1.05 亿美元；乐观 1.15 亿-1.50 亿美元；极度乐观 1.60 亿-2.30 亿美元。相对 FY2026 指引高端 5,000 万美元，分别约为 +10% 至 +40%、+70% 至 +110%、+130% 至 +200%、+220% 至 +360%。
+- 利润或 EBITDA 四情景：悲观仍亏损；基准接近 EBITDA / GAAP 净利润盈亏平衡至小幅盈利；乐观进入 10-22% 经营利润率区间；极度乐观才可能接近或超过管理层长期模型中“收入超过 1 亿美元、毛利率 50%+、税前利润率 25%+”的状态。
+- 最大传导瓶颈：已披露订单从 bookings/backlog 变成可确认收入的节奏，尤其是 lead hyperscaler 的 Sonoma 交付、客户验收、BIM/socket 定制、OSAT/test house 导入和多客户复制。
+- 最大利润率变量：Sonoma 早期 contract manufacturing 和 package-level burn-in mix 当前拉低毛利率；若 WaferPak、BIM/socket、AutoAligner 和服务复购占比提高，毛利率才有条件从 Q3 FY2026 的 32.7% 回升到 45-50% 以上。
+- 最大现金流变量：库存和在制系统能否顺利转为收入。Q3 FY2026 存货约 4,116 万美元，若订单延期，会占用现金；若 FY2027 正常交付，经营现金流会随收款和库存周转转正。
+- 可信度：基准为中高；乐观为中；极度乐观为低到中；悲观为中。原因是 Sonoma 4,100 万美元订单和 Q3 effective backlog 属于 B 级强证据，但多客户复制、SiPh follow-on、GaN/SiC AI power 放量仍需要 C 级或更弱证据转成订单。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Sonoma PLBI + BIM/socket for hyperscale AI ASIC | FY2026 已有 package-level burn-in 收入但未拆分；可见 4,100 万美元订单从 FY2027 开始交付 | 当前收入表占比无法可靠量化；NTM 基准可能成为最大收入线 | 最高；直接决定 FY2027 收入跃迁 | B：正式订单、客户交付窗口、公司演示稿产能 | 进入基准；基准按 3,500-4,800 万美元 NTM 收入处理 | 多 hyperscaler / AI ASIC 客户复制进入乐观和极度乐观 |
+| FOX-XP AI processor WLBI + WaferPak / AutoAligner | 2024-12 超 1,000 万美元订单已进入历史交付；2026-02 1,400 万美元订单 6 个月内交付 | 当前收入表无法拆分；Q3 systems/contactors 已包含部分 | 高；若 CoWoS/HBM 前 known-good-die 成为主流，放大空间大 | B：已披露订单；C：其他 benchmark 和 OSAT partnership | 进入基准；只纳入已披露订单和少量可见续单 | 多客户把 WLBI 设为默认流程进入乐观/极度乐观 |
+| Silicon photonics / optical I/O WLBI | 2026-03 lead customer follow-on + major new customer，金额未披露 | 当前收入表无法拆分；估计小于 AI processor 相关订单 | 高；1.6T、optical I/O、CPO/CPX 推动可靠性筛选 | B/C：有订单和客户，但金额、量产节奏未披露 | 小比例进入基准；大部分上修留给乐观 | CPO/optical I/O 提前量产进入极度乐观 |
+| SiC/GaN power semiconductor WLBI | FY2025 full-wafer contact product lines 收入 3,920 万美元，其中功率相关占比较高但未披露；FY2026 处于低谷 | 当前业务仍有基础，但 EV/SiC 周期拖累 | 中高；SiC 是成熟应用，GaN 与 AI power 是小基数增量 | A：历史收入；B/C：当前订单反弹和 GaN engagement | 进入基准，但按温和恢复处理 | 800VDC/HVDC 和高压 GaN/SiC 平台认证成功后才上移 |
+| Legacy / memory / Tahoe / service | Q3 FY2026 service 152.8 万美元；Tahoe、HBF/flash、legacy logic/memory 未拆分 | 服务约 14.8% of Q3 revenue；其他无法可靠量化 | 稳定性和补充收入，不是 NTM 主增长引擎 | A：服务收入；C/D：HBF/flash pipeline | 服务和可见 legacy 进入基准；HBF/flash 不进基准 | HBF/flash memory WLBI 列为后续跟踪 |
+| 专有耗材与服务：WaferPak、BIM、socket、DiePak、AutoAligner、field service | Q3 FY2026 contactors 300.3 万美元，FY2026 前三季度 contactors 约 906 万美元；BIM/socket 未单列 | Q3 contactors 29.1%，service 14.8%；BIM/socket 藏在 package-level line | 利润质量最高的变量之一 | A/B：已披露 contactors，订单说明含 BIM/socket | 随对应产品线进入基准，不单独重复加总 | installed base 多代并行时，复购弹性进入乐观 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池和客户测试产能需求，不评估 AEHR 份额、收入确认、利润率或公司总收入。表中“订单等值需求”是客户对测试和 burn-in 产能的需求强弱估算，不等于 AEHR 可确认收入。当前预期锚点来自：FY2026 H2 bookings 已超过 9,200 万美元、4,100 万美元 Sonoma 订单、Q3 FY2026 effective backlog 5,090 万美元、公司 2026-06 演示稿披露的 PLBI / WLBI 产能和行业调研中高功耗 SLT/burn-in、AI SoC/HBM 测试、SiPh/CPO、SiC/GaN power path 的需求判断。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Sonoma PLBI for hyperscale AI ASIC | Lead hyperscaler current-gen 已 ramp，next-gen initial order，4,100 万美元 follow-on；行业高功耗 PLBI 由 AI ASIC 功耗和可靠性推动 | 订单等值需求 2,500-3,500 万美元，部分 current-gen / next-gen 交付跨出 NTM | 4,500-6,500 万美元，已披露订单和少量既有 ramp 正常执行 | 7,000 万-1.0 亿美元，lead customer 追加并出现第二客户或 OSAT 量产准备 | 1.10 亿-1.60 亿美元，多 hyperscaler / AI ASIC 同步进入 production burn-in | 相对 4,100 万美元硬订单：悲观 -15% 至 -40%；基准 +10% 至 +60%；乐观 +70% 至 +140%；极度乐观 +170% 以上 | 正证：4,100 万美元订单、Sonoma current-gen production、AI ASIC 功耗上升。反证：客户集中、二供/自研、验收跨期 |
+| FOX-XP AI processor WLBI | 2026-02 1,400 万美元订单；2024-12 超 1,000 万美元订单；paid evaluation 和 OSAT joint solution | 1,000-1,800 万美元，已披露订单执行但 benchmark 未转量产 | 1,800-3,000 万美元，lead customer + 少量 WaferPak / AutoAligner 复购 | 3,500-6,000 万美元，至少一个 benchmark 转 HVM，OSAT 扩散 | 7,000 万-1.10 亿美元，WLBI 成为 CoWoS/HBM 前 KGD 主流程之一 | 相对 1,400 万美元新订单：基准 +30% 至 +115%；乐观 +150% 至 +330% | 正证：全 wafer burn-in 可降低高价值封装损失。反证：thermal/correlation/throughput 仍需更多客户验证 |
+| Silicon photonics / optical I/O WLBI | 2026-03 lead customer follow-on；major new optical interconnect customer 购买 FOX-XP/FOX-NP/WaferPak；AI 网络从 800G 到 1.6T/CPO | 500-1,000 万美元，订单只支持 qualification 和少量产能 | 1,000-2,500 万美元，新客户进入初始 HVM，lead customer 温和扩产 | 3,000-6,000 万美元，1.6T/optical I/O 客户追加产能 | 7,000 万-1.20 亿美元，CPO/optical I/O 提前量产，WLBI 成为产线瓶颈 | 基准为当前预期正常兑现；乐观需要追加订单；极度乐观需要 CPO/optical I/O 时间表前移 | 正证：订单覆盖 qualification + production，行业调研认为 CPO/optical I/O production test 2027 弹性高。反证：CPO 可维护性和光耦合测试可能延后 |
+| SiC/GaN power semiconductor WLBI | SiC 是历史成熟应用；GaN 有 production order 和多个 engagement；AI power path 推动高可靠功率器件 | 800-1,500 万美元，EV/SiC 弱、GaN 只验证 | 1,500-3,000 万美元，SiC 修复 + GaN 小批量 | 3,500-6,000 万美元，AI PSU/IBC/GaN 订单加速 | 7,000 万-1.00 亿美元，800VDC/HVDC 与高压 GaN/SiC 提前形成产线 | 相对当前预期：基准温和恢复；乐观高于当前订单节奏；极度乐观需 2027 高压架构提前 | 正证：AI power 可靠性需求、客户认证后切换成本高。反证：EV/SiC 价格压力，800VDC 2026 更多是设计导入 |
+| Legacy / memory / Tahoe / service | 服务收入稳定；HBF/flash 和 Tahoe 有 pipeline 但非当前订单主线 | 600-900 万美元，服务维持、legacy 低迷 | 800-1,200 万美元，服务稳定，少量 legacy / qualification | 1,000-1,500 万美元，HBF/flash 或 Tahoe 小单 | 1,500-2,500 万美元，HBF/flash 进入更明确量产前采购 | 绝对变化有限，主要提供收入底座 | 基准符合当前 run-rate；上修不应替代 Sonoma/FOX/SiPh 主线 | 正证：公司演示稿提到 HBF/flash 机会。反证：证据等级低，不能进 NTM 主增长 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些需求能进入 AEHR 的 NTM 收入表，以及当前可收入化基数是多少；不预测需求增长，不判断利润率。证据等级按收入表可确认性处理：A=已披露收入或正式财务数据；B=订单/backlog/合同/明确交付时间表；C=客户认证、benchmark、产能规划或管理层可验证披露；D=产品发布、样品、早期合作；E=只有主题相关性。C/D/E 机会不进入 NTM 基准，除非有客户、产品和时间表的保守折扣。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Sonoma PLBI + BIM/socket | 4,100 万美元正式 follow-on 订单从 FY2027 开始交付；Q3 包含 package-level burn-in 增量但未拆分 | 直接收入 | 系统初期毛利受 contract manufacturing 和 warranty 压制；BIM/socket 改善毛利 | 2,000-3,000 万美元 | 3,500-4,800 万美元 | 5,000-7,000 万美元 | 7,000 万-1.00 亿美元 | 基准为当前可见订单正常兑现；乐观需要追加或第二客户 | B | 是 | 正式订单、明确 FY2027 交付、公司演示稿 PLBI 产能 | 基准纳入；多客户复制只进乐观/极度乐观 |
+| FOX-XP AI processor WLBI + WaferPak / AutoAligner | 2026-02 1,400 万美元订单 6 个月内交付；2024-12 超 1,000 万美元订单已形成历史收入 | 直接收入 | FOX 系统 + WaferPak 定制耗材，放量后利润质量高 | 800-1,400 万美元 | 1,500-2,200 万美元 | 2,500-3,800 万美元 | 3,500-5,500 万美元 | 基准略高于单笔订单，包含少量 WaferPak / service；乐观需要 benchmark 转单 | B/C | 是 | B 级订单进入基准；C 级 benchmark 不进基准 | 基准保守纳入；未量化 benchmark 只作上修 |
+| Silicon photonics / optical I/O WLBI | 2026-03 follow-on 与 major new customer 订单，金额未披露；客户给出后续 forecast | 直接收入 | 高功率 SiPh WaferPak / 系统配置可能高毛利，但新客户验收不确定 | 400-800 万美元 | 1,000-1,800 万美元 | 2,000-3,500 万美元 | 3,000-5,000 万美元 | 基准低于乐观叙事，只承认已见客户和初始 production | B/C | 是，小比例 | 有订单但金额未披露，按保守折扣 | 小比例进入基准；follow-on 进入乐观 |
+| SiC/GaN power semiconductor WLBI | FY2025 full-wafer contact product lines 3,920 万美元，但应用拆分不可得；Q3 管理层提 power semiconductors 需求 | 直接收入 | SiC 成熟但竞争和周期强；GaN 小基数可较高毛利 | 800-1,200 万美元 | 1,200-2,000 万美元 | 1,800-3,000 万美元 | 2,500-4,000 万美元 | 基准为温和恢复，低于历史高峰；乐观需要连续订单改善 | A/C | 是 | 历史收入 A；当前应用拆分不足，按折扣 | 基准纳入恢复，不把 AI power TAM 直接转收入 |
+| Legacy / memory / Tahoe / service | Q3 FY2026 service 152.8 万美元；HBF/flash 仅演示稿和 benchmark 阶段 | 直接收入 | 服务稳定，Tahoe/HBF 早期不确定 | 600-900 万美元 | 800-1,200 万美元 | 1,000-1,500 万美元 | 1,500-2,500 万美元 | 基准接近 run-rate；HBF 不进入基准 | A/D | 是，仅服务和可见 legacy | 服务收入 A；HBF/flash D 级 | 服务和 legacy 纳入；HBF/flash 仅作跟踪 |
+| 专有耗材与服务 | Q3 contactors 300.3 万美元、service 152.8 万美元；BIM/socket 未单列但 4,100 万美元订单明确包含 | 直接收入但跨产品 | 高毛利、复购、客户切换成本高 | 已包含在各应用线 | 已包含在各应用线 | 已包含在各应用线 | 已包含在各应用线 | 利润质量高于收入基数显示 | A/B | 随产品线进入 | 避免重复计入收入 | 作为利润率变量处理，不单独加总 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内能给 AEHR 贡献多少收入和毛利。表中产品线收入为经营估算，不能简单相加为公司情景上限，因为不同产品可能共用客户预算、交付产能、耗材收入和验收窗口。利润贡献主要按毛利贡献估算，经营利润还需扣除公司 R&D、SG&A、stock-based compensation、收购摊销和扩产费用。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Sonoma PLBI + BIM/socket | 悲观产品 | 2,000-3,000 万美元 | 毛利 700-1,200 万美元 | 35-40%，仍受早期制造和 warranty 压制 | 低于当前可见订单兑现 | 有订单但交付/验收跨期 | 保留为悲观 | Lead customer 推迟、二供/自研、BIM/socket 定制拖慢 |
+| Sonoma PLBI + BIM/socket | 基准产品 | 3,500-4,800 万美元 | 毛利 1,600-2,300 万美元 | 45% 左右，随规模改善 | 符合 4,100 万美元订单正常开始交付 | 2026-04 正式订单、FY2027 交付、current-gen production | 保留为基准核心 | 单客户集中，PLBI mix 低于 WLBI 毛利 |
+| Sonoma PLBI + BIM/socket | 乐观产品 | 5,000-7,000 万美元 | 毛利 2,400-3,800 万美元 | 48-54%，BIM/socket 复购改善 | 高于当前订单，但有 lead customer forecast 支持 | 公司称当前代和 next-gen 可能并行扩产 | 保留为乐观 | 需要追加订单或第二客户，不可只靠 pipeline |
+| Sonoma PLBI + BIM/socket | 极度乐观产品 | 7,000 万-1.00 亿美元 | 毛利 3,800-5,800 万美元 | 52-58%，供给稀缺时扩张 | 明显高于当前预期 | 多客户生产导入 + lead customer 大幅复制 | 保留为低可信上限 | 多 hyperscaler/OSAT production 证据不足 |
+| FOX-XP AI processor WLBI + WaferPak | 悲观产品 | 800-1,400 万美元 | 毛利 300-600 万美元 | 38-43% | 只承认已披露订单最低交付 | 1,400 万美元订单但新 benchmark 未转单 | 保留 | 客户不采用 WLBI 或转 package-level / ATE 方案 |
+| FOX-XP AI processor WLBI + WaferPak | 基准产品 | 1,500-2,200 万美元 | 毛利 700-1,200 万美元 | 45-52% | 符合订单和少量耗材复购 | 1,400 万美元订单、WaferPak/AutoAligner、历史订单 | 保留 | Correlation、thermal uniformity、throughput 需证明 |
+| FOX-XP AI processor WLBI + WaferPak | 乐观产品 | 2,500-3,800 万美元 | 毛利 1,300-2,200 万美元 | 50-58% | 高于当前预期 | paid evaluation 转 production；OSAT co-market | 保留 | 需要第二 AI processor 客户或大额 follow-on |
+| FOX-XP AI processor WLBI + WaferPak | 极度乐观产品 | 3,500-5,500 万美元 | 毛利 2,000-3,300 万美元 | 55-60% | 非线性上修 | WLBI 成为 CoWoS/HBM 前 KGD 主流程 | 保留为上限 | 公开订单未支持多客户默认化 |
+| Silicon photonics / optical I/O WLBI | 悲观产品 | 400-800 万美元 | 毛利 200-400 万美元 | 40-48% | 低于当前客户 forecast | 订单金额未披露，可能只是 qualification | 保留 | CPO/optical I/O 量产或可靠性筛选延后 |
+| Silicon photonics / optical I/O WLBI | 基准产品 | 1,000-1,800 万美元 | 毛利 500-900 万美元 | 48-55% | 符合初期 production | follow-on + new major customer 订单 | 保留 | 金额未披露，不能按行业光互联高增直接放大 |
+| Silicon photonics / optical I/O WLBI | 乐观产品 | 2,000-3,500 万美元 | 毛利 1,100-2,100 万美元 | 55-60% | 高于当前预期 | 新客户追加，1.6T/optical I/O 需求增强 | 保留 | 光耦合、module-level test 可能分流价值 |
+| Silicon photonics / optical I/O WLBI | 极度乐观产品 | 3,000-5,000 万美元 | 毛利 1,800-3,200 万美元 | 58-64% | 明显上修 | CPO / optical I/O 提前 HVM，WLBI 成瓶颈 | 保留为低可信上限 | 2026-2027 CPO timing 不确定 |
+| SiC/GaN power WLBI | 悲观产品 | 800-1,200 万美元 | 毛利 300-500 万美元 | 35-42% | 低于历史和当前修复预期 | EV/SiC 周期弱，GaN 仍验证 | 保留 | EV/industrial capex 延后、价格竞争 |
+| SiC/GaN power WLBI | 基准产品 | 1,200-2,000 万美元 | 毛利 500-1,000 万美元 | 42-50% | 温和恢复 | 历史 full-wafer contact 收入 + power demand | 保留 | AI power 不能直接等同 AEHR 订单 |
+| SiC/GaN power WLBI | 乐观产品 | 1,800-3,000 万美元 | 毛利 800-1,600 万美元 | 45-55% | 高于当前 run-rate | SiC 连续订单改善，GaN data-center power 量产 | 保留 | 客户认证 6-18 个月，2026 更多 design-in |
+| SiC/GaN power WLBI | 极度乐观产品 | 2,500-4,000 万美元 | 毛利 1,200-2,200 万美元 | 48-58% | 明显上修 | 800VDC/HVDC 或高压 GaN/SiC 提前采购 | 下移为低可信上限 | NTM 内高压架构全面放量证据不足 |
+| Legacy / memory / Tahoe / service | 悲观产品 | 600-900 万美元 | 毛利 200-300 万美元 | 30-40% | 低于稳定 run-rate | 服务稳定但 legacy 弱 | 保留 | 不足以抵消核心产品延迟 |
+| Legacy / memory / Tahoe / service | 基准产品 | 800-1,200 万美元 | 毛利 300-500 万美元 | 35-45% | 符合 run-rate | Q3 service 收入和 installed base | 保留 | HBF/flash 证据不足 |
+| Legacy / memory / Tahoe / service | 乐观产品 | 1,000-1,500 万美元 | 毛利 400-700 万美元 | 40-48% | 小幅上修 | Tahoe / memory / HBF small wins | 仅作补充 | 不能成为主增长引擎 |
+| Legacy / memory / Tahoe / service | 极度乐观产品 | 1,500-2,500 万美元 | 毛利 600-1,200 万美元 | 40-50% | 上修但规模仍小 | HBF/flash 进入更明确 production path | 移入附录跟踪 | D 级 pipeline，不能支撑公司极度乐观 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。汇总时剔除耗材重复计算，检查同一 lead hyperscaler 预算、Sonoma 与 FOX 的产能共用、SiPh 与 optical I/O 订单跨期、SiC/GaN 和 legacy 的周期抵消。公司当前预期锚点为 FY2026 指引高端 5,000 万美元、Q3 FY2026 effective backlog 5,090 万美元、4,100 万美元 Sonoma 订单、FY2026 H2 bookings 超过 9,200 万美元，以及管理层“FY2027 significant revenue growth”的定性目标。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 5,500-7,000 万美元 | 相对 FY2026 指引高端约 +10% 至 +40% | 低于当前订单兑现预期；4,100 万美元 Sonoma 或 FOX/SiPh 有较多跨期 | 32-38% | -18% 至 -8% | EBITDA / GAAP 净利润仍为负，净亏损约 400-1,000 万美元 | 负向，库存和定制件占用现金 | 中 | 客户验收跨期、PLBI 初期毛利低、SiC/GaN 弱、单客户依赖 |
+| 基准公司 | 8,500 万-1.05 亿美元 | 相对 FY2026 指引高端约 +70% 至 +110% | 当前可见订单正常兑现；低证据 pipeline 保守处理 | 40-47% | -3% 至 +8% | EBITDA / GAAP 净利润接近盈亏平衡至小幅盈利，约 -300 万至 +500 万美元 | 由负转平到小幅正，取决于库存转收入 | 中高 | Sonoma FY2027 交付、WaferPak/BIM/socket 供应、毛利恢复 |
+| 乐观公司 | 1.15 亿-1.50 亿美元 | 相对 FY2026 指引高端约 +130% 至 +200% | 高于当前预期；至少一个 lead customer follow-on、AI WLBI 或 SiPh 新客户转量产 | 47-53% | 10-22% | EBITDA / 净利润约 1,200-3,200 万美元 | 明显转正，收款和周转改善 | 中 | 追加订单、第二客户、SiPh follow-on、PLBI 良率和产能质量 |
+| 极度乐观公司 | 1.60 亿-2.30 亿美元 | 相对 FY2026 指引高端约 +220% 至 +360% | 显著高于当前预期；多个核心传导环节同时突破 | 52-58% | 22-32% | EBITDA / 净利润约 3,500-7,000 万美元 | 强正向，但 working capital 扩张同步上升 | 低到中 | 多客户量产、耗材复购、高毛利 mix、contract manufacturing 质量、无重大延期 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。市场价格、估值倍数和股价走势不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026-04-16 4,100 万美元 Sonoma PLBI 订单 | 收入基数、产品贡献、公司汇总 | 将 Sonoma 基准从 C 级 pipeline 上移为 B 级订单；支撑 NTM 3,500-4,800 万美元基准贡献 | BIM/socket 复购可改善毛利，但 PLBI 初期 mix 低于 WLBI | 从 FY2027 开始交付，支持库存转收入 | 保留基准；乐观仍需追加订单 |
+| Q3 FY2026 bookings 3,720 万美元、backlog 3,870 万美元、effective backlog 5,090 万美元 | 收入基数、执行可信度 | 提供 12 个月内排产收入能见度 | backlog 产品 mix 未披露，不能直接假设高毛利 | 若 Q4/FY2027 正常交付，现金流改善 | 保留基准；对悲观提供下限支撑 |
+| FY2026 H2 bookings 已超过 9,200 万美元 | 需求、收入基数 | 说明订单拐点强于 FY2026 收入 run-rate | 毛利取决于 PLBI vs WLBI vs contactors | 高订单带来存货和交付压力 | 上移需求可信度；不直接上移利润率 |
+| 公司 2026-06 演示稿披露 Fremont 产能和每月 20 台 PLBI 系统能力 | 执行可信度 | 支持乐观收入交付能力，但不是订单 | 规模吸收改善，但外包 ramp 有质量/成本风险 | 执行风险从厂房转向客户验收和供应链 | 保留乐观；极度乐观仍需订单验证 |
+| Q3 FY2026 毛利率 32.7%、九个月毛利率 30.9% | 利润率 | 不直接改变收入 | 限制基准毛利率，不允许收入增长自动转高利润 | 若 warranty、freight、tariff 和 PLBI ramp 继续，现金利润偏弱 | 下移基准利润率；保留收入基准 |
+| 客户集中和未披露客户名称 | 收入基数、执行可信度 | 单一 lead hyperscaler 可支撑基准但不能支撑多客户极度乐观 | 客户议价可能压低 ASP 和毛利 | 客户延期会放大收入与库存波动 | 限制乐观和极度乐观可信度 |
+| FOX-XP AI WLBI 1,400 万美元订单与 paid evaluation | 产品贡献 | B 级订单进入基准；benchmark 只进入乐观 | WaferPak / AutoAligner 利润质量较好 | 交付窗口 6 个月，需验证收入确认 | 保留基准；C 级机会保留为乐观 |
+| Silicon photonics follow-on 和 major new customer | 产品需求、收入基数 | 订单金额未披露，只能小比例进基准 | SiPh high-power 配置可能高毛利 | 新客户 qualification / HVM ramp 可能跨期 | 基准保守，乐观保留 |
+| SiC/GaN 与 AI power path | 需求 | AI power 强但 AEHR 只捕获设备/耗材的一小部分 | GaN 早期可能高毛利，SiC 受竞争和 EV 周期压制 | 认证 6-18 个月，NTM 内转收入有限 | 基准温和恢复；极度乐观下移为上限 |
+| HBF/flash memory 和 Tahoe | 远期期权 | 当前无足够订单金额，不能替代主线 | 若放量可改善多元化，但证据不足 | 需要更多客户和交付窗口 | 移入附录或仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 订单延迟、客户验收慢，NTM 收入 5,500-7,000 万美元，毛利率 32-38% | 已有 4,100 万美元订单和 effective backlog，资产负债表现金充足 | bookings/backlog 较强，完全跌回 FY2026 低谷概率不高 | 保留 | 悲观公司情景，低于当前订单兑现预期 | 中 | 客户集中只在收入确认和执行层处理，不再重复压低需求和利润率 |
+| 基准 | 已披露订单和 backlog 正常兑现，NTM 收入 8,500 万-1.05 亿美元，毛利率 40-47% | 4,100 万美元订单、Q3 bookings 3,720 万美元、H2 bookings 超 9,200 万美元、产能扩张 | Q3 毛利率低、PLBI 初期成本、应用收入拆分缺失 | 保留 | 最可能情景 | 中高 | PLBI 低毛利只在利润率处理，不再重复削减收入 |
+| 乐观 | lead customer 追加，AI WLBI 或 SiPh 至少一项转量产，NTM 收入 1.15 亿-1.50 亿美元 | 管理层披露 pipeline、Sonoma ramp forecast、SiPh new customer、paid evaluation | 新客户订单金额和时间表不足；需要第二增长点 | 保留 | 乐观公司情景 | 中 | pipeline 未量化只限制乐观可信度，不否定已披露订单 |
+| 极度乐观 | 多 hyperscaler / AI ASIC / SiPh / OSAT 同时突破，NTM 收入 1.60 亿-2.30 亿美元 | 行业高功耗 burn-in、CPO/SiPh、AI ASIC 和 GaN/SiC power path 需求强；公司有产能准备 | 多客户 production PO 缺失，WLBI/SiPh 普及率、毛利率和交付能力仍未验证 | 保留 | 极度乐观上限，低可信 | 低到中 | 同一“缺少第二客户”风险只限制极度乐观，不重复惩罚基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入最合理区间为 8,500 万-1.05 亿美元，相对 FY2026 指引高端约 +70% 至 +110%。这个区间不是来自行业 TAM 外推，而是来自 4,100 万美元 Sonoma 订单、Q3/effective backlog、FY2026 H2 bookings 超 9,200 万美元、Q4 FY2026 隐含交付和少量 SiPh / SiC / GaN / service 正常贡献。
+- NTM 收入结论：AEHR 已经从 FY2026 低谷 run-rate 进入订单兑现窗口，但收入基准仍高度依赖 lead hyperscaler 的 Sonoma PLBI 交付。基准收入可以超过 1 亿美元附近，但要进入 1.15 亿-1.50 亿美元乐观区间，需要 lead customer 追加、AI WLBI benchmark 转 production 或 SiPh major new customer follow-on 至少一项成立。
+- 利润/现金流结论：基准情景下利润质量仍处恢复期，不能因收入翻倍就自动假设 50%+ 毛利率。Q3 FY2026 毛利率 32.7% 和 package-level burn-in 初期成本说明，NTM 真正的经营价值来自：系统放量后制造吸收改善、WaferPak/BIM/socket 复购提升、warranty/freight/tariff 压力正常化、库存转收入。现金流在基准中应从负转平或小幅正，乐观以上才会显著转正。
+- 主要传导瓶颈：需求本身不是最大问题；最大瓶颈是“客户测试产线需求 -> AEHR 订单 -> 定制系统/BIM/socket/waferpak -> 客户验收 -> 收入确认 -> 毛利率恢复”的后四段。尤其要盯 lead hyperscaler、OSAT/test house、SiPh 新客户和 AI WLBI benchmark 的收入确认节奏。
+- 乐观情景成立条件：1）4,100 万美元 Sonoma 订单按 FY2027 初期节奏交付且出现 follow-on；2）至少一个 AI WLBI benchmark 或 SiPh 新客户转为 HVM 产能订单；3）contactors/BIM/socket 占比上升，毛利率向 47-53% 迁移；4）库存下降而不是继续堆积。
+- 极度乐观情景成立条件：1）第二个 hyperscaler、第二个 AI processor production customer 或大型 OSAT 明确下生产订单；2）Sonoma 与 FOX-XP 同时供不应求，且 contract manufacturing 保持质量；3）SiPh/CPO 或 GaN/SiC power path 在 NTM 内从 design-in 变成真实 production order；4）毛利率超过 52%，经营利润率超过 22%。
+- 悲观情景触发条件：1）Q4 FY2026 或 FY2027 指引未能显示 1 亿美元附近收入路径；2）4,100 万美元 Sonoma 订单交付明显推迟；3）Q3 backlog/effective backlog 不能顺利转收入；4）毛利率连续停留在 30-35% 且库存不降；5）客户披露或行业迹象显示 lead hyperscaler 改变 burn-in 策略、引入二供或延后 ASIC ramp。
+- 后续跟踪数据：Q4/FY2026 实际收入和 FY2027 指引、Sonoma 4,100 万美元订单交付进度、FY2027 bookings 和 backlog、第二客户或 OSAT production win、FOX-XP 1,400 万美元订单是否按期、SiPh 新客户是否追加、contactors/BIM/socket 占比、毛利率、库存和经营现金流。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：报告写作日为 2026-06-12；最新完整公开财务口径为 Q3 FY2026，季度截至 2026-02-27，公告日期 2026-04-07，10-Q 日期 2026-04-08；公司 2026-06 演示稿用于产能、产品和市场进展补充。Q4/FY2026 全年结果截至本报告写作时尚未发布。
+- 主要收入、订单、指引和利润率来源：
+  - Aehr Test Systems Q3 FY2026 results, 2026-04-07: https://www.aehr.com/2026/04/aehr-test-systems-reports-over-37-million-in-quarterly-bookings-driven-by-strong-ai-and-data-center-infrastructure-demand/
+  - Aehr 4,100 万美元 Sonoma PLBI order, 2026-04-16: https://www.aehr.com/2026/04/aehr-receives-record-41-million-production-order-from-lead-hyperscale-ai-customer-second-half-bookings-exceed-92-million/
+  - SEC Q3 FY2026 10-Q: https://www.sec.gov/Archives/edgar/data/1040470/000165495426003348/aehr_10q.htm
+  - Aehr June 2026 Company Presentation: https://www.aehr.com/wp-content/company-presentation/2026/AEHR-June-2026-Company-Presentation.pdf
+  - Aehr Sonoma initial production win, 2026-02-11: https://www.aehr.com/2026/02/aehr-secures-key-ai-production-burn-in-win-with-initial-order-of-sonoma-systems-for-lead-hyperscale-customers-next-generation-ai-asic-processors/
+  - Aehr first AI FOX-XP WLBI order, 2024-12-16: https://www.aehr.com/2024/12/aehr-test-systems-secures-initial-10-million-in-orders-for-production-wafer-level-burn-in-of-advanced-ai-processors/
+  - Aehr 1,400 万美元 FOX-XP AI WLBI order, 2026-02-26: https://www.aehr.com/2026/02/aehr-receives-14-million-order-from-lead-ai-processor-customer-for-multiple-new-fully-automated-fox-xp-wafer-level-burn-in-systems/
+  - Aehr silicon photonics follow-on, 2026-03-03: https://www.aehr.com/2026/03/aehr-receives-follow-on-order-for-fully-automated-wafer-level-burn-in-systems-powering-ai-optical-i-o-and-data-center-interconnects/
+  - Aehr major new silicon photonics customer, 2026-03-31: https://www.aehr.com/2026/03/aehr-wins-major-new-silicon-photonics-customer-with-high-power-fox-xp-wafer-level-burn-in-system-for-hyperscale-data-center-optical-interconnect-market/
+- 项目内公司调研资料：
+  - `公司调研/封测_检测_计量_光罩/AEHR_Aehr_Test_Systems_公司调研_2026-06-11.md`
+- 项目内行业调研资料：
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_硅光材料、光子材料与电光聚合物_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+  - `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 收入指引高端 4,500-5,000 万美元只作为当前收入基准，不替代 NTM 主表。
+  - FY2027 是最接近 NTM 的财年参考，但公司尚未给出正式 FY2027 收入指引；本报告使用订单/backlog/交付窗口推算。
+  - HBF/flash memory WLBI、Tahoe broader package-level burn-in、多 hyperscaler 复制、800VDC/HVDC 带动 GaN/SiC WLBI 属于补充或远期期权，未进入 NTM 基准主口径。
+- 主要排除项：
+  - 未使用股价、市值、P/S、P/E 或任何估值倍数作为经营价值传导证据。
+  - 未使用 `特征量化/`、Signals、结构化评分、回归、模型比较或全公司排序。
+  - 未把 AI 数据中心 CapEx、AI ASIC TAM、光互联 TAM、功率半导体 TAM 直接折算为 AEHR 收入。

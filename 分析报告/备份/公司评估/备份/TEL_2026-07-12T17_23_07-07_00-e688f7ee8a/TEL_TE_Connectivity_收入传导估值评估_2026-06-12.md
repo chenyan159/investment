@@ -1,0 +1,165 @@
+# 公司收入传导与价值传导评估：TE Connectivity
+
+报告日期：2026-06-12  
+公司代号：TEL  
+公司名称：TE Connectivity plc  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM，约为 2026-06-12 向后 12 个月或未来 4 个季度。  
+边界说明：本报告只评估行业和产品需求到 TEL 可确认收入、利润和经营质量的传导，不做全公司排序，不给投资评级，不判断股价区间，不做估值倍数判断。资料使用范围为 `公司调研/`、`行业调研/` 和外部公开经营资料；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论或模型比较。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM。FY2026、FY2027、Investor Day 中期目标和 AI/Cloud 长期 run-rate 只作为补充，不替代 NTM。
+- 当前收入基准、指引和 run-rate：TE Connectivity FY2026 Q2 截至 2026-03-27，单季收入 47.44 亿美元，同比 +15%、有机 +7%；调整后 EPS 2.73 美元；调整后经营利润率 22%；订单约 53 亿美元，同比 +25%，book-to-bill 约 1.12。公司对 FY2026 Q3 的正式指引为收入约 50 亿美元、调整后 EPS 约 2.83 美元。以 FY2025 全年收入 172.62 亿美元和 FY2026 Q1/Q2 实际值替换计算，TTM 收入约 187 亿美元。
+- 重要产品/业务线：Transportation Solutions；Digital Data Networks, DDN 高速 I/O、cage、connector、DAC/AEC 相关组件；224G/448G backplane、cabled/near-ASIC interconnect 与 CPO/CPX 连接期权；rack power、高电流 connector、busbar、blind-mate power 与液冷邻近连接；Energy grid / data center power access；ACL、AD&M、Medical 等其他 Industrial 稳定项。
+- NTM 公司收入四情景：悲观 190-196 亿美元；基准 201-208 亿美元；乐观 210-220 亿美元；极度乐观 222-234 亿美元。这里的增速是相对约 187 亿美元 TTM 的经营收入变化，不是股价或估值判断。
+- 利润或 EBITDA 四情景：悲观调整后经营利润率 20.0%-20.8%，调整后净利润约 29-32 亿美元；基准调整后经营利润率 21.2%-22.2%，调整后净利润约 33-36 亿美元；乐观调整后经营利润率 22.3%-23.3%，调整后净利润约 37-41 亿美元；极度乐观调整后经营利润率 23.2%-24.5%，调整后净利润约 42-48 亿美元。GAAP 口径会受重组、收购相关摊销、税项和非经常项目影响。
+- 最大传导瓶颈：DDN 和 rack power 的订单很强，但 TEL 仍有约一半收入在 Transportation，汽车平台、区域产量、客户库存和价格侵蚀会稀释 AI/DC 增量。
+- 最大利润率变量：DDN mix、224G/448G 定制高速互联、rack power 高电流连接器和 Energy/Richards 协同能否提升 Industrial 利润率；反向变量是标准 cage/cable 商品化、客户双供压价和 Transportation net price erosion。
+- 最大现金流变量：订单转收入速度、库存与应收周转、AI 高速互联和 Energy 项目的扩产资本开支、Richards 并购整合与 working capital。
+- 可信度：基准情景为中高。A/B 级证据来自公司分部收入、订单、Q3 指引和 Q2 现金流；乐观情景依赖 DDN、Energy、rack power 的持续订单兑现，可信度中；极度乐观需要需求、份额、利润率和执行同时突破，可信度低到中。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Transportation Solutions：汽车、商用交通、传感器连接 | FY2026 Q2 24.22 亿美元，年化约 96.9 亿美元 | Q2 约 51.1% | 最大收入底盘；决定公司整体是否被传统周期拖累 | A | 进入基准。按低个位数到中个位数处理，不因 AI 主题上调 | 下一代车辆高压连接、车载高速数据连接为长期内容量机会 |
+| DDN 高速 I/O、cage、connector、DAC/AEC 相关组件 | DDN Q2 约 7.14 亿美元，年化约 28.6 亿美元；AI/Cloud 子集未单独披露，按 FY2025 官方约 14 亿美元和 Q2 DDN 增速估算当前年化约 18-22 亿美元 | DDN Q2 约 15.1% | TEL NTM 最大成长业务；AI 数据中心互联主线 | A/B | 进入基准。DDN 总收入为 A 级，AI/Cloud 产品拆分为 B/C 级估算 | 1.6T、224G、AI switch/server 平台份额上修 |
+| 224G/448G backplane、cabled interconnect、near-ASIC interconnect | 当前年化估算约 3-6 亿美元，包含在 DDN 中 | 估算约 2%-3% | 高速互联 mix 上修的核心利润变量 | C | 224G 保守折扣后进入基准；448G 只进入乐观/极度乐观 | 448G、near-package、flyover copper 2027+ 放量 |
+| CPO/CPX/NPO socket、fiber attach、光纤管理 | 当前收入估计低于 0.5-1.0 亿美元，主要在工程和小批量 | 小于 0.5% | 可能改变 I/O 连接形态，但 NTM 收入确定性低 | D | 不进入基准，只在乐观上限和远期期权跟踪 | CPO/CPX 提前商用、near-package optics 标准化 |
+| rack power、高电流 connector、busbar、blind-mate power、液冷邻近连接 | 当前 AI/DC 年化估算约 2-5 亿美元，分散在 DDN/Energy/Industrial | 估算约 1%-3% | AI rack 功率密度提升带来的第二增长曲线 | C | 小比例进入基准；显著放量进入乐观/极度乐观 | 800VDC、liquid-cooled busbar、1MW rack、HVDC connector |
+| Energy grid / data center power access | Energy Q2 约 4.45 亿美元，年化约 17.8 亿美元；AI/DC 邻近收入估算约 2.5-6 亿美元 | Energy Q2 约 9.4% | 数据中心电力接入和电网硬化邻近机会；Richards 并购增强北美 utility channel | A/C | Energy 总收入进入基准；AI/DC 归因只保守纳入 | 数据中心 interconnection 项目更快落地、utility 标准件加速 |
+| ACL、AD&M、Medical 等其他 Industrial | Q2 合计约 11.63 亿美元，年化约 46.5 亿美元 | Q2 约 24.5% | 稳定项和抵消项；AD&M 稳健，Medical 短期弱 | A | 进入基准，但不作为 AI 增量主线 | AD&M 高可靠连接和工业自动化复苏 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不评估 TEL 份额、收入确认、利润率或公司层面汇总。需求变化相对每条产品自己的当前需求锚，而不是相对其他公司热度。DDN、224G、rack power、Energy 的行业需求强弱不能直接等同为 TEL 收入增长；收入化在第 4-5 节处理。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Transportation Solutions | Q2 FY2026 收入 24.22 亿美元；有机 -0.5%；其中 automotive 有机 -3.8%、commercial transportation 有机 +17.1%、sensors 有机 -3.0% | 外部汽车和传感器需求弱于当前预期；车辆产量、平台 mix 或客户库存使需求 -3% 到 +1% | 低个位数恢复，商用交通强项抵消汽车弱项，需求 0% 到 +4% | 车辆产量和高压/数据连接内容量同步改善，需求 +4% 到 +7% | 全球车市、商用交通和高压连接平台同时改善，需求 +7% 到 +10% | 相对当前年化需求池：悲观少 3-8 亿美元；基准增 0-4 亿美元；乐观增 4-8 亿美元；极度增 8-12 亿美元 | 基准大体符合当前预期；悲观是低于预期；乐观需要汽车不再拖累 | TE Q2 分部披露显示 Transportation 仍是大盘但有机增长弱；公司 2025 年报也显示 FY2025 Transportation 有机 -1.0%，价格侵蚀和区域产量是反证 |
+| DDN 高速 I/O、cage、connector、DAC/AEC 相关组件 | Q2 FY2026 DDN 约 7.14 亿美元，同比 +48.1%、有机 +46.1%；AI/Cloud FY2025 官方约 14 亿美元 | AI networking 和 800G/1.6T 仍增长，但客户部署、GPU/交换机或光模块供应延迟，需求 +15% 到 +25% | 800G/1.6T 和 AI switch/server 正常放量，需求 +30% 到 +45% | 1.6T、GB300、ASIC rack 和 hyperscaler 订单同步强于预期，需求 +50% 到 +70% | AI network、GPU rack、custom ASIC 与结构化布线同时非线性上修，需求 +80% 到 +100%+ | 以 DDN 年化约 28.6 亿美元为锚：悲观增约 4-7 亿美元；基准增约 9-13 亿美元；乐观增约 14-20 亿美元；极度增约 23 亿美元以上 | 基准到乐观偏上；当前订单强但已部分被预期 | 本地行业资料显示 2026 年 800G/1.6T、224G 和 AI 网络端口为主要增量；反证是客户双供、光模块价格下行和 AI rack 验收延迟 |
+| 224G/448G backplane、cabled/near-ASIC interconnect | 当前主要是 224G 设计导入和早期量产；448G 为预研/样机；当前年化估算 3-6 亿美元，包含在 DDN | 224G 客户验证后移，需求仅 +20% 到 +40%；448G 不形成 NTM 商业需求 | 224G 从验证转向更多 AI switch/server 平台，需求 +50% 到 +80% | 224G 成为新平台默认选项，cabled backplane 和 near-ASIC 价值量上升，需求 +90% 到 +140% | 224G 快速扩散叠加 448G 设计锁定提前，需求 +150%+ | 当前需求池小，绝对增量悲观 1-2 亿美元；基准 2-5 亿美元；乐观 5-8 亿美元；极度 8-15 亿美元 | 基准为正常兑现；乐观以上需要客户平台证据 | 高速 SI/thermal/EMI 难度提高支持需求；反证是客户设计周期、标准变化和 GPU/ASIC 平台延期 |
+| CPO/CPX/NPO 连接和光纤管理 | 2026 多为样机、标准和设计座位；当前收入估计低于 0.5-1.0 亿美元 | CPO/CPX 保持试点，NTM 商业需求无法可靠量化 | 少量工程和试点需求，收入需求 1-2.5 亿美元级 | 若若干 hyperscaler 商用试点，需求 2.5-6 亿美元 | 若前面板功耗/密度压力使 CPX/CPO 提前导入，需求 6-12 亿美元 | 绝对需求仍小，主要是 2027+ 期权 | 基准不进入公司主收入；乐观只作为上限 | 方向重要但 NTM 时间表不足；不得把 CPO 长期趋势写入基准需求 |
+| rack power、高电流 connector、busbar、blind-mate power、液冷邻近连接 | AI rack 从 100-155kW 向 180-300kW 和更高功率设计推进；行业资料认为 48/50V ORv3/HPR 是 2026 主线，800VDC 是 2026H2-2027 design-in | GB300/Rubin 验收、800V 标准或安全认证后移，需求 +10% 到 +25% | 48/50V busbar、high-current connector、BBU/energy shelf 正常放量，需求 +40% 到 +70% | 高功率 rack、BBU、HVDC connector 和 blind-mate power 提前锁单，需求约 +100% | 300kW-1MW rack、800VDC 和 liquid-cooled busbar 进入头部客户采购规范，需求 +150%+ | 以当前 AI/DC 年化估算 2-5 亿美元为锚：基准增约 1-3 亿美元；乐观增约 3-8 亿美元；极度增约 8-15 亿美元 | 基准偏强但合理；极度乐观只作为上限 | 行业资料显示 50V busbar 和 connector 是 2026 确定路径；反证是 800V 安规、现场可靠性和标准化慢于预期 |
+| Energy grid / data center power access | Energy Q2 4.45 亿美元，reported +59.5%、organic +11.2%，并购 Richards 贡献明显；外部需求锚是 utility grid hardening 和数据中心 interconnection | utility 许可、施工窗口或数据中心上电延迟，需求 0% 到 +6% organic | grid hardening 和数据中心接入正常推进，需求 +8% 到 +15% organic | 北美 AI 数据中心电力接入项目密集释放，需求 +15% 到 +25% organic | 多个 AI 园区供电项目提前采购，需求 +25% 到 +40% organic/reporting mix 更强 | Energy 年化 17.8 亿美元锚：基准需求增约 1-3 亿美元；乐观 3-5 亿美元；极度 5-8 亿美元以上 | 基准符合当前 Energy 有机增长和订单环境；reported 高增不可全当 AI 需求 | Richards 并购强化北美 utility；反证是 reported growth 大部分来自并购和普通电网，不可全部归因 AI/DC |
+| ACL、AD&M、Medical 等其他 Industrial | Q2 合计约 11.63 亿美元；ACL 有机 +8.2%，AD&M +5.4%，Medical -3.5% | Medical 继续弱、ACL/AD&M 放缓，需求 -2% 到 +2% | ACL/AD&M 稳健、Medical 低位稳定，需求 +2% 到 +6% | AD&M、工业自动化和连接生活复苏，需求 +6% 到 +10% | AD&M 与自动化同步上修，需求 +10% 到 +14% | 年化 46.5 亿美元锚：基准增约 1-3 亿美元；乐观 3-5 亿美元；极度 5-7 亿美元 | 基准为稳定项，不上调 AI 叙事 | 这是公司组合质量和利润稳定器，非 AI/DC 主线 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些产品需求能进入 TEL NTM 收入表，以及当前可收入化基数。公司能参与需求池，不等于能在 NTM 确认收入。A/B 级证据可作为基准主口径；C 级只有在客户、产品和时间表较清楚时小比例进入基准；D/E 级不进入 NTM 基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Transportation Solutions | FY2026 Q2 24.22 亿美元，年化约 96.9 亿美元；Q2 adjusted OM 约 21.6% | 直接收入 | 大规模成熟业务；利润率受 net price erosion、制造效率和平台 mix 影响 | 92-96 亿美元 | 97-101 亿美元 | 102-107 亿美元 | 108-114 亿美元 | 基准大体符合当前 run-rate；悲观低于当前预期 | A | 是 | 分部收入和利润率已披露；Q3 公司指引支持总收入增长 | 基准作为公司底盘；不因 AI 主题上调 |
+| DDN 高速 I/O、cage、connector、DAC/AEC 相关组件 | DDN Q2 约 7.14 亿美元，年化约 28.6 亿美元；AI/Cloud FY2025 约 14 亿美元 | 直接收入 | 高速互联和客户工程导入，利润率大概率高于普通工业连接，但未单独披露 | 30-34 亿美元 | 36-41 亿美元 | 42-49 亿美元 | 50-60 亿美元 | 基准高于当前年化，但符合 Q1/Q2 高增和订单；乐观为超预期 | A/B | 是 | DDN 分项收入为 A；订单和 AI/Cloud 目标为 B；具体产品拆分为估算 | NTM 增量核心。进入基准，但不把所有 AI 网络 TAM 当 TEL 收入 |
+| 224G/448G backplane、cabled/near-ASIC interconnect | 当前估算 3-6 亿美元，包含在 DDN；无单独披露 | 直接，但与 DDN 重叠 | 定制化和高 SI 难度带来 mix 提升，不是额外独立 segment | 4-6 亿美元 | 7-11 亿美元 | 12-18 亿美元 | 20-30 亿美元 | 基准是 DDN 内部 mix 上修；不是公司总收入额外相加 | C | 部分是 | 224G 客户验证和行业路线明确，但金额未披露；448G/CPO 不进基准 | 224G 折扣纳入 DDN 基准；448G 进入乐观/极度和附录跟踪 |
+| CPO/CPX/NPO 连接和光纤管理 | 当前估计低于 0.5-1.0 亿美元，工程/样机为主 | 直接但小 | 若形成标准，长期利润率可好；NTM 确认路径弱 | 无法可靠量化 | 不进入基准 | 2.5-6 亿美元 | 6-12 亿美元 | 当前只代表 NTM 上限，不代表预期 | D | 否 | 产品和生态方向存在，但客户、交付和收入确认时间表不足 | 不进基准；乐观上限和远期期权 |
+| rack power、高电流 connector、busbar、blind-mate power、液冷邻近连接 | 当前 AI/DC 年化估算 2-5 亿美元，分散在 DDN/Energy/Industrial | 直接/邻近 | 高可靠 power connector、busbar 和 blind-mate 可能有较好毛利，但标准化后价格压力存在 | 2-4 亿美元 | 4-8 亿美元 | 8-13 亿美元 | 13-20 亿美元 | 基准高于当前年化但有 rack power 行业和客户订单支持；上限需架构快速统一 | C | 小比例是 | 行业资料和 TE 产品/能力支持；公司未单独披露收入 | 小比例进入基准，明确标为估算；800VDC 大规模收入不进基准 |
+| Energy grid / data center power access | Energy Q2 4.45 亿美元，年化约 17.8 亿美元；AI/DC 邻近部分估算 2.5-6 亿美元 | 直接收入，但 AI/DC 归因部分为邻近 | utility 认证、项目型交付和 Richards 协同；利润率依赖项目 mix 和整合 | Energy 总收入 18-20 亿美元；AI/DC 邻近 3-5 亿美元 | Energy 总收入 19-23 亿美元；AI/DC 邻近 5-9 亿美元 | Energy 总收入 23-28 亿美元；AI/DC 邻近 9-15 亿美元 | Energy 总收入 30-38 亿美元；AI/DC 邻近 15-25 亿美元 | Energy 总收入进入基准；AI/DC 归因只保守处理 | A/C | 是，但 AI/DC 子集折扣 | Energy 分项为 A；AI/DC 归因来自项目和行业映射，为 C | Energy 总收入进入公司基准；AI/DC 只作为邻近增量，不重复计入 DDN/rack power |
+| ACL、AD&M、Medical 等其他 Industrial | Q2 合计约 11.63 亿美元，年化约 46.5 亿美元 | 直接收入 | AD&M 和 ACL 稳定，Medical 短期拖累；利润属性偏稳定 | 44-47 亿美元 | 46-50 亿美元 | 50-55 亿美元 | 55-60 亿美元 | 基准符合当前 run-rate；乐观需行业复苏 | A | 是 | 分项收入和增长已披露 | 进入公司基准，作为稳定项和抵消项 |
+
+排除项：客户总 AI capex、AI 数据中心建设总金额、AI 网络/光/铜互联 TAM、GPU 出货金额、光模块/DSP/switch ASIC 价值、变压器/UPS/switchgear/EPC 总项目额均不直接进入 TEL NTM 收入。CPO/CPX 若无客户、时间表和收入确认路径，不进入 NTM 基准。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第 3 节需求和第 4 节收入基数出发，判断每个重要产品在 NTM 内可给 TEL 贡献的收入和利润。表内 DDN、Energy、Transportation、其他 Industrial 可用于公司汇总；224G/CPO 和 rack power 是 DDN/Energy 内部 mix 或邻近子项，不能与 DDN/Energy 机械相加。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Transportation Solutions | 悲观 | 92-96 亿美元 | 调整后经营利润约 18.5-20.0 亿美元 | 低于当前约 21.6% | 低于当前 run-rate | Q2 有机 -0.5%，automotive -3.8% | 保留为悲观底盘 | 汽车产量、平台 mix、库存、net price erosion |
+| Transportation Solutions | 基准 | 97-101 亿美元 | 调整后经营利润约 20.5-22.0 亿美元 | 大体稳定 | 符合当前预期 | Q2 收入年化、Q3 公司指引、商业交通强 | 保留 | 汽车弱项仍可能抵消商用交通 |
+| Transportation Solutions | 乐观 | 102-107 亿美元 | 调整后经营利润约 22.0-24.0 亿美元 | 小幅改善 | 高于当前预期 | 高压连接、商用交通、亚洲平台 mix 改善 | 保留为上行但非主线 | 全球车市和客户库存需改善 |
+| Transportation Solutions | 极度乐观 | 108-114 亿美元 | 调整后经营利润约 24.0-26.5 亿美元 | 改善 | 明显高于预期 | 车辆生产、EV/高压平台和商用交通同时转强 | 下移到乐观上限 | 缺少 NTM 内全面恢复证据 |
+| DDN 高速 I/O、cage、connector、DAC/AEC 相关组件 | 悲观 | 30-34 亿美元 | 调整后经营利润约 6.3-7.2 亿美元 | 仍高但低于预期 | 低于当前高增长路径 | DDN 已有 A 级收入，但 AI rack 验收或客户订单可能延后 | 保留 | 客户双供、光模块价格下行、GPU/交换机延迟 |
+| DDN 高速 I/O、cage、connector、DAC/AEC 相关组件 | 基准 | 36-41 亿美元 | 调整后经营利润约 8.0-9.6 亿美元 | 高于公司平均或带动 Industrial margin | 符合订单和高增 run-rate | Q2 DDN +48.1%/+46.1%，公司订单 53 亿美元 | 保留 | 具体客户和 backlog 未披露 |
+| DDN 高速 I/O、cage、connector、DAC/AEC 相关组件 | 乐观 | 42-49 亿美元 | 调整后经营利润约 9.8-12.0 亿美元 | 改善 | 高于当前预期 | 1.6T、GB300、ASIC rack、高速铜互联同步放量 | 保留 | 标准件 ASP 下行；Amphenol/Molex/Samtec 竞争 |
+| DDN 高速 I/O、cage、connector、DAC/AEC 相关组件 | 极度乐观 | 50-60 亿美元 | 调整后经营利润约 12.0-15.0 亿美元 | 明显改善 | 非线性超预期 | AI 网络和 224G/1.6T 同时上修，TEL wallet share 上升 | 保留为低可信上限 | 任一客户/产能/价格环节缺证据即下移 |
+| 224G/448G backplane、cabled/near-ASIC interconnect | 悲观 | 4-6 亿美元，包含在 DDN | 利润贡献无法可靠单列；mix 正向但小 | 中性到小幅正向 | 低于当前乐观叙事 | 224G 仍在验证和 ramp | 保留 | 设计验证后移 |
+| 224G/448G backplane、cabled/near-ASIC interconnect | 基准 | 7-11 亿美元，包含在 DDN | 利润贡献无法可靠单列；大概率高于标准 cage | 改善 DDN mix | 符合 DDN 正常升级 | 224G 是 2026-2027 高速互联主线 | 保留但折扣 | 金额为估算，未披露客户级收入 |
+| 224G/448G backplane、cabled/near-ASIC interconnect | 乐观 | 12-18 亿美元，包含在 DDN | 利润贡献中高，但无法可靠量化 | 明显改善 | 高于当前预期 | 多平台 224G design win 和 AI switch/server 放量 | 保留 | 客户双供和 SI 良率 |
+| 224G/448G backplane、cabled/near-ASIC interconnect | 极度乐观 | 20-30 亿美元，包含在 DDN | 高利润 mix，但无法可靠量化 | 明显扩张 | 明显超预期 | 448G 提前锁定、near-ASIC 价值量上升 | 下移到乐观上限/远期期权 | 448G NTM 收入证据不足 |
+| CPO/CPX/NPO 连接和光纤管理 | 悲观 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 不进入预期 | 仍为试点和生态 | 排除基准 | 没有 NTM 量产时间表 |
+| CPO/CPX/NPO 连接和光纤管理 | 基准 | 不进入基准 | 不进入基准 | 不适用 | 符合保守口径 | D 级证据 | 排除 | 客户、产品、交付、价格不清楚 |
+| CPO/CPX/NPO 连接和光纤管理 | 乐观 | 2.5-6 亿美元 | 利润率可能好，但无法可靠量化 | 正向 | 高于当前预期 | 若商用试点提前 | 移入附录/仅作跟踪 | CPO 可维护性和良率 |
+| CPO/CPX/NPO 连接和光纤管理 | 极度乐观 | 6-12 亿美元 | 无法可靠量化 | 正向但不确定 | 只代表上限 | CPX/CPO 提前商用且 TEL 取得供应资格 | 移入附录 | NTM 证据不足 |
+| rack power、高电流 connector、busbar、blind-mate power、液冷邻近连接 | 悲观 | 2-4 亿美元，包含在 DDN/Energy/Industrial | 利润贡献无法可靠单列 | 中性 | 低于当前 AI rack power 叙事 | 48/50V 放量但 800V 延迟 | 保留 | 安规、客户认证、现场可靠性 |
+| rack power、高电流 connector、busbar、blind-mate power、液冷邻近连接 | 基准 | 4-8 亿美元，包含在 DDN/Energy/Industrial | 毛利率方向正向，但折扣纳入 | 改善 | 符合 rack power 放量 | 50V busbar、ORv3/HPR、AI rack 功率上升 | 保留 | 产品收入未单独披露 |
+| rack power、高电流 connector、busbar、blind-mate power、液冷邻近连接 | 乐观 | 8-13 亿美元，包含在 DDN/Energy/Industrial | 较高定制件利润，无法可靠单列 | 改善 | 高于预期 | GB300/VR rack、BBU、HVDC RFQ 增强 | 保留 | 供应和认证需同步 |
+| rack power、高电流 connector、busbar、blind-mate power、液冷邻近连接 | 极度乐观 | 13-20 亿美元，包含在 DDN/Energy/Industrial | 高利润但取决于定制和稀缺供给 | 明显改善 | 非线性超预期 | 300kW-1MW rack 和 800VDC 快速统一 | 保留为低可信上限 | 800VDC 和液冷母线事故/延迟 |
+| Energy grid / data center power access | 悲观 | Energy 总收入 18-20 亿美元；AI/DC 邻近 3-5 亿美元 | 调整后经营利润无法单列；Industrial margin 承压 | 中性到下行 | 低于当前 reported growth | 有机增长放缓，Richards 协同慢 | 保留 | utility 许可、施工、并购整合 |
+| Energy grid / data center power access | 基准 | Energy 总收入 19-23 亿美元；AI/DC 邻近 5-9 亿美元 | 利润贡献正向但受项目 mix 影响 | 稳定到改善 | 符合当前预期 | Q2 Energy +59.5% reported、+11.2% organic，Richards 贡献 | 保留 | reported 增长不可全归因 AI |
+| Energy grid / data center power access | 乐观 | Energy 总收入 23-28 亿美元；AI/DC 邻近 9-15 亿美元 | 规模和协同改善，但无法可靠单列 | 改善 | 高于当前预期 | 数据中心 power access 项目加速 | 保留 | 项目周期和 utility 预算 |
+| Energy grid / data center power access | 极度乐观 | Energy 总收入 30-38 亿美元；AI/DC 邻近 15-25 亿美元 | 可能扩张，但项目型属性限制利润非线性 | 改善但不自动爆发 | 明显超预期 | 多个 AI 园区接入项目提前采购 | 下移到乐观上限 | 大部分 Energy 仍非 AI 专用 |
+| ACL、AD&M、Medical 等其他 Industrial | 悲观 | 44-47 亿美元 | 利润贡献稳定但低于计划 | 小幅下行 | 低于预期 | Medical 弱、ACL 放缓 | 保留 | 工业周期和医疗库存 |
+| ACL、AD&M、Medical 等其他 Industrial | 基准 | 46-50 亿美元 | 利润贡献约 8-10 亿美元级别，无法可靠拆分 | 稳定 | 符合预期 | ACL/AD&M 增长，Medical 低位 | 保留 | 与 AI 直接相关性弱 |
+| ACL、AD&M、Medical 等其他 Industrial | 乐观 | 50-55 亿美元 | 利润贡献改善 | 小幅改善 | 高于预期 | AD&M 和自动化复苏 | 保留 | 需要真实订单而非主题映射 |
+| ACL、AD&M、Medical 等其他 Industrial | 极度乐观 | 55-60 亿美元 | 利润贡献改善 | 改善 | 明显高于预期 | AD&M、自动化、Medical 同步恢复 | 下移到乐观上限 | 缺少同步强复苏证据 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。汇总时避免把 DDN 与 224G/CPO、rack power、Energy AI/DC 邻近收入重复相加；CPO/CPX 和 448G 主要作为乐观上限或附录跟踪，不进入基准公司收入。所有利润率为经营传导分析口径，非市场定价或估值判断。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 190-196 亿美元 | 相对约 187 亿美元 TTM 为 +2% 到 +5% | 低于 Q3 指引延伸和订单隐含路径；DDN 增长仍在但明显降速 | 35.0%-36.0% | 调整后 20.0%-20.8% | EBITDA 约 43-47 亿美元；调整后净利润约 29-32 亿美元 | FCF 约 20-24 亿美元，库存和应收占用上升 | 中 | DDN 订单转收入慢、Transportation 继续拖累、Energy 项目延迟 |
+| 基准公司 | 201-208 亿美元 | +7.5% 到 +11% | 接近 Q3 指引、当前 run-rate 和订单正常兑现路径 | 36.0%-37.0% | 调整后 21.2%-22.2% | EBITDA 约 48-53 亿美元；调整后净利润约 33-36 亿美元 | FCF 约 26-31 亿美元，接近高质量工业龙头常态 | 中高 | DDN 增长能否抵消 Transportation 低增和并购整合成本 |
+| 乐观公司 | 210-220 亿美元 | +12% 到 +18% | 高于当前预期，来自 DDN、224G、rack power 与 Energy 同步强 | 37.0%-38.0% | 调整后 22.3%-23.3% | EBITDA 约 53-59 亿美元；调整后净利润约 37-41 亿美元 | FCF 约 31-37 亿美元，若 working capital 管理正常则现金转化改善 | 中 | 高速互联和 rack power 的产能、客户双供压价、标准件 ASP 下行 |
+| 极度乐观公司 | 222-234 亿美元 | +19% 到 +25% | 明显高于当前预期；需要 AI/DC 需求、TEL 捕获、利润率和执行同时突破 | 38.0%-39.0% | 调整后 23.2%-24.5% | EBITDA 约 60-68 亿美元；调整后净利润约 42-48 亿美元 | FCF 约 37-45 亿美元，但扩产和库存前置可能短期压低现金转化 | 低到中 | 多个核心环节必须同时成立；单一 CPO 或 Energy 项目不能支撑整公司极度乐观 |
+
+汇总检查：
+
+- DDN、224G/CPO 与 rack power 存在重叠，基准公司收入只把 DDN 和 Energy 总 segment 作为主要收入骨架，子项仅用于解释 mix 和利润率。
+- Richards 对 Energy reported growth 的贡献不等于 AI/DC 新增需求；本报告在基准中只把 Energy 总收入纳入，而不把全部 Energy 增量归因于 AI 数据中心。
+- Transportation 仍为最大业务，任何公司级乐观情景都必须假设 Transportation 至少不继续恶化。
+- 低毛利或项目型收入上修不能自动变成利润率上修；利润率改善必须来自 DDN mix、定制高速互联、规模效应、制造效率和价格纪律。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在它影响的层级处理一次，避免重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q2 FY2026 公司订单约 53 亿美元，book-to-bill 约 1.12 | 收入基数、公司汇总、执行可信度 | 支撑 Q3/Q4 收入可见度和 DDN/Energy 正常兑现 | 若订单 mix 偏 DDN/Industrial，有助于利润率 | 订单转收入需要库存、产能和交付节奏配合 | 基准和乐观保留；悲观不排除但需订单延迟证据 |
+| Q3 FY2026 指引约 50 亿美元收入、调整后 EPS 约 2.83 美元 | 公司汇总 | 明确高于 Q2 run-rate，支持 NTM 基准 201-208 亿美元 | 支撑调整后 OPM 21%+ | 指引短期可见度强 | 基准保留 |
+| DDN Q2 约 7.14 亿美元，organic +46.1% | 需求、收入基数、产品贡献 | 是 TEL AI/DC 收入化的核心 A 级证据 | 高速互联 mix 有助于 Industrial margin | 需要客户认证、产能和交付 | 基准保留；乐观保留 |
+| FY2025 AI/Cloud 官方约 14 亿美元，管理层展示 30 亿美元以上中期轨迹 | 收入基数、远期补充 | 支持 DDN 增长方向，但中期目标不能替代 NTM | 若转向定制高速互联，利润率正向 | NTM 节奏需由订单和季报验证 | NTM 基准只保守纳入；中期目标作为补充口径 |
+| Transportation Q2 有机 -0.5%，automotive -3.8% | 公司组合风险 | 抵消 DDN 和 Energy 增长 | 价格侵蚀和低利用率可能压制利润率 | 工作资本和库存风险较低但利润弹性弱 | 悲观保留；基准不再额外惩罚 |
+| Energy Q2 reported +59.5%，organic +11.2%，Richards 并购贡献明显 | 收入基数、公司组合 | Energy 总收入可进入基准，但 AI/DC 子集需折扣 | 并购和项目 mix 对利润率不确定 | integration、utility 项目周期影响现金流 | Energy 基准保留；AI/DC 全额归因排除 |
+| 224G/448G、CPO/CPX、800VDC、liquid-cooled busbar | 需求、收入基数、产品贡献 | 224G 可部分进入基准；448G/CPO/800V 大规模收入偏乐观或远期 | 定制件可能提升利润率 | 认证和标准进度是执行门槛 | 224G 保留；CPO/448G/800V 大规模收入移入附录或仅作跟踪 |
+| 客户双供、Amphenol/Molex/Samtec 竞争和标准件 ASP 下行 | 产品贡献、利润率 | 不一定降低需求，但限制 TEL 捕获和价格 | 限制极度乐观利润率 | 客户 AVL 和替换成本决定份额 | 在第 5 节产品利润处理一次，不在公司汇总重复惩罚 |
+| Q2 FCF 约 6.80 亿美元，Q1 FCF 约 6.08 亿美元 | 现金流 | 不直接增加收入 | 强现金流支持扩产和并购整合 | 半年 FCF 约 12.88 亿美元支持基准现金转化 | 基准 FCF 保留；极度乐观仍需 working capital 验证 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | DDN 仍增长但订单转收入慢；Transportation 和 Energy 项目拖累，公司收入 190-196 亿美元 | 当前订单和 Q3 指引并未显示全面衰退 | Q2 订单 53 亿美元、B2B 1.12，DDN organic +46.1% | 保留 | 低于当前预期的下行情景 | 中 | Transportation 弱项只在公司组合处理，不再在 DDN 产品重复扣减 |
+| 基准 | A/B 级收入、订单和指引正常兑现，公司收入 201-208 亿美元 | Q3 指引、DDN 已收入化、Energy 总收入和 Industrial margin 支撑 | DDN 客户级 backlog 未披露，Energy AI/DC 归因需折扣 | 保留 | 最可能情景 | 中高 | Energy reported growth 中的 Richards 并购只处理一次，不再同时当作需求风险和利润风险 |
+| 乐观 | DDN、224G、rack power 和 Energy 均高于当前预期，公司收入 210-220 亿美元 | AI 网络、1.6T、rack power、Q2 orders 和行业资料均有支撑 | 客户双供、ASP 下行、认证节奏限制利润上修 | 保留 | 可验证上行情景 | 中 | 客户双供主要影响份额/价格，不重复压低需求池 |
+| 极度乐观 | AI/DC 需求、TEL 捕获、利润率和执行同时突破，公司收入 222-234 亿美元 | 若 DDN 保持高增、rack power 加速、Transportation 不拖累，可形成公司级超预期 | CPO/448G/800VDC 大规模 NTM 收入证据不足；单一远期期权不能支撑整公司 | 下移 | 保留为低可信上限，CPO/448G/800V 大规模部分移入附录 | 低到中 | CPO/800V 标准不确定只限制远期期权，不重复惩罚已收入化 DDN |
+
+## 8. 结论
+
+- 最可能情景：基准。TEL 的 NTM 经营传导更像“高质量工业连接器龙头中出现可验证 AI/DC 增量”，不是纯 AI 弹性股。DDN 已经收入化，订单和 Q3 指引支撑 NTM 收入约 201-208 亿美元、调整后经营利润率约 21.2%-22.2%、FCF 约 26-31 亿美元的基准路径。
+- NTM 收入结论：DDN 是核心增量，Transportation 是最大底盘和最大稀释项，Energy 是邻近增长但不能全部算 AI/DC。基准收入比当前 TTM 约 187 亿美元高约 7.5%-11%，主要来自 DDN 高速互联、Energy/并购与 Industrial 组合改善。
+- 利润/现金流结论：利润质量优于普通项目型硬件公司，原因是连接器设计导入、客户认证和制造规模带来稳定利润率；但利润率非线性上修需要 DDN mix、224G/near-ASIC、rack power 定制件和规模效应共同发生。现金流质量较高，但 AI/DC 扩产、库存、应收和并购整合会影响 NTM FCF 节奏。
+- 主要传导瓶颈：行业需求到 TEL 收入之间的关键不是 TAM，而是客户平台、认证、design win、量产 ramp、双供份额和订单确认。DDN 是 A/B 级收入化证据，CPO/CPX、448G 和 800VDC 大规模收入仍偏 C/D 级，不进入基准主表。
+- 乐观情景成立条件：未来两个季度 DDN 仍维持 35%-45% 以上增长，TEL 总 book-to-bill 维持大于 1.05，Industrial organic growth 继续双位数，Transportation 至少低个位数恢复，Energy organic growth 和 Richards 协同顺利。
+- 极度乐观情景成立条件：1.6T/224G/near-ASIC、高功率 rack connector、Energy data center access 同时上修；TEL 在关键 hyperscaler/ODM 平台 wallet share 提升；标准件价格未快速下行；Transportation 不再拖累；经营利润率能随 mix 提升而超过 23%。
+- 悲观情景触发条件：DDN 增速降到 20% 以下或订单 B2B 低于 1；AI rack 验收/光模块/交换机平台延迟导致连接器订单后移；Transportation automotive 继续有机下降；Energy reported growth 剥离并购后无法维持；库存和应收占用使 FCF 明显低于净利润。
+- 后续跟踪数据：TEL DDN 单季收入和 organic growth；公司订单与 book-to-bill；Industrial adjusted operating margin；Transportation organic growth；Energy organic growth 与 Richards 协同；1.6T/224G 客户平台进度；rack power/HVDC/ORv3/HPR 认证；CPO/CPX 是否有可量化客户和交付时间表；FCF 与库存天数。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：TE Connectivity FY2026 Q2 财报日期 2026-04-22，季度截至 2026-03-27；本报告日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：TE Connectivity FY2026 Q2 earnings release、FY2026 Q2 earnings presentation / SEC exhibit、FY2026 Q2 Form 10-Q、FY2025 annual report、项目内 TEL 公司调研。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 Q3 指引约 50 亿美元收入和 2.83 美元调整后 EPS；FY2025 DDN 约 22 亿美元，AI/Cloud 约 14 亿美元，AI/Cloud 中期 30 亿美元以上轨迹只作为补充口径；CPO/CPX、448G、800VDC 和 1MW rack 作为远期期权或乐观上限，不替代 NTM 基准。
+- 主要来源：
+  - TE Connectivity, FY2026 Q2 results, 2026-04-22: https://investors.te.com/news-releases/press-release-details/2026/TE-Connectivity-delivers-results-above-guidance-with-15-sales-growth-and-over-20-EPS-growth-in-second-quarter-of-fiscal-2026/default.aspx
+  - TE Connectivity, FY2026 Q2 Form 10-Q: https://www.sec.gov/Archives/edgar/data/1385157/000110465926048160/tel-20260327x10q.htm
+  - TE Connectivity, FY2026 Q2 earnings presentation / SEC exhibit: https://www.sec.gov/Archives/edgar/data/1385157/000110465926046285/tel-20260422xex99d2.htm
+  - TE Connectivity, FY2025 annual report: https://www.te.com/content/dam/te-com/documents/about-te/our-company/global/annual-report/te-connectivity-annual-report-2025.pdf
+  - 项目内公司资料：`公司调研/AI网络_光互联_连接器/TEL_TE Connectivity_公司调研_2026-06-11.md`
+  - 项目内行业资料：`行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-06-11.md`
+  - 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+  - 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`
+

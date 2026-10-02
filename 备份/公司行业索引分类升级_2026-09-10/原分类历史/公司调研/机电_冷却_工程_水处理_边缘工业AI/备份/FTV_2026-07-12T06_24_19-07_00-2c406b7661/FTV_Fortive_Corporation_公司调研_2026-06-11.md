@@ -1,0 +1,344 @@
+# Fortive Corporation（FTV）公司调研：后 Ralliant 时代的工业运维测试、设施软件与医疗流程资产
+
+> 研究日期：2026-06-11  
+> 股票代码：FTV / NYSE  
+> 公司：Fortive Corporation  
+> 正式分类目录：`公司调研/机电_冷却_工程_水处理_边缘工业AI/`  
+> 本报告只使用：公司官方披露、联网公开资料、以及 `基本面/行业调研/` 内与 AI 数据中心电力、机电、DCIM、网络/光互联测试相关的行业资料。未读取、引用或继承 `特征量化/`、`日度资料/` 或既有公司报告。
+
+## 0. 核心结论
+
+Fortive 现在不是“AI 芯片/高速半导体测试设备公司”，也不是数据中心电力主设备公司。2025 年 6 月 Ralliant 分拆完成后，Tektronix、Qualitrol、Gems Setra、Hengstler-Dynapar、Anderson-Negele、PacSci EMC 等更接近高速电子测试、电网监测和传感器的资产已进入 Ralliant（RAL），不再属于 FTV 当前收入。FTV 当前投资画像更像“高毛利、强自由现金流、低到中个位数有机增长的工业/医疗流程效率公司”：Fluke/Fluke Networks 的现场测试工具，Accruent/eMaint/ServiceChannel/Gordian 的设施与资产生命周期软件，Industrial Scientific 的安全监测，以及 ASP/Censis/Provation/Fluke Health Solutions 的医疗流程业务。
+
+AI 数据中心对 FTV 的真实影响是“间接、运维侧、工具侧、软件侧”，不是 GPU、HBM、交换机、光模块、变压器、UPS、CDU 或机柜级硬件 BOM。最值得跟踪的增量来自三条线：一是 Fluke 电力质量、热成像、声学局放、绝缘/接地/校准、Fluke Networks 铜缆/光纤认证测试；二是 Accruent、eMaint、ServiceChannel、Gordian 与数据中心设施资产、工单、维护、成本数据库的结合；三是 Industrial Scientific 在电池室、燃油/燃气、发电机、施工检修场景的气体/安全监测。按模型估算，2026 年 FTV 直接或可归因 AI/DC 年化收入大致只有 1.2-2.2 亿美元，约占公司收入 3%-5%；乐观情形可在一年后到 2.5-3.5 亿美元，但也只是把 FTV 从中个位数增长推到高个位数，而不是变成 AI 基建高 beta 标的。
+
+财务质量强于增长质量。2026Q1 继续经营收入 10.694 亿美元，同比 +7.7%、core +5.3%；TTM 毛利率约 63.25%、净利率约 12.84%、FCF 约 9.66 亿美元。弱点是资产负债表不是净现金：截至 2026-06-11 的第三方统计口径，现金约 3.56 亿美元、总债务约 35.8 亿美元、净债务约 32.3 亿美元、Debt/EBITDA 约 2.93x、current ratio 0.71。现金流能覆盖债务服务，但持续大额回购会降低资产负债表余量。
+
+## 1. 公司整体业务、投资人认知与产业链位置
+
+### 1.1 业务结构
+
+Fortive 当前披露的战略分部是两个：
+
+| 分部 | 2025 全年收入 | 2025 收入占比 | 2025 GAAP 经营利润率 | 2025 调整经营利润率 | 核心品牌/产品 | 与 AI 数据中心关系 |
+|---|---:|---:|---:|---:|---|---|
+| Intelligent Operating Solutions（IOS） | 28.563 亿美元 | 68.7% | 25.8% | 33.4% | Fluke、Fluke Networks、Accruent、Gordian、Industrial Scientific、Intelex、ServiceChannel、Fluke Reliability/eMaint | 主要相关：电力/网络现场测试、设施资产软件、工单、EHS、安全监测、建设成本/采购数据库 |
+| Advanced Healthcare Solutions（AHS） | 13.028 亿美元 | 31.3% | 10.6% | 24.7% | Advanced Sterilization Products（ASP）、Censis、Fluke Health Solutions、Provation 等 | 基本不相关；是医疗灭菌、手术器械追踪、临床流程、医疗测试与辐射安全 |
+| 合计 | 41.591 亿美元 | 100.0% | 约 17.6% TTM operating margin | 约 29%-30% 调整 EBITDA margin | 工业/医疗流程效率组合 | AI/DC 是 IOS 的小比例增量，不是全公司主线 |
+
+公司官网当前列出的 operating companies 包括 Accruent、Advanced Sterilization Products、Censis、Fluke、Fluke Health Solutions、Gordian、Industrial Scientific、Intelex、Provation、ServiceChannel。2025 年 Investor Day 口径强调“约 50% recurring revenue”、10 个市场领先品牌、以 Fortive Business System（FBS）和 AI/新兴技术提升自身运营与创新速度。  
+资料来源：[Fortive Operating Companies](https://fortive.com/companies)，[Fortive Investor Day 2025 press release](https://investors.fortive.com/news-events/press-releases/detail/267/fortive-to-outline-value-creation-strategy-and-financial-framework)。
+
+### 1.2 投资人眼中的 FTV
+
+投资人通常把 FTV 看成以下组合：
+
+| 维度 | 投资人认知 | 现实校准 |
+|---|---|---|
+| 质量 | 高毛利、高 FCF、低 capex、强品牌工具与软件组合 | 成立。2026-06-11 TTM 毛利率 63.25%、FCF margin 22.80%，Q1 2026 FCF 1.938 亿美元 |
+| 增长 | 低到中个位数有机增长，通过 FBS、软件化、bolt-on M&A、回购放大 EPS | 成立。Q1 2026 core +5.3%，2026 FY adjusted EPS guidance 2.90-3.00 美元 |
+| AI beta | 容易被误解：历史上 Tektronix/Keithley/EA/Qualitrol 与 AI 芯片、电网更相关 | 需要修正。上述资产已经进入 Ralliant，FTV 当前 AI/DC 只是运维/测试/设施软件间接暴露 |
+| 防御性 | 医疗灭菌、工业安全、设施维护带来防御性 | 成立，但医疗/政府/关税/渠道库存仍会影响季度波动 |
+| 资产负债表 | 现金流强但非轻债 | 成立。净债务约 32 亿美元，Debt/EBITDA 接近 3x；仍可控但不宽松 |
+
+### 1.3 最近 3 年重大业务变动、转型、收购
+
+| 日期 | 事件 | 影响 |
+|---|---|---|
+| 2023-10 宣布 / 2024 初完成 | Fortive 以约 14.5 亿美元收购 EA Elektro-Automatik，增强电子测试与电源测试能力 | 这是当时 Precision Technologies 的增强动作；但 2025 年分拆后 EA 随 Precision Technologies 进入 Ralliant，不再计入 FTV 当前业务 |
+| 2024-09-04 | Fortive 宣布拟将 Precision Technologies 分拆为独立上市公司 | 公司定位从“三分部工业技术”转为“工业运维软件/工具 + 医疗流程”的更聚焦组合 |
+| 2025-06-28 / 2025-06-30 | Ralliant 分拆完成；Fortive 股东每 3 股 FTV 获 1 股 RAL，约 1.13 亿股 Ralliant 被分派；RAL 独立交易 | 最关键转型。Tektronix、Qualitrol、Gems Setra、Hengstler-Dynapar、Anderson-Negele、PacSci EMC 等不再属于 FTV |
+| 2025 H2 | 大额回购，Q3 回购 10 亿美元，Q4 继续 2.65 亿美元，H2 合计约 13 亿美元 | 分拆后公司用 FCF/资产负债表做资本回报，EPS 增长高于收入增长 |
+| 2026Q1 | Fortive 作为“New Fortive”首个完整可比季度之一，收入 +7.7%、core +5.3%，调整 EPS +25.4% | 证明分拆后组合能维持高 margin 和现金流；但单季有额外销售日等因素，不能线性外推 |
+
+Ralliant 自身披露其分部为 Test and Measurement、Sensors and Safety Systems，品牌包括 Tektronix、Qualitrol、Gems Setra、Hengstler-Dynapar、Anderson-Negele、PacSci EMC；其市场包括 communications、AI/quantum computing、semiconductor、utilities 等。该部分在产业链上更接近 AI 芯片/高速互连/电网监测，但已经不是 FTV。  
+资料来源：[Fortive separation announcement](https://investors.fortive.com/news-events/press-releases/detail/242/fortive-announces-strategic-plans-for-separation-into-two-independent-public-companies)，[Fortive completion of Ralliant separation](https://investors.fortive.com/news-events/press-releases/detail/269/fortive-announces-completion-of-the-ralliant-separation-and-appointment-of-olumide-soroye-as-president-ceo-and-director-of-fortive)，[Ralliant completion release](https://investors.ralliant.com/news-events/press-releases/detail/107/ralliant-completes-separation-from-fortive-and-launches-as-independent-publicly-traded-company)，[Ralliant brands/work](https://ralliant.com/our-work)。
+
+### 1.4 产业链位置
+
+在 AI 数据中心技术栈中，FTV 当前不在最紧缺的 GPU/HBM/CoWoS/光模块/交换芯片/变压器/开关设备/UPS/CDU 位置，而在“调试、验收、维护、工单、合规、安全”位置：
+
+| AI 数据中心链条 | 关键环节 | FTV 当前位置 | 价值属性 |
+|---|---|---|---|
+| 电力接入与配电 | 变压器、MV/LV switchgear、保护、UPS、PDU、谐波/瞬态/电能质量 | Fluke 电能质量分析仪、热成像、绝缘/接地、声学局放、校准与现场仪表 | 不是主设备 BOM，但影响 commissioning、故障定位、uptime |
+| 网络与光纤布线 | 铜缆/光纤布线、认证、OTDR、端口验收 | Fluke Networks DSX-8000、OptiFiber Pro、CertiFiber Pro、LinkIQ、LinkWare Live | 数据中心布线验收工具；不是 800G/1.6T 光模块生产测试 |
+| 设施运营软件 | DCIM、BMS/EPMS、CMMS/EAM、工单、资产台账、供应商调度 | Accruent、eMaint、ServiceChannel、Gordian、Intelex | 可能与 DCIM/EAM 交叉，适合 colo/enterprise/multi-site；对 hyperscale 原生 DCIM 渗透不确定 |
+| 安全与施工/检修 | 气体、燃油、发电机、电池、施工安全 | Industrial Scientific Ventis Pro5、Radius BZ1、iNet 等 | 小额但高可靠性、合规驱动 |
+| AI 芯片/高速电子测试 | 示波器、BERT、高速电源、功率电子测试 | 已分拆到 Ralliant/Tektronix/EA/Keithley 相关资产 | 不计入 FTV 当前业务 |
+
+本地行业资料显示，2026-2027 年 AI 数据中心最紧的瓶颈依次集中在电力接入、变压器/开关设备、HBM/先进封装、液冷、工程交付；DCIM/能控/数字孪生和高可靠运维是长期高 ROIC 但收入池较小的环节。FTV 的产品更接近这个“小但高粘性”的运维工具/软件收入池，而非大额电气主设备订单池。
+
+## 2. 最新股价、估值、利润率与资产负债表
+
+### 2.1 市场数据快照
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | 59.84 美元 | 2026-06-11 收盘，StockAnalysis/NYSE | 当日 -0.37% |
+| 市值 | 182.4 亿美元 | 2026-06-11 | Shares outstanding 3.0486 亿股 |
+| 企业价值 | 214.2 亿美元 | 2026-06-11 | 含净债务 |
+| TTM P/E | 35.29x | 2026-06-11 | EPS 约 1.66 美元 |
+| Forward P/E | 19.76x | 2026-06-11 | 与 FY2026 adjusted EPS guidance 2.90-3.00 美元相近 |
+| P/S | 4.30x | 2026-06-11 | Forward P/S 4.17x |
+| TTM 收入 | 42.4 亿美元 | 2026-06-11 TTM | Q1 2026 收入 10.694 亿美元 |
+| Q1 2026 收入增速 | +7.7% reported / +5.3% core | 2026Q1，继续经营 | 单季较强，含销售日等因素 |
+| TTM 毛利率 | 63.25% | 2026-06-11 TTM | 高毛利，软件/服务/品牌工具组合 |
+| TTM operating margin | 17.64% | 2026-06-11 TTM | GAAP，摊销影响较大 |
+| TTM 净利率 | 12.84% | 2026-06-11 TTM | 继续经营口径可比性需看分拆后 |
+| TTM FCF | 9.657 亿美元 | 2026-06-11 TTM | FCF margin 22.80% |
+| 2026 FY adjusted EPS 指引 | 2.90-3.00 美元 | 2026Q1 公司重申 | 管理层称趋势偏区间上半部；收入约 43 亿美元为电话会辅助建模口径 |
+
+资料来源：[StockAnalysis FTV statistics, last updated 2026-06-11](https://stockanalysis.com/stocks/ftv/statistics/)，[Fortive Q1 2026 earnings release](https://investors.fortive.com/news-events/press-releases/detail/284/fortive-reports-first-quarter-2026-results)。
+
+### 2.2 资产负债表与财务健康程度
+
+| 指标 | 数值 | 口径 | 评价 |
+|---|---:|---|---|
+| 现金及等价物 | 3.561 亿美元 | 2026-06-11 统计口径 / Q1 2026 后 | 现金不高 |
+| 总债务 | 35.8 亿美元 | 2026-06-11 | 分拆后仍有明显债务 |
+| 净债务 | 32.3 亿美元 | 2026-06-11 | 约 10.58 美元/股 |
+| Debt / EBITDA | 2.93x | TTM | 可控但不轻；若以 adjusted EBITDA 看约 2.7x |
+| Interest coverage | 6.22x | TTM | 覆盖充足 |
+| Current ratio | 0.71 | 2026-06-11 | 流动比率偏低，需依赖现金流/信贷/商业票据管理 |
+| TTM operating cash flow | 10.8 亿美元 | 2026-06-11 | 强 |
+| TTM FCF | 9.657 亿美元 | 2026-06-11 | 强；低 capex 是核心优势 |
+| Q1 2026 回购 | 约 5 亿美元 | 10-Q 摘要口径 | 回购提升 EPS，但也消耗资产负债表余量 |
+
+结论：财务状况“健康但不保守”。FTV 的现金流和毛利率足以支撑债务服务、股息和适度 M&A；但净债务约 32 亿美元、current ratio 低于 1、过去一年大额回购，使其在需求下行或利率/信用市场恶化时的安全垫不如净现金工业软件公司。对投资人而言，FTV 的风险不是短期偿债，而是若增长维持低个位数，20x forward P/E 需要靠 margin、回购和小型并购兑现。
+
+## 3. 最近 5 个财报季度：收入、分部、利润率、订单/交期与 AI/DC 暴露
+
+> 说明：2025Q2 起公司提供“Ralliant as discontinued operations / continuing operations”可比表。2025Q3 单季分部收入和 GAAP 经营利润用 2025 全年减 Q1/Q2/Q4 可审计披露推导；其合计与公司披露 Q3 total revenue 10.271 亿美元一致。公司不披露 backlog、book-to-bill、取消率；订单/交期为“披露 + 推断”列。
+
+| 财报季度 | 发布日期 | 继续经营收入 | reported / core 增速 | IOS 收入 / 增速 / GAAP OP margin | AHS 收入 / 增速 / GAAP OP margin | EPS / FCF | 订单、Backlog、交期、取消率 | AI/DC 相关收入占比 |
+|---|---:|---:|---:|---|---|---|---|---|
+| 2026Q1 | 2026-04-30 | 10.694 亿美元 | +7.7% / +5.3% | 7.432 亿美元；+7.6% reported、+5.2% core；25.1% GAAP OP margin，32.3% adj OP margin | 3.262 亿美元；约 +7.9% reported，约 +6% core；10.0% GAAP OP margin，24.1% adj OP margin | GAAP EPS 0.44；adj EPS 0.70；FCF 1.938 亿美元 | 公司未披露 backlog/book-to-bill。电话会摘要显示 IOS 订单量增速高于收入，强项在 Professional Instrumentation、Facilities、Asset Lifecycle Solutions；取消率未披露。Fluke/软件以短周期、渠道和订阅为主，交期不像变压器/开关设备长达多年 | 公司未披露；模型估计季度 0.25-0.55 亿美元，约 2%-5%，主要来自 Fluke/Fluke Networks、设施软件、安全监测 |
+| 2025Q4 | 2026-02-04 | 11.225 亿美元 | +4.6% / +3.3% | 7.697 亿美元；+5.3% reported、+4.1% core；27.6% GAAP OP margin，35.7% adj OP margin | 3.528 亿美元；+3.2% reported、+1.6% core；10.9% GAAP OP margin，24.6% adj OP margin | GAAP EPS 0.60；adj EPS 0.90；FCF 3.138 亿美元 | 未披露 backlog。管理层强调 Fortive Accelerated 执行、margin 提升、H2 回购约 13 亿美元。订单推断：短周期工具/软件恢复但不是大额项目 backlog | 模型估计季度 0.25-0.50 亿美元，约 2%-4%；Q4 设施/运维预算通常较强 |
+| 2025Q3 | 2025-10-29 | 10.271 亿美元 | +2.3% / +1.9% | 约 6.988 亿美元；+2.6% reported、+2.2% core；约 24.2% GAAP OP margin | 约 3.283 亿美元；+1.9% reported、+1.1% core；约 9.6% GAAP OP margin | GAAP EPS 0.35；adj EPS 0.68；FCF 2.661 亿美元 | 未披露 backlog。Q3 抬高 FY2025 adj EPS 指引；需求描述偏稳健而非订单爆发 | 模型估计季度 0.20-0.45 亿美元，约 2%-4% |
+| 2025Q2 | 2025-07-30 | 10.164 亿美元 | -0.4% / -0.7% | 6.969 亿美元；+0.1% reported、-0.2% core；24.5% GAAP OP margin | 3.195 亿美元；约 -1.3% reported；11.2% GAAP OP margin | GAAP EPS 0.33；adj EPS 0.58；FCF 1.800 亿美元 | 未披露 backlog。公司提到关税、医疗与政府支出政策不确定性影响需求；交期未显示供不应求 | 模型估计季度 0.18-0.40 亿美元，约 2%-4% |
+| 2025Q1 | 2025-04-30 前后 / 可比表 | 9.931 亿美元 | 可比表未单列 | 6.909 亿美元；25.3% GAAP OP margin | 3.022 亿美元；7.2% GAAP OP margin | GAAP EPS 0.33；adj EPS 0.55；FCF 1.707 亿美元 | 未披露 backlog。作为 Ralliant 分拆前的 continuing ops 重列基准 | 模型估计季度 0.15-0.35 亿美元，约 2%-4% |
+
+资料来源：[Fortive Q1 2026 release](https://investors.fortive.com/news-events/press-releases/detail/284/fortive-reports-first-quarter-2026-results)，[Fortive Q4/FY2025 release](https://investors.fortive.com/news-events/press-releases/detail/280/fortive-reports-fourth-quarter-and-full-year-2025-results)，[Fortive Q3 2025 release](https://investors.fortive.com/news-events/press-releases/detail/275/fortive-reports-third-quarter-2025-results)，[Fortive Q2 2025 release](https://investors.fortive.com/news-events/press-releases/detail/271/fortive-reports-second-quarter-2025-results)，[Motley Fool Q1 2026 transcript summary](https://www.fool.com/earnings/call-transcripts/2026/04/30/fortive-ftv-q1-2026-earnings-transcript/)。
+
+## 4. 2026 最新指引、业务收入占比与重点/跳过产品
+
+### 4.1 2026 最新指引与收入占比
+
+公司在 2026Q1 重申 FY2026 adjusted diluted EPS 2.90-3.00 美元；电话会摘要给出的建模参考为全年 reported revenue 约 43 亿美元，趋势偏 EPS 指引上半部。以 2026Q1 为最新季度：
+
+| 分部 | 2026Q1 收入 | 收入占比 | reported / core 增速 | 2026 年业务状态 |
+|---|---:|---:|---:|---|
+| IOS | 7.432 亿美元 | 69.5% | +7.6% / +5.2% | 最重要分部。Fluke 专业仪表、设施与资产生命周期软件、工业安全贡献增长；AI/DC 相关性主要在这里 |
+| AHS | 3.262 亿美元 | 30.5% | 约 +7.9% / 约 +6% | 医疗灭菌、耗材、服务、软件；margin 低于 IOS，AI/DC 相关性近似 0 |
+| 合计 | 10.694 亿美元 | 100.0% | +7.7% / +5.3% | 高质量但非高增长；2026 全年收入约 43 亿美元 |
+
+最突出且公司最侧重的是 IOS，而不是 AHS。IOS 中最值得跟踪的是 Professional Instrumentation（Fluke/Fluke Networks）、Facilities and Asset Lifecycle Solutions（Accruent、ServiceChannel、Gordian、eMaint/Fluke Reliability）和 Industrial Scientific/Intelex 的安全合规。AHS 对利润和防御性重要，但与 AI 数据中心无直接关系。
+
+### 4.2 重点产品与业务：保留、跳过、剔除
+
+| 分类 | 产品/业务 | 是否重点 | 理由 |
+|---|---|---:|---|
+| Fluke 电力/现场测试 | Fluke 1770 Series 三相电能质量分析仪、1740/1730 电能记录仪、绝缘/接地测试、校准仪、数字万用表、钳表、Ti/TiX 热像仪、ii900/ii910 声学成像/局放/泄漏检测 | 是 | AI 数据中心电力密度提升后，谐波、瞬态、接地、热失效、局放和 commissioning 频次提高；但不是主设备 BOM |
+| Fluke Networks | DSX-8000/DSX CableAnalyzer、CertiFiber Pro、OptiFiber Pro OTDR、LinkIQ、LinkWare Live | 是 | 数据中心铜缆/光纤布线认证与验收工具；AI 集群布线复杂度提升有增量，但不等于 800G/1.6T 光模块生产测试 |
+| Fluke Reliability / eMaint | eMaint CMMS/EAM/IIoT、Pruftechnik 对中/振动、Azima DLI 等可靠性工具 | 是 | 与 DCIM/EAM/工单融合有机会；本地 DCIM 行业资料显示维护工单、资产台账、BMS/EPMS/DCIM 协同是 AI 工厂化运维的中长期需求 |
+| Accruent / ServiceChannel / Gordian | 设施资产管理、CMMS/IWMS、供应商工单、建设成本与采购数据 | 是 | 适合 colo、enterprise、multi-site 设施；对 hyperscale 自研 DCIM 的渗透需要渠道验证 |
+| Industrial Scientific | Radius BZ1、Ventis Pro5、iNet Now/DSX safety platform、气体/区域监测 | 小重点 | AI 数据中心电池室、发电机、燃气/燃油、施工检修安全需要；金额小、合规驱动 |
+| Intelex | EHSQ、可持续与合规软件 | 小重点 | 与大型数据中心运营合规有交叉，但 AI/DC 直接收入更难归因 |
+| ASP / Censis / Provation / Fluke Health Solutions | STERRAD、Censis surgical asset management、clinical productivity、医疗测试/辐射安全 | 跳过 AI 分析，保留财务分析 | 对 FTV 收入和利润重要，但与 AI 数据中心/AI 芯片技术栈无直接关系 |
+| Tektronix / Keithley / EA Elektro-Automatik / Qualitrol | 高速示波器、源表、高功率电源、变压器监测等 | 从 FTV 当前报告剔除 | 这些更像 AI 芯片/高速互连/电网监测受益资产，但 2025 年已随 Ralliant 分拆，不再属于 FTV |
+
+产品资料来源示例：[Fluke Networks DSX CableAnalyzer](https://www.flukenetworks.com/datacom-cabling/Versiv/dsx-cableanalyzer-series)，[Fluke Networks OptiFiber Pro OTDR](https://www.flukenetworks.com/datacom-cabling/fiber-testing/optifiber-pro-otdr)，[Accruent facility/asset management](https://www.accruent.com/solutions/facility-asset-management-software)，[eMaint CMMS](https://www.emaint.com/)，[Industrial Scientific Radius BZ1](https://www.indsci.com/en/gas-detectors/area/radius-bz1)。
+
+## 5. 高增长或关键业务：当前贡献、增速、AI 基建重要性与供需/定价
+
+> 评分：5 = 最高/最强。收入贡献为模型估算，因为 Fortive 不披露品牌级和 AI/DC 客户收入；估算以 IOS 28.563 亿美元 FY2025、Q1 2026 IOS 7.432 亿美元为约束。
+
+| 关键业务 | 当前公司收入贡献估算 | 当前 AI/DC 可归因收入估算 | 当前增速判断 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 依据与解释 |
+|---|---:|---:|---|---:|---:|---:|---:|---|
+| Fluke Professional Instrumentation：电能质量、热像、声学、绝缘/接地、校准、现场仪表 | 约 9-12 亿美元/年 | 约 0.6-1.2 亿美元/年 | 总业务中个位数；AI/DC 子集 +15%-30% | 3 | 3 | 2-3 | 4 | 数据中心电力密度提升导致电能质量、热、局放、接地/绝缘验证需求增加；Fluke 品牌强、渠道深，但 Hioki、Megger、Yokogawa、FLIR、UE Systems 等可替代 |
+| Fluke Networks：铜缆/光纤认证、OTDR、链路验收、LinkWare 数据 | 约 1.5-2.5 亿美元/年 | 约 0.2-0.6 亿美元/年 | 总业务中个位数到高个位数；AI/DC 子集 +20%-40% | 3 | 3 | 3 | 3-4 | AI 数据中心光纤/铜缆端口密度上升，认证与返工成本高；但高速 800G/1.6T 光模块生产测试更多归 VIAVI、Keysight、Anritsu、Ralliant/Tektronix 等 |
+| Accruent/eMaint/ServiceChannel/Gordian：设施资产生命周期、CMMS/EAM、工单、建设成本 | 约 8-11 亿美元/年 | 约 0.4-0.9 亿美元/年 | 总业务中个位数到高个位数；AI/DC 子集 +15%-35% | 3-4 | 3 | 2 | 3 | 本地 DCIM 行业资料显示 AI 工厂化运维需要 DCIM+EPMS/BMS+CMMS/EAM+工单闭环；Fortive 强在设施流程和多站点，不强在原生电力实时控制 |
+| Industrial Scientific / Intelex：安全监测、气体检测、EHSQ | 约 3-5 亿美元/年 | 约 0.05-0.2 亿美元/年 | 总业务低到中个位数；AI/DC 子集 +10%-25% | 2 | 2-3 | 2 | 2-3 | 电池室、燃油/燃气、施工检修、应急响应有安全监测需求；金额小、竞争多 |
+| AHS 医疗流程 | 约 13 亿美元/年 | 约 0 | 低到中个位数，margin 改善 | 0 | 0 | 1 | 3 | 重要但非 AI/DC；不纳入 AI 基建产品情景 |
+
+结论：FTV 的 AI/DC 增量不是单一爆款产品，而是多个“小 content、高毛利、品牌/软件粘性强”的附着点。它们可以提高 IOS 的 growth mix，但不足以重定价全公司为 AI 主链资产。
+
+## 6. 一年后情景预测：产品/业务收入、重要性、紧急性、供需、定价
+
+### 6.1 按关键业务的收入情景
+
+| 关键业务 | 当前 AI/DC 可归因年化收入 | 基准：一年后收入 / 增速 | 乐观：一年后收入 / 增速 | 极度乐观：一年后收入 / 增速 | 主要触发条件 |
+|---|---:|---:|---:|---:|---|
+| Fluke 电力/现场测试 | 0.6-1.2 亿美元 | 0.9-1.4 亿美元，+20%-30% | 1.3-1.8 亿美元，+45%-70% | 1.8-2.4 亿美元，+80%-120% | AI 数据中心 commissioning 密集、现场电能质量/热/局放故障增加，EPC/电气承包商扩充工具车队 |
+| Fluke Networks | 0.2-0.6 亿美元 | 0.35-0.75 亿美元，+20%-35% | 0.6-1.0 亿美元，+50%-90% | 1.0-1.4 亿美元，+100%+ | 大规模光纤/铜缆验收、边缘/colo 扩建、链路文档与云端测试记录要求提升 |
+| 设施资产软件 / CMMS / 工单 / 成本数据 | 0.4-0.9 亿美元 | 0.6-1.2 亿美元，+25%-35% | 1.0-1.8 亿美元，+60%-100% | 1.6-2.5 亿美元，+120%+ | Fortive 成功将 Accruent/eMaint/ServiceChannel/Gordian 打进数据中心设施生命周期管理；与 BMS/EPMS/DCIM、采购、工单打通 |
+| Industrial Scientific / Intelex | 0.05-0.2 亿美元 | 0.08-0.25 亿美元，+15%-25% | 0.15-0.35 亿美元，+40%-80% | 0.25-0.50 亿美元，+100%+ | 电池储能、燃气发电、施工检修安全要求提高；租赁/项目制安全监测渗透 |
+| FTV 合计 AI/DC 可归因 | 1.2-2.2 亿美元 | 1.8-2.8 亿美元 | 2.8-4.5 亿美元 | 4.5-6.5 亿美元 | 极度乐观要求多个子业务同时超预期，且包含企业/colo 数据中心软件大单 |
+
+### 6.2 一年后对全公司的收入增速影响
+
+| 情景 | 未来一年 FTV 收入预测 | 全公司收入增速 | IOS 增速 | AHS 增速 | 对估值的意义 |
+|---|---:|---:|---:|---:|---|
+| 基准 | 44.5-45.5 亿美元 | +4%-6% | +5%-7% | +2%-4% | 符合“高质量中个位数复合”公司，20x forward P/E 需要 EPS/FCF/回购兑现 |
+| 乐观 | 46.0-47.5 亿美元 | +7%-10% | +8%-12% | +3%-5% | AI/DC 工具和设施软件开始拉动 IOS，可提升投资人对 Fortive Accelerated 的信心 |
+| 极度乐观 | 48.5-50.5 亿美元 | +13%-17% | +15%-22% | +4%-7% | 需要数据中心软件/工具出现大额平台化订单或 M&A 加速；当前无披露 backlog 支撑，概率低 |
+
+关键限制：FTV 未披露 AI/DC backlog，也未披露 book-to-bill 或客户项目名。Q1 2026 的正面信号是 IOS 订单量增速高于收入，但无法证明存在类似电力主设备公司的多年订单挤压。故基准情景仍应以公司自身约 43 亿美元 FY2026 收入和中个位数 core growth 为锚。
+
+## 7. BOM / 每 MW / 每 rack / 每 GPU / 每 optical port 内容量与价格传导链
+
+> 重要边界：FTV 产品不是数据中心 IT BOM 或电气主设备 BOM 的固定项。以下为“工具/软件/服务 amortized content”模型，用于判断需求弹性，而不是设计院设备清单报价。
+
+### 7.1 当前真实内容量估算
+
+| 业务 | 每 MW 内容量 | 每 rack 内容量 | 每 GPU 内容量 | 每 optical port 内容量 | 价格传导链 | 当前产能能力（美元计） | 被供应链采纳程度 / 认证 |
+|---|---:|---:|---:|---:|---|---:|---|
+| Fluke 电力/现场测试 | 约 2,000-15,000 美元/MW；若 commissioning 阶段承包商集中购置工具，项目期可达 10,000-30,000 美元/MW | 约 5-50 美元/rack，主要摊到热像/电气巡检工具 | 0 | 0 | 数据中心 owner/EPC/电气承包商/运维团队 -> 分销商/直销 -> Fluke 工具与校准服务；成本进入 commissioning、O&M、contractor capex | AI/DC 可归因年化 0.6-1.2 亿美元；总 Fluke 工具能力远高于 DC slice | Fluke 为电工/维护强品牌；认证更多是仪器安全、校准、CAT 等级、IEC/UL，而不是被单一 AI 供应链认证 |
+| Fluke Networks | 0.5-5 万美元/MW，取决于光纤/铜缆密度、测试仪共享率和外包验收 | 20-200 美元/rack；高密度光纤场景更高 | 0 | 0.2-3 美元/optical port 的摊销测试/认证工具内容 | cabling contractor / network integrator -> Fluke Networks DSX/CertiFiber/OptiFiber/LinkWare；成本进入布线验收与返工控制 | AI/DC 可归因年化 0.2-0.6 亿美元 | DSX-8000 官方资料支持 Cat 8 / 2GHz；公开资料显示 Intertek 确认 DSX-8000 符合 ANSI/TIA-1152-A Level 2G 测量精度要求 |
+| Accruent/eMaint/ServiceChannel/Gordian | 1,000-10,000 美元/MW/年；大型多站点软件合同可能更高 | 1-20 美元/rack/年；通常按站点、用户、资产、工单、模块计价，不按 rack 原生计价 | 0 | 0 | owner/operator/facilities team -> SaaS license + implementation + integration；与 ERP、BMS/EPMS、DCIM、CMMS、供应商网络连接 | AI/DC 可归因年化 0.4-0.9 亿美元；软件产能主要受销售、实施、集成与客户 IT 审批约束 | 采纳度在零售/多站点/设施管理强；数据中心需通过 cybersecurity、SOC/IT、BMS/EPMS/DCIM 集成验证 |
+| Industrial Scientific / Intelex | 500-5,000 美元/MW；电池、燃气、燃油、施工检修高于普通数据厅 | 0-5 美元/rack | 0 | 0 | safety/EHS/contractor/rental -> gas detector / area monitor / iNet platform；可采购或租赁 | AI/DC 可归因年化 0.05-0.2 亿美元 | Radius BZ1 可同时监测多种气体/危害；Industrial Scientific 有安全监测品牌与传感器平台，但竞争者多 |
+
+### 7.2 价格传导与利润率判断
+
+| 业务 | 价格传导强度 | 毛利/利润率推断 | 交叉验证 |
+|---|---|---|---|
+| Fluke 电力/现场测试 | 中高。工具金额占项目总 capex 极低，客户更在意可靠性、校准、渠道与停机成本 | 高于公司平均硬件毛利；品牌工具 + 校准/服务支持，估计毛利 55%-70%，经营利润率高于 IOS 平均 | 公司整体 TTM gross margin 63.25%；IOS 2025 adj operating margin 33.4% |
+| Fluke Networks | 中高。返工和验收成本远高于测试仪单价；LinkWare/校准/软件可提高粘性 | 硬件+软件+服务混合，估计毛利 55%-70%；云端记录/校准提高复购 | 本地高速互连测试资料显示测试/校准/软件是高毛利池，但 FTV 只在现场布线验收，不在最高端光模块生产测试核心 |
+| 设施软件 | 中。新签约价格受 IT 预算和集成复杂度限制；续约/扩模块价格更好 | SaaS/维护服务毛利可高，实施服务毛利较低；成熟后经营杠杆强 | Fortive Investor Day 强调约 50% recurring revenue；IOS adj margin 显著高于 AHS |
+| Industrial safety | 中低到中。安全合规刚性，但 Dräger/Honeywell/MSA/Blackline 等竞争强 | 仪器+传感器+服务/租赁，估计毛利中高；规模小 | 金额小，不足以显著改变全公司 margin |
+
+## 8. 一年后产能、采纳与认证阶段情景
+
+| 业务 | 基准：一年后产能/采纳 | 乐观：一年后产能/采纳 | 极度乐观：一年后产能/采纳 | 认证/准入变化 |
+|---|---|---|---|---|
+| Fluke 电力/现场测试 | 可支撑 AI/DC 年化 0.9-1.4 亿美元；主要增长来自渠道补货、承包商工具车队、校准服务 | 可支撑 1.3-1.8 亿美元；更多 EPC 和电气承包商将 Fluke 工具作为 commissioning 标准包 | 可支撑 1.8-2.4 亿美元；需要全球 AI DC 项目密集交付且现场故障/巡检要求升级 | 仪表安全等级、校准体系、企业采购准入继续重要；不是“认证到 Nvidia/GB200/GB300”这种半导体供应链认证 |
+| Fluke Networks | 可支撑 0.35-0.75 亿美元；在 colo/enterprise 布线验收中扩大 | 可支撑 0.6-1.0 亿美元；高密度光纤、Cat 8/更高速铜缆场景提高 DSX/OptiFiber 利用 | 可支撑 1.0-1.4 亿美元；需要 AI 数据中心端口建设和返工压力显著上升 | TIA/ISO/IEC/ANSI 相关布线标准、Cat 8/2GHz 测量能力、校准记录和 LinkWare 文档化是主要准入 |
+| Accruent/eMaint/ServiceChannel/Gordian | 可支撑 0.6-1.2 亿美元；以多站点设施、工单、资产台账、成本数据为主 | 可支撑 1.0-1.8 亿美元；与 DCIM/BMS/EPMS/ERP/API 集成形成数据中心设施套件 | 可支撑 1.6-2.5 亿美元；需要赢得大型 colo 或 hyperscale 非核心系统标准化采购 | 关键不是硬件认证，而是 SOC2/ISO27001 类安全审查、API/IT 集成、数据权限、运维流程再造 |
+| Industrial Scientific / Intelex | 可支撑 0.08-0.25 亿美元；项目/租赁/区域监测小额增长 | 可支撑 0.15-0.35 亿美元；电池室、燃气/燃油、施工安全要求提高 | 可支撑 0.25-0.50 亿美元；需要安全法规或事故驱动大规模加装 | UL/CSA/ATEX/IECEx、Class/Division、传感器校准、现场安全规范是准入重点 |
+
+## 9. 订单积压、供给与未来一年业务增速推断
+
+### 9.1 披露事实
+
+| 项目 | 披露情况 | 投资含义 |
+|---|---|---|
+| Backlog | Fortive 不披露 continuing ops backlog 金额 | 不能用 backlog 证明 AI/DC 订单已经爆发 |
+| Bookings / book-to-bill | 不披露量化 book-to-bill | Q1 2026 电话会摘要提到 IOS order volume outpaced revenue，是正面但非可建模金额 |
+| Lead time | 未披露分部交期 | Fluke 工具、软件订阅、安全仪器多数不像变压器/开关设备有多年交期；供应约束不是核心 bull case |
+| Cancellation rate | 未披露 | 工具/软件小额订单取消风险低于大 capex 设备，但宏观/医疗/政府/关税会影响需求 |
+| 客户项目名/订单金额 | 未披露 AI 数据中心客户项目名或订单金额 | 当前没有可核验的 hyperscale 大单证据 |
+
+### 9.2 未来一年业务增速推断
+
+| 情景 | 订单与供给假设 | FTV 未来一年收入增速 | IOS 增速 | AI/DC slice 增速 | 取消/延期风险 |
+|---|---|---:|---:|---:|---|
+| 基准 | IOS book-to-bill 略高于 1；Fluke/设施软件正常渠道补货；AHS 温和恢复；无大型 AI/DC 软件标准化订单 | +4%-6% | +5%-7% | +25%-35% | 低到中。AI DC 项目延迟会影响工具/软件采购节奏，但非主设备 backlog |
+| 乐观 | AI 数据中心 commissioning 和布线验收需求加速；Accruent/eMaint/ServiceChannel 打入更多 colo/enterprise DC；Industrial safety 小额增量 | +7%-10% | +8%-12% | +60%-100% | 中。软件签约/实施周期、客户 IT 安全审查可能推迟确认 |
+| 极度乐观 | 多个大型数据中心 operator 采用 Fortive 设施生命周期套件；Fluke/Fluke Networks 被承包商作为标准化工具链；安全监测随 BESS/燃气备电放量 | +13%-17% | +15%-22% | +120%+ | 中高。该情景缺少已披露 backlog 支撑，更像 option value |
+
+### 9.3 与本地行业资料的交叉验证
+
+本地 AI 数据中心建设资料估算，2026 年美国 AI 数据中心建设规模现实口径约 3,100-3,900 亿美元，IT load 等效约 6.0-8.5GW；电力接入、变压器、开关设备、液冷、工程交付是主要瓶颈。DCIM/能控/数字孪生的 2026 年全球 broad order/service pool 约 85-135 亿美元，其中 AI 数据中心相关约 30-58 亿美元。高速互连/光学验证测试行业资料显示 1.6T/224G/PCIe7/SiPh/CPO 测试高增长，但该高端测试利润池主要对应 Keysight、VIAVI、Anritsu、R&S、Teledyne LeCroy、Ralliant/Tektronix 等，不应归入 FTV。
+
+因此，FTV 的上限不是 AI 数据中心 capex 的 1%-3%，而是“运维工具/设施软件/安全监测”在项目建设和运行预算中的小比例附着。按 2026 年 AI 数据中心相关 DCIM/运维/测试服务池的一小部分渗透率估算，FTV 当前 1.2-2.2 亿美元 AI/DC 年化收入是合理量级；若达到 4.5-6.5 亿美元则已经是极度乐观。
+
+## 10. 竞争格局、替代方案、技术路线与客户替换成本
+
+### 10.1 Fluke 电力/现场测试
+
+| 维度 | 分析 |
+|---|---|
+| 主要竞争对手 | Hioki、Megger、Yokogawa、Chauvin Arnoux、Sonel、Kyoritsu；热成像有 Teledyne FLIR、Seek 等；声学/局放有 UE Systems、SDT、Megger 等 |
+| Fortive/Fluke 优势 | 品牌信任、渠道覆盖、电工心智、校准与服务网络、产品线完整、采购和培训惯性 |
+| 风险与替代 | 中国/亚洲品牌性价比提升；大型 EPC 可多品牌采购；若数据中心 commissioning 外包给第三方，工具购买可能在承包商而非 owner |
+| 新技术是否主流 | 电能质量、热像、声学局放、绝缘/接地不是新技术，但 AI 数据中心功率密度和 uptime 要求提高会让这些工具更高频 |
+| 替换成本 | 中。单台工具可替换，但企业级工具标准、校准记录、培训、维修服务、采购目录形成粘性 |
+
+### 10.2 Fluke Networks
+
+| 维度 | 分析 |
+|---|---|
+| 主要竞争对手 | VIAVI、EXFO、AFL、VeEX、TREND Networks、Softing IT Networks；高端光模块/SerDes/一致性生产测试则是 Keysight、VIAVI、Anritsu、R&S、Ralliant/Tektronix 等 |
+| Fortive/Fluke Networks 优势 | 现场布线认证品牌强；DSX/Versiv/OptiFiber/CertiFiber 与 LinkWare 形成验收文档 workflow |
+| 风险与替代 | AI 集群从 pluggable optics 走向 CPO/ELS 或更多预端接/自动化测试，现场认证工具增量未必同步光模块产值；高端产线测试不归 FTV |
+| 新技术是否主流 | 现场认证和文档化是主流，AI 数据中心端口密度提高强化需求；但不是最稀缺的 800G/1.6T 生产测试瓶颈 |
+| 替换成本 | 中高。承包商/业主验收流程、历史记录、软件数据库和校准周期带来粘性 |
+
+### 10.3 设施资产软件 / CMMS / 工单 / 成本数据
+
+| 维度 | 分析 |
+|---|---|
+| 主要竞争对手 | Schneider EcoStruxure IT、Vertiv Environet、Sunbird、Nlyte/Carrier、Siemens/JCI/Honeywell BMS、IBM Maximo、ServiceNow FSM、IFS/Infor/Oracle EAM、Autodesk/Procore、内部自研平台 |
+| Fortive 优势 | Accruent/ServiceChannel/Gordian/eMaint 覆盖资产台账、工单、供应商网络、建设成本、维护流程，适合设施生命周期；与多站点运营强相关 |
+| 风险与替代 | Hyperscale 通常自研或深度定制 DCIM/BMS/EPMS；Fortive 不是电力实时控制系统，也不是原生 AI cluster scheduler；若只停留在通用 CMMS，AI 溢价有限 |
+| 新技术是否主流 | DCIM 3.0、数字孪生、工单闭环、BMS/EPMS/液冷/IT telemetry 融合是趋势；Fortive 若能把设施软件与实时监控深集成，才有更大上行 |
+| 替换成本 | 高。实施后资产主数据、工单、供应商、权限、API、审计流程迁移成本高；但新项目初选竞争激烈 |
+
+### 10.4 Industrial Scientific / Intelex
+
+| 维度 | 分析 |
+|---|---|
+| 主要竞争对手 | Dräger、Honeywell、MSA Safety、Blackline Safety、RKI Instruments、Crowcon 等；EHSQ 软件还有 Enablon、Sphera、VelocityEHS 等 |
+| Fortive 优势 | Industrial Scientific 在便携式/区域气体检测与连接平台有品牌；Intelex 与 EHSQ 软件可形成数据闭环 |
+| 风险与替代 | 安全监测金额小；客户可多品牌采购；项目型/租赁型需求波动大 |
+| 新技术是否主流 | BESS、燃气/燃油、施工检修和应急响应提升气体/安全监测频率；但不是 AI 数据中心核心瓶颈 |
+| 替换成本 | 中。传感器平台、培训、报警流程和校准服务有粘性，但硬件替代性仍强 |
+
+### 10.5 AHS 医疗流程
+
+AHS 是 FTV 当前 30% 左右收入、稳定现金流和防御性的重要来源，但不是 AI 数据中心或 AI 芯片业务。竞争对手包括 Steris、Getinge、3M/Solventum 部分医疗安全与灭菌相关资产、手术器械追踪和临床流程软件厂商。该业务的投资重点是耗材、服务、装机、医院预算和 margin 修复，不适合作为 AI 基建估值理由。
+
+## 11. 关键跟踪指标
+
+| 指标 | 为什么重要 | 观察方式 |
+|---|---|---|
+| IOS core growth 是否连续高于 5% | 验证 Fortive Accelerated 和 AI/DC 间接增量是否真实 | 季报 segment revenue / core growth |
+| IOS 订单量是否持续高于收入 | 替代 backlog 的最重要信号 | 电话会、transcript、Q&A |
+| Fluke Professional Instrumentation 是否被点名强劲 | 直接对应 AI 数据中心电力/现场测试弹性 | 管理层评论、渠道评论、分销商动销 |
+| Facilities and Asset Lifecycle Solutions 是否加速 | 对 Accruent/eMaint/ServiceChannel/Gordian 价值重估最关键 | segment commentary、ARR/recurring revenue、客户案例 |
+| 是否披露数据中心/AI 客户案例 | 当前最大信息缺口 | 官网 case study、conference、partner release |
+| Ralliant 与 Fortive 的边界 | 防止误把 Tektronix/Qualitrol/EA 的 AI 受益归到 FTV | RAL/FTV 分别披露 |
+| Debt/EBITDA 与回购节奏 | 判断 FCF 质量是否被财务工程过度消耗 | 10-Q、cash flow、debt schedule |
+
+## 12. 投资判断摘要
+
+FTV 是一家质量不错、AI 间接可选项有限但真实存在的工业/医疗流程效率公司。它的最大价值不是“AI 数据中心主链订单爆发”，而是：高毛利工具 + 设施软件 + 工单/维护/安全监测，在 AI 数据中心建设和运行复杂度上升时获得小比例、高粘性、可持续的增量。当前估值约 20x forward P/E，已经不便宜；若未来几个季度 IOS core growth 保持 5%+、设施软件和 Fluke 被持续点名，估值可维持甚至上修。若 core growth 回落到 2%-3%，市场会把它重新定价为普通高质量工业 compounder，而不是 AI 基建受益股。
+
+最重要的负面边界是 Ralliant 分拆：本地行业资料中更强的高速互连/光学验证测试、示波器、半导体测试、变压器监测等高 AI 相关主题，不应计入 FTV 当前业务。若投资主题是 AI 芯片测试或电网监测，RAL 比 FTV 更直接；若投资主题是数据中心运维、现场测试、设施软件和工业安全，FTV 才是相关标的。
+
+## 13. 资料来源
+
+### 公司与财务
+
+- Fortive Q1 2026 earnings release: https://investors.fortive.com/news-events/press-releases/detail/284/fortive-reports-first-quarter-2026-results
+- Fortive Q4/FY2025 earnings release: https://investors.fortive.com/news-events/press-releases/detail/280/fortive-reports-fourth-quarter-and-full-year-2025-results
+- Fortive Q3 2025 earnings release: https://investors.fortive.com/news-events/press-releases/detail/275/fortive-reports-third-quarter-2025-results
+- Fortive Q2 2025 earnings release: https://investors.fortive.com/news-events/press-releases/detail/271/fortive-reports-second-quarter-2025-results
+- Fortive Investor Day 2025 / value creation framework: https://investors.fortive.com/news-events/press-releases/detail/267/fortive-to-outline-value-creation-strategy-and-financial-framework
+- Fortive Ralliant separation announcement: https://investors.fortive.com/news-events/press-releases/detail/242/fortive-announces-strategic-plans-for-separation-into-two-independent-public-companies
+- Fortive Ralliant separation completion: https://investors.fortive.com/news-events/press-releases/detail/269/fortive-announces-completion-of-the-ralliant-separation-and-appointment-of-olumide-soroye-as-president-ceo-and-director-of-fortive
+- Ralliant separation completion: https://investors.ralliant.com/news-events/press-releases/detail/107/ralliant-completes-separation-from-fortive-and-launches-as-independent-publicly-traded-company
+- Ralliant business/brands: https://ralliant.com/our-work
+- Fortive current operating companies: https://fortive.com/companies
+- StockAnalysis FTV statistics and valuation, last updated 2026-06-11: https://stockanalysis.com/stocks/ftv/statistics/
+
+### 产品与市场
+
+- Fluke Networks DSX CableAnalyzer: https://www.flukenetworks.com/datacom-cabling/Versiv/dsx-cableanalyzer-series
+- Fluke Networks OptiFiber Pro OTDR: https://www.flukenetworks.com/datacom-cabling/fiber-testing/optifiber-pro-otdr
+- Accruent facility asset management: https://www.accruent.com/solutions/facility-asset-management-software
+- Accruent CMMS: https://www.accruent.com/solutions/cmms-software
+- eMaint CMMS / Fluke Reliability: https://www.emaint.com/
+- Industrial Scientific Radius BZ1: https://www.indsci.com/en/gas-detectors/area/radius-bz1
+- Industrial Scientific Radius BZ1 external power / certification discussion: https://www.indsci.com/en/blog/extending-radius-bz1-run-time-with-external-power
+- Fluke Networks DSX-8000 Cat 8 certification public release: https://www.prnewswire.com/news-releases/fluke-networks-introduces-the-dsx-8000-cableanalyzer-worlds-first-certified-category-8-field-tester-300394305.html
+
+### 本地行业资料
+
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-06-11.md`

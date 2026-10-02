@@ -1,0 +1,437 @@
+# 公司：TT Trane Technologies（Trane Technologies plc）公司调研_2026-06-11
+
+报告日期：2026-06-11  
+研究范围：只使用 `基本面/行业调研/` 中与 AI 数据中心冷却、HVAC、MEP、液冷、AI 产业链相关资料，并结合联网公开信息。未读取、引用或继承 `特征量化/` 内容。  
+核心口径：Trane Technologies 是全球 HVAC / Climate Solutions 龙头，正在从高端商业 HVAC 与服务公司，升级为 AI 数据中心“从中央冷站到芯片侧液冷”的端到端热管理平台。它不是纯 AI 公司，但 AI 数据中心正成为其订单、backlog、估值弹性的核心变量。
+
+## 0. 核心结论
+
+1. **投资人眼中的 TT**：TT 是高质量工业股、节能 HVAC 龙头、商业楼宇和数据中心热管理受益者。市场给它高估值，原因不是单纯收入增速，而是长期高 ROIC、强现金流、服务收入黏性、数据中心订单加速和 2026 年 LiquidStack / Stellar Energy 收购带来的 AI 基建期权。
+2. **AI 数据中心主线**：TT 的传统强项是大型冷水机组、中央冷站、空气侧热管理、楼宇控制与服务；2026 年收购 Stellar Energy 后补上模块化能源/冷站交付，收购 LiquidStack 后补上 direct-to-chip 与 immersion liquid cooling。组合后，公司可以向 hyperscaler、colocation、NeoCloud 报价“冷站 + 液冷 + 控制 + 服务”的系统方案。
+3. **最新官方订单信号很强**：2026Q1 bookings 为 **66.91 亿美元**，同比 +35% reported、+33% organic；期末 backlog 为 **107 亿美元**，同比 +51% reported、+43% organic；管理层明确称数据中心 outlook 达到公司历史最强水平之一。Q1 enterprise book-to-bill 为 **1.35x**，订单显著快于收入确认。
+4. **财务健康度高，但估值已经很贵**：截至 2026-06-11，TT 股价约 **460.14 美元**，市值约 **1027 亿美元**；TTM revenue **216 亿美元**，TTM net income **29 亿美元**；P/E 约 **35.6x**，forward P/E 约 **29.3x**，P/S 约 **4.7x**。2026Q1 净债务约 **35.4 亿美元**、debt/EBITDA 约 **1.0x**，资产负债表健康，但股票已经反映了大量优质增长预期。
+5. **公司未披露 AI 数据中心收入占比**：本报告将 AI/DC 相关收入作为推算项处理。基于公司 backlog、Americas Commercial HVAC book-to-bill、项目内行业订单池和产品组合，推测 2026 年 TT AI/DC 相关 revenue run-rate 约 **25-40 亿美元**，约占公司收入 **11%-18%**；其中绝大部分仍是中央冷站、commercial applied HVAC、controls、service，LiquidStack 当前贡献仍小但弹性最大。
+6. **未来一年最关键产品**：大型冷水机组/中央冷站、模块化冷站和能源 skid、LiquidStack direct-to-chip / immersion liquid cooling、数据中心 controls / AI optimization、数据中心服务和租赁。住宅 HVAC、运输冷链、普通低密度楼宇 HVAC 对 AI 主线重要性低，本报告只作简要跳过。
+7. **主要风险**：高估值、AI capex 延迟、电力接入拖延、hyperscaler 议价、液冷标准化导致硬件利润下行、现场漏液/可靠性事故、收购整合和商誉、以及 chillerless warm-water / dry-cooler 架构降低传统冷水机组强度。
+
+## 1. 公司整体业务、投资人定位和产业链位置
+
+### 1.1 公司业务概览
+
+Trane Technologies plc 是以气候控制和热管理为核心的全球工业公司，主要品牌包括 **Trane** 与 **Thermo King**。公司按地域披露三大业务分部：
+
+| 分部 | 2026Q1 revenue | 占公司收入 | 2026Q1 增速 | 2026Q1 adjusted operating margin | 主要业务 |
+|---|---:|---:|---:|---:|---|
+| Americas | 39.98 亿美元 | 80.5% | +8% reported / +4% organic | 17.9% | 北美商业 HVAC、applied systems、住宅 HVAC、运输冷链、服务、controls、数据中心冷却 |
+| EMEA | 6.40 亿美元 | 12.9% | -6% reported / -8% organic | 11.9% | 欧洲、中东、非洲商业 HVAC、服务、运输冷链、楼宇控制 |
+| Asia Pacific | 3.32 亿美元 | 6.7% | +16% reported / +9% organic | 22.1% | 亚太 HVAC、服务、部分工业与商业客户 |
+| 合计 | 49.69 亿美元 | 100.0% | +6% reported / +3% organic | 16.0% adjusted OPM | Climate solutions platform |
+
+TT 的实际业务可以拆成四类：
+
+| 业务层 | TT 对应产品/能力 | 与 AI 数据中心关系 |
+|---|---|---|
+| Commercial applied HVAC / thermal plant | 大型冷水机组、air-cooled / water-cooled chiller、空气处理设备、热泵、冷却塔/干冷器集成、泵阀控制、工程设计 | AI 数据中心设施侧冷却的核心，尤其是高密度 GPU 机房的 secondary loop、冷站和 heat rejection |
+| Controls / building automation / AI optimization | Tracer controls、楼宇自动化、BrainBox AI、Kieback&Peter 权益投资 | 通过控制算法、能效优化、负载预测降低 PUE 和运行成本 |
+| Services / rental / lifecycle | 运维、备件、commissioning、临时冷却、改造升级 | 数据中心 uptime 要求高，服务黏性和利润率通常高于设备 |
+| Transport / residential / non-DC HVAC | Thermo King、住宅 HVAC、普通楼宇舒适空调 | 与 AI 关系弱，更多是周期性和替换需求 |
+
+### 1.2 投资人心中的 TT
+
+TT 在投资人心中不是低估值周期制造商，而是 **premium climate compounder**：
+
+| 投资叙事 | 具体支撑 | 对估值的意义 |
+|---|---|---|
+| 高质量工业复利 | FY2025 revenue 213 亿美元，reported +7%、organic +6%；adjusted EPS 13.18 美元，+14%；free cash flow 26 亿美元，约 119% adjusted net earnings | 支撑高于传统工业股的 P/E |
+| 数据中心订单弹性 | 2026Q1 bookings 66.91 亿美元，backlog 107 亿美元；管理层称数据中心 outlook 为公司历史最强之一 | 让市场把 TT 部分看作 AI infrastructure pick-and-shovel |
+| 服务和 controls 黏性 | HVAC 生命周期长，服务、维护、controls、energy optimization 带来复购 | 平滑周期、提高利润率 |
+| 资本纪律 | 2025 年强 FCF、持续分红回购；2026 年做战略收购但杠杆仍低 | 提升资本回报可信度 |
+| 端到端热管理平台 | 2026 年收购 Stellar Energy 和 LiquidStack，补齐模块化冷站与芯片侧液冷 | 提高客户单项目 wallet share |
+
+### 1.3 最近 3 年重大业务变动、转型和收购
+
+| 时间 | 事件 | 业务含义 | 对 AI/DC 主线的重要性 |
+|---|---|---|---|
+| 2023-2025 | 商业 HVAC、服务和 applied systems 持续强于住宅/普通工业周期，数据中心订单成为 backlog 增长核心之一 | TT 从“设备公司”更明确变成“系统 + 服务 + controls”公司 | 高：AI 数据中心优先采购的是可认证、可交付、可服务的冷却系统 |
+| 2025-01 | TT 完成 BrainBox AI 收购；BrainBox AI 用 AI 和云计算做 autonomous HVAC optimization | 增强 controls、building AI、energy optimization | 中高：对数据中心 PUE、楼宇群控有价值，但收入规模小于设备 |
+| 2026Q1 | TT 取得 Kieback&Peter GmbH & Co. KG 49% 权益 | 补强欧洲楼宇自动化与 controls | 中：更偏楼宇控制，不是纯 AI 数据中心硬件 |
+| 2026Q1 | TT 收购 Stellar Energy，官方定义为面向数据中心和分布式能源的 modular energy solutions provider | 补上模块化能源、冷站、prefab delivery、项目执行能力 | 很高：AI 数据中心瓶颈是 time-to-power / time-to-cool / time-to-commission |
+| 2026Q1 | TT 完成对 LiquidStack 的剩余股权收购，使其成为全资子公司 | 补上 advanced liquid cooling，包括 immersion 和 direct-to-chip | 很高：使 TT 从 facility cooling 进入 rack/chip 侧冷却 |
+| 2026Q1 | Backlog 达 107 亿美元，reported +51%、organic +43% | 订单能见度显著提高 | 很高：订单增长快于收入，未来 4-8 个季度 revenue conversion 关键 |
+
+### 1.4 产业链位置
+
+在 AI 数据中心产业链中，TT 位于 **机械/热管理基础设施层**：
+
+```text
+GPU / ASIC / HBM / optical interconnect
+        ↓ 产生热负荷
+Server board / rack / manifold / CDU / RDHx
+        ↓ 液冷与空气侧换热
+Secondary loop / pumps / heat exchanger / controls
+        ↓
+Central plant / chiller / dry cooler / cooling tower / thermal storage
+        ↓
+MEP EPC / modular plant / commissioning / service
+```
+
+TT 的位置不是 GPU、networking 或 optical module，而是 **AI 机房能否按期上线、能否稳定运行、PUE 能否降低** 的关键工程层。项目内行业调研的结论是，2026 年主线不是“液冷替代一切风冷”，而是 **GPU 主热源走 direct-to-chip / CDU，设施侧 HVAC、冷站、heat rejection 和 controls 的价值同步上升**。这正好对应 TT 的能力边界。
+
+### 1.5 估值和关键财务快照
+
+数据日期：股价、市值和 valuation multiples 以 2026-06-11 美股收盘/公开行情页为准；财务报表以 2026Q1 10-Q 和 2025 Form 10-K / 年报口径为准。
+
+| 指标 | 最新值 | 日期 / 口径 | 解读 |
+|---|---:|---|---|
+| 股价 | 460.14 美元 | 2026-06-11 收盘 | 52 周区间约 297-477 美元附近，处于高位 |
+| 市值 | 约 1027 亿美元 | 2026-06-11 行情 | 已是大市值 premium industrial |
+| TTM revenue | 约 216.0 亿美元 | StockAnalysis 2026-06-11 | 与 FY2025 213.2 亿美元、2026Q1 49.7 亿美元匹配 |
+| TTM net income | 约 29.0 亿美元 | StockAnalysis 2026-06-11 | TTM net margin 约 13.4% |
+| P/E | 约 35.6x | 2026-06-11；按行情页 EPS 口径 | 显著高于普通工业周期股 |
+| Forward P/E | 约 29.3x | 2026-06-11；分析师 forward EPS 口径 | 已定价 2026-2027 持续增长 |
+| P/S | 约 4.7x | 2026-06-11 | 对 HVAC 设备公司非常高，反映服务、数据中心和利润率预期 |
+| Revenue growth | 2026Q1 +6% reported / +3% organic；FY2026 指引 +9.5% reported / +7% organic | 2026Q1 官方口径 | 收购贡献抬升 reported growth，organic 仍健康 |
+| Gross margin | 2026Q1 36.6%；TTM 约 35.9% | 2026Q1 10-Q / StockAnalysis | 大型系统、服务、价格纪律支撑 |
+| Net margin | 2026Q1 12.3%；TTM 约 13.4% | 2026Q1 10-Q / StockAnalysis | 高于一般设备制造商 |
+| Adjusted operating margin | 2026Q1 16.0%；FY2025 19.5% | 官方 earnings release | Q1 季节性较低，全年通常 H2 更强 |
+| Free cash flow | 2026Q1 5.73 亿美元；FY2025 26 亿美元 | 官方 earnings release | Q1 FCF 强，FY2025 FCF 为 adjusted net earnings 119% |
+
+### 1.6 资产负债表健康度
+
+截至 2026-03-31：
+
+| 指标 | 数值 | 评价 |
+|---|---:|---|
+| Cash and cash equivalents | 10.74 亿美元 | 现金充足，但低于总债务 |
+| Total debt | 46.16 亿美元 | 绝对债务不低，但相对于 EBITDA 可控 |
+| Net debt | 约 35.42 亿美元 | 按现金抵扣后杠杆温和 |
+| Debt / capital | 34.9% | 资本结构健康 |
+| Debt / EBITDA | 1.02x | 很低，仍有收购和回购弹性 |
+| Working capital | 6.95 亿美元 | 流动性为正 |
+| Current ratio | 约 1.10x | 对工业公司可接受，不算宽裕 |
+| 2026Q1 operating cash flow | 6.36 亿美元 | Q1 即实现强现金流 |
+| 2026Q1 free cash flow | 5.73 亿美元 | FCF conversion 强 |
+
+结论：TT 财务健康度高，短期偿债风险低。2026Q1 的 Stellar、LiquidStack、BrainBox AI、Kieback&Peter 等投资/收购提高了无形资产和整合复杂度，但公司净杠杆仍低。真正的财务风险不是破产式风险，而是 **高估值下，如果 AI 数据中心订单转收入慢于预期，或者液冷收购无法形成利润率增厚，估值倍数会收缩**。
+
+## 2. 最近 5 次财报：收入、订单、backlog、分部和 AI/DC 信号
+
+说明：公司不披露 AI 数据中心 revenue 或 backlog 的精确占比。下表中“AI/DC 相关收入占比”为本报告估算，不是公司官方披露。估算依据包括 Americas Commercial HVAC orders、enterprise backlog、管理层数据中心表述、项目内行业订单池，以及 TT 产品在数据中心热管理 BOM 中的可获得内容量。
+
+| 财报季度 | Enterprise bookings / B2B | Backlog / 交期信号 | Revenue / 增速 | 分部收入与利润率 | EPS / 利润率 | AI 数据中心相关收入占比推算 |
+|---|---:|---|---:|---|---|---|
+| 2026Q1 | bookings **66.91 亿美元**，+35% reported / +33% organic；B2B **1.35x** | 期末 backlog **107 亿美元**，+51% reported / +43% organic；订单显著快于收入；取消率未披露，未见官方取消压力 | revenue **49.69 亿美元**，+6% reported / +3% organic | Americas 39.98 亿美元，+8%，OPM 17.9%；EMEA 6.40 亿美元，-6%，OPM 11.9%；Asia 3.32 亿美元，+16%，OPM 22.1% | adjusted EPS **2.63 美元**，+7%；adjusted OPM 16.0%；EBITDA margin 17.7% | 推算 **11%-18%**，约 **5.5-9.0 亿美元/季**；DC 订单占比高于收入占比，收入仍在转化期 |
+| 2025Q4 | bookings **48.74 亿美元**，+6% reported / +4% organic；B2B **0.92x** | 年末 backlog **78 亿美元**，+16% reported / +11% organic；为 2026 提供能见度 | revenue **52.96 亿美元**，+11% reported / +9% organic | Americas 42.74 亿美元，+10%，OPM 19.1%；EMEA 6.94 亿美元，+4%，OPM 16.4%；Asia 3.29 亿美元，+20%，OPM 19.5% | adjusted EPS **3.12 美元**，+16%；adjusted OPM 18.5% | 推算 **9%-15%**，约 **4.8-8.0 亿美元/季**；数据中心订单强，但 LiquidStack/Stellar 尚未并表 |
+| 2025Q3 | bookings **56 亿美元**，+9% reported / +7% organic；B2B 约 **1.00x** | backlog 继续高位；管理层继续强调 commercial HVAC / data center demand | revenue **56 亿美元**，+7% reported / +5% organic | Americas 45.02 亿美元，+7%，OPM 24.1%；EMEA 7.24 亿美元，+1%，OPM 21.8%；Asia 3.41 亿美元，+28%，OPM 22.7% | adjusted EPS **4.20 美元**，+8%；adjusted OPM 23.2% | 推算 **8%-14%**，约 **4.5-7.8 亿美元/季**；AI/DC 主要在 Americas applied systems |
+| 2025Q2 | bookings **57.37 亿美元**，+9% reported / +6% organic；B2B **1.04x** | backlog 较 2024 同期增长，订单能见度好；未披露取消率 | revenue **55.43 亿美元**，+8% reported / +6% organic | Americas 44.60 亿美元，+7%，OPM 24.5%；EMEA 7.62 亿美元，+4%，OPM 18.8%；Asia 3.22 亿美元，+26%，OPM 21.6% | adjusted EPS **3.88 美元**，+8%；adjusted OPM 23.0% | 推算 **8%-13%**，约 **4.4-7.2 亿美元/季**；数据中心冷却订单开始明显高于普通 HVAC |
+| 2025Q1 | bookings **49.40 亿美元**，+7% reported / +5% organic；B2B **1.05x** | backlog 同比增长；管理层仍未单列 DC backlog | revenue **46.88 亿美元**，+11% reported / +8% organic | Americas 37.04 亿美元，+10%，OPM 18.5%；EMEA 6.83 亿美元，+7%，OPM 13.2%；Asia 3.01 亿美元，+7%，OPM 21.3% | adjusted EPS **2.45 美元**，+13%；adjusted OPM 17.0% | 推算 **7%-12%**，约 **3.3-5.6 亿美元/季**；AI/DC 仍主要是 chiller、air-side、controls、service |
+
+### 2.1 从五个季度看出的变化
+
+1. **订单拐点在 2026Q1 明显加速**：2025Q1-Q4 bookings 多数在 49-57 亿美元区间，2026Q1 跳到 66.91 亿美元；Q1 revenue 只有 49.69 亿美元，book-to-bill 1.35x，说明大项目订单进入 backlog，但尚未完全转收入。
+2. **Backlog 从 2025 年末 78 亿美元跳到 2026Q1 的 107 亿美元**：一个季度增加约 29 亿美元，其中一部分来自收购并表，但 organic backlog 也 +43%，说明不是纯并购因素。
+3. **Americas 是绝对主战场**：2026Q1 Americas 占收入 80.5%、占 bookings 82.3%，数据中心冷却和 AI 基建主要在美国，TT 的 AI/DC beta 集中在 Americas Commercial HVAC 和数据中心相关 applied systems。
+4. **利润率季节性明显**：Q1 OPM 通常低于 Q2/Q3；不能用 Q1 的 16% 直接年化判断全年利润率。FY2025 adjusted OPM 为 19.5%，管理层 2026 指引隐含全年仍有强经营杠杆。
+5. **取消率未披露，但订单质量目前看偏健康**：公司没有披露 cancellation rate，也没有在官方材料中提示订单取消压力。结合 backlog 高增长、book-to-bill >1、FCF 强劲，当前更像供应/交付能力约束，而不是需求突然转弱。
+
+## 3. 2026 年最新指引、收入占比和产品拆解
+
+### 3.1 最新 2026 指引
+
+2026Q1 后，公司上调全年指引：
+
+| 指引项 | 2026 最新指引 | 含义 |
+|---|---:|---|
+| Revenue growth | 约 **+9.5% reported**、约 **+7% organic** | 收购贡献约 2.5 pct；organic 仍高于一般工业 GDP |
+| Adjusted EPS | **14.75-14.95 美元** | 中点约 14.85 美元，同比 FY2025 adjusted EPS 13.18 美元增长约 12.7% |
+| Free cash flow | 约等于或高于 adjusted net earnings 的 100% | 公司仍以强 FCF conversion 管理资本开支和收购 |
+| 数据中心表述 | outlook 处于公司历史最强水平之一 | 管理层未给出 dollar amount，但订单和 backlog 支撑明确 |
+
+### 3.2 2026Q1 收入结构
+
+| 业务分部 | 2026Q1 收入 | 收入占比 | 2026Q1 bookings | bookings 占比 | 重点结论 |
+|---|---:|---:|---:|---:|---|
+| Americas | 39.98 亿美元 | 80.5% | 55.08 亿美元 | 82.3% | AI 数据中心、commercial HVAC、service 的核心区域 |
+| EMEA | 6.40 亿美元 | 12.9% | 7.44 亿美元 | 11.1% | organic 下滑，短期不是最大增长引擎 |
+| Asia Pacific | 3.32 亿美元 | 6.7% | 4.39 亿美元 | 6.6% | 增速较好但收入占比小，AI/DC 弹性低于 Americas |
+
+TT 没有按“数据中心 / 非数据中心”披露收入，因此 AI/DC 口径需要从产品和订单推算。结合项目内行业调研，美国 AI 数据中心冷却、液冷、HVAC 订单池 2026 年实际口径约 **160-310 亿美元**，2027 年约 **220-450 亿美元**；其中冷水机组/HVAC/热管理和 direct liquid/CDU/cold plate 子池均处在高速扩张阶段。TT 是少数同时拥有中央冷站、controls、service、模块化交付和 liquid cooling 的供应商。
+
+### 3.3 重点产品与业务
+
+| 重点业务/产品 | 对应 TT 资产 | 当前收入规模推算 | 增速推算 | 利润率推算 | 重要性 |
+|---|---|---:|---:|---:|---|
+| 大型冷水机组 / 中央冷站 / commercial applied HVAC | Trane CenTraVac、Sintesis、Series R、air-cooled / water-cooled chillers、heat pump、air handling、controls | AI/DC 相关年化约 **15-25 亿美元** | +25%-45% | gross margin 30%-42%，项目 mix 好时更高 | 最高：现阶段 revenue 最大、backlog 最清晰 |
+| 模块化能源和冷站 / prefab plant | Stellar Energy | 2026 并表后年化约 **3-7 亿美元**，取决于 backlog conversion | +40%-100% | gross margin 18%-32%，项目执行好可上行 | 很高：解决 time-to-cool / time-to-commission |
+| LiquidStack direct-to-chip / immersion liquid cooling | LiquidStack | 当前年化可能 **1-3 亿美元以内**，收入小但订单弹性大 | +60%-150% | gross margin 25%-45%，取决于定制化和认证 | 很高：从 facility 进入 rack/chip |
+| Controls / AI optimization / BMS | Tracer、BrainBox AI、Kieback&Peter | AI/DC 相关约 **1-3 亿美元**，整体 controls 更大 | +20%-60% | software / service mix 可高于设备 | 高：收入小但客户黏性强 |
+| 数据中心 service / rental / lifecycle | Trane service network、commissioning、temporary cooling、maintenance | AI/DC 相关约 **4-8 亿美元**，与设备重叠需避免重复计算 | +20%-50% | service margin 通常高于设备 | 高：长期现金流和替换成本来源 |
+
+### 3.4 明确跳过或弱化的非 AI 主线业务
+
+这些业务仍可能贡献现金流，但不是本报告 AI 基建主线：
+
+| 业务 | 跳过原因 |
+|---|---|
+| Thermo King transport refrigeration | 与 AI 数据中心冷却无直接关联，更多受冷链、卡车、海运、法规周期影响 |
+| Residential HVAC | 与 AI 数据中心无直接关联；受利率、住房、替换周期影响 |
+| 普通低密度商业楼宇舒适空调 | 增速和溢价能力低于 AI 数据中心 applied systems |
+| 普通 EMEA / Asia 非数据中心 HVAC | 2026Q1 EMEA organic 下滑，Asia 占比小，不是公司 AI 估值主因 |
+| 低端标准化 air-conditioning units | 容易被 Daikin、Carrier、Midea、Gree、区域厂商竞争，非 TT 高估值核心 |
+
+### 3.5 不应漏掉的小业务/小产品
+
+| 小业务/产品 | 为什么可能重要 |
+|---|---|
+| BrainBox AI autonomous HVAC optimization | 可能成为 Trane service 和 controls 的软件层，提高能效、订阅和客户锁定 |
+| Kieback&Peter 楼宇自动化 | 欧洲 controls 补强，未来可与 Trane controls / BrainBox AI 打包 |
+| LiquidStack immersion cooling | Direct-to-chip 是主流，但 immersion 在特定 high-density / edge / harsh environment 场景可能有小而高毛利机会 |
+| Thermal storage / thermal battery | AI 数据中心如果遇到电价和峰谷负荷问题，储冷可降低峰值制冷负荷和电费 |
+| Temporary cooling / rental | 数据中心建设和调试阶段常需要临时冷却；订单小但利润率和紧急性高 |
+| Controls + commissioning data | 调试、FAT/SAT、运行数据可形成后续服务和能效优化黏性 |
+
+## 4. 高增长/关键产品当前贡献、AI 重要性、紧急性、供需和垄断能力
+
+评分：5 为最高。收入贡献为本报告估算，非公司披露。
+
+| 产品/业务 | 当前 TT 收入贡献推算 | 当前增速推算 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 大型冷水机组 / 中央冷站 | 年化 **15-25 亿美元** AI/DC 相关 | +25%-45% | 5 | 5 | 4 | 4 | 目前最重要 revenue engine；冷站是数据中心上线瓶颈之一 |
+| Commercial air-side / CRAH / fan wall / RDHx / air handling | 年化 **3-7 亿美元** AI/DC 相关，部分与冷站项目绑定 | +20%-45% | 4 | 4 | 3 | 3 | 液冷并不消灭空气侧，机房仍需要热交换、除湿、冗余和低密度区域冷却 |
+| Stellar modular energy / cooling plant | 年化 **3-7 亿美元** 并表潜力 | +40%-100% | 5 | 5 | 4 | 3 | 对缩短交付窗口关键；项目执行能力决定利润 |
+| LiquidStack D2C / immersion | 年化 **1-3 亿美元以内** 当前贡献 | +60%-150% | 5 | 5 | 5 | 3 | 增速和战略价值最高，但规模仍小，标准化后硬件 margin 可能被压 |
+| Controls / BrainBox AI / Tracer / Kieback&Peter | AI/DC 相关年化 **1-3 亿美元** | +20%-60% | 4 | 4 | 3 | 4 | 收入小，但 software/service 黏性和 PUE 优化价值高 |
+| Service / rental / commissioning | 年化 **4-8 亿美元** AI/DC 相关，部分随设备附带 | +20%-50% | 4 | 5 | 4 | 4 | uptime 需求带来高黏性；客户替换成本高 |
+
+### 4.1 当前供需判断
+
+1. **最供不应求的是经过认证的大型冷水机组、模块化冷站、field commissioning 能力和液冷系统集成能力**，而不是单个硬件部件。
+2. 项目内行业调研显示，2026 年 AI 数据中心建设瓶颈顺序大致是：电网/变压器/开关设备 > HBM/CoWoS > 液冷系统集成 > MEP labor / commissioning > NeoCloud 融资和利用率。TT 位于第三和第四个瓶颈。
+3. TT 的溢价能力来自三点：历史可靠性、全球服务网络、客户认证和项目交付能力。单纯硬件 BOM 上，它不是所有环节的垄断者。
+
+## 5. 一年后收入贡献和业务评分：基准、乐观、极度乐观
+
+预测窗口：2026Q2-2027Q1 或未来 12 个月滚动口径。收入为 TT 可确认 revenue，不等于项目 capex，也不等于 backlog。
+
+| 产品/业务 | 情景 | 一年后收入贡献推算 | 收入增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 关键假设 |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| 大型冷水机组 / 中央冷站 | 基准 | **21-32 亿美元** | +25%-35% | 5 | 5 | 4 | 4 | 2026 backlog 正常转收入，冷站交期仍紧 |
+| 大型冷水机组 / 中央冷站 | 乐观 | **32-45 亿美元** | +45%-70% | 5 | 5 | 5 | 4 | hyperscaler 扩建继续，TT 获得更多 capacity reservation |
+| 大型冷水机组 / 中央冷站 | 极度乐观 | **45-60 亿美元** | +80%-120% | 5 | 5 | 5 | 5 | AI capex 上修且交付能力同步扩张，价格继续上行 |
+| Air-side / CRAH / RDHx / air handling | 基准 | **4-9 亿美元** | +20%-35% | 4 | 4 | 3 | 3 | 液冷机房仍需空气侧和冗余 |
+| Air-side / CRAH / RDHx / air handling | 乐观 | **8-13 亿美元** | +45%-75% | 4 | 4 | 4 | 3 | 高密度机房混合冷却比例高于预期 |
+| Air-side / CRAH / RDHx / air handling | 极度乐观 | **12-18 亿美元** | +80%-130% | 4 | 5 | 4 | 4 | RDHx / fan wall 成为更多 AI hall 标配 |
+| Stellar modular plant | 基准 | **5-9 亿美元** | +40%-80% | 5 | 5 | 4 | 3 | Stellar 并表并正常消化 backlog |
+| Stellar modular plant | 乐观 | **9-15 亿美元** | +90%-150% | 5 | 5 | 5 | 4 | 大客户为缩短工期采购 prefab cooling / energy plant |
+| Stellar modular plant | 极度乐观 | **15-22 亿美元** | +160%-250% | 5 | 5 | 5 | 4 | TT 把 Stellar 与 Trane applied systems 打包成标准化交付平台 |
+| LiquidStack D2C / immersion | 基准 | **3-6 亿美元** | +80%-150% | 5 | 5 | 5 | 3 | direct-to-chip 认证通过更多客户，但收入仍爬坡 |
+| LiquidStack D2C / immersion | 乐观 | **6-10 亿美元** | +150%-250% | 5 | 5 | 5 | 4 | GB300 / Rubin 类高密度机架加速，TT 获得 rack/chip 侧项目 |
+| LiquidStack D2C / immersion | 极度乐观 | **10-16 亿美元** | +250%-500% | 5 | 5 | 5 | 4 | hyperscaler 选定 LiquidStack 作为多区域供应商之一 |
+| Controls / AI optimization | 基准 | **2-4 亿美元** AI/DC 相关 | +25%-60% | 4 | 4 | 3 | 4 | 随设备附带 controls 和 energy optimization |
+| Controls / AI optimization | 乐观 | **4-8 亿美元** | +70%-150% | 4 | 4 | 4 | 4 | BrainBox AI / Tracer 打包为持续软件与服务 |
+| Controls / AI optimization | 极度乐观 | **8-12 亿美元** | +200%+ | 4 | 5 | 4 | 5 | AI workload-aware cooling optimization 成为大型客户标准采购 |
+| Service / rental / commissioning | 基准 | **6-11 亿美元** | +25%-45% | 4 | 5 | 4 | 4 | 新机房调试和既有机房改造带来服务 |
+| Service / rental / commissioning | 乐观 | **11-17 亿美元** | +60%-120% | 4 | 5 | 5 | 4 | 设备装机后服务 attach rate 上升 |
+| Service / rental / commissioning | 极度乐观 | **17-24 亿美元** | +130%-220% | 4 | 5 | 5 | 5 | TT 用服务网络形成强锁定，临时冷却和 commissioning 溢价上升 |
+
+### 5.1 对公司整体收入的影响
+
+| 情景 | AI/DC 相关收入未来一年推算 | 对公司 revenue growth 的影响 | 公司整体 revenue growth 推算 |
+|---|---:|---|---:|
+| 基准 | **35-55 亿美元**，约占公司收入 15%-23% | AI/DC 增量抵消住宅、普通楼宇和区域波动 | **+8%-12%**，接近公司 +9.5% reported 指引 |
+| 乐观 | **55-80 亿美元**，约占公司收入 22%-30% | 大型项目转收入更快，收购协同显现 | **+13%-18%** |
+| 极度乐观 | **80-105 亿美元**，约占公司收入 30%-38% | 需要超强产能扩张和大客户多区域采用 | **+18%-25%**，但实现难度高 |
+
+注意：上表是 AI/DC 主题贡献口径，产品之间存在项目重叠。例如一个数据中心项目中，中央冷站、controls、service 和 modular plant 可能同时计入同一客户项目，但会分别确认为不同产品/服务收入。本报告在整体收入推算中已做折扣，避免简单相加。
+
+## 6. BOM、每 MW / rack / GPU / optical port 内容量、价格传导链、产能和认证
+
+### 6.1 内容量总表
+
+项目内行业调研给出的 facility-heavy capex 口径显示，AI 数据中心机械/冷却相关内容量通常为 **250-600 万美元/MW**，具体取决于 rack density、液冷比例、冗余、PUE、水资源和交付方式。TT 可获得的是其中的 chiller / plant / controls / service / liquid cooling / prefab 份额，而不是全部 MEP。
+
+| 产品/业务 | 每 MW TT 可获得内容量推算 | 每 rack 内容量推算 | 每 GPU 内容量推算 | 每 optical port 内容量 | 真实 BOM 组成 | 价格传导链 |
+|---|---:|---:|---:|---:|---|---|
+| 大型冷水机组 / 中央冷站 | **70-220 万美元/MW** | 以 100-150 kW/rack 计，约 **7-33 万美元/rack** | 以 72-GPU rack 计，约 **1000-4600 美元/GPU** | 直接内容量 **0**；间接支撑 optical switch / NIC 散热 | 压缩机/drive 18%-30%；换热器 15%-25%；壳体钢材 10%-18%；controls/VFD 8%-15%；阀件/refrigerant 3%-8%；测试和人工 12%-22% | GPU capex → rack heat load → facility cooling RFP → chiller/plant capacity reservation → delivery/commissioning → service |
+| Air-side / CRAH / fan wall / RDHx | **20-80 万美元/MW** | **2-12 万美元/rack** | **300-1700 美元/GPU** | 直接内容量 **0** | coil 20%-35%；EC fan 20%-30%；controller 8%-15%；sheet metal 15%-25%；valves/sensors 5%-12%；labor 10%-20% | 液冷比例上升但机房仍需空气侧冗余、除湿、低密度区域和散热尾端 |
+| Stellar modular cooling / energy plant | **50-200 万美元/MW**，取决于是否包含 skid、pumps、controls、integration | **5-30 万美元/rack** | **700-4200 美元/GPU** | 直接内容量 **0** | skid/frame、pumps、piping、heat exchanger、controls、electrical integration、FAT、field labor | 客户为缩短工期愿意为 prefab、factory test、交付确定性支付溢价 |
+| LiquidStack direct-to-chip / rack liquid loop | **50-250 万美元/MW** | **8-30 万美元/rack**，高密度 rack 可更高 | **1100-4200 美元/GPU** | 直接内容量 **0**；但影响 optical cage / switch airflow design | cold plate 20%-35%；manifold/UQD/tubing/seals 15%-25%；CDU pump/HEX/valves/controller 20%-35%；installation/flushing 15%-25%；design/cert 5%-15% | GPU TDP 上升 → rack power 100-250 kW → D2C / CDU 必配 → 认证供应商议价 |
+| Immersion cooling | **40-200 万美元/MW** | **6-25 万美元/rack-equivalent** | **800-3500 美元/GPU-equivalent** | 直接内容量 **0** | tank、dielectric fluid、heat exchanger、pumps、filtration、controls、service | 适合特定高密度或受限场景；不是 2026-2027 默认主流 |
+| Controls / AI optimization | **5-30 万美元/MW** | **0.5-4 万美元/rack** | **70-550 美元/GPU** | 直接内容量 **0** | sensors、controllers、software、BMS integration、optimization models、service | 客户先买设备，再买能效优化、uptime、报警和运维 |
+| Service / rental / commissioning | 初装项目 **10-80 万美元/MW**，生命周期更高 | **1-10 万美元/rack** | **140-1400 美元/GPU** | 直接内容量 **0** | field labor、FAT/SAT、temporary cooling、spares、maintenance、remote monitoring | uptime penalty 和交付窗口紧迫性决定服务溢价 |
+
+### 6.2 为什么 optical port 内容量为 0 但仍相关
+
+TT 不生产 optical transceiver、switch ASIC、NIC 或 optical port，因此每 optical port 直接内容量为 **0 美元**。但 400G / 800G / 1.6T optical ports 使 switch 和 NIC 热负荷上升，液冷 rack 中仍有 air-side、cold plate、manifold、RDHx、room humidity 和 controls 需求。TT 的价值是让 optical networking 所在的高密度 rack 稳定运行，而不是直接卖 optical hardware。
+
+### 6.3 当前产能能力和供应链采纳程度
+
+| 产品/业务 | 当前产能能力美元计推算 | 供应链采纳程度 | 认证/验证阶段 | 主要瓶颈 |
+|---|---:|---|---|---|
+| 大型冷水机组 / 中央冷站 | AI/DC 可服务收入年化约 **20-30 亿美元**；公司整体 backlog 107 亿美元提供能见度 | 已被大型商业、industrial、data center 客户长期采用 | 成熟产品，数据中心项目需客户/工程公司 site-level approval | 大型压缩机、换热器、测试台、factory slots、field commissioning |
+| Air-side / RDHx / fan wall | 年化 **5-10 亿美元** AI/DC 可服务能力 | 成熟采用；与液冷混合使用 | 项目级认证为主 | 风机、coil、controls、现场整合 |
+| Stellar modular plant | 并表初期，年化 **5-10 亿美元** 可服务能力取决于 factory throughput | 在数据中心和分布式能源场景具备历史项目基础 | 需要客户项目级 qualification、factory acceptance test | 工厂产能、项目管理、piping/electrical integration、FAT/SAT |
+| LiquidStack D2C / immersion | 当前可能 **2-5 亿美元** 级别可服务能力，扩产弹性大但需认证 | 已有液冷技术基础；被 TT 收购后供应链可信度提升 | 正从 specialist supplier 向 TT global platform 认证迁移 | 客户认证周期、leak reliability、UQD/quick connect、CDU 标准、service |
+| Controls / BrainBox AI | 年化 **2-5 亿美元** AI/DC 可服务能力，软件扩张更快 | Building automation 成熟；AI optimization 仍在客户扩展 | 需要 cybersecurity、BMS integration、site data validation | 数据接入、客户 IT 安全、节能效果验证 |
+| Service / rental / commissioning | 年化 **8-15 亿美元** AI/DC 可服务能力，受 technician 和项目节奏约束 | 高采用；大型数据中心离不开 commissioning 和 maintenance | 以客户 site acceptance、SLA、service contract 为核心 | 工程师/技师、调试窗口、备件和临时设备 |
+
+## 7. 一年后产能能力和认证阶段预测
+
+| 产品/业务 | 情景 | 一年后产能能力美元计 | 供应链采纳程度 | 认证/客户阶段 |
+|---|---|---:|---|---|
+| 大型冷水机组 / 中央冷站 | 基准 | **28-40 亿美元** AI/DC 可服务能力 | 继续作为 hyperscaler / colo 主流供应商之一 | 成熟项目认证，更多 capacity reservation |
+| 大型冷水机组 / 中央冷站 | 乐观 | **40-55 亿美元** | 获得更多 multi-site framework agreement | 进入标准化 design guide / preferred vendor list |
+| 大型冷水机组 / 中央冷站 | 极度乐观 | **55-70 亿美元** | 供不应求，客户提前锁定产能 | factory slot 和交付窗口成为准“认证” |
+| Stellar modular plant | 基准 | **8-13 亿美元** | TT 客户开始把 Stellar 作为 prefab cooling/energy 方案 | 项目级 FAT/SAT 扩大 |
+| Stellar modular plant | 乐观 | **13-20 亿美元** | 多客户多区域采用 | 模块化冷站形成 reference design |
+| Stellar modular plant | 极度乐观 | **20-30 亿美元** | 成为部分 hyperscaler 快速交付方案 | 与 TT chiller/controls 打包进入标准采购 |
+| LiquidStack D2C / immersion | 基准 | **5-9 亿美元** | 从试点/项目供应商扩展为合格第二/第三来源 | D2C 平台级认证增加，immersion 仍偏特定场景 |
+| LiquidStack D2C / immersion | 乐观 | **9-15 亿美元** | 进入更多 GPU platform / rack reference design | 与 GB300 / Rubin 类 high-density rack 的 CDU/cold plate qualification 深化 |
+| LiquidStack D2C / immersion | 极度乐观 | **15-25 亿美元** | hyperscaler 多区域采用，供应紧张 | 成为端到端 liquid cooling preferred supplier 之一 |
+| Controls / AI optimization | 基准 | **3-6 亿美元** AI/DC 可服务能力 | 随 Trane equipment attach | 完成更多 cybersecurity 和 BMS integration |
+| Controls / AI optimization | 乐观 | **6-10 亿美元** | AI optimization 成为服务合同增购项 | 节能效果和 uptime data 形成客户证明 |
+| Controls / AI optimization | 极度乐观 | **10-15 亿美元** | 进入客户 fleet-level optimization | 从项目级变成 portfolio-level software |
+| Service / rental / commissioning | 基准 | **10-18 亿美元** AI/DC 可服务能力 | 装机后服务 attach rate 稳定上升 | SLA 和 maintenance contract 扩大 |
+| Service / rental / commissioning | 乐观 | **18-28 亿美元** | 受益于 commissioning bottleneck | 技师和临时冷却资产成为稀缺资源 |
+| Service / rental / commissioning | 极度乐观 | **28-40 亿美元** | 客户以 uptime 为先，服务溢价上升 | 多年服务合同和远程监控加速 |
+
+## 8. 基于 backlog、订单和供给的未来一年业务增速推断
+
+### 8.1 真实订单和供给信号
+
+| 信号 | 数字 | 解读 |
+|---|---:|---|
+| 2026Q1 bookings | 66.91 亿美元 | 创造显著 book-to-bill，订单强于收入 |
+| 2026Q1 book-to-bill | 1.35x | backlog 会继续提供未来收入 |
+| 2026Q1 backlog | 107 亿美元 | 同比 +51% reported / +43% organic |
+| 2025 年末 backlog | 78 亿美元 | Q1 一个季度增加约 29 亿美元 |
+| 2026Q1 revenue | 49.69 亿美元 | backlog / quarterly revenue 约 2.15x |
+| FY2026 revenue 指引 | +9.5% reported / +7% organic | 官方仍较保守，没有把所有 backlog 加速假设一次性放进指引 |
+
+### 8.2 取消率、交期和订单金额推断
+
+公司未披露 cancellation rate、单个客户项目名、AI/DC backlog dollar amount 或 lead time。基于行业和财报信号可做如下推断：
+
+1. **取消率当前应低于市场担心值**：如果取消率高，公司通常会在 backlog 质量、客户延期、订单节奏中给出风险提示。当前披露强调 backlog 强、data center outlook 强、FCF 强，没有显示取消潮。
+2. **大型冷站和 modular plant 交期大概率为 6-18 个月**：大型 compressor、heat exchanger、factory test、现场交付和 commissioning 决定了 revenue conversion 不是即时的。
+3. **Liquid cooling 认证交期可能长于硬件制造交期**：direct-to-chip / CDU / manifold 的瓶颈是客户平台认证、leak reliability、压力降、quick connect 标准和 field service；这解释了为什么 LiquidStack 当前战略价值大于短期 revenue。
+4. **订单金额可能集中在 hyperscaler / colo 多园区项目**：单个 AI campus 的机械/冷却内容量可达数亿美元，TT 若拿到 chiller + controls + service + modular plant，单客户 wallet share 可能显著上升。
+
+### 8.3 未来一年业务增速情景
+
+| 情景 | AI/DC backlog 转化 | 供给/产能假设 | 公司未来一年 revenue growth | AI/DC 相关 revenue growth | 关键风险 |
+|---|---|---|---:|---:|---|
+| 基准 | Q1 backlog 正常转化，新增订单保持高位但不过热 | chiller、modular plant、service capacity 有序扩张 | **+8%-12%** | **+35%-60%** | 指引内增长，估值维持需要 margin 稳定 |
+| 乐观 | 多个 hyperscaler / colo 项目提前交付，Stellar 和 LiquidStack 并表贡献加快 | factory slots 和 field commissioning 扩张顺利 | **+13%-18%** | **+70%-120%** | 需要供应链和项目执行无明显失误 |
+| 极度乐观 | AI capex 再上修，客户为交期提前锁定 TT 产能 | TT 把中央冷站、prefab plant、liquid cooling 打包规模化 | **+18%-25%** | **+130%-220%** | 产能、认证、人力、客户验收任何一项延迟都会压低结果 |
+
+## 9. 竞争格局、新技术主流性、风险、替代方案和客户替换成本
+
+### 9.1 竞争对手地图
+
+| 环节 | TT 主要竞争对手 | TT 优势 | TT 劣势 |
+|---|---|---|---|
+| 大型冷水机组 / central plant | Carrier、Johnson Controls / York、Daikin、Mitsubishi Electric、Smardt、区域 chiller 厂 | Trane 品牌、服务网络、数据中心认证、系统工程 | 不是唯一供应商，大客户会多供应商采购 |
+| 数据中心空气侧 / thermal room | Vertiv、Schneider Electric、STULZ、Modine / Airedale、Munters、Johnson Controls、Carrier | 可与 central plant 和 controls 打包 | 专用 data center thermal 厂商在 CRAH/RDHx 场景更聚焦 |
+| Direct liquid cooling / CDU / cold plate | CoolIT、Vertiv、Schneider / Motivair、Boyd、Eaton、nVent、Danfoss、ZutaCore、Asetek、Asia ODM/JDM 供应链 | LiquidStack + Trane 全球客户和服务网络 | LiquidStack 规模小，客户认证仍需爬坡；D2C 标准化可能压低硬件利润 |
+| Immersion cooling | Submer、GRC、ZutaCore、LiquidStack、Shell / Castrol fluids 生态 | LiquidStack 有 immersion 经验 | Immersion 不是当前 hyperscaler 默认主流，生态阻力较大 |
+| Controls / BMS / energy optimization | Johnson Controls、Siemens、Schneider Electric、Honeywell、Carrier / Automated Logic、Phaidra、自主开发 | Tracer、BrainBox AI、设备数据和 service attach | hyperscaler 可能自建 optimization layer |
+| Modular / prefab plant / MEP integration | Stellar、ZutaCore partners、Schneider modular、Vertiv、Eaton、Fluor/Jacobs/Black & Veatch 等 EPC | 收购 Stellar 后 vertical integration 更强 | EPC 和客户自建团队仍可能压价 |
+
+### 9.2 新技术是否是主流
+
+| 技术 | 是否主流 | TT 位置 | 判断 |
+|---|---|---|---|
+| Direct-to-chip liquid cooling | 2026-2027 高密度 AI rack 的主流方向 | 通过 LiquidStack 进入 | 主流概率高，尤其是 GB300 / Rubin / future AI rack |
+| Immersion cooling | 不是默认主流，但特定场景有价值 | LiquidStack 有能力 | 需要谨慎，不应把 immersion 当成全部液冷市场 |
+| Warm-water loop / dry cooler / adiabatic cooling | 增长趋势明确 | TT central plant、controls 可参与 | 可能降低传统 chiller 强度，但提高系统工程价值 |
+| Modular cooling / energy plant | 在 time-to-build 紧张时越来越重要 | Stellar 是关键拼图 | 主流化概率高，尤其 hyperscaler 多园区复制 |
+| AI HVAC optimization software | 逐步普及，但客户自研和 BMS 竞争强 | BrainBox AI / Tracer | 收入弹性不如硬件，但利润率和黏性好 |
+
+### 9.3 替代方案和风险
+
+| 风险/替代方案 | 对 TT 的影响 | 监测指标 |
+|---|---|---|
+| AI 数据中心建设延期，尤其电力接入延期 | 订单转收入推迟，backlog duration 拉长 | utility interconnection、transformer/switchgear lead time、hyperscaler capex 指引 |
+| Hyperscaler 多供应商压价 | TT 溢价下降，margin 承压 | gross margin、adjusted OPM、large customer concentration comments |
+| Liquid cooling 标准化后被 ODM/JDM 内卷 | LiquidStack 硬件利润率下降 | D2C/CDU ASP、reference design 供应商名单 |
+| Chillerless / high-temperature loop / dry cooler 架构减少冷水机组强度 | 传统 chiller revenue per MW 下滑 | 高温水环路设计、water usage constraints、PUE targets |
+| 现场漏液或可靠性事故 | 认证受阻，服务成本上升 | warranty accrual、customer delays、qualification comments |
+| 收购整合失败 | Stellar / LiquidStack 协同低于预期，商誉减值风险 | acquisition contribution、backlog conversion、segment margin |
+| 估值过高 | 即使业务不错，股价也可能因倍数压缩下跌 | Forward P/E、10Y yield、2027 EPS revision |
+
+### 9.4 客户替换成本
+
+TT 的客户替换成本中高，尤其在数据中心项目中：
+
+1. **设计认证成本**：chiller、CDU、controls、BMS、pumps、secondary loop 需要与 MEP 设计、FAT/SAT、数据中心 commissioning 绑定，换供应商会重新验证。
+2. **运行风险成本**：数据中心 downtime 成本极高，客户偏好成熟供应商和服务网络，而不是最低硬件报价。
+3. **服务和备件锁定**：安装后的维护、software、controls、remote monitoring、备件库存使 switching cost 上升。
+4. **但不是不可替代**：Carrier、JCI/York、Daikin、Vertiv、Schneider、Modine、CoolIT 等均可在不同层级替代 TT；TT 的护城河主要在系统集成、服务和交付可信度，不是单品垄断。
+
+## 10. 投资判断框架
+
+### 10.1 多空关键点
+
+| 多头看点 | 空头/风险点 |
+|---|---|
+| 2026Q1 bookings +35%、backlog +51%，订单信号强 | 估值 30x forward P/E 附近，对执行要求高 |
+| FY2026 指引上调，FCF conversion 仍强 | 数据中心收入未披露，市场可能高估 AI 占比 |
+| Stellar + LiquidStack 让 TT 从 central plant 走向 end-to-end thermal management | LiquidStack 当前规模小，认证和标准化仍需时间 |
+| 美国 AI 数据中心冷却订单池 2026-2027 高增长 | 电力接入、GPU 供给、客户 capex 波动会影响交付 |
+| 服务、controls、commissioning 形成高黏性 | Hyperscaler 议价和多供应商策略压制 margin |
+
+### 10.2 最需要跟踪的 12 个指标
+
+1. Enterprise bookings 和 book-to-bill 是否持续 >1.1x。
+2. Backlog 是否继续同比 >30%，以及 organic backlog 增速是否高于 reported 收购贡献。
+3. Americas Commercial HVAC orders / backlog 是否继续显著高于公司平均。
+4. 管理层是否开始披露 data center revenue、orders 或 backlog 口径。
+5. Stellar 并表后的 revenue contribution 和 margin。
+6. LiquidStack 是否进入 hyperscaler / GPU platform / rack reference design。
+7. Adjusted operating margin 是否在收购并表后保持或扩张。
+8. Gross margin 是否被大型项目 mix、材料、现场成本压低。
+9. FCF conversion 是否继续 >=100% adjusted net earnings。
+10. Capex 和 factory capacity expansion 是否加速。
+11. 客户取消/延期、lead time、delivery window 的任何提示。
+12. Forward EPS revision 是否支撑当前 29x forward P/E。
+
+## 11. 结论
+
+TT 是 AI 数据中心热管理产业链里少数具备 **中央冷站 + controls + service + modular plant + liquid cooling** 组合的公开上市公司。它的 AI 暴露不是 GPU 或光模块式的直接半导体 beta，而是更工程化、更订单驱动、更长周期的机械基础设施 beta。
+
+从 2026Q1 数据看，订单强度已经很明显：bookings 66.91 亿美元、backlog 107 亿美元、book-to-bill 1.35x，说明公司在数据中心和 commercial HVAC 上的需求并非只停留在叙事。但 TT 还没有披露 AI/DC revenue 占比，因此投资判断必须把官方数字和估算分开。当前最可信的 revenue engine 仍是大型冷水机组、中央冷站、commercial applied HVAC、controls 和 service；LiquidStack 与 Stellar 是提高未来增速和 wallet share 的新变量。
+
+如果未来一年 AI 数据中心 capex 继续上行，TT 的基准情景是公司总收入增长 8%-12%、AI/DC 相关收入增长 35%-60%；乐观情景可到总收入 +13%-18%；极度乐观情景需要 LiquidStack、Stellar 和 central plant 同时超预期交付，难度高但不是完全不可能。股票层面，最大问题是估值已经不便宜：在约 35.6x trailing P/E、约 29.3x forward P/E 下，TT 需要持续证明 backlog 能转化为收入和利润，而不只是订单新闻。
+
+## 12. 主要来源
+
+### 公司官方与监管文件
+
+- Trane Technologies Q1 2026 earnings release, 2026-04-30: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-Reports-Strong-First-Quarter-Results-Raises-Full-Year-Revenue-and-EPS-Guidance/default.aspx
+- Trane Technologies Q4 and FY2025 earnings release, 2026-01-29: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-Reports-Strong-Fourth-Quarter-and-Full-Year-2025-Results-Robust-Bookings-and-Backlog-Provide-Strong-Visibility-Entering-2026/default.aspx
+- Trane Technologies Q3 2025 earnings release PDF: https://s2.q4cdn.com/950394465/files/doc_financials/2025/q3/Q3-2025-Earnings-Release-Final.pdf
+- Trane Technologies Q2 2025 earnings release, 2025-07-30: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2025/Trane-Technologies-Reports-Strong-Second-Quarter-Results-Raises-Full-Year-Revenue-and-EPS-Guidance/default.aspx
+- Trane Technologies Q1 2025 earnings release, 2025-04-30: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2025/Trane-Technologies-Reports-Strong-First-Quarter-Results-Reaffirms-Guidance-Range-and-Expects-to-Perform-Towards-High-End/default.aspx
+- Trane Technologies 2026Q1 Form 10-Q, SEC: https://www.sec.gov/Archives/edgar/data/1466258/000162828026028743/tt-20260331.htm
+- Trane Technologies FY2025 Form 10-K / Annual Report: https://www.sec.gov/Archives/edgar/data/1466258/000162828026005731/tt-20251231.htm
+- Trane Technologies to acquire LiquidStack official release: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-to-Acquire-LiquidStack-to-Accelerate-EndtoEnd-Data-Center-Thermal-Management-Solutions/default.aspx
+- Trane data center solutions page: https://www.trane.com/commercial/north-america/us/en/markets/data-centers/solutions.html
+
+### 行情与估值
+
+- StockAnalysis TT statistics, accessed 2026-06-11: https://stockanalysis.com/stocks/tt/statistics/
+- OpenAI web finance snapshot for TT, 2026-06-11.
+
+### 项目内行业资料
+
+- `基本面/行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-06-11.md`
+- `基本面/行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- `基本面/行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`
+- `基本面/行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+- `基本面/行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `基本面/行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+
+### 估算声明
+
+报告中关于 AI 数据中心收入占比、分产品收入、BOM 内容量、未来一年场景、产能能力和供应链采纳程度的数字，除非明确标注为公司官方披露，均为本报告基于公开财报、项目内行业研究、订单池、产品 BOM、lead time 和可比公司竞争格局做出的研究估算，不代表公司披露值。

@@ -1,0 +1,127 @@
+{
+  "method": "Nasdaq calendar is discovery only; actual release must be confirmed with issuer source",
+  "days": [
+    {
+      "day": "2026-09-18",
+      "rows_count": 2,
+      "matches": [],
+      "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-18",
+      "error": null
+    },
+    {
+      "day": "2026-09-19",
+      "rows_count": 0,
+      "matches": [],
+      "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-19",
+      "error": null
+    },
+    {
+      "day": "2026-09-20",
+      "rows_count": 0,
+      "matches": [],
+      "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-20",
+      "error": null
+    },
+    {
+      "day": "2026-09-21",
+      "rows_count": 4,
+      "matches": [],
+      "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-21",
+      "error": null
+    },
+    {
+      "day": "2026-09-22",
+      "rows_count": 9,
+      "matches": [],
+      "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-22",
+      "error": null
+    },
+    {
+      "day": "2026-09-23",
+      "rows_count": 12,
+      "matches": [],
+      "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-23",
+      "error": null
+    },
+    {
+      "day": "2026-09-24",
+      "rows_count": 12,
+      "matches": [],
+      "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-24",
+      "error": null
+    },
+    {
+      "day": "2026-09-25",
+      "rows_count": 8,
+      "matches": [],
+      "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-25",
+      "error": null
+    },
+    {
+      "day": "2026-09-26",
+      "rows_count": 0,
+      "matches": [],
+      "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-26",
+      "error": null
+    },
+    {
+      "day": "2026-09-27",
+      "rows_count": 0,
+      "matches": [],
+      "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-27",
+      "error": null
+    },
+    {
+      "day": "2026-09-28",
+      "rows_count": 26,
+      "matches": [],
+      "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-28",
+      "error": null
+    },
+    {
+      "day": "2026-09-29",
+      "rows_count": 7,
+      "matches": [],
+      "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-29",
+      "error": null
+    },
+    {
+      "day": "2026-09-30",
+      "rows_count": 17,
+      "matches": [
+        {
+          "lastYearRptDt": "9/23/2025",
+          "lastYearEPS": "$2.86",
+          "time": "time-after-hours",
+          "symbol": "MU",
+          "name": "Micron Technology, Inc.",
+          "marketCap": "$1,202,894,010,000",
+          "fiscalQuarterEnding": "Aug/2026",
+          "epsForecast": "$31.41",
+          "noOfEsts": "10",
+          "calendar_date": "2026-09-30",
+          "report_date": "2026-09-18",
+          "after_report": true,
+          "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-30"
+        },
+        {
+          "lastYearRptDt": "9/25/2025",
+          "lastYearEPS": "$3.12",
+          "time": "time-pre-market",
+          "symbol": "JBL",
+          "name": "Jabil Inc.",
+          "marketCap": "$33,410,316,300",
+          "fiscalQuarterEnding": "Aug/2026",
+          "epsForecast": "$3.88",
+          "noOfEsts": "4",
+          "calendar_date": "2026-09-30",
+          "report_date": "2026-09-22",
+          "after_report": true,
+          "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-30"
+        }
+      ],
+      "source": "https://api.nasdaq.com/api/calendar/earnings?date=2026-09-30",
+      "error": null
+    }
+  ]
+}

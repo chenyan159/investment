@@ -1,0 +1,518 @@
+# Aehr Test Systems（NASDAQ: AEHR）公司尽调：AI 芯片、硅光与功率器件老化测试
+
+> **研究日期：**2026-07-18（America/Los_Angeles）  
+> **市场数据截止：**2026-07-17 美股收盘；2026-07-18 为周六，无新收盘价  
+> **财务截止：**FY2026 Q4／全年，财季及财年截至 2026-05-29  
+> **研究边界：**项目内只读取 `基本面/行业调研/` 的相关产业材料；未读取公司索引、其他公司报告、日度资料或其他研究目录，也未修改公司索引。外部证据优先使用 SEC、公司公告/电话会、产品页、技术会议和竞争对手官方资料。  
+> **符号：**【披露】=公司或监管文件原始数据；【计算】=可由披露数字直接复算；【估算】=本文模型，不是公司指引；【推断】=匿名客户/渠道线索，只可用于情景判断。金额如无特别说明均为美元。
+
+## 一、结论先行
+
+1. **Aehr 已从“SiC/电动车测试设备小公司”转成“AI 与数据中心可靠性测试高弹性标的”。** FY2024 时 SiC 占业务超过 90%；FY2025 SiC 已降至不足 40%、AI 处理器超过 35%；到 FY2026 Q4，AI 处理器与硅光合计超过季度收入的 80%。2024 年收购 Incal 后，公司同时拥有 FOX-XP 晶圆级老化（WLBI）和 Sonoma 封装级老化（PLBI），覆盖从裸晶圆到高功率封装的两个关键插入点。[FY2026 Q4 业绩公告](https://www.sec.gov/Archives/edgar/data/1040470/000165495426006655/aehr_ex991.htm)；[Incal 收购完成公告](https://www.aehr.com/2024/07/aehr-test-systems-completes-acquisition-of-incal-technology/)
+2. **订单拐点已经由真金白银验证。** FY2026 Q3/Q4 bookings 分别为 **$37.2m/$60.7m**，下半财年合计 **$97.9m**；2026-05-29 期末 backlog **$80.6m**，2026-07-14 财报日 effective backlog **$100.6m**（明确包含 5 月 29 日后的新增 bookings）。2026 年 4 月，公司取得历史最大单笔 **$41m Sonoma+BIM+socket** 订单；2 月取得 **$14m AI 处理器 FOX-XP+WaferPak** 订单；最近又取得超过 **$8m SiC WaferPak** 订单。FY2026 全年订单桥 `期初 backlog 15.2 + bookings 115.5 - revenue 50.001 = 80.699`，与披露期末 backlog 80.6 只差 **$0.099m**，说明净取消/重排/取整残差很小；但公司订单通常仍可被取消或改期，不能把该残差误称为“毛取消率仅 0.09%”。[FY2026 Q4 公告](https://www.aehr.com/2026/07/aehr-test-systems-reports-fiscal-2026-fourth-quarter-and-full-year-financial-results-with-record-quarterly-bookings-and-100-million-effective-backlog/)；[2026 年 4 月 $41m 订单](https://www.aehr.com/2026/04/aehr-receives-record-41-million-production-order-from-lead-hyperscale-ai-customer-second-half-bookings-exceed-92-million/)
+3. **FY2027 指引极强，但基数极低且收入很集中。** 公司指引收入 **$130m–$150m，同比 +160%–200%**，non-GAAP 净利润为收入的 **18%–22%**。7 月 14 日 effective backlog 覆盖低端指引 **77.4%**、高端 **67.1%**；管理层预计 FY2027 约 **70% 来自 AI 处理器、15%–20% 来自硅光**，且不含存储量产收入。该指引的主要兑现项是约 **$50m Sonoma**（约 60–70 套、含配套耗材）、既有 AI WLBI 客户扩产和硅光客户跟单，而不是 HBM 概念。[FY2026 Q4 电话会](https://www.marketbeat.com/earnings/reports/2026-7-14-aehr-test-systems-stock/)
+4. **最有价值的小业务不是“更多机台”，而是定制耗材和自动化接口。** WaferPak、BIM、socket、AutoAligner/ALU 预计合计约占 FY2027 收入 **30%**。这些部件按器件、晶圆和测试程序定制，设计寿命一般 **2–7 年**，会随新 SKU、磨损、更换和扩线重复采购；其毛利率大概率高于 Sonoma 主机，是未来规模增长能否转化成利润的关键。
+5. **Aehr 的技术价值来自“并行度 × 功率/热控 × 长时老化 × 专用接触界面”，不是替代所有 ATE。** FOX-XP 单系统可装 9/18 个 wafer blade，每片最高约 **3.5kW、4,000A**；WaferPak 可有超过 **50,000 个触点**；Sonoma 支持最高 **88 个独立液冷位置、单器件最高 2,000W**。项目内行业研究也把 Aehr 列为 AI ASIC/SiPh 的高弹性新插入点，而把 Advantest、Teradyne 视为高端功能 ATE 主平台。[Aehr 2026 年 6 月公司演示材料](https://www.aehr.com/wp-content/company-presentation/2026/AEHR-June-2026-Company-Presentation.pdf)；[项目内 ATE 与系统级测试行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-07-10.md)
+6. **供给不是 FY2027 的首要瓶颈。** 公司 Fremont 基础设施可支持每月最多约 **400 个 tester blade/WaferPak 生产单元和 20 套 PLBI**；东南亚合同制造商又可增加 **每月 20 套以上 Sonoma**。按管理层给出的 Sonoma 含配套耗材单价 **$0.6m–$0.7m**，仅 Sonoma 物理名义产能就超过 **$288m–$336m/年**，远高于 FY2027 约 $50m 的需求。真正瓶颈是客户量产排程、器件 DFT、相关性验证、WaferPak/BIM/socket 的专用设计与验收，而非钣金装配。
+7. **估值已预支大量成功。** 7 月 17 日收盘价 **$81.05**；按 2026-05-29 实际流通股 **32.480m** 计算市值约 **$2.633bn**，FY2026 P/S **52.7×**，FY2027 指引中点 P/S **18.8×**。FY2026 GAAP 净亏损 **$7.126m**，所以 trailing P/E 无意义；按公司 FY2027 指引隐含 non-GAAP 净利润 **$23.4m–$33.0m**，forward P/E 约 **112.5×–79.8×**，中点约 **94.0×**。这是一只“订单兑现稍有跨季就会剧烈重估”的股票，而不是便宜的周期反转。
+8. **基准/乐观/极度乐观的一年后收入判断为 $130m/$150m/$200m。** 前两档对应公司指引低/高端；$200m 是本文低概率上行情景，要求新 top-tier AI 客户转量产、现有客户第二颗器件并行、SiPh 多客户复制和功率器件订单同时兑现。最大的反证是：$41m 客户改期、WLBI 从全量改成抽检、PLBI 毛利不及预期、Teradyne/Advantest/客户自研方案替代，或 CPO/NPO 量产从 2027 延后。
+
+## 二、公司整体业务、投资者画像与产业链位置
+
+### 2.1 公司做什么
+
+Aehr Test Systems 1977 年成立，总部位于美国加州 Fremont，是半导体**可靠性筛选、老化测试和稳定化设备**供应商。公司只有一个财务报告分部，但产品形成两条平台和三类定制耗材：
+
+| 层级 | 平台/产品 | 主要用途 | 典型客户节点 | 收入方式 |
+|---|---|---|---|---|
+| 晶圆级 WLBI | FOX-XP（量产，9/18 wafer）、FOX-NP（双 wafer NPI/工程） | 在切割/昂贵封装前进行高温、高电流、长时间并行老化，筛出早期失效 | IDM、fabless+OSAT、硅光厂、功率器件厂 | 数百万美元级系统、AutoAligner、软件/NRE、服务 |
+| 晶圆接触耗材 | WaferPak Contactor、WaferPak Aligner | 一次接触整片 100–300mm 晶圆，按 die pad、功率、温度与 DFT 定制 | 每个器件/SKU/晶圆版图 | 定制耗材；可复购、扩线、替换 |
+| 封装级 PLBI | Sonoma、Tahoe、Echo | 对已封装 AI ASIC/GPU/CPU、逻辑和其他器件做 HTOL/量产老化 | hyperscaler、自研 ASIC 厂、OSAT/测试服务商 | 主机、chamber、控制和自动化 |
+| 封装接口/自动化 | BIM、socket、ALU | 独立供电/激励、液冷、JEDEC tray、AGV/E84 自动上下料 | 与 Sonoma 绑定 | 高定制接口和耗材 |
+| 其他/存量 | FOX-CP、DiePak、服务备件 | HDD 读写头、逻辑/存储/传感器、小批工程 | 存量客户 | 系统、载具、服务 |
+
+它在产业链中的位置是：
+
+`AI/光子/功率芯片设计 → 晶圆制造 →【Aehr WLBI/KGD】→ 切割/先进封装 →【Aehr PLBI】→ final test/SLT → 板卡/机架`。
+
+Aehr 不生产 GPU、光模块、功率器件，也不是 Advantest/Teradyne 那种覆盖高速功能测试的全栈 ATE。它的价值是在昂贵器件进入不可返修封装或数据中心之前，用长时间、高功率和大规模并行筛出潜在可靠性缺陷。项目内研究给出的行业需求公式是 `器件/晶圆数 × 测试插入次数 × 单次测试时间 ÷ 并行度 × 产能缓冲`；Aehr 同时提高并行度，又受益于老化时间与插入次数增加，因此收入不是简单按 GPU 数量线性变化。[项目内行业调研：探针卡、ATE 与系统级测试](../../行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-07-10.md)
+
+### 2.2 投资者如何看它
+
+投资者目前把 AEHR 看成三种属性叠加：
+
+- **AI 可靠性测试“卖铲人”**：不押注哪一家 GPU/ASIC 胜出，只要高价值芯片需要更多 KGD、HTOL、WLBI/PLBI，测试内容量上升即可受益。
+- **微型订单驱动股**：FY2026 收入仅 $50m，单笔 $41m 订单相当于上年收入的 **82%**；一个客户、一颗器件和一次验收跨季足以改变季度收入。
+- **从 SiC 单客户周期脱胎的高 beta 转型股**：AI 与 SiPh 分散了终端，但并未消除客户集中。FY2026 Q4 有三名客户各占收入 10% 以上，其中两名为 AI 客户、一名为数据中心光收发客户。
+
+因此，“AI 订单已验证”与“估值/集中风险极高”可以同时成立。市值已经按中型成长平台定价，但公司当前财务规模仍是小型设备商。
+
+### 2.3 最近三年重大业务变化、转型与收购
+
+| 时点 | 变化 | 可量化证据 | 战略含义 |
+|---|---|---:|---|
+| FY2024 | SiC/EV 成为绝对主业 | SiC 占业务 **>90%**；FY2024 收入约 **$66.25m** | FOX-XP+WaferPak 已证明高功率 WLBI，但终端和大客户高度单一 |
+| 2024-07-31/08-01 | 收购 Incal Technology | 总对价约 **$22.153m**：现金 $10.631m、限制性股票 $9.381m（552,355 股）、托管 $2.381m、营运资本调整 -$0.240m；Incal 在 FY2025 约贡献合并收入 **31.5%（约 $18.6m）** | 获得 Sonoma/Tahoe/Echo PLBI，从晶圆级扩至封装级；进入 AI ASIC 高功率老化 |
+| FY2025 | 终端结构第一次明显重排 | FY2025 收入 **$58.968m**；SiC 降至 **<40%**，AI 处理器 **>35%** | 收入仍下降，但摆脱“纯 SiC 设备”叙事 |
+| 2025-11 | 与 ISE Labs/ASE 建立合作 | ISE 是 ASE 集团测试服务公司；合作覆盖 HPC/AI WLBI，具备 OSAT 量产入口 | 降低客户自建线门槛，提供 benchmark→pilot→HVM 的第三方产能通道。[合作公告](https://www.aehr.com/2025/11/aehr-test-systems-and-ise-labs-announce-partnership-on-wafer-level-test-and-burn-in-for-high-performance-computing-and-artificial-intelligence-processors/) |
+| 2026-02 至 04 | AI 订单从设计赢单进入大规模生产 | $14m AI WLBI 订单；$41m Sonoma 订单；FY2026 H2 bookings **$97.9m** | WLBI 与 PLBI 两条路径同时成立；客户第二颗更高功率器件开始导入 |
+| FY2026 Q4 | AI+SiPh 成为绝对主导 | 季度占比 **>80%**；季度 bookings **$60.7m**；7 月 14 日 effective backlog **$100.6m** | 公司进入收入陡坡前夜，但客户集中与执行风险同步放大 |
+
+收购 Incal 不是简单增加一条低毛利旧设备线。它让 Aehr 能够在客户尚未接受全晶圆 WLBI 时先用 Sonoma 做 PLBI，积累失效分布、功率/热控和相关性数据，再把同一器件迁移到 WLBI。管理层称当前 lead AI 客户正在从 system-level/package burn-in 转向**全量 wafer-level burn-in**，这正是并购后产品交叉销售的最重要验证。
+
+## 三、最新股价、估值、盈利能力与资产负债表
+
+### 3.1 截至 2026-07-17 的市场与估值快照
+
+| 指标 | 最新值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 收盘价 | **$81.05** | 2026-07-17 16:00 ET | 7 月 18 日为周六；当日盘中 $77.15–$88.33，盘后约 $80.57。[行情页](https://www.marketbeat.com/earnings/reports/2026-7-14-aehr-test-systems-stock/) |
+| 实际流通股 | **32.480m** | 2026-05-29【披露】 | 较 FY2025 期末 29.877m 增 **8.7%** |
+| 市值 | **$2.633bn** | 81.05×32.480m【计算】 | 部分行情源显示约 $2.49bn，是用约 30.70m 的 FY2026 加权平均股数；本文用最新期末实际股数 |
+| 企业价值 | **约 $2.516bn** | 市值－现金/受限现金约 $116.5m；无有息债务【计算】 | 未扣除租赁负债，不影响量级 |
+| trailing P/E | **NM** | FY2026 GAAP 净亏损 $7.126m | 行情源给出的负 P/E（约 -213×）没有经济意义 |
+| forward P/E | **79.8×–112.5×；中点约 94.0×** | FY2027 指引隐含 non-GAAP NI $23.4m–$33.0m【计算】 | `130×18%=23.4`；`150×22%=33.0`；中点 `140×20%=28.0` |
+| trailing P/S | **52.7×** | $2.633bn/FY2026 $50.001m【计算】 | 极高，反映市场已定价 FY2027 订单陡坡 |
+| FY2027E P/S | **20.3×/18.8×/17.6×** | 指引低端/中点/高端【计算】 | EV/S 中点约 **18.0×** |
+| P/B | **12.0×** | 市值/期末股东权益 $219.511m【计算】 | 大量现金来自增发，不等于内生盈利 |
+| FY2026 收入增速 | **-15.2%** | $50.001m vs $58.968m | Q4 已转为同比 **+33.7%** |
+| FY2026 GAAP 毛利率/净利率 | **35.3% / -14.3%** | 全年 | non-GAAP 毛利率约 **38.5%** |
+| FY2026 Q4 GAAP 毛利率/净利率 | **42.6% / 7.4%** | 截至 2026-05-29 | Q4 non-GAAP 毛利率约 **44.7%**；规模和耗材 mix 已改善 |
+
+第三方历史比率页在 2026-07-15 股价 $87.85 时给出 forward P/E 119.28×、P/S 55.80×；按 7 月 17 日股价同比缩放约为 110×/51.5×，与本文“公司指引口径 forward P/E 80–113×、trailing P/S 52.7×”方向一致。第三方共识与公司指引口径不同，不应混为一个精确点值。[StockAnalysis 历史比率](https://stockanalysis.com/stocks/aehr/financials/ratios/)
+
+### 3.2 资产负债表健康度
+
+| 项目 | 2026-05-29 | 2025-05-30 | 变化/判断 |
+|---|---:|---:|---|
+| 现金及现金等价物 | $116.358m | $24.529m | +$91.829m；主要来自净增发 $97.395m，而非经营现金流 |
+| 应收账款 | $17.473m | $14.191m | +23.1%；与 Q4 出货增长大体一致，但客户集中放大回款风险 |
+| 库存 | $41.354m | $41.997m | -1.5%；仍相当于 FY2026 收入的 **82.7%** |
+| 流动资产/流动负债 | $184.448m/$17.855m | $88.778m/未列 | current ratio **10.33×**；现金+应收 quick ratio **7.50×** |
+| 总资产/总负债 | $246.694m/$27.183m | — | 负债/资产仅 **11.0%**；无有息债务 |
+| 商誉+无形资产 | $20.271m | — | 主要与 Incal 收购有关，占权益 9.2%；若 PLBI 低于计划存在减值风险 |
+| 递延所得税资产 | $23.829m | — | 占总资产 9.7%；需要未来应税利润兑现 |
+| 股东权益 | $219.511m | — | 现金垫充足，但资本质量含增发与递延税项 |
+| FY2026 经营现金流/资本开支 | **-$3.310m / $2.066m** | — | 经营仍烧钱；资本开支不大，商业模式不是重资产 fab |
+| 存货天数 | **约 467 天** | — | `期末库存/全年 COGS×365`【计算】；高于普通设备商舒适区，反映备货和长周期专用件，也带来减值/改版风险 |
+
+**健康度结论：7.5/10（流动性极强、盈利质量尚未验证）。** 公司几乎没有偿债风险，能够为 FY2027 快速备货、研发和客户验证提供资金；但现金主要由股权融资补充，FY2026 经营现金流为负、流通股一年增长 8.7%，且 $41.4m 库存对 $50.0m 年收入偏高。若 7 月 14 日披露的 $100.6m effective backlog 按计划转收入，营运资本和固定成本杠杆会迅速改善；若客户改期，库存、递延税资产和 PLBI 商誉会同时成为资产质量压力点。完整财务表见 [SEC FY2026 Q4 8-K 附件](https://www.sec.gov/Archives/edgar/data/1040470/000165495426006655/aehr_ex991.htm)。
+
+## 四、最新及最近四次财报：五季度财务、订单与业务结构
+
+### 4.1 五季度核心财务与订单
+
+| 财报季度（截至） | 收入 / YoY | GAAP 毛利 / GM | GAAP 净利润 / 净利率 | Bookings | B2B | 期末 backlog | 财报日 effective backlog* | 订单、交期、取消观察 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| FY2025 Q4（2025-05-30） | $14.089m / **-15.1%** | $4.272m / **30.3%** | -$2.899m / **-20.6%** | $11.1m | 0.79× | $15.2m | $16.3m | SiC 下行、Incal 整合；订单不足覆盖当季收入 |
+| FY2026 Q1（2025-08-29） | $10.969m / **-16.4%** | $3.719m / **33.9%** | -$2.084m / **-19.0%** | $11.4m | 1.04× | $15.5m | $17.5m | 订单略高于收入；AI/数据中心设计导入尚未形成大批交付 |
+| FY2026 Q2（2025-11-28） | $9.884m / **-26.5%** | $2.545m / **25.7%** | -$3.230m / **-32.7%** | $6.2m | 0.63× | $11.8m | $18.3m | 本轮低点；booking 低、系统 mix 弱；随后 ISE/ASE 合作打开 WLBI 量产通道 |
+| FY2026 Q3（2026-02-27） | $10.313m / **-43.7%** | $3.368m / **32.7%** | -$3.203m / **-31.1%** | **$37.2m** | **3.61×** | **$38.7m** | **$50.9m** | $14m AI WLBI 和 Sonoma 订单进入；收入仍受交付/验收滞后 |
+| FY2026 Q4（2026-05-29，最新） | **$18.835m / +33.7%** | **$8.019m / 42.6%** | **$1.391m / 7.4%** | **$60.7m** | **3.22×** | **$80.6m** | **$100.6m** | 4 月 $41m Sonoma 订单；多数计划 FY2027 交付；Q4 首次呈现收入、毛利和订单三重拐点 |
+
+注：B2B=`bookings/revenue`。【披露】季度收入、利润、bookings、backlog；【计算】同比、margin 与 B2B。*“财报日 effective backlog”不是财季末数：公司在业绩公告中把**财季末 backlog 加财季结束后、公告日前收到的 bookings**列为 effective backlog；例如最新 $100.6m 明确由 5 月 29 日 backlog $80.6m 加后续 bookings 得到。公司 10-K 表示大部分采购订单可取消或改期、处罚有限，且 backlog 通常安排在未来 12 个月内交付；所以它是强可见度指标，不是不可撤销合同负债。
+
+### 4.2 五季度按会计产品类别拆分
+
+Aehr 只报告一个经营分部，并不按 AI、SiPh、SiC 或具体平台披露季度收入/利润。下表的 Systems/Contactors/Services 为 SEC 产品类别；FY2026 Q4 只披露 contactor $5.8m，本文以服务收入历史水平估算 $1.835m，再把余额归入 systems，误差带约 ±$0.3m。
+
+| 财报季度 | Systems：收入/占比/YoY | Contactors：收入/占比/YoY | Services：收入/占比/YoY | 公司整体 GM | AI+数据中心相关收入占比 |
+|---|---|---|---|---:|---|
+| FY2025 Q4 | $7.764m / 55.1% / **+127.1%** | $4.242m / 30.1% / **-65.8%** | $2.083m / 14.8% / **+152.5%** | 30.3% | **56%【披露】≈$7.9m** |
+| FY2026 Q1 | $6.764m / 61.7% / **>100×（低基数）** | $2.613m / 23.8% / **-78.4%** | $1.592m / 14.5% / **+65.0%** | 33.9% | 未按季披露；**约 80%–90%【估算，低置信】≈$8.8m–$9.9m** |
+| FY2026 Q2 | $4.974m / 50.3% / **+45.9%** | $3.444m / 34.8% / **-59.8%** | $1.466m / 14.8% / **-0.1%** | 25.7% | 未按季披露；**约 80%–90%【估算，低置信】≈$7.9m–$8.9m** |
+| FY2026 Q3 | $5.782m / 56.1% / **-46.2%** | $3.003m / 29.1% / **-49.4%** | $1.528m / 14.8% / **-6.0%** | 32.7% | 未按季披露；**约 85%–95%【估算，低置信】≈$8.8m–$9.8m** |
+| FY2026 Q4 | **约 $11.2m / 59.5% / +44%【估算】** | **$5.8m / 30.8% / +36.7%【披露】** | **约 $1.835m / 9.7% / -11.9%【估算】** | **42.6%** | **>80%【披露】即 >$15.1m**；上年同期 56% |
+
+FY2025 Q4 同比基数由 FY2024 全年减 FY2024 前九个月重建：FY2024 Q4 systems/contactors/services 分别为约 $3.419m/$12.386m/$0.825m；前九个月的 SEC 原始类别数据见 [FY2024 Q3 10-Q](https://www.sec.gov/Archives/edgar/data/1040470/000165495424004455/aehr_10q.htm)。FY2026 各季度类别来自 [Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1040470/000165495425011582/aehr_10q.htm)、[Q2 10-Q](https://www.sec.gov/Archives/edgar/data/1040470/000165495426000266/aehr_10q.htm)、[Q3 10-Q](https://www.sec.gov/Archives/edgar/data/1040470/000165495426003348/aehr_10q.htm) 及 Q4 公告。
+
+**不能从这些数据直接得到的内容：**公司没有披露 systems、contactors 或具体终端的独立毛利率，也没有披露 gross cancellation rate、标准 lead time、逐客户 backlog 或 AI 数据中心产品的季度精确收入。后文的产品毛利、收入拆分与取消假设全部明确标为估算，不能反向当作公司分部数据。
+
+## 五、FY2026 最新财报指引、收入结构与产品优先级
+
+### 5.1 FY2027 指引及可见度
+
+| 指标 | 公司最新指引/说法 | 本文解释 |
+|---|---:|---|
+| FY2027 收入 | **$130m–$150m** | 对 FY2026 $50.001m 增 **160%–200%** |
+| non-GAAP 净利润 | **收入的 18%–22%** | 隐含 $23.4m–$33.0m；不是 GAAP 指引 |
+| 5 月 29 日 backlog/7 月 14 日 effective backlog | **$80.6m/$100.6m** | effective backlog 含季后 bookings，覆盖收入指引 67%–77% |
+| AI 处理器 mix | **约 70%** | 对应 $91m–$105m，包含 WLBI 与 PLBI |
+| 硅光 mix | **约 15%–20%** | 对应 $19.5m–$30m，主要是 FOX-XP/NP、WaferPak、自动对准 |
+| 功率器件及其他 | **约 10%–15%** | 对应 $13m–$22.5m；SiC、GaN、silicon MOSFET、存量业务 |
+| 存储 | **高端指引也未计收入** | 正在与 2–3 家 flash、2 家 DRAM 厂沟通；只能视为 FY2028+ 期权 |
+| Sonoma | **约 $50m** | 约 60–70 套并含耗材，平均每套系统+耗材约 $0.6m–$0.7m；大批交付集中 FY2027 Q2 |
+| WaferPak+BIM 等耗材 | **约占总收入 30%** | 对应 $39m–$45m；是毛利改善的重要条件 |
+
+公司在 2026-07-14 公布指引时，明确以约 $100m effective backlog 为基础；新 top-tier AI 客户的 benchmark 后 pilot、第二器件和存储机会均未成为指引核心。因此低端并不要求所有潜在客户同时成功，高端则需要现有 AI/SiPh 客户按期提货、且耗材 attach 不下降。[FY2026 Q4 电话会全文](https://www.marketbeat.com/earnings/reports/2026-7-14-aehr-test-systems-stock/)
+
+### 5.2 重点业务、产品型号、增长与利润交叉验证
+
+| 优先级 | 业务/对应型号 | FY2026 状态 → FY2027 驱动 | 销售规模与增速判断 | 毛利率判断【估算】 | 交叉验证 |
+|---:|---|---|---|---|---|
+| 1 | **AI 封装级 PLBI：Sonoma + BIM + socket + ALU** | lead hyperscaler 当前器件已量产；下一代 ASIC 订单 $41m，第二器件约为第一器件 **2× 功率/封装**；FY2027 约 $50m | FY2026 约 $14m → FY2027 基准 $50m，约 **+257%** | 主机约 20%–32%；BIM/socket 约 35%–50%；FY2027 bundle 约 **32%–40%** | $41m 订单、60–70 套和 $0.6m–$0.7m/套相互闭合；较低主机毛利被耗材和规模吸收 |
+| 2 | **AI 晶圆级 WLBI：FOX-XP 9/18-wafer + AutoAligner + WaferPak；FOX-NP 工程机** | lead AI 处理器客户由 package/system burn-in 转为全部 wafer-level；$14m 多系统订单；新 top-tier benchmark 超预期并要求 pilot | FY2026 约 $21m → FY2027 基准 $41m，约 **+95%**；新客户成功可远高于此 | 系统约 35%–45%；WaferPak 约 50%–65%；bundle **42%–52%** | 客户在台湾 HVM 线运行；ISE/ASE 合作提供独立 OSAT 入口；管理层称 WLBI 单 DUT 收费高于 PLBI，但价值和毛利也更高 |
+| 3 | **SiPh/数据中心光互连 WLBI：FOX-XP/NP + WaferPak + AutoAligner** | lead 客户继续自动化扩线；新 global networking 客户已购两套 9-wafer cell 和两套 FOX-NP，并预测 CY2026 更多系统 | FY2026 约 $8m → FY2027 基准 $20m，约 **+150%** | bundle **40%–52%**；定制 WaferPak/自动化 mix 越高越接近上沿 | Q4 三名 >10% 客户中一名是数据中心光收发客户；CPO/SiPh 量产前必须先做 known-good optical die 和长期可靠性筛选 |
+| 4 | **功率器件 WLBI：SiC、300mm GaN、silicon MOSFET；FOX-XP/NP+WaferPak** | 过去两年 SiC/EV 去库存；最近一个月收到 >$8m SiC WaferPak 订单；大型车企资格认证；>12 个 GaN WaferPak 设计送样；首个 silicon MOSFET WLBI 系统销售 | FY2026 约 $5m、同比大幅下降；FY2027 基准 $14m，约 **+180%**，但 AI 直接占比低 | WaferPak-heavy bundle **45%–60%** | 新订单主要是耗材而非大量新系统，既验证 installed base，也说明主机增长不能按订单总额等比外推。[SiC 订单公告](https://www.aehr.com/2026/07/aehr-receives-more-than-8-million-in-new-silicon-carbide-wafer-level-burn-in-orders-as-global-electric-vehicle-programs-accelerate/) |
+| 5 | **存储期权：HBF/flash、DRAM/HBM 相关 FOX 平台** | 多家 flash/DRAM 洽谈、benchmark/correlation；新存储系统开发周期可能超过一年；公司明确 FY2027 指引不含收入 | FY2026 约 $0.5m 工程/NRE；FY2027 基准仍按 $0 | 早期 NRE 可能为负至 30%；若转 WaferPak HVM 可达 45%–60% | **HBF（High Bandwidth Flash）不是 HBM。** 目前不能把存储接触当成 HBM 量产 design win；项目内 HBM 研究支持测试内容增加，但不提供 Aehr 客户份额。[项目内 HBM 与存储测试设备调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-07-10.md) |
+
+公司没有披露上述具体产品利润率。本文区间以 FY2026 全年 GAAP GM 35.3%、Q4 GAAP GM 42.6%、管理层“PLBI 低于 WLBI、WaferPak/BIM 更高”的方向说明和行业定制接口盈利结构校准；它们是用于情景敏感性的**分析区间**，不是隐藏的公司分部数据。
+
+### 5.3 最突出产品与容易被忽略的小产品
+
+**核心突出产品：**
+
+1. **Sonoma 超高功率 PLBI**：最高 88 个独立位置、最高 2,000W/器件、液冷、多温区和独立电源/刺激；可做生产 burn-in、HTOL、HTRB、HTGB。它是 FY2027 最大收入单品，但主机毛利可能最低。
+2. **FOX-XP 9/18-wafer WLBI**：单 wafer blade 最高约 3.5kW/4,000A，适合大功率 AI 处理器、SiPh 和功率器件；9 片并行相当于在单台传统 ATE footprint 内处理九片晶圆，是差异化核心。
+3. **WaferPak Contactor**：100–300mm、超过 50,000 触点、按晶圆版图和 DFT 定制。它既是收入耗材，也是 switching cost 和数据闭环的载体。
+4. **AutoAligner/ALU 自动化**：AutoAligner 支持 FOUP、条码、SECS/GEM 和 100–300mm；ALU 支持 JEDEC tray、AGV/E84。自动化不是附属小件，而是从工程样机进入无人值守 HVM 的必要条件。
+
+**有潜力但市场容易漏看的小业务：**
+
+- **BIM/socket**：单器件最高 2,000W、128 个双向 I/O、25MHz，随每颗新 ASIC 重新定制；FY2027 耗材约占总收入 30% 的判断使其重要性不低于主机。
+- **FOX-NP 工程/NPI**：双 wafer、同一高功率 blade 架构，单机金额小于 FOX-XP，但常是客户从 benchmark 到 HVM 的“种子设备”；新 SiPh 客户一次买两套，说明它具有转单价值。
+- **300mm GaN WLBI**：公司完成首个 300mm GaN 全晶圆老化平台并有 12+ WaferPak 设计送样；若 AI 电源从硅 MOSFET 向 GaN 扩展，这是低基数上行期权。
+- **silicon MOSFET WLBI**：已有第一套系统销售。硅 MOSFET 单价低，但 AI 数据中心数量巨大；只有当老化成本降到足够低且失效筛选收益可量化时，才会转为规模市场。
+- **存储 HBF/flash/DRAM**：没有 FY2027 收入，却可能是 2028 年最大的可选业务；需要明确区分工程 benchmark 与客户 production qualification。
+
+### 5.4 本报告主动降低优先级/跳过的产品和业务
+
+| 跳过项 | 原因 | 仍需保留的观察点 |
+|---|---|---|
+| Tahoe/Echo 低中功率 PLBI | 传统逻辑、混合信号、医疗、军工/航天等增长较低，AI 直接暴露小 | 可提供服务和 installed-base 现金流；若被 Sonoma 自动化平台替换，需看毛利而非收入 |
+| FOX-CP HDD 读写头/存储头测试 | AI 数据存储有间接受益，但没有过去半年高增长订单证据 | HDD nearline 容量增长可能带来耗材复购，不计入 AI 核心模型 |
+| 手机 2D/3D 传感器 | 成熟、竞争多、与 AI 基建关联弱 | 只计入“其他” |
+| ABTS、FOX-1P 等旧平台 | 存量服务/升级，不是增长主线 | 关注是否形成高毛利备件收入 |
+| 单独服务与备件 | 对客户粘性重要，但 FY2026 各季约 $1.5m–$2.1m、没有高增长证据 | 模型归入其他，不为其单独给高估值 |
+
+## 六、当前高增长/关键业务的收入贡献、增速与战略评分
+
+为避免把同一 WaferPak/BIM 同时计入“系统”和“耗材”，下表按**终端业务 bundle**分配 FY2026 的 $50.001m。评分 1–5：5 表示对 AI 技术栈不可缺/必须尽快扩产/明显供不应求/近垄断/强定价权；“供需紧张”越高越乐观。收入和增速为【估算】，评分为本文判断。
+
+| 关键业务 bundle | FY2026 收入贡献【估算】 | 内部构成【估算】 | FY2026 同比增速【估算】 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/壁垒 | 溢价能力 | 置信度 |
+|---|---:|---|---:|---:|---:|---:|---:|---:|---|
+| AI Sonoma PLBI | **$14m（28%）** | 主机 $8m–$10m；BIM/socket/ALU $4m–$6m | **+20%–60%**（并购可比口径不完整） | 4.5 | 5.0 | 4.0 | 4.0 | 4.0 | 中 |
+| AI 处理器 FOX WLBI | **$21m（42%）** | FOX 系统 $12m–$15m；WaferPak/Aligner/NRE $6m–$9m | **+80%–150%** | 5.0 | 5.0 | 4.0 | 4.5 | 4.5 | 中 |
+| SiPh/光互连 WLBI | **$8m（16%）** | FOX 系统 $5m–$6m；WaferPak/自动化 $2m–$3m | **+30%–80%** | 5.0 | 4.0 | 3.5 | 4.0 | 4.0 | 中 |
+| SiC/GaN/Si MOSFET WLBI | **$5m（10%）** | WaferPak $2.5m–$4m；系统/服务余项 | **-65% 至 -80%** | 3.0 | 3.0 | 2.5 | 3.5 | 3.5 | 中低 |
+| memory/HBF/DRAM 工程期权 | **$0.5m（1%）** | benchmark/NRE/工程设备 | NM | 4.5（若获采用） | 2.5 | 2.0 | 2.5 | 3.0 | 低 |
+| legacy/其他 | **$1.5m（3%）** | HDD、sensor、旧平台与未分配服务 | **-20% 至 0%** | 1.5 | 1.5 | 1.5 | 2.5 | 2.0 | 低 |
+| **合计** | **$50.0m（100%）** | — | **-15.2%【披露】** | — | — | — | — | — | — |
+
+分配锚是管理层对 FY2026 的回看：AI 处理器约 70%、SiPh 约 15%–20%、其余为功率/其他。AI 内部再按收购后 PLBI 基数、$14m WLBI 订单和 Q4 mix 分成 Sonoma $14m、FOX $21m。任何投资模型都应允许每一项有 ±$3m–$5m 误差，不能用表内小数制造虚假精度。
+
+## 七、关键产品 BOM、真实单位内容量与价格传导
+
+### 7.1 产品规格与功能 BOM
+
+| 产品 | 公开规格 | 功能 BOM/价值构成 | 本文 ASP/毛利判断 |
+|---|---|---|---|
+| FOX-XP 9/18-wafer cell | 9 或 18 个 blade；每 blade 最高 2,048 universal 或 1,024 高电流/高压通道；最高约 3.5kW/wafer、4,000A、150°C | 主机控制器/软件/网络；9/18 tester blade 与电源；高温/冷却/chuck；AutoAligner、FOUP、相机、条码与 SECS/GEM；WaferPak substrate/pogo/MEMS/电源/信号/真空/热结构；测试程序/NRE/安装 | 全套 9-wafer cell 含 WaferPak 约 **$3m–$6m【估算】**；bundle GM 42%–52% |
+| FOX-NP | 双 wafer NPI/工程；沿用高功率 blade | 小型主机、blade、WaferPak、工程软件 | 低于 FOX-XP；作用是缩短 benchmark 和 correlation，不单独建收入 |
+| WaferPak/AutoAligner | 100–300mm；>50,000 触点；定制版图；自动上下片与工厂接口 | 多层基板、高密度互连、接触针/MEMS、功率/信号分配、热/机械结构、校准与 recipe | WaferPak GM 约 50%–65%；设计可在 DFT 就绪后约 8 周完成，但完整 benchmark 通常约 6 个月 |
+| Sonoma PLBI | 最高 22 slots/系统、可扩至 88 个独立液冷位置；最高 2,000W/器件；生产老化 2–48h、资格 HTOL 可 1,000h+ | chamber/rack；独立 power/stimulus；液冷/多温区；BIM；socket；ALU/JEDEC tray/AGV/E84；控制、软件与追溯 | 系统+耗材 **$0.6m–$0.7m【管理层】**；主机 GM 20%–32%，bundle 32%–40%【估算】 |
+| BIM/socket/ALU | BIM 最高 2,000W/DUT、128 个双向 I/O、25MHz；ALU 自动 tray 处理 | 电源和驱动、局部热控、socket/contact、温度/电流传感、板卡、自动装卸、序列号/光学追踪 | BIM/socket 约 35%–50% GM【估算】；每颗新器件重新认证，形成复购 |
+
+公开规格来源：[FOX 多晶圆方案](https://www.aehr.com/solutions/multi-wafer-level-burn-in-and-test-solutions/)、[封装级方案](https://www.aehr.com/solutions/packaged-parts-test-and-burn-in-solutions/)、[2026 年 6 月公司演示材料](https://www.aehr.com/wp-content/company-presentation/2026/AEHR-June-2026-Company-Presentation.pdf)。产品页部分 WaferPak 配置标示 2kW，而最新 FOX blade 标示最高 3.5kW；这反映配置差异，不能把最大规格当作每套量产配置。
+
+### 7.2 BOM 成本分配【估算，不是公司披露】
+
+| BOM 大项 | FOX-XP 典型价值占比 | Sonoma 典型价值占比 | 价格/毛利传导 |
+|---|---:|---:|---|
+| tester electronics、power、控制板 | 30% | 30% | IC、电源、PCB 稀缺会传导到主机 ASP；模块化升级可降低客户换平台成本 |
+| thermal/chamber/chuck/liquid cooling | 18% | 25% | AI 器件功率上升最快；热控越独立、功率越高，溢价越强 |
+| 自动化、aligner、handler/ALU | 18% | 8% | HVM 从有人值守变无人值守时为必选；验收与软件集成比机械产能更稀缺 |
+| WaferPak 或 BIM/socket | 14% | 18% | 定制耗材、设计数据和接触良率形成最高 switching cost；通常高于主机毛利 |
+| chamber/mechanics/机架 | 8% | 12% | 可外包、差异化较低，规模上升时毛利改善有限 |
+| 软件、NRE、组装、校准与服务 | 12% | 7% | recipe、相关性数据、MES/SECS-GEM 集成形成长期锁定；NRE 前期可能低毛利 |
+
+该表是“典型成交价值分配”，不是会计 COGS；不同 wafer 数、功率、自动化和耗材数量会使占比显著变化。
+
+### 7.3 每 GPU、rack、MW、optical port 的真实内容量
+
+**先澄清口径：Aehr 没有任何零件被永久装进 GPU 机架。** 下表的“内容量”是客户/OSAT 采购测试设备后，按设备寿命和吞吐摊销到每颗合格器件的 Aehr 设备收入/测试资本内容；随后才被 OSAT 以 test fee 传给芯片 BOM，再传到 rack/MW。若直接把一套 $6m FOX 机台乘每个机架，会重复计量。
+
+| 业务 | 公开锚与模型假设 | 每器件/端口内容量【估算】 | 每 72 加速器 rack【估算】 | 每 MW【估算】 | 置信度/限制 |
+|---|---|---:|---:|---:|---|
+| Sonoma AI PLBI | $0.6m–$0.7m/套含耗材；12–22 并行 slot；12h base cycle、80% 利用率、5 年摊销 | 5 年约处理 35k–64k 颗；主机资本 **$9–$20/颗**，含耗材/换型取 **$12–$25/颗** | **$0.86k–$1.80k** | 以 120kW/rack、约 600 颗/MW：**$7.2k–$15.0k/MW** | 中低；实际 burn-in 2–48h，客户 ASIC 不一定 72 颗/rack |
+| AI FOX-XP WLBI | 9-wafer cell $3m–$6m；大 die 约 60/wafer；管理层称高功率时约四分之一 DUT 同时上电；12h、80%、5 年 | 约 135 个同时 active DUT，5 年约 394k die；机械摊销 $7.6–$15.2，考虑 wafer utilization/接触耗材后取 **$8–$30/合格 die** | **$0.58k–$2.16k** | 约 600 颗/MW：**$4.8k–$18.0k/MW** | 低至中；die 数、cycle 和 yield 为模型变量 |
+| SiPh/PIC WLBI | 同类 9-wafer cell；假设 100–400 PIC/300mm wafer、每 PIC 4–16 lane；cycle/利用率依产品 | **$0.5–$8/被烧 PIC/光引擎**；约 **$0.05–$2/optical lane** | 无统一值；=`每 rack 被烧 PIC 数×$0.5–$8` | 无统一值；取决于 pluggable/NPO/CPO 拓扑 | 低；公司不披露客户 port 数，不能把 lane、engine、module、switch port 混用 |
+| SiC/GaN/Si MOSFET | 管理层曾给高压 200mm SiC 测试成本约 **$0.005/die-hour** | 24h 老化约 **$0.12/die** | 不可可靠估算 | =`每 MW 接受 Aehr 老化的功率 die 数×$0.12` | 中（每 die-hour 锚较强）；当前订单仍主要与 EV 有关 |
+| memory/HBF/HBM | 无 production win、无量产 throughput | **不可得** | 不可得 | 不可得 | 不应把 HBF 工程接触误当 HBM stack 内容量 |
+
+一个直观的 AI WLBI 经济性检验：管理层举例，若一颗 AI 封装含 4 个价值链很高的 die、封装总 BOM 约 $15,000，且每个 die 有 1% 潜在失效率，则至少一颗坏 die 的概率为 `1-(0.99)^4=3.94%`，理论期望报废损失约 **$591/封装**；若有 8 个关键 die，则概率约 7.73%、期望损失约 **$1,159**。即使 Aehr 摊销内容为 $10–$30/计算 die，提前筛选的经济回报仍可能高一个数量级。这个例子忽略返修、相关失效和测试误杀，只用于解释客户为何愿意为 KGD/WLBI 付费。
+
+### 7.4 完整价格传导链
+
+`hyperscaler/GPU/ASIC 需求与可靠性门槛上升`  
+→ fabless/IDM 要求 OSAT 增加 KGD、WLBI 或 PLBI 插入  
+→ OSAT/客户向 Aehr 采购 FOX/Sonoma 主机，并为每颗器件采购 WaferPak/BIM/socket、NRE 和自动化  
+→ 设备在 3–7 年内按吞吐摊销成 test fee  
+→ test fee 进入合格 die/封装 BOM  
+→ 芯片供应商把成本与更低 DPPM、更高良率的价值一起传给 accelerator/optical engine/功率模块  
+→ 最终进入 rack/MW CapEx。
+
+价格传导最强的环节不是通用钣金和 chamber，而是**器件专用接触界面、功率/热控、测试 recipe、相关性数据和 HVM 自动化**。客户换代需要新 WaferPak/BIM，但已经安装的 FOX/Sonoma 平台可复用，形成“主机 installed base + 高毛利耗材”的复利结构。
+
+## 八、当前产能、供应链采纳与客户认证阶段
+
+### 8.1 统一认证/采用标尺
+
+本文用 L0–L6 描述“认证”，这里指客户产品/工艺资格认证，不是政府监管证书：
+
+- **L0** 概念；**L1** 技术接洽/DFT；**L2** paid sample/benchmark；**L3** correlation 和量产条件验证；**L4** pilot line；**L5** production qualification/首批采购；**L6** high-volume manufacturing（HVM）。
+- SECS/GEM、E84、JEDEC tray 是工厂接口/自动化标准；HTOL、HTRB、HTGB 是可靠性测试方法；它们不能替代具体客户对器件、WaferPak/BIM、recipe、良率相关性和产线的 L4–L6 认证。
+
+### 8.2 当前产能与采用状态
+
+| 关键业务 | 当前可交付产能（美元/年） | 供应链采纳程度【估算】 | 当前认证阶段【披露+判断】 | 关键证据/短板 |
+|---|---:|---|---|---|
+| AI Sonoma PLBI | **物理名义 >$288m–$336m**：Fremont 20 套/月+东南亚 CM >20 套/月，按 $0.6m–$0.7m/套 | lead hyperscaler 当前器件生产覆盖约 80%–100%；全球高端 AI ASIC/accelerator 市场渗透仍约 1%–5% | 当前器件 **L6**；下一代/第二器件 **L5→L6** | $41m 订单和 FY2027 60–70 套；名义产能远高于需求，交付窗口和验收是瓶颈 |
+| AI FOX WLBI | FOX 全平台共享；本文估算当前**实际客户可交付收入能力 $60m–$110m** | lead 客户正在转“全部 wafer-level”；目标 AI accelerator 市场整体仍 <5% | lead 客户 **L6**；新 top-tier benchmark 已完成 **L3**、要求现有 HVM device 做 **L4 pilot**，第二 device **L1–L2** | $14m 多系统订单；ISE/ASE 量产线；benchmark 超预期但新客户尚未计入指引核心 |
+| SiPh WLBI | 共享 FOX 产能；本文估算 **$30m–$60m** | lead SiPh 客户 L6；新 networking 客户已装首批；可服务目标 SiPh HVM 线渗透约 10%–25% | lead 客户 **L6**；新客户 **L5–L6** | 新客户两套 9-wafer cell+两套 FOX-NP；后续预测有更多系统，但金额未披露 |
+| SiC/GaN/Si MOSFET | 共享 FOX/WaferPak；本文估算 **$30m–$60m** | SiC 有成熟 installed base；GaN/Si MOSFET 仍少量 | lead SiC **L6**；大型车企 **L2–L3**；台湾新 SiC 客户 **L4–L5**；GaN 12+ 设计 **L2–L3**；Si MOSFET 首机 **L3–L4** | >$8m WaferPak 订单验证存量产线；AI 数据中心功率器件 attach 尚未独立披露 |
+| memory/HBF/DRAM | 技术上复用 FOX，本文给共享工程能力 **$20m–$40m**，不等于可售产能 | production adoption 约 0%；只有多家客户接洽/benchmark | **L1–L3** | 需要新系统/DFT/相关性；开发可能 >1 年；FY2027 高端指引仍为 $0 |
+
+**产能数字不可相加。** AI WLBI、SiPh、power 和 memory 共用 Fremont blade、WaferPak、供应商和应用工程资源；“400 个 blade/WaferPak 生产单元/月”是厂房/基础设施上限，不等于 400 套可即时发货的完整 FOX 系统。按 18-blade 系统折算约 22 套/月、按 9-blade 约 44 套/月，再乘 $3m–$6m 会得到不现实的十亿美元级机械上限；本文因此用供应商、定制工程、客户验收和 FY2027 指引约束后的**实际客户可交付收入能力**。
+
+### 8.3 为什么客户认证需要时间、但一旦量产替换成本很高
+
+1. 客户需要在同一 wafer/package 上把 Aehr 结果与既有 ATE、SLT、failure analysis 和 field return 数据做 correlation；误杀好 die 或漏掉坏 die 的成本都很高。
+2. WaferPak/BIM/socket 是器件专用；DFT、电源域、pad map、接触电阻、温度均匀性和失效阈值会进入 recipe。换供应商常需重新做 3–6 个月 benchmark/pilot。
+3. HVM 后，AutoAligner/ALU 与 FOUP、MES、SECS/GEM、E84、条码追溯绑定；停线和重新认证成本通常高于设备价差。
+4. 但在 L2–L3 前切换成本并不高，Advantest/Teradyne/Cohu/客户自研方案仍可争夺。因此 Aehr 的“近垄断”只存在于**已量产的特定器件+专用界面**，不是整个 AI 测试市场。
+
+## 九、一年后各关键业务：基准、乐观、极度乐观收入与战略评分
+
+预测期为 FY2027（截至 2027-06-25，约一年后）。基准/乐观分别对应公司指引低端/高端；极度乐观 $200m 超出公司指引，是需要多项当前未计收入机会同时成功的压力测试。各业务 FY2026 基数沿用第六节。
+
+| 业务 | 情景 | FY2027 收入贡献 | YoY | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/壁垒 | 溢价能力 | 达成条件 |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| AI Sonoma PLBI | 基准 | **$50m** | **+257%** | 4.5 | 5.0 | 3.5 | 4.0 | 4.0 | 60–70 套按 Q2 起集中交付；$41m 订单无大幅改期 |
+|  | 乐观 | **$52m** | **+271%** | 4.5 | 5.0 | 4.0 | 4.0 | 4.2 | 第二器件提早、BIM/socket attach 高于计划 |
+|  | 极度乐观 | **$65m** | **+364%** | 5.0 | 5.0 | 4.5 | 4.2 | 4.5 | 新 hyperscaler/第三器件进入生产，且客户不因供给冗余压价 |
+| AI FOX WLBI | 基准 | **$41m** | **+95%** | 5.0 | 5.0 | 4.0 | 4.5 | 4.5 | lead 客户全量 WLBI 扩线；新 top-tier 只贡献 pilot |
+|  | 乐观 | **$53m** | **+152%** | 5.0 | 5.0 | 4.5 | 4.5 | 4.7 | 新 top-tier 第一器件 L4→L5，现有客户第二器件并行 |
+|  | 极度乐观 | **$78m** | **+271%** | 5.0 | 5.0 | 5.0 | 4.7 | 4.8 | 两个以上新增 HVM design win、WaferPak 消耗和系统同时放量 |
+| SiPh/光互连 WLBI | 基准 | **$20m** | **+150%** | 5.0 | 4.0 | 3.5 | 4.0 | 4.0 | lead 与新 networking 客户按预测扩线，CPO/NPO 不大幅延后 |
+|  | 乐观 | **$27m** | **+238%** | 5.0 | 4.5 | 4.0 | 4.2 | 4.2 | 第三客户导入；自动化 WaferPak mix 上升 |
+|  | 极度乐观 | **$34m** | **+325%** | 5.0 | 5.0 | 4.5 | 4.4 | 4.5 | CPO/optical I/O HVM 提前，PIC wafer burn-in 近乎必选 |
+| SiC/GaN/Si MOSFET | 基准 | **$14m** | **+180%** | 3.0 | 3.0 | 2.5 | 3.5 | 3.5 | >$8m 订单交付；EV 稳定、GaN 仍主要送样 |
+|  | 乐观 | **$14m** | **+180%** | 3.5 | 3.5 | 3.0 | 3.5 | 3.7 | 车企认证和台湾客户量产抵消价格压力 |
+|  | 极度乐观 | **$17m** | **+240%** | 4.0 | 4.0 | 4.0 | 3.8 | 4.0 | AI 800V/高频电源推动 GaN/SiC WLBI，首批 silicon MOSFET 复制 |
+| memory/HBF/DRAM | 基准 | **$0** | NM | 4.5 | 2.5 | 2.0 | 2.5 | 3.0 | 只做 benchmark；不把 pipeline 提前计收入 |
+|  | 乐观 | **$0** | NM | 4.5 | 3.0 | 2.5 | 3.0 | 3.3 | 完成 L3/L4，但验收仍在 FY2028 |
+|  | 极度乐观 | **$5m** | NM | 5.0 | 4.0 | 4.0 | 3.5 | 4.0 | 一家 flash/DRAM 客户提前 production qualification；仍不能默认是 HBM |
+| legacy/其他 | 基准 | **$5m** | +233%* | 1.5 | 1.5 | 1.5 | 2.5 | 2.0 | 含服务、旧平台和模型残差 |
+|  | 乐观 | **$4m** | +167%* | 1.5 | 1.5 | 1.5 | 2.5 | 2.0 | AI mix 更高，其他占比下降 |
+|  | 极度乐观 | **$1m** | -33%* | 1.0 | 1.0 | 1.0 | 2.0 | 1.5 | 核心业务几乎占满收入 |
+| **公司合计** | **基准** | **$130m** | **+160%** | — | — | — | — | — | 公司指引低端 |
+|  | **乐观** | **$150m** | **+200%** | — | — | — | — | — | 公司指引高端 |
+|  | **极度乐观** | **$200m** | **+300%** | — | — | — | — | — | 本文超指引情景 |
+
+\* “legacy/其他”FY2026 基数是残差估计，增长率没有独立经营意义。真正决定公司增速的是前三项合计：FY2026 约 $43m，FY2027 三情景为 **$111m/$132m/$177m**，分别增长约 **158%/207%/312%**。
+
+## 十、一年后产能、供应链采纳与认证阶段三情景
+
+| 业务 | 情景 | FY2027 可交付收入能力【估算】 | 供应链采纳程度【估算】 | 预计认证阶段 | 主要扩产/失效条件 |
+|---|---|---:|---|---|---|
+| Sonoma PLBI | 基准 | **$288m–$336m** | 现有 HVM+第二器件；高端 AI accelerator 程序渗透 2%–5% | 现有/下一代均 L6 | 现有 >40 套/月名义能力足够；取决于客户 schedule |
+|  | 乐观 | **$350m–$450m** | 2 个以上客户/多器件 HVM；渗透 4%–8% | 新客户 L5–L6 | 合同制造、BIM/socket 二供和 ALU 增配 |
+|  | 极度乐观 | **$450m–$600m** | 3+ HVM program；渗透 8%–15% | 多项目 L6 | 需要应用工程、液冷/BIM 供应链同步扩张；不是单纯加钣金 |
+| AI FOX WLBI | 基准 | **$100m–$150m** | 1 个主客户 HVM+1 个 pilot；目标 AI 市场 3%–8% | L6 + L4 | 400 blade/WaferPak 基础设施、现有供应商扩量 |
+|  | 乐观 | **$150m–$220m** | 2 个 HVM+第二器件；渗透 7%–15% | 2 个 L5–L6 | WaferPak 设计、AutoAligner 和高功率模块成为真实瓶颈 |
+|  | 极度乐观 | **$220m–$320m** | 3+ HVM；渗透 15%–25% | 多项目 L6 | 需新供应商、全球 FAE/OSAT 产线；高并行下 yield correlation 不下降 |
+| SiPh WLBI | 基准 | **$60m–$100m** | lead+networking 两客户生产；目标 HVM 线 20%–35% | 两家 L6 | CPO/NPO/1.6T 量产按 2026H2–2027 展开 |
+|  | 乐观 | **$80m–$140m** | 3–4 客户；35%–50% | 新客户 L5–L6 | 自动光电 correlation、WaferPak 和 aligner 并行升级 |
+|  | 极度乐观 | **$120m–$200m** | 5+ 客户；50%–70% | 多家 L6 | SiPh 长时老化成为行业必选；若 Photon 100 等替代平台胜出则不成立 |
+| power WLBI | 基准 | **$40m–$70m** | SiC installed base 复购；GaN/Si MOSFET 小批 | SiC L6；GaN L3；Si MOS L4 | WaferPak 耗材优先，主机不需大扩产 |
+|  | 乐观 | **$60m–$90m** | 车企+台湾客户量产；GaN 多项目 pilot | 多项 L4–L6 | EV 恢复、AI power attach 可被客户点名验证 |
+|  | 极度乐观 | **$80m–$120m** | AI/EV 双驱动，多器件量产 | GaN/Si MOS L5–L6 | 需要 300mm GaN 和低成本 Si MOS burn-in 经济性成立 |
+| memory | 基准 | **$20m–$40m 技术能力** | 0% production | L2–L3 | 无收入；共享 FOX 产能 |
+|  | 乐观 | **$30m–$60m 技术能力** | 一家 pilot | L4 | 需完成新系统和相关性，不计 FY2027 销售 |
+|  | 极度乐观 | **$50m–$90m** | 一家 early production | L5 | $5m 收入前提；若仍只是 HBF demo，应回到基准 |
+
+这些容量是“在供应商、定制工程和客户验收都可扩张时的一年收入履约能力”，不是订单预测；FOX 各业务共用资源，不能加总。即使在基准情景，公司收入 $130m 也远低于物理名义产能，说明 FY2027 的核心问题是**有没有更多通过 L5/L6 的器件和订单**，而不是有没有厂房。
+
+## 十一、订单积压、交付窗口、取消率与未来一年增速推断
+
+### 11.1 过去半年逐笔可验证订单/项目
+
+| 日期 | 业务/项目 | 金额与设备 | 交付窗口 | 对 backlog/收入的含义 |
+|---|---|---|---|---|
+| 2026-01-08 | 多客户 Sonoma | **>$5.5m**，多套 Sonoma；同时发布全自动 Sonoma | FY2026 内为主 | PLBI 从工程机走向自动量产；部分已在 Q3/Q4 收入中。[公告](https://www.aehr.com/2026/01/aehr-announces-over-5-5-million-in-sonoma-ultra-high-power-system-orders-to-test-and-burn-in-ai-processors-introduces-new-fully-automated-sonoma-for-next-generation-ai-applications/) |
+| 2026-02-11 | lead hyperscaler 下一代自研 AI ASIC | 初始多套 Sonoma，金额未披露 | 2026 年夏季开始部署 | 后续 $41m 大单的先导；下一代功率/封装约为第一代 2×。[公告](https://www.aehr.com/2026/02/aehr-secures-key-ai-production-burn-in-win-with-initial-order-of-sonoma-systems-for-lead-hyperscale-customers-next-generation-ai-asic-processors/) |
+| 2026-02-26 | lead AI processor WLBI | **$14m**，多套自动 FOX-XP、WaferPak、Aligner | FY2026/FY2027 | 由 package/system burn-in 转全晶圆；是 AI WLBI 当前最硬订单锚。[公告](https://www.aehr.com/2026/02/aehr-receives-14-million-order-from-lead-ai-processor-customer-for-multiple-new-fully-automated-fox-xp-wafer-level-burn-in-systems/) |
+| 2026-03-03 | lead SiPh 客户 | 自动 FOX-XP 系统+升级，金额未披露 | 2026H2 | AI optical I/O/data-center interconnect 扩产。[公告](https://www.aehr.com/2026/03/aehr-receives-follow-on-order-for-fully-automated-wafer-level-burn-in-systems-powering-ai-optical-i-o-and-data-center-interconnects/) |
+| 2026-03-31 | 新 global networking/SiPh 客户 | **两套 9-wafer cell+两套 FOX-NP**，金额未披露 | Q4 首批已发，CY2026 预计更多 | 第二个规模 SiPh 入口，降低 lead customer 单一风险。[公告](https://www.aehr.com/2026/03/aehr-wins-major-new-silicon-photonics-customer-with-high-power-fox-xp-wafer-level-burn-in-system-for-hyperscale-data-center-optical-interconnect-market/) |
+| 2026-04-16 | lead hyperscaler AI PLBI | **$41m** Sonoma+BIM+socket，公司史上最大订单 | FY2027，Q2 起大批 | FY2027 Sonoma 约 $50m 的主要支撑；单客户/单项目集中也最高。[公告](https://www.aehr.com/2026/04/aehr-receives-record-41-million-production-order-from-lead-hyperscale-ai-customer-second-half-bookings-exceed-92-million/) |
+| 2026-06-17 | major SiPh 客户 | 9-wafer cell+Aligner+WaferPaks，金额未披露 | 6 个月内 | 财年后订单；验证新客户首批后的扩线。[公告](https://www.aehr.com/2026/06/aehr-receives-follow-on-order-from-major-silicon-photonics-customer-for-fully-automated-wafer-level-burn-in-system-for-hyperscale-data-center-optical-interconnect/) |
+| 2026-07-09 | lead SiPh 客户 | 全自动 FOX-XP production follow-on，金额未披露 | 未披露 | 财年后 lead customer 持续自动化，不是一次性工程收入。[公告](https://www.aehr.com/2026/07/aehr-receives-follow-on-production-order-from-lead-silicon-photonics-customer-for-fully-automated-fox-xp-wafer-level-burn-in-system/) |
+| 2026-07-14 | SiC、多客户 | 最近一个月 **>$8m WaferPak**；含 lead customer 与大型车企 qualification | 未来数季 | 发生在 5 月 29 日前后的滚动一个月内，可能已部分或全部包含在 7 月 14 日 $100.6m effective backlog，不应再次全额相加。[公告](https://www.aehr.com/2026/07/aehr-receives-more-than-8-million-in-new-silicon-carbide-wafer-level-burn-in-orders-as-global-electric-vehicle-programs-accelerate/) |
+
+### 11.2 Backlog 质量、lead time 与取消率
+
+- FY2026 bookings 合计 **$115.5m**，收入 **$50.001m**，期初/期末 backlog **$15.2m/$80.6m**；净桥残差仅 **-$0.099m**，占 bookings **0.086%**。这支持“截至目前没有显著净订单流失”，但无法观察同季取消后又被新订单填补的 gross cancellation。
+- 订单条款通常允许取消/改期且处罚有限；7 月 14 日 effective backlog 还含 5 月 29 日后的 bookings，并非同一时点的财季末余额。本文基准/乐观分别假设未来一年该 effective backlog 的 90%/95% 转收入，已为改期、验收和配置变更留出折扣。
+- 公司没有公布统一 lead time。可见订单窗口从“夏季开始”“Q2 集中”“六个月内”到“FY2027 内”；因此实际 lead time 约 **2–12 个月**，其中 WaferPak 在 DFT 准备充分时设计可约 8 周，完整 benchmark/pilot 常约 6 个月。
+- 大批 Sonoma 在 FY2027 Q2 才交付是客户排程，不是公司无法制造。现有 >40 套/月名义能力与全年 60–70 套计划之间有明显冗余。
+
+### 11.3 公司未来一年收入的 backlog 转换模型
+
+| 情景 | 7 月 14 日 effective backlog 转化率 | 转化收入 | 财年内新增/forecast-to-order 转化 | FY2027 收入 | YoY | 关键取消/交付假设 |
+|---|---:|---:|---:|---:|---:|---|
+| 基准 | **90%** | $90.5m | $39.5m | **$130m** | **+160%** | $41m 主订单按期；约 10% 因改期/验收/条件性承诺未确认；新 SiPh/SiC/耗材补足 |
+| 乐观 | **95%** | $95.6m | $54.4m | **$150m** | **+200%** | 现有订单几乎全转；top-tier AI pilot、第二器件和 SiPh 跟单贡献增量 |
+| 极度乐观 | **97%** | $97.6m | $102.4m | **$200m** | **+300%** | 不仅零大额取消，还需约一个新的 $40m–$60m 级 HVM 程序及多业务同时提前 |
+
+### 11.4 匿名客户和“渠道小道消息”的可用边界
+
+| 匿名项目 | 已证实特征 | 可推断候选集合 | 本文处理 |
+|---|---|---|---|
+| lead hyperscaler PLBI | 自研 ASIC、现有+下一代、台湾合同制造、第二器件 2× 功率、$41m | AWS、Google、Microsoft、Meta 等均可能 | **不点名。** 没有公开证据能唯一识别；模型只使用订单金额和交付窗口 |
+| lead AI processor WLBI | 用于训练/推理、由 system-level 转 wafer-level、在大型 OSAT HVM | GPU/ASIC/CPU 头部供应商均可能 | **不写成 NVIDIA/AMD。** 客户身份不是收入兑现所必需的事实 |
+| new top-tier benchmark | accelerator、CPU、network processor；台湾当前 HVM device pilot，第二 device 并行 | 大型综合计算/网络芯片厂 | 作为乐观情景，不计基准大额收入 |
+| new SiPh networking customer | global networking/data-center transceiver leader；两套 9-wafer cell+FOX-NP | Broadcom、Cisco/Acacia、Coherent、Lumentum、Marvell 等只是候选宇宙 | 不点名；以 follow-on order 和系统数量验证，而不是论坛猜测 |
+
+公开论坛和社交媒体没有足够证据把这些匿名客户唯一对应到具体公司。故所谓“小道消息”在本文只作为“候选集合和需要监控的催化剂”，绝不用于抬高 backlog、市场份额或客户集中度结论。
+
+## 十二、竞争格局、主流技术判断、替代方案与客户替换成本
+
+### 12.1 各关键业务的主要竞争对手
+
+| 关键业务 | 主要竞争对手/替代方案 | 对方强项 | Aehr 相对优势 | Aehr 的真实短板 |
+|---|---|---|---|---|
+| AI PLBI/Sonoma | Advantest 7038、Teradyne Titan HP/SLT、Cohu Eclipse/handler、Chroma、传统 burn-in oven、客户自研 rack | Advantest/Teradyne 有大规模 ATE installed base、功能测试和软件；Cohu 强在 handler、socket、主动热控；客户自研可贴合 workload | 最高 88 个独立液冷位置、2kW/DUT、BIM/socket/自动化一体；Incal 历史 installed base | PLBI 主机毛利低；功能测试带宽/生态不及两大 ATE；一个 hyperscaler 订单占比过高 |
+| AI FOX WLBI | Advantest/Teradyne ATE+prober、Semight 多晶圆 WLBI、传统 single-wafer probe、客户/OSAT 自研 | 两大 ATE 的 pin electronics、test program 和全球服务更强；传统方案可复用已认证流程 | 9/18 整片并行、高功率/高温、>50k 接触点、单 ATE footprint、WaferPak+AutoAligner；长时 burn-in 成本低 | 依赖客户 DFT；不一定覆盖高速全功能测试；专用接触良率和热均匀性必须逐器件验证 |
+| SiPh WLBI | Teradyne Photon 100/Quantifi、Advantest+OpenLight、FormFactor/Keystone、ficonTEC、MPI/SÜSS、客户自研光电 tester | Photon 100 覆盖 wafer→optical engine→CPO 的电光功能测试；FormFactor/ficonTEC/PI 强在 optical probing/纳米级主动对准 | Aehr 强在长时间、全晶圆并行可靠性老化和工厂自动化；已获多个 production order | 不提供完整高速 optical/electrical functional test；可能是补充而非主平台，价值会被 Photon 100 类平台分走 |
+| SiC/GaN/Si MOSFET | Semight 9-wafer WLBI、Cohu Neon、Chroma、离散器件 ATE+burn-in oven、IDM 自研 | Semight 与 Aehr 直接同类并行晶圆方案；Cohu 兼有 handler/interface；中国本土方案可能低价 | 多年 SiC HVM installed base、WaferPak、极低 die-hour 成本和高功率经验 | EV 周期、客户集中、价格竞争；低价 silicon MOSFET 未必承受定制 WaferPak 经济性 |
+| memory | Advantest memory tester、Teradyne Magnum、FormFactor/Technoprobe/MJC probe card、DRAM/NAND 厂自研 burn-in | 已有 HBM/DRAM/NAND 量产生态、协议和客户份额 | 全晶圆并行和耗材模型若适合长时 flash/DRAM 老化，可能降低成本 | 当前无 production win；“HBF”命名不等于 HBM；技术和客户验证均落后 |
+
+竞争产品证据包括：[Advantest 7038 液冷高功率测试/老化平台](https://www.advantest.com/en/news/2025/20250918.html)、[Teradyne Photon 100（2026-03）](https://investors.teradyne.com/news-events/press-releases/detail/436/teradyne-introduces-photon-100)、[Cohu Neon SiC burn-in](https://ir.cohu.com/news-releases/news-release-details/cohu-enters-silicon-carbide-sic-burn-in-test-market)、[Semight 9-wafer SiC/GaN WLBI](https://en.semight.com/wafer-level-burn-in)。Aehr 已对 Semight 提起中国专利诉讼，并称北京知识产权部门维持其两项专利有效；案件仍在进行，不能把“专利有效”写成“侵权已最终胜诉”。
+
+### 12.2 新技术是否会成为主流
+
+| 技术 | 本文判断 | 成为主流的范围 | 主要替代/反证 |
+|---|---|---|---|
+| 高功率 package burn-in/SLT | **已经是主流，渗透率继续上升** | 高价值 AI ASIC/GPU/CPU 和 networking silicon | adaptive test、抽样 burn-in、ATE/SLT 相关性改善可缩短时长；客户自研 |
+| 全晶圆并行 WLBI | **会成为高价值/高可靠器件的重要主流插入点，但不会覆盖全部芯片** | 高功率 AI processor、SiC/GaN、SiPh、部分 memory；尤其昂贵封装前 KGD | 良率成熟、DFT 不完整、package-induced defect 占主导时，客户可能选择 package burn-in 或 sample test |
+| WaferPak/BIM 专用接口 | **长期主流且高粘性** | 每个新器件都需要真实接触、电源、热控和相关性 | 标准化 load board/socket、多供应商接口会压价；客户可双供 |
+| SiPh wafer-level burn-in | **可靠性环节大概率主流，收入节奏取决于 CPO/NPO/光 I/O 量产** | laser/PIC/optical engine 在昂贵封装前的 known-good screening | pluggable、LPO/LRO、NPO、CPO 将长期并存；功能光电测试平台可能吸收部分价值 |
+| 300mm GaN/silicon MOSFET WLBI | **有潜力，尚未证明大规模主流** | AI power、快充、EV 的高可靠器件 | 器件 ASP 太低、良率太高或抽检足够时，24h 全量老化的经济性不足 |
+| HBF/DRAM/HBM 全晶圆老化 | **期权，不是当前主流事实** | 只有客户 benchmark→pilot→HVM 后才成立 | 现有 memory ATE/probe/burn-in 生态强，开发周期 >1 年；公司 FY2027 指引为零 |
+
+项目内研究支持这一“主流但非全替代”判断：AI 芯片测试正从 wafer sort/final test 扩展到 singulated KGD、post-bond、SLT/burn-in 和光电共测；同时 CPO 量产最先发生在交换侧，XPU 封装内 optical I/O 仍主要处于样品、DVT 和量产准备阶段，不能把每颗 GPU 直接绑定 CPO 测试内容。[项目内 ATE/SLT 研究](../../行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-07-10.md)；[项目内封装内光 I/O 研究](../../行业调研/AI网络_光互联_铜互联/行业调研_封装内光I-O与Optical Chiplet_2026-07-10.md)；[项目内 CPO/NPO 研究](../../行业调研/AI网络_光互联_铜互联/行业调研_CPO_NPO与交换侧光引擎_2026-07-10.md)
+
+### 12.3 客户替换成本分阶段
+
+| 客户阶段 | 替换成本 | 原因 | 对 Aehr 的含义 |
+|---|---|---|---|
+| L1–L2 接洽/benchmark | 低至中 | 尚无 production data，可同时 benchmark 多平台 | 新客户 pipeline 不能按高胜率计收入 |
+| L3 correlation | 中 | 已投入 WaferPak/BIM、测试程序、工程时间，但仍可换平台 | benchmark 超预期是积极信号，仍不是订单 |
+| L4 pilot | 中高 | 要与 yield、failure analysis、MES、自动化和节拍闭环 | 新 top-tier 客户进入这一步才可进入乐观收入 |
+| L5 qualification | 高 | recipe、contact、thermal、DPPM 与客户产品 release 绑定 | 首批生产订单通常会带来同代扩线和耗材复购 |
+| L6 HVM | 很高 | 换机需停线、重新相关性和客户质量放行；WaferPak/BIM 数据不可无损迁移 | 现有 AI/SiPh/SiC 客户具有定价与复购黏性，但客户仍可为下一代器件引入二供 |
+
+## 十三、业内论坛、会议与技术报告的独立交叉验证
+
+| 2026 业内信号 | 具体事实 | 对 Aehr 的验证/挑战 |
+|---|---|---|
+| SWTest 2026 | 议程出现高功率器件探针卡短路保护、AI 时代低电阻高密度互连、多温 HBM probing | 验证接触电阻、短路保护、热控和多温度已成为量产瓶颈；利好 WaferPak/BIM，但也显示 probe-card 厂商会参与价值分配。[SWTest 2026 Program](https://www.swtest.org/program/) |
+| VOICE 2026 | Advantest 技术议题包括下一代数据中心/AI processor 的 adaptive test 与测试数据优化 | 新插入点增加利好 Aehr；adaptive test 若显著缩短 burn-in 或只测试高风险 die，会抵消机台需求。[VOICE 技术议程](https://voice.advantest.com/technical/) |
+| OFC 2026 advanced packaging/CPO | 讨论 CPO/LPO、光引擎、外置激光、热与可维护性；产业从 demo 转向 HVM 良率和封装测试 | 支持 SiPh 需要 wafer-level reliability，但技术路线不是单一 CPO；Aehr 必须适配 pluggable/NPO/CPO 多种客户。[OFC advanced packaging session](https://www.ofcconference.org/program/special-events/advanced-packaging-and-co-packaging-for-efficient-optical-systems/) |
+| OFC 2026 NPO 路线 | NPO 被讨论为兼顾热、维修和 silicon risk 的 CPO 替代 | 不论 NPO/CPO，known-good PIC 仍重要；但端口时间表和设备数量会不同。[OFC NPO showcase](https://www.ofcconference.org/program/special-events/technology-showcase-lightspeed-photonics-presents-near-package-optics-the-practical-path-beyond-cp/) |
+| OIF 多厂互操作 | 800ZR、CEI-224G/448G、CPO 多厂互操作展示 | 标准化扩大总市场，也使客户有更多平台/组件替代；Aehr 不能依赖封闭生态永久垄断。[OIF at OFC 2026](https://www.ofcconference.org/news-media/exhibitor-news/oif-demonstrates-industry-wide-interoperability-at-scale-at-ofc-2026-advancing-energy-efficiency-p/) |
+| Teradyne Photon 100 | 2026-03 发布 wafer、optical engine 与 CPO 电光功能测试平台 | 直接证明 SiPh 量产测试 CapEx 已启动；同时是 Aehr 最大平台型竞争威胁，Aehr 更适合把自己定位成长时 burn-in 补充层 |
+| 项目内功率半导体研究 | AI 电源链的 burn-in/final test/可靠性约占器件成本 8%–18%；真正瓶颈常从 wafer 移向高热流封装和系统级验证 | 说明 Aehr 可从 EV 延伸 AI power，但需要客户明确 device attach；不能把整个 AI 功率器件 TAM 当成 Aehr TAM。[项目内功率半导体研究](../../行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-07-10.md) |
+
+综合这些独立会议资料，Aehr 的需求并非仅来自公司营销：高功率、高密度接触、KGD、SiPh HVM 和可靠性筛选确实是 2026–2027 行业主题。反过来，会议也显示 Teradyne、Advantest、FormFactor、ficonTEC、Cohu 和多种 NPO/CPO 路线同时推进；Aehr 的胜率来自特定长时并行老化插入点，不是“AI 测试一家公司通吃”。
+
+## 十四、核心风险、反证条件与未来四季监控清单
+
+| 风险 | 当前暴露 | 可量化反证/预警 | 缓释因素 |
+|---|---|---|---|
+| 单客户/单项目集中 | $41m 单笔订单=FY2026 收入 82%；Q4 三客户各 >10% | lead 客户延期 >1 季；effective backlog 减少而非转收入；新客户 pilot 不进 L5 | AI WLBI、PLBI、SiPh 三路线已不完全同一终端；新 networking 客户进入生产 |
+| Backlog 可取消/改期 | PO 处罚有限；effective backlog 含 5 月 29 日后 bookings，仍多为可取消/改期订单 | FY2027 backlog 转化 <85%；bridge 出现数百万美元负残差 | FY2026 订单桥只差 $0.099m；部分订单有明确交付窗口 |
+| 执行/验收跨季 | FY2027 收入需从 $50m 跳至 $130m–$150m | Q2 大批 Sonoma 未交；季度收入持续低于约 $25m 且无后续 catch-up | >40 Sonoma/月名义产能；现金充足 |
+| PLBI 拉低毛利 | Sonoma 主机低于 WLBI 毛利 | non-GAAP GM 回落至 <40%；耗材占比低于 25%；收入增而 non-GAAP NI margin 远低于 18% | WaferPak+BIM 等预计约占收入 30%；Q4 non-GAAP GM 约 44.7% |
+| 竞争/替代 | 两大 ATE、Photon 100、Cohu、Semight、客户自研 | 新 top-tier 选用替代平台；既有客户下一代器件引入二供；价格/GM 下行 | 已认证器件的专用 interface 和 HVM 数据形成高切换成本 |
+| 技术经济性 | WLBI 需 DFT、接触/热均匀性；PLBI 仍需处理封装后缺陷 | 客户从全量改抽检；burn-in hours 下降；yield 改善使测试 ROI 下降 | 高价多 die 封装的报废成本远高于每 die 测试内容 |
+| SiPh/CPO 延迟 | CPO/NPO/optical I/O 路线多、量产节奏不一 | 客户 forecast 不转 PO；新系统利用率低；CPO 从 2027 推迟到 2028–2029 | lead SiPh 客户已经 HVM；pluggable/NPO 同样需要 PIC 可靠性 |
+| 存储概念过度外推 | 无 FY2027 量产收入 | 未来两次财报仍只有 engagement、无 paid pilot；新系统开发延后 | 模型基准/乐观均给 $0，估值不必依赖 memory |
+| 供应链单点 | chamber、电源、高密度互连、contact substrate、IC 有 sole/limited source | 名义产能高但 shipment 延迟、预付款/库存继续增长 | 现金 $116m；合同制造能力扩张 |
+| 库存/资产质量 | 库存 $41.4m、约 467 天；DTA $23.8m；商誉+无形 $20.3m | 库存减值、经营现金流继续为负；PLBI 低于计划触发减值 | backlog 若转收入可快速消化营运资本 |
+| 稀释/估值 | 一年期末股数 +8.7%；P/S 52.7× | 再融资、stock comp 上升；收入只达低端仍被压 multiple | 无债务、现金可支持扩张；但这不是高估值的充分理由 |
+| 知识产权/中国竞争 | Semight 专利争议未终局 | 诉讼败诉、竞争者绕开专利、低价替代获得大客户 | 131 项活跃专利（FY2025 披露）及 trade secret/软件/数据；已量产客户切换成本 |
+
+未来四季应按以下顺序监控，而不是只看新闻标题：
+
+1. **收入与 backlog 转换：**每季计算 `opening backlog + bookings - revenue - ending backlog`；若连续两季负残差 >bookings 的 5%，视为取消/重排恶化。
+2. **Sonoma 数量和交付：**FY2027 全年 60–70 套、约 $50m；Q2 大批交付是否兑现，BIM/socket/ALU 是否同步。
+3. **耗材 mix 与毛利：**WaferPak+BIM 约 30% 的管理层假设是否成立；non-GAAP GM 是否维持约 43%–48%，GAAP GM 是否稳定 >40%。
+4. **客户数而非客户猜名：**新 top-tier benchmark 是否由 L3→L4→L5；lead AI 第二器件、new SiPh customer 是否有 follow-on production PO。
+5. **订单覆盖：**book-to-bill 是否持续 >1；effective backlog 对未来 12 个月收入覆盖是否维持 >60%。
+6. **现金质量：**经营现金流能否转正；库存/收入是否从 82.7% 明显下降；不以再次增发维持现金。
+7. **技术采用：**AI WLBI 是全量还是抽检；SiPh 客户是否由工程 FOX-NP 扩到自动 FOX-XP；GaN/Si MOSFET 是否从 WaferPak sample 进入 L5。
+
+## 十五、情景结论与投资判断
+
+### 15.1 三情景总览
+
+| 项目 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| FY2027 收入 | **$130m** | **$150m** | **$200m** |
+| YoY | **+160%** | **+200%** | **+300%** |
+| 7 月 14 日 effective backlog 转化 | 90% | 95% | 97% |
+| AI PLBI+WLBI | $91m | $105m | $143m |
+| SiPh | $20m | $27m | $34m |
+| power | $14m | $14m | $17m |
+| memory | $0 | $0 | $5m |
+| 主导假设 | 现有订单按期、新客户仅 pilot | 新 AI 客户转初产、SiPh 多客户跟单 | 新 $40m–$60m HVM program、多个认证同时提前 |
+| 主要失败点 | $41m 改期、耗材 attach 低 | pilot 仍停 L4、光学延后 | 供应链/FAE/客户验收无法同时扩张 |
+
+### 15.2 最终判断
+
+**业务质量：正在快速改善，但尚未被一个完整高增长财年验证。** Aehr 已获得 AI PLBI、AI WLBI 和 SiPh WLBI 的真实 production order；订单桥、客户追加订单和自动化扩线相互印证。公司技术在“高功率、长时、全晶圆/多器件并行老化”这一窄而重要的插入点具备强壁垒，定制 WaferPak/BIM/socket 使量产客户具有高替换成本。资产负债表无债务且现金充足，FY2027 并非资金或厂房受限。
+
+**增长质量：FY2027 的高增长可信度中高，$200m 极端情景可信度低。** 7 月 14 日 $100.6m effective backlog（含 5 月 29 日后 bookings）对 $130m–$150m 指引提供 67%–77% 覆盖；Sonoma 约 $50m 和 AI WLBI $14m 有明确金额，SiPh 有多客户/多系统但缺金额。因此 $130m 基准有较强订单支撑，$150m 需要增量转单，$200m 必须依赖未计指引的新 HVM 客户。
+
+**投资风险回报：业务向上、股票容错率很低。** 以 $81.05 计，FY2026 P/S 52.7×、FY2027 中点 P/S 18.8×、指引中点 forward non-GAAP P/E 约 94×。即使业务达到公司高端指引，估值仍要求 2028 年继续高增长和毛利扩张。因此最重要的投资问题不是“AI 是否需要更多测试”，而是：Aehr 能否把一两个匿名客户的定制 wins 复制成多客户平台，在维持约 30% 高毛利耗材 mix 的同时，把 bookings 转成现金而不继续稀释。
+
+**风险调整后的优先级：**
+
+1. AI FOX-XP+WaferPak WLBI：技术价值、毛利、客户锁定和新增客户弹性最高；
+2. SiPh FOX-XP/NP+WaferPak：2027 斜率高、客户开始分散，但 CPO/NPO 时间风险更大；
+3. Sonoma+BIM/socket：收入确定性最高、紧急性最高，但主机毛利与单客户集中最弱；
+4. SiC/GaN/Si MOSFET：installed-base 耗材复苏可靠，AI 直接性需验证；
+5. memory/HBF：保留期权，不在 FY2027 基准估值中付费。
+
+## 十六、主要资料与口径说明
+
+### 16.1 公司、SEC 与产品一手资料
+
+- [FY2026 Q4/FY2026 SEC 业绩附件，2026-07-14](https://www.sec.gov/Archives/edgar/data/1040470/000165495426006655/aehr_ex991.htm)
+- [FY2026 Q4 公司公告](https://www.aehr.com/2026/07/aehr-test-systems-reports-fiscal-2026-fourth-quarter-and-full-year-financial-results-with-record-quarterly-bookings-and-100-million-effective-backlog/)
+- [FY2026 Q4 电话会全文](https://www.marketbeat.com/earnings/reports/2026-7-14-aehr-test-systems-stock/)
+- [FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1040470/000165495425008553/aehr_10k.htm)
+- [Aehr 2026 年 6 月公司演示材料](https://www.aehr.com/wp-content/company-presentation/2026/AEHR-June-2026-Company-Presentation.pdf)
+- [FOX 多晶圆 WLBI 产品页](https://www.aehr.com/solutions/multi-wafer-level-burn-in-and-test-solutions/)
+- [Sonoma/Tahoe/Echo 封装级产品页](https://www.aehr.com/solutions/packaged-parts-test-and-burn-in-solutions/)
+
+### 16.2 项目内产业交叉验证（仅 `基本面/行业调研/`）
+
+- [探针卡、ATE 与系统级测试](../../行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-07-10.md)
+- [HBM 与存储测试设备](../../行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-07-10.md)
+- [高速互连与光学验证测试](../../行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-07-10.md)
+- [AI 芯片先进封装](../../行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-07-10.md)
+- [功率半导体与高压保护器件](../../行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-07-10.md)
+- [封装内光 I/O 与 Optical Chiplet](../../行业调研/AI网络_光互联_铜互联/行业调研_封装内光I-O与Optical Chiplet_2026-07-10.md)
+- [CPO/NPO 与交换侧光引擎](../../行业调研/AI网络_光互联_铜互联/行业调研_CPO_NPO与交换侧光引擎_2026-07-10.md)
+- [AI 产业链全局图谱与口径字典](../../行业调研/研究方法/产业背景：AI产业链全局图谱与口径字典.md)
+
+### 16.3 模型限制
+
+1. 公司只披露一个经营分部；AI PLBI、AI WLBI、SiPh、power、memory 的收入和利润率均为区间估算。
+2. “每 GPU/rack/MW/optical port”是设备寿命摊销内容，不是物理安装 BOM；cycle、利用率、die/wafer 和拓扑改变会使结果成倍变化。
+3. 客户身份没有官方确认；本文不把候选公司当事实，也不使用匿名猜测调整订单金额。
+4. Effective backlog 包含财季后 bookings，且相关 PO 不是不可撤销合同；极度乐观情景超出管理层指引，不应与公司承诺混同。
+5. 股价、估值和市值以 2026-07-17 收盘与 2026-05-29 实际流通股计算；行情商使用加权平均股数时会得到不同市值。

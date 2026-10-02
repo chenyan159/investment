@@ -1,0 +1,26 @@
+{
+  "observation_days": 39,
+  "universe_positive": 62,
+  "universe_negative": 130,
+  "universe_winner20_average": 0.22971231020069918,
+  "consensus20_mean": 0.04887319526654946,
+  "consensus20_median": 0.050397601528132746,
+  "consensus20_drawdown": -0.14006064196202672,
+  "consensus20_top3_contribution": 0.0470479235235824,
+  "consensus20_excluding_top3_mean": 0.002147378521137718,
+  "consensus20_bottom3_contribution": -0.032864898633048645,
+  "consensus20_next_open_return": 0.02574138841307344,
+  "universe_next_open_return": -0.0772176187085576,
+  "consensus20_next_close_return": 0.032918161712426994,
+  "return_signs_strict": {
+    "positive20": 12,
+    "negative20": 24
+  },
+  "SPY_mdd": -0.03358457846071339,
+  "QQQ_mdd": -0.0805347049091113,
+  "SOXX_mdd": -0.1812226827849409,
+  "exclude_OTC_PNK_universe_mean": -0.05075129934804705,
+  "exclude_thin_and_takeover_universe_mean": -0.053502637734632943,
+  "N03_eligible8_mean": -0.06077904137768149,
+  "N03_eligible8_negative": 6
+}

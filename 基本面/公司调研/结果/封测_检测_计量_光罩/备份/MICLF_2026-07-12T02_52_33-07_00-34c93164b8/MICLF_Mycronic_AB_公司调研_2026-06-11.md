@@ -1,0 +1,406 @@
+# 公司：MICLF / Mycronic AB 公司调研（2026-06-11）
+
+> 本报告按任务要求仅使用两类信息：项目内 `行业调研/` 下与光罩、先进封装、AI 芯片、光互联和 AI 产业链口径相关的行业资料，以及联网搜索得到的 Mycronic 官方公告、财报、产品页、订单公告和公开行情页。未读取、引用或继承 `特征量化/` 内容，也未读取同目录已有 MICLF 旧报告。货币除特别注明外为瑞典克朗 SEK，`m` 为百万。
+
+## 结论摘要
+
+Mycronic AB 是瑞典高精度电子制造设备公司，投资人通常把它看成“光罩写版机 + 先进电子/光子装配与测试设备”的高毛利小型设备平台，而不是直接卖 GPU、服务器、交换机、光模块或数据中心电力设备的 AI 硬件公司。它的 AI 暴露主要是间接的：AI 芯片 tape-out 和先进封装拉动高端光罩、AI 服务器和交换机 PCB 拉动 PCB Test，800G/1.6T 光模块和硅光拉动 Die Bonding / Photonic Interconnects，先进封装拉动 Applied Plasma。
+
+截至 2026Q1，Mycronic 的财务质量非常强：TTM 收入 SEK 8.30bn，TTM 毛利率 52.7%，EBIT margin 25.3%；2026Q1 单季收入 SEK 2.503bn，同比增长 17%，EBIT SEK 938m，EBIT margin 37.5%，并有 SEK 2.321bn 净现金。最新 2026 年收入指引从 SEK 8.25bn 上调到 SEK 8.75bn，隐含相对 2025 年 SEK 7.938bn 收入增长约 10.2%。
+
+2026Q1 的业务结构已经比传统“显示面板光罩写版机”更像 AI 产业链旁路设备平台：Pattern Generators 收入 SEK 1.291bn，占集团约 51.6%，EBIT margin 64.4%；Global Technologies 收入 SEK 492m，占约 19.7%，订单同比增长 260% 至 SEK 915m，积压 SEK 1.692bn，公司直接点名 PCB Test 需求来自 AI 应用先进板、Die Bonding 光通信需求来自 AI 数据中心扩张。这个变化重要，但必须克制：公司没有披露 AI 数据中心收入占比，且 Mycronic 产品多数是制造设备 capex，不进入每台服务器或每个 rack 的物理 BOM。
+
+投资判断的核心不是“它能从每个 GPU 抽多少钱”，而是三件事：第一，Pattern Generators 是否能保持激光光罩写版机的高毛利和长交期订单，尤其半导体与先进显示/先进封装掩模；第二，Global Technologies 的 PCB Test、Die Bonding、Photonic Interconnects、Applied Plasma 是否能把 AI 服务器 PCB、光模块、硅光/共封装光学和先进封装需求变成可持续订单；第三，过去一年连续收购 Hprobe、RoBAT、Surfx、ETZ、Cowin DST 后，利润率是否继续被整合费用和产品 mix 稀释。
+
+## 一、公司业务、投资人认知、三年变化和产业链位置
+
+### 1.1 公司定位
+
+Mycronic AB 总部在瑞典，主上市代码为 Nasdaq Stockholm `MYCR`，美国 OTC 代码为 `MICLF`。公司自称为高精度电子生产设备全球供应商，业务覆盖光罩设备、PCB 装配、点胶/涂覆、裸板测试、Die Bonding、磁性测试、光子互连和等离子表面处理。
+
+按 2026Q1 报告，公司目前四个分部为：
+
+| 分部 | 2026Q1 收入 | 收入占比 | 2026Q1 EBIT | EBIT margin | 业务实质 | AI 相关性 |
+|---|---:|---:|---:|---:|---|---|
+| Pattern Generators | SEK 1,291m | 51.6% | SEK 831m | 64.4% | 显示、半导体、多用途光罩写版机和量测/维修系统，产品包括 Prexision、SLX、FPS、MMX、Prexision MMS | 间接高：AI 芯片/先进封装/先进显示需要更多高端光罩；公司称 AI 对激光光罩写版机需求有正面作用 |
+| PCB Assembly Solutions | SEK 318m | 12.7% | SEK 8m | 2.5% | PCB 贴装、喷印、AOI、仓储、软件，原 High Flex，2025Q2 改名 | 低到中：可服务服务器/通信电子制造，但更偏通用 SMT 周期 |
+| High Volume | SEK 408m | 16.3% | SEK 39m | 9.6% | Axxon 等点胶、涂覆、检测和高产能电子制造自动化 | 中：2026Q1 公司称中国内需强，光模块成为新市场；但非纯 AI |
+| Global Technologies | SEK 492m | 19.7% | SEK 119m | 24.1% | PCB Test、Die Bonding、Photonic Interconnects、Magnetic Test、Applied Plasma | 当前最直接：公司明确称 PCB Test 受 AI 应用先进板驱动，Die Bonding 光通信受 AI 数据中心扩张驱动 |
+
+这家公司在产业链的位置是“制造设备层”，不是芯片设计、晶圆代工、封装服务、光模块成品、服务器 OEM 或云厂商。它卖给光罩厂、显示/半导体/电子制造客户、PCB 厂、光通信/硅光/先进封装客户和电子制造厂。对 AI 的收益路径是：AI 基建 capex 先变成 GPU/ASIC/HBM/交换机/光模块/高层 PCB 需求，再变成上游制造设备更新、扩产、良率提升和测试需求。
+
+### 1.2 投资人心中的公司
+
+投资人通常给 Mycronic 较高估值，是因为它兼具三类特征：
+
+- **垄断/寡头型光罩设备利润池**：Pattern Generators 2026Q1 EBIT margin 达 64.4%，TTM EBIT margin 51.2%，远高于普通电子设备公司。交付和订单很波动，但单台价值高、客户验证周期长。
+- **高精密制造设备平台化**：PCB Assembly、High Volume、Global Technologies 让公司从单一光罩周期扩展到更广的电子制造和测试设备。
+- **AI 旁路弹性**：Global Technologies 在 PCB Test 和 Die Bonding 两条线上已经被公司直接关联到 AI 服务器 PCB 与 AI 数据中心高端光模块需求；Pattern Generators 则是 AI 芯片设计迭代和先进封装掩模的间接受益者。
+
+风险也同样明显：Pattern Generators 高毛利但订单/交付极度 lumpiness；PCB Assembly 和 High Volume 受欧洲、美国、中国电子制造周期和关税扰动；Global Technologies 正处于并购整合期，披露颗粒度较低，AI 收入无法直接核验。
+
+### 1.3 最近三年重大变化、转型和收购
+
+过去三年 Mycronic 最大变化，是从传统光罩写版机和 PCB/点胶设备公司，向“光罩 + AI 电子制造/光通信/先进封装测试装配设备平台”扩张。
+
+| 时间 | 事项 | 战略含义 |
+|---|---|---|
+| 2024-04 | 发布 Prexision 8000 Evo，公司称其为面向显示的最先进 mask writer；2025Q1 获首单，2026Q1 交付首台 | 继续巩固高端显示光罩设备利润池，并验证大规格/高精度产品迭代能力 |
+| 2025-03 | 收购法国 Hprobe，进入 MRAM/TMR 磁性器件高速测试 | 形成 Magnetic Test 业务线，潜在连接 MRAM、磁传感器和未来存储/先进器件测试 |
+| 2025-04 | 收购英国 RoBAT，进入 PCB 信号质量快速测试 | 加强 PCB Test，直接连接 AI 服务器、交换机、加速卡用高层 PCB 测试 |
+| 2024-03/04 | 签约并交割德国 Vanguard Automation，增强 Photonic Interconnects / 微光学 3D 打印/光子集成能力 | 面向硅光、光模块、CPO/光子互连等长期方向 |
+| 2025-06 | 收购美国 Surfx Technologies，进入 atmospheric plasma 清洗/活化/氧化物去除 | Applied Plasma 进入先进封装、半导体制程和电子制造表面处理 |
+| 2025Q2 | High Flex 改名为 PCB Assembly Solutions | 反映从“灵活贴装设备”向更完整 PCB assembly equipment / solution 扩张 |
+| 2025Q3 | PCB Assembly 迁入 Stockholm Kista 新址 | 释放 Pattern Generators 和 PCB Assembly 产能、改善生产流 |
+| 2026-01 | 收购德国 ETZ，制造 test probes，整合入 PCB Test | 垂直整合 PCB Test 探针/接口，增强耗材和供应链控制 |
+| 2026Q1 | Cowin DST 获韩国监管批准并纳入 Pattern Generators | 增加显示面板维修、显示和半导体 photomask laser repair 系统 |
+| 2026-04 | 获定制 SLX mask writer 订单，金额 USD 27-30m，交付 2028 | 价格远高于常规 SLX，公司声明这是一次性高价定制，不应作为可复制新品类外推 |
+
+### 1.4 最新股价、估值和盈利质量
+
+估值快照日期：2026-06-11。由于 `MICLF` 为美国 OTC 代码，流动性和实时报价可靠性弱，本报告以主上市 `MYCR.ST / STO:MYCR` 为估值锚，并把 MICLF 视为主上市美元折算的低流动性交易代码。
+
+| 指标 | 2026-06-11 最新公开页面口径 | 备注 |
+|---|---:|---|
+| MYCR.ST 股价 | SEK 295-300 附近；Google Finance 页面显示日内区间约 SEK 294.40-302.80，Investing 页面显示约 SEK 299.80 | 盘中页面快照，需以券商实时报价为准 |
+| MICLF 折算价格 | 约 USD 28 左右 | 用 SEK 295-300 和约 10.5 SEK/USD 粗略折算；OTC 成交价可能偏离 |
+| 市值 | 约 SEK 58.0-58.7bn，约 USD 6.1bn | StockAnalysis / Google Finance 页面口径 |
+| Enterprise value | 约 SEK 55.7-55.9bn | 因公司净现金，EV 低于市值 |
+| TTM P/E | 约 35.1-35.4x | EPS TTM 约 SEK 8.47 |
+| Forward P/E | 约 35.1x | StockAnalysis 页面口径；若 2026 EPS 上修，实际 forward 可能低于页面静态值 |
+| P/S | 约 7.0x | 以 TTM 收入 SEK 8.30bn 计 |
+| TTM 收入 | SEK 8.300bn | 2026Q1 报告 rolling 12 month |
+| 2026Q1 收入增速 | +17% nominal；+32% constant FX | 2026Q1 报告 |
+| TTM 毛利率 | 52.7% | 2026Q1 报告 |
+| TTM EBIT margin | 25.3% | 2026Q1 报告 |
+| TTM 净利率 | 约 19.9%-20.0% | StockAnalysis / Yahoo 页面口径；2026Q1 单季按 EPS 推算净利率约 28%-29%，受 Pattern Generators 高毛利交付影响 |
+
+估值结论：35x P/E、7x P/S 对一家瑞典中型设备公司不便宜，市场已经在给 Pattern Generators 的寡头利润率和 Global Technologies 的 AI 电子/光通信弹性定价。若把它当普通 SMT/点胶设备公司估值，会显著高估；若把它当“直接 AI 数据中心核心 BOM 公司”估值，也会误判，因为大部分收入仍是制造设备交付和售后，不是随 GPU/rack 线性出货。
+
+### 1.5 资产负债表和财务健康度
+
+截至 2026-03-31：
+
+- 现金及现金等价物 SEK 2.722bn。
+- 净现金 SEK 2.321bn，2025 年末为 SEK 1.974bn。
+- 2026Q1 经营现金流 SEK 611m；总现金流 SEK 362m。
+- 2026Q1 投资活动现金流 SEK -220m，其中 ETZ 和 Cowin DST 收购占 SEK -167m。
+- TTM EBITDA SEK 2.450bn，净债务/EBITDA 为负值。
+- 2025 年全年经营现金流 SEK 1.407bn，投资活动 SEK -1.129bn，其中 Hprobe、RoBAT、Surfx 收购占 SEK -920m；年末仍保持净现金 SEK 1.974bn。
+
+财务健康度评估：强。公司可用净现金支撑继续并购、研发和产能迁移，短期没有杠杆压力。主要财务风险不是偿债，而是并购整合造成的利润率波动、收购相关费用、产品 mix 下行、工作资本占用，以及 Pattern Generators 交付节奏导致的季度盈利大幅波动。
+
+## 二、最近五个财报季度：订单、积压、收入、利润率、AI 暴露
+
+### 2.1 集团与分部收入 / 利润率
+
+| 财报季度 | 集团订单 | 集团积压 | 集团收入 / YoY | 集团毛利率 | 集团 EBIT / margin | Pattern Generators 收入 / EBIT margin | PCB Assembly 收入 / EBIT margin | High Volume 收入 / EBIT margin | Global Technologies 收入 / EBIT margin | AI 数据中心收入占比 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| 2026Q1 | 2,529 | 4,707 | 2,503 / +17% | 60.6% | 938 / 37.5% | 1,291 / 64.4% | 318 / 2.5% | 408 / 9.6% | 492 / 24.1% | 未披露；可核验 AI 相关暴露主要在 Global Tech 的 PCB Test/Die Bonding、High Volume 光模块、PG 半导体光罩；估计“直接+强间接”约 15%-30%，低置信 |
+| 2025Q4 | 1,939 | 4,681 | 2,021 / -2% | 46.8% | 342 / 16.9% | 577 / 30.0% | 438 / 13.5% | 448 / 12.3% | 570 / 20.7% | 未披露；GT 管理层称 PCB Test 受 AI PCB 投资、Die Bonding 受 AI 数据中心需求驱动；估计 15%-25% |
+| 2025Q3 | 2,431 | 4,763 | 1,709 / -4% | 47.1% | 255 / 14.9% | 485 / 33.1% | 314 / 6.3% | 499 / 15.8% | 416 / 10.1% | 未披露；GT 明确提到 AI 服务器 PCB 与 AI data center die bonding；估计 12%-22% |
+| 2025Q2 | 1,330 | 4,068 | 2,066 / +35% | 53.4% | 568 / 27.5% | 974 / 55.1% | 328 / 4.3% | 443 / 16.7% | 323 / 3.4% | 未披露；PCB Test 强、Die Bonding 受美中关税不确定影响；估计 8%-18% |
+| 2025Q1 | 2,058 | 4,617 | 2,142 / +27% | 61.1% | 775 / 36.2% | 1,197 / 62.8% | 292 / -4.6% | 330 / 17.9% | 323 / 16.6% | 未披露；PCB Test 受 AI advanced server PCB 驱动，Die Bonding 订单放缓；估计 8%-15% |
+
+注：PCB Assembly Solutions 在 2025Q2 前称 High Flex。上表中“AI 数据中心收入占比”不是公司披露值，而是基于公司对 PCB Test、Die Bonding、High Volume 光模块、Pattern Generators 半导体光罩的描述做的暴露区间估计。严格口径下，公司直接披露的 AI 数据中心收入占比为 0。
+
+### 2.2 订单、交期、取消率和关键业务信号
+
+| 财报季度 | 订单结构和 book-to-bill | Pattern Generators 系统 / 交期 | Global Technologies 订单和 backlog | 交付/取消率判断 | 关键解读 |
+|---|---|---|---|---|---|
+| 2026Q1 | 集团 book-to-bill 约 1.01x；PG 0.46x，PCB 0.90x，High Volume 1.81x，GT 1.86x | Q1 接单 1 台 Prexision 8 Evo、1 台 SLX、1 台 MMX；期末 PG backlog 14 台系统，计划交付覆盖 2026Q2 到 2027Q2；Q1 交付首台 Prexision 8000 Evo、1 台 Prexision 8 Evo、1 台 FPS Evo、4 台 SLX | GT 订单 SEK 915m，同比 +260%；backlog SEK 1.692bn；公司称 PCB Test 需求由 AI 应用先进板驱动，Die Bonding 光通信需求由 AI 数据中心扩张驱动 | 公司未披露取消率。光罩写版机定制化高、交付窗口长，取消率推测低；PCB/High Volume/GT 更受客户 capex 周期、关税和交付排程影响 | 最新最重要季度。AI 相关表述已经从“间接主题”升级为公司明确需求驱动，但收入仍未分拆 |
+| 2025Q4 | 集团 book-to-bill 0.96x；GT 强、PG 低于历史高点 | PG 收到 1 台 Prexision 8 Evo、1 台 FPS6100 Evo、3 台 SLX；PG backlog SEK 2.582bn | GT 订单 SEK 773m，backlog SEK 1.269bn；PCB Test、Die Bonding、Applied Plasma 均表现好 | 未披露取消率；Q4 毛利下滑来自 PG mix 和并购费用，而非明显取消 | AI 服务器 PCB 和 AI 数据中心 die bonding 已在 CEO comments 中出现 |
+| 2025Q3 | 集团 book-to-bill 1.42x，订单强于收入 | PG 收到 1 台 Prexision 8 Evo、2 台 Prexision Lite 8 Evo、2 台 SLX；backlog 19 台系统，计划交付横跨 2025Q4-2027Q4 | GT 订单 SEK 797m，backlog SEK 1.066bn；PCB Test very strong，Die Bonding good demand in AI data center market | 未披露取消率；PG 将一台 SLX 交付从 2026Q3 延到 2027Q4，说明交付和客户排程有波动 | 订单强但 PG 低毛利 mix 导致集团 EBIT margin 降到 14.9% |
+| 2025Q2 | 集团 book-to-bill 0.64x，PG 新系统订单为 0，仅售后服务合同 | PG 未接新系统；收入 SEK 974m，交付推动利润；Cowin DST 签约待韩国审批 | GT 订单 SEK 402m；完成 RoBAT、Surfx；PCB Test 强，Die Bonding 受关税不确定影响 | 取消率未披露；PG 无新系统说明业务天然波动，不等于需求崩塌 | 并购形成 GT 五条业务线：PCB Test、Die Bonding、Photonic Interconnects、Magnetic Test、Applied Plasma |
+| 2025Q1 | 集团 book-to-bill 0.96x | PG 获首台 Prexision 8000 Evo 订单；photomask 市场稳定 | GT 收购 Hprobe；PCB Test 受 advanced servers for AI applications 驱动；Die Bonding 订单放缓 | 未披露取消率；公司称关税对约 5% 销售有直接影响，对 5%-10% 销售有美国基准关税影响 | 2025 年 AI 暴露的起点主要是 PCB Test，而非光罩或 Die Bonding 全面爆发 |
+
+## 三、2026 最新指引、收入占比、产品和重点业务
+
+### 3.1 2026 最新指引和收入占比
+
+Mycronic 在 2026Q1 报告中将 2026 年收入指引从 SEK 8.25bn 上调到 SEK 8.75bn。按 2025 年实际收入 SEK 7.938bn 计算，新指引隐含全年增长约 10.2%。指引上调的直接依据是 Q1 初强订单、多个分部需求健康，以及 Global Technologies 和 High Volume 需求强于此前预期。
+
+2026Q1 收入占比：
+
+| 分部 | 2026Q1 收入 | 占集团收入 | 同比增长 | 最新侧重点 |
+|---|---:|---:|---:|---|
+| Pattern Generators | 1,291 | 51.6% | +8% | 交付首台 Prexision 8000 Evo、4 台 SLX 等，仍是利润核心 |
+| PCB Assembly Solutions | 318 | 12.7% | +9% | 欧洲和美国弱，客户等待终端订单确认，利润率仅 2.5% |
+| High Volume | 408 | 16.3% | +24% | 中国消费电子强，光模块成为新市场；泰国新工厂首批设备组装 |
+| Global Technologies | 492 | 19.7% | +52% | PCB Test 和 Die Bonding 直接受 AI advanced boards / high-end transceivers 拉动，订单 +260% |
+
+最突出的业务是两层结构：短期利润核心仍是 Pattern Generators；增量叙事和 AI 弹性核心是 Global Technologies，尤其 PCB Test、Die Bonding、Photonic Interconnects 和 Applied Plasma。High Volume 的光模块点胶/自动化是潜在小业务，值得跟踪，但公司未单独披露。
+
+### 3.2 产品谱系和业务映射
+
+| 业务 | 重点产品/型号 | 对应应用 | 利润率和增速判断 | 是否重点跟踪 |
+|---|---|---|---|---|
+| Pattern Generators | Prexision 8000 Evo、Prexision 8 Evo、Prexision Lite 8 Evo、SLX、FPS 6100 Evo、MMX、Prexision MMS、Cowin DST laser repair / panel repair | 显示光罩、半导体光罩、多用途光罩、光罩量测和维修 | 2026Q1 PG 毛利率 77.2%，EBIT margin 64.4%；单台订单从常规 SLX USD 5-7m 到一次性定制 SLX USD 27-30m；收入高度 lumpy | 高 |
+| PCB Test | RoBAT bare board / signal quality test、ETZ test probes/interface、原 PCB Test back-drill tests | AI 服务器/交换机/加速卡先进 PCB、东南亚 PCB 产能、裸板测试 | 2026Q1 GT 订单 +260%，backlog SEK 1.692bn；公司明确点名 advanced boards used in AI applications | 高 |
+| Die Bonding | MRSI-S-HVM、MRSI-HVM、MRSI-LEAP、MRSI-H、MRSI-705、MRSI-175Ag、MRSI-A-L Active Aligner | 光模块、AOC、光器件、硅光、微电子、wafer-level packaging | 2026Q1 光通信需求强；MRSI-S-HVM 面向 integrated photonics volume manufacturing，MRSI-LEAP 高速 die bonder 吞吐 >1,000 units/hour | 高 |
+| Photonic Interconnects | Vanguard Automation SONATA 1000 / 1000 LIFT、Lithography for Micro-Assembly | 微光学、硅光集成、光子互连、CPO/光引擎长期方向 | 当前收入小，长期弹性高；客户设计导入周期长 | 高但小 |
+| Applied Plasma | Surfx atmospheric plasma cleaning / activation / oxide removal | 先进封装、半导体处理、电子制造表面处理 | 当前收入小；应用横跨 advanced packaging 和 semiconductor processing | 中高 |
+| High Volume 点胶/涂覆 | MYD50、MYD10、MY700JD、MYC10、MYC50、MYC60、Axxon 设备 | 消费电子、汽车、光模块、航天 | Q1 High Volume 订单 SEK 737m、backlog SEK 1.011bn；光模块是新市场，但公司未拆收入 | 中 |
+| PCB Assembly Solutions | MYPro S20/S30、MY700JP/JX/JD、MYPro A40/A41、MYPro I50/I91、MYTower、MYPro software | SMT 贴装、喷印、AOI、仓储、电子制造线 | 通用电子周期属性更强，2026Q1 EBIT margin 2.5% | 低到中 |
+
+### 3.3 低优先级或本报告跳过的非 AI 业务
+
+以下业务仍可能贡献收入，但对 AI 数据中心主线弹性较低，本报告后续只在财务层面保留，不做重点预测：
+
+- 面向一般消费电子或工业电子的传统 SMT 贴装、喷印和仓储软件。
+- 非服务器/非高端通信板的通用 PCB assembly 产线。
+- 中国消费电子周期驱动的普通点胶/涂覆设备。
+- 显示面板相关的常规 photomask writer 需求中，与 OLED/高端显示迭代有关但不直接映射 AI 的部分。
+- 医疗、航天、传感器、RF 等非 AI 应用中的 Die Bonding 和测试设备。
+
+## 四、高增长或关键产品：当前收入贡献、增速、AI 重要性、供需和定价权
+
+| 关键产品/业务 | 当前收入贡献 | 当前增速 / 订单 | 对 AI 基建技术栈重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---:|---|---|---|---|---|
+| Pattern Generators：SLX / Prexision / FPS / MMX | 2026Q1 收入 SEK 1.291bn；TTM SEK 3.326bn；Q1 backlog SEK 1.888bn | Q1 收入 +8%；Q1 接 3 台系统；Q1 交付 7 台系统；2026-04 定制 SLX 订单 USD 27-30m，2028 交付 | 高但间接。AI GPU/ASIC/HBM tape-out、先进封装掩模、部分先进 photomask 二层写入均依赖光罩生态 | 中高。设计迭代和 mask shop capex 必须先于量产，但不是每个 data center 项目直接采购 | 高。高端系统交期覆盖 2026-2028，客户验证和定制长 | 高。激光光罩写版机 niche 强，但最先进 EUV mask writer 还有 IMS/NuFlare/JEOL 等 e-beam/MBMW 竞争 |
+| Global Technologies：PCB Test / RoBAT / ETZ | 归入 GT；2026Q1 GT 收入 SEK 492m、订单 SEK 915m、backlog SEK 1.692bn；单独 PCB Test 未披露 | 公司称 PCB Test demand strong，由 AI 应用先进板和东南亚投资驱动；2025Q3/Q4/2026Q1 连续强 | 中高。AI 服务器、交换机、加速卡高层 PCB 和 back-drill / signal integrity 测试是良率 gate | 高。AI server PCB 产能扩张和东南亚转移在 2025-2026 正在发生 | 高。订单和 backlog 增长快，ETZ 探针垂直整合说明耗材/接口有约束 | 中高。专业 PCB test 和 probes 有客户验证，但替代供应商存在 |
+| Global Technologies：Die Bonding / MRSI 光通信与硅光 | GT 内部未拆；2026Q1 GT 收入 SEK 492m；MRSI 产品面向 photonics、optical transceivers、silicon photonics、WLP | Q1 公司称 optical communications segment in Die Bonding 强劲，受 AI data center expansion 和 high-end transceivers 拉动 | 高。800G/1.6T、硅光、CPO/光引擎需要高精度 die attach、active alignment、dispense | 高。1.6T 光模块 2026 放量，CPO/光 I/O 2027-2028 设计导入 | 中高。高精度 die bonding 和 active alignment 线体验证周期长 | 中高。MRSI 在光子/光模块高精度 die bonding 有位置，但 Besi、ASMPT、K&S、SET、ficonTEC 等竞争强 |
+| Photonic Interconnects：Vanguard SONATA / 微光学 3D 集成 | 归入 GT；收入小且未拆 | 2024 收购后仍处设计导入/整合阶段 | 中高但偏长期。若 CPO/硅光/3D 微光学成为主流，价值提升 | 中。2026 仍以可插拔 800G/1.6T 为主，CPO 更偏 2027+ | 中。客户认证慢，技术路线未完全收敛 | 中高。技术差异化强，但市场规模和商业化节奏不确定 |
+| Applied Plasma：Surfx | 归入 GT；2025-06 收购；收入小且未拆 | 公司称应用于 advanced packaging、semiconductor processing 和 electronics manufacturing；Q4 Applied Plasma good development | 中。先进封装表面活化、清洗、氧化物去除对良率重要 | 中。混合键合/先进封装扩张提高需求，但 2026 主线仍是 CoWoS/TCB/检测 | 中。若客户工艺认证通过，切换慢 | 中。EVG、SUSS、TEL、AMAT、等离子设备供应商和本土设备商均是替代 |
+| High Volume：光模块点胶/涂覆/自动化 | 2026Q1 High Volume 收入 SEK 408m，订单 SEK 737m，backlog SEK 1.011bn | Q1 订单 +33%，收入 +24%；公司称光模块是新市场 | 中。光模块封装中的点胶、固化、涂覆、检测影响可靠性 | 高。800G/1.6T 扩产正在发生 | 中高。若切入大客户线体，订单弹性好 | 中。点胶/涂覆竞争者多，核心在客户工艺绑定与本地交付 |
+
+## 五、一年后三情景预测：收入、增速、重要性、供需和定价权
+
+以下预测口径为 2026Q2-2027Q1 滚动一年或 2027 年前半段 run-rate，不是公司指引。汇率粗略按 SEK 10.5/USD，仅用于美元量级换算。
+
+| 关键业务 | 情景 | 一年后收入贡献预测 | 收入增速 | AI 重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---|---:|---:|---|---|---|---|
+| Pattern Generators | 基准 | SEK 3.2-3.6bn 年化，约 USD 305-340m | +0%-8% | 高但间接 | 中高 | 中高 | 高 |
+| Pattern Generators | 乐观 | SEK 3.7-4.2bn，约 USD 350-400m | +10%-25% | 高 | 高 | 高 | 高 |
+| Pattern Generators | 极度乐观 | SEK 4.3-5.0bn，约 USD 410-475m | +30%-50% | 高 | 高 | 很高 | 很高，但受产能和交付排程约束 |
+| PCB Test / RoBAT / ETZ | 基准 | GT 内 PCB Test 年化 SEK 0.7-0.9bn（估计） | +20%-35% | 中高 | 高 | 高 | 中高 |
+| PCB Test / RoBAT / ETZ | 乐观 | SEK 1.0-1.3bn（估计） | +50%-80% | 高 | 很高 | 很高 | 中高 |
+| PCB Test / RoBAT / ETZ | 极度乐观 | SEK 1.4-1.8bn（估计） | +100% 以上 | 高 | 很高 | 极高 | 高，但取决于大客户 PCB 厂认证 |
+| Die Bonding / optical communications | 基准 | SEK 0.45-0.65bn（估计） | +15%-30% | 高 | 高 | 中高 | 中高 |
+| Die Bonding / optical communications | 乐观 | SEK 0.75-1.05bn（估计） | +50%-90% | 高 | 很高 | 很高 | 中高 |
+| Die Bonding / optical communications | 极度乐观 | SEK 1.2-1.6bn（估计） | +100% 以上 | 很高 | 很高 | 极高 | 高，但需 1.6T/CPO/硅光客户设计导入兑现 |
+| Photonic Interconnects / Vanguard | 基准 | SEK 50-150m（估计） | 小基数高增 | 中高，偏 2027+ | 中 | 中 | 中高 |
+| Photonic Interconnects / Vanguard | 乐观 | SEK 200-400m（估计） | 数倍增长 | 高 | 中高 | 中高 | 高 |
+| Photonic Interconnects / Vanguard | 极度乐观 | SEK 500-800m（估计） | 数倍增长 | 很高 | 高 | 高 | 高，但商业化证据需更多 |
+| Applied Plasma / Surfx | 基准 | SEK 80-180m（估计） | +20%-40% | 中 | 中 | 中 | 中 |
+| Applied Plasma / Surfx | 乐观 | SEK 200-350m（估计） | +70%-120% | 中高 | 中高 | 中高 | 中 |
+| Applied Plasma / Surfx | 极度乐观 | SEK 400-700m（估计） | 数倍增长 | 高 | 高 | 高 | 中高，需先进封装认证放量 |
+| High Volume 光模块相关 | 基准 | High Volume 总年化 SEK 1.8-2.0bn，其中光模块相关 SEK 0.15-0.35bn（估计） | 总体 +5%-15%，光模块高增 | 中 | 高 | 中高 | 中 |
+| High Volume 光模块相关 | 乐观 | 总 SEK 2.1-2.5bn，光模块相关 SEK 0.45-0.75bn | 总体 +20%-40% | 中高 | 高 | 高 | 中 |
+| High Volume 光模块相关 | 极度乐观 | 总 SEK 2.7-3.2bn，光模块相关 SEK 0.9-1.3bn | 总体 +50%+ | 高 | 很高 | 很高 | 中，竞争会压制长期溢价 |
+
+情景判断：最容易兑现的是 PCB Test 和 High Volume 光模块设备订单，因为公司 2026Q1 已经给出强订单与需求描述。最有长期可选性的，是 Die Bonding / Photonic Interconnects 对 1.6T、硅光和 CPO 的导入。Pattern Generators 仍是现金牛，但一年后的增长更受交付时点和单台系统 mix 影响，不能简单按 AI capex 线性外推。
+
+## 六、BOM、每 MW / 每 rack / 每 GPU / 每 optical port 内容量与价格传导
+
+### 6.1 先明确：Mycronic 设备通常不进入 AI rack 的物理 BOM
+
+Mycronic 的产品是制造设备和测试设备，不是服务器、GPU、交换机或光模块里的元器件。因此：
+
+- 每 MW / 每 rack / 每 GPU 的 Mycronic “物理 BOM 含量”约为 0。
+- 可讨论的是“制造设备 amortized capex content”，即一台设备在若干年折旧、服务若干条产线或若干产品后，摊到每个芯片、每个光模块、每块 PCB 或每个 optical port 的制造设备成本。
+- 对 Mycronic 投资更有意义的指标是：订单金额、交付窗口、客户认证、设备利用率、售后合同、装机基数、单台 ASP、毛利率和积压，而不是 rack BOM。
+
+### 6.2 价格传导链
+
+| AI 基建需求 | 中游产品 | 制造/测试瓶颈 | Mycronic 可捕获的位置 | 价格传导强度 |
+|---|---|---|---|---|
+| GPU/ASIC/HBM tape-out 增加 | 先进逻辑芯片、HBM、advanced packaging masks | 光罩写版、光罩量测、维修、mask shop capex | SLX / Prexision / FPS / MMX / MMS / Cowin DST repair | 中高：设备单价高、客户验证长，但不随每个 GPU 线性收费 |
+| CoWoS/2.5D/RDL/interposer 增长 | 先进封装基板、RDL、interposer | 掩模、表面处理、良率、清洗/活化 | Pattern Generators + Applied Plasma | 中：先进封装扩张带动，但 Mycronic 不是 TCB/HBM 主设备龙头 |
+| 800G/1.6T 光模块扩产 | 光模块、硅光、光引擎、TOSA/ROSA、AOC | die attach、active alignment、点胶、微光学集成 | MRSI die bonders、MRSI-A-L、Vanguard SONATA、High Volume 点胶 | 高：公司 Q1 已称光通信需求由 AI data center expansion 驱动 |
+| AI 服务器/交换机 PCB 升级 | 高层数 PCB、backplane、accelerator board、switch board | back-drill、signal integrity、bare board electrical test、探针 | RoBAT、ETZ、PCB Test | 高：公司 Q1 明确称 advanced boards used in AI applications 驱动需求 |
+| 服务器/光模块电子制造 | PCBA、模块封装、涂覆/点胶 | SMT、喷印、AOI、点胶、涂覆 | PCB Assembly Solutions、High Volume | 中：竞争更激烈，通用电子周期更强 |
+
+### 6.3 每单位“真实内容量”的可用估算
+
+| 口径 | Mycronic 真实内容量 | 可用估算 | 结论 |
+|---|---|---|---|
+| 每 MW 数据中心 | 物理 BOM 为 0 | 若 1MW IT load 对应数百 GPU，Mycronic 工具只通过芯片/光模块/PCB 制造设备折旧间接摊入 | 不适合用 MW 线性估 Mycronic 收入 |
+| 每 rack | 物理 BOM 为 0 | 对 NVL72 级 100kW+ rack，Mycronic 设备只在 GPU mask、PCB test、光模块 assembly 中间接出现 | rack 数增长只能作为光模块/PCB 设备需求 proxy |
+| 每 GPU / ASIC | 物理 BOM 为 0 | 光罩写版设备摊销到单颗芯片通常极低，更多对应每次 tape-out / mask set / mask shop capex | Mycronic 收入与 design activity、mask complexity、mask shop capex 更相关 |
+| 每 optical port | 物理 BOM 为 0 | 1.6T 光模块 2026 行业 ASP 约 USD 1,400-2,200；若一台高精度 die bonder / aligner 以 USD 1-3m 级别、5 年折旧、每年 10-100 万光引擎/模块产出粗估，制造设备摊销约 USD 1-30/port，取决于节拍、良率、稼动和设备组合 | 对 Mycronic 最有意义；1.6T/CPO 放量会拉动产线设备，而非每 port 直接收费 |
+| 每块 AI server/switch PCB | 物理 BOM 为 0 | PCB Test/探针/信号质量测试摊销可能是每板数美元到数十美元量级，取决于板层数、测试时间、良率、探针寿命和返工率 | 高层 PCB 越复杂，测试设备 value capture 越强 |
+| 每个 advanced packaging platform | 物理 BOM 为 0 | RDL/interposer/mask/表面处理和良率验证对设备 capex 敏感，但具体摊销需客户工艺数据 | 适合以项目/产线认证跟踪，不适合按单颗 GPU 机械推算 |
+
+### 6.4 当前产能能力、供应链采纳和认证阶段
+
+| 关键业务 | 当前收入/产能能力（美元计） | 供应链采纳程度 | 认证/交付阶段 |
+|---|---:|---|---|
+| Pattern Generators | TTM 收入 SEK 3.326bn，约 USD 317m；2026Q1 单季约 USD 123m | 高。公司称其为 display 和 semiconductor 激光 mask writer 领先供应商；PG backlog 14 台系统 | 已量产交付；Q1 交付首台 Prexision 8000 Evo；订单交付表覆盖 2026Q2-2027Q2；2026-04 定制 SLX 订单交付 2028 |
+| PCB Test / RoBAT / ETZ | GT TTM 收入 SEK 1.801bn，约 USD 172m；PCB Test 未拆，估计年化数千万美元到 1 亿美元级 | 中高。公司称 AI 应用先进板和东南亚投资驱动需求；ETZ 原本约 85% 销售给 Mycronic，收购后垂直整合 | 多客户量产使用，认证体现为 PCB 厂测试流程导入、探针/接口耗材匹配 |
+| Die Bonding / MRSI | GT 内部未拆；估计年化数千万美元级 | 中高。产品覆盖 optical transceivers、silicon photonics、AOC、WLP；Q1 公司称光通信需求强 | 客户产线 qualification；AI 高端 transceiver 客户名未披露 |
+| Photonic Interconnects / Vanguard | 目前小，估计千万美元以下到低千万美元级 | 低到中。技术先进但商业化早期 | 设计导入/样线/客户验证阶段，CPO 和硅光路线仍在演进 |
+| Applied Plasma / Surfx | 小，估计千万美元级 | 中。应用于 advanced packaging、semiconductor processing、electronics manufacturing | 工艺认证型设备，客户认证后切换成本提高 |
+| High Volume 光模块点胶 | High Volume TTM SEK 1.798bn，约 USD 171m；光模块子业务未拆 | 中。2026Q1 公司称光模块是新市场 | 正在导入/放量；具体客户和认证阶段未披露 |
+
+## 七、一年后产能能力、供应链采纳和认证阶段预测
+
+| 业务 | 情景 | 一年后产能/收入能力（美元计） | 供应链采纳预测 | 认证阶段预测 |
+|---|---|---:|---|---|
+| Pattern Generators | 基准 | USD 300-350m/年 | 保持现有主流 mask shop / display / semiconductor 客户 | 已认证产品继续交付，少量新系统验收 |
+| Pattern Generators | 乐观 | USD 360-420m/年 | 半导体光罩和 advanced display 客户补单，SLX/Prexision mix 改善 | 更多 2027 交付排入 backlog；半导体 inspection 新产品若推进则进入早期客户验证 |
+| Pattern Generators | 极度乐观 | USD 430-500m+/年 | AI 芯片迭代、先进封装掩模、光罩维修带来多客户急单 | 交期继续拉长到 2028，客户预付款/长交期订单增加 |
+| PCB Test / RoBAT / ETZ | 基准 | USD 70-90m/年 | AI PCB 厂和东南亚扩产持续采用 | 客户量产线认证增加，ETZ 探针供应内化 |
+| PCB Test / RoBAT / ETZ | 乐观 | USD 100-125m/年 | 服务器/交换机高层板测试成为主要增长线 | RoBAT signal quality test 和 ETZ interface/probe 成为多客户标准配置之一 |
+| PCB Test / RoBAT / ETZ | 极度乐观 | USD 135-170m/年 | 头部 AI PCB 产能转移和扩产形成持续订单 | 多个大客户产线认证完成，耗材/服务收入提升 |
+| Die Bonding / MRSI | 基准 | USD 45-65m/年 | 800G/1.6T 光模块客户稳步扩线 | 光模块量产线认证延续，部分硅光客户导入 |
+| Die Bonding / MRSI | 乐观 | USD 75-100m/年 | 1.6T 光模块和 silicon photonics line 明显加速 | 高精度 die bonder / active aligner 获更多量产资格 |
+| Die Bonding / MRSI | 极度乐观 | USD 115-150m/年 | CPO/光引擎和硅光封装带来额外线体订单 | 从样线/小批量进入多客户量产认证 |
+| Photonic Interconnects / Vanguard | 基准 | USD 5-15m/年 | 少量设计导入 | 研发/试产 |
+| Photonic Interconnects / Vanguard | 乐观 | USD 20-40m/年 | 若硅光/CPO 客户采纳，进入多项目验证 | 小批量产线认证 |
+| Photonic Interconnects / Vanguard | 极度乐观 | USD 50-75m/年 | 成为若干光子互连客户关键工艺工具 | 量产认证初步兑现 |
+| Applied Plasma / Surfx | 基准 | USD 8-18m/年 | 先进封装和电子制造客户逐步采用 | 单点工艺认证 |
+| Applied Plasma / Surfx | 乐观 | USD 20-35m/年 | 与先进封装/半导体处理客户绑定 | 多工艺认证 |
+| Applied Plasma / Surfx | 极度乐观 | USD 40-65m/年 | 混合键合/先进封装清洗活化需求加速 | 量产线认证增强，服务/耗材拉动 |
+| High Volume 光模块点胶 | 基准 | USD 15-35m/年 | 光模块新市场继续贡献订单 | 线体导入 |
+| High Volume 光模块点胶 | 乐观 | USD 45-70m/年 | 多个光模块厂扩线采用 | 量产线重复采购 |
+| High Volume 光模块点胶 | 极度乐观 | USD 85-120m/年 | 1.6T 光模块扩产明显受益 | 客户二次扩产和区域复制 |
+
+## 八、订单积压、真实订单和未来一年业务增速推断
+
+### 8.1 真实订单和积压
+
+截至 2026Q1：
+
+| 分部 | 订单 | 收入 | Book-to-bill | 积压 | 积压 / TTM 收入 | 判断 |
+|---|---:|---:|---:|---:|---:|---|
+| Pattern Generators | 597 | 1,291 | 0.46x | 1,888 | 0.57x | Q1 大量交付消耗积压；仍有 14 台系统排到 2027Q2，另有 2026-04 定制 SLX 交付 2028 |
+| PCB Assembly Solutions | 287 | 318 | 0.90x | 116 | 0.08x | 周期偏弱，欧洲/美国客户等待终端订单 |
+| High Volume | 737 | 408 | 1.81x | 1,011 | 0.56x | 强订单，光模块成为新市场，泰国工厂开始组装设备 |
+| Global Technologies | 915 | 492 | 1.86x | 1,692 | 0.94x | 最强订单弹性；AI advanced boards 和 high-end transceivers 是可验证需求驱动 |
+| 集团 | 2,529 | 2,503 | 1.01x | 4,707 | 0.57x | 整体订单与收入平衡，但内部结构明显向 GT/High Volume 倾斜 |
+
+### 8.2 订单和供给约束推断
+
+- **Pattern Generators**：交付窗口最清晰。2026Q1 末 14 台系统计划交付：2026Q2 6 台、2026Q3 3 台、2026Q4 1 台、2027Q1 3 台、2027Q2 1 台。之后 2026-04 又收到一台定制 SLX，交付 2028。该业务供给约束来自工程/装配/客户验收，而非普通库存。
+- **Global Technologies**：Q1 backlog SEK 1.692bn，几乎等于 TTM 收入 SEK 1.801bn，显示订单覆盖非常强。需求驱动来自 AI PCB、东南亚 PCB 投资、光通信 high-end transceivers。供给约束更可能在客户产线认证、探针/接口、工程服务、并购整合，而非单一硬件产能。
+- **High Volume**：backlog SEK 1.011bn，高于 TTM 收入的 56%，且泰国工厂开始组装设备，说明公司在做地理供应链和关税风险对冲。光模块新市场若形成重复订单，High Volume 可能成为小型 AI 弹性项。
+- **PCB Assembly Solutions**：积压低、欧美弱，短期不是增长主引擎。
+- **取消率**：公司未披露。定制化光罩写版机取消率推测较低，因客户通常需要长验证、定金、定制工程和固定交付窗口；PCB/High Volume/GT 的订单取消或延迟风险高于 PG，受客户 capex 和关税影响更大。
+
+### 8.3 未来一年集团增速三情景
+
+| 情景 | 未来一年收入预测 | 对 2025 年收入增长 | EBIT margin | 主要假设 |
+|---|---:|---:|---:|---|
+| 基准 | SEK 8.75-9.10bn | +10%-15% | 24%-27% | 公司 2026 指引基本兑现；PG 正常交付，GT backlog 转收入，High Volume 保持强订单，PCB Assembly 温和恢复 |
+| 乐观 | SEK 9.40-10.20bn | +18%-29% | 26%-30% | GT 订单转化快，AI PCB 和 optical communications 订单持续；High Volume 光模块/中国内需强；PG mix 不恶化 |
+| 极度乐观 | SEK 10.50-11.80bn | +32%-49% | 29%-34% | Pattern Generators 追加高 ASP 订单和交付提前，GT AI PCB/光通信订单连续超预期，High Volume 光模块形成大客户复制，收购费用下降 |
+
+最现实的增速上修来源是 Global Technologies 和 High Volume，而不是 Pattern Generators 单独爆发。PG 的单季利润率极高，但订单和交付天然波动，且 2026Q1 的 64.4% EBIT margin 不应机械年化。
+
+## 九、竞争格局、技术路线、替代风险和客户替换成本
+
+### 9.1 Pattern Generators / 光罩设备
+
+Mycronic 在激光光罩写版机中地位强，官方产品页称其是 display 和 semiconductor industries 的 laser-based mask writers 领先供应商，覆盖 Prexision、SLX、FPS 和 mask metrology。竞争和替代包括：
+
+- **E-beam / multi-beam mask writers**：IMS Nanofabrication、NuFlare、JEOL 等在最先进 EUV / leading-edge photomask 写版中更关键。
+- **光罩生态**：TOPPAN、DNP、Photronics、HOYA、AGC、KLA、Lasertec、ZEISS 等分别占据 mask shop、blank、inspection、metrology。
+- **替代方案**：部分 packaging/direct-write/maskless 工艺、客户内部设备/流程、High-NA EUV 变化、curvilinear/ILT 数据处理和 actinic inspection 约束。
+
+主流判断：激光 mask writer 不会取代最先进 EUV 多束电子束写版，但在显示、半导体部分层、second-layer、成熟/特殊工艺、advanced packaging masks 和维修/量测中仍有长期位置。AI 趋势对它是正面间接需求，而不是“每颗 AI 芯片都必须新增一台 Mycronic 工具”的线性关系。
+
+客户替换成本：高。mask writer 涉及客户工艺、良率、校准、服务和长期装机维护。替换供应商会影响 photomask qualification 和产线节拍。
+
+### 9.2 PCB Test / RoBAT / ETZ
+
+主要竞争对手包括 Takaya、SPEA、Seica、Keysight、Teradyne、fixture/probe/interface 供应商，以及 PCB 厂内部测试方案。Mycronic 的优势在于 RoBAT 信号质量测试、ETZ 探针/接口内化、PCB Test 已在 AI advanced boards 需求中获得订单验证。
+
+技术主流性：高层数 AI 服务器/交换机 PCB 的高速信号完整性、back-drill、via stub、阻抗和电气测试只会更重要。PCIe、Ethernet、NVLink、retimer/switch board、800G/1.6T 光模块载板都提高测试复杂度。
+
+风险：客户项目不披露，无法确认是否进入头部 NVIDIA/ASIC/交换机供应链；PCB 厂 capex 受周期和地区政策影响；测试设备竞争相对分散，价格权不如 PG。
+
+客户替换成本：中高。测试流程一旦写入客户良率体系，替换需要重新验证探针、fixture、测试程序和误判/漏判率。
+
+### 9.3 Die Bonding / 光通信 / 硅光 / Photonic Interconnects
+
+主要竞争对手包括 Besi、ASMPT、Kulicke & Soffa、SET、Shibaura、Toray、AMICRA/ficonTEC、Palomar、PI，以及客户内部工具和定制自动化。Mycronic/MRSI 的相对强项在高精度光子、光模块、微电子和多工艺 die bonding，而不是 HBM TCB 或主流混合键合最核心位置。
+
+技术主流性：800G/1.6T 可插拔光模块 2026 年仍是主流放量路径；CPO/硅光/光 I/O 更偏 2027-2028 逐步商业化。MRSI-S-HVM 面向 integrated photonics volume manufacturing，MRSI-LEAP 高速 die bonder 吞吐超过 1,000 units/hour，MRSI-175Ag 用于 optical modules 和 semiconductor packaging，这些都符合光互联升级方向。
+
+风险：光模块封装设备的客户认证周期长；CPO 是否大规模替代可插拔模块仍有时间不确定；客户可能使用 ASMPT/Besi/AMICRA/ficonTEC 或内部自动化；中国光模块厂也可能采用本土设备。
+
+客户替换成本：中高。die attach、active alignment、epoxy dispense 和微光学耦合直接影响耦合效率、良率和可靠性，量产验证后切换成本较高。
+
+### 9.4 Applied Plasma / Surfx
+
+竞争对手包括 EVG、SUSS、TEL、AMAT、等离子表面处理专业厂商和本土半导体/封装设备公司。Surfx 的机会在 atmospheric plasma cleaning、active oxide removal、surface activation，和 advanced packaging / semiconductor processing / electronics manufacturing 相关。
+
+技术主流性：先进封装和潜在混合键合对表面洁净度、活化、氧化物去除要求提高，方向正确。但 Mycronic 在此不是唯一供应商，也不是先进封装 capex 最大受益方。
+
+客户替换成本：中。工艺认证后有粘性，但若客户采用整线方案或更成熟供应商，Surfx 的份额不确定。
+
+### 9.5 PCB Assembly / High Volume
+
+竞争对手包括 ASMPT SMT Solutions、Panasonic、Fuji、Yamaha、Juki、Hanwha、Nordson、Musashi、Scheugenpflug、PVA、Camalot、国产点胶/涂覆设备厂等。Mycronic 的 MYPro、MY700、AOI、MYTower 和 Axxon/High Volume 点胶设备在灵活生产和高精度点胶有位置，但整体竞争远比 PG 激烈。
+
+技术主流性：AI 服务器和光模块确实需要更复杂 PCBA、点胶、涂覆、检测，但这些设备不是最稀缺 capex。High Volume 光模块新市场值得跟踪，PCB Assembly 的通用 SMT 则更多受电子制造周期影响。
+
+客户替换成本：中。整线软件、工艺配方和服务有粘性，但客户可在多个 SMT/dispensing 平台之间切换。
+
+## 十、与项目内行业研究的交叉验证
+
+项目内 `行业调研/` 的行业资料对 Mycronic 的校准结论如下：
+
+1. `行业调研_高端光罩与先进封装掩模_2026-06-11.md` 指出，高端光罩不是 AI 数据中心 capex 中金额最大的环节，但在 2026-2027 AI 芯片迭代中是关键 gate；2026 路径是 Low-NA EUV + advanced DUV + advanced packaging RDL/interposer masks，2027 乐观路径扩展到 Rubin/MI400/HBM4/ASIC、CoWoS 大尺寸、glass/PLP。这与 Mycronic PG 的间接受益逻辑一致，也约束了不能把 AI data center capex 直接映射成 Mycronic 收入。
+2. 同一光罩报告把 mask writer 层列入 IMS/NuFlare/JEOL/Mycronic，并强调高订单价和长交期。这与 Mycronic 定制 SLX USD 27-30m、交付 2028，以及 PG backlog 系统交付横跨 2026-2027 相符。
+3. `行业调研_先进封装设备与混合键合_2026-06-11.md` 指出，2026 主线仍是 CoWoS/2.5D、HBM stacking、TCB、temp bond/debond、thin wafer、KGD inspection/metrology，纯 hybrid bonding 更偏 2027+。因此 Mycronic 的 Applied Plasma、Die Bonding、Photonic Interconnects 是先进封装旁路机会，但不是 2026 最大先进封装核心设备。
+4. `行业调研_AI芯片先进封装_2026-06-11.md` 指出，2026 AI 芯片先进封装核心瓶颈是 CoWoS/2.5D、HBM3E/HBM4、ABF/substrate、test/KGD/SLT、thermal/power。Mycronic 与 test、mask、部分光互联/封装设备相关，但不能替代 TSMC、HBM、substrate 或主流 TCB/hybrid bonding 逻辑。
+5. `行业调研_800G_1.6T可插拔光模块_2026-06-11.md` 给出 2026 AI 光模块市场约 USD 26bn、1.6T >5m units、ASP USD 1,400-2,200 的行业框架；Mycronic Q1 报告中 Die Bonding 光通信和 High Volume 光模块新市场的强需求，与该行业趋势吻合。
+6. `AI产业链全局图谱与口径字典_2026-06-11.md` 强调不能把 capex、RPO、GPU 收入、组件收入重复相加，公司研究必须拆清层级、确认收入暴露、利润率和 attach-rate。Mycronic 的正确口径正是制造设备层的间接 AI 暴露，而非数据中心 BOM 公司。
+
+## 十一、关键风险清单
+
+- **AI 收入不可验证风险**：公司没有披露 AI 数据中心收入占比。管理层提到 AI advanced boards、AI data center optical communications，但没有客户名、订单金额分拆或项目名。
+- **Pattern Generators 交付波动风险**：Q1 2026 的 64.4% EBIT margin 来自高价值系统交付和 mix，不能年化；Q3/Q4 2025 已显示 PG mix 变差时集团利润率会显著下滑。
+- **并购整合风险**：Vanguard、Hprobe、RoBAT、Surfx、ETZ、Cowin DST 在 2024-2026 年集中并入，2025 年收购相关费用 SEK 196m，2026Q1 仍有费用和 revaluation 影响。
+- **客户和地缘风险**：亚洲收入占 TTM SEK 6.006bn，占集团约 72%；关税、出口控制、美国/中国电子制造投资节奏都会影响订单。
+- **竞争和替代风险**：PG 在 laser mask writer niche 强，但最先进 EUV mask writer 不由 Mycronic 单独主导；Die Bonding/光通信封装面对 Besi、ASMPT、ficonTEC、K&S 等；PCB Test 和 dispensing 竞争更分散。
+- **估值风险**：35x P/E、7x P/S 对未来增长容错较低。若 GT AI 订单转化慢，或 PG 进入低交付/低毛利 mix 季度，估值压缩会很快。
+- **数据口径风险**：MICLF OTC 流动性较弱，估值应以 `MYCR.ST` 主上市为准；美元折算受 SEK/USD 波动影响。
+
+## 十二、跟踪指标和投资核验清单
+
+未来 2-4 个季度最该跟踪的指标：
+
+1. **Global Technologies backlog**：2026Q1 已到 SEK 1.692bn，若 2026Q2/Q3 继续上升，AI PCB/光通信订单真实性增强；若快速下滑，则可能是一次性订单。
+2. **GT 收入和 EBIT margin**：Q1 24.1% 含 SEK 22m Vanguard contingent consideration 重估收益，需看剔除一次性后能否维持 15%-20%+。
+3. **PCB Test 客户/区域信号**：是否持续提到 AI server PCB、advanced boards、Southeast Asia 投资、back-drill/signal quality tests。
+4. **Die Bonding optical communications**：是否继续点名 high-end transceivers、silicon photonics、OFC 客户反馈、1.6T 扩产。
+5. **High Volume 光模块订单**：Q1 首次把 optical modules 作为新市场，应看 Q2/Q3 是否变成重复订单和收入。
+6. **PG 交付排程变化**：14 台系统交付表是否延迟；2026-04 定制 SLX 2028 交付是否有后续类似高 ASP 订单。
+7. **PG 半导体 inspection 新产品**：2025Q4 公司提到开发新 semiconductor photomask inspection product，若进入客户验证，可能扩展 TAM。
+8. **现金和并购费用**：净现金是否继续维持；收购费用是否下降；Hprobe/RoBAT/Surfx/ETZ/Cowin DST 是否提升有机增速。
+
+## 十三、来源和链接
+
+### 公司官方财报、公告和产品页
+
+- Mycronic Interim Report January-March 2026：https://storage.mfn.se/fc37436b-e2f2-4f49-9f06-cc710a20f428/interim-report-january-march-2026.pdf
+- Mycronic Year-end Report January-December 2025：https://storage.mfn.se/41c3f8b1-a8ec-44f6-9e70-2c87b6e2c154/year-end-report-january-december-2025.pdf
+- Mycronic Interim Report January-September 2025：https://storage.mfn.se/4187001e-7585-471a-99df-a05da8c2a81a/interim-report-january-september-2025.pdf
+- Mycronic Interim Report January-June 2025：https://storage.mfn.se/20ebf2ea-548e-4ebd-b63e-1ca3cd5ab9ff/interim-report-january-june-2025.pdf
+- Mycronic Interim Report January-March 2025：https://storage.mfn.se/5230bfda-11ee-4dc6-b008-a7c32b1a0457/interim-report-january-march-2025.pdf
+- Mycronic Photomask Equipment：https://www.mycronic.com/product-areas/photomask-equipment/
+- Mycronic Die Bonding Products：https://www.mycronic.com/product-areas/die-bonding/products/
+- Mycronic receives order for an SLX mask writer, 2026-04-14：https://www.mycronic.com/product-areas/photomask-equipment/press-releases/mycronic-receives-order-for-an-slx-mask-writer10/
+- Mycronic Global Technologies makes acquisition in Germany / Vanguard Automation：https://www.mycronic.com/news-events/our-press-releases/global-technologies-makes-acquisition-in-germany/
+- Mycronic Vanguard Automation Telecom & Datacom：https://www.mycronic.com/product-areas/photonic-interconnects/application-markets/telecom-datacom/
+- Mycronic Global Technologies acquires Surfx in the US：https://www.mycronic.com/news-events/our-press-releases/global-technologies-acquires-surfx-in-the-us/
+- Mycronic Global Technologies makes acquisition in Germany / ETZ：https://www.mycronic.com/news-events/our-press-releases/global-technologies-makes-acquisition-in-germany2/
+- Mycronic Global Technologies makes acquisition in France / Hprobe：https://www.mycronic.com/news-events/our-press-releases/global-technologies-makes-acquisition-in-france/
+
+### 行情和估值页面
+
+- StockAnalysis MYCR statistics：https://stockanalysis.com/quote/sto/MYCR/statistics/
+- Google Finance MYCR:STO：https://www.google.com/finance/quote/MYCR:STO
+- Investing.com Mycronic AB：https://www.investing.com/equities/micronic-mydata
+- Yahoo Finance MYCR.ST：https://finance.yahoo.com/quote/MYCR.ST/
+
+### 项目内行业资料
+
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_高端光罩与先进封装掩模_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`

@@ -1,0 +1,164 @@
+# 公司收入传导与价值传导评估：Ciena Corporation（CIEN）
+
+报告日期：2026-06-20  
+公司：Ciena Corporation  
+股票代号：CIEN  
+正式输出目录：`分析报告/公司评估/`  
+资料边界：本报告只使用 `公司调研/`、`行业调研/` 中的上游研究资料，并补充 Ciena 官方财报、Form 10-Q、电话会、投资者演示和产品公告核验。未读取、引用或继承 `特征量化/`、Signals、排序、回归、模型比较或市场定价资料。  
+经营口径：本报告只评估行业需求到 CIEN 可确认收入、利润和现金流的传导，不输出任何交易建议、价格区间或市场估值判断，不使用估值倍数作为经营证据。  
+时间口径：NTM 指 2026-06-20 起未来 12 个月，近似覆盖 Ciena FY2026 Q3、FY2026 Q4、FY2027 Q1、FY2027 Q2。最近实绩为 FY2026 Q2，季度截至 2026-05-02，披露日为 2026-06-04。所有金额为美元；`亿`为 100 million。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口；FY2026 指引、FY2027 年化能力、CPO/CPX/ACC 远期期权只用于校准，不替代 NTM 主表。由于 Ciena 不披露 AI/DCI、Hyper-Rail、DCOM 或 pluggables 的独立收入，产品级数字为基于披露分部、订单、客户节奏和本地行业研究的经营估算。
+- 当前收入基准、指引和 run-rate：FY2026 Q2 收入 `15.707 亿美元`，同比 `+39.5%`；GAAP 毛利率 `44.0%`，non-GAAP 毛利率 `44.9%`，non-GAAP 经营利润率 `19.5%`。公司给 FY2026 Q3 收入指引 `16.25 亿美元 +/- 0.50 亿美元`，FY2026 全年收入指引 `63 亿美元 +/- 1 亿美元`，non-GAAP 毛利率 `44.5%-45.0%`，non-GAAP 经营利润率 `19% +/- 50bps`。
+- 重要产品/业务线：`RLS/Waveserver/WaveLogic 光系统`、`RLS Hyper-Rail / multi-rail scale-across`、`WaveLogic coherent pluggables / 400G-800G-1.6T interconnect modules`、`DCOM / Routing and Switching / OOB management`、`Platform Software、Blue Planet 与 Global Services`、`Nubis Vesta 200 CPX/CPO 与 Nitro ACC`。
+- NTM 公司收入四情景：悲观 `64-68 亿美元`；基准 `71-75 亿美元`；乐观 `78-84 亿美元`；极度乐观 `88-98 亿美元`。基准不是把 AI 光互联 TAM 直接映射给 CIEN，而是假设 FY2026 指引正常兑现、`77 亿美元 backlog` 中硬件部分大比例转收入、Hyper-Rail 小规模开始贡献、DCOM 和 coherent pluggables 继续放量。
+- 利润或 EBITDA 四情景：悲观 non-GAAP 经营利润约 `10-12 亿美元`、调整后 EBITDA 约 `11-14 亿美元`；基准经营利润约 `13-15 亿美元`、调整后 EBITDA 约 `16-18 亿美元`；乐观经营利润约 `16-20 亿美元`、调整后 EBITDA 约 `19-23 亿美元`；极度乐观经营利润约 `21-26 亿美元`、调整后 EBITDA 约 `24-30 亿美元`。利润弹性主要来自 Hyper-Rail、RLS/Waveserver、coherent IP 和供应链成本优化，不来自低端 pass-through 模块收入。
+- 最大传导瓶颈：需求已经很强，瓶颈不在 TAM，而在 backlog 到收入确认的交付能力、光组件和泵浦激光供给、客户站点上电/验收、以及两个 10%+ 云客户的项目节奏。公司披露 FY2026 Q2 两个 10%+ 客户合计约 `34.0%` 收入；电话会披露 backlog `77 亿美元`，其中约 `64 亿美元`为硬件，管理层预计硬件 backlog 约 `80%` 在未来 12 个月交付。
+- 最大利润率变量：`Hyper-Rail` 被管理层描述为更高收入占比和更高毛利的组合；相反，普通 800G/1.6T pluggables 标准化、供应链通胀、加急采购或客户议价会压低毛利率。Q2 non-GAAP 毛利率 `44.9%` 是当前锚，NTM 基准不应无证据假设大幅扩张。
+- 最大现金流变量：Q2 自由现金流 `2.19 亿美元`、FY2026 前 6 个月经营现金流 `4.873 亿美元`显示盈利转现金改善；但 FY2026 CapEx 计划 `2.50-2.75 亿美元`、供应商/制造采购承诺、应收账款和库存会决定自由现金流是否跟上收入。
+- 可信度：基准 `中高`，因为收入、指引、backlog、RPO、分部和客户类型均有 A/B 级证据；乐观 `中`，因为需要 Hyper-Rail、DCOM 和 pluggables 多条线同时超预期；极度乐观 `低到中低`，因为 Vesta/Nitro/CPO 的 NTM 收入证据仍偏 C/D 级。
+
+## 2. 重要产品清单
+
+本步口径：这里列的是 CIEN 在 NTM 内需要逐项评估的收入桶。产品级收入不可直接按上沿相加：Optical Networking、coherent pluggables、Hyper-Rail 和服务 attach 在财务分部中存在交叉，第 6 节公司汇总时会冲销重复和时间差。
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| RLS/Waveserver/WaveLogic 光系统 | FY2026 Q2 Optical Networking `10.998 亿美元`，其中常规光系统和 AI/DCI 相关部分需估算 | 约 `70%` 分部收入 | 当前最大收入池，承接 WAN、DCI、MOFN、AI scale-across 和长途/城域光层 | A/B | 进入基准；以分部收入、FY2026 指引、RLS/Waveserver 强增长和 backlog 为锚 | 多园区 AI factory、1000km scale-across 提升内容量 |
+| RLS Hyper-Rail / multi-rail scale-across | 当前确认收入接近 `0`；已有 leading hyperscaler 首单，更多在 backlog/2027 | 当前很小 | NTM 最大结构性增量之一，可能提高收入质量和毛利率 | B/C | 小比例进入基准；主要是 2027 ramp，基准需折扣 | 若成为 AI scale-across 标准，2027+ 年化弹性显著 |
+| WaveLogic coherent pluggables / interconnect modules | 公司称 FY2026 pluggable revenue 有望较 2025 翻倍；当前模型估算约 `1.5-2.5 亿美元/季` | 约 `10%-16%`，估算 | 800G/1.6T DCI、coherent-lite、switch OEM 与 hyperscaler design-in 的直接收入 | B/C | 进入基准；但普通模块标准化和 ASP 风险需折扣 | 1.6T Coherent-Lite、late-2027/2028 3.2T coherent-lite |
+| DCOM / Routing and Switching / OOB management | FY2026 Q2 Routing and Switching `1.742 亿美元`，同比接近翻倍 | 约 `11%` | 数据中心 out-of-band 管理网络，Meta 已部署，第二客户初始订单，第三客户 lab qualification | A/C | 进入基准；基准假设多客户扩张但不把所有 hyperscaler OOB 全给 CIEN | 若 DCOM 成为多家 AI DC OOB 标准方案，2027+ 弹性上修 |
+| Platform Software、Blue Planet 与 Global Services | FY2026 Q2 PSS `0.939 亿美元`、Blue Planet `0.234 亿美元`、Global Services `1.794 亿美元` | 合计约 `18.9%` | 高复杂部署、维护、自动化和服务 attach，利润稳定器 | A/C | 进入基准；服务收入 A 级，AI 自动化增量 C 级 | AI 光层自动化、scale-across 编排和 service assurance |
+| Nubis Vesta 200 CPX/CPO 与 Nitro ACC | Vesta 200 已发布；Nitro 预计 2026 summer GA；当前收入很小或无法可靠量化 | `0%-1%` | inside-the-data-center / CPO / active copper cable 第二曲线 | C/D | 不进入基准主收入，仅允许小额 NRE/试点；大额进入乐观、极度乐观或附录 | 2027-2028 switch/XPU/NIC design-in、Open CPX 生态、CPO/ACC 放量 |
+
+## 3. 产品需求四情景
+
+本步口径：本节只评估外部需求池，不评估 CIEN 份额、收入确认、利润率或公司汇总。相对预期的比较锚为 FY2026 指引、FY2026 Q2 run-rate、backlog/RPO、Ciena Q2 演示中的 cloud/service-provider 需求、以及本地 `行业调研/AI网络_光互联_铜互联/` 对 800G、1.6T、CPO/NPO、OCS、DCI 和 scale-across 的当前路径。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| RLS/Waveserver/WaveLogic 光系统 | FY2026 Q2 Optical Networking `10.998 亿美元`；direct cloud 收入 `46%`、同比 `+70%`；service providers 同比 `+28%`；行业判断 DCI/scale-across 成为 AI 网络主线之一 | AI/cloud 仍增长，但客户站点上电、泵浦激光、光组件和运营商预算限制，外部需求低于 FY2026 指引隐含路径 | DCI、MOFN、WAN 和 AI scale-across 正常兑现，NTM 外部需求足以支撑 FY2026 指引和 FY2027H1 温和上行 | 云厂和服务商同时追加，RLS/Waveserver 需求继续快于总公司收入 | 多园区 AI factory 和跨区域训练/推理把光层从配套变成瓶颈采购 | 需求池从 FY2026 指引隐含的 `60+ 亿美元`公司收入支撑，向 NTM `70+ 亿美元`经营窗口移动 | 基准符合当前预期；乐观需要持续新增订单和 backlog 转收入 | 正证：Q2 分部、客户类型、record backlog；反证：客户集中、站点上电、光器件供应、MOFN 周期 |
+| RLS Hyper-Rail / multi-rail scale-across | 已获行业首个 hyperscaler multi-rail opportunity；管理层称 1000km Hyper-Rail 的 photonics component 可是 100km single-rail 的 `4-5x` | 首单停留工程交付，NTM 需求只支持小批量 | 首单开始交付，另有 1-2 个客户进入订单/试部署 | 多个 hyperscaler/neocloud/service provider 进入订单，2027H1 需求明显加速 | Hyper-Rail 成为 AI scale-across 的默认高端路线，多个长距离 AI backbone 同步推进 | 从 `0`收入产品走向 NTM `小几亿美元`需求池 | 基准略高于历史 run-rate，但只承认首单和早期交付 | 正证：首单、客户共创、photonics 内容量；反证：交付认证、客户复用、路由/光层替代方案 |
+| WaveLogic coherent pluggables / interconnect modules | 本地光模块研究判断 800G 是 2026 主力，1.6T 进入规模导入；Ciena 称 FY2026 pluggable revenue 有望翻倍 | 800G ASP 和库存压力提前出现，1.6T coherent-lite 认证慢 | 800G/1.6T DCI、ZR/ZR+ 和 switch OEM design-in 正常推进 | 1.6T coherent-lite 和高性能 coherent modules 多客户放量，客户愿为低功耗/长距/可靠性付溢价 | 1.6T 在 AI DCI/scale-across 中提前成为默认端口，Ciena 捕获多个大客户 design-in | 从 2025 小基数翻倍到 FY2026，并在 NTM 继续爬坡 | 基准符合当前管理层表述；乐观需新增客户和 ASP 稳定 | 正证：WaveLogic 6、major hyperscaler / switch OEM win；反证：模块标准化、中国模块厂价格、DSP/laser 供给 |
+| DCOM / Routing and Switching / OOB management | FY2026 Q2 Routing and Switching `1.742 亿美元`，同比 `+88%`；DCOM ramp 被管理层强调 | Meta 之外客户扩张慢，R&S 回到普通路由增长 | 第二 hyperscaler 初始订单扩大，第三客户 lab qualification 有进展 | DCOM 成为多个 hyperscaler AI 数据中心 OOB 管理方案，R&S 维持高双位数增长 | 大规模 AI DC 建设把 DCOM 变成标准 OOB 方案，多个客户同步 rollout | 从 FY2026 Q2 年化约 `7 亿美元`的 R&S run-rate，向 NTM更高收入池移动 | 基准高于旧业务 run-rate，但不假设所有 OOB 机会归属 CIEN | 正证：Q2 分部增长、客户线索；反证：客户自研、Arista/Cisco/Nokia/whitebox 竞争、认证周期 |
+| Platform Software、Blue Planet 与 Global Services | Q2 合计收入约 `2.967 亿美元`；复杂光网络和 AI scale-across 提升服务 attach | 硬件交付延迟，服务和软件 attach 滞后 | 随系统装机、维护和实施正常增长 | 高复杂 multi-rail、DCI 和自动化项目提高服务 attach 与软件需求 | 网络自动化成为 AI 光层运营必须项，Blue Planet 和服务进入更高价值项目 | 从 Q2 年化约 `11.9 亿美元`向 NTM `12-15 亿美元`需求 | 基准符合当前 run-rate；乐观需看到服务/软件增速高于硬件 | 正证：A 级服务收入、复杂部署；反证：软件收入小、客户内部工具、服务人力 |
+| Nubis Vesta 200 CPX/CPO 与 Nitro ACC | Vesta 200 6.4T CPX 已发布，目标 200G/lane switch/XPU/NIC；行业研究认为 CPO/NPO 2026 以 design-in/小批量为主，2027+ 弹性更大 | CPO/ACC 只停留 demo、NRE 和客户测试，NTM 无明显需求 | 小额 NRE、样品和试点；不形成基准主收入 | 1-2 个 switch/XPU/NIC 平台进入 pilot，Nitro ACC 有客户 design-in | 200G/lane CPO 与 active copper 在 2027H1 提前商业化，CIEN 成早期核心供应商 | 从 `无法可靠量化`到 NTM `小额试点`，大额收入仍是远期期权 | 基准不纳入；乐观也需折扣 | 正证：Vesta 200、Open CPX、Nitro GA；反证：field service、ELS 冗余、二供、客户维护模型 |
+
+## 4. 可收入化暴露与收入基数
+
+本步口径：本节只判断外部需求中哪些可进入 CIEN 的 NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入。第二步基准以 A/B 级证据为主；C 级只有客户、产品和时间表清楚时小比例纳入；D 级不进入 NTM 基准主收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| RLS/Waveserver/WaveLogic 光系统 | FY2026 Q2 Optical Networking `10.998 亿美元`；FY2026 指引 `63 亿美元 +/-1 亿美元`；backlog `77 亿美元` | 直接 | 系统硬件+coherent IP+服务，毛利率随 RLS/Hyper-Rail mix 改善 | `36-40 亿美元` | `39-43 亿美元` | `45-52 亿美元` | `55-62 亿美元` | 基准符合当前指引和 run-rate；悲观低于当前 backlog 转化路径 | A/B | 是 | 分部收入、指引、backlog、RLS/Waveserver 强增长 | NTM 主收入池，需剔除独立 pluggables 和 Hyper-Rail 重复 |
+| RLS Hyper-Rail / multi-rail scale-across | 首个 hyperscaler multi-rail order；管理层称 2026 revenue 为 `0`直到 later this year，2027 有 meaningful uptick | 直接 | 高 photonics 内容量、高价值交换，潜在高于公司平均毛利 | `0-0.1 亿美元` | `0.1-0.3 亿美元` | `0.4-0.8 亿美元` | `0.9-1.5 亿美元` | 基准是小额早期交付；大额收入高于当前预期 | B/C | 是，小比例 | 正式订单、清楚产品和时间表，但收入确认仍早 | 小比例进基准，主要上行在乐观/极度乐观 |
+| WaveLogic coherent pluggables / interconnect modules | FY2026 pluggable revenue 预计较 2025 翻倍；当前模型估算约 `1.5-2.5 亿美元/季` | 直接 | DSP/相干 IP 毛利较好，模块标准化压缩毛利 | `7-9 亿美元` | `10-13 亿美元` | `14-19 亿美元` | `21-28 亿美元` | 基准符合 management trajectory；乐观需 1.6T 多客户 design-in | B/C | 是 | 管理层量化方向、客户 win、产品路线 | 进入基准，但普通 800G 不按高毛利处理 |
+| DCOM / Routing and Switching / OOB management | FY2026 Q2 R&S `1.742 亿美元`，同比 `+88%`；客户线索为 Meta、第二客户、第三客户 qualification | 直接 | 硬件+软件+服务组合，毛利取决于客户和规模 | `4.5-5.8 亿美元` | `6.0-7.8 亿美元` | `8.5-12.0 亿美元` | `13.0-17.0 亿美元` | 基准高于旧 run-rate，但有分部收入支撑 | A/C | 是 | 分部收入 A 级；DCOM 客户扩张 C 级 | 进入基准，客户扩张超预期进入乐观 |
+| Platform Software、Blue Planet 与 Global Services | FY2026 Q2 PSS `0.939 亿`、Blue Planet `0.234 亿`、Global Services `1.794 亿` | 直接/间接 | 服务稳定、软件毛利高但收入基数小 | `11.0-12.0 亿美元` | `12.2-13.8 亿美元` | `14.0-16.0 亿美元` | `17.0-20.0 亿美元` | 基准略高于 run-rate，符合装机和维护增长 | A/C | 是 | 已披露收入；AI 自动化增量只小比例估算 | 进入基准，是利润和现金流稳定器 |
+| Nubis Vesta 200 CPX/CPO 与 Nitro ACC | Vesta 200 产品发布；Nitro final chip back、2026 summer GA；未披露订单/收入 | 直接/间接 | 潜在高毛利光引擎/芯片，但早期 NRE 和认证成本高 | `0` | `0-0.1 亿美元` | `0.2-0.5 亿美元` | `0.7-1.2 亿美元` | 基准不纳入主收入；乐观为小额试点 | C/D | 否，除极小试点 | 产品和技术明确，但未披露客户合同和量产 | 大额移入附录或乐观上限，不进入 NTM 基准主表 |
+
+## 5. 产品级收入和利润贡献
+
+本步口径：本节从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内对 CIEN 的收入和利润贡献。利润贡献采用 NTM 毛利贡献区间；公司未披露产品级费用，因此经营利润在第 6 节公司层面处理。不得把行业 TAM、客户总预算、项目总金额或远期 pipeline 直接写成 CIEN 收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| RLS/Waveserver/WaveLogic 光系统 | 悲观 | `36-40 亿美元` | 毛利 `15-17.5 亿美元` | 下行到 `42%-44%` | 低于当前指引隐含路径 | Optical Networking 仍大，但交付/客户节奏弱 | 保留悲观 | 站点上电、pump laser、客户项目推迟 |
+| RLS/Waveserver/WaveLogic 光系统 | 基准 | `39-43 亿美元` | 毛利 `17.5-20 亿美元` | `44%-47%` | 符合当前预期 | Q2 分部、FY2026 指引、RLS/Waveserver +50%+ | 保留基准 | backlog 转收入与供应链约束 |
+| RLS/Waveserver/WaveLogic 光系统 | 乐观 | `45-52 亿美元` | 毛利 `21-25.5 亿美元` | 稳中上行 | 高于当前预期 | 云厂与服务商同时扩张，价值交换改善 | 保留乐观 | 大客户议价、组件通胀 |
+| RLS/Waveserver/WaveLogic 光系统 | 极度乐观 | `55-62 亿美元` | 毛利 `27-32 亿美元` | 明显上行 | 显著高于当前预期 | 多园区 AI backbone 同步推进 | 下移为低可信上限 | 单一分部过快扩张受交付约束 |
+| RLS Hyper-Rail / multi-rail scale-across | 悲观 | `0-0.1 亿美元` | `0-0.05 亿美元` | 初期成本和认证拖累 | 低于首单 ramp 预期 | 首单交付延后或客户复用慢 | 保留悲观 | 现场部署、客户验收、非标项目 |
+| RLS Hyper-Rail / multi-rail scale-across | 基准 | `0.1-0.3 亿美元` | 毛利 `0.05-0.15 亿美元` | 逐步高于平均 | 符合小额早期交付 | 首个 hyperscaler order，2027 meaningful uptick | 保留基准但折扣 | 订单到收入确认仍早 |
+| RLS Hyper-Rail / multi-rail scale-across | 乐观 | `0.4-0.8 亿美元` | 毛利 `0.22-0.45 亿美元` | 上行 | 高于当前基准 | 多客户订单、photonics 内容量提高 | 保留乐观 | 需要 2-4 客户复用证明 |
+| RLS Hyper-Rail / multi-rail scale-across | 极度乐观 | `0.9-1.5 亿美元` | 毛利 `0.50-0.90 亿美元` | 明显上行 | 非线性高于预期 | 1000km scale-across 成默认高端方案 | 低可信上限 | 任一客户/交付环节缺证据即下移 |
+| WaveLogic coherent pluggables / interconnect modules | 悲观 | `7-9 亿美元` | 毛利 `2.6-3.6 亿美元` | 下行到 `36%-40%` | 低于翻倍路径 | 800G ASP 下行，1.6T 认证慢 | 保留悲观 | 模块标准化、客户库存 |
+| WaveLogic coherent pluggables / interconnect modules | 基准 | `10-13 亿美元` | 毛利 `4.0-5.6 亿美元` | `40%-43%` | 符合当前预期 | FY2026 pluggable revenue 翻倍目标、客户 wins | 保留基准 | DSP/laser/test 供给 |
+| WaveLogic coherent pluggables / interconnect modules | 乐观 | `14-19 亿美元` | 毛利 `6.0-8.7 亿美元` | 小幅上行 | 高于当前预期 | 1.6T coherent-lite、switch OEM 和 hyperscaler 放量 | 保留乐观 | 标准化压价、竞争 |
+| WaveLogic coherent pluggables / interconnect modules | 极度乐观 | `21-28 亿美元` | 毛利 `9.5-13.5 亿美元` | 上行但非线性有限 | 显著高于当前预期 | 1.6T 端口提前默认化 | 下移为低可信上限 | 低毛利模块收入不能自动转为高利润 |
+| DCOM / Routing and Switching / OOB management | 悲观 | `4.5-5.8 亿美元` | 毛利 `1.8-2.5 亿美元` | `38%-42%` | 低于当前 R&S 高增长路径 | 客户扩张慢，回归普通 routing | 保留悲观 | Meta 之外缺规模、竞品多 |
+| DCOM / Routing and Switching / OOB management | 基准 | `6.0-7.8 亿美元` | 毛利 `2.6-3.6 亿美元` | `42%-46%` | 符合当前预期 | Q2 R&S +88%，第二客户初始订单 | 保留基准 | 第三客户 qualification |
+| DCOM / Routing and Switching / OOB management | 乐观 | `8.5-12.0 亿美元` | 毛利 `3.9-5.8 亿美元` | 上行 | 高于当前预期 | 多家 hyperscaler OOB rollout | 保留乐观 | 客户自研、白盒替代 |
+| DCOM / Routing and Switching / OOB management | 极度乐观 | `13.0-17.0 亿美元` | 毛利 `6.2-8.8 亿美元` | 明显上行 | 显著高于当前预期 | DCOM 成为多家 AI DC 标准方案 | 低可信上限 | 需要多客户规模收入证据 |
+| Platform Software、Blue Planet 与 Global Services | 悲观 | `11.0-12.0 亿美元` | 毛利 `5.0-5.8 亿美元` | 稳定 | 略低于装机 attach 路径 | 硬件交付慢，服务滞后 | 保留悲观 | 服务人力、软件被客户内部化 |
+| Platform Software、Blue Planet 与 Global Services | 基准 | `12.2-13.8 亿美元` | 毛利 `5.8-7.0 亿美元` | 稳定或小幅上 | 符合当前预期 | A 级服务收入、装机带动维护 | 保留基准 | Blue Planet 独立收入小 |
+| Platform Software、Blue Planet 与 Global Services | 乐观 | `14.0-16.0 亿美元` | 毛利 `7.0-8.8 亿美元` | 上行 | 高于当前预期 | multi-rail 和 DCI 复杂度提高服务 attach | 保留乐观 | 专业服务产能 |
+| Platform Software、Blue Planet 与 Global Services | 极度乐观 | `17.0-20.0 亿美元` | 毛利 `8.8-12.0 亿美元` | 明显上行 | 显著高于当前预期 | 自动化和服务 assurance 成为 AI 光层刚需 | 下移为低可信上限 | 软件收入未单列验证 |
+| Nubis Vesta 200 CPX/CPO 与 Nitro ACC | 悲观 | `0` | `无法可靠量化`，研发/NRE 可能拖累 | 下行 | 不进入当前预期 | 产品停留 demo/qualification | 保留悲观 | 无量产订单 |
+| Nubis Vesta 200 CPX/CPO 与 Nitro ACC | 基准 | `0-0.1 亿美元` | `0-0.04 亿美元` | 无法可靠量化 | 只承认小额试点 | Vesta 发布、Nitro GA 路线 | 移入附录跟踪 | D 级收入证据 |
+| Nubis Vesta 200 CPX/CPO 与 Nitro ACC | 乐观 | `0.2-0.5 亿美元` | 毛利 `0.08-0.25 亿美元` | 取决于良率和 NRE | 高于当前预期 | 1-2 平台 pilot 或 ACC design-in | 保留为低可信乐观 | CPO field service、二供 |
+| Nubis Vesta 200 CPX/CPO 与 Nitro ACC | 极度乐观 | `0.7-1.2 亿美元` | 毛利 `0.35-0.70 亿美元` | 潜在高 | 只代表上限 | 200G/lane CPO/ACC 提前商业化 | 移入附录/极度上限 | 缺少 NTM 大规模收入确认路径 |
+
+## 6. 公司收入和利润四情景
+
+本步口径：本节把产品级贡献合成为 CIEN 的 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。汇总前已处理三类重叠：第一，Optical Networking 分部中的 line systems、pluggables、Hyper-Rail 不重复相加；第二，服务 attach 不重复计入硬件收入；第三，Vesta/Nitro 大额机会不进入基准主表。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观 | `64-68 亿美元` | 较 TTM 约 `55.7 亿美元`增长 `+15%-22%` | 低于当前 FY2026 指引外推和 backlog 转化预期；仍可能高于 FY2025 | GAAP/调整后口径约 `42.5%-44.0%` | non-GAAP `15.5%-17.5%` | 调整后 EBITDA `11-14 亿美元`；调整后净利润 `6.5-9.0 亿美元` | FCF 仍为正，但库存、应收和 CapEx 吞噬现金，FCF margin 约中高个位数 | 中 | backlog 转收入慢、客户验收延迟、组件短缺、普通模块 ASP 下行 |
+| 基准 | `71-75 亿美元` | 较 TTM 增长 `+27%-35%` | 符合当前经营预期正常兑现：FY2026 指引、硬件 backlog 高比例交付、FY2027H1 继续增长 | `44.5%-45.8%` | non-GAAP `18.5%-20.5%` | 调整后 EBITDA `16-18 亿美元`；调整后净利润 `10-12.5 亿美元` | FCF 正向，受 CapEx 和 working capital 影响，FCF margin 约 `10%-13%` | 中高 | 光组件和泵浦激光供给、客户集中、Hyper-Rail 从订单到收入 |
+| 乐观 | `78-84 亿美元` | 较 TTM 增长 `+40%-51%` | 高于当前预期，且不只由一个小基数产品贡献；RLS、pluggables、DCOM、服务同时较强 | `45.5%-47.0%` | non-GAAP `21.0%-23.5%` | 调整后 EBITDA `19-23 亿美元`；调整后净利润 `13-16.5 亿美元` | FCF 强，但增长期仍需锁供给；FCF margin 可到低双位数至中双位数 | 中 | 多客户 Hyper-Rail、1.6T coherent design-in、DCOM 多客户 rollout 必须同时成立 |
+| 极度乐观 | `88-98 亿美元` | 较 TTM 增长 `+58%-76%` | 显著高于当前预期；需要 demand、公司捕获、利润率和执行质量同时突破 | `47.0%-49.0%` | non-GAAP `24.0%-27.0%` | 调整后 EBITDA `24-30 亿美元`；调整后净利润 `17.5-22.5 亿美元` | FCF 大幅增长，但若供应链预付款和库存同步上升，短期现金转化可能低于利润 | 低到中低 | 多园区 AI backbone、Hyper-Rail 标准化、CPO/ACC 提前收入化、供应链和客户验收无明显瓶颈 |
+
+## 7. 证据校准、反证和可信度
+
+本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用 `保留`、`上移`、`下移`、`排除`、`移入附录`、`仅作跟踪`。同一风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q2 收入 `15.707 亿美元`、同比 `+39.5%`，FY2026 指引上调至 `63 亿美元 +/-1 亿美元` | 公司收入基准 | 把基准公司收入从单纯 FY2025 run-rate 上移到 `70+ 亿美元` NTM 经营窗口 | Q2 non-GAAP 毛利率 `44.9%` 支撑基准毛利 | Q2 FCF `2.19 亿美元`，说明利润可转现金 | 基准保留 |
+| Backlog `77 亿美元`，其中约 `64 亿美元`硬件，管理层预计硬件 backlog 约 `80%` 未来 12 个月交付 | 收入基数和执行可信度 | 支撑 RLS/Waveserver、pluggables 和 DCOM 的 B 级收入确认锚 | backlog 高本身不保证毛利，但 Hyper-Rail 结构可能改善 | 转收入受供应链和站点验收影响 | 基准保留，乐观保留 |
+| RPO `25 亿美元`，多数将在一年内履约，剩余通常三年内确认 | 收入可确认性 | 与 backlog 一起支撑未来收入，但 RPO 小于 backlog，不可重复计算 | 对利润率中性 | 供应条件会影响履约时间 | 基准保留 |
+| Direct cloud revenue `46%`、同比 `+70%`；service providers 同比 `+28%` | 产品需求和公司捕获 | 支撑 AI/DCI 和 MOFN 需求，不是单一云客户叙事 | 云客户 mix 可能压价，也可能带来规模效应 | 客户集中度提高执行波动 | 乐观保留，但客户集中风险只在公司组合层处理 |
+| RLS/Waveserver 均增长 `50%+`，WaveLogic 6 Extreme 110 客户，Q2 新增 20 客户 | 产品贡献 | 支撑 Optical Networking 主收入池 | 自研 coherent IP 和系统集成支撑毛利 | 需要持续组件供给 | 基准保留 |
+| Hyper-Rail 首个 hyperscaler multi-rail 机会，且管理层称 2027 有 meaningful revenue uptick | 产品贡献和利润率 | 支撑小额基准与乐观上修 | 管理层称 Hyper-Rail revenue mix 和 margin profile 更好 | 2026 仍接近 0 收入，执行需验证 | 基准小比例保留；极度乐观下移为上限 |
+| FY2026 pluggable revenue 预计较 2025 翻倍，但管理层称 plug 对毛利暂无显著正负影响 | 产品贡献 | 支撑 pluggables 基准收入 | 阻止把 pluggables 自动写成高毛利扩张 | 认证和 ASP 是关键 | 基准保留，利润率不上移 |
+| Vesta 200 CPX/CPO 与 Nitro ACC 技术清晰但 NTM 量产收入未披露 | 收入基数和远期期权 | 不支持大额进入基准 | 早期 NRE/良率可能拖累；未来有高毛利期权 | 客户 design-in、field service、二供未验证 | 基准排除大额，移入附录/仅作跟踪 |
+| 管理层称当前未见客户库存堆积、推迟交付或订单取消 | 反证校准 | 降低悲观需求概率，但不排除交付延迟 | 对毛利中性 | 支撑 backlog 质量 | 悲观保留为风险情景，不下移基准 |
+| 供应链最紧在 modem/CDM、pump lasers、line system 相关组件 | 执行可信度 | 强需求可能无法完全确认收入 | 加急采购和通胀压制毛利 | CapEx、供应商投资、库存和 working capital 上升 | 乐观和极度乐观设执行门槛 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 `64-68 亿美元`，毛利率 `42.5%-44.0%`，经营利润率 `15.5%-17.5%` | 仍有 FY2026 指引、backlog 和 RPO 支撑，需求不会归零 | 供应链、客户集中、ASP 下行、站点验收可使收入低于当前预期 | 保留 | 悲观经营情景 | 中 | 客户集中只在公司组合层处理一次，不再重复压低每个产品 |
+| 基准 | NTM 收入 `71-75 亿美元`，毛利率 `44.5%-45.8%`，经营利润率 `18.5%-20.5%` | A/B 级证据强：Q2 实绩、FY2026 指引、分部收入、backlog、RPO、FCF | 基准仍依赖供应链和 backlog 转收入；Hyper-Rail 仅小比例 | 保留 | 最可能经营情景 | 中高 | 供应链瓶颈只限制收入确认，不重复惩罚需求池 |
+| 乐观 | NTM 收入 `78-84 亿美元`，毛利率 `45.5%-47.0%`，经营利润率 `21.0%-23.5%` | Hyper-Rail、pluggables、DCOM、service attach 都有公司特定正向证据 | 需要多产品同时超预期，不能只靠 AI 光互联行业高景气 | 保留 | 有证据的上行情景 | 中 | 普通 800G/1.6T ASP 下行只限制 pluggables，不压低 RLS/Hyper-Rail 系统价值 |
+| 极度乐观 | NTM 收入 `88-98 亿美元`，毛利率 `47.0%-49.0%`，经营利润率 `24.0%-27.0%` | 多园区 AI factory、Hyper-Rail photonics 内容量、CPO/ACC 远期期权给出上限路径 | Vesta/Nitro、CPO/ACC 缺少 NTM 量产收入证据；执行链条太多 | 下移 | 保留为低可信上限，Vesta/Nitro 大额收入移入附录 | 低到中低 | CPO 延迟只影响远期期权，不重复压低基准光系统收入 |
+
+## 8. 结论
+
+- 最可能情景：`基准`。NTM 收入最可能在 `71-75 亿美元`，较 TTM `55.7 亿美元`继续高增长；核心不是把 AI 数据中心总 capex 直接映射为收入，而是 FY2026 指引、`77 亿美元 backlog`、`25 亿美元 RPO`、Q2 Optical Networking/Routing and Switching 分部强增长和云客户需求共同支持收入确认。
+- NTM 收入结论：RLS/Waveserver/WaveLogic 光系统仍是最大收入底盘；Hyper-Rail 是最重要的新增长传导，但 NTM 基准只应给小额贡献；coherent pluggables 和 DCOM 能贡献明显增量，但要防止把认证阶段的客户需求全部当作已确认收入。
+- 利润/现金流结论：基准毛利率约 `44.5%-45.8%`，non-GAAP 经营利润率约 `18.5%-20.5%`。利润质量好于 2025，因为 Q2 已显示经营杠杆；但大幅扩张必须来自 Hyper-Rail mix、coherent IP、供应链成本优化和服务 attach，而不是低毛利模块 pass-through。基准 FCF 仍为正，CapEx、采购承诺、库存和应收是主要现金流变量。
+- 主要传导瓶颈：需求到收入的瓶颈是供应链、客户站点部署、验收和 backlog 转收入，不是行业 TAM；利润到现金流的瓶颈是 working capital 和供应安全投资；情景上修的瓶颈是 Hyper-Rail 多客户复制、1.6T coherent design-in 和 DCOM 多客户 rollout。
+- 乐观情景成立条件：FY2026 Q3/Q4 收入继续超过指引中点；backlog 年末高于 `77 亿美元`且硬件交付没有拉长；RLS/Waveserver 与 direct cloud 继续高增；第二、第三个 Hyper-Rail 或 DCOM 大客户出现；non-GAAP 毛利率稳定在 `45%+`。
+- 极度乐观情景成立条件：多园区 AI backbone 和 scale-across 从少数项目变成多客户标准；Hyper-Rail 在 2027H1 形成可见大额收入；coherent pluggables 1.6T/Coherent-Lite 多客户放量且 ASP 稳定；Vesta/Nitro 至少进入 1-2 个 switch/XPU/NIC platform design-in；供应链扩产与客户上电同步顺利。
+- 悲观情景触发条件：backlog 增但收入确认落后；FY2026 Q3/Q4 低于指引或毛利率回落至 `43%`附近；客户开始推迟交付或库存上升；普通 800G/1.6T 模块 ASP 明显下跌；pump laser、CDM/modem 或 line system 组件短缺限制交付；两个 10%+ 云客户任一项目节奏下修。
+- 后续跟踪数据：Q3 FY2026 收入和毛利是否达到 `16.25 亿美元 +/-0.50 亿`、`45% +/-50bps`；backlog 年末是否继续上升；硬件 backlog 未来 12 个月交付比例；RPO 变化；direct cloud 和 service provider 收入增速；RLS/Waveserver 增速；Hyper-Rail 新订单；DCOM 第二/第三客户进度；pluggables revenue 是否兑现翻倍；Vesta/Nitro 是否从 demo/NRE 走向 design-in；DSO、inventory turns、CFO、FCF 和 CapEx。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Ciena FY2026 Q2 截至 2026-05-02，披露日 2026-06-04；本报告日期 2026-06-20。NTM 覆盖 2026-06-20 至 2027-06-19 附近。
+- 主要收入、订单、指引和利润率来源：
+  - Ciena FY2026 Q2 press release：`https://investor.ciena.com/news/news-details/2026/Ciena-Reports-Fiscal-Second-Quarter-2026-Financial-Results/default.aspx`
+  - Ciena FY2026 Q2 earnings presentation：`https://s25.q4cdn.com/550667411/files/doc_financials/2026/q2/2026-Q2-Earnings-Presentation_FINAL.pdf`
+  - Ciena FY2026 Q2 Form 10-Q：`https://d18rn0p25nwr6d.cloudfront.net/CIK-0000936395/dd920567-3459-4635-bd7b-7927c9f01760.pdf`
+  - Ciena FY2026 Q2 earnings call transcript：`https://s25.q4cdn.com/550667411/files/content_files/Ciena-Fiscal-Q2-2026-Financial-Results-Call.pdf`
+  - Ciena Vesta 200 6.4T CPX press release：`https://www.ciena.com/about/newsroom/press-releases/ciena-unveils-the-industrys-highest-density-lowest-power-pluggable-optical-engine-to-meet-data-center-ai-demands`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 公司正式收入指引 `63 亿美元 +/-1 亿美元`，只用于当前预期锚；NTM 主表不等同 FY2026 全年。
+  - FY2027 年化能力、Hyper-Rail 年化收入、Vesta/Nitro、3.2T coherent-lite 和 CPO/CPX 均为补充或远期期权；没有 NTM 量产收入证据时不进入基准主收入。
+  - CPO/NPO、Open CPX、OCI、XPO、OCS 是 2027+ 弹性来源；2026-2027 主要看 design-in、互操作、客户 qualification、ELS/光引擎良率、field service 和二供。
+- 主要项目内来源：
+  - `公司调研/AI网络_光互联_连接器/CIEN_Ciena Corporation_公司调研_2026-06-20.md`
+  - `公司调研/公司索引.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_OCS光路交换_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-06-11.md`
+  - `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+  - `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- 排除项：
+  - 未使用 `特征量化/`、Signals、回归、排序、模型比较或市场定价资料。
+  - 未把任何二级市场价格、估值倍数或交易建议作为经营价值传导证据。
+  - 未把 AI 数据中心总 capex、行业 TAM、客户总预算或 CPO 长期愿景直接计入 CIEN NTM 基准收入。

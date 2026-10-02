@@ -1,0 +1,446 @@
+# GOOGL Alphabet Inc 公司调研：搜索现金牛、AI 云与 TPU 硬件化的再定价
+
+报告日期：2026-06-12  
+市场数据快照：2026-06-11 美股收盘；财务数据以 Alphabet 2026Q1 10-Q / earnings release 和最近五个季度 earnings call 为主。  
+资料边界：项目内只使用 `基本面/行业调研/` 的 AI 产业、AI 数据中心、云厂 ASIC、AI 云、光互联、电力与 BOM 口径；未读取 `特征量化/`、`日度资料/` 或旧公司调研正文。联网资料优先采用 Alphabet / Google / SEC / Google Cloud 官方资料，其次采用 StockAnalysis、行业会议与公开行业报告摘要。  
+结论级别：完整公司尽调；所有未披露的 AI 收入、TPU ASP、BOM 和产能均为研究估算，表内标注置信度。
+
+## 一、结论先行
+
+Alphabet 仍是全球最强的互联网广告现金流公司，但 2025Q4 到 2026Q1 后，投资人给它的核心标签正在从“Search/YouTube 广告 + Cloud 跟随者”变成“Search 仍加速、Cloud 已进入 AI 订单爆发期、TPU 从内部芯片变成可外售硬件/容量平台”。最新财报里最关键的不是 Search 19% 增长本身，而是 Google Cloud backlog 从 2025Q4 的约 2400 亿美元进一步跳到 2026Q1 的 4620 亿美元，并且公司明确说 50% 以上将在未来 24 个月确认收入；这等于给 Cloud 未来两年收入提供了罕见的合同可见度。
+
+投资判断上，Alphabet 的优点是三层闭环：第一层是 Search、YouTube、Android、Chrome、Maps 等入口产生现金流和数据；第二层是 Gemini、Vertex AI、Workspace/Gemini Enterprise 把模型能力卖给企业；第三层是 TPU、GPU、Virgo 网络、AI Hypercomputer、Intersect 能源和数据中心能力把底层算力变成可控成本。风险也同样集中：2026 年 CapEx 指引已经上调到 1800-1900 亿美元，Q1 资本开支 357 亿美元，未来 12-24 个月如果 Cloud AI 收入和 TPU 硬件外售不能覆盖折旧、能源和债务成本，市场会重新压低估值倍数。
+
+最值得跟踪的三个变量：
+
+| 变量 | 当前证据 | 投资含义 | 反证条件 |
+|---|---|---|---|
+| Google Cloud backlog 转收入 | 2026Q1 backlog 4620 亿美元，较 2025Q4 近乎翻倍；>50% 预计 24 个月确认 | 未来两年 Cloud 收入可见度强，AI 需求不是口头叙事 | 交付/上电推迟、客户重议价、硬件销售确认节奏低于预期 |
+| TPU 硬件化 | 2026Q1 公司称将向少数客户自有数据中心交付 TPU，2026 年后期少量确认，大部分 2027 年确认 | TPU 从内部降本工具变成外部收入和生态锁定工具 | 客户只试点不规模采购；PyTorch/软件迁移慢；HBM/光互联卡住 |
+| Search AI 变现 | 2026Q1 Search & other 收入 604 亿美元，同比增长 19%；AI Max / Performance Max 使用扩大 | AI 没有立刻吃掉 Search 广告，反而改善意图理解与广告相关性 | AI Mode 降低商业点击，监管限制默认搜索分发，广告主 ROI 下滑 |
+
+## 二、公司整体业务、投资人眼中的定位和近三年变化
+
+### 2.1 业务结构
+
+Alphabet 由三大报告分部构成：
+
+| 分部 | 2026Q1 收入 | 同比 | 2026Q1 经营利润 | 经营利润率 | 业务说明 |
+|---|---:|---:|---:|---:|---|
+| Google Services | 896.37 亿美元 | +16% | 405.89 亿美元 | 45.3% | Search、YouTube Ads、Network、Google Play、订阅、设备、Android、Chrome、Maps |
+| Google Cloud | 200.28 亿美元 | +63% | 65.98 亿美元 | 32.9% | GCP、AI Infrastructure、AI Solutions、Gemini Enterprise、Workspace、Wiz |
+| Other Bets | 4.11 亿美元 | -9% | -21.00 亿美元 | 不适用 | Waymo、Wing 等，Verily 已于 2026Q1 完成外部融资并不再并表 |
+| Hedging | -1.80 亿美元 | 不适用 | 不适用 | 不适用 | 汇率套保 |
+| Alphabet 合计 | 1098.96 亿美元 | +22% | 396.96 亿美元 | 36.1% | Q1 净利润受非上市股权未实现收益显著抬高 |
+
+业务真实权重仍是“广告现金牛 + 云增量 + 期权资产”：
+
+| 业务线 | 2026Q1 收入 | 收入占比 | 同比 | 投资含义 |
+|---|---:|---:|---:|---|
+| Google Search & other | 603.99 亿美元 | 55.0% | +19% | 现金流核心；AI 正在强化广告匹配和查询扩展 |
+| YouTube ads | 98.83 亿美元 | 9.0% | +11% | 广告增长稳定，长期叠加订阅、Connected TV、创作者生态 |
+| Google Network | 69.71 亿美元 | 6.3% | -4% | 低增长/下滑，重要性下降 |
+| Google subscriptions, platforms, devices | 123.84 亿美元 | 11.3% | +19% | YouTube Music/Premium、Google One、AI 付费计划推动 |
+| Google Cloud | 200.28 亿美元 | 18.2% | +63% | 当前最突出增量；AI Infrastructure 与 AI Solutions 是增长引擎 |
+| Other Bets | 4.11 亿美元 | 0.4% | -9% | Waymo 高潜力，但仍是亏损期权 |
+
+### 2.2 投资人眼中的 Alphabet
+
+过去投资人通常把 Alphabet 看成四个资产的组合：
+
+1. **Search 垄断型现金牛**：Google Search 是全球默认互联网入口之一，广告 ROIC 极高，TAC 和监管是主要约束。
+2. **YouTube 长视频/短视频/TV 广告平台**：既是广告资产，也是订阅资产。2025 全年 YouTube 广告与订阅合计收入超过 600 亿美元。
+3. **Google Cloud 后发但增速更高的云平台**：2024 以前市场担心 Cloud 规模和利润率弱于 AWS/Azure；2025H2-2026Q1 后，Cloud 的 AI backlog 和经营利润率改变了这个判断。
+4. **长期 AI/自动驾驶/硬件期权**：Gemini、TPU、Waymo、Android XR、Pixel、Wing 等。2026 年最重要的变化是 TPU 外部化和 Waymo 规模化同时出现。
+
+当前估值的关键分歧：市场已经给 Alphabet 接近大型 AI 平台公司的估值，但仍要求它证明 1800-1900 亿美元年度 CapEx 不是“买增长”，而是能转成高毛利 Cloud AI 收入、Search/Ads 增量和 TPU 成本优势。
+
+### 2.3 最近三年重大业务变化、转型和收购
+
+| 时间 | 事件 | 战略含义 |
+|---|---|---|
+| 2023 | 生成式 AI 从 Bard 过渡到 Gemini 体系；公司开启效率重组 | 从“搜索广告公司”转向“AI-first 产品公司”，同时压费用保护利润率 |
+| 2024 | 启动普通股股息并继续大额回购；AI Overviews / Gemini / Cloud AI 开始商业化 | 成熟现金流属性增强，但 CapEx 开始明显上台阶 |
+| 2025 | Google Cloud AI Infrastructure 和 AI Solutions 增速明显高于 Cloud 总体；Q4 Cloud backlog 到 2400 亿美元 | Cloud 从“增长亏损业务”变成利润率 30%+、合同可见度强的 AI 容量平台 |
+| 2025Q4 | Gemini 3 发布；Gemini App MAU 超 7.5 亿；Gemini Enterprise 推出四个月后付费席位超 800 万 | 消费 AI 和企业 AI 同时从试用走向付费，但收入仍需与算力成本匹配 |
+| 2025-12 / 2026-03 | Alphabet 宣布并完成收购 Intersect，交易金额 47.5 亿美元现金加承担债务 | 直接进入数据中心与能源基础设施开发，目的不是卖电，而是缩短 AI 数据中心上电时间 |
+| 2026-03 | Google 完成收购 Wiz，金额 320 亿美元，Wiz 加入 Google Cloud 并保留多云定位 | Google Cloud 最大补短板：把 AI 安全、CNAPP、多云安全作为 Cloud 竞争入口 |
+| 2026Q1 | Verily 完成外部融资并出表；GFiber 计划与 Astound Broadband 合并，预计 2026Q4 出表 | Alphabet 正在把非核心 Other Bets 降低并表负担，把资本集中到 Waymo、AI、Cloud |
+| 2026Q1 | 公司宣布将向少数客户自有数据中心交付 TPU 硬件，2026 年后期少量确认，大部分 2027 年确认 | TPU 从内部使用/云实例租赁扩展为硬件/系统收入，扩大 TAM，但收入确认更 lumpiness |
+
+### 2.4 产业链定位
+
+Alphabet 同时站在 AI 产业链多个层级：
+
+| 层级 | Alphabet 资产 | 收入确认方式 | 价值捕获质量 |
+|---|---|---|---|
+| AI 需求层 | Search、YouTube、Gemini App、Workspace、Android、Chrome | 广告、订阅、API、企业席位 | 极高，入口和分发强，但监管风险高 |
+| AI 模型层 | Google DeepMind、Gemini、Veo、Imagen、Lyria、Genie | Cloud AI Solutions、消费订阅、广告效率 | 高，模型能力转产品速度是关键 |
+| AI 算力层 | TPU v6e/v7 Ironwood、TPU 8t/8i、A4X / GB300 GPU 实例、Axion | Cloud 实例、reserved capacity、未来 TPU 硬件销售 | 高但资本密集；折旧和利用率决定利润 |
+| AI 数据中心层 | Google 数据中心、AI Hypercomputer、Virgo network、Intersect 能源能力 | Cloud 收入、长期合同、内部效率 | 高壁垒，但电力/许可/建设周期长 |
+| AI 软件平台层 | Gemini Enterprise Agent Platform、Vertex AI、GKE、BigQuery、Agentic Defense/Wiz | 企业订阅、用量、平台服务 | 毛利高，客户切换成本逐步上升 |
+| 供应链买方层 | TSMC、HBM、光模块、电力设备、液冷、服务器 ODM 等采购 | 不直接产生收入，是 CapEx/采购承诺 | 对供应商有强议价，但仍受硬件交期制约 |
+
+## 三、估值、股价和财务健康度
+
+### 3.1 最新市场与估值快照
+
+| 指标 | 数值 | 日期 / 口径 | 解读 |
+|---|---:|---|---|
+| GOOGL 股价 | 357.77 美元 | 2026-06-11 收盘 | 盘后 360.17 美元 |
+| 市值 | 4.37 万亿美元 | 2026-06-11，StockAnalysis / S&P Global MI | 已按 AI 平台公司定价 |
+| Enterprise Value | 4.34 万亿美元 | 2026-06-11 | 因仍有净现金，EV 略低于市值 |
+| TTM PE | 27.19x | 2026-06-11 | Q1 2026 净利润含非上市股权未实现收益，需配合 operating PE 看 |
+| Forward PE | 28.51x | 2026-06-11 | 市场预期 2026-2027 仍维持高增长 |
+| PS | 10.35x | TTM | 相比传统广告公司高，反映 Cloud/AI 重估 |
+| Forward PS | 8.58x | 未来收入预期 | 依赖 Cloud 高增和 Search 继续韧性 |
+| TTM 收入 | 4225.0 亿美元 | 截至 2026Q1 TTM | Q1 单季同比 +22% |
+| TTM 收入增速 | 约 21.8% | 2026Q1 YoY / quote 统计 | 大型公司中很高 |
+| TTM 毛利率 | 60.37% | 2026-06-11 | Cloud mix 和技术基础设施折旧会压制，广告仍支撑 |
+| TTM 经营利润率 | 32.69% | 2026-06-11 | 比净利率更可比 |
+| TTM 净利率 | 37.92% | 2026-06-11，含投资收益影响 | Q1 2026 受非上市股权未实现收益抬高，不宜线性外推 |
+| TTM 自由现金流 | 644.3 亿美元 | OCF 1743.5 亿美元 - CapEx 1099.2 亿美元 | CapEx 激增后 FCF 收缩，但仍强 |
+
+### 3.2 资产负债表健康度
+
+| 指标 | 数值 | 日期 | 评价 |
+|---|---:|---|---|
+| 现金 + 短期投资 | 1268.4 亿美元 | 2026-03-31 | 仍是全球最强资产负债表之一 |
+| 总债务 | 958.8 亿美元 | 2026-03-31，StockAnalysis | 债务上升，但仍低杠杆 |
+| 净现金 | 309.6 亿美元 | 2026-03-31 | 净现金为正 |
+| Current ratio | 1.92x | 2026-06-11 统计 | 短期偿债充足 |
+| Debt / Equity | 0.20x | 2026-06-11 统计 | 杠杆低 |
+| Interest coverage | 111.85x | 2026-06-11 统计 | 利息覆盖极强 |
+| Q1 2026 CapEx | 357 亿美元 | 2026Q1 | 同比翻倍以上，技术基础设施为主 |
+| FY2026 CapEx 指引 | 1800-1900 亿美元 | 2026Q1 call | 已包含 Intersect 投资，2027 预计继续显著上升 |
+| 未开始数据中心租赁未来付款 | 756 亿美元 | 2026-03-31 10-Q | 2026-2031 开始，显示数据中心扩张锁定 |
+| 采购承诺和其他合同义务 | 3324 亿美元 | 2026-03-31 10-Q | 主要是技术基础设施、库存、内容授权、能源 take-or-pay |
+| 短期法律/监管罚款和和解计提 | 156 亿美元 | 2026-03-31 10-Q | 监管成本真实存在，但可承受 |
+
+健康度判断：**财务状况仍很强，但商业模式资本强度正在结构性上升**。Alphabet 过去是“轻资本广告现金牛”，现在转向“广告现金牛 + AI 工厂资本开支平台”。净现金、现金流和低杠杆足以支撑 2026-2027 扩张，但 FCF 对 CapEx、数据中心上电和 AI Cloud 利用率更敏感。
+
+## 四、最近五个季度财报与订单/交付分析
+
+### 4.1 财报核心表
+
+单位：收入与利润为十亿美元；利润率按分部经营利润 / 分部收入估算。AI 数据中心相关收入为研究估算，不是公司披露，主要指 Google Cloud 中 AI Infrastructure、AI Hypercomputer、TPU/GPU 实例、AI Solutions 中与模型训练/推理强绑定的用量收入；不包括 Search 广告里 AI 改善带来的普通广告收入。
+
+| 财报季度 | 总收入 / YoY | Services 收入 / YoY / OPM | Cloud 收入 / YoY / OPM | Other Bets 收入 / 亏损 | Search / YouTube Ads / Subs | Cloud backlog / bookings 线索 | 交期、供需、取消率 | 估算 AI 数据中心相关收入占比 |
+|---|---:|---:|---:|---:|---:|---|---|---|
+| 2026Q1 | 109.90 / +22% | 89.64 / +16% / 45.3% | 20.03 / +63% / 32.9% | 0.41 / -2.10 | 60.40 / 9.88 / 12.38 | Cloud backlog 462B，接近环比翻倍；>50% 预计 24 个月确认；包含 TPU 硬件销售 | 供需仍紧；TPU 硬件 2026 年后期小量确认，大部分 2027；取消率未披露，基准按低个位数但有交付延期风险 | 估算 8-12B，占 Cloud 40-60%，占总收入 7-11% |
+| 2025Q4 | 113.83 / +18% | 95.86 / +14% / 41.9% | 17.66 / +48% / 30.1% | 0.37 / -3.62 | 63.07 / 11.38 / 13.58 | Cloud backlog 240B，环比 +55%，同比 >2x；AI products 驱动 | CapEx 27.9B；技术基础设施 60% servers、40% DC/network；Waymo 员工补偿 charge 2.1B | 估算 6-9B，占 Cloud 35-50% |
+| 2025Q3 | 102.35 / +16% | 87.05 / +14% / 38.5% | 15.16 / +34% / 23.7% | 0.34 / -1.43 | 56.57 / 10.26 / 12.87 | Cloud backlog 155B，环比 +46%，同比 +82%；前九个月十亿美元级合同数超过过去两年总和 | CapEx 24.0B；Cloud 需求由 enterprise AI 拉动；有 EC fine 3.5B 压 Services margin | 估算 4-6B，占 Cloud 28-40% |
+| 2025Q2 | 96.43 / +14% | 82.54 / +12% / 40.1% | 13.62 / +32% / 20.7% | 0.37 / -1.25 | 54.19 / 9.80 / 11.20 | Cloud backlog 106B，环比 +18%，同比 +38%；上半年签多个 10 亿美元+ deals | 公司明确称进入 2026 仍将处于 demand-supply tight；CapEx 指引从 75B 上调到 85B | 估算 3-5B，占 Cloud 22-35% |
+| 2025Q1 | 90.23 / +12% | 77.26 / +10% / 42.3% | 12.26 / +28% / 17.8% | 0.45 / -1.23 | 50.70 / 8.93 / 10.38 | Q2 106B 且环比 +18% 反推 Q1 backlog 约 90B；Cloud AI Infra / GenAI Solutions 增长 | CapEx 17.2B；AI Overviews 1.5B 月活；供给紧但尚未进入 2026Q1 backlog 爆发 | 估算 2.5-4B，占 Cloud 20-33% |
+
+### 4.2 五个季度的关键变化
+
+1. **Cloud 增速从 28%-34% 直接加速到 48%-63%**：2025Q1-Q3 的 Cloud 仍是“AI 促进 GCP 高于 Cloud 总增速”；2025Q4 和 2026Q1 变成“AI Solutions 最大增长贡献 + AI Infrastructure 强需求 + TPU 硬件进入 backlog”。
+2. **Cloud 经营利润率从 17.8% 提到 32.9%**：这说明规模效应和成本效率暂时压过了折旧压力。但 Wiz 2026 年会带来 low single digit percentage point 的 Cloud operating margin headwind。
+3. **backlog 是最大订单指标**：Alphabet 不披露传统硬件 backlog、bookings、lead time 和取消率；Cloud backlog 是最接近订单挤压的数据。4620 亿美元 backlog 若有 50%+ 在 24 个月确认，相当于未来两年每年约 1150 亿美元以上的可识别收入池，但它包含普通 GCP、Workspace、AI、TPU 硬件和多期合同，不能全部等同 AI 数据中心收入。
+4. **CapEx 强度显著前置**：Q1 2026 CapEx 357 亿美元，FY2026 指引 1800-1900 亿美元；如果按 Q1 披露的技术基础设施 60% servers / 40% data centers & networking 结构，全年 servers 采购可能达 1080-1140 亿美元，DC/network 约 720-760 亿美元，但这不是收入，而是未来 Cloud/AI 产能的成本。
+5. **Search 没被 AI 立刻破坏**：Search & other 2026Q1 收入 604 亿美元、同比 +19%，说明 AI Overviews / AI Mode 至少在当前阶段没有明显稀释商业化，AI Max / Performance Max 还在改善广告工具。
+
+## 五、2026 最新指引、收入占比和重点产品
+
+### 5.1 2026Q1 最新指引与管理层信息
+
+| 指引/评论 | 具体内容 | 投资含义 |
+|---|---|---|
+| Q2 FX | 预计 Q2 consolidated revenue 有约 1 个百分点 FX tailwind，低于 Q1 的约 3 个百分点 | Q2 报表增速有汇率支持但环比减弱 |
+| Cloud TPU 硬件销售 | 2026 年后期开始对少数客户自有数据中心交付 TPU 硬件并确认少量收入，大部分收入 2027 年确认；季度之间会波动 | TPU 外售从 2027 才成为财务主线，2026 更多是订单和预付款验证 |
+| Cloud backlog | 2026Q1 462B，>50% 预计未来 24 个月确认 | Cloud 未来两年收入高可见度，但需按交付条件确认 |
+| Wiz | 归入 Google Cloud；2026 年剩余时间对 Cloud operating margin 有低个位数百分点 headwind | Cloud 收入和安全平台增强，但短期摊销/整合压利润率 |
+| CapEx | FY2026 CapEx 指引上调到 180-190B，包含 Intersect；2027 CapEx 预计较 2026 进一步显著增加 | AI 基础设施仍在加速，不是短周期结束 |
+| Other Bets | Verily 已出表；GFiber 预计 2026Q4 出表；Waymo 仍重点投入 | 降低非核心亏损，聚焦 Waymo 期权 |
+
+### 5.2 重点业务、产品和型号
+
+#### A. Google Cloud AI Infrastructure / AI Hypercomputer
+
+核心产品：
+
+| 产品/平台 | 当前阶段 | 关键规格/事实 | 收入路径 | 利润率判断 |
+|---|---|---|---|---|
+| TPU v7 Ironwood | 2025-11 GA，2026 放量 | 7th-gen TPU；Ironwood superpod 可达 9216 chips；ICI 9.6Tb/s；1.77PB shared HBM；相比 TPU v6e 每芯片训练/推理性能 >4x，峰值较 v5p +10x | Cloud TPU 实例、AI Hypercomputer、部分外部硬件路线的前代基础 | 自用改善 Cloud gross margin；外部实例毛利高但受折旧/利用率影响 |
+| TPU 8t | 2026-04 Next 26 发布 | 训练取向；9600 chips / superpod；216GB HBM；6,528GB/s HBM bandwidth；12.6 PFLOPs FP4；Virgo network，>134,000 TPU 8t chips fabric，47Pb/s non-blocking bisection | 2027 新增训练 capacity，少数大客户 reserved capacity / 硬件化 | 高端内部转移价值；供应链毛利在 HBM/封装/网络/IP |
+| TPU 8i | 2026-04 Next 26 发布 | 推理/serving/reasoning；288GB HBM；384MB on-chip SRAM；10.1 PFLOPs FP4；CAE 将 collectives latency 降 5x；Boardfly pod 1024 active chips，最大 7 hops | 2027 推理和 agent 低延迟容量主力 | 若利用率高，可显著降低 cost/token，提升 Cloud AI margin |
+| Virgo Network | 2026 Next 26 | TPU 8t scale-out fabric；两层 non-blocking topology；低延迟、高 bisection bandwidth | 作为 Cloud/TPU 绑定能力，不单独卖 | 提升客户锁定和 goodput，间接提高定价 |
+| Managed Lustre 10T / TPU Direct Storage | 2026 Next 26 | 10TB/s throughput；TPUDirect Storage 可绕过 CPU host bottleneck，训练数据访问较 Ironwood 快 10x | 训练集群存储 attach | 存储服务毛利中高，受硬件成本影响 |
+| A4X Max / NVIDIA GB300 | 2026 Next 26 客户披露 | Thinking Machines 使用 A4X Max with NVIDIA GB300 NVL72，早测训练和 serving speed 较前代 GPU +2x | GPU Cloud 实例与 AI Hypercomputer | GPU 成本高，毛利取决于 reserved contracts 与 utilization |
+| Axion N4A / C4A metal | N4A preview，C4A metal soon preview | Arm-based custom CPU；N4A 对 comparable x86 VMs price-performance up to 2x | AI orchestration、数据预处理、通用 compute | 提高主机侧成本效率 |
+
+#### B. Gemini Enterprise / Vertex AI / AI Solutions
+
+核心产品：
+
+| 产品 | 阶段 | 证据 | 收入路径 | 毛利和增长判断 |
+|---|---|---|---|---|
+| Gemini Enterprise Agent Platform | 2026 Next 26 发布 | Q1 paid MAU 环比 +40%；整合 Vertex AI、Agent Studio、Agent Registry、Agent Gateway、Observability 等 | 企业席位、agent runtime、模型调用、平台服务 | 软件毛利高，但底层推理成本可变 |
+| Gemini Enterprise App | 2026 Next 26 | 面向每个员工构建/使用/管理 agent；客户包括 Bosch、Citi、KPMG、Macquarie、Mars、Merck、NASA、PepsiCo、Home Depot 等 | seat + usage + workflow automation | 若进入企业核心工作流，留存和 upsell 强 |
+| Vertex AI / Model Garden | 已成熟，成为 Agent Platform 底座 | 模型选择、调优、部署；支持 Gemini、Anthropic Claude 等 | 企业 AI platform revenue | 多模型支持降低客户锁定阻力，但可扩大采用 |
+| Workspace Intelligence / Gemini in Workspace | 2026 Next 26 | Workspace seat 和 ARPU 增长；Q1 Workspace double digit growth | Workspace subscription uplift | 高毛利，客户替换成本高 |
+| Agentic Defense / Wiz | 2026Q1 收购完成 | Wiz 加入 Google Cloud，保留品牌，多云安全；Next 26 与 Google Threat Intelligence / Security Operations 结合 | Cloud security ARR、CNAPP、AI-APP | 安全软件高毛利，短期摊销和整合压 margin |
+
+#### C. Search / Ads AI
+
+| 产品 | 当前证据 | 收入路径 | 判断 |
+|---|---|---|---|
+| AI Overviews / AI Mode | Search query 和 usage 达历史高位；AI experiences 推动使用 | Search ads、shopping ads、new AI ad formats | 目前是扩张而非侵蚀，但长期需证明 AI 页面广告负载不伤体验 |
+| AI Max for Search campaigns | 2026Q1 移出 beta；>30% customer Search spend 使用 AI-enabled campaigns AI Max 或 Performance Max | 广告工具提高转化，维持 Search pricing | 对广告主 ROI 有正反馈，是 Search 增长韧性关键 |
+| Performance Max / Smart Bidding with Gemini | 过去一年 >20 项 Search/Shopping bidding 改进 | 同样广告预算下更多转化 | 利润率高，技术壁垒强 |
+| Direct Offers in AI Mode | Gap、L'Oréal、Chewy 等测试 | AI Mode 内新商业入口 | 早期，属于 AI 搜索商业化期权 |
+
+#### D. YouTube、订阅与 Consumer AI
+
+| 产品 | 当前证据 | 收入贡献 | 判断 |
+|---|---|---:|---|
+| YouTube ads | 2026Q1 收入 98.83 亿美元，+11% | 大规模广告现金流 | 不是最高增速，但非常稳 |
+| YouTube Music / Premium | Q1 录得 Premium 自 2018 年推出以来最大非试用净增季度 | 包含在 subscriptions/platforms/devices 123.84 亿美元 | AI 不一定是直接收入，但订阅生态强 |
+| Google One AI plans | Q1 管理层称 Google One 受 AI plans demand 拉动 | 消费订阅 ARPU 提升 | 小业务但增速高，不应漏掉 |
+| Gemini App | 2025Q4 MAU >7.5 亿，2026Q1 consumer AI plans 强 | AI subscription / cloud inference cost | 用户规模大，但免费流量成本需跟踪 |
+
+#### E. Waymo 和 Other Bets
+
+Waymo 不是 AI 数据中心收入，但属于 Alphabet 最有潜力的小业务。2026Q1 管理层披露 Waymo 每周完全自动驾驶 rides 超过 50 万，少于一年翻倍；2026 年已新增六个城市、总计在 11 个美国大城市运营。短期仍亏损，Q1 Other Bets operating loss 21 亿美元，Q4 2025 还有 21 亿美元 Waymo 员工补偿 charge。投资价值在于自动驾驶网络效应和未来 robotaxi unit economics，不应与 Cloud AI 收入混算。
+
+#### F. 可跳过或低优先级业务
+
+| 业务/产品 | 为什么不是本报告重点 |
+|---|---|
+| Google Network 广告 | 2026Q1 收入 69.71 亿美元，同比 -4%，增长性弱，且与 AI 数据中心弹性低 |
+| Pixel、Fitbit、Nest 等硬件 | 归入 subscriptions/platforms/devices，但规模和毛利相对 Search/Cloud 不突出；除端侧 Gemini 外不构成主线 |
+| Google Play 普通分成 | 稳定现金流，但监管和平台费率风险高，AI 基建相关性低 |
+| GFiber | 计划与 Astound 合并并在 2026Q4 出表，非核心 |
+| Verily | 2026Q1 已因外部融资而出表，非核心财务驱动 |
+| Wing | 有物流无人机期权，但收入贡献和 AI 基建相关性很低 |
+
+## 六、关键高增长产品/业务的当前收入、战略重要性和供需
+
+评分：5 为最高。收入贡献为 2026Q1 年化 run-rate 研究估算；Search/Ads 使用已披露收入，AI 贡献为非拆分估算。
+
+| 高增长/关键业务 | 当前收入贡献估算 | 增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 证据与解释 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Google Cloud AI Infrastructure：TPU/GPU/AI Hypercomputer | 年化 220-340 亿美元 | +80%-120% | 5 | 5 | 5 | 4 | Cloud +63%，AI infra 强增长，backlog 462B；TPU/GPU 部署继续受 HBM、封装、电力、网络约束 |
+| TPU 外部硬件/客户自有数据中心配置 | 当前收入几乎为 0；订单已进入 backlog | 2026 后期起步，2027 放量 | 5 | 5 | 5 | 4 | 公司明确 2026 后期小量确认、2027 大部分确认；客户包括 Thinking Machines、HRT、Boston Dynamics 等 TPU 需求方 |
+| Gemini Enterprise / Vertex AI / AI Solutions | 年化 120-180 亿美元 | +100%+ | 4 | 5 | 4 | 4 | Q1 AI solutions 是 Cloud 最大增长贡献，Gemini Enterprise paid MAU QoQ +40% |
+| Core GCP 数据、网络、安全与 Workspace | 年化 350-450 亿美元 | +25%-40% | 4 | 4 | 3 | 4 | Core GCP sizable contributor，Workspace double digit growth，Wiz 加强安全入口 |
+| Search & Ads AI monetization | Search & other 年化 2416 亿美元；AI 增量不可拆 | +19% | 3 | 4 | 2 | 5 | AI 正在提高查询和广告相关性，>30% Search spend 使用 AI enabled campaigns |
+| YouTube + Google One AI subscriptions | YouTube ads 年化 395 亿美元；SP&D 年化 495 亿美元；AI plans 估算个位数十亿美元 | +11% / +19% | 2 | 3 | 2 | 4 | YouTube Premium 与 Google One AI 计划拉动订阅 |
+| Wiz / Agentic Defense | 当前并表贡献极小；外部收购价 320 亿美元 | 高增长但未披露 | 3 | 4 | 3 | 4 | 多云安全和 AI security 是 Cloud 企业采购入口；短期压 Cloud margin |
+| Waymo | Other Bets 总收入年化 16 亿美元，Waymo 未拆 | rides/week 同比高增长 | 1 | 3 | 3 | 4 | 自动驾驶期权，非 AI 数据中心主线 |
+| Intersect / 能源与数据中心开发能力 | 不以外部收入为主 | 不适用 | 5 | 5 | 5 | 3 | 47.5 亿美元收购，核心价值是缩短 AI DC 上电和能源约束 |
+
+## 七、一年后收入贡献三情景预测
+
+口径：一年后指 2027Q2 前后可达到的年化收入 run-rate 或等价价值；不是 FY2027 全年 GAAP 指引。Alphabet 未披露 AI 子项，以下为研究模型。
+
+| 业务/产品 | 基准情景 | 乐观情景 | 极度乐观情景 | 主要条件 |
+|---|---:|---:|---:|---|
+| Google Cloud 总收入 | 年化 1100-1250 亿美元，YoY +35%-50% | 年化 1250-1450 亿美元，YoY +50%-70% | 年化 1450-1700 亿美元，YoY +70%-95% | backlog 24 个月转化、数据中心上电、AI demand |
+| Cloud AI Infrastructure / AI Hypercomputer | 年化 450-650 亿美元 | 年化 650-850 亿美元 | 年化 850-1100 亿美元 | TPU/GPU capacity 上电、reserved contracts、利用率 |
+| TPU 外部硬件/客户自有 DC | 年化 40-120 亿美元 | 年化 120-250 亿美元 | 年化 250-400 亿美元 | 2026H2 发货验收、2027 大部分收入确认、客户扩围 |
+| Gemini Enterprise / Vertex AI / AI Solutions | 年化 250-360 亿美元 | 年化 360-520 亿美元 | 年化 520-700 亿美元 | 企业 agent 从 PoC 到生产、paid MAU 继续高增 |
+| Workspace / Gemini seats | 年化 180-240 亿美元 | 年化 240-320 亿美元 | 年化 320-450 亿美元 | Workspace seat + ARPU，AI addon 渗透 |
+| Search & other | 年化 2650-2850 亿美元，YoY +10%-18% | 年化 2850-3100 亿美元，YoY +18%-28% | 年化 3100-3400 亿美元，YoY +28%-40% | AI Mode 不稀释广告，AI Max 提升 ROI，监管不显著破坏默认分发 |
+| YouTube ads | 年化 430-480 亿美元 | 年化 480-540 亿美元 | 年化 540-620 亿美元 | CTV、Shorts、AI 推荐和品牌广告回暖 |
+| Consumer subscriptions / Google One AI plans | 年化 550-650 亿美元 | 年化 650-800 亿美元 | 年化 800-1000 亿美元 | AI plans、YouTube Premium、Google One 付费渗透 |
+| Wiz / Agentic Defense | 年化 20-40 亿美元 | 年化 40-70 亿美元 | 年化 70-100 亿美元 | 多云安全保留、Google Cloud channel 交叉销售 |
+| Waymo | 年化 20-40 亿美元 | 年化 40-80 亿美元 | 年化 80-150 亿美元 | 城市扩张、rides/week、单位经济改善；短期仍可能亏损 |
+
+一句话判断：**未来一年最能改变 Alphabet 估值的是 Google Cloud AI Infrastructure + TPU 硬件化；最能保护下行的是 Search AI monetization；最大期权是 Waymo，但和 AI 数据中心主线无关。**
+
+## 八、BOM、单位内容量、价格传导和当前产能能力
+
+### 8.1 Google TPU / AI Hypercomputer BOM 拆分
+
+Alphabet 不披露 TPU 成本、ASP、rack 配置和外售价格。结合本地行业报告和 Google 官方规格，采用以下估算：
+
+| 层级 | 真实内容量 / 关键部件 | 估算价值量 | 价格传导 |
+|---|---|---:|---|
+| 每 TPU 8t chip | 216GB HBM；6,528GB/s HBM bandwidth；12.6 PFLOPs FP4；SparseCore、MXU/VPU、Axion CPU header | 内部转移价值估算 1.5-3.5 万美元 / chip，视 HBM、封装和良率 | HBM/wafer/CoWoS -> TPU system cost -> Cloud TPU instance / reserved capacity |
+| 每 TPU 8i chip | 288GB HBM；8,601GB/s HBM bandwidth；384MB on-chip SRAM；10.1 PFLOPs FP4；CAE；Boardfly ICI | 内部转移价值估算 1.8-4.0 万美元 / chip | 推理低延迟和 cost/token 改善 -> Gemini/Vertex/Cloud AI margin |
+| 每 TPU 8t superpod | 9600 chips；3D torus；Virgo scale-out；可跨 >134,000 chips fabric；47Pb/s bisection fabric 线索 | 单 superpod compute 等价约 1.5-3.5 亿美元，外加网络、存储、电力/冷却 | 大客户 reserved cluster 或内部 Gemini training |
+| 每 TPU 8i pod | 约 1024 active chips；Boardfly topology；OCS；max 7 hops | 单 pod compute 等价约 2000-5000 万美元 | 高并发推理、agent serving、KV cache |
+| 每高端 AI rack | ASIC/HBM compute tray 55-70%；network/NIC/switch/optics 10-18%；CPU/DRAM/storage 8-15%；power/cooling/chassis 8-15%；test/service 3-7% | 高端 AI rack 250-600 万美元；TPU rack 因配置未披露，以等价区间处理 | rack acceptance 决定收入确认，液冷/网络故障会延迟 |
+| 每 1MW IT load | 高端 rack 约 5-10 台（100-200kW/rack）或混合 rack 12-25 台；IT 侧 2500-6000 万美元 / MW，facility 侧另约 800-1800 万美元 / MW | 全栈约 3300-7800 万美元 / MW，电力紧张地区更高 | CapEx -> Cloud capacity -> multi-year backlog revenue |
+| 每 optical port | 后端 fabric 每 GPU/ASIC 0.6-1.4 个高速端口等效；800G OSFP/QSFP-DD、1.6T OSFP/DR8/2xDR4、LPO/LRO、OCS/CPO 视拓扑 | 800G 模块成熟 500-1000 美元/只；1.6T 早期 1400-2200 美元/只；CPO/OCS 价值上移 | 模块/DSP/激光器短缺 -> 网络成本 -> premium cluster price |
+
+### 8.2 当前产能能力和供应链采纳
+
+| 产品/业务 | 当前产能能力（美元计） | 被供应链/客户采纳程度 | 认证/阶段 | 约束 |
+|---|---:|---|---|---|
+| Ironwood TPU v7 | 2026 产能释放等价 180-650 亿美元，按本地行业估算 | Google Cloud 已 GA；Anthropic/Gemini/Cloud AI 使用；Cloud 客户可用 | GA / ramp | HBM、封装、Google 可用区、网络 |
+| TPU 8t / 8i | 当前为 2026Q2 新发布；未来 12 个月早期等价 120-1000 亿美元三情景 | Google Cloud Next 26 发布；interest form / selected customers；PyTorch on TPU preview | announcement / preview / design-in | 软件栈、HBM4/3E、OCS、客户迁移 |
+| A4X Max GB300 GPU instances | 2026 Google Cloud GPU capacity 高增长，但具体美元未披露 | Thinking Machines 为首批 GB300 NVL72 客户之一；Cloud AI lab 客户采用 | early customer deployment | NVIDIA allocation、rack acceptance、液冷 |
+| Gemini Enterprise Agent Platform | 当前年化 120-180 亿美元估算 | Bosch、Citi、KPMG、Macquarie、Mars、Merck、NASA、Home Depot 等公开客户 | launched / production customers | agent ROI、数据权限、安全治理、推理成本 |
+| Wiz / Agentic Defense | 收购价 320 亿美元；当前收入未披露 | Wiz 保持多云支持，进入 Google Cloud channel | acquired / integration | 留住多云客户、整合成本、竞争反应 |
+| Intersect 能源/数据中心 | 47.5 亿美元收购；价值体现在未来 MW 上电，不在收入 | 内部支撑 Google 数据中心和电力项目 | acquired / integration | 项目许可、PPA、并网、社区 |
+| Search AI / AI Max | Search 年化 2400B+ 美元收入底座 | AI Max 移出 beta；>30% Search spend 使用 AI enabled campaigns | GA / scaling | 监管、AI Mode 广告体验、默认分发 |
+
+### 8.3 价格传导链
+
+```text
+AI 用户 / 企业 agent / Search query / 视频与广告需求
+-> token volume、训练 run、推理 SLA、长上下文和 KV cache
+-> Google capacity planning：TPU/GPU/HBM/网络/存储/电力
+-> CapEx、purchase commitments、data-center leases、energy take-or-pay
+-> Cloud backlog / reserved capacity / enterprise AI contracts
+-> 收入确认：GCP usage、Gemini Enterprise seats、TPU hardware shipments、Search ads
+-> 毛利：利用率、折旧、energy cost、HBM/optics 价格、software lock-in
+```
+
+关键点：Google 是少数同时拥有需求入口、模型、芯片、数据中心和云商业化渠道的公司。因此它能在内部消化硬件成本，也能把部分成本通过 reserved capacity、API pricing、enterprise contracts、AI ad tools 和订阅传导给客户。但如果 token 价格下降快于使用量增长，或者硬件利用率低于预期，价格传导会失效。
+
+## 九、一年后产能能力、采纳和认证阶段三情景
+
+| 产品/业务 | 基准情景：2027Q2 | 乐观情景：2027Q2 | 极度乐观情景：2027Q2 |
+|---|---|---|---|
+| TPU v7 Ironwood | 继续作为 2026-2027 主力之一，年化等价 250-450 亿美元；Cloud 可用区扩大 | 年化等价 450-750 亿美元；Anthropic/Google Cloud 大客户保持高使用 | 年化等价 750-1150 亿美元；成为非 NVIDIA 推理/训练主力之一 |
+| TPU 8t | 训练客户 preview -> limited production；年化等价 80-200 亿美元 | 多个大客户 reserved cluster；年化 200-450 亿美元 | 大规模训练 fabric 建成，年化 450-700 亿美元 |
+| TPU 8i | 推理和 agent serving 早期量产；年化等价 80-250 亿美元 | 长上下文/agent 推理成为 Cloud 主力；年化 250-550 亿美元 | Gemini/Claude/企业 agent 大规模迁移，年化 550-900 亿美元 |
+| TPU 外部硬件销售 | 2027 开始大部分确认，年化 40-120 亿美元；客户少数 | 年化 120-250 亿美元；客户扩到 AI labs / HPC / 金融 | 年化 250-400 亿美元；形成接近 GPU appliance 的新业务 |
+| Google Cloud AI data centers | FY2026 180-190B CapEx 转成可用 capacity；2027 CapEx 继续升；新增 capacity 仍被需求吸收 | Intersect/lease/power bank 缩短上电，backlog 转化快 | 电力与供应链同步兑现，Google 成为 AI capacity 批发核心之一 |
+| Gemini Enterprise | 从 early enterprise adoption 到生产；seat 和 usage 同增 | 成为大客户 agent OS；与 Workspace/Wiz/Data Cloud 深度绑定 | 大企业把 Gemini Enterprise 作为默认 agent control plane |
+| Wiz/Agentic Defense | 收入并入 Cloud，margin 低个位数拖累收窄 | 多云安全交叉销售明显，客户保留高 | Wiz 成为 Google Cloud 进入 AWS/Azure 客户的最大桥头堡 |
+| Search AI commercialization | AI Max / AI Mode 商业化稳定，Search 增速回落到双位数中段 | AI user experience 带来 query expansion 和商业点击提升 | AI search 不仅防御成功，还扩大广告库存和购物转化 |
+
+## 十、基于订单积压和供给的未来一年业务增速预测
+
+### 10.1 Backlog 与收入转化模型
+
+Alphabet 披露 2026Q1 Google Cloud backlog 4620 亿美元，并称预计 50% 以上将在未来 24 个月确认收入。按保守 50%-55% 计算，未来 24 个月可确认约 2310-2540 亿美元，即年均 1155-1270 亿美元。这个数字高于 Google Cloud 2026Q1 年化 801 亿美元，说明 backlog 足以支撑高于当前 run-rate 的收入，但前提是数据中心上电、硬件交付和客户验收能跟上。
+
+不能把 4620 亿美元全算作 AI 数据中心订单，原因：
+
+1. backlog 包含普通 GCP、Workspace、AI Solutions、AI Infrastructure、TPU 硬件销售和多年合同。
+2. TPU 硬件收入会因发货时间波动，2027 才是大头。
+3. 客户合同可能包含容量可用性条件、长期服务承诺和不同收入确认方式。
+
+### 10.2 未来一年公司增速三情景
+
+| 指标 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| Alphabet 总收入未来 12 个月增速 | +16%-22% | +22%-30% | +30%-38% |
+| Google Services 增速 | +10%-16% | +16%-22% | +22%-30% |
+| Search & other 增速 | +10%-18% | +18%-28% | +28%-40% |
+| YouTube ads 增速 | +8%-15% | +15%-22% | +22%-30% |
+| Subscriptions/platforms/devices 增速 | +15%-25% | +25%-38% | +38%-55% |
+| Google Cloud 增速 | +35%-50% | +50%-70% | +70%-95% |
+| Cloud operating margin | 27%-33% | 30%-36% | 33%-38% |
+| CapEx | 180-200B | 200-230B | 230B+ |
+| FCF | 低于历史轻资本期，但仍正 | 正且增长，Cloud 利润抵消 CapEx | 可能因更大 CapEx 被压制，即使收入强 |
+
+基准情景：Cloud backlog 按计划转收入，Search 继续双位数增长，CapEx 高但不失控；总收入维持高 teens 到低 twenties 增长。  
+乐观情景：TPU 外售、Gemini Enterprise 和 AI Infrastructure 都超预期，Search AI commercial load 稳定；Cloud 接近 70% 增长。  
+极度乐观情景：TPU 8t/8i 和 Gemini Enterprise 形成新的外部生态，AI Mode/AI Max 扩大广告总量；但这也可能伴随更高 CapEx，FCF 不一定同比大幅扩张。
+
+## 十一、竞争格局、技术主流性、替代风险和客户替换成本
+
+### 11.1 Google Cloud / AI Infrastructure 竞争
+
+| 竞争者 | 主要优势 | 对 Alphabet 的威胁 | Google 护城河 |
+|---|---|---|---|
+| Microsoft Azure / OpenAI | 企业渠道、OpenAI 分发、Azure AI、Copilot、RPO 强 | 企业 AI 预算优先进入 Microsoft 生态 | Google 有 Search/YouTube 数据、TPU、Gemini、DeepMind 和更开放多模型 Cloud |
+| AWS | 最大云底座、Trainium/Inferentia、自研网络、电力/数据中心经验 | AWS 企业客户多，Trainium 多 GW 合同会抢低成本 AI capacity | Google TPU 性能/模型共设计、Gemini Enterprise 和数据分析优势 |
+| Oracle OCI | 大型 AI 合同、客户预付款、GPU capacity 批发 | 在 AI lab 长约和 GPU 容量批发中进攻强 | Google 有自研 TPU、模型和应用入口，不只是容量批发 |
+| CoreWeave / Crusoe / NeoCloud | 专用 GPU/AI factory、融资和电力项目灵活 | 抢占 AI lab 和 reserved cluster 合同 | Google 有全栈产品和信用，NeoCloud 更像补充容量 |
+| NVIDIA DGX Cloud / Cloud Partners | GPU 全栈生态、CUDA 锁定 | 客户可能绕开 TPU 继续买 NVIDIA 容量 | Google 可同时卖 GPU 和 TPU，避免单供应商 |
+| Anthropic / OpenAI / xAI 自建或联建设施 | 模型公司可能上移成基础设施买方/建设方 | 对 cloud margin 形成议价 | Google 是模型、云、芯片三位一体，并能参与模型公司供应 |
+
+技术主流性判断：
+
+1. **TPU/ASIC 是未来主流之一，但不是唯一主流**。NVIDIA GPU 仍是训练和开放生态默认选择；TPU/Trainium/MTIA/Maia 的机会来自高稳定度推理、内部 workload、特定模型 co-design 和降低 cost/token。
+2. **Google TPU 8t/8i 的训练/推理分化是正确方向**。AI 从训练走向 agentic inference 后，专用推理芯片、大 SRAM/KV cache、低延迟 collectives、Boardfly/OCS 等架构会更重要。
+3. **开放软件是 TPU 外部化的关键**。Google 2026 Next 26 明确推动 native PyTorch support for TPU preview，这是降低客户替换成本和扩大 TPU TAM 的必要条件。
+4. **客户替换成本中高**。一旦客户使用 GKE、Vertex/Gemini、Cloud Storage、Spanner、TPU/GPU capacity、Wiz security 和 Workspace agent，迁移成本不仅是算力价格，而是数据、模型、agent、权限、安全和运维体系。
+
+### 11.2 Search / Ads 竞争
+
+| 竞争者/替代 | 风险 | Google 应对 | 替换成本 |
+|---|---|---|---|
+| OpenAI / ChatGPT / Perplexity | 用户把搜索转向对话式答案，减少商业点击 | AI Overviews、AI Mode、Direct Offers、Gemini App | 对消费者低，对广告主高，因为 Google conversion data 强 |
+| Amazon Ads / Retail Media | 商品搜索和 retail ad budget 转移 | Shopping、Performance Max、AI Max、Merchant Center | 中高；广告主多平台投放但转化归因依赖 Google |
+| TikTok / Meta / YouTube Shorts | 视频广告预算竞争 | YouTube Living Room、Shorts、creator monetization | 中；预算可迁移但 YouTube 视频搜索和 CTV 独特 |
+| Apple / 浏览器默认分发变化 | 监管限制默认搜索协议 | 产品质量、Chrome/Android/Google App 自有入口 | 中高；默认入口变化会影响 TAC 和流量 |
+| DOJ / EU 监管 | 禁止独家默认搜索合约、数据共享、广告技术分拆风险 | 上诉、合同调整、产品改造 | 监管是最大非技术风险 |
+
+### 11.3 Gemini Enterprise / AI 软件竞争
+
+| 竞争者 | 优势 | Google 差异化 | 风险 |
+|---|---|---|---|
+| Microsoft Copilot / Azure AI Foundry | Office/Teams/Windows 企业入口 | Google Workspace、Vertex、GCP data、Gemini 多模态、TPU | Microsoft 企业分发强 |
+| OpenAI Enterprise | 品牌和模型心智强 | Google 可提供模型 + 云 + 数据 + 安全 + Workspace | OpenAI 自身可能进入企业工作流 |
+| Anthropic Claude | 企业安全、编码和长上下文心智 | Google Cloud 可支持 Claude，同时卖 Gemini | 若 Anthropic 与 AWS/其他云绑定更深，Google 份额受压 |
+| AWS Bedrock | 云客户多、多模型平台 | Google DeepMind 第一方模型和 TPU 成本 | AWS 渠道与 Trainium 成本优势 |
+| Salesforce / ServiceNow / Oracle / SAP | 垂直业务流程入口 | Google Agent Platform 可做底层和集成 | 应用层可能截留 AI 价值 |
+
+### 11.4 Waymo 竞争
+
+Waymo 的主要对手是 Tesla robotaxi、Cruise 复苏、Zoox、百度 Apollo、小马智行和各地本土 robotaxi。Waymo 技术和安全运营领先，但成本、城市许可、车队供应、保险和运营规模仍是约束。客户替换成本低，网络效应来自覆盖区域、等待时间、价格和安全口碑。它是 Alphabet 的重要期权，不是未来 12 个月主财务驱动。
+
+## 十二、风险清单
+
+| 风险 | 触发信号 | 影响 |
+|---|---|---|
+| AI CapEx 回报不足 | Cloud AI revenue 增速低于折旧和能源成本；FCF 持续被压 | 估值倍数下降，Cloud margin 下修 |
+| Cloud backlog 转化慢 | backlog 增但 revenue 不跟；TPU hardware revenue 推迟 | 市场质疑 backlog 质量 |
+| TPU 软件生态不足 | PyTorch / vLLM / XLA 迁移慢；客户只试点 | TPU 外售 TAM 低于预期 |
+| HBM/CoWoS/光模块/电力瓶颈 | HBM ASP 上升、CoWoS lead time 长、1.6T qual 延迟、interconnection 后移 | 供给不足，收入确认延迟，CapEx 沉淀 |
+| Search AI cannibalization | AI Mode 点击率或广告负载下降，广告主 ROI 弱 | 核心现金流受压 |
+| 监管 | DOJ/EU 限制默认分发、数据共享、广告技术拆分 | Search/Ads margin 和战略灵活性受压 |
+| 客户集中与大合同风险 | Cloud backlog 大客户延期或重议价 | 季度收入波动 |
+| 资本结构变化 | 债务继续上升、采购承诺大幅增加、FCF 转弱 | 从净现金科技股向资本密集基建股重估 |
+
+## 十三、跟踪指标
+
+| 频率 | 指标 | 阈值 / 判断 |
+|---|---|---|
+| 每季 | Google Cloud revenue growth | 低于 +35% 且 backlog 不增为负面；维持 +50% 以上为强 |
+| 每季 | Cloud operating margin | 低于 25% 说明折旧/Wiz/能源压制；30%+ 说明规模效应强 |
+| 每季 | Cloud backlog | 462B 后若继续增长，说明订单需求未见顶；若下降需看 revenue conversion |
+| 每季 | CapEx 与 technical infrastructure mix | 超 200B 年化且 Cloud revenue 未跟上为风险；server/DC/network 结构验证 AI buildout |
+| 每季 | TPU hardware revenue commentary | 2026H2 小量确认、2027 大部分确认是否兑现 |
+| 每季 | Search & other growth | 10% 以下需警惕 AI/监管/宏观；15%+ 仍强 |
+| 每季 | Gemini Enterprise paid MAU / seats / customers | QoQ +30% 以上说明 enterprise agent adoption 强 |
+| 每季 | Waymo rides/week | 50 万/周后继续翻倍是期权强化；城市扩张放慢为风险 |
+| 月度/行业 | HBM4、CoWoS、1.6T optics、OCS、变压器交期 | 任一瓶颈缓解会提高收入转化，任一恶化会推迟 Cloud capacity |
+
+## 十四、资料来源
+
+### 官方和监管来源
+
+- Alphabet 2026Q1 earnings release / SEC Exhibit 99.1：`https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm`
+- Alphabet 2026Q1 10-Q：`https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/goog-20260331.htm`
+- Alphabet 2026Q1 earnings call transcript：`https://abc.xyz/investor/events/event-details/2026/2026-Q1-Earnings-Call-2026-nW8kCrBAKS/default.aspx`
+- Alphabet 2025Q4 earnings release / SEC Exhibit 99.1：`https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/googexhibit991q42025.htm`
+- Alphabet 2025Q4 earnings call transcript：`https://abc.xyz/investor/events/event-details/2026/2025-Q4-Earnings-Call-2026-Dr_C033hS6/default.aspx`
+- Alphabet 2025Q3 earnings release / SEC Exhibit 99.1：`https://www.sec.gov/Archives/edgar/data/1652044/000165204425000087/googexhibit991q32025.htm`
+- Alphabet 2025Q3 earnings call transcript：`https://abc.xyz/investor/events/event-details/2025/2025-Q3-Earnings-Call-2025-4OI4Bac_Q9/default.aspx`
+- Alphabet 2025Q2 earnings release / SEC Exhibit 99.1：`https://www.sec.gov/Archives/edgar/data/1652044/000165204425000056/googexhibit991q22025.htm`
+- Alphabet 2025Q2 earnings call transcript：`https://abc.xyz/investor/events/event-details/2025/2025-Q2-Earnings-Call/`
+- Alphabet 2025Q1 earnings release：`https://s206.q4cdn.com/479360582/files/doc_financials/2025/q1/2025q1-alphabet-earnings-release.pdf`
+- Google Cloud Next 26 keynote summary：`https://cloud.google.com/blog/topics/google-cloud-next/welcome-to-google-cloud-next26`
+- Google Cloud AI infrastructure at Next 26：`https://cloud.google.com/blog/products/compute/ai-infrastructure-at-next26`
+- Google Cloud TPU 8t / TPU 8i architecture deep dive：`https://cloud.google.com/blog/products/compute/tpu-8t-and-tpu-8i-technical-deep-dive`
+- Google Cloud Ironwood GA / Axion VMs：`https://cloud.google.com/blog/products/compute/ironwood-tpus-and-new-axion-based-vms-for-your-ai-workloads`
+- Google Blog Ironwood TPU overview：`https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/ironwood-google-tpu-things-to-know/`
+- Google Cloud / Thinking Machines AI Hypercomputer press release：`https://www.googlecloudpresscorner.com/2026-04-22-Thinking-Machines-Expands-Use-of-Google-Cloud-AI-Hypercomputer`
+- Google completes Wiz acquisition：`https://cloud.google.com/blog/products/identity-security/google-completes-acquisition-of-wiz`
+- Alphabet Intersect acquisition announcement：`https://abc.xyz/investor/news/news-details/2025/Alphabet-Announces-Agreement-to-Acquire-Intersect-to-Advance-U-S--Energy-Innovation-2025-DVIuVDM9wW/default.aspx`
+- U.S. DOJ Google remedies release：`https://www.justice.gov/opa/pr/department-justice-wins-significant-remedies-against-google`
+
+### 市场数据和估值来源
+
+- StockAnalysis GOOGL statistics，S&P Global Market Intelligence 数据，最后检查 2026-06-11：`https://stockanalysis.com/stocks/googl/statistics/`
+
+### 项目内行业资料
+
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`

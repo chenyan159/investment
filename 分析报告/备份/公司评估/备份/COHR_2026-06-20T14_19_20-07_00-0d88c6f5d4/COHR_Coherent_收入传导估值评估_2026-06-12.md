@@ -1,0 +1,170 @@
+# 公司收入传导与价值传导评估：Coherent（COHR）
+
+报告日期：2026-06-12（美国太平洋时间）  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM，约等于从 2026-06-12 起未来 12 个月，覆盖 Q4 FY2026 与 Q1-Q3 FY2027 的经营传导。  
+资料边界：使用 `公司调研/` 与 `行业调研/`，并用 Coherent、SEC、NVIDIA 等公开一手资料补足最新财务和产品节点；未读取、引用或继承 `特征量化/`、Signals、回归、排序或模型比较资料。  
+重要限制：本报告只做经营收入、利润和现金流传导，不做股票评级、目标价、估值倍数或市场定价判断；NVIDIA 投资额、长期采购承诺、SAM、客户总 capex 和行业 TAM 不直接等同为 COHR 的 NTM 可确认收入。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 公司收入和利润传导；FY2027、2030 SAM、CPO 长约、NVIDIA 多年合作只作为补充口径或远期期权。
+- 当前收入基准、指引和 run-rate：Q3 FY2026 收入为 18.056 亿美元，Datacenter & Communications 为 13.617 亿美元、占 75.4%；Industrial 为 4.440 亿美元。Q4 FY2026 公司指引为收入 19.10-20.50 亿美元，非 GAAP 毛利率 39.0%-41.0%，非 GAAP EPS 1.52-1.72 美元。Q4 指引中点隐含 FY2026 全年收入约 70.5 亿美元。
+- 重要产品/业务线：800G/1.6T AI 光模块；InP EML/CW laser/photodiode 与 6 英寸 InP 产能；OCS 与 OCS-optimized optics；DCI/ZR/ZR+/multi-rail；CPO/NPO/ELS；Industrial 传统激光、材料与精密制造业务；200G VCSEL/thermal 为低基数远期期权。
+- NTM 公司收入四情景：悲观 78-84 亿美元；基准 88-96 亿美元；乐观 100-112 亿美元；极度乐观 112-124 亿美元。绝对增速用最近四季度收入约 66.0 亿美元作比较，约为 +18%-27%、+33%-45%、+51%-70%、+70%-88%。
+- 利润或 EBITDA 四情景：基准非 GAAP 毛利率约 39.5%-41.5%，非 GAAP 经营利润率约 20%-22%，非 GAAP 净利润约 13.5-16.5 亿美元；极度乐观只有在 1.6T、InP、OCS/CPO 和费用杠杆同时成立时才允许经营利润率进入 25%-28%。
+- 最大传导瓶颈：需求端不是首要瓶颈，收入端瓶颈主要是 InP 产能、1.6T/OCS/CPO 客户认证、良率、光学对准、测试和交付节奏。
+- 最大利润率变量：6 英寸 InP 良率和高端产品 mix 能否抵消 800G/1.6T 模块 ASP 下行、扩产折旧、R&D 与工作资本压力。
+- 最大现金流变量：库存、应收账款、capex 和客户预付款。Q3 FY2026 10-Q 显示前 9 个月经营现金流约 0.10 亿美元，PP&E 增加约 5.47 亿美元，存货升至 21.27 亿美元；增长很强，但现金转换仍在扩产周期中。
+- 可信度：基准为中高；乐观为中；极度乐观为低到中。原因是公司层面 A 级证据很强，但产品级 backlog、1.6T、CPO、OCS 和客户收入拆分没有完整披露。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 800G/1.6T AI 光模块与 transceiver | Q3 FY2026 D&C 分部内可见；产品拆分未披露，当前年化推算约 28-36 亿美元 | 约 42%-55% 的公司收入为推算口径 | NTM 收入主引擎，直接连接 AI scale-out 网络 | B/C | 进入基准，但按产能、良率和 ASP 折扣 | 3.2T/400G-lane 进入 2027+ 补充 |
+| InP EML/CW laser/photodiode 与 6 英寸 InP | 已在 6 英寸线生产，嵌入自有模块和外售器件；收入不可与模块简单相加 | 无法可靠拆分 | 利润率和供给上限核心变量 | B/C | 作为收入上限和毛利率驱动进入基准；不与模块重复加总 | Zurich 6 英寸产能、400G EML 属远期期权 |
+| OCS 与 OCS-optimized transceivers | 公司披露 OCS 瓶颈已解除、收入预计环比增长；金额未披露 | 推算约 3%-8% | 高价值系统层增长点，可能拉动更多光模块 | C | 小比例进入基准，乐观/极度乐观弹性大 | 512x512、跨客户复制为远期期权 |
+| DCI/ZR/ZR+/multi-rail 与 transport | Communications Q3 FY2026 增长强，ZR/ZR+ 与 scale-across 需求可见；金额未披露 | 推算约 15%-25% | AI campus、metro DCI 和跨园区训练的重要利润池 | B/C | 进入基准，multi-rail 初始收入更偏乐观 | multi-rail 2027 初规模化为补充口径 |
+| CPO/NPO/ELS/optical engine | NVIDIA 非独家多年战略协议、20 亿美元投资、采购承诺和 future capacity rights；初始 scale-out CPO 收入预计 2026H2 | NTM 起始收入小，推算 <5%-8% | 战略价值极高，但 NTM 确认节奏有限 | B/C/D | 只把 H2 CY2026 可交付部分纳入基准；大部分进入乐观或远期期权 | scale-up CPO 2027H2、Open CPX/XPO 为远期期权 |
+| Industrial 传统激光、材料、精密制造与热相关材料 | Q3 FY2026 收入 4.440 亿美元；年化约 17.8 亿美元 | 24.6% | 抵消项和现金流底座，不是 AI 光互联主线 | A | 进入基准，按低增或温和恢复处理 | Thermal/Thermadite/diamond cold plate 主要为 2027+ |
+| 200G VCSEL/short-reach scale-up optics | 产品和产能历史可见，AI scale-up 收入小 | 无法可靠量化 | 小基数高弹性，但 NTM 认证节奏不足 | C/D | 不进入基准主收入，只作低额乐观上限 | 若 NPO/short-reach optics 被采用，2027+ 弹性上升 |
+
+## 3. 产品需求四情景
+
+本步口径：只评估外部需求池，不评估 Coherent 份额、收入确认、利润率或公司汇总。需求锚来自本地行业调研与公开资料：AI-focused optical transceiver 2026 年约 260 亿美元、1.6T 从 2026H2 进入规模供货、EML/CW-DFB 是供给瓶颈、CPO/NPO 2026 以 pilot 和 ELS/engine 小批量为主。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 800G/1.6T AI 光模块 | 2026 AI 光模块约 260 亿美元；800G 已主流，1.6T 2026H2 放量 | NTM 需求池 220-280 亿美元；800G 量增价跌，1.6T ramp 延后 | 300-360 亿美元；800G 高量，1.6T 成新增主力 | 380-450 亿美元；1.6T design-in 加速，800G ASP 跌幅温和 | 470-560 亿美元；GB300/Rubin/TPU/ASIC 同步上修且供给仍紧 | 相对当前 260 亿美元年需求锚，基准绝对增加约 40-100 亿美元 | 基准符合当前行业预期；乐观高于当前预期 | 依据：TrendForce、Cignal、本地 800G/1.6T 报告；反证：800G 库存、XPU/switch 上电延后、ASP 快速下跌 |
+| InP EML/CW/PD 与 6 英寸 InP | 2026 EML+CW-DFB 月产能约 5,070 万颗，集中度高 | 利用率低于预期，客户库存超过 1 季需求；需求增速 <20% | 需求维持高位，1.6T/CPO/SiPh 同时拉动；缺口逐步缓解 | 1.6T 与 CPO 共同锁产能，客户预付款和 LTA 延续 | CPO/OCS/3.2T 使高功率 laser 与 400G EML 同时短缺 | 从“短缺 10%-30%”逐步转为“高利用率但可交付” | 基准为高需求但不假设永久短缺 | 依据：TrendForce 与 Coherent 6 英寸 InP 披露；反证：扩产后利用率 <80%、领先供应商降价 |
+| OCS 与 OCS-optimized optics | Google/TPU-like 架构与 Coherent OCS 机会；公司把 OCS 市场机会看至 40 亿美元以上 | 主要停留在单客户或少数 PoC，NTM 需求 <5 亿美元 | 5-12 亿美元级别 OCS/相关 optics 需求；多客户小规模部署 | 12-22 亿美元，320x320 多客户量产、512x512 认证 | 20-40 亿美元，OCS 成训练集群调度基础件 | 基准相对当前小基数明显增长，但不是主流网络标配 | 基准略高于历史 run-rate，但仍低于远期乐观叙事 | 依据：Coherent OCS 评论、本地 CPO/OCS 资料；反证：客户自研、网络软件复杂、可靠性 |
+| DCI/ZR/ZR+/multi-rail | AI campus、scale-across、metro DCI 需求；Coherent communications Q3 增长强 | NTM 需求池 70-90 亿美元，AI DCI 延后 | 90-125 亿美元，ZR/ZR+ 和 coherent transport 继续放量 | 125-160 亿美元，multi-rail 初始收入和跨园区训练拉动 | 160 亿美元以上，分布式训练和推理园区化明显提前 | 基准相对 2025 coherent/optical transport run-rate 上修 | 基准符合 AI scale-across 当前预期 | 依据：本地激光器/EML、CPO 报告与 Marvell/Ciena/Coherent 产品信号；反证：园区光纤、客户 capex 和 coherent DSP 供给 |
+| CPO/NPO/ELS | NVIDIA/Coherent 2026-03 合作；Open CPX/XPO；2026 是设计导入和 scale-out 初始收入年 | 主要是样品和 NRE，NTM ELS/engine 需求 <5 亿美元 | 6-15 亿美元，ELS/optical engine 小批量进入交换侧 pilot | 12-28 亿美元，NVIDIA 外再有 CSP 量产导入 | 25-50 亿美元，CPO/NPO 成高端交换侧默认之一 | 基准绝对增量小于 pluggable，但战略信号强 | 基准不把多年采购承诺一次性收入化 | 依据：Coherent/NVIDIA、OFC 2026、本地 CPO 报告；反证：field service、热漂移、外置光源冗余、标准分裂 |
+| LPO/LRO/TRO 线性光模块 | 1.6T 功耗、延迟和热压力推动线性路线；纯 LPO 仍复杂 | NTM 需求 2-4 亿美元级低端试量，客户 qualification 慢 | 4-8 亿美元，1.6T LRO/TRO 是现实折中 | 8-14 亿美元，一线云厂短距采用扩大 | 14-22 亿美元，host SerDes 与 optics 协同显著超预期 | 相对当前样品/小量明显增长 | 基准为当前预期内的受控导入 | 依据：本地 LPO/LRO 报告；反证：互操作、遥测、FEC/BER、客户运维复杂 |
+| Industrial 传统激光与材料 | Q3 FY2026 Industrial 收入同比 -16%，受剥离和周期影响 | 外部需求 -10% 至 -5%，工业/消费/精密制造复苏延后 | 0%-5% 温和恢复，半导体和显示设备改善有限 | +5%-10%，display/semicap/precision manufacturing 同步恢复 | +10% 以上，工业周期和新材料应用同时改善 | 相对当前低迷需求锚，基准绝对增加有限 | 基准为低增长现金流底座 | 依据：公司分部趋势；反证：客户 capex 延后、出售业务导致可比基数变化 |
+
+## 4. 可收入化暴露与收入基数
+
+本步口径：只判断哪些需求能进入 Coherent NTM 收入表，以及当前可收入化基数是多少；不预测增长，不判断利润率。收入锚点优先使用 Q3 FY2026 收入、D&C/Industrial 分部、Q4 FY2026 指引、管理层对 backlog、LTA、InP、OCS、CPO 的披露。产品级拆分多为推算，不能等同于披露收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 800G/1.6T AI 光模块 | D&C Q3 FY2026 收入 13.617 亿美元；管理层称数据中心增长由 800G 和 1.6T 驱动；产品拆分未披露 | 直接 | 模块收入高弹性，毛利受 ASP、良率和垂直整合影响 | 30-36 亿美元 | 40-50 亿美元 | 52-66 亿美元 | 68-80 亿美元 | 基准符合 Q4 指引和 FY2027 增速预期；乐观高于当前预期 | B/C | 是 | A 级分部收入 + B/C 级产品披露；按折扣纳入 | NTM 主收入引擎，但不把行业 260 亿美元直接映射为公司收入 |
+| InP EML/CW/PD 与 6 英寸 InP | 6 英寸线已生产 EML、CW laser、PD；公司称良率高于 3 英寸线并贡献收入和毛利；未披露单项收入 | 直接与嵌入式 | 高壁垒器件；更多体现为毛利率、供给上限和内部成本 | 等效 10-14 亿美元 | 等效 14-22 亿美元 | 等效 22-32 亿美元 | 等效 32-45 亿美元 | 基准反映扩产兑现；不是独立可加总收入 | B/C | 是，但不单独加总 | 进入产品利润和交付能力，不与模块重复计算 | 作为 NTM 产能和利润质量核心，不作为单独收入池硬加 |
+| OCS 与 OCS-optimized optics | 管理层称 OCS 市场机会上修、瓶颈解除、两座工厂爬坡；金额未披露 | 直接 | 系统层和配套 optics 毛利有上行空间，执行成本也高 | 2-4 亿美元 | 4-8 亿美元 | 8-14 亿美元 | 15-24 亿美元 | 基准略高于当前 run-rate，需交付验证 | C | 是，小比例 | 已有 shipping 和产能爬坡，但未披露金额 | NTM 基准纳入有限；乐观取决于 backlog 转收入 |
+| DCI/ZR/ZR+/multi-rail | Communications 收入强，Q3 communications 由 DCI、scale-across、telecom 需求推动；产品拆分未披露 | 直接 | 高壁垒 coherent/transport，毛利通常优于普通低端模块 | 9-12 亿美元 | 12-18 亿美元 | 18-26 亿美元 | 26-36 亿美元 | 基准符合 communications 加速；multi-rail 多为补充 | B/C | 是 | D&C 分部、管理层 DCI/ZR/ZR+ 描述、行业 DCI 需求 | 进入基准；multi-rail 初始收入以保守折扣纳入 |
+| CPO/NPO/ELS/optical engine | NVIDIA 非独家多年协议、20 亿美元投资、采购承诺；公司预计 scale-out CPO 2026H2 初始收入，scale-up 2027H2 | 直接，但 NTM 只认可可交付部分 | 高毛利潜力，但认证和量产风险高 | 0-2 亿美元 | 1-5 亿美元 | 6-12 亿美元 | 14-22 亿美元 | 基准低于市场叙事，只确认 H2 初始收入 | B/C/D | 是，小比例；大部分不入基准 | B 级战略协议 + C/D 级量产路径；需收入确认折扣 | NTM 基准只纳入小额；剩余列乐观、极度乐观或远期期权 |
+| LPO/LRO/TRO 相关模块 | 1.6T 路线中的一部分；Coherent 可通过模块、InP/SiPh/PIC 获益；未披露收入 | 直接/间接 | 降功耗有价值，但客户认证复杂 | 无法可靠量化 | 作为 1.6T 模块子集，不单列 | 2-5 亿美元增量 | 5-10 亿美元增量 | 基准不单列，以免重复计算 1.6T | C/D | 否，作为 1.6T mix 处理 | 无单独披露，避免双计 | 基准并入 800G/1.6T；乐观表述为 mix 上行 |
+| Industrial 传统激光与材料 | Q3 FY2026 Industrial 收入 4.440 亿美元，A 级分部收入 | 直接 | 较稳现金流；AI 相关性低，部分材料/thermal 有期权 | 14.5-16.5 亿美元 | 16.5-19.0 亿美元 | 19.0-21.0 亿美元 | 21.0-23.0 亿美元 | 基准为低增长或温和恢复，符合当前低迷预期 | A | 是 | 分部收入、出售 A&D/Munich 后可比口径 | 作为公司抵消项和现金流底座进入基准 |
+| 200G VCSEL/thermal/Thermadite | OFC 产品和路线可见，但 NTM 收入小；thermal 更多在 2027 后 | 直接/间接 | 若通过认证，毛利可能好；当前不确定 | 0 | 0-1 亿美元 | 1-3 亿美元 | 3-6 亿美元 | 当前预期外或上限口径 | C/D | 否 | 产品展示和远期时间表不足以进入基准主收入 | 不进入 NTM 基准；仅作跟踪或远期期权 |
+
+排除项：2030 SAM、NVIDIA 20 亿美元投资额、客户总 capex、AI 数据中心总建设额、CPO 多年采购承诺全额、行业 260 亿美元市场规模、1.6T 行业总出货量，均不直接进入 COHR NTM 基准收入。
+
+## 5. 产品级收入和利润贡献
+
+本步口径：从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内能给公司贡献多少收入和利润。产品之间存在重叠，尤其 InP/CW/PD 可能嵌入自有模块，因此“等效内容量”不与模块收入简单相加。利润贡献以非 GAAP 毛利/经营利润方向为主，产品级经营利润因公司未披露而部分填“无法可靠量化”。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 800G/1.6T AI 光模块 | 悲观 | 30-36 亿美元 | 毛利约 10-13 亿美元；经营利润无法可靠量化 | GM 下行至 34%-37% | 低于当前预期 | 800G ASP 下跌、1.6T 认证延后、客户库存上升 | 保留为 downside | ASP 连续两季跌 10%+、1.6T 低于行业预期 |
+| 800G/1.6T AI 光模块 | 基准 | 40-50 亿美元 | 毛利约 15-20 亿美元 | GM 38%-41% | 符合 Q4 指引和 FY2027 加速 | D&C Q3 75.4%，数据中心和通信需求强，1.6T ramp | 保留 | InP、DSP/SiPh、测试、客户验收 |
+| 800G/1.6T AI 光模块 | 乐观 | 52-66 亿美元 | 毛利约 21-28 亿美元 | GM 40%-43% | 高于当前预期 | 1.6T 快速替代 800G，客户 LTA 和产能扩张顺利 | 保留但需订单验证 | 普通模块多供应商压价 |
+| 800G/1.6T AI 光模块 | 极度乐观 | 68-80 亿美元 | 毛利约 29-36 亿美元 | GM 42%-45% | 显著高于当前预期 | GB300/Rubin/TPU/ASIC 同步上修，1.6T 仍短缺 | 保留为上限 | 若只是行业需求强但 COHR 捕获不足，降为乐观 |
+| InP EML/CW/PD 与 6 英寸 InP | 悲观 | 等效 10-14 亿美元，不单独加总 | 毛利率贡献有限；扩产折旧拖累 | GM 改善不明显 | 低于当前预期 | 新产能良率或客户吸收低于预期 | 保留 | 利用率 <80%、客户库存超 1 季 |
+| InP EML/CW/PD 与 6 英寸 InP | 基准 | 等效 14-22 亿美元，不单独加总 | 支撑公司 GM 39.5%-41.5% | GM 稳中升 | 符合当前预期 | 6 英寸生产 EML/CW/PD，良率高于 3 英寸；产能翻倍目标 | 保留 | 设备、epi、burn-in、封装和测试 |
+| InP EML/CW/PD 与 6 英寸 InP | 乐观 | 等效 22-32 亿美元 | 高端器件 mix 支撑 GM 41%-43% | 上行 | 高于当前预期 | CPO/1.6T 同时锁产能，客户预付款支持 capex | 保留 | Lumentum/Broadcom/Sumitomo/Mitsubishi 多源 |
+| InP EML/CW/PD 与 6 英寸 InP | 极度乐观 | 等效 32-45 亿美元 | 高毛利瓶颈层成为主要利润扩张来源 | 显著上行 | 显著高于当前预期 | 6 英寸多站点放量、CPO/ELS 提前规模化 | 保留为上限 | 若供给追上需求，溢价快速下降 |
+| OCS 与 OCS-optimized optics | 悲观 | 2-4 亿美元 | 毛利无法可靠量化；项目成本高 | 低于公司均值或不扩张 | 低于当前预期 | 瓶颈解除但客户部署慢 | 保留 | 网络软件、可靠性、客户自研 |
+| OCS 与 OCS-optimized optics | 基准 | 4-8 亿美元 | 有望高于普通模块毛利；经营利润仍需爬坡 | GM 上行但费用投入高 | 符合谨慎预期 | 产能瓶颈解除、两座工厂爬坡 | 保留 | 320x320 量产客户数和 512x512 认证 |
+| OCS 与 OCS-optimized optics | 乐观 | 8-14 亿美元 | 毛利和系统附加价值改善 | 上行 | 高于当前预期 | 多客户转量产，OCS-optimized optics 附加 | 保留 | 单客户集中或 PoC 延迟 |
+| OCS 与 OCS-optimized optics | 极度乐观 | 15-24 亿美元 | 若成为训练集群基础件，利润贡献非线性 | 显著上行 | 显著高于当前预期 | OCS 扩散到多个 hyperscaler 和 ASIC 集群 | 下移概率高，保留为上限 | 需要软件、硬件和客户架构同时成立 |
+| DCI/ZR/ZR+/multi-rail | 悲观 | 9-12 亿美元 | 毛利稳但增长慢 | 持平或小幅下行 | 低于当前预期 | AI scale-across 延后或 telecom 周期反复 | 保留 | coherent DSP、客户 capex、metro fiber |
+| DCI/ZR/ZR+/multi-rail | 基准 | 12-18 亿美元 | 毛利较稳，帮助公司 mix | 稳中升 | 符合当前预期 | Q3 communications 强，ZR/ZR+、DCI 需求可见 | 保留 | multi-rail 初始收入节奏 |
+| DCI/ZR/ZR+/multi-rail | 乐观 | 18-26 亿美元 | 高壁垒 coherent/transport 改善利润质量 | 上行 | 高于当前预期 | AI campus 和跨园区训练拉动 scale-across | 保留 | 大客户 DCI 项目时间表 |
+| DCI/ZR/ZR+/multi-rail | 极度乐观 | 26-36 亿美元 | 可成为第二增长曲线 | 显著上行 | 显著高于当前预期 | multi-rail 和 1.6T coherent 同步量产 | 下移概率中等 | 2027 收入时点可能晚于 NTM |
+| CPO/NPO/ELS/optical engine | 悲观 | 0-2 亿美元 | 以 R&D/NRE 为主，利润贡献小 | 费用先行 | 低于当前预期 | 初始收入延迟，field service 未定 | 保留 | CPO 可靠性、维护、热、标准 |
+| CPO/NPO/ELS/optical engine | 基准 | 1-5 亿美元 | 高毛利潜力但规模小；经营利润无法可靠量化 | 小幅上行 | 符合谨慎预期 | NVIDIA 合作、2026H2 scale-out 初始收入 | 保留 | 多年承诺不能一次性收入化 |
+| CPO/NPO/ELS/optical engine | 乐观 | 6-12 亿美元 | ELS/engine 毛利较好，费用杠杆开始体现 | 上行 | 高于当前预期 | NVIDIA 外新增客户，Open CPX/XPO 推进 | 保留 | 客户设计导入和交付确认 |
+| CPO/NPO/ELS/optical engine | 极度乐观 | 14-22 亿美元 | 若 CPO 提前量产，利润率弹性高 | 显著上行 | 显著高于当前预期 | scale-out 和部分 scale-up 同时提前 | 下移到乐观上限 | 任一核心环节缺证据即不入极度乐观 |
+| Industrial | 悲观 | 14.5-16.5 亿美元 | 毛利受低利用率压制 | 下行 | 低于当前预期 | 工业周期继续弱，剥离后基数低 | 保留 | 传统客户 capex 延后 |
+| Industrial | 基准 | 16.5-19.0 亿美元 | 稳定现金流；低增长 | 持平 | 符合当前预期 | Q3 4.44 亿美元 run-rate；出售低毛利业务 | 保留 | 不是 AI 光互联主线 |
+| Industrial | 乐观 | 19.0-21.0 亿美元 | 利用率恢复，费用吸收改善 | 小幅上行 | 略高于当前预期 | semicap/display/precision manufacturing 恢复 | 保留 | 复苏需要订单验证 |
+| Industrial | 极度乐观 | 21.0-23.0 亿美元 | 对公司利润有帮助但不是主引擎 | 上行有限 | 高于当前预期 | 工业周期和新材料/thermal 同时改善 | 仅作上限 | 不把 thermal 远期期权提前放入 NTM |
+
+## 6. 公司收入和利润四情景
+
+本步口径：将产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、非 GAAP 净利润和自由现金流方向。汇总时剔除重复计算：InP EML/CW/PD 多数嵌入模块和 CPO，不与模块收入硬加；CPO 长约只确认 NTM 可交付部分；Industrial 是抵消项。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 78-84 亿美元 | 较最近四季度约 66.0 亿美元 +18%-27% | 低于 Q4 指引延伸和 FY2027 增速加速预期；仍可能高于 FY2026 但低于当前经营锚 | GAAP 35.5%-37.5%；非 GAAP 37.5%-39.0% | GAAP 8%-11%；非 GAAP 17%-19% | 非 GAAP 净利润约 10.0-12.5 亿美元；EBITDA 无法可靠量化 | 负到小幅正；库存和 capex 吃掉利润 | 中 | 800G/1.6T ASP 下行、InP 良率/认证慢、库存上升、Industrial 不恢复 |
+| 基准公司 | 88-96 亿美元 | +33%-45% | 符合 Q4 指引、record backlog、D&C 增长和 FY2027 增速高于 FY2026 的当前预期 | GAAP 37%-39%；非 GAAP 39.5%-41.5% | GAAP 11%-14%；非 GAAP 20%-22% | 非 GAAP 净利润约 13.5-16.5 亿美元；EBITDA 无法可靠量化 | 近 breakeven 到正；Q4/FY2027 仍有 capex 和营运资本压力 | 中高 | 产能兑现、1.6T ramp、OCS 转收入、CPO 小额收入确认 |
+| 乐观公司 | 100-112 亿美元 | +51%-70% | 高于当前预期；1.6T、OCS、DCI 和 CPO 小规模收入同步强于预期 | GAAP 39%-41%；非 GAAP 41.5%-43.5% | GAAP 14%-18%；非 GAAP 22%-25% | 非 GAAP 净利润约 18.0-22.5 亿美元；EBITDA 无法可靠量化 | 转正并改善，但若 capex 继续上修则现金转换滞后 | 中 | 高端产能、客户验收、ASP 维持、R&D/SG&A 杠杆 |
+| 极度乐观公司 | 112-124 亿美元 | +70%-88% | 显著高于当前预期；需要需求、公司捕获、利润质量和执行质量同时突破 | GAAP 41%-43%；非 GAAP 43%-45% | GAAP 18%-22%；非 GAAP 25%-28% | 非 GAAP 净利润约 24.0-30.0 亿美元；EBITDA 无法可靠量化 | 明显为正但仍受扩产节奏影响 | 低到中 | CPO/OCS 提前规模化、1.6T 仍短缺、InP 多站点顺利、客户库存不反转 |
+
+公司汇总校验：
+
+- Q4 FY2026 指引中点为 19.8 亿美元，单季年化约 79.2 亿美元。悲观情景不是收入下滑，而是“未能在 FY2027 继续加速”。
+- 基准情景要求 D&C 保持 35%-50% 左右 NTM 增长，Industrial 稳定或小幅恢复，非 GAAP 毛利率围绕 40% 上下。
+- 乐观情景要求 1.6T、OCS、DCI/ZR 和 CPO 初始收入同时强，且 800G ASP 降幅没有吞噬 mix 上行。
+- 极度乐观不能只靠 NVIDIA 合作或 CPO 叙事，需要 1.6T 收入、InP 产能、OCS 转化、CPO 收入确认和公司费用杠杆同时成立。
+
+## 7. 证据校准、反证和可信度
+
+本步口径：不重新预测经营结果，只对前四步情景做证据校准。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q3 FY2026 收入 18.056 亿美元、D&C 13.617 亿美元、Q4 收入指引 19.10-20.50 亿美元 | 公司收入基数 | 支撑基准 NTM 从 88 亿美元以上起步 | 支撑非 GAAP GM 39%-41% 附近 | Q4 指引验证短期交付能力 | 基准保留 |
+| D&C Q3 收入同比 +41%，分部利润同比 +49% | 产品贡献和公司利润 | 支撑 800G/1.6T、DCI、OCS 作为主增长池 | 高端 mix 与规模效应已显性 | R&D 投入增加但 SG&A 有杠杆 | 基准保留，乐观保留 |
+| record backlog、orders into CY2028、LTAs to decade-end、客户预付款和 minimum demand | 收入确认可信度 | 提高未来 4-8 季收入可见度，但金额未披露 | 有助于产能利用率和定价 | 客户资金可缓冲部分 capex | 基准保留；极度乐观不因未披露金额上移 |
+| NVIDIA 20 亿美元投资、非独家多年合作和采购承诺 | CPO/ELS 收入基数 | 支撑 CPO/ELS 从远期期权进入 NTM 小额基准 | 高功率 CW laser/ELS 可能改善 mix | 增强现金和扩产能力 | 基准小额保留；大额 CPO 移入乐观/极度乐观 |
+| 6 英寸 InP 输出 2026 年底前翻倍、2027 再翻倍，良率高于 3 英寸线 | 产品利润与执行 | 提高 1.6T/CPO 收入上限 | 是毛利率上修的核心正证据 | 增加 capex 和库存，但可改善单位成本 | 基准保留；乐观保留 |
+| 存货从 FY2025 年底 14.38 亿美元增至 Q3 FY2026 21.27 亿美元 | 现金流和风险 | 如果客户延迟，会压低收入确认 | 库存减值和 ASP 压力会压 GM | 经营现金流承压 | 悲观保留；不在需求层重复惩罚 |
+| 前 9 个月经营现金流约 0.10 亿美元，PP&E 增加约 5.47 亿美元 | 自由现金流 | 不直接否定收入，但说明增长资本密集 | 折旧和启动成本可能滞后体现 | FCF 基准只给 breakeven 到正 | 基准现金流下修 |
+| 800G/1.6T 供给扩产和中国/东南亚模块竞争 | 价格与产品利润 | 收入可能仍增长，但 ASP 先下行 | 低端模块毛利最受压 | 库存周转风险上升 | 悲观保留；乐观需 ASP 反证未触发 |
+| CPO/NPO field service、外置光源、热漂移和标准分裂 | CPO 收入确认 | 限制 CPO 进入 NTM 基准的比例 | 高毛利潜力不能提前兑现 | 客户认证和交付周期长 | 大部分 CPO 移入乐观/极度乐观或仅作跟踪 |
+| Industrial Q3 收入同比 -16%，受业务剥离和周期影响 | 公司组合 | 抵消部分 D&C 增长 | 若利用率低，拖累公司 GM | 现金流底座仍存在 | 基准低增保留；不把 AI 光互联风险重复压到 Industrial |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 需求仍增长但低于当前经营锚，NTM 收入 78-84 亿美元，非 GAAP GM 37.5%-39.0% | Q4 指引和 backlog 降低大幅下行概率 | ASP 下行、库存增加、客户验收延迟、Industrial 低迷 | 保留 | Downside 经营情景 | 中 | ASP 和库存风险只在产品利润/现金流层处理，不再同时压低外部需求 |
+| 基准 | Q4 指引兑现，D&C 正常爬坡，NTM 收入 88-96 亿美元，非 GAAP GM 39.5%-41.5% | A 级分部收入、Q4 指引、D&C 利润增长、InP 6 英寸良率、record backlog | 产品拆分未披露、CPO 仍小、经营现金流受 capex/库存压制 | 保留 | 最可能情景 | 中高 | CPO 远期期权未进基准主收入，不再因 CPO 风险压低 800G/1.6T 基准 |
+| 乐观 | 1.6T、OCS、DCI 和 CPO 初始收入强于预期，NTM 收入 100-112 亿美元 | 1.6T broad adoption、OCS bottleneck 解除、NVIDIA 合作、客户 LTA | 需要 ASP 稳定和多产品同步交付，证据未量化到 backlog 金额 | 保留 | Upside 经营情景 | 中 | 行业 beta 不能直接替代 COHR 公司捕获，需后续订单和收入验证 |
+| 极度乐观 | 多核心环节同时突破，NTM 收入 112-124 亿美元，非 GAAP GM 43%-45% | AI 光模块需求、InP 短缺、CPO/OCS/1.6T 路线均有正证据 | 任一环节缺证据都会降为乐观；CPO scale-up 多在 2027H2，不完全落入 NTM | 保留 | 可验证上限，不作为基准 | 低到中 | 不把 NVIDIA 投资额、SAM 或多年采购承诺全额算作 NTM 收入 |
+
+## 8. 结论
+
+- 最可能情景：基准情景。Coherent 在 NTM 内最可能从 Q4 FY2026 指引中点年化约 79 亿美元的 run-rate，推进到 88-96 亿美元收入区间；利润侧非 GAAP 毛利率保持 39.5%-41.5%，非 GAAP 经营利润率 20%-22%。这不是简单的行业 TAM 映射，而是 D&C 已披露收入、Q4 指引、backlog/LTA、InP 扩产和 1.6T/OCS/communications 当前增长共同支撑。
+- NTM 收入结论：800G/1.6T 是最大可确认收入引擎，DCI/ZR/ZR+/multi-rail 是第二层稳定增长，OCS 是有执行弹性的系统层增量，CPO/NPO/ELS 只把 H2 CY2026 可交付部分放入基准，大部分仍属于乐观和远期期权。
+- 利润/现金流结论：利润率上行并非自动来自收入增长，而是来自 6 英寸 InP 良率、内部器件占比、1.6T 高端 mix、OCS/CPO/ELS 高壁垒内容和 SG&A 杠杆。现金流短期弱于利润，原因是库存、capex 和扩产前置；基准情景下 FCF 只应视为近 breakeven 到转正，而不是同步大幅释放。
+- 主要传导瓶颈：InP/CW/EML 产能和良率、1.6T 客户认证、OCS 交付、CPO field service、ASP 下行、库存周转和客户采购节奏。需求本身目前不是最大问题，能否在 NTM 内收入确认和保住毛利是核心。
+- 乐观情景成立条件：1.6T 在 2026H2-FY2027H1 成为新增 AI fabric 的高端主力；InP 6 英寸产能按提前节点兑现；OCS backlog 转收入；communications DCI/ZR/ZR+ 继续强；800G/1.6T ASP 下行温和；客户 LTA 带来预付款或最低需求承诺。
+- 极度乐观情景成立条件：GB300/Rubin/TPU/custom ASIC 同步上修；1.6T 仍供不应求；CPO scale-out 收入显著高于初始预期且 scale-up 部分提前；OCS 被多家 hyperscaler 复制；InP 多站点扩产无明显良率/设备问题；公司非 GAAP GM 稳定在 43% 以上。
+- 悲观情景触发条件：Q4 FY2026 指引落在低端且 Q1 FY2027 无加速；D&C 增速连续两个季度低于 +25%；800G/1.6T ASP 连续两个季度跌幅超过 10%；存货继续快于收入增长；CPO 2026H2 没有可见收入；OCS 仍停留在瓶颈或 PoC；非 GAAP GM 跌破 39% 且没有 mix 修复。
+- 后续跟踪数据：D&C 分部收入和利润、Q4 FY2026 实际收入与 GM、1.6T 出货或管理层描述、6 英寸 InP 输出节点、CPO scale-out 收入确认、OCS 客户和产能、存货周转、capex、经营现金流、客户 LTA 是否继续包含预付款和 minimum demand。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Coherent 最新财务主数据为 Q3 FY2026，截至 2026-03-31，发布日期 2026-05-06；本报告研究日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Coherent FY2026 Q3 earnings release：Q3 收入 18.056 亿美元、GAAP GM 37.7%、非 GAAP GM 39.6%、Q4 FY2026 收入指引 19.10-20.50 亿美元。https://www.coherent.com/news/press-releases/third-quarter-fiscal-year-2026-results
+  - Coherent FY2026 Q3 investor presentation：D&C 75%、Q4 指引、6 英寸 InP、CPO/NPO、OCS、SAM 和产品路线。https://www.coherent.com/content/dam/coherent/site/en/documents/investors/investor-presentations/2026/may-6/investor-presentation-20260506.pdf
+  - SEC Form 10-Q for quarter ended 2026-03-31：D&C/Industrial 收入与 segment profit、库存、现金流、PP&E、contract liabilities。https://www.sec.gov/Archives/edgar/data/820318/000082031826000013/iivi-20260331.htm
+  - Coherent 2025 Annual Report：FY2026 起分部改为 Datacenter & Communications / Industrial；FY2025 Networking、Materials、Lasers 历史基数和经营说明。https://www.coherent.com/content/dam/coherent/site/en/documents/investors/annual-filings/2025/coherent-annual-report-2025.pdf
+  - NVIDIA and Coherent strategic partnership, 2026-03-02：非独家多年协议、multibillion-dollar purchase commitment、future access/capacity rights、NVIDIA 20 亿美元投资。https://www.coherent.com/news/press-releases/nvidia-and-coherent-announce-strategic-partnership
+  - Coherent OFC 2026 AI-scale optical innovations：400G/lane、3.2T、12.8T+、CPO、1.6T OSFP、XPO/Open CPX。https://www.coherent.com/news/press-releases/coherent-ai-scale-optical-innovations-ofc-2026
+  - Coherent InP technology innovation, 2026-03-17：400mW CW laser、200G EML、400G D-EML、PD、nITLA、800G/1.6T IQ modulators、6 英寸 InP 多站点扩产。https://www.coherent.com/news/press-releases/coherent-demonstrates-inp-technology-innovation
+- 本地公司资料：
+  - `公司调研/AI网络_光互联_连接器/COHR_Coherent_公司调研_2026-06-11.md`
+- 本地行业资料：
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_激光器、EML与光器件_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_LPO_LRO线性光模块_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 收入补充口径：前三季度收入 50.726 亿美元，加 Q4 指引中点 19.8 亿美元，得到 FY2026 约 70.5 亿美元。
+  - 最近四季度收入补充口径：Q4 FY2025 15.29 亿美元 + Q1 FY2026 15.81 亿美元 + Q2 FY2026 16.856 亿美元 + Q3 FY2026 18.056 亿美元，约 66.0 亿美元；本报告用其作为 NTM 绝对增速基数。
+  - FY2027 不是主表口径：管理层预期 FY2027 增速高于 FY2026，但未给完整 FY2027 指引；因此本报告只在情景中使用，不把它当作硬收入承诺。
+  - CPO/NPO/ELS、scale-up CPO、thermal、200G VCSEL、3.2T/400G-lane 多数为 2027H2 以后更大弹性的远期期权；NTM 基准只纳入明确 H2 CY2026 起可能确认的小额收入。

@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-09-22T06:44:26.353Z",
+  "projectRoot": "D:\\investment",
+  "version": "20260921_234323",
+  "planFile": "分析报告/公司情景投资决策/研究方案/研究方案_20260921_234323.md",
+  "planSha256": "3244fe4b010dba85fb1c784dfb05b2e7d38133f3a8ffb2ce07c1cb3f9d895917",
+  "uniqueCurrent": true,
+  "archiveMatches": true,
+  "draftMatches": true,
+  "formalPromptBuild": true,
+  "queueMutation": false,
+  "inputPaths": [
+    "基本面/公司调研/结果/",
+    "基本面/行业调研/结果/",
+    "金融资料/每日金融数据/"
+  ],
+  "oldDefinitionsPreserved": 4,
+  "historicalPlansUnchanged": 5,
+  "queuesUnchanged": 2,
+  "reportsUnchanged": 27,
+  "priorLogsCompletedBeforePublish": true,
+  "researchExecuted": false
+}

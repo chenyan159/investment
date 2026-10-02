@@ -1,0 +1,456 @@
+# JBL / Jabil Inc 公司调研：AI 数据中心 rack-scale EMS、液冷、电力与硅光制造平台
+
+日期：2026-06-11  
+公司：Jabil Inc.  
+股票代码：JBL / NYSE  
+输出目录：`基本面/公司调研/AI服务器_存储_EMS/`  
+资料边界：本报告只使用 `基本面/行业调研/` 下相关行业资料、Jabil 官方 IR/SEC/产品页面、公开市场数据和联网公开资料；未使用 `特征量化/`，未读取或继承同目录历史公司报告。
+
+## 0. 核心结论
+
+Jabil 是一家全球 EMS / engineering-led manufacturing 公司，传统标签是“低毛利、高周转、强供应链执行”的电子制造服务商；2024-2026 年投资人对它的认知明显改变：Jabil 正从消费电子和通用 EMS，转向 AI 数据中心基础设施制造平台。这个转型不是单点产品故事，而是由 4 条线叠加：AI rack/server 集成、液冷热管理、数据中心电力、硅光/高速光模块。
+
+最重要的数字是 FY2026 指引。Jabil 在 2026-03-18 发布 FY2026 Q2 后，把全年收入指引提高到 340 亿美元，核心经营利润率 5.7%，核心 EPS 12.25 美元，自由现金流 13 亿美元以上。FY2026 分产品线中，`Cloud & Data Center Infrastructure` 预计 104 亿美元、同比 +41%；`Networking & Comms` 31 亿美元、同比 +29%；`Capital Equipment` 30 亿美元、同比 +20%。这三项构成 Intelligent Infrastructure 的主要增长池；公司说明 AI-related revenue 来自 capital equipment、cloud & data center infrastructure、networking end-markets 的部分收入。
+
+截至 2026-06-11 盘中公开行情口径，JBL 股价约 360-368 美元区间，市值约 385 亿美元，TTM P/E 约 47x，市场 forward P/E 约 26x；按公司 FY2026 core EPS 指引 12.25 美元自行计算，指引口径 forward P/E 约 29.8x；按 FY2026 收入指引 340 亿美元计算 forward P/S 约 1.13x。估值已经从传统 EMS 折价重估到“AI 数据中心制造平台”区间，股价对 FY2027 继续增长的要求很高。
+
+财务健康度：经营现金流和自由现金流强，投资级评级仍在；但资产负债表有两个压力点。第一，Jabil 的 EMS 模式账期和应付账款大，FY2026 Q2 当前资产 150.09 亿美元、当前负债 148.11 亿美元，流动比率约 1.01，并不宽裕。第二，Hanley Energy 收购后债务上升，FY2026 Q2 现金 18.30 亿美元，总债务约 38.76 亿美元，净债务约 20.46 亿美元，约等于 FY2026 指引核心经营利润的 1.06x，仍可控，但 AI rack 放量会继续占用营运资本。
+
+本报告对订单和 backlog 的处理：Jabil 不披露标准化 backlog、bookings、B2B、lead time 和取消率。因此本文把“公司已披露的收入/指引/客户需求措辞”和“行业约束推断”分开。可确认事实是：FY2026 Q2 收入 82.82 亿美元，同比 +23%；Intelligent Infrastructure Q2 占收入 49%，同比 +52%；公司 Q3 指引收入 81-89 亿美元，并把全年收入指引提高到 340 亿美元。模型推断是：未来 12 个月 AI/DC 相关收入可见度大约 130-170 亿美元基准区间，乐观 170-210 亿美元，极度乐观 210-260 亿美元；该区间不是公司披露 backlog。
+
+投资判断上，Jabil 的优势不在“某个零件垄断”，而在 rack-scale 复杂系统量产、区域化供应链、工厂测试、客户认证、以及把电力/液冷/光互联纳入同一制造平台。它的弱点也清楚：EMS 毛利率低，客户有多源策略，Jabil 对 GPU/HBM/主交换芯片没有控制权，定价权低于上游芯片、光芯片、液冷核心部件和电力设备龙头。最需要跟踪的是 FY2026 Q3/Q4 的 Intelligent Infrastructure 收入兑现、Salisbury 新厂爬坡、Hanley 订单转化、1.6T 光模块认证，以及液冷组件是否从“能力”变成“收入”。
+
+## 1. 公司整体业务、投资人认知和产业链位置
+
+### 1.1 Jabil 是什么公司
+
+Jabil 的底层商业模式是工程、供应链和制造外包。公司为全球品牌客户做产品设计协同、NPI、新产品导入、采购、制造、测试、区域化交付、售后/生命周期服务。它不是品牌服务器公司，也不是 GPU、CPU、交换芯片、光芯片或电力设备原厂；它处在产业链中游偏下，靠复杂制造执行、供应链整合、客户认证和规模制造赚钱。
+
+公司口径的三大分部如下：
+
+| 分部 | FY2026E 收入 | FY2026E 增速 | 主要内容 | AI 数据中心相关性 |
+|---|---:|---:|---|---|
+| Regulated Industries | 125 亿美元 | +5% | 汽车与运输、医疗与包装、可再生能源与能源基础设施 | 间接相关；能源基础设施可与数据中心电力周期相关，但不是 AI 主线 |
+| Intelligent Infrastructure | 165 亿美元 | +34% | Capital Equipment、Cloud & Data Center Infrastructure、Networking & Comms | 核心主线；Jabil 的 AI 重估主要来自这里 |
+| Connected Living & Digital Commerce | 50 亿美元 | -11% | connected living、digital commerce、仓储/零售自动化 | 数字商业/机器人有结构性机会，但 AI 数据中心贡献低 |
+| 合计 | 340 亿美元 | +14% | 全球 EMS / engineering manufacturing | AI 相关收入为核心增量，但公司仍是多行业组合 |
+
+Intelligent Infrastructure 内部更重要：
+
+| End market | FY2023 | FY2024 | FY2025 | FY2026E | FY2026E 增速 | 解读 |
+|---|---:|---:|---:|---:|---:|---|
+| Capital Equipment | 19 亿美元 | 16 亿美元 | 25 亿美元 | 30 亿美元 | +20% | 半导体设备、测试、AI 供应链扩产相关设备 |
+| Cloud & Data Center Infrastructure | 48 亿美元 | 46 亿美元 | 74 亿美元 | 104 亿美元 | +41% | 服务器、rack integration、液冷、电力、存储/网络硬件制造与集成 |
+| Networking & Comms | 45 亿美元 | 30 亿美元 | 24 亿美元 | 31 亿美元 | +29% | 交换、光互联、硅光模块、网络硬件 |
+| Intelligent Infrastructure 合计 | 111 亿美元 | 92 亿美元 | 123 亿美元 | 165 亿美元 | +34% | 公司最突出的增长引擎 |
+
+### 1.2 投资人眼中的 Jabil
+
+过去 Jabil 是典型 EMS：收入规模大，毛利率低，盈利来自执行效率、产能利用率、供应链周转和客户组合优化。投资人通常给 EMS 较低估值，因为客户议价强、替代厂商多、周期性强。
+
+2025-2026 年投资人认知发生变化：
+
+1. AI 数据中心把服务器从“箱子制造”推向“整 rack / 整系统交付”。本地行业资料显示，2026 年 AI server/rack 集成从单机交付转向完整 rack、液冷、电力、网络、FAT/burn-in、现场验收的一体化交付；Blackwell / GB300 / ASIC rack 的瓶颈不只在 GPU，而在液冷、48V/高压供电、网络/光模块、rack testing 和现场集成。
+2. Jabil 正好处在“把复杂系统从设计导入到规模交付”的位置。它的价值不是拥有 GPU，而是让 hyperscaler / OEM / 芯片平台的 rack-scale 硬件可以量产、区域化交付并通过客户认证。
+3. 公司用并购补齐垂直能力：硅光、液冷、数据中心电力，使它从普通 EMS 接近“AI 数据中心基础设施制造平台”。
+4. 股价已反映这种叙事。TTM P/E 已接近 47x，远高于传统 EMS 多数年份估值；市场已经在要求 Jabil 证明 FY2026 的 AI/DC 放量不是一次性拉货。
+
+### 1.3 最近 3 年重大业务变化、转型和收购
+
+| 时间 | 事件 | 金额/规模 | 战略意义 |
+|---|---:|---:|---|
+| 2023-10 | Jabil 与 Intel 达成硅光收发器交易，接手 Intel silicon photonics-based pluggable optical transceiver 产品线和后续模块开发 | 金额未披露 | 补齐 AI 数据中心 400G/800G/1.6T 光互联能力；让 Jabil 从纯 EMS 增加光模块产品属性 |
+| 2023-12 | 完成向 BYD Electronic 出售 Mobility business | 现金交易 22 亿美元 | 降低手机/消费电子制造暴露，释放资本，帮助公司重新配置到 AI 数据中心、医疗、EV/能源等领域 |
+| 2024-10 | 收购 Mikros Technologies | 金额未披露 | 获得 microchannel liquid cooling / cold plate 技术，官方称可冷却超过 1 kW/cm2；补 AI/HPC 液冷短板 |
+| 2025-04 | 发布 1.6T OSFP pluggable transceiver | 1.6T，200G/lane，DR8、DR8+、2xFR4 | 把 Intel 硅光引擎商业化到 1.6T，面向 intra-data-center / AI connectivity |
+| 2025-06 | 宣布未来多年在美国云和 AI 数据中心基础设施制造投资 5 亿美元 | Salisbury, North Carolina 新厂，预计 2026 年中投产 | 强化美国本土/区域化供应链，服务 hyperscaler AI/DC 客户 |
+| 2025-10 | 推出 J-422G AI/data center server | 2U dual socket，第六代 Intel Xeon，最多 4 张 600W 双宽前置 GPU，OCP 取向，2025-11 GA | 标准化 AI/ML/HPC/fintech server 参考平台；更像能力展示和中小客户入口，不是最大收入项 |
+| 2026-01 | 完成收购 Hanley Energy Group | 7.25 亿美元现金 + 最高 0.58 亿美元或有对价；850 名员工、13 个地点 | 补齐 grid-to-rack 数据中心电力设计、部署、调试和服务能力；首年 annualized revenue 3.5-4.0 亿美元，mid-to-high teens EBITDA margin |
+
+### 1.4 产业链位置
+
+Jabil 在 AI 基建技术栈的位置如下：
+
+| 层级 | 代表公司/产品 | Jabil 的位置 | 议价权 |
+|---|---|---|---|
+| GPU / XPU / HBM | NVIDIA、AMD、Broadcom ASIC、Marvell、HBM 供应商 | 不参与核心芯片定价，依赖客户/平台供货 | 低 |
+| 服务器主板、整机、rack | Hyperscaler/OEM reference design、ODM/EMS | 设计协同、NPI、制造、集成、测试、区域交付 | 中 |
+| 液冷 | cold plate、CDU、manifold、UQD、leak detection | Mikros cold plate + rack liquid cooling integration | 中；核心零件若通过认证可提高 |
+| 数据中心电力 | switchgear、PDU、UPS、rack power、commissioning | Hanley + Jabil power management，grid-to-rack | 中；现场服务和认证增强粘性 |
+| 光互联/硅光 | 400G/800G/1.6T modules、AOC、optical engine | Intel silicon photonics 产品线 + Jabil photonics portfolio | 中；产品化能力强于普通 EMS，但不垄断 |
+| 现场部署/生命周期 | FAT、burn-in、warranty、break-fix、secure teardown | Jabil 服务能力 | 中；客户替换成本来自认证和执行风险 |
+
+本地行业调研对 AI server/rack 的判断与 Jabil 业务完全吻合：2026 年 AI rack 的交付瓶颈从单台服务器转向液冷、电力、网络、测试、现场服务和供应链同步。Jabil 的竞争力是把这些碎片化能力封装成 rack-level manufacturing and deployment。
+
+## 2. 股价、估值、利润率和资产负债表
+
+### 2.1 估值快照
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | 约 360-368 美元 | 2026-06-11 盘中公开行情 | Google Finance / StockAnalysis 盘中口径；前一交易日 2026-06-10 收盘 352.36 美元 |
+| 市值 | 约 383-386 亿美元 | 2026-06-11 盘中公开行情 | shares out 约 105.5 百万股 |
+| TTM P/E | 约 47x | 2026-06-11 StockAnalysis / Google Finance 口径 | TTM EPS 约 7.46 美元 |
+| Forward P/E | 约 26x | 2026-06-11 市场预期口径 | 市场 forward earnings 口径；不同供应商略有差异 |
+| 指引口径 forward P/E | 约 29.8x | 股价 365 美元 / FY2026 core EPS 12.25 美元 | 公司 FY2026 core EPS 指引口径，非 GAAP |
+| P/S | 约 1.18x TTM；约 1.13x forward | TTM revenue 326.7 亿美元；FY2026 guide 340 亿美元 | 对 EMS 不便宜，但低于高毛利芯片/设备公司 |
+| 收入增速 | Q2 FY2026 +23%；H1 FY2026 +20.9%；FY2026E +14% | Q2/H1 截至 2026-02-28；全年指引 | 公司 Q2 收入 82.82 亿美元，H1 165.87 亿美元，FY2026E 340 亿美元 |
+| 毛利率 | Q2 FY2026 9.0%；H1 FY2026 9.0% | 2026-02-28 | Q2 gross profit 7.46 亿美元 / revenue 82.82 亿美元 |
+| GAAP 净利率 | Q2 FY2026 2.7%；H1 FY2026 2.2% | 2026-02-28 | Q2 net income attributable 2.23 亿美元；H1 3.69 亿美元 |
+| Core operating margin | Q2 FY2026 5.3%；FY2026E 5.7% | 2026-02-28 / FY2026 指引 | AI/DC mix 和执行效率带动 margin expansion |
+
+### 2.2 财务健康度
+
+| 项目 | FY2026 Q2 | FY2025 年末 | 变化 | 评价 |
+|---|---:|---:|---:|---|
+| 现金及等价物 | 18.30 亿美元 | 19.33 亿美元 | -1.03 亿美元 | 现金仍充足，但 Hanley 收购和回购消耗资本 |
+| 应收账款 | 43.90 亿美元 | 40.39 亿美元 | +3.51 亿美元 | 收入增长带动应收上升 |
+| 合同资产 | 12.70 亿美元 | 10.57 亿美元 | +2.13 亿美元 | 大客户项目进度资产增加 |
+| 存货 | 49.72 亿美元 | 46.81 亿美元 | +2.91 亿美元 | AI/DC 拉货与供应链准备会继续占用营运资本 |
+| 当前资产 | 150.09 亿美元 | 137.20 亿美元 | +12.89 亿美元 | 增长较快 |
+| 当前负债 | 148.11 亿美元 | 137.14 亿美元 | +10.97 亿美元 | 应付账款 85.17 亿美元，是 EMS 模式核心融资来源 |
+| 流动比率 | 1.01x | 1.00x | 基本持平 | 可用但不宽裕；依赖供应商账期和客户回款 |
+| 总债务 | 38.76 亿美元 | 28.85 亿美元 | +9.91 亿美元 | 主要受收购、营运资本、回购影响 |
+| 净债务 | 20.46 亿美元 | 9.52 亿美元 | +10.94 亿美元 | 约等于 FY2026E core operating income 的 1.06x，仍可控 |
+| 股东权益 | 13.49 亿美元 | 15.17 亿美元 | -1.68 亿美元 | 大额回购导致账面权益偏低；不能只看 debt/equity |
+| H1 operating cash flow | 7.34 亿美元 | 6.46 亿美元 | +0.88 亿美元 | 现金生成能力改善 |
+| H1 adjusted FCF | 6.32 亿美元 | 4.87 亿美元 | +1.45 亿美元 | FY2026 指引 13 亿美元以上 |
+
+财务结论：Jabil 的偿债能力健康，现金流质量强，投资级评级仍是重要背书；但它不是轻资产软件公司。AI rack 业务越快增长，越需要提前采购、认证、建设测试能力、锁定关键零件和支持客户周转，因此短期营运资本和债务上升是正常但必须跟踪的风险。若 FY2026 下半年收入兑现而 FCF 维持 13 亿美元以上，资产负债表风险可接受；若增长来自低毛利 pass-through 且回款变慢，估值压力会放大。
+
+## 3. 最新与最近 4 次财报
+
+### 3.1 五个财报季度核心数字
+
+说明：Jabil 不披露标准化 backlog / bookings / lead time / cancellation rate。下表中的订单与交期为“披露事实 + 模型判断”。分部收入对 Q2/Q1/Q4 使用公司披露收入占比计算；Q3 FY2025 和 Q2 FY2025 部分使用公司披露的同比增速、全年分部收入和季度总收入反推，已用 `约` 标记。
+
+| 财报季度 | 披露日期 | 收入 / 同比 | Core op margin / Core EPS | 分部收入与增速 | 订单、交期、取消率信号 | AI/DC 相关收入占比判断 |
+|---|---:|---:|---:|---|---|---|
+| FY2026 Q2，季末 2026-02-28 | 2026-03-18 | 82.82 亿美元，+23% | 5.3%；2.69 美元 | RI 约 29.8 亿美元，+10%，margin 4.8%；II 约 40.6 亿美元，+52%，margin 5.7%；CLDC 约 12.4 亿美元，-8%，margin 4.9% | 公司称 demand robust across cloud/DC、networking、capital equipment；Q3 指引收入 81-89 亿美元；FY2026 全年收入指引上调到 340 亿美元。未披露 backlog/取消率；模型认为云/DC 项目可见度至少 2-3 个季度 | II 占 49%；FY2026 cloud/DC 指引 104 亿美元。Q2 AI/DC 相关收入估计 33-38 亿美元，占总收入约 40-46% |
+| FY2026 Q1，季末 2025-11-30 | 2025-12-17 | 83.05 亿美元，+19% | 5.5%；2.85 美元 | RI 约 30.7 亿美元，+4%，margin 5.8%；II 约 38.2 亿美元，+54%，margin 5.2%；CLDC 约 14.1 亿美元，-10%，margin 5.5% | Q2 指引收入 75-80 亿美元，II 指引 37.6 亿美元；公司称 improved visibility 并上调 FY2026 指引至 324 亿美元。Hanley 交易尚未完成，Q2 指引已纳入预期贡献 | II 占 46%；云/DC、网络和 capital equipment 是主要增长源。AI/DC 相关收入估计 31-36 亿美元，占 37-43% |
+| FY2025 Q4，季末 2025-08-31 | 2025-09-25 | 82.52 亿美元，+18% | 6.3%；3.29 美元 | RI 约 31.4 亿美元，+3%，margin 6.5%；II 约 37.1 亿美元，+62%，margin 5.9%；CLDC 约 14.0 亿美元，-14%，margin 6.6% | FY2026 初始指引收入 313 亿美元；公司明确指出机会在 AI data center infrastructure、healthcare、warehouse/retail automation。未披露 backlog；Q4 margin 高说明高利用率和组合改善 | II 占 45%；FY2025 cloud/DC 全年 74 亿美元，FY2026 初始指引 92 亿美元。Q4 AI/DC 相关收入估计 28-33 亿美元 |
+| FY2025 Q3，季末 2025-05-31 | 2025-06-17 | 78.28 亿美元，+16% | 5.4%；2.55 美元 | RI 约 31.0 亿美元，约持平；II 约 34.4 亿美元，+51%；CLDC 约 12.8 亿美元，估计下滑。分部 margin 公司披露 II 约 5.3% | 公司称收入较指引中点高约 8 亿美元，上行主要来自 cloud/DC infrastructure；同日宣布美国云和 AI 数据中心基础设施 5 亿美元多年投资。未披露 backlog；模型认为这是 AI/DC 订单加速转化的第一轮确认 | II 占约 44%；AI/DC 相关收入估计 25-30 亿美元 |
+| FY2025 Q2，季末 2025-02-28 | 2025-03-20 | 67.28 亿美元，约 -1% | 5.0%；1.94 美元 | RI 约 27.1 亿美元，-8%；II 约 26.7 亿美元，约 +18%；CLDC 约 13.5 亿美元。公司披露 Q3 分部指引：RI 30 亿、II 28 亿、CLDC 12 亿 | 公司称超预期来自 capital equipment、cloud/DC、digital commerce；FY2025 指引收入 279 亿美元、core EPS 8.95 美元。公开转述的管理层口径显示 FY2025 AI-associated revenue 约 75 亿美元预期 | II 占约 40%；AI/DC 相关收入估计 18-23 亿美元 |
+
+### 3.2 趋势解读
+
+最关键的财报趋势不是总收入，而是 Intelligent Infrastructure 的斜率。FY2025 Q2 到 FY2026 Q2，II 从约 26-27 亿美元提升到约 40-41 亿美元，单季增加约 14 亿美元；同期总收入从 67.28 亿美元提升到 82.82 亿美元，增量约 15.54 亿美元，说明几乎全部增长来自 AI/DC、网络和 capital equipment。
+
+利润率也在改善。Q2 FY2026 core op margin 5.3%，较 Q2 FY2025 的 5.0% 提高 30 bps；Q2 FY2026 Intelligent Infrastructure margin 5.7%，高于公司整体。对 EMS 来说，这个提升很重要，因为 AI rack 的收入有大量 GPU/组件 pass-through 风险；只有 margin 能提升，说明 Jabil 不是单纯吃低毛利采购规模，而是从工程、测试、复杂集成和服务中拿到增量价值。
+
+订单方面，最强证据是连续上调指引。FY2026 初始指引 313 亿美元；Q1 后上调至 324 亿美元；Q2 后上调至 340 亿美元。公司 Q2 后的 Q3 指引中点 85 亿美元，FY2026 下半年隐含收入约 174 亿美元，高于 H1 的 165.87 亿美元。这个节奏说明客户项目在下半年继续爬坡，尤其 cloud/DC infrastructure。
+
+风险是披露颗粒度不够。Jabil 没有像服务器 OEM 那样披露 AI server backlog，也没有披露 hyperscaler 客户名、项目名、机柜数、MW 数、GPU 数、取消率。投资上必须用交叉验证：收入指引、分部 mix、capex/新厂、并购、招聘、行业供需和竞争对手订单情况共同判断。
+
+## 4. FY2026 最新指引、业务占比和突出业务
+
+### 4.1 FY2026 指引
+
+| 指标 | FY2026 最新指引 | 上一轮 / 初始口径 | 变化 |
+|---|---:|---:|---|
+| 收入 | 340 亿美元 | Q1 后 324 亿美元；FY2025 Q4 初始 313 亿美元 | 对初始指引 +27 亿美元 |
+| Core operating margin | 5.7% | Q1 后 5.7%；初始 5.6% | 高位维持 |
+| Core EPS | 12.25 美元 | Q1 后 11.55；初始 11.00 | 对初始 +11.4% |
+| Adjusted FCF | 13 亿美元以上 | 13 亿美元以上 | 维持 |
+| Q3 FY2026 指引 | 收入 81-89 亿美元；core EPS 2.83-3.23 美元 | Q2 后首次给出 | Q3 继续高于 FY2025 同期 |
+
+### 4.2 FY2026 业务收入占比
+
+| 业务 | FY2026E 收入 | 占总收入 | 增速 | 是否重点 |
+|---|---:|---:|---:|---|
+| Cloud & Data Center Infrastructure | 104 亿美元 | 30.6% | +41% | 最高优先级；AI 数据中心主线 |
+| Networking & Comms | 31 亿美元 | 9.1% | +29% | 高优先级；1.6T/800G/硅光、交换互联 |
+| Capital Equipment | 30 亿美元 | 8.8% | +20% | 高优先级；半导体设备、自动测试、AI 供应链扩产 |
+| Renewable & Energy Infrastructure | 27 亿美元 | 7.9% | +13% | 次重点；与电力基础设施部分交叉 |
+| Healthcare & Packaging | 56 亿美元 | 16.5% | +4% | 稳定现金流，不是 AI 主线 |
+| Auto & Transportation | 42 亿美元 | 12.4% | +2% | 稳定/低增速 |
+| Connected Living | 24 亿美元 | 7.1% | -27% | 跳过；非 AI 且收缩 |
+| Digital Commerce | 26 亿美元 | 7.6% | +13% | 仓储/机器人有潜力，但非本报告重点 |
+
+### 4.3 重点产品与跳过业务
+
+本报告重点分析：
+
+| 产品/业务 | 为什么重要 | 当前披露状态 |
+|---|---|---|
+| Rack integration / full rack-level systems | AI rack 从服务器箱子转为计算、存储、交换、光、电、冷的一体化交付；Jabil 官方页面明确说不只造服务器，而是 build entire rack-level systems | 已商业化；收入嵌入 Cloud & Data Center Infrastructure |
+| Cloud & AI data center infrastructure manufacturing | FY2026E 104 亿美元、+41%；公司最大增长池 | 已商业化，收入明确披露 |
+| Liquid cooling / Mikros microchannel cold plates | 高功耗 GPU/XPU rack 的交付瓶颈之一；Mikros 官方能力为 microchannel cold plate，超过 1 kW/cm2 cooling | 已收购；收入不单独披露，嵌入 II / cloud/DC |
+| Power management / Hanley Energy | AI 数据中心从 grid 到 rack 的电力约束变强；Hanley 首年 annualized revenue 3.5-4.0 亿美元 | 2026-01 完成收购；可单独估算 |
+| 1.6T / 800G photonics and silicon photonics | AI 网络从 800G 向 1.6T 升级；Jabil 有 1.6T OSFP，Intel silicon photonics engine，DR8/DR8+/2xFR4 | 已发布；产品收入不披露 |
+| Capital equipment / semiconductor test equipment | AI 芯片、先进封装、测试产能扩张的上游制造服务 | FY2026E 30 亿美元、+20% |
+
+跳过或弱化分析：
+
+| 跳过业务 | 原因 |
+|---|---|
+| Connected Living | FY2026E -27%，非 AI 数据中心主线 |
+| 普通消费电子 / 原 mobility 业务 | mobility 已于 2023-12 出售给 BYD Electronic，非当前增长主线 |
+| 医疗包装 | 稳定但与 AI 基建关联弱 |
+| 汽车与运输 | FY2026E +2%，增速低；除电力电子/能源交叉外不是重点 |
+| 普通 print / retail | 与 AI 数据中心无关 |
+
+## 5. 高增长和关键产品：当前贡献、增速、重要性和定价权
+
+评分口径：5 分最高。收入贡献为 FY2026E 或 2026 当前 run-rate 模型估计；没有公司直接披露时用 `估计` 标注。
+
+| 关键业务/产品 | 当前收入贡献 | 增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Cloud & Data Center Infrastructure | FY2026E 104 亿美元 | +41% | 5 | 5 | 4 | 3 | 这是 JBL 重估主线。收入大、增速高，但 EMS/rack 集成竞争强，溢价来自认证和执行能力，不来自单点垄断 |
+| Rack integration / system-level test / deployment | 嵌入 104 亿美元；估计价值贡献 20-35 亿美元 | 30-50% | 5 | 5 | 4 | 3 | AI rack 的实际交付瓶颈，客户替换成本高于普通 PCB/box build |
+| Liquid cooling / Mikros | 直接产品估计 1-3 亿美元；带动 rack 收入更大 | 50%+ 潜在 | 5 | 5 | 4 | 3-4 | 单独收入小，但对 100kW+ rack 是准入能力；若 cold plate/UQD/CDU 认证锁定，毛利率高于普通 EMS |
+| Power management / Hanley | 首年 annualized 3.5-4.0 亿美元；FY2026 部分并表约 2-3 亿美元 | 双位数 | 5 | 5 | 4 | 3-4 | grid-to-rack 电力成为 AI 数据中心交付约束；Hanley 带来设计、部署、commissioning 服务 |
+| 1.6T/800G photonics / silicon photonics | Jabil 不披露；估计 2026 0.4-0.9 亿美元规模区间，含 400G/800G/1.6T | 30-80% | 4-5 | 4 | 4 | 3 | 1.6T 是 2026-2027 AI 网络升级方向；Jabil 有产品化能力，但面对 Innolight、Eoptolink、Coherent、Fabrinet 等强竞争 |
+| Capital Equipment | FY2026E 30 亿美元 | +20% | 4 | 4 | 3 | 2-3 | 半导体设备/测试扩产受益 AI capex；比 rack 主线更分散 |
+| Networking & Comms | FY2026E 31 亿美元 | +29% | 4 | 4 | 3-4 | 2-3 | 与 AI back-end networking、光模块、交换硬件相关；Jabil 有制造和部分产品线，但非交换芯片控制者 |
+
+### 5.1 产品和业务交叉验证
+
+Cloud & Data Center Infrastructure 的 104 亿美元与 1.6T、液冷、电力并购可以相互验证。若 Jabil 只是普通服务器 EMS，不需要同时收购 Mikros、Hanley、硅光业务，也不需要美国 5 亿美元新增制造投资。公司行为说明客户需求在 rack-level 系统层，而不是单个盒子层。
+
+Mikros 和 Hanley 的战略价值大于当前独立收入。Mikros 让 Jabil 能参与 cold plate / rack liquid cooling 设计和集成；Hanley 让 Jabil 从工厂制造延伸到 grid-to-rack 电力系统部署和服务。AI rack 的瓶颈越向电力/冷却/现场验收转移，Jabil 的差异化越强。
+
+J-422G 是产品化展示，但不是最核心收入假设。它支持最多 4 张 600W 双宽前置 GPU，适用于 AI/ML/LLM/HPC/fintech，2025-11 GA。与 NVIDIA GB200/GB300 NVL72 这类 72 GPU rack 相比，J-422G 更像标准化双路服务器平台或中小客户/特定 workload 入口；真正收入大头更可能来自客户定制 rack、cloud infrastructure 和 hyperscaler 项目。
+
+1.6T 光模块是小而关键的潜力业务。Jabil 1.6T OSFP 支持 dual 800G Ethernet/Infiniband 或单 1.6T over parallel single-mode fiber，200G/lane，DR8/DR8+/2xFR4。若进入大客户认证，收入和毛利率可能高于普通 EMS；但光模块行业竞争非常激烈，Jabil 未必能拿到上游光芯片/激光器的核心利润。
+
+## 6. 一年后收入贡献预测：基准、乐观、极度乐观
+
+假设时间点：2027 年中，即从 2026-06-11 往后约 12 个月。收入为 annualized run-rate 或 FY2027 近似口径，不是公司指引。
+
+| 关键业务/产品 | 2026 当前基准 | 2027 基准 | 2027 乐观 | 2027 极度乐观 | 关键假设 |
+|---|---:|---:|---:|---:|---|
+| Cloud & Data Center Infrastructure | FY2026E 104 亿美元 | 125-135 亿美元，+20-30% | 145-165 亿美元，+40-60% | 180-210 亿美元，+70-100% | 基准：现有 hyperscaler 项目爬坡；乐观：第三/更多 AI hyperscaler 放量；极度乐观：Salisbury、液冷、电力、rack test 全部成为约束性产能 |
+| Rack integration / system-level test | 估计 20-35 亿美元价值贡献 | 30-45 亿美元 | 45-65 亿美元 | 70-95 亿美元 | 以每 rack/Jabil 内容量提升为核心；不等同公司分部披露收入 |
+| Liquid cooling / Mikros | 估计 1-3 亿美元直接产品收入 | 2.5-5 亿美元 | 5-9 亿美元 | 9-15 亿美元 | GB300/Rubin/ASIC rack 液冷渗透提高；Mikros cold plate/微通道方案进入更多客户认证 |
+| Power management / Hanley | annualized 3.5-4.0 亿美元 | 4.5-5.5 亿美元 | 6-8 亿美元 | 9-12 亿美元 | 电力从 grid-to-rack 成为 AI DC 交付前置约束；Hanley 服务和 Jabil 制造交叉销售 |
+| 1.6T/800G photonics | 估计 0.4-0.9 亿美元 | 0.8-1.3 亿美元 | 1.5-2.5 亿美元 | 3-5 亿美元 | 1.6T 进入量产认证，800G/1.6T 端口数随 GPU 集群扩大 |
+| Capital Equipment | FY2026E 30 亿美元 | 33-36 亿美元 | 38-42 亿美元 | 45-50 亿美元 | 半导体设备、测试、先进封装供应链扩产延续 |
+| Networking & Comms | FY2026E 31 亿美元 | 36-39 亿美元 | 43-50 亿美元 | 55-65 亿美元 | 800G/1.6T 网络、交换硬件和光互联需求增长 |
+
+### 6.1 三种口径下的评分变化
+
+| 业务 | 2027 场景 | AI 重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 备注 |
+|---|---|---:|---:|---:|---:|---|
+| Cloud & Data Center Infrastructure | 基准 | 5 | 5 | 4 | 3 | 需求强，但客户多源 |
+| Cloud & Data Center Infrastructure | 乐观 | 5 | 5 | 5 | 3 | rack test、区域产能成为瓶颈 |
+| Cloud & Data Center Infrastructure | 极度乐观 | 5 | 5 | 5 | 4 | 若 Jabil 成为多个 hyperscaler 的核心 rack integrator，替换成本提高 |
+| Liquid cooling | 基准 | 5 | 5 | 4 | 3 | 认证开始贡献收入 |
+| Liquid cooling | 乐观 | 5 | 5 | 5 | 4 | 高功耗 rack 液冷认证锁定，毛利率上行 |
+| Liquid cooling | 极度乐观 | 5 | 5 | 5 | 4 | cold plate + manifold + CDU 集成打包进入主平台 |
+| Power management | 基准 | 5 | 5 | 4 | 3 | Hanley 维持双位数增长 |
+| Power management | 乐观 | 5 | 5 | 5 | 4 | grid-to-rack 项目绑定客户建设节奏 |
+| Power management | 极度乐观 | 5 | 5 | 5 | 4 | 电力设备和 commissioning 成为交付主瓶颈 |
+| Photonics | 基准 | 4 | 4 | 3 | 2-3 | 1.6T 起量但竞争激烈 |
+| Photonics | 乐观 | 5 | 4 | 4 | 3 | 1.6T 认证和供给紧张带来更好 ASP |
+| Photonics | 极度乐观 | 5 | 5 | 5 | 4 | 若大客户把 Jabil silicon photonics 模块纳入主供，溢价提高 |
+
+## 7. BOM、每 MW / rack / GPU / optical port 含量和价格传导链
+
+### 7.1 AI rack BOM 与 Jabil 可捕获内容
+
+本地行业资料显示，高端液冷 AI rack 的总系统价值通常由 GPU/HBM/CPU 主导，GPU/HBM 约占 60-80%；NVLink/网络/光模块/线缆约 8-18%；液冷约 2-8%；电力约 3-8%；工厂集成、burn-in、现场服务约 3-8%。Jabil 能捕获的是后四项的一部分，以及整机/整 rack 制造服务收入；它不能把 GPU/HBM 的利润当作自己的利润。
+
+| BOM 层 | 每 rack 真实内容量估计 | 每 MW 内容量估计 | Jabil 可捕获方式 | 价格传导 |
+|---|---:|---:|---|---|
+| GPU/HBM/CPU | 120kW NVL72 级 rack 可达数百万美元 | 约 8.3 个 120kW rack / MW | 多数由客户/平台指定，Jabil 可能代采/装配但利润极低 | 上游芯片定价传导到整 rack ASP，但 Jabil 毛利率受限 |
+| Server chassis / PCB / backplane / cables / assembly | 5-20 万美元/rack | 40-170 万美元/MW | 设计协同、制造、NPI、测试 | 原材料 + 制造费 + 服务费；客户压价强 |
+| Rack integration / FAT / burn-in / diagnostics / lifecycle | 2-8 万美元/rack | 17-67 万美元/MW | 工厂级集成和系统测试 | 越接近客户验收，价值越高；缺陷风险也更高 |
+| Liquid cooling: cold plate / manifold / UQD / leak sensing / CDU integration | 2-10 万美元/rack；高密度可更高 | 17-83 万美元/MW | Mikros cold plate、液冷集成、CDU/manifold 工程 | 认证锁定后可获取更好毛利；泵、换热器、UQD 仍依赖供应链 |
+| Power: rack PDU / UPS / low/medium voltage switchgear / grid-to-rack service | 3-20 万美元/rack，取决于是否含上游电力系统 | 25-167 万美元/MW | Hanley + Jabil power solutions | 电力设备交期紧时溢价提高；大型项目服务费提高粘性 |
+| Networking / photonics / optics | 5-25 万美元/rack，取决于端口数和 800G/1.6T 比例 | 42-208 万美元/MW | Jabil photonics、网络硬件制造、模块产品 | 光模块 ASP 随代际升级提高；竞争会压缩毛利 |
+
+### 7.2 每 rack / 每 GPU / 每 optical port 口径
+
+以下是模型口径，用于理解 Jabil 的真实内容量，不等于公司披露收入。
+
+| 口径 | 基准 | 乐观 | 极度乐观 | 说明 |
+|---|---:|---:|---:|---|
+| 每 120kW AI rack：Jabil 可识别收入内容量，不含 GPU/HBM | 10-30 万美元 | 30-70 万美元 | 70-120 万美元 | 取决于是否同时拿到 rack integration、液冷、电力、光模块 |
+| 每 MW：Jabil 内容量，不含 GPU/HBM | 100-300 万美元 | 300-700 万美元 | 700-1,000 万美元 | 以 120kW/rack、约 8.3 rack/MW 计算 |
+| 每 GPU：Jabil 内容量，不含 GPU/HBM | 1,500-4,000 美元 | 4,000-10,000 美元 | 10,000-17,000 美元 | 以 72 GPU/rack 计算；若只做 box build，低端；若含电/冷/光/服务，高端 |
+| 每 800G-equivalent optical port：模块 ASP | 600-1,200 美元 | 1,000-1,800 美元 | 1,800-3,000 美元 | 1.6T 模块可视作 2 个 800G-equivalent；早期供给紧张时 ASP 高 |
+| 每 optical port：Jabil 可捕获毛利额 | 60-200 美元 | 150-400 美元 | 300-700 美元 | 取决于 Jabil 是纯代工、白牌模块，还是自有/Intel 硅光模块方案 |
+
+### 7.3 价格传导链
+
+AI 数据中心价格传导链可以拆成 5 层：
+
+1. 芯片层：GPU/XPU/HBM/先进封装决定整 rack 最高价值，但 Jabil 议价权弱。
+2. 平台层：NVIDIA/AMD/custom ASIC 平台决定 rack 架构、功耗、液冷和网络规格；Jabil 必须跟随平台认证。
+3. 子系统层：液冷、电力、光模块、网络、存储决定非 GPU BOM 和交付瓶颈；Jabil 通过 Mikros、Hanley、silicon photonics 提高参与度。
+4. 集成制造层：NPI、DFM、供应链、rack integration、FAT/burn-in、区域化制造；这是 Jabil 核心利润池。
+5. 现场/生命周期层：commissioning、warranty、advanced replacement、break-fix、secure teardown；该层毛利率通常优于单纯制造，但收入规模较小。
+
+Jabil 的最好场景不是单纯“服务器订单变多”，而是客户把 rack power、liquid cooling、photonics、system test 和部署服务一起外包。这样每 rack 可捕获内容量从 10-30 万美元提升到 70 万美元以上，且毛利率更高。
+
+## 8. 当前产能、供应链采纳和认证阶段
+
+| 业务/产品 | 当前产能能力，美元计 | 被供应链采纳程度 | 认证/阶段 | 关键观察 |
+|---|---:|---|---|---|
+| Cloud & Data Center Infrastructure | FY2026E 104 亿美元收入能力；II 总体 165 亿美元 | 已被大客户广泛采用；具体客户未披露 | 成熟量产；客户项目认证持续 | 最大证据是 FY2026 +41% cloud/DC 指引和连续上调全年指引 |
+| Rack integration / server/rack test | 嵌入 cloud/DC；模型估计可支撑数十亿美元价值贡献 | 已商业化；Jabil 官网明确 server/rack-level test and validation | 客户/平台级认证，不公开 | 关键瓶颈是 rack burn-in、液冷测试、现场质量和区域交付 |
+| Salisbury, NC AI/DC manufacturing | 5 亿美元多年投资；预计 2026 年中投产 | 计划服务 cloud and AI data center infrastructure customers | 建设/爬坡阶段 | 若按 EMS 资产周转，成熟后理论可支持数十亿美元收入，但需客户订单和供应链配套 |
+| Mikros liquid cooling | 直接收入未披露；估计 1-3 亿美元当前能力 | 官方称能力用于 AI data centers 和其他 thermal management end-markets；招聘信息显示部署在大型 AI 数据中心服务器中 | 已收购，客户认证/项目爬坡中 | 技术壁垒在 microchannel cold plate、可靠性、漏液、压降、清洁度、平台认证 |
+| Hanley Energy power management | 首年 annualized revenue 3.5-4.0 亿美元 | 数据中心 power management 客户基础；13 地点、850 人 | 2026-01 完成并表 | 可从电力设计、制造延伸到 deployment、commissioning、field service |
+| 1.6T/800G photonics | 未披露；估计数亿美元级收入池 | 400G/800G 产品已有组合；1.6T 已发布 | 1.6T OSFP launched；DR8/DR8+/2xFR4；客户认证和量产爬坡需跟踪 | 1.6T 2026-2027 是关键窗口，但认证周期可 6-18 个月 |
+| J-422G server | 小规模/标准平台；不应假设为主要收入 | 2025-11 GA，面向 AI/ML/HPC/fintech | OCP 取向，6th Gen Xeon，4x600W GPU | 可展示服务器平台能力；真正大单更可能是客户定制 rack |
+
+## 9. 一年后产能能力和认证阶段预测
+
+| 业务/产品 | 场景 | 2027 年中产能能力，美元计 | 供应链采纳 | 认证/阶段 |
+|---|---|---:|---|---|
+| Cloud & Data Center Infrastructure | 基准 | 125-135 亿美元 annualized | 现有客户项目继续爬坡 | 已量产，平台迭代认证 |
+| Cloud & Data Center Infrastructure | 乐观 | 145-165 亿美元 | 新增 hyperscaler / OEM 项目进入量产 | Salisbury 新厂显著贡献，rack test 瓶颈缓解 |
+| Cloud & Data Center Infrastructure | 极度乐观 | 180-210 亿美元 | 多家 hyperscaler 把 Jabil 作为核心 rack integrator | 认证锁定 + 产能约束带来更强议价 |
+| Liquid cooling / Mikros | 基准 | 2.5-5 亿美元 | 进入更多 AI rack 子项目 | cold plate / manifold / leak test 认证扩大 |
+| Liquid cooling / Mikros | 乐观 | 5-9 亿美元 | 主流 GB300 / ASIC rack 客户采用 | 与 Jabil rack integration 捆绑 |
+| Liquid cooling / Mikros | 极度乐观 | 9-15 亿美元 | 成为多个客户液冷子系统主供或双供 | 认证进入平台级 lock-in |
+| Hanley power management | 基准 | 4.5-5.5 亿美元 | 现有数据中心客户增长 | 并购整合完成，服务能力保持 |
+| Hanley power management | 乐观 | 6-8 亿美元 | Jabil AI rack 客户交叉销售 | grid-to-rack 项目认证扩大 |
+| Hanley power management | 极度乐观 | 9-12 亿美元 | 大型 hyperscaler / colo 电力部署加速 | 现场 commissioning 服务形成高粘性 |
+| 1.6T/800G photonics | 基准 | 0.8-1.3 亿美元 | 部分客户认证，1.6T 小批量 | 1.6T DR8/DR8+/2xFR4 量产爬坡 |
+| 1.6T/800G photonics | 乐观 | 1.5-2.5 亿美元 | 进入主流 AI 网络采购清单 | 认证完成，供给紧张 |
+| 1.6T/800G photonics | 极度乐观 | 3-5 亿美元 | 成为多个大客户 1.6T 重要供应商 | 若 1.6T default 提前，产能放大 |
+
+## 10. 订单积压、供给和未来一年增速预测
+
+### 10.1 已披露订单/需求证据
+
+可确认事实：
+
+| 证据 | 含义 |
+|---|---|
+| FY2026 Q2 后收入指引从 324 亿美元提高到 340 亿美元 | 管理层对后半财年可见度提高 |
+| FY2026 Q3 指引收入 81-89 亿美元 | Q3 收入中点 85 亿美元，高于 FY2025 Q3 的 78.28 亿美元 |
+| Cloud & Data Center Infrastructure FY2026E 104 亿美元、+41% | AI/DC 是最大增量 |
+| Intelligent Infrastructure Q2 FY2026 +52%，占收入 49% | 单季结构已明显偏向 AI/DC |
+| 2025-06 宣布 5 亿美元美国云和 AI DC 制造投资 | 客户需求足以支撑新增美国制造能力 |
+| 2026-01 完成 Hanley 收购 | 电力管理需求已重要到需要并购补齐 |
+| 2024-10 收购 Mikros | 液冷成为系统交付关键能力 |
+
+未披露内容：
+
+| 未披露项 | 处理方式 |
+|---|---|
+| Backlog 金额 | 不假设为公司确认订单；用收入指引和项目爬坡估算可见度 |
+| Bookings / bill-to-book | 未披露；用指引上调和分部增速代理 |
+| Lead time | 未披露；用行业瓶颈推断 6-12 个月可见度 |
+| 取消率 | 未披露；基准假设低于 10%，但宏观 capex 或客户设计变化可提高 |
+| 客户名和项目名 | 未披露；媒体报道称已有 AI hyperscaler 交易和第三家洽谈，但正式报告中作为低等级证据 |
+
+### 10.2 未来一年业务增速预测
+
+| 场景 | AI/DC 可见订单/收入池，模型估计 | 供给/产能假设 | 未来一年收入增速 | 取消率/风险 | 结论 |
+|---|---:|---|---:|---|---|
+| 基准 | 130-170 亿美元 AI-related / cloud-DC-network-cap equipment 组合可见度 | Salisbury 中期贡献；Hanley/Mikros/photonic 逐步并入；GPU/HBM/光器件/液冷仍紧但可管理 | 公司总收入 +8-12%；II +20-30%；cloud/DC +20-30% | 取消率 <10%；主要风险是客户 pushout | 最可能；FY2026 高基数后仍增长，但不再翻倍 |
+| 乐观 | 170-210 亿美元 | 两家以上 hyperscaler 项目放量，第三家/新增客户进入；电力与液冷交叉销售 | 公司总收入 +15-22%；II +35-50%；cloud/DC +40-60% | 取消率低；瓶颈转为产能和关键零件 | 股价需要的较好情景 |
+| 极度乐观 | 210-260 亿美元 | Jabil 成为多个 AI rack 项目核心制造/部署平台，1.6T、液冷、电力均进入项目主供 | 公司总收入 +25-35%；II +60%+；cloud/DC +70%+ | 取消率低但执行风险高；供应链任何短板会延迟 | 需要强客户验证；不是基准 |
+
+### 10.3 供需紧张点
+
+| 约束 | 影响 Jabil 的方式 | 判断 |
+|---|---|---|
+| GPU/HBM / advanced packaging | 决定客户 rack 交付节奏；Jabil 无法控制供应 | 供给紧，Jabil受益于需求但也可能被卡交付 |
+| DDR4/特定内存和传统零件 | 媒体曾提到供应链约束；服务器 BOM 仍可能被非核心零件卡住 | 中等风险 |
+| 液冷组件 / UQD / pump / heat exchanger | 100kW+ rack 的交付前置条件 | 供需偏紧；Jabil/Mikros 能提高掌控 |
+| Power gear / switchgear / PDU / UPS | 数据中心电力排队，lead time 长 | 供需偏紧；Hanley 战略价值高 |
+| 800G/1.6T 光模块、laser/InP/硅光封装 | AI 网络扩容，1.6T 认证窗口打开 | 供给偏紧但竞争强 |
+| Rack-level test capacity and field talent | 满 rack burn-in、液冷测试、现场验收难度高 | 是 Jabil 可差异化的瓶颈 |
+
+## 11. 竞争格局、替代方案和客户替换成本
+
+### 11.1 主要竞争对手
+
+| 领域 | 竞争对手 | Jabil 相对位置 |
+|---|---|---|
+| AI server / rack ODM / EMS | Quanta/QCT、Wiwynn、Foxconn/FII、Wistron、Inventec、Pegatron、Celestica、Flex、Sanmina、ZT Systems、Dell、HPE、Supermicro | Jabil 全球 EMS 能力强，且美国本土制造、液冷、电力、光模块组合增强；但亚洲 ODM 在 hyperscaler server/rack 规模上极强 |
+| 数据中心电力 | Vertiv、Schneider Electric、Eaton、ABB、Siemens、Delta、Legrand/Starline、nVent | Hanley 补齐 grid-to-rack 和 commissioning，但 Jabil 仍不是最大电力设备原厂 |
+| 液冷 | Vertiv、Schneider、CoolIT、Boyd、Modine、Delta、nVent、Auras、Aavid 等 | Mikros microchannel cold plate 是差异化点；完整液冷系统仍需与泵、CDU、UQD、manifold 供应商竞争/合作 |
+| 光模块/硅光 | Coherent、Lumentum/Cloud Light、Innolight、中际旭创、Eoptolink、新易盛、Fabrinet、Broadcom/Marvell 生态、Source Photonics | Jabil 有 Intel silicon photonics engine 和 1.6T 产品，但规模和客户认证仍需验证 |
+| 半导体设备制造服务 | Flex、Celestica、Sanmina、Benchmark、专用设备供应链 | Jabil 规模和跨行业供应链强，但差异化低于 AI rack 主线 |
+
+### 11.2 Jabil 的技术和产品会成为主流吗
+
+成为主流的部分：
+
+1. Rack-level integration：主流趋势明确。AI rack 从单服务器交付变成 rack-scale 计算、电力、冷却、网络和测试一体化，Jabil 的方向正确。
+2. Liquid cooling：100kW+ rack 的主流方向明确。单相 direct-to-chip、cold plate、manifold、CDU、quick disconnect、leak detection 是 2026-2027 关键组件。
+3. Grid-to-rack power management：主流趋势明确。AI 数据中心的 bottle-neck 已扩散到电力接入、低/中压配电、PDU、UPS、rack power，Hanley 增强很有价值。
+4. 1.6T optical transceivers：2026-2027 高速互联升级方向明确。1.6T pluggable 先量产，CPO/NPO 更偏 2027+ optionality。
+
+不确定的部分：
+
+1. J-422G 不是确定的大主流平台。它是 2U、4x600W GPU 标准服务器，不等同 GB200/GB300 NVL72 或 hyperscaler custom ASIC rack。
+2. Jabil 的 1.6T 模块能否成为主供不确定。技术方向正确，但光模块客户认证和成本竞争激烈。
+3. Mikros 液冷能否规模化到平台级主供不确定。技术有壁垒，但客户平台认证、长期可靠性和现场服务决定收入。
+
+### 11.3 客户替换成本
+
+普通 EMS/box build 的替换成本中等偏低，客户可以双供、多供并压价。AI rack-scale 集成的替换成本明显更高，原因包括：
+
+1. NPI 和 DFM 参与早，切换供应商会影响设计闭环。
+2. 液冷/电力/网络/固件/BIOS/诊断/测试是系统级问题，替换会带来质量和交付风险。
+3. Rack-level burn-in 和现场验收需要经验积累，失败成本高。
+4. 区域化制造和供应链合规是客户选择 EMS 的关键，短期无法轻易复制。
+5. Hanley 的 deployment / commissioning / field service 会提高后端粘性。
+
+但替换成本不是绝对护城河。Hyperscaler 一般坚持 dual-source / multi-source，且 Quanta、Wiwynn、Foxconn、Celestica、Flex、ZT/Dell/HPE 都可在不同层级替代 Jabil。Jabil 的护城河是“认证 + 执行 + 复杂系统组合”，不是单一专利垄断。
+
+## 12. 风险清单
+
+| 风险 | 影响 | 需要跟踪的指标 |
+|---|---|---|
+| AI/DC 收入高增长已经被估值提前反映 | 若 FY2027 增速低于市场预期，估值压缩大 | Q3/Q4 FY2026 指引、FY2027 初始指引、II 分部增速 |
+| EMS 毛利率天然低 | 收入增长不一定转化为 EPS 增长 | core op margin 是否维持 5.7% 或继续提高 |
+| 客户集中和多源策略 | 大客户项目切换或推迟会影响收入 | 10-K 客户集中度、管理层客户评论 |
+| GPU/HBM/光器件/液冷/电力供应卡点 | Jabil 订单可能无法按时转收入 | inventory days、合同资产、交付周期、行业供给 |
+| Hanley/Mikros 整合风险 | 并购不能转化为交叉销售 | Hanley revenue run-rate、EBITDA margin、相关 backlog 线索 |
+| 光模块竞争和认证周期 | 1.6T 产品可能难以规模化 | 800G/1.6T 客户认证、OFC/ECOC 展会、客户 design win |
+| 工作资本占用 | AI rack 高 BOM 使现金流波动 | operating cash flow、inventory、A/R、contract assets |
+| 关税和地缘政治 | 区域化制造有利也有成本 | 美国/墨西哥/亚洲产能布局、客户迁移节奏 |
+
+## 13. 结论：Jabil 是“AI 基建制造执行平台”，不是芯片型垄断公司
+
+Jabil 的投资逻辑可以归纳为一句话：AI 数据中心硬件越来越像复杂工业项目，而不是普通服务器采购；Jabil 通过 rack integration、液冷、电力、光互联和全球/美国制造能力，正在从低估值 EMS 变成 AI 基建制造执行平台。
+
+最强事实是 FY2026 指引：总收入 340 亿美元，Cloud & Data Center Infrastructure 104 亿美元、+41%，Intelligent Infrastructure 165 亿美元、+34%，核心经营利润率 5.7%。如果这些数字兑现，Jabil 的业务质量确实比传统 EMS 高一档。
+
+但必须保持边界。Jabil 不控制 GPU/HBM，也不控制大部分关键芯片；它对客户的定价权来自认证、交付、测试、区域化和复杂系统整合，而不是单一不可替代零件。估值已经不低，未来一年需要看三件事：第一，FY2026 下半年 cloud/DC 是否继续超指引；第二，Hanley/Mikros/1.6T 是否从“能力补齐”变成可量化收入；第三，core op margin 是否在高 BOM、强竞争的 AI rack 项目中继续扩张。
+
+在基准情景下，Jabil 未来一年仍可能实现总收入 +8-12%、Intelligent Infrastructure +20-30%；在乐观情景下，如果 hyperscaler 项目和电/冷/光交叉销售同时起量，总收入 +15-22%、II +35-50% 可以成立；极度乐观情景需要 Jabil 成为多个 AI rack 项目的核心制造/部署平台，总收入 +25% 以上，但这需要更强客户订单证据，目前不能当作基准。
+
+## 14. 资料来源
+
+### 14.1 公司官方、SEC 和产品资料
+
+- Jabil FY2026 Q2 results press release, 2026-03-18: `https://investors.jabil.com/news/news-details/2026/Jabil-Posts-Second-Quarter-Results/default.aspx`
+- Jabil FY2026 Q2 earnings presentation: `https://s27.q4cdn.com/276975351/files/doc_financials/2026/q2/Q2-FY26-Earnings-Presentation-Final.pdf`
+- Jabil FY2026 Q1 results press release, 2025-12-17: `https://investors.jabil.com/news/news-details/2025/Jabil-Posts-First-Quarter-Results/`
+- Jabil FY2026 Q1 earnings presentation: `https://s27.q4cdn.com/276975351/files/doc_financials/2026/q1/Q1-FY26-Earnings-Presentation-Final.pdf`
+- Jabil FY2025 Q4 / FY2025 results press release, 2025-09-25: `https://investors.jabil.com/news/news-details/2025/Jabil-Posts-Fourth-Quarter-and-Fiscal-Year-2025-Results/`
+- Jabil FY2025 Q4 investor briefing presentation: `https://s27.q4cdn.com/276975351/files/doc_financials/2025/q4/Q4-FY25-Investor-Briefing-Presentation-Final-All-Slides-New.pdf`
+- Jabil FY2025 Q3 earnings presentation: `https://s27.q4cdn.com/276975351/files/doc_financials/2025/q3/Q3-FY25-Earnings-Presentation-Final.pdf`
+- Jabil FY2025 Q2 earnings presentation: `https://s27.q4cdn.com/276975351/files/doc_financials/2025/q2/Q2-FY25-Earnings-Presentation-Final.pdf`
+- Jabil Data Center Infrastructure product page: `https://www.jabil.com/industries/data-center/data-center-infrastructure.html`
+- Jabil J-422G server launch, 2025-10: `https://investors.jabil.com/news/news-details/2025/Jabil-Launches-J-422G-Servers-for-Scalable-AI-and-Data-Center-Performance/default.aspx`
+- Jabil acquisition of Mikros Technologies, 2024-10: `https://investors.jabil.com/news/news-details/2024/Jabil-Acquires-Mikros-Technologies-to-Support-Demand-for-Liquid-Cooling-in-AI-Data-Centers/default.aspx`
+- Jabil definitive agreement to acquire Hanley Energy Group, 2025-11: `https://investors.jabil.com/news/news-details/2025/Jabil-Announces-Definitive-Agreement-to-Acquire-Hanley-Energy-Group/default.aspx`
+- Jabil completed acquisition of Hanley Energy Group, 2026-01: `https://investors.jabil.com/news/news-details/2026/Jabil-Acquires-Hanley-Energy-Group-to-Support-AI-Data-Center-Power-Management/default.aspx`
+- Jabil 1.6T pluggable transceiver launch, 2025-04: `https://investors.jabil.com/news/news-details/2025/Jabil-Launches-1-6T-Pluggable-Transceiver-to-Support-Growing-Demand-for-Intra-Data-Center-and-AI-Connectivity/default.aspx`
+- Jabil Photonics portfolio: `https://www.jabil.com/industries/photonics.html`
+- Jabil Intel silicon photonics transceiver deal, 2023-10: `https://investors.jabil.com/news/news-details/2023/Jabil-Invests-in-the-Future-of-AI-with-Intel-Silicon-Photonics-Transceiver-Deal/default.aspx`
+- Jabil completed divestiture of Mobility business to BYD Electronic, 2023-12: `https://investors.jabil.com/news/news-details/2023/Jabil-Completes-the-Divestiture-of-Mobility-Business/default.aspx`
+- Jabil planned $500 million U.S. manufacturing investment for cloud and AI data center infrastructure, 2025-06: `https://investors.jabil.com/news/news-details/2025/Jabil-Announces-Planned-Multi-Year-500-Million-Investment-in-U-S--Manufacturing-for-Cloud-and-AI-Data-Center-Infrastructure/default.aspx`
+- 市场数据参考：StockAnalysis JBL quote/statistics, Google Finance JBL, MarketWatch 2026-06-10 close.
+
+### 14.2 项目内行业资料
+
+- `行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_LPO_LRO线性光模块_2026-06-11.md`
+

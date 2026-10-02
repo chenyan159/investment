@@ -1,0 +1,162 @@
+# 公司收入传导与价值传导评估：MaxLinear（MXL）
+
+报告日期：2026-06-12  
+主口径：NTM，指 2026Q2 至 2027Q1 附近未来 4 个季度经营窗口。  
+资料边界：本报告使用 `公司调研/`、`行业调研/` 内正式资料，并用 MaxLinear 官方财报、SEC 文件和产品公告补充最新可确认事实；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归、模型比较或全公司排序资料。  
+排除事项：不输出投资评级、目标价、股价区间、估值倍数判断或公司排名；金融市场价格不作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 收入、毛利、经营利润、现金流和执行可信度；FY2026、FY2027、长期 run-rate 只用于补充校准，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：MaxLinear 2026Q1 收入 `$137.2M`，同比 `+43%`；Q2 2026 公司指引 `$160M-$170M`，中值 `$165M`；Q1 年化 run-rate 约 `$549M`，Q2 指引中值年化约 `$660M`。Q1 分业务收入为 Infrastructure `$62.8M`、Broadband `$43.6M`、Connectivity `$18.6M`、Industrial & Multi-Market `$12.2M`。
+- 重要产品/业务线：1）Keystone/Rushmore/Washington/Topanga 数据中心光 DSP/TIA；2）Annapurna/Makalu 224G/3.2T 电互联 retimer/AEC；3）Puma/AnyWAN/PON/Wi-Fi/Ethernet 宽带与连接 SoC；4）Trinity/无线回传及非光基础设施；5）Panther storage accelerator、Coronado/Laguna USB UART 和工业/接口长尾。
+- NTM 公司收入四情景：悲观 `$610M-$680M`；基准 `$720M-$780M`；乐观 `$850M-$950M`；极度乐观 `$1.05B-$1.25B`。基准相对 Q1 年化 run-rate 绝对增加约 `$171M-$231M`，相对当前经营预期是“Q2 指引兑现 + H2 optical data center 正常爬坡”。
+- 利润或 EBITDA 四情景：悲观 non-GAAP 经营利润约 `$50M-$95M`；基准 `$110M-$155M`；乐观 `$175M-$235M`；极度乐观 `$270M-$390M`。GAAP 净利润仍会受税项、股权激励、重组、并购/诉讼相关项目影响，NTM 经营质量以 non-GAAP 经营利润和自由现金流方向更可比。
+- 最大传导瓶颈：不是行业需求，而是 MaxLinear 是否能把 800G 已出货基础、1.6T Rushmore 客户认证、Washington TIA 线性/半重定时 BOM、Annapurna 224G AEC/retimer 从产品展示和客户评估转成 NTM 可确认收入。
+- 最大利润率变量：数据中心光 DSP/TIA 的 mix、1.6T 早期 ASP、Washington 与 Rushmore bundle 能力、客户年度降价、晶圆/测试成本和 Broadband/Connectivity 是否稀释毛利。
+- 最大现金流变量：低几何制程数据中心产品晶圆预付款、库存转收入速度、客户 PO 与供应商 firm order 的错配、Q2/Q3 Infrastructure 是否连续增长。
+- 可信度：公司基准为中高；光 DSP/TIA 基准为中高；Annapurna、Panther、Coronado/Laguna 的 NTM 量化可信度为低到中，只能作为乐观或附录跟踪。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 数据中心光 DSP/TIA：Keystone 400G/800G、Rushmore 1.6T、Washington/Topanga TIA | Q1 2026 optical data center 估计 `$35M-$45M`；Infrastructure 已披露 `$62.8M`；2026 optical data center 目标在公开电话会/摘要中为 `$150M-$170M` | Q1 估计 `26%-33%`；若按 Infrastructure 上限为 `46%` | 最大 NTM 增量和利润质量变量 | A/B，产品拆分含 C | 进入基准；Rushmore/Washington 按小比例折扣，Keystone 按已量产主口径 | 3.2T、400G/lane、CPO/NPO/XPO 中长期 |
+| 224G 电互联 retimer/AEC：Annapurna，后续 Makalu | 当前收入接近零；Annapurna 预计 Q2 2026 available；Makalu 计划 Q4 2026 sampling | 当前约 `0%` | 可能改变 scale-up/AEC 品类结构，但 NTM 可见度低 | C/D | 基准只放入 `$0M-$15M` 小比例；主要在乐观/极度乐观 | UALink/ESUN/Ultra Ethernet、3.2T on-board retimer |
+| 宽带与连接 SoC：Puma 8、AnyWAN、PON、Wi-Fi、Ethernet、MoCA/G.hn | Q1 2026 Broadband `$43.6M`，Connectivity `$18.6M`；合计 `$62.2M` | `45%` | 现金流和抵消项；不是 AI 训练集群直接收入 | A | 进入基准；按温和恢复处理 | AI gateway、Edge AI、Wi-Fi 8、50G PON |
+| 无线回传和其他基础设施：Trinity、microwave/mmWave、wireless backhaul、last-mile infrastructure | 未单独披露；包含在 Infrastructure 非 optical 部分，Q1 估计 `$15M-$25M` | 约 `11%-18%` | 中等；运营商周期和 5G backhaul 驱动 | C | 基准保守纳入存量和小幅增长；Trinity 2027 OEM 产品前不重估 | AI-enabled 5G backhaul、open SAI 管理平台 |
+| Panther storage accelerator、Coronado/Laguna USB UART、Industrial/Interface 长尾 | Q1 Industrial `$12.2M`；Panther/USB UART 当前未披露，Panther 仍偏展示/合作 | Industrial `9%`，新品当前小 | Panther 有 AI inference 数据移动逻辑；USB UART 单价低；工业为现金流长尾 | A for Industrial；C/D for Panther/USB | Industrial 进基准；Panther/USB 只小比例或乐观，不作为主基准 | HPC/OpenZFS、RAG/KV cache offload、rack-scale control plane |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不判断 MaxLinear 份额、收入确认、利润率或公司汇总。需求强弱一律相对该产品自身当前需求锚，而不是相对 AI 叙事热度。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 数据中心光 DSP/TIA | 行业资料显示 2026 年 800G 仍为主力、1.6T 开始 volume deployment；Cignal/行业资料口径给出 2026 800GbE `>20M` 只、1.6TbE `>5M` 只；DSP/TIA/CDR 是高毛利芯片池 | 800G 客户库存上升，1.6T 认证后移，DSP/TIA 芯片池约 `$4.5B-$6.0B` | 800G 继续放量，1.6T 在 H2 进入主要云厂/模块厂导入，芯片池约 `$6B-$10B` | 1.6T 和 LRO/TRO 加速，800G 需求不快速下滑，芯片池约 `$10B-$15B` | 1.6T/3.2T、CPO/NPO/XPO、AI scale-across 同时提前，芯片池 `$15B-$22B+` | 悲观较当前行业基准少 `$1.5B-$4B`；乐观多 `$3B-$5B`；极度多 `$8B+` | 基准符合行业预期；乐观需要客户加速；极度为上限 | 行业调研强调 2026 主线为 1.6T 可插拔放量 + 线性架构试量；反证是 ASP 下行、CPO 改变价值分配、客户多供 |
+| 224G retimer/AEC | AI rack 内短距铜互联、AEC/ACC 和 on-board retimer 随 112G/224G 迁移上升；行业资料称 2026 投资弹性在 1.6T/224G AEC/ACC | 1.6T 主要走光，224G AEC/retimer 停留样品，芯片/socket 需求约 `$0.2B-$0.4B` | 少数 hyperscaler/ASIC rack 评估，AEC/retimer 芯片需求约 `$0.4B-$0.8B` | 1-2 个开放 scale-up 平台采用 224G AEC/on-board retimer，需求 `$0.8B-$1.5B` | UALink/ESUN/Ultra Ethernet 迅速标准化，需求 `$1.5B-$3.0B+` | 极度较基准多 `$1B+`，但从低基数发生 | 基准为早期验证；乐观以上需要正式平台 | 反证是 NVLink/专有互联、CPO/光路径绕开，或 Credo/Astera/Marvell/Broadcom 锁定主要 socket |
+| 宽带与连接 SoC | 行业资料显示 2026 Wi-Fi 7 最确定，PON 主线仍为 XGS-PON，DOCSIS 4.0 从互通/少量市场进入外场硬件与 vCMTS 采购加速；窄口径设备/软件需求基准约 `$24B-$36B`，芯片内容量只是其中一小部分 | 运营商 CapEx 延迟、MSO 用户流失、Wi-Fi 7 价格战，设备/软件池低于 `$24B` | Wi-Fi 7、XGS-PON、DOCSIS 4.0 按行业预期推进，设备/软件池 `$24B-$36B` | Wi-Fi 7 AP/CPE 和 DOCSIS 4.0 gateway 加速，设备/软件池 `$36B-$48B` | AI edge gateway、50G PON、DOCSIS 4.0、Wi-Fi 7/8 同时上修，设备/软件池 `$48B+` | 对 MaxLinear 芯片收入的传导远小于设备池；基准只支持温和增长 | 基准符合当前预期；AI 数据中心不能直接上调家宽需求 | 行业资料明确 AI 训练 fabric 不使用 PON/DOCSIS/Wi-Fi；反证是运营商 CapEx、认证和 CPE 替换滞后 |
+| 无线回传和其他基础设施 | MaxLinear Trinity 指向 10Gbps microwave/mmWave 5G backhaul；公司公告引用 mmWave technology market 2024 约 `$3B`、2029 超 `$7B` | 运营商 5G/回传预算继续受 ARPU 和利率约束，NTM 需求低个位数增长 | 5G backhaul 逐步升级，NTM 需求中个位数到低双位数增长 | 云管、AI-enabled link management 和 cost/power saving 拉动 OEM 新设计 | 2027 OEM 产品提前形成多运营商部署 | 绝对需求无法可靠量化到 MaxLinear socket；可判断为中等需求池 | 当前预期为稳健而非爆发 | 反证是运营商采购周期慢、OEM 产品要到 2027 H1 才预期 launch |
+| Panther/控制平面/工业接口 | Panther 对应 AI inference 数据移动、RAG/KV cache 和 HPC/OpenZFS；公司称 purpose-built silicon accelerator SAM 约 `$5B`，但 NTM 客户收入未披露 | 数据移动由 CPU/DPU/软件处理，硬件 offload 仅试点 | HPC/AI inference 客户做评估，NTM 需求为小批量项目 | LANL/OpenZFS 与 OEM 展示转化为多个付费项目 | Hyperscaler 把 storage offload 纳入推理标准架构 | 当前无法可靠量化 NTM 需求；长期 SAM 不能替代 NTM | 基准只承认早期需求，不把 SAM 当收入 | 反证是软件栈、TCO、部署复杂度和竞品 DPU/SmartNIC 路线 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求能进入 MaxLinear NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入。A/B 级证据进入基准；C 级只有在客户、产品和时间表较清楚时小比例纳入；D/E 级不进入基准主口径。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 数据中心光 DSP/TIA | Q1 2026 Infrastructure `$62.8M`，其中 optical data center 估计 `$35M-$45M`；公开电话会/摘要显示 2026 optical data center 目标 `$150M-$170M`；Keystone 已量产，Washington availability 公告 | 直接 | 高毛利 DSP/TIA，研发/测试投入高，规模效应强 | `$170M-$220M` | `$290M-$320M` | `$380M-$450M` | `$520M-$650M` | 基准符合 Q2 guide 与 H2 optical ramp；乐观高于当前预期 | A/B，Rushmore/Washington 为 C | 是 | Q1 分部收入、Q2 指引、Keystone 出货、Washington/Rushmore 产品和 OFC 证据 | NTM 主基准，最大收入和利润传导项 |
+| 224G retimer/AEC | Annapurna 当前接近零；官方称 Q2 2026 available；Washington 公告提到 3.2T Makalu on-board retimer 计划 Q4 2026 sampling | 直接，但尚未确认 | 若 design-in 成立可高毛利；当前研发和认证成本先行 | `$0M` | `$0M-$15M` | `$25M-$50M` | `$60M-$120M` | 基准仅为小比例期权，不等同当前预期 | C/D | 小比例 | 产品 availability 和行业 AEC 需求；无已披露客户量产订单 | 不作为基准主驱动；乐观以上看客户平台 |
+| 宽带与连接 SoC | Q1 2026 Broadband `$43.6M`、Connectivity `$18.6M`；2025 Broadband `$204.4M`、Connectivity `$78.0M` | 直接 | 成熟 SoC/连接芯片，毛利好但竞争和年度降价明显 | `$275M-$300M` | `$295M-$315M` | `$320M-$360M` | `$290M-$330M` | 基准为温和恢复；极度乐观公司情景中该业务不一定同步上修 | A | 是 | 收入表和 Q2 所有 end markets sequential growth 的管理层说法 | 现金流基座和抵消项，不是 AI optical 弹性 |
+| 无线回传和其他基础设施 | 包含在 Infrastructure 非 optical 部分，Q1 估计 `$15M-$25M`；Trinity 已 availability，OEM 产品预期 2027H1 launch | 直接 | SoC/软件套件混合，取决于运营商/OEM adoption | `$55M-$65M` | `$70M-$80M` | `$75M-$95M` | `$80M-$110M` | 基准略高于当前 run-rate；不是 Q2 step-up 主因 | B/C | 是，保守 | Q1 Infrastructure 去除 optical 后的残余估计；Trinity 官方发布时间表 | NTM 辅助项；2027 才可能更明显 |
+| Panther/控制平面/工业接口 | Q1 Industrial `$12.2M`；Panther、LANL、Dell Tech World、Coronado/Laguna 均有产品/合作公告但未披露收入 | 直接和间接混合 | Industrial 稳定；Panther 若采纳可较高毛利；USB UART 单价低 | `$45M-$55M` | `$55M-$60M` | `$60M-$75M` | `$60M-$80M` | 基准主要是 Industrial/接口存量；Panther/USB 只作小额 | A for Industrial；C/D for Panther/USB | 部分 | 收入表中的 Industrial；新品只按展示/样品折扣 | NTM 不作为主线，附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，评估每个产品在 NTM 内能给 MaxLinear 贡献多少收入和利润。不得把行业 TAM、客户总预算、长期 SAM 或项目总额直接当公司收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 数据中心光 DSP/TIA | 悲观产品 | `$170M-$220M` | non-GAAP 毛利贡献约 `$95M-$125M`，经营利润被研发/测试和降价压缩 | GM 55%-59%，op margin 低于公司目标 | 低于当前 optical ramp 预期 | Q1 Infrastructure 已增长但 backlog 不披露 | 保留为 downside | 1.6T 认证延迟、Keystone 年度降价、客户二供压价 |
+| 数据中心光 DSP/TIA | 基准产品 | `$290M-$320M` | 毛利约 `$175M-$200M`，经营利润随固定费用吸收上升 | GM 60%-63%，op margin 扩张 | 符合当前 Q2 guide、2026 optical target 和 H2 ramp | Q1/Q2 财报、Keystone volume、Washington/Rushmore evidence | 保留 | 供应商 firm orders 与客户 PO 错配，测试产能 |
+| 数据中心光 DSP/TIA | 乐观产品 | `$380M-$450M` | 毛利约 `$235M-$290M`，经营杠杆明显 | GM 62%-65%，op margin 强扩张 | 高于当前预期 | Rushmore 进入 1.6T 初量产，Washington 进入 LRO/TRO BOM | 保留但需客户证据 | Broadcom/Marvell/Cisco/Acacia 锁定主客户 |
+| 数据中心光 DSP/TIA | 极度乐观产品 | `$520M-$650M` | 毛利约 `$330M-$430M`，非线性经营杠杆 | GM 64%-67%，op margin 30%+ 可见 | 显著高于当前预期，只能作上限 | 多 hyperscaler 1.6T/224G 关键第二来源成立 | 下移为低可信上限 | 任一客户、供应、测试、价格环节不成立即降为乐观 |
+| 224G retimer/AEC | 悲观产品 | `$0M` | 无显著贡献，研发费用先行 | 利润率负向 | 低于新品期望 | 无已披露客户量产 | 保留 | AEC 路线被光或专有互联绕开 |
+| 224G retimer/AEC | 基准产品 | `$0M-$15M` | 毛利贡献小，经营利润近似中性或略负 | 低量阶段利润率不稳定 | 符合“样品/availability 后小批量” | Annapurna Q2 availability、行业 224G 需求 | 保守纳入 | 客户平台认证 6-12 个月，竞争强 |
+| 224G retimer/AEC | 乐观产品 | `$25M-$50M` | 高毛利 silicon 贡献，但销售支持和验证成本仍高 | GM 向公司平均以上 | 高于当前预期 | 1-2 个平台采用 224G AEC/on-board retimer | 保留为乐观 | Credo/Astera 心智强，Broadcom/Marvell 生态强 |
+| 224G retimer/AEC | 极度乐观产品 | `$60M-$120M` | 可能产生高增量利润 | GM 高，但需价格和良率支撑 | 显著高于当前预期 | UALink/ESUN/Ultra Ethernet 快速落地 | 下移为乐观上限 | 无公开客户量产和标准收敛证据 |
+| 宽带与连接 SoC | 悲观产品 | `$275M-$300M` | 毛利稳定但价格和 mix 受压 | GM 55%-60% | 低于温和恢复路径 | Q1 Broadband 只同比 +7%，Connectivity 同比 -8% | 保留 | MSO capex、Wi-Fi price competition、CPE inventory |
+| 宽带与连接 SoC | 基准产品 | `$295M-$315M` | 贡献稳定现金毛利，费用吸收有限 | GM 接近公司平均 | 符合当前预期 | Q1 收入表，Puma/DOCSIS 4.0 VFI，Edgecore edge partnership | 保留 | AI 不能直接推高家宽 SoC 需求 |
+| 宽带与连接 SoC | 乐观产品 | `$320M-$360M` | mix 改善，毛利小幅上行 | GM 小幅改善 | 略高于当前预期 | Wi-Fi 7、XGS-PON、DOCSIS 4.0 CPE 替换加速 | 保留 | Broadcom/Qualcomm/MediaTek/Realtek 竞争 |
+| 宽带与连接 SoC | 极度乐观产品 | `$290M-$330M` | 不按极度上修处理，因非 AI 主线 | 稳定 | 不作为极度乐观核心 | 即使 AI edge 叙事成立，NTM 收入表证据不足 | 排除极度上修 | 避免把 AI 数据中心 capex 映射到 PON/DOCSIS/Wi-Fi |
+| 无线回传和其他基础设施 | 悲观产品 | `$55M-$65M` | 低量稳定贡献 | GM 接近公司平均 | 低于当前恢复 | 运营商预算慢 | 保留 | 5G backhaul 项目周期慢 |
+| 无线回传和其他基础设施 | 基准产品 | `$70M-$80M` | 中等毛利，费用杠杆有限 | 持平到小幅改善 | 符合当前预期 | Trinity available，OEM 产品预期 2027H1 | 保留 | 2026 内收入确认不确定 |
+| 无线回传和其他基础设施 | 乐观产品 | `$75M-$95M` | 增量利润可见但不非线性 | 小幅改善 | 略高于预期 | 10Gbps backhaul、SAI API 和 OEM traction | 保留 | ARPU、运营商 capex、地域项目 |
+| 无线回传和其他基础设施 | 极度乐观产品 | `$80M-$110M` | 不足以驱动公司极度乐观 | 持平到改善 | 上修有限 | OEM 提前 launch | 仅作跟踪 | 需求不是 AI data center 直接链路 |
+| Panther/控制平面/工业接口 | 悲观产品 | `$45M-$55M` | Industrial 支撑，Panther/USB 无显著贡献 | GM 稳定，费用先行 | 低于新品叙事 | Q1 Industrial `$12.2M` | 保留 | 产品展示不等于订单 |
+| Panther/控制平面/工业接口 | 基准产品 | `$55M-$60M` | 稳定毛利，经营利润有限 | 持平 | 符合当前预期 | Industrial 收入表，Panther/LANL 只辅助 | 保留 | Panther TCO 和软件生态 |
+| Panther/控制平面/工业接口 | 乐观产品 | `$60M-$75M` | Panther 若小批量可提升 mix | 小幅改善 | 略高于当前预期 | LANL OpenZFS 39x write / 7x read speedup 公告、Dell Tech World 展示 | 保留为小额乐观 | 缺少商业采购规模 |
+| Panther/控制平面/工业接口 | 极度乐观产品 | `$60M-$80M` | 仍不应作公司极度主因 | 不确定 | 不作为核心 | hyperscaler 采用才成立 | 移入附录 | 只凭 SAM `$5B` 不进 NTM |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献去重后合成为 MaxLinear NTM 总收入、毛利率、经营利润、净利润/EBITDA近似和自由现金流方向。公司不披露产品级利润率，因此利润贡献采用分部 mix、公司毛利率指引和 non-GAAP 费用结构估算。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$610M-$680M` | 相对 Q1 年化 run-rate `$549M` 增加 `$61M-$131M`；相对 TTM `$509M` 增加约 `+20%-34%` | 低于 Q2 指引正常外推；optical DC 只达到 `$150M-$170M` 后 H2 不再加速 | `56.5%-59.0%` | `8%-14%` | non-GAAP 经营利润约 `$50M-$95M`；GAAP 净利润可能仍亏损 | breakeven 到小幅正，预付晶圆/库存可能拖累 | 中 | 1.6T 认证延迟、客户项目 timing、Broadband 抵消、库存转收入慢 |
+| 基准公司 | `$720M-$780M` | 相对 Q1 年化 run-rate 增加 `$171M-$231M`；相对 TTM 增加约 `+42%-53%` | 符合 Q2 guide、2026 optical data center 目标和 H2/2027Q1 正常 ramp | `59.0%-61.0%` | `15%-20%` | non-GAAP 经营利润约 `$110M-$155M`；non-GAAP 净利润约 `$80M-$125M` | 正向改善，预付款随出货回收后 FCF 转正 | 中高 | optical DSP/TIA 交付、客户验收、毛利保持、费用不过快扩张 |
+| 乐观公司 | `$850M-$950M` | 相对 Q1 年化 run-rate 增加 `$301M-$401M`；相对 TTM 增加约 `+67%-87%` | 高于当前预期，且不是单一小项目；800G 维持、1.6T 初量产、TIA/AEC 小规模兑现 | `60.5%-63.0%` | `20%-25%` | non-GAAP 经营利润约 `$175M-$235M`；non-GAAP 净利润约 `$135M-$190M` | 明显正向，库存和预付款周转改善 | 中 | 1.6T 客户 BOM、Washington attach、Annapurna 客户平台、ASP 不快速下行 |
+| 极度乐观公司 | `$1.05B-$1.25B` | 相对 Q1 年化 run-rate 增加 `$501M-$701M`；相对 TTM 增加约 `+106%-146%` | 显著高于当前预期；多个 hyperscaler/模块厂同时采用 MXL 1.6T DSP/TIA 或 224G retimer | `62.0%-65.0%` | `25%-32%` | non-GAAP 经营利润约 `$270M-$390M`；non-GAAP 净利润约 `$210M-$320M` | 强正向，但需供应、测试和客户锁单同步 | 低 | 多个核心环节同时成立：需求、份额、价格、良率、客户认证、现金周转 |
+
+汇总检查：
+
+- 去重：光 DSP/TIA 与 Annapurna 分别按 optical module 和 electrical scale-up socket 处理；Broadband/Connectivity 不把 AI data center capex 直接映射进去；Panther/USB 不用长期 SAM 加总。
+- 一次性/会计：GAAP 净利润会受税项、股权激励、重组、法律费用和无形资产摊销影响，因此公司层面用 non-GAAP 经营利润作为经营价值传导主指标，GAAP 净利润只作风险提示。
+- 传统业务抵消：Broadband 和 Connectivity 是基准现金流，但也可能在运营商预算、CPE 库存或 Wi-Fi price competition 下抵消 optical 增量。
+- 收入质量：低毛利 pass-through 不是主假设；核心利润质量来自 DSP/TIA silicon，而不是模块组装或客户总 CapEx。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 收入 `$137.2M`、Q2 指引 `$160M-$170M` | 公司汇总、收入基数 | 支持 NTM 基准高于 Q1 年化 run-rate | 指引 non-GAAP GM `58%-61%` 支持基准利润率 | Q2 guide 是最直接兑现校验 | 保留基准 |
+| Q1 Infrastructure `$62.8M`，同比 `+136%`，占收入 `46%` | 产品贡献、公司组合 | 支持 optical data center 已进入收入表 | 高性能 analog/optical mix 支持毛利稳定 | 若 Q2/Q3 继续增长，执行可信度提高 | 保留基准和乐观 |
+| 2026 optical data center 目标 `$150M-$170M` | 收入基数、产品贡献 | 支持 optical NTM 主口径，但不是 2027 自动上修 | 取决于 Keystone/Rushmore/Washington mix | 需要 H2 订单、测试和客户验收 | 保留基准；乐观需上修目标 |
+| 未披露可直接相加 backlog；PO 通常在交付前 `6-26` 周，供应 forecast 和 firm orders 可提前 | 收入确认、执行可信度 | 限制把 pipeline 当收入 | 预付晶圆若不能转收入会压利润 | 库存和预付款风险只在收入确认层级处理 | 保留悲观；不重复惩罚需求 |
+| Washington TIA availability、Rushmore OFC 2026 224G demo | 产品贡献 | 支持 TIA 和 1.6T 的乐观路径 | 若 bundle 成立可提高 mix | 仍需 module/hyperscaler qualification | 保留乐观；极度下移 |
+| Annapurna Q2 2026 available，Makalu Q4 2026 sampling | 产品贡献 | 支持 AEC/retimer 小额期权 | 早期利润受验证费用影响 | 无客户量产，不进主基准 | 基准小比例；乐观保留；极度下移 |
+| Panther/LANL OpenZFS、Dell Tech World、Coronado/Laguna 样品计划 | 收入基数、远期期权 | 支持产品存在和客户/合作线索，不支持 NTM 大收入 | Panther 若采纳可改善 mix；USB UART 单价低 | 商业采购规模未披露 | 仅作跟踪或移入附录 |
+| Broadband/Puma 8 DOCSIS VFI、Edgecore partnership、Trinity availability | 传统/辅助业务 | 支持基准稳定和小幅增长 | 成熟 SoC 毛利稳定但竞争强 | 运营商和 OEM 周期较慢 | 保留基准，不上移公司情景 |
+| 客户集中：Q1 2026 最大客户 `13%`，前十大客户 `56%`；FY2025 前十大客户约 `65%` | 执行可信度 | 单一 program 延迟影响收入 | 大客户二供压价影响毛利 | 客户项目 timing 是最大现金流风险 | 保留悲观和乐观约束 |
+| Broadcom/Marvell/Cisco/Acacia/Credo/Astera 竞争 | 份额、价格 | 限制 MaxLinear share 上限 | 年度降价和二供压价限制非线性利润 | 若竞品锁定 socket，MXL 留在 sample/demo | 乐观需客户证据；极度下移 |
+| LPO/CPO/NPO/XPO 路线分裂 | 需求、产品 mix | 对 DSP 是替代风险，对 TIA 是机会 | 可能从 DSP 毛利转向 TIA/driver/host retimer | 需要按架构而非 TAM 加总 | 不重复惩罚；在产品 mix 处理 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Q2 只达低端或后续不增长，optical ramp 低于当前预期，NTM `$610M-$680M` | Q1/Q2 已有收入和指引支撑，不是需求完全消失 | backlog 不披露、客户集中、1.6T 认证和供应错配 | 保留 | downside operating case | 中 | 客户集中只在执行/收入确认层级处理，不再重复压低行业需求 |
+| 基准 | Q2 指引兑现，H2 optical data center 正常爬坡，NTM `$720M-$780M` | Q1 Infrastructure `+136%`、Q2 guide `$160M-$170M`、Keystone volume、Washington availability | Rushmore/Washington/Annapurna仍含 C/D 级假设；现金流受晶圆预付款影响 | 保留 | 主经营口径 | 中高 | 预付晶圆只影响现金流和执行，不重复当作需求风险 |
+| 乐观 | 800G 延续、1.6T 初量产、TIA/AEC 小规模贡献，NTM `$850M-$950M` | Rushmore/Washington OFC 证据、Annapurna availability、行业 1.6T/AEC 强需求 | 未披露客户量产订单；竞品生态强；ASP 可能下行 | 保留 | upside operating case | 中 | ASP 下行只在利润率处理，不同时再砍收入需求，除非订单也下修 |
+| 极度乐观 | 多 hyperscaler 同时采用 MXL 1.6T DSP/TIA/retimer，NTM `$1.05B-$1.25B` | 行业需求池大、产品组合完整、Samsung second-source 和 high-speed analog 叙事有差异化 | 任一核心环节缺客户、供应、价格或认证证据；Panther/Annapurna无大额订单 | 下移 | 低可信上限；部分移入附录跟踪 | 低 | 不把 Panther SAM、AI CapEx 或同业高增长重复加到公司 NTM 收入 |
+
+## 8. 结论
+
+- 最可能情景：基准情景。NTM 公司收入约 `$720M-$780M`，核心是 Q2 2026 指引兑现后，optical data center DSP/TIA 在 2026H2 和 2027Q1 继续爬坡；Broadband/Connectivity 稳定贡献现金流；Annapurna、Panther 和控制平面新品只贡献小比例或作为后续跟踪。
+- NTM 收入结论：收入传导主链条是 `AI optical module demand -> module/OEM/hyperscaler certified BOM -> Keystone/Rushmore/Washington chip shipment -> Infrastructure revenue -> company operating leverage`。当前可确认收入基数足以支持基准高于 Q1 年化 run-rate，但不足以把极度乐观直接当作当前预期。
+- 利润/现金流结论：基准下 non-GAAP GM 维持 `59%-61%`，经营利润率 `15%-20%`，non-GAAP 经营利润约 `$110M-$155M`。若晶圆预付款和库存顺利转为出货，自由现金流应转正；若收入不跟随库存和预付款增长，现金流会先于利润表发出反证。
+- 主要传导瓶颈：1）Rushmore 1.6T 是否通过客户量产认证；2）Washington 是否进入 LRO/TRO/LPO/fully retimed BOM；3）Keystone 800G 是否在客户二供和 ASP 下行中维持 share；4）Annapurna 是否进入实际 scale-up/AEC 平台；5）Broadband/Connectivity 是否能不抵消 AI optical 增量。
+- 乐观情景成立条件：Q2 实际收入超过 `$170M`，Q3 指引继续增长；Infrastructure 占比超过 `50%` 并继续上行；2026 optical data center 目标从 `$150M-$170M` 再上修；non-GAAP GM 保持 `60%+`；1.6T Rushmore/Washington 客户或模块 BOM 有明确公开信号。
+- 极度乐观情景成立条件：多个 hyperscaler 或模块厂将 MaxLinear 纳入 1.6T DSP/TIA 主力或关键第二来源；224G retimer/AEC 进入开放 scale-up 平台；供应链、测试和良率不限制交付；价格和 mix 维持，非 GAAP 经营利润率进入 `25%+` 区间。当前证据不足，校准后作为低可信上限而非主口径。
+- 悲观情景触发条件：Q2 只达指引低端且 Q3 不增长；2026 optical data center 目标不再上修或出现 program timing；库存/预付晶圆继续上升但收入不增长；Rushmore/Washington 停留在 demo/sample；Broadband/Connectivity 低于 run-rate。
+- 后续跟踪数据：Q2/Q3 收入和指引、Infrastructure 分部收入、optical data center 目标、gross margin guide、库存和 prepaid assets、客户集中变化、Washington/Rushmore BOM/qualification、Annapurna design win、Panther 商业采购、Broadcom/Marvell/Cisco/Acacia/Credo/Astera 竞争进展。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：最新财务数据为 2026Q1，季度截止 2026-03-31，MaxLinear 于 2026-04-23 发布；本报告采集的产品新闻截至 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - MaxLinear Q1 2026 earnings release：<https://investors.maxlinear.com/press-releases/detail/607/maxlinear-inc-announces-first-quarter-2026-financial>
+  - MaxLinear Q1 2026 Form 10-Q：<https://investors.maxlinear.com/all-sec-filings/content/0001288469-26-000029/mxl-20260331.htm>
+  - MaxLinear Q4/FY2025 earnings release：<https://investors.maxlinear.com/press-releases/detail/594/maxlinear-inc-announces-fourth-quarter-and-fiscal-year>
+  - MaxLinear FY2025 Form 10-K：<https://investors.maxlinear.com/all-sec-filings/content/0001288469-26-000011/mxl-20251231.htm>
+- 主要产品和技术来源：
+  - Washington 200G TIA availability, 2026-04-30：<https://investors.maxlinear.com/press-releases/detail/608/maxlinear-announces-availability-of-washington-200g-tia-for>
+  - Rushmore/Washington OFC 2026 demo, 2026-03-12：<https://investors.maxlinear.com/press-releases/detail/602/maxlinear-to-showcase-nextgeneration-1-6t-rushmore-dsp>
+  - Annapurna 224G scale-up retimer, 2026-03-13：<https://investors.maxlinear.com/press-releases/detail/603/maxlinear-unveils-annapurna-224g-scale-up-retimer-to-extend>
+  - Panther at Dell Tech World 2026, 2026-05-05：<https://investors.maxlinear.com/press-releases/detail/609/maxlinear-showcases-panther-to-accelerate-ai-inference-and>
+  - MaxLinear and LANL OpenZFS/Panther collaboration, 2026-06-03：<https://investors.maxlinear.com/press-releases/detail/615/maxlinear-and-los-alamos-national-laboratory-jointly>
+  - Coronado/Laguna USB UART, 2026-05-19：<https://investors.maxlinear.com/press-releases/detail/612/maxlinear-enhances-control-plane-connectivity-for-ai-data>
+  - Puma 8 DOCSIS VFI, 2026-05-18：<https://investors.maxlinear.com/press-releases/detail/611/maxlinear-first-to-achieve-docsis-3-1-vfi-with-puma-8>
+  - Trinity wireless backhaul platform, 2026-05-14：<https://investors.maxlinear.com/press-releases/detail/610/maxlinear-launches-trinity-platform-for-faster>
+  - Edgecore partnership, 2026-05-26：<https://investors.maxlinear.com/press-releases/detail/613/maxlinear-and-edgecore-networks-announce-strategic>
+- 项目内公司和行业资料：
+  - `公司调研/AI计算芯片_EDA_IP_custom_ASIC/MXL_MaxLinear_公司调研_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_LPO_LRO线性光模块_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_宽带接入、PON、DOCSIS 4.0与Wi-Fi 7_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 optical data center `$150M-$170M` 只作为 2026 年内确认路径锚，不直接推导 2027 全年。
+  - FY2027 optical silicon 年化 `$300M+` 需要 Rushmore/Washington 客户量产；未达成前只支持乐观或上限情景。
+  - Panther 约 `$5B` SAM、LPO/LRO 到 2030 的单位机会、Annapurna/Makalu 224G/3.2T 都是远期期权或乐观上限，不进入 NTM 基准主收入。

@@ -1,0 +1,339 @@
+# PNR_Pentair plc 公司调研_2026-06-11
+
+## 0. 结论先行
+
+Pentair plc（NYSE: PNR）不是 AI 芯片或服务器液冷主链公司，而是一个以水为核心的工业/消费复合型公司：`Pool` 是高利润现金牛，`Water Solutions` 是住宅、商用和工业水处理/过滤平台，`Flow` 是泵、商业/基础设施流体控制和工业过滤平台。投资人通常把它看作“高质量水处理+泳池设备+工业泵”的 S&P 500 compounder，而不是高 beta AI 基建股。
+
+本次调研中，AI 数据中心相关的可验证抓手主要有两个：第一，Pentair Aurora 已单独推出 data center pump solutions 页面和产品包，覆盖冷冻水、冷凝水、rear-door heat exchanger、in-row cooling、immersion/geothermal/hybrid 等冷却方式；第二，Pentair 的工业/商业过滤、膜、水处理能力可以进入数据中心补水、闭式水环路、过滤和水质管理链条。但截至 2026-06-11，公司没有披露 AI 数据中心收入、客户名、GPU/rack 绑定订单或 hyperscaler backlog。基准判断：PNR 的 AI 数据中心收入当前大概率低于合并收入的 `1%-2%`，是 `Flow/Water Solutions` 内的边际增量和估值叙事选项，不应替代泳池和水处理主业分析。
+
+截至 2026-06-11，最重要的财务事实是：Q1 2026 销售额 `$1.037B`，同比 `+3%`，核心销售 `+1%`；调整后 EPS `$1.22`，同比 `+10%`；调整后 ROS `25.0%`，同比扩张 `100bp`。公司将 FY2026 销售指引上调到 `+2%-4%`，调整后 EPS `$5.30-$5.40`。这说明利润扩张强于收入增长，估值更依赖 margin execution、Pool 旺季表现和资本配置，而不是 AI 订单。
+
+估值按 2026-06-11 21:20 UTC 实时行情：股价 `$72.57`，市值 `$11.88B`，PE `17.79x`，EPS TTM `$4.08`；按 FY2026 调整后 EPS 指引中点 `$5.35`，forward PE 约 `13.6x`；按 TTM 收入约 `$4.202B`，PS 约 `2.83x`。以 2026 年 `2%-4%` 销售增长指引看，估值不便宜但比高景气 AI 电力/液冷纯链条公司低很多，合理性主要来自高毛利、强 FCF 和低到中等杠杆。
+
+## 1. 公司整体业务、投资人认知与产业链位置
+
+### 1.1 业务结构
+
+Pentair 的公开定位是“move, improve and enjoy water”。2026 年起，公司重组 `Flow` 与 `Water Solutions` 的边界：传统住宅和灌溉 flow 业务从 Flow 移入 Water Solutions，Pool 保持不变。新的分部更接近管理口径：
+
+| 分部 | Q1 2026 销售额 | Q1 2026 占比 | Q1 2026 同比 | Q1 2026 分部 ROS | 主要产品/场景 |
+|---|---:|---:|---:|---:|---|
+| Flow | `$258.1M` | `24.9%` | `+11.0%` | `23.7%` | Aurora 商业/基础设施泵、工业过滤、商业流体控制、Hydra-Stop 插入阀/line stop |
+| Water Solutions | `$391.0M` | `37.7%` | `-0.6%` | `25.5%` | 商用/住宅水处理、过滤、软水、膜、UV、压力罐、住宅/灌溉泵 |
+| Pool | `$387.1M` | `37.3%` | `+0.8%` | `33.1%` | 泳池泵、过滤器、加热器、灯、自动化、清洁设备、连接设备 |
+| 合计 | `$1,036.7M` | `100%` | `+2.6%` | 调整后 ROS `25.0%` | 水处理与泳池设备平台 |
+
+旧口径下，FY2025 销售结构为：Flow `$1.554B`、Water Solutions `$1.062B`、Pool `$1.559B`，合并 `$4.176B`。旧口径下 Pool 占 `37.3%`，Flow 占 `37.2%`，Water Solutions 占 `25.4%`；新口径下，住宅/灌溉 flow 移到 Water Solutions 后，Water Solutions 的收入权重显著提高。
+
+### 1.2 投资人心中的公司画像
+
+投资人通常把 PNR 看作四类资产的组合：
+
+1. `Pool 高利润现金牛`：Pool 分部 FY2025 ROS `33.8%`，Q1 2026 ROS `33.1%`，是公司最高利润率资产。住宅新建周期会影响新增设备，但维修、替换、节能泵、自动化和服务生态使其比纯住宅建材更有韧性。
+2. `水处理/过滤复合平台`：Water Solutions 覆盖住宅、商用、食品服务、工业过滤与水质管理，长期受水质、安全、节水和基础设施升级驱动，但短期增长低。
+3. `工业泵和基础设施 Flow`：Flow 受工业、市政、商业建筑、数据中心和水基础设施投资影响；2025 年 Hydra-Stop 收购强化市政水务。
+4. `80/20+Transformation margin story`：最近几个季度销售增长不高，但公司通过价格、生产率、组合优化和转型费用换取利润率扩张。Q1 2026 调整后 ROS 已到 `25.0%`。
+
+### 1.3 近 3 年重大业务变动、转型和收购
+
+| 时间 | 事件 | 金额/影响 | 判断 |
+|---|---|---:|---|
+| 2024 Q4 | 收购 G & F Manufacturing，进入/扩展泳池相关制造资产 | 2025 10-K 披露 2024 年收购现金约 `$108.0M` | 支撑 2025 Pool 收入增长，属于高利润 Pool 平台加厚 |
+| 2025 | Transformation Program、80/20、价格和生产率改善持续推进 | FY2025 调整后 operating income `$1.054B`，调整后 ROS `25.2%`，同比 `+170bp` | PNR 最近三年的核心变化是利润率改造，不是收入爆发 |
+| 2025-09 | 收购 Hydra-Stop | 现金约 `$292.1M`；公告交易价约 `$290M`，约 `$50M` 税收收益后净交易价值约 `$240M`；目标公司 2025 收入约 `$50M`、ROS 约 `30%` | 强化 Flow 的市政水基础设施、停水最小化、管网维修工具链；非 AI，但利润率高 |
+| 2026-01 | 重组 Flow 与 Water Solutions 分部边界 | 住宅/灌溉 flow 移入 Water Solutions，Pool 不变 | 管理结构更贴近渠道和客户；也使 Flow 更偏商业/基础设施/工业，便于讲数据中心和市政主题 |
+| 2026-03 | Investor Day | 提出新的 2028 前三年增长算法，并重申 2026 指引 | 市场重点看长期销售增长、margin expansion、FCF，而不是单一产品周期 |
+| 2026-05 | Pool Brain 技术集成公告 | 预计 2026 年夏末推出 | 强化 Pool connected equipment 与服务商软件生态；可能提升替换粘性和售后数据价值 |
+
+### 1.4 产业链位置
+
+在传统水产业链中，PNR 位于设备和系统层：泵、过滤、膜、控制阀、软水、商用水处理、泳池设备。它不是 EPC、不是公用事业运营商，也不是耗材化学品龙头。它通过经销商、OEM、工程承包商、市政服务商、泳池服务渠道和住宅/商业客户实现销售。
+
+在 AI 数据中心产业链中，PNR 的位置更窄：
+
+- `直接内容量为 0`：不进入 GPU、HBM、光模块、交换机、冷板、UQD、CDU 核心服务器 BOM。
+- `设施侧潜在内容量`：进入 chiller plant、condenser water、booster、fire suppression、facility water loop、过滤/补水/水质处理等外围设施侧。
+- `客户采购链`：hyperscaler/colo 数据中心业主 -> EPC/GC/MEP -> 冷却系统/水系统包商或泵/过滤分销/OEM -> Pentair。PNR 的议价权低于 Vertiv、Schneider、Eaton、Trane、Carrier 等更靠近主系统的供应商，也低于在冷却化学和水处理服务中具有强驻场能力的 Ecolab/Nalco、Veolia、Xylem/Evoqua。
+
+## 2. 最新估值、利润率和资产负债表
+
+### 2.1 估值快照
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | `$72.57` | 2026-06-11 21:20 UTC 实时行情 | 日内高 `$73.28`，低 `$70.77` |
+| 市值 | `$11.88B` | 2026-06-11 21:20 UTC | 按实时行情工具 |
+| PE | `17.79x` | 2026-06-11 21:20 UTC | EPS TTM `$4.08` |
+| Forward PE | `13.6x` | 2026-06-11；用 FY2026 adjusted EPS 指引中点 `$5.35` | `$72.57 / $5.35` |
+| PS | `2.83x` | 2026-06-11；TTM 收入估算 `$4.202B` | TTM 收入 = FY2025 `$4.176B` + Q1 2026 `$1.037B` - Q1 2025 `$1.010B` |
+| Q1 2026 收入增速 | `+2.6%` 报告值，约 `+3%` 公司摘要口径；核心 `+1%` | Q1 2026 | 价格贡献明显，销量普遍下滑 |
+| FY2026 收入指引 | `+2%-4%` | 2026-04-28 指引 | Q2 2026 指引约 `+1%` |
+| Q1 2026 毛利率 | `41.8%` | Q1 2026 | Q1 2025 为 `39.9%` |
+| Q1 2026 经营利润率 | `20.3%` GAAP；`25.0%` adjusted ROS | Q1 2026 | adjusted ROS 同比 `+100bp` |
+| Q1 2026 净利率 | `15.5%` continuing；`16.6%` total net income | Q1 2026 | continuing net income `$160.8M`，total net income `$172.4M` |
+
+### 2.2 财务健康程度
+
+资产负债表总体健康，但不是净现金资产。Q1 2026 末：
+
+| 项目 | 金额 | 判断 |
+|---|---:|---|
+| 现金 | `$67.7M` | 季节性低点，Q1 通常因 early buy/应收增长消耗现金 |
+| 应收账款 | `$913.7M` | 比 2025 年末 `$673.2M` 明显上升，主要与旺季前销售和付款条款有关 |
+| 存货 | `$642.0M` | 比 2025 年末 `$632.6M` 小幅上升 |
+| 流动资产 | `$1.763B` |  |
+| 流动负债 | `$939.5M` | current ratio `1.88x`，短期偿债能力良好 |
+| 总债务 | `$1.944B` | 包括 revolver `$582.6M`、term loan `$575M`、senior notes `$800M` 等 |
+| 净债务 | 约 `$1.877B` | 总债务减现金 |
+| 股东权益 | `$3.810B` | 总资产 `$7.072B` |
+| Q1 2026 FCF | `-$85.7M` | 季节性为负；公司说明 Q2 通常释放现金 |
+| FY2025 FCF | `$748.4M` | 接近 adjusted net income 100% 转换目标 |
+
+用 FY2025 adjusted operating income `$1.054B` 加上约 `$120M` 年化折旧摊销粗略估算，PNR 净债务/EBITDA 约 `1.6x`，处于可控区间。风险点是：Q1 2026 使用 revolver 支撑旺季前营运资金，同时回购 `$200M`；如果 Pool 旺季需求不及预期，应收回款和库存消化将成为市场关注点。
+
+## 3. 最近五次财报：收入、利润、订单和 AI 数据中心占比
+
+说明：2026 年起公司重组 Flow 与 Water Solutions 分部。Q1 2026 分部为新口径；Q1 2026 公告也给了 2025 对比重述口径。Q2-Q4 2025 以下表格采用当时财报/全年表披露的旧口径。Pool 口径不变。
+
+| 财报季度 | 合并销售额/增速 | 调整后 EPS / 调整后 ROS | Flow 销售/增速/ROS | Water Solutions 销售/增速/ROS | Pool 销售/增速/ROS | 订单、backlog、交期、取消率 | AI 数据中心收入占比 |
+|---|---:|---:|---:|---:|---:|---|---|
+| Q1 2026 | `$1.0367B`，同比 `+2.6%`；核心 `+1%` | `$1.22`；`25.0%` | 新口径 `$258.1M`，`+11.0%`；ROS `23.7%`；增长来自 Hydra-Stop、FX、价格，销量 `-1.1%` | 新口径 `$391.0M`，`-0.6%`；ROS `25.5%`；核心 `+0.9%`，销量 `-4.5%`，价格 `+5.4%`，商业业务退出 `-4.0%` | `$387.1M`，`+0.8%`；ROS `33.1%`；销量 `-5.8%`，价格 `+6.3%` | 10-Q 披露 1 年以上原始期限合同剩余履约义务 `$123.3M`，多数 12-18 个月确认；未披露季度总 backlog；Q1 FCF `-$85.7M` 为季节性 early-buy/应收消耗 | 未披露；估算合并收入 `<1%-2%`；直接 GPU/光口内容量为 `0` |
+| Q4 2025 | `$1.0205B`，同比约 `+4.9%`；核心 `+4%` | `$1.18`；`24.7%` | 旧口径 `$394.4M`，`+9%`；ROS `22.8%` | 旧口径 `$232.3M`，`-10%`；ROS `23.5%` | `$393.4M`，`+11%`；ROS `33.6%` | 2025 年末总 backlog `$567.5M`，同比 `-7.1%`；Flow `$387.2M`，`+9.9%`；Water `$53.2M`，`-22.8%`；Pool `$127.1M`，`-33.1%`。公司称多数 backlog 为短周期，一年内出货，且很多收入来自当月下单当月交付 | 未披露；数据中心泵/水处理若有订单，最可能藏在 Flow backlog 与商业/工业收入中 |
+| Q3 2025 | `$1.0220B`，同比约 `+2.9%` | `$1.24`；`25.7%` | 旧口径 `$394.0M`，`+6%`；ROS `24.2%` | 旧口径 `$273.3M`，`-6%`；ROS `25.0%` | `$354.3M`，`+7%`；ROS `32.8%` | 公告未披露季度 backlog；FCF `$178.9M`；公司提到 Hydra-Stop 收购强化商业 Flow | 未披露；无可验证 hyperscaler 项目名 |
+| Q2 2025 | `$1.1231B`，同比约 `+2.2%`；核心 `+1%` | `$1.39`；`26.4%` | 旧口径 `$397.3M`，近似持平；ROS `23.4%` | 旧口径 `$298.3M`，`-4%`；ROS `23.5%` | `$427.2M`，`+9%`；ROS `35.7%` | 公告未披露季度 backlog；FCF `$595.8M`，Q2 为季节性现金回流高峰 | 未披露；数据中心不构成季度业绩解释主因 |
+| Q1 2025 | `$1.0104B`，同比 `-1%`；核心 `-1%` | `$1.11`；`24.0%` | 旧口径 `$367.9M`，`-4%`；ROS `22.7%` | 旧口径 `$258.2M`，`-5%`；ROS `23.5%` | `$383.9M`，`+7%`；ROS `32.8%` | 因关税，公司提前涨价、预采购库存、限制订单以管理供应链；FCF `-$55.7M` | 未披露 |
+
+关键结论：过去 5 个季度，公司真正可见的增长来自 Pool 恢复、价格、Hydra-Stop 收购、Transformation productivity 和较强利润率；AI 数据中心相关收入没有单列，也没有足够证据解释公司整体增长。
+
+## 4. 2026 最新指引、收入占比和产品取舍
+
+### 4.1 2026 指引
+
+Q1 2026 后，公司更新 FY2026 指引：
+
+| 指引项目 | 最新指引 | 解释 |
+|---|---:|---|
+| FY2026 销售额 | 同比 `+2%-4%` | 高于年初 `+1%-2%`；仍是低到中个位数 |
+| FY2026 GAAP EPS | `$4.83-$4.93` | 同比 `+23%-25%` |
+| FY2026 adjusted EPS | `$5.30-$5.40` | 同比 `+8%-10%` |
+| Q2 2026 销售额 | 同比约 `+1%` | Q2 为 Pool 旺季核心观察窗口 |
+| Q2 2026 adjusted EPS | `$1.47-$1.50` | 同比 `+6%-8%` |
+| FY2026 adjusted operating income | 同比 `+6%-8%` | 继续依赖 ROS 扩张 |
+
+### 4.2 2026 最新业务占比和增长侧重点
+
+按 Q1 2026 新口径，PNR 的收入占比是：Water Solutions `37.7%`、Pool `37.3%`、Flow `24.9%`。最突出的业务不是 AI，而是：
+
+- `Pool`：利润率最高，Q1 ROS `33.1%`，FY2025 ROS `33.8%`。短期增长受渠道库存、天气、住宅维修/替换影响；长期重点是节能泵、自动化、connected equipment 和服务软件集成。
+- `Water Solutions`：销售基本持平，但 Q1 ROS `25.5%` 已经高于 Flow，价格和 productivity 抵消销量下滑。业务退出拖累 `-4.0%`，说明公司在清理低质量商用业务。
+- `Flow`：Q1 销售 `+11.0%` 最强，但核心增长仅 `+2.5%`，收购/FX/价格贡献大。Flow 是 Hydra-Stop 和数据中心泵故事所在。
+
+### 4.3 重点产品和型号
+
+| 产品/业务 | 对应分部 | 具体产品/型号 | 2026 重要性 |
+|---|---|---|---|
+| Aurora data center pump solutions | Flow | `3800 Series End Suction Pumps`、`382B Series In-Line Pumps`、`400 Series Split Case Pumps`、`PVM Pumps`；用于冷冻水、冷凝水、液冷泵、booster、消防泵 | PNR 最直接的数据中心产品；已单独建 data center landing page 和 brochure |
+| 商用/工业过滤、水处理、膜 | Water Solutions/Flow | Everpure 商用过滤、X-Flow 膜、活性炭、传统过滤、软水、UV、RO/膜分离、smart water management 等 | 可切入数据中心补水、闭式水环路、side-stream filtration、冷却塔水处理；但竞争强、订单未披露 |
+| Hydra-Stop insertion valves / line stop fittings | Flow | 插入阀、line stop fittings、安装设备 | 收入小但 ROS 约 `30%`，强化市政水务和基础设施维修 |
+| IntelliFlo3 VSF / IntelliPro3 VSF connected pool pump | Pool | 1.5HP/3.0HP，Pentair Pool app/Pro app，Wi-Fi automation，ENERGY STAR、UL、NSF/ANSI 50 | Pool 高利润核心 SKU；替换、节能法规和自动化提升粘性 |
+| Pool Brain 集成 | Pool | Pentair connected pool equipment + Pool Brain service management platform | 预计 2026 夏末推出；偏软件生态和服务效率，不是大额硬件订单 |
+
+### 4.4 可以跳过的低增速/非 AI 产品
+
+这些业务仍可能贡献现金流，但对 AI 数据中心主线、未来一年高增长判断帮助较小：
+
+- 普通住宅软水机、压力罐、住宅水过滤、住宅/灌溉标准泵。
+- 普通泳池加热器、灯、清洁器、维护附件，除非与 connected/automation 捆绑。
+- 食品服务制冰机、普通商用水过滤耗材，除非进入大型园区水质管理合同。
+- 农业喷嘴、气体回收、一般工业 fluid transfer 等非数据中心、非高增长订单。
+
+## 5. 当前高增长/关键产品：收入贡献、增速、AI 重要性和供需
+
+评分口径：`5` 为最高，`1` 为最低。收入贡献为研究估算，不是公司披露口径。
+
+| 产品/业务 | 当前收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Aurora 数据中心泵包 | 年化 `$10M-$40M`，Q1 可能 `$2M-$10M` | 高基数不明；从低基数 `+20%-50%` 可行 | `3/5` | `4/5` | `3/5` | `2/5` | 数据中心必须有泵和冗余，但泵不是最缺件；PNR 有品牌和渠道，不具备独家性 |
+| 数据中心水处理/过滤/膜 | 年化 `$5M-$25M` | `+10%-40%`，高度项目制 | `3/5` | `4/5` | `3/5` | `2/5` | 数据中心水质、补水、闭式环路过滤重要，但 Ecolab/Xylem/Veolia/Pall/Parker 等竞争强 |
+| Hydra-Stop | 2025 收入约 `$50M`，纳入后 FY2026 贡献大约 `$50M-$60M` | `+mid-single to low-teens`，取决于市政水务项目 | `1/5` | `3/5` | `3/5` | `3/5` | 非 AI；产品差异化和市政停水成本使其有较好 ROS |
+| IntelliFlo3/connected pool pumps | Pool 分部核心 SKU，Pool 年销售 `$1.56B`；该类泵/自动化估算为数亿美元级 | Pool Q1 仅 `+0.8%`，但 connected/节能替换应高于分部均值 | `0/5` | `2/5` | `2/5` | `4/5` | 非 AI；高毛利、高渠道粘性，是估值质量核心 |
+| Pool Brain 集成/服务数据生态 | 当前收入贡献接近 `0`，2026 下半年开始 | 从零开始 | `0/5` | `2/5` | `1/5` | `3/5` | 小业务但不能漏掉；若能降低服务商 truck rolls，有助于设备替换和渠道锁定 |
+
+## 6. 一年后收入贡献预测：基准、乐观、极度乐观
+
+### 6.1 产品收入和竞争力情景
+
+| 产品/业务 | 2027 年中基准 | 2027 年中乐观 | 2027 年中极度乐观 | 关键触发 |
+|---|---:|---:|---:|---|
+| Aurora 数据中心泵包 | 年化 `$25M-$60M`，同比 `+30%-60%`；AI 重要性 `3/5`，供需 `3/5`，溢价 `2/5` | 年化 `$60M-$120M`，同比 `+80%-150%`；进入多个 hyperscale/colo 标准 spec | 年化 `$120M-$220M`；成为若干大型园区泵包标准供应商 | 大型数据中心 chiller/condenser water pump package 中标；MEP 标准化指定 Aurora |
+| 数据中心水处理/过滤/膜 | 年化 `$15M-$40M`，同比 `+30%-70%`；AI 重要性 `3/5` | 年化 `$40M-$90M`；进入多个冷却水/补水/过滤项目包 | 年化 `$90M-$160M`；与泵包或服务商形成打包 | 项目从风冷设施侧水处理向 D2C 闭式环路过滤升级；水资源压力提升规格 |
+| Hydra-Stop | `$55M-$65M`，ROS 约 `30%` 附近 | `$65M-$80M` | `$80M-$100M` | 市政水务维修预算、管网更新、并购整合交叉销售 |
+| IntelliFlo3/connected pool pumps | Pool 总销售低个位数增长；connected SKU 高个位数 | Pool 中个位数增长；connected/automation 双位数 | 住宅维修替换加速，Pool 高个位数增长 | 旺季渠道库存正常化、节能泵替换、服务商采用 connected diagnostics |
+| Pool Brain 集成 | 直接收入小，主要拉动硬件替换和服务商粘性 | 成为大型 pool service companies 的标准工作流之一 | 建立设备数据入口，带来增值服务/售后数据收入 | 2026 夏末推出后的服务商 adoption 和 app 活跃度 |
+
+### 6.2 对公司整体未来一年增速的影响
+
+PNR 合并收入 FY2025 为 `$4.176B`，FY2026 指引 `+2%-4%`，意味着公司官方基准约 `$4.26B-$4.34B`。即使 Aurora 数据中心泵和水处理业务一年后做到 `$100M` 量级，也只占公司收入约 `2%-3%`。因此，未来一年合并增速的核心仍是：
+
+- Pool 旺季销售、渠道库存和价格保持；
+- Hydra-Stop 全年并表；
+- Water Solutions 低质量业务退出后的有机恢复；
+- Flow 中商业/市政/工业项目订单；
+- Transformation productivity 是否继续抵消关税、材料、人工通胀。
+
+## 7. BOM、内容量、价格传导、产能和认证
+
+### 7.1 数据中心泵和水处理的 BOM 位置
+
+PNR 的数据中心内容量在设施侧，不在服务器侧。典型 AI 数据中心液冷/冷却水链条：
+
+`GPU/ASIC` -> `cold plate/TIM` -> `UQD/hose/manifold` -> `rack/row CDU` -> `facility water loop` -> `pumps/valves/filters/sensors` -> `chiller/cooling tower/dry cooler` -> `water treatment/reuse/discharge`。
+
+PNR 主要可能进入 `pumps`、部分 `filters/water treatment`、消防泵和补水/水质管理。它不提供 GPU、cold plate、CDU 核心、UQD、光模块。
+
+### 7.2 每 MW / 每 rack / 每 GPU / 每 optical port 内容量
+
+估算假设：AI 高密度 rack 约 `100-150kW/rack`；`1MW IT load` 约 `7-10` 个高密度 rack。项目内行业调研显示，D2C 二次环路相关的冷却液、过滤、冲洗、监测和水处理全供应商成本在每 `150kW rack` 可达数万美元到十几万美元；PNR 只能取得其中泵/过滤/水处理的一小段。
+
+| 内容量口径 | Aurora 泵包 | 水处理/过滤 | 合计可得内容量 | 说明 |
+|---|---:|---:|---:|---|
+| 每 MW | 基准 `$20k-$150k/MW`；高规格 `$150k-$350k/MW` | 基准 `$10k-$100k/MW`；高规格 `$100k-$250k/MW` | 基准 `$40k-$250k/MW`；极高规格 `$250k-$600k/MW` | 包括 chiller/condenser/liquid cooling booster/过滤/补水的可得份额；不是全部冷却系统 CapEx |
+| 每 150kW rack | `$3k-$25k/rack` | `$2k-$20k/rack` | `$5k-$45k/rack` | 多数是 facility allocation；不是 rack 里直接装 PNR |
+| 每 GPU | 直接 BOM `$0`；按 facility allocation 约 `$5-$80/GPU` | 直接 BOM `$0`；allocation 约 `$2-$70/GPU` | `$0` 直接，allocation `$10-$150/GPU` | 取决于 GPU 功耗、rack 密度和冗余等级 |
+| 每 optical port | `$0` | `$0` | `$0` | PNR 不进入光通信链 |
+
+### 7.3 价格传导链
+
+`Hyperscaler/colo owner` 支付总项目 CapEx -> `GC/EPC/MEP` 打包机械/水系统 -> `冷却系统 OEM / chiller plant / pump distributor / water treatment contractor` 分包 -> `Pentair` 销售泵、过滤、膜、耗材或服务。
+
+PNR 的价格传导能力中等偏弱：它可以通过品牌、效率、可靠性和渠道服务获得溢价，但数据中心项目有明确的多供应商招标和可替代件；除非进入业主/MEP 标准规格，否则难以像电力变压器、开关柜或 CDU 关键供应商那样获得紧缺溢价。
+
+### 7.4 当前产能、采用和认证
+
+| 产品 | 当前产能能力（美元计） | 供应链采用 | 认证/规格阶段 |
+|---|---:|---|---|
+| Aurora 数据中心泵 | PNR Flow 年销售 `$1B+` 级平台内承载；数据中心专项当前估算可支持 `$50M+` 年化项目需求，实际受渠道/工程 spec 限制 | 已有官方 data center solutions 页面、brochure 和 distributor/contact channel；未发现披露的 hyperscaler named order | Aurora 产品面向 Tier I-IV 兼容需求；具体项目认证取决于 MEP spec、UL/FM/NFPA/电机效率等项目要求 |
+| 水处理/过滤/膜 | Water Solutions 年销售 `$1.5B+` 新口径平台承载；数据中心专项当前估算 `$25M-$50M+` 可供能力 | Everpure/X-Flow/过滤/膜能力成熟，但数据中心采用需与水处理服务商、EPC 和设施运营团队绑定 | 饮用水/商用过滤/膜相关认证较多；数据中心闭式水环路更多看业主水质规范、材料兼容性、过滤精度和服务能力 |
+| IntelliFlo3 connected pool pump | Pool 年销售 `$1.56B` 平台；产能不是当前主要约束 | 经销商、pool service 和 homeowner 渠道成熟 | IntelliFlo3 具体型号有 ENERGY STAR、UL、NSF/ANSI 50 等认证 |
+| Hydra-Stop | 约 `$50M-$60M` 年收入平台 | 市政水务服务商和 utility contractor | 以市政项目、管道规格、施工认证和现场服务能力为主 |
+
+## 8. 一年后产能、采用和认证情景
+
+| 产品 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| Aurora 数据中心泵 | 年化供给/交付能力 `$60M-$100M`；进入若干数据中心项目 spec；认证仍以项目级 MEP approval 为主 | 年化 `$120M-$180M`；成为 2-3 个大型 colo/hyperscale 园区标准泵供应商之一；交付周期略拉长 | 年化 `$220M+`；若 2026-2027 数据中心液冷/暖水环路大规模标准化，PNR 可加速扩产或外协 |
+| 水处理/过滤/膜 | 年化 `$40M-$70M`；采用集中在补水、冷却塔水处理、side-stream filtration | 年化 `$90M-$140M`；与 pump package 或服务商打包进入多园区 | 年化 `$160M+`；若水权/水耗成为项目审批核心，数据中心水处理订单显著放大 |
+| Hydra-Stop | `$60M` 左右稳定交付；整合到 Flow 销售渠道 | `$75M-$90M`；市政维修项目加速 | `$100M+`；需并购整合、渠道交叉销售和大客户项目同时兑现 |
+| Pool connected/Pool Brain | Pool 硬件产能充足；Pool Brain 集成 late summer 2026 初期采用 | 服务商 adoption 提升，connected equipment 附加率上升 | 若大型 pool service platform 标准化接入，形成软硬件数据闭环，但一年内收入仍难显著改变公司规模 |
+
+## 9. 基于订单积压和供给的未来一年业务增速推演
+
+### 9.1 已披露 backlog 和订单约束
+
+PNR 2025 年末总 backlog 为 `$567.5M`，同比 `-7.1%`，其中：
+
+| 分部 | 2025 年末 backlog | 同比 | 判断 |
+|---|---:|---:|---|
+| Flow | `$387.2M` | `+9.9%` | 最强，包含商业/基础设施/工业项目；Hydra-Stop 加入后增强 |
+| Water Solutions | `$53.2M` | `-22.8%` | 短周期、渠道型，backlog 对收入预测价值有限 |
+| Pool | `$127.1M` | `-33.1%` | 主要受 early-buy 交付时点影响，不代表终端需求崩溃 |
+| 合计 | `$567.5M` | `-7.1%` | 公司明确称 backlog 不是 2026 销售的可靠指标，因为很多收入当月下单当月交付 |
+
+Q1 2026 10-Q 未披露总 backlog，只披露原始期限一年以上合同剩余履约义务 `$123.3M`，多数将在未来 `12-18` 个月确认。结合 Q1 2026 销售 `$1.037B`，PNR 是短周期制造/渠道公司，不是高 backlog 覆盖率工程公司。
+
+### 9.2 渠道和项目推断
+
+| 场景 | 订单与供给假设 | 未来一年公司收入增速 | AI/数据中心贡献 |
+|---|---|---:|---|
+| 基准 | Pool 旺季温和；Flow backlog 正常转化；Hydra-Stop 全年贡献；Water Solutions 清理低质量业务后持平；数据中心泵/水处理小额项目增加 | `+2%-4%`，基本贴合公司指引 | 贡献 `+30M-$60M` 增量，合并增长贡献 `<1.5pct` |
+| 乐观 | Pool 替换需求好于预期；Flow 市政+商业项目强；Aurora 数据中心项目中标多个；水处理进入若干园区 | `+4%-6%` | 贡献 `$70M-$150M` 收入，合并增长贡献 `1.5-3.5pct` |
+| 极度乐观 | AI 数据中心机械水系统标准化推进，PNR 获得多园区泵/过滤 spec；Pool connected 设备加速替换；Hydra-Stop 超预期 | `+6%-9%` | 数据中心相关 `$150M-$300M`，但需要具体项目订单验证，目前证据不足 |
+
+取消率方面，公司没有披露取消率；基于其短周期订单属性，Pool 和 Water Solutions 更像渠道订货/补库，取消率不应按大型工程 backlog 解读。数据中心相关订单若进入 MEP/园区项目，取消风险主要来自项目延后、用电并网延迟、冷却架构变更和 capex 审批，而非 PNR 单独产能。
+
+## 10. 竞争格局、技术路线和替代风险
+
+### 10.1 数据中心泵和水处理竞争
+
+| 领域 | PNR 主要竞争对手 | PNR 优势 | PNR 风险 |
+|---|---|---|---|
+| 商业/基础设施泵 | Grundfos、Xylem、Wilo、Flowserve、KSB、ITT、Franklin Electric、Armstrong、Patterson 等 | Aurora 品牌历史长，分销和工程支持成熟；数据中心页面明确强化定位 | 泵为多供应商可替代件，价格招标强，进入 owner spec 才能提高粘性 |
+| 数据中心水处理/过滤 | Ecolab/Nalco、Xylem/Evoqua、Veolia、DuPont Water、Kurita、Pall/Danaher、Parker、Donaldson、Eaton 等 | PNR 有过滤、膜和商用水处理产品，能服务补水/过滤/闭式环路 | Ecolab/Veolia/Xylem 更强在服务、化学、水务运营和大型项目整包 |
+| 液冷核心部件 | Vertiv、CoolIT/Ecolab、Danfoss、Boyd、Aavid、Delta、nVent、Parker、Staubli、CEJN 等 | PNR 只在设施侧间接受益 | 不做 CDU/cold plate/UQD，无法获取最紧缺液冷核心 BOM |
+
+数据中心冷却技术主流在 2026-2027 年更可能是 `single-phase direct-to-chip + rack/row CDU + facility warm-water loop + 传统 chiller/dry cooler/冷却塔混合`。这对 PNR 有利，因为泵、过滤、水处理都是设施侧必需品；但主价值池在 CDU、冷板、快接、冷却集成、电力设备和施工交付，PNR 只是周边设备供应商。
+
+### 10.2 Pool 竞争和替代
+
+Pool 主要竞争对手包括 Hayward、Fluidra/Jandy、Waterco、Raypak 等。PNR 的优势在于：
+
+- Pentair Pool 品牌强，渠道和安装服务网络深；
+- IntelliFlo3 等 variable speed/flow pump 节能泵有法规、能耗和替换驱动；
+- Pool Brain 集成如果落地，可把设备状态、服务计划和维修工作流连接起来，提升服务商粘性；
+- Pool 分部 ROS 常年 `30%+`，说明价格和渠道能力较好。
+
+风险是住宅消费、天气、利率、泳池新建周期、经销商库存和竞争性促销。Pool 技术路线不是 AI 主线，但 connected diagnostics 和自动化可以提升售后数据价值。
+
+### 10.3 Hydra-Stop 和市政水务竞争
+
+Hydra-Stop 的产品价值在于减少管道维修时的停水范围。客户替换成本来自：
+
+- 市政/utility contractor 的施工习惯和培训；
+- 管道规格、阀件兼容性、现场安全记录；
+- 维修时停水成本和服务连续性要求。
+
+它不是垄断产品，但相对标准泵/过滤器更具施工 know-how 和项目粘性。收购价约 `$290M` 对应目标收入约 `$50M`，交易不便宜，市场会看其 `30% ROS` 是否能维持并通过 Flow 渠道放大。
+
+## 11. 投资判断框架
+
+### 11.1 该买什么叙事，不该买什么叙事
+
+可以买的叙事：
+
+- 高质量水处理/Pool/Flow 平台，Q1 2026 毛利率 `41.8%`、调整后 ROS `25.0%`；
+- Pool 高利润、connected equipment 和服务软件集成；
+- Hydra-Stop 强化市政水务，目标公司 ROS 约 `30%`；
+- 数据中心泵和水处理是小但真实的上行选项；
+- 低到中等杠杆、FY2025 FCF `$748M`、持续回购和 50 年连续提高股息。
+
+不该买的叙事：
+
+- 把 PNR 当作 AI 液冷核心龙头；
+- 假设它有大额 hyperscaler backlog；
+- 用 GPU/rack 出货逻辑直接推收入；
+- 把数据中心冷却高景气全部映射到 PNR 的收入，因为 PNR 不做 CDU/cold plate/UQD。
+
+### 11.2 未来 4 个观察点
+
+1. `Q2 2026 Pool 旺季`：公司 Q2 销售指引只有 `+1%`，如果 Pool 价格和销量改善，全年 EPS 指引可信度上升。
+2. `Flow backlog 质量`：2025 年末 Flow backlog `$387.2M`，同比 `+9.9%`；需要看是否能转化为商业/基础设施收入，而不是低毛利工程项目。
+3. `数据中心订单证据`：关注 Aurora data center pump solutions 是否出现项目名、customer win、MEP 标准化、渠道扩张或交期延长。
+4. `Water Solutions 业务退出后的有机增长`：Q1 2026 Water Solutions 因业务退出拖累 `-4.0%`，若 2026 下半年恢复，margin story 更稳。
+
+## 12. 主要来源和本地资料
+
+### 公司与财报来源
+
+- Pentair Q1 2026 results, Business Wire, 2026-04-28: https://www.businesswire.com/news/home/20260428210946/en/Pentair-Reports-Strong-First-Quarter-2026-Results
+- Pentair FY2025/Q4 2025 results, Business Wire, 2026-02-03: https://www.businesswire.com/news/home/20260203960993/en/Pentair-Reports-Strong-Fourth-Quarter-and-Full-Year-2025-Results
+- Pentair Q3 2025 results, Business Wire, 2025-10-21: https://www.businesswire.com/news/home/20251021395362/en/Pentair-Reports-Strong-Third-Quarter-2025-Results
+- Pentair Q2 2025 results, SEC exhibit: https://www.sec.gov/Archives/edgar/data/77360/000007736025000035/q22025pressrelease.htm
+- Pentair Q1 2025 results, Business Wire, 2025-04-22: https://www.businesswire.com/news/home/20250422404241/en/Pentair-Reports-Strong-First-Quarter-2025-Results
+- Pentair FY2025 Form 10-K: https://www.sec.gov/Archives/edgar/data/77360/000007736026000007/pnr-20251231.htm
+- Pentair Q1 2026 Form 10-Q: https://www.sec.gov/Archives/edgar/data/77360/000007736026000027/pnr-20260331.htm
+- Pentair Investor Day 2026 release: https://www.stocktitan.net/news/PNR/pentair-hosts-2026-investor-ffetpz0xyeva.html
+- Pentair data center pump solutions: https://www.pentair.com/en-us/flow/landing-pages/data-centers.html
+- Pentair Aurora data center pump brochure: https://www.pentair.com/content/dam/extranet/web/nam/aurora/brochures/aurora-data-center-pump-solutions-br.pdf
+- Hydra-Stop acquisition announcement: https://www.businesswire.com/news/home/20250818338469/en/Pentair-Announces-Definitive-Agreement-to-Acquire-Hydra-Stop
+- Pentair Pool / Pool Brain integration, AQUA Magazine, 2026-05-05: https://www.aquamagazine.com/news/article/15824283/pentair-pool-pentair-pool-and-pool-brain-to-release-technology-integration-to-accelerate-digital-transformation-of-pool-service-through-datadriven-insights
+- Pentair IntelliFlo3 VSF product page: https://www.pentair.com/en-us/pool-spa/products/pumps/intelliflo3-vsf-pool-pump.html
+
+### 项目内行业资料
+
+本报告只结合 `基本面/行业调研/` 下相关行业文件；正式分析没有使用或引用 `特征量化/` 资料，也没有读取旧的 PNR 公司报告。主要本地资料包括：
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`

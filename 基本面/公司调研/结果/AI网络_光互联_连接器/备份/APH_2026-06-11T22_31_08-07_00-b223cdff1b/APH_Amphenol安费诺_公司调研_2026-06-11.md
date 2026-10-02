@@ -1,0 +1,284 @@
+# APH Amphenol 安费诺公司调研：AI 数据中心高速连接器与多元连接器龙头（2026-06-11）
+
+## 0. 研究结论
+
+Amphenol（APH，安费诺）已经从传统“多元连接器复利股”，升级为 AI 数据中心高速互联链条里最核心的非芯片供应商之一。公司仍然覆盖汽车、航空航天、国防、工业、移动设备、宽带等多元终端市场，但 2025-2026 年的估值重心明显转向 IT datacom，尤其是 AI 服务器、AI 交换机、GPU/ASIC 机柜、结构化光纤/铜缆、高速 I/O、背板、板对板、CPC/flyover copper、rack power 等产品。
+
+最关键的事实是：2026Q1 公司收入 76.20 亿美元，同比增长 58%、有机增长 33%；订单 94.35 亿美元，book-to-bill 为 1.24。IT datacom 占公司收入 41%，同比增长 99%、有机增长 81%，且公司管理层明确表示本季度几乎全部环比有机增长来自 AI 相关产品。以 2026Q1 run-rate 测算，IT datacom 年化收入约 125 亿美元；如果把 CommScope CCS 并表后的结构化光纤/铜缆能力算入，APH 已经是 AI 数据中心从 rack 内、rack 间、pod/campus 到运营商/企业布线的多层连接平台。
+
+投资人心中的 APH 是三类资产叠加：第一，长期并购整合能力强、现金流质量高的连接器 compounder；第二，2025-2026 年 AI 数据中心资本开支上行周期里的“高速互联卖铲人”；第三，估值已经反映较高增长预期的高质量工业科技股。截至 2026-06-11 盘中，APH 股价约 149 美元，市值约 1840 亿美元，TTM P/E 约 43 倍，forward P/E 约 30 倍，P/S 约 7.1 倍。估值不便宜，安全边际主要来自订单、AI 平台 design-in、CommScope CCS 协同与高毛利产品 mix 持续兑现。
+
+本报告的核心判断：未来一年 APH 的高增长主线不是“所有连接器都涨”，而是四类产品被 AI 基建重新定价：高速铜互联与 AEC/ACC/DAC、224G/1.6T I/O 与高速连接器/背板、结构化光纤/铜缆与数据中心布线、48V/高电流 rack power 与液冷周边连接。普通汽车传感器、传统宽带、通用工业、移动设备消费连接器仍贡献现金流，但不是估值弹性的主要来源。
+
+## 1. 公司整体业务、产业链定位与三年变化
+
+### 1.1 公司业务结构
+
+APH 是全球最大连接器、线缆组件、传感器和互联系统供应商之一。公司的产品不是单一 connector，而是覆盖从端口、线缆、背板、板对板、传感器、天线、RF、光纤、铜缆、机柜电源连接到高可靠线束的一整套互联零部件。
+
+按 2026Q1 披露口径，公司分为三大 segment：
+
+| Segment | 2026Q1 收入 | 收入占比 | 2026Q1 segment operating margin | 同比变化 | 核心下游 |
+|---|---:|---:|---:|---:|---|
+| Communications Solutions | 45.35 亿美元 | 59.5% | 30.6% | +87.9% | IT datacom、AI 数据中心、移动网络、宽带、移动设备、商业设备 |
+| Harsh Environment Solutions | 16.93 亿美元 | 22.2% | 28.0% | +33.5% | 商用航空、国防、航天、工业、运输、高可靠环境 |
+| Interconnect and Sensor Systems | 13.92 亿美元 | 18.3% | 20.2% | +23.3% | 汽车、工业、医疗、传感器、其他互联系统 |
+| 合计 | 76.20 亿美元 | 100.0% | 调整后经营利润率 28.2%；GAAP 经营利润率 21.3% | +58.4% | 多元终端市场 |
+
+产业链位置上，APH 位于 AI 基础设施的“高可靠、高速、高密度互联”环节。它不生产 GPU、ASIC、交换芯片或光模块 DSP 芯片，但它的产品决定高速信号能否从 GPU/ASIC、NIC、交换机、背板、机柜、机房、园区稳定传输。AI rack 功耗提升、端口速率从 400G/800G 走向 1.6T、SerDes 从 112G 走向 224G/448G，都会把更多价值从低端机械连接迁移到高频信号完整性、热管理、测试认证、平台 design-in 和定制线缆组件。
+
+### 1.2 投资人认知
+
+过去投资人主要把 APH 看作高质量工业科技复利股：终端市场分散、现金流强、并购能力强、ROIC 高、长期 EPS 增长稳定。2024-2026 年以后，市场开始用 AI 基建供应链的框架重新给 APH 定价，核心原因有三点：
+
+1. AI 数据中心需要更多高速端口、更多短距铜互联、更多结构化光纤和更高电流密度的 power connection，连接器/线缆的单位内容量上升。
+2. APH 在高速 I/O、OSFP/QSFP、背板、板对板、cable assembly、光纤/铜缆布线、rack power 都有产品，不是单点供应商。
+3. CommScope CCS 并购使 APH 从设备端互联进一步延伸到数据中心、运营商和企业网络的结构化布线。
+
+### 1.3 最近三年重大业务变化、转型和收购
+
+| 时间 | 事件 | 金额/规模 | 战略意义 |
+|---|---:|---:|---|
+| 2024-05 | 完成收购 Carlisle Interconnect Technologies（CIT） | 约 20.25 亿美元；CIT 2024 年销售额约 9 亿美元 | 增强航空、国防、航天和高可靠线缆/互联系统 |
+| 2025 | 完成 LifeSync、CommScope Outdoor Wireless Networks 与 DAS、Lutze 等 bolt-on 收购 | 未全部单独披露 | 补强医疗、移动网络、工业自动化和专用线缆 |
+| 2025-2026 | 完成 Narda-MITEQ、Rochester Sensors 等收购 | 未全部单独披露 | 增强 RF/microwave、高可靠传感器和国防/航空能力 |
+| 2026-01-30 | 完成收购 CommScope Connectivity and Cable Solutions（CCS） | 约 105 亿美元；CCS 2025 年销售额约 57 亿美元 | 公司三年内最重要交易，强化 IT datacom、移动网络、宽带、工业的光纤/铜缆互联和结构化布线 |
+| 2026Q1 | 宣布收购 Trexon，预计 2026Q2 完成 | 未披露 | 继续强化高可靠、高性能互联系统 |
+
+这三年 APH 的真正转型不是放弃多元化，而是在多元化底盘上把 AI datacom 变成第一增长引擎。CommScope CCS 交易特别关键：它让 APH 的 AI 数据中心敞口从设备端 connector/cable 扩展到 campus/机房级的光纤和铜缆网络基础设施。
+
+## 2. 估值、盈利能力与资产负债表
+
+### 2.1 最新市场数据
+
+以下市场数据为 2026-06-11 盘中/当日可得口径，股价和估值会随市场实时变化。
+
+| 指标 | 最新值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | 约 149 美元 | 2026-06-11 盘中 | Google Finance/StockAnalysis 当日区间约 147.7-152.4 美元 |
+| 市值 | 约 1837-1840 亿美元 | 2026-06-11 | 基于约 12.3 亿股；不同数据商因股本口径略有差异 |
+| TTM P/E | 约 42.8-42.9 倍 | 2026-06-11 | StockAnalysis/Google Finance |
+| Forward P/E | 约 30.0 倍 | 2026-06-11 | StockAnalysis/Yahoo Finance |
+| P/S | 约 7.1 倍 | 2026-06-11 | TTM 收入约 259.0 亿美元 |
+| Forward P/S | 约 5.3 倍 | 2026-06-11 | StockAnalysis |
+| TTM 收入 | 约 259.0 亿美元 | 截至 2026Q1 | FY2025 230.95 亿 + 2026Q1 76.20 亿 - 2025Q1 48.11 亿 |
+| 2026Q1 收入增速 | +58.4% reported；+33% organic | 2026Q1 | 官方披露 |
+| 2026Q1 毛利率 | 36.7% | 2026Q1 | 28.002 亿毛利 / 76.201 亿收入 |
+| 2026Q1 GAAP 净利率 | 12.2% | 2026Q1 | 9.329 亿归母净利 / 76.201 亿收入 |
+| 2026Q1 调整后净利率 | 约 17.9% | 2026Q1 | 调整后 EPS 1.06 美元 x 稀释股数 12.897 亿股估算 |
+
+APH 当前估值已经高于传统电子元件/工业连接器平均水平，也明显高于公司自身较长周期的历史平均 P/E。市场支付高倍数的前提是：AI datacom 的订单和收入增速不是短期补库存，而是由 800G/1.6T、GB200/GB300、custom ASIC、open scale-up、AI campus 带来的多年结构性内容量提升。
+
+### 2.2 资产负债表健康程度
+
+截至 2026Q1，APH 资产负债表的特征是“现金流很强，但因 CommScope CCS 并购后杠杆显著抬升，需要继续消化”。
+
+| 指标 | 2026Q1 数值 | 评估 |
+|---|---:|---|
+| 现金、现金等价物与短期投资 | 45.83 亿美元 | 现金储备充足 |
+| 流动资产 | 153.84 亿美元 | 对应流动比率约 1.71x |
+| 流动负债 | 89.75 亿美元 | 短债 21.10 亿美元 |
+| 长期债务 | 166.39 亿美元 | 并购后债务上升 |
+| 总债务 | 187.49 亿美元 | 短债 + 长债 |
+| 净债务 | 约 141.66 亿美元 | 总债务 - 现金/短投 |
+| 股东权益 | 140.82 亿美元 | debt/equity 约 1.33x |
+| 2026Q1 调整后 EBITDA | 23.06 亿美元 | 年化约 92 亿美元 |
+| 净债务 / 年化调整后 EBITDA | 约 1.5x | 与管理层披露净杠杆约 1.6x 基本一致 |
+| 2026Q1 自由现金流 | 11.08 亿美元 | 占 GAAP 净利约 119%，占调整后净利约 81% |
+
+结论：财务健康程度仍然较高。APH 的现金转换和盈利能力足以支撑当前债务，但短期自由度低于收购前。风险不在偿债能力，而在两个方面：一是 CCS 并购整合如果慢于预期，会拖累 margin 和杠杆下降；二是 AI datacom 估值溢价要求公司维持高订单、高交付和高利润率，容错率较低。
+
+## 3. 最近五次财报：订单、收入、业务与 AI 暴露
+
+公司不按产品披露 backlog，也不披露每类 AI 产品的订单、交期、取消率。本节用已披露 orders/book-to-bill、IT datacom 占比和管理层对 AI demand 的描述作为 backlog 与需求强度代理。Q3 2025 orders 未在所用新闻稿片段中直接列出，表中用 FY2025 orders 254 亿美元减去 Q1、Q2、Q4 已披露 orders 后推算，需视为估算值。
+
+| 财报季度 | 总收入与利润 | 订单/交期/取消率 | Segment 收入与利润率 | IT datacom / AI 信息 | 下一季指引与管理层重点 |
+|---|---|---|---|---|---|
+| 2026Q1 | 收入 76.20 亿美元，reported +58%，organic +33%；GAAP EPS 0.72 美元；调整后 EPS 1.06 美元；GAAP 经营利润率 21.3%，调整后经营利润率 28.2%；毛利率 36.7% | orders 94.35 亿美元，+78%；book-to-bill 1.24；公司未披露 backlog、交期和取消率；高 B2B 暗示 AI 与 datacom 订单仍超过出货 | Communications 45.35 亿美元，margin 30.6%；Harsh 16.93 亿美元，margin 28.0%；ISS 13.92 亿美元，margin 20.2% | IT datacom 约占收入 41%，约 31.24 亿美元；同比 +99%，organic +81%；管理层表示几乎全部环比有机增长来自 AI 相关产品；高速、power、fiber optic interconnect 需求强 | 2026Q2 指引收入 81.0-82.0 亿美元，调整后 EPS 1.14-1.16 美元；剔除 FX/并购后 organic +24-26% YoY、+5-6% QoQ |
+| 2025Q4 | 收入 64.39 亿美元，reported +49%，organic +37%；GAAP EPS 1.73 美元，调整后 EPS 0.93 美元；GAAP 经营利润率 22.0%，调整后经营利润率 27.8%；毛利率 35.9% | orders 84 亿美元，+68%；book-to-bill 1.31；公司称 IT datacom book-to-bill 明显高于公司平均；未披露取消率 | Communications 34.23 亿美元，margin 32.5%；Harsh 16.53 亿美元，margin 27.6%；ISS 13.64 亿美元，margin 20.1% | IT datacom 约占收入 38%，约 24.47 亿美元；同比 +110%，主要由 AI demand 推动；AI 订单“再上一个台阶” | 2026Q1 指引收入 73.0-74.0 亿美元，调整后 EPS 1.01-1.03 美元；organic +23-25% YoY、+2-4% QoQ |
+| 2025Q3 | 收入 61.94 亿美元，reported +53%，organic +41%；GAAP EPS 0.61 美元，调整后 EPS 0.85 美元；GAAP 经营利润率 22.8%，调整后经营利润率 27.6%；毛利率 36.0% | orders 约 61.85 亿美元，book-to-bill 约 1.00；此为 FY2025 orders 推算值；未披露 backlog、交期、取消率 | Communications 33.29 亿美元，margin 31.8%；Harsh 15.48 亿美元，margin 27.4%；ISS 13.17 亿美元，margin 19.9% | IT datacom 约占收入 37%，约 22.92 亿美元；Communications sales +87% reported、+69% organic；IT datacom organic +128% | 2025Q4 指引收入 63.0-64.0 亿美元，调整后 EPS 0.89-0.91 美元；organic +29-31% YoY、+1-3% QoQ |
+| 2025Q2 | 收入 56.50 亿美元，reported +57%，organic +41%；GAAP EPS 0.61 美元，调整后 EPS 0.81 美元；GAAP 经营利润率 23.5%，调整后经营利润率 27.2%；毛利率 36.1% | orders 55.23 亿美元，+36%，QoQ +4%；book-to-bill 0.98；未披露 cancellation；B2B 低于 1 但 IT datacom 仍高增 | Communications 29.10 亿美元，margin 30.6%；Harsh 14.45 亿美元，margin 25.2%；ISS 12.95 亿美元，margin 19.5% | IT datacom 约占收入 36%，约 20.34 亿美元；IT datacom reported/organic +133%；AI 产品贡献约三分之二的同比和环比增长；IT datacom 环比 organic +29% | 2025Q3 指引收入 54.0-55.0 亿美元，调整后 EPS 0.76-0.78 美元；organic +22-24% YoY、+5-7% QoQ |
+| 2025Q1 | 收入 48.11 亿美元，reported +48%，organic +33%；GAAP EPS 0.52 美元，调整后 EPS 0.63 美元；GAAP 经营利润率 24.0%，调整后经营利润率 27.2%；毛利率 35.7% | orders 52.92 亿美元，+56%；book-to-bill 1.10；未披露 backlog、交期、取消率 | Communications 24.14 亿美元，margin 27.4%；Harsh 12.68 亿美元，margin 24.5%；ISS 11.29 亿美元，margin 18.1% | IT datacom 占比未在新闻稿直接给出；按 2025Q2 IT datacom 36%且 QoQ organic +29%倒推，2025Q1 约 33%、约 15.8 亿美元；AI/high-speed datacom 已是增长主因 | 2025Q2 指引收入 49.0-50.0 亿美元，调整后 EPS 0.64-0.66 美元；宣布收购 CommScope CCS |
+
+从五个季度看，APH 的订单强度最值得关注：2025Q4 book-to-bill 1.31，2026Q1 仍有 1.24，且收入基数已经从 2025Q1 的 48.11 亿美元跃升到 2026Q1 的 76.20 亿美元。单纯用收入增长解释不了估值扩张，真正的信号是高收入基数下订单仍继续大幅超过出货，这意味着 AI datacom 还在消化平台 ramp、客户扩产和 CCS 并表后的结构化布线需求。
+
+## 4. 2026 最新指引、业务收入占比与产品映射
+
+### 4.1 2026 最新指引
+
+公司对 2026Q2 的指引为收入 81.0-82.0 亿美元、调整后 EPS 1.14-1.16 美元。按中点 81.5 亿美元计算，环比 2026Q1 增长约 7.0%；剔除 FX 和并购后，公司预计有机收入同比增长 24-26%、环比增长 5-6%。这说明 APH 不是只靠 CommScope CCS 并表拉收入，底层有机增长仍然很强。
+
+2026Q1 end-market 收入占比大致为：IT datacom 41%，Commercial & Industrial 11%，Automotive 10%，Defense 9%，Mobile Devices 8%，Commercial Air 7%，Mobile Networks 5%，Broadband 4%，其他约 5%。公司最侧重和最突出的业务已经是 IT datacom；第二层是 defense/commercial air 等高可靠业务，提供较高 margin 和抗周期性；automotive/mobile/broadband 贡献规模但不是当前估值弹性的主因。
+
+### 4.2 AI 数据中心重点产品映射
+
+| 产品/业务 | 对应 APH 产品或型号 | 当前阶段 | AI 基建作用 | 重要性 |
+|---|---|---|---|---|
+| 高速 I/O cages、connectors、thermal | OSFP、QSFP-DD、QSFP112、OSFP-XD、ExtremePort Ultra、OSFP 1600G loopback/test module | 800G 大规模；1.6T 早期放量；OSFP 1600G 用于端口验证/测试 | GPU/ASIC rack、AI switch、NIC/DPU、front-panel I/O 的核心物理接口 | 极高 |
+| 高速铜缆组件 | OSFP 800G passive DAC、OSFP 800G AEC、1.6T OSFP cable assemblies、ACC/AEC/DAC | 800G 成熟放量；1.6T/224G 进入验证和早期订单 | rack 内和 rack 间 0-7 米短距连接，降低功耗/时延/成本 | 极高 |
+| 高速背板、板对板、near-chip/flyover | ExaMAX2、ExaMAX VS2、Paladin HD2、cabled backplane、CPC/top-side/flyover copper | 112G/224G 平台 ramp；448G 为下一代验证 | 交换机、AI server、retimer/ASIC 板级高速信号通道 | 极高 |
+| 结构化光纤/铜缆和数据中心布线 | CommScope CCS 光纤、铜缆、patch panel、MPO/MTP、fiber management、campus cabling | CCS 2026Q1 开始并表；AI campus 需求上升 | rack-pod-campus 的光纤主干和高密度布线 | 很高 |
+| Rack power 与高电流连接 | PwrMAX、PwrMAX Ortho、busbar/blind-mate、高电流 cable-to-board、48V power connector | 高密度 AI rack 推动内容量上升 | 48V/800V 架构、液冷机柜、GPU rack 电源分配 | 很高 |
+| 高可靠 RF/微波/航空国防互联 | CIT、Narda-MITEQ、Rochester Sensors、航空/国防线束与传感器 | 稳定增长，非 AI 主线 | 提供 margin、现金流和并购平台 | 中高 |
+
+可跳过或低优先级跟踪的产品/业务包括：普通汽车低速连接器与传感器、传统宽带/CATV 零件、低速消费电子/手机连接器、标准工业线束、医疗设备小型连接器、通用低速铜缆。这些业务仍重要，但增长弹性、供需紧张度和 AI 基建相关性明显弱于上表产品。
+
+## 5. 关键产品当前收入贡献、增速、重要性和供需
+
+公司不披露产品级 AI 收入。以下为基于 2026Q1 IT datacom 31.24 亿美元、Communications segment 45.35 亿美元、CommScope CCS 2025 销售额约 57 亿美元、本地行业调研中高速铜互联/连接器/结构化布线 TAM 测算，以及 APH 产品组合做出的模型估算。估算用于判断量级，不等于公司披露。
+
+| 关键产品/业务 | 当前 APH 收入贡献估算 | 当前增速估算 | AI 技术栈重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 高速铜缆组件：DAC/AEC/ACC/OSFP cable | 2026Q1 约 8-12 亿美元；年化约 32-48 亿美元 | +80% 至 +120% | 5/5 | 5/5 | 4-5/5 | 3-4/5 | rack 内短距连接是 AI 服务器和交换机的刚需；AEC/ACC 在 800G/1.6T 代际受益 |
+| 高速 I/O、cage、背板、板对板、CPC/flyover | 2026Q1 约 6-9 亿美元；年化约 24-36 亿美元 | +50% 至 +100% | 5/5 | 5/5 | 4/5 | 4/5 | 224G/1.6T 对信号完整性、热设计、测试认证要求抬升，利好头部供应商 |
+| 结构化光纤/铜缆与 CommScope CCS | 2026Q1 约 7-10 亿美元；年化约 30-40 亿美元 | reported 高增，organic 取决于 AI campus 和运营商/企业资本开支 | 4/5 | 4/5 | 3-4/5 | 3/5 | CCS 把 APH 带入数据中心园区布线和光纤主干，规模大但价格竞争更强 |
+| Rack power、高电流连接、液冷周边连接 | 2026Q1 约 1.5-3.0 亿美元；年化约 6-12 亿美元 | +30% 至 +70% | 4/5 | 4/5 | 3-4/5 | 3-4/5 | AI rack 功耗从几十 kW 走向 100kW+，高电流、48V、blind-mate 与热/电可靠性受益 |
+| Defense/commercial air 高可靠互联 | 2026Q1 约 6-8 亿美元；年化约 24-32 亿美元 | +10% 至 +20% | AI 相关性 1/5；公司质量 4/5 | 3/5 | 3/5 | 4/5 | 非 AI 主线，但 margin、订单可见性和现金流质量高 |
+
+当前最供不应求的是高速 AI datacom 相关产品，而不是全部连接器。高端 OSFP/1.6T、224G 连接器、AEC/ACC、CPC/flyover、AI rack power 的供给约束主要在良率、测试、客户认证、平台 design-in 和工程资源，不只是机器产能。普通线束和标准低速连接器不存在同等紧张度。
+
+## 6. 一年后关键产品收入三情景
+
+以下预测口径为“未来一年 run-rate”，即到 2027 年中左右的年化收入能力和需求强度，不是公司官方指引。
+
+| 产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 | 主要驱动 |
+|---|---|---|---|---|
+| 高速铜缆组件：DAC/AEC/ACC/OSFP cable | 年化收入 45-55 亿美元，增速 +30% 至 +45%；重要性 5/5，紧急性 5/5，供需 4/5，溢价 3/5 | 年化 60-75 亿美元，增速 +55% 至 +80%；供需 5/5，溢价 3-4/5 | 年化 80-100 亿美元，增速 +90% 至 +130%；部分 1.6T/224G SKU allocation，溢价 4/5 | GB300、custom ASIC、800G/1.6T short-reach copper、AEC/ACC 渗透提升 |
+| 高速 I/O、背板、板对板、CPC/flyover、cage | 年化 33-42 亿美元，增速 +25% 至 +45%；重要性 5/5，供需 4/5，溢价 4/5 | 年化 48-60 亿美元，增速 +60% 至 +90%；224G 平台订单更广 | 年化 65-85 亿美元，增速 +100%+；448G/3.2T 设计卡位提前反映 | 224G SerDes、1.6T front-panel、cabled backplane、near-package copper |
+| 结构化光纤/铜缆与 CCS | 年化 45-55 亿美元，增速主要来自并表与 AI campus；重要性 4/5，供需 3/5 | 年化 60-75 亿美元，数据中心园区光纤/铜缆订单持续高位 | 年化 80-100 亿美元，AI campus 和 1.6T optical port 爆发，结构化布线 tight | CCS 并表、hyperscaler campus、800G/1.6T optical port 增长 |
+| Rack power、高电流和液冷周边连接 | 年化 9-14 亿美元，增速 +30% 至 +50%；重要性 4/5，供需 3-4/5 | 年化 14-20 亿美元，增速 +70%+ | 年化 22-30 亿美元，高密度 rack 标准快速提升，部分客户定制件 tight | 48V/高电流、NVL72/GB300 级机柜、液冷和 blind-mate 需求 |
+| Defense/commercial air 高可靠互联 | 年化 30-35 亿美元，增速 +10% 至 +15% | 年化 35-40 亿美元，增速 +15% 至 +20% | 年化 42 亿美元以上，国防/航空订单继续改善 | CIT、Narda-MITEQ、航空与国防高可靠互联 |
+
+对公司整体而言，基准情景下 FY2026 收入可能达到 310-330 亿美元；乐观情景 340-370 亿美元；极度乐观情景 380-420 亿美元。极度乐观需要 2026H2-2027H1 AI rack 订单继续保持高 book-to-bill、CCS 整合顺利、GPU/HBM/液冷/电力侧瓶颈不显著推迟交付。
+
+## 7. BOM 拆分、每 MW/每 rack/每 GPU/每 optical port 内容量与价格传导
+
+### 7.1 BOM 拆分
+
+| 产品 | 典型 BOM/成本构成 | APH 能捕获的价值 |
+|---|---|---|
+| Passive DAC / 高端 twinax | Twinax 铜缆、绝缘和屏蔽 35-55%；connector/cage/shell 20-35%；装配 10-20%；测试 5-10%；物流/质保 3-8% | 高端 connector、cable assembly、测试认证和客户定制 |
+| AEC/ACC/LACC | Retimer/DSP/SerDes 或 linear redriver/equalizer 15-55%；plug PCB/connector/cable 20-55%；firmware/EEPROM 3-8%；测试/burn-in 10-20%；装配/质保 5-12% | 如果 APH 供应 cable assembly 和高速 connector，可捕获 mechanical、assembly、测试和部分系统集成价值；主动硅片价值更多流向 Credo、Broadcom、Marvell、Astera 等 |
+| OSFP/QSFP cage 与 high-speed I/O | Precision stamped/formed parts、EMI、thermal、latch、connector、PCB footprint、测试和 tooling | 价值来自端口密度、散热、插拔可靠性、224G/1.6T signal integrity 和客户认证 |
+| Backplane / board-to-board / CPC / flyover | Precision connector 30-45%；高端 cable/PCB/material 20-35%；测试/tooling 10-20%；NRE/工程 10-20% | 高毛利区，平台绑定强，替换成本高 |
+| 结构化光纤/铜缆 | Fiber/copper cable、MPO/MTP/LC connector、patch panel、tray、管理系统、安装和测试 | CCS 让 APH 捕获 rack-pod-campus 的布线内容量，但价格竞争强于高端高速连接器 |
+| Rack power | Copper alloy、plating、housing、thermal design、blind-mate 结构、busbar/cable-to-board、测试 | AI rack 功耗上升推动高电流密度和可靠性溢价 |
+
+### 7.2 每 rack / MW / GPU / optical port 的内容量测算
+
+以下为 AI 高密度 rack 的 APH-addressable BOM 测算，不等于 APH 实际份额。实际捕获取决于客户 AVL、平台 design-in、是否采用 APH 的 cable/connector/fiber/power 全套组合。假设高密度 AI rack 约 60-160kW，基准测算用 100kW/rack；1MW 约 10 个 rack；GB200/GB300 NVL72 类型 rack 用 72 GPU/rack 做单位换算。
+
+| 维度 | 基准情景 APH-addressable 内容量 | 乐观情景 | 极度乐观情景 | 说明 |
+|---|---:|---:|---:|---|
+| 每 rack：高速铜缆 DAC/AEC/ACC | 2-6 万美元 | 6-12 万美元 | 12-22 万美元 | 端口数、线缆长度、AEC/ACC 渗透和 1.6T 占比决定弹性 |
+| 每 rack：高速 connector/backplane/cage/CPC | 1.5-4.5 万美元 | 4.5-9 万美元 | 9-16 万美元 | 224G/1.6T、cabled backplane 和 near-chip/flyover 提高内容量 |
+| 每 rack：结构化光纤/铜缆分摊 | 1-4 万美元 | 4-9 万美元 | 9-18 万美元 | 包含机柜到 pod/campus 的 fiber/copper 管理分摊 |
+| 每 rack：power/高电流/液冷周边连接 | 0.5-2 万美元 | 2-4.5 万美元 | 4.5-8 万美元 | 48V、高电流 blind-mate、busbar/cable-to-board |
+| 每 rack 合计 | 5-16.5 万美元 | 16.5-34.5 万美元 | 34.5-64 万美元 | 为 APH 可参与的 BOM，不是 APH 100% share |
+| 每 MW | 30-200 万美元 | 100-400 万美元 | 250-700 万美元 | 取决于 rack 密度、端口数、campus fiber 分摊和 APH 份额 |
+| 每 GPU | 700-2300 美元 | 2300-4800 美元 | 4800-8900 美元 | 以 72 GPU/rack 粗算 |
+| 每 optical port | cage/connector/thermal/fiber 10-45 美元；含 cable/assembly 50-200 美元 | 200-350 美元 | 350-500 美元 | APH 不一定供应光模块本体，更多捕获端口机械、cage、cable 和 fiber 管理 |
+
+价格传导链如下：hyperscaler AI capex -> NVIDIA/AMD/custom ASIC rack 方案 -> OEM/ODM 与交换机/NIC/DPU 平台 -> AVL/BOM 中的 connector、cage、cable、fiber、power -> APH 工厂和测试体系 -> 金属、树脂、光纤、铜缆、retimer/linear driver、装配和测试供应商。
+
+在供需紧张时，APH 的传导方式不是简单涨价，而是通过 allocation、长期供货协议、NRE、定制 tooling、优先产能、认证锁定和高规格 SKU mix 提升实现。下行时，最先承压的是标准化 cable、低速 connector 和结构化布线中的通用品；最抗压的是已经进入客户平台、需要重新做 BER/FEC/thermal/mechanical/firmware 验证的高速连接器、CPC/flyover、背板和高端 AEC/ACC。
+
+## 8. 当前产能能力、供应链采纳与认证状态
+
+APH 不披露产品线产能。可以用收入 run-rate、订单和并购后平台能力做 proxy：
+
+| 产品/业务 | 当前可交付能力估算 | 供应链采纳 | 认证/标准状态 |
+|---|---:|---|---|
+| 高速铜缆 DAC/AEC/ACC/OSFP cable | 年化 32-48 亿美元收入能力；若叠加扩产和 CCS 交叉销售，实际订单池可能更高 | 已进入 AI 服务器、AI switch、hyperscaler、OEM/ODM 和网络设备供应链；官方展示 OSFP 800G passive DAC、OSFP 800G AEC、1.6T OSFP cable | 800G/112G 量产；1.6T/224G 在客户验证和早期量产；客户认证通常 6-18 个月 |
+| 高速 I/O、backplane、CPC/flyover、cage | 年化 24-36 亿美元收入能力 | 进入 switch、server、AI rack 平台；DesignCon 2026 展示 ExaMAX VS2、Paladin HD2、PwrMAX、PCIe Gen6、OSFP 1600G 等 | 112G/800G 成熟；224G 平台 ramp；448G/3.2T 更偏 2027+ 设计验证 |
+| 结构化光纤/铜缆与 CCS | CCS 2025 销售额约 57 亿美元；并表后 APH 具备 50 亿美元以上结构化布线年化平台 | 数据中心、运营商、企业网络、移动网络和宽带客户基础强 | MPO/MTP、光纤布线、铜缆布线为成熟生态；AI campus 高密度需求推动新 SKU 和新认证 |
+| Rack power 与高电流连接 | 年化 6-12 亿美元收入能力 | AI/ML server、高速网络设备、5G/工业设备均采用；PwrMAX Ortho 等面向 48V DC cable-to-board | OCP、MGX、客户定制 rack 标准与安全/热认证；认证更依赖平台级测试 |
+| Defense/commercial air 高可靠互联 | 年化 24-32 亿美元收入能力 | 国防、航空、航天、RF/microwave 客户长期认证 | 认证周期长、替换成本高，增长慢但稳定 |
+
+## 9. 一年后产能能力、采纳和认证三情景
+
+| 产品/业务 | 基准：一年后产能/采纳/认证 | 乐观：一年后产能/采纳/认证 | 极度乐观：一年后产能/采纳/认证 |
+|---|---|---|---|
+| 高速铜缆 DAC/AEC/ACC/OSFP cable | 可交付年化 50-60 亿美元；800G 多客户成熟；1.6T 少数平台量产 | 可交付 70-90 亿美元；1.6T AEC/ACC 和 224G 设计赢单扩大 | 可交付 100-120 亿美元；1.6T/224G 供不应求，448G/3.2T 样品和 design-in 提前锁定 |
+| 高速 I/O、backplane、CPC/flyover、cage | 可交付 40-50 亿美元；112G/800G 标准化，224G 主平台验证通过 | 可交付 60-70 亿美元；224G 成为高端 AI switch/server 主流 | 可交付 80-100 亿美元；部分 448G/near-package/cabled backplane 进入关键客户验证 |
+| 结构化光纤/铜缆与 CCS | 可交付 60 亿美元以上；AI campus 布线成为新增增长点 | 可交付 70-90 亿美元；hyperscaler campus 与运营商数据中心共振 | 可交付 100 亿美元以上；1.6T 光端口爆发，fiber management 和高密度布线 tight |
+| Rack power 与高电流连接 | 可交付 12-15 亿美元；48V/高电流 rack 标准持续渗透 | 可交付约 20 亿美元；GB300/ASIC rack 高密度 power SKU 快速增多 | 可交付约 30 亿美元；高密度 rack、液冷、blind-mate 和 busbar 进入供需紧张 |
+| Defense/commercial air | 可交付 30-35 亿美元；CIT 等并购继续整合 | 可交付 35-40 亿美元；国防/航空订单改善 | 可交付 42 亿美元以上；多项目交付加速 |
+
+## 10. 基于订单、积压和供给的未来一年增速预测
+
+APH 未披露 backlog 明细，因此需要从 orders/book-to-bill 推断。2025Q1 orders 52.92 亿美元，book-to-bill 1.10；2025Q2 orders 55.23 亿美元，book-to-bill 0.98；2025Q4 orders 84 亿美元，book-to-bill 1.31；2026Q1 orders 94.35 亿美元，book-to-bill 1.24。FY2025 全年 orders 254 亿美元，book-to-bill 1.10。2025Q4 公司明确表示 IT datacom book-to-bill 高于公司平均，2026Q1 又继续出现 1.24 的高 book-to-bill，说明 AI 相关订单仍然在堆积。
+
+| 情景 | 未来一年公司收入增速预测 | IT datacom 增速预测 | 订单/交付假设 | 取消率/推迟风险 |
+|---|---:|---:|---|---|
+| 基准 | FY2026 收入 310-330 亿美元，较 FY2025 +34% 至 +43% | +50% 至 +70% | Q2-Q4 book-to-bill 回落到 1.05-1.15；CCS 并表贡献完整；800G/1.6T 和 224G 继续 ramp | 取消率低，但部分交付受 GPU/HBM/液冷/电力项目节奏影响 |
+| 乐观 | FY2026 收入 340-370 亿美元，+47% 至 +60% | +75% 至 +100% | AI rack 订单继续高位，IT datacom B2B 长时间高于 1.15；CCS 交叉销售快于预期 | 取消率仍低，更多体现为交期拉长和 allocation |
+| 极度乐观 | FY2026 收入 380-420 亿美元，+65% 至 +80% | +110% 以上 | GB300、custom ASIC、open scale-up、1.6T optical/copper 同时放量；Q2-Q4 公司 B2B 接近或高于 1.2 | 需要无明显 AI capex 下修；若客户项目推迟，极度乐观很容易落空 |
+
+渠道验证层面，APH 的强信号主要来自四类：第一，官方 orders 和 book-to-bill 在高收入基数下继续上行；第二，管理层反复强调 AI-related demand 和 IT datacom 的异常强劲；第三，DesignCon/OFC/MGX 相关产品展示集中在 800G/1.6T、PCIe Gen6、OSFP、ExaMAX、PwrMAX 等 AI 数据中心关键 SKU；第四，本地行业研究中 2026-2027 年高速连接器、AEC/DAC、结构化光纤、open scale-up 的订单池都在扩张。弱点是公司不披露客户项目名、具体订单金额、交付窗口和取消率，因此产品级 backlog 只能推断，不能当作披露事实。
+
+## 11. 竞争格局、主流技术判断和替代风险
+
+### 11.1 主要竞争对手
+
+| 领域 | 主要竞争对手 | APH 相对优势 | APH 风险 |
+|---|---|---|---|
+| 高速连接器、I/O、backplane、board-to-board | TE Connectivity、Molex、Samtec、Luxshare、Foxconn Interconnect、JAE、Hirose、Yamaichi、Rosenberger | 产品线宽、制造规模大、客户覆盖广、并购整合强、AI datacom 暴露高 | 客户多供、价格谈判强；部分亚洲供应商成本优势明显 |
+| 高速 copper cable、DAC/AEC/ACC | TE、Molex、Samtec、Luxshare-Tech、FIT、BizLink、Credo 生态伙伴、NVIDIA LinkX 生态 | 连接器+线缆组件+测试+平台认证能力完整 | AEC active silicon 价值可能被 Credo/Broadcom/Marvell/Astera 等拿走 |
+| 结构化光纤/铜缆 | Corning、Belden、Panduit、Legrand、Siemon、CommScope 留存业务、Senko、US Conec | CCS 带来规模、客户和产品线，能与设备端 APH 产品交叉销售 | 标准化程度高，价格竞争和项目周期波动更明显 |
+| Rack power、高电流连接 | TE、Molex、Samtec、BizLink、Lotes、Foxconn/FIT、Amphenol 内部多品牌 | 高可靠连接器和 power 产品组合完整 | 电源架构变化、客户自研 busbar/母排、ODM 垂直整合 |
+| RF/航空国防高可靠 | TE、ITT Cannon、Carlisle 原生态、Smiths Interconnect、Radiall、Glenair | 认证壁垒高，并购后组合增强 | 增长较慢，受国防预算和航空周期影响 |
+
+### 11.2 新技术是否会成为主流
+
+800G/1.6T OSFP/QSFP、112G/224G 高速连接器、DAC/AEC/ACC、cabled backplane、CPC/flyover、结构化光纤、rack power 高电流连接，是 2026-2027 年 AI 数据中心的主流方向。它们不是概念性技术，而是被 GPU rack、AI switch、NIC/DPU、custom ASIC、hyperscaler campus 需求直接拉动。
+
+CPO/CPX/near-package optics、448G/3.2T、open scale-up（UALink、UEC、PCIe/CXL fabric）是更远期的方向。它们可能改变 front-panel 光/铜比例，但不会在 2026 年完全替代铜缆和传统高速 I/O。更可能出现的路径是：rack 内和短距继续使用铜，rack 间/pod/campus 更多使用光，CPO/near-package 在下一代高端 ASIC 和交换平台中逐步验证。
+
+### 11.3 替代风险和客户替换成本
+
+| 风险 | 对 APH 的影响 | 缓释因素 |
+|---|---|---|
+| 短距 optical 替代 AEC/ACC | 5-7 米以上链路可能更多转向 optical，压制部分铜缆 ASP | rack 内 0-2 米 DAC、2-5 米 AEC/ACC 仍有功耗/成本优势；APH 同时有光纤/结构化布线 |
+| CPO/near-package 减少 front-panel I/O | 长期可能削弱部分 OSFP/QSFP cage 数量 | CPO 仍需要 socket、fiber attach、thermal、power、serviceability 和测试连接；APH 可参与新形态连接 |
+| 客户多供和 ODM 垂直整合 | 压缩标准件价格 | 高速平台认证、BER/FEC/热/机械可靠性测试提高替换成本 |
+| AI capex 或 GPU/HBM/电力侧延迟 | 订单交付推迟，标准件库存调整 | 2025Q4-2026Q1 高 book-to-bill 提供缓冲；多终端市场降低单一客户风险 |
+| CCS 并购整合 | 杠杆上升、整合成本、margin 稀释 | CCS 规模大且客户重合度高，协同空间明显；APH 历史并购整合能力强 |
+
+高端 AI datacom 产品的客户替换成本较高。替换一个 224G backplane、1.6T OSFP cable、CPC/flyover 或 rack power connector，通常意味着重新做 signal integrity、BER/FEC、热、机械插拔、EMI、firmware/EEPROM、供应链可靠性、现场维护和客户 qualification，周期可达 6-18 个月。低速标准 cable 和普通 connector 替换成本较低；平台级高速连接器和高可靠 power/thermal 相关连接替换成本很高。
+
+## 12. 关键跟踪指标
+
+1. 2026Q2 实际收入是否超过 81.0-82.0 亿美元指引上沿，以及 organic sequential growth 是否继续高于 5-6%。
+2. orders 和 book-to-bill 是否维持在 1.10 以上；如果 IT datacom book-to-bill 显著回落，估值会先反应。
+3. IT datacom 占比是否继续超过 40%，以及有机增速是否仍维持高双位数。
+4. Communications Solutions margin 是否保持 30% 左右；如果 CCS 整合导致 margin 长期下滑，需要重新评估。
+5. 1.6T OSFP、224G connector、AEC/ACC、CPC/flyover、PwrMAX/rack power 的 DesignCon/OFC/OCP/MGX 进展和客户验证。
+6. CommScope CCS 整合后的交叉销售、成本协同和杠杆下降速度。
+7. AI 数据中心建设端的电力、液冷、GPU/HBM 供应是否推迟机柜交付。
+
+## 13. 结论：APH 的投资要点和主要分歧
+
+APH 当前不是低估值标的，而是高质量增长股叠加 AI 基建稀缺性。公司最强的地方在于产品覆盖完整：高速 I/O、铜缆、背板、板对板、结构化光纤/铜缆、rack power、高可靠航空国防都在同一公司体系内。AI 数据中心从“买 GPU”走向“建设 AI factory”后，连接器和线缆不再是低端 BOM，而成为决定功耗、时延、密度、可靠性和交付速度的关键层。
+
+基准判断：APH 未来一年仍能保持显著高于传统工业电子的增长，IT datacom 是第一驱动，CCS 并表放大规模，资产负债表可承受但需要去杠杆。乐观判断：如果 GB300、custom ASIC、1.6T、224G、AI campus 同时放量，APH 的高速互联产品会出现更强的 allocation 和 mix up，收入与 margin 可能继续超预期。主要分歧在估值：约 43 倍 TTM P/E、约 30 倍 forward P/E 已经要求高增长兑现，一旦 AI order book 回落或 CCS 整合拖累 margin，股价弹性会反向放大。
+
+## 14. 主要信息来源
+
+- Amphenol 2026Q1 results: https://investors.amphenol.com/news-and-events/news-details/2026/Amphenol-Reports-Record-First-Quarter-2026-Results/default.aspx
+- Amphenol 2025Q4 and FY2025 results: https://investors.amphenol.com/news-and-events/news-details/2026/Amphenol-Reports-Record-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx
+- Amphenol 2025Q3 results: https://investors.amphenol.com/news-and-events/news-details/2025/Amphenol-Reports-Record-Third-Quarter-2025-Results/default.aspx
+- Amphenol 2025Q2 results: https://investors.amphenol.com/news-and-events/news-details/2025/Amphenol-Reports-Record-Second-Quarter-2025-Results/default.aspx
+- Amphenol 2025Q1 results: https://investors.amphenol.com/news-and-events/news-details/2025/Amphenol-Reports-Record-First-Quarter-2025-Results/default.aspx
+- Amphenol 2025 Form 10-K / SEC filing: https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm
+- Amphenol / NVIDIA MGX official product page: https://www.amphenol-cs.com/connect/connecting-the-ai-factory-amphenol-and-nvidia-mgx.html
+- Amphenol DesignCon 2026 high-speed products page: https://www.amphenol-cs.com/connect/amphenol-high-speed-products-group-at-2026-designcon.html
+- Amphenol OFC 2026 high-bandwidth optical solutions page: https://www.amphenol-cs.com/connect/amphenol-at-ofc-2026-high-bandwidth-optical-solutions-for-next-generation-data-centers.html
+- StockAnalysis APH valuation and statistics: https://stockanalysis.com/stocks/aph/statistics/
+- Google Finance APH market data: https://www.google.com/finance/quote/APH:NYSE
+- Yahoo Finance APH market data: https://finance.yahoo.com/quote/APH/
+- TrendForce AI optical transceiver market outlook: https://www.trendforce.com/presscenter/news/20260420-13017.html
+- Cignal AI optical component revenue and 800G/1.6T market commentary: https://cignal.ai/2026/01/optical-component-revenue-reaches-nearly-25b-in-2025/
+- Dell'Oro AI back-end switch market commentary: https://www.delloro.com/news/ai-back-end-switch-market-will-push-past-100-billion-by-2030/
+- UALink specification and ecosystem: https://ualinkconsortium.org/specification/
+- 本项目本地行业资料：`行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-06-11.md`、`行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-06-11.md`、`行业调研/AI网络_光互联_铜互联/行业调研_开放Scale-up互联_2026-06-11.md`、`行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`

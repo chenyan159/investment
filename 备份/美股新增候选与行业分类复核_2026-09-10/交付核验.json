@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-09-10T02:31:35.786119-07:00",
+  "final_candidates": 25,
+  "exchange_listed": 21,
+  "otc_adr": 4,
+  "existing_companies": 193,
+  "proposed_companies_all": 218,
+  "proposed_companies_exchange_only": 214,
+  "company_category_count_proposed": 16,
+  "industry_economic_topics_proposed": 90,
+  "horizontal_standards_topics_retained": 1,
+  "current_industry_reports_hashed": 82,
+  "formal_company_report_collisions": [],
+  "issues": [],
+  "files": [
+    "25家公司入库建议表.md",
+    "交付核验.json",
+    "候选公司与分类建议.json",
+    "整理报告.py",
+    "核查候选.py",
+    "美股交易身份与行情核查.json",
+    "美股新增公司与行业分类升级建议.md",
+    "行业调整建议.json",
+    "项目覆盖核验.json"
+  ]
+}

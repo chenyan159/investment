@@ -1,0 +1,377 @@
+# 公司：LIN Linde plc（林德）公司调研（2026-06-11）
+
+报告日期：2026-06-11（America/Los_Angeles）  
+股票代码：`LIN`  
+公司名称：Linde plc  
+正式分类目录：`基本面/公司调研/半导体材料_化学品_基板/`  
+本地资料边界：仅参考 `基本面/行业调研/` 下与 AI 产业、晶圆制造、半导体高纯气体/化学流体、AI 数据中心建设相关资料；未读取、引用或继承 `公司调研/` 下既有 LIN 或其他公司报告，未读取 `日度资料/`、`特征量化/` 等其他目录。  
+口径说明：Linde 正式披露以地区分部和终端市场为主，不披露“AI 数据中心收入”。本文所有“AI 半导体/AI 数据中心相关收入”均为模型估算，并单独标注。
+
+## 0. 核心结论
+
+1. **Linde 是全球工业气体寡头，不是典型 AI 数据中心设备股。** 投资人心中的 LIN 是“高 ROIC、强现金流、长约、低周期 beta、长期复利”的工业气体龙头；AI 相关弹性主要来自先进逻辑、HBM、先进封装和新晶圆厂对超高纯大宗气体、电子特气、稀有气体和现场供气系统的需求，而不是机房内 GPU rack、液冷或电力设备。
+2. **2026Q1 电子终端是公司最强增长终端。** Linde 1Q26 slides 披露 Electronics 占工程以外销售约 `10%`，同比 `+10%`，管理层在 1Q26 call 中明确称增长“primarily driven by continued investments in advanced chips to support AI”，且当前在项目 backlog 中投资超过 `$1B` 建设超高纯装置，支持全球最先进 fabs。
+3. **AI 暴露是“间接、长约、低爆发但高确定性”。** 以 1Q26 非 Engineering 销售 `$8.264B` 估算，Electronics 季度收入约 `$0.83B`、年化约 `$3.3B`。其中 AI 半导体相关收入保守估计约年化 `$1.4-2.0B`，占公司总收入约 `4-6%`；但新增增长的 AI 占比更高，估计 2026 电子终端增量中 `60-80%` 来自先进芯片/HBM/先进封装。
+4. **订单和 backlog 质量很高，但不能把 backlog 机械当成未来一年收入。** 1Q26 公司 high-quality project backlog `$9.9B`，其中 Sale-of-gas backlog `$7.1B`、Sale-of-plant backlog `$2.8B`。10-Q 披露剩余履约义务/最低采购要求与工程 plant sales 约 `$64B`，长期供气合同最长可到 `30` 年，约一半在未来 `6` 年确认。这里更像长期现金流锁定，而不是短周期 backlog 爆发。
+5. **财务健康度非常高。** 1Q26 末现金 `$3.96B`，短债/商业票据/一年内到期债务合计约 `$6.46B`，长期债务 `$19.86B`，总债务约 `$26.32B`，净债务约 `$22.36B`；1Q26 经营现金流 `$2.24B`、自由现金流约 `$0.90B`，调整后 ROC `23.8%`，未使用循环信贷 `$6.5B` 且无财务 covenant。短期流动比率低于 1 主要反映商业票据和债务滚续模式，不代表经营压力。
+6. **估值不是便宜工业股，而是优质资产溢价。** 2026-06-11 市场快照：股价约 `$516.84`，市值约 `$239B`，TTM PE 约 `34.2x`，Forward PE 约 `28.2x`，P/S 约 `6.9x`，TTM 毛利率约 `48.8%`、净利率约 `20.4%`。这个估值要求公司继续兑现价格、生产率、backlog start-up 和半导体/清洁能源项目回报。
+7. **最值得跟踪的产品不是普通工业气体，而是四条线：** `UHP onsite bulk gas/SPECTRA/ASU`、`电子特气和稀有气体/DUV laser gas/He-Ne-Kr-Xe`、`Generation-F/F2 onsite chamber clean 与低 GWP 替代`、`Linde Advanced Materials Technologies 的电子涂层/靶材/热喷涂材料`。最后一条较小，但在 AI 芯片和光电子材料链里有潜在小业务弹性。
+
+## 1. 公司整体业务、定位与近三年变化
+
+### 1.1 业务结构
+
+Linde 是全球最大的工业气体和工程公司之一，主营：
+
+| 层级 | 业务内容 | 收入模式 | 对 AI 半导体的相关性 |
+|---|---|---|---|
+| On-site / pipeline gases | 在客户厂区或管网旁建设空气分离、氢气、合成气、高纯气体装置，长期供 N2/O2/Ar/H2/CO/He 等 | 10-30 年长约、最低采购、能源/原料 pass-through、资本开支回收 | 很高。先进 fab/HBM/封装厂需要连续、超高纯、不可中断供气 |
+| Merchant liquid/bulk gases | 液氧、液氮、液氩、液氢、CO2、He 等液态/散装配送 | 供应合同 + 区域物流网络 | 中高。半导体 backup supply、稀有气体、工厂启动/维护相关 |
+| Packaged gases | 钢瓶/气瓶气体、焊接气、医疗气、实验室和中小客户 | 分销、零售、区域网络 | 对 AI 弱，更多是稳健现金流 |
+| Electronics specialty gases/materials | 超高纯 N2/O2/Ar/H2/He、Ne/Kr/Xe、laser gas mixtures、etch/deposition/implant/chamber clean gases、气体柜/安全系统支持、AMT 涂层/靶材 | 高纯耗材 + 长约 + 客户认证 | 最高，是 LIN 的 AI 半导体核心暴露 |
+| Engineering / Sale of plant | 空分、氢气、合成气、天然气处理、电子气体装置等工程和设备 | 项目制 Sale of plant，固定价/工程服务 | 对外部客户与内部项目均重要，但收入波动、利润率低于气体长约 |
+| Clean energy / decarbonization | 蓝氢/绿氢、碳捕集、低碳气体供应 | 长约项目 | 不是 AI 当前主线；可与数据中心自备电/低碳能源长期交叉，但 2026 收入不应高估 |
+
+### 1.2 投资人心中的 LIN
+
+投资人通常把 LIN 看成三类资产的组合：
+
+| 属性 | 解释 | 估值含义 |
+|---|---|---|
+| 工业气体寡头 | Linde、Air Liquide、Air Products、Nippon Sanso 等寡头在区域管网、现场装置、安全和合同能力上壁垒高 | ROIC 稳、现金流可预测，估值高于普通化工 |
+| 生产率/定价复利机器 | 即使工业需求疲软，公司通过价格、成本行动、生产率、资本纪律维持 EPS 增长 | 市场愿意给较高 PE，但需要持续执行 |
+| 长约资本开支平台 | Sale-of-gas 项目把 capex 转成多年供气收入；客户停线成本极高，切换供应商难 | backlog 质量高，但收入释放慢，不是短期订单弹性股 |
+
+与 APD 相比，LIN 更强调资本纪律和资产回报；与 Air Liquide 相比，LIN 美国资本市场可见度更高、margin/ROC 更突出；与半导体材料公司相比，LIN AI 暴露更间接、增速较低，但客户锁定和现金流质量更高。
+
+### 1.3 最近三年重大业务变化、转型和收购
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2023 | 完成欧洲/德国交易结构和上市相关调整，资本市场重心更偏美国；继续整合 Praxair/Linde 组合后的网络与效率 | 降低双重上市复杂度，强化美国投资人定价；不是业务收购，但影响投资者结构 |
+| 2024-2026 | 持续把资本投向 Sale-of-gas backlog、electronics、clean energy 和高 ROIC 项目；2026 capex 指引仍为 `$5.0-5.5B` | 公司从普通工业气体周期暴露转向“高质量长约 + 电子/能源项目”组合 |
+| 2025 | 多区域 bolt-on 收购：Americas packaged gases、APAC 6-7 笔小收购，APAC 2025 上半年约 `$250M` M&A | 不是大型转型收购，主要增强区域密度和 packaged gas 网络 |
+| 2025-2026 | 半导体项目强化：Samsung Pyeongtaek 第八套 onsite ASU，预计 2026 年中启动；1Q26 管理层披露超过 `$1B` UHP plants backlog | 明确把 AI 先进芯片需求转成 Linde 现场超高纯气体项目 |
+| 2025-2026 | Helium 从过剩转向局部短缺；公司强调以长期合同满足客户承诺，不追逐短期 spot | 稀有气体/He 对半导体和电子客户更重要，但收入弹性受长期合同约束 |
+
+### 1.4 产业链位置
+
+Linde 位于 AI 基础设施的“前道制造材料/厂务基础设施层”，而不是“数据中心 IT 硬件层”：
+
+```text
+AI 模型需求
+-> GPU/ASIC/HBM/光互联订单
+-> TSMC/Samsung/SK hynix/Micron/Intel/OSAT 扩产
+-> 晶圆厂/HBM/先进封装厂需要 UHP gases、特气、稀有气体、ASU、purifier、gas delivery、abatement
+-> Linde 确认长约供气、项目 capex 和部分工程收入
+```
+
+关键判断：AI 数据中心每多建 `1MW`，LIN 的直接机房收入几乎为零；但若这个 `1MW` 对应约 `500-700` 颗高端 GPU/ASIC 加速器和相关 HBM/光互联制造，Linde 的半导体气体 look-through 收入大致为每 `1MW` `$1-5万` 量级，极端紧缺时可更高。它不是 rack BOM 大头，但在 fab uptime 和良率里重要性极高。
+
+### 1.5 股价、估值与盈利质量快照
+
+数据日期：2026-06-11；市场数据为网页/行情快照，盘中可能变化。
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | 约 `$516.84` | 2026-06-11 | StockAnalysis/Google Finance 快照 |
+| 市值 | 约 `$239B` | 2026-06-11 | 股价乘流通股，源间略有差异 |
+| TTM PE | 约 `34.2x` | 2026-06-11 | 基于 TTM EPS |
+| Forward PE | 约 `28.2x` | 2026-06-11 | 市场一致预期口径；若按公司 FY2026 调整 EPS 指引中点 `$17.75`，股价/指引约 `29.1x` |
+| P/S | 约 `6.9x` | 2026-06-11 | TTM sales 口径 |
+| Forward P/S | 约 `6.5x` | 2026-06-11 | 一致预期收入 |
+| TTM 收入 | 约 `$34.66B` | 2026-06-11 | 过去四季销售 |
+| TTM 收入增速 | 约 `+5%` | 2026-06-11 | 1Q26 单季收入同比 `+8%`，2025 全年收入同比 `+3%` |
+| TTM 毛利率 | 约 `48.8%` | 2026-06-11 | Linde 也常看 adjusted operating margin；1Q26 调整后 OP margin `30.0%` |
+| TTM 净利率 | 约 `20.4%` | 2026-06-11 | 工业气体行业非常高 |
+| 1Q26 调整 EPS | `$4.33` | 2026Q1 | 同比 `+10%` |
+| FY2026 调整 EPS 指引 | `$17.60-17.90` | 1Q26 更新 | 同比 `+7-9%`，中点假设无经济改善 |
+| Capex 指引 | `$5.0-5.5B` | FY2026 | 持续投向 base capex + project capex |
+
+### 1.6 资产负债表健康度
+
+| 指标 | 2026-03-31 数值 | 解释 |
+|---|---:|---|
+| 现金及等价物 | `$3.96B` | 充足但低于总短债，不依靠现金清偿全部短债 |
+| Current assets | `$12.75B` | 包含应收、存货等 |
+| Current liabilities | `$15.39B` | 包含商业票据、短债和应付 |
+| Current ratio | `0.83x` | 工业气体公司常见；依赖稳定现金流和债市滚续 |
+| 短期借款/商业票据 | `$4.82B` | 短期融资工具 |
+| 一年内到期长期债务 | `$1.64B` | 2026 到期部分可用现金流/再融资处理 |
+| 长期债务 | `$19.86B` | 长债主体 |
+| 总债务 | 约 `$26.32B` | 短债 + 当前长期债 + 长债 |
+| 净债务 | 约 `$22.36B` | 总债务减现金 |
+| 股东权益 | `$38.57B` | 总债务/权益约 `68%` |
+| 1Q26 经营现金流 | `$2.24B` | 同比 `+4%` |
+| 1Q26 Capex | `$1.34B` | 自由现金流约 `$0.90B` |
+| 未使用循环信贷 | `$6.5B` | 10-Q 披露无 financial covenant |
+| 利息覆盖 | 1Q26 GAAP operating income `$2.44B` / interest `$62M`，约 `39x` | 非常强 |
+
+评估：财务状况健康，主要风险不在偿债，而在高估值下资本开支回报、项目延期、能源 pass-through、工业周期和电子项目 ramp 节奏。LIN 可以同时维持 dividend、buyback、capex 和小型 M&A，但当前估值已经把“高质量复利”定价得很充分。
+
+## 2. 最新及最近四次财报：订单、收入、利润率和 AI 暴露
+
+### 2.1 五个季度总表
+
+> 注：公司正式分部为 Americas、EMEA、APAC、Engineering、Global Other。Electronics 占比和增长来自 slides 的终端市场口径，排除 Engineering；AI 数据中心相关收入为本文模型估算。
+
+| 财报季度 | 发布/资料 | 总销售额 | 调整后 OP / margin | 调整 EPS | OCF / Capex | Electronics 终端 | Project backlog / bookings | 分部收入与 margin | AI 数据中心/先进芯片相关收入估算 |
+|---|---:|---:|---:|---:|---:|---|---|---|---|
+| 2026Q1 | 2026-05-01 release / 10-Q | `$8.781B`，同比 `+8%`；volume `+1%`、price/mix `+2%`、FX `+5%` | `$2.630B` / `30.0%` | `$4.33`，同比 `+10%` | OCF `$2.240B`；capex `$1.342B`，FCF `$0.898B` | 占非 Engineering `10%`，同比 `+10%`、环比 `+1%`；管理层称由 AI advanced chips 投资驱动 | High-quality project backlog `$9.9B`；SOG `$7.1B`、SOP `$2.8B`；Engineering intake `$640M`，SOP book-to-bill `1.24x`；Q1 SOG start-up `10` 个项目、投资约 `$300M`，新签 `5` 个 SOG 项目增加约 `$100M` | Americas `$4.025B` / `31.6%`；EMEA `$2.171B` / `36.1%`；APAC `$1.701B` / `28.0%`；Engineering `$517M` / `19.5%`；Other `$367M` / `-1.1%` | Electronics 季度约 `$826M`；AI/先进芯片相关约 `$350-500M`，占总销售 `4-6%`；新增增量中 AI 占比更高 |
+| 2025Q4 | 2026-02-05 release/slides | `$8.764B`，同比约 `+8%` | `$2.585B` / `29.5%` | `$4.20`，同比增长 | OCF `$3.030B`；capex `$1.458B` | Electronics 占 `10%`，同比 `+7%`、环比 `+5%` | Project backlog `$10.0B`；SOG `$7.3B`、SOP `$2.7B`；Engineering intake `$434M`，SOP book-to-bill `0.71x` | Americas `$3.884B` / `30.9%`；EMEA `$2.178B` / `35.4%`；APAC `$1.726B` / `29.1%`；Engineering `$615M` / `16.7%`；Other `$361M` / `1.7%` | Electronics 季度约 `$815M`；AI/先进芯片相关约 `$330-470M`；季度改善来自 electronics + coatings |
+| 2025Q3 | 2025-10-31 release/slides | `$8.615B` 左右；区域合计显示同比中个位数增长 | 调整后 OP 约 `$2.56B`，margin 约 `29.7%` | 调整 EPS 指引全年上调至 `$16.35-16.45` | Capex 维持全年 `$5.0-5.5B` | Electronics 占 `9%`，同比 `+6%`、环比 `+4%` | Project backlog `$10.0B`；SOG `$7.1B`、SOP `$2.9B`；Engineering intake `$269M`，SOP book-to-bill `0.52x` | Americas `$3.846B` / `31.2%`；EMEA `$2.178B` / `35.9%`；APAC `$1.741B` / `28.1%`；Engineering `$519M` / `19.5%`；Other `$331M` / `-3.9%` | Electronics 季度约 `$725-760M`；AI/先进芯片相关约 `$280-430M` |
+| 2025Q2 | 2025-08-01 release/slides | `$8.495B` 左右；全年低端 EPS 指引上调 | 调整后 OP 约 `$2.56B`，margin 约 `30%` | FY2025 adjusted EPS 指引 `$16.30-16.50` | Capex 指引 `$5.0-5.5B` | Electronics 占 `9%`，同比 `-1%`、环比 `-1%`；APAC 电子强但整体端市场分化 | Project backlog `$10.3B`；SOG `$7.1B`、SOP `$3.2B`；Engineering intake `$311M`，SOP book-to-bill `0.56x` | Americas `$3.812B` / `31.7%`；EMEA `$2.162B` / `36.1%`；APAC `$1.655B` / `29.6%`；Engineering `$551M` / `16.3%`；Other `$315M` / `-4.1%` | Electronics 季度约 `$715M`；AI 相关约 `$250-380M`，尚未明显加速 |
+| 2025Q1 | 2025-05-01 release/slides | `$8.112B` | `$2.438B` / `30.1%` | `$3.95` | OCF `$2.161B`；capex `$1.270B` | Electronics 占 `9%`，同比 `+6%`、环比 `+2%` | Project backlog `$10.3B`；SOG `$7.0B`、SOP `$3.3B`；Engineering intake `$516M`，SOP book-to-bill `0.91x` | Americas `$3.666B` / `31.0%`；EMEA `$2.031B` / `35.5%`；APAC `$1.539B` / `29.3%`；Engineering `$565M` / `20.2%`；Other `$311M` / `4.5%` | Electronics 季度约 `$680M`；AI 相关约 `$230-350M` |
+
+### 2.2 Backlog、Bookings、B2B、Lead time、取消率
+
+| 指标 | 公司披露/推算 | 投资含义 |
+|---|---|---|
+| Sale-of-gas backlog | 1Q25 `$7.0B` -> 2Q25 `$7.1B` -> 3Q25 `$7.1B` -> 4Q25 `$7.3B` -> 1Q26 `$7.1B` | 稳定在高位；这是投资 capex 金额而非未来一年收入，背后由长约支持 |
+| Sale-of-plant backlog | 1Q25 `$3.3B` -> 2Q25 `$3.2B` -> 3Q25 `$2.9B` -> 4Q25 `$2.7B` -> 1Q26 `$2.8B` | Engineering 外部项目 backlog 略回落；Q1 intake 恢复 |
+| Engineering book-to-bill | 1Q25 `0.91x`、2Q25 `0.56x`、3Q25 `0.52x`、4Q25 `0.71x`、1Q26 `1.24x` | 2025 中期工程订单偏弱，1Q26 有改善；但 LIN 投资价值核心仍是 SOG 长约 |
+| RPO / minimum purchase | 2026-03-31 约 `$64B`，约一半未来 6 年确认，其余更长期；合同最长 `30` 年 | 高确定性现金流底座，且不包含客户最低采购以上的实际用量 |
+| Lead time | Samsung Pyeongtaek 第八套 ASU：2025-04 公告、预计 2026 年中启动；Air Liquide 日本 AI 芯片气体项目 2026-04 公告、2028 年底投运；Air Products Samsung 项目 2028-2030 分阶段投运 | 高纯/onsite gas 项目通常需提前 `1-3年` 锁定；越先进的 fab，越早绑定气体商 |
+| 取消率 | Linde 未披露 cancellation rate。按 long-term supply agreement、minimum purchase、客户停线成本和现场资产专属性推断，已签项目取消率低；更常见风险是客户 ramp 延迟、项目 commissioning 推迟或最低用量之外的需求低于预期 | 对收入曲线影响大于对长期合同价值影响 |
+
+## 3. 2026 最新指引、业务占比、重点产品和跳过业务
+
+### 3.1 2026 最新指引
+
+| 项目 | 2026 最新指引/披露 | 解读 |
+|---|---|---|
+| 2Q26 adjusted EPS | `$4.40-4.50`，同比 `+8-10%` | 中点假设无经济改善，含约 `+1%` FX tailwind |
+| FY2026 adjusted EPS | `$17.60-17.90`，同比 `+7-9%` | 公司靠价格、生产率、项目启动和回购驱动 EPS，而非宏观强复苏 |
+| FY2026 capex | `$5.0-5.5B` | 维持高位；base capex + project capex 共同支持长期增长 |
+| Helium | 管理层不假设相对 2 月指引改善；短缺期优先履行长约，不追逐 spot | 稀有气体潜在溢价存在，但 2026 不应过度外推 |
+| Electronics | 1Q26 同比 `+10%`，先进 AI 芯片投资驱动；超过 `$1B` UHP plants backlog | 这是 LIN 当前最突出的高增长业务 |
+
+### 3.2 1Q26 收入占比：地区分部与终端市场
+
+| 口径 | 收入/占比 | 增长 | 重点 |
+|---|---:|---:|---|
+| Americas | `$4.025B`，占总销售 `45.8%` | 同比 `+10%` | 电子、制造驱动 volume；价格/mix `+4%` |
+| EMEA | `$2.171B`，占 `24.7%` | 同比 `+7%` | FX + pricing，volume `-3%`，工业活动偏弱 |
+| APAC | `$1.701B`，占 `19.4%` | 同比 `+11%` | volume `+6%`，项目启动和 sale of equipment；韩国/中国/电子链重要 |
+| Engineering | `$517M`，占 `5.9%` | 同比 `-8%` | 外部工程收入下降，订单 intake 改善 |
+| Global Other | `$367M`，占 `4.2%` | 同比 `+18%` | coatings 业务向 Electronics 和 Commercial Aerospace 增长，但 helium/成本压制利润 |
+| Electronics 终端 | 约非 Engineering 销售 `10%`，约 `$826M/季` | 同比 `+10%` | AI advanced chips 是主要驱动 |
+| Manufacturing | 非 Engineering `21%` | 同比 `+5%` | 周期恢复但非 AI 主线 |
+| Chemicals & Energy | 非 Engineering `22%` | 同比 `+3%` | 氢气/氮气、炼化、Jurong Island 等 |
+| Healthcare | 非 Engineering `16%` | 同比 `+1%` | 防御性业务 |
+| Metals & Mining | 非 Engineering `13%` | 同比 `+3%` | 周期性业务 |
+| Food & Beverage | 非 Engineering `9%` | 同比 `+5%` | 稳定业务 |
+
+### 3.3 跳过或降权业务
+
+下列业务对 LIN 现金流重要，但不是本报告 AI 半导体主线，后文不展开：
+
+| 跳过/降权业务 | 原因 |
+|---|---|
+| Healthcare 医疗氧气、呼吸治疗、医院气体 | 稳定、抗周期，但增长低，与 AI 芯片/数据中心无关 |
+| Food & Beverage 食品冷冻、碳酸饮料、包装气 | 现金流好，AI 相关性弱 |
+| Metals & Mining | 周期性强，受钢铁/采矿景气影响，AI 数据中心传导弱 |
+| 普通 Manufacturing packaged gases | 网络密度重要，但不是高增长 AI 产品 |
+| 普通焊接气、零售气、distributor sales | 高分散、低技术壁垒，不是核心增量 |
+| Clean hydrogen / CCS | 长期可选性强，短期更多是能源/化工 decarbonization，不应并入 AI 收入 |
+| Commercial space | 1Q26 管理层提到有 base capex 投资服务 commercial space，但当前规模和 AI 相关性低 |
+| Helium spot trading | He 短缺是潜在收益，但公司强调履约长约，不追逐现货；不能当成 2026 利润爆发主线 |
+
+### 3.4 重点产品和小业务
+
+| 重点产品/业务 | 对应产品/型号/服务 | 当前规模估算 | 增速/利润率判断 | 交叉验证 |
+|---|---|---:|---|---|
+| UHP onsite bulk gas / advanced fab gas plants | 现场 ASU、超高纯 N2/O2/Ar/H2/He、SPECTRA 系列现场供应、purifier、backup liquid、UHP piping、analyzers | Linde Electronics 年化约 `$3.3B`，其中 bulk/onsite 估计 `$1.8-2.2B` | 2026 增速 `8-14%`；EBITDA margin 通常 `30-42%`，取决于能源转嫁和负荷率 | 1Q26 electronics `+10%`；Samsung Pyeongtaek 第八套 ASU；项目 backlog 中超过 `$1B` UHP plants |
+| Electronic specialty gases / rare gases / laser gas | Ne/Kr/Xe/He/ArF/KrF laser gas mixtures、CO2、NH3、HCl、BCl3、SiH4、GeH4、WF6、NF3/F2 类 chamber clean/etch/deposition gases、custom blends | 年化估计 `$0.8-1.2B` | 增速 `10-18%`；高纯/稀有/专用 molecule 毛利 `40-60%`，普通气体较低 | 本地行业资料显示电子气体 2026 市场约 `$6.8B`，advanced node/HBM 拉动；He 从过剩转局部短缺 |
+| Generation-F / onsite fluorine / low-GWP chamber clean | F2 onsite generation、chamber clean、NF3/PFC 部分替代、安全联锁、abatement 接口 | 当前较小，估计 `$0.1-0.3B` 级别 | 2026 增速 `10-25%`；认证后利润率高，但导入慢 | ESGS 2026 和项目内行业资料均把低 GWP gases、F-gas/PFAS 监管、abatement 作为未来方向 |
+| Linde Advanced Materials Technologies（LAMT）电子材料/涂层 | 溅射靶材、热喷涂粉末、涂层、电子/半导体/显示/航空材料 | Global Other 年化 `$1.5B`，LAMT 及电子相关部分估计 `$0.3-0.7B` | 1Q26 Other sales `+18%`，公司称 coatings 对 Electronics 和 Commercial Aerospace 增长；利润受 helium/成本混杂 | 小业务，不在分部单独披露；但 AI 芯片制造、光电子、先进封装材料链中有潜力 |
+| Engineering / ASU and electronics gas equipment | 空分装置、氢气/合成气、电子气体装置、plant engineering、EPC/procurement | 1Q26 Engineering sales `$517M`；SOP backlog `$2.8B` | 2026 收入波动，margin `16-20%`；不是最高 ROIC 但支撑内部/外部项目 | Engineering intake 1Q26 `$640M`，book-to-bill `1.24x` |
+
+## 4. 当前高增长/关键产品：收入贡献、AI 重要性、紧迫性、供需和定价权
+
+评分：5 = 极高，1 = 很低。
+
+| 产品/业务 | 当前收入贡献估算 | 当前收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| UHP onsite bulk gas / advanced fab gas plants | 年化 `$1.8-2.2B`，AI/advanced chip 相关 `$0.8-1.2B` | `8-14%` | 5 | 5 | 4 | 4 | 先进 fab 没有连续超高纯 N2/O2/Ar/H2/He 不能投产，客户更看 uptime 和安全，Linde/Air Liquide/Air Products 寡头壁垒强 |
+| Electronic specialty / rare gases | 年化 `$0.8-1.2B`，AI 相关 `$0.4-0.7B` | `10-18%` | 5 | 4 | 4 | 3-4 | 先进节点、HBM、EUV/DUV、etch/deposition/implant 都需要；但按 molecule 竞争分散，Linde 并非所有特气绝对龙头 |
+| Generation-F / onsite F2 / low-GWP clean gases | `$0.1-0.3B` 级别，AI 相关比例高 | `10-25%` | 4 | 3 | 3 | 4 | 重要但导入慢；若 NF3/PFC 监管强化，溢价和替换弹性上升 |
+| LAMT 电子材料/涂层/靶材 | 电子相关 `$0.3-0.7B`，AI 相关 `$0.1-0.3B` | `10-18%` | 3 | 3 | 3 | 3 | 小业务，有 AI 芯片/光电子/先进封装材料弹性，但披露不足 |
+| Engineering / electronics gas plants | 年化 `$2.0-2.4B` 工程总收入，AI 相关难拆 | `-5%` 到 `+5%` | 4 | 4 | 3 | 3 | 作为交付能力和 backlog 转化关键，不是短期高利润主线 |
+
+## 5. 一年后收入贡献三情景预测
+
+| 产品/业务 | 基准情景：2027-06 前 | 乐观情景：2027-06 前 | 极度乐观情景：2027-06 前 |
+|---|---|---|---|
+| UHP onsite bulk gas | 收入年化 `$2.0-2.4B`；增速 `+10-14%`；AI 相关 `$1.0-1.4B`；重要性 5、紧急性 5、供需 4、定价权 4 | 收入 `$2.3-2.7B`；增速 `+18-25%`；AI 相关 `$1.3-1.8B`；新 UHP 项目签约继续增加 | 收入 `$2.7-3.1B`；增速 `+30%+`；AI 相关 `$1.7-2.2B`；HBM4/Rubin/ASIC 项目提前锁气，部分区域供气排队 |
+| Electronic specialty / rare gases | 收入 `$0.9-1.3B`；增速 `+10-16%`；AI 相关 `$0.5-0.8B`；供需 4 | 收入 `$1.1-1.5B`；增速 `+20-30%`；He/rare gas 长约价格改善，先进芯片客户多区域锁量 | 收入 `$1.4-1.8B`；增速 `+35%+`；He/Ne/Kr/Xe 或 F-gas 替代出现供给冲击，客户优先保供，溢价显著 |
+| Generation-F / F2 / low-GWP | 收入 `$0.15-0.35B`；增速 `+15-25%`；认证仍慢 | 收入 `$0.25-0.45B`；增速 `+30-50%`；欧美/头部 fab 强化低 GWP qualification | 收入 `$0.4-0.7B`；增速 `+70%+`；监管或客户 ESG 强制加速，F2 onsite 与 abatement 套件一起放量 |
+| LAMT 电子材料/涂层 | 电子相关 `$0.35-0.8B`；增速 `+8-15%` | `$0.5-0.95B`；增速 `+20-30%`；先进封装/光电子靶材和涂层订单增加 | `$0.8-1.2B`；增速 `+40%+`；若新材料进入 AI 芯片/光模块关键客户 AVL |
+| Engineering / electronics-related plants | 工程总收入 `$2.0-2.3B`；SOP backlog 保持 `$2.5-3.0B`；margin `16-20%` | 工程总收入 `$2.3-2.7B`；electronics/clean energy 新单恢复，book-to-bill > `1x` | 工程总收入 `$2.7-3.2B`；AI fab/ASU/气体装置急单推动外部收入和内部项目 execution |
+
+## 6. BOM 拆分、每 MW / rack / GPU / optical port 内容量、价格传导链
+
+### 6.1 必须先明确口径
+
+LIN 的 AI 相关产品**不是**装在 AI rack 里的 BOM。真实传导如下：
+
+```text
+Linde 气体/特气/超高纯装置
+-> 台积电、三星、SK hynix、Micron、Intel、OSAT、光电器件厂
+-> GPU/ASIC/HBM/光模块芯片和封装制造
+-> AI 服务器/rack/数据中心
+```
+
+因此“每 MW / rack / GPU / optical port”是 look-through 制造内容量，不是数据中心机房采购清单。
+
+### 6.2 AI rack 物理换算假设
+
+| 参数 | 本文采用范围 | 说明 |
+|---|---:|---|
+| 高端 AI rack 功率 | `80-160kW/rack` | GB200/GB300、MI 系列和 custom ASIC rack 差异大 |
+| 每 rack GPU/ASIC 数 | `72-144` 颗 | NVL72 是 72 GPU；custom ASIC rack 可不同 |
+| 每 MW accelerator 数 | `500-700` 颗 | 项目内 AI 数据中心建设资料推导值与高密度 rack 相容 |
+| 每颗 GPU/ASIC Linde look-through 气体/材料收入 | 基准 `$25-75`；乐观 `$75-150`；极度 `$150-250` | 包含 logic die、HBM、advanced packaging 和少量光电器件的气体/材料份额；仅 Linde 份额，不是全行业气体 TAM |
+| 每 optical port Linde look-through 内容量 | `$0.01-0.20/port`，特殊光电子/硅光可更高 | 主要是晶圆/激光器制造气体和靶材，远小于光模块光电芯片/封装价值 |
+
+### 6.3 产品 BOM 和价格链
+
+| 产品/业务 | BOM / 内容 | 每 GPU / rack / MW / port 内容量 | 价格传导链 | 当前产能能力与采用 |
+|---|---|---|---|---|
+| UHP onsite bulk gas | ASU 空压机、纯化、冷箱、精馏、liquid backup、vaporizers、UHP purifier、分析仪、管网、N2/O2/Ar/H2/He 供应、安全/冗余系统 | Linde share 约 `$10-50/GPU`；`$0.7-7k/rack`；`$5-35k/MW`；对 optical port 可忽略 | ASU/能源/资本成本 -> 长约最低采购 + 能源 pass-through -> fab opex/capex -> wafer/HBM 成本 -> accelerator ASP | 已被先进 fab 广泛采用；公司 >`$1B` UHP plants backlog；Samsung Pyeongtaek 第八套 ASU 2026 年中启动 |
+| Electronic specialty / rare gases | He/Ne/Kr/Xe、ArF/KrF laser blends、CO2、NH3/HCl/BCl3/SiH4/GeH4/WF6/NF3/F2 等，高纯容器、purifier、gas cabinet/VMB/VMP、分析和安全联锁 | `$10-80/GPU`；`$0.7-11.5k/rack`；`$5-55k/MW`；`$0.01-0.10/optical port` | 稀有气体/合成/纯化/安全物流 -> 特气合同或气瓶/管束 -> etch/deposition/lithography/implant -> 良率和 wafer cost | 先进节点/HBM 高采用；供给受 rare gas、客户 qual、安全物流限制 |
+| Generation-F / onsite F2 / low-GWP | F2 onsite generator、电解/混合/稀释、cabinet、leak detection、interlock、abatement 接口，替代部分 NF3/PFC chamber clean | `$1-10/GPU`；`$70-1,400/rack`；`$0.5-7k/MW` | 低 GWP/EHS 合规 -> 客户 qualification -> chamber clean gas cost + abatement cost -> fab ESG/许可价值 | 当前采用较低，先进 fab/低碳客户先导；认证阶段通常是客户 tool/fab 级 qualification |
+| LAMT electronic materials/coatings | 溅射靶材、靶材背板、金属/陶瓷粉末、热喷涂涂层、表面工程服务 | `$1-8/GPU`；`$70-1,150/rack`；`$0.5-5k/MW`；`$0.01-0.20/optical port` | 高纯金属/陶瓷原料 -> 靶材/涂层 -> PVD/设备部件/光电器件 -> chip/optical module yield | 小业务，客户认证决定采用；1Q26 coatings 对 electronics 增长 |
+| Engineering / ASU plants | 空分装置、氢气/合成气、电子气体装置、工程设计和 procurement | 不直接按 GPU 计；对单个 advanced fab 可对应数千万至数亿美元装置投资 | 客户 capex -> 工程/设备收入或 Linde 自有 SOG capex -> 后续长约 gas revenue | SOP backlog `$2.8B`；Engineering intake 1Q26 `$640M` |
+
+### 6.4 认证阶段
+
+| 产品 | 当前认证/采用阶段 | 认证风险 |
+|---|---|---|
+| UHP onsite gas | 对先进 fab 属于成熟必配，认证主要在具体客户/厂区 spec、purity、uptime、安全、冗余和 commissioning | 低到中；供应商替换难，但新厂 commissioning 可能延迟 |
+| Electronic specialty / rare gases | 每个 molecule、纯度、容器、物流和 tool recipe 都需要客户 qualification | 中高；替代供应商导入常需 `12-36` 个月 |
+| F2 / low-GWP | 技术已存在，但替代 NF3/PFC 或改变 chamber clean recipe 需要 tool/fab 级验证 | 高；一旦通过，粘性强 |
+| LAMT materials | 具体靶材/涂层进入客户 AVL 后粘性强；公开信息不足 | 中高；客户验证周期长 |
+| Engineering | 工程能力成熟，但大型项目受许可、供应链、现场施工、固定价合同影响 | 中；项目延期影响收入确认 |
+
+## 7. 一年后产能能力、供应链采纳和认证阶段三情景
+
+| 产品/业务 | 基准：一年后产能/采用 | 乐观：一年后产能/采用 | 极度乐观：一年后产能/采用 |
+|---|---|---|---|
+| UHP onsite bulk gas | 年化收入能力 `$2.0-2.4B`；UHP backlog 部分项目进入 commissioning；AI advanced fab 采用率维持接近 `100%`，Linde share 稳定 | 年化 `$2.3-2.7B`；新增 UHP 项目显著增加，SOG backlog 重回 `$7.5B+`；美国/韩国/中国项目推进 | 年化 `$2.7-3.1B`；HBM4/Rubin/ASIC capex 提前，客户锁定 2028 供气，gas lead time 成为投产瓶颈 |
+| Specialty / rare gases | 年化 `$0.9-1.3B`；He/rare gas 长约改善但不追逐 spot；客户认证正常推进 | 年化 `$1.1-1.5B`；先进芯片客户要求多区域安全库存和长期锁量 | 年化 `$1.4-1.8B`；rare gas 或 F-gas supply shock，客户抢长期合约，价格上行 |
+| F2 / low-GWP | 年化 `$0.15-0.35B`；少数先进 fab/tool 通过 qualification | 年化 `$0.25-0.45B`；低 GWP chamber clean 被更多欧美/头部客户纳入新线 spec | 年化 `$0.4-0.7B`；监管或客户 ESG KPI 迫使新 fab 标配，认证提前 |
+| LAMT electronics | 年化电子相关 `$0.35-0.8B`；新增 coatings/targets design-in 小幅贡献 | 年化 `$0.5-0.95B`；AI 光电/先进封装材料进入更多客户 AVL | 年化 `$0.8-1.2B`；小业务被市场重新定价，但需更多公司披露验证 |
+| Engineering | SOP backlog `$2.5-3.0B`；book-to-bill 接近 `1x`；margin `16-20%` | SOP backlog `$3.0B+`；electronics/clean energy 项目恢复 | SOP backlog `$3.5B+`；外部客户急单和内部 SOG 项目同步增加 |
+
+## 8. 基于真实 backlog 和供给的未来一年业务增速预测
+
+### 8.1 公司整体
+
+| 情景 | 未来一年销售增速 | EPS/利润驱动 | 订单/供给假设 |
+|---|---:|---|---|
+| 基准 | 总销售 `+4-7%`；Electronics `+10-14%` | 价格 + 生产率 + 项目启动 + buyback；OP margin 维持约 `30%` | Project backlog 稳定 `$9.5-10.5B`；UHP backlog 正常转化；工业需求无明显改善 |
+| 乐观 | 总销售 `+7-10%`；Electronics `+15-22%` | 半导体/AI 项目加速，APAC/US volume 改善；helium/rare gas 长约价格改善 | 新 UHP 项目和 SOG 签约增加；Engineering book-to-bill > `1x` |
+| 极度乐观 | 总销售 `+10-14%`；Electronics `+25-35%` | AI fab/HBM4/ASIC 多区域扩产提前；rare gas/特气供需紧张带来 mix 改善 | 客户锁定 2027-2028 供气，UHP/特气 lead time 成为瓶颈；SOG backlog 显著上行 |
+
+### 8.2 高增长产品未来一年增速
+
+| 产品 | 基准 | 乐观 | 极度乐观 | 关键订单/供给证据 |
+|---|---:|---:|---:|---|
+| UHP onsite bulk gas | `+10-14%` | `+18-25%` | `+30%+` | 1Q26 >`$1B` UHP plants backlog；Samsung ASU 2026 年中启动；Air Liquide/Air Products 同业日本/韩国项目显示行业需求 |
+| Specialty / rare gases | `+10-16%` | `+20-30%` | `+35%+` | Electronics `+10%`；He 由过剩转局部短缺；AI/HBM/advanced node gas intensity 上升 |
+| F2 / low-GWP | `+15-25%` | `+30-50%` | `+70%+` | SEMI ESGS、PFAS/F-gas 监管、客户低碳 fab 需求；但认证慢 |
+| LAMT electronics | `+8-15%` | `+20-30%` | `+40%+` | 1Q26 Other/coatings 对 electronics 增长，但披露不足，需观察持续性 |
+| Engineering | `-5%` 到 `+5%` | `+8-15%` | `+20%+` | SOP backlog `$2.8B`，1Q26 intake `$640M`；项目制波动大 |
+
+## 9. 竞争格局、主流性、替代方案和客户切换成本
+
+### 9.1 主要竞争对手
+
+| 子领域 | 主要竞争对手 | Linde 优势 | Linde 风险 |
+|---|---|---|---|
+| Onsite bulk gas / ASU | Air Liquide、Air Products、Taiyo Nippon Sanso/Matheson、Messer、Iwatani、区域 JV | 全球管网、现场运营经验、资本纪律、Samsung/韩国/美国/欧洲/台湾 JV 资源、强安全记录 | 客户倾向多供；Air Products 获 Samsung 新项目、Air Liquide 获 SK hynix/Japan 项目，亚洲竞争激烈 |
+| Electronic specialty gases | Air Liquide、Merck/EMD、Entegris、SK specialty、Kanto Denka、Resonac、Foosung、Wonik、Messer、Huate/Jinhong | 电子客户关系、UHP bulk + specialty 组合、rare gas sourcing、长约能力 | 按 molecule 竞争，Linde 并非所有高端特气绝对领先；中国/韩国/日本本土供应商增强 |
+| Rare gases / helium | Air Liquide、Air Products、Messer、Iwatani、区域资源商、俄/卡塔尔/美国 LNG 副产链 | 多源采购、长期客户合同、全球物流 | 地缘、LNG 副产、政策和价格波动；spot 短缺不一定转化为 Linde 当期利润 |
+| F2 / low-GWP clean gases | Air Liquide、Kanto、SK specialty、NF3/PFC 供应商、abatement 厂商 Edwards/Ebara/GST/CS Clean 等 | onsite F2 和气体安全能力，客户 EHS 信任 | NF3 生态成熟，recipe 变更慢；客户不愿冒良率风险 |
+| LAMT 靶材/涂层 | Materion、Honeywell、JX Metals、Tosoh、ULVAC、Heraeus、Plansee、日美欧材料公司 | 气体客户关系 + 材料/涂层协同 | 业务规模小、披露少，难证明 AI 订单弹性 |
+| Engineering | Air Liquide Engineering、Air Products、Chart、TNSC、EPC 工程商 | 自有项目经验和气体工艺 know-how | 固定价项目、供应链、交付延期和低毛利风险 |
+
+### 9.2 新技术是否主流
+
+| 技术/产品 | 是否主流 | 判断 |
+|---|---|---|
+| UHP onsite bulk gas | 已是主流 | 先进 fab 和 HBM/封装新厂必配；需求更强不是来自新概念，而是先进制程气体强度提升 |
+| Specialty / rare gases | 已是主流且更复杂 | 先进节点、EUV/DUV、etch/deposition/implant、HBM/DRAM 均需要；AI 提升使用强度 |
+| F2 / low-GWP chamber clean | 部分主流、替代路径中 | 技术方向合理，但不会一夜替代 NF3/PFC；认证和 tool recipe 是主要约束 |
+| Rare gas recovery | 中期主流潜力 | 地缘和 He/Ne/Kr/Xe 供应风险越高，回收和长期锁量越重要 |
+| LAMT 电子材料/涂层 | 小众但有潜力 | 若进入先进封装、光电、设备关键部件，弹性高；但当前公开数字不足 |
+
+### 9.3 风险、替代方案与切换成本
+
+| 风险/替代 | 对 LIN 的影响 | 切换成本 |
+|---|---|---|
+| 客户 dual-source / regional sourcing | 降低单一供应商垄断能力；大型客户会在不同厂区分配 Air Liquide/Air Products/Linde | 中高。新厂可重新招标，既有 onsite plant 切换极难 |
+| AI 半导体 capex 延迟 | SOG 项目 start-up 推迟、Engineering 收入延迟，electronics 增速放缓 | 不直接取消长约，但收入曲线后移 |
+| 能源/电价上行且 pass-through 不充分 | 压缩气体业务 margin，尤其 ASU/氢气高能耗 | 合同通常有 pass-through，但时间和比例不同 |
+| He/rare gas 供应扰动 | 可能利好价格，也可能造成履约压力 | 客户更看供应安全，长期合同壁垒上升 |
+| 中国本土特气替代 | 中国成熟/部分先进线可能导入本土供应商，压缩外资份额 | 先进节点和高危特气切换慢；成熟产品价格压力大 |
+| F2/低 GWP 认证失败或进度慢 | 延后新产品收入 | 高。良率和安全风险让客户审慎 |
+| Engineering 固定价项目成本超支 | 影响 Engineering margin 和现金流 | 与客户切换成本无关，更多是执行风险 |
+
+## 10. 监控指标
+
+| 指标 | 为什么重要 | 正面信号 | 反证信号 |
+|---|---|---|---|
+| Electronics 终端增长 | 最直接 AI 半导体暴露 | 连续 `+10%` 以上，且管理层继续指向 AI advanced chips | 降到低个位数或转负 |
+| UHP plants backlog | 先进 fab 供气订单 | >`$1B` UHP backlog 继续增加，新项目签约 | backlog 不增、项目 start-up 延迟 |
+| SOG backlog | 长约项目质量 | `$7B+` 稳定并上行 | 连续下降且没有 start-up 解释 |
+| Engineering intake / book-to-bill | 外部设备和工程订单 | book-to-bill > `1x` 连续维持 | 低于 `0.7x` 多季 |
+| APAC/Korea/China/US electronics volume | AI fab/HBM 地域验证 | APAC volume 和 Americas electronics 同步改善 | 仅 FX/price 支撑，volume 不动 |
+| He/rare gas commentary | 供应紧张和价格 | 长约新签改善、履约稳定 | 供应短缺导致无法满足客户或成本压力 |
+| Air Liquide/Air Products 同业订单 | 行业需求验证 | 日本/韩国/美国新增 fab gas 项目 | 同业订单放缓或客户推迟 |
+| Customer fab capex | LIN 最终需求源 | TSMC/Samsung/SK hynix/Micron/Intel AI/HBM capex 上修 | HBM/CoWoS/AI ASIC capex 下修 |
+
+## 11. 估值结论与投资框架
+
+LIN 不是 AI 主题中弹性最大的股票，但可能是 AI 半导体上游中**确定性最高、周期 beta 较低、回撤中更容易防守**的一类资产。它的 AI 逻辑应这样定价：
+
+1. **不能把全公司当 AI 股。** 当前 AI/先进芯片相关收入估计只占总收入 `4-6%`，最多是增量驱动而非收入主体。
+2. **也不能忽视 AI 对长期 ROIC 的抬升。** 先进 fab/HBM/封装厂对气体供应安全和纯度的重视程度高于普通工业客户，一旦项目锁定，合同期限长、最低采购强、切换成本高。
+3. **估值需要质量溢价支撑。** `28-34x` PE 的 LIN 对宏观、汇率、项目执行和资本回报都没有太多容错；若 electronics 维持双位数增长、SOG backlog 上行，估值可维持；若 AI 半导体链降温，LIN 仍是优质防御资产，但 AI 溢价会收缩。
+4. **最重要的基本面问题不是“有没有 AI 收入”，而是“AI fab 项目能否持续进入 Linde 的 SOG backlog，并在 2027-2028 转成高 ROIC 供气收入”。**
+
+## 12. 资料来源
+
+### 12.1 本地行业资料
+
+- `基本面/行业调研/晶圆制造_设备_材料_测试/行业调研_半导体高纯水、气体与化学流体系统_2026-06-11.md`
+- `基本面/行业调研/晶圆制造_设备_材料_测试/行业调研_晶圆厂洁净室与厂务系统_2026-06-11.md`
+- `基本面/行业调研/晶圆制造_设备_材料_测试/行业调研_硅片、光刻胶与前道材料_2026-06-11.md`
+- `基本面/行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `基本面/行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- `基本面/行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`
+
+### 12.2 公司与监管资料
+
+- Linde, [1Q26 Earnings Release Tables](https://assets.linde.com/-/media/global/corporate/corporate/documents/press-releases/2026/linde-1q26-earnings-release-tables.pdf), 2026-05-01.
+- Linde, [1Q26 Teleconference Slides](https://assets.linde.com/-/media/global/corporate/corporate/documents/investors/quarterly-earnings/linde1q26teleconferenceslides.pdf), 2026-05-01.
+- Linde, [1Q26 Investor Call Transcript](https://assets.linde.com/-/media/global/corporate/corporate/documents/investors/quarterly-earnings/investor-call-transcript-1q26.pdf), 2026-05-01.
+- Linde, [Form 10-Q for quarter ended March 31, 2026](https://www.sec.gov/Archives/edgar/data/1707925/000162828026029165/lin-20260331.htm), filed 2026-05-01.
+- Linde, [Form 10-K for fiscal year 2025](https://www.sec.gov/Archives/edgar/data/1707925/000162828026011430/lin-20251231.htm), filed 2026-02-25.
+- Linde, [4Q25 Teleconference Slides](https://assets.linde.com/-/media/global/corporate/corporate/documents/investors/quarterly-earnings/linde4q25teleconferenceslides.pdf), 2026-02.
+- Linde, [3Q25 Teleconference Slides](https://assets.linde.com/-/media/global/corporate/corporate/documents/investors/quarterly-earnings/linde3q25teleconferenceslides.pdf), 2025-10.
+- Linde, [2Q25 Teleconference Slides](https://assets.linde.com/-/media/global/corporate/corporate/documents/investors/quarterly-earnings/linde2q25teleconferenceslides.pdf), 2025-08.
+- Linde, [1Q25 Teleconference Slides](https://assets.linde.com/-/media/global/corporate/corporate/documents/investors/quarterly-earnings/linde1q25teleconferenceslides.pdf), 2025-05.
+- Linde, [Linde to Expand Supply of Industrial Gases to Samsung in South Korea](https://www.businesswire.com/news/home/20250429045093/en/Linde-to-Expand-Supply-of-Industrial-Gases-to-Samsung-in-South-Korea), 2025-04-29.
+- Linde, [Semiconductor gases / wafer fab gases](https://www.linde-gas.com/industries/electronics/semiconductor), accessed 2026-06.
+- Linde, [Generation-F onsite fluorine](https://www.linde-gas.com/industries/electronics/semiconductor/generation-f), accessed 2026-06.
+
+### 12.3 行业与市场资料
+
+- SEMI, [Electronic Specialty Gases & Systems Conference 2026](https://www.semi.org/en/event/electronic-specialty-gases-and-systems-conference-esgs), 2026.
+- Air Liquide, [Air Liquide invests 200 million euros in Japan to support leading semiconductor manufacturer production](https://www.airliquide.com/group/press-releases-news/2026-04-16/air-liquide-invests-200-million-euros-japan-support-leading-semiconductor-manufacturer-production), 2026-04-16.
+- Air Products, [Air Products selected to supply industrial gases to Samsung advanced semiconductor fab in Pyeongtaek](https://www.airproducts.com/company/news-center/2026/04/0417-air-products-selected-to-supply-industrial-gases-to-samsung), 2026-04.
+- TechInsights/TECHCET, electronic gases market 2026 forecast, 2026.
+- StockAnalysis, [LIN Statistics](https://stockanalysis.com/stocks/lin/statistics/), accessed 2026-06-11.
+- Google Finance / Nasdaq market pages for LIN quote, accessed 2026-06-11.

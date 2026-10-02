@@ -1,0 +1,437 @@
+# POET Technologies（POET）公司调研_2026-06-11
+
+报告日期：2026-06-11（America/Los_Angeles）  
+股票代码：POET（NASDAQ）  
+公司：POET Technologies Inc.  
+正式分类目录：`公司调研/AI网络_光互联_连接器/`  
+资料边界：项目内只使用 `行业调研/` 下的光互联、硅光、AI 数据中心和会议资料；未读取、引用或继承 `特征量化/`、`日度资料/` 或同目录其他公司报告；未修改 `公司调研/公司索引.md`。  
+核心外部来源：POET 官网新闻稿和产品页、SEC/EDGAR 20-F 与 6-K、2026Q1 MD&A、2026 年 5 月注册直投补充招股书、Yahoo/Robinhood/Morningstar/Investing.com 等估值快照、MarketWatch/Business Insider/Reddit 作为情绪和争议线索。
+
+## 0. 结论摘要
+
+POET 是一家处在商业化早期的 AI 光互连小盘公司，核心不是完整光模块大厂，而是把电子器件、InP/硅光/激光/探测器、MUX/DMUX、TIA/Driver 等集成到 `Optical Interposer` 和 `Optical Engine` 上，试图用晶圆级被动对准替代传统光器件逐个主动对准。投资人眼中的 POET 是典型的“AI 数据中心光互连期权”：如果 800G/1.6T、CPO/NPO、外置激光源和 wafer-level optical engine 被客户采用，公司收入弹性很大；如果客户认证、订单兑现或治理披露失败，当前估值会缺少财务支撑。
+
+最重要的事实是两个方向同时存在：
+
+1. **正面弹性很大**：2026-05 POET 宣布 Lumilens 初始 `5000 万美元` EOI-based optical engine purchase order，框架关系称 5 年可扩至 `5 亿美元+`；2026-05 又完成 `4.0000002 亿美元` 注册直投融资，公司称用于制造扩产、研发、light source 业务和潜在并购，并称正把 wafer production 与 optical engine assembly 产能扩大约 `10x`。
+2. **订单风险真实存在**：2026-04-27 POET 公告 Marvell 在收购 Celestial AI 后取消 Celestial AI 给 POET 的全部 purchase orders，理由是 POET 披露订单和出货信息违反保密义务。公司同期只确认另有约 `500 万美元` production order 待履约。这个事件说明 POET 的订单、客户关系和披露纪律必须打折。
+3. **当前财务仍接近 pre-commercial**：2026Q1 收入只有 `50.34 万美元`，TTM 收入约 `141.15 万美元`；2026Q1 净亏损 `1234.41 万美元`，TTM 净亏损约 `8164.89 万美元`。按 2026-06-11 约 `10.68 美元/股` 和 5 月融资后约 `1.726 亿`基本股数估算，市值约 `18.4 亿美元`，TTM P/S 约 `1300x`。这不是传统 PE 投资，而是订单兑现和技术路线押注。
+4. **资产负债表短期很强**：2026-03-31 现金、现金等价物和短投约 `4.291 亿美元`；5 月再融资净额约 `3.997 亿美元`，粗略 pro forma 现金/短投可超过 `8 亿美元`（不含 4-5 月经营消耗），总负债 2026-03-31 仅 `1313 万美元`。融资后公司最大短期风险不再是 runway，而是把钱转成 qualified production revenue。
+5. **产业判断**：本地行业资料和 OFC/OCP/ECTC 资料一致指向，2026 年最确定的是 800G 继续放量、1.6T 进入 design-in/初量产，CPO/NPO/3.2T 是 2027-2028 更大的期权。POET 对 1.6T pluggable optical engine 的相关性比对 true CPO 的 2026 收入相关性更高；CPO/ELS 是中长期估值弹性，不宜在 2026 直接按大规模收入折现。
+
+## 1. 公司整体业务、投资人认知与产业链位置
+
+### 1.1 公司做什么
+
+POET Technologies 是一家光子集成方案公司，官方描述为面向 AI 和数据中心市场设计、开发 `Photonic Integrated Circuits`、light sources 和 optical modules。它的核心平台是 `POET Optical Interposer`：在标准半导体晶圆上集成电互连层、低损耗 waveguide、MUX/DMUX/filter、spot-size converter，并把 lasers、photodetectors、TIA、laser driver 等主动器件 flip-chip 到 interposer 上，目标是减少传统光模块中最贵、最慢、良率最不稳定的主动光学对准步骤。
+
+公司的实际产品可以分为四层：
+
+| 层级 | POET 产品/平台 | 真实作用 | 当前商业化状态 |
+|---|---|---|---|
+| 平台 | POET Optical Interposer / EOI | 晶圆级光电集成、被动对准、known-good optical engine die、BOM 和测试成本下降 | 平台已形成产品族，但大规模客户量产仍待验证 |
+| 光引擎 | POET Infinity、Teralight、Wavelight、400G/800G/1.6T Tx/Rx OE | 放在 OSFP/QSFP-DD/其他 transceiver 里的 Tx/Rx optical engine，不等于整机光模块 | 2025-2026 进入小额 production order、样品、联合开发和 qualification |
+| 光源/ELS | LightBar、Starlight、Blazar、Wavelight light source | 为 CPO/NPO、AI chip-to-chip、CPO switch 或 high-density optical engine 提供多通道 O/C-band/CWDM/FR4 光源 | 2026 重点演示和开发，Celestial 订单取消后收入确定性降低 |
+| 模块/联合方案 | 与 Lessengers、LITEON、Lumilens 等合作的 800G/1.6T、NPO/CPO 方案 | POET 提供引擎/平台，合作方做 module/system/customer route | 订单和收入高度取决于客户 qualification、module maker 和 hyperscaler deployment |
+
+技术卖点不是“POET 自己制造所有光模块”，而是“用 semiconductor-style wafer processing 把光模块中最难装、最贵、最慢的光电核心做成可量产组件”。官方技术页称 optical engine 通常代表 transceiver module 成本的 `50%+`，这也是 POET 的利润池假设基础。
+
+### 1.2 投资人心中的公司画像
+
+POET 在投资者心中不是成熟半导体公司，而是兼具三种标签：
+
+| 标签 | 支撑事实 | 投资含义 |
+|---|---|---|
+| AI 光互连弹性小盘 | 产品聚焦 800G、1.6T、CPO/NPO、ELS、AI cluster/hyperscale data center | 订单兑现时股价弹性极大 |
+| 早期商业化公司 | 2026Q1 收入 `50.34 万美元`，2025 全年收入 `107.49 万美元` | 估值难用 PE，必须看 backlog/PO/qualification |
+| 争议和 meme 风险资产 | 2026-04 Celestial/Marvell 取消订单；MarketWatch/Business Insider 报道 short-seller、PFIC、披露争议、社群热度 | 估值波动和治理折价显著，不能只按 AI 主题定价 |
+
+### 1.3 最近 3 年重大业务变动、转型和收购
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2023-04 | 推出 POET Starlight for AI，并披露 Celestial AI advanced purchase order | 让 POET 从传统 datacom optical engine 叙事进入 AI chip-to-chip / photonic fabric 叙事 |
+| 2024 | 与 Foxconn Interconnect、Luxshare/Mentech 等生态推进 800G/1.6T optical engines；继续围绕 200G/lane、1.6T 和 AI datacom 打样 | 从 100G/400G 逐步上移到 800G/1.6T；投资人开始把 POET 放进 AI 光互联链条 |
+| 2024-12/2025-01 | 收购 Sanan IC 持有的 Super Photonics Xiamen（SPX）剩余 `24.8%` 股权，交易对价 `650 万美元`、5 年无息支付；POET 获得 SPX 100% 控制权 | 从 JV 模式转为直接控制中国侧产能；同时需要 China+1 产能降低地缘风险 |
+| 2025-06 | 与 NationGate Solutions 在马来西亚签 manufacturing agreement；此前也与 Globetronics 建立生产能力；公司称 Globetronics 已发出 800G 样品 backlog，1.6T 样品 backlog 预计 Q3 2025 发货 | 建立 Penang/Malaysia assembly and test 路线，降低只靠中国 SPX 的供应链风险 |
+| 2025-10 | 获得 `500 万美元+` 800G optical engines production order，预计 2026H2 发货 | 首个可量化 production order，但金额仍小 |
+| 2026-04 | Marvell 取消 Celestial AI 全部 PO；公司确认另有约 `500 万美元` PO 仍在 | 订单可信度和客户保密关系成为核心风险 |
+| 2026-05 | Lumilens `5000 万美元` 初始 PO，5 年框架可达 `5 亿美元+`，samples late 2026、production ramp 2027；同时完成 `4 亿美元`融资 | 如果 qualification 成功，是 POET 从样品/NRE 转向规模收入的关键事件；但收入仍取决于开发、认证和制造扩张 |
+| 2026-05 | 宣布计划 redomicile 到美国，降低未来 PFIC 风险；任命 COO Sandeep Kumar | 治理和机构可投性修复动作，但需要实际完成 |
+
+### 1.4 产业链定位
+
+POET 位于 AI 网络/光互联链条的中游核心器件层：
+
+```text
+GPU / ASIC / switch ASIC / NIC
+  -> SerDes / DSP / TIA / Driver
+  -> Optical engine / PIC / light source / ELS  ← POET
+  -> OSFP/QSFP-DD/linear/CPO/NPO optical module
+  -> switch / NIC / rack / cluster network
+  -> hyperscaler / NeoCloud / AI factory
+```
+
+它不是 Broadcom/Marvell 这样的 ASIC/DSP 平台方，也不是 Innolight/Eoptolink/Fabrinet 那样的大规模模块或 EMS 交付方，更不是 NVIDIA/Arista 的系统平台方。POET 的理想位置是成为 module maker、CPO/NPO platform、AI optical interconnect start-up 或 hyperscaler 二供体系中的 optical engine / light-source building block。这个位置理论毛利高，但客户认证和替换成本也高，且大客户往往会要求多供应商和价格透明。
+
+### 1.5 最新股价、估值和利润率快照
+
+估值快照日期：2026-06-11。股价采用 Robinhood/公开行情页面 2026-06-11 盘中约 `10.68 美元`；股本采用 SEC 2026-05 招股书披露的 2026-05-15 `153,547,786` 股加上 5 月 `19,047,620` 股注册直投发行，估算基本股本约 `172,595,406` 股。公开金融网站口径会因是否纳入 5 月融资股数、现金和权证而不同。
+
+| 指标 | 2026-06-11 快照 | 计算/口径 |
+|---|---:|---|
+| 股价 | 约 `$10.68` | 2026-06-11 盘中公开行情；日内区间约 `$10.56-11.68` |
+| 基本市值 | 约 `$1.84B` | `$10.68 × 172.60M`；Yahoo/Morningstar 同期显示约 `$1.89B` |
+| 企业价值 EV | 粗略 `$1.0-1.1B` | 若纳入 2026-03-31 现金/短投 `$429.1M` + 5 月净融资 `$399.7M` - 总负债 `$13.1M`；公开网站可能滞后 |
+| PE | NM / 不适用 | TTM 净亏损约 `$81.65M`，盈利为负 |
+| Forward PE | NM / 不适用 | 无稳定正 EPS 指引；一致预期口径不可靠 |
+| TTM P/S | 约 `1300x` | TTM 收入 `$1.411M`；按市值 `$1.84B` 计算 |
+| 2026Q1 收入增速 | YoY `+202%`；QoQ `+47.5%` | `$503,389` vs 2025Q1 `$166,760`；vs 2025Q4 `$341,202` |
+| 2025 全年收入增速 | `+2495%` | 2025 `$1.075M` vs 2024 `$0.041M`，基数极低 |
+| 毛利率 | 官方未披露有意义 COGS；数据聚合口径可能显示 `100%` | 目前收入多为 NRE/小额产品，未能代表量产 optical engine 毛利 |
+| 净利率 | 2026Q1 `-2452%`；TTM 约 `-5785%` | 亏损远大于收入，仍是研发/扩产期 |
+| 现金/短投 | 2026-03-31 `$429.1M`；5 月融资后 pro forma 可超过 `$800M` | 不含 4-6 月经营消耗和后续投资 |
+| 总负债 | 2026-03-31 `$13.13M` | 含 convertible debt `$5.8M`、derivative warrant liability `$2.58M`、AP/accruals `$3.28M` |
+
+### 1.6 资产负债表健康度
+
+POET 的资产负债表短期很健康，但质量来自股权融资，不是经营现金流。
+
+| 项目 | 数字 | 判断 |
+|---|---:|---|
+| 2026-03-31 current assets | `$430.98M` | 主要是现金/短投；非常高 |
+| 2026-03-31 cash + short-term investments | `$429.14M` | 其中短投 `$412.60M` 为加拿大银行 GIC，3.4%-4.91% |
+| 2026-03-31 working capital | `$418.81M` | 足以覆盖当前 burn 多年 |
+| 2026Q1 operating cash outflow | `-$8.81M` | 现有资金覆盖能力强 |
+| 2026-05 融资净额 | 约 `$399.68M` | 进一步强化现金；同时股本和权证稀释显著 |
+| 2026-03-31 shareholders' equity | `$448.64M` | 5 月融资后 pro forma capitalization `$861.57M` |
+| 长债/融资压力 | convertible debt `$5.8M`，总负债 `$13.13M` | 债务压力低 |
+| 最大财务风险 | 收入太小、量产 capex 和 M&A 投资效率未知 | 钱足够，但商业模式尚未证明 |
+
+综合判断：**短期偿债和研发 runway 很强；商业健康度仍弱。** 市场给的是“未来订单和产能兑现”的估值，而不是当前收入/利润。若 Lumilens `5000 万美元` PO 不能按期转为 revenue、或客户资格认证失败，现金不会立即出问题，但估值会明显下修。
+
+## 2. 最近 5 个财报季度
+
+公司没有披露传统 backlog/bookings/lead time/cancel rate 表，也没有按产品线分收入。以下把官方财报数字、订单公告和产业交付节奏合并成投资口径。收入单位为美元。
+
+| 财报季度 | 收入 | QoQ / YoY | 净利润（亏损） | R&D/产品开发 | 订单、交期和取消率线索 | 业务收入和 AI 数据中心占比判断 |
+|---|---:|---:|---:|---:|---|---|
+| 2026Q1（截至 2026-03-31；披露 2026-05-14） | `503,389` | QoQ `+47.5%`；YoY `+202%` | `-12,344,086` | IFRS R&D `5,840,334`；公司非 IFRS摘要 R&D 成本 `4,499,556` | 期后 Lumilens `5000 万美元` PO；Lessengers 1.6T 2xDR4 JDA；LITEON AI module JDA；2026-04 Celestial/Marvell 全部 PO 取消；另有约 `500 万美元` PO 待履约 | 收入仍主要是 NRE/小额 product；AI/hyperscale 相关商业活动几乎占全部叙事，但真实收入不到百万美元 |
+| 2025Q4（截至 2025-12-31；披露 2026-04-01） | `341,202` | QoQ `+14.3%`；YoY `+1075%` vs 2024Q4 `29,032` | `-42,671,682` | R&D `4,621,450`（摘要口径） | 2025-10 `500 万美元+` 800G Infinity production order，预计 2026H2 发货；2025-10/2026-01 多轮融资强化现金 | 主要仍是 NRE/少量产品；订单收入尚未确认 |
+| 2025Q3（截至 2025-09-30；披露 2025-11-14） | `298,434` | QoQ `+11.2%`；YoY `+7998%` vs 2024Q3 `3,685` | `-9,369,714` | R&D `3,735,703`（摘要口径） | ECOC 2025、Semtech/Sivers/Light source 等生态合作；Q4 才披露 `500 万美元` PO | NRE 扩大，但量产收入仍很小 |
+| 2025Q2（截至 2025-06-30；披露 2025-08-12） | `268,469` | QoQ `+61.0%` | `-17,263,375` | R&D `3,150,044`（摘要口径） | Globetronics 设备安装并运行；NationGate Malaysia engagement；公司称 800G 样品 backlog 已发给客户、1.6T 样品 backlog 预计 Q3 2025 发货 | 样品和 NRE 阶段；AI 光互连相关，但未形成产品收入规模 |
+| 2025Q1（截至 2025-03-31；披露 2025-05-14） | `166,760` | YoY `+?`，低基数 | `+6,341,558` | R&D `4,360,192`（摘要口径） | OFC 2025 展示 Teralight 1.6T、Blazar light source；Lessengers 800G DR8 partnership | 净利润为 derivative warrant liability fair-value gain 驱动，不代表经营盈利 |
+
+关键读法：
+
+- 2026Q1 收入增长看起来很快，但绝对额仍只有 `50 万美元`，不能机械外推。
+- `2025Q1` 净利润为正，是 `1540 万美元` derivative warrant liability 非现金收益带来的会计结果；经营仍亏损。
+- 订单方面，正式可量化且仍公开有效的是 `500 万美元+` 800G production order 和 `5000 万美元` Lumilens 初始 PO；Celestial/Marvell PO 已取消。
+- 交期方面，`500 万美元` Infinity 订单预计 2026H2 发货；Lumilens 工程样品预计 2026 年末，生产 ramp 与 2027 hyperscaler deployment 对齐。
+
+## 3. 2026 最新指引、业务收入占比和重点产品
+
+### 3.1 2026 指引：没有传统收入 guidance
+
+POET 没有给出正式 2026 revenue guidance。管理层给的是资金使用、产品里程碑和产能扩张：
+
+| 指引/里程碑 | 官方口径 | 投资含义 |
+|---|---|---|
+| 2026-2027 modules/high-speed optical engines 开发 | MD&A 称计划 2026-2027 支出约 `$26M` | 研发投入集中在 800G/1.6T optical engines 和 modules |
+| 2026 capital budget | 约 `$14.5M`，用于 R&D、设备、制造设备、专利；2026Q1 已花 `$2.43M` capex | 量产准备仍处 early ramp |
+| 产能扩张 | 5 月融资后称 wafer production 和 optical engine assembly 产能约 `10x` 扩张；Malaysia assembly space `20,000 sqft` | 若订单兑现，2027 revenue capacity 才是关键 |
+| Lumilens | 初始 PO `$50M`；5 年框架 `$500M+`；samples late 2026，production ramp 2027 | 当前最大商业化锚点，但前提是开发、认证、扩产成功 |
+| 800G production order | `>$5M` Infinity optical engines，预计 2026H2 发货 | 2026 最确定的产品收入线索 |
+| redomicile | 计划迁至美国以消除未来 PFIC 可能性 | 修复美国投资者税务/治理折价 |
+
+### 3.2 业务收入占比
+
+截至 2026Q1，公司收入未按产品披露。基于财报描述，收入是 `NRE and product revenue`，主要来自围绕 Optical Interposer 的客户项目和小额产品。可用投资口径如下：
+
+| 业务口径 | 2026Q1 收入占比估计 | 增长 | 说明 |
+|---|---:|---|---|
+| NRE / customer project revenue | `70-90%+` | 高增长但低基数 | 客户项目 milestone，尚不能代表量产 |
+| Product revenue（optical engines / light source 少量产品） | `10-30%` 或更低 | 从接近 0 起步 | 公司只说有 small product revenue，未披露具体数 |
+| AI 数据中心相关收入 | `80-100%` 叙事相关；财务绝对额 `<0.6M/quarter` | 很高但未规模化 | 所有重点产品都围绕 AI/hyperscale，但收入仍小 |
+| 非 AI / legacy / sensing / telecom | 当前可忽略 | 低优先级 | 官网仍提 IoT、LIDAR、telecom，但正式投资价值主要来自 AI optical interconnect |
+
+### 3.3 需要跳过或降权的业务
+
+| 降权业务/产品 | 原因 |
+|---|---|
+| 100G CWDM4 / POET ONE legacy | AI 数据中心 2026-2027 主线已经转向 800G/1.6T，100G 不构成高增长核心 |
+| 400G standalone FR4 Rx | 可作为 800G/1.6T 组件基础，但单独 400G 不再是 AI 后端主增量 |
+| IoT、LIDAR、consumer sensing、传统 telecom 泛应用 | 官网提及应用广，但公司资金、订单和投资人定价集中在 AI/hyperscale |
+| 泛 CPO 大叙事中没有客户名/规格/出货窗口的部分 | 本地 OFC/ECTC/OCP 资料显示 2026 CPO 仍以 qualification/pilot 为主，不应直接折现为大收入 |
+
+### 3.4 重点产品和小产品不要漏
+
+| 产品/业务 | 对应型号/方案 | 当前阶段 | 投资重要性 |
+|---|---|---|---|
+| POET Infinity optical engines | 400G Tx chiplet；可配置为 800G、1.6T 和 beyond；订单含 2xFR4、2xDR4 400G transmit engines、800G 2xFR4 和 DR8 receive engines | `>$5M` production order，预计 2026H2 发货 | 2026 最接近收入兑现 |
+| Teralight 1.6T optical engines | 1.6T 2xFR4 / DR8 Tx and Rx；EML-based InP-on-Si；Tx/Rx 两芯片 enabling 1.6T pluggable | OFC/CIOE 展示、客户导入 | 2027 最大规模化弹性 |
+| LightBar / Starlight / Blazar light sources | O-band/C-band、CWDM4/FR4、4/8/16 channel、ELS/CPO 应用 | Celestial 取消后需新客户验证；仍是 CPO/NPO 核心期权 | 中长期高毛利但确定性低 |
+| Lumilens EOI platform | Electrical-Optical Interposer，alignment-free wafer-level optical engine；覆盖 800G/1.6T pluggable 到 NPO/CPO | `$50M` 初始 PO，late 2026 samples，2027 production ramp | 当前最重要商业事件 |
+| Wavelight 800G module reference | 8 lanes electrical input/output，106.25Gbps/channel，2km reach，integrated TIA/PD/DMUX | 参考设计/产品页 | 帮客户缩短 module design，但不一定是最大收入池 |
+| 1.6T 2xDR4 with Lessengers | 下一代 AI cluster/hyperscale network 1.6T transceiver | JDA | 有潜在客户验证价值，尚非 PO |
+| LITEON AI optical modules JDA | 光模块联合开发 | JDA | 台湾 ODM/EMS/模块生态入口，需订单化 |
+| Quantum Computing Inc. 3.2Tbps optical engines | CPO / next-gen AI connectivity | 2025-11 合作公告 | 3.2T/未来 CPO 期权，2026 收入折现低 |
+
+## 4. 高增长/关键产品当前贡献与战略评分
+
+评分：5 = 最强；1 = 最弱。当前收入贡献为 2026Q1/已公告订单的投资口径估计，不是公司正式分部披露。
+
+| 产品/业务 | 当前收入贡献 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Infinity 800G optical engines | 已公告 `>$5M` PO；2026Q1 已确认收入中可能有小额 product/NRE | 从接近 0 起步 | 4 | 5 | 4 | 2.5 | 2026 最可验证产品；但客户未公开，交付仍在 H2 |
+| Teralight 1.6T optical engines | 当前几乎 0 到小额 NRE；未披露大额 PO | 样品到量产前夜 | 5 | 5 | 5 | 3 | 产业主线最强，若 design-in 成功弹性最大 |
+| LightBar/Starlight/ELS | Celestial 取消后有效收入贡献接近 0；有技术展示 | 高但未验证 | 4.5 | 4 | 4.5 | 3 | 外置激光和 CPO/NPO 长期价值高，短期客户确定性低 |
+| Lumilens EOI platform | `$50M` 初始 PO，但收入确认取决于 development/qualification/scale | 潜在最高 | 5 | 4 | 5 | 3.5 | 若 samples late 2026 顺利，是公司从 NRE 转量产的关键 |
+| Optical Interposer platform/IP | 嵌入上述产品；不单独披露收入 | 随产品放量 | 5 | 4 | 4 | 3 | 技术根基；没有大客户认证前不能算垄断 |
+| Wavelight / 800G reference module | 参考设计价值，收入不明 | 中 | 3.5 | 4 | 3.5 | 2 | 帮助客户模块化，单独战略价值低于 Infinity/Teralight |
+
+## 5. 一年后收入贡献三情景
+
+预测窗口：2026-06-11 至 2027-06-30 附近。口径为未来 12 个月 revenue recognized，不是订单签署额。由于 POET 当前收入基数极低，增长率百分比容易失真，以下同时给美元。
+
+### 5.1 单产品收入预测
+
+| 产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 | 关键触发条件 |
+|---|---:|---:|---:|---|
+| Infinity 800G optical engines | `$4-10M`；主要来自 `>$5M` PO 和少量 follow-on | `$15-35M` | `$40-80M` | H2 2026 按期交付、客户二次订单、module maker 量产 |
+| Teralight 1.6T optical engines | `$2-8M`；样品/NRE/小批量 | `$20-60M` | `$80-150M` | 1.6T 客户 qualification 成功，2027 初开始批量 |
+| LightBar/Starlight/ELS | `$1-5M` | `$10-30M` | `$50-100M` | CPO/NPO/ELS 客户重新形成订单，非 Celestial 客户导入 |
+| Lumilens EOI | `$0-15M`；以工程样品/里程碑为主 | `$35-75M` | `$100-175M` | late-2026 samples 成功，2027 hyperscaler deployment 前拉货 |
+| Optical Interposer license/platform/NRE | `$1-5M` | `$5-15M` | `$20-40M` | 更多客户以 NRE/联合开发方式导入 |
+| 其他/legacy | `$0-2M` | `$2-5M` | `$5-10M` | 非核心，不作为估值主轴 |
+
+### 5.2 公司整体收入增速预测
+
+| 情景 | 未来 12 个月收入 | 对当前 TTM `$1.41M` 增长 | 订单/供给假设 | 取消率/折扣 |
+|---|---:|---:|---|---|
+| 基准 | `$10-25M` | `+600%` 到 `+1670%` | `>$5M` 800G 订单交付；Lumilens 先样品/小里程碑；1.6T JDA 不大规模收入化 | 对 Lumilens `$50M` PO 只确认小部分；假设无第二个大客户 |
+| 乐观 | `$75-150M` | `+5200%` 到 `+10500%` | Lumilens 初始 PO 大部分转收入；1.6T/ELS 至少 1-2 个客户小批量；Malaysia 产能顺利 | 订单取消率低，qualification 基本通过 |
+| 极度乐观 | `$200-350M` | `+14000%` 到 `+24700%` | Lumilens 以外又有 hyperscaler/module ecosystem 拉货；10x capacity 提前形成有效产能；CPO/NPO/1.6T 同步放量 | 需要几乎所有关键风险都不发生，不应作为基准 |
+
+## 6. BOM、每 MW / rack / GPU / optical port 内容量与价格传导
+
+### 6.1 POET 产品在 BOM 中的真实位置
+
+POET 能拿到的是 optical engine / light source / interposer 的价值，不是整个 AI rack、GPU、switch 或完整 optical transceiver 的全部价值。
+
+| 系统层级 | 总 BOM 项 | POET 可触达内容 | 价值捕获方式 |
+|---|---|---|---|
+| Optical port | OSFP/QSFP-DD 800G/1.6T module、CPO/NPO engine | Tx/Rx optical engine、light source、MUX/DMUX、PD、TIA/driver、interposer | 向 module maker / system integrator 销售 engine；或 JDA/NRE |
+| Switch/NIC | Switch ASIC、SerDes/DSP、PCB、module cage、optics | 如果端口使用 POET-based module，引擎占 module BOM 一部分 | 不是 switch ASIC 收入 |
+| Rack | GPU/ASIC、NVLink/UALink/Ethernet、switch、cables、power/cooling | 只覆盖光端口中的 engine/light source | 取决于每 rack optical port 数和 POET design-in 份额 |
+| MW | 多 rack 集群、facility、network fabric | 集群 optical port 总量乘以 POET content per port | POET share 很小但弹性大 |
+
+### 6.2 每 optical port 内容量
+
+本地行业资料给出 2026 年 1.6T pluggable 早期 ASP 约 `$1,400-2,200/只`；POET 技术页称 optical engine 通常代表 transceiver module 成本 `50%+`。但 POET 是否拿到 50% 取决于它卖的是完整 Tx/Rx engine、light source 还是只卖部分 chiplet。
+
+| 端口/模块 | 2026-2027 module ASP 粗口径 | POET 可触达内容 | POET 单端口收入估计（若中标） |
+|---|---:|---|---:|
+| 800G DR8 / 2xFR4 | `$600-1,100` | Infinity 400G Tx/Rx、800G Rx OE、TIA/PD/DMUX、EML/MUX | `$80-300/port` |
+| 1.6T 2xFR4 / DR8 | `$1,400-2,200` | Teralight Tx+Rx 两芯片、EML-based InP-on-Si、drivers/TIA、MUX/DMUX | `$250-800/port` |
+| CPO/NPO light source / ELS | 依系统，不等同 pluggable | LightBar/Starlight 4/8/16ch O/C-band source | `$50-300` 每组 light-source engine；高端 CPO 可更高 |
+| EOI / Lumilens platform | 框架 PO，规格未披露 | alignment-free wafer-level optical engine | 以 `$50M` PO / 未来出货量反推，单价需等待披露 |
+
+### 6.3 每 GPU、rack、MW 的粗含量
+
+以下不是 POET 已拿到的收入，只是 AI 集群采用 POET-based optical engine 时的 addressable content。假设来自本地行业资料：2026-2027 高密 rack 约 `60-160kW/rack`，新增 AI IT load 以 `6-14GW` 级进入订单；800G/1.6T 是 2026-2027 主线，CPO/NPO 为 2027 后局部导入。
+
+| 单位 | 基准含量假设 | 乐观含量假设 | 极度乐观含量假设 |
+|---|---:|---:|---:|
+| 每 GPU / accelerator equivalent | `1-2` 个 800G-equivalent optical port；POET content `$100-300` | `2-4` 个 port；POET content `$300-900` | `4-6+` 个 port；POET content `$800-1,800` |
+| 每高密 rack | `50-150` 个 800G-equivalent port；POET content `$5k-45k` | `150-400` 个 port；POET content `$45k-180k` | `400-800+` 个 port；POET content `$200k-600k+` |
+| 每 MW IT load | `1,000-2,000` 个 800G-equivalent port；POET content `$0.10-0.40M/MW` | `2,000-4,000` 个 port；POET content `$0.40-1.20M/MW` | `4,000-6,000+` 个 port；POET content `$1.2-3.0M/MW` |
+
+价格传导链：
+
+```text
+Hyperscaler / NeoCloud CapEx
+  -> AI switch / NIC / module procurement
+  -> 800G/1.6T module ASP and volume
+  -> optical engine / EML / TIA / light-source BOM
+  -> POET revenue if customer design-in and qualification pass
+```
+
+最关键的传导不是“AI CapEx 增长多少”，而是：
+
+1. POET 是否进入客户 reference design；
+2. module maker 是否用 POET engine 而不是 Broadcom/Marvell/Coherent/Lumentum/OpenLight/自有 SiPh 方案；
+3. 1.6T/CPO/NPO 端口是否在 2027 真实放量；
+4. POET 的 Malaysia / Singapore / China 产能是否按良率和测试 throughput 达到量产。
+
+### 6.4 当前产能能力和认证阶段
+
+| 产品/业务 | 当前产能能力（美元计，估算） | 被供应链采纳程度 | 认证/资格阶段 |
+|---|---:|---|---|
+| Infinity 800G | `>$5M` PO 已可支持；年化有效产能估计 `$10-30M`，待验证 | 1 个未公开 systems integrator production order；样品已出 | 2026H2 交付是关键认证点 |
+| Teralight 1.6T | 样品/小批量；年化估计 `<$10M` 到 `$20M` | Lessengers JDA、OFC/CIOE 展示、Mitsubishi EML 合作线索 | customer qual / module qual 阶段 |
+| LightBar/Starlight/ELS | 样品/工程；商业产能不透明 | Celestial 取消后需要新客户订单；Sivers/Semtech/ELS 生态线索 | CPO/NPO/ELS 仍在演示和资格认证 |
+| Lumilens EOI | 初始 `$50M` PO 对应的产能需扩建；当前还不是量产 | Lumilens supply agreement；warrant 与累计付款绑定 | engineering samples late 2026；production ramp 2027 |
+| 全公司制造 | 5 月融资后称将 wafer production 和 OE assembly 扩大约 `10x`；Malaysia `20,000 sqft` assembly space | Globetronics、NationGate、SPX、Singapore lab | 从样品线向 HVM 过渡 |
+
+## 7. 一年后产能能力、供应链采纳和认证阶段预测
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| Infinity 800G | 年化产能 `$20-50M`；完成 `>$5M` 订单并获得 follow-on；客户仍未完全公开 | 年化产能 `$75-150M`；2-3 个 module/customer ecosystem 采用 | 年化产能 `$200M+`；成为某客户 800G/1.6T 平台标准 engine |
+| Teralight 1.6T | 2027H1 完成样品认证，年化产能 `$20-60M` | 2027H1 小批量生产，年化产能 `$100-250M` | 1.6T 成新增 AI cluster 默认端口，POET 年化能力 `$300M+` |
+| LightBar/Starlight/ELS | 1-2 个非 Celestial 客户重新进入 qual，年化 `<$25M` | CPO/NPO/ELS 客户样品转小批量，年化 `$50-150M` | 外部光源被高端 CPO/NPO 平台绑定，年化 `$200M+` |
+| Lumilens EOI | late-2026 samples 后 2027H1 开始有限生产；年化 `$50-100M` | 初始 `$50M` PO 大部分转收入，5 年框架进入 rolling orders；年化 `$150-300M` | 2027 直接成为高端 NPO/CPO/pluggable 平台，年化 `$500M` 框架提前可见 |
+| 全公司 | 10x expansion 部分落地，实际可交付 revenue capacity `$75-150M` | Singapore/Malaysia/China 产线良率爬坡，capacity `$250-500M` | 融资支持并购/自建，capacity `$500M-1B`，但需要客户拉货匹配 |
+
+## 8. 基于订单积压和供给预测未来一年业务增速
+
+### 8.1 真实订单和 backlog 质量
+
+| 订单/客户线索 | 金额 | 交付窗口 | 质量评分 | 风险 |
+|---|---:|---|---:|---|
+| Lumilens EOI initial PO | `$50M` | samples late 2026；production ramp aligned to 2027 | 中高 | 收入取决于 successful development、module qualification、manufacturing scale；PO 绑定 warrant，需看付款和交付 |
+| Lumilens 5 年框架 | `$500M+` potential cumulative purchases | 2027-2031 | 中 | 不是 firm backlog；更像商业框架和长期目标 |
+| 800G Infinity production order | `>$5M` | 2026H2 | 中高 | 客户未公开，量产交付/验收仍需验证 |
+| Celestial AI / Marvell | 全部 PO 取消 | 2026-04 取消 | 负面 | 显示 purchase order 可因非技术/保密原因取消，客户关系风险高 |
+| Lessengers / LITEON / Sivers / Semtech / QCi 等合作 | 未披露订单金额 | 2026-2027 样品/开发 | 中低到中 | JDA 不等于 revenue；需 PO 和 qual |
+
+### 8.2 未来一年业务增速预测
+
+| 情景 | 订单假设 | 供给/产能假设 | 未来一年收入 | 增速 | 取消率/延期假设 |
+|---|---|---|---:|---:|---|
+| 基准 | `>$5M` 订单按期；Lumilens 只贡献样品/里程碑；JDA 少量 NRE | Malaysia/China/Singapore 只完成初步 ramp | `$10-25M` | `7-18x` TTM | `30-50%` 订单/里程碑延后或未确认收入 |
+| 乐观 | Lumilens `$50M` 订单大部分收入化；1.6T/ELS 有 follow-on | 10x 扩产在 2027H1 形成有效产出 | `$75-150M` | `53-106x` TTM | `<20%` 延期；无类似 Celestial 取消 |
+| 极度乐观 | Lumilens 框架进入 rolling orders；至少一个 hyperscaler/module ecosystem 大单 | 扩产+并购+供应链伙伴快速补齐产能 | `$200-350M` | `142-248x` TTM | `<10%` 取消，且客户愿意提前拉货 |
+
+最现实的分歧点不是 TAM，而是订单质量。AI 光互连需求强，但 POET 必须证明：
+
+- 订单不是只停留在 PR 或 framework；
+- 客户 qualification 能在 2026H2-2027H1 转成 production revenue；
+- 产能扩张的良率、测试 throughput 和供应链管理足够；
+- 不再发生 Celestial/Marvell 类披露和保密冲突；
+- 在被大厂和客户二供体系压价后仍有毛利。
+
+## 9. 竞争格局、主流性、替代方案和客户替换成本
+
+### 9.1 主要竞争对手
+
+| 赛道 | 竞争对手 | 与 POET 的关系 |
+|---|---|---|
+| 1.6T / 3.2T optical module and engine | Coherent、Lumentum、Innolight、中际旭创、Eoptolink、新易盛、OpenLight、Cisco/Acacia、Ciena | 有规模/客户/激光器/模块优势；POET 靠 integration/BOM/被动对准差异化 |
+| DSP / SerDes / TIA / driver | Broadcom、Marvell、Credo、MaxLinear、MACOM、Semtech | 许多模块设计由这些芯片平台定义，POET 需要兼容或被平台接受 |
+| CPO/NPO/CPX optical engine | NVIDIA、Broadcom Tomahawk/Davisson、Marvell/Celestial、Coherent、Ayar、Lightmatter、Ranovus、DustPhotonics、Intel、TSMC COUPE、GF Fotonix/Corning | 未来平台级竞争强，POET 不是唯一 optical I/O 路线 |
+| ELS / high-power laser | Lumentum、Coherent、Broadcom、Sivers、Ayar SuperNova、Sumitomo、Mitsubishi、Furukawa | 供给紧缺带来机会，但头部 laser 厂规模和客户绑定强 |
+| 模块制造和 EMS | Fabrinet、LITEON、Foxconn Interconnect、Luxshare、Mentech、Celestica、Accton/Wiwynn 等 | 可成为客户/合作方，也可自研或选择其他 engine |
+
+### 9.2 POET 技术是否会成为主流
+
+分层判断：
+
+| 技术路线 | 2026-2027 主流概率 | POET 相关性 | 判断 |
+|---|---:|---:|---|
+| 800G pluggable | 高 | 高 | 当前最确定收入池，但竞争激烈、ASP 未来下行 |
+| 1.6T pluggable / TRO / LRO | 高 | 高 | 本地行业资料认为 2026H2-2027 是 1.6T design-in 决胜期；POET Teralight/Infinity 若中标弹性大 |
+| EML/CW laser / light source | 高 | 中高 | 激光和 ELS 是瓶颈；POET 有方案，但 Coherent/Lumentum 等更强 |
+| CPO/NPO/CPX | 中，2026 仍早 | 中高 | 2026 多为 pilot/qualification；2027-2028 才可能显著收入化 |
+| Optical I/O chiplet / photonic fabric | 中低到中，远期高 | 中 | Marvell/Celestial、Ayar、Lightmatter 竞争强；POET 可做 light-source/engine，而非平台唯一赢家 |
+| 3.2T / 400G-per-lane | 2026 低，2027 qual | 中 | 现在更像样品、PIC、测试和 design-in 价值 |
+
+因此，POET 的技术方向符合行业“semiconductorization of photonics”和“光模块组装价值上移到 PIC/laser/engine/test”的趋势，但不能推导为 POET 必然成为主流供应商。主流技术和主流供应商是两件事。
+
+### 9.3 替代方案和风险
+
+| 风险/替代 | 对 POET 的影响 |
+|---|---|
+| 大客户继续偏好成熟 1.6T pluggable 和传统主动对准/成熟 SiPh 方案 | POET 的 CPO/EOI 溢价推迟，短期只能靠 800G/1.6T engine 小份额 |
+| Broadcom/Marvell/Coherent/Lumentum 平台绑定 | POET 被排除在 reference design 外，或只能拿低价二供 |
+| CPO field service 和可靠性不过关 | Starlight/ELS、EOI/NPO 的收入延后到 2028+ |
+| 客户 qualification 周期拉长 | 订单签署到 revenue 可能跨多个季度 |
+| Celestial/Marvell 类取消 | 对公司治理、保密和客户信任形成折价 |
+| 股本和权证稀释 | 5 月融资新增 `19.05M` 股和同等数量权证；Lumilens warrant 最高 `22.92M` 股，未来行权/摊薄需跟踪 |
+| 毛利率未知 | 当前无量产 COGS，数据聚合的 `100%` gross margin 对投资判断意义有限 |
+
+### 9.4 客户替换成本
+
+POET 一旦进入客户模块设计，替换成本不低，因为 optical engine 会影响：
+
+- 光学耦合、封装尺寸、热设计；
+- MUX/DMUX、filter、PD/TIA/driver 匹配；
+- BER/FEC、DSP/SerDes 互通；
+- module qualification、hyperscaler AVL、可靠性测试；
+- 生产夹具、测试脚本、良率模型和供应链排产。
+
+但在没有完成量产 qualification 前，客户替换成本反而较低：客户可以继续使用 Coherent/Lumentum/OpenLight/自有 SiPh/传统光器件方案。也就是说，POET 的护城河只有在 `design-in + qualification + production yield + customer deployment` 四项同时成立后才会从技术卖点变成商业锁定。
+
+## 10. 跟踪清单
+
+| 时间窗口 | 必须跟踪的证据 | 解释 |
+|---|---|---|
+| 2026Q2/Q3 财报 | revenue 是否从 `$0.5M/quarter` 跳到数百万美元；cash burn；capex；contract liability | 判断 `>$5M` PO 和 NRE 是否开始收入化 |
+| 2026H2 | `>$5M` Infinity 订单是否按期发货、客户是否验收、是否有 repeat order | 最直接的 800G 产品验证 |
+| 2026H2 | Lumilens engineering samples 是否按 late 2026 完成 | `$50M` PO 的首个验证点 |
+| 2026H2-2027H1 | 10x capacity expansion 的实际设备、良率、产线和客户 audit | 证明融资不是只停留在现金 |
+| 2027H1 | 1.6T Teralight 是否进入 production PO，不只是 demo/JDA | POET 估值从 800G 期权上移到 1.6T 主线 |
+| 每次公告 | 是否披露客户名、金额、交付窗口、取消条款、qualification 条件 | 防止重复出现 PO 信息不透明和客户关系争议 |
+| 行业侧 | 1.6T 出货、CPO/NPO 标准、NVIDIA/Broadcom/Marvell/Coherent/Lumentum 路线 | 判断 POET 所处路线是否被平台方采用 |
+
+## 11. 估值框架
+
+POET 不适合用当期 PE。更合理的是三段式：
+
+| 阶段 | 估值锚 | 当前位置 |
+|---|---|---|
+| Pre-commercial | 现金 + 专利/技术 + 已披露订单折现 | 当前仍主要在这一段 |
+| First production ramp | 有效 backlog、年化 revenue、gross margin、customer concentration | 需 2026H2-2027H1 验证 |
+| Platform supplier | 多客户 design-in、稳定 gross margin、产能利用率、长期 supply agreement | 需要 Lumilens 以外客户和 1.6T/CPO 量产 |
+
+按 2026-06-11 市值约 `$1.84B`，如果未来 12 个月只实现基准 `$10-25M` 收入，forward P/S 仍约 `74-184x`，偏贵；如果乐观 `$75-150M` 实现，forward P/S 降到 `12-25x`，开始接近高增长 photonics 期权；如果极度乐观 `$200-350M` 实现，forward P/S 为 `5-9x`，股价才有较强基本面支撑。核心是收入兑现速度，而不是 TAM 叙事。
+
+## 12. 资料来源
+
+### 公司和 SEC/EDGAR
+
+- POET 2026Q1 financial results, 2026-05-14: https://www.poet-technologies.com/news/poet-technologies-reports-first-quarter-2026-financial-results
+- POET 2026Q1 Form 6-K / financial statements: https://www.sec.gov/Archives/edgar/data/1437424/000149315226023471/form6-k.htm
+- POET 2026Q1 condensed interim consolidated financial statements: https://www.sec.gov/Archives/edgar/data/1437424/000149315226023471/ex99-1.htm
+- POET 2026Q1 MD&A: https://www.sec.gov/Archives/edgar/data/1437424/000149315226023471/ex99-2.htm
+- POET 2025 Form 20-F: https://www.sec.gov/Archives/edgar/data/1437424/000149315226014253/form20-f.htm
+- POET 2026-05 registered direct offering prospectus supplement: https://www.sec.gov/Archives/edgar/data/1437424/000149315226024090/form424b5.htm
+- POET `$400M` investment closing, 2026-05-18: https://www.poet-technologies.com/news/poet-technologies-announces-closing-of-us400-million-investment
+- POET / Lumilens supply agreement, 2026-05-15: https://www.poet-technologies.com/news/poet-technologies-and-lumilens-advance-wafer-level-photonic-integration-for-next-generation-ai-optical-networks
+- POET purchase order update / Celestial-Marvell cancellation, 2026-04-27: https://www.poet-technologies.com/news/poet-technologies-provides-purchase-order-update
+- POET `$5M` 800G Infinity production order, 2025-10-22: https://www.poet-technologies.com/news/poet-technologies-receives-5-million-production-order-for-800g-optical-engines
+- POET Optical Interposer technology page: https://www.poet-technologies.com/technology
+- POET Teralight product page: https://www.poet-technologies.com/products/poet-teralight
+- POET Infinity product page: https://www.poet-technologies.com/products/poet-infinity
+- POET LightBar product page: https://www.poet-technologies.com/products/lightbar
+- POET Starlight product page: https://www.poet-technologies.com/products/starlight
+- POET Wavelight product page: https://www.poet-technologies.com/products/wavelight
+
+### 行业和本地资料
+
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_Optical Interposer与新型光引擎_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_封装内光IO与Optical_Chiplet_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_激光器、EML与光器件_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_硅光材料、光子材料与电光聚合物_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+- `行业调研/产业背景/顶级会议信息/ofc_2026_conference_update.md`
+- `行业调研/产业背景/顶级会议信息/conference_update_ectc_2026_2026-06-11.md`
+- `行业调研/产业背景/顶级会议信息/OCP_EMEA_Summit_2026_高密度调研报告.md`
+
+### 市场数据、争议和论坛线索
+
+- Yahoo Finance POET statistics/quote（2026-06-10/11 快照）
+- Robinhood POET quote（2026-06-11 intraday price / daily range）
+- Morningstar POET quote（market cap / price-sales snapshot）
+- Investing.com POET financial ratios（P/S、net margin、operating margin 聚合口径）
+- MarketWatch, “POET Technologies' stock craters nearly 50%...”, 2026-04-27
+- MarketWatch, “POET Technologies' stock is rocketing...”, 2026-04-22
+- Business Insider, “POET Technologies is the market's newest meme stock...”, 2026-04
+- Reddit `r/POETTechnologiesInc`：用于识别 retail/forum 情绪、订单推断和争议讨论；不作为核心财务事实来源
+

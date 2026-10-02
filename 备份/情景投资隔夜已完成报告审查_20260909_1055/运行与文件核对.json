@@ -1,0 +1,97 @@
+{
+  "cutoff": "2026-09-09T10:50:23.780659-07:00",
+  "count": 85,
+  "cohorts": {
+    "19点十家公司": 10,
+    "22:52批次": 75
+  },
+  "batchTotal": 183,
+  "batchStatus": {
+    "running": 1,
+    "retry_pending": 7,
+    "pending": 100,
+    "done": 75
+  },
+  "nonPendingUnfinished": [
+    {
+      "subject": "CC",
+      "status": "running",
+      "startedAt": "2026-09-09 09:23:19",
+      "finishedAt": "",
+      "note": "codex_sdk_claimed"
+    },
+    {
+      "subject": "DKILY",
+      "status": "retry_pending",
+      "startedAt": "2026-09-09 09:31:05",
+      "finishedAt": "2026-09-09 10:11:29",
+      "note": "codex_quota_exit: retry on next launch; reported_reset_with_buffer: 2026-09-14T16:54:28.000Z"
+    },
+    {
+      "subject": "AEP",
+      "status": "retry_pending",
+      "startedAt": "2026-09-09 09:34:43",
+      "finishedAt": "2026-09-09 10:12:18",
+      "note": "codex_quota_exit: retry on next launch; reported_reset_with_buffer: 2026-09-14T16:54:28.000Z"
+    },
+    {
+      "subject": "DTE",
+      "status": "retry_pending",
+      "startedAt": "2026-09-09 09:51:24",
+      "finishedAt": "2026-09-09 10:13:14",
+      "note": "codex_quota_exit: retry on next launch; reported_reset_with_buffer: 2026-09-14T16:54:28.000Z"
+    },
+    {
+      "subject": "ETR",
+      "status": "retry_pending",
+      "startedAt": "2026-09-09 10:10:59",
+      "finishedAt": "2026-09-09 10:11:16",
+      "note": "codex_quota_exit: retry on next launch; reported_reset_with_buffer: 2026-09-14T16:54:28.000Z"
+    },
+    {
+      "subject": "GEV",
+      "status": "retry_pending",
+      "startedAt": "2026-09-09 10:04:05",
+      "finishedAt": "2026-09-09 10:11:21",
+      "note": "codex_quota_exit: retry on next launch; reported_reset_with_buffer: 2026-09-14T16:54:28.000Z"
+    },
+    {
+      "subject": "GNRC",
+      "status": "retry_pending",
+      "startedAt": "2026-09-09 10:09:03",
+      "finishedAt": "2026-09-09 10:11:04",
+      "note": "codex_quota_exit: retry on next launch; reported_reset_with_buffer: 2026-09-14T16:54:28.000Z"
+    },
+    {
+      "subject": "OKLO",
+      "status": "retry_pending",
+      "startedAt": "2026-09-09 10:11:01",
+      "finishedAt": "2026-09-09 10:11:02",
+      "note": "codex_quota_exit: retry on next launch; reported_reset_with_buffer: 2026-09-14T16:54:28.000Z"
+    }
+  ],
+  "planSha256": "E3A89EE326581733723AB73014FFE785A28C5D16119CB15EA34B2FF029859A51",
+  "modelEffort": {
+    "('gpt-6-astra', 'high')": 85
+  },
+  "planMatches": {
+    "True": 85
+  },
+  "bytes": {
+    "min": 80931,
+    "median": 106321,
+    "max": 131753,
+    "total": 9018313
+  },
+  "minutes": {
+    "min": 23.3,
+    "median": 32.03,
+    "max": 88.3,
+    "total": 2872.77
+  },
+  "matrixCounts": {
+    "1": 85
+  },
+  "nonempty": 85,
+  "replacementCharacterFiles": []
+}

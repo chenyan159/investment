@@ -1,0 +1,395 @@
+# 公司：MYRG MYR Group 公司调研（2026-06-11）
+
+## 0. 结论摘要
+
+MYR Group 是北美专业电气承包商，不是 AI 芯片、服务器、电力设备或冷却硬件制造商。它在 AI 基建链条里的位置是“把电力和电气系统真正建好、接好、调试好”的工程交付层，核心受益来自两个方向：
+
+1. **C&I 商业与工业电气施工中的数据中心 / mission-critical 业务。** 2026Q1 C&I 收入 `4.594 亿美元`，同比 `+24%`，创公司 C&I 季度纪录；管理层明确说 data center 和 water/wastewater 是当前施工市场增长最强的项目类型，并披露 2026Q1 在 New Jersey、Arizona、California、Colorado 获得多个数据中心项目。
+2. **T&D 输配电、变电站和公用事业 MSA。** 2026Q1 T&D 收入 `5.410 亿美元`，同比 `+17%`；MSA 占 T&D 收入约 `70%`。数据中心负荷上升、utility capex、电网硬化和大型 230/345/765kV 项目讨论，把 MYRG 放在 AI 数据中心“可上电 MW”的上游。
+3. **2026 年重大催化是收购 Valley Electric / Comet Electric。** 2026-05-27 公司宣布拟以约 `3.28 亿美元` 收购 Valley Holdings，目标公司过去两年合计平均年收入超过 `4 亿美元`，业务包括 Western U.S. / Southern California 的 C&I、电气、交通、重民用、海事、mission-critical/data centers、BIM、prefabrication、low-voltage、predictive maintenance。若 2026-07-01 左右完成交割，MYRG 的 C&I 年化收入能力和西海岸数据中心项目捕获能力会明显增强。
+
+投资上，MYRG 现在被市场当作“AI 电力和数据中心电气施工稀缺承包商”重估，而不是传统低估值建筑承包商。优势是 backlog 创纪录、资产负债表强、T&D 和 C&I 双轮驱动、客户关系和劳动力调度能力稀缺。主要风险是估值已经很贵、项目制毛利低、固定价合约和人工/材料波动会吃利润、数据中心收入占比未披露且容易被市场过度想象。
+
+## 1. 公司整体业务、定位和财务快照
+
+### 1.1 公司业务概览
+
+MYR Group Inc. 是美国和加拿大的 specialty electrical contractor，主业按两个分部披露：
+
+| 分部 | 2026Q1 收入 | 占比 | 2026Q1 同比 | 2026Q1 分部经营利润率 | 业务内容 | AI 数据中心相关性 |
+|---|---:|---:|---:|---:|---|---|
+| Transmission & Distribution, T&D | `5.410 亿美元` | `54.1%` | `+17.2%` | `9.7%` | 输电线路、配电网络、变电站、清洁能源、EV 充电，含设计、工程、采购、施工、升级、维护、抢修 | 间接但关键。AI 数据中心新增负荷需要 utility interconnection、substation、230/345/765kV transmission、distribution hardening |
+| Commercial & Industrial, C&I | `4.594 亿美元` | `45.9%` | `+23.5%` | `8.1%` | 数据中心、机场、医院、工业厂房、制造、交通、水/污水、商业设施、low-voltage、维修 | 直接。data center electrical、BIM、prefab、commissioning、mission-critical low-voltage 是 MYRG 最直接 AI 暴露 |
+| 合计 | `10.004 亿美元` | `100%` | `+20.0%` | consolidated `6.5%` | 专业电气施工和工程服务 | AI 基建交付层，不制造 GPU、UPS、switchgear 或冷却硬件 |
+
+公司官方业务描述强调：T&D 服务电力 transmission、distribution、substation、clean energy 和 EV charging；C&I 覆盖 data centers、manufacturing、airports、hospitals、water/wastewater 等设施的电气设计、安装、维护和修理。资料来源：MYR Group 2026Q1 release 和 2025 10-K。
+
+### 1.2 投资人眼中的公司
+
+投资人现在看 MYRG，核心不是“普通建筑承包商”，而是三层暴露叠加：
+
+| 投资标签 | 支撑证据 | 需要反证的地方 |
+|---|---|---|
+| AI 数据中心电气工程受益股 | C&I data center 项目持续获奖；2026Q1 C&I 收入创纪录；Valley/Comet 收购增强 C&I + mission-critical/data centers 能力 | 公司不披露 data center 收入占比，不能把全部 C&I 都当 AI |
+| 电网扩容和 electrification 受益股 | 2026Q1 T&D 收入同比 `+17%`，T&D MSA 占收入约 `70%`；公司披露 Arizona MSA、Texas greenfield substations、345kV transmission line 等项目 | MSA backlog 只计未来 90 天，收入稳定但不一定高毛利 |
+| 项目执行改善和利润率修复股 | 2024 年受若干 T&D clean energy 和 C&I 项目拖累，2025 毛利率从 `8.6%` 修复到 `11.6%`，2026Q1 升至 `13.4%` | 工程利润率可波动，项目 closeout、change order、天气和人工效率都会影响单季 |
+| M&A 扩张股 | 2026-05-27 宣布以约 `3.28 亿美元` 收购 Valley/Comet，目标公司过去两年合计平均年收入 `>4 亿美元` | 整合、文化、估值和杠杆变化需要跟踪；收购尚需监管和 customary conditions |
+
+### 1.3 最近三年的重大业务变化
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2024 | 若干 T&D clean energy 项目和一个 C&I 项目拖累利润，2024 全年毛利率 `8.6%`、净利润 `3,030 万美元`、EPS `1.83 美元` | 市场重新审视固定价项目风险、清洁能源 EPC 执行风险和毛利波动 |
+| 2025 | 收入 `36.58 亿美元`，同比 `+8.8%`；毛利率 `11.6%`；净利润 `1.184 亿美元`，EPS `7.53 美元`；backlog 年末 `28.2 亿美元` | 利润率修复，项目执行改善，C&I 和 T&D 重新双增长 |
+| 2025Q2 | 董事会批准新的 `7,500 万美元` 回购计划；T&D 拿到 Xcel Energy 五年 design-build electric distribution MSA，预期收入 `>5 亿美元`，有效期至 2029，工程预计 2026 年初开始 | 表明管理层对现金流和资产负债表有信心；MSA 扩大长期基础收入，但按公司 backlog 规则不会一次性全进 backlog |
+| 2026Q1 | 收入 `10.004 亿美元`、净利润 `4,680 万美元`、EBITDA `8,154 万美元`、backlog `28.4 亿美元`，均为记录级别 | AI 数据中心、电力基础设施和项目执行改善共同推高业绩 |
+| 2026-05-27 | 宣布收购 Valley Electric / Comet Electric，交易金额约 `3.28 亿美元`，预计 2026-07-01 左右 close | 显著增强 C&I、西部地区、Southern California、mission-critical/data centers、BIM/prefab/low-voltage 能力 |
+
+### 1.4 产业链位置
+
+AI 数据中心的物理链条可以简化为：
+
+`AI workload / GPU cluster -> AI data center developer / hyperscaler / colo -> utility interconnection / power bank -> high-voltage substation / transformer / switchgear -> facility electrical / UPS / busway / PDU -> rack power / cooling / network -> commissioning -> live MW`
+
+MYRG 主要位于两个位置：
+
+1. **Grid-to-campus 和 utility 侧施工：** transmission line、distribution rebuild、greenfield substation、MSA、EPC / construction / maintenance。典型项目包括 230kV / 345kV transmission、substation、utility distribution MSA。2026Q1 管理层提到 High Country Line、Great Southwestern、Sturgeon、Harlan、L.E. Myers 等子公司在 Arizona、Texas、South Carolina、Pennsylvania、Illinois、Iowa 等地获得 substation / transmission / distribution 项目。
+2. **Campus-to-data-hall 和 facility electrical：** C&I electrical installation、data center electrical、BIM、prefabrication、commissioning、low-voltage、service。MYRG 不卖 UPS、switchgear、transformer、CDU 或 GPU，但会安装、连接、协调和调试这些系统，收入以 labor、工程管理、材料 / subcontractor pass-through 和项目执行利润体现。
+
+结论：MYRG 是 AI 基建“交付确定性”标的，而不是“高毛利硬件 BOM”标的。它的 moat 来自客户关系、施工履历、合格劳动力、安全记录、bonding capacity、项目管理、prefab 和客户白名单，弱于 Eaton / Schneider / Vertiv 等设备商的产品垄断，但强于普通地区电气承包商。
+
+### 1.5 市场数据和估值快照
+
+日期口径：行情和估值数据为 2026-06-11 附近公开源快照，盘中源之间存在数美元差异；基本财务使用 2026Q1 已披露 LTM 数据。
+
+| 指标 | 数值 | 日期 / 口径 | 说明 |
+|---|---:|---|---|
+| 股价 | 约 `422.46 美元` | 2026-06-11 Google Finance 搜索快照 | 当日盘中价格会波动；其他源显示 2026-06-10 收盘约 `407.22 美元` |
+| 市值 | 约 `65.8 亿美元` | 2026-06-11，按 `422.46 美元 * 1,557 万股`估算 | Yahoo 快照约 `63.4 亿美元`，差异来自价格时点 |
+| TTM PE | 约 `46.4-46.8x` | 2026-06-11，Google / StockAnalysis | 基于 LTM diluted EPS `9.07 美元` |
+| Forward PE | `36.4x`，另 CY2026E 约 `46.4x`、FY2027E 约 `40.7x` | 2026-06-11，StockAnalysis NTM；MarketWatch FY2026E EPS `9.11`、FY2027E EPS `10.38` | forward PE 口径差异大，应同时看 NTM 和日历年估计 |
+| PS | 约 `1.72x` | 2026-06-11，按市值 / LTM 收入 | Yahoo 快照 P/S `1.66x` |
+| LTM 收入 | `38.246 亿美元` | 截至 2026-03-31 | 2026Q1 release |
+| LTM 收入增速 | `+13.1%` | LTM 2026Q1 vs LTM 2025Q1 | `38.246 亿美元 / 33.803 亿美元 - 1` |
+| 2025 收入增速 | `+8.8%` | FY2025 vs FY2024 | `36.579 亿美元` vs `33.623 亿美元` |
+| 2026Q1 收入增速 | `+20.0%` | 2026Q1 vs 2025Q1 | `10.004 亿美元` vs `8.336 亿美元` |
+| LTM 毛利率 | `12.1%` | 截至 2026-03-31 | LTM gross profit `4.613 亿美元` / revenue `38.246 亿美元` |
+| 2026Q1 毛利率 | `13.4%` | 2026Q1 | 高于 2025Q1 `11.6%` |
+| LTM 净利率 | `3.7%` | 截至 2026-03-31 | LTM net income `1.419 亿美元` / revenue `38.246 亿美元` |
+| 2026Q1 净利率 | `4.7%` | 2026Q1 | 净利润 `4,680 万美元` |
+
+估值判断：以约 `36-47x` earnings、`1.7x` sales 买入一家项目制电气承包商，估值已经明显反映 AI 数据中心和电网建设乐观预期。若管理层 2026 年 `12%` organic revenue growth 和更高 segment margin 能兑现，估值可被高质量 backlog 支撑；若 data center 项目延迟、固定价项目亏损或 2027 EPS 被下修，估值压缩空间很大。
+
+### 1.6 资产负债表健康度
+
+| 指标 | 2026Q1 / 2025 年末数据 | 判断 |
+|---|---:|---|
+| 现金及等价物 | `1.632 亿美元`，2026-03-31 | 充足 |
+| funded debt | `940 万美元`，2026-03-31 | 接近无 funded debt |
+| revolver 总额 / 可用额度 | `4.90 亿美元` / `4.605 亿美元`可用，2026-03-31 | 有很强流动性缓冲 |
+| funded debt / EBITDA | `0.04x`，2026-03-31 | 极低杠杆 |
+| 2026Q1 operating cash flow | `8,475 万美元` | 现金流强 |
+| 2026Q1 free cash flow | `6,862 万美元` | capex 后仍有充足 FCF |
+| 2025 capex | `9,437 万美元` | 主要支持 T&D 机会，管理层 2026Q1 说全年 capex 可能向收入约 `3%`靠拢 |
+| Valley/Comet 收购影响 | 交易金额约 `3.28 亿美元`，以现金和 revolver 借款融资 | 即使使用部分 debt，pro forma 杠杆仍大概率温和，但需看交割后 debt、EBITDA 和 integration cost |
+
+财务健康结论：资产负债表目前很强，几乎无 funded debt，现金和 revolver 足以支持有机增长、M&A 和项目流动资金。最大财务风险不在偿债，而在项目执行、working capital 周期、固定价成本超支和收购整合。
+
+## 2. 最新及最近四次财报分析
+
+说明：
+
+- MYRG 不披露 bookings，表中 bookings / book-to-bill 为用 `当季收入 + backlog 变动` 推算的近似值。
+- MYRG 不披露 AI 数据中心收入，表中“AI / data center 相关收入估算”是基于 C&I data center 项目披露、T&D data center power enabling 线索和行业单位价值推导的区间，置信度为中低。
+- MYRG backlog 规则会低估 MSA：固定价合同计剩余合同额，但 unit-price、T&E、T&M、cost-plus 多数只纳入未来约三个月预估收入；MSA 通常 1-4 年，但可方便取消，不会全额进 backlog。
+
+| 财报季度 | 收入 / 同比 | 毛利率 | 净利润 / EPS | T&D 收入、增速、分部利润率 | C&I 收入、增速、分部利润率 | Backlog / 分部 | 推算 bookings / B2B | 订单、交期、取消率 | AI / 数据中心相关估算 |
+|---|---:|---:|---:|---|---|---|---|---|---|
+| 2026Q1 | `10.004 亿美元`，`+20.0%` | `13.4%` | `4,680 万美元` / `2.99 美元` | `5.410 亿美元`，`+17.2%`，OI margin `9.7%`；MSA 约占 T&D 收入 `70%` | `4.594 亿美元`，`+23.5%`，OI margin `8.1%`，C&I 季度收入纪录 | total `28.4 亿美元`；T&D `9.807 亿美元`；C&I `18.6 亿美元` | 约 `10.2 亿美元` / `1.02x`；T&D 约 `5.02 亿美元`，C&I 约 `5.19 亿美元` | 多个数据中心项目在 NJ/AZ/CA/CO；Arizona T&D MSA、Texas greenfield substations、345kV line 等；大 transmission 2026 获奖多要 2027 才大规模收入；无取消率披露 | 直接 C&I data center + T&D enabling 约 `1.0-1.8 亿美元`，约收入 `10-18%`；未披露，区间估算 |
+| 2025Q4 | `9.735 亿美元`，`+17.3%` | `11.4%` | `3,655 万美元` / `2.33 美元` | `5.309 亿美元`，`+18.0%`，OI margin `7.4%` | `4.426 亿美元`，`+16.5%`，OI margin `6.6%` | total `28.2 亿美元`；T&D `10.2 亿美元`；C&I `18.0 亿美元` | 约 `11.34 亿美元` / `1.16x`；T&D 约 `6.22 亿美元`，C&I 约 `5.13 亿美元` | 年末 backlog 同比 `+9.6%`；公司称 bidding environment 稳定；Q4 利润受更高合约毛利、productivity、change orders、job closeout 支撑 | 约 `0.85-1.55 亿美元`，约收入 `9-16%`；C&I data center 和 T&D power demand 是主要来源 |
+| 2025Q3 | `9.504 亿美元`，`+7.0%` | `11.8%` | `3,209 万美元` / `2.05 美元` | `5.034 亿美元`，`+4.5%`，估算 OI margin `8.2%` | `4.470 亿美元`，估算 `+10.1%`，估算 OI margin `6.4%` | total `26.6 亿美元`；T&D `9.29 亿美元`；C&I `17.3 亿美元` | 约 `9.72 亿美元` / `1.02x`；T&D 约 `5.06 亿美元`，C&I 约 `4.66 亿美元` | backlog 比 2025Q2 增 `2,110 万美元`；C&I backlog 增幅大于 T&D；无取消率披露 | 约 `0.75-1.40 亿美元`，约收入 `8-15%`；data center 项目仍为 C&I 增量，但未单列 |
+| 2025Q2 | `9.003 亿美元`，`+8.6%` | `11.5%` | `2,647 万美元` / `1.70 美元` | `5.063 亿美元`，`+10.5%`，OI margin `8.0%`；transmission `3.05 亿美元`、distribution `2.01 亿美元` | `3.941 亿美元`，`+6.3%`，OI margin `5.6%` | total `26.4 亿美元`；T&D `9.265 亿美元`；C&I `17.2 亿美元` | 约 `9.02 亿美元` / `1.00x`；T&D 约 `5.60 亿美元`，C&I 约 `3.41 亿美元` | Xcel Energy 五年 MSA，预期收入 `>5 亿美元`；大型 Colorado data center phase one `>9,000 万美元` 从 verbal award 转为 contractually awarded 并进入 backlog；无取消率披露 | 约 `0.55-1.10 亿美元`，约收入 `6-12%`；Colorado data center award 是明确锚点 |
+| 2025Q1 | `8.336 亿美元`，`+2.2%` | `11.6%` | `2,331 万美元` / `1.45 美元` | `4.618 亿美元`，`-5.8%`，OI margin `7.8%`；transmission 下降、distribution 上升 | `3.719 亿美元`，`+14.4%`，OI margin `4.7%` | total `26.4 亿美元`；T&D `8.725 亿美元`；C&I `17.7 亿美元` | 约 `8.94 亿美元` / `1.07x`；T&D 约 `5.16 亿美元`，C&I 约 `3.82 亿美元` | Backlog 同比 `+8.9%`；C&I 是收入增长主因；2024 的 clean energy / C&I 项目拖累逐步淡出 | 约 `0.50-1.00 亿美元`，约收入 `6-12%`；C&I data center 暴露已有，但披露有限 |
+
+### 2.1 五个季度的核心变化
+
+1. **收入节奏明显加速。** 2025Q1 只有 `+2.2%`，到 2026Q1 达 `+20.0%`。T&D 从 2025Q1 下滑转为 2026Q1 `+17%`；C&I 连续是更强增长端。
+2. **利润率修复强于收入。** 2024 年低毛利项目拖累后，2025Q2-Q4 毛利率维持 `11.4-11.8%`，2026Q1 提升到 `13.4%`。管理层把原因归结为更高合约毛利项目、productivity、change orders、favorable closeout 和更低合同风险。
+3. **Backlog 创纪录但不是越高越好。** 2026Q1 backlog `28.4 亿美元`，同比 `+7.7%`。但因为 MSA 只计短期收入，T&D 的真实长期工作量被 backlog 低估；另一方面，C&I fixed price 和 data center 项目 backlog 若执行不佳也会带来风险。
+4. **数据中心是 C&I 增长最重要的高弹性部分。** 管理层在 2026Q1 直接说 data center projects 和 water/wastewater projects 是当前 construction market 增长最强处，并列举多个州的数据中心项目。
+5. **取消率未披露。** 从公开材料看，没有大规模取消信号。更应跟踪的是 NTP 延迟、equipment lead time、utility interconnection、客户设计变更和 fixed-price 合同条款。
+
+## 3. 2026 最新指引、业务占比和重点业务
+
+### 3.1 2026 最新一次财报的指引
+
+2026Q1 call 中，管理层对 2026 年的最新口径是：
+
+| 指标 | 管理层口径 | 含义 |
+|---|---|---|
+| 总收入增长 | 原先看两个分部各约 `10%`，Q1 后整体更接近 `12%` organic growth | 以 2025 收入 `36.58 亿美元`为基数，organic 2026 revenue run-rate 约 `40.9-41.0 亿美元` |
+| T&D operating margin profile | 从 `7%-10.5%`上修到 `8%-11%`，目标在中部运行 | 说明 backlog 质量、contract terms 和执行改善 |
+| C&I operating margin profile | 从 `5%-7.5%`上修到 `6%-9%`，目标在中部运行 | C&I data center / higher contractual margin 项目和 prefab 降风险带动 |
+| CapEx | 2026 全年 capex 可能接近收入 `3%`，高于历史平均 | 主要因 T&D 机会更资本密集，需要设备和工具 |
+| M&A | 2026Q1 时已表示有高质量 acquisition activity；2026-05-27 宣布 Valley/Comet | 收购若完成，收入增长高于 organic |
+
+### 3.2 2026Q1 收入结构和增长侧重点
+
+| 业务 | 2026Q1 收入占比 | 2026Q1 增长 | 公司侧重点 | AI 相关判断 |
+|---|---:|---:|---|---|
+| T&D | `54.1%` | `+17.2%` | MSA、small-to-mid projects、substation、345kV line、greenfield substations、large transmission project pipeline | 间接受益。AI 数据中心 power demand 强化 utility capex，但不是每个 T&D 项目都对应 AI |
+| C&I | `45.9%` | `+23.5%` | data centers、water/wastewater、fixed price projects、BIM/prefab、customer relationship | 直接受益。data center awards 是最重要增量，但收入占比未披露 |
+| Valley/Comet pending | 未并表 | 过去两年合计平均年收入 `>4 亿美元` | 增强 Western U.S. / Southern California C&I、design-build、BIM、prefab、low-voltage、mission-critical/data centers | 若交割，直接强化 data center / mission-critical 地域和能力 |
+
+### 3.3 “产品”和服务映射
+
+MYRG 没有传统意义上的产品型号。下面按可投资的服务 / 能力单元拆分。
+
+| 服务 / 能力 | 对应“产品化”形态 | 当前阶段 | 收入 / 利润特征 | AI 数据中心重要性 |
+|---|---|---|---|---|
+| Data center electrical construction | data hall electrical、power room、conduit、cable tray、busway install、low-voltage、controls、安全、接地、照明、commissioning support | 已放量 | C&I fixed price 为主，毛利受项目执行、人工、change order 和 closeout 影响；2026Q1 C&I OI margin `8.1%` | 高。没有电气施工和调试，GPU rack 无法上线 |
+| BIM / prefabrication / VDC | prefab conduit racks、duct banks、electrical room assemblies、shop fabrication、FAT-ready modules | 加速采用 | 降低现场 labor risk 和返工，利润来自 time-to-power 溢价；管理层多次强调 prefab | 高。AI data halls 空间拥挤、设计变更频繁，prefab 是施工确定性工具 |
+| T&D substations and transmission | greenfield substations、230/345kV lines、distribution rebuild、utility MSA | 已放量，765kV 为中期机会 | T&D OI margin 2026Q1 `9.7%`；MSA 稳定但 backlog 低估；大型项目收入滞后到 2027+ | 高但间接。AI campus 首先要拿到 power path |
+| Utility MSA / distribution hardening | one-to-four-year MSA、unit price / T&E work、storm restoration | 稳定增长 | 复购、低销售成本、现金流好；但 rate 和 margin 更稳定，爆发性不如大项目 | 中高。电网负荷和可靠性升级受 AI、电气化、 wildfire hardening 推动 |
+| Mission-critical low-voltage / predictive maintenance / service | low-voltage systems、BMS/controls接口、service、predictive maintenance | Valley/Comet 收购后加强 | 可提高 repeat service 和客户粘性，单体收入小于电气总包 | 中。AI data center 的 uptime、维护和监测要求提高 |
+
+### 3.4 跳过或低优先级业务
+
+以下业务对 MYRG 收入有贡献，但不应作为本次 AI 基建主线高权重处理：
+
+| 跳过 / 低权重业务 | 原因 |
+|---|---|
+| 普通商业办公室、酒店、传统低密度商业楼宇电气施工 | 低增速、竞争充分、与 AI 数据中心缺少强绑定 |
+| 机场、体育场、教育、医院等非 mission-critical 增量 | 可能稳健，但不是 AI 核心瓶颈；只有高复杂度 / fast-track 才有类似定价 |
+| 普通 roadway lighting / signalization | 项目小、区域性强、毛利有限 |
+| EV charging | 与 electrification 相关，但 2026 AI 数据中心研究中优先级低于 substation、transmission 和 data center electrical |
+| 非 AI clean energy EPC | 2024 年相关项目曾拖累利润；除非绑定 utility interconnection / data center PPA，否则不按 AI 高弹性处理 |
+| 水/污水 | 2026Q1 管理层点名高增长，但与 AI 相关性弱于 data center；只在数据中心用水、水处理和液冷设施中提高权重 |
+
+## 4. 关键业务的当前贡献、增速和供需评价
+
+### 4.1 当前关键业务矩阵
+
+| 关键业务 | 当前对收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断 / 溢价能力 |
+|---|---:|---:|---|---|---|---|
+| C&I data center / mission-critical electrical | 2026Q1 估算 `0.7-1.3 亿美元` direct；年化 `3-5 亿美元`，未含 Valley | 高，C&I 总收入 Q1 `+23.5%`；data center 是最强增长项之一 | `5/5`。决定 data hall power、low-voltage、commissioning 和上线 | `5/5`。客户争夺 time-to-power | `4/5`。熟练电工、prefab、commissioning、客户资格稀缺 | `3/5`。项目制，不能垄断，但合格供应商短名单和客户关系带来溢价 |
+| T&D / substation / transmission 支持数据中心上电 | 2026Q1 T&D 总收入 `5.41 亿美元`；AI / data center power enabling 部分估算 `0.3-0.6 亿美元` | T&D Q1 `+17.2%`；MSA 占 `70%`，大型 transmission 2027+ | `5/5`。没有 grid / substation / interconnection 就没有 live MW | `5/5`。utility queue 和变压器 / switchgear lead time 以年计 | `4/5`。合格高压施工队、line crews、substation crews 稀缺 | `3/5`。劳动力和履历有溢价，但客户仍招标压价 |
+| BIM / prefabrication / commissioning 能力 | 未单列，嵌在 C&I / T&D；估算年化 `0.8-1.8 亿美元` value-added revenue 或 margin driver | 高，管理层明确继续投资 prefab | `4/5`。AI hall 复杂度让 prefab 从降本变成交付方式 | `4/5`。现场人工短缺和设计变更驱动 | `4/5`。prefab shop capacity、BIM/VDC 人才和 CxA 经验紧 | `3.5/5`。不垄断，但能改善合同风险和 margin profile |
+| Valley/Comet pending C&I expansion | 目标公司过去两年合计平均年收入 `>4 亿美元`，若完成，MYRG 年化收入提升约 `10%+` | 交易本身带来 step-up；mission-critical/data centers 是重点 sector | `4/5`。增强 Western U.S. / SoCal data center、low-voltage、prefab | `4/5`。西部数据中心和交通 / 水务工程需求强 | `3.5/5`。地区客户关系和劳动力是核心 | `3/5`。收购增强规模，但仍项目制竞争 |
+
+### 4.2 当前核心判断
+
+1. **C&I data center 是最直接 AI 收入，但披露不足。** 2026Q1 公司只披露多个数据中心项目，不披露金额。结合 C&I 总收入 `4.594 亿美元`和 Q2 2025 单个 Colorado data center phase one `>9,000 万美元`的披露，当前季度 direct data center 收入合理区间约 `0.7-1.3 亿美元`，但置信度中低。
+2. **T&D data center enabling 是更隐性的 AI 收入。** 例如公司 2026 年文章披露 L.E. Myers 作为 prime contractor 支持 Dominion Energy 的 Chase City to Cloud transmission project，内容包括两条接近 15 英里的 230kV 新 transmission lines，以及 115kV relocation / reconfiguration，用于支持数据中心连接。此类项目不会总被归类为 data center revenue，但本质上服务 AI / cloud power demand。
+3. **供需紧张主要在“人、资格、交付窗口”，不是 MYRG 自有硬件产能。** 对设备商来说瓶颈是 transformer / switchgear / UPS 产线；对 MYRG 来说瓶颈是合格 crews、project managers、BIM/prefab、commissioning、safety record、bonding 和客户白名单。
+
+## 5. 关键业务一年后情景预测
+
+时间口径：一年后约 2027 年中。收入贡献为 MYRG 可确认年化收入或近似 run-rate，不是行业 TAM。Valley/Comet 假设 2026H2 完成交割并基本稳定并表。
+
+| 业务 | 情景 | 一年后收入贡献 | 收入增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 溢价能力 | 关键前提 |
+|---|---|---:|---:|---|---|---|---|---|
+| C&I data center / mission-critical electrical | 基准 | 年化 `5.5-7.5 亿美元` | `+25-45%` | 5 | 5 | 4 | 3 | 现有 data center awards 转收入，Valley/Comet 半年后稳定并表，C&I margin `6-9%` |
+| C&I data center / mission-critical electrical | 乐观 | 年化 `8.0-11.0 亿美元` | `+60-100%` | 5 | 5 | 4.5 | 3.5 | 多个 100MW+ / 500MW campus electrical packages 中标，西部 data center / SoCal mission-critical 加速 |
+| C&I data center / mission-critical electrical | 极度乐观 | 年化 `12-16 亿美元` | `+120%+` | 5 | 5 | 5 | 4 | Hyperscaler / NeoCloud / colo 同时抢电气施工队，客户预付锁定 prefab / crews，data center 占 C&I 大幅提高 |
+| T&D / substation / transmission 支持数据中心上电 | 基准 | AI / data center enabling 年化 `3.5-6.0 亿美元`；T&D 总收入 `22-25 亿美元` | `+10-18%` | 5 | 5 | 4 | 3 | MSA 稳定，2026 large transmission awards 开始进入 backlog，2027 施工爬坡 |
+| T&D / substation / transmission 支持数据中心上电 | 乐观 | AI / data center enabling 年化 `6-10 亿美元`；T&D 总收入 `25-29 亿美元` | `+20-35%` | 5 | 5 | 4.5 | 3.5 | 345kV / 500kV / 765kV pipeline 提前落地，utility capex 和 data center interconnection 加速 |
+| T&D / substation / transmission 支持数据中心上电 | 极度乐观 | AI / data center enabling 年化 `10-15 亿美元`；T&D 总收入 `30 亿美元+` | `+40%+` | 5 | 5 | 5 | 4 | CREZ 类全国性 transmission cycle 放大，客户锁 labor / materials 到 2030+ |
+| BIM / prefab / commissioning | 基准 | 年化 `1.5-2.5 亿美元` value-added / embedded revenue | `+25-50%` | 4 | 4 | 4 | 3.5 | Prefab 继续降低现场风险，项目中 attach 率提高 |
+| BIM / prefab / commissioning | 乐观 | 年化 `2.5-4.0 亿美元` | `+60-100%` | 4.5 | 5 | 4.5 | 4 | 12.5/25/50MW repeatable block 写入客户 RFP，commissioning 变成可收费独立服务 |
+| BIM / prefab / commissioning | 极度乐观 | 年化 `4-6 亿美元` | `+120%+` | 5 | 5 | 5 | 4.5 | Prefab shop capacity 像设备产能一样被客户预订，MYRG 转向更产品化交付 |
+
+MYRG 一年后公司级收入情景：
+
+| 情景 | 2027 年中附近年化收入 run-rate | 逻辑 |
+|---|---:|---|
+| 基准 | `46-50 亿美元` | 2026 organic `~12%`延续，Valley/Comet 全年化贡献约 `4 亿美元`，利润率维持新目标中部 |
+| 乐观 | `51-56 亿美元` | C&I data center、T&D large transmission、MSA 同时加速，收购交叉销售成功 |
+| 极度乐观 | `58-65 亿美元` | AI data center electrical / substation 工程出现供应短缺溢价，large awards 提前转 backlog，客户为 time-to-power 锁定 crews |
+
+## 6. BOM、单位内容量、价格传导和认证
+
+### 6.1 重要口径
+
+MYRG 不销售 GPU、optical module、UPS、switchgear 或 transformer。下面的 BOM 是“AI 数据中心项目中 MYRG 可触达的 installed electrical / EPC / MEP / commissioning 内容量”，不是硬件 ASP。很多设备由业主、GC 或 OEM 直接采购，MYRG 可能只确认安装 / 管理 / pass-through 收入。
+
+### 6.2 每 MW / rack / GPU / optical port 内容量
+
+| 业务 | 每 IT MW 可触达内容量 | 每 100kW rack 内容量 | 每 GPU 内容量 | 每 optical port 内容量 | 说明 |
+|---|---:|---:|---:|---:|---|
+| C&I data center electrical | installed electrical contractor 约 `$1.5-4.0M/MW`；若含较多设备 / subcontractor pass-through 可到 `$3-6M/MW` | 约 `$0.15-0.40M/rack`，高密 / 高冗余可更高 | 72-GPU rack 口径约 `$2,100-5,600/GPU`；160kW rack 可到 `$3,300-8,900/GPU` | 仅 low-voltage / pathway / fiber install 约 `$10-60/port`，不含光模块和交换机 | 依据本地行业资料 facility-heavy CapEx `$10-22M/MW`、电气 `$4-9M/MW`，再估算 MYRG 可触达施工和管理份额 |
+| T&D / substation / grid-to-campus | utility-side HV/MV 接入和变电约 `$0.6-1.4M/MW IT`；MYRG 可触达 EPC / line / substation 份额约 `$0.2-0.8M/MW` | 约 `$20,000-80,000/rack` | 72-GPU rack 口径约 `$280-1,100/GPU` | 不适用 | 若 MYRG 是 prime contractor，份额更高；若只做部分线路 / 变电施工，份额更低 |
+| BIM / prefab / commissioning | prefab premium 通常嵌入项目，增量约 facility-heavy CapEx `3-15%`；MYRG 可触达约 `$0.2-1.0M/MW` | `$20,000-100,000/rack` | `$280-1,400/GPU` | low-voltage / labeling / cable management 可有少量 attach | 价值来自减少现场工时、缩短交期、降低返工和验收风险 |
+| Valley/Comet low-voltage / mission-critical service | 项目差异大，估算 `$0.1-0.6M/MW` | `$10,000-60,000/rack` | `$140-830/GPU` | `$10-80/port` | 取决于 scope 是否含 security、controls、structured cabling、predictive maintenance |
+
+### 6.3 BOM 拆分：100MW AI data center 一期
+
+本地行业资料给出：100MW IT load、PUE `1.20`、utility interconnection `120-160MW`的 AI 园区，facility-heavy CapEx 约 `$10-22M/MW`，即 100MW 对应 `$10-22 亿美元`。MYRG 相关内容大致如下：
+
+| BOM 项 | 100MW IT 项目成本区间 | MYRG 可触达部分 | MYRG 价值来源 | 风险 |
+|---|---:|---:|---|---|
+| 土建 / site work / shell | `$150-400M` | 低，除非作为 electrical scope 配合 | 不是 MYRG 主战场 | 土建延迟拖累电气进场 |
+| Substation / high-voltage interconnection / utility upgrade | `$60-140M` utility-side，部分项目更高 | `$20-80M`，取决于是否承接线路、变电、接入施工 | 高压施工队、utility qualification、safety | 许可、utility schedule、变压器交期 |
+| MV/LV electrical、switchgear、UPS、busway、PDU、generator/BESS interface | `$400-900M` facility electrical / power train 大项 | `$150-400M` installed electrical / EPC / pass-through | 电气安装、prefab、project management、commissioning | OEM 设备延迟、固定价材料风险、设计变更 |
+| Mechanical / liquid cooling facility loop | `$250-600M` | 低到中，MYRG 只触达电气和 controls 接口 | 泵、CDU、BMS、leak detection 电气接口 | 冷却架构变化导致返工 |
+| Fire / safety / low-voltage / controls / leak detection | `$100-250M` | `$20-80M` | low-voltage、监控、安全、BMS/DCIM 接线与调试 | 客户规范复杂，scope creep |
+| Design / PM / commissioning / contingency | `$100-400M` | `$20-100M` | BIM/VDC、prefab planning、Cx 支持、现场管理 | commissioning 拉长、责任边界不清 |
+
+### 6.4 价格传导链
+
+| 环节 | 价格如何传导到 MYRG | MYRG 能否保留利润 |
+|---|---|---|
+| Hyperscaler / NeoCloud CapEx 上修 | data center developer / GC 提高项目预算，释放 electrical packages | 取决于 MYRG 是否在 approved bidder list、是否有 crews 和 bonding capacity |
+| Utility interconnection / substation 需求上升 | utility 或客户出资升级线路、变电站，T&D 项目进入 MSA / bid / NTP | T&D 客户通常有强议价，但高压施工队稀缺可改善 terms |
+| Transformer / switchgear / UPS lead time 拉长 | 项目 schedule 风险上升，客户更重视能协调 long-lead equipment 的 contractor | MYRG 若只承担固定价安装，风险在 MYRG；若合同有 escalation / change order，能转嫁 |
+| 熟练电工和调试工程师短缺 | labor rate、per diem、overtime、prefab premium 上升 | 当前管理层说 labor tightness 尚未完全转化成 margin，但未来可能改善 bidding power |
+| Prefabrication 提高 | 工厂预制减少现场工时和返工，客户愿为 time-to-power 付费 | 有利于 margin 稳定，但需要前期投资和 shop capacity |
+| 客户设计变更 | change order 可以提高收入和利润，也可能造成 schedule 和 cost overrun | 合同条款决定利润质量；2026Q1 margin 受 favorable change orders 支撑 |
+
+### 6.5 产能能力、客户采纳和认证
+
+| 能力 | 当前产能 / 能力 | 客户采纳程度 | 认证 / qualification 阶段 |
+|---|---|---|---|
+| 公司整体交付能力 | LTM 收入 `38.25 亿美元`；2026 organic 指引约 `12%`增长；收购后年化收入能力可向 `45 亿美元+`提升 | 已被 utility、GC、data center 客户采纳；backlog `28.4 亿美元`创纪录 | 承包商层面以 safety、bonding、customer prequalification、utility qualification、NEC / NFPA / OSHA / 项目规范为主，不是产品认证 |
+| C&I data center electrical | C&I Q1 年化收入 `18.4 亿美元`，收购 Valley/Comet 后 C&I 年化能力可增加 `4 亿美元+` | 多州 data center awards，历史项目包括 Arizona Iron Mountain data center 9MW now / 48MW future layout | Data center 客户白名单、BIM、commissioning、low-voltage 和 mission-critical reference 是核心 |
+| T&D / substation | T&D Q1 年化收入 `21.6 亿美元`，MSA 占 Q1 收入 `70%` | utility MSA、高压线路、greenfield substations、多区域 transmission projects | Utility qualification、高压施工 safety、line crews、substation crews、storm restoration 能力 |
+| Prefab / BIM / commissioning | 不披露产能；管理层称继续投资 prefab，Valley/Comet 也有 BIM/prefab 能力 | 客户越来越采纳，因 AI hall 拥挤和工期短 | BIM/VDC、shop QA、FAT/SAT、NEC/NFPA/UL 项目验收、CxA 协作 |
+
+## 7. 一年后产能、采纳和认证阶段预测
+
+| 业务 | 情景 | 一年后产能能力 | 采纳程度 | 认证 / qualification 状态 |
+|---|---|---:|---|---|
+| C&I data center electrical | 基准 | C&I 总年化 `22-25 亿美元`；data center direct `5.5-7.5 亿美元` | data center 作为 C&I 主增长项，客户重复项目增加 | 已在主要客户白名单，Valley/Comet 完成整合初期 |
+| C&I data center electrical | 乐观 | C&I 总年化 `26-30 亿美元`；data center direct `8-11 亿美元` | 西部、SoCal、Arizona、Colorado、New Jersey 项目持续释放 | 进入更多 hyperscaler / colo repeatable campus bid list |
+| C&I data center electrical | 极度乐观 | C&I 总年化 `32 亿美元+`；data center direct `12-16 亿美元` | data center 成为 C&I 最大 vertical 之一 | 客户预付 / 框架化锁定 prefab 和 crews，切换成本上升 |
+| T&D / substation / transmission | 基准 | T&D 年化 `22-25 亿美元` | MSA 稳定，large transmission 开始贡献 backlog | 既有 utility qualification 延续 |
+| T&D / substation / transmission | 乐观 | T&D 年化 `25-29 亿美元` | 大型 345kV / 500kV / 765kV 机会落地 | 更多 large-project prequalification 和 alliance work |
+| T&D / substation / transmission | 极度乐观 | T&D 年化 `30 亿美元+` | 全国性 transmission / interconnection cycle 放大 | 客户提前锁定 labor / equipment planning 到 2030+ |
+| Prefab / BIM / commissioning | 基准 | embedded 年化 `1.5-2.5 亿美元` | 大型项目常规采用 | 项目级 FAT/SAT、BIM/VDC 标准化 |
+| Prefab / BIM / commissioning | 乐观 | `2.5-4.0 亿美元` | 12.5/25/50MW electrical block 逐步进入 RFP | shop QA、digital model、commissioning package 可复用 |
+| Prefab / BIM / commissioning | 极度乐观 | `4-6 亿美元` | prefab capacity 被客户视为产能瓶颈 | 客户把 MYRG 当 repeatable block delivery partner，而非单次承包商 |
+
+## 8. 基于 backlog 和供给的未来一年增速预测
+
+### 8.1 Backlog 和订单能见度
+
+| 指标 | 数值 | 判断 |
+|---|---:|---|
+| 2026Q1 total backlog | `28.4 亿美元` | 创纪录，同比 `+7.7%` |
+| 2026Q1 T&D backlog | `9.807 亿美元` | 比 2025Q4 的 `10.2 亿美元`下降，但 MSA 只计约 90 天，不能简单看低 |
+| 2026Q1 C&I backlog | `18.6 亿美元` | 创高，显示 C&I 项目能见度强 |
+| Backlog / LTM revenue | `0.74x` | 对承包商不低，但需看 conversion 和 MSA 未入账 |
+| 2026Q1 inferred B2B | `1.02x` | 当季订单基本覆盖收入 |
+| 2025Q4 inferred B2B | `1.16x` | 年末订单明显强 |
+| Xcel MSA | `>5 亿美元` / 5 年 | 不会一次性进 backlog，但支撑 T&D 多年收入 |
+| Valley/Comet | 过去两年合计平均年收入 `>4 亿美元` | 交割后可带来约 `10%+`公司收入 run-rate step-up |
+
+### 8.2 未来一年增长情景
+
+| 情景 | 公司总收入增速 | 未来一年收入 run-rate | Backlog / 供给推导 | 关键风险 |
+|---|---:|---:|---|---|
+| 基准 | `+15-22%` reported，包括收购；organic `+9-13%` | `46-50 亿美元` | 当前 backlog 支撑，MSA 未入账提供 T&D 稳定性；Valley/Comet 全年化 `>4 亿美元` | data center 进度滞后、Valley 整合成本、DSO 回升 |
+| 乐观 | `+25-35%` | `51-56 亿美元` | C&I data center backlog 加速转收入，T&D large projects 2027 起量，prefab 提高 labor productivity | OEM 设备交期、fixed-price labor / copper inflation |
+| 极度乐观 | `+45%+` | `58-65 亿美元` | AI 数据中心 electrical / substation crews 供不应求，客户提前锁 capacity，big transmission awards 提前进 backlog | 项目管理极限、劳动力瓶颈、客户分散不足、估值过热 |
+
+取消率推断：公司未披露取消率，也没有公开显示 backlog 大规模取消。需要把风险放在“延期”和“设计变更”而不是“取消”。AI 数据中心项目若 power / transformer / switchgear / permit 延迟，MYRG 的收入确认可能后移；若项目已 NTP 且客户信用强，取消概率低于普通商业地产。
+
+## 9. 竞争格局、替代风险和客户切换成本
+
+### 9.1 竞争对手
+
+| 领域 | 主要竞争对手 | MYRG 相对位置 |
+|---|---|---|
+| T&D / grid / substation | Quanta Services, MasTec, Primoris, Pike, Michels, Henkels & McCoy, Kiewit, Black & Veatch, Burns & McDonnell 等 | MYRG 是北美头部 specialty electrical contractor，规模小于 Quanta，但专业、低杠杆、客户关系强 |
+| Data center electrical / C&I | EMCOR, IES Holdings, Rosendin, M.C. Dean, Cupertino Electric, Helix Electric, CVE, Comfort Systems USA, DPR / Turner / Holder 生态中的专业电气分包 | MYRG 有长期 data center 经验、Sturgeon / CSI / Huen / Valley / Comet 能力，数据中心不是新进入 |
+| MEP / prefab / commissioning | EMCOR, IES, Comfort Systems, Vertiv / Schneider / ABB / Siemens module ecosystem, Global Commissioning, Uptime Institute 等 | MYRG 强在 electrical 和施工执行，不是独立 commissioning software / equipment OEM |
+| Utility MSA / distribution | Quanta, MasTec, Pike, local utility contractors | MSA 关系是壁垒，但区域竞争依然强 |
+
+### 9.2 技术和路线是否是未来主流
+
+| 技术 / 业务路线 | 是否主流 | 对 MYRG 的影响 |
+|---|---|---|
+| AC 高压 / 中压接入 + 传统变压器 + switchgear + UPS / busway | 2026-2027 仍是主流 | 最直接受益。MYRG 施工和调试经验可复用 |
+| 12.5/25/50MW repeatable electrical / mechanical block | 正在成为主流交付方式 | 利好 prefab、BIM、repeatable project delivery |
+| 800VDC / HVDC / MV UPS | 方向确定，但 2026 仍多为 design-in / pilot | 短期不是大收入，2027 后若进入 RFP，MYRG 需获得新标准施工和安全经验 |
+| Direct-to-chip liquid cooling | 高密 AI hall 主线 | MYRG 不卖冷板/CDU，但负责电气接口、controls、leak detection、commissioning 配合 |
+| onsite generation + BESS / microgrid | 在 power-constrained market 加速 | 扩大电气施工、并网、ATS、BESS interface、controls scope |
+| 核电 / SMR for AI | 长周期可选性，不是 2026-2027 设备收入主线 | MYRG 短期直接收入有限，更多是 PPA / site / utility 侧长期背景 |
+
+### 9.3 替代风险
+
+| 风险 | 影响 | 监控指标 |
+|---|---|---|
+| 大型 GC / hyperscaler 自建或锁定其他电气承包商 | MYRG 市占率受压 | 中标公告、data center backlog、C&I growth 是否落后 peers |
+| 设备 OEM 提供更多预制模块和 turnkey solution | 一部分施工价值被 OEM / module factory 吸收 | Schneider / Vertiv / ABB / Eaton prefab revenue，MYRG scope 是否从安装变为低毛利分包 |
+| 劳动力短缺导致执行瓶颈 | 收入不能按 backlog 转化，margin 波动 | DSO、project inefficiency、change order、safety、CapEx 和 hiring |
+| 固定价合同中材料 / 人工涨价 | 毛利率下行 | Gross margin 低于 `11%`，segment OI margin 跌破目标区间 |
+| AI CapEx 放缓或 data center power 延期 | C&I data center 项目延迟 | Hyperscaler CapEx、leased MW、interconnection queue、NTP、backlog conversion |
+| 800VDC / DC 架构改变施工规范 | 既有 AC 施工经验需升级 | OCP / Schneider / NVIDIA / ABB reference design 是否进入客户 RFP |
+
+### 9.4 客户切换成本
+
+| 阶段 | 切换成本 | 原因 |
+|---|---|---|
+| 招标前 | 中 | 客户仍可比较多家承包商；价格、bonding、safety、reference 决定入围 |
+| 已设计 / BIM / prefab 阶段 | 高 | 换承包商会重做 model、submittal、shop drawing、prefab planning 和 schedule |
+| 已 NTP / 现场施工阶段 | 很高 | 替换会造成停工、责任边界不清、保险和安全风险、commissioning 延迟 |
+| 多园区 repeat customer | 高 | 标准化 block、客户规范、团队磨合和历史安全记录带来复购壁垒 |
+| 运维 / service 阶段 | 中高 | predictive maintenance、low-voltage、controls、as-built data 和故障响应形成粘性 |
+
+结论：MYRG 没有硬件专利式垄断，但在大型 data center / utility 项目中，一旦进入客户标准和项目执行阶段，切换成本很高。它的定价权不是来自“唯一技术”，而是来自“可靠、合格、可按期交付的施工资源稀缺”。
+
+## 10. 需要持续跟踪的指标
+
+| 频率 | 指标 | 为什么重要 |
+|---|---|---|
+| 季度 | C&I revenue growth、C&I OI margin、C&I backlog | 判断 data center 直接收入是否继续放大 |
+| 季度 | T&D MSA revenue mix、T&D backlog、large transmission awards | 判断 AI power / utility capex 是否转为 MYRG 收入 |
+| 季度 | inferred bookings / B2B | 观察 backlog 是否继续覆盖收入 |
+| 季度 | gross margin、project inefficiency、change order、job closeout | 项目制公司最核心风险 |
+| 季度 | DSO、operating cash flow、free cash flow | 判断收入增长是否消耗现金 |
+| 2026H2 | Valley/Comet close、integration、revenue contribution、margin | 交易是 2026 最大结构变化 |
+| 2026H2-2027 | Data center project awards by state、NTP、power / substation milestones | 判断 data center 不是新闻而是真订单 |
+| 2026H2-2027 | 800VDC / MV UPS / repeatable block 是否进入 RFP | 判断 prefab / new architecture 能否提高 MYRG scope 和 margin |
+
+## 11. 资料来源和本地行业依据
+
+### 11.1 公司和财报来源
+
+- MYR Group 2026Q1 earnings release：<https://investor.myrgroup.com/news-releases/news-release-details/myr-group-inc-announces-first-quarter-2026-results>
+- MYR Group 2026Q1 earnings call transcript PDF：<https://investor.myrgroup.com/static-files/e6ebdf11-b6d6-4f30-b0f0-ba45726ea9ab>
+- MYR Group 2025 10-K / annual report：<https://investor.myrgroup.com/static-files/f15fbf6f-78c7-4fbc-801a-5638665c2d1c>
+- MYR Group 2025Q4 / FY2025 release：<https://investor.myrgroup.com/news-releases/news-release-details/myr-group-inc-announces-fourth-quarter-and-full-year-2025>
+- MYR Group 2025Q3 release：<https://investor.myrgroup.com/news-releases/news-release-details/myr-group-inc-announces-third-quarter-and-first-nine-months-2025>
+- MYR Group 2025Q2 release：<https://investor.myrgroup.com/news-releases/news-release-details/myr-group-inc-announces-second-quarter-and-first-half-2025>
+- MYR Group 2025Q1 release：<https://investor.myrgroup.com/news-releases/news-release-details/myr-group-inc-announces-first-quarter-2025-results>
+- MYR Group Valley/Comet acquisition release, 2026-05-27：<https://www.globenewswire.com/news-release/2026/05/27/3302388/10748/en/myr-group-enters-definitive-agreement-to-acquire-valley-electric-and-comet-electric.html>
+- MYR Group C&I capability page：<https://myrgroup.com/capabilities/commercial-industrial-construction/>
+- Sturgeon Electric Iron Mountain data center project：<https://sturgeonelectric.com/projects/iron-mountain-data-center/>
+- MYR Group Chase City to Cloud transmission project：<https://myrgroup.com/news/supporting-data-center-connections-with-new-transmission/>
+- Comet Electric about / capabilities：<https://cometelectric.com/about/>
+
+### 11.2 行情和估值来源
+
+- Google Finance MYRG search snapshot, 2026-06-11
+- Yahoo Finance MYRG quote / analysis snapshots, 2026-06-11
+- StockAnalysis MYRG statistics, 2026-06-11：<https://stockanalysis.com/stocks/myrg/statistics/>
+- MarketWatch MYRG analyst estimates, 2026-06-11：<https://www.marketwatch.com/investing/stock/myrg/analystestimates>
+
+### 11.3 本地行业调研资料
+
+本报告只使用 `基本面/行业调研/` 下相关行业资料作为项目内背景，未读取 `特征量化/` 或其他公司正式报告正文。
+
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+- `行业调研/产业背景/顶级会议信息/data_center_world_2026_research_report.md`
+- `行业调研/产业背景/顶级会议信息/conference_update_datacloud_global_congress_2026_2026-06-10.md`
+
+### 11.4 关键行业口径
+
+- 本地 AI 数据中心建设模型：2026 美国 AI 数据中心建设务实情景 `$310-390B`，2027 `$430-560B`；2026 新增或进入设备订单的 AI IT-load equivalent `6.0-8.5GW`，2027 `9.0-14.0GW`。
+- 本地瓶颈排序：电力接入 / 变压器 / switchgear > HBM / CoWoS / advanced packaging > 液冷集成 > MEP 劳动力与调试 > NeoCloud 融资与利用率。
+- 本地 facility-heavy CapEx：2026 务实约 `$10-22M/MW IT`；其中电气 power train 约 `$4-9M/MW IT`，MEP / design / commissioning / contingency 是 MYRG 可触达的重要利润池。
+- Data Center World 2026 和 Datacloud Global Congress 2026 的共同信号：AI 数据中心从传统机房扩容转向电力、冷却、模块化交付、现场发电、融资、保险和 commissioning 共同约束的工业基础设施。

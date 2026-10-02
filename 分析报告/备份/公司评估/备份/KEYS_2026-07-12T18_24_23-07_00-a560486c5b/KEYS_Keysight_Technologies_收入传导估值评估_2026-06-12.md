@@ -1,0 +1,162 @@
+# 公司收入传导与价值传导评估：Keysight Technologies（KEYS）
+
+报告生成日期：2026-06-12  
+公司：Keysight Technologies, Inc.（KEYS）  
+主口径：NTM，指 FY2026 Q3 至 FY2027 Q2，约 2026-05-01 至 2027-04-30。  
+资料边界：项目内只使用 `公司调研/` 与 `行业调研/`；未使用排除目录或下游量化资料。外部校准只使用 Keysight 官方披露、SEC/IR 资料、公司新闻稿和标准/行业一手线索。  
+重要限制：本文只评估经营收入、利润和现金流传导，不做金融市场定价判断；市场价格数据不作为经营传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM，即 FY2026 Q3、FY2026 Q4、FY2027 Q1、FY2027 Q2。FY2026 全年、FY2027 run-rate、3.2T/CPO/PCIe 8.0 等远期期权只作补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：最新经营锚点为 FY2026 Q2，季度截至 2026-04-30、公告于 2026-05-19。Q2 收入 `17.17 亿美元`，同比 `+31%`，core `+24%`；订单 `20.51 亿美元`，同比 `+56%`，book-to-bill 约 `1.19x`。H1 FY2026 收入 `33.17 亿美元`。管理层 Q3 FY2026 收入指引 `17.30-17.50 亿美元`，FY2026 全年收入增长预期为 `high-20s%`，对应 FY2026 收入约 `68-70 亿美元`。
+- 重要产品/业务线：AI fabric / network workload emulation；1.6T/224G 光电验证与生产测试；PCIe/CXL/高速 I/O compliance；半导体、高密电子、EDA/CAE 仿真与测试；A&D、6G、NTN/PNT；汽车、能源、通用电子、校准与服务。
+- NTM 公司收入四情景：悲观 `66-69 亿美元`，基准 `73-76 亿美元`，乐观 `78-83 亿美元`，极度乐观 `84-90 亿美元`。基准不是简单外推 Q2 高增，而是用 FY2026 high-20s 指引、Q3 指引、Q2 订单强度和 FY2027 上半年正常转收入做重叠折扣。
+- 利润或 EBITDA 四情景：公司未在本资料集中给出标准 EBITDA 口径，本文用 non-GAAP 经营利润和净利润方向替代。悲观 non-GAAP 经营利润约 `18-20 亿美元`；基准 `21.5-23.5 亿美元`；乐观 `24.5-27.0 亿美元`；极度乐观 `28.5-31.5 亿美元`。Q2 IEEPA 退款对利润率有一次性抬升，基准不把 Q2 reported non-GAAP 毛利率 `72.3%`线性外推。
+- 最大传导瓶颈：不是行业需求，而是 AI/wireline 订单是否能在 NTM 内按 1-4 个季度节奏确认收入，以及 1.6T/224G、AI workload emulation、PCIe/CXL 需求是否从客户验证转为重复采购。
+- 最大利润率变量：高端仪器、协议软件、AI workload 模型、校准服务和软件 attach rate 能否抵消 Spirent 整合成本、VIAVI 等竞争、客户内制和光模块量产后压价。
+- 最大现金流变量：订单高增带来的应收、库存、递延收入与客户退款负债节奏；若高端系统交付或验收延后，自由现金流可能短期低于利润。
+- 可信度：公司层面基准为`中高`，因为收入、订单、指引、分部利润率和现金流均有 A/B 级证据；产品级 AI/fabric/optical 分拆为`中`，因为 Keysight 未披露 AI 相关收入美元数和产品级 backlog。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| AI fabric / network workload emulation | FY2026 run-rate 估算 `7-10 亿美元`，嵌在 Commercial Communications 与 wireline | 约 `10%-15%` | Q2 wireline 订单创纪录，AI data center network validation 是当前最大增量 | B/C：CSG 与 Commercial Communications 为 A，产品分拆为 C | 进入基准，但用订单转收入折扣；不把云厂网络 CapEx 直接当收入 | UEC/UALink 认证、推理 workload、AI inference load testing 可进乐观或附录 |
+| 1.6T/224G 光电验证与生产测试 | FY2026 run-rate 估算 `4-6.5 亿美元`，嵌在 CSG/EISG | 约 `6%-10%` | 800G 放量、1.6T 导入、224G PAM4、LPO/LRO 和 CPO/PIC 测试前置 | B/C：行业与产品发布明确，收入分拆未披露 | 进入基准，基准只纳入 800G/1.6T 已进入客户验证和产线扩容部分 | 3.2T、448G、CPO/CPX/NPO 大规模量产主要作为乐观上限或远期期权 |
+| PCIe/CXL/高速 I/O compliance | FY2026 run-rate 估算 `2.5-4 亿美元` | 约 `4%-6%` | AI rack 内 CPU/GPU/NIC/DPU/SSD/CXL memory 和 retimer 升级带来验证前置 | C：标准/产品和客户路径明确，收入分拆未披露 | 小比例进入基准；PCIe 7.0/8.0 pathfinding 多数不进基准 | PCIe 8.0、optical PCIe、UALink rack-scale 放入乐观或附录 |
+| 半导体、高密电子、EDA/CAE 仿真与测试 | FY2026 run-rate 估算 `4-6.5 亿美元`，EISG Q2 总收入 `4.86 亿美元` | 约 `7%-10%` | AI ASIC、HBM、先进封装、高密 PCB、PowerArtist/OSG/ESI 提升设计验证强度 | A/C：EISG 分部 A，AI/EDA 分拆 C | 进入基准，按 EISG 双位数增长与软件/服务 mix 保守纳入 | CPO/PIC 生产测试、agentic SI/PI、HBM4 KGD 作为乐观或附录 |
+| A&D、6G、NTN/PNT、defense modernization | ADG Q2 收入 `3.73 亿美元`，NTM 基数约 `15-17.5 亿美元` | 约 `21%-24%` | 非 AI，但收入质量和订单能见度高，Spirent PNT 有增量 | A/B：终端市场收入和并购路径可见 | 进入基准，是公司级稳定器 | 6G/NTN 大规模商用不替代 NTM 主口径 |
+| 汽车、能源、通用电子、校准服务和存量 T&M | NTM 基数估算 `30-35 亿美元`，含多类传统和服务收入 | 约 `40%-47%` | 抵消项和现金流底盘；增长不如 AI/wireline，但服务粘性高 | A/B：分部、服务、递延收入和存量客户基础可见 | 进入基准，按低到中个位数至低双位数处理 | 汽车 SDV/电池/能源大单只进入乐观，不因 AI 主题上调 |
+
+说明：表中产品收入为经营归因口径，部分业务线在 CSG/EISG 内交叉，不能逐项相加。公司汇总在第 6 节做重叠折扣。
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 Keysight 份额、收入确认或利润率。需求单位按产品选择，包括订单强度、端口/链路验证、模块/产线验证、标准一致性项目、软件席位、服务合同和终端客户预算。相对预期以 Keysight FY2026 high-20s 收入指引、Q3 指引、Q2 订单强度、当前行业资料和正常替换周期为锚。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| AI fabric / network workload emulation | 2026 年 AI Ethernet fabric 以 800G 为主体，1.6T/102.4T 从 2026H2 ramp；Q2 wireline 订单创纪录 | 云厂上电或网络采购推迟，客户只维持 800G 现有验证，需求 `+0%-15%` | 800G 继续、1.6T 初步导入，AI workload/拥塞验证成为高端集群验收项，需求 `+25%-45%` | UEC、RoCE、AI inference traffic 和 1.6T switch/NIC 同步加速，需求 `+50%-75%` | 多云把 workload-aware certification 作为供应商交付门槛，需求 `+80%+` | 需求池从数亿美元级测试 appliance 和软件扩张到十亿美元级 | 基准符合当前订单和行业预期；乐观需 Q3/Q4 orders 继续高于收入 | 正证：Q2 orders +56%、wireline 纪录、行业 1.6T H2 ramp。反证：客户自研测试、VIAVI/TestCenter 抢 reference、AI CapEx 延迟 |
+| 1.6T/224G 光电验证与生产测试 | 高速互连行业报告估算 2026 核心市场 `32-50 亿美元`，1.6T/224G 直接相关未来 12 个月需求 `+25%-45%` | 1.6T 客户 qual 延迟，800G ASP 下行，模块厂减少 duplicate test capex，需求 `+5%-20%` | 800G/1.6T 产线扩容、224G PAM4 验证和 LPO/LRO 调试正常推进，需求 `+25%-45%` | 1.6T 模块与 102.4T switch 大客户批量导入，生产测试交期紧，需求 `+45%-70%` | 3.2T/400G lane、CPO/CPX 和 448G pathfinding 同时前置，需求 `+80%+` | 核心需求池未来一年增加约 `8-20 亿美元`，取决于重叠口径 | 基准略高于普通 T&M 周期；乐观高于当前预期但需客户订单 | 正证：OFC 2026、Keysight 224G/1.6T 产品更新、本地行业资料。反证：CPO 可靠性、光模块库存、出口管制 |
+| PCIe/CXL/高速 I/O compliance | PCIe 7.0、CXL 3.x/4.0、retimer/AEC/DAC/UALink 进入 2026 验证主战场 | 标准或端设备节奏慢，客户只做实验室验证，需求 `+0%-15%` | IP、retimer、板卡和早期 silicon 持续采购 PHY/protocol test，需求 `+25%-40%` | AI rack 内部高速 I/O 早于普通服务器放量，需求 `+55%-80%` | PCIe 7/8 pathfinding 与 optical-aware retimer 同时加速，需求 `+100%+` | 当前数亿美元级需求池向 `6-10 亿美元`行业池靠拢 | 基准需折扣；多数需求是设计验证前置，不等于产线收入 | 正证：PCIe 7.0/8.0 pathfinding 与 DesignCon/PCI-SIG 议程。反证：端设备量产慢、Teledyne/VIAVI/EDA 生态竞争 |
+| 半导体、高密电子、EDA/CAE 仿真与测试 | EISG Q2 收入 `4.86 亿美元`，同比 `+24%`；AI ASIC/HBM/高密 PCB/仿真需求提升 | 半导体资本开支或汽车/工业恢复低于预期，需求 `+0%-8%` | 半导体、通用电子、汽车能源维持双位数或高个位数恢复，需求 `+10%-20%` | AI ASIC、HBM4、先进封装、高密 PCB 和 power-aware design 同步前置，需求 `+20%-35%` | HBM4、CPO/PIC、agentic SI/PI 与 power/thermal 仿真快速商业化，需求 `+40%+` | EISG 可见需求从低谷恢复到接近 `20 亿美元`年化以上 | 基准符合当前 EISG 增长；极度乐观多属远期期权 | 正证：EISG +24%、半导体和通用电子双位数。反证：EDA 强竞争、客户流程迁移慢、AI ATE 主收入不在 KEYS |
+| A&D、6G、NTN/PNT、defense modernization | ADG Q2 收入 `3.73 亿美元`，同比 `+24%`；Spirent PNT 与 Keysight RF/EMSO 组合增强 | 项目验收、预算拨款或并购整合慢，需求 `-5%-+5%` | A&D、NTN、6G 研发和国防现代化正常推进，需求 `+8%-15%` | 卫星/PNT、雷达、EMSO、6G 原型测试同步加速，需求 `+15%-25%` | 多个国防/卫星项目提前转交付，需求 `+25%+` | NTM 需求池可支撑 `15-18 亿美元`收入基础 | 基准偏稳健，非 AI 但订单质量强 | 正证：ADG +24%、Spirent PNT 并入。反证：政府项目周期、客户验收、出口/合规 |
+| 汽车、能源、通用电子、校准服务和存量 T&M | 存量仪器、软件维护、校准服务和汽车/能源电子测试形成收入底盘 | 汽车/工业复苏放缓，传统 wireless/通用仪器下滑，需求 `-5%-+3%` | 服务和通用电子稳定，汽车能源低到中个位数恢复，需求 `+3%-8%` | SDV、电池、电网和工业自动化项目改善，需求 `+8%-15%` | 多行业设备更新叠加，但 NTM 概率低，需求 `+15%+` | 绝对需求大但增量小，是公司收入稳定器 | 基准符合当前预期；不因 AI 热度上调 | 正证：递延收入增长、服务粘性。反证：传统 5G/wireless 周期、客户预算延迟、价格竞争 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断产品需求能否进入 Keysight NTM 收入表，以及当前可收入化基数。Keysight 能参与的需求池不等于可确认收入。当前收入锚点优先使用 FY2026 Q2 分部和终端市场收入、Q3 指引、orders、递延收入、已完成并购和正式产品/客户节奏；产品级 AI 收入因公司未披露美元数，采用保守模型估算，并明确证据等级。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| AI fabric / network workload emulation | Commercial Communications Q2 `8.58 亿美元`、同比 `+40%`；wireline 订单纪录；AI-related H1 超 FY2025 全年但未披露美元数 | 直接，卖测试硬件、traffic generator、AI workload 软件、服务 | 高毛利硬件 + 高毛利软件/服务；经营杠杆强 | `7-9 亿美元` | `9-12 亿美元` | `12-16 亿美元` | `16-21 亿美元` | 基准符合订单转收入；乐观高于当前预期 | B/C | 是 | A 级分部收入 + B 级订单语言 + C 级产品拆分；基准用折扣 | 进入 NTM 基准，但不得把云厂 AI 网络总预算当 KEYS 收入 |
+| 1.6T/224G 光电验证与生产测试 | 产品发布、OFC 2026、行业资料；归入 CSG/EISG，产品级未披露 | 直接，卖仪器、BERT/scope/VNA/OMA、光电软件、校准、产线测试 | 高端硬件毛利高，软件/校准附着高；量产后有 ASP 压力 | `4.5-6 亿美元` | `6-8.5 亿美元` | `8.5-11.5 亿美元` | `11.5-15 亿美元` | 基准略高于 FY2026 run-rate；乐观需订单持续 | B/C | 是 | 行业 demand clear + Keysight 1.6T/224G 产品路径 + CSG 订单强度 | 进入 NTM 基准；3.2T/CPO 大规模只进乐观或附录 |
+| PCIe/CXL/高速 I/O compliance | PCIe/CXL/retimer 产品和标准路径明确；收入嵌在 EISG/CSG | 直接，仪器、协议分析、compliance 软件 | 软件 attach 高，但竞争较强 | `2-3 亿美元` | `2.8-4.2 亿美元` | `4.2-6 亿美元` | `6-8.5 亿美元` | 基准为小比例可确认；极度乐观为 NTM 上限 | C | 是，小比例 | 客户、标准和产品路径清楚，但缺订单美元数，基准保守 | 进入 NTM 基准的低权重项；PCIe 8.0 和 UALink 多数附录跟踪 |
+| 半导体、高密电子、EDA/CAE 仿真与测试 | EISG Q2 `4.86 亿美元`、同比 `+24%`；半导体/通用电子/汽车能源双位数增长；ESI/OSG/PowerArtist 并入 | 直接，测试仪器、EDA/CAE 软件、仿真、服务 | 软件/仿真高毛利，硬件和系统测试中高毛利 | `4.5-6 亿美元` | `5.5-7.5 亿美元` | `7.5-9.5 亿美元` | `9.5-12.5 亿美元` | 基准符合 EISG 正常恢复；极度乐观需 HBM4/CPO 前置 | A/C | 是 | EISG 为 A，AI/EDA 高速子项为 C；C 级按折扣 | 进入 NTM 基准；不把 Advantest/Teradyne 的 HBM ATE 景气全算给 KEYS |
+| A&D、6G、NTN/PNT、defense modernization | Aerospace, Defense and Government Q2 `3.73 亿美元`，同比 `+24%`；Spirent PNT 提供并购增量 | 直接，RF、雷达、卫星、PNT、6G/NTN 测试 | 毛利率高，项目确认慢，服务粘性强 | `14-15.5 亿美元` | `15.5-17.5 亿美元` | `17.5-20.5 亿美元` | `20.5-23.5 亿美元` | 基准符合 run-rate 与项目节奏 | A/B | 是 | A 级终端市场收入，B 级并购和项目路径 | 进入 NTM 基准，是公司非 AI 稳定增长来源 |
+| 汽车、能源、通用电子、校准服务和存量 T&M | EISG 非 AI、传统 T&M、服务/维护/校准、递延收入 `9.88 亿美元`可见性 | 直接与间接，存量服务和仪器替换 | 利润稳定，增长较低；服务现金转换强 | `30.5-33.5 亿美元` | `30.5-34.5 亿美元` | `31-35 亿美元` | `31-35.5 亿美元` | 大体符合当前预期；不作为超预期主因 | A/B | 是 | 分部收入、递延收入和存量客户基础 | 进入 NTM 基准；传统 wireless/通用仪器下滑作为抵消项处理 |
+
+排除项：云厂 AI CapEx 总额、GPU/ASIC/光模块/交换机硬件收入、客户未披露项目总预算、CPO/3.2T/PCIe 8.0 长期 TAM、同业 HBM ATE 或探针卡订单，不进入 KEYS NTM 基准收入。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第 3 节需求和第 4 节可收入化基数出发，评估每个产品在 NTM 内能给 Keysight 贡献的收入和利润。产品行是经营归因口径，AI fabric、optical、PCIe/CXL 与 EISG/CSG 存在交叉；公司级汇总在第 6 节用分部和总收入指引做重叠折扣。利润贡献为 non-GAAP 经营贡献估算，非公司披露。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| AI fabric / network workload emulation | 悲观 | `7-9 亿美元` | `2.2-3.2 亿美元` | 高毛利但利用率和软件 attach 不足 | 低于当前预期 | 订单强但缺 backlog；客户可能延迟确认 | 保留为悲观 | 云厂上电延迟、客户内制、VIAVI 抢 reference |
+| AI fabric / network workload emulation | 基准 | `9-12 亿美元` | `3.2-4.8 亿美元` | 经营利润率上行，软件和服务提高 mix | 符合当前预期 | Q2 Commercial Communications +40%，wireline 纪录，AI-related H1 超 FY25 | 保留 | 订单转收入节奏和客户验收 |
+| AI fabric / network workload emulation | 乐观 | `12-16 亿美元` | `4.8-7.0 亿美元` | 软件 attach 和 early access pricing 改善 | 高于当前预期 | 1.6T/UEC/RoCE workload certification 扩散 | 保留但可信度中 | 需 Q3/Q4 orders 继续高于收入 |
+| AI fabric / network workload emulation | 极度乐观 | `16-21 亿美元` | `7.0-9.8 亿美元` | 高毛利软件化显著 | 明显高于当前预期 | 多云把 workload-aware certification 变成交付门槛 | 下移为乐观上限 | 任一客户预算、标准或交付节奏缺证据即下移 |
+| 1.6T/224G 光电验证与生产测试 | 悲观 | `4.5-6 亿美元` | `1.3-2.0 亿美元` | 光模块量产后价格和产线 CapEx 压力压缩利润 | 低于当前预期 | 1.6T 需求仍在，但确认慢 | 保留 | 1.6T qual 推迟、模块 ASP 快速下行、CPO 延后 |
+| 1.6T/224G 光电验证与生产测试 | 基准 | `6-8.5 亿美元` | `2.0-3.3 亿美元` | 高端 BERT/scope/VNA 和校准支持中高利润率 | 符合当前预期 | 1.6T/224G 产品发布、OFC 2026、800G/1.6T 行业放量 | 保留 | 客户多供应商采购和生产测试价格竞争 |
+| 1.6T/224G 光电验证与生产测试 | 乐观 | `8.5-11.5 亿美元` | `3.3-4.9 亿美元` | 1.6T mix 和软件/校准提升 | 高于当前预期 | 1.6T OSFP/OSFP-XD、LPO/LRO、224G host interface 加速 | 保留 | 需要模块厂重复下单和产线扩容 |
+| 1.6T/224G 光电验证与生产测试 | 极度乐观 | `11.5-15 亿美元` | `4.9-6.8 亿美元` | early access 定价和高端校准稀缺 | 明显高于当前预期 | 3.2T、CPO/CPX、448G pathfinding 同时前置 | 下移为乐观上限/附录 | CPO 量产时点不足以支撑 NTM 基准 |
+| PCIe/CXL/高速 I/O compliance | 悲观 | `2-3 亿美元` | `0.6-1.0 亿美元` | 利润率稳定但规模不足 | 低于当前预期 | 标准存在但端设备慢 | 保留 | PCIe 7/8 标准、silicon 和 retimer 量产节奏慢 |
+| PCIe/CXL/高速 I/O compliance | 基准 | `2.8-4.2 亿美元` | `1.0-1.6 亿美元` | 软件 attach 稳定 | 符合当前预期 | PCIe 7.0/CXL/retimer 设计验证前置 | 保留 | Teledyne LeCroy、VIAVI、EDA 生态竞争 |
+| PCIe/CXL/高速 I/O compliance | 乐观 | `4.2-6 亿美元` | `1.6-2.5 亿美元` | 协议软件和早期一致性毛利较高 | 高于当前预期 | AI rack 内高速 I/O 和 UALink/open scale-up 提前 | 保留但低权重 | 客户仍可能只采购少量实验室工具 |
+| PCIe/CXL/高速 I/O compliance | 极度乐观 | `6-8.5 亿美元` | `2.5-3.8 亿美元` | 高毛利但收入可信度低 | NTM 上限 | PCIe 7/8、optical PCIe、CXL memory 同时推进 | 移入附录/仅作跟踪 | 缺产品级订单美元数 |
+| 半导体、高密电子、EDA/CAE 仿真与测试 | 悲观 | `4.5-6 亿美元` | `1.2-2.0 亿美元` | 硬件 mix 或并购整合压低利润 | 低于当前预期 | EISG 恢复但半导体/汽车可能放慢 | 保留 | AI ATE 主线被 Advantest/Teradyne 捕获，不归 KEYS |
+| 半导体、高密电子、EDA/CAE 仿真与测试 | 基准 | `5.5-7.5 亿美元` | `1.8-2.8 亿美元` | 软件、仿真和高频测试支撑利润率 | 符合当前预期 | EISG Q2 +24%，半导体、通用电子、汽车能源双位数 | 保留 | 产品分拆缺披露，C 级假设需折扣 |
+| 半导体、高密电子、EDA/CAE 仿真与测试 | 乐观 | `7.5-9.5 亿美元` | `2.8-3.8 亿美元` | OSG/PowerArtist/ESI 与 PathWave 提升软件 mix | 高于当前预期 | AI ASIC、HBM4、高密 PCB、power-aware design 需求前置 | 保留 | EDA 强竞争，客户流程迁移慢 |
+| 半导体、高密电子、EDA/CAE 仿真与测试 | 极度乐观 | `9.5-12.5 亿美元` | `3.8-5.2 亿美元` | 高软件化但执行假设多 | NTM 上限 | CPO/PIC、agentic SI/PI、HBM4 KGD 同时兑现 | 下移为乐观上限 | 多数是 2027H2 以后更可信 |
+| A&D、6G、NTN/PNT、defense modernization | 悲观 | `14-15.5 亿美元` | `3.8-4.8 亿美元` | 项目毛利稳定但验收慢 | 低于当前预期 | 项目周期和政府预算不确定 | 保留 | 验收、拨款、出口合规 |
+| A&D、6G、NTN/PNT、defense modernization | 基准 | `15.5-17.5 亿美元` | `4.8-5.9 亿美元` | 稳定中高利润率 | 符合当前预期 | ADG Q2 +24%，Spirent PNT 并入 | 保留 | 并购整合和项目交付节奏 |
+| A&D、6G、NTN/PNT、defense modernization | 乐观 | `17.5-20.5 亿美元` | `5.9-7.2 亿美元` | 项目规模效应改善 | 高于当前预期 | NTN、PNT、6G、雷达/EMSO 需求共振 | 保留 | 不是 AI data center 主线，增速不应无限外推 |
+| A&D、6G、NTN/PNT、defense modernization | 极度乐观 | `20.5-23.5 亿美元` | `7.2-8.5 亿美元` | 高项目利润但收入确认慢 | 明显高于当前预期 | 多个大项目提前确认 | 下移为乐观上限 | 政府/卫星项目难在 NTM 内全部兑现 |
+| 汽车、能源、通用电子、校准服务和存量 T&M | 悲观 | `30.5-33.5 亿美元` | `7.6-9.2 亿美元` | 服务稳定，传统仪器和 wireless 拖累 | 略低于当前预期 | 传统业务仍是大基数 | 保留 | 5G/wireless 周期、客户预算延迟 |
+| 汽车、能源、通用电子、校准服务和存量 T&M | 基准 | `30.5-34.5 亿美元` | `8.2-10.0 亿美元` | 利润稳定，现金转换好 | 符合当前预期 | 递延收入、服务合同、校准粘性 | 保留 | 增长低，不支撑公司乐观情景 |
+| 汽车、能源、通用电子、校准服务和存量 T&M | 乐观 | `31-35 亿美元` | `8.8-10.5 亿美元` | mix 稳定略改善 | 略高于当前预期 | SDV、电池、电网、工业电子恢复 | 保留低权重 | 传统业务弹性有限 |
+| 汽车、能源、通用电子、校准服务和存量 T&M | 极度乐观 | `31-35.5 亿美元` | `9.0-10.8 亿美元` | 变化有限 | 不是极度乐观主因 | 多行业补库和服务增长 | 下移为基准/乐观 | 不具备非线性增长属性 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为 Keysight NTM 公司收入、毛利率、经营利润、净利润和自由现金流方向。产品之间的交叉、同一客户预算、一次性 IEEPA 影响、Spirent/OSG/PowerArtist 并购口径、传统业务抵消均已做折扣。绝对增速以 TTM 收入 `60.88 亿美元`为近似基数；相对预期以 FY2026 high-20s 指引、Q3 FY2026 指引和 Q2 订单强度为锚。公司未稳定披露 EBITDA 口径，表中使用 non-GAAP 经营利润和净利润方向。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `66-69 亿美元` | 约 `+8%-13%` | 低于 FY2026 high-20s 延续路径；Q3 指引可能能达成，但 FY2027H1 增速明显降温 | `64%-66%` | `27%-29%` | non-GAAP 经营利润约 `18-20 亿美元`；净利润方向低于 FY2026 run-rate | FCF 仍为正，但应收、库存和验收延迟压低转换率 | 中 | AI/wireline 订单转收入慢，1.6T/224G 需求推迟，传统业务抵消 |
+| 基准公司 | `73-76 亿美元` | 约 `+20%-25%` | 符合 Q3 指引、FY2026 high-20s 和订单正常转收入；FY2027H1 增速从高位正常化 | `66.5%-68.5%` | `29.5%-31.0%` | non-GAAP 经营利润约 `21.5-23.5 亿美元`；净利润随收入和 mix 稳步改善 | FCF margin 维持高位，营运资本随增长占用但不破坏现金质量 | 中高 | 订单确认节奏、一次性 IEEPA 不能外推、产品级 AI 收入缺披露 |
+| 乐观公司 | `78-83 亿美元` | 约 `+28%-36%` | 高于当前基准锚点；需要 Q3/Q4 orders 继续高于收入，Commercial Communications 维持高增长 | `68%-70%` | `31%-32.5%` | non-GAAP 经营利润约 `24.5-27.0 亿美元`；净利润和 FCF 同步改善 | FCF 强，但交付和服务扩张需要更多营运资本 | 中 | 高毛利 AI fabric/optical/软件占比提升，A&D 和 EISG 同步不掉队 |
+| 极度乐观公司 | `84-90 亿美元` | 约 `+38%-48%` | 明显高于当前预期；要求需求、公司捕获、利润质量和执行质量同时突破 | `70%-72%` | `33%-35%` | non-GAAP 经营利润约 `28.5-31.5 亿美元`；净利润弹性强但可信度受确认节奏约束 | FCF 绝对额大增，但短期营运资本波动更高 | 低到中 | 1.6T/AI workload、光电验证、PCIe/CXL、A&D 和 EISG 多环节同时超预期；任一环节缺证据即下移 |
+
+汇总检查：
+
+- AI fabric、optical、PCIe/CXL 和半导体/EDA 产品线存在 CSG/EISG 交叉，已用公司总收入指引、Q2 revenue run-rate 和 book-to-bill 做折扣，未逐项简单相加。
+- Q2 IEEPA 退款对 reported non-GAAP 毛利率和 EPS 有一次性抬升，基准公司毛利率不按 Q2 `72.3%`外推。
+- Spirent 收购增强 PNT、network assurance 和 automation，但高速 Ethernet、网络安全、channel emulation 等资产剥离给 VIAVI，AI network test 不能把 Spirent 全部能力计入。
+- 传统 wireless、通用仪器、汽车/工业周期和光模块量产后压价，是公司级抵消项。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。校准动作只使用保留、上移、下移、排除、移入附录、仅作跟踪。风险只在实际影响层级处理一次，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q2 FY2026 订单 `20.51 亿美元`、同比 `+56%`、book-to-bill `1.19x` | 收入基数、产品贡献、公司汇总 | 提高 NTM 收入可见性，支撑基准和乐观 | 若转为高端 AI/wireline mix，可提高经营利润率 | 订单转收入需交付、验收和服务；营运资本可能先上升 | 基准保留；乐观保留但需连续 orders 证据 |
+| Q2 收入 `17.17 亿美元`、CSG `12.31 亿美元`、EISG `4.86 亿美元` | 收入基数 | 提供 A 级当前收入锚 | 分部 OM 均约 `33%`，但受一次性因素影响 | 收入 run-rate 已接近 FY2026 high-20s 指引 | 基准保留 |
+| Management Q3 FY2026 revenue guide `17.30-17.50 亿美元` 和 FY2026 high-20s 增长 | 公司汇总 | 锚定 FY2026 下半年的最低可见路径 | EPS 指引低于 Q2，说明不应外推一次性高利润 | 有助于 NTM 前两季可见性 | 基准保留；极度乐观不得只靠 Q2 extrapolation |
+| H1 FY2026 AI-related business 已超过 FY2025 全年，但未披露美元数 | 产品贡献 | 支撑 AI fabric、wireline、optical 进入基准 | 高毛利可能改善 mix，但不能量化 | 执行可信度中等，缺 backlog 和产品级收入 | 基准保留但折扣；不把 AI TAM 直接入表 |
+| 行业 800G 主体、1.6T/102.4T 2026H2 ramp、224G 和 AI workload emulation 前置 | 产品需求 | 支撑 AI/wireline 和 optical 产品需求强于普通 T&M | 高端仪器、软件、校准有利润率上行 | 标准和客户认证会拉长确认周期 | 需求基准和乐观保留 |
+| EISG Q2 +24%，半导体、通用电子、汽车能源双位数增长 | 公司组合 | 增强非 CSG 收入底盘 | 软件/EDA/高密电子 mix 有改善空间 | 分散单一 AI fabric 依赖 | 基准保留 |
+| A&D Q2 +24%、Spirent PNT 并入 | 公司组合 | 提供非 AI 增长和稳定收入 | 项目利润稳定，但整合成本存在 | 项目验收慢，现金确认可能滞后 | 基准保留；乐观保留低权重 |
+| IEEPA 退款一次性抬升 Q2 毛利和 EPS | 利润率 | 不影响收入 | 限制 reported Q2 毛利率线性外推 | 退款和客户负债影响现金/营运资本判断 | 极度乐观利润率下移；基准使用剔除后口径 |
+| VIAVI、Anritsu、Rohde、Tektronix、Teledyne 和客户内制竞争 | 产品贡献 | 可能压低 KEYS 捕获率 | 压低软件 attach 和硬件价格 | 客户脚本迁移会增加执行成本 | 只在产品级份额/价格处理，不重复压公司需求 |
+| AI CapEx、上电、电力/液冷、光模块库存和 1.6T qual 延迟 | 产品需求、收入确认 | 延迟订单确认和产线扩容 | 若产线利用率不足，利润率下降 | 应收、库存和交付验收波动 | 悲观保留；不在利润率层重复惩罚同一需求风险 |
+| CPO/3.2T/PCIe 8.0/agentic SI 远期期权 | 需求、收入基数 | NTM 收入证据不足 | 长期可高毛利，但 NTM 不可确认 | 缺客户、交付和收入确认路径 | 移入附录或仅作跟踪 |
+
+四情景校准结论表：
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | AI/wireline 订单转收入慢，NTM 收入 `66-69 亿美元`，利润率回落到 `27%-29%` | 收入仍有 Q3 指引、A&D/EISG 和服务底盘支撑 | Q2 orders 很强，递延收入和分部收入仍支持基本盘 | 保留 | 悲观公司 | 中 | AI CapEx 延迟已在需求和收入确认处理，不再重复压所有利润项 |
+| 基准 | NTM 收入 `73-76 亿美元`，FY2026 high-20s 后 FY2027H1 正常化，经营利润率 `29.5%-31.0%` | Q2 收入、订单、Q3 指引、CSG/EISG/ADG 分部增长和现金流均支持 | 产品级 AI 收入未披露，C 级分拆需要折扣；IEEPA 不能外推 | 保留 | 基准公司 | 中高 | 产品分拆不确定只限制 AI 子项，不重复否定 A 级分部收入 |
+| 乐观 | NTM 收入 `78-83 亿美元`，AI fabric、optical、EISG 和 A&D 同步强于预期 | 1.6T/224G、AI workload、wireline orders 和行业资料均有正向证据 | 需要 Q3/Q4 orders 连续验证，且客户验收不能推迟 | 保留 | 乐观公司 | 中 | VIAVI/客户内制只限制份额和价格，不重复下调行业需求池 |
+| 极度乐观 | NTM 收入 `84-90 亿美元`，经营利润率 `33%-35%`，多产品非线性放量 | 行业上限存在，Q2 orders 显示需求强度，软件/服务 mix 可能放大利润 | CPO/3.2T/PCIe 8.0 多数尚无 NTM 收入确认路径；产品级 backlog 缺失 | 下移 | 乐观上限，部分移入附录 | 低到中 | 远期期权证据不足只限制极度乐观，不影响基准订单转收入 |
+
+## 8. 结论
+
+- 最可能情景：基准偏乐观的 NTM 正常兑现。收入最可能落在 `73-76 亿美元`，高于 FY2025/TTM，但较 FY2026 Q2 的爆发增速自然降温。经营质量的关键不是总需求有无，而是高毛利 AI/wireline、optical、软件和服务是否能维持 mix，抵消一次性 IEEPA 回落、并购整合和竞争压价。
+- NTM 收入结论：AI fabric/workload emulation 和 1.6T/224G optical validation 是增量核心；EISG 半导体/高密电子/EDA 是第二层支撑；A&D/6G/NTN/PNT 是非 AI 稳定器；传统通用电子和服务提供现金流底盘。不能把 AI 数据中心 CapEx、光模块收入或交换机收入直接映射为 KEYS 收入。
+- 利润/现金流结论：基准 non-GAAP 经营利润约 `21.5-23.5 亿美元`，经营利润率约 `29.5%-31.0%`。自由现金流方向仍强，但若强订单带来应收、库存和交付验收拉长，FCF 转换率可能短期低于 Q2/H1 表观强度。
+- 主要传导瓶颈：订单转收入节奏、产品级 AI 收入不披露、1.6T/224G 客户 qual、AI workload software attach、Spirent 剥离资产导致的竞争缺口、VIAVI/Teledyne/Anritsu/Rohde/Tektronix 多供应商竞争。
+- 乐观情景成立条件：Q3/Q4 FY2026 orders 继续高于收入；Commercial Communications 维持 `30%+`增长；wireline 继续创高或接近高位；递延收入继续增长；1.6T/224G/AI workload 产品从 demo 和 early qual 转为生产测试和重复订单；剔除 IEEPA 后经营利润率仍接近或高于 `31%`。
+- 极度乐观情景成立条件：AI fabric、1.6T/224G optical、PCIe/CXL、EISG 软件/仿真、A&D/NTN 多条产品线同时超预期；Keysight 能成为多个客户 reference architecture；软件、校准和服务 attach 明显提高；客户验收和供应链交付不拖延。当前证据不足以把极度乐观保留为主情景，只能作为乐观上限。
+- 悲观情景触发条件：book-to-bill 回到 `<1`；Q3/Q4 revenue 或 orders 低于指引路径；Commercial Communications 增速回落到低双位数或以下；wireline 不再创纪录且 AI-related 语言弱化；1.6T/224G qual 推迟；递延收入不增；剔除一次性后经营利润率回到 `27%-28%`。
+- 后续跟踪数据：quarterly orders、book-to-bill、Commercial Communications 与 wireline 语言、EISG 半导体/通用电子增长、递延收入、AI-related revenue 是否开始披露美元数、1.6T/224G/3.2T 产品订单、VIAVI 接收 Spirent 资产后的客户进展、剔除 IEEPA 后毛利率和经营利润率、营运资本和 FCF 转换。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Keysight 最新财报季度截至 2026-04-30，公告日期 2026-05-19；本地公司和行业资料日期主要为 2026-06-11；本报告日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：Keysight FY2026 Q2 results、FY2026 Q2 presentation、FY2026 Q2 prepared remarks、FY2026 Q2 Form 8-K/earnings materials、Keysight investor relations。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 revenue high-20s growth 只用于当前预期锚；FY2027 run-rate 只用于解释 NTM 后两季可能正常化；3.2T、448G、CPO/CPX/NPO、PCIe 8.0、agentic SI/PI、AI inference load testing 多数列为乐观上限或附录跟踪。
+- 本地公司资料：`公司调研/封测_检测_计量_光罩/KEYS_Keysight_Technologies_公司调研_2026-06-11.md`。
+- 本地行业资料：`行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-06-11.md`；`行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-06-11.md`；`行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`；`行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`；`行业调研/AI网络_光互联_铜互联/行业调研_PCIe_CXL高速IO交换与Retimer_2026-06-11.md`。
+- 主要外部来源：
+  - Keysight FY2026 Q2 results：https://investor.keysight.com/investor-news-and-events/financial-press-releases/press-release-details/2026/Keysight-Technologies-Reports-Second-Quarter-2026-Results/default.aspx
+  - Keysight investor relations earnings materials：https://investor.keysight.com/
+  - Keysight AI data center network testing use case：https://www.keysight.com/us/en/use-cases/test-ai-data-center-networks.html
+  - Keysight OFC 2026 AI infrastructure solutions：https://www.keysight.com/us/en/about/newsroom/news-releases/2026/0309_pr26-045-keysight-showcases-solutions-accelerating-ai-infrastructure-at-ofc-2026.html
+  - Keysight 224G / 1.6T optical network validation：https://www.keysight.com/us/en/about/newsroom/news-releases/2026/0313-pr26-049-keysight-introduces-new-224g-test-solutions-to-enable-1-6t-optical-network-validation.html
+  - Keysight 1.6T interconnect validation for passive copper and low-power optics：https://www.keysight.com/us/en/about/newsroom/news-releases/2026/0319_pr26-056-keysight-expands-1-6t-interconnect-validation-technology-to-include-passive-copper-and-low-power-optics.html

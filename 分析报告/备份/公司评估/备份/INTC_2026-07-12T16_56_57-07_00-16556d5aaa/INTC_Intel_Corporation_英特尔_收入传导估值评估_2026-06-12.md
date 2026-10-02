@@ -1,0 +1,174 @@
+# 公司收入传导与价值传导评估：Intel Corporation 英特尔（INTC）
+
+报告日期：2026-06-12。  
+主口径：NTM，即从 2026-06-12 起未来 12 个月，实务上近似映射为 2026Q2-2027Q1。  
+研究边界：只使用 `公司调研/`、`行业调研/` 及公开一手来源；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较内容。  
+排除项：不输出投资评级、目标价、股价区间、估值倍数判断；市场价格不作为经营价值传导证据。  
+金额口径：美元，除非特别说明；`B` 为十亿美元，`M` 为百万美元。Intel 分部收入含内部交易时会单独标注，合并收入只按外部客户收入处理。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营传导；FY2026、FY2027、18A/14A 外部 foundry、Malaysia advanced packaging 和未来 AI accelerator 只作为补充或远期期权。
+- 当前收入基准、指引和 run-rate：2026Q1 合并收入 13.577B，同比 +7%；Q2 指引 13.8-14.8B，中值 14.3B；2025 全年收入 52.9B。Q1 年化 run-rate 为 54.3B，Q2 指引中值年化为 57.2B。
+- 重要产品/业务线：CCG PC CPU/Core/AI PC；DCAI Xeon server CPU/AI host CPU；DCAI networking/IPU/custom ASIC/E835；rackscale inference 与 Gaudi/future accelerator；Intel Foundry 外部晶圆/封装收入；Intel Foundry 内部 18A 制造成本与先进封装 backlog；All Other/Mobileye/IMS。
+- NTM 公司收入四情景：悲观 52-55B；基准 57-60B；乐观 62-66B；极度乐观 70-76B。基准的核心不是 Gaudi 或外部 foundry 放量，而是 CCG 稳住、DCAI server CPU 继续增长、IPU/networking 小基数扩张、Foundry 亏损逐季改善。
+- 利润或 EBITDA 四情景：悲观为 GAAP 仍亏损或接近盈亏平衡、non-GAAP 净利 0-2B；基准为 non-GAAP 净利 3-5B、调整后自由现金流接近盈亏平衡到小幅正；乐观为 non-GAAP 净利 5-8B、自由现金流 2-5B；极度乐观需要 DCAI 放量和 Foundry 亏损大幅收窄同步发生。
+- 最大传导瓶颈：供给和成本而不是需求。公司披露 2026Q1 需求超过可用供给，且供应约束预计贯穿 2026；同时 memory、wafer、substrate 成本上行和 18A 早期 ramp 会压制毛利。
+- 最大利润率变量：Intel Foundry 亏损和 18A 良率。Q1 Foundry 分部收入 5.421B，但大部分是内部交易，外部收入只有 174M；分部经营亏损 2.437B，经营亏损率 -45%。
+- 最大现金流变量：capex、Fab 34 少数股权回购、长期客户 deposits 与供应商预付款。Q1 经营现金流 1.096B；公司披露 Q1 长期客户安排形成 1.7B 合同性 deposits，预计 Q2 收款，但长期供给锁定也可能提前消耗现金。
+- 可信度：基准为中高；乐观为中；极度乐观为低。最可确认的是 CCG 和 DCAI 当前收入表，最不应进入 NTM 基准的是 Gaudi/future accelerator、18A 大规模外部 foundry 订单和 2027 以后 advanced packaging 转收入。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| CCG：PC CPU、Core/Core Ultra、AI PC、edge client | 2026Q1 收入 7.727B；2025 全年 CCG 32.2B | Q1 合并收入约 56.9% | 最大收入和利润底盘；AI PC 是 mix/ASP 变量，不是 AI 数据中心主线 | A | 进入基准；NTM 以 30-32B 为基准 | 18A client ramp、AI PC 更高 attach、企业换机周期 |
+| DCAI：Xeon server CPU / AI host CPU | 2026Q1 DCAI 5.052B；其中 server 收入约 4.117B（DCAI 减 other DCAI product 935M） | DCAI 占 Q1 合并收入约 37.2%；server 约 30.3% | 当前 AI 传导最核心入口；NVIDIA DGX Rubin NVL8、Google Cloud、server CPU 双位数 unit growth 是关键证据 | A/B | 进入基准；NTM 以 19-21B server CPU 为基准 | AI inference/agentic workload 提高 CPU attach 和 premium mix |
+| DCAI：IPU、DPU/SmartNIC、networking、custom ASIC、E835 | 2026Q1 other DCAI product revenue 935M，同比 +230M；Google custom ASIC-based IPU 为 B 级客户证据 | Q1 合并收入约 6.9% | 小基数高弹性；客户共研和云基础设施 offload 比通用 NIC 更重要 | A/B | 进入基准，但只纳入可见 DCAI other revenue 和客户路径；NTM 4.2-5.2B | 更多 hyperscaler IPU、800G/1.6T AI NIC、cloud offload silicon |
+| Rackscale inference、SambaNova/Foxconn/Vector Core、Gaudi/future accelerator | 当前单独收入未披露；Gaudi 过去有 inventory charge；2026H2 新平台可用 | 无法可靠量化 | 可能改变叙事，但当前不是 NTM 主收入 | C/D | 不作为基准主驱动；只在 DCAI other 中保守包含存量，新增主要进乐观/极度乐观 | Crescent Island、Jaguar/Crescent 线路、企业/主权 AI rack 复购 |
+| Intel Foundry 外部晶圆、assembly/test、advanced packaging services | 2026Q1 Foundry segment 5.421B，但外部收入只有 174M；其余主要为内部交易并在合并层面抵消 | 外部收入约 1.3%；分部收入不可直接等同公司收入 | 最大长期期权和最大亏损源；NTM 关键是外部收入和亏损收窄 | A 当前外部收入；B/C backlog 与 14A milestones | 基准只纳入外部可确认收入 0.8-1.4B；内部分部收入不进入合并收入 | 18A/14A 外部客户量产、advanced packaging 2027 committed demand |
+| Intel Foundry 内部 18A/Intel 3/Intel 4 制造、PowerVia/RibbonFET、内部 advanced packaging | 2026Q1 intersegment revenue 5.2B；在合并收入中抵消 | 不适用 | 不贡献合并收入，但决定 CCG/DCAI 产品成本、供给和毛利 | A/C | 不进入公司收入基数；进入利润率和执行校准 | 18A 良率持续改善、14A 外部 customer evaluation |
+| All Other：Mobileye、IMS、deconsolidated Altera 相关外部客户关系 | 2026Q1 All Other 收入 628M；Mobileye 558M | Q1 合并收入约 4.6% | 非核心，但影响公司总收入和 GAAP 损益；Mobileye goodwill impairment 已影响 Q1 | A | 进入公司层面基准，但不作为 AI 传导主线 | Mobileye EyeQ/ADAS 周期、IMS mask writer |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不判断 Intel 份额、收入确认、利润率或合并利润。需求强弱均相对各产品当前需求锚：管理层指引、订单/客户节奏、行业资料和最新 run-rate。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| CCG PC CPU / AI PC | 管理层预计 2026 全年 PC unit TAM 低双位数下降；Q1 client volume -13%、ASP +16%；AI PC revenue 环比 +8%，占 client CPU mix 超 60% | PC TAM 弱于低双位数下滑，价格行动被需求破坏；AI PC mix 无法抵消 unit 下滑 | PC TAM 按低双位数下滑，Intel 通过 premium mix、pricing 和供给改善守住收入 | 企业换机/AI PC refresh 早于预期，premium mix 继续提升 | 18A client 供给顺利、AI PC 成为企业采购必选，unit 与 ASP 同时改善 | 悲观相对 Q1 run-rate 少 2-4B；基准接近 30-32B 收入需求；乐观多 2-4B | 基准=符合当前预期 | 反证：H2 PC 弱化、组件成本上涨、供给约束；正证：AI PC mix 已超过 60% |
+| Xeon server CPU / AI host CPU | 管理层称 server CPU demand outlook 过去 90 天改善，预计行业和 Intel 2026/2027 server CPU unit strong double-digit growth；Q2 DCAI 指引环比 double digits | AI server CPU attach 被 NVIDIA Grace/Vera、AMD EPYC、云厂 Arm 挤压，供给改善后 ASP 回落 | 高端 Xeon 需求按当前订单和供给改善正常兑现，DCAI double-digit q/q 在 Q2 兑现 | Agentic inference、Google/NVIDIA/SambaNova 设计导入带来 premium mix 和持续供给紧张 | CPU 成 AI rack 控制面短板，x86 host attach 和 ASP 同时非线性上修 | NTM server CPU 需求池基准 19-21B；乐观 23-26B；极度 29B+ | 基准=符合管理层和订单节奏；乐观=高于当前预期 | 正证：Google 多年合作、DGX Rubin NVL8 host CPU、Q1 DCAI +22%；反证：server volume Q1 仍 -5%、供给约束贯穿 2026 |
+| IPU/networking/custom ASIC/E835 | Q1 other DCAI product revenue 935M；Google 扩展 custom ASIC-based IPU；AI server control-plane/DPU/SmartNIC 行业需求增长 | 云厂自研 Nitro/Titanium/Azure Boost 与 NVIDIA/AMD/Broadcom 抢占高端 DPU/NIC，Intel 只保留存量 | Google/IPU、networking customer demand 和 E835 传统云/企业/edge 渠道正常兑现 | 更多 hyperscaler offload 设计、E835 与 IPU attach 提升 | Intel 成为若干云厂 infrastructure processor 二供，other DCAI revenue 翻倍以上 | 基准需求对应 NTM 4.2-5.2B；乐观 6-8B；极度 10B+ | 基准=收入表可见；乐观=客户扩展证据成立 | 正证：Google IPU 共研、E835 10G-200G/RDMA/security；反证：E835 不是 800G/1.6T 高端 AI fabric 主链 |
+| Rackscale inference / Gaudi / future accelerator | SambaNova 方案预计 2026H2 面向 enterprise/cloud/sovereign AI；Computex 展示 Vector Core、Foxconn 等合作；Gaudi 当前无大规模收入披露 | 企业/主权 AI 只停留 demo，Gaudi/future roadmap 无客户规模 | 小规模试点和样板客户，不把行业 inference TAM 直接当 Intel 收入 | 2026H2 出现复购客户和可部署 racks，拉动 Xeon + RDU/GPU + 系统方案 | 新 rackscale inference 成为非 NVIDIA 企业推理标准之一 | 基准新增收入无法可靠量化或低于 0.5B；乐观 1-2.5B；极度 4B+ | 基准=不纳入主需求；乐观=有客户验收才上修 | 正证：SambaNova/Xeon 6 H2 可用；反证：软件生态、系统集成、Gaudi 路线重置 |
+| Intel Foundry 外部晶圆 / advanced packaging | Q1 外部 foundry revenue 174M；先进封装 backlog 增加；Malaysia back-end committed demand 从 2027 起转收入 | 外部客户仍停留评估，2026 外部收入主要为 Altera/小额 services；18A ramp 增加成本 | 外部 revenue 从低基数温和爬坡；advanced packaging backlog 主要作为 2027 可见性 | 外部 packaging/design service 加速，18A 客户试产/小量收入提前 | 18A/advanced packaging 获大客户 NTM 内量产收入，外部收入数十亿美元 | 基准外部需求 0.8-1.4B；乐观 2-3.5B；极度 5B+ | 基准=只承认可确认低基数；极度=NTM 上限而非预期 | 正证：外部收入同比 31M 到 174M、backlog 增加；反证：分部仍 -45% OPM，Malaysia 主要 2027 |
+| 内部 18A/制造供给与成本 | 18A 早期 ramp；Q1 18A yield 好于预期但 Q2 GM 指引下滑，因 18A 贡献更大 | 18A 良率和 throughput 改善慢，供给不够且单位成本高 | 良率改善抵消部分 early ramp 成本，供给逐季增加 | 18A、Intel 3/4 成本曲线改善快，DCAI/CCG 毛利受益 | 18A 成为 Intel 产品和外部客户共同验证的低成本优势 | 不产生合并收入；对毛利率影响约数百 bps | 基准=毛利率保守改善；乐观=成本下降超预期 | 正证：Q1 gross margin 高于指引约 650bps；反证：Q2 non-GAAP GM 中值 39%，低于 Q1 41% |
+| All Other / Mobileye / IMS | Q1 All Other 628M，Mobileye 558M；Altera 去并表降低可比收入 | ADAS 需求或 Mobileye 竞争恶化，收入低于 2.3B NTM | Mobileye 和 IMS 正常 run-rate，NTM 2.4-2.8B | EyeQ demand 超预期，非核心资产贡献恢复 | 非核心业务明显拉动公司收入 | 对公司总收入影响通常 0.5-1.5B | 基准=小项，不能决定 Intel 总情景 | 反证：Mobileye impairment；正证：Q1 Mobileye revenue +120M |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求能进入 Intel NTM 收入表，以及可确认收入基数。可参与需求不等于可确认收入；Foundry 内部交易不等于合并外部收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| CCG PC CPU / AI PC | Q1 CCG 7.727B；2025 CCG 32.2B；client ASP +16%、volume -13% | 直接收入 | 高利润现金牛，Q1 OPM 33% | 27-29B | 30-32B | 33-35B | 36-38B | 基准符合当前 PC TAM 弱化但 mix 改善路径 | A | 是 | 已披露分部收入和管理层 PC TAM/AI PC mix | 进入基准；AI PC 不单独上调到数据中心 AI 增长 |
+| Xeon server CPU / AI host CPU | Q1 DCAI 5.052B；server revenue 约 4.117B；DCAI OPM 31% | 直接收入 | 高毛利，但受 wafer/input cost 和 premium mix unit cost 影响 | 16-18B | 19-21B | 23-26B | 29-33B | 基准符合 Q2 DCAI double-digit q/q 和 server double-digit unit growth | A/B | 是 | DCAI 已披露收入、server ASP +27%、Google/NVIDIA 设计导入 | 进入基准，是 NTM AI 经营主线 |
+| IPU/networking/custom ASIC/E835 | Q1 other DCAI product revenue 935M；Google custom ASIC-based IPU；E835 Computex 发布 | 直接收入 | 中高毛利，取决于 ASIC/IPU mix；普通 NIC 低于平台 CPU | 3.2-3.8B | 4.2-5.2B | 6.0-8.0B | 10-13B | 基准略高于 annualized run-rate，靠 Google/networking demand | A/B | 是 | 已披露 other DCAI revenue + networking demand；Google multiyear IPU | 进入基准，但只纳入 A/B 路径 |
+| Rackscale inference / Gaudi / future accelerator | 无单独收入披露；SambaNova/Foxconn/Vector Core 为 2026H2 可用/合作 | 直接或间接拉动 DCAI | 初期费用和系统集成成本高，利润率不确定 | 0-0.2B 新增 | 0-0.5B 新增 | 1.0-2.5B | 4-6B | 基准只作为小额试点，不替代 Xeon/IPU | C/D | 否，除已包含在 DCAI other 的存量 | 产品/客户发布和 H2 时间表，但缺金额 | 不进基准主线；乐观以上需要客户验收和复购 |
+| Intel Foundry 外部 wafer / assembly / advanced packaging | Q1 external Foundry revenue 174M；segment revenue 5.421B 大多内部交易；advanced packaging backlog 增加 | 外部 revenue 直接；内部 revenue 合并抵消 | 当前 Foundry 总体大幅亏损，外部收入毛利无法可靠量化 | 0.5-0.8B | 0.8-1.4B | 2.0-3.5B | 5-8B | 基准只保留低基数外部收入；乐观需 backlog 转收入 | A 当前外部；B/C backlog | 是，低比例 | 10-Q 披露外部收入；prepared remarks 披露 backlog 与 Malaysia committed demand | 进入基准但权重低；18A 外部大单只进乐观/极度 |
+| 内部 18A/Intel 3/4 制造与先进封装成本 | Q1 intersegment revenue 5.2B；Foundry OPM -45%；Q2 GM 受 18A ramp 压制 | 间接，影响产品成本与供给 | 亏损/成本吸收；良率改善可释放毛利 | 不进入合并收入 | 不进入合并收入 | 不进入合并收入 | 不进入合并收入 | 相对当前预期是最大利润率变量 | A/C | 否 | 内部交易在合并层面抵消 | 不作为收入基数；进入利润率和现金流校准 |
+| All Other / Mobileye / IMS | Q1 All Other 628M，Mobileye 558M；Altera 去并表 | 直接收入 | 中等利润，Q1 All Other OPM 16%；但 Mobileye goodwill impairment 影响 GAAP | 2.0-2.3B | 2.4-2.8B | 3.0-3.4B | 3.5-4.0B | 基准按 run-rate，不上修为 AI 传导 | A | 是 | 已披露收入和 Mobileye demand | 进入公司总收入，但非核心 |
+| 外部 AI/advanced packaging 大 TAM、云厂 CapEx、CoWoS 外溢 | 行业资料显示先进封装需求强，但 Intel 客户量产路径未充分披露 | 仅间接受益 | 若无客户/时间表，不能变收入 | 0 | 0 | 作为 Foundry 乐观上沿 | 作为极度上限 | 不代表当前预期 | E 到 C | 否 | 只有行业需求或技术相关性不足以收入确认 | 远期期权或附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求和收入基数出发，评估每个重要业务在 NTM 内对公司收入和利润的贡献。利润贡献以分部经营利润方向或可比经营利润估算为主；GAAP 净利润会受 restructuring、impairment、mark-to-market、NCI 等项目影响，不能直接按产品分摊。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| CCG PC CPU / AI PC | 悲观 | 27-29B | segment operating profit 6.5-8B | OPM 下行至 24%-28% | 低于当前 run-rate | PC TAM H2 弱化，volume 下滑扩大 | 保留为 CCG 下行情景 | AI PC mix 不能抵消 unit/成本 |
+| CCG PC CPU / AI PC | 基准 | 30-32B | 8.5-10B | OPM 28%-32% | 符合当前预期 | Q1 CCG 7.727B、OPM 33%、AI PC mix >60% | 保留 | PC 全年 unit TAM 低双位数下降 |
+| CCG PC CPU / AI PC | 乐观 | 33-35B | 10.5-12B | OPM 稳中上行 | 高于当前预期 | 18A client 供给改善、ASP/mix 保持 | 保留但不外推为高增主线 | 价格行动可能伤害需求 |
+| CCG PC CPU / AI PC | 极度乐观 | 36-38B | 12-14B | OPM 显著扩张 | 明显高于预期 | 企业 AI PC refresh 和 18A 良率同步成功 | 下移为上限 | PC 不是 AI 数据中心 CapEx 直接受益 |
+| Xeon server CPU / AI host CPU | 悲观 | 16-18B | 3.5-5B | DCAI server mix 利润率下行 | 低于预期 | server volume 继续下滑，AMD/Arm/Grace 替代，供给改善压 ASP | 保留 | 需求强但可用供给和份额不足 |
+| Xeon server CPU / AI host CPU | 基准 | 19-21B | 5.5-7B | DCAI OPM 接近高 20%-低 30% | 符合预期 | Q1 DCAI 5.052B、OPM 31%、Q2 DCAI 指引 double-digit q/q | 保留 | premium mix unit cost 仍高 |
+| Xeon server CPU / AI host CPU | 乐观 | 23-26B | 7.5-10B | 利润率扩张 | 高于预期 | Google、DGX Rubin NVL8、agentic inference 对 CPU 需求增强 | 保留 | NVIDIA/云厂自研 CPU 侵蚀长期份额 |
+| Xeon server CPU / AI host CPU | 极度乐观 | 29-33B | 11-15B | 显著扩张 | 非线性高于预期 | CPU 成为 AI rack 控制面瓶颈，供给与 ASP 同时上行 | 下移为极度上限 | CPU 内容量低于 GPU/ASIC，不可把 AI rack 总额当 Xeon 收入 |
+| IPU/networking/custom ASIC/E835 | 悲观 | 3.2-3.8B | 0.5-1.0B | OPM 低于 DCAI 平均 | 低于预期 | 云厂内制化、Intel 高端 AI NIC/DPU 生态弱 | 保留 | E835 速率上限和 AI fabric 主链不一致 |
+| IPU/networking/custom ASIC/E835 | 基准 | 4.2-5.2B | 0.9-1.6B | OPM 中高 | 符合/略高于 run-rate | Q1 other DCAI 935M；Google custom ASIC IPU | 保留 | 金额披露不足，不能按客户总预算估算 |
+| IPU/networking/custom ASIC/E835 | 乐观 | 6-8B | 1.8-3B | mix 改善 | 高于预期 | 更多 IPU/custom ASIC 设计转出货 | 保留 | Broadcom/Marvell/NVIDIA/AMD 竞争强 |
+| IPU/networking/custom ASIC/E835 | 极度乐观 | 10-13B | 3-5B | 显著改善 | 明显高于预期 | Intel 成为 cloud offload/IPU 主要二供 | 下移为上限 | 需要客户、合同、交付时间同时证明 |
+| Rackscale inference / Gaudi / future accelerator | 悲观 | 0-0.2B 新增 | 负到接近 0 | 费用拖累 | 低于叙事 | 客户测试不转采购，Gaudi 路线延续弱 | 保留 | 软件生态和路线连续性 |
+| Rackscale inference / Gaudi / future accelerator | 基准 | 0-0.5B 新增 | 负到小幅正 | 不显著 | 不作为基准主贡献 | SambaNova 2026H2 可用但缺金额 | 保留为小额 | 缺订单/backlog/RPO |
+| Rackscale inference / Gaudi / future accelerator | 乐观 | 1-2.5B | -0.2B 到 +0.4B | 收入先于利润 | 高于当前预期 | Foxconn/Vector Core/enterprise/sovereign AI 试点 | 下移为乐观上限 | 系统集成和客户验收周期 |
+| Rackscale inference / Gaudi / future accelerator | 极度乐观 | 4-6B | 0.4-1.5B | 需要高利用和软件 attach | 明显高于预期 | 多客户复购并形成 standard rack | 下移到附录跟踪 | 当前证据 C/D，不足以进 NTM 基准 |
+| Intel Foundry external / advanced packaging | 悲观 | 0.5-0.8B 外部收入 | Foundry segment loss -10B 到 -12B | 亏损扩大或改善慢 | 低于预期 | 外部客户量产不足，18A 成本高 | 保留 | 外部收入太小，内部收入不能合并 |
+| Intel Foundry external / advanced packaging | 基准 | 0.8-1.4B 外部收入 | Foundry segment loss -7B 到 -9B | 亏损逐季改善但仍大 | 符合当前可见路径 | Q1 external 174M，yield 改善，backlog 增加 | 保留 | Malaysia committed demand 主要 2027 转收入 |
+| Intel Foundry external / advanced packaging | 乐观 | 2-3.5B 外部收入 | Foundry loss -3B 到 -6B | 明显改善 | 高于预期 | 18A/advanced packaging 小量客户转收入 | 保留但要求客户证据 | TSMC 生态优势，客户切换成本极高 |
+| Intel Foundry external / advanced packaging | 极度乐观 | 5-8B 外部收入 | breakeven 到 -2B | 非线性改善 | 明显高于预期 | 大客户量产、封装 backlog 提前 | 下移为低可信上限 | Q1 外部收入只有 174M，不能从 TAM 直接外推 |
+| 内部 18A/制造成本 | 悲观 | 不产生合并收入 | 拖累合并 GM 2-4pp | 毛利下行 | 低于预期 | 18A early ramp cost、memory/wafer/substrate 上涨 | 保留 | 只处理利润层，不重复压低需求 |
+| 内部 18A/制造成本 | 基准 | 不产生合并收入 | 毛利率 37%-40% 区间 | 保守改善 | 符合预期 | Q1 GM 39.4%，Q2 non-GAAP GM 39% | 保留 | Q2 18A 贡献更大压毛利 |
+| 内部 18A/制造成本 | 乐观 | 不产生合并收入 | 毛利率 40%-43% | 上行 | 高于预期 | yield/throughput 改善快 | 保留 | 产能扩张和 input cost 抵消 |
+| 内部 18A/制造成本 | 极度乐观 | 不产生合并收入 | 毛利率 43%+ | 显著上行 | 明显高于预期 | 18A 成本曲线和产品 mix 同时改善 | 下移为上限 | 技术成功不自动等于外部收入 |
+| All Other / Mobileye / IMS | 悲观 | 2.0-2.3B | 0-0.2B | 下行 | 低于预期 | Mobileye 竞争和 impairments | 保留 | 非核心，不重复惩罚 DCAI |
+| All Other / Mobileye / IMS | 基准 | 2.4-2.8B | 0.2-0.4B | 稳定 | 符合 run-rate | Q1 All Other 628M、Mobileye 558M | 保留 | Altera 去并表导致同比不可比 |
+| All Other / Mobileye / IMS | 乐观 | 3.0-3.4B | 0.4-0.7B | 改善 | 小幅高于预期 | EyeQ demand 强 | 保留 | 非核心资产难改变公司情景 |
+| All Other / Mobileye / IMS | 极度乐观 | 3.5-4.0B | 0.8B+ | 改善 | 高于预期 | Mobileye/IMS 同时好转 | 下移为上限 | 不应作为 AI 传导主线 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品贡献合成为 Intel NTM 合并收入、毛利率、经营利润率、净利润和现金流方向。合并前剔除 Foundry 内部交易，避免把 segment revenue 和 consolidated revenue 重复计算。绝对增速以 FY2025 收入 52.9B 和最新 TTM 约 53.8B 为参照。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 52-55B | 约 -2% 到 +4% vs FY2025；约 -3% 到 +2% vs TTM | 低于 Q2 指引中值年化和 server CPU 增长预期 | GAAP GM 34%-37%；non-GAAP GM 35%-38% | GAAP 可能仍为负；non-GAAP operating margin 4%-7% | GAAP 净利亏损或接近盈亏平衡；non-GAAP 净利 0-2B | 负，约 -2B 到 -6B，若客户 deposits 延后或供应商预付款提前则更弱 | 中 | PC 下滑、DCAI supply/ASP 失速、18A 成本、Foundry 亏损 |
+| 基准公司 | 57-60B | 约 +8% 到 +13% vs FY2025；约 +6% 到 +12% vs TTM | 接近 Q2 指引、server CPU double-digit growth 和可见 run-rate | GAAP GM 37%-40%；non-GAAP GM 39%-41% | GAAP 受 restructuring/NCI 扰动；non-GAAP operating margin 8%-11% | non-GAAP 净利 3-5B；GAAP 净利无法可靠量化 | 调整后 FCF breakeven 到 +2B，排除 Fab 34 buyout 后偏正 | 中高 | Foundry 亏损仍大、18A early ramp、PC H2 弱化 |
+| 乐观公司 | 62-66B | 约 +17% 到 +25% vs FY2025；约 +15% 到 +23% vs TTM | 高于当前预期，DCAI 与 IPU/custom ASIC 同时超预期 | GAAP/non-GAAP 口径差异缩小；GM 40%-43% | non-GAAP operating margin 12%-15% | non-GAAP 净利 5-8B；GAAP 净利取决于一次性项目 | 正，约 +2B 到 +5B | 中 | 需要供给、ASP、18A 良率和客户 design-in 同时改善 |
+| 极度乐观公司 | 70-76B | 约 +32% 到 +44% vs FY2025；约 +30% 到 +41% vs TTM | 明显高于当前预期，多个核心传导环节同时突破 | GM 43%-46% | non-GAAP operating margin 16%-20% | non-GAAP 净利 9-13B；GAAP 净利需排除重大一次性扰动后判断 | 明显转正，+5B 以上 | 低 | 要求 DCAI 非线性、Foundry 亏损接近消失、外部 foundry/packaging 大客户提前收入化 |
+
+情景汇总判断：
+
+- 基准公司情景依赖 A/B 级证据：CCG 和 DCAI 当前收入表、Q2 指引、Google/NVIDIA/SambaNova 客户路径、Q1 other DCAI revenue 和 external foundry revenue。
+- 乐观公司情景需要 DCAI server CPU 以高于当前预期的速度放量，同时 IPU/custom ASIC 与 E835/networking 有新增客户确认。只有 rackscale inference demo 或行业 AI CapEx 上修，不足以支撑乐观公司收入。
+- 极度乐观公司情景需要四件事同步发生：server CPU 份额/ASP 上修、IPU/custom ASIC 多客户转收入、18A 良率把 Foundry 亏损大幅收窄、external foundry/advanced packaging 在 NTM 内显性收入化。任一环节缺证据，应回落到乐观上限。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：只校准前四步的情景位置，不重新预测经营结果。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 收入 13.577B、Q2 指引 13.8-14.8B | 公司汇总 | 支撑基准 NTM 57-60B，不支持直接跳到 70B+ | Q2 non-GAAP GM 39% 是基准利润率锚 | 指引不含远期 foundry 大客户上限 | 基准保留 |
+| DCAI Q1 收入 5.052B、同比 +22%、OPM 31%；Q2 DCAI 指引环比 double digits | 产品贡献/公司汇总 | 上修 DCAI 基准收入和公司基准收入 | DCAI 是公司利润质量最高的增量 | 受 supply availability 和 premium unit cost 限制 | 基准保留，乐观保留 |
+| server CPU volume Q1 -5%，server ASP +27% | 产品贡献 | 说明收入增长更多来自 mix/price，不是纯 unit 放量 | 高 ASP 有利毛利，但高端 wafer/input cost 抵消 | 若供给改善后 ASP 回落，收入和利润同时受压 | 悲观保留，基准保留 |
+| Google multiyear Xeon + custom ASIC-based IPU collaboration | 收入基数/产品贡献 | B 级客户路径，支持 IPU/networking 基准和乐观 | IPU/custom ASIC 毛利可能高于普通 NIC | 金额未披露，不足以量化极度乐观 | 基准保留，极度下移 |
+| NVIDIA DGX Rubin NVL8 使用 Xeon 6 host CPU | 需求/产品贡献 | 支持 Xeon AI host CPU 需求池和 design-in | host CPU attach 有利高端 mix | 不代表 Intel 捕获 GPU/rack 主价值 | 乐观保留 |
+| SambaNova/Foxconn/Vector Core rackscale inference | 需求/收入基数 | 有 H2 2026 时间表，但缺订单金额 | 初期系统收入可能低毛利或费用投入较高 | 客户验收和复购是关键 | 乐观保留，基准不因其上修 |
+| Q1 other DCAI product revenue 935M、networking customer demand | 收入基数 | A 级收入表证据，支持 NTM 4.2-5.2B | mix 不透明，利润率需估算 | 客户集中和云厂自研是反证 | 基准保留 |
+| Intel Foundry external revenue only 174M；segment revenue 5.421B 主要内部交易 | 收入基数/公司汇总 | 强制把外部收入与内部交易分开，限制基准 | Foundry -45% OPM 是最大利润拖累 | 外部收入从低基数爬坡需要现金和客户认证 | 极度乐观下移 |
+| Foundry advanced packaging backlog 增加，Malaysia committed demand 2027 转收入 | 收入基数/执行可信度 | 支持 2027 补充口径，不足以替代 NTM 基准 | 若转收入，可改善 mix；NTM 仍低 | backlog 转收入时间是关键 | NTM 仅作跟踪；2027 附录保留 |
+| 18A yield 改善、Q1 GM 高于指引约 650bps，但 Q2 GM 指引低于 Q1 | 利润率 | 不直接增加收入，但改善可用供给 | 双向变量：yield 正向、early ramp/input cost 负向 | CapEx 和 inventory/working capital 压力仍在 | 基准保留，乐观保留 |
+| PC TAM 全年低双位数下降预期 | 需求/公司组合 | 限制 CCG 收入上修 | CCG 是利润底盘，PC 弱化会影响公司利润 | 不能重复惩罚 DCAI 或 Foundry | 悲观保留 |
+| Q1 长期客户安排 deposits 1.7B，预计 Q2 收款 | 执行可信度/现金流 | 支持订单和客户承诺可见性 | 不直接证明收入金额或毛利 | 正向现金，但供应商预付款可能抵消 | 基准保留，乐观不单独上移 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | PC 弱化、DCAI 供给/份额不及预期、Foundry 亏损改善慢，NTM 收入 52-55B | Q1 收入已经高于原 Q1 指引、DCAI 增长强、客户 deposits 存在 | PC TAM 下滑、server volume -5%、supply constraints 贯穿 2026、Foundry -45% OPM | 保留 | 公司下行情景 | 中 | PC 风险只压 CCG；Foundry 亏损只压利润率/现金流，不重复压低 DCAI 需求 |
+| 基准 | Q2 指引和 run-rate 正常兑现，NTM 收入 57-60B，利润温和改善 | A 级分部收入；Q2 revenue guide；DCAI double-digit q/q；Google/IPU B 级客户证据 | 18A early ramp、input cost、Foundry 外部收入低、PC H2 弱化 | 保留 | 最可能情景 | 中高 | 外部 foundry 低基数不得用于否定 Xeon/CCG 已确认收入 |
+| 乐观 | DCAI server、IPU/custom ASIC、18A yield 和部分 Foundry 外部收入同步好于预期，NTM 62-66B | NVIDIA DGX Rubin NVL8、Google multiyear collaboration、E835、SambaNova H2 path、advanced packaging backlog | 金额披露不足；rackscale inference 仍早期；Foundry 客户量产证明不足 | 保留 | 有证据的上行情景 | 中 | 行业 AI CapEx 上修不能替代 Intel 份额/交付/收入确认 |
+| 极度乐观 | 多个核心环节同时突破，NTM 70-76B，Foundry 亏损大幅收窄 | AI control-plane demand 强、server CPU outlook 改善、18A yield 正向、客户 deposits | Q1 external Foundry revenue 174M，Gaudi/future accelerator 无量化收入，advanced packaging committed demand 多在 2027 | 下移 | 乐观上沿/极度上限，不能作为当前预期 | 低 | 同一 18A 风险只在利润率和执行层处理，不重复作为需求风险 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。Intel NTM 收入最可能落在 57-60B，主要由 CCG 稳定、DCAI Xeon server CPU/AI host CPU 增长、IPU/networking/custom ASIC 小基数扩张驱动。GAAP 净利仍可能被 restructuring、impairment、NCI 和融资项目扰动；经营质量应优先看 DCAI/CCG 分部 OPM、Foundry 亏损收窄和 adjusted free cash flow。
+- 乐观情景成立条件：Q2 DCAI double-digit q/q 兑现后，Q3-Q4 server CPU 供给继续增加且 ASP/mix 不坍塌；Google/IPU/custom ASIC 出现更多可验证收入线索；E835/networking 进入更多 OEM/云客户；18A yield 改善快于 input cost 上升。
+- 极度乐观情景成立条件：Xeon AI host CPU、custom IPU、advanced packaging、18A external foundry 客户和 rackscale inference 同时收入化；Foundry segment operating loss 从当前季度 2.4B 级别快速压到低个位数十亿美元年化；外部 Foundry revenue 从每季 174M 向 1B/季级别靠近。这需要客户、合同、交付窗口和收入确认同时证明，目前证据不足。
+- 悲观情景触发条件：PC TAM 下滑超过管理层 low-double-digit 预期，DCAI supply 改善后 ASP 回落或份额被 AMD/NVIDIA/Arm/云厂自研侵蚀，18A ramp 继续拉低 GM，Foundry 外部收入停留在每季数亿美元以内且亏损不收窄，客户 deposits 或 backlog 无法按期转收入。
+- 后续跟踪数据：DCAI revenue、server revenue ASP/volume、other DCAI product revenue、Google/IPU 项目披露、E835 design-in、SambaNova/Foxconn/Vector Core 客户复购、external Foundry revenue、Foundry OPM、18A yield/throughput、advanced packaging backlog 转收入、Q2/Q3 gross margin、adjusted free cash flow、long-term customer deposits 和 supplier prepayments。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新财务口径截至 Intel 2026Q1，10-Q filed 2026-04-24；产品与客户资料补充至 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Intel 2026Q1 earnings release：收入 13.6B、GAAP GM 39.4%、non-GAAP GM 41.0%、Q2 revenue guide 13.8-14.8B、Q2 non-GAAP GM 39.0%。https://www.intc.com/news-events/press-releases/detail/1767/intel-reports-first-quarter-2026-financial-results
+  - Intel 2026Q1 Form 10-Q：分部收入/经营利润、Foundry external revenue 174M、DCAI server ASP/volume、other DCAI product revenue、cash flow、long-term customer deposits。https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000079/intc-20260328.htm
+  - Intel 2026Q1 prepared remarks：DCAI Q2 double-digit q/q、server CPU strong double-digit unit growth、18A yield/GM、Foundry backlog、Malaysia committed demand。https://d1io3yog0oux5.cloudfront.net/_85b3aa05d5446fafadc55d45cc60542f/intel/db/887/9254/prepared_remarks/1Q2026-Earnings-Call.pdf
+  - Intel FY2025/Q4 release：2025 revenue 52.9B、2025 CCG/DCAI/Foundry revenue、cash flow。https://www.sec.gov/Archives/edgar/data/50863/000005086326000009/q425earningsrelease.htm
+- 最新产品、客户和商业化来源：
+  - Intel and Google AI infrastructure collaboration，2026-04-09：Xeon continues in Google Cloud and expanded custom ASIC-based IPU co-development。https://www.intc.com/news-events/press-releases/detail/1766/intel-and-google-deepen-collaboration-to-advance-ai
+  - Intel Xeon 6 used as host CPU in NVIDIA DGX Rubin NVL8 systems，2026-03-16。https://newsroom.intel.com/data-center/intel-xeon-6-used-as-host-cpus-in-nvidia-dgx-rubin-nvl8-systems
+  - Intel and SambaNova Advance Agentic AI with Xeon 6，2026-04-08。https://newsroom.intel.com/artificial-intelligence/intel-and-sambanova-advance-agentic-ai-with-xeon-6
+  - Intel Computex 2026 AI innovations，2026-06-02。https://newsroom.intel.com/artificial-intelligence/intel-announces-new-ai-innovations-at-computex
+  - Intel Xeon 6+ / E835 / Crescent Island update，2026-05-31。https://newsroom.intel.com/data-center/intel-puts-agentic-ai-xeon-6-networking-ai-systems
+  - Intel Ethernet E835 controllers and network adapters，2026-06-02。https://newsroom.intel.com/data-center/intel-introduces-ethernet-e835-controllers-network-adapters
+- 本项目允许使用的公司与行业资料：
+  - `公司调研/AI计算芯片_EDA_IP_custom_ASIC/INTC_Intel_Corporation_英特尔_公司调研_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI服务器CPU与控制平面芯片_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_网卡、DPU与SmartNIC_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_商用AI加速芯片_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 补充：若 Q2 指引中值 14.3B 兑现，且 H2 server above seasonal、PC below seasonal，FY2026 收入较 2025 的 52.9B 有中高个位数到低双位数增长可能；但 Foundry 亏损和 18A early ramp 会限制 GAAP 利润。
+  - FY2027 补充：advanced packaging committed demand、Malaysia back-end 扩张、外部 18A/14A customer evaluation、Xeon 6+/后续 Xeon 平台和 rackscale inference 复购才是 FY2027 以上的主要上修变量。
+  - 远期期权：18A/14A 外部大客户量产、Intel advanced packaging 成为 AI ASIC 二供、Crescent/Jaguar 类 accelerator 路线、OCI/光互连、玻璃基板和大规模 external foundry backlog。除非出现客户、合同、交付和收入确认窗口，否则不进入 NTM 基准。

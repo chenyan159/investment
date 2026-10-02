@@ -1,0 +1,421 @@
+# INTC_Intel Corporation 英特尔 公司调研（2026-06-11）
+
+资料日期：2026-06-11，America/Los_Angeles。  
+股票与估值快照：2026-06-11 15:47:42 UTC 附近。  
+研究边界：本报告仅使用 `基本面/行业调研/` 下相关产业资料、`公司调研/公司索引.md` 的目录归属，以及联网检索的一手公司公告、SEC/IR、技术发布、会议资料和少量行业媒体交叉验证；未读取、引用或继承 `特征量化/`、`日度资料/` 或既有公司报告正文。  
+核心结论：Intel 不是 2026 年的纯 AI GPU 供应商，而是“x86 CPU 存量生态 + AI 推理主机/控制面 CPU + Google/custom IPU + 美国先进制造/封装期权 + 亏损 foundry 改善”的复杂转型股。当前股价已经把相当多的 18A、Xeon 供给修复和 AI 控制面重估提前计入，投资判断的关键不是“有没有 AI 故事”，而是 2026-2027 年 DCAI 增长、18A 良率、foundry 外部收入、先进封装 backlog 转收入能否同时兑现。
+
+## 一、公司整体业务、市场认知、定位与估值
+
+### 1.1 公司业务概览
+
+Intel 是全球少数仍同时拥有大规模 CPU 设计、x86 软件生态、前道晶圆制造、先进封装和数据中心平台能力的半导体公司。2025 年开始公司分部口径重组为三大报告分部：
+
+| 分部 | 主要内容 | 2026Q1 营收 | 2026Q1 经营利润 | 经营利润率 | 对 AI 基建的关系 |
+|---|---|---:|---:|---:|---|
+| Client Computing Group, CCG | PC CPU、Core/Core Ultra、AI PC、客户端平台 | 77.27 亿美元 | 25.16 亿美元 | 32.6% | 现金牛，AI PC 叙事强但不是 AI 数据中心主线 |
+| Data Center and AI, DCAI | Xeon 服务器 CPU、AI host CPU、部分 ASIC/IPU、数据中心平台 | 50.52 亿美元 | 15.42 亿美元 | 30.5% | 当前最重要 AI 收入入口，2026Q1 同比 +22% |
+| Intel Foundry | Intel 内部制造、外部晶圆代工、先进封装、18A/14A、EMIB/Foveros | 54.21 亿美元 | -24.37 亿美元 | -45.0% | 最大期权和最大亏损源；外部收入仍小 |
+| All Other | Mobileye、历史 Altera 到 2025-09-11 前、其他非报告分部 | 6.28 亿美元 | 1.02 亿美元 | 16.2% | 非核心；Altera 51% 已出售并于 2025Q3 去并表 |
+
+Intel 在投资人心中的形象已经从“高分红 PC/服务器 CPU 蓝筹”转为“重资产转型和美国本土先进制造期权”。市场同时给它三类标签：
+
+1. **落后者修复股。** 过去几年 Intel 在制程、数据中心 CPU 份额、AI 加速器路线、毛利率上持续落后于 TSMC、AMD、NVIDIA；投资人关注的是 18A、Xeon 6、组织重组和成本削减能否逆转。
+2. **AI 基建控制面受益股。** Intel 的确定性 AI 收入不是 Gaudi，而是 Xeon host CPU、IPU/DPU、以太网控制器和部分 custom ASIC/IPU。行业资料显示 2026 年 AI 服务器 CPU 与控制面芯片的核心机会是 GPU/ASIC 机架级化后对主机 CPU、DPU/IPU、BMC、PCIe/CXL、时钟和管理控制器的需求上升。
+3. **美国 foundry 期权。** Intel Foundry 拥有 18A、PowerVia、RibbonFET、EMIB、Foveros、先进封装和 CHIPS Act 相关产能，但外部客户收入仍低，亏损仍大；它更像 2027-2028 期权，不是 2026 已兑现利润池。
+
+### 1.2 最近 3 年重大业务变动、转型与资产动作
+
+| 时间 | 事件 | 战略含义 | 投资解读 |
+|---|---|---|---|
+| 2024 | 大规模成本削减、组织调整、资本开支压缩，推动“Intel Products + Intel Foundry”分账 | 从追求全线扩张转向现金流、毛利和执行优先 | 降低费用，但也暴露 foundry 亏损真实规模 |
+| 2025Q1 | NEX 被并入 CCG 和 DCAI，分部报告重述为 CCG、DCAI、Intel Foundry、All Other | 让网络/边缘更贴近 CPU 和数据中心平台 | 口径更利于观察 AI 控制面收入，但历史可比需重述 |
+| 2025 | Falcon Shores 商用化取消/转内部测试，转向 Jaguar Shores/rack-scale AI 系统方案 | 承认单颗 AI GPU/加速器追赶 NVIDIA 不现实 | Gaudi/Falcon 不能作为基准 AI 成长主线，只能作为小规模或期权 |
+| 2025-09-12 | 完成出售 Altera 51% 股权，Altera 去并表 | 降低非核心资产占用，释放资本 | All Other 未来可比性改善，但收入基数下降 |
+| 2025Q3 | SoftBank 以每股 23 美元认购约 8,700 万股，合计约 20 亿美元 | 为先进制造、AI 基建和长期增长补充资本 | 股本摊薄换取现金与战略背书 |
+| 2025-2026 | 18A 产品进入量产爬坡；Core Series 3/Panther Lake、Xeon 6+ 等成为 18A 验证窗口 | 18A 是 Intel 内部产品和 foundry 外部可信度的共同门槛 | 18A 良率/月度改善速度直接决定毛利与股价叙事 |
+| 2026-04 | Google 多年合作，Xeon 继续支撑 Google Cloud AI/推理/通用负载，并扩展 custom ASIC-based IPU 共研 | Intel 在云厂控制面/host CPU 中仍有真实地位 | 比 Gaudi 更重要；但金额未披露，需要从 DCAI/ASIC run-rate 推断 |
+| 2026-06 Computex | 发布 rackscale AI infrastructure、Xeon 6+、E835 Ethernet、SambaNova/Foxconn/Vector Core 生态 | 把 AI 战略从“卖加速卡”改为“CPU + RDU/GPU + IPU/NIC + 系统集成” | 方向正确，但 2026 收入仍主要靠 Xeon 与 IPU，不靠完整 rackscale 新平台 |
+
+### 1.3 产业链定位
+
+| 产业链层级 | Intel 位置 | 主要竞争者 | 护城河 | 脆弱点 |
+|---|---|---|---|---|
+| x86 数据中心 CPU | 传统龙头之一，2026Q1 DCAI 回升 | AMD EPYC、NVIDIA Grace/Vera、云厂 Arm CPU | x86 软件生态、企业采购路径、内存/I/O/安全、平台兼容 | AMD 在高核数/能效上强；NVIDIA 平台 CPU 和云厂自研侵蚀 |
+| AI host/control CPU | DGX B300/Rubin NVL8 host CPU、Google Cloud 多代 Xeon、SambaNova/Foxconn 推理 rack | AMD EPYC、NVIDIA Grace/Vera、AWS Graviton、Google Axion、Microsoft Cobalt | CPU 是推理/agent 工作流的调度、执行和安全层 | AI rack 中 GPU/ASIC 捕获大部分价值，CPU 单位价值占比有限 |
+| IPU/DPU/SmartNIC | Intel IPU、Google custom IPU、E835 Ethernet | NVIDIA BlueField/ConnectX、AMD Pensando、Broadcom、Marvell、云厂自研 Nitro/Titanium/Azure Boost | 与 Xeon/云基础设施长期绑定，驱动/软件兼容 | 高端 AI NIC/DPU 生态弱于 NVIDIA/云厂自研 |
+| AI 加速器 | Gaudi 3、未来 Jaguar/Crescent 等 | NVIDIA、AMD、Google TPU、AWS Trainium、Broadcom custom XPU、SambaNova、Groq | 以太网路线和成本牌 | 软件生态、客户规模、HBM/封装资源、路线频繁重置 |
+| Foundry/先进制造 | 18A/14A、美国本土先进制造、EMIB/Foveros | TSMC、Samsung Foundry、GlobalFoundries/特种、RapidUS | PowerVia、RibbonFET、先进封装、美国政策支持 | 外部客户量产证明不足，亏损大，TSMC 生态强 |
+| 先进封装 | EMIB、Foveros、Foveros Direct、玻璃基板/OCI 研究 | TSMC CoWoS/SoIC、ASE、Amkor、Samsung | 技术深、美国区域化价值 | 2026 商业化份额远低于 TSMC，需客户 design-in |
+
+本地行业资料对 Intel 的定位非常一致：在 AI 服务器 CPU 与控制平面中，Intel 是关键大公司之一；在商用 AI 加速器本体中，NVIDIA/AMD/云厂 ASIC 才是主线，Intel Gaudi/Jaguar 只能放在“特色/较小份额/期权”位置；在先进逻辑和先进封装中，Intel Foundry 是 2027 以后可选供给，而 2026 硬瓶颈仍以 TSMC/HBM/CoWoS 为核心。
+
+### 1.4 当前估值与财务指标
+
+| 指标 | 数值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | 112.86 美元 | 2026-06-11 15:47:42 UTC，盘中 | 2026 年以来已显著重估，市场计入高修复预期 |
+| 市值 | 5,735.7 亿美元 | 2026-06-11 15:47:42 UTC | 已接近大型 AI 半导体平台估值，而非传统 Intel 估值 |
+| Trailing PE | -188.1x | 2026-06-11，TTM EPS 约 -0.60 美元 | 仍为亏损，PE 失真；不能用传统低 PE 逻辑 |
+| Forward PE | 约 133.3x | Yahoo Finance key statistics，2026-06 检索 | 前瞻盈利很薄，股价押注 2027-2028 利润弹性 |
+| PS | 约 9.39x | Yahoo Finance key statistics，2026-06 检索 | 对一家 2025 年营收持平、毛利 35% 左右公司并不便宜 |
+| 最新收入增速 | 2026Q1 营收 135.77 亿美元，同比 +7% | Intel 2026Q1 | 增长由 DCAI +22%、Foundry +16% 拉动，CCG +1% |
+| 2025 全年收入增速 | 528.5/529 亿美元，约持平 | Intel 2025 全年 | 仍未形成全年高增长 |
+| 2026Q1 GAAP 毛利率 | 39.4% | Intel 2026Q1 | 好于 Q4 2025 的 36.1%，但 Q2 指引中值 non-GAAP GM 39% 说明 18A 初期 ramp 会压毛利 |
+| 2026Q1 净利率 | -27.5% | 2026Q1 Intel 归母净亏损约 37.3 亿美元 / 营收 135.77 亿美元 | 大额重组/mark-to-market/Foundry 损失使 GAAP 仍难看 |
+| 2025 全年 GAAP 毛利率 | 34.8% | Intel 2025 全年 | 低于成熟 CPU 龙头历史水平 |
+| 2025 全年归母净利率 | 约 -0.5% | 2025 全年归母净亏损 3 亿美元 / 收入 529 亿美元 | 全年接近盈亏平衡，non-GAAP 净利 19 亿美元 |
+
+估值判断：当前市场给 Intel 的不是“困境资产低估值”，而是“美国 foundry + AI 控制面 + 18A 成功”的高期权估值。若 DCAI 只维持低双位数增长、Foundry 亏损改善慢、外部 foundry 收入仍在每季数亿美元以内，当前 PS 与 forward PE 会显得偏贵；若 2027 年 Xeon 6+/Xeon 7、Google/IPU、先进封装和 18A 外部客户同时兑现，股价才有基本面支撑。
+
+### 1.5 资产负债表与财务健康度
+
+| 项目 | 2026-03-28 | 2025-12-27 | 变化 | 评价 |
+|---|---:|---:|---:|---|
+| 现金及等价物 | 172.47 亿美元 | 142.65 亿美元 | +29.82 亿美元 | 绝对现金充足 |
+| 短期投资 | 155.42 亿美元 | 231.51 亿美元 | -76.09 亿美元 | 现金+短投合计仍 327.89 亿美元 |
+| 存货 | 124.26 亿美元 | 116.18 亿美元 | +8.08 亿美元 | 供给扩张/18A ramp 下存货上升需跟踪 |
+| 流动资产 | 621.57 亿美元 | 636.88 亿美元 | -15.31 亿美元 | 流动性强 |
+| 流动负债 | 268.85 亿美元 | 315.75 亿美元 | -46.90 亿美元 | 流动负债下降 |
+| 流动比率 | 2.31x | 2.02x | 改善 | 短期偿债压力低 |
+| 短债 | 20.04 亿美元 | 24.99 亿美元 | -4.95 亿美元 | 短债可控 |
+| 长债 | 430.27 亿美元 | 440.86 亿美元 | -10.59 亿美元 | 总债务仍高 |
+| 现金+短投-总债务 | 约 -122.4 亿美元 | 约 -92.7 亿美元 | 净债务增加 | CapEx/重组期需要现金管理 |
+| 总资产 | 2,053.32 亿美元 | 2,114.29 亿美元 | -60.97 亿美元 | PP&E 仍重，资产周转压力大 |
+| 股东权益含少数股东 | 1,249.89 亿美元 | 1,263.60 亿美元 | -13.71 亿美元 | 资本垫厚 |
+| 2026Q1 经营现金流 | +10.96 亿美元 | 2025Q1 +8.13 亿美元 | 改善 | 仍不足以覆盖 36.36 亿美元 capex 增加额 |
+| 2025 全年经营现金流 | +97 亿美元 | 2025 全年 | - | 现金流为正但自由现金流受 capex 压制 |
+
+财务健康度：**中等偏健康，但不轻松。** Intel 的流动性和资产垫足够支撑 18A/Foundry 转型，短期破产或流动性风险很低；真正问题是资本效率和盈利质量。Foundry 每季 20-30 亿美元级经营亏损仍在吞噬 Products 业务利润，18A/14A 投资需要持续资本，且 2026Q1 经营现金流无法覆盖当季 PP&E additions。若 2026 下半年 PC 需求走弱、18A 良率改善慢、DCAI 供给释放不及预期，财务杠杆会再次压制估值。
+
+## 二、最近五次财报：分部数字、订单/交期与 AI 数据中心口径
+
+### 2.1 最近五季核心财务表
+
+单位：亿美元；分部经营利润率为经营利润/分部营收。AI 数据中心相关收入占比为本报告估算：DCAI 绝大部分与数据中心/AI 基础设施相关，但其中传统企业服务器、网络/边缘、非 AI 通用负载仍混在一起；Gaudi/专用 AI 加速器未单独披露，估计远低于 DCAI 总额。
+
+| 财报季度 | 合并营收 / YoY | GAAP 毛利率 | 归母净利 / 净利率 | CCG 营收 / YoY / OPM | DCAI 营收 / YoY / OPM | Intel Foundry 营收 / YoY / OPM | All Other 营收 / OPM | 订单/交期/取消率 | AI 数据中心收入占比估算 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|---|
+| 2026Q1 | 135.77 / +7% | 39.4% | -37.3 / -27.5% | 77.27 / +1% / 32.6% | 50.52 / +22% / 30.5% | 54.21 / +16% / -45.0% | 6.28 / 16.2% | 披露：需求继续跑在供给前，尤其 Xeon server CPU；DCAI 签多项长期协议含 Google；Foundry 增加先进封装 backlog；取消率未披露，按强需求推断低 | DCAI 约 37% 的合并营收；若只算 AI host CPU/IPU/ASIC，估计 20-30%；专用加速器/Gaudi 很小 |
+| 2025Q4 | 136.74 / -4% | 36.1% | -6.0 / -4.4% | 81.93 / -7% / 27.0% | 47.37 / +9% / 26.4% | 45.07 / +4% / -55.7% | 5.74 / -1.4% | 披露：行业供给短缺；可用供给 Q1 最低、Q2 后改善；需求基本面健康；取消率未披露 | DCAI 约 35%；AI 主机 CPU 受益开始显性，专用加速器未形成主量 |
+| 2025Q3 | 136.53 / +3% | 38.2% | 40.63 / 29.8% | 85.35 / n.a. / 31.6% | 41.17 / n.a. / 23.4% | 42.35 / n.a. / -54.8% | 9.93 / 10.1% | 披露：AI 正加速 x86、ASIC/accelerator 和 foundry 机会；Altera 交易带来一次性收益；标准 backlog 未披露 | DCAI 约 30%；ASIC/IPU 线索开始增强，但 AI accelerator 仍未有规模披露 |
+| 2025Q2 | 128.59 / 持平 | 27.5% | -29.18 / -22.7% | 78.71 / -3% / 26.1% | 39.39 / +4% / 16.1% | 44.17 / +3% / -71.7% | 10.53 / 6.6% | 披露：Xeon 6776P 作为 NVIDIA DGX B300 host CPU；Panther Lake 仍按计划；Q3 指引营收 126-136 亿美元；取消率未披露 | DCAI 约 31%；AI 受益多为主机 CPU/design win，不是加速器收入 |
+| 2025Q1 | 126.67 / 持平 | 36.9% | -8.21 / -6.5% | 76.29 / -8% / 30.9% | 41.26 / +8% / 13.9% | 46.67 / +7% / -49.7% | 9.43 / 10.9% | 披露：NEX 并入 CCG/DCAI；18A 预计 H2 ramp；MLPerf Inference v5.0 中 Xeon 6 P-core AI 性能较前代提升 1.9x；取消率未披露 | DCAI 约 33%；AI host CPU/企业推理初期，订单可见度低 |
+
+### 2.2 五季趋势解读
+
+1. **DCAI 是最清楚的边际改善。** 营收从 2025Q2 的 39.39 亿美元提升到 2026Q1 的 50.52 亿美元，五季内低点到高点增长约 28%；经营利润率从 13.9%-16.1% 提升到 30.5%。这说明 Intel 的 AI 相关机会目前主要体现在 Xeon server CPU、主机 CPU、custom IPU/ASIC 和数据中心平台，而不是 Gaudi。
+2. **CCG 仍是利润支柱。** 2026Q1 CCG 贡献 25.16 亿美元经营利润，占 Intel Products 经营利润的 62%。但 CCG 的 AI PC 叙事难以支撑数据中心级高估值，且公司已提示 2026 下半年 PC TAM 可能低双位数下滑。
+3. **Foundry 是估值分歧核心。** 2026Q1 Foundry 营收 54.21 亿美元、同比 +16%，但经营亏损 24.37 亿美元。外部 Foundry 营收仅 1.74 亿美元，说明大部分 Foundry 收入仍是内部制造分摊，不是外部客户认可的 foundry 收入。
+4. **合并 GAAP 利润仍被重组、股权/escrow mark-to-market 和 foundry 亏损扭曲。** 2026Q1 DCAI/CCG 加起来经营利润 40.58 亿美元，但公司合并经营亏损 31.36 亿美元，说明转型成本仍在压制股东收益。
+5. **订单披露不完整。** Intel 没有披露标准 backlog/bookings/cancellation rate。可用证据是定性和客户协议：Google 多年合作、NVIDIA DGX B300/Rubin NVL8 host CPU、SambaNova/Foxconn/Vector Core rackscale 平台、Foundry 先进封装 backlog 增加、Malaysia back-end 扩张需求 2027 转收入。对未来一年预测必须以“供给约束 + 客户 design-in + 分部增长”间接推断。
+
+## 三、2026 最新指引、业务占比、重点产品和跳过项
+
+### 3.1 最新 2026Q2 指引
+
+Intel 在 2026Q1 财报电话会中给出的 2026Q2 指引：
+
+| 指标 | 2026Q2 指引 | 与 Q1 对比 | 含义 |
+|---|---:|---:|---|
+| 营收 | 138-148 亿美元，中值 143 亿美元 | Q1 为 135.77 亿美元，环比 +2%-9% | 供给改善、CCG 与 DCAI 继续增长 |
+| DCAI | 环比双位数增长 | Q1 DCAI 50.52 亿美元 | 服务器 CPU 需求强，AI 推理/agent 工作负载提升 CPU 重要性 |
+| CCG | 环比增长 | Q1 CCG 77.27 亿美元 | 短期出货/定价改善，但公司警惕 H2 PC TAM 下滑 |
+| Non-GAAP 毛利率 | 中值 39% | Q1 non-GAAP 约 41% | 18A 贡献扩大、早期 ramp 与材料成本压制毛利 |
+| Non-GAAP EPS | 0.20 美元 | Q1 non-GAAP EPS 0.29 美元 | 营收增长不等于利润线性改善 |
+| 供给/成本 | memory、wafer、substrate 成本上涨可能影响需求 | 供给仍紧 | 对 CPU、AI host、foundry 都有影响 |
+
+### 3.2 2026Q1 业务收入占比
+
+由于分部收入含内部交易，以下给出两种口径：
+
+| 业务 | 分部营收 | 分部口径占比（含内部交易，分母为 CCG+DCAI+Foundry+All Other） | 合并营收占比参考 | 增速 | 评价 |
+|---|---:|---:|---:|---:|---|
+| CCG | 77.27 亿美元 | 41.1% | 56.9% | +1% | 现金牛，AI PC/edge 有叙事但增长低 |
+| DCAI | 50.52 亿美元 | 26.8% | 37.2% | +22% | 当前最突出业务；Xeon server CPU、host CPU、IPU/ASIC 是重点 |
+| Intel Foundry | 54.21 亿美元 | 28.8% | 39.9% | +16% | 收入大但内部交易多；外部收入只有 1.74 亿美元 |
+| All Other | 6.28 亿美元 | 3.3% | 4.6% | -33% | Altera 去并表后重要性下降 |
+| Intersegment eliminations | -52.51 亿美元 | n.a. | -38.7% | n.a. | 反映内部制造/产品交易抵消 |
+
+公司最侧重的业务是 **DCAI + Intel Foundry**。管理层口径中，DCAI 的强点是 Xeon 服务器 CPU、ASIC/IPU、Google/NVIDIA/SambaNova/Foxconn/Vector Core 生态；Foundry 的强点是 18A、14A 和 advanced packaging backlog。但投资上要分清：DCAI 是 2026 可见收入和利润，Foundry 是 2027 以后期权且当前亏损很大。
+
+### 3.3 产品和业务映射
+
+| 业务 | 重点产品/型号 | 2026 状态 | 收入贡献判断 | 毛利/利润率判断 | 重要性 |
+|---|---|---|---:|---|---|
+| DCAI host CPU | Xeon 6 P-core、Xeon 6 E-core、Xeon 6776P、Xeon 6+（18A，Clearwater Forest）、后续 Xeon 7/Diamond Rapids | Xeon 6 已放量；Xeon 6776P 是 DGX B300 host CPU；Xeon 6 用于 DGX Rubin NVL8；Xeon 6+ Computex 亮相 | 2026Q1 DCAI 50.52 亿美元的主体，估计 40-45 亿美元 | DCAI OPM 30.5%；高端 CPU silicon GM 可 55-70% | 最高 |
+| DCAI custom IPU/ASIC | Google custom ASIC-based IPU、Intel IPU、云基础设施 offload | Google 2026-04 多年合作；Q1 管理层称 ASIC revenue QoQ +30%+、YoY 接近翻倍 | 估计年化 10 亿美元级或以上，但未披露 | 若为 ASIC/IPU，毛利低于高端 CPU、高于普通 NIC；估计 45-60% | 高 |
+| Rackscale inference | Xeon + SambaNova SN-50/SN40 RDU + NVIDIA Blackwell GPU prefill + Foxconn 系统集成 + Vector Core Compute neocloud | 2026H2 对企业/云/主权 AI 可用；Computex 展示生产级 rack | 2026 小，估计低个位亿美元；2027 可放大 | 系统集成毛利低，Xeon/RDU 芯片毛利较好 | 中高期权 |
+| Intel Foundry 18A | 18A Core Series 3/Panther Lake、Xeon 6+、外部客户评估，14A milestones | 18A 量产 ramp；Foundry 承担 18A 早期成本 | 2026Q1 Foundry 54.21 亿美元收入但多数为内部；外部收入 1.74 亿美元 | Foundry OPM -45%；2026 仍亏损 | 高期权，高风险 |
+| Intel advanced packaging | EMIB、Foveros、Foveros Direct、advanced packaging services、Malaysia back-end expansion | Q1 增加先进封装 backlog；Malaysia 扩张支持 2027 committed demand | 2026 外部收入小；2027 backlog 转收入 | 平台型封装毛利中高，但折旧/ramp 压力大 | 高期权 |
+| Networking / Ethernet | Intel Ethernet E835 Controllers/Adapters，10G-200G，RoCEv2/iWARP，PCIe 5/4，SPDM 1.2，FIPS 140-3 L1 | 2026 Computex 发布，Cisco/Dell/HPE/Lenovo/Supermicro 生态 | 小于 CPU，估计 DCAI 中低个位亿美元到十亿美元级 | 普通 NIC 竞争强，毛利低于 DPU/CPU | 中 |
+| AI accelerator | Gaudi 3 PCIe/OAM，未来 Jaguar Shores/Crescent Island 线索 | Gaudi 3 Dell PowerEdge XE7440 shipping，但未成大规模；Falcon Shores 商用取消 | 2026 估计 <5 亿美元，极乐观也难超过 DCAI 小比例 | 软件生态弱，价格需折让 | 中低期权 |
+| CCG AI PC / Edge | Core Ultra、Core Series 3、Arc G-Series、OpenVINO、edge robotics | Computex 130+ customers adopting/testing Series 3 edge devices | CCG 77.27 亿美元主体；AI 增量难拆 | CCG OPM 32.6%，利润好 | 现金流重要，但非 AI 数据中心主线 |
+
+### 3.4 低优先级/跳过项
+
+以下业务不是本报告 AI 基建判断的核心：
+
+| 跳过项 | 原因 |
+|---|---|
+| 普通消费 PC CPU、低端桌面/笔记本型号 | 收入大但 2026 增速低，和 AI 数据中心订单弹性弱 |
+| 游戏/手持 Arc G 系列 | 对品牌和生态有意义，但不是 AI 基建主线 |
+| Mobileye | 自动驾驶业务在 All Other，和 AI 数据中心无直接关联 |
+| Altera | 2025-09-12 后 51% 出售并去并表，Intel 仍保留权益但不再是核心合并收入 |
+| 传统低速以太网/企业 NIC | 市场成熟、竞争强、ASP 低；重点只看 AI 数据中心相关 E835/IPU/DPU |
+| 普通内部 foundry 成本分摊 | Foundry 营收大部分来自内部，不等同外部 foundry 订单 |
+
+## 四、关键高增长产品/业务：当前收入贡献、AI 基建重要性、供需和溢价
+
+评分：1 低，5 高。收入为 2026 年当前 run-rate 或本报告估算，不是公司披露口径。
+
+| 关键业务/产品 | 当前收入贡献估算 | 当前增速 | AI 技术栈重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 当前判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Xeon server CPU / AI host CPU | DCAI 主体，2026Q1 约 40-45 亿美元；年化约 160-180 亿美元 | DCAI 同比 +22%，Q2 指引 DCAI 环比双位数 | 5 | 5 | 4 | 3 | 最确定 AI 收入；GPU/ASIC 机架需要 host CPU，但 AMD/NVIDIA/Arm 替代存在 |
+| Google/custom IPU/ASIC | 年化 10 亿美元级以上可能，未披露 | Q1 ASIC revenue QoQ +30%+、YoY 接近翻倍 | 4 | 4 | 3 | 3 | 小基数高弹性；客户集中且产品非公开 |
+| Intel Foundry 18A internal ramp | Foundry 2026Q1 54.21 亿美元营收，外部 1.74 亿美元 | Foundry 同比 +16%，18A ramp 增长显著 | 4 | 5 | 3 | 2 | 内部产品验证是外部 foundry 的前置条件；当前仍大亏 |
+| Advanced packaging services | 外部收入小；Q1 backlog 增加，2027 committed demand | 2026 小，2027 潜在高增 | 5 | 4 | 4 | 3 | AI 封装紧缺给 Intel 机会，但 TSMC CoWoS 主导 |
+| Rackscale heterogeneous inference | 2026H2 初期，当前收入很小 | 新业务，2027 可高增 | 4 | 4 | 2 | 2 | 方向契合 agentic inference，但商业化需客户验证 |
+| E835 Ethernet / IPU / NIC | 估计低个位亿美元到十亿美元级 | 新品发布，依平台 attach | 3 | 3 | 2 | 2 | AI 网络需要 NIC/DPU，但 Intel 200G 不在最高端 800G/1.6T 核心 |
+| Gaudi 3 / future AI accelerator | 估计 <5 亿美元 | 不稳定 | 3 | 3 | 1 | 1 | 对 Intel 形象重要，但基准不应给高收入权重 |
+| Core Ultra / Edge AI | CCG 主体 77.27 亿美元 | CCG +1%，Series 3 生态扩大 | 2 | 3 | 2 | 3 | 利润好但 AI 数据中心关联弱 |
+
+## 五、一年后收入贡献和业务状态：基准、乐观、极度乐观
+
+预测窗口：2026-06-11 至 2027-06-11。单位为年化收入贡献，美元。
+
+| 业务/产品 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| Xeon server CPU / AI host CPU | 年化 190-220 亿美元；增速 +15%-25%；AI host CPU 重要性 5、紧急性 5、供需 3.5、溢价 3 | 年化 230-270 亿美元；增速 +25%-40%；Google/NVIDIA/SambaNova attach 扩大，供需 4、溢价 3.5 | 年化 280-330 亿美元；增速 +45%+；agentic inference 使 CPU/GPU attach 接近 1:1，供需 4.5、溢价 4 |
+| Google/custom IPU/ASIC | 年化 15-25 亿美元；增速 +30%-60%；客户集中，重要性 4 | 年化 30-45 亿美元；Google 多代 IPU 扩大，更多云厂/vertical ASIC 导入 | 年化 50-75 亿美元；custom infrastructure ASIC 成 DCAI 第二增长曲线 |
+| Intel Foundry 18A/14A | 外部 foundry 年化 8-15 亿美元；内部 18A 改善毛利；Foundry OPM 仍 -25% 到 -35% | 外部年化 20-35 亿美元；18A yield 改善，Foundry OPM -15% 到 -25% | 外部年化 50 亿美元以上；拿到高可信外部 AI/HPC tape-out，Foundry OPM 接近 -10% |
+| Advanced packaging | 年化 5-10 亿美元外部/相邻服务；2027 committed demand 开始转收入 | 年化 15-25 亿美元；Malaysia back-end、EMIB/Foveros、区域化需求放量 | 年化 30-50 亿美元；AI CoWoS spillover 明显，Intel 成美国/区域化先进封装重要二供 |
+| Rackscale heterogeneous inference | 年化 3-8 亿美元，主要是 Xeon pull-through 和少量平台收入 | 年化 10-25 亿美元，Vector Core/主权 AI/企业客户采购 | 年化 40 亿美元以上，CPU+RDU+GPU disaggregated inference 成 NeoCloud 标配之一 |
+| E835 Ethernet / IPU / NIC | 年化 8-15 亿美元；标准 NIC/Ethernet 稳定增长 | 年化 15-25 亿美元；E835、IPU、Google/offload 共同增长 | 年化 30 亿美元以上；AI cloud 多租户安全/telemetry 扩散 |
+| Gaudi 3 / future AI accelerator | 年化 3-8 亿美元；主要存量和成本敏感客户 | 年化 10-20 亿美元；Gaudi 3 PCIe/系统方案获得 enterprise/主权云小规模采用 | 年化 30 亿美元以上；Jaguar/Crescent 路线提前获得明确客户，但概率低 |
+| Core Ultra / Edge AI | CCG 年化 310-330 亿美元；AI PC 不显著拉高增速 | CCG 年化 330-360 亿美元；Series 3/edge robotics 稳定 | CCG 年化 380 亿美元以上；AI PC 换机提前，但仍非数据中心核心 |
+
+## 六、BOM、每 MW / rack / GPU / optical port 内容量、价格传导与认证
+
+以下为投资研究模型估算，用于判断 Intel 产品在 AI 基建 BOM 中的含量。实际价格随客户、批量、配置、代际和折扣变化很大。
+
+### 6.1 Xeon server CPU / AI host CPU
+
+| 口径 | 内容量估算 | 价格传导链 | 当前产能/采纳 | 认证/阶段 |
+|---|---:|---|---|---|
+| 每 8-GPU AI server / DGX 类节点 | 通常 2 颗高端 Xeon host CPU；Intel 收入约 1.6-3.0 万美元/节点 | 云厂/OEM 买整机；CPU ASP 进入 server BOM；GPU 利用率/内存/I/O/安全决定客户愿意为 CPU 付费 | Xeon 6 已放量；Q1 管理层称 demand ahead of supply，尤其 Xeon server CPU | DGX B300 使用 Xeon 6776P；DGX Rubin NVL8 使用 Xeon 6；Google 多年合作 |
+| 每 GPU | 约 2,000-4,000 美元 CPU 内容量 | GPU 价格 3-6 万美元时 CPU 占比小，但失效会影响 GPU feed/orchestration | 对 NVIDIA/AMD/ASIC 开放平台均有 attach | NVIDIA Dynamo、TDX、MRDIMM、PCIe 5.0、x86 生态 |
+| 每 120kW AI rack | 若 72-96 GPU/rack，CPU 内容量约 18-36 万美元 | Rack ASP 数百万美元，CPU 是控制面/host 层 | 供给偏紧 | 已在 B300/Rubin/SambaNova/Foxconn 路径中验证 |
+| 每 1MW IT load | 约 600-900 GPU；CPU 内容量约 180-360 万美元 | MW 级 capex 中占比小，但影响整体利用率 | DCAI 年化 200 亿美元级产能目标可支撑多 GW 级 AI host | 客户 qualification 已有 Google/NVIDIA 等锚 |
+
+判断：Xeon 的 BOM 占比不高，但它是“低 BOM 占比、高故障成本”层。行业本地资料给 AI host CPU/x86 socket 2026 市场约 35-60 亿美元季度运行级、2027 中滚动 180-280 亿美元基准；Intel 若维持 35%-45% merchant x86 AI host share，则一年后年化 70-125 亿美元 AI host 相关收入是可见的。
+
+### 6.2 Google/custom IPU/ASIC 与基础设施 offload
+
+| 口径 | 内容量估算 | 价格传导链 | 当前产能/采纳 | 认证/阶段 |
+|---|---:|---|---|---|
+| 每 cloud server | IPU/DPU/SmartNIC silicon/card 约 800-3,000 美元，取决于是否为 custom ASIC、端口速率和安全/存储 offload | 云厂按 TCO 采购，不单纯看卡价；释放 CPU core、虚拟化、存储、安全和网络 offload | Google 多年合作，custom IPU 共研；DCAI ASIC revenue 高增但未披露金额 | Google Cloud 多代基础设施合作；custom IPU 属客户内部认证 |
+| 每 AI rack | 约 1-8 万美元，取决于节点数和 IPU attach rate | 价值来自降低多租户/网络/存储开销，提高 GPU/CPU 有效利用率 | 云厂自研/定制路径强，merchant 空间有限 | 客户私有认证周期长，替换成本高 |
+| 每 1MW IT load | 约 50-250 万美元 | AI cloud/NeoCloud 多租户越多，DPU/IPU attach 越高 | Intel 有 Google 锚，但 NVIDIA/AMD/Broadcom/Marvell/云厂自研竞争强 | 无公开通用认证；看客户 design-in |
+
+判断：这是 Intel 最容易被市场低估的小业务之一。它不像 Gaudi 那样需要打赢 CUDA/GPU 生态，而是沿着 Intel 的 x86/cloud infrastructure 关系做 custom offload。风险是客户集中、金额不透明、云厂内部 ASIC 价值未必体现为 Intel 高毛利。
+
+### 6.3 Intel Foundry 18A / 14A
+
+| 口径 | 内容量估算 | 价格传导链 | 当前产能/采纳 | 认证/阶段 |
+|---|---:|---|---|---|
+| 每 Intel 内部 CPU | wafer + advanced node cost 内部转移到 CCG/DCAI；18A 初期提高成本、压毛利 | Foundry 收入多数来自内部制造，合并抵消 | Intel 3 Xeon 6 与 18A Core Series 3 full volume ramp；18A 越过内部产品门槛 | 内部产品认证中；外部客户仍待量产证明 |
+| 外部 AI/HPC chip | 单片 advanced wafer 可 1.5-2.5 万美元以上，视节点/良率/服务而定 | 客户若从 TSMC 切到 Intel，需要 PDK、EDA、IP、封装、良率、供应协议全链路 | 2026Q1 外部 foundry 收入 1.74 亿美元，规模仍小 | 14A customer evaluations，18A external tape-out/production proof 是关键 |
+| 每 1MW AI 数据中心 | 只有当 Intel Foundry 为 AI accelerator/ASIC 代工时才有直接内容量；2026 近乎可忽略 | 价格由 wafer allocation + packaging + yield 决定 | 2026 主要是期权，非当前内容量 | 2027-2028 观察外部 HPC/AI 客户 |
+
+判断：Foundry 的“收入能力”不能直接用 2026Q1 54.21 亿美元外推，因为大量内部收入合并抵消。真正要看外部收入从每季 1.74 亿美元向 10 亿美元级爬坡的速度，以及 Foundry OPM 从 -45% 改善到 -20% 以内的路径。
+
+### 6.4 Advanced packaging：EMIB、Foveros、Foveros Direct、Malaysia back-end
+
+| 口径 | 内容量估算 | 价格传导链 | 当前产能/采纳 | 认证/阶段 |
+|---|---:|---|---|---|
+| 每 AI accelerator package | 高端 2.5D/3D 封装服务约 1,500-7,000 美元/颗，极紧时更高 | GPU/ASIC 客户向 foundry/OSAT 支付封装服务；封装失败会阻断芯片交付 | Intel Q1 称 advanced packaging backlog 增加，Malaysia expansion 支撑 2027 committed demand | EMIB/Foveros 技术成熟；外部 AI 客户量产认证仍待证明 |
+| 每 8-GPU server | 若 Intel 封装全部 AI accelerator，内容量约 1.2-5.6 万美元 | 占 server BOM 小，但决定 HBM/chiplet 良率 | 当前 Intel 不在主流 NVIDIA/AMD/TPU CoWoS 主链中 | 2027 spillover/区域化机会 |
+| 每 1MW IT load | 约 100-600 万美元封装服务内容量，前提是 Intel 获得相应 design-in | AI accelerator 价格传导到封装服务、基板、测试、材料 | 2026 收入小；2027 视 backlog 转收入 | 客户 qualification、可靠性、热/机械/SI/PI signoff |
+
+判断：先进封装是 Intel 最合理的 AI foundry 切入点，因为客户可能先把部分 packaging/后段区域化需求给 Intel，而不是立刻切换前道 wafer。行业资料显示高端 AI 相关封装服务 2026 年约 120-180 亿美元运行率，2027 年可到 180-300 亿美元；Intel 当前份额小，弹性来自二供和区域化。
+
+### 6.5 Rackscale heterogeneous inference：Xeon + SambaNova + Foxconn + Vector Core
+
+| 口径 | 内容量估算 | 价格传导链 | 当前产能/采纳 | 认证/阶段 |
+|---|---:|---|---|---|
+| 每 inference rack | Intel CPU 内容量约 20-60 万美元；若 CPU-dense variant 可更高；RDU/GPU 不归 Intel | 客户买 rack/云服务；Intel 通过 Xeon 与系统设计拉动 DCAI | Computex 展示 production-ready rack；Foxconn 做系统集成；Vector Core/Together.ai 有首个商业 workload | 2026H2 可用，仍处早期商业认证 |
+| 每 MW | 若 30-80kW/rack，CPU 内容量约 300-900 万美元/MW，取决于 CPU 密度 | agentic inference 使 CPU/GPU 关系从 1:4 向 1:1 或更高 CPU 密度迁移 | 适合 air-cooled/standard data centers，是与液冷 GPU rack 不同的卖点 | 企业/主权 AI 数据驻留需求是认证入口 |
+| 每 GPU | Disaggregated inference 中 Intel 价值不按每 GPU 固定；CPU 负责任务编排、tool execution、代码编译、系统控制 | 价值来自降低 GPU-only prefill/decode/tool 混跑浪费 | 初期小规模 | 需验证 token/$、latency、稳定性 |
+
+判断：这是“有潜力的小业务”。它不应被当作 2026 大收入，但可能在企业/主权 AI、agentic coding、金融/医疗/政府内网推理中找到与 NVIDIA 全液冷 rack 不同的需求。
+
+### 6.6 E835 Ethernet / NIC / IPU
+
+| 口径 | 内容量估算 | 价格传导链 | 当前产能/采纳 | 认证/阶段 |
+|---|---:|---|---|---|
+| 每 optical/electrical port | 10G-200G，controller/card 收入约 300-1,500 美元/端口；光模块不归 Intel | NIC/controller -> adapter/OCP card -> OEM/server -> cloud/enterprise | E835 2026 Computex 发布，Cisco/Dell/HPE/Lenovo/Supermicro 生态 | SPDM 1.2、FIPS 140-3 Level 1、NC-SI 1.2、RoCEv2/iWARP |
+| 每 AI rack | 约 1-6 万美元，取决于端口数量和是否只用于管理/前端网络 | 端口速率、RDMA、telemetry、安全 attestation 决定 ASP | 200G 不在最高端 800G/1.6T AI fabric 主链，但在 cloud/enterprise/edge 有广泛空间 | OS/OEM 兼容认证成熟 |
+| 每 MW | 约 10-50 万美元 | 高速网络总 BOM 远大于 Intel E835 本身 | 普通 NIC 供给不太紧 | 替换成本来自驱动、管理、认证 |
+
+判断：E835 是稳定产品，不是 Intel 最大 AI 弹性。真正高弹性的 AI NIC/DPU 市场在 400G/800G/1.6T、DPU 安全/存储 offload、cloud custom IPU；Intel 有 IPU 机会，但 E835 本身更偏基础设施广覆盖。
+
+## 七、一年后产能能力、供应链采纳和认证阶段：三情景
+
+| 业务/产品 | 基准产能/采纳 | 乐观产能/采纳 | 极度乐观产能/采纳 |
+|---|---|---|---|
+| Xeon server CPU / AI host CPU | DCAI 年化供给能力 200-230 亿美元；Google/NVIDIA/SambaNova 已认证；供给仍偏紧但交期改善 | 年化 250-280 亿美元；Xeon 6+/18A 良率改善，AI host design win 增多 | 年化 320 亿美元以上；agentic inference 使 CPU attach 超预期，客户锁长约 |
+| Google/custom IPU/ASIC | 年化 15-25 亿美元 capacity；Google 多代认证，其他客户小规模 | 年化 30-45 亿美元；更多 hyperscaler/enterprise ASIC/IPU design-in | 年化 60 亿美元以上；Intel 成 custom infrastructure processor 主要二供 |
+| Foundry 18A/14A | 外部年化收入 8-15 亿美元；内部认证为主，外部客户评估 | 外部年化 20-35 亿美元；18A 客户 tape-out 转试产，14A milestones 支撑路线 | 外部年化 50 亿美元以上；拿到可披露大客户 AI/HPC 订单 |
+| Advanced packaging | 外部/服务年化 5-10 亿美元；Malaysia 2027 committed demand 初始转收入 | 年化 15-25 亿美元；AI packaging spillover 与区域化增强 | 年化 30-50 亿美元；EMIB/Foveros 成部分 AI ASIC/CPU 关键封装二供 |
+| Rackscale inference | 2026H2 样板客户，年化 3-8 亿美元 | Vector Core/Together.ai/主权 AI 扩大，年化 10-25 亿美元 | 成为企业 inference 云标准之一，年化 40 亿美元以上 |
+| E835/IPU/NIC | E835 稳定供应；IPU 随 Google/custom 项目增长 | 400G/800G/IPU 后续产品明确，AI cloud attach 增强 | Intel 进入更多高端 AI NIC/DPU 项目，年化 30 亿美元以上 |
+| Gaudi/Jaguar/Crescent | Gaudi 3 存量出货，未来路线样片/内部验证 | 新 inference accelerator 获主权/enterprise 客户试点 | 2027 有明确 rack-scale 加速器客户和 HBM/封装 allocation，概率低 |
+
+## 八、订单积压、供给与未来一年业务增速推断
+
+### 8.1 已披露与可推断订单线索
+
+| 线索 | 性质 | 对订单/供给的含义 | 置信度 |
+|---|---|---|---|
+| 2026Q1 管理层称需求跑在供给前，尤其 Xeon server CPU；预计 2026 和 2027 server CPU 行业与 Intel 都有强劲双位数 unit growth | 官方定性 | DCAI 有真实 backlog/交期压力；Q2 指引 DCAI 环比双位数增长 | 高 |
+| Google 多年 Xeon + custom IPU 合作 | 官方客户协议 | 至少锁定多代 cloud CPU/IPU 需求；金额未披露 | 高 |
+| NVIDIA DGX B300 使用 Xeon 6776P，DGX Rubin NVL8 使用 Xeon 6 | 官方 design win | Intel host CPU attach 于 NVIDIA 高端 AI 系统；但是否覆盖所有云平台配置需谨慎 | 高 |
+| SambaNova + Intel signed agreement，2026H2 面向企业/云/主权 AI；Foxconn 参与 rackscale 集成 | 官方/合作方发布 | 新 inference 平台可拉动 CPU-dense/rackscale 需求；早期 | 中高 |
+| Vector Core Compute 使用 Intel Xeon + SambaNova RDU + NVIDIA Blackwell，Together.ai 为首个商业客户 | 官方 Computex 发布 | 有初始商业 workload，但收入规模未披露 | 中 |
+| Foundry advanced packaging backlog 增加；Malaysia back-end expansion 支持 2027 committed demand | 官方财报电话会 | 先进封装 2027 转收入可见，但 2026 当前外部收入仍小 | 中高 |
+| E835 Ethernet 发布，Cisco/Dell/HPE/Lenovo/Supermicro 生态 | 官方产品发布 | 标准 NIC/网络产品有广泛渠道，但 AI 高端网络份额需验证 | 中 |
+| Gaudi 3 Dell PowerEdge XE7440 shipping | 官方产品页/生态线索 | 仍有出货，但不是大规模 AI accelerator 主线 | 中 |
+
+### 8.2 未来一年业务增速预测
+
+| 业务 | 基准增速 | 乐观增速 | 极度乐观增速 | 关键约束 |
+|---|---:|---:|---:|---|
+| DCAI 整体 | +18%-25% | +30%-45% | +55%+ | Xeon 供给、AI host attach、Google/IPU、AMD/NVIDIA/Arm 替代 |
+| CCG | -2% 到 +5% | +5%-12% | +15%-20% | PC TAM、AI PC 换机、Intel 18A 客户端良率 |
+| Intel Foundry 分部营收 | +10%-20% | +25%-40% | +50%+ | 内部 18A/14A ramp、外部收入、封装 backlog |
+| Intel Foundry 外部收入 | +100%+ 但基数小 | 3-5 倍 | 8-12 倍 | 从 1.74 亿美元/Q1 起步，客户量产证明 |
+| Advanced packaging 外部/服务 | +50%-100% | 2-4 倍 | 5 倍以上 | 2027 committed demand 能否如期转收入 |
+| Rackscale inference | 新业务，<10 亿美元 | 10-25 亿美元年化 | 40 亿美元以上年化 | 客户验收、token/$、RDU/GPU/CPU 协同、Foxconn 交付 |
+| Gaudi/AI accelerator | 持平到小增 | +50%-150% | 3-5 倍但低基数 | 软件生态、客户信心、路线连续性 |
+
+综合预测：**基准情景下 Intel 未来一年合并营收增速约 +8%-15%，DCAI 是主贡献，Foundry 亏损改善决定 EPS 弹性；乐观情景合并收入 +18%-25%，需要 DCAI 和 Foundry 同时超预期；极度乐观情景 +30% 以上，需要 18A、Xeon、IPU、advanced packaging 和 rackscale inference 同时兑现，概率明显低于市场热度。**
+
+## 九、竞争格局、替代风险、新技术主流性与客户替换成本
+
+### 9.1 Xeon server CPU / AI host CPU
+
+| 竞争者 | 优势 | 对 Intel 的威胁 |
+|---|---|---|
+| AMD EPYC | 高核数、能效、数据中心份额提升，MI350/MI400/Helios 生态绑定 | 在开放 x86 AI server 中最直接抢份额 |
+| NVIDIA Grace/Vera | 与 Blackwell/Rubin/NVLink/BlueField/Spectrum 垂直整合 | 在 NVIDIA rack 内把 CPU 从配件变成平台一部分，长期压缩 Intel attach |
+| AWS Graviton、Google Axion、Microsoft Cobalt | 云厂内部 TCO 优化、供应链控制 | 云内部通用/推理/control 节点从 x86 迁往 Arm |
+| Ampere/Arm ecosystem | 低功耗、云原生、边缘/推理 | 企业/主权云部分替代 |
+
+主流性判断：x86 host CPU 在 2026-2027 仍是主流之一，但不是唯一主流。Intel 的优势是现有软件、企业验证和 Google/NVIDIA design win；风险是 NVIDIA/云厂把 CPU 平台内制化。客户替换成本中高：OS、hypervisor、编译、driver、管理、安全、BIOS/firmware 和采购认证都需要重新验证。
+
+### 9.2 Google/custom IPU/ASIC、DPU/SmartNIC
+
+| 竞争者 | 优势 | 对 Intel 的威胁 |
+|---|---|---|
+| NVIDIA BlueField/ConnectX/SuperNIC | AI fabric、DOCA、GPU/NVLink 生态绑定 | 在高端 AI rack 中更强 |
+| AMD Pensando | Azure/OCI/enterprise DPU 经验，和 EPYC/Instinct 绑定 | 开放 AI rack 二供 |
+| Broadcom/Marvell | 高速 SerDes、custom silicon、AI networking 深 | hyperscaler custom IPU/ASIC 竞争强 |
+| AWS Nitro、Google Titanium、Azure Boost | 云厂内部优化，TCO 和安全闭环 | merchant DPU/IPU TAM 被内制化 |
+
+主流性判断：DPU/IPU 是 2026-2027 AI cloud 与多租户推理的主流控制面方向，但 Intel 的地位取决于客户共研和平台绑定，而不是通用产品单点规格。替换成本高：DPU/IPU 深入虚拟化、存储、安全、billing telemetry 和 fleet management，替换需要多年工程验证。
+
+### 9.3 Intel Foundry / 18A / advanced packaging
+
+| 竞争者 | 优势 | 对 Intel 的威胁 |
+|---|---|---|
+| TSMC | N4/N3/N2、CoWoS、良率、客户生态绝对领先 | Intel 最大标杆和最大竞争压力 |
+| Samsung Foundry | HBM/先进封装协同、SF2 路线 | 争取第二供应源客户 |
+| GlobalFoundries/Tower/特种 foundry | 特种工艺成熟 | 对最先进 AI/HPC 威胁低，但在边缘/模拟/RF 有替代 |
+| ASE/Amkor/TSMC OSAT ecosystem | 高端封装产能和客户经验 | Intel advanced packaging 商业份额爬坡慢 |
+
+主流性判断：18A 技术若兑现，RibbonFET + PowerVia 是先进逻辑主流候选；但 foundry 主流性不是技术发布决定，而是外部客户量产、良率、EDA/IP、封装、交期和成本一起决定。客户替换成本极高：AI/HPC 芯片从 TSMC 转 Intel 需要重新 tape-out、封装、热/电/SI/PI/DFT、软件和供应链认证。
+
+### 9.4 Rackscale heterogeneous inference
+
+| 竞争者/替代 | 优势 | 对 Intel 的威胁 |
+|---|---|---|
+| NVIDIA Blackwell/Rubin full-stack inference | CUDA、NVLink、Dynamo、Grace/Vera、BlueField 全栈 | 客户若接受 NVIDIA 全栈，Intel 只能做少量 host 或被 Grace/Vera 替代 |
+| AMD MI350/MI400 + EPYC + Pensando | 开放二供、HBM 容量、ROCm 改善 | 与 Intel/SambaNova 路线争 enterprise/NeoCloud |
+| Groq/Cerebras/其他专用推理 | 极低延迟或特定模型效率 | 部分 agentic inference 客户可能绕开 CPU+RDU+GPU 组合 |
+| 云厂自研 TPU/Trainium/Maia/MTIA | 内部 workload 优化 | 大云内部不需要 Intel rackscale 方案 |
+
+主流性判断：分离 prefill/decode/tool execution 的异构推理方向有逻辑，尤其适合 agentic coding、企业内网和主权 AI。但它是否成为主流还需要 2026H2-2027 的真实 tokens/$、latency、可用性和客户复购验证。替换成本中等：应用和模型框架迁移低于换 foundry，但高于单纯换服务器 CPU。
+
+### 9.5 Gaudi / future AI accelerator
+
+Gaudi 3 的风险最大：NVIDIA CUDA、AMD ROCm、云厂 ASIC、SambaNova/Groq/Cerebras 等都在抢推理和训练。Intel 过去取消 Falcon Shores 商用化，使客户对路线连续性更谨慎。未来 Jaguar/Crescent 若要成功，必须具备以下条件：
+
+1. 明确 rack-scale 系统，而不是单卡参数。
+2. 软件栈、编译器、模型适配和云实例可用性强于 Gaudi 时代。
+3. 与 Xeon、IPU、Foundry/packaging、硅光/互连形成平台，不再单点追赶 NVIDIA GPU。
+4. 有公开大客户和交付窗口。
+
+基准判断：Gaudi/Jaguar 不是 2026 投资主线，只能作为远期 upside。
+
+## 十、投资结论与跟踪指标
+
+### 10.1 结论
+
+Intel 的 2026 投资逻辑应按优先级排序：
+
+1. **最确定：DCAI 的 Xeon server CPU/AI host CPU 供需修复。** 这是当前收入和利润已经显示改善的主线。Q1 DCAI 50.52 亿美元、同比 +22%、OPM 30.5%，Q2 还指引环比双位数增长。
+2. **次确定：Google/custom IPU/ASIC 和 DPU/IPU 控制面。** 这是小基数高弹性业务，符合 AI cloud 多租户、安全、存储、网络 offload 方向，但披露不足。
+3. **高期权：advanced packaging backlog 和 Malaysia back-end 2027 转收入。** AI 封装紧缺是真瓶颈，Intel 技术有价值，但商业份额仍需证明。
+4. **高风险高期权：18A/14A 外部 foundry。** 技术叙事强，外部收入弱；外部客户量产之前，不能把 Foundry 分部收入等同为可投资高毛利 foundry 收入。
+5. **低基准权重：Gaudi/未来 AI accelerator。** 路线重置和软件生态弱使其不能支撑当前估值。
+
+当前股价 112.86 美元、市值 5,735.7 亿美元、forward PE 约 133x、PS 约 9.4x，已经把 Intel 从“困境修复”重新定价成“AI 控制面 + 美国 foundry 成功”资产。若只看 2026Q1 的 GAAP 净亏损和 Foundry 外部收入，估值偏激进；若 2027 年 DCAI 年化突破 250 亿美元、Foundry 亏损快速缩窄、外部/advanced packaging 收入进入数十亿美元年化，估值才有基本面解释。
+
+### 10.2 未来 12 个月最重要跟踪指标
+
+| 指标 | 为什么重要 | 乐观信号 | 反证信号 |
+|---|---|---|---|
+| DCAI 营收和 OPM | 直接决定 Intel AI 现金流 | 连续季度同比 +20% 以上，OPM 维持 28%-32% | DCAI 增速回落到个位数或 OPM 下滑 |
+| Xeon 供给/交期 | 管理层称需求大于供给 | Q2-Q4 供给改善且不压 ASP | 供给改善后价格下滑、库存上升 |
+| Google/custom IPU 金额 | 小业务高弹性 | 公司开始披露 ASIC/IPU 年化收入或更多客户 | 只停留定性，未转收入 |
+| Foundry 外部收入 | 证明外部客户认可 | 每季从 1.74 亿美元向 5 亿、10 亿美元爬坡 | 外部收入长期低于 3 亿美元/季 |
+| Foundry OPM | 估值最大分歧 | 从 -45% 改善至 -25% 以内 | 18A/14A 投资继续使亏损扩大 |
+| 18A 良率和产品爬坡 | 影响 CCG/DCAI 毛利和 foundry 可信度 | Xeon 6+/Core Series 3 出货顺利，Q2-Q4 GM 稳定 | 18A 导致毛利明显下滑或延期 |
+| Advanced packaging backlog 转收入 | AI 封装期权兑现 | Malaysia expansion 2027 revenue visibility 提高 | backlog 只是意向，未形成外部收入 |
+| SambaNova/Foxconn/Vector Core 客户 | rackscale inference 是否真实 | 2026H2 出现多客户、复购和性能数据 | 只停留 demo |
+| Gaudi/Jaguar 路线 | 远期 AI accelerator 期权 | 明确客户、规格、量产窗口 | 继续延期或更换路线 |
+
+## 主要资料来源
+
+### 公司与监管资料
+
+- Intel 2026Q1 earnings release, 2026-04-23: https://www.intc.com/news-events/press-releases/detail/1767/intel-reports-first-quarter-2026-financial-results
+- Intel 2026Q1 prepared remarks, 2026-04-23: https://d1io3yog0oux5.cloudfront.net/_2a124630877a023622bef90b2b56ff74/intel/db/887/9254/prepared_remarks/1Q2026-Earnings-Call.pdf
+- Intel 2025Q4/FY2025 earnings release, 2026-01-22: https://www.intc.com/news-events/press-releases/detail/1759/intel-reports-fourth-quarter-and-full-year-2025-financial
+- Intel 2025Q3 earnings release, 2025-10-23: https://www.intc.com/news-events/press-releases/detail/1753/intel-reports-third-quarter-2025-financial-results
+- Intel 2025Q2 earnings release PDF, 2025-07: https://d1io3yog0oux5.cloudfront.net/_a2b0a764f7833be6ee68d611c4f9d100/intel/db/887/9139/earnings_release/Q2%2725_EarningsRelease_FINAL.pdf
+- Intel 2025Q1 earnings release PDF, 2025-04: https://download.intel.com/newsroom/2025/corporate/67s2p/Intel-1Q2025-Earnings.pdf
+- Intel 2025 Form 10-K, filed 2026: https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm
+
+### 最新业务、订单和会议资料
+
+- Intel and Google collaboration, 2026-04-09: https://www.intc.com/news-events/press-releases/detail/1766/intel-and-google-deepen-collaboration-to-advance-ai
+- Intel Xeon 6 host CPU for NVIDIA DGX Rubin NVL8, 2026-03-16: https://newsroom.intel.com/data-center/intel-xeon-6-used-as-host-cpus-in-nvidia-dgx-rubin-nvl8-systems
+- Intel and SambaNova agentic AI with Xeon 6, 2026-04-08: https://newsroom.intel.com/artificial-intelligence/intel-and-sambanova-advance-agentic-ai-with-xeon-6
+- SambaNova and Intel Business Wire release, 2026-04-08: https://www.businesswire.com/news/home/20260408117878/en/SambaNova-and-Intel-Announce-Blueprint-for-Heterogeneous-Inference-GPUs-for-Prefill-SambaNova-RDUs-for-Decode-and-Intel-Xeon-6-CPUs-for-Agentic-Tools
+- Intel Computex 2026 AI innovations, 2026-06-01/02: https://newsroom.intel.com/artificial-intelligence/intel-announces-new-ai-innovations-at-computex
+- Intel Computex 2026 press kit, updated 2026-06-11: https://newsroom.intel.com/press-kit/press-kit-intel-at-computex-2026
+- Intel Ethernet E835 Controllers and Network Adapters, 2026-06-02: https://newsroom.intel.com/data-center/intel-introduces-ethernet-e835-controllers-network-adapters
+- Intel Gaudi product page, 2026 检索: https://www.intel.com/content/www/us/en/products/details/processors/ai-accelerators/gaudi.html
+
+### 本项目行业资料
+
+- `行业调研/AI服务器_存储_芯片/行业调研_AI服务器CPU与控制平面芯片_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_商用AI加速芯片_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_网卡、DPU与SmartNIC_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+

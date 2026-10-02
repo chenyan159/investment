@@ -1,0 +1,554 @@
+# IBM（NYSE: IBM）国际商业机器公司全面尽调（截至 2026-07-18）
+
+> 研究截止：2026-07-18（America/Los_Angeles）。市场价格采用 2026-07-17 美股收盘；资产负债表采用已提交 SEC 的 2026-03-31 数据。IBM 于 2026-07-14 只发布了 2026Q2 选择性初步结果，完整财报、分部利润和更新后的全年指引要到 2026-07-22 才公布，因此本文把 2026Q2 明确标为“初步/估算”，不把它与完整 10-Q 混为一谈。
+>
+> 独立性边界：项目内只使用“基本面/行业调研”中与 AI 存储、KV Cache、企业 AI 芯片及顶级会议有关的产业资料；未读取公司索引、其他公司报告、日度资料、技术面、情绪面或其他研究目录，也未修改公司索引。联网资料优先采用 IBM、SEC、Red Hat、Confluent、NVIDIA 等一手来源。
+>
+> 口径：金额均为美元；B=十亿美元，M=百万美元。本文的“研究估算”不是 IBM 指引。产品级收入、AI 数据中心收入占比、硬件 ASP 和每 GPU 内容量均因 IBM 不单独披露而采用可复算区间，严禁与公司披露值直接相加。
+
+## 核心结论
+
+1. **IBM 不是 NVIDIA 式的通用 AI 算力供应商，而是企业 AI 的“控制层、数据层、受监管运行层和实施层”。**其最有价值的位置依次是 Red Hat OpenShift/RHEL 的混合云运行时、HashiCorp 的基础设施自动化、Confluent/MQ/watsonx.data 的实时数据平面、IBM Z/Power 的数据就地推理，以及 IBM Consulting 的落地能力。对通用 GPU、HBM 和光模块，IBM 的直接 BOM 基本为零。
+2. **投资人对 IBM 的旧印象是低增长、主机周期、稳定分红；2023—2026 年的新定价逻辑是“高经常性软件 + AI 咨询 + 专有基础设施 + 量子期权”。**2026-07-14 的 Q2 预告打破了“平滑复合增长”叙事：收入仅增 1%，Software +5%，Infrastructure -7%，大量大单未按期关闭，股价当日下跌 25.2%。因此当前估值同时包含“高切换成本”与“执行、并购和周期”折价。
+3. **Q2 不是需求全面坍塌，而是预算在同一客户钱包内重新排序。**客户在 6 月末抢购供应受限的服务器、存储和内存以赶在涨价前锁货，IBM Distributed Infrastructure 反而创历史最佳、收入 +37%、期末 backlog 约 0.5B；受损的是 Z、与 Z 配套的 Transaction Processing 软件以及未及时签署的大型软件交易。成交延迟不等于取消，但 IBM 没有披露取消率。
+4. **软件主线仍然成立，但要完成 Q1 时给出的“2026 年 Software 10%+”目标，H2 难度明显上升。**2026H1 Software 研究估算约 14.81B、同比约 +7.9%；若全年达到 10%，H2 需约 +12%。Confluent 的整季并表、Red Hat +11% 和 HashiCorp 强劲表现提供支撑，Transaction Processing 的缺口和预算挤压构成反向压力。
+5. **最确定的 AI 收入不是“大模型本身”，而是已有续费和迁移成本的数据/控制软件。**OpenShift 已是约 2.0B ARR；Software ARR 24.6B、同比约 +10%；Confluent 2025 年收入 1.167B、+21%；HashiCorp 收购前 TTM 收入约 0.65B。它们共同覆盖部署、身份/密钥、基础设施即代码、实时流数据和治理，客户替换需要重做平台工程与合规认证。
+6. **IBM Z 的护城河最深、但季度周期也最强。**z17 截至 Q2 仍接近前代同期的 130%，85% 已装 MIPS 客户维持或增加容量；Telum II 可做交易内低时延推理，Spyre 可扩展生成式/多模态推理。管理层在 6 月会议称 AI MIPS 可带来 5—8 倍全栈收入乘数，但 7 月 Q2 预告证明“强项目累计表现”不能消除季度落单和三年换机周期。
+7. **AI 存储是 IBM 最容易被忽视的增量。**Storage Scale System 6000 已获 NVIDIA DGX 认证，NVIDIA 选择其提供 10PB；当前系统最高 4.79PB raw/4U、340GB/s，整架超过 42PB。IBM 在 BofA 会议称运行 Scale/Flash 的相关产品增长约 50%—60%，但这是管理层会议口径，IBM 不披露 Storage 单项收入，且 10PB 合同未披露金额。
+8. **资产负债表“可承受，但并不宽松”。**截至 2026-03-31，现金/受限现金/有价证券 11.83B，总债务 66.36B、非金融债务 53.52B；流动比率 0.80。2025 FCF 14.7B、A-/A3/A- 投资级评级、10B 未使用授信提供缓冲；但商誉与无形资产合计 89.33B，占资产 57.2%、为权益 2.70 倍，并购减值和利息成本是实质风险。
+9. **未来一年公司级基准情景不是“AI 爆发”，而是收入约 +4%。**本文模型为：基准 72.0B（约 +4%）、乐观 75.2B（约 +8.8%）、极度乐观 79.0B（约 +14.3%）。最强增量来自 Confluent/watsonx 数据栈、OpenShift、AI Storage/Power 和 AI Consulting；z17/TP 在基准情景仍受周期拖累。
+10. **最需验证的四个变量：**7 月 22 日全年指引是否下修；Q2 延迟大单在 Q3 的转化率而非口头“pipeline”；0.5B Distributed Infrastructure backlog 的交付与毛利；Confluent 并表后 Data 有机增速和 Software ARR 净留存。量子与 Lightwell 战略意义大，但一年收入贡献仍小，不能用投资承诺替代客户订单。
+
+## 一、公司整体业务、投资人认知与产业链位置
+
+### 1.1 IBM 到底卖什么
+
+IBM 把一套企业工作负载从“数据在哪里”一直覆盖到“如何运行、如何治理、谁来实施”：
+
+| 层级 | IBM 的位置 | 核心产品/资产 | 收入性质与壁垒 |
+|---|---|---|---|
+| 企业运行时与混合云 | 跨本地、私有云和多云的一致控制层 | Red Hat Enterprise Linux、OpenShift、OpenShift AI/AI Factory、Ansible、Sovereign Core | 订阅/支持为主；认证、Operator、流水线和安全策略形成高切换成本 |
+| 基础设施自动化与 FinOps | 从资源申请、密钥、网络到成本治理 | HashiCorp Terraform/Vault/Consul/Nomad/HCP、ApptioOne/Cloudability/Targetprocess、Turbonomic、Instana、Concert | SaaS/订阅；嵌入客户 IaC、密钥和 CMDB 后切换成本高 |
+| 企业数据与 AI 平台 | 把批数据、实时流、主机交易和非结构化数据接到模型/Agent | Confluent Kafka/Flink/Tableflow、MQ、Db2、DataStax/Langflow、watsonx.data/ai/governance/Orchestrate、Granite、Docling | 订阅、消费和软件许可；数据契约、连接器、治理形成黏性 |
+| 专有任务关键计算 | 数据不出系统的交易处理与 AI 推理 | IBM z17/Telum II/Spyre/zOS/LinuxONE、Power11/IBM i/AIX/PowerVM | 硬件 + MIPS 容量 + 系统软件 + 支持；专有全栈和极高迁移风险带来强定价 |
+| AI/HPC 数据面 | 向 GPU 持续喂数、保存 checkpoint/RAG/KV Context | Storage Scale System 6000、FlashSystem、DS8000、Fusion、Tape | 硬件、软件和支持；性能认证、数据重排和迁移时间形成中高切换成本 |
+| 企业转型实施 | 把上述资产与第三方云/GPU/模型组合成生产系统 | Strategy & Technology、Intelligent Operations、IBM Consulting Advantage | 人力与资产化交付；毛利低于软件，但带动软件 attach 和客户关系 |
+| 研究期权 | 长周期差异化计算和半导体研究 | Quantum、Anderon 量子晶圆厂、半导体研究联盟 | 当前收入不透明、投入大；更多是 2029 以后期权，非一年业绩主引擎 |
+
+产业链上，IBM 位于 NVIDIA/AMD/Intel、Samsung/TSMC、内存/SSD 厂商等上游器件之后，位于企业应用和受监管客户之前。IBM 设计 Telum、Power、Spyre 和系统，但不是通用 GPU/HBM/光模块的规模制造商；它通过 Red Hat、数据软件、专有服务器/存储和咨询，把第三方算力变成可治理的生产系统。因此，IBM 的 AI 价值量更接近“每个企业集群的软件与实施 attach”，而不是“每片 GPU 的芯片 ASP”。
+
+### 1.2 2025 年收入底盘和利润结构
+
+2025 年 IBM 收入 67.535B、同比 +7.6%（恒定汇率 +6%），构成如下。软件是利润池，咨询是转化器，基础设施是周期性高现金产品。
+
+| 2025 全年 | 收入 | 占总收入 | 同比 | 毛利率 | 分部利润率 | 关键含义 |
+|---|---:|---:|---:|---:|---:|---|
+| Software | 29.962B | 44.4% | +10.6% | 83.5% | 33.1% | 最大利润池；ARR、M&A 和交叉销售决定增长质量 |
+| Consulting | 21.055B | 31.2% | +1.8% | 28.1% | 11.7% | 收入稳、利润率低；AI backlog 可推动组合升级 |
+| Infrastructure | 15.718B | 23.3% | +12.1% | 58.6% | 22.0% | z17 首年推动；三年周期导致季度波动 |
+| Financing | 0.737B | 1.1% | +3.4% | 45.3% | 70.7% | 服务硬件客户，不是增长主线；分部利润率含融资利差，不可与产品分部直接比较 |
+| Other | 0.063B | 0.1% | 不具可比性 | 不具意义 | 不适用 | 租赁残值等调整 |
+
+来源：[IBM 2025 Q4/全年结果](https://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS)、[IBM 2025 10-K/年度披露](https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm)。
+
+### 1.3 投资人如何给 IBM 定位
+
+**传统认知：**成熟大型机、外包/咨询、稳定 FCF 和高分红，收入低个位数，主机新品每三年带来一轮硬件和 Transaction Processing 软件波动。
+
+**2023—2026 年的新认知：**Red Hat 提供订阅底盘，HashiCorp/Apptio 补自动化与 FinOps，Confluent/DataStax 补实时与非结构化数据，watsonx/Consulting 负责 AI 变现；Z/Power/Storage 则抓住数据主权、内存/存储紧张和“AI 靠近交易数据”的需求。量子提供远期期权。
+
+**2026Q2 之后的争议：**
+
+- 看多者看到 Red Hat +11%、Distributed Infrastructure +37%、0.5B backlog、z17 累计近 130% 和高达 24.6B 的 Software ARR；
+- 看空者看到 Q2 收入仅 +1%、软件大单未关闭、TP 对主机周期依赖、Confluent 11.59B 会计购买价带来的债务/摊销，以及管理层 6 月仍称需求不是 pull-forward、7 月却承认客户大幅重排预算的可见度问题；
+- 2026-07-14 股价单日 -25.2%，说明市场从“稳定 AI 复合增长”重新定价为“有高质量资产、但执行和周期需要重新证明”。[AP 对当日市场反应的报道](https://apnews.com/article/6807d21c72974fbac48356f83eeebbce)只用于市场反应，财务事实仍以 IBM/SEC 为准。
+
+### 1.4 最近三年的重大业务变动、转型与收购
+
+| 时间 | 交易/转型 | 金额与事实 | 对业务结构的影响 |
+|---|---|---:|---|
+| 2023-08 | 完成 Apptio | 公布价 4.6B；ApptioOne、Cloudability、Targetprocess，约 1,500 客户、覆盖约 450B 匿名 IT 支出数据 | 把 FinOps/IT 财务管理接入 Turbonomic、Instana 和 watsonx；Automation 由监控走向“成本—性能—配置”闭环 |
+| 2024-07 | 完成 StreamSets 与 webMethods | 公布价 2.13B 欧元；合计服务超过 1,500 家企业 | StreamSets 补实时数据摄取，webMethods 补 iPaaS/API/B2B；分别进入 Data 与 Automation |
+| 2024 | 出售 The Weather Company 资产、向 Palo Alto Networks 转让 QRadar SaaS 资产 | IBM 保留部分本地安全资产/合作关系 | 退出低协同或需大规模 SaaS 投入的资产，集中混合云、自动化、数据和咨询 |
+| 2025-02 | 完成 HashiCorp | 宣布时 EV 6.4B；IBM 会计总对价约 7.43B；收购前 TTM 收入约 0.65B | Terraform/Vault/Consul/Nomad/HCP 将 IaC、身份与密钥、网络和调度纳入 IBM Automation；也引入 OpenTofu 等开源替代风险 |
+| 2025 | 收购 DataStax、Hakkoda 等 | 金额多未披露/不重大 | DataStax 补 Cassandra、向量与 Langflow；Hakkoda 补数据和 AI 咨询实施 |
+| 2025 | z17、Power11、Spyre 商用；分部收入类别重整 | z17 2025-06 推出；Spyre 对 Z/LinuxONE 2025-10-28 GA、对 Power 2025-12 GA | Infrastructure 从传统刷新转向交易内 AI、数据主权和高密度推理；软件类别改为 Hybrid Cloud、Automation、Data、TP |
+| 2026-03 | 完成 Confluent | 会计购买价 11.590B，其中商誉 7.225B；Confluent 2025 收入 1.167B、+21%，超过 6,500 客户、约 40% Fortune 500 | 把 Kafka/Flink 实时流、Tableflow 和数据契约接入 watsonx.data、MQ、webMethods 和 Z；战略协同强，但购买倍数与债务较高 |
+| 2026-04/05 | IBM Bob GA、Think 2026 发布 agentic operating model | Bob 已有 80,000+ IBM 员工使用，受访者自报平均生产率 +45%；watsonx Orchestrate 新版、Concert、Vault 2.0、Sovereign Core | 从单点 AI 助手转向 Agent 治理、开发、运维、安全的控制平面 |
+| 2026-05/07 | Project Lightwell、Anderon/量子投入 | Lightwell 为 IBM/Red Hat 5B 投资承诺和 20,000+ 工程师；Anderon 获拟议 1B CHIPS 激励、IBM 1B 现金；IBM 拟五年投量子 10B+ | 扩大开放源码安全和量子长期护城河；这些是 IBM 投资承诺，不是客户订单或当期收入 |
+
+一手来源：[Apptio 完成公告](https://newsroom.ibm.com/2023-08-10-IBM-Completes-Acquisition-of-Apptio-Inc)、[StreamSets/webMethods 完成公告](https://newsroom.ibm.com/2024-07-01-IBM-Completes-Acquisition-of-StreamSets-and-webMethods%2C-Bolstering-its-Automation%2C-Data-and-AI-Portfolios)、[HashiCorp 完成公告](https://newsroom.ibm.com/2025-02-27-ibm-completes-acquisition-of-hashicorp%2C-creates-comprehensive%2C-end-to-end-hybrid-cloud-platform)、[Confluent SEC 购买价分配](https://www.sec.gov/Archives/edgar/data/51143/000005114326000038/ibm-20260331.htm)、[IBM Bob GA](https://newsroom.ibm.com/2026-04-28-introducing-ibm-bob-ai-development-partner-that-takes-enterprises-from-ai-assisted-coding-to-production-ready-software)、[Lightwell](https://newsroom.ibm.com/2026-05-28-ibm-and-red-hat-commit-5-billion-to-redefine-the-future-of-open-source-in-the-ai-era)。
+
+### 1.5 最新股价、估值和经营指标
+
+| 指标 | 最新值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | 212.67 美元 | 2026-07-17 收盘 | 当日 -2.91%；[历史收盘核验](https://www.macrotrends.net/stocks/charts/IBM/ibm/stock-price-history/1000) |
+| 市值 | 约 200—202.5B | 2026-07-17 | 行情源因稀释/流通股口径不同；本文估值计算用 202.49B，交易页面为约 199.9B |
+| Trailing P/E | 18.8x | 2026-07-17 行情，EPS 约 11.33 | Q2 仍为初步结果，最终 TTM 会小幅变化 |
+| Forward P/E | 约 17.1x | 212.67 / FY2026 一致预期 EPS 12.45 | 一致预期为调整后口径，非 IBM 指引；[预期来源](https://www.marketbeat.com/stocks/NYSE/IBM/forecast/) |
+| P/S | 约 2.93x | 市值 202.49B / 估算 TTM 收入 69.13B | TTM 含 2026Q2 初步收入 17.2B |
+| TTM 收入增速 | 约 +8.0% | 截至 2026Q2 初步 | TTM 69.13B 对上年同期约 64.04B；单季 Q2 仅 +1% |
+| TTM 毛利率 | 约 58.1% | 截至 2026Q2 初步 | 四季毛利约 40.15B；Q2 初步毛利率 57.7% |
+| TTM GAAP 净利率 | 约 15.5% | 研究估算 | 受 2025Q4 税务审计事项带来的 1.435B 所得税收益明显抬高；不应视为正常经营净利率 |
+| 2026Q1 GAAP 净利率 | 7.6% | 2026-03-31 | 较干净的单季法定口径；运营非 GAAP 净利率 11.4% |
+
+行情交叉核验：[2026-07-17 收盘与成交量](https://chartexchange.com/symbol/nyse-ibm/)、[IBM 分析师一致预期](https://stockanalysis.com/stocks/ibm/forecast/)。估值倍数会随 7 月 22 日正式财报和一致预期调整而变。
+
+### 1.6 资产负债表评估
+
+截至 2026-03-31 的关键数据来自 [IBM 2026Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/51143/000005114326000038/ibm-20260331.htm)：
+
+| 指标 | 数值 | 计算/判断 |
+|---|---:|---|
+| 现金、受限现金和有价证券 | 11.827B | 较 2025 年末下降 2.643B，主要因为 Confluent |
+| 总债务 / 非金融债务 | 66.361B / 53.523B | 总债务较年末 +5.100B；金融债务 12.837B 对应融资资产 |
+| 净债务 / 非金融净债务 | 约 54.53B / 41.70B | 用上述现金类资产抵扣 |
+| 2025 FCF | 14.7B | 总债务/FCF 约 4.51x；非金融债务/FCF 约 3.64x |
+| 流动资产 / 流动负债 | 31.914B / 40.101B | 流动比率 0.80，营运资本 -8.186B |
+| 递延收入 | 17.034B 流动 + 4.195B 长期 | 合计 21.229B；这是一部分负营运资本的经济缓冲，因为多为先收款后交付 |
+| 总资产 / 权益 | 156.229B / 33.056B | 有形权益薄，回购形成巨额库存股 |
+| 商誉 / 无形资产 | 74.709B / 14.624B | 合计 89.333B，占资产 57.2%、为权益 2.70x |
+| Q1 经营现金流 / FCF | 5.169B / 2.220B | 现金生成仍强；Q2 初步 H1 FCF 4.760B |
+| 信用与流动性 | S&P A-、Moody’s A3、Fitch A-；10B 授信 | 单 A 投资级、契约余量充足，无评级触发式加速条款 |
+| 养老金 | 2025 年末全球合资格计划约 116% funded | 不是当前主要资金缺口 |
+
+**健康度：6.5/10，结论为“现金流强、信用可控、并购后杠杆和商誉偏高”。**
+
+- 正面：14.7B FCF 足以覆盖约 6.3B 年化股息两倍以上；10B 后备授信、单 A 评级和递延收入降低短期再融资风险。
+- 中性：0.80 流动比率在订阅/预收款软件公司并不自动代表偿付危机，但与 8.655B 短债并存，不能忽略。
+- 负面：Confluent 购买价中 62% 为商誉，IBM 总商誉/无形资产已远超权益；如果交叉销售不足，减值、摊销和利息会压缩股东回报。Q1 单季无形资产摊销 0.719B，已是实质成本。
+
+## 二、最近五次财报：收入、利润、订单和交期
+
+### 2.1 五季度财务总表
+
+| 财报季度 | 总收入 / 同比 | Software | Consulting | Infrastructure | GAAP 毛利率 | 分部利润率：软/咨/基 | GAAP 净利率 | EPS |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| **2026Q2 初步** | **17.200B / +1%** | **约 7.756B / +5%** | **约 5.314B / 持平（CC +1%）** | **约 3.852B / -7%** | **57.7%** | 未披露，7/22 更新 | 约 12.5%—12.7%推算 | GAAP 2.27；运营 2.93 |
+| 2026Q1 | 15.917B / +9.5%（CC +6.1%） | 7.052B / +11.3% | 5.272B / +4.0% | 3.326B / +15.3% | 56.2% | 29.8% / 10.6% / 15.8% | 7.6% | GAAP 1.28；运营 1.91 |
+| 2025Q4 | 19.686B / +12.2%（CC +9%） | 9.031B / +14.0% | 5.349B / +3.4% | 5.132B / +20.6% | 60.6% | 37.7% / 12.3% / 31.2% | 28.4% | GAAP 5.86 持续经营；运营 4.52 |
+| 2025Q3 | 16.331B / +9.1%（CC +7%） | 7.209B / +10.5% | 5.324B / +3.3% | 3.559B / +17.0% | 57.3% | 32.9% / 12.9% / 18.1% | 约 10.7% | GAAP 1.84；运营 2.65 |
+| 2025Q2 | 16.977B / +7.7%（CC +5%） | 7.387B / +9.6% | 5.314B / +2.6% | 4.142B / +13.6% | 58.8% | 31.1% / 10.6% / 23.3% | 约 12.9% | GAAP 2.31；运营 2.80 |
+
+说明：
+
+- 2026Q2 的三个分部绝对额是用 2025Q2 分部收入乘 IBM 披露的同比增速估算，合计 16.922B，余下约 0.278B 为 Financing/Other；不是公司正式分部表。
+- 2025Q4 GAAP 净利润 5.600B 包含所得税事项收益，导致净利率高于正常水平；观察经营质量应同时看运营税前利润率 24.1%。
+- 2026Q2 IBM 披露 GAAP 毛利 9.907B、税前利润 2.479B，但未披露加权股数和净利润；净利率区间由 EPS 和近季股数推算。
+
+一手财报：[2026Q2 初步投资者信](https://newsroom.ibm.com/2026-07-14-Arvind-Krishnas-Letter-to-IBM-Investors)、[Q2 初步 8-K](https://www.sec.gov/Archives/edgar/data/51143/000005114326000070/0000051143-26-000070-index.htm)、[2026Q1](https://newsroom.ibm.com/2026-04-22-IBM-RELEASES-FIRST-QUARTER-RESULTS?lnk=hpln1id)、[2025Q4](https://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS)、[2025Q3](https://newsroom.ibm.com/2025-10-22-IBM-RELEASES-THIRD-QUARTER-RESULTS)、[2025Q2](https://newsroom.ibm.com/2025-07-23-IBM-RELEASES-SECOND-QUARTER-RESULTS?lnk=hpln1id)。
+
+### 2.2 Software 四条业务线
+
+| 财报季度 | Hybrid Cloud / 增速 | Automation / 增速 | Data / 增速 | Transaction Processing / 增速 |
+|---|---:|---:|---:|---:|
+| **2026Q2 初步** | **约 1.99B / Red Hat +11%** | 未披露；研究估算 2.03—2.11B / +8%—12% | 未披露；研究估算 1.77—1.87B / +18%—25% | **残差估算 1.78—1.96B / -11%—19%** |
+| 2026Q1 | 1.905B / +12.9% | 1.741B / +9.9% | 1.474B / +19.2% | 1.932B / +5.7% |
+| 2025Q4 | 约 1.958B / +10% | 约 2.332B / +18% | 约 2.105B / +22% | 约 2.636B / +8% |
+| 2025Q3 | 1.886B / +13.7% | 1.934B / +23.8% | 1.459B / +7.9% | 1.930B / -1.1% |
+| 2025Q2 | 1.796B / +16.1% | 1.883B / +16.2% | 1.499B / +8.8% | 2.208B / +0.6% |
+
+2025Q4 绝对额由全年减前三季度推导；2026Q2 的 Automation、Data 和 TP 只是为了量化“缺口主要在 TP”的残差情景：先用披露的 Red Hat +11%，再假设并购推动 Automation/Data 维持高个位数至 20%+，最后把 Software 总额 7.756B 的余量归于 TP。正式值必须等 7 月 22 日，不能把区间当作事实。
+
+### 2.3 订单、Backlog、Bookings、交期与取消
+
+| 财报季度 | Consulting signings / B2B | 可核验 backlog/订单信号 | 交期、取消和渠道判断 |
+|---|---:|---|---|
+| **2026Q2 初步** | 金额未披露；称 signings 增长、GenAI 领先 | Distributed Infrastructure 期末 backlog 约 **0.5B**；z17 前代同期约 **130%**；85% 已装 MIPs 客户维持或扩容 | 多个大单未按预期时间关闭；IBM 未称取消，也未披露取消率。服务器/存储/内存供应紧、预期涨价导致 6 月末预算抢购 |
+| 2026Q1 | 5.354B，+8.5%（CC +6%）；TTM B2B 1.04 | Consulting backlog **31.3B**；GenAI 约占 **30%**，即约 9.4B；Software ARR 24.6B | backlog 通常跨数季/多年确认；未披露 lead time 或取消率 |
+| 2025Q4 | **约 6.807B，-19.6%**（由全年减 9M 推导）；TTM B2B 1.03 | Consulting backlog **31.9B**；累计 GenAI book >12.5B，其中 Consulting >10.5B、Software >2B | GenAI book 是自启动以来的软件交易收入 + 新 SaaS ACV + 咨询 signings，绝不是待确认收入 |
+| 2025Q3 | 5.223B，-4.1%；TTM B2B 1.12 | 累计 GenAI book >9.5B | 无取消率；咨询 backlog 仍提供约一年以上收入覆盖 |
+| 2025Q2 | 4.793B，-15.6%；TTM B2B >1.14 | 累计 GenAI book >7.5B；公司称 backlog 增长但未给绝对值 | z17 刚启动、硬件交付进入首年；无取消率和标准 lead time |
+
+**三条不能混淆的口径：**
+
+1. 31.3B Consulting backlog 是未履约合同余额，能映射未来服务收入，但包含不同交付期限；
+2. 0.5B Distributed Infrastructure backlog 是硬件短周期积压，证明 Power/Storage 需求强，但规模仅约公司单季收入的 3%，不是数年订单墙；
+3. 12.5B GenAI book 是累计商业活动，包含已经确认的软件交易收入，不能拿来除以未来季度做收入预测。
+
+### 2.4 AI 数据中心相关收入占比
+
+IBM 没有披露“AI 数据中心收入”，而且 Red Hat、Automation、Data、Z、Storage 和 Consulting 都同时服务 AI 与非 AI。本文采用两层口径：
+
+- **窄口径：**可直接归因于 AI 集群/模型/Agent 的 OpenShift AI、watsonx、AI 数据/治理、AI Consulting、AI Storage、Spyre/Telum AI 增量；
+- **宽口径：**再加上作为 AI 生产运行底座的全部 Hybrid Cloud、Automation、Data 以及与 AI 项目绑定的 Z/Power。宽口径会严重高估“纯 AI”收入，只用于说明受益面。
+
+| 季度 | 窄口径 AI/DC 收入研究估算 | 占总收入 | 宽口径 AI-enabling 暴露 | 主要锚点 |
+|---|---:|---:|---:|---|
+| 2025Q2 | 0.9—1.4B | 5%—8% | 35%—45% | AI book >7.5B、OpenShift >20% 增长、z17 启动 |
+| 2025Q3 | 1.0—1.5B | 6%—9% | 37%—47% | AI book >9.5B、Automation +23.8%、Spyre 即将 GA |
+| 2025Q4 | 1.4—2.0B | 7%—10% | 40%—50% | AI book >12.5B、Z +67%、Data +22% |
+| 2026Q1 | 1.3—1.9B | 8%—12% | 42%—52% | OpenShift 2B ARR、咨询 backlog 30% GenAI、Confluent 并表 |
+| **2026Q2 初步** | **1.5—2.2B** | **9%—13%** | **42%—53%** | Red Hat +11%、Power/Storage +37%、Confluent 整季；TP 大幅拖累 |
+
+估算方法是分别对相关收入线赋予 10%—50% 的“直接 AI”系数，再用公开客户/产品锚点校正；不是将全部 Data 或全部 Consulting 算作 AI。误差可能达到 ±2—3 个百分点。
+
+## 三、2026 年最新指引、收入占比与产品地图
+
+### 3.1 最新正式指引与 2026Q2 的落差
+
+截至研究日，**最新完整正式指引仍是 2026Q1 财报口径**；7 月 14 日 Q2 初步信没有给新全年数字，并明确要在 7 月 22 日讨论全年预期。
+
+| 项目 | 2026Q1 时的正式指引 | Q2 初步现实 | 为完成目标所需 |
+|---|---|---|---|
+| IBM 总收入 | 全年 CC >5% | H1 报告口径约 +5.1%；Q2 单季仅 +1% | H2 需大单转化和 Confluent/Red Hat 加速，汇率不能掩盖有机缺口 |
+| Software | 全年 **10%+** | H1 研究估算约 +7.9%；Q2 +5% | H2 约需 +12%，且 TP 必须止跌 |
+| Consulting | 低至中个位数 | H1 约 +2%；Q2 持平、CC +1%，但 signings 增长 | backlog 转化需加速；GenAI 不能只停留在签约 |
+| Infrastructure | 低个位数下降，约拖累 IBM 0.5pct | H1 约 +2%，Q2 -7%；Z 下滑、Distributed +37% | H2 面对高 z17 基数，组合要靠 Power/Storage 抵消 |
+| FCF | 2025 的 14.7B 基础上约 +1B，即约 15.7B | H1 4.760B | H2 需约 10.94B，约比 2025H2 高 10%上下 |
+| 运营税前利润率 | 全年约 +1pct；Q2 约 +50bp | Q2 初步 +30bp 至 19.2% | 生产率节省要抵消 Confluent 摊薄、硬件组合和销售缺口 |
+
+[2026Q1 prepared remarks](https://www.ibm.com/downloads/documents/us-en/15db805fff4249f1)披露 Software 10%+、Consulting low-to-mid single digit、Infrastructure low-single-digit decline、Confluent 约 0.6B 年内摊薄和 FCF +1B。Q2 初步结果并不等于指引已经正式撤回，但使其成为 7 月 22 日必须重新验证的高风险假设。
+
+### 3.2 2026Q2 初步收入占比
+
+| 分部 | Q2 初步收入 | 占比 | 同比 | 评价 |
+|---|---:|---:|---:|---|
+| Software | 约 7.756B | **45.1%** | +5% | 仍为最大收入和利润池；Red Hat +11%，缺口主要来自 TP/大单延迟 |
+| Consulting | 约 5.314B | 30.9% | 持平；CC +1% | signings 增长、GenAI 领先，但收入转化慢 |
+| Infrastructure | 约 3.852B | 22.4% | -7% | Z 失速；Power/Storage 所在 Distributed +37%并有 0.5B backlog |
+| Financing/Other | 约 0.278B | 1.6% | 未披露 | 非增长主线 |
+
+### 3.3 Q1 的可核验业务细分，作为 Q2 产品分析基线
+
+| Q1 业务线 | 收入 | 占 IBM | 同比 | 主要产品 |
+|---|---:|---:|---:|---|
+| Hybrid Cloud | 1.905B | 12.0% | +12.9% | RHEL、OpenShift、OpenShift Virtualization/AI、Ansible、Sovereign Core |
+| Automation | 1.741B | 10.9% | +9.9% | HashiCorp、Apptio、Turbonomic、Instana、webMethods、Maximo、Concert |
+| Data | 1.474B | 9.3% | +19.2% | watsonx.data/ai/governance、Confluent、DataStax、MQ、Db2、DataStage |
+| Transaction Processing | 1.932B | 12.1% | +5.7% | z/OS、CICS、IMS、Db2 for Z、WebSphere、交易容量软件 |
+| Strategy & Technology Consulting | 2.896B | 18.2% | +4.1% | AI/云/应用和数据转型 |
+| Intelligent Operations Consulting | 2.376B | 14.9% | +4.0% | BPO、供应链、财务、人才与运营自动化 |
+| Hybrid Infrastructure | 2.108B | 13.2% | +28.1% | Z/LinuxONE、Power、Storage |
+| Infrastructure Support | 1.218B | 7.7% | -1.8% | TLS、维护；新机保修期会暂时压低付费支持 |
+
+### 3.4 应重点追踪、以及明确跳过的产品
+
+**重点产品：**
+
+- Red Hat OpenShift、OpenShift AI/AI Factory、RHEL、OpenShift Virtualization；
+- HashiCorp Terraform、Vault、HCP/Infragraph，以及 Apptio/Turbonomic/Instana/Concert；
+- Confluent Kafka/Flink/Tableflow、watsonx.data/ai/governance/Orchestrate、DataStax、MQ、Db2；
+- IBM z17、Telum II、Spyre、z/OS/TP 软件、LinuxONE；
+- Power11、IBM i/AIX、Power Autonomous Operations、Bob Premium for i；
+- Storage Scale System 6000、Storage Scale、FlashSystem、Fusion、DS8000，尤其 NVIDIA DGX 和 KV/Context 路径；
+- AI Consulting/Consulting Advantage、Bob、Lightwell、Sovereign Core；
+- 量子作为潜力雷达，但不纳入一年 AI 基建收入主模型。
+
+**跳过或降权：**
+
+- Financing（仅约 1% 收入）；
+- 传统、非 AI 的通用 Consulting 人天业务；
+- Infrastructure Support 中随保修周期波动的维护收入；
+- TP 中没有新增 AI/现代化 attach 的传统续费部分；
+- 传统磁带、打印和与 AI 数据冷存无关的低增速存储 SKU；
+- Cognos、旧中间件等仅维持性许可；
+- 量子硬件一年内的收入放量假设。量子投入巨大、战略重要，但 2029 故障容错目标之前不应拿研发里程碑替代订单。
+
+## 四、高增长或关键业务：当前收入、增速、重要性与议价权
+
+评分均为 1—5：**重要性**指其在 AI 基建技术栈中的不可缺程度；**紧迫性**指客户未来 12 个月是否必须部署；**供需**越高表示越供不应求；**垄断**指 IBM 对产品/装机基础的控制力；**溢价**指涨价和保持毛利的能力。
+
+| 关键业务/产品组 | 当前年化收入贡献研究估算 | 最新增速/验证 | 毛利率 / 经营利润率估算 | 重/急/供/垄/价 | 判断 |
+|---|---:|---|---:|---:|---|
+| **Red Hat：RHEL、OpenShift、OpenShift AI/AI Factory、Virtualization、Sovereign Core** | Hybrid Cloud 约 **7.8—8.0B**；其中 OpenShift ARR **2.0B** | Q1 Hybrid Cloud +12.9%，Q2 Red Hat +11%；Virtualization 自 2024 起签约 >0.6B | GM 78%—86%；OP 30%—40% | **5/5/2/4/4** | 企业 AI 的跨云运行和治理底座，供应不受物理产能约束；壁垒来自认证、生态和运维流程 |
+| **Automation：HashiCorp、Apptio、Turbonomic、Instana、webMethods、Concert** | 类别约 **7.0B**；HashiCorp 约 0.7—0.9B，Apptio 约 0.6—0.9B | Q1 +9.9%；HashiCorp 创纪录 bookings、提前实现调整后 EBITDA 增厚 | GM 75%—85%；OP 25%—35% | **5/4/2/3/4** | IaC、Secrets、FinOps、可观测性和 Agent 运维形成闭环；OpenTofu/云原生工具限制垄断 |
+| **Data/AI：watsonx、Confluent、DataStax、MQ、Db2、DataStage** | 类别约 **6.3—6.7B**；Confluent 2025 收入 **1.167B** | Q1 Data +19.2%；Confluent 2025 +21%；Q2 称 Confluent 表现强 | GM 70%—83%；OP 15%—30%，短期受并购摊销/整合压制 | **5/5/2/3/3** | 实时、受治理的数据是 Agent 生产化硬前提；竞争最激烈，但数据契约和连接器提升黏性 |
+| **IBM Z/TP/Telum II/Spyre/LinuxONE 全栈** | **9—11B**，其中 TP 单独年化约 8B，硬件/支持有重叠 | Q1 Z +51%、TP +5.7%；Q2 Z/TP 显著低于预期；z17 累计近 130% | 全栈 GM 65%—75%；OP 30%—45%，随周期大幅波动 | **5/4/3/5/5** | 银行/保险核心交易的替换成本最高；AI 价值在“数据不移动、交易内推理”，不是与通用 GPU 拼训练 |
+| **Power11 / IBM i / AIX / Spyre** | **2.8—3.5B** | Q1 Distributed +16.7%；Q2 Distributed（含 Storage）+37%；管理层称 IBM i 高双位数 | GM 45%—60%；OP 15%—25% | **4/4/4/4/4** | 受益于内存效率、SAP/IBM i、数据主权和本地推理；装机基础内强、绿地市场弱 |
+| **AI Storage：Storage Scale 6000、FlashSystem、Fusion、DS8000** | **3.0—4.0B**；其中直接 AI 约 0.8—1.4B | Q1 Storage 双位数；管理层称 Scale/Flash 相关产品 +50%—60%；NVIDIA 10PB 客户验证 | 混合 GM 55%—70%；OP 20%—30% | **5/5/4/3/4** | AI 数据喂入、RAG、checkpoint、KV Context 是当前短板；IBM 有技术和认证，但竞争者众多 |
+| **AI Consulting / Consulting Advantage** | Consulting TTM **21.3B**；其中直接 AI 研究估算 **4—6B** | Q1 +4%，Q2 持平；Q1 backlog 31.3B、约 30% GenAI | GM 27%—32%；分部 OP 10%—13% | **4/5/3/2/3** | 企业缺人才和实施能力，订单充足；人力扩容、执行和印度服务商竞争限制毛利与垄断 |
+| **Bob、Lightwell、Orchestrate、Concert、Sovereign Core 等早期产品** | 新增收入 **<0.3B**，且大多已包含在上述类别 | Bob GA、80,000+ 内部用户；Lightwell/Sovereign Core GA；多个功能仍 preview | 成熟 SaaS GM 可达 75%—85%，当前利润贡献低 | **4/5/1/2/2** | 小基数、高期权；必须观察付费席位、ACV 和续费，不能用使用人数或 5B 投资承诺代替收入 |
+
+产品级收入估算不可相加：例如 OpenShift 已包含在 Hybrid Cloud，Bob/Orchestrate 属于 Automation/Data，AI Consulting 也是 Consulting 子集；Z 全栈估算含 TP 与 Infrastructure 的交叉销售。
+
+### 4.1 Red Hat / OpenShift：最稳的 AI 控制层
+
+- OpenShift 已是约 **2B ARR**，Q1 管理层称保持强劲增长；OpenShift Virtualization 自 2024 年初以来合同超过 **0.6B**。这同时验证了容器平台与 VMware 替代两条需求。
+- 2026 年 1 月 Red Hat 的 self-managed 订阅指南继续以 **2 physical cores 或 4 vCPU 为一个 core-pair**。托管 OpenShift 公布的三年预留起价低至 **0.076 美元/小时/4 vCPU**，但企业自管 Platform Plus、AI Factory、安全和 24x7 支持通常询价。[Red Hat 订阅指南](https://www.redhat.com/en/resources/self-managed-openshift-subscription-guide)、[官方定价页](https://www.redhat.com/en/technologies/cloud-computing/openshift/pricing)。
+- IBM Sovereign Core 已 GA，并以 OpenShift/Red Hat AI 为底座，符合政府、金融、医疗对地域控制、可审计策略和模型可移植性的需求。
+- 利润交叉验证：Q1 Software GM 82.8%、分部利润率 29.8%；Red Hat 订阅本身毛利高，但销售、研发和 IBM 并购摊销使经营利润率低于纯订阅毛利。
+
+### 4.2 Automation：HashiCorp 是 AI 集群的“配置和身份层”
+
+- Terraform 管资源图，Vault 管人/机器/Agent 身份和动态密钥，Consul 管服务网络，Nomad/HCP 管运行和托管；Apptio/Cloudability 管钱，Turbonomic 管资源优化，Instana 管运行状况，Concert 负责跨域响应。
+- Think 2026 的 HCP Terraform powered by Infragraph 为 public preview，Vault 2.0 已 GA，Concert 和 Secure Coder 为 public preview。产品链条完整，但新模块仍需从 preview 转为付费 ACV。[Think 2026 产品状态](https://newsroom.ibm.com/2026-05-05-think-2026-ibm-delivers-the-blueprint-for-the-ai-operating-model-as-the-ai-divide-widens?asPDF=1)。
+- 风险在开源许可和替代：Terraform 改用 BUSL 后催生 OpenTofu。技术论坛对“被 IBM 收购后涨价、产品蓝化和人才流失”的讨论可作为留存风险线索，但不构成财务事实。[Terraform 社区讨论](https://www.reddit.com/r/Terraform/comments/1d7lttc/what_do_you_think_of_the_ibm_hashicorp_acquisition/)。
+- 交叉验证偏正面：IBM Q1 称收购后一年 HashiCorp bookings 创纪录、调整后 EBITDA 增厚早于计划；Q2 又称 HashiCorp 表现强。需要 7 月 22 日披露有机/并购贡献，否则 Automation 增速仍可能被并表掩盖。
+
+### 4.3 Data/AI：Confluent 让 watsonx 从“批数据湖”扩到实时事件
+
+- Confluent 2025 年收入 **1.1667B、+21%**，是 IBM Data 类别最可量化的新增基座；IBM 购买价 11.590B，相当于约 9.9 倍 2025 收入，必须靠交叉销售和利润改善证明回报。[Confluent 2025 10-K](https://www.sec.gov/Archives/edgar/data/1699838/000169983826000006/cflt-20251231.htm)。
+- Day-one 集成包括 watsonx.data、MQ、webMethods 和 IBM Z；Think 2026 已把 Confluent Tableflow 与 watsonx.data 集成推进至 GA，Context layer 和 GPU-accelerated Presto 仍为 private preview。
+- Nestlé 概念验证覆盖 186 个国家的数据集，IBM/NVIDIA 内测称成本降低 83%、price-performance 提升 30 倍。这是单一 PoC 的厂商结果，不能直接外推全部客户。
+- watsonx.ai 官方价提供真实价格锚：Standard 起价 **1,110 美元/月**；Granite 4 H Small 输入/输出约 **0.06/0.25 美元/百万 token**；H100 托管约 **14.5 美元/GPU 小时**、H200 约 **16 美元/GPU 小时**。托管 GPU 账单大部分是算力成本传导，并不等于 IBM 软件净收入。[watsonx.ai 官方定价](https://www.ibm.com/products/watsonx-ai/pricing)。
+- 数据层的优势是跨本地/多云、Z 交易和 Kafka/Flink；风险是 Snowflake、Databricks、AWS/Azure/GCP 原生数据服务都能把流、湖仓、向量、模型服务打包。
+
+### 4.4 z17 / Telum II / Spyre：专有交易 AI，不是通用训练 GPU
+
+- z17 最大配置 208 engines、64TB 内存、5.5GHz；Telum II 在 5nm 工艺上集成 AI 加速与 DPU，单加速器约 24 TOPS，满配 drawer 约 192 TOPS。IBM 宣称特定信用卡欺诈模型可达每天 450B 次推理、约 1ms 响应，属于特定厂商基准。
+- Spyre 为 PCIe Gen5 x16、75W、128GB LPDDR5、32 个 AI core；可在 z17/LinuxONE 中扩到 **48 卡**、Power11 中扩到 **16 卡**。它适合小到中型生成式/多模态推理，不能与 H100/H200/B200 的训练吞吐直接类比。[Telum/Spyre 规格](https://www.ibm.com/products/z/telum)、[Spyre 构建说明](https://research.ibm.com/blog/building-the-ibm-spyre-accelerator)。
+- IBM 在 BofA 会议称普通 Linux specialty MIPS 带来 3—4 倍全栈收入乘数，AI MIPS 带来 **5—8 倍**，因为硬件、watsonx、Spyre、订阅和服务一起销售。这是最有力的价格传导证据，但不是审计口径。
+- 客户切换成本极高：核心银行/卡组织的 COBOL、CICS、IMS、Db2、批处理、审计和 99.999999% 可用性不能只靠代码翻译替代。反面是这也让收入与三年容量刷新、MIPS 定价和少数超大客户采购日历高度相关。
+- 6 月 2 日管理层称供应冲击更像真实增量需求而非 pull-forward；7 月 14 日却承认大量客户在 6 月末重排 capex 且 IBM 未及时适应。该时间序列降低了短期预测可信度。
+
+### 4.5 Power11 与 AI Storage：Q2 最强，但不是没有周期
+
+- Power11 包括 E1180、E1150、S1124、S1122 等；E1150 最高 120 Power11 cores、16TB DDR5。2026-07-15 新增入门 S1112、Power Autonomous Operations 和 Bob Premium for i，表明 IBM 正用 Agent 降低 IBM i/RPG 人才门槛。[Power 产品规格](https://www.ibm.com/products/power)、[2026-07-15 新品](https://newsroom.ibm.com/2026-07-15-ibm-launches-new-power-systems-and-software-built-for-enterprises-to-address-risk%2C-productivity%2C-and-flexibility)。
+- BofA 会议称 IBM i/AS400 新工作负载呈“高于双位数”增长；这属于管理层渠道口径，需用未来 Distributed Infrastructure 收入验证。
+- Storage Scale System 6000 当前公开规格为 **4U、48 NVMe、最高 4.79168PB raw、340GB/s**；整架使用 122.88TB QLC 可超过 **42PB**。NVIDIA 选择其提供 **10PB**，且系统已获 NVIDIA DGX 认证。[IBM Storage Scale 6000 规格](https://www.ibm.com/products/storage-scale-system)、[IBM/NVIDIA GTC 2026](https://newsroom.ibm.com/2026-03-16-ibm-and-nvidia-announce-expanded-collaboration-at-gtc-2026-to-advance-ai-for-the-enterprise)。
+- 项目内行业调研显示，IBM Storage Scale ECE + Dynamo + Spectrum-X 在 130K prompt/并发的厂商测试中宣称最高 **56 倍 TTFT、22 倍 RPS**；同一资料明确提醒不同厂商基准不可横比。该报告还记录 IBM 是 NVIDIA BlueField-4 Context Memory 生态成员，但伙伴系统主要指向 2026H2，公开资料没有 IBM CMX 订单金额。[项目内 AI-native 存储与 KV Cache 行业调研](../../行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV%20Cache基础设施_2026-07-10.md)。
+- 同一项目产业模型对 70B GQA 取 0.2—0.5MB/token 原始 KV、压缩后低 2—8 倍；100 万会话、25K token 可对应 1.25—7.50PB live KV。这为 10PB 客户验证提供物理量级交叉验证，但不是 IBM 收入预测。
+
+### 4.6 AI Consulting 与小产品雷达
+
+- Q1 Consulting backlog 31.3B，约 30% GenAI，即约 9.4B；这给 AI Consulting 未来收入提供强于“累计 AI book”的锚，但合同交付跨期，且 IBM 不披露取消率。
+- Bob 2026-04-28 GA，已有 80,000+ IBM 内部用户，受访者自报平均生产率 +45%；Java modernization 加购 20 美元/月、IBM i 加购 40 美元/月，Z 专项为 enterprise annual quote。[IBM Bob 定价](https://bob.ibm.com/pricing)。内部用户不是付费客户，但证明产品在大规模代码库中运行过。
+- Lightwell 的 5B 是 IBM/Red Hat 的投资承诺，20,000+ 工程师是供给能力；Bank of America、BNY、Citi、Goldman Sachs、JPMorganChase、Mastercard、Morgan Stanley、RBC、State Street、Visa、Wells Fargo 等为早期采用者。没有披露客户合同金额，故当前收入按接近零到 0.1B 处理。
+- Quantum 方面，IBM 称有约 90 套系统与客户、目标 2029 年故障容错，2026 年投入加速；但其与 AI 基建收入不同，且五年 10B 投资会先压现金与利润。本文只把它视为远期期权。
+
+## 五、一年后产品收入贡献：基准、乐观、极度乐观
+
+### 5.1 情景定义
+
+- **基准：**Q2 延迟大单在 Q3/Q4 部分转化；Red Hat 维持约 10%；Confluent 正常并表；Distributed backlog 在两个季度内交付；Z 进入换机后半程。
+- **乐观：**软件大单转化率高、Confluent/HashiCorp 交叉销售加速、AI Storage/Power 供给改善、AI Consulting backlog 加快确认。
+- **极度乐观：**AI capex 从 GPU 延伸到数据/运行时/主权平台；IBM Storage 成为 BlueField-4/Context Memory 主要后端；AI MIPS 5—8 倍 attach 大规模兑现；Lightwell/Bob 从使用转为付费。
+
+### 5.2 产品级收入与五项评分
+
+下表“一年后收入”是未来 12 个月的收入贡献或运行率估算；各产品存在包含关系，**不可求和**。每个情景后的五个数字依次为重要性/紧迫性/供需/垄断/溢价。
+
+| 产品组 | 当前基线 | 基准：一年后收入 / 增速 / 五项评分 | 乐观：一年后收入 / 增速 / 五项评分 | 极度乐观：一年后收入 / 增速 / 五项评分 |
+|---|---:|---|---|---|
+| Red Hat / OpenShift | 7.9B | **8.6B / +9% / 5-5-2-4-4** | **9.2B / +16% / 5-5-3-4-4** | **9.8B / +24% / 5-5-4-5-5** |
+| Automation / HashiCorp | 7.0B | **7.6B / +9% / 5-4-2-3-4** | **8.2B / +17% / 5-5-3-3-4** | **8.9B / +27% / 5-5-4-4-4** |
+| Data / watsonx / Confluent | 6.5B | **7.3B / +12% / 5-5-2-3-3** | **8.2B / +26% / 5-5-3-4-4** | **9.3B / +43% / 5-5-4-4-4** |
+| Z / TP / Telum / Spyre 全栈 | 10.0B | **9.7B / -3% / 5-4-3-5-5** | **10.8B / +8% / 5-5-4-5-5** | **12.2B / +22% / 5-5-5-5-5** |
+| Power11 / IBM i / Spyre | 3.2B | **3.6B / +13% / 4-4-3-4-4** | **4.1B / +28% / 4-5-4-4-4** | **4.7B / +47% / 5-5-5-5-5** |
+| AI Storage | 3.5B | **4.1B / +17% / 5-5-4-3-4** | **5.0B / +43% / 5-5-5-3-4** | **6.1B / +74% / 5-5-5-4-5** |
+| AI Consulting 子集 | 5.0B | **5.8B / +16% / 4-5-3-2-3** | **6.8B / +36% / 5-5-4-2-3** | **8.0B / +60% / 5-5-5-3-4** |
+| Bob/Lightwell/Sovereign 等新增 | 0.2B | **0.4B / +100% / 4-5-1-2-2** | **0.8B / +300% / 4-5-2-3-3** | **1.4B / +600% / 5-5-3-3-4** |
+
+**为何 AI Storage 情景跨度最大：**现有 G3/G4 共享存储已可部署，且 NVIDIA 10PB 是真实客户验证；但 BlueField-4 CMX/STX 伙伴系统主要在 2026H2 才进入供货/认证。基准只计现有 Scale/Flash 迁移，极度乐观才计 Context Memory 成为 Rubin 级集群的独立预算。
+
+### 5.3 公司分部可加总模型
+
+| 未来 12 个月 | Software | Consulting | Infrastructure | Financing/Other | IBM 总收入 | 同比 |
+|---|---:|---:|---:|---:|---:|---:|
+| 当前 TTM/初步基线 | 31.05B | 21.26B | 15.87B | 0.95B | **69.13B** | 约 +8.0% |
+| **基准** | 33.5B | 21.9B | 15.6B | 1.0B | **72.0B** | **约 +4.1%** |
+| **乐观** | 34.8B | 22.7B | 16.7B | 1.0B | **75.2B** | **约 +8.8%** |
+| **极度乐观** | 36.3B | 23.8B | 17.8B | 1.1B | **79.0B** | **约 +14.3%** |
+
+基准低于 Q1 指引隐含速度，是因为它纳入了 Q2 预告揭示的执行缺口；乐观情景接近“延迟而非丢单”；极度乐观需要当前没有订单金额支持的 Storage/Lightwell/AI MIPS 同时兑现，概率低。
+
+## 六、BOM、每 MW / rack / GPU / optical port 内容量与价格传导
+
+### 6.1 统一换算假设
+
+IBM 不生产 NVL72，也不销售通用光模块。为把软件和服务换算到用户要求的物理量纲，本文只采用一个透明参考系统：**72 GPU/rack、130kW IT load/rack、不含 PUE，则 1MW IT 约 7.7 racks、约 554 GPUs。**这不是 IBM 官方配置，实际因 8-GPU 服务器、NVL72、网络和冷却而变化。
+
+### 6.2 产品级 BOM 与真实内容量
+
+| IBM 产品组 | 实际 BOM/计费单位 | 每 GPU | 每 72-GPU rack | 每 1MW IT | 每 optical port | 价格传导链 |
+|---|---|---:|---:|---:|---:|---|
+| **OpenShift/Red Hat AI** | 物理 BOM 为 0；订阅单位为 core-pair（2 physical cores/4 vCPU）、节点、支持级别和 AI add-on | 托管基础价换算约 **2k—4k/年**；含 Platform Plus/AI/安全的研究区间 **3k—10k/年** | **0.22—0.72M/年** | **1.66—5.54M/年** | **0** | CPU/vCPU 数→订阅→AI、安全、多集群 add-on→支持；GPU 涨价不直接进入许可，但扩大 FinOps/治理价值 |
+| **HashiCorp/Automation** | Terraform runs、Vault client/identity、节点、云支出、资产/用户；无标准物理 BOM | 研究区间 **1k—4k/年**，只用于大型 AI estate 分摊 | **0.07—0.29M/年** | **0.55—2.22M/年** | **0** | 云资源/身份/Secrets 数→HCP/Vault/Terraform ACV→Apptio/Turbonomic/Instana attach；无统一公开价 |
+| **watsonx/Data/Confluent** | token、CUH、GPU-hour、streaming/connector、RUs、数据容量；无固定硬件 BOM | on-prem 软件研究值 **2k—8k/年**；托管 H100 总账单约 **127k/GPU/年**，大部分为算力传导 | on-prem **0.14—0.58M/年**；托管 H100 满载约 **9.1M/年** | on-prem **1.1—4.4M/年**；托管 H100 满载约 **70M/年** | **0** | GPU/模型成本→GPU-hour/token；数据流量→Confluent/连接器；治理、向量、RAG 和支持形成高毛利软件层 |
+| **z17/Telum II/Spyre/TP** | IBM 自有 system/drawer、MIPS、软件容量、Spyre 卡和支持；Spyre 75W/128GB，Z 最多 48 卡 | 对外部 GPU **0**；IBM 使用自有加速器 | 不适用 NVL72；按 z17 系统定制报价 | 不适用通用 AI MW | 通用光模块 **0** | Telum/Z 容量→MIPS→z/OS/CICS/IMS/Db2→Spyre/watsonx→服务；管理层称 AI MIPS 全栈收入为基础 MIPS 的 **5—8x** |
+| **Power11/Spyre** | Power server、CPU/memory activation、AIX/IBM i/PowerVM、8—16 张 Spyre、支持 | 对外部 GPU **0** | 每 Power 系统最多 8/16 Spyre，价格不公开 | 依客户系统数，不按 MW 销售 | **0** | 内存/CPU/SSD 成本→系统 ASP→OS/虚拟化→Bob/Spyre/支持；专有装机基础提供价值定价 |
+| **Storage Scale System 6000** | 4U 控制节点、48 NVMe、AMD EPYC、1.5TB 级 DRAM、CX-7 200/400Gb 网络、Storage Scale 软件/支持；最高 4.79PB raw | 若每 GPU 配 7—30TB raw、按 0.5—1.5M/PB，约 **3.5k—45k 一次性** | 假设 0.5—2PB/rack，约 **0.25—3.0M 一次性** | 约 3.8—15.4PB，约 **1.9—23M 一次性** | IBM 直接光模块内容 **0**；若 IBM 集成网卡/交换连接则含在系统报价 | NAND/QLC/DRAM/CX-7→阵列→Scale 软件许可→支持→咨询；实际 PB ASP 未披露，区间是研究估算 |
+| **AI Consulting** | 人力、行业 IP、迁移工厂、Consulting Advantage；无物理 BOM | 研究分摊 **2k—10k 一次性** | **0.14—0.72M** | **1.1—5.5M** | **0** | 软件/云/硬件项目范围→设计/迁移/治理→托管运营；首年服务常为软件 ACV 的 0.5—2x，项目差异极大 |
+| **Bob/Lightwell** | Bobcoin/seat/premium package；Java 20 美元/月、IBM i 40 美元/月，Z/Enterprise 询价 | **0**；按开发者而非 GPU | **0** | **0** | **0** | 开发者席位→Bobcoin 用量→Java/i/Z 专项包→企业支持；Lightwell 以安全服务/支持合同变现 |
+
+**关于“真实”的边界：**
+
+- OpenShift 的 0.076 美元/小时/4vCPU、watsonx 的 token/GPU-hour、Spyre 的功耗/内存/卡数、Storage Scale 的 PB/GB/s 是公开事实；
+- 每 GPU、每 MW 的 IBM 软件 attach 和 Storage PB ASP 是研究换算，不是 IBM 报价；
+- IBM 对 optical port 没有可辨认的自有光器件收入，故直接内容量为 **0**。Storage Scale 使用 200/400Gb 网络并不意味着 IBM 获得光模块 ASP。
+
+### 6.3 Storage 物理量与 10PB 项目
+
+- 单台 Storage Scale System 6000 最高约 4.79PB raw，因此 NVIDIA 的 10PB 若按 raw 至少约 3 台 4U 高容量系统；若 10PB 指 usable、需纠删码/冗余，则设备数更多。
+- IBM 未披露该合同金额。按本文 0.5—1.5M/PB 的宽区间，10PB 约 **5—15M**，仅作为内容量敏感性分析，不能写成订单事实。
+- 项目内 KV 调研显示 70B 模型在长上下文并发下很容易进入 PB 级 live KV；这支持“PB 需求是真的”，但保存策略、压缩和命中率会把容量需求降低 2—8 倍。
+- Storage Scale 的优势是 G4 共享数据面已 GA、可同时服务训练/RAG/推理；风险是 purpose-built CMX/STX、对象存储和客户自研缓存会压低每 GPU 的传统共享存储 attach。
+
+### 6.4 成本上涨如何传给客户
+
+1. **硬件：**6 月 BofA 会议上 IBM 称内存、磁盘和 CPU 供给受冲击；由于系统毛利较高，IBM 可先用利润争取物料，再把组件涨价与价值定价传给客户。7 月 Q2 信证明客户确实在涨价前抢购。
+2. **软件：**OpenShift/HashiCorp/Confluent 按资源、使用和订阅收费，AI 集群规模、Agent 数、Secrets 数和数据流量增长会自然扩大 ACV；但开源替代抑制无上限涨价。
+3. **托管 AI：**watsonx GPU-hour 直接把 H100/H200 成本传给客户；该账单不能按 80%+ Software GM 理解，因为底层 GPU/云成本占比高。
+4. **咨询：**人才稀缺能提高费率，但 IBM 同时用内部 AI 生产率降低交付成本。若客户要求节省收益共享，毛利改善可能强于收入增长。
+
+## 七、当前与一年后的产能、供应链采纳和认证
+
+这里的“产能（美元计）”对软件指**可变现年化运行能力**，对咨询指**交付能力**，对硬件才指供应链/制造转化能力；不能把软件 ARR 当工厂产能。
+
+| 产品组 | 当前美元能力与采用 | 当前认证/阶段 | 基准一年后 | 乐观一年后 | 极度乐观一年后 |
+|---|---|---|---|---|---|
+| Red Hat/OpenShift | 7.8—8.0B 类别运行率；OpenShift 2B ARR；Virtualization 合同 >0.6B | CNCF/Kubernetes 生态、AWS/Azure/GCP/IBM Cloud 与广泛硬件支持；Sovereign Core GA | 8.6—9.0B；AI Factory 常规采用 | 9.2—9.7B；VMware 替代与主权 AI 同时加速 | 10B+；成为企业异构 AI 默认控制层 |
+| Automation/HashiCorp | 约 7B；HashiCorp 约 0.7—0.9B，record bookings | Vault 2.0 GA；Infragraph/Concert public preview | 7.6—8.0B；preview 转部分付费 | 8.2—8.8B；Vault+Terraform+Apptio 组合签约 | 9B+；Agent 身份/运维控制平面形成标准 |
+| Data/watsonx/Confluent | 6.3—6.7B；Confluent 6,500+ 企业、40% Fortune 500 | Tableflow/watsonx.data 集成 GA；Context/GPU Presto private preview | 7.3—7.6B；Confluent 全年并表 | 8.2—8.7B；实时 Context 进入生产 | 9.3—10B；跨 Z/多云实时 Agent 数据层规模化 |
+| Z/Telum/Spyre | 9—11B 全栈；z17 近 130%；85% MIPS 客户维持/扩容 | z17/Telum II GA；Spyre 对 Z GA；系统级 IBM 认证 | 9.5—10B；三年周期正常回落 | 10.5—11.2B；延期大单回补、AI MIPS attach | 12B+；48-card Spyre 与 AI MIPS 大规模部署 |
+| Power11 | 2.8—3.5B；Distributed Q2 +37%的一部分 | Power11/Spyre GA；多数 Power 型号 8 卡、高端 16 卡；S1112 2026-07 发布 | 3.5—3.8B；内存效率和 IBM i 驱动 | 4.0—4.4B；SAP/主权/AI inference 扩散 | 4.7—5.2B；x86 供应紧推动明显份额提升 |
+| AI Storage | 3—4B；NVIDIA 10PB；42PB+/rack 产品能力 | Storage Scale 6000 为 NVIDIA-Certified Storage/DGX validated；现有 G3/G4 GA | 4.0—4.4B；现有 Scale/Flash 放量；CMX 试点 | 4.8—5.4B；BlueField-4/Context Memory 生产认证 | 6B+；Rubin pod 中共享 Context 成标配 |
+| AI Consulting | 总交付能力约 21B/年，AI 子集 4—6B；AI backlog 约 9.4B | 无硬件认证；靠行业合规、伙伴资格和可复用资产 | AI 5.5—6.0B；按当前 B2B 转化 | AI 6.5—7.2B；生产率释放更多交付 | AI 8B+；人才/交付出现明显短缺 |
+| Bob/Lightwell/Sovereign | 新增 <0.3B；早期采用者/内部使用多 | Bob、Lightwell、Sovereign Core GA；部分 Orchestrate/Concert 功能 preview | 0.4—0.5B；从试用到首批 enterprise ACV | 0.7—0.9B；银行/政府扩大 | 1.2—1.5B；开放源码安全成为独立预算 |
+
+**认证阶段最需防止误读之处：**
+
+- Storage Scale 6000 已获 NVIDIA DGX 认证是事实；
+- IBM 被列为 BlueField-4 Context Memory 生态伙伴，不等于 IBM 的 CMX 产品已经大规模 GA 或有可核验订单；
+- Think 2026 的 private/public preview 不是 GA，更不是收入；
+- Lightwell 的 GA 是服务可用性，不代表列出的早期采用者已签署披露金额的订单。
+
+本项目内 [HPCA 2026 会议更新](../../行业调研/产业背景/顶级会议信息/hpca_2026_conference_update.md)将 Telum II 列为企业 on-chip accelerator 集成案例；[ISSCC 2026 AI IC/SoC 调研](../../行业调研/产业背景/顶级会议信息/isscc_2026_ai_ic_soc_research.md)把 Spyre 归入 inference-optimized scalable accelerator，说明 IBM 路线获得顶级体系结构/芯片会议关注。但这验证技术方向，不验证销量。
+
+## 八、基于真实订单积压和供给的未来一年增速
+
+### 8.1 订单证据强弱
+
+| 证据 | 数值/客户/窗口 | 能推断什么 | 不能推断什么 |
+|---|---|---|---|
+| Consulting backlog | Q1 31.3B，其中约 30% GenAI≈9.4B | AI 服务未来数季有覆盖；B2B 1.04 表示整体订单略高于 TTM 收入 | 不知道每份合同年限、毛利、取消率和 AI 确认节奏 |
+| Q2 Distributed backlog | 约 0.5B，Power/Storage；Q2 Distributed +37% | 硬件存在短期未交付需求，未来 1—2 季有支撑 | 不是长期 backlog；未拆 Power/Storage、未披露取消率 |
+| z17 program-to-program | 近 130%；85% 装机 MIPS 客户维持/增长 | 累计换机仍强，装机基础没有明显萎缩 | 不代表 Q3 自动补回 Q2 落单；无订单金额 |
+| OpenShift Virtualization | 2024 年初至今合同 >0.6B | VMware 替代有真实合同，不只是 pipeline | 未披露收入确认、续费和毛利 |
+| NVIDIA 10PB Storage | 明确客户与容量；DGX certified | Storage Scale 的性能/供应链采用得到硬验证 | 合同金额、GPU 数、交付期均未披露 |
+| Confluent | 2025 收入 1.167B、+21%；6,500+ 客户 | 并表收入基座真实，客户交叉销售池大 | IBM 收购后 NRR、bookings、客户流失尚无分拆 |
+| Lightwell | 11 家以上大型金融早期采用者；2026-07-08 GA | 受监管客户兴趣强 | 5B 是 IBM 投入，不是客户订单；未披露 ACV |
+| Q2 延期大单 | “numerous large deals”未按期关闭 | Q3 存在回补期权，销售执行是主要变量 | 没有客户名、金额、交付窗口、取消率，不能假设 100% 回补 |
+
+### 8.2 未来一年分部增速推断
+
+| 分部 | 基准 | 乐观 | 极度乐观 | 订单与供给逻辑 |
+|---|---:|---:|---:|---|
+| Software | **+8%** | **+12%** | **+17%** | 基准由 Red Hat 10%上下、Confluent 并表和部分大单回补驱动；极度乐观需要 TP 修复且 Data/Automation 20%+ |
+| Consulting | **+3%** | **+7%** | **+12%** | 31.3B backlog 提供覆盖；上限取决于 AI 人才、生产率和合同确认，不是订单不足 |
+| Infrastructure | **-2%** | **+5%** | **+12%** | 基准反映 z17 周期；乐观靠 0.5B backlog、Power/Storage；极度乐观需供应持续紧且 AI MIPS/Context Memory 放量 |
+| IBM 总收入 | **+4.1%** | **+8.8%** | **+14.3%** | 与第 5.3 节可加总模型一致 |
+
+### 8.3 取消率与交期的保守处理
+
+IBM 没有披露上述业务的标准 lead time 和取消率。模型采用：
+
+- Consulting backlog：基准按 70%—80% 在未来 24 个月内转化，未来 12 个月确认其中约 45%—55%；不额外假设取消，只在低转化率中吸收范围变更；
+- Q2 0.5B Distributed backlog：基准未来两个季度转化 70%—85%，乐观 90%+；因硬件可改配/延期，不假设零取消；
+- 延迟软件大单：基准未来四季度转化 50%—65%，乐观 75%—85%，极度乐观 90%；这是最大不确定性；
+- z17：不把 130% program-to-program 当 backlog，仅作为装机容量需求锚。
+
+**订单挤压的净效应：**供应紧张对 IBM 是“双刃剑”。它提升 Power/Storage/Tape 需求和硬件 ASP，却挤压同一客户的钱包，使 Software/TP 大单后移；如果内存/SSD 价格继续上涨而 IT 总预算不变，IBM 的全公司增长未必因基础设施火热而更高。
+
+## 九、竞争格局、技术主流性、替代方案与切换成本
+
+| IBM 关键业务 | 主要竞争对手/替代 | IBM 技术是否主流 | 客户切换成本 | 主要风险 |
+|---|---|---|---|---|
+| Red Hat OpenShift/RHEL | AWS EKS/Bedrock、Azure AKS/AI Foundry、Google GKE/Vertex、VMware Tanzu、SUSE Rancher、Canonical、Nutanix | Kubernetes、Linux、容器和混合云是主流；OpenShift 是企业级实现之一，不是唯一标准 | **高**：Operators、CI/CD、网络、安全、认证、SRE 流程需重做 | 公有云托管 Kubernetes 捆绑、更低价开源、Broadcom/VMware 价格变化反向或正向影响 |
+| HashiCorp/Automation | OpenTofu、Pulumi、AWS CloudFormation、Azure Bicep、Google Deployment Manager、CyberArk、云 Secrets、Datadog/Dynatrace、ServiceNow | IaC、机器身份、FinOps 和 AIOps 均是主流；Infragraph/Concert 仍在验证 | **中高**：Terraform state、providers、Vault policies、密钥轮换嵌入深 | BUSL 许可反弹、OpenTofu 分流、云厂商免费工具、产品整合变慢 |
+| watsonx/Confluent/Data | Databricks、Snowflake、AWS MSK/Kinesis、Azure Event Hubs/Fabric、Google Pub/Sub/BigQuery、Oracle、MongoDB、Elastic、自管 Kafka/Flink | 实时数据 + 湖仓 + RAG/Agent Context 是主流；IBM 的开放多云路线合理 | **高**：schema、connector、data contract、治理和 SLA 很难迁移 | 11.59B 收购价过高；云原生打包；Kafka 开源替代；watsonx 模型层缺少领先闭源模型 |
+| Z/Telum/Spyre/TP | x86/Arm 私有云、AWS/Azure/GCP、Oracle、核心银行 SaaS；NVIDIA/AMD 推理卡 | 交易内 AI、数据就地推理是重要细分，但不是通用 AI 训练主流 | **极高**：核心交易、审计、批处理、可靠性、技能和数据一致性 | 三年周期、少数大客户预算、MIPS 价格争议、AI 代码现代化最终降低迁移难度 |
+| Power11/IBM i/AIX | x86/Arm、HPE、Dell、Oracle、云迁移、SAP SaaS | 高可靠 RISC/IBM i 是稳定利基，不是横向服务器主流 | **高**：AIX/IBM i、PowerVM、SAP/数据库认证 | 装机基础老化、技能短缺、云原生替代；Bob 既延寿也可能帮助迁移 |
+| Storage Scale/Flash/Fusion | Dell PowerScale/ObjectScale、HPE Alletra/X10000、NetApp、Pure、DDN、VAST、WEKA、Cloudian、MinIO、云对象存储 | 并行文件/对象、GPU-direct、Context/KV 分层是主流；赢家未定 | **中高**：PB 数据迁移、性能调优、命名空间和 DGX 验证 | SSD 成本、CMX 标准被 NVIDIA 控制、客户自研、benchmark 不可横比 |
+| IBM Consulting | Accenture、Deloitte、Capgemini、TCS、Infosys、Wipro、Cognizant、云厂商 PS | AI 转型服务主流，但高度竞争 | **中**：行业知识和长期合同有黏性，人员可替换 | 费率压力、人才、项目延期、AI 自动化压缩人天收入 |
+| Bob/Agentic/Sovereign | GitHub Copilot、Microsoft Copilot Studio、Amazon Q、Google Gemini Code Assist、Cursor、ServiceNow、Palantir、各主权云 | Agent 控制、代码现代化、主权运行是主流方向；IBM 新品尚早 | **低至中**，若与 Z/i 代码库深度绑定则高 | 付费转化不明、模型依赖第三方、preview 延迟、内部生产率不可外推 |
+| Quantum | Google、Microsoft、Quantinuum、IonQ、Rigetti、D-Wave、国家实验室 | 故障容错量子仍未形成商业主流 | 生态和算法形成后可能高，当前低 | 技术里程碑、巨额资本、商业价值时间表和竞争路线不确定 |
+
+### 9.1 IBM 新技术是否会成为未来主流
+
+- **大概率主流：**混合云 Kubernetes、IaC/Secrets、实时流数据、RAG/Agent Context、AI 治理、主权/受监管部署。IBM 的路线方向正确，竞争胜负取决于产品整合和销售，不取决于方向。
+- **重要利基而非横向主流：**Telum/Spyre/Z 的交易内 AI、Power/IBM i。它们可以在金融和大型企业保持极强利润，但不会取代 NVIDIA/AMD 的通用训练生态。
+- **尚未证实：**BlueField-4 Context Memory 上 IBM Storage 的规模 attach、Concert/Infragraph/下一代 Orchestrate 的独立付费、Lightwell 的 ACV。
+- **长期期权：**故障容错量子。即使技术成功，也不能假设 12 个月内对 69B 收入基盘有实质贡献。
+
+### 9.2 替代风险与反身性
+
+1. **AI 既延寿也可能拆除护城河。**Bob/Code Assistant 降低 COBOL/RPG 技能壁垒，短期让客户更敢在 Z/i 上加工作负载；长期也可能降低迁出成本。
+2. **开放是销售优势，也是价值泄漏渠道。**Red Hat、Kafka/Flink、Terraform 生态扩大采用，但 OpenTofu、自管 Kafka、上游 Kubernetes 可截走商业价值。
+3. **收购协同与债务同源。**Confluent/HashiCorp 能拉高增长，却把商誉/无形资产推至资产的 57.2%；如果整合放慢，估值与信用同时受压。
+4. **AI capex 钱包竞争。**客户先买 GPU、内存、服务器和存储时，软件大单可能后移；IBM 同时卖软硬件并不自动对冲，因为利润率和确认时点不同。
+
+## 十、行业会议、技术报告与论坛信号的交叉验证
+
+| 来源 | 可用信号 | 证据等级与限制 |
+|---|---|---|
+| IBM BofA 2026 Global Technology Conference，2026-06-02 | AI MIPS 5—8x 全栈收入乘数；Scale/Flash 相关增长约 50%—60%；IBM i 高双位数；可对组件涨价做价值传导 | 管理层正式会议，信息量高但非审计数字；一个月后 Q2 预告显示需求判断有偏差 |
+| IBM Think 2026，2026-05-05 | Confluent/Tableflow GA、Context/GPU Presto preview、Concert/Infragraph preview、Vault 2.0/Sovereign Core GA | 官方产品状态可靠；PoC 性能不可外推，preview 不等于收入 |
+| NVIDIA GTC 2026 / IBM-NVIDIA | NVIDIA 选 Storage Scale 6000 提供 10PB；DGX certified；IBM 参与企业 AI 数据面 | 客户/容量/认证真实；金额和交付窗口未披露 |
+| 项目内 AI-native Storage/KV 调研 | IBM benchmark 56x TTFT/22x RPS；BlueField-4 生态；KV 的 PB 级物理需求；现有 G4 先于 CMX 收入 | 产业交叉验证；厂商 benchmark 不可横向比较，CMX 仍处认证期 |
+| HPCA/ISSCC 2026 项目内会议资料 | Telum II 的 on-chip accelerator、Spyre inference ASIC 进入顶级会议议程 | 验证技术方向与学术/产业关注，不验证订单 |
+| Reddit/Terraform/IBM 等技术与员工论坛 | OpenTofu、许可、收购整合、人才和主机三年周期的担忧；Q2 预告后对销售执行的质疑 | 仅作风险雷达，样本偏差大、身份不可验证，不进入收入模型 |
+
+[IBM BofA 会议文字稿](https://www.ibm.com/downloads/documents/us-en/16ddce7b71548ec2)与 [项目内 NVIDIA GTC 2026 调研](../../行业调研/产业背景/顶级会议信息/nvidia_gtc_2026_research.md)共同表明 2026 年 AI 基建瓶颈已从单一 GPU 扩到内存、网络、存储、数据和电力；IBM 真正能货币化的是其中的软件/数据/存储/受监管运行层，而不是光互连和 HBM。
+
+## 十一、投资判断与后续验证清单
+
+### 11.1 综合判断
+
+IBM 的优势不是“拥有最强 AI 模型或 GPU”，而是拥有企业最难替换的四类资产：**OpenShift/RHEL 运行时、实时与交易数据层、Z/Power 任务关键装机基础、全球咨询/支持关系。**这套组合能够从 AI 生产化获得持续 attach，尤其在金融、政府、医疗、通信等受监管行业。
+
+但 2026Q2 说明该组合并非无摩擦飞轮：客户预算会在硬件和软件之间挤压，Z/TP 会受三年周期影响，销售大单会延迟，并购会提高债务和摊销。当前 18.8x trailing P/E、约 17.1x forward P/E 已比 Q2 预告前便宜，但并不代表风险消失；市场需要看到延迟订单转化、而不只是再次强调 backlog 和 AI 叙事。
+
+**概率加权倾向：**
+
+- 基准 55%：未来 12 个月收入约 72B、+4%，Software +8%、Infrastructure -2%；
+- 乐观 35%：约 75B、+9%，大单回补、Data/Red Hat/Storage 同步强；
+- 极度乐观 10%：约 79B、+14%，需要尚无金额订单支持的多项早期产品同时兑现。
+
+### 11.2 7 月 22 日及以后必须核验的指标
+
+1. 2026 全年收入、Software 10%+、FCF +1B、利润率 +1pct 是否维持或下修；
+2. Q2 正式 Software 四条业务绝对额，尤其 TP 的真实降幅；
+3. Q2 Consulting signings、backlog、B2B，延期大单金额和预计关闭季度；
+4. Distributed Infrastructure 0.5B backlog 中 Power/Storage 拆分、交期、毛利和取消；
+5. Confluent/HashiCorp 的有机增速、NRR、bookings 和 IBM 交叉销售，而非只看并购贡献；
+6. Software ARR 是否继续约 10%增长，OpenShift ARR 是否超过 2B 后仍保持双位数；
+7. Storage Scale 10PB 之后是否出现第二个具名客户、合同金额、PB 数或 CMX/BlueField-4 生产认证；
+8. z17 program-to-program 是否最终转成收入，AI MIPS 5—8x 乘数有无可审计例证；
+9. Bob/Lightwell/Sovereign Core 的付费客户、ACV、续费和从 preview 到 GA 的时间；
+10. Q2 期末现金、非金融债务、利息费用与商誉/无形资产，确认 Confluent 后的去杠杆路径。
+
+## 主要资料来源
+
+### IBM/SEC 财务与公司报告
+
+- [IBM 2026Q2 选择性初步结果及投资者信，2026-07-14](https://newsroom.ibm.com/2026-07-14-Arvind-Krishnas-Letter-to-IBM-Investors)
+- [IBM 2026Q2 初步结果 Form 8-K](https://www.sec.gov/Archives/edgar/data/51143/000005114326000070/0000051143-26-000070-index.htm)
+- [IBM 2026Q1 财报](https://newsroom.ibm.com/2026-04-22-IBM-RELEASES-FIRST-QUARTER-RESULTS?lnk=hpln1id)
+- [IBM 2026Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/51143/000005114326000038/ibm-20260331.htm)
+- [IBM 2026Q1 prepared remarks](https://www.ibm.com/downloads/documents/us-en/15db805fff4249f1)
+- [IBM 2025Q4/全年财报](https://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS)
+- [IBM 2025 年 10-K 财务披露](https://www.sec.gov/Archives/edgar/data/51143/000005114326000010/ibm-20251231_d2.htm)
+- [IBM 2025Q3 财报](https://newsroom.ibm.com/2025-10-22-IBM-RELEASES-THIRD-QUARTER-RESULTS)
+- [IBM 2025Q2 财报](https://newsroom.ibm.com/2025-07-23-IBM-RELEASES-SECOND-QUARTER-RESULTS?lnk=hpln1id)
+
+### 产品、技术、会议和收购
+
+- [IBM BofA 2026 Global Technology Conference transcript](https://www.ibm.com/downloads/documents/us-en/16ddce7b71548ec2)
+- [IBM Think 2026 产品发布](https://newsroom.ibm.com/2026-05-05-think-2026-ibm-delivers-the-blueprint-for-the-ai-operating-model-as-the-ai-divide-widens?asPDF=1)
+- [IBM/NVIDIA GTC 2026 合作与 10PB Storage Scale](https://newsroom.ibm.com/2026-03-16-ibm-and-nvidia-announce-expanded-collaboration-at-gtc-2026-to-advance-ai-for-the-enterprise)
+- [IBM Storage Scale System 6000 产品规格](https://www.ibm.com/products/storage-scale-system)
+- [IBM Telum II / Spyre 产品规格](https://www.ibm.com/products/z/telum)
+- [IBM Power 产品线](https://www.ibm.com/products/power)
+- [Red Hat OpenShift 官方定价](https://www.redhat.com/en/technologies/cloud-computing/openshift/pricing)
+- [watsonx.ai 官方定价](https://www.ibm.com/products/watsonx-ai/pricing)
+- [IBM Bob GA 与内部使用数据](https://newsroom.ibm.com/2026-04-28-introducing-ibm-bob-ai-development-partner-that-takes-enterprises-from-ai-assisted-coding-to-production-ready-software)
+- [Project Lightwell](https://newsroom.ibm.com/2026-05-28-ibm-and-red-hat-commit-5-billion-to-redefine-the-future-of-open-source-in-the-ai-era)
+- [Confluent 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1699838/000169983826000006/cflt-20251231.htm)
+- [IBM 完成 Confluent 收购](https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent%2C-making-real-time-data-the-engine-of-enterprise-ai-and-agents)
+- [IBM 完成 HashiCorp 收购](https://newsroom.ibm.com/2025-02-27-ibm-completes-acquisition-of-hashicorp%2C-creates-comprehensive%2C-end-to-end-hybrid-cloud-platform)
+- [IBM 完成 Apptio 收购](https://newsroom.ibm.com/2023-08-10-IBM-Completes-Acquisition-of-Apptio-Inc)
+- [IBM 完成 StreamSets/webMethods 收购](https://newsroom.ibm.com/2024-07-01-IBM-Completes-Acquisition-of-StreamSets-and-webMethods%2C-Bolstering-its-Automation%2C-Data-and-AI-Portfolios)
+
+### 项目内允许使用的产业资料
+
+- [AI-native 存储与 KV Cache 基础设施，2026-07-10](../../行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV%20Cache基础设施_2026-07-10.md)
+- [HPCA 2026 conference update](../../行业调研/产业背景/顶级会议信息/hpca_2026_conference_update.md)
+- [ISSCC 2026 AI IC/SoC research](../../行业调研/产业背景/顶级会议信息/isscc_2026_ai_ic_soc_research.md)
+- [NVIDIA GTC 2026 research](../../行业调研/产业背景/顶级会议信息/nvidia_gtc_2026_research.md)
+
+---
+
+**最终结论：**IBM 是企业 AI 基建里“控制、数据、合规运行和实施”的高黏性供应商，而非 GPU/光模块纯周期股。Red Hat、Confluent/HashiCorp、Z/Power/Storage 和 Consulting 的交叉销售逻辑可信；2026Q2 暴露的销售执行、预算挤压、主机周期和高并购杠杆也同样真实。未来一年最值得押注的不是量子或未披露金额的宏大承诺，而是 OpenShift ARR、Data 有机增长、0.5B 硬件 backlog 转化、AI Consulting backlog 确认和具名 Storage/Context 客户；这些指标若在 2026H2 同时兑现，IBM 才能从基准的约 4% 增长进入乐观的约 9%。

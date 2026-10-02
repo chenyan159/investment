@@ -1,0 +1,473 @@
+# 公司：CC The Chemours Company（科慕）全面尽调——低 GWP 制冷剂、高纯 PFA 与 AI 液冷期权
+
+**报告日期：** 2026-07-11（America/Los_Angeles）  
+**股票与估值快照：** 2026-07-10 美股收盘  
+**最新财务期：** 2026Q1，截至 2026-03-31；公司于 2026-05-05 发布  
+**研究窗口：** 公司与行业动态重点覆盖 2026-01-01 至 2026-07-11；为验证产品资格、扩产和转型，必要处回溯 2023–2025 年  
+**货币口径：** 除另有说明，均为美元；`$M`=百万美元，`$B`=十亿美元  
+
+> **先说结论：** Chemours 不是一家“AI 数据中心材料纯标的”，而是一家由 **高质量、受法规驱动的 Opteon 制冷剂业务，稀缺但运营波动大的氟聚合物业务，以及低利润、强周期的 TiO₂ 业务**共同构成的高杠杆特种化学公司。AI 相关价值目前主要来自两条链：① AI/HBM/先进封装扩产带动晶圆厂高纯 PFA、Krytox/Viton 等材料，属于**间接但已经发生的收入**；② Opteon 2P50 两相浸没液与数据中心低 GWP 冷水机制冷剂，属于**直接但当前收入很小的期权**。不能把全部 APM、Opteon 或数据中心液冷市场都算作 Chemours 的 AI 收入。
+
+## 一、核心判断与证据等级
+
+### 1.1 投资判断摘要
+
+1. **最强业务是 TSS，而不是市场更熟悉的 Ti-Pure。** 2026Q1 Thermal & Specialized Solutions（TSS）收入 `$568M`、同比 `+22%`，调整后 EBITDA `$190M`、利润率 `33%`；其中 Opteon 收入 `$313M`、`+12%`，Freon 收入 `$162M`、`+67%`。TSS 用 41% 的收入贡献了相当于集团 adjusted EBITDA 112% 的分部 EBITDA（集团费用及其他项目抵减后集团为 `$169M`），是公司现金利润核心。[2026Q1 业绩](https://investors.chemours.com/news-releases/news-release-details/chemours-company-reports-first-quarter-results)
+2. **最大收入业务 TiO₂ 正处于低谷。** 2026Q1 Titanium Technologies（TT）收入 `$559M`、`-6%`，EBITDA 率仅 `3%`；2025 年全球 TiO₂ 名义产能约 `10Mt`、需求约 `7.3Mt`，低开工率、矿料组合和中国出口价格压制回报。其复苏可显著抬升集团利润，但不是 AI 逻辑。
+3. **高纯 PFA 是最可信的 AI 上游敞口。** Chemours 已完成 Teflon PFA 扩产，是美国本土唯一 PFA 生产商；高纯 PFA 在先进晶圆厂的强腐蚀化学品管路中具有 70%–85% 的功能渗透率，客户 AVL 资格验证通常需要 12–36 个月以上。AI/HBM 需求通过晶圆厂、湿法设备和先进封装资本开支传导，链条较长，但比直接液冷期权更可验证。
+4. **2P50 技术证据强，商业证据仍弱。** Samsung 已完成 Gen4 SSD 两相浸没资格验证，2CRSi 已验证 8×H200/1U 服务器，ORNL 论文显示相对 HFE-7100 最高 `+59%` 传热系数、临界热流密度约低 `5.9%`；但截至本报告日，公司没有披露 hyperscaler 采购订单、合同金额或可审计 backlog。Navin Fluorine 的初始商业产能目标是 2026Q3，因此当前更像“已过若干技术闸门、尚未过规模订单闸门”的期权。[ORNL/OSTI 技术论文](https://www.osti.gov/pages/biblio/2586914)
+5. **资产负债表不是健康型，而是“短期流动性尚可、长期结构脆弱”。** 2026Q1 流动比率 `1.82x`、可用流动性 `$1.516B`，近期没有迫在眉睫的流动性危机；但净杠杆 `4.9x`、股东权益仅 `$216M`、环境修复与诉讼准备金合计约 `$1.108B`，且 2025 全年自由现金流只有 `$51M`。PFAS、Washington Works 单点运行和高息再融资共同要求较高风险折价。
+6. **估值便宜，但不是无条件便宜。** 2026-07-10 收盘价 `$17.81`，市值约 `$2.68B`，P/S `0.46x`，forward P/E `10.91x`；TTM GAAP EPS 为负，故 trailing P/E 不适用。低倍数同时反映 TiO₂ 低谷、PFAS 尾部负债、杠杆和 2024 年治理/内控事件，不应仅用 Opteon 增长率估值。[StockAnalysis，2026-07-11 更新](https://stockanalysis.com/stocks/cc/statistics/)
+
+### 1.2 事实、推算和情景的标记
+
+| 标记 | 含义 | 本文处理 |
+|---|---|---|
+| **A：公司/监管/论文事实** | 财报、10-K/10-Q、公司产品资料、监管文件、同行评审论文 | 可直接引用；仍核对口径和报告期 |
+| **B：产业链交叉验证** | OEM 规格、行业会议、同行财报、项目内行业报告 | 用于验证市场、单位含量和竞争，不冒充 CC 订单 |
+| **C：模型/渠道区间** | 公司未拆分的产品收入、ASP、产能美元值、取消率、AI 占比 | 明确给出假设和上下限，不作为公司指引 |
+
+本文本地资料仅使用项目允许范围内的两份相关行业研究：[高纯氟聚合物流体系统](../../行业调研/晶圆制造_设备_材料_测试/行业调研_高纯氟聚合物流体系统_2026-07-11.md)及[冷却液、水处理、过滤与制冷剂](../../行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-07-10.md)。没有读取或继承日度资料、特征量化、其他公司报告或其他项目目录。
+
+## 二、公司整体业务、投资人定位与产业链位置
+
+### 2.1 公司是什么
+
+Chemours 2015 年从 DuPont 分拆，是一家全球性能化学品公司。2025 年末拥有约 28 个生产基地、覆盖 8 个国家，服务约 2,400–2,500 家客户和 110 个国家；集团没有单一客户贡献超过 10% 收入。公司拥有约 3,892 项已授权专利和 1,757 项申请，但业务壁垒更多来自危险氟化学工艺、环保许可、长期材料数据库、客户资格认证、分子/配方 IP 与全球供应能力，而非某一项专利。
+
+| 分部 | 2025 收入 | 占 2025 收入 | 主要产品与应用 | 产业链位置 | 经济属性 |
+|---|---:|---:|---|---|---|
+| Thermal & Specialized Solutions（TSS） | `$2.066B` | `35.6%` | Opteon 低 GWP 制冷剂、Freon 存量设备售后、泡沫发泡剂/推进剂/特种流体 | 从含氟原料、分子合成/混配到 OEM 认证、钢瓶与售后渠道 | 法规和配额驱动；IP/认证较强；高利润、高季节性 |
+| Titanium Technologies（TT） | `$2.429B` | `41.8%` | Ti-Pure TiO₂、钛铁矿/矿物产品 | 上游矿料与氯化法颜料制造商，供应涂料、塑料、层压板等 | 资本密集、大宗周期、全球供给过剩，价格和开工率决定利润 |
+| Advanced Performance Materials（APM） | `$1.263B` | `21.7%` | Teflon PFA/PTFE、Viton、Krytox、Nafion 等高性能材料 | 高纯树脂/弹性体/润滑材料上游；下游由 Entegris、PILLAR、泵阀/密封件和设备商加工集成 | 认证黏性高，但固定成本、停机和产品组合会造成大幅利润波动 |
+| Other | `$50M` | `0.9%` | 非报告分部业务 | 非核心 | 规模小 |
+
+公司在投资人心中的典型标签是：**“DuPont 遗留 PFAS 负债折价 + TiO₂ 周期反转 + Opteon 结构增长 + 稀缺氟聚合物资产”**。这不是公司自我描述，而是本文根据业务组合、资本结构和估值表现做出的归纳。多头通常看 Opteon 法规切换、PFA 紧缺和 TT 利润均值回归；空头则看 PFAS 现金外流、净杠杆、低权益缓冲、Washington Works/Corpus Christi 单点风险和 2P50 商业化时点。
+
+### 2.2 最近三年的重大变动、转型和交易
+
+| 时间 | 重大变化 | 财务/战略意义 |
+|---|---|---|
+| 2023Q3–2025Q1 | 关闭并拆除台湾 Kuan Yin TiO₂ 工厂；2023 年出售 Glycolic Acid 业务，净得款约 `$138M`、税前收益约 `$106M` | 从“追吨位”转向减产、降固定成本和现金回收；TT 转型计划在 2023/2024 年分别实现约 `$50M/$140M` 成本节省 |
+| 2023–2024 | 投资 Teflon PFA、Nafion 与 Corpus Christi Opteon YF；Corpus Christi 的 YF 产能扩建约 `40%`，于 2024Q4 完成 | 将资本向法规驱动制冷剂、半导体和清洁能源材料倾斜；PFA 扩建已在 2024Q4 形成销量贡献 |
+| 2024 | 审计委员会发现部分高管为实现 2023 年自由现金流/激励目标，延迟最高约 `$100M` 供应商付款并加速最高约 `$260M` 应收收款；2022 年亦有约 `$40M/$175M` 类似行为。管理层更替，Denise Dignam 出任 CEO；相关重大内控缺陷在 2024 年修复 | 不是普通一次性会计调整，而是治理和营运资金质量警报；后续现金流应看应收、应付和库存，而不能只看季度 FCF。[审计委员会程序完成公告](https://investors.chemours.com/news-releases/news-release-details/chemours-announces-completion-planned-procedures-audit-committee) |
+| 2024Q3 起 | 发布 **Pathway to Thrive**：目标 2024–2027 销售 CAGR `>5%`、成本减少 `>$250M`、跨周期净杠杆 `<3x` | 战略从广泛材料组合转向三条增长支柱：低 GWP 热管理、先进电子/半导体、精选高价值应用 |
+| 2025 | 退出 SPS Capstone telomer 产品并关闭相关产能；将 Viton 生产整合到 Chambers Works；与 SRF 签署印度氟聚合物/氟弹性体供应合作 | 主动退出受监管且低回报的产品，增加外部制造柔性；也说明内部资产运行和合规成本较重 |
+| 2025–2026 | 与 Navin Fluorine 建立 Opteon 2P50 初始制造能力；Samsung 完成 Gen4 SSD 资格验证；2026-02 与 2CRSi 建立联合开发 | 两相液冷从实验室走向服务器/部件资格和初始产能，但尚未证明 hyperscaler 批量采购 |
+| 2025Q3、2026Q1 | Washington Works 两次非计划停机；2026Q1 APM 销量 `-19%`，公司称季度 EBITDA 受影响约 `$25M` | 暴露高纯 PFA/氟材料的单点和固定成本风险；“产品紧缺”不等于当期高利润 |
+| 2026Q1–Q2 | 发行 `$700M`、票息 `7.875%`、2034 年到期票据，赎回部分 2027/2028 债；出售 Kuan Yin 9/10 地块，净得款约 `$287M`，4 月用约 `$160M` 偿债 | 延长到期结构，但资金成本上升；土地出售降低净债务，不能替代持续经营现金流改善 |
+
+最近三年没有改变公司形态的大型并购；主线是 **关厂、剥离、合同制造、针对性扩产和债务期限管理**，而非收购扩张。
+
+### 2.3 产业链位置
+
+```text
+萤石/HF、氯化原料、R32、矿料
+        ↓
+Chemours：含氟单体/聚合物、HFO/HFC 分子、TiO₂ 颜料
+        ↓
+PFA 管件/阀泵/密封件制造商；冷水机/汽车 HVAC OEM；服务器/浸没槽集成商
+        ↓
+晶圆厂/先进封装厂；汽车和建筑 HVAC；数据中心；涂料/塑料客户
+```
+
+Chemours 在 PFA、Opteon 和 2P50 上位于**高壁垒上游材料层**，但不是终端系统集成商。下游 Entegris/PILLAR/泵阀商会把 PFA 树脂加工成洁净管、接头、阀、泵和歧管，往往获取更高的零部件/服务毛利；Carrier、Trane 等冷水机 OEM 决定制冷剂 SKU；LiquidStack、2CRSi 和服务器 OEM 决定 2P50 是否进入 BOM。因此 Chemours 有分子和材料定价权，却不能单方面决定系统渗透率。
+
+## 三、最新股价、估值、增速与资产负债表
+
+### 3.1 2026-07-10 市场快照
+
+| 指标 | 最新值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | `$17.81` | 2026-07-10 收盘；盘后约 `$17.72` | 当日区间约 `$17.34–18.04` |
+| 市值 | `$2.68B` | 2026-07-10；约 `150.38M` 股 | 与公司债务规模相比，权益缓冲薄 |
+| 企业价值 | `$6.51B` | 数据服务商 2026-07-11 更新 | 主要由约 `$4.1B` 债务推高 |
+| Trailing P/E | **不适用** | TTM EPS `-$2.73` | GAAP 净亏损，不能把负 P/E 当成低估 |
+| Forward P/E | `10.91x` | 市场一致预期 | 对 TiO₂/停机恢复假设敏感 |
+| P/S；Forward P/S | `0.46x；0.43x` | TTM/预期收入 | 低倍数反映低毛利与负债折价 |
+| EV/EBITDA | `11.20x` | 数据服务商口径 | 与公司 adjusted EBITDA 定义并非完全相同 |
+| TTM 收入 | `$5.821B` | 2025Q2–2026Q1 | 同比约 `+0.7%`；2026Q1 单季 `+1%` |
+| TTM 毛利率 | `15.1%` | 由 FY2025、2025Q1、2026Q1 GAAP 数据滚动 | 第三方口径约 `15.2%`，差异为四舍五入 |
+| TTM 净利率 | `-7.0%` | TTM 净亏损约 `-$410M` | 受 NJ/PFAS 等诉讼和环境费用影响 |
+| FY2026 收入指引 | `+3%–5%` | 2026-05-05 维持 | 对应约 `$5.982B–6.098B` |
+
+来源：[StockAnalysis statistics](https://stockanalysis.com/stocks/cc/statistics/)、[Chemours 2026Q1](https://investors.chemours.com/news-releases/news-release-details/chemours-company-reports-first-quarter-results)。估值会随股价和一致预期变化；报告使用最后可得完整交易日而非周末“实时价”。
+
+### 3.2 资产负债表健康度
+
+| 指标 | 2026-03-31 | 判断 |
+|---|---:|---|
+| 现金及现金等价物 | `$563M` | 绝对现金尚可 |
+| 应收账款 | `$759M` | 与销售规模匹配，但 2024 内控事件要求持续观察季末收款行为 |
+| 库存 | `$1.536B` | 占流动资产 `52.5%`，是流动性质量最大折扣项；TiO₂/制冷剂库存价格与季节性风险高 |
+| 流动资产 / 流动负债 | `$2.928B / $1.609B` | 流动比率 `1.82x` |
+| 速动比率 | `0.82x` | 不依赖库存时不足 1x，短期安全但不宽裕 |
+| 债务账面值 / 本金 | 约 `$4.137B / $4.183B` | 规模大；2026Q1 再融资延长期限但新增票息高达 `7.875%` |
+| 净债务 / 净杠杆 | 约 `$3.6B / 4.9x` | 远高于公司 `<3x` 长期目标；土地出售后改善，但公司未给同口径期末净杠杆 |
+| 可用流动性 | `$1.516B` | 现金 `$563M` + revolver 可用额 `$953M`；未借 revolver，契约合规 |
+| 总资产 / 总负债 / 权益 | `$7.267B / $7.051B / $216M` | 总负债约为权益 `32.6x`，任何新增大额准备金都可能吞噬账面权益 |
+| TTM adjusted EBITDA / 利息 | 约 `$745M / $272M`，覆盖约 `2.7x` | 尚能覆盖，但对 TT 与 APM 恢复依赖大；GAAP EBIT 利息覆盖约 `0.9x` |
+| 2025 CFO / Capex / FCF | `$264M / $213M / $51M` | 现金转换弱；2026Q1 FCF `-$93M` 具有季节性但仍需警惕 |
+
+### 3.3 环境与诉讼负债：资产负债表的核心尾部风险
+
+| 项目 | 截至 2026Q1 的计提/承诺 | 仍需关注 |
+|---|---:|---|
+| 环境修复准备金 | `$617M`（流动 `$97M`、长期 `$520M`） | 公司披露合理可能损失区间最高还可比计提多约 `$630M`，不是上限保证 |
+| 诉讼准备金 | `$491M`（流动 `$176M`、长期 `$315M`） | 含其他 PFAS 约 `$321M`、PFOA 约 `$40M`、石棉约 `$95M` 等 |
+| 新泽西 2025 和解 | 总名义额约 `$875M/25 年`；现值约 `$500M`，Chemours 经济份额约一半；Q1 相关计提约 `$266M` | 长期现金流、保险回收与州法院最终程序 |
+| Washington Works 2026 EPA/WVDEP 拟议和解 | 民事罚款 `$22.5M`（其中约 `$15M` 已计提）+ 15 年约 `$90M` 缓解项目 | 仍待法院批准；扩大场外饮用水措施可能增加准备金。[2026-06-24 公告](https://investors.chemours.com/news-releases/news-release-details/chemours-reaches-agreement-us-epa-resolve-claims-relating-pfas) |
+
+**健康度结论：`偏弱/脆弱，但短期可管理`。** 公司不处于立即融资断裂状态：现金、revolver、土地出售和期限延长足以应对近期经营。但速动比率低于 1、净杠杆接近 5x、账面权益只有 `$216M`，而环境/诉讼准备金合计 `$1.108B`。只有 TSS 维持高利润、APM 停机恢复、TT 不继续恶化，并将自由现金流持续用于降债，资产负债表才会从“可管理”走向“健康”。
+
+## 四、最新及最近四次财报：五季度经营全景
+
+### 4.1 五季度核心财务与分部数据
+
+> 2025Q3 原始新闻稿曾列净利润 `$60M`、adjusted EBITDA `$195M`；2025 年报对非重大错误修订后分别为 `$46M/$189M`。下表统一使用最新年报/10-Q 修订口径，避免混用。
+
+| 财季 | 总收入；同比 | 价格/销量/汇率同比 | TSS：收入 / EBITDA / 率 | TT：收入 / EBITDA / 率 | APM：收入 / EBITDA / 率 | 集团 adj. EBITDA / 率 | GAAP 归母净利（亏损） |
+|---|---:|---|---:|---:|---:|---:|---:|
+| **2026Q1** | `$1,381M；+1%` | `+2% / -4% / +3%` | `$568M / $190M / 33%` | `$559M / $18M / 3%` | `$243M / $5M / 2%` | `$169M / 12.2%` | `-$29M` |
+| **2025Q4** | `$1,329M；-2%` | `+1% / -4% / +1%` | `$444M / $128M / 29%` | `$561M / $23M / 4%` | `$312M / $12M / 4%` | `$128M / 9.6%` | `-$47M` |
+| **2025Q3（修订）** | `$1,495M；-1%` | 约 `+1% / -3% / +1%` | `$560M / $194M / 35%` | `$612M / $25M / 4%` | `$311M / $14M / 5%` | `$189M / 12.6%` | `$46M` |
+| **2025Q2（修订）** | `$1,615M；+4%` | `+1% / +3% / 0%` | `$597M / $207M / 35%` | `$657M / $47M / 7%` | `$346M / $50M / 14%` | `$253M / 15.7%` | 约 `-$380M` |
+| **2025Q1（修订）** | `$1,368M；约 0%` | 约 `0% / +2% / -2%` | `$466M / $141M / 30%` | `$597M / $50M / 8%` | `$294M / $32M / 11%` | `$166M / 12.1%` | `-$5M` |
+
+来源：[2026Q1 新闻稿](https://investors.chemours.com/news-releases/news-release-details/chemours-company-reports-first-quarter-results)、[2025 年报](https://investors.chemours.com/static-files/a893c228-982d-4886-8e46-b3375c157f5d)、[2025Q4](https://investors.chemours.com/news-releases/news-release-details/chemours-company-reports-fourth-quarter-and-full-year-2025)、[2025Q3](https://investors.chemours.com/news-releases/news-release-details/chemours-company-reports-third-quarter-2025-results)、[2025Q2](https://investors.chemours.com/news-releases/news-release-details/chemours-company-reports-second-quarter-2025-results)、[2025Q1](https://investors.chemours.com/news-releases/news-release-details/chemours-company-reports-first-quarter-2025-results)。分部 EBITDA 相加高于集团 adjusted EBITDA，因为集团还包含 corporate/other 未分配成本。
+
+### 4.2 五季度产品收入和增速
+
+| 财季 | Opteon | Freon | 其他 TSS（FP&O） | TiO₂ / 矿物 | Advanced Materials | Performance Solutions | 关键解释 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| **2026Q1** | `$313M；+12%` | `$162M；+67%` | `$93M；+3%` | `$541M；-6% / $18M；-18%` | `$143M；-20%` | `$100M；-14%` | Opteon/售后价格与法规需求强；Washington Works 停机使 APM 销量 `-19%` |
+| **2025Q4** | `$243M；+37%` | `$113M；-10%` | `$87M；约 0%` | `$534M；-11% / $27M；-18%` | `$172M；-10%` | `$141M；+6%` | TT 季节性/去库存；Performance Solutions 转正 |
+| **2025Q3** | `$368M；+80%` | `$94M；-36%` | `$98M；-16%` | `$591M；约 -9% / $21M` | `$190M；-11%` | `$121M；-14%` | Opteon 法规转换最强；Washington Works 停机压 APM |
+| **2025Q2** | `$375M；+65%` | `$123M；-29%` | `$99M；-17%` | TT 合计 `$657M；-3%` | `$214M；+1%` | `$132M；-1%` | TSS 旺季；TT 发生高成本矿料和运营扰动共约 `$23M` |
+| **2025Q1** | `$279M；+40%` | `$97M；-44%` | `$90M；+11%` | `$575M；+1% / $22M` | `$178M；-6%` | `$116M；+3%` | AIM Act 切换拉动 Opteon，Freon 被低 GWP 替代 |
+
+**滚动十二个月（2025Q2–2026Q1）：** Opteon `$1.299B`，同比约 `+46%`；Freon `$492M`，同比约 `-9%`；FP&O `$377M`；TT `$2.389B`；Advanced Materials `$719M`；Performance Solutions `$494M`。最新季度 Freon `+67%` 是配额、汽车售后供给和价格形成的反弹，不代表其长期替代趋势逆转。
+
+### 4.3 订单、交期、取消率和 AI 收入：披露边界与推算
+
+Chemours **不披露集团或分部 backlog、bookings、B2B、取消率和标准交期**。因此不能制造一个“官方 backlog”。下表中金额均为 C 级模型，用于把管理层话术、产能扰动和行业资格周期转换成可跟踪区间。
+
+| 财季 | 官方订单/供给信号 | 推算的交期与取消/延期率 | 直接 AI 数据中心收入估计 | AI 芯片制造使能收入估计 |
+|---|---|---|---:|---:|
+| **2025Q1** | PFA 扩产开始贡献；Opteon 切换加速 | PFA 商业交期约 2–6 月；AVL 验证 12–36+ 月；已下 PO 取消约 0%–10% | `$5–12M`，占 `0.4%–0.9%` | `$45–70M`，占 `3.3%–5.1%` |
+| **2025Q2** | Opteon 旺季量价齐升；APM 价格 `+6%`、销量 `-6%` | 制冷剂 1–2 个季度可见；取消/去库存约 5%–15% | `$6–15M`，占 `0.4%–0.9%` | `$55–85M`，占 `3.4%–5.3%` |
+| **2025Q3** | Washington Works 停机；Samsung 宣布 2P50 资格验证 | PFA 分配/延期上升；2P50 仍为试验，项目延期风险 20%–50% | `$7–18M`，占 `0.5%–1.2%` | `$40–65M`，占 `2.7%–4.3%` |
+| **2025Q4** | Performance Solutions `+6%`；2P50/Navin 准备初始产能 | PFA 恢复后补库；合格材料切换成本抑制取消 | `$8–20M`，占 `0.6%–1.5%` | `$55–85M`，占 `4.1%–6.4%` |
+| **2026Q1** | APM“过去数年最高订单速度”；半导体/数据中心订单强；但 Washington 停机 | 本文估计 APM 半导体/数据中心**已获订单但未交付**约 `$75–150M`，交付以 2026H2 为主；这不是公司披露 backlog | `$9–24M`，占 `0.7%–1.7%` | `$35–60M`，占 `2.5%–4.3%` |
+
+口径说明：
+
+- **直接 AI 数据中心**只计数据中心冷水机/CRAC 的 Opteon 份额、2P50 样品/试验和极少量专用材料，不计一般汽车/住宅 HVAC。
+- **AI 芯片制造使能**计半导体级 PFA、Krytox/Viton 等进入先进逻辑、HBM、先进封装设备/厂务的材料；它是 AI 产业链收入，但发生在晶圆厂，不是机房。
+- 上述两栏有少量产品边界重叠，适合判断量级，**不可直接相加为审计口径**。公司没有披露 AI 收入，任何更精确到个位数的比例都属于伪精确。
+- `$75–150M` pipeline 代理值按 Performance Solutions 月均收入、管理层“最高订单速度”、PFA 恢复能力和 1.5–3.0 个月可交付窗口约束；公开可确认的 2P50 采购 backlog 仍为 **`$0`**，因为资格/JDA/试验不是采购订单。
+
+## 五、2026 最新指引、业务收入占比与重点产品
+
+### 5.1 2026Q1 收入结构
+
+| 业务/产品 | 2026Q1 收入 | 占集团 | 同比 | 2025 全年占比 | 判断 |
+|---|---:|---:|---:|---:|---|
+| **TSS 合计** | `$568M` | `41.1%` | `+22%` | `35.6%` | 最强利润引擎 |
+| └ Opteon | `$313M` | `22.7%` | `+12%` | `21.8%` | 低 GWP 法规和 OEM 切换主线 |
+| └ Freon | `$162M` | `11.7%` | `+67%` | `7.4%` | 存量车/设备售后与配额稀缺，非长期成长 |
+| └ FP&O | `$93M` | `6.7%` | `+3%` | `6.4%` | 发泡剂、推进剂等，非 AI 核心 |
+| **TT 合计** | `$559M` | `40.5%` | `-6%` | `41.8%` | 收入最大、利润最低、周期弹性最大 |
+| └ TiO₂ | `$541M` | `39.2%` | `-6%` | `40.1%` | 涂料/塑料大宗周期 |
+| └ 矿物 | `$18M` | `1.3%` | `-18%` | `1.7%` | 非核心 |
+| **APM 合计** | `$243M` | `17.6%` | `-17%` | `21.7%` | 停机掩盖 PFA/电子订单强度 |
+| └ Advanced Materials | `$143M` | `10.4%` | `-20%` | `13.0%` | 通用/工业氟材料与高性能材料混合 |
+| └ Performance Solutions | `$100M` | `7.2%` | `-14%` | `8.8%` | 半导体、先进电子、清洁能源等高价值应用 |
+| Other | `$11M` | `0.8%` | — | `0.9%` | 非核心 |
+
+### 5.2 最新指引和管理层资源重心
+
+| 指引项目 | 2026Q2 / FY2026 指引 | 隐含信息 |
+|---|---|---|
+| 集团 | Q2 收入环比 `+15%–20%`，adjusted EBITDA `$220–250M`；FY2026 收入 `+3%–5%`、EBITDA `$800–900M` | Q2 中点收入约 `$1.62B`；全年 EBITDA 中点比 2025 `$742M` 增约 15% |
+| TSS | Q2 收入环比低至中双位数，EBITDA `$210–225M` | 继续保持约低 30% EBITDA 率；Q1 约 `$10M` EBITDA 从 Q2 提前实现，不能简单线性外推 |
+| TT | Q2 收入环比中至高双位数，EBITDA `$40–50M` | 旺季/提价改善，但仍远低于历史健康利润；矿料组合和低开工率是约束 |
+| APM | Q2 收入环比低至高 30%，EBITDA `$12–18M`；管理层目标 2026H2 每季可持续 `$30–40M` | Washington Works 恢复、PFA 和半导体/数据中心订单转收入，是全年最重要的利润修复变量 |
+| 资本与现金 | FY capex `$275–325M`；FCF conversion `>20%`；年末净杠杆 `<3.8x` | 土地交易税约 `$30M`使 FCF 转化目标从此前 `>25%` 下调；降债优先于大规模回购 |
+
+公司最侧重的三项是：
+
+1. **Opteon 低 GWP 制冷剂及配额价值最大化。** 公司不是单纯追求吨位，而是在有限 HFC 配额下优化 EBITDA/配额；2026Q1 TSS EBITDA 率 33%，管理层预计全年保持低 30% 区间。
+2. **APM 运行稳定与高价值半导体/数据中心订单兑现。** 这是从 Q1 低谷恢复到 H2 `$30–40M/季` EBITDA 的关键桥梁。
+3. **削减 TT 现金消耗、落实提价和降债。** TT 不需要高增长，只要从 3% EBITDA 率回到中高个位数，就能显著改善集团现金流。
+
+### 5.3 产品/型号地图
+
+| 重点产品线 | 主要产品/型号 | 主要应用 | 当前商业状态 |
+|---|---|---|---|
+| Opteon 汽车/固定空调 | XL10 `R-1234yf`、XL20 `R-454C`、XL40 `R-454A`、XL41 `R-454B`、XL55 `R-452B`；XP10 `R-513A`、XP20 `R-449C`、XP30 `R-514A`、XP40 `R-449A`、XP41 `R-463A`、XP44 `R-452A` | 汽车空调、住宅/商用 HVAC、冷水机、冷链 | 已大规模商业化；OEM/法规转换驱动。[Opteon 产品页](https://www.opteon.com/en/products/refrigerants) |
+| 数据中心冷水机制冷剂 | 以 XL10/20/40/41/55、XP10/30/41 等 OEM 适配牌号为主 | Chiller、CRAC/CRAH 相关机械制冷 | 已商业化，但公司不拆数据中心收入；2027 美欧 GWP 规则提前拉动 2026 认证/下单 |
+| 半导体级 Teflon PFA | 951HP Plus、450HP、440HPA/B、445HP 等高纯/低析出牌号 | 晶圆厂酸碱/溶剂管路、管件、阀、泵、衬里、湿法设备 | 已商业化并扩产；951HP Plus 强调 ppb 级纯度、低析出和较标准 PFA 最高约 60% 的抗渗透改善。[951HP Plus 资料](https://www.chemours.com/en/-/media/files/teflon/teflon-pfa-951hp-plus-product-info.pdf?rev=162c474b2801489c9ca63f8c1c2bd464) |
+| Krytox / Viton | PFPE 润滑油和润滑脂；FKM/FFKM 相关弹性体与密封材料 | 真空泵、机械手、阀、密封件、晶圆制造设备 | 成熟小业务；收入不拆分，易被忽略但资格黏性高 |
+| Vertrel / Opteon 特种流体 | Vertrel XF/XE/XP/X-P10/SMT；Opteon SF01/SF05/SF10/SF33 等 | 亚微米颗粒/CMOS 清洗、PCB 除焊剂、精密漂洗/干燥、载液、介电/传热流体 | 已商业化的小型利基；公司未拆半导体收入。产品手册明确列出 CMOS、硬盘组件和电子清洗用途。[产品组合](https://www.chemours.com/en/brands-and-products/vertrel/products) |
+| Opteon 2P50 | 低沸点两相介电工质 | 两相浸没式数据中心冷却 | 开发/初始商业化；Navin 目标 2026Q3 初始量产；已有 Samsung、2CRSi/ORNL 等技术证据，无披露批量订单 |
+| Nafion | 离子交换膜、分散液等 | 电解槽、燃料电池、储能/传感 | 长期清洁能源期权；2025–2026 氢能需求弱，非本报告 AI 主线 |
+
+### 5.4 明确跳过的低增长或非 AI 产品
+
+| 跳过深挖的产品/业务 | 原因 | 仍需保留的投资影响 |
+|---|---|---|
+| Ti-Pure TiO₂ 与矿物 | 2026Q1 `-6%/-18%`，与 AI 基建没有可验证直接联系 | 占集团约 40% 收入，周期复苏/继续下跌会主导集团 EBITDA，不能从公司估值中删除 |
+| FP&O 一般发泡剂、推进剂及特种流体 | 2026Q1 仅 `+3%`，AI 关联弱 | 提供 TSS 组合与配额优化，但不是增长主线 |
+| Advanced Materials 中一般工业、油气、消费品应用 | 周期性强，产品拆分不足 | Washington Works 开工率和固定成本会影响半导体产品利润 |
+| SPS Capstone | 公司已退出/关闭相关制造 | 有利于减少监管和低回报负担，但短期造成停产与重组成本 |
+| Nafion 氢能 | 2025 年氢能客户需求弱；数据中心备用燃料电池尚非规模收入 | 保留长期可选性，不纳入未来一年 AI 收入基准情景 |
+
+Freon 虽非 AI 且长期衰退，但最新季度增长 `+67%`、收入规模 `$162M`，对利润和配额价值影响显著，因此保留为关键现金业务分析。
+
+## 六、关键产品当前贡献、增长、利润和战略评分
+
+评分均为 `1–5`：5 表示对 AI 栈最关键/最紧急/最供不应求/垄断或定价最强。收入拆分标为“估计”的均为 C 级模型，产品间可能存在归类重叠，不可机械加总。
+
+| 产品/业务 | 当前年化/TTM 收入贡献 | 当前增速 | 产品毛利率估计 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断能力 | 溢价能力 | 核心判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| **Opteon 全系列** | 已披露 `$1.299B` | TTM约 `+46%`；最新季 `+12%` | `45%–60%`；TSS EBITDA 率 33% 作校验 | 3 | 4 | 4 | 3 | 4 | 2027 法规、OEM 认证和 HFC 配额形成稀缺；但大部分收入是车用/HVAC，不是 AI |
+| └ 数据中心冷水机子集 | 估计 `$20–50M`，包含在上行 | 估计 `+15%–30%` | `45%–60%` | 3 | 4 | 3 | 3 | 4 | 数据中心仍大量采用暖水 D2C/自然冷却，不能按全部新机房容量推制冷剂收入 |
+| **Freon 售后** | 已披露 `$492M` | TTM约 `-9%`；最新季 `+67%` | 估计 `50%–65%` | 1 | 3 | 4 | 2 | 4 | 供应/配额和售后刚需带来价格，但新设备持续迁移到低 GWP 产品 |
+| **半导体级 PFA** | 估计 `$120–210M`，中点 `$165M` | 收入受停机拖累；订单速度估计 `+20%–40%` | 当前 `20%–35%`；正常化 `30%–45%` | 5 | 4 | 4 | 美国 5；全球 3 | 4 | 美国唯一国内 PFA 生产商，但全球有 Daikin/AGC/GFL 等；真正壁垒是通过 AVL 的稳定批次 |
+| **Krytox/Viton 半导体辅材** | 估计 `$40–80M` | 估计 `+8%–15%` | `35%–55%` | 3 | 3 | 3 | 3 | 4 | 金额小但真空、密封和洁净设备失效成本高，替换验证长 |
+| **Vertrel/Opteon 半导体特种流体（观察级）** | 估计 `$10–30M`，包含在 TSS/FP&O 等披露口径 | 估计 `+5%–15%` | `35%–50%` | 3 | 2 | 2 | 2 | 3 | CMOS/精密清洗与设备传热是潜力小业务；用途明确，但客户、收入和增长均未拆分 |
+| **Opteon 2P50** | 估计 `$0–5M` 样品/试验 | 基数太小，不适用 | 当前为负或接近零；成熟潜在 `50%–70%` | 当前 2；潜在 5 | 2 | 1 | 3 | 3 | 技术资格领先于收入；2026 供给少但需求也未进入规模，不能称“供不应求” |
+
+**PFA 收入模型：** 项目内行业研究估计 2026 全球半导体级 PFA/PTFE/PVDF 上游树脂市场约 `$0.55–0.90B`；按 Chemours 全球有效份额约 15%–25%、高纯等级组合和 Washington Works 停机折扣，得到 `$120–210M`。这个区间受市场定义、PFA/PTFE/PVDF混合口径影响，不是公司披露值。中国渠道可见进口 Chemours 高纯 PFA 报价约 `RMB450–678/kg`（约 `$63–95/kg`），国内牌号约 `RMB220–350/kg`；这些是小样/经销报价，不等于公司大客户实现价，本文只用其证明高纯资格存在明显价差，不据此直接算收入。
+
+## 七、未来一年收入、增长与战略地位：B/O/X 三情景
+
+**预测期：** 未来 12 个月，即约 2026Q3–2027Q2 年化收入；不是公司 FY2026 指引。  
+**B/O/X 定义：** 基准 / 乐观 / 极度乐观。X 是压力测试上沿，不是最可能值。
+
+| 产品 | 情景 | 一年后年化收入贡献 | 对当前增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断能力 | 溢价能力 | 成立条件 |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| Opteon 全系列 | B | `$1.39B` | `+7%` | 3 | 4 | 3 | 3 | 4 | 2027 切换按计划，车用和固定空调正常季节性 |
+|  | O | `$1.52B` | `+17%` | 3 | 5 | 4 | 3 | 4 | 提前备货、炎热天气、OEM 转换和价格同时有利 |
+|  | X | `$1.68B` | `+29%` | 4 | 5 | 5 | 4 | 5 | 配额/合格分子短缺延续 4–6 季度，Corpus 满负荷且无水约束 |
+| 数据中心冷水机子集* | B | `$30–60M` | 约 `+30%` | 3 | 4 | 3 | 3 | 4 | 2027 GWP 限制拉动新 chiller；暖水 D2C 仍分流 |
+|  | O | `$50–90M` | 约 `+100%` | 4 | 5 | 4 | 3 | 4 | 多家 OEM 在 2026H2 提前锁定 HFO/混合物 |
+|  | X | `$80–140M` | 约 `+200%` | 4 | 5 | 5 | 4 | 5 | 机械制冷小时和首充量显著高于基准且分子供应紧 |
+| Freon | B | `$430M` | `-13%` | 1 | 2 | 3 | 2 | 3 | 配额继续下降，价格只部分抵消量降 |
+|  | O | `$500M` | `+2%` | 1 | 3 | 4 | 2 | 4 | 汽车售后供给偏紧、回收气不足 |
+|  | X | `$590M` | `+20%` | 1 | 4 | 5 | 3 | 5 | 原料/竞争供给中断造成短期极高售后溢价 |
+| 半导体级 PFA | B | `$210–250M` | 相对中点 `+27%–52%` | 5 | 4 | 4 | 美国 5/全球3 | 4 | Washington 稳定、积压在 H2 兑现；全球 fab 资本开支按计划 |
+|  | O | `$260–320M` | `+58%–94%` | 5 | 5 | 5 | 美国5/全球4 | 5 | AI/HBM 湿法设备加单，3M 退出后认证供给持续紧 |
+|  | X | `$330–420M` | `+100%–155%` | 5 | 5 | 5 | 美国5/全球4 | 5 | 多家客户分配采购、PFA 扩产满负荷且无再次停机 |
+| Krytox/Viton 半导体辅材 | B | `$55–75M` | 中点约 `+8%` | 3 | 3 | 3 | 3 | 4 | 随 fab/tool 出货稳定增长 |
+|  | O | `$75–100M` | 中点约 `+46%` | 4 | 4 | 4 | 3 | 4 | HBM/先进封装设备内容量和备件加速 |
+|  | X | `$105–140M` | 中点约 `+104%` | 4 | 5 | 5 | 4 | 5 | 特定洁净/真空牌号进入分配，竞争品资格受限 |
+| Vertrel/Opteon 半导体特种流体 | B | `$12–30M` | 约 `0%–20%` | 3 | 2 | 2 | 2 | 3 | 随电子清洗/设备传热平稳增长，HFC 监管限制上行 |
+|  | O | `$20–40M` | 相对中点约 `+50%` | 3 | 3 | 3 | 3 | 4 | 新 CMOS/精密清洗牌号进入更多设备 BOM |
+|  | X | `$35–60M` | 相对中点约 `+138%` | 4 | 4 | 4 | 3 | 4 | 3M 退出后合格非燃清洗/传热流体出现资格性短缺 |
+| Opteon 2P50 | B | `$10–25M` | 基数小，N/M | 3 | 3 | 2 | 3 | 4 | Q3 初始产能、数个付费试点/小型部署，无 hyperscaler 标准化 |
+|  | O | `$35–70M` | N/M | 4 | 4 | 4 | 4 | 4 | 1–3 个多 MW 项目、Samsung/2CRSi 后续平台扩大 |
+|  | X | `$90–160M` | N/M | 5 | 5 | 5 | 4 | 5 | hyperscaler 采用、第二产线/代工扩容、回收闭环和法规许可同时通过 |
+
+\* 数据中心冷水机子集已经包含在 Opteon 全系列，**不可再加总**。PFA 与 Krytox/Viton 的区间也可能在公司内部产品组合上部分交叉，集团模型使用中点并设置重叠折扣。
+
+产品层利润率一年后情景：Opteon约 `45%–55% / 50%–62% / 58%–68%`；PFA约 `30%–40% / 38%–48% / 45%–55%`；Krytox/Viton约 `38%–50% / 45%–58% / 52%–62%`；2P50约 `20%–40% / 45%–60% / 55%–70%`。这些是产品毛利率模型，不等于 TSS/APM EBITDA 率；停机、折旧、研发、环境成本和未分配费用会显著拉低公司利润。
+
+## 八、BOM、单位内容量、价格传导、当前产能与认证
+
+### 8.1 产品级 BOM 与价值链
+
+| 产品 | Chemours/产品层 BOM 成本结构估计 | 下游 BOM/价值捕获 | 价格传导 |
+|---|---|---|---|
+| 低 GWP Opteon 制冷剂 | 氟化原料 `25%–40%`；合成/混配/提纯 `20%–30%`；钢瓶/渠道/物流 `10%–18%`；配额/合规/回收 `8%–15%`；IP/OEM 认证 `10%–20%` | 冷水机中压缩机、换热器、控制和服务价值远高于首充制冷剂；Chemours 捕获分子/IP与补充气价值 | HF/R32/能源→分子成本；通常按季/合同传导。配额、OEM 资格和紧急补气可形成高于成本的稀缺溢价 |
+| Freon 售后 | 与 HFC 制冷剂类似；回收/再生和小包装渠道权重更高 | 维修商和分销库存获取时间价值 | 配额缩减、原料和旺季库存首先反映为可得性，再表现为价格；长期量仍下降 |
+| 高纯 PFA 树脂 | HF/氯化原料/单体 `35%–50%`；聚合/提纯 `20%–30%`；超纯隔离、QA、洁净包装 `10%–15%`；能源/环保 `8%–15%`；管理/技术 `10%–15%` | 高纯 PFA 管：树脂 `45%–60%`、洁净挤出/退火 `15%–20%`、检验/清洗/包装 `8%–12%`、报废/能源 `5%–10%`、物流/管理 `10%–15%`；阀泵/接头的加工与验证占比更高 | 原料涨价可按季/年度谈判；真正溢价来自低析出、低渗透、批次稳定和 AVL。短缺先表现为分配与交期，再表现为 `5%–25%` 组合溢价 |
+| Krytox/Viton | 含氟单体/PFPE或弹性体 `35%–50%`；反应/后处理/提纯 `20%–30%`；复配/洁净灌装/QA `10%–15%`；包装物流 `5%–10%`；IP/应用支持 `10%–20%` | 下游密封件、真空泵和设备厂获取设计、加工和备件服务价值 | 资格牌号按性能定价，原料不是唯一锚；停机损失远高于润滑/密封材料价格 |
+| Vertrel/Opteon 特种流体 | 含氟基础液 `35%–55%`；共沸/溶剂复配 `5%–15%`；高纯分离与颗粒控制 `10%–15%`；洁净包装/物流 `10%–20%`；资格与应用支持 `10%–20%` | 清洗设备、蒸气脱脂/回收系统和工艺 recipe 获取系统价值；液体具有补充消耗 | 原料可传导，但 ppb/亚微米清洁度、非燃、材料相容和回收闭环决定溢价；HFC 合规可能反向限制价格/寿命 |
+| Opteon 2P50 | 氟化原料 `25%–40%`；反应/分离/超纯处理 `18%–28%`；密闭容器/物流/回收 `10%–16%`；合规/环境 `6%–12%`；IP/应用工程/质保 `15%–25%` | 浸没槽、冷凝器、泵、传感、服务器改造和运维是系统大头；液体是大额初充和小比例补液 | 早期按项目、可靠性和回收闭环定价；若多种工质通过 OEM/OCP 资格，按 kg 的价格会下降，利润转向回收与质保 |
+
+### 8.2 每 MW / rack / GPU / optical port 的真实内容量
+
+| 产品 | 物理锚与假设 | 每 MW IT | 每 rack | 每 GPU | 每 optical port | 价值量解释 |
+|---|---|---:|---:|---:|---:|---|
+| 数据中心 chiller 用 Opteon | [Carrier 19DV 公开规格](https://brandportal.carrier.com/m/7aed1ae899ea9c0e/original/NA2316A_brochure_aquaedge_19DV_EN_carrier_bat04_bd.pdf)显示充注量约 `230–325kg/MW cooling`；按 `1MW IT` 配 `1.2–1.5MW` 冷量 | `280–490kg` | 以 `120kW/rack`：`34–59kg` | 以 `500–800 GPU/MW`：`0.35–0.98kg` | `0` | 假设实现价 `$10–30/kg`，初充约 `$2.8k–14.7k/MW IT`、`$0.34k–1.76k/rack`、`$3.5–29/GPU`。Carrier 仅作物理代理，不代表其全部使用 Chemours |
+| Opteon 2P50 两相浸没 | LiquidStack 48U 官方资料确认最高 `252kW`；历史经销技术页列出 `1,200L` tank capacity。2P50 密度 `1.456kg/L` | `4,760–8,000L`，即 `6.93–11.65t` | `1,200L`，约 `1.747t`/浸没槽 | 2CRSi `8×H200/15kW`映射：`9–15L`，约 `13.1–21.8kg` | `0` | 假设初期 ASP `$25–50/kg`：约 `$173k–582k/MW`、`$43.7k–87.4k/tank`、`$327–1,092/GPU`；年补液假设初充的 `1%–3%`，必须回收循环。[官方功率规格](https://liquidstack.com/liquid-cooling/datatank-48u)；[历史 1,200L 规格](https://embe.hpc.co.jp/product/immersion-cooling-system/) |
+| 半导体级 PFA | [公司 APM 资料](https://investors.chemours.com/static-files/9e8d3502-f144-484f-bcd5-c86400875372)给出的先进逻辑 fab 经验值约 `0.5kg/ft²`；按 `600k ft²` mega-fab | **直接为 0**；它随 fab 而非数据中心 MW 出货 | **直接为 0** | **无法审计地分摊** | **直接为 0** | 每座上述 fab 全系统约 `300t` PFA；按树脂实现价模型 `$45–80/kg`，原树脂价值约 `$13.5–24M/fab`，是全生命周期装机量、所有供应商合计，不是 CC 年收入 |
+| Krytox/Viton 半导体辅材 | 按真空泵、阀、机械手和密封件 BOM 出货，公司未披露工具级用量 | `0` 直接 | `0` 直接 | 无可靠换算 | `0` | 不能把晶圆设备耗材伪换算成 GPU 内容量；应跟踪 wafer-fab equipment、泵/阀数量和备件周期 |
+| Vertrel/Opteon 半导体特种流体 | 按清洗槽、蒸气脱脂/回收设备或设备传热回路充注，公司未披露 tool 级用量 | `0` 直接 | `0` 直接 | 无可靠换算 | `0` | 真实分母是每台清洗/传热设备的初充和补液；无客户 BOM 时不伪造 GPU 换算 |
+| Freon | 典型轻型车 R-134a 充注约 `0.4–0.8kg/车`，因车型而异 | `0` AI | `0` | `0` | `0` | 是汽车/存量 HVAC 售后价值，不属于 AI BOM |
+
+2P50 物性来自公司产品资料：沸点 `48.9°C`、密度 `1.456kg/L`、潜热 `115kJ/kg`、动力黏度约 `0.62cP`、GWP `10`、介电常数 `1.82`、体积电阻率 `5.1×10^14 Ω·cm`、击穿强度 `41.3kV/0.1in`，无闪点，建议 8 小时职业暴露限值 `200ppm`。[2P50 产品资料](https://www.opteon.com/en/-/media/files/opteon/opteon-2p50-gic-product-info-sheet-fnl-100523.pdf?rev=1b708201ecd7489b8a9cf86c4de7ffc5)
+
+**最重要的口径纠偏：** PFA 对 AI 很重要，但不是“每台 GPU 装了多少 PFA”；它进入制造 GPU/HBM 的晶圆厂和设备。反之，2P50 是每 GPU 真实装机液体，但当前渗透率极低。把两种内容量放在同一分母会夸大收入。
+
+### 8.3 当前产能、采纳和资格阶段
+
+| 产品 | 当前可销售产能（美元计，模型） | 当前供给能力 | 供应链采纳 | 认证/验证阶段 |
+|---|---:|---|---|---|
+| Opteon 全系列 | `$1.45–1.65B/年` | Corpus Christi YF 扩产约 40% 已完成；实际可卖量还受 HFC 配额、R32/HF、钢瓶和装置运行影响 | 汽车与 HVAC 大规模量产、多个 OEM 牌号 | 成熟 OEM 商用；2026–2027 新固定空调/冷水机 SKU 继续转换 |
+| 数据中心 chiller 子集 | `$50–100M/年`，含于上行 | 分子产能可用，瓶颈更多在 chiller OEM 认证、项目交付和气候/设计 | 已用于低 GWP 冷水机，但公司不披露数据中心客户/份额 | 商用产品；2027 美欧法规前处于多 SKU 重新认证/放量期 |
+| Freon | `$0.50–0.60B/年` | 受配额和原料约束，而非反应釜绝对不足 | 存量汽车/设备售后高度成熟 | 成熟；资格不是瓶颈，法规淘汰是长期约束 |
+| 半导体级 PFA | 正常化 `$0.22–0.30B/年` | Washington Works 扩产完成，但 2025Q3、2026Q1 停机说明有效产能显著低于名义产能 | 已进入全球半导体管路/部件供应链；美国本土唯一 PFA 来源 | 既有牌号已在多家 AVL；新增客户/牌号通常 12–36+ 月，资格产能比吨位更稀缺 |
+| Krytox/Viton 半导体辅材 | `$0.06–0.10B/年` | 小批多牌号、纯度和复配/密封加工约束 | 真空、机器人、阀泵和密封件成熟采用 | 以设备/部件级材料相容与寿命验证为主，转换通常数月到数年 |
+| Vertrel/Opteon 半导体特种流体 | `$0.02–0.05B/年` 模型 | 反应/复配吨位不是主要瓶颈；高纯分离、回收设备和合规牌号更关键 | 电子/精密清洗已有商业应用，半导体专用份额未披露 | 按设备 recipe、材料相容、残留/颗粒和当地法规逐项验证 |
+| Opteon 2P50 | 当前样品/试验 `<$10M/年`；2026 初始线 `$25–50M/年`模型 | Navin 初始产能目标 2026Q3；没有披露吨位 | NTT/Hibiya 实机试验、DataVolt 合作、Samsung Gen4 SSD、2CRSi H200 服务器；尚未证明 hyperscaler 多 MW 部署 | ORNL 系统/沸腾测试完成；Samsung Gen4 SSD qualified，Gen5/6 继续；2CRSi 当前服务器 qualified/JDA；产品仍带 developmental/监管许可边界 |
+
+近期行业/会议交叉验证：SEMI 2026Q2 将 2026 年 300mm fab equipment 投资上修至 `$142B`、`+25%`，存储设备投资约 `$52B`、`+29%`；Chemours 的 Gerardo Familiar 于 2026-02 获任 SEMI North America Advisory Board；SEMI University 2026-02 已把 PFAS 在半导体环境中的用途、风险和替代纳入正式供应链课程。这些信号支持 PFA/洁净材料需求和合规重要性，但董事会席位/课程本身不是订单。[Chemours/SEMI 公告](https://investors.chemours.com/news-releases/news-release-details/chemours-gerardo-familiar-appointed-semi-north-america-advisory)
+
+## 九、一年后产能、采纳和认证：B/O/X 三情景
+
+| 产品 | 情景 | 一年后有效产能（美元计） | 采纳程度 | 一年后认证阶段 | 主要前提 |
+|---|---|---:|---|---|---|
+| Opteon | B | `$1.55–1.70B` | 新车/固定空调继续放量，数据中心仍为小子集 | 2027 合规 SKU 基本完成 OEM 转换 | Corpus 正常运行、原料可得 |
+|  | O | `$1.75–1.95B` | OEM 提前备货并提高低 GWP mix | 更多 chiller/热泵平台量产 | 配额优化、去瓶颈和高价组合 |
+|  | X | `$2.00–2.25B` | 关键地区出现分子短缺，装置接近满负荷 | 多平台锁量/长期协议 | 无水限制、无停机，供给扩张晚于需求 |
+| Freon | B | `$0.48–0.55B` | 存量售后，量降价稳 | 成熟 | 配额正常下降 |
+|  | O | `$0.55–0.65B` | 售后补库 | 成熟 | 竞争供给有限 |
+|  | X | `$0.65–0.75B` | 短期分配 | 成熟 | 原料/进口中断形成异常溢价，不可持续 |
+| 半导体级 PFA | B | `$0.26–0.34B` | 既有客户恢复供货，新增资格有限 | 1–2 个新增牌号/客户完成阶段性 AVL | 稳定开工、行业需求按计划 |
+|  | O | `$0.30–0.39B` | AI/HBM 项目提高分配采购 | 多家客户完成生产资格；高阻隔/无焊珠等级扩大 | 去瓶颈、良率和批次一致性改善 |
+|  | X | `$0.36–0.46B` | 认证产能明显供不应求 | 关键客户锁定长期量；替代品验证落后 | 满负荷、无事故；全球竞争者扩产未及时通过 AVL |
+| Krytox/Viton 辅材 | B | `$0.08–0.11B` | 随 tool install base 增长 | 既有 BOM 延伸至新机型 | 正常半导体周期 |
+|  | O | `$0.11–0.15B` | 先进封装/真空设备提高内容量 | 多个设备平台扩展资格 | HBM 与先进封装超预期 |
+|  | X | `$0.15–0.20B` | 特定牌号分配 | 形成关键设备事实单源/双源锁定 | 竞争品资格或供给受限 |
+| Vertrel/Opteon 半导体特种流体 | B | `$0.025–0.05B` | 既有精密清洗/热管理客户平稳增长 | 新 recipe 做增量资格 | HFC 合规不进一步收紧 |
+|  | O | `$0.045–0.075B` | 更多 CMOS/电子设备采用非燃、低残留牌号 | 多个 tool 平台完成残留/颗粒验证 | 3M 退出后的客户再资格加速 |
+|  | X | `$0.075–0.11B` | 合格电子清洗液局部短缺 | 形成关键设备双源之一 | 原料、许可和回收系统同步扩容 |
+| Opteon 2P50 | B | `$25–50M` | 付费试点、小型 HPC/边缘部署 | Gen5/6 SSD、更多服务器 coupon/field test；无 hyperscaler 标准 | Navin Q3 爬坡、监管允许 |
+|  | O | `$75–120M` | 1–3 个多 MW 项目，系统伙伴扩展 | 至少一个服务器/OEM平台量产资格、现场运行数据形成 | 产线增班/去瓶颈、回收闭环通过 |
+|  | X | `$180–280M` | hyperscaler 或大型园区采用 | 进入正式 AVL/长期采购框架，第二来源/第二线通过 | 需求、法规、质保、密封和产能同时过关 |
+
+“产能美元值”=在合理利用率和产品组合下可销售收入，不是公司披露的资产账面值，也不是订单。对于配额制制冷剂和多牌号 PFA，吨位乘现货价会严重失真；有效产能必须同时满足合规配额、纯度、批次稳定、客户资格和正常运行。
+
+## 十、根据真实订单信号与供给预测未来一年增速
+
+### 10.1 订单与交付窗口的可审计边界
+
+| 产品 | 公司披露 backlog/bookings | 可识别客户/项目 | 本文 pipeline/订单代理 | 交付窗口 | 取消/延期率估计 |
+|---|---|---|---:|---|---:|
+| Opteon | 不披露 | 汽车/HVAC OEM 未逐项披露；法规节点可验证 | 约 1–2 个季度销售可见性；不设虚构 backlog 金额 | 2026H2–2027H1 | `5%–15%`，主要是库存和天气延期 |
+| Freon | 不披露 | 分销/汽车售后客户未披露 | 库存与配额代理，短周期 | 1–3 个月 | `5%–15%` |
+| PFA/半导体 APM | 不披露；管理层称订单速度为数年来最高 | 客户名保密；SEMI fab、PILLAR/Entegris 订单仅作行业代理 | 半导体/数据中心 APM booked-not-delivered 代理 `$75–150M`；其中 PFA约 `$60–120M` | 主要 2026H2，部分至 2027H1 | 已发资格料/PO约 `0%–10%`；项目延期可高于取消 |
+| Krytox/Viton | 不披露 | 设备、泵阀、密封客户未披露 | `$10–25M` 的新增/备件可见性模型 | 2–6 个月 | `5%–15%` |
+| Vertrel/Opteon 半导体特种流体 | 不披露 | 半导体/电子清洗客户未披露 | 增量 pipeline 代理 `$3–10M`，包含在 TSS/APM 总体，不另计官方 backlog | 1–3 个月；新 recipe 资格更长 | `5%–20%`，法规或工艺改线可导致延期 |
+| 2P50 | **公开确认采购 backlog `$0`** | Samsung Gen4 SSD qualification；2CRSi 8×H200/1U；NTT/Hibiya trial；DataVolt cooperation；Navin manufacturing | 试验/JDA pipeline 不能记为订单；若全转付费，约 `$10–30M` 初始机会 | 2026H2–2027H1 | `20%–50%`，包括延期、改单相和法规/质保阻断 |
+
+### 10.2 产品和集团未来一年增长
+
+| 情景 | 关键产品增量逻辑 | 未来 12 个月集团收入 | 对 TTM `$5.821B` 增长 | 概率判断 |
+|---|---|---:|---:|---|
+| **基准 B** | Opteon `+约$90M`、PFA恢复 `+约$65M`、2P50 `+约$15M`；Freon `-约$60M`；TT 低个位数恢复，其他业务平稳 | `$6.15–6.35B` | `+6%–9%` | 最高；与 FY2026 `+3%–5%` 后续进入 2027 的季节/恢复桥接一致 |
+| **乐观 O** | Opteon `+约$220M`、PFA `+约$130M`、辅材 `+约$30M`、2P50 `+约$50M`；TT 提价和利用率改善 | `$6.45–6.75B` | `+11%–16%` | 中低；要求 APM 无再次停机且 TT 不拖累 |
+| **极度乐观 X** | Opteon/PFA 供给紧张、2P50 hyperscaler 采用、TT 价格/开工率同时反转 | `$6.85–7.25B` | `+18%–25%` | 低；多项独立约束必须同时解除，不能作基础估值 |
+
+集团收入增长并不等于利润增长：2026Q1 TSS 与 APM 分部 EBITDA 率分别为 33% 和 2%。同样 `$100M` 增量，来自 Opteon/PFA 正常化的利润价值远高于来自 TiO₂ 低价补量；反之，Washington Works 再停机或 Corpus Christi 水资源约束会令高毛利增量消失。管理层已把 Corpus Christi 可能的水削减风险纳入展望，并在极端情况下考虑 2026Q4 约 25% 用水约束；这应作为 X 情景的否决条件，而不是忽略。
+
+## 十一、竞争格局、主流技术、替代方案和客户切换成本
+
+| 产品/技术 | 主要竞争者 | Chemours 优势 | 是否未来主流 | 替代路径 | 切换成本 | 核心风险 |
+|---|---|---|---|---|---|---|
+| Opteon 低 GWP 制冷剂 | Solstice Advanced Materials、Arkema、Daikin、Orbia/Koura、AGC、SRF、Navin、Juhua、Dongyue | 分子/IP、Corpus 规模、汽车与 HVAC OEM 资格、配额与全球渠道 | **是，未来 1–3 年主流之一**；但不同应用会用不同 HFO/HFC blend | R-32、CO₂、氨、丙烷等自然制冷剂；暖水 D2C/干冷减少压缩机制冷小时 | 中高：压缩机、润滑、换热器、安全等级和控制需重认证，通常数月到数年 | PFAS/TFA 监管、R32/HF 成本、专利诉讼、亚洲供给、A2L 安全 |
+| Freon/R-134a 售后 | Koura/Orbia、Daikin、Arkema、中国/印度 HFC 厂、A-Gas/Hudson 等回收商 | 美国供应和售后渠道、存量设备基础 | **否，结构性收缩**；短期仍有强现金利润 | Opteon/其他低 GWP、回收再生气 | 旧设备切换成本高，但新设备从设计阶段绕开 | 配额下降、需求替代、短缺利润不可持续 |
+| 半导体级 PFA | Daikin Neoflon、AGC Fluon、Gujarat Fluorochemicals、Syensqo、Juhua、Dongyue 等 | 美国本土唯一 PFA 生产、Teflon 品牌、低析出/低渗透等级、既有 AVL 和扩产 | **是，强腐蚀超纯化学品线的主路径**；渗透率已高，增长来自 fab 数量和每 fab 内容量 | PVDF-HP（UPW）、PTFE/ECTFE/FEP 功能层、无氟 PEEK（特定水路）、不锈钢（部分溶剂） | 很高：12–36+ 月验证、批次/析出/渗透/爆破数据、设备保修和停线风险 | PFAS 排放/禁限、Washington 单点、全球新产能通过资格、下游客户压价 |
+| Krytox/Viton | Syensqo Fomblin、Daikin、AGC、GFL；密封件端 Greene Tweed、NOK、Trelleborg 等 | 宽温、真空/耐化学历史数据、牌号与设备经验 | **在特定真空/密封位置仍主流**，但不是大市场 | 其他 PFPE、FFKM/FKM、陶瓷/金属密封、干式设计 | 高：材料相容、颗粒、寿命和整机保修重新验证 | 小市场不透明、客户多源、设备厂捕获主要价值 |
+| Vertrel/Opteon 半导体特种流体 | Solstice、Daikin、AGC、Syensqo及区域精密清洗溶剂商；3M Novec 已退出制造 | 非燃、低表面张力/低黏度、电子清洗产品宽度和应用经验 | **特定精密清洗/传热利基可持续**，不是全 fab 主流耗材 | 水基/半水基清洗、其他 HFE/HFO、烃/醇、等离子/超临界 CO₂ 等工艺 | 中高：残留、颗粒、材料相容和设备 recipe 需重新验证，但未锁定前可多源 | HFC/PFAS 监管、溶剂回收成本、替代清洗工艺、收入规模不透明 |
+| Opteon 2P50 两相浸没 | Syensqo Galden/其他氟化液、Daikin/Solstice；系统端 LiquidStack、ZutaCore；单相液 Shell/Castrol/Exxon/Perstorp | 低沸点物性、3M 退出后的窗口、Samsung/2CRSi/ORNL 数据、Navin 制造伙伴 | **不是 2026–2027 的默认主流**；主流仍是水/PG 单相 direct-to-chip。若单 socket 4–5kW+、可靠性和回收通过，可能成为高热流细分主流 | 水/PG D2C、介电冷板液、单相烃/合成酯浸没、芯内微流道、两相 D2C | 一旦部署后极高：排液/回收、清洗、密封/材料、服务器质保和停机；但部署前客户可直接选其他架构 | PFAS 定义、蒸气损失、泄漏/职业暴露、长期材料相容、槽体重量、维护、液体价格、无 hyperscaler 订单 |
+| Ti-Pure TiO₂ | Tronox、LB Group、Kronos、INEOS及中国生产商 | 氯化法、品牌/品级、全球客户与矿料能力 | 成熟大宗，不是新技术主线 | 其他 TiO₂ 牌号、填料/配方优化 | 中：涂料配方需验证，但价格敏感且可多源 | 全球过剩、贸易措施、矿料成本、开工率和中国价格 |
+
+### 11.1 垄断与议价权的准确边界
+
+- **PFA：** Chemours 是美国唯一国内 PFA 生产商，具有地缘/本土化稀缺性；但全球不是垄断，Daikin、AGC、GFL 等具备竞争供给。其溢价来自“已认证且稳定的高纯牌号”，不是所有 PFA 吨位。
+- **Opteon：** 美欧 HFO/HCFO 分子市场估计 CR3 约 60%–75%、CR5 约 75%–90%，Chemours 属寡头之一；OEM 可在不同分子/配方间选择，且自然制冷剂构成长期替代。
+- **2P50：** 3M 退出提高供给稀缺，但技术路线之间竞争很激烈。Samsung qualification 是护城河起点，不是垄断证明；客户在建站前的替换成本低于建成后。
+- **下游价值分配：** PFA 接头、阀、泵、歧管、预制和现场 QA 通常比上游树脂拥有更高毛利；冷水机 OEM 和服务器/浸没系统商掌握最终 BOM。Chemours 必须通过联合开发、回收和质保服务扩大价值捕获，否则只拿材料层份额。
+
+## 十二、技术与行业证据：过去半年最重要的验证
+
+| 日期 | 证据 | 对 CC 的意义 | 不能推出什么 |
+|---|---|---|---|
+| 2026-02-23 | Chemours APM 总裁 Gerardo Familiar 加入 SEMI North America Advisory Board | 公司加强半导体客户/政策接口，PFA 和先进电子是明确战略方向 | 董事会席位不是订单 |
+| 2026-02-24 | 2CRSi 与 Chemours JDA；已验证 Atlas 1.8GG2PIC、1U/8×NVIDIA H200，目标约 15kW/1U | 2P50 通过真实高密度服务器相容/运行闸门 | JDA 不是批量采购。[2CRSi/Chemours 公告](https://www.chemours.com/en/news-media-center/all-news/press-releases/2026/following-successful-fluid-qualification-chemours-2crsi-join-forces-to-accelerate-deployment-of-two) |
+| 2026-03 至 05 | ECHA PFAS 评估/咨询继续；2026 年底前形成更多意见 | 客户会提前做材料清单、双源和豁免准备；稳定、低排放、可追溯牌号可溢价 | 不能说 2026 会立即全面禁用半导体 PFA |
+| 2026-05-05 | Q1 财报：APM 订单速度数年最高、半导体/数据中心订单强；APM EBITDA率仅2% | 需求与短期利润脱钩，H2 交付是最重要验证 | 订单强不等于已披露 backlog 金额 |
+| 2026-05 至 06 | Entegris/PILLAR/AGC 财报和行业会显示高纯流体平台订单恢复、电子材料扩产和高利润 | 交叉验证 AI/HBM→湿法设备→PFA系统链条 | 同行订单不能记入 Chemours 收入 |
+| 2026-06-24 | EPA/WVDEP Washington Works 拟议 PFAS 和解 | 降低一项法律不确定性，但增加长期现金与运营义务 | 不是 PFAS 风险终结 |
+| 2026Q2 行业数据 | SEMI：2026 300mm fab equipment `$142B`、`+25%`；memory equipment `$52B`、`+29%` | 支持 PFA、Krytox/Viton 的未来 12–24 月设备/厂务需求 | 资本开支与 CC 收入之间仍有资格、设备、施工和交付滞后 |
+
+2025 年虽超出“过去半年”，但构成 2026 商业化基线的关键证据包括：Samsung 用近一年完成 2P50 Gen4 SSD 资格验证；Navin 签署 2026 初始制造协议；ORNL 同行评审论文验证沸腾性能。保留这些资料是为了判断 2026 认证阶段，不把旧新闻当新订单。[Samsung qualification](https://investors.chemours.com/news-releases/news-release-details/samsung-electronics-successfully-qualifies-chemours-opteontm-two)、[Navin manufacturing agreement](https://www.chemours.com/en/news-media-center/all-news/press-releases/2025/chemours-and-navin-fluorine-announce-agreement-to-manufacture-new-liquid-cooling-product)。
+
+## 十三、主要风险、催化剂与跟踪清单
+
+### 13.1 风险矩阵
+
+| 风险 | 概率 | 影响 | 领先指标 |
+|---|---|---|---|
+| Washington Works 再停机/环保限制 | 中 | 极高 | APM volume、固定成本、PFA交期、许可和 EPA consent decree 执行 |
+| Corpus Christi 水资源/装置约束 | 中 | 高 | 当地水削减比例、外部供水方案、Opteon产量和 R32 成本 |
+| PFAS/TFA 监管及新增诉讼 | 高 | 极高 | EU/US规则、场外饮用水范围、准备金上调、现金付款日程 |
+| TT 全球过剩和价格战 | 高 | 高 | TiO₂价格、开工率、库存、矿料组合、中国出口与反倾销 |
+| 2P50 无法跨越规模订单闸门 | 中高 | 中 | 付费 MW、长期运行小时、液体损耗/回收率、OEM质保、监管批准 |
+| 高杠杆/高息再融资 | 中 | 高 | 净杠杆、FCF、利息覆盖、2028/2029 到期管理 |
+| 内控/营运资金质量复发 | 低中 | 高 | 季末应收加速、应付延后、库存和非经常性现金流 |
+| 亚洲 PFA/HFO 供给通过资格 | 中 | 中高 | Juhua/GFL/AGC/Daikin 新产线 AVL、价格差和客户双源比例 |
+
+### 13.2 未来四个季度最值得跟踪的十个数字
+
+1. 2026Q2 集团 EBITDA 是否达到 `$220–250M`，而非仅收入达标。
+2. APM Q2 EBITDA 是否达到 `$12–18M`，H2 是否恢复到每季 `$30–40M`。
+3. Performance Solutions/PFA 的收入、订单转交付和 Washington Works 正常运行天数。
+4. Opteon 收入增速和 TSS EBITDA 率能否维持低 30%，以及 Q1 提前实现的约 `$10M` 是否造成 Q2错觉。
+5. Corpus Christi 水削减是否发生、对 Q4 的约 25% 风险假设是否需要上修。
+6. 2P50 是否在 2026Q3 实现初始商业生产，并首次披露付费客户、MW、吨数或收入。
+7. Samsung Gen5/6、2CRSi 后续平台和任何 hyperscaler/OEM 正式 AVL，而不是更多无金额 MOU。
+8. TT EBITDA率是否从 3% 回到中高个位数，价格行动能否覆盖矿料/低开工成本。
+9. 年末净杠杆是否低于 `3.8x`、FCF conversion 是否高于 `20%`。
+10. 环境/诉讼准备金是否继续上调，June 2026 consent decree 是否获批及场外供水义务如何量化。
+
+## 十四、最终结论
+
+Chemours 的基本面不能用单一标签概括：
+
+- **现有利润核心**是 Opteon/Freon 所在 TSS；它受法规、配额和 OEM 认证保护，2026Q1 33% EBITDA率证明了经济性，但 AI 数据中心只占其中很小一部分。
+- **最可信的 AI 上游增长**是高纯 PFA 与半导体辅材。其价值来自 AI/HBM 扩产、湿法化学系统内容量、12–36+ 月资格和 3M 退出后的认证供给收缩。公司当前利润却被 Washington Works 停机压低，因此 H2 交付/毛利比宣传更重要。
+- **最有赔率但最容易被高估的产品**是 Opteon 2P50。Samsung、2CRSi、ORNL、Navin 构成一条可信的技术—资格—产能路径；缺失的一环仍是“可审计的付费 MW、订单金额、交付和液体损耗”。在出现这些证据前，基准情景只能给 `$10–25M` 一年后收入，而不能按数十亿美元液冷 TAM 乘份额。
+- **集团估值的最大反向变量**仍是 TiO₂、PFAS 和杠杆。即使 AI 产品增长，TT 价格再跌、PFAS准备金上修或关键装置停机会吞噬收益；反之，只要 APM恢复、TT从3%利润率回升、FCF用于降债，权益弹性会明显高于收入增速。
+
+因此，CC 更适合作为 **“低 GWP 制冷剂高质量现金流 + 半导体 PFA 周期恢复 + 两相液冷小概率高赔率期权”** 的组合标的，而不是纯 AI 材料公司。合理研究方法应把三层分别估值，并给 PFAS/净债务单独扣减；任何把全部 Opteon、全部 APM 或全部液冷 TAM 直接归为 AI 收入的模型，都会系统性高估公司。
+
+## 十五、主要来源
+
+### 公司、财务与监管一手资料
+
+- [Chemours 2026Q1 results](https://investors.chemours.com/news-releases/news-release-details/chemours-company-reports-first-quarter-results)
+- [Chemours 2026Q1 presentation](https://investors.chemours.com/static-files/d5741a91-0c76-4505-9a53-d855a9de94bc)
+- [Chemours 2026Q1 call transcript](https://investors.chemours.com/static-files/3d1287fa-2fd4-43b9-b56a-fe3b61716df9)
+- [Chemours 2026Q1 Form 10-Q](https://investors.chemours.com/static-files/3f4f3508-9569-48db-b4c4-6de01f7a4cbc)
+- [Chemours 2025 Annual Report](https://investors.chemours.com/static-files/a893c228-982d-4886-8e46-b3375c157f5d)
+- [Chemours 2025Q4/FY2025 results](https://investors.chemours.com/news-releases/news-release-details/chemours-company-reports-fourth-quarter-and-full-year-2025)
+- [Chemours 2026-06-24 EPA/WVDEP PFAS agreement](https://investors.chemours.com/news-releases/news-release-details/chemours-reaches-agreement-us-epa-resolve-claims-relating-pfas)
+- [Chemours audit committee review](https://investors.chemours.com/news-releases/news-release-details/chemours-announces-completion-planned-procedures-audit-committee)
+
+### 产品、资格与技术资料
+
+- [Opteon refrigerants](https://www.opteon.com/en/products/refrigerants)
+- [Teflon PFA 951HP Plus](https://www.chemours.com/en/-/media/files/teflon/teflon-pfa-951hp-plus-product-info.pdf?rev=162c474b2801489c9ca63f8c1c2bd464)
+- [Chemours APM investor presentation: semiconductor PFA content and domestic position](https://investors.chemours.com/static-files/9e8d3502-f144-484f-bcd5-c86400875372)
+- [Vertrel specialty-fluid products](https://www.chemours.com/en/brands-and-products/vertrel/products) and [Opteon/Vertrel application brochure](https://www.chemours.com/en/-/media/files/vertrel/opteon-vertrel-brochure.pdf?hash=30E4161BA307CF69FFAFAD7C4305AC09&rev=31da09b12a094e36bcda482a8d9ed600)
+- [Opteon 2P50 product information](https://www.opteon.com/en/-/media/files/opteon/opteon-2p50-gic-product-info-sheet-fnl-100523.pdf?rev=1b708201ecd7489b8a9cf86c4de7ffc5)
+- [Carrier 19DV chiller refrigerant-charge specifications](https://brandportal.carrier.com/m/7aed1ae899ea9c0e/original/NA2316A_brochure_aquaedge_19DV_EN_carrier_bat04_bd.pdf)
+- [LiquidStack DataTank 48U official capacity](https://liquidstack.com/liquid-cooling/datatank-48u) and [historical 1,200L tank specification](https://embe.hpc.co.jp/product/immersion-cooling-system/)
+- [Samsung qualifies Opteon two-phase fluid](https://investors.chemours.com/news-releases/news-release-details/samsung-electronics-successfully-qualifies-chemours-opteontm-two)
+- [Chemours–2CRSi JDA](https://www.chemours.com/en/news-media-center/all-news/press-releases/2026/following-successful-fluid-qualification-chemours-2crsi-join-forces-to-accelerate-deployment-of-two)
+- [Chemours–Navin Fluorine manufacturing agreement](https://www.chemours.com/en/news-media-center/all-news/press-releases/2025/chemours-and-navin-fluorine-announce-agreement-to-manufacture-new-liquid-cooling-product)
+- [ORNL/OSTI: Pool boiling heat transfer evaluation of Opteon 2P50](https://www.osti.gov/pages/biblio/2586914)
+- [US EPA HFC restrictions by sector](https://www.epa.gov/hfcs/technology-transitions-hfc-restrictions-sector)
+- [EU Regulation 2026/286 / chiller transition](https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX%3A32026R0286)
+
+### 本项目允许范围内的产业交叉验证
+
+- [行业调研：高纯氟聚合物流体系统](../../行业调研/晶圆制造_设备_材料_测试/行业调研_高纯氟聚合物流体系统_2026-07-11.md)
+- [行业调研：冷却液、水处理、过滤与制冷剂](../../行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-07-10.md)
+
+> 本报告为研究资料，不构成投资建议。公司未披露的产品收入、毛利、backlog、ASP、单位价值量和三情景均为可复核模型；应在后续财报出现实际订单、产能、客户或价格数据时滚动更新。

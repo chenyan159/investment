@@ -1,0 +1,173 @@
+# 公司收入传导与价值传导评估：Parker-Hannifin
+
+报告日期：2026-06-12  
+公司代号：PH  
+公司名称：Parker-Hannifin Corporation  
+主口径：NTM，即从 2026-06-12 往后约 12 个月，近似覆盖 FY2026 Q4 和 FY2027 前三季度。  
+资料边界：公司侧使用 `公司调研/机电_冷却_工程_水处理_边缘工业AI/PH_Parker-Hannifin_公司调研_2026-06-11.md`、Parker-Hannifin FY2026 Q3 press release、FY2026 Q3 10-Q、并购公告和产品页；行业侧使用 `行业调研/AI园区电力_机电_冷却/` 下液冷小组件、冷却液/过滤、水处理、HVAC 相关资料。未读取、引用或继承 `特征量化/`、Signals、排序或回归资料。  
+金额单位：除特别说明外，`B` 为十亿美元，`M` 为百万美元。利润贡献主要使用调整后分部经营利润或 EBITDA 近似，不做估值倍数、目标价或投资评级判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径评估 Parker-Hannifin stand-alone 经营传导，包含已完成的 Curtis Instruments 收购，但不把尚未完成的 Filtration Group 直接并入基准有机收入。Filtration Group 是并购补充口径：若在 NTM 内完成交割，会增加报表收入和过滤 aftermarket 暴露，但它不是 PH 既有行业需求自然转化成收入的证据。
+- 当前收入基准、指引和 run-rate：FY2026 Q3 销售额 `$5.486B`，同比 `+10.6%`，有机 `+6.5%`；FY2026 前三季度销售额 `$15.744B`。公司 2026-04-30 指引 FY2026 全年 reported sales growth 约 `+7%`、organic growth 约 `+5.5%`、调整后分部经营利润率约 `27.2%`、调整 EPS 约 `$31.20`。Q3 年化 run-rate 约 `$21.9B`，FY2026 指引隐含全年收入约 `$21.2-21.3B`。
+- 重要产品/业务线：Aerospace Systems；Diversified Industrial 核心工业业务；AI 数据中心液冷 quick disconnect / blind-mate coupling / hose / tubing / valve / seal / TIM / EMI；数据中心 coolant filtration / fluid management 与燃气轮机空气进气过滤；Curtis 电气化控制；Filtration Group 并购补充。
+- NTM 公司收入四情景：悲观 stand-alone `$20.7-21.6B`；基准 stand-alone `$22.4-23.6B`；乐观 stand-alone `$24.0-25.8B`；极度乐观 reported `$26.0-29.0B`，其中后两档如果包含 Filtration Group，需要明确标注为并购报表口径而非有机需求兑现。
+- 利润或 EBITDA 四情景：悲观调整分部经营利润约 `$5.1-5.6B`；基准 `$6.0-6.6B`；乐观 `$6.8-7.5B`；极度乐观 `$7.6-8.8B`。利润弹性主要来自 Aerospace aftermarket、工业 mix、价格/材料传导、Win Strategy 成本动作和过滤 aftermarket mix，不来自 AI 小部件收入机械放大。
+- 最大传导瓶颈：PH 不是 GPU、CDU 主机或整柜系统商；AI 数据中心需求必须经过客户 AVL、OCP/UQD/ORV 标准、CDU/冷板/rack manifold 厂商设计导入、交付、验收和收入确认，才能进入 PH 收入表。
+- 最大利润率变量：Aerospace aftermarket mix、工业材料成本与价格传导、AI 液冷小部件是否停留在标准件低毛利竞争，Filtration Group 交易后的 85% aftermarket mix 与 `$220M` 成本协同能否兑现。
+- 最大现金流变量：Parker 当前经营现金流强，FY2026 前三季度经营现金流 `$2.628B`、资本开支 `$286M`；但 Filtration Group `$9.25B` 现金收购会显著提高债务和利息成本，可能压缩 NTM 股东回报与去杠杆空间。
+- 可信度：公司层基准为中高；Aerospace 为高；核心工业为中高；AI 液冷小部件为中；coolant/fluid filtration 与燃气过滤为中；Filtration Group 并购补充为中，取决于监管交割和整合。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Aerospace Systems：commercial OEM、commercial aftermarket、defense OEM、defense aftermarket | FY2026 Q3 `$1.814B`，年化约 `$7.3B`；FY2026 前三季度 `$5.161B`；backlog `$8.413B` | Q3 约 `33.1%` | 公司最确定的收入和利润增长池，商业 OEM 与 aftermarket 同时强 | A | 进入基准主口径；按 backlog、订单、交付周期和 aftermarket mix 估算 NTM | 更高 OEM 交付、aftermarket 价格/mix、Meggitt 协同继续释放 |
+| Diversified Industrial 核心工业业务：Motion、Flow Control、Filtration & Engineered Materials 的传统工业、HVAC/R、能源、半导体/电子、off-highway、in-plant | FY2026 Q3 北美 `$2.141B`、国际 `$1.531B`，合计 `$3.672B`，年化约 `$14.7B`；工业 backlog 约 `$4.065B` | Q3 约 `66.9%` | 公司收入底盘；工业周期和价格/材料传导决定利润韧性 | A | 进入基准主口径；AI 相关小部件只作为内部 mix，不重复加总 | 工业复苏、Asia electronics/semiconductor、HVAC/R、能源需求改善 |
+| AI 数据中心液冷连接与流体控制：UQD/UQDB、ORV BMQC、NSP/NSG/CDT、Parflex tubing/hose、valve、fitting | 当前直接年化收入无法披露；公司调研估计直接约 `$0.1-0.3B`，宽口径可到 `$0.2-0.5B` | 约 `0.5%-2%`，无法可靠精确量化 | 高弹性但小基数；决定 PH 能否捕获 AI liquid cooling beta | C/D | 小比例、折扣后进入基准；大部分上修放入乐观/极度乐观；嵌入工业收入，不单独加总 | 多个 hyperscaler/ODM/CDU/rack manifold 平台标准设计导入 |
+| 数据中心 coolant filtration / fluid management / seals / TIM / EMI | 当前收入无法可靠拆分；公司调研估计年化 `$0.05-0.20B` 级别 | 小于 `1%`，无法可靠量化 | 可靠性和耗材复购属性较好，但 PH 直接份额未披露 | C | 极小比例进入基准；若有明确客户或服务合同，进入乐观 | 过滤耗材、在线监测、Cooling-as-a-Service、Filtration Group 交叉销售 |
+| 数据中心燃气轮机空气进气过滤、evaporative cooler、silencer、clearcurrent PRO filters | Texas hyperscale / Stargate Abilene 相关公开合同，29 台 LM2500XPRESS，金额未披露；模型估计项目初始 `$15-70M` | 小于 `1%` | 电力瓶颈下的项目型机会，利润属性好于普通过滤 | B/C | 已有合同存在证据，但金额未披露；小比例进入基准或乐观，不能外推成连续大单 | behind-the-meter gas power 在 AI 数据中心复制 |
+| Curtis electrification controls | 2025-09 完成收购；目标业务 FY2025E 收入约 `$0.32B`；FY2026 Q3 收购贡献约 `$76M` | 约 `1%-2%` | 扩展 off-highway、物料搬运和移动机械电气化控制，不是 AI 主线 | A/B | 进入基准，按完成收购后的正常并表处理 | 工业车辆电气化周期和控制器平台扩展 |
+| Filtration Group 并购补充 | 待交割；目标 CY2025E sales 约 `$2.009B`、调整 EBITDA margin `23.5%`、约 `85%` aftermarket sales | 交割后可增加约 `9%-10%` 报表收入基数 | 增强过滤、HVAC/R、life sciences、industrial aftermarket；同时增加债务与整合风险 | B | 不进入 stand-alone 主基准；作为 NTM 报表补充口径和情景校准因素 | 数据中心 fluid/air filtration、HVAC/R、aftermarket recurring revenue 协同 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不判断 PH 份额、收入确认或利润率。当前需求锚使用公司 FY2026 Q3 订单、backlog、FY2026 指引、行业调研中的 AI rack 液冷小组件订单池、冷却液/过滤服务收入池和航空交付周期。需求强弱均相对各产品自己的当前预期判断。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Aerospace Systems | Q3 订单率 `+14%`，销售 `$1.814B`，backlog `$8.413B`；commercial OEM `+22%`、commercial aftermarket `+14%` | OEM 供应链和客户交付延迟，NTM 需求只支撑 `$7.1-7.6B` 收入池 | backlog 正常转收入，需求池 `$7.8-8.4B` | commercial OEM 与 aftermarket 同步强，需求池 `$8.5-9.2B` | 供应链改善、售后价格/mix 和 defense 同时强，需求池 `$9.3-10.0B` | 相对当前年化 `$7.3B`，约 `-3%` 到 `+38%` | 基准略高于当前 run-rate；乐观以上高于当前预期 | 正向：record backlog、double-digit orders；反证：OEM 交付、质量、供应商瓶颈 |
+| Diversified Industrial 核心工业需求 | Q3 工业收入 `$3.672B`，工业订单率北美 `+7%`、国际 `+6%`，工业 backlog 约 `$4.065B` | 工业 PMI、运输/off-highway 和欧洲需求走弱，需求池 `$13.0-13.8B` | in-plant、energy、HVAC/R、Asia electronics 支撑中个位数，需求池 `$14.2-15.2B` | 工业补库、electronics/semiconductor 和 HVAC/R 同时改善，需求池 `$15.4-16.8B` | 工业复苏与数据中心/能源项目同时拉动，需求池 `$17.0-18.5B` | 相对 Q3 年化 `$14.7B`，约 `-12%` 到 `+26%` | 基准符合当前订单和指引；悲观低于当前订单节奏 | 正向：订单正增长、Curtis 并表、Asia electronics；反证：材料成本、运输/off-highway疲弱 |
+| AI 数据中心液冷连接与流体控制 | 行业调研：严格全球液冷供应商收入 2026E `$4-6B`、2027E `$5.5-8B`；AI 高密 rack 小组件/流体控制订单池 2026E `$8-18B`、2027E `$18-35B` | GB300/Rubin 验收推迟、标准件商品化，需求池增长但低于预期；PH 可参与需求仅小幅增加 | 单相 D2C + rack/row CDU + QD/manifold 正常放量，需求池按 2026-2027 斜率上行 | hyperscaler/colo 提前锁定液冷 rack，小组件订单池上修 | 500kW+ rack、800VDC、MW CDU 和 smart manifold 同时提前，需求非线性上修 | 外部订单池从 `$8-18B` 向 `$18-35B` 演进；PH 可参与不是 PH 收入 | 行业需求乐观，但基准不能等同 PH 收入 | 正向：GB300 fully liquid-cooled、OCP/UQD/ORV、客户锁产能；反证：漏液、认证、客户多供压价 |
+| Coolant filtration / fluid management / seals / TIM / EMI | 行业调研：冷却液、水处理、过滤与制冷剂组合池 2026E `$2.5-5.0B`、2027E `$4.0-8.5B`；D2C coolant 未来 1 年基准 `$0.5-1.0B` | 流体过滤被 EPC 低价打包，运维标准不统一，需求低于服务化预期 | 冲洗/过滤/水质监控成为 rack acceptance 的正常前置条件 | Cooling-as-a-Service、过滤耗材复购和在线监测 attach 加速 | 流体 lifecycle 被 hyperscaler 写入多年服务合同，过滤/监测成为强制标准 | 组合池绝对增长约 `$1.5-3.5B+`；PH 可参与需客户认证 | 基准高于传统过滤，但不等于 PH 份额 | 正向：Vertiv/PurgeRite、Ecolab/CoolIT、OCP 标准；反证：水处理生态分散 |
+| 数据中心燃气轮机空气过滤 | Texas hyperscale 29 台 LM2500XPRESS 公开项目，约 1.015GW 发电容量，PH 供 filtration、cooler、silencer | behind-the-meter gas power 项目审批或燃料约束，需求只保留已知项目 | 已知项目按 2026Q3 后交付节奏确认，小额新增 | 多个 AI 园区复制自备燃气发电，需求成倍增长 | 电网接入瓶颈导致燃气轮机成为主流过渡方案，过滤系统需求非线性上修 | 已知项目模型约 `$15-70M`；复制情景可到数亿美元 | 基准只承认可见项目；乐观需新增项目证据 | 正向：电力接入瓶颈、1GW 项目；反证：许可、燃料、项目制波动 |
+| Curtis electrification controls | 收购目标 FY2025E sales 约 `$0.32B`；应用在物料搬运、越野车辆、特种移动平台 | off-highway/物料搬运电气化放缓，需求 `$0.25-0.32B` | 并表后正常中个位数增长，需求 `$0.34-0.42B` | 工业车辆电气化订单改善，需求 `$0.42-0.55B` | 多平台设计导入，需求 `$0.55-0.75B` | 相对收购基数约 `-20%` 到 `+130%` | 基准符合收购时经营预期；非 AI 主线 | 正向：产品互补；反证：工业车辆周期和客户导入慢 |
+| Filtration Group 并购补充 | 目标 CY2025E sales `$2.009B`、adjusted EBITDA `$473M`、85% aftermarket；预计交易自 2025-11 起 6-12 个月完成 | 监管/交割延迟，NTM 并表收入 `$0-0.5B` | NTM 只并表部分月份，补充收入 `$0.8-1.4B` | 交割较早且需求正常，补充收入 `$1.5-2.2B` | 交割早、协同快、数据中心过滤交叉销售强，补充收入 `$2.2-2.8B` | 相对 PH stand-alone 增加 `0%-13%` 报表收入 | 这是并购报表补充，不是当前 PH 产品需求 | 正向：正式协议、aftermarket mix；反证：监管、债务、整合 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些外部需求能进入 PH 的 NTM 收入表，以及当前可收入化基数是多少，不预测增长、不判断利润率。A/B 级证据可作为基准主口径；C 级证据只有客户、产品和时间表较清楚时小比例折扣纳入；D/E 级不进入基准 NTM 收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Aerospace Systems | FY2026 Q3 sales `$1.814B`、FY2026 前三季度 `$5.161B`、backlog `$8.413B` | 直接 | 高利润、aftermarket 粘性强，调整 margin 接近 `30%` | `$7.1-7.6B` | `$7.8-8.4B` | `$8.5-9.2B` | `$9.3-10.0B` | 基准高于当前 Q3 年化但符合 backlog 和订单；悲观低于订单路径 | A | 是 | 分部收入、backlog、订单率、commercial OEM/aftermarket 增长 | NTM 公司基准最重要收入和利润池 |
+| Diversified Industrial 核心工业业务 | FY2026 Q3 NA `$2.141B`、International `$1.531B`；工业 backlog 约 `$4.065B` | 直接 | 工业 mix、价格/材料传导和成本动作决定 margin；调整 margin 约 `25%+` | `$13.0-13.8B` | `$14.2-15.2B` | `$15.4-16.8B` | `$17.0-18.5B` | 基准符合当前订单、FY2026 指引和中个位数工业增长；悲观低于当前订单 | A | 是 | 分部收入、订单率、backlog、10-Q 终端市场评论 | NTM 主收入池；AI 小部件嵌入其中，不重复加总 |
+| AI 数据中心液冷连接与流体控制 | 公司未披露 data center/liquid cooling 收入；产品页、OCP/UQD、公司调研估计当前直接年化约 `$0.1-0.3B`，宽口径 `$0.2-0.5B` | 直接但嵌入工业 | 高可靠小部件，毛利可能高于普通机械件；标准化会压价 | `$0.10-0.25B` | `$0.25-0.60B` | `$0.60-1.20B` | `$1.20-2.50B` | 基准为低比例折扣纳入；乐观以上高于当前披露可见度 | C/D | 是，小比例 | Parker 产品页、OCP/Intel UQD 生态、行业需求池；无公司收入披露 | 进入基准但只作为工业 mix，不在公司汇总中另加 |
+| Coolant filtration / fluid management / seals / TIM / EMI | 未披露；公司调研估计年化约 `$0.05-0.20B`，Filtration Group 完成后上限提高 | 直接/间接 | 过滤耗材和监测服务有 recurring 属性；初期客户认证限制收入 | `$0.05-0.15B` | `$0.15-0.45B` | `$0.45-1.00B` | `$1.00-2.00B` | 基准略高于当前估计但低于行业叙事；极度乐观只是上限 | C | 是，小比例 | 行业调研、产品能力、过滤平台；无 PH 细分收入/backlog | 进入基准但折扣；若无合同披露，不把行业组合池当 PH 收入 |
+| 数据中心燃气轮机空气过滤 | 公开信息显示 PH 为 Texas hyperscale 29 台 LM2500XPRESS 项目供 air intake filtration/cooler/silencer；金额未披露 | 直接 | 项目毛利中高；aftermarket 滤芯复购有质量 | `$0.02-0.08B` | `$0.08-0.25B` | `$0.25-0.60B` | `$0.60-1.20B` | 基准只承认可见项目和少量复制；乐观需新增订单 | B/C | 是，小比例 | 公开项目、交付时间线、产品范围；金额为模型估计 | 小额进入 NTM，不能按 1GW 项目简单年化 |
+| Curtis electrification controls | 2025-09 已收购；10-Q 披露 Q3 Curtis 对 NA/International sales 合计约 `$76M` 贡献 | 直接 | 工业控制器，margin 取决于并购整合和电气化需求 | `$0.25-0.32B` | `$0.34-0.42B` | `$0.42-0.55B` | `$0.55-0.75B` | 基准符合完成收购后的并表 run-rate | A/B | 是 | 完成收购、10-Q 披露并购贡献 | 进入 NTM stand-alone 主口径 |
+| Filtration Group 并购补充 | 待交割；目标 CY2025E net sales `$2.009B`、adjusted EBITDA `$473M`，交易价 `$9.25B` | 直接，但未交割 | 85% aftermarket，利润和现金流质量较好；债务和整合成本压制短期现金流 | `$0-0.5B` | `$0.8-1.4B` | `$1.5-2.2B` | `$2.2-2.8B` | 基准只作为报表补充；不是 PH stand-alone 有机基准 | B | 否，主基准不纳入；补充口径纳入 | 正式并购协议、目标收入/EBITDA、预计交割窗口 | 附注和公司情景中单独标注，避免和有机增长混同 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第 3 节需求和第 4 节收入基数出发，判断每个重要产品/业务线 NTM 能给 PH 贡献的收入和利润。标有“嵌入工业”的行用于解释情景切换，不在第 6 节公司汇总中与 Diversified Industrial 重复相加。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Aerospace Systems | 悲观产品 | `$7.1-7.6B` | `$1.8-2.1B` | margin 回到 `25%-28%` | 低于当前 backlog 和订单隐含路径 | 只承认可见 backlog 的慢速转收入 | 保留为下行情景 | OEM 供应链、质量、交付延迟 |
+| Aerospace Systems | 基准产品 | `$7.8-8.4B` | `$2.3-2.6B` | adjusted margin `29%-31%` | 符合当前预期 | Q3 sales `$1.814B`、orders `+14%`、backlog `$8.413B` | 保留 | 航空强但不应无限外推，aftermarket mix 需持续 |
+| Aerospace Systems | 乐观产品 | `$8.5-9.2B` | `$2.6-2.9B` | aftermarket mix 上行 | 高于当前预期 | commercial OEM `+22%`、aftermarket `+14%` 继续 | 保留但需订单延续 | OEM 产能和供应商瓶颈 |
+| Aerospace Systems | 极度乐观产品 | `$9.3-10.0B` | `$3.0-3.3B` | margin 维持 `31%+` | 显著高于当前预期 | OEM 交付改善、defense 与 aftermarket 同时强 | 下移为上限 | 需要多个航空传导环节同时成立 |
+| Diversified Industrial 核心工业 | 悲观产品 | `$13.0-13.8B` | `$3.0-3.4B` | adjusted margin `23%-25%` | 低于当前订单和 FY2026 指引 | off-highway/transportation 弱、材料成本高 | 保留 | 工业周期、价格/材料错配 |
+| Diversified Industrial 核心工业 | 基准产品 | `$14.2-15.2B` | `$3.6-4.0B` | adjusted margin `25%-27%` | 符合当前预期 | Q3 工业订单 `+6%-7%`、backlog 约 `$4.065B` | 保留 | 工业 backlog 只约 3 个月，可见度低于航空 |
+| Diversified Industrial 核心工业 | 乐观产品 | `$15.4-16.8B` | `$4.0-4.6B` | mix 与成本动作改善 | 高于当前预期 | in-plant、energy、electronics、HVAC/R 需求同步好转 | 保留但中等可信 | 竞争、客户库存、材料和关税 |
+| Diversified Industrial 核心工业 | 极度乐观产品 | `$17.0-18.5B` | `$4.6-5.3B` | margin 接近或高于长期目标下沿 | 明显高于当前预期 | 工业复苏、AI DC 小部件、能源项目同时贡献 | 下移为上限 | 不可把所有终端同时高景气视作基准 |
+| AI 液冷连接与流体控制（嵌入工业） | 悲观产品 | `$0.10-0.25B` | `$0.02-0.08B` | 毛利仍好但规模不足 | 低于主题预期 | 客户导入慢、只做样品/小批量 | 保留 | 无披露 backlog、客户多供 |
+| AI 液冷连接与流体控制（嵌入工业） | 基准产品 | `$0.25-0.60B` | `$0.08-0.22B` | 高于普通工业件 | 略高于当前收入锚，但仍保守 | UQD/UQDB、BMQC、Parflex、OCP/Intel UQD 相关证据 | 保留但只小比例 | C/D 级证据，不得独立拉高公司基准 |
+| AI 液冷连接与流体控制（嵌入工业） | 乐观产品 | `$0.60-1.20B` | `$0.20-0.45B` | 认证件 mix 上行 | 高于当前预期 | 进入 2-3 个大客户/ODM/CDU/rack manifold AVL | 保留为乐观 | 标准化和客户压价 |
+| AI 液冷连接与流体控制（嵌入工业） | 极度乐观产品 | `$1.20-2.50B` | `$0.45-1.00B` | 高利用率、高认证溢价 | 显著高于当前预期 | PH 拿到 fluid path package 地位，多平台批量 | 下移为上限 | 需要客户、份额、产能、良率和验收同时成立 |
+| Coolant filtration / fluid management / seals / TIM / EMI（嵌入工业） | 悲观产品 | `$0.05-0.15B` | `$0.01-0.05B` | 项目毛利中等 | 低于服务化预期 | 过滤/水处理被系统商打包，PH 只拿零星 SKU | 保留 | 客户认证和生态分散 |
+| Coolant filtration / fluid management / seals / TIM / EMI（嵌入工业） | 基准产品 | `$0.15-0.45B` | `$0.05-0.18B` | 过滤耗材和监测支持 | 符合保守可见路径 | 行业把过滤/冲洗/水质监控列为验收前置 | 保留但中等可信 | 无 PH 细分收入披露 |
+| Coolant filtration / fluid management / seals / TIM / EMI（嵌入工业） | 乐观产品 | `$0.45-1.00B` | `$0.15-0.40B` | recurring attach 改善 | 高于当前预期 | 过滤耗材复购、在线监测、客户服务合同 | 保留 | Donaldson/Pall/Ecolab/Xylem/Pentair 等竞争 |
+| Coolant filtration / fluid management / seals / TIM / EMI（嵌入工业） | 极度乐观产品 | `$1.00-2.00B` | `$0.40-0.85B` | 高毛利服务化 | 明显高于当前预期 | Filtration Group 协同、fluid lifecycle 标准化 | 下移为上限 | 并购交割和客户服务权不确定 |
+| 数据中心燃气轮机空气过滤（嵌入工业） | 悲观产品 | `$0.02-0.08B` | `$0.01-0.03B` | 项目毛利正常 | 低于当前主题预期 | 只确认最确定设备交付 | 保留 | 项目制、金额未披露 |
+| 数据中心燃气轮机空气过滤（嵌入工业） | 基准产品 | `$0.08-0.25B` | `$0.03-0.10B` | 初装+少量服务 | 符合可见项目 | 29 台 LM2500XPRESS 相关供货公开 | 保留但不外推 | 新项目复制未验证 |
+| 数据中心燃气轮机空气过滤（嵌入工业） | 乐观产品 | `$0.25-0.60B` | `$0.09-0.24B` | 项目规模扩大 | 高于当前预期 | 多个 AI 园区采用燃气过渡电源 | 保留为乐观 | 许可、燃料、政策和电网替代 |
+| 数据中心燃气轮机空气过滤（嵌入工业） | 极度乐观产品 | `$0.60-1.20B` | `$0.20-0.50B` | 高利用率和 aftermarket | 明显高于当前预期 | 多地复制 1GW 级自备发电项目 | 下移为上限 | 单一项目不能代表持续 run-rate |
+| Curtis electrification controls | 悲观产品 | `$0.25-0.32B` | `$0.04-0.07B` | 并购整合初期稀释 | 低于收购预期 | off-highway/物料搬运周期偏弱 | 保留 | 终端周期 |
+| Curtis electrification controls | 基准产品 | `$0.34-0.42B` | `$0.07-0.11B` | margin 随整合改善 | 符合收购预期 | Q3 并购贡献约 `$76M`，产品互补 | 保留 | 客户导入速度 |
+| Curtis electrification controls | 乐观产品 | `$0.42-0.55B` | `$0.10-0.16B` | 协同和规模改善 | 高于当前预期 | 电气化控制平台拓展 | 保留 | 与 AI 弱相关，不能给 AI 溢价 |
+| Curtis electrification controls | 极度乐观产品 | `$0.55-0.75B` | `$0.16-0.25B` | 规模效应明显 | 明显高于当前预期 | 多平台 design win | 下移为上限 | 工业车辆电气化不会线性放量 |
+| Filtration Group 并购补充 | 悲观产品 | `$0-0.5B` | `$0-0.10B` | 交易费用和利息压制 | 低于并购预期 | 交割延迟或条件限制 | 保留为附注 | 未交割 |
+| Filtration Group 并购补充 | 基准产品 | `$0.8-1.4B` | EBITDA `$0.18-0.35B` | aftermarket mix 支撑 | 符合部分并表路径 | 目标 sales `$2.009B`、adj EBITDA margin `23.5%` | 移入补充口径 | 不进入 stand-alone 主基准 |
+| Filtration Group 并购补充 | 乐观产品 | `$1.5-2.2B` | EBITDA `$0.35-0.55B` | 协同开始体现 | 高于基准并购预期 | 交割早、客户渠道协同 | 保留为报表乐观补充 | 债务和整合成本 |
+| Filtration Group 并购补充 | 极度乐观产品 | `$2.2-2.8B` | EBITDA `$0.55-0.85B` | synergized margin 上行 | 明显高于当前预期 | 年三协同提前部分释放，数据中心过滤交叉销售 | 下移为上限 | 监管、整合和 ROIC 需验证 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为 PH NTM 总收入、毛利率、调整分部经营利润率、EBITDA/净利润和自由现金流方向。汇总时只把 Aerospace Systems、Diversified Industrial 和已完成 Curtis 并表作为 stand-alone 主口径相加；AI 液冷、coolant filtration、燃气过滤已经嵌入 Diversified Industrial，不重复加总。Filtration Group 作为并购补充在收入单元格中单独注明。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观 | stand-alone `$20.7-21.6B`；Filtration Group 不并表或只小额并表 | 相对 Q3 FY2026 TTM `$20.99B` 为 `-1%` 至 `+3%` | 低于 FY2026 指引、Q3 run-rate 和当前订单/backlog；成长业务不足以抵消工业周期、价格/材料和交付拖累 | `36.5%-37.8%` | 调整分部经营利润率 `24.5%-25.8%` | 调整分部经营利润 `$5.1-5.6B`；净利润约 `$3.1-3.5B` | 仍为正，但库存、应收、并购费用和债务成本使 FCF 转化低于基准 | 中 | 工业订单转弱、Aerospace 交付慢、材料成本、Filtration Group 延迟或融资压力 |
+| 基准 | stand-alone `$22.4-23.6B`；若 Filtration Group 在 NTM 内部分并表，报表口径额外约 `$0.8-1.4B`，但单列 | stand-alone 相对 TTM `+7%-12%` | 符合 FY2026 上调指引、Q3 run-rate、订单和 backlog 正常兑现；AI/DC 只小比例改善 mix | `38.0%-39.2%` | 调整分部经营利润率 `26.8%-27.8%` | 调整分部经营利润 `$6.0-6.6B`；净利润约 `$3.7-4.2B` | 强，经营现金流继续高于资本开支；并购交割会把现金流优先用于去杠杆 | 中高 | Aerospace backlog 按期转收入，工业保持中个位数，AI 小部件不拖累 mix，Filtration Group 交割不扰乱现金流 |
+| 乐观 | stand-alone `$24.0-25.8B`；报表口径若含较早并表可到 `$25.5-27.5B` | stand-alone 相对 TTM `+14%-23%` | 高于当前预期；Aerospace 高双位数、工业复苏、AI liquid cooling/DC filtration 有明确客户导入，且不是单一小基数项目造成 | `39.0%-40.5%` | 调整分部经营利润率 `27.8%-28.8%` | 调整分部经营利润 `$6.8-7.5B`；净利润约 `$4.2-4.9B` | FCF 强，但高增长项目和并购整合占用营运资本；若并购完成，去杠杆优先 | 中 | 需要订单继续高于销售、aftermarket mix 上行、工业价格/成本匹配、AI/DC 项目验收 |
+| 极度乐观 | reported `$26.0-29.0B`，其中 stand-alone 约 `$25.0-26.5B`，其余主要来自 Filtration Group 较早并表和协同 | reported 相对 TTM `+24%-38%`；stand-alone `+19%-26%` | 显著高于当前预期；必须是 Aerospace、工业、AI/DC 小部件、过滤 aftermarket、并购交割和执行质量同时突破 | `40.0%-41.5%` | 调整分部经营利润率 `28.5%-30.0%` | 调整分部经营利润 `$7.6-8.8B`；净利润约 `$4.8-5.7B` | 经营 FCF 很强，但收购债务和整合支出使股东可分配现金不一定同步改善 | 低到中 | 极度乐观不能只靠 Filtration Group 并表或 AI 叙事；需要客户认证、供给、价格、成本和并购整合全部成立 |
+
+汇总校验：
+
+- 不重复加总：AI 液冷、coolant filtration、燃气过滤均在 Diversified Industrial 内部，只用于解释 mix 和弹性。
+- 一次性因素：Curtis 已完成并购，可进入 stand-alone；Filtration Group 未完成交割，只列并购补充。
+- 低毛利 pass-through：数据中心项目若只是标准管路/过滤或项目制初装，收入上修不能自动推高利润率。
+- 公司经营质量判断：最可能情景仍由 Aerospace 与核心工业决定；AI/DC 相关产品能提高弹性，但目前披露不足以成为 NTM 公司基准主引擎。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在实际影响层级处理一次，不把同一个不确定性重复压低公司结论。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q3 sales `$5.486B`、organic growth `+6.5%`、orders `+9%`、record backlog `$12.5B` | 公司收入、执行可信度 | 支持基准和乐观收入；反驳整体悲观作为主情景 | 订单高于销售支持利用率，但不保证 mix | backlog 转收入需要交付和验收 | 基准保留；悲观保留为下行情景 |
+| Aerospace backlog `$8.413B`、Q3 organic growth `+14.2%`、commercial OEM/aftermarket 双位数增长 | 产品贡献、公司利润 | 提高 Aerospace 基准收入可见度 | aftermarket 和规模效应支持 margin | 航空 backlog 12-18 个月，现金转化较高 | Aerospace 基准保留，乐观保留 |
+| 工业 backlog 约 `$4.065B`、订单率北美 `+7%`、国际 `+6%` | 收入基数、产品贡献 | 支持工业中个位数基准增长 | 价格/材料和 mix 仍需验证 | 工业可见度约 3 个月，低于航空 | 工业基准保留，极度乐观下移为上限 |
+| AI 液冷产品线真实存在：UQD/UQDB、BMQC、NSP/NSG/CDT、Parflex 等；OCP/UQD/ORV 相关生态 | 收入基数、乐观弹性 | 支持小比例 NTM 基准和乐观上修 | 认证件毛利可能高于普通件 | 需要客户 AVL、交期、质量和验收 | 小比例进入基准；大额上修保留为乐观/上限 |
+| PH 未披露 data center/liquid cooling revenue 或 backlog | 收入基数、可信度 | 限制 AI/DC 收入进入基准的规模 | 限制把 AI 高毛利假设直接用于公司 margin | 不确定订单是否已转为确认收入 | 下移大额 AI 基准；C/D 证据不得上移 |
+| 行业液冷/过滤需求强，但订单池与供应商收入口径差异大 | 需求层级 | 支持需求池乐观，不支持公司收入机械相加 | 若标准件商品化，毛利可能回落 | 行业订单到公司收入需要客户、份额、交付 | 保留行业需求，收入化折扣 |
+| Texas hyperscale 燃气轮机过滤项目 | 收入基数、产品贡献 | 支持数据中心电力过滤已进入真实项目 | 初装项目利润中高，aftermarket 有复购 | 项目制强，金额和交付节奏未披露 | 基准小额保留，乐观需新增项目 |
+| Curtis 已完成，Filtration Group 未完成 | 公司组合、现金流 | Curtis 进入基准；Filtration Group 只进补充口径 | Filtration Group 85% aftermarket 和 23.5% adjusted EBITDA margin 正向 | `$9.25B` 现金收购和新债压制 FCF 可分配性 | Curtis 保留；Filtration Group 移入补充口径 |
+| Filtration Group `$220M` 成本协同目标 | 利润率、执行可信度 | 不直接提高 stand-alone organic revenue | 若兑现，支持并购报表 margin | 需三年执行，NTM 不能全额确认 | 仅作跟踪，NTM 不全额上移 |
+| 材料成本、关税、工业周期和客户多供压价 | 利润率和产品贡献 | 限制工业与 AI 小组件乐观收入 | 压低标准件 margin | 增加库存和营运资本风险 | 在工业/AI 产品层处理一次，不重复惩罚 Aerospace |
+| 市场估值或股价 | 不适用 | 不作为经营收入证据 | 不作为利润率证据 | 不作为现金流证据 | 排除 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 工业需求走弱、AI/DC 不能收入化、Aerospace 交付慢，stand-alone 收入 `$20.7-21.6B` | 公司订单仍 `+9%`、Aerospace backlog 高、FY2026 指引已上调 | 工业 backlog 短、材料成本、Filtration Group 交割/债务不确定 | 保留 | 下行情景，不是主情景 | 中 | AI 液冷不披露只限制 AI/DC 小部件，不重复压低 Aerospace |
+| 基准 | FY2026 指引和 Q3 run-rate 正常延续，stand-alone `$22.4-23.6B` | Q3 record sales、orders、backlog、Aerospace 交付周期、Curtis 已并表 | AI/DC 大额收入证据不足；Filtration Group 未交割 | 保留 | 最可能情景 | 中高 | Filtration Group 未交割只影响并购补充，不重复压低 stand-alone |
+| 乐观 | Aerospace、工业和 AI/DC 小部件均高于当前预期，stand-alone `$24.0-25.8B` | 航空双位数、工业订单正增长、液冷行业订单强、产品线真实 | AI/DC 客户和收入未量化；工业需求可能反复 | 保留 | 有证据的上行情景 | 中 | 行业需求强只上移 AI/DC 产品层，不能把全部行业 beta 变公司 alpha |
+| 极度乐观 | 多条传导同时突破，reported `$26.0-29.0B` | Filtration Group 若早交割、Aerospace 强、工业复苏、AI 液冷多客户导入 | 任一核心环节缺证据都会降级；并购不是有机增长 | 下移 | 极度乐观上限，不作主判断 | 低到中 | 单一并购或单一 AI 项目不能重复推高收入和利润 |
+
+## 8. 结论
+
+- 最可能情景：基准情景。PH NTM stand-alone 收入最可能在 `$22.4-23.6B`，相对 Q3 FY2026 TTM `$20.99B` 增长约 `+7%-12%`；调整分部经营利润约 `$6.0-6.6B`，调整分部经营利润率约 `26.8%-27.8%`。这主要来自 Aerospace backlog 正常转收入、工业中个位数增长、Curtis 正常并表和 Win Strategy 成本/价格传导。
+- 利润/现金流结论：利润质量高于普通工业公司，核心来自 Aerospace aftermarket、工业高质量部件和过滤/服务 mix。FY2026 前三季度经营现金流 `$2.628B`、资本开支 `$286M` 显示现金转化强；但若 Filtration Group 交割，NTM 现金流优先级会转向债务融资、整合和去杠杆。
+- 主要传导瓶颈：AI 数据中心不是 PH 当前收入主线。PH 有 UQD/BMQC、Parflex、seals、filtration、gas turbine filtration 等真实产品，但公司没有披露 AI data center revenue/backlog。行业需求必须先变成客户 AVL、可交付订单、验收和收入确认，才会进入 PH NTM 收入。
+- 乐观情景成立条件：Aerospace orders 继续双位数，commercial aftermarket 不降速；工业订单率保持高于销售；AI 液冷客户明确导入 PH QD/hose/seal/filter；Texas 燃气过滤项目或类似数据中心电力项目复制；价格/材料传导不侵蚀 margin。
+- 极度乐观情景成立条件：PH 在多个 hyperscaler/ODM/CDU/rack manifold 平台取得成套 fluid path 供应地位；Filtration Group 在 NTM 内较早交割且协同开始释放；Aerospace 供应链改善，工业终端同步复苏；调整分部 margin 接近长期目标 `28%-30%`。
+- 悲观情景触发条件：工业订单转负、transport/off-highway 拖累扩大、Aerospace 交付或质量问题导致 backlog 转收入延迟、AI 液冷出现漏液/堵塞/标准化压价、Filtration Group 监管或融资造成执行扰动。
+- 后续跟踪数据：FY2026 Q4/FY2027 初始指引；orders 与 book-to-bill；Aerospace backlog 和 aftermarket growth；工业 backlog 是否超过 3 个月；公司是否首次量化 data center / liquid cooling / thermal management revenue；UQD/BMQC/Parflex 是否出现客户或平台认证；Texas gas turbine filtration 是否产生复制订单；Filtration Group 交割日期、融资成本、协同和净杠杆路径。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新完整经营数据截至 FY2026 Q3，即季度止于 2026-03-31，press release 发布于 2026-04-30；本报告生成日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Parker FY2026 Q3 press release：`https://investors.parker.com/news-events/press-releases/detail/506/parker-reports-fiscal-2026-third-quarter-results`
+  - Parker FY2026 Q3 10-Q：`https://investors.parker.com/sec-filings/all-sec-filings/content/0000076334-26-000073/ph-20260331.htm`
+  - Parker presentations page：`https://investors.parker.com/news-events/presentations`
+  - Parker Filtration Group acquisition release：`https://investors.parker.com/news-events/press-releases/detail/496/parker-to-acquire-filtration-group-corporation`
+  - Parker data center liquid cooling product page：`https://www.parker.com/us/en/additional-information/data-center-cooling.html`
+  - Parker liquid cooling quick disconnects：`https://www.parker.com/us/en/divisions/quick-coupling-division/industries/liquid-cooling-for-data-servers.html`
+  - OCP Parker UQDB page：`https://www.opencompute.org/ai-marketplace/products/662/parker-universal-quick-disconnect-blindmate-couplings-for-liquid-cooling`
+  - Parker gas turbine / hyperscale data center project secondary report：`https://www.automation.com/article/parker-hannifin-powering-up-data-center-mega-development`
+- 项目内公司和行业资料：
+  - `公司调研/机电_冷却_工程_水处理_边缘工业AI/PH_Parker-Hannifin_公司调研_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 是公司正式指引口径，作为当前预期锚，不替代 NTM 主表。
+  - Filtration Group 属于 NTM 报表补充口径，不进入 PH stand-alone 有机基准。
+  - AI 数据中心液冷、fluid filtration 和 gas turbine filtration 的大额上修均为乐观或极度乐观上限，必须等待客户、合同、交付时间表、收入披露或订单/backlog 证据验证。
+- 主要排除项：
+  - 未使用 `特征量化/`、Signals、结构化评分、回归验证、模型比较或排序结论。
+  - 未使用金融市场价格、估值倍数、目标价或投资评级作为经营价值传导证据。

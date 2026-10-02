@@ -1,0 +1,255 @@
+{
+  "GOOGL": {
+    "new": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\GOOGL_Alphabet_Inc_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "chars": 38115,
+      "bytes": 79198,
+      "sha256": "0101399fd9f93f8fc570c26fb90cca7ba0a7ca9638f7fd85db1145b0671d804b",
+      "lines": 528
+    },
+    "previous": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\备份\\GOOGL_2026-09-07T01_09_07-07_00-dc984f1f20\\GOOGL_Alphabet_Inc_公司调研_2026-09-06.md",
+      "date": "2026-09-06",
+      "chars": 31118,
+      "bytes": 67079,
+      "sha256": "f5b192058696c9ed9bf7f1dc5dd219b92ab68df9b31b8418cdc734d792cfacac",
+      "lines": 453
+    },
+    "july": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\备份\\GOOGL_2026-07-18T13_43_43-07_00-598337b3fb\\GOOGL_Alphabet_Inc_公司调研_2026-07-12.md",
+      "date": "2026-07-12",
+      "chars": 39971,
+      "bytes": 69935,
+      "sha256": "aba989933cbc7a0c5245b567b5e4d1e47f47e41b797315f4bbb1ce0745c186f5",
+      "lines": 462
+    }
+  },
+  "SNDK": {
+    "previous": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\备份\\SNDK_2026-09-07T01_09_07-07_00-dc984f1f20\\SNDK_SanDisk_公司调研_2026-09-06.md",
+      "date": "2026-09-06",
+      "chars": 33141,
+      "bytes": 65421,
+      "sha256": "1d7e846531a55ce02ded02d882daeb723fab7caec3ea6f6a58b372ced7deaade",
+      "lines": 508
+    },
+    "july": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\备份\\SNDK_2026-09-06T04_06_41-07_00-deec3f1d0d\\SNDK_SanDisk_公司调研_2026-07-11.md",
+      "date": "2026-07-11",
+      "chars": 42113,
+      "bytes": 66993,
+      "sha256": "321ba7e9877ec8ad7a64851f6a5b9375c3b472bf630ad199caaad8a8668dda83",
+      "lines": 590
+    },
+    "new": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\SNDK_SanDisk_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "chars": 35353,
+      "bytes": 74227,
+      "sha256": "3f93845ec19d211a2da508139470f1cf80145a7f13cf1a574df12e44e0745b2e",
+      "lines": 519
+    }
+  },
+  "MU": {
+    "new": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\MU_Micron_Technology_美光科技_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "chars": 36333,
+      "bytes": 75947,
+      "sha256": "e24b6c3135ed1b467c1bbfab33248ce3137f22e572fc32f53764bb4be0091864",
+      "lines": 560
+    },
+    "previous": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\备份\\MU_2026-09-07T01_09_08-07_00-2649851d4f\\MU_Micron_Technology_美光科技_公司调研_2026-09-06.md",
+      "date": "2026-09-06",
+      "chars": 31302,
+      "bytes": 63814,
+      "sha256": "dc60981fb5c5363ff0773563f6afba6235edeb46f6a324b4f50ebd11defccfad",
+      "lines": 455
+    },
+    "july": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\备份\\MU_2026-08-19T11_05_27-07_00-bb5d89fa56\\MU_Micron_Technology_美光科技_公司调研_2026-07-11.md",
+      "date": "2026-07-11",
+      "chars": 44623,
+      "bytes": 73451,
+      "sha256": "40d05af705570037d4c536e59a4da1f06f8ba7626456e6359388e530d98fb54e",
+      "lines": 517
+    }
+  },
+  "CRWV": {
+    "previous": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\备份\\CRWV_2026-09-07T01_09_10-07_00-f838ba154d\\CRWV_CoreWeave_公司调研_2026-09-06.md",
+      "date": "2026-09-06",
+      "chars": 28497,
+      "bytes": 59530,
+      "sha256": "44f25d93365bf2bcd29a6d9cae8a573b54a30b3882a4635059d97b7bb894c850",
+      "lines": 460
+    },
+    "july": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\备份\\CRWV_2026-08-19T11_05_36-07_00-8b4801c26e\\CRWV_CoreWeave_公司调研_2026-07-12.md",
+      "date": "2026-07-12",
+      "chars": 41156,
+      "bytes": 65294,
+      "sha256": "e5bad03a3a46bd2f452f3469cd11fe23b26f241ab71b42f9b107bab46a2221c4",
+      "lines": 511
+    },
+    "in_progress_snapshot": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\CRWV_CoreWeave_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "chars": 12732,
+      "bytes": 28276,
+      "sha256": "f33bdd76be78704a34c78337cb92aac97957a7ba755c57610215c405a032374e",
+      "lines": 189,
+      "note": "Captured during running; not a completed report; excluded from comparison."
+    },
+    "new": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\CRWV_CoreWeave_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "chars": 39355,
+      "bytes": 83145,
+      "sha256": "1ab8def3f4f78abb95ae4af2529f780228ac22d43b115b39406234d9300955bb",
+      "lines": 604
+    }
+  },
+  "SMCI": {
+    "new": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "chars": 36400,
+      "bytes": 78917,
+      "sha256": "954454733bd9f55f349767031996e175b241491a084ba7a0af8b0d0b10fa955b",
+      "lines": 535
+    },
+    "previous": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\备份\\SMCI_2026-09-07T01_09_11-07_00-13b6a345f7\\SMCI_Super_Micro_Computer_Inc_公司调研_2026-09-06.md",
+      "date": "2026-09-06",
+      "chars": 33684,
+      "bytes": 69027,
+      "sha256": "93787d55b1fde8f7dbc3c44aaaa15387d43538159e2045a57ab8205c1d7b1652",
+      "lines": 469
+    },
+    "july": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\备份\\SMCI_2026-09-06T04_06_44-07_00-148b9fd22f\\SMCI_Super Micro Computer Inc_公司调研_2026-07-11.md",
+      "date": "2026-07-11",
+      "chars": 37839,
+      "bytes": 64995,
+      "sha256": "fb7e16e42833f753e7c7899fb3aa1461b5acde47aa171b04c51187e540c3f822",
+      "lines": 521
+    }
+  },
+  "GNRC": {
+    "new": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\GNRC_Generac_Holdings_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "chars": 34017,
+      "bytes": 71723,
+      "sha256": "91d3a709bf0d7678339b1f8d6104a38aa785c7f11700462eced1a024eb10a0bb",
+      "lines": 560
+    },
+    "previous": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\备份\\GNRC_2026-09-07T01_09_11-07_00-13b6a345f7\\GNRC_Generac_Holdings_公司调研_2026-09-06.md",
+      "date": "2026-09-06",
+      "chars": 26808,
+      "bytes": 55602,
+      "sha256": "034d44dc40a3b99fa31b7b6e4cdbd346d8d6f2eb0032c45909d65d45ccabae05",
+      "lines": 393
+    },
+    "july": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\备份\\GNRC_2026-07-31T12_33_55-07_00-ffdeecc0e7\\GNRC_Generac_Holdings_公司调研_2026-07-11.md",
+      "date": "2026-07-11",
+      "chars": 35766,
+      "bytes": 62320,
+      "sha256": "bd09072088a52e85c01ae23b47d9e1bc85c9451e60a69883a9d23f86c8901601",
+      "lines": 392
+    }
+  },
+  "AVGO": {
+    "new": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\AVGO_Broadcom_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "chars": 48805,
+      "bytes": 91264,
+      "sha256": "1be2049a473aa300272a2326d78f5dd96554858065ec5e9e163e79c36f10f658",
+      "lines": 542
+    },
+    "previous": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\备份\\AVGO_2026-09-07T01_09_13-07_00-4f31e95ef3\\AVGO_Broadcom_公司调研_2026-09-06.md",
+      "date": "2026-09-06",
+      "chars": 30580,
+      "bytes": 63222,
+      "sha256": "408269faaae31b1b494bf35c5e4ab3c756a42c176f4ece044b51ba9e6acf08ef",
+      "lines": 458
+    },
+    "july": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\备份\\AVGO_2026-07-18T14_31_21-07_00-d6d52f4db8\\AVGO_Broadcom_公司调研_2026-07-11.md",
+      "date": "2026-07-11",
+      "chars": 48311,
+      "bytes": 77533,
+      "sha256": "dc12e912b41948766744490ec3bdd98d63ec85ff491cd500de4944fb5ed2e034",
+      "lines": 762
+    }
+  },
+  "CRDO": {
+    "new": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\CRDO_Credo_Technology_Group_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "chars": 41122,
+      "bytes": 79250,
+      "sha256": "ec6d808359b6391d1293167c38922eb8baec6b29e5813b120b7d80ef287ae635",
+      "lines": 525
+    },
+    "previous": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\备份\\CRDO_2026-09-07T01_09_14-07_00-33e55a55e3\\CRDO_Credo_Technology_Group_公司调研_2026-09-06.md",
+      "date": "2026-09-06",
+      "chars": 31573,
+      "bytes": 65308,
+      "sha256": "7d4cf9232daad141277be2cf510e8e813dd967d16ebbbc7e4120871087f50327",
+      "lines": 467
+    },
+    "july": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\备份\\CRDO_2026-08-19T11_05_29-07_00-d99976431e\\CRDO_Credo_Technology_Group_公司调研_2026-07-11.md",
+      "date": "2026-07-11",
+      "chars": 51957,
+      "bytes": 85405,
+      "sha256": "a36a96c26c848c76606462736dc774ea07eb03849dda33e5e0861eca623f821d",
+      "lines": 825
+    }
+  },
+  "LWLG": {
+    "new": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\LWLG_Lightwave_Logic_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "chars": 32209,
+      "bytes": 71945,
+      "sha256": "2c20e315006f77b662e6e7b3711531f08caa0081febb750305571fd3abf3b430",
+      "lines": 456
+    },
+    "previous": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\备份\\LWLG_2026-09-07T01_09_15-07_00-46c4c2ad57\\LWLG_Lightwave_Logic_公司调研_2026-07-11.md",
+      "date": "2026-07-11",
+      "chars": 35246,
+      "bytes": 59280,
+      "sha256": "2c02dec4b8728fedee19fe7acbb94ba616b995068c0c8a05e1c01be1bcb293a9",
+      "lines": 658
+    },
+    "july": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\备份\\LWLG_2026-09-07T01_09_15-07_00-46c4c2ad57\\LWLG_Lightwave_Logic_公司调研_2026-07-11.md",
+      "date": "2026-07-11",
+      "chars": 35246,
+      "bytes": 59280,
+      "sha256": "2c02dec4b8728fedee19fe7acbb94ba616b995068c0c8a05e1c01be1bcb293a9",
+      "lines": 658
+    }
+  },
+  "SPACEX": {
+    "new": {
+      "path": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\SPACEX_SpaceX_公司调研_2026-09-07.md",
+      "date": "2026-09-07",
+      "chars": 34526,
+      "bytes": 75579,
+      "sha256": "c2cfbbb567e6133ddee77bed6a92e4638ade6ad4e36dd6341f731299378d4814",
+      "lines": 503
+    }
+  }
+}

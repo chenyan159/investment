@@ -1,0 +1,112 @@
+{
+  "validated_at": "2026-09-05T12:14:32.000382-07:00",
+  "documents": 11,
+  "markdown_links_checked": 596,
+  "invalid_links": 4,
+  "source_hash_checks": 1169,
+  "unique_source_paths": 1141,
+  "source_mismatches": 8,
+  "scope": "Checks source snapshots and local citations; not all external facts, not runtime/new strategy validation. Only audit artifacts written.",
+  "errors": [
+    {
+      "type": "source_changed",
+      "source": "queue_snapshot_meta.json",
+      "path": "D:/drive/Investment/tools/queue.jsonl",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "5a910f05f02f48f52af61a57f594f5ffcca45c30b2f6788b9007e5cf72377a28",
+      "match": false
+    },
+    {
+      "type": "source_changed",
+      "source": "queue_snapshot_meta.json",
+      "path": "D:/drive/Investment/tools/queue.done.jsonl",
+      "expected_sha256": "110a670dad0873c985d6414413b48524f7e8b9db91192406606351a461ffc18e",
+      "current_sha256": "9ad4687de4131b04642dd6bd000f4133b0be97e34eaf8740e1d1ae4206349b0e",
+      "match": false
+    },
+    {
+      "type": "source_changed",
+      "source": "company_industry_inventory.csv",
+      "path": "D:/drive/Investment/基本面/公司调研/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-08-19.md",
+      "expected_sha256": "ae58d3e547405c1c194c2a98e80a09eb04e650c58cddd2535bdfc1eab355b04f",
+      "current_sha256": "",
+      "match": false
+    },
+    {
+      "type": "source_changed",
+      "source": "company_industry_inventory.csv",
+      "path": "D:/drive/Investment/基本面/公司调研/云算力_IDC_AI软件平台/CRWV_CoreWeave_公司调研_2026-08-19.md",
+      "expected_sha256": "f2113dc47ea682e3ea688ade7efb644e78b881ba5cdf6a9b743b91e00e3e470f",
+      "current_sha256": "",
+      "match": false
+    },
+    {
+      "type": "source_changed",
+      "source": "company_industry_inventory.csv",
+      "path": "D:/drive/Investment/基本面/公司调研/云算力_IDC_AI软件平台/GOOGL_Alphabet_Inc_公司调研_2026-07-18.md",
+      "expected_sha256": "0cac46b15dda9c11149cde8c1b8ffc0bfca5247211eb5d60baf99c58c696b45b",
+      "current_sha256": "",
+      "match": false
+    },
+    {
+      "type": "source_changed",
+      "source": "company_industry_inventory.csv",
+      "path": "D:/drive/Investment/基本面/行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI_ASIC_2026-08-18.md",
+      "expected_sha256": "728f0278ffe27aed7b3dd422fda6bd95872b67ba980ed24e669d21daed2ee3be",
+      "current_sha256": "",
+      "match": false
+    },
+    {
+      "type": "source_changed",
+      "source": "company_industry_inventory.csv",
+      "path": "D:/drive/Investment/基本面/行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-08-18.md",
+      "expected_sha256": "9b782c2a4967ff6236ea67a862157933e082dd8e049111e2c87e73060d829223",
+      "current_sha256": "",
+      "match": false
+    },
+    {
+      "type": "source_changed",
+      "source": "company_industry_inventory.csv",
+      "path": "D:/drive/Investment/基本面/行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-08-18.md",
+      "expected_sha256": "ee58012bd63d2f7b92b8a261e903793cedc2de99bae775e0b49c26356a285f4e",
+      "current_sha256": "",
+      "match": false
+    },
+    {
+      "type": "link",
+      "document": "evidence/公司与产业流程审计.md",
+      "document_line": 45,
+      "target": "D:/drive/Investment/基本面/公司调研/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-08-19.md",
+      "target_line": 13,
+      "valid": false,
+      "reason": "target missing"
+    },
+    {
+      "type": "link",
+      "document": "evidence/公司与产业流程审计.md",
+      "document_line": 52,
+      "target": "D:/drive/Investment/基本面/公司调研/AI服务器_存储_EMS/MU_Micron_Technology_美光科技_公司调研_2026-08-19.md",
+      "target_line": 302,
+      "valid": false,
+      "reason": "target missing"
+    },
+    {
+      "type": "link",
+      "document": "evidence/公司与产业流程审计.md",
+      "document_line": 78,
+      "target": "D:/drive/Investment/基本面/行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-08-18.md",
+      "target_line": 41,
+      "valid": false,
+      "reason": "target missing"
+    },
+    {
+      "type": "link",
+      "document": "evidence/情景与对比流程审计.md",
+      "document_line": 30,
+      "target": "D:/drive/Investment/分析报告/公司评估_淘汰/研究方案_淘汰.md",
+      "target_line": 3,
+      "valid": false,
+      "reason": "target missing"
+    }
+  ]
+}

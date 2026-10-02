@@ -1,0 +1,161 @@
+# 公司收入传导与价值传导评估：Infineon Technologies AG 英飞凌科技（IFNNY）
+
+报告日期：2026-06-12。  
+主口径：NTM，即从 2026-06-12 起未来 12 个月，经营上近似对应 Infineon FY2026 Q3-Q4 与 FY2027 Q1-Q2。  
+资料边界：本报告使用 `公司调研/` 与 `行业调研/` 中的上游事实资料，并用 Infineon 官方 FY2026 Q2 披露和产品资料校验最新口径；未读取、引用或继承 `特征量化/`、Signals、回归或模型比较资料。  
+重要限制：本报告只评估需求、收入、利润、现金流和经营质量传导，不给投资评级，不判断目标价，不使用股价、估值倍数或市场价格作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM；FY2026 AI power `EUR1.5B` 目标、FY2027 AI power `EUR2.5B` 目标和 800VDC/1MW rack 机会只作为当前预期锚、乐观上限或远期期权，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：最新披露季度为 FY2026 Q2，集团收入 `EUR3.812B`，环比 `+4%`、同比 `+6%`；Segment Result `EUR653M`，Segment Result Margin `17.1%`；调整后毛利率 `41.0%`。公司 FY2026 Q3 指引收入约 `EUR4.1B`，FY2026 全年收入预计同比显著增长，调整后毛利率 low-to-mid forties，Segment Result Margin 约 `20%`，自由现金流约 `EUR1.25B`、调整后自由现金流约 `EUR1.65B`。
+- 重要产品/业务线：ATV 汽车半导体仍是最大收入和利润池；PSS AI power 是 NTM 最重要增量；GIP 工业/能源功率链是恢复和数据中心设施侧期权；CSS/Edge 是低增长但有安全/MCU/连接底盘；AI PSU/PFC、48/50V DC/DC/VR/TLVR/eFuse、BBU/energy shelf、800VDC/HV IBC、SiC/solid-state protection 是关键产品层。
+- NTM 公司收入四情景：悲观 `EUR15.8-16.4B`；基准 `EUR16.8-17.6B`；乐观 `EUR18.2-19.2B`；极度乐观上限 `EUR20.0-22.0B`。基准不是把 AI 行业景气全额映射到公司，而是让 FY2026 Q3 指引、FY2026/FY2027 AI power 目标、PSS run-rate、ATV/GIP 周期恢复正常兑现。
+- 利润或 EBITDA 四情景：Infineon 不以 EBITDA 为核心披露口径，本报告以 Segment Result、经营利润和净利润方向替代。悲观净利润约 `EUR0.9-1.3B`；基准约 `EUR1.6-2.1B`；乐观约 `EUR2.2-2.9B`；极度乐观上限约 `EUR3.0-4.0B`。利润弹性主要取决于 PSS AI power 高毛利产品占比能否抵消 ATV 高压 EV 价格/重组压力。
+- 最大传导瓶颈：公司披露的是 AI power 总目标和 PSS 分部数据，不披露 AI 客户、产品级 backlog、设计份额或每类产品收入；因此第二步“可参与需求”到“可确认收入”的折扣必须保守。
+- 最大利润率变量：PSS AI power 的产品 mix、TLVR/PoL/eFuse 等平台锁定程度、AI PSU/PFC 中 CoolMOS/CoolSiC/CoolGaN/控制器的定价权，以及 ATV 高压 e-mobility 业务价格调整和重组成本。
+- 最大现金流变量：FY2026 投资约 `EUR2.7B`，Dresden 模块、AI power 制造投入、Marvell Automotive Ethernet 整合和库存周转会决定利润是否变成 FCF。
+- 可信度：基准为中高；乐观为中；极度乐观为低到中。原因是集团和 PSS 数据为 A 级，AI power 年度目标为 A/B 级，但产品拆分、800VDC、BBU 和 solid-state protection 的客户量产节奏仍多为 C/D 级。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Automotive / ATV：车规 MCU、汽车功率、SDV、汽车以太网 | FY2026 Q2 `EUR1.830B`，年化约 `EUR7.3B` | Q2 `48.0%` | 最大收入和利润池；也是利润拖累来源 | A | 进入基准；按低到中个位数恢复处理，不把 SDV/以太网长期 design win 提前全部收入化 | SDV、zonal architecture、汽车以太网长期扩张 |
+| PSS AI power 总体 | FY2026 管理层目标约 `EUR1.5B`，FY2027 目标约 `EUR2.5B` | FY2026 约 `9%` 左右，NTM 可升至低双位数 | NTM 最大增量；决定集团经营上修空间 | A/B | 进入基准，但只按官方目标和 PSS run-rate 正常兑现；不把全部 AI rack TAM 当公司收入 | 800VDC、1MW rack、VPD、数据中心电力架构升级 |
+| AI PSU / PFC / power shelf 半导体与控制器 | FY2026 模型估算 `EUR0.55-0.75B` | 约 `3-5%` | 2026 最可确认的 AI power 收入层 | B/C | 进入基准；来自 AI PSU、PFC、power shelf 的已量产与客户导入路径 | 20kW+ 三相 PSU、800V sidecar PSU |
+| 48/50V DC/DC、IBC、VR/TLVR/PoL、eFuse/hot-swap | FY2026 模型估算 `EUR0.45-0.60B` | 约 `3-4%` | 高毛利、高设计锁定，是 PSS 利润质量关键 | B/C | 进入基准；控制器、power stage、TLVR、保护 IC 已产品化，基准需保守折扣 | VPD、HBM4/rack-scale 高电流平台 |
+| BBU / energy shelf / power smoothing 控制与保护 | FY2026 模型估算 `EUR0.15-0.25B` | 约 `1-2%` | 解决 AI rack 动态功率、上电和电网友好 | C | 基准只纳入低位；更高 attach 进入乐观 | 4-12kW/24kW BBU、超级电容、grid-friendly rack |
+| 800VDC / HV IBC / CoolGaN reference design | FY2026 模型估算 `EUR0.05-0.15B` | 小于 `1%` | 2027+ 弹性最大，但 NTM 收入确认最不确定 | C/D | 基准只纳入样品、NRE、小量产和已包含在 AI power 目标中的低位收入；主体放在乐观/极度乐观 | 300kW-1MW rack、800VDC sidecar、HV IBC 标准化 |
+| GIP 工业/能源功率、UPS/BESS/MV/SST/SiC protection | FY2026 Q2 `EUR403M`，年化约 `EUR1.6B`；AI/DC 相关 FY2026 模型估算 `EUR0.10-0.25B` | Q2 `10.6%` | 工业恢复、数据中心设施侧、电网/储能拉动 | A/C | GIP 总分部进入基准；AI/DC 子集只低位纳入 | MV UPS、SST、solid-state breaker、800VDC protection |
+| CSS / Edge security、PSoC、连接、安全芯片 | FY2026 Q2 `EUR319M`，年化约 `EUR1.3B` | Q2 `8.4%` | 稳定底盘，AI 数据中心直接暴露低 | A | 进入基准但不作为 AI power 增量；按恢复慢处理 | Edge AI MCU、服务器安全、IoT 安全 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 Infineon 份额、收入确认、利润率或公司汇总。需求强弱均相对“当前行业预期、公司指引隐含需求、客户预算和正常替换周期”，不是和热门叙事热度比较。若需求在 NTM 内没有客户预算、平台时间表或订单路径，只作为远期期权。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| ATV 汽车半导体 | 全球汽车产量低增长；SDV/汽车以太网设计导入，EV 高压组件需求偏弱 | 汽车产量和 EV 高压需求低于计划，价格年降扩大 | 车规 MCU/SDV 稳定，EV 高压低迷被软件定义汽车部分抵消 | SDV、zonal、汽车以太网加速，EV 高压库存正常化 | EV 与 SDV 同时强反弹，OEM 补库存 | 需求单位为车规芯片出货、车型平台和 ASP/mix；NTM 绝对需求大致平到中个位数增长 | 基准为符合当前预期；悲观风险真实 | 官方 Q2 指出高压 e-mobility 业务收入较低且有重组成本，SDV 有正向发展 |
+| AI PSU / PFC / power shelf | 100-155kW AI rack 在 2026 放量；48/50V ORv3/HPR 是当期主线 | GB300/MI350/ASIC rack 验收延迟，PSU/power shelf 订单后移 | GB200/GB300 和主要 AI rack 正常交付，5.5kW/12kW/18.5kW PSU 继续放量 | 高端 PSU 供应紧，三相/SiC/GaN PSU 提前提高 attach | 20kW+ PSU 和更高功率 rack 快速标准化 | 行业收入池在 2026 可达数十亿美元级；公司需求单位为 kW、PSU 数、power shelf 数 | 基准需求高于传统服务器，但未把 800V 全面量产放入基准 | 行业资料显示 2026 主线是 48/50V power shelf，800V 多为 design-in |
+| 48/50V DC/DC、IBC、VR/TLVR/PoL、eFuse/hot-swap | 高端 AI tray 80-100% 需要 DC/DC、VR、保护和 telemetry | GPU/ASIC 出货延迟或客户采用竞争方案，Infineon 可参与需求低于预期 | 高功率 GPU/ASIC/HBM 平台继续提高近负载供电价值量 | TLVR、VPD、eFuse 成为更多平台标准件 | HBM4/高电流平台让 VPD/TLVR 成为供电瓶颈 | 需求单位为 GPU/ASIC tray、相数、电流密度、保护通道数 | 基准需求清晰，乐观需要客户平台认证证据 | Infineon 产品页和行业报告均显示高密 VR/telemetry/保护为核心环节 |
+| BBU / energy shelf / power smoothing | GB300/后续平台推动 rack/row 级 BBU、energy shelf、功率削峰 | 客户仍主要依赖集中式 UPS 和软件 power cap，rack BBU attach 慢 | OCP BBU、energy shelf、功率平滑在高密 rack 中逐步提高 attach | 电网接入和 ramp-rate 要求使 BBU/energy shelf 进入更多采购清单 | AI rack 上电审批把 BBU/超级电容/削峰硬件变成标配 | 需求单位为 rack attach、kW/BBU、短时备电秒数和控制/保护通道 | 基准为上升但不全面普及；乐观取决于客户验收 | 行业报告认为 2026 是设计导入和订单验证，2027 才是高密架构兑现年 |
+| 800VDC / HV IBC / CoolGaN | 2026H2-2027 设计导入；100-155kW rack 仍多用 48/50V | OCP/NVIDIA/hyperscaler 标准或安全认证延迟，需求停留展示 | 完成多家 ODM/OEM/hyperscaler 评估，2027 初小批量 | 300kW+ rack 新建项目把 800VDC sidecar 写入 RFP | 多个 hyperscaler 把 800VDC/±400V sidecar 作为新建 AI hall 标准 | 需求单位为 800V rack/row、HV IBC kW、sidecar 订单；NTM 需求池小于 2027+ | NTM 基准只认 design-in 和小量产；极度乐观主要是上限 | Infineon 800V->50V/12V reference design 证明技术可参与，但不等于大规模收入 |
+| GIP 工业/UPS/BESS/MV/SST/SiC protection | 数据中心电力/UPS/BESS/配电跟随 AI campus 扩张；传统工业低位恢复 | 工业库存修正延续，普通 IGBT/SiC 价格下行 | 工业情绪改善，电力基础设施、HVAC、UPS/BESS 正常恢复 | 数据中心电力项目拉动 UPS/BESS/SiC 模块，高压保护订单增加 | MV UPS/SST/solid-state breaker 进入多个大型 AI campus 试点 | 需求单位为 MW、UPS/BESS 项目、SiC/IGBT 模块、保护器件 | 基准恢复，极度乐观不应提前当成 NTM 大收入 | 官方 Q2 称 GIP 收入环比 +15%，行业报告显示 MV/SST 仍偏早期 |
+| CSS / Edge security、PSoC、连接 | IoT、连接和安全市场缓慢复苏；服务器安全需求小 | 政府 ID/安全证件继续下滑，IoT 复苏慢 | IoT MCU/连接逐步恢复，安全芯片稳定 | Edge AI MCU 和安全元素 design win 增加 | Edge AI 设备大规模放量 | 需求单位为 MCU/安全芯片出货、连接模组和设计导入 | 基准为低增长，非 AI 主线 | 官方 Q2 显示 CSS 收入基本持平，设计 win 动能不等于 NTM 收入大幅增长 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断外部需求有多少能在 NTM 进入 Infineon 收入表，以及当前收入锚点来自何处；不预测增长，不判断利润率。A/B 证据可进入基准，C 级需折扣，D/E 级不进入基准主口径。所有产品必须区分“可参与需求”和“可确认收入”。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| ATV 汽车半导体 | FY2026 Q2 分部收入 `EUR1.830B`，margin `18.1%` | 直接 | 大基数、中高利润，但 EV 高压价格和重组压制 | `EUR6.8-7.2B` | `EUR7.2-7.7B` | `EUR7.8-8.2B` | `EUR8.4-9.0B` | 基准符合当前低增长/恢复预期 | A | 是 | 分部收入、公司指引和 Q2披露 | 进入基准；不把长期 SDV design win 提前收入化 |
+| AI PSU / PFC / power shelf | PSS AI power FY2026 目标的一部分；产品级 FY2026 模型估算 `EUR0.55-0.75B` | 直接 | 高于普通系统 PSU，控制器和高端功率器件利润较好 | `EUR0.60-0.75B` | `EUR0.75-0.95B` | `EUR1.00-1.20B` | `EUR1.30-1.60B` | 基准略高于 FY2026 run-rate，符合 FY2027 `EUR2.5B` 目标路径 | B/C | 是，保守纳入 | 官方 AI power 目标、PSS 高增长、PSU reference design；产品拆分为估算 | 作为 PSS AI power 的核心收入化项目 |
+| 48/50V DC/DC、IBC、VR/TLVR/PoL、eFuse/hot-swap | PSS AI power FY2026 目标的一部分；产品级 FY2026 模型估算 `EUR0.45-0.60B` | 直接 | 高毛利、高客户锁定，费用投入也高 | `EUR0.50-0.65B` | `EUR0.65-0.85B` | `EUR0.90-1.10B` | `EUR1.20-1.50B` | 基准符合 AI rack 近负载供电扩张 | B/C | 是，折扣纳入 | 产品已发布，PSS 强增长，行业需求高；客户名和产品级订单未披露 | 进入基准但保留产品级折扣 |
+| BBU / energy shelf / power smoothing 控制与保护 | FY2026 模型估算 `EUR0.15-0.25B`，主要在 AI power 目标中隐含 | 直接/间接 | 系统电池毛利一般，半导体控制/保护件较好 | `EUR0.15-0.25B` | `EUR0.25-0.40B` | `EUR0.45-0.70B` | `EUR0.80-1.10B` | 基准为当前预期小幅上修，乐观需 attach 率证据 | C | 是，小比例 | Infineon BBU 路线和行业 attach 上升；但产品级收入未披露 | 基准低位，乐观依赖 GB300/后续平台强制 attach |
+| 800VDC / HV IBC / CoolGaN | FY2026 模型估算 `EUR0.05-0.15B`，多为样品、NRE、小量产和 reference design | 直接 | 小基数，高毛利潜力，认证和 NRE 成本高 | `<EUR0.10B` | `EUR0.12-0.25B` | `EUR0.30-0.50B` | `EUR0.60-0.90B` | 基准只是 NTM 低位确认，不代表全面 800V 量产 | C/D | 小比例进入，不把新增上限进基准 | 官方 800V->50V/12V 参考设计；无大客户量产收入披露 | 主体放在乐观/极度乐观和附录跟踪 |
+| GIP 工业/能源功率、UPS/BESS/MV/SST/SiC protection | FY2026 Q2 GIP `EUR403M`，margin `11.7%`；AI/DC 子集 FY2026 模型估算 `EUR0.10-0.25B` | 直接/间接 | 工业周期性较强，数据中心高压保护利润更好 | `EUR1.50-1.70B` | `EUR1.70-2.00B` | `EUR2.10-2.40B` | `EUR2.50-3.00B` | 基准符合工业恢复和电力基础设施改善 | A/C | 是，按总分部；AI/DC 子集折扣 | GIP 分部收入为 A；MV/SST/保护子集为 C/D | 总分部进入基准，SST/MV 只作上限 |
+| CSS / Edge security、PSoC、连接 | FY2026 Q2 `EUR319M`，margin `5.6%` | 直接 | 利润率低位，恢复弹性弱 | `EUR1.10-1.20B` | `EUR1.20-1.35B` | `EUR1.35-1.50B` | `EUR1.55-1.75B` | 基准符合低增长预期 | A | 是 | 分部收入、官方 Q2 | 作为集团底盘纳入，不作为 AI 收入基准 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内对公司收入和利润的贡献。产品级利润贡献为 Segment Result/经营利润方向的模型估算，不是公司正式披露；不把行业 TAM、客户总预算或项目全周期金额直接写成公司收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| ATV 汽车半导体 | 悲观 | `EUR6.8-7.2B` | `EUR1.0-1.2B` | margin 降至中高 teens | 低于当前预期 | 高压 e-mobility 低迷、价格调整、重组成本 | 保留悲观 | EV SiC/高压组件价格与库存 |
+| ATV 汽车半导体 | 基准 | `EUR7.2-7.7B` | `EUR1.3-1.6B` | 18-21% 区间 | 符合当前预期 | Q2 收入稳定，SDV 正向，高压 EV 拖累已被指引吸收 | 保留基准 | 汽车产量和 EV mix |
+| ATV 汽车半导体 | 乐观 | `EUR7.8-8.2B` | `EUR1.6-1.9B` | 小幅扩张 | 高于预期 | SDV/以太网 design win 加快，EV 价格稳定 | 保留乐观 | 车厂降价和二供 |
+| ATV 汽车半导体 | 极度乐观 | `EUR8.4-9.0B` | `EUR2.0-2.4B` | 明显扩张 | 大幅高于预期 | EV、SDV、MCU 同时补库存 | 下移为乐观上限 | NTM 内缺少全行业强反弹证据 |
+| AI PSU/PFC/power shelf | 悲观 | `EUR0.60-0.75B` | `EUR0.12-0.18B` | 扩张有限 | 低于 AI power 路径 | rack 验收推迟或客户二供压价 | 保留悲观 | GB300/ASIC 出货节奏 |
+| AI PSU/PFC/power shelf | 基准 | `EUR0.75-0.95B` | `EUR0.18-0.28B` | 高于集团平均 | 符合 FY2027 目标路径 | 官方 AI power `EUR1.5B/2.5B`、PSS +26% YoY | 保留基准 | 产品级拆分未披露 |
+| AI PSU/PFC/power shelf | 乐观 | `EUR1.00-1.20B` | `EUR0.28-0.40B` | ASP/mix 改善 | 高于预期 | 高端 PSU/PFC 认证件供给紧，客户为效率/交期付费 | 保留乐观 | ST/onsemi/ROHM/TI/PI 替代 |
+| AI PSU/PFC/power shelf | 极度乐观 | `EUR1.30-1.60B` | `EUR0.45-0.65B` | 非线性扩张 | 大幅高于预期 | 20kW+ 三相 PSU 和 SiC/GaN attach 快速上升 | 保留为上限 | 仍不是系统 PSU 全 BOM |
+| 48/50V DC/DC、VR/TLVR/PoL、eFuse | 悲观 | `EUR0.50-0.65B` | `EUR0.12-0.20B` | 仍高于集团但增速慢 | 低于预期 | 客户采用 MPS/Vicor/TI 等替代平台 | 保留悲观 | 高端平台 design win 不透明 |
+| 48/50V DC/DC、VR/TLVR/PoL、eFuse | 基准 | `EUR0.65-0.85B` | `EUR0.18-0.30B` | 结构性改善 | 符合预期 | TLVR、power stage、数字控制、eFuse 产品化；AI tray attach 高 | 保留基准 | 客户认证周期 6-18 个月 |
+| 48/50V DC/DC、VR/TLVR/PoL、eFuse | 乐观 | `EUR0.90-1.10B` | `EUR0.30-0.45B` | 明显扩张 | 高于预期 | GB300/MI350/ASIC 平台采用扩大，保护/telemetry 价值量上升 | 保留乐观 | 竞争和定价 |
+| 48/50V DC/DC、VR/TLVR/PoL、eFuse | 极度乐观 | `EUR1.20-1.50B` | `EUR0.45-0.70B` | 高毛利平台锁定 | 大幅高于预期 | HBM4/VPD/TLVR 成为供电瓶颈 | 下移为乐观上限 | NTM 内 HBM4/VPD 放量仍早 |
+| BBU / energy shelf / power smoothing | 悲观 | `EUR0.15-0.25B` | `EUR0.03-0.06B` | 利润温和 | 低于预期 | 客户用集中式 UPS/软件 cap 替代硬件 BBU | 保留悲观 | attach 率不足 |
+| BBU / energy shelf / power smoothing | 基准 | `EUR0.25-0.40B` | `EUR0.06-0.11B` | 控制/保护件较好 | 符合预期 | BBU roadmap、OCP/GB300 需求、行业 attach 上升 | 保留基准低位 | 产品级收入未披露 |
+| BBU / energy shelf / power smoothing | 乐观 | `EUR0.45-0.70B` | `EUR0.12-0.22B` | mix 改善 | 高于预期 | 电网 ramp-rate 和 rack 验收推动 BBU/energy shelf 标配化 | 保留乐观 | 电池本体毛利一般 |
+| BBU / energy shelf / power smoothing | 极度乐观 | `EUR0.80-1.10B` | `EUR0.25-0.40B` | 高端控制/保护紧缺 | 大幅高于预期 | power smoothing 成为上电审批工具 | 下移为乐观上限 | 缺少强制 attach 的客户证据 |
+| 800VDC / HV IBC / CoolGaN | 悲观 | `<EUR0.10B` | 接近盈亏平衡至 `EUR0.02B` | NRE/认证成本吞噬 | 低于预期 | 标准、安全、客户评估延迟 | 保留悲观 | 800VDC 运维安全 |
+| 800VDC / HV IBC / CoolGaN | 基准 | `EUR0.12-0.25B` | `EUR0.02-0.07B` | 小基数改善 | 符合低位基准 | 800V->50V/12V reference design、数字控制器 | 保留但低权重 | 没有大客户量产披露 |
+| 800VDC / HV IBC / CoolGaN | 乐观 | `EUR0.30-0.50B` | `EUR0.08-0.18B` | 早期高毛利 | 高于预期 | 2-3 家 ODM/OEM/hyperscaler 定点 | 保留乐观 | TI/Navitas/PI/MPS 竞争 |
+| 800VDC / HV IBC / CoolGaN | 极度乐观 | `EUR0.60-0.90B` | `EUR0.20-0.40B` | 非线性扩张 | 大幅高于预期 | 300kW+ rack 采用 800V sidecar，CoolGaN/HV IBC 量产 | 移入附录/乐观上限 | NTM 缺少量产时间表 |
+| GIP 工业/能源功率 | 悲观 | `EUR1.50-1.70B` | `EUR0.12-0.20B` | 低 teens | 低于预期 | 工业库存、普通 IGBT/MOSFET 价格下行 | 保留悲观 | 周期性 |
+| GIP 工业/能源功率 | 基准 | `EUR1.70-2.00B` | `EUR0.22-0.32B` | 11-16% | 符合预期 | Q2 GIP 环比 +15%，电力基础设施改善 | 保留基准 | 数据中心子集占比不透明 |
+| GIP 工业/能源功率 | 乐观 | `EUR2.10-2.40B` | `EUR0.35-0.55B` | 明显改善 | 高于预期 | UPS/BESS/SiC protection 和电力基础设施项目拉动 | 保留乐观 | 项目制交付和价格 |
+| GIP 工业/能源功率 | 极度乐观 | `EUR2.50-3.00B` | `EUR0.55-0.85B` | 高利用率扩张 | 大幅高于预期 | MV UPS/SST/solid-state breaker 试点提前 | 下移为乐观上限 | SST 大规模收入偏 2027-2028 |
+| CSS / Edge security、PSoC、连接 | 悲观 | `EUR1.10-1.20B` | `EUR0.05-0.10B` | 低位 | 低于预期 | 政府 ID 下滑、IoT 复苏慢 | 保留悲观 | 非 AI 主线 |
+| CSS / Edge security、PSoC、连接 | 基准 | `EUR1.20-1.35B` | `EUR0.10-0.18B` | 温和恢复 | 符合预期 | Q2 收入稳定，IoT 逐步恢复 | 保留基准 | 产品组合低利润 |
+| CSS / Edge security、PSoC、连接 | 乐观 | `EUR1.35-1.50B` | `EUR0.18-0.27B` | 改善 | 高于预期 | Edge AI MCU/security design win 增加 | 保留低权重 | NTM 收入转化慢 |
+| CSS / Edge security、PSoC、连接 | 极度乐观 | `EUR1.55-1.75B` | `EUR0.30-0.42B` | 明显扩张 | 高于预期但低可信 | Edge AI 设备大规模放量 | 移入附录 | 当前缺少 NTM 收入证据 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为公司 NTM 总收入、毛利率、Segment Result/经营利润、净利润和自由现金流方向。汇总时剔除重复计算：PSS AI power 产品桶属于 PSS 内部拆分，不能再与 PSS 总收入重复相加；GIP 总分部与 GIP AI/DC 子集同理。FY2026/FY2027 目标只作为当前预期锚，不替代 NTM。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `EUR15.8-16.4B` | 相对前四季近似 `EUR15.1B` 增长 `+4-8%` | 低于 FY2026 H2 改善和 FY2027 AI power 路径 | 调整后 `39-41%` | Segment Result Margin `14-17%` | EBITDA 无法可靠量化；净利润约 `EUR0.9-1.3B` | FCF `EUR0.6-1.0B`，低于 FY2026 指引路径 | 中 | AI power 低于目标、ATV 高压 EV 和 GIP 周期拖累 |
+| 基准公司 | `EUR16.8-17.6B` | `+11-16%` | 接近 Q3 指引、FY2026/FY2027 AI power 目标和当前 run-rate | 调整后 `42-44%` | Segment Result Margin `18-21%` | EBITDA 无法可靠量化；净利润约 `EUR1.6-2.1B` | FCF `EUR1.2-1.7B`，调整后 FCF 接近或略高于 FY2026 指引 | 中高 | 产品级 AI backlog 不透明、ATV 利润恢复慢 |
+| 乐观公司 | `EUR18.2-19.2B` | `+20-27%` | 高于当前预期，PSS AI power 超目标且 GIP/ATV 同步恢复 | 调整后 `44-46%` | Segment Result Margin `21-24%` | EBITDA 无法可靠量化；净利润约 `EUR2.2-2.9B` | FCF `EUR1.8-2.5B`，营运资本改善 | 中 | 需要 AI PSU/TLVR/eFuse/BBU 多条产品同时放量 |
+| 极度乐观公司 | `EUR20.0-22.0B` | `+32-45%` | 显著高于当前预期；AI power 从增量变为集团主引擎之一 | 调整后 `46-49%` | Segment Result Margin `24-28%` | EBITDA 无法可靠量化；净利润约 `EUR3.0-4.0B` | FCF `EUR2.6-3.5B`，但需扩产和库存支持 | 低到中 | 800VDC/HV IBC、BBU、AI PSU、ATV 恢复必须同时成立 |
+
+公司层面判断：最可能情景是基准偏乐观，而不是极度乐观。经营上 Infineon 已经有 A/B 级 AI power 收入锚，不能再按“只有主题相关性”排除；但产品拆分、客户份额、800VDC 量产时间和 BBU attach 仍不够透明，也不能把行业 AI rack 电源 TAM 直接放大成公司收入。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：只校准前四步情景，不重新预测。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次：例如 800VDC 标准延迟只限制 800VDC/HV IBC 和极度乐观上限，不重复惩罚 ATV 或 CSS。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 官方 FY2026 AI power `EUR1.5B`、FY2027 `EUR2.5B` 目标 | 收入基数、产品贡献、公司汇总 | 把 AI power 从 D/E 题材上调到 A/B 收入锚 | 若 PSS mix 提升，支持毛利率和 Segment Result Margin | 需要制造投入和库存支持 | 基准保留，乐观可保留 |
+| AI power content `USD100-250/kW`、平均 `USD175/kW` | 需求、收入基数 | 支持按 kW/rack 估算可服务内容量，但不是已确认收入 | 高端半导体和控制器利润属性较好 | 内容量随 rack power 上升，但交付依赖客户平台 | 基准只低位纳入，极度乐观作为上限 |
+| FY2026 Q2 PSS 收入 `EUR1.260B`、同比 `+26%`、margin `20.4%` | 产品贡献、公司利润 | 证明 AI power 已进入收入表，而非纯 pipeline | 正向支持利润质量 | 若 PSS 继续扩张，可改善集团现金流 | 基准保留，乐观保留 |
+| 集团 backlog 约 `EUR25B` | 收入基数、执行可信度 | 支持集团收入可见度，但不能全部归因于 AI | 对利润率帮助取决于订单 mix | backlog 覆盖不等于 FCF 兑现 | 基准保留；禁止重复放大 AI 收入 |
+| 产品级 AI 客户、backlog、份额未披露 | 证据可信度 | 限制产品级精确收入和乐观上修 | 限制高毛利假设可信度 | 增加库存和交付节奏不确定性 | 乐观保留但可信度中；极度乐观下移 |
+| 800VDC/HV IBC 仍以 reference design、样品和 design-in 为主 | 产品贡献、远期期权 | NTM 基准不能放入大规模 800V 收入 | 早期 NRE/认证可能压利润 | 客户安全、运维和安规决定量产 | 基准低位；极度乐观移入附录或乐观上限 |
+| ATV 高压 e-mobility 收入低、价格调整和重组成本 | 公司组合、利润率 | 不一定压低集团收入，但限制利润恢复 | 直接压制 ATV margin 和集团毛利 | 重组成本、库存和价格会影响 FCF | 悲观保留；基准不自动上移 |
+| GIP 工业恢复和电力基础设施改善 | 需求、产品贡献 | 支持 GIP 基准恢复和乐观上修 | 若利用率恢复，margin 有改善空间 | 项目制交付和库存仍需验证 | 基准保留，乐观保留 |
+| 竞争：TI、MPS、Vicor、Navitas、PI、ST、onsemi、ROHM | 公司捕获、价格/mix | 限制 Infineon 对行业需求池的份额假设 | 二供和替代压制 ASP | 可能造成认证延迟或份额分散 | 乐观不排除，但极度乐观需客户定点证据 |
+| FY2026 投资 `EUR2.7B` 与 FCF 指引 | 现金流、执行可信度 | 支持产能准备，但收入需要订单兑现 | 折旧和启动成本压制利润 | FCF 是经营兑现的硬检验 | 基准 FCF 保留；若库存上升则下移 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | AI power 低于目标，ATV/GIP 周期拖累，NTM 收入仅小幅增长 | ATV 风险已在官方 Q2 中出现，高压 EV 与价格调整是真变量 | PSS 已经高增长，FY2026H2 指引改善，不能把全公司直接打入深度衰退 | 保留 | 悲观公司 | 中 | 800VDC 延迟只压 800V/HV IBC，不再重复压 AI PSU/TLVR 基准 |
+| 基准 | 官方指引、PSS run-rate、AI power 目标正常兑现 | Q2 集团收入 `EUR3.812B`，PSS `EUR1.260B`，AI power FY2026/FY2027 目标清晰 | 产品级客户、产品级 backlog 和份额不披露 | 保留 | 基准公司，最可能情景 | 中高 | backlog 不能全部算 AI；产品拆分不透明不能重复扣减到所有分部 |
+| 乐观 | AI PSU/TLVR/eFuse/BBU 需求强于预期，PSS margin 扩张，GIP/ATV 同步恢复 | 行业高密 rack 电源需求强，Infineon 产品组合覆盖从 grid 到 core，PSS margin 已到 `20.4%` | 需要多产品同时进入客户平台；竞争者也有强 reference design | 保留 | 乐观公司 | 中 | 竞争风险只限制份额/价格，不等同于需求不存在 |
+| 极度乐观 | 800VDC、BBU、AI PSU、TLVR、GIP 高压保护和 ATV 恢复同时突破 | 有 800V/HV IBC、BBU、eFuse、TLVR 官方产品证据和行业路线支持 | NTM 内缺少多个 hyperscaler 量产定点、产品级收入和强制 attach 证据 | 下移 | 乐观上限；800VDC/1MW rack 主体移入附录跟踪 | 低到中 | 800VDC 未量产不应惩罚已量产 48/50V AI power 收入 |
+
+## 8. 结论
+
+- 最可能情景：基准公司，收入 `EUR16.8-17.6B`，Segment Result Margin `18-21%`，净利润约 `EUR1.6-2.1B`。这代表 FY2026 Q3 指引和 FY2026/FY2027 AI power 路径正常兑现，PSS 继续增长，ATV/GIP 不再明显恶化。
+- NTM 收入结论：公司不是纯 AI 数据中心公司，ATV 仍接近半数收入；但 AI power 已有官方收入目标和 PSS 分部验证，不能只作为主题期权处理。NTM 收入上修来自 PSS AI PSU/PFC、48/50V/TLVR/eFuse、BBU 控制保护和 GIP 电力基础设施恢复，而不是把 800VDC 长期 TAM 提前收入化。
+- 利润/现金流结论：利润质量改善的核心是高毛利 PSS AI power 是否占比提高，并抵消 ATV 高压 EV 价格压力、重组成本和 GIP 周期性。FCF 需要跟踪 FY2026 `EUR1.25B` 和 adjusted FCF `EUR1.65B` 指引能否兑现；如果收入增长伴随库存和资本开支扩张，经营价值传导会打折。
+- 主要传导瓶颈：第一是产品级收入透明度低，第二是 800VDC/BBU/solid-state protection 的认证和客户定点，第三是汽车高压 EV 和工业周期对集团利润的抵消。
+- 乐观情景成立条件：FY2026 Q3/Q4 PSS 收入继续超预期；AI power FY2027 `EUR2.5B` 目标被维持或上修；TLVR/eFuse/AI PSU 产品出现更多客户或平台量产证据；GIP margin 随电力基础设施恢复提升；ATV margin 回到 `20%+` 附近。
+- 极度乐观情景成立条件：多个 hyperscaler/OEM 在 NTM 内明确采用 800VDC/HV IBC 或 sidecar 方案；BBU/energy shelf attach 被 rack 验收或电网接入要求强制化；Infineon 在 CoolGaN/CoolSiC/控制器/eFuse/TLVR 中获得多平台指定料号；同时 ATV 不再拖累集团利润。
+- 悲观情景触发条件：FY2026H2 AI power 无法接近 `EUR1.5B` 年度目标；FY2027 `EUR2.5B` 目标被下修；PSS margin 不能维持 20% 附近；ATV 高压 EV 价格/库存继续恶化；GIP 订单恢复失败；FCF 明显低于 `EUR1.25B` 指引路径。
+- 后续跟踪数据：FY2026 Q3/Q4 PSS 收入和 margin；AI power 目标是否上修或下修；集团 backlog 是否维持 `EUR20B+` 且结构改善；800VDC/HV IBC、TLVR、eFuse、BBU 是否披露客户量产；ATV margin 是否稳定；库存周转、capex 和 FCF 是否把收入转为现金。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务使用 Infineon FY2026 Q2，期间结束日为 2026-03-31；官方披露日为 2026-05-06；本报告生成日为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：Infineon FY2026 Q2 press release and financial tables；Infineon FY2026 Q2 analyst call presentation；本地 `公司调研/配电_电源_功率器件/IFNNY_Infineon_Technologies_AG_英飞凌科技_公司调研_2026-06-11.md`。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 AI power `EUR1.5B`、FY2027 `EUR2.5B` 是当前预期锚；800VDC/HV IBC、1MW rack、SST/MVDC、solid-state breaker 和 VPD 是乐观上限或远期期权，除小量产/NRE/已含在 AI power 目标内的低位收入外，不进入 NTM 基准。
+- 本地行业来源：
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+- 主要外部来源：
+  - Infineon FY2026 Q2 press release and financial tables: https://www.infineon.com/assets/row/public/documents/corporate/press/2026/infxx202605-082e.pdf
+  - Infineon FY2026 Q2 analyst call presentation: https://www.infineon.com/content/dam/infineon/row/public/documents/corporate/investors/presentations/2026/2026-05-05-q2-fy26-analyst-call-v01-00-en.pdf
+  - Infineon data center power solutions: https://www.infineon.com/applications/ai-data-center/data-center-power-solutions
+  - Infineon We Power AI: https://www.infineon.com/technology/ai/we-power-ai
+  - Infineon 800VDC / HV IBC reference designs: https://www.infineon.com/market-news/2026/infpss202603-067
+  - Infineon BBU roadmap for AI data centers: https://www.infineon.com/technology/ai/we-power-ai/bbu
+  - Infineon 800VDC architecture support announcement: https://www.infineon.com/press-release/2025/INFXX202510-003

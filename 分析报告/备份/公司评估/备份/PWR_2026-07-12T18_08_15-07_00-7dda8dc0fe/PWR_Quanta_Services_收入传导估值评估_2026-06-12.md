@@ -1,0 +1,160 @@
+# 公司收入传导与价值传导评估：Quanta Services
+
+报告日期：2026-06-12  
+公司代号：PWR  
+公司名称：Quanta Services, Inc.  
+正式输出目录：`分析报告/公司评估/`  
+研究口径：NTM 指 2026Q2-2027Q1 附近的未来 12 个月经营窗口；FY2026、FY2027、项目全周期收入和长期 run-rate 只作补充。  
+资料边界：使用 `公司调研/` 与 `行业调研/`，并用公司 IR、SEC/8-K 附件和公开行业来源核验关键数据；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、模型比较、公司排序结果或市场估值结论。  
+口径说明：本文中的“价值传导”只指收入、利润率、现金流、订单可见度和执行质量的经营传导，不做证券市场定价或投资建议。文件名中的“估值评估”为自动化命名，不代表本文做市场估值。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即 2026Q2-2027Q1 附近未来 12 个月；补充口径使用 FY2026 管理层指引、2026Q1 backlog/RPO、已披露收购贡献和长期数据中心电力需求作校验。
+- 当前收入基准、指引和 run-rate：2026Q1 收入 78.75 亿美元，TTM 收入 301.21 亿美元；管理层 2026 收入指引为 347.0-352.0 亿美元，中点 349.5 亿美元；2026Q1 总 backlog 484.71 亿美元、RPO 262.42 亿美元、12 个月 backlog 282.33 亿美元，相当于 FY2026 收入指引中点约 80.8%。
+- 重要产品/业务线：输电/变电/配电与公用事业接入；数据中心园区内电气、低压系统和模块化电气交付；机械/管道/工艺系统和液冷设施侧集成；发电+BESS+微电网 EPC；可再生能源+BESS EPC；传统地下/通信/管线与常规服务。
+- NTM 公司收入四情景：悲观 335-355 亿美元；基准 365-380 亿美元；乐观 390-415 亿美元；极度乐观 425-465 亿美元。基准相对当前 NTM 锚基本兑现，乐观需要数据中心电气、DSI 机械和 NiSource 类项目同时加速，极度乐观只作为上限。
+- 利润或 EBITDA 四情景：悲观调整 EBITDA 32-36 亿美元；基准 38-41 亿美元；乐观 43-48 亿美元；极度乐观 50-58 亿美元。利润上修不应和收入上修等比例，因为 PWR 是工程/EPC 平台，硬件利润主要在 OEM，且 labor、固定价合同、并购摊销和营运资本会吞掉一部分收入弹性。
+- 最大传导瓶颈：不是需求不足，而是项目 NTP、许可、设备 OEM 交期、utility interconnection、合格劳动力、预制产能、现场调试和客户验收。
+- 最大利润率变量：Electric segment mix、CEI/Tri-City 预制电气与 inside electrical 的毛利、DSI 机械/工艺集成毛利、固定价项目 change order、人工/材料成本传导。
+- 最大现金流变量：12 个月 backlog 转收入速度、应收账款/合同资产、客户预付款和大项目营运资本占用；极度乐观收入放量反而可能短期压低 FCF conversion。
+- 可信度：基准为中高，乐观为中，极度乐观为低到中；原因是收入、分部、指引、backlog、RPO 为 A/B 证据，但数据中心直接收入、NiSource 类项目 NTM 确认额和产品级利润率仍需估算。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 输电、变电、配电、公用事业接入与大负荷 grid interface | 2026 收入估计 120-150 亿美元，其中 AI/大负荷使能约 30-50 亿美元 | 34-43% | PWR 当前最大收入和订单池，决定 Electric segment 主体兑现 | A/B：2026Q1 Electric 收入 64.69 亿美元，Electric total backlog 401.06 亿美元；LADWP、Boardman-to-Hemingway 等高压项目进入 backlog/RPO | 进入基准。用 A/B 级收入和 backlog 作主锚；AI 相关部分只作分层推算 | 远期在 HVDC、更多 500kV/765kV、flexible interconnection 和数字化变电站服务 |
+| 数据中心园区内电气、低压系统、模块化电气房、电源 skid、custom fabrication | 2026 当前可见贡献估计 22-32 亿美元；CEI 2025 贡献指引 23.25-24.25 亿美元 | 6-9% | 直接对应 AI campus time-to-power，是 PWR AI 收入弹性最高的现有业务 | A/B/C：CEI 收入为 B/A 锚，Tri-City 描述为 C/B；直接数据中心占比未披露 | 基准保守纳入 30-37 亿美元 NTM；超出部分进入乐观 | 800VDC、MV UPS 安装和 AI factory 12.5/25/50MW repeatable block 只作 2027+ 期权 |
+| 机械、管道、工艺系统、液冷设施侧集成、预制机械模块、commissioning | DSI 2026 公司预计收入 12.5-14.5 亿美元；其中数据中心/技术负荷部分估计 8-13 亿美元 | 2-4% 直接 AI 相关，全部 DSI 约 4% | 高密度机房和液冷 ready hall 的设施侧瓶颈，利润率可能高于普通地下管线 | B/C：DSI 收购公告给出 2026 收入/EBITDA，具体客户和液冷占比未披露 | 基准折扣纳入；液冷设施侧超预期只进乐观 | 200-500kW rack、1MW rack、液冷后市场服务和长期运维 |
+| 发电+BESS+微电网 EPC 与大负荷电源协调平台 | 当前收入小，2026 可见收入估计 5-15 亿美元；NiSource 约 3GW 项目尚未在公告时对 backlog 有 meaningful contribution | 1-4% | 可改变公司从施工承包商到 generation-to-grid-to-load integrator 的角色 | B/C：NiSource engagement 为 B 级客户项目，但 NTP、金额、确认节奏和 backlog 纳入仍不清楚 | 基准只纳入已可执行 early works/常规电源侧部分；NiSource 主体放量进乐观/极度乐观 | 多个 1GW+ behind-the-meter AI campus、电源包和微电网长期服务 |
+| 可再生能源+BESS EPC | 2026 收入估计 45-65 亿美元，其中 AI 绑定 PPA/BESS 部分约 10-20 亿美元 | 13-19% | 大收入基盘，受数据中心 PPA 和储能需求支撑，但利润弹性弱于电气/机械瓶颈 | A/B：Blattner、CEI 和 Electric segment 内可见收入/backlog；AI 绑定比例为估算 | 进入基准，但按普通 EPC 利润属性处理 | 数据中心 PPA、hybrid solar+BESS、long-duration storage 属于跟踪项 |
+| 传统地下公用事业、通信、管线、常规维护、非数据中心商业电气 | NTM 估计 110-130 亿美元 | 30-35% | 现金流和执行资源基础，也可能抵消成长业务波动 | A：Underground segment 收入和 backlog；非 AI 业务来自公司收入表 | 进入基准作为稳定/抵消项，不作为 AI 增量 | 与 AI 相关性低的宽带、普通管线和商业电气不进上修主线 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不评估 PWR 份额、收入确认、利润率或公司层面收入利润汇总。需求单位以最能解释该业务的指标表达：数据中心 IT load/MW、可上电容量、高压/变电项目、MEP/预制订单、BTM 电源 MW、可再生+BESS 项目金额和常规维护工作量。当前需求锚来自 2026Q1/Q2 行业资料、客户 CapEx/电力需求、公司披露的订单趋势和正常替换/维护周期。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 输电、变电、配电、公用事业接入 | 美国数据中心 power demand 外部锚为 2025 年 31GW、2026 年 41GW、2027 年 66GW；行业报告显示 500MW+ campus 使 interconnection 拉长至 24/36/48+ 月；Electric equipment 供应紧张 | 需求仍增长，但 utility 审批、变压器/开关柜交期和社区阻力使 NTM 可开工项目低于当前路径 | 数据中心、电网现代化、工业回流和可靠性投资按当前预期推进；高压/变电需求继续双位数增长 | Utility 与大负荷客户共同出资加速接入，多个 100-500MW 项目提前 NTP | 数据中心、半导体厂、再工业化和电气化同时抢同一批输变电资源，新增预算显著上修 | 需求池可从正常双位数增长上修至 30%+ 项目订单增长；极端时局部区域 backlog 非线性扩张 | 基准符合当前预期；悲观低于预期；乐观高于预期 | 正向：设备订单、utility 大负荷申请、长交期。反证：电力设备 book-to-bill 低于 1、lead time 回落、客户下调 capex |
+| 数据中心园区内电气、低压系统和模块化电气交付 | 2026 AI 数据中心从 GPU 约束转向 time-to-power；行业资料预计 2026 美国 AI IT-load equivalent 新增/进入订单约 6.0-8.5GW，乐观 9-12GW；高密机房要求 eHouse、电气房、busway/PDU 和调试 | 机房建设继续，但电力接入、服务器验收或融资导致一批 campus 推迟，inside electrical 需求低于当前 RFP 节奏 | GB200/GB300、云 ASIC、NeoCloud 和 hyperscaler 扩建正常兑现，electrical prefab 和低压系统订单强 | 多个 100MW+ campus 同时进入施工，业主为缩短现场工期提前锁电工和预制产能 | 500MW+/GW campus 批量 NTP，12.5/25/50MW repeatable block 成为 RFP 标准，电气预制成为准设备瓶颈 | 相对当前预期：悲观 -10% 到 -20%；基准正常；乐观 +20% 到 +40%；极度乐观 +50%+ | 基准需求强，但不把长期 800VDC/1MW rack 全部前置到 NTM | 正向：CEI/Tri-City 目标客户、JLL/CBRE 电力瓶颈。反证：客户延迟 NTP、设备缺货导致现场电气无法开工 |
+| 机械、管道、工艺系统和液冷设施侧集成 | 2026 高密 AI rack 正从风冷/混合冷却走向液冷 ready hall；行业资料显示 100kW+ rack、CDU、泵组、暖水环路、漏液检测和 commissioning 成为 MEP 约束 | 液冷部署慢于机架出货，客户保留混合冷却和低密改造，机械/液冷设施需求低于预期 | GB300/MI350/云 ASIC 推动液冷 ready 设施正常扩张，机械预制和调试需求稳步提升 | 直接液冷从高端训练机房扩散至推理和 colo，DSI 类机械集成需求明显超预期 | 200-500kW rack 设计提前常态化，液冷设施侧成为比 IT 设备更紧的施工瓶颈 | 悲观需求可比当前低 15-25%；乐观比当前高 25-50%；极度乐观高 60%+ | 基准为当前行业路径；极度乐观依赖高密 rack 和客户验收同步突破 | 正向：液冷 ready MEP、AFCOM/OCP/行业会议信号。反证：液冷事故、客户降密度、CDU/冷板供货或标准延迟 |
+| 发电+BESS+微电网 EPC | 行业 BTM 管线规模很大，项目库显示 90GW 级 announced BTM capacity，但实际 operating/under construction 很低；公司一手项目包括 NiSource 约 3GW 大负荷电源与基础设施 engagement | 公告项目多数停留在开发/许可，BTM 电源需求不能在 NTM 转为大量施工 | BTM、燃气+BESS、utility-connected hybrid 和电源侧 early works 正常增长，部分 NTP 进入收入 | 客户为 time-to-power 付溢价，自备发电与 BESS 成为一期上电标准配置 | 多个 1GW+ AI campus 同时采用自备电源，发电、BESS、变电、地下基础设施打包成为主流 | 悲观：可施工需求显著低于公告；基准：从小基数高增；乐观：NTM 可施工额翻倍以上；极度乐观：非线性放量 | 基准不等于 announced GW 全部落地；乐观以上需 NTP/设备 PO/许可 | 正向：CAT/AIP、GE Vernova、Wartsila、Bloom/Oracle 等 GW 级信号。反证：气源、排放、社区、融资和设备交期 |
+| 可再生能源+BESS EPC | 数据中心 PPA、能源转型和 utility 储能仍提供项目池；但并网、利率、税收政策和项目经济性约束明显 | 税收政策、关税、利率或并网排队压低项目启动，需求低于当前路径 | 常规太阳能、风电、储能和数据中心 PPA 按既有路径推进 | PPA 需求、储能 attach 和数据中心绿色电力目标同步加速 | 政策、利率、并网和大客户长期 PPA 全部改善，可再生+BESS 项目明显上修 | 悲观 -10% 到 -20%；基准 +5% 到 +12%；乐观 +15% 到 +30%；极度乐观 +35%+ | 相对当前预期，基准偏稳，乐观需要政策和并网配合 | 正向：数据中心长期电力需求。反证：税收抵免变化、排队、利率、客户 PPA 重定价 |
+| 传统地下、通信、管线和常规维护 | 正常维护、地下公用事业、通信外线和管线项目；与 AI 直接相关性低 | 运营商/地方预算、油气管线或通信 capex 走弱 | 常规维护和地下公用事业稳定，作为公司现金流底盘 | 公用事业硬化、风暴恢复和地下化增加，抵消低增长业务 | 只有广泛电网硬化和地下化投资明显扩张时才超预期 | 多数情况下为低单位数到高个位数波动 | 基准为稳定现金流，不是 AI 主线 | 正向：电网硬化和可靠性。反证：地方预算、运营商 capex、能源管线周期 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些外部需求能进入 PWR NTM 收入表，以及当前可收入化基数。公司能参与某个需求池，不等于能在 NTM 确认收入。证据等级按收入表可确认性定义：A 为已披露收入/分部收入/正式指引；B 为 RPO/backlog/正式合同/可验证客户项目；C 为客户认证、管理层可验证披露或产能规划；D 为产品发布/早期合作；E 为主题相关或同业映射。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 输电、变电、配电、公用事业接入 | 2026Q1 Electric 收入 64.69 亿美元；Electric total backlog 401.06 亿美元；Electric 12 个月 backlog 238.90 亿美元；2026 收入估计 285-292 亿美元 | 直接服务 utility/IPP/大负荷客户，AI 既有直接大负荷又有间接电网使能 | 工程服务毛利中低到中位数；高压/紧缺施工和调试可高于普通维护 | 120-134 亿美元 | 132-148 亿美元 | 148-165 亿美元 | 170-200 亿美元 | 基准符合 Electric backlog 正常转化；乐观高于当前预期 | A/B | 是 | 分部收入、RPO/backlog、高压项目进入 backlog/RPO | NTM 基准主口径，不能把全部电网增长都归因 AI |
+| 数据中心园区内电气、低压系统和模块化电气交付 | CEI 2025 贡献指引 23.25-24.25 亿美元；Tri-City 2026 EPS 贡献；公司未披露直接数据中心收入 | 直接受益于 AI/data center campus | 低压电气、预制、电气房和调试毛利高于普通现场施工，但仍是工程/EPC | 22-28 亿美元 | 30-37 亿美元 | 38-48 亿美元 | 55-70 亿美元 | 基准略高于 2026 可见基数，因为 CEI/Tri-City 满年化；极度乐观只是上限 | A/B/C | 是，保守纳入 | CEI 收购披露、Tri-City load center 能力、行业需求和 Electric backlog | NTM 基准纳入；超出基准需具体 campus NTP、预制产能和客户订单 |
+| 机械、管道、工艺系统和液冷设施侧集成 | Dynamic Systems 2026 预计贡献收入 12.5-14.5 亿美元、调整 EBITDA 1.25-1.75 亿美元；数据中心/技术负荷份额未披露 | 直接参与液冷/机械设施侧，也服务半导体、医疗、工业 | 机械/工艺预制和 commissioning 可能较高，普通机械安装竞争强 | 7-11 亿美元 | 11-16 亿美元 | 16-22 亿美元 | 26-35 亿美元 | 基准为 DSI 可见贡献的保守折扣；乐观需液冷项目明确放量 | B/C | 是，折扣纳入 | DSI 2026 贡献指引和业务描述；行业液冷 ready MEP 需求 | 基准纳入部分，液冷超额不提前进入基准 |
+| 发电+BESS+微电网 EPC | NiSource 约 3GW engagement；公告时 backlog 未含 meaningful contribution；公司当前收入未单列 | 直接服务大负荷电源，间接服务 AI time-to-power | 工程集成和协调费率不等于设备毛利；turnkey scope 可提高收入但压低毛利率 | 2-7 亿美元 | 8-15 亿美元 | 15-28 亿美元 | 40-60 亿美元 | 基准低于主题叙事，因 NTP/金额/确认节奏不清；乐观高于当前预期 | B/C | 小比例进入 | 可验证客户项目为 B，但缺金额、NTP 和 backlog 纳入节奏 | 基准只纳入 early works/已可执行部分；主体放量进乐观/极度乐观 |
+| 可再生能源+BESS EPC | Electric segment 内 Blattner/CEI 等平台；2026 收入估计 45-65 亿美元；AI 绑定部分估计 10-20 亿美元 | 间接受益数据中心 PPA，也有常规能源转型需求 | 项目制 EPC，毛利弹性中等，政策/并网影响大 | 38-50 亿美元 | 48-60 亿美元 | 58-70 亿美元 | 85-110 亿美元 | 基准符合当前收入和项目节奏；极度乐观需要政策和并网共同改善 | A/B | 是 | Electric segment 收入/backlog 和可再生 EPC 平台 | NTM 基准纳入，但作为低毛利/项目制收入处理 |
+| 传统地下、通信、管线、常规维护和其他 | Underground 2026Q1 收入 14.06 亿美元，total backlog 83.65 亿美元；传统/低 AI 相关收入估计 110-130 亿美元 | 多数为间接或无 AI 相关性 | 稳定现金流，利润率低中位数；可抵消成长业务波动 | 120-128 亿美元 | 120-130 亿美元 | 115-128 亿美元 | 120-140 亿美元 | 基准为稳定，乐观中可能被资源转移压缩 | A | 是 | 分部收入和 backlog | 作为公司收入底盘和抵消项纳入，不写成 AI 收入 |
+| 排除项：800VDC/MV UPS 硬件、变压器/开关柜/UPS/PDU、GPU/光模块/网络设备、SMR 设备 | PWR 不销售这些标准硬件；仅安装、集成、调试或协调 | 间接参与 | 硬件毛利属于 OEM，不属于 PWR | 0 | 0 | 0 | 0 | 不属于 PWR 可确认收入 | E | 否 | 只有主题相关或安装间接相关 | 不进入 NTM 产品收入基数；只在附录作为技术跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第一步需求和第二步收入基数出发，评估每个重要业务线在 NTM 内可贡献的收入和利润。不得把行业 TAM、客户总预算、项目总金额或远期 pipeline 直接写成公司收入。利润贡献为经营利润/调整 EBITDA 近似区间，因 PWR 未披露产品级利润率，全部标注为推算口径。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 数据中心园区内电气、低压系统和模块化电气交付 | 悲观产品 | 22-28 亿美元 | 1.5-2.4 亿美元 | 持平或小幅压缩 | 低于当前 NTM 预期 | CEI 收入可见但客户 campus 延迟；设备 OEM 长交期使现场电气后移 | 保留为下行情景 | NTP 推迟、变压器/开关柜不足、劳动力加班和固定价 scope creep |
+| 数据中心园区内电气、低压系统和模块化电气交付 | 基准产品 | 30-37 亿美元 | 2.5-3.6 亿美元 | 小幅改善 | 符合当前预期 | CEI 满年化、Tri-City load center inside electrical、Electric backlog 转化 | 保留 | 直接数据中心收入未披露，需保守估算 |
+| 数据中心园区内电气、低压系统和模块化电气交付 | 乐观产品 | 38-48 亿美元 | 3.6-5.5 亿美元 | 改善 | 高于当前预期 | 多个 100MW+ campus 同时进入电气施工，预制电气房和 custom fabrication 供需紧 | 保留但需订单验证 | 竞争来自 EMCOR、Rosendin、M.C. Dean、DPR/Turner 体系 |
+| 数据中心园区内电气、低压系统和模块化电气交付 | 极度乐观产品 | 55-70 亿美元 | 5.5-8.0 亿美元 | 明显改善但非硬件型高毛利 | NTM 上限，非当前预期 | 电力瓶颈使客户提前锁 PWR 的 craft labor 和 fabrication slot | 下移为极度乐观上限 | 如果缺客户 NTP、预制产能和设备 PO，不能保留为可兑现主情景 |
+| 机械、管道、工艺系统和液冷设施侧集成 | 悲观产品 | 7-11 亿美元 | 0.5-1.0 亿美元 | 持平或压缩 | 低于当前预期 | DSI 有收入锚，但液冷 facility loop 放量慢于机架叙事 | 保留 | 液冷标准变化、客户降密度、质量/保修责任 |
+| 机械、管道、工艺系统和液冷设施侧集成 | 基准产品 | 11-16 亿美元 | 1.1-2.0 亿美元 | 小幅改善 | 符合当前预期 | DSI 2026 收入/EBITDA 贡献指引；高密度机房推动机械预制和调试 | 保留 | 数据中心/半导体/医疗/工业 mix 未披露 |
+| 机械、管道、工艺系统和液冷设施侧集成 | 乐观产品 | 16-22 亿美元 | 2.0-3.2 亿美元 | 改善 | 高于当前预期 | 直接液冷 ready hall、泵组、管道 skid、commissioning 需求超预期 | 保留 | 竞争强，且 CDU/冷板硬件利润不属于 PWR |
+| 机械、管道、工艺系统和液冷设施侧集成 | 极度乐观产品 | 26-35 亿美元 | 3.2-5.0 亿美元 | 改善 | NTM 上限 | 200kW+ rack 和设施侧液冷大规模进入 NTM | 下移为乐观上限 | 缺明确客户、交付和验收节奏时不得进基准 |
+| 输电、变电、配电、公用事业接入 | 悲观产品 | 120-134 亿美元 | 8.5-11.0 亿美元 | 持平或压缩 | 低于当前预期 | Electric backlog 强，但许可/路线/设备交期拖慢高压项目 | 保留 | 环评、社区、线路许可、变压器/开关柜长交期 |
+| 输电、变电、配电、公用事业接入 | 基准产品 | 132-148 亿美元 | 11.0-14.0 亿美元 | 持平至小幅改善 | 符合当前预期 | Electric 12 个月 backlog 238.90 亿美元；高压项目进入 RPO/backlog | 保留 | 工程进度和季节性会造成季度波动 |
+| 输电、变电、配电、公用事业接入 | 乐观产品 | 148-165 亿美元 | 14.0-18.0 亿美元 | 改善 | 高于当前预期 | Utility 与大负荷客户共同加速，PWR 劳动力和高压经验稀缺 | 保留 | 高收入项目可能仍是低毛利工程 pass-through |
+| 输电、变电、配电、公用事业接入 | 极度乐观产品 | 170-200 亿美元 | 18.0-24.0 亿美元 | 明显改善 | NTM 上限 | 多区域大负荷接入和高压线路同时 NTP | 下移为上限 | 许可和设备交期很难在 NTM 全部突破 |
+| 发电+BESS+微电网 EPC | 悲观产品 | 2-7 亿美元 | 0.0-0.5 亿美元 | 低或波动 | 低于当前预期 | NiSource 为可验证项目，但 NTM 收入确认节奏不清 | 保留 | 气源、排放、设备 PO、融资、客户 NTP |
+| 发电+BESS+微电网 EPC | 基准产品 | 8-15 亿美元 | 0.5-1.4 亿美元 | 低中位数，项目风险高 | 符合保守预期 | 已公告 3GW engagement 只小比例转收入；行业 BTM 仍早期 | 保留 | 硬件利润在 OEM，PWR 承接执行风险 |
+| 发电+BESS+微电网 EPC | 乐观产品 | 15-28 亿美元 | 1.5-3.5 亿美元 | 改善但低于设备商 | 高于当前预期 | 多个 BTM/utility-connected hybrid 项目进入 EPC | 保留但需 NTP 验证 | 公告 GW 不等于收入；30-50% 延迟风险 |
+| 发电+BESS+微电网 EPC | 极度乐观产品 | 40-60 亿美元 | 3.5-6.5 亿美元 | 收入强，利润弹性受 pass-through 限制 | NTM 上限 | 多个 1GW+ campus 的发电+BESS+变电+地下总包同时落地 | 下移为极度乐观上限 | 任一核心许可或设备环节缺证据，即不能保留为可兑现情景 |
+| 可再生能源+BESS EPC | 悲观产品 | 38-50 亿美元 | 2.0-3.5 亿美元 | 压缩 | 低于当前预期 | 税收、关税、利率、并网排队影响项目经济性 | 保留 | 政策变化和项目延迟 |
+| 可再生能源+BESS EPC | 基准产品 | 48-60 亿美元 | 3.5-5.5 亿美元 | 持平 | 符合当前预期 | Blattner/CEI 平台与 Electric backlog 支撑 | 保留 | 低毛利 EPC 不能自动贡献高利润 |
+| 可再生能源+BESS EPC | 乐观产品 | 58-70 亿美元 | 5.0-8.0 亿美元 | 小幅改善 | 高于当前预期 | 数据中心 PPA+BESS、储能 attach 和并网改善 | 保留 | 政策和利率约束仍在 |
+| 可再生能源+BESS EPC | 极度乐观产品 | 85-110 亿美元 | 7.5-11.0 亿美元 | 改善但有限 | NTM 上限 | 政策、并网、PPA 和储能供给同时改善 | 下移为乐观上限 | 不能把长期绿色电力需求全部前置到 NTM |
+| 传统地下、通信、管线、常规维护和其他 | 悲观产品 | 120-128 亿美元 | 6.5-8.5 亿美元 | 小幅压缩 | 接近当前预期下沿 | 常规维护稳定，但通信/管线/地方预算偏弱 | 保留 | 低增长业务拖累公司增速 |
+| 传统地下、通信、管线、常规维护和其他 | 基准产品 | 120-130 亿美元 | 7.5-10.0 亿美元 | 稳定 | 符合当前预期 | Underground backlog 83.65 亿美元；常规服务稳定 | 保留 | AI 相关性低，不应上修叙事 |
+| 传统地下、通信、管线、常规维护和其他 | 乐观产品 | 115-128 亿美元 | 8.0-10.5 亿美元 | 稳定 | 中性 | 公司把资源转向高增长 Electric，传统业务不追求高增 | 保留 | 成长业务可能挤占劳动力和管理资源 |
+| 传统地下、通信、管线、常规维护和其他 | 极度乐观产品 | 120-140 亿美元 | 9.0-12.0 亿美元 | 小幅改善 | 不是主要上修来源 | 电网硬化、风暴恢复、地下化共振 | 仅作跟踪 | 与 AI 直接关系低，不能成为极度乐观核心证据 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、调整 EBITDA/净利润和自由现金流方向。汇总时已经剔除重复计算：数据中心电气、输电/变电、发电+BESS、可再生 EPC 和传统地下业务之间可能共享客户预算或工程 scope，因此不能把各产品上限简单相加。当前 NTM 预期锚为：2026 收入指引中点 349.5 亿美元，加上 2027Q1 正常季节性和 backlog 转化后，推算 NTM 正常锚约 365-380 亿美元。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 335-355 亿美元 | 较 TTM 301.21 亿美元约 +11% 至 +18% | 低于当前 NTM 锚 10-30 亿美元；仍可能高于 FY2026 指引低端附近，但低于正常 backlog 转化路径 | 13.8-14.6% | 4.0-5.0% | 调整 EBITDA 32-36 亿美元；GAAP 净利润 12-15 亿美元 | FCF 约 12-17 亿美元，营运资本和项目延迟拖累 | 中 | 数据中心/BTM 项目 NTP 延迟、设备 OEM 长交期、固定价成本、Electric margin 低于预期 |
+| 基准公司 | 365-380 亿美元 | 较 TTM 约 +21% 至 +26% | 接近管理层 FY2026 指引外推、12 个月 backlog 和正常 Q1 2027 run-rate；当前经营预期正常兑现 | 14.8-15.6% | 5.0-5.8% | 调整 EBITDA 38-41 亿美元；GAAP 净利润 15-18 亿美元 | FCF 约 18-23 亿美元，接近或略高于 FY2026 FCF 指引中点 | 中高 | backlog 转收入、CEI/DSI/Tri-City 整合、应收账款/合同资产、劳动力可用性 |
+| 乐观公司 | 390-415 亿美元 | 较 TTM 约 +29% 至 +38% | 高于当前 NTM 锚 10-45 亿美元；不是单一小基数项目，需数据中心电气、机械和大负荷电源同时强 | 15.4-16.3% | 5.8-6.6% | 调整 EBITDA 43-48 亿美元；GAAP 净利润 19-23 亿美元 | FCF 约 23-29 亿美元，但大型项目营运资本会提高波动 | 中 | 预制产能、调试队伍、设备 PO、客户验收、change order 能否覆盖成本 |
+| 极度乐观公司 | 425-465 亿美元 | 较 TTM 约 +41% 至 +54% | 显著高于当前预期；需要需求、公司捕获、利润质量和执行质量同时突破 | 16.0-17.0% | 6.5-7.5% | 调整 EBITDA 50-58 亿美元；GAAP 净利润 24-30 亿美元 | FCF 25-35 亿美元但波动大；若客户预付款不足，收入放量可能占用现金 | 低到中 | 多个 100MW-1GW 项目同时 NTP、NiSource 类项目进入 backlog/收入、劳动力和设备交期不成为硬约束 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次：需求风险放第一步，收入确认风险放第二步，份额/价格/成本风险放第三步，公司组合风险放第四步，证据可信度放第五步。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 78.75 亿美元、同比 +26.3%；Electric +30.8%；Underground +9.1% | 公司汇总、收入基数 | 支撑基准 NTM 365-380 亿美元；说明 FY2026 指引有实际 run-rate 支撑 | Q1 合并经营利润率 4.3%，提示利润率仍受季节性、并购摊销和费用层影响 | 经营现金流 3.92 亿美元、FCF 1.84 亿美元，同比改善但仍有季节性 | 保留基准；不单独上移到乐观 |
+| 总 RPO 262.42 亿美元、总 backlog 484.71 亿美元、12 个月 backlog 282.33 亿美元 | 收入基数、商业兑现 | 12 个月 backlog 覆盖 FY2026 指引中点约 80.8%，是 A/B 级可收入化锚 | backlog 高不保证高毛利，项目 mix 和固定价风险仍要折扣 | 高 backlog 提高收入可见度，但大型项目会占用营运资本 | 保留基准和乐观；极度乐观需新增 NTP |
+| CEI、Tri-City 和 Dynamic Systems 补齐 inside electrical、模块化电气、机械/工艺/预制 | 产品贡献、利润属性 | 支撑数据中心电气 30-37 亿美元和机械/液冷 11-16 亿美元的基准贡献 | 预制、FAT/SAT、commissioning 有利于利润率，但整合成本和摊销压制 GAAP | 并购带来商誉/无形资产和系统整合要求 | 保留基准；乐观需客户项目和产能利用率验证 |
+| NiSource 约 3GW 大负荷项目 | 收入基数、远期期权、执行可信度 | 是 B/C 级客户项目证据，但缺订单金额、NTP、backlog 纳入和 NTM 确认节奏 | Turnkey scope 可增加收入，但硬件 pass-through 和许可风险限制利润率 | 气源、发电许可、BESS、输电、变电和地下基础设施多环节同步 | 基准小比例纳入；主体下移至乐观/极度乐观上限 |
+| 数据中心电力接入和高压变电行业需求 | 需求层 | 支撑第一步需求强，不等于 PWR 直接收入；对输电/变电和数据中心电气为正 | 行业设备紧张不自动转为 PWR 高毛利，PWR 不是设备 OEM | 设备交期可能反而延迟施工收入确认 | 保留乐观需求；收入确认需第二步证据 |
+| BTM 自备发电项目公告多但 operating/under construction 比例低，延迟率可能 30-50% | 需求层、收入确认层 | 限制发电+BESS+微电网 EPC 的 NTM 可收入化，不影响已在 backlog 的常规 Electric 主业 | 项目延迟可能减少低毛利 pass-through，但也降低规模杠杆 | 许可、排放、燃气、融资和设备 PO 是关键执行门槛 | 发电+BESS 极度乐观下移为上限 |
+| 劳动力、固定价合同、材料和 change order | 产品利润层 | 不必重复压低需求，只影响已中标项目的利润留存 | 是利润率最大反证；收入增长可能被人工/材料/质保吞噬 | 若合同资产和应收上升，FCF conversion 下行 | 保留悲观利润率；基准不假设大幅扩张 |
+| 证券市场交易数据和估值指标 | 不属于经营传导证据 | 不影响本文收入基数 | 不影响产品利润率判断 | 不影响经营现金流证据 | 排除 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 项目延迟、设备交期和成本压力使 NTM 收入低于当前正常转化路径，利润率低于指引结构 | 现有 RPO/backlog 和 2026Q1 指引上调说明需求没有崩塌 | 数据中心和 BTM 延迟、固定价成本、劳动力短缺、应收/合同资产占用 | 保留 | 下行情景；不作为主情景 | 中 | BTM 延迟只压发电/微电网和相关需求确认，不重复压低已在 RPO 的 Electric 主业 |
+| 基准 | FY2026 指引和 12 个月 backlog 正常转化，CEI/DSI/Tri-City 保守贡献，低证据机会不前置 | A/B 级收入、分部、RPO、backlog、管理层指引；CEI/DSI 收购贡献可见 | 直接数据中心收入未披露；NiSource 尚缺金额和确认节奏 | 保留 | NTM 主情景 | 中高 | 证券市场交易数据不作为经营反证；行业热度也不作为上修证据 |
+| 乐观 | 数据中心电气、机械/液冷、输电/变电和发电+BESS 同时高于基准，且利润率小幅改善 | 电力接入硬瓶颈、CEI/Tri-City/DSI 能力、Electric backlog、行业设备/MEP 订单强 | 客户 NTP、设备 OEM 交期、竞争者扩产、工程 pass-through 限制利润 | 保留 | 上行情景，但需订单、NTP 和利润率同步验证 | 中 | 同一设备交期风险只限制收入确认，不再重复压低需求和公司组合 |
+| 极度乐观 | 需求、公司捕获、利润质量和执行质量同时突破，NTM 收入达到 425-465 亿美元 | 数据中心 power demand、BTM/GW 级项目、PWR 平台化能力提供上限可能 | NiSource 类项目未完全进入 backlog/收入；BTM 项目许可和融资不确定；劳动力/预制产能有限 | 下移 | 极度乐观上限；不进入基准或乐观中枢 | 低到中 | 远期 800VDC、SMR、1MW rack、GW campus 不能提前作为 NTM 基准收入 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。PWR 在 NTM 内最可能实现 365-380 亿美元收入、38-41 亿美元调整 EBITDA、15-18 亿美元 GAAP 净利润，FCF 约 18-23 亿美元。这个结论主要由 2026Q1 run-rate、FY2026 指引、12 个月 backlog 和 Electric segment 可见度支撑，而不是由 AI 主题叙事支撑。
+- NTM 收入结论：收入传导顺序是“AI/data center/工业大负荷需求 -> 电力接入、变电、园区电气、机械和电源项目 -> PWR backlog/RPO/NTP -> 施工、预制、调试和验收 -> 收入确认”。最强基准收入来自输电/变电/公用事业接入和数据中心电气，最强上修来自发电+BESS+微电网和机械/液冷设施侧。
+- 利润/现金流结论：利润传导弱于收入传导。PWR 不卖 GPU、变压器、UPS 或燃机，硬件涨价不等于 PWR 毛利上修；真正能留下来的利润来自预制、调试、劳动力稀缺、复杂工程管理和 change order 管理。现金流主要看客户预付款、合同资产、应收账款、设备交期和大型项目营运资本。
+- 主要传导瓶颈：1) NiSource 类 3GW 大负荷项目能否从公告/engagement 变成 backlog、NTP 和收入；2) CEI/Tri-City 数据中心电气能否在不牺牲毛利下放量；3) DSI 是否把技术/半导体/数据中心客户转成液冷设施侧高质量收入；4) Electric segment margin 能否在高 backlog 下维持；5) 固定价合同和 labor 是否侵蚀利润。
+- 乐观情景成立条件：2026H2 前后 Electric backlog 和 12 个月 backlog 继续上行；数据中心电气和 DSI 机械项目有明确客户/NTP；NiSource 或类似大负荷项目开始进入 backlog；Electric segment 利润率维持或上修；FCF conversion 不被应收和合同资产显著拖累。
+- 极度乐观情景成立条件：多个 100MW-1GW AI campus 在 NTM 内同时进入可执行阶段；utility、IPP、hyperscaler 和设备 OEM 的交付节奏同步；PWR 获得更大 turnkey scope 但能通过预制、调试和 change order 保持利润；客户预付款或合同结构足以支持营运资本。
+- 悲观情景触发条件：Q2/Q3 backlog 或 RPO 增速明显放缓；12 个月 backlog 覆盖率下滑；NiSource 类项目未进入 backlog；Electric segment margin 低于季节性正常区间；应收账款/合同资产上升快于收入；数据中心电源项目因许可、设备、融资或客户 capex 推迟。
+- 后续跟踪数据：Quanta Q2/Q3 2026 收入、Electric/Underground segment margin、total/RPO/12-month backlog、NiSource 3GW 项目 NTP/backlog、CEI/DSI/Tri-City 整合进展、经营现金流/FCF、合同资产、应收账款、变压器/开关柜/燃机交期、hyperscaler/NeoCloud capex 与 active power、BTM 项目 permit 和 equipment PO。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司经营数据最新使用 Quanta 2026Q1 披露，发布日期 2026-04-30；本地公司调研日期 2026-06-11；本地行业资料主要为 2026-06-10 至 2026-06-11；本文写作日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Quanta Services, `QUANTA SERVICES REPORTS FIRST QUARTER 2026 RESULTS`, 2026-04-30: https://investors.quantaservices.com/news-events/press-releases/detail/396/quanta-services-reports-first-quarter-2026-results
+  - Quanta Services, `QUANTA SERVICES REPORTS FOURTH QUARTER AND FULL-YEAR 2025 RESULTS`, 2026-02-19: https://investors.quantaservices.com/news-events/press-releases/detail/390/quanta-services-reports-fourth-quarter-and-full-year-2025-results
+  - Quanta Services, `Quanta Services Acquires Cupertino Electric, Inc.`, 2024-07-18: https://investors.quantaservices.com/news-events/press-releases/detail/360/quanta-services-acquires-cupertino-electric-inc-a-premier-electrical-infrastructure-solutions-provider-to-the-technology-and-renewable-energy-industries
+  - Quanta Services, `Quanta Services Acquires Dynamic Systems`, 2025-07-31: https://investors.quantaservices.com/news-events/press-releases/detail/380/quanta-services-acquires-dynamic-systems-a-premier-turnkey-mechanical-and-process-infrastructure-solutions-provider
+  - Quanta Services, `Building Upon Decades of Power Generation Experience... NiSource`, 2025-10-30: https://investors.quantaservices.com/news-events/press-releases/detail/386/building-upon-decades-of-power-generation-experience-quanta-expands-its-total-solutions-platform-and-announces-its-selection-by-nisource-to-provide-power-generation-and-grid-infrastructure-solutions-for-a-large-load-customer
+- 项目内公司和行业来源：
+  - `公司调研/电力_发电_能源_储能/PWR_Quanta Services_公司调研_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`
+- 行业外部校验来源：
+  - Goldman Sachs, `US Data Center Power Demand Projected to Double by 2027`, 2026-05: https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027
+  - JLL, `2026 Global Data Center Market Outlook`, 2026-01: https://www.jll.com/en-us/insights/market-outlook/data-center-outlook
+  - CBRE, `U.S. Real Estate Market Outlook 2026 - Data Centers`: https://www.cbre.com/insights/books/us-real-estate-market-outlook-2026/data-centers
+  - Wood Mackenzie, `Data center demand drives US electrical equipment market to $65B`, 2026-05: https://www.woodmac.com/press-releases/data-center-demand-drives-us-electrical-equipment-market-to-%2465b-reshaping-industry-dynamics/
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 管理层指引是当前最强 A 级锚点：收入 347.0-352.0 亿美元、调整 EBITDA 34.91-36.50 亿美元、FCF 15.5-20.5 亿美元。
+  - FY2027 不作为主表口径。若 Electric backlog、数据中心电气、DSI 机械和大负荷电源项目继续转化，2027 年化 run-rate 可以高于 NTM 基准，但这需要 Q2/Q3 2026 新增 backlog 和项目 NTP 验证。
+  - 800VDC/MV UPS、1MW rack、SMR/先进核电、长时储能、AI workload-to-grid 调度属于远期期权或安装/集成能力跟踪，不进入 PWR NTM 基准收入。
+- 主要来源：以 Quanta 公司 IR/SEC 披露、公司调研正式报告、行业调研正式报告和公开行业研究为主；未使用证券市场交易数据、公司排序或特征量化结果作为经营价值传导证据。

@@ -1,0 +1,184 @@
+{
+  "ADBE": {
+    "company": {
+      "old": {
+        "path": "D:\\investment\\基本面\\公司调研\\结果\\企业软件_数据平台\\备份\\ADBE_2026-09-18T20_04_19-07_00-c6c9de1724\\ADBE_Adobe_公司调研_2026-09-07.md",
+        "sha256": "bbbe2328ab974512067a38b5fbe7a8278e68e10b6b286eeaf7f7f84bcc4d1209",
+        "lines": 452
+      },
+      "new": {
+        "path": "D:\\investment\\基本面\\公司调研\\结果\\企业软件_数据平台\\ADBE_Adobe_公司调研_2026-09-18.md",
+        "sha256": "2c7e3436bb880660f5c17fd7a724584be2e3253381ea3e538461f2d38c808c75",
+        "lines": 539
+      }
+    },
+    "decision": {
+      "old": {
+        "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\备份\\ADBE_2026-09-18T20_34_30-07_00-ce5e57c2bb\\ADBE_经营情景市场状态投资决策_2026-09-09.md",
+        "sha256": "79906452350d4b00840a1bfc22f12520393fd5ef274a83aa8842e1c4daeff0cf",
+        "lines": 1093
+      },
+      "new": {
+        "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\ADBE_经营情景市场状态投资决策_2026-09-18.md",
+        "sha256": "d920e40a10ac31f78ff0275c5ee12eb1e1ef8b1a4e6cb2ed4f3d19c725a5f82a",
+        "lines": 703
+      }
+    }
+  },
+  "ALAB": {
+    "company": {
+      "old": {
+        "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\备份\\ALAB_2026-09-18T20_04_15-07_00-a495578a35\\ALAB_AsteraLabs_公司调研_2026-09-07.md",
+        "sha256": "72ca1cfa29e8ee4bf8ec12e83a424599da83fc8c397971a6d884c3c1812cdeb9",
+        "lines": 519
+      },
+      "new": {
+        "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\ALAB_AsteraLabs_公司调研_2026-09-18.md",
+        "sha256": "23a13820267fb9b67e72b2f6d902311af0829d19cf5b55a21cdc3a52d4ba8974",
+        "lines": 467
+      }
+    },
+    "decision": {
+      "old": {
+        "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\备份\\ALAB_2026-09-18T20_34_25-07_00-9e3aeab9fd\\ALAB_经营情景市场状态投资决策_2026-09-08.md",
+        "sha256": "b4a85367271b0ce2da322da90eb33e6b82545419e91a024bef45112fd5d1c614",
+        "lines": 904
+      },
+      "new": {
+        "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\ALAB_经营情景市场状态投资决策_2026-09-18.md",
+        "sha256": "c5dcd7a4e1d4fe9866ee9ada4807f3682259b38c27420e4009bd40f7723e4536",
+        "lines": 499
+      }
+    }
+  },
+  "AVGO": {
+    "company": {
+      "old": {
+        "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\备份\\AVGO_2026-09-18T20_04_13-07_00-64030cbc4e\\AVGO_Broadcom_公司调研_2026-09-07.md",
+        "sha256": "8372897d84df354a965824472470408ba347b42233795e20b1dda02f46f951e7",
+        "lines": 549
+      },
+      "new": {
+        "path": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AVGO_Broadcom_公司调研_2026-09-18.md",
+        "sha256": "2dfa9fe1c3be43982e1fd7ec5ab3c65b71cea9a58d7381e7a9b90104fcb5b1bb",
+        "lines": 506
+      }
+    },
+    "decision": {
+      "old": {
+        "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\备份\\AVGO_2026-09-18T20_34_24-07_00-3f4f2dee30\\AVGO_经营情景市场状态投资决策_2026-09-08.md",
+        "sha256": "40706b8fe3b1ed9b8656165878db012c8033d41a53e38ec1334cbcfe4d767508",
+        "lines": 1046
+      },
+      "new": {
+        "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\AVGO_经营情景市场状态投资决策_2026-09-18.md",
+        "sha256": "d94687b7c7e732f0ca5efb118013dc3c99643eaa093d03aea7575143f648dd7e",
+        "lines": 584
+      }
+    }
+  },
+  "CRWV": {
+    "company": {
+      "old": {
+        "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\备份\\CRWV_2026-09-18T20_04_18-07_00-02ed381d2a\\CRWV_CoreWeave_公司调研_2026-09-07.md",
+        "sha256": "575fd6135202c54a298e06417d852a56d8128d2cdb1f4d3d23977f646d7e0a66",
+        "lines": 512
+      },
+      "new": {
+        "path": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\CRWV_CoreWeave_公司调研_2026-09-18.md",
+        "sha256": "b04a3b4bdced60a0ab4fcde2af8666627fd2892cdb320c7d602e28b52fad71cd",
+        "lines": 482
+      }
+    },
+    "decision": {
+      "old": {
+        "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\备份\\CRWV_2026-09-18T20_34_29-07_00-ae9acf1165\\CRWV_经营情景市场状态投资决策_2026-09-08.md",
+        "sha256": "6e5a96ca5be18bea8e134c82ca121173ed7741eb88b97023ad615a20a2152c9d",
+        "lines": 820
+      },
+      "new": {
+        "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\CRWV_经营情景市场状态投资决策_2026-09-18.md",
+        "sha256": "c179c4d9edcc13fb154f14693f8f202100ff97e5d795863031b3f013ad065682",
+        "lines": 572
+      }
+    }
+  },
+  "LIN": {
+    "company": {
+      "old": {
+        "path": "D:\\investment\\基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\备份\\LIN_2026-09-18T20_04_12-07_00-43e15bb8ea\\LIN_Linde_plc_公司调研_2026-09-07.md",
+        "sha256": "232e5996a1fd2564785afa757938a34d05f69a14303b11e0045720e0c763a776",
+        "lines": 440
+      },
+      "new": {
+        "path": "D:\\investment\\基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\LIN_Linde_plc_公司调研_2026-09-18.md",
+        "sha256": "77486179123d116df10aa1f7c84b8ade3f7f2616689684b58dca586274f11936",
+        "lines": 473
+      }
+    },
+    "decision": {
+      "old": {
+        "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\备份\\LIN_2026-09-18T20_34_22-07_00-d153acff7f\\LIN_经营情景市场状态投资决策_2026-09-09.md",
+        "sha256": "2561ecdbb70c1588581f91d59c2412145e34016836601c0ce140415c3862a070",
+        "lines": 797
+      },
+      "new": {
+        "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\LIN_经营情景市场状态投资决策_2026-09-18.md",
+        "sha256": "69c8a2d34a636a6bfa199ded96181510f90d39e998d10c3cb4b8b11b1337108d",
+        "lines": 533
+      }
+    }
+  },
+  "MU": {
+    "company": {
+      "old": {
+        "path": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\备份\\MU_2026-09-18T20_04_17-07_00-c9e9d897c0\\MU_Micron_Technology_美光科技_公司调研_2026-09-07.md",
+        "sha256": "4883089314c3d3ba9afc7628ef78f9de0927adc04a6fa811c0def2633c2c386e",
+        "lines": 562
+      },
+      "new": {
+        "path": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\MU_Micron_Technology_美光科技_公司调研_2026-09-18.md",
+        "sha256": "a4a300edc991a03c60c508e7ad64071b0e249dfeb5355deeaeac80b636f6fc08",
+        "lines": 597
+      }
+    },
+    "decision": {
+      "old": {
+        "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\备份\\MU_2026-09-18T20_34_28-07_00-86dd5e75da\\MU_经营情景市场状态投资决策_2026-09-08.md",
+        "sha256": "88cbbc4f98008267dee1a14f3cac771a1c87d2553475f9582750f0a77f1870ab",
+        "lines": 888
+      },
+      "new": {
+        "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\MU_经营情景市场状态投资决策_2026-09-18.md",
+        "sha256": "787304a7ee678e417942aa7a7da0f44f962cbf2073ae7c67037774e47960308a",
+        "lines": 521
+      }
+    }
+  },
+  "SPCX": {
+    "company": {
+      "old": {
+        "path": "D:\\investment\\基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\备份\\SPCX_2026-09-18T20_04_16-07_00-b7d52e4751\\SPCX_SpaceX_公司调研_2026-09-07.md",
+        "sha256": "5954db3707ed114580aa53858f94c182075098693cf544bedfb17e9af25cddde",
+        "lines": 602
+      },
+      "new": {
+        "path": "D:\\investment\\基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\SPCX_SpaceX_公司调研_2026-09-18.md",
+        "sha256": "77aa46e94c83fbd6f2b905c62c0b7f75c811053ffd97ed1a2b403b67b40bdf73",
+        "lines": 561
+      }
+    },
+    "decision": {
+      "old": {
+        "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\备份\\SPCX_2026-09-18T20_34_26-07_00-95070d64aa\\SPCX_经营情景市场状态投资决策_2026-09-08.md",
+        "sha256": "7bfc2bfc287a9cad126575b00ca25d03530d38013e68b4e6ac800ba3845cbb87",
+        "lines": 962
+      },
+      "new": {
+        "path": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\SPCX_经营情景市场状态投资决策_2026-09-18.md",
+        "sha256": "a260121e3e1697dc42a08b650286a20130d286493ed46cce483369e2aa1bbdd2",
+        "lines": 627
+      }
+    }
+  }
+}

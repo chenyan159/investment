@@ -1,0 +1,420 @@
+# 公司：WDC Western Digital（WesternDigital）公司调研_2026-06-11
+
+报告日期：2026-06-11  
+调研对象：Western Digital Corporation（NASDAQ: WDC）  
+正式分类目录：`公司调研/AI服务器_存储_EMS/`，与 `公司调研/公司索引.md` 一致。  
+资料边界：仅使用 `行业调研/` 内与 HDD、AI-native 存储、企业级 SSD、AI 数据中心建设规模相关的项目内材料，并结合联网搜索；未读取、引用或继承 `特征量化/`、`日度资料/` 或既有 WDC 公司报告。  
+核心结论：WDC 已从“PC/消费硬盘 + NAND/Flash 的老牌存储公司”变成“纯 HDD 的 AI/cloud 容量层供应商”。它不是 AI 芯片公司，也不是高速热层 SSD 公司；它的 AI 价值来自 nearline HDD 在 AI 数据湖、训练 checkpoint、推理日志、RAG/agent 数据和长期冷温对象存储中的低成本容量底座。2026 年的投资变量是：高容量 HDD 供需是否持续紧、40TB ePMR/44TB HAMR 是否顺利通过 hyperscaler qualification、UltraSMR/平台软件是否提高客户锁定，以及 QLC SSD 是否在温层替代部分 HDD。
+
+## 一、公司整体业务、投资人认知、产业链位置和估值快照
+
+### 1.1 业务结构：2025 年分拆后，WDC 是纯 HDD 公司
+
+Western Digital 现在的主体业务是基于 HDD 技术的数据存储设备和解决方案，面向三个 end market：
+
+| end market | 公司定义 | 2026Q3 收入 | 占比 | 对 AI 数据中心的相关性 |
+|---|---|---:|---:|---|
+| Cloud | 公有云、私有云、企业客户，主要是 nearline/high-capacity HDD 与平台方案 | `$2.972B` | `89.1%` | 最高。hyperscaler 对象存储、AI 数据湖、训练/推理数据留存、日志和冷温层容量 |
+| Client | OEM/channel 的桌面、笔记本和客户端 HDD | `$179M` | `5.4%` | 低。PC 复苏或边缘设备相关，但不是本次投资主线 |
+| Consumer | 零售、外置盘、NAS、WD Red/Gold/Purple/G-DRIVE 等 | `$186M` | `5.6%` | 低到中。NAS/creator 有需求，但 AI 数据中心不靠这层 |
+| 合计 | 持续经营口径 HDD 业务 | `$3.337B` | `100%` | Cloud 是核心 |
+
+关键变化是 2025-02-21 完成 HDD 与 Flash/SanDisk 业务分拆：WDC 继续 HDD，Sandisk 独立持有 Flash/NAND 业务。分拆后，WDC 的财报和估值应按“高容量 HDD 寡头 + AI/cloud 容量层”看，而不是按 NAND 周期或消费电子库存周期看。
+
+### 1.2 投资人眼中的 WDC：从 legacy HDD 重估为 AI 数据层短缺标的
+
+过去市场对 HDD 的常规印象是：PC/消费需求下滑、单价长期下降、SSD 替代、周期性强。2025-2026 年这一认知发生反转，原因有四个：
+
+1. **AI 使数据永久化。** 训练集、清洗中间数据、checkpoint、推理日志、RAG 文档、embedding、agent memory、多模态生成资产、合规审计都需要低成本长期保存。
+2. **Cloud 收入已经约 89%-90%。** WDC 不再主要靠 consumer/client；Q3 FY2026 cloud revenue 为 `$2.972B`，同比从 `$2.007B` 增长 `+48.1%`。
+3. **供给侧高度集中。** HDD 整机 CR3 基本等于全市场，nearline 更集中；Seagate、WDC、Toshiba 三家决定供给节奏，扩产不可能像普通组装一样快速。
+4. **公司重新给出资本回报叙事。** Q3 FY2026 自由现金流 `$978M`，回购 `$752M`，宣布季度股息提高 20% 到 `$0.15/share`；资产负债表由高杠杆转为净现金。
+
+投资人现在买的是：`AI/cloud 数据持续增长 + HDD 产能纪律 + 高容量 mix + LTA/PO 可见度 + FCF/回购`。需要警惕的是，市场也可能把一次供需短缺过度外推；若 2027 年 lead time 缩短、ASP 回落或 QLC SSD 大规模替代温层，估值会压缩。
+
+### 1.3 最近 3 年重大业务变动、转型和收购
+
+| 日期 | 事件 | 业务含义 | 对估值/财务影响 |
+|---|---|---|---|
+| 2023-2024 | 战略评估和业务分拆准备 | 把 HDD 与 Flash 拆开，解除 NAND 周期对 HDD 估值的拖累 | 产生 strategic review、business realignment 等费用 |
+| 2025-02-21 | 完成 Sandisk 分拆 | WDC 变成 pure-play HDD；Sandisk 独立上市/运营 Flash/NAND | 历史 Flash 结果转为 discontinued operations；WDC 初始保留 `28.8M` 股 Sandisk |
+| 2025-06 | 用 `21.3M` 股 Sandisk 税免换债，偿还约 `$800M` Term Loan A-3 | 资产负债表去杠杆 | 降低利息费用和信用风险 |
+| 2025-07 | 授权 `$2.0B` 回购并恢复股息 | 现金流信心提升 | 股票开始按 FCF/资本回报重估 |
+| 2026-02 | 进一步货币化 Sandisk 股权并赎回 Senior Notes；preferred shares 转为普通股 | 债务结构简化，债权人基础收缩 | Q3 FY2026 期末只剩 `$1.581B` 当前长期债务，无长期债务 |
+| 2026-02-03 | Innovation Day 2026：推出 ePMR/HAMR/UltraSMR、高带宽 HDD、Dual Pivot、power-optimized drive、intelligent platform 路线 | 从单盘容量竞争转向 AI/cloud 数据层产品路线 | 强化长期收入 CAGR `>20%`、gross margin `>50%`、operating margin `>40%`、FCF margin `>30%` 的模型 |
+| 2026-06 | Computex 2026：强调“AI 不只是 compute，而是 data system”，展示 Ultrastar 高容量 HDD、Data 3000 JBOD、OpenFlex EBOF、RapidFlex NVMe-oF | 面向 AI builder 和 neo-cloud 的平台化销售 | 有利于非 hyperscaler 客户采用 WDC 方案，但收入仍未单独披露 |
+
+过去 3 年没有改变公司形态的大型收购；真正的结构性事件是“2016 年 SanDisk 收购的反向拆分/剥离”，让 WDC 回到更纯的 HDD 资产。
+
+### 1.4 产业链位置
+
+WDC 位于 AI 数据中心产业链的**冷温容量层和对象存储硬件底座**：
+
+```text
+AI 芯片/GPU/ASIC -> AI server/rack -> 高速网络/RDMA -> 热层 HBM/DRAM/NVMe
+                         -> 训练数据、checkpoint、RAG、日志、模型仓库
+                         -> WDC nearline HDD / UltraSMR / ePMR / HAMR / JBOD 平台
+                         -> S3/object storage、生命周期管理、归档和再激活
+```
+
+它不直接卖 GPU、AI ASIC、HBM、光模块或 CXL/KV cache 控制器。它的直接客户主要是 hyperscaler、cloud service provider、enterprise storage/OEM 和渠道。由于 EB 级数据迁移成本高、qualification 长、可靠性要求高，WDC 的客户替换成本显著高于普通消费硬件。
+
+### 1.5 股价、估值、利润率和财务快照
+
+行情和估值口径随 intraday 和供应商数据略有差异，以下按 2026-06-11 查询快照列示：
+
+| 指标 | 最新值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | 约 `$497`/share | 2026-06-11，Google/Robinhood intraday 快照约 `$496.95-$497.77` | 52 周区间约 `$54.60-$602.54`，波动极大 |
+| 市值 | 约 `$171-$173B` | 2026-06-11，`344.68M` 股左右 | 使用 10-Q 披露 2026-04-23 outstanding shares `344.682M` 交叉校验 |
+| Trailing PE | 约 `29-30x` | 2026-06-11，Google/Yahoo/Robinhood 类供应商 | 注意：GAAP EPS 被 Sandisk retained interest mark-to-market gain 大幅抬高 |
+| Forward PE | 约 `25.7x` | 2026-06-11，Yahoo 类 consensus 口径 | 更接近 FY2027E/下一年共识；公司长期模型 EPS `>$20` |
+| P/S | 约 `15.7x` | 2026-06-11，Yahoo 类 TTM 口径 | 用 WDC 持续经营 TTM revenue `$11.777B` 与市值 `$171B` 自算约 `14.5x` |
+| 收入增速 | Q3 FY2026 `+45% YoY`；9M FY2026 `+33% YoY` | Q3 FY2026 10-Q/press release | Q4 FY2026 指引收入 YoY `+36% to +44%` |
+| 毛利率 | GAAP `50.2%`；non-GAAP `50.5%` | Q3 FY2026 | Q4 FY2026 non-GAAP GM 指引 `51%-52%` |
+| 净利率 | GAAP continuing net margin `96.0%`；core non-GAAP net margin `31.4%` | Q3 FY2026 | GAAP 利润含 Sandisk 持股未实现收益；看经营质量应看 non-GAAP |
+| 自由现金流 | Q3 FY2026 `$978M`；9M FY2026 约 `$2.23B` | Q3 FY2026 | Q3 FCF margin `29.3%`，接近长期目标 `>30%` |
+| Q4 FY2026 指引 | revenue `$3.65B +/- $100M`，non-GAAP EPS `$3.25 +/- $0.15` | 2026-04-30 | FY2026E revenue 约 `$12.82B`，non-GAAP EPS 中点约 `$9.88` |
+
+估值解释：如果用 FY2026E non-GAAP EPS `$9.88` 算，股价 `$497` 对应约 `50x`；如果用公司 3-5 年长期模型 EPS `>$20` 算，则约 `25x`。因此 WDC 当前估值已经要求市场相信 `>20%` revenue CAGR、`>50%` GM、`>40%` OM 和 nearline HDD 供需紧张不是短周期。
+
+### 1.6 资产负债表健康度
+
+Q3 FY2026 资产负债表明显改善：
+
+| 指标 | 2026-04-03 | 2025-06-27 | 变化 |
+|---|---:|---:|---|
+| Cash and cash equivalents | `$2.050B` | `$2.114B` | 基本稳定 |
+| Accounts receivable | `$1.894B` | `$1.486B` | 随收入增长上升 |
+| Inventories | `$1.357B` | `$1.291B` | 小幅上升，未出现过度堆货 |
+| Retained interest in Sandisk | `$1.187B` | `$354M` | 仍有 1.7M 股 Sandisk，预计 2026 年内货币化 |
+| Total current assets | `$6.911B` | `$5.856B` | 增强 |
+| Current portion of long-term debt | `$1.581B` | `$2.226B` | 明显下降 |
+| Long-term debt | `0` | `$2.485B` | Senior Notes/Term Loan 通过交易大幅清理 |
+| Total liabilities | `$5.365B` | `$8.462B` | 去杠杆显著 |
+| Shareholders' equity | `$9.680B` | `$5.311B` | 利润和 Sandisk mark-to-market 推动 |
+
+健康度评价：
+
+- **流动性强。** Current ratio 约 `1.49x`；cash `$2.05B` 覆盖当前债务 `$1.581B` 后仍净现金约 `$469M`，若加 Sandisk retained stake 则弹性更高。
+- **杠杆显著下降。** Q3 deck 明确称公司已实现 net cash position；利息费用 Q3 FY2026 为 `$38M`，同比从 `$91M` 降低 `58%`。
+- **现金回报激进但有支撑。** 9M FY2026 回购 `$1.92B`、普通股分红 `$120M`；Q3 单季 FCF `$978M` 能覆盖 `$752M` 回购和股息。
+- **风险在营运资本和客户集中。** Cloud/hyperscaler 占比高，PO/LTA 提高可见度但也提高客户议价集中度；若订单取消或推迟，收入弹性会向下。
+
+总体判断：财务状况“健康偏强”。WDC 的问题不是偿债，而是高估值下能否维持高容量 HDD 的供需紧张和毛利率。
+
+## 二、最新和最近 4 次财报：五个季度数据表
+
+说明：WDC 披露的是 Cloud/Client/Consumer end-market revenue，不披露各 end market 单独利润率，也不披露 backlog/bookings/cancel rate。下表中“AI 数据中心相关收入”分两层：`Cloud revenue` 是硬披露 proxy；`AI-driven revenue` 是基于 cloud 增量、高容量 nearline mix 和行业需求的推算，不可等同于公司披露口径。
+
+| 财报季度 | 披露日期 | Revenue / YoY / QoQ | Cloud / Client / Consumer | non-GAAP GM / OM / EPS | Exabytes shipped | 订单、交期、取消率线索 | AI 数据中心相关收入判断 |
+|---|---:|---:|---:|---:|---:|---|---|
+| Q3 FY2026 | 2026-04-30，period ended 2026-04-03 | `$3.337B` / `+45%` / `+11%` | Cloud `$2.972B` `89.1%`; Client `$179M`; Consumer `$186M` | GM `50.5%`; OM `38.6%`; EPS `$2.72`; FCF `$978M` | Nearline `199EB`; Non-nearline `23EB`; total `222EB` | 公司 10-Q 称 AI/hybrid data 增长导致高容量盘需求加速、制造复杂度和 production lead time 拉长，客户更早合作并延长商业安排；此前 Q2 call 渠道转述为 CY2026 基本售罄、top 7 客户 firm POs | Cloud 是硬披露 `$2.972B`; AI/hyperscaler 增量以 cloud YoY 增量 `$965M` 为最低线索，估算 AI-driven revenue `$1.6-$2.2B` |
+| Q2 FY2026 | 2026-01-29，period ended 2026-01-02 | `$3.017B` / `+25%` / `+7%` | Cloud `$2.673B` `88.6%`; Client `$176M`; Consumer `$168M` | GM `46.1%`; OM `33.8%`; EPS `$2.13`; FCF `$653M` | Nearline `192EB`; Non-nearline `23EB`; total `215EB` | 管理层在 Q2 call 中称 CY2026 产能基本被锁定；top 7 客户 firm POs；部分 top customers 签 2027/2028 LTA，含 exabytes volume 和 price | Cloud `$2.673B`; AI-driven 估算 `$1.4-$2.0B`; 供需紧张开始进入股价主叙事 |
+| Q1 FY2026 | 2025-10-30，period ended 2025-10-03 | `$2.818B` / `+27%` / `+8%` | Cloud `$2.510B` `89.1%`; Client `$146M`; Consumer `$162M` | GM `43.9%`; OM `30.4%`; EPS `$1.78`; FCF `$599M` | Nearline `183EB`; Non-nearline `21EB`; total `204EB` | Q1 deck 称 shipped `2.2M` latest-generation ePMR units；渠道转述 top customers POs 已覆盖 2026 上半年并向下半年延伸 | Cloud `$2.510B`; AI-driven 估算 `$1.2-$1.8B`; AI 数据保留需求成为 FY2026 上修基础 |
+| Q4 FY2025 | 2025-07-30，period ended 2025-06-27 | `$2.605B` / `+30%` / `+14%` | Cloud `$2.329B` `89.4%`; Client `$140M`; Consumer `$136M` | GM `41.3%`; OM `28.1%`; EPS `$1.66`; FCF `$675M` | Nearline `170EB`; Non-nearline `20EB`; total `190EB` | shipped `>1.7M` latest-generation ePMR drives up to `26TB CMR / 32TB UltraSMR`; debt down `$2.6B`; 新回购和股息 | Cloud `$2.329B`; AI-driven 估算 `$1.0-$1.6B`; 分拆后第一阶段证明纯 HDD 可高 FCF |
+| Q3 FY2025 | 2025-04-30，period ended 2025-03-28 | `$2.294B` / n/a continuing comparable / `-5%` vs Q2 FY25 | Cloud `$2.007B` `87.5%`; Client `$137M`; Consumer `$150M` | GM `40.1%`; OM `26.0%`; EPS `$1.38`; FCF `$436M` | Nearline `145EB`; Non-nearline `21EB`; total `166EB` | Sandisk 分拆刚完成，HDD 持续经营口径开始清晰；订单紧张未像 2026 一样明牌 | Cloud `$2.007B`; AI-driven 估算 `$0.7-$1.2B`; 仍被看作 HDD 周期复苏早期 |
+
+交叉验证：Q3 FY2026 cloud revenue / nearline EB 约 `$14.93/TB`，高于 Q2 的 `$13.92/TB` 和 Q1 的 `$13.72/TB`，说明 mix、ASP 或高容量 allocation 已经改善。这个 `$14-$15/TB` 是供应商收入/出货 TB 的粗略口径，不是终端零售价格。
+
+## 三、最新指引、收入占比、产品矩阵和重点业务
+
+### 3.1 Q4 FY2026 指引和业务占比推算
+
+WDC 在 2026-04-30 给出的 Q4 FY2026 指引：
+
+| 指标 | 指引 | 中点含义 |
+|---|---:|---|
+| Revenue | `$3.65B +/- $100M` | 中点 YoY 约 `+40%`；公司表述为 `+36% to +44% YoY` |
+| non-GAAP gross margin | `51%-52%` | 中点 `51.5%`，较 Q3 再扩张约 `100bps` |
+| non-GAAP operating expenses | `$385M-$395M` | 约 `$390M` |
+| Interest and other expense, net | `~$10M` | 去杠杆后利息压力明显下降 |
+| Tax rate | `~16%` | 正常化 |
+| non-GAAP diluted EPS | `$3.25 +/- $0.15` | FY2026E non-GAAP EPS 中点约 `$9.88` |
+| diluted weighted shares | `~385M` | 回购部分抵消股票补偿和转换稀释 |
+
+若 Q4 mix 继续接近 Q3 的 `Cloud 89% / Client 5% / Consumer 6%`，则 Q4 收入可粗略拆为：
+
+| Q4 FY2026E end market | 收入估算 | 增长/重要性 |
+|---|---:|---|
+| Cloud | `$3.23-$3.30B` | 最大增量，几乎所有估值逻辑都在这里 |
+| Client | `$180-$210M` | 低增速、低战略权重 |
+| Consumer | `$190-$230M` | 品牌和渠道价值仍在，但不是 AI 主线 |
+
+最突出的业务是 **Cloud nearline HDD**，不是 consumer、client，也不是分拆后的 NAND/SSD。公司最侧重的是：
+
+- 高容量 ePMR/UltraSMR nearline HDD：当前收入和现金流主体。
+- 40TB ePMR / 44TB HAMR / 60TB / 100TB+ 路线：决定 2027-2030 EB/TCO 曲线。
+- Ultrastar Data Series / OpenFlex / RapidFlex / intelligent platform：把 HDD 介质升级为平台化交付，降低客户采用复杂度。
+- High Bandwidth Drive、Dual Pivot、Power-optimized Drive：解决 AI 数据中心在 warm tier 的吞吐/TB 与 W/TB 矛盾。
+
+### 3.2 跳过或降权的非 AI/低增速业务
+
+| 业务/产品 | 为什么跳过或低权重 |
+|---|---|
+| Client desktop/notebook HDD | Q3 FY2026 只有 `$179M`，占比 `5.4%`；PC HDD 长期被 SSD 替代，非 AI 主线 |
+| Consumer external drive、G-DRIVE、普通零售移动盘 | Q3 FY2026 `$186M`，占比 `5.6%`；有品牌价值但收入弹性远低于 cloud nearline |
+| WD Red/Gold/Purple 的中小企业/NAS/监控场景 | 可受 HDD 缺货间接受益，但不是 hyperscaler LTA 级别订单 |
+| 传统低容量 HDD replacement | 高容量 mix 时代，低容量盘不是 margin 扩张核心 |
+| Sandisk/NAND/SSD operating business | 已分拆，不再并表；WDC 只保留少量 Sandisk 股权，不应把 Sandisk NAND 收入算入 WDC |
+
+### 3.3 重点和潜力产品清单
+
+| 产品/方向 | 当前状态 | 收入贡献估算 | 利润率判断 | 销售增速判断 | 不可漏掉的原因 |
+|---|---|---:|---|---|---|
+| 26TB CMR / 32TB UltraSMR ePMR nearline，Ultrastar DC HC690 等 | 已量产；Q3 shipped `4.1M` latest-generation ePMR units | Cloud revenue 主体，Q3 high-capacity nearline 估算 `$2.0-$2.6B` | Q3 公司 non-GAAP GM `50.5%`；高容量产品应高于 corporate average | 2026 受 top customer allocation 和 high-capacity mix 拉动 | 当前现金流核心 |
+| 40TB ePMR / UltraSMR | 路线和 qualification；Computex/Innovation Day 重点展示 | 2026 当前小，2027 可成为主增量 | 高容量稀缺期 GM 估算 `55%+` | 从 2026H2/2027 起快增 | 平滑迁移，比 HAMR 风险低 |
+| 44TB HAMR | 2026 customer qualification；路线到 `60TB/100TB+` | 当前收入很小，2027 开始贡献 | 初期良率成本高，但 $/TB 溢价高 | 取决于 hyperscaler qualification | Seagate HAMR 已领先，WDC 必须追上 |
+| UltraSMR software capacity premium | 已用于高容量 SMR，官方称 UltraSMR 软件可提升约 `20%` 容量 | 嵌入 high-capacity HDD ASP，不单独披露 | 软件/firmware 属性提升 margin | hyperscaler 冷对象池采用提高 | 增加 TB/rack、降低客户 TCO |
+| Ultrastar Data 3000 Series JBOD / Data60 / Data102 | Computex 2026 展示；产品 brief 显示 SAS-4、IsoVibe/ArcticFlow | 当前可能 `<5%-8%` revenue，但可带动 HDD pull-through | 硬件系统 GM 低于软件，高于普通转售取决于 attach | neo-cloud、HPC、企业 AI 采用 | 帮非 hyperscaler 降低采用门槛 |
+| High Bandwidth Drive + Dual Pivot | 2x bandwidth demonstrated；2030 规划最高 8x；Dual Pivot 提升 transactions/sec | 当前 R&D/早期，无实质收入 | 若进入 warm tier，可获得 premium | 2027 qualification，2028+ 放量 | 抵抗 QLC SSD 在 warm tier 的替代 |
+| Power-optimized HDD | 2027 customer qualification 路线；牺牲 `5%-10%` performance，功耗最多降 `20%`，容量增 `10%` | 当前无收入，2027 起冷层导入 | 电力短缺下可高溢价 | 2027-2028 增长 | AI DC 约束从 $/TB 变为 W/TB、rack/TB |
+| Intelligent storage platform / software abstraction | Innovation Day 路线，目标 2027 之后简化高容量技术采用 | 当前不披露，短期小 | 软件属性可高，但初期可能作为硬件 attach | 2027+ | 提高客户锁定和 qualification 复用 |
+
+## 四、关键产品当前贡献、AI 技术栈重要性、供需紧张和定价权
+
+评分口径：5 分最高。收入贡献为 WDC 估算口径，不是公司披露分部。
+
+| 产品/业务 | 当前季度收入贡献估算 | YoY/环比趋势 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 结论 |
+|---|---:|---|---:|---:|---:|---:|---|
+| Existing high-capacity nearline HDD（26/32TB ePMR/UltraSMR） | `$2.0-$2.6B/Q` | Cloud Q3 YoY `+48%`，latest ePMR units 从 Q4FY25 `>1.7M` 到 Q3FY26 `4.1M` | 5 | 5 | 5 | 4 | 当前最强，WDC 现金流核心 |
+| Cloud nearline HDD overall | `$2.972B/Q` cloud disclosed；AI-driven 估算 `$1.6-$2.2B/Q` | Q3 YoY `+965M` cloud 增量 | 5 | 5 | 5 | 4 | 89% revenue proxy，需避免全算 AI |
+| 40TB ePMR/UltraSMR | `<$0.2-$0.4B/Q` 当前早期 | 2026H2/2027 ramps | 5 | 4 | 5 | 4 | next capacity point，决定 2027 mix |
+| 44TB HAMR | 当前接近 `0-$0.1B/Q` | qualification 阶段 | 5 | 4 | 4 | 3 | 技术上必须成功，短期落后 Seagate |
+| UltraSMR capacity premium | 嵌入 high-capacity HDD，单独不可拆 | SMR 在 hyperscaler 冷对象池提升 | 4 | 4 | 4 | 4 | 对大云有价值，对普通企业导入慢 |
+| Ultrastar Data 3000/JBOD/platform | `$0.1-$0.3B/Q` 估算 | Computex 2026 新推，pull-through 价值高 | 3 | 3 | 3 | 3 | 小业务但有锁定价值 |
+| High Bandwidth / Dual Pivot HDD | 当前 negligible | 2027-2028 optionality | 3 | 2 | 2 | 3 | 对 warm tier 有潜力，但 QLC SSD 是强替代 |
+| Power-optimized HDD | 当前 negligible | 2027 qualification | 4 | 3 | 3 | 4 | 若电力成为第一约束，将成为冷层 premium SKU |
+
+## 五、一年后收入贡献三情景预测
+
+假设基准：FY2026E revenue 中点约 `$12.82B`；Q4 FY2026 annualized run-rate 约 `$14.6B`。公司长期模型为 revenue CAGR `>20%`、nearline EB mid-20s CAGR、stable pricing。以下为未来 12 个月累计收入/运行率推算。
+
+| 产品/业务 | 基准情景：一年后 | 乐观情景：一年后 | 极度乐观情景：一年后 |
+|---|---|---|---|
+| Existing high-capacity nearline HDD | 年收入 `$10-$12B`；增速 `+20%-30%`；AI 重要性 5；供需 4；溢价 4 | `$12-$15B`；增速 `+35%-50%`；高容量 mix 快速提高；GM `52%-58%` | `$15-$18B`；增速 `+55%+`；客户继续抢 allocation，$/TB 稳中升 |
+| Cloud nearline overall | 年收入 `$12-$14B`；cloud 占比 `88%-90%` | `$14-$17B`；AI/cloud 数据保留政策更强 | `$17-$21B`；agent/多模态/主权 AI 同时放量 |
+| 40TB ePMR/UltraSMR | 年收入 `$0.8-$1.8B`；客户导入开始 | `$2-$4B`；2026H2 qualification 顺利，2027 放量 | `$4-$7B`；40TB 成为新增 EB 主要 capacity point |
+| 44TB HAMR | 年收入 `$0.3-$1.0B`；少数客户 qualification/early shipment | `$1.5-$3.5B`；WDC HAMR 追上主流 hyperscaler 认证 | `$4-$6B`；Seagate/WDC 双强 HAMR 同步供不应求 |
+| UltraSMR capacity premium | 嵌入 ASP；贡献 `$1-$2B` 的产品 mix premium | `$2-$4B` | `$4-$6B`，但不能与 high-capacity HDD 完全重复相加 |
+| Ultrastar Data 3000/JBOD/platform | `$0.6-$1.2B`；带动 drive pull-through | `$1.2-$2.5B`；neo-cloud/HPC 采用 | `$2.5-$4B`；若 intelligent platform 降低客户重写成本 |
+| High Bandwidth / Dual Pivot | `<$0.5B`，主要 qualification | `$0.5-$1.5B` | `$1.5-$3B`，前提是 warm HDD tier 抵抗 QLC 成功 |
+| Power-optimized HDD | `<$0.3B`，qualification | `$0.5-$1.5B` | `$1.5-$3B`，前提是 W/TB 被写进大客户采购规格 |
+
+### 情景背后的关键变量
+
+| 变量 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| AI 基建重要性 | HDD 是冷温容量层主力，QLC SSD 做温层补位 | HDD + QLC 同时供不应求，客户愿签更长 LTA | 数据保留从成本项变资产项，HDD allocation 变成 AI 工厂瓶颈 |
+| 时间紧急性 | 2026 POs 锁定，2027 仍需提前排产 | 2027 LTA 扩大，客户抢 40TB+ capacity points | 多年 LTA 标准化，capacity planning 提前 18-24 个月 |
+| 供需紧张 | 30-36TB tight，40TB early | 40-44TB tight，HAMR/ePMR ramp 成功 | 几乎所有 high-capacity nearline 都紧 |
+| 垄断能力 | HDD CR3 极高，WDC/Seagate 双强 | WDC ePMR/UltraSMR + customer base 提升溢价 | 若 HAMR 可靠性兑现，WDC 与 Seagate 同享高 margin |
+
+## 六、BOM、每 MW/rack/GPU/optical port 内容量和价格传导
+
+### 6.1 关键假设
+
+项目内行业资料给出每 `1MW` 新 AI IT load 的 12 个月存储 attach：
+
+| 情景 | QLC/SSD 温层 | HDD/object 冷温容量层 |
+|---|---:|---:|
+| 基准 | `8-25PB/MW` | `40-150PB/MW` |
+| 乐观 | `20-60PB/MW` | `120-300PB/MW` |
+| 极度乐观 | `60-150PB/MW` | `300-800PB/MW` |
+
+WDC 主要捕获 `HDD/object 冷温容量层`，不捕获已分拆的 NAND/eSSD operating revenue。按 Q3 FY2026 cloud revenue / nearline EB 约 `$14.93/TB`，为了保守使用 `$14-$16/TB` 的供应商收入/TB 估算。
+
+### 6.2 每 MW / 每 rack / 每 GPU 的 WDC HDD 内容量
+
+| 指标 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| HDD/object raw capacity attach per 1MW/year | `40-150PB` | `120-300PB` | `300-800PB` |
+| 对应 WDC HDD 收入 per 1MW/year（按 `$15/TB`） | `$0.6-$2.25M` | `$1.8-$4.5M` | `$4.5-$12.0M` |
+| 32TB UltraSMR drives per 1MW/year | `1,250-4,688` 盘 | `3,750-9,375` 盘 | `9,375-25,000` 盘 |
+| 40TB next-gen drives per 1MW/year | `1,000-3,750` 盘 | `3,000-7,500` 盘 | `7,500-20,000` 盘 |
+| 以 120kW AI rack 计，每 compute rack 对应 HDD attach | `4.8-18PB/year` | `14.4-36PB/year` | `36-96PB/year` |
+| 以 120kW/72 GPU rack 计，每 GPU HDD attach | `67-250TB/GPU/year` | `200-500TB/GPU/year` | `500-1,333TB/GPU/year` |
+| 每 GPU WDC HDD 收入 | `$1.0k-$3.8k/GPU/year` | `$3.0k-$7.5k/GPU/year` | `$7.5k-$20k/GPU/year` |
+| 每 optical port 内容量 | `0` | `0` | `0` |
+
+解释：
+
+- WDC 的产品不按 optical port 计价，optical port 只影响 AI fabric 网络 BOM；存储 attach 更适合按 MW、rack、GPU 和 PB 计。
+- 上表是“12 个月数据生成和保留带来的容量 attach”，不是所有容量都安装在 compute rack 内。高密 HDD 通常在独立 storage rack/JBOD/object cluster 中。
+- 纠删码、replication、spare、rebuild buffer 会带来 `1.3x-2.0x` raw/usable overhead，实际 raw capacity 可能高于应用可见容量。
+
+### 6.3 Ultrastar Data 3000/JBOD 的 rack 内容量
+
+| 平台/配置 | 粗略容量 | 对 AI 存储的含义 |
+|---|---:|---|
+| Data102 级别，102 drives × 32TB | `3.26PB raw / 4U` | 单 42U rack 约可放 8-10 个 4U enclosure，理论 `26-32PB raw/rack`，需留网络/管理/电源空间 |
+| Data60 级别，60 drives × 32TB | `1.92PB raw / 4U` | 更灵活，适合不同 HDD/SSD 混合配置 |
+| 24Gb/s SAS-4 host connectivity | 最多 `12` 个 24Gb/s SAS-4 host ports | 解决容量盘吞吐随 TB 增长被稀释的问题 |
+| ArcticFlow + IsoVibe | 官方称可使 drive return rate 降低最多 `62%` | EB 级对象存储中可靠性和退货率直接影响 TCO |
+
+### 6.4 BOM 拆分和价格传导
+
+| 产品 | BOM/成本拆分 | 价格传导链 | WDC 溢价点 |
+|---|---|---|---|
+| Nearline HDD | 盘片/介质/基板 `20%-30%`；磁头/slider `15%-25%`；机械/马达/helium enclosure `15%-20%`；PCB/controller/cache `8%-12%`；组装/测试/良率 `15%-25%`；物流/保修 `5%-10%` | AI data growth -> hyperscaler EB planning -> PO/LTA -> capacity allocation -> $/TB 和 capacity point 价格 -> WDC revenue/GM | 32TB/40TB/44TB 以上 capacity point，UltraSMR + ePMR/HAMR，低退货率 |
+| HAMR HDD | 在 nearline 基础上增加 laser/NFT/HAMR media/高级 controller/qualification 成本 | HAMR 良率和客户认证决定供给；若 40TB+ 供不应求，客户接受 $/TB 不降 | 100TB+ 路线和更高 areal density，但短期风险也最高 |
+| UltraSMR | 硬件成本接近 ePMR HDD，差异在 firmware、host-managed SMR、对象存储写入路径适配 | 若客户软件栈能消化顺序写和 rebuild，+20% 容量可转化为 rack/TB 和 W/TB 节省 | 软件/客户协同能力，hyperscaler 采用最强 |
+| Data 3000/JBOD | HDD media `45%-70%`；enclosure/backplane/SAS/PSU/fan/cooling `15%-30%`；系统验证/firmware/support `10%-25%` | HDD ASP -> platform BOM -> storage system project -> software/support attach | ArcticFlow/IsoVibe、SAS-4、预验证平台、降低客户 qualification 风险 |
+| High Bandwidth / Dual Pivot | 增加 actuator/servo/controller/firmware 和测试成本 | 如果能减少 SSD warm tier 或维持 I/O per TB，按性能/TCO 定价 | 防守 QLC SSD，提升 warm HDD 价值 |
+| Power-optimized HDD | 机械/firmware/盘片容量优化，牺牲部分性能 | 电力约束 -> W/TB 写入采购指标 -> 客户接受性能折价 | 最适合冷层、归档和大规模 AI 数据留存 |
+
+### 6.5 当前产能能力、供应链采纳和认证阶段
+
+| 产品/业务 | 当前产能能力（美元计） | 供应链采纳程度 | 认证/qualification 阶段 |
+|---|---:|---|---|
+| Existing high-capacity nearline HDD | Q4 FY2026 指引 annualized revenue run-rate 约 `$14.6B`，cloud run-rate 约 `$12.9B` | 极高；Q3 cloud 89%，top customer POs/LTAs 支撑 | 已大规模通过 hyperscaler qualification |
+| Latest-generation ePMR | Q3 shipped `4.1M` units，annualized `16M+` units | 极高；从 Q4FY25 `>1.7M` 到 Q3FY26 `4.1M` 爬坡 | 已量产 |
+| 40TB ePMR/UltraSMR | 当前小量/qualification；美元能力估算 `<$1B annual run-rate` | 中高，取决于大客户导入 | 2026 qualification/early ramp |
+| 44TB HAMR | 当前接近无量产收入 | 中，客户兴趣高但 WDC 仍处 qualification | HAMR in customer qualification |
+| Ultrastar Data 3000/JBOD | 估算 `<$1B-$1.5B annual run-rate`，且大量价值体现在 drive pull-through | 中；cloud/neo-cloud/HPC/企业 AI 早期采用 | 产品发布/平台验证，客户项目制认证 |
+| High Bandwidth / Dual Pivot | 当前 R&D，收入不显著 | 低到中；技术 demo 明确 | 2x demonstrated，未来 qualification |
+| Power-optimized HDD | 当前 R&D，收入不显著 | 低，客户需求明确 | 计划 2027 customer qualification |
+
+## 七、一年后产能能力、供应链采纳和认证阶段预测
+
+| 产品/业务 | 基准：一年后 | 乐观：一年后 | 极度乐观：一年后 |
+|---|---|---|---|
+| Existing high-capacity nearline HDD | annual capacity/revenue ability `$16-$18B`; 供应链采纳极高；30-36TB 主力 | `$18-$22B`; 40TB ramp 更快，LTA 延长 | `$22-$27B`; ASP/mix 和 EB 同时上修 |
+| Latest-generation ePMR | 40TB 前后 capacity point 成为新增 EB 主力；qualification 扩大 | 40TB UltraSMR 更广泛进入 top customers | 40TB 成为 2027 订单核心 SKU |
+| 44TB HAMR | `$0.5-$1.5B` annual ability；少数客户通过 | `$2-$4B`；进入更多 hyperscaler production qualification | `$4-$7B`；若可靠性接近 ePMR 且 Seagate 供给不足 |
+| UltraSMR | hyperscaler 冷对象池采用提升；普通企业仍慢 | host-managed SMR 成为大云冷层默认路径 | neo-cloud 也接受 UltraSMR，软件平台降低门槛 |
+| Ultrastar Data 3000/JBOD/platform | `$1-$2B` revenue ability；Data 3000 成为非 hyperscaler AI storage reference | `$2-$4B`；OpenFlex/RapidFlex/NVMe-oF 与 AI data platform 配套 | `$4B+`；intelligent platform 提高锁定 |
+| High Bandwidth / Dual Pivot | qualification/小批，revenue `<$0.5B-$1B` | warm object tier 试点，`$1-$2B` | 若 QLC 供给紧/贵，客户更愿意用高带宽 HDD，`$2-$4B` |
+| Power-optimized HDD | 2027 qualification 开始，收入 `<$0.5B` | 冷层客户试点，`$0.5-$1.5B` | 电力瓶颈极强，W/TB 被写入标准，`$1.5-$3B` |
+
+## 八、基于订单积压和供给的一年业务增速预测
+
+### 8.1 真实 backlog/booking 信息如何看
+
+WDC 不披露传统 backlog 和 book-to-bill。可用证据链如下：
+
+1. **官方 10-Q 定性：** AI/hybrid data 造成高容量 HDD 需求加速、制造复杂度和 production lead time 增加，客户更早合作并延长商业安排。
+2. **Q2 FY2026 call 渠道/转述：** 管理层称 CY2026 HDD 产能基本售罄，top 7 customers 有 firm POs；其中部分客户已有 2027/2028 LTA，包含 exabytes volume 和 price。
+3. **财报硬数据：** Q3 FY2026 revenue `+45% YoY`，non-GAAP GM `50.5%`，Q4 revenue 指引中点 `$3.65B`，毛利率指引 `51%-52%`。
+4. **单位价格信号：** cloud revenue / nearline EB 从 Q1/Q2 的 `$13.7-$13.9/TB` 升至 Q3 的 `$14.9/TB`。
+5. **行业交叉验证：** 项目内 HDD 行业资料指出 30-44TB nearline HDD、122TB/245TB QLC SSD、AI 对象存储均处紧张状态；供给瓶颈是头盘良率、SMR 软件、hyperscaler qualification、NAND allocation 和电力/机柜。
+
+取消率判断：没有披露取消率。由于订单主要来自 top hyperscalers/cloud customers，且 2026 POs/LTAs 与容量和价格绑定，短期取消率应低于普通消费硬件；但若 AI capex 或项目通电推迟，可能发生 shipment deferral，而不一定是 outright cancellation。
+
+### 8.2 未来一年 WDC 业务增速三情景
+
+| 情景 | 未来 12 个月收入预测 | YoY/运行率增速 | 毛利率 | 关键假设 | 反证 |
+|---|---:|---:|---:|---|---|
+| 基准 | `$15.5-$17.5B` | `+20%-35%` vs FY2026E `$12.82B` | `50%-54%` | CY2026 sold-out 转化为 FY2027 初收入；30-36TB 主力，40TB early ramp；ASP 稳定 | Q4/FY2027 指引显示 GM <48%，nearline EB 低于 mid-20s |
+| 乐观 | `$17.5-$21.5B` | `+35%-65%` | `54%-58%` | 40TB ePMR/UltraSMR 快速通过客户认证；2027 LTA 扩大；AI 数据保留加速 | 40TB qualification 延迟、客户推迟 delivery |
+| 极度乐观 | `$21.5-$27B` | `+65%-110%` | `58%-64%` | 多模态/agent/主权 AI 触发 EB 级 cold/warm object 爆发；WDC 高容量 allocation 继续涨价；HAMR/ePMR 同步爬坡 | QLC SSD 迅速替代 warm tier，HDD lead time 恢复正常，Seagate/Toshiba 抢 share |
+
+更保守的口径：仅按公司长期模型 `>20% revenue CAGR`，FY2027 revenue 也应在 `$15.4B+`；市场当前估值显然在押注高于保守 CAGR 的 2027-2028 利润弹性。
+
+## 九、竞争格局、替代方案、技术路线风险和客户替换成本
+
+### 9.1 主要竞争对手
+
+| 领域 | 竞争对手 | 竞争状态 |
+|---|---|---|
+| Nearline HDD | Seagate | 最强竞争者。Mozaic 3+/4+、HAMR 垂直整合、44TB 对两家 hyperscaler volume shipping 的证据强于 WDC 当前 HAMR；WDC 在 ePMR/UltraSMR、客户基础和产能纪律上强 |
+| Nearline HDD 第三供给 | Toshiba | 规模小但重要；FC-MAMR、M12 30-34TB SMR、28TB CMR 等作为二供和价格制衡 |
+| Warm/capacity SSD 替代 | Micron、Samsung、SK hynix/Solidigm、Kioxia/SanDisk | 122TB/245TB QLC SSD 在 warm AI data lake、RAG、checkpoint staging 上会替代部分 HDD；但 cold bulk $/TB 仍难完全替代 HDD |
+| Storage systems/JBOD | Seagate Exos Systems、Dell、HPE、SMCI、Lenovo、QCT、Wiwynn、Foxconn | WDC Data 系列面临系统集成商和客户自研架构竞争；WDC 优势是 drive + platform 联动 |
+| AI data platform/object storage | VAST、WEKA、DDN、Pure、NetApp、Dell、Cloudian、MinIO、Ceph、AWS/Azure/GCS/OCI | 这些公司不直接替代 WDC HDD，但可能把系统/软件价值截走，WDC 只拿介质收入 |
+| 深归档/tape | IBM、HPE、Quantum、Spectra Logic、FUJIFILM、Sony | 对极冷长期保留有成本优势；但随机访问和 AI 再激活速度弱 |
+
+### 9.2 WDC 新技术是否是未来主流
+
+| 技术 | 是否主流 | 判断 |
+|---|---|---|
+| ePMR / UltraSMR high-capacity HDD | 是，2026-2027 主流 | 平滑迁移、低 disruption，是 WDC 相比“纯 HAMR 跳跃”的现实优势 |
+| HAMR | 大概率成为 40TB+ 以后主流之一 | areal density 必须继续提高；但 WDC 的短期风险是 Seagate HAMR 量产证据更强 |
+| Host-managed SMR / UltraSMR | hyperscaler 主流，企业慢 | 大云有软件能力处理顺序写和 zone；普通企业需要平台抽象 |
+| High Bandwidth / Dual Pivot HDD | 有潜力，但更偏 warm tier niche | 若 QLC SSD $/TB 下行过快，该方向空间会被压缩；若 QLC 紧缺或太贵，则价值上升 |
+| Power-optimized HDD | 可能成为冷层重要 SKU | AI DC 电力稀缺时，W/TB 和 rack/TB 重要性上升 |
+| Intelligent platform / software abstraction | 对非 hyperscaler 重要 | 如果能减少客户重写和 qualification，WDC 可提高锁定和系统收入；但软件能力需验证 |
+
+### 9.3 替代方案和风险
+
+| 风险/替代 | 影响 | 触发条件 |
+|---|---|---|
+| Seagate HAMR 领先 | WDC 高容量 premium 被抢，share/GM 下修 | Seagate 44TB/50TB/60TB qualification 明显快于 WDC |
+| QLC SSD 替代 warm tier | WDC warm object / performance HDD 空间被挤压 | 122/245TB QLC $/TB 下降、power/rack TCO 显著优于 HDD |
+| AI capex 放缓或通电延迟 | POs 推迟，收入不达高估值要求 | hyperscaler 下修 capex、NeoCloud 融资恶化、电力/MEP 延迟 |
+| 数据保留政策变化 | 冷温数据增长低于预期 | 企业为了成本删除日志/中间数据，agent/multimodal 留存不足 |
+| HAMR 可靠性/良率问题 | 高容量路线延迟，退货率上升 | laser/NFT/head/media field failure |
+| 客户集中和议价 | ASP/GM 被 top customers 压制 | 2027 供给缓解，客户重新压 $/TB |
+| 估值风险 | 股价对任何 GM/ASP 下修敏感 | PE/P/S 已反映长期高增长，核心 FY26E PE 约 50x |
+| 地缘和供应链 | 制造、材料、关税扰动 | 泰国/马来西亚/菲律宾/中国供应链受灾害、贸易政策或部件短缺影响 |
+
+### 9.4 客户替换成本
+
+WDC 的客户替换成本高，主要来自：
+
+- EB/ZB 级数据迁移成本：带宽、egress、校验、停机窗口、数据完整性风险巨大。
+- Hyperscaler qualification：新容量点、新 firmware、新 SMR 行为、新 JBOD 平台都要季度级到年级验证。
+- 对象存储和 host-managed SMR 软件适配：客户的数据放置、rebuild、zone management、erasure coding 与硬盘行为耦合。
+- 故障率和保修：大规模对象存储中，退货率、rebuild 时间和批次质量比单盘标称性能更重要。
+- LTA/PO 绑定：2026-2028 的 volume/price 长约提高客户和供应商互锁。
+
+但替换成本不是无限高。头部客户通常保持双供或三供，Seagate 与 Toshiba 的存在会持续约束 WDC 定价；warm tier 也会被 QLC SSD 分走一部分增量。
+
+## 十、投资判断：一句话、三情景和跟踪指标
+
+### 10.1 一句话判断
+
+WDC 是 2026 年 AI 数据中心链条中“最直接暴露于低成本永久数据保存”的标的之一，核心不是 AI 计算，而是 AI 产生的数据必须被长期、低成本、可再激活地保存。当前财报质量很强，资产负债表已健康，订单可见度罕见；但估值已经很高，必须用 2027 继续 tight 的 nearline HDD、40TB+/HAMR 顺利导入和 GM 维持 50%+ 来证明。
+
+### 10.2 三情景投资框架
+
+| 情景 | 业务结果 | 股票含义 |
+|---|---|---|
+| 基准 | FY2027 revenue `$15.5-$17.5B`，GM `50%-54%`，FCF margin 接近 `30%`；40TB early ramp，HAMR 小量 | 估值大致合理但上行有限，股价更依赖 FY2028 EPS 信心 |
+| 乐观 | FY2027 revenue `$17.5-$21.5B`，GM `54%-58%`；40TB/44TB 进入更广泛 hyperscaler production，cloud LTA 延长 | EPS 进入 `$15-$20` 路径，forward PE 可被压到 25-33x，仍有上行 |
+| 极度乐观 | FY2027 revenue `$21.5-$27B`，GM `58%-64%`；HDD allocation 持续短缺，WDC/Seagate 双寡头重估为 AI capacity layer | 市场可能把 WDC 当作 AI 基建瓶颈资产重新定价，但这是高风险外推 |
+
+### 10.3 必须跟踪的反证指标
+
+| 指标 | 触发阈值 | 解释 |
+|---|---|---|
+| WDC/Seagate non-GAAP GM | 连续两季低于 `45%-48%` 或指引下修 | 说明 shortage/ASP/mix 失效 |
+| Nearline EB growth | 低于 mid-teens，或与公司 mid-20s 长期目标脱节 | AI storage attach 不如预期 |
+| Cloud revenue share | 跌破 `85%` 且 client/consumer 回升 | AI/cloud 主线变弱 |
+| Cloud revenue per nearline TB | 从 Q3 FY2026 `$14.9/TB` 回落到 `$13/TB` 以下 | ASP 或 mix 压力 |
+| 40TB/44TB qualification | 延迟超过 2-3 个季度 | 2027 EB/TCO 曲线下修 |
+| Seagate HAMR 进度 | Seagate 50TB/60TB 快速过 qual，而 WDC 停留在 qualification | WDC share 和 premium 风险 |
+| QLC 122/245TB SSD $/TB | 快速下降且供给充足 | warm tier HDD 被替代 |
+| Hyperscaler capex | MSFT/AMZN/GOOGL/META/ORCL 指引下修 | AI data growth 的上游水位下降 |
+| Top customer PO/LTA 表述 | 从 firm PO/LTA 转为正常化 lead time | backlog 质量下降 |
+
+## 十一、资料来源和证据分层
+
+### 项目内行业资料
+
+- `行业调研/AI服务器_存储_芯片/行业调研_HDD、对象存储与冷温数据存储_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-06-10.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+
+### 公司一手资料
+
+- WDC Q3 FY2026 press release，2026-04-30：https://investor.wdc.com/news-releases/news-release-details/wd-reports-fiscal-third-quarter-2026-financial-results
+- WDC Q3 FY2026 10-Q，filed 2026-05-01：https://investor.wdc.com/node/28216/html
+- WDC earnings documents page：https://investor.wdc.com/financial-information/earnings-documents
+- WDC Q3 FY2026 earnings presentation：https://investor.wdc.com/static-files/5b2d41c1-7d45-4575-b9ea-c51424dbffeb
+- WDC Q2 FY2026 earnings presentation：https://investor.wdc.com/static-files/19cc0ab3-bca3-4107-9100-1bf8d7d51cce
+- WDC Q1 FY2026 earnings presentation：https://investor.wdc.com/static-files/51a6fa63-7805-4674-aa72-2a2c7f3add97
+- WDC Q4 FY2025 earnings presentation：https://investor.wdc.com/static-files/d9ca6e36-4468-4398-ab00-d55928adf206
+- WDC Investor Presentation May 2026：https://investor.wdc.com/static-files/f010ae83-c695-4c08-b1cf-cb4091940da5
+- WDC Innovation Day 2026 presentation：https://investor.wdc.com/static-files/c4cec531-0128-4c17-b9c2-f25644c658db
+- WDC Computex 2026 release，2026-06-01：https://investor.wdc.com/news-releases/news-release-details/wd-computex-2026-ai-doesnt-just-run-compute-it-runs-data
+- WDC customer survey release，2026-05-20：https://investor.wdc.com/news-releases/news-release-details/wd-customer-survey-highlights-growing-focus-scale-economics-and
+- Ultrastar DC HC690 product page：https://www.westerndigital.com/products/internal-drives/data-center-drives/ultrastar-dc-hc690-hdd
+- Ultrastar Data Series JBOD page：https://www.westerndigital.com/solutions/data-center-storage-platform/jbod
+
+### 渠道、媒体和行情资料
+
+- Q2 FY2026 call transcript/order quote cross-check：Investing.com / Motley Fool / Tom's Hardware / TechRadar，核心线索为 CY2026 capacity sold out、top 7 customer firm POs、2027/2028 LTAs。
+- 行情估值快照：Google Finance、Yahoo Finance、Robinhood，查询日期 2026-06-11。估值供应商口径不同，本文同时列出 provider PE/forward PE/P/S 和按 WDC 持续经营收入自算的 P/S。
+

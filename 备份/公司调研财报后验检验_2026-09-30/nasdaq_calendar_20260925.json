@@ -1,0 +1,112 @@
+{
+  "data": {
+    "asOf": "Fri, Sep 25, 2026",
+    "headers": {
+      "time": "Time",
+      "symbol": "Symbol",
+      "name": "Company Name",
+      "eps": "EPS",
+      "surprise": "% Surprise",
+      "marketCap": "Market Cap",
+      "fiscalQuarterEnding": "Fiscal Quarter Ending",
+      "epsForecast": "Consensus EPS* Forecast",
+      "noOfEsts": "# of Ests"
+    },
+    "rows": [
+      {
+        "eps": "N/A",
+        "surprise": "N/A",
+        "time": "time-after-hours",
+        "symbol": "IVA",
+        "name": "Inventiva S.A.",
+        "marketCap": "$777,361,860",
+        "fiscalQuarterEnding": "Jun/2026",
+        "epsForecast": "($0.20)",
+        "noOfEsts": "1"
+      },
+      {
+        "eps": "($0.02)",
+        "surprise": "33.33",
+        "time": "time-not-supplied",
+        "symbol": "NB",
+        "name": "NioCorp Developments Ltd.",
+        "marketCap": "$509,015,200",
+        "fiscalQuarterEnding": "Jun/2026",
+        "epsForecast": "($0.03)",
+        "noOfEsts": "1"
+      },
+      {
+        "eps": "$0.16",
+        "surprise": "N/A",
+        "time": "time-not-supplied",
+        "symbol": "AFB",
+        "name": "Alliance National Municipal Income Fund Inc",
+        "marketCap": "$269,340,064",
+        "fiscalQuarterEnding": "Jul/2026",
+        "epsForecast": "",
+        "noOfEsts": "N/A"
+      },
+      {
+        "eps": "($0.14)",
+        "surprise": "-207.69",
+        "time": "time-not-supplied",
+        "symbol": "IXHL",
+        "name": "Incannex Healthcare Inc.",
+        "marketCap": "$41,522,716",
+        "fiscalQuarterEnding": "Jun/2026",
+        "epsForecast": "$0.13",
+        "noOfEsts": "1"
+      },
+      {
+        "eps": "($1.83)",
+        "surprise": "N/A",
+        "time": "time-not-supplied",
+        "symbol": "ASTC",
+        "name": "Astrotech Corporation",
+        "marketCap": "$15,118,101",
+        "fiscalQuarterEnding": "Jun/2026",
+        "epsForecast": "",
+        "noOfEsts": "N/A"
+      },
+      {
+        "eps": "($0.12)",
+        "surprise": "N/A",
+        "time": "time-not-supplied",
+        "symbol": "BTOC",
+        "name": "Armlogi Holding Corp.",
+        "marketCap": "$10,924,516",
+        "fiscalQuarterEnding": "Jun/2026",
+        "epsForecast": "",
+        "noOfEsts": "N/A"
+      },
+      {
+        "eps": "$0.10",
+        "surprise": "N/A",
+        "time": "time-not-supplied",
+        "symbol": "MARPS",
+        "name": "Marine Petroleum Trust",
+        "marketCap": "$8,760,000",
+        "fiscalQuarterEnding": "Jun/2026",
+        "epsForecast": "",
+        "noOfEsts": "N/A"
+      },
+      {
+        "eps": "($0.42)",
+        "surprise": "N/A",
+        "time": "time-not-supplied",
+        "symbol": "IBG",
+        "name": "Innovation Beverage Group Limited",
+        "marketCap": "$3,882,880",
+        "fiscalQuarterEnding": "Mar/2026",
+        "epsForecast": "",
+        "noOfEsts": "N/A"
+      }
+    ]
+  },
+  "message": null,
+  "status": {
+    "rCode": 200,
+    "bCodeMessage": null,
+    "developerMessage": null
+  }
+}

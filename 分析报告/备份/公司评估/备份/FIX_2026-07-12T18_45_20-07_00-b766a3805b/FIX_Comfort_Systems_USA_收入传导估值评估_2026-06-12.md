@@ -1,0 +1,160 @@
+# 公司收入传导与价值传导评估：Comfort Systems USA（FIX）
+
+报告日期：2026-06-12  
+主口径：NTM = 2026Q2 至 2027Q1，除非特别说明，所有美元金额为美元。  
+资料边界：只使用 `公司调研/`、`行业调研/` 与公司一手披露/官方投资者资料；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较。  
+结论边界：本报告只评估经营收入、利润和现金流传导，不输出目标价、投资评级、股价区间或估值倍数判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM，即 2026Q2-2027Q1。FY2026、FY2027、长期 AI 园区机会、项目全周期金额只作为补充，不替代 NTM。
+- 当前收入基准、指引和 run-rate：Comfort Systems USA 未给传统全年收入指引。当前经营锚为 2026Q1 收入 `28.65 亿美元`、TTM 收入约 `101.36 亿美元`、Q1 年化 run-rate `114.61 亿美元`、backlog/RPO `124.55 亿美元`；公司 10-Q 披露约 `65%-75%` 的 RPO 预计未来 12 个月确认，即 `约80.96-93.41 亿美元`。LSEG EPS 当前预期为 2026E `$43.08`、2027E `$53.44`，以 Q2-Q4 2026 和 Q1 2027 季度均值估算，NTM EPS 当前预期约 `$44.16`。
+- 重要产品/业务线：AI 数据中心/technology MEP 交付、Electrical power path installation、EAS/TAS modular off-site construction、service/retrofit/controls、advanced manufacturing/chip fab MEP。注意：这些口径在披露上互相交叉，产品级表用于传导判断，公司层面不简单相加。
+- NTM 公司收入四情景：悲观 `108-120 亿美元`；基准 `122-135 亿美元`；乐观 `135-150 亿美元`；极度乐观 `150-170 亿美元`。
+- 利润或 EBITDA 四情景：悲观 EBITDA `13.5-17.5 亿美元`、净利润 `9.5-12.5 亿美元`；基准 EBITDA `19.5-23.5 亿美元`、净利润 `14.5-16.8 亿美元`；乐观 EBITDA `23.5-29.0 亿美元`、净利润 `16.8-21.0 亿美元`；极度乐观 EBITDA `29.0-36.0 亿美元`、净利润 `21.0-26.0 亿美元`。
+- 最大传导瓶颈：不是需求池，而是 `backlog -> 项目排产 -> 熟练工/模块化工厂/长交期设备 -> 现场安装与 commissioning -> cost-to-cost 收入确认`。
+- 最大利润率变量：Q1 毛利率 `26.3%` 中包含项目收尾/变更单等有利因素，NTM 是否能保持取决于 technology mix、模块化工厂利用率、fixed-price 合同成本估计和劳动力通胀。
+- 最大现金流变量：大型项目营运资本、billings in excess、应收/retainage 与 2026 模块化扩产资本开支。Q1 自由现金流 `2.42 亿美元`为正，但 capex 明显抬升。
+- 可信度：基准为`中高`。总收入有 A/B 级 RPO、收入表、分部和 cash flow 支撑；AI 数据中心独立收入未披露，产品拆分和利润率仍需估算，因此不能给“高”。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| AI 数据中心/technology MEP 交付 | 2026Q1 technology 收入 `16.05 亿美元`；其中 AI DC 直接/近邻估算 `10-13 亿美元` | technology `56%`；AI DC 估算 `35%-45%` | NTM 最大增量来源，决定 revenue burn 和 backlog 质量 | technology 为 A；AI DC 拆分为 C | technology 全额进入基准；AI DC 以保守区间进入基准，不把全部 technology 等同 AI DC | 500MW+/GW 级园区重复 block、长期运维标准化 |
+| Electrical power path installation | 2026Q1 Electrical 收入 `8.05 亿美元`，backlog `28.61 亿美元` | 收入 `28.1%`；backlog `23.0%` | 电力路径是 AI 数据中心第一瓶颈，Q1 Electrical 收入同比 `+87.5%` | A | 进入基准；按 backlog 和 same-store technology growth 处理 | 800VDC/MVUPS/中压 block 的安装与联调 |
+| EAS/TAS modular off-site construction | 2026Q1 modular 交付类型约 `4.87 亿美元`；IR 披露 EAS/TAS 六个设施、`110 万平方英尺+` | 交付类型 `17%`，与机械/电气重叠 | 降低现场工时、缩短 schedule，是利润率和产能弹性变量 | A/B | 进入基准，但作为重叠属性而非额外加总收入 | 客户 capacity reservation、标准化 AI factory block |
+| Service / retrofit / controls | 2026Q1 service projects + service & maintenance 约 `3.15 亿美元`；existing construction 约 `4.30 亿美元` | service `11%`；existing `15%` | 稳定现金流，未来随已安装 AI 资产扩大 | A；controls 拆分为 C | service/retrofit 进入基准；controls 单独收入未披露，只作辅助 | liquid-ready retrofit、commissioning automation、BMS/DCIM 绑定 |
+| Advanced manufacturing / chip fab MEP | 2026Q1 manufacturing 收入约 `5.44 亿美元`，technology 内还含 chip manufacturing | manufacturing `19%`；chip manufacturing 未单列 | 与 AI DC 共享高复杂度 MEP、洁净/工艺管路和电气资源 | A for manufacturing；chip fab subset C | manufacturing 进入基准；chip fab 拆分不单独加总 | 美国半导体/药厂/工业制造长期扩建 |
+| 普通商业 HVAC / office / retail /低密度维护 | office + retail 约 `6%`，普通维护含在 service | 小 | 防守性业务，但不是 AI 订单弹性来源 | A | 进入公司总收入基准，但不作为增长主线 | 无 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池或产品自身需求强弱，不评估 FIX 份额、收入确认、利润率或公司收入汇总。需求强弱均与当前需求锚比较；不把客户总 CapEx、TAM 或 AI 主题热度直接当成公司收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| AI 数据中心/technology MEP 交付 | 项目内行业调研估算未来 1 年全球 AI facility delivery pool `950-1500 亿美元`；美国 2026 建筑/土建/MEP 务实 `310-550 亿美元`；公司 Q1 technology `56%` | 需求池仍增长但 NTP 延迟，全球 facility delivery 约 `650-1000 亿美元`，美国 building/MEP 接近低端 | 全球 `950-1500 亿美元`，美国 AI MEP/建筑维持强订单但通电滞后 | 全球 `1300-2100 亿美元`，大型 AI campus、colo inference 和 NeoCloud 同步开工 | 全球 `1800-2800 亿美元`，500MW+/GW 级园区批量 NTP 且电力方案同步落地 | 悲观较基准低 `约300-500 亿美元`；乐观高 `约350-600 亿美元`；极度高 `约850-1300 亿美元` | 基准=符合当前行业和公司披露；悲观=低于当前强订单路径；乐观/极度=高于当前预期 | 正向：hyperscaler/NeoCloud capex、GPU/ASIC 放量、CBRE/JLL 电力与容量紧张；反证：电力接入、融资、GPU 利用率或许可拖慢项目 |
+| Electrical power path installation | 电力接入、switchgear、UPS、busway、generator/BESS interface 是 AI DC 第一瓶颈；公司 Q1 Electrical 收入 `8.05 亿美元`，同比 `+87.5%` | utility interconnection 和设备交期拖延，客户暂缓电气包 award | 电力设备与电气安装 backlog 正常推进，项目按 6-18 个月 revenue burn | behind-the-meter、微电网、电气房预制加速，Electrical backlog 再上台阶 | 客户为 time-to-power 锁定电气施工/模块产能，多个区域同时抢工 | 无法可靠量化单独需求池；以公司 Electrical backlog `28.61 亿美元`和行业电力订单池为锚 | 基准=符合当前强需求；悲观=低于 backlog 转收入节奏；乐观=电力瓶颈反而变成 FIX 价格/份额机会 | 正向：Q1 Electrical same-store technology 增量明显；反证：电气设备 OEM 交付不足会拖累安装确认 |
+| Modular off-site construction | 行业把预制 electrical rooms、cooling plant skid、data hall、MW block 作为 2026-2027 主流交付方式；FIX Q1 modular `17%` | 客户标准化由 OEM/GC 捕获，FIX modular attach 率回落到低十位数 | modular 维持 `17%-20%+` 收入/交付占比，跟随 data center 和高端制造 | 客户为缩短工期扩大 off-site scope，modular 占比到 `20%-25%+` | 客户预付款/长期协议锁 EAS/TAS 产能，modular 成主要瓶颈 | 当前 Q1 run-rate `约19.5 亿美元`；情景变化主要表现为占比和毛利率变化 | 基准=已在收入表和产品页可见；乐观=有 Texas modular backlog 增长支撑；极度=需产能锁定证据 | 正向：Texas modular operation 年同比 backlog 增量显著；反证：运输、工厂产能、客户标准化压价 |
+| Service / retrofit / controls | Q1 service projects + maintenance `11%`；maintenance base IR 披露 `1.84 亿美元`；既有 AI 数据中心上电后带来维护/改造需求 | 新建项目占用资源，service 增速低于公司平均；客户推迟 retrofit | 已安装基数扩大，service/retrofit 保持低双位数到中双位数增长 | liquid-ready retrofit 和 controls/commissioning 需求增加 | 企业/主权 AI 和 colo inference 推动不停机改造，高毛利服务增长 | 现有公司 service run-rate `约12.6 亿美元`，外部需求池无法可靠量化 | 基准=稳定但不是最大增量；乐观=2027 更强，NTM 只小幅贡献 | 正向：项目完成后维护基数扩大；反证：公司披露 service maintenance agreements 不进入 RPO，能见度低于 backlog |
+| Advanced manufacturing / chip fab MEP | 2026Q1 manufacturing `19%`，公司称 technology 包括 data centers 与 chip manufacturing；美国 on-shoring 和工厂扩建持续 | 半导体/制造客户推迟扩建，资源转向 AI DC | 制造和 chip fab 项目正常推进，作为第二增长腿 | 制造回流、药厂、食品加工与 chip fab 同步强 | 大型 fab 与 AI DC 共振，争夺同一 MEP/电气队伍 | Q1 manufacturing run-rate `约21.8 亿美元`；chip fab subset 未披露 | 基准=符合当前公司行业 mix；乐观=高复杂度工业项目增强 | 正向：technology/manufacturing 均为强市场；反证：周期性制造投资放缓、客户预算转向 AI DC |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求能进入 FIX 的 NTM 收入表，以及当前可收入化基数。必须区分“可参与需求”和“可确认收入”。产品行之间存在披露重叠，本表不用于机械加总；公司总收入只在第 6 节归集。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| AI 数据中心/technology MEP 交付 | 2026Q1 technology `16.05 亿美元`；AI DC 直接/近邻估算 `10-13 亿美元`；technology 未单独披露 backlog | 直接参与 data center/chip manufacturing MEP；AI DC 拆分为估算 | 高复杂度项目，毛利率可高于普通商业，但受 fixed-price 和劳动力约束 | `32-44 亿美元` | `43-58 亿美元` | `58-74 亿美元` | `74-92 亿美元` | 基准符合 run-rate/RPO；乐观高于当前可见路径 | A for technology；C for AI DC split | 是，保守纳入 | 收入表、IR market activity、10-Q data centers commentary、backlog technology bookings | NTM 主增量；不得把全部 technology 都当 AI DC |
+| Electrical power path installation | 2026Q1 Electrical `8.05 亿美元`；backlog `28.61 亿美元` | 直接；多为电气施工/工程，不拥有主要电力设备 ASP | Q1 Electrical gross margin 约 `24.9%`，经营利润率约 `14.9%`（未分摊 corporate） | `25-31 亿美元` | `30-38 亿美元` | `38-47 亿美元` | `47-58 亿美元` | 基准略高于 Q1 年化下限；乐观需新增 bookings | A | 是 | 分部收入、分部 backlog、same-store technology electrical growth | 进入基准，但不与 technology 行相加 |
+| EAS/TAS modular off-site construction | Q1 modular delivery `17%`，约 `4.87 亿美元`；产品页列 data centers、data halls、electrical solutions、central utility plants | 直接；但与机械/电气 segment 重叠 | 可能高于纯现场施工；扩产和工厂利用率决定利润 | `15-20 亿美元` | `20-27 亿美元` | `27-35 亿美元` | `35-48 亿美元` | 基准符合 Q1 年化和 backlog；极度只是上限 | A/B | 是，作为 mix/产能属性 | IR delivery mix、公司 modular 产品页、Texas modular backlog 同比增量 | 进入基准，但在公司汇总中作为利润和产能变量 |
+| Service / retrofit / controls | Q1 service projects + service & maintenance `3.15 亿美元`；existing construction `4.30 亿美元`；maintenance base `1.84 亿美元` | 直接；controls 拆分间接估算 | 现金转化通常好，短周期；controls 可能高毛利但规模未披露 | `26-30 亿美元` | `30-35 亿美元` | `35-42 亿美元` | `42-50 亿美元` | 基准符合 installed base；乐观取决于 retrofit | A for service/existing；C for controls | 是，controls 小比例 | IR delivery mix、10-Q service description | 稳定底盘，NTM 弹性小于新建/模块化 |
+| Advanced manufacturing / chip fab MEP | Q1 manufacturing `5.44 亿美元`；technology 内含 chip manufacturing 但未拆分 | 直接/近邻 | 工艺复杂度高，但与 AI DC 争夺同一产能 | `20-26 亿美元` | `25-35 亿美元` | `35-46 亿美元` | `46-60 亿美元` | 基准符合 Q1 run-rate；乐观需新增项目 | A for manufacturing；C for chip fab subset | 是，保守 | IR market activity、10-Q manufacturing and technology demand | 进入基准，作为第二增长腿 |
+| 普通商业 HVAC / office / retail /低密度维护 | office + retail 约 `1.72 亿美元`/Q1；其他普通项目未单列 | 直接 | 低到中等毛利，现金稳定 | `10-13 亿美元` | `12-16 亿美元` | `14-18 亿美元` | `16-20 亿美元` | 多数符合现有 run-rate | A | 是 | 收入表和交付类型 | 防守底盘，不作为 AI 增量 |
+
+排除项：GPU、服务器、冷板、CDU、UPS、switchgear、母线槽、光模块、电力资产和云服务收入不进入 FIX 的 NTM 收入；客户总 CapEx、TAM、AI 园区总项目金额、远期 800VDC/MVUPS 标准化机会均不得直接写成公司基准收入。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求与收入基数出发，判断每个重要产品在 NTM 内对收入和利润的贡献。由于 FIX 不披露产品级毛利率，本表的利润贡献是以分部毛利率、公司毛利率和业务属性估算的经营贡献方向，不代表公司正式分部报告。产品行之间有重叠，不能简单相加。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| AI 数据中心/technology MEP 交付 | 悲观产品 | `32-44 亿美元` | 毛利 `7.0-10.5 亿美元`；项目成本吞噬部分经营杠杆 | 低于 Q1 高位，毛利率向 `22%-24%` 回落 | 低于当前强订单预期 | demand 仍强但电力/许可/客户 NTP 延后 | 保留悲观 | AI DC 独立 revenue 未披露；technology 包含 chip manufacturing |
+| AI 数据中心/technology MEP 交付 | 基准产品 | `43-58 亿美元` | 毛利 `11.0-15.5 亿美元`；经营贡献随 SG&A 杠杆保守改善 | `24%-27%` 附近，低于 Q1 尾部项目收益但高于历史 | 符合当前 RPO/run-rate | Q1 technology `56%`，公司称 data centers 强，backlog 仍增 | 保留基准 | 熟练工、长交期设备、现场 commissioning |
+| AI 数据中心/technology MEP 交付 | 乐观产品 | `58-74 亿美元` | 毛利 `15.5-21.0 亿美元` | mix/规模效应改善，`26%-28%+` | 高于当前预期 | 新 bookings 和 pipeline 强，客户抢 time-to-power | 保留乐观 | 不能只用 hyperscaler capex 替代公司订单 |
+| AI 数据中心/technology MEP 交付 | 极度乐观产品 | `74-92 亿美元` | 毛利 `20.0-27.0 亿美元`；只有多项目复制和强执行才成立 | 高位扩张但不默认线性 | 上限，不是基准 | 多个大型 AI campus 同时 NTP，FIX 可捕获关键 MEP scope | 下移为乐观上限/保留为低可信上限 | 任一环节缺证据则不能进基准 |
+| Electrical power path installation | 悲观产品 | `25-31 亿美元` | 毛利 `5.5-7.5 亿美元` | 设备延迟与 labor 成本压制 | 低于当前 Electrical run-rate | Electrical backlog 足但设备/OEM交期可能拖 | 保留悲观 | FIX 不拥有开关柜/UPS ASP |
+| Electrical power path installation | 基准产品 | `30-38 亿美元` | 毛利 `7.2-10.0 亿美元` | 接近 Q1 segment GP `24.9%` | 符合当前预期 | Q1 Electrical `+87.5%`，backlog `28.61 亿美元` | 保留基准 | 电气工程队伍扩张和安全/质量管理 |
+| Electrical power path installation | 乐观产品 | `38-47 亿美元` | 毛利 `9.5-13.0 亿美元` | 高利用率和稀缺电气队伍支撑 | 高于当前预期 | Texas electrical technology activity 强 | 保留乐观 | 设备缺货会推迟收入确认 |
+| Electrical power path installation | 极度乐观产品 | `47-58 亿美元` | 毛利 `12.0-17.0 亿美元` | 需客户锁产能或高价赶工 | 上限 | 多区域电气项目同时复制 | 下移为乐观上限 | 多供压价、固定价风险 |
+| EAS/TAS modular off-site construction | 悲观产品 | `15-20 亿美元` | 毛利 `3.3-5.0 亿美元` | 工厂利用率不足或标准化压价 | 低于当前预期 | modular 已有收入但客户可能转向 OEM turnkey | 保留悲观 | 与机械/电气重叠，不能加总 |
+| EAS/TAS modular off-site construction | 基准产品 | `20-27 亿美元` | 毛利 `5.0-7.6 亿美元` | 高于普通施工，capex 折旧略拖累 | 符合当前 run-rate | Q1 modular `17%`，Texas modular backlog 增量 `15.0 亿美元` | 保留基准 | 工厂产能、运输、FAT/SAT、现场接口 |
+| EAS/TAS modular off-site construction | 乐观产品 | `27-35 亿美元` | 毛利 `7.2-10.5 亿美元` | 工厂利用率和 repeatable block 改善 | 高于当前预期 | 客户缩短工期需求增强 | 保留乐观 | 客户和总包可能压低模块溢价 |
+| EAS/TAS modular off-site construction | 极度乐观产品 | `35-48 亿美元` | 毛利 `10.0-15.5 亿美元` | 强定价需 capacity reservation | 上限 | 多客户锁定模块化 MW block | 仅作跟踪/乐观上限 | 缺少长期锁产能披露 |
+| Service / retrofit / controls | 悲观产品 | `26-30 亿美元` | 毛利 `6.0-8.0 亿美元` | 稳定但资源被新建项目挤占 | 略低于预期 | service 不进入 RPO，能见度较低 | 保留悲观 | 短周期需求可推迟 |
+| Service / retrofit / controls | 基准产品 | `30-35 亿美元` | 毛利 `7.5-10.0 亿美元` | 稳定，现金转化较好 | 符合当前预期 | Q1 service/existing 占比 `26%` | 保留基准 | controls 规模未披露 |
+| Service / retrofit / controls | 乐观产品 | `35-42 亿美元` | 毛利 `9.0-12.5 亿美元` | retrofit/controls mix 改善 | 略高于预期 | 已安装 AI base 增加、液冷-ready retrofit | 保留乐观 | NTM 可能偏早，2027 后更明显 |
+| Service / retrofit / controls | 极度乐观产品 | `42-50 亿美元` | 毛利 `11.0-16.0 亿美元` | 需要高毛利 controls/commissioning 放量 | 上限 | 企业/colo inference 改造爆发 | 移入附录/仅作跟踪 | 缺少独立订单证据 |
+| Advanced manufacturing / chip fab MEP | 悲观产品 | `20-26 亿美元` | 毛利 `4.5-6.5 亿美元` | 工业周期放缓 | 低于当前预期 | 制造客户可延期 capex | 保留悲观 | 与 technology/chip manufacturing 重叠 |
+| Advanced manufacturing / chip fab MEP | 基准产品 | `25-35 亿美元` | 毛利 `6.0-9.5 亿美元` | 接近公司平均 | 符合当前预期 | Q1 manufacturing `19%`，on-shoring 和工厂项目强 | 保留基准 | 与 AI DC 争夺同一 MEP 资源 |
+| Advanced manufacturing / chip fab MEP | 乐观产品 | `35-46 亿美元` | 毛利 `9.0-13.5 亿美元` | 高复杂度项目支撑 | 高于当前预期 | fab/药厂/工业项目加速 | 保留乐观 | 客户预算周期和验收 |
+| Advanced manufacturing / chip fab MEP | 极度乐观产品 | `46-60 亿美元` | 毛利 `12.0-18.0 亿美元` | 需同时高利用率和强项目执行 | 上限 | 制造回流与 AI DC 同步强 | 下移为乐观上限 | 产能冲突会限制同时兑现 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：公司层面只用总收入、总 RPO/backlog、分部披露、现金流和当前 EPS 预期归集；产品行不机械相加。先和 FIX 自身当前预期比较，再和行业质量比较，不使用股价或估值倍数作为经营证据。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `108-120 亿美元` | 较 TTM `+7%-18%` | 低于 Q1 run-rate、RPO 正常转化和 LSEG NTM EPS 隐含路径；绝对仍增长 | `22.5%-24.5%` | `11.5%-14.0%` | EBITDA `13.5-17.5 亿美元`；净利润 `9.5-12.5 亿美元` | FCF 仍可能为正，但大型项目营运资本与模块化 capex 压制转化 | 中 | backlog 转收入慢、fixed-price 成本上修、labor/设备延迟、technology mix 回落 |
+| 基准公司 | `122-135 亿美元` | 较 TTM `+20%-33%` | 符合 RPO `65%-75%` 12个月确认、Q1 run-rate 和当前 EPS 预期；高增长但从 Q1 爆发式增速正常化 | `24.5%-26.5%` | `14.5%-16.5%` | EBITDA `19.5-23.5 亿美元`；净利润 `14.5-16.8 亿美元` | FCF 为正，capex 高于近年平均但 billings/contract liabilities 支撑 | 中高 | 熟练工、模块化工厂、现场调试、项目排产和 working capital |
+| 乐观公司 | `135-150 亿美元` | 较 TTM `+33%-48%` | 高于当前预期；不是小基数项目造成，而是 AI DC、Electrical、modular 同时强 | `25.5%-27.5%` | `16.0%-18.0%` | EBITDA `23.5-29.0 亿美元`；净利润 `16.8-21.0 亿美元` | FCF 明显增长，但应收和 retainage 先上升 | 中 | 新 bookings 维持 `book-to-burn >1.2x`、modular 利用率、客户变更单可回收 |
+| 极度乐观公司 | `150-170 亿美元` | 较 TTM `+48%-68%` | 显著高于当前预期；需要需求、捕获、利润质量和执行质量同时突破 | `26.0%-29.0%` | `17.5%-20.0%` | EBITDA `29.0-36.0 亿美元`；净利润 `21.0-26.0 亿美元` | FCF 大幅增长但波动更大，营运资本峰值和扩产 capex 同步上行 | 低-中 | 多个大型 AI campus 同时 NTP、客户锁 modular/electrical 产能、没有重大超支或验收延误 |
+
+公司层面合成判断：
+
+- 悲观不是“行业没需求”，而是强需求不能按当前节奏进入收入表，或进入后利润被成本、验收和固定价风险吃掉。
+- 基准以 A/B 级证据为主：收入表、segment revenue、RPO/backlog、10-Q 对 12 个月确认节奏的披露、Q1 cash flow 与 LSEG EPS 预期。
+- 乐观必须看到 backlog 环比继续增长、technology/electrical 同步强、modular 占比不降且毛利率不回撤。
+- 极度乐观不能只靠 AI DC 长期需求，必须看到客户在 NTM 内锁定 FIX 的工程、模块化或电气履约能力。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：只校准前四步情景，不重新做市场定价。校准动作只能使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 revenue `28.65 亿美元`、同比 `+56.5%`，same-store revenue `+51.5%` | 公司收入/产品贡献 | 支撑基准及乐观下沿 | SG&A 杠杆改善，但不能外推 Q1 全部 margin | 大项目执行进入高 burn 阶段 | 基准保留；乐观保留 |
+| RPO/backlog `124.55 亿美元`，未来 12 个月预计确认 `65%-75%` | 收入基数 | 支撑 `80.96-93.41 亿美元` 的可见确认锚 | 不直接证明利润率 | 增强 NTM 能见度；仍受项目节奏影响 | 基准保留 |
+| technology `56%`、new construction `57%`、modular `17%` | 需求/产品贡献/利润率 | 支撑 AI DC/technology 是主增量 | 高复杂度 mix 支撑高于历史毛利 | 新建项目营运资本更重 | 基准保留；乐观保留 |
+| Electrical Q1 revenue `+87.5%`、Electrical backlog `28.61 亿美元` | 产品贡献 | 支撑 Electrical power path 高增 | Q1 Electrical GP margin 约 `24.9%`，利润质量好但不是设备毛利 | 电气工程队伍和设备交期是约束 | 基准保留；乐观保留 |
+| Texas modular operation 年同比 backlog 增量 `15.0 亿美元`，Q1 购买建筑支持 modular growth | 收入基数/执行可信度 | 支撑 modular NTM 贡献 | 工厂利用率可改善毛利，但扩产成本上行 | capex 增加，运输/FAT/SAT 成执行约束 | 基准保留；极度乐观下移为上限 |
+| Q1 gross margin `26.3%` 含约 `4310 万美元` 项目收尾/变更单有利影响 | 利润率 | 不改变收入 | 限制把 Q1 margin 线性外推 | 若变更单不可持续，margin 回落 | 基准利润率保守；极度乐观需更强证据 |
+| cost-to-cost 进度法、fixed-price 合同、labor/material/supply delay | 收入确认/利润率 | 延迟 revenue burn 或触发 revenue reversal | 成本估计错误会压低毛利 | 项目现金收款、retainage 和纠纷影响 FCF | 风险只在第二/三步处理，不在公司层重复惩罚 |
+| 公司净现金、无 revolver borrowing、27 年连续正 FCF | 现金流/执行可信度 | 间接增强承接大项目能力 | 不直接提升毛利率 | 提高 bonding、surety 和客户信用能力 | 基准可信度上调至中高 |
+| AI 数据中心独立收入、客户名、订单取消率、lead time 未披露 | 证据可信度 | 限制 AI DC 拆分准确性 | 限制产品利润率精确度 | 需要后续验证 | AI DC 极度乐观下移为低可信上限；不排除基准 technology |
+| hyperscaler/NeoCloud capex 或 GPU 利用率下修 | 需求风险 | 先影响新 bookings 和 NTP | 后影响 utilization/price | 后影响 backlog 转收入 | 只在第一步和后续跟踪处理，不重复压低已确认 RPO |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 需求仍强但收入确认慢，NTM `108-120 亿美元`，margin 回落 | 大 backlog 给收入底线；净现金降低财务风险 | fixed-price、labor、设备交期、客户 NTP 延误 | 保留 | 经营下行情景 | 中 | AI capex 放缓只在需求层处理；不要再在收入基数和利润率双重扣减 |
+| 基准 | RPO 正常 burn，technology/electrical/modular 正常兑现，NTM `122-135 亿美元` | Q1 revenue、RPO、technology mix、Electrical growth、cash flow 均为 A/B 级 | AI DC 拆分未披露；Q1 margin 含部分有利项目收尾 | 保留 | 最可能情景 | 中高 | Q1 margin 非经常性不能重复惩罚全部收入，只限制利润率外推 |
+| 乐观 | 新 bookings 与 modular/electrical 继续增强，NTM `135-150 亿美元` | backlog 环比增、same-store backlog 年增、Texas modular/electrical 证据强 | 客户项目名和单项金额不透明 | 保留 | 有证据的超预期情景 | 中 | 同一客户预算不能在 technology、electrical、modular 行重复加总 |
+| 极度乐观 | 多个大型 AI campus 在 NTM 内同时 NTP，NTM `150-170 亿美元` | 行业需求池和公司产能位置支持长期上限 | 缺少客户锁产能、长期协议、AI DC 独立 backlog 披露 | 下移 | 保留为低可信上限，不进入基准 | 低-中 | 长期 AI facility pool 不得替代 NTM 可确认收入 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入 `122-135 亿美元`，比 TTM `101.36 亿美元`增长约 `20%-33%`；利润保持高位但不机械外推 Q1 `26.3%` 毛利率，合理经营利润率区间为 `14.5%-16.5%`。
+- NTM 收入结论：需求池足够强，收入瓶颈在 revenue burn 和履约产能。`124.55 亿美元` backlog/RPO 与 `65%-75%` 12 个月确认披露，给公司 NTM 高增长提供 A/B 级锚；AI DC 独立收入因未披露，只能用 technology 和 modular/electrical 线索保守估算。
+- 利润/现金流结论：利润质量好于传统 MEP 承包商，但 Q1 margin 不能完全线性外推。基准净利润 `14.5-16.8 亿美元`，FCF 为正；若 modular capex 和大型项目 working capital 同时上行，FCF 增速可能低于净利润增速。
+- 主要传导瓶颈：`客户 AI/制造 capex -> data center/chip fab NTP -> FIX backlog -> engineering/procurement/labor scheduling -> installation/modular/FAT/SAT -> cost-to-cost revenue -> change orders/claims -> cash collection`。任何环节延迟都会把强需求变成低于预期的收入或利润。
+- 乐观情景成立条件：Q2/Q3 2026 backlog 继续环比增长，book-to-burn `>1.2x`；technology 占比维持 `50%+`；Electrical 和 modular 占比不回落；gross margin 保持 `25%+` 且应收/合同资产没有异常堆积。
+- 极度乐观情景成立条件：多个大型 AI campus 或 chip fab 在 NTM 内同期开工，客户明确锁定 FIX 的 modular/electrical/MEP 产能，模块化工厂扩张不拖累质量和 margin，Q1 类似的项目有利调整变成可重复的执行能力。
+- 悲观情景触发条件：backlog 环比下降且收入未同步加速；technology/electrical backlog 增量放缓；gross margin 连续两个季度回落至 `23%`附近；contract assets/receivables 上升但 OCF 不跟随；公司披露成本估计调整、项目争议或客户延期。
+- 后续跟踪数据：季度 revenue、gross margin、operating margin、RPO/backlog、segment backlog、technology/manufacturing/modular/service mix、same-store bookings、capital expenditures、OCF/FCF、contract assets/liabilities、项目收尾有利调整金额、AI 客户 capex/NTP/电力接入指标。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务数据截至 2026-03-31；Q1 2026 results 和 10-Q 发布日为 2026-04-23；本报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Comfort Systems USA Q1 2026 results：收入 `28.65 亿美元`、净利润 `3.704 亿美元`、OCF `3.888 亿美元`、backlog `124.55 亿美元`。
+  - Comfort Systems USA 2026Q1 Form 10-Q：RPO `124.55 亿美元`，预计 `65%-75%` 未来 12 个月确认；Mechanical/Electrical revenue/backlog；项目 duration、fixed-price、working capital、cash flow 和 risk language。
+  - Comfort Systems USA Q1 2026 investor presentation：technology `56%`、manufacturing `19%`、new construction `57%`、modular `17%`、service mix、cash/debt、employee/location data。
+  - Comfort Systems USA LSEG earnings estimates page：2026E EPS `$43.08`、2027E EPS `$53.44`，以及 Q2-Q4 2026/Q1 2027 EPS current expectation。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026/FY2027 只用作 EPS 预期校准，不替代 NTM 收入主表。
+  - 800VDC、MVUPS、AI factory repeatable block、客户 capacity reservation、长期 service/controls 软件化均列远期期权；除非有客户、合同、交付和收入确认路径，否则不进入 NTM 基准。
+- 主要来源：
+  - 本地公司资料：`公司调研/机电_冷却_工程_水处理_边缘工业AI/FIX_Comfort Systems USA_公司调研_2026-06-11.md`
+  - 本地行业资料：`行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - 本地行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+  - Comfort Systems USA Q1 2026 results：https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-first-quarter-2026-results
+  - Comfort Systems USA 2026Q1 Form 10-Q：https://investors.comfortsystemsusa.com/static-files/eb76e0cd-f57c-496d-a682-7df9936aab32
+  - Comfort Systems USA Q1 2026 investor presentation：https://investors.comfortsystemsusa.com/static-files/ae41d154-b88b-468a-b0eb-291d2419fd78
+  - Comfort Systems USA FY2025/Q4 results：https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-fourth-quarter-and-full-year-2025
+  - Comfort Systems USA earnings estimates：https://investors.comfortsystemsusa.com/earnings-estimates
+  - Comfort Systems USA modular construction：https://comfortsystemsusa.com/what-we-do/modular-construction/
+  - Comfort Systems USA off-site construction products：https://comfortsystemsusa.com/what-we-do/modular-construction/off-site-construction-products/
+

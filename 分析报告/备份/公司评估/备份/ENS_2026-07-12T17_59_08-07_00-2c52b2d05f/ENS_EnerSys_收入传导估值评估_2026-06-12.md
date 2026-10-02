@@ -1,0 +1,164 @@
+# 公司收入传导与价值传导评估：EnerSys
+
+报告日期：2026-06-12  
+公司代号：ENS  
+公司名称：EnerSys  
+正式输出目录：`分析报告/公司评估/`  
+研究边界：本报告只评估 NTM 经营收入、利润和经营价值传导，不做全公司排序，不给投资评级，不判断股价区间，不做估值倍数判断；市场价格、估值倍数和排名不作为经营价值传导证据。  
+资料范围：使用 `公司调研/` 下 EnerSys 正式调研、`行业调研/` 下数据中心 UPS/电池储能、AI 数据中心建设规模与机柜级供电资料，并用 EnerSys 最新公开披露交叉校准；未读取、引用或继承 `特征量化/` 下内容。  
+时间口径：NTM 主口径为 2026-04-01 至 2027-03-31 附近的未来 12 个月经营窗口；FY2028 以后 Greenville 锂电工厂、DataSafe Noir 大规模标准化和长期 run-rate 只作为补充或远期期权。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径使用 NTM 公司收入、毛利率、经营利润率、调整后 EBITDA/净利润和自由现金流方向；FY2026 实际值、FY2027 Q1 指引、FY2027 全年管理层定性表述和 FY2028 以后产品/产能路线只作锚点或补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：FY2026 收入为 `$3.751B`、同比 `+3.7%`，GAAP 毛利率 `29.3%`、ex-45X 毛利率 `25.1%`，GAAP 经营利润 `$426M`、调整后经营利润 `$540M`，调整后 EBITDA `$602M`，自由现金流 `$468M`。FY2027 Q1 更正后指引为收入 `$915-955M`、调整后 EPS `$2.80-2.90`、45X 成本收益 `$42-47M`、ex-45X 调整后 EPS `$1.61-1.71`；公司没有给 FY2027 全年收入正式指引。
+- 重要产品/业务线：`Network & Infrastructure Solutions` 的数据中心 UPS/TPPL/DataSafe、电源系统、通信/工业后备电源和 DataSafe Noir；`Industrial Mobility Solutions` 的物料搬运/交通动力电池与维护免维护产品；`Precision Power Solutions` 的国防、航天、弹药、士兵电源和特种电池；仓储/工业 BESS 作为早期项目跟踪，收入并入相应业务线，不单独重复加总。
+- NTM 公司收入四情景：悲观 `$3.65-3.80B`，基准 `$3.85-4.05B`，乐观 `$4.10-4.35B`，极度乐观 `$4.45-4.80B`。基准相当于 FY2026 实际收入上低到中个位数增长，符合 Q1 指引、Q4 run-rate、数据中心订单领先和 A&D book-to-bill 的综合锚；极度乐观需要 DataSafe Noir、传统数据中心、PPS 与 IMS 周期修复同时成立。
+- 利润或 EBITDA 四情景：悲观为调整后 EBITDA `$520-580M`、净利润 `$250-310M`；基准为调整后 EBITDA `$610-690M`、净利润 `$310-390M`；乐观为调整后 EBITDA `$720-820M`、净利润 `$400-500M`；极度乐观为调整后 EBITDA `$860-1,000M`、净利润 `$520-650M`。利润区间包含 45X 对成本的现有贡献；ex-45X 经营质量需单独跟踪。
+- 最大传导瓶颈：数据中心 demand 不等于 ENS 可确认收入。NIS 数据中心订单 `+36% YoY` 是强领先信号，但收入仍受项目制交付、UPS/OEM handoff、客户验证、通信接口、site commissioning 和电力项目节奏约束。
+- 最大利润率变量：45X 税收抵免、产品 mix、PPS/A&D 高可靠产品占比、IMS 利用率恢复、DataSafe Noir 是否以系统/服务溢价而非 cell pass-through 定价。
+- 最大现金流变量：FY2026 自由现金流转换率很高，部分来自营运资本改善和重组相关应计项；NTM 需要看应收/库存是否继续改善、DataSafe Noir/BESS 是否带来项目制营运资本占用、FY2027 capex 约 `$70M` 是否维持。
+- 可信度：基准情景为中高；数据中心传统 UPS 和 NIS/IMS/PPS 分部收入证据较强，但 DataSafe Noir、仓储 BESS 和 PPS 细分利润率仍依赖管理层披露、客户验证和本报告估算。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| NIS：传统数据中心 UPS/TPPL/DataSafe、电源系统和服务 | FY2026 数据中心相关收入估算 `$350-550M`，包含在旧 Energy Systems / 新 NIS `$1.651B` 内；公司未披露单独 data center 收入 | 估算 `9-15%`，NIS 总占 `44%` | AI 数据中心最直接收入传导口 | B/C：分部收入 A，data center 订单和增长 B，细分收入估算 C | 基准纳入，但只纳入保守区间；不把全数据中心电力/UPS/BESS 订单池直接映射为 ENS 收入 | 数据中心锂电/高密架构份额上修 |
+| NIS：DataSafe Noir lithium data center system | FY2026 主要为 customer commissioning，收入估算 `<$10-20M`，公司未披露金额 | `<1%` | 改变数据中心电池 mix 和系统价值量的关键新品 | C/D：已发布、可供货、已向客户出货并 commissioning，但大规模客户验证未完成 | 基准仅小额纳入；主要放在乐观和极度乐观收入上限 | FY2028 meaningful revenue lift、hyperscaler 标准化 |
+| NIS：通信、宽带、工业电力和公用事业后备电源 | 旧 Energy Systems / 新 NIS FY2026 总收入 `$1.651B`，扣除 data center 后残余估算 `$1.1-1.3B` | `29-35%` | 稳定收入底盘，影响 NIS 利用率和现金流 | A/B：分部收入 A，管理层披露 communications orders 和 broadband power supplies B | 基准纳入；按低到中个位数增长处理 | DOCSIS 4.0、网络刷新、utility resilience |
+| IMS：物料搬运、仓储、交通动力电池、维护免维护产品 | 新 IMS FY2026 recast 收入 `$1.742B`；旧 Motive Power FY2026 `$1.431B`，Transportation 从旧 Specialty 转入 | `46%` | 最大收入底盘，决定公司能否抵消 NIS/PPS 波动 | A：recast 分部收入和旧分部数据均披露 | 基准纳入，但不按 AI 需求上修；仅按周期恢复和 mix 改善处理 | 自动化仓储、电动化、维护免维护/锂电替代 |
+| PPS：A&D、航天、弹药、士兵电源和特种电池 | 新 PPS FY2026 recast 收入 `$359M`；旧 Specialty FY2026 `$665M` 中 A&D/特种部分转为 PPS | `10%` | 小收入、高壁垒、高利润率弹性 | A/B：recast 收入 A，A&D orders/book-to-bill 和项目节奏 B | 基准纳入，并允许高于公司平均增长；收入节奏仍按项目制折扣 | liquid reserve、thermal batteries、space、Bren-Tronics 协同、domestic lithium |
+| 仓储/工业 BESS、dynamic fast charging、energy management | FY2026 正式收入很小；New Ventures 不再单独作为 FY2027 operating segment，销售并入相关业务线 | `<1-2%` | 可提升客户粘性和能源管理能力，但短期公司收入贡献小 | C/D：customer commissioning，缺少量化订单和收入表证据 | 基准仅小额或不单列，避免重复计算；进入乐观需看到 repeat orders | warehouse BESS 标准化、数据中心/工业 interconnection 工具化 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池和采购强弱，不判断 ENS 份额、收入确认或利润率。当前需求锚来自 FY2026 公司披露、Q4 FY2026 财报会、项目内数据中心 UPS/电池储能与 AI 数据中心订单池研究。所有需求变化均相对“当前行业/公司披露隐含预期”判断，不把 AI 数据中心整体 CapEx 直接等同为 ENS 需求。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| NIS 传统数据中心 UPS/TPPL/DataSafe | 项目内全球数据中心 UPS 2026 合理区间 `$4.3-6.6B`；美国 AI UPS/dynamic UPS/BESS 订单池 2026 `$10-18B`；公司披露 FY2026 data center 高个位数/中高双位增长口径和订单 `+36% YoY` | 数据中心项目延迟，传统 UPS 电池需求仍增长但低于公司订单节奏，NTM 需求仅低个位数增长 | 数据中心扩容和 UPS battery refresh 正常兑现，需求中高个位数到低双位数增长 | AI 高密数据中心拉动高倍率/短时 UPS 电池需求，订单转化快于基准，需求 `+15-30%` | 多个 hyperscaler 同步前置 UPS 电池/服务采购，需求 `+35%+` | 全球 UPS 池 `$4-7B` 底盘中 ENS 可服务子池扩大；AI 相关订单池增量不全部可捕获 | 基准略高于 FY2026 revenue growth，但低于 order growth；乐观才把 `+36%` 订单较快转需求 | 正证：订单 `+36%`、TPPL 适合高倍率短时放电；反证：项目制波动、Q4 data center revenue flat、客户 pull-in 影响比较基数 |
+| DataSafe Noir | 2026-06-09 发布并 available immediately；产品最高 `500-600kW / 5min` 单柜输出、LFP、UL1973/UL9540A；Q4 已客户 commissioning | 客户验证慢，需求停留在试点/少数项目，NTM 只形成小额采购 | 客户继续试点和首批部署，需求集中在 OEM handoff 与安全验证，NTM 小规模 | 1-2 家主 UPS/OEM 或 colo/hyperscaler 通过验证，需求上修到 `$100M+` 级订单机会 | AI 动态负载和空间约束使 DataSafe Noir 成为高密 UPS 锂电候选标准件，NTM 形成数亿美元订单上限 | 从接近 0 起步；基准需求为几十百万美元级，极度乐观为数亿美元订单上限 | 基准仍低于市场主题期待；乐观以上才反映新品超预期 | 正证：官方性能/安全规格和已出货；反证：管理层称 meaningful revenue lift 更偏 FY2028，需 OEM communication 和 hyperscaler validation |
+| NIS 通信/宽带/工业后备电源 | FY2026 NIS 总收入 `$1.651B`；管理层称 communications orders 强、broadband power supplies record shipments，DOCSIS 4.0/network refresh 支撑需求 | 通信和工业客户推迟替换，需求 flat 到低个位数下滑 | 网络刷新、备电可靠性和数据流量增长支持低到中个位数需求 | DOCSIS 4.0、通信恢复和工业 utility resilience 同步，需求中个位数到高个位数增长 | 通信和工业公用事业大规模刷新，叠加高可靠电源，需求 `+10%+` | 绝对需求池无法可靠量化；以 NIS residual `$1.1-1.3B` 收入锚约束 | 基准符合当前预期；极度乐观不作为公司主驱动 | 正证：公司披露 communications/broadband 强；反证：旧通信网络替换周期和宏观 capex 仍可能波动 |
+| IMS 物料搬运/交通动力电池 | 新 IMS FY2026 recast `$1.742B`；旧 Motive Power FY2026 `-3.6%`，Q4 Motive revenue `-5.7%`，但订单改善、book-to-bill >1 | 工业叉车、仓储和 Class 8 继续弱，需求再降 `-5%` 左右 | 低位稳定，订单改善逐步转收入，需求 flat 到低个位数增长 | 叉车/仓储 capex 修复，maintenance-free mix 提升，需求 `+5-10%` | 工业周期明显反弹，自动化仓储和电动化同步，需求 `+10-20%` | 以 `$1.7B+` 大基数计，绝对变化每 5pct 约 `$85M` | 基准为符合当前谨慎乐观，不使用 AI 主题上修 | 正证：Q4 订单改善、maintenance-free 占比 `30.4%`；反证：Motive/transport 对 GDP、利率和工业 capex 敏感 |
+| PPS A&D/航天/弹药/士兵电源 | 新 PPS FY2026 recast `$359M`；Q4 A&D revenue `+mid-20%`，book-to-bill `1.22`，munitions/space 强 | 国防项目时点推迟，需求仍强但 NTM 采购低于 backlog 节奏 | liquid reserve FY2027 转收入、thermal batteries late-year，A&D/space 正常增长 | 全球国防预算和弹药/space 多线同步，需求 `+20-40%` | PPS 进入产能约束，军品认证壁垒和 domestic supply 带来非线性上修，需求 `+50%+` | 以 `$359M` FY2026 recast 基数，基准绝对增量可为几十百万美元，乐观可过 `$100M` | 基准高于公司平均增长但符合订单证据 | 正证：book-to-bill `1.22`、munitions backlog increasing；反证：政府预算、验收和军品项目制波动 |
+| 仓储/工业 BESS | FY2026 小收入，Q4 进入 customer commissioning；项目内 BESS 作为接入/需求电费工具需求增强 | commissioning 不能复制，需求停留定制项目 | 少数仓储客户验证，需求为 `$10-50M` 级 | 复制到多个仓储/工业客户，需求 `$75-150M` | BESS 成为仓储电气化和 demand charge management 标配之一，需求 `$200M+` | 从小基数起步，绝对变化较大但可信度低 | 基准不能替代主收入；乐观才上修 | 正证：power scarcity 和 BESS economic value；反证：系统集成毛利、项目融资、客户 ROI 和交付复杂度 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断外部需求中哪些能进入 ENS NTM 收入表，以及当前可收入化基数。公司能参与数据中心 UPS/BESS/电力需求池，不等于能在 NTM 确认收入。A/B 级证据可作为基准主口径；C 级只有客户、产品和时间表清楚时小比例纳入；D/E 级不进入 NTM 基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| NIS 传统数据中心 UPS/TPPL/DataSafe | FY2026 data center 细分未披露；公司披露 full-year data center 高个位数/中高双位增长、Q4 flat、orders `+36%`; 本报告估算 FY2026 `$350-550M` | 直接 | 硬件+服务，TPPL/高倍率产品和服务 attach 高于普通 lead-acid | `$325-425M` | `$375-525M` | `$525-700M` | `$750M+` | 基准符合当前订单和 run-rate；乐观高于当前收入预期 | B/C | 是，保守纳入 | 旧 Energy Systems / 新 NIS 收入可见，订单和增长披露可见，细分金额为估算 | NTM 基准收入主要来自成熟 TPPL/DataSafe、UPS battery refresh 和服务，不把全部 AI UPS/BESS 订单池穿透 |
+| DataSafe Noir | 官方发布、available immediately；客户 commissioning；管理层称非 A/B sample、已向客户出货，但 meaningful lift 更偏 FY2028 | 直接 | 早期系统级锂电+BMS+服务有溢价，但 cell 外购和验证成本压制利润 | `$0-10M` | `$10-40M` | `$75-175M` | `$250-400M` | 基准只代表小额初期收入；乐观/极度才高于预期 | C/D | 小比例进入 | 有产品、交付和 commissioning；缺少量化订单、客户名单和 FY2027 收入指引 | NTM 基准只纳入小额；主要作为乐观和极度乐观的上限变量 |
+| NIS 通信/宽带/工业后备电源 | NIS FY2026 `$1.651B`，扣除 data center 后为本报告 residual 估算；communications/broadband 订单和出货披露 | 直接 | 稳定硬件+服务，利润受 price/mix、成本和项目结构影响 | `$1.05-1.15B` | `$1.10-1.25B` | `$1.25-1.35B` | `$1.35-1.45B` | 基准符合当前预期 | A/B | 是 | NIS 分部收入 A，通信需求披露 B | NTM 稳定底盘；不作为 AI 主要增量 |
+| IMS 物料搬运/交通动力电池 | 新 IMS FY2026 recast `$1.742B`、AOE `$176M`、margin `10.1%`; 旧 Motive FY2026 `$1.431B`、旧 Motive Q4 maintenance-free mix `30.4%` | 直接 | 大基数、周期性、利用率和 mix 决定利润；维护免维护产品改善质量 | `$1.60-1.70B` | `$1.70-1.85B` | `$1.85-2.00B` | `$2.05-2.20B` | 基准为低位稳定，不因 AI 上修 | A | 是 | Recast 分部收入和旧 Motive 财务可见 | NTM 基准纳入；乐观来自周期修复和 mix，不来自数据中心主题 |
+| PPS A&D/航天/特种电源 | 新 PPS FY2026 recast `$359M`、AOE `$63M`、margin `17.6%`; A&D Q4 revenue `+mid-20%`，book-to-bill `1.22` | 直接 | 高可靠、认证壁垒、定制项目，利润率高于公司平均但项目制波动大 | `$340-380M` | `$400-480M` | `$500-650M` | `$700-900M` | 基准高于当前公司平均增长，但有订单支持 | A/B | 是 | Recast 收入 A，book-to-bill/backlog 转化 B | NTM 是 EPS/利润质量弹性核心之一；不是 AI 收入 |
+| 仓储/工业 BESS | FY2026 小额；客户 commissioning；New Ventures 取消独立分部后销售并入相关业务线 | 直接/间接 | 项目集成毛利低于高可靠电池；软件/服务 attach 可改善 | `$0-10M` | `$10-30M` | `$50-125M` | `$200-300M` | 基准仅为小额可见项目；乐观高于当前预期 | C/D | 小比例或不单列 | 产品/客户 commissioning 可见，但缺少正式订单和收入指引 | NTM 不单独加总；作为 NIS/IMS 内部机会跟踪，防止重复计算 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从外部需求和可收入化基数出发，评估每个重要产品在 NTM 内对 ENS 收入和利润的贡献。产品表中的收入贡献是该业务线 NTM 收入或可识别子收入区间；BESS 和 DataSafe Noir 已包含在 NIS/IMS 对应业务线中，公司汇总时做去重。利润贡献使用经营利润或利润率方向；细分毛利/经营利润未披露时标注估算或无法可靠量化。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| NIS 传统数据中心 UPS/TPPL/DataSafe | 悲观产品 | `$325-425M` | 无法可靠量化；NIS margin 低于 FY2026 `9.1%` recast | 持平到下行 | 低于订单隐含路径 | Q4 data center revenue flat，项目制波动 | 保留为悲观 | 项目延迟、客户 pull-in 后消化、普通 lead-acid 价格竞争 |
+| NIS 传统数据中心 UPS/TPPL/DataSafe | 基准产品 | `$375-525M` | 对 NIS AOE 有正贡献；服务和 TPPL mix 支撑 | 稳中小升 | 符合当前预期 | Data center FY2026 增长、orders `+36%`、TPPL 高倍率适配 | 保留为基准 | 订单转收入滞后，不能按 `+36%` 全额进收入 |
+| NIS 传统数据中心 UPS/TPPL/DataSafe | 乐观产品 | `$525-700M` | NIS margin 向 `10-12%` 区间靠拢 | 上行 | 高于当前收入锚 | AI 数据中心 UPS 项目加速，价格/mix 好于普通电池 | 保留为乐观 | 竞争来自 Vertiv/Schneider/Eaton 配套和锂电/NiZn 替代 |
+| NIS 传统数据中心 UPS/TPPL/DataSafe | 极度乐观产品 | `$750M+` | 若服务 attach 和高端 TPPL 占比高，经营利润明显上修 | 明显上行 | 显著高于当前预期 | AI 高密数据中心前置采购、TPPL 高倍率形成 TCO 溢价 | 下移为“极度乐观上限” | 需要多个客户/项目同时兑现，单一订单不能支撑公司极度乐观 |
+| DataSafe Noir | 悲观产品 | `$0-10M` | 早期成本、认证和支持费用抵消毛利 | 下行 | 低于产品发布热度 | 管理层明确 meaningful revenue lift 更偏 FY2028 | 保留为悲观 | OEM handoff、通信接口、安全验证、hyperscaler validation |
+| DataSafe Noir | 基准产品 | `$10-40M` | 小额毛利贡献，费用投入仍高 | 中性到小幅下行 | 符合“commissioning 先行” | 已出货、available immediately、非 A/B sample | 保留为基准但低权重 | 不能把产品发布等同于 NTM 大规模收入 |
+| DataSafe Noir | 乐观产品 | `$75-175M` | 若系统溢价成立，NIS margin 上修 | 上行 | 高于当前预期 | 1-2 家 OEM/colo/hyperscaler 通过验证，动态负载/空间价值被认可 | 保留为乐观 | cell 外购、消防/UL、客户 AVL、field data |
+| DataSafe Noir | 极度乐观产品 | `$250-400M` | 只有差异化和服务责任边界清晰时才高质量 | 明显上行但低可信 | 只代表 NTM 上限 | 600kW/5min 单柜、LFP、BMS、UL1973/UL9540A、global service | 下移为乐观上限/附录跟踪 | 管理层 FY2028 节奏与 NTM 极度乐观冲突 |
+| NIS 通信/宽带/工业后备电源 | 悲观产品 | `$1.05-1.15B` | 固定成本吸收弱，NIS margin 承压 | 下行 | 低于当前预期 | 宏观不确定、工业/通信 capex 延迟 | 保留为悲观 | 客户预算推迟、tariff/freight 滞后 |
+| NIS 通信/宽带/工业后备电源 | 基准产品 | `$1.10-1.25B` | 稳定贡献，price/mix 和服务支撑 | 稳定 | 符合当前预期 | Communications orders、broadband power supplies、network refresh | 保留为基准 | 需求无法可靠按细分量化 |
+| NIS 通信/宽带/工业后备电源 | 乐观产品 | `$1.25-1.35B` | NIS 利用率和服务吸收改善 | 小幅上行 | 略高于预期 | DOCSIS 4.0、通信备电刷新、工业电力可靠性 | 保留为乐观 | 不是 AI 高弹性收入，估值叙事不能上修此线 |
+| NIS 通信/宽带/工业后备电源 | 极度乐观产品 | `$1.35-1.45B` | 有利但边际不如 DataSafe/PPS | 小幅上行 | 高于预期 | 通信和工业 utility 大规模刷新 | 下移为乐观上限 | 缺少非线性需求证据 |
+| IMS 物料搬运/交通动力电池 | 悲观产品 | `$1.60-1.70B` | AOE margin 低于 FY2026 recast `10.1%` | 下行 | 低于当前恢复预期 | Motive volume softness、freight/tariff 成本 | 保留为悲观 | 工业/GDP/利率、叉车 replacement 延后 |
+| IMS 物料搬运/交通动力电池 | 基准产品 | `$1.70-1.85B` | AOE margin `10-11%` 附近 | 稳定 | 符合当前预期 | Q4 orders 改善、maintenance-free mix `30.4%` | 保留为基准 | 收入大但不是 AI，不能获得主题上修 |
+| IMS 物料搬运/交通动力电池 | 乐观产品 | `$1.85-2.00B` | 利用率恢复，mix 改善，margin 向 `11-12%` | 上行 | 高于当前预期 | 叉车/交通订单恢复、维护免维护/充电器方案 | 保留为乐观 | 价格竞争和客户 capex 节奏 |
+| IMS 物料搬运/交通动力电池 | 极度乐观产品 | `$2.05-2.20B` | 高利用率带来经营杠杆 | 明显上行 | 显著高于当前预期 | 工业周期快速反弹、自动化仓储电动化 | 下移为乐观上限 | 需要宏观强复苏，非公司独有 alpha |
+| PPS A&D/航天/特种电源 | 悲观产品 | `$340-380M` | AOE margin 仍较高但项目 mix 低于预期 | 稳定到下行 | 低于订单锚 | 政府项目和验收节奏推迟 | 保留为悲观 | 预算、认证、项目 timing |
+| PPS A&D/航天/特种电源 | 基准产品 | `$400-480M` | AOE margin `17-19%`，高于公司平均 | 上行 | 符合强订单预期 | PPS FY2026 margin `17.6%`、A&D book-to-bill `1.22`、liquid reserve/thermal timing | 保留为基准 | 项目制收入不线性 |
+| PPS A&D/航天/特种电源 | 乐观产品 | `$500-650M` | 高 mix 带动公司利润质量 | 明显上行 | 高于当前预期 | munitions、space、soldier power、Bren-Tronics 协同 | 保留为乐观 | 产能和军品认证，不可无限放量 |
+| PPS A&D/航天/特种电源 | 极度乐观产品 | `$700-900M` | 若产能紧缺和差异化成立，利润非线性上修 | 大幅上行 | 只作为上限 | 全球国防预算、稀缺供应商、domestic supply | 下移为极度乐观上限 | 任一产能/预算/验收环节缺证据就降为乐观 |
+| 仓储/工业 BESS | 悲观产品 | `$0-10M` | 项目费用抵消收入 | 下行 | 低于产品叙事 | 无量化订单、系统集成复杂 | 保留为悲观 | ROI、项目融资、field commissioning |
+| 仓储/工业 BESS | 基准产品 | `$10-30M` | 小额，无法可靠量化 | 中性 | 符合早期项目 | Customer commissioning | 保留为基准低权重 | 不单独加总，避免与 NIS/IMS 重复 |
+| 仓储/工业 BESS | 乐观产品 | `$50-125M` | 若服务/软件 attach，可改善利润 | 小幅上行 | 高于当前预期 | 多客户 repeat orders、demand charge reduction | 保留为乐观 | BESS 项目毛利低、交付复杂 |
+| 仓储/工业 BESS | 极度乐观产品 | `$200-300M` | 需要高软件/服务占比才高质量 | 不确定 | 只作上限 | 仓储电气化和电力约束同步 | 移入附录/仅作跟踪 | 缺少 NTM 量化合同和收入确认路径 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：先按 NIS/IMS/PPS 合并，去除 DataSafe Noir 和 BESS 与 NIS/IMS 的重复计算，再给出公司 NTM 总收入、毛利率、经营利润率、调整后 EBITDA/净利润和自由现金流方向。公司没有 FY2027 全年收入正式指引，因此当前预期锚采用 FY2026 收入 `$3.751B`、FY2027 Q1 指引中点 `$935M`、Q4 FY2026 run-rate `$988M`、data center orders `+36%`、A&D book-to-bill `1.22` 和管理层“full-year adjusted operating earnings growth ex-45X outpace revenue growth”的定性表述。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$3.65-3.80B` | `-3% to +1%` vs FY2026 | 低于 Q1 指引年化、Q4 run-rate 和订单改善隐含路径；成长业务不足以抵消 IMS/项目延迟 | `27.5-28.8%`；ex-45X 低于 FY2026 `25.1%` 或仅持平 | 调整后 `11.8-13.0%`；GAAP 低于此 | 调整后 EBITDA `$520-580M`；净利润 `$250-310M` | `$250-350M`，低于 FY2026 高转换率 | 中 | Data center 订单延迟、DataSafe Noir 验证慢、IMS 继续弱、tariff/freight 价格滞后、45X/制造迁移不确定 |
+| 基准公司 | `$3.85-4.05B` | `+3% to +8%` | 符合当前预期：NIS 正常增长、IMS 低位稳定、PPS 高增长但按项目制折扣、DataSafe Noir 小额 | `29.0-30.0%`；ex-45X 稳中小升 | 调整后 `14.0-15.0%`；ex-45X AOE growth outpace revenue growth | 调整后 EBITDA `$610-690M`；净利润 `$310-390M` | `$350-480M`，正常化后低于 FY2026 极高转换率但仍强 | 中高 | 订单到收入确认、项目 commissioning、DataSafe Noir 小额化、IMS 利用率、营运资本 |
+| 乐观公司 | `$4.10-4.35B` | `+9% to +16%` | 高于当前预期，来自数据中心订单更快转收入、PPS backlog 加速、IMS 周期修复和少量 DataSafe Noir 贡献 | `30.0-31.2%` | 调整后 `15.2-16.3%` | 调整后 EBITDA `$720-820M`；净利润 `$400-500M` | `$450-600M`，营运资本可控且 capex 约 `$70M` | 中 | 需要 NIS、PPS、IMS 三线共同改善；若收入为低毛利项目 pass-through，利润上修会弱于收入 |
+| 极度乐观公司 | `$4.45-4.80B` | `+19% to +28%` | 显著高于当前预期；需求、公司捕获、利润质量和执行质量同时突破 | `31.0-33.0%` | 调整后 `16.5-18.0%` | 调整后 EBITDA `$860-1,000M`；净利润 `$520-650M` | `$550-750M`，但若项目库存/应收占用上升则下修 | 低到中 | DataSafe Noir 标准化、data center 订单快速转收入、PPS 产能/验收、IMS 强复苏、45X/成本结构均需同时成立 |
+
+公司层面去重说明：DataSafe Noir 和仓储/工业 BESS 不在公司收入表中单独加总；它们分别作为 NIS/IMS 内部增量处理。PPS 使用 2026-05-28 分部重组后的 recast 口径，旧 Specialty 中 Transportation 已转入 IMS。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。正向证据只提升它实际影响的层级；反证只在需求、收入基数、产品贡献、公司组合或执行可信度中处理一次。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 收入 `$3.751B`、Q4 收入 `$988M`、FY2027 Q1 指引 `$915-955M` | 公司收入基准 | 给 NTM 基准 `$3.85-4.05B` 提供起点；悲观不能低到无依据衰退 | Q4 adjusted margin `15.6%` 显示成本控制有效 | Q4/Q1 季节性和项目波动需要折扣 | 基准保留 |
+| Data center orders `+36% YoY`、FY2026 data center 高个位数/中高双位增长 | NIS 需求和收入基数 | 提升 NIS 乐观情景，但不把订单全额转 NTM 收入 | TPPL 和服务 mix 支撑利润率 | 项目制导致收入确认滞后 | 乐观保留，基准保守纳入 |
+| DataSafe Noir 已发布、available immediately、已 customer commissioning | DataSafe Noir 收入基数和产品贡献 | 允许小额进入基准，乐观可上修到 `$75-175M` | 系统溢价可能提升 mix | 需 OEM handoff、communication、hyperscaler validation | 基准保留低权重，极度乐观下移为上限 |
+| 管理层称 DataSafe Noir meaningful revenue lift 更偏 FY2028 | DataSafe Noir 执行可信度 | 限制 NTM 基准和乐观上沿 | 早期验证成本可能压制利润 | 验证周期是核心瓶颈 | 极度乐观下移/移入附录 |
+| FY2027 起分部重组为 NIS/IMS/PPS，PPS FY2026 recast margin `17.6%` | 公司组合和利润质量 | PPS 小基数但高增长可提高 NTM 收入质量 | PPS 高 margin 支撑公司利润率 | 透明度提升，但历史可比需 recast | 基准和乐观保留 |
+| A&D book-to-bill `1.22`、munitions backlog increasing、liquid reserve FY2027 转收入 | PPS 产品贡献 | 支持 PPS 基准高于公司平均增速 | A&D mix 支撑利润率 | 军品项目制影响收入时点 | 乐观保留 |
+| IMS/Motive Q4 orders 改善、maintenance-free mix `30.4%` | IMS 收入和利润 | 支持 IMS 从下滑转低位稳定 | 利用率恢复可改善 margin | 对 GDP、仓储和交通 capex 敏感 | 基准保留，极度乐观下移 |
+| 45X FY2026 benefit `$159M`，Q1 FY2027 benefit `$42-47M` | 利润率和现金流 | 不直接增加收入 | 显著抬高 GAAP/adjusted gross margin 和 EPS | 政策/合规/制造迁移影响利润质量 | 基准保留但可信度折扣 |
+| FY2026 FCF `$468M`、conversion `159%`，capex FY2027 约 `$70M` | 现金流 | 不影响收入 | 支撑资本回报和研发 | FY2026 conversion 可能高于常态；项目增长可能占用营运资本 | 基准保留，现金流不外推极高转换率 |
+| 数据中心 UPS/BESS 行业需求强，但 Vertiv/Schneider/Eaton 等全栈竞争 | 公司捕获和份额 | 限制 ENS capture rate | 大客户压价和系统商绑定压缩利润 | 客户 AVL、服务网络和认证决定份额 | 乐观保留但不自动上移 |
+| Warehouse/industrial BESS 仍缺量化订单和收入指引 | BESS 收入基数 | 不进入基准主口径或仅小额 | 项目集成利润不确定 | 需要 repeatable solution 和客户 ROI | 仅作跟踪 |
+
+四情景校准结论表：
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NIS 订单延迟、IMS 继续弱、DataSafe Noir 验证慢，NTM 收入 `$3.65-3.80B` | FY2026 收入和 FCF 底盘强，净杠杆低，PPS 订单强 | Q1 指引和 data center/PPS 订单不支持深度衰退 | 保留 | 公司悲观情景 | 中 | DataSafe Noir 验证慢只惩罚新品，不重复惩罚成熟 TPPL 数据中心底盘 |
+| 基准 | NIS 正常增长、IMS 低位稳定、PPS 增长、DataSafe Noir 小额，NTM 收入 `$3.85-4.05B` | FY2027 Q1 指引、data center orders `+36%`、A&D book-to-bill `1.22`、FCF/成本控制 | 公司没有 FY2027 全年收入指引；细分 data center 收入未披露 | 保留 | 最可能情景 | 中高 | 45X 质量折价只影响利润质量，不下调收入需求本身 |
+| 乐观 | 数据中心订单较快转收入、PPS 加速、IMS 修复、DataSafe Noir 有小规模收入，NTM `$4.10-4.35B` | 行业 UPS/BESS/电力需求强，TPPL 高倍率适配，PPS backlog 转收入路径清楚 | DataSafe Noir 收入更偏 FY2028，BESS 缺量化订单，低毛利项目可能稀释 | 保留 | 可验证乐观情景 | 中 | 数据中心项目制只限制 NIS 确认，不重复打击 PPS 和 IMS |
+| 极度乐观 | DataSafe Noir、传统数据中心、PPS、IMS 与成本结构同时突破，NTM `$4.45-4.80B` | AI 数据中心动态负载、PPS 稀缺供应、IMS 周期反弹都有可能 | 任一核心环节缺证据；管理层明确新品 meaningful lift 偏 FY2028 | 下移 | 极度乐观上限，部分移入附录跟踪 | 低到中 | 远期 Greenville 和 FY2028 DataSafe Noir 不进入 NTM 基准，不再重复作为当前收入反证 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。ENS NTM 收入最可能为 `$3.85-4.05B`，相当于 FY2026 `$3.751B` 基础上的低到中个位数增长；利润端调整后 EBITDA 约 `$610-690M`，净利润约 `$310-390M`，自由现金流 `$350-480M`。这个情景不要求 DataSafe Noir 爆发，只要求成熟数据中心 UPS/TPPL、通信/工业后备电源、IMS 低位稳定和 PPS 正常兑现。
+- NTM 收入结论：收入传导主链条是 `AI/通信/国防/工业需求 -> NIS/IMS/PPS 可确认订单 -> 项目交付/commissioning -> 收入确认`。数据中心订单是最强领先指标，但因项目制和客户验证不能按订单增长率直线外推。PPS 的订单和 margin 质量强于收入占比，IMS 则是大基数周期底盘。
+- 利润/现金流结论：利润质量最好来自 PPS 和高端 NIS/TPPL/DataSafe mix，最脆弱来自普通硬件 pass-through、tariff/freight 滞后和 45X 依赖。FY2026 FCF 极强，但 NTM 不应直接外推 `159%` 转换率；正常化后仍可较强，关键在应收、库存、项目预付款和 capex 控制。
+- 主要传导瓶颈：第一，DataSafe Noir 需要 OEM handoff、通信接口和 hyperscaler validation；第二，数据中心 NIS 订单是项目制，Q4 flat revenue 说明季度节奏不可线性；第三，IMS 修复依赖工业和仓储 capex；第四，PPS 虽有强需求但受军品认证、产能和政府项目时点约束；第五，45X 抬高利润但不是经营需求本身。
+- 乐观情景成立条件：data center orders 在 FY2027 上半年继续双位数增长并转收入；NIS margin 维持或提升；PPS book-to-bill 维持 >1.1 且 liquid reserve/thermal batteries 按管理层时间表转收入；IMS 订单改善转为收入；DataSafe Noir 至少拿到 1-2 个可量化客户/OEM 认证或收入披露。
+- 极度乐观情景成立条件：DataSafe Noir 在 NTM 内进入主要 UPS/OEM 或 hyperscaler 标准方案，传统 TPPL 数据中心收入继续高增，PPS 产能和项目验收同步放量，IMS 工业周期强反弹，45X/成本结构和营运资本没有反噬。缺任一环节，极度乐观应降为乐观上限或附录跟踪。
+- 悲观情景触发条件：FY2027 Q1/Q2 NIS 收入低于 `$915-955M` 指引隐含路径且 data center orders 不再增长；DataSafe Noir 仍停留 commissioning 且管理层延后 revenue timing；PPS book-to-bill 降到 <1 或 munitions/thermal/liquid reserve 延迟；IMS 订单改善不能转收入；45X 或 tariff/freight 造成利润率下修。
+- 后续跟踪数据：FY2027 Q1/Q2 revenue、NIS revenue 和 margin、data center orders、DataSafe Noir 客户/OEM/hyperscaler 认证、PPS book-to-bill 和 liquid reserve/thermal battery revenue、IMS order/revenue/mix、45X benefit、ex-45X adjusted EPS、operating cash flow、inventory/receivables、capex、Greenville DOE/factory update。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：EnerSys FY2026 截至 2026-03-31；FY2026 Q4/FY2026 release 更正日期 2026-05-21；分部重组公告 2026-05-28；DataSafe Noir 发布 2026-06-09；Investor Day 公告 2026-06-11；本报告日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：FY2026 10-K、FY2026 Q4/FY2026 财报新闻稿、FY2026 Q4 earnings call transcript、2026-05-28 segment realignment presentation、DataSafe Noir 产品页和 range summary。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 收入 `$3.751B`、adjusted EBITDA `$602M`、FCF `$468M` 是历史锚；FY2027 Q1 指引是短期锚；FY2028 meaningful DataSafe Noir lift、Greenville lithium cell factory 和长期 domestic lithium optionality 均不进入 NTM 基准主表。
+- 本报告估算说明：数据中心细分收入、DataSafe Noir 初期收入、NIS residual、仓储 BESS 收入和产品级利润贡献为本报告估算，不是公司正式披露；若未来公司披露 data center revenue、orders/backlog 或新分部细分利润，应替换本报告估算。
+
+主要来源：
+
+- EnerSys FY2026 10-K：`https://s206.q4cdn.com/482396552/files/doc_financials/2026/q4/859b1ca4-5eff-4855-ae09-d15c09e30225.pdf`
+- EnerSys FY2026 Q4 / FY2026 全年财报更正稿，2026-05-21：`https://investor.enersys.com/news/news-details/2026/CORRECTING-and-REPLACING-EnerSys-Reports-Fourth-Quarter-and-Full-Year-Fiscal-2026-Results/default.aspx`
+- EnerSys FY2026 Q4 earnings call transcript，2026-05-21：`https://s206.q4cdn.com/482396552/files/doc_financials/2026/q4/617490_1998054088_3736823_Transcript_EditedCopy_20260521183232.pdf`
+- EnerSys Segment Realignment，2026-05-28：`https://investor.enersys.com/news/news-details/2026/EnerSys-Announces-Segment-Realignment/default.aspx`
+- EnerSys Segment Realignment Presentation，2026-05-28：`https://s206.q4cdn.com/482396552/files/doc_document_list/2026/May/28/ENS_Resegmentation-Announcement-Presentation.pdf`
+- EnerSys Hosts 2026 Investor Day，2026-06-11：`https://investor.enersys.com/news/news-details/2026/EnerSys-Hosts-2026-Investor-Day/default.aspx`
+- EnerSys DataSafe Noir release，2026-06-09：`https://investor.enersys.com/news/news-details/2026/EnerSys-Introduces-DataSafe-Noir-Lithium-System-for-Data-Center-Power/default.aspx`
+- DataSafe Noir product page and range summary，2026-06：`https://www.enersys.com/en/products/batteries/datasafe/datasafe-noir/`
+- EnerSys DOE Greenville lithium-ion facility award，2025-01-17：`https://investor.enersys.com/news/news-details/2025/ENERSYS-COMPLETES-NEGOTIATION-OF-U-S--DOE-AWARD-SUPPORTING-DEVELOPMENT-OF-LITHIUM-ION-GIGAFACTORY-01-17-2025/default.aspx`
+- EnerSys Bren-Tronics acquisition announcement，2024-05-02：`https://www.enersys.com/en/about-us/news/enersys-to-acquire-bren-tronics-inc.-to-expand-presence-in-critical-defense-applications/`
+- 项目内公司资料：`公司调研/电力_发电_能源_储能/ENS_EnerSys_公司调研_2026-06-11.md`
+- 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+- 项目内行业资料：`行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`

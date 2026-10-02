@@ -1,0 +1,160 @@
+# 公司收入传导与经营价值传导评估：Monolithic Power Systems (MPWR)
+
+报告日期：2026-06-12  
+经营数据截至：2026-06-12；最新已披露季度为 2026Q1，2026Q2 尚未报告，本文使用公司 Q2 2026 指引作为当前预期锚。  
+主口径：NTM，即 2026Q2-2027Q1 附近未来 12 个月经营窗口。  
+边界说明：本报告只评估行业和产品需求如何传导为 MPWR 可确认收入、可兑现利润、现金流和经营质量；不输出投资评级、目标价、股价区间或估值倍数判断。金融市场价格和估值数据不作为经营价值传导证据。  
+资料边界：项目内只使用 `公司调研/` 与 `行业调研/`；未读取、引用或继承 `特征量化/`、Signals、回归、评分或模型比较内容。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM（2026Q2-2027Q1），用于需求、收入基数、产品贡献、公司汇总和证据校准；FY2026、FY2027 run-rate、800V/HVDC、Z-Axis/vertical power 只作为补充或远期期权，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：MPWR 2025 收入为 `$2.790B`，2026Q1 收入 `$804.2M`、同比 `+26.1%`、环比 `+7.1%`；Q2 2026 指引 `$890M-$910M`，中点 `$900M`，相当于 `$3.6B` 年化 run-rate。2026Q1 TTM 收入约 `$2.957B`。公开二手一致预期在 Q1 后约看 FY2026 收入 `$3.70B`，本文仅把它作为“当前预期”辅助锚，不作为经营证据。
+- 重要产品/业务线：最核心是 Enterprise Data 中的 AI/server power management、GPU/ASIC/CPU 近端多相供电、48V/54V IBC 与 Intelli-Phase/Intelli-Module；第二条是 Communications 中 optical modules / switches power；第三层是 Storage & Computing 中 memory/storage/graphics power；Automotive 是公司质量底盘但不是 AI NTM 主驱动；Consumer/Industrial 是抵消项；800V/HVDC 与更激进 Z-Axis 是远期期权。
+- NTM 公司收入四情景：悲观 `$3.45B-$3.65B`，基准 `$3.75B-$3.95B`，乐观 `$4.05B-$4.35B`，极度乐观 `$4.55B-$5.05B`。基准已经高于 Q2 guide 年化中点，原因是 Q1/Q2 已经显示 Enterprise Data 和 Communications 加速；极度乐观不能只靠 800V，而需要 Enterprise Data、Communications、Storage/Computing、产能和毛利率同时成立。
+- 利润或 EBITDA 四情景：公司不披露产品/分部利润率，因此利润主表用公司级毛利率、GAAP 经营利润率、Non-GAAP 经营利润率和 GAAP 净利润方向估算。基准毛利率约 `55.2%-55.8%`，GAAP 经营利润率约 `30.0%-32.0%`，Non-GAAP 经营利润率约 `35.5%-37.0%`；乐观需要 mix 和规模效应使毛利率稳定或小幅上行，而不是仅靠低毛利 pass-through。
+- 最大传导瓶颈：MPWR 不披露 backlog、bookings、客户名或产品级收入。NTM 的最大瓶颈不是行业 TAM，而是客户平台是否在未来四个季度按期量产、MPS socket share 是否维持、库存能否转收入、模块和封测产能是否支撑 `$4B-$6B` 产能目标。
+- 最大利润率变量：高端模块和近端供电 mix 上升可以提高 ASP 和毛利质量，但客户 second source、模块成本、扩产折旧/封测成本、价格谈判和 warranty 也可能抵消规模效应。Q1 2026 GAAP GM `55.3%`、Non-GAAP GM `55.5%`，Q2 指引也基本在 `55%+`，这是基准利润质量锚。
+- 最大现金流变量：Q1 2026 经营现金流 `$250.3M`、现金及短投 `$1.367B`，资产负债表强；但库存 `$619.2M`、DIO `157` 天，按 Q2 指引为 `140` 天。若 Q2/Q3 收入兑现，库存是增长准备；若 AI rack 或客户平台延后，库存会压现金流和毛利率。
+- 可信度：公司收入总量基准为中高；Enterprise Data 与 Communications 的方向为中高；产品拆分为中；800V/HVDC NTM 收入为低。最可能情景是基准偏上，但极度乐观需要多环节同时突破，当前只保留为上限，不进入基准。
+
+## 2. 重要产品清单
+
+本节口径：重要产品/业务线按“可进入 NTM 收入表的经营线索”而不是题材热度选择。MPWR 只披露 end market 收入，不披露具体产品收入和毛利率；下表中产品级收入基数为基于公司披露分部、Q1/Q2 run-rate、项目内行业资料和产品线公开信息的经营估算。
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Enterprise Data：AI/server power、GPU/ASIC/CPU 多相供电、48V/54V IBC、Intelli-Phase/Module、eFuse/telemetry | 2026Q1 `$262.8M`；Q1 年化 `$1.05B`；NTM 基准 `$1.30B-$1.50B` | Q1 `32.7%` | 最大增长引擎；直接绑定 AI rack、server、memory、custom ASIC 和高功率 XPU | A（分部收入）+ C（产品拆分） | 进入基准；产品拆分保守折扣 | 800V、Z-Axis、2000A OAM/SXM 更大规模采用 |
+| Communications：optical modules / switches power | 2026Q1 `$111.5M`；Q1 年化 `$446M`；NTM 基准 `$0.50B-$0.60B` | Q1 `13.9%` | AI 网络附加曲线；跟随 800G/1.6T、交换机和光模块功耗 | A（分部收入）+ B/C（增长来源披露） | 进入基准；不把全部光模块 TAM 当 MPWR 收入 | 1.6T、CPO/XPO、AI fabric 高端平台 socket |
+| Storage & Computing：memory/storage/graphics/notebook power | 2026Q1 `$174.4M`；Q1 年化 `$698M`；NTM 基准 `$0.68B-$0.78B` | Q1 `21.7%` | 收入大，但 AI 纯度混杂；memory/storage 受益，notebook/graphics 周期稀释 | A | 进入基准；按混合业务处理 | DDR5 high-speed interface、AI storage/KV cache |
+| Automotive：ADAS、48V/zonal、BMS、USB/infotainment power | 2026Q1 `$152.4M`；Q1 年化 `$610M`；NTM 基准 `$0.64B-$0.72B` | Q1 `18.9%` | 公司质量底盘；长认证周期、粘性高；不是 AI 服务器主线 | A | 进入基准；作为非 AI 稳定器 | 48V/zonal、robotics BMS、下一代 ADAS |
+| Consumer + Industrial：家电、gaming、monitor、仪表、power sources 等 | 2026Q1 `$103.1M`；Q1 年化 `$412M`；NTM 基准 `$0.40B-$0.48B` | Q1 `12.8%` | 抵消项和现金流底盘；低 AI 相关性 | A | 进入公司合计，但不进入 AI 成长主线 | 工业复苏、机器人/仪器小机会 |
+| 800V/HVDC、Z-Axis、OAM/SXM 2000A advanced architecture | 当前未披露实质收入；样品/EVB/设计导入阶段；NTM 基准仅 `$0-$50M` 且多嵌在 Enterprise Data 内 | 无法可靠量化 | 2027+ 可改变收入结构；NTM 是上限/期权 | C/D | 不单列进入基准公司合计；仅作为 ED 内小比例或上限 | Rubin/Helios/OCP Diablo、±400V/800V sidecar、vertical power |
+
+## 3. 产品需求四情景
+
+本步口径：只评估外部需求池，不评估 MPWR 份额、收入确认、利润率或公司汇总。需求锚点来自项目内行业资料与官方技术资料：2026 年最确定的高密度 AI 机柜路径是 48/50V ORv3/HPR、100-155kW GB200/GB300 级 rack、48V/50V to 12V/6V/<1V 转换、VRM、telemetry 和 optical/switch power；800V/HVDC 是 2026H2-2027 的设计导入方向。表中“绝对变化”是需求池相对当前预期的方向性变化，不是 MPWR 可确认收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Enterprise Data：AI/server power 与近端供电 | GB200 约 `120kW/rack`；GB300 `135kW TDP / 155kW peak`；项目内机柜供电资料估算 2026H2-2027H1 48V/50V DC/DC、IBC、VRM、smart power stage 直接市场基准约 `$55B-$100B` | AI rack 验收延后、GPU/HBM/液冷或电力约束使需求低于指引；高端 VRM 需求仍增长但节奏慢 | Blackwell/GB300 与 custom ASIC 正常放量；48V/50V、IBC、VRM、telemetry 维持主流 | GB300/ASIC 出货快于当前预期，客户为供电可靠性提高模块 attach 和 ASP | 多平台同时突破：GB300、Rubin early、TPU/Trainium/ASIC、rack power density 上行且客户提前锁产能 | 悲观：需求池较当前预期 `-15%~-30%`；乐观 `+20%~+40%`；极度 `+50%+` | 基准符合当前预期；乐观需超过订单节奏 | 正向：MPS Q1 ED 同比 `+97.7%`、Q2 guide 强；反证：2025 ED 全年同比 `-2.0%`，说明平台切换会造成季度波动 |
+| Communications：optical modules / switches power | 2026Q1 MPWR Comms 同比 `+55.5%`、环比 `+33.1%`；行业资料认为 2026 是 800G 放量年、1.6T design-in 年 | 800G/1.6T 订单推迟，客户补库存后 ASP 下行，switch ASIC 或光模块库存形成阶段性拖累 | 800G 持续放量，1.6T 初步导入，optical/switch power 随端口功耗正常增长 | AI networking、1.6T、optical switch 和高功耗 switch board 需求强于当前预期 | 1.6T 成为新增高端 AI fabric 默认端口，CPO/XPO/scale-across 同时拉动供电附加需求 | 悲观：Comms 需求增长降至低双位数；基准 `+20%~+35%`；乐观 `+40%~+60%`；极度 `+70%+` | 基准到乐观之间 | 正向：Q1 官方说明增长来自 optical modules and switches；反证：低端 800G 可能转 ASP 压力 |
+| Storage & Computing：memory/storage/graphics/notebook power | 2026Q1 `$174.4M`，同比 `-7.5%`、环比 `+7.6%`；2025 全年 `$732.5M`、同比 `+46.0%` | Notebook/graphics 或客户库存抵消 memory/storage 需求；AI 存储拉动未进入收入 | Memory/storage 正常增长，notebook/graphics 稳定或小幅修复 | AI storage、DDR5、HBM/enterprise SSD 周边供电拉动高于当前预期 | 推理/KV cache 与高带宽内存系统放量，使 storage/memory power 成为第二增长线 | 悲观：需求 `-5%~+5%`；基准 `+5%~+15%`；乐观 `+15%~+30%`；极度 `+35%+` | 基准偏中性 | 正向：Q1 环比增长来自 storage power；反证：分部里 notebook/graphics 混杂，不能全当 AI |
+| Automotive power：ADAS、48V/zonal、BMS | 2026Q1 `$152.4M`，同比 `+5.1%`；2025 全年 `$592.5M`、同比 `+43.1%` | EV/ADAS 或车厂去库存放慢，USB/infotainment 抵消 ADAS | ADAS、BMS、48V/zonal 正常兑现，增速低于 2025 高基数 | 多个 Tier 1/ADAS/BMS 设计赢单开始放量 | 48V/zonal 与 robotics BMS 同时进入量产，显著高于汽车当前预期 | 悲观：`-5%~+5%`；基准 `+5%~+15%`；乐观 `+15%~+25%`；极度 `+30%+` | 符合当前预期 | 正向：汽车认证粘性高；反证：汽车周期与 AI 数据中心无直接同步 |
+| Consumer + Industrial other | 2026Q1 Consumer 同比 `-4.2%`，Industrial `+14.2%`；合计 `$103.1M` | 消费电子疲弱、工业订单一般；成为公司增速抵消项 | Industrial 稳定，Consumer 低位波动 | 工业 power sources 和 instrumentation 复苏，Consumer 不再拖累 | 工业/机器人/仪器多点改善，低基数上修 | 悲观：`-10%~0%`；基准 `0%~+10%`；乐观 `+10%~+20%`；极度 `+25%+` | 基准偏保守 | 正向：Industrial 同比正增长；反证：Consumer 下滑且 AI 相关性低 |
+| 800V/HVDC、Z-Axis、OAM/SXM 2000A | MPS 已 sample data center 800V power solution；48V brochure 有 2000A OAM/SXM EVB sampling；OCP Diablo 指向 `100kW-1MW` AI rack | 仍停留在样品、会议展示、客户实验；不形成 NTM 收入需求 | NTM 内 design-in / EVT / DVT 为主，少量 NRE 或样品收入 | 2026H2 出现客户 platform qualification 或 RFQ，2027 收入可见性提高 | Rubin/Helios/Diablo/大型 hyperscaler 标准提前采用，MPS 获关键 socket | 悲观：无收入化；基准：`<$50M` 需求可收入化；乐观：`$50M-$120M` 上限；极度：`$200M+` 上限 | 当前仍低于基准收入证据要求 | 正向：行业方向明确；反证：高压侧竞争者更多，安全认证和运维标准慢 |
+
+## 4. 可收入化暴露与收入基数
+
+本步口径：只判断哪些需求能进入 MPWR NTM 收入表，以及当前可收入化基数是多少；不预测增长率或利润率。MPWR 披露的是 end market 收入，不披露产品收入、客户名、backlog 或 RPO。A 级证据为已披露分部收入、财务指引和已确认收入；B 级为订单/合同或清楚交付时间表；C 级为 design win、认证、产能规划或可验证管理层披露；D/E 不进入 NTM 基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Enterprise Data：AI/server power 与近端供电 | 2026Q1 Enterprise Data `$262.8M`，占收入 `32.7%`，同比 `+97.7%`，环比 `+12.6%`；Q4 2025 `$233.5M` | 直接 | 高端模块、controller、power stage 和遥测保护；公司不披露分部毛利，按公司级 `55%+` GM 近似 | `$1.05B-$1.20B` | `$1.30B-$1.50B` | `$1.60B-$1.90B` | `$2.10B-$2.50B` | 基准符合 Q2 指引和 ED 恢复；乐观高于当前预期 | A（分部）+ C（产品拆分） | 是 | 已在收入表中可见；Q2 guide 中点较 Q1 `+11.9%`；产能目标从 `$4B` 走向 `$6B` | NTM 基准核心收入；不能把 AI rack TAM 直接映射为收入 |
+| Communications：optical modules / switches power | 2026Q1 `$111.5M`，占 `13.9%`，同比 `+55.5%`，环比 `+33.1%`；官方说明增长来自 optical modules and switches | 直接 | 单颗价值低于 GPU core power，但 attach 面广；利润率未知 | `$0.42B-$0.48B` | `$0.50B-$0.60B` | `$0.65B-$0.80B` | `$0.90B-$1.10B` | 基准略高于 Q1 年化，乐观需连续高增 | A + B/C | 是 | 分部收入 A 级；增长来源有官方表述；AI 网络端口功耗上行有行业资料支持 | 进入基准，但不把全部 optical transceiver 市场视作 MPWR 收入 |
+| Storage & Computing：memory/storage/graphics/notebook power | 2026Q1 `$174.4M`，占 `21.7%`；2025 全年 `$732.5M`，同比 `+46.0%` | 直接/部分间接 | 混合利润属性；memory/storage 更好，notebook/graphics 更周期 | `$0.58B-$0.65B` | `$0.68B-$0.78B` | `$0.80B-$0.95B` | `$1.00B-$1.20B` | 基准符合当前 run-rate，乐观需要 storage/DDR5 贡献上修 | A | 是 | 已披露分部收入；Q1 环比增长来自 storage power，但同比仍下滑 | 进入公司基准；AI 暴露需折扣 |
+| Automotive：ADAS、48V/zonal、BMS、USB/infotainment | 2026Q1 `$152.4M`，占 `18.9%`；2025 全年 `$592.5M`，同比 `+43.1%` | 直接 | 认证长、生命周期长；短期增速低于 AI 数据中心 | `$0.58B-$0.62B` | `$0.64B-$0.72B` | `$0.75B-$0.85B` | `$0.90B-$1.05B` | 基准为正常兑现，不假设 2025 高增线性延续 | A | 是 | 已披露分部收入；ADAS 和 48V/zonal 有管理层披露 | 进入公司基准；不是 AI 服务器主线 |
+| Consumer + Industrial other | 2026Q1 Consumer `$54.5M`、Industrial `$48.6M`，合计 `$103.1M`；2025 合计 `$454.6M` | 直接 | 低到中；周期性和价格竞争更强 | `$0.33B-$0.38B` | `$0.40B-$0.48B` | `$0.50B-$0.58B` | `$0.60B-$0.70B` | 基准低增长；悲观为抵消项 | A | 是 | 已披露分部收入；Consumer 下滑、Industrial 正增长 | 进入公司合计；不作为 AI 成长证据 |
+| 800V/HVDC、Z-Axis、OAM/SXM 2000A advanced architecture | Q4 2025 sample data center 800V power solution；MPS 48V brochure 有 2000A EVB available for sampling；无披露收入 | 直接但早期 | 若量产可能高 ASP；当前为样品/认证/FAE，利润无法可靠量化 | `$0` | `$0-$50M`（多嵌在 ED 内） | `$50M-$120M` | `$200M-$400M` | 当前只是 NTM 上限，不代表当前预期 | C/D | 否，除少量嵌入 ED | 有产品和样品证据，但缺客户、合同、量产时间表和收入披露 | 移入附录/乐观上限；不得单独进入基准收入 |
+
+## 5. 产品级收入和利润贡献
+
+本步口径：从需求和收入基数出发，判断每个重要业务线在 NTM 内能给 MPWR 贡献多少收入和利润。利润贡献以“毛利贡献方向和粗略毛利额”表达，因为公司不披露产品或 end market 毛利率；粗略毛利额按公司级 `55%` 左右毛利率和 mix 方向推算，不等于披露的分部经营利润。不得把客户 CapEx、AI rack 总金额、光模块 TAM 或远期 pipeline 直接写成 MPWR 收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Enterprise Data：AI/server power 与近端供电 | 悲观 | `$1.05B-$1.20B` | 粗略毛利 `$0.56B-$0.65B`；费用投入吞噬部分经营杠杆 | GM 持平或小降 | 低于当前预期；只承认 Q1 run-rate 和较保守 Q2/Q3 | Q1 ED `$262.8M` 已确认；Q2 guide 强 | 保留为悲观 | AI 客户平台延后、socket share 下滑、second source 压价、库存转收入不顺 |
+| Enterprise Data：AI/server power 与近端供电 | 基准 | `$1.30B-$1.50B` | 粗略毛利 `$0.72B-$0.84B`；公司级经营杠杆正常 | GM 稳定在 `55%+` | 符合当前指引/run-rate | Q1 ED 同比 `+97.7%`；Q4/Q1 连续环比增长；产能目标 `$6B` | 保留 | 不披露 backlog，不能验证订单覆盖和客户集中 |
+| Enterprise Data：AI/server power 与近端供电 | 乐观 | `$1.60B-$1.90B` | 粗略毛利 `$0.90B-$1.08B`；若模块 mix 上行，增量利润率改善 | 小幅扩张 | 高于当前预期 | AI rack 100-155kW、48V/50V IBC/VRM 放量；MPS 产品线覆盖 core power、IBC、telemetry | 保留但需 ED/Comms 连续验证 | 多供体系、价格重谈、GPU/HBM/液冷瓶颈 |
+| Enterprise Data：AI/server power 与近端供电 | 极度乐观 | `$2.10B-$2.50B` | 粗略毛利 `$1.20B-$1.45B`；需高端模块和供给稀缺支撑 | 明显扩张 | 远高于当前预期 | `$6B` capacity 快速被客户需求吸收；GB300/Rubin/custom ASIC 多平台同时成功 | 下移为“上限保留” | 不能只靠 800V 或单一平台；需产能、客户、毛利和执行同时成立 |
+| Communications：optical modules / switches power | 悲观 | `$0.42B-$0.48B` | 粗略毛利 `$0.22B-$0.26B` | 持平或小降 | 接近 Q1 年化，低于高增预期 | Q1 Comms 已确认 `$111.5M` | 保留 | 800G 补库存、ASP 下滑、switch ASIC 延迟 |
+| Communications：optical modules / switches power | 基准 | `$0.50B-$0.60B` | 粗略毛利 `$0.27B-$0.33B` | 稳定 | 符合当前需求强度 | 官方称增长来自 optical modules and switches；行业资料显示 800G/1.6T 端口升级 | 保留 | 不能把光模块总市场等同为 MPWR 电源收入 |
+| Communications：optical modules / switches power | 乐观 | `$0.65B-$0.80B` | 粗略毛利 `$0.36B-$0.45B` | 小幅扩张 | 高于当前预期 | 1.6T design-in、AI fabric 端口功耗、交换机板级 power 需求上修 | 保留 | 竞争分散，单颗价值低于 GPU core power |
+| Communications：optical modules / switches power | 极度乐观 | `$0.90B-$1.10B` | 粗略毛利 `$0.50B-$0.62B` | 扩张需高端 socket 支撑 | 明显高于当前预期 | 1.6T/CPO/XPO/scale-across 同时推动 optical/switch board power | 下移为上限 | 若光模块和交换机平台延迟，订单会先变库存 |
+| Storage & Computing | 悲观 | `$0.58B-$0.65B` | 粗略毛利 `$0.31B-$0.36B` | 小降 | 低于当前 run-rate | Q1 同比 `-7.5%` 提醒非 AI 周期拖累 | 保留 | notebook/graphics 或客户库存拖累 |
+| Storage & Computing | 基准 | `$0.68B-$0.78B` | 粗略毛利 `$0.37B-$0.43B` | 稳定 | 符合当前预期 | Q1 环比 `+7.6%` 由 storage power 拉动；2025 全年增长强 | 保留 | AI memory/storage 与 notebook 混杂，可信度中 |
+| Storage & Computing | 乐观 | `$0.80B-$0.95B` | 粗略毛利 `$0.44B-$0.53B` | 小幅扩张 | 高于当前预期 | DDR5、AI storage、memory/storage power 附加需求 | 保留但低权重 | 公司只披露分部，不披露 AI storage 收入 |
+| Storage & Computing | 极度乐观 | `$1.00B-$1.20B` | 粗略毛利 `$0.56B-$0.68B` | 取决于 mix | 明显高于当前预期 | 推理/KV cache、enterprise SSD、DDR5 interface 同时放量 | 下移为乐观上限 | 需要多个新产品收入化，证据不足 |
+| Automotive | 悲观 | `$0.58B-$0.62B` | 粗略毛利 `$0.31B-$0.34B` | 稳定或小降 | 低于 2025 高基数趋势 | Q1 同比仅 `+5.1%`，USB 部分抵消 ADAS | 保留 | 汽车周期、车厂去库存、价格压力 |
+| Automotive | 基准 | `$0.64B-$0.72B` | 粗略毛利 `$0.35B-$0.40B` | 稳定 | 符合当前预期 | ADAS、48V/zonal、BMS design win；汽车认证粘性 | 保留 | 非 AI，不能解释 AI power 上修 |
+| Automotive | 乐观 | `$0.75B-$0.85B` | 粗略毛利 `$0.42B-$0.48B` | 稳定或小幅扩张 | 高于当前预期 | ADAS/48V/zonal/BMS 多项目放量 | 保留低权重 | 量产周期长，NTM 内上修受限 |
+| Automotive | 极度乐观 | `$0.90B-$1.05B` | 粗略毛利 `$0.50B-$0.60B` | 扩张需高价值 ADAS/BMS mix | 远高于当前预期 | 48V/zonal 与 robotics BMS 同时突破 | 下移为远期/乐观上限 | 证据不足，不能进入公司极度乐观核心 |
+| Consumer + Industrial other | 悲观 | `$0.33B-$0.38B` | 粗略毛利 `$0.17B-$0.20B` | 小降 | 抵消项 | Q1 Consumer 同比下滑 | 保留 | 消费电子疲弱、工业订单普通 |
+| Consumer + Industrial other | 基准 | `$0.40B-$0.48B` | 粗略毛利 `$0.21B-$0.26B` | 稳定 | 符合当前预期 | Industrial 同比 `+14.2%`，Consumer 低位 | 保留 | AI 相关性低 |
+| Consumer + Industrial other | 乐观 | `$0.50B-$0.58B` | 粗略毛利 `$0.27B-$0.32B` | 稳定 | 小幅高于预期 | 工业 power sources / instrumentation 修复 | 保留低权重 | 增长不能替代 ED/Comms 主线 |
+| Consumer + Industrial other | 极度乐观 | `$0.60B-$0.70B` | 粗略毛利 `$0.33B-$0.39B` | 小幅扩张 | 高于预期但非核心 | 工业与消费同时修复 | 下移为补充 | 公司极度乐观不应由低相关业务驱动 |
+| 800V/HVDC、Z-Axis、OAM/SXM advanced | 悲观 | `$0` | 无法可靠量化 | 无 | 低于当前乐观叙事 | 未披露收入 | 保留为悲观 | 样品不等于订单 |
+| 800V/HVDC、Z-Axis、OAM/SXM advanced | 基准 | `$0-$50M`，且多嵌在 ED | 毛利无法可靠量化；主要是样品/NRE/小量 | 对公司 GM 影响小 | 不作为独立基准 | Q4 2025 sample 800V；2000A EVB sampling | 移入附录/嵌入 ED | 无客户、合同、量产节奏 |
+| 800V/HVDC、Z-Axis、OAM/SXM advanced | 乐观 | `$50M-$120M` | 若高端平台 socket 成立，毛利率方向正 | 小幅上行 | 高于当前基准 | 2026H2 platform qualification / PVT | 保留为乐观上限 | 高压侧竞争更开放 |
+| 800V/HVDC、Z-Axis、OAM/SXM advanced | 极度乐观 | `$200M-$400M`，不与 ED 机械相加 | 高毛利可能，但执行风险高 | 扩张 | 上限，不代表当前预期 | Rubin/Helios/Diablo 提前采用且 MPS 获核心 socket | 下移为附录上限 | 任一核心环节缺证据即不能进 NTM 主表 |
+
+## 6. 公司收入和利润四情景
+
+本步口径：把产品和业务线贡献合成为 MPWR NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。汇总前已去重：800V/HVDC 不作为独立基准收入与 Enterprise Data 重复相加；AI rack CapEx、光模块 TAM、客户总预算和远期 pipeline 不进入公司收入表。绝对增速以 2025 全年收入 `$2.790B` 为比较基数；经营利润率同时列示 GAAP 与 Non-GAAP 口径，因为公司 Q1/Q2 指引均披露两者。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$3.45B-$3.65B` | `+24%~+31%` | 低于 Q2 guide 年化和当前 FY2026 共识；ED 仍增长但低于当前经营预期路径 | GAAP/Non-GAAP GM `54.5%-55.2%` | GAAP `28.5%-30.5%`；Non-GAAP `34.0%-35.5%` | GAAP 净利润粗估 `$0.85B-$1.00B`；Non-GAAP operating income `$1.17B-$1.30B` | 正，但库存周转放慢，FCF conversion 下降 | 中 | AI 平台延后、ED QoQ 放缓、Comms 高增不可持续、库存转收入不顺 |
+| 基准公司 | `$3.75B-$3.95B` | `+34%~+42%` | 接近当前预期正常兑现：Q2 guide 达成，ED/Comms 高可信业务继续增长，低证据 800V 保守处理 | GAAP/Non-GAAP GM `55.2%-55.8%` | GAAP `30.0%-32.0%`；Non-GAAP `35.5%-37.0%` | GAAP 净利润粗估 `$1.00B-$1.15B`；Non-GAAP operating income `$1.33B-$1.46B` | 强正；库存若按 Q2/Q3 收入下降，现金流质量改善 | 中高 | 未披露 backlog，产品级 mix 和客户 socket share 需估算 |
+| 乐观公司 | `$4.05B-$4.35B` | `+45%~+56%` | 高于当前预期；不是单一小基数项目，而是 ED、Comms 和部分 Storage 同时上修 | GM `55.6%-56.6%` | GAAP `31.5%-33.5%`；Non-GAAP `36.5%-38.5%` | GAAP 净利润粗估 `$1.15B-$1.35B`；Non-GAAP operating income `$1.48B-$1.67B` | 很强；但应收、库存和扩产资本需求同步增加 | 中 | 高端模块产能、客户二供、价格谈判、质量和 warranty |
+| 极度乐观公司 | `$4.55B-$5.05B` | `+63%~+81%` | 显著高于当前预期；ED 成为主要增长引擎，Comms 成第二曲线，Storage/Auto 不拖累 | GM `56.5%-58.0%` | GAAP `33.0%-36.0%`；Non-GAAP `38.0%-41.0%` | GAAP 净利润粗估 `$1.40B-$1.75B`；Non-GAAP operating income `$1.73B-$2.07B` | 绝对 FCF 强，但 working capital 与扩产占用上升；若库存周转不降则质量打折 | 低到中 | `$6B` capacity 快速消化、多平台 socket share、毛利扩张和执行质量必须同时成立 |
+
+## 7. 证据校准、反证和可信度
+
+本步口径：不重新预测经营结果，只校准前四步情景。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在实际影响层级处理一次，不在需求、收入、利润和公司汇总中重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 Enterprise Data `$262.8M`、同比 `+97.7%`、环比 `+12.6%` | 收入基数、产品贡献、公司汇总 | 强化 ED NTM 基准，支持 `$1.30B-$1.50B` ED 基准 | 若高端模块 mix 占比提升，利润率有稳定或小幅上行空间 | 需要库存转收入和客户平台量产支持 | 基准保留；乐观保留 |
+| Q2 2026 revenue guide `$890M-$910M`，中点较 Q1 `+11.9%` | 公司汇总、执行可信度 | 支持公司 NTM 基准 `$3.75B-$3.95B` | Q2 GM 指引仍 `55%+`，说明短期增长未牺牲毛利 | 指引兑现会降低库存天数并强化订单可见度 | 基准保留 |
+| Communications Q1 `$111.5M`、同比 `+55.5%`，增长来自 optical modules and switches | 产品需求、收入基数 | 支持 Comms 从 Q1 年化 `$446M` 上修至 NTM `$0.50B-$0.60B` | 单颗价值较低，但高端 switch/optical power attach 可稳 GM | 若 AI 网络订单延迟，可能先形成库存 | 基准保留；乐观保留但可信度中 |
+| 48V/50V ORv3/HPR、GB200/GB300 100-155kW rack、48V-to-load/VRM 行业主线 | 产品需求 | 支持 ED 和 48V/54V IBC 需求强度 | 高功率密度模块和 controller 较普通 POL 更有毛利质量 | 客户认证、良率、封测和可靠性是执行瓶颈 | 基准保留；极度乐观不自动上移 |
+| 公司不披露 backlog、book-to-bill、客户名、产品级收入 | 证据可信度 | 限制乐观和极度乐观收入上限可信度 | 无法验证产品级利润率和客户议价 | 订单覆盖、取消率、客户库存不可审计 | 乐观保留；极度乐观下移为上限 |
+| 2025 Enterprise Data 全年 `$701.8M`、同比 `-2.0%` | 需求风险、收入确认 | 提醒 Q1 2026 高同比有低基数和平台切换因素 | 若客户拉货节奏波动，利用率和成本吸收也会波动 | 库存和分销渠道可能放大季度波动 | 悲观保留；不重复惩罚 Comms/Auto |
+| 库存 `$619.2M`、DIO `157` 天；按 Q2 guide 为 `140` 天 | 现金流、执行 | 若 Q2/Q3 兑现，则支撑收入；若延后，则成为收入反证 | 库存跌价、warranty 和成本吸收可能压 GM | 直接影响 FCF conversion | 基准保留但跟踪；悲观触发条件明确 |
+| 85% 销售经分销，前三大 distributor 合计约 `54%` | 收入确认、现金流 | 终端客户需求与公司收入之间有渠道传导误差 | 分销商库存/价格保护可能影响毛利 | AR、DSO、库存和渠道补库需跟踪 | 作为收入确认风险处理一次 |
+| 800V/HVDC sample、OAM/SXM 2000A EVB sampling | 产品需求、远期期权 | 支持 2027+ 上限，不足以进入 NTM 基准 | 若量产，可能提高 ASP；当前无法可靠量化 | 需要安全认证、客户 platform qualification 和量产时间表 | 移入附录；乐观上限保留 |
+| 竞争：TI、Infineon、Renesas、ADI、Vicor、onsemi、ST 等 | 公司捕获、价格/mix | 限制 MPWR socket share 和极度乐观收入 | second source 和价格谈判限制非线性利润扩张 | 需要持续设计赢单和质量执行 | 乐观保留；极度乐观下移为低到中可信 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | ED/Comms 仍增长但低于当前预期，公司 NTM `$3.45B-$3.65B` | Q1/Q2 起点较高，资产负债表强，现金流健康 | 2025 ED 同比下滑、无 backlog、库存高、分销集中、客户平台波动 | 保留 | 悲观下限，不是长期需求崩溃 | 中 | ED 平台波动只在需求/收入确认层处理，不再重复压低 Auto/Consumer |
+| 基准 | Q2 guide 兑现，ED 和 Comms 正常增长，NTM `$3.75B-$3.95B` | Q1 ED/Comms 已确认高增；Q2 guide 强；GM 指引稳定；行业 48V/50V 主线明确 | 产品拆分和 backlog 不披露；800V 证据不足 | 保留 | 最可能情景，基准偏上 | 中高 | backlog 不披露只限制可信度，不把每个产品再单独下修 |
+| 乐观 | ED、Comms、Storage/Computing 中至少两条高于当前预期，NTM `$4.05B-$4.35B` | 产能目标 `$6B`、Q1 momentum、AI rack power 与 optical/switch power 强需求 | second source、价格谈判、库存和客户验收风险 | 保留 | 乐观可验证情景 | 中 | 客户平台延迟只影响 ED/Comms，不重复惩罚 Automotive |
+| 极度乐观 | 多平台 AI power、Comms 和 high-end module 同时突破，NTM `$4.55B-$5.05B` | 若 `$6B` capacity 被快速锁定、GB300/Rubin/custom ASIC/1.6T 同时放量，理论上可达 | 无客户级 backlog、800V 未量产、产品级利润未知、竞争更强 | 下移 | 保留为上限，不作为当前预期 | 低到中 | 800V 证据不足只下移 800V/极度乐观，不否定 48V 基准 |
+
+## 8. 结论
+
+- 最可能情景：基准偏上。MPWR 的 NTM 收入最可能落在 `$3.75B-$3.95B`，若 Q2/Q3 Enterprise Data 和 Communications 连续强于指引，可向 `$4.05B+` 乐观区间移动。当前经营主线是 48V/54V AI/server power、GPU/ASIC 多相供电、高端模块和 optical/switch power，不是 800V 单一题材。
+- NTM 收入结论：公司收入增长的可确认基数主要来自已披露的 Enterprise Data、Communications、Storage & Computing 和 Automotive，而不是行业 TAM。ED 基准 `$1.30B-$1.50B` 是收入传导核心；Comms 基准 `$0.50B-$0.60B` 是第二曲线；800V/HVDC 只作为上限/附录。
+- 利润/现金流结论：基准情景下毛利率可维持在 `55%+`，GAAP operating margin 约 `30%-32%`，Non-GAAP operating margin 约 `35.5%-37%`。现金流质量强，但库存是关键变量；如果 Q2/Q3 指引兑现，库存是增长准备，若平台延后，库存会变成利润率和现金流反证。
+- 主要传导瓶颈：从行业需求到 MPWR 收入，需要通过 GPU/ASIC/rack 平台选择、板卡供电架构、MPS design win、客户认证、分销/ODM PO、封测和模块产能、出货验收，再进入收入表。最脆弱的环节是客户平台节奏、socket share、产品级价格/mix 和库存周转。
+- 乐观情景成立条件：Q2 实际收入高于 `$910M` 或 Q3 guide 继续强；Enterprise Data 占比从 `32.7%` 向 `35%-40%` 走；Communications optical/switch power 连续高增；Non-GAAP GM 维持 `55%+`；库存按 next-quarter revenue 口径下降。
+- 极度乐观情景成立条件：`$6B` capacity 目标被客户订单快速锁定；MPWR 在 GB300/Rubin/custom ASIC/OAM/SXM 等多个平台维持或提高 socket share；高端 module/Intelli-Module/telemetry mix 拉高毛利；800V/HVDC 或 Z-Axis 出现明确客户 qualification 和量产时间表。缺少其中任一核心环节，极度乐观只能作为上限。
+- 悲观情景触发条件：Q2 收入低于指引中点或 Q3 guide 保守；Enterprise Data QoQ 放缓或回落；Comms 高增被证明是一次性拉货；库存继续上升且 DIO 不降；毛利率跌破 `55%` 且管理层归因于价格、warranty 或模块成本；分销商/客户集中度风险放大。
+- 后续跟踪数据：Q2 2026 实际收入和 Q3 指引；Enterprise Data 与 Communications 分部收入；Non-GAAP GM 和 opex leverage；库存、DIO、DSO、经营现金流；产能目标 `$6B` 进展；48V/54V module 量产客户、OAM/SXM/Z-Axis 采样转量产；800V/HVDC platform qualification；竞争者在 GPU/ASIC core power 和 HVDC reference design 中的 design win。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：MPWR 最新已披露季度为 2026Q1；Q2 2026 仍为公司指引，尚未报告。行业资料截至 2026-06-11/2026-06-12。
+- 主要收入、订单、指引和利润率来源：MPWR Q1 2026 Earnings Commentary、MPWR 2025 Form 10-K、MPWR Q4/FY2025 Earnings Commentary、项目内 `公司调研/配电_电源_功率器件/MPWR_Monolithic_Power_Systems_公司调研_2026-06-11.md`。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：本报告主表使用 NTM。FY2026 收入可用 `$3.5B-$3.9B` 作为补充区间；2027 run-rate 可用 `$4.05B-$4.45B` 基准、`$4.70B-$5.30B` 乐观作为跟踪口径；800V/HVDC、Z-Axis、OAM/SXM 2000A 只作为 2027+ 远期期权。
+- 项目内公司来源：
+  - `公司调研/配电_电源_功率器件/MPWR_Monolithic_Power_Systems_公司调研_2026-06-11.md`
+  - `公司调研/配电_电源_功率器件/VICR_Vicor_Corporation_公司调研_2026-06-12.md`（竞争与替代）
+  - `公司调研/AI计算芯片_EDA_IP_custom_ASIC/ADI_Analog_Devices_公司调研_2026-06-11.md`（竞争与 AI power 对比）
+- 项目内行业来源：
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- 主要联网来源：
+  - MPWR Q1 2026 Earnings Commentary: https://www.monolithicpower.com/media/investor-relations/press-releases/Q1_2026_MPS_Earnings_Commentary.pdf
+  - MPWR 2025 Form 10-K: https://media.monolithicpower.com/mps_cms_document/m/p/mps_2025_form_10-k.pdf
+  - MPWR FY2025/Q4 2025 Earnings Commentary on SEC: https://www.sec.gov/Archives/edgar/data/1280452/000143774926003191/ex_886152.htm
+  - MPS 48V Datacenter Solutions brochure: https://media.monolithicpower.com/mps_cms_document/4/8/48v_solution_product_brochure-q3-2023.pdf
+  - MP5048 datasheet: https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MP5048GU/
+  - NVIDIA DGX GB Rack Scale Systems User Guide: https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html
+  - Lenovo NVIDIA GB300 NVL72 Product Guide: https://lenovopress.lenovo.com/lp2357-lenovo-nvidia-gb300-nvl72-rack-scale-ai
+  - NVIDIA GB300 power smoothing technical blog: https://developer.nvidia.com/blog/how-new-gb300-nvl72-features-provide-steady-power-for-ai/
+  - OCP Open Data Center Ecosystem / Diablo sidecar power: https://www.opencompute.org/blog/realizing-the-open-data-center-ecosystem-vision

@@ -1,0 +1,396 @@
+# OKLO：Oklo Inc 公司调研（2026-06-11）
+
+资料边界：本报告按任务要求，仅使用 `基本面/行业调研/` 中与 AI 数据中心、电力接入、自备发电、微电网、AI 产业链瓶颈相关的资料，并结合联网搜索、SEC filings、Oklo 官方新闻和监管资料。未读取、引用或继承 `特征量化/`、`日度资料/` 或其他旧公司调研报告。  
+核心日期：行情快照为 2026-06-11 19:44 UTC 附近；最近财报为 2026Q1 10-Q，期间截至 2026-03-31，提交日期 2026-05-12。
+
+## 一、结论先行
+
+Oklo 是一家“先进核能开发商 + 潜在 IPP/电力运营商 + 核燃料循环 + 放射性同位素”的早期公司，投资人主要把它当作 **AI 数据中心 24/7 清洁电力的高弹性长期期权**。但截至 2026-06-11，公司仍是 **商业电力收入为 0 的 pre-revenue 公司**，估值并不是由收入、PE 或 PS 驱动，而是由三件事驱动：监管里程碑、客户/数据中心电力协议、燃料路径可得性。
+
+最重要的投资分歧是时间：AI 数据中心 2026-2027 最缺的是可立即上电的 MW；项目内行业资料判断 SMR/先进核电在 2026-2027 主要还是 PPA、选址、许可、前端工程和资本市场期权，真实大规模上电多在 2030 年以后。Oklo 的 Aurora-INL 首堆目标提前到 2028 左右，若兑现会极大改变市场预期，但它对 Meta Ohio、Switch 等数据中心 GW 级订单的收入贡献更可能在 2030 年以后体现。
+
+| 维度 | 市场眼中的 OKLO | 现实约束 |
+|---|---|---|
+| 主题标签 | AI 电力、先进核电、SMR/微反应堆、Sam Altman 关联、核燃料回收、核同位素 | 不是 AI 芯片、光模块、服务器或短交期电力设备公司；2026-2027 AI 数据中心供电收入基本不可见 |
+| 业务模型 | build-own-operate，向客户出售电力和热能，而不是直接卖反应堆 | 客户不用承担核电站资本开支，但 Oklo 自己承担建设、融资、运营、燃料和监管风险 |
+| 核心产品 | Aurora liquid-metal-cooled, metal-fueled fast reactor，15-75MWe，探索 100MWe 以上 | 商业首堆仍未运营；第一座 Aurora-INL 仍处 DOE/NRC 监管推进和建设前期 |
+| 订单叙事 | Switch 12GW non-binding、Meta 1.2GW、Equinix 100-500MWe ROFR、Diamondback 50MW、Prometheus/Wyoming Hyperscale 100MW | 大多数不是传统 backlog；很多是 non-binding LOI/MPA，取消率和转 PPA 比例需要折价 |
+| 资产负债表 | 2026Q1 现金和可交易债券 $2.537B，总负债 $64.9M，净现金非常厚 | 当前现金足以支持研发、前端工程和部分首批部署，但不能机械覆盖全部 12GW/1.2GW 项目资本开支 |
+
+## 二、公司整体业务、定位和三年重大变化
+
+### 2.1 业务结构
+
+Oklo 披露为一个 reportable segment，但经营上可以拆成四条线：
+
+| 业务线 | 当前状态 | 收入状态 | 对 AI 数据中心的关系 | 关键数字 |
+|---|---:|---:|---|---:|
+| Aurora powerhouses 清洁电力/热能 | 核心业务；设计、建设、拥有、运营并通过 PPA 出售电力 | 2026Q1 收入 0 | AI 数据中心长期 24/7 clean power 期权；不是 2026 可交付电源 | 单机 15-75MWe，探索 100MWe+；第一堆 Aurora-INL 目标 2028 |
+| 燃料制造与燃料回收 | A3F、Tennessee Advanced Fuel Center、Centrus/newcleo/DOE 路径 | 2026Q1 收入 0 | 决定 Aurora 能否规模化；HALEU/钚/回收燃料是核能供给链关键瓶颈 | Tennessee 项目最高 $1.68B；DOE 已授予 5 吨 EBR-II recovered uranium fuel |
+| 放射性同位素 Atomic Alchemy | 2025-02 收购，Groves Isotopes Test Reactor、Idaho lab 许可推进 | 2026Q1 未披露商业收入 | 与 AI 的直接关系弱，半导体 NTD silicon 是潜在小支线；医药/国防更重要 | 收购约 $25M 全股票；公司引用 2026 radioisotope TAM $55.7B |
+| 制造/工程 ARMEC | 2026-06 收购 Oak Ridge 精密制造公司 | 并表在 2026Q2 以后；最近财年正 FCF 但金额未披露 | 不是独立 AI 产品，主要降低首堆和燃料制造执行风险 | 约 40 名工程、焊接、机加工、核供应链人员 |
+
+### 2.2 产业链位置
+
+Oklo 不在 GPU、HBM、光模块、服务器或机柜级供电设备链上，而在 AI 基础设施的最上游物理能源层：**长期 24/7 低碳基荷电力 + 可就近部署的发电资产 + 核燃料供应链**。
+
+项目内 `行业调研/AI园区电力_机电_冷却/` 对 2026-2027 的判断是：数据中心自备发电和微电网已经从备用电源升级为 AI 基础设施交付主线之一，但最确定的 2026 技术路径是天然气往复式发动机、航改燃机、SOFC 燃料电池、BESS、微电网控制和高压接入。该资料明确把 SMR/先进核电视为长期战略期权，2026-2027 现金流少，2028 前不应当作大规模发电设备收入主线。
+
+所以 OKLO 对 AI 基建的重要性很高，但时间紧急性与收入确认并不匹配：
+
+- 对 2030 年后的 hyperscaler 24/7 清洁电力组合：重要性高。
+- 对 2026-2027 的 GB300/Rubin/Trainium 上电瓶颈：重要性低于 Bloom、GE Vernova、Caterpillar、Wartsila、Eaton、Schneider、Vertiv、Powell、Quanta 等短交期电力链公司。
+- 对“AI 电力主题估值”：敏感度极高，因为它是少数纯度很高的上市先进核电标的。
+
+### 2.3 最近三年重大业务变动
+
+| 日期 | 事件 | 业务含义 |
+|---|---|---|
+| 2023-07 | 与 AltC Acquisition 宣布合并上市交易 | 从私营先进核能公司转向公开市场融资平台 |
+| 2024-04 | 与 Diamondback Energy 签非约束 LOI，拟 20 年 PPA，50MW | 第一个较清晰的工业负荷电力应用场景 |
+| 2024-05 | 通过 AltC 交易完成上市，NYSE: OKLO | 获得公开股票融资工具；开始承担上市公司披露和稀释压力 |
+| 2024-12 | 与 Switch 签 12GW non-binding Master Power Agreement，部署至 2044 | 把 OKLO 从“小型先进核电”推入 AI 数据中心 GW 级电力叙事 |
+| 2025-02 | 收购 Atomic Alchemy，约 $25M 全股票 | 从纯电力拓展到 radioisotopes、NTD silicon 和核同位素供应链 |
+| 2025-06 | $460M 普通股公开发行；随后 ATM 继续融资 | 资产负债表大幅增强，但普通股摊薄明显 |
+| 2025-08 | Oklo/Atomic Alchemy 被 DOE Reactor Pilot Program 选择，Aurora-INL 纳入 DOE 路径 | 为首堆提供更快 DOE 授权路径，不等同商业 NRC fleet license |
+| 2025-09 | Tennessee Advanced Fuel Center，最高 $1.68B 投资 | 从反应堆开发商向燃料循环垂直整合延伸 |
+| 2025-12 | A3F 燃料制造设施 PDSA 获 DOE 批准并开始组装 | 首堆燃料制造路径去风险 |
+| 2026-01 | 与 Meta 发布 Ohio 1.2GW 核能开发协议 | 第一个 hyperscaler 明确支持的 GW 级项目，且含预付款/开发资金机制 |
+| 2026-03 | 与 Centrus 探讨 HALEU deconversion 服务 JV | 燃料前端供给链补强 |
+| 2026-05 | Aurora PDC topical report 获 NRC 批准；被 DOE 选入 surplus plutonium advanced negotiations | 许可框架和燃料桥接选项去风险 |
+| 2026-06 | 收购 ARMEC；Aurora-INL PDSA 获 DOE 批准 | 制造执行能力补强；首堆安全基础继续推进 |
+
+## 三、行情、估值和财务健康度
+
+### 3.1 估值快照
+
+| 指标 | 数值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | `$57.85` | 2026-06-11 19:44 UTC 附近 | 当日高点 `$58.22`，低点 `$54.04` |
+| 市值 | `$9.856B` | 同上 | 已显著计入先进核能和 AI 电力期权 |
+| PE | `-68.9x` | 同上，TTM EPS 约 `-$0.84` | 公司亏损，PE 不适合作为估值主指标 |
+| Forward PE | `N/A` 或 `0` | 2026-06-11，亏损预期 | 因未来 12 个月仍预计亏损，forward PE 无分析意义 |
+| PS | `N/A` | 最近 12 个月收入为 0 | 传统 PS 不适用；只能用 EV/未来项目 MW 或 EV/潜在 PPA 来看 |
+| EV 粗估 | `~$7.32B` | 市值 `$9.856B` - 2026Q1 现金/证券 `$2.537B` + 近似债务 0 | 对 0 收入公司来说仍非常高 |
+| 收入增速 | `N/M` | 2026Q1 收入 0 | 当前增长来自 pipeline、监管和融资，不是损益表收入 |
+| 毛利率 | `N/A` | 无商业收入 | 未来电力业务毛利取决于 PPA 电价、CapEx/MW、容量因子、燃料成本和 O&M |
+| 净利率 | `N/A` | 净亏损、收入为 0 | 以现金消耗和项目里程碑跟踪更有意义 |
+
+### 3.2 资产负债表
+
+截至 2026-03-31：
+
+- 现金及现金等价物：`$1.594B`。
+- Current marketable debt securities：`$614.5M`。
+- Non-current marketable debt securities：`$328.3M`。
+- 现金 + 可交易债券合计：`$2.537B`。
+- 总资产：`$2.704B`。
+- 总负债：`$64.9M`。
+- 股东权益：`$2.639B`。
+- 普通股已发行：`173.868M` 股。
+- 累计亏损：`$273.8M`。
+
+财务健康度结论：
+
+1. **短期偿付能力很强。** 现金/证券对总负债覆盖接近 `39x`，没有传统意义的高债务压力。
+2. **当前 burn 可承受。** 2026Q1 operating cash burn 为 `$17.9M`，CapEx 为 `$32.8M`，合计自由现金流粗算约 `-$50.7M`。按这个季度年化，仅当前 cash pile 可支持多年研发和前端工程。
+3. **长期项目融资仍是核心问题。** build-own-operate 模式意味着若要把 1.2GW Meta Ohio、12GW Switch 或多个 75MWe Aurora 变成资产，Oklo 需要项目债、客户预付款、政府资金、战略资本和继续股权融资。`$2.537B` 不是全部 pipeline 的建设资金。
+4. **稀释风险已经发生。** 2025 年普通股公开发行 + ATM 净融资约 `$1.264B`，2026Q1 又通过 ATM 净融资 `$1.182B`，股数从 2024 年底 `137.7M` 增至 2026Q1 `173.9M`。
+
+## 四、最近五个财报季度对比
+
+说明：Oklo 当前没有商业收入、分部收入或传统 backlog 披露。下表把“订单与交期”用客户协议、监管里程碑、现金建设、项目 CapEx 和电力交付窗口替代。Q4 2025 为 FY2025 减 2025Q1-Q3 推导，属于模型派生数。
+
+| 财报期 | 收入 | R&D | G&A | 经营亏损 | 净亏损/EPS | OCF / CapEx | 现金+可交易债券 | 订单/交期/监管进展 | AI 数据中心收入占比 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| 2026Q1 | `$0` | `$27.0M` | `$24.2M` | `-$51.2M` | `-$33.1M / -$0.19` | `-$17.9M / $32.8M` | `$2.537B` | Meta 1.2GW Ohio 协议后首个季度；Centrus HALEU deconversion JV 框架；Groves isotope NSDA；Q1 后 NRC PDC 批准、surplus Pu 入选、ARMEC 收购、Aurora PDSA 批准 | `0%` |
+| 2025Q4（推导） | `$0` | `~$24.6M` | `~$32.5M` | `~-$57.1M` | `~-$41.4M` | `~-$33.4M / ~$27.0M` | `$1.413B` | A3F PDSA 获 DOE 批准并开始组装；全年完成 Atomic Alchemy 整合；继续推进 fuel recycling、Aurora-INL | `0%` |
+| 2025Q3 | `$0` | `$14.9M` | `$21.4M` | `-$36.3M` | `-$29.7M / -$0.20` | 九个月累计 `-$48.7M / $6.3M` | `$1.184B` | DOE RPP 选中 Aurora-INL；NRC PDC topical report 接受审查；Tennessee Advanced Fuel Center 公布 | `0%` |
+| 2025Q2 | `$0` | `$11.5M` | `$16.5M` | `-$28.0M` | `-$24.7M / -$0.18` | 六个月累计 `~-$30.7M / 低个位数 $M` | `$683.0M` | 公开发行净融资约 `$440.1M`；Kiewit 被选为 Idaho 首堆 lead constructor；继续推进 Equinix/Diamondback/Prometheus/Switch 等非约束协议转 PPA | `0%` |
+| 2025Q1 | `$0` | `$7.8M` | `$10.0M` | `-$17.9M` | `-$9.8M / -$0.07` | `-$12.2M / $0.3M` | `$260.7M` | 2025-02 完成 Atomic Alchemy 收购，新增同位素业务；ROFR liability 仍为 `$25M` | `0%` |
+
+### 4.1 财报主线
+
+1. **公司从研发期转向资产建设期。** 2025Q1 CapEx 仅 `$0.3M`，2026Q1 单季 CapEx 升至 `$32.8M`，反映 Aurora、燃料设施和项目化建设支出开始上台阶。
+2. **融资远快于 burn。** 2025Q2 公开发行、2025Q3 ATM、2026Q1 新 ATM 大幅抬高现金。对投资人是两面性：项目执行有资金，但估值和每股权益被稀释。
+3. **没有传统收入质量指标。** Revenue、gross margin、PS、segment margin 均无意义；应看监管里程碑、PPA/预付款、客户信用、项目 NTP、燃料许可和 CapEx/MW。
+4. **AI 数据中心相关“订单”不等于会计 backlog。** Switch、Diamondback、Prometheus 等多为 non-binding；Meta 更强，因为有开发资金/预付机制，但金额未披露；Equinix 相关 LOI 有 `$25M` nonrefundable upfront payment，被列为 ROFR liability。
+
+## 五、2026 最新指引、收入占比和业务重心
+
+Oklo 2026Q1 没有给出 2026 收入、毛利或 EBITDA 指引。公司在 10-Q 中明确会把现金和证券用于 powerhouses、radioisotopes、fuel businesses、operations 和 growth plans，并认为现有现金足以支持财报发布后至少一年的运营。真正可观察的“指引”是计划事项：
+
+- 推进 DOE 和 NRC 对 Aurora powerhouse deployments 的监管审批。
+- 推进 fuel fabrication、fuel recycling 和 commercial fuel fabrication NRC pre-application。
+- 推进 A3F 燃料制造、Tennessee Advanced Fuel Center、HALEU/deconversion、surplus plutonium 等燃料路径。
+- 推进 Kiewit 负责的 Aurora-INL 工程、采购和建设活动。
+- 在 INL、Pike County Ohio、Eielson、Texas isotope facility 等站点推进选址、施工准备和监管文件。
+- 把 nonbinding LOI、MOU、master agreement 转化为 binding PPA、预付款、NTP 或项目融资。
+
+| 业务 | 2026Q1 收入占比 | 真实状态 | 增长判断 |
+|---|---:|---|---|
+| Aurora power / heat | `0%` | 无商业电力收入；Aurora-INL 目标 2028，Meta Ohio phase 1 目标 2030 | 当前增长是 pipeline MW 和监管里程碑，不是收入 |
+| Fuel recycling / fabrication | `0%` | A3F 和 Tennessee 项目推进；DOE/INL/TVA/Centrus/newcleo 路径 | 战略价值极高，收入更可能滞后 |
+| Isotopes / Atomic Alchemy | `0%` 或未披露 | 公司称可能先于首个同位素生产反应堆产生初始收入；Q1 未披露 | 近 12 个月最可能出现小额商业收入的线 |
+| ARMEC manufacturing | 不在 2026Q1 | 2026-06 收购，未来并表；最近财年正 FCF | 规模预计小，但能降低内部制造和供应链风险 |
+
+### 5.1 跳过或降权的业务/产品
+
+以下业务不是本报告重点，因为当前收入为 0，且与 AI 基建的短期收入关联较弱：
+
+- 普通工业热能/社区供电：长期可选市场，但目前无可确认收入。
+- 教育、咨询、white paper 和客户教育：帮助销售，不是主要收入线。
+- Defense/off-grid/rural：潜在高价值客户，但披露的核心商业需求来自数据中心和工业。
+- Atomic Alchemy 医疗同位素中与 AI 无关的品类：可能利润率高，但与 AI 数据中心主线弱。
+
+### 5.2 重点产品和不可漏掉的小业务
+
+| 产品/业务 | 为什么重要 | 当前收入 | 2026-2027 最关键观察点 |
+|---|---|---:|---|
+| Aurora-INL first powerhouse | 首堆决定技术、监管、供应链和资本市场信任 | `$0` | PDSA 后的 DSA、readiness review、startup approval、燃料装配、Kiewit 施工节点 |
+| Meta Ohio 1.2GW campus | 绑定 hyperscaler AI supercluster 需求，是 Oklo AI 电力叙事最高质量项目 | `$0` | 预付款金额、phase 1 NTP、PJM/Ohio 许可、PPA 条款、2030 COD 可行性 |
+| Switch 12GW non-binding MPA | 最大 nominal capacity，但确认度低 | `$0` | 分项目 binding PPA、site control、客户/融资/电网节点 |
+| Equinix 100-500MWe ROFR | 有 `$25M` upfront payment 支撑，质量高于普通 LOI | `$0` | 是否转为具体 PPA、站点、价格和交付期 |
+| Fuel recycling / A3F / Tennessee | 决定规模化燃料成本和可用性，可能形成垂直整合护城河 | `$0` | A3F DSA、startup approval、Tennessee NRC pre-app、TVA used fuel 协作、Centrus/newcleo 合作落地 |
+| Atomic Alchemy / VIPR / isotope labs | 可能最早产生小额收入；NTD silicon 与半导体有小潜力 | 未披露 | NRC materials license、Groves PDSA、商业 isotope off-take、NTD silicon 客户 |
+| ARMEC manufacturing | 收购后能改善 nozzle、fabrication、inspection、procurement 的执行反馈 | 2026Q2 后并表 | 对首堆 BOM、质量文件、供应商问题闭环速度的贡献 |
+
+## 六、高增长/关键业务当前贡献和 AI 基建重要性
+
+评分：5 为最高。收入贡献为 2026Q1 及截至 2026-06-11 的已确认收入，不把 nonbinding pipeline 当收入。
+
+| 业务/产品 | 当前收入贡献 | 披露/推断的商业容量 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| Aurora powerhouses | `$0` | Switch 12GW non-binding；Meta 1.2GW；Equinix 100-500MWe ROFR；Diamondback 50MW；Prometheus 100MW | N/M | 5 | 2 | 5 | 3 | 2030+ AI 电力期权很高，2026-2027 收入贡献低 |
+| Aurora-INL first unit | `$0` | 15-75MWe 产品线，首堆目标 2028 | N/M | 4 | 4 | 5 | 4 | 若 2028 运行，会显著压低许可和技术风险溢价 |
+| Fuel recycling / fabrication | `$0` | Tennessee up to `$1.68B` 投资；5 吨 INL EBR-II fuel award；surplus Pu negotiations | N/M | 4 | 5 | 5 | 3 | 燃料是先进核电硬瓶颈，Oklo 垂直整合价值高 |
+| Atomic Alchemy / isotopes | `$0` 或未披露 | VIPR、Groves Test Reactor、Idaho radiochemistry lab | N/M | 2 | 3 | 4 | 3 | 不应按 AI 电力估值，但可能是最早收入来源 |
+| ARMEC manufacturing | 2026Q1 未并表；最近财年正 FCF，金额未披露 | 约 40 人团队，precision machining/prototyping | N/M | 2 | 4 | 3 | 2 | 更像执行能力补丁，不是独立高估值收入线 |
+
+## 七、一年后情景预测：收入、重要性、供需和溢价
+
+时间口径：2027 年中附近。收入为 Oklo 公司层面可确认 revenue 的估计，不包括客户预付款形成的合同负债或项目融资。
+
+| 业务/产品 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| Aurora powerhouses | 仍无商业电力收入；项目开发/工程收入不明显；收入贡献 `$0-5M` | 获得一到多个客户开发付款或工程服务收入，收入 `$5-25M`；但电力收入仍接近 0 | DOE 路径极快推进并产生示范/政府相关收入 `$25-75M`；仍不是规模化 PPA 电力收入 |
+| Aurora-INL first unit | DSA/建设/燃料装配推进，2028 COD 可信度提升；收入 `$0` | Readiness timeline 清晰，市场把 2028 首堆概率上修；收入 `$0-10M` | 监管和建设显著超预期，2027 下半年接近 startup；收入仍小，但估值弹性大 |
+| Meta Ohio / data center PPA pipeline | 预付款金额仍有限或不披露；不会贡献电力收入 | Meta phase 1 NTP、PJM/Ohio 许可和资金机制清晰，形成 `$50-200M` 合同负债/开发资金 | 多个 hyperscaler 复制 Meta 模式，客户预付款 `$200-600M`，但会计收入仍可能较低 |
+| Fuel recycling / fabrication | 收入 `$0-5M`，主要花钱建设 | DOE/TVA/Centrus/newcleo 形成 reimbursable work 或 JV 开发收入 `$5-30M` | 关键燃料路径获政策资金/客户资本支持，开发收入 `$30-100M`，战略价值大幅上修 |
+| Isotopes / Atomic Alchemy | 最可能小额 revenue，`$0-10M` | isotope processing / materials license 转商业销售，收入 `$10-40M` | 商业 isotope off-take + NTD silicon 初单，收入 `$40-100M` |
+| ARMEC | 并表后收入 `$5-15M`，更多内部服务 | 收入 `$15-40M`，外部核供应链订单保留 | 收入 `$40M+`，成为核制造平台雏形 |
+
+## 八、BOM、单位内容量和价格传导链
+
+### 8.1 Aurora 对 AI 数据中心的单位功率换算
+
+Oklo 是发电资产，不是每 GPU、每 optical port 的零部件供应商。因此“内容量”应从每 MW 电力转成每 rack/每 GPU 可支持的供电能力。
+
+假设：数据中心 PUE `1.15-1.30`；AI rack 功率 `100-160kW/rack`；NVL72 类 rack `72 GPU/rack`。
+
+| Aurora 容量 | 可支持 IT load | 可支持 100kW rack | 可支持 160kW rack | 可支持 NVL72 GPU 数量 |
+|---:|---:|---:|---:|---:|
+| 15MWe | `11.5-13.0MW IT` | `115-130` racks | `72-81` racks | `~5,200-9,400` GPUs |
+| 75MWe | `57.7-65.2MW IT` | `577-652` racks | `361-407` racks | `~26,000-46,900` GPUs |
+| 1.2GW Meta target | `923-1,043MW IT` | `9,230-10,430` racks | `5,770-6,520` racks | `~415k-751k` GPUs |
+
+解释：这不是 Oklo 对 GPU 数量的销售承诺，只是把 MWe 转成 AI 数据中心可支持的 IT 负载。真实可用 rack 数还受冷却、水、网络、机房、冗余、BESS/UPS 和并网约束影响。
+
+### 8.2 每 MW 年收入敏感性
+
+电力收入主要由 PPA 电价、容量因子和可售 MWh 决定。Oklo 未披露具体 PPA price。本报告用先进核电/AI 24/7 clean power 的情景价格估算：
+
+| 假设 PPA 电价 | 每 1MWe 年可售电量（90% CF） | 年收入/MWe | 15MWe 年收入 | 75MWe 年收入 | 1.2GW 年收入 |
+|---:|---:|---:|---:|---:|---:|
+| `$80/MWh` | `7,884MWh` | `$0.63M` | `$9.5M` | `$47.3M` | `$757M` |
+| `$120/MWh` | `7,884MWh` | `$0.95M` | `$14.2M` | `$71.0M` | `$1.14B` |
+| `$160/MWh` | `7,884MWh` | `$1.26M` | `$18.9M` | `$94.6M` | `$1.51B` |
+| `$220/MWh` | `7,884MWh` | `$1.73M` | `$26.0M` | `$130M` | `$2.08B` |
+
+结论：如果 1.2GW 最终全部运行，收入上限非常可观。但问题不是收入公式，而是首堆技术、许可、CapEx/MW、燃料、融资和 COD 时间。
+
+### 8.3 Aurora BOM 粗拆
+
+Oklo 未披露 Aurora 的完整 BOM 和 CapEx/MW。以下为 advanced fast reactor / small nuclear plant 的工程估算框架，用于价格传导，不作为公司指引。
+
+| BOM / CapEx 模块 | 典型内容 | 成本占比推断 | 价格传导和风险 |
+|---|---|---:|---|
+| 核岛与反应堆本体 | reactor vessel、metal fuel core、control/shutdown、primary heat transport、sodium coolant、heat exchangers | `25-35%` | 首堆制造、核级质量文件、材料追溯、NQA-1/ASME 相关认证决定交期和成本 |
+| 燃料与燃料制造 | HALEU/recovered EBR-II fuel、surplus Pu bridge fuel、fuel fabrication、fuel qualification | `5-15%` | HALEU 紧缺和燃料许可是最大变量；Oklo 垂直整合可提高长期毛利 |
+| power conversion | 蒸汽发生、turbine generator、冷凝/热交换、辅助系统 | `10-18%` | turbine、generator、热交换器等长周期设备可能涨价 |
+| 电气与并网 | transformer、switchgear、protection、SCADA、substation、metering | `8-15%` | 与 AI 数据中心电力瓶颈共用供应链，变压器/switchgear 长交期 |
+| 模块化建筑和场地 | modular powerhouse building、civil works、security、safeguards、fire protection | `15-25%` | FOAK 土建、安全和监管保守设计会抬高成本 |
+| I&C、监管、测试、commissioning | safety analysis、licensing、digital controls、readiness review、startup testing | `8-15%` | 首堆文件和测试成本高，后续复制有降本空间 |
+| EPC、项目管理、contingency | Kiewit/承包商、项目管理、供应链、保险、融资成本 | `10-25%` | 首堆风险溢价最大；fixed-price EPC 不现实或价格很高 |
+
+### 8.4 价格传导链
+
+`AI/工业客户电力需求 -> LOI/MOU/ROFR/MPA -> site selection -> interconnection / DOE-NRC path / environmental review -> PPA + prepayment/capacity reservation -> project finance -> long-lead equipment PO -> construction NTP -> fuel fabrication -> readiness review -> COD -> MWh revenue`
+
+对 Oklo 来说，最重要的不是“宣布 GW”，而是每个项目进入以下硬节点：
+
+- binding PPA 或等价 offtake；
+- 客户预付款或 project development funding；
+- fuel source and fabrication authorization；
+- DOE/NRC approval path；
+- EPC NTP；
+- long-lead nuclear island、turbine、transformer、switchgear PO；
+- site control、local permits、grid interconnection；
+- startup approval 和 COD。
+
+## 九、当前产能、供应链采纳和认证阶段
+
+| 业务/产品 | 当前产能能力（美元计） | 供应链采纳程度 | 认证/监管阶段 | 一年后基准 | 一年后乐观 | 一年后极度乐观 |
+|---|---:|---|---|---|---|---|
+| Aurora-INL | 商业发电产能 `$0`；建设和开发资金由现金支持 | Kiewit lead constructor；DOE/INL fuel path；ARMEC 补强制造 | DOE RPP 路径：OTA/NSDA/PDSA 已推进；后续 DSA、readiness review、startup approval | DSA/建设文件继续推进 | 施工和燃料装配进度清晰 | 接近 startup readiness，2028 COD 置信度大幅上修 |
+| Aurora fleet / customers | 商业发电产能 `$0`；nominal pipeline >13GW，但绝大多数非约束 | Meta、Switch、Equinix、Diamondback、Prometheus/Wyoming Hyperscale 等 | future NRC/DOE/site-specific licensing | 1-2 个项目转更具体条款 | Meta phase 1/NTP 和至少一项 PPA 转 binding | 多个 hyperscaler 预付，形成项目融资模板 |
+| Fuel fabrication / recycling | 收入 `$0`；A3F 和 Tennessee 投资在建/规划 | DOE、INL、TVA 探索、Centrus、newcleo | A3F PDSA；Tennessee NRC pre-application；surplus Pu advanced negotiations | A3F DSA/ready path | TVA/Centrus/newcleo 形成更强商业/资金结构 | 燃料成为 Oklo 相对其他 SMR 的核心护城河 |
+| Isotopes / Atomic Alchemy | 商业收入未披露 | NRC materials license 支持处理、加工和分销 isotope；Groves reactor 推进 | Groves NSDA；材料许可；PDSA 待推进 | 小额销售或客户试单 | `$10-40M` revenue run-rate | `$40M+` run-rate，NTD silicon/medical isotope 双线验证 |
+| ARMEC | 最近财年正 FCF，金额未披露；2026Q2 后并表 | Oak Ridge nuclear supply chain、ITER 等历史经验 | 制造质量体系和核供应链经验，具体证书未披露 | 支持内部项目，外部收入小 | 外部核项目订单保留 | 成为核级制造平台，支持多项目复制 |
+
+## 十、订单积压、供给和未来一年业务增速推断
+
+### 10.1 真实 backlog 与非传统 pipeline
+
+Oklo 当前没有传统意义上可与工业设备公司比较的 backlog。应分层看：
+
+| 层级 | 项目/客户 | 容量 | 合同质量 | 交付窗口 | 本报告折算方法 |
+|---|---|---:|---|---|---|
+| 有现金支撑的 ROFR | Equinix 相关 LOI/ROFR，10-Q 披露未具名第三方 | `100-500MWe` | `$25M` nonrefundable upfront payment，未来 PPA 抵扣 | 未披露 | 质量高于普通 LOI，但未转 PPA 前不等于 backlog |
+| 高质量开发协议 | Meta Ohio | `1.2GW` | 有预付款/开发资金机制，金额未披露；客户信用强 | 2026 site characterization；phase 1 as early as 2030；full target by 2034 | 作为中高置信 project pipeline |
+| 大额 non-binding | Switch | `12GW` | non-binding Master Power Agreement，分项目未来 PPA | through 2044 | 作为长期上限，不计入近期收入 |
+| 普通 LOI | Diamondback | `50MW` | non-binding LOI，20-year PPA 目标 | 未披露 | 低中置信 |
+| 普通 LOI | Wyoming/Prometheus Hyperscale | `100MW` | non-binding LOI，20-year PPA 目标 | 未披露 | 低中置信 |
+
+### 10.2 未来一年业务增速预测
+
+由于 2026-2027 收入基数为 0，传统 revenue growth 会出现 N/M。更合理的指标是：可确认收入、合同负债/预付款、项目融资、CapEx、监管节点数量。
+
+| 口径 | 未来一年可确认 revenue | 合同/预付款/融资 | 业务增速判断 | 取消率/折价假设 |
+|---|---:|---:|---|---|
+| 基准 | `$5-25M`，主要来自 ARMEC、小额 isotope/开发收入；电力收入 0 | `$0-100M` 新增预付款或开发资金 | 公司仍是 pre-revenue nuclear developer，损益表增长弱，资产建设增长强 | nonbinding GW pipeline 未来 5 年仅 `10-25%` 转硬合同 |
+| 乐观 | `$25-100M`，isotope + ARMEC + development work | `$100-400M` 预付款/合同负债/项目开发资金 | 市场上修 2028 首堆和 Meta phase 1 概率 | pipeline 未来 5 年 `25-45%` 转硬合同 |
+| 极度乐观 | `$100-250M`，需 isotope/ARMEC/政府或客户开发收入超预期 | `$400M-1B+`，多客户复制 Meta 模式 | Oklo 从主题股变成可融资项目平台 | pipeline 未来 5 年 `45%+` 转硬合同，且首堆无重大延迟 |
+
+最核心反证：
+
+- Aurora-INL DSA、readiness review 或 fuel fabrication 延迟超过 12 个月。
+- Meta Ohio 预付款和 NTP 无后续披露。
+- Switch 12GW 长期没有任何具体 site/PPA。
+- HALEU、surplus plutonium、fuel recycling 路径受监管或政治争议拖慢。
+- 后续融资只能靠股权 ATM，且股价下行导致稀释成本显著上升。
+
+## 十一、竞争格局、替代方案和客户替换成本
+
+### 11.1 竞争对手地图
+
+| 领域 | 竞争对手 | 与 Oklo 的差异 |
+|---|---|---|
+| Advanced nuclear / SMR | NuScale、TerraPower、X-energy、Kairos Power、GE Hitachi BWRX-300、Westinghouse AP300/eVinci、Rolls-Royce SMR、Holtec、Radiant、Antares、Aalo | 技术路线、单机规模、冷却剂、燃料、监管路径和商业模式差异大；Oklo 强调 fast reactor、fuel recycling、build-own-operate |
+| 核电 IPP / 数据中心 PPA | Constellation、Vistra、Talen、Entergy、Duke、AEP、TVA、NextEra | 现有核电/utility 能更快签 PPA 或扩容；Oklo 是新建先进核电期权 |
+| 2026-2027 AI 自备电 | Bloom Energy、GE Vernova、Caterpillar、Cummins、Wartsila、Rolls-Royce mtu、Siemens Energy、BESS/UPS 供应商 | 这些能在 12-36 个月内上电，Oklo 的核电路线更长期 |
+| 燃料循环 / HALEU | Centrus、BWXT、Orano、Framatome、TerraPower fuel chain、Urenco、Global Laser Enrichment、DOE/INL | Oklo 的优势是把 fuel recycling 和 reactor offtake 放进同一商业系统；劣势是规模和许可仍早 |
+| Radioisotopes | SHINE、NorthStar Medical、BWXT Medical、Curio、ASP Isotopes、Framatome isotopes | Atomic Alchemy 是早期平台，商业客户和产能仍需验证 |
+
+### 11.2 Oklo 的新技术会成为主流吗
+
+结论：**fast fission + fuel recycling 可能成为 AI 24/7 clean power 的一条重要路线，但 2026-2028 不会成为 AI 数据中心供电主流。**
+
+成为主流的条件：
+
+1. Aurora-INL 在 2028 左右成功 startup，并证明监管、建设、燃料和运行成本可复制。
+2. 第一个客户项目形成可融资 PPA，且 PPA 电价低于客户愿意为 24/7 clean power 和 time-to-power 支付的上限。
+3. 燃料路径从 EBR-II recovered uranium、surplus plutonium、HALEU deconversion 和 recycling 中至少一条规模化。
+4. 单机从 15MWe 向 75MWe 乃至 100MWe+ 扩展时不发生非线性监管和制造复杂度上升。
+5. 数据中心客户愿意接受核安全、退役、安保、政治和当地社区风险。
+
+被替代的风险：
+
+- 短期上电：天然气 engine、航改燃机、SOFC、BESS、utility dedicated generation 速度更快。
+- 低碳承诺：Fervo 先进地热、现有核电重启/延寿、utility PPA、CCS gas、长时储能可能分流需求。
+- 监管路线：大型轻水 SMR 或 GE Hitachi BWRX-300 可能更容易获得传统 utility 接受。
+- 客户经济性：若 AI 推理收入或 GPU 利用率下行，客户对 2030+ 高价 24/7 clean PPA 的愿意支付下降。
+
+### 11.3 客户替换成本
+
+| 阶段 | 客户替换成本 | 解释 |
+|---|---:|---|
+| LOI/MOU/nonbinding MPA | 低 | 尚未锁定 PPA、site、interconnection、NTP，客户可转向燃气、fuel cell、utility PPA 或其他 SMR |
+| 已付开发款/ROFR | 中 | 有现金、排他或优先权安排，替换会损失时间和已付成本 |
+| binding PPA + site + permit + project finance | 高 | 替代会导致 interconnection、许可、融资、客户负荷计划重做 |
+| COD 后 | 很高 | 24/7 clean power、燃料、O&M、退役责任和长期电价会形成高度锁定 |
+
+## 十二、公司最需要跟踪的指标
+
+| 更新频率 | 指标 | 为什么重要 | 上修信号 | 下修信号 |
+|---|---|---|---|---|
+| 实时 | DOE/NRC 监管文件：DSA、PDSA、PDC、readiness review | 首堆能否启动的硬证据 | 审批提前、审查问题少 | 补件、延期、公开技术争议 |
+| 实时 | Meta/Switch/Equinix 是否转 binding PPA | 区分真实 backlog 和主题 pipeline | 预付款、NTP、PPA price、site | 只重复 headline GW，没有具体条款 |
+| 季度 | CapEx、OCF、现金、股数 | 判断 burn 和稀释 | burn 可控、非股权融资增加 | ATM 持续高强度、项目成本失控 |
+| 季度 | Fuel path：A3F、surplus Pu、Centrus、Tennessee、TVA | 燃料是规模化最大瓶颈 | 燃料授权和资金明确 | HALEU/钚/回收燃料政治或许可受阻 |
+| 季度 | ARMEC/Atomic Alchemy 是否贡献收入 | 验证非电力收入支线 | isotope/制造收入开始披露 | 长期无收入，收购只增加成本 |
+| 半年 | AI 数据中心电力市场 | 决定远期 PPA 需求 | 核电/清洁基荷 PPA 继续增加 | 2026-2027 BTM gas/SOFC/utility 已充分解决缺电 |
+
+## 十三、风险清单
+
+| 风险 | 严重度 | 说明 |
+|---|---:|---|
+| 首堆技术和监管失败 | 5 | 2022 年 NRC 曾对 Aurora 申请作出 denial without prejudice；虽然公司之后改进路径，但 FOAK 风险仍是第一风险 |
+| 非约束 pipeline 被市场过度当作 backlog | 5 | Switch 12GW 等容量巨大，但不等于收入、PPA、融资或建设 |
+| 燃料供给 | 5 | HALEU、surplus plutonium、recovered fuel、fuel recycling 任一路径受阻都会压制 fleet scaling |
+| 项目融资和稀释 | 4 | build-own-operate 需要大量资本；若股价回落，继续融资会显著摊薄 |
+| AI 电力主题降温 | 4 | 若 hyperscaler CapEx 下修或电力瓶颈缓解，OKLO 的主题溢价会压缩 |
+| 成本超支 | 4 | FOAK 小型核电的 CapEx/MW 可能远高于模型；高 PPA price 可能限制客户接受 |
+| 竞争替代 | 4 | 短期 gas/SOFC/BESS，长期大型核电/地热/utility PPA 都可能替代部分需求 |
+| 地方许可和社区反对 | 3 | 核电项目对选址、安保、废料、用水和政治环境敏感 |
+
+## 十四、综合投资判断
+
+OKLO 的优势很清楚：纯度高、现金厚、客户 headline capacity 大、Meta 质量高、fuel recycling 垂直整合有想象力，且 2026 年监管和制造里程碑密集。如果 Aurora-INL 真的按 2028 左右启动，Oklo 会从先进核能概念股转向稀缺的可运行核电平台，公司估值逻辑会发生质变。
+
+但当前估值同样把很多未来提前资本化了。2026-06-11 市值约 `$9.856B`，EV 粗估约 `$7.32B`，而最近 12 个月收入仍为 0。这个估值隐含市场不仅相信首堆会运行，也相信客户 pipeline 能转化为 PPA、燃料路径可规模化、项目资本能以可接受成本获得，并且 AI 数据中心在 2030 年前后仍愿意为 24/7 clean power 支付高价。
+
+因此更合理的研究框架不是 PE/PS，而是“里程碑概率树”：
+
+1. 2026-2027：看 DOE/NRC、fuel、Meta phase 1、isotope/ARMEC 小收入。
+2. 2028：看 Aurora-INL 是否实际 startup/COD。
+3. 2029-2030：看第一个客户 PPA 是否进入建设和融资闭环。
+4. 2030+：看 Meta/Switch/Equinix 等 pipeline 是否转化为可复制 fleet。
+
+投资排序上，OKLO 是 AI 电力链中 **长期弹性最高但短期收入确定性最低** 的标的之一。和电力设备、燃料电池、燃机、EPC 相比，它不适合用 2026-2027 订单/收入兑现逻辑买入；它更像一个监管、燃料和首堆执行的远期期权。
+
+## 十五、资料来源索引
+
+### 15.1 项目内允许资料
+
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`：AI 数据中心 2026/2027 CapEx、MW、power bottleneck 和订单映射。
+- `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`：电力接入、变压器、switchgear、PPA/自备电作为硬瓶颈的框架。
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`：自备发电、SOFC、燃机、SMR/advanced nuclear 时间表、AI microgrid BOM 和竞争格局。
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`：高压接入、变电、BESS、800VDC、SMR/核电在 2026-2028 的收入时间判断。
+
+### 15.2 Oklo 一手资料
+
+- Oklo 2026Q1 10-Q：`https://www.sec.gov/Archives/edgar/data/1849056/000162828026034095/oklo-20260331.htm`
+- Oklo 2025 10-K：`https://www.sec.gov/Archives/edgar/data/1849056/000162828026018698/oklo-20251231.htm`
+- Oklo 2025Q3 10-Q：`https://www.sec.gov/Archives/edgar/data/1849056/000162828025051349/oklo-20250930.htm`
+- Oklo 2025Q2 10-Q：`https://www.sec.gov/Archives/edgar/data/1849056/000162828025039571/oklo-20250630.htm`
+- Oklo 2025Q1 10-Q：`https://www.sec.gov/Archives/edgar/data/1849056/000162828025025166/oklo-20250331.htm`
+- Oklo technology page：`https://oklo.com/technology/default.aspx`
+- Oklo regulatory page：`https://oklo.com/regulatory/`
+- Oklo May 2026 NRC PDC approval：`https://oklo.com/newsroom/news-details/2026/Oklo-Receives-NRC-Approval-of-the-Principal-Design-Criteria-Topical-Report-for-the-Aurora-Powerhouse-in-Idaho/default.aspx`
+- Oklo May 2026 DOE surplus plutonium selection：`https://oklo.com/newsroom/news-details/2026/Oklo-Selected-for-Advanced-Commercial-Negotiations-with-Department-of-Energy-to-Utilize-Surplus-Plutonium/default.aspx`
+- Oklo June 2026 ARMEC acquisition：`https://oklo.com/newsroom/news-details/2026/Oklo-Acquires-ARMEC-to-Expand-Vertically-Integrated-Manufacturing-Capabilities-for-Advanced-Reactor-and-Fuel-Manufacturing-Programs/default.aspx`
+- Oklo Jan 2026 Meta 1.2GW：`https://oklo.com/newsroom/news-details/2026/Oklo-and-Meta-Sign-Deal-to-Accelerate-Clean-Energy-Delivery-for-Artificial-Intelligence/default.aspx`
+- Oklo Jan 2026 Groves/DOE OTA：`https://oklo.com/newsroom/news-details/2026/Oklo-and-Atomic-Alchemy-Sign-Agreement-with-Department-of-Energy-to-Launch-Isotope-Production/default.aspx`
+- Oklo Mar 2026 Centrus HALEU JV：`https://oklo.com/newsroom/news-details/2026/Oklo-and-Centrus-Sign-Memorandum-of-Understanding-to-Explore-Development-of-HALEU-Deconversion-Services/default.aspx`
+
+### 15.3 外部行业和监管资料
+
+- NRC Oklo pre-application page：`https://www.nrc.gov/reactors/new-reactors/advanced/who-we-are-engaging/oklo-aurora.html`
+- DOE/LBNL data center energy usage report release：`https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers`
+- Goldman Sachs data center power demand, 2026-05：`https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027`
+- CBRE U.S. Data Centers Outlook 2026：`https://www.cbre.com/insights/books/us-real-estate-market-outlook-2026/data-centers`
+- JLL 2026 Global Data Center Outlook：`https://www.jll.com/en-us/insights/market-outlook/data-center-outlook`
+- Cleanview behind-the-meter data centers：`https://cleanview.co/reports/behind-the-meter-data-centers`
+- Data Center World 2026 conference：`https://www.datacenterworld.com/`
+- DTECH Data Centers & AI 2026：`https://dtech-events.com/data-ai`

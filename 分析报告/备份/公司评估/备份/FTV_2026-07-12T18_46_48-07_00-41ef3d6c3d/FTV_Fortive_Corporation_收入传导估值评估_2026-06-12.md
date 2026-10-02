@@ -1,0 +1,165 @@
+# 公司收入传导与价值传导评估：Fortive Corporation
+
+评估对象：FTV / Fortive Corporation  
+报告日期：2026-06-12  
+主口径：NTM，即以 2026Q1 已披露结果之后的未来四个季度为经营窗口；FY2026、FY2027、长期 run-rate 和远期期权只作为补充口径。  
+资料边界：使用 `公司调研/`、`行业调研/` 以及 Fortive 官方 IR/SEC 资料；未使用 `特征量化/`、Signals、排序、回归或估值倍数资料。  
+重要边界：本报告只评估经营收入、利润、现金流和执行质量传导，不给投资评级，不判断股价区间，不使用金融市场价格或估值数据作为经营证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营收入、毛利率、经营利润、调整 EBITDA、净利润和自由现金流。补充口径仅用于说明 FY2026 指引、FY2025 基数、AI 数据中心相关远期期权和分拆边界。
+- 当前收入基准、指引和 run-rate：Fortive 2025 年持续经营收入为 41.591 亿美元；2026Q1 持续经营收入为 10.694 亿美元，同比增长 7.7%，核心收入增长 5.3%。2026Q1 年化 run-rate 约 42.78 亿美元，2025Q4 年化 run-rate 约 44.90 亿美元。公司在 2026Q1 后继续预期 FY2026 调整后摊薄 EPS 为 2.90-3.00 美元，但未披露可量化 backlog 或 book-to-bill。
+- 重要产品/业务线：Intelligent Operating Solutions 约为收入核心，包含 Fluke 电力/现场测试、Fluke Networks 布线和光纤认证、Accruent/eMaint/ServiceChannel/Gordian 设施资产软件、Industrial Scientific/Intelex 安全与 EHSQ；Advanced Healthcare Solutions 包含 ASP、Censis、Provation、Fluke Health Solutions。Ralliant 分拆后的 Tektronix、Keithley、EA Elektro-Automatik、Qualitrol 等不再属于 FTV。
+- NTM 公司收入四情景：悲观 41.5-43.0 亿美元；基准 43.5-45.0 亿美元；乐观 45.5-47.0 亿美元；极度乐观经营上限 47.5-49.5 亿美元。校准后，极度乐观不作为可保留主情景，只作为上限跟踪。
+- 利润或 EBITDA 四情景：悲观为毛利率 61.5%-62.5%、GAAP 经营利润率 15.5%-17.0%、调整 EBITDA 约 11.5-12.5 亿美元；基准为毛利率 62.5%-63.8%、GAAP 经营利润率 17.0%-18.5%、调整 EBITDA 约 12.5-13.5 亿美元；乐观为毛利率 63.5%-64.5%、GAAP 经营利润率 18.5%-20.0%、调整 EBITDA 约 13.6-14.8 亿美元；极度乐观上限为毛利率 64.0%-65.0%、GAAP 经营利润率 20.0%-21.5%、调整 EBITDA 约 15.0-16.2 亿美元。
+- 最大传导瓶颈：FTV 能受益于 AI 数据中心的 commissioning、field test、facility software 和 safety workflow，但没有披露 AI 数据中心客户订单、项目金额、backlog 或明确收入确认时间表；因此行业需求不能直接转化为公司基准收入。
+- 最大利润率变量：IOS 的高毛利仪器、软件和 recurring service mix 能支撑经营杠杆；但关税、员工成本、AHS 低于 IOS 的利润率、实施服务成本和分拆后公司费用吸收会限制利润率非线性扩张。
+- 最大现金流变量：FTV 自由现金流质量较强，2026Q1 自由现金流 1.938 亿美元，TTM 自由现金流 9.537 亿美元；NTM 现金流主要取决于收款节奏、项目实施周期、库存和资本开支，而不是单纯收入增长。
+- 可信度：公司层面基准为中高；IOS 子产品拆分为中，因为 Fluke、Fluke Networks、Accruent 等没有单独披露收入；AI 数据中心增量为低到中，因为主要来自产品映射和行业需求，而不是公司级订单披露。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| IOS 总分部：Intelligent Operating Solutions | FY2025 28.563 亿美元；2026Q1 7.432 亿美元 | FY2025 68.7%；2026Q1 69.5% | 公司收入和利润核心；利润率高于 AHS | A | 进入基准，是公司 NTM 主锚 | AI 数据中心只作为 IOS 内部增量，不可整体映射 |
+| Fluke 电力/现场测试工具 | 公司未披露品牌收入；模型估计约 9-12 亿美元年收入 | 约 20%-30%，无法精确披露 | 电气测试、功率质量、热成像、局放/声学、校准；高毛利、强品牌 | C，受 IOS A 级分部约束 | 以既有工业测试工具收入进入基准；AI 数据中心增量小比例进入基准 | 高密度 AI 数据中心 commissioning 和 O&M 加速 |
+| Fluke Networks 布线/光纤认证工具 | 公司未披露品牌收入；模型估计约 1.5-2.5 亿美元年收入 | 约 4%-6%，无法精确披露 | 现场布线认证、OTDR、LinkWare workflow；受益于数据中心网络建设 | C | 以既有工具业务进入基准；800G/1.6T 生产测试不进入 FTV | AI 数据中心布线验收加速，但不等于光模块/高速仪表收入 |
+| Accruent / eMaint / ServiceChannel / Gordian 设施资产软件 | 公司未披露组合收入；模型估计约 8-11 亿美元年收入 | 约 20%-27%，无法精确披露 | recurring revenue、CMMS/EAM/IWMS、工单、施工成本和设施资产生命周期 | C，部分 recurring 属性可由公司披露支持 | 以现有软件和服务收入进入基准；AI DCIM/数字孪生只保守纳入 | AI Factory Operations OS、facility lifecycle twin、能源/工单闭环 |
+| Industrial Scientific / Intelex 安全监测与 EHSQ | 公司未披露组合收入；模型估计约 3-5 亿美元年收入 | 约 7%-12%，无法精确披露 | 气体检测、安全平台、EHSQ 软件；项目现场安全和合规 | C | 进入基准但权重较小 | 数据中心施工、储能、发电和维护安全 workflow |
+| AHS：ASP / Censis / Provation / Fluke Health Solutions | FY2025 13.028 亿美元；2026Q1 3.262 亿美元 | FY2025 31.3%；2026Q1 30.5% | 医疗灭菌、手术资产、临床效率、医疗测试；利润率低于 IOS 但稳定 | A | 进入基准；不作为 AI 数据中心收入 | 医疗流程软件、灭菌更新周期、医院效率改造 |
+| Ralliant 相关：Tektronix、Keithley、EA、Qualitrol 等 | FTV 当前收入基数为 0 | 0 | 重要排除项；避免把分拆业务错算给 Fortive | E，对 FTV 为排除 | 不进入 NTM，不进入基准、乐观或极度乐观收入 | 只在附录边界跟踪，不作为 FTV 收入 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不评估 Fortive 份额、收入确认、利润率或公司汇总。需求锚以 2026Q1 后未来四个季度的工业维护、AI 数据中心建设、设施软件、现场安全和医疗流程需求为主；相对预期均相对于当前 run-rate、行业建设节奏和管理层隐含需求，而不是相对于其他高增长科技公司。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Fluke 电力/现场测试工具 | 工业 MRO、校准、功率质量、热成像、局放/声学和数据中心 commissioning；AI 数据中心只是增量场景 | 工业客户推迟工具更新，AI 数据中心并网/施工延期，渠道库存消化；AI/DC 工具需求增量仅低个位数 | 工业维护正常替换，AI 数据中心高密度电力检查带来小到中等增量；需求中个位数增长 | commissioning、功率质量、热管理和预测性维护项目加速；AI/DC 相关工具需求双位数增长 | 多个 AI 园区集中开工且客户把预防性测试标准上修，工具 fleet 非线性扩容 | 外部需求池从中个位数增长到局部 20%+ 增长 | 基准符合当前预期；乐观需 AI/DC 现场验收加速 | 行业材料显示 AI 数据中心功率密度、液冷和动态负载提高监测需求；反证是项目延期和工具采购占总 capex 很小 |
+| Fluke Networks 布线/光纤认证工具 | 数据中心铜缆、光纤链路认证、OTDR、现场验收和文档化；不含光模块、交换机、实验室高速仪表 | 新建机房延期，客户复用已有工具，现场认证频次低于预期 | AI 数据中心和企业网络改造正常推进，认证工具需求随布线量和验收要求增长 | 高密度 AI 集群网络布线复杂度上升，认证和文档化 attach 提升 | 机柜、光纤端口和多站点交付同步爆发，现场认证工具大幅前置采购 | 从低到中个位数增长到局部 20%-40% 增长 | 基准为正常建设；乐观高于当前预期 | 高速互连行业材料支持现场/field test 需求，但高端 800G/1.6T 生产测试主导者不是 FTV |
+| Accruent / eMaint / ServiceChannel / Gordian 设施资产软件 | CMMS/EAM/IWMS、工单、供应商管理、施工成本和设施生命周期；窄义 DCIM 2026 全球约 40-43 亿美元，更宽 AI 工厂运营软件/服务池更大 | 客户继续自建或使用既有 BMS/DCIM/ITSM，facility software 采购滞后，实施周期拉长 | 现有企业设施软件预算正常续约和小幅扩张；AI 数据中心只提供少量增量 | AI 数据中心运营复杂度推动 CMMS/EAM、工单、成本库和资产管理 attach 提升 | AI Factory Operations OS 从 DCIM 延伸到资产、工单、能源和数字孪生，预算非线性上修 | 需求池从 mid-single 扩张到 AI/DC 相关双位数增量 | 基准不提前纳入长期数字孪生；乐观需订单/客户证据 | 行业材料支持 DCIM/EPMS/BMS/SCADA/OT 数据融合；反证是 hyperscaler 自建、系统集成商主导和付费模块不确定 |
+| Industrial Scientific / Intelex 安全监测与 EHSQ | 气体检测、施工/维护现场安全、EHSQ、合规和风险管理；AI 数据中心受益来自施工、储能、备用电源和维护场景 | 数据中心项目延期或安全预算不独立采购，EHSQ 软件销售周期延长 | 工业安全正常替换和续约，AI/DC 提供小额增量 | 大型园区和能源系统提高 gas detection、worker safety 和 EHSQ attach | 数据中心、电池储能和备用燃料系统监管要求同步收紧，安全监测需求跳升 | 绝对增量小，需求增长从低个位数到双位数 | 基准符合当前预期；极度乐观需要法规或客户标准改变 | 产品相关性明确但不是数据中心主 BOM；没有公司披露的大客户订单 |
+| AHS 医疗流程 | 医院灭菌、手术资产管理、临床流程软件、医疗测试和辐射安全；需求由医院预算、流程效率、合规和耗材/服务驱动 | 医院资本预算收紧、程序量低于预期、监管或采购延迟 | 程序量和医院效率投资正常，低到中个位数需求增长 | 灭菌/手术资产管理更新周期改善，软件和服务 attach 提升 | 医院系统集中升级流程平台，AHS 恢复高于历史趋势增长 | 从低个位数到中高个位数需求变化 | 基准为稳定兑现；乐观需医院预算和更新周期改善 | AHS 与 AI 数据中心无直接需求关系，不应被 AI 主题上调 |
+| Ralliant 相关高端测试/电网监测 | 高速互连、半导体测试、电力监测需求强，但已在 Ralliant | 对 FTV 为 0 | 对 FTV 为 0 | 对 FTV 为 0 | 对 FTV 为 0 | FTV 绝对变化为 0 | 排除 | Ralliant 已独立上市；Tektronix/Qualitrol 等不属于 FTV 当前收入表 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断哪些需求能进入 Fortive NTM 收入表，以及当前可收入化基数。公司能参与某个需求池，不等于能确认收入；A/B 级证据才是基准主口径，C 级只能在客户、产品和时间表较清楚时保守纳入，D/E 级不进入基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| IOS 总分部 | FY2025 收入 28.563 亿美元；2026Q1 收入 7.432 亿美元，同比增长 7.6%，核心增长 5.2%；2026Q1 GAAP 经营利润率 25.1%，调整 EBITDA margin 34.3% | 直接 | 高毛利仪器、软件、服务和 recurring revenue 组合，利润率高于公司平均 | 28.5-29.5 亿美元 | 30.0-31.3 亿美元 | 31.5-33.0 亿美元 | 33.5-35.0 亿美元 | 基准符合 Q1 run-rate 和当前核心增长；乐观高于当前预期 | A | 是 | 分部收入、分部利润和核心增长已披露 | NTM 主收入和利润锚；AI/DC 增量只能作为内部贡献，不整体上修 |
+| Fluke 电力/现场测试工具 | 未披露品牌收入；由 IOS 分部、产品清单和公司调研估算当前年收入约 9-12 亿美元；AI/DC 当前可归因年收入约 0.6-1.2 亿美元 | 直接，但 AI/DC 为间接增量 | 品牌、校准、耗材/服务和软件支持，利润率预计高于 IOS 平均或接近高端 | 9.0-10.0 亿美元 | 10.0-11.2 亿美元 | 11.2-12.5 亿美元 | 12.5-14.0 亿美元 | 基准为现有产品 run-rate；AI/DC 增量只小比例上修 | C | 是，保守纳入 | 现有产品已在 IOS 收入表；品牌级收入和 AI/DC 客户未披露 | 既有收入进入基准；AI/DC 收入增量进入乐观约束，不作为基准主驱动 |
+| Fluke Networks 布线/光纤认证工具 | 未披露品牌收入；估算当前年收入约 1.5-2.5 亿美元；AI/DC 当前可归因年收入约 0.2-0.6 亿美元 | 直接，但限于现场认证 | 高毛利工具、软件文档和校准服务；规模小 | 1.6-2.0 亿美元 | 1.9-2.5 亿美元 | 2.4-3.2 亿美元 | 3.2-4.0 亿美元 | 基准为正常网络建设；乐观需布线验收和工具 fleet 扩张 | C | 是，保守纳入 | 产品可收入化明确，但品牌级收入、订单和客户项目未披露 | 现场认证工具进入基准；高速实验室/生产测试排除 |
+| Accruent / eMaint / ServiceChannel / Gordian | 未披露组合收入；估算当前年收入约 8-11 亿美元；公司披露约 50% recurring revenue 的组合特征 | 直接，AI/DC 部分多为间接运营软件 | 软件和 recurring service 毛利高，实施服务和集成成本会拖低短期利润 | 8.5-9.5 亿美元 | 9.5-11.0 亿美元 | 11.0-12.5 亿美元 | 12.5-14.5 亿美元 | 基准为企业设施软件续约和扩张；AI Factory 数字孪生不能提前放入基准 | C | 是，保守纳入 | 经营公司和软件产品明确，分部收入存在；但没有单独披露软件收入或 AI/DC 项目 | 现有软件收入进入基准；AI/DC 运营软件为乐观/极度乐观上限 |
+| Industrial Scientific / Intelex | 未披露组合收入；估算当前年收入约 3-5 亿美元；AI/DC 当前可归因年收入约 0.05-0.20 亿美元 | 直接，但数据中心暴露小 | 工业安全硬件、服务和 EHSQ 软件；利润率中高但规模小 | 3.0-3.6 亿美元 | 3.4-4.3 亿美元 | 4.2-5.2 亿美元 | 5.0-6.2 亿美元 | 基准为现有安全业务；AI/DC 不是主驱动 | C | 是，保守纳入 | 产品和客户场景可见，品牌级收入未披露 | 纳入 IOS 基准，但不是公司情景切换核心 |
+| AHS | FY2025 收入 13.028 亿美元；2026Q1 收入 3.262 亿美元，同比增长 7.9%，核心增长 5.8%；2026Q1 GAAP 经营利润率 10.0%，调整 EBITDA margin 23.6% | 直接 | 医疗灭菌、手术资产和临床流程；GAAP 利润率低于 IOS，调整后利润较稳定 | 12.5-13.2 亿美元 | 13.2-14.0 亿美元 | 14.0-14.8 亿美元 | 14.8-15.8 亿美元 | 基准符合 Q1 run-rate；乐观需医院更新周期改善 | A | 是 | 分部收入、分部利润和核心增长已披露 | NTM 稳定收入锚，不与 AI/DC 需求混算 |
+| Ralliant / Tektronix / Keithley / EA / Qualitrol | 当前 FTV 收入锚点为 0；Ralliant 2025-06-30 完成独立上市 | 间接为历史关系，但当前对 FTV 无确认收入 | 对 FTV 无利润属性 | 0 | 0 | 0 | 0 | 不进入当前预期 | E | 否 | 分拆完成，业务归属已改变 | 排除；只作为边界说明 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从需求和收入基数出发，判断每个重要产品/业务线在 NTM 内可能贡献的收入和利润。产品级收入为模型估算或分部披露拆分，利润贡献为经营利润或调整 EBITDA 的方向性估计；品牌级数据未披露时，使用“无法可靠精确量化”或宽区间，并明确约束。不得把行业 TAM、客户总预算、项目金额或远期 pipeline 直接当作 FTV 收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Fluke 电力/现场测试工具 | 悲观 | 9.0-10.0 亿美元 | 约 2.3-2.8 亿美元经营利润，无法精确量化 | 低于正常，价格抵消成本不足 | 低于当前预期 | 工业客户推迟工具更新，AI/DC 项目延期 | 保留为下行情景 | 无品牌级 backlog；工具在数据中心 capex 中占比小 |
+| Fluke 电力/现场测试工具 | 基准 | 10.0-11.2 亿美元 | 约 2.8-3.5 亿美元经营利润 | 接近 IOS 高端，稳定 | 符合当前预期 | Q1 IOS 核心增长 5.2%，Fluke 为当前 Fortive operating company | 保留 | AI/DC 增量无法单独确认，不能作为主驱动 |
+| Fluke 电力/现场测试工具 | 乐观 | 11.2-12.5 亿美元 | 约 3.4-4.1 亿美元经营利润 | mix 和利用率改善 | 高于当前预期 | 功率质量、热像、局放、校准和 commissioning 需求强于正常替换 | 保留但需跟踪订单 | 谁买、何时确认和具体项目金额未披露 |
+| Fluke 电力/现场测试工具 | 极度乐观 | 12.5-14.0 亿美元 | 约 4.0-4.8 亿美元经营利润 | 高毛利工具和服务明显放大 | 远高于当前预期 | 多站点 AI 园区同时推升现场测试 fleet | 下移为乐观上限 | 没有可量化客户项目和 backlog |
+| Fluke Networks 布线/光纤认证工具 | 悲观 | 1.6-2.0 亿美元 | 约 0.4-0.6 亿美元经营利润 | 低于正常 | 低于当前预期 | 网络施工延期、客户复用工具、认证频次低 | 保留 | 高速光模块和实验室测试不属于 FTV |
+| Fluke Networks 布线/光纤认证工具 | 基准 | 1.9-2.5 亿美元 | 约 0.6-0.8 亿美元经营利润 | 稳定到小幅改善 | 符合当前预期 | 现场认证工具收入路径清楚，受 IOS 现有收入表支持 | 保留 | 品牌级收入未披露 |
+| Fluke Networks 布线/光纤认证工具 | 乐观 | 2.4-3.2 亿美元 | 约 0.8-1.1 亿美元经营利润 | 高毛利工具 mix 改善 | 高于当前预期 | AI 数据中心布线密度、文档化和验收复杂度提高 | 保留但中等可信 | 不能把 800G/1.6T 高速测试需求全部归给 FTV |
+| Fluke Networks 布线/光纤认证工具 | 极度乐观 | 3.2-4.0 亿美元 | 约 1.0-1.4 亿美元经营利润 | 明显扩张 | 远高于当前预期 | 多站点网络建设同步前置采购 | 下移为乐观上限 | 缺少具体订单和产能/交期披露 |
+| Accruent / eMaint / ServiceChannel / Gordian | 悲观 | 8.5-9.5 亿美元 | 约 1.6-2.2 亿美元经营利润，实施成本偏高 | 利润率承压 | 低于当前预期 | 软件扩张、实施和客户 IT 审批延期 | 保留 | 客户可能自建或由 DCIM/BMS 主供应商拿走预算 |
+| Accruent / eMaint / ServiceChannel / Gordian | 基准 | 9.5-11.0 亿美元 | 约 2.1-2.8 亿美元经营利润 | recurring mix 稳定 | 符合当前预期 | Fortive operating companies 包括 Accruent、Gordian、ServiceChannel；公司组合有 recurring revenue 特征 | 保留 | 没有独立披露 ARR、RPO 或 AI/DC 订单 |
+| Accruent / eMaint / ServiceChannel / Gordian | 乐观 | 11.0-12.5 亿美元 | 约 2.7-3.5 亿美元经营利润 | 软件 mix 和规模效应改善 | 高于当前预期 | AI 数据中心运营复杂度提升 CMMS/EAM、工单和成本数据库 attach | 保留但需要订单验证 | DCIM 行业景气不能直接变成 Fortive 收入 |
+| Accruent / eMaint / ServiceChannel / Gordian | 极度乐观 | 12.5-14.5 亿美元 | 约 3.4-4.5 亿美元经营利润 | 高毛利 recurring 放大 | 远高于当前预期 | AI Factory Operations OS 将资产、工单、能源和数字孪生打通 | 下移为附录跟踪 | NTM 内产品平台化和客户预算来源未证实 |
+| Industrial Scientific / Intelex | 悲观 | 3.0-3.6 亿美元 | 约 0.5-0.8 亿美元经营利润 | 低于正常 | 低于当前预期 | 项目安全预算延期，EHSQ 软件销售周期拉长 | 保留 | 规模较小，对公司情景影响有限 |
+| Industrial Scientific / Intelex | 基准 | 3.4-4.3 亿美元 | 约 0.7-1.1 亿美元经营利润 | 稳定 | 符合当前预期 | 安全监测和 EHSQ 场景明确，属于 IOS 当前业务 | 保留 | 品牌级收入和数据中心客户未披露 |
+| Industrial Scientific / Intelex | 乐观 | 4.2-5.2 亿美元 | 约 1.0-1.5 亿美元经营利润 | 小幅改善 | 高于当前预期 | 大型园区、储能、备用电源和施工安全要求提升 | 保留但权重低 | 不是 AI 数据中心主采购项 |
+| Industrial Scientific / Intelex | 极度乐观 | 5.0-6.2 亿美元 | 约 1.3-1.9 亿美元经营利润 | 改善 | 明显高于当前预期 | 安全监管和客户标准同步提升 | 下移为乐观上限 | 缺少监管强制和客户订单证据 |
+| AHS | 悲观 | 12.5-13.2 亿美元 | 约 1.1-1.4 亿美元 GAAP 经营利润，调整 EBITDA 约 2.8-3.2 亿美元 | GAAP 利润率低于 Q1 或仅稳定 | 低于当前预期 | 医院预算、采购周期、灭菌设备更新和程序量风险 | 保留 | AHS 与 AI/DC 无关，不应重复扣减 IOS 风险 |
+| AHS | 基准 | 13.2-14.0 亿美元 | 约 1.4-1.7 亿美元 GAAP 经营利润，调整 EBITDA 约 3.2-3.6 亿美元 | 接近 Q1，调整后稳定 | 符合当前预期 | 2026Q1 AHS 收入 3.262 亿美元，核心增长 5.8%，GAAP 经营利润率 10.0% | 保留 | GAAP 利润受摊销和费用结构压制 |
+| AHS | 乐观 | 14.0-14.8 亿美元 | 约 1.7-2.1 亿美元 GAAP 经营利润，调整 EBITDA 约 3.6-4.1 亿美元 | 小幅改善 | 高于当前预期 | 程序量、灭菌更新和临床流程软件改善 | 保留 | 医院采购节奏需证实 |
+| AHS | 极度乐观 | 14.8-15.8 亿美元 | 约 2.0-2.5 亿美元 GAAP 经营利润，调整 EBITDA 约 4.0-4.6 亿美元 | 明显改善 | 远高于当前预期 | 医院流程平台集中升级和高利用率 | 下移为乐观上限 | AHS 不是高增长 AI 题材，非线性上修证据不足 |
+| Ralliant 相关高端测试/电网监测 | 任一情景 | 0 | 0 | 不适用 | 排除 | 2025-06-30 Ralliant 完成从 Fortive 分离 | 排除 | 不能把 Tektronix、Keithley、EA、Qualitrol 的需求并入 FTV |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、调整 EBITDA、净利润和自由现金流方向。第一个表为公司收入和利润四情景。基准与乐观均先和 Fortive 自身 FY2025、2026Q1 run-rate、2026 调整 EPS 指引和可见分部节奏比较，不和 AI 基础设施高 beta 公司比较。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 41.5-43.0 亿美元 | 约 -0.2% 至 +3.4%，相对 FY2025 持续经营收入 | 低于 Q1 run-rate 和当前正常兑现路径；成长业务不足以抵消工业/医疗采购延迟 | 61.5%-62.5% | 15.5%-17.0% GAAP | 调整 EBITDA 约 11.5-12.5 亿美元；净利润约 4.5-5.5 亿美元 | FCF 约 7.5-9.0 亿美元，收款和库存拖累 | 中 | 没有 backlog 缓冲；AHS 和软件实施周期拖累；关税、人工和项目成本抵消价格 |
+| 基准公司 | 43.5-45.0 亿美元 | 约 +4.6% 至 +8.2% | 接近当前 run-rate、Q1 核心增长和 FY2026 调整 EPS 指引隐含经营节奏 | 62.5%-63.8% | 17.0%-18.5% GAAP | 调整 EBITDA 约 12.5-13.5 亿美元；净利润约 5.5-6.5 亿美元 | FCF 约 9.0-10.5 亿美元，接近 TTM 质量 | 中高 | 子品牌收入未披露；AI/DC 增量不能替代分部级正常增长 |
+| 乐观公司 | 45.5-47.0 亿美元 | 约 +9.4% 至 +13.0% | 高于当前预期；需 IOS 多条线同步强于正常，AHS 不拖累 | 63.5%-64.5% | 18.5%-20.0% GAAP | 调整 EBITDA 约 13.6-14.8 亿美元；净利润约 6.5-7.5 亿美元 | FCF 约 10.0-11.5 亿美元，现金转换保持较强 | 中 | 需要 Fluke、facility software 和 AHS 同时兑现，且价格/mix 抵消成本 |
+| 极度乐观公司 | 47.5-49.5 亿美元 | 约 +14.2% 至 +19.0% | 显著高于当前预期；只代表 NTM 上限，不代表当前基准 | 64.0%-65.0% | 20.0%-21.5% GAAP | 调整 EBITDA 约 15.0-16.2 亿美元；净利润约 7.5-8.8 亿美元 | FCF 约 11.0-13.0 亿美元，但执行和营运资本压力上升 | 低 | 需要需求、公司捕获、软件/服务 mix、AHS 执行和成本全部同时突破；缺少订单和 backlog 证据 |
+
+汇总检查：
+
+- 重复计算：Fluke 工具、Fluke Networks、设施软件和安全监测均可能服务于同一 AI 数据中心客户预算；在公司汇总中只把 AI/DC 作为 IOS 增量，不把行业 capex 或 DCIM TAM 全额映射。
+- 并购/剥离：Ralliant 相关业务已排除；历史 Tektronix/Qualitrol/EA/Keithley 机会不纳入 FTV NTM。
+- 传统/周期抵消：工业 MRO、医疗采购和软件实施周期可能抵消 AI/DC 小额增量。
+- pass-through 检查：FTV 主要是高毛利工具、软件、服务和医疗流程，不是低毛利设备 pass-through；但实施服务、渠道折扣和关税会影响收入留存质量。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。校准动作只使用保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次，市场定价不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 持续经营收入 10.694 亿美元，同比增长 7.7%，核心增长 5.3% | 公司汇总 | 支持基准收入正常兑现 | 支持规模效应，但毛利率同比从 64.2% 到 63.2% 显示成本压力 | Q1 FCF 1.938 亿美元，TTM FCF 9.537 亿美元支持现金质量 | 基准保留 |
+| IOS 2026Q1 收入 7.432 亿美元，核心增长 5.2%，GAAP 经营利润率 25.1%，调整 EBITDA margin 34.3% | 产品贡献/公司利润 | 支持 Fluke、软件、安全业务进入基准 | IOS 利润质量强，是公司利润核心 | IOS 高利润有助于现金转换 | 基准保留，乐观需订单验证 |
+| AHS 2026Q1 收入 3.262 亿美元，核心增长 5.8%，GAAP 经营利润率 10.0%，调整 EBITDA margin 23.6% | 产品贡献/公司组合 | 支持 AHS 进入基准 | GAAP 利润率低于 IOS，限制公司整体扩张 | 医疗采购和实施周期影响收款 | 基准保留；AHS 风险只在 AHS 层处理 |
+| Fortive 未披露 backlog、RPO、AI/DC 客户项目金额或 book-to-bill | 收入基数/执行可信度 | 限制 AI/DC 增量进入基准 | 限制乐观利润兑现证据 | 增加收入确认和交付节奏不确定性 | 乐观保留但降可信；极度乐观下移 |
+| Ralliant 已独立，Tektronix、Keithley、EA、Qualitrol 等不属于 FTV | 收入基数/排除项 | 将高端高速测试、电网监测和高功率电源机会从 FTV 移除 | 避免错误上修 FTV 利润 | 避免把 Ralliant 订单错当 FTV 现金流 | 排除 |
+| AI 数据中心提高电力、布线、资产管理和安全 workflow 需求 | 产品需求 | 支持 Fluke、Fluke Networks、设施软件和安全业务的乐观需求 | 高毛利工具和软件可改善 mix | 若订单分散且交付快，可改善现金；若实施周期长则拖累 | 乐观保留 |
+| DCIM/数字孪生行业景气但 hyperscaler 自建和系统集成商强 | 产品需求/公司捕获 | 限制 facility software 直接捕获行业 TAM | 实施服务成本和集成商分成压制利润 | 大型项目验收和部署拉长收款 | 基准保守；极度乐观下移 |
+| 关税、员工成本和项目成本抵消价格与销量 | 利润率 | 收入不一定受影响 | 毛利率和经营利润率受压，尤其悲观情景 | 库存和付款节奏可能拖累 FCF | 悲观保留，不重复惩罚需求 |
+| 公司 operating companies 清单明确：Accruent、ASP、Censis、Fluke、Fluke Health Solutions、Gordian、Industrial Scientific、Intelex、Provation、ServiceChannel | 收入基数 | 支持重要产品边界 | 支持 IOS/AHS 组合利润判断 | 支持当前业务归属 | 基准保留 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 工业/医疗采购延迟、软件实施拉长、关税和成本压力使 NTM 收入低于正常路径 | 2026Q1 收入和 EPS 增长较强，现金流仍健康 | 无 backlog 披露，毛利率同比下降，AHS GAAP 利润率低于 IOS | 保留 | 下行情景 | 中 | 关税和成本只在利润率层处理，不再重复压低需求和收入基数 |
+| 基准 | FY2026 调整 EPS 指引、Q1 run-rate、IOS/AHS 分部收入和正常核心增长兑现 | A/B 级分部收入、利润、现金流证据明确；Fortive 当前 operating companies 清楚 | 子品牌收入、AI/DC 订单和 RPO 未披露，C 级假设占产品拆分较多 | 保留 | 最可能情景 | 中高 | AI/DC 订单缺失只限制增量，不否定已在收入表的 IOS/AHS 基数 |
+| 乐观 | IOS 的 Fluke、Fluke Networks、设施软件和安全业务受 AI/DC、工业维护和 recurring mix 推动高于当前预期 | AI 数据中心行业需求、现场认证、设施资产软件和安全 workflow 均有需求逻辑；Q1 IOS 核心增长支持 | 没有公司特定 AI/DC 客户金额、backlog、交付时间表或品牌收入披露 | 保留 | 可验证上行情景 | 中 | Ralliant 排除项不再重复打压 Fluke/Accruent 现有业务 |
+| 极度乐观 | NTM 收入、软件/工具 mix、AHS 和成本杠杆全部非线性突破 | AI 园区建设、DCIM/运营软件、现场测试和安全需求可能形成多点增量 | 任一核心环节缺证据：无 AI/DC 订单、无 backlog、无品牌收入、无明确产能/交付披露；Ralliant 高端测试已排除 | 下移 | 乐观上限/仅作跟踪 | 低 | AI 数据中心长期空间只作为远期期权，不在多个步骤重复上修 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入更可能落在 43.5-45.0 亿美元，主要来自 IOS 高质量仪器/软件/安全业务和 AHS 稳定增长正常兑现；相对 2025 年持续经营收入为中个位数到高个位数增长，经营价值传导来自利润率稳定、调整 EBITDA 维持高 20% 区间和接近 10 亿美元级自由现金流。
+- 利润/现金流结论：FTV 的经营质量好于一般工业硬件公司，因为 IOS 高毛利、软件和服务占比较高，现金转换强；但 2026Q1 毛利率同比下降 100bp，说明价格、销量和汇率改善仍被员工成本、关税和相关 countermeasures 部分抵消。基准情景不应假设经营利润率自动大幅扩张。
+- 主要传导瓶颈：第一，AI 数据中心需求池到 Fortive 可确认收入之间缺少客户项目、订单、RPO 和交付时间表；第二，Ralliant 分拆使高端高速测试、半导体测试和电网监测机会不能再归给 FTV；第三，设施软件受 hyperscaler 自建、系统集成商和实施周期约束；第四，AHS 稳定但 GAAP 利润率低于 IOS，会稀释公司整体利润扩张。
+- 乐观情景成立条件：IOS 订单持续快于收入、Fluke/Fluke Networks 工具在数据中心 commissioning 和 field certification 中出现可量化项目，Accruent/eMaint/ServiceChannel/Gordian 获得可验证 AI 数据中心设施资产或工单平台客户，AHS 不低于当前 run-rate，且毛利率至少回到 63.5% 以上。
+- 极度乐观情景成立条件：多个 AI 园区在 NTM 内集中验收并将电力测试、布线认证、设施资产软件和安全监测同步前置采购；Fortive 披露或能验证大型客户订单、RPO/backlog、收入确认时间表和高毛利 mix；同时 AHS 利润率改善、关税/成本压力下降、现金转换不被营运资本吞噬。当前证据不足，校准后只作为乐观上限和后续跟踪。
+- 悲观情景触发条件：AI 数据中心并网/建设延期、工业 MRO 工具更新放缓、AHS 医院采购或监管流程延迟、软件实施周期拉长、关税和员工成本继续压低毛利率，或 Fortive 后续季度收入低于 Q1 run-rate 且无订单补偿。
+- 后续跟踪数据：季度 IOS/AHS 核心收入增长、毛利率和 GAAP/调整 EBITDA margin；是否披露 backlog、RPO、book-to-bill 或 AI/DC 客户项目；Fluke/Fluke Networks 新产品和渠道订单；Accruent/eMaint/ServiceChannel/Gordian 的 ARR、续约和大型设施客户；AHS 程序量、灭菌设备更新和利润率；关税、库存、应收账款和 FCF conversion。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新正式经营数据为 2026Q1，季度截至 2026-04-03，Fortive 于 2026-04-30 发布 2026Q1 业绩和 10-Q；本报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Fortive 2026Q1 业绩公告：持续经营收入 10.69 亿美元，同比增长 7.7%，核心收入增长 5.3%；GAAP 净利润 1.36 亿美元；调整 EBITDA 3.14 亿美元；自由现金流 1.94 亿美元；FY2026 调整后摊薄 EPS 指引 2.90-3.00 美元。来源：https://investors.fortive.com/news-events/press-releases/detail/284/fortive-reports-first-quarter-2026-results
+  - Fortive 2026Q1 10-Q：2026Q1 sales 10.694 亿美元、gross profit 6.755 亿美元、gross margin 63.2%；IOS sales 7.432 亿美元、AHS sales 3.262 亿美元；IOS/AHS 分部利润、D&A 和 capex。来源：https://investors.fortive.com/sec-filings/all-sec-filings/content/0001659166-26-000013/ftv-20260403.htm
+  - Fortive 2025Q4/FY2025 业绩公告：FY2025 持续经营收入 41.591 亿美元；IOS 28.563 亿美元；AHS 13.028 亿美元；FY2026 初始 EPS 指引。来源：https://investors.fortive.com/news-events/press-releases/detail/280/fortive-reports-fourth-quarter-and-full-year-2025-results
+  - Fortive operating companies：Accruent、ASP、Censis、Fluke、Fluke Health Solutions、Gordian、Industrial Scientific、Intelex、Provation、ServiceChannel。来源：https://fortive.com/companies
+  - Ralliant 分拆完成与业务边界：Ralliant 2025-06-30 完成从 Fortive 分离，并包含 Test & Measurement、Sensors & Safety Systems 等业务；Tektronix、Qualitrol 等归属 Ralliant。来源：https://investors.ralliant.com/news-events/press-releases/detail/107/ralliant-completes-separation-from-fortive-and-launches-as-independent-publicly-traded-company 与 https://ralliant.com/our-work
+- 项目内公司资料：
+  - `公司调研/公司索引.md`：FTV 被归入 `机电_冷却_工程_水处理_边缘工业AI/`。
+  - `公司调研/机电_冷却_工程_水处理_边缘工业AI/FTV_Fortive_Corporation_公司调研_2026-06-11.md`：用于 Fortive 分部、产品、AI/DC 暴露、Ralliant 分拆边界、产品级收入模型和反证清单。
+- 项目内行业资料：
+  - `行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-06-10.md`：用于 AI 数据中心设施运营、DCIM/EPMS/BMS/SCADA、数字孪生、工单和能控软件需求边界。
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-06-11.md`：用于区分现场布线认证和高端 800G/1.6T/224G/PCIe 生产测试；后者当前主要不属于 FTV。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026：公司只正式维持调整后 EPS 指引，本报告不把未披露收入指引当作硬数字；收入情景以 FY2025、2026Q1 run-rate、分部核心增长和产品级估算形成。
+  - FY2027：未作为主口径。若 AI 数据中心设施软件、field test 和 safety workflow 出现可验证订单，可能进入 FY2027 以上的增长期权。
+  - 远期期权：AI Factory Operations OS、facility lifecycle digital twin、跨 DCIM/CMMS/EAM/EPMS 的运营闭环；当前因为缺少 Fortive 客户订单和收入确认路径，只列跟踪，不进入 NTM 基准。
+- 主要来源：
+  - Fortive 2026Q1 Results: https://investors.fortive.com/news-events/press-releases/detail/284/fortive-reports-first-quarter-2026-results
+  - Fortive 2026Q1 10-Q: https://investors.fortive.com/sec-filings/all-sec-filings/content/0001659166-26-000013/ftv-20260403.htm
+  - Fortive FY2025 Results: https://investors.fortive.com/news-events/press-releases/detail/280/fortive-reports-fourth-quarter-and-full-year-2025-results
+  - Fortive Operating Companies: https://fortive.com/companies
+  - Ralliant separation release: https://investors.ralliant.com/news-events/press-releases/detail/107/ralliant-completes-separation-from-fortive-and-launches-as-independent-publicly-traded-company
+  - Ralliant current brands/businesses: https://ralliant.com/our-work
+

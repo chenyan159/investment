@@ -1,0 +1,45 @@
+{
+  "n": 192,
+  "probability_na": 192,
+  "all_current_position_mentions_base": 192,
+  "composite_explicit_screen": 8,
+  "current_return_intervals": 192,
+  "current_return_width_median_pp": 38.5,
+  "current_return_width_mean_pp": 41.28697916666667,
+  "current_return_width_ge50_count": 58,
+  "current_return_width_ge100_count": 3,
+  "current_return_cross_zero_count": 122,
+  "matrix_cells": 3840,
+  "matrix_cells_with_numeric_interval": 3831,
+  "full_envelope_median_span_pp": 244.5,
+  "full_envelope_span_ge200": 139,
+  "global_main_market_states": {
+    "宽基风险扩张": 166,
+    "震荡均值回归": 13,
+    "窄幅主题主导上涨": 13
+  },
+  "us_explicit_denominator": 160,
+  "us_explicit_main_market_states": {
+    "宽基风险扩张": 153,
+    "震荡均值回归": 6,
+    "窄幅主题主导上涨": 1
+  },
+  "cash_profit_capital_in_weakest_link": 138,
+  "capture_delivery_in_weakest_link": 80,
+  "lexical_only_not_defects": {
+    "scenario/probability_na": 192,
+    "evaluation/nonmarket_current_expectation": 191,
+    "scenario/interval_envelope": 67,
+    "evaluation/prohibit_technical_sentiment": 6,
+    "evaluation/consensus_unavailable": 59,
+    "scenario/prohibit_technical_sentiment": 86,
+    "scenario/nonmarket_current_expectation": 4,
+    "scenario/consensus_unavailable": 11,
+    "evaluation/interval_envelope": 1
+  },
+  "vix_exact_value_lexical_company_counts": {
+    "15.67": 112,
+    "16.54": 31,
+    "16.5": 23
+  }
+}

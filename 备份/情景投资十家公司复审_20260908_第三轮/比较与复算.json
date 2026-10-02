@@ -1,0 +1,2673 @@
+{
+  "ratingChanges": 48,
+  "byTicker": {
+    "SOMMY": 8,
+    "PSIX": 3,
+    "ET": 8,
+    "SPACEX": 4,
+    "GOOGL": 6,
+    "MU": 9,
+    "CRWV": 3,
+    "SNDK": 3,
+    "AVGO": 0,
+    "CRDO": 4
+  },
+  "matrixDetailMatched": 120,
+  "returnArithmetic": {
+    "testedEndpoints": 120,
+    "failures": [],
+    "maxAbsoluteErrorPp": 0.06631892697467379
+  },
+  "priceAndBaseChanges": [
+    {
+      "ticker": "SOMMY",
+      "priceOld": 20,
+      "priceNew": 20,
+      "priceChangePct": 0.0,
+      "base3yOldPct": [
+        23.7,
+        82.0
+      ],
+      "base3yNewPct": [
+        -5.4,
+        46.2
+      ],
+      "newModelAtOldPricePct": [
+        -5.400000000000006,
+        46.19999999999999
+      ]
+    },
+    {
+      "ticker": "PSIX",
+      "priceOld": 40.49,
+      "priceNew": 43.15,
+      "priceChangePct": 6.569523339096062,
+      "base3yOldPct": [
+        -13.3,
+        10.3
+      ],
+      "base3yNewPct": [
+        9.4,
+        27.8
+      ],
+      "newModelAtOldPricePct": [
+        16.587058532971085,
+        36.19585082736475
+      ]
+    },
+    {
+      "ticker": "ET",
+      "priceOld": 21.5,
+      "priceNew": 21.51,
+      "priceChangePct": 0.0465116279069866,
+      "base3yOldPct": [
+        65.1,
+        93.9
+      ],
+      "base3yNewPct": [
+        56.9,
+        97.0
+      ],
+      "newModelAtOldPricePct": [
+        56.97297674418604,
+        97.09162790697675
+      ]
+    },
+    {
+      "ticker": "SPACEX",
+      "priceOld": 147.95,
+      "priceNew": 153.47,
+      "priceChangePct": 3.7309901993916927,
+      "base3yOldPct": [
+        -92.5,
+        -88.4
+      ],
+      "base3yNewPct": [
+        -88.4,
+        -79.7
+      ],
+      "newModelAtOldPricePct": [
+        -87.96720513687056,
+        -78.94260898952349
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "priceOld": 338.46,
+      "priceNew": 338.36,
+      "priceChangePct": -0.02954558884357139,
+      "base3yOldPct": [
+        -24.5,
+        -5.6
+      ],
+      "base3yNewPct": [
+        -12.8,
+        20.2
+      ],
+      "newModelAtOldPricePct": [
+        -12.825763753471605,
+        20.16448620221003
+      ]
+    },
+    {
+      "ticker": "MU",
+      "priceOld": 1016.59,
+      "priceNew": 1000.26,
+      "priceChangePct": -1.6063506428353636,
+      "base3yOldPct": [
+        -0.6,
+        35.9
+      ],
+      "base3yNewPct": [
+        33.3,
+        62.5
+      ],
+      "newModelAtOldPricePct": [
+        31.158734593100462,
+        59.88968020539252
+      ]
+    },
+    {
+      "ticker": "CRWV",
+      "priceOld": 102.86,
+      "priceNew": 99.83,
+      "priceChangePct": -2.945751506902583,
+      "base3yOldPct": [
+        -90.1,
+        -63.7
+      ],
+      "base3yNewPct": [
+        -99.9,
+        -68.5
+      ],
+      "newModelAtOldPricePct": [
+        -99.90294575150692,
+        -69.42791172467432
+      ]
+    },
+    {
+      "ticker": "SNDK",
+      "priceOld": 1740,
+      "priceNew": 1737.99,
+      "priceChangePct": -0.11551724137931485,
+      "base3yOldPct": [
+        30.6,
+        63.2
+      ],
+      "base3yNewPct": [
+        -7.2,
+        16.4
+      ],
+      "newModelAtOldPricePct": [
+        -7.307200000000009,
+        16.265537931034487
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "priceOld": 369.35,
+      "priceNew": 368.56,
+      "priceChangePct": -0.21388926492487137,
+      "base3yOldPct": [
+        -10.4,
+        12.6
+      ],
+      "base3yNewPct": [
+        -12.0,
+        6.5
+      ],
+      "newModelAtOldPricePct": [
+        -12.188222553133883,
+        6.272207932855011
+      ]
+    },
+    {
+      "ticker": "CRDO",
+      "priceOld": 170.57,
+      "priceNew": 167.75,
+      "priceChangePct": -1.6532801782259465,
+      "base3yOldPct": [
+        3.6,
+        34.6
+      ],
+      "base3yNewPct": [
+        -15.3,
+        1.6
+      ],
+      "newModelAtOldPricePct": [
+        -16.700328310957374,
+        -0.07973266107755705
+      ]
+    }
+  ],
+  "waitingBenchmarkTests": [
+    {
+      "ticker": "CRWV",
+      "initial": 99.83,
+      "annualHurdle": 0.2,
+      "originalYears": 3,
+      "waitYears": 0.5,
+      "eventCash": 101.80702360839355,
+      "exitValue": 200,
+      "assumedBuy": 125,
+      "reportedMaximumBuy": 126.8,
+      "maximumBuyAtOriginalWealthTarget": 118.03285911094413,
+      "maximumBuyAtRemainingExposureHurdle": 126.7876290521218,
+      "finalWealthIfBuy": 162.89123777342968,
+      "originalRequiredWealth": 172.50623999999996,
+      "annualReturnFromOriginalStart": 0.17727760895442346
+    },
+    {
+      "ticker": "PSIX",
+      "initial": 43.15,
+      "annualHurdle": 0.2,
+      "originalYears": 1,
+      "waitYears": 0.25,
+      "eventCash": 43.575174492588005,
+      "exitValue": 77.07,
+      "assumedBuy": 65,
+      "reportedMaximumBuy": 67.22,
+      "maximumBuyAtOriginalWealthTarget": 64.85783503560752,
+      "maximumBuyAtRemainingExposureHurdle": 67.22014182745798,
+      "finalWealthIfBuy": 51.66674920221165,
+      "originalRequiredWealth": 51.779999999999994,
+      "annualReturnFromOriginalStart": 0.19737541604198494
+    },
+    {
+      "ticker": "GOOGL",
+      "initial": 338.36,
+      "annualHurdle": 0.12,
+      "originalYears": 3,
+      "waitYears": 0.25,
+      "eventCash": 341.61183102578343,
+      "exitValue": 565.5,
+      "assumedBuy": 414,
+      "reportedMaximumBuy": 414,
+      "maximumBuyAtOriginalWealthTarget": 406.3800955844766,
+      "maximumBuyAtRemainingExposureHurdle": 414.07884848215446,
+      "finalWealthIfBuy": 466.6219575968129,
+      "originalRequiredWealth": 475.37143808000013,
+      "annualReturnFromOriginalStart": 0.11308599477042303
+    },
+    {
+      "ticker": "CRDO",
+      "initial": 167.75,
+      "annualHurdle": 0.15,
+      "originalYears": 0.5,
+      "waitYears": 0.25,
+      "eventCash": 169.40290894858953,
+      "exitValue": 223,
+      "assumedBuy": 215,
+      "reportedMaximumBuy": 215,
+      "maximumBuyAtOriginalWealthTarget": 209.9975740611246,
+      "maximumBuyAtRemainingExposureHurdle": 215.3428234443455,
+      "finalWealthIfBuy": 175.70627300249055,
+      "originalRequiredWealth": 179.89183381965952,
+      "annualReturnFromOriginalStart": 0.0971082374968335
+    }
+  ],
+  "cells": [
+    {
+      "ticker": "SOMMY",
+      "scenario": "悲观",
+      "months": 6,
+      "old": "强烈不建议投资｜-98.6%至-71.1%｜低",
+      "new": "强烈不建议投资｜-99.4%—-75.5%｜低",
+      "ratingChanged": false,
+      "oldLine": 372,
+      "newLine": 342
+    },
+    {
+      "ticker": "SOMMY",
+      "scenario": "悲观",
+      "months": 12,
+      "old": "强烈不建议投资｜-98.7%至-72.4%｜低",
+      "new": "强烈不建议投资｜-98.7%—-73.3%｜低",
+      "ratingChanged": false,
+      "oldLine": 372,
+      "newLine": 342
+    },
+    {
+      "ticker": "SOMMY",
+      "scenario": "悲观",
+      "months": 36,
+      "old": "强烈不建议投资｜-96.1%至-70.6%｜低",
+      "new": "强烈不建议投资｜-91.8%—-63.4%｜低",
+      "ratingChanged": false,
+      "oldLine": 372,
+      "newLine": 342
+    },
+    {
+      "ticker": "SOMMY",
+      "scenario": "基准",
+      "months": 6,
+      "old": "中性 / 等待｜-12.4%至43.3%｜低",
+      "new": "中性 / 等待｜-31.6%—+17.8%｜低",
+      "ratingChanged": false,
+      "oldLine": 373,
+      "newLine": 343
+    },
+    {
+      "ticker": "SOMMY",
+      "scenario": "基准",
+      "months": 12,
+      "old": "谨慎建议投资｜-5.5%至50.8%｜低",
+      "new": "中性 / 等待｜-26.6%—+23.2%｜低",
+      "ratingChanged": true,
+      "oldLine": 373,
+      "newLine": 343
+    },
+    {
+      "ticker": "SOMMY",
+      "scenario": "基准",
+      "months": 36,
+      "old": "谨慎建议投资｜23.7%至82.0%｜低",
+      "new": "中性 / 等待｜-5.4%—+46.2%｜低",
+      "ratingChanged": true,
+      "oldLine": 373,
+      "newLine": 343
+    },
+    {
+      "ticker": "SOMMY",
+      "scenario": "乐观",
+      "months": 6,
+      "old": "建议投资｜35.8%至111.5%｜低",
+      "new": "谨慎建议投资｜+21.4%—+93.2%｜低",
+      "ratingChanged": true,
+      "oldLine": 374,
+      "newLine": 344
+    },
+    {
+      "ticker": "SOMMY",
+      "scenario": "乐观",
+      "months": 12,
+      "old": "建议投资｜45.4%至122.0%｜低",
+      "new": "谨慎建议投资｜+28.7%—+101.3%｜低",
+      "ratingChanged": true,
+      "oldLine": 374,
+      "newLine": 344
+    },
+    {
+      "ticker": "SOMMY",
+      "scenario": "乐观",
+      "months": 36,
+      "old": "强烈建议投资｜86.6%至166.2%｜低",
+      "new": "建议投资｜+60.1%—+135.6%｜低",
+      "ratingChanged": true,
+      "oldLine": 374,
+      "newLine": 344
+    },
+    {
+      "ticker": "SOMMY",
+      "scenario": "突破",
+      "months": 6,
+      "old": "强烈建议投资｜75.9%至172.8%｜低",
+      "new": "建议投资｜+64.4%—+158.3%｜低",
+      "ratingChanged": true,
+      "oldLine": 375,
+      "newLine": 345
+    },
+    {
+      "ticker": "SOMMY",
+      "scenario": "突破",
+      "months": 12,
+      "old": "强烈建议投资｜87.8%至185.9%｜低",
+      "new": "建议投资｜+73.6%—+168.6%｜低",
+      "ratingChanged": true,
+      "oldLine": 375,
+      "newLine": 345
+    },
+    {
+      "ticker": "SOMMY",
+      "scenario": "突破",
+      "months": 36,
+      "old": "强烈建议投资｜139.6%至242.1%｜低",
+      "new": "建议投资｜+113.5%—+212.9%｜低",
+      "ratingChanged": true,
+      "oldLine": 375,
+      "newLine": 345
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "悲观",
+      "months": 6,
+      "old": "强烈不建议投资｜-89.2%—-86.6%｜低",
+      "new": "强烈不建议投资｜-86.9% 至 -85.4%｜中",
+      "ratingChanged": false,
+      "oldLine": 487,
+      "newLine": 357
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "悲观",
+      "months": 12,
+      "old": "强烈不建议投资｜-88.4%—-85.9%｜低",
+      "new": "强烈不建议投资｜-86.0% 至 -84.4%｜中",
+      "ratingChanged": false,
+      "oldLine": 487,
+      "newLine": 357
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "悲观",
+      "months": 36,
+      "old": "强烈不建议投资｜-85.6%—-82.9%｜低",
+      "new": "强烈不建议投资｜-82.4% 至 -80.9%｜低",
+      "ratingChanged": false,
+      "oldLine": 487,
+      "newLine": 357
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "基准",
+      "months": 6,
+      "old": "不建议投资｜-35.1%—-12.9%｜中",
+      "new": "不建议投资｜-17.8% 至 -0.3%｜中",
+      "ratingChanged": false,
+      "oldLine": 488,
+      "newLine": 358
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "基准",
+      "months": 12,
+      "old": "不建议投资｜-31.0%—-8.5%｜中",
+      "new": "不建议投资｜-12.6% 至 +5.1%｜中",
+      "ratingChanged": false,
+      "oldLine": 488,
+      "newLine": 358
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "基准",
+      "months": 36,
+      "old": "不建议投资｜-13.3%—10.3%｜中",
+      "new": "不建议投资｜+9.4% 至 +27.8%｜低",
+      "ratingChanged": false,
+      "oldLine": 488,
+      "newLine": 358
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "乐观",
+      "months": 6,
+      "old": "谨慎建议投资｜6.9%—51.2%｜低",
+      "new": "建议投资｜+51.4% 至 +91.7%｜低",
+      "ratingChanged": true,
+      "oldLine": 489,
+      "newLine": 359
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "乐观",
+      "months": 12,
+      "old": "谨慎建议投资｜13.6%—58.6%｜低",
+      "new": "建议投资｜+60.4% 至 +101.3%｜低",
+      "ratingChanged": true,
+      "oldLine": 489,
+      "newLine": 359
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "乐观",
+      "months": 36,
+      "old": "谨慎建议投资｜43.1%—90.9%｜低",
+      "new": "建议投资｜+99.6% 至 +142.8%｜低",
+      "ratingChanged": true,
+      "oldLine": 489,
+      "newLine": 359
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "突破",
+      "months": 6,
+      "old": "建议投资｜35.8%—99.6%｜低",
+      "new": "建议投资｜+92.6% 至 +144.8%｜低",
+      "ratingChanged": false,
+      "oldLine": 490,
+      "newLine": 360
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "突破",
+      "months": 12,
+      "old": "建议投资｜44.5%—109.6%｜低",
+      "new": "建议投资｜+104.6% 至 +157.8%｜低",
+      "ratingChanged": false,
+      "oldLine": 490,
+      "newLine": 360
+    },
+    {
+      "ticker": "PSIX",
+      "scenario": "突破",
+      "months": 36,
+      "old": "建议投资｜84.1%—154.0%｜低",
+      "new": "建议投资｜+158.5% 至 +214.9%｜低",
+      "ratingChanged": false,
+      "oldLine": 490,
+      "newLine": 360
+    },
+    {
+      "ticker": "ET",
+      "scenario": "悲观",
+      "months": 6,
+      "old": "强烈不建议投资｜-40.8%—-29.2%｜中",
+      "new": "强烈不建议投资｜-60.1%至-37.5%｜中",
+      "ratingChanged": false,
+      "oldLine": 468,
+      "newLine": 368
+    },
+    {
+      "ticker": "ET",
+      "scenario": "悲观",
+      "months": 12,
+      "old": "强烈不建议投资｜-36.5%—-24.8%｜中",
+      "new": "强烈不建议投资｜-56.9%至-33.9%｜中",
+      "ratingChanged": false,
+      "oldLine": 468,
+      "newLine": 368
+    },
+    {
+      "ticker": "ET",
+      "scenario": "悲观",
+      "months": 36,
+      "old": "不建议投资｜-18.1%—-6.2%｜中",
+      "new": "不建议投资｜-43.6%至-19.1%｜中",
+      "ratingChanged": false,
+      "oldLine": 468,
+      "newLine": 368
+    },
+    {
+      "ticker": "ET",
+      "scenario": "基准",
+      "months": 6,
+      "old": "建议投资｜+28.4%—+55.1%｜中",
+      "new": "谨慎建议投资｜20.9%至57.6%｜中",
+      "ratingChanged": true,
+      "oldLine": 469,
+      "newLine": 369
+    },
+    {
+      "ticker": "ET",
+      "scenario": "基准",
+      "months": 12,
+      "old": "建议投资｜+35.4%—+62.5%｜中",
+      "new": "谨慎建议投资｜27.7%至65.1%｜中",
+      "ratingChanged": true,
+      "oldLine": 469,
+      "newLine": 369
+    },
+    {
+      "ticker": "ET",
+      "scenario": "基准",
+      "months": 36,
+      "old": "建议投资｜+65.1%—+93.9%｜中",
+      "new": "谨慎建议投资｜56.9%至97.0%｜中",
+      "ratingChanged": true,
+      "oldLine": 469,
+      "newLine": 369
+    },
+    {
+      "ticker": "ET",
+      "scenario": "乐观",
+      "months": 6,
+      "old": "建议投资｜+79.8%—+134.2%｜中",
+      "new": "建议投资｜51.5%至94.8%｜中",
+      "ratingChanged": false,
+      "oldLine": 470,
+      "newLine": 370
+    },
+    {
+      "ticker": "ET",
+      "scenario": "乐观",
+      "months": 12,
+      "old": "强烈建议投资｜+88.9%—+144.3%｜中",
+      "new": "建议投资｜59.7%至103.9%｜中",
+      "ratingChanged": true,
+      "oldLine": 470,
+      "newLine": 370
+    },
+    {
+      "ticker": "ET",
+      "scenario": "乐观",
+      "months": 36,
+      "old": "强烈建议投资｜+127.9%—+187.1%｜中",
+      "new": "建议投资｜95.2%至142.6%｜中",
+      "ratingChanged": true,
+      "oldLine": 470,
+      "newLine": 370
+    },
+    {
+      "ticker": "ET",
+      "scenario": "突破",
+      "months": 6,
+      "old": "强烈建议投资｜+131.1%—+200.0%｜低",
+      "new": "建议投资｜71.5%至131.6%｜低",
+      "ratingChanged": true,
+      "oldLine": 471,
+      "newLine": 371
+    },
+    {
+      "ticker": "ET",
+      "scenario": "突破",
+      "months": 12,
+      "old": "强烈建议投资｜+142.6%—+212.7%｜低",
+      "new": "建议投资｜81.0%至142.6%｜低",
+      "ratingChanged": true,
+      "oldLine": 471,
+      "newLine": 371
+    },
+    {
+      "ticker": "ET",
+      "scenario": "突破",
+      "months": 36,
+      "old": "强烈建议投资｜+191.6%—+266.9%｜低",
+      "new": "建议投资｜122.1%至189.9%｜低",
+      "ratingChanged": true,
+      "oldLine": 471,
+      "newLine": 371
+    },
+    {
+      "ticker": "SPACEX",
+      "scenario": "悲观",
+      "months": 6,
+      "old": "强烈不建议投资｜-99.7% ～ -99.4%｜低",
+      "new": "强烈不建议投资｜-98.3% 至 -97.4%｜低",
+      "ratingChanged": false,
+      "oldLine": 413,
+      "newLine": 470
+    },
+    {
+      "ticker": "SPACEX",
+      "scenario": "悲观",
+      "months": 12,
+      "old": "强烈不建议投资｜-99.6% ～ -99.4%｜低",
+      "new": "强烈不建议投资｜-98.3% 至 -97.3%｜低",
+      "ratingChanged": false,
+      "oldLine": 413,
+      "newLine": 470
+    },
+    {
+      "ticker": "SPACEX",
+      "scenario": "悲观",
+      "months": 36,
+      "old": "强烈不建议投资｜-99.4% ～ -99.1%｜低",
+      "new": "强烈不建议投资｜-97.8% 至 -96.7%｜低",
+      "ratingChanged": false,
+      "oldLine": 413,
+      "newLine": 470
+    },
+    {
+      "ticker": "SPACEX",
+      "scenario": "基准",
+      "months": 6,
+      "old": "强烈不建议投资｜-94.5% ～ -91.0%｜低",
+      "new": "强烈不建议投资｜-91.4% 至 -83.7%｜低",
+      "ratingChanged": false,
+      "oldLine": 414,
+      "newLine": 471
+    },
+    {
+      "ticker": "SPACEX",
+      "scenario": "基准",
+      "months": 12,
+      "old": "强烈不建议投资｜-94.1% ～ -90.5%｜低",
+      "new": "强烈不建议投资｜-90.9% 至 -83.0%｜低",
+      "ratingChanged": false,
+      "oldLine": 414,
+      "newLine": 471
+    },
+    {
+      "ticker": "SPACEX",
+      "scenario": "基准",
+      "months": 36,
+      "old": "强烈不建议投资｜-92.5% ～ -88.4%｜低",
+      "new": "强烈不建议投资｜-88.4% 至 -79.7%｜低",
+      "ratingChanged": false,
+      "oldLine": 414,
+      "newLine": 471
+    },
+    {
+      "ticker": "SPACEX",
+      "scenario": "乐观",
+      "months": 6,
+      "old": "不建议投资｜-75.1% ～ -56.0%｜低",
+      "new": "强烈不建议投资｜-81.7% 至 -61.2%｜低",
+      "ratingChanged": true,
+      "oldLine": 415,
+      "newLine": 472
+    },
+    {
+      "ticker": "SPACEX",
+      "scenario": "乐观",
+      "months": 12,
+      "old": "不建议投资｜-73.6% ～ -53.9%｜低",
+      "new": "强烈不建议投资｜-80.7% 至 -59.5%｜低",
+      "ratingChanged": true,
+      "oldLine": 415,
+      "newLine": 472
+    },
+    {
+      "ticker": "SPACEX",
+      "scenario": "乐观",
+      "months": 36,
+      "old": "不建议投资｜-66.9% ～ -45.1%｜低",
+      "new": "强烈不建议投资｜-75.1% 至 -51.4%｜低",
+      "ratingChanged": true,
+      "oldLine": 415,
+      "newLine": 472
+    },
+    {
+      "ticker": "SPACEX",
+      "scenario": "突破",
+      "months": 6,
+      "old": "不建议投资｜-51.9% ～ +9.9%｜低",
+      "new": "不建议投资｜-63.8% 至 -12.5%｜低",
+      "ratingChanged": false,
+      "oldLine": 416,
+      "newLine": 473
+    },
+    {
+      "ticker": "SPACEX",
+      "scenario": "突破",
+      "months": 12,
+      "old": "不建议投资｜-49.1% ～ +15.0%｜低",
+      "new": "不建议投资｜-61.7% 至 -8.6%｜低",
+      "ratingChanged": false,
+      "oldLine": 416,
+      "newLine": 473
+    },
+    {
+      "ticker": "SPACEX",
+      "scenario": "突破",
+      "months": 36,
+      "old": "中性 / 等待｜-34.9% ～ +35.5%｜低",
+      "new": "不建议投资｜-51.0% 至 8.9%｜低",
+      "ratingChanged": true,
+      "oldLine": 416,
+      "newLine": 473
+    },
+    {
+      "ticker": "GOOGL",
+      "scenario": "悲观",
+      "months": 6,
+      "old": "强烈不建议投资｜-84.9%至-81.0%｜低",
+      "new": "强烈不建议投资｜-78.3%—-71.0%｜中",
+      "ratingChanged": false,
+      "oldLine": 507,
+      "newLine": 418
+    },
+    {
+      "ticker": "GOOGL",
+      "scenario": "悲观",
+      "months": 12,
+      "old": "强烈不建议投资｜-84.1%至-80.1%｜低",
+      "new": "强烈不建议投资｜-77.2%—-69.7%｜中",
+      "ratingChanged": false,
+      "oldLine": 507,
+      "newLine": 418
+    },
+    {
+      "ticker": "GOOGL",
+      "scenario": "悲观",
+      "months": 36,
+      "old": "强烈不建议投资｜-79.7%至-75.4%｜低",
+      "new": "强烈不建议投资｜-71.7%—-63.8%｜中",
+      "ratingChanged": false,
+      "oldLine": 507,
+      "newLine": 418
+    },
+    {
+      "ticker": "GOOGL",
+      "scenario": "基准",
+      "months": 6,
+      "old": "不建议投资｜-39.5%至-22.4%｜中",
+      "new": "不建议投资｜-30.9%—-1.1%｜低",
+      "ratingChanged": false,
+      "oldLine": 508,
+      "newLine": 419
+    },
+    {
+      "ticker": "GOOGL",
+      "scenario": "基准",
+      "months": 12,
+      "old": "不建议投资｜-36.8%至-19.3%｜中",
+      "new": "不建议投资｜-27.6%—2.9%｜低",
+      "ratingChanged": false,
+      "oldLine": 508,
+      "newLine": 419
+    },
+    {
+      "ticker": "GOOGL",
+      "scenario": "基准",
+      "months": 36,
+      "old": "不建议投资｜-24.5%至-5.6%｜中",
+      "new": "不建议投资｜-12.8%—20.2%｜低",
+      "ratingChanged": false,
+      "oldLine": 508,
+      "newLine": 419
+    },
+    {
+      "ticker": "GOOGL",
+      "scenario": "乐观",
+      "months": 6,
+      "old": "中性／等待｜-4.1%至23.6%｜低",
+      "new": "谨慎建议投资｜8.3%—61.6%｜低",
+      "ratingChanged": true,
+      "oldLine": 509,
+      "newLine": 420
+    },
+    {
+      "ticker": "GOOGL",
+      "scenario": "乐观",
+      "months": 12,
+      "old": "中性／等待｜0.1%至28.5%｜低",
+      "new": "建议投资｜13.4%—68.1%｜低",
+      "ratingChanged": true,
+      "oldLine": 509,
+      "newLine": 420
+    },
+    {
+      "ticker": "GOOGL",
+      "scenario": "乐观",
+      "months": 36,
+      "old": "中性／等待｜19.0%至49.9%｜低",
+      "new": "谨慎建议投资｜36.1%—95.9%｜低",
+      "ratingChanged": true,
+      "oldLine": 509,
+      "newLine": 420
+    },
+    {
+      "ticker": "GOOGL",
+      "scenario": "突破",
+      "months": 6,
+      "old": "建议投资｜23.4%至64.1%｜低",
+      "new": "强烈建议投资｜66.6%—154.1%｜低",
+      "ratingChanged": true,
+      "oldLine": 510,
+      "newLine": 421
+    },
+    {
+      "ticker": "GOOGL",
+      "scenario": "突破",
+      "months": 12,
+      "old": "建议投资｜29.2%至71.0%｜低",
+      "new": "强烈建议投资｜74.5%—164.3%｜低",
+      "ratingChanged": true,
+      "oldLine": 510,
+      "newLine": 421
+    },
+    {
+      "ticker": "GOOGL",
+      "scenario": "突破",
+      "months": 36,
+      "old": "建议投资｜54.7%至101.1%｜低",
+      "new": "强烈建议投资｜108.9%—207.5%｜低",
+      "ratingChanged": true,
+      "oldLine": 510,
+      "newLine": 421
+    },
+    {
+      "ticker": "MU",
+      "scenario": "悲观",
+      "months": 6,
+      "old": "强烈不建议投资｜-90.2% 至 -85.7%｜低",
+      "new": "强烈不建议投资｜-57.3%至-48.5%｜中",
+      "ratingChanged": false,
+      "oldLine": 363,
+      "newLine": 517
+    },
+    {
+      "ticker": "MU",
+      "scenario": "悲观",
+      "months": 12,
+      "old": "强烈不建议投资｜-89.9% 至 -85.2%｜低",
+      "new": "强烈不建议投资｜-55.1%至-46.3%｜中",
+      "ratingChanged": false,
+      "oldLine": 363,
+      "newLine": 517
+    },
+    {
+      "ticker": "MU",
+      "scenario": "悲观",
+      "months": 36,
+      "old": "强烈不建议投资｜-88.7% 至 -83.0%｜低",
+      "new": "强烈不建议投资｜-45.6%至-36.4%｜中",
+      "ratingChanged": false,
+      "oldLine": 363,
+      "newLine": 517
+    },
+    {
+      "ticker": "MU",
+      "scenario": "基准",
+      "months": 6,
+      "old": "不建议投资｜-22.9% 至 +8.9%｜低",
+      "new": "谨慎建议投资｜4.2%至31.6%｜低",
+      "ratingChanged": true,
+      "oldLine": 364,
+      "newLine": 518
+    },
+    {
+      "ticker": "MU",
+      "scenario": "基准",
+      "months": 12,
+      "old": "不建议投资｜-18.7% 至 +13.9%｜低",
+      "new": "谨慎建议投资｜9.6%至37.4%｜低",
+      "ratingChanged": true,
+      "oldLine": 364,
+      "newLine": 518
+    },
+    {
+      "ticker": "MU",
+      "scenario": "基准",
+      "months": 36,
+      "old": "不建议投资｜-0.6% 至 +35.9%｜低",
+      "new": "谨慎建议投资｜33.3%至62.5%｜低",
+      "ratingChanged": true,
+      "oldLine": 364,
+      "newLine": 518
+    },
+    {
+      "ticker": "MU",
+      "scenario": "乐观",
+      "months": 6,
+      "old": "建议投资｜+54.3% 至 +124.2%｜低",
+      "new": "强烈建议投资｜95.5%至154.8%｜低",
+      "ratingChanged": true,
+      "oldLine": 365,
+      "newLine": 519
+    },
+    {
+      "ticker": "MU",
+      "scenario": "乐观",
+      "months": 12,
+      "old": "建议投资｜+62.6% 至 +134.3%｜低",
+      "new": "强烈建议投资｜106.0%至166.4%｜低",
+      "ratingChanged": true,
+      "oldLine": 365,
+      "newLine": 519
+    },
+    {
+      "ticker": "MU",
+      "scenario": "乐观",
+      "months": 36,
+      "old": "建议投资｜+99.1% 至 +178.7%｜低",
+      "new": "强烈建议投资｜152.4%至216.5%｜低",
+      "ratingChanged": true,
+      "oldLine": 365,
+      "newLine": 519
+    },
+    {
+      "ticker": "MU",
+      "scenario": "突破",
+      "months": 6,
+      "old": "建议投资｜+195.8% 至 +339.7%｜低",
+      "new": "强烈建议投资｜169.9%至257.0%｜低",
+      "ratingChanged": true,
+      "oldLine": 366,
+      "newLine": 520
+    },
+    {
+      "ticker": "MU",
+      "scenario": "突破",
+      "months": 12,
+      "old": "建议投资｜+212.6% 至 +360.9%｜低",
+      "new": "强烈建议投资｜184.6%至273.2%｜低",
+      "ratingChanged": true,
+      "oldLine": 366,
+      "newLine": 520
+    },
+    {
+      "ticker": "MU",
+      "scenario": "突破",
+      "months": 36,
+      "old": "建议投资｜+288.5% 至 +454.9%｜低",
+      "new": "强烈建议投资｜249.9%至344.5%｜低",
+      "ratingChanged": true,
+      "oldLine": 366,
+      "newLine": 520
+    },
+    {
+      "ticker": "CRWV",
+      "scenario": "悲观",
+      "months": 6,
+      "old": "强烈不建议投资｜-100.0%至-100.0%｜低",
+      "new": "强烈不建议投资｜-100.0%至-100.0%｜中",
+      "ratingChanged": false,
+      "oldLine": 452,
+      "newLine": 353
+    },
+    {
+      "ticker": "CRWV",
+      "scenario": "悲观",
+      "months": 12,
+      "old": "强烈不建议投资｜-100.0%至-100.0%｜低",
+      "new": "强烈不建议投资｜-100.0%至-100.0%｜中",
+      "ratingChanged": false,
+      "oldLine": 452,
+      "newLine": 353
+    },
+    {
+      "ticker": "CRWV",
+      "scenario": "悲观",
+      "months": 36,
+      "old": "强烈不建议投资｜-100.0%至-100.0%｜低",
+      "new": "强烈不建议投资｜-100.0%至-100.0%｜中",
+      "ratingChanged": false,
+      "oldLine": 452,
+      "newLine": 353
+    },
+    {
+      "ticker": "CRWV",
+      "scenario": "基准",
+      "months": 6,
+      "old": "强烈不建议投资｜-100.0%至-81.1%｜低",
+      "new": "强烈不建议投资｜-100.0%至-87.3%｜低",
+      "ratingChanged": false,
+      "oldLine": 453,
+      "newLine": 354
+    },
+    {
+      "ticker": "CRWV",
+      "scenario": "基准",
+      "months": 12,
+      "old": "强烈不建议投资｜-100.0%至-77.6%｜低",
+      "new": "强烈不建议投资｜-100.0%至-84.1%｜低",
+      "ratingChanged": false,
+      "oldLine": 453,
+      "newLine": 354
+    },
+    {
+      "ticker": "CRWV",
+      "scenario": "基准",
+      "months": 36,
+      "old": "强烈不建议投资｜-90.1%至-63.7%｜低",
+      "new": "强烈不建议投资｜-99.9%至-68.5%｜低",
+      "ratingChanged": false,
+      "oldLine": 453,
+      "newLine": 354
+    },
+    {
+      "ticker": "CRWV",
+      "scenario": "乐观",
+      "months": 6,
+      "old": "中性 / 等待｜-28.6%至+42.1%｜低",
+      "new": "谨慎建议投资｜-1.0%至+91.2%｜低",
+      "ratingChanged": true,
+      "oldLine": 454,
+      "newLine": 355
+    },
+    {
+      "ticker": "CRWV",
+      "scenario": "乐观",
+      "months": 12,
+      "old": "中性 / 等待｜-21.7%至+49.8%｜低",
+      "new": "谨慎建议投资｜+8.5%至+102.5%｜低",
+      "ratingChanged": true,
+      "oldLine": 454,
+      "newLine": 355
+    },
+    {
+      "ticker": "CRWV",
+      "scenario": "乐观",
+      "months": 36,
+      "old": "中性 / 等待｜+10.8%至+87.0%｜低",
+      "new": "谨慎建议投资｜+54.8%至+151.4%｜低",
+      "ratingChanged": true,
+      "oldLine": 454,
+      "newLine": 355
+    },
+    {
+      "ticker": "CRWV",
+      "scenario": "突破",
+      "months": 6,
+      "old": "建议投资｜+108.8%至+243.4%｜低",
+      "new": "建议投资｜+134.4%至+282.7%｜低",
+      "ratingChanged": false,
+      "oldLine": 455,
+      "newLine": 356
+    },
+    {
+      "ticker": "CRWV",
+      "scenario": "突破",
+      "months": 12,
+      "old": "建议投资｜+121.5%至+257.3%｜低",
+      "new": "建议投资｜+150.3%至+301.6%｜低",
+      "ratingChanged": false,
+      "oldLine": 455,
+      "newLine": 356
+    },
+    {
+      "ticker": "CRWV",
+      "scenario": "突破",
+      "months": 36,
+      "old": "建议投资｜+182.2%至+327.5%｜低",
+      "new": "建议投资｜+225.9%至+386.9%｜低",
+      "ratingChanged": false,
+      "oldLine": 455,
+      "newLine": 356
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "悲观",
+      "months": 6,
+      "old": "强烈不建议投资｜-64.2%～-59.0%｜中",
+      "new": "强烈不建议投资｜-67.4%～-59.5%｜中",
+      "ratingChanged": false,
+      "oldLine": 558,
+      "newLine": 353
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "悲观",
+      "months": 12,
+      "old": "强烈不建议投资｜-62.4%～-57.1%｜中",
+      "new": "强烈不建议投资｜-66.1%～-58.0%｜中",
+      "ratingChanged": false,
+      "oldLine": 558,
+      "newLine": 353
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "悲观",
+      "months": 36,
+      "old": "强烈不建议投资｜-55.0%～-49.5%｜中低",
+      "new": "强烈不建议投资｜-60.5%～-51.6%｜中",
+      "ratingChanged": false,
+      "oldLine": 558,
+      "newLine": 353
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "基准",
+      "months": 6,
+      "old": "中性 / 等待｜+0.1%～+29.2%｜中低",
+      "new": "不建议投资｜-26.5%～-5.3%｜中",
+      "ratingChanged": true,
+      "oldLine": 559,
+      "newLine": 354
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "基准",
+      "months": 12,
+      "old": "中性 / 等待｜+5.9%～+35.9%｜中低",
+      "new": "不建议投资｜-22.8%～-1.0%｜中",
+      "ratingChanged": true,
+      "oldLine": 559,
+      "newLine": 354
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "基准",
+      "months": 36,
+      "old": "中性 / 等待｜+30.6%～+63.2%｜中低",
+      "new": "不建议投资｜-7.2%～+16.4%｜中",
+      "ratingChanged": true,
+      "oldLine": 559,
+      "newLine": 354
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "乐观",
+      "months": 6,
+      "old": "强烈建议投资｜+127.3%～+197.8%｜中低",
+      "new": "强烈建议投资｜+62.8%～+121.3%｜中",
+      "ratingChanged": false,
+      "oldLine": 560,
+      "newLine": 355
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "乐观",
+      "months": 12,
+      "old": "强烈建议投资｜+141.9%～+214.7%｜中低",
+      "new": "强烈建议投资｜+72.8%～+133.6%｜中",
+      "ratingChanged": false,
+      "oldLine": 560,
+      "newLine": 355
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "乐观",
+      "months": 36,
+      "old": "强烈建议投资｜+199.7%～+279.5%｜中低",
+      "new": "强烈建议投资｜+110.9%～+177.8%｜中",
+      "ratingChanged": false,
+      "oldLine": 560,
+      "newLine": 355
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "突破",
+      "months": 6,
+      "old": "强烈建议投资｜+239.4%～+349.5%｜低",
+      "new": "强烈建议投资｜+152.5%～+250.6%｜低",
+      "ratingChanged": false,
+      "oldLine": 561,
+      "newLine": 356
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "突破",
+      "months": 12,
+      "old": "强烈建议投资｜+261.7%～+375.5%｜低",
+      "new": "强烈建议投资｜+169.0%～+271.0%｜低",
+      "ratingChanged": false,
+      "oldLine": 561,
+      "newLine": 356
+    },
+    {
+      "ticker": "SNDK",
+      "scenario": "突破",
+      "months": 36,
+      "old": "强烈建议投资｜+350.8%～+475.4%｜低",
+      "new": "强烈建议投资｜+230.4%～+343.1%｜低",
+      "ratingChanged": false,
+      "oldLine": 561,
+      "newLine": 356
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "悲观",
+      "months": 6,
+      "old": "强烈不建议投资｜-77.4%～-72.8%｜中",
+      "new": "强烈不建议投资｜-89.1%—-87.3%｜低",
+      "ratingChanged": false,
+      "oldLine": 462,
+      "newLine": 360
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "悲观",
+      "months": 12,
+      "old": "强烈不建议投资｜-76.1%～-71.5%｜中",
+      "new": "强烈不建议投资｜-88.5%—-86.7%｜低",
+      "ratingChanged": false,
+      "oldLine": 462,
+      "newLine": 360
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "悲观",
+      "months": 36,
+      "old": "强烈不建议投资｜-71.0%～-66.5%｜中",
+      "new": "强烈不建议投资｜-86.0%—-84.3%｜低",
+      "ratingChanged": false,
+      "oldLine": 462,
+      "newLine": 360
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "基准",
+      "months": 6,
+      "old": "不建议投资｜-30.4%～-9.0%｜中",
+      "new": "不建议投资｜-32.4%—-14.9%｜低",
+      "ratingChanged": false,
+      "oldLine": 463,
+      "newLine": 361
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "基准",
+      "months": 12,
+      "old": "不建议投资｜-26.6%～-4.9%｜中",
+      "new": "不建议投资｜-28.6%—-10.8%｜低",
+      "ratingChanged": false,
+      "oldLine": 463,
+      "newLine": 361
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "基准",
+      "months": 36,
+      "old": "不建议投资｜-10.4%～+12.6%｜低",
+      "new": "不建议投资｜-12.0%—+6.5%｜低",
+      "ratingChanged": false,
+      "oldLine": 463,
+      "newLine": 361
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "乐观",
+      "months": 6,
+      "old": "谨慎建议投资｜+2.3%～+35.1%｜低",
+      "new": "谨慎建议投资｜+4.4%—+33.9%｜低",
+      "ratingChanged": false,
+      "oldLine": 464,
+      "newLine": 362
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "乐观",
+      "months": 12,
+      "old": "谨慎建议投资｜+8.0%～+41.3%｜低",
+      "new": "谨慎建议投资｜+10.4%—+40.3%｜低",
+      "ratingChanged": false,
+      "oldLine": 464,
+      "newLine": 362
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "乐观",
+      "months": 36,
+      "old": "谨慎建议投资｜+32.0%～+67.5%｜低",
+      "new": "谨慎建议投资｜+36.4%—+68.1%｜低",
+      "ratingChanged": false,
+      "oldLine": 464,
+      "newLine": 362
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "突破",
+      "months": 6,
+      "old": "建议投资｜+39.5%～+86.1%｜低",
+      "new": "建议投资｜+45.0%—+88.2%｜低",
+      "ratingChanged": false,
+      "oldLine": 465,
+      "newLine": 363
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "突破",
+      "months": 12,
+      "old": "建议投资｜+47.2%～+94.7%｜低",
+      "new": "建议投资｜+53.3%—+97.3%｜低",
+      "ratingChanged": false,
+      "oldLine": 465,
+      "newLine": 363
+    },
+    {
+      "ticker": "AVGO",
+      "scenario": "突破",
+      "months": 36,
+      "old": "建议投资｜+80.5%～+131.3%｜低",
+      "new": "建议投资｜+90.2%—+137.0%｜低",
+      "ratingChanged": false,
+      "oldLine": 465,
+      "newLine": 363
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "悲观",
+      "months": 6,
+      "old": "强烈不建议投资｜-91.6%～-91.0%｜低",
+      "new": "强烈不建议投资｜-85.0%至-83.5%｜中",
+      "ratingChanged": false,
+      "oldLine": 430,
+      "newLine": 532
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "悲观",
+      "months": 12,
+      "old": "强烈不建议投资｜-90.9%～-90.3%｜低",
+      "new": "强烈不建议投资｜-84.3%至-82.8%｜中",
+      "ratingChanged": false,
+      "oldLine": 430,
+      "newLine": 532
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "悲观",
+      "months": 36,
+      "old": "强烈不建议投资｜-88.5%～-88.1%｜低",
+      "new": "强烈不建议投资｜-81.8%至-80.5%｜中",
+      "ratingChanged": false,
+      "oldLine": 430,
+      "newLine": 532
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "基准",
+      "months": 6,
+      "old": "中性 / 等待｜-17.5%～+12.0%｜中",
+      "new": "不建议投资｜-35.2%至-18.8%｜低",
+      "ratingChanged": true,
+      "oldLine": 431,
+      "newLine": 533
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "基准",
+      "months": 12,
+      "old": "中性 / 等待｜-13.6%～+16.3%｜中",
+      "new": "不建议投资｜-31.4%至-14.9%｜低",
+      "ratingChanged": true,
+      "oldLine": 431,
+      "newLine": 533
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "基准",
+      "months": 36,
+      "old": "不建议投资｜+3.6%～+34.6%｜中",
+      "new": "不建议投资｜-15.3%至+1.6%｜低",
+      "ratingChanged": false,
+      "oldLine": 431,
+      "newLine": 533
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "乐观",
+      "months": 6,
+      "old": "建议投资｜+60.4%～+133.7%｜低",
+      "new": "谨慎建议投资｜+14.8%至+48.2%｜低",
+      "ratingChanged": true,
+      "oldLine": 432,
+      "newLine": 534
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "乐观",
+      "months": 12,
+      "old": "建议投资｜+67.1%～+141.1%｜低",
+      "new": "建议投资｜+21.7%至+55.5%｜低",
+      "ratingChanged": false,
+      "oldLine": 432,
+      "newLine": 534
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "乐观",
+      "months": 36,
+      "old": "建议投资｜+96.4%～+173.4%｜低",
+      "new": "谨慎建议投资｜+52.0%至+87.2%｜低",
+      "ratingChanged": true,
+      "oldLine": 432,
+      "newLine": 534
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "突破",
+      "months": 6,
+      "old": "建议投资｜+145.4%～+265.4%｜低",
+      "new": "建议投资｜+66.0%至+116.3%｜低",
+      "ratingChanged": false,
+      "oldLine": 433,
+      "newLine": 535
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "突破",
+      "months": 12,
+      "old": "建议投资｜+155.1%～+276.4%｜低",
+      "new": "建议投资｜+76.2%至+127.1%｜低",
+      "ratingChanged": false,
+      "oldLine": 433,
+      "newLine": 535
+    },
+    {
+      "ticker": "CRDO",
+      "scenario": "突破",
+      "months": 36,
+      "old": "建议投资｜+198.5%～+324.7%｜低",
+      "new": "建议投资｜+121.4%至+174.4%｜低",
+      "ratingChanged": false,
+      "oldLine": 433,
+      "newLine": 535
+    }
+  ],
+  "returnArithmeticDetails": [
+    {
+      "ticker": "PSIX",
+      "line": 364,
+      "price": 5.64,
+      "reportedReturnPct": -86.9,
+      "recalculatedReturnPct": -86.92931633835458,
+      "errorPp": -0.029316338354576033,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 364,
+      "price": 6.31,
+      "reportedReturnPct": -85.4,
+      "recalculatedReturnPct": -85.3765932792584,
+      "errorPp": 0.02340672074160466,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 365,
+      "price": 6.04,
+      "reportedReturnPct": -86,
+      "recalculatedReturnPct": -86.00231749710314,
+      "errorPp": -0.0023174971031352243,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 365,
+      "price": 6.71,
+      "reportedReturnPct": -84.4,
+      "recalculatedReturnPct": -84.44959443800695,
+      "errorPp": -0.04959443800694885,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 366,
+      "price": 7.6,
+      "reportedReturnPct": -82.4,
+      "recalculatedReturnPct": -82.38702201622247,
+      "errorPp": 0.012977983777531676,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 366,
+      "price": 8.25,
+      "reportedReturnPct": -80.9,
+      "recalculatedReturnPct": -80.88064889918888,
+      "errorPp": 0.01935110081112157,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 367,
+      "price": 35.47,
+      "reportedReturnPct": -17.8,
+      "recalculatedReturnPct": -17.798377752027804,
+      "errorPp": 0.0016222479721967886,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 367,
+      "price": 43.01,
+      "reportedReturnPct": -0.3,
+      "recalculatedReturnPct": -0.32444959443800325,
+      "errorPp": -0.024449594438003264,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 368,
+      "price": 37.71,
+      "reportedReturnPct": -12.6,
+      "recalculatedReturnPct": -12.607184241019699,
+      "errorPp": -0.007184241019698945,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 368,
+      "price": 45.33,
+      "reportedReturnPct": 5.1,
+      "recalculatedReturnPct": 5.052143684820387,
+      "errorPp": -0.04785631517961253,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 369,
+      "price": 47.21,
+      "reportedReturnPct": 9.4,
+      "recalculatedReturnPct": 9.409038238702205,
+      "errorPp": 0.009038238702204993,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 369,
+      "price": 55.15,
+      "reportedReturnPct": 27.8,
+      "recalculatedReturnPct": 27.809965237543445,
+      "errorPp": 0.009965237543443806,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 370,
+      "price": 65.31,
+      "reportedReturnPct": 51.4,
+      "recalculatedReturnPct": 51.35573580533026,
+      "errorPp": -0.04426419466973641,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 370,
+      "price": 82.71,
+      "reportedReturnPct": 91.7,
+      "recalculatedReturnPct": 91.68018539976823,
+      "errorPp": -0.01981460023176851,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 371,
+      "price": 69.2,
+      "reportedReturnPct": 60.4,
+      "recalculatedReturnPct": 60.3707995365006,
+      "errorPp": -0.029200463499400087,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 371,
+      "price": 86.87,
+      "reportedReturnPct": 101.3,
+      "recalculatedReturnPct": 101.32097334878334,
+      "errorPp": 0.020973348783343226,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 372,
+      "price": 86.13,
+      "reportedReturnPct": 99.6,
+      "recalculatedReturnPct": 99.60602549246813,
+      "errorPp": 0.0060254924681402144,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 372,
+      "price": 104.76,
+      "reportedReturnPct": 142.8,
+      "recalculatedReturnPct": 142.78099652375437,
+      "errorPp": -0.01900347624564347,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 373,
+      "price": 83.09,
+      "reportedReturnPct": 92.6,
+      "recalculatedReturnPct": 92.56083429895713,
+      "errorPp": -0.039165701042861656,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 373,
+      "price": 105.63,
+      "reportedReturnPct": 144.8,
+      "recalculatedReturnPct": 144.79721900347627,
+      "errorPp": -0.0027809965237395318,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 374,
+      "price": 88.29,
+      "reportedReturnPct": 104.6,
+      "recalculatedReturnPct": 104.61181923522598,
+      "errorPp": 0.01181923522598538,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 374,
+      "price": 111.23,
+      "reportedReturnPct": 157.8,
+      "recalculatedReturnPct": 157.77520278099652,
+      "errorPp": -0.024797219003488635,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 375,
+      "price": 111.54,
+      "reportedReturnPct": 158.5,
+      "recalculatedReturnPct": 158.49362688296642,
+      "errorPp": -0.0063731170335756815,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "PSIX",
+      "line": 375,
+      "price": 135.9,
+      "reportedReturnPct": 214.9,
+      "recalculatedReturnPct": 214.94785631517962,
+      "errorPp": 0.047856315179615194,
+      "tolerancePp": 0.06658748551564311,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 478,
+      "price": 2.56,
+      "reportedReturnPct": -98.3,
+      "recalculatedReturnPct": -98.3319215481853,
+      "errorPp": -0.031921548185309234,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 478,
+      "price": 4.04,
+      "reportedReturnPct": -97.4,
+      "recalculatedReturnPct": -97.36756369322994,
+      "errorPp": 0.032436306770065926,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 479,
+      "price": 2.65,
+      "reportedReturnPct": -98.3,
+      "recalculatedReturnPct": -98.2732781651137,
+      "errorPp": 0.02672183488630253,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 479,
+      "price": 4.19,
+      "reportedReturnPct": -97.3,
+      "recalculatedReturnPct": -97.26982472144392,
+      "errorPp": 0.03017527855607227,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 480,
+      "price": 3.36,
+      "reportedReturnPct": -97.8,
+      "recalculatedReturnPct": -97.81064703199323,
+      "errorPp": -0.010647031993229916,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 480,
+      "price": 5.07,
+      "reportedReturnPct": -96.7,
+      "recalculatedReturnPct": -96.69642275363263,
+      "errorPp": 0.00357724636737089,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 481,
+      "price": 13.24,
+      "reportedReturnPct": -91.4,
+      "recalculatedReturnPct": -91.37290675702093,
+      "errorPp": 0.02709324297907756,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 481,
+      "price": 24.96,
+      "reportedReturnPct": -83.7,
+      "recalculatedReturnPct": -83.7362350948068,
+      "errorPp": -0.03623509480679843,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 482,
+      "price": 13.98,
+      "reportedReturnPct": -90.9,
+      "recalculatedReturnPct": -90.89072782954324,
+      "errorPp": 0.00927217045676798,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 482,
+      "price": 26.05,
+      "reportedReturnPct": -83,
+      "recalculatedReturnPct": -83.02599856649509,
+      "errorPp": -0.02599856649509036,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 483,
+      "price": 17.85,
+      "reportedReturnPct": -88.4,
+      "recalculatedReturnPct": -88.369062357464,
+      "errorPp": 0.03093764253600284,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 483,
+      "price": 31.2,
+      "reportedReturnPct": -79.7,
+      "recalculatedReturnPct": -79.67029386850851,
+      "errorPp": 0.029706131491494148,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 484,
+      "price": 28.05,
+      "reportedReturnPct": -81.7,
+      "recalculatedReturnPct": -81.72281227601485,
+      "errorPp": -0.02281227601484659,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 484,
+      "price": 59.58,
+      "reportedReturnPct": -61.2,
+      "recalculatedReturnPct": -61.17808040659411,
+      "errorPp": 0.021919593405890225,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 485,
+      "price": 29.67,
+      "reportedReturnPct": -80.7,
+      "recalculatedReturnPct": -80.66723138072587,
+      "errorPp": 0.03276861927413677,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 485,
+      "price": 62.21,
+      "reportedReturnPct": -59.5,
+      "recalculatedReturnPct": -59.464390434612625,
+      "errorPp": 0.03560956538737514,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 486,
+      "price": 38.21,
+      "reportedReturnPct": -75.1,
+      "recalculatedReturnPct": -75.10262592037532,
+      "errorPp": -0.002625920375322721,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 486,
+      "price": 74.6,
+      "reportedReturnPct": -51.4,
+      "recalculatedReturnPct": -51.39115136508765,
+      "errorPp": 0.008848634912347109,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 487,
+      "price": 55.56,
+      "reportedReturnPct": -63.8,
+      "recalculatedReturnPct": -63.79748485045938,
+      "errorPp": 0.002515149540620598,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 487,
+      "price": 134.28,
+      "reportedReturnPct": -12.5,
+      "recalculatedReturnPct": -12.504072457157744,
+      "errorPp": -0.004072457157743514,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 488,
+      "price": 58.81,
+      "reportedReturnPct": -61.7,
+      "recalculatedReturnPct": -61.67980712842901,
+      "errorPp": 0.020192871570991144,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 488,
+      "price": 140.2,
+      "reportedReturnPct": -8.6,
+      "recalculatedReturnPct": -8.64664103733629,
+      "errorPp": -0.04664103733628977,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 489,
+      "price": 75.22,
+      "reportedReturnPct": -51,
+      "recalculatedReturnPct": -50.98716361503877,
+      "errorPp": 0.012836384961232739,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "SPACEX",
+      "line": 489,
+      "price": 167.06,
+      "reportedReturnPct": 8.9,
+      "recalculatedReturnPct": 8.85515084381312,
+      "errorPp": -0.04484915618687957,
+      "tolerancePp": 0.05825796572620056,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 363,
+      "price": 0,
+      "reportedReturnPct": -100,
+      "recalculatedReturnPct": -100.0,
+      "errorPp": 0.0,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 363,
+      "price": 0,
+      "reportedReturnPct": -100,
+      "recalculatedReturnPct": -100.0,
+      "errorPp": 0.0,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 364,
+      "price": 0,
+      "reportedReturnPct": -100,
+      "recalculatedReturnPct": -100.0,
+      "errorPp": 0.0,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 364,
+      "price": 0,
+      "reportedReturnPct": -100,
+      "recalculatedReturnPct": -100.0,
+      "errorPp": 0.0,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 365,
+      "price": 0,
+      "reportedReturnPct": -100,
+      "recalculatedReturnPct": -100.0,
+      "errorPp": 0.0,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 365,
+      "price": 0,
+      "reportedReturnPct": -100,
+      "recalculatedReturnPct": -100.0,
+      "errorPp": 0.0,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 366,
+      "price": 0,
+      "reportedReturnPct": -100,
+      "recalculatedReturnPct": -100.0,
+      "errorPp": 0.0,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 366,
+      "price": 12.7,
+      "reportedReturnPct": -87.3,
+      "recalculatedReturnPct": -87.27837323449864,
+      "errorPp": 0.021626765501352452,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 367,
+      "price": 0,
+      "reportedReturnPct": -100,
+      "recalculatedReturnPct": -100.0,
+      "errorPp": 0.0,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 367,
+      "price": 15.85,
+      "reportedReturnPct": -84.1,
+      "recalculatedReturnPct": -84.12300911549634,
+      "errorPp": -0.02300911549635032,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 368,
+      "price": 0.07,
+      "reportedReturnPct": -99.9,
+      "recalculatedReturnPct": -99.92988079735551,
+      "errorPp": -0.029880797355502864,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 368,
+      "price": 31.45,
+      "reportedReturnPct": -68.5,
+      "recalculatedReturnPct": -68.49644395472303,
+      "errorPp": 0.003556045276965847,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 369,
+      "price": 98.83,
+      "reportedReturnPct": -1,
+      "recalculatedReturnPct": -1.0017028949213636,
+      "errorPp": -0.0017028949213635514,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 369,
+      "price": 190.87,
+      "reportedReturnPct": 91.2,
+      "recalculatedReturnPct": 91.19503155364119,
+      "errorPp": -0.004968446358816436,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 370,
+      "price": 108.34,
+      "reportedReturnPct": 8.5,
+      "recalculatedReturnPct": 8.52449163578084,
+      "errorPp": 0.02449163578084068,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 370,
+      "price": 202.16,
+      "reportedReturnPct": 102.5,
+      "recalculatedReturnPct": 102.50425723730343,
+      "errorPp": 0.004257237303434636,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 371,
+      "price": 154.56,
+      "reportedReturnPct": 54.8,
+      "recalculatedReturnPct": 54.82319943904639,
+      "errorPp": 0.023199439046393877,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 371,
+      "price": 250.93,
+      "reportedReturnPct": 151.4,
+      "recalculatedReturnPct": 151.35730742261848,
+      "errorPp": -0.04269257738152987,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 372,
+      "price": 233.95,
+      "reportedReturnPct": 134.4,
+      "recalculatedReturnPct": 134.34839226685364,
+      "errorPp": -0.05160773314636913,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 372,
+      "price": 382.06,
+      "reportedReturnPct": 282.7,
+      "recalculatedReturnPct": 282.7106080336572,
+      "errorPp": 0.010608033657206306,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 373,
+      "price": 249.85,
+      "reportedReturnPct": 150.3,
+      "recalculatedReturnPct": 150.27546829610338,
+      "errorPp": -0.024531703896627732,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 373,
+      "price": 400.97,
+      "reportedReturnPct": 301.6,
+      "recalculatedReturnPct": 301.6528097766203,
+      "errorPp": 0.05280977662027908,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 374,
+      "price": 325.38,
+      "reportedReturnPct": 225.9,
+      "recalculatedReturnPct": 225.9340879495142,
+      "errorPp": 0.03408794951420191,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "CRWV",
+      "line": 374,
+      "price": 486.04,
+      "reportedReturnPct": 386.9,
+      "recalculatedReturnPct": 386.8676750475809,
+      "errorPp": -0.03232495241906008,
+      "tolerancePp": 0.06000851447460683,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 364,
+      "price": 566,
+      "reportedReturnPct": -67.4,
+      "recalculatedReturnPct": -67.43364461245463,
+      "errorPp": -0.0336446124546228,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 364,
+      "price": 704,
+      "reportedReturnPct": -59.5,
+      "recalculatedReturnPct": -59.49343782185168,
+      "errorPp": 0.006562178148321607,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 365,
+      "price": 589,
+      "reportedReturnPct": -66.1,
+      "recalculatedReturnPct": -66.11027681402079,
+      "errorPp": -0.010276814020798497,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 365,
+      "price": 730,
+      "reportedReturnPct": -58,
+      "recalculatedReturnPct": -57.997456832317795,
+      "errorPp": 0.002543167682205194,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 366,
+      "price": 687,
+      "reportedReturnPct": -60.5,
+      "recalculatedReturnPct": -60.47157923808537,
+      "errorPp": 0.028420761914631498,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 366,
+      "price": 841,
+      "reportedReturnPct": -51.6,
+      "recalculatedReturnPct": -51.61076876161543,
+      "errorPp": -0.010768761615430833,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 367,
+      "price": 1278,
+      "reportedReturnPct": -26.5,
+      "recalculatedReturnPct": -26.466780591372796,
+      "errorPp": 0.03321940862720396,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 367,
+      "price": 1645,
+      "reportedReturnPct": -5.3,
+      "recalculatedReturnPct": -5.350433546798317,
+      "errorPp": -0.0504335467983168,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 368,
+      "price": 1342,
+      "reportedReturnPct": -22.8,
+      "recalculatedReturnPct": -22.784365847904763,
+      "errorPp": 0.015634152095238107,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 368,
+      "price": 1721,
+      "reportedReturnPct": -1,
+      "recalculatedReturnPct": -0.9775660389300334,
+      "errorPp": 0.022433961069966646,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 369,
+      "price": 1613,
+      "reportedReturnPct": -7.2,
+      "recalculatedReturnPct": -7.191640918532327,
+      "errorPp": 0.008359081467673057,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 369,
+      "price": 2024,
+      "reportedReturnPct": 16.4,
+      "recalculatedReturnPct": 16.456366262176413,
+      "errorPp": 0.056366262176414494,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 370,
+      "price": 2829,
+      "reportedReturnPct": 62.8,
+      "recalculatedReturnPct": 62.774239207360225,
+      "errorPp": -0.02576079263977249,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 370,
+      "price": 3846,
+      "reportedReturnPct": 121.3,
+      "recalculatedReturnPct": 121.29011099028189,
+      "errorPp": -0.009889009718108355,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 371,
+      "price": 3004,
+      "reportedReturnPct": 72.8,
+      "recalculatedReturnPct": 72.84334202153062,
+      "errorPp": 0.043342021530619945,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 371,
+      "price": 4060,
+      "reportedReturnPct": 133.6,
+      "recalculatedReturnPct": 133.6031852887531,
+      "errorPp": 0.003185288753115856,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 372,
+      "price": 3666,
+      "reportedReturnPct": 110.9,
+      "recalculatedReturnPct": 110.93331952427805,
+      "errorPp": 0.03331952427804197,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 372,
+      "price": 4828,
+      "reportedReturnPct": 177.8,
+      "recalculatedReturnPct": 177.79216221036944,
+      "errorPp": -0.007837789630571024,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 373,
+      "price": 4388,
+      "reportedReturnPct": 152.5,
+      "recalculatedReturnPct": 152.47556084902675,
+      "errorPp": -0.02443915097325089,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 373,
+      "price": 6093,
+      "reportedReturnPct": 250.6,
+      "recalculatedReturnPct": 250.57739112422973,
+      "errorPp": -0.02260887577025983,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 374,
+      "price": 4675,
+      "reportedReturnPct": 169,
+      "recalculatedReturnPct": 168.9888894642662,
+      "errorPp": -0.011110535733791949,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 374,
+      "price": 6447,
+      "reportedReturnPct": 271,
+      "recalculatedReturnPct": 270.94574767403725,
+      "errorPp": -0.05425232596275009,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 375,
+      "price": 5742,
+      "reportedReturnPct": 230.4,
+      "recalculatedReturnPct": 230.38164776552225,
+      "errorPp": -0.01835223447776002,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "SNDK",
+      "line": 375,
+      "price": 7701,
+      "reportedReturnPct": 343.1,
+      "recalculatedReturnPct": 343.09806155386394,
+      "errorPp": -0.0019384461360800742,
+      "tolerancePp": 0.08376886518334398,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 539,
+      "price": 25.2,
+      "reportedReturnPct": -85,
+      "recalculatedReturnPct": -84.97764530551416,
+      "errorPp": 0.022354694485841264,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 539,
+      "price": 27.7,
+      "reportedReturnPct": -83.5,
+      "recalculatedReturnPct": -83.48733233979135,
+      "errorPp": 0.012667660208649067,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 540,
+      "price": 26.4,
+      "reportedReturnPct": -84.3,
+      "recalculatedReturnPct": -84.26229508196721,
+      "errorPp": 0.037704918032787305,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 540,
+      "price": 28.8,
+      "reportedReturnPct": -82.8,
+      "recalculatedReturnPct": -82.83159463487333,
+      "errorPp": -0.03159463487332914,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 541,
+      "price": 30.6,
+      "reportedReturnPct": -81.8,
+      "recalculatedReturnPct": -81.7585692995529,
+      "errorPp": 0.04143070044709418,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 541,
+      "price": 32.6,
+      "reportedReturnPct": -80.5,
+      "recalculatedReturnPct": -80.56631892697467,
+      "errorPp": -0.06631892697467379,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 542,
+      "price": 108.7,
+      "reportedReturnPct": -35.2,
+      "recalculatedReturnPct": -35.20119225037258,
+      "errorPp": -0.0011922503725756428,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 542,
+      "price": 136.3,
+      "reportedReturnPct": -18.8,
+      "recalculatedReturnPct": -18.74813710879284,
+      "errorPp": 0.051862891207161255,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 543,
+      "price": 115,
+      "reportedReturnPct": -31.4,
+      "recalculatedReturnPct": -31.445603576751115,
+      "errorPp": -0.04560357675111604,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 543,
+      "price": 142.8,
+      "reportedReturnPct": -14.9,
+      "recalculatedReturnPct": -14.873323397913552,
+      "errorPp": 0.026676602086448398,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 544,
+      "price": 142.1,
+      "reportedReturnPct": -15.3,
+      "recalculatedReturnPct": -15.290611028315947,
+      "errorPp": 0.009388971684053615,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 544,
+      "price": 170.5,
+      "reportedReturnPct": 1.6,
+      "recalculatedReturnPct": 1.6393442622950838,
+      "errorPp": 0.0393442622950837,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 545,
+      "price": 192.6,
+      "reportedReturnPct": 14.8,
+      "recalculatedReturnPct": 14.813710879284647,
+      "errorPp": 0.013710879284646538,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 545,
+      "price": 248.6,
+      "reportedReturnPct": 48.2,
+      "recalculatedReturnPct": 48.19672131147541,
+      "errorPp": -0.0032786885245954522,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 546,
+      "price": 204.2,
+      "reportedReturnPct": 21.7,
+      "recalculatedReturnPct": 21.72876304023845,
+      "errorPp": 0.02876304023845222,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 546,
+      "price": 260.9,
+      "reportedReturnPct": 55.5,
+      "recalculatedReturnPct": 55.52906110283158,
+      "errorPp": 0.02906110283157659,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 547,
+      "price": 255,
+      "reportedReturnPct": 52,
+      "recalculatedReturnPct": 52.01192250372577,
+      "errorPp": 0.011922503725770639,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 547,
+      "price": 314,
+      "reportedReturnPct": 87.2,
+      "recalculatedReturnPct": 87.1833084947839,
+      "errorPp": -0.016691505216101632,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 548,
+      "price": 278.5,
+      "reportedReturnPct": 66,
+      "recalculatedReturnPct": 66.02086438152013,
+      "errorPp": 0.02086438152012704,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 548,
+      "price": 362.9,
+      "reportedReturnPct": 116.3,
+      "recalculatedReturnPct": 116.33383010432188,
+      "errorPp": 0.03383010432187916,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 549,
+      "price": 295.5,
+      "reportedReturnPct": 76.2,
+      "recalculatedReturnPct": 76.15499254843516,
+      "errorPp": -0.04500745156484243,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 549,
+      "price": 381,
+      "reportedReturnPct": 127.1,
+      "recalculatedReturnPct": 127.12369597615498,
+      "errorPp": 0.023695976154982645,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 550,
+      "price": 371.4,
+      "reportedReturnPct": 121.4,
+      "recalculatedReturnPct": 121.40089418777941,
+      "errorPp": 0.0008941877794086395,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    },
+    {
+      "ticker": "CRDO",
+      "line": 550,
+      "price": 460.3,
+      "reportedReturnPct": 174.4,
+      "recalculatedReturnPct": 174.3964232488823,
+      "errorPp": -0.003576751117719823,
+      "tolerancePp": 0.08480625931445604,
+      "passes": true
+    }
+  ]
+}

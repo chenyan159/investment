@@ -1,0 +1,535 @@
+# 公司：POET + POET Technologies 全面尽调
+
+> 调研截止：2026-07-11；行情截止：2026-07-10 美股收盘。除每股数据外，金额均为美元。  
+> 研究范围：仅使用项目内“行业调研”正式资料和联网资料；未读取或继承其他公司报告、日度资料、特征量化、备份或临时文件。  
+> 证据标签：**事实**＝财报、正式订单或客户/合作方原始披露；**公司指引**＝管理层前瞻目标；**模型**＝本文计算；**渠道**＝论坛、会议访谈或做空机构信息，不能等同审计事实。
+
+## 一、核心结论
+
+POET Technologies 不是一家已经形成规模收入的“AI 光模块公司”，而是一家拥有大量现金、正从研发转向量产的**光子集成/先进封装平台公司**。它用 POET Optical Interposer（以 SiON/硅为核心的光学中介层）把 EML/DFB 激光器、Driver、PD、TIA、MUX/DMUX 等异质器件在晶圆级被动贴装，做成 800G/1.6T 光引擎、外置激光源 ELS 及未来 NPO/CPO 光引擎。产业链位置在上游芯片和下游光模块之间，类似“PIC/光引擎设计商 + 晶圆级封装工艺平台 + OSAT 组织者”，而不是拥有交换 ASIC、DSP 或终端云客户的系统厂。
+
+投资人对 POET 的认识高度两极：
+
+- **多头视角：**POET 的被动对准、去线焊、集成 MUX/DMUX 和晶圆级测试，理论上能减少传统光模块最昂贵、最难扩产的主动对准环节；2026 年 1.6T 可插拔模块快速放量、InP/EML 和已知良品光引擎紧缺，POET 恰好位于瓶颈环节。公司已融资数亿美元、拥有约 2 万平方英尺马来西亚组装空间，并计划把产能扩大到 2027 年底 100 万颗/月。
+- **空头视角：**截至 2026Q1，过去十二个月收入只有 **141.1 万美元**，而按最新基本股本计算市值约 **14.34 亿美元**；过去多次“即将量产”的合作没有转化为财报收入，Celestial AI 的全部订单已被 Marvell 取消，Lumilens 的 5,000 万美元订单又以开发、认证和扩产成功为前提。高估值实际上押注尚未发生的客户认证、良率和量产。
+- **本报告判断：**技术方向有产业和独立实验支持，但商业模式尚未通过“连续两个季度千万元级产品收入 + 可验证毛利率 + 复购订单”检验。POET 当前更像一张**现金保障很强、技术期权很大、商业兑现风险也很高的深度价外期权**，不能用成熟光模块厂的订单/产能口径直接估值。
+
+最关键的三条结论是：
+
+1. **近一年真正主线是 800G Infinity、1.6T Teralight 和 Starlight/LightBar ELS；Blazar、Lumilens EOI、3.2T TFLN 是高价值但更晚的期权。**项目内行业研究显示，2026 年 1.6T 可插拔已进入大规模放量，而 CPO 在 AI 光模块单位量中的渗透率约 0.5%；把 POET 全部估值建立在 CPO 立即爆发上是不成立的。
+2. **“可见订单池”不能等同 backlog。**公开毛额至少为 5,550 万美元，其中约 550 万美元是传统光引擎生产订单，5,000 万美元 Lumilens 订单受开发、最终认证和制造扩产条件约束；Celestial AI 金额未披露且已经全部取消。公司没有披露会计口径 backlog、取消罚则、客户集中度或逐季 bookings。
+3. **资产负债表很强，损益表极弱。**Q1 末现金及短期投资 4.291 亿美元；考虑 4 月新增 1,500 万美元对外贷款、5 月 4 亿美元融资及未披露费用/季度消耗后，本文估算 7 月初流动资金约 7.95 亿—8.05 亿美元。资金不是短期生存约束，真正约束是客户认证、量产良率、供应链和管理层可信度。
+
+## 二、整体业务、产业链位置与过去三年转型
+
+### 2.1 公司到底卖什么
+
+| 收入层 | 具体内容 | 当前状态 | 经济属性 |
+|---|---|---|---|
+| NRE/联合开发 | 为客户做定制光引擎、样品、设计报告、测试报告 | 当前财报收入主体之一；公司未拆分金额 | 里程碑确认，波动大，不能代表量产 |
+| 高速光引擎 | Infinity 400G Tx chiplet、800G 2xFR4/DR8 Tx/Rx；Teralight 1.6T Tx/Rx | 800G 有两笔合计逾 550 万美元生产订单；1.6T 主要在送样/联合开发 | 若量产，POET 获得模块 BOM 中 PIC/光引擎价值 |
+| 光源 | LightBar、Starlight、Blazar、ELSFP/SmartFAU | Starlight/LightBar 向 HVM 过渡；Blazar 规模部署指向 2028 | CPO/NPO/光 I/O 的高价值瓶颈，潜在毛利高 |
+| 定制模块/EOI | Lumilens Electrical-Optical Interposer，800G/1.6T 可插拔到 NPO/CPO | 2026 年末工程样品、2027 年爬坡；5,000 万美元订单有前置条件 | 完整模块价值更高，但 BOM、库存和质保责任也更重 |
+| IP/平台 | Optical Interposer 工艺、设计、专利和晶圆级封装流程 | 没有单独披露许可收入 | 护城河载体，不是当前独立现金流 |
+
+[公司 2026 AGM 更新](https://www.poet-technologies.com/news/poet-technologies-recaps-highlights-of-ceos-update-on-commercial-activities-and-provides-results-of-2026-agm)把公司定义为高速光引擎、光源和定制光模块设计开发商；[Q1 财务附注](https://www.sec.gov/Archives/edgar/data/1437424/000149315226023471/ex99-1.htm)显示公司只有一个报告分部，收入按“产品/NRE”合计披露，没有产品线收入和毛利率拆分。
+
+### 2.2 产业链位置
+
+| 环节 | 代表内容/公司 | POET 的关系与议价权 |
+|---|---|---|
+| 上游有源器件 | Mitsubishi/Sivers/Coherent/Lumentum 的 EML、DFB/CW laser；Semtech TIA/PD | POET采购或联合开发；2026 年 InP/EML 紧缺，POET目前仍受供应商约束 |
+| 上游电子/晶圆 | Driver、TIA、DSP/FEC、Si/SiON wafer、TFLN modulator | POET 集成 Driver/TIA，但不拥有高速 DSP；晶圆代工厂未完整披露 |
+| **POET 所在层** | 光学中介层、MUX/DMUX、异质芯片贴装、Tx/Rx engine、ELS | 通过被动对准和晶圆级工艺压缩 BOM/组装步骤；价值在集成和已知良品 |
+| OSAT/组装测试 | Globetronics、NationGate、SPX、马来西亚产线 | POET组织产能并提供设备/工艺；尚需证明高良率和按时交付 |
+| 模块/系统 | Lessengers、LITEON、未命名系统集成商；Innolight/Eoptolink 等竞争模块厂 | 客户把 POET engine 装入 OSFP/QSFP-DD；客户认证和终端 design-in 决定收入 |
+| 终端 | Hyperscaler、交换机厂、GPU/XPU 集群 | POET没有披露直接 hyperscaler 量产客户，终端议价权最强且通常要求多源 |
+
+POET 的合理定位是“器件无关的光子集成平台”。[技术页面](https://www.poet-technologies.com/technology)称其低损耗波导、被动元件和 flip-chip 有源器件均可在标准 CMOS 晶圆流程上组装，并消除线焊和主动对准。2026 年 2 月一篇独立论文实验展示了 SiON/Si 中介层上集成 InP EML、PD、Driver/TIA 的 4×100G 链路，支持这条技术路线的可行性，但该论文**不是 POET 产品认证，也不能证明 POET 的量产良率或成本**。[独立技术论文](https://arxiv.org/abs/2602.08284)
+
+### 2.3 最近三年重大变化、转型和收购
+
+| 时间 | 变化 | 战略含义 | 兑现情况 |
+|---|---|---|---|
+| 2023 | 从长期平台研发转向 Infinity、Starlight、Legacy 等产品化；宣布 Celestial、Luxshare、Adtran、BFYY 等订单/合作 | 开始讲“光引擎量产”而非纯 IP 故事 | 财报收入仍极低；部分项目随后停滞，Celestial 订单 2026 年全部取消 |
+| 2024 | 与 FIT/Foxconn、Mitsubishi 等合作；12 月以 **650 万美元、五年免息可转债**收购 Sanan 持有的 SPX 剩余 24.8%，取得 100% 控制 | 摆脱中外合资治理，推进 China+1 和马来西亚制造 | SPX 被财务认定为资产收购；2025 年后主要增量制造转向马来西亚 |
+| 2025 | Globetronics 光引擎设备安装运行，NationGate 承担光源组装；8 月 27 日从 TSXV 自愿退市、保留 Nasdaq；重点从完整模块一度转向“卖引擎、不与模块客户冲突” | 从中国 JV 转为“fabless/PIC + 多 OSAT”；资本市场重心转到美国 | 收到逾 550 万美元 800G 生产订单，但 2025 全年收入仍仅 107.5 万美元 |
+| 2025H2—2026 | 重新加强“定制模块”战略；推出 1.6T、Blazar、TFLN 3.2T、Lumilens EOI；宣布 LITEON/Lessengers 联合开发；计划美国迁册 | 从 800G engine 扩展到 1.6T、ELS、NPO/CPO 和完整模块 | 多数处于送样/联合开发；Blazar 规模部署为 2028，EOI 样品为 2026 年末 |
+| 2025—2026 | 12 个月累计融资 8.30 亿美元；2026 年 5 月单笔发行 1,904.762 万股及等量权证，募资 4 亿美元 | 生存风险显著下降，可锁定器件供应和扩产/收购 | 股本和潜在稀释大幅增加；资本配置成为新风险 |
+| 2026Q1—Q2 | 向未披露借款人贷款 3,000 万美元、利率 6%、最长五年且有转股安排；CFO 宣布拟退休 | 可能是并购/技术投资前奏，但信息透明度不足 | 借款人、抵押、估值和战略关系未披露，需视为治理折价 |
+
+过去三年没有完成外部核心技术公司的大型并购；真正完成的是 SPX 少数股权买断。公司称正在评估并购，不能把 3,000 万美元未披露贷款直接推断为某一收购标的，也没有证据证明借款人是 Lumilens。
+
+## 三、股价、估值、增长和资产负债表
+
+### 3.1 2026-07-11 估值快照
+
+| 指标 | 最新值 | 日期/计算 | 解读 |
+|---|---:|---|---|
+| 股价 | **8.31 美元** | 2026-07-10 收盘；[Nasdaq 行情入口](https://www.nasdaq.com/market-activity/stocks/poet) | 单日成交约 847.7 万股 |
+| 基本股数 | **1.7259 亿股** | 2026-06-26 AGM 时点 | 比 2022 年末约 3,800 万股高约 3.5 倍，即股本约为原来的 4.5 倍 |
+| 基本市值 | **14.34 亿美元** | 8.31×1.7259 亿；本文计算 | 应使用最新基本股数，不能沿用融资前股数 |
+| TTM 收入 | **141.1 万美元** | 2025Q2—2026Q1 | 仍为微型收入基数 |
+| TTM 收入增速 | **+607.6%** | 前一 TTM 约 19.95 万美元；本文计算 | 百分比很高，但绝对增量仅约 121 万美元 |
+| 2025 全年收入 | **107.5 万美元** | 四季度合计 | 2024 年约 4.14 万美元，低基数增长约 25 倍 |
+| TTM P/S | **约 1,016 倍** | 14.34 亿/141.1 万 | 当前估值完全不由历史收入支撑 |
+| 2026E P/S | **约 153 倍** | 市场一致收入 938 万美元 | 一致预期分析师数量很少，参考性有限 |
+| 2027E P/S | **约 19.0 倍** | 市场一致收入 7,537 万美元 | 已隐含大规模量产成功 |
+| TTM P/E | **不适用** | TTM 净亏损约 8,174 万美元 | 亏损企业没有有效 P/E |
+| Forward P/E | **2026E 不适用；2027E 约 166 倍** | 2026E EPS -0.18；2027E EPS +0.05 | [一致预期快照](https://businessquant.com/stocks/poet/estimates/)只有极少覆盖，变化会很大 |
+| 报表“毛利率” | **形式上 100%，经济上 N/A** | IFRS 损益表没有单列销货成本 | 数据网站把收入直接减运营费用，机械得出 100%；不能据此推断产品毛利 |
+| TTM 净利率 | **约 -5,791%** | -8,174 万/141.1 万；本文计算 | 当前费用规模远高于收入 |
+| Q1 净利率 | **约 -2,452%** | -1,234.4 万/50.34 万 | 利息收入改善净亏损，但不是产品盈利 |
+
+截至 2026-07-11 的一致预期仍很薄弱：[BusinessQuant](https://businessquant.com/stocks/poet/estimates/)显示 2026/2027 年收入中值约 938 万/7,537 万美元、EPS -0.18/+0.05；[StockAnalysis](https://stockanalysis.com/stocks/poet/statistics/)显示最新基本股数约 1.726 亿。POET 的合理估值锚不是当前 P/E，而是“经认证的未来收入×可持续产品毛利率×稀释后股数”。
+
+### 3.2 资产负债表评估
+
+| 2026-03-31 项目 | 金额 | 评价 |
+|---|---:|---|
+| 现金 | 1,653.7 万 | 普通现金不高，但大部分流动性放在短期存款 |
+| 短期投资 | 4.1260 亿 | 主要是加拿大银行 GIC，年利率约 3.4%—4.91%，一年内到期 |
+| 现金+短期投资 | **4.2914 亿** | 是资产负债表最强项 |
+| 流动资产 | 4.3098 亿 | 绝大部分是金融资产，不是库存/应收 |
+| 流动负债 | 1,217.3 万 | 流动比率约 **35.4 倍** |
+| 可转债 | 580 万 | 与 SPX 买断相关，分期至 2029 |
+| 总负债 | 1,312.8 万 | 账面杠杆极低 |
+| 总资产/股东权益 | 4.6177 亿/4.4864 亿 | 权益率约 97.2% |
+| Q1 经营现金流 | **-880.96 万** | 年化当前消耗约 3,500 万—5,000 万，但扩产后会提高 |
+| Q1 资本开支 | 243.5 万 | H2 2026 公司另计划首批约 5,000 万设备投入 |
+| 对外贷款 | Q1 末 1,519.4 万；4 月后本金合计 **3,000 万** | 未披露借款人，6%利率、最长五年、可在特定事件转股；流动性强但透明度弱 |
+| 合同负债/客户押金 | 24.75 万/23.0 万 | 与 5,550 万美元订单标题相比极小，说明订单现金保障有限 |
+
+数据来自[2026Q1 财务报表](https://www.sec.gov/Archives/edgar/data/1437424/000149315226023471/ex99-1.htm)。5 月融资完成后，粗略桥接为：4.291 亿（Q1 末）-1,500 万（4 月追加贷款）+4 亿（5 月融资毛额）-约 900 万—1,900 万（费用及 Q2 经营/投资消耗）≈ **7.95 亿—8.05 亿美元**。这是本文估算，不是已审计的 6 月末现金；公司所称“12 个月融资 8.30 亿美元”是累计募资额，也不是账户现金。
+
+**健康度结论：**
+
+- 流动性/偿债：**5/5**。即使扣除 5,000 万美元首批设备投资，按当前消耗仍有多年跑道。
+- 经营自我造血：**1/5**。TTM 收入不足 150 万美元，费用和资本投入依赖融资及利息收入。
+- 资产质量：**4/5**。银行短期存款占比高；但 3,000 万美元未披露借款人的信用/估值风险需要折价。
+- 综合财务健康：**3.5/5**。短期破产风险低，长期价值取决于资金能否换来合格产能和复购，而不是继续稀释。
+
+潜在稀释不可忽略：Q1 末约 3,736 万份存量权证；5 月融资新增约 1,905 万份；Lumilens 又获最多 2,292 万份、9 年期、8.25 美元行权价的权证，其中 229 万份立即可行权，其余与累计采购付款挂钩。粗略合计接近 **7,900 万份权证**，相当于当前基本股本约 46%，另有期权和 RSU。公司称全部相关权证若行使还可带来最多 6.61 亿美元资金，但价值增加与股本摊薄会同时发生。
+
+## 四、最近五次财报：财务、订单、交期与取消
+
+### 4.1 五季度财务数字
+
+| 财报季度 | 收入 | 环比/同比 | 净利润（亏损） | 经营现金流 | R&D/利润率信息 | AI 数据中心收入占比 |
+|---|---:|---:|---:|---:|---|---|
+| **2026Q1** | **50.34 万** | +47.5% / +201.9% | **-1,234.4 万** | **-881.0 万** | IFRS R&D 584.0 万；新闻稿口径 450 万，口径存在差异；未披露产品毛利 | **模型 85%—100%**；公司未拆分，收入仍以 NRE/样品为主 |
+| 2025Q4 | 34.12 万 | +14.3% / +1,075% | -4,270 万 | -1,160 万 | 含约 3,060 万权证公允价值损失；新闻稿还重复列示 685.3 万 SPX 非现金损失，但财务附注把收购日期定为 2024-12-31，属披露口径矛盾；R&D 460 万 | 模型 80%—95% |
+| 2025Q3 | 29.84 万 | +11.2% / 约 +8,000% | -940 万 | -280 万 | 公司明确称产品收入仍小；R&D 370 万 | 模型 80%—95% |
+| 2025Q2 | 26.85 万 | +61.0% / 去年同期为零 | -1,730 万 | -770 万 | 公司明确称仅少量产品收入；R&D 320 万 | 模型 75%—95% |
+| 2025Q1 | 16.68 万 | +474% / +1,815% | **+634.2 万** | -898.0 万 | “盈利”来自 1,538 万非现金权证公允价值收益，不是经营盈利；R&D 约 430 万 | 模型 70%—90% |
+
+来源：[2026Q1](https://www.poet-technologies.com/news/poet-technologies-reports-first-quarter-2026-financial-results)、[2025Q4](https://www.poet-technologies.com/news/poet-technologies-reports-fourth-quarter-2025-financial-results)、[2025Q3](https://www.poet-technologies.com/news/poet-technologies-reports-third-quarter-2025-financial-results)、[2025Q2](https://www.poet-technologies.com/news/poet-technologies-reports-second-quarter-2025-financial-results)、[2025Q1](https://www.poet-technologies.com/news/poet-technologies-reports-first-quarter-2025-financial-results)。AI 占比是按客户项目和产品用途作的低置信度估算，不是公司分部数据；财报只有单一报告分部，不能可靠计算各业务收入、增速或毛利率。Q4 新闻稿把同一笔 SPX 少数股权收购写成“2025Q4 发生”，而 Q1 财务附注及原始收购公告均为 2024-12-31；本文以财务附注日期为准，不把该项目视为 2025 年新收购。
+
+### 4.2 Bookings、Backlog、Book-to-Bill、交期与取消率
+
+| 财报时点 | 新订单/客户事件 | 可计算 B/B | 交付/Lead time | 取消与质量判断 |
+|---|---|---:|---|---|
+| 2025Q1 | 向 3 家全球技术客户交付 400G FR4、800G 2xFR4/DR8 最终设计样品；Rx engine 已通过内部/直接客户步骤，模块和终端认证仍待完成 | N/A | 样品→模块验证→终端批准通常需 6—12 个月以上 | 没有披露硬订单、取消率或罚则 |
+| 2025Q2 | Globetronics 设备安装并运行；NationGate 承接光源；Lessengers 800G DR8 联合开发 | N/A | 客户访问马来西亚产线做资格审核 | 合作/开发不等同采购订单 |
+| 2025Q3 | 9 月 23 日收到一笔 **>50 万美元**初始生产订单；计划 2026 年初交付 | **>1.7 倍**（只用当季 >50 万/29.84 万） | 公告到原计划交付约 3—6 个月；截至 2026-07-11 未见明确完成公告 | Q3 财报发布时把 10 月订单一并描述为两笔逾 560 万美元，需按订单日期拆开 |
+| 2025Q4 | 10 月 22 日收到未命名系统集成商 **>500 万美元** Infinity 订单 | **>14.7 倍**（>500 万/34.12 万） | 计划 2026H2 交付，Lead time 约 9—14 个月 | 是最接近硬 backlog 的订单，但客户、押金、取消罚则均未披露 |
+| 2026Q1/财报发布后事项 | 4 月 23 日 Marvell 取消 Celestial AI 全部订单；5 月 14 日 Lumilens 下达 **5,000 万美元** EOI 初始订单 | 会计季度 B/B 不可算；若机械用 5,000 万/50.34 万约 99 倍，会严重误导 | EOI 2026 年末才有工程样品，2027 年才爬坡，实际 Lead time 至少 7—18 个月 | Celestial 项目口径取消率为 100%，金额未知；Lumilens 订单以开发、认证、扩产成功为前提 |
+
+订单来源：[>50 万美元订单](https://www.poet-technologies.com/news/poet-technologies-to-present-at-ecoc-2025)、[>500 万美元订单](https://www.poet-technologies.com/news/poet-technologies-receives-5-million-production-order-for-800g-optical-engines)、[Celestial 全部订单取消](https://www.poet-technologies.com/news/poet-technologies-provides-purchase-order-update)、[Lumilens EOI](https://www.poet-technologies.com/news/poet-technologies-and-lumilens-advance-wafer-level-photonic-integration-for-next-generation-ai-optical-networks)。
+
+**正确的 backlog 表述：**
+
+- 公开的**毛订单标题额**至少 5,550 万美元；
+- 其中约 550 万美元是常规生产订单，5,000 万美元是资格条件订单；
+- Celestial 订单金额从未披露，已全部取消，不能从 5,550 万美元中作数值扣除；
+- 公司没有披露 ASC/IFRS 意义的剩余履约义务、季度 bookings、取消罚金或逐客户 backlog。因此本报告不把 5,550 万美元称为“硬 backlog”。
+
+Q1 末合同负债仅 24.75 万美元、客户押金 23.0 万美元、应收账款 29.04 万美元，远小于订单标题额。这个差额说明订单尚未通过“现金预付—技术验收—合格产能—交付—回款”五道关，而不是证明订单无效。
+
+## 五、2026 最新指引、业务占比和产品地图
+
+### 5.1 公司正式指引与本文收入模型
+
+公司没有给出 2026 年收入、毛利率或 EPS 指引。可量化的正式运营指引是：
+
+- 2026 年光源产品从 Q2 开始 HVM、800G 光引擎从 Q3 开始，全年高速度/高功率产品合计交付 **超过 30,000 颗光引擎**；
+- 2026H2 开始向客户批量交付；
+- 2027 年底产能最高达 **100 万颗/月**，超过当前能力 10 倍；
+- 2026H2 首批资本设备投入约 **5,000 万美元**；
+- 超过 10 个活跃客户项目，管理层称其未来年度收入合计可超过 **1 亿美元**；
+- Blazar 计划在 **2028 年**规模部署；
+- 全球员工 115 人，短期计划再增约 50 人。
+
+[Q4 2025 指引](https://www.poet-technologies.com/news/poet-technologies-reports-fourth-quarter-2025-financial-results)；[2026 AGM 更新](https://www.poet-technologies.com/news/poet-technologies-recaps-highlights-of-ceos-update-on-commercial-activities-and-provides-results-of-2026-agm)
+
+用 30,000 颗×每颗综合 ASP 200—300 美元推导，2026 年产品收入约 600 万—900 万美元；加 NRE/样品约 100 万—300 万美元，本文 2026 全年收入区间为 **700 万—1,200 万美元**，与稀薄的一致预期 938 万美元相符。这是模型，不是管理层指引。
+
+| 2026E 业务 | 收入中点 | 占比模型 | 增长判断 | 依据 |
+|---|---:|---:|---|---|
+| Infinity 800G Tx/Rx | 480 万 | 45%—55% | 从极小基数跃升，主增量 | 两笔逾 550 万订单；H2 交付 |
+| Teralight 1.6T/Semtech Rx | 140 万 | 10%—20% | 样品/NRE→小批量 | 1.6T 需求强，但 POET 尚无已披露量产 PO |
+| Starlight/LightBar/ELS | 240 万 | 20%—30% | HVM 与显著 NRE 驱动 | Q2 HVM 指引；新客户 ELS NRE |
+| EOI、TFLN、模块开发及其他 NRE | 100 万 | 10%—15% | 主要是里程碑收入 | EOI 量产在 2027；TFLN 仍开发 |
+
+### 5.2 重点产品、潜力小产品与跳过项
+
+| 优先级 | 业务/产品 | 型号/结构 | 2026-07 阶段 | 客户/合作方证据 | 本文估算初期/成熟毛利率 |
+|---|---|---|---|---|---:|
+| **A1** | 800G 光引擎 | Infinity 400G Tx chiplet×2 + 800G 2xFR4/DR8 Rx | 生产订单、H2 交付 | 两个未命名客户，合计 >550 万美元 | 35%—50% / 45%—60% |
+| **A1** | 1.6T 光引擎 | Teralight 2xFR4/DR8 Tx+Rx；Semtech FiberEdge Rx | 客户送样/联合开发 | Semtech、Lessengers、LITEON | 35%—50% / 45%—60% |
+| **A1** | 外置光源 | LightBar、Starlight 4/8/16ch、ELSFP、SmartFAU | HVM/新 NRE；具体客户未命名 | NationGate、Sivers；管理层称有重要 NRE | 40%—55% / 50%—65% |
+| **A2 小而关键** | Blazar hybrid ELS | 多通道高功率混合激光源 | 演示/设计导入；规模部署 2028 | OFC/CIOE 展示，未披露量产客户 | NRE 不可比；成熟 55%—70% |
+| **A2 小而关键** | Lumilens EOI | 800G/1.6T pluggable→NPO/CPO | 联合开发；2026 年末样品、2027 爬坡 | 5,000 万美元条件 PO，五年框架可 >5 亿美元 | 完整模块初期 25%—40%，成熟 35%—50% |
+| **A3 技术期权** | 3.2T/400G-lane | QCI TFLN optical engine | H2 2026 完成开发目标，未认证 | Quantum Computing Inc. 联合开发 | 初期 20%—40%，成熟取决于良率 |
+
+产品规格依据：[Infinity](https://www.poet-technologies.com/products/poet-infinity)、[Teralight](https://www.poet-technologies.com/products/poet-teralight)、[Starlight](https://www.poet-technologies.com/products/starlight)、[800G Rx](https://www.poet-technologies.com/products/800g-2xfr4-rx-oe)、[LightBar](https://www.poet-technologies.com/products/lightbar)。
+
+LITEON 关系需要降温处理：POET 在 2026-03-16 宣布共同开发、2026 年末原型、2027 HVM；但 LITEON 总裁在 2026Q1 官方电话会中表示双方仅有接触、尚无实际业务。这两者并不必然矛盾，正确结论是**早期联合开发/接触，而非已确认供应合同**。[POET-LITEON 公告](https://www.poet-technologies.com/news/poet-technologies-and-liteon-announce-joint-development-of-optical-modules-for-ai-applications)；[LITEON 官方电话会全文，第 5 页](https://www.liteon.com/upload/media/ir/conference/2026/Presentation/28-Apr-2026_18-00-00-2301-TW-LSEG_StreetEvents-2301.TW_-_Event_Transcript_of_Lite-On_Technology_Corp.PDF)
+
+**主动跳过或并入其他业务的低优先级产品：**
+
+| 产品/业务 | 处理 | 原因 |
+|---|---|---|
+| POET ONE、Legacy 100G/200G | 跳过 | 速率低、AI 数据中心增量有限，且未见重大新订单 |
+| BFYY/中国电信类 Legacy 项目 | 跳过 | 2023 年曾有 >300 万美元订单/预测，但后续财报未显示相称收入 |
+| NTT Innovative Devices 移动 AI/5G 前传 | 跳过 | 有技术邻接性，当前不属于 AI 集群最大增量 |
+| Adtran MicroMux/传统通信 | 跳过 | 渠道称仍在技术测试且无扩展计划；没有可量化收入 |
+| LiDAR、传感、Edge、消费应用 | 跳过 | 公司平台可覆盖，但没有当前收入或高增长订单 |
+| Wavelight 800G 参考设计 | 并入 Infinity | 是模块参考设计，不应与其内部光引擎重复计算 |
+| SPX/BB Photonics | 不作为增长业务 | SPX 是制造资产；BB Photonics 财报称处于 dormant 状态 |
+
+## 六、当前关键产品收入贡献、增速和产业重要性
+
+以下 TTM 产品拆分是对 141.1 万美元单一分部收入的**模型分配**，公司没有披露产品明细，区间不可当作审计数字。评分均为 1—5，5 代表最高；“供需紧张”越高越供不应求。
+
+| 关键产品/业务 | 当前 TTM 收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧迫性 | 供需紧张 | 垄断能力 | 溢价能力 | 证据/判断 |
+|---|---:|---|---:|---:|---:|---:|---:|---|
+| Infinity 800G | **30万—55万；中点 42万** | 未披露；从样品/NRE起步 | 5 | 5 | 4 | 2 | 2.5 | 800G 当前主流；有生产 PO，但未证明 Tier-1 终端认证 |
+| Teralight 1.6T | **15万—35万；中点 25万** | 近零基数高增 | 5 | 5 | 4.5 | 2.5 | 3 | 1.6T 是 2026 最大确定性增量；POET 仍在 sampling/JD |
+| Starlight/LightBar ELS | **15万—40万；中点 27万** | 近零基数高增 | 5 | 4 | 4.5 | 2.5 | 3 | CPO/光 I/O 的瓶颈；高功率激光供应紧 |
+| Blazar | **5万—20万；中点 12万** | NRE/样品，量产未开始 | 4.5 | 2.5 | 4 | 3 | 4 | 差异化潜力高，但公司自己把规模部署放在 2028 |
+| Lumilens EOI | **0** | N/M | 5 | 3.5 | 3 | 2.5 | 3 | 订单额大但产品尚未形成；条件 PO 不能计当前收入 |
+| QCI TFLN 3.2T | **0—10万；中点 5万** | N/M | 4 | 2 | 2.5 | 2.5 | 3 | 400G/lane 技术期权，离量产较远 |
+| Legacy/其他 NRE | **15万—45万；中点 30万** | 低或不可见 | 2 | 2 | 2 | 1.5 | 1.5 | 补足单一分部收入，不纳入增长主线 |
+
+行业校准来自项目内最新正式资料：[《Optical Interposer 与新型光引擎》](<../../行业调研/AI网络_光互联_铜互联/行业调研_Optical Interposer与新型光引擎_2026-07-10.md>)、[《800G/1.6T 可插拔光模块》](../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md)、[《CPO/NPO 与交换侧光引擎》](../../行业调研/AI网络_光互联_铜互联/行业调研_CPO_NPO与交换侧光引擎_2026-07-10.md)、[《激光器、EML 与光器件》](../../行业调研/AI网络_光互联_铜互联/行业调研_激光器、EML与光器件_2026-07-10.md)。
+
+关键行业事实：
+
+- Cignal AI：2026Q1 数据通信光器件收入约 **77 亿美元、同比翻倍以上**；400G+ 模块约 2,000 万只、800G 占多数，1.6T 环比约 +50%，2026 年 1.6T 预计超过 1,000 万只。
+- LightCounting：2026 年以太网光学收入约 +65%，需求高于供给约 30%，InP 紧张到 2026 年末才逐步缓解。
+- TrendForce：2026 年 CPO 占 AI 光模块单位量仅约 0.5%。因此 POET 近一年应首先兑现可插拔 engine/ELS，而不是把封装内光 I/O 当当前收入。
+
+## 七、一年后收入贡献：基准、乐观、极度乐观
+
+预测窗口为 2026-07-01 至 2027-06-30。所有数字是本文模型，不是公司指引。
+
+### 7.1 分产品收入预测
+
+| 产品/业务 | 当前 TTM 中点 | 基准收入 | 相对当前 | 乐观收入 | 相对当前 | 极度乐观收入 | 相对当前 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Infinity 800G | 42 万 | **2,500 万** | 约 60 倍 | **6,000 万** | 约 143 倍 | **1.20 亿** | 约 286 倍 |
+| Teralight 1.6T | 25 万 | **600 万** | 24 倍 | **2,500 万** | 100 倍 | **6,500 万** | 260 倍 |
+| Starlight/LightBar ELS | 27 万 | **800 万** | 约 30 倍 | **2,500 万** | 约 93 倍 | **6,500 万** | 约 241 倍 |
+| Blazar | 12 万 | **200 万** | 约 17 倍 | **500 万** | 约 42 倍 | **1,200 万** | 100 倍 |
+| Lumilens EOI | 0 | **300 万** | N/M | **1,200 万** | N/M | **5,500 万** | N/M |
+| QCI TFLN/其他高端 NRE | 5 万 | **100 万** | 20 倍 | **300 万** | 60 倍 | **800 万** | 160 倍 |
+| **合计** | TTM 总收入 141.1 万 | **4,500 万** | **约 +3,089%** | **1.30 亿** | **约 +9,111%** | **3.25 亿** | **约 +22,925%** |
+
+情景定义：
+
+- **基准：**30,000 颗 2026 交付基本完成；>500 万美元 Infinity 订单按期；1.6T 和 ELS 在 2027H1 小批量；Lumilens 只确认少量 NRE/工程样品，不把 5,000 万全额计入。
+- **乐观：**800G 有 2—3 个复购客户；1.6T 至少一个模块项目通过终端认证；ELS 获得第二个生产项目；Lumilens 订单约 20%—30%在窗口内确认。
+- **极度乐观：**出现至少一个 Tier-1/hyperscaler 间接 design-in，产能和良率扩张提前；Lumilens 5,000 万美元大部分确认并有追加订单；这需要多个尚未发生的事件同时成功。
+
+### 7.2 三情景产业评分
+
+评分向量顺序为“重要性/紧迫性/供需紧张/垄断能力/溢价能力”，满分 5。
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 | 变化逻辑 |
+|---|---|---|---|---|
+| Infinity 800G | 5/5/4/2/2 | 5/5/5/3/3 | 5/5/5/3/4 | 量产和复购可提高客户锁定，但 800G 竞争者众多 |
+| Teralight 1.6T | 5/5/4/2/3 | 5/5/5/3/4 | 5/5/5/4/4 | 1.6T 短缺最明显，终端认证后溢价才成立 |
+| Starlight/LightBar | 5/4/5/2/3 | 5/5/5/3/4 | 5/5/5/4/5 | ELS 是 CPO/光 I/O 刚性瓶颈，可靠性和冗余决定壁垒 |
+| Blazar | 5/3/4/3/4 | 5/4/5/4/4 | 5/5/5/4/5 | 若 2028 量产路线提前，技术差异化价值显著 |
+| Lumilens EOI | 5/4/3/2/3 | 5/5/4/3/4 | 5/5/5/4/5 | 订单兑现和 hyperscaler 资格是从概念到平台的分界 |
+| QCI TFLN 3.2T | 4/2/3/2/3 | 5/3/4/3/4 | 5/4/5/4/5 | 400G/lane 若提前放量，时间价值大幅上升 |
+
+估值反推：以 14.34 亿美元基本市值计算，三个情景对应一年后收入 P/S 约 **31.9 倍/11.0 倍/4.4 倍**；若以约 6.3 亿—6.4 亿美元的粗略现金调整后企业价值计算，则 EV/S 约 **14.1 倍/4.9 倍/2.0 倍**。只有乐观以上情景能明显缓解当前估值压力。按 45%—55%正常化毛利率和约 7,000 万—9,000 万年度费用估算，公司收入需约 **1.3 亿—1.8 亿美元**才接近经营盈亏平衡；基准情景仍会亏损，乐观情景接近拐点。
+
+## 八、BOM、每端口/每 GPU/每 rack/每 MW 内容量和价格传导
+
+### 8.1 计算口径
+
+为避免把系统端口重复计算，本文定义：
+
+- “每 optical port”＝一个光模块端点；一条双端链路有两个端点。
+- 标准 AI rack 假设 **72 颗 GPU、约 120kW IT 功率**；1MW IT 约 **8.3 个 rack、600 颗 GPU**。不同架构可在 500—650 GPU/MW 波动。
+- 含交换机端按 GPU 分摊后，800G 端点等效量假设 **1.0—2.0 个/GPU**；1.6T 为 **0.5—1.5 个/GPU**。这不是 POET 披露，而是 topology 模型。
+- “内容量”均假设 100% POET design-win；真实收入还要乘以 POET 渗透率、良率和客户采购份额。
+
+### 8.2 物理 BOM 与 POET 内容
+
+| 产品 | 端口内 POET 物理内容 | 外部模块/系统 BOM | POET 单端点 ASP 模型 |
+|---|---|---|---:|
+| Infinity 800G 2xFR4/DR8 | **2×400G Infinity Tx + 1×800G Rx＝3 颗 engine**；Tx 合计 8 个 EML、Driver、MUX、monitor PD/thermistor；Rx 含 8 PD、octal TIA、DMUX | 800G DSP/FEC、PCB、MCU/EEPROM、OSFP/QSFP-DD 外壳、FAU/连接器/光纤、散热 | **450—800 美元** |
+| Teralight 1.6T | **1×Tx + 1×Rx＝2 颗 engine**；8×200G lanes；OFC 原型使用 4 颗双通道 2×200G Mitsubishi EML die | 8×224G electrical DSP/FEC、PCB、OSFP、连接器、散热 | **700—1,200 美元** |
+| Starlight/LightBar ELS | 4/8/16 通道 InP DFB/CW laser、SiON interposer、splitter/combiner/MUX、monitor PD、thermistor | TEC、控制电路、SmartFAU、fiber array、ELSFP cage/连接器、冗余光源 | **800—1,800 美元/ELS** |
+| Blazar | 多通道高功率 hybrid laser、interposer 和被动光路；具体 die 数未公开 | ELSFP/SmartFAU、冗余、热管理、控制 | **1,000—2,500 美元/单元** |
+| Lumilens EOI | Lumilens SiPh/mixed-signal chipset + POET EOI/interposer + lasers/PD/TIA/Driver + FAU | 可插拔/NPO/CPO package、控制/DSP、散热；架构仍在开发 | **700—1,500 美元/端点** |
+| QCI 3.2T TFLN | 8×400G/lane TFLN modulator、CW/ELS、Driver、PD/TIA、interposer | 3.2T DSP/控制、先进封装和光纤耦合 | **1,200—2,500 美元/端点** |
+
+Infinity 的端点结构直接来自[>500 万美元订单公告](https://www.poet-technologies.com/news/poet-technologies-receives-5-million-production-order-for-800g-optical-engines)和产品页；ASP/毛利率是由 2026 年 30,000 颗交付、市场模块 ASP 和供应链 BOM 反推，不是公司报价。
+
+### 8.3 每 GPU、rack 和 MW 的真实内容量模型
+
+| 产品 | 每 port | 每 GPU | 72-GPU rack | 1MW IT（约600 GPU） |
+|---|---|---|---|---|
+| Infinity 800G | 3 颗 engine；450—800 美元 | 3—6 颗；450—1,600 美元 | 216—432 颗；**3.2万—11.5万美元** | 1,800—3,600 颗；**27万—96万美元** |
+| Teralight 1.6T | 2 颗 engine；700—1,200 美元 | 1—3 颗；350—1,800 美元 | 72—216 颗；**2.5万—13.0万美元** | 600—1,800 颗；**21万—108万美元** |
+| Starlight/ELS | 每 1.6T 等效端点 0.5—1 个，冗余可加倍 | 0.25—1 个；200—1,800 美元 | 18—72 个；**1.4万—13.0万美元** | 150—600 个；**12万—108万美元** |
+| Blazar | 架构同 ELS，2028 前不作为主流端口内容 | 0.25—1 个；250—2,500 美元 | 18—72 个；**1.8万—18.0万美元** | 150—600 个；**15万—150万美元** |
+| Lumilens EOI | 1 个 module/engine 等效端点；700—1,500 美元 | 0.5—1.5 个；350—2,250 美元 | 36—108 个；**2.5万—16.2万美元** | 300—900 个；**21万—135万美元** |
+| QCI 3.2T TFLN | 1 个 3.2T 等效端点；1,200—2,500 美元 | 0.25—0.75 个；300—1,875 美元 | 18—54 个；**2.2万—13.5万美元** | 150—450 个；**18万—112.5万美元** |
+
+这些数值是“若 POET 赢得该端口”的地址化内容量，不是每个 AI rack 必然采购。当前可插拔 scale-out 网络更容易对应 Infinity/Teralight；ELS/Blazar/EOI/TFLN 取决于 CPO/NPO/scale-up 光化，不能与可插拔端口直接相加。
+
+### 8.4 价格传导链
+
+AI GPU/XPU 扩张 → 交换端口和链路数增加 → 800G/1.6T 模块需求 → 模块厂锁定 DSP、EML/laser、PD/TIA、PIC/engine、FAU、测试和组装 → POET engine ASP/良率 → 上游器件和 OSAT 成本。
+
+| 环节 | 2026 价格/价值模型 | 谁有定价权 | POET 风险 |
+|---|---:|---|---|
+| 800G 完整模块 | 约 700—1,200 美元 | 供不应求阶段模块厂/高端器件厂 | POET 端点内容约 40%—70%，但需终端认证 |
+| 1.6T 完整模块 | **1,250—2,100 美元** | EML、DSP、已知良品 PIC、耦合测试 | POET 内容约 33%—70%；2027 价格下降会压 ASP |
+| EML/DFB/CW laser | 紧缺，InP 供给到 2026 年末才缓和 | Coherent/Lumentum/Mitsubishi/Sivers 等 | POET并不垄断激光 die，可能先受成本上涨 |
+| 光引擎/中介层 | 价值取决于减少主动对准、良率和测试成本 | 已认证的集成平台 | 若不能证明总成本低于成熟 SiPh/传统方案，客户不会为技术叙事溢价 |
+| 模块装配 | 规模大但同质化较高 | 大型模块厂和 OSAT | POET若做完整模块，毛利会被 DSP、库存和质保摊薄 |
+
+项目内[《LPO/LRO 线性光模块》](../../行业调研/AI网络_光互联_铜互联/行业调研_LPO_LRO线性光模块_2026-07-10.md)和[OFC 2026 更新](../../行业调研/产业背景/顶级会议信息/ofc_2026_conference_update.md)显示，LPO/LRO、XPO、CPO 会并行演进；“去 DSP”可能降低完整模块 BOM，却也可能改变 POET 所集成 Driver/TIA 和终端认证方式。
+
+## 九、产能、供应链采纳和认证阶段
+
+### 9.1 当前产能能力
+
+公司 2024 年曾称 Malaysia+SPX 可达到 **超过 100 万颗/年**；2026 AGM 又称 2027 年底 100 万颗/月是“超过当前 10 倍”。两者交叉后，当前合理推算约 **8万—10万颗/月、约 100 万颗/年**。
+
+以每颗 engine 综合 ASP 200—300 美元计算，当前理论年化收入产能约 **1.92 亿—3.60 亿美元**。但公司 2026 年只计划交付 >30,000 颗，即平均约 2,500 颗/月、只使用理论年产能约 3%。这说明当前瓶颈不是厂房面积，而是：
+
+1. 客户/终端资格审核；
+2. 有源 die 供应和 known-good-die；
+3. 晶圆级贴装、切割、封装后的良率；
+4. 测试吞吐和返修；
+5. 订单可执行性。
+
+马来西亚制造链为 Globetronics（高速 engine）+ NationGate（光源）+ POET 自有设备/工艺，SPX/深圳保留部分能力；公司没有完整披露晶圆厂、每站 UPH、良率、报废率和客户审厂结果。
+
+### 9.2 当前采用/认证
+
+| 产品 | 当前采纳阶段 | 已知认证/证据 | 缺失项 |
+|---|---|---|---|
+| Infinity 800G | **P1 生产订单/P2 客户资格审核** | 两笔 >550 万美元订单；Globetronics 已装机 | 客户名称、终端 hyperscaler 资格、良率、出货完成、复购 |
+| Teralight 1.6T | **P2 sampling/P3 联合开发** | Semtech Rx 可送样；Lessengers/LITEON 项目 | 完整模块可靠性、终端 design-in、量产 PO |
+| Starlight/LightBar | **P1/P2 HVM 与 NRE** | 公司称 Q2 HVM、新客户显著 ELS NRE | 客户名称、数量、GR-468/可靠性数据、收入 |
+| Blazar | **P3 演示/开发** | OFC 展示；公司目标 2028 scale deployment | 工程样品到客户资格之间的全部里程碑 |
+| Lumilens EOI | **P3 联合开发** | 5,000 万美元条件订单；2026 年末工程样品 | 产品定义、终端客户、可靠性、良率、付款进度 |
+| QCI TFLN 3.2T | **P3 共同开发** | 目标 2026H2 完成开发 | 400G/lane BER/功耗、封装、客户样品和量产资格 |
+
+公司没有披露 GR-468、Telcordia、IEEE interoperability、hyperscaler AVL 等具体认证编号。ECOC/OFC 奖项和现场演示只能证明工程性能/市场关注，不能替代客户可靠性和量产认证。
+
+### 9.3 一年后产能三情景
+
+| 2027-06/07 情景 | 月产能 | 年化颗数 | 加权 ASP | 理论收入产能 | 供应链采纳 | 认证阶段 |
+|---|---:|---:|---:|---:|---|---|
+| **基准** | 25 万/月 | 300 万 | 220—300 美元 | **6.6亿—9.0亿美元** | 2—3 家模块/系统客户小批量；800G 复购，1.6T/ELS 试产 | Infinity 至少一个终端合格；Teralight/ELS 完成工程资格；EOI 工程样品 |
+| **乐观** | 50 万/月 | 600 万 | 250—325 美元 | **15.0亿—19.5亿美元** | 4—6 个项目，至少一个 Tier-1 间接 design-in；关键 laser 长协 | 800G/1.6T 进入 AVL；ELS 形成第二供应源；EOI 首个生产资格 |
+| **极度乐观** | 75 万/月 | 900 万 | 275—350 美元 | **24.75亿—31.5亿美元** | hyperscaler/交换机生态采用，多产品同时 HVM | 800G/1.6T/ELS 多平台合格；EOI 提前量产；TFLN 客户送样 |
+| 公司 2027 年底目标 | 100 万/月 | 1,200 万 | 200—350 美元 | **24亿—42亿美元** | 管理层目标，不是订单指引 | 需要 H2 2026 的 5,000 万设备投入按时到位并通过客户审厂 |
+
+“理论收入产能”只表示工具和组装吞吐×ASP，不代表订单、良率或收入。对于 POET，未来一年最容易被市场误读的是把名义产能当作 demand-backed capacity。
+
+将总产能按产品线分配后，得到以下**年化美元产能**；各行是可分配设备、产品组合和 ASP 的模型，不是管理层分产品指引，区间合计与上表大致一致。
+
+| 产品/业务 | 当前理论年产能 | 2027-06/07 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|---:|
+| Infinity 800G | 1.00亿—1.60亿 | **3.50亿—4.50亿** | **7.00亿—8.50亿** | **9.00亿—11.0亿** |
+| Teralight 1.6T | 2,500万—5,500万 | **1.00亿—1.50亿** | **3.00亿—4.00亿** | **6.00亿—7.50亿** |
+| Starlight/LightBar | 5,000万—1.00亿 | **1.50亿—2.20亿** | **3.00亿—4.00亿** | **4.50亿—6.00亿** |
+| Blazar | 500万—1,500万试制能力 | **2,000万—3,500万** | **6,000万—9,000万** | **1.20亿—1.80亿** |
+| Lumilens EOI | 0—500万 pilot | **3,000万—4,500万** | **1.00亿—1.50亿** | **3.00亿—4.00亿** |
+| QCI TFLN 3.2T | 0—200万研发能力 | **1,000万—2,000万** | **4,000万—6,000万** | **1.05亿—1.20亿** |
+
+未来采用和认证仍须逐产品判断：
+
+| 产品/业务 | 基准认证/采纳阶段 | 乐观阶段 | 极度乐观阶段 |
+|---|---|---|---|
+| Infinity 800G | 2—3 家模块客户、至少一个终端资格；现有订单复购 | 4—6 个模块项目、一个 Tier-1 间接 AVL | 多个 hyperscaler/交换平台合格，形成 dual-source 地位 |
+| Teralight 1.6T | 完成 Lessengers/Semtech 类模块工程资格，小批量 | 至少一个 1.6T 生产 PO 并进入 AVL/HVM | 多模块厂量产、200G/lane 成为 POET 最大收入线 |
+| Starlight/LightBar | 一个 ELS NRE 转生产，完成可靠性/热循环 | 2—3 个 ELSFP/CPO 项目合格，形成第二供应源 | ELSFP 接口标准化并获头部平台采用 |
+| Blazar | 保持 P3 工程样品/系统 demo，2028 路线不变 | 提前进入 P2 客户 EVT/DVT | 2027H1 出现 P1 pilot PO，但规模 HVM 仍更可能在 2028 |
+| Lumilens EOI | 工程样品、EVT 和首批资格付款 | DVT/PVT 完成，5,000 万订单部分交付 | hyperscaler 验证提前并进入 HVM；这是极低概率关键假设 |
+| QCI TFLN 3.2T | 实验室完成 400G/lane engine、无生产认证 | 客户 samples/interoperability，进入 EVT | 一个客户完成 DVT/PVT；仍不宜假设大规模通用认证 |
+
+EVT/DVT/PVT 分别指工程、设计和生产验证；公司目前没有公开对应客户文档，表中是未来里程碑定义，不是已经取得的证书。
+
+## 十、按订单积压与供给推导未来一年增速
+
+### 10.1 订单瀑布和收入实现折扣
+
+| 可见收入池 | 标题金额 | 基准确认 | 乐观确认 | 极度乐观确认 | 主要折扣 |
+|---|---:|---:|---:|---:|---|
+| 2025-09 >50 万订单 | >50 万 | 30 万 | 50 万 | 80 万（含追加） | 原计划 2026 年初交付，但截至 7 月没有明确完成公告 |
+| 2025-10 >500 万 Infinity | >500 万 | 450 万 | 600 万 | 1,000 万（含复购） | 未命名客户、无押金/罚则披露；H2 交付 |
+| Lumilens EOI 初始 PO | 5,000 万 | 300 万 | 1,500 万 | 5,000 万 | 开发、最终资格、扩产均为前置条件；工程样品到 2026 年末 |
+| 其他 Infinity/Teralight 跟单 | 未披露 | 2,400 万 | 6,500 万 | 1.50 亿 | 需要客户复购、终端 design-in 和 1.6T 量产资格 |
+| ELS NRE/产品 | “显著 NRE”，金额未披露 | 1,000 万 | 3,500 万 | 9,000 万 | 客户匿名；Blazar 规模部署仍指向 2028 |
+| TFLN/其他 NRE | 未披露 | 320 万 | 850 万 | 2,420 万 | 主要是工程里程碑，非量产 |
+| **未来 12 个月总收入** | 不能直接相加为 backlog | **4,500 万** | **1.30 亿** | **3.25 亿** | 对应前述产品情景 |
+
+Lumilens 订单的独立性也需折价：POET 同时授予 Lumilens 最多 **2,292.1408 万股**、8.25 美元行权价、9 年期权证；其中 229.214 万股立即可行权，其余随 Lumilens 对未来累计最高 5 亿美元订单付款分批归属。它能对齐长期利益，却也意味着订单方获得巨大股权激励，不能把订单视为完全无激励的第三方需求。
+
+### 10.2 供给与需求的交叉判断
+
+- 行业需求确实紧：项目内研究显示 2026 年以太网光学收入约 +65%、需求比供给高约 30%，1.6T 出货超过 1,000 万只；EML/InP、高功率 CW laser、光耦合和测试是瓶颈。
+- 但 POET 的“紧缺”是二阶受益：只有进入客户 AVL 后，行业短缺才会转成其订单。未认证供应商不会因为行业缺货自动获得量。
+- 公司拥有约 8 亿美元流动性，可以预付 wafer/laser、签长期供货、购买设备，显著降低供应风险；反面是设备先行可能形成闲置产能。
+- 30,000 颗 2026 指引×200—300 美元/颗＝600 万—900 万美元产品收入，与 2026E 938 万美元一致；如果 Q2/Q3 财报仍只有数十万美元收入，全年指引将需要极端 Q4 集中交付。
+- 取消率无法按金额计算。已知事实是 Celestial 一个完整客户项目 100%取消；其他 PO 未披露可取消条款。模型应对匿名订单保留 10%—30%执行折扣，对 EOI 在一年内保留 70%—95%时间/资格折扣。
+
+## 十一、竞争格局、技术主流性与客户替换成本
+
+### 11.1 各产品竞争对手
+
+| 战场 | 主要竞争者/替代者 | POET 优势 | POET 劣势 |
+|---|---|---|---|
+| 800G/1.6T 可插拔 engine/PIC | Coherent、Lumentum、Innolight、Eoptolink、AAOI、Cisco/Acacia、Intel SiPh、OpenLight/Tower、NewPhotonics、DustPhotonics | 小尺寸、去线焊/主动对准、集成 MUX/DMUX、可混合多种有源 die | 竞争者已有大规模收入、良率、终端资格和供应链；POET没有可验证成本曲线 |
+| 完整模块 | Innolight、Eoptolink、Fabrinet、Coherent、Lumentum、Luxshare/FIT 等 | engine BOM 可能简化模块装配 | 做完整模块会与客户竞争，并承担 DSP、库存、质保和降价 |
+| ELS/ELSFP | Lumentum、Coherent、Sivers、Sumitomo、Mitsubishi、O-Net、Broadcom/NVIDIA 生态 | 4/8/16 通道、SiON 被动光路、SmartFAU、潜在低成本 | 高功率、寿命、冗余和现场可换性尚未由大客户量产验证 |
+| Optical Interposer/CPO/NPO | Broadcom、NVIDIA、Marvell/Celestial、Ayar Labs、Lightmatter、Ranovus、Intel、Cisco、GF/OpenLight、TSMC/OSAT | 器件无关、低损耗 SiON、被动贴装，理论资本效率高 | 头部竞争者拥有 ASIC/GPU/PDK/先进封装和直接 hyperscaler 入口 |
+| 3.2T/400G-lane/TFLN | OpenLight、Coherent、Broadcom、HyperLight、各 TFLN 初创/晶圆厂 | 可把新型调制器纳入统一 interposer | 仍在共同开发，400G/lane DSP、封装、测试和可靠性均未成熟 |
+| XPU 光 I/O | Ayar TeraPHY/SuperNova、Lightmatter Passage、Marvell Photonic Fabric、Xscape 等 | 中介层技术可向 chip-to-chip 延伸 | 没有 UCIe/大客户封装平台的公开 design-in；Celestial 订单取消是负面样本 |
+
+### 11.2 技术是不是未来主流
+
+- **主流且紧迫：**800G、200G/lane 的 1.6T 可插拔、EML/SiPh PIC、外置高功率光源、FAU/耦合/测试。POET 产品方向正确。
+- **路线可行但非唯一：**SiON Optical Interposer。独立实验支持低损耗和异质集成，但 OpenLight 的 InP-on-Si、传统 silicon photonics、EML array、glass/polymer waveguide、fan-out optical packaging 都可达到类似系统目标。
+- **未来主流但时点较晚：**交换机侧 CPO/NPO。NVIDIA/Broadcom 已有少数生产平台，但 2026 单位渗透约 0.5%；ELS 和可拆卸 FAU 比 GPU 封装内光 I/O 更早变现。
+- **高期权、非当前主流：**3.2T/400G-lane TFLN、封装内 GPU-to-GPU optical I/O。真正显著收入更可能在 2027H2—2028。
+- **可能延后 CPO 的替代方案：**1.6T/3.2T pluggable、LPO/LRO、液冷 12.8T XPO、NPO/CPX，以及 rack 内高速铜。POET 不能只押单一路线。
+
+### 11.3 护城河、溢价和替换成本
+
+POET 的专利/工艺壁垒主要在被动对准、低损耗波导、晶圆级集成测试和模块 BOM 简化。技术差异化可评 **3.5/5**，但当前商业垄断力仅 **2/5**、定价权 **2—2.5/5**：
+
+- **认证前替换成本低—中。**客户可以并行测试 SiPh、EML 或其他 engine，POET 若延期可在量产前被替换。
+- **认证后替换成本中—高。**更换 Tx/Rx engine 会影响 PCB、DSP/FEC、热设计、firmware、光纤耦合、可靠性和终端 AVL，通常需重新验证 6—12 个月以上。
+- **但大客户仍能压价。**hyperscaler/模块厂往往要求 dual-source、年度降价和开放接口；设计锁定不等于垄断。
+- 真正溢价能力要由三个数字证明：量产良率、每 Gb/s 功耗/总成本、客户复购 ASP。公司目前均未披露。
+
+## 十二、过去半年会议、技术报告、行业论坛与渠道验证
+
+### 12.1 支持性证据
+
+| 证据 | 内容 | 能证明什么 | 不能证明什么 |
+|---|---|---|---|
+| OFC/ECOC 演示和奖项 | 1.6T Teralight、Blazar、Starlight 等现场展示；ECOC 获混合 PIC/集成奖 | 工程性能、封装创新和市场关注 | 客户终端资格、量产良率、复购 |
+| 2026 SiON/Si interposer 论文 | 400G 实验链路，集成 InP EML/PD、Driver/TIA | 路线在物理和封装上可行 | 不是 POET 专属，也不是商业认证 |
+| Semtech 联合发布 | 1.6T Rx 采用 FiberEdge 200G/lane，可立即送样 | 接收端器件生态真实 | 完整 1.6T 模块订单 |
+| 行业供需 | 1.6T 快速放量、InP/EML/测试紧缺 | POET 所在环节 TAM/紧迫性高 | POET 一定获得份额 |
+
+### 12.2 反向渠道和历史兑现
+
+2026 年 4—5 月出现两份做空研究：
+
+- [Wolfpack Research 2026-04-14 报告](https://www.wolfpackresearch.com/_files/ugd/b084d8_1245b056bcfb4940836e7031a7083c07.pdf)强调商业化多次延期、长期微型收入、股本稀释和 2025 PFIC 风险。该机构披露持有空头，观点有利益冲突；但 POET 次日正式确认公司预计 2025 年属于 PFIC，并提供 QEF 信息及美国迁册计划，说明其中 PFIC 硬事实成立。[公司 PFIC 回应](https://www.poet-technologies.com/news/poet-technologies-provides-clarity-on-its-passive-foreign-investment-company-pfic-status)
+- [Night Market Research 2026-05-15](https://nightmarketresearch.com/poet/)称其在 OFC 访问多家所谓伙伴，Foxconn/Luxshare/Adtran/Semtech 等关系被描述为停滞、低优先级或仅组件合作，并质疑未命名 500 万美元客户和 Lumilens。该机构同样披露空头，匿名访谈不可独立验证；但 LITEON 官方电话会“尚无实际业务”、Celestial 全部订单取消、财报收入极低和 3,000 万美元未披露贷款均可由原始资料交叉确认。
+
+历史上 2023 年 BFYY 曾宣布 >300 万美元订单和三年约 3,000 万美元预测，后续收入没有显示相称交付；2023—2024 年 Luxshare/FIT 等量产时间也多次后移。最合理的处理不是认定所有合作虚假，而是对每个公告按证据等级计价：
+
+- **P1：**明确生产订单+付款/交付+财报收入；
+- **P2：**客户送样/资格审核；
+- **P3：**联合开发、MoU、演示或奖项；
+- **P4：**公司 TAM/产能模型。
+
+POET 当前只有部分 Infinity 订单接近 P1；Teralight/ELS 多为 P2；Blazar/EOI/TFLN 多为 P3。投资论坛中把 8.30 亿美元“累计融资”写成 8.30 亿现金、把 5,000 万美元条件 PO 写成已确认收入、把 100 万颗/月目标写成现有订单，均属口径错误。
+
+### 12.3 法律和治理事项
+
+- 2026-04-28，美国新泽西联邦地区法院立案 Jones v. POET Technologies Inc. et al，案号 3:26-cv-04717，性质为证券诉讼；目前是原告指控，不是法院认定。[Justia docket](https://dockets.justia.com/docket/new-jersey/njdce/3%3A2026cv04717/596932)
+- Q1 财报披露公司被威胁并列为某待决法律行动被告，管理层认为不会产生重大影响；结果尚不确定。
+- Celestial 订单被取消的官方理由是 POET 违反保密义务披露订单/出货信息，直接损害大客户沟通可信度。
+- CFO Thomas Mika 拟在 2026 年退休，公司正寻找继任者；恰逢扩产、美国迁册、复杂权证和大额资金管理，财务控制过渡风险上升。
+
+## 十三、风险清单与跟踪指标
+
+| 风险 | 概率/影响 | 最早验证指标 |
+|---|---|---|
+| 量产延期/低良率 | 高/高 | 2026Q2—Q4 产品收入、毛利、出货颗数、报废率 |
+| 匿名 500 万订单取消或缩量 | 中/高 | H2 交付确认、应收/合同负债、客户复购 |
+| Lumilens 条件 PO 延迟 | 高/高 | 2026 年末工程样品、实际付款、权证归属和 2027 资格 |
+| 1.6T 资格落后于竞品 | 中高/高 | Semtech/Lessengers/LITEON 的正式生产 PO 和终端 AVL |
+| EML/InP/PD/TIA 短缺 | 中/中高 | 长期供货协议、采购承诺、库存和 ASP |
+| 产能闲置 | 中高/高 | 设备投入与实际利用率；30,000 颗目标完成度 |
+| 资本配置 | 中/高 | 3,000 万借款人披露、并购标的、5,000 万 capex 回报 |
+| 稀释 | 高/高 | 权证行使、Lumilens 付款触发、RSU/期权、未来融资 |
+| 客户集中/保密 | 高/高 | 客户数量、单一客户收入占比、NDA 纠纷 |
+| PFIC/迁册/诉讼 | 中/中高 | 2026 PFIC 判定、美国迁册时间、案件进展 |
+| 竞争/技术替代 | 高/高 | 1.6T ASP、CPO/XPO/LPO 路线、POET 每 Gb 成本/功耗 |
+| 估值压缩 | 高/高 | 即使技术不失败，基准情景仍约 32 倍 forward sales |
+
+未来四个季度最值得跟踪的十个硬指标：
+
+1. 产品收入与 NRE 是否分开披露；
+2. 2026 年 30,000 颗交付完成率；
+3. >500 万美元订单实际出货和回款；
+4. 800G/1.6T engine 的 ASP、产品毛利率和良率；
+5. Globetronics/NationGate 审厂和月产量；
+6. 新 ELS NRE 的客户、金额和里程碑；
+7. Lumilens 现金付款、工程样品和资格；
+8. 1.6T 是否出现明确量产 PO/终端 design-in；
+9. 3,000 万美元贷款的借款人、担保及资本配置逻辑；
+10. 完全稀释股数、美国迁册和 CFO 继任。
+
+## 十四、最终投资判断
+
+**业务真实性：**POET 不是“没有技术”的壳公司。其 Optical Interposer 解决的被动对准、异质集成、光路损耗和测试吞吐是真问题；独立 SiON/Si 实验、Semtech/Sivers/Mitsubishi 器件合作和生产 PO 均提供一定外部验证。
+
+**商业成熟度：**仍是 pre-scale。2025 全年 107.5 万美元、2026Q1 50.3 万美元收入与数千万订单/数十亿市值之间存在巨大鸿沟；客户认证、良率和回款才是决定性数据。当前不能把 POET 与 Coherent、Lumentum、Innolight 或 Eoptolink 的量产业务等量齐观。
+
+**AI 暴露：**当前收入大概率主要来自 AI/datacenter 相关 NRE 和样品，但绝对额极小；800G/1.6T 是直接近端暴露，ELS 是中期使能层，Blazar/EOI/TFLN 是长期期权。POET 的 AI 叙事方向正确，规模尚未被财报证明。
+
+**财务与估值：**约 8 亿美元估算流动性使公司有能力完成扩产，也给市值提供现金底；但约 14.34 亿美元基本市值仍隐含至少乐观情景的一部分。基准情景 4,500 万美元未来十二个月收入仍对应约 32 倍 P/S，且公司继续亏损；只有 1.3 亿美元以上收入、45%—55%毛利和客户复购同时实现，估值才开始进入可用经营数据解释的区间。
+
+**结论：**POET 可被列入“高波动、事件驱动、量产验证型”观察名单，而不应按成熟盈利公司配置。最强多头信号不是再宣布一个合作，而是**一个已命名或可验证的 Tier-1 客户、连续两个季度产品收入跃升、披露真实毛利率、以及现有订单完成回款**；最强空头信号是 H2 2026 仍无产品收入阶跃、500 万美元订单再延期、Lumilens 没有现金付款、或资本继续流向不透明交易。
+
+## 十五、核心来源与方法
+
+### 公司/监管原始资料
+
+- [2026Q1 IFRS 财务报表与附注](https://www.sec.gov/Archives/edgar/data/1437424/000149315226023471/ex99-1.htm)
+- [2026Q1 业绩新闻稿](https://www.poet-technologies.com/news/poet-technologies-reports-first-quarter-2026-financial-results)
+- [2025Q4 业绩与 30,000 颗指引](https://www.poet-technologies.com/news/poet-technologies-reports-fourth-quarter-2025-financial-results)
+- [2026 AGM、产能、客户项目与资本开支](https://www.poet-technologies.com/news/poet-technologies-recaps-highlights-of-ceos-update-on-commercial-activities-and-provides-results-of-2026-agm)
+- [Lumilens EOI 订单及条件](https://www.poet-technologies.com/news/poet-technologies-and-lumilens-advance-wafer-level-photonic-integration-for-next-generation-ai-optical-networks)
+- [Celestial AI 订单取消](https://www.poet-technologies.com/news/poet-technologies-provides-purchase-order-update)
+- [4 亿美元融资](https://www.poet-technologies.com/news/poet-technologies-announces-closing-of-us400-million-investment)
+- [SPX 100%收购](https://www.poet-technologies.com/news/poet-completes-acquisition-of-super-photonics-xiamen)
+- [TSXV 自愿退市](https://www.poet-technologies.com/news/poet-technologies-to-proceed-with-voluntary-delisting-from-tsxv)
+
+### 产业、会议和技术
+
+- [项目内《Optical Interposer 与新型光引擎》](<../../行业调研/AI网络_光互联_铜互联/行业调研_Optical Interposer与新型光引擎_2026-07-10.md>)
+- [项目内《800G/1.6T 可插拔光模块》](../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md)
+- [项目内《CPO/NPO 与交换侧光引擎》](../../行业调研/AI网络_光互联_铜互联/行业调研_CPO_NPO与交换侧光引擎_2026-07-10.md)
+- [项目内《激光器、EML 与光器件》](../../行业调研/AI网络_光互联_铜互联/行业调研_激光器、EML与光器件_2026-07-10.md)
+- [项目内 OFC 2026 更新](../../行业调研/产业背景/顶级会议信息/ofc_2026_conference_update.md)
+- [2026 SiON/Si Optical Interposer 实验论文](https://arxiv.org/abs/2602.08284)
+
+### 独立/反向资料
+
+- [LITEON 2026Q1 官方电话会全文](https://www.liteon.com/upload/media/ir/conference/2026/Presentation/28-Apr-2026_18-00-00-2301-TW-LSEG_StreetEvents-2301.TW_-_Event_Transcript_of_Lite-On_Technology_Corp.PDF)
+- [Wolfpack Research 做空报告](https://www.wolfpackresearch.com/_files/ugd/b084d8_1245b056bcfb4940836e7031a7083c07.pdf)
+- [Night Market Research 做空/会议渠道报告](https://nightmarketresearch.com/poet/)
+- [证券诉讼 docket](https://dockets.justia.com/docket/new-jersey/njdce/3%3A2026cv04717/596932)
+
+模型原则：订单先按“现金/不可取消性—产品完成—客户资格—合格产能—交付回款”折扣；研发产品用绝对收入而不是夸张百分比；理论产能与真实利用率分开；当前可插拔收入、间接 ELS 暴露和长期 CPO/光 I/O 期权分层，不把合作、奖项或融资当作收入。

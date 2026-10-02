@@ -1,0 +1,416 @@
+# PSTG / Everpure（原 Pure Storage）公司调研：AI 数据中心存储、DirectFlash 与 Enterprise Data Cloud
+
+报告日期：2026-06-11（America/Los_Angeles）。  
+公司索引名称：Everpure PureStorage。项目索引股票代码：PSTG。市场现实：Pure Storage 于 2026-02-23 改名 Everpure，2026-04-17 起 NYSE 交易代码由 `PSTG` 改为 `P`；本报告文件名继续使用项目索引代码 `PSTG`。  
+正式归属目录：`公司调研/AI服务器_存储_EMS/`。  
+资料边界：项目内只读取 `公司调研/公司索引.md` 用于目录归属，并读取 `行业调研/` 下与 AI 存储、企业级 SSD、HDD/对象存储、AI 数据中心建设相关资料；未读取、引用或继承 `日度资料/`、`特征量化/`、其他公司调研报告或备份目录。外部资料优先使用公司公告、SEC、产品/技术页、NVIDIA/SPEC/行业技术资料和少量渠道/媒体线索。
+
+## 0. 结论摘要
+
+1. **Everpure/Pure Storage 是一家高毛利全闪存企业存储与数据管理平台公司，不是 NAND 厂，也不是普通服务器 OEM。** 它的核心价值在 `Purity 软件 + DirectFlash Modules + FlashArray/FlashBlade 系统 + Evergreen 订阅 + Portworx/Fusion/Cloud 数据管理`。2026 年投资人看它，已经不只看企业 SAN/NAS 更新，而是看三条增量：全闪存替代 HDD、hyperscaler DirectFlash 设计导入、AI factory 的高性能文件/对象/KV cache 数据路径。
+2. **最新 FY2027Q1 财报很强：收入 10.529 亿美元，同比 +35%；产品收入 5.765 亿美元，同比 +55%；订阅服务收入 4.764 亿美元，同比 +17%；RPO 38 亿美元，同比 +41%；ARR 20 亿美元，同比 +19%。** 公司把 FY2027 全年收入指引上调到 44.1-45.1 亿美元，同比 +20%-23%，非 GAAP operating income 指引 8.20-8.60 亿美元。
+3. **估值已经把 AI/存储景气折进去不少。** 2026-06-11 附近，NYSE:`P` 股价约 66.35 美元，市值约 221 亿美元，Yahoo Finance 显示 trailing P/E 约 100.8x、forward P/E 约 28.2x、P/S TTM 约 5.9x。以 FY2027 指引中值 44.6 亿美元收入计，市值/当年收入约 5.0x；以非 GAAP operating income 中值 8.4 亿美元计，市值/非 GAAP EBIT 约 26x。便宜不便宜取决于 FY2028 是否能继续 20%+ 增长，而不是 FY2027 是否能完成指引。
+4. **资产负债表健康，但利润质量要看 SBC 和供应链。** FY2027Q1 末现金、现金等价物和可交易证券 15 亿美元；总资产 47.50 亿美元；总负债 33.08 亿美元，其中 deferred revenue 约 23.77 亿美元；股东权益 14.42 亿美元。FY2026 末信贷额度无未偿借款，合规；FY2027Q1 operating cash flow 1.80 亿美元、free cash flow 1.12 亿美元。问题是 Q1 stock-based compensation 1.22 亿美元，占收入 11.6%，并且 NAND/DRAM/CPU 组件涨价会压产品毛利。
+5. **公司正在经历一次真实业务转型：从企业存储硬件公司，转成“AI 时代企业数据云 + 全闪数据中心平台”。** 过去三年关键变化包括：75TB/150TB/300TB DirectFlash 路线、FlashArray//E 和 //C 低成本 QLC 路线、2024 年 top-four hyperscaler DirectFlash design win、2025 年 FlashBlade//EXA AI storage、2025 年 Enterprise Data Cloud、2026 年改名 Everpure、计划收购 1touch 补 data intelligence/orchestration。
+6. **AI 相关收入当前还不是公司大头，但边际增速最高。** 可确认的大头仍是 FlashArray/FlashBlade 企业产品和订阅服务。基于公司披露、行业资料和渠道线索，FY2027Q1 AI/hyperscaler 直接或强相关收入估计约占总收入 10%-18%，其中 DirectFlash hyperscaler、FlashBlade//EXA、NVIDIA Enterprise AI Factory、AI data platform/Portworx 是主要来源；若 FY2027 后半供应链和客户验收顺利，一年后可升至 14%-25%，极度乐观可到 25%-35%。
+7. **订单能见度强在订阅/RPO，弱在传统产品 backlog。** RPO 38 亿美元是最硬的 backlog proxy，但主要来自非取消的 storage-as-a-service/订阅合同；公司 10-K 明确指出大部分产品订单在交付前通常可取消，因此未交付但可取消产品订单不进 RPO。FY2026 末 RPO 中只有 2.285 亿美元为 non-cancelable product orders。研究 PSTG 必须避免把全部 pipeline 当 backlog。
+8. **供给紧张同时是利好和风险。** 2026 年 AI 拉动 NAND/DRAM/CPU 供应，Everpure CEO 在客户信中称产品均价年初以来约 +70%，其高用量半导体组件成本自 2025 年中以来 +300%-900%，部分供应商无法按承诺量供货。短期这验证需求和供应紧张，长期则压产品毛利、延长客户报价周期、增加客户转向开放 SSD/白盒方案的动机。
+9. **竞争格局比普通企业存储更激烈。** 在企业存储中主要对手是 Dell、NetApp、HPE、IBM、Hitachi、Nutanix；在 AI 训练/推理数据路径中直接对手变成 VAST、WEKA、DDN、IBM Storage Scale、Dell AI Data Platform、NetApp AI Data Engine、Cloudian/MinIO/Ceph，以及 hyperscaler 自研存储。Pure 的壁垒是 DirectFlash 软硬件一体、Evergreen 客户锁定、数据效率、能耗/密度和高 NPS；风险是 proprietary media、NAND 不自给、STX/CMX 生态中竞争对手同样入围。
+
+## 1. 公司整体业务、投资人认知和产业链位置
+
+### 1.1 公司业务结构
+
+Everpure（原 Pure Storage）销售全闪存数据存储硬件、软件、订阅和云/数据管理服务。公司没有自有 NAND 晶圆厂，核心能力在于把 NAND、控制器、系统软件、数据服务和订阅交付做成一套可长期升级的平台。
+
+| 层级 | 主要业务 | 代表产品/型号 | 收入口径 | 投资含义 |
+|---|---|---|---|---|
+| Block / file / object 全闪阵列 | 企业数据库、虚拟化、Kubernetes、AI/HPC、备份、数据湖 | FlashArray//ST、//XL、//X、//C、//E、//RC20；FlashArray File/Object | Product revenue + support/subscription | 当前收入大盘，FlashArray 是现金牛，//C//E 承接 HDD/混闪替代 |
+| Scale-out AI/HPC 存储 | AI training、checkpoint、RAG、data lake、GPU feeding、large-scale inference | FlashBlade//S、FlashBlade//EXA | Product revenue + subscription/support | AI 存储弹性最高；EXA 是新增品类 |
+| DirectFlash / DFM | 自研 DirectFlash Modules，以 Purity 直接管理 NAND | 75TB DFM、150TB DFM、规划 300TB DFM；hyperscaler DirectFlash design win | 系统产品收入、可能有 royalty/licensing | 与标准 SSD/JBOD 拉开差异，也带来 proprietary 供应和价格传导风险 |
+| Evergreen / STaaS | 非中断升级、容量即服务、订阅和消费型存储 | Evergreen//One、Evergreen//Flex、Evergreen//Forever | Subscription services revenue、ARR、RPO | RPO 和 ARR 的核心来源，毛利和收入可见度高 |
+| Cloud-native / 数据平台 | Kubernetes 存储、统一控制平面、云原生块服务、AI Copilot | Portworx、Pure Fusion、Pure1 AI Copilot、Pure Storage Cloud Azure Native、Enterprise Data Cloud | Subscription / software / services | 从硬件存储转向数据管理平台，提升粘性和估值叙事 |
+| Data intelligence | 数据发现、语义上下文、数据编排 | 1touch（2026 年拟收购/整合） | 近期收入小，战略型 | 企业 RAG/AI governance 的潜在入口 |
+
+### 1.2 投资人心中的公司形象
+
+投资人通常把 Everpure/Pure Storage 看成：
+
+| 维度 | 市场认知 | 对估值的影响 |
+|---|---|---|
+| 高质量企业硬件/软件混合公司 | GAAP gross margin 常年约 69%-72%，non-GAAP gross margin 约 70%-74%，明显高于普通硬件 | 支持高于服务器 OEM 的收入倍数 |
+| 全闪存替代 HDD 的长期赢家 | 公司持续强调 DirectFlash + QLC + 能耗/密度优势；FlashArray//E、//C、//E family 直接指向 disk replacement | 如果 HDD 仍因 $/TB 占优而不被替代，长期 TAM 会下修 |
+| 订阅转型公司 | ARR、RPO、Evergreen//One、Evergreen//Flex 是估值稳定器 | 订阅增长 16%-19%，但不是 SaaS 纯软件速度；估值不能完全按软件公司给 |
+| AI 数据中心边际受益者 | FlashBlade//EXA、NVIDIA Enterprise AI Factory、DirectFlash hyperscaler、STX/CMX 伙伴 | 支持 FY2027 产品收入加速和估值溢价 |
+| 高估值、高 SBC、高供应链暴露 | forward P/E 接近 28x，P/S 接近 6x；NAND/DRAM/CPU 成本上涨；SBC 占收入双位数 | 业绩一旦回到低十几增长，估值容易压缩 |
+
+### 1.3 最近 3 年重大业务变动、转型和收购
+
+| 时间 | 事件 | 业务意义 |
+|---|---|---|
+| 2023 | 推出 FlashArray//E、75TB DirectFlash Module，并规划 150TB/300TB DFM | 把全闪从高性能层推向容量层，开始更直接挑战 nearline HDD 和混闪 |
+| 2024 | 取得 top-four hyperscaler DirectFlash design win；市场普遍将其与 Meta 关联 | 第一次把 Pure 的 DirectFlash 技术导入标准 hyperscale online storage，打开 enterprise 以外的 exabyte 级场景 |
+| 2025-03 | 发布 FlashBlade//EXA | 从传统 unstructured storage 扩展到 AI factory / HPC / large inference 的高吞吐 scale-out 文件/对象存储 |
+| 2025 | 发布 Enterprise Data Cloud；Fusion、Portworx、Cloud Azure Native 和 Pure1 AI Copilot扩展 | 从 storage array vendor 变成统一数据平面/控制平面叙事 |
+| 2026-02 | 公司名从 Pure Storage 改为 Everpure；宣布拟收购 1touch | 明确从“存储”品牌转向“data management / AI era data platform” |
+| 2026-04 | 宣布 ticker 从 PSTG 改为 P；发布供应链危机客户信 | 品牌切换完成；同时反映 AI 组件短缺导致价格和交付压力 |
+| 2026-05 | FY2027Q1 收入同比 +35%，FY2027 指引上调 | 验证 FY2027 不是单纯 rebrand，而是产品/订阅/hyperscaler 同时加速 |
+
+### 1.4 产业链位置
+
+Everpure 位于 AI 数据中心“存储系统与数据平台”层，而不是最上游半导体层，也不是最低毛利的整机组装层。
+
+```text
+NAND / DRAM / CPU / NIC / DPU
+        -> DirectFlash Module / controller / firmware / Purity
+        -> FlashArray / FlashBlade / EXA / storage appliance
+        -> Evergreen subscription / Fusion / Portworx / Pure1 / Enterprise Data Cloud
+        -> 企业、金融、医疗、政府、hyperscaler、NeoCloud、AI factory
+```
+
+对 AI 技术栈的意义是：GPU 需要持续被数据喂满；训练需要 checkpoint 和数据集吞吐；RAG/agent 需要对象/文件/向量/权限数据层；长上下文推理可能需要 KV cache/context memory 分层。Everpure 不卖 GPU，但如果存储路径导致 GPU idle、TTFT 变差或 checkpoint 变慢，客户会为更高性能、更高密度、更易运维的存储付费。
+
+## 2. 最新估值、财务健康度和资产负债表
+
+### 2.1 股价和估值快照
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 当前交易代码 | `P` | 2026-04-17 起 | 项目索引仍为 `PSTG`；公司已改名 Everpure |
+| 股价 | 约 66.35 美元 | Investing.com，2026-06-11 | 当日区间约 64.80-67.48 美元；52 周区间约 50.20-100.59 美元 |
+| 市值 | 约 221 亿美元 | Yahoo Finance，2026-06-11 附近 | 以当前股价和约 3.33 亿股稀释/流通口径推算相符 |
+| Trailing P/E | 约 100.8x | Yahoo Finance，2026-06-11 附近 | GAAP trailing earnings 仍低，P/E 高 |
+| Forward P/E | 约 28.2x | Yahoo Finance，2026-06-11 附近 | 反映 FY2027/FY2028 非 GAAP EPS 增长预期 |
+| P/S TTM | 约 5.87x | Yahoo Finance，2026-06-11 附近 | TTM 收入约 39 亿美元级别 |
+| FY2026 收入 | 约 36.7 亿美元 | 公司 FY2026，截止 2026-02-01 | 同比 +16% |
+| FY2027 指引收入 | 44.1-45.1 亿美元 | 2026-05-27 FY2027Q1 指引 | 同比 +20%-23% |
+| 最新季度收入增速 | +35% YoY | FY2027Q1，截止 2026-05-03 | 产品收入 +55%，订阅服务 +17% |
+| 最新 GAAP gross margin | 68.7% | FY2027Q1 | non-GAAP gross margin 70.1% |
+| 最新 GAAP net margin | 2.3% | FY2027Q1 | net income 2,408 万美元 / revenue 10.529 亿美元 |
+| 最新 non-GAAP operating margin | 15.1% | FY2027Q1 | non-GAAP operating income 1.59 亿美元 |
+
+估值判断：公司当前不是“便宜硬件股”，而是按“高质量基础设施平台 + AI 存储 optionality + 订阅可见度”定价。若 FY2028 收入只能回落到 12%-15% 增速，5x sales 和 28x forward P/E 偏贵；若 hyperscaler/AI storage 让 FY2028 仍维持 20%+ 增速且 non-GAAP operating margin 接近 20%，估值可被支撑。
+
+### 2.2 资产负债表和现金流
+
+| 项目 | 最新数值 | 日期 | 评价 |
+|---|---:|---|---|
+| 现金、现金等价物和可交易证券 | 15 亿美元 | FY2027Q1 | 现金充足，可支持收购、供应链锁货和回购 |
+| 总资产 | 47.50 亿美元 | FY2027Q1 | 资产轻于制造业，主要是现金、应收、存货、递延佣金、商誉和使用权资产 |
+| 总负债 | 33.08 亿美元 | FY2027Q1 | 负债大头是递延收入，不是金融债 |
+| 股东权益 | 14.42 亿美元 | FY2027Q1 | 权益稳定，累计亏损仍在，但公司已 GAAP 盈利 |
+| 当前递延收入 | 12.50 亿美元 | FY2027Q1 | 订阅/服务预收，构成收入可见度 |
+| 非当前递延收入 | 11.28 亿美元 | FY2027Q1 | 说明多年期订阅合同较多 |
+| RPO | 38 亿美元 | FY2027Q1 | 同比 +41%；是未来收入能见度的核心指标 |
+| FY2026 末 purchase obligations | 5.658 亿美元 | FY2026 10-K | 主要为库存采购、软件服务和托管安排；12 个月内 4.188 亿美元 |
+| FY2026 末信贷额度 | 5.0 亿美元 revolver，无未偿借款 | FY2026 10-K | 财务杠杆低，covenant 合规 |
+| FY2027Q1 operating cash flow | 1.80 亿美元 | FY2027Q1 | 同比低于 FY2026Q1 的 2.84 亿美元，但仍强 |
+| FY2027Q1 free cash flow | 1.12 亿美元 | FY2027Q1 | FCF margin 10.6% |
+| FY2027Q1 SBC | 1.221 亿美元 | FY2027Q1 | 占收入 11.6%，稀释和利润质量需要跟踪 |
+
+健康度结论：资产负债表 **健康偏强**。公司不是靠重债扩张，递延收入和 RPO 支撑现金流，现金足以应对短期供应链锁货和小型收购。主要财务风险不是偿债，而是 **组件价格导致产品毛利下滑、SBC 稀释、回购消耗现金、hyperscaler 产品收入波动**。
+
+## 3. 最新和最近 4 次财报对比
+
+口径说明：公司披露 product revenue 和 subscription services revenue；没有按 FlashArray、FlashBlade、Portworx、AI、hyperscaler 单独披露收入。表中的 AI 数据中心收入占比为研究估算，主要根据产品收入增速、hyperscaler shipments/royalties、FlashBlade//EXA、NVIDIA reference architecture 和行业订单背景推断，置信度低到中。
+
+| 财报季度 | 发布/季度结束 | 总收入与增速 | Product revenue | Subscription services revenue | ARR / RPO | 毛利率与利润 | 订单、交期、取消率线索 | AI 数据中心相关收入占比估算 |
+|---|---|---:|---:|---:|---:|---|---|---|
+| FY2027Q1 | 2026-05-27 / 2026-05-03 | 10.529 亿美元，+35% YoY | 5.765 亿美元，+55% YoY；占 54.8% | 4.764 亿美元，+17% YoY；占 45.2% | ARR 20 亿美元，+19%；RPO 38 亿美元，+41% | GAAP GM 68.7%；non-GAAP GM 70.1%；GAAP op income 1,994 万美元；non-GAAP op income 1.59 亿美元；net income 2,408 万美元 | RPO 高增说明订阅/大单强；供应链仍紧，公司已涨价但吸收部分成本；取消率未披露 | 10%-18%。产品高增和 AI/hyperscaler 是边际驱动，但公司未披露准确金额 |
+| FY2026Q4 | 2026-02-25 / 2026-02-01 | 约 10.6 亿美元，+20% YoY；首次单季过 10 亿美元 | 约 6.2 亿美元，按总收入减订阅估算；包含 hyperscaler royalties | 4.40 亿美元，+14% YoY | ARR 19 亿美元，+16%；RPO 37 亿美元，+40% | GAAP GM 69.9%；non-GAAP GM 71.4%；GAAP op income 8,700 万美元；non-GAAP op income 2.26 亿美元；FCF 2.01 亿美元 | FY2026 末 RPO 含 2.285 亿美元 non-cancelable product orders；大部分产品订单可取消直到交付，不进 RPO | 8%-15%。Q4 受 hyperscaler shipment、DirectFlash 和大单拉动 |
+| FY2026Q3 | 2025-12-02 / 2025-11-02 | 9.645 亿美元，+16% YoY | 约 5.348 亿美元，+17.6% YoY；Blocks & Files 披露含 hyperscaler royalties | 4.297 亿美元，+14% YoY | ARR 18 亿美元，+17%；RPO 29 亿美元，+24% | GAAP GM 72.3%；non-GAAP GM 74.1%；GAAP op income 5,390 万美元；non-GAAP op income 1.962 亿美元 | 管理层称已超过 FY2026 全年 hyperscaler shipment 计划 2EB，Q4 还会继续出货；取消率未披露 | 7%-13%。hyperscaler royalties 已进入产品收入，AI storage 仍早期 |
+| FY2026Q2 | 2025-08-27 / 2025-08-03 | 8.610 亿美元，+13% YoY | 约 4.463 亿美元，按总收入减订阅估算 | 4.147 亿美元，+15% YoY | ARR 18 亿美元，+18%；RPO 28 亿美元，+22% | GAAP GM 70.2%；non-GAAP GM 72.1%；GAAP op income 490 万美元；non-GAAP op income 1.30 亿美元；FCF 1.501 亿美元 | Storage-as-a-Service offerings TCV sales +24%；公司上调全年收入和利润指引 | 5%-10%。AI 叙事增强，但收入仍以企业存储和订阅为主 |
+| FY2026Q1 | 2025-05-29 / 2025-05-04 | 7.785 亿美元，+12% YoY | 3.721 亿美元，约 +7% YoY | 4.063 亿美元，+17% YoY | ARR 17 亿美元，+18%；RPO 27 亿美元，+17% | GAAP GM 68.9%；non-GAAP GM 70.9%；GAAP op loss 3,117 万美元；non-GAAP op income 8,270 万美元 | Storage-as-a-Service offerings TCV sales +70%，说明订阅大单强；产品 backlog 未披露 | 4%-8%。AI 直接收入尚小，更多是 pipeline 和 design win |
+
+### 3.1 财报趋势解读
+
+1. **收入结构重新向 product 倾斜。** FY2026Q1 product revenue 仅 3.72 亿美元，占收入 47.8%；FY2027Q1 提升到 5.77 亿美元，占 54.8%。这说明 AI/hyperscaler、FlashArray/FlashBlade 刷新、价格上涨和产品交付共同推动 FY2027。
+2. **订阅仍是估值稳定器。** 订阅服务收入稳定 +14%-17%，ARR 从 17 亿美元升到 20 亿美元，RPO 从 27 亿美元升到 38 亿美元。订阅的意义不是短期爆发，而是给公司高毛利和现金流下限。
+3. **产品毛利波动要盯紧。** FY2026 产品毛利率约 67%，公司 10-K 称同比改善部分来自 product mix 和 hyperscaler royalties，但同时被更高组件成本抵消；公司预期 FY2027Q1 产品毛利会环比下降、全年正常化。FY2027Q1 总 GAAP gross margin 68.7%，低于 FY2026Q3/Q4。
+4. **RPO 很强，但不能等同产品 backlog。** FY2026 末 RPO 37 亿美元，其中只有 2.285 亿美元是 non-cancelable product orders；产品订单通常交付前可取消，因此 true product backlog 不透明。Q1 RPO 38 亿美元同比 +41%，主要说明订阅和大合同强。
+5. **AI/hyperscaler 信号更像收入加速器，不是当前收入主体。** FY2026Q3/Q4 已有 hyperscaler royalties 和 EB 级 shipment；FY2027Q1 product +55% 是强信号。但公司没有把 AI 或 hyperscaler 单独披露，研究必须用区间而不是单点。
+
+## 4. FY2027 最新指引、业务占比和重点产品
+
+### 4.1 FY2027 指引
+
+| 指引项目 | 公司指引 | 隐含增速 | 解读 |
+|---|---:|---:|---|
+| FY2027Q2 revenue | 10.95-11.05 亿美元 | +27%-28% YoY | Q1 强劲不是孤立事件；Q2 仍维持高二十增长 |
+| FY2027Q2 non-GAAP operating income | 1.95-2.05 亿美元 | +50%-58% YoY | 经营杠杆明显，但仍需观察产品毛利 |
+| FY2027 full-year revenue | 44.1-45.1 亿美元 | +20%-23% YoY | 指引中值 44.6 亿美元 |
+| FY2027 full-year non-GAAP operating income | 8.20-8.60 亿美元 | +29%-36% YoY | 指引中值 non-GAAP operating margin 约 18.8% |
+
+### 4.2 FY2027Q1 业务收入占比
+
+| 业务 | FY2027Q1 收入 | 占比 | 同比增速 | 毛利率判断 | 重要性 |
+|---|---:|---:|---:|---|---|
+| Product revenue | 5.765 亿美元 | 54.8% | +55% | GAAP product GM 约 64.5%（按成本测算），低于 FY2026 高点但仍强 | FY2027 增速核心；包含 FlashArray/FlashBlade/DirectFlash/hyperscaler |
+| Subscription services revenue | 4.764 亿美元 | 45.2% | +17% | GAAP subscription services GM 约 73.8% | 稳定器；支持 ARR、RPO 和客户锁定 |
+| ARR | 20 亿美元 | 非收入项 | +19% | 高可见度 | 订阅平台化的核心指标 |
+| RPO | 38 亿美元 | 非收入项 | +41% | 未来收入合同池 | backlog proxy，但主要非产品 |
+
+### 4.3 重点产品和跳过产品
+
+#### 重点产品
+
+| 产品/业务 | 重要原因 | 当前收入贡献估算 | 增速判断 | 毛利率判断 |
+|---|---|---:|---|---|
+| FlashArray//X / //C / //E / //XL / //ST | 企业核心产品，承接数据库、VM、容量闪存、mission-critical、HDD 替代 | FY2027Q1 产品收入中的主力，估计 3.5-4.8 亿美元/季 | 基准 +10%-20%，AI/价格/刷新带动时 +20%+ | 系统产品毛利约 60%-70%，受组件价格影响 |
+| DirectFlash / hyperscaler online storage | Top-four hyperscaler design win，EB 级 shipment，royalty 可提升产品 GM | FY2026 估计 1-2EB shipment 对应 1-2.5 亿美元等价收入/royalty+系统贡献，置信度中低 | FY2027 可能 +100% 以上，但基数不透明 | royalties 毛利高；硬件若由 Pure 承担则受 NAND 价格 |
+| FlashBlade//EXA | AI/HPC/large inference scale-out 存储，SPECstorage AI Image 领先，NVIDIA AI Factory 参考架构相关 | 当前小于核心 FlashArray，FY2027Q1 估计 <5,000 万美元 | 未来 12 个月基准 +100%-200%，乐观更高 | 软件/系统混合 GM 45%-70%，早期配置高价但成本也高 |
+| Evergreen//One / //Flex / //Forever | STaaS/订阅，RPO 和 ARR 来源 | Q1 subscription services 4.764 亿美元，ARR 20 亿美元 | +16%-20% 稳定增长 | 订阅服务 GM 约 74% |
+| Portworx / Pure Fusion / Enterprise Data Cloud / Pure1 AI Copilot | 企业 Kubernetes、统一控制面和 AI 数据管理，提升锁定 | 未单独披露，估计占订阅小个位数到低双位数百分比 | 基准 +20%-35%，AI/RAG 推动时更高 | 软件毛利高，但销售和集成投入高 |
+| 1touch 数据智能/编排 | 2026 拟收购，补 semantic context、数据发现和 AI readiness | 近期收入可忽略 | 2027 后看交叉销售 | 软件毛利高，执行风险也高 |
+| NVIDIA STX/CMX context memory 生态中的 Pure | NVIDIA BlueField-4 STX 首批伙伴之一，长上下文推理/KV cache 潜在新增 BOM | 2026 当前几乎没有大规模收入，主要是认证/设计导入 | 2027 若 Rubin/STX 进入生产，可能从零到数千万/数亿美元级机会 | 取决于是否以 FlashBlade/DFM/软件进入正式 BOM |
+
+#### 可跳过或低优先级业务
+
+以下业务不是不重要，而是对“AI 高增长弹性”贡献有限，研究中不应过度展开：
+
+| 跳过/低优先级产品 | 原因 |
+|---|---|
+| 传统中小企业 block storage refresh | 收入稳定但增速低，更多是替换周期 |
+| 普通备份、灾备、cyber recovery 服务 | 有价值但不是 AI 存储热路径；竞争激烈 |
+| FlashArray//RC20 边缘/小容量部署 | 改善覆盖面，但对 AI 数据中心收入弹性小 |
+| 传统 support renewals | 高利润、可见度高，但不是新增高增长故事 |
+| 非 AI 的普通数据库/虚拟化负载 | 仍是现金牛，不应算进 AI optionality |
+
+## 5. 当前高增长/关键产品：收入、增速、AI 重要性、供需和定价权
+
+### 5.1 当前产品贡献矩阵
+
+| 关键产品/业务 | 当前收入贡献估算 | 当前收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---:|---:|---|---|---|---|
+| FlashArray core + //C//E all-flash capacity | 约 3.5-4.8 亿美元/季 | +10%-25%；FY2027Q1 product 总体 +55% | 中。主要是企业数据、数据库、容量闪存，间接受益 AI 数据增长 | 中 | 高。NAND/DRAM/CPU 组件短缺 | 中高。Evergreen 和 DirectFlash 锁定强，但替代方案多 |
+| DirectFlash hyperscaler | FY2026 估计 1-2.5 亿美元等价贡献；FY2027Q1 可能 0.5-1.5 亿美元/季区间 | 高，可能 +100% 以上 | 高。hyperscaler online storage/AI 数据湖可能放大 EB 需求 | 高 | 很高。组件和高密度 flash 均紧 | 中高。design win 强，但 hyperscaler 有自研和二供压力 |
+| FlashBlade//EXA AI parallel storage | 当前小，估计 <5,000 万美元/季 | 从低基数高增长 | 很高。训练 checkpoint、RAG、GPU feeding、AI data plane | 高 | 高。高性能 flash、网络、认证都紧 | 中。性能/软件强，但 VAST/WEKA/DDN/IBM 等竞争强 |
+| Evergreen//One / STaaS | Q1 subscription services 4.764 亿美元；ARR 20 亿美元 | +17%-19% | 中高。AI 项目偏好消费型和可扩容模型 | 中高 | 中。主要是合同/服务交付，不完全受 NAND 约束 | 高。合同和数据迁移锁定强 |
+| Portworx / Fusion / EDC / 1touch | 当前未披露，估计小于总收入 10% | +20% 以上潜力 | 中高。企业 AI 从 pilot 到 production 需要数据治理、Kubernetes 和编排 | 中 | 中。主要是软件/人才/集成 | 中高。软件粘性强，但云原生竞争多 |
+| NVIDIA STX/CMX partner path | 当前收入接近零到小额 PoC | 2027 起从零增长 | 很高。长上下文/KV cache/context memory 是推理新增瓶颈 | 中高到高，取决于 Rubin/STX 采购 | 极高但尚未量产 | 未定。NVIDIA 控制生态，Pure 需证明独特价值 |
+
+### 5.2 AI 技术栈中的真实重要性
+
+AI 数据中心存储的重要性来自四个场景：
+
+1. **训练数据与 checkpoint。** 训练集群需要 TB/s 级聚合读取，checkpoint 需要稳定写入，不然 GPU 等待 I/O。FlashBlade//EXA、VAST、WEKA、DDN、IBM Storage Scale 都争夺这一层。
+2. **RAG/企业数据湖。** 企业 AI 不缺模型，缺可治理、可检索、权限正确的数据。Everpure 的 Enterprise Data Cloud、1touch、Portworx、Pure Fusion 试图把存储变成 AI-ready data platform。
+3. **推理日志、agent memory 和长上下文。** 长上下文和 agent workflow 会带来 KV cache、上下文复用和多轮会话数据。NVIDIA STX/CMX 把存储拉进推理热路径。
+4. **hyperscaler online storage。** 如果 DirectFlash 能从单一 top-four hyperscaler 扩到多家云厂，Pure 的 TAM 从企业阵列变成 EB 级云存储介质/系统/软件。
+
+本地行业资料给出的重要背景是：AI-native storage/KV/eSSD/data platform 2026 年可观测收入/订单池约 160-320 亿美元，未来一年基准可到 220-450 亿美元，乐观 350-650 亿美元，极度乐观 550-950 亿美元；但这是一条价值链，不应把 eSSD、系统、软件重复相加。Everpure 能捕获的只是其中系统/软件/订阅的一部分。
+
+## 6. 一年后关键产品收入贡献三情景
+
+时间口径：以 2026-06-11 为基准，预测到 2027 年中附近的年化运行率或 FY2028 初期 run-rate；不是精确 FY 财年模型。公司 FY2027 官方收入指引中值 44.6 亿美元是底层锚点。
+
+### 6.1 产品级三情景
+
+| 产品/业务 | 基准：一年后收入贡献 | 乐观：一年后收入贡献 | 极度乐观：一年后收入贡献 | 主要条件 |
+|---|---:|---:|---:|---|
+| FlashArray core + //C//E | 年化 22-26 亿美元 | 25-30 亿美元 | 30-35 亿美元 | 企业刷新、价格上涨可传导、QLC 全闪替代 HDD、组件供应可交付 |
+| DirectFlash hyperscaler | 年化 3-6 亿美元 | 6-10 亿美元 | 10-16 亿美元 | Meta/top-four design win 持续 EB 出货，第二 hyperscaler design win 或扩大到更多 online storage workload |
+| FlashBlade//EXA | 年化 1-3 亿美元 | 3-6 亿美元 | 6-12 亿美元 | 首个 GPU cloud 客户转规模，NVIDIA Enterprise AI Factory 参考架构进入采购清单，SPEC/MLPerf 形成销售证据 |
+| Evergreen//One / subscription services | 年化 21-23 亿美元收入，ARR 23-25 亿美元 | 年化 23-26 亿美元，ARR 25-28 亿美元 | 年化 26-30 亿美元，ARR 29-33 亿美元 | STaaS TCV 持续增长，大客户续约和扩容，NDR 回升 |
+| Portworx / Fusion / EDC / 1touch | 年化 2-4 亿美元 | 4-7 亿美元 | 7-12 亿美元 | 企业 AI/RAG 数据治理落地，1touch 融合顺利，Portworx 和 Pure Fusion 交叉销售 |
+| STX/CMX / KV cache partner path | 年化 0.2-0.8 亿美元 | 0.8-2.0 亿美元 | 2-5 亿美元 | BlueField-4 STX H2 2026 伙伴交付，Rubin/long-context inference 进入生产，Pure 获得正式 BOM/认证 |
+
+### 6.2 一年后产品质量指标三情景
+
+| 产品/业务 | 收入增速 | AI 重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---|---|---|---|---|
+| FlashArray core + //C//E：基准 | +10%-18% | 中 | 中 | 高 | 中高 |
+| FlashArray core + //C//E：乐观 | +18%-28% | 中高 | 中高 | 高 | 高 |
+| FlashArray core + //C//E：极度乐观 | +30%+ | 中高 | 高 | 很高 | 高，但受白盒/SSD 替代限制 |
+| DirectFlash hyperscaler：基准 | +60%-120% | 高 | 高 | 很高 | 中高 |
+| DirectFlash hyperscaler：乐观 | +120%-200% | 很高 | 很高 | 很高 | 高，若成为 hyperscaler 标准架构 |
+| DirectFlash hyperscaler：极度乐观 | +200%+ | 很高 | 很高 | 极高 | 高，但 hyperscaler 议价强 |
+| FlashBlade//EXA：基准 | +100%+ | 很高 | 高 | 高 | 中 |
+| FlashBlade//EXA：乐观 | +200%+ | 很高 | 很高 | 很高 | 中高 |
+| FlashBlade//EXA：极度乐观 | +400%+ | 很高 | 很高 | 极高 | 高，前提是性能/认证领先可复制 |
+| Evergreen/STaaS：基准 | +15%-20% | 中高 | 中 | 中 | 高 |
+| Evergreen/STaaS：乐观 | +20%-28% | 高 | 中高 | 中 | 高 |
+| Evergreen/STaaS：极度乐观 | +30%+ | 高 | 高 | 中高 | 很高 |
+| Portworx/Fusion/EDC/1touch：基准 | +20%-35% | 中高 | 中 | 中 | 中高 |
+| Portworx/Fusion/EDC/1touch：乐观 | +35%-60% | 高 | 中高 | 中 | 高 |
+| Portworx/Fusion/EDC/1touch：极度乐观 | +80%+ | 很高 | 高 | 中 | 高 |
+| STX/CMX：基准 | 从零到小规模 | 很高 | 中高 | 很高 | 未定 |
+| STX/CMX：乐观 | 从 PoC 到多个生产客户 | 很高 | 高 | 极高 | 中高 |
+| STX/CMX：极度乐观 | 成为 Rubin/AI factory 采购项 | 极高 | 很高 | 极高 | 高，但 NVIDIA 把握主导权 |
+
+## 7. BOM、单位含量、价格传导和认证阶段
+
+### 7.1 BOM 拆分和单位含量
+
+Everpure 不披露单系统 BOM 和 ASP。以下为研究估算，用于判断价格传导链，不作为公司官方数据。
+
+| 产品/业务 | BOM / 成本构成估算 | 每 MW AI IT load 内容量 | 每 rack 内容量 | 每 GPU 内容量 | 每 optical port / 网络含量 | 价格传导 |
+|---|---|---:|---:|---:|---:|---|
+| FlashArray//C//E / all-flash capacity | NAND/DFM 45%-60%；controller/CPU/DRAM/NIC 10%-18%；机箱电源散热 8%-12%；Purity/软件/支持 15%-30% | 作为企业/数据湖 warm layer，约 2-10PB/MW；非 AI 企业口径更分散 | 传统企业非 rack-scale；若映射 AI rack，约 0.2-1PB/rack | 2-15TB/GPU 的 warm/enterprise 数据层 | 25/100/400G 多为企业网络；高端 AI 可接 400G/800G | NAND/DRAM/CPU 涨价可传导一部分，Evergreen/软件缓冲毛利 |
+| DirectFlash hyperscaler | DFM/NAND 50%-70%；Purity/DFM IP/firmware 10%-25%；系统/集成/royalty 取决于交付模式 | online storage 可按 EB 项目，不按 MW 线性；AI 数据湖可 8-25PB QLC/SSD/MW 起 | hyperscaler 机架密度高，约 1-5PB/rack 可行 | 10-40TB/GPU hot/warm 数据池，取决于 workload | 若接入 400/800G fabric，单 800G 理论 100GB/s；大规模对象/块存储需要多端口聚合 | design win 允许高 ASP/royalty；但 hyperscaler 议价和二供压制毛利 |
+| FlashBlade//EXA | DFM/NAND 35%-55%；metadata/data nodes/CPU/DRAM 15%-25%；高端 NIC/网络 10%-20%；软件/支持 20%-35% | 本地行业存储 attach：8-25PB QLC/SSD/MW 基准，乐观 20-60PB/MW；EXA 覆盖热/温高吞吐层的一部分 | SPEC 配置：3 个 metadata chassis、30 个 S500R1-EXA blades、每 blade 2 个 37.5TB DFM；raw 1.8435PB、usable 866.4TB；公开报道称单 namespace 10TB/s、约 3.4TB/s/rack | 训练/RAG 高吞吐可按 10-50TB/GPU 配置；极高端数据密集可更高 | 若目标 3.4TB/s/rack，理论需约 34 个 800G 端口，实际考虑协议/冗余可能 45-60 个 800G 等效端口 | AI job 延迟和 GPU idle 成本高，客户愿意为吞吐、metadata、认证付费 |
+| Evergreen//One / STaaS | 硬件折旧/DFM/服务 40%-55%；软件和支持 25%-40%；销售/客户成功另计 | 按容量/服务等级计价；AI 项目可用消费型模式降低初始 CapEx | 按客户环境部署 | 按容量和性能承诺映射 | 网络由客户或服务架构决定 | 订阅合同锁定强，组件成本通过续约/新报价传导 |
+| Portworx / Fusion / EDC / 1touch | 研发/工程 45%-65%；云托管/支持 10%-25%；销售/客户成功 20%-35% | 不按 MW 计；按 cluster、node、TB、应用、数据资产计 | 不按 rack 计 | 不按 GPU 计，但服务 GPU/Kubernetes 应用 | 依赖 Kubernetes/cloud network | 软件毛利高，价格由数据治理、automation、AI readiness ROI 决定 |
+| STX/CMX partner path | SSD/NAND 40%-55%；BlueField/DPU/NIC 10%-20%；CPU/DRAM 8%-15%；机箱/散热 8%-12%；软件/支持 10%-20% | 本地行业估算：CMX/STX context memory appliance 未来一年基准 30-100 亿美元全球订单池；每 MW 可从数 PB 到数十 PB context storage | 早期可能 1-4PB/rack context memory，随 Rubin/agent 放大 | 5-30TB/GPU warm KV/context 起步，高长上下文场景更高 | STX 依赖 Spectrum-X/RDMA；400/800G 是基本配置，1.6T 进入 2027+ | NVIDIA 生态认证带来溢价，但 Pure 与 Dell/HPE/NetApp/VAST/WEKA/DDN 同台竞争 |
+
+### 7.2 当前产能能力、采纳和认证
+
+| 产品/业务 | 当前产能/供应能力（美元计，估算） | 当前供应链采纳 | 认证/生态阶段 |
+|---|---:|---|---|
+| FlashArray core + all-flash capacity | 年化 20 亿美元以上 product revenue 能力，受组件供应影响 | 企业客户广泛采纳，金融、医疗、政府、云和大型企业 | 成熟产品线；Evergreen 非中断升级是客户锁定核心 |
+| DirectFlash hyperscaler | 当前 EB 级交付，FY2026 已超过 2EB shipment 线索；美元贡献估计年化数亿美元 | 至少一家 top-four hyperscaler design win，市场线索指向 Meta；第二家未确认 | design win 已过关键门槛，但多 hyperscaler 扩展仍待验证 |
+| FlashBlade//EXA | 当前商业早期，产能更多受订单和高端组件约束；估计年化可交付数亿美元但实际收入小 | 首个 GPU cloud 客户线索，多个客户评估；SPECstorage AI Image 记录 | NVIDIA Enterprise AI Factory reference architecture、SPEC 6300 AI jobs；仍处 early adoption |
+| Evergreen/STaaS | ARR 20 亿美元，RPO 38 亿美元 | 企业和大型客户广泛采纳 | 成熟，NDR FY2026 113%；RPO 是硬证据 |
+| Portworx/Fusion/EDC/1touch | 软件交付不受硬件产能强约束 | Kubernetes/云原生客户，Pure installed base 可交叉销售 | Portworx 成熟；1touch 仍在收购整合阶段 |
+| STX/CMX partner path | 当前几乎不可按收入计量；2026H2 BlueField-4 可用后才进入交付 | NVIDIA 将 Pure 列为首批 partner 之一；但 Dell/HPE/NetApp/VAST/WEKA/DDN 也在 | 设计导入/参考架构阶段，不是大规模认证完成阶段 |
+
+### 7.3 一年后产能、采纳和认证三情景
+
+| 产品/业务 | 基准一年后 | 乐观一年后 | 极度乐观一年后 |
+|---|---|---|---|
+| FlashArray core + all-flash capacity | 年化 22-26 亿美元产品能力；供应链仍紧但可交付；企业刷新稳定 | 年化 25-30 亿美元；QLC/容量闪存替代加速；产品报价有效期缩短但客户接受 | 年化 30-35 亿美元；NAND 供给紧导致 ASP 高，Pure 成功转嫁成本 |
+| DirectFlash hyperscaler | 年化 3-6 亿美元；单一 top-four hyperscaler 放量，第二客户仍未确认 | 年化 6-10 亿美元；第二 hyperscaler 进入 design win 或扩大 workload | 年化 10-16 亿美元；DirectFlash 成为多云 online storage 标准选项之一 |
+| FlashBlade//EXA | 年化 1-3 亿美元；NVIDIA/SPEC 认证带来多个生产客户 | 年化 3-6 亿美元；GPU cloud、金融 AI、主权 AI 多点落地 | 年化 6-12 亿美元；EXA 成为 AI factory hot storage 标准采购项 |
+| Evergreen/STaaS | ARR 23-25 亿美元；RPO 继续 15%-25% 增 | ARR 25-28 亿美元；STaaS TCV 重新高增 | ARR 29-33 亿美元；大型 AI/enterprise 数据云项目多年度签约 |
+| Portworx/Fusion/EDC/1touch | 1touch 完成整合，作为 EDC 数据发现/语义上下文模块进入销售包 | AI governance/RAG data readiness 成为强卖点，交叉销售明显 | 形成企业 AI data control plane，软件估值权重上升 |
+| STX/CMX partner path | 2026H2 PoC 到早期生产；Pure 获得少量设计导入 | 多个 NVIDIA STX 客户采用 Pure/FlashBlade 数据层 | Pure 成为 Rubin/BlueField STX context memory 的核心 partner 之一 |
+
+## 8. 基于订单积压和供给的未来一年公司增速预测
+
+### 8.1 Backlog、bookings 和渠道证据
+
+| 证据 | 强度 | 对未来一年收入的含义 |
+|---|---|---|
+| FY2027Q1 RPO 38 亿美元，同比 +41% | 高 | 订阅和非取消合同强，未来 12-24 个月收入底座好 |
+| FY2026 末 RPO 37 亿美元，其中 45% 预计 12 个月确认 | 高 | 至少约 16-17 亿美元级别 RPO 可在 12 个月内转收入，但其中大部分是订阅/服务 |
+| FY2026 末 non-cancelable product orders 2.285 亿美元 | 中 | 产品硬 backlog 远小于 RPO；不要把可取消订单算实 |
+| FY2026Q3 已超过全年 2EB hyperscaler shipment 计划 | 中 | DirectFlash hyperscaler 比最初计划强，但客户和价格不透明 |
+| FY2027 指引收入 44.1-45.1 亿美元 | 高 | 管理层已经把可见订单、供应链、价格和需求纳入指引 |
+| 供应链价格信：产品价格 +70%，输入成本 +300%-900% | 中高 | 供需紧，但毛利和客户预算有风险；也说明短期供给可能限制交付 |
+| FlashBlade//EXA first GPU cloud customer / 多客户评估线索 | 中低 | AI storage pipeline 强，但从评估到收入仍需 1-4 个季度 |
+| STX/CMX BlueField-4 2026H2 可用 | 中 | 2026 下半年主要是设计导入；2027 才可能成为收入项 |
+
+### 8.2 公司未来一年收入三情景
+
+| 情景 | FY2027/FY2028 附近收入路径 | 总收入增速 | Product revenue 增速 | Subscription revenue 增速 | 核心假设 |
+|---|---:|---:|---:|---:|---|
+| 基准 | FY2027 44.5-45.0 亿美元；2027 年中 run-rate 50-53 亿美元 | +18%-22% | +22%-32% | +15%-19% | 公司完成官方指引；DirectFlash/hyperscaler 稳步放量；EXA 贡献小但高增；组件成本部分转嫁 |
+| 乐观 | FY2027 45.5-47.5 亿美元；2027 年中 run-rate 54-58 亿美元 | +25%-32% | +35%-55% | +18%-24% | 第二 hyperscaler 或现有客户扩单；FlashBlade//EXA 多客户生产；Evergreen//One 大单强；NAND 供应紧但能交付 |
+| 极度乐观 | FY2027 48-52 亿美元；2027 年中 run-rate 60-67 亿美元 | +38%-50% | +70%+ | +25%-35% | DirectFlash 多云 EB 级出货，EXA/STX/AI factory 成为新收入线，价格上涨完全传导且客户不推迟采购 |
+
+### 8.3 取消率和交期推断
+
+公司不披露 cancellation rate、book-to-bill 或产品 backlog。可以做如下推断：
+
+| 项目 | 推断 | 置信度 |
+|---|---|---|
+| 订阅取消率 | 低。ARR +19%、RPO +41%、NDR FY2026 113% 说明 installed base 扩张大于 churn | 中高 |
+| 产品取消率 | 未披露。由于产品订单交付前通常可取消，若组件涨价过快，部分传统企业项目可能推迟；AI/hyperscaler 高优先级订单取消率应较低 | 中低 |
+| 交期 | 2026 明显紧。供应商无法完全履约、报价有效期缩短到 30 天、成本 4-10 倍上涨，说明 lead time 和 allocation 有压力 | 中高 |
+| DirectFlash hyperscaler 交付 | EB 级，FY2026 已超计划，说明至少单一客户供应链跑通；但第二客户和规模化仍待验证 | 中 |
+| FlashBlade//EXA 交付 | 早期生产和评估，更多瓶颈在客户认证、网络和性能调优，不只是硬件产能 | 中 |
+
+## 9. 竞争格局、替代方案和客户替换成本
+
+### 9.1 主要竞争对手
+
+| 赛道 | 竞争对手 | 与 Everpure/Pure 的竞争点 |
+|---|---|---|
+| 企业 block/file storage | Dell PowerStore/PowerMax/PowerScale、NetApp ONTAP、HPE Alletra/GreenLake、IBM、Hitachi Vantara、Nutanix | installed base、渠道、企业采购、混合云、服务合同 |
+| AI parallel file/object | VAST Data、WEKA、DDN、IBM Storage Scale、Dell AI Data Platform、HPE Cray/Alletra、Hammerspace、Qumulo、Cloudian、MinIO、Ceph/Lustre/BeeGFS | AI checkpoint、GPU feeding、metadata、GDS/RDMA、S3/NFS/POSIX、多租户 |
+| Hyperscaler internal storage | AWS S3/EBS/FSx、Google Colossus/GCS、Azure Blob/ADLS、Meta 自研存储 | 自研成本、规模、控制权；Pure 需要证明 DirectFlash 总 TCO 优于内部 SSD/HDD |
+| HDD/QLC capacity layer | Seagate、Western Digital、Toshiba、Micron、Samsung、SK hynix/Solidigm、Kioxia | $/TB、TB/W、PB/rack；Pure 依赖 NAND 供应且面对 HDD 低成本竞争 |
+| STX/CMX/AI context memory | NVIDIA 主导，Dell、HPE、NetApp、DDN、VAST、WEKA、Supermicro、AIC、Cloudian、IBM、Nutanix 等伙伴 | Pure 入围是好事，但不是唯一 partner，最终 BOM 份额要看性能和客户选择 |
+| 数据治理和 AI data platform | Databricks、Snowflake、Elastic、MongoDB、Pinecone、Zilliz/Milvus、Weaviate、Qdrant、Informatica、Collibra | 上层数据语义、catalog、向量检索和权限可能被软件平台捕获，存储商只赚底层容量 |
+
+### 9.2 Pure 的优势
+
+1. **DirectFlash 软硬件一体。** Pure 通过 Purity 直接管理 flash，绕开传统 SSD 冗余层，理论上在密度、能耗、寿命和性能可预测性上优于 commodity SSD 阵列。
+2. **Evergreen 非中断升级。** 对企业客户，避免 forklift upgrade 和迁移风险；这提高续约率和替换成本。
+3. **高毛利和高客户满意度。** 70% 左右 gross margin 证明不是低端硬件；NPS 和品牌在存储管理员中强。
+4. **FlashBlade//EXA 和 NVIDIA 参考架构。** SPECstorage AI Image 6300 AI jobs，NVIDIA Enterprise AI Factory validation，给 AI 销售提供可量化证据。
+5. **订阅/RPO。** 38 亿美元 RPO 提供收入可见度，STaaS 让客户以消费模式扩容。
+6. **能源和空间叙事。** AI 数据中心电力紧张时，TB/W、PB/rack、运维简化都是采购理由。
+
+### 9.3 风险和替代方案
+
+| 风险 | 替代方案 | 影响 |
+|---|---|---|
+| NAND/DRAM 成本过快上涨 | 客户延后采购、转向 HDD+QLC 分层、白盒 SSD/JBOD、Ceph/MinIO | 产品毛利和销量受压 |
+| Proprietary DirectFlash 被认为锁定过强 | commodity NVMe SSD + VAST/WEKA/DDN/Ceph/MinIO | hyperscaler 和技术型客户可能偏开放 |
+| AI storage share 不上升 | GPU/HBM/网络继续吃掉大部分 CapEx，存储维持 2%-3% | EXA/STX 估值溢价下修 |
+| STX/CMX 由 NVIDIA 和其他伙伴主导 | NetApp、Dell、HPE、VAST、WEKA、DDN 抢走 BOM | Pure 入围但份额有限 |
+| Hyperscaler 自研或二供压价 | Google/AWS/Meta/Azure 内部 storage stack，直接采购 SSD/HDD | DirectFlash royalty/ASP 受压 |
+| SBC 和估值过高 | 盈利增长被稀释，市场改用 GAAP/FCF 估值 | 股价波动大 |
+| Enterprise AI ROI 不足 | 企业 RAG/agent 项目停留 pilot，数据平台采购延后 | Portworx/EDC/1touch 增长不及预期 |
+
+### 9.4 客户替换成本
+
+| 客户类型 | 替换成本 | 原因 |
+|---|---|---|
+| 传统企业 FlashArray installed base | 高 | 数据迁移风险、应用认证、管理员习惯、Evergreen 合同、服务等级 |
+| Evergreen//One / STaaS 客户 | 高 | 多年期合同、容量承诺、运维流程绑定、RPO 可见 |
+| Kubernetes/Portworx 客户 | 中高 | 与应用 deployment、backup、DR、CSI、DevOps 流程绑定 |
+| 新建 AI factory / GPU cloud | 中 | 如果尚未生产，客户可在 VAST/WEKA/DDN/Pure/IBM/Dell 中选择；一旦数据落地并形成 namespace，替换成本升高 |
+| Hyperscaler DirectFlash 客户 | 中到高 | 认证和供应链集成成本高，但 hyperscaler 有自研和多供应商能力，议价强 |
+
+## 10. 投资跟踪指标和反证条件
+
+### 10.1 未来四个季度最重要指标
+
+| 指标 | 为什么重要 | 乐观信号 | 反证信号 |
+|---|---|---|---|
+| Product revenue 增速 | AI/hyperscaler 和价格传导最直接体现在产品 | 连续 +30% 以上，且毛利不崩 | 回落到低十几或负增长 |
+| Product gross margin | 判断成本能否转嫁 | 低点后恢复到 65%-68%+ | 低于 60% 且管理层无法给恢复路径 |
+| RPO / ARR | 订阅合同可见度 | RPO 继续 +30%+，ARR +20%+ | RPO 增速快速回落到十几 |
+| Hyperscaler shipment / royalties | DirectFlash 第二曲线 | 披露第二 hyperscaler、EB 出货继续上修 | FY2027 没有更多客户或出货低于预期 |
+| FlashBlade//EXA 客户数 | AI storage 是否真实放量 | GPU cloud/NeoCloud/金融/主权 AI 多客户生产 | 停留 benchmark 和评估，收入不披露 |
+| NVIDIA STX/CMX 进展 | 长上下文/KV cache 是否进 BOM | Pure 出现在 BlueField-4 STX 生产系统和客户案例 | Pure 只作为生态名单，无实际产品收入 |
+| 供应链报价和交付 | 判断订单是否能转收入 | 价格稳定、lead time 改善、客户接受涨价 | 报价缩短、交付延迟、客户推迟采购 |
+| SBC / FCF | 判断利润质量 | FCF margin 15%-20%+，SBC/revenue 下行 | SBC 持续 10%+ 且 FCF 被库存/回购侵蚀 |
+
+### 10.2 关键反证
+
+1. FY2027 下半年 revenue guide 下修或 product revenue 增速降到 15% 以下。
+2. Product gross margin 因组件成本低于 60%，且 FY2028 无恢复路径。
+3. DirectFlash hyperscaler 没有第二客户，现有客户 EB 出货不再上修。
+4. FlashBlade//EXA 无法从 benchmark/评估转成千万美元级客户订单。
+5. NVIDIA STX/CMX 生态由 Dell/HPE/NetApp/VAST/WEKA/DDN 主导，Pure 未获得生产 design-in。
+6. AI 数据中心存储预算占比维持 2%-3%，未向本地行业资料假设的 5%+ 抬升。
+7. 企业 RAG/agent ROI 不足，Portworx/EDC/1touch 不能形成增量。
+8. Hyperscaler 选择 commodity SSD/HDD + 内部软件，压低 Pure proprietary architecture 的长期空间。
+
+## 11. 资料来源
+
+### 11.1 项目内资料
+
+| 项目内文件 | 用途 |
+|---|---|
+| `公司调研/公司索引.md` | 确认 PSTG / Everpure PureStorage 归属 `AI服务器_存储_EMS/` |
+| `行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md` | AI-native storage、KV cache、STX/CMX、VAST/WEKA/DDN/Pure/NetApp 竞争、市场区间 |
+| `行业调研/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-06-10.md` | 企业 SSD、QLC、Gen5/Gen6、NAND 供给和价格传导 |
+| `行业调研/AI服务器_存储_芯片/行业调研_HDD、对象存储与冷温数据存储_2026-06-11.md` | HDD/对象存储/冷温层、每 MW 存储 attach、QLC 与对象存储情景 |
+| `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` | 2026/2027 AI 数据中心 CapEx、MW/rack/GPU、订单映射 |
+| `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md` | 防重复计算、AI 订单池/CapEx/RPO/存储定义 |
+
+### 11.2 外部一手和技术资料
+
+| 来源 | 日期 | 链接 | 用途 |
+|---|---:|---|---|
+| Everpure FY2027Q1 results | 2026-05-27 | https://www.prnewswire.com/news-releases/everpure-announces-first-quarter-fiscal-2027-financial-results-302783502.html | Q1 revenue、product/subscription、ARR、RPO、margin、cash、guidance |
+| SEC FY2026 Form 10-K | 2026-03-25 | https://www.sec.gov/Archives/edgar/data/1474432/000147443226000027/pstg-20260201.htm | 业务描述、FlashArray/FlashBlade、RPO、product orders、purchase obligations、balance sheet、margins |
+| Pure/Everpure FY2026Q3 release | 2025-12-02 | https://www.sec.gov/Archives/edgar/data/1474432/000147443225000062/pstg-ex991q3fy2026xpressre.htm | Q3 revenue、ARR、RPO、margin、product highlights |
+| Pure Storage FY2026Q2 release PDF | 2025-08-27 | https://www.purestorage.com/content/dam/pdf/en/quarter-report/q2-2026.pdf | Q2 revenue、STaaS TCV、ARR、RPO、margin |
+| Everpure FY2026Q1 release | 2025-05-29 | https://www.everpuredata.com/company/newsroom/press-releases/q1-2026.html | Q1 FY2026 revenue、STaaS TCV、ARR、RPO |
+| Pure Storage becomes Everpure / 1touch | 2026-02-23 | https://www.everpuredata.com/company/newsroom/press-releases/pure-storage-becomes-everpure.html | 改名、1touch 收购意向、AI data management 定位 |
+| Everpure ticker change to P | 2026-04-07 | https://www.nasdaq.com/press-release/everpure-change-ticker-symbol-p-2026-04-07 | 交易代码由 PSTG 改为 P |
+| NVIDIA BlueField-4 STX | 2026-03 | https://nvidianews.nvidia.com/news/nvidia-launches-bluefield-4-stx-storage-architecture-with-broad-industry-adoption | STX、5x token throughput、4x energy efficiency、Pure 等伙伴 |
+| SPECstorage AI Image results | 2026-02/03 | https://www.spec.org/storage2020/results/ai_image/ | FlashBlade//EXA 6300 AI jobs、配置和 usable/raw 容量 |
+| Pure/NVIDIA Enterprise AI Factory reference | 2025-06-11 | https://blog.everpuredata.com/solutions/pure-storage-reference-architecture-nvidia-enterprise-ai-factory/ | NVIDIA + Pure reference architecture |
+| FlashBlade//EXA product page | 2025/2026 | https://www.pure.ai/flashblade-exa.html | EXA 定位、AI/HPC 说法和客户/伙伴语境 |
+| Everpure supply-chain customer letter | 2026-04 | https://www.everpuredata.com/company/newsroom/letters/a-letter-to-our-customers-on-the-current-supply-chain-crisis.html | 产品价格 +70%、组件成本 +300%-900%、供应链紧张 |
+| Investing.com stock quote | 2026-06-11 | https://www.investing.com/equities/pure-storage-inc | 股价、日内区间、52 周区间 |
+| Yahoo Finance quote | 2026-06-11 附近 | https://finance.yahoo.com/quote/P/ | 市值、P/E、forward P/E、P/S |
+| Blocks & Files Q3 / SPEC coverage | 2025-12 / 2026-03 | https://www.blocksandfiles.com/2025/12/03/pure-storage-hikes-full-year-forecast-after-solid-q3/1720082 ; https://www.blocksandfiles.com/flash/2026/03/13/everpure-tops-specstorage-solution-2020-ai-image-benchmark-charts/5209245 | hyperscaler royalties、EXA SPEC benchmark 二级验证 |
+
+非投资建议。本报告用于产业链和公司基本面研究；所有产品级收入、BOM、每 MW/rack/GPU 含量、AI 收入占比和一年后三情景均为研究估算，需随公司后续财报、客户公告、NVIDIA STX/CMX 量产、NAND/DRAM 价格和 hyperscaler 项目进展动态修正。

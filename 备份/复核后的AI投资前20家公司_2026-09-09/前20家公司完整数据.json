@@ -1,0 +1,2519 @@
+{
+  "asof": "2026-09-09",
+  "created_at": "2026-09-09T23:42:08.207330-07:00",
+  "selection": "AI乐观下兼顾增长和下行保护的主观组合优先级",
+  "added": [
+    "CRDO",
+    "HTHIY",
+    "NVT",
+    "EME"
+  ],
+  "removed": [
+    "NTAP",
+    "IBM",
+    "SMCI",
+    "BDC"
+  ],
+  "midpoint_definition": "After rebasing original conditional return endpoints to refreshed close, arithmetic mean (low+high)/2. Not probability weighted expected return.",
+  "rows": [
+    {
+      "rank": 1,
+      "ticker": "NVDA",
+      "name": "英伟达",
+      "price": 223.67,
+      "price_date": "2026-09-09",
+      "pe": 28.565773,
+      "forward_pe": 14.4126,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 208.19000244140625,
+          "return": 7.43551437487997
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 182.64999389648438,
+          "return": 22.458257582402897
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 170.75999450683594,
+          "return": 30.985012412287194
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -17.74938525506326,
+          "high": -4.12505029731301,
+          "midpoint": -10.937217776188135,
+          "source_line": 611,
+          "source_label": "不建议投资"
+        },
+        "基准_36m": {
+          "low": -1.198341306388869,
+          "high": 13.334282648544729,
+          "midpoint": 6.06797067107793,
+          "source_line": 611,
+          "source_label": "不建议投资"
+        },
+        "乐观_12m": {
+          "low": 33.51848258595251,
+          "high": 59.35425850583448,
+          "midpoint": 46.436370545893496,
+          "source_line": 611,
+          "source_label": "谨慎建议投资"
+        },
+        "乐观_36m": {
+          "low": 62.38188849644567,
+          "high": 90.74068940850361,
+          "midpoint": 76.56128895247464,
+          "source_line": 611,
+          "source_label": "谨慎建议投资"
+        },
+        "突破_12m": {
+          "low": 136.35698126704517,
+          "high": 205.79062905172793,
+          "midpoint": 171.07380515938655,
+          "source_line": 611,
+          "source_label": "强烈建议投资"
+        },
+        "突破_36m": {
+          "low": 197.51510707739084,
+          "high": 274.9215138373496,
+          "midpoint": 236.21831045737022,
+          "source_line": 611,
+          "source_label": "强烈建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "NVDA",
+        "collected_at": "2026-09-09T23:37:47.611413-07:00",
+        "source_timestamp_raw": "2026-09-10 03:44:50",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:59",
+        "source_underlying_close": 223.67,
+        "source_underlying_current_price": 223.6699,
+        "reference_close": 223.67,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/NVDA.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/nvda/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 4,
+        "raw_sha256": "f49cf7cf130b5dc5bee4ebe9cb74369537f0fa5b778e9c72a3902f101fe2b07c",
+        "iv_percent": 34.39,
+        "call": {
+          "option": "NVDA261016C00225000",
+          "bid": 9.5,
+          "bid_size": 46.0,
+          "ask": 9.65,
+          "ask_size": 35.0,
+          "iv": 0.3439,
+          "open_interest": 20852.0,
+          "volume": 5264.0,
+          "delta": 0.5158,
+          "gamma": 0.0162,
+          "vega": 0.2839,
+          "theta": -0.1319,
+          "rho": 0.1128,
+          "theo": 9.5802,
+          "change": -1.275,
+          "open": 10.65,
+          "high": 11.05,
+          "low": 9.45,
+          "tick": "no_change",
+          "last_trade_price": 9.5,
+          "last_trade_time": "2026-09-09T15:59:20",
+          "percent_change": -11.8329,
+          "prev_day_close": 10.7750000953674,
+          "strike": 225.0
+        },
+        "strike_distance_percent": 0.59462601153486,
+        "relative_spread_percent": 1.5665796344647558
+      },
+      "selection_reason": "AI计算、CUDA、网络与系统价值捕获直接，已有现金盈利；风险在客户支出、ASIC竞争与集中度。",
+      "market_collected_at": "2026-09-09T23:35:03.088966-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\NVDA_经营情景市场状态投资决策_2026-09-08.md",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 225.73,
+      "report_sha256": "1bbe8079d5d488bf95385479951f9f0574e6fc337961f1a6e553cf54c27760d9",
+      "quote_source_url": "https://finance.yahoo.com/quote/NVDA/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 2,
+      "ticker": "MSFT",
+      "name": "微软",
+      "price": 491.65,
+      "price_date": "2026-09-09",
+      "pe": 27.543417,
+      "forward_pe": 20.85624,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 403.4100036621094,
+          "return": 21.873527065977072
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 409.4100036621094,
+          "return": 20.087441831481033
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 498.4100036621094,
+          "return": -1.3563138003731323
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -11.0,
+          "high": 32.29999999999998,
+          "midpoint": 10.649999999999991,
+          "source_line": 395,
+          "source_label": "中性"
+        },
+        "基准_36m": {
+          "low": 7.5,
+          "high": 55.79999999999998,
+          "midpoint": 31.64999999999999,
+          "source_line": 395,
+          "source_label": "中性"
+        },
+        "乐观_12m": {
+          "low": 36.20000000000002,
+          "high": 111.79999999999998,
+          "midpoint": 74.0,
+          "source_line": 395,
+          "source_label": "建议投资"
+        },
+        "乐观_36m": {
+          "low": 63.60000000000002,
+          "high": 148.20000000000002,
+          "midpoint": 105.90000000000002,
+          "source_line": 395,
+          "source_label": "建议投资"
+        },
+        "突破_12m": {
+          "low": 80.20000000000002,
+          "high": 183.8,
+          "midpoint": 132.0,
+          "source_line": 395,
+          "source_label": "建议投资"
+        },
+        "突破_36m": {
+          "low": 117.10000000000002,
+          "high": 233.3,
+          "midpoint": 175.20000000000002,
+          "source_line": 395,
+          "source_label": "建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "MSFT",
+        "collected_at": "2026-09-09T23:37:47.611413-07:00",
+        "source_timestamp_raw": "2026-09-10 03:58:32",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:59",
+        "source_underlying_close": 491.65,
+        "source_underlying_current_price": 492.6,
+        "reference_close": 491.65,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/MSFT.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/msft/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 10,
+        "raw_sha256": "fd62ab92d497c6350ed7d345e972a8ac60644a385668d4d24a6807b2b71457e0",
+        "iv_percent": 25.990000000000002,
+        "call": {
+          "option": "MSFT261016C00490000",
+          "bid": 18.15,
+          "bid_size": 38.0,
+          "ask": 18.5,
+          "ask_size": 26.0,
+          "iv": 0.2599,
+          "open_interest": 7676.0,
+          "volume": 118.0,
+          "delta": 0.5566,
+          "gamma": 0.0096,
+          "vega": 0.6188,
+          "theta": -0.2174,
+          "rho": 0.2727,
+          "theo": 18.3381,
+          "change": -0.985,
+          "open": 19.15,
+          "high": 19.4,
+          "low": 17.25,
+          "tick": "up",
+          "last_trade_price": 18.39,
+          "last_trade_time": "2026-09-09T15:57:43",
+          "percent_change": -5.08387,
+          "prev_day_close": 19.375,
+          "strike": 490.0
+        },
+        "strike_distance_percent": 0.33560459676599264,
+        "relative_spread_percent": 1.9099590723056012
+      },
+      "selection_reason": "企业软件、云与订阅现金基础；Azure AI及Copilot提供增长，需核查资本投入与折旧。",
+      "market_collected_at": "2026-09-09T23:35:03.088966-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MSFT_经营情景市场状态投资决策_2026-09-09.md",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 491.65,
+      "report_sha256": "3ca632279db702593f81c72c8d76e84916cf1b2077ebd8c55660d51ad92b0b45",
+      "quote_source_url": "https://finance.yahoo.com/quote/MSFT/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 3,
+      "ticker": "MU",
+      "name": "美光",
+      "price": 1027.77,
+      "price_date": "2026-09-09",
+      "pe": 22.623158,
+      "forward_pe": 6.629695,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 935.8900146484375,
+          "return": 9.81739135084978
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 389.32000732421875,
+          "return": 163.99105637129293
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 135.24000549316406,
+          "return": 659.9600401169389
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": 6.666370880644521,
+          "high": 33.722256925187565,
+          "midpoint": 20.194313902916043,
+          "source_line": 515,
+          "source_label": "谨慎建议投资"
+        },
+        "基准_36m": {
+          "low": 29.732000350272926,
+          "high": 58.150413030152635,
+          "midpoint": 43.94120669021278,
+          "source_line": 515,
+          "source_label": "谨慎建议投资"
+        },
+        "乐观_12m": {
+          "low": 100.48606205668585,
+          "high": 159.2693540383549,
+          "midpoint": 129.87770804752037,
+          "source_line": 515,
+          "source_label": "强烈建议投资"
+        },
+        "乐观_36m": {
+          "low": 145.64408768498788,
+          "high": 208.02834291718966,
+          "midpoint": 176.83621530108877,
+          "source_line": 515,
+          "source_label": "强烈建议投资"
+        },
+        "突破_12m": {
+          "low": 176.982200297732,
+          "high": 263.21067164832596,
+          "midpoint": 220.09643597302897,
+          "source_line": 515,
+          "source_label": "强烈建议投资"
+        },
+        "突破_36m": {
+          "low": 240.5343355030795,
+          "high": 332.6022067194022,
+          "midpoint": 286.56827111124085,
+          "source_line": 515,
+          "source_label": "强烈建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "MU",
+        "collected_at": "2026-09-09T23:37:47.611413-07:00",
+        "source_timestamp_raw": "2026-09-10 03:53:48",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:59",
+        "source_underlying_close": 1027.77,
+        "source_underlying_current_price": 1026.11,
+        "reference_close": 1027.77,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/MU.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/mu/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 10,
+        "raw_sha256": "ca8fe5935f68252db27646391ed799e9bbdb290a6c5b5ae904e35471b1f5843e",
+        "iv_percent": 64.49000000000001,
+        "call": {
+          "option": "MU261016C01030000",
+          "bid": 84.15,
+          "bid_size": 19.0,
+          "ask": 85.8,
+          "ask_size": 22.0,
+          "iv": 0.6449,
+          "open_interest": 456.0,
+          "volume": 124.0,
+          "delta": 0.5451,
+          "gamma": 0.0019,
+          "vega": 1.297,
+          "theta": -1.13,
+          "rho": 0.5068,
+          "theo": 85.0059,
+          "change": 5.64,
+          "open": 74.65,
+          "high": 97.5,
+          "low": 72.53,
+          "tick": "up",
+          "last_trade_price": 84.49,
+          "last_trade_time": "2026-09-09T15:59:48",
+          "percent_change": 7.15282,
+          "prev_day_close": 78.8500022888184,
+          "strike": 1030.0
+        },
+        "strike_distance_percent": 0.21697461494303294,
+        "relative_spread_percent": 1.941747572815524
+      },
+      "selection_reason": "HBM和存储盈利弹性及现价；周期较强，低Forward PE不自动形成永久保护。",
+      "market_collected_at": "2026-09-09T23:35:03.088966-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MU_经营情景市场状态投资决策_2026-09-08.md",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 1000.26,
+      "report_sha256": "88cbbc4f98008267dee1a14f3cac771a1c87d2553475f9582750f0a77f1870ab",
+      "quote_source_url": "https://finance.yahoo.com/quote/MU/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 4,
+      "ticker": "META",
+      "name": "Meta",
+      "price": 653.69,
+      "price_date": "2026-09-09",
+      "pe": 23.098587,
+      "forward_pe": 18.698408,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 584.5900268554688,
+          "return": 11.820244952898463
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 647.3900146484375,
+          "return": 0.9731360090537988
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 765.7000122070312,
+          "return": -14.628445921553123
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -16.299999999999997,
+          "high": 15.299999999999997,
+          "midpoint": -0.5,
+          "source_line": 349,
+          "source_label": "不建议投资"
+        },
+        "基准_36m": {
+          "low": 2.799999999999997,
+          "high": 36.5,
+          "midpoint": 19.65,
+          "source_line": 349,
+          "source_label": "不建议投资"
+        },
+        "乐观_12m": {
+          "low": 27.0,
+          "high": 83.59999999999997,
+          "midpoint": 55.29999999999998,
+          "source_line": 349,
+          "source_label": "建议投资"
+        },
+        "乐观_36m": {
+          "low": 54.599999999999994,
+          "high": 115.69999999999999,
+          "midpoint": 85.14999999999999,
+          "source_line": 349,
+          "source_label": "建议投资"
+        },
+        "突破_12m": {
+          "low": 58.5,
+          "high": 137.0,
+          "midpoint": 97.75,
+          "source_line": 349,
+          "source_label": "建议投资"
+        },
+        "突破_36m": {
+          "low": 92.59999999999997,
+          "high": 177.3,
+          "midpoint": 134.95,
+          "source_line": 349,
+          "source_label": "建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "META",
+        "collected_at": "2026-09-09T23:37:48.499575-07:00",
+        "source_timestamp_raw": "2026-09-10 06:37:39",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:59",
+        "source_underlying_close": 653.69,
+        "source_underlying_current_price": 650.25,
+        "reference_close": 653.69,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/META.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/meta/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 13,
+        "raw_sha256": "ca8c5fdbaf8b43115800d7681e70da97adf2dec01737c9c5205839a10e77791d",
+        "iv_percent": 39.62,
+        "call": {
+          "option": "META261016C00655000",
+          "bid": 33.0,
+          "bid_size": 22.0,
+          "ask": 33.75,
+          "ask_size": 12.0,
+          "iv": 0.3962,
+          "open_interest": 1674.0,
+          "volume": 9296.0,
+          "delta": 0.53,
+          "gamma": 0.0048,
+          "vega": 0.8273,
+          "theta": -0.442,
+          "rho": 0.3339,
+          "theo": 33.2587,
+          "change": 17.175,
+          "open": 28.21,
+          "high": 36.65,
+          "low": 26.85,
+          "tick": "up",
+          "last_trade_price": 33.45,
+          "last_trade_time": "2026-09-09T15:59:48",
+          "percent_change": 105.53,
+          "prev_day_close": 32.9500007629394,
+          "strike": 655.0
+        },
+        "strike_distance_percent": 0.2004008016031955,
+        "relative_spread_percent": 2.247191011235955
+      },
+      "selection_reason": "广告现金流与AI推荐/广告转化形成较直接的价值回收；资本开支、广告周期及监管是风险。",
+      "market_collected_at": "2026-09-09T23:35:03.088966-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\META_经营情景市场状态投资决策_2026-09-09.md",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 653.69,
+      "report_sha256": "989dd186372e3f70cd799dc307960f0bf7aec9b1bf851c5900ef24ce06873287",
+      "quote_source_url": "https://finance.yahoo.com/quote/META/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 5,
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "price": 330.65,
+      "price_date": "2026-09-09",
+      "pe": 16.97382,
+      "forward_pe": 22.259953,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 364.260009765625,
+          "return": -9.226928255794709
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 306.3599853515625,
+          "return": 7.928585915214592
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 239.6300048828125,
+          "return": 37.98355517361003
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -25.91179797368818,
+          "high": 5.299392106456978,
+          "midpoint": -10.306202933615602,
+          "source_line": 416,
+          "source_label": "不建议投资"
+        },
+        "基准_36m": {
+          "low": -10.766695902011193,
+          "high": 23.002788446998352,
+          "midpoint": 6.118046272493579,
+          "source_line": 416,
+          "source_label": "不建议投资"
+        },
+        "乐观_12m": {
+          "low": 16.044228035687297,
+          "high": 72.01970663843946,
+          "midpoint": 44.03196733706338,
+          "source_line": 416,
+          "source_label": "建议投资"
+        },
+        "乐观_36m": {
+          "low": 39.27353999697567,
+          "high": 100.46793890821112,
+          "midpoint": 69.8707394525934,
+          "source_line": 416,
+          "source_label": "谨慎建议投资"
+        },
+        "突破_12m": {
+          "low": 78.56893996673222,
+          "high": 170.4628701043399,
+          "midpoint": 124.51590503553606,
+          "source_line": 416,
+          "source_label": "强烈建议投资"
+        },
+        "突破_36m": {
+          "low": 113.77106910630582,
+          "high": 214.67019507031608,
+          "midpoint": 164.22063208831094,
+          "source_line": 416,
+          "source_label": "强烈建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "GOOGL",
+        "collected_at": "2026-09-09T23:37:48.514035-07:00",
+        "source_timestamp_raw": "2026-09-10 03:54:42",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:59",
+        "source_underlying_close": 330.65,
+        "source_underlying_current_price": 330.8503,
+        "reference_close": 330.65,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/GOOGL.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/googl/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 7,
+        "raw_sha256": "1ba9379c44e9de41d660757a0f8d11a608a3245e226ebd89c9f1a3ff52b2bf88",
+        "iv_percent": 30.03,
+        "call": {
+          "option": "GOOGL261016C00330000",
+          "bid": 13.65,
+          "bid_size": 37.0,
+          "ask": 13.95,
+          "ask_size": 31.0,
+          "iv": 0.3003,
+          "open_interest": 1718.0,
+          "volume": 4452.0,
+          "delta": 0.5493,
+          "gamma": 0.0124,
+          "vega": 0.4173,
+          "theta": -0.1692,
+          "rho": 0.1793,
+          "theo": 13.8136,
+          "change": -4.65,
+          "open": 13.25,
+          "high": 14.4,
+          "low": 12.45,
+          "tick": "no_change",
+          "last_trade_price": 13.85,
+          "last_trade_time": "2026-09-09T15:59:46",
+          "percent_change": -25.1351,
+          "prev_day_close": 18.5,
+          "strike": 330.0
+        },
+        "strike_distance_percent": 0.19658248903673403,
+        "relative_spread_percent": 2.173913043478253
+      },
+      "selection_reason": "搜索、YouTube、云与TPU协同；需要证明AI搜索仍有经济利润，TTM利润有投资估值影响。",
+      "market_collected_at": "2026-09-09T23:35:03.666979-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\GOOGL_经营情景市场状态投资决策_2026-09-08.md",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 338.36,
+      "report_sha256": "3ea0cfcf1ac51ccc49226602d62083ea7055db7aea45509803362ac021d85e61",
+      "quote_source_url": "https://finance.yahoo.com/quote/GOOGL/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 6,
+      "ticker": "AMZN",
+      "name": "亚马逊",
+      "price": 252.4,
+      "price_date": "2026-09-09",
+      "pe": 20.289389,
+      "forward_pe": 24.268484,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 244.19000244140625,
+          "return": 3.3621350081946
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 213.49000549316406,
+          "return": 18.225674975722384
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 238.24000549316406,
+          "return": 5.943583856760037
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -20.700000000000003,
+          "high": 10.200000000000003,
+          "midpoint": -5.25,
+          "source_line": 427,
+          "source_label": "不建议投资"
+        },
+        "基准_36m": {
+          "low": -4.200000000000003,
+          "high": 29.69999999999999,
+          "midpoint": 12.749999999999993,
+          "source_line": 427,
+          "source_label": "不建议投资"
+        },
+        "乐观_12m": {
+          "low": 16.900000000000006,
+          "high": 63.20000000000002,
+          "midpoint": 40.05000000000001,
+          "source_line": 427,
+          "source_label": "建议投资"
+        },
+        "乐观_36m": {
+          "low": 41.900000000000006,
+          "high": 93.1,
+          "midpoint": 67.5,
+          "source_line": 427,
+          "source_label": "谨慎建议投资"
+        },
+        "突破_12m": {
+          "low": 63.900000000000006,
+          "high": 131.6,
+          "midpoint": 97.75,
+          "source_line": 427,
+          "source_label": "强烈建议投资"
+        },
+        "突破_36m": {
+          "low": 100.0,
+          "high": 175.8,
+          "midpoint": 137.9,
+          "source_line": 427,
+          "source_label": "强烈建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "AMZN",
+        "collected_at": "2026-09-09T23:37:49.097757-07:00",
+        "source_timestamp_raw": "2026-09-10 03:44:47",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T16:00:00",
+        "source_underlying_close": 252.4,
+        "source_underlying_current_price": 252.5452,
+        "reference_close": 252.4,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/AMZN.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/amzn/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 6,
+        "raw_sha256": "b5d0844ee2bf8f2f56d00edd36e5b9be8d1d88c4009d834652c915e253891919",
+        "iv_percent": 31.1,
+        "call": {
+          "option": "AMZN261016C00250000",
+          "bid": 11.75,
+          "bid_size": 52.0,
+          "ask": 11.95,
+          "ask_size": 34.0,
+          "iv": 0.311,
+          "open_interest": 10228.0,
+          "volume": 1456.0,
+          "delta": 0.5783,
+          "gamma": 0.0156,
+          "vega": 0.3148,
+          "theta": -0.1322,
+          "rho": 0.1432,
+          "theo": 11.8712,
+          "change": -2.98,
+          "open": 11.68,
+          "high": 12.65,
+          "low": 11.1,
+          "tick": "up",
+          "last_trade_price": 11.82,
+          "last_trade_time": "2026-09-09T15:57:56",
+          "percent_change": -20.1351,
+          "prev_day_close": 14.7999997138977,
+          "strike": 250.0
+        },
+        "strike_distance_percent": 0.9508716323296418,
+        "relative_spread_percent": 1.6877637130801628
+      },
+      "selection_reason": "AWS、广告和履约基础，AI算力及自研芯片增长；投入与承诺影响股东现金。",
+      "market_collected_at": "2026-09-09T23:35:03.700371-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AMZN_经营情景市场状态投资决策_2026-09-09.md",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 252.4,
+      "report_sha256": "4be4c998533990e8d095672e03b3b59b09ecfc704d9fdca36e6c64ee8e6fbd02",
+      "quote_source_url": "https://finance.yahoo.com/quote/AMZN/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 7,
+      "ticker": "AVGO",
+      "name": "博通",
+      "price": 364.38,
+      "price_date": "2026-09-09",
+      "pe": 46.956184,
+      "forward_pe": 18.798065,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 392.1600036621094,
+          "return": -7.083844196932699
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 345.75,
+          "return": 5.388286334056391
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 336.6700134277344,
+          "return": 8.230607261437473
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -27.78093199407212,
+          "high": -9.776738569625124,
+          "midpoint": -18.77883528184862,
+          "source_line": 358,
+          "source_label": "不建议投资"
+        },
+        "基准_36m": {
+          "low": -10.990504418464226,
+          "high": 7.721719084472255,
+          "midpoint": -1.6343926669959856,
+          "source_line": 358,
+          "source_label": "不建议投资"
+        },
+        "乐观_12m": {
+          "low": 11.666458093199424,
+          "high": 41.90945716010759,
+          "midpoint": 26.787957626653508,
+          "source_line": 358,
+          "source_label": "谨慎建议投资"
+        },
+        "乐观_36m": {
+          "low": 37.964718151380424,
+          "high": 70.0283659915473,
+          "midpoint": 53.996542071463864,
+          "source_line": 358,
+          "source_label": "谨慎建议投资"
+        },
+        "突破_12m": {
+          "low": 55.05858718919811,
+          "high": 99.56333497996596,
+          "midpoint": 77.31096108458203,
+          "source_line": 358,
+          "source_label": "建议投资"
+        },
+        "突破_36m": {
+          "low": 92.38188704100116,
+          "high": 139.718755145727,
+          "midpoint": 116.05032109336408,
+          "source_line": 358,
+          "source_label": "建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "AVGO",
+        "collected_at": "2026-09-09T23:37:49.299026-07:00",
+        "source_timestamp_raw": "2026-09-10 03:44:47",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:59",
+        "source_underlying_close": 364.38,
+        "source_underlying_current_price": 363.99,
+        "reference_close": 364.38,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/AVGO.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/avgo/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 4,
+        "raw_sha256": "4b05d9337a76369b1868fccd9307967881ba44d7afc76c311b735ee149c63ecb",
+        "iv_percent": 37.81,
+        "call": {
+          "option": "AVGO261016C00360000",
+          "bid": 19.8,
+          "bid_size": 106.0,
+          "ask": 20.6,
+          "ask_size": 68.0,
+          "iv": 0.3781,
+          "open_interest": 3207.0,
+          "volume": 487.0,
+          "delta": 0.5738,
+          "gamma": 0.0089,
+          "vega": 0.4545,
+          "theta": -0.2319,
+          "rho": 0.2013,
+          "theo": 20.2189,
+          "change": -2.8,
+          "open": 22.15,
+          "high": 23.05,
+          "low": 17.6,
+          "tick": "up",
+          "last_trade_price": 20.3,
+          "last_trade_time": "2026-09-09T15:46:13",
+          "percent_change": -12.1212,
+          "prev_day_close": 23.0999994277954,
+          "strike": 360.0
+        },
+        "strike_distance_percent": 1.202041824468958,
+        "relative_spread_percent": 3.9603960396039635
+      },
+      "selection_reason": "定制AI芯片、网络及软件现金流；客户集中、负债和项目周期需控制。",
+      "market_collected_at": "2026-09-09T23:35:03.700371-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AVGO_经营情景市场状态投资决策_2026-09-08.md",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 368.56,
+      "report_sha256": "40706b8fe3b1ed9b8656165878db012c8033d41a53e38ec1334cbcfe4d767508",
+      "quote_source_url": "https://finance.yahoo.com/quote/AVGO/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 8,
+      "ticker": "TSM",
+      "name": "台积电",
+      "price": 435.36,
+      "price_date": "2026-09-09",
+      "pe": 32.465324,
+      "forward_pe": 19.856693,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 427.9200134277344,
+          "return": 1.738639544495646
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 348.70001220703125,
+          "return": 24.85230420396909
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 250.9199981689453,
+          "return": 73.50550102701283
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -29.011392870268295,
+          "high": -10.760060639470794,
+          "midpoint": -19.885726754869545,
+          "source_line": 501,
+          "source_label": "不建议投资"
+        },
+        "基准_36m": {
+          "low": -14.08765159867697,
+          "high": 5.67622197721424,
+          "midpoint": -4.205714810731365,
+          "source_line": 501,
+          "source_label": "不建议投资"
+        },
+        "乐观_12m": {
+          "low": 5.071205439176765,
+          "high": 33.50698272693862,
+          "midpoint": 19.28909408305769,
+          "source_line": 501,
+          "source_label": "谨慎建议投资"
+        },
+        "乐观_36m": {
+          "low": 27.658489525909587,
+          "high": 58.615169055494306,
+          "midpoint": 43.13682929070195,
+          "source_line": 501,
+          "source_label": "谨慎建议投资"
+        },
+        "突破_12m": {
+          "low": 68.09376148474823,
+          "high": 119.72183939728046,
+          "midpoint": 93.90780044101434,
+          "source_line": 501,
+          "source_label": "强烈建议投资"
+        },
+        "突破_36m": {
+          "low": 105.1006063947078,
+          "high": 161.77048879088568,
+          "midpoint": 133.43554759279675,
+          "source_line": 501,
+          "source_label": "强烈建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "TSM",
+        "collected_at": "2026-09-09T23:37:49.634096-07:00",
+        "source_timestamp_raw": "2026-09-10 04:45:13",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T16:00:00",
+        "source_underlying_close": 435.36,
+        "source_underlying_current_price": 434.5,
+        "reference_close": 435.36,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/TSM.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/tsm/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 4,
+        "raw_sha256": "115d0988c3696704a5e5e20774b0ee0692874b4af66bcc3cbfc4d2dd031cdb8d",
+        "iv_percent": 35.410000000000004,
+        "call": {
+          "option": "TSM261016C00440000",
+          "bid": 17.7,
+          "bid_size": 15.0,
+          "ask": 18.45,
+          "ask_size": 5.0,
+          "iv": 0.3541,
+          "open_interest": 3369.0,
+          "volume": 284.0,
+          "delta": 0.4976,
+          "gamma": 0.0081,
+          "vega": 0.5525,
+          "theta": -0.2639,
+          "rho": 0.2114,
+          "theo": 18.0515,
+          "change": -2.46,
+          "open": 19.07,
+          "high": 20.45,
+          "low": 17.06,
+          "tick": "down",
+          "last_trade_price": 17.89,
+          "last_trade_time": "2026-09-09T15:58:06",
+          "percent_change": -12.0884,
+          "prev_day_close": 17.2249994277954,
+          "strike": 440.0
+        },
+        "strike_distance_percent": 1.065784638000733,
+        "relative_spread_percent": 4.149377593360996
+      },
+      "selection_reason": "先进制程与先进封装地位；持续投资与地缘尾部风险不能忽略。",
+      "market_collected_at": "2026-09-09T23:35:03.833588-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\TSM_经营情景市场状态投资决策_2026-09-09.md",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 439.0,
+      "report_sha256": "2737d6445c5116be4f02669672feee5831df789d3a1a5f4ebe8db30803efb067",
+      "quote_source_url": "https://finance.yahoo.com/quote/TSM/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TSM?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 9,
+      "ticker": "BABA",
+      "name": "阿里巴巴",
+      "price": 109.4,
+      "price_date": "2026-09-09",
+      "pe": 25.44186,
+      "forward_pe": 11.782668,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 119.69999694824219,
+          "return": -8.604843116826366
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 132.63999938964844,
+          "return": -17.521109391276234
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 147.10000610351562,
+          "return": -25.62882701512995
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": 18.599999999999994,
+          "high": 57.5,
+          "midpoint": 38.05,
+          "source_line": 496,
+          "source_label": "谨慎建议投资"
+        },
+        "基准_36m": {
+          "low": 42.599999999999994,
+          "high": 82.9,
+          "midpoint": 62.75,
+          "source_line": 496,
+          "source_label": "谨慎建议投资"
+        },
+        "乐观_12m": {
+          "low": 112.80000000000001,
+          "high": 171.90000000000003,
+          "midpoint": 142.35000000000002,
+          "source_line": 496,
+          "source_label": "建议投资"
+        },
+        "乐观_36m": {
+          "low": 152.69999999999996,
+          "high": 215.0,
+          "midpoint": 183.84999999999997,
+          "source_line": 496,
+          "source_label": "建议投资"
+        },
+        "突破_12m": {
+          "low": 184.60000000000002,
+          "high": 273.8,
+          "midpoint": 229.20000000000002,
+          "source_line": 496,
+          "source_label": "建议投资"
+        },
+        "突破_36m": {
+          "low": 239.0,
+          "high": 333.7,
+          "midpoint": 286.35,
+          "source_line": 496,
+          "source_label": "建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "BABA",
+        "collected_at": "2026-09-09T23:37:49.716553-07:00",
+        "source_timestamp_raw": "2026-09-10 03:44:54",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:59",
+        "source_underlying_close": 109.4,
+        "source_underlying_current_price": 109.5298,
+        "reference_close": 109.4,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/BABA.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/baba/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 2,
+        "raw_sha256": "ed67abebd758fb38c6647700762fe20ecaab70695209beced9c5f473e9736db3",
+        "iv_percent": 40.71,
+        "call": {
+          "option": "BABA261016C00110000",
+          "bid": 5.5,
+          "bid_size": 29.0,
+          "ask": 5.8,
+          "ask_size": 127.0,
+          "iv": 0.4071,
+          "open_interest": 3695.0,
+          "volume": 298.0,
+          "delta": 0.5256,
+          "gamma": 0.0282,
+          "vega": 0.1388,
+          "theta": -0.0756,
+          "rho": 0.0554,
+          "theo": 5.6014,
+          "change": -2.155,
+          "open": 6.75,
+          "high": 6.75,
+          "low": 5.6,
+          "tick": "no_change",
+          "last_trade_price": 5.67,
+          "last_trade_time": "2026-09-09T15:49:11",
+          "percent_change": -27.5399,
+          "prev_day_close": 7.82500004768372,
+          "strike": 110.0
+        },
+        "strike_distance_percent": 0.5484460694698212,
+        "relative_spread_percent": 5.309734513274333
+      },
+      "selection_reason": "电商现金基础、估值及云AI弹性；竞争补贴、资本分配和地缘风险仍显著。",
+      "market_collected_at": "2026-09-09T23:35:04.049579-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\BABA_经营情景市场状态投资决策_2026-09-09.md",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 109.4,
+      "report_sha256": "25755fea03ace8ee0a73b99042c6848e2f4cb7ef85cc9aa63ca324257aafe1e1",
+      "quote_source_url": "https://finance.yahoo.com/quote/BABA/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BABA?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 10,
+      "ticker": "CRDO",
+      "name": "Credo",
+      "price": 167.92,
+      "price_date": "2026-09-09",
+      "pe": 59.126762,
+      "forward_pe": 17.444366,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 234.32000732421875,
+          "return": -28.337318730254157
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 115.9800033569336,
+          "return": 44.7835791858177
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 149.02999877929688,
+          "return": 12.675301198034571
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -31.46944973797045,
+          "high": -14.986154121010003,
+          "midpoint": -23.227801929490226,
+          "source_line": 530,
+          "source_label": "不建议投资"
+        },
+        "基准_36m": {
+          "low": -15.385749166269648,
+          "high": 1.4971414959504585,
+          "midpoint": -6.9443038351595945,
+          "source_line": 530,
+          "source_label": "不建议投资"
+        },
+        "乐观_12m": {
+          "low": 21.57679252024775,
+          "high": 55.34257384468799,
+          "midpoint": 38.45968318246787,
+          "source_line": 530,
+          "source_label": "建议投资"
+        },
+        "乐观_36m": {
+          "low": 51.846117198666036,
+          "high": 87.01048118151499,
+          "midpoint": 69.42829919009051,
+          "source_line": 530,
+          "source_label": "谨慎建议投资"
+        },
+        "突破_12m": {
+          "low": 76.02161743687469,
+          "high": 126.87008694616483,
+          "midpoint": 101.44585219151976,
+          "source_line": 530,
+          "source_label": "建议投资"
+        },
+        "突破_36m": {
+          "low": 121.17585755121488,
+          "high": 174.1222010481182,
+          "midpoint": 147.64902929966655,
+          "source_line": 530,
+          "source_label": "建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "CRDO",
+        "collected_at": "2026-09-09T23:37:49.946351-07:00",
+        "source_timestamp_raw": "2026-09-10 02:50:09",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:59",
+        "source_underlying_close": 167.92,
+        "source_underlying_current_price": 168.0726,
+        "reference_close": 167.92,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/CRDO.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/crdo/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 4,
+        "raw_sha256": "2e25488054da6d720546830f3823e2e538df7dbaae6662ed2cd4bbb09be05bcf",
+        "iv_percent": 70.94,
+        "call": {
+          "option": "CRDO261016C00170000",
+          "bid": 13.8,
+          "bid_size": 60.0,
+          "ask": 15.4,
+          "ask_size": 44.0,
+          "iv": 0.7094,
+          "open_interest": 1764.0,
+          "volume": 90.0,
+          "delta": 0.5352,
+          "gamma": 0.0103,
+          "vega": 0.2128,
+          "theta": -0.2065,
+          "rho": 0.0799,
+          "theo": 14.7943,
+          "change": -2.95,
+          "open": 13.5,
+          "high": 18.29,
+          "low": 13.5,
+          "tick": "down",
+          "last_trade_price": 14.0,
+          "last_trade_time": "2026-09-09T15:50:57",
+          "percent_change": -17.4041,
+          "prev_day_close": 16.9499998092651,
+          "strike": 170.0
+        },
+        "strike_distance_percent": 1.2386850881372258,
+        "relative_spread_percent": 10.958904109589039
+      },
+      "selection_reason": "AEC和高速连接增长已有利润支持，跨代资格及光学机会扩大空间；客户集中和技术路线风险高。",
+      "market_collected_at": "2026-09-09T23:35:04.074322-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\CRDO_经营情景市场状态投资决策_2026-09-08.md",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 167.75,
+      "report_sha256": "8601c72ed3c682cec92ea6c40b16aef47a39c39a2bfa86e2dc1ac4d7f061b64c",
+      "quote_source_url": "https://finance.yahoo.com/quote/CRDO/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CRDO?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 11,
+      "ticker": "ASML",
+      "name": "阿斯麦",
+      "price": 1729.52,
+      "price_date": "2026-09-09",
+      "pe": 59.88643,
+      "forward_pe": 28.759155,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 1777.77001953125,
+          "return": -2.7140754428951475
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 1357.4200439453125,
+          "return": 27.41229273240926
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 805.1300048828125,
+          "return": 114.81251344641335
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -13.77386500300662,
+          "high": 14.185852143947457,
+          "midpoint": 0.20599357047041877,
+          "source_line": 531,
+          "source_label": "中性"
+        },
+        "基准_36m": {
+          "low": 1.226421203570922,
+          "high": 32.34946401313658,
+          "midpoint": 16.787942608353752,
+          "source_line": 531,
+          "source_label": "不建议投资"
+        },
+        "乐观_12m": {
+          "low": 24.900342291502838,
+          "high": 68.37055946158469,
+          "midpoint": 46.635450876543764,
+          "source_line": 531,
+          "source_label": "谨慎建议投资"
+        },
+        "乐观_36m": {
+          "low": 47.451792983024205,
+          "high": 96.22823384522871,
+          "midpoint": 71.84001341412646,
+          "source_line": 531,
+          "source_label": "谨慎建议投资"
+        },
+        "突破_12m": {
+          "low": 79.90139171562049,
+          "high": 147.86187208011478,
+          "midpoint": 113.88163189786763,
+          "source_line": 531,
+          "source_label": "建议投资"
+        },
+        "突破_36m": {
+          "low": 113.47346084462743,
+          "high": 190.20961885378603,
+          "midpoint": 151.84153984920673,
+          "source_line": 531,
+          "source_label": "建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "ASML",
+        "collected_at": "2026-09-09T23:37:49.948664-07:00",
+        "source_timestamp_raw": "2026-09-10 01:59:31",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:59",
+        "source_underlying_close": 1729.52,
+        "source_underlying_current_price": 1731.0,
+        "reference_close": 1729.52,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/ASML.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/asml/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 8,
+        "raw_sha256": "735ce8c8705c91983692fb08523be45e4e9907dd044c711d5d50b42b7db37de7",
+        "iv_percent": 44.26,
+        "call": {
+          "option": "ASML261016C01720000",
+          "bid": 100.6,
+          "bid_size": 36.0,
+          "ask": 111.1,
+          "ask_size": 19.0,
+          "iv": 0.4426,
+          "open_interest": 46.0,
+          "volume": 3.0,
+          "delta": 0.5575,
+          "gamma": 0.0016,
+          "vega": 2.1756,
+          "theta": -1.3261,
+          "rho": 0.914,
+          "theo": 107.855,
+          "change": -30.8,
+          "open": 113.5,
+          "high": 114.5,
+          "low": 105.75,
+          "tick": "down",
+          "last_trade_price": 105.75,
+          "last_trade_time": "2026-09-09T15:33:19",
+          "percent_change": -22.5558,
+          "prev_day_close": 136.549995422363,
+          "strike": 1720.0
+        },
+        "strike_distance_percent": 0.5504417410611029,
+        "relative_spread_percent": 9.919697685403873
+      },
+      "selection_reason": "EUV与设备服务地位；扩产需求、估值及出口政策影响回报。",
+      "market_collected_at": "2026-09-09T23:35:04.083551-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ASML_经营情景市场状态投资决策_2026-09-09.md",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 1764.85,
+      "report_sha256": "58b8be519d3b7dc0181dd59828f627a31329a55288a5480038368607e67fc429",
+      "quote_source_url": "https://finance.yahoo.com/quote/ASML/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ASML?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 12,
+      "ticker": "HTHIY",
+      "name": "日立",
+      "price": 33.35,
+      "price_date": "2026-09-09",
+      "pe": 30.045044,
+      "forward_pe": 13.44758,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 30.299999237060547,
+          "return": 10.06600937206934
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 30.8799991607666,
+          "return": 7.998707598320021
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 27.020000457763672,
+          "return": 23.4270889526115
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -15.424647676161925,
+          "high": 19.257331334332832,
+          "midpoint": 1.9163418290854537,
+          "source_line": 512,
+          "source_label": "中性"
+        },
+        "基准_36m": {
+          "low": -1.9372113943028637,
+          "high": 37.0039580209895,
+          "midpoint": 17.53337331334332,
+          "source_line": 512,
+          "source_label": "不建议投资"
+        },
+        "乐观_12m": {
+          "low": 14.389685157421297,
+          "high": 67.83238380809595,
+          "midpoint": 41.111034482758626,
+          "source_line": 512,
+          "source_label": "谨慎建议投资"
+        },
+        "乐观_36m": {
+          "low": 34.16449775112443,
+          "high": 94.80725637181405,
+          "midpoint": 64.48587706146924,
+          "source_line": 512,
+          "source_label": "谨慎建议投资"
+        },
+        "突破_12m": {
+          "low": 40.35046476761619,
+          "high": 107.9904647676162,
+          "midpoint": 74.1704647676162,
+          "source_line": 512,
+          "source_label": "建议投资"
+        },
+        "突破_36m": {
+          "low": 65.49997001499253,
+          "high": 141.45553223388308,
+          "midpoint": 103.4777511244378,
+          "source_line": 512,
+          "source_label": "建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "HTHIY",
+        "iv_percent": null,
+        "missing_reason": "No same-security US option chain from Yahoo; OTC ADR. No Tokyo-security or historical volatility proxy substituted."
+      },
+      "selection_reason": "电网设备、服务和日本IT基础，补足原名单的电力平台敞口；集团结构、预付、汇率与ADR需区分。",
+      "market_collected_at": "2026-09-09T23:35:04.268861-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\HTHIY_经营情景市场状态投资决策_2026-09-09.md",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 33.82,
+      "report_sha256": "e68b1023ab1d821e6087996a72ee20292185d7c44027e6985233813ab64ba70e",
+      "quote_source_url": "https://finance.yahoo.com/quote/HTHIY/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HTHIY?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 13,
+      "ticker": "NVT",
+      "name": "nVent",
+      "price": 158.54,
+      "price_date": "2026-09-09",
+      "pe": 44.16156,
+      "forward_pe": 24.541452,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 163.8000030517578,
+          "return": -3.2112350145046986
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 108.12999725341797,
+          "return": 46.61981321283033
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 91.44000244140625,
+          "return": 73.3814476892547
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -36.3,
+          "high": -12.0,
+          "midpoint": -24.15,
+          "source_line": 463,
+          "source_label": "不建议投资"
+        },
+        "基准_36m": {
+          "low": -22.299999999999997,
+          "high": 4.0,
+          "midpoint": -9.149999999999999,
+          "source_line": 463,
+          "source_label": "不建议投资"
+        },
+        "乐观_12m": {
+          "low": -0.6000000000000085,
+          "high": 36.60000000000002,
+          "midpoint": 18.000000000000007,
+          "source_line": 463,
+          "source_label": "谨慎建议投资"
+        },
+        "乐观_36m": {
+          "low": 20.799999999999997,
+          "high": 61.30000000000001,
+          "midpoint": 41.050000000000004,
+          "source_line": 463,
+          "source_label": "谨慎建议投资"
+        },
+        "突破_12m": {
+          "low": 42.0,
+          "high": 95.20000000000002,
+          "midpoint": 68.60000000000001,
+          "source_line": 463,
+          "source_label": "建议投资"
+        },
+        "突破_36m": {
+          "low": 72.29999999999998,
+          "high": 130.19999999999996,
+          "midpoint": 101.24999999999997,
+          "source_line": 463,
+          "source_label": "强烈建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "NVT",
+        "collected_at": "2026-09-09T23:37:50.199455-07:00",
+        "source_timestamp_raw": "2026-09-10 03:18:20",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:59",
+        "source_underlying_close": 158.54,
+        "source_underlying_current_price": 158.55,
+        "reference_close": 158.54,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/NVT.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/nvt/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 3,
+        "raw_sha256": "3497293fe116884d58ef93b82859408159165f3680642c653133fafcfa00683a",
+        "iv_percent": 48.82,
+        "call": {
+          "option": "NVT261016C00160000",
+          "bid": 9.4,
+          "bid_size": 10.0,
+          "ask": 10.1,
+          "ask_size": 1.0,
+          "iv": 0.4882,
+          "open_interest": 84.0,
+          "volume": 8.0,
+          "delta": 0.5302,
+          "gamma": 0.0159,
+          "vega": 0.2016,
+          "theta": -0.1351,
+          "rho": 0.079,
+          "theo": 9.9128,
+          "change": -2.9,
+          "open": 10.6,
+          "high": 10.6,
+          "low": 9.6,
+          "tick": "down",
+          "last_trade_price": 9.6,
+          "last_trade_time": "2026-09-09T15:54:09",
+          "percent_change": -23.2,
+          "prev_day_close": 12.5,
+          "strike": 160.0
+        },
+        "strike_distance_percent": 0.9209032420840257,
+        "relative_spread_percent": 7.179487179487173
+      },
+      "selection_reason": "配电与机房设备增长、现金基础及平台扩展；并购出资、整合与估值要求提高。",
+      "market_collected_at": "2026-09-09T23:35:04.403316-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\NVT_经营情景市场状态投资决策_2026-09-09.md",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 158.54,
+      "report_sha256": "2460d1cdd04b7965b039ef5e78dc4dbc8df28fc37100b9137f1e9b19de629f00",
+      "quote_source_url": "https://finance.yahoo.com/quote/NVT/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/NVT?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 14,
+      "ticker": "EME",
+      "name": "EMCOR",
+      "price": 754.29,
+      "price_date": "2026-09-09",
+      "pe": 24.098722,
+      "forward_pe": 20.525461,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 827.780029296875,
+          "return": -8.877965968724599
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 719.1799926757812,
+          "return": 4.881949954362397
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 623.030029296875,
+          "return": 21.06800066302732
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -26.813793103448276,
+          "high": -10.516024340770798,
+          "midpoint": -18.664908722109537,
+          "source_line": 540,
+          "source_label": "不建议投资"
+        },
+        "基准_36m": {
+          "low": -12.873563218390814,
+          "high": 4.654225828262312,
+          "midpoint": -4.109668695064251,
+          "source_line": 540,
+          "source_label": "不建议投资"
+        },
+        "乐观_12m": {
+          "low": 3.629208924949296,
+          "high": 30.074645030425955,
+          "midpoint": 16.851926977687626,
+          "source_line": 540,
+          "source_label": "谨慎建议投资"
+        },
+        "乐观_36m": {
+          "low": 24.437052062204188,
+          "high": 53.24002704530088,
+          "midpoint": 38.83853955375253,
+          "source_line": 540,
+          "source_label": "中性"
+        },
+        "突破_12m": {
+          "low": 38.889790398918166,
+          "high": 76.61041244083839,
+          "midpoint": 57.75010141987828,
+          "source_line": 540,
+          "source_label": "强烈建议投资"
+        },
+        "突破_36m": {
+          "low": 68.0002704530088,
+          "high": 109.51345503718733,
+          "midpoint": 88.75686274509806,
+          "source_line": 540,
+          "source_label": "建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "EME",
+        "collected_at": "2026-09-09T23:37:50.407488-07:00",
+        "source_timestamp_raw": "2026-09-10 03:19:15",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:55",
+        "source_underlying_close": 754.29,
+        "source_underlying_current_price": 754.29,
+        "reference_close": 754.29,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/EME.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/eme/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 3,
+        "raw_sha256": "d1c31a0de222c809d7e2e14d04a0129d8d55057a37e15028d5bc378dbadf5362",
+        "iv_percent": 36.91,
+        "call": {
+          "option": "EME261016C00750000",
+          "bid": 36.0,
+          "bid_size": 6.0,
+          "ask": 42.7,
+          "ask_size": 7.0,
+          "iv": 0.3691,
+          "open_interest": 4.0,
+          "volume": 0.0,
+          "delta": 0.56,
+          "gamma": 0.0044,
+          "vega": 0.9482,
+          "theta": -0.47,
+          "rho": 0.4093,
+          "theo": 39.2074,
+          "change": 0.0,
+          "open": 0.0,
+          "high": 0.0,
+          "low": 0.0,
+          "tick": "up",
+          "last_trade_price": 53.5,
+          "last_trade_time": "2026-09-08T14:35:50",
+          "percent_change": 0.0,
+          "prev_day_close": 53.1499996185303,
+          "strike": 750.0
+        },
+        "strike_distance_percent": 0.5687467684842629,
+        "relative_spread_percent": 17.02668360864041
+      },
+      "selection_reason": "工程交付与现实经营盈利，现金转换比仅有订单更重要；工程成本、用工和项目延期仍可冲击。",
+      "market_collected_at": "2026-09-09T23:35:04.436233-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\EME_经营情景市场状态投资决策_2026-09-09.md",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 773.16,
+      "report_sha256": "ba4c58642d12a13e6f185dbed97563ad23d1f1ee8389d1fb6e5ae98cb27e9d47",
+      "quote_source_url": "https://finance.yahoo.com/quote/EME/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/EME?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 15,
+      "ticker": "ADBE",
+      "name": "Adobe",
+      "price": 254.86,
+      "price_date": "2026-09-09",
+      "pe": 14.588438,
+      "forward_pe": 9.268257,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 237.8800048828125,
+          "return": 7.138050600575863
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 282.44000244140625,
+          "return": -9.764906600695788
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 354.05999755859375,
+          "return": -28.01784958555704
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": 46.5,
+          "high": 92.30000000000001,
+          "midpoint": 69.4,
+          "source_line": 442,
+          "source_label": "建议投资"
+        },
+        "基准_36m": {
+          "low": 81.6,
+          "high": 133.6,
+          "midpoint": 107.6,
+          "source_line": 442,
+          "source_label": "建议投资"
+        },
+        "乐观_12m": {
+          "low": 101.70000000000005,
+          "high": 172.2,
+          "midpoint": 136.95000000000002,
+          "source_line": 442,
+          "source_label": "强烈建议投资"
+        },
+        "乐观_36m": {
+          "low": 151.29999999999998,
+          "high": 232.0,
+          "midpoint": 191.64999999999998,
+          "source_line": 442,
+          "source_label": "强烈建议投资"
+        },
+        "突破_12m": {
+          "low": 140.3,
+          "high": 220.10000000000002,
+          "midpoint": 180.20000000000002,
+          "source_line": 442,
+          "source_label": "建议投资"
+        },
+        "突破_36m": {
+          "low": 199.09999999999997,
+          "high": 287.8,
+          "midpoint": 243.45,
+          "source_line": 442,
+          "source_label": "建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "ADBE",
+        "collected_at": "2026-09-09T23:37:50.631001-07:00",
+        "source_timestamp_raw": "2026-09-10 03:38:11",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T16:00:00",
+        "source_underlying_close": 254.86,
+        "source_underlying_current_price": 252.99,
+        "reference_close": 254.86,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/ADBE.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/adbe/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 5,
+        "raw_sha256": "01af5a8b69f88c3afb18822500986ffc9f8a6f59e45feff91b45389252beeb4c",
+        "iv_percent": 52.55,
+        "call": {
+          "option": "ADBE261016C00255000",
+          "bid": 16.05,
+          "bid_size": 72.0,
+          "ask": 19.0,
+          "ask_size": 204.0,
+          "iv": 0.5255,
+          "open_interest": 281.0,
+          "volume": 47.0,
+          "delta": 0.5434,
+          "gamma": 0.0096,
+          "vega": 0.322,
+          "theta": -0.2213,
+          "rho": 0.1297,
+          "theo": 17.001,
+          "change": -1.2,
+          "open": 17.7,
+          "high": 18.65,
+          "low": 17.55,
+          "tick": "down",
+          "last_trade_price": 17.55,
+          "last_trade_time": "2026-09-09T15:39:46",
+          "percent_change": -6.4,
+          "prev_day_close": 18.75,
+          "strike": 255.0
+        },
+        "strike_distance_percent": 0.05493211959506361,
+        "relative_spread_percent": 16.833095577746075
+      },
+      "selection_reason": "低估值、创意与文档订阅基础；因AI对原付费模式的替代风险降低优先级，保留价值修复可能。",
+      "market_collected_at": "2026-09-09T23:35:04.520232-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ADBE_经营情景市场状态投资决策_2026-09-09.md",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 254.86,
+      "report_sha256": "79906452350d4b00840a1bfc22f12520393fd5ef274a83aa8842e1c4daeff0cf",
+      "quote_source_url": "https://finance.yahoo.com/quote/ADBE/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ADBE?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 16,
+      "ticker": "TEL",
+      "name": "TE Connectivity",
+      "price": 204.68,
+      "price_date": "2026-09-09",
+      "pe": 20.086359,
+      "forward_pe": 15.859204,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 210.91000366210938,
+          "return": -2.953868263209658
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 206.24000549316406,
+          "return": -0.7564029536528349
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 208.64999389648438,
+          "return": -1.9027050144338697
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -17.575351768614425,
+          "high": 25.890380105530596,
+          "midpoint": 4.157514168458086,
+          "source_line": 409,
+          "source_label": "中性"
+        },
+        "基准_36m": {
+          "low": -0.04884698065271209,
+          "high": 49.025366425640016,
+          "midpoint": 24.488259722493652,
+          "source_line": 409,
+          "source_label": "中性"
+        },
+        "乐观_12m": {
+          "low": 3.8570598006644445,
+          "high": 59.641420754348246,
+          "midpoint": 31.749240277506345,
+          "source_line": 409,
+          "source_label": "谨慎建议投资"
+        },
+        "乐观_36m": {
+          "low": 26.290985929255456,
+          "high": 89.58670607777998,
+          "midpoint": 57.93884600351772,
+          "source_line": 409,
+          "source_label": "谨慎建议投资"
+        },
+        "突破_12m": {
+          "low": 31.398710181747106,
+          "high": 104.1086671878054,
+          "midpoint": 67.75368868477625,
+          "source_line": 409,
+          "source_label": "建议投资"
+        },
+        "突破_36m": {
+          "low": 60.24232948993554,
+          "high": 142.36652335352744,
+          "midpoint": 101.30442642173149,
+          "source_line": 409,
+          "source_label": "强烈建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "TEL",
+        "collected_at": "2026-09-09T23:37:50.865281-07:00",
+        "source_timestamp_raw": "2026-09-10 04:46:13",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:59",
+        "source_underlying_close": 204.68,
+        "source_underlying_current_price": 204.68,
+        "reference_close": 204.68,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/TEL.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/tel/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 2,
+        "raw_sha256": "da747e55b4938a50f72ff9ea25f4789016d1fc6e841d124c226026f123c60b6e",
+        "iv_percent": 34.37,
+        "call": {
+          "option": "TEL261016C00200000",
+          "bid": 10.5,
+          "bid_size": 23.0,
+          "ask": 13.3,
+          "ask_size": 24.0,
+          "iv": 0.3437,
+          "open_interest": 66.0,
+          "volume": 0.0,
+          "delta": 0.6226,
+          "gamma": 0.0173,
+          "vega": 0.2479,
+          "theta": -0.1119,
+          "rho": 0.1237,
+          "theo": 11.7062,
+          "change": 0.0,
+          "open": 0.0,
+          "high": 0.0,
+          "low": 0.0,
+          "tick": "up",
+          "last_trade_price": 14.9,
+          "last_trade_time": "2026-09-03T15:19:19",
+          "percent_change": 0.0,
+          "prev_day_close": 12.0500001907349,
+          "strike": 200.0
+        },
+        "strike_distance_percent": 2.2864959937463403,
+        "relative_spread_percent": 23.529411764705888
+      },
+      "selection_reason": "连接、电力与工业客户基础，业务相对分散；汽车工业周期与AI实际收入占比是约束。",
+      "market_collected_at": "2026-09-09T23:35:04.526920-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\TEL_经营情景市场状态投资决策_2026-09-09.md",
+      "report_date": "2026-09-09",
+      "report_anchor_price": 204.99,
+      "report_sha256": "2cad18182d8b0ab828a9fb2f7c88187e1ff8d176655f2eedefb1984a6c10d127",
+      "quote_source_url": "https://finance.yahoo.com/quote/TEL/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/TEL?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 17,
+      "ticker": "APH",
+      "name": "安费诺",
+      "price": 81.34,
+      "price_date": "2026-09-09",
+      "pe": 40.87437,
+      "forward_pe": 24.845516,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 77.03500366210938,
+          "return": 5.588363903730298
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 68.02999877929688,
+          "return": 19.56489998461337
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 58.39500045776367,
+          "return": 39.29274657482389
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -28.33184165232356,
+          "high": -5.816179001721167,
+          "midpoint": -17.074010327022364,
+          "source_line": 500,
+          "source_label": "不建议投资"
+        },
+        "基准_36m": {
+          "low": -12.852323580034437,
+          "high": 11.573149741824466,
+          "midpoint": -0.6395869191049854,
+          "source_line": 500,
+          "source_label": "不建议投资"
+        },
+        "乐观_12m": {
+          "low": 1.7225473321858829,
+          "high": 34.59139414802067,
+          "midpoint": 18.156970740103276,
+          "source_line": 500,
+          "source_label": "谨慎建议投资"
+        },
+        "乐观_36m": {
+          "low": 23.73562822719451,
+          "high": 59.51944922547335,
+          "midpoint": 41.62753872633393,
+          "source_line": 500,
+          "source_label": "谨慎建议投资"
+        },
+        "突破_12m": {
+          "low": 47.15593803786575,
+          "high": 95.90636833046474,
+          "midpoint": 71.53115318416525,
+          "source_line": 500,
+          "source_label": "建议投资"
+        },
+        "突破_36m": {
+          "low": 79.01962134251292,
+          "high": 132.2932874354561,
+          "midpoint": 105.65645438898451,
+          "source_line": 500,
+          "source_label": "强烈建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "APH",
+        "collected_at": "2026-09-09T23:37:50.865281-07:00",
+        "source_timestamp_raw": "2026-09-10 01:53:31",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:59",
+        "source_underlying_close": 81.34,
+        "source_underlying_current_price": 81.34,
+        "reference_close": 81.34,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/APH.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/aph/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 4,
+        "raw_sha256": "7e9807a6e3b9711187f2ea5be84a1840815b3ab0eec49e2541f6796da929e92c",
+        "iv_percent": 42.13,
+        "call": {
+          "option": "APH261016C00082500",
+          "bid": 3.8,
+          "bid_size": 171.0,
+          "ask": 4.1,
+          "ask_size": 4.0,
+          "iv": 0.4213,
+          "open_interest": 2034.0,
+          "volume": 35.0,
+          "delta": 0.4974,
+          "gamma": 0.036,
+          "vega": 0.1032,
+          "theta": -0.0596,
+          "rho": 0.0388,
+          "theo": 4.0148,
+          "change": -0.75,
+          "open": 4.2,
+          "high": 4.27,
+          "low": 3.98,
+          "tick": "down",
+          "last_trade_price": 4.0,
+          "last_trade_time": "2026-09-09T15:53:43",
+          "percent_change": -15.7895,
+          "prev_day_close": 4.75,
+          "strike": 82.5
+        },
+        "strike_distance_percent": 1.4261126137201874,
+        "relative_spread_percent": 7.594936708860756
+      },
+      "selection_reason": "连接器设计导入、制造能力和客户基础；AI内容量增长，同时面对高估值及并购回报要求。",
+      "market_collected_at": "2026-09-09T23:35:04.722770-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\APH_经营情景市场状态投资决策_2026-09-08.md",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 81.76,
+      "report_sha256": "4439f1398a15d6cf194d02d221c7bb2ee0c1cdea177dcbc58abcb2b2613817d3",
+      "quote_source_url": "https://finance.yahoo.com/quote/APH/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/APH?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 18,
+      "ticker": "JBL",
+      "name": "捷普",
+      "price": 311.37,
+      "price_date": "2026-09-09",
+      "pe": 39.067753,
+      "forward_pe": 18.494144,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 362.3800048828125,
+          "return": -14.076385064156138
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 247.4600067138672,
+          "return": 25.826392771430974
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 209.22000122070312,
+          "return": 48.824203318658974
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -20.856739570286166,
+          "high": 2.3144811638886154,
+          "midpoint": -9.271129203198775,
+          "source_line": 546,
+          "source_label": "不建议投资"
+        },
+        "基准_36m": {
+          "low": -5.910800655169098,
+          "high": 20.36997783986895,
+          "midpoint": 7.229588592349927,
+          "source_line": 546,
+          "source_label": "不建议投资"
+        },
+        "乐观_12m": {
+          "low": 18.86535311687058,
+          "high": 55.27727141343095,
+          "midpoint": 37.071312265150766,
+          "source_line": 546,
+          "source_label": "建议投资"
+        },
+        "乐观_36m": {
+          "low": 43.24027362944406,
+          "high": 84.96853261393196,
+          "midpoint": 64.10440312168801,
+          "source_line": 546,
+          "source_label": "谨慎建议投资"
+        },
+        "突破_12m": {
+          "low": 58.1862125445611,
+          "high": 111.24931110896998,
+          "midpoint": 84.71776182676554,
+          "source_line": 546,
+          "source_label": "建议投资"
+        },
+        "突破_36m": {
+          "low": 91.8898063397244,
+          "high": 152.0747952596589,
+          "midpoint": 121.98230079969166,
+          "source_line": 546,
+          "source_label": "建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "JBL",
+        "collected_at": "2026-09-09T23:37:51.284603-07:00",
+        "source_timestamp_raw": "2026-09-10 02:32:08",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T16:00:00",
+        "source_underlying_close": 311.37,
+        "source_underlying_current_price": 311.37,
+        "reference_close": 311.37,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/JBL.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/jbl/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 3,
+        "raw_sha256": "f791651edca786a052a2b8545a34004a75b3004305ae550353b93469e7f72edd",
+        "iv_percent": 57.4,
+        "call": {
+          "option": "JBL261016C00310000",
+          "bid": 22.8,
+          "bid_size": 26.0,
+          "ask": 25.4,
+          "ask_size": 32.0,
+          "iv": 0.574,
+          "open_interest": 29.0,
+          "volume": 4.0,
+          "delta": 0.5577,
+          "gamma": 0.007,
+          "vega": 0.3918,
+          "theta": -0.3001,
+          "rho": 0.1599,
+          "theo": 23.8516,
+          "change": 1.95,
+          "open": 25.7,
+          "high": 25.8,
+          "low": 25.7,
+          "tick": "up",
+          "last_trade_price": 25.8,
+          "last_trade_time": "2026-09-09T11:03:30",
+          "percent_change": 8.1761,
+          "prev_day_close": 23.8500003814697,
+          "strike": 310.0
+        },
+        "strike_distance_percent": 0.43999100748306486,
+        "relative_spread_percent": 10.78838174273858
+      },
+      "selection_reason": "AI服务器、机柜、电力和散热交付能力；薄利润率、营运资本及客户集中削弱保护。",
+      "market_collected_at": "2026-09-09T23:35:04.834844-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\JBL_经营情景市场状态投资决策_2026-09-08.md",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 312.33,
+      "report_sha256": "718d8198f43fd89c74f27bae573787a9563bb1c269ea0fb6caa0174cef65e08a",
+      "quote_source_url": "https://finance.yahoo.com/quote/JBL/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/JBL?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 19,
+      "ticker": "SNDK",
+      "name": "闪迪",
+      "price": 1764.17,
+      "price_date": "2026-09-09",
+      "pe": 23.58516,
+      "forward_pe": 6.664246,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 1646.5400390625,
+          "return": 7.144069269307041
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 588.72998046875,
+          "return": 199.6568984979087
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 70.51000213623047,
+          "return": 2402.0138229346453
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": -23.945635624684698,
+          "high": -2.469144130100844,
+          "midpoint": -13.207389877392771,
+          "source_line": 351,
+          "source_label": "不建议投资"
+        },
+        "基准_36m": {
+          "low": -8.57713712397333,
+          "high": 14.67264265915415,
+          "midpoint": 3.04775276759041,
+          "source_line": 351,
+          "source_label": "不建议投资"
+        },
+        "乐观_12m": {
+          "low": 70.23567570018764,
+          "high": 130.1334134465499,
+          "midpoint": 100.18454457336877,
+          "source_line": 351,
+          "source_label": "强烈建议投资"
+        },
+        "乐观_36m": {
+          "low": 107.77027780769424,
+          "high": 173.67749253189885,
+          "midpoint": 140.72388516979655,
+          "source_line": 351,
+          "source_label": "强烈建议投资"
+        },
+        "突破_12m": {
+          "low": 165.0080831212411,
+          "high": 265.49441947204633,
+          "midpoint": 215.25125129664372,
+          "source_line": 351,
+          "source_label": "强烈建议投资"
+        },
+        "突破_36m": {
+          "low": 225.4969169637847,
+          "high": 336.5244670298214,
+          "midpoint": 281.0106919968031,
+          "source_line": 351,
+          "source_label": "强烈建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "SNDK",
+        "collected_at": "2026-09-09T23:37:51.347841-07:00",
+        "source_timestamp_raw": "2026-09-10 03:44:53",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:59",
+        "source_underlying_close": 1764.17,
+        "source_underlying_current_price": 1763.1,
+        "reference_close": 1764.17,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/SNDK.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/sndk/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 13,
+        "raw_sha256": "ecfa7f52ef0bc4f500362d2393fc1d2eb25f2671e4a53f1925625e639653b814",
+        "iv_percent": 75.57000000000001,
+        "call": {
+          "option": "SNDK261016C01760000",
+          "bid": 173.1,
+          "bid_size": 14.0,
+          "ask": 176.1,
+          "ask_size": 9.0,
+          "iv": 0.7557,
+          "open_interest": 106.0,
+          "volume": 193.0,
+          "delta": 0.5599,
+          "gamma": 0.0009,
+          "vega": 2.2166,
+          "theta": -2.2612,
+          "rho": 0.8674,
+          "theo": 174.6161,
+          "change": -2.95,
+          "open": 177.0,
+          "high": 204.2,
+          "low": 163.9,
+          "tick": "down",
+          "last_trade_price": 174.1,
+          "last_trade_time": "2026-09-09T15:59:18",
+          "percent_change": -1.66619,
+          "prev_day_close": 177.049995422363,
+          "strike": 1760.0
+        },
+        "strike_distance_percent": 0.23637177822999345,
+        "relative_spread_percent": 1.718213058419244
+      },
+      "selection_reason": "AI存储、企业SSD和NAND盈利弹性；与MU共享周期，保留低于核心平台的优先级。",
+      "market_collected_at": "2026-09-09T23:35:04.886442-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\SNDK_经营情景市场状态投资决策_2026-09-08.md",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 1737.99,
+      "report_sha256": "a531660eb65bf18752e46cd81a620880bfcbef457b47ad3eb838055e080c833f",
+      "quote_source_url": "https://finance.yahoo.com/quote/SNDK/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SNDK?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    },
+    {
+      "rank": 20,
+      "ticker": "ET",
+      "name": "Energy Transfer",
+      "price": 21.68,
+      "price_date": "2026-09-09",
+      "pe": 14.7483,
+      "forward_pe": 12.389988,
+      "history": {
+        "3m": {
+          "target": "2026-06-09",
+          "date": "2026-06-09",
+          "close": 19.059999465942383,
+          "return": 13.746068244855936
+        },
+        "6m": {
+          "target": "2026-03-09",
+          "date": "2026-03-09",
+          "close": 18.59000015258789,
+          "return": 16.621838741523387
+        },
+        "1y": {
+          "target": "2025-09-09",
+          "date": "2025-09-09",
+          "close": 17.170000076293945,
+          "return": 26.266743760431677
+        }
+      },
+      "scenarios": {
+        "基准_12m": {
+          "low": 26.69866236162362,
+          "high": 63.805396678966815,
+          "midpoint": 45.25202952029522,
+          "source_line": 366,
+          "source_label": "谨慎建议投资"
+        },
+        "基准_36m": {
+          "low": 55.669695571955714,
+          "high": 95.45525830258305,
+          "midpoint": 75.56247693726938,
+          "source_line": 366,
+          "source_label": "谨慎建议投资"
+        },
+        "乐观_12m": {
+          "low": 58.44773985239854,
+          "high": 102.30115313653144,
+          "midpoint": 80.37444649446499,
+          "source_line": 366,
+          "source_label": "建议投资"
+        },
+        "乐观_36m": {
+          "low": 93.66937269372696,
+          "high": 140.6976937269373,
+          "midpoint": 117.18353321033213,
+          "source_line": 366,
+          "source_label": "建议投资"
+        },
+        "突破_12m": {
+          "low": 79.58071955719558,
+          "high": 140.6976937269373,
+          "midpoint": 110.13920664206644,
+          "source_line": 366,
+          "source_label": "建议投资"
+        },
+        "突破_36m": {
+          "low": 120.35844095940962,
+          "high": 187.62679889298897,
+          "midpoint": 153.9926199261993,
+          "source_line": 366,
+          "source_label": "建议投资"
+        }
+      },
+      "iv": {
+        "ticker": "ET",
+        "collected_at": "2026-09-09T23:37:51.514590-07:00",
+        "source_timestamp_raw": "2026-09-10 00:49:55",
+        "source_timestamp_timezone": "not specified in response",
+        "source_underlying_last_trade_time": "2026-09-09T15:59:59",
+        "source_underlying_close": 21.68,
+        "source_underlying_current_price": 21.7,
+        "reference_close": 21.68,
+        "expiry": "2026-10-16",
+        "dte_calendar": 37,
+        "source_url": "https://cdn.cboe.com/api/global/delayed_quotes/options/ET.json",
+        "source_display_url": "https://www.cboe.com/delayed_quotes/et/quote_table/",
+        "source": "Cboe delayed quotes: single near-ATM call source implied volatility; no IV30 substitution.",
+        "clean_call_count": 2,
+        "raw_sha256": "279900e59960117ea9239aa647fea79ff52c49432b000c6507a73adc1969922b",
+        "iv_percent": 18.16,
+        "call": {
+          "option": "ET261016C00022000",
+          "bid": 0.38,
+          "bid_size": 5.0,
+          "ask": 0.41,
+          "ask_size": 70.0,
+          "iv": 0.1816,
+          "open_interest": 19688.0,
+          "volume": 998.0,
+          "delta": 0.4357,
+          "gamma": 0.3238,
+          "vega": 0.0272,
+          "theta": -0.0064,
+          "rho": 0.0097,
+          "theo": 0.3779,
+          "change": 0.07,
+          "open": 0.35,
+          "high": 0.42,
+          "low": 0.31,
+          "tick": "up",
+          "last_trade_price": 0.4,
+          "last_trade_time": "2026-09-09T15:58:39",
+          "percent_change": 21.2121,
+          "prev_day_close": 0.329999998211861,
+          "strike": 22.0
+        },
+        "strike_distance_percent": 1.4760147601476037,
+        "relative_spread_percent": 7.594936708860752
+      },
+      "selection_reason": "管网、合同及现金分配提供不同收入结构；AI传导间接，项目、杠杆及税务影响回报。",
+      "market_collected_at": "2026-09-09T23:35:05.003519-07:00",
+      "report_path": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ET_经营情景市场状态投资决策_2026-09-08.md",
+      "report_date": "2026-09-08",
+      "report_anchor_price": 21.51,
+      "report_sha256": "e27f88df6bed7b73b3d5a0fb11337a00dbfa8c0bb635ea56c22f90d6505dbf5b",
+      "quote_source_url": "https://finance.yahoo.com/quote/ET/key-statistics/",
+      "history_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ET?period1=1756684800&period2=1788998400&interval=1d&events=div%2Csplits&includeAdjustedClose=true"
+    }
+  ]
+}

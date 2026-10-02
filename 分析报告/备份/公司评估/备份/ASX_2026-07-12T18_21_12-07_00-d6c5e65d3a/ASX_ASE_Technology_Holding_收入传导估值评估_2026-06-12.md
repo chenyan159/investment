@@ -1,0 +1,147 @@
+# 公司收入传导与价值传导评估：ASE Technology Holding（ASX）
+
+报告日期：2026-06-12  
+公司代号：ASX  
+公司名称：ASE Technology Holding（日月光投控）  
+正式输出目录：`分析报告/公司评估/`  
+
+本报告只评估 ASX 从行业需求到 NTM 收入、利润和经营质量的传导，不做全公司排序，不给投资评级，不判断股价区间，不做估值倍数判断。报告未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论或模型比较。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即 2026-06-12 起未来 12 个月，经营建模近似映射为 2026Q2-2027Q1；FY2026、FY2027、LEAP 长期 run-rate、310mm panel-level packaging、CPO/optical packaging 只作为补充或远期期权。
+- 当前收入基准、指引和 run-rate：最新已披露财务锚点为 2026Q1 合并收入 NT$1,736.62 亿、毛利率 20.1%、经营利润率 10.1%、归母净利 NT$141.48 亿；2026Q2 公司指引为合并收入 QoQ +7%-9%、ATM 收入 QoQ +9%-11%、ATM 毛利率 26%-27%；2026 年 5 月合并收入 NT$630.33 亿，YoY +28.6%，ATM 收入 NT$421.62 亿，YoY +37.9%。
+- 当前预期定义：以公司 Q2 指引、2026 LEAP services 超过 US$3.5B、公司称 2027 LEAP 增量动能仍强、2026 年 5 月 ATM 高增长、以及本地行业资料中 AI/HBM/2.5D/测试仍为瓶颈为当前预期锚；不把股价、估值倍数或市场叙事作为经营证据。
+- 重要产品/业务线：LEAP/VIPack/FOCoS/FOCoS-Bridge 先进封装 assembly/full-process；Advanced testing，包括 wafer sort、final test、KGD、SLT、burn-in；非 LEAP packaging，包括 bumping、flip chip、WLP、SiP、wirebond 和传统/AI 周边封装；EMS/USI；310mm PLP、CPO/optical packaging 为 NTM 小额或远期期权。
+- NTM 公司收入四情景：悲观 NT$7,250-7,650 亿，基准 NT$7,900-8,350 亿，乐观 NT$8,600-9,100 亿，极度乐观 NT$9,400-10,000 亿；基准相对 TTM NT$6,708.96 亿约 +18%-24%，符合当前可见订单、指引和 run-rate 正常兑现。
+- 利润或 EBITDA 四情景：悲观 EBITDA NT$1,500-1,700 亿、归母净利 NT$520-620 亿；基准 EBITDA NT$1,750-1,950 亿、归母净利 NT$680-800 亿；乐观 EBITDA NT$2,000-2,250 亿、归母净利 NT$820-980 亿；极度乐观 EBITDA NT$2,300-2,600 亿、归母净利 NT$1,000-1,200 亿。单品收入弹性不能自动变成同等利润弹性，核心原因是 LEAP/full-process 初期折旧和良率爬坡。
+- 最大传导瓶颈：不是 AI 需求总额，而是 ASX 在 NTM 内可确认收入的 LEAP 产线 tuning/qualification、wafer sort/test cell、客户认证、full-process 良率、CoWoS-like 外溢量和 EMS 低毛利抵消。
+- 最大利润率变量：ATM mix、LEAP/full-process 利用率、测试附着率、客户 pricing、折旧爬坡是否被 Q4/2027 收入吸收。
+- 最大现金流变量：2026-2027 重 capex；2026Q1 设备 capex US$10.03 亿，其中 packaging US$6.36 亿、testing US$3.26 亿，另有 facilities 投入。若收入指引继续上修，负自由现金流是成长投入；若收入未上修而 capex 继续前置，经营现金流质量下移。
+- 可信度：基准为中高，因财报、月度收入、Q2 指引和 LEAP 指引均为 A/B 级；乐观为中，因需要客户拉货、良率和定价继续超预期；极度乐观为低到中，因要求需求、公司捕获、利润率和执行同时突破。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| LEAP/VIPack/FOCoS/FOCoS-Bridge 先进封装 assembly/full-process | 2026 LEAP services 指引 >US$3.5B，管理层称组合约 75% assembly、25% test；assembly 部分年化可视为 >US$2.6B | 约占 2026E 合并收入 10%-12%，但利润权重高于收入权重 | AI/HPC 封装主增量；full-process 是 2027 增量核心 | A/B：公司正式指引、电话会拆分、capex 投向 | 进入基准；full-process 今年 US$300M 目标进入小比例基准，2027 增量保守处理 | 2027 更大 full-process、CoWoS-like、AMD EFB/FOCoS-Bridge 客户放量 |
+| Advanced testing：wafer sort、final test、KGD、SLT、burn-in | 2026Q1 Testing 收入 NT$210.41 亿，年化 NT$841.64 亿；测试机台 7,585 台 | 2026Q1 占合并收入 12.1%，占 ATM type 19% | HBM/AI SoC/AI ASIC 测试时间和复杂度上升，利润质量高于普通组装 | A：分部收入、机台、capex；B：LEAP test 组合和客户需求 | 进入基准；按 NTM +20%-35% 的可见增长处理 | HBM4/Rubin/MI400/ASIC 测试前置带来乐观上修 |
+| 非 LEAP packaging：bumping、flip chip、WLP、SiP、wirebond、普通先进封装 | 2026Q1 Packaging 收入 NT$889.81 亿；扣除 LEAP assembly 估算后，非 LEAP packaging 年化约 NT$2,700-3,000 亿 | 约占合并收入 35%-45%，但结构差异大 | 现金流底盘；AI peripheral、汽车/工业可抵消手机/PC 柔弱 | A：分部收入、service type；B：管理层 general market 约 13% 增长框架 | 进入基准，但按低于 LEAP 的利润权重处理 | AI peripheral、connectivity、power、sensor 边际改善 |
+| EMS/USI | 2026Q1 EMS 收入 NT$613.61 亿，年化 NT$2,454 亿；EMS GM 9.5%、OPM 3.1% | 2026Q1 占合并收入 35.3%，但营业利润贡献低 | 收入体量大，利润稀释明显；computing application 有 AI accelerator 新产品拉动 | A：分部收入、利润率、应用拆分 | 进入基准，但利润贡献按低毛利处理 | 若 AI server/通信/工业模块大单且毛利改善，进入乐观；否则只是收入补充 |
+| 310mm panel-level packaging、CPO/optical packaging | 310mm PLP 产线预计 2027H1 production start；CPO 公司称仍无量化收入时间表 | NTM 基准近似 0%-1% | 可能改变中长期成本曲线和客户 socket，但 NTM 不宜提前收入化 | C：PLP 产线和客户 qualification；D：CPO 合作进展但无数值 | 不进入 NTM 基准，只在乐观/极度乐观作为小额上限或附录跟踪 | 2027H1 小量产、CPO packaging/test 客户明确、光电测试复杂度提升 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部产品需求池和需求强弱，不评估 ASX 份额、收入确认、利润率或公司汇总。当前需求锚以项目内行业调研、2026Q1-Q2 公司/客户公开信号、AI/HBM/CoWoS/2.5D/测试瓶颈和管理层指引隐含需求为准。需求单位根据产品特性使用封装服务金额、测试时长/机台负载、产能利用率、客户认证和 pilot-to-production 节奏。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| LEAP/VIPack/FOCoS/FOCoS-Bridge 先进封装 assembly/full-process | 本地行业资料判断 2026 高端 AI 相关封装服务约 US$120-180B run-rate；公司 LEAP 2026 指引 >US$3.5B，说明需求已进入产能排队 | AI rack 验收或 CoWoS/HBM 同步不及预期，需求仅略高于当前排产；NTM 行业需求较锚低 10%-20% | Blackwell/GB300、MI350/ASIC、HBM3E/早期 HBM4 按当前路径放量；需求高于 2025 但受产能约束 | GB300/Rubin/MI400/custom ASIC 同步抢产能，2.5D/bridge 和 wafer sort 更紧；需求较当前锚上修 20%-40% | 新增预算、客户预付款和二供认证同时加速，CoWoS-like 外溢显著扩大；需求非线性上修 50%+ | 悲观仍可能绝对增长；基准新增封装服务需求为数十亿美元级；乐观/极乐取决于 AI 芯片平台放量和产能释放 | 基准符合当前预期；乐观高于预期；极乐为上限 | 正向：NVIDIA/Broadcom/AMD AI 平台继续上修、ASE capex 和 LEAP 指引上修；反证：客户机架验收延迟、TSMC 自有 CoWoS 吸收外溢、full-process 良率慢 |
+| Advanced testing：wafer sort、final test、KGD、SLT、burn-in | 行业资料判断 HBM3E/HBM4、AI GPU/ASIC、大封装、SLT/burn-in 共同拉长 test time；公司 Testing 2026Q1 YoY +31.5%、测试机台 7,585 台 | HBM4/Rubin/MI400 验证后移，测试需求仍增长但低于 test cell 扩产；测试时长/机台负载低于当前锚 10%-15% | HBM3E/GB300/MI350 和 ASIC 维持高利用率，HBM4 资格认证在 2026H2 前置；test time 与机台负载稳步上行 | HBM4、Rubin、MI400、TPU/Trainium/ASIC 多项目并行，客户提前锁 wafer sort、SLT、burn-in capacity | 测试成为 HBM/CoWoS 之外的第二瓶颈，客户为交期支付溢价，test insertion 和 burn-in 大幅增加 | 需求单位无法可靠量化为行业收入；以 test hours、机台利用率和订单能见度看，基准约 +20%-35%，乐观 +40%+ | 基准略强于当前预期；乐观明显高于预期 | 正向：测试收入和机台增加、行业 SLT/burn-in 订单；反证：AI 芯片出货排程后移、测试设备/探针交期改善导致服务稀缺下降 |
+| 非 LEAP packaging：bumping、flip chip、WLP、SiP、wirebond、普通先进封装 | 公司称 general market 仍维持类似去年约 13% 增长框架；PC/手机偏弱，汽车/工业和 AI peripheral 抵消 | PC/手机/消费继续走弱，wirebond 和普通封装利用率低于计划；需求低于当前锚 5%-10% | AI peripheral、汽车/工业恢复抵消手机/PC 柔弱，普通先进封装温和增长 | AI 周边芯片、power/connectivity/sensor 和成熟节点涨价共振，传统产能利用率改善 | AI peripheral 和传统周期同时上行，但仍不是 ASX 价值传导主线 | 基准绝对需求个位数到低双位数增长；乐观增加来自利用率和 mix | 基准符合当前预期；极乐也不应等同 LEAP 价值 | 正向：管理层未见订单削减、AI peripheral 需求；反证：成熟半导体库存、PC/手机下修、客户压价 |
+| EMS/USI | 2026Q1 EMS 收入 QoQ -10.3%，YoY -0.7%；Q2 指引 YoY 至少 +10%；computing application 因 AI accelerator 新产品改善 | 通信/消费 seasonality 与客户项目延迟，收入仅低个位数增长或持平 | Q2 YoY +10% 兑现，H2 按季节性和 computing 新产品恢复 | AI accelerator/通信/工业模块增加，computing mix 改善，EMS 低双位数至中双位数增长 | 获得更多 AI server/rack/模块项目，但需证明毛利率不被 pass-through 稀释 | 绝对收入体量大；需求上修主要体现收入，不一定体现利润 | 基准符合当前预期；乐观需 margin 证据 | 正向：Q2 EMS YoY 指引、computing application 抬头；反证：EMS 低毛利、客户集中、替代供应商多 |
+| 310mm PLP、CPO/optical packaging | PLP 2027H1 production start，CPO 公司称正在与 upstream foundry/客户同步 roadmap 但没有数值 | 2027H1 仍为 qualification，NTM 几乎无量产需求 | 2027H1 小量产或 pilot，需求以客户认证和小批量为主 | 少数 AI/HPC/ASIC 客户提前导入 PLP/FOCoS-Bridge，CPO packaging/test 进入早期项目 | PLP/CPO 同时获得大客户 socket，NTM 形成可见生产订单 | 基准绝对收入小；乐观约数十亿新台币级；极乐才可能上百亿新台币级 | 基准低于热门叙事；乐观/极乐高于当前预期 | 正向：310mm PLP 产线、AMD EFB 生态、CPO 行业路线；反证：客户认证、warpage、RDL、光电测试和可维护性均未量产验证 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些产品需求能进入 ASX 的 NTM 收入表，以及当前可收入化基数。必须区分“可参与需求”和“可确认收入”。收入基数以财报、月度收入、正式指引、电话会拆分、客户项目和产能认证为准；没有客户、时间表和收入确认路径的机会不进基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| LEAP/VIPack/FOCoS/FOCoS-Bridge 先进封装 assembly/full-process | 2026 LEAP services >US$3.5B；组合约 75% assembly、25% test；full-process 2026 目标约 US$300M | 直接 | 高于普通 OSAT，但受折旧、良率和客户议价约束 | NT$850-950 亿 | NT$1,000-1,180 亿 | NT$1,250-1,550 亿 | NT$1,700-2,000 亿 | 基准符合 LEAP 指引和 Q4 ramp；乐观需要客户/良率上修 | A/B | 是 | 正式 LEAP 指引、Q1-Q2 指引、capex、电话会拆分、AMD EFB 合作 | 基准主口径；full-process 超出 US$300M 的部分主要在乐观/极乐 |
+| Advanced testing | 2026Q1 Testing NT$210.41 亿；Testing 年化 NT$841.64 亿；LEAP test 约占 LEAP 25%，其中 wafer sort 约占 test 75% | 直接 | 复杂度高、切换成本高；毛利好于普通组装，但服务商仍重资产 | NT$880-980 亿 | NT$1,000-1,150 亿 | NT$1,200-1,450 亿 | NT$1,500-1,750 亿 | 基准略高于当前 annualized，符合 test demand；乐观需 HBM4/AI ASIC 前置 | A/B | 是 | 分部收入、tester 数、Q1 capex、电话会 LEAP test 拆分 | 基准主口径；HBM4/Rubin/MI400 前置在乐观 |
+| 非 LEAP packaging | 2026Q1 Packaging NT$889.81 亿；扣除 LEAP assembly 后，非 LEAP packaging annualized 约 NT$2,700-3,000 亿 | 直接 | 中低到中等；mix 改善可提升利用率，wirebond/普通封装议价弱 | NT$2,750-2,950 亿 | NT$2,950-3,200 亿 | NT$3,150-3,400 亿 | NT$3,300-3,600 亿 | 基准符合 general market 恢复；极乐仍低于 LEAP 弹性 | A/B | 是 | 分部收入、service type、management general market 约 13% 框架 | 进入基准，但不按 AI 高毛利处理 |
+| EMS/USI | 2026Q1 EMS NT$613.61 亿；Q2 指引 YoY 至少 +10%；EMS GM 9.5%、OPM 3.1% | 直接，但 AI 相关性多为间接 | 低毛利、pass-through 属性强 | NT$2,400-2,550 亿 | NT$2,600-2,800 亿 | NT$2,850-3,150 亿 | NT$3,200-3,500 亿 | 基准符合 Q2 指引和恢复；乐观需 computing/AI modules 放量 | A | 是 | 分部收入、Q2 指引、应用结构 | 进入基准，但利润贡献折扣大 |
+| 310mm PLP | 2027H1 production start；2026 customer qualification | 直接但时间后置 | 若良率达标可改善材料利用率；初期折旧/良率压力大 | 0 | 0-20 亿 | 20-80 亿 | 100-250 亿 | 基准低于主题热度；只作为 NTM 小额上限 | C | 否，除小额 pilot | 官方产线公告、production start 时间表 | 不进基准主表；乐观/极乐小额，且不可与 LEAP 重复计算 |
+| CPO/optical packaging/test | 公司称开发进展 on track，但没有 revenue number 或量产时间 | 直接/间接均可能 | 若量产测试复杂度高，但 2026-2027 早期不确定 | 0 | 0 | 0-30 亿 | 50-150 亿 | 当前预期外 | D | 否 | 仅电话会开发表述和行业方向，无客户量化 | NTM 不进基准；仅跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内能给 ASX 贡献多少收入和经营利润。利润贡献以营业利润方向和粗略区间表达；公司未披露产品级营业利润，无法可靠量化的地方标明估算口径。公司汇总会剔除 PLP/CPO 与 LEAP/testing 的重复计算。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| LEAP/VIPack/FOCoS/FOCoS-Bridge 先进封装 assembly/full-process | 悲观 | NT$850-950 亿 | 营业利润 NT$80-130 亿 | 利润率低于预期，折旧先到 | 低于当前预期 | LEAP >US$3.5B 仍有锚，但 full-process tuning 慢 | 保留悲观 | 客户验收、产线 tuning、折旧、TSMC 外溢少于预期 |
+| LEAP/VIPack/FOCoS/FOCoS-Bridge 先进封装 assembly/full-process | 基准 | NT$1,000-1,180 亿 | 营业利润 NT$150-230 亿 | 稳步上行，但不假设 TSMC 式毛利 | 符合当前预期 | LEAP 指引、Q4 ramp、Q2 ATM +9%-11% 指引 | 保留基准 | full-process 超出 US$300M 的增量证据仍不足 |
+| LEAP/VIPack/FOCoS/FOCoS-Bridge 先进封装 assembly/full-process | 乐观 | NT$1,250-1,550 亿 | 营业利润 NT$230-360 亿 | 高利用率和 pricing 改善 | 高于当前预期 | AMD EFB/2.5D bridge、客户扩产、LEAP 2027 动能 | 保留乐观 | 大客户 socket 和交付节奏未完全公开 |
+| LEAP/VIPack/FOCoS/FOCoS-Bridge 先进封装 assembly/full-process | 极度乐观 | NT$1,700-2,000 亿 | 营业利润 NT$360-520 亿 | 只有满载+高良率才大幅扩张 | 明显高于当前预期 | 多客户 CoWoS-like 外溢、full-process 与 FOCoS-Bridge 同时放量 | 下移为上限 | 任一核心环节缺证据则降为乐观 |
+| Advanced testing | 悲观 | NT$880-980 亿 | 营业利润 NT$110-160 亿 | 利用率改善有限 | 略低于当前预期 | Testing annualized 已约 NT$842 亿 | 保留悲观 | HBM4/SLT 前置采购延迟 |
+| Advanced testing | 基准 | NT$1,000-1,150 亿 | 营业利润 NT$160-230 亿 | Mix 改善，测试复杂度提升 | 符合至略高于当前预期 | Testing YoY +31.5%、tester 增至 7,585 台、LEAP test 拆分 | 保留基准 | 设备/探针供应和客户 correlation |
+| Advanced testing | 乐观 | NT$1,200-1,450 亿 | 营业利润 NT$230-340 亿 | 稼动率和复杂度共同上升 | 高于当前预期 | HBM4、Rubin/MI400/ASIC 测试前置，wafer sort 占 LEAP test 约 75% | 保留乐观 | test cell 安装、客户程序验证 |
+| Advanced testing | 极度乐观 | NT$1,500-1,750 亿 | 营业利润 NT$330-480 亿 | 测试成为瓶颈，利润率上修 | 明显高于当前预期 | AI package test time 非线性增长 | 下移为上限 | 若 AI rack 出货慢，测试需求会前置回落 |
+| 非 LEAP packaging | 悲观 | NT$2,750-2,950 亿 | 营业利润 NT$250-330 亿 | 传统利用率不足，wirebond/手机拖累 | 低于当前预期 | PC/手机 softness，普通封装议价弱 | 保留悲观 | 成熟周期、客户压价 |
+| 非 LEAP packaging | 基准 | NT$2,950-3,200 亿 | 营业利润 NT$330-430 亿 | 稼动率温和改善 | 符合当前预期 | management general market 约 13% 框架，AI peripheral 抵消弱消费 | 保留基准 | AI peripheral 不等于高端 LEAP |
+| 非 LEAP packaging | 乐观 | NT$3,150-3,400 亿 | 营业利润 NT$420-560 亿 | mix 和利用率改善 | 略高于当前预期 | 汽车/工业恢复、connectivity/power/sensor 需求 | 保留乐观 | 普通封装供应多，价格传导弱 |
+| 非 LEAP packaging | 极度乐观 | NT$3,300-3,600 亿 | 营业利润 NT$520-700 亿 | 利用率接近满载 | 高于当前预期但非主驱动 | AI 周边和成熟周期共振 | 下移为乐观上沿 | 不能把传统封装按 AI 先进封装利润率处理 |
+| EMS/USI | 悲观 | NT$2,400-2,550 亿 | 营业利润 NT$60-80 亿 | 低利润率，收入恢复弱 | 低于当前预期 | EMS Q1 QoQ -10.3%，通信/消费 seasonality | 保留悲观 | 客户项目延迟、替代供应商多 |
+| EMS/USI | 基准 | NT$2,600-2,800 亿 | 营业利润 NT$80-110 亿 | OPM 约 3%-4% | 符合当前预期 | Q2 YoY 至少 +10%，computing application 改善 | 保留基准 | pass-through 和材料成本 |
+| EMS/USI | 乐观 | NT$2,850-3,150 亿 | 营业利润 NT$110-160 亿 | mix 改善但仍低于 ATM | 高于当前预期 | AI accelerator/通信/工业模块拉动 | 保留乐观 | 低毛利收入不能自动提升公司利润率 |
+| EMS/USI | 极度乐观 | NT$3,200-3,500 亿 | 营业利润 NT$150-220 亿 | 若 AI modules 毛利改善才上修 | 明显高于当前预期 | 获得更多系统/模块项目 | 下移为上限 | 收入可能是低毛利 pass-through |
+| 310mm PLP、CPO/optical packaging | 悲观 | 0 | 0 或费用化拖累 | 研发/认证成本先行 | 符合谨慎预期 | CPO 无量化时间表，PLP 2027H1 才生产 | 保留悲观 | 无 NTM 量产证据 |
+| 310mm PLP、CPO/optical packaging | 基准 | 0-20 亿 | 无法可靠量化，可能小幅拖累 | 初期折旧/良率不利 | 低于热门叙事 | PLP customer qualification | 保留基准但不入主增量 | 与 LEAP 重复计算风险 |
+| 310mm PLP、CPO/optical packaging | 乐观 | 20-80 亿 | 0-15 亿 | 小批量验证，利润率不稳定 | 高于当前预期 | 2027H1 小量产，客户 early build | 下移为小额乐观 | 客户认证、warpage、光电测试 |
+| 310mm PLP、CPO/optical packaging | 极度乐观 | 100-250 亿 | 15-60 亿 | 需良率达标和客户付费 | 明显高于当前预期 | 大客户 socket 提前 | 移入附录/仅作上限 | 缺少量产客户和明确收入确认路径 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA、净利润和自由现金流方向，不讨论市场定价。汇总时已避免把 PLP/CPO 与 LEAP/testing 重复计算，也没有把 AI 芯片 TAM、云厂 capex 或 AMD 总投资直接当 ASX 收入。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | NT$7,250-7,650 亿 | 相对 TTM NT$6,708.96 亿约 +8%-14% | 低于当前基准；Q2 指引可兑现但 H2/Q1 2027 LEAP ramp 不足 | 19.0%-20.2% | 8.5%-10.0% | EBITDA NT$1,500-1,700 亿；归母净利 NT$520-620 亿 | 重 capex 下 FCF 明显承压，经营现金流难覆盖总 capex | 中 | full-process tuning 慢、客户验收后移、EMS 低毛利、传统封装利用率不足 |
+| 基准公司 | NT$7,900-8,350 亿 | 约 +18%-24% | 符合当前指引、May run-rate、LEAP >US$3.5B 和 ATM 高增长正常兑现 | 20.5%-21.8% | 10.8%-12.2% | EBITDA NT$1,750-1,950 亿；归母净利 NT$680-800 亿 | FCF 为负到接近持平，取决于 H2 capex 和 Q4 LEAP 收入释放 | 中高 | 折旧前置、wafer sort/test cell、客户认证、Q4 ramp 节奏 |
+| 乐观公司 | NT$8,600-9,100 亿 | 约 +28%-36% | 高于当前预期；LEAP、testing 和 AI peripheral 同步强于计划 | 22.0%-23.5% | 12.5%-14.0% | EBITDA NT$2,000-2,250 亿；归母净利 NT$820-980 亿 | 经营现金流明显改善，但因持续扩产，FCF 仍可能仅小幅转正 | 中 | 需要高利用率、pricing 维持、良率达标且 EMS 不稀释 |
+| 极度乐观公司 | NT$9,400-10,000 亿 | 约 +40%-49% | 显著高于当前预期；多客户 CoWoS-like 外溢、HBM4 testing、full-process 和小量 PLP 同时成立 | 23.5%-25.0% | 14.5%-16.0% | EBITDA NT$2,300-2,600 亿；归母净利 NT$1,000-1,200 亿 | 若客户预付款/长约同步出现，FCF 可转正；否则 capex 仍吞噬现金 | 低到中 | 需求、公司捕获、利润率和执行质量必须同时突破，且不能只靠 PLP/CPO 远期期权 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。正向证据必须说明提升的是需求、收入基数、产品贡献、公司利润还是执行可信度；反证只限制实际影响环节，不重复惩罚；市场定价不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 财报与 Q2 指引 | 公司汇总、收入基数 | Q2 合并 +7%-9%、ATM +9%-11% 是基准锚 | Q2 ATM GM 26%-27%，支撑基准利润率 | 指引提高可信度，但不是全年保证 | 基准保留 |
+| 2026 年 5 月月度收入 | 收入基数、执行可信度 | 合并 YoY +28.6%、ATM YoY +37.9%，支持 Q2 指引 | ATM mix 强化利润质量 | 月度数据强，但仍需 Q2/Q3 连续验证 | 基准保留，乐观保留 |
+| LEAP 指引 >US$3.5B 且较前指引 +10% | 产品贡献、公司利润 | 直接提高 LEAP 可收入化基数 | 若利用率高，ATM margin 上行；若 ramp 慢，折旧抵消 | 2026 capex 前置，Q4/2027 收入需兑现 | 基准保留，乐观保留 |
+| 新增 capex 和 facilities 投入 | 执行可信度、现金流 | 支撑 2027 产能，但 NTM 初期不等于收入 | 折旧快于收入时压制毛利率 | FCF 承压，是最大现金流变量 | 基准不下移；现金流可信度下调 |
+| AMD 台湾生态投资与 ASE/SPIL EFB 合作 | 产品需求、收入基数 | 提高 FOCoS-Bridge/EFB 客户证据 | 只有量产 socket 和良率明确后才提升利润率 | 2026 更多是认证/生态信号，2027 更重要 | 乐观保留；基准小比例 |
+| 310mm PLP production start 2027H1 | 收入基数、远期期权 | NTM 只允许小额 pilot；不能作为 2026 基准收入 | 初期利润率不稳定 | 需客户 qualification、warpage/RDL/检测通过 | 移入附录/仅作跟踪，极乐上限 |
+| CPO/optical packaging | 需求、远期期权 | 公司无量化收入时间表，不进 NTM 基准 | 可能高复杂度，但缺收入证据 | 需 foundry/客户 roadmap 和 test flow 同步 | 仅作跟踪 |
+| EMS 低毛利和 pass-through | 公司组合风险 | EMS 收入可上修但利润权重低 | OPM 约 3% 左右，可能稀释合并 margin | 材料和客户集中影响现金转换 | 在 EMS 层处理一次，不重复惩罚 ATM |
+| TSMC CoWoS 自有扩产与外溢不确定 | 需求捕获、份额 | 可能减少 ASE 外溢订单 | 若 TSMC 吸收高端价值，ASE pricing 受限 | 影响 LEAP 上限，不影响已披露 LEAP 基准 | 限制乐观/极乐，不下移基准 |
+| AI rack/数据中心验收延迟 | 需求风险 | 影响后续追加订单和 2027 ramp | 利用率低时折旧拖累毛利 | 影响 capex 回收期 | 悲观保留；不在每个产品重复扣减 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | AI 需求仍增长，但 ASX 收入/利润兑现低于当前预期 | Q1/Q2 指引降低深度下行情景概率 | full-process tuning、客户验收、EMS 低毛利、capex 折旧 | 保留 | 悲观公司情景 | 中 | AI rack 延迟只在需求/订单层处理，不在每个产品重复下调 |
+| 基准 | Q2 指引兑现，LEAP >US$3.5B，testing 和 general market 正常增长 | A/B 级证据充足：财报、月度收入、LEAP 指引、capex、tester 数 | backlog/RPO 未披露，产品级利润率需估算 | 保留 | 基准公司情景 | 中高 | capex 折旧只在利润率和现金流处理，不再压低需求 |
+| 乐观 | LEAP、testing、AI peripheral 同步超预期 | May ATM 强、AMD EFB 合作、行业 AI/HBM/2.5D/测试瓶颈仍紧 | 客户 socket、pricing、full-process 良率未完全披露 | 保留 | 乐观公司情景 | 中 | TSMC 外溢不确定只限制 LEAP 上限，不惩罚 EMS/非 LEAP |
+| 极度乐观 | 多客户 CoWoS-like 外溢、HBM4 testing、PLP/CPO 小量收入、利润率同时突破 | 产线、客户生态和行业需求都有方向性证据 | 任一核心环节缺少 NTM 量化证据；PLP/CPO 缺明确收入确认路径 | 下移 | 极度乐观上限，PLP/CPO 移入附录/仅作跟踪 | 低到中 | 远期期权不重复计入公司基准，也不作为悲观处罚 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入更可能落在 NT$7,900-8,350 亿，约 +18%-24%；核心不是全公司所有业务同步繁荣，而是 ATM/LEAP/testing 的 mix 抬升抵消 EMS 和传统封装的低毛利。
+- NTM 收入结论：LEAP/VIPack/FOCoS-Bridge 和 advanced testing 是收入增量主轴；非 LEAP packaging 是现金流和产能利用率底盘；EMS 提供收入体量但利润权重低；PLP/CPO 不能进入基准收入，只能做乐观小额或远期期权。
+- 利润/现金流结论：利润改善取决于 ATM mix、LEAP 利用率和测试附着率；现金流短期受重 capex 约束。收入上修若伴随 ATM GM 达到结构性区间上沿，经营价值传导成立；若收入强但毛利不升，说明折旧、良率或客户议价吞噬价值。
+- 主要传导瓶颈：从行业需求到 ASX 收入的瓶颈在客户认证、产线 tuning、wafer sort/test cell、full-process 良率和 CoWoS-like 外溢；从收入到利润的瓶颈在折旧、利用率、pricing、EMS 稀释和客户项目成本。
+- 乐观情景成立条件：LEAP 指引上修至 US$4B+ 或 Q3/Q4 run-rate 明显高于当前；Testing YoY 持续 >25%-30%；ATM GM 在 H2 到达结构性区间上沿；AMD/ASIC/HBM4 客户项目明确进入 production ramp；capex 与经营现金流差距收窄。
+- 极度乐观情景成立条件：2026H2-2027Q1 看到多客户 CoWoS-like/full-process 放量、HBM4/Rubin/MI400/ASIC 测试前置、PLP 早期生产订单、客户预付款/长约和 ATM 利润率同步上修。缺任一环节，极度乐观应降为乐观上限。
+- 悲观情景触发条件：连续两个月 ATM YoY 低于 20%；Q2 收入低于 NT$1,858 亿；LEAP 维持不变但 capex 继续上调；ATM GM 未能随收入上升；full-process 或 PLP qualification 延后；EMS 恢复主要是低毛利 pass-through。
+- 后续跟踪数据：月度合并/ATM 收入，Q2/Q3 指引兑现，LEAP 年度指引，Testing 收入和 tester 数，ATM 毛利率，full-process revenue，capex 与 operating cash flow，AMD EFB/ASE-SPIL 认证进展，310mm PLP 2027H1 production start，CPO 是否出现可量化客户/收入。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务使用 2026Q1 已披露数据、2026Q2 指引、2026 年 5 月月度收入；行业资料使用项目内 2026-06-10 至 2026-06-11 正式行业调研与 2026 年以来外部公开资料；报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：ASE Technology 2026Q1 results press release；ASE 2026Q1 earnings conference PDF；ASE 2026 年 5 月 monthly net revenues；ASE 310mm PLP official press release；AMD Taiwan ecosystem investment release。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 LEAP >US$3.5B 是已披露公司指引；2027 LEAP “stronger incremental revenue growth” 是管理层方向性表述，不是具体数值指引；310mm PLP、CPO/optical packaging 因 NTM 收入确认路径不足，主要列为乐观上限或后续跟踪。
+- 项目内公司资料：`公司调研/封测_检测_计量_光罩/ASX_ASE_Technology_Holding_公司调研_2026-06-11.md`。
+- 项目内行业资料：`行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`；`行业调研/AI服务器_存储_芯片/行业调研_封装基板、中介层与RDL_2026-06-10.md`；`行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-06-11.md`；`行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`；`行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`。
+- 主要外部来源：
+  - ASE Technology 2026Q1 results press release, 2026-04-29: https://www.prnewswire.com/news-releases/ase-technology-holding-co-ltd-reports-its-unaudited-consolidated-financial-results-for-the-first-quarter-of-2026-302756590.html
+  - ASE Technology May 2026 monthly revenue, 2026-06-09: https://www.prnewswire.com/news-releases/ase-technology-holding-co-ltd-announces-monthly-net-revenues-302794653.html
+  - ASE Technology 2026Q1 earnings conference PDF, 2026-04-29: https://media-aseholdco.todayir.com/20260430164502853152592_tc.pdf
+  - ASE 310mm panel-level packaging production line, 2026-05-26: https://www.aseglobal.com/press-room/310x310
+  - AMD Taiwan ecosystem investment and ASE/SPIL EFB cooperation, 2026-05-21: https://ir.amd.com/news-events/press-releases/detail/1286/amd-announces-more-than-10-billion-in-taiwan-ecosystem-investments-to-accelerate-ai-infrastructure
+  - NVIDIA FY2027Q1 results, 2026-05-20: https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027
+  - Broadcom FY2026Q2 results, 2026-06-03: https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial
+  - TSMC 2026Q1 results, 2026-04-16: https://pr.tsmc.com/english/news/3297
+  - SEMI Q1 2026 global semiconductor equipment billings, 2026-06-04: https://www.semi.org/en/semi-press-release/semi-reports-global-semiconductor-equipment-billings-increased-14-percent-year-over-year-in-q1-2026

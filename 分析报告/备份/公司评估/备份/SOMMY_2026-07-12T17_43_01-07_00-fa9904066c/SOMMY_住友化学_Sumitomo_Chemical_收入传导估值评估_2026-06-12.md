@@ -1,0 +1,186 @@
+# 公司收入传导与价值传导评估：SOMMY / 住友化学 Sumitomo Chemical
+
+> 研究日期：2026-06-12  
+> 主口径：NTM 经营窗口，约等同 FY2026（2026-04-01 至 2027-03-31）官方指引加未来 12 个月可验证经营路径。  
+> 金额单位：除特别注明外，均为十亿日元（¥bn）。美元换算仅作辅助，按公司 FY2026 指引假设 `¥155/$`。  
+> 资料边界：使用 `公司调研/`、`行业调研/` 与联网核验的一手/高权重资料；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较资料。  
+> 排除事项：不输出投资评级、目标价、估值倍数判断或股价区间；市场价格不作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM/FY2026 经营兑现；FY2027、High-NA EUV、glass core、advanced back-end 早期量产和长期 semiconductor chemicals 2X+ 目标只作为补充或远期期权。
+- 当前收入基准、指引和 run-rate：FY2025 收入 `¥2,328.5bn`，核心营业利润 `¥208.4bn`，经营利润 `¥151.7bn`，归母净利 `¥60.9bn`，自由现金流 `¥159.9bn`；FY2026 官方指引为收入 `¥2,360.0bn`、核心营业利润 `¥215.0bn`、经营利润 `¥177.0bn`、归母净利 `¥70.0bn`、自由现金流 `¥60.0bn`。
+- 重要产品/业务线：EUV/ArF/High-NA 光刻胶，UHP IPA/H2O2/清洗干燥制程化学品，先进后道/AI 封装材料与高纯氧化铝，ICT 非半导体显示/偏光膜/电池隔膜等抵消项，Agro & Life 作物保护/生物理性/甲硫氨酸，Sumitomo Pharma 核心药品与重组，Essential & Green 基础化工/石化重组，Advanced Medical CDMO。
+- NTM 公司收入四情景：悲观 `¥2,200-2,300bn`；基准 `¥2,340-2,380bn`；乐观 `¥2,450-2,550bn`；极度乐观 `¥2,580-2,700bn`。基准锚是公司 FY2026 指引 `¥2,360bn`，不是 AI 材料叙事。
+- 利润或 EBITDA 四情景：以核心营业利润/归母净利为主，EBITDA 未获公司统一指引。悲观核心营业利润 `¥160-190bn`、归母净利 `¥35-55bn`；基准 `¥205-222bn`、`¥65-75bn`；乐观 `¥230-260bn`、`¥80-100bn`；极度乐观 `¥275-325bn`、`¥110-150bn`。
+- 最大传导瓶颈：ICT 半导体材料的产品收入拆分、AUECC 并表时间、客户认证周期、High-NA/advanced back-end 能否从开发/认证进入 POR 或 HVM；公司层面还受显示材料、基础化工和 Pharma 一次性因素抵消。
+- 最大利润率变量：高端光刻胶和 UHP 化学品 mix 是否提升，advanced back-end 是否被客户 recipe 锁定，Essential & Green 是否完成 PP/LLDPE、Petro Rabigh 和 Singapore P&P 修复，Pharma 是否在亚洲业务处置后保持费用纪律。
+- 最大现金流变量：FY2026 公司指引 FCF `¥60bn`，低于 FY2025 的 `¥159.9bn`；关键取决于 semiconductor chemicals/AUECC/Osaka/Baytown 投入、营运资本、石化重组现金流和 Pharma 现金贡献。
+- 可信度：公司层面基准为中高，半导体材料方向为中，产品级高端光刻胶和 UHP 化学品为中高，advanced back-end/glass core/High-NA 非线性收入为低到中。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| EUV/ArF/High-NA 光刻胶 | `¥45-75bn`，公司未单独披露，来自 ICT 内产品估算 | 约 `2-3%` | 半导体材料质量最高，良率杠杆和客户切换成本高 | B/C：已销售但未披露产品收入；新设施和认证目标支持 | EUV/ArF 已量产部分进入基准；High-NA 主要作为认证期权 | High-NA EUV、有机分子 resist、客户 POR 提前 |
+| UHP IPA/H2O2/清洗干燥制程化学品 | `¥90-143bn`，模型估算，现有日本/韩国/美国出货与 AUECC/Baytown 支撑 | 约 `4-6%` | NTM 最可收入化的 AI 半导体材料线 | B：已有出货、Texas、本土化投资、AUECC 正式协议 | 进入基准，但 AUECC 全额贡献需按审批和整合折扣 | Baytown UHP IPA、台湾/内华达客户加速、多区域合格供应 |
+| 先进后道/AI 封装材料与高纯氧化铝 | `¥12-30bn`，部分量产、部分开发/客户反馈 | 约 `0.5-1.3%` | 小基数高期权，影响长期结构 | C/D：产品图谱、HPA 新品、客户验证，量化不足 | 已量产品类小比例进入基准；glass core/hybrid bonding 只进乐观/附录 | glass core JV、hybrid bonding surface prep、低 alpha HPA、next-gen thermal |
+| ICT 非半导体材料：显示/偏光膜/电池隔膜/工程塑料等 | `¥320-390bn`，为 ICT 分部扣除半导体材料后的估算 | 约 `14-17%` | 关键抵消项，解释 ICT 表观增速偏低 | A/C：ICT 分部 A，内部拆分 C | 进入基准，按显示价格和偏光膜出售后的拖累处理 | PERVIO 下一代材料、显示修复；不作为 AI 收入 |
+| Agro & Life：作物保护、生物理性、甲硫氨酸 | FY2025 `¥519.3bn`；FY2026 指引 `¥560.0bn` | FY2026 约 `23.7%` | 公司现金流和核心利润稳定器 | A：分部收入和利润指引 | 进入基准，是公司层面收入/利润主锚之一 | INDIFLIN、biorationals、区域注册扩展 |
+| Sumitomo Pharma 核心药品与重组 | FY2025 `¥451.9bn`；FY2026 指引 `¥540.0bn` | FY2026 约 `22.9%` | EPS/现金流修复关键，但非 AI | A：分部收入和利润指引 | 进入基准，按官方指引折现一次性收益退出 | ORGOVYX/GEMTESA 增长、费用纪律、管线或授权 |
+| Essential & Green Materials：基础化工、PP/LLDPE、MMA、Petro Rabigh 相关 | FY2025 `¥678.8bn`；FY2026 指引 `¥560.0bn` | FY2026 约 `23.7%` | 最大收入抵消项，利润率修复变量 | A：分部收入和利润指引 | 进入基准，但收入下降不是需求崩溃，主要含业务退出/转售终止 | PP/LLDPE Prime Polymer 整合、MMA/GX 技术授权 |
+| Advanced Medical Solutions/CDMO | FY2025 `¥58.6bn`；FY2026 指引 `¥60.0bn` | FY2026 约 `2.5%` | 小体量但利润质量观察项 | A：分部收入和利润指引 | 进入基准，低权重 | iPS/CDMO、oligonucleotide CDMO 海外扩张 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不判断住友化学份额、收入确认或利润率。需求强弱均相对当前需求锚：公司 FY2026 指引、行业材料需求、客户认证/扩产节奏和正常替换周期。半导体材料需求来自先进逻辑、HBM、先进封装和高纯化要求；非半导体业务按各自终端需求和公司指引隐含需求处理。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| EUV/ArF/High-NA 光刻胶 | SEMI 2025 wafer fab materials `US$45.8bn`；光刻相关材料和湿化学双位数增长；本地行业资料给 EUV CAR NTM `+15-25%`、ArF `+6-10%` 基准 | `+0-8%`，先进节点/HBM 需求放缓或客户减少多重曝光 | EUV `+15-25%`、ArF `+6-10%`，High-NA 仍以认证为主 | EUV `+25-40%`、ArF `+10-16%`，客户层数/mix 好于预期 | EUV `+45-70%`，High-NA/下一代 resist 形成订单预期 | 基准为高端 resist 需求增加约中高双位数 | 基准符合当前预期 | 官方称 EUV/ArF 销售稳步扩大；反证是 EUV scanner utilization 下降、N2/HBM4 推迟、MOR/dry route 替代 |
+| UHP IPA/H2O2/清洗干燥制程化学品 | AI/HBM/先进逻辑增加清洗、干燥和污染控制；行业资料湿化学/CMP/清洗 NTM 基准 `+8-14%` | `+0-5%`，fab ramp 延迟、成熟制程库存拖累、价格竞争 | `+8-14%`，先进 fab starts 和本地化供应正常推进 | `+15-28%`，台湾/美国/韩国客户稼动率高、区域供应短缺 | `+30-50%`，HBM4/Rubin/MI400 同步提前且本地化 supply short | 需求池从中个位数到双位数增长 | 基准符合当前预期，乐观需客户拉货证据 | NIST/Baytown、AUECC、Texas 是本地化证据；反证是 fab 延期、客户二供压价 |
+| 先进后道/AI 封装材料与高纯氧化铝 | 行业资料估算先进封装湿化学 NTM 基准 `US$1.9-2.6bn`，乐观 `US$2.6-3.6bn`，极度 `US$3.6-4.8bn` | `US$1.4-1.9bn`，CoWoS/HBM 利用率低于 85%、glass/TGV 无 qualification | `US$1.9-2.6bn`，RDL/Cu pillar/HBM wet process 继续放量 | `US$2.6-3.6bn`，HBM4 qualification、PLP、SoIC 清洗材料加速 | `US$3.6-4.8bn`，Rubin/HBM4/hybrid bonding/glass pilot 同时提前 | 基准需求池约 `US$0.3-0.7bn` 增量 | 基准符合行业上行预期，极度属于上限 | 材料成本小但良率杠杆大；反证是 CoWoS lead time 回落、glass/TGV 仍无量产数据 |
+| ICT 非半导体材料 | FY2026 ICT 分部仅 `+2.8%`，公司说明半导体材料增长被显示价格、大型 LCD 偏光膜出售和固定成本抵消 | `-8%` 至 `-12%`，显示价格继续下行、PERVIO 整合扰动 | `-3%` 至 `-7%`，显示和偏光膜仍拖累但半导体材料抵消 | `0%` 至 `+3%`，显示库存修复、EV separator 稳定 | `+3%` 至 `+8%`，显示/EV 同步修复 | 基准仍是收入拖累 | 低于当前半导体材料热度，但符合公司指引 | 不能把全部 ICT 增速当半导体材料需求；反证是显示价格和已出售业务继续拉低 |
+| Agro & Life | FY2026 指引收入 `+7.8%`，海外作物保护出货增加、市场条件改善，甲硫氨酸价格下降拖累 | `-2%` 至 `+2%`，渠道库存/作物价格/汇率不利 | `+6-8%`，接近公司指引 | `+10-15%`，海外作物保护和 biorationals 强于计划 | `+17%+`，注册/渠道/价格同时超预期 | 基准收入需求增量约 `¥35-45bn` | 基准等于当前预期 | 公司指引和分部披露支撑；反证是农化价格战、拉美需求弱、甲硫氨酸价格下降 |
+| Sumitomo Pharma | FY2026 指引收入 `+19.5%`，ORGOVYX/GEMTESA 等增长、成本优化但亚洲业务出售影响口径 | `+5-12%`，产品增长低于计划或一次性缺口更大 | `+17-22%`，接近公司指引 | `+23-30%`，核心产品和授权/供货强于计划 | `+35%+`，产品销售、费用和授权同时超预期 | 基准收入增量约 `¥80-95bn` | 基准等于当前预期 | 官方指引支撑；反证是核心药品竞争、医保/渠道压力、一次性收益不可重复 |
+| Essential & Green Materials | FY2026 指引收入 `-17.5%`，Petro Rabigh 产品转售终止和业务退出压低收入，利润因结构修复改善 | `-25%` 至 `-20%`，石化价差和原料成本恶化 | `-18%` 左右，接近指引 | `-12%` 至 `-8%`，价格转嫁、MMA/PP mix 和 Rabigh 改善 | `0%` 至 `+5%`，重组和需求同时超预期 | 基准收入减少约 `¥119bn` | 基准等于当前预期，但不是需求池全面坍缩 | 官方指引明确；反证是中东风险、naphtha 上行、Singapore P&P 约束 |
+| Advanced Medical Solutions/CDMO | FY2026 指引收入 `+2.4%`，oligonucleotide/小分子/CDMO 稳定 | `-5%` 至 `0%`，项目节奏延迟 | `0-4%`，接近指引 | `+5-12%`，订单和产能利用率提升 | `+15%+`，海外 CDMO 需求放量 | 基准收入增量 `¥1-3bn` | 基准等于当前预期 | 分部小，反证是项目延迟和产品 mix |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断外部需求能否进入住友化学 NTM 收入表，以及当前可收入化基数。A/B 证据进入基准；C 证据只有客户、产品和时间表清楚时折扣进入；D/E 不进入 NTM 基准。公司能参与 AI/HBM/先进封装需求池，不等于能在 NTM 确认收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| EUV/ArF/High-NA 光刻胶 | FY2025 ICT `¥574.2bn` 中模型估算 `¥45-75bn`；官方称 EUV/ArF 销售稳步扩大，Osaka 新技术中心 FY2027 末完成 | 间接，进入晶圆制造材料收入 | 高毛利、高 R&D、高认证粘性 | `¥45-55bn` | `¥55-85bn` | `¥75-110bn` | `¥100-145bn` | 基准略高于当前产品 run-rate，但符合半导体材料出货增加 | B/C | 是，High-NA 不进入基准收入 | 已销售 EUV/ArF 属可确认路径；High-NA 仍是认证 | 基准只纳入已量产/已销售光刻胶；High-NA 作为乐观/极度乐观触发器 |
+| UHP IPA/H2O2/清洗干燥制程化学品 | 模型估算 FY2025 `¥90-143bn`；Texas 量产、Baytown UHP IPA CHIPS PMT、AUECC 正式收购协议 | 间接，晶圆厂/存储厂材料消耗 | 中高毛利，规模和本地化改善利润 | `¥90-120bn` | `¥115-170bn` | `¥155-225bn` | `¥210-295bn` | 基准高于 FY2025 run-rate，符合 FY2026 半导体加工材料出货增加 | B | 是 | 已有供应、正式扩张和客户靠近度；AUECC 需审批/整合折扣 | NTM 基准最可收入化的半导体材料线；AUECC 全额并表不默认进入基准 |
+| 先进后道/AI 封装材料与高纯氧化铝 | 模型估算 `¥12-30bn`；官方产品图谱包括 glue cleaner、临时键合/解键合、HPA、glass core materials 等 | 间接，先进封装和材料配方收入 | 当前利润低到中，认证后毛利提升 | `¥10-18bn` | `¥18-40bn` | `¥35-70bn` | `¥60-105bn` | 基准仅小幅高于 run-rate；乐观才体现多产品 design-in | C/D | 部分是 | 已量产清洗/i-line/HPA 小比例纳入；客户反馈/样品不纳入 | 基准仅纳入已量产品类；glass core/hybrid bonding/未量化 pipeline 不进基准 |
+| ICT 非半导体材料 | FY2025 ICT 扣除半导体材料后估算 `¥320-390bn`；显示材料和偏光膜出售拖累 | 直接，但非 AI | 中低毛利，价格和结构拖累 | `¥300-350bn` | `¥315-380bn` | `¥340-400bn` | `¥370-430bn` | 基准低于或接近 run-rate，是半导体材料增长的抵消项 | A/C | 是 | ICT 分部 A，内部拆分估算 | 不得把该部分归为 AI 收入；按抵消项进入公司汇总 |
+| Agro & Life | FY2025 `¥519.3bn`，FY2026 指引 `¥560.0bn`、核心营业利润 `¥65.0bn` | 直接 | 现金流稳定，利润率约低双位数 | `¥515-540bn` | `¥550-570bn` | `¥575-610bn` | `¥620bn+` | 基准符合当前指引 | A | 是 | 官方分部收入/利润指引 | 公司层面基准收入和利润主锚 |
+| Sumitomo Pharma | FY2025 `¥451.9bn`，FY2026 指引 `¥540.0bn`、核心营业利润 `¥94.0bn` | 直接 | 高利润率但一次性和重组影响大 | `¥480-515bn` | `¥525-550bn` | `¥555-585bn` | `¥600bn+` | 基准符合当前指引 | A | 是 | 官方分部收入/利润指引 | EPS/现金流修复主锚；非 AI 材料收入 |
+| Essential & Green Materials | FY2025 `¥678.8bn`，FY2026 指引 `¥560.0bn`、核心营业利润 `¥20.0bn` | 直接 | 低利润率，周期和重组驱动 | `¥500-535bn` | `¥540-580bn` | `¥580-625bn` | `¥630bn+` | 基准符合指引但收入显著低于 FY2025 | A | 是 | 官方分部收入/利润指引 | 作为收入下降和利润修复并存的传统业务处理 |
+| Advanced Medical Solutions/CDMO | FY2025 `¥58.6bn`，FY2026 指引 `¥60.0bn`、核心营业利润 `¥3.0bn` | 直接 | 小体量、项目型 mix | `¥55-58bn` | `¥58-62bn` | `¥62-67bn` | `¥70bn+` | 基准符合当前指引 | A | 是 | 官方分部收入/利润指引 | 小权重进入基准，不驱动公司情景 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求和收入基数出发，判断每个重要产品/业务线在 NTM 内对公司收入和利润的贡献。产品级利润不是公司正式披露口径；表内为经营贡献区间或方向性估算，并标明无法可靠量化处。不得把行业 TAM、客户总预算、AI capex 或项目总金额直接写成公司收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| EUV/ArF/High-NA 光刻胶 | 悲观产品 | `¥45-55bn` | `¥8-15bn` | 固定研发/评价成本压制 | 低于当前半导体材料预期 | 已量产但客户层数或 mix 低于预期 | 保留为悲观 | EUV/N2/HBM4 推迟；High-NA 认证延迟 |
+| EUV/ArF/High-NA 光刻胶 | 基准产品 | `¥55-85bn` | `¥13-25bn` | 稳中略升 | 符合当前预期 | EUV/ArF 销售扩大，Osaka 设施和 ArF 工具支撑认证 | 保留 | 产品收入不披露，High-NA 不确认收入 |
+| EUV/ArF/High-NA 光刻胶 | 乐观产品 | `¥75-110bn` | `¥22-40bn` | 上升 | 高于当前预期 | 客户层数增加、负性 ArF 和 EUV 份额提升 | 保留为上修情景 | 需回答客户、工艺层、确认时间 |
+| EUV/ArF/High-NA 光刻胶 | 极度乐观产品 | `¥100-145bn` | `¥35-60bn` | 明显上升 | 显著高于当前预期 | High-NA/有机分子 resist 提前获得关键客户阶段性认可 | 下移为上限 | FY2027 上半期认证目标仍不等于 NTM 大量收入 |
+| UHP IPA/H2O2/清洗干燥制程化学品 | 悲观产品 | `¥90-120bn` | `¥8-16bn` | 下降或持平 | 低于当前预期 | 已有客户但 ramp 延迟、价格弱 | 保留 | AUECC 审批/整合慢，fab 延期，客户二供 |
+| UHP IPA/H2O2/清洗干燥制程化学品 | 基准产品 | `¥115-170bn` | `¥15-30bn` | 稳中略升 | 符合当前预期 | Texas、Baytown、AUECC、FY2026 半导体加工材料出货增加 | 保留 | 全部 AUECC 收入不可提前确认 |
+| UHP IPA/H2O2/清洗干燥制程化学品 | 乐观产品 | `¥155-225bn` | `¥25-45bn` | 上升 | 高于当前预期 | 台湾/美国客户拉动，AUECC 并表或订单加速 | 保留 | 高纯化学品部分更商品化，价格传导弱于光刻胶 |
+| UHP IPA/H2O2/清洗干燥制程化学品 | 极度乐观产品 | `¥210-295bn` | `¥40-65bn` | 上升但不线性 | 显著高于当前预期 | 本地化短缺、先进 fab 高稼动、多区域合格供应同时成立 | 下移为上限 | 低毛利 pass-through 和扩产折旧限制利润 |
+| 先进后道/AI 封装材料与高纯氧化铝 | 悲观产品 | `¥10-18bn` | `¥-1-2bn` | 下降 | 低于当前预期 | 仍停留在样品/客户反馈 | 保留 | 客户 qualification 延后，glass/TGV 无 2027H1 数据 |
+| 先进后道/AI 封装材料与高纯氧化铝 | 基准产品 | `¥18-40bn` | `¥1-6bn` | 小幅改善 | 符合当前预期 | 部分量产产品、HPA 新品和高纯材料需求 | 保留但折扣 | C/D 证据占比较高 |
+| 先进后道/AI 封装材料与高纯氧化铝 | 乐观产品 | `¥35-70bn` | `¥5-15bn` | 上升 | 高于当前预期 | 临时键合/解键合、glue cleaner、HPA 或热管理进入更多客户评估 | 保留为低到中可信乐观 | 必须有客户 POR 或批量出货证据 |
+| 先进后道/AI 封装材料与高纯氧化铝 | 极度乐观产品 | `¥60-105bn` | `¥12-28bn` | 明显上升 | 显著高于当前预期 | glass core JV、hybrid bonding、HBM4/Rubin 材料同时推进 | 下移为上限/附录跟踪 | 2026-2027 多数仍是 qualification，不得提前进基准 |
+| ICT 非半导体材料 | 悲观产品 | `¥300-350bn` | `¥-5-5bn` | 下降 | 低于当前预期 | 显示价格下行、偏光膜业务退出、separator 整合 | 保留 | 显示和 EV 链条弱于预期 |
+| ICT 非半导体材料 | 基准产品 | `¥315-380bn` | `¥0-10bn` | 持平偏弱 | 符合当前预期 | 公司明确显示材料和固定成本抵消半导体增长 | 保留 | 无法可靠量化内部利润 |
+| ICT 非半导体材料 | 乐观产品 | `¥340-400bn` | `¥5-15bn` | 小幅改善 | 略高于当前预期 | 显示库存修复、PERVIO 整合顺利 | 保留但低权重 | 不应转为 AI 收入 |
+| ICT 非半导体材料 | 极度乐观产品 | `¥370-430bn` | `¥10-22bn` | 改善 | 高于当前预期 | 显示和 mobility 同步修复 | 下移为乐观上限 | 该业务缺少 AI 数据中心高壁垒属性 |
+| Agro & Life | 悲观产品 | `¥515-540bn` | `¥48-58bn` | 下降 | 低于指引 | 农化渠道、作物价格、甲硫氨酸价格不利 | 保留 | 拉美/渠道库存和价格 |
+| Agro & Life | 基准产品 | `¥550-570bn` | `¥62-68bn` | 稳中升 | 符合指引 | FY2026 指引 `¥560bn`、核心营业利润 `¥65bn` | 保留 | 甲硫氨酸拖累抵消作物保护 |
+| Agro & Life | 乐观产品 | `¥575-610bn` | `¥70-82bn` | 上升 | 高于指引 | 海外作物保护和 biorationals 高于计划 | 保留 | 需价格、渠道和汇率同时支持 |
+| Agro & Life | 极度乐观产品 | `¥620-660bn` | `¥85-105bn` | 明显上升 | 显著高于指引 | 注册、渠道、价格和作物需求同时超预期 | 下移为上限 | 农化周期和竞争限制非线性 |
+| Sumitomo Pharma | 悲观产品 | `¥480-515bn` | `¥65-85bn` | 下降 | 低于指引 | 亚洲业务出售后一部分一次性贡献消失，核心药品低于预期 | 保留 | 药品竞争和费用恢复 |
+| Sumitomo Pharma | 基准产品 | `¥525-550bn` | `¥88-100bn` | 高但低于 FY2025 峰值 | 符合指引 | FY2026 指引 `¥540bn`、核心营业利润 `¥94bn` | 保留 | 一次性收益不可重复 |
+| Sumitomo Pharma | 乐观产品 | `¥555-585bn` | `¥100-115bn` | 小幅上升 | 高于指引 | ORGOVYX/GEMTESA 和费用纪律好于计划 | 保留 | 需要产品增长而非一次性 |
+| Sumitomo Pharma | 极度乐观产品 | `¥600-640bn` | `¥120-145bn` | 明显上升 | 显著高于指引 | 产品销售、授权、成本同时超预期 | 下移为上限 | 药品事件不应和 AI 材料重复叙事 |
+| Essential & Green Materials | 悲观产品 | `¥500-535bn` | `¥0-12bn` | 下降 | 低于指引 | naphtha、石化价差、中东供应链、Singapore P&P | 保留 | 原料和低利用率 |
+| Essential & Green Materials | 基准产品 | `¥540-580bn` | `¥15-25bn` | 修复但低 | 符合指引 | FY2026 指引 `¥560bn`、核心营业利润 `¥20bn` | 保留 | 收入下降来自业务结构变化 |
+| Essential & Green Materials | 乐观产品 | `¥580-625bn` | `¥25-40bn` | 改善 | 高于指引 | Petro Rabigh、PP/LLDPE、MMA 和价格转嫁改善 | 保留 | 仍是低利润率周期业务 |
+| Essential & Green Materials | 极度乐观产品 | `¥630-700bn` | `¥45-70bn` | 明显改善 | 显著高于指引 | 石化价差、重组和技术授权同时向好 | 下移为上限 | 周期业务不具备稳定高毛利属性 |
+| Advanced Medical Solutions/CDMO | 悲观产品 | `¥55-58bn` | `¥0-2bn` | 下降 | 低于指引 | 项目延迟和 mix 不利 | 保留 | 单项目节奏 |
+| Advanced Medical Solutions/CDMO | 基准产品 | `¥58-62bn` | `¥2-4bn` | 持平 | 符合指引 | FY2026 指引 `¥60bn`、核心营业利润 `¥3bn` | 保留 | 体量小 |
+| Advanced Medical Solutions/CDMO | 乐观产品 | `¥62-67bn` | `¥4-7bn` | 改善 | 高于指引 | CDMO 产能利用率提升 | 保留 | 项目型收入 |
+| Advanced Medical Solutions/CDMO | 极度乐观产品 | `¥70-80bn` | `¥8-12bn` | 明显改善 | 高于指引 | iPS/oligo/CDMO 海外需求超预期 | 下移为上限 | 短期体量不足以驱动公司 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。汇总时已处理重复计算：ICT 内半导体材料、非半导体材料和分部总额不得重复；glass core、High-NA、未量化客户 pipeline 不进入基准；基础化工收入下降和 Pharma 一次性因素单独处理。毛利率为模型估算，经营利润率同时参考核心营业利润率和 IFRS 经营利润率。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `¥2,200-2,300bn` | `-5.5%` 至 `-1.2%` vs FY2025 | 低于 FY2026 指引约 `¥60-160bn` | `27.0-28.3%` | 核心 `7.2-8.3%`；IFRS 经营约 `5.5-6.8%` | EBITDA 无法可靠量化，因公司未给统一指引；归母净利 `¥35-55bn` | `¥0-40bn`，债务下降放缓 | 中 | 半导体材料 ramp 慢、Agro/Pharma 低于指引、Essential 价差恶化 |
+| 基准公司 | `¥2,340-2,380bn` | `+0.5%` 至 `+2.2%` | 接近 FY2026 指引 `¥2,360bn` | `28.4-29.2%` | 核心 `8.8-9.3%`；IFRS 经营约 `7.0-7.8%` | EBITDA 无法可靠量化，因公司未给统一指引；归母净利 `¥65-75bn` | `¥50-70bn`，接近官方 FCF `¥60bn` | 中高 | 半导体材料增长被显示和折旧抵消，AUECC/High-NA 尚非大额收入 |
+| 乐观公司 | `¥2,450-2,550bn` | `+5.2%` 至 `+9.5%` | 高于指引约 `¥90-190bn` | `29.2-30.5%` | 核心 `9.4-10.2%`；IFRS 经营约 `7.8-8.8%` | EBITDA 无法可靠量化，因公司未给统一指引；归母净利 `¥80-100bn` | `¥75-110bn`，营运资本可控 | 中 | 需要 ICT 半导体、Agro、Pharma 至少两条线同时强于指引 |
+| 极度乐观公司 | `¥2,580-2,700bn` | `+10.8%` 至 `+15.9%` | 高于指引约 `¥220-340bn` | `30.5-32.0%` | 核心 `10.7-12.0%`；IFRS 经营约 `9.0-10.5%` | EBITDA 无法可靠量化，因公司未给统一指引；归母净利 `¥110-150bn` | `¥110-170bn`，但 capex/并购整合吸收现金 | 低到中 | 需求、公司捕获、利润率和执行质量必须同时突破；不能只靠单一 High-NA 或 glass core 期权 |
+
+情景解释：
+
+- 悲观不是“公司没有半导体材料机会”，而是 NTM 内关键收入确认链路低于指引：半导体材料出货增加不足以抵消显示和固定成本，Agro/Pharma 不达指引，基础化工价差回落，FCF 明显低于 `¥60bn`。
+- 基准是官方 FY2026 经营预期正常兑现：收入 `¥2.36tn` 附近，核心营业利润 `¥215bn` 附近，半导体材料增长存在但被 ICT 内其他业务抵消。
+- 乐观需要公司特定证据，不是行业景气本身：AUECC 审批/整合顺利、Texas/Baytown 客户拉动、EUV/ArF 客户份额提升，同时 Agro 或 Pharma 至少一条线超预期。
+- 极度乐观是可验证上限：High-NA/有机分子 resist 认证、UHP 化学品本地化紧缺、advanced back-end/HPA design-in、Agro/Pharma 和 Essential 组合改善同时成立。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步只校准前四步情景，不重新预测。校准动作仅使用保留、上移、下移、排除、移入附录、仅作跟踪。相同风险只在实际影响层级处理一次：例如 AUECC 审批影响收入基数和执行可信度，不再重复惩罚需求池；High-NA 认证影响产品贡献，不影响已量产 EUV/ArF 基准。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 官方指引：收入 `¥2,360bn`、核心营业利润 `¥215bn`、归母净利 `¥70bn`、FCF `¥60bn` | 公司汇总 | 提供基准总收入锚 | 提供核心经营利润率 `9.1%` 锚 | FCF 低于 FY2025，说明投入/营运资本压力 | 基准保留 |
+| FY2026 ICT：收入 `¥590bn`、核心营业利润 `¥55bn`，原因是半导体材料出货增加抵消固定成本/显示拖累 | 产品贡献/公司组合 | 半导体材料增长不等于 ICT 高增长 | 半导体材料 mix 改善但固定成本上升 | 需要看半导体材料是否单独披露 | 基准保留，乐观需证据 |
+| AUECC 收购协议：台湾和美国西部基地、客户靠近度、监管审批条件 | 收入基数/执行 | 提升 UHP 化学品 NTM 乐观基数 | 整合初期可能有费用，后续提升规模 | 审批和客户保留是关键 | 基准折扣纳入，乐观保留 |
+| Baytown UHP IPA CHIPS PMT 最高 `US$52.1mn`，用于 advanced logic/memory UHP IPA | 收入基数/供应 | 支持美国本土高纯化学品需求 | 本地供应改善议价和稳定性，但新厂爬坡有折旧 | 建设/投产节奏影响 NTM | 基准作为供应可信度，非全额收入 |
+| Osaka 光刻胶新技术中心 FY2027 末完成，EUV/ArF 销售扩大，有机分子 resist 加速 | 产品贡献 | 支持光刻胶中期收入，但 NTM 大额贡献有限 | 高端 mix 支持毛利，但 R&D/评价成本上升 | 认证周期限制 NTM | 基准纳入已量产，High-NA 移入乐观/附录 |
+| SEMI 2025 材料市场 `US$73.2bn`、wafer fab `US$45.8bn`、packaging `US$27.4bn`，Q1 2026 硅片出货同比 `+13.1%` | 需求 | 支持材料需求池增长 | 高端材料有定价权，普通化学品不自动提价 | 行业 beta 不能替代公司 alpha | 需求基准保留 |
+| 先进封装湿化学 NTM 基准 `US$1.9-2.6bn`，glass/TGV 2026-2027 多为 qualification | 需求/产品贡献 | 支持 advanced back-end 小基数成长 | design-in 后高毛利；未认证阶段费用先行 | 客户认证 12-36 个月 | 基准小比例，极度乐观下移为上限 |
+| Agro FY2026 指引 `¥560bn`、核心营业利润 `¥65bn` | 公司组合 | 公司收入/利润基准重要锚 | 利润率稳定 | 现金流支撑半导体投入 | 基准保留 |
+| Pharma FY2026 指引 `¥540bn`、核心营业利润 `¥94bn`，但 FY2025 一次性和亚洲业务处置不可外推 | 公司组合 | 高收入增量但非 AI | 利润高但不可把一次性收益永久化 | 现金流贡献重要 | 基准保留，极度乐观下移为上限 |
+| Essential & Green FY2026 收入 `-17.5%`、利润改善至 `¥20bn` | 公司组合 | 传统业务抵消公司总收入增长 | 低利润率，结构修复影响大 | 原料/中东/重组执行影响现金 | 基准保留，悲观触发清晰 |
+| 产品级半导体材料收入未单独披露 | 证据可信度 | 限制产品收入区间精度 | 限制产品利润贡献精度 | 需要未来披露和客户数据校准 | 不排除，但降低可信度 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 半导体材料需求存在但收入确认、Agro/Pharma 或基础化工低于指引 | 官方仍指引 FY2026 收入和利润增长，债务下降 | 显示拖累、固定成本、AUECC 审批、High-NA 延后、naphtha/中东风险 | 保留 | 悲观公司：低于指引 `¥60-160bn` | 中 | AUECC 延迟只影响 UHP 收入和执行，不再重复压低行业需求 |
+| 基准 | FY2026 指引正常兑现，半导体材料增长被其他业务抵消 | 官方指引、半导体加工材料出货增加、Agro/Pharma 收入增长、FCF 正值 | 产品级半导体材料拆分不足，advanced back-end 多为 C/D 证据 | 保留 | 基准公司：`¥2,340-2,380bn` 收入、核心利润 `¥205-222bn` | 中高 | 显示拖累只在 ICT 组合层处理，不再压低光刻胶/UHP 需求 |
+| 乐观 | 至少两条业务线高于指引，半导体材料可收入化好于基准 | AUECC、Baytown、Osaka、SEMI 材料需求、Agro/Pharma 指引弹性 | 需要明确客户/产品/确认时间；低毛利化学品不能自动带来利润 | 保留 | 乐观公司：高于指引 `¥90-190bn` | 中 | 行业 AI beta 不等于公司 alpha；只对有公司证据的产品上移 |
+| 极度乐观 | 需求、公司捕获、利润质量和执行质量同时突破 | High-NA/有机分子 resist、UHP 本地化短缺、advanced back-end design-in、Agro/Pharma 同步超预期 | 任一关键环节缺证据，尤其 High-NA 和 glass core 多数不在 NTM 量产 | 下移 | 极度乐观为上限，不作为当前预期 | 低到中 | 远期期权缺 NTM 时间表时移入附录，不重复惩罚公司基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。NTM/FY2026 经营最可能接近收入 `¥2,340-2,380bn`、核心营业利润 `¥205-222bn`、归母净利 `¥65-75bn`、FCF `¥50-70bn`。这不是高增长 AI 设备公司的形态，而是综合化工修复股中嵌入高质量半导体材料增长线。
+- NTM 收入结论：当前可确认收入主锚仍是官方 FY2026 指引 `¥2,360bn`。半导体材料在 ICT 内真实增长，但产品级披露不足；UHP 化学品和光刻胶是可收入化程度最高的两条，advanced back-end/HPA 是小基数增量，glass core 和 High-NA 主要是 NTM 外或 NTM 上限期权。
+- 利润/现金流结论：基准核心营业利润率约 `9%`，归母净利率约 `3%`。利润改善来自 Pharma、Agro、Essential 修复和半导体材料 mix，而不是公司总收入高增长。FY2026 FCF 官方指引仅 `¥60bn`，说明扩产、并购整合和营运资本会吸收现金。
+- 主要传导瓶颈：第一，半导体材料产品收入不单独披露，难以把行业需求精准映射到公司收入；第二，High-NA、advanced back-end、glass core 的客户认证和量产时间超过 NTM 主窗口；第三，ICT 非半导体显示/偏光膜和固定成本会抵消半导体材料增长；第四，基础化工和 Pharma 的一次性/重组口径会影响公司总利润。
+- 乐观情景成立条件：AUECC 审批和整合顺利、台湾/美国客户拉动 UHP 化学品；EUV/ArF 客户份额或层数提升；Agro 或 Pharma 至少一条明显强于指引；Essential 不再拖累现金流。
+- 极度乐观情景成立条件：High-NA/有机分子 resist 获关键客户认证并形成可见订单，UHP 化学品出现区域短缺和高利用率，advanced back-end/HPA 至少一个产品进入 AI/HBM 量产 recipe，同时 Agro、Pharma 和 Essential 组合改善。
+- 悲观情景触发条件：ICT 中半导体材料出货无法抵消显示和固定成本，AUECC 延迟或客户整合失败，High-NA/advanced back-end 认证延后，Agro/Pharma 低于指引，naphtha/中东/石化价差使 Essential 利润回落，FCF 明显低于 `¥60bn`。
+- 后续跟踪数据：FY2026 Q1/Q2 ICT 半导体材料是否单独披露；AUECC 交易完成和并表时间；Texas/Baytown UHP IPA 客户和投产节奏；Osaka advanced photoresist facility 进度；FY2027 上半期 High-NA/有机分子 resist certification；advanced back-end/glass core 是否有客户 POR 或 HVM；Agro/Pharma 是否达到 FY2026 指引；FCF、债务和 D/E。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：2026-06-12。最新完整官方业绩为 Sumitomo Chemical FY2025 results，披露日期 2026-05-14；FY2026 指引覆盖 2026-04-01 至 2027-03-31。
+- 主要收入、订单、指引和利润率来源：
+  - FY2025 官方：收入 `¥2,328.5bn`，核心营业利润 `¥208.4bn`，经营利润 `¥151.7bn`，归母净利 `¥60.9bn`，自由现金流 `¥159.9bn`，现金 `¥208.6bn`，带息负债 `¥1,151.5bn`。
+  - FY2026 官方：收入 `¥2,360.0bn`，核心营业利润 `¥215.0bn`，经营利润 `¥177.0bn`，归母净利 `¥70.0bn`，自由现金流 `¥60.0bn`；假设汇率 `¥155/$`，naphtha `¥92,000/kl`。
+  - FY2026 分部指引：ICT `¥590bn/¥55bn`，Agro `¥560bn/¥65bn`，Essential `¥560bn/¥20bn`，Sumitomo Pharma `¥540bn/¥94bn`，Advanced Medical `¥60bn/¥3bn`，Others `¥50bn/-¥22bn`。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - 公司展示材料给 semiconductor chemicals 业务提出 2030 前后较 FY2024 `2X+` 的业务贡献目标，AUECC 是地域扩张关键；该目标不进入 NTM 基准。
+  - High-NA/有机分子 resist 目标认证节奏偏 FY2027 上半期及以后，不进入 NTM 基准大额收入。
+  - Samsung Electro-Mechanics 与 Sumitomo Chemical/Dongwoo Fine-Chem glass core MOU 计划 2027 后量产，NTM 内只作为附录/极度乐观上限。
+  - Advanced packaging wet chemistry、hybrid bonding surface prep、glass/TGV 2026-2027 多数处于 qualification/pilot，除已量产清洗/封装材料外不进入基准。
+- 项目内本地来源：
+  - `公司调研/半导体材料_化学品_基板/SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_硅片、光刻胶与前道材料_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体高纯水、气体与化学流体系统_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装湿化学与表面处理材料_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_玻璃基板、TGV与玻璃检测_2026-06-11.md`
+- 主要外部来源：
+  - Sumitomo Chemical, Key Figures of Consolidated Financial Results for FY2025, 2026-05-14: https://www.sumitomo-chem.co.jp/english/news/files/docs/20260514e_1.pdf
+  - Sumitomo Chemical, Investors' Meeting for FY2025 Financial Results, Management Priorities and Business Strategies, 2026-05-14: https://www.sumitomo-chem.co.jp/english/ir/event/files/docs/260514e_1.pdf
+  - Sumitomo Chemical, Financial Results for FY2025 reference material, 2026-05-14: https://www.sumitomo-chem.co.jp/english/ir/event/files/docs/260514e_2.pdf
+  - Sumitomo Chemical, AUECC acquisition announcement, 2025-11-20: https://www.sumitomo-chem.co.jp/english/news/detail/20251120e.html
+  - Sumitomo Chemical, New Technology Center for Photoresists for Advanced Semiconductors at Osaka Works, 2026-04-09: https://www.sumitomo-chem.co.jp/english/news/detail/20260409e.html
+  - Sumitomo Chemical, High-Purity Alumina Portfolio Expansion, 2026-05-07: https://www.sumitomo-chem.co.jp/english/news/detail/20260507e.html
+  - Sumitomo Chemical, PERVIO battery separator restructuring, 2025-11-13: https://www.sumitomo-chem.co.jp/english/news/detail/20251113e.html
+  - NIST CHIPS for America, Sumika Texas Baytown UHP IPA project, 2025-01-16: https://www.nist.gov/chips/sumika-texas-baytown
+  - SEMI, Global Semiconductor Materials Market Revenue Reaches Record $73.2 Billion in 2025, 2026-05-12: https://www.semi.org/en/semi-press-release/global-semiconductor-materials-market-revenue-reaches-record-73.2-billion-dollars-in-2025-semi-reports
+  - SEMI, Worldwide Silicon Wafer Shipments Increase 13% Year-on-Year in Q1 2026, 2026-04-29: https://www.semi.org/en/semi-press-release/semi-reports-worldwide-silicon-wafer-shipments-increase-13-percent-year-on-year-in-q1-2026
+  - Samsung Electro-Mechanics, Glass Core JV MOU with Sumitomo Chemical Group, 2025-11-05: https://www.samsungsem.com/global/newsroom/news/view.do?id=9850

@@ -1,0 +1,457 @@
+# MIELY 三菱电机 Mitsubishi Electric 公司调研_2026-06-11
+
+> 报告日期：2026-06-11。  
+> 公司：Mitsubishi Electric Corporation / 三菱电机，东京证券交易所代码 6503，OTC ADR 代码 MIELY。  
+> 范围说明：本报告只使用 `基本面/行业调研/` 下与 AI 数据中心、电力、功率器件、光器件、冷却相关的产业资料，以及联网公开资料；未读取、引用或继承 `特征量化/`、`日度资料/` 或其他公司报告。  
+> 口径说明：三菱电机财年截至 3 月 31 日，本文 FY2026 指 2025-04-01 至 2026-03-31；日元换算美元如未特别说明，按公司 FY2026 年报给出的 `JPY160/USD` 近似汇率。估值数据因 MIELY 为 OTC ADR，使用 2026-06-10 至 2026-06-11 可取得的延迟报价区间。
+
+## 0. 核心结论
+
+三菱电机不是纯 AI 数据中心公司，而是日本大型电气、自动化、暖通、功率半导体和基础设施集团。投资人通常把它看作“日本工业电气 + FA 自动化 + HVAC/楼宇 + 电力设备 + 功率器件”的综合制造商；AI 数据中心是正在变得更重要的增量业务，但截至 FY2026 仍只占公司收入低个位数。
+
+最重要的新信息是三菱电机在 2026 年 IR Day 把数据中心相关收入单独拆出：FY2026 数据中心相关收入 `1,763亿日元`，约 `11.0亿美元`，约占 FY2026 合并收入 `5.8947万亿日元` 的 `3.0%`；公司目标 FY2031 做到 `4,000亿日元`，约为 FY2026 的 `2.27倍`。这组收入包括电源系统、IT cooling、EML 光器件、监控控制系统和 FA 组件，已经不是纯叙事。
+
+AI 数据中心中最值得跟踪的四个产品簇是：1. 电源系统，FY2026 数据中心相关收入 `865亿日元`，公司目标 FY2031 `1,800亿日元+`；2. EML 光器件，FY2026 `400亿日元`，目标 `800亿日元`；3. IT cooling，FY2026 `320亿日元`，目标 `1,000亿日元+`；4. 监控控制系统与 FA 组件，FY2026 `200亿日元`，目标 `400亿日元`。功率半导体是底层能力和未来 800VDC/SST/UPS optionality，但 FY2027 公司对 Semiconductor & Device 总收入只指引 `3,000亿日元`、同比 `+4%`，所以不能把它当成短期爆发主线。
+
+订单端比收入端更强。公司披露 FY2026 受订单业务的订单额：Infrastructure `19,785亿日元`，同比 `+3%`；其中 Energy Systems `6,100亿日元`，同比 `+14%`；Factory Automation `8,656亿日元`，同比 `+22%`；Building Systems `7,262亿日元`，同比 `+5%`；Semiconductor & Device `3,204亿日元`，同比 `+19%`。Infrastructure 订单额对 FY2026 该段收入 `14,634亿日元` 的粗略 book-to-bill 约 `1.35x`，说明电力、能源、防务等长周期订单仍在堆积；但公司没有披露数据中心专属 backlog、客户项目名、取消率或交付窗口。
+
+财务质量很健康。FY2026 收入 `5.8947万亿日元`，同比 `+7%`；经营利润 `4,330亿日元`，同比 `+11%`；归母净利润 `4,077亿日元`，同比 `+26%`；自由现金流 `2,316亿日元`。2026-03-31 总资产 `7.3575万亿日元`，所有者权益 `4.6300万亿日元`，总权益/总资产约 `62.9%`，现金及等价物 `7,316亿日元`，借款与租赁负债合计 `3,633亿日元`，净现金约 `3,683亿日元`。资产负债表足以支撑 Nozomi 收购、SiC 扩产、R&D 和数据中心解决方案投资。
+
+主要投资判断：三菱电机的 AI 收益路径更像“卖铲子但不是最尖端 GPU 铲子”，核心是电力、冷却、EML 和控制系统。最乐观情形需要同时满足：数据中心电源系统订单持续强、IT cooling 获得北美/欧洲大客户、EML 在 800G/1.6T 周期中保持份额、800VDC/SiC 从试点进入量产。反证指标是：FY2027 半年度数据中心相关收入不加速、Semiconductor & Device 仍只有低个位数增长、EML 行业产能释放导致 ASP 下滑、以及电源系统订单没有转化为可见 backlog。
+
+## 1. 公司整体业务、投资人定位与财务快照
+
+### 1.1 公司业务结构与产业链位置
+
+三菱电机成立于 1921 年，是日本三菱系大型电气电子设备制造商。公司自己在 FY2026 年报中定义的业务覆盖公共事业系统、能源系统、防务与航天、工厂自动化、汽车设备、楼宇系统、空调与家电、数字创新、半导体与器件等领域。FY2026 合并收入 `5.8947万亿日元`，约 `368亿美元`，员工约 `150,386人`，全球子公司 `256家`。
+
+按产业链位置看，它同时处在四层：
+
+| 层级 | 三菱电机位置 | AI 数据中心相关性 |
+|---|---:|---|
+| 元器件层 | IGBT/IPM/SiC 功率模块、高频/光器件、EML 芯片 | EML 直接进入 800G/1.6T 光模块供应链；功率器件进入 UPS、PCS、BESS、逆变器、未来 800VDC/SST |
+| 设备层 | 变压器、开关柜、UPS、配电、冷却/空调/IT cooling、楼宇系统 | AI 园区电力和冷却瓶颈的直接受益层 |
+| 工业自动化层 | PLC、CNC、伺服、FA 控制、监控控制系统 | 数据中心监控控制、冷却设备加工、配电自动化、工厂端扩产自动化 |
+| 软件/安全层 | Serendie 数字平台、Nozomi Networks OT/ICS 安全 | 数据中心、能源和工业设施的 OT 可视化与安全增强，但短期收入体量小 |
+
+投资人心中的三菱电机不是高速成长股，而是质量较高、现金流稳健、周期与结构性增长混合的日本工业集团。它的估值重估逻辑通常来自三条线：日本企业治理改善、利润率修复和资本效率提升；FA/功率器件/空调等周期上行；以及数据中心、电力基础设施、防务、OT 安全等新增长业务。
+
+### 1.2 最近三年重大业务变动、转型与收购
+
+1. 业务重心从“综合电机制造”转向“增长业务 + 数字平台 + 解决方案”。2026 年 IR Day 更新中期战略，FY2029 目标收入 `6.3万亿日元`、营业利润率 `10%`、自由现金流 `5,000亿日元+`，并要求增长业务收入占比提升到 `40%`。数据中心、防务、空调与制冷、Smart Mobility、Circular Digital Engineering 是重点。
+
+2. 汽车设备业务拆分并寻求更独立的路径。Mitsubishi Electric Mobility Corporation 于 2024-04-01 开始运营，是汽车设备业务 planned spin-off 的结果。该业务仍在 Industry & Mobility 中体现，但 FY2026 汽车设备收入 `8,756亿日元`，同比 `-5%`，FY2027 指引 `8,200亿日元`，同比 `-6%`。这不是 AI 数据中心主线，且更像需要瘦身和伙伴化的低增长资产。
+
+3. Nozomi Networks 收购完成。三菱电机 2026-01-29 宣布完成收购 Nozomi Networks，使其成为全资子公司。Nozomi 是 OT/ICS/IoT 安全平台，业务意义是把工业控制、能源基础设施、数据中心和 FA 客户的安全监控纳入三菱的 Serendie 和解决方案销售体系。它不是物理瓶颈，但提高软件化和 recurring revenue 的 optionality。
+
+4. SiC 与功率器件扩产进入新阶段。公司在熊本 Power Device Works 新晶圆厂推进 SiC 功率半导体生产，生产启动时间为 2025-10-01。FY2026 Semiconductor & Device 收入 `2,871亿日元`，同比持平，经营利润 `475亿日元`，同比 `+17%`；FY2027 收入指引 `3,000亿日元`，同比 `+4%`，经营利润指引 `430亿日元`，同比 `-7%`。说明功率器件是战略能力，但 FY2027 仍受产品组合、折旧、EV/消费需求和扩产成本制约。
+
+5. 数据中心业务从分散产品变成公司级解决方案。2026 年 IR Day 的 Infrastructure 材料把数据中心相关业务拆成电源系统、IT cooling、EML 光器件、监控控制系统/FA 组件，并给出 FY2026 `1,763亿日元`、FY2031 `4,000亿日元`目标。这意味着公司已经把 AI 数据中心从“边缘受益”升级为跨事业部增长主题。
+
+### 1.3 最新估值、盈利能力和收入增速
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| MIELY ADR 股价 | 约 `68-70美元` | 2026-06-10 至 2026-06-11 延迟报价 | MarketWatch 显示 2026-06-10 收盘 `68.31美元`；Public/Yahoo 区间约 `69美元`上下 |
+| 市值 | `699-711亿美元` | 2026-06-10 至 2026-06-11 | Yahoo Finance 2026-06-10 显示 `711.3亿美元`；Public 2026-06-11 显示约 `699亿美元` |
+| Trailing P/E | `约 26-27.6x` | 2026-06-10/11 | Yahoo 统计 `27.61x`，Public 约 `26x` |
+| Forward P/E | `约 25.6x` | 2026-06-10 Yahoo | ADR/OTC 数据供应商口径 |
+| Price/Sales | `约 1.9x` | 2026-06-10 Yahoo | 与 FY2026 美元收入约 `368亿美元`、市值约 `700亿美元`一致 |
+| EV | `约 685亿美元` | 2026-06-10 Yahoo | 公司净现金导致 EV 小于市值 |
+| FY2026 收入 | `58,947亿日元 / 368亿美元` | FY2026，2026-03-31 截止 | 同比 `+7%` |
+| FY2026 经营利润 | `4,330亿日元` | FY2026 | 同比 `+11%`，经营利润率 `7.35%` |
+| FY2026 调整后经营利润 | `5,012亿日元` | FY2026 | 调整后经营利润率 `8.50%` |
+| FY2026 归母净利润 | `4,077亿日元` | FY2026 | 同比 `+26%`，净利率 `6.92%` |
+| FY2026 毛利率 | `约 32.1%` | FY2026 IFRS，收入-销售成本 | 销售成本 `40,052亿日元`，毛利约 `18,895亿日元` |
+| FY2027 指引收入 | `62,000亿日元` | 公司 2026-04-28 指引 | 同比 `+5%` |
+| FY2027 指引调整后经营利润 | `5,900亿日元` | 公司 2026-04-28 指引 | 同比 `+18%`，调整后经营利润率 `9.5%` |
+| FY2027 指引净利润 | `4,750亿日元` | 公司 2026-04-28 指引 | 同比 `+17%` |
+
+估值解释：按 `P/S 1.9x`、`Forward P/E 25.6x`，市场已经给了三菱电机高于传统日本综合工业公司的 AI/电力/治理改善溢价。这个估值要求 FY2027 利润率改善落地，并要求 FY2026 刚披露的数据中心 `1,763亿日元`业务继续加速，否则很容易被看作“日本工业周期修复 + 数据中心叙事”的高估值。
+
+### 1.4 资产负债表与财务健康程度
+
+| 项目 | FY2026 数值 | 解读 |
+|---|---:|---|
+| 总资产 | `73,575亿日元` | 同比增加，资产规模支持全球业务和扩产 |
+| 所有者权益 | `46,300亿日元` | 总权益/总资产约 `62.9%`，归母权益/总资产约 `60.9%`，杠杆低 |
+| 现金及现金等价物 | `7,316亿日元` | 现金充足 |
+| 借款与租赁负债 | `3,633亿日元` | 低于现金，净现金约 `3,683亿日元` |
+| 经营现金流 | `5,760亿日元` | 利润现金化仍强，但受营运资本和并购/投资节奏影响 |
+| 投资现金流 | `-3,444亿日元` | 包括 Nozomi 收购、扩产、无形资产和资本开支 |
+| 自由现金流 | `2,316亿日元` | 仍为正，但低于 FY2025 的 `2,642亿日元` |
+| FY2026 资本开支 | `3,107亿日元` | Semiconductor & Device 资本开支 `1,051亿日元`，同比 `+215%`，是扩产重点 |
+| FY2027 资本开支指引 | `3,100亿日元` | 总体持平，但 Infrastructure 资本开支指引 `607亿日元`，同比 `+76%` |
+
+资产负债表评价：健康程度高。公司处于净现金状态，总权益/总资产接近三分之二，FY2026 FCF 约为归母净利润的 `0.57x`。短期没有明显偿债风险；更关键的财务问题不是负债，而是资本配置效率：SiC 扩产、Nozomi 并购、数据中心电源/冷却解决方案投资，能否转换为 FY2027-FY2029 的利润率和 ROIC。
+
+## 2. 最新与最近四个财报季度分析
+
+公司未按数据中心单独披露季度收入，也未披露季度 backlog、客户订单金额、取消率和交付窗口。可以确认的是，公司披露 FY2026 全年按段订单额，且三菱电机在数据中心 IR Day 披露 FY2026 数据中心相关收入 `1,763亿日元`。下表中“AI/DC 映射收入”是把 FY2026 数据中心相关全年收入按季度收入、业务动能和公司评论做的粗分配，不是公司正式披露。
+
+| 财报季度 | 合并收入/经营利润 | 主要业务收入和利润 | 订单、交期、取消率 | AI 数据中心相关收入占比与线索 |
+|---|---:|---|---|---|
+| FY2026 Q4，2026-01 至 2026-03，2026-04-28 发布 | 收入 `17,387亿日元`，同比 `+14%`；经营利润 `1,383亿日元`，同比 `+57%`；经营利润率 `8.0%` | Infrastructure `5,283亿/+24%`，OP `754亿/+80%`；Industry & Mobility `4,573亿/+7%`，OP `369亿/+107%`；Life `6,229亿/+14%`，OP `345亿/+96%`；Digital Innovation `510亿/+11%`，OP `46亿/+17%`；Semiconductor & Device `786亿/+9%`，OP `124亿/+42%` | 季度 backlog 未披露。FY2026 全年订单显示 Infrastructure `19,785亿日元/+3%`，Energy `6,100亿/+14%`，FA `8,656亿/+22%`，Semiconductor `3,204亿/+19%`。行业调研显示数据中心变压器/开关柜交期通常 `12-48个月`，部分更长；取消率未披露，长交期电力设备取消率通常低于消费电子和通用半导体 | 公司正式 FY2026 数据中心收入 `1,763亿日元`，全年占合并 `3.0%`；按 Q4 较强的 Infrastructure/Life/Semi 动能，估算 Q4 AI/DC 映射收入约 `500-600亿日元`，占季度收入 `2.9-3.5%`。核心线索：电源系统、IT cooling、EML、监控控制均有收入 |
+| FY2026 Q3，2025-10 至 2025-12，2026-02-03 发布 | 收入 `14,235亿日元`，同比 `+5%`；经营利润 `703亿日元`，同比 `-45%`；经营利润率 `4.9%` | Infrastructure `3,526亿/+18%`，OP `403亿/+32%`；Industry & Mobility `4,156亿/+2%`，OP `388亿/+88%`；Life `5,515亿/+2%`，OP `431亿/+8%`；Digital Innovation `350亿/+9%`，OP `35亿/+33%`；Semiconductor & Device `678亿/0%`，OP `103亿/+22%` | 季度 backlog 未披露。Q3 Semiconductor 文本中明确高频光器件受数据中心和通信基础设施需求带动；功率器件则铁路、工业应用增加，但 EV 与消费应用下降。Q3 经营利润受一次性和季节性影响，不能简单解释为需求恶化 | 估算 Q3 AI/DC 映射收入约 `400-450亿日元`，占季度收入 `2.8-3.2%`。EML/高频光器件是最明确 AI 线索；电源系统受基础设施订单支撑 |
+| FY2026 Q2，2025-07 至 2025-09，2025-10-31 发布 | 收入 `14,196亿日元`，同比 `+5%`；经营利润 `1,123亿日元`，同比 `-5%`；经营利润率 `7.9%` | Infrastructure `3,164亿/+12%`，OP `208亿/+56%`；Industry & Mobility `4,172亿/+1%`，OP `294亿/+2%`；Life `5,758亿/+6%`，OP `463亿/-28%`；Digital Innovation `403亿/+3%`，OP `24亿/-8%`；Semiconductor & Device `721亿/+1%`，OP `151亿/+28%` | Q2 单季订单未披露。FY2026 H1 收入 `27,325亿日元/+3%`、经营利润 `2,243亿/+27%`。公司提到 H1 收入增加主要来自 Infrastructure、Life 和 FA，半导体器件 H1 利润率改善到 `17.6%` | 估算 Q2 AI/DC 映射收入约 `400-430亿日元`，占季度收入 `2.8-3.0%`。H1 中 FA 有 AI 相关需求改善的表述，但公司没有拆分为数据中心专属收入 |
+| FY2026 Q1，2025-04 至 2025-06，2025-07-31 发布 | 收入 `13,128亿日元`，同比 `+2%`；经营利润 `1,119亿日元`，同比 `+91%`；经营利润率 `8.5%` | Q1 由 H1-Q2 反推：Infrastructure 约 `2,659亿`，OP `180亿`；Industry & Mobility 约 `3,836亿`，OP `259亿`；Life 约 `5,679亿`，OP `466亿`；Digital Innovation 约 `315亿`，OP `13亿`；Semiconductor & Device 约 `685亿`，OP `96亿` | Q1 backlog 未披露。公司 Q1 说明 FY2026 全年预测维持，尽管汽车设备需求下修，但 AI 相关需求对 FA 业务有支撑；关税影响仍按约 `-300亿日元`考虑 | 估算 Q1 AI/DC 映射收入约 `330-380亿日元`，占季度收入 `2.5-2.9%`。AI 线索弱于 Q3/Q4，但电源、冷却、光器件已形成全年收入基数 |
+| FY2025 Q4，2025-01 至 2025-03，2025-04-28 年报可反推 | 收入 `15,213亿日元`；经营利润 `882亿日元`；经营利润率 `5.8%` | Infrastructure `4,267亿`，OP `418亿`；Industry & Mobility `4,258亿`，OP `178亿`；Life `5,461亿`，OP `176亿`；Digital Innovation `461亿`，OP `39亿`；Semiconductor & Device `722亿`，OP `87亿` | FY2025 全年订单：Infrastructure `19,227亿日元/+20%`，Defense & Space `7,617亿/+53%`，FA `7,108亿/+21%`，Semiconductor & Device `2,702亿/-12%`。FY2025 已经有基础设施订单积压，但数据中心收入尚未被公司单独突出 | AI/DC 映射收入缺少官方拆分。以 FY2026 数据中心收入 `1,763亿日元`为锚，推测 FY2025 Q4 低于 FY2026 Q4，约 `280-380亿日元`，占季度收入 `1.8-2.5%` |
+
+关键观察：
+
+1. 三菱电机的 AI/DC 收入不是季度财报主表里的单独 segment，而是跨 Infrastructure、Life、Semiconductor & Device、Digital Innovation 的 solution business。
+2. Semiconductor & Device 的高频光器件是最直接的 AI 线索，公司明确提到数据中心和通信基础设施需求；但整个 Semiconductor & Device FY2027 只指引 `+4%`，说明 EML 增长被功率器件周期、扩产成本或其他器件拖住。
+3. 真正订单强度在 Infrastructure、Energy、FA 和 Building Systems。FY2026 Infrastructure book-to-bill 约 `1.35x`，Energy Systems 约 `1.29x`，Defense & Space 约 `1.89x`，FA 约 `1.08x`，Semiconductor & Device 约 `1.12x`。这显示长周期订单环境健康，但无法直接等同于 AI 数据中心 backlog。
+4. 取消率没有公司数据。对电力/冷却/控制系统，订单取消通常受客户土地、电力接入、变压器/开关柜交期、融资和云资本开支影响；对 EML，取消/延期风险更接近光模块和 hyperscaler 拉货节奏，ASP 和产品代际切换影响更大。
+
+## 3. FY2027 指引、业务收入占比与重点业务
+
+### 3.1 FY2027 公司指引和业务占比
+
+FY2027 公司指引：收入 `62,000亿日元`，同比 `+5%`；调整后经营利润 `5,900亿日元`，同比 `+18%`；税前利润 `6,400亿日元`，同比 `+22%`；归母净利润 `4,750亿日元`，同比 `+17%`。汇率假设：美元 `150日元`、欧元 `175日元`、人民币 `21.5日元`。
+
+| 业务 | FY2026 收入 | FY2027 指引收入 | FY2027 同比 | FY2026 经营/调整后利润 | FY2027 指引利润 | FY2027 毛线索/解读 |
+|---|---:|---:|---:|---:|---:|---|
+| Infrastructure | `14,634亿日元` | `16,400亿日元` | `+12%` | `1,547亿日元` | `1,700亿日元` | 最强增长段之一；能源、防务、公共系统和数据中心电源系统共同推动 |
+| Public Utility Systems | `5,686亿` | `6,000亿` | `+6%` | `688亿` | `660亿` | 公共基础设施，AI/DC 间接相关较弱 |
+| Energy Systems | `4,733亿` | `4,800亿` | `+1%` | `453亿` | `480亿` | 与变压器、开关柜、UPS/电力系统能力相关，数据中心电源系统核心底座 |
+| Defense & Space | `4,214亿` | `5,600亿` | `+33%` | `405亿` | `560亿` | 高增长但不是 AI 数据中心主线 |
+| Industry & Mobility | `16,738亿` | `16,850亿` | `+1%` | `1,310亿` | `1,740亿` | FA 好于汽车；汽车收入仍下滑 |
+| Factory Automation | `7,982亿` | `8,650亿` | `+8%` | `766亿` | `1,020亿` | FA 组件可进入数据中心监控、冷却设备生产和 AI 相关制造扩产 |
+| Automotive Equipment | `8,756亿` | `8,200亿` | `-6%` | `544亿` | `720亿` | 收入下滑，AI 数据中心低相关，重点不在此 |
+| Life | `23,182亿` | `24,300亿` | `+5%` | `1,705亿` | `2,100亿` | 最大收入段；IT cooling 藏在空调制冷体系内 |
+| Building Systems | `7,078亿` | `7,600亿` | `+7%` | `667亿` | `770亿` | 楼宇/电梯/建筑系统，数据中心关联主要是设施控制 |
+| Air Conditioning & Home Products | `16,103亿` | `16,700亿` | `+4%` | `1,038亿` | `1,330亿` | IT cooling 是关键增量，但住宅/商用空调占比仍大 |
+| Digital Innovation | `1,580亿` | `1,800亿` | `+14%` | `119亿` | `100亿` | 收入增速高，Nozomi/Serendie/监控控制相关；利润短期受投资影响 |
+| Semiconductor & Device | `2,871亿` | `3,000亿` | `+4%` | `475亿` | `430亿` | EML 是 AI 亮点，功率器件是未来 optionality；总段增速不高 |
+| Others | `8,235亿` | `8,220亿` | `0%` | `531亿` | `370亿` | 非核心 |
+| 合并总收入 | `58,947亿日元` | `62,000亿日元` | `+5%` | `4,330亿日元` | `5,900亿日元` | 利润率改善是 FY2027 关键 |
+
+按 FY2027 指引的“事业部毛收入 before eliminations”看，Life 约占 `34.4%`，Industry & Mobility `23.9%`，Infrastructure `23.2%`，Others `11.6%`，Semiconductor & Device `4.3%`，Digital Innovation `2.6%`。按合并收入口径，因内部抵消存在，以上比例不能简单相加，但足以说明：三菱电机的大部分收入仍来自空调/楼宇、自动化/汽车、基础设施，AI 数据中心还不是主收入体。
+
+### 3.2 数据中心业务的官方拆分
+
+2026 年 IR Day Infrastructure 材料给出数据中心相关业务定义和收入目标。公司称数据中心相关业务包括 power supply systems、IT cooling systems、optical devices、monitoring and control systems 等，FY2026 相关收入 `1,763亿日元`，FY2031 目标 `4,000亿日元`。
+
+| 数据中心相关产品簇 | FY2026 收入 | FY2026 美元约数 | FY2031 目标 | FY2026-FY2031 隐含 CAGR | 产品和型号/形态 | AI 重要性 |
+|---|---:|---:|---:|---:|---|---|
+| 电源系统 Power Supply Systems | `865亿日元` | `5.41亿美元` | `1,800亿日元+` | `15.8%+` | UPS、switchboards/开关柜、batteries、EMS、800V DC power supply architecture 相关方案 | 很高；AI 园区能否按期交付取决于电力接入、变压器/开关柜、UPS/BESS 和配电 |
+| IT cooling systems | `320亿日元` | `2.00亿美元` | `1,000亿日元+` | `25.6%+` | IT cooling、空调/制冷、热管理 EMS、Wakayama/Italy 能力，可能包含冷水机、精密空调、热泵和数据中心总包冷却方案 | 很高；rack density 从 70-160kW 向 200-500kW+ 推进，冷却升级是必选项 |
+| Optical devices | `400亿日元` | `2.50亿美元` | `800亿日元` | `14.9%` | EML chips，支持生成式 AI 市场的超高速光器件 | 高；800G/1.6T 光模块的 EML/CW-DFB 处于 AI 网络瓶颈链条 |
+| Monitoring/control systems and FA components | `200亿日元` | `1.25亿美元` | `400亿日元` | `14.9%` | PLC、CNC、监控控制系统、冷却设备加工组件、FA 组件 | 中高；不是算力瓶颈，但影响数据中心设施可用性和自动化 |
+| 数据中心相关合计 | `1,763亿日元` | `11.0亿美元` | `4,000亿日元` | `17.8%` | 跨 Infrastructure、Life、Semiconductor & Device、Digital Innovation | 约占 FY2026 合并收入 `3.0%`，但战略权重上升 |
+
+这组披露很关键：它把 AI 数据中心从“可能受益”变成“FY2026 已有 `11亿美元`级别收入、五年翻倍以上目标”的业务。不过要注意，`1,763亿日元`是“data center-related”，不等于全部为生成式 AI 数据中心，也不等于全部来自 hyperscaler。它可能包含传统数据中心、colo、通信机房、电力和冷却项目。
+
+### 3.3 低优先级或跳过业务
+
+以下业务不是本报告重点，原因是 AI 数据中心相关性弱、增速不高或公司正在重组：
+
+| 业务/产品 | FY2026 规模 | 跳过原因 |
+|---|---:|---|
+| Automotive Equipment | `8,756亿日元`，同比 `-5%`；FY2027 指引 `-6%` | 汽车电装、EPS、DMS、功率总成等与 AI 数据中心低相关，且业务重组/潜在联盟或退出预期更重要 |
+| 家用/普通商用空调 | Air Conditioning & Home Products 总收入 `16,103亿日元` | 大体量但不是 AI DC 专属；只保留其中 IT cooling 和数据中心热管理部分 |
+| 电梯、普通楼宇系统 | Building Systems `7,078亿日元` | 稳健现金牛，但 AI 数据中心相关性主要在设施控制和楼宇能源管理，非主要瓶颈 |
+| 公共事业和防务 | Public Utility `5,686亿`，Defense & Space `4,214亿` | 防务高增长，但与 AI DC 逻辑不同；公共事业只在电网侧间接支撑 |
+| 通用 FA/汽车工厂自动化 | Factory Automation `7,982亿日元` | FA 是好业务，但只有数据中心设施监控、冷却设备加工、AI 供应链扩产部分应纳入 AI/DC |
+
+### 3.4 不能漏掉的小业务和小产品
+
+1. EML chips：FY2026 数据中心相关收入 `400亿日元`，相对公司体量小，但与 800G/1.6T 光模块周期直接相关。行业资料显示 2026 年 EML/CW-DFB 月产能继续扩张，EML 龙头集中度高，Mitsubishi Electric 属于前列参与者。
+2. 800VDC power supply architecture：公司在电源系统说明中直接提到包含 800V DC power supply architectures。2026 年仍偏试点/设计导入，但与 NVIDIA/OCP 推动的 1MW rack 和 +/-400V/800V DC 架构方向一致。
+3. Nozomi OT security：收入体量相对小，但与数据中心、能源和工业控制安全绑定，可能提高三菱电机从硬件交付向运营服务和软件订阅延伸的能力。
+4. 8th-generation IGBT / LV100 / NX modules：2026-06-05 公司宣布推出免费数据服务，提供搭载最新第 8 代 IGBT 的三电平逆变器设计与验证数据，面向 PCS 等功率转换系统。这不是 AI 专属，但有利于 BESS、UPS、PCS 客户缩短设计周期。
+5. SiC 新晶圆厂：2025-10-01 熊本新厂开始生产 SiC 功率半导体器件。EV 需求弱会压制短期，但 AI 数据中心未来的 UPS、BESS、800VDC、SST、PCS 可能打开新场景。
+
+## 4. 关键高增长产品和业务的当前贡献、增速、供需与定价能力
+
+评分口径：AI 基建重要性、时间紧急性、供需紧张程度、垄断/溢价能力均为 1-5 分，5 最高。收入为 FY2026 数据中心相关或 AI/DC 映射口径，美元按 `JPY160/USD`。
+
+| 关键业务/产品 | FY2026 对公司收入贡献 | 收入增速/目标 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断和溢价能力 | 当前判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 数据中心电源系统：UPS、switchboards、batteries、EMS、800VDC 架构 | `865亿日元 / 5.41亿美元`，占合并 `1.47%` | FY2031 `1,800亿日元+`，隐含 CAGR `15.8%+` | `5` | `5` | `4` | `3` | 最关键业务。行业调研显示 AI 园区电力、变压器、开关柜是 2026-2027 领先瓶颈，交期常见 `12-48个月`。三菱有能源系统、UPS、电力电子和系统集成能力，但在北美/欧洲要面对 Schneider、ABB、Siemens、Eaton、Vertiv 等强竞争 |
+| IT cooling systems：数据中心冷却、空调制冷、热管理 EMS | `320亿日元 / 2.00亿美元`，占合并 `0.54%` | FY2031 `1,000亿日元+`，隐含 CAGR `25.6%+` | `5` | `5` | `4` | `2.5` | 增速目标最高。AI rack density 从 70-160kW/rack 向 200-500kW+、极端 1MW rack 发展，冷却系统从普通风冷走向冷水/液冷/热管理集成。三菱空调制冷基础强，但数据中心专用生态竞争激烈 |
+| Optical devices：EML chips/高速光器件 | `400亿日元 / 2.50亿美元`，占合并 `0.68%` | FY2031 `800亿日元`，隐含 CAGR `14.9%` | `4.5` | `4` | `3.5` | `3.5` | 最直接的 AI 半导体器件敞口之一。800G/1.6T 光模块需求由 AI 集群网络推动，行业资料显示 2026 年 EML/CW-DFB 产能快速扩张，Mitsubishi Electric 属 EML 主要供应商之一；风险是产能释放、ASP 下滑、硅光/CPO/LPO 方案替代 |
+| Monitoring/control systems and FA components：PLC、CNC、监控控制系统、冷却设备加工组件 | `200亿日元 / 1.25亿美元`，占合并 `0.34%` | FY2031 `400亿日元`，隐含 CAGR `14.9%` | `3.5` | `3.5` | `3` | `3` | 不是算力硬瓶颈，但数据中心电力、冷却和设施运营需要高可靠控制。FA 组件客户替换成本较高；增长取决于三菱能否把 PLC/CNC/监控系统打包进电源和冷却总方案 |
+| Power semiconductors：IGBT/IPM/SiC modules，用于 UPS/BESS/PCS/未来 800VDC/SST | 未单列 AI/DC；Semiconductor & Device 总收入 `2,871亿日元 / 17.9亿美元`，数据中心相关中 EML `400亿日元`已单列；AI/DC 功率器件当前估计低于 `100-250亿日元` | FY2027 Semiconductor & Device 总收入指引 `3,000亿日元/+4%`，OP `430亿日元/-7%`；长期看受 SiC 新厂和 800VDC/PCS 设计导入推动 | `4`（未来）/`2.5`（当前） | `3` | `2.5` | `2.5` | 未来 optionality 大，短期不是收入爆点。EV/消费 SiC 周期弱、产能扩张带来折旧，AI 数据中心采用 SiC/IGBT 多发生在 UPS、BESS、PCS、SST 和高压 DC 架构，而非 GPU 板上供电 |
+| Nozomi/OT security/Serendie 数据服务 | Nozomi 收入未单列；Digital Innovation FY2026 `1,580亿日元`，数据中心监控/控制部分另列 `200亿日元` | Digital Innovation FY2027 指引 `1,800亿日元/+14%`，但利润 `100亿日元/-17%` | `3` | `3.5` | `2` | `3` | 供应不紧，但客户粘性和合规驱动增强。更像利润率和软件化 optionality，不是短期物理产能瓶颈 |
+
+当前最乐观的产品排序：
+
+1. 数据中心电源系统：收入最大、需求最刚性、与行业瓶颈最匹配。
+2. IT cooling：当前小但 FY2031 目标倍数最高，AI rack 热密度升级会拉动。
+3. EML：体量小、弹性高、直接受益 800G/1.6T，但 ASP/替代风险高于电源设备。
+4. 监控控制/FA 组件：跟随电源与冷却方案销售，粘性高但不是单独爆发点。
+5. 功率半导体：战略上重要，但短期要防止把 800VDC/SiC 过早收入化。
+
+## 5. 一年后关键产品/业务三情景预测
+
+下表预测的是 FY2027/FY2028 交界附近的“一年后运行率或未来 12 个月收入贡献”，不是公司正式指引。基准情景以 FY2031 目标的年化路径和 FY2027 公司总指引为约束；乐观和极度乐观需要更多大客户项目确认、供应瓶颈延续或产品设计导入。
+
+| 产品/业务 | 口径 | 一年后收入贡献预测 | 收入增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 关键假设 |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| 数据中心电源系统 | 基准 | `1,000-1,050亿日元 / 6.3-6.6亿美元` | `+16-21%` | `5` | `5` | `4` | `3` | 按 FY2031 `1,800亿+`目标线性偏前推进；变压器/开关柜/UPS 交期仍长 |
+| 数据中心电源系统 | 乐观 | `1,150-1,300亿日元 / 7.2-8.1亿美元` | `+33-50%` | `5` | `5` | `4.5` | `3.3` | 获得北美/日本/亚洲 hyperscaler 或 colo power block 框架订单，UPS+battery+switchboard 打包率提升 |
+| 数据中心电源系统 | 极度乐观 | `1,450-1,700亿日元 / 9.1-10.6亿美元` | `+68-97%` | `5` | `5` | `5` | `3.5` | 800VDC/UPS/BESS/e-house 方案进入大项目交付，且竞争对手产能不足导致溢价 |
+| IT cooling systems | 基准 | `400-430亿日元 / 2.5-2.7亿美元` | `+25-34%` | `5` | `5` | `4` | `2.5` | 按 FY2031 `1,000亿+`目标推进，AI rack density 提升带来冷却改造 |
+| IT cooling systems | 乐观 | `520-650亿日元 / 3.3-4.1亿美元` | `+63-103%` | `5` | `5` | `4.5` | `2.8` | IT cooling 在北美/欧洲获得更多验证，冷水机/精密空调/热管理 EMS 打包销售 |
+| IT cooling systems | 极度乐观 | `800-1,000亿日元 / 5.0-6.3亿美元` | `+150-213%` | `5` | `5` | `5` | `3` | 液冷/高密度冷却项目大规模转单，三菱从普通 HVAC 供应商升级为数据中心冷却总包 |
+| EML optical devices | 基准 | `460-500亿日元 / 2.9-3.1亿美元` | `+15-25%` | `4.5` | `4` | `3.5` | `3.5` | 800G 放量，1.6T 设计导入，产能扩张使增长接近公司 FY2031 路径 |
+| EML optical devices | 乐观 | `580-700亿日元 / 3.6-4.4亿美元` | `+45-75%` | `4.5` | `4.5` | `4` | `3.8` | 1.6T/200G per lane EML 拉货超预期，Mitsubishi 在 EML 芯片端份额维持高位 |
+| EML optical devices | 极度乐观 | `800-1,000亿日元 / 5.0-6.3亿美元` | `+100-150%` | `4.5` | `5` | `4.5` | `4` | 光器件继续短缺，CPO/硅光替代慢于预期，客户为保供应接受溢价 |
+| 监控控制/FA 组件 | 基准 | `230-250亿日元 / 1.4-1.6亿美元` | `+15-25%` | `3.5` | `3.5` | `3` | `3` | 跟随电源/冷却项目增长 |
+| 监控控制/FA 组件 | 乐观 | `280-330亿日元 / 1.8-2.1亿美元` | `+40-65%` | `3.5` | `4` | `3.5` | `3.3` | 数据中心监控控制、PLC、CNC 和冷却设备加工组件打包率提升 |
+| 监控控制/FA 组件 | 极度乐观 | `380-450亿日元 / 2.4-2.8亿美元` | `+90-125%` | `4` | `4` | `4` | `3.5` | 与 Nozomi/Serendie 形成硬件+软件设施控制方案，客户切换成本提高 |
+| Power semiconductors for AI/DC | 基准 | `120-250亿日元 / 0.75-1.56亿美元` | `+20-40%` | `3.5` | `3` | `2.5` | `2.5` | UPS/BESS/PCS/工业电源需求改善，但仍被 EV/消费周期和折旧拖累 |
+| Power semiconductors for AI/DC | 乐观 | `250-450亿日元 / 1.6-2.8亿美元` | `+50-100%` | `4` | `4` | `3.5` | `3` | 800VDC/SST/PCS 客户 design-in，Kumamoto SiC 产能良率爬坡顺利 |
+| Power semiconductors for AI/DC | 极度乐观 | `500-800亿日元 / 3.1-5.0亿美元` | `+150%+` | `4.5` | `4.5` | `4` | `3.3` | AI 园区 BESS/UPS/SST 大规模采用 SiC，高可靠模块短缺，三菱拿到平台型资格 |
+
+## 6. BOM、单位内容量、价格传导链、产能与认证状态
+
+以下 BOM 和单位内容量是行业工程口径估算，不是三菱电机官方 BOM。目的在于把“每 MW / 每 rack / 每 GPU / 每 optical port”的真实收入抓手拆出来，避免只看概念。
+
+### 6.1 数据中心电源系统
+
+| 项目 | 内容 |
+|---|---|
+| 产品范围 | UPS、switchboards/开关柜、电池/BESS、EMS、保护控制、可能的 800VDC power supply architecture、配电系统集成 |
+| FY2026 公司收入 | 官方数据中心相关电源系统 `865亿日元 / 5.41亿美元` |
+| 每 MW 内容量 | 若只供开关柜/控制/局部 UPS，三菱可捕获约 `0.3-0.8百万美元/MW`；若 UPS+BESS+switchboard+EMS 打包，可能 `1.0-2.5百万美元/MW` |
+| 每 rack 内容量 | 100-160kW rack 对应 `0.10-0.16MW`，三菱捕获约 `3万-40万美元/rack`；200-500kW rack 则 `6万-125万美元/rack`，取决于是否包含 UPS/BESS 和高压 DC |
+| 每 GPU 内容量 | 以 `500-1,000 GPUs/MW`估算，三菱电源系统内容约 `300-5,000美元/GPU-equivalent`，但这是设施层 capex 分摊，不是 GPU BOM |
+| 价格传导链 | hyperscaler/colo capex -> EPC/MEP -> electrical integrator -> UPS/switchgear/battery/EMS supplier -> power semiconductor/磁件/控制器供应商 |
+| 当前产能能力 | 以 FY2026 收入看，已实现交付能力约 `5.4亿美元/年`；订单端 Infrastructure FY2026 orders `19,785亿日元`、Energy Systems orders `6,100亿日元`，说明系统级产能和 backlog 环境较强 |
+| 供应链采纳程度 | 已有正式收入和公司级 FY2031 目标，属于已采纳/扩张期；但客户项目名和数据中心专属 backlog 未披露 |
+| 认证/资格 | 具体 UL/IEC/客户 AVL 未披露。数据中心电源设备通常需要 IEC/UL、短路/耐压/热、site owner vendor approval、EPC 工程验证；800VDC 架构仍处较早设计导入/试点阶段 |
+
+### 6.2 IT cooling systems
+
+| 项目 | 内容 |
+|---|---|
+| 产品范围 | IT cooling、空调制冷、冷水机/精密空调/热泵/热管理 EMS、数据中心总冷却方案，可能包括意大利和 Wakayama 相关能力 |
+| FY2026 公司收入 | 官方数据中心相关 IT cooling `320亿日元 / 2.00亿美元` |
+| 每 MW 内容量 | 数据中心冷却设备和控制通常 `0.2-1.2百万美元/MW`可由单一供应商捕获；若含冷水系统、液冷二次侧、控制和服务，可能 `1.5百万美元/MW+` |
+| 每 rack 内容量 | 100-160kW rack 对应约 `2万-19万美元/rack`；200-500kW 高密 rack 可到 `4万-60万美元/rack`，取决于是否含液冷/CDU/冷水主机 |
+| 每 GPU 内容量 | 以 `500-1,000 GPUs/MW`估算，三菱 cooling 内容约 `200-2,400美元/GPU-equivalent` |
+| 价格传导链 | hyperscaler thermal spec -> MEP/EPC -> chiller/CRAC/CDU/controls supplier -> compressor/heat exchanger/pump/valve/control components |
+| 当前产能能力 | FY2026 实现收入 `2.0亿美元/年`，FY2031 目标 `6.25亿美元+`，隐含需要显著扩产或渠道突破 |
+| 供应链采纳程度 | 已形成收入，但从传统 HVAC 到数据中心高密 IT cooling 的客户认可程度仍需继续验证 |
+| 认证/资格 | 客户侧通常要求 ASHRAE、UL/CE、冷媒法规、能效、可靠性、site acceptance test；公司未披露主要 hyperscaler AVL 状态 |
+
+### 6.3 EML 光器件
+
+| 项目 | 内容 |
+|---|---|
+| 产品范围 | Electro-absorption modulated laser chips，面向高速光通信、800G/1.6T 光模块和生成式 AI 网络扩张 |
+| FY2026 公司收入 | 官方数据中心相关 optical devices `400亿日元 / 2.50亿美元` |
+| 每 optical port 内容量 | 800G 端口常见 4x200G 或 8x100G 光通道，EML/CW 激光内容约 `20-120美元/port`；1.6T 端口约 `40-200美元/port`，取决于 lane 数、200G/400G 光口方案、封装和良率 |
+| 每 rack 内容量 | 高端 AI rack 可能有数十至上百个 800G/1.6T 等效外部端口；三菱作为 laser/EML 芯片供应商的捕获量估计 `1,000-20,000美元/rack`，不是光模块总 ASP |
+| 每 GPU 内容量 | 取决于网络拓扑。粗略按每 GPU `0.25-1.0`个 800G port-equivalent，EML 内容约 `5-120美元/GPU` |
+| 每 MW 内容量 | 以 `500-1,000 GPUs/MW`估算，EML 内容约 `2,500-120,000美元/MW`，取决于网络密度和是否 1.6T 化 |
+| 价格传导链 | hyperscaler network spec -> switch/NIC vendor -> optical module maker -> TOSA/laser/EML supplier -> InP/外延/封测 |
+| 当前产能能力 | FY2026 已确认 `2.5亿美元/年`数据中心 optical devices 收入；行业资料显示 2026 EML/CW-DFB 月产能扩张，但高端 EML 仍有 design-in 和良率门槛 |
+| 供应链采纳程度 | 已采纳，属于量产供应链；客户通常是光模块/TOSA/通信设备链条，最终需求来自 AI 数据中心和通信基础设施 |
+| 认证/资格 | 需完成光模块厂、系统厂和 hyperscaler 对光链路的 qualification，包括温度、误码率、寿命、功耗、封装一致性；公司未公开单一客户认证阶段 |
+
+### 6.4 Power semiconductors：IGBT/IPM/SiC modules
+
+| 项目 | 内容 |
+|---|---|
+| 产品范围 | Industrial LV100 1.2kV IGBT module、Industrial NX 1.2kV IGBT module、SiC power modules、IPM、功率器件与驱动数据服务 |
+| FY2026 公司收入 | Semiconductor & Device 总收入 `2,871亿日元 / 17.9亿美元`；AI/DC 功率器件未单列，估计低于数据中心 EML 的 `400亿日元` |
+| 每 MW 内容量 | UPS/PCS/BESS/SST 中功率半导体模块内容约 `2万-15万美元/MW`；若 800VDC/SST/高频 SiC 架构比例高，可到 `25万美元/MW+` |
+| 每 rack 内容量 | 100-160kW rack 的上游设施功率器件内容约 `2,000-24,000美元/rack`，但通常被 UPS/BESS/电源设备供应商整合 |
+| 每 GPU 内容量 | 设施层分摊约 `20-300美元/GPU-equivalent`；GPU 板上 VRM/DrMOS 不是三菱当前主战场 |
+| 价格传导链 | UPS/BESS/PCS/SST OEM -> power module supplier -> wafer/epi/substrate/封装/驱动 -> silicon carbide 或 IGBT 工艺 |
+| 当前产能能力 | 熊本新 SiC 晶圆厂 2025-10-01 启动生产；FY2026 Semiconductor & Device capex `1,051亿日元`，同比 `+215%`，显示扩产投入大 |
+| 供应链采纳程度 | IGBT/IPM 在工业和 PCS 已成熟；SiC 在 EV、铁路、工业、再生能源中推进；AI/DC 高压架构仍在早期 |
+| 认证/资格 | 车规/工业/铁路/PCS 客户认证周期长；2026-06-05 的三电平逆变器数据服务有助于客户缩短设计验证，但不是单一 AI DC 认证 |
+
+### 6.5 Monitoring/control/FA components and OT security
+
+| 项目 | 内容 |
+|---|---|
+| 产品范围 | PLC、CNC、监控控制系统、冷却设备加工组件、Nozomi OT/ICS 安全、Serendie 数据平台 |
+| FY2026 公司收入 | 数据中心相关 monitoring/control and FA components `200亿日元 / 1.25亿美元`；Nozomi 收入未单列 |
+| 每 MW 内容量 | 控制/监控/OT 安全初始部署约 `5,000-50,000美元/MW`，大型园区站点可能 `10万-100万美元+`，软件订阅另计 |
+| 每 rack 内容量 | `500-8,000美元/rack`，高度取决于 BMS/DCIM/OT 安全范围 |
+| 每 GPU 内容量 | 通常低于 `10美元/GPU-equivalent`，更多是设施层 Opex/软件 |
+| 价格传导链 | data center operator -> DCIM/BMS/OT security integrator -> PLC/sensor/gateway/security software -> service/support |
+| 当前产能能力 | FY2026 已有 `1.25亿美元`数据中心监控控制/FA 组件收入；Nozomi 完成收购后具备跨客户平台化潜力 |
+| 供应链采纳程度 | 三菱 PLC/FA 客户基础强；Nozomi 在 OT/ICS 安全市场已被关键基础设施客户采用，但与三菱硬件打包仍需时间 |
+| 认证/资格 | 工控和网络安全侧需要客户安全审查、OT 环境兼容、合规认证和现场部署经验；供应不紧，关键是信任和生态 |
+
+## 7. 一年后产能能力、供应链采纳和认证阶段预测
+
+| 产品/业务 | 口径 | 一年后产能/收入能力预测 | 供应链采纳程度 | 认证/导入阶段预测 |
+|---|---|---:|---|---|
+| 数据中心电源系统 | 基准 | `1,000-1,050亿日元/年` | 已采纳，订单主要来自电力系统、UPS、switchboard、battery/EMS 组合 | 传统 UPS/开关柜/电池方案继续客户 AVL；800VDC 仍以示范/设计导入为主 |
+| 数据中心电源系统 | 乐观 | `1,150-1,300亿日元/年` | 大客户项目中三菱供应范围从单品扩大到集成包 | UPS+BESS+switchboard+EMS 打包完成更多 site qualification |
+| 数据中心电源系统 | 极度乐观 | `1,450-1,700亿日元/年` | 获得 hyperscaler/colo 框架型订单，订单可见度接近 18-24 个月 | 800VDC 或 next-gen power architecture 有首批商业项目 |
+| IT cooling | 基准 | `400-430亿日元/年` | 传统 HVAC 客户延伸至更多数据中心项目 | 完成更多数据中心 site acceptance，液冷配套仍早期 |
+| IT cooling | 乐观 | `520-650亿日元/年` | IT cooling 成为跨地区增长业务，北美/欧洲渠道改善 | 冷却总包、热管理 EMS 和冷水系统进入更多客户标准清单 |
+| IT cooling | 极度乐观 | `800-1,000亿日元/年` | 与头部 colo/hyperscaler 深度绑定 | 高密 rack 液冷/冷水系统完成平台级验证 |
+| EML 光器件 | 基准 | `460-500亿日元/年` | 800G 继续量产，1.6T 小批量/设计导入 | 完成更多 200G/lane 相关 qualification |
+| EML 光器件 | 乐观 | `580-700亿日元/年` | 模块厂拉货强，Mitsubishi 维持高份额 | 1.6T 端口量产资格提升，良率稳定 |
+| EML 光器件 | 极度乐观 | `800-1,000亿日元/年` | EML 继续供不应求，客户接受更高 ASP 或长期供货协议 | 高端 EML/封装平台成为多个客户关键物料 |
+| Power semiconductors | 基准 | AI/DC 相关 `120-250亿日元/年` | 传统 PCS/UPS 采用稳步增加，AI 800VDC 仍小批量 | IGBT 数据服务提升 PCS 采用，SiC 数据中心认证早期 |
+| Power semiconductors | 乐观 | AI/DC `250-450亿日元/年` | UPS/BESS/SST 客户 design-in 提升 | SiC module 在部分数据中心电源项目完成平台验证 |
+| Power semiconductors | 极度乐观 | AI/DC `500-800亿日元/年` | 高压 DC/SiC 成为 AI 园区电源架构重要备选 | 800VDC/SST/PCS 多客户量产认证，但概率低于电源/冷却基准增长 |
+| Monitoring/control/FA/OT security | 基准 | `230-250亿日元/年` | 跟随电源和冷却交付 | Nozomi 作为独立平台继续客户导入，三菱打包率提升有限 |
+| Monitoring/control/FA/OT security | 乐观 | `280-330亿日元/年` | 硬件+软件设施控制方案被更多数据中心客户采用 | OT security 与 DCIM/BMS/PLC 集成完成更多 reference |
+| Monitoring/control/FA/OT security | 极度乐观 | `380-450亿日元/年` | 三菱用 Nozomi 提高解决方案粘性 | 形成数据中心 OT 安全标准化方案，软件订阅收入开始显性化 |
+
+## 8. 基于订单积压和供给的未来一年增长推断
+
+### 8.1 已披露订单与无法披露项
+
+三菱电机不披露数据中心专属 backlog，也未披露客户项目名、订单金额、交付窗口和取消率。它披露的是 FY2026 各 segment 的订单额，而且公司说明 Automotive Equipment、Air Conditioning Systems & Home Products、Others 中很多产品不是 made-to-order，因此没有纳入订单图表。这个口径会低估空调/IT cooling 的真实需求信号，也不能直接看出数据中心订单。
+
+FY2026 订单额：
+
+| 业务 | FY2026 订单 | 同比 | FY2026 收入 | 粗略 book-to-bill | 对 AI/DC 的含义 |
+|---|---:|---:|---:|---:|---|
+| Infrastructure | `19,785亿日元` | `+3%` | `14,634亿日元` | `1.35x` | 电力、能源、防务订单支撑强；其中数据中心电源系统未单列 |
+| Public Utility Systems | `5,704亿日元` | `-9%` | `5,686亿日元` | `1.00x` | 公共事业平稳，不是 AI 主线 |
+| Energy Systems | `6,100亿日元` | `+14%` | `4,733亿日元` | `1.29x` | 变压器、开关设备、电源系统需求健康，是 AI 园区电力链条核心 |
+| Defense & Space | `7,980亿日元` | `+5%` | `4,214亿日元` | `1.89x` | 高 backlog 特征，但与 AI 数据中心不同 |
+| FA Systems | `8,656亿日元` | `+22%` | `7,982亿日元` | `1.08x` | AI 相关制造、设施控制和设备加工可受益 |
+| Building Systems | `7,262亿日元` | `+5%` | `7,078亿日元` | `1.03x` | 与数据中心设施控制有弱关联 |
+| Digital Innovation | `1,562亿日元` | `+4%` | `1,580亿日元` | `0.99x` | Nozomi 并入后 FY2027 可能改变结构 |
+| Semiconductor & Device | `3,204亿日元` | `+19%` | `2,871亿日元` | `1.12x` | EML 和功率器件订单改善，但 FY2027 指引仍低个位数增长 |
+
+### 8.2 未来一年收入增速推断
+
+| 产品/业务 | 基准增速 | 乐观增速 | 极度乐观增速 | 推断依据 | 取消率/延期风险 |
+|---|---:|---:|---:|---|---|
+| 数据中心电源系统 | `+16-21%` | `+33-50%` | `+68-97%` | FY2031 `1,800亿+`目标；Energy Systems orders `+14%`，Infrastructure book-to-bill `1.35x`；行业变压器/开关柜交期 `12-48个月` | 取消率低于消费硬件，但电网接入、土地、融资、EPC 施工可导致延期；客户可能多源化 |
+| IT cooling | `+25-34%` | `+63-103%` | `+150-213%` | FY2031 `1,000亿+`目标，隐含最高 CAGR；AI rack density 推高冷却 capex | 延期取决于数据中心开工节奏和液冷方案选择；传统空调产品不纳入 orders，数据可见度低 |
+| EML 光器件 | `+15-25%` | `+45-75%` | `+100-150%` | FY2031 `800亿`目标；行业资料显示 2026 光模块市场和 EML/CW-DFB 产能同步扩张 | 光模块周期、客户拉货节奏、产能扩张、ASP 压力和技术替代导致波动更大 |
+| Monitoring/control/FA | `+15-25%` | `+40-65%` | `+90-125%` | 跟随电源/冷却方案；FA orders `+22%` | 可被 DCIM/BMS 生态替代；项目型收入验收周期影响确认 |
+| Power semiconductors for AI/DC | `+20-40%` | `+50-100%` | `+150%+` | SiC 新厂、IGBT 数据服务、UPS/BESS/PCS/800VDC optionality | EV/消费需求弱、SiC 价格压力、折旧、客户认证慢；FY2027 segment 指引只 `+4%`是最大约束 |
+
+### 8.3 渠道验证和客户项目透明度
+
+能验证的强证据：
+
+1. 官方 FY2026 数据中心相关收入 `1,763亿日元`，不是市场传闻。
+2. 官方 FY2031 数据中心目标 `4,000亿日元`，并逐项拆分电源系统、IT cooling、EML、监控控制。
+3. FY2026 Infrastructure、Energy、FA、Semiconductor orders 增长，显示上游订单环境支持。
+4. 本地行业调研显示 2026-2027 AI 数据中心最硬瓶颈在电力接入、变压器/开关柜、液冷/冷却和光互连，正好对应三菱的四个数据中心产品簇。
+5. NVIDIA/OCP 推动 800VDC、1MW rack、高密机柜方向，与三菱 IR Day 提到的 800VDC power supply architecture 存在技术方向一致性。
+
+无法验证或不能当事实的部分：
+
+1. 未看到三菱披露具体 hyperscaler/colo 客户项目名。
+2. 未看到数据中心电源系统的独立 backlog、订单金额、交付窗口和取消率。
+3. 未看到 EML 单一客户 design-in 明细和 1.6T 产品 qualification 阶段。
+4. 未看到 IT cooling 在头部 hyperscaler 的 AVL 名单。
+5. 未看到 800VDC/SST 由试点进入大规模收入的确认。
+
+所以未来一年的基准情景应该使用官方 FY2031 目标年化路径；乐观情景需要新增客户项目或更清楚订单披露验证；极度乐观情景暂时只能作为上行 optionality。
+
+## 9. 竞争格局、主流性、替代方案与客户切换成本
+
+### 9.1 数据中心电源系统
+
+主要竞争对手：Schneider Electric、ABB、Siemens、Eaton、Vertiv、Hitachi Energy、Toshiba、Fuji Electric、Meidensha、Hyosung、Hyundai Electric、LS Electric、Delta，以及本地 EPC/系统集成商。
+
+三菱的优势是日本/亚洲电力设备、UPS、电力电子、控制系统和工程集成基础深；FY2026 Infrastructure order base 大，Energy Systems orders `+14%`。弱点是全球数据中心电源生态中 Schneider、Eaton、Vertiv、ABB、Siemens 在北美/欧洲客户标准化清单里更强，三菱需要证明它能从单品供应转向跨区域集成包。
+
+技术主流性：传统 AC 配电、UPS、开关柜、BESS 是 2026 主流；800VDC/中压 DC/SST 是 2027-2028 以后更可能放量的方向。三菱提到 800VDC 是好信号，但短期收入仍应主要来自传统电源系统。
+
+替代风险：客户可多源采购开关柜、UPS 和电池；若数据中心采用更模块化的 e-house 或其他 vendor 标准包，三菱可能被挤出系统层，只卖部件。客户切换成本高，尤其是在设计、认证和 EPC 阶段之后；但项目前期多源竞争激烈。
+
+### 9.2 IT cooling
+
+主要竞争对手：Vertiv、Schneider Electric/Motivair、Johnson Controls/Silent-Aire、Daikin、Carrier、Trane Technologies、STULZ、Airedale/Modine、CoolIT、Boyd、液冷 CDU 和冷板生态公司。
+
+三菱优势是空调制冷规模、热泵/冷却技术、全球制造和日本品质；FY2026 Life 收入超过 `2.3万亿日元`，有足够体量。弱点是 AI 数据中心从传统 HVAC 向液冷、冷水主机、CDU、二次侧系统和热管理软件迁移，竞争对手在数据中心专用方案和 hyperscaler reference 上可能更强。
+
+技术主流性：高密 AI rack 使 IT cooling 必然升级。空气冷却仍有大量基建市场，但 200-500kW+ rack 会推动冷水/液冷和热管理集成。三菱需要从空调供应商升级为数据中心 thermal solution provider。
+
+客户切换成本中高。冷却系统一旦进入数据中心设计和调试，替换会影响 PUE、可靠性、维护和保修；但在项目设计阶段，客户对品牌、能效、交期和服务能力会重新比价。
+
+### 9.3 EML 光器件
+
+主要竞争对手：Lumentum、Broadcom、Sumitomo Electric、Mitsubishi Electric，以及 InP/硅光/光模块链条中的其他激光器与调制器供应商。行业资料显示 EML 供应较集中，Mitsubishi Electric 是主要 EML 参与者之一。
+
+三菱优势是高速、低功耗、高可靠 EML 芯片能力，并且公司已把生成式 AI optical devices 作为 FY2026 `400亿日元`、FY2031 `800亿日元`的正式增长线。风险是 EML/CW-DFB 产能在 2026 年明显扩张，短缺可能缓解；同时硅光、CPO、LPO、不同 reach 的 VCSEL/DFB/EML 方案会影响每 port 内容量。
+
+技术主流性：800G/1.6T IM-DD 中 EML/DFB 仍是主流选项之一，尤其在更长 reach 和高带宽场景。但 AI 网络技术演进快，EML 不应被视为永久垄断。
+
+客户切换成本中等偏高。光模块厂和系统客户需要 qualification、可靠性和链路测试；但一旦同规格多源合格，客户会积极压价和分散供应。
+
+### 9.4 Power semiconductors：IGBT/IPM/SiC
+
+主要竞争对手：Infineon、Wolfspeed、STMicroelectronics、onsemi、Rohm、Fuji Electric、Toshiba、Semikron Danfoss、Hitachi、BYD Semiconductor、StarPower 等。
+
+三菱优势是 IGBT/IPM 和工业功率模块积累、SiC 新厂扩产、工业和铁路/电力客户基础。公司 2026-06-05 推出 8th-generation IGBT module 逆变器设计验证数据服务，说明在帮助客户缩短 PCS 设计周期。弱点是功率半导体竞争激烈，EV SiC 周期转弱可能造成价格压力；AI 数据中心高压 DC 采用节奏还没完全确认。
+
+技术主流性：IGBT 仍是 PCS/UPS/工业逆变器主流；SiC 在高效率、高频、高温、高压场景会增加；GaN 更偏服务器 PSU/中低压高频，和三菱当前强项不完全重合。AI 数据中心不会在一年内完全转向 SiC/SST，但 2027-2028 的 800VDC 和 BESS/PCS 增长值得跟踪。
+
+客户切换成本高。功率模块进入 PCS/UPS/BESS/铁路/工业系统后，热设计、驱动、保护、可靠性认证、失效率责任都很重；但长期价格压力和多源策略仍会存在。
+
+### 9.5 Monitoring/control/FA/OT security
+
+主要竞争对手：Siemens、Schneider Electric、Rockwell、ABB、Honeywell、Johnson Controls、Vertiv、Emerson、Claroty、Dragos、Microsoft Defender for IoT、Fortinet、Palo Alto、Armis、Cisco 等。
+
+三菱优势是 PLC/FA 控制基础和 Nozomi OT 安全补强。Nozomi 保持 vendor-agnostic 有利于避免被视为纯三菱封闭生态，但这也意味着收入协同不会自动发生。
+
+技术主流性：OT 安全、BMS/DCIM、能耗优化、预测维护和设施自动化会成为数据中心运营必选，但不是建设 capex 最大项。客户切换成本中高，因为 OT asset inventory、监控规则、告警流程和合规审计一旦建立，替换成本高；但软件市场竞争激烈。
+
+## 10. 投资结论与反证指标
+
+### 10.1 基准结论
+
+三菱电机目前更像“AI 数据中心基础设施二线综合受益者”，不是核心算力/网络主设备公司。公司已经有 `1,763亿日元`的数据中心相关收入，且给出 FY2031 `4,000亿日元`目标，这是报告中最重要的事实。按 FY2026 合并收入看，AI/DC 占比仅 `3.0%`，但增速高于公司整体，未来五年若达标，可成为利润率和估值重估的重要支撑。
+
+基准情景下，未来一年数据中心相关收入从 `1,763亿日元`提升到 `2,100-2,300亿日元`较合理，对应 `+19-31%`。这已经高于公司 FY2027 总收入指引 `+5%`。其中电源系统和 IT cooling 是最确定的收入增量，EML 提供更高弹性，功率半导体提供 2027 年以后 optionality。
+
+### 10.2 乐观结论
+
+如果公司在 FY2027 中报或 IR Day 进一步披露数据中心订单、客户项目、delivery schedule，或者数据中心电源系统收入提前接近 `1,300亿日元`、IT cooling 接近 `600亿日元`、EML 接近 `700亿日元`，市场可能把三菱电机从传统工业集团重新定价为“日本 AI 电力+冷却+光器件平台”。在这种情况下，FY2027 合并收入 `6.2万亿日元`可能不是上限，经营利润率也可能更接近 `10%`目标路径。
+
+### 10.3 极度乐观但需要证据的结论
+
+极度乐观情景要求三菱同时拿到大规模数据中心 power block、IT cooling 平台资格、EML 继续供不应求、800VDC 或 SiC power architecture 提前商业化。这会使 FY2027/FY2028 数据中心相关收入接近 `3,000-3,600亿日元`，提前接近 FY2031 目标路径。当前公开证据还不足以把这种情景作为基准。
+
+### 10.4 关键反证指标
+
+1. FY2027 H1 数据中心相关收入没有单独更新，或低于 `1,000亿日元`年化。
+2. Semiconductor & Device 继续只有低个位数增长，且公司不再强调高频光器件/EML 数据中心需求。
+3. EML/CW-DFB 产能扩张导致 ASP 和订单能见度下降，光模块厂库存调整。
+4. IT cooling FY2027 没有大客户/区域突破，仍被传统空调业务掩盖。
+5. Infrastructure orders 继续增长但 Energy Systems 或数据中心电源系统不加速，说明 AI 电力链条没有落到三菱订单。
+6. 800VDC/SiC/SST 在 2027 年仍停留在参考设计和试点，没有进入系统收入。
+7. 汽车设备、关税、汇率或质量问题拖累整体利润率，使 AI/DC 增量被其他业务消耗。
+
+## 11. 主要来源
+
+### 联网公开资料
+
+1. Mitsubishi Electric，FY2026 Consolidated Financial Results，2026-04-28：`https://www.mitsubishielectric.com/en/pr/2026/pdf/0428_co1.pdf`
+2. Mitsubishi Electric，FY2026 Consolidated Financial Results Briefing，2026-04-28：`https://www.mitsubishielectric.com/en/pr/2026/pdf/0428_co2.pdf`
+3. Mitsubishi Electric，FY2026 Q1 Results Briefing，2025-07-31：`https://www.mitsubishielectric.com/en/pr/2025/pdf/0731-2.pdf`
+4. Mitsubishi Electric，FY2026 H1 Results，2025-10-31：`https://www.mitsubishielectric.com/en/pr/2025/pdf/1031-a1.pdf`
+5. Mitsubishi Electric，FY2026 H1 Results Briefing，2025-10-31：`https://www.mitsubishielectric.com/en/pr/2025/pdf/1031-a2.pdf`
+6. Mitsubishi Electric，FY2026 Q3 Results Briefing，2026-02-03：`https://www.mitsubishielectric.com/en/pr/2026/pdf/0203-a2.pdf`
+7. Mitsubishi Electric IR Day 2026，Infrastructure Business Area，2026-05-29：`https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260529/20260528553427.pdf`
+8. Mitsubishi Electric IR Day 2026 presentation index：`https://www.mitsubishielectric.com/investors/library/presentations/`
+9. Mitsubishi Electric Completes Full Acquisition of Nozomi Networks，2026-01-29：`https://www.mitsubishielectric.com/en/pr/2026/pdf/0129.pdf`
+10. Mitsubishi Electric Mobility Commences Operations，2024-04-01：`https://www.mitsubishielectric.com/en/pr/2024/0401-b/`
+11. Mitsubishi Electric to Launch Data-provision Service to Accelerate Adoption of Latest Power Semiconductors，2026-06-05：`https://www.mitsubishielectric.com/en/pr/2026/0605_sd/`
+12. Mitsubishi Electric optical devices product information：`https://www.mitsubishielectric.com/semiconductors/opticaldevices/`
+13. Mitsubishi Electric power devices / SiC information：`https://www.mitsubishielectric.com/semiconductors/powerdevices/technology/sic/`
+14. Yahoo Finance MIELY statistics，2026-06-10 可得延迟数据：`https://finance.yahoo.com/quote/MIELY/`
+15. MarketWatch MIELY quote，2026-06-10 可得延迟数据：`https://www.marketwatch.com/investing/stock/miely`
+16. Public.com MIELY market data，2026-06-11 可得延迟数据：`https://public.com/stocks/miely`
+
+### 本地行业调研资料
+
+1. `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+2. `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+3. `行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`
+4. `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`
+5. `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+6. `行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-06-11.md`

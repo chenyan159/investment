@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "数据中心电力接入与高压变电",
+    "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T00-13-34-01a07590-bcef-7e62-bae2-f0763b03e208.jsonl",
+    "read_calls": 4,
+    "unparseable_lines": []
+  },
+  {
+    "subject": "数据中心直液冷系统",
+    "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T00-35-02-01a075a4-6239-7d23-8c0a-c154ea04df52.jsonl",
+    "read_calls": 8,
+    "unparseable_lines": []
+  },
+  {
+    "subject": "HBM与高带宽内存",
+    "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T01-03-24-01a075be-59a0-7940-bf9c-128e22f8c63a.jsonl",
+    "read_calls": 12,
+    "unparseable_lines": []
+  },
+  {
+    "subject": "云厂自研AI ASIC",
+    "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T00-43-26-01a075ac-1405-7d53-91ab-a605e604d8a0.jsonl",
+    "read_calls": 4,
+    "unparseable_lines": []
+  },
+  {
+    "subject": "AI云算力外包和NeoCloud与AI数据中心运营商",
+    "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T01-44-21-01a075e3-d81e-7882-a4e3-4ccb7de0a982.jsonl",
+    "read_calls": 11,
+    "unparseable_lines": []
+  },
+  {
+    "subject": "商用AI加速芯片",
+    "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T01-12-45-01a075c6-e981-7812-9ef4-c16ea978d7cf.jsonl",
+    "read_calls": 6,
+    "unparseable_lines": []
+  },
+  {
+    "subject": "GNRC",
+    "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T04-06-45-01a07666-36da-72b2-83e2-04dc9d64dd7f.jsonl",
+    "read_calls": 4,
+    "unparseable_lines": []
+  },
+  {
+    "subject": "GOOGL",
+    "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T04-06-39-01a07666-2075-7b12-942c-d9e7745c255d.jsonl",
+    "read_calls": 7,
+    "unparseable_lines": []
+  },
+  {
+    "subject": "CRWV",
+    "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T04-06-43-01a07666-2f24-78f1-aaf6-884233ef8522.jsonl",
+    "read_calls": 12,
+    "unparseable_lines": []
+  },
+  {
+    "subject": "SMCI",
+    "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T04-06-44-01a07666-33b5-7533-85d1-976425acfe74.jsonl",
+    "read_calls": 19,
+    "unparseable_lines": []
+  },
+  {
+    "subject": "CRDO",
+    "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T04-06-47-01a07666-3e1e-7851-b8b5-fac46de212c3.jsonl",
+    "read_calls": 10,
+    "unparseable_lines": []
+  },
+  {
+    "subject": "AVGO",
+    "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T04-06-46-01a07666-3a5f-7f91-b854-62fc0e569c0c.jsonl",
+    "read_calls": 9,
+    "unparseable_lines": []
+  },
+  {
+    "subject": "MU",
+    "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T04-06-42-01a07666-2c02-7852-9759-e030ab4fb134.jsonl",
+    "read_calls": 8,
+    "unparseable_lines": []
+  },
+  {
+    "subject": "SNDK",
+    "session": "C:\\Users\\cheny\\.codex\\sessions\\2026\\09\\06\\rollout-2026-09-06T04-06-41-01a07666-2924-74a1-95a7-58ee7282c65c.jsonl",
+    "read_calls": 6,
+    "unparseable_lines": []
+  }
+]

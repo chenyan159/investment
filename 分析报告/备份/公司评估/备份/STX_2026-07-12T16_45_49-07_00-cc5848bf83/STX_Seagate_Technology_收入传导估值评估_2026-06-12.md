@@ -1,0 +1,151 @@
+# 公司收入传导与价值传导评估：Seagate Technology（STX）
+
+报告日期：2026-06-12  
+主口径窗口：NTM，即从 2026-06-12 往后约 12 个月，接近 FY2026Q4 至 FY2027Q3。  
+资料边界：使用 `公司调研/` 与 `行业调研/`，并用 Seagate 官方 FY2026Q3 财报与 Mozaic 4+ 公告复核最新经营锚；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较结果。  
+重要边界：本文只评估需求到收入、利润、现金流和经营质量的传导，不做全公司排序，不输出投资评级，不判断股价区间，不使用市场价格或估值倍数作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 收入、毛利率、经营利润率、非 GAAP 净利润和自由现金流；FY2026 全年、FY2027 目标、Mozaic 5 / 50TB 及 100TB roadmap 只作补充和远期期权。
+- 当前收入基准、指引和 run-rate：FY2026Q3 收入 `$3.112B`，其中 Data Center `$2.500B`、占 `80%`，Edge IoT `$0.612B`、占 `20%`；FY2026Q4 指引收入 `$3.45B +/- $0.10B`、非 GAAP EPS `$5.00 +/- $0.20`。用 FY2026Q1-Q3 `$8.566B` 加 Q4 指引中点，FY2026 隐含收入约 `$12.016B`；FY2026Q4 指引年化 run-rate 约 `$13.8B`。
+- 重要产品/业务线：Data Center nearline HDD 汇总锚、Mozaic 3+ 30-36TB HAMR、高容量 legacy PMR/ePMR/SMR nearline、Mozaic 4+ 40/44TB HAMR、Exos systems / CORVAULT / JBOD、Edge IoT / NAS / surveillance / consumer。Mozaic 5 / 50TB 是远期期权，不进入 NTM 基准。
+- NTM 公司收入四情景：悲观 `$12.8-14.2B`，基准 `$15.0-16.0B`，乐观 `$16.5-18.0B`，极度乐观 `$18.5-21.0B`。绝对变化以 TTM `$11.010B` 为基准，分别约 `+16-29%`、`+36-45%`、`+50-63%`、`+68-91%`。
+- 利润或 EBITDA 四情景：悲观非 GAAP 经营利润率 `30-35%`、净利润约 `$3.0-4.0B`；基准经营利润率 `39-43%`、净利润约 `$4.8-5.8B`；乐观经营利润率 `43-47%`、净利润约 `$5.8-7.1B`；极度乐观经营利润率 `47-52%`、净利润约 `$7.1-9.2B`。EBITDA 未可靠披露为产品级口径，本文不把它作为主量化项。
+- 最大传导瓶颈：不是行业是否需要存储，而是 `AI/cloud 数据增长 -> hyperscaler 冷温对象容量预算 -> 30/40/44TB qualification -> 可交付 EB -> 收入确认` 这条链能否按季度兑现。
+- 最大利润率变量：Mozaic 4+ 40/44TB 在 NTM 内的客户扩展、良率、价值定价和与 legacy nearline 的 mix 替代速度。
+- 最大现金流变量：大客户长约和 build-to-order 能否维持高预收/低库存错配；若上电或验收延迟，收入可顺延但应收、库存和 capex 会先压现金流。
+- 可信度：基准为中高，乐观为中，极度乐观为低到中。A 级证据来自 FY2026Q3 财报、Data Center 收入、FY2026Q4 指引和 FCF；产品级 Mozaic 收入拆分依赖估算，证据等级低于公司级收入锚。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Data Center nearline HDD + systems 汇总锚 | FY2026Q3 官方 Data Center 收入 `$2.500B`，年化约 `$10.0B` | `80%` | 公司收入和利润主锚，不能与子产品重复加总 | A | 进入基准，是 NTM 公司收入主约束 | 2027 之后更长期的 EB 长约 |
+| Mozaic 3+ 30/32/36TB HAMR | FY2026Q3 模型估算 `$0.9-1.6B`，已在多数 leading cloud customers 产生收入 | 估算 `29-51%` | 2026 主力高容量 HAMR 收入池 | B/C | 保守进入基准，受 Data Center A 级锚约束 | 继续下沉到企业/边缘高容量 SKU |
+| Mozaic 4+ 40/44TB HAMR | FY2026Q3 小量，估算 `<$0.2B`；两家 hyperscale cloud provider production | `<6%` | NTM 最重要增量和毛利率变量 | B/C | 小比例进入基准，主要贡献在乐观/极度乐观 | 更广 CSP qualification 与 50TB 过渡 |
+| Legacy high-capacity PMR/ePMR/SMR nearline | FY2026Q3 模型估算 `$0.7-1.2B` | 估算 `22-39%` | 现金流和供给池，增长会被 HAMR mix 替代 | C | 进入基准，但增长率低于 Mozaic | 若 Mozaic 4+ 延迟，会延长高价周期 |
+| Exos systems / CORVAULT / JBOD / storage systems | FY2026Q3 未披露，估算 `$0.1-0.3B` | 估算 `3-10%` | 提高 attach 和客户粘性，但不是 STX 最高利润池 | C | 可进入基准的小项，需折扣 | 对象存储 turnkey rack |
+| Edge IoT / NAS / surveillance / consumer | FY2026Q3 官方 Edge IoT 收入 `$0.612B`，年化 `$2.45B` | `20%` | 稳定现金流，增长慢于 Data Center | A | 进入基准，作为非云抵消项 | 高容量 NAS、SkyHawk AI、私有 RAG 边缘 |
+| Mozaic 5 / 50TB 与 100TB roadmap | 当前收入 `0` | `0%` | 影响长期路线和客户锁定，不影响 NTM 基准收入 | D | 不进入 NTM 基准 | 远期期权和 2027/2028 qualification 跟踪 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 STX 份额、收入确认、利润率或公司总收入。当前需求锚使用 FY2026Q3 nearline `175EB`、Data Center 收入 `$2.500B`、行业冷温对象存储 attach、AI 数据中心存储订单池、客户 qualification 和正常替换周期。需求变化以“相对当前预期”判断；即使绝对需求增长，只要低于 FY2026Q4 指引、nearline allocation 和 FY2027 正常增长路径，也归入悲观需求。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Data Center nearline HDD + systems 汇总锚 | FY2026Q3 nearline `175EB`，Data Center `$2.500B`，近 `90%` HDD EB 发往数据中心客户 | NTM nearline EB 仅中低双位数增长，客户消化前期订单，部分项目通电/验收延后 | NTM nearline EB 约 `+20-30%`，Q4 指引兑现，FY2027 维持 sequential growth | EB `+35-50%`，客户继续锁定 CY2027 supply，ASP/mix 稳中上行 | EB `+55-80%`，AI 数据保留政策非线性上修，主权云/NeoCloud 同步抢供给 | 从 FY2026Q3 年化约 `700EB` 到 NTM 基准约 `850-950EB`，乐观可接近 `1.1ZB` | 悲观低于当前预期；基准符合偏强预期；乐观和极度乐观高于预期 | 支持：capacity 几乎分配至 CY2027、HDD 行业供给集中。反证：nearline lead time 缩短、云 CapEx 下修、QLC SSD 提前替代温层 |
+| Mozaic 3+ 30/32/36TB HAMR | 已向多数 leading global cloud customers 产生收入；30TB+ 是 2026 主力高容量层 | 需求仍增长但被 Mozaic 4+ 过快替代，或客户延长 24/28TB 使用 | 继续承担 FY2026Q4-FY2027H1 主体 HAMR EB，随已认证客户正常放量 | 更多企业/OEM/edge 高容量需求外溢，价格韧性高 | 如果 Mozaic 4+ 供给不足，Mozaic 3+ 被迫长期维持高位 | 产品级 EB 未披露；收入需求池从当前估算季度 `$0.9-1.6B` 支撑 NTM `$5.0-6.5B` 基准 | 基准符合预期；乐观为高容量供需紧张延长 | 支持：已产生收入且客户覆盖广。反证：更高容量 SKU 替代导致单独增长放缓 |
+| Mozaic 4+ 40/44TB HAMR | 2026-03 官方披露两家 hyperscale production，FY2026Q3 late March 开始收入出货 | 客户 qualification 只限两家，量产爬坡慢，NTM 仍是低个位数收入占比 | 两家客户正常 ramp，更多客户 qualification 推进，FY2027 前三季成为显性增量 | 40/44TB 被更多 CSP 当作主力 SKU，客户为 slot/power/TB 溢价 | 40/44TB 在 CY2026H2 成为高容量 EB 主力，供给持续不够 | 从 FY2026Q3 `<$0.2B` 到 NTM 基准 `$2.0-3.5B`，乐观 `$3.5-5.5B` | 基准高于当前低基数但有生产证据；极度乐观显著高于当前预期 | 支持：两家 production、最高 44TB、每 EB 部署效率提升。反证：HAMR 可靠性、良率、field return 或客户验收延迟 |
+| Legacy high-capacity PMR/ePMR/SMR nearline | 仍支撑 FY2026Q3 Data Center 收入的一部分，满足已成熟 cold/warm 对象池 | 客户转向更高容量，legacy 价格下行且份额被 Mozaic 替代 | 绝对需求持平到小幅增长，作为补充供给池 | Mozaic 4+ 受限时 legacy 维持较高出货和价格 | 只有在 HAMR ramp 延迟且总需求极强时才上修 | NTM 收入需求池约 `$3.0-4.0B` 基准，较当前年化大体持平或下降 | 基准为符合预期但结构占比下降 | 支持：成熟认证和客户切换成本。反证：客户优先高 TB/drive，低容量盘 $/TB 压力 |
+| Exos systems / CORVAULT / JBOD / storage systems | Data Center 口径内可能包含 systems，但未单列；对象存储容量节点需求提升 | 普通硬件系统被 hyperscaler 自研或 OEM/ODM 压价 | 随 HDD 介质正常 attach，小幅增长 | 客户要求 turnkey capacity rack，系统 attach 上升 | 若主权云/企业 AI 快速自建对象存储，系统需求明显上修 | 产品级无法可靠量化；NTM 基准约 `$0.6-1.0B` | 基准符合当前可见路径；乐观需要客户项目证据 | 支持：对象存储扩容需要系统集成。反证：STX 不控制对象存储软件高毛利层 |
+| Edge IoT / NAS / surveillance / consumer | FY2026Q3 `$0.612B`，YoY `+12%`，QoQ `+2%` | 消费/渠道疲弱，高容量供给优先云客户，Edge 低个位数增长或下滑 | 正常替换周期，NAS/surveillance 小幅增长 | 私有 RAG、视频 AI 和高容量 NAS 拉动高个位数到低双位数增长 | 边缘视频/企业私有 AI 显著放量，但对公司总需求仍是辅助 | NTM 基准 `$2.4-2.8B`，相对 Q3 年化 `$2.45B` 变化有限 | 基准符合预期；乐观只影响公司小部分收入 | 支持：官方 Edge 收入可见。反证：不是 AI 数据中心核心瓶颈，且渠道周期性更强 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断需求中有多少能进入 STX NTM 收入表，以及当前可收入化基数来自收入表、分部披露、订单/客户项目、产能/认证还是主题相关。公司能参与 AI 数据增长，不等于可确认收入；客户 CapEx、AI 存储 TAM、每 MW attach、项目总预算都不得直接转为 STX 收入。Data Center 汇总锚是 A 级收入表口径；Mozaic 3+/4+ 产品拆分是模型估算，进入基准时受 A 级 Data Center 收入约束。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Data Center nearline HDD + systems 汇总锚 | FY2026Q3 官方 Data Center `$2.500B`，Q3 nearline `175EB`；FY2026Q4 公司总收入指引 `$3.45B +/- $0.10B` | 直接 | 高容量 HDD mix 驱动高毛利；systems 毛利低于介质 | `$10.3-11.5B` | `$12.5-13.5B` | `$14.5-16.0B` | `$17.0-19.0B` | 基准符合偏强订单/指引路径；悲观低于当前预期 | A/B | 是 | 收入表分部、nearline EB、capacity allocation、Q4 指引 | 作为公司 NTM 主约束，不与子产品重复加总 |
+| Mozaic 3+ 30/32/36TB HAMR | 未单列收入；FY2026Q3 模型估算 `$0.9-1.6B`；管理层披露 Mozaic 向多数 leading cloud customers 产生收入 | 直接 | 高毛利、成熟 HAMR，受益于价值定价和高利用率 | `$4.2-5.3B` | `$5.0-6.5B` | `$5.5-7.0B` | `$6.0-7.5B` | 基准符合当前 HAMR ramp；极度乐观更多是 Mozaic 4+ 受限时的上限 | B/C | 是，折扣纳入 | 客户收入已发生但产品金额未披露；用 Data Center A 级锚校准 | NTM 主体收入之一，但产品级金额不可独立精确验证 |
+| Mozaic 4+ 40/44TB HAMR | FY2026Q3 late March 小量，估算 `<$0.2B`；官方披露两家 hyperscale production | 直接 | 最高毛利弹性；容量/TB、W/TB、slot/TB 提升带来定价权 | `$0.8-1.6B` | `$2.0-3.5B` | `$3.5-5.5B` | `$5.5-8.0B` | 基准已高于当前低基数；乐观/极度乐观要求更多客户和良率证据 | B/C | 是，小比例折扣进入 | 两家客户 production 和 volume shipping；但更多客户确认节奏未披露 | NTM 增量核心，不能把 44TB TAM 全部当收入 |
+| Legacy high-capacity PMR/ePMR/SMR nearline | 未单列收入；FY2026Q3 模型估算 `$0.7-1.2B` | 直接 | 毛利仍高于历史消费盘，但低于 40/44TB HAMR 上行弹性 | `$3.8-4.8B` | `$3.0-4.0B` | `$2.5-3.5B` | `$2.0-3.0B` | 基准为结构占比下降但收入仍可见 | C | 是，作为 Data Center 中成熟供给池 | 成熟客户认证、现有出货、替换周期 | NTM 现金流底座，增长贡献低于 HAMR |
+| Exos systems / CORVAULT / JBOD / storage systems | 未单列；估算 FY2026Q3 `$0.1-0.3B` | 直接但部分由 HDD 介质拉动 | 硬件系统毛利低于高容量盘；可提高粘性 | `$0.4-0.8B` | `$0.6-1.0B` | `$0.9-1.4B` | `$1.2-2.0B` | 基准略高于当前 run-rate；乐观需客户 turnkey 证据 | C | 是，小项折扣进入 | Data Center 口径内 systems 可见但不单列 | NTM 小项，不作为公司上修主因 |
+| Edge IoT / NAS / surveillance / consumer | FY2026Q3 官方 Edge IoT `$0.612B`，YoY `+12%` | 直接 | 毛利低于高容量 Data Center；渠道和消费周期更强 | `$2.2-2.7B` | `$2.4-2.8B` | `$2.7-3.2B` | `$3.0-3.6B` | 基准符合正常替换；乐观仍是辅助项 | A | 是 | 官方分部收入，正常替换周期 | NTM 稳定项，不应被 AI 叙事大幅上调 |
+| Mozaic 5 / 50TB 与 100TB roadmap | 当前收入 `0`，qualification shipment 目标偏 2027 late | 远期直接 | 若成功，可延长容量路线，但 NTM 无收入确认 | `0` | `0` | `<$0.2B` | `$0.2-0.5B` | 不是当前预期收入，只是远期期权 | D | 否 | 只有路线图和未来 qualification 时间表 | 排除出 NTM 基准，移入附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求和收入基数出发，判断每个重要产品在 NTM 内能给 STX 贡献多少收入、毛利/经营利润方向和现金流质量。产品利润贡献因公司未披露产品级毛利率，使用毛利贡献区间和经营利润方向估算；所有产品级收入区间受 Data Center 汇总锚约束，不可机械相加。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Data Center nearline HDD + systems 汇总锚 | 悲观 | `$10.3-11.5B` | 毛利约 `$4.4-5.2B`，经营杠杆低于 Q4 指引 | GM `42-46%`，OM 被拉回低到中 30% | 低于当前预期，但仍增长 | Q3 DC `$2.5B`、Q4 指引高；悲观来自确认延期 | 保留 | 云 CapEx/通电延迟、HAMR 良率、QLC 替代 |
+| Data Center nearline HDD + systems 汇总锚 | 基准 | `$12.5-13.5B` | 毛利约 `$6.1-6.9B`，经营利润率接近/高于 Q4 implied level | GM `48-51%`，OM `39-43%` | 符合偏强当前预期 | nearline capacity 几乎分配至 CY2027，FY2027 末 BTO 合同谈判 | 保留 | 不能把长约等同当季收入；仍需交付、验收和应收回款 |
+| Data Center nearline HDD + systems 汇总锚 | 乐观 | `$14.5-16.0B` | 毛利约 `$7.7-8.8B`，现金流强 | GM `51-54%`，OM `43-47%` | 明显高于当前预期 | 40/44TB 客户扩展，ASP/mix 均强 | 保留 | 若客户双供或 WD/Toshiba 追赶，价格弹性受限 |
+| Data Center nearline HDD + systems 汇总锚 | 极度乐观 | `$17.0-19.0B` | 毛利约 `$9.5-11.0B` | GM `55%+` 才能成立，OM 接近高 40% | 只作为 NTM 上限 | AI 数据留存、客户锁货、供给纪律和执行质量同时突破 | 下移为低可信上限 | 任一环节缺证据即降为乐观上限 |
+| Mozaic 3+ 30/32/36TB HAMR | 悲观 | `$4.2-5.3B` | 毛利约 `$2.0-2.6B` | 高于公司历史均值但低于当前乐观 mix | 略低于预期 | 已有客户，但被 Mozaic 4+ 或供给约束分流 | 保留 | 产品级收入未披露；单独金额估算不可靠 |
+| Mozaic 3+ 30/32/36TB HAMR | 基准 | `$5.0-6.5B` | 毛利约 `$2.5-3.4B` | 稳定高毛利，规模效应正常兑现 | 符合当前预期 | 已向多数 leading cloud customers 产生收入 | 保留 | 如果 40/44TB 更快成为主力，3+ 收入增速放缓 |
+| Mozaic 3+ 30/32/36TB HAMR | 乐观 | `$5.5-7.0B` | 毛利约 `$3.0-4.0B` | 高位维持 | 高于预期 | 更多企业/OEM/edge 高容量认证，客户继续抢 30TB+ | 保留 | 乐观收入不得与 Mozaic 4+ 重复计入同一客户预算 |
+| Mozaic 3+ 30/32/36TB HAMR | 极度乐观 | `$6.0-7.5B` | 毛利约 `$3.4-4.6B` | 维持高位但非公司最大增量 | 上限 | Mozaic 4+ ramp 受限时 3+ 反而延长短缺 | 仅作跟踪 | 极度乐观不是 3+ 与 4+ 同时无限放大 |
+| Mozaic 4+ 40/44TB HAMR | 悲观 | `$0.8-1.6B` | 毛利约 `$0.4-0.8B` | 仍高，但 ramp 成本和良率拖累 | 低于当前乐观叙事 | 只有两家 production，更多客户未完全披露 | 保留 | HAMR 可靠性、field return、客户 qualification 延迟 |
+| Mozaic 4+ 40/44TB HAMR | 基准 | `$2.0-3.5B` | 毛利约 `$1.1-2.0B` | 高于公司平均，是毛利扩张主因 | 符合可证据化上修 | 两家 hyperscaler volume shipping，broader availability planned | 保留 | 从 production 到多客户大规模收入仍需季度验证 |
+| Mozaic 4+ 40/44TB HAMR | 乐观 | `$3.5-5.5B` | 毛利约 `$2.0-3.3B` | GM 上行，OM 明显受益 | 高于当前预期 | 更多 CSP qualification，客户为 slot/power/TB 支付溢价 | 保留 | WD/Toshiba 追赶和客户双供会压定价 |
+| Mozaic 4+ 40/44TB HAMR | 极度乐观 | `$5.5-8.0B` | 毛利约 `$3.4-5.2B` | 只有良率、价格、供给和客户扩展同时成立才可达 | 极高上限 | 40/44TB 成为 FY2027 主要 EB 增量，供给持续短缺 | 下移为极度乐观上限 | 缺少全客户 qualification 和产品级 backlog 金额 |
+| Legacy high-capacity PMR/ePMR/SMR nearline | 悲观 | `$3.8-4.8B` | 毛利约 `$1.5-2.0B` | mix 下移，价格压力上升 | 低于公司质量预期但仍支撑收入 | 成熟盘继续发货 | 保留 | 客户转向更高容量或 QLC warm tier |
+| Legacy high-capacity PMR/ePMR/SMR nearline | 基准 | `$3.0-4.0B` | 毛利约 `$1.2-1.8B` | 结构占比下降，利润率不再扩张 | 符合预期 | 作为已认证供给池和现金流补充 | 保留 | 与 Mozaic 3+/4+ 替代关系强 |
+| Legacy high-capacity PMR/ePMR/SMR nearline | 乐观 | `$2.5-3.5B` | 毛利约 `$1.0-1.6B` | 价格维持但占比下降 | 中性偏高 | 总需求太强时 legacy 也被吸收 | 保留 | 乐观不等于长期结构更好 |
+| Legacy high-capacity PMR/ePMR/SMR nearline | 极度乐观 | `$2.0-3.0B` | 毛利约 `$0.8-1.4B` | 收入不是非线性主引擎 | 非主上限 | 作为供给紧张时的补充 | 仅作跟踪 | 高容量 HAMR 才是极度乐观利润核心 |
+| Exos systems / CORVAULT / JBOD / storage systems | 悲观 | `$0.4-0.8B` | 毛利约 `$0.1-0.3B` | 低于 HDD 介质 | 低于预期 | 硬件系统被客户/OEM 自研压价 | 保留 | 软件价值不在 STX 手里 |
+| Exos systems / CORVAULT / JBOD / storage systems | 基准 | `$0.6-1.0B` | 毛利约 `$0.2-0.4B` | 小幅改善 | 符合预期 | 随对象存储容量节点增长 | 保留 | 未披露订单和产品收入 |
+| Exos systems / CORVAULT / JBOD / storage systems | 乐观 | `$0.9-1.4B` | 毛利约 `$0.3-0.6B` | attach 提升 | 高于预期但仍小项 | turnkey capacity rack 需求增强 | 保留 | 低毛利 pass-through 不能大幅推升公司利润 |
+| Exos systems / CORVAULT / JBOD / storage systems | 极度乐观 | `$1.2-2.0B` | 毛利约 `$0.4-0.9B` | 若软件/服务 attach 才显著改善 | 上限 | 主权云/企业 AI 自建对象存储 | 移入附录 | 缺少公司特定客户和毛利披露 |
+| Edge IoT / NAS / surveillance / consumer | 悲观 | `$2.2-2.7B` | 毛利约 `$0.7-1.0B` | 低于 Data Center，渠道压力 | 低于当前预期或只略增 | Q3 Edge YoY 仅 `+12%`、QoQ `+2%` | 保留 | 消费/渠道周期、云客户优先拿高容量供给 |
+| Edge IoT / NAS / surveillance / consumer | 基准 | `$2.4-2.8B` | 毛利约 `$0.8-1.1B` | 稳定但不扩张 | 符合预期 | 官方收入可见，正常替换 | 保留 | 不能把边缘 AI 叙事当主收入 |
+| Edge IoT / NAS / surveillance / consumer | 乐观 | `$2.7-3.2B` | 毛利约 `$1.0-1.3B` | 高容量 NAS mix 略改善 | 小幅高于预期 | 私有 RAG、视频 AI、NAS 高容量升级 | 保留 | 对公司整体贡献有限 |
+| Edge IoT / NAS / surveillance / consumer | 极度乐观 | `$3.0-3.6B` | 毛利约 `$1.1-1.5B` | 仍不是最高毛利层 | 低可信上限 | 边缘视频/企业私有 AI 同时放量 | 仅作跟踪 | 缺少 NTM 大订单和客户项目证据 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、非 GAAP 净利润和自由现金流方向；不讨论市场定价。汇总时已避免把 Data Center 汇总锚与 Mozaic 子产品重复相加。绝对增速以 TTM `$11.010B` 为基准；相对预期以 FY2026Q4 指引、FY2026 隐含收入 `$12.016B`、Q4 指引 run-rate `$13.8B`、公司未来几年至少 `20%` 年收入增长目标和 nearline capacity allocation 为锚。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$12.8-14.2B` | `+16-29%` | 低于当前偏强预期；仍高于 FY2026 隐含收入但低于 FY2027 正常 ramp | `42-46%` | `30-35%` | EBITDA 无法可靠量化；非 GAAP 净利润约 `$3.0-4.0B` | 正 FCF，但从 Q3 高点回落，约 `$2.4-3.4B` | 中 | Mozaic 4+ 爬坡慢、客户上电/验收延迟、legacy mix 占比高、QLC 替代部分 warm tier |
+| 基准公司 | `$15.0-16.0B` | `+36-45%` | 符合当前强订单和指引路径，略高于单纯 `20%` 年增长目标 | `48-51%` | `39-43%` | EBITDA 无法可靠量化；非 GAAP 净利润约 `$4.8-5.8B` | 强正 FCF，约 `$4.0-5.0B`，可继续去杠杆/分红/回购 | 中高 | 需求真实但必须转成季度出货；40/44TB qualification 和良率是核心 |
+| 乐观公司 | `$16.5-18.0B` | `+50-63%` | 高于当前预期，要求多客户 40/44TB ramp 和价格/mix 同步强 | `51-54%` | `43-47%` | EBITDA 无法可靠量化；非 GAAP 净利润约 `$5.8-7.1B` | FCF 约 `$4.8-6.2B`，但应收和库存波动加大 | 中 | 供给可用性、客户双供、WD/Toshiba 追赶、云厂项目交付节奏 |
+| 极度乐观公司 | `$18.5-21.0B` | `+68-91%` | 显著高于当前预期；需求、公司捕获、利润率和执行必须同时突破 | `54-58%` | `47-52%` | EBITDA 无法可靠量化；非 GAAP 净利润约 `$7.1-9.2B` | FCF 约 `$6.0-8.0B`，但营运资本和 capex 执行风险最高 | 低到中 | 极度依赖 40/44TB 快速成为主力、客户不延期、HAMR field reliability 无异常、行业供给继续紧 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。正向证据必须指明提升的是需求、收入基数、产品贡献、公司利润还是执行可信度；反证只在实际影响层级处理一次，不把同一风险在多个步骤重复扣减。市场价格、估值倍数和股价反应不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026Q3 收入 `$3.112B`、Data Center `$2.500B`、FY2026Q4 指引 `$3.45B +/- $0.10B` | 收入基数、公司汇总 | 把公司基准收入锚从 FY2026 `$12.016B` 推向 NTM `$15.0-16.0B` | 支持 GM/OM 高位延续 | Q3 FCF `$953M` 证明利润可转现金，但不能年化无折扣 | 基准保留 |
+| nearline `175EB`、Data Center YoY `+55%`、capacity 几乎分配到 CY2027 | 需求、收入基数、执行可信度 | 支持 Data Center NTM 高增长 | 高容量 mix 支持毛利率 | 长约/BTO 提高可见度，但交付和验收仍决定确认 | 基准保留，乐观保留 |
+| Mozaic 4+ 两家 hyperscale production，最高 44TB | 产品贡献、利润率 | 支持 Mozaic 4+ 从低基数进入 NTM 收入 | 最高毛利弹性来自 40/44TB | 良率和 field reliability 是执行关键 | 基准小比例纳入，乐观保留 |
+| Mozaic 4+ 更多客户 qualification 未完全披露 | 产品贡献、执行可信度 | 限制极度乐观收入直接进入基准 | 限制 GM `54%+` 的可信度 | 若客户认证延后，收入顺延而非消失 | 极度乐观下移为上限 |
+| QLC SSD / warm AI data lake 替代 | 需求风险、产品 mix | 限制 HDD 在 warm tier 的长期 TAM | 若 HDD 保 $/TB 优势则影响有限；若电力/slot 更紧则压价格 | 客户可能把增量转向 SSD，HDD 订单可延期 | 在第一步需求处理，不在公司利润重复扣减 |
+| 云 CapEx、NeoCloud 融资和数据中心上电节奏 | 需求与收入确认 | 影响出货时间和季度确认 | 若订单延期，工厂利用率和 mix 受压 | 应收、库存、验收和客户付款节奏波动 | 悲观保留；不重复作为 Mozaic 技术风险 |
+| Edge IoT 低增长 | 公司组合 | 稳定项，不足以驱动公司乐观 | 毛利低于 Data Center，mix 上行有限 | 渠道周期可能拖累库存 | 在第四步公司组合处理，不重复扣需求端 |
+| 客户双供和 WDC/Toshiba 追赶 | 份额、价格、利润率 | 限制 STX 长期份额和 ASP | 压缩 HAMR 溢价和极度乐观 GM | 客户长约可能重新议价 | 在第三步份额/价格处理 |
+| Mozaic 5 / 50TB roadmap | 远期期权 | NTM 基准收入为 `0` | 不影响 NTM 利润率 | 可提高长期路线可信度 | 移入附录/仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 需求仍增长但低于当前强预期，NTM 收入 `$12.8-14.2B` | A 级收入锚和 Q4 指引使收入底部较高 | 云上电延期、Mozaic 4+ qualification 慢、QLC 替代 warm tier、legacy mix 回升 | 保留 | 悲观公司情景 | 中 | 云项目延期只在收入确认层处理，不再同时作为需求坍塌和利润率双重扣减 |
+| 基准 | Q4 指引兑现，Data Center normal ramp，NTM 收入 `$15.0-16.0B` | FY2026Q3 财报、Data Center `80%`、nearline `175EB`、allocation 到 CY2027、Q4 指引 | 产品级 Mozaic 收入未单列，C 级拆分需折扣 | 保留 | 最可能经营情景 | 中高 | 产品拆分不确定不等于公司 Data Center 锚不可信 |
+| 乐观 | 多客户 40/44TB ramp、ASP/mix 强，NTM 收入 `$16.5-18.0B` | Mozaic 4+ 两家 production、行业 HDD 供给集中、AI 冷温数据需求增强 | 客户双供、WD/Toshiba 追赶、QLC warm tier 替代、项目验收顺延 | 保留 | 有证据的 upside 情景 | 中 | 竞争追赶只限制价格/份额，不重复下调总行业需求 |
+| 极度乐观 | 需求、捕获、利润率和执行同时突破，NTM 收入 `$18.5-21.0B` | AI 数据保留、主权云/NeoCloud、40/44TB 效率提升可支持上限 | 缺少全客户 qualification、产品级 backlog、HAMR 长期 field 数据和客户不延期证据 | 下移 | 极度乐观上限，部分假设移入附录跟踪 | 低到中 | 不把 Mozaic 5 / 50TB 远期期权纳入 NTM 基准，也不把同一客户预算在 Mozaic 3+ 和 4+ 重复计入 |
+
+## 8. 结论
+
+- 最可能情景：基准情景。STX 的 NTM 主线不是“AI 题材映射”，而是已经在 FY2026Q3 收入表、Data Center 分部、nearline EB、Q4 指引和客户 production 中可见的高容量 HDD 供需重估。合理主口径为 NTM 收入 `$15.0-16.0B`、毛利率 `48-51%`、经营利润率 `39-43%`、非 GAAP 净利润约 `$4.8-5.8B`、FCF 约 `$4.0-5.0B`。
+- 乐观情景成立条件：Mozaic 4+ 40/44TB 从两家 hyperscaler 扩展到更多 leading CSP；客户继续接受高容量 $/TB 或价值定价；Data Center sequential growth 不被上电/验收拖慢；Edge IoT 不明显拖累；毛利率维持 `51%+`。
+- 极度乐观情景成立条件：AI 多模态、agent、合成数据和主权云把 cold/warm storage attach 非线性上修；STX 40/44TB 良率、可靠性、产能和多客户 qualification 同时顺利；客户不因融资、电力或机房交付延期；WD/Toshiba 未快速削弱 STX 的供给稀缺和定价权。该情景可用于上限校准，不应作为基准。
+- 悲观情景触发条件：nearline lead time 缩短、Seagate Data Center revenue sequential growth 停滞、FY2027 指引低于 Q4 run-rate 正常延伸、Mozaic 4+ 客户数不扩、HAMR field reliability/RMA 异常、云 CapEx 或 NeoCloud 融资下修、QLC SSD 在 warm tier 更快替代 HDD。
+- 后续跟踪数据：每季 Data Center revenue、nearline EB、non-GAAP GM/OM、FY2027 revenue guide、Mozaic 4+ customer qualification 数、40/44TB shipment mix、purchase order cancellation fees、库存、应收账款/DSO、FCF、WD/Toshiba 高容量进度、QLC 122/245TB OEM qualification、hyperscaler CapEx 和 AI data center 上电节奏。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Seagate FY2026Q3 期间截止 2026-04-03，财报发布 2026-04-28；Mozaic 4+ 官方公告日期 2026-03-03；本报告写作日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - `公司调研/AI服务器_存储_EMS/STX_Seagate_Technology_公司调研_2026-06-11.md`
+  - Seagate FY2026Q3 results, 2026-04-28: https://investors.seagate.com/news/news-details/2026/Seagate-Technology-Reports-Fiscal-Third-Quarter-2026-Financial-Results/default.aspx
+  - Seagate Mozaic 4+ 44TB announcement, 2026-03-03: https://investors.seagate.com/news/news-details/2026/Seagate-Delivers-Industrys-Highest-Capacity-Hard-Drives-with-Next-Generation-Mozaic-4/default.aspx
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 隐含收入：FY2026Q1-Q3 `$8.566B` + FY2026Q4 指引中点 `$3.45B` = `$12.016B`。
+  - FY2026Q4 指引年化 run-rate：`$3.45B × 4 = $13.8B`。
+  - NTM 基准 `$15.0-16.0B` 高于 FY2026 指引年化起点，原因是 Q4 指引、allocation、Mozaic 4+ ramp 和 FY2027 sequential growth；该口径不是长期 run-rate，也不是 FY2027 全年指引。
+  - Mozaic 5 / 50TB、100TB roadmap、更多对象存储系统 attach 均列远期期权或附录跟踪，不进入 NTM 基准。
+- 主要来源：
+  - `行业调研/AI服务器_存储_芯片/行业调研_HDD、对象存储与冷温数据存储_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-06-10.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/产业背景/全球AI需求与Token经济框架_2026-06-11.md`
+  - Seagate official investor relations pages listed above.
+

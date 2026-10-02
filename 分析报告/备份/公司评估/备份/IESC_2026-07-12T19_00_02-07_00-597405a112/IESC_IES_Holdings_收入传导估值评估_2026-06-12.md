@@ -1,0 +1,173 @@
+# 公司收入传导与价值传导评估：IES Holdings（IESC）
+
+报告日期：2026-06-12  
+公司代号：IESC  
+公司名称：IES Holdings, Inc.  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM = 2026Q3-FY2027Q2 附近的未来 12 个月经营窗口，即从 FY2026 Q2 已披露结果之后向后看 4 个季度；FY2026、FY2027、项目全周期收入、长期 run-rate 和远期期权只作补充。  
+资料边界：使用 `公司调研/`、`行业调研/` 与 IES Holdings 官方公告、SEC/10-Q、公司产品页和 IR 演示材料；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、模型比较或公司排序结果。  
+结论边界：本文只评估收入、利润率、现金流、订单可见度和执行质量的经营传导，不输出目标价、投资评级、股价区间或估值倍数判断。文件名中的“估值评估”为自动化命名，不代表本文做证券市场估值。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM，即 FY2026 Q2 已披露结果之后未来 12 个月。FY2026 下半年、FY2027、长期 AI 园区、800VDC/MV UPS、项目全周期金额和远期 run-rate 只用于校验，不替代 NTM。
+- 当前收入基准、指引和 run-rate：IES Holdings 不给传统全年收入或 EPS 指引。当前经营锚为 FY2026 Q2 收入 `9.742 亿美元`、经营利润 `1.123 亿美元`、调整后 EBITDA `1.339 亿美元`；FY2026 前 6 个月收入 `18.452 亿美元`、经营利润 `2.100 亿美元`、调整后 EBITDA `2.477 亿美元`。Q2 年化 revenue run-rate 约 `38.97 亿美元`，TTM 收入约 `36.33 亿美元`。
+- 订单和可见度锚：FY2026 Q2 期末 RPO `23.471 亿美元`，record backlog `38.621 亿美元`。backlog 中 `15.150 亿美元`为已签协议和 LOI 但开工前不可强制执行的安排，因此 backlog 强于普通 pipeline，但证据等级低于 RPO。非住宅三条数据中心相关分部 Communications、Infrastructure Solutions、Commercial & Industrial 合计 backlog `33.795 亿美元`，约占总 backlog `87.5%`。
+- 重要产品/业务线：Communications 低压/光纤/技术基础设施；Infrastructure custom power、generator enclosure、fuel tank、bus duct 和电力设备服务；Commercial & Industrial 数据中心电气/MEP 施工；Residential 住宅电气/HVAC/管道抵消项；Qypsys/DAS/private wireless/fiber LAN 附加模块；Gulf Island/Greiner 大型钢结构和预制 power island 远期期权。
+- NTM 公司收入四情景：悲观 `38.0-42.0 亿美元`；基准 `44.0-48.0 亿美元`；乐观 `51.0-57.0 亿美元`；极度乐观 `62.0-70.0 亿美元`。基准相对 TTM 约 `+21%-32%`，主要来自 backlog 正常转收入、C&I 6-12 个月执行、Infrastructure 产能爬坡和 Communications 持续数据中心需求。
+- 利润或 EBITDA 四情景：悲观调整后 EBITDA `3.9-4.8 亿美元`、调整后净利润 `2.5-3.3 亿美元`；基准调整后 EBITDA `5.2-6.4 亿美元`、调整后净利润 `3.4-4.5 亿美元`；乐观调整后 EBITDA `6.9-8.4 亿美元`、调整后净利润 `4.7-5.9 亿美元`；极度乐观调整后 EBITDA `9.0-11.0 亿美元`、调整后净利润 `6.0-7.8 亿美元`。净利润口径剔除市场able securities 未实现收益这类非经营波动。
+- 最大传导瓶颈：不是 AI 数据中心需求池，而是 `RPO/backlog -> 客户 NTP/现场 readiness -> 关键电气设备和材料到货 -> 工厂/现场产能 -> installation/FAT/SAT/commissioning -> percentage-of-completion 收入确认`。
+- 最大利润率变量：Infrastructure custom power 是否保持 20%+ 分部经营利润率，C&I backlog 是否以高执行质量转收入，Communications 是否在低压/光纤/技术基础设施中保持稀缺团队溢价，以及固定价合同、人工、钢铜材料和收购整合是否侵蚀毛利。
+- 最大现金流变量：高增长下应收账款、合同资产、客户预付款、capex 和收购后整合投资。公司 Q2 已明确提高 2026 财年剩余期间资本开支展望；收入越快放量，短期自由现金流越可能被营运资本和扩产吞掉。
+- 可信度：基准为`中高`。总收入、分部收入、RPO/backlog、Q2 管理层评论和产品能力为 A/B 级证据；但 AI 数据中心独立收入、客户项目名、取消率、lead time、产品级毛利率和 Qypsys/Gulf Island 协同仍未披露，因此乐观为`中`、极度乐观为`低到中`。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Communications 低压/光纤/技术基础设施 | FY2026 Q2 分部收入 `3.677 亿美元`，Q2 年化 `14.71 亿美元`；Q2 backlog `13.773 亿美元`、RPO `9.541 亿美元` | Q2 收入 `37.7%`；backlog `35.7%` | 当前最大 AI 数据中心相关收入池；负责结构化布线、光纤、低压、网络、安防和技术系统交付 | A/B：收入表为 A，RPO/backlog 为 B；AI DC 占比为 C | 进入基准。用分部收入和 RPO/backlog 作主锚；AI DC 拆分保守处理 | Qypsys 私网/DAS/fiber LAN 大规模交叉销售、园区级低压通信标准化 |
+| Infrastructure custom power / generator enclosure / bus duct | FY2026 Q2 分部收入 `1.924 亿美元`，Q2 年化 `7.70 亿美元`；backlog `10.198 亿美元`、RPO `2.815 亿美元`；Gulf Island Q2 贡献收入 `3,750 万美元` | Q2 收入 `19.7%`；backlog `26.4%` | 直接对应数据中心 power bottleneck 的二阶受益：发电机外壳、fuel tank、bus duct、custom power、工业电力设备服务 | A/B/C：分部收入 A；backlog B；数据中心/custom power 拆分与标准化模块为 C | 进入基准，但对 backlog 中不可强制执行部分折扣；Gulf/Greiner 协同不全部前置 | 12.5/25/50MW power island、e-house、generator yard、预制 steel/power block |
+| Commercial & Industrial 数据中心电气/MEP 施工 | FY2026 Q2 分部收入 `1.265 亿美元`，Q2 年化 `5.06 亿美元`；backlog `10.824 亿美元`、RPO `8.396 亿美元` | Q2 收入 `13.0%`；backlog `28.0%` | Q2 收入尚未体现 backlog，管理层称增加的 backlog 会在未来 6-12 个月执行，是 NTM 最大弹性变量 | A/B：收入表 A，RPO/backlog B | 进入基准。按 6-12 个月执行节奏保守纳入；不把 backlog 全部线性转收入 | 高密 rack、液冷-ready hall、commissioning 与变更单带来的高毛利项目 |
+| Residential 住宅电气、HVAC、管道 | FY2026 Q2 分部收入 `2.876 亿美元`，Q2 年化 `11.50 亿美元`；backlog `3.826 亿美元`、RPO `2.719 亿美元` | Q2 收入 `29.5%`；backlog `9.9%` | 非 AI 主线，是低利润率抵消项；房屋开工疲弱和价格压力会稀释公司总利润率 | A/B | 进入公司总收入基准，但不作为 AI 增量；基准按低增长或小幅下滑处理 | 多户 backlog 改善可能利好 FY2027，但不进入 NTM 乐观核心 |
+| Qypsys / DAS / private wireless / fiber LAN | 未单独披露；公司调研估计年化小于 `0.4-0.8 亿美元`，并入 Communications | 小于公司收入 `2%` 估算 | 小基数附加模块，可能增强大型园区低压通信、DAS、wireless 和 fiber LAN 交叉销售 | C | 基准只小比例纳入 Communications，不额外加总；乐观以上需要客户项目证据 | 大型 AI 园区 private wireless/DAS/运维通信标准化 |
+| Gulf Island / Greiner 大型预制 power island 与钢结构制造 | Gulf Island Q2 并表收入 `3,750 万美元`；Greiner 未单独披露 | 目前小于公司收入 `5%` 估算 | 可能把 Infrastructure 从项目制 custom fabrication 推向可复制 power block，但 NTM 证据仍有限 | A for Gulf revenue；C for AI power block | Gulf Island 已并表进入 Infrastructure；AI power island 只按上限/跟踪处理 | 标准化 generator enclosure、fuel system、e-house、bus duct、steel module 和 field integration 一体化 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 IESC 份额、收入确认、利润率或公司层面收入利润汇总。需求单位采用 IT MW、facility-heavy capex、MEP/EPC 订单池、低压/通信点位、预制 power block、项目执行窗口和住宅开工等指标。所有情景均与当前需求锚比较，不把 AI 主题热度、客户总 CapEx 或行业 TAM 直接等同为公司收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Communications 低压/光纤/技术基础设施 | 本地行业报告估计美国 2026 AI IT-load equivalent 订单/建设约 `6.0-8.5GW`，facility-heavy capex `1,000-2,200 万美元/MW`；低压、消防、安全、控制和漏液检测约 `100-250 万美元/MW` | AI 数据中心仍增长，但电力接入/设备/客户 NTP 延后，使低压团队需求低于 backlog 隐含路径；项目排产后移 1-2 个季度 | 数据中心低压、光纤、网络路径、测试和移交流程按当前 backlog/RPO 正常推进；需求强但受现场 readiness 制约 | 多个 hyperscale/colo campus 同时赶工，低压/光纤团队稀缺，客户愿为 time-to-network 和验收窗口付加急溢价 | 500MW+/GW 级园区批量 NTP，低压通信、DAS、运维网络和测试文档标准化，IESC 可参与多园区复制 | 悲观：分部需求低于当前强订单路径；乐观：低压/技术基础设施需求比基准高 `20%-40%`；极度：高 `50%+` | 基准=符合当前行业和公司披露；乐观/极度=需要客户加速和重复项目 | 正向：Q2 Communications +35%、backlog `13.773 亿美元`；反证：客户项目未披露、低压不是核心 OEM、现场上电延误会拖累收入 |
+| Infrastructure custom power / generator enclosure / bus duct | 行业报告把电力接入、switchgear、UPS/BESS、busway/PDU、预制 e-house 和现场发电列为 2026-2027 最硬瓶颈；2026 全球 AI power-train 订单池估计 `380-650 亿美元` | 自备发电/预制 power island 项目因许可、发动机/开关柜交期或客户设计变更后移；custom fabrication 需求只按现有订单执行 | 发电机外壳、fuel tank、bus duct、custom power 和电力设备服务按当前 data center/custom power demand 正常增长；Gulf Island/Greiner 产能温和爬坡 | behind-the-meter power、generator yard 和 bus duct 需求加速，客户为短交期和 FAT 能力锁定 custom fabrication 产能 | IESC 形成若干 repeatable power island / generator enclosure / bus duct 标准包，成为多个 AI 园区合格供应商 | 悲观：需求仍高但转收入慢；乐观：custom power 需求较基准高 `30%-60%`；极度：小基数非线性放大 | 基准=符合 backlog/产能爬坡；极度=高于当前预期且需要客户标准化证据 | 正向：Infrastructure Q2 +64%、Gulf Island 扩产；反证：IESC 不卖核心发动机/UPS/变压器/switchgear，内容量受 OEM scope 限制 |
+| Commercial & Industrial 数据中心电气/MEP 施工 | 行业报告估计美国 2026 AI 数据中心建筑/土建/MEP 务实约 `310-550 亿美元`，2027 `430-780 亿美元`；EPC/MEP 2026 订单池约 `300-550 亿美元`、2027 `480-850 亿美元` | 数据中心/工业项目已 award 但因电力、设备或现场准备延迟，C&I backlog 转收入明显低于 6-12 个月路径 | 管理层所称 C&I backlog 在未来 6-12 个月正常执行，电气/MEP 施工 demand 强但按项目节点确认收入 | 大型 AI campus 加速开工，变更单、commissioning 和加急工程扩大 C&I scope，合格电工和项目经理成为瓶颈 | 多区域大型项目同时推进，IESC 扩张队伍但不牺牲安全和质量，C&I 从小分部跃升为公司主要增量 | 悲观：C&I 需求低于当前 backlog burn；乐观：NTM 需求/转收入高于基准 `35%-70%`；极度：高 `100%+` | 基准=符合管理层当前预期；乐观=客户加速和工种稀缺；极度=多条件同时突破 | 正向：C&I backlog `10.824 亿美元`、RPO `8.396 亿美元`；反证：Q2 C&I 收入仅 +1%，说明收入确认尚未放量 |
+| Residential 住宅电气、HVAC、管道 | 公司披露 Q2 Residential 收入同比 `-10%`，单户住宅价格压力、材料成本和开工疲弱；多户 backlog 开始改善但更多利好 FY2027 | 住宅开工和 builder 价格压力继续恶化，收入和 margin 双降 | 住宅业务低位稳定，单户弱、多户逐步修复，整体接近当前 run-rate | 多户 backlog 改善提前转收入，Plumbing/HVAC 扩张抵消单户压力 | 房屋开工和多户项目同时修复，但仍不是 AI 主线 | 悲观：收入较当前 run-rate 低 `5%-12%`；乐观：高 `5%-10%`；极度：高 `10%-15%` | 基准=低增长/稳定抵消；乐观也不改变 AI 传导主结论 | 正向：多户 backlog 改善；反证：builder 压价、材料成本、天气和利率 |
+| Qypsys / DAS / private wireless / fiber LAN | 大型园区、数据中心、工厂和 campus 运维需要 DAS、private wireless、fiber LAN；但公司未披露 Qypsys 收入、订单或客户名 | 交叉销售慢，Qypsys 主要维持传统无线/DAS 项目，小幅贡献 Communications | 并入 Communications 销售流程，作为低压通信附加模块温和增长 | AI 园区开始把 private wireless、DAS、fiber LAN 和运维通信纳入标准低压包 | 多园区重复项目使 Qypsys 成为 Communications 的小型高增模块 | 绝对需求无法可靠量化；公司收入贡献从小于 `0.5 亿美元`到乐观 `1 亿美元+` | 基准=小比例纳入；乐观/极度=需要客户订单证明 | 正向：2025 收购增强低压系统集成；反证：设备供应、运营商审批、细项收入未披露 |
+| Gulf Island / Greiner 预制 power island 与钢结构制造 | AI 数据中心正从现场拼装转向 e-house、power skid、generator yard、12.5/25/50MW block；但 IESC 未披露标准化 power block 订单 | 大型钢结构/预制需求主要停留在传统工业和能源客户，AI power island 订单未显性化 | Gulf Island/Greiner 支撑 Infrastructure custom power 和 generator enclosure，温和参与 AI 项目 | 数据中心客户扩大预制化和发电机岛需求，钢结构、enclosure、fuel system 和现场安装组合成更大 scope | IESC 把制造和现场施工闭环，形成 repeatable power island 标准包 | 悲观：只贡献并表收入；乐观：AI power module 收入高于当前可见路径；极度：小基数非线性上修 | 基准=已有产能并表；极度=远期期权，不代表当前预期 | 正向：Gulf 45 万平方英尺设施、Greiner 大型制造；反证：产品化程度、客户认证和标准型号未披露 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求能进入 IESC 的 NTM 收入表，以及当前可收入化基数；不预测增长，不判断利润率。必须区分“可参与需求”和“可确认收入”。公司披露分部收入、RPO 和 backlog，但不披露 AI 数据中心收入、bookings、客户名、取消率或 lead time；因此 A/B 级收入和 RPO 是基准主锚，C 级协同和主题映射只能折扣纳入或作为乐观/附录。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Communications 低压/光纤/技术基础设施 | Q2 收入 `3.677 亿美元`，Q2 年化 `14.71 亿美元`；RPO `9.541 亿美元`；backlog `13.773 亿美元`，其中不可强制执行协议/LOI `4.232 亿美元` | 直接。数据中心、e-commerce、高科技制造和企业园区低压/通信系统 | 人工、项目管理、测试文档和客户验收驱动利润；不是硬件 OEM 毛利 | `14.5-15.8 亿美元` | `15.8-18.0 亿美元` | `18.5-21.5 亿美元` | `22.5-25.5 亿美元` | 基准略高于 Q2 run-rate，符合 backlog/RPO；乐观需新增项目或更快 burn | A/B；AI DC 拆分为 C | 是 | 收入表、RPO/backlog、公司 data centers 和 technology infrastructure 产品页、Q2 管理层 data center 评论 | 作为公司 NTM 最大收入基数进入基准；不得把全部行业低压需求归为 IESC |
+| Infrastructure custom power / generator enclosure / bus duct | Q2 收入 `1.924 亿美元`，Q2 年化 `7.70 亿美元`；RPO `2.815 亿美元`；backlog `10.198 亿美元`，其中不可强制执行协议/LOI `7.383 亿美元` | 直接/间接。直接销售 custom power、enclosure、bus duct、电力设备服务；间接受益 onsite generation 和 data center power bottleneck | 当前分部经营利润率高；但关键设备 ASP 不属于 IESC，材料和收购整合影响利润 | `7.0-8.5 亿美元` | `8.7-10.8 亿美元` | `11.5-14.5 亿美元` | `15.0-19.0 亿美元` | 基准高于现有 Q2 run-rate但对非强制 backlog 折扣；极度只代表上限 | A/B/C | 是，保守纳入 | 分部收入、Gulf Island 并表、公司 custom power 和 data center 产品页、Infrastructure backlog | 进入基准；power island 标准化只进乐观/极度乐观 |
+| Commercial & Industrial 数据中心电气/MEP | Q2 收入 `1.265 亿美元`，Q2 年化 `5.06 亿美元`；RPO `8.396 亿美元`；backlog `10.824 亿美元`；管理层称增加 backlog 主要未来 6-12 个月执行 | 直接。数据中心电气、机械、维护和现场施工 | 项目执行、变更单、人工利用率决定利润；固定价和安全/质量风险高 | `5.0-6.5 亿美元` | `6.5-8.5 亿美元` | `9.0-11.5 亿美元` | `12.5-14.8 亿美元` | 基准高于 Q2 run-rate，符合 RPO 和 6-12 个月执行表述；乐观需收入加速验证 | A/B | 是 | 分部收入、RPO/backlog、Q2 管理层 backlog 执行说明 | NTM 弹性最大，进入基准但不把 backlog 全额一次性确认 |
+| Residential 住宅电气/HVAC/管道 | Q2 收入 `2.876 亿美元`，Q2 年化 `11.50 亿美元`；RPO `2.719 亿美元`；backlog `3.826 亿美元` | 直接，但与 AI 无关 | 低利润率，Q2 分部经营利润率约 `2.2%`，是总利润率稀释项 | `10.0-10.8 亿美元` | `10.6-11.7 亿美元` | `11.5-12.5 亿美元` | `12.0-13.0 亿美元` | 基准接近当前 run-rate；悲观低于当前预期但仍有收入底盘 | A/B | 是 | 分部收入、backlog/RPO、管理层 housing softness 评论 | 进入公司总收入，但作为抵消项，不进入 AI 增量 |
+| Qypsys / DAS / private wireless / fiber LAN | 未单独披露；估计年化低于 `0.4-0.8 亿美元`，并入 Communications | 直接作为低压通信附加模块，但细项不可分拆 | 可能有服务/集成毛利，但硬件可替代 | `0.25-0.45 亿美元` | `0.40-0.75 亿美元` | `0.80-1.40 亿美元` | `1.50-2.50 亿美元` | 基准为小比例辅助；乐观高于当前披露证据 | C | 小比例进入，且不额外加总 | 2025 收购和公司技术基础设施能力；无单独收入表 | 纳入 Communications 内，不单独增加公司总收入；极度乐观需客户项目 |
+| Gulf Island / Greiner 预制 power island 与钢结构模块 | Gulf Island Q2 贡献 `3,750 万美元`收入，Greiner 未单独披露；均并入 Infrastructure | 直接/间接。当前是制造产能和 custom power 扩展，不一定已是 AI 标准 power block | 制造和 FAT 可提升 margin，但整合、质量和物流风险高 | `0.8-1.8 亿美元` | `1.5-3.5 亿美元` | `3.5-6.5 亿美元` | `7.0-12.0 亿美元` | 基准只承认并表与可见 custom fabrication；极度是 NTM 上限 | A for Gulf revenue；C/D for AI power block | 只作为 Infrastructure 子集进入 | Gulf Island 并表、Gulf/Greiner 制造能力和行业预制化趋势 | 不额外加总；AI power island 标准化列为乐观/跟踪 |
+| 排除项：GPU、服务器、光模块、UPS、switchgear、变压器、发动机、燃气轮机、BESS 电芯、云服务收入 | IESC 不销售这些核心设备或服务；通常只参与安装、外壳、集成、维护或现场施工 | 间接或无关 | 核心硬件毛利属于 OEM，不属于 IESC | 0 | 0 | 0 | 0 | 不属于当前可确认收入 | E | 否 | 只有主题相关或同业映射 | 不进入 NTM 收入；只在后续跟踪中观察安装/外壳/集成机会 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内给 IESC 贡献多少收入和利润。不得把行业 TAM、客户总预算、项目总金额或远期 pipeline 直接写成公司收入。利润贡献为分部经营利润或子业务经营贡献近似区间；因公司未披露产品级毛利率，所有子业务利润均为基于分部利润率、业务属性和当前披露的推算口径。Qypsys 和 Gulf/Greiner 子项已包含在 Communications 或 Infrastructure 中，公司层面不重复加总。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Communications 低压/光纤/技术基础设施 | 悲观产品 | `14.5-15.8 亿美元` | 分部经营利润 `1.9-2.35 亿美元` | 经营利润率向 `13%-15%` 回落 | 低于当前强订单路径 | Q2 run-rate 约 `14.71 亿美元`，但客户现场和上电延后 | 保留悲观 | 客户项目名和 AI DC 独立收入未披露；低压工程可被大平台竞争 |
+| Communications 低压/光纤/技术基础设施 | 基准产品 | `15.8-18.0 亿美元` | 分部经营利润 `2.45-3.05 亿美元` | `15.5%-17.0%`，接近 FY2026 H1/Q2 | 符合当前预期 | Q2 revenue +35%，RPO `9.541 亿美元`，backlog `13.773 亿美元` | 保留基准 | 低压团队、测试验收窗口、现场多工种协调 |
+| Communications 低压/光纤/技术基础设施 | 乐观产品 | `18.5-21.5 亿美元` | 分部经营利润 `3.15-3.95 亿美元` | `17%-18.5%`，mix 和加急项目改善 | 高于当前预期 | 多园区重复项目、Qypsys 交叉销售、客户抢交付窗口 | 保留乐观 | 不能只用 hyperscaler capex 替代 IESC 订单 |
+| Communications 低压/光纤/技术基础设施 | 极度乐观产品 | `22.5-25.5 亿美元` | 分部经营利润 `3.8-4.85 亿美元` | 高位，但仍受人工和项目制限制 | NTM 上限 | 500MW+/GW 园区批量 NTP，低压/通信成为稀缺交付资源 | 保留为低可信上限 | 缺客户框架协议或订单披露时不能进入基准 |
+| Infrastructure custom power / generator enclosure / bus duct | 悲观产品 | `7.0-8.5 亿美元` | 分部经营利润 `1.20-1.70 亿美元` | `17%-20%`，低于当前高位 | 低于当前预期 | backlog 高但大量为不可强制执行协议/LOI；设备和许可拖累 | 保留悲观 | 不掌握发动机、UPS、变压器、switchgear 核心 ASP |
+| Infrastructure custom power / generator enclosure / bus duct | 基准产品 | `8.7-10.8 亿美元` | 分部经营利润 `1.85-2.50 亿美元` | `20%-23%`，产能爬坡和 pricing 支撑 | 符合当前可见路径 | Q2 Infrastructure +64%，Gulf Island 并表，custom engineered solutions demand 强 | 保留基准 | Gulf/Greiner/Arrow 整合、钢铜材料和 FAT/质量风险 |
+| Infrastructure custom power / generator enclosure / bus duct | 乐观产品 | `11.5-14.5 亿美元` | 分部经营利润 `2.65-3.75 亿美元` | `22%-25%`，高利用率和交期溢价 | 高于当前预期 | 自备发电、generator enclosure、bus duct、power enclosure 订单加速 | 保留乐观 | 如果 OEM 提供 turnkey package，IESC 内容量受限 |
+| Infrastructure custom power / generator enclosure / bus duct | 极度乐观产品 | `15.0-19.0 亿美元` | 分部经营利润 `3.60-5.00 亿美元` | `23%-26%`，需要标准化产品和强执行 | 上限 | IESC 成为若干 AI 园区 power island/电力模块标准供应商 | 保留为低可信上限 | 产品化程度和客户认证未披露 |
+| Commercial & Industrial 数据中心电气/MEP | 悲观产品 | `5.0-6.5 亿美元` | 分部经营利润 `0.45-0.75 亿美元` | `7%-10%`，项目延迟和成本估计压制 | 低于当前 backlog 隐含路径 | Q2 revenue 仅 +1%，说明收入确认尚未放量 | 保留悲观 | 设备到货、现场 readiness、劳动力、安全和 fixed-price 成本 |
+| Commercial & Industrial 数据中心电气/MEP | 基准产品 | `6.5-8.5 亿美元` | 分部经营利润 `0.75-1.15 亿美元` | `10%-13%`，低于 Q2 高点但好于普通施工 | 符合当前预期 | RPO `8.396 亿美元`，管理层称 backlog 未来 6-12 个月执行 | 保留基准 | backlog 不等于收入，percentage-of-completion 受项目节点影响 |
+| Commercial & Industrial 数据中心电气/MEP | 乐观产品 | `9.0-11.5 亿美元` | 分部经营利润 `1.20-1.70 亿美元` | `12%-15%`，变更单和高利用率改善 | 高于当前预期 | 大型 AI campus 加速、commissioning/变更单扩大 scope | 保留乐观 | 并行项目越多，质量和安全风险越高 |
+| Commercial & Industrial 数据中心电气/MEP | 极度乐观产品 | `12.5-14.8 亿美元` | 分部经营利润 `1.55-2.25 亿美元` | `12%-16%`，利润不与收入等比例上修 | 上限 | C&I backlog 继续增长且现场队伍扩张不损害 margin | 保留为低可信上限 | 劳动力、关键部件和客户验收任何一项不成立即下移 |
+| Residential 住宅电气/HVAC/管道 | 悲观产品 | `10.0-10.8 亿美元` | 分部经营利润 `0.10-0.25 亿美元` | `1%-2.5%` | 低于当前预期 | housing softness、builder price reduction、材料成本 | 保留悲观 | 非 AI 业务，可能稀释公司经营利润率 |
+| Residential 住宅电气/HVAC/管道 | 基准产品 | `10.6-11.7 亿美元` | 分部经营利润 `0.25-0.45 亿美元` | `2%-4%` | 符合当前低位稳定预期 | Q2 revenue `2.876 亿美元`，多户 backlog 改善但 FY2027 更明显 | 保留基准 | 单户住宅弱、价格压力 |
+| Residential 住宅电气/HVAC/管道 | 乐观产品 | `11.5-12.5 亿美元` | 分部经营利润 `0.50-0.75 亿美元` | `4%-6%` | 小幅高于当前预期 | 多户 backlog 提前转收入、Plumbing/HVAC 扩张 | 保留但低权重 | 不改变 AI 传导主线 |
+| Residential 住宅电气/HVAC/管道 | 极度乐观产品 | `12.0-13.0 亿美元` | 分部经营利润 `0.65-0.90 亿美元` | `5%-7%` | 上限 | 住宅开工和多户均修复 | 仅作跟踪 | 非 AI，且利润率仍低于三条非住宅主线 |
+| Qypsys / DAS / private wireless / fiber LAN | 悲观产品 | `0.25-0.45 亿美元`，包含在 Communications | 经营贡献 `0.03-0.06 亿美元` | 低到中等 | 低于预期 | 交叉销售慢、运营商审批和设备供应限制 | 保留悲观 | 细项未披露，不可额外加总 |
+| Qypsys / DAS / private wireless / fiber LAN | 基准产品 | `0.40-0.75 亿美元`，包含在 Communications | 经营贡献 `0.05-0.10 亿美元` | 稳定 | 符合小比例辅助预期 | Qypsys 并入 Communications，AI 园区通信附加需求 | 保留基准但低权重 | 缺客户名和订单 |
+| Qypsys / DAS / private wireless / fiber LAN | 乐观产品 | `0.80-1.40 亿美元`，包含在 Communications | 经营贡献 `0.10-0.22 亿美元` | 小幅改善 | 高于当前预期 | private wireless/DAS/fiber LAN 标准化 | 仅作乐观附加 | 设备和客户审批 |
+| Qypsys / DAS / private wireless / fiber LAN | 极度乐观产品 | `1.50-2.50 亿美元`，包含在 Communications | 经营贡献 `0.20-0.40 亿美元` | 改善但小基数 | 上限 | 多园区重复项目 | 仅作跟踪 | 缺披露，不进基准 |
+| Gulf Island / Greiner 预制 power island 与钢结构模块 | 悲观产品 | `0.8-1.8 亿美元`，包含在 Infrastructure | 经营贡献 `0.08-0.25 亿美元` | 整合期波动 | 低于预期 | Gulf Island 并表但 AI 标准模块未显性化 | 保留悲观 | 收购整合和传统工业 mix |
+| Gulf Island / Greiner 预制 power island 与钢结构模块 | 基准产品 | `1.5-3.5 亿美元`，包含在 Infrastructure | 经营贡献 `0.25-0.65 亿美元` | 正常爬坡 | 符合当前保守预期 | Gulf Q2 revenue `3,750 万美元`，Greiner/Gulf 增加制造能力 | 保留基准但不额外加总 | 客户 FAT、物流、质量 |
+| Gulf Island / Greiner 预制 power island 与钢结构模块 | 乐观产品 | `3.5-6.5 亿美元`，包含在 Infrastructure | 经营贡献 `0.65-1.30 亿美元` | 改善 | 高于当前预期 | AI data center power island 和 generator enclosure 需求加速 | 保留乐观上限 | 未披露标准设计和客户认证 |
+| Gulf Island / Greiner 预制 power island 与钢结构模块 | 极度乐观产品 | `7.0-12.0 亿美元`，包含在 Infrastructure | 经营贡献 `1.30-2.60 亿美元` | 高位但执行风险大 | 上限 | repeatable power block 形成标准供应 | 仅作跟踪/极度上限 | 任一核心环节缺证据即降为乐观或附录 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、调整后 EBITDA、调整后净利润和自由现金流方向。汇总时剔除 Qypsys、Gulf/Greiner 子项与所属分部的重复计算；不讨论市场定价、股价或估值倍数。绝对增速以 TTM 收入约 `36.33 亿美元`为比较基准；相对预期以 Q2 run-rate、RPO/backlog、管理层 6-12 个月执行表述和当前分部经营路径为锚。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `38.0-42.0 亿美元` | `+5%-16%` | 低于当前 backlog/RPO 和非住宅增长预期；绝对收入仍可能增长 | `23.5%-25.0%` | `8.5%-10.0%` | 调整后 EBITDA `3.9-4.8 亿美元`；调整后净利润 `2.5-3.3 亿美元` | 中性到小幅正；capex 与合同资产可能吞掉利润 | 中 | C&I backlog 转收入慢、Infrastructure 非强制 backlog 折扣、Residential 低利润拖累、人工/材料成本 |
+| 基准公司 | `44.0-48.0 亿美元` | `+21%-32%` | 符合当前预期正常兑现：RPO/backlog 正常 burn，C&I 6-12 个月执行，Infrastructure 产能爬坡 | `25.0%-26.5%` | `10.5%-12.0%` | 调整后 EBITDA `5.2-6.4 亿美元`；调整后净利润 `3.4-4.5 亿美元` | 正，但低于净利润增速；增长需要工作资本和 capex | 中高 | 项目执行、客户验收、固定价合同估算、Gulf Island/Greiner 整合、低压/电工队伍 |
+| 乐观公司 | `51.0-57.0 亿美元` | `+40%-57%` | 高于当前预期；要求 Communications、Infrastructure 与 C&I 同时加速，不只是单一小项目 | `26.0%-28.0%` | `12.0%-13.5%` | 调整后 EBITDA `6.9-8.4 亿美元`；调整后净利润 `4.7-5.9 亿美元` | 经营现金流为正但 conversion 可能滞后；AR/contract assets 上升 | 中 | 大项目并行管理、加班和安全、关键电气部件到货、客户 NTP 与 change order 回收 |
+| 极度乐观公司 | `62.0-70.0 亿美元` | `+71%-93%` | 远高于当前预期；需要需求、公司捕获、利润率和执行质量同时突破 | `27.0%-29.0%` | `13.0%-15.0%` | 调整后 EBITDA `9.0-11.0 亿美元`；调整后净利润 `6.0-7.8 亿美元` | 不确定：收入暴增可能短期压低 FCF，除非预付款/进度款同步改善 | 低到中 | 劳动力、质量、安全、固定价合同、关键部件、收购整合和客户集中度同时受压 |
+
+汇总检查：
+
+- 不重复计算：Qypsys 已在 Communications 内；Gulf Island/Greiner 已在 Infrastructure 内；C&I 与 Infrastructure 的现场集成不把同一 power island 重复加总。
+- 不把低毛利 pass-through 当作同等利润：C&I 和现场施工收入上修弱于 Infrastructure custom power 利润上修；Residential 收入上修对公司经营价值贡献最低。
+- 不外推一次性收益：GAAP 净利润中的 marketable securities gain 不作为经营价值传导证据；本文用调整后净利润和调整后 EBITDA 表达经营利润。
+- 不把客户总 CapEx 当收入：AI 数据中心建设规模、facility-heavy capex、MEP/EPC 订单池只用于需求边界和单位经济校验，不能直接映射为 IESC revenue。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一个风险只在实际影响层级处理一次；市场价格和估值不作为经营反证。
+
+校准因素表：
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q2 RPO `23.471 亿美元`与 backlog `38.621 亿美元` | 收入基数、产品贡献、公司汇总 | 强化基准和乐观收入可见度，尤其 Communications、Infrastructure、C&I | 不直接提高利润率；只能说明 revenue visibility | 高 backlog 转收入需要工作资本、项目排产和验收 | 基准保留；乐观保留；不可把 backlog 全额直接确认为 NTM 收入 |
+| Backlog 中 `15.150 亿美元`为不可强制执行协议/LOI | 收入确认可信度 | 限制 Infrastructure 和公司极度乐观上限 | 若 LOI 转正式合同慢，固定成本吸收变差 | 增加收入时点和取消/延后风险 | 极度乐观降权；悲观保留；该风险只在收入确认层级处理 |
+| Management 表示 Infrastructure 新增产能 FY2026 下半年更有意义贡献，C&I backlog 未来 6-12 个月执行 | 产品贡献、公司汇总 | 支撑基准收入上修和乐观概率 | 若产能利用率提升，Infrastructure/C&I margin 可改善 | 需要 capex、招聘、培训、供应链和客户现场同步 | 基准保留；乐观保留 |
+| Communications 和 Infrastructure Q2 同比分别 `+35%`、`+64%` | 产品贡献、公司利润 | 说明数据中心相关 demand 已经进收入表，不只是主题相关 | 两个分部利润率高于 Residential，支撑公司 mix 改善 | 高增长要求低压团队、制造产能和测试验收 | 基准保留；乐观保留 |
+| C&I Q2 收入仅 `+1%`，但 backlog/RPO 大幅高于收入 run-rate | 收入确认、执行可信度 | 支撑未来收入弹性，也提醒当前尚未兑现 | 若快速转收入且执行好，margin 上行；若赶工，margin 反而下行 | 最大 NTM 节奏风险：项目节点、设备到货、现场 readiness | 基准保留但不给高可信；乐观需 Q3/Q4 revenue proof |
+| Residential 收入和 margin 下滑 | 公司组合风险 | 稀释总收入增速和利润率 | 低 margin 业务拖累公司整体 margin | 住宅 cash flow 稳定性下降但不影响 AI 主线 | 在公司汇总层处理一次；不重复惩罚产品情景 |
+| 固定价合同、人工、材料、surety、change order 和 percentage-of-completion 会计 | 利润率、现金流、执行 | 收入可确认但利润可能被成本估算和变更单回收拖累 | 限制乐观收入转化为等比例利润 | AR、合同资产、retainage 和 capex 占用现金 | 悲观保留；乐观利润率不做线性上修 |
+| IESC 不披露 AI data center revenue、客户名、取消率和 lead time | 证据可信度 | 限制 AI 拆分和极度乐观收入的证据等级 | 无法精确判断客户 mix 和项目毛利 | 无法跟踪单项目延迟、集中度和取消风险 | 基准为中高而非高；极度乐观保留为上限 |
+| Gulf Island/Greiner/Qypsys 协同 | 产品基数、远期期权 | 可提升 Infrastructure/Communications 上限，但当前细项收入不足 | 若标准化成功，利润率上行；整合失败则拖累 | 收购整合、质量、安全、系统流程和客户导入风险 | 基准小比例纳入；大额协同仅作乐观/极度或跟踪 |
+
+四情景校准结论表：
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | AI 数据中心需求仍增长，但 backlog 转收入慢、Residential 拖累、利润率回落 | 即使悲观，RPO/backlog 和三条非住宅分部仍提供收入底盘 | C&I revenue 未加速、Residential 弱、固定价/人工/材料风险、不可强制 backlog 占比高 | 保留 | 悲观公司 | 中 | 项目延期只在收入确认层级处理，不再在需求和利润率层重复下调 |
+| 基准 | A/B 级收入、RPO、backlog 和管理层 6-12 个月执行正常兑现 | Q2 revenue、RPO、backlog、Communications/Infrastructure 高增、C&I backlog 可见 | AI DC 拆分、客户名、取消率、lead time 和产品级利润率未披露 | 保留 | 基准公司，偏上行但非高可信 | 中高 | AI 收入不透明只降低可信度，不把所有产品再次打折 |
+| 乐观 | 数据中心客户加速、C&I backlog 快速转收入、Infrastructure 产能爬坡且利润率守住 | Backlog q/q 大幅增加，Q2 management 明确扩产和 C&I 执行窗口，行业需求仍强 | 需要多个分部同时兑现；任何设备/许可/劳动力瓶颈都会使收入后移 | 保留 | 乐观公司 | 中 | 上电/设备延迟只限制收入确认，不在需求池和公司汇总重复惩罚 |
+| 极度乐观 | 需求、公司捕获、利润率和执行质量同时突破，收入接近或超过 `62-70 亿美元` | AI 数据中心 power/MEP 瓶颈强，backlog 新量级，Gulf/Greiner/Qypsys 提供上限 | 缺客户框架、标准化 power block、直接 AI revenue 和取消率披露；劳动力/质量/固定价风险同步上升 | 保留 | 极度乐观上限，不进基准 | 低到中 | 不把远期 800VDC/MVUPS、客户总 CapEx 或项目全周期金额重复计入 NTM |
+
+## 8. 结论
+
+- 最可能情景：`基准偏乐观`。IESC 的 NTM 收入更可能落在 `44.0-48.0 亿美元`，若 FY2026 Q3/Q4 继续证明 C&I backlog 转收入、Infrastructure 产能爬坡和 Communications 订单延续，收入可向乐观低端 `51 亿美元+`移动。最重要的是，这不是 AI 主题映射，而是 Q2 收入表、RPO/backlog 和管理层执行窗口已经给出的经营传导。
+- NTM 收入结论：Communications 是最大基数，Infrastructure 是利润质量和上限变量，C&I 是 backlog 转收入弹性，Residential 是抵消项。基准收入增长来自三条非住宅主线正常兑现，不来自 Qypsys 或 power island 远期期权。
+- 利润/现金流结论：利润率基准改善来自 mix、Infrastructure 高利润率、Communications 稳定和 C&I 项目执行；但固定价合同、人工、钢铜材料、设备延迟、收购整合和 capex 会限制利润与收入等比例上修。FCF 在基准下应为正，但高增长情景下可能因工作资本和扩产投资滞后于利润。
+- 主要传导瓶颈：第一瓶颈是 `backlog/RPO 是否按 6-12 个月转收入`；第二瓶颈是 `C&I 和 Communications 是否有足够熟练工、项目经理、测试/验收窗口`；第三瓶颈是 `Infrastructure 是否把 Gulf/Greiner/Gulf Island 产能变成高质量 custom power 收入`；第四瓶颈是 `Residential 低利润业务是否继续稀释公司整体 margin`。
+- 乐观情景成立条件：Q3/Q4 backlog 维持高位或继续增长，RPO 同步提高；C&I 单季收入开始明显高于 Q2 run-rate；Infrastructure margin 维持 20%+；Communications 在数据中心低压/光纤/技术系统中保持 30%+ 增速；经营现金流没有被应收和合同资产明显吞掉。
+- 极度乐观情景成立条件：多个 hyperscale/colo AI campus 同时 NTP，IESC 获得跨园区重复项目或框架协议；Infrastructure 的 generator enclosure、bus duct、power enclosure 和钢结构模块形成标准化供应；C&I 能把 `10 亿美元+` backlog 快速转收入且利润率不塌；客户预付款或进度款足以支撑工作资本。
+- 悲观情景触发条件：C&I backlog 未在未来两个季度转化；Infrastructure backlog 中不可强制协议/LOI 转正式合同慢；Communications 增速降至低双位数或低于；Residential 继续双位数下滑且 margin 接近 1%-2%；合同资产/AR 增速显著高于收入、自由现金流转弱。
+- 后续跟踪数据：FY2026 Q3 revenue by segment、RPO/backlog by segment、C&I revenue burn 与 margin、Infrastructure Gulf Island/Greiner contribution、capex 和工作资本、OCF/FCF conversion、客户项目或框架协议披露、Residential backlog 与 margin、是否披露数据中心收入或客户集中度。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务以 IES Holdings FY2026 Q2（截至 2026-03-31，2026-05-01 披露）为最新公开财报；报告日期为 2026-06-12。行业资料以项目内 2026-06-10 至 2026-06-11 的行业调研和公开来源为主。
+- 主要收入、订单、指引和利润率来源：FY2026 Q2 earnings release、FY2026 Q2 earnings presentation、FY2026 Q2 Form 10-Q、公司产品页与公司调研文件。IESC 未提供传统全年 revenue/EPS guidance，因此“当前预期”以 Q2 run-rate、RPO/backlog、管理层 6-12 个月执行描述、分部收入和分部利润率为锚。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 下半年可能受 Infrastructure 产能爬坡和 C&I backlog 转收入影响；FY2027 远期期权主要是 Gulf/Greiner/Gulf Island 标准化 power island、Qypsys 园区通信交叉销售、800VDC/MVUPS/high-density rack 相关 field integration。但这些不是 NTM 基准收入。
+- 未使用项：未使用股价、市值、PE、PS、EV/EBITDA、目标价、技术面或排序分数作为经营价值传导证据；未读取或引用 `特征量化/`。
+
+主要公开来源：
+
+- IES Holdings FY2026 Q2 results（2026-05-01）：https://investors.ies-corporate.com/news-releases/news-release-details/ies-holdings-reports-fiscal-2026-second-quarter-results
+- IES Holdings FY2026 Q2 Form 10-Q（document date 2026-03-31，filed 2026-05-01）：https://investors.ies-corporate.com/sec-filings/sec-filing/10-q/0001048268-26-000086
+- IES Holdings FY2026 Q2 Earnings Presentation：https://investors.ies-corporate.com/static-files/0e782701-571a-45d6-8cc7-09d2d3a07f7e
+- IES Holdings financial reports page：https://investors.ies-corporate.com/financial-information/financial-reports
+- IES Data Centers product/capabilities page：https://ies-corporate.com/DataCentersRR.html
+- IES Custom Power Solutions page：https://ies-corporate.com/CustomPowerSolutionsRR.html
+- IES Technology Infrastructure page：https://ies-corporate.com/TechnologyInfrastructureRR.html
+- IES completes acquisition of Gulf Island Fabrication（2026-01-16）：https://investors.ies-corporate.com/news-releases/news-release-details/ies-holdings-completes-acquisition-gulf-island-fabrication
+
+主要项目内来源：
+
+- `公司调研/机电_冷却_工程_水处理_边缘工业AI/IESC_IES Holdings_公司调研_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`

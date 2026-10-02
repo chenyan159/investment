@@ -1,0 +1,167 @@
+# 公司收入传导与价值传导评估：Motorola Solutions（MSI）
+
+报告日期：2026-06-12  
+主口径：NTM，即 2026Q2-2027Q1。  
+研究边界：只使用 `公司调研/`、`行业调研/` 与外部公开公司/行业资料；未使用 `特征量化/`、Signals、排序、回归或市场定价结论。本文只评估收入、利润、现金流和经营质量传导，不输出投资评级、目标价、股价区间或估值倍数判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口，即 2026Q2-2027Q1；FY2026 指引、2025A 收入结构、并购 run-rate 和长期 AI 数据中心物理安防机会只作锚点或附录口径。Motorola Solutions 的最新正式经营锚点是 2026Q1 收入 `$2.714B`、同比 `+7%`，FY2026 收入指引约 `$12.8B`，non-GAAP EPS 指引 `$16.87-$16.99`，Q1 期末 backlog `$15.7B`、同比 `+11%`。
+- 当前收入基准、指引和 run-rate：2025 全年收入 `$11.682B`，其中 Products and Systems Integration `$7.253B`、Software and Services `$4.429B`。Q1 2026 收入 `$2.714B` 已确认，FY2026 指引 `$12.8B` 隐含 2026Q2-Q4 收入约 `$10.086B`；若 2027Q1 按公司当前 backlog、S&S 增长和正常季节性外推，NTM 基准收入约 `$12.9B-$13.2B`。
+- 重要产品/业务线：核心 LMR/P25/TETRA/APX 与服务、Silvus MANET/FASST、Video Security & Access Control/Avigilon/Blue Eye、Command Center 云与 agentic AI、SVX + Assist + DEMS、数据中心/关键基础设施物理安防。核心 LMR/服务是收入和现金流底座；Silvus、Command Center 和 Video 是 NTM 增量弹性；数据中心物理安防是真实但小比例的横向机会。
+- NTM 公司收入四情景：悲观 `$12.4B-$12.7B`；基准 `$12.9B-$13.2B`；乐观 `$13.35B-$13.85B`；极度乐观 `$14.1B-$14.8B`。基准代表 FY2026 指引正常兑现并延续到 2027Q1；乐观需要 S&S、Silvus、Command、Video 同时超当前预期；极度乐观需要国防 MANET、公共安全 AI、Video AI 和数据中心物理安防多个传导环节同时突破。
+- 利润或 EBITDA 四情景：悲观 non-GAAP 经营利润率约 `27.0%-28.2%`，调整 EBITDA/净利润约 `$3.7B-$4.0B / $2.55B-$2.75B`；基准 non-GAAP 经营利润率 `29.2%-30.2%`，约 `$4.1B-$4.4B / $2.90B-$3.05B`；乐观 `30.2%-31.2%`，约 `$4.4B-$4.8B / $3.10B-$3.40B`；极度乐观 `31.5%-33.0%`，约 `$4.9B-$5.5B / $3.55B-$4.00B`。利润扩张必须来自 S&S mix、Silvus 高价值国防订单、Command/Video 软件化和成本转嫁，不因收入增长自动成立。
+- 最大传导瓶颈：不是终端公共安全需求是否存在，而是需求从政府/国防/企业预算进入 MSI 可确认收入的节奏，尤其是大型 P25/LMR 项目、Silvus 产能扩张、Command Center 云迁移、AI call handling 合规责任和数据中心物理安防项目资格。
+- 最大利润率变量：Software and Services mix、Silvus 收购整合和 earnout 反映的增长质量、Video 云/软件 attach、Command Center 高毛利软件占比、memory/tariff/供应链成本能否转嫁。Q1 2026 GAAP 毛利率 `50.2%`、non-GAAP operating margin `28.8%`，收入质量不错，但 GAAP EPS 受 Silvus earnout 与无形资产摊销压制。
+- 最大现金流变量：2025 FCF `$2.6B` 是强基准；Q1 2026 FCF `$389M` 具有季节性和营运资本影响。NTM 基准 FCF 方向约 `$2.6B-$2.9B`；乐观需 backlog 转收入后不明显拉高库存、应收、合同资产和整合支出；悲观触发项是政府验收延迟、Silvus 扩产占用、memory/tariff 成本和收购整合费用。
+- 可信度：公司总收入、分部收入、Q1 2026 backlog、FY2026 指引为高；MCN/Video/Command 三条技术线 NTM 估算为中高；Silvus 收入拆分和利润率为中；AI 数据中心直接收入和 Hyper/agentic AI 单独收入为低到中，原因是公司未披露独立收入、订单、ARR 或 backlog。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 核心 Mission Critical Networks：LMR/P25/TETRA/APX、ASTRO、DIMETRA、MOTOTRBO、LMR 支持和托管服务 | 2025 技术线收入估算约 `$8.66B`；2026Q1 MCN `$1.968B`、同比 `+4%`；NTM 基准含服务续约约 `$9.2B-$9.7B` | 约 `70%-74%`，随 Silvus/服务 mix 变化 | 最大收入和现金流底座；客户切换成本最高，backlog 可见度强 | A/B | 进入基准。A 级为已披露收入、分部和技术线；B 级为 P25/TETRA 大单、服务续约和 backlog | Public safety broadband、AI-connected LMR workflow 和更多联邦/边境/国防资金为中期期权 |
+| Silvus MANET / FASST / tactical wireless | 公司未单列收入；2025-08 完成 `$4.4B` 收购；Q1 2026 披露 `$78M` 德国无人系统订单，2026-05 宣布 `$100M` 扩产；NTM 基准估算 `$0.75B-$1.05B` | 约 `6%-8%` 的 NTM 收入估算，包含在 MCN 内 | 低基数高弹性，国防、无人系统、战术 mesh 和频谱感知核心增量 | B/C | 保守进入基准。已有收购、订单和产能证据，但收入拆分和毛利率未披露 | FASST 频谱感知、counter-UAS、NATO/欧洲国防、机器人/无人平台 mesh 网络 |
+| Video Security & Access Control：Avigilon、fixed/mobile video、access control、Blue Eye RVM、AI analytics | 2025 技术线估算约 `$2.09B`；2026Q1 Video `$510M`、同比 `+16%`；NTM 基准约 `$2.35B-$2.65B` | 约 `18%-20%` | 企业/学校/医院/能源/数据中心物理安防入口，软件和云 attach 影响利润质量 | A/B | 进入基准。Q1 增长、Video 订单、Blue Eye 和 Avigilon 产品证据支持 | 数据中心 facility security、remote video monitoring、AI 视频分析和 access-control 标准化 |
+| Command Center 云与 AI：911 call handling、CAD、records、evidence、RapidDeploy、Rave、Exacom、Hyper、Theatro、Assist | 2025 技术线估算约 `$0.93B`；2026Q1 Command Center `$236M`、同比 `+27%`；NTM 基准约 `$1.15B-$1.35B` | 约 `9%-10%` | 最强软件化和 AI workflow 增量；PSAP 人手短缺和数据洪流是真需求 | A/B/C | 进入基准。Q1 收入为 A；Denver/Anne Arundel 等订单和收购为 B/C；Hyper agentic AI 单独收入不进基准大额 | 非紧急来电 agent、自动摘要/翻译、跨视频/无线电/911/证据链的 Assist agents |
+| SVX + Assist + CommandCentral DEMS | 直接收入未单列；Q4 2025 有 `$162M` U.S. federal P25 devices + SVX 订单；2026-02 SVX 和 DEMS 获 FedRAMP High；NTM 直接/增量估算 `$0.20B-$0.45B`，嵌在 MCN/Video/Command | 约 `1.5%-3.5%`，但影响 attach 和差异化 | 把 radio、body camera、AI、DEMS 和 federal cloud security 绑定，增强对 Axon 的竞争入口 | B/C | 小比例进入基准，主要随 P25 device、federal order 和 DEMS 续费确认 | 多州/联邦 body-worn assistant 标准化、Assist 自动报告和证据链 AI |
+| 数据中心/关键基础设施物理安防：Avigilon、Blue Eye、access control、无线电/调度、SOC/Command workflow | 公司未披露独立收入；项目内行业资料显示 2026 data center physical security TAM 约 `$2.74B`；MSI 直接 AI DC 可归因 NTM 基准估算 `$0.08B-$0.18B`，广义关键基础设施更多 | 纯 AI DC 约 `<1%-1.5%`；广义 critical infrastructure 更大 | 真实但不是主链；高毛利 attach 可能改善 mix，但规模小且竞争强 | C/D | 基准只小比例纳入，且作为 Video/Command/MCN 子集，不单独加总 | 若进入 hyperscale/colo/sovereign AI 标准供应商清单，可上移；rack-level lock/DCIM 目前更多是附录跟踪 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不判断 Motorola Solutions 的份额、收入确认、成本或利润率。当前需求锚以公司 FY2026 指引、Q1 2026 技术线增长、backlog、政府/国防/公共安全采购、数据中心物理安防行业规模和本地行业资料为主。基准需求不是行业叙事热度，而是当前指引、订单、run-rate 和客户预算正常兑现。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 核心 LMR/P25/TETRA/APX + 服务 | Q1 2026 MCN `$1.968B`、同比 `+4%`；2025 年末 backlog `$15.7B`；Q4 2025 有 Tennessee `$180M` P25 expansion、Maryland `$201M` 10-year P25 services renewal 等 | 需求 flat 到 `+3%`；政府预算延迟、P25/TETRA 大单时点后移，服务续约仍稳但新项目慢 | 需求 `+4%-7%`，公共安全、州地、联邦、交通、公用事业按当前预算和替换周期推进 | 需求 `+8%-12%`，联邦/边境/国防资金、系统升级、服务续约和 APX/SVX attach 强于当前预期 | 需求 `+13%+`，多个大型州/联邦/国际项目提前，LMR 与 AI workflow/SVX 标配化 | 以 2025 MCN 约 `$8.66B` 需求池看，基准新增需求约 `$0.35B-$0.65B`；极度乐观新增 `$1.1B+` | 悲观低于指引隐含路径；基准符合当前预期；乐观高于当前订单节奏；极度乐观需多项目同时提前 | 支持：backlog 创纪录、P25/TETRA/服务大单；反证：公共预算审批慢、验收周期长、核心 MCN Q1 增长仅 `+4%` |
+| Silvus MANET / FASST | 2025-08 完成收购；Q1 2026 有 `$78M` German unmanned systems order；2026-05 宣布 `$100M` 扩产和 200 个岗位；FASST 6000 进入频谱感知 | 需求 `+15%-30%`，MANET 仍增长但国防预算、出口/认证或客户复制慢 | 需求 `+35%-60%`，无人系统、战术 mesh、NATO/欧洲和公共安全 tactical edge 正常放量 | 需求 `+70%-100%`，StreamCaster 多国防客户复制，FASST 早期订单进入收入 | 需求 `+100%+`，MANET 成为多个无人/反无人系统项目默认网络，频谱感知形成新产品线 | 若当前 run-rate 约 `$0.5B-$0.7B`，基准新增需求约 `$0.2B-$0.4B`；极度乐观新增 `$0.7B+` | 基准高于公司整体增长但符合新收购/订单/扩产信号；极度乐观必须有多客户项目证据 | 支持：订单、扩产、战术边缘需求；反证：未披露 revenue split、国防项目长周期、二供和出口管制 |
+| Video Security & Access Control / Avigilon / Blue Eye | Q1 2026 Video `$510M`、同比 `+16%`；2025 Video 估算 `$2.09B`；数据中心物理安防 2026 TAM 约 `$2.74B`、CAGR `15%`；企业安防和学校/医院/关键基础设施需求稳定 | 需求 `+3%-7%`，硬件摄像头竞争压价，云/AI attach 放慢 | 需求 `+8%-15%`，AI video analytics、access control、Blue Eye RVM 和企业/公共安全项目按当前节奏增长 | 需求 `+16%-25%`，数据中心/关键基础设施、学校安全、remote monitoring 和 cloud VMS 加速 | 需求 `+30%+`，Avigilon/Blue Eye 成为多个大型 enterprise/colo/sovereign AI 安防标准 | 基准需求池新增约 `$0.18B-$0.35B`；乐观新增 `$0.35B-$0.55B`；极度乐观新增 `$0.65B+` | 基准符合 Q1 高增长但不外推到所有季度；乐观高于当前预期 | 支持：Q1 Video `+16%`、行业物理安防增长；反证：Genetec/Axis/Verkada/Honeywell/JCI 等竞争强，AI DC 只小部分可归因 MSI |
+| Command Center 云与 AI | Q1 2026 Command Center `$236M`、同比 `+27%`；Q1 有 Denver `$24M`、Anne Arundel `$16M` command center orders；2025-2026 收购 RapidDeploy、Exacom、Hyper、Theatro | 需求 `+8%-12%`，PSAP 采购和云迁移慢，AI governance 限制自动化 | 需求 `+15%-25%`，911/CAD/records/evidence 云迁移、数据整合和 Assist 正常推进 | 需求 `+30%-45%`，Hyper agentic AI、RapidDeploy 和 Exacom 形成可验证 ROI，更多 `$20M-$100M` 级订单 | 需求 `+55%+`，非紧急来电 AI、翻译、记录摘要和跨部门 workflow 在 NTM 内快速商业化 | 基准新增需求约 `$0.15B-$0.30B`；极度乐观新增 `$0.5B+` | 基准符合 Q1 `+27%` 后的保守延续；乐观需客户采用和部署证据 | 支持：PSAP 人手短缺、Q1 订单、收购补齐能力；反证：公共安全 AI 责任、数据迁移、采购周期和竞争 |
+| SVX + Assist + DEMS | Q4 2025 U.S. federal `$162M` P25 devices + SVX；2026-02 FedRAMP High；SVX 汇聚 secure voice、video 和 AI；APX 装机基础可带 attach | 需求小基数增长但低于预期，SVX 只随少数联邦/州地项目出货 | 需求快速增长但基数小，作为 P25/APX 生态的差异化 attach | 多个联邦/州级客户把 SVX + DEMS + Assist 纳入 bodycam/无线电升级 | SVX 成为 radio-bodycam-AI 一体化路线，明显抢占 Axon 部分场景 | 因未披露单独收入，绝对需求无法可靠量化；估算 NTM 直接需求池约 `$0.2B-$0.6B` | 基准为小基数高增长但不改变公司曲线；极度乐观需大客户标准化 | 支持：FedRAMP High、联邦订单、APX 协同；反证：Axon Evidence/bodycam 生态强，MSI 单独收入未披露 |
+| 数据中心/关键基础设施物理安防 | 行业侧 2026 data center physical security TAM `$2.74B`；AI rack 资产价值和主权/多租户合规提高安防需求；MSI 可供 Avigilon、access control、Blue Eye、无线电和 command workflow | 需求仍增长但项目由总包或传统 VMS/PACS 厂商拿走，MSI 只获少量项目 | 需求 `+15%-30%`，大型数据中心 facility security 和 remote monitoring 正常增长 | 需求 `+35%-60%`，AI campus/colo/sovereign AI 对统一视频、门禁、SOC 需求加速 | 需求 `+80%+`，多个 hyperscale/neo-cloud 标准化 MSI/Avigilon 方案 | 行业需求池 2026 约 `$2.74B`；MSI 可参与需求池大于可确认收入，基准可确认纯 AI DC 收入仍估计 `<$0.2B` | 行业需求乐观，但公司收入基准必须保守 | 支持：物理安防行业增长、本地报告指出 rack/access audit 趋势；反证：公司无 DC revenue/order 披露，MSI 不是 rack lock/DCIM 主供应商 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些产品需求能进入 Motorola Solutions NTM 收入表，以及当前可收入化基数；不预测增长，不判断利润率。`可参与需求`不等于`可确认收入`。Silvus、SVX、数据中心物理安防均是跨技术线子集，公司汇总时避免和 MCN/Video/Command 重复加总。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 核心 LMR/P25/TETRA/APX + 服务 | 2025 MCN 估算约 `$8.66B`；2026Q1 MCN `$1.968B`；Q1 backlog `$15.7B`；Q4/Q1 多个 P25/TETRA/services 大单 | 直接 | 高粘性硬件+系统+服务；服务续约和托管提高可见度；硬件毛利低于软件但切换成本高 | `$8.8B-$9.1B` | `$9.2B-$9.7B` | `$9.8B-$10.4B` | `$10.6B+` | 基准接近当前 FY2026 指引和 backlog 正常转收入；悲观低于当前预期 | A/B | 是 | 已披露收入、技术线、订单和 backlog；服务 backlog 强 | 进入 NTM 基准。联邦/国防/OBBBA 等只在有订单和交付节奏时上修 |
+| Silvus MANET / FASST | 2025-08 收购 `$4.4B`；Q1 2026 `$78M` German unmanned systems order；2026-05 `$100M` 扩产；公司 Q1 acquisition revenue `$219M` 包含 Silvus等 | 直接，包含在 MCN | 高价值国防/tactical edge；收入和毛利未单列，扩产前执行风险高 | `$0.55B-$0.75B` | `$0.75B-$1.05B` | `$1.05B-$1.45B` | `$1.6B+` | 基准为当前收购整合和订单正常兑现；乐观高于当前预期 | B/C | 是，但折扣纳入 | 收购完成、订单、扩产、产品发布；缺单独收入和 margin | 进入基准但标注中可信度。FASST 新品大额收入只进乐观/极度乐观 |
+| Video Security & Access Control / Avigilon / Blue Eye | 2025 Video 估算约 `$2.09B`；2026Q1 Video `$510M`、`+16%`；Q4/Q1 有 fixed/mobile video 订单；Blue Eye RVM 2025 收购 | 直接 | 硬件+软件+服务混合；云/VMS/AI analytics 和 RVM 提高毛利，硬件摄像头竞争压价 | `$2.15B-$2.35B` | `$2.35B-$2.65B` | `$2.65B-$3.05B` | `$3.25B+` | 基准符合 Q1 增长和当前 Video 需求；极度乐观代表上限 | A/B | 是 | 已披露技术线收入和订单；Blue Eye 有收购证据 | 进入基准。数据中心 Video 项目只作为其中子集，不单独加总 |
+| Command Center 云与 AI | 2025 Command Center 估算约 `$0.93B`；2026Q1 `$236M`、`+27%`；Denver `$24M`、Anne Arundel `$16M`；RapidDeploy/Exacom/Hyper/Theatro 收购 | 直接 | 软件和服务属性更强，理论利润质量高；AI agent 责任和实施周期限制短期兑现 | `$1.00B-$1.15B` | `$1.15B-$1.35B` | `$1.35B-$1.70B` | `$2.0B+` | 基准符合 Q1 run-rate 和收购补强；乐观需要客户采用加速 | A/B/C | 是 | 已披露技术线收入；订单和收购支持收入确认路径 | 进入基准。Hyper agentic AI 单独收入当前不大额进入基准，只作为上行因素 |
+| SVX + Assist + DEMS | Q4 2025 `$162M` U.S. federal P25 devices + SVX；SVX/DEMS FedRAMP High；SVX 作为 APX/DEMS/Assist attach | 直接+间接，嵌在 MCN/Video/Command | 设备+云证据+AI workflow；若 attach 成功可提高续费和锁定 | `$0.12B-$0.25B` | `$0.20B-$0.45B` | `$0.45B-$0.80B` | `$1.0B+` | 当前基数小；基准为 NTM 可见订单和小比例 attach | B/C | 小比例是 | 有联邦订单和认证；缺单独 revenue | 作为跨产品子集纳入，不与 MCN/Video/Command 重复加总 |
+| 数据中心/关键基础设施物理安防 | 公司未披露独立收入；本地行业资料和 Grand View Research 支撑需求；公司可供 Avigilon/Blue Eye/access/SOC/wireless | 直接+间接，包含在 Video/Command/MCN | 软件/monitoring 可高毛利，但项目总包和硬件竞争会压价 | 纯 AI DC `$0.03B-$0.08B`；广义关键基础设施 `$0.15B-$0.30B` | 纯 AI DC `$0.08B-$0.18B`；广义 `$0.25B-$0.45B` | 纯 AI DC `$0.18B-$0.35B`；广义 `$0.45B-$0.75B` | 纯 AI DC `$0.50B+`；广义 `$1.0B+` | 基准是小额可归因收入；乐观/极度乐观需客户和订单证据 | C/D | 基准只小比例进入，且不单独加总 | 行业需求+产品能力；缺公司披露订单、客户、backlog | 不把 TAM 当收入。无客户/时间表/收入确认路径的机会仅作跟踪 |
+| Rack-level smart lock / DCIM /机柜级身份审计 | MSI/Avigilon 可参与身份、视频和审计层，但 rack-lock/DCIM 主供应商更多是 Legrand/Raritan、Eaton/TANlock、Schneider/APC、Panduit、CPI 等 | 间接 | 若只做 VMS/PACS 接口，收入小；若做 rack lock 主件，当前证据不足 | `$0` 单独纳入 | `$0` 单独纳入 | 无法可靠量化 | 无法可靠量化 | 当前预期不含明确 MSI rack-level lock 收入 | E | 否 | 只有行业相关性，无 MSI 可确认收入证据 | 排除出 NTM 基准；列远期期权或行业跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第一步需求和第二步收入基数出发，评估每个重要产品/业务线在 NTM 内能给公司贡献多少收入和利润。公司未披露 Silvus、SVX、Hyper、Avigilon、Blue Eye 等单项毛利率，产品利润贡献为基于分部 non-GAAP operating margin、产品 mix、公司指引和成本变量的估算；无法可靠量化处明确标注。数据中心物理安防、SVX 和 Silvus 是技术线内子集，汇总时不重复相加。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 核心 LMR/P25/TETRA/APX + 服务 | 悲观产品 | `$8.8B-$9.1B` | non-GAAP OI 粗估 `$2.2B-$2.5B` | 低于当前结构，硬件/项目 mix 更重 | 低于当前预期 | MCN Q1 仅 `+4%`，政府采购和验收可能延迟 | 保留为悲观 | 大型项目收入确认、预算审批、供应链成本 |
+| 核心 LMR/P25/TETRA/APX + 服务 | 基准产品 | `$9.2B-$9.7B` | 粗估 `$2.5B-$2.9B` | 稳定，服务续约和托管支撑 | 符合当前预期 | Q1 backlog `$15.7B`、Q4/Q1 P25/TETRA/services 大单 | 保留为基准 | PSI 硬件毛利低于 S&S，不能只看收入增长 |
+| 核心 LMR/P25/TETRA/APX + 服务 | 乐观产品 | `$9.8B-$10.4B` | 粗估 `$2.8B-$3.2B` | 小幅改善，服务和软件 attach 提升 | 高于当前预期 | 联邦/国防/州地预算、SVX attach、服务续约增强 | 保留为乐观 | 需订单和交付节奏强于当前指引 |
+| 核心 LMR/P25/TETRA/APX + 服务 | 极度乐观产品 | `$10.6B+` | 粗估 `$3.3B+` | 改善，但需高服务 mix | 显著高于当前预期 | 多个大型系统/服务合同提前确认 | 下移为乐观上限，除非披露更多大单 | 单一 P25 大单无法代表全线非线性 |
+| Silvus MANET / FASST | 悲观产品 | `$0.55B-$0.75B` | 无法可靠量化；粗估 OI `$0.12B-$0.20B` | 扩产前投入和整合费用压制 | 低于当前收购叙事 | 国防项目长周期，FASST 新品早期 | 保留为悲观 | 收入 split、margin、产能爬坡均未披露 |
+| Silvus MANET / FASST | 基准产品 | `$0.75B-$1.05B` | 粗估 `$0.20B-$0.33B` | 稳中改善，规模效应逐步体现 | 符合当前预期偏乐观底色 | `$78M` German unmanned systems order、`$100M` 扩产、StreamCaster/FASST | 保留为基准，但可信度中 | 扩产、质量、国防认证、出口管制 |
+| Silvus MANET / FASST | 乐观产品 | `$1.05B-$1.45B` | 粗估 `$0.32B-$0.50B` | 改善，若高价值国防/软件占比提升 | 高于当前预期 | 多国防客户复制、FASST 传感器进入订单、产能提前见效 | 保留为乐观 | 需证明“谁买、买什么、何时确认、为何 MSI 捕获” |
+| Silvus MANET / FASST | 极度乐观产品 | `$1.6B+` | 粗估 `$0.55B+` | 明显改善，但需强定价和高利用率 | 显著高于当前预期 | MANET/EMSO 成多个无人系统 program 标配 | 下移为乐观上限/附录 | 当前只有订单和扩产，不足以支持 NTM 非线性收入 |
+| Video Security & Access Control / Avigilon / Blue Eye | 悲观产品 | `$2.15B-$2.35B` | 粗估 `$0.55B-$0.70B` | 硬件竞争压价，软件 attach 不足 | 低于当前预期 | VMS/PACS/摄像头竞争强 | 保留为悲观 | Genetec/Axis/Verkada/JCI/Honeywell 等竞争，项目总包压价 |
+| Video Security & Access Control / Avigilon / Blue Eye | 基准产品 | `$2.35B-$2.65B` | 粗估 `$0.70B-$0.90B` | 稳中改善，AI analytics/RVM/cloud 带动 mix | 符合当前预期 | Q1 Video `+16%`，Blue Eye RVM，Avigilon AI cameras/access control | 保留为基准 | Q1 高增长不能线性外推全年 |
+| Video Security & Access Control / Avigilon / Blue Eye | 乐观产品 | `$2.65B-$3.05B` | 粗估 `$0.85B-$1.10B` | 改善，云/VMS/monitoring/AI attach 提高 | 高于当前预期 | 数据中心、学校、能源、公共安全视频订单增强 | 保留为乐观 | 需公司特定订单，而非只用 physical security TAM |
+| Video Security & Access Control / Avigilon / Blue Eye | 极度乐观产品 | `$3.25B+` | 粗估 `$1.15B+` | 明显改善，软件/监控占比高 | 显著高于当前预期 | 多个 enterprise/colo 标准化 Avigilon/Blue Eye | 下移为乐观上限 | MSI 不是所有数据中心安防默认供应商 |
+| Command Center 云与 AI | 悲观产品 | `$1.00B-$1.15B` | 粗估 `$0.25B-$0.34B` | 稳定或小幅稀释，AI/云实施费用上升 | 低于当前预期 | 公共安全软件采购慢、AI 责任治理限制 | 保留为悲观 | 数据迁移、集成、PSAP 预算和法规 |
+| Command Center 云与 AI | 基准产品 | `$1.15B-$1.35B` | 粗估 `$0.35B-$0.48B` | 改善，SaaS/软件和服务 mix 提升 | 符合当前预期 | Q1 Command `+27%`，RapidDeploy/Exacom/Hyper/Theatro 补强 | 保留为基准 | 收购收入和 organic 需区分；AI agent 收入未单列 |
+| Command Center 云与 AI | 乐观产品 | `$1.35B-$1.70B` | 粗估 `$0.48B-$0.68B` | 明显改善，高毛利软件增长 | 高于当前预期 | Hyper 非紧急来电 agent、Exacom logging、RapidDeploy cloud 911 客户复制 | 保留为乐观 | 需要 ROI 案例、可验证订单和部署窗口 |
+| Command Center 云与 AI | 极度乐观产品 | `$2.0B+` | 粗估 `$0.80B+` | 非线性改善 | 显著高于当前预期 | Agentic AI 成 PSAP 标配，云迁移提前 | 下移为乐观上限/附录 | AI hallucination/责任/监管和采购周期不支持无证据大额纳入 |
+| SVX + Assist + DEMS | 悲观产品 | `$0.12B-$0.25B`，已包含在 MCN/Video/Command 内 | 无法可靠量化；可能 `<$0.08B` OI | 小基数、硬件成本和销售投入较高 | 低于当前预期 | Axon bodycam/Evidence.com 竞争强 | 保留为悲观 | 客户可能分层采购 bodycam 和 radio |
+| SVX + Assist + DEMS | 基准产品 | `$0.20B-$0.45B`，已包含在 MCN/Video/Command 内 | 粗估 `$0.06B-$0.15B` | 稳中改善，DEMS/Assist attach 提升 | 符合当前预期 | FedRAMP High、U.S. federal P25+SVX 订单、APX 装机基础 | 保留为基准 | 单独 revenue 未披露，不能把 attach 全额化 |
+| SVX + Assist + DEMS | 乐观产品 | `$0.45B-$0.80B`，已包含在 MCN/Video/Command 内 | 粗估 `$0.15B-$0.30B` | 改善，云证据和 AI 工作流占比提升 | 高于当前预期 | 多州/联邦客户采用 radio+camera+AI 一体化 | 保留为乐观 | 需订单和部署证据 |
+| SVX + Assist + DEMS | 极度乐观产品 | `$1.0B+`，已包含在 MCN/Video/Command 内 | 粗估 `$0.35B+` | 明显改善 | 显著高于当前预期 | 大客户标准化 SVX，部分 Axon 替代 | 下移为乐观上限/附录 | 当前证据不足，竞争强 |
+| 数据中心/关键基础设施物理安防 | 悲观产品 | 纯 AI DC `$0.03B-$0.08B`；广义 `$0.15B-$0.30B`，包含在 Video/Command/MCN 内 | 无法可靠量化；纯 AI DC OI 可能 `<$0.03B` | 不改善，项目低毛利或确认延迟 | 低于 AI 叙事 | 无公司 DC revenue/order/backlog 披露 | 保留为悲观 | 项目由总包、Genetec/Axis/JCI/HID 等拿走 |
+| 数据中心/关键基础设施物理安防 | 基准产品 | 纯 AI DC `$0.08B-$0.18B`；广义 `$0.25B-$0.45B`，包含在 Video/Command/MCN 内 | 粗估纯 AI DC OI `$0.02B-$0.07B` | 小幅改善，软件/monitoring 才能留下利润 | 符合保守预期 | Avigilon/Blue Eye/access/SOC 产品能力；行业 TAM 增长 | 基准小比例纳入 | 不能把 data center physical security TAM 当 MSI 收入 |
+| 数据中心/关键基础设施物理安防 | 乐观产品 | 纯 AI DC `$0.18B-$0.35B`；广义 `$0.45B-$0.75B` | 粗估纯 AI DC OI `$0.06B-$0.14B` | 改善，若 RVM/VMS/access software 占比高 | 高于当前预期 | 进入 colo/sovereign AI 标准供应商清单，多站点复制 | 保留为乐观 | 需客户、产品、交付、价格、收入确认路径 |
+| 数据中心/关键基础设施物理安防 | 极度乐观产品 | 纯 AI DC `$0.50B+`；广义 `$1.0B+` | 粗估纯 AI DC OI `$0.18B+`，可信度低 | 只有高毛利软件/monitoring 成立才改善 | 显著高于当前预期 | 多个 hyperscale/neo-cloud 大客户标准化 MSI 方案 | 下移为乐观上限/附录跟踪 | 无客户和 backlog；rack-level/DCIM 主供应商证据不足 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。汇总时不把 Silvus、SVX、数据中心物理安防等子集与 MCN/Video/Command 重复相加；不使用股价、目标价、估值倍数或市场定价作为经营价值传导证据。`绝对增速`为相对 2025 revenue `$11.682B` 的近似增长口径，用于跨情景比较；严格 NTM 与 FY2025 年度口径存在一个季度错位。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$12.4B-$12.7B` | 约 `+6%-+9%` | 低于 FY2026 `$12.8B` 指引和 Q1 backlog 正常转化路径；Q2-Q4 或 2027Q1 放缓 | GAAP `49.0%-50.0%`；non-GAAP 调整口径略高 | non-GAAP `27.0%-28.2%` | 调整 EBITDA `$3.7B-$4.0B`；non-GAAP 净利润 `$2.55B-$2.75B` | FCF 约 `$2.1B-$2.4B`，库存、应收、扩产和项目验收占用上升 | 中 | 政府/国防订单确认慢，Silvus 扩产或多客户复制低于预期，Video/Command 竞争和 AI 责任治理拖慢软件收入，memory/tariff 成本压毛利 |
+| 基准公司 | `$12.9B-$13.2B` | 约 `+10%-+13%` | 基本符合 FY2026 指引正常兑现并延续至 2027Q1；S&S 继续双位数，PSI 温和增长 | GAAP `50.0%-51.0%` | non-GAAP `29.2%-30.2%` | 调整 EBITDA `$4.1B-$4.4B`；non-GAAP 净利润 `$2.90B-$3.05B` | FCF 约 `$2.6B-$2.9B`，接近 2025 强现金流底座 | 中高 | backlog 转收入、Silvus 产能爬坡、S&S mix、供应链成本转嫁和收购整合 |
+| 乐观公司 | `$13.35B-$13.85B` | 约 `+14%-+19%` | 高于当前预期；需要 MCN/Video/Command 至少两条高于基准，且不是单一小项目造成 | GAAP `50.8%-52.0%` | non-GAAP `30.2%-31.2%` | 调整 EBITDA `$4.4B-$4.8B`；non-GAAP 净利润 `$3.10B-$3.40B` | FCF 约 `$2.9B-$3.3B`，若营运资本不恶化可高于基准 | 中 | Silvus、Command AI、Video cloud/RVM、SVX attach 和服务续约同时强；项目交付和费用吸收需跟上 |
+| 极度乐观公司 | `$14.1B-$14.8B` | 约 `+21%-+27%` | 显著高于当前预期；需要需求、公司捕获、利润质量和执行可信度同时突破 | GAAP `52.0%-53.5%` | non-GAAP `31.5%-33.0%` | 调整 EBITDA `$4.9B-$5.5B`；non-GAAP 净利润 `$3.55B-$4.00B` | FCF `$3.4B+`，但扩产/库存/应收可能部分抵消 | 低到中 | Silvus 年化过 `$1.6B`、Command Center 接近 `$2B`、Video/Avigilon 加速、SVX 标准化、AI DC 物理安防大客户全部成立；当前证据不足以作为主口径 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在其实际影响层级处理一次：公共安全/国防/企业需求风险放第一步，订单/交付/验收和 revenue split 风险放第二步，价格/mix/成本风险放第三步，公司汇总和现金流放第四步，证据可信度放第五步。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 sales `$2.714B`、同比 `+7%`，Software and Services `+18%`，Products and Systems Integration `+1%` | 公司收入基准 | 支撑 NTM 基准 `$12.9B-$13.2B`，但 PSI 增长温和限制激进上修 | S&S mix 正向，PSI 温和增长限制整体 margin 弹性 | 已确认收入强，Q4 季节性仍需兑现 | 基准保留 |
+| FY2026 指引上调至 revenue `$12.8B`、non-GAAP EPS `$16.87-$16.99`，Q2 revenue growth 指引约 `+8.5%` | 公司汇总 | 支撑 Q2-Q4 收入路径和 NTM run-rate | EPS 指引支撑利润底线，但不保证 margin 大幅扩张 | 指引本身是 A 级证据 | 基准保留；乐观需超指引证据 |
+| Q1 2026 ending backlog `$15.7B`、同比 `+11%`，record Q1 orders | 收入确认/执行 | 强化 MCN、Video、S&S 收入可见度 | Backlog mix 若偏 S&S，对 margin 正向；若偏硬件项目，margin 中性 | 多年合同和实施节奏决定确认时点 | 基准保留；悲观只在延迟/验收层处理 |
+| Q1 2026 技术线：MCN `$1.968B` `+4%`、Video `$510M` `+16%`、Command `$236M` `+27%` | 产品贡献 | 支撑 Video/Command 增速高于公司平均，MCN 稳健 | Video/Command 软件化有利 margin，MCN 硬件项目拉低弹性 | 技术线拆分可用于 NTM 估算 | 基准和乐观保留 |
+| 2025 年收入 `$11.682B`，non-GAAP operating margin `30.3%`，OCF `$2.8B`，FCF `$2.6B` | 公司利润/现金流 | 2025 是高质量基准，NTM 需比较其可持续性 | 30% 附近 non-GAAP OPM 是强但已较高的起点 | 现金流强，但 2026 扩产和并购整合可能占用 | 基准现金流保留；极度乐观不自动上移 |
+| Silvus `$4.4B` 收购、`$78M` German unmanned systems order、`$100M` 产能扩张和 FASST 6000 发布 | 产品基数/贡献 | 支撑 Silvus 进入 NTM 基准且乐观情景保留 | 高价值国防产品可能改善 mix，但未披露 margin | 扩产、质量、出口和国防验收是执行瓶颈 | 基准保留；极度乐观下移为乐观上限 |
+| Silvus 收购涉及 contingent earnout，Q1 GAAP operating earnings 受 `$75M` 非现金 charge 影响 | 利润/证据校准 | earnout 上修侧面说明业务表现强，但 GAAP 费用影响报表 | non-GAAP 排除不代表经济成本完全消失；收购摊销持续 | 资本配置和净债务压力上升 | 利润基准保留，GAAP 口径需保守 |
+| Hyper、Exacom、RapidDeploy、Theatro 收购补强 Command Center 和 agentic AI | 产品贡献/收入基数 | 支撑 Command Center 乐观增长，增强可收入化路径 | 软件化和 AI agent 可改善 margin，但初期集成费用存在 | 公共安全 AI 责任、合规、数据迁移和采购周期较长 | 乐观保留；极度乐观下移 |
+| SVX 和 CommandCentral DEMS 获 FedRAMP High，且有 U.S. federal P25 devices + SVX 订单 | 收入基数/竞争位置 | 支撑 SVX 小比例进入基准 | DEMS/Assist attach 可能提升利润质量 | 联邦客户安全门槛提高，但部署节奏仍慢 | 基准保留；大额上修需更多订单 |
+| Video/Avigilon/Blue Eye 与数据中心物理安防行业增长相匹配 | 需求/产品贡献 | 支撑 Video 基准和乐观需求 | RVM、VMS、analytics 和 cloud attach 才能改善 margin | 数据中心项目资格和渠道决定转化 | 乐观保留；不因行业 TAM 自动上修公司基准 |
+| 公司未披露 AI 数据中心收入、客户、订单金额、backlog 或交付窗口 | 证据可信度 | 限制 AI DC 进入公司基准大额收入 | 限制 AI DC mix 对 margin 的大幅上修 | 执行路径不清 | 极度乐观下移；无客户路径机会仅作跟踪 |
+| AI 数据中心需求推高 memory cost，tariffs 和供应链成本仍波动 | 成本/利润 | 不直接降低收入，但可能影响定价和交付 | 毛利率可能被成本吞噬，尤其 PSI/Video 硬件 | 库存、采购和客户价格重谈影响现金流 | 悲观保留；乐观利润需成本转嫁证据 |
+| 债务上升：2026Q1 outstanding debt 约 `$9.0B`，现金约 `$0.886B`，2025 FCF `$2.6B` | 现金流/资本配置 | 不影响短期收入确认，但限制连续大额并购空间 | 利息和摊销/整合费用压 GAAP 净利 | FCF 去杠杆和扩产之间需平衡 | 基准保留，极度乐观现金流不自动上移 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入低于当前指引/run-rate，利润率低于当前结构 | PSI Q1 仅 `+1%`，MCN `+4%`；成本、memory/tariff、政府验收和收购整合风险存在 | Backlog `$15.7B`、S&S `+18%`、FY2026 指引上调、FCF 强 | 保留 | 下行情景 | 中 | 供应链成本只在利润层处理；公共预算延迟只在需求/确认层处理，不重复压低所有高可信 S&S 收入 |
+| 基准 | FY2026 指引正常兑现并延续到 2027Q1，S&S 和 backlog 正常转收入 | Q1 sales、技术线拆分、backlog、FY2026 guidance、2025 FCF 均为 A/B 级证据 | Silvus/AI/数据中心的单项收入拆分不透明，GAAP 受收购摊销和 earnout 压制 | 保留 | 最可能情景 | 中高 | 不把数据中心缺披露扩大为否定核心 LMR/服务；只限制 AI DC 上修 |
+| 乐观 | Silvus、Video、Command、SVX 和核心 LMR 服务至少两条超基准 | Silvus `$78M` 订单和扩产，Video `+16%`，Command `+27%`，Hyper/Exacom/RapidDeploy 补强，FedRAMP High | 需要公司特定订单、客户、交付、价格和收入确认路径；竞争与实施周期仍在 | 保留 | 有条件上行情景 | 中 | 行业 beta 不能替代公司 alpha；低毛利硬件收入上修不自动变成利润上修 |
+| 极度乐观 | NTM 收入和利润率同时大幅高于当前预期，成长业务成为主要增长引擎 | 理论上由 Silvus 年化 `$1.6B+`、Command 接近 `$2B`、Video/AI DC 标准化、SVX 大客户采用共同驱动 | 当前无足够 revenue split、AI DC backlog、Hyper ARR 或多客户标准化证据；多个小概率事件需同时成立 | 下移 | 乐观上限/附录跟踪 | 低到中 | 同一“缺公司特定订单”风险只限制极度乐观和低证据子项目，不否定已披露 backlog/指引 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。MSI 的 NTM 最可能收入约 `$12.9B-$13.2B`，核心是 FY2026 `$12.8B` revenue guide 正常兑现并延续到 2027Q1；Software and Services 继续高于公司平均，Products and Systems Integration 温和增长，backlog 支撑收入确认。
+- NTM 收入结论：核心 LMR/P25/TETRA/APX + 服务仍贡献公司约七成收入，NTM 基准约 `$9.2B-$9.7B`；Video/Avigilon/Blue Eye 基准约 `$2.35B-$2.65B`；Command Center 云与 AI 基准约 `$1.15B-$1.35B`。Silvus 是 MCN 内最高弹性子集，NTM 基准估算 `$0.75B-$1.05B`；SVX 和数据中心物理安防是跨产品小基数上行因素，不能独立加总。
+- 利润/现金流结论：基准 non-GAAP operating margin 约 `29.2%-30.2%`，调整 EBITDA/净利润约 `$4.1B-$4.4B / $2.90B-$3.05B`，FCF 方向约 `$2.6B-$2.9B`。利润质量主要来自 S&S mix、服务续约、Command/Video 软件化和 Silvus 高价值项目；GAAP 口径会继续受收购摊销、earnout、利息和整合费用影响。
+- 主要传导瓶颈：第一，公共安全和国防需求到收入确认有政府预算、合同、交付、验收和服务开始时点；第二，Silvus 需要证明扩产、质量和多客户复制；第三，Command/Hyper agentic AI 需要处理责任、准确性、合规和数据迁移；第四，数据中心物理安防虽有行业需求，但 MSI 缺独立订单、客户和 backlog 披露。
+- 乐观情景成立条件：Q2-Q4 2026 orders/backlog 继续创新高；Silvus 连续披露 `$50M+` 国防/无人系统订单且扩产按计划；Command Center 持续出现 `$20M-$100M` 级 cloud/AI/911 订单；Video/Avigilon 和 Blue Eye 在企业、学校、关键基础设施或数据中心项目中高于公司平均；memory/tariff 成本被价格和 mix 抵消。
+- 极度乐观情景成立条件：Silvus MANET/FASST 成为多个 defense/unmanned program 的核心网络并把 NTM run-rate 推到 `$1.6B+`；Command Center/Hyper agentic AI 从收购叙事转为可量化 ARR 或大额合同；SVX + Assist 被联邦/州级客户标准化；Avigilon/Blue Eye 进入 hyperscale/colo/sovereign AI 标准供应商清单；同时 non-GAAP operating margin 上移到 `31.5%+`。
+- 悲观情景触发条件：Q2/Q3 backlog 低于 `$15.5B` 或订单明显放缓；PSI backlog 回落不能再用强发货解释；Silvus 订单低于 `$50M` 级别、扩产延迟或 margin 低于公司平均；Command AI 商业化慢；Video 竞争压价；memory/tariff 成本无法转嫁；FCF 低于 `$2.3B` 且库存/应收上升。
+- 后续跟踪数据：Q2/Q3 2026 MCN/Video/Command revenue growth，PSI 与 S&S backlog，Silvus 单笔订单和产能进度，FASST 6000 客户，SVX 订单和 FedRAMP 客户采用，Hyper/Exacom/RapidDeploy 是否披露客户和 ARR，Avigilon/Blue Eye 数据中心或关键基础设施客户，non-GAAP operating margin，GAAP earnout/amortization，FCF、库存、应收、净债务。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司经营数据截至 2026Q1（季度结束 2026-04-04，公告日期 2026-05-07）；本地行业和公司资料截至 2026-06-11；本文撰写日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Motorola Solutions Q1 2026 earnings release and financial tables, 2026-05-07: `https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-reports-q1-2026-financial-results.html`
+  - Motorola Solutions Q1 2026 Form 10-Q: `https://www.motorolasolutions.com/content/dam/msi/investors/doc_financials/2026/q1-2026/msi_q1_2026_10-q.pdf`
+  - Motorola Solutions Q1 2026 earnings presentation: `https://www.motorolasolutions.com/content/dam/msi/investors/doc_financials/2026/q1-2026/msi_q1_2026_earnings_presentation.pdf`
+  - Motorola Solutions Q1 2026 earnings call transcript: `https://www.motorolasolutions.com/content/dam/msi/investors/doc_financials/2026/q1-2026/msi_q1_2026_earnings_call_final_transcript_05-07-26.pdf`
+  - Motorola Solutions Q4/FY2025 earnings release and financial tables, 2026-02-11: `https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-reports-q4-and-fy-2025-financial-results.html`
+  - Motorola Solutions 2025 Form 10-K: `https://www.motorolasolutions.com/content/dam/msi/investors/doc_financials/2025/q4/msi_2025_10-k.pdf`
+  - Motorola Solutions Silvus acquisition completion, 2025-08-06: `https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-completes-acquisition-of-silvus-technologies.html`
+  - Motorola Solutions Silvus production and fulfillment expansion, 2026-05-14: `https://www.motorolasolutions.com/newsroom/press-releases/expand-silvus-technologies-production-and-fulfillment-capacity.html`
+  - Silvus FASST 6000 Spectrum Sensor launch, 2026-04-30: `https://www.motorolasolutions.com/newsroom/press-releases/silvus-technologies-introduces-fasst-6000-spectrum-sensor.html`
+  - Motorola Solutions Hyper acquisition and agentic Assist agents, 2026-04-09: `https://www.motorolasolutions.com/newsroom/press-releases/hyper-acquisition-and-new-agentic-assist-agents.html`
+  - Motorola Solutions Bell Canada LMR networks services acquisition, 2026-03-26: `https://www.motorolasolutions.com/newsroom/press-releases/acquiring-bell-canada-lmr-networks-services-business.html`
+  - Motorola Solutions SVX FedRAMP High authorization, 2026-02-10: `https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-svx-earns-highest-fedramp-authorization-level.html`
+- 项目内资料：
+  - `公司调研/机电_冷却_工程_水处理_边缘工业AI/MSI_Motorola Solutions_公司调研_2026-06-11.md`：用于公司业务结构、收入分部、收购、季度数据、产品线、风险和本地 MSI 底稿。
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜、围护结构与物理安防_2026-06-11.md`：用于数据中心 physical security、rack/access audit、facility security TAM 和“不要把全部 AI DC capex 计入 MSI”的边界。
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI边缘推理芯片_2026-06-11.md`：用于边缘 AI、智能摄像头、视频分析、端云协同和物理 AI 方向判断。
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`：用于 AI 数据中心建设、MW/rack 约束和安防只是小额 attach 的判断。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 公司主锚为 revenue `$12.8B`、non-GAAP EPS `$16.87-$16.99`，不是 NTM 的全部口径；NTM 另加入 2027Q1 正常延续。
+  - Bell Canada LMR networks services 交易预计 2026Q4 完成，基准只按 Q4 后小比例贡献和服务 backlog 质量处理；若审批或交割延迟，下移到乐观/附录，不影响当前核心 LMR 基准。
+  - 数据中心物理安防为真实但小比例机会；在未披露客户、订单、backlog 和交付窗口前，不把 data center physical security TAM 直接转为 MSI NTM 收入。
+  - Hyper/agentic AI、FASST 6000、SVX 大规模标准化和 rack-level security 均可作为远期期权或乐观上限；进入基准需公司特定客户、产品、合同和收入确认路径。
+- 主要外部行业来源：
+  - Grand View Research, Data Center Physical Security Market: `https://www.grandviewresearch.com/industry-analysis/data-center-physical-security-market-report`
+  - Grand View Research, Computer Aided Dispatch Market: `https://www.grandviewresearch.com/industry-analysis/computer-aided-dispatch-cad-market`
+  - Mordor Intelligence, Land Professional Mobile Radio Market: `https://www.mordorintelligence.com/industry-reports/land-professional-mobile-radio-market`
+  - Mordor Intelligence, Law Enforcement Software Market: `https://www.mordorintelligence.com/industry-reports/law-enforcement-software-market`

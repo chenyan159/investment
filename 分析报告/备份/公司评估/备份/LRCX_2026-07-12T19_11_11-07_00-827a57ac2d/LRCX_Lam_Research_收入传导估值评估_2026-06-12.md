@@ -1,0 +1,168 @@
+# 公司收入传导与价值传导评估：Lam Research (LRCX)
+
+报告日期：2026-06-12  
+正式输出目录：`分析报告/公司评估/`  
+研究对象：`LRCX` / Lam Research  
+主口径：NTM，即从 2026-06-12 观察的未来 12 个月，约等于 Lam FY2026 Q4 / QJun26 至 FY2027 Q3 / QMar27 四个季度。  
+资料边界：使用 `公司调研/`、`行业调研/` 与必要公开公司/行业披露复核；未读取、引用或继承 `特征量化/`、Signals、回归、模型比较或全公司排序结果。  
+排除事项：不输出投资评级、目标价、股价区间、估值倍数判断；市场价格和估值不作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表只看 NTM 经营传导；FY2026、FY2027、长期 run-rate、Aether dry resist、CPO/硅光和 3D DRAM 等只作为补充或远期期权。
+- 当前收入基准、指引和 run-rate：Lam FY2026 Q3 / QMar26 收入 58.41 亿美元；Systems 37.31 亿美元、CSBG 21.11 亿美元；QJun26 官方收入指引 66.0 亿美元 +/-4.0 亿美元，指引中点年化约 264 亿美元；QMar26 TTM 收入约 216.8 亿美元；FY2026E 按前三季实际加 QJun26 指引中点约 231.1 亿美元。
+- 当前可见订单/确认代理：Lam 不披露标准 bookings/backlog。可用代理是 QJun26 指引、递延收入 22.21 亿美元、对日本客户已发货但待验收的未来收入 4.34 亿美元、2026 WFE 展望约 1400 亿美元且偏上行、NAND >200L conversion 约 400 亿美元客户支出被提前拉动、advanced packaging 收入 2026 年预计增长超过 50%。
+- 重要产品/业务线：Foundry/Logic 先进节点刻蚀/沉积/清洗，DRAM/HBM 刻蚀/沉积/清洗，3D NAND HAR etch / cryo / conversion，advanced packaging 晶圆级设备，CSBG 服务/备件/升级/Reliant，Aether dry resist 与硅光/CPO 前道制程期权。
+- NTM 公司收入四情景：悲观 235-255 亿美元；基准 265-280 亿美元；乐观 290-320 亿美元；极度乐观 330-360 亿美元。相对当前 QJun26 指引年化 264 亿美元，悲观是收入平台回落，基准是指引正常兑现并轻微上移，乐观是 HBM/NAND/CoWoS/advanced node 多线超预期，极度乐观要求需求、份额、利润质量和执行同时突破。
+- 利润或 EBITDA 四情景：使用非 GAAP 经营利润率和净利润近似经营价值，不使用估值倍数。悲观经营利润率 32.5%-34.5%、净利润约 67-78 亿美元；基准经营利润率 35.5%-37.0%、净利润约 83-93 亿美元；乐观经营利润率 37.5%-39.5%、净利润约 97-113 亿美元；极度乐观经营利润率 40.0%-42.0%、净利润约 118-136 亿美元。
+- 最大传导瓶颈：不是 AI 主题相关性，而是客户 WFE 预算能否在 NTM 内转成 Lam 可发货、可安装、可验收的 Systems 收入，尤其是 HBM4、NAND conversion、CoWoS/advanced packaging 与 N2/GAA/BSPDN 相关 tool slots 是否同时兑现。
+- 最大利润率变量：产品 mix、利用率、客户议价、零部件/安装成本、China / Korea / Taiwan 区域 mix、CSBG attach，以及低毛利 pass-through 是否稀释 50% 以上毛利率。
+- 最大现金流变量：应收账款、库存、客户验收节奏、日本待验收收入、安装工程师和备件准备。QMar26 单季经营现金流 11.41 亿美元、自由现金流约 8.10 亿美元；FY2026 前九个月经营现金流 44.00 亿美元、资本开支 7.78 亿美元，显示现金流强但仍受营运资本波动影响。
+- 可信度：公司层面基准为中高，因为 QJun26 指引、Systems/CSBG 披露、WFE 展望、递延收入和行业需求相互印证；产品级精确利润率为中，因为 Lam 不披露细分产品毛利和正式 backlog；Aether、CPO/硅光、4F2/3D DRAM 为低可信远期期权。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Foundry/Logic 先进节点刻蚀、沉积、清洗 | QMar26 Foundry 约 20.15 亿美元/季 + Logic/Other 约 2.61 亿美元/季；合计年化约 91 亿美元，AI/先进节点相关为模型估算 | 约 39% 当前季度收入 | 先进 AI GPU/ASIC、N3/N2/GAA/BSPDN、HBM base die 的核心 Systems 线 | A：Systems 分项披露；C：AI/先进节点拆分估算 | 进入基准，是 NTM Systems 最大收入池；advanced node 相关增量需按客户扩产和交付节奏折扣 | N2U/A16/BSPDN/High-NA 相关需求超过 NTM 的部分只作补充 |
+| DRAM/HBM 刻蚀、沉积、清洗 | QMar26 DRAM Systems 约 10.07 亿美元/季，年化约 40 亿美元；HBM/先进 DRAM 子集为模型估算 | 约 17% 当前季度收入 | HBM3E 12H、HBM4、1c DRAM、TSV 前置与高端 memory wafer starts | A：DRAM Systems 披露；B/C：HBM4 客户认证和行业资料 | 进入基准；HBM3E/1c DRAM 作为基准，HBM4 加速作为乐观 | HBM4E、16H、custom base die、hybrid bonding 主要是 2027+ 上沿 |
+| 3D NAND HAR etch / Vantex / Cryo / >200L conversion | QMar26 NVM Systems 约 4.48 亿美元/季，年化约 18 亿美元；高层数转换子集为模型估算 | 约 8% 当前季度收入 | >200L conversion、300/400L NAND、AI eSSD/KV cache 需求传导 | A：NVM Systems 披露；B：管理层披露约 400 亿美元 conversion spending 被提前拉动 | 进入基准，但基准不能把 400 亿美元客户支出直接当 Lam 收入；只按 Lam 可捕获设备确认 | 400/500L cryo 加速、3D NAND greenfield 进入乐观/极度乐观 |
+| Advanced packaging 晶圆级设备：TSV、ECD、RDL、clean、wafer-level process | 公司未单列收入；项目内估算当前年化约 9-13 亿美元，含在 Systems 客户分项中 | 交叉口径，约 4%-6%，不可与 Foundry/DRAM/NVM 重复加总 | CoWoS/HBM/2.5D/3D 封装紧张对 Lam SABRE 3D、TSV etch、clean 的拉动 | B：管理层预计 2026 advanced packaging revenue 增长 >50%；C：收入规模估算 | 以“包含在 Systems 内的子集”进入基准；公司汇总时不额外加总 | Hybrid bonding、panel/glass、CPO packaging 设备多为 2027+ |
+| CSBG：服务、备件、升级、Reliant、Dextro/automation | QMar26 21.11 亿美元/季，年化约 84 亿美元 | 约 36% 当前季度收入 | 稳定现金流、installed base、服务 attach、生产率升级 | A：公司直接披露 | 进入基准，是抗周期底盘；随装机基数和高稼动率稳步增长 | 更高自动化、process analytics、服务软件化可进入乐观 |
+| Aether dry resist / dry develop、硅光/CPO 前道制程 | 当前收入无法可靠量化；估计小于主业务量级，且多数处于认证、试产或小批量 | 无法可靠量化；大概率低个位数占比 | 可能改变长期图形化或光互联设备结构，但非 NTM 主线 | D：产品发布、合作、样品/认证；E：部分仅主题相关 | 不进入 NTM 基准；只在乐观上限、小额收入或附录跟踪中出现 | High-NA/dry resist POR、CPO/COUPE、硅光 foundry 放量属于远期期权 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 Lam 份额、收入确认、利润率或公司汇总。需求锚点来自 Lam WFE 展望、SEMI 300mm/WFE、项目内行业报告、HBM/先进逻辑/存储/advanced packaging 路线图和客户 capex/产品节奏。绝对变化指需求池或需求强度变化；相对预期指相对当前 Lam 指引、行业预算和客户扩产节奏。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Foundry/Logic 先进节点刻蚀、沉积、清洗 | Lam 2026 WFE 展望约 1400 亿美元且偏上行；QMar26 Systems 中 Foundry 54%、Logic/Other 7%；行业资料显示 N3/N2/GAA/BSPDN 增加 etch/deposition/clean 强度 | AI GPU/ASIC 或先进 foundry capex 延后，WFE 回落至 1250-1350 亿美元附近；N2/GAA 设备从 NTM 后移 | WFE 接近 1400 亿美元，N3/N4 高稼动，N2/GAA/BSPDN 订单按计划逐步进入；需求约等于当前预算路径 | WFE 1450-1550 亿美元，Rubin/MI400/Trainium3/TPU/ASIC 提前锁设备，N2/GAA 工艺设备强于当前预期 | WFE 1600 亿美元以上且 2027 需求提前，先进节点、GAA、BSPDN 与 regional fabs 同步加速 | 需求池相对基准从 -5%/-10% 到 +15%/+25% 以上 | 基准符合当前预期；乐观需要 2026H2 capex 再上修 | 正向：Lam 指引和 WFE 上修；反证：云厂 capex 下修、N3/N2 wafer allocation 松动、客户 tape-out 延迟 |
+| DRAM/HBM 刻蚀、沉积、清洗 | HBM3E 12H 是 2026 主力，HBM4 进入 Rubin/下一代 ASIC 导入；项目内 HBM 报告显示 HBM4 2026H2-2027 加速；DRAM Systems QMar26 为 27% Systems | HBM4 认证或 Rubin/MI400 延迟超过 2 个季度；普通 DRAM ASP 回落，客户将部分 DRAM/HBM capex 推迟 | HBM3E 12H 和 1c DRAM 正常扩产，HBM4 小量导入，DRAM/HBM WFE 维持强需求 | HBM4 多源良率和客户认证顺利，GB300/MI350/TPU/Trainium/ASIC 共同拉动 HBM wafer starts | HBM4/16H/custom base die 同时短缺，客户提前锁 2027 工具；HBM 从产品短缺进一步变成前道设备短缺 | DRAM/HBM 工具需求相对基准从 -10% 到 +20%/+40% | 基准强于普通存储周期，但仍符合当前 AI memory 预期 | 正向：HBM 规格和客户平台明确；反证：HBM ASP 连续两季下滑且库存上升、HBM4 良率或客户认证失败 |
+| 3D NAND HAR etch / Cryo / conversion | 管理层披露约 400 亿美元 >200L NAND conversion spending 被客户提前拉动；项目内存储设备报告指向 300/400L、eSSD/KV cache 和 high-AR etch | NAND ASP 或 eSSD 需求回落，客户只做维护性 conversion；400L/cryo 订单后移 | >200L conversion 正常兑现，NAND utilization 恢复，高层数工艺持续增加 HAR etch、deposition、clean 需求 | AI eSSD/KV cache 和企业 SSD 拉动 300/400L 订单提前，cryo/Vantex installed-base upgrade 加速 | NAND 从周期复苏变成第二硬瓶颈，greenfield 与 conversion 同时上修，400/500L 工具提前 | 可服务需求从基准 200-280 亿美元级 NTM Lam 相关设备池上修到 300 亿美元以上；客户总支出不可直接等于 Lam 收入 | 基准是当前管理层叙事兑现；乐观需要 eSSD/NAND capex 继续上修 | 正向：400 亿美元 conversion spending；反证：NAND ASP 下跌、客户库存上升、工具 throughput/yield 不达标 |
+| Advanced packaging 晶圆级设备 | Lam 预计 2026 advanced packaging revenue 增长 >50%；CoWoS/HBM/2.5D/TSV/RDL 仍是 AI 芯片交付瓶颈 | CoWoS 扩产或 HBM 堆叠被 ABF、interposer、test、系统验收卡住，Lam 相关晶圆级设备需求只温和增长 | CoWoS/TSV/RDL/ECD/clean 按现有扩产计划执行，Lam advanced packaging 收入同比高增但基数仍小 | HBM4、CoWoS-L/S、cloud ASIC 外溢带动 TSV/RDL/ECD/clean 拉货超过当前预期 | 2.5D/3D packaging 和 HBM4 同时短缺，客户提前锁 2027 晶圆级封装工具 | 相对当前 >50% 增长锚，从低于 30% 到 70%/100%+ | 基准已包含高增；乐观需要订单强于 >50% 管理层锚点 | 正向：CoWoS/HBM 紧张；反证：瓶颈转移到基板、测试、液冷或 OSAT 折旧，Lam 设备弹性小于 AI rack 弹性 |
+| CSBG 服务、备件、升级、Reliant | QMar26 CSBG 21.11 亿美元，首次超过 20 亿美元/季；installed base 和稼动率驱动 | WFE 放缓、客户降低备件库存、成熟制程停机窗口增加，服务增长降至低个位数或持平 | 装机基数扩大，高稼动率维持，服务/备件/升级按 8%-15% 年增路径推进 | AI 客户更重视 uptime/yield，升级、Dextro/automation 和 field option attach 增加 | 工具短缺使客户优先购买生产率升级，服务和自动化同时放大 | NTM 需求约从 82-88 亿美元到 110 亿美元以上 | 基准符合当前 installed-base 预期；乐观是服务 attach 超预期 | 正向：first $2B CSBG quarter；反证：客户停机、成熟制程利用率下行、第三方维修或客户自维护压价 |
+| Aether dry resist、硅光/CPO 前道制程 | Aether/dry develop、High-NA/EUV 缺陷控制、CPO/COUPE/硅光为长期技术方向；当前缺少披露收入和规模订单 | 客户仍用 wet resist / pluggable optics / 传统封装，NTM 无显著收入 | 继续认证/小批量，收入小且已含在普通 Systems 或研发合作中 | 个别客户 POR 评估扩大，NTM 出现小额工具收入 | High-NA/dry resist 或 CPO 量产规则提前，成为新设备上限情景 | 从 0 到小额数亿美元级；无法可靠量化 | 不纳入基准；仅作跟踪或上限 | 正向：技术合作和产品发布；反证：没有客户、时间表、收入确认路径，不得进入基准 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断产品需求能否进入 Lam NTM 收入表，以及当前可收入化基数；不预测利润扩张。Lam 披露按 Systems / CSBG 和 Systems 客户工艺分项，不披露标准 backlog/bookings，也不披露产品级毛利，因此所有产品级收入均注明证据等级。Advanced packaging 是交叉子集，不能在公司汇总中与 Foundry/DRAM/NVM 重复加总。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Foundry/Logic 先进节点刻蚀、沉积、清洗 | QMar26 Foundry Systems 20.15 亿美元/季、Logic/Other 2.61 亿美元/季；年化约 91 亿美元 | 直接 Systems 收入；AI GPU/ASIC 通过 foundry capex 间接传导 | 毛利率接近或略高公司 Systems 平均；竞争强于 NAND/HBM | 85-95 亿美元 | 98-108 亿美元 | 110-125 亿美元 | 130-150 亿美元 | 基准符合 QJun26 指引年化和 WFE 1400 亿美元锚；乐观高于当前 run-rate | A/C | 是 | A 级分项收入可确认；AI/先进节点拆分为模型估算并折扣 | 作为最大 additive Systems 线进入公司基准；极度乐观需多客户先进节点同步加速 |
+| DRAM/HBM 刻蚀、沉积、清洗 | QMar26 DRAM Systems 10.07 亿美元/季；年化约 40 亿美元 | 直接 Systems 收入；HBM/AI 内存为客户 capex 间接传导 | HBM/先进 DRAM mix 改善时利润率上行；初期良率和安装成本约束 | 38-44 亿美元 | 45-53 亿美元 | 55-65 亿美元 | 68-78 亿美元 | 基准高于当前年化，因 QJun26 指引和 HBM/1c DRAM 需求；乐观需 HBM4 提前 | A/B/C | 是 | A 级 DRAM 收入；HBM4/HBM3E 路线由客户平台和行业资料支持 | 进入基准；HBM4/16H 只进入乐观和极度乐观 |
+| 3D NAND HAR etch / Cryo / conversion | QMar26 NVM Systems 4.48 亿美元/季；管理层披露约 400 亿美元 NAND conversion spending 被提前拉动 | 直接 Systems 收入；客户 conversion spending 需通过份额、交付、验收确认 | 高 AR etch 和 installed-base upgrade 利润质量较好，但 NAND 周期波动大 | 15-20 亿美元 | 21-28 亿美元 | 30-42 亿美元 | 45-58 亿美元 | 基准高于当前年化，反映 conversion；极度乐观只代表上限 | A/B | 是 | A 级 NVM 收入；B 级 conversion 支出有管理层披露但非 Lam 订单额 | 进入基准；不得把 400 亿美元客户支出直接当 Lam 收入 |
+| Advanced packaging 晶圆级设备 | 公司未单列；管理层预计 2026 收入增长 >50%；项目内估算当前年化约 9-13 亿美元 | 直接 Systems 子集，但与 Foundry/DRAM/NVM 客户分项交叉 | 毛利可能中高，但竞争分散、工具组合不纯 | 8-10 亿美元 | 11-15 亿美元 | 16-22 亿美元 | 22-28 亿美元 | 基准符合 >50% 增长锚；乐观需 CoWoS/HBM 拉货超预期 | B/C | 是，但只作子集 | 管理层增长披露为 B；收入额为模型估算 | 进入基准的“子集口径”；公司汇总时不额外加总 |
+| CSBG 服务、备件、升级、Reliant | QMar26 CSBG 21.11 亿美元/季，QDec25 19.87 亿美元，QMar25 16.85 亿美元 | 直接收入 | 稳定性和现金转化优于 Systems；毛利可能更稳定 | 82-88 亿美元 | 88-96 亿美元 | 98-108 亿美元 | 110-125 亿美元 | 基准略高于当前年化，符合 installed base 增长；乐观为 attach 上修 | A | 是 | A 级分项收入，且连续季度增长 | 进入基准，是公司现金流底盘 |
+| Aether dry resist、硅光/CPO 前道制程 | 未披露收入；产品发布、合作和试产线索；当前若有收入也小且可能已包含在普通 Systems | 直接潜在工具收入，但 NTM 可确认性低 | 初期费用和认证成本高，利润不可外推 | 0 | 0-2 亿美元，且不单列增量 | 3-8 亿美元 | 10-20 亿美元 | 基准不高于当前预期；乐观/极度乐观只是上限 | D/E | 否 | 缺少 A/B 级收入锚、客户订单和确认时间表 | 不进 NTM 基准；移入附录或仅作跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，评估产品在 NTM 内给 Lam 的可确认收入和经营利润贡献。利润贡献为“经营利润等价贡献”模型估算，不是公司披露的 segment operating income；未披露产品毛利处填估算或无法可靠量化。Advanced packaging 为 Systems 子集，表中列示传导但公司汇总不重复加总。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Foundry/Logic 先进节点刻蚀、沉积、清洗 | 悲观产品 | 85-95 亿美元 | 27-33 亿美元 | 低于当前结构；价格和利用率承压 | 低于 QJun26 指引年化和 WFE 1400 亿美元锚 | QMar26 已有约 91 亿美元年化锚 | 保留为下行情景 | N2/GAA 客户延迟、AI ASIC tape-out 放缓、AMAT/TEL/ASM 份额竞争 |
+| Foundry/Logic 先进节点刻蚀、沉积、清洗 | 基准产品 | 98-108 亿美元 | 35-41 亿美元 | 稳定至小幅改善 | 符合当前预期正常兑现 | QJun26 指引中点年化 264 亿美元；Foundry/Logic 为最大 Systems 收入池 | 保留 | 不得把所有 AI capex 都转成 Lam 收入；需按 tool share 和验收 |
+| Foundry/Logic 先进节点刻蚀、沉积、清洗 | 乐观产品 | 110-125 亿美元 | 42-50 亿美元 | mix 和吸收改善 | 高于当前预期 | 2026H2 收入预计高于 2026H1；AI 驱动 deposition/etch intensity 上升 | 保留 | 先进节点需求强但竞争分散，不能自动假设份额提升 |
+| Foundry/Logic 先进节点刻蚀、沉积、清洗 | 极度乐观产品 | 130-150 亿美元 | 53-65 亿美元 | 明显扩张，但需高利用率和高价值 mix | 显著高于当前预期 | 多客户 N3/N2/GAA/BSPDN 同步拉货 | 下移为上限 | 单一大客户或单一节点不能支撑非线性上修 |
+| DRAM/HBM 刻蚀、沉积、清洗 | 悲观产品 | 38-44 亿美元 | 12-16 亿美元 | HBM mix 不足，安装/良率成本吞噬部分利润 | 低于当前 HBM/DRAM 预期 | DRAM Systems 已披露 10.07 亿美元/季 | 保留 | HBM4 良率/认证延迟、HBM ASP 和库存恶化 |
+| DRAM/HBM 刻蚀、沉积、清洗 | 基准产品 | 45-53 亿美元 | 16-21 亿美元 | 稳定改善 | 符合当前预期 | HBM3E 12H 主力、HBM4 小量导入、1c DRAM 扩产 | 保留 | HBM 供应紧不等于 Lam 所有工具份额提升 |
+| DRAM/HBM 刻蚀、沉积、清洗 | 乐观产品 | 55-65 亿美元 | 22-28 亿美元 | mix 明显改善 | 高于当前预期 | Rubin/MI400/ASIC、HBM4、SOCAMM/eSSD 需求增强 | 保留 | 需要“谁买、买什么、何时确认、Lam 为何捕获”同时成立 |
+| DRAM/HBM 刻蚀、沉积、清洗 | 极度乐观产品 | 68-78 亿美元 | 29-36 亿美元 | 强扩张 | 显著高于当前预期 | HBM4/16H/custom base die 提前，客户锁定 tool slots | 下移为上限 | HBM4 多源良率、CoWoS、base die、测试任一环节失败都会推迟 |
+| 3D NAND HAR etch / Cryo / conversion | 悲观产品 | 15-20 亿美元 | 4-7 亿美元 | 低利用率或价格压力 | 低于当前 conversion 预期 | NVM Systems 4.48 亿美元/季是 A 级锚点 | 保留 | NAND ASP 回落、eSSD 库存上升、conversion 后移 |
+| 3D NAND HAR etch / Cryo / conversion | 基准产品 | 21-28 亿美元 | 7-10 亿美元 | 随 high-AR mix 改善 | 符合当前预期 | 400 亿美元 >200L conversion spending 被提前拉动 | 保留 | 客户总支出必须经份额、交付、验收折扣 |
+| 3D NAND HAR etch / Cryo / conversion | 乐观产品 | 30-42 亿美元 | 11-17 亿美元 | 高 AR etch / upgrade 带来扩张 | 高于当前预期 | 300/400L、cryo、AI eSSD/KV cache 同时增强 | 保留 | NAND 仍有强周期，不能只看 AI storage 叙事 |
+| 3D NAND HAR etch / Cryo / conversion | 极度乐观产品 | 45-58 亿美元 | 18-26 亿美元 | 非线性扩张需要客户锁工具 | 显著高于当前预期 | greenfield + conversion + 400/500L 同时上修 | 下移为上限 | throughput/yield、客户 capex 和价格周期是硬约束 |
+| Advanced packaging 晶圆级设备 | 悲观产品 | 8-10 亿美元，含在 Systems 内 | 2-4 亿美元 | 低于 >50% 增长锚 | 低于当前预期 | 当前需求确定但瓶颈可能转移 | 保留 | ABF、interposer、test、液冷或 OSAT 折旧成为瓶颈 |
+| Advanced packaging 晶圆级设备 | 基准产品 | 11-15 亿美元，含在 Systems 内 | 4-6 亿美元 | 稳定改善 | 符合 >50% 增长锚 | Lam 管理层披露 2026 advanced packaging revenue >50% growth | 保留 | 收入额为估算，不能重复加总 |
+| Advanced packaging 晶圆级设备 | 乐观产品 | 16-22 亿美元，含在 Systems 内 | 6-9 亿美元 | mix 和稼动率改善 | 高于当前预期 | CoWoS/HBM/TSV/RDL 拉货强 | 保留 | 竞争分散，Lam 份额需逐工具验证 |
+| Advanced packaging 晶圆级设备 | 极度乐观产品 | 22-28 亿美元，含在 Systems 内 | 9-13 亿美元 | 高毛利需差异化工具成立 | 显著高于当前预期 | 2.5D/3D 与 HBM4 同时短缺 | 下移为上限 | 若只是低毛利 pass-through 或安装延期，利润不能同比例放大 |
+| CSBG 服务、备件、升级、Reliant | 悲观产品 | 82-88 亿美元 | 27-32 亿美元 | 稳定但增长放慢 | 低于当前 installed-base 预期 | QMar26 21.11 亿美元/季 | 保留 | 客户降备件、成熟制程稼动率下行、第三方维修压价 |
+| CSBG 服务、备件、升级、Reliant | 基准产品 | 88-96 亿美元 | 32-37 亿美元 | 稳定至小幅改善 | 符合当前预期 | 首个 20 亿美元以上 CSBG 季度；装机基数扩大 | 保留 | 服务增长通常不是爆发式，需避免过度上修 |
+| CSBG 服务、备件、升级、Reliant | 乐观产品 | 98-108 亿美元 | 38-45 亿美元 | attach 和自动化提升 | 高于当前预期 | AI 客户 uptime/yield 需求强化，Dextro/upgrade 推动 | 保留 | 客户预算优先新设备时，服务增速可能落后 |
+| CSBG 服务、备件、升级、Reliant | 极度乐观产品 | 110-125 亿美元 | 45-55 亿美元 | 强运营杠杆 | 显著高于当前预期 | 工具短缺使 productivity upgrade 变成优先投资 | 下移为上限 | 现场工程师、备件、客户停机窗口限制交付 |
+| Aether dry resist、硅光/CPO 前道制程 | 悲观产品 | 0 | 费用投入，无法可靠量化 | 无收入贡献 | 不进入预期 | D/E 级证据 | 排除出基准 | 无客户订单、无 NTM 确认路径 |
+| Aether dry resist、硅光/CPO 前道制程 | 基准产品 | 0-2 亿美元，且不单列增量 | 无法可靠量化 | 对公司利润无显著影响 | 仅符合当前低基数预期 | 产品/合作线索 | 移入附录 | 若已含在普通 Systems，不重复计入 |
+| Aether dry resist、硅光/CPO 前道制程 | 乐观产品 | 3-8 亿美元 | 0-2 亿美元 | 认证成本仍高 | 小幅高于当前预期 | 个别客户 POR/试产扩大 | 仅作跟踪 | 需客户、产品、时间表、验收四项齐全 |
+| Aether dry resist、硅光/CPO 前道制程 | 极度乐观产品 | 10-20 亿美元 | 2-7 亿美元 | 取决于差异化和客户切换 | 上限情景，不代表当前预期 | High-NA/dry resist 或 CPO 规则提前 | 下移为远期期权 | 缺乏 A/B 级收入证据，不能进入 NTM 主表 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把可加总产品贡献合成为 Lam NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向，不讨论市场定价。公司汇总前已去重：advanced packaging、Aether、硅光/CPO 为 Systems 子集或期权，不在 Foundry/DRAM/NVM/CSBG 之外额外重复加总。增速以 QMar26 TTM 收入约 216.8 亿美元为参照；相对预期以 QJun26 指引年化 264 亿美元、WFE 1400 亿美元和当前 Systems/CSBG run-rate 为锚。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 235-255 亿美元 | 约 +8% 至 +18% vs QMar26 TTM；但低于 QJun26 指引年化 264 亿美元 | 低于当前指引/run-rate；QJun26 可能接近低端，后续季度回落至 58-63 亿美元 | 48.0%-49.5% | 32.5%-34.5% | 净利润约 67-78 亿美元；经营利润约 76-88 亿美元 | FCF 45-58 亿美元，营运资本拖累加大 | 中 | WFE 或客户验收延迟、China/成熟制程下行、HBM/NAND 订单后移、库存和应收占用 |
+| 基准公司 | 265-280 亿美元 | 约 +22% 至 +29% vs QMar26 TTM | 符合当前预期正常兑现；QJun26 指引中点后季度收入保持 64-70 亿美元平台 | 50.0%-51.0% | 35.5%-37.0% | 净利润约 83-93 亿美元；经营利润约 94-104 亿美元 | FCF 60-72 亿美元，现金流强但受安装验收节奏影响 | 中高 | 订单转收入、客户验收、安装工程师、产品 mix 和中国区域风险 |
+| 乐观公司 | 290-320 亿美元 | 约 +34% 至 +48% vs QMar26 TTM | 高于当前预期；HBM4、NAND conversion、CoWoS/advanced packaging、N2/GAA 至少两条超预期 | 51.0%-53.0% | 37.5%-39.5% | 净利润约 97-113 亿美元；经营利润约 109-126 亿美元 | FCF 75-94 亿美元，递延收入和服务 attach 支撑现金 | 中 | 需要需求、份额、交付、价格/mix 同步成立；否则只是收入上修、利润未必上修 |
+| 极度乐观公司 | 330-360 亿美元 | 约 +52% 至 +66% vs QMar26 TTM | 显著高于当前预期；客户把 2027 需求提前进 2026H2-2027H1 | 52.0%-54.5% | 40.0%-42.0% | 净利润约 118-136 亿美元；经营利润约 132-151 亿美元 | FCF 95-120 亿美元，但应收、库存、供应链和安装容量成为上限 | 低到中 | 必须 HBM4、NAND 400L、advanced packaging、advanced node、CSBG 同时突破，且供应链可交付 |
+
+汇总校验：
+
+| 检查项 | 处理 |
+| --- | --- |
+| 产品重复计算 | Foundry/Logic、DRAM/HBM、NVM/NAND 和 CSBG 为主要可加总线；advanced packaging、Aether、硅光/CPO 为交叉/期权，单列但不重复加总 |
+| 一次性项目 | 未把客户总 capex、TAM、项目总金额、WFE 全额映射为 Lam 收入；400 亿美元 NAND conversion 只作为需求锚 |
+| 传统/周期抵消 | 悲观情景中纳入成熟制程、China、NAND 周期和客户价格重谈的抵消；基准不假设所有传统业务同步增长 |
+| 低毛利 pass-through | 公司利润率上修只在高价值 etch/deposition/CSBG/advanced packaging mix 改善时出现；若只是低毛利交付，收入上修不等于利润上修 |
+| 现金流 | QMar26 单季 FCF 约 8.10 亿美元，FY2026 前九个月 FCF 约 36.23 亿美元；NTM FCF 取决于验收、应收、库存和 capex |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只对前四步情景进行证据校准。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| QJun26 收入指引 66.0 亿美元 +/-4.0 亿美元、毛利率 50.5% +/-1%、非 GAAP 经营利润率 36.5% +/-1% | 公司汇总、产品贡献 | 支撑 NTM 基准收入不低于当前 60 亿美元季度平台 | 支撑基准利润率在 50% GM、35%+ OPM 附近 | 若实际低于 62 亿美元，说明转收入或需求弱于预期 | 基准保留；悲观保留为低端验收风险 |
+| QMar26 Systems 37.31 亿美元、CSBG 21.11 亿美元，Systems mix 为 Foundry 54%、DRAM 27%、NVM 12%、Logic/Other 7% | 收入基数、产品贡献 | 提供 A 级收入锚，避免用 TAM 替代收入 | CSBG 稳定性改善公司利润质量 | Systems 需要安装验收；CSBG 现金更稳 | Foundry/DRAM/NVM/CSBG 基准保留 |
+| Lam 2026 WFE 展望约 1400 亿美元且偏上行，SEMI 300mm/WFE 数据强 | 产品需求 | 支撑 Foundry/Logic、DRAM/HBM、NAND 需求池 | 稀缺工具和高利用率有助于 mix | 若行业 billings 回落，订单可见度下降 | 需求基准保留；乐观保留 |
+| NAND >200L conversion spending 约 400 亿美元被提前拉动 | 需求、收入基数、产品贡献 | 支撑 NVM/NAND 从低基数恢复，但必须折扣成 Lam revenue | HAR etch/cryo/upgrade mix 改善利润 | conversion 节奏受客户验收和 NAND 周期影响 | NVM 基准保留；极度乐观下移为上限 |
+| Advanced packaging revenue 2026 预计增长 >50% | 产品需求、收入基数 | 支撑 advanced packaging 子集进入基准 | 若 TSV/ECD/clean 为高价值工具，可改善 mix | 竞争分散和瓶颈转移限制现金兑现速度 | 作为 Systems 子集保留；不重复加总 |
+| HBM3E 12H、HBM4、Rubin/MI400/TPU/Trainium/ASIC 路线 | 产品需求 | 支撑 DRAM/HBM 需求强于普通 DRAM | 高端 memory tool mix 改善利润，但初期良率成本存在 | 客户认证和 CoWoS/HBM/test 同步性决定兑现 | 基准保留；乐观保留；极度乐观下移为上限 |
+| China revenue location QMar26 为 34% | 公司组合、风险 | 既支撑当前收入，也带来出口管制/成熟制程风险 | 区域 mix、国产替代和价格竞争可能压利润 | 政策许可和客户验收影响收款与交付 | 悲观保留；风险只在公司组合层处理，不重复压低每个产品 |
+| Lam 不披露 bookings/backlog/book-to-bill | 证据可信度 | 降低产品级收入确认精度 | 降低产品级利润率精度 | 需要用递延收入、指引、日本待验收收入和客户项目代理 | 基准可信度为中高而非高；产品级为中 |
+| QMar26 递延收入 22.21 亿美元，加日本待验收未来收入 4.34 亿美元 | 收入确认、现金流 | 提供约 26.55 亿美元公开可见收入/验收代理 | 对利润率方向中性 | 验收延迟会推迟收入和现金 | 基准保留；悲观保留为验收风险 |
+| Aether dry resist、硅光/CPO 仅产品/认证/主题线索 | 收入基数、产品贡献 | 缺少 A/B 级收入表或订单证据 | 初期利润不可外推 | 缺客户和时间表，现金流不可评估 | 移入附录；仅作跟踪；不进 NTM 基准 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 收入低于 QJun26 指引年化，Systems 增长后移，利润率低于当前结构 | A 级收入仍在 58-66 亿美元季度平台，CSBG 底盘强 | WFE、China、NAND、客户验收、安装和库存风险 | 保留 | 悲观公司：235-255 亿美元收入，32.5%-34.5% OPM | 中 | China/export 风险只在公司组合层处理，不在每条产品线重复惩罚 |
+| 基准 | QJun26 指引兑现，WFE 1400 亿美元附近，DRAM/HBM、NAND conversion、advanced packaging 和 CSBG 正常推进 | 官方收入、Systems/CSBG、指引、WFE、NAND conversion、advanced packaging 和 CSBG 均支持 | 缺 bookings/backlog，产品级毛利需估算 | 保留 | 主情景：265-280 亿美元收入，35.5%-37.0% OPM | 中高 | 产品级利润率不精确只降低可信度，不再重复下调收入 |
+| 乐观 | NTM 收入高于当前预期，至少两条产品线超预期 | HBM4/Rubin、NAND conversion、CoWoS/advanced packaging、N2/GAA、CSBG attach 均有正向证据 | 需要公司特定收入确认路径，不能只靠 AI capex 叙事 | 保留 | 上行情景：290-320 亿美元收入，37.5%-39.5% OPM | 中 | AI capex 热度不能同时替代需求、份额、验收和利润率证据 |
+| 极度乐观 | 需求、公司捕获、利润率和执行同时突破 | 多条需求线有长期强证据，Lam 在刻蚀/沉积/清洗/CSBG 有 process-of-record 优势 | 同时性证据不足；供应链、安装、客户认证、价格和区域风险任一失败都会降级 | 下移 | 极度乐观上限：330-360 亿美元收入，40.0%-42.0% OPM；不是主预期 | 低到中 | 不把 Aether/CPO/3D DRAM 等远期期权叠加进 NTM 基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入最可能落在 265-280 亿美元，核心原因是 QJun26 指引中点已经把季度平台抬到 66 亿美元，CSBG 超过 20 亿美元/季，WFE 约 1400 亿美元且偏上行，DRAM/HBM、NAND conversion 和 advanced packaging 均有可见需求锚。
+- 利润/现金流结论：基准经营利润率 35.5%-37.0%，净利润约 83-93 亿美元，FCF 约 60-72 亿美元。利润质量优于单纯周期复苏，因为 CSBG 占比约 36%、服务/升级粘性强；但 Systems 仍是强周期业务，毛利率能否持续高于 50% 取决于 mix、客户价格、区域结构和安装成本。
+- 主要传导瓶颈：行业需求到 Lam 收入之间的最大缺口是“可参与需求”与“可确认收入”的差异。HBM、CoWoS、NAND 和 advanced node 的客户预算很大，但必须经过 Lam tool share、客户 POR、产能、安装、验收、递延收入释放和现金回收，才能变成收入和利润。
+- 乐观情景成立条件：QJun26 实际收入接近或超过指引中点且 QSep26/QDec26 指引继续上行；DRAM/NVM Systems 占比继续提高；递延收入加日本待验收未来收入继续上升；advanced packaging >50% 增长兑现且不被低毛利工具稀释；CSBG 保持 20 亿美元以上季度平台并继续增长。
+- 极度乐观情景成立条件：HBM4/Rubin/MI400/ASIC、NAND 300/400L conversion、CoWoS/TSV/RDL、N2/GAA/BSPDN 和 CSBG upgrade 同时超预期；客户愿意提前锁 2027 tool slots；Lam 在关键 etch/deposition/clean 工艺维持或提升份额；毛利率同步突破而不是只增加低毛利交付。
+- 悲观情景触发条件：QJun26 实际低于 62 亿美元或后续指引回落；递延收入/待验收未来收入下降；HBM4 或 CoWoS 客户验收推迟超过 2 个季度；NAND ASP/库存恶化导致 conversion 后移；China 出口管制扩大影响成熟制程或服务；收入增长但毛利率无法保持 50% 附近。
+- 后续跟踪数据：QJun26 实际收入、Systems/CSBG、Systems 中 Foundry/DRAM/NVM mix、CSBG 同比/环比、递延收入和日本待验收未来收入、毛利率/经营利润率、库存和应收账款、China/Korea/Taiwan 区域收入、Lam WFE 展望、NAND conversion 评论、advanced packaging revenue growth、HBM4/Rubin/MI400/CoWoS/N2/GAA 客户认证和设备安装节奏。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新官方财务数据截至 2026-03-29；Lam QJun26 指引发布于 2026-04-22；本报告外部复核截至 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Lam Research FY2026 Q3 / QMar26 press release，2026-04-22：https://newsroom.lamresearch.com/2026-04-22-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-March-29%2C-2026
+  - Lam Research March quarter 2026 financial results slides，2026-04-22：https://investor.lamresearch.com/image/MarQ26_slides_Full_Final.pdf
+  - Lam Research FY2026 Q3 Form 10-Q，filed 2026-04-23：https://app.quotemedia.com/data/downloadFiling?cdn=b7773488d3ab9246da8c4cd9f42cc97e&companyName=Lam+Research+Corporation&dateFiled=2026-04-23&formType=10-Q&ref=319974319&symbol=LRCX&type=PDF&webmasterId=101533
+  - Lam Research quarterly results page：https://investor.lamresearch.com/quarterly-results
+- 项目内公司资料：
+  - `公司调研/晶圆制造_前道设备/LRCX_Lam Research_公司调研_2026-06-11.md`：用于业务结构、产品映射、Lam 与项目内行业资料交叉验证；其中 QMar26 单季经营现金流和自由现金流以本报告复核的官方 press release / slides / 10-Q 为准。
+- 项目内行业资料：
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`：用于 WFE、AI/HPC 先进逻辑、etch/deposition/clean、GAA/BSPDN、Aether 和行业反证。
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_存储前道制造设备_2026-06-11.md`：用于 DRAM/HBM、3D NAND、HAR etch、cryo、NAND conversion 和存储设备需求。
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-06-11.md`：用于 CoWoS、HBM4、先进逻辑、先进封装、CPO/COUPE 和反证指标。
+  - `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`：用于 HBM3E/HBM4、Rubin/MI400/TPU/Trainium/ASIC、HBM 需求和反证。
+- 外部行业复核：
+  - SEMI 300mm Fab Equipment Spending press release，2026-04-01：https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027
+  - SEMI global semiconductor equipment sales forecast，2025-12：https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-projected-to-reach-a-record-of-156-billion-dollars-in-2027-semi-reports
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026E 按 Lam FY2026 前三季实际收入加 QJun26 指引中点约 231.1 亿美元，仅作补充，不替代 NTM 主表。
+  - QJun26 指引中点年化 264 亿美元是当前 run-rate 锚，不是保证全年收入。
+  - Aether dry resist、CPO/硅光、4F2/3D DRAM、High-NA 相关工具为长期或上限情景；缺少 A/B 级收入确认路径时不进入 NTM 基准。
+  - 本报告所有产品级利润贡献均为经营模型估算；Lam 未披露产品级毛利、订单、book-to-bill 或 backlog。

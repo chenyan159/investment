@@ -1,0 +1,559 @@
+# Fortive Corporation（NYSE: FTV）全面公司尽调：工业测量、设施软件与医疗灭菌
+
+> 报告日期：2026-07-31（America/Los_Angeles）  
+> 最新财务期：2026Q2，季度截止 2026-07-03，财报与 10-Q 发布于 2026-07-29  
+> 股价截点：2026-07-31 15:34 EDT，盘中  
+> 本地资料边界：只读取 `基本面/行业调研/` 中与 AI 数据中心、MEP/commissioning、DCIM/资产运维和产业口径有关的报告；未读取其他本地研究目录，未修改公司索引。联网资料截至 2026-07-31。
+
+## 结论先行
+
+1. **FTV 已不是 2024 年以前投资者熟悉的“三段式 Fortive”。** 2025-06-28 完成 Precision Technologies（PT）分拆后，Tektronix、Qualitrol、EA Elektro-Automatik 等均属于 Ralliant（NYSE: RAL），不应再计入 FTV。当前 FTV 只有 Intelligent Operating Solutions（IOS）和 Advanced Healthcare Solutions（AHS）两段，TTM 收入分别为 **$2.970B/68.8%** 和 **$1.346B/31.2%**。
+2. **投资人更应把它看成“Danaher/FBS 血统的高毛利、低资本强度、约一半经常性收入的多元工业/医疗 compounder”，而非 AI 数据中心纯标的。** 2026Q2 GAAP 毛利率 **63.4%**、调整后 EBITDA 率 **29.5%**、TTM FCF **$1.044B**；Fluke 单一平台已占公司收入 **40% 以上**。但中期有机增长框架仍只是 3%–4%，增长质量和持续性比“AI 标签”更重要。
+3. **经营正在加速。** 过去五季核心增长依次为 **-0.7%、+1.9%、+3.3%、+5.3%、+6.7%**；2026Q2 IOS 核心增长 **7.4%**，AHS **5.3%**。公司把 2026 全年核心增长指引从 2%–3% 上调至约 **4%**，调整后 EPS 从 $2.90–$3.00 上调至 **$2.95–$3.05**。
+4. **AI 数据中心受益是真实的，但尚小且未单独披露。** 直接受益集中在 Fluke Networks 的 CertiFiber Max/Versiv 光纤认证、OptiFiber/端面检查、功率质量、UPS 电池、热像、接地与绝缘测试，以及 eMaint 的设备运维。管理层明确说“Fluke 不是数据中心公司”；本报告估计 2026Q2 严格 AI 数据中心收入只占 FTV **2%–4%（约 $22M–$44M）**，广义所有数据中心约 **3.5%–6.0%**。这是低置信度模型，不是披露值。
+5. **订单信号偏强，但不能把 $824.8M RPO 当成硬件 backlog。** Fluke 2026Q2 订单增速略快于收入、book-to-bill “nicely above 1”、北美 POS 强、欧洲 POS 为六季最好；Q1 全公司订单增速高于 7.7% 报告收入增速。可是 10-Q 的 RPO 主要是多年软件、服务与支持合同，并排除了期限不超过一年的大量履约义务；公司没有披露传统硬件 backlog、取消率、客户项目金额或 hyperscaler 名称。
+6. **资产负债表“可控但不保守”。** 现金 **$374.2M**、债务账面值 **$3.509B**、净债务约 **$3.135B**，相对 TTM 调整后 EBITDA 的总/净杠杆约 **2.69x/2.40x**；TTM FCF 足以覆盖利息与常规投资。但商誉加无形资产 **$9.362B**，占总资产 **80.6%**、相当于权益 **154.3%**；过去四季又回购约 **$2B/38M 股/约 11%**，部分依赖增债，资本配置容错率下降。
+7. **本报告的一年后情景：** 以 TTM $4.316B 为基准，基准/乐观/极度乐观收入约 **$4.532B/+5.0%**、**$4.676B/+8.3%**、**$4.864B/+12.7%**。极度乐观必须同时满足 CertiFiber Max 全球放量、Fluke 数据中心产品拉动、FAL AI 提升 NDR、ASP 资本复苏及无明显供给/医院预算冲击，不是管理层指引。
+
+### 证据与估算标记
+
+| 标记 | 含义 | 使用规则 |
+|---|---|---|
+| A | SEC、公司财报/演示稿、监管数据库 | 可作为事实；仍区分 GAAP 与 non-GAAP |
+| B | 管理层财报会、投资者会议、公司产品页/客户案例 | 可说明趋势；不能自动等同第三方验证 |
+| C | 经销商报价、库存/交期、行业会议、技术媒体 | 用于交叉验证；样本小，不外推为全渠道事实 |
+| D | 本报告推算/情景假设 | 明示公式、区间和触发条件；不得当作公司披露 |
+
+金额默认美元；`TTM` 为 2025Q3–2026Q2；收入贡献估算用中点时会注明。评级均为 1–5，5 代表最高重要性、最紧急、最紧缺或最强定价权。嵌套产品（例如 CertiFiber Max 属于 Fluke）**不可与母业务相加**。
+
+## 一、公司整体业务、投资人定位与产业链位置
+
+### 1.1 当前 Fortive 是什么公司
+
+Fortive 总部位于美国华盛顿州 Everett，约 **10,000 名员工、覆盖约 50 个国家**。它不是单一设备制造商，而是以 Fortive Business System（FBS）为运营底座，收购并经营具有品牌、安装基础、监管或工作流黏性的工业与医疗技术平台。产品组合约 **70% 以上为差异化硬件、约 20% 为纯软件，其余为数据与综合服务**；2025 Investor Day 给出的“新 Fortive”画像是约 **$4B 收入、约 65% 调整后毛利率、约 30% EBITDA 率、约 50% 经常性收入、FCF/调整后净利润超过 100%**。[2025 Investor Day 演示稿](https://d1io3yog0oux5.cloudfront.net/_9e83720912b2cac706416262579e9c94/fortive/db/920/11222/file/Fortive_Investor_Day_2025.pdf)
+
+| 业务段 | 2026Q2收入 | 占比 | 同比/核心增长 | 主要品牌与产品 | 产业链位置 |
+|---|---:|---:|---:|---|---|
+| Intelligent Operating Solutions（IOS） | $758.2M | 69.1% | +8.8% / +7.4% | Fluke、Fluke Networks、Fluke Reliability/eMaint、ServiceChannel、Gordian、Accruent、Industrial Scientific、Intelex | 工厂、能源、建筑、通信/数据中心的测量、调试、资产运维、设施工作流、EHS 与联网安全；位于设备采购之后、验收和 O&M 之前/之中 |
+| Advanced Healthcare Solutions（AHS） | $338.6M | 30.9% | +6.0% / +5.3% | ASP/STERRAD、Censis、Provation、Fluke Biomedical、Landauer、UV Smart | 医院无菌供应、低温灭菌/高水平消毒、耗材、器械追踪、GI 临床文档、生物医学测试与辐射监测 |
+| 合计 | $1,096.8M | 100% | +7.9% / +6.7% | 产品及软件 $876.8M；服务 $220.0M | 使命关键但单件价值较低的“工具、耗材、数据和工作流”层 |
+
+**在 AI 数据中心产业链的位置：** FTV 不卖 GPU、服务器、交换机、光模块、UPS、PDU、CDU 或大型配电设备。它主要卖给网络安装商、commissioning 团队、电工和 O&M 人员的**可重复使用测试工具**，以及设施/资产管理软件。因此：
+
+- 收入不是“每 GPU 固定 BOM”，而更像“每个并行施工班组、每个站点工具池、每个资产/工单订阅”；按 MW/rack/GPU 分摊只能用于数量级比较。
+- 在 AI 工厂从设备到货转为可售 GPU 容量的链条中，FTV 位于 **光纤链路认证、电能质量/接地/电池/热故障检查、验收报告和后续维护**；价值量远低于配电与冷却设备，但时间价值高。
+- 项目行业资料显示，AI 数据中心最难复制的后段环节是 L4/L5/IST、跨电/冷/网联调和首次验收，而不是买到一支表。Fluke 的机会来自更多班组、更高纤芯密度、更短 time-to-power 和工具拉动，不来自控制大型 MEP backlog。
+- eMaint、ServiceChannel、Gordian、Accruent 是 EAM/CMMS、设施服务市场、造价数据或场地/资产生命周期软件，**不等同完整 DCIM/BMS/数字孪生控制层**；不能套用整套 DCIM 每 MW 合同额。
+
+### 1.2 投资人心中的公司
+
+**正面画像：** 高品牌忠诚度、高毛利、低资本开支、约一半经常性收入、强 FCF 转化；Fluke 和 ASP 具有大安装基础，软件、校准、服务和耗材提高收入耐久性。FBS 能通过定价、精益、NPI 和并购整合持续扩利润率。分拆后业务更简单，管理层承诺 2026–2027 每年 EBITDA 率提升 **50–100bp**。
+
+**争议画像：** 历史有机增长不高，2025 持续经营核心增长仅 **1.7%**；“AI”更多是软件功能与 Fluke 的数据中心应用，而非大额、长周期 AI 设备订单。GAAP 利润受大量收购无形资产摊销影响，商誉/无形资产极高。公司在股票便宜时大量回购有财务逻辑，但负债上升、ROIC 未明显高于资本成本会削弱“高质量 compounder”的纯度。
+
+**本报告定位：** `优质工业/医疗平台 + 增长正在加速 + AI 数据中心小而高弹性 + 资产端收购遗产重`。它适合用核心增长、NPI、经常性收入、FCF 和杠杆共同估值，不适合用 AI 数据中心设备公司 backlog 倍数估值。
+
+### 1.3 最近三年的重大业务变化、转型与收购
+
+| 日期 | 事件 | 金额/结构 | 对当前 FTV 的含义 |
+|---|---|---:|---|
+| 2023-10 | 宣布收购 EA Elektro-Automatik | 企业价值约 $1.45B（扣税务利益口径） | 扩大高功率电子测试；但 EA 随 PT 在 2025 年分拆给 Ralliant，**今天不属于 FTV**。[原收购公告](https://investors.fortive.com/news-events/press-releases/detail/20/fortive-to-acquire-ea-elektro-automatik-an-industry-leading-provider-of-electronic-test-measurement-solutions) |
+| 2024-09 至 2025-06-28 | 规划并完成 PT/Ralliant 分拆 | 每 3 股 FTV 获 1 股 RAL；PT 2024 收入约 $2.151B | Tektronix、Qualitrol、EA 等高端测试资产移出；FTV 变成 IOS+AHS 两段，所有历史比较须用持续经营重述口径。[完成公告](https://investors.fortive.com/news-events/press-releases/detail/269/fortive-announces-completion-of-the-ralliant-separation-and-appointment-of-olumide-soroye-as-president-ceo-and-director-of-fortive) |
+| 2025-06-28 | CEO 交接 | Olumide Soroye 任 CEO，James Lico 退休 | 战略从大型组合重塑转向 `Fortive Accelerated`：NPI、商业加速、经常性客户价值、小型 bolt-on 与回购 |
+| 2025Q4 | 两笔小型 bolt-on | 合计现金约 $25.7M；IOS/AHS 各一笔 | 对收入不重大；验证新并购引擎以小额补产品、而非再做转型型大收购 |
+| 2025Q3–2026Q2 | 加速回购 | 过去四季约 $2.0B、38M 股、约 11% 股本；2026H1 $700.3M | 强化每股收益，但 H1 回购超过同期持续经营 OCF $519.1M，净负债与财务风险上升 |
+| 2026-06-24 | ASP 收购 UV Smart 多数股权 | 先付 €51M/约 $58M；2029 年初再买剩余股权、或有对价最高 €20M | 增加 D60 UV-C 高水平消毒，补 TEE/专科内镜场景；目前收入不重大，欧洲资质和美国监管是期权价值。[ASP 公告](https://www.asp.com/en-us/media/asp-acquires-majority-stake-uv-smart) |
+
+持续经营收入从 2023 年 **$3.914B** 增至 2024 年 **$4.081B/+4.3%**，2025 年 **$4.159B/+1.9%（核心约 +1.7%）**；2026H1 已达 **$2.166B/+7.8% 报告口径**。过去三年的真正转型是分拆与聚焦，不是当前 FTV 再并购一个大平台。
+
+## 二、最新股价、估值、盈利能力与资产负债表
+
+### 2.1 最新市场数据
+
+| 指标 | 数值 | 日期/口径 |
+|---|---:|---|
+| 股价 | **$59.26** | 2026-07-31 15:34 EDT，盘中实时价 |
+| 市值 | **$17.90B** | 同一数据页；302.02M 流通股 |
+| 企业价值 | **$21.05B** | 同一数据页 |
+| Trailing P/E | **30.82x** | 数据商持续经营/每股口径；不同实时源因 EPS 与股数口径可显示约 35.1x |
+| Forward P/E | **18.67x** | 分析师预测口径 |
+| P/S；Forward P/S | **4.13x；4.01x** | 数据商口径；按 $17.90B/官方 TTM $4.316B 自算约 4.15x |
+| P/FCF | **19.01x** | 数据商口径；按官方 TTM FCF $1.044B 自算约 17.1x |
+| 最新季度收入增长 | **+7.9% 报告；+6.7% 核心** | 2026Q2 同比 |
+| GAAP 毛利率 | **63.4%（Q2）；63.2%（TTM）** | 官方持续经营；TTM 自算 |
+| GAAP 净利率 | **14.3%（Q2）；14.0%（TTM）** | 官方持续经营；TTM净利润 $602.2M/收入 $4.316B |
+| 调整后 EBITDA 率 | **29.5%（Q2）；30.2%（TTM）** | TTM EBITDA $1.304B |
+
+来源：[实时统计页，2026-07-31 15:34 EDT](https://stockanalysis.com/stocks/ftv/statistics/)、[FTV 2026Q2 财报](https://investors.fortive.com/news-events/press-releases/detail/290/fortive-reports-second-quarter-2026-results)。另一实时行情流在 15:33 EDT 显示 $59.29、市值 $18.24B、P/E 35.08x；差异来自稀释股数、过去 12 个月 EPS 和分拆重述处理。本文估值表采用同一数据页的内部一致口径，财务利润率采用 SEC 持续经营口径。
+
+**估值解读：** 18.7x forward P/E 对 3%–4% 中期核心增长并不便宜，但若 EBITDA 率每年扩 50–100bp、回购继续减少股数、FCF 保持 $1B 以上，则 EPS 可维持高个位数至低双位数增长。反之，若 2026Q2 的 6.7% 核心增长回落到 2%–3%，30x trailing P/E 很难仅靠“AI 可选性”支撑。
+
+### 2.2 资产负债表与财务健康度
+
+| 项目 | 2026-07-03 | 判断 |
+|---|---:|---|
+| 现金及等价物 | $374.2M | 绝对现金不高，但业务现金产生强 |
+| 应收账款；库存 | $657.8M；$310.8M | 库存较 2025 年末增 $19.0M/+6.5%，低于 H1 收入增长；未见明显囤货 |
+| 流动资产；流动负债 | $1.597B；$1.287B | 流动比率 **1.24x**；速动比率数据商约 **0.80x**，短期安全垫中等 |
+| 债务本金；账面值 | $3.527B；$3.509B | 净债务按账面值约 **$3.135B**；按本金约 $3.153B |
+| TTM 调整后 EBITDA | $1.304B | 总债务/EBITDA **2.69x**；净债务/EBITDA **2.40x** |
+| 循环信贷 | $2.0B，延至 2031-03-17 | 期末无 draw；支撑将短期商业票据分类为长期债务 |
+| 商业票据 | 美元 $824.0M、4.02%、加权 12 天；欧元 $251.2M、2.45%、25 天 | 再融资依赖高于表面“长期债务”标签，应关注信用市场和利率 |
+| 新票据 | $600M 4.75% 2031；$500M 5.25% 2036 | 2026-05 发行，主要置换 $900M 3.15% 到期票据，利率成本上升 |
+| 杠杆契约 | 净杠杆不高于 3.75x | 期末合规；>$250M 收购后可临时升至 4.25x |
+| 商誉；其他无形资产 | $7.340B；$2.022B | 合计 $9.362B，占资产 **80.6%**、权益 **154.3%**；减值和收购回报是最大资产质量风险 |
+| TTM OCF；FCF | $1.158B；$1.044B | FCF/调整后净利润约 **108%**；低资本强度是核心信用支撑 |
+| H1 资本开支 | $54.7M | 仅约 H1 收入 2.5%；产能扩张多为供应链/装配、软件实施和人员，而非重资产厂房 |
+| 递延收入 | $476.7M | 较年末 $464.4M 增 **2.6%**；提供软件/服务收入可见度，但慢于当前总收入增长 |
+
+债务结构、RPO 与资产数据均来自 [2026Q2 10-Q](https://investors.fortive.com/sec-filings/all-sec-filings/content/0001659166-26-000034/ftv-20260703.htm)。
+
+**健康度结论：6.5/10，现金流健康、资产质量和资本配置偏激进。** 正面是毛利和 FCF 高、没有近期大额硬性到期墙、循环额度充足、契约余量存在；负面是商誉/无形资产过重、净杠杆已不低、回购速度高于内部现金积累，且新债利率显著高于旧债。若 TTM FCF 维持约 $1.0B，净债务理论上约三年可偿清；但公司仍回购和做 bolt-on，现实去杠杆会更慢。
+
+## 三、最新及最近四次财报：五季度连续跟踪
+
+### 3.1 财务与分部数字
+
+所有季度均按 Ralliant 为终止经营后的持续经营口径；毛利率为 GAAP，分部利润率同时列 GAAP 营业率与调整后 EBITDA 率。
+
+| 财报季度 | 收入；报告/核心增速 | GAAP毛利率 | GAAP净利润；净利率 | 调整后EBITDA；率 | FCF | IOS：收入；报告/核心；营业率/Adj. EBITDA率 | AHS：收入；报告/核心；营业率/Adj. EBITDA率 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| **2026Q2** | **$1,096.8M；+7.9%/+6.7%** | **63.4%** | **$157.3M；14.3%** | **$323.1M；29.5%** | **$270.6M** | $758.2M；+8.8%/+7.4%；26.8%/34.9% | $338.6M；+6.0%/+5.3%；11.3%/26.1% |
+| 2026Q1 | $1,069.4M；+7.7%/+5.3% | 63.2% | $136.4M；12.8% | $313.7M；29.3% | $193.8M | $743.2M；+7.6%/+5.2%；25.1%/34.3% | $326.2M；+7.9%/+5.8%；10.0%/25.7% |
+| 2025Q4 | $1,122.5M；+4.6%/+3.3% | 63.2% | $191.5M；17.1% | $357.9M；31.9% | $313.8M | $770M；+5.3%/+4.1%；27.6%/37.4% | $353M；+3.2%/+1.6%；10.9%/26.0% |
+| 2025Q3 | $1,027.1M；+2.3%/+1.9% | 63.2% | $117.0M；11.4% | $309.4M；30.1% | $266.1M | $699M；+2.6%/+2.2%；25.9%/34.6% | $328M；+1.9%/+1.1%；12.9%/28.1% |
+| 2025Q2 | $1,016.4M；-0.4%/-0.7% | 63.5% | $111.6M；11.0% | $288.4M；28.4% | $180.0M | $696.9M；+0.1%/-0.2%；24.5%/33.8% | $319.5M；-1.3%/-1.9%；11.2%/26.9% |
+
+来源：[2026Q2](https://investors.fortive.com/news-events/press-releases/detail/290/fortive-reports-second-quarter-2026-results)、[2026Q1](https://investors.fortive.com/news-events/press-releases/detail/284/fortive-reports-first-quarter-2026-results)、[2025Q4](https://investors.fortive.com/news-events/press-releases/detail/280/fortive-reports-fourth-quarter-and-full-year-2025-results)、[2025Q3](https://investors.fortive.com/news-events/press-releases/detail/275/fortive-reports-third-quarter-2025-results)、[2025Q2 持续经营重述](https://investors.fortive.com/news-events/press-releases/detail/271/fortive-reports-second-quarter-2025-results)。
+
+关键趋势：
+
+- 收入核心增速连续四次加速；2026Q2 的 **6.7%** 中，IOS 价格约 **+2.7%**、量约 **+4.8%**，AHS 价格 **+1.9%**、量 **+3.4%**，不是只靠涨价。
+- 公司 GAAP 毛利率五季都在 **63.2%–63.5%**，非常稳定；但 2026Q2 调整后毛利率同比约降 100bp，原因是 ServiceChannel 某低毛利战略产品和 ASP 资本设备恢复造成 mix shift，而非 CertiFiber Max 低毛利。管理层称 CertiFiber Max 毛利率“达到或高于产品群”。
+- 调整后 EBITDA 率从 2025Q2 的 28.4% 升到 2026Q2 的 29.5%；2025Q4 的 31.9%含季节性高收入/低费用结构，不能简单年化。
+- 2026Q2 净利率高于 2025Q2 330bp；其中有效税率下降和 $4.5M IEEPA 关税退款有贡献。公司把退款排除在调整后指标外，后续仍预期约 $20M–$25M 现金退款。
+
+### 3.2 订单、交期、backlog、取消和 AI 数据中心收入
+
+| 财报季度 | Bookings/B2B/POS | Backlog、交期与渠道 | 取消/推迟 | 软件、医疗与重点产品 | 严格AI数据中心收入占比（D） |
+|---|---|---|---|---|---:|
+| **2026Q2** | Fluke 订单增速略快于收入，B2B **明显高于 1**；北美 POS 持续强；欧洲 POS 为六季最好 | 欧洲部分经销商缩采购、渠道库存因此更健康；内存/稀土在做多源化，但公司称尚未实质影响订单/backlog 转收入 | 取消率未披露；仅见欧洲 channel defer，无异常取消信号 | CertiFiber Max 需求“远超计划”，拉动 networks、power quality、battery；FAL 强、ServiceChannel 领跑；ASP 资本恢复增长 | **2.0%–4.0% / $22M–$44M**；广义DC约3.5%–6.0% |
+| 2026Q1 | 全公司订单增速 **高于 +5.3%核心及+7.7%报告增速**，Fluke/FAL/ISC/ASP 均强；Fluke B2B>1 | Fluke 健康 backlog；美国渠道库存正常，海外继续改善 | 未披露；无 pre-buy 或异常取消证据 | CertiFiber Max 超预期并开始拉动相邻工具；FAL 增速高于 IOS，ServiceChannel 领先；AHS耗材耐久 | **1.8%–3.5% / $19M–$37M** |
+| 2025Q4 | Fluke 订单继续增长，全年 B2B>1；POS 稳健 | 海外渠道库存改善；健康 backlog；CertiFiber Max 在季末推出 | 未披露 | Fluke 数据中心、国防较强；Fluke 经常性 ARR 连续多季双位数 | **1.5%–3.0% / $17M–$34M** |
+| 2025Q3 | Fluke 恢复增长、订单增长；北美 POS 强、其他地区稳定；全年 B2B 跟踪>1 | 海外高库存继续下降；数据中心/国防强 | AHS 美国医院资本仍递延；部分 Q2 延期订单已执行；未披露取消率 | Landauer 经常性业务、AHS软件、FAL稳；Fluke创新/服务计划加强 | **1.2%–2.4% / $12M–$25M** |
+| 2025Q2 | 总订单增长，但 6 月末订单 mix 转向长交期产品 | backlog 上升，管理层预计大部分在 H2 交付；7 月订单 mix 初步正常化 | 公司明确称关税与医院政策导致 **deferred, not canceled**；ASP称未丢单、只是右移；取消率仍未量化 | 分布式能源+DC应用高个位数增长；Gordian政府支出弱；AHS设备推迟、软件抵消 | **1.0%–2.0% / $10M–$20M** |
+
+订单来源为五次财报会：[2026Q2 transcript](https://stockanalysis.com/stocks/ftv/transcripts/658183-q2-2026/)、[2026Q1](https://stockanalysis.com/stocks/ftv/transcripts/551956-q1-2026/)、[2025Q4](https://stockanalysis.com/stocks/ftv/transcripts/400216-q4-2025/)、[2025Q3](https://stockanalysis.com/stocks/ftv/transcripts/368837-q3-2025/)、[2025Q2](https://stockanalysis.com/stocks/ftv/transcripts/340995-q2-2025/)。AI 数据中心占比为本报告模型：只计可合理归因于 AI 数据中心建设/运营的 Fluke Networks、功率质量、电池、热像和少量 EAM，不计所有传统数据中心、一般工业 AI 或医疗 AI；公司未披露 vertical revenue，置信度 D。
+
+### 3.3 RPO 不等于传统硬件 backlog
+
+2026Q2 10-Q 披露的 remaining performance obligations：IOS **$714.9M**、AHS **$109.9M**，合计 **$824.8M**。定义是 firm non-cancelable orders 与一年以上软件合同平均合同价值中尚未履约部分，并**排除原始期限不超过一年**的履约义务。公司还说明其中“大部分”是订阅软件、服务和支持，预计约 75% 两年内、90% 三年内、几乎全部四年内履约。
+
+因此：
+
+- 不能用 $824.8M / 单季收入计算工业设备 book-to-bill，也不能据此认定 Fluke 有 $825M 硬件 backlog。
+- 递延收入 $476.7M 是更直接的软件/服务已收款信号，但也不代表下一季度全部收入。
+- 对短周期 Fluke，最有用的是 POS、channel inventory、订单增速与 B2B>1；对 FAL/AHS 软件，RPO/递延收入更有用；对 ASP 资本设备，医院 pipeline 与执行窗口更有用。
+- 公司没有公开取消率。本报告在一年预测中使用基准 **1%–3%**、乐观 **<1.5%**、极度乐观 **<1%** 的“模型流失/取消”假设，只是为了压力测试，不是历史事实。
+
+## 四、2026Q2 指引、业务收入占比与重点产品
+
+### 4.1 最新指引
+
+| 指引项 | 2026Q2后最新口径 | 与此前相比/建模含义 |
+|---|---:|---|
+| 2026全年收入 | **约 $4.35B** | 对 2025 $4.159B 约 +4.6% 报告增长 |
+| 核心收入增长 | **约 +4%** | 从 2%–3% 上调；接近 2026–27 中期 3%–4% 框架高端 |
+| 调整后EPS | **$2.95–$3.05** | 从 $2.90–$3.00 上调；中点 $3.00 |
+| 调整后EBITDA率 | **全年约 30%** | 继续承诺 2026、2027 每年 +50–100bp |
+| Q3形状 | 收入正常季节性环比下降；EBITDA率略低于Q2 | Q3核心增长约在全年 4%附近；税率 mid-teens |
+| Q4日历影响 | 少 4 个销售日，收入逆风 **$15M–$20M**、核心增长约 **-150bp** | 不是需求下滑；同比需做工作日归一化 |
+| FX+M&A | Q3、Q4 各约 +50bp 报告收入顺风 | UV Smart 规模很小，主要仍是汇率 |
+| 全年净利息 | 约 **$140M** | 新债票息高；对回购带来的 EPS 增益形成部分抵消 |
+
+管理层称指引假设 Q2 市场动态延续、采用当前关税率；Q2 业绩和指引来自 [官方财报](https://investors.fortive.com/news-events/press-releases/detail/290/fortive-reports-second-quarter-2026-results) 与 [财报会](https://stockanalysis.com/stocks/ftv/transcripts/658183-q2-2026/)。
+
+### 4.2 最新季度收入构成
+
+**按收入类型与地区：** 产品及软件 **$876.8M/79.9%/+7.9%**，服务 **$220.0M/20.1%/+7.9%**；北美 $660.5M/60.2%，亚太 $190.1M/17.3%，EMEA $181.3M/16.5%，拉美 $64.9M/5.9%。美国单独占总收入约 **56%**。
+
+| 终端市场 | 2026Q2收入 | 占比 | 同比 | 主要驱动 |
+|---|---:|---:|---:|---|
+| 医疗 | $331.8M | 30.3% | +5.9% | ASP耗材/服务、资本恢复、Provation/Censis/Landauer |
+| 工业与制造 | $316.4M | 28.8% | +9.6% | Fluke专业仪器、ISC、Intelex、eMaint |
+| 能源与基础设施 | $179.6M | 16.4% | +7.2% | Fluke电气/校准/状态监测，部分DC/能源 |
+| 政府 | $93.4M | 8.5% | +2.0% | Gordian/RSMeans、公共设施与安全 |
+| 零售 | $87.2M | 8.0% | +16.3% | ServiceChannel多站点设施维护/marketplace，增速最高但毛利偏低 |
+| 其他 | $88.4M | 8.1% | +10.0% | 通信、商业服务等 |
+
+**按品牌/平台的 TTM 近似拆分（D，非披露）：** 公司只披露两个分部，以下用 Investor Day 平台规模、管理层“Fluke>40%”、TTM 分部收入与最新增长交叉约束，使 IOS 合计 $2.970B、AHS 合计 $1.346B。
+
+| 平台 | TTM收入估算 | 公司占比 | 2026Q2增速判断 | 收入质量/利润率判断 |
+|---|---:|---:|---|---|
+| Fluke全平台 | **约 $1.78B** | 41.2% | 约7%–9%，订单略快于收入 | 约15%经常性；硬件高毛利、品牌溢价；推算毛利65%–72% |
+| Facilities & Asset Lifecycle（FAL） | **约 $0.75B** | 17.4% | 约8%–11%，高于IOS，ServiceChannel领跑 | 约60%+经常性；纯软件高毛利，但marketplace/服务拉低混合毛利 |
+| Industrial Scientific + Intelex | **约 $0.44B** | 10.2% | 约6%–9%；HaaS强 | ISC经常性已超50%；联网安全/设备交换提高耐久性 |
+| ASP/STERRAD | **约 $0.95B** | 22.0% | 约5%–7%；耗材/服务各区域增长，资本恢复 | 约80%经常性；灭菌器装机、专用耗材、兼容验证与服务构成高锁定 |
+| AHS其他：Provation/Censis/Landauer/Fluke Biomedical | **约 $0.396B** | 9.2% | 约6%–9%；软件强于硬件 | 软件、剂量监测较经常性；生物医学资本设备周期性更高 |
+
+### 4.3 重点产品、型号、利润和销售动能
+
+| 平台/产品 | 主要产品与型号 | 2026动能 | 利润率/规模推断（D） | AI/DC关联 |
+|---|---|---|---|---|
+| **CertiFiber Max / Versiv** | CFM-100S、CFM-100SI（双端检查）、CFM-S-ADD、MPO12/16/24与MMC16/24 UniPort；LinkWare Live/PC | 1月公开上市，Q1/Q2均远超计划；一秒测最多24芯，32芯“未来支持”；管理层称拉动相邻产品 | 公开渠道整套约 $25k–$45k 等值，带双端检查可更高；年化收入估 $20M–$45M；毛利约65%–75%，公司称达到或高于fleet | **最高直接弹性**：800G/1.6T高密并行光纤、commissioning/time-to-network |
+| **Fluke网络相邻工具** | CertiFiber Pro、OptiFiber Pro HDR OTDR、FI-3000/FI2-7300端面检查、DSX-8000铜缆认证 | 被 CertiFiber Max pull-through；Versiv/LinkWare共平台降低培训和报告切换 | 广义DC相邻工具年化约 $60M–$110M；毛利60%–72% | 高；但被测的是无源链路/布线，不是GPU或光模块产测 |
+| **Fluke电力/电池/热维护** | 1773/1775/1777功率质量分析仪（1777可捕获最高8kV瞬态）、BT500/BT510/BT520/BT521、Ti480 Pro、1587 FC绝缘、1625-2接地及高压诊断 | Q2管理层明确称DC投入带动 power quality、battery testing；传统O&M工具也被拉动 | DC相关年化约 $80M–$125M；增长15%–30%；混合毛利60%–70% | 中高：从送电、UPS/电池验收到故障定位；单位为班组/站点而非每rack固定件 |
+| **Fluke经常性服务** | 校准、Premium Care/服务计划、LinkWare/eMaint等软件与远程资产体验 | ARR连续多季双位数；客户从单次购表转向工具全生命周期 | 约 $260M–$280M年收入；增长10%–14%；毛利65%–80% | 中：支持维护合规和资产可用率，但不是基础设施硬件瓶颈 |
+| **eMaint/Fluke Reliability** | eMaint CMMS、AI异常检测/工单优先级/故障模式、Connect2Assets、PRUFTECHNIK/Azima DLI状态监测 | AI功能采用反馈积极；可连接传感器、SCADA/PLC/BMS并触发工单 | 属Fluke/Fluke Reliability，不能单独取数；软件毛利估70%–85%，实施后增量毛利高 | 中：是EAM/预测维护，不是完整DCIM/BMS闭环控制 |
+| **ServiceChannel AI** | 多站点设施管理、provider marketplace；对话式工单、异常检测、摘要、资产识别 | 2026-04推出，基于约3亿工单；Q2 FAL增长领跑，7月摘要扩至所有provider | 直接AI常随core产品提供，货币化更多体现NDR、续约和marketplace量；该业务部分产品低于IOS平均毛利 | 低至中：适合colo/分布式设施工单，不是AI机房实时控制 |
+| **Gordian Flash AI / RSMeans** | RSMeans Data Online、Flash AI早期造价估算、JOC/采购marketplace | 2026-03推出；Q2已在多个战略客户生产使用且显著高于计划，把估算从天缩至分钟 | FAL子集；数据订阅高毛利，采购take-rate较低；收入增量尚小 | 间接：可做DC项目早期造价，但未披露AI DC客户/订单 |
+| **Accruent** | Siterra、FAMIS、EMS、资产/空间/租赁与维护；2026-07与PowerX合作AI能源/塔站优化 | 改善轨迹延续；PowerX为小型新期权 | 混合软件毛利65%–80%；实施能力限制放量 | 低至中；不能把telecom/设施产品当DCIM全栈 |
+| **Industrial Scientific HaaS** | Ventis Pro5（最多5气体）、Radius BZ1（最多7种危险）、Tango TX1、MX6 iBrid、DSX Docking；iNet Exchange/Control/Now、SAFER One | 北美、中东、拉美HaaS强，气体检测业务“growing nicely” | ISC+Intelex约 $420M–$460M；增长6%–9%；HaaS提高毛利/留存 | 低：施工、封闭空间和冷媒/气体安全可用，但不是每MW硬BOM |
+| **ASP STERRAD生态** | STERRAD 100NX/NX/100S、ALLClear循环；100NX腔体152L；10144/10133等H₂O₂ cassette、BI/CI、服务；2026获得管理层所称50lb扩展装载FDA许可 | 耗材和服务所有主要区域增长；资本设备Q2恢复增长；50lb扩大机器人手术器械场景 | ASP约 $920M–$980M；增长5%–7%；耗材毛利估70%–85%、资本35%–50%、混合约60%–70% | 无AI DC关联；但对公司增长和现金流关键 |
+| **BIOTRACE Instant Read** | Reader 73430、BI 73110、PCD 73140；蒸汽生物指示结果7秒，Reader保存50条结果并可接Censis | 2025-08上市，2026仍处渗透期；速度对CSSD周转有明确价值 | 当前小业务，估年收入<$25M；耗材型潜在高毛利/高增速 | 无AI DC关联；小而有潜力，不能遗漏 |
+| **UV Smart D60** | 60秒UV-C高水平消毒TEE/专科探头；EU MDR Class IIa，35国销售，多个OEM兼容/背书 | 2026-06刚并表，当前收入对FTV不重大；ASP渠道可放大 | 当前估<$10M；若获更多地区监管，增速可>50%；设备+耗材/服务模式仍需验证 | 无AI DC关联；监管与渠道期权 |
+| **AHS软件/监测** | Provation MD/Apex GI文档、Censis CensiTrac/ScopeTrac、Landauer剂量监测、Fluke Biomedical测试 | Q2 AHS软件强，GI文档需求突出；Landauer经常性稳定 | 约 $370M–$420M；增长6%–9%；软件/监测毛利高于资本硬件 | 无AI DC关联；是被“AI叙事”容易遗漏的稳定小平台 |
+
+产品技术来源：[CertiFiber Max 官方规格与型号](https://www.flukenetworks.com/datacom-cabling/fiber-testing/certifiber-max-optical-loss-test-set)、[Fluke 数据中心工具组合](https://www.fluke.com/en-us/products/industries/data-centers)、[eMaint AI](https://www.emaint.com/emaint-ai)、[ServiceChannel AI](https://servicechannel.com/press/servicechannel-launches-servicechannel-ai-for-facilities-management/)、[Gordian Flash AI](https://www.gordian.com/press/gordian-flash-ai-estimating-construction-cost-estimates/)、[Industrial Scientific](https://www.indsci.com/en)、[ASP STERRAD 100NX](https://www.asp.com/en-us/products/terminal-sterilization/sterrad-100nx-new)、[BIOTRACE](https://www.asp.com/en-us/media/asp-introduces-biotrace-instant-read-steam-system)、[UV Smart D60](https://www.uvsmart.nl/d60?lang=en)。
+
+### 4.4 明确跳过的低增长/低相关产品
+
+以下不是坏业务，只是对未来一年 AI/高增长判断的边际影响低，因此不逐型号建模：
+
+- Fluke 大量成熟通用手持万用表、钳表、温度/压力小仪表、一般建筑诊断产品；作为 Fluke 现金牛包含在平台收入，但不单独预测。
+- Fluke Biomedical 的成熟病人模拟器、电气安全分析仪和一般QA设备；医院资本周期敏感，未见2026独特AI催化。
+- Landauer传统剂量徽章的基础订阅；经常性强但增速相对稳定。其新增服务已保留在 AHS软件/监测篮子。
+- Gordian传统州/地方政府年末采购 take-rate；政策和预算导致波动，Flash AI/RSMeans数据订阅已单列。
+- Accruent传统空间、租赁和普通工作场所模块；PowerX/eMaint等AI/能源功能已保留。
+- Industrial Scientific 一次性、非联网的成熟便携式检测器；iNet/HaaS和联网设备已保留。
+- ASP 与机器人、快速读数、UV-C无关的成熟资本替换项目；但耗材和服务仍纳入ASP整体，因为它们是价值和现金流核心。
+
+## 五、高增长/关键产品的当前贡献、AI重要性与定价能力
+
+### 5.1 当前贡献矩阵
+
+| 关键产品/业务 | 当前年化/TTM收入贡献（D） | 当前增速（D/管理层趋势） | 对AI基建重要性 | 时间紧急性 | 供需紧张度 | 垄断/独占能力 | 溢价能力 | 核心依据 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| **CertiFiber Max**† | $20M–$45M，中点$32M/约0.7% FTV | 上市爬坡，>100%年化不具可比；Q1/Q2远超计划 | **4.5** | **5.0** | 3.0 | 3.5 | **4.5** | 一秒24芯、MPO/MMC、Versiv/LinkWare；但EXFO/VIAVI/AEM/Softing可替代，非垄断 |
+| **Fluke其他DC网络/电力/电池/热像工具**† | $120M–$190M，中点$155M/3.6% | **15%–30%** | 3.5 | 4.0 | 2.5 | 3.0 | 4.0 | 不是单件供不应求，而是班组数、工具池和pull-through扩大；品牌/校准/报告生态支持溢价 |
+| **Fluke经常性校准、软件和服务**† | $260M–$280M，中点$270M/6.3% | **10%–14%** | 2.5 | 3.0 | 1.5 | 3.0 | 4.0 | 安装基础、校准记录、服务计划和软件黏性；物理供给不紧，服务工程师与周转时间是约束 |
+| **FAL软件：ServiceChannel/Gordian/Accruent** | $730M–$770M，中点$750M/17.4% | **8%–11%** | 2.5 | 3.5 | 2.0 | 3.5 | 3.5 | 资产/工单历史、3亿工单、RSMeans数据和两边市场是护城河；AI界面本身可被复制 |
+| **Industrial Scientific + Intelex** | $420M–$460M，中点$440M/10.2% | **6%–9%** | 1.0 | 2.0 | 1.5 | 2.5 | 3.0 | HaaS、设备交换、传感器/校准和EHS系统增加黏性；MSA/Honeywell/Dräger/Blackline竞争强 |
+| **ASP/STERRAD/耗材/服务** | $920M–$980M，中点$950M/22.0% | **5%–7%** | 0 | **4.0（医疗）** | 2.0 | **4.0** | **4.5** | 已验证器械兼容性、医院流程、30k/22k+口径的庞大装机、专用cassettes和监管形成高切换成本 |
+| **AHS软件、追踪、剂量监测及生医测试** | $370M–$420M，中点$396M/9.2% | **6%–9%** | 0 | 3.5（医疗） | 1.5 | 3.5 | 3.5 | Provation/Censis/Landauer为系统记录或合规数据；通用硬件部分替代性更高 |
+| **UV Smart D60**† | <$10M，中点约$5M/<0.2% | 并表初期，>50%潜力但基数小 | 0 | 4.0（消毒周转） | 2.0 | 3.0 | 4.0 | 60秒、EU MDR Class IIa、35国；美国FDA和ASP渠道转化尚未验证 |
+
+† CertiFiber Max、其他 DC 工具和 Fluke 经常性收入都是 Fluke 子集；UV Smart 是 ASP 子集。eMaint 也归入 Fluke/Fluke Reliability，不计入上表约 $750M 的 FAL（ServiceChannel/Gordian/Accruent）收入。不可与母平台或公司拆分表机械相加。
+
+**何为“垄断”：** FTV 没有 AI 数据中心产品达到真正单一来源垄断。CertiFiber Max 的优势是高芯数原生连接、一秒测试和 Versiv/LinkWare 安装基础；这是强差异化与生态锁定，不是标准封闭。ASP 更接近局部封闭生态，因为医院必须按已获监管许可的器械兼容、循环、耗材和流程运行，但仍有 STERIS V-PRO、蒸汽、EtO 和 HLD 替代。
+
+### 5.2 一年后产品收入：基准、乐观、极度乐观
+
+预测期为 TTM 截至 2027Q2；产品收入是中点模型。公司收入分母分别为基准 $4.532B、乐观 $4.676B、极度乐观 $4.864B。评级反映各情景下到 2027Q2 的状态，不代表今天已经发生。
+
+| 产品/业务 | 情景 | 2027Q2 TTM收入 | 同比 | 对FTV收入占比 | AI重要性 | 紧急性 | 供需紧张 | 垄断能力 | 溢价能力 |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| **CertiFiber Max**† | 基准 | **$58M** | +81% | 1.3% | 4.5 | 5.0 | 3.0 | 3.5 | 4.5 |
+|  | 乐观 | **$85M** | +166% | 1.8% | 4.5 | 5.0 | 4.0 | 4.0 | 4.5 |
+|  | 极度乐观 | **$120M** | +275% | 2.5% | 5.0 | 5.0 | 4.5 | 4.5 | 5.0 |
+| **Fluke其他DC工具**† | 基准 | **$180M** | +16% | 4.0% | 3.5 | 4.0 | 2.5 | 3.0 | 4.0 |
+|  | 乐观 | **$215M** | +39% | 4.6% | 4.0 | 4.5 | 3.5 | 3.5 | 4.5 |
+|  | 极度乐观 | **$260M** | +68% | 5.3% | 4.5 | 5.0 | 4.0 | 4.0 | 4.5 |
+| **Fluke经常性校准/软件/服务**† | 基准 | **$302M** | +12% | 6.7% | 2.5 | 3.0 | 1.5 | 3.0 | 4.0 |
+|  | 乐观 | **$313M** | +16% | 6.7% | 3.0 | 3.5 | 2.0 | 3.5 | 4.0 |
+|  | 极度乐观 | **$329M** | +22% | 6.8% | 3.5 | 4.0 | 2.5 | 4.0 | 4.5 |
+| **FAL软件** | 基准 | **$803M** | +7% | 17.7% | 2.5 | 3.5 | 2.0 | 3.5 | 3.5 |
+|  | 乐观 | **$833M** | +11% | 17.8% | 3.0 | 3.5 | 2.5 | 3.5 | 4.0 |
+|  | 极度乐观 | **$870M** | +16% | 17.9% | 3.5 | 4.0 | 3.0 | 4.0 | 4.0 |
+| **ISC + Intelex** | 基准 | **$471M** | +7% | 10.4% | 1.0 | 2.0 | 1.5 | 2.5 | 3.0 |
+|  | 乐观 | **$488M** | +11% | 10.4% | 1.5 | 2.5 | 2.0 | 3.0 | 3.5 |
+|  | 极度乐观 | **$510M** | +16% | 10.5% | 2.0 | 3.0 | 2.5 | 3.0 | 3.5 |
+| **ASP/STERRAD生态** | 基准 | **$1,007M** | +6% | 22.2% | 0 | 4.0 | 2.0 | 4.0 | 4.5 |
+|  | 乐观 | **$1,045M** | +10% | 22.4% | 0 | 4.5 | 2.5 | 4.0 | 4.5 |
+|  | 极度乐观 | **$1,093M** | +15% | 22.5% | 0 | 5.0 | 3.0 | 4.5 | 5.0 |
+| **AHS其他软件/监测/测试** | 基准 | **$424M** | +7% | 9.4% | 0 | 3.5 | 1.5 | 3.5 | 3.5 |
+|  | 乐观 | **$440M** | +11% | 9.4% | 0 | 4.0 | 2.0 | 3.5 | 4.0 |
+|  | 极度乐观 | **$459M** | +16% | 9.4% | 0 | 4.0 | 2.5 | 4.0 | 4.0 |
+| **UV Smart D60**† | 基准 | **$15M** | 约+200% | 0.3% | 0 | 4.0 | 2.0 | 3.0 | 4.0 |
+|  | 乐观 | **$25M** | 约+400% | 0.5% | 0 | 4.5 | 2.5 | 3.5 | 4.0 |
+|  | 极度乐观 | **$40M** | 约+700% | 0.8% | 0 | 5.0 | 3.0 | 4.0 | 4.5 |
+
+### 5.3 三种情景的必要条件
+
+| 情景 | 必须观察到的证据 | 会使情景失效的反证 |
+|---|---|---|
+| **基准** | Fluke B2B维持≥1；CertiFiber供货正常、相邻工具pull-through；FAL NDR/ARR保持正增长；ASP资本温和恢复；FTV核心增长约4%–6% | Fluke B2B<1连续两季；渠道重新去库存；医院资本再冻结；软件流失上升；公司核心增速<3% |
+| **乐观** | CertiFiber进入更多大型承包商/RFP首选工具，年度收入约$85M；Fluke DC篮子增长30%+；ServiceChannel/Gordian AI显著提高NDR和新产品收入；STERRAD 50lb提高机器人器械win rate | 高密光纤认证项目放缓、竞品降价；AI功能免费但不改善续约/ARPU；ASP资本复苏只持续一季 |
+| **极度乐观** | AI工厂commissioning成为关键瓶颈、多个并行站点急购工具；CertiFiber供需短缺但能扩产，价格/组合上行；FAL AI从留存功能变为可计费增量；UV Smart快速扩区；公司核心增长达到低双位数 | 任一关键量化证据缺失即不能采用；尤其无named hyperscaler、无硬件backlog金额时，不能仅凭“需求超计划”给极端倍数 |
+
+**利润率传导：** CertiFiber Max 和高端 Fluke 工具的毛利达到/超过 Fluke fleet，应对 IOS 毛利有正贡献；但 ServiceChannel marketplace 与 ASP 资本设备若增长更快，会在收入加速时压低混合毛利。软件 AI 的收入可能表现为显式增售、按结果收费、token 成本加价或仅提升 NDR，不能把每次使用都按纯 SaaS 增量毛利计算。2026Q2 管理层披露的四种 AI 变现方式正说明，收入确认和毛利因产品而异。
+
+## 六、BOM、每MW/rack/GPU/optical port内容量与价格传导
+
+### 6.1 先定义分母，避免“工具=每GPU BOM”的错误
+
+采用项目行业资料中的 GB300 NVL72 参考：**72 GPU/rack、约142kW/rack、约7.04 racks/IT MW、约507 GPU/IT MW**；若 PUE 为 1.1–1.2，则每 facility MW 对应约 **5.87–6.40 racks、423–461 GPU**。实际 Broadcom/InfiniBand/Ethernet 拓扑、冗余和存储网不同，活跃光端口端点可约 **216–360/rack**。这些是统一测算分母，不代表每个项目都采用 GB300。
+
+FTV 的产品属于施工/运维工具池：一个 CertiFiber Max 双端测试套装会在成百上千条链路之间复用，一个功率质量分析仪会在多个配电节点和项目之间周转。因此“每MW/rack/GPU/port内容量”是**采购成本分摊**，不是设备柜内实物 BOM。真正的采购函数为：
+
+`FTV工具收入 ≈ 并行班组数 × 每班组工具包价值 × 新购/更新率 + 站点O&M常备工具 + 校准/软件/服务`
+
+而不是 `GPU数量 × 固定单价`。
+
+### 6.2 100 facility MW AI数据中心的代表性 Fluke 工具包
+
+| BOM模块 | 代表型号/内容 | 单班组或单套公开/市场价格锚点 | 100MW假设数量 | 100MW采购额（D） | 价格传导逻辑 |
+|---|---|---:|---:|---:|---|
+| 多芯Tier 1光损耗认证 | CertiFiber Max CFM-100S/100SI；主/远端Versiv、2个Max模块、UniPort、TRC、耦合器；SI另含双端FI检查 | **$25k–$45k等值/完整套装**；add-on约$23k–$25k | 2–5套 | **$50k–$225k** | MPO/MMC纤芯数、并行班组、交付窗口越紧，套装数越多；适配器/TRC、Gold support与年度校准增加生命周期收入 |
+| Tier 2故障定位/端面检查 | OptiFiber Pro HDR OTDR、FI-3000/FI2-7300、清洁耗材 | $15k–$35k/组合 | 2–5 | **$30k–$175k** | Tier 1不替代OTDR/端面污染定位；首次验收失败越多，工具价值越高 |
+| 铜缆认证 | DSX-8000/Versiv模块 | $15k–$25k | 1–3 | **$15k–$75k** | 管理网、控制网及部分短距铜缆；AI主数据网络光化使其不是最大弹性 |
+| 电能质量/瞬态 | Fluke 1773/1775/1777、1740系列；1777可捕捉最高8kV瞬态 | $8k–$12k | 2–6 | **$16k–$72k** | 配电回路、UPS/PDU前后和投运故障；容量/冗余越多，测点越多但仪器可复用 |
+| UPS电池测试 | BT500/510/520/521：内阻、电压、温度、纹波 | $3k–$5k | 2–6 | **$6k–$30k** | 电池串/单体数量与维护频率驱动，不随GPU一一对应 |
+| 热像/热点排查 | Ti480 Pro等 | $10k–$15k | 2–6 | **$20k–$90k** | 母排、开关柜、连接器、电池与冷却异常；从commissioning延伸至O&M |
+| 绝缘、接地、高压及杂项 | 1587 FC、1625-2及校准/附件 | $8k–$20k/组合 | 1–4 | **$8k–$80k** | 供配电安全与验收规范；按专业班组而非rack配置 |
+| **合计** | 网络+电气+维护工具池 | — | 约2–6个并行专业班组 | **$0.15M–$0.75M/100MW** | 高端是工期极紧、多个承包商并行且大量新购；低端是承包商已有Versiv/Fluke底座、仅增模块 |
+
+公开渠道锚点包括：澳洲经销资料的套装 AUD 39,900、双端检查 AUD 64,990、add-on AUD 34,990及上市初期 **12周 ATP**；德国 add-on **€20,999未税**；加拿大 CFM-100SI-INTL **CAD 46,988.99** 且上市期曾显示缺货。汇率、税、服务和地区折扣差异很大，价格只用于数量级，不是美国成交价。[澳洲渠道PDF](https://www.cdlnz.com/images/uploaded/Fluke_CertiFiber%E2%84%A2_Max.pdf)、[德国渠道](https://www.datatec.eu/de/en/fluke-networks-cfm-s-add)、[加拿大渠道](https://www.pc-canada.com/item/certifiber-max-singlemode-oltsw-dbl-end-insp/cfm-100si-intl)
+
+### 6.3 换算到每MW、rack、GPU和光端口
+
+以上 $0.15M–$0.75M/100 facility MW 对应：
+
+| 分母 | Fluke全工具池分摊 | 其中光纤认证/定位池分摊 | 解释 |
+|---|---:|---:|---|
+| 每 facility MW | **$1.5k–$7.5k/MW** | **$0.8k–$4.0k/MW** | 相对行业常见技术fit-out可达$25M/MW，FTV内容量极小，但可影响验收时间 |
+| 每 GB300等效rack | **约$235–$1,280/rack** | **约$125–$680/rack** | 用5.87–6.40 racks/facility MW换算；不是每柜都随附工具 |
+| 每 GPU | **约$3.3–$17.7/GPU** | **约$1.7–$9.5/GPU** | 用423–461 GPU/facility MW换算；只为把工具池与GPU规模统一 |
+| 每活跃光端口端点 | 不适用全工具；若强制分摊约$0.65–$5.9 | **约$0.35–$3.2/port endpoint** | 光纤池$80k–$400k/100MW，按216–360端点/rack；若按一条链路两个端点，约$0.7–$6.3/link |
+
+**“真实内容量”边界：** CertiFiber Max 测的是无源多芯链路损耗、长度、极性和报告，不是给每个 active optical port 配一台仪器，也不是测 GPU SerDes/光模块产线性能。CPO 若放量，端口形态和可维护性会变化，但建筑/机柜间光纤、端面、极性和验收不会消失；产品必须继续支持新连接器与高芯数，32芯适配路线是重要观察点。
+
+### 6.4 软件、联网安全和医疗产品的BOM/内容量
+
+| 业务 | 实际合同/BOM组成 | 单位经济或公开锚点 | 每MW/rack/GPU/port |
+|---|---|---|---|
+| **FAL软件与eMaint（不同组织篮子）** | SaaS席位/站点/资产；资产主数据；工单与provider网络；传感器/BMS/ERP连接器；AI推理；实施、数据清理和持续支持 | 本报告对100MW大型站点首年 EAM/设施软件估 **$0.2M–$1.5M**，续订 **$0.1M–$0.8M/年**。行业公开core DCIM锚点约$333/rack/年或按资产计价，但FTV不是完整DCIM，二者不可直接套用 | 首年 **$2k–$15k/MW、约$310–$2,560/rack、$4–$35/GPU**；optical port无因果关系。置信度D，实际须以资产和实施范围报价；eMaint收入留在Fluke，不能和FAL重复相加 |
+| **Industrial Scientific HaaS** | 便携/区域检测器、气体传感器、泵/电池、DSX Dock、LENS无线、iNet软件、维修/设备交换 | 按工人、区域、设备月订阅；建设期和运维期人头决定。100MW项目模型 **$0.05M–$0.40M** 工具/订阅 | **$0.5k–$4k/MW**；按rack/GPU/port均不成立。若项目无相应气体/封闭空间要求，内容量可为0 |
+| **ASP/STERRAD** | 100NX 152L资本设备；H₂O₂ cassette；BI/CI；维修。10144等cassette通常每盒2个、每个5循环，即10循环/盒；每负载是否用BI/CI依医院流程 | 收入随装机、灭菌循环、手术量和服务合同；耗材是高毛利复购 | 对数据中心 **$0/MW、$0/rack、$0/GPU、$0/port**；正确分母是每灭菌循环/器械负载 |
+| **BIOTRACE** | Reader 73430；BI 73110（50/盒、2盒/箱）；PCD 73140；软件/结果记录与Censis连接 | 7秒读数、Reader存50条；读数器带动每循环指示耗材 | 对AI DC四项均为0；正确分母是每蒸汽灭菌循环 |
+| **UV Smart D60** | UV-C设备、兼容托架/验证、维护；单次约60秒 | 按科室/探头周转配置，不按床位或GPU | 对AI DC四项均为0；正确分母是每TEE/专科探头消毒循环 |
+
+### 6.5 AI数据中心价格传导链
+
+`AI集群扩建/800G-1.6T端口增多` → `MPO/MMC/VSFF链路和并行施工班组增加` → `承包商/业主需要更快Tier 1认证、OTDR与端面检查` → `CertiFiber Max套装/模块/适配器销量` → `Versiv/LinkWare报告生态拉动` → `功率质量、电池、热像、接地工具交叉销售` → `校准、Gold support、软件和服务续费`。
+
+价格传导并非线性：
+
+- 新建 MW 增加但由已有大型承包商工具池承接时，FTV attach 会低；多地同时开工、工期压缩和连接器换代时，新购率会高。
+- CertiFiber Max 可通过节省测试/返工时间获得高于一般仪表的定价，但客户仍可用更多旧设备、fan-out、EXFO/VIAVI/AEM/Softing方案替代。
+- 一旦项目规格书、报告模板、技术员培训和校准体系围绕 Versiv/LinkWare 固化，切换成本从单台硬件价转为流程与历史数据成本，支持服务和适配器溢价。
+- AI机房建设总成本上升不会自动给 FTV 同比例提价；FTV 只能分享其缩短 commissioning、减少误测/返工所创造的时间价值。
+
+## 七、当前产能、供应链采纳与认证阶段
+
+### 7.1 当前可销售能力（美元计）
+
+FTV 不披露产品线 nameplate capacity。公司 PP&E 仅 $280.3M、H1 capex $54.7M，说明多数硬件是轻装配/外购组件，软件则物理复制无约束；真正瓶颈是特定电子/光学部件、校准、渠道库存、实施顾问和客户资格。本表把“产能能力”定义为：**当前供应链、人员和渠道在未来12个月可支持的收入上限区间**，不是工厂审计值。
+
+| 产品/业务 | 当前收入 | 当前12个月可销售能力（D） | 利用/紧张判断 | 供应链采纳与认证阶段 |
+|---|---:|---:|---|---|
+| CertiFiber Max | $20M–$45M年化 | **$45M–$70M** | 上市期渠道曾见12周ATP/缺货，Q2需求仍超计划；但公司称内存/稀土尚未影响订单转收入，故不是硬性长期短缺 | 已商业化；Tier I OLTS、标准优选one-jumper；MPO12/16/24、MMC16/24、pinned/unpinned；>10,000 CCTT熟悉Versiv；32芯仍“to come”；无公开hyperscaler认证清单 |
+| 其他Fluke DC工具 | $120M–$190M | **$180M–$250M** | 成熟多型号全球供应，主要约束是需求和渠道，不是产线 | 功率质量/电气/电池/热像已广泛采纳；客户规格各异，无单一AI平台认证 |
+| Fluke经常性服务 | $260M–$280M | **$300M–$330M** | 软件不紧；校准实验室、现场工程师和周转时间会限制服务 | 大安装基础和历史校准记录；LinkWare/服务计划已商业化；eMaint AI已商用且部分助手仍beta |
+| FAL软件 | $730M–$770M | **$800M–$900M** | 代码可扩，实施、数据清理、连接器和provider供给限制可交付容量 | ServiceChannel AI已商用/部分功能全provider，部分对话功能仍beta；Gordian Flash已在多个战略客户生产；不是安全关键闭环控制认证 |
+| ISC + Intelex | $420M–$460M | **$500M–$550M** | 传感器/设备供应较成熟；HaaS需要设备池、维护和校准 | Ventis Pro5等具IP68、FCC/CE及按区域的气体/本安认证；iNet商业部署；未见AI DC专属认证 |
+| ASP/STERRAD | $920M–$980M | **$1.00B–$1.10B** | 资本设备有制造周期，耗材可扩；医院预算比供应更约束 | STERRAD有FDA/全球监管及器械兼容矩阵；管理层称2026获50lb装载FDA许可，但本报告未将其与公开510(k)编号一一核实；ULTRA GI已获CE用于部分Fujifilm duodenoscope |
+| AHS其他 | $370M–$420M | **$430M–$480M** | 软件可扩，生医仪器/剂量服务成熟 | BIOTRACE为FDA-cleared；Censis/Provation按医院IT/合规验证；Landauer受辐射安全监管 |
+| UV Smart D60 | <$10M | **$15M–$20M** | 小规模且ASP刚接管渠道，需求/认证比制造更约束 | EU MDR Class IIa、35国、Philips/Siemens/GE/Pentax/Karl Storz等兼容/背书口径；未发现美国FDA许可披露 |
+
+ASP 安装基数存在公开口径差异：2025 Investor Day 使用约 **30,000** STERRAD installed units，Fortive/ASP当前品牌页常见 **22,000+ systems worldwide**。可能来自时间、型号、活跃系统或统计范围差异；本报告不自行合并，估值应使用 22k+ 作为更保守公开下限。
+
+### 7.2 近半年渠道、论坛和会议交叉验证
+
+| 日期 | 证据 | 可支持的结论 | 不能支持的结论 |
+|---|---|---|---|
+| 2026-01-19 | 经销商资料给出 CertiFiber Max public launch、初始ATP约12周及澳洲价格 | 上市初期供应爬坡、单套价值数万美元 | 不能外推全球当前仍12周，也不能推出订单总额 |
+| 2026-01-27 | Fluke技术文称800G/1.6T及未来3.2T推动MPO，Max原生MPO/MMC、一秒测试 | 产品与AI高密光纤技术路线匹配 | 厂商技术内容不是独立市场份额证明。[技术文](https://www.flukenetworks.com/blog/cabling-chronicles/fiber-tester-ready-800G-beyond) |
+| 2026-02-12 | Lightwave评审强调24芯MPO/MMC和Versiv熟悉界面 | 第三方行业认可连接器覆盖和降低培训成本 | 评奖不等同大规模采购。[Lightwave](https://www.lightwaveonline.com/home/product/55355399/fluke-certifiber-max) |
+| 2026-03-17/04-07 | Gordian Flash AI、ServiceChannel AI分别发布 | FAL AI不是PPT，已有正式产品 | 不能从发布推导独立AI收入；部分功能包含在核心产品 |
+| 2026-05-06 | WESCO Anixter Honolulu举办含4个BICSI CEC的Fluke fiber workshop和Max演示 | 渠道正在培训技术员，Versiv现有底座可模块升级 | 单场席位有限，不能代表全球订单。[活动页](https://www.lanjam.com/events/2026/4/6/flukeworkshophonolulu) |
+| 2026-05-19 | Wolfe Industrials Conference；此前2月Citi/Barclays、3月JPM | 管理层持续向工业投资者解释新Fortive和增长框架 | 投资者会议不是终端需求验证。[FTV events](https://investors.fortive.com/news-events/events) |
+| 2026-06-24 | ASP收购UV Smart多数股权 | D60可借ASP渠道进入更多医院 | 当前收入不重大；美国许可未知 |
+| 2026-07-21/22 | Accruent-PowerX合作、ServiceChannel AI摘要扩至provider | 软件AI迭代频率快，FAL交叉销售面扩大 | 不能当成AI数据中心DCIM订单 |
+| 2026-07-29 | Q2财报会：Max需求远超计划、Fluke B2B明显>1、无材料供应转收入重大影响 | 官方经营验证最强，早期渠道短缺未演化为全公司供给危机 | 仍无单位、客户、金额、交付窗口或取消率 |
+
+## 八、一年后产能、采纳与认证三情景
+
+下表是收入承载能力，不是收入预测；收入仍取决于订单。认证阶段写的是各情景成立时应达到的可验证里程碑，而非公司已经承诺的时间表。
+
+| 产品/业务 | 当前12月能力（D） | 2027基准能力/采纳/认证 | 2027乐观能力/采纳/认证 | 2027极度乐观能力/采纳/认证 |
+|---|---:|---|---|---|
+| **CertiFiber Max** | $45M–$70M | **$70M–$90M**；Versiv客户增购模块，32芯适配处试用/有限商业阶段；大型承包商采纳扩大但无公开hyperscaler认证 | **$100M–$130M**；MPO/MMC更多配置常备，32芯正式商业化，进入多家大型DC contractor/RFP preferred-tool list | **$140M–$180M**；多地区排产接近满负荷，成为高密Tier 1认证事实首选之一；必须看到单位/交期或订单金额验证 |
+| **其他Fluke DC工具** | $180M–$250M | **$220M–$280M**；每个DC销售线索带动网络+功率+电池至少2类产品 | **$280M–$360M**；大型客户从单工具转为标准toolkit、校准/报告统一 | **$360M–$450M**；AI commissioning显著增派班组、工具更新周期缩短；不能仅靠MW增长推导 |
+| **Fluke经常性服务** | $300M–$330M | **$320M–$350M**；服务计划/校准attach稳升，ARR约双位数 | **$350M–$390M**；工具fleet管理、LinkWare/eMaint连接提高续约/交叉销售 | **$390M–$450M**；大型客户按fleet outcome采购；服务工程师和校准容量需同步扩充 |
+| **FAL软件** | $800M–$900M | **$850M–$950M**；AI主要改善NDR/实施效率，Flash在更多战略账户生产，ServiceChannel商用功能扩展 | **$950M–$1.05B**；显式AI增售、outcome/token+markup变现占比提高，国际扩张成功 | **$1.05B–$1.20B**；数据/工作流护城河胜过通用copilot，实施伙伴大幅扩容；仍不是DCIM安全闭环认证 |
+| **ISC + Intelex** | $500M–$550M | **$520M–$570M**；HaaS稳步替换一次性硬件、既有区域增长 | **$570M–$620M**；iNet/connected safety在大型全球账户扩大标准化 | **$620M–$700M**；设备即服务渗透快速提升；需设备池与校准网络扩容 |
+| **ASP/STERRAD** | $1.00B–$1.10B | **$1.10B–$1.18B**；资本正常恢复，50lb装载用于机器人器械的兼容/销售资料逐步扩充，耗材随procedure增长 | **$1.18B–$1.30B**；多家机器人器械OEM/医院系统采用、win rate上升，BIOTRACE附着增加 | **$1.30B–$1.45B**；医院资本全面复苏、器械兼容矩阵快速扩大、UV/BIOTRACE渠道协同；监管/质量必须无事故 |
+| **AHS其他** | $430M–$480M | **$450M–$500M**；Provation SaaS、Censis和Landauer正常扩张 | **$500M–$550M**；企业医院跨品牌销售、GI文档和快速读数加速 | **$550M–$620M**；软件/追踪高双位数且生医资本同步复苏 |
+| **UV Smart D60** | $15M–$20M | **$20M–$30M**；ASP欧洲/既有35国渠道整合、更多器械兼容验证；美国仍为准备/申报观察 | **$35M–$50M**；更多区域许可，若美国路径明确则进入申报/审评 | **$60M–$80M**；美国许可并商业化、ASP大客户广泛导入。没有FDA证据时不得提前计入 |
+
+**扩产可行性：** CertiFiber Max 的核心是光源/探测、校准、Versiv主机和适配器，不是大型厂房；短期可通过供应商、多班装配、模块化升级和渠道配置扩容，资本强度低。公司对内存/稀土做多源化且称当前不重大，支持基准/乐观扩容；极度乐观仍会遇到光学模块、校准工位和技术支持的爬坡。软件的“产能”由实施和客户数据质量决定，新增印度工程能力可放大开发，但无法跳过客户集成。
+
+## 九、用订单、backlog、供给和渠道推导未来一年增速
+
+### 9.1 可验证的订单桥
+
+| 证据层 | 已知事实 | 本报告量化代理（D） | 置信度/局限 |
+|---|---|---:|---|
+| Fluke短周期订单 | Q1订单增速高于全公司7.7%报告收入；Q2订单略快于Fluke收入，B2B明显>1；北美POS强、欧洲POS六季最佳 | Fluke季度收入约$445M，其中非经常性硬件约$375M；若B2B约1.03–1.10，则单季净新增订单高于交付约 **$11M–$38M** | D；公司只说“over/nicely above 1”，没有给数值 |
+| Fluke可执行硬件backlog | Q2’25因长交期mix而上升，之后H2转换；Q1/Q2’26仍称healthy，渠道库存改善 | 以约4–7周硬件交付量估 **$130M–$230M**；不是公司披露 | D；短周期订单、经销商库存和终端POS混合，可能重复 |
+| CertiFiber Max待交 | 上市初期12周ATP/局部缺货；Q1/Q2需求远超计划 | 以约2–5个月中点年化销量估 **$5M–$20M** 未交/渠道补货池 | D/C；地区样本小，Q2整体无供给转收入重大影响 |
+| 多年合同RPO | 2026Q2合计$824.8M，IOS$714.9M/AHS$109.9M；75%约两年内履约 | 若未来12个月确认35%–50%，约 **$289M–$412M** | D/A；主要软件/服务，且不是新增收入、不能与现有ARR相加 |
+| 递延收入 | $476.7M，较2025年末+2.6%；H1从年末递延确认$287M | 给2026H2/2027H1软件服务提供底仓，但增速不如当季总收入 | A；账单时点影响大 |
+| ASP资本/耗材 | Q2耗材服务所有主要区域增长，资本恢复增长；pipeline“strong and healthy” | 基准资本转化正常、耗材随procedure约中个位数；无可靠美元backlog区间 | B；pipeline不是firm order，医院预算仍紧 |
+| FAL | FAL连续强于IOS，ServiceChannel领跑；Flash多战略账户生产且高于计划 | 基准ARR/NDR正增长；AI增量收入以约0%–3%平台收入贡献测算 | D/B；公司未披露ARR、NDR绝对值 |
+
+**渠道和客户项目核验：**
+
+- eMaint 的 NTT DATA 案例覆盖美国 **17个campus、20,000+资产、>$3M备件**，说明产品能在大型数据中心资产层工作；但合作始于 2017 年，是安装基础案例，不是 2026 新订单。[eMaint/NTT DATA案例](https://www.emaint.com/works/ntt-case-study/)
+- Investor Day披露 ServiceChannel 服务 Sam’s Club **600+设施**、first-time resolution 提升约 **40%**，验证多站点网络价值；它是零售设施案例，不应算AI数据中心收入。
+- UV Smart披露35国和多家内镜/超声OEM兼容/背书；这是产品采纳，不是 FTV 订单金额。
+- **没有发现 FTV 披露任何 named hyperscaler、AI campus项目名、Fluke数据中心订单金额、交付窗口或取消率。** 这是估算上限的关键约束；任何声称“FTV已拿到某云厂商数亿美元AI订单”的消息，在出现采购文件、客户确认或公司披露前都应视为传闻。
+
+### 9.2 订单/供给三情景
+
+| 参数 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| Fluke B2B代理 | **1.00–1.05** | **1.05–1.12** | **>1.12** |
+| Fluke硬件backlog代理 | 4–6周收入 | 6–10周 | 10–16周，且交期上升 |
+| 订单取消/流失假设 | **1%–3%** | **<1.5%** | **<1%** |
+| CertiFiber产能利用 | 70%–85% | 80%–95% | >95%，局部allocation |
+| FAL合同状态 | ARR/NDR稳步正增，AI保留率贡献为主 | NDR明显改善、显式AI增售 | AI形成独立大额扩单且实施能力不堵塞 |
+| ASP订单转换 | 资本温和恢复、耗材中个位数 | 资本+机器人器械双驱动 | 医院资本全面恢复、50lb/UV/BIOTRACE同时加速 |
+| 宏观/渠道 | 欧洲弱、北美强；无新去库存 | 海外渠道补库、印度/拉美延续强 | 全球同步补库且无关税/政策冲击 |
+
+### 9.3 公司未来一年收入预测
+
+| 情景 | IOS 2027Q2 TTM | IOS增速 | AHS 2027Q2 TTM | AHS增速 | FTV收入 | FTV增速 | 主因 | 主观权重 |
+|---|---:|---:|---:|---:|---:|---:|---|---:|
+| **基准** | **$3.119B** | **+5.0%** | **$1.413B** | **+5.0%** | **$4.532B** | **+5.0%** | B2B约1、Fluke DC和FAL抵消欧洲/日历，ASP温和恢复 | 60% |
+| **乐观** | **$3.223B** | **+8.5%** | **$1.453B** | **+8.0%** | **$4.676B** | **+8.3%** | CertiFiber+pull-through、FAL AI/NDR、海外渠道与ASP资本同步加速 | 30% |
+| **极度乐观** | **$3.356B** | **+13.0%** | **$1.507B** | **+12.0%** | **$4.864B** | **+12.7%** | 数据中心commissioning极紧、NPI全面放量、医院/软件无阻力 | 10% |
+
+概率加权收入约 **$4.61B、增速约6.8%**。这个数字高于公司中期3%–4%框架，是因为当前Q2动能、订单快于收入和小基数NPI；若Q3/Q4核心增长回到约4%且Fluke B2B只略高于1，应回落到基准而不是坚持加权值。
+
+**EPS与收入不能一一对应：** 回购会继续减少股数，EBITDA率框架每年+50–100bp，因此基准收入+5%仍可能带来高个位数到低双位数调整后EPS增长；但净利息约$140M、较低税率是否持续、混合毛利和回购价格都会改变弹性。
+
+## 十、竞争格局、主流技术、替代路线与客户切换成本
+
+| 产品/业务 | 主要竞争对手/替代 | FTV优势 | 是否未来主流 | 主要风险与替代路径 | 客户切换成本 |
+|---|---|---|---|---|---|
+| **CertiFiber Max/Versiv** | EXFO PXM/LXM与FTBx-945、VIAVI、AEM TestPro CV100、Softing WireXpert MP/4500；旧OLTS+fan-out、租赁工具 | 一秒最多24芯、MPO/MMC pinned/unpinned、one-jumper、现场可换UniPort；Versiv/LinkWare、>10k CCTT与校准服务 | **高密多芯直接认证是主流；FTV产品份额未必主流。** 800G/1.6T和VSFF使原生多芯、报告自动化更重要 | 竞品提高芯数/速度、价格战；CPO/新连接器改变接口；客户用更多旧工具/人工并行；32芯支持延期 | **中高**：硬件可替换，但历史报告、ProjX项目、培训、TRC/适配器、校准和Versiv模块投资增加转换成本 |
+| **OptiFiber/端面/铜缆认证** | EXFO、VIAVI、AFL、Anritsu、Softing、AEM；连接器厂商测试服务 | Tier I+Tier II+端面+铜缆在同一Versiv/LinkWare工作流 | OTDR和端面检查长期主流；铜缆在AI主网络占比下降 | 自动化布线、预认证trunk和厂家交付报告减少现场新购；租赁降低拥有量 | 中高；报告平台和技术员习惯重要，但标准开放 |
+| **功率质量、接地、电池、热像** | Hioki、Megger、Dranetz、Chauvin Arnoux、Teledyne FLIR、Keysight及永久式BMS/EPMS传感器 | Fluke品牌、安全/耐用、广渠道、校准、跨产品tool belt | 便携诊断是成熟主流，不是新范式；AI DC提高使用频率 | 永久监控和OEM内置诊断减少手持测量；客户可分品类采购更便宜工具 | **中**：安全规范、培训和校准提高黏性，但大多非专有接口 |
+| **eMaint/CMMS/EAM** | IBM Maximo、SAP EAM、Oracle/Infor、Fiix/Rockwell、MaintainX、UpKeep、Limble；BMS/DCIM自带维护模块 | Fluke传感器/状态监测、故障知识和资产工单连接；低端至企业多层方案 | AI辅助诊断、自动工单和自然语言检索会主流化 | 通用LLM使copilot界面商品化；大客户标准化到SAP/IBM/ServiceNow；模型幻觉/安全责任 | **高**：资产主数据、历史工单、SOP、连接器、验证和员工流程迁移昂贵 |
+| **ServiceChannel/多站点FM** | JLL Corrigo、ServiceNow、IBM TRIRIGA、Planon、MRI、Facilio及自建provider网络 | 约3亿工单数据、两边provider marketplace、多站点零售安装基础 | AI调度/摘要是主流功能，但不一定单独收费 | Marketplace take-rate压毛利；大型客户压价；竞争者可集成LLM；AI免费化 | **高**：provider网络、合同、工单和付款流程形成网络/数据锁定 |
+| **Gordian/RSMeans/Flash AI** | Trimble、Autodesk、Procore、BNi、各地造价数据库/顾问 | RSMeans长期结构化成本数据、JOC采购网络；AI有专有上下文而非只接通用LLM | 数据增强估算会主流；Flash能否成为付费标准待验证 | 政府预算波动；客户把AI当内含功能；施工价格快速变化影响数据时效 | 中高：数据标准、估算模板和采购流程黏性强 |
+| **Industrial Scientific/iNet** | MSA ALTAIR、Honeywell BW、Dräger X-am、Blackline G7；一次性购买替代HaaS | iNet Exchange设备交换、联网设备/LENS、软件、校准和全球服务 | Connected safety与HaaS是主流方向 | 传感器商品化、竞品通信/云平台更强、油气/工业周期；客户可多品牌并用 | **中高**：设备池、dock、传感器、培训、合规记录锁定；换新周期仍可切换 |
+| **ASP STERRAD** | STERIS V-PRO、Getinge；蒸汽、EtO、化学HLD；部分器械改为一次性 | H₂O₂低温灭菌安装基础、器械兼容矩阵、周期/耗材/服务、医院流程和品牌 | H₂O₂低温灭菌已是主流之一；50lb是扩展而非颠覆 | 竞品兼容和周期改善；医院预算、procedure下降；FDA/CE变化、召回、耗材价格反弹；器械改耐蒸汽 | **高**：已验证器械、CSSD SOP、员工培训、连接/追踪系统和监管文件使替换成本很高 |
+| **UV Smart D60** | Nanosonics trophon、STERIS/化学HLD、手工浸泡/清洗及其他UV-C | 60秒、无化学液体流程、已有欧洲OEM兼容、ASP全球销售渠道 | **欧洲专科探头可能主流化；美国仍早期。** | FDA路径/证据不足、器械兼容范围、UV阴影/清洁前处理、医院ROI；化学HLD成熟便宜 | 中高：获得兼容/流程验证后黏性高；导入前替代容易 |
+| **BIOTRACE** | 3M Attest、STERIS及传统20分钟以上生物指示/化学指示 | 7秒读数、结果可接Censis；耗材复购 | 若独立临床/运营效果和成本获认可，快速读数会成为升级方向 | 价格、医院验证、竞品加速读数；BI/CI使用频率受院规影响 | 中高：reader安装后耗材锁定，但采购周期可重新竞标 |
+| **Provation/Censis/Landauer** | Epic/专科EMR、Modernizing Medicine/gMed、STERIS/Getinge追踪、Mirion等剂量服务 | 专科深度、合规记录、器械/剂量历史、跨ASP/BIOTRACE连接 | 临床文档、追踪、剂量云化是持续主流 | 医院向综合EMR统一、接口成本、网络安全、监管；大平台捆绑 | **高**：历史数据、工作流验证、接口和合规迁移成本高 |
+
+竞争产品技术交叉验证：[EXFO FTBx-945](https://www.exfo.com/en/products/field-network-testing/optical-loss-test-kits/ftbx-945-fiber-certifier-olts/specifications)、[Softing fiber certifier](https://itnetworks.softing.com/us/products/fiber/certifier/)。竞品能完成标准认证，说明 Fluke 的经济护城河主要是速度、连接器覆盖、可靠性、安装基础和工作流，不是标准排他。
+
+### 10.1 哪些新技术真正可能成为主流
+
+- **确定性最高：多芯/高密光纤直接认证、自动报告与端面检查。** 端口速率从800G向1.6T/3.2T演进会提高并行光纤和VSFF复杂度；即使CPO放量，无源光路的安装清洁、极性和损耗验收仍在。风险是“市场增长被多个测试厂商分享”，不是需求消失。
+- **确定性高：资产/设施软件中的AI助手、异常检测和自动工单。** 但这会成为功能基线，未必成为独立高价SKU。FTV的价值取决于专有工单/造价/资产数据是否提高NDR、减少实施成本或产生可计费结果。
+- **确定性中高：联网安全/HaaS。** 从买检测器转为订阅设备可用率和合规结果有客户价值；竞争激烈，不是赢家通吃。
+- **确定性中高：机器人器械的更大低温灭菌负载与更快无菌保证。** 手术机器人和复杂器械增加低温兼容需求；STERRAD 50lb和BIOTRACE有顺风，但必须逐器械/流程验证。
+- **确定性中：60秒UV-C HLD。** 在TEE等高周转专科探头有明显时间优势，但美国监管、清洁前处理、器械兼容和医院ROI未完全验证，暂不能按全球主流估值。
+
+### 10.2 主要风险与可量化反证
+
+| 风险 | 传导 | 应跟踪指标 | 何时下修 |
+|---|---|---|---|
+| AI/DC叙事大于收入 | 市场给高估值但vertical仍小 | Fluke DC相关收入/订单是否开始量化；CertiFiber单位、交期、相邻产品增速 | 连续两季只给定性“强”但Fluke核心增速<公司；DC篮子估算仍<5%且增长回落 |
+| 短周期订单转弱 | Fluke收入与高毛利承压 | B2B、POS、渠道库存、PMI、欧洲sell-in/sell-through | B2B<1连续两季，POS同步下降，库存不再改善 |
+| NPI被竞品复制 | CertiFiber溢价/份额下降 | 32芯/新连接器路线、竞品测试速度、价格、LinkWare attach | 竞品同等24/32芯直连且价格低>20%，Fluke交期正常但订单不增 |
+| 软件AI商品化 | 研发/token成本上升，ARPU不增 | 显式AI收入、NDR、GDR、实施周期、token毛利 | AI使用增长但NDR/新产品收入无改善；客户要求免费功能 |
+| ASP资本与procedure风险 | 设备、耗材双压 | 资本订单、耗材量、手术量、医院预算、50lb win rate | 资本再负增长、耗材低于中个位数、pipeline右移超过两季 |
+| 监管/产品质量 | 召回、兼容收缩、赔偿 | FDA/CE、器械兼容、field actions、投诉 | STERRAD/BIOTRACE/D60重大召回或许可延期；UV美国路径停滞 |
+| 供应链/关税 | 毛利和交期 | 内存/稀土多源、价格成本、渠道ATP、调整后毛利率 | 订单转收入受材料“material”影响；毛利率跌破61%且价格无法抵消 |
+| 服务/marketplace混合 | 收入快但毛利降 | IOS/AHS调整后毛利、ServiceChannel mix、ASP资本占比 | 核心增长>5%但EBITDA率无法至少保持年度+50bp框架 |
+| 负债与回购 | 利息上升、下行容错降低 | 净杠杆、FCF、回购额/FCF、信用利差 | 净杠杆>3x且仍回购；FCF<$800M；利息覆盖<5x |
+| 商誉/无形减值 | GAAP权益和信心受损 | 软件增长、AHS回报、年度减值测试、ROIC | 核心平台长期低于收购计划、重大减值；ROIC持续低于资本成本 |
+| Ralliant口径误用 | 把Tek/Qualitrol/EA增长错算给FTV | 报告是否明确continuing operations | 任一分析仍把PT测试/AI芯片ATE当FTV，结论应作废 |
+
+## 十一、综合投资判断与未来四季检查表
+
+### 11.1 综合判断
+
+**业务质量：高。** 63%+毛利、约30% EBITDA、$1B+ FCF、品牌/监管/工作流安装基础均优于普通多元工业。Fluke和ASP是核心价值，FAL/ISC/AHS软件把一次性硬件向经常性结果转化。
+
+**增长质量：正在改善，尚待穿越工作日与低基数。** 五季核心增速连续加速、订单快于收入、量价同时增长是扎实证据；但2026Q1多四个工作日、Q2比较基数偏低，Q4少四天。2026Q3和工作日归一后的Q4/2027Q1才是持续性检验。
+
+**AI数据中心可选性：真实、规模小、利润好。** CertiFiber Max解决高密光纤commissioning的时间痛点，且可拉动已有 Fluke 工具；它更像“高毛利NPI推动约$1.8B Fluke平台加速”的楔子，而不是独立数十亿美元业务。基准一年后 CertiFiber约$58M、其他DC工具约$180M，足以贡献增量但不能重定义整个FTV。
+
+**估值：质量已部分反映。** $59.26 相对公司2026调整后EPS指引中点$3.00约 **19.8x**，相对数据商forward EPS约18.7x；EV/官方TTM调整后EBITDA约 **16.1x**，P/官方TTM FCF约 **17.1x**。若基准收入+5%、利润率扩张和回购执行，估值可消化；若增长回落至2%–3%，上行依赖多重扩张，不够安全。
+
+**资产负债表：不是投资阻断项，但限制错误空间。** FCF强使2.4x净杠杆可控；商誉/无形80.6%资产、回购高于内部现金和新债高票息要求管理层在股票价格、M&A回报与去杠杆之间更克制。
+
+**最终定位：** `核心优质、增长拐点待验证、AI/DC为小而有意义的期权；不是AI硬件backlog标的。` 基准情景最合理；只有在2026H2出现可量化的CertiFiber单位/交期、Fluke持续B2B>1、FAL NDR与ASP资本转换证据后，才应提高乐观情景权重。
+
+### 11.2 每季必须更新的十项指标
+
+1. Fluke订单增速、B2B、北美/欧洲POS及渠道库存；是否继续订单快于收入。
+2. CertiFiber Max 单位/收入、交期、32芯适配器、MPO/MMC客户采纳，以及power quality/battery/thermal pull-through。
+3. IOS核心增长中价格与量；数据中心、国防、印度等增长垂直的实际规模。
+4. FAL各品牌ARR/GDR/NDR、新产品收入、ServiceChannel marketplace mix和Flash AI付费/生产客户。
+5. RPO $824.8M 与递延收入 $476.7M 的环比变化；区分多年软件与短周期硬件。
+6. ASP资本订单与耗材量；50lb STERRAD兼容/win rate、BIOTRACE attach、UV Smart地区许可。
+7. GAAP/调整后毛利率及年度EBITDA率能否扩50–100bp；警惕低毛利高速产品mix。
+8. 内存、稀土、关税的价格成本和订单转换；有无从“actively countermeasure”变成“material impact”。
+9. TTM FCF、净杠杆、回购/FCF比例、新M&A价格；净杠杆是否向2x回落。
+10. 股数减少带来的EPS贡献与真实经营贡献分拆；不要把回购增速当有机增长。
+
+## 十二、资料来源与口径审计
+
+### 12.1 公司和监管一手资料
+
+- [Fortive 2026Q2 财报新闻稿](https://investors.fortive.com/news-events/press-releases/detail/290/fortive-reports-second-quarter-2026-results)
+- [Fortive 2026Q2 10-Q](https://investors.fortive.com/sec-filings/all-sec-filings/content/0001659166-26-000034/ftv-20260703.htm)
+- [Fortive 2026Q2 Earnings Presentation](https://d1io3yog0oux5.cloudfront.net/_cf2e7d359d99c5471392692ad6dacb90/fortive/db/947/11308/presentation/FTV-Q2-2026-Earnings-Presentation.pdf)
+- [Fortive 2025 10-K](https://investors.fortive.com/sec-filings/all-sec-filings/content/0001659166-26-000007/ftv-20251231.htm)
+- [2026Q1](https://investors.fortive.com/news-events/press-releases/detail/284/fortive-reports-first-quarter-2026-results)、[2025Q4](https://investors.fortive.com/news-events/press-releases/detail/280/fortive-reports-fourth-quarter-and-full-year-2025-results)、[2025Q3](https://investors.fortive.com/news-events/press-releases/detail/275/fortive-reports-third-quarter-2025-results)、[2025Q2](https://investors.fortive.com/news-events/press-releases/detail/271/fortive-reports-second-quarter-2025-results)
+- [Fortive 2025 Investor Day](https://d1io3yog0oux5.cloudfront.net/_9e83720912b2cac706416262579e9c94/fortive/db/920/11222/file/Fortive_Investor_Day_2025.pdf)
+- [Ralliant分拆完成与CEO任命](https://investors.fortive.com/news-events/press-releases/detail/269/fortive-announces-completion-of-the-ralliant-separation-and-appointment-of-olumide-soroye-as-president-ceo-and-director-of-fortive)
+- [FTV 2026投资者会议列表](https://investors.fortive.com/news-events/events)
+
+### 12.2 产品、技术、采纳和渠道资料
+
+- [CertiFiber Max 官方产品页/型号/规格](https://www.flukenetworks.com/datacom-cabling/fiber-testing/certifiber-max-optical-loss-test-set)
+- [Fluke：800G及以上光纤测试技术文](https://www.flukenetworks.com/blog/cabling-chronicles/fiber-tester-ready-800G-beyond)
+- [Fluke 1773/1775/1777](https://www.fluke.com/en-us/product/electrical-testing/power-quality/1773-1775-1777)、[数据中心电池测试](https://www.fluke.com/en-us/learn/blog/energy-management/battery-testing-data-centers)
+- [eMaint AI](https://www.emaint.com/emaint-ai)、[NTT DATA数据中心案例](https://www.emaint.com/works/ntt-case-study/)
+- [ServiceChannel AI 2026-04](https://servicechannel.com/press/servicechannel-launches-servicechannel-ai-for-facilities-management/)、[ServiceChannel 2026春季产品](https://servicechannel.com/blog/spring-2026-product-release/)
+- [Gordian Flash AI](https://www.gordian.com/press/gordian-flash-ai-estimating-construction-cost-estimates/)、[Accruent-PowerX合作](https://www.accruent.com/resources/press-releases/accruent-announces-strategic-partnership-with-powerx)
+- [Industrial Scientific产品](https://www.indsci.com/en)、[iNet Connected Safety](https://www.indsci.com/inet-connected-safety)、[Ventis Pro5](https://www.indsci.com/en/gas-detectors/multi/ventis-pro5)
+- [ASP收购UV Smart](https://www.asp.com/en-us/media/asp-acquires-majority-stake-uv-smart)、[UV Smart D60](https://www.uvsmart.nl/d60?lang=en)
+- [STERRAD 100NX](https://www.asp.com/en-us/products/terminal-sterilization/sterrad-100nx-new)、[STERRAD耗材datasheet](https://www.asp.com/sites/default/files/pdf/STERRAD%20Consumables%20Datasheet%20%285%29.pdf)、[BIOTRACE](https://www.asp.com/en-us/media/asp-introduces-biotrace-instant-read-steam-system)、[ULTRA GI CE公告](https://www.asp.com/sites/default/files/pdf/ULTRA%20GI%20PR%20Draft%20EU%2014Jan2026_v1.pdf)
+- [FDA 510(k)数据库示例K250802](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K250802)：用于核对公开监管记录；本报告未确认该编号就是管理层所说2026Q2 50lb扩展许可，故没有做错误绑定。
+- 渠道样本：[CDL NZ价格/上市ATP](https://www.cdlnz.com/images/uploaded/Fluke_CertiFiber%E2%84%A2_Max.pdf)、[Datatec add-on](https://www.datatec.eu/de/en/fluke-networks-cfm-s-add)、[PC-Canada库存/价格](https://www.pc-canada.com/item/certifiber-max-singlemode-oltsw-dbl-end-insp/cfm-100si-intl)、[BICSI CEC workshop](https://www.lanjam.com/events/2026/4/6/flukeworkshophonolulu)
+
+### 12.3 项目内行业资料：只使用 `基本面/行业调研/`
+
+- [DCIM、能控与AI工厂数字孪生](../../行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-07-10.md)：用于区分DCIM/BMS、EAM/CMMS，采用软件按rack/asset/站点的口径边界。
+- [数据中心土建、MEP与预制化交付](../../行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-07-10.md)：用于commissioning/FAT/L4-L5/IST、首次验收、班组和项目工期逻辑。
+- [AI数据中心建设规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)：用于GB300的rack/MW/GPU/光端口换算和facility/IT MW边界。
+- [AI产业链全局图谱与口径字典](../../行业调研/产业背景/AI产业链全局图谱与口径字典_T03_2026-07-09.md)：用于link/port/module/engine与BOM口径，避免把可复用测试工具算作每GPU固定件。
+- [AI产业链瓶颈与反证指标总表](../../行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-07-10.md)：用于把commissioning放入time-to-revenue链条，并设置交期、首次验收和backlog转换反证。
+
+### 12.4 未采用或降权的信息
+
+- 未采用匿名论坛声称的客户名、订单金额或“独家供应”；未找到能与公司披露、采购文件或客户公告交叉验证的FTV hyperscaler大单。
+- Industry Valley等论坛帖子和厂商宣传大多复述CertiFiber产品页，只用于确认业内讨论热度，不用于份额或收入估算。
+- 经销商的缺货、12周ATP和报价均是上市期单点样本；Q2管理层“订单转收入未受材料重大影响”的更新权重更高。
+- 未把Tektronix、Qualitrol、EA Elektro-Automatik、Ralliant半导体/电子测试收入、订单或技术计入FTV。
+- 未把完整DCIM/BMS、MEP、UPS、PDU、冷却或光模块的每MW市场价值套给Fluke/FAL；FTV只获得其测试、运维与工作流层的内容量。

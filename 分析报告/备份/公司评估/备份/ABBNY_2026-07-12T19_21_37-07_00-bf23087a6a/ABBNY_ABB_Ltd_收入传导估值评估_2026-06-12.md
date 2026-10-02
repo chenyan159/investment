@@ -1,0 +1,153 @@
+# 公司收入传导与价值传导评估：ABB Ltd（ABBNY）
+
+> 报告日期：2026-06-12。  
+> 主口径：NTM，约未来 12 个月或未来 4 个季度。本文用 ABB 最新持续经营口径评估收入、利润和经营价值传导，不输出股票评级、目标价、估值倍数判断或全公司排序。  
+> 资料边界：使用 `公司调研/` 与 `行业调研/` 下资料，并用 ABB 官方财报、公告和产品资料做最新校验；未读取、引用或继承 `特征量化/`、Signals、排序或回归资料。  
+> 汇总口径：公司层面以三大持续经营业务区 Electrification、Motion、Automation 为不重复口径；HiPerGuard、800VDC/DSX、ABB Ability/Data Center Automation 是关键产品/模块，在产品层单列判断，但公司汇总时包含在相关业务区内，不重复加总。
+
+## 1. 一页结论
+- 主口径与补充口径：主口径为 NTM 持续经营收入、Operational EBITA、毛利率、经营现金流和自由现金流方向；FY2026 指引、FY2027/长期 800VDC 或 Robotics 出售收益只作为补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：ABB 2025 年持续经营收入为 `33.220B` 美元，Operational EBITA 为 `6.314B` 美元、margin `19.0%`；Q1 2026 收入 `8.734B` 美元，同比 `+18%`、可比 `+11%`，TTM 收入约 `34.572B` 美元。公司对 FY2026 指引为可比收入增长 `high single-digit to low double-digit`、book-to-bill 高于 `1`、Operational EBITA margin 同比改善。
+- 重要产品/业务线：`Electrification` 是主传导线，包含中压/低压配电、开关设备、断路器、保护继电器、UPS、电能质量、电气服务、数据中心电力模块；`Motion` 是驱动、电机、高功率电力电子、冷却/泵/风机和 grid stabilization 辅助传导；`Automation` 是过程自动化、机器自动化、海事港口、能源工业和软件服务传导；`HiPerGuard MV UPS/25MW power block` 是高弹性但尚未完全收入表化的关键模块；`800VDC/DSX/SimReady` 是 NTM 小收入、远期高期权；Robotics 已签约出售给 SoftBank，作为非持续经营/待剥离资产，不进入持续经营基准。
+- NTM 公司收入四情景：悲观 `34.5-36.0B` 美元，低于当前 FY2026 指引和订单节奏；基准 `36.8-38.5B` 美元，基本兑现 FY2026 指引和 Q1 backlog；乐观 `39.0-41.0B` 美元，数据中心电力订单转收入强于预期；极度乐观 `42.0-45.0B` 美元，需要 Electrification、HiPerGuard、Motion 高功率和 Automation 项目同时超预期。
+- 利润或 EBITDA 四情景：用 Operational EBITA 主评估口径，悲观 `6.3-6.9B` 美元、margin `18.0%-19.2%`；基准 `7.2-7.9B` 美元、margin `19.5%-20.5%`；乐观 `8.2-9.0B` 美元、margin `21.0%-22.0%`；极度乐观 `9.5-10.5B` 美元、margin `22.5%-23.5%`。EBITDA 方向高于 Operational EBITA，基准大致 `8.0-8.8B` 美元区间，但因 D&A、非经营项目和 Robotics 交割时点不确定，净利润不作为本报告核心比较指标。
+- 最大传导瓶颈：不是行业需求，而是从订单到收入确认的执行链条，包括电网接入、客户 site readiness、变压器/中压设备交期、FAT/SAT、现场调试、项目型收入确认和客户建设节奏。
+- 最大利润率变量：Electrification 数据中心和公用事业项目的 mix、价格是否覆盖铜/钢/功率器件/关税成本、系统项目占比是否稀释毛利、Motion 中 Gamesa Electric 和 High Power 业务效率改善、Automation 的项目 mix 与服务 attach rate。
+- 最大现金流变量：订单预收和合同负债、项目里程碑收款、库存/在制品、长交期设备采购、Robotics 交易相关税费/分离成本，以及高订单增长下营运资本占用。
+- 可信度：公司层面基准为`中高`，因为收入、订单、backlog、分部收入和指引证据强；产品级数据中心、HiPerGuard 和 800VDC 拆分为公司未单独披露的估算，其中数据中心硬件为`中`，HiPerGuard 为`中`，800VDC/DSX 为`低到中`。
+
+## 2. 重要产品清单
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Electrification 核心电气化：中低压配电、开关设备、断路器、保护、UPS、电能质量、数据中心/公用事业/建筑电气服务 | FY2025 `17.357B`；Q1 2026 `4.613B`，Q1 run-rate 约 `18.5B` | Q1 2026 约 `52.8%` | 公司最大收入与利润传导线；数据中心和公用事业订单弹性最强 | A | 进入基准主口径；用 FY2026 指引、Q1 订单 `6.647B`、EL backlog `11.460B` 校准 | 800VDC、固态保护、MV UPS 标准化带来 2027+ 上修空间 |
+| Motion：驱动、电机、高功率电力电子、冷却/泵/风机驱动、grid stabilization、Gamesa Electric | FY2025 `8.247B`；Q1 2026 `2.142B`，Q1 run-rate 约 `8.6B` | Q1 2026 约 `24.5%` | 工业效率、HVAC、BESS/PCS、能源稳定和数据中心冷却的辅助传导线 | A | 进入基准主口径；Q1 订单 `2.548B`、backlog `6.597B` 支持 NTM 正增长 | 数据中心 cooling drives、BESS/PCS 和高功率业务若改善，可上修 |
+| Automation：过程自动化、机器自动化、海事港口、能源工业、工业软件和服务 | FY2025 `8.084B`；Q1 2026 `2.147B`，Q1 run-rate 约 `8.6B` | Q1 2026 约 `24.6%` | 软件、控制、服务、工业项目和能源行业周期传导线 | A | 进入基准主口径；Q1 book-to-bill `1.15`，连续第五个季度为正 | AI 工厂数字孪生、EPMS/SCADA、工业软件服务 attach rate |
+| HiPerGuard MV UPS、34.5kV 直连、25MW power block | 公司未披露单独收入；Applied Digital 400MW/300MW 项目提供 B 级订单/项目锚；NTM 可确认收入保守估算 `0.3-0.8B` | 约 `<1%-2%`，但订单弹性高 | 改变数据中心电力架构的关键新品；高功率 AI campus 直接相关 | B/C | 少量进入基准，大部分增量放在乐观；未披露合同金额，不能把客户 MW 总量直接当 ABB 收入 | 若 hyperscaler 标准化 MV UPS，2027+ 订单弹性显著 |
+| ABB Ability Data Center Automation、EPMS/SCADA、能源管理、DSX/SimReady 数字孪生 | 公司未披露 data center software 单独收入；现有 Automation 服务和 EL 数字化收入可见但未拆分；NTM 可量化性低 | 估算 `<1%-3%` | 利润质量好，能提升 attach rate 和服务粘性，但收入体量小于硬件 | C | 基准只纳入已在 EL/Automation 现有收入内的部分；新增 DSX/SimReady 不单独放入基准收入 | 1MW rack、Omniverse DSX、digital twin 工程模板化 |
+| 800VDC、固态电力电子、Infinitus/solid-state breakers、LVDC 保护 | 当前收入表不可单独识别；主要是技术合作、工程导入、设计库和样机 | 估算 `<1%` | 对 2027-2028 高密 AI rack 重要，但 NTM 收入确认路径仍弱 | C/D | 不进入 NTM 基准；只作为乐观上限/远期期权跟踪 | 若 800VDC 标准和客户 AVL 在 2026H2 明确，可移入 2027 基准 |
+| Robotics division | 2024 收入约 `2.3B`，2025Q4 起作为 discontinued operations；已签约出售给 SoftBank | 不进入持续经营口径 | 剥离后 ABB 更聚焦电气化和自动化 | A | 排除出持续经营 NTM 基准；只作为交易交割、现金和分离成本跟踪 | SoftBank 交易预计 2026 年中后期交割，非经营传导 |
+
+## 3. 产品需求四情景
+- 本步口径：只评估产品或服务的外部需求池，不评估 ABB 份额、收入确认和利润率。当前需求锚以 FY2026 指引、Q1 2026 订单/backlog、行业数据中心建设、电气化和自动化需求为准。绝对变化写需求池或订单节奏的方向，不等同于 ABB 收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Electrification 核心电气化 | Q1 2026 EL 订单 `6.647B`，同比 `+51%`、可比 `+44%`；EL backlog `11.460B`，同比 `+40%`；数据中心订单三位数增长；FY2026 集团可比收入高个位数到低双位数增长 | 订单回落到接近收入，book-to-bill `1.0x` 左右；数据中心/公用事业项目延期，EL 可比需求低个位数到中个位数 | EL 订单仍高于收入，数据中心、公用事业、商业建筑和电气服务正常兑现；可比需求高个位数到低双位数 | 北美和欧洲 AI campus、公用事业配网、工业电气化同步增强；EL 可比订单继续双位数 | AI campus 500MW+ 项目批量冻结设计，ABB 架构进入多客户 AVL，订单非线性上修 | 悲观比当前订单节奏少 `2-4B` 年化；基准维持 `19-21B` 年化需求；乐观上修 `2-4B`；极度乐观再上修 `5B+` | 基准符合当前预期；乐观高于指引；极度乐观明显高于当前收入可确认路径 | 正向：JLL 2026 展望称 2026-2030 数据中心容量增加约 `97GW`、总投资约 `$3T`；CBRE 认为 500MW+ AI campus 推动多年建设。反证：并网 24-48 个月、变压器和施工延误会把需求推迟而非消灭 |
+| Motion | Q1 2026 订单 `2.548B`，同比 `+18%`、可比 `+9%`；backlog `6.597B`；商业 HVAC、grid stabilization、高功率业务正向，Gamesa 并表 | HVAC、工业 capex 和 grid stabilization 放缓；High Power 效率问题延续；可比需求低个位数或持平 | 驱动、电机、服务和电力电子按当前订单节奏增长；可比需求中个位数到高个位数 | 冷却泵/风机驱动、BESS/PCS、grid stabilization 和高功率工业订单加速 | AI campus 配套 BESS/PCS、冷却驱动和高功率电力电子全面进入标准设计 | 悲观较当前 run-rate 少 `0.3-0.6B`；基准年化需求约 `9B`；乐观上修 `0.7-1.2B`；极度乐观上修 `2B+` | 基准符合当前预期；乐观需冷却和 grid stabilization 订单增强 | 正向：Q1 可比订单增长、HVAC 和电网稳定需求强。反证：收购 mix 稀释、项目业务占比上升和化工弱需求 |
+| Automation | Q1 2026 订单 `2.464B`，同比 `+12%`、可比 `+5%`；book-to-bill `1.15`；收入可比 `+10%`；Machine Automation 从低谷恢复 | Marine/ports、energy industries 或 Machine Automation 订单后移；中东不确定性影响项目；可比需求持平到低个位数 | Process、Machine Automation、Marine & Ports、Energy Industries 正常兑现；可比需求中个位数 | 大项目 backlog 转化、服务和软件 attach 提升，AI 工厂 EPMS/SCADA/数字孪生需求加速 | 多行业自动化 capex 与 AI factory 运营软件同步上修 | 悲观少 `0.4-0.7B`；基准年化需求 `8.8-9.6B`；乐观上修 `1B+`；极度乐观上修 `2B+` | 基准符合当前预期；乐观需订单和服务 mix 同步改善 | 正向：连续正 book-to-bill，服务/软件抗周期。反证：项目 mix 和地区冲突会延迟验收 |
+| HiPerGuard MV UPS/25MW power block | Applied Digital 400MW Polaris Forge 1 与 300MW Polaris Forge 2 项目；第二订单在 Q4 2025 计入；34.5kV HiPerGuard 2026 发布，支持 25MW block 和直接中压架构 | 客户继续采用成熟低压 UPS+BESS/柴油架构，MV UPS 只在少数项目试点 | 已披露 Applied Digital 等项目按计划推动，NTM 内部分收入确认，更多客户评估 | 多个 AI campus 采用 MV UPS 架构，25MW block 成为复制模板 | Hyperscaler 指定 34.5kV MV UPS 或类似架构为标准 power block | 悲观需求池 `<0.5B`；基准 `0.5-1.2B`；乐观 `1.2-2.5B`；极度乐观 `3B+` 订单池 | 基准略高于传统预期但有项目证据；乐观以上显著高于当前可见收入 | 正向：应用于 400MW/300MW 项目、效率和空间优势。反证：可靠性、安全认证、维护和客户架构切换周期长 |
+| ABB Ability/EPMS/SCADA/DCIM/数字孪生 | 行业从 DCIM 向 AI factory operations、EPMS/BMS/SCADA、实时遥测和 digital twin 扩展；ABB 现有工业软件和 Data Center Automation | 软件仍作为硬件项目附属，客户用自研或 Schneider/Vertiv/Siemens 生态 | 随 EL/Automation 硬件项目正常 attach，服务收入稳步增长 | 数据中心业主把电力监控、根因分析、能源柔性和数字孪生前置为验收/运维条件 | DSX/SimReady 进入多客户设计流程，软件从附属变成 power block 模板组成 | 悲观新增小于 `0.1-0.2B`；基准 `0.2-0.5B`；乐观 `0.5-1.0B`；极度乐观 `1B+` | 基准符合保守预期；乐观需客户 attach 和平台化证据 | 正向：AI 负载动态化提升监控和仿真价值。反证：DCIM 竞争强，ABB 软件心智弱于 Schneider/AVEVA/ETAP、Vertiv |
+| 800VDC/固态电力电子 | 1MW rack、NVIDIA 800VDC、ABB 800VDC 技术文章和 DSX 合作；2026 多为 design-in | 标准冻结慢，安全/保护/接地和客户责任边界不清，NTM 需求仅为样机/工程 | 2026 形成少量工程、设计库、样机和保护控制需求 | 2026H2 多个客户试点，2027 采购框架清晰 | 800VDC 快速成为下一代 AI rack 主路线，ABB 进入关键设备 AVL | NTM 悲观 `<0.05B`；基准 `0.05-0.2B`；乐观 `0.2-0.6B`；极度乐观 `0.8B+` 订单/工程机会 | 基准不进入收入主线；乐观以上为远期期权 | 正向：高密 rack 需要降低铜耗和转换损耗。反证：服务器 PSU/BBU、OCP/UL/IEC、客户安全策略决定价值分配 |
+
+## 4. 可收入化暴露与收入基数
+- 本步口径：只判断哪些需求能进入 ABB NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入；客户 MW、TAM、AI capex 和项目总额不能直接当 ABB 收入。三大业务区用 A 级收入表证据，HiPerGuard 用 B/C 级项目证据，800VDC/DSX 用 C/D 级证据。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Electrification 核心电气化 | FY2025 `17.357B`；Q1 2026 `4.613B`；Q1 订单 `6.647B`；backlog `11.460B` | 直接 | 高毛利硬件+系统+服务；数据中心项目可能带来系统 mix 毛利稀释但经营杠杆强 | `17.5-18.5B` | `19.0-20.5B` | `21.0-23.0B` | `24.0-26.0B` | 基准符合 FY2026 指引和 Q1 订单；悲观低于指引；乐观高于指引 | A | 是 | 已披露分部收入、订单、backlog 和利润率 | 基准主口径；数据中心垂直估算只作为内部驱动，不单独替代分部收入 |
+| Motion | FY2025 `8.247B`；Q1 2026 `2.142B`；Q1 订单 `2.548B`；backlog `6.597B` | 直接+间接 | 中高利润率驱动/电机/服务；收购和项目 mix 短期稀释 | `8.3-8.8B` | `8.9-9.6B` | `9.7-10.8B` | `11.0-12.0B` | 基准符合当前订单和 HVAC/grid stabilization 需求 | A | 是 | 分部收入、订单、backlog 和管理层评论 | 基准进入；数据中心冷却/PCS 作为辅助增量 |
+| Automation | FY2025 `8.084B`；Q1 2026 `2.147B`；Q1 订单 `2.464B`；book-to-bill `1.15` | 直接+间接 | 服务/软件较好，项目和系统业务毛利较低 | `8.2-8.7B` | `8.8-9.6B` | `9.8-10.8B` | `11.0-12.2B` | 基准符合当前恢复；乐观需订单和服务 mix 超预期 | A | 是 | 分部收入、订单、backlog 和收入可比增长 | 基准进入；不把 AI factory 软件远期期权提前放大 |
+| HiPerGuard MV UPS/25MW power block | 未单独披露收入；Applied Digital 400MW/300MW 项目，Q4 2025 第二订单已 booked；34.5kV 发布 | 直接 | 若产品化成功，毛利率和服务 attach 可能高于普通项目；早期仍有工程和认证成本 | `0.1-0.3B` | `0.3-0.8B` | `0.8-1.8B` | `2.0-3.0B` | 基准只承认已公开项目和保守交付；乐观高于当前显性收入 | B/C | 小比例是 | B 级项目订单+明确产品和时间表；但合同金额未披露 | 基准小比例纳入 EL；大部分放入乐观和极度乐观 |
+| ABB Ability/Data Center Automation/EPMS/SCADA/数字孪生 | 未单独披露收入；Q1 Automation 服务和 EL 数字化收入中已有部分 | 直接+间接 | 软件/服务毛利较高，但销售周期和客户平台选择不确定 | `0.2-0.4B` | `0.4-0.8B` | `0.8-1.5B` | `1.5-2.5B` | 基准为现有 attach；乐观需 DSX/EPMS 平台化 | C | 是，限现有收入内 | 产品可验证，收入未拆分 | 作为 EL/Automation 内部利润质量变量，不单独叠加到公司收入 |
+| 800VDC/固态电力电子 | 产品发布、技术文章、NVIDIA/DSX 合作，缺少可量化订单和 NTM 收入确认 | 直接+间接 | 若成功，保护、开关和电力电子价值量高；NTM 成本投入先于利润 | `0-0.05B` | `0-0.1B` | `0.1-0.4B` | `0.5-1.0B` | 当前仅 NTM 上限，不代表预期 | C/D | 否，除非已含在现有工程服务 | 缺少披露订单金额、客户确认和收入时间表 | 不进 NTM 基准；列乐观上限和远期期权 |
+| Robotics division | 签约出售给 SoftBank，Q4 2025 起报告为 discontinued operations；预计 2026 年中后期交割 | 直接但非持续经营 | 剥离后持续经营 margin 更聚焦；交易收益非经营 | `0` | `0` | `0` | `0` | 排除持续经营收入 | A | 否 | 已签约出售且改为非持续经营 | 排除；只跟踪交割、税费、分离成本和 stranded costs |
+
+## 5. 产品级收入和利润贡献
+- 本步口径：从第一步需求和第二步收入基数出发，判断 NTM 内对 ABB 的收入和利润贡献。收入贡献为持续经营收入或已纳入相关业务区的模块收入；利润贡献用 Operational EBITA 或可归属经营利润方向。HiPerGuard、800VDC 和软件模块不与 Electrification/Automation 重复加总，表中用于判断弹性和利润质量。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Electrification 核心电气化 | 悲观 | `17.5-18.5B` | Op. EBITA `4.0-4.4B` | margin `22%-23.5%`，项目 mix 和成本压制 | 低于 FY2026 指引隐含路径 | Q1 订单强但数据中心/公用事业项目可能延期 | 保留为下行情景 | 并网、变压器、中压设备、施工和客户 capex 后移 |
+| Electrification 核心电气化 | 基准 | `19.0-20.5B` | Op. EBITA `4.6-5.1B` | margin `23.5%-24.5%`，价格和规模基本抵消成本 | 符合当前预期 | Q1 EL 订单 `6.647B`、backlog `11.460B`、margin `24.0%` | 保留为主情景 | 系统项目占比上升可能稀释毛利 |
+| Electrification 核心电气化 | 乐观 | `21.0-23.0B` | Op. EBITA `5.2-5.8B` | margin 维持或小幅提升 | 高于当前预期 | 数据中心订单三位数增长持续，公用事业和服务同步强 | 保留但需后续订单验证 | 竞争者 Schneider/Eaton/Siemens/Vertiv 同步扩产压价 |
+| Electrification 核心电气化 | 极度乐观 | `24.0-26.0B` | Op. EBITA `6.0-6.8B` | margin `25%+` 才能成立 | 显著高于当前预期 | 多个 AI campus 标准化 ABB power block，服务 attach 上升 | 下移为乐观上限 | 不能仅凭 AI capex 总额推导 ABB 收入；客户和交付路径必须可见 |
+| Motion | 悲观 | `8.3-8.8B` | Op. EBITA `1.4-1.6B` | margin `16.5%-18.0%` | 低于当前订单节奏 | Gamesa/High Power 效率稀释和工业需求放缓 | 保留 | 收购整合、项目 mix、化工弱需求 |
+| Motion | 基准 | `8.9-9.6B` | Op. EBITA `1.65-1.85B` | margin `18%-19%` | 符合当前预期 | Q1 订单 `2.548B`、backlog `6.597B`、HVAC/grid stabilization 正向 | 保留 | 高功率业务效率改善需到 2026H2 |
+| Motion | 乐观 | `9.7-10.8B` | Op. EBITA `1.9-2.2B` | margin `19%-20.5%` | 高于当前预期 | 冷却驱动、BESS/PCS、grid stabilization 和服务超预期 | 保留 | 数据中心相关订单未必由 ABB 主导 |
+| Motion | 极度乐观 | `11.0-12.0B` | Op. EBITA `2.2-2.6B` | margin `20%+` | 显著高于当前预期 | AI campus 将 BESS/PCS、冷却驱动和电力电子标准化 | 下移为乐观上限 | Motion 不是数据中心主电力链核心，客户可选供应商多 |
+| Automation | 悲观 | `8.2-8.7B` | Op. EBITA `1.1-1.25B` | margin `13%-14.5%` | 低于当前恢复路径 | 项目延期、Machine Automation 再度弱化 | 保留 | 验收和项目 mix |
+| Automation | 基准 | `8.8-9.6B` | Op. EBITA `1.25-1.45B` | margin `14%-15.5%` | 符合当前预期 | Q1 book-to-bill `1.15`，可比收入 `+10%` | 保留 | 软件 attach 需要客户平台选择 |
+| Automation | 乐观 | `9.8-10.8B` | Op. EBITA `1.5-1.8B` | margin `15%-17%` | 高于当前预期 | Marine/ports、Energy Industries、工业软件和 data center automation 强 | 保留 | 大项目收入确认节奏 |
+| Automation | 极度乐观 | `11.0-12.2B` | Op. EBITA `1.8-2.2B` | margin `16.5%+` | 显著高于当前预期 | AI factory operations、数字孪生和自动化项目同步放量 | 下移为乐观上限 | Automation 与 AI 数据中心收入路径间接，不能靠题材放大 |
+| HiPerGuard MV UPS/25MW power block | 悲观 | `0.1-0.3B`，已包含在 EL 内 | 利润贡献有限，可能被工程成本抵消 | 初期稀释或中性 | 低于当前乐观叙事 | Applied Digital 项目推进慢，客户维持传统低压架构 | 保留为产品下行 | 客户认证、现场可靠性和安全责任边界 |
+| HiPerGuard MV UPS/25MW power block | 基准 | `0.3-0.8B`，已包含在 EL 内 | 正向但不主导集团利润 | margin 随规模改善 | 符合保守收入化 | 已有 400MW/300MW 公开项目和 25MW block 架构 | 保留 | 合同金额未披露，不能过度量化 |
+| HiPerGuard MV UPS/25MW power block | 乐观 | `0.8-1.8B`，已包含在 EL 内 | 对 EL margin 正向，服务 attach 增加 | margin 上行 | 高于当前基准 | 多客户采用 MV UPS，34.5kV 供货/认证推进 | 保留但可信度中 | 低压 UPS/BESS/柴油组合仍成熟 |
+| HiPerGuard MV UPS/25MW power block | 极度乐观 | `2.0-3.0B`，已包含在 EL 内 | 高毛利产品化才可明显拉动 EL | margin 明显上修 | 远高于当前预期 | Hyperscaler 指定架构、25MW block 复制 | 下移为乐观上限 | NTM 内客户、产能、验收和收入确认不足以支持基准 |
+| ABB Ability/EPMS/SCADA/数字孪生 | 悲观 | `0.2-0.4B`，含在 EL/Automation 内 | 小幅正向 | margin 较硬件高但规模小 | 略低于预期 | 客户用自研或竞品平台 | 保留 | 软件平台竞争 |
+| ABB Ability/EPMS/SCADA/数字孪生 | 基准 | `0.4-0.8B`，含在 EL/Automation 内 | 改善利润质量和服务粘性 | margin 上行 | 符合保守预期 | ABB Ability 现有 DC automation、EPMS/SCADA 需求 | 保留 | 收入拆分不可见 |
+| ABB Ability/EPMS/SCADA/数字孪生 | 乐观 | `0.8-1.5B`，含在 EL/Automation 内 | 服务/软件 mix 明显改善 | margin 上行 | 高于预期 | DSX/SimReady、AI factory 运营和能源柔性需求 | 保留但需客户证据 | ABB 软件心智弱于 Schneider/AVEVA/ETAP、Vertiv |
+| ABB Ability/EPMS/SCADA/数字孪生 | 极度乐观 | `1.5-2.5B`，含在 EL/Automation 内 | 可能提升公司利润质量 | margin 明显上行 | 远高于当前收入证据 | 多 campus 模板化和服务合同 | 移入附录/跟踪 | NTM 内缺少披露订单和合同金额 |
+| 800VDC/固态电力电子 | 悲观 | `0-0.05B` | 费用先于利润 | 稀释 | 符合保守排除 | 标准慢、客户延迟 | 保留为远期期权下限 | 技术和标准不确定 |
+| 800VDC/固态电力电子 | 基准 | `0-0.1B` | 对公司利润无实质影响 | 中性到稀释 | 不进入基准主表 | design-in 和工程服务 | 排除出基准收入 | 缺少 A/B 级订单 |
+| 800VDC/固态电力电子 | 乐观 | `0.1-0.4B` | 初期利润小，战略价值大 | 中性 | 高于基准但仍小 | NVIDIA/ABB 合作、DSX、1MW rack 需求 | 仅作跟踪 | 不能把 2027+ 采用提前拉入 NTM |
+| 800VDC/固态电力电子 | 极度乐观 | `0.5-1.0B` | 若产品化，利润率可高；NTM 可信度低 | 上行但不可验证 | 远高于当前证据 | 多客户 800VDC pilot 转采购 | 移入附录 | 客户、价格、交付和收入确认路径不足 |
+
+## 6. 公司收入和利润四情景
+- 本步口径：三大持续经营业务区合成 ABB NTM 公司收入、毛利率、Operational EBITA、净利润和自由现金流方向。不讨论市场定价。Robotics 出售收益、税费、分离成本和回购是资本配置/非经营变量，不作为经营价值传导主因。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `34.5-36.0B` 美元 | 对 TTM `34.572B` 约 `0%-4%`；低于 FY2026 指引隐含 | 低于当前指引、订单和 backlog | `38.5%-39.5%` | Operational EBITA margin `18.0%-19.2%`，约 `6.3-6.9B` | EBITDA 约 `7.0-7.8B`；归母净利润方向 `4.4-5.0B`，无法可靠剔除非经营扰动 | 仍为正，但营运资本占用上升，FCF 可能低于 FY2025/Q1 run-rate | 中 | 数据中心和公用事业项目延期、项目 mix 稀释、原材料/关税、Motion 整合、Automation 验收 |
+| 基准公司 | `36.8-38.5B` 美元 | 对 TTM 约 `+6%-11%`；接近 FY2026 high single to low double comparable 指引 | 当前预期正常兑现 | `40.0%-41.0%` | Operational EBITA margin `19.5%-20.5%`，约 `7.2-7.9B` | EBITDA 约 `8.0-8.8B`；归母净利润方向 `5.2-6.0B`，取决于税率和非经营项 | 强正；capex 约 `1.0B`，项目预收和服务现金流支持 FCF | 中高 | backlog 转收入、EL 成本/价格、项目交付、Robotics stranded cost |
+| 乐观公司 | `39.0-41.0B` 美元 | 对 TTM 约 `+13%-19%` | 高于当前指引，且不是单一小产品造成 | `41.0%-42.0%` | Operational EBITA margin `21.0%-22.0%`，约 `8.2-9.0B` | EBITDA 约 `9.0-10.0B`；归母净利润方向 `6.0-6.8B` | FCF 明显改善，但高增长会占用库存和项目营运资本 | 中 | 数据中心电力订单按期收入化、高毛利服务/软件 attach、Motion 效率修复 |
+| 极度乐观公司 | `42.0-45.0B` 美元 | 对 TTM 约 `+21%-30%` | 显著高于当前预期，需要多个传导环节同时突破 | `42.0%-43.0%` | Operational EBITA margin `22.5%-23.5%`，约 `9.5-10.5B` | EBITDA 约 `10.5-11.8B`；归母净利润方向 `7.0-8.0B`，可信度较低 | FCF 强正但波动大，取决于项目预收和供应链垫资 | 低到中 | EL、HiPerGuard、Automation、Motion 同时超预期；800VDC 或 MV UPS 需要客户和收入确认证据 |
+
+汇总判断：基准公司情景最合理。ABB 已经不是普通工业周期股式的低个位数增长故事，Q1 2026 订单、backlog 和 data center commentary 显示经营动能强于历史平均。但极度乐观不能只靠 AI capex、JLL 的 `$3T` 行业投资或 500MW campus 叙事，需要看到 ABB 自身 EL backlog、HiPerGuard 订单金额、收入确认、毛利率和客户标准化证据。
+
+## 7. 证据校准、反证和可信度
+- 本步口径：不重新预测，只校准前四步情景。校准动作仅使用保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 集团订单 `11.298B`、收入 `8.734B`、book-to-bill `1.29`、backlog `27.515B` | 公司汇总、收入基数 | 支撑 NTM 基准收入 `36.8-38.5B`；悲观不能低到大幅衰退 | 订单质量仍需看 mix，不能自动提升 margin | backlog 中约 `58%` 预计 2026 履约，执行链条关键 | 基准保留；悲观保留但需项目延期触发 |
+| Electrification Q1 订单 `6.647B`、可比 `+44%`、backlog `11.460B`，数据中心订单三位数增长 | 需求、收入基数、产品贡献 | 上修 EL 基准和乐观收入；数据中心成为可见增量 | 高 volume 支持经营杠杆，但项目/系统 mix 毛利可能低于产品 | 需要中压/低压/UPS 交付和现场调试 | 基准保留；乐观保留 |
+| Q1 2026 集团毛利率 `39.4%`，EL gross margin 同比下降 `270bp`，Motion 下降 `380bp` | 利润率 | 不直接压低收入 | 限制把强订单直接转成高 margin 的假设 | 成本、FX/commodity timing 和项目 mix 影响利润质量 | 极度乐观 margin 下移；基准利润率保守 |
+| FY2026 指引：可比收入 high single-digit to low double-digit，book-to-bill above `1`，margin 改善 | 公司汇总 | 锚定基准收入和公司预期 | 锚定基准 Op. EBITA margin | 若 Q2/Q3 未跟上，收入确认延迟 | 基准保留 |
+| Order backlog 被定义为 unsatisfied performance obligations，Q1 2026 为 `27.515B`，其中 `58%` 预计 2026 履约 | 收入基数、执行可信度 | B 级以上收入确认路径强 | 项目型 backlog mix 可能毛利低于短周期产品 | 合同负债、预收和工程里程碑影响现金流 | 基准保留；执行风险只在收入确认层处理 |
+| Applied Digital 400MW/300MW 公开项目、Q4 2025 第二订单、HiPerGuard 25MW block | 产品贡献 | 支撑 HiPerGuard 少量进入基准、大部分进入乐观 | 产品化成功有 margin 上行潜力 | 客户项目节点决定确认 | HiPerGuard 基准小比例保留；乐观保留 |
+| HiPerGuard 34.5kV、800VDC、DSX/SimReady | 远期期权、产品需求 | NTM 收入可见性低，不能大额进入基准 | 初期研发、认证和工程投入可能先稀释 | 标准、认证、客户 AVL、现场可靠性 | 800VDC 排除出基准；DSX/SimReady 仅作跟踪 |
+| Robotics 出售给 SoftBank，2025Q4 起 discontinued operations，预计 2026 年中后期交割 | 公司组合 | 持续经营收入不纳入 Robotics；避免高估增长 | 剥离较低 margin 业务有利于持续经营质量，但 stranded cost 仍在 | 交易税费、分离成本和交割时间影响现金/非经营项 | Robotics 排除；交易收益移入附录 |
+| 数据中心行业需求强但并网/施工拖慢 | 需求、收入确认 | 不否认需求，但把部分订单从 NTM 移到 FY2027 | 延期会降低利用率和经营杠杆 | 在制品和库存占用增加 | 悲观保留；不重复惩罚利润和需求 |
+| 竞争：Schneider、Eaton、Siemens、Vertiv、GE Vernova、区域 switchgear/eHouse 厂商 | 份额、价格 | 限制乐观份额假设 | 限制定价权和 margin 扩张 | 竞争可能拉长认证和报价周期 | 乐观保留但极度乐观下移为上限 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 数据中心和公用事业需求存在，但收入确认、项目执行、成本和 mix 低于当前预期 | Backlog 高、订单强，说明收入不是无锚下滑 | 并网、客户 site readiness、变压器/中压设备、施工、项目 mix、成本 | 保留 | 公司下行情景；收入 `34.5-36.0B`，Op. EBITA `6.3-6.9B` | 中 | 项目延期只在收入确认/执行层处理，不在需求和利润层重复压低 |
+| 基准 | FY2026 指引、Q1 run-rate、订单和 backlog 正常兑现 | 2025 收入 `33.220B`，Q1 2026 收入 `8.734B`，backlog `27.515B`，EL orders `+44%` comparable | 数据中心垂直收入未披露，HiPerGuard/800VDC 不应过度纳入 | 保留 | 主情景；收入 `36.8-38.5B`，Op. EBITA `7.2-7.9B` | 中高 | 数据中心未披露收入这一证据限制只影响垂直拆分，不否定三大分部 A 级收入证据 |
+| 乐观 | 数据中心电力、EL backlog、HiPerGuard、Motion grid stabilization 和 Automation 服务同步强于预期 | EL 数据中心订单三位数增长，Applied Digital 公开项目，行业容量和 capex 上修 | 竞争强、项目型业务毛利、客户认证和施工节奏 | 保留 | 上行情景；收入 `39.0-41.0B`，Op. EBITA `8.2-9.0B` | 中 | 竞争风险只限制份额/价格，不再作为需求风险重复扣减 |
+| 极度乐观 | 多个核心传导环节同时突破，ABB 成为多客户 AI campus 标准 power block 供应商之一 | 行业需求大、Q1 订单强、HiPerGuard 和 800VDC/DSX 方向正确 | NTM 内客户、合同金额、产能、验收、收入确认和 margin 证据不足 | 下移 | 作为乐观上限/附录跟踪；不作为主经营预期 | 低到中 | 800VDC/DSX 的远期期权不应同时抬高 NTM 收入和利润 |
+
+## 8. 结论
+- 最可能情景：基准公司情景。ABB NTM 持续经营收入最可能落在 `36.8-38.5B` 美元，Operational EBITA `7.2-7.9B` 美元，毛利率回到 `40.0%-41.0%`，自由现金流保持强正。这个情景本质是：FY2026 指引正常兑现，Q1 2026 backlog 在未来 12 个月按合同节奏转收入，Electrification 数据中心和公用事业强需求抵消项目 mix 与成本压力。
+- 乐观情景成立条件：Electrification 后续季度继续维持显著正 book-to-bill，数据中心订单不只是 Q1 峰值；Applied Digital 类 AI campus 在多个客户/地区复制；EL margin 维持 `24%` 左右或更高；Motion 的 Gamesa/High Power 稀释改善；Automation 服务和软件 attach 提升。
+- 极度乐观情景成立条件：至少四个环节同时成立：第一，AI 数据中心电力需求继续非线性上修；第二，ABB 在 MV/LV、HiPerGuard、power block、EPMS/SCADA 进入多个客户 AVL；第三，交付、FAT/SAT 和现场调试按期推进；第四，高毛利服务、软件和差异化 MV UPS 抵消项目型硬件的毛利稀释。缺任何一环，极度乐观应降为乐观上限。
+- 悲观情景触发条件：EL book-to-bill 回落到 `1.0x` 附近或 backlog 环比下降；公司不再披露数据中心订单强劲；客户并网/施工导致收入确认整体后移；Q2/Q3 gross margin 未修复；Motion 的 Gamesa/High Power 稀释延续；Automation 大项目验收推迟。
+- 后续跟踪数据：ABB Q2/Q3 2026 orders、book-to-bill、EL backlog、EL margin、data center orders commentary、HiPerGuard 34.5kV 客户/认证/订单金额、Applied Digital 项目节点、Motion High Power 效率修复、Automation service/software mix、contract liabilities、trade net working capital、capex、Robotics 交割和 stranded cost。
+
+## 附录：来源和补充口径
+- 经营数据日期：ABB 官方经营数据截至 Q1 2026（2026-03-31），报告撰写日期为 2026-06-12；本地公司调研和行业调研主要为 2026-06-10 至 2026-06-11。
+- 主要收入、订单、指引和利润率来源：
+  - ABB Q1 2026 results press release / interim report：`https://www.abb.com/global/en/news/135137/q1-2026-results`
+  - ABB Q1 2026 Financial Information：`https://library.e.abb.com/public/92757491d9cc40af8425ef03a7f45f81/ABB-Q1-2026-financial-information.pdf`
+  - ABB Financial Report 2025：`https://library.e.abb.com/public/b32991481e8b4418a5c5261c5ff25440/ABB%20Financial%20Report%202025.pdf`
+  - ABB Annual Reporting Suite 2025：`https://www.abb.com/global/en/company/annual-reporting-suite`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 指引只作为 NTM 基准锚，不直接外推 FY2027。
+  - 800VDC、DSX/SimReady、solid-state protection、1MW rack 和 MV UPS 标准化主要是 2027+ 期权；NTM 基准只纳入已有收入表或公开项目能支持的保守部分。
+  - Robotics 出售给 SoftBank 是组合和现金流事件，不作为持续经营收入增长来源。
+- 主要来源：
+  - 本地公司资料：`公司调研/配电_电源_功率器件/ABBNY_ABB_Ltd_公司调研_2026-06-11.md`
+  - 本地行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`
+  - 本地行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`
+  - 本地行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+  - 本地行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+  - 本地行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-06-10.md`
+  - ABB Robotics divestment to SoftBank：`https://new.abb.com/news/detail/129685/abb-to-divest-robotics-division-to-softbank-group`
+  - ABB Applied Digital Polaris Forge 2 power partnership：`https://new.abb.com/news/detail/131010/abb-expands-power-technology-partnership-with-applied-digital-for-ai-ready-data-centers`
+  - ABB 800VDC technical article：`https://new.abb.com/news/detail/129788/redefining-power-infrastructure-for-ai-the-role-of-800-vdc-in-data-centers`
+  - ABB Ability Data Center Automation：`https://new.abb.com/industrial-software/datacenter-automation/energy-efficiency`
+  - ABB 34.5kV HiPerGuard UPS announcement：`https://new.abb.com/news/detail/135106/new-345kv-hiperguard-ups-direct-grid-connection-cuts-ai-data-center-power-costs`
+  - JLL 2026 Global Data Center Outlook / newsroom summary：`https://www.jll.com/en-us/newsroom/global-data-center-sector-to-nearly-double-to-200gw-amid-ai-infrastructure-boom`
+  - CBRE U.S. Real Estate Market Outlook 2026 - Data Centers：`https://www.cbre.com/insights/books/us-real-estate-market-outlook-2026/data-centers`
+  - Uptime Institute 2026 Global Data Center Survey：`https://intelligence.uptimeinstitute.com/resource/2026-global-data-center-survey-results-and-crosstabs`
+

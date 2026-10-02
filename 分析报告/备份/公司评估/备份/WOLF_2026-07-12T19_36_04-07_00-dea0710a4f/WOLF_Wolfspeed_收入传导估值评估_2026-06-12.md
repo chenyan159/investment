@@ -1,0 +1,160 @@
+# 公司收入传导与价值传导评估：Wolfspeed
+
+报告日期：2026-06-12（America/Los_Angeles）  
+公司代号：WOLF  
+公司名称：Wolfspeed, Inc.  
+正式输出目录：`分析报告/公司评估/`  
+资料边界：使用 `公司调研/`、`行业调研/` 和 Wolfspeed/SEC 官方公开披露；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归或模型比较内容。  
+口径限制：本报告只评估行业需求到 WOLF 的 NTM 收入、利润和经营质量传导；不做全公司排序，不输出投资评级，不判断股价区间，不使用市场价格或估值倍数作为经营价值传导证据。  
+主口径：NTM，即从 2026-06-12 往后 12 个月，近似覆盖 FY2026 Q4 至 FY2027 Q3。FY2026、FY2027、长期 run-rate 和 300mm SiC/远期 AI 封装只作补充。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 收入、毛利、经营利润、adjusted EBITDA 和自由现金流方向；补充口径只用于解释 FY2026 Q4 指引、FY2027 可能 run-rate、3.3kV/10kV 高压模块和 300mm SiC 远期期权。
+- 当前收入基准、指引和 run-rate：最新公司财务锚点为 FY2026 Q3（季度结束 2026-03-29，报告日 2026-05-05，10-Q filed 2026-05-07）。季度收入 `150.2M` 美元，其中 Power Products `100.1M`，Materials Products `50.1M`；FY2026 Q4 指引为 `140-160M` 美元，中点 `150M`。当前经营 run-rate 约 `600M` 美元年化；本地公司调研用 FY2025 Q4 + FY2026 Q1-Q3 得到 TTM 收入约 `712.5M` 美元，但 fresh-start accounting 和重组会计使历史可比性较差。
+- 重要产品/业务线：1）现有 Power Products：650V/750V/1200V SiC MOSFET、die、discrete、module，服务 EV、工业、能源、UPS/PSU；2）Materials Products：SiC substrates/epi、200mm 平台、外售材料；3）AI 数据中心近中期产品：TOLT top-side cooled、Gen 5 750V/1200V、AI PSU/UPS/PFC 可用器件；4）高压新产品：3.3kV SiC modules、10kV MOSFET die，用于 SST、MVDC、UPS/BESS、A&D 和高压 AI 电力；5）300mm SiC for AI/HPC advanced packaging，只作远期期权。
+- NTM 公司收入四情景：悲观 `520-600M` 美元；基准 `610-720M` 美元；乐观 `750-900M` 美元；极度乐观 `1.0-1.2B` 美元。基准情景基本等于 Q4 指引中点和 Q3 run-rate 正常兑现，未把 300mm SiC 或未量化 AI pipeline 放入基准。
+- 利润或 EBITDA 四情景：悲观 adjusted EBITDA 约 `-300M` 至 `-220M` 美元；基准约 `-260M` 至 `-150M` 美元；乐观约 `-120M` 至 `+20M` 美元；极度乐观约 `+50M` 至 `+180M` 美元。GAAP 净利润在悲观、基准和大多数乐观子情景下仍可能亏损。
+- 最大传导瓶颈：行业需求不是首要瓶颈；WOLF 的瓶颈是从 AI/高压电力需求进入客户 BOM、形成可披露订单、在 Mohawk Valley/材料线提高利用率，并把负毛利扭转为正毛利。
+- 最大利润率变量：工厂利用率、Power/Materials mix、Gen 5/TOLT/3.3kV/10kV 高压产品能否成为高 ASP 高可靠认证产品，以及 150mm 退出后 200mm 良率和折旧吸收。
+- 最大现金流变量：收入恢复速度、库存下降、材料业务止跌、CapEx 是否维持低位、政府/税收激励收款节奏和重组后利息负担。
+- 可信度：基准情景可信度为中；悲观为中高；乐观为中；极度乐观为低。原因是 A 级财务收入证据很清楚，但 AI 数据中心和高压新品的订单、backlog、客户名、确认节奏和毛利率仍缺少 A/B 级证据。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Power Products 现有主线：650V/750V/1200V SiC MOSFET、die、discrete、module | FY2026 Q3 `100.1M` 美元；年化约 `400M` 美元 | `66.6%` | 当前收入和利用率修复核心 | A | 纳入基准；但按 Q3/Q4 run-rate 和需求恢复折扣处理 | Gen 5 将替代/升级旧平台，不作为独立加总收入 |
+| Materials Products：SiC substrate/epi、200mm materials、外售材料 | FY2026 Q3 `50.1M` 美元；年化约 `200M` 美元 | `33.4%` | 纵向整合和材料护城河；短期拖累 | A | 纳入基准；按低位止跌而非高增长处理 | 300mm SiC for packaging 另列远期期权 |
+| TOLT / Gen 5 / AI PSU、UPS、PFC 可用 SiC 器件 | AI data center 收入未披露；公司披露 FY2026 Q3 AI data center 应用环比约 `+30%`，但未给美元数 | 无法可靠量化 | AI 叙事最直接产品桥 | C/D，既有 Power 收入为 A | 基准只纳入已含在 Power run-rate 内的少量收入；增量主要进乐观 | 若进入 hyperscaler/ODM/PSU BOM，可变成 NTM 乐观收入 |
+| 3.3kV SiC modules / 10kV MOSFET die / 高压模块 | 当前收入未披露，样品、MOU、select customer 阶段 | 无法可靠量化 | 改变利润结构的高压新品 | C/D | 基准只纳入低个位数至低双位数百万美元级小额；主要作为乐观/极度乐观上限 | SST、MVDC、800VDC、A&D 高压标准化 |
+| 300mm SiC for AI/HPC advanced packaging | 当前收入近似 `0`，公司定位为 decade-end 平台 | `0%` | 长期材料期权 | D | 不进入 NTM 基准收入 | 仅列附录跟踪；可有 NRE/评估费但不能替代收入主表 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不评估 WOLF 份额、收入确认、利润率或公司总收入。需求锚以本地行业调研和公司披露共同校准：2026 年 AI 电力主线是 48/50V rack power、PSU、UPS/BESS、保护和近负载电源；800VDC/SST 在 2026 以 design-in、NRE、小批量为主，2027 才更可能形成订单。EV/工业 SiC 需求仍有库存、价格和采用节奏压力。相对预期以 WOLF 当前 Q4 指引、Q3 run-rate、产品公告和行业路线已反映的预期为锚。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Power Products 现有主线 | FY2026 Q3 Power `100.1M` 美元；10-Q 指出汽车需求下降和价格压力；约 `90%` Power 收入来自 Mohawk Valley Fab | EV/工业/能源客户库存继续，SiC ASP 下行，NTM 需求低于 run-rate `10-20%` | EV/工业低位稳定，能源/UPS补充，需求接近 Q3/Q4 run-rate，`0-15%` 改善 | EV/工业补库 + Gen 5 导入，需求高于当前预期 `20-35%` | EV、工业、能源和 AI PSU 同时恢复，需求上修 `40-60%` | 绝对需求以公司可服务市场无法可靠量化；公司相关需求约从 `400M` 年化锚上下波动 | 基准符合当前预期；乐观需要 Power 重回 `120M+` 单季 | 正向：Gen 5、200mm 平台、能源/UPS需求；反证：汽车需求下降、价格压力、负毛利、库存 |
+| Materials Products | FY2026 Q3 Materials `50.1M` 美元，同比低于去年 `77.9M`；外部材料需求和客户库存弱 | 外售材料继续去库存，NTM 需求低于锚点 `15-30%` | 低位稳定，200mm 转换继续但不明显涨价，需求约 `-10%` 至 `+5%` | 客户库存出清，200mm substrate/epi 拉货恢复，需求 `+10-25%` | 国内安全供应链、AI/industrial/EV 多端拉动，需求 `+30-50%` | 年化收入需求锚约 `200M` 美元；悲观下修 `30-60M`，乐观上修 `20-80M` | 基准偏低于长期叙事，但符合当前财务事实 | 正向：WOLF 材料经验和 200mm；反证：FY2026 Q3 同比 `-35.7%`、价格/库存压力 |
+| TOLT / Gen 5 / AI PSU、UPS、PFC 用 SiC | AI rack 电力密度上升；公司 TOLT、Gen 5 和数据中心团队指向 PSU/UPS/PFC；AI data center 应用环比约 `+30%` 但未披露美元 | AI PSU 仍由 GaN/Si/其他 SiC 二供主导，WOLF 仅样品或低量，需求低于主题预期 | 48/50V PSU/UPS/PFC 需求继续增长，WOLF 可参与但 NTM 美元需求小；主要设计导入 | 1-2 个 PSU/UPS/power shelf 客户进入量产或强 design-in，需求高于当前预期 | 多个 hyperscaler/ODM/PSU BOM 绑定，AI data center 成为显性收入池 | 行业 AI/DC SiC 直接需求未来一年基准约 `0.3-0.6B` 美元级；WOLF 可捕获份额未披露 | 基准只承认小额；乐观需要客户、产品、时间表 | 正向：TOLT、Gen 5、数据中心团队；反证：无 AI revenue dollar/backlog，NVIDIA 800V 公开生态未突出 WOLF |
+| 3.3kV SiC modules / 10kV MOSFET die | 800VDC、SST、MVDC、UPS/BESS 是 2027+ 弹性；公司 2026-05/06 推 3.3kV 和 10kV，并与 GE Aerospace 签 MOU | SST/MVDC 认证慢，需求停留在 demo/NRE，NTM 小于 `10M` 公司机会 | 样品、select customer、小批量，NTM 需求小但真实，约低双位数百万美元公司机会 | SST、AI power block、A&D/industrial 高压模块有订单，需求 `40-100M` 公司机会 | 800VDC/SST 高压标准提前，10kV/3.3kV 成为稀缺高压模块，需求上限 `100M+` | 行业 800VDC/HV IBC/sidecar/NRE 未来一年基准约 `150-400M` 美元，SiC AI 子市场约 `300-600M` 美元 | 基准为小额；乐观/极度乐观才显著上修 | 正向：3.3kV samples、10kV MOU、SST 需求；反证：MOU 非订单，认证和安规周期长 |
+| 300mm SiC for AI/HPC advanced packaging | 公司 2026-03 称 300mm SiC 可作 decade-end AI/HPC packaging material；当前为 partner evaluation | NTM 无付费采用，需求为 `0` | NRE/评估费，需求 `0-5M` 公司机会 | 付费 joint development 或 OSAT/foundry 评估，需求 `5-20M` | anchor partner 提前签联合开发，需求 `20-40M`，仍非量产 | 绝对量产需求无法可靠量化；公司公告明确偏 decade-end | 不进入 NTM 基准，只作远期期权 | 正向：300mm 单晶和封装痛点；反证：非当前收入产品、无量产时间表 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断哪些需求能进入 WOLF 的 NTM 收入表，以及当前可收入化基数。公司能参与 AI 电力、SST、800VDC 或先进封装需求，不等于能在 NTM 确认收入。证据等级按收入表可确认性处理：A 为已披露收入/分部收入/指引，B 为订单/RPO/backlog/合同，C 为 design win/认证/产能规划，D 为产品发布/样品/早期合作，E 为主题相关。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Power Products 现有主线 | 10-Q：FY2026 Q3 `100.1M` 美元；Q3 Power 占 `66.6%`；FY2026 Q4 公司总收入指引中点 `150M` | 直接收入 | 当前毛利承压；利用率提升后利润弹性最大 | `310-380M` | `360-450M` | `470-560M` | `600-720M` | 基准接近当前 run-rate；悲观低于，乐观高于 | A | 是 | 已披露产品线收入；Mohawk Valley 已产生大部分 Power 收入 | 基准主口径，但不假设 AI 订单自动放量 |
+| Materials Products | 10-Q：FY2026 Q3 `50.1M` 美元；Q3 Materials 占 `33.4%` | 直接收入；也支撑 Power 内部供给 | 产能吸收和材料价格影响毛利；短期拖累 | `150-185M` | `180-230M` | `240-310M` | `320-400M` | 基准低于过去高位，但符合当前低位财务锚 | A | 是 | 已披露产品线收入；外售材料仍在收入表 | 基准纳入，但按低位稳定处理 |
+| TOLT / Gen 5 / AI PSU、UPS、PFC 用 SiC | TOLT、Gen 5、数据中心团队和 AI data center 应用环比 `+30%`；无美元收入 | 通过 PSU/UPS/ODM/OEM BOM 进入 | 若认证成功可高于通用器件；当前小量和验证成本可能吞噬利润 | `5-15M` | `20-45M` | `60-110M` | `150-220M` | 基准只略高于当前显性小基数；乐观高于当前预期 | C/D；已含 Power 总收入的部分为 A | 小比例进入 | 只把已包含在 Power run-rate 的小额显性收入纳入；增量需客户和确认节奏 | NTM 基准小额；主要是乐观触发项 |
+| 3.3kV modules / 10kV die | 3.3kV samples select customers；10kV GE Aerospace MOU；无订单金额 | 直接器件/模块收入，也间接推动平台标准 | 若进入 SST/MVDC/A&D 为高 ASP 高可靠；当前 NRE/样品阶段 | `0-8M` | `5-25M` | `40-80M` | `100-160M` | 基准为低可信小额，极度乐观只是 NTM 上限 | C/D | 小比例进入 | 样品、MOU、select customer 支持 NTM 小额；无 B 级订单 | 基准保守纳入，绝大部分作为乐观/极度乐观上限 |
+| 300mm SiC advanced packaging | 当前收入近似 `0`；公司称 end of decade 可作 AI/HPC packaging foundation | 间接材料平台；可能 NRE | 当前为 R&D/评估，利润为负 | `0` | `0-5M` | `5-15M` | `20-40M` | 当前预期不应包含量产收入 | D | 否 | 技术公告和 partner evaluation，不是量产订单 | 不进入 NTM 基准；移入附录/仅作跟踪 |
+| AI data center 整体显性收入 | 公司未披露 dollar segment；披露应用环比约 `+30%` | 直接/间接混合 | 取决于是否是高压认证件而非通用器件 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 当前预期只是小基数增长，不是公司主收入 | C | 否，避免双算 | 已分散包含在 Power、TOLT、3.3kV/10kV 中 | 不作为独立收入行加总 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第一步需求和第二步可收入化基数出发，评估每个重要产品在 NTM 内的收入和利润贡献。表内产品机会不直接机械相加；第四步会做重复计算、低证据机会和产品互相重叠的去重。利润贡献使用经营贡献方向和粗区间，原因是公司未披露产品级毛利、订单利润率或 AI 数据中心收入美元数。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Power Products 现有主线 | 悲观产品 | `310-380M` | gross contribution 约 `-120M` 至 `-60M` | 继续负毛利或低于当前结构 | 低于 Q3/Q4 run-rate | 汽车需求下降、价格压力、利用率不足 | 保留为悲观 | 需求和价格弱，Mohawk Valley 利用率无法改善 |
+| Power Products 现有主线 | 基准产品 | `360-450M` | `-70M` 至 `+10M` | 负毛利收窄至接近 break-even | 符合当前 run-rate | Q3 Power `100.1M`，Q4 总收入中点 `150M` | 保留为基准 | 无证据支持立即高增；不能把 Gen 5 发布直接当收入 |
+| Power Products 现有主线 | 乐观产品 | `470-560M` | `0` 至 `+80M` | 正毛利恢复，利用率改善 | 高于当前预期 | Gen 5 200mm 平台、能源/UPS/工业恢复 | 保留为乐观 | 需要客户拉货和 ASP 稳定 |
+| Power Products 现有主线 | 极度乐观产品 | `600-720M` | `+100M` 至 `+200M` | 利用率和 mix 同时大幅改善 | 明显高于当前预期 | 多终端恢复 + AI/高压导入 | 下移为乐观上限 | 需要多个条件同时兑现，当前无 B 级订单 |
+| Materials Products | 悲观产品 | `150-185M` | `-70M` 至 `-30M` | 继续拖累毛利 | 低于当前预期 | Q3 Materials 同比 `-35.7%`，客户库存 | 保留为悲观 | 外售需求继续弱、价格下行 |
+| Materials Products | 基准产品 | `180-230M` | `-40M` 至 `+5M` | 低位稳定，毛利仍弱 | 符合低位预期 | Q3 `50.1M` run-rate | 保留为基准 | 200mm/外售材料恢复证据不足 |
+| Materials Products | 乐观产品 | `240-310M` | `+10M` 至 `+70M` | 利用率和价格改善 | 高于当前预期 | 客户库存出清、国内供应链需求 | 保留为乐观 | SiC 供给竞争和客户多源 |
+| Materials Products | 极度乐观产品 | `320-400M` | `+80M` 至 `+150M` | 高利用率、高良率 | 明显高于预期 | 200mm 稳定 + 外售强复苏 | 下移为乐观上限 | 目前财务数据与此不匹配 |
+| TOLT / Gen 5 / AI PSU、UPS、PFC | 悲观产品 | `5-15M` | `-10M` 至 `0` | 费用和验证成本抵消收入 | 低于 AI 叙事预期 | 无 AI revenue dollar/backlog | 保留为悲观 | 只停留样品或小批 |
+| TOLT / Gen 5 / AI PSU、UPS、PFC | 基准产品 | `20-45M` | `-5M` 至 `+10M` | 小额改善但不足以改变公司利润 | 略高于显性小基数 | TOLT、Gen 5、data center team、AI 应用环比增长 | 保留为基准小额 | 客户、价格、交付时间表未披露 |
+| TOLT / Gen 5 / AI PSU、UPS、PFC | 乐观产品 | `60-110M` | `+15M` 至 `+45M` | 高 ASP 认证件改善 mix | 高于当前预期 | 进入 PSU/UPS/PFC 客户 BOM | 保留为乐观 | 必须回答谁买、何时确认、为什么 WOLF 捕获 |
+| TOLT / Gen 5 / AI PSU、UPS、PFC | 极度乐观产品 | `150-220M` | `+50M` 至 `+100M` | 高毛利高可靠认证件 | 大幅高于预期 | 多 hyperscaler/ODM 设计导入 | 下移为乐观上限 | 无公开核心 BOM/订单，GaN/Infineon/TI/Navitas 等竞争强 |
+| 3.3kV modules / 10kV die | 悲观产品 | `0-8M` | `-10M` 至 `0` | 样品/NRE 阶段，利润弱 | 低于长期叙事 | MOU/样品不是订单 | 保留为悲观 | SST/MVDC 认证慢 |
+| 3.3kV modules / 10kV die | 基准产品 | `5-25M` | `-5M` 至 `+10M` | 小额高 ASP，但不足覆盖项目成本 | 符合保守预期 | 3.3kV samples、GE MOU、10kV 商业可得 | 保留为基准小额 | 缺少客户量产订单 |
+| 3.3kV modules / 10kV die | 乐观产品 | `40-80M` | `+15M` 至 `+45M` | 高压模块 mix 改善 | 高于当前预期 | SST/UPS/BESS/A&D 订单 | 保留为乐观 | 客户验收和安规周期 |
+| 3.3kV modules / 10kV die | 极度乐观产品 | `100-160M` | `+45M` 至 `+95M` | 高可靠稀缺模块 | 显著高于预期 | 800VDC/SST 标准提前，WOLF 进入平台 | 下移为乐观上限 | 任一核心环节缺 B 级证据 |
+| 300mm SiC advanced packaging | 悲观产品 | `0` | `-10M` 至 `-5M` | 研发投入 | 符合不纳入预期 | 公司定位 decade-end | 移入附录 | 无 NTM 商业化 |
+| 300mm SiC advanced packaging | 基准产品 | `0-5M` | `-10M` 至 `0` | NRE 不足以盈利 | 不进入基准主表 | partner evaluation | 仅作跟踪 | 不是量产收入 |
+| 300mm SiC advanced packaging | 乐观产品 | `5-15M` | `-5M` 至 `+5M` | 付费评估 | 高于当前基准但仍小 | OSAT/foundry/JDP 可能 | 移入附录 | 没有付费客户公告 |
+| 300mm SiC advanced packaging | 极度乐观产品 | `20-40M` | `0` 至 `+15M` | NRE/JDP 上限 | 只代表 NTM 上限 | anchor partner | 移入附录 | 时间表偏 decade-end |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为 WOLF NTM 总收入、毛利率、经营利润率、adjusted EBITDA、净利润和自由现金流方向。汇总前已做三项处理：1）Power Products 与 TOLT/Gen 5/3.3kV/10kV 之间去重，因为新品收入最终都进入 Power；2）300mm SiC 不放入基准主表；3）不把行业 TAM、AI 数据中心 CapEx、800VDC 生态规模或客户总预算直接等同为 WOLF 收入。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `520-600M` 美元 | vs TTM `712.5M` 约 `-27%` 至 `-16%`；vs Q3 年化 `600.8M` 约 `-13%` 至 `0%` | 低于 Q4 指引中点延续和当前 run-rate；Power 低于 `95M/季` 或 Materials 继续下行 | GAAP `-35%` 至 `-20%`；non-GAAP `-30%` 至 `-15%` | `-90%` 至 `-60%` | adjusted EBITDA `-300M` 至 `-220M`；GAAP 净亏损显著 | FCF `-350M` 至 `-250M`，库存和利用率继续压制 | 中高 | EV/工业/材料需求弱、价格压力、利用率不足、AI 新品无订单 |
+| 基准公司 | `610-720M` 美元 | vs TTM 约 `-14%` 至 `+1%`；vs Q3 年化约 `+2%` 至 `+20%` | 符合 Q4 `140-160M` 指引、Q3 run-rate 和保守恢复路径 | GAAP `-25%` 至 `-8%`；non-GAAP `-20%` 至 `0%` | `-70%` 至 `-45%` | adjusted EBITDA `-260M` 至 `-150M`；GAAP 净亏损仍可能较大 | FCF `-300M` 至 `-180M`，CapEx 降低但 OCF 仍负 | 中 | 基准不依赖 AI 爆发，只依赖 Power 稳定、Materials 止跌、成本纪律 |
+| 乐观公司 | `750-900M` 美元 | vs TTM 约 `+5%` 至 `+26%`；vs Q3 年化约 `+25%` 至 `+50%` | 高于当前预期，要求 Power 恢复、材料改善、AI/高压有显性小量产 | GAAP `-5%` 至 `+10%`；non-GAAP `0%` 至 `+15%` | `-40%` 至 `-20%` | adjusted EBITDA `-120M` 至 `+20M`；GAAP 净利多半仍亏损或接近盈亏平衡前 | FCF `-150M` 至 `-30M`，若库存释放可更好 | 中 | 需要客户订单和利用率同步改善，不能只靠单一新品 |
+| 极度乐观公司 | `1.0-1.2B` 美元 | vs TTM 约 `+40%` 至 `+68%`；vs Q3 年化约 `+66%` 至 `+100%` | 明显高于当前预期；要求 AI 数据中心、高压模块、EV/工业、材料多环节同时突破 | GAAP `+15%` 至 `+25%`；non-GAAP `+20%` 至 `+30%` | `-10%` 至 `+5%` | adjusted EBITDA `+50M` 至 `+180M`；GAAP 净利可能仍受利息/折旧/重组项目影响 | FCF `-50M` 至 `+100M`，取决于 CapEx 和营运资本 | 低 | 无 B 级订单支撑，多条件同时成立，任一环节缺证据即降为乐观上限 |
+
+公司汇总后的关键判断：
+
+- 悲观情景不是“长期 SiC 没空间”，而是 NTM 内收入确认和利润兑现低于当前 run-rate。即使行业长期需求存在，价格压力、客户库存和利用率不足也足以让公司经营低于预期。
+- 基准情景承认 WOLF 是已重组后的 SiC 平台公司，但仍把经营修复放在 `600-720M` 美元收入区间和负 EBITDA/负 FCF 中。这个基准没有把 AI data center 主题扩展为公司收入爆发。
+- 乐观情景需要 Power Products 重新回到 `120M+` 单季收入、Materials 止跌、AI/高压产品出现可确认小量产，且 non-GAAP 毛利率向 break-even 改善。
+- 极度乐观情景的收入和利润必须同时来自需求、公司捕获、利润率和执行四个环节，不应由 300mm SiC、GE MOU、3.3kV samples 或 AI data center 团队单独触发。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次：EV/工业需求风险主要限制第一步需求，AI 订单缺失限制第二步和第三步可收入化，利用率/毛利限制第三步和第四步利润，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q3 revenue `150.2M`、Q4 指引 `140-160M` | 公司汇总 | 把基准锚定在 `600-720M`，限制极度乐观进入基准 | 负毛利说明收入未形成经营杠杆 | OCF/FCF 仍为负 | 基准保留；极度乐观下移为上限 |
+| Power Products Q3 `100.1M`，Materials Q3 `50.1M` | 收入基数 | A 级证据支持两条主线进入基准 | Materials 下滑限制 mix；Power 利用率决定毛利 | 产能利用率和库存影响现金 | 基准保留 |
+| AI data center 应用环比 `+30%` 但无 dollar revenue/backlog | 收入基数/产品贡献 | 支持小额 AI 收入进入基准；不支持大额基准 | 若为高压认证件才改善 mix | 需要订单和验收 | 乐观保留；极度乐观下移 |
+| Gen 5 基于 200mm 平台且无需新增量产 toolset | 产品贡献/执行 | 支持 Power 产品替代和客户验证加速 | 若客户采用，可提升效率和 ASP；但不是订单 | 降低新增 CapEx 压力 | 基准小额保留，乐观保留 |
+| TOLT top-side cooled、650V AI data center package | 产品贡献 | 支持 AI PSU/数据中心电源参与权 | 散热/功率密度可能提升高端 mix | 需客户 BOM | 乐观保留 |
+| 3.3kV modules samples、10kV MOSFET / GE MOU | 产品贡献/远期期权 | 支持 SST/MVDC/A&D 高压机会，但缺少订单金额 | 高压模块可高毛利，但样品阶段利润不确定 | 认证慢、收入确认慢 | 基准小额保留；极度乐观下移为乐观上限 |
+| 300mm SiC advanced packaging 定位为 decade-end | 收入基数 | NTM 量产收入排除 | R&D/评估期拖累利润 | 不能支撑 NTM FCF | 移入附录 |
+| Mohawk Valley/Siler City 初期利用率不足 | 产品贡献/公司利润 | 收入恢复速度受产能吸收约束 | 毛利率最大负变量 | 库存、折旧、现金消耗 | 悲观保留；基准利润保守 |
+| 重组后流动性改善，cash + short-term investments `1.165B` | 公司执行 | 不直接增加收入 | 降低破产/利息压力，但不修复毛利 | 提供 runway，利息压力下降 | 基准可信度上调到中 |
+| 行业 800VDC/SST 2026 多为 design-in、小批量 | 产品需求/收入确认 | 限制高压产品 NTM 大额收入 | 初期项目成本高 | 认证和安全标准慢 | 极度乐观下移 |
+| GaN/Infineon/TI/Navitas/ST/onsemi/ROHM 等竞争 | 公司捕获 | 限制 WOLF 捕获份额 | ASP 和二供压价 | 需要应用工程和可靠性证明 | 乐观保留但降低可信度 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 收入 `520-600M`，毛利率继续负，FCF 明显为负 | Q3/Q4 run-rate 给出底部锚，重组后流动性降低短期断裂风险 | Materials 下滑、价格压力、负毛利、库存和利用率 | 保留 | 悲观公司 | 中高 | EV/工业需求弱只在需求和收入确认处理，不再重复压低 AI 新品 |
+| 基准 | 收入 `610-720M`，Power 稳定、Materials 低位止跌，AI/高压小额贡献 | A 级收入表证据、Q4 指引、cash runway、Gen 5/TOLT 产品导入 | 负毛利、无 backlog、AI dollar 未披露 | 保留 | 基准公司 | 中 | 毛利为负已在公司利润处理，不再把同一问题再次作为需求风险 |
+| 乐观 | 收入 `750-900M`，Power 恢复、材料改善、AI/高压小量产 | Gen 5 200mm、TOLT、数据中心团队、3.3kV/10kV、行业电力需求强 | 订单客户名和确认节奏不足，竞争强 | 保留 | 乐观公司 | 中 | 行业 800VDC 节奏慢只限制高压新品，不否定现有 Power 恢复 |
+| 极度乐观 | 收入 `1.0-1.2B`，毛利转正、adjusted EBITDA 转正 | 多项新品同时具备上限潜力，流动性支持执行 | 缺 B 级订单/backlog；300mm 是 decade-end；SST/MVDC 认证慢 | 下移 | 乐观上限 / 附录跟踪 | 低 | 缺订单只限制 NTM 极度乐观，不否定长期 SiC 材料价值 |
+
+可信度解释：
+
+- 高可信证据：FY2026 Q3 产品线收入、Q4 指引、GAAP/non-GAAP 毛利、net loss、adjusted EBITDA、OCF/FCF、cash + short-term investments。
+- 中等可信证据：TOLT、Gen 5、3.3kV、10kV、data center team、300mm SiC 等公司公告能证明产品方向，但不能证明订单金额。
+- 低可信或不纳入证据：市场价格、交易热度、散户论坛、主题映射、AI 数据中心总 CapEx、客户总预算、长期 TAM。
+
+## 8. 结论
+
+- 最可能情景：基准公司。NTM 收入最可能在 `610-720M` 美元，接近 Q3/Q4 run-rate 正常兑现和小幅恢复；Power Products 是核心收入，Materials 是低位止跌变量，AI/TOLT/Gen 5/3.3kV/10kV 是小额贡献和订单验证项。利润和现金流仍处修复期，adjusted EBITDA 大概率仍为负，FCF 仍为负。
+- 乐观情景成立条件：Power Products 单季收入重回 `120M+`，Materials 不再同比大幅下滑，non-GAAP gross margin 向 break-even 改善；同时至少有一个 AI PSU/UPS/PFC、TOLT、3.3kV 或 10kV 高压客户给出可验证 design-in、订单或收入确认路径。
+- 极度乐观情景成立条件：AI 数据中心/高压电力需求、WOLF 公司捕获、Power/Materials 利润率、Mohawk Valley 执行同时突破；需要明确客户、产品、交付时间和收入确认，而不是只依赖 300mm SiC、GE MOU、SST 概念或 AI data center 团队。
+- 悲观情景触发条件：FY2026 Q4 或 FY2027 Q1 收入低于 `140M` 美元附近，Power 低于 `95M/季`，Materials 继续下行，non-GAAP gross margin 仍在 `-20%` 附近或更差，库存/现金消耗没有改善。
+- 后续跟踪数据：1）FY2026 Q4 实际收入和 Q1 FY2027 指引；2）Power Products 是否回到 `120M-140M/季`；3）Materials 是否止跌、库存是否下降；4）non-GAAP gross margin 是否接近 break-even；5）AI data center 是否披露 dollar revenue、客户名、backlog 或订单；6）3.3kV/10kV 是否从 samples/MOU 进入量产客户；7）CapEx、政府激励收款、OCF/FCF 和利息支出。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：最新财务数据为 FY2026 Q3，季度结束日 2026-03-29，报告日 2026-05-05，10-Q filed 2026-05-07；最新产品公告覆盖到 2026-06-09 Gen 5 SiC MOSFET。
+- 主要收入、订单、指引和利润率来源：Wolfspeed FY2026 Q3 earnings release、FY2026 Q3 Form 10-Q、FY2026 Q3 earnings presentation。公司未披露标准化 backlog/bookings/lead time/cancel rate，未披露 AI data center dollar revenue。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 Q4 指引 `140-160M` 美元只作为 NTM 起点；FY2027 run-rate 只用来解释情景，不替代 NTM 主表；300mm SiC advanced packaging、SST/MVDC 大规模采用、decade-end AI/HPC packaging 不进入 NTM 基准。
+- 主要来源：
+  - `公司调研/配电_电源_功率器件/WOLF_Wolfspeed_公司调研_2026-06-12.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+  - Wolfspeed FY2026 Q3 earnings release / SEC Exhibit 99.1: `https://www.sec.gov/Archives/edgar/data/895419/000089541926000024/ex991q3-26.htm`
+  - Wolfspeed FY2026 Q3 Form 10-Q: `https://www.sec.gov/Archives/edgar/data/895419/000089541926000030/wolf-20260329.htm`
+  - Wolfspeed FY2026 Q3 earnings presentation: `https://s29.q4cdn.com/278875087/files/doc_earnings/2026/q3/presentation/Wolfspeed_Q3_2026_Earnings_Presentation.pdf`
+  - Wolfspeed Gen 5 SiC MOSFET announcement, 2026-06-09: `https://www.wolfspeed.com/company/news-events/news/wolfspeed-announces-gen-5-silicon-carbide-technology/`
+  - GE Aerospace and Wolfspeed high-voltage SiC MOU, 2026-06-08: `https://investor.wolfspeed.com/news/news-details/2026/GE-Aerospace-and-Wolfspeed-Collaborate-to-Accelerate-High-Voltage-Silicon-Carbide-SiC-Adoption/default.aspx`
+  - Wolfspeed dedicated data center solutions team, 2026-06-01: `https://www.wolfspeed.com/company/news-events/news/wolfspeed-launches-dedicated-data-center-solutions-team-in-silicon-valley/`
+  - Wolfspeed 3.3kV SiC modules, 2026-05-21: `https://www.wolfspeed.com/company/news-events/news/wolfspeed-introduces-new-3-3-kv-sic-power-modules-in-two-industry-standard-footprints-to-address-the-surging-demand-for-energy/`
+  - Wolfspeed 300mm SiC AI/HPC advanced packaging, 2026-03-10: `https://www.wolfspeed.com/company/news-events/news/wolfspeed-unveils-foundation-for-next-generation-ai-data-center-advanced-packaging-leveraging-300mm-silicon-carbide-technology/`
+  - Wolfspeed TOLT portfolio, 2026-01-29: `https://investor.wolfspeed.com/news/news-details/2026/Wolfspeed-Unveils-Next-Gen-TOLT-Portfolio-to-Address-Surging-AI-Datacenter-Demand/default.aspx`

@@ -1,0 +1,167 @@
+# 公司收入传导与价值传导评估：Oklo Inc
+
+> 公司代号：OKLO  
+> 公司名称：Oklo Inc  
+> 报告日期：2026-06-12  
+> NTM 主口径：2026-06-12 至 2027-06-11，近似覆盖 2026H2 和 2027H1。  
+> 资料边界：本报告只使用 `公司调研/`、`行业调研/` 中的上游研究资料，并补充 Oklo 10-Q、公司公告、NRC/DOE 相关公开资料；未读取、引用或继承 `特征量化/`、Signals、回归、评分或模型比较内容。  
+> 口径限制：本报告评估经营收入、利润和现金流传导，不输出投资评级、目标价、股价区间或估值倍数判断；金融市场价格不作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：NTM 主口径只看未来 12 个月可确认收入、可兑现利润和现金流；FY2028、2030、2034、Switch 2044 等远期口径只作为附录和跟踪，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：Oklo 2026Q1 仍无商业电力收入，10-Q 披露截至 2026-03-31 现金、现金等价物和可交易债券合计 `$2.537B`，当季经营亏损 `-$51.2M`、净亏损 `-$33.1M`、经营现金流 `-$17.9M`。公司未给 2026 收入、毛利率或 EBITDA 指引；当前 run-rate 的核心锚点是收入接近 0、费用和建设支出开始上升。
+- 重要产品/业务线：Aurora powerhouses / PPA 电力、Aurora-INL 首堆与监管路径、Meta Ohio 1.2GW 与 Switch/Equinix 等客户 pipeline、燃料制造与燃料回收、Atomic Alchemy 同位素、ARMEC 核制造能力。
+- NTM 公司收入四情景：悲观 `$0-5M`；基准 `$5-25M`；乐观 `$25-75M`；极度乐观 `$75-200M`。这些区间不包含规模化售电收入；即使极度乐观，也主要来自 ARMEC 并表、同位素初始销售、客户/政府开发或可报销工作，而不是 Aurora 商业电力。
+- 利润或 EBITDA 四情景：NTM 经营利润大概率继续显著为负。悲观经营亏损约 `-$250M to -$350M`；基准 `-$190M to -$280M`；乐观 `-$150M to -$240M`；极度乐观 `-$100M to -$220M`。收入上修不等于利润上修，因为首堆、燃料、制造和监管投入仍在加速。
+- 最大传导瓶颈：从客户 GW 需求到 Oklo NTM 收入之间缺少 binding PPA、可确认交付、燃料授权、项目融资、NTP、startup/COD 和收入确认节点。Meta 1.2GW、Switch 12GW 等是经营期权，不是 NTM revenue backlog。
+- 最大利润率变量：首堆和早期制造/燃料项目属于 FOAK 成本曲线，NTM 内利润率最可能被 R&D、G&A、stock-based compensation、CapEx 和工程准备吞噬；高毛利 PPA 或同位素利润率要等实际商业收入验证。
+- 最大现金流变量：客户预付款、项目开发资金、DOE/政府路径、ARMEC 外部收入和燃料/首堆 CapEx 节奏。Meta 预付款机制改善开发资金可信度，但会计上未必立即确认为收入。
+- 可信度：公司收入基数判断为中高，因为 SEC 披露明确显示当前收入接近 0、现金充足、单一报告分部和 PPA 模式；NTM 上限判断为中低，因为 ARMEC、同位素、开发收入和客户预付款确认节奏缺少可量化指引。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Aurora powerhouses / PPA 售电 | `$0` | `0%` | 公司长期核心收入来源；build-own-operate，向客户卖电/热 | A 级锚点是当前无收入；B/C 级证据是 Meta、Equinix、Switch、Diamondback 等 pipeline | NTM 基准不纳入规模化售电；只保留 `$0` 电力收入 | Aurora-INL 2028 左右、Meta Ohio 第一阶段最早 2030、完整 1.2GW 目标 2034、Switch through 2044 |
+| Aurora-INL 首堆与 DOE/NRC 监管路径 | `$0` | `0%` | 降低技术、许可和可复制性风险，是所有后续 PPA 的信任锚 | B/C：PDSA、PDC、NRC pre-application、DOE RPP；不是收入证据 | 不作为 NTM 售电收入；可影响开发资金和可信度 | 若 2028 startup/COD 兑现，后续 fleet 可收入化概率上移 |
+| Meta Ohio 1.2GW 与客户开发协议 | `$0`，可能形成预付款/开发资金或合同负债 | `0%` | 最高质量 AI 数据中心客户信号 | B：公司公告披露机制、土地、2026 site work、2030/2034 时间表；金额未披露 | 不进入 NTM 基准售电收入；可能进入乐观开发/预付款现金流 | 大规模 PPA 和项目融资模板，主要在 2030+ |
+| Switch 12GW、Equinix 100-500MWe、Diamondback 50MW、Prometheus/Wyoming Hyperscale 100MW | `$0`；Equinix/ROFR 相关曾有 `$25M` upfront liability 线索 | `0%` | 长期 pipeline 容量巨大，但合同质量差异大 | B/C/D：ROFR、LOI、MPA、多数 non-binding | 不进入 NTM 基准；只作为乐观/极度乐观的开发上限和远期期权 | 若转 binding PPA、site、NTP、融资，可上移 |
+| 燃料制造、燃料回收、A3F、Tennessee Advanced Fuel Center、HALEU/plutonium 路径 | `$0` | `0%` | 决定 Aurora fleet 是否能规模化；潜在护城河 | B/C：A3F PDSA、EBR-II fuel、surplus plutonium advanced negotiations、Centrus/newcleo/TVA 路径 | NTM 基准只保留小额可报销/开发收入可能；不能纳入规模化燃料销售 | 若燃料授权和资金落地，可提高后续 powerhouses 毛利和项目融资 |
+| Atomic Alchemy / 同位素业务 | 未披露商业收入；2026Q1 公司仍无显著收入 | `0%` | NTM 最可能出现小额收入的非电力业务 | C：NRC materials license 支持处理、加工和分销同位素；客户和规模未披露 | 可小比例进入基准，但必须折扣；无法可靠量化时按 `$0-10M` 处理 | 医疗、工业、国防、半导体 NTD silicon 等长期可选收入 |
+| ARMEC 精密制造 / 核制造支持 | 2026Q1 未并表；2026-06-04 收购完成，金额未披露 | `0%` | 改善制造、QA、采购、nozzle/工艺反馈；也可能有小额外部收入 | B/C：收购已完成，业务能力明确；收入规模未披露 | NTM 可纳入小额并表收入区间，但不作为高利润核心 | 若外部核制造订单保留，可成为制造平台；当前更像执行去风险 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只判断外部需求池和产品采用时间，不判断 Oklo 份额、收入确认或利润率。对 Oklo，需求单位不是 GPU、机柜或 TAM，而是可变成未来 PPA、开发协议、燃料授权、同位素订单或制造订单的容量、项目和合同节点。NTM 内必须区分“AI 数据中心缺电需求强”与“先进核电可在 NTM 内交付收入”。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Aurora powerhouses / PPA 售电 | AI 数据中心 24/7 clean power 需求强；公司公告披露 Meta 1.2GW，Switch 12GW non-binding，Equinix 100-500MWe ROFR，Diamondback/Prometheus 等 LOI；本地行业资料判断 SMR/advanced nuclear 在 2026-2027 主要是 PPA、许可、开发期权 | NTM 内没有新增 binding PPA 或预付款；客户优先选择燃气、SOFC、现有核电 PPA、utility dedicated generation | Meta Ohio 进入 site characterization / early development，少数客户继续开发讨论，但不要求 NTM 通电 | Meta phase 1 条款更清楚，至少一个非 Meta 客户转 binding 或预付款开发协议 | 多个 hyperscaler/colo 同时复制 Meta 模式，新增 `1-3GW+` 高质量开发协议 | 悲观：新增可验证容量 0；基准：开发节点推进但售电 MWh 0；乐观：`75-500MWe` 级可验证项目上移；极度乐观：`1GW+` 项目资金化 | 基准符合当前预期：需求强但收入时间滞后 | 依据：Meta 2030/2034 时间表、PPA/预付款机制；反证：2026 最快上电路线仍是 gas/SOFC/BESS/高压接入，不是新建 SMR |
+| Aurora-INL 首堆与监管路径 | 2026-06-11 DOE Idaho Operations Office 批准 Aurora-INL PDSA；NRC PDC topical report 2026-05 获批；Aurora-INL 使用 EBR-II recovered fuel | PDSA 后 DSA/readiness/startup 节点拖延，2028 置信度下降 | 后续 DOE/NRC 文件按计划推进，维持 2028 左右首堆期望 | DSA、施工、燃料装配和 readiness 时间表更清晰，2028 前后置信度上修 | 2027 中前接近 startup readiness，显著提前市场对首堆可运行性的判断 | NTM 售电需求仍为 0 MWh；但监管可信度从 C 级向 B 级移动 | 基准偏正向，但仍非收入需求 | 正向证据：PDSA/PDC；反证：FOAK 核电仍需安全分析、建设、燃料、startup approval |
+| 燃料制造与燃料回收 | A3F、EBR-II fuel、surplus plutonium advanced negotiations、Tennessee Advanced Fuel Center、HALEU/deconversion 合作 | 燃料路径行政/监管拖延，NTM 只能维持研发和准备 | A3F 和替代燃料路径继续推进，支撑 Aurora-INL 而非独立收入 | DOE/TVA/Centrus/newcleo/surplus Pu 中至少一条形成可报销工作或更明确资金 | 燃料路径被政策和客户资本加速，成为 Oklo 相对其他 SMR 的明确优势 | 悲观：新增商业燃料需求 0；基准：首堆燃料准备推进；乐观：`$5-30M` 开发/可报销需求；极度乐观：`$30-100M` 资金化上限 | 基准需求符合当前燃料短缺和首堆准备预期 | 依据：SEC 披露多燃料路径；反证：HALEU、plutonium、recycling 均有监管和政治复杂度 |
+| Atomic Alchemy / 同位素 | NRC materials license 支持 Idaho radiochemistry lab 处理、加工和分销同位素；公司称同位素用于医疗、能源、工业、国防和 AI 应用 | 客户试单不形成收入，Groves/同位素设施审批滞后 | 低个位数百万美元级试单或处理收入可能出现，但无法可靠量化 | 医疗/工业客户和材料处理形成 `$10-40M` NTM revenue 需求 | 同位素 off-take、NTD silicon 或国防/医疗需求同步突破，`$40M+` run-rate | 悲观：0；基准：`$0-10M`；乐观：`$10-40M`；极度乐观：`$40-100M` 上限 | 基准略高于当前损益表，但仍是小额期权 | 正向：材料许可证；反证：Q1 未披露收入，客户、价格和产量不透明 |
+| ARMEC 精密制造 | 核供应链、Oak Ridge 人才和 Oklo 内部制造需求；ARMEC 已支持 nozzle manufacturing、inspection planning、QA 和 supplier troubleshooting | 收购后主要内部服务，外部收入不保留或金额很小 | 小额外部收入并表，更多价值体现为内部执行去风险 | 外部核制造订单保留，收入 `$15-40M` | 成为核级制造平台雏形，`$40M+` 收入上限 | 悲观：`$0-5M`；基准：`$5-15M`；乐观：`$15-40M`；极度乐观：`$40M+`，但利润率未知 | 基准略高于当前收入表，因为收购发生在 Q2 | 正向：收购完成；反证：交易金额和收入规模未披露，内部转移收入不等于集团收入 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断需求能否进入 Oklo NTM 收入表，不判断增长率或利润。A/B/C/D/E 等级按收入表可确认性定义。对 OKLO，最重要的判断是：GW 级客户协议、许可节点和燃料路径可以提高长期经营价值，但在没有 binding PPA、交付、COD 或明确可报销收入条款前，不得直接进入 NTM 基准收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Aurora powerhouses / PPA 售电 | 2026Q1 收入表未显示商业售电收入；公司主业务模式为建造、拥有、运营 powerhouses 并通过 PPA 售电 | 直接，但要等电站运行 | 未来可能高经营杠杆；FOAK 早期成本高 | `$0` | `$0` | `$0-5M` 开发/服务可能，不是电力收入 | `$5-25M` 非售电开发收入上限 | 符合当前预期：NTM 无规模化售电收入 | A 对当前 0 收入；B/C 对客户 pipeline | 售电不进入；开发收入只小额进入 | SEC 10-Q 和公司商业模式；无 COD/无交付 | NTM 基准售电收入为 0 |
+| Aurora-INL 首堆与监管路径 | PDSA/PDC 是许可和安全依据，不是收入表项目 | 间接 | 提高后续融资和 PPA可信度，不直接产生毛利 | `$0` | `$0` | `$0-10M` 若有可报销/政府开发安排 | `$10-50M`，需明确合同 | 低于热门叙事预期；符合收入确认现实 | B/C | 不作为独立基准收入 | 有监管节点但无收入确认条款 | NTM 作为可信度校准，不作为收入基数 |
+| Meta Ohio 1.2GW | 公司公告披露预付款机制、2026 pre-construction/site characterization、第一阶段最早 2030、完整 2034；金额未披露 | 直接未来 PPA；NTM 现金流可能间接 | 预付款可改善现金流，售电毛利远期 | `$0` | `$0` revenue；现金流另列 | `$0-25M` 若部分开发付款确认为收入 | `$25-100M`，需披露金额和会计处理 | 基准符合当前预期；乐观高于当前可见性 | B 对商业支持；A 对当前无收入 | Revenue 不进入；现金流/合同负债跟踪 | 有客户和时间表，但无 NTM 售电、金额未披露 | NTM 不计入基准收入，列为乐观现金流和远期期权 |
+| Switch/Equinix/Diamondback/Prometheus pipeline | 多数 non-binding；Equinix/ROFR 相关有 upfront/ROFR 线索，但未转售电收入 | 直接未来 PPA；当前多为期权 | 取决于转 binding 概率 | `$0` | `$0` | `$0-10M` | `$10-50M` | 当前预期仅作 pipeline，不是 backlog | B/C/D，Switch 等偏 C/D | 不进入基准 | 缺 binding PPA、site、NTP、金额 | NTM 排除基准，只做乐观上限/远期期权 |
+| 燃料制造与回收 | 当前收入表无燃料销售；SEC 披露多燃料来源和 A3F/燃料设施推进 | 间接支撑电力；也可能产生可报销开发收入 | 未来可提升毛利和燃料安全；短期是投入 | `$0` | `$0-5M` | `$5-30M` | `$30-100M` | 符合当前预期：战略价值高、收入滞后 | B/C | 小额折扣进入基准 | DOE/监管/合作路径支持，但客户收入未量化 | 基准仅作小额可报销上限，核心价值放远期 |
+| Atomic Alchemy / 同位素 | 2026Q1 未披露收入；NRC materials license 支持处理、加工和分销同位素 | 直接非电力 | 可能早于电力收入；毛利未知 | `$0` | `$0-10M` | `$10-40M` | `$40-100M` | 基准略高于当前收入表，需要保守折扣 | C | 小额进入基准 | 有许可证和业务线，但无客户/价格/产量披露 | NTM 最可能的非电力收入之一，但可信度中低 |
+| ARMEC 精密制造 | 2026Q2 后并表；收购完成；收入规模和交易金额未披露 | 直接可能外部收入；间接内部降本 | 外部收入毛利未知；内部服务抵消集团收入 | `$0-5M` | `$5-15M` | `$15-40M` | `$40M+` | 高于 Q1 当前收入表，因为 Q2 事件新增 | B/C | 小额进入基准 | 收购完成，但金额未披露 | NTM 基准可纳入小额收入，但不能高估利润 |
+
+排除项：Meta/Switch/Equinix/Diamondback/Prometheus 的全部项目容量、客户总预算、AI 数据中心电力 TAM、长期 PPA 年化 run-rate、2030/2034/2044 容量目标，均不进入 NTM 基准收入。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第一步需求和第二步收入基数出发，判断每个重要业务线在 NTM 内能贡献多少收入和利润。收入贡献只看可确认公司收入，不把客户总电力需求、项目总容量、PPA 未来年化收入或行业 TAM 当成 Oklo NTM 收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Aurora powerhouses / PPA 售电 | 悲观 | `$0` | `负贡献`，研发/许可/建设支出继续 | 毛利率不可用，经营亏损扩大 | 低于主题预期但不低于现实收入锚 | 当前收入表无商业售电 | 保留 | 无 COD、无电力交付、无 NTM PPA 收入确认 |
+| Aurora powerhouses / PPA 售电 | 基准 | `$0` 售电，`$0-5M` 开发/服务可能 | 仍为负；收入不足覆盖费用 | 无证据不假设经营杠杆 | 符合当前经营预期 | PPA 模式、15-75MWe/100MWe+ 目标，但仍未运营 | 保留 | FOAK 成本、许可、燃料、项目融资 |
+| Aurora powerhouses / PPA 售电 | 乐观 | `$5-25M`，来自开发付款/可报销工作，不是售电 | 负贡献收窄有限；现金流可能改善 | 利润率仍低或负 | 高于当前基准 | Meta 开发机制、客户 pipeline | 保留为乐观上限 | 会计上可能进入合同负债而非收入 |
+| Aurora powerhouses / PPA 售电 | 极度乐观 | `$25-75M` | 仍不应假设正利润 | 收入上修弱于现金流上修 | 只代表 NTM 上限 | 多客户预付款/开发协议同时落地才成立 | 下移为乐观上限 | 无售电、无 startup、无项目融资闭环 |
+| Aurora-INL 首堆与监管路径 | 悲观 | `$0` | 负贡献 | 费用率上升 | 低于监管里程碑预期 | 后续 DSA/readiness 拖延 | 保留 | PDSA/PDC 不等于运行许可 |
+| Aurora-INL 首堆与监管路径 | 基准 | `$0` | 负贡献但提升后续可信度 | 无毛利 | 符合预期 | 2026-06-11 PDSA；2026-05 PDC | 保留 | FOAK 安全分析、建设、燃料装配 |
+| Aurora-INL 首堆与监管路径 | 乐观 | `$0-10M` | 负贡献；可能降低未来项目融资折价 | 毛利不可用 | 高于基准可信度 | DOE/NRC 节点进一步顺利 | 保留 | 若无收入条款，只能影响可信度 |
+| Aurora-INL 首堆与监管路径 | 极度乐观 | `$10-50M` | 未必正贡献 | 仍不假设扩张 | 明显高于当前收入预期 | 需政府/客户可报销合同 | 下移或仅作跟踪 | 监管节点缺收入确认路径 |
+| Meta/Switch/Equinix 等客户 pipeline | 悲观 | `$0` | 无收入，销售/开发支出增加 | 负 | 低于 headline 容量叙事 | non-binding 或金额未披露 | 保留 | 客户可改选 gas/SOFC/utility/既有核 PPA |
+| Meta/Switch/Equinix 等客户 pipeline | 基准 | `$0` revenue，可能有合同负债/预付款但不确认为收入 | 利润无直接改善；现金流可能改善 | 利润率不可用 | 符合现实预期 | Meta 2026 site work、2030/2034 时间表 | 保留 | 预付款会计处理不透明 |
+| Meta/Switch/Equinix 等客户 pipeline | 乐观 | `$0-25M` | 负贡献或低毛利开发收入 | 利润率低 | 高于当前基准 | 一项客户转 binding/development funding | 保留 | 不是售电收入，且资金可能限制用途 |
+| Meta/Switch/Equinix 等客户 pipeline | 极度乐观 | `$25-100M` | 现金流改善可大于利润改善 | 毛利未知 | 显著高于当前预期 | 多客户复制 Meta 模式 | 下移为乐观上限 | 需要客户、项目、金额、会计处理同时披露 |
+| 燃料制造与回收 | 悲观 | `$0` | R&D/CapEx 拖累 | 负 | 低于燃料叙事 | 燃料授权或资金拖延 | 保留 | HALEU/钚/回收燃料监管复杂 |
+| 燃料制造与回收 | 基准 | `$0-5M` | 负贡献；战略去风险 | 负 | 符合当前预期 | A3F、EBR-II fuel、多燃料路径 | 保留 | 建设投入先于收入 |
+| 燃料制造与回收 | 乐观 | `$5-30M` | 仍可能低利润或负毛利，取决于可报销条款 | 负到低正 | 高于基准 | DOE/TVA/Centrus/newcleo 或 surplus Pu 资金化 | 保留 | 政策和授权节点不等于商业利润 |
+| 燃料制造与回收 | 极度乐观 | `$30-100M` | 若为可报销/政府项目，利润率可能低；若技术服务，毛利较高 | 不可靠量化 | 上限情景 | 多路径同时落地 | 下移为乐观上限 | 燃料收入缺客户、价格、交付 |
+| Atomic Alchemy / 同位素 | 悲观 | `$0` | 负贡献或无显著贡献 | 无毛利 | 低于小额收入预期 | 客户试单延迟 | 保留 | 客户、价格、产能未披露 |
+| Atomic Alchemy / 同位素 | 基准 | `$0-10M` | 小额毛利可能出现，但被公司费用稀释 | 方向改善但不足以改变公司亏损 | 略高于当前收入表 | NRC materials license 支持初始商业销售 | 保留 | 证据 C 级，需折扣 |
+| Atomic Alchemy / 同位素 | 乐观 | `$10-40M` | 若 mix 好可贡献正毛利；公司级仍亏损 | 产品毛利改善 | 高于当前预期 | commercial isotope off-take 或处理收入 | 保留 | 销售和产能未验证 |
+| Atomic Alchemy / 同位素 | 极度乐观 | `$40-100M` | 可明显改善毛利但仍难覆盖全部 OpEx | 利润率上修 | 只代表上限 | 医疗/工业/NTD silicon/国防多线落地 | 下移或仅作跟踪 | 缺公开客户和合同金额 |
+| ARMEC 精密制造 | 悲观 | `$0-5M` | 对集团利润贡献小；内部服务抵消 | 不可靠量化 | 低于并表期望 | 交易金额和收入未披露 | 保留 | 外部订单可能不保留 |
+| ARMEC 精密制造 | 基准 | `$5-15M` | 小额毛利或 break-even；执行去风险价值大于利润 | 方向中性 | 符合保守并表预期 | 2026-06-04 收购完成；制造/QA能力 | 保留 | 内部制造不产生集团收入 |
+| ARMEC 精密制造 | 乐观 | `$15-40M` | 可贡献正毛利，但不足以覆盖集团研发 | 方向改善 | 高于当前预期 | 外部核制造订单保留 | 保留 | 未披露规模，客户集中未知 |
+| ARMEC 精密制造 | 极度乐观 | `$40M+` | 若平台化可改善毛利，但可信度低 | 改善 | 上限情景 | Oak Ridge 核供应链能力被外部客户验证 | 仅作跟踪 | 没有公开财务数据 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：公司层面把产品级贡献合成 NTM 总收入、利润和现金流。第一张表是公司收入和利润四情景。所有收入均为可确认 revenue，不含客户项目总金额、GW capacity、未来 PPA 年化 run-rate 或市场估值。FY2028、2030、2034 只在附录作为补充。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$0-5M` | 从 0 小额起步，增速无意义 | 低于“同位素/ARMEC 小额收入”预期，但符合无售电锚点 | 无法可靠量化，可能为负或无意义 | 极低，经营亏损约 `-$250M to -$350M` | EBITDA/净利润显著为负，净亏损约 `-$170M to -$280M` | FCF `-$300M to -$600M`，CapEx 与研发消耗上升 | 中 | 无客户收入确认、ARMEC 外部收入不明显、同位素试单延迟、监管或燃料拖延 |
+| 基准公司 | `$5-25M` | 低基数下 N/M；绝对增量主要来自 ARMEC/同位素/开发工作 | 接近当前经营预期：NTM 无规模化售电，小额非电力收入可能出现 | 无法可靠量化；若 ARMEC/同位素收入存在，毛利率仍不足以覆盖费用 | 经营亏损约 `-$190M to -$280M` | 净亏损约 `-$110M to -$210M`，利息收入可部分抵消经营亏损 | FCF `-$200M to -$450M`；若预付款进入经营现金流则改善 | 中高 | 收入证据以 C 级和小额并表为主，核心 power revenue 仍为 0 |
+| 乐观公司 | `$25-75M` | 绝对收入比基准多 `$20-50M` | 高于当前 run-rate，需要客户开发款、同位素或 ARMEC 同时进展 | 可能改善但无法可靠量化；取决于同位素/制造 mix 和开发收入会计 | 经营亏损约 `-$150M to -$240M` | 净亏损约 `-$70M to -$170M` | FCF `-$100M to -$300M`，客户预付款/政府资金可缓冲 | 中 | 乐观收入必须有合同、金额和会计处理；否则只是合同负债或 pipeline |
+| 极度乐观公司 | `$75-200M` | 绝对收入比基准多 `$70-175M` | 显著高于当前预期；要求需求、客户捕获、开发收入和执行同时突破 | 若同位素/开发服务占比高可改善，但不应自动假设高毛利 | 经营亏损约 `-$100M to -$220M` | 净亏损可能缩窄至 `-$25M to -$140M`，但仍不稳定 | FCF `-$50M to +$200M`，只有大额预付款/可报销资金才可能转正 | 低 | 需要多客户资金化、同位素商业收入、ARMEC收入和监管顺利同时成立 |
+
+汇总检查：
+
+- 不重复计算：Meta 1.2GW、Switch 12GW 和 Equinix 100-500MWe 不与 Aurora 售电收入重复计入；在 NTM 内只可能影响开发收入/现金流，不进入售电收入。
+- 替代关系：AI 数据中心短期缺电更多由 gas engine、aero turbine、SOFC、BESS、utility PPA 和高压接入解决；先进核电需求强不代表 NTM 收入强。
+- 一次性项目：ARMEC 并表收入与内部制造服务需分开；客户预付款可能是合同负债或受限制资金，不一定是 revenue。
+- 利润质量：NTM 收入即使出现，也可能是低毛利或可报销开发收入；公司级利润主要受 R&D、G&A、stock-based compensation、CapEx 和首堆成本驱动。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步只校准前四步情景，不重新做估值。正向证据只提升它实际影响的层级；反证只在对应层级处理一次，避免把同一风险重复惩罚到需求、收入、利润和现金流。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 10-Q 显示现金/证券 `$2.537B`、经营亏损 `-$51.2M`、经营现金流 `-$17.9M` | 公司汇总、执行可信度 | 不直接增加收入，但支撑至少一年开发投入 | 利息收入可抵消部分净亏损；不改变经营利润为负 | 提高 runway，降低短期融资压力 | 基准保留，悲观不因短期流动性下移 |
+| 当前收入表没有商业售电收入，公司为一个报告分部 | 收入基数 | 将 Aurora/Switch/Meta 的 NTM 基准售电收入压到 0 | 毛利率无意义，经营亏损主导 | 防止把 pipeline 误当 backlog | 基准保留；极度乐观售电收入排除 |
+| Meta 1.2GW agreement 有预付款/开发资金机制、2026 site work、first phase as early as 2030、full target by 2034 | 需求、收入基数、现金流 | 不进入 NTM 基准收入；可上修乐观开发资金 | 不足以证明 NTM 利润率改善 | 可能改善项目资金和燃料采购 | 需求乐观保留，收入基准保留为 0 |
+| 2026-06-11 Aurora-INL PDSA 获 DOE 批准，2026-05 PDC 获 NRC 批准 | 执行可信度、远期收入 | 不直接产生 NTM revenue | 不直接改善 NTM 利润率 | 降低首堆监管不确定性，支撑远期 PPA | 基准可信度上移；收入不变 |
+| ARMEC 收购完成 | 收入基数、执行可信度 | 可纳入小额 NTM 收入，但金额无法可靠量化 | 外部毛利未知，内部服务不产生集团收入 | 改善制造反馈、QA、采购和供应链问题闭环 | 基准小额保留，极度乐观仅作跟踪 |
+| Atomic Alchemy materials license | 收入基数 | 支持小额同位素销售可能，但无客户金额 | 若形成销售可能改善产品毛利 | 对现金流改善有限 | 基准小额保留；乐观需客户证据 |
+| 本地行业资料显示 2026-2027 最确定自备电路线是 gas engine/aero turbine/SOFC/BESS，而 SMR 是长期战略期权 | 需求、产品贡献 | 限制 Aurora NTM 收入；不限制长期需求 | 压制 NTM 利润改善假设 | 说明客户缺电不等于 Oklo 立即收入 | 悲观/基准需求保留；远期机会移入附录 |
+| Fuel path 多元但复杂：HALEU、plutonium、recovered fuel、recycling | 执行、利润率 | 可提升远期确定性；NTM 收入有限 | 远期燃料成本/毛利关键，NTM 不可靠量化 | 若授权/资金拖延，首堆和 fleet 延迟 | 作为最大约束保留，不重复惩罚收入和现金流 |
+| 多数客户 pipeline non-binding 或未披露金额 | 收入基数、产品贡献 | 不进入基准收入 | 不假设利润 | 不进入项目融资闭环 | 基准保留，极度乐观下移为上限 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 `$0-5M`，无售电，费用和 CapEx 上升 | 现金/证券充足，短期流动性强 | 同位素、ARMEC、开发付款均可能不形成收入；监管或燃料节点拖延 | 保留 | 悲观公司 | 中 | 无商业售电只在收入基数层处理，不再重复压低需求池 |
+| 基准 | NTM 收入 `$5-25M`，核心来自 ARMEC/同位素/小额开发，可确认售电为 0 | Q1 现金强；PDSA/PDC 进展；Meta 有预付款机制；ARMEC 已收购 | 缺金额、缺客户销售、缺 COD；C 级假设较多 | 保留 | 基准公司 | 中高 | 客户 pipeline 非 binding 只限制收入确认，不否定长期需求 |
+| 乐观 | NTM 收入 `$25-75M`，开发收入、同位素和 ARMEC 同时强于基准 | Meta phase 1、DOE/燃料、同位素/ARMEC 任一明确披露可上修 | 会计处理可能进入合同负债而非收入；利润率仍可能为负 | 保留 | 乐观公司 | 中 | 预付款不重复算收入和现金流；若未披露收入处理，只改善现金流可信度 |
+| 极度乐观 | NTM 收入 `$75-200M`，多客户资金化、同位素和制造平台同步突破 | 多条业务线都有可验证催化，监管节点顺利 | 任一核心环节缺客户、金额、交付或收入确认，不能保留为公司基准 | 下移 | 乐观上限 / 附录跟踪 | 低 | AI 电力需求强不能重复上修需求、收入、利润和现金流 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。OKLO 的 NTM 主口径仍是 pre-revenue / early-revenue advanced nuclear developer，而不是电力运营收入公司。最可能的收入区间是 `$5-25M`，主要来自 ARMEC 并表、同位素初始收入和少量开发/可报销工作；Aurora 售电收入基准为 0。
+- NTM 收入结论：Meta 1.2GW、Switch 12GW 和其他 pipeline 代表远期 PPA 需求，不代表 NTM revenue backlog。NTM 可确认收入必须从合同、客户、交付、金额和会计处理出发；当前 A 级收入锚是 0。
+- 利润/现金流结论：经营亏损仍是主状态。基准经营亏损约 `-$190M to -$280M`，净亏损约 `-$110M to -$210M`；自由现金流大概率为负，除非客户预付款、政府资金或可报销合同显著抵消 CapEx。
+- 主要传导瓶颈：需求池强，但传导链过长：AI/工业客户电力需求 -> binding PPA / prepayment -> site / interconnection / DOE-NRC path -> project finance -> long-lead equipment -> fuel fabrication -> readiness/startup -> COD -> MWh revenue。NTM 只处在前半段。
+- 乐观情景成立条件：Meta phase 1 披露具体预付款或可确认开发收入；Equinix/Switch/Diamondback 中至少一个转 binding；A3F/燃料路径出现可报销资金；Atomic Alchemy 有商业 off-take；ARMEC 外部收入保留。
+- 极度乐观情景成立条件：多个客户复制 Meta 模式，新增 `1GW+` 高质量开发容量，并同时披露金额、付款、会计处理和项目时间表；同位素/ARMEC 贡献 `$50M+` 级 revenue；Aurora-INL 后续安全与建设节点继续提前。
+- 悲观情景触发条件：PDSA 后 DSA/readiness 或燃料装配拖延超过 12 个月；Meta 预付款/NTP 无后续；Switch 等长期无 site/PPA；同位素无客户收入；ARMEC 成为纯内部成本中心；CapEx 和 stock-based compensation 加速而无非股权资金补充。
+- 后续跟踪数据：10-Q 的 revenue、contract liabilities、restricted cash / customer deposits、OCF、CapEx、股数；Meta Ohio prepayment 金额和会计处理；Aurora-INL DSA、readiness review、startup approval；A3F / fuel path 授权；Atomic Alchemy isotope sales；ARMEC 外部收入和毛利。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：最近财务数据为 Oklo 2026Q1，期间截至 2026-03-31；最新事件核验截至 2026-06-12，包含 2026-06-11 Aurora-INL PDSA、2026-06-04 ARMEC 收购完成、2026-05 NRC PDC 批准。
+- 主要收入、订单、指引和利润率来源：
+  - Oklo 2026Q1 Form 10-Q：现金/证券 `$2.537B`、经营亏损 `-$51.2M`、净亏损 `-$33.1M`、经营现金流 `-$17.9M`、单一报告分部、PPA 模式、15-75MWe/100MWe+ product size、燃料和同位素披露。`https://www.sec.gov/Archives/edgar/data/1849056/000162828026034095/oklo-20260331.htm`
+  - U.S. Department of Energy Approves Preliminary Documented Safety Analysis for Aurora Powerhouse at Idaho National Laboratory，Business Wire，2026-06-11。`https://www.businesswire.com/news/home/20260611005638/en/U.S.-Department-of-Energy-Approves-Preliminary-Documented-Safety-Analysis-for-Aurora-Powerhouse-at-Idaho-National-Laboratory`
+  - Oklo and Meta 1.2GW Southern Ohio agreement，2026-01-09。`https://oklo.com/newsroom/news-details/2026/Oklo-Meta-Announce-Agreement-in-Support-of-1-2-GW-Nuclear-Energy-Development-in-Southern-Ohio/default.aspx`
+  - Oklo NRC PDC approval for Aurora Powerhouse，2026-05。`https://oklo.com/newsroom/news-details/2026/Oklos-NRC-Principal-Design-Criteria-Topical-Report-Approved-for-Aurora-Powerhouse-in-Idaho/default.aspx`
+  - NRC Oklo Aurora Powerhouse pre-application activities page，page last updated 2026-05-18。`https://www.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/pre-application-activities/okla-aurora-powerhouse`
+  - Oklo ARMEC acquisition，2026-06-08。`https://oklo.com/newsroom/news-details/2026/Oklo-Acquires-ARMEC-to-Expand-Vertically-Integrated-Manufacturing-Capabilities-for-Advanced-Reactor-and-Fuel-Manufacturing-Programs/default.aspx`
+- 项目内允许资料：
+  - `公司调研/电力_发电_能源_储能/OKLO_Oklo Inc_公司调研_2026-06-11.md`
+  - `公司调研/电力_发电_能源_储能/SMR_NuScale Power_公司调研_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026/FY2027：本报告不采用外部市场价格或估值倍数；若后续要接入一致预期，应只作为“当前收入预期”校准，而不是估值证据。
+  - Aurora-INL：若 2028 左右 startup/COD 兑现，技术和监管可信度显著上移，但这不改变 NTM 售电基准。
+  - Meta Ohio：第一阶段目标最早 2030，完整 1.2GW 目标 2034；若以 90% capacity factor 和 `$80-160/MWh` PPA 电价估算，长期 run-rate 很大，但不进入 NTM 主表。
+  - Switch 12GW：through 2044 的长期上限，只在 binding PPA、site、NTP、融资和收入确认路径出现后再上移。
+  - Fuel recycling / A3F / Tennessee：战略价值在于燃料安全和未来毛利率，NTM 主要看可报销资金、授权和建设节点。
+  - Atomic Alchemy / ARMEC：NTM 最可能产生小额收入，但客户、价格、产能和并表收入规模需后续 10-Q 验证。

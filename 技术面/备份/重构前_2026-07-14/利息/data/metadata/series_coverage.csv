@@ -1,0 +1,71 @@
+alias,first_date,last_date,observations,history_years,dataset,source_id,group,description,native_frequency,expected_history,has_30y_history
+NDX,1990-01-02,2026-06-23,9185,36.47091033538672,market_daily_raw,^NDX,market_index,Nasdaq-100 price index,daily,primary_30y,True
+QQQ,1999-03-10,2026-06-23,6864,27.288158795345655,market_daily_raw,QQQ,etf_proxy,Invesco QQQ ETF adjusted-price proxy,daily,proxy_shorter_history,False
+SPX,1990-01-02,2026-06-23,9185,36.47091033538672,market_daily_raw,^GSPC,market_index,S&P 500 price index,daily,primary_30y,True
+SPY,1993-01-29,2026-06-23,8406,33.39630390143737,market_daily_raw,SPY,etf_proxy,SPDR S&P 500 ETF adjusted-price proxy,daily,proxy_shorter_history,True
+AAA,1990-01-01,2026-05-01,437,36.328542094455855,fred_daily_raw,AAA,credit_rates_spreads,Moody's seasoned Aaa corporate bond yield,monthly,30y_plus,True
+ANFCI,1990-01-05,2026-06-12,1902,36.43258042436687,fred_daily_raw,ANFCI,financial_conditions,Adjusted National Financial Conditions Index,weekly,30y_plus,True
+BAA,1990-01-01,2026-05-01,437,36.328542094455855,fred_daily_raw,BAA,credit_rates_spreads,Moody's seasoned Baa corporate bond yield,monthly,30y_plus,True
+BBB_OAS,2023-06-26,2026-06-22,785,2.9897330595482545,fred_daily_raw,BAMLC0A4CBBB,credit_rates_spreads,ICE BofA BBB US corporate option-adjusted spread,daily,partial_30y,False
+DFF,1990-01-01,2026-06-22,13322,36.47091033538672,fred_daily_raw,DFF,policy_money_market,Effective federal funds rate,daily,30y_plus,True
+DFII10,2003-01-02,2026-06-22,5871,23.468856947296374,fred_daily_raw,DFII10,real_rates_inflation,10-year TIPS real yield,daily,short_history,False
+DFII30,2010-02-22,2026-06-22,4086,16.32854209445585,fred_daily_raw,DFII30,real_rates_inflation,30-year TIPS real yield,daily,short_history,False
+DFII5,2003-01-02,2026-06-22,5871,23.468856947296374,fred_daily_raw,DFII5,real_rates_inflation,5-year TIPS real yield,daily,short_history,False
+DGS1,1990-01-02,2026-06-22,9123,36.46817248459959,fred_daily_raw,DGS1,treasury_curve,1-year Treasury constant maturity,daily,30y_plus,True
+DGS10,1990-01-02,2026-06-22,9123,36.46817248459959,fred_daily_raw,DGS10,treasury_curve,10-year Treasury constant maturity,daily,30y_plus,True
+DGS1MO,2001-07-31,2026-06-22,6224,24.892539356605067,fred_daily_raw,DGS1MO,treasury_curve,1-month Treasury constant maturity,daily,short_history,False
+DGS2,1990-01-02,2026-06-22,9123,36.46817248459959,fred_daily_raw,DGS2,treasury_curve,2-year Treasury constant maturity,daily,30y_plus,True
+DGS20,1993-10-01,2026-06-22,8184,32.72279260780287,fred_daily_raw,DGS20,treasury_curve,20-year Treasury constant maturity,daily,partial_30y,True
+DGS3,1990-01-02,2026-06-22,9123,36.46817248459959,fred_daily_raw,DGS3,treasury_curve,3-year Treasury constant maturity,daily,30y_plus,True
+DGS30,1990-01-02,2026-06-22,9123,36.46817248459959,fred_daily_raw,DGS30,treasury_curve,30-year Treasury constant maturity,daily,30y_plus_with_gap,True
+DGS3MO,1990-01-02,2026-06-22,9123,36.46817248459959,fred_daily_raw,DGS3MO,treasury_curve,3-month Treasury constant maturity,daily,30y_plus,True
+DGS5,1990-01-02,2026-06-22,9123,36.46817248459959,fred_daily_raw,DGS5,treasury_curve,5-year Treasury constant maturity,daily,30y_plus,True
+DGS6MO,1990-01-02,2026-06-22,9123,36.46817248459959,fred_daily_raw,DGS6MO,treasury_curve,6-month Treasury constant maturity,daily,30y_plus,True
+DGS7,1990-01-02,2026-06-22,9123,36.46817248459959,fred_daily_raw,DGS7,treasury_curve,7-year Treasury constant maturity,daily,30y_plus,True
+DPRIME,1990-01-02,2026-06-22,9187,36.46817248459959,fred_daily_raw,DPRIME,policy_money_market,Bank prime loan rate,daily,30y_plus,True
+DTB3,1990-01-02,2026-06-22,9123,36.46817248459959,fred_daily_raw,DTB3,policy_money_market,"3-month Treasury bill secondary market rate, discount basis",daily,30y_plus,True
+FEDFUNDS,1990-01-01,2026-05-01,437,36.328542094455855,fred_daily_raw,FEDFUNDS,policy_money_market,"Effective federal funds rate, monthly average",monthly,30y_plus,True
+HY_OAS,2023-06-26,2026-06-22,785,2.9897330595482545,fred_daily_raw,BAMLH0A0HYM2,credit_rates_spreads,ICE BofA US high yield option-adjusted spread,daily,partial_30y,False
+IG_OAS,2023-06-26,2026-06-22,784,2.9897330595482545,fred_daily_raw,BAMLC0A0CM,credit_rates_spreads,ICE BofA US corporate option-adjusted spread,daily,partial_30y,False
+MORTGAGE15US,1991-08-30,2026-06-18,1817,34.80082135523614,fred_daily_raw,MORTGAGE15US,mortgage_rates,15-year fixed rate mortgage average in the United States,weekly,30y_plus,True
+MORTGAGE30US,1990-01-05,2026-06-18,1903,36.44900752908966,fred_daily_raw,MORTGAGE30US,mortgage_rates,30-year fixed rate mortgage average in the United States,weekly,30y_plus,True
+NFCI,1990-01-05,2026-06-12,1902,36.43258042436687,fred_daily_raw,NFCI,financial_conditions,Chicago Fed National Financial Conditions Index,weekly,30y_plus,True
+SOFR,2018-04-03,2026-06-22,2052,8.219028062970569,fred_daily_raw,SOFR,policy_money_market,Secured overnight financing rate,daily,short_history,False
+T10YIE,2003-01-02,2026-06-23,5872,23.471594798083505,fred_daily_raw,T10YIE,real_rates_inflation,10-year breakeven inflation rate,daily,short_history,False
+T5YIE,2003-01-02,2026-06-23,5872,23.471594798083505,fred_daily_raw,T5YIE,real_rates_inflation,5-year breakeven inflation rate,daily,short_history,False
+T5YIFR,2003-01-02,2026-06-23,5872,23.471594798083505,fred_daily_raw,T5YIFR,real_rates_inflation,"5-year, 5-year forward inflation expectation rate",daily,short_history,False
+NDX,1990-01-05,2026-06-19,1903,36.4517453798768,market_weekly,^NDX,market_index,Nasdaq-100 price index,daily,primary_30y,True
+QQQ,1999-03-12,2026-06-19,1424,27.27173169062286,market_weekly,QQQ,etf_proxy,Invesco QQQ ETF adjusted-price proxy,daily,proxy_shorter_history,False
+SPX,1990-01-05,2026-06-19,1903,36.4517453798768,market_weekly,^GSPC,market_index,S&P 500 price index,daily,primary_30y,True
+SPY,1993-01-29,2026-06-19,1743,33.385352498288846,market_weekly,SPY,etf_proxy,SPDR S&P 500 ETF adjusted-price proxy,daily,proxy_shorter_history,True
+AAA,1990-01-05,2026-05-01,437,36.31759069130732,rates_weekly_observed,AAA,credit_rates_spreads,Moody's seasoned Aaa corporate bond yield,monthly,30y_plus,True
+ANFCI,1990-01-05,2026-06-12,1902,36.43258042436687,rates_weekly_observed,ANFCI,financial_conditions,Adjusted National Financial Conditions Index,weekly,30y_plus,True
+BAA,1990-01-05,2026-05-01,437,36.31759069130732,rates_weekly_observed,BAA,credit_rates_spreads,Moody's seasoned Baa corporate bond yield,monthly,30y_plus,True
+BBB_OAS,2023-06-30,2026-06-26,157,2.9897330595482545,rates_weekly_observed,BAMLC0A4CBBB,credit_rates_spreads,ICE BofA BBB US corporate option-adjusted spread,daily,partial_30y,False
+DFF,1990-01-05,2026-06-26,1904,36.47091033538672,rates_weekly_observed,DFF,policy_money_market,Effective federal funds rate,daily,30y_plus,True
+DFII10,2003-01-03,2026-06-26,1226,23.477070499657767,rates_weekly_observed,DFII10,real_rates_inflation,10-year TIPS real yield,daily,short_history,False
+DFII30,2010-02-26,2026-06-26,853,16.32854209445585,rates_weekly_observed,DFII30,real_rates_inflation,30-year TIPS real yield,daily,short_history,False
+DFII5,2003-01-03,2026-06-26,1226,23.477070499657767,rates_weekly_observed,DFII5,real_rates_inflation,5-year TIPS real yield,daily,short_history,False
+DGS1,1990-01-05,2026-06-26,1904,36.47091033538672,rates_weekly_observed,DGS1,treasury_curve,1-year Treasury constant maturity,daily,30y_plus,True
+DGS10,1990-01-05,2026-06-26,1904,36.47091033538672,rates_weekly_observed,DGS10,treasury_curve,10-year Treasury constant maturity,daily,30y_plus,True
+DGS1MO,2001-08-03,2026-06-26,1300,24.895277207392198,rates_weekly_observed,DGS1MO,treasury_curve,1-month Treasury constant maturity,daily,short_history,False
+DGS2,1990-01-05,2026-06-26,1904,36.47091033538672,rates_weekly_observed,DGS2,treasury_curve,2-year Treasury constant maturity,daily,30y_plus,True
+DGS20,1993-10-01,2026-06-26,1709,32.733744010951405,rates_weekly_observed,DGS20,treasury_curve,20-year Treasury constant maturity,daily,partial_30y,True
+DGS3,1990-01-05,2026-06-26,1904,36.47091033538672,rates_weekly_observed,DGS3,treasury_curve,3-year Treasury constant maturity,daily,30y_plus,True
+DGS30,1990-01-05,2026-06-26,1904,36.47091033538672,rates_weekly_observed,DGS30,treasury_curve,30-year Treasury constant maturity,daily,30y_plus_with_gap,True
+DGS3MO,1990-01-05,2026-06-26,1904,36.47091033538672,rates_weekly_observed,DGS3MO,treasury_curve,3-month Treasury constant maturity,daily,30y_plus,True
+DGS5,1990-01-05,2026-06-26,1904,36.47091033538672,rates_weekly_observed,DGS5,treasury_curve,5-year Treasury constant maturity,daily,30y_plus,True
+DGS6MO,1990-01-05,2026-06-26,1904,36.47091033538672,rates_weekly_observed,DGS6MO,treasury_curve,6-month Treasury constant maturity,daily,30y_plus,True
+DGS7,1990-01-05,2026-06-26,1904,36.47091033538672,rates_weekly_observed,DGS7,treasury_curve,7-year Treasury constant maturity,daily,30y_plus,True
+DPRIME,1990-01-05,2026-06-26,1904,36.47091033538672,rates_weekly_observed,DPRIME,policy_money_market,Bank prime loan rate,daily,30y_plus,True
+DTB3,1990-01-05,2026-06-26,1904,36.47091033538672,rates_weekly_observed,DTB3,policy_money_market,"3-month Treasury bill secondary market rate, discount basis",daily,30y_plus,True
+FEDFUNDS,1990-01-05,2026-05-01,437,36.31759069130732,rates_weekly_observed,FEDFUNDS,policy_money_market,"Effective federal funds rate, monthly average",monthly,30y_plus,True
+HY_OAS,2023-06-30,2026-06-26,157,2.9897330595482545,rates_weekly_observed,BAMLH0A0HYM2,credit_rates_spreads,ICE BofA US high yield option-adjusted spread,daily,partial_30y,False
+IG_OAS,2023-06-30,2026-06-26,157,2.9897330595482545,rates_weekly_observed,BAMLC0A0CM,credit_rates_spreads,ICE BofA US corporate option-adjusted spread,daily,partial_30y,False
+MORTGAGE15US,1991-08-30,2026-06-19,1815,34.80355920602327,rates_weekly_observed,MORTGAGE15US,mortgage_rates,15-year fixed rate mortgage average in the United States,weekly,30y_plus,True
+MORTGAGE30US,1990-01-05,2026-06-19,1901,36.4517453798768,rates_weekly_observed,MORTGAGE30US,mortgage_rates,30-year fixed rate mortgage average in the United States,weekly,30y_plus,True
+NFCI,1990-01-05,2026-06-12,1902,36.43258042436687,rates_weekly_observed,NFCI,financial_conditions,Chicago Fed National Financial Conditions Index,weekly,30y_plus,True
+SOFR,2018-04-06,2026-06-26,430,8.2217659137577,rates_weekly_observed,SOFR,policy_money_market,Secured overnight financing rate,daily,short_history,False
+T10YIE,2003-01-03,2026-06-26,1226,23.477070499657767,rates_weekly_observed,T10YIE,real_rates_inflation,10-year breakeven inflation rate,daily,short_history,False
+T5YIE,2003-01-03,2026-06-26,1226,23.477070499657767,rates_weekly_observed,T5YIE,real_rates_inflation,5-year breakeven inflation rate,daily,short_history,False
+T5YIFR,2003-01-03,2026-06-26,1226,23.477070499657767,rates_weekly_observed,T5YIFR,real_rates_inflation,"5-year, 5-year forward inflation expectation rate",daily,short_history,False

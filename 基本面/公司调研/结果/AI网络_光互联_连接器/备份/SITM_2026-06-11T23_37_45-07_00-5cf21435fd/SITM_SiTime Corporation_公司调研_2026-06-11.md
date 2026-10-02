@@ -1,0 +1,400 @@
+# 公司：SITM SiTime Corporation 公司调研（2026-06-11）
+
+## 0. 结论先行
+
+SiTime Corporation（NASDAQ: SITM）是一家以 MEMS 精密计时为核心的 fabless 半导体公司，产品覆盖 MEMS 谐振器、振荡器、时钟 IC、低抖动参考时钟和新推出的 AI 数据中心同步软件/系统方案。它不是 GPU、ASIC、HBM 或光模块公司，而是 AI 服务器、NIC、交换机、GPU/加速卡、1.6T 光互联和分布式集群同步中的“小 BOM、高系统杠杆”部件供应商。
+
+资本市场现在把 SITM 看成三件事的叠加：第一，MEMS 高端振荡器纯标的；第二，AI 数据中心 timing socket 的稀缺受益者；第三，若收购 Renesas timing business 成功，SiTime 会从振荡器公司变成“振荡器 + clock IC + clock generator/buffer + jitter attenuator + network synchronizer”的更完整 timing 平台公司。这个叙事已经高度反映在股价里：截至 2026-06-11 17:45 UTC，SITM 股价约 708.53 美元、市值约 186.5 亿美元，TTM P/S 约 49.1 倍，forward P/E 约 89 倍；估值已经要求 2026-2027 年 AI 数据中心收入持续高增长、Elite 2 量产验证顺利、Renesas 交易按时落地。
+
+最新业务事实非常强：2026Q1 收入 1.136 亿美元，同比增长 88.3%；其中 Communications, Enterprise and Data Center（CED）收入约 7,570 万美元，占收入 66.6%，同比增长 158%，环比增长 17%。管理层在 2026Q1 电话会上称，2026 年数据中心收入可超过 3 亿美元，且上行空间“much higher”；CFO 同时说 CED 全年可见度较年初至少增加 8,000 万美元。2025Q4 公司披露 book-to-bill 大于 1.5，backlog 全部在 12 个月内，主要落在 2026Q1/Q2，并有显著 H2 backlog。这是本轮股价重估的核心。
+
+AI 相关边界也要清楚：SITM 的 AI 收入主要来自数据中心 timing 器件和同步方案，不是 AI 芯片本体收入。当前最能兑现的是 NIC、switch、GPU/accelerator card、1.6T/800G 网络设备中的低抖动/高稳定度 timing socket；Elite 2 Super-TCXO + TimeFabric 的“1 ns / sub-ns cluster synchronization”仍处在 2026Q3 量产前的早期阶段，长期空间大，但需要客户平台认证、OCP/PTP/SyncE/系统架构采纳来验证。
+
+## 1. 公司整体业务、投资人定位与财务快照
+
+### 1.1 公司做什么
+
+SiTime 的官方定义是 precision timing solutions provider，核心技术由 MEMS 谐振器、模拟/混合信号电路、系统级 timing 算法和封装/测试/校准能力构成。根据 FY2025 10-K，公司产品大体分为四类：
+
+| 类别 | 作用 | AI/数据中心相关性 | 备注 |
+|---|---:|---:|---|
+| MEMS oscillators / Super-TCXO / OCXO 类产品 | 给服务器、交换机、NIC、GPU/加速卡、工业/车载设备提供稳定时钟源 | 高 | 当前收入主力；高端产品靠低抖动、温漂、稳定度和可靠性溢价 |
+| Clock ICs / integrated clocks | 时钟生成、分配、缓冲、低抖动参考时钟 | 高 | 2026 年拟收购 Renesas timing business 后会明显增强 |
+| MEMS resonators | 可作为晶体/谐振器替代或嵌入式 timing 元件 | 中高，偏长期 | Titan 等小型化/嵌入式产品是潜在小业务 |
+| Software / synchronization stack | TimeFabric 等，把器件 timing 能力映射到 AI 集群同步/利用率 | 高，早期 | Elite 2 + TimeFabric 是公司把 timing 从元器件提升为系统价值的关键尝试 |
+
+公司主要终端市场为：
+
+- Communications, Enterprise and Data Center（CED）：数据中心、通信、企业设备。2026Q1 已成为绝对主线，占收入 66.6%。
+- Automotive, Industrial and Aerospace（AIA）：车载、工业、航空航天和国防。2026Q1 占 18.7%，同比增长 51%，但 AI 直接相关性弱于 CED。
+- Mobile, IoT and Consumer（MIC）：手机、IoT、消费电子。2026Q1 占 14.7%，同比下降 1%，不是本报告的 AI 主线。
+
+### 1.2 投资人心中的 SITM
+
+投资人当前对 SITM 的认知从“高毛利 MEMS timing 替代石英振荡器公司”快速转为“AI 数据中心 timing bottleneck 公司”。它在产业链中的位置不是大算力芯片供应商，而是 AI 系统稳定运行的基础时序层：
+
+```text
+AI 资本开支
+  -> GPU/ASIC 服务器、NVL/机柜、NIC、交换机、800G/1.6T 光互联
+  -> 低抖动参考时钟、DPLL、clock generator/buffer、network synchronizer、PTP/SyncE
+  -> GPU 利用率、分布式训练同步、网络 BER/链路稳定性、故障定位、时间戳一致性
+  -> SiTime 可销售的 MEMS timing 器件、clock IC、Elite 2、TimeFabric、Renesas timing 组合
+```
+
+本地行业资料对 timing 的判断与公司叙事一致：AI timing 的主线不是“每张 GPU 配一个原子钟”，而是现有架构中更好的 oscillator、DPLL、硬件 timestamp、PTP/SyncE profile、NIC/switch/server 参考设计。高端 timing 的 BOM 占比很小，但如果能把 GPU 利用率提高 1-3 个百分点，对客户的投资回报远高于器件价格。
+
+### 1.3 最近三年重大变化、转型与收购
+
+| 时间 | 变化 | 投资含义 |
+|---|---|---|
+| 2023 | 收入 1.439 亿美元，消费/移动周期低谷，GAAP operating loss 1.006 亿美元 | 公司仍被视为高端 MEMS timing 成长股，但缺少 AI 数据中心明确拉动 |
+| 2024 | 收入 2.027 亿美元，同比增长 40.9%，周期修复 | 业务从低谷恢复，毛利率仍维持较高水平 |
+| 2025 | 收入 3.267 亿美元，同比增长 61.2%；CED 全年占 39%，数据中心成为主要增量 | 从“消费/车载/工业 timing”转向“AI 数据中心 timing” |
+| 2026-02-04 | 宣布以 20 亿美元现金 + 5 亿美元股票收购 Renesas timing business | 若完成，将几乎翻倍公司规模，补齐 clock IC、jitter attenuator、network synchronizer 和渠道 |
+| 2026-05-04 | 发布 Elite 2 Super-TCXO，面向 AI 数据中心 GPU utilization 和 cluster synchronization | 把器件价值上探到“AI 集群同步/利用率” |
+| 2026-05-11 | Renesas 交易 HSR 等待期届满 | 美国反垄断等待期过关，但仍需其他批准和惯常成交条件 |
+| 2026-05-19 | 宣布 12 亿美元 0% convertible senior notes due 2031 | 为 Renesas 交易融资；增强现金确定性，同时引入潜在稀释和交易后杠杆 |
+
+### 1.4 最新股价、估值与盈利质量快照
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | 708.53 美元 | 2026-06-11 17:45 UTC | 实时行情快照 |
+| 市值 | 186.5 亿美元 | 2026-06-11 17:45 UTC | 实时行情快照 |
+| TTM 收入 | 3.800 亿美元 | 本报告计算，TTM 至 2026Q1 | FY2025 3.267 亿 - 2025Q1 0.603 亿 + 2026Q1 1.136 亿 |
+| TTM P/S | 49.1 倍 | 2026-06-11 | 186.5 亿 / 3.800 亿；高估值已定价 AI 高增长 |
+| TTM PE | N/M；行情口径约 -778.6 倍 | 2026-06-11 | GAAP TTM 仍亏损，负 PE 经济意义有限 |
+| Forward PE | 约 89.3 倍 | 2026-06-11，市场统计口径 | 对应约 7.9 美元 forward EPS，随股价和一致预期变化很大 |
+| 2026Q1 收入增速 | +88.3% YoY | 2026Q1 财报 | CED/data center 是主因 |
+| FY2025 收入增速 | +61.2% YoY | FY2025 财报 | 2025 收入 3.267 亿美元 |
+| 2026Q1 GAAP 毛利率 | 59.0% | 2026Q1 财报 | 高端 timing 产品组合改善 |
+| 2026Q1 non-GAAP 毛利率 | 64.5% | 2026Q1 财报 | 管理层称后续仍可能维持强劲 |
+| 2026Q1 GAAP 净利率 | -4.6% | 2026Q1 财报 | GAAP 净亏损 520 万美元 |
+| 2026Q1 non-GAAP 净利率 | 34.3% | 2026Q1 财报 | non-GAAP 净利润 3,900 万美元 |
+| TTM GAAP 净利率 | 约 -6.4% | 市场统计口径，2026-06-11 附近 | GAAP 仍受股权激励、交易相关成本等影响 |
+
+### 1.5 资产负债表健康度
+
+2026Q1 末公司资产负债表非常健康，但 Renesas 交易会改变资本结构。
+
+| 项目 | 2026Q1 数值 | 解读 |
+|---|---:|---|
+| 现金、现金等价物和短期投资 | 7.887 亿美元 | 交易前净现金充足 |
+| 总资产 | 12.93 亿美元 | 资产主要为现金/投资和经营资产 |
+| 流动负债 | 8,030 万美元 | 用现金和短期投资覆盖约 9.8 倍 |
+| 总负债 | 1.339 亿美元 | 交易前负债率低 |
+| 股东权益 | 11.59 亿美元 | 权益基础强 |
+| 2026-05 0% 可转债 | 12 亿美元本金，2031 到期 | 用于 Renesas 交易和一般公司用途；利息压力低，但带来潜在稀释 |
+| Renesas timing 收购对价 | 20 亿美元现金 + 5 亿美元股票 | 会消耗现金并引入整合、商誉和债务/稀释风险 |
+
+结论：交易前公司财务健康程度高；交易后也不像流动性紧张型公司，但投资风险从“能否活下去”变成“高价收购能否顺利整合，并把 Renesas 的 70% 左右毛利 timing 资产转化为 AI/data center cross-sell”。
+
+## 2. 最近五个财报季度：收入、利润、订单与 AI 数据中心暴露
+
+公司不披露按终端市场的利润率，也不按具体产品披露毛利率；下表中的利润率为公司整体 GAAP/non-GAAP 毛利率。AI 数据中心收入也不是官方单列科目，本报告使用 CED、管理层文字、产品线和订单线索做估算，所有估算均标注。
+
+| 财报季度 | 总收入、增速 | 毛利率/利润 | CED：通信/企业/数据中心 | AIA：汽车/工业/航空 | MIC：移动/IoT/消费 | 订单、backlog、交期、取消率线索 | AI 数据中心相关收入占比估算 |
+|---|---:|---:|---:|---:|---:|---|---|
+| 2026Q1，2026-05-07 披露 | 1.136 亿美元；+88.3% YoY；+0.3% QoQ | GAAP GM 59.0%；non-GAAP GM 64.5%；GAAP 净亏损 520 万美元；non-GAAP EPS 1.53 美元 | 7,570 万美元；+158% YoY；+17% QoQ；占 66.6% | 2,120 万美元；+51% YoY；-14% QoQ；占 18.7% | 1,670 万美元；-1% YoY；-31% QoQ；占 14.7% | 未披露正式 backlog 数字；管理层称 CED 全年可见度较年初增加至少 8,000 万美元，最大客户/市场 bookings 最强；客户 forecast 已延伸到 2026 年内 | 估计约 50-65% 总收入，即 5,700-7,400 万美元；CED 几乎全部增量来自数据中心，但 CED 中仍有通信/企业设备 |
+| 2025Q4，2026-02-05 披露 | 1.133 亿美元；+66.7% YoY；+35.5% QoQ | GAAP GM 57.0%；non-GAAP GM 63.6%；FY2025 non-GAAP EPS 2.96 美元 | 6,460 万美元；+160% YoY；+53% QoQ；占 57.0% | 2,450 万美元；+19% YoY；+21% QoQ；占 21.6% | 2,420 万美元；+7% YoY；+14% QoQ；占 21.4% | Book-to-bill 大于 1.5；backlog 全部在 12 个月内，主要落在 2026Q1/Q2，并有显著 H2 backlog；一个 AI-focused 数据中心产品 2025 收入超过 2,000 万美元，2026 至少翻倍 | 估计约 40-55% 总收入，即 4,500-6,200 万美元；Q4 已明显进入 AI 数据中心放量 |
+| 2025Q3，2025-11-05 披露 | 8,360 万美元；+44.6% YoY；+20.3% QoQ | GAAP GM 56.3%；non-GAAP GM 64.0%；GAAP 净亏损 710 万美元；non-GAAP EPS 0.76 美元 | 4,210 万美元；+115% YoY；+17% QoQ；占 50.4% | 2,020 万美元；+14% YoY；+22% QoQ；占 24.2% | 2,130 万美元；+4% YoY；+25% QoQ；占 25.5% | 管理层提到 CED 中有 short lead-time data center opportunities；单一客户数据中心内已有 6 个 timing solutions；1.6T 产品需求在三个月内翻倍 | 估计约 30-45% 总收入，即 2,500-3,800 万美元 |
+| 2025Q2，2025-08-06 披露 | 6,950 万美元；+58.4% YoY；+15.3% QoQ | GAAP GM 50.3%；non-GAAP GM 59.0%；GAAP 净亏损 1,560 万美元；non-GAAP EPS 0.29 美元 | 3,600 万美元；+137% YoY；+23% QoQ；占 51.8% | 1,650 万美元；+11% YoY；+17% QoQ；占 23.7% | 1,700 万美元；+23% YoY；+1% QoQ；占 24.5% | AI design wins 已进入生产；未来三年累计价值数亿美元；客户 commitment 增强，订单 profile 继续 firming | 估计约 25-40% 总收入，即 1,700-2,800 万美元 |
+| 2025Q1，2025-05-07 披露 | 6,030 万美元；+139.5% YoY | GAAP GM 52.0%；non-GAAP GM 59.6%；GAAP 净亏损 1,720 万美元；non-GAAP EPS 0.15 美元 | 约 2,930 万美元；由 2026Q1 +158% YoY 反推；占约 48.6% | 约 1,400 万美元；由 2026Q1 +51% YoY 反推；占约 23.3% | 约 1,690 万美元；由 2026Q1 -1% YoY 反推；占约 28.1% | 未披露 backlog；数据中心需求开始体现，但尚未形成 2025Q4/2026Q1 的强订单可见度 | 估计约 15-25% 总收入，即 900-1,500 万美元 |
+
+### 2.1 财报读数
+
+从季度序列看，SITM 的关键不是公司整体从低谷恢复，而是 CED 斜率突变。2025Q2 CED 已经同比增长 137%；到 2025Q4，CED 环比增长 53%，并且 book-to-bill 超过 1.5；2026Q1 CED 在 2025Q4 高基数上继续环比增长 17%，说明不是一次性拉货。
+
+订单数据虽然不完整，但能交叉验证：
+
+- 2025Q4 book-to-bill 大于 1.5，backlog 全部在 12 个月内。
+- 2026Q1 管理层没有给出 backlog 数字，但说 CED 全年可见度较年初至少增加 8,000 万美元。
+- 2025Q2 管理层说 AI design wins 的未来三年累计价值为数亿美元。
+- 2025Q4 管理层说某个 AI-focused 数据中心产品 2025 年收入超过 2,000 万美元，2026 年至少翻倍。
+- 2025Q3 说 1.6T 相关需求在三个月内翻倍，且一个数据中心客户已有 6 个 timing solutions。
+
+取消率没有官方披露。风险点是 2025Q4 电话会中 CFO 提到 2026Q1/Q2 强劲后，2026Q3 可能因客户库存而出现 pause；所以订单强度不是无风险线性外推。
+
+## 3. 2026 最新指引、业务占比与产品映射
+
+### 3.1 2026 最新指引
+
+2026Q2 指引为收入 1.29-1.33 亿美元，中值 1.31 亿美元。按中值计算：
+
+| 指标 | 计算 |
+|---|---:|
+| Q2 指引中值 | 1.31 亿美元 |
+| 环比 2026Q1 | +15.3% |
+| 同比 2025Q2 | +88.5% |
+| Q2 指引中值年化 | 5.24 亿美元 |
+
+公司没有给正式 FY2026 收入指引，但管理层给了三个重要软指引：
+
+- 2026 年 data center revenue 可超过 3 亿美元，且上行空间更高。
+- CED 2026 年可见度较年初至少增加 8,000 万美元。
+- Q2 强劲主要由 CED 和 data center 继续驱动，客户关系和供应链支持度良好。
+
+### 3.2 最新业务收入占比
+
+| 业务 | 2026Q1 收入 | 2026Q1 占比 | YoY | QoQ | 本报告判断 |
+|---|---:|---:|---:|---:|---|
+| CED | 7,570 万美元 | 66.6% | +158% | +17% | 公司最侧重业务，AI 数据中心 timing 是最大增量 |
+| AIA | 2,120 万美元 | 18.7% | +51% | -14% | 高可靠/车载/工业/航空，增长不错但不是 AI 主线 |
+| MIC | 1,670 万美元 | 14.7% | -1% | -31% | 低优先级；消费/手机/IoT 周期对 AI 主线贡献小 |
+
+### 3.3 产品、型号族与业务交叉验证
+
+公司没有按 SKU 披露收入。本表按产品族/型号族、终端业务、客户需求和财报线索做映射。
+
+| 产品/型号族 | 对应业务 | 当前阶段 | 收入/增速交叉验证 | 估计利润率 | AI 相关性 |
+|---|---|---|---|---:|---|
+| 高性能 MEMS oscillators / Super-TCXO / low-jitter reference clocks，包括 Elite/Elite X/Elite RF 等高端 timing 平台 | CED、AIA | 已量产 | CED 2026Q1 7,570 万美元，+158% YoY；数据中心客户 NIC、switch、GPU card、accelerator timing 是主要增量 | 公司 non-GAAP GM 64.5%；高端 timing 可能高于公司均值 | 高 |
+| Elite 2 Super-TCXO | CED，AI 数据中心 | 2026-05 发布，预计 2026Q3 量产 | 官方称把 AI cluster synchronization 从约 1 microsecond 推向 10 ns 级，器件可到 1 ns；公司预计到 2030 累计市场 15 亿美元 | 早期高毛利，估计 65-80%，取决于是否 bundled software/reference design | 很高 |
+| TimeFabric software / synchronization stack | CED，AI 数据中心、金融交易等 | 早期 | 官方把 Elite 2 与 AI cluster/GPU utilization 绑定；本地行业资料认为软件/servo/uncertainty API 毛利可达 75-90%，但 hyperscaler 自研会压价 | 软件理论毛利高，但是否独立收费待验证 | 很高 |
+| 1.6T/800G 网络 timing、low phase-noise reference、clocking for NIC/switch/optics | CED | 正在放量 | 2025Q3 管理层称 1.6T 需求三个月翻倍；本地 800G/1.6T 行业资料显示 2026 是 800G 放量、1.6T pricing window | 高端器件估计 60-70%+，普通 clocking 低于高端 Super-TCXO | 很高 |
+| Clock generators、buffers、jitter attenuators、network synchronizers，含拟收购 Renesas timing assets | CED、通信、工业 | SiTime 自有 + pending acquisition | Renesas timing business 预计成交时 TTM 收入超过 3 亿美元，毛利约 70%，75% 收入来自 AI/Data Center/Comms | 约 70% gross margin，管理层披露 | 很高 |
+| Endura / ruggedized MEMS oscillators、车载/工业/航空 timing | AIA | 已量产 | 2026Q1 AIA 2,120 万美元，+51% YoY，但环比 -14% | 高可靠产品毛利通常较好，但公司不披露分部毛利 | 中 |
+| Titan MEMS resonators / embedded timing | CED、mobile/IoT、长期 SoC/package embedded | 小规模/长期 | 目前收入不可见；潜在用于更深层级封装/SoC timing | 若形成 embedded license/die 模式，毛利高；量产不确定 | 中高，偏长期 |
+| 普通 mobile/IoT/consumer oscillators | MIC | 成熟 | 2026Q1 1,670 万美元，-1% YoY，-31% QoQ | 低于高端 AI timing | 低 |
+
+### 3.4 本报告跳过的低 AI 业务和产品
+
+以下业务不是没有价值，而是对本次“AI 数据中心/AI 芯片/AI 基建”问题贡献小，后文不做重点展开：
+
+- 普通手机、可穿戴、消费电子、IoT 中的低端 MEMS oscillator。
+- 一般工业控制、非 AI 设备时钟替换。
+- 低 ASP、可多源替换的 commodity oscillator。
+- 与 AI 网络、GPU/accelerator、数据中心 timing 无直接绑定的 legacy consumer socket。
+
+## 4. 高增长或关键产品和业务：当前收入贡献、AI 重要性、紧急性、供需和溢价能力
+
+| 关键业务/产品 | 当前收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 依据 |
+|---|---:|---:|---|---|---|---|---|
+| CED 数据中心 precision timing sockets：NIC、switch、GPU card、accelerator、server clock tree | 2026Q1 约 6,000-7,500 万美元；其中 AI/data center 估计 5,700-7,400 万美元 | CED +158% YoY，+17% QoQ | 高。直接影响链路稳定、PTP/SyncE、distributed workload timing、GPU 利用率 | 高。2026 800G/1.6T、GB300/NVL、AI Ethernet fabric 放量窗口 | 偏紧。订单可见度和 book-to-bill 强，但部分需求可能来自短交期/库存拉动 | 中高。MEMS 高端 timing 强，但普通 clock source 有多家替代 | Q1/Q4 财报、电话会、行业精密时钟资料 |
+| Elite 2 Super-TCXO + TimeFabric sub-ns synchronization | 2026Q1 基本为 0 或工程样品；2026Q3 起量产 | 从 0 到 1 的新产品 | 很高，但仍需验证。若 AI cluster 同步从 1 us 走向 10 ns，价值很大 | 中高。若客户要提升训练/推理集群利用率，会在 2026H2-2027 加速 | 当前未形成明确供不应求；需求强度取决于 hyperscaler 架构采纳 | 高。SiTime 在 MEMS Super-TCXO 领先，但可被 OCXO、BAW、DPLL、NIC 内建 timestamp 和软件方案部分替代 | Elite 2 官方发布、本地精密时钟资料 |
+| 1.6T/800G optical/network timing | 2026Q1 已包含在 CED 中，估计季度 1,500-3,000 万美元收入暴露 | 1.6T 需求三个月翻倍；CED 高增长 | 高。800G/1.6T 网络的低抖动、FEC、CDR、SyncE/PTP 都需要更好 timing | 高。2026 是 800G 量产和 1.6T 定价/认证窗口 | 偏紧。1.6T 光模块、DSP/SerDes、激光器和验证资源紧；timing 也受客户 qualification 限制 | 中。高端低抖动参考时钟有溢价，但 clock/jitter 竞争者多 | Q3 电话会、本地 800G/1.6T 和 AI Ethernet 资料 |
+| Renesas timing business：clock generator、buffer、jitter attenuator、network synchronizer | SiTime 当前 0；成交后 TTM 收入预计超过 3 亿美元 | 被收购资产本身成熟，75% 来自 AI/Data Center/Comms | 很高。补齐 SiTime 在 clock IC/DPLL/network synchronizer 的产品缺口 | 高。交易若在 2026 年底完成，可直接影响 2027 组合 | 成熟业务供给能力存在，但整合和客户转单需要时间 | 中高。产品线更完整后溢价能力强于单一 oscillator，但面临 Skyworks、Microchip、TI、ADI、Diodes 等 | 收购公告、HSR 公告、Q1 电话会 |
+| AIA 高可靠 timing | 2026Q1 2,120 万美元 | +51% YoY，-14% QoQ | 中。间接服务边缘计算、国防/航空，不是 AI 数据中心主线 | 中 | 不紧。更多是设计周期和资质壁垒 | 中高。高可靠产品替换成本高 | Q1 财报 |
+| Titan MEMS resonator / embedded timing | 当前收入不可见，估计小于数百万美元/季度 | 早期 | 中高，偏长期。若嵌入 SoC/package，可能成为小型化 timing 标准 | 低到中。2026-2027 多为 design-in | 不紧。尚未大规模需求 | 高但未验证。技术壁垒高，生态采纳是难点 | 10-K、本地精密时钟资料 |
+
+## 5. 一年后收入贡献预测：基准、乐观、极度乐观
+
+下表预测的是 2027 年中前后可见的年化收入贡献。各产品之间有重叠，尤其 CED data-center timing、1.6T timing、Elite 2 和 Renesas clock IC 不能简单相加；公司总收入预测需要去重。
+
+| 关键业务/产品 | 基准情景 | 乐观情景 | 极度乐观情景 | 关键触发因素 |
+|---|---:|---:|---:|---|
+| Organic CED data-center precision timing，不含 Renesas | 年化 4.5-5.5 亿美元；同比增长约 35-60% | 年化 6.5-8.5 亿美元；同比增长约 70-120% | 年化 10-13 亿美元；同比增长 150%+ | 2026 backlog 顺利转收入，1.6T/AI Ethernet 设计持续扩大，Q3 库存 pause 很浅 |
+| Elite 2 Super-TCXO + TimeFabric | 年化 2,500-6,000 万美元 | 年化 1.0-2.2 亿美元 | 年化 3.5-6.5 亿美元 | Q3 2026 量产顺利，2-3 家 hyperscaler 或 AI 系统 OEM 认证，TimeFabric 能独立收费 |
+| 1.6T/800G network timing | 年化 1.0-1.8 亿美元，部分包含在 CED | 年化 2.2-3.8 亿美元，部分包含在 CED | 年化 5.0-9.0 亿美元，部分包含在 CED | 1.6T 光模块和 102.4T switch 规模化，SITM 进入 switch/NIC/optics 多个 timing socket |
+| Renesas timing business | 若 2026 年底成交，年化收入 3.0-3.4 亿美元，GM 约 70% | 年化 3.6-4.5 亿美元 | 年化 5.0-6.5 亿美元 | 顺利 close、渠道整合、与 SiTime MEMS oscillator 交叉销售 |
+| AIA 高可靠 timing | 年化 9,500 万-1.2 亿美元 | 年化 1.3-1.7 亿美元 | 年化 2.0-2.6 亿美元 | 车载/工业/航空需求恢复，Endura/ruggedized socket 扩张 |
+| Titan / embedded MEMS resonator | 年化小于 1,000-2,000 万美元 | 年化 3,000-8,000 万美元 | 年化 1.0-2.5 亿美元 | SoC/package embedded timing 被大客户采纳，或 Renesas/SiTime 组合推动标准化 |
+
+### 5.1 一年后 AI 重要性、紧急性、供需和溢价判断
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| CED data-center timing | 重要性高；紧急性高；供需偏紧；SiTime 在高端 MEMS 上有溢价 | 重要性很高；紧急性很高；客户 LTA/forecast 加强；价格更稳 | timing 成为 AI rack/network 关键瓶颈之一，客户愿为稳定性和 GPU 利用率显著溢价 |
+| Elite 2 + TimeFabric | 重要性高但认证早期；供需未紧；溢价来自性能领先 | 进入多家 AI 集群 reference design；供给受校准/测试/认证限制；软件绑定提高溢价 | sub-ns timing 成为大型 AI 集群标配，产品短缺，SiTime 获得准平台型定价 |
+| 1.6T/800G timing | 重要性高；受 1.6T 光模块/交换机量产节奏驱动 | 1.6T 在 2027 提前放量，低抖动 timing ASP 上行 | 3.2T/400G per lane 前置设计启动，timing 规格升级带来新一轮 ASP 提升 |
+| Renesas timing | 重要性高；交易 close 后组合完整性提升 | 与 SiTime MEMS oscillator 形成 bundle，network synchronizer 进入更多 DC design | 组合变成 AI timing 平台供应商，竞争对手从单点器件商变成系统 timing 方案商 |
+| AIA | AI 重要性中；现金流/毛利支持 | 高可靠客户恢复，抗周期属性提升 | 国防/航空/自动驾驶等高可靠 timing 与 AI edge 合流 |
+
+## 6. BOM 拆分、单位内容量、价格传导、产能能力和认证阶段
+
+### 6.1 BOM 与价格传导链
+
+SiTime 的价值传导不是“AI 芯片 ASP”直接乘以市场份额，而是从系统可靠性和利用率回传到 timing BOM：
+
+```text
+AI 训练/推理集群成本
+  -> GPU/ASIC 设备、网络、光互联和电力设施昂贵
+  -> GPU 利用率、packet loss、链路 BER、PTP/SyncE、故障定位成为效率瓶颈
+  -> 低抖动/高稳定 timing 对系统稳定性有杠杆
+  -> 客户愿意为高端 oscillator、DPLL、jitter attenuator、network synchronizer、TimeFabric 支付溢价
+```
+
+根据本地精密时钟行业资料，典型 timing BOM 结构如下：
+
+| 产品类型 | BOM 主要构成 | 毛利率区间判断 | 价格传导特点 |
+|---|---|---:|---|
+| PCIe clock generator / buffer | die 20-35%；package/test 20-35%；qualification/NRE 10-20%；channel/support 10-20% | 45-70% | 多源竞争较强，进入参考设计后可保持 ASP |
+| Jitter attenuator / DPLL / network synchronizer | die/IP 25-40%；package/test 20-35%；firmware/servo 10-20%；app support 10-20% | 55-75% | 与 SyncE/PTP profile、board design、firmware 绑定，替换成本较高 |
+| MEMS / TCXO / OCXO oscillator | MEMS resonator 10-30%；CMOS ASIC 20-40%；package 10-25%；calibration/aging/test 20-35% | 58-75%；SiTime 2026Q1 non-GAAP GM 64.5% | 校准、温漂、短稳、ADEV、可靠性决定溢价 |
+| M.2 time card / time module / time appliance | DPLL/SyncE IC 20-30%；OCXO/holdover 25-45%；PCB/connector 15-25%；firmware/validation 15-30% | 40-65%；软件可更高 | 不一定由 SiTime 直接销售，但会拉动高端 timing socket |
+| TimeFabric / software synchronization stack | 软件研发、客户集成、uncertainty API、servo、管理和监控 | 75-90% 理论毛利 | 前提是客户愿意外购，而不是 hyperscaler 自研 |
+
+### 6.2 每 GPU、每 rack、每 MW、每 optical port 的真实内容量估算
+
+单位内容量必须保守看待：timing 通常不是每个 GPU 独立绑定一个高 ASP 器件，而是分布在服务器主板、GPU/accelerator card、NIC、switch、retimer/optics、time card 和 grandmaster 之间。下表为 AI 数据中心 timing 总 BOM，SiTime 能拿到其中一部分。
+
+| 单位 | 基准内容量 | 乐观内容量 | 极度乐观内容量 | SiTime 可捕获部分 |
+|---|---:|---:|---:|---|
+| 每 GPU 等效 | 0.5-5 美元 | 5-20 美元 | 20-60 美元 | 普通 clock socket 低；若 Elite 2/TimeFabric 按 rack/cluster 分摊，捕获率可上升 |
+| 每 8-GPU 服务器 | 20-80 美元 | 80-250 美元 | 250-800 美元 | 取决于 server board、NIC、GPU card、accelerator card 是否采用 SiTime 高端 timing |
+| 每高密度 AI rack | 1,000-5,000 美元 | 5,000-25,000 美元 | 25,000-80,000 美元 | SiTime 可能捕获 20-60%；若有 TimeFabric/Elite 2 bundle，比例更高 |
+| 每 MW IT load | 2万-10万美元 | 10万-50万美元 | 50万-150万美元 | 假设 10-20 个高密度 rack/MW；极度乐观包含 time appliance/software allocation |
+| 每 800G/1.6T optical port | 0.5-3 美元 | 3-10 美元 | 10-30 美元 | 光模块内部不一定有 SiTime；更多在 switch/NIC/line card clock tree、jitter cleaner、SyncE/PTP |
+
+### 6.3 当前产能能力和供应链采纳
+
+| 项目 | 当前状态 | 产能/收入能力判断 |
+|---|---|---:|
+| Organic SiTime | 2026Q2 指引中值 1.31 亿美元，年化 5.24 亿美元 | 当前已验证至少 5 亿美元以上年化供给和收入处理能力；若 H2 继续增长，organic FY2026 可能进入 5.5-7.5 亿美元区间 |
+| 高端 MEMS timing 供给瓶颈 | 主要是 MEMS process、CMOS-MEMS co-design、温度补偿算法、短稳/phase noise 测试、客户 qualification | 比普通 wafer capacity 更偏“测试/校准/认证”瓶颈 |
+| Elite 2 | 2026-05 发布，预计 2026Q3 量产 | 当前认证阶段是客户工程验证/平台 design-in，尚未证明大规模量产收入 |
+| TimeFabric | 软件/系统同步层，早期 | 产能不是硬件瓶颈，而是客户集成、PTP/SyncE profile、uncertainty API、运维/监控和 hyperscaler 自研替代 |
+| Renesas timing acquisition | HSR 等待期 2026-05-11 届满；仍需其他批准；预计 2026 年底前完成 | 成交时 TTM 收入预计超过 3 亿美元、GM 约 70%；可把 pro forma 年化能力推向 8-10 亿美元以上 |
+| 客户采纳线索 | AI design wins 未来三年累计数亿美元；一项 AI-focused DC 产品 2025 收入超 2,000 万美元，2026 至少翻倍；一个 DC 客户已有 6 个 timing solutions | 采纳已从样品进入收入，但 Elite 2 仍需等待 2026Q3 以后验证 |
+
+### 6.4 认证和标准相关阶段
+
+| 认证/生态 | 当前阶段 | 对 SITM 的意义 |
+|---|---|---|
+| 客户平台 qualification | 已在部分 data center 客户形成收入；Elite 2 仍处 2026Q3 量产前 | timing 器件替换成本来自 board-level qualification、thermal/jitter/aging test 和系统 debug |
+| OCP Time Appliance / Time Card / Datacenter PTP profile | 行业内开放标准和参考设计持续推进 | 有利于外部 timing 方案标准化，但也会让客户可多源采购 |
+| PTP / IEEE 1588、SyncE、GNSS holdover、hardware timestamp | 已是数据中心/通信网络同步主线 | Elite 2/TimeFabric 若要成为 AI 集群默认 timing 栈，需要与这些标准兼容 |
+| PCIe Gen5/6/7 clocking | Gen5/6 当前主线，Gen7 设计前置 | 服务器、GPU/加速卡、NIC、retimer 的低抖动 clock tree 是 SiTime 机会 |
+| 1.6T/3.2T 光互联和 102.4T switch reference design | 2026-2027 逐步进入设计和认证 | 高速 SerDes、CDR、jitter budget 收紧，会提升高端 timing 价值 |
+
+## 7. 一年后产能能力、采纳和认证阶段预测
+
+| 情景 | 产能/收入能力 | 供应链采纳程度 | 认证/标准阶段 |
+|---|---:|---|---|
+| 基准 | Organic 年化能力 6.5-8.5 亿美元；Renesas 若按 2026 年底 close，pro forma 年化 9-12 亿美元 | 现有 CED 客户继续扩大；Elite 2 在少数 AI 数据中心平台开始量产；Renesas 产品仍以既有客户为主 | Elite 2 通过若干客户平台认证；PTP/SyncE/OCP 继续作为兼容框架；Renesas 交易完成初步整合 |
+| 乐观 | Pro forma 年化能力 11-15 亿美元 | Elite 2/TimeFabric 进入 2-3 家大型 hyperscaler 或 AI 系统 OEM reference design；1.6T timing socket 扩大；Renesas cross-sell 开始贡献 | AI rack/network timing reference design 固化；OCP/PTP profile 和客户内部规范把 sub-ns/10ns 级同步写入新平台 |
+| 极度乐观 | Pro forma 年化能力 18-25 亿美元 | sub-ns timing 被视为大型 AI cluster 默认基础设施；SiTime 组合成为外部采购首选；Renesas + SiTime bundle 明显压缩分立竞争者空间 | Elite 2/TimeFabric、network synchronizer、clock generator、high-end oscillator 被整合为平台级 timing stack；认证瓶颈从产品转为交付能力 |
+
+## 8. 订单积压、供给与未来一年业务增速预测
+
+### 8.1 可验证订单线索
+
+公司没有持续披露 backlog 金额，但已经给出足够多的方向性线索：
+
+| 线索 | 数字/描述 | 对未来 12 个月的含义 |
+|---|---|---|
+| 2025Q4 book-to-bill | 大于 1.5 | 订单明显高于出货，支持 2026Q1/Q2 高收入 |
+| 2025Q4 backlog | 全部在 12 个月内；主要落在 2026Q1/Q2，并有显著 H2 backlog | 不是远期空头订单，转收入窗口较近 |
+| 2026Q1 CED 可见度 | 较年初至少增加 8,000 万美元 | 2026 全年数据中心收入预期上修 |
+| 2025Q2 AI design wins | 未来三年累计价值数亿美元 | 支持 2026-2028 多年需求，而不只是单季拉货 |
+| 单一 AI-focused DC 产品 | 2025 收入超过 2,000 万美元，2026 至少翻倍 | 可用作具体 socket 放量证据 |
+| 1.6T 产品需求 | 2025Q3 三个月内翻倍 | 与 2026 1.6T/800G 网络建设节奏一致 |
+| 取消率 | 未披露 | 不能假设为零；2026Q3 可能有库存 pause 风险 |
+
+### 8.2 未来一年收入增速预测
+
+| 情景 | FY2026 organic 收入预测 | 2026 增速 vs FY2025 | 2027 年中 run-rate 判断 | 核心假设 |
+|---|---:|---:|---:|---|
+| 基准 | 5.2-6.0 亿美元 | +60-85% | Organic CED 年化 4.5-5.5 亿美元；若 Renesas close，pro forma 年化 9-12 亿美元 | Q1/Q2 强劲，Q3 有轻微 pause，Q4 恢复；Elite 2 贡献有限；Renesas 年底 close |
+| 乐观 | 6.5-7.5 亿美元 | +100-130% | Pro forma 年化 13-16 亿美元 | CED backlog 顺利转收入，1.6T 和 AI Ethernet 需求继续上修，Elite 2 提前形成数千万美元级收入 |
+| 极度乐观 | 8.0-9.5 亿美元 | +145-190% | Pro forma 年化 20 亿美元以上 | sub-ns timing 被大客户作为 AI 集群标配；Renesas 顺利整合；普通 timing 竞争未显著压价 |
+
+本报告更倾向基准到乐观之间。理由是 Q1/Q2 指引和订单线索很强，但 2026Q3 可能的库存 pause、Elite 2 未量产、Renesas 交易尚未 close，以及估值对极度乐观情景已有很高预期，都会限制安全边际。
+
+## 9. 竞争格局、技术路线、替代风险与客户替换成本
+
+### 9.1 主要竞争对手
+
+| 领域 | 竞争者 | SiTime 优势 | SiTime 风险 |
+|---|---|---|---|
+| MEMS / 高端 oscillator / Super-TCXO | Microchip/Vectron、Rakon、Epson、NDK、Kyocera、Daishinku/KDS、TXC、Taitien、Abracon、CTS 等 | MEMS 纯标的、温漂/抗振/小型化/可靠性、AI 叙事清晰 | 石英和 OCXO 生态成熟，客户可在部分 socket 多源 |
+| Clock generator / buffer / jitter attenuator / DPLL | Renesas legacy、Skyworks、Microchip、TI、ADI、Diodes、Silicon Labs timing 资产等 | 收购 Renesas 后组合完整性显著提高 | 收购未完成前产品面不够完整；完成后也要面对成熟 timing IC 厂商 |
+| Network synchronizer / time card / grandmaster / PTP 系统 | Microchip、Meinberg、Safran/Orolia、Oscilloquartz/ADVA、NVIDIA/Intel/Broadcom/Marvell 内建 timestamp、Cisco/Arista 系统方案 | Elite 2 + TimeFabric 可从器件上探到系统同步 | Hyperscaler 和 NIC/switch vendor 可能把 timing 功能内化 |
+| AI switch/NIC/optics 系统 | NVIDIA、Broadcom、Marvell、Intel、Cisco、Arista 及光模块供应链 | SiTime 可作为低抖动 timing 组件进入多家系统 | 若 timing 规格被 ASIC/NIC/交换机供应商平台化，独立器件 ASP 可能被压缩 |
+
+### 9.2 新技术是否会成为主流
+
+基准判断：高端 MEMS timing 会成为 AI 数据中心的主流增量之一，但不一定成为单一赢家结构。原因是 AI 服务器、NIC、switch、1.6T optics 的 jitter budget、temperature drift、短期稳定度和故障定位要求都在提高，低端石英器件难以覆盖全部高端场景。
+
+更激进的“sub-ns AI cluster synchronization 成为大型 AI 训练集群标配”仍需验证。它可能成为主流的前提是：
+
+- 大客户实测 GPU utilization、debug latency、packet timing、distributed workload synchronization 有明确 ROI。
+- 10 ns 或 sub-ns timing 被写入 AI rack/network reference design，而不是作为可选增强件。
+- OCP/PTP/SyncE/硬件 timestamp/NIC/switch 管理面形成可复用部署路径。
+- Elite 2/TimeFabric 的系统集成成本低于客户自研 timing stack。
+
+### 9.3 替代方案和风险
+
+| 风险 | 影响 | 观察指标 |
+|---|---|---|
+| Hyperscaler、NVIDIA/Broadcom/Marvell/Intel 等把 timing 功能内建 | 外部 timing ASP 被压缩，TimeFabric 软件难以收费 | NIC/switch ASIC reference design、PTP/SyncE profile、客户是否采购外部 DPLL/synchronizer |
+| OCXO、BAW、传统 quartz 高端化 | MEMS premium 被替代或多源化 | 同等稳定度/phase noise/temperature drift 下的 ASP 和可获得性 |
+| Elite 2 量产或客户认证慢 | 2026H2-2027 增量不及预期 | 2026Q3 量产进展、客户 design win、是否形成收入披露 |
+| Q3 库存 pause 和订单取消 | 线性外推失效 | book-to-bill、DSO、库存、客户 forecast、管理层对 H2 的措辞 |
+| Renesas 交易整合 | 财务杠杆、股权稀释、整合失败 | 监管批准、close 时间、客户流失、毛利率是否维持约 70% |
+| 客户集中 | 2025 Apple 通过 ODM/EMS/distributors 占 23%，Tesla 占 10% | 大客户订单变化、终端市场波动 |
+| 估值过高 | 好公司也可能不是好股票 | forward P/E、P/S 与收入加速是否匹配 |
+
+### 9.4 客户替换成本
+
+替换成本呈两极分化：
+
+- 普通 oscillator socket：替换成本中等，客户需要重新验证 board timing、thermal、phase noise、aging，但有多源替代。
+- 高端 Super-TCXO / low-jitter clock：替换成本较高，尤其进入 AI NIC、switch、GPU/accelerator card、1.6T 网络设备后，验证周期通常以季度到年度计。
+- DPLL、network synchronizer、TimeFabric 类系统 timing：替换成本最高，因为涉及 firmware、PTP/SyncE profile、uncertainty budget、运维监控、故障定位和客户内部工具链。
+- Renesas 组合完成后：如果 SiTime 能把 oscillator + clock IC + synchronizer + software 打包进 reference design，替换成本会显著高于单点器件。
+
+## 10. 投资判断框架
+
+### 10.1 bull case
+
+- CED 已从 2025Q2 开始持续加速，2026Q1 占比 66.6%，且 Q2 指引继续环比增长。
+- 数据中心收入 2026 年超过 3 亿美元的管理层口径并不激进，因为 2026Q1 CED 已年化超过 3 亿美元。
+- 2025Q4 book-to-bill 大于 1.5，backlog 在 12 个月内，订单转收入时间近。
+- Elite 2 把 timing 从“元器件”提升为“GPU utilization / AI cluster synchronization”系统价值，若 ROI 被客户验证，ASP 和毛利都可能上台阶。
+- Renesas timing asset 收入超过 3 亿美元、毛利约 70%、75% 暴露于 AI/Data Center/Comms，交易后组合明显更强。
+
+### 10.2 bear case
+
+- 当前估值接近“AI timing 平台成功”的价格，容错率低。
+- Elite 2 尚未量产，TimeFabric 商业模式和客户付费意愿未充分验证。
+- AI 数据中心 timing content per GPU/rack 绝对金额小，若客户或 ASIC/NIC/switch vendor 内化 timing 功能，外部供应商价值会被压缩。
+- 2026Q3 可能出现库存 pause，市场可能把短期增速放缓解读为 AI 订单不持续。
+- Renesas 交易规模大，12 亿美元可转债和 25 亿美元对价会带来资本结构、稀释和整合风险。
+
+### 10.3 本报告结论
+
+SITM 是 AI 数据中心 timing 产业链中最纯、弹性最高的上市标的之一。它的确定性来自 2025Q4-2026Q1 已经发生的 CED 收入跃迁、book-to-bill/backlog 线索和客户 forecast；它的想象力来自 Elite 2/TimeFabric 把 timing 与 GPU utilization 绑定，以及 Renesas timing acquisition 把产品面从 MEMS oscillator 扩到更完整 clock IC/network synchronizer。
+
+但投资判断必须把它放在“高质量公司 + 极高估值”的框架下。当前 49 倍 TTM P/S 和约 89 倍 forward P/E 已经不是普通半导体周期股估值，而是要求公司在未来 12-24 个月证明三件事：organic CED 年化收入继续上台阶，Elite 2/TimeFabric 从发布走向真实收入，Renesas 交易顺利 close 并维持高毛利。若三者中任何一个延迟，股价波动会很大。
+
+## 11. 本地资料与外部来源
+
+### 11.1 本地行业资料
+
+本报告只使用了项目内 `行业调研/` 下与 AI timing、AI 网络、光互联、AI 数据中心建设相关的资料，没有读取或引用 `特征量化/`，也没有读取其他目录下的研究报告。
+
+| 本地文件 | 用途 |
+|---|---|
+| `行业调研/AI服务器_存储_芯片/行业调研_精密时钟与同步芯片_2026-06-10.md` | AI 数据中心 timing 技术栈、产品矩阵、BOM、毛利率、供需和竞争格局 |
+| `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md` | 800G/1.6T 光模块放量、BOM、网络 timing 需求背景 |
+| `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md` | AI Ethernet fabric、switch/NIC/1.6T 网络对 timing 的需求 |
+| `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` | AI 数据中心 capex、rack/MW/GPU 等规模假设 |
+| `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md` | AI 产业链口径校验 |
+
+### 11.2 外部来源
+
+| 来源 | 日期 | 链接 | 用途 |
+|---|---:|---|---|
+| SiTime Q1 2026 financial results | 2026-05-07 | https://investor.sitime.com/news-releases/news-release-details/sitime-reports-first-quarter-2026-financial-results | Q1 收入、毛利率、现金、Q2 指引 |
+| SiTime Q1 2026 earnings transcript | 2026-05-08 | https://www.fool.com/earnings/call-transcripts/2026/05/08/sitime-sitm-q1-2026-earnings-transcript/ | CED/AIA/MIC 拆分、数据中心收入口径、订单可见度 |
+| SiTime Q4/FY2025 financial results | 2026-02-05 | https://investor.sitime.com/news-releases/news-release-details/sitime-reports-fourth-quarter-and-fiscal-year-2025-financial | 2025 全年收入、Q4 收入、毛利率 |
+| SiTime Q4 2025 earnings transcript | 2026-02-08 | https://www.fool.com/earnings/call-transcripts/2026/02/08/sitime-sitm-q4-2025-earnings-transcript/ | Q4 业务拆分、book-to-bill、backlog、AI 产品线索 |
+| SiTime Q3 2025 financial results | 2025-11-05 | https://investor.sitime.com/news-releases/news-release-details/sitime-reports-third-quarter-2025-financial-results | Q3 收入、毛利率、利润 |
+| SiTime Q3 2025 earnings transcript | 2025-11-06 | https://www.fool.com/earnings/call-transcripts/2025/11/06/sitime-sitm-q3-2025-earnings-call-transcript/ | Q3 业务拆分、1.6T 需求、客户 timing solutions |
+| SiTime Q2 2025 financial results | 2025-08-06 | https://investor.sitime.com/news-releases/news-release-details/sitime-reports-second-quarter-2025-financial-results | Q2 收入、毛利率、利润 |
+| SiTime Q2 2025 transcript | 2025-08-07 | https://stockanalysis.com/stocks/sitm/transcripts/343712-q2-2025/ | Q2 业务拆分、AI design wins |
+| SiTime Q1 2025 financial results | 2025-05-07 | https://investor.sitime.com/news-releases/news-release-details/sitime-reports-first-quarter-2025-financial-results | Q1 2025 收入、毛利率、利润 |
+| SiTime FY2025 10-K | 2026-02-25 | https://www.sec.gov/Archives/edgar/data/1451809/000145180926000012/sitm-20251231.htm | 公司产品、客户集中度、终端市场、财务历史 |
+| SiTime Elite 2 Super-TCXO press release | 2026-05-04 | https://investor.sitime.com/news-releases/news-release-details/sitime-boosts-gpu-utilization-ai-data-centers-elite-2-super-tcxo | Elite 2、1 ns、10 ns、2030 累计市场 15 亿美元、Q3 2026 量产 |
+| SiTime to acquire Renesas timing business | 2026-02-04 | https://investor.sitime.com/news-releases/news-release-details/sitime-acquire-renesas-timing-business | 收购价格、收入、毛利、客户和产品线 |
+| HSR waiting period expiration | 2026-05-11 | https://investor.sitime.com/news-releases/news-release-details/sitime-announces-expiration-hart-scott-rodino-waiting-period | Renesas 交易监管进展 |
+| SiTime 0% convertible notes pricing | 2026-05-19 | https://www.businesswire.com/news/home/20260519586624/en/SiTime-Corporation-Announces-Pricing-of-Upsized-Offering-of-%241.2-Billion-of-Convertible-Senior-Notes | 可转债融资和交易资金 |
+| Yahoo Finance SITM statistics | 2026-06-11 附近 | https://finance.yahoo.com/quote/SITM/key-statistics/ | forward P/E、利润率等市场统计交叉检查 |
+| StockAnalysis SITM statistics | 2026-06-11 附近 | https://stockanalysis.com/stocks/sitm/statistics/ | TTM 收入、增长、市场统计交叉检查 |
+| OCP Time Appliances Project | 2026-06-11 检索 | https://www.opencompute.org/projects/time-appliances-project-tap | OCP time card / time appliance / datacenter PTP 生态 |
+| NVIDIA ConnectX-7 documentation | 2026-06-11 检索 | https://docs.nvidia.com/networking/display/connectx7firmwarev28397024lts/changes%2Band%2Bnew%2Bfeatures | NIC 硬件 timing、PTP、timestamp、PPS 背景 |
+
+### 11.3 估算声明
+
+本报告中关于 AI 数据中心收入占比、每 GPU/rack/MW/optical port timing 内容量、产品级收入贡献、三情景预测和未来产能能力的数字均为研究估算，不是公司指引。公司正式披露数据仅包括总收入、终端市场收入、公司整体毛利率、现金/资产负债表、Q2 指引、Renesas 交易信息和少量订单/可见度定性表述。

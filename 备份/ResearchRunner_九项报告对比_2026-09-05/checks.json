@@ -1,0 +1,2903 @@
+{
+  "checks": [
+    {
+      "group": "structure",
+      "label": "1-new",
+      "h1": 1,
+      "localLinks": 0,
+      "missingLocal": [],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "1-old",
+      "h1": 1,
+      "localLinks": 20,
+      "missingLocal": [
+        {
+          "target": "../产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\行业调研_头部AI芯片全景与产能释放_2026-07-10.md"
+        },
+        {
+          "target": "../产业背景/AI产业链瓶颈与反证指标总表_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\AI产业链瓶颈与反证指标总表_2026-07-10.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/conference_update_fms_2026_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\conference_update_fms_2026_2026-08-18.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/isscc_2026_ai_ic_soc_research.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\isscc_2026_ai_ic_soc_research.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/chiplet_summit_2026_update.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\chiplet_summit_2026_update.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/conference_update_ectc_2026_2026-06-11.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\conference_update_ectc_2026_2026-06-11.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/conference_update_ieee_vlsi_symposium_2026_2026-06-20.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\conference_update_ieee_vlsi_symposium_2026_2026-06-20.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/conference_update_isca_2026_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\conference_update_isca_2026_2026-07-10.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/conference_update_dac_2026_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\conference_update_dac_2026_2026-08-18.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/conference_update_fms_2026_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\conference_update_fms_2026_2026-08-18.md"
+        },
+        {
+          "target": "../产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\行业调研_头部AI芯片全景与产能释放_2026-07-10.md"
+        },
+        {
+          "target": "../产业背景/AI产业链瓶颈与反证指标总表_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\AI产业链瓶颈与反证指标总表_2026-07-10.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/conference_update_fms_2026_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\conference_update_fms_2026_2026-08-18.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/nvidia_gtc_2026_research.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\nvidia_gtc_2026_research.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/isscc_2026_ai_ic_soc_research.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\isscc_2026_ai_ic_soc_research.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/conference_update_ieee_vlsi_symposium_2026_2026-06-20.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\conference_update_ieee_vlsi_symposium_2026_2026-06-20.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/conference_update_ectc_2026_2026-06-11.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\conference_update_ectc_2026_2026-06-11.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/conference_update_isca_2026_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\conference_update_isca_2026_2026-07-10.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/conference_update_dac_2026_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\conference_update_dac_2026_2026-08-18.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/chiplet_summit_2026_update.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\chiplet_summit_2026_update.md"
+        }
+      ],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "2-new",
+      "h1": 1,
+      "localLinks": 0,
+      "missingLocal": [],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "2-old",
+      "h1": 1,
+      "localLinks": 1,
+      "missingLocal": [
+        {
+          "target": "../产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\行业调研_头部AI芯片全景与产能释放_2026-07-10.md"
+        }
+      ],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "3-new",
+      "h1": 1,
+      "localLinks": 4,
+      "missingLocal": [],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "3-old",
+      "h1": 1,
+      "localLinks": 7,
+      "missingLocal": [
+        {
+          "target": "../产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\行业调研_头部AI芯片全景与产能释放_2026-07-10.md"
+        },
+        {
+          "target": "../产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md"
+        },
+        {
+          "target": "../产业背景/全球AI需求与Token经济框架_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\全球AI需求与Token经济框架_2026-07-10.md"
+        },
+        {
+          "target": "../产业背景/AI产业链瓶颈与反证指标总表_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\AI产业链瓶颈与反证指标总表_2026-07-10.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/data_center_world_2026_research_report.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\data_center_world_2026_research_report.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/OCP_EMEA_Summit_2026_高密度调研报告.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\OCP_EMEA_Summit_2026_高密度调研报告.md"
+        },
+        {
+          "target": "../产业背景/顶级会议信息/xcelerated_compute_show_2026_report.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\备份\\产业背景\\顶级会议信息\\xcelerated_compute_show_2026_report.md"
+        }
+      ],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "4-new",
+      "h1": 1,
+      "localLinks": 5,
+      "missingLocal": [],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "4-old",
+      "h1": 1,
+      "localLinks": 7,
+      "missingLocal": [
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI服务器_存储_芯片\\行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI服务器_存储_芯片\\行业调研_AI集群调度与推理运行时_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV_Cache基础设施_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI服务器_存储_芯片\\行业调研_AI-native存储与KV_Cache基础设施_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI服务器_存储_芯片\\行业调研_AI服务器整机与机架集成_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI网络_光互联_铜互联/行业调研_InfiniBand与专有Scale-up互联_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI网络_光互联_铜互联\\行业调研_InfiniBand与专有Scale-up互联_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI网络_光互联_铜互联\\行业调研_AI以太网交换系统与Fabric芯片_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI网络_光互联_铜互联\\行业调研_800G_1.6T可插拔光模块_2026-08-18.md"
+        }
+      ],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "5-new",
+      "h1": 1,
+      "localLinks": 10,
+      "missingLocal": [],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "5-old",
+      "h1": 1,
+      "localLinks": 16,
+      "missingLocal": [
+        {
+          "target": "../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\产业背景\\行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md"
+        },
+        {
+          "target": "../../行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\产业背景\\行业调研_头部AI芯片全景与产能释放_2026-07-10.md"
+        },
+        {
+          "target": "../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI网络_光互联_铜互联\\行业调研_800G_1.6T可插拔光模块_2026-07-10.md"
+        },
+        {
+          "target": "../../行业调研/AI网络_光互联_铜互联/行业调研_OCS光路交换_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI网络_光互联_铜互联\\行业调研_OCS光路交换_2026-07-10.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI服务器_存储_芯片\\行业调研_HBM与高带宽内存_2026-07-10.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI服务器_存储_芯片\\行业调研_AI集群调度与推理运行时_2026-07-10.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI服务器_存储_芯片\\行业调研_云厂自研AI ASIC_2026-07-10.md"
+        },
+        {
+          "target": "../../行业调研/AI网络_光互联_铜互联/行业调研_InfiniBand与专有Scale-up互联_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI网络_光互联_铜互联\\行业调研_InfiniBand与专有Scale-up互联_2026-07-10.md"
+        },
+        {
+          "target": "../../行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\产业背景\\行业调研_头部AI芯片全景与产能释放_2026-07-10.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI服务器_存储_芯片\\行业调研_云厂自研AI ASIC_2026-07-10.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI服务器_存储_芯片\\行业调研_AI集群调度与推理运行时_2026-07-10.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI服务器_存储_芯片\\行业调研_HBM与高带宽内存_2026-07-10.md"
+        },
+        {
+          "target": "../../行业调研/AI网络_光互联_铜互联/行业调研_InfiniBand与专有Scale-up互联_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI网络_光互联_铜互联\\行业调研_InfiniBand与专有Scale-up互联_2026-07-10.md"
+        },
+        {
+          "target": "../../行业调研/AI网络_光互联_铜互联/行业调研_OCS光路交换_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI网络_光互联_铜互联\\行业调研_OCS光路交换_2026-07-10.md"
+        },
+        {
+          "target": "../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\AI网络_光互联_铜互联\\行业调研_800G_1.6T可插拔光模块_2026-07-10.md"
+        },
+        {
+          "target": "../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\云算力_IDC_AI软件平台\\行业调研\\产业背景\\行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md"
+        }
+      ],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "6-new",
+      "h1": 1,
+      "localLinks": 7,
+      "missingLocal": [],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "6-old",
+      "h1": 1,
+      "localLinks": 11,
+      "missingLocal": [
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\行业调研\\AI服务器_存储_芯片\\行业调研_HBM与高带宽内存_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_系统内存、SOCAMM与内存模组_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\行业调研\\AI服务器_存储_芯片\\行业调研_系统内存、SOCAMM与内存模组_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\行业调研\\AI服务器_存储_芯片\\行业调研_企业级SSD与高速存储控制器_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV_Cache基础设施_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\行业调研\\AI服务器_存储_芯片\\行业调研_AI-native存储与KV_Cache基础设施_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\行业调研\\AI服务器_存储_芯片\\行业调研_AI服务器整机与机架集成_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\行业调研\\AI服务器_存储_芯片\\行业调研_HBM与高带宽内存_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_系统内存、SOCAMM与内存模组_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\行业调研\\AI服务器_存储_芯片\\行业调研_系统内存、SOCAMM与内存模组_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\行业调研\\AI服务器_存储_芯片\\行业调研_企业级SSD与高速存储控制器_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV_Cache基础设施_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\行业调研\\AI服务器_存储_芯片\\行业调研_AI-native存储与KV_Cache基础设施_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_CXL内存扩展与内存池化_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\行业调研\\AI服务器_存储_芯片\\行业调研_CXL内存扩展与内存池化_2026-08-18.md"
+        },
+        {
+          "target": "../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\行业调研\\AI服务器_存储_芯片\\行业调研_AI服务器整机与机架集成_2026-08-18.md"
+        }
+      ],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "7-new",
+      "h1": 1,
+      "localLinks": 7,
+      "missingLocal": [],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "7-old",
+      "h1": 1,
+      "localLinks": 0,
+      "missingLocal": [],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "8-new",
+      "h1": 1,
+      "localLinks": 9,
+      "missingLocal": [],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "8-old",
+      "h1": 1,
+      "localLinks": 7,
+      "missingLocal": [
+        {
+          "target": "../../../金融资料/每日金融数据/每日金融数据_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\金融资料\\每日金融数据\\每日金融数据_2026-08-18.md"
+        },
+        {
+          "target": "../../../金融资料/市场状态/美国股票市场状态快照_2026-08-19.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\金融资料\\市场状态\\美国股票市场状态快照_2026-08-19.md"
+        },
+        {
+          "target": "../../../基本面/公司调研/云算力_IDC_AI软件平台/CRWV_CoreWeave_公司调研_2026-08-19.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\基本面\\公司调研\\云算力_IDC_AI软件平台\\CRWV_CoreWeave_公司调研_2026-08-19.md"
+        },
+        {
+          "target": "../../../基本面/行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-08-18.md"
+        },
+        {
+          "target": "../../公司评估/结果/CRWV_CoreWeave_收入传导估值评估_2026-08-19.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\公司评估\\结果\\CRWV_CoreWeave_收入传导估值评估_2026-08-19.md"
+        },
+        {
+          "target": "../../../金融资料/每日金融数据/每日金融数据_2026-08-18.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\金融资料\\每日金融数据\\每日金融数据_2026-08-18.md"
+        },
+        {
+          "target": "../../../金融资料/市场状态/美国股票市场状态快照_2026-08-19.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\金融资料\\市场状态\\美国股票市场状态快照_2026-08-19.md"
+        }
+      ],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "9-new",
+      "h1": 1,
+      "localLinks": 4,
+      "missingLocal": [],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "structure",
+      "label": "9-old",
+      "h1": 1,
+      "localLinks": 18,
+      "missingLocal": [
+        {
+          "target": "../../../日度资料/每日金融数据/每日金融数据_2026-07-17.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\日度资料\\每日金融数据\\每日金融数据_2026-07-17.md"
+        },
+        {
+          "target": "../../../公司调研/云算力_IDC_AI软件平台/GOOGL_Alphabet_Inc_公司调研_2026-07-18.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\公司调研\\云算力_IDC_AI软件平台\\GOOGL_Alphabet_Inc_公司调研_2026-07-18.md"
+        },
+        {
+          "target": "../../公司评估/结果/GOOGL_Alphabet_Inc_收入传导估值评估_2026-07-18.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\公司评估\\结果\\GOOGL_Alphabet_Inc_收入传导估值评估_2026-07-18.md"
+        },
+        {
+          "target": "../../../公司调研/云算力_IDC_AI软件平台/GOOGL_Alphabet_Inc_公司调研_2026-07-18.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\公司调研\\云算力_IDC_AI软件平台\\GOOGL_Alphabet_Inc_公司调研_2026-07-18.md"
+        },
+        {
+          "target": "../../../行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\行业调研\\AI服务器_存储_芯片\\行业调研_云厂自研AI ASIC_2026-07-10.md"
+        },
+        {
+          "target": "../../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\行业调研\\AI服务器_存储_芯片\\行业调研_HBM与高带宽内存_2026-07-10.md"
+        },
+        {
+          "target": "../../../行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\行业调研\\AI服务器_存储_芯片\\行业调研_AI集群调度与推理运行时_2026-07-10.md"
+        },
+        {
+          "target": "../../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\行业调研\\AI网络_光互联_铜互联\\行业调研_800G_1.6T可插拔光模块_2026-07-10.md"
+        },
+        {
+          "target": "../../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\行业调研\\产业背景\\行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md"
+        },
+        {
+          "target": "../../../公司调研/云算力_IDC_AI软件平台/GOOGL_Alphabet_Inc_公司调研_2026-07-18.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\公司调研\\云算力_IDC_AI软件平台\\GOOGL_Alphabet_Inc_公司调研_2026-07-18.md"
+        },
+        {
+          "target": "../../公司评估/结果/GOOGL_Alphabet_Inc_收入传导估值评估_2026-07-18.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\公司评估\\结果\\GOOGL_Alphabet_Inc_收入传导估值评估_2026-07-18.md"
+        },
+        {
+          "target": "../../../日度资料/每日金融数据/每日金融数据_2026-07-17.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\日度资料\\每日金融数据\\每日金融数据_2026-07-17.md"
+        },
+        {
+          "target": "../../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\行业调研\\产业背景\\行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md"
+        },
+        {
+          "target": "../../../行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\行业调研\\AI服务器_存储_芯片\\行业调研_云厂自研AI ASIC_2026-07-10.md"
+        },
+        {
+          "target": "../../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\行业调研\\AI服务器_存储_芯片\\行业调研_HBM与高带宽内存_2026-07-10.md"
+        },
+        {
+          "target": "../../../行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\行业调研\\AI服务器_存储_芯片\\行业调研_AI集群调度与推理运行时_2026-07-10.md"
+        },
+        {
+          "target": "../../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\行业调研\\AI网络_光互联_铜互联\\行业调研_800G_1.6T可插拔光模块_2026-07-10.md"
+        },
+        {
+          "target": "../../../行业调研/AI网络_光互联_铜互联/行业调研_OCS光路交换_2026-07-10.md",
+          "resolved": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\行业调研\\AI网络_光互联_铜互联\\行业调研_OCS光路交换_2026-07-10.md"
+        }
+      ],
+      "unresolvedReferences": [],
+      "placeholderHits": 0
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "悲观/低/0",
+      "actual": 29.97,
+      "expected": 29.97,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "悲观/低/1",
+      "actual": 25.59,
+      "expected": 25.589999999999996,
+      "error": 3.552713678800501e-15,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "悲观/低/2",
+      "actual": 30.87,
+      "expected": 30.871999999999986,
+      "error": -0.0019999999999846807,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "悲观/低/3",
+      "actual": 37.58,
+      "expected": 37.58,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "悲观/高/0",
+      "actual": 59.46,
+      "expected": 59.459999999999994,
+      "error": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "悲观/高/1",
+      "actual": 60.31,
+      "expected": 60.31199999999998,
+      "error": -0.001999999999981128,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "悲观/高/2",
+      "actual": 66.13,
+      "expected": 66.134,
+      "error": -0.0040000000000048885,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "悲观/高/3",
+      "actual": 74.74,
+      "expected": 74.74399999999999,
+      "error": -0.003999999999990678,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "基准/低/0",
+      "actual": 96.53,
+      "expected": 96.53,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "基准/低/1",
+      "actual": 99.84,
+      "expected": 99.84199999999998,
+      "error": -0.001999999999981128,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "基准/低/2",
+      "actual": 103.22,
+      "expected": 103.22,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "基准/低/3",
+      "actual": 108.03,
+      "expected": 108.03299999999999,
+      "error": -0.002999999999985903,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "基准/高/0",
+      "actual": 129.51,
+      "expected": 129.51,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "基准/高/1",
+      "actual": 147.25,
+      "expected": 147.254,
+      "error": -0.003999999999990678,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "基准/高/2",
+      "actual": 159.65,
+      "expected": 159.652,
+      "error": -0.001999999999981128,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "基准/高/3",
+      "actual": 172.23,
+      "expected": 172.23,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "乐观/低/0",
+      "actual": 135.47,
+      "expected": 135.475,
+      "error": -0.0049999999999954525,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "乐观/低/1",
+      "actual": 153.15,
+      "expected": 153.146,
+      "error": 0.004000000000019099,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "乐观/低/2",
+      "actual": 170.14,
+      "expected": 170.136,
+      "error": 0.003999999999990678,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "乐观/低/3",
+      "actual": 180.32,
+      "expected": 180.32,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "乐观/高/0",
+      "actual": 165.89,
+      "expected": 165.88799999999998,
+      "error": 0.0020000000000095497,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "乐观/高/1",
+      "actual": 191.85,
+      "expected": 191.85000000000002,
+      "error": -2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "乐观/高/2",
+      "actual": 218.07,
+      "expected": 218.07399999999996,
+      "error": -0.003999999999962256,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "乐观/高/3",
+      "actual": 234.06,
+      "expected": 234.06399999999996,
+      "error": -0.003999999999962256,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "突破/低/0",
+      "actual": 164.15,
+      "expected": 164.14899999999997,
+      "error": 0.0010000000000331966,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "突破/低/1",
+      "actual": 186.53,
+      "expected": 186.52999999999997,
+      "error": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "突破/低/2",
+      "actual": 214.76,
+      "expected": 214.75599999999997,
+      "error": 0.004000000000019099,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "突破/低/3",
+      "actual": 233.26,
+      "expected": 233.25599999999997,
+      "error": 0.004000000000019099,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "突破/高/0",
+      "actual": 206.6,
+      "expected": 206.59999999999997,
+      "error": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "突破/高/1",
+      "actual": 248.41,
+      "expected": 248.40799999999996,
+      "error": 0.0020000000000379714,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "突破/高/2",
+      "actual": 283.91,
+      "expected": 283.909,
+      "error": 0.0010000000000331966,
+      "pass": true
+    },
+    {
+      "group": "MU-long-FCFF",
+      "label": "突破/高/3",
+      "actual": 310.98,
+      "expected": 310.97999999999996,
+      "error": 5.684341886080802e-14,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "悲观 / 受损 低/0",
+      "actual": -2.29,
+      "expected": -2.2949999999999995,
+      "error": 0.004999999999999449,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "悲观 / 受损 低/1",
+      "actual": 0.13,
+      "expected": 0.12750000000000056,
+      "error": 0.002499999999999447,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "悲观 / 受损 低/2",
+      "actual": 0.81,
+      "expected": 0.8099999999999987,
+      "error": 1.3322676295501878e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "悲观 / 受损 低/3",
+      "actual": -0.18,
+      "expected": -0.1750000000000007,
+      "error": -0.004999999999999283,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "悲观 / 受损 高/0",
+      "actual": -1.92,
+      "expected": -1.925,
+      "error": 0.0050000000000001155,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "悲观 / 受损 高/1",
+      "actual": 1.21,
+      "expected": 1.2150000000000005,
+      "error": -0.0050000000000005596,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "悲观 / 受损 高/2",
+      "actual": 1.92,
+      "expected": 1.920000000000001,
+      "error": -1.1102230246251565e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "悲观 / 受损 高/3",
+      "actual": 1.98,
+      "expected": 1.9800000000000018,
+      "error": -1.7763568394002505e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "基准 / 正常兑现 低/0",
+      "actual": -6.55,
+      "expected": -6.549999999999999,
+      "error": -8.881784197001252e-16,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "基准 / 正常兑现 低/1",
+      "actual": -3.96,
+      "expected": -3.965,
+      "error": 0.004999999999999893,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "基准 / 正常兑现 低/2",
+      "actual": -0.54,
+      "expected": -0.5374999999999993,
+      "error": -0.002500000000000724,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "基准 / 正常兑现 低/3",
+      "actual": 3.23,
+      "expected": 3.230000000000005,
+      "error": -4.884981308350689e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "基准 / 正常兑现 高/0",
+      "actual": -4.59,
+      "expected": -4.589999999999998,
+      "error": -1.7763568394002505e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "基准 / 正常兑现 高/1",
+      "actual": -0.78,
+      "expected": -0.7825000000000003,
+      "error": 0.0025000000000002798,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "基准 / 正常兑现 高/2",
+      "actual": 4.05,
+      "expected": 4.050000000000002,
+      "error": -1.7763568394002505e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "基准 / 正常兑现 高/3",
+      "actual": 8.35,
+      "expected": 8.349999999999998,
+      "error": 1.7763568394002505e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "乐观 / 超预期 低/0",
+      "actual": -6.65,
+      "expected": -6.65,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "乐观 / 超预期 低/1",
+      "actual": -1.59,
+      "expected": -1.5925000000000011,
+      "error": 0.002500000000001057,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "乐观 / 超预期 低/2",
+      "actual": 3.8,
+      "expected": 3.800000000000003,
+      "error": -3.1086244689504383e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "乐观 / 超预期 低/3",
+      "actual": 8.6,
+      "expected": 8.600000000000005,
+      "error": -5.329070518200751e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "乐观 / 超预期 高/0",
+      "actual": -6.1,
+      "expected": -6.100000000000001,
+      "error": 1.7763568394002505e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "乐观 / 超预期 高/1",
+      "actual": 0.4,
+      "expected": 0.4000000000000057,
+      "error": -5.662137425588298e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "乐观 / 超预期 高/2",
+      "actual": 7.12,
+      "expected": 7.1225000000000005,
+      "error": -0.002500000000000391,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "乐观 / 超预期 高/3",
+      "actual": 13.42,
+      "expected": 13.419999999999995,
+      "error": 5.329070518200751e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "突破 / 非线性 低/0",
+      "actual": -8.23,
+      "expected": -8.23,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "突破 / 非线性 低/1",
+      "actual": -2.45,
+      "expected": -2.45,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "突破 / 非线性 低/2",
+      "actual": 5.13,
+      "expected": 5.1299999999999955,
+      "error": 4.440892098500626e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "突破 / 非线性 低/3",
+      "actual": 10.81,
+      "expected": 10.812499999999998,
+      "error": -0.0024999999999977263,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "突破 / 非线性 高/0",
+      "actual": -7.3,
+      "expected": -7.300000000000002,
+      "error": 1.7763568394002505e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "突破 / 非线性 高/1",
+      "actual": -0.22,
+      "expected": -0.22000000000000453,
+      "error": 4.524158825347513e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "突破 / 非线性 高/2",
+      "actual": 8.7,
+      "expected": 8.700000000000003,
+      "error": -3.552713678800501e-15,
+      "pass": true
+    },
+    {
+      "group": "CRWV-long-FCFF",
+      "label": "突破 / 非线性 高/3",
+      "actual": 18.9,
+      "expected": 18.900000000000013,
+      "error": -1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "P/Y1",
+      "actual": -2.2,
+      "expected": -2.1999999999999886,
+      "error": -1.1546319456101628e-14,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "P/Y1",
+      "actual": 550,
+      "expected": 550,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "P/Y2",
+      "actual": 36.4,
+      "expected": 36.400000000000006,
+      "error": -7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "P/Y2",
+      "actual": 560,
+      "expected": 560,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "P/Y3",
+      "actual": 62.8,
+      "expected": 62.80000000000001,
+      "error": -1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "P/Y3",
+      "actual": 590,
+      "expected": 590,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "P/Y4",
+      "actual": 79.3,
+      "expected": 79.30000000000001,
+      "error": -1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "P/Y4",
+      "actual": 620,
+      "expected": 620,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "B/Y1",
+      "actual": 22.1,
+      "expected": 22.100000000000023,
+      "error": -2.1316282072803006e-14,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "B/Y1",
+      "actual": 725,
+      "expected": 725,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "B/Y2",
+      "actual": 68,
+      "expected": 68,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "B/Y2",
+      "actual": 820,
+      "expected": 820,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "B/Y3",
+      "actual": 126.7,
+      "expected": 126.69999999999999,
+      "error": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "B/Y3",
+      "actual": 905,
+      "expected": 905,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "B/Y4",
+      "actual": 175.7,
+      "expected": 175.7,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "B/Y4",
+      "actual": 985,
+      "expected": 985,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "O/Y1",
+      "actual": 43,
+      "expected": 43,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "O/Y1",
+      "actual": 830,
+      "expected": 830,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "O/Y2",
+      "actual": 128.5,
+      "expected": 128.5,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "O/Y2",
+      "actual": 1000,
+      "expected": 1000,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "O/Y3",
+      "actual": 228,
+      "expected": 228,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "O/Y3",
+      "actual": 1160,
+      "expected": 1160,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "O/Y4",
+      "actual": 309.4,
+      "expected": 309.4,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "O/Y4",
+      "actual": 1300,
+      "expected": 1300,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "X/Y1",
+      "actual": 70.4,
+      "expected": 70.39999999999998,
+      "error": 2.842170943040401e-14,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "X/Y1",
+      "actual": 980,
+      "expected": 980,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "X/Y2",
+      "actual": 195.2,
+      "expected": 195.20000000000005,
+      "error": -5.684341886080802e-14,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "X/Y2",
+      "actual": 1220,
+      "expected": 1220,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "X/Y3",
+      "actual": 336.8,
+      "expected": 336.79999999999995,
+      "error": 5.684341886080802e-14,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "X/Y3",
+      "actual": 1460,
+      "expected": 1460,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-long-FCFF",
+      "label": "X/Y4",
+      "actual": 458.4,
+      "expected": 458.4,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-revenue-sum",
+      "label": "X/Y4",
+      "actual": 1670,
+      "expected": 1670,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "悲观/宽基/0",
+      "actual": -49.8,
+      "expected": -49.79590969003784,
+      "error": -0.004090309962158756,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "悲观/宽基/1",
+      "actual": 21.6,
+      "expected": 21.60380968578596,
+      "error": -0.003809685785959971,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "悲观/主题/0",
+      "actual": -52.3,
+      "expected": -52.27263063905778,
+      "error": -0.02736936094221676,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "悲观/主题/1",
+      "actual": 31.6,
+      "expected": 31.59573111101663,
+      "error": 0.004268888983371966,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "悲观/震荡/0",
+      "actual": -56.5,
+      "expected": -56.47136357838344,
+      "error": -0.02863642161656088,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "悲观/震荡/1",
+      "actual": 11.6,
+      "expected": 11.611888260555297,
+      "error": -0.011888260555297236,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "悲观/收缩/0",
+      "actual": -62.7,
+      "expected": -62.732259024618386,
+      "error": 0.03225902461838359,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "悲观/收缩/1",
+      "actual": -8.4,
+      "expected": -8.371954589906032,
+      "error": -0.028045410093968215,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "悲观/压力/0",
+      "actual": -70.5,
+      "expected": -70.49194268463795,
+      "error": -0.008057315362052009,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "悲观/压力/1",
+      "actual": -28.4,
+      "expected": -28.355797440367365,
+      "error": -0.044202559632633864,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "基准/宽基/0",
+      "actual": 10.1,
+      "expected": 10.113100046770683,
+      "error": -0.013100046770682994,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "基准/宽基/1",
+      "actual": 169.9,
+      "expected": 169.88817551766658,
+      "error": 0.011824482333423703,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "基准/主题/0",
+      "actual": 10.1,
+      "expected": 10.113100046770683,
+      "error": -0.013100046770682994,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "基准/主题/1",
+      "actual": 195.7,
+      "expected": 195.69709596496446,
+      "error": 0.002904035035527386,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "基准/震荡/0",
+      "actual": -2.1,
+      "expected": -2.1216888473149287,
+      "error": 0.021688847314928594,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "基准/震荡/1",
+      "actual": 130.2,
+      "expected": 130.19686211148434,
+      "error": 0.003137888515652776,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "基准/收缩/0",
+      "actual": -14.3,
+      "expected": -14.345848037756701,
+      "error": 0.04584803775670032,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "基准/收缩/1",
+      "actual": 78.9,
+      "expected": 78.86602321527275,
+      "error": 0.03397678472725829,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "基准/压力/0",
+      "actual": -38.8,
+      "expected": -38.80479612228411,
+      "error": 0.004796122284112414,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "基准/压力/1",
+      "actual": 35.4,
+      "expected": 35.41179471916321,
+      "error": -0.01179471916321262,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "乐观/宽基/0",
+      "actual": 35.9,
+      "expected": 35.87950167949317,
+      "error": 0.020498320506831647,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "乐观/宽基/1",
+      "actual": 295.7,
+      "expected": 295.64819932820274,
+      "error": 0.05180067179725256,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "乐观/主题/0",
+      "actual": 35.9,
+      "expected": 35.87950167949317,
+      "error": 0.020498320506831647,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "乐观/主题/1",
+      "actual": 338.4,
+      "expected": 338.40086738381734,
+      "error": -0.0008673838173649528,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "乐观/震荡/0",
+      "actual": 20.7,
+      "expected": 20.68965517241378,
+      "error": 0.010344827586219907,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "乐观/震荡/1",
+      "actual": 231.6,
+      "expected": 231.5510863557124,
+      "error": 0.04891364428758038,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "乐观/收缩/0",
+      "actual": 5.5,
+      "expected": 5.499808665334411,
+      "error": 0.00019133466558862722,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "乐观/收缩/1",
+      "actual": 151.5,
+      "expected": 151.50941791742844,
+      "error": -0.00941791742843634,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "乐观/压力/0",
+      "actual": -24.9,
+      "expected": -24.879884348824348,
+      "error": -0.02011565117565084,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "乐观/压力/1",
+      "actual": 86.1,
+      "expected": 86.13674050767463,
+      "error": -0.03674050767463655,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "突破/宽基/0",
+      "actual": 58.7,
+      "expected": 58.74399421744121,
+      "error": -0.04399421744120957,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "突破/宽基/1",
+      "actual": 452,
+      "expected": 451.95799141119943,
+      "error": 0.042008588800570124,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "突破/主题/0",
+      "actual": 58.7,
+      "expected": 58.74399421744121,
+      "error": -0.04399421744120957,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "突破/主题/1",
+      "actual": 513.1,
+      "expected": 513.100046770696,
+      "error": -0.00004677069603076234,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "突破/震荡/0",
+      "actual": 40.9,
+      "expected": 40.85420298482077,
+      "error": 0.0457970151792253,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "突破/震荡/1",
+      "actual": 360.3,
+      "expected": 360.3193162974616,
+      "error": -0.01931629746161434,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "突破/收缩/0",
+      "actual": 23,
+      "expected": 22.9750414558442,
+      "error": 0.02495854415580112,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "突破/收缩/1",
+      "actual": 246,
+      "expected": 246.0074833113653,
+      "error": -0.007483311365291456,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "突破/压力/0",
+      "actual": -12.8,
+      "expected": -12.793911305752797,
+      "error": -0.006088694247203819,
+      "pass": true
+    },
+    {
+      "group": "MU-20-returns",
+      "label": "突破/压力/1",
+      "actual": 152.9,
+      "expected": 152.85939028019897,
+      "error": 0.04060971980104,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "P-W 悲观 / 受损 × 宽基风险扩张/0",
+      "actual": -88.1,
+      "expected": -88.07088901801278,
+      "error": -0.029110981987216178,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "P-W 悲观 / 受损 × 宽基风险扩张/1",
+      "actual": -54.6,
+      "expected": -54.601975595583966,
+      "error": 0.001975595583964207,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "P-T 悲观 / 受损 × 窄幅/主题主导上涨/0",
+      "actual": -89.1,
+      "expected": -89.08773968622894,
+      "error": -0.012260313771051301,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "P-T 悲观 / 受损 × 窄幅/主题主导上涨/1",
+      "actual": -51,
+      "expected": -50.9994189424753,
+      "error": -0.0005810575246982808,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "P-R 悲观 / 受损 × 震荡/均值回归/0",
+      "actual": -89.9,
+      "expected": -89.95932597327135,
+      "error": 0.059325973271342036,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "P-R 悲观 / 受损 × 震荡/均值回归/1",
+      "actual": -62.2,
+      "expected": -62.24288204532248,
+      "error": 0.042882045322478746,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "P-C 悲观 / 受损 × 有序风险收缩/0",
+      "actual": -92.6,
+      "expected": -92.54503195816385,
+      "error": -0.05496804183614756,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "P-C 悲观 / 受损 × 有序风险收缩/1",
+      "actual": -72.8,
+      "expected": -72.76002324230099,
+      "error": -0.03997675769900866,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "P-L 悲观 / 受损 × 流动性/信用压力/0",
+      "actual": -94.6,
+      "expected": -94.6077861708309,
+      "error": 0.007786170830911487,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "P-L 悲观 / 受损 × 流动性/信用压力/1",
+      "actual": -78.2,
+      "expected": -78.22196397443348,
+      "error": 0.02196397443347564,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "B-W 基准 / 正常兑现 × 宽基风险扩张/0",
+      "actual": -56.1,
+      "expected": -56.077861708309115,
+      "error": -0.022138291690886547,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "B-W 基准 / 正常兑现 × 宽基风险扩张/1",
+      "actual": 2.1,
+      "expected": 2.1150493898896077,
+      "error": -0.015049389889607578,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "B-T 基准 / 正常兑现 × 窄幅/主题主导上涨/0",
+      "actual": -59.7,
+      "expected": -59.70947123765252,
+      "error": 0.009471237652519449,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "B-T 基准 / 正常兑现 × 窄幅/主题主导上涨/1",
+      "actual": 9.4,
+      "expected": 9.378268448576419,
+      "error": 0.021731551423581408,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "B-R 基准 / 正常兑现 × 震荡/均值回归/0",
+      "actual": -62.8,
+      "expected": -62.81812899477048,
+      "error": 0.018128994770485463,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "B-R 基准 / 正常兑现 × 震荡/均值回归/1",
+      "actual": -13.5,
+      "expected": -13.544450900639166,
+      "error": 0.044450900639166235,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "B-C 基准 / 正常兑现 × 有序风险收缩/0",
+      "actual": -71.8,
+      "expected": -71.76641487507263,
+      "error": -0.0335851249273702,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "B-C 基准 / 正常兑现 × 有序风险收缩/1",
+      "actual": -35.1,
+      "expected": -35.10168506682162,
+      "error": 0.0016850668216150666,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "B-L 基准 / 正常兑现 × 流动性/信用压力/0",
+      "actual": -78.5,
+      "expected": -78.506682161534,
+      "error": 0.006682161534001807,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "B-L 基准 / 正常兑现 × 流动性/信用压力/1",
+      "actual": -49.9,
+      "expected": -49.91865194654271,
+      "error": 0.018651946542711073,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "O-W 乐观 / 超预期 × 宽基风险扩张/0",
+      "actual": -12.3,
+      "expected": -12.353282975014523,
+      "error": 0.05328297501452184,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "O-W 乐观 / 超预期 × 宽基风险扩张/1",
+      "actual": 74.8,
+      "expected": 74.83439860546194,
+      "error": -0.03439860546194495,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "O-T 乐观 / 超预期 × 窄幅/主题主导上涨/0",
+      "actual": -20.1,
+      "expected": -20.110400929692034,
+      "error": 0.010400929692032435,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "O-T 乐观 / 超预期 × 窄幅/主题主导上涨/1",
+      "actual": 86.1,
+      "expected": 86.04880883207437,
+      "error": 0.05119116792562295,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "O-R 乐观 / 超预期 × 震荡/均值回归/0",
+      "actual": -26.7,
+      "expected": -26.705403834979663,
+      "error": 0.005403834979663458,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "O-R 乐观 / 超预期 × 震荡/均值回归/1",
+      "actual": 50.4,
+      "expected": 50.4009296920395,
+      "error": -0.0009296920394987751,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "O-C 乐观 / 超预期 × 有序风险收缩/0",
+      "actual": -45.2,
+      "expected": -45.18303312027891,
+      "error": -0.016966879721096007,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "O-C 乐观 / 超预期 × 有序风险收缩/1",
+      "actual": 16.7,
+      "expected": 16.670540383497965,
+      "error": 0.029459616502034436,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "O-L 乐观 / 超预期 × 流动性/信用压力/0",
+      "actual": -58.8,
+      "expected": -58.750726321905866,
+      "error": -0.04927367809413141,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "O-L 乐观 / 超预期 × 流动性/信用压力/1",
+      "actual": -7,
+      "expected": -7.036606624055773,
+      "error": 0.036606624055773196,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "X-W 突破 / 非线性 × 宽基风险扩张/0",
+      "actual": 25.4,
+      "expected": 25.3573503776874,
+      "error": 0.04264962231259872,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "X-W 突破 / 非线性 × 宽基风险扩张/1",
+      "actual": 166.4,
+      "expected": 166.38001162115052,
+      "error": 0.019988378849490118,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "X-T 突破 / 非线性 × 窄幅/主题主导上涨/0",
+      "actual": 14.2,
+      "expected": 14.230098779779205,
+      "error": -0.030098779779205387,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "X-T 突破 / 非线性 × 窄幅/主题主导上涨/1",
+      "actual": 182.7,
+      "expected": 182.6786751888437,
+      "error": 0.02132481115629048,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "X-R 突破 / 非线性 × 震荡/均值回归/0",
+      "actual": 4.8,
+      "expected": 4.7879140034863505,
+      "error": 0.012085996513649278,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "X-R 突破 / 非线性 × 震荡/均值回归/1",
+      "actual": 130.6,
+      "expected": 130.58686809994188,
+      "error": 0.013131900058112933,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "X-C 突破 / 非线性 × 有序风险收缩/0",
+      "actual": -21.7,
+      "expected": -21.708309122603133,
+      "error": 0.008309122603133545,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "X-C 突破 / 非线性 × 有序风险收缩/1",
+      "actual": 81.2,
+      "expected": 81.16792562463687,
+      "error": 0.03207437536313762,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "X-L 突破 / 非线性 × 流动性/信用压力/0",
+      "actual": -41.1,
+      "expected": -41.14468332364905,
+      "error": 0.04468332364904626,
+      "pass": true
+    },
+    {
+      "group": "GOOGL-20-returns",
+      "label": "X-L 突破 / 非线性 × 流动性/信用压力/1",
+      "actual": 46.1,
+      "expected": 46.04299825682743,
+      "error": 0.05700174317257023,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "悲观 / 受损/宽基风险扩张/0",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "悲观 / 受损/宽基风险扩张/1",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "悲观 / 受损/窄幅 / 主题主导上涨/0",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "悲观 / 受损/窄幅 / 主题主导上涨/1",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "悲观 / 受损/震荡 / 均值回归/0",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "悲观 / 受损/震荡 / 均值回归/1",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "悲观 / 受损/有序风险收缩/0",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "悲观 / 受损/有序风险收缩/1",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "悲观 / 受损/流动性 / 信用压力/0",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "悲观 / 受损/流动性 / 信用压力/1",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "基准 / 正常兑现/宽基风险扩张/0",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "基准 / 正常兑现/宽基风险扩张/1",
+      "actual": 20,
+      "expected": 20.21036814425244,
+      "error": -0.21036814425243833,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "基准 / 正常兑现/窄幅 / 主题主导上涨/0",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "基准 / 正常兑现/窄幅 / 主题主导上涨/1",
+      "actual": 39,
+      "expected": 39.27229794998389,
+      "error": -0.2722979499838871,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "基准 / 正常兑现/震荡 / 均值回归/0",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "基准 / 正常兑现/震荡 / 均值回归/1",
+      "actual": -24,
+      "expected": -23.95620908017603,
+      "error": -0.04379091982396943,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "基准 / 正常兑现/有序风险收缩/0",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "基准 / 正常兑现/有序风险收缩/1",
+      "actual": -64,
+      "expected": -63.52903295052056,
+      "error": -0.4709670494794409,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "基准 / 正常兑现/流动性 / 信用压力/0",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "基准 / 正常兑现/流动性 / 信用压力/1",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "乐观 / 超预期/宽基风险扩张/0",
+      "actual": -67,
+      "expected": -66.55575829129549,
+      "error": -0.4442417087045101,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "乐观 / 超预期/宽基风险扩张/1",
+      "actual": 172,
+      "expected": 172.48041214983363,
+      "error": -0.4804121498336258,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "乐观 / 超预期/窄幅 / 主题主导上涨/0",
+      "actual": -75,
+      "expected": -74.72362348395407,
+      "error": -0.2763765160459286,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "乐观 / 超预期/窄幅 / 主题主导上涨/1",
+      "actual": 204,
+      "expected": 204.2610282279704,
+      "error": -0.2610282279703995,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "乐观 / 超预期/震荡 / 均值回归/0",
+      "actual": -89,
+      "expected": -88.93420628957819,
+      "error": -0.06579371042181492,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "乐观 / 超预期/震荡 / 均值回归/1",
+      "actual": 97,
+      "expected": 96.68348180744874,
+      "error": 0.316518192551257,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "乐观 / 超预期/有序风险收缩/0",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "乐观 / 超预期/有序风险收缩/1",
+      "actual": 28,
+      "expected": 27.830846839111295,
+      "error": 0.1691531608887047,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "乐观 / 超预期/流动性 / 信用压力/0",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "乐观 / 超预期/流动性 / 信用压力/1",
+      "actual": -51,
+      "expected": -50.896211226789745,
+      "error": -0.1037887732102547,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "突破 / 非线性/宽基风险扩张/0",
+      "actual": 0,
+      "expected": 0.12879682301170392,
+      "error": -0.12879682301170392,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "突破 / 非线性/宽基风险扩张/1",
+      "actual": 340,
+      "expected": 339.6157561446817,
+      "error": 0.38424385531828875,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "突破 / 非线性/窄幅 / 主题主导上涨/0",
+      "actual": -12,
+      "expected": -12.310829666201565,
+      "error": 0.31082966620156505,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "突破 / 非线性/窄幅 / 主题主导上涨/1",
+      "actual": 387,
+      "expected": 387.20618224750456,
+      "error": -0.20618224750455738,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "突破 / 非线性/震荡 / 均值回归/0",
+      "actual": -34,
+      "expected": -33.92722979499839,
+      "error": -0.07277020500161058,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "突破 / 非线性/震荡 / 均值回归/1",
+      "actual": 231,
+      "expected": 231.1795642374155,
+      "error": -0.17956423741549088,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "突破 / 非线性/有序风险收缩/0",
+      "actual": -74,
+      "expected": -74.16550391757004,
+      "error": 0.16550391757003524,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "突破 / 非线性/有序风险收缩/1",
+      "actual": 136,
+      "expected": 135.6337876999034,
+      "error": 0.3662123000966062,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "突破 / 非线性/流动性 / 信用压力/0",
+      "actual": -100,
+      "expected": -100,
+      "error": 0,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-returns",
+      "label": "突破 / 非线性/流动性 / 信用压力/1",
+      "actual": 19,
+      "expected": 18.686272405280665,
+      "error": 0.3137275947193352,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "0/0/0",
+      "actual": 1.97,
+      "expected": 1.9684638337989295,
+      "error": 0.0015361662010704435,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "0/0/0",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "0/0/1",
+      "actual": 27.55,
+      "expected": 27.545654360498723,
+      "error": 0.004345639501277532,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "0/0/1",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "0/1/0",
+      "actual": 1.78,
+      "expected": 1.7809251130920924,
+      "error": -0.0009251130920924222,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "0/1/0",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "0/1/1",
+      "actual": 29.68,
+      "expected": 29.68374769482959,
+      "error": -0.0037476948295918078,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "0/1/1",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "0/2/0",
+      "actual": 1.45,
+      "expected": 1.4501041590016601,
+      "error": -0.00010415900166016456,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "0/2/0",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "0/2/1",
+      "actual": 22.45,
+      "expected": 22.445233594075386,
+      "error": 0.004766405924613082,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "0/2/1",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "0/3/0",
+      "actual": 0.82,
+      "expected": 0.8175344775904103,
+      "error": 0.0024655224095896378,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "0/3/0",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "0/3/1",
+      "actual": 17.68,
+      "expected": 17.68494949776277,
+      "error": -0.004949497762769539,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "0/3/1",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "0/4/0",
+      "actual": 0,
+      "expected": -0.004398003975876197,
+      "error": 0.004398003975876197,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "0/4/0",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "0/4/1",
+      "actual": 11.87,
+      "expected": 11.865480342625766,
+      "error": 0.004519657374233432,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "0/4/1",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "1/0/0",
+      "actual": 39.54,
+      "expected": 39.53775038147668,
+      "error": 0.002249618523322283,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "1/0/0",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "1/0/1",
+      "actual": 135.16,
+      "expected": 135.15681335623427,
+      "error": 0.0031866437657299684,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "1/0/1",
+      "actual": 112,
+      "expected": 111.99531375916803,
+      "error": 0.004686240831972555,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "1/1/0",
+      "actual": 36.75,
+      "expected": 36.745438385978346,
+      "error": 0.0045616140216537815,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "1/1/0",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "1/1/1",
+      "actual": 147.23,
+      "expected": 147.2340706626206,
+      "error": -0.004070662620620169,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "1/1/1",
+      "actual": 129.76,
+      "expected": 129.7559862685597,
+      "error": 0.004013731440295487,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "1/2/0",
+      "actual": 31.88,
+      "expected": 31.88306574090288,
+      "error": -0.00306574090287981,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "1/2/0",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "1/2/1",
+      "actual": 107.18,
+      "expected": 107.17785987711011,
+      "error": 0.002140122889898066,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "1/2/1",
+      "actual": 70.85,
+      "expected": 70.84979393692663,
+      "error": 0.0002060630733637936,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "1/3/0",
+      "actual": 22.8,
+      "expected": 22.80175240963497,
+      "error": -0.0017524096349710305,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "1/3/0",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "1/3/1",
+      "actual": 82.1,
+      "expected": 82.10340397415129,
+      "error": -0.0034039741512970068,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "1/3/1",
+      "actual": 33.98,
+      "expected": 33.97559407963425,
+      "error": 0.004405920365748273,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "1/4/0",
+      "actual": 11.39,
+      "expected": 11.38677099551651,
+      "error": 0.003229004483490172,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "1/4/0",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "1/4/1",
+      "actual": 52.82,
+      "expected": 52.823127659562196,
+      "error": -0.0031276595621960723,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "1/4/1",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "2/0/0",
+      "actual": 90.06,
+      "expected": 90.06096501695649,
+      "error": -0.0009650169564849875,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "2/0/0",
+      "actual": 31.16,
+      "expected": 31.163466239130393,
+      "error": -0.003466239130393234,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "2/0/1",
+      "actual": 235.89,
+      "expected": 235.8860217142174,
+      "error": 0.00397828578257986,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "2/0/1",
+      "actual": 253.87,
+      "expected": 253.86839390552416,
+      "error": 0.0016060944758464757,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "2/1/0",
+      "actual": 84.42,
+      "expected": 84.42372093500522,
+      "error": -0.0037209350052194168,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "2/1/0",
+      "actual": 23.55,
+      "expected": 23.54556883108814,
+      "error": 0.004431168911860794,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "2/1/1",
+      "actual": 258.02,
+      "expected": 258.0182338322833,
+      "error": 0.0017661677167097878,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "2/1/1",
+      "actual": 283.48,
+      "expected": 283.47877220627754,
+      "error": 0.0012277937224780544,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "2/2/0",
+      "actual": 74.63,
+      "expected": 74.63100832258324,
+      "error": -0.001008322583246013,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "2/2/0",
+      "actual": 10.31,
+      "expected": 10.312173408896275,
+      "error": -0.002173408896274154,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "2/2/1",
+      "actual": 185.44,
+      "expected": 185.43947567467666,
+      "error": 0.0005243253233402356,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "2/2/1",
+      "actual": 183.25,
+      "expected": 183.24561691982126,
+      "error": 0.004383080178740784,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "2/3/0",
+      "actual": 56.39,
+      "expected": 56.38801862323548,
+      "error": 0.0019813767645189273,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "2/3/0",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "2/3/1",
+      "actual": 141.18,
+      "expected": 141.17862413048263,
+      "error": 0.0013758695173748947,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "2/3/1",
+      "actual": 119.1,
+      "expected": 119.09945526156906,
+      "error": 0.0005447384309320569,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "2/4/0",
+      "actual": 33.36,
+      "expected": 33.36059320299083,
+      "error": -0.0005932029908279901,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "2/4/0",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "2/4/1",
+      "actual": 90.57,
+      "expected": 90.57064881308843,
+      "error": -0.0006488130884321208,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "2/4/1",
+      "actual": 45.75,
+      "expected": 45.75456349722961,
+      "error": -0.004563497229611357,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "3/0/0",
+      "actual": 144.77,
+      "expected": 144.7681205154052,
+      "error": 0.0018794845948093553,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "3/0/0",
+      "actual": 93.29,
+      "expected": 93.29246219923743,
+      "error": -0.0024621992374278534,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "3/0/1",
+      "actual": 370.66,
+      "expected": 370.6627242155513,
+      "error": -0.0027242155512681165,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "3/0/1",
+      "actual": 409.59,
+      "expected": 409.58914992911434,
+      "error": 0.0008500708856331585,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "3/1/0",
+      "actual": 135.72,
+      "expected": 135.72232254861038,
+      "error": -0.0023225486103797266,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "3/1/0",
+      "actual": 81.7,
+      "expected": 81.69528531873127,
+      "error": 0.0047146812687373085,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "3/1/1",
+      "actual": 405.58,
+      "expected": 405.5789721172891,
+      "error": 0.001027882710900485,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "3/1/1",
+      "actual": 453.93,
+      "expected": 453.9301816797115,
+      "error": -0.00018167971148841389,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "3/2/0",
+      "actual": 120.01,
+      "expected": 120.01420497115629,
+      "error": -0.004204971156283932,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "3/2/0",
+      "actual": 61.56,
+      "expected": 61.55667303994396,
+      "error": 0.003326960056043049,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "3/2/1",
+      "actual": 291.11,
+      "expected": 291.1074195751721,
+      "error": 0.002580424827897332,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "3/2/1",
+      "actual": 308.56,
+      "expected": 308.5598440622631,
+      "error": 0.00015593773690625312,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "3/3/0",
+      "actual": 90.78,
+      "expected": 90.77645136059594,
+      "error": 0.0035486394040589175,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "3/3/0",
+      "actual": 24.07,
+      "expected": 24.072373539225566,
+      "error": -0.002373539225565935,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "3/3/1",
+      "actual": 221.36,
+      "expected": 221.35969723355856,
+      "error": 0.0003027664414503306,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "3/3/1",
+      "actual": 219.54,
+      "expected": 219.54122733405381,
+      "error": -0.001227334053822915,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "3/4/0",
+      "actual": 53.94,
+      "expected": 53.94424574127942,
+      "error": -0.004245741279419235,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "3/4/0",
+      "actual": 0,
+      "expected": 8.470329472543003e-19,
+      "error": -8.470329472543003e-19,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-DCF",
+      "label": "3/4/1",
+      "actual": 141.72,
+      "expected": 141.72223075720407,
+      "error": -0.002230757204074507,
+      "pass": true
+    },
+    {
+      "group": "CRWV-20-diluted-price",
+      "label": "3/4/1",
+      "actual": 110.58,
+      "expected": 110.57839829753985,
+      "error": 0.0016017024601495677,
+      "pass": true
+    },
+    {
+      "group": "ASIC-12-month-integration",
+      "label": "base-center",
+      "actual": 136.79166666666666,
+      "expected": 136.7916666667,
+      "error": -3.33386651618639e-11,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "arithmetic": 297,
+    "passed": 297,
+    "failed": 0
+  }
+}

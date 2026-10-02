@@ -1,0 +1,165 @@
+# 公司收入传导与价值传导评估：FuelCell Energy (FCEL)
+
+> 报告日期：2026-06-20  
+> 主口径：NTM，即 2026-06-20 后未来 12 个月。  
+> 资料边界：使用 `公司调研/`、`行业调研/` 和公司最新一手公开披露；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较。  
+> 排除范围：不做全公司排序，不给投资评级，不判断目标价或股价区间，不用金融市场价格或估值倍数作为经营价值传导证据。  
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM。FY2026、FY2027、4GW pipeline、SDCL `450MW` collaboration、DPP/TESIAC `360MW` 项目只作为订单转化和远期期权补充；未签约 pipeline 不进入 NTM 基准收入。
+- 当前收入基准、指引和 run-rate：FuelCell Energy 最新一手经营数据为 FY2026 Q2，截至 2026-04-30，2026-06-08 发布。Q2 收入 `$35.6M`，6M FY2026 收入 `$66.1M`，按 FY2025 全年和 6M FY2026/2025 推算 TTM 收入约 `$167.9M`。公司没有给 FY2026 全年收入指引。当前可见 backlog 为 `$1.135B`，但其中 `$928.5M` 是长期 generation PPA backlog，product backlog 只有 `$36.1M`。
+- 重要产品/业务线：`12.5MW / 2.5MW FuelCell Energy Block for data centers`、data-center project wrapper/partner-financed power、韩国 GGE/CGN replacement modules、Service/LTSA、Generation PPA portfolio、Advanced Technologies/carbon capture。
+- NTM 公司收入四情景：悲观 `$100-130M`；基准 `$130-180M`；乐观 `$300-500M`；极度乐观 `$650M-1.0B`。基准只代表 A/B 级证据和当前 run-rate 正常兑现；乐观以上才纳入 data-center block 明确签约和收入确认。
+- 利润或 EBITDA 四情景：悲观和基准仍为经营亏损；基准毛利率约 `-15% to +5%`，Adjusted EBITDA 仍可能亏 `$60-90M`。乐观需要 data-center blocks 有正毛利并带服务合约，Adjusted EBITDA 才可能接近 breakeven 到小幅转正。极度乐观只有在大客户预付款、产能爬坡、产品毛利转正和 Groton/legacy generation 不再拖累时才可能 EBITDA 明显转正。
+- 最大传导瓶颈：`4GW proposal pipeline -> executed agreement -> product/service backlog -> manufacturing slot -> commissioning/revenue recognition -> positive gross margin`。FCEL 目前主要卡在 pipeline 到 signed backlog 之间。
+- 最大利润率变量：data-center block 标准化后能否把 product gross margin 从 FY2026 Q2 的 `-12.6%` 转正；generation portfolio 能否从 FY2026 Q2 `-154.1%` gross margin 的异常低位恢复；服务和 stack replacement 能否跟随新装机形成高可见度 LTSA。
+- 最大现金流变量：Torrington 扩产需要 `$200-275M` 总项目支出，FY2026 growth spending `$20-30M`；若没有客户预付款、项目融资或签约 backlog，扩产会先扩大现金消耗。Q2 总现金含 restricted cash `$440.9M`，短期流动性不弱，但主要靠融资而非经营现金流支撑。
+- 可信度：当前基准收入和 backlog 可信度中高；data-center upside 可信度低到中，取决于客户名、MW、金额、deposit、交付窗口、gas/fuel path、permit 和服务 SLA 是否进入正式合同。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 12.5MW / 2.5MW FuelCell Energy Block for data centers | 已披露直接 data-center 收入约 `$0`；Q2 product 收入 `$18.0M` 主要来自韩国 replacement modules | 直接 AI/data-center `0%`；product segment 为 Q2 收入 `50.6%` | 未来 12 个月最大增量候选，但尚未签约验证 | C/D：产品发布、4GW proposal pipeline、客户需求描述；无公开客户订单 | 不进入基准主口径；进入乐观和极度乐观 | 若 hyperscaler/colo 签 `100MW+`，可改变收入结构 |
+| Data-center project wrapper / partner-financed power：SDCL、DPP/TESIAC | 已确认收入 `$0` | `0%` | 可能把设备销售变成项目融资/PPA/长期服务收入 | D：SDCL up to `450MW` collaboration、DPP/TESIAC up to `360MW` strategic partnership，均非 backlog | 不进入基准；只作乐观上修路径 | 若 FID、PPA、融资和 gas supply 同时落地，可能进入 FY2027+ |
+| 韩国 GGE/CGN replacement modules | Q2 product revenue `$18.0M`；product backlog `$36.1M` | Q2 `50.6%` | 当前 NTM 最可见 product 收入来源 | A/B：已确认收入、LTSA、product backlog、剩余模块交付时间表 | 进入基准 | 不是 AI 成长业务；后续亚洲 restack 是补充而非主线 |
+| Service / LTSA / module replacement platform | Q2 service revenue `$4.2M`；service backlog `$155.4M` | Q2 `11.7%` | 利润质量最好、可复用到 data center SLA | A/B：服务收入、长期服务 backlog、已披露 restack schedule | 进入基准 | 新 data-center blocks 若绑定 7 年 stack life / SLA，可放大服务价值 |
+| Generation PPA portfolio | Q2 generation revenue `$8.7M`；generation backlog `$928.5M` | Q2 `24.4%` | 收入可见但利润质量差；Groton 是执行反证 | A/B：PPA backlog、资产组合；但 Groton 停机和减值削弱质量 | 进入基准，但利润按保守口径 | Hartford/UConn/Groton upgrade 是 FY2027 后补充 |
+| Advanced Technologies / carbon capture / SOEC and government contracts | Q2 Advanced Technologies revenue `$4.7M`；backlog `$15.4M` | Q2 `13.3%` | 小收入、高毛利、技术期权；非 AI 直接收入 | A/B：已披露收入和 backlog；商业碳捕集仍 C | 小比例进入基准；商业化只进乐观以上 | Rotterdam/ExxonMobil-EMTEC demo 若成功，可进入工业低碳期权 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池和产品需求强弱，不评估 FCEL 份额、收入确认或利润率。需求单位按产品选择 MW、模块数量、服务合同、PPA 电量/可用率或 demo 模块。当前需求锚同时参考公司披露和项目内行业资料；行业热度不等于 FCEL 收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Data-center FCE Blocks / fuel-cell onsite power | 行业层面：数据中心自备发电从备用变成 time-to-power 工具；Bloom/Oracle 已验证 GW 级 fuel-cell demand。公司层面：FCEL proposal pipeline `4GW`，但无 signed data-center backlog | SOFC/MCFC 被燃气 engine、turbine、utility PPA 和 Bloom 抢走主要需求；FCEL 仅停留在 RFP/qualification | fuel-cell prime power 保持候选，行业新签 1-3GW 级别；FCEL 获得少量 qualification 或小 MW 试点需求，但未形成大额签约 | 客户因排放、水耗、噪音和并网等待转向燃料电池；FCEL 获得 `50-150MW` 明确需求/中标线索 | SOFC/MCFC 在 AI campus 成为 Tier-1 选项；FCEL 获得 `300MW+` 客户需求或锁产能框架 | 从 `$0` 直接 data-center revenue 对应需求，到最多数百 MW signed demand | 基准需求强于传统分布式发电，但相对公司 4GW pipeline 仍只承认可验证部分 | 正向：4GW pipeline、12.5MW block、行业 BTM 增长；反证：无客户名、无 MW 合同、Bloom 领先、FCEL 毛利和服务网络弱 |
+| SDCL/DPP/TESIAC project wrapper | SDCL collaboration up to `450MW`；DPP/TESIAC up to `360MW`，目标 data-center off-grid power | 项目没有 site/FID/financing/permit，需求停留在意向 | 一个或多个站点完成 diligence，但 NTM 主要体现为开发和谈判，不是收入 | 首个 `50-120MW` 站点进入 FID 或 equipment order | 三地 `360MW` 或 SDCL `450MW` 中多个站点进入分期采购 | `0MW` FID 到 `450MW` 上限 | 当前预期应视为远期期权，不是基准需求 | 正向：fuel supply/financing partner；反证：融资、gas path、客户 off-taker、permit 未披露 |
+| Korea GGE/CGN replacement modules | 10-Q 披露 GGE 剩余 `6` 个 `1.4MW` module 预计 FY2026 Q3 commissioning；CGN 剩余 `6` 个 replacement modules 预计 FY2026 Q4 | commissioning 延迟，NTM 只完成部分模块 | 剩余 `12` 个模块按披露节奏完成 | 模块按期完成且出现小额追加或亚洲客户提前 restack | 韩国/亚洲 fleet 追加批量 restack，形成超过当前 backlog 的需求 | 从 `4-8` 个模块到 `12+` 个模块，再到追加批量 | 基准符合当前 backlog 和交付节奏 | 正向：已签 LTSA；反证：该需求非 AI，交付后可能进入空窗 |
+| Service / LTSA | Service backlog `$155.4M`；Q2 service GM `16.4%`；presentation 显示近端 replacement 活动在 2028 前有限 | 客户设备运行或模块更换减少，服务收入低于 backlog 摊销节奏 | 现有 LTSA 正常执行，服务收入稳定在低双位数百万美元区间 | 新 data-center block 或亚洲 restack 附带 LTSA，提高服务需求 | 多个 data-center blocks 进入 SLA，服务 backlog 明显上修 | 年服务收入从 `$14-20M` 到 `$45M+` | 基准需求可见，但增长依赖新装机 | 正向：长期服务合同；反证：近期 restack schedule 有限 |
+| Generation PPA portfolio | Generation backlog `$928.5M`；on-balance-sheet generation portfolio 约 `62.8MW`；Groton 截至 2026-04-30 停机待升级 | Groton 停机拖长，其他资产 output/燃气成本扰动，PPA 收入低于 run-rate | 非 Groton 资产正常运行，Groton 对 NTM 仍拖累，Hartford/UConn 主要是开发期 | Groton 升级执行顺利，Hartford/UConn 开发推进，portfolio output 恢复 | 多个 PPA 项目提前转商运，但 NTM 可信度低 | 年收入约 `$28-40M` 到 `$60-90M` | 基准低于 backlog 表观规模，因为 backlog 是多年 PPA | 正向：PPA 长约；反证：Groton 减值、generation GM 极差 |
+| Advanced Technologies / carbon capture | Q2 Advanced revenue `$4.7M`、GM `42.9%`；two carbon capture modules en route to Rotterdam；advanced backlog `$15.4M` | Rotterdam 或政府项目延迟，收入仅低位维持 | backlog 正常摊销，Rotterdam demo/commissioning 推进 | Exxon/EMTEC 或第三方增加 demo/engineering work | 商业模块订单出现，但 NTM 仍可能只是上限 | 年收入 `$12-18M` 到 `$50M+` | 基准符合 backlog；商业化高于当前预期 | 正向：高毛利、小 backlog；反证：技术验证和商业合同未完成 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断需求能否进入 FCEL 的 NTM 收入表，以及当前可收入化基数是多少；不预测增长、不判断利润率。A/B 级证据进入基准，C 级仅在客户、产品、时间表清楚时折扣纳入，D/E 不进入基准 NTM 收入。所有金额为 NTM 公司可确认收入估算，不是客户总预算、项目总金额或行业 TAM。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Data-center FCE Blocks | 直接 data-center 收入未披露；Q2 product revenue `$18.0M` 主要来自 Korea；proposal pipeline `4GW` 不是 backlog | 直接，若签约则进 product revenue，后续进 service | 初期毛利可能受良率、BoP、warranty 和标准化爬坡影响 | `$0` | `$0` | `$100-250M` | `$350-700M` | 基准低于市场叙事；乐观才高于当前可见订单 | C/D | 否 | 有产品和 pipeline，但无公开客户名、合同金额、deposit、交付窗口 | 不进基准；进入乐观/极度乐观 |
+| SDCL/DPP/TESIAC project wrapper | SDCL up to `450MW` LOI；DPP/TESIAC up to `360MW` partnership；无收入和 backlog | 间接，可能转成 product sale、PPA、service 或 development fee | 可提高订单融资可行性，但资产模式会占用现金 | `$0` | `$0` | `$0-80M`，且不得与 FCE Block 重复计算 | `$100-300M`，仅若 FID/融资/客户同时落地 | 当前只是远期期权 | D | 否 | 意向和战略合作，不是 revenue contract | 附录跟踪；若进入 equipment PO，再合并到 FCE Block revenue |
+| Korea GGE/CGN replacement modules | Product backlog `$36.1M`；GGE/CGN 剩余模块有披露 commissioning 时间表 | 直接 product revenue | 低到中；历史 product GM 仍为负 | `$15-30M` | `$35-55M` | `$45-80M` | `$80-120M` | 基准符合当前 backlog；上限需要追加订单 | A/B | 是 | 已披露 product revenue、LTSA、剩余模块计划 | 基准核心 product 收入 |
+| Service / LTSA | Q2 service revenue `$4.2M`；service backlog `$155.4M` | 直接 service revenue | 当前最接近正毛利的经常性业务 | `$14-20M` | `$16-25M` | `$25-45M` | `$45-85M` | 基准符合 backlog 摊销；乐观依赖新装机服务 | A/B | 是 | 服务收入和 backlog 已披露 | 基准纳入；data-center attach 另作乐观 |
+| Generation PPA portfolio | Q2 generation revenue `$8.7M`；generation backlog `$928.5M`；Groton 停机 | 直接 generation revenue，但 backlog 是多年长约 | 低质量，Q2 gross margin `-154.1%` | `$28-40M` | `$38-55M` | `$45-65M` | `$60-90M` | 基准按 run-rate 和停机折扣，不按 backlog 简单折现 | A/B | 是 | PPA 合同和资产组合可见 | 基准纳入，但利润高度折扣 |
+| Advanced Technologies / carbon capture | Q2 Advanced revenue `$4.7M`；backlog `$15.4M` | 直接 R&D/contract revenue；商业化间接受益 | 高毛利但规模小 | `$12-18M` | `$18-28M` | `$25-50M` | `$50-100M` | 基准略高于 backlog 是因为 NTM 可能包括续约/项目摊销；大额商业化不进基准 | A/B for current, C for commercial | 是，小比例 | 已披露收入、backlog、Rotterdam modules | 基准小比例；商业订单进乐观以上 |
+
+排除项：只因 AI 数据中心电力短缺、燃料电池题材、Bloom/Oracle 订单或行业 TAM 而映射给 FCEL 的收入，不进入 NTM 收入；没有客户名、合同、交付窗口和收入确认路径的 `4GW pipeline` 不能乘以 `$M/MW` 直接形成基准收入。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第 3 节需求和第 4 节收入基数出发，判断每个重要产品在 NTM 内可能贡献的公司收入和利润。利润贡献主要指 gross profit / gross loss 和对 EBITDA 的方向性影响；若无法可靠量化则明确说明。Data-center project wrapper 与 FCE Block 共享同一 MW，不在公司汇总中重复计算。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Data-center FCE Blocks | 悲观 | `$0` | 费用和扩产准备继续消耗现金，无法形成产品 gross profit | 负向 | 低于 AI pipeline 叙事 | 无 signed data-center backlog | 保留为悲观 | pipeline 不能转合同；Bloom/gas engine 抢单 |
+| Data-center FCE Blocks | 基准 | `$0` | 无收入贡献；产品毛利仍由 Korea/legacy 决定 | 中性到负向 | 符合严格收入确认口径，但低于市场题材预期 | Q2 4GW pipeline 仍非 backlog | 基准不纳入 | 无客户名、MW、金额、deposit、交付窗口 |
+| Data-center FCE Blocks | 乐观 | `$100-250M` | gross profit 约 `$10-45M`，取决于标准化、BoP 和 warranty | 从负转正 | 高于当前 backlog | 首个 `50-150MW` signed order、客户预付款、Torrington slot | 保留为乐观 | 交付/commissioning 延迟；初期毛利低 |
+| Data-center FCE Blocks | 极度乐观 | `$350-700M` | gross profit 约 `$70-200M`；只有毛利 `20-30%` 才能明显改善 EBITDA | 明显扩张 | 显著高于当前预期，仅为上限 | `300MW+` signed/customer-funded capacity、500MW ramp 可用 | 下移为上限跟踪 | 产能、良率、服务网络、mission-critical reliability 任一失败都会降级 |
+| SDCL/DPP/TESIAC project wrapper | 悲观 | `$0` | `$0`；可能有开发费用 | 中性到负向 | 低于合作公告预期 | 无 FID/客户/offtake | 保留为悲观 | financing、gas supply、permit、customer credit 未披露 |
+| SDCL/DPP/TESIAC project wrapper | 基准 | `$0` | `$0` | 中性 | 符合当前证据等级 | LOI/strategic partnership 不等于合同 | 基准排除 | 不得与 FCE Block 重复计算 |
+| SDCL/DPP/TESIAC project wrapper | 乐观 | `$0-80M` | 若为 development fee 或首批 equipment order，利润无法可靠量化 | 取决于项目结构 | 高于当前基准 | 首站 `50-120MW` FID、PPA、融资和 gas path | 保留为乐观 | 若 FCEL own-operate，现金占用可能先扩大 |
+| SDCL/DPP/TESIAC project wrapper | 极度乐观 | `$100-300M`，并入 FCE Block 或 PPA 口径 | 无法可靠量化；可能是 product gross profit，也可能是资产化收入 | 不确定 | 上限情景 | 多站点 `360-450MW` 分期采购 | 移入附录/上限 | 项目总 MW 不能直接当 FCEL 收入 |
+| Korea GGE/CGN replacement modules | 悲观 | `$15-30M` | gross profit `-$5M to $0` | 负到持平 | 低于当前 backlog 节奏 | 模块交付延迟 | 保留为悲观 | commissioning 推迟或成本超支 |
+| Korea GGE/CGN replacement modules | 基准 | `$35-55M` | gross profit `-$6M to +$2M` | 低位改善但不稳定 | 符合 backlog 和交付计划 | Product backlog `$36.1M`；GGE/CGN 剩余模块 | 保留为基准 | 产品毛利历史仍为负 |
+| Korea GGE/CGN replacement modules | 乐观 | `$45-80M` | gross profit `$0-8M` | 小幅转正 | 高于当前 backlog | 追加 restack 或提前交付 | 保留为乐观 | 非 AI 主线，需求不一定延续 |
+| Korea GGE/CGN replacement modules | 极度乐观 | `$80-120M` | gross profit `$8-20M` | 正向 | 明显高于当前预期 | 亚洲 fleet 批量追加 | 下移为乐观上限 | 无公开追加订单 |
+| Service / LTSA | 悲观 | `$14-20M` | gross profit `$1-3M` | 正但有限 | 略低于 run-rate | 服务需求低、无 large module exchange | 保留为悲观 | 服务收入波动大 |
+| Service / LTSA | 基准 | `$16-25M` | gross profit `$2-6M` | 维持正毛利 | 符合 backlog 摊销 | Service backlog `$155.4M`；Q2 GM `16.4%` | 保留为基准 | 2028 前近端 restack 有限 |
+| Service / LTSA | 乐观 | `$25-45M` | gross profit `$6-14M` | 改善 | 高于当前 run-rate | data-center block 附带 LTSA 或亚洲模块服务 | 保留为乐观 | 新装机未发生则无法拉动 |
+| Service / LTSA | 极度乐观 | `$45-85M` | gross profit `$14-28M` | 高质量扩张 | 显著高于当前预期 | 多个 data-center blocks 进入 SLA | 保留为上限 | SLA 可靠性、备件、响应成本 |
+| Generation PPA portfolio | 悲观 | `$28-40M` | gross loss `-$35M to -$15M` | 继续拖累 | 低于 run-rate | Groton 停机、燃气/维修/折旧 | 保留为悲观 | 同一 Groton 风险不在其他层重复惩罚 |
+| Generation PPA portfolio | 基准 | `$38-55M` | gross loss `-$20M to $0` | 负毛利收窄 | 符合保守 run-rate | PPA backlog 但 Groton FY2027 才可能升级完成 | 保留为基准 | backlog 长期化，非 NTM 快收入 |
+| Generation PPA portfolio | 乐观 | `$45-65M` | gross profit `-$5M to +$8M` | 接近 breakeven | 高于当前 Q2 低位 | 非 Groton output 稳定、项目成本改善 | 保留为乐观 | Groton 升级资金和时间 |
+| Generation PPA portfolio | 极度乐观 | `$60-90M` | gross profit `$5-15M` | 小幅正向 | 显著高于当前低位 | Groton/Hartford/UConn 超预期推进 | 下移为乐观上限 | NTM 时间窗口不足 |
+| Advanced Technologies / carbon capture | 悲观 | `$12-18M` | gross profit `$3-7M` | 正毛利但小 | 低于当前 run-rate | Demo 或政府项目延迟 | 保留为悲观 | 收入规模小 |
+| Advanced Technologies / carbon capture | 基准 | `$18-28M` | gross profit `$6-12M` | 正毛利 | 符合 backlog/项目摊销 | Advanced backlog `$15.4M`；Rotterdam modules | 保留为基准 | 商业化未完成 |
+| Advanced Technologies / carbon capture | 乐观 | `$25-50M` | gross profit `$10-25M` | 改善 | 高于当前基准 | Exxon/EMTEC 扩展 demo 或新增第三方 | 保留为乐观 | 性能数据和合同仍需验证 |
+| Advanced Technologies / carbon capture | 极度乐观 | `$50-100M` | gross profit `$20-45M` | 高毛利扩张 | 显著高于当前预期 | 商业模块订单 | 移入附录/上限 | NTM 内商业化概率低 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。公司收入不使用行业 TAM、客户总预算、项目总 MW 或 4GW pipeline 直接换算；同一 data-center MW 只在 FCE Block/product、project wrapper 或 generation/PPA 中选择一个收入确认口径，不重复计算。绝对增速以推算 TTM 收入约 `$167.9M` 为参照。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$100-130M` | `-40% to -23%` vs TTM | 低于 Q2 run-rate 和当前 backlog 正常兑现；data-center pipeline 无转化 | `-45% to -25%` | `-130% to -80%` | Adjusted EBITDA 亏 `$80-130M`；净亏损无法可靠量化但仍大 | 明显流出；扩产和 Groton 资金需求加重 | 中 | data-center 无订单、Korea 收尾后 product 空窗、Groton/Generation 继续亏损 |
+| 基准公司 | `$130-180M` | `-23% to +7%` vs TTM | 接近 6M FY2026 年化和当前 A/B 级证据；不把 4GW pipeline 计入基准 | `-15% to +5%` | `-70% to -40%` | Adjusted EBITDA 亏 `$60-90M`；净利润仍为负 | 经营现金流仍负；现金缓冲来自现有 cash 和融资能力 | 中高 for current revenue；中 for total | product backlog 只有 `$36.1M`，服务和 advanced 太小，generation 利润差 |
+| 乐观公司 | `$300-500M` | `+79% to +198%` vs TTM | 高于当前 run-rate，要求 `50-150MW` data-center blocks 或首个项目型订单进入收入确认 | `10% to 22%` | `-30% to -10%` | Adjusted EBITDA `-$20M to +$30M`；净利润大概率仍受折旧、利息、扩产费用拖累 | 若有客户 deposit 可改善；否则扩产仍消耗现金 | 中低 | signed order、manufacturing slot、commissioning、初期 warranty 和 BoP 成本 |
+| 极度乐观公司 | `$650M-1.0B` | `+287% to +496%` vs TTM | 显著高于当前预期；要求 `300MW+` data-center demand 转 signed backlog 且 Torrington ramp 基本可用 | `20% to 30%` | `-5% to +8%` | Adjusted EBITDA `$50-150M`；净利润无法可靠量化，取决于折旧、融资和项目成本 | 只有大额预付款/项目融资成立时才可能转好；否则现金仍可能流出 | 低 | 多个核心环节同时成立：客户、产能、毛利、SLA、融资、许可 |
+
+公司层面校验：
+
+- 基准公司并不等同于“AI 数据中心逻辑失败”，而是严格收入确认下的当前可见经营结果：Korea backlog + service backlog + generation run-rate + advanced contracts。
+- 乐观公司最先应出现在 product backlog、customer deposits、deferred revenue 或 contract assets，而不是立即出现在 GAAP revenue。
+- 极度乐观公司不能只靠 SDCL `450MW`、DPP/TESIAC `360MW` 或 `4GW pipeline` 的标题成立；必须看到至少一个大客户或融资方承担实质采购/付款/项目风险。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只对前四步情景做校准。正向证据只提升其实际影响层级；反证只在实际影响层级处理一次。同一风险不重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q2 收入 `$35.6M`、6M 收入 `$66.1M`、无全年收入指引 | 公司汇总 | 限制基准收入上行，当前 run-rate 约 `$130-170M` | 现有毛利率仍为负 | 经营现金流仍需融资支持 | 基准保守处理 |
+| Total backlog `$1.135B`，但 product backlog 仅 `$36.1M` | 收入基数 | 只支持 Korea/legacy product，不能支撑 data-center 大单 | product GM 仍需验证 | 收入确认有限，不能替代新订单 | data-center 不进基准 |
+| Service backlog `$155.4M` 和 Q2 service GM `16.4%` | 产品贡献 | 支持服务收入底座 | 对毛利率正向，但规模小 | 现金质量较好 | 保留基准 |
+| Generation backlog `$928.5M` 但 Groton 停机和 Q2 generation GM `-154.1%` | 产品贡献/公司利润 | 支持长期收入可见性，不支持 NTM 快速增长 | 明显拖累公司 gross margin | Groton upgrade 需要额外 `$20-30M` 估计成本 | 风险只在 generation 和公司利润层处理 |
+| 12.5MW FCE Block 和 1.25/2.5MW 标准化产品 | 收入基数/产品贡献 | 提高从 RFP 到订单的可能性 | 标准化若成功可改善 product GM | 需要 manufacturing、BoP、SLA、commissioning | 乐观保留；基准排除 |
+| 4GW proposal pipeline，Q2 环比 `+267%` | 需求/执行可信度 | 证明需求池存在，但不是可确认收入 | 无法证明利润率 | 若转化需客户 deposit/融资 | 保留为乐观证据 |
+| Torrington 500MW/year 扩产，项目支出 `$200-275M` | 执行/收入上限 | 提高乐观/极度乐观 revenue ceiling | 利用率上来才改善毛利 | 无订单时先扩大现金消耗 | 极度乐观需同步验证订单 |
+| SDCL `450MW`、DPP/TESIAC `360MW` | 需求/收入路径 | 证明项目包装和融资思路，但非 backlog | 利润属性取决于 sale/PPA/development fee | gas supply、permit、FID、offtaker 未明 | 仅作跟踪或乐观上限 |
+| Advanced Technologies / Rotterdam carbon capture modules | 产品贡献 | 支持小额高毛利收入 | 正向但规模小 | 执行风险可控但商业化未证实 | 基准小比例；商业化进乐观 |
+| 行业数据中心 BTM/fuel-cell demand | 需求 | 提升需求层，不自动提升 FCEL revenue | 只有签约和规模制造才影响利润率 | 许可、燃气、融资决定转化 | 不重复用于公司收入上修 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Data-center pipeline 不转 backlog，Korea product 收尾后收入下滑，generation 继续拖累 | 现金余额 `$440.9M`，服务和 advanced 仍有小额收入 | 行业需求强，FCEL 有 4GW pipeline 和标准化产品 | 保留 | 悲观保留 | 中 | Groton 停机只在 generation/company margin 处理，不再用于压低 data-center demand |
+| 基准 | A/B 级 backlog 和 current run-rate 正常兑现，不纳入未签 data-center pipeline | Product backlog、service backlog、generation PPA、advanced backlog 均有披露 | Product backlog 小；base 不含 4GW pipeline；毛利率仍弱 | 保留 | 基准偏保守，作为主口径 | 中高 for revenue；中 for profit | 4GW pipeline 未签约只影响 data-center revenue，不重复压低 Korea/service |
+| 乐观 | 首个 data-center order 或 partner-financed project 进入 product/service backlog | 12.5MW block、4GW pipeline、Torrington ramp、行业 BTM/fuel-cell demand | 无公开客户名、无 deposit、无交付窗口；Bloom 和 gas engine 竞争强 | 保留 | 乐观保留 | 中低 | 行业许可/燃气风险只限制 data-center conversion，不重复惩罚 existing LTSA |
+| 极度乐观 | 多个核心环节同时突破，`300MW+` data-center demand 转 signed backlog 并进入 NTM revenue | 500MW capacity plan、hub-and-spoke 远期设想、AI data-center time-to-power 紧缺 | 当前缺客户合同、毛利为负、产能仍在扩、SLA 和 mission-critical reliability 未验证 | 下移 | 乐观上限/附录跟踪；不作为 NTM 主情景 | 低 | 产能和客户缺证据已在极度乐观校准处理，不再把所有业务整体降级 |
+
+## 8. 结论
+
+- 最可能情景：基准偏保守。NTM 收入更可能落在 `$130-180M`，主要由 Korea replacement modules、service backlog、generation PPA run-rate 和 advanced contracts 支撑；当前 4GW data-center pipeline 不进入基准收入。
+- NTM 收入结论：FCEL 的收入弹性真实存在，但收入确认顺序不是 `4GW pipeline -> revenue`，而是 `signed agreement/customer deposit -> product backlog -> manufacturing/commissioning -> revenue`。在没有 signed data-center backlog 前，NTM 公司收入质量仍接近 clean-tech project/service company，而不是 AI infrastructure order book。
+- 利润/现金流结论：基准下毛利率可能从极差低位改善，但仍难稳定转正；service 和 advanced 有正毛利，但规模太小，无法抵消 generation 和 product 爬坡。乐观情景需要 data-center blocks product GM 转正且服务 attach；极度乐观还需要客户预付款或项目融资，否则收入增长也可能伴随现金消耗。
+- 主要传导瓶颈：客户签约、产品毛利、Torrington 产能爬坡、mission-critical availability/SLA、Groton/legacy generation 修复、客户/项目融资。
+- 乐观情景成立条件：公开披露至少一个 data-center 或 digital infrastructure 客户的 MW、金额、交付时间、deposit 或 financing；product backlog 从 `$36.1M` 明显上升；Torrington `100MW+` annualized run-rate 在 2026-10-31 前后可验证；新订单毛利为正。
+- 极度乐观情景成立条件：`300MW+` signed/customer-funded data-center blocks 进入 backlog；Torrington 350-500MW capacity 可用；service/LTSA attach 明确；Groton 不再扩大损失；大客户承担预付款、PPA 或项目融资，使扩产不完全依赖股权融资。
+- 悲观情景触发条件：Q3/Q4 FY2026 product backlog 继续下降且无 data-center signed order；GGE/CGN commissioning 延迟；Groton upgrade 成本或停机时间扩大；product GM 继续为负；4GW pipeline 继续只停留在 proposal。
+- 后续跟踪数据：product backlog、data-center signed MW、客户名、deposit/deferred revenue、Torrington 实际 MW/year、product gross margin、service backlog attach、Groton upgrade status、generation GM、operating cash burn、ATM 融资节奏、Rotterdam carbon capture demo 进度。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务主数据为 FY2026 Q2，截至 2026-04-30，发布和 10-Q filing date 为 2026-06-08；报告日期为 2026-06-20。
+- 主要收入、订单、指引和利润率来源：
+  - FuelCell Energy FY2026 Q2 results, 2026-06-08: https://investor.fce.com/press-releases/press-release-details/2026/FuelCell-Energy-Reports-Second-Fiscal-Quarter-2026-Results-Advances-Data-Center-Power-Strategy/default.aspx
+  - FuelCell Energy FY2026 Q2 Form 10-Q, period ended 2026-04-30, filed 2026-06-08: https://www.sec.gov/Archives/edgar/data/886128/000110465926071183/fcel-20260430x10q.htm
+  - FuelCell Energy Q2 FY2026 Financial Results Presentation, June 2026: https://s21.q4cdn.com/256256048/files/doc_presentations/2026/Jun/FCEL-Q2-2026-Financial-Results-Presentation-FINAL.pdf
+  - FuelCell Energy 12.5MW data-center block release, 2026-03-23: https://investor.fce.com/press-releases/press-release-details/2026/FuelCell-Energy-Scales-Up-for-Data-Centers-with-Packaged-12-5-MW-UtilityGrade-Power-Block-Solution-and-Manufacturing-Expansion-Plans/default.aspx
+  - SDCL and FuelCell Energy strategic data-center power collaboration, 2026-01-20: https://investor.fce.com/press-releases/press-release-details/2026/Sustainable-Development-Capital-LLP-and-FuelCell-Energy-Forge-Strategic-Data-Center-Power-Collaboration/default.aspx
+  - Diversified Energy / FuelCell Energy / TESIAC data-center power partnership, 2025-03-10: https://investor.fce.com/press-releases/press-release-details/2025/Diversified-Energy-FuelCell-Energy-and-TESIAC-Collaborate-to-Form-an-Acquisition-and-Development-Company-to-Leverage-Coal-Mine-Methane-and-Natural-Gas-for-Off-GridData-Center-Power-Projects/default.aspx
+  - FuelCell Energy Block product page: https://www.fuelcellenergy.com/fuelcell-energy-block-system
+- 项目内公司资料：
+  - `公司调研/电力_发电_能源_储能/FCEL_FuelCell_Energy_公司调研_2026-06-20.md`
+- 项目内行业资料：
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 余下季度最可见收入来自 GGE/CGN modules、service、generation 和 advanced contracts。若没有 data-center signed backlog，FY2026/FY2027 初收入可能低于 AI 叙事。
+  - FY2027 及以后真正的上行来自 data-center blocks、partner-financed project、Torrington capacity 和 service attach；但这些必须以 signed MW、customer deposit、project financing 和 commissioning 为证据。
+  - Hub-and-spoke `1.5-2.0GW` potential capacity、SDCL `450MW`、DPP/TESIAC `360MW`、carbon capture commercial modules 和 hydrogen/SOEC 均为补充或远期期权，不替代 NTM 主表。
+- 主要来源：
+  - 公司一手披露优先于媒体摘要。
+  - 项目内行业资料仅用于需求池和行业约束，不用于直接推导 FCEL 收入。
+  - 未使用 `特征量化/`、Signals、回归、排序或金融市场价格作为经营价值传导证据。

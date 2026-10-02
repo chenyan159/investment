@@ -1,0 +1,167 @@
+# 公司收入传导与价值传导评估：Materion（MTRN）
+
+报告日期：2026-06-12（America/Los_Angeles）  
+评估对象：Materion Corporation，NYSE: MTRN  
+正式输出目录：`分析报告/公司评估/`  
+方案口径：单公司 `company-evaluation / MTRN / Materion`；只评估从产品需求到 NTM 收入、利润和经营质量的传导，不做全公司排序、不输出投资评级、不判断股价区间、不做市场估值倍数判断。  
+资料边界：项目内只使用 `公司调研/` 与 `行业调研/`；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、模型比较、`日度资料/`、`tmp/`、`data/` 等目录内容。外部复核使用 Materion 官方公告、SEC 10-Q/10-K、投资者材料和公司产品页。
+
+## 1. 一页结论
+
+- 主口径与补充口径：Materion 的 `net sales` 受贵金属 pass-through 影响很大，经营传导主口径使用 `value-added sales`（VA sales），会计收入口径保留 `net sales`。NTM 指 2026Q2-2027Q1 滚动 12 个月；FY2026 指引只作为当前预期锚，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：2025 年 net sales `$1.787B`、VA sales `$1.046B`、adjusted EBITDA `$217.0M`；2026Q1 net sales `$549.8M`、VA sales `$261.8M`、adjusted EBITDA `$52.9M`。TTM 至 2026Q1 的 net sales 约 `$1.916B`、VA sales 约 `$1.049B`、adjusted EBITDA 约 `$221.2M`。公司 2026Q1 将全年 top-line outlook 上修为低双位数增长，并维持 FY2026 adjusted EPS `$6.00-$6.50`，且称对高端更有信心。
+- 重要产品/业务线：`Electronic Materials` 的 PVD sputtering targets、tantalum、高纯贵金属/非贵金属靶材和 ALD/ion implantation 前驱体是半导体主线；`Performance Materials` 中国防铍材料和高性能 CuBe/NiBe/连接器/测试材料是第二层；`Precision Optics` 是修复中的小分部；`precision clad strip / consumer electronics` 是 NTM 抵消项，不是增长主线。
+- NTM 公司收入四情景：悲观 `net sales $1.90-$2.05B / VA $1.03-$1.10B`；基准 `net sales $2.00-$2.18B / VA $1.12-$1.20B`；乐观 `net sales $2.20-$2.40B / VA $1.22-$1.32B`；极度乐观 `net sales $2.45-$2.75B / VA $1.35-$1.55B`。
+- 利润或 EBITDA 四情景：悲观 adjusted EBITDA `$200-$230M`；基准 `$245-$275M`；乐观 `$290-$335M`；极度乐观 `$360-$450M`。基准与乐观的关键不是 net sales 放大，而是 EM 高利润 VA 增长、PM 质量问题不再拖累、国防订单开始转收入、PO 修复持续。
+- 最大传导瓶颈：公司没有披露绝对 backlog、分产品 backlog、取消率和产品级订单。Q1 2026 record backlog 同比 `+20%+`、较年初 `+15%` 是强信号，但只能作为收入确认路径的 B 级锚，不能直接当作 NTM 收入。
+- 最大利润率变量：Electronic Materials 的 adjusted EBITDA / VA margin 能否维持 `28%` 附近，以及 Performance Materials 的 product quality issue、precision clad strip 低迷和金属 consignment fees 能否收敛。
+- 最大现金流变量：Q1 2026 经营现金流为 `-$4.3M`，主要受应收和库存增加影响；如果 backlog 转交付需要继续垫库存/贵金属，利润改善可能滞后转为自由现金流。
+- 可信度：基准情景 `中高`；乐观情景 `中`；极度乐观 `低`。原因是收入表、分部 VA、订单率和官方指引证据强，但产品级 ALD、新金属、CPO/光学和 RFQ 转化节奏仍缺少可量化披露。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Electronic Materials：PVD sputtering targets、tantalum、高纯贵金属/非贵金属靶材、thin-film deposition materials | TTM EM VA 约 `$341M`；2026Q1 EM VA `$91.6M`，YoY `+17.7%` | 约 `33%` TTM VA | 最核心半导体收入和利润引擎；Q1 adjusted EBITDA `$25.9M`，EBITDA/VA `28.3%` | A/B | 进入基准，按 EM 分部 VA 和半导体订单率处理，不按 AI TAM 外推 | Ru/Mo/Co/new-metal 路线若客户 POR 扩散，进入乐观/极度乐观 |
+| ALD / ion implantation solid precursors：AlCl3、MoO2Cl2、MoCl5、HfCl4 等 | 未披露产品级收入；已包含在 EM；无法可靠量化，估计当前仍为小基数 | 无法可靠量化 | 先进逻辑、DRAM/HBM、3D NAND 和 new metals 的高毛利小基数增量 | C | 不单独加总；基准只以保守小比例包含在 EM，乐观情景才单独说明增量 | 若 Mo/Hf/new-metal 前驱体进入多客户量产 recipe，可成为 EM 第二曲线 |
+| Performance Materials：国防铍材料、Be composites、AlBeMet、航空航天/能源高可靠材料 | A&D 约为 TTM VA `19%`、约 `$200M`；Energy 约 `6%`、约 `$60M`；PM 细分未披露 | A&D+Energy 合计约 `25%` TTM VA，但不全属铍 | 非 AI 但确定性强；Q1 defense incoming orders `~$60M`、open RFQs `$300M+`、客户投资 `$65M` | B | 进入基准，但只确认可见订单和正常交付节奏；RFQ 不直接转收入 | 若 RFQ 大比例转合同且扩产提前验收，进入乐观/极度乐观 |
+| Performance Materials：CuBe/NiBe 高性能合金、连接器、telecom/data center、test sockets/probe pins | 未披露产品级收入；在 PM 和部分 semiconductor/telecom 应用中；无法可靠精确量化 | 估计中个位数到低双位数 TTM VA | 直接 AI 内容量小，但跟随 800G/1.6T、服务器连接器、半导体测试需求 | A/C | 成熟材料部分进入基准；AI 数据中心专项增量只保守纳入 | 若高温高可靠连接器或测试 socket 材料短缺，进入乐观 |
+| Precision clad strip / consumer electronics 传统抵消项 | Consumer Electronics 为 TTM VA 约 `13%`；2026Q1 consumer electronics net sales `$31.0M`，YoY `-44%` | 约 `13%` TTM VA，但含多产品 | 重要性在于拖累和修复，不是增长主线 | A | 进入基准作为抵消项；不因公司其他业务强而忽略 | 若客户质量问题完全出清并补单，属于乐观修复，不是结构性高增长 |
+| Precision Optics：optical coatings、filters、assemblies | TTM PO VA 约 `$110M`；2026Q1 PO VA `$30.7M`，YoY `+42.8%` | 约 `10%` TTM VA | 小分部，但利润修复弹性大；主要服务 aerospace/defense、life science、industrial optics | A/C | 传统 PO 修复进入基准；CPO/光 I/O 不进基准 | CPO、optical I/O、AI 光引擎滤光片和精密镀膜仅作远期期权或乐观上限 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只判断外部需求池相对当前预期的强弱，不判断 MTRN 的份额、收入确认、利润率或公司汇总。需求锚采用官方 end-market、订单率、行业材料景气和客户资本开支路径；若没有产品级公开数据，标注“无法可靠量化”。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| EM PVD/tantalum/high-purity targets | 半导体材料大盘 2025 年 `$73.2B`，wafer fab materials `$45.8B`；MTRN 半导体订单率 LTM `+10%`，EM Q1 VA `+17.7%` | 半导体订单增速回落到低个位数；先进逻辑/HBM 客户库存消化，EM VA NTM `0%-8%` 增长 | 半导体材料复苏正常兑现；EM VA NTM `12%-20%` 增长 | AI memory/data storage、advanced logic 和高纯 targets 同步拉动；EM VA `20%-35%` 增长 | N2/HBM4/Rubin/custom ASIC 提前锁料且高纯靶材短缺；EM VA `40%+` 增长 | NTM EM VA 大致从 TTM `$341M` 走向 `$330M-$600M` 区间 | 基准符合公司当前预期；乐观需强于 Q1 订单节奏 | 正向：Q1 record EM EBITDA 和半导体订单率；反证：半导体材料认证慢、客户 forecast 可推迟 |
+| ALD/ion implantation precursors | 公司产品页披露 AlCl3、MoO2Cl2、MoCl5、HfCl4 等；AI blog 指向 advanced logic/memory | 客户验证慢，只有样品/小批，NTM 增量无法可靠量化 | 1-2 个材料小比例进入生产，作为 EM 内部 mix 改善 | Mo/Hf/new-metal 前驱体进入多个客户 qualification/early production | 进入关键 recipe 并被 AI 芯片/HBM 先进节点放大，形成数千万美元级增量 | 无法可靠量化；只作 EM 内部小基数增量 | 当前预期偏 C 级，不足以单独进入基准主表 | 正向：客户技术路线明确；反证：未披露客户、订单、收入和量产时间表 |
+| 国防铍材料/A&D/Energy 高可靠材料 | A&D orders LTM `+50%`，Energy `+20%`；Q1 defense orders `~$60M`，RFQs `$300M+`，客户投资 `$65M` | 政府预算/项目验收/扩产节点推迟，需求池低于订单率 | A&D 和 energy 正常交付，按 backlog/订单节奏逐步转收入 | RFQ 转 PO 加快，国防补库存和能源/核能需求同步增强 | 多个国防/空间/核能项目同时放量，且客户追加扩产 | A&D+Energy VA 可能从约 `$260M` 走向 `$220M-$520M` | 基准略高于 2025 run-rate；乐观需 RFQ 转合同 | 正向：客户投资和订单率强；反证：国防认证、扩产验收和预算周期长 |
+| CuBe/NiBe 数据中心连接器和半导体测试材料 | Materion telecom/data center 产品页列出 5G/data center connectors、test sockets/probe pins；行业资料显示 800G/1.6T 和测试需求上行 | AI 光互联备货转库存，连接器材料需求只随普通工业恢复 | 高速互联和半导体测试材料低双位数增长 | 800G/1.6T、AI server、test socket/probe pin 同步拉动 | 高温高可靠材料短缺，客户提高安全库存 | 当前产品级需求无法可靠量化 | 基准为成熟材料温和增长，不把光模块 TAM 等同公司收入 | 正向：数据中心/半导体测试应用真实；反证：材料内容量低、替代合金和二供存在 |
+| Precision clad strip / consumer electronics | 2026Q1 consumer electronics net sales YoY `-44%`，公司称 lower precision clad strip shipments 抵消其他 end-market 增长 | 质量问题和客户需求继续拖累，需求低于当前修复预期 | 低迷逐步稳定，形成低基数抵消项 | 客户补单和质量问题出清，恢复到较正常 run-rate | 大客户恢复叠加新项目，但不改变公司结构 | 可能从拖累 `-$30M` 级别改善为稳定贡献 | 悲观和基准都需显式作为抵消项 | 正向：质量问题可能出清；反证：客户集中、消费电子周期弱 |
+| Precision Optics | 2026Q1 PO VA `+42.8%`，strongest top line since 2021，5th consecutive quarter bottom-line improvement | Q1 低基数后回落，航空/工业订单不持续 | 传统 aerospace/defense/life science optics 修复，NTM `15%-30%` 增长 | 修复延续且高毛利项目 mix 改善 | 传统 optics 修复叠加 CPO/AI 光学 design-in 早于预期 | TTM PO VA `$110M` 走向 `$105M-$250M` | 基准为修复延续，不把 CPO 直接纳入 | 正向：Q1 财务证据强；反证：AI 光学客户和量产订单未披露 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些需求能进入 Materion NTM 收入表，以及当前可收入化基数；不预测增长、不判断利润率。`A` 为已披露收入/分部收入/正式指引；`B` 为订单、backlog、合同、客户项目和明确交付路径；`C` 为 design win、认证、产能规划或管理层可验证披露；`D/E` 不进入 NTM 基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| EM PVD/tantalum/high-purity targets | 2026Q1 EM net sales `$363.4M`、pass-through metals `$271.7M`、VA `$91.6M`；TTM EM VA 约 `$341M` | 直接进入收入表 | 高 VA、较高 EBITDA/VA；贵金属 pass-through 扭曲 net sales | `$330M-$355M` VA | `$370M-$405M` VA | `$420M-$470M` VA | `$500M-$600M` VA | 基准符合低双位数 top-line 和半导体订单率 | A/B | 是 | 分部收入、Q1 EM 记录、半导体订单率 `+10%` | 基准主口径；不得用 AI 半导体 TAM 外推 |
+| ALD/ion implantation precursors | 产品页和 AI blog 可见，但未披露收入、订单或客户 | 直接但未量化 | 小基数、高毛利潜力、认证强 | `0-$5M` 增量，包含在 EM | `$5M-$15M` 增量，包含在 EM | `$15M-$40M` 增量，包含在 EM | `$50M+` 增量，仍需验证 | 目前只是 EM 内部 mix 改善，不是独立预期 | C | 小比例是；不单独加总 | 产品、技术、应用可见；收入不可见 | 基准仅保守折扣；单独大额增量放乐观/极度乐观 |
+| 国防铍材料/A&D/Energy 高可靠材料 | 2026Q1 A&D order and RFQ 信息；2025/TTM end-market 占比；PM 分部收入可见但产品未拆 | 直接进入 PM/PO 收入表 | 国防/高可靠壁垒强，交付周期长 | `$200M-$240M` VA | `$250M-$300M` VA | `$300M-$370M` VA | `$400M-$520M` VA | 基准略高于当前 run-rate，符合订单率但不把 RFQ 全额计入 | B | 是 | Q1 defense orders、RFQ、客户投资、A&D order rate | 基准纳入订单可见部分；RFQ 转化才进入乐观 |
+| CuBe/NiBe 数据中心连接器和半导体测试材料 | 产品页可见，PM 分部可见；无产品级收入 | 直接但内容量小 | 材料性能溢价中等，替代材料存在 | `$120M-$150M` VA | `$150M-$180M` VA | `$180M-$230M` VA | `$250M-$320M` VA | 基准为成熟业务稳定增长，不把数据中心总 capex 纳入 | A/C | 是，作为成熟 PM 业务 | PM 分部收入、应用可见、行业需求可见 | 进入基准，但 AI 专项弹性保守 |
+| Precision clad strip / consumer electronics | Consumer Electronics end-market、PM 拖累和 product quality issue 可见 | 直接进入 PM | 当前为利润拖累/修复变量 | `$70M-$90M` VA | `$95M-$120M` VA | `$125M-$150M` VA | `$160M-$190M` VA | 当前预期是低迷后稳定；乐观是修复 | A | 是，作为抵消项 | Q1 consumer electronics 下滑、公司披露 lower PCS shipments | 必须纳入汇总，避免只看成长业务 |
+| Precision Optics | 2026Q1 PO VA `$30.7M`；TTM PO VA 约 `$110M` | 直接进入收入表 | Q1 修复明显，小分部高经营杠杆 | `$105M-$120M` VA | `$125M-$145M` VA | `$150M-$185M` VA | `$200M-$250M` VA | 基准为修复延续；CPO 不在当前预期 | A/C | 是，传统 PO 是；CPO 否 | 分部收入和 Q1 修复；AI 光学客户缺证据 | 传统业务进基准；CPO/光 I/O 为远期期权 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，判断每个产品/业务线在 NTM 内能给公司贡献多少 VA 收入和利润。表中产品级 VA 区间为经营传导估算，不等同于审计分部披露；ALD/新金属增量包含在 EM 内，不与 EM 分部重复加总。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| EM PVD/tantalum/high-purity targets | 悲观 | `$330M-$355M` VA | adjusted EBITDA `$80M-$95M` | 低于当前 Q1 run-rate，EBITDA/VA `24%-27%` | 低于预期 | 半导体订单放缓、客户库存或 metal consignment fees 上升 | 保留为 EM 下行情景 | 先进材料需求仍强，悲观不能扩散到 A&D |
+| EM PVD/tantalum/high-purity targets | 基准 | `$370M-$405M` VA | `$105M-$120M` | 维持高利润率，`28%-30%` EBITDA/VA | 符合当前预期 | Q1 EM VA `+17.7%`、record EBITDA、半导体订单率 `+10%` | 保留 | 产品级客户和 backlog 未披露 |
+| EM PVD/tantalum/high-purity targets | 乐观 | `$420M-$470M` VA | `$130M-$160M` | mix 和规模效应改善 | 高于预期 | AI memory/data storage、advanced logic、高纯 targets 同步强 | 保留 | 需要客户 pull-in 或 allocation，而非行业叙事 |
+| EM PVD/tantalum/high-purity targets | 极度乐观 | `$500M-$600M` VA | `$175M-$230M` | 高毛利材料短缺，EM 成为主要增长引擎 | 明显高于预期 | N2/HBM4/Rubin/custom ASIC 同步提前锁料 | 保留为低可信上限 | 未披露产能、客户和交付时间；不可作为基准 |
+| ALD/ion implantation precursors（包含在 EM 内） | 悲观 | `0-$5M` 增量 | 无法可靠量化 | 无明显贡献 | 低于主题预期 | 仍停留在样品或客户验证 | 保留 | 缺客户/订单/收入披露 |
+| ALD/ion implantation precursors（包含在 EM 内） | 基准 | `$5M-$15M` 增量 | `$3M-$9M`，估算 | 小幅提高 EM mix | 符合保守预期 | 产品页列明材料和应用，AI blog 说明技术路线 | 保留 | C 级证据只能小比例进入基准 |
+| ALD/ion implantation precursors（包含在 EM 内） | 乐观 | `$15M-$40M` 增量 | `$9M-$26M`，估算 | 高毛利 mix 改善 | 高于预期 | Mo/Hf/new-metal 进入客户 early production | 保留 | 客户 POR 未披露 |
+| ALD/ion implantation precursors（包含在 EM 内） | 极度乐观 | `$50M+` 增量 | 无法可靠量化 | 可能非线性上修 | 上限情景 | 多客户 recipe 锁定 | 保留为上限 | 若无客户、产能和收入确认路径，应移入附录 |
+| 国防铍材料/A&D/Energy 高可靠材料 | 悲观 | `$200M-$240M` VA | `$45M-$60M` | 利润率低于正常项目 mix | 低于预期 | 预算/扩产/验收延迟 | 保留 | 不能重复惩罚到 EM |
+| 国防铍材料/A&D/Energy 高可靠材料 | 基准 | `$250M-$300M` VA | `$60M-$80M` | 高可靠 mix 稳定 | 符合订单节奏 | A&D orders `+50%`、Energy `+20%`、客户投资 `$65M` | 保留 | RFQ 不等于合同收入 |
+| 国防铍材料/A&D/Energy 高可靠材料 | 乐观 | `$300M-$370M` VA | `$80M-$110M` | 利润率和利用率改善 | 高于预期 | `$300M+` RFQ 部分转 PO、扩产节点清楚 | 保留 | 政府预算和项目资格认证 |
+| 国防铍材料/A&D/Energy 高可靠材料 | 极度乐观 | `$400M-$520M` VA | `$120M-$170M` | 稀缺材料形成准瓶颈溢价 | 明显高于预期 | 多项目同时放量且客户继续投产 | 保留为低可信上限 | NTM 内全部兑现的证据不足 |
+| CuBe/NiBe 数据中心连接器和半导体测试材料 | 悲观 | `$120M-$150M` VA | `$20M-$35M` | 低利用率/替代材料压制 | 低于预期 | 光互联备货转库存，连接器材料需求弱 | 保留 | 不影响国防铍材料判断 |
+| CuBe/NiBe 数据中心连接器和半导体测试材料 | 基准 | `$150M-$180M` VA | `$35M-$45M` | 温和改善 | 符合成熟业务预期 | telecom/data center 和 test socket/probe pin 应用可见 | 保留 | 内容量低，替代合金存在 |
+| CuBe/NiBe 数据中心连接器和半导体测试材料 | 乐观 | `$180M-$230M` VA | `$45M-$65M` | mix 改善 | 高于预期 | 800G/1.6T、AI server、semiconductor test 共同拉动 | 保留 | 必须有客户/平台订单确认 |
+| CuBe/NiBe 数据中心连接器和半导体测试材料 | 极度乐观 | `$250M-$320M` VA | `$70M-$95M` | 高可靠材料短缺 | 明显高于预期 | 高温/高可靠连接器材料被抢占 | 下移为乐观上限 | 公司未披露 AI 连接器材料订单 |
+| Precision clad strip / consumer electronics | 悲观 | `$70M-$90M` VA | `-$10M-$5M` | 继续拖累 PM | 低于预期 | 质量问题和客户低迷延续 | 保留 | 仅惩罚 PM/PCS，不惩罚 EM/PO |
+| Precision clad strip / consumer electronics | 基准 | `$95M-$120M` VA | `$5M-$15M` | 止跌，低利润 | 符合当前保守预期 | Q1 公司已将其作为抵消项说明 | 保留 | 不应被成长业务掩盖 |
+| Precision clad strip / consumer electronics | 乐观 | `$125M-$150M` VA | `$15M-$25M` | 修复 | 高于预期 | 客户补单、质量费用消退 | 保留 | 消费电子周期和客户集中 |
+| Precision clad strip / consumer electronics | 极度乐观 | `$160M-$190M` VA | `$25M-$35M` | 回到较正常利用率 | 明显高于预期 | 大客户恢复加新项目 | 下移为乐观上限 | 不是结构性高增长业务 |
+| Precision Optics | 悲观 | `$105M-$120M` VA | `$12M-$20M` | Q1 低基数后回落 | 低于预期 | 订单不持续、项目型交付 | 保留 | 不影响 EM 半导体判断 |
+| Precision Optics | 基准 | `$125M-$145M` VA | `$22M-$35M` | 双位数 EBITDA/VA 稳定 | 符合修复预期 | Q1 PO VA `+42.8%`、连续五季改善 | 保留 | 传统业务修复不能当 CPO 收入 |
+| Precision Optics | 乐观 | `$150M-$185M` VA | `$35M-$55M` | mix 和规模效应改善 | 高于预期 | aerospace/defense optics、life science/industrial 项目持续 | 保留 | 客户项目制和竞争 |
+| Precision Optics | 极度乐观 | `$200M-$250M` VA | `$60M-$85M` | 高经营杠杆 | 明显高于预期 | 传统修复叠加 AI 光学 design-in | 下移为乐观上限/附录跟踪 | CPO/optical I/O 客户和量产时间缺证据 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为公司 NTM 总收入、利润和现金流方向。`NTM 公司收入` 同时列示 `net sales` 与 `VA sales`；经营判断以 VA sales 为主。绝对增速以 2025 年 net sales `$1.787B`、VA sales `$1.046B` 为静态锚点，避免把贵金属 pass-through 误判为利润增长。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | Net sales `$1.90-$2.05B`；VA sales `$1.03-$1.10B` | Net `+6%-15%`；VA `-2%至+5%` | 低于低双位数 top-line 和高端 EPS 信心；说明 backlog 转化差或 PM 拖累更重 | Net GM `14%-16%`；VA gross margin `29%-31%` | GAAP OP/net `4.8%-6.2%`；adj EBITDA/VA `19.5%-21.0%` | adjusted EBITDA `$200-$230M`；adjusted net income `$95-$115M` | 低或小幅为正；库存、应收和金属 consignment 吞噬利润 | 中 | PM product quality/PCS 拖累、半导体订单放缓、国防扩产验收推迟 |
+| 基准公司 | Net sales `$2.00-$2.18B`；VA sales `$1.12-$1.20B` | Net `+12%-22%`；VA `+7%-15%` | 符合公司 low-double-digit top-line、FY2026 adjusted EPS `$6.00-$6.50` 和 record backlog 正常兑现 | Net GM `15%-17%`；VA gross margin `31%-33%` | GAAP OP/net `6.5%-7.8%`；adj EBITDA/VA `21.8%-23.0%` | adjusted EBITDA `$245-$275M`；adjusted net income `$125-$140M` | 温和为正；营运资本仍可能使 FCF 弱于 EBITDA | 中高 | EM 需维持高利润率，PM 拖累不能扩大，backlog 需按期转出货 |
+| 乐观公司 | Net sales `$2.20-$2.40B`；VA sales `$1.22-$1.32B` | Net `+23%-34%`；VA `+17%-26%` | 高于当前预期；需要 EM、A&D、PO 至少两条线同步超预期 | Net GM `16.5%-18.5%`；VA gross margin `33%-35%` | GAAP OP/net `8%-10%`；adj EBITDA/VA `23.5%-25.5%` | adjusted EBITDA `$290-$335M`；adjusted net income `$150-$175M` | 正向改善，但高增长可能仍占用库存/应收 | 中 | 半导体客户 pull-in、RFQ 转 PO、PM 修复、PO mix 同时成立 |
+| 极度乐观公司 | Net sales `$2.45-$2.75B`；VA sales `$1.35-$1.55B` | Net `+37%-54%`；VA `+29%-48%` | 显著高于当前预期；需求、公司捕获、利润率和执行质量同时突破 | Net GM `18%-21%`；VA gross margin `35%-38%` | GAAP OP/net `10%-13%`；adj EBITDA/VA `26%-29%` | adjusted EBITDA `$360-$450M`；adjusted net income `$190-$250M` | 明显为正，但取决于客户预付款、库存周转和贵金属价格 | 低 | EM 高纯材料短缺、国防 RFQ 大额转化、PO/CPO 或高端 optics 订单、PCS 修复同时成立；任一缺证据即降为乐观上限 |
+
+汇总检查：
+
+- 不把客户 AI capex、半导体 TAM、光模块 TAM 或 RFQ 全额当作 MTRN 收入。
+- EM 的 ALD/new-metal 增量已包含在 EM 分部内，未重复加总。
+- Precision Optics 的 CPO/光 I/O 只在乐观上限和附录跟踪，不进入基准。
+- Precision clad strip/consumer electronics 作为抵消项进入公司层面；不能只汇总增长业务。
+- Net sales 的高增长可能来自 pass-through metals；利润判断以 VA sales、gross margin dollars、adjusted EBITDA 和现金流为主。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景位置。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 record backlog：同比 `+20%+`，较年初 `+15%` | 收入基数、公司汇总 | 支撑基准和乐观收入；但绝对 backlog 未披露，不能精确转收入 | 若订单集中在 EM/A&D/PO，高于普通 PM | backlog 转交付可能先增加库存和应收 | 保留基准；乐观需后续披露 backlog 金额或 book-to-bill |
+| LTM order rates：A&D `+50%`、Energy `+20%`、Semiconductor `+10%` | 需求、收入基数 | A&D 和 energy 是最强订单方向；半导体稳健但非爆炸式 | A&D/EM mix 有利于利润，energy mix 需看产品 | 国防和能源项目交付周期长 | 保留；RFQ 不直接进入基准收入 |
+| EM Q1 VA `+17.7%`，adjusted EBITDA/VA `28.3%` | 产品贡献、公司利润 | 支撑 EM 基准 `$370M-$405M` VA | 是公司利润质量核心 | 高金属价格增加 consignment fee，但 VA 仍强 | 保留基准；若连续两季维持则可上移到乐观 |
+| 贵金属 pass-through 和 metal consignment fees | 公司汇总、现金流 | net sales 可能放大但不代表经营收入 | consignment fees Q1 增加，压缩 reported profitability | 应收、库存和融资占用上升 | 保留 VA 主口径；排除把 net sales 高增当利润证据 |
+| PM product quality issue 和 precision clad strip 低迷 | 产品贡献 | 只影响 PM/PCS 和公司汇总抵消项 | 直接压低 PM gross margin 和 EBITDA | 修复可能消耗管理和现金资源 | 保留悲观/基准抵消项；不得重复惩罚 EM/PO |
+| `$65M` defense prime customer investment、Q1 defense orders `~$60M`、RFQs `$300M+` | 收入基数、执行可信度 | B 级收入确认路径强于普通 pipeline | 高可靠国防材料利润质量较好 | 扩产验收和项目资格会延后现金兑现 | 基准纳入可见部分；RFQ 转 PO 后上移 |
+| ALD/new-metal materials 产品证据 | 需求、产品贡献 | C 级证据，说明公司可参与，但收入不可见 | 若进入 recipe，毛利率高 | 客户认证慢，产能和交付未披露 | 基准小比例保留；大额增量仅作跟踪或乐观 |
+| Precision Optics Q1 修复 | 产品贡献、公司利润 | PO TTM `$110M` 可见，NTM 修复可进入基准 | 小分部经营杠杆强 | 项目型收入波动 | 传统 PO 保留；CPO/AI 光学移入附录/仅作跟踪 |
+| 行业半导体材料景气 | 需求 | 支撑 EM 和 ALD 的需求池 | 高纯材料和前驱体利润率强于普通材料 | 认证周期限制季度级爆发 | 保留；不能替代公司订单证据 |
+| 现金流与营运资本 | 公司汇总 | 不直接改变收入 | 不直接改变毛利率，但影响经营质量 | Q1 OCF `-$4.3M`，库存和应收上升 | 现金流可信度下调；不重复压低需求情景 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 需求、收入确认或利润率低于当前预期，尤其 PM/PCS 拖累和半导体订单放缓 | 公司已有 record backlog、EM 强、A&D orders 强，说明全公司直接跌入悲观不是基准 | PM 质量问题、PCS 低迷、现金流占用、未披露 backlog 绝对值 | 保留 | 下行情景；主要由 PM/PCS、订单延期和现金流占用触发 | 中 | PM/PCS 风险只惩罚 PM/公司汇总，不重复惩罚 EM、A&D 需求和 PO |
+| 基准 | 当前指引、订单节奏和分部 run-rate 正常兑现 | 2026Q1 top-line outlook 上修、FY EPS 指引维持、EM/PO 表现强、backlog 创纪录 | 产品级收入拆分不足，ALD/CPO 证据等级低，PM 仍有拖累 | 保留 | 最可能情景 | 中高 | 贵金属 pass-through 不作为利润证据；只在 net sales 口径处理 |
+| 乐观 | NTM 收入高于当前预期且利润率同步改善 | EM 高利润率、A&D RFQ、PO 修复、semiconductor/A&D order rates 具备多点正向证据 | 需要至少两条主线同步兑现；单靠 AI 主题或 CPO 不能支撑 | 保留 | 有证据的超预期情景 | 中 | 行业景气只能提升需求层级，不能自动提升公司份额和利润 |
+| 极度乐观 | 需求、公司捕获、利润率和执行质量同时突破 | 理论上 EM new metals、国防铍材料、PO 修复和 PCS 出清可同时上修 | 任一核心环节缺少客户、产能、合同或收入确认路径；CPO/光 I/O 未披露量产订单 | 保留 | 低可信 NTM 上限；CPO/光 I/O 单项不进入基准 | 低 | 不能把 RFQ、产品页、行业 TAM、客户总 capex 和远期技术路线相加 |
+
+## 8. 结论
+
+- 最可能情景：基准。Materion NTM 更像 `VA sales 中高个位数到低双位数增长 + EBITDA margin 小幅扩张`，不是 AI 数据中心硬件公司式的收入爆发。合理主口径为 NTM net sales `$2.00-$2.18B`、VA sales `$1.12-$1.20B`、adjusted EBITDA `$245-$275M`、adjusted net income `$125-$140M`。
+- NTM 收入结论：EM 是最清晰的公司可确认收入传导链，Q1 2026 已经进入收入表和利润表；A&D/铍材料是订单证据最强的非 AI 主线；PO 是修复型增量；ALD/new metals 和 CPO/光学只可小比例或上限处理。
+- 利润/现金流结论：利润质量取决于 EM 的 28% 左右 EBITDA/VA 能否维持，以及 PM 质量费用和 PCS 拖累能否收敛。现金流不会自动跟随 EBITDA，因为 backlog 转交付可能增加贵金属、库存和应收占用。
+- 主要传导瓶颈：产品级 backlog、客户、产能、交付时间和取消率披露不足；因此只能把公司 record backlog 和订单率作为 B 级收入基数锚，而不能精确推算产品收入。
+- 乐观情景成立条件：EM 连续多个季度 VA `15%+` 增长且 EBITDA/VA `>28%`；A&D RFQ 明确转 PO；PM product quality issue 费用明显消退；PO 维持双位数 EBITDA/VA；公司继续上修 top-line 或 EPS。
+- 极度乐观情景成立条件：N2/HBM4/Rubin/custom ASIC 提前锁定高纯靶材/ALD 前驱体；国防 `$300M+` RFQ 大比例转合同且 NTM 内交付；PO 获得高端 defense/semiconductor optics 或 AI 光学量产订单；PCS 从拖累变补单；营运资本不吞噬大部分利润。
+- 悲观情景触发条件：半导体订单率转弱、EM VA 增速回落到个位数；PM product quality issue 延续；PCS 继续下滑；国防扩产验收/预算推迟；Q2/Q3 现金流继续弱且库存/应收上升。
+- 后续跟踪数据：EM VA 和 adjusted EBITDA/VA；半导体 order rate；backlog 绝对值或 book-to-bill；A&D RFQ 转 PO；`$65M` 客户投资扩产节点；ALD/new-metal 客户/产能披露；PO VA 和 EBITDA margin；PM special items；经营现金流、库存、应收和 metal consignment fees。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务数据截至 2026Q1（季度结束 2026-04-03，公告/10-Q 发布 2026-04-29）；报告日期 2026-06-12。行业资料使用项目内 2026-06-10 至 2026-06-11 的正式行业调研。
+- 主要收入、订单、指引和利润率来源：
+  - Materion Q1 2026 earnings release / SEC 8-K exhibit（2026-04-29）：`https://www.sec.gov/Archives/edgar/data/1104657/000110465726000026/q12026pressrelease.htm`
+  - Materion Q1 2026 Form 10-Q（2026-04-29）：`https://www.sec.gov/Archives/edgar/data/1104657/000110465726000029/mtrn-20260403.htm`
+  - Materion Q1 2026 earnings presentation（2026-04-29）：`https://s203.q4cdn.com/782025361/files/doc_financials/2026/q1/Materion-Corporation-Q1-2026-Earnings-Presentation.pdf`
+  - Materion May 2026 investor presentation：`https://s203.q4cdn.com/782025361/files/doc_presentation/2026/Materion-Corporation-May-2026.pdf`
+  - Materion Q4/FY2025 earnings release / SEC 8-K exhibit（2026-02-12）：`https://www.sec.gov/Archives/edgar/data/1104657/000110465726000006/q42025pressrelease.htm`
+  - Materion 2025 Form 10-K：`https://www.sec.gov/Archives/edgar/data/1104657/000110465726000011/mtrn-20251231.htm`
+- 产品和技术来源：
+  - Materion AI chips blog（2025-07-16）：`https://www.materion.com/en/insights/blog/materion-helps-meet-rising-demand-for-high-powered-artificial-intelligence-chips`
+  - Materion sputtering targets page：`https://www.materion.com/en/products/electronic-materials/thin-film-deposition-materials/specialty-sputtering-targets`
+  - Materion semiconductor ALD / ion implantation materials page：`https://www.materion.com/en/products/electronic-materials/advanced-chemicals/semiconductor-materials`
+  - Materion telecom and data center materials page：`https://www.materion.com/en/markets/telecom-data-center`
+- 项目内公司和行业资料：
+  - `公司调研/半导体材料_化学品_基板/MTRN_Materion_公司调研_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_硅片、光刻胶与前道材料_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_先进封装材料与热界面材料_2026-06-10.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_硅光材料、光子材料与电光聚合物_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 当前预期锚：公司 Q1 2026 指引为 top-line low-double-digit growth，adjusted EPS `$6.00-$6.50`，并表示对高端更有信心。
+  - FY2027 以后：ALD/new metals、HBM4/N2/BSPDN、国防铍扩产、CPO/optical I/O 和 Precision Optics AI 光学 design-in 是主要远期期权；因缺少 NTM 客户/订单/收入确认路径，未进入基准主表。
+  - 长期 run-rate：公司中期 adjusted EBITDA margin 目标为 `23%`；本报告仅在 NTM 基准中使用 `21.8%-23.0%` adjusted EBITDA/VA，未把长期目标自动外推为 NTM 利润。

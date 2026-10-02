@@ -1,0 +1,46 @@
+{
+  "data": {
+    "asOf": "Fri, Sep 18, 2026",
+    "headers": {
+      "time": "Time",
+      "symbol": "Symbol",
+      "name": "Company Name",
+      "eps": "EPS",
+      "surprise": "% Surprise",
+      "marketCap": "Market Cap",
+      "fiscalQuarterEnding": "Fiscal Quarter Ending",
+      "epsForecast": "Consensus EPS* Forecast",
+      "noOfEsts": "# of Ests"
+    },
+    "rows": [
+      {
+        "eps": "($8.75)",
+        "surprise": "-941.67",
+        "time": "time-not-supplied",
+        "symbol": "BLSM",
+        "name": "BlossomHill Therapeutics, Inc.",
+        "marketCap": "$679,243,520",
+        "fiscalQuarterEnding": "Jun/2026",
+        "epsForecast": "($0.84)",
+        "noOfEsts": "2"
+      },
+      {
+        "eps": "($0.13)",
+        "surprise": "76.79",
+        "time": "time-not-supplied",
+        "symbol": "NEUP",
+        "name": "Neuphoria Therapeutics Inc.",
+        "marketCap": "$19,318,462",
+        "fiscalQuarterEnding": "Jun/2026",
+        "epsForecast": "($0.56)",
+        "noOfEsts": "1"
+      }
+    ]
+  },
+  "message": null,
+  "status": {
+    "rCode": 200,
+    "bCodeMessage": null,
+    "developerMessage": null
+  }
+}

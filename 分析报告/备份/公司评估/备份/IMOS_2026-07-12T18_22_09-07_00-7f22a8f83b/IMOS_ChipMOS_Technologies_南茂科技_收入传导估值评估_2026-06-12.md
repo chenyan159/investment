@@ -1,0 +1,162 @@
+# 公司收入传导与价值传导评估：ChipMOS Technologies 南茂科技（IMOS）
+
+> 研究日期：2026-06-12  
+> 正式输出目录：`分析报告/公司评估/`  
+> 公司代号：IMOS；公司名称：ChipMOS Technologies / 南茂科技  
+> 主口径：NTM，定义为 2026-06 至 2027-05。由于 2026Q2 尚未结束，6 月及之后为经营情景估算。  
+> 货币口径：除特别说明外均为新台币 NT$；美元仅在引用公司原始披露时作为辅助。  
+> 资料边界：使用 `公司调研/`、`行业调研/` 和公司公开财报、月营收、产品页、SEC 文件；未读取、引用或继承 `特征量化/`、Signals、排序或回归结论。  
+> 重要限制：本报告不输出投资评级、目标价、股价区间或估值倍数判断；市场价格不作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM，即 2026-06 至 2027-05。补充口径只用于解释 FY2025、2026Q1、2026 年 4-5 月月营收和 2025Q4 业务结构；不以长期 run-rate、总 TAM 或 AI 数据中心 capex 替代公司 NTM 收入。
+- 当前收入基准、指引和 run-rate：ChipMOS 没有给传统数值型 2026 全年收入/毛利率指引。可见锚点是 FY2025 收入 NT$23.9329B、2026Q1 收入 NT$6.9356B（+25.4% YoY）、2026 年 4 月 NT$2.4605B（+32.2% YoY）、2026 年 5 月 NT$2.3843B（+17.7% YoY）。2026 年 4-5 月平均月营收 NT$2.4224B，简单年化约 NT$29.1B；管理层表述为 AI/data center 相关供需失衡、客户需求可见度延伸至 2026、new capacity 用于 existing customer forecasts 和 long-term supply agreements。
+- 重要产品/业务线：DRAM/DDR4/DDR5 后道封测、Flash/NAND/eSSD/NOR 后道封测、DDIC + gold bump 显示驱动封测、mixed-signal / logic / DDR5 PMIC / AI-related ASIC support、testing service / wafer sort / final test。Testing service 是能力和利润瓶颈层，和产品口径有重叠，公司汇总时不单独相加。
+- NTM 公司收入四情景：悲观 NT$27.0-29.5B；基准 NT$30.5-33.5B；乐观 NT$34.5-38.0B；极度乐观 NT$40.0-44.0B。基准代表当前 run-rate、月营收、管理层需求可见度和 2025Q4 产品结构正常兑现；极度乐观是 NTM 上限，不代表当前预期。
+- 利润或 EBITDA 四情景：公司不披露足够的 NTM D&A，因此 EBITDA 无法可靠量化。净利润四情景估计为：悲观 NT$1.3-1.9B；基准 NT$2.3-3.2B；乐观 NT$3.8-5.2B；极度乐观 NT$5.6-7.2B。核心变量不是收入本身，而是 memory/test 利用率、涨价、材料成本传导和新增产能折旧。
+- 最大传导瓶颈：ChipMOS 的 AI 传导是二阶路径，即 AI/data center -> DRAM、DDR5、NAND/eSSD、存储测试需求 -> 存储客户后道产能紧张 -> ChipMOS 利用率、价格、收入质量改善。没有公开证据显示公司是 NVIDIA GPU、HBM stack、CoWoS 或 CPO 光口直接主链供应商。
+- 最大利润率变量：memory OSAT pricing、testing utilization、产品 mix、金价/BT substrate/电费传导、新增设备折旧和客户是否提供 take-or-pay 或类 take-or-pay 承诺。
+- 最大现金流变量：testing 与 memory bottleneck capacity 的 capex 转收入速度。若新增产能由现有客户预测和 long-term supply agreements 吸收，FCF 可维持正向；若折旧先行、认证延迟或客户需求回落，现金流会先被 capex 和营运资本占用。
+- 可信度：基准中高，乐观中，极度乐观低。高可信的是已在收入表体现的 memory/DDIC/testing 业务；低可信的是 AI-related ASIC support、DDR5 PMIC 大规模放量、HBM/CoWoS/GPU 直接主链收入。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| DRAM / SRAM / DDR4 / DDR5 后道封测 | 2025Q4 DRAM/SRAM 超过收入 20%，约 NT$1.30B/季；2026Q1 估算 NT$1.4-1.6B/季 | 20%-23% | AI/data center 间接传导核心之一；DDR4/DDR5 release to production 支撑需求 | A/B | 进入基准。A 级来自披露收入占比；B 级来自客户需求可见度和 memory price/capacity 表述 | DDR5 module PMIC、高端 logic test 只作期权 |
+| Flash / NAND / eSSD / NOR 后道封测 | 2025Q4 Flash 为收入 29%，约 NT$1.89B/季；2026Q1 估算 NT$1.9-2.2B/季 | 28%-31% | AI cloud storage、enterprise NAND/eSSD 传导最直接的存储线 | A/B | 进入基准。A 级来自 Q4 Flash 占比和 YoY 增速；B 级来自 AI/DC 需求和 LTAs 线索 | PCIe Gen6 eSSD、SOCAMM2 相关测试仅作为需求增强项，不直接等同公司收入 |
+| DDIC + gold bump 显示驱动封测 | 2025Q4 DDIC + gold bump 约收入 40%；2026Q1-Q2 估算 35%-40% | 35%-40% | 现金流和规模基础；auto panel/OLED 有修复，但 AI 基建内容量低 | A | 进入基准，但不按 AI 主线处理 | 更高阶 RDL/WLCSP 或非显示应用为远期期权 |
+| Mixed-signal / logic / DDR5 PMIC / AI-related ASIC support | 2025Q4 mixed-signal 低于收入 10%；AI ASIC support 当前未量化 | 8%-10%，AI ASIC 可验证收入接近 0 | 小基数增量和结构改善期权 | A/C/D | 已披露 mixed-signal 进入基准；DDR5 PMIC/AI ASIC 只在乐观小比例纳入，极度乐观作为上限 | AI-related ASIC support、DDR5 PMIC 客户认证和量产收入 |
+| Testing service / wafer sort / final test | 2025Q4 manufacturing business 中 testing 约收入 24%；2026Q1 估算随 memory 上行 | 服务口径约 24%，与产品口径重叠 | 利润和交付瓶颈；Q4 capex 重点投向 testing | A/B | 作为非加总能力层进入基准，用于判断 memory/logic 可收入化和利润率 | 高功率 AI ASIC、HBM-like 高端测试若无客户披露，不进基准 |
+| HBM stack / CoWoS / GPU package / CPO 光口直接收入 | 当前公开可验证收入为 0 或未披露 | 0 | 主题相关但公司直接证据不足 | E | 排除 NTM 基准，不纳入公司收入 | 仅作附录跟踪，需客户、产品、交付和收入确认路径 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 ChipMOS 份额、收入确认或利润率。由于公司不披露按颗数、wafer 数、test hour 或 package unit 的需求量，本节统一用“当前 NTM 需求锚 = 100”的指数表示需求强弱；指数变化是需求池变化，不是公司收入变化。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| DRAM / DDR4 / DDR5 后道封测 | 2025Q4 DRAM/SRAM >20% 收入；DDR4/DDR5 release to production；AI/data center 供需失衡支撑 high-value memory | 85-95 | 100 | 115-130 | 145-165 | -15 至 +65 指数点 | 悲观低于当前 memory run-rate；基准符合；乐观/极度乐观要求服务器内存和 DDR5 后道继续吃紧 | 正向：2026Q1 +25.4% YoY、3-5 月强月营收、客户需求可见度 through 2026。反证：未披露 HBM 主链收入，传统 DRAM 周期可能反转 |
+| Flash / NAND / eSSD / NOR 后道封测 | 2025Q4 Flash 29% 收入；NAND YoY 强；AI cloud datacenter 拉动 enterprise NAND/eSSD | 80-95 | 100 | 115-135 | 150-180 | -20 至 +80 指数点 | 基准为 AI storage/eSSD 和普通 Flash 修复正常兑现；乐观需 eSSD 与 NAND 客户扩产更强 | 正向：2025Q4 Flash >46% YoY、NAND >70% YoY；行业资料指 PCIe Gen6 eSSD/SOCAMM2 推动存储测试。反证：Flash 库存周期和价格波动大 |
+| DDIC + gold bump 显示驱动封测 | 2025Q4 DDIC + gold bump 约 40% 收入；auto panel 与 OLED 抵消 TV/手机弱需求 | 85-95 | 100 | 110-120 | 125-140 | -15 至 +40 指数点 | 需求主要和汽车/OLED/面板周期比，不和 AI 基建热度比 | 正向：auto panel、OLED mix 改善；gold bump 有成熟客户。反证：TV/smartphone demand pockets 仍弱，AI rack/GPU 内容量接近 0 |
+| Mixed-signal / logic / DDR5 PMIC / AI-related ASIC support | 2025Q4 mixed-signal <10%；公司提到 PMIC of DDR5 modules、高端 logic test、AI-related ASIC support，但无订单金额 | 80-90 | 100 | 130-170 | 250-350 | -20 至 +250 指数点 | 小基数业务相对弹性大；基准只承认已披露 mixed-signal 正常增长 | 正向：AI power/PMIC、DDR5 module、logic test 需求方向正确。反证：无客户名、认证节点、量产收入和 backlog |
+| Testing service / wafer sort / final test | 2025Q4 testing 约 24% 收入；AI/HBM/DRAM/eSSD 增加 test insertion、test time 和认证复杂度 | 90-100 | 100 | 120-145 | 170-220 | -10 至 +120 指数点 | 基准为现有客户 testing load 正常提升；极度乐观要求 test capacity 成为局部硬瓶颈 | 行业资料显示 AI 测试不是线性扩产，瓶颈在 test time、thermal、probe 和 customer qualification。反证：ChipMOS 不是公开高端 HBM/GPU 主测试供应商 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断需求中哪些能进入 ChipMOS NTM 收入表，以及当前可收入化基数；不判断增长和利润率。产品口径用于公司收入加总，testing service 为能力层，和产品收入重叠，不单独加到公司收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| DRAM / DDR4 / DDR5 后道封测 | 2025Q4 DRAM/SRAM >20% 收入；2026Q1 产品 mix 未披露，按 Q4 结构估算 | 间接受益于 AI/data center memory；非 HBM 直接主链 | 利用率和测试负载提升时利润弹性中高；材料/折旧仍约束 | NT$5.4-6.2B | NT$6.6-7.8B | NT$8.8-10.5B | NT$11.5-14.0B | 基准符合当前 run-rate；乐观高于当前预期；极度乐观仅为上限 | A/B | 是 | 已披露收入占比、2026 月营收和客户需求可见度 | 基准纳入；HBM/GPU 直接收入排除 |
+| Flash / NAND / eSSD / NOR 后道封测 | 2025Q4 Flash 29% 收入；NAND 与 NOR 均 YoY 增长 | 间接受益于 AI storage/eSSD；普通 Flash 也受周期影响 | 高利用率正向，但库存和 ASP 周期反复大 | NT$7.4-8.6B | NT$9.0-10.8B | NT$12.0-14.5B | NT$16.0-19.0B | 基准符合当前 memory 强势；乐观需 enterprise NAND/eSSD 加速 | A/B | 是 | Q4 Flash 占比、NAND 增长、2026 月营收和 LTAs 线索 | 基准纳入；不能把云厂 storage capex 直接映射成公司收入 |
+| DDIC + gold bump 显示驱动封测 | 2025Q4 DDIC + gold bump 约 40%；ChipMOS 产品页显示 gold bump、COF/COG/COP 能力 | 主要为显示驱动直接业务；AI 间接性很弱 | 稳定现金流，但增长和利润率弱于 memory/test | NT$8.8-10.2B | NT$10.0-11.5B | NT$12.0-13.8B | NT$14.5-16.5B | 基准为温和修复；乐观需 auto/OLED + 显示周期同步改善 | A | 是 | 已披露业务占比和产品能力 | 基准纳入，但不作为 AI 主线 |
+| Mixed-signal / logic / DDR5 PMIC / AI-related ASIC support | 2025Q4 mixed-signal <10%；AI ASIC support 无可量化收入 | mixed-signal 直接；AI ASIC/PMIC 目前是可参与机会，不等于可确认收入 | 若进入高端 logic/test，利润结构改善；当前不可靠量化 | NT$2.4-3.1B | NT$3.2-4.2B | NT$4.8-6.5B | NT$7.5-10.0B | 基准只承认现有 mixed-signal；AI ASIC 仅上限 | A/C/D | 部分进入 | A：已披露 mixed-signal；C/D：PMIC/AI ASIC 只有管理层方向性披露 | Mixed-signal 进基准；PMIC/AI ASIC 进乐观/极度乐观，不进基准主收入 |
+| Testing service / wafer sort / final test | 2025Q4 manufacturing business 中 testing 约 24%；Q4 capex 55.2% 投向 testing | 直接服务收入，但和上述产品收入重叠 | 利润关键在利用率、测试时长、设备折旧和客户付费能力 | NT$6.8-7.8B | NT$8.0-9.5B | NT$10.0-12.5B | NT$14.0-17.0B | 基准符合现有客户 load；乐观需 capex 快速转产 | A/B | 作为非加总能力层进入 | 已披露服务占比和 capex 方向 | 不单独加总；用于校准 memory/logic 收入兑现和利润质量 |
+| HBM stack / CoWoS / GPU package / CPO 光口直接收入 | 无公开客户、项目、订单或收入披露 | 主题相关，非可确认收入 | 若无直接项目，利润属性不可用 | NT$0 | NT$0 | NT$0 | NT$0 | 不属于当前预期 | E | 否 | 缺客户、产品、交付、价格和确认路径 | 排除 NTM；仅作后续跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求和收入基数出发，判断每条业务在 NTM 内对 ChipMOS 收入和利润质量的贡献。公司不披露产品级毛利率、D&A 和经营费用分摊，因此产品级利润金额无法可靠量化；表中利润贡献以“利润率方向 + 经营利润弹性来源/约束”表达，不用行业 TAM 或客户总预算替代公司收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| DRAM / DDR4 / DDR5 后道封测 | 悲观 | NT$5.4-6.2B | 无法可靠量化；利润弹性低，部分收入被低利用率/折旧吞噬 | 低于当前结构 | 低于当前预期 | 若 DDR4/DDR5 客户拉货放缓或价格传导失效 | 保留为下行情景 | 未披露 HBM 直接收入；DRAM 周期回落 |
+| DRAM / DDR4 / DDR5 后道封测 | 基准 | NT$6.6-7.8B | 无法可靠量化；对公司毛利率正向，主要来自 utilization 与 price | 小幅上行 | 符合当前预期 | Q4 DRAM/SRAM >20% 收入；2026Q1 和 3-5 月收入强 | 保留 | 产品毛利未披露；客户集中和认证节奏 |
+| DRAM / DDR4 / DDR5 后道封测 | 乐观 | NT$8.8-10.5B | 无法可靠量化；利润率改善需来自客户锁产能、涨价和测试负载 | 明显上行 | 高于当前预期 | customer demand visibility through 2026；take-or-pay 扩产表述 | 保留但需月营收验证 | 不能把 HBM/GPU demand 直接当公司收入 |
+| DRAM / DDR4 / DDR5 后道封测 | 极度乐观 | NT$11.5-14.0B | 无法可靠量化；只有供不应求和客户承诺同时成立才可大幅扩张 | 大幅上行但低可信 | 显著高于当前预期 | 多客户抢 memory/backend capacity；新增设备快速认证 | 下移为上限 | 无客户金额、无 HBM 主链披露 |
+| Flash / NAND / eSSD / NOR 后道封测 | 悲观 | NT$7.4-8.6B | 无法可靠量化；Flash 库存调整会压低利润质量 | 下行或持平 | 低于当前预期 | eSSD/NAND 拉货低于预期，普通 Flash 库存反复 | 保留 | NAND/Flash ASP 周期波动 |
+| Flash / NAND / eSSD / NOR 后道封测 | 基准 | NT$9.0-10.8B | 无法可靠量化；对毛利率正向但弱于高端 HBM 主链 | 小幅上行 | 符合当前预期 | Q4 Flash 29% 收入，NAND YoY 强；AI cloud storage 需求支撑 | 保留 | 公司未披露 enterprise eSSD 客户和份额 |
+| Flash / NAND / eSSD / NOR 后道封测 | 乐观 | NT$12.0-14.5B | 无法可靠量化；若 eSSD 和 NAND 测试负载高，经营杠杆显著 | 上行 | 高于当前预期 | 行业资料显示 PCIe Gen6 eSSD、SOCAMM2 和 AI storage 提升测试复杂度 | 保留 | 不得用云厂 storage 总预算替代公司可确认收入 |
+| Flash / NAND / eSSD / NOR 后道封测 | 极度乐观 | NT$16.0-19.0B | 无法可靠量化；需价格、份额、产能认证同时成立 | 大幅上行但低可信 | 显著高于当前预期 | 多年 LTA / take-or-pay 公开化；新增 capacity 满载 | 下移为上限 | Flash 周期若反转，收入与利润同步回落 |
+| DDIC + gold bump 显示驱动封测 | 悲观 | NT$8.8-10.2B | 无法可靠量化；固定成本和金价/材料成本压制 | 下行 | 低于当前预期 | TV/smartphone 或面板客户需求弱；金价传导不足 | 保留 | AI 基建内容量近零 |
+| DDIC + gold bump 显示驱动封测 | 基准 | NT$10.0-11.5B | 无法可靠量化；稳定现金流，利润率温和 | 持平到小幅上行 | 符合当前预期 | Q4 auto panel/OLED 改善，gold bump 约 19% 产品收入 | 保留 | 成熟业务，增长慢 |
+| DDIC + gold bump 显示驱动封测 | 乐观 | NT$12.0-13.8B | 无法可靠量化；auto/OLED mix 改善可提升利润质量 | 小幅上行 | 高于当前预期 | 汽车面板复苏、OLED 补库 | 保留 | 不能因 AI 题材上调 DDIC |
+| DDIC + gold bump 显示驱动封测 | 极度乐观 | NT$14.5-16.5B | 无法可靠量化；利润改善仍弱于 memory/test | 上行但非 AI 主线 | 高于当前预期但可信度低 | 显示周期与 auto/OLED 同步强修复 | 下移为乐观上限 | 传统周期业务，不改变公司 AI 传导本质 |
+| Mixed-signal / logic / DDR5 PMIC / AI ASIC support | 悲观 | NT$2.4-3.1B | 无法可靠量化；研发/认证投入先行，收入小 | 持平或下行 | 低于当前预期 | 新项目认证延迟，现有 mixed-signal 仅随周期 | 保留 | 无客户项目名 |
+| Mixed-signal / logic / DDR5 PMIC / AI ASIC support | 基准 | NT$3.2-4.2B | 无法可靠量化；小幅改善，主要是现有 mixed-signal | 小幅上行 | 符合当前预期 | 2025Q4 mixed-signal <10% 收入，管理层称 2026 有动能 | 保留 | AI ASIC/PMIC 不进入基准主线 |
+| Mixed-signal / logic / DDR5 PMIC / AI ASIC support | 乐观 | NT$4.8-6.5B | 无法可靠量化；若高端 logic test 或 DDR5 PMIC 量产，利润质量改善 | 上行 | 高于当前预期 | PMIC of DDR5 modules、AI-related ASIC support 管理层方向 | 保留但折扣 | 需要客户、认证、pilot lot 和量产收入 |
+| Mixed-signal / logic / DDR5 PMIC / AI ASIC support | 极度乐观 | NT$7.5-10.0B | 无法可靠量化；高毛利可能性较强但证据低 | 大幅上行但低可信 | 显著高于当前预期 | AI ASIC support 形成可披露大客户订单 | 下移为上限/附录跟踪 | 当前只有 C/D 级证据 |
+| Testing service / wafer sort / final test | 悲观 | NT$6.8-7.8B，非加总 | 无法可靠量化；test floor 利用率不升，折旧压力高 | 下行 | 低于当前预期 | capex 转收入慢，客户拉货低于预期 | 保留 | 与产品收入重叠，不得重复加总 |
+| Testing service / wafer sort / final test | 基准 | NT$8.0-9.5B，非加总 | 无法可靠量化；对公司毛利率正向，是 memory 兑现关键 | 小幅上行 | 符合当前预期 | Q4 testing 约 24%；行业测试复杂度上升 | 保留 | 公司不是公开 HBM/GPU 主测试供应商 |
+| Testing service / wafer sort / final test | 乐观 | NT$10.0-12.5B，非加总 | 无法可靠量化；若 test time 和 utilization 上升，利润弹性强 | 明显上行 | 高于当前预期 | AI memory/eSSD/logic test 插入次数和客户认证增加 | 保留 | 需设备、人力、客户 qual 同步 |
+| Testing service / wafer sort / final test | 极度乐观 | NT$14.0-17.0B，非加总 | 无法可靠量化；只有成为客户局部瓶颈才成立 | 大幅上行但低可信 | 显著高于当前预期 | 新增 test capacity 被 LTAs/take-or-pay 锁定 | 下移为上限 | 若收入已在 DRAM/Flash/logic 中体现，不能重复计算 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品口径收入合成为 ChipMOS NTM 公司收入、毛利率、经营利润率、净利润和现金流方向。Testing service 为非加总能力层，避免和 DRAM/Flash/DDIC/mixed-signal 产品收入重复计算。绝对增速以 FY2025 收入 NT$23.9329B 为比较基准；相对预期以当前 Q1+4-5 月 run-rate、管理层需求可见度和基准情景 NT$30.5-33.5B 为锚。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | NT$27.0-29.5B | +13%-23% | 低于当前 run-rate 和管理层需求可见度；绝对收入仍可增长 | 12.5%-14.0% | 5.0%-6.8% | EBITDA 无法可靠量化；净利润 NT$1.3-1.9B | FCF 小幅正到接近持平；capex 和折旧压力上升 | 中 | memory 需求低于预期、Flash 库存回落、DDIC 弱、材料成本未完全传导 |
+| 基准公司 | NT$30.5-33.5B | +27%-40% | 符合当前预期；Q2 强势、H2 正常兑现、低证据 AI 机会保守处理 | 14.5%-16.2% | 7.5%-9.5% | EBITDA 无法可靠量化；净利润 NT$2.3-3.2B | FCF 正向但低于净利润质量；新增 testing/memory capex 占用现金 | 中高 | memory/test 利用率、涨价覆盖材料和折旧、客户 forecasts 转订单 |
+| 乐观公司 | NT$34.5-38.0B | +44%-59% | 高于当前预期约 10%-15%；不是单一小项目造成 | 16.5%-18.8% | 10.0%-12.8% | EBITDA 无法可靠量化；净利润 NT$3.8-5.2B | FCF 正向；若 take-or-pay 或 LTA 明确，现金转换更稳 | 中 | 新产能认证、客户锁产能、memory OSAT 涨价和 testing capex 转收入 |
+| 极度乐观公司 | NT$40.0-44.0B | +67%-84% | 显著高于当前预期；只代表 NTM 上限 | 19.0%-22.0% | 13.5%-16.5% | EBITDA 无法可靠量化；净利润 NT$5.6-7.2B | FCF 不一定同步放大；capex、营运资本和设备交期可能吃掉现金 | 低 | 需要 memory、testing、mixed-signal/AI ASIC、DDIC 修复和执行质量同时突破 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景位置。校准动作只使用保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 +25.4% YoY，2026 年 4 月 +32.2%、5 月 +17.7% | 需求、收入基数、公司汇总 | 支持基准收入 NT$30.5-33.5B，并给乐观情景留空间 | 收入强不自动等于利润率扩张 | 月营收是最重要高频验证指标 | 基准保留；乐观保留 |
+| 管理层称客户需求可见度 through 2026，new capacity 用于 existing customer forecasts 和 long-term supply agreements | 收入基数、执行可信度 | 强化 memory/test 可收入化路径 | 若客户承诺足够强，可支撑涨价和利用率 | forecasts 不是不可取消 backlog，仍需订单/协议金额 | 基准保留；乐观保留但需折扣 |
+| 2025Q4 memory products 接近 50% 收入，Q4 memory >55% YoY | 产品贡献、公司组合 | 将收入增长主线从 DDIC 切到 memory | memory mix 上升是毛利率改善前提 | 若新增产能用于 memory bottleneck，capex 回报更好 | 基准保留 |
+| Q4 2025 毛利率 14.3%，2026Q1 毛利率约 13.8% | 利润率 | 不限制收入基准 | 限制极度乐观利润率；说明涨价和利用率尚未让毛利率非线性扩张 | Q2/H1 毛利率需验证 | 极度乐观下移为上限 |
+| 公司无 HBM stack、CoWoS、GPU package、CPO 光口直接客户/收入披露 | 收入基数、产品贡献 | 排除直接 AI 主链收入 | 排除直接高端封装利润池 | 防止把 AI TAM、HBM 需求或 CoWoS capacity 直接映射到 IMOS | HBM/CoWoS/GPU/CPO 直接收入排除；仅作跟踪 |
+| DDIC + gold bump 仍约 35%-40% 收入，但 AI 内容量低 | 公司组合 | 稳定收入，但不是 AI 成长主线 | 若 TV/手机弱，拖累毛利率 | DDIC 周期和金价/材料传导影响现金流 | 基准保留；AI 加成排除 |
+| Mixed-signal / PMIC / AI ASIC 证据等级不足 | 产品贡献 | 基准只纳入现有 mixed-signal，不纳入未量化 AI ASIC 大单 | 若量产可提升利润质量，但当前不可确认 | 认证周期和客户项目缺失 | AI ASIC/PMIC 大额收入下移到乐观/附录 |
+| Testing capex 与行业测试复杂度上升 | 产品贡献、利润率、执行 | 提高 memory/logic 转收入上限 | utilization 高时利润弹性强，折旧先行时反向 | 测试设备、人力、客户 qual 都是执行瓶颈 | 基准保留；乐观保留 |
+| 合同/backlog 披露不足，客户 forecasts 不等于 firm backlog | 证据可信度 | 限制极度乐观收入确定性 | 不直接惩罚利润率，除非收入落空 | 需要月营收和客户协议继续验证 | 极度乐观下移为低可信上限 |
+| FX、金价、BT substrate、电费 | 利润率、现金流 | 不直接下调需求 | 若传导不充分，毛利率和净利率下移 | FCF 受材料库存和价格重谈影响 | 只在利润率/现金流处理，不重复惩罚收入 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 收入仍增长但低于当前 run-rate；memory/test 兑现不足 | 2026 年 3-5 月月营收强，使深度下行情景概率下降 | Flash 周期、DDIC 低迷、材料成本和汇率仍可压利润 | 保留 | 下行情景，NT$27.0-29.5B | 中 | 存储需求回落只在需求/收入处理一次；不再重复扣减 mixed-signal 和 DDIC |
+| 基准 | 当前预期正常兑现，A/B 级证据支撑 memory、Flash、DDIC 和 testing | Q1、4-5 月收入、Q4 memory mix、LTAs/forecasts、testing capex | 无正式 backlog；Q1 毛利率未继续高于 Q4 | 保留 | 最可能情景，NT$30.5-33.5B | 中高 | 汇率/材料只在利润率和现金流处理，不下调需求基准 |
+| 乐观 | 收入高于基准，memory/test 利用率、价格和新产能更强 | 客户需求可见度 through 2026；new capacity 对应 forecasts/LTAs；take-or-pay 表述 | 缺订单金额、客户名和分产品毛利；DDIC 不是 AI 主线 | 保留 | 乐观情景，NT$34.5-38.0B | 中 | AI 行业景气只能提升 memory/test，不能重复上调 DDIC 和 HBM 直接收入 |
+| 极度乐观 | NTM 收入和利润率同时非线性上修 | 若 memory 供需失衡持续、testing 成为瓶颈、客户锁产能、AI ASIC/PMIC 量产，可成立收入上限 | HBM/CoWoS/GPU/CPO 无直接证据；AI ASIC/PMIC 缺客户/认证/收入；Q1 毛利率未非线性扩张 | 下移 | 低可信 NTM 上限，NT$40.0-44.0B；AI ASIC/直接主链部分移入附录/仅作跟踪 | 低 | 同一“AI 主链无证据”只用于排除直接收入，不再重复惩罚已验证 memory/test |
+
+## 8. 结论
+
+- 最可能情景：基准情景。IMOS NTM 收入最可能落在 NT$30.5-33.5B，核心来自 DRAM/DDR5、Flash/NAND/eSSD、DDIC/gold bump 的正常兑现，以及 testing capacity 对 memory 后道收入的支撑。该情景下利润率较 FY2025 改善，但不应假设像 HBM 厂、CoWoS 平台或高端 ATE 公司那样非线性扩张。
+- NTM 收入结论：公司经营弹性是真实的，但传导路径是二阶存储后道和测试，不是 AI GPU/HBM/CoWoS 直接内容量。基准收入高于 FY2025 约 27%-40%；乐观需要 memory/test 持续供不应求和客户锁产能；极度乐观必须有更明确的协议、产能和新业务量产证据。
+- 利润/现金流结论：基准净利润 NT$2.3-3.2B、毛利率 14.5%-16.2% 更符合当前证据。利润质量取决于 memory OSAT pricing 是否覆盖金价、BT substrate、电费和折旧；testing capex 若快速转收入，利润率上行，否则 FCF 会先承压。
+- 主要传导瓶颈：需求端不是最大问题，最大问题是可确认收入和利润留存。AI/cloud memory 需求必须经过客户订单、后道产能、测试设备、人力/工程、客户认证、价格重谈和收入确认，才会变成 ChipMOS 的收入和利润。
+- 乐观情景成立条件：2026 年 6 月营收不低于约 NT$2.35B；2026H1 毛利率达到或超过 15%；memory revenue share 维持或高于 52%；testing utilization 上升；公司披露更多 LTA、take-or-pay、客户 forecasts 转订单或新增产能吸收证据。
+- 极度乐观情景成立条件：月营收连续多月接近或超过 NT$3.0B；新增 memory/test capacity 快速认证并被客户锁定；Flash/eSSD 与 DDR5 同时强；mixed-signal/DDR5 PMIC/AI-related ASIC support 出现可披露客户、pilot lot、量产收入或订单金额；毛利率接近或超过 19%。
+- 悲观情景触发条件：月营收回落到 NT$2.1B 以下且连续走弱；H1 毛利率低于 13%；memory share 回落到 45% 以下；客户 forecasts 未转为订单；材料成本、汇率或折旧压低利润率；DDIC/显示周期重新下行。
+- 后续跟踪数据：2026 年 6 月月营收、2026Q2 财报、H1 毛利率和经营利润率、memory/Flash/DRAM/DDIC mix、testing capex 转收入、LTA/take-or-pay 披露、AI-related ASIC/DDR5 PMIC 认证和量产信息、金价/BT substrate/电费传导情况。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新正式经营数据截至 2026-06-10 发布的 2026 年 5 月月营收；2026Q1 财务数据截至 2026-03-31；2025Q4/FY2025 数据截至 2025-12-31。
+- 主要收入、订单、指引和利润率来源：
+  - ChipMOS 2026Q1 Results：2026Q1 收入 NT$6.9356B、+6.4% QoQ、+25.4% YoY；净利润 NT$504.9M；FCF NT$1.1093B；现金 NT$12.3869B；管理层关于 AI/data center demand-supply imbalance 的评论。
+  - ChipMOS 2026 年 3 月/Q1 月营收公告：2026Q1 收入 NT$6.9356B，3 月收入 NT$2.5016B，Q1 +25.4% YoY。
+  - ChipMOS 2026 年 4 月月营收公告：4 月收入 NT$2.4605B，+32.2% YoY，客户需求可见度延伸至 2026。
+  - ChipMOS 2026 年 5 月月营收公告：5 月收入 NT$2.3843B，+17.7% YoY，new capacity 用于 existing customer forecasts 和 long-term supply agreements。
+  - ChipMOS 2025Q4/FY2025 results 与 transcript：Q4 收入 NT$6.5211B，FY2025 收入 NT$23.9329B；Q4 manufacturing mix 中 assembly >31%、testing about 24%、wafer bumping about 22%；产品口径中 DDIC just under 21%、gold bump about 19%、DRAM/SRAM over 20%、memory products just under 50%、Flash 29%、mixed-signal just under 10%。
+  - ChipMOS 产品页：assembly services、test services、bumping services、turnkey solution。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - 本报告不把 FY2026/FY2027 或长期 run-rate 作为主表口径。远期期权包括 AI-related ASIC support、DDR5 module PMIC、高端 logic test、HBM/CoWoS/GPU/CPO 直接项目；除非出现客户、产品、交付时间表和可确认收入，否则不进入 NTM 基准。
+- 主要来源：
+  - ChipMOS News Releases：https://chipmostechnologiesinc.gcs-web.com/news-releases
+  - ChipMOS 2026Q1 Results PDF：https://chipmostechnologiesinc.gcs-web.com/static-files/9b3e494b-5e2f-4eda-93af-42cfcdba4996
+  - ChipMOS May 2026 Revenue PR：https://www.prnewswire.com/news-releases/chipmos-reports-17-7-yoy-increase-in-may-2026-revenue-302796285.html
+  - ChipMOS April 2026 Revenue PR：https://www.chipmos.com/english/news/news-detail.aspx?NID=230
+  - ChipMOS March 2026 / Q1 Revenue PR：https://www.chipmos.com/english/news/news-detail.aspx?NID=229
+  - ChipMOS Q4/FY2025 Results PR：https://www.prnewswire.com/news-releases/chipmos-reports-fourth-quarter-and-full-year-2025-results-302695386.html
+  - ChipMOS Q4/FY2025 Transcript PDF：https://chipmostechnologiesinc.gcs-web.com/static-files/0b09b826-c72c-4ba8-a5b3-df33507cdaa8
+  - ChipMOS SEC 20-F filing index：https://www.sec.gov/Archives/edgar/data/control/000119312526153743/0001193125-26-153743-index.htm
+  - ChipMOS Assembly Services：https://www.chipmos.com/english/product/detail.aspx?MID=5
+  - ChipMOS Test Services：https://www.chipmos.com/english/product/detail.aspx?MID=1
+  - ChipMOS Bumping Services：https://www.chipmos.com/english/product/detail.aspx?MID=6
+  - ChipMOS TurnKey Solution：https://www.chipmos.com/english/product/detail.aspx?MID=15
+  - 项目内公司资料：`公司调研/封测_检测_计量_光罩/IMOS_ChipMOS_Technologies_南茂科技_公司调研_2026-06-11.md`
+  - 项目内行业资料：`行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-06-11.md`
+  - 项目内行业资料：`行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-06-11.md`
+  - 项目内行业资料：`行业调研/产业背景/顶级会议信息/conference_update_ectc_2026_2026-06-11.md`
+  - 项目内行业资料：`行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+  - 项目内行业资料：`行业调研/AI服务器_存储_芯片/行业调研_封装基板、中介层与RDL_2026-06-10.md`

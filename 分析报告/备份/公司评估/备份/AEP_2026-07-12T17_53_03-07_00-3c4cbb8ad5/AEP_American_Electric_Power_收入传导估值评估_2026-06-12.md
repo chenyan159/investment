@@ -1,0 +1,177 @@
+# 公司收入传导与价值传导评估：American Electric Power（AEP）
+
+报告日期：2026-06-12  
+主口径：NTM，约 2026Q2-2027Q1 / 未来 12 个月。  
+补充口径：FY2026 指引、2026-2030 资本计划、2030 前合同负荷和远期期权。  
+资料边界：本报告使用 `公司调研/`、`行业调研/` 和 AEP / DOE / LBNL / Goldman Sachs 等公开资料；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归或排序结果。  
+输出边界：只评估 AEP 单家公司从行业需求到 NTM 收入、利润、现金流和经营价值的传导；不做全公司排序，不给投资评级，不输出目标价，不使用金融市场价格或估值倍数作为经营证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：NTM 主表用未来 12 个月确认收入和经营利润；`63GW` 2030 前合同负荷、`$78B` 2026-2030 资本计划、Piketon / Wyoming fuel cell / SMR 等只作为中长期 rate base 和远期期权，不直接替代 NTM 收入。
+- 当前收入基准、指引和 run-rate：2025 收入 `$21.9B`、2025 operating earnings `$3.19B` / EPS `$5.97`；2026Q1 revenue `$6.020B`、GAAP earnings `$874M`、operating earnings `$891M` / EPS `$1.64`；2026 operating EPS 指引 `$6.15-$6.45`，对应约 `$3.35-$3.51B` operating earnings run-rate，仍是 NTM 利润锚。
+- 重要产品/业务线：1）存量受监管售电与基础客户服务；2）数据中心/工业大负荷电力服务；3）输电与高压互联资产；4）配电与本地接入；5）新发电资源与容量；6）Generation & Marketing 能源营销；7）大负荷 tariff / 合同结构；8）低碳/先进电源期权。
+- NTM 公司收入四情景：悲观 `$22.6-$23.4B`；基准 `$23.7-$24.7B`；乐观 `$24.8-$26.0B`；极度乐观 `$26.0-$27.4B`。基准代表 2026 指引、Q1 run-rate、7GW/10GW 负荷节奏和已披露资本计划正常兑现；极度乐观需要更多 LOA 转 ESA、2027 负荷前置通电、tariff 快速获批和供应链同步顺利。
+- 利润或 EBITDA 四情景：AEP 的经营价值不应看 revenue alone，因为燃料、购电和部分能源成本是 pass-through。基准 operating earnings 约 `$3.35-$3.55B`，接近 2026 指引；乐观约 `$3.55-$3.80B`；极度乐观约 `$3.80-$4.10B`；悲观约 `$3.15-$3.35B`。
+- 最大传导瓶颈：从 `ESA/LOA / interconnection queue` 到真实 `energization` 的转换。`190GW` active queue 不是收入；`63GW` contracted load 也不是 NTM 全部收入，必须经过客户建设、输电/配电升级、发电资源、监管批准和上电日期。
+- 最大利润率变量：输电和配电 rate base 的 allowed ROE、regulatory lag、O&M 控制、燃料/购电 pass-through、AEP Texas / AEP Ohio 大负荷客户是否按 minimum demand / upfront funding 承担成本。
+- 最大现金流变量：`$78B` 五年 capex 的年度执行、客户预付款/抵押/termination fee、债务和股权融资窗口、FFO/debt 能否维持在公司目标 `14%-15%` 附近。
+- 可信度：基准为中高；悲观为中；乐观为中；极度乐观为低到中。AEP 的需求证据很强，但 NTM 收入和利润弹性受监管、施工和融资节奏限制。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 存量受监管售电与基础客户服务 | 2026Q1 VIU revenue `$3.443B`、T&D revenue `$1.609B`；合计 Q1 总收入锚约 `$5.052B`，含内部/传导项 | 2026Q1 公司 total revenue 约 `84%` before eliminations；对外收入约 `82%` | 当前收入和客户底座 | A | 进入基准；作为 NTM 收入主底座 | 无 |
+| 数据中心/工业大负荷电力服务 | 直接数据中心收入未披露；`63GW` 2030 前 contracted load，约 `89%-90%` 数据中心；2026E/2027E 负荷节奏 `7GW/10GW` | 当前收入占比无法可靠量化；大概率低个位数到中个位数，未来 rate base 权重大 | 最大增量需求 | B，部分 LOA 为 C | 基准只纳入 2026-2027 可见通电和已进入收入/指引的部分；远期 GW 只作补充 | Piketon 10GW、2030 前 63GW 全量 |
+| 输电与高压互联资产 | AEP Transmission Holdco 2026Q1 revenue `$598M`、operating earnings `$209M`；公司披露 broader transmission business 贡献 2026 operating earnings `>50%` | 外部收入小，但利润和 rate base 权重高 | 利润质量和 AI 上电闸门 | A/B | 进入基准；按已披露 `$33B` 2026-2030 transmission capex、PJM/SPP awards 和当前 earnings run-rate 处理 | Piketon transmission、additional capital `>$10B` |
+| 配电与本地接入 | T&D 2026Q1 revenue `$1.609B`、operating earnings `$237M`；AEP Ohio / AEP Texas commercial load 已明显增长 | 2026Q1 revenue 约 `26%-27%` gross segment anchor | 数据中心最后一公里 | A/B | 进入基准；高增部分需看客户通电和 rider / base rate recovery | 更多州大负荷接入复制 |
+| 新发电资源与容量 | 2026-2030 generation capex `$24B`；已锁定 `>10GW` gas turbine capacity；项目多在后五年期 | 当前收入嵌在 VIU/G&M；无法可靠拆出 | 上电可靠性和利润兑现条件 | B/C | NTM 只纳入已在收入表/指引中的资源和建设期 AFUDC；新增燃机/燃料电池大多不进 NTM 基准收入 | fuel cell、SMR、更多 dedicated generation |
+| Generation & Marketing 能源营销 | 2026Q1 revenue `$971M`、operating earnings `$90M` | 2026Q1 gross segment revenue 约 `16%`；利润占比较低 | 抵消项、能源价格和 pass-through | A | 进入基准但降权；不作为 AI 主线 | 客户能源解决方案 |
+| 大负荷 tariff / 合同结构 | 不单独披露收入；Ohio DCT 已生效，含 25MW 门槛、load study fee、LOA/ESA、minimum demand、collateral、exit fee | 不是收入线 | 决定收入可确认性和成本不转嫁 | B | 进入基准作为风险缓释和现金流保护，不作为独立收入 | 州际复制成行业模板 |
+| 低碳/先进电源期权 | 当前 NTM 收入小；Wyoming fuel cell、SMR early-site work 仍需条件和审批 | 无法可靠量化 | 长期结构变化 | C/D | 不进入 NTM 基准；仅进入乐观上限、极度乐观或附录跟踪 | 2030 后 24/7 clean power |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不评估 AEP 的份额、收入确认或利润率。需求单位按业务线选择 `GW`、capex、负荷、监管项目、客户合同或电量；所有相对判断均相对 AEP 当前披露、2026 指引、`7GW/10GW` 年度节奏、`$78B` 资本计划和可见订单/客户节奏。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 存量受监管售电与基础客户服务 | 2025 revenue `$21.9B`；2026Q1 revenue `$6.020B`，同比 `+10.2%`；AEP 5.6M 客户、11 州服务区 | 天气/工商业负荷弱于正常，普通客户电价压力抑制消费；整体电量增长低于 2026 指引 | 普通住宅/商业/工业需求正常，rate changes 和已通电负荷支持低双位数以内收入增长 | 商业/工业 load 超预期且不被住宅疲弱抵消 | 传统客户与大负荷同时超预期，且 pass-through 不压低利润质量 | NTM 公司收入相对 2025 `$21.9B` 约 `+3%` 到 `+25%` 区间，主因是负荷、燃料/购电传导和通电节奏 | 基准=符合当前 run-rate；悲观=低于当前预期；乐观=高于当前预期 | AEP Q1 revenue / earnings；反证是天气、费率争议、普通客户 affordability |
+| 数据中心/工业大负荷电力服务 | `63GW` contracted load by 2030；约 `89%-90%` 数据中心；`190GW` active queue；2026E/2027E `7GW/10GW` | 2026/2027 计划负荷明显延迟，LOA 转 ESA 慢，客户建设或 GPU/融资推迟；`7GW/10GW` 中可通电部分下修 | 2026 `7GW` 和 2027 `10GW` 节奏正常推进，NTM 只确认已通电或接近通电收入 | 2027 `10GW+`，部分 2028 负荷提前锁定并进入工程/收入确认路径 | `>12GW` 年化通电/接入节奏，PJM/SPP ESA 转化和 ERCOT SB6 执行均顺利 | 需求池可见至 2030 `63GW`，但 NTM 可收入化只是一小部分；queue `190GW` 不计入基准 | 当前需求锚已很高；基准不再额外上调 | AEP signed agreements、Goldman 2026/2027 power demand、LBNL 2028 用电；反证是 Goldman 指出未来 1-2 年仅 `50%-60%` 计划容量按期上线 |
+| 输电与高压互联资产 | 2026-2030 transmission capex `$33B`；PJM/SPP 新增 awards `$3.5B`；AEP 最大输电网络之一、40,000 英里 transmission | RTO/州审批延迟，变压器/switchgear 交期拖延，项目 in-service 后移 | `$33B` plan 正常执行；2026-2027 项目按工程节奏进入 rate base | line-of-sight capital 中一部分进入正式计划，Piketon / ERCOT / PJM 项目提前 | additional capital `>$10B` 的较大部分提前进入五年计划，监管快审且客户预付 | 需求绝对额以 capex 表达：基准 `$33B` 五年；NTM 执行约年度 capex 的一部分 | 基准=符合当前资本计划；乐观=capex 上修或提前 | 行业资料显示高压接入、变压器、switchgear 是第一瓶颈；反证是 interconnection / equipment lead time |
+| 配电与本地接入 | 2026-2030 distribution capex `$17B`；T&D commercial kWh Q1 高增；AEP Ohio / AEP Texas 是重点 | 本地变电站、土地、社区、施工或 rider 回收受阻；商业负荷只在 paper queue | 配电与 local substation 按当前通电节奏跟进 | AEP Ohio / Texas commercial load 继续 double-digit，rider / base rate recovery 顺利 | 多州园区复制，客户预付和 DCT 条款显著缩短现金占用 | 五年 capex `$17B`，NTM 主要体现高个位数到低双位数 T&D revenue / earnings 增长 | 基准=符合 Q1 和资本计划；乐观=更多项目通电 | 依据为 AEP T&D Q1 data、AEP Ohio tariff；反证是施工队伍和州监管 |
+| 新发电资源与容量 | 2026-2030 generation capex `$24B`；`>10GW` gas turbine capacity secured；行业自备发电/微电网需求高 | 燃机、燃气、排放、CCN/IRP 或环保审批延迟；NTM 资源不足拖累通电 | 已纳入 plan 的资源按后五年节奏推进，NTM 对收入贡献有限但支撑客户承诺 | 更多 gas/PPA/storage/fuel cell 方案被批准并纳入 plan | dedicated generation、fuel cells 和 BESS 同步进入明确客户/监管结构，缓解电力约束 | NTM 新增收入无法可靠量化；长期 capex `$24B` 是主锚 | 基准=容量支撑而非 NTM 主收入；乐观=审批/资源前置 | 行业自备发电资料验证需求；反证是许可、燃气、排放和融资 |
+| Generation & Marketing 能源营销 | 2026Q1 revenue `$971M`、operating earnings `$90M`；受市场电价和零售/交易影响 | 能源价格、hedging、购电成本或 trading 低于预期 | 维持当前 run-rate，低利润率收入正常波动 | 客户能源解决方案和市场机会增加，但不改变公司主线 | 市场波动带来收入放大，但利润质量仍低于受监管资产 | NTM revenue 约 `$3.6-$4.4B` 区间，利润弹性有限 | 基准=中性；乐观不应因 revenue 高而上调质量 | Q1 数据；反证是 fuel/purchased power 同步上升 |
+| 大负荷 tariff / 合同结构 | AEP Ohio DCT 已生效，25MW+客户需 load study、LOA/ESA、minimum demand、collateral、exit fee；多州推进 | 监管反弹或诉讼使 minimum demand / exit fee 削弱，成本转嫁风险上升 | Ohio/WV/IN/KY 等已批机制发挥作用，pending 州稳步推进 | 多州接受 80%-90% minimum demand / upfront funding，客户承担成本更明确 | AEP 模板成为美国大负荷 tariff 标准，客户信用筛选和现金流保护显著增强 | 需求单位不是收入，而是合同质量和成本保护；AEP 披露 existing customers cost offsets up to `$16B` | 基准=风险缓释已进入当前预期；乐观=监管扩散 | 依据为 AEP Ohio DCT；反证是普通客户 affordability 和大型客户反弹 |
+| 低碳/先进电源期权 | Wyoming fuel cell 条件预计 2026Q2；SMR early site permits；行业 SOFC / microgrid GW 级订单验证 | 条件未满足或审批延迟，仍停留在期权 | 仅作跟踪，不进 NTM 基准收入 | fuel cell offtake / early-site permit 明确，进入乐观上限 | 低碳电源成为数据中心关键资源，但收入仍大多超出 NTM | NTM 绝对收入无法可靠量化，长期可影响 generation capex | 不进入基准；远期期权 | 依据为 AEP 披露和行业资料；反证是产能、许可、服务网络 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些需求能进入 AEP NTM 收入表，以及当前可收入化基数。`可参与需求` 不等于 `可确认收入`；`63GW` 和 `190GW queue` 主要是未来资产和合同质量锚，不是 NTM 收入基数。证据等级按收入表可确认性定义：A=收入表/分部收入/财务指引；B=已披露订单、合同、ESA/LOA、资本计划和明确交付时间表；C=认证/产能/管理层可验证披露；D=产品发布/早期合作；E=主题相关。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 存量受监管售电与基础客户服务 | 2026Q1 VIU total revenue `$3.443B`、T&D total revenue `$1.609B`；2025 total revenue `$21.9B` | 直接 | 受监管回收 + 燃料/购电传导；利润高低取决于 allowed ROE、O&M、regulatory lag | `$18.3-$19.2B` NTM regulated load revenue anchor | `$19.2-$20.3B` | `$20.2-$21.4B` | `$21.2-$22.5B` | 基准符合当前 run-rate；悲观低于当前预期；乐观需要商业负荷继续超预期 | A | 是 | 已披露收入表、分部收入、2026 指引 | 进入 NTM 基准主口径；与大负荷增量不可重复加总 |
+| 数据中心/工业大负荷电力服务 | 直接数据中心收入未披露；T&D commercial kWh Q1 同比高增；`63GW` contracted load by 2030，2026E/2027E `7GW/10GW` | 直接，但收入确认需通电 | 电费收入含 pass-through；经营价值主要是 minimum demand、transmission/distribution rider、rate base 和客户成本承担 | 只承认已通电/接近通电部分，增量 revenue `$0-$0.3B` | 增量 revenue `$0.4-$1.0B`，部分已在 VIU/T&D 基数内 | 增量 revenue `$1.0-$1.8B` | 增量 revenue `$1.8-$3.0B`，仅作上限 | 基准只代表当前披露节奏正常兑现；乐观为高于当前通电节奏 | B，部分 LOA 为 C | 部分进入 | ESA/LOA、tariff、年度负荷节奏；但未披露数据中心收入 | 基准小比例纳入；`63GW` 全量和 `190GW queue` 不进 NTM 基准 |
+| 输电与高压互联资产 | AEPTHCo 2026Q1 total revenue `$598M`、operating earnings `$209M`；broader transmission business 2026 operating earnings `>50%` | 直接和内部传导 | 高质量 regulated / FERC / state transmission return；收入表外部收入低但利润权重高 | 外部/segment revenue `$0.50-$0.60B`；AEPTHCo op earnings `$0.75-$0.85B` | revenue `$0.55-$0.70B`；op earnings `$0.80-$0.95B` | revenue `$0.65-$0.85B`；op earnings `$0.90-$1.05B` | revenue `$0.80-$1.10B`；op earnings `$1.05-$1.25B` | 基准符合 `$33B` plan；乐观需新增 awards 或项目提前 | A/B | 是 | 分部收入、分部利润、资本计划、PJM/SPP awards | 进入 NTM 基准；更多体现利润和 rate base，不仅是 external revenue |
+| 配电与本地接入 | T&D 2026Q1 revenue `$1.609B`、operating earnings `$237M`；AEP Ohio / AEP Texas 商业负荷是主线 | 直接 | 州监管 ROE + rider / base rate recovery；施工和监管 lag 影响利润 | revenue `$5.8-$6.2B`；op earnings `$0.80-$0.90B` | revenue `$6.2-$6.8B`；op earnings `$0.90-$1.05B` | revenue `$6.8-$7.4B`；op earnings `$1.05-$1.20B` | revenue `$7.4-$8.2B`；op earnings `$1.20-$1.40B` | 基准符合 Q1 run-rate；乐观需更多通电和 rider 回收 | A/B | 是 | T&D 收入表、负荷增长、DCT / load study process | 进入 NTM 基准；与大负荷增量需去重 |
+| 新发电资源与容量 | 新资源收入嵌入 VIU / G&M；generation capex `$24B`、`>10GW` gas turbine capacity 是资本和供给锚 | 间接到直接 | 建设期 AFUDC、后续 regulated generation return；燃料成本 pass-through；许可/环保风险高 | NTM 新增 revenue 无法可靠量化；只保留已在收入表/指引的资源 | 无法可靠量化；对 NTM 主要是支撑通电与资本计划 | 未来项目部分进入 plan，NTM earnings 小幅受 AFUDC / rate base 支撑 | 极度乐观仍不把 2030 项目当 NTM 收入 | 当前预期中更多是供给保障，不是 NTM 收入主项 | B/C | 小比例 / 间接 | `$24B` generation capex、项目表、gas turbine capacity | 不作为 NTM 独立收入主基数；作为大负荷兑现的必要条件 |
+| Generation & Marketing 能源营销 | 2026Q1 revenue `$971M`、operating earnings `$90M` | 直接 | 低利润率、能源价格和购电成本波动；不等同 AI rate base | revenue `$3.4-$3.7B`；op earnings `$0.20-$0.30B` | revenue `$3.7-$4.2B`；op earnings `$0.30-$0.40B` | revenue `$4.2-$4.7B`；op earnings `$0.35-$0.50B` | revenue `$4.7-$5.3B`；op earnings `$0.45-$0.60B` | 基准中性；收入高不自动上调利润质量 | A | 是，但降权 | Q1 分部收入和利润 | 进入公司收入基数；在利润传导中降权 |
+| 大负荷 tariff / 合同结构 | AEP Ohio DCT、LOA/ESA、minimum demand、collateral、exit fee；cost offsets up to `$16B` | 间接 | 降低 stranded cost 和普通客户成本转嫁，保护现金流和监管可接受性 | 只承认已批州条款；pending 不纳入收益 | 已批条款进入基准风险缓释 | pending 州获批，更多客户承担 upfront cost | tariff 模板外溢，成本保护显著增强 | 基准符合当前 tariff 状态 | B | 是，作为风险缓释 | AEP Ohio / PUCO、AEP 披露 | 不单独列收入；纳入情景可信度和现金流保护 |
+| 低碳/先进电源期权 | Wyoming fuel cell / SMR early-site 仍为早期 | 间接 | 可能提升长期低碳供电质量，但 NTM 收入小 | `0` | `0` | 小额前期开发 / AFUDC，无法可靠量化 | 仍为上限或附录，不进入 NTM 主表 | 低于基准纳入门槛 | C/D | 否 | 条件未完全满足、时间表多在 2030 前后 | 移入附录或仅作跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从需求和收入基数出发，评估每条业务线在 NTM 内对 AEP 收入、利润和现金流的贡献。AEP 的业务不是高毛利硬件销售，收入增长中相当一部分是燃料、购电和监管成本传导；真正的经营价值来自 allowed ROE、rate base、客户最低需求费、终止费、抵押、预付款和监管可回收性。表内部分业务存在会计重叠，汇总到公司层面时已去重。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 存量受监管售电与基础客户服务 | 悲观产品 | `$18.3-$19.2B` | operating earnings 低于指引底部，约 `$2.4-$2.6B` 相关贡献含 VIU/T&D 内嵌项 | 下行 | 低于当前预期 | 2026Q1 revenue +10.2%，但普通客户和天气可能波动 | 保留悲观下限 | 天气、费率争议、affordability、燃料/购电成本 |
+| 存量受监管售电与基础客户服务 | 基准产品 | `$19.2-$20.3B` | 正常支撑 2026 EPS 指引，VIU/T&D earnings 按 Q1 run-rate 和季节性处理 | 稳定 | 符合当前预期 | 2026 operating EPS `$6.15-$6.45`，Q1 segment earnings | 保留基准 | 不把 Q1 annualize 机械当全年 |
+| 存量受监管售电与基础客户服务 | 乐观产品 | `$20.2-$21.4B` | 负荷和 rate changes 改善，O&M 没有同步上升 | 小幅上行 | 高于当前预期 | 商业/工业 load 高增，rate base 增长 | 保留乐观 | 普通客户承受力、监管 lag |
+| 存量受监管售电与基础客户服务 | 极度乐观产品 | `$21.2-$22.5B` | 需同时有高负荷、顺利回收和 O&M 控制 | 上行但有限 | 明显高于当前预期 | 大负荷提前上电与传统负荷不拖累 | 下移为上限 | utility 不具备无限定价权 |
+| 数据中心/工业大负荷电力服务 | 悲观产品 | 增量 `$0-$0.3B`，且多数已嵌入 VIU/T&D | 利润被接入成本、regulatory lag、客户延迟吞噬 | 下行 | 低于当前预期 | LOA 不等于上电；Goldman 指出计划容量按期上线比例约 `50%-60%` | 保留 | 客户延期、设备、发电资源、监管 |
+| 数据中心/工业大负荷电力服务 | 基准产品 | 增量 `$0.4-$1.0B`，部分已在当前 run-rate / 指引中 | 通过 minimum demand、rider、rate base 提高可见性，但短期利润率不高 | 稳定到小幅上行 | 符合当前预期 | `63GW` contracted load；2026E/2027E `7/10GW`；T&D commercial load 强 | 保留 | 不得把 63GW 全量当 NTM revenue |
+| 数据中心/工业大负荷电力服务 | 乐观产品 | 增量 `$1.0-$1.8B` | 高信用客户和更多 ESA 提升收入底座；利润取决于成本承担 | 上行 | 高于当前预期 | 更多 LOA 转 ESA，pending tariff 获批，客户预付 | 保留但中等可信 | ERCOT LOA 取消/延期风险高于 PJM ESA |
+| 数据中心/工业大负荷电力服务 | 极度乐观产品 | 增量 `$1.8-$3.0B` | 只有在成本由客户承担且通电提前时才转为利润 | 上行但低于硬件股弹性 | 显著高于当前预期 | `>12GW` 年化通电、客户预付、设备和发电资源顺利 | 下移为乐观上限 | 监管、发电、变压器、施工多环节必须同时成立 |
+| 输电与高压互联资产 | 悲观产品 | external / segment revenue `$0.50-$0.60B`；内部传导低于计划 | AEPTHCo op earnings `$0.75-$0.85B`；broader transmission 增速低于预期 | 小幅下行 | 低于当前预期 | `$33B` capex 仍在，但 in-service 延迟 | 保留 | RTO/FERC/州审批、长交期设备 |
+| 输电与高压互联资产 | 基准产品 | external / segment revenue `$0.55-$0.70B` | AEPTHCo op earnings `$0.80-$0.95B`；broader transmission 继续贡献公司利润核心 | 稳定 | 符合当前预期 | Q1 AEPTHCo op earnings `$209M`，capital plan `$33B` | 保留 | 会计上外部收入低，不能只看 revenue |
+| 输电与高压互联资产 | 乐观产品 | `$0.65-$0.85B` | op earnings `$0.90-$1.05B`，rate base 增长更快 | 上行 | 高于当前预期 | PJM/SPP awards、additional capital line of sight | 保留 | 普通客户电价压力 |
+| 输电与高压互联资产 | 极度乐观产品 | `$0.80-$1.10B` | op earnings `$1.05-$1.25B`，但需要项目提前 in-service | 上行 | 显著高于当前预期 | Piketon / ERCOT / additional capital 提前纳入 | 下移为上限 | 2029/2030 项目不能提前当 NTM 收入 |
+| 配电与本地接入 | 悲观产品 | `$5.8-$6.2B` | op earnings `$0.80-$0.90B` | 下行 | 低于当前预期 | T&D 当前强，但施工 / rider 滞后 | 保留 | last-mile 变电站、施工、地方审批 |
+| 配电与本地接入 | 基准产品 | `$6.2-$6.8B` | op earnings `$0.90-$1.05B` | 稳定 | 符合当前预期 | Q1 T&D revenue `$1.609B`，op earnings `$237M` | 保留 | 与大负荷收入去重 |
+| 配电与本地接入 | 乐观产品 | `$6.8-$7.4B` | op earnings `$1.05-$1.20B` | 上行 | 高于当前预期 | AEP Ohio / Texas commercial load 继续高增 | 保留 | rider / base rate recovery |
+| 配电与本地接入 | 极度乐观产品 | `$7.4-$8.2B` | op earnings `$1.20-$1.40B` | 上行但受监管 | 显著高于当前预期 | 多州园区复制、客户 upfront funding | 下移为乐观上限 | 本地社区和普通客户电价反弹 |
+| 新发电资源与容量 | 悲观产品 | NTM 独立新增 revenue 无法可靠量化 | 资源不足反而拖累大负荷通电和利润 | 下行 | 低于当前预期 | 新资源多在 2030 前计划后段 | 保留 | 燃气、环保、许可、燃机交期 |
+| 新发电资源与容量 | 基准产品 | 无法可靠量化；主要嵌在 VIU/G&M 和资本计划 | 支撑通电可信度；少量 AFUDC / rate base 正贡献 | 稳定 | 符合当前预期 | generation capex `$24B`，`>10GW` gas turbine capacity | 保留但不单独量化 | 不能把项目全周期金额当 NTM revenue |
+| 新发电资源与容量 | 乐观产品 | 部分资源项目进入明确计划，NTM revenue 仍小 | 减少购电和上电瓶颈，利润质量改善 | 小幅上行 | 高于当前预期 | gas/PPA/storage/fuel cell 方案更明确 | 保留但低到中可信 | 许可和燃料供应 |
+| 新发电资源与容量 | 极度乐观产品 | 仍无法把 2030 前项目当作 NTM 收入 | 长期利润质量改善，但短期 FCF 更负 | 混合 | 上限 | fuel cell / dedicated generation 快速落地 | 移入附录 / 仅作跟踪 | NTM 时间表不足 |
+| Generation & Marketing 能源营销 | 悲观产品 | `$3.4-$3.7B` | op earnings `$0.20-$0.30B` | 下行 | 低于当前预期 | market / fuel cost 波动 | 保留 | 低毛利 pass-through |
+| Generation & Marketing 能源营销 | 基准产品 | `$3.7-$4.2B` | op earnings `$0.30-$0.40B` | 稳定 | 符合当前预期 | Q1 revenue `$971M`，op earnings `$90M` | 保留 | 不是 AI 主线 |
+| Generation & Marketing 能源营销 | 乐观产品 | `$4.2-$4.7B` | op earnings `$0.35-$0.50B` | 小幅上行 | 高于当前预期 | customer energy solutions / market机会 | 保留但低权重 | revenue 增长可能只是能源价格 |
+| Generation & Marketing 能源营销 | 极度乐观产品 | `$4.7-$5.3B` | op earnings `$0.45-$0.60B` | 不稳定 | 上限 | 电价/交易环境超预期 | 下移为乐观上限 | 低利润质量、波动大 |
+| 大负荷 tariff / 合同结构 | 悲观产品 | 不产生独立收入 | 成本保护不足，拖累利润和现金流 | 下行 | 低于当前预期 | tariff 被削弱或项目取消 | 保留 | 监管/诉讼/客户抵制 |
+| 大负荷 tariff / 合同结构 | 基准产品 | 不产生独立收入 | 降低 stranded cost；保护已披露成本抵消 | 稳定 | 符合当前预期 | Ohio DCT、LOA/ESA、collateral、exit fee | 保留 | pending 州不可提前计入 |
+| 大负荷 tariff / 合同结构 | 乐观产品 | 不产生独立收入 | 更多州接受 minimum bill / upfront funding，现金流改善 | 上行 | 高于当前预期 | 多州 tariff 批准 | 保留 | 普通客户 affordability |
+| 大负荷 tariff / 合同结构 | 极度乐观产品 | 不产生独立收入 | 行业模板化，提升长期 earnings visibility | 上行 | 上限 | tariff 模板外溢 | 保留为极度乐观条件 | 不是收入产品，不能单独加总 |
+| 低碳/先进电源期权 | 悲观产品 | `0` | `0` 或前期费用 | 中性到下行 | 低于题材预期 | 早期项目延期 | 排除 NTM | NTM 证据不足 |
+| 低碳/先进电源期权 | 基准产品 | `0` | `0` | 中性 | 不进入当前预期 | fuel cell / SMR 时间表较远 | 移入附录 | 只作跟踪 |
+| 低碳/先进电源期权 | 乐观产品 | 无法可靠量化 | 若进入 offtake / regulated structure，支撑长期供电 | 长期上行 | 高于当前预期 | Wyoming fuel cell 条件满足 | 仅作跟踪 | NTM revenue 小 |
+| 低碳/先进电源期权 | 极度乐观产品 | 无法可靠量化 | 长期战略价值，短期 FCF 压力可能更高 | 混合 | 上限 | SOFC/SMR/低碳电源成为客户刚需 | 移入附录 | 缺 NTM 收入确认路径 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节将产品级贡献去重后合成为 AEP NTM 公司收入、利润率、operating earnings / EBITDA / 净利润和自由现金流方向。AEP 的毛利率字段无法可靠按工业公司口径量化，因为电费收入中燃料、购电、传输和监管传导项目会随价格和会计口径波动；因此表内毛利率填入“无法可靠量化”并补充 Q1 proxy。收入增长不自动等于高质量利润增长。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$22.6-$23.4B` | 相对 2025 revenue `$21.9B` 约 `+3%-7%` | 低于 2026 指引 / 当前 run-rate；大负荷通电、tariff 或成本回收延迟 | 无法可靠量化；Q1 revenue 减燃料/购电 proxy 约 `65%`，但不可外推 | `19%-21%` operating income / revenue proxy | operating earnings `$3.15-$3.35B`；GAAP 净利润接近或低于 operating earnings，取决于调整项 | 明显为负；capex 已先行，客户收入和回收延后 | 中 | LOA 转 ESA 慢、设备/发电延迟、regulatory lag、FFO/debt 压力 |
+| 基准公司 | `$23.7-$24.7B` | 约 `+8%-13%` | 符合 2026 operating EPS `$6.15-$6.45`、`7%-9%` 长期增长和 `7GW/10GW` 负荷节奏 | 无法可靠量化；utility pass-through 使毛利率非主指标 | `21%-23%` proxy | operating earnings `$3.35-$3.55B`；2026 EPS 指引区间正常兑现 | 为负但可融资；依赖债务、ATM/forward equity、客户预付和 collateral | 中高 | 通电节奏、rate case / rider 回收、capital execution |
+| 乐观公司 | `$24.8-$26.0B` | 约 `+13%-19%` | 高于当前预期；需要更多 ESA、2027 负荷前置、AEP Ohio/Texas load 继续强 | 无法可靠量化；若高毛利 transmission mix 上升，质量改善 | `22%-24%` proxy | operating earnings `$3.55-$3.80B`；高于 2026 指引中值并向 2027 growth 提前 | 仍为负；capex pull-forward 使 FCF 绝对值可能更负，但长期 rate base 提升 | 中 | 客户成本承担、设备供应、监管批准、融资成本 |
+| 极度乐观公司 | `$26.0-$27.4B` | 约 `+19%-25%` | 显著高于当前预期；不只是单一项目，需大负荷、输电、配电、发电和 tariff 同时突破 | 无法可靠量化；只有高质量 regulated return 占比提高时才算利润质量上修 | `23%-25%` proxy | operating earnings `$3.80-$4.10B`；需要 earnings CAGR 超过当前路径 | 近中期更负；资本计划、客户预付和融资能力必须同步 | 低到中 | 多环节同时成立难；2028-2030 项目不能提前认作 NTM |
+
+汇总检查：
+
+- 去重：数据中心/大负荷收入已部分嵌入 VIU、T&D 和 transmission / distribution rider，不与各分部 revenue 机械相加。
+- 替代：现场发电 / fuel cell / SMR 期权可能缓解电网瓶颈，但不会在 NTM 大规模替代 AEP 的 regulated utility 收入。
+- pass-through：G&M 和燃料/购电传导可放大 revenue，但利润质量低于 transmission / distribution allowed return。
+- 一次性：未把 2026Q1 单季收入简单年化为全年；未把 `190GW queue` 或项目全周期收入当作 NTM。
+- 公司组合：短期最大经营价值来自 transmission / distribution / tariff 保护；长期增长来自 2030 前 large-load capex 转 rate base。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。正向证据只提升其影响的层级；同一风险只在实际影响环节处理一次。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 revenue `$6.020B`、operating earnings `$891M`、2026 operating EPS `$6.15-$6.45` 指引 | 公司汇总 | 支撑基准 NTM `$23.7-$24.7B` | 支撑 operating earnings `$3.35-$3.55B` | 说明当前 run-rate 可融资但仍重资本 | 保留基准 |
+| `63GW` contracted load by 2030、约 `190GW` active queue、2026E/2027E `7/10GW` | 需求 / 收入基数 | 提升需求可信度，但仅少量进入 NTM 确认收入 | 只有转 rate base / minimum demand 才提升利润 | 增加施工和资本需求 | 保留基准，乐观需更多上电证据 |
+| ERCOT `41GW` 主要由 LOA 支撑，PJM `16GW` 约 `95%` ESA，SPP `6GW` 约 `45%` ESA | 收入基数 / 执行 | ERCOT 可参与需求大，但可确认性低于 PJM | LOA 若不转 ESA，利润和现金流不稳 | 延迟/取消风险主要在 ERCOT 和 SPP 转化 | 保留悲观风险；基准折扣处理 |
+| `$78B` 2026-2030 capex，Transmission `$33B`、Generation `$24B`、Distribution `$17B` | 产品贡献 / 公司利润 | 不直接等于收入，但支撑 rate base | transmission mix 提升利润质量 | capex 使 FCF 持续为负，需要债务/股权/客户资金 | 保留基准；乐观需新增项目获批 |
+| AEP Ohio DCT：25MW+、load study fee、LOA/ESA、85% minimum demand 上限、collateral、exit fee | 收入确认 / 现金流 | 提高客户真实需求筛选，减少空排队 | 降低成本转嫁和 stranded cost | 改善客户承担成本与现金流保护 | 保留基准并提升可信度 |
+| Goldman Sachs 2026-05：美国数据中心 power demand `31GW`(2025) -> `41GW`(2026) -> `66GW`(2027)，但计划容量只有约 `50%-60%` 可按期上线 | 需求 / 反证 | 支撑需求池强，同时限制通电节奏 | 延迟会削弱利润兑现 | 施工和供应链延迟是关键 | 保留基准，限制极度乐观 |
+| LBNL / DOE：2023 数据中心用电 `176TWh`，2028E `325-580TWh` | 需求 | 支撑长期电力需求 | 长期 rate base 支撑 | 增加监管/电价压力 | 保留长期需求，不上移 NTM |
+| 变压器、switchgear、燃机、EPC、interconnection lead time | 商业兑现 / 执行 | 推迟 revenue recognition | 施工成本和 regulatory lag 压利润率 | capex 先支出、收入后确认 | 保留悲观约束 |
+| FFO/debt 目标 `14%-15%`、Q1 Moody's FFO/debt `13.9%` | 现金流 / 公司利润 | 若融资压力上升，capex 放缓影响收入 | 利息和稀释压 EPS | 是 `$78B` plan 的硬约束 | 保留基准但压低极度乐观可信度 |
+| 低碳 / fuel cell / SMR 期权 | 远期期权 | NTM 收入路径不足 | 长期可改善供电质量，短期可能增 capex | 审批、产能、服务网络未充分验证 | 移入附录 / 仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 大负荷低于当前通电预期，NTM revenue `$22.6-$23.4B`，operating earnings `$3.15-$3.35B` | 当前 A/B 级收入表和 tariff 已降低完全失速风险 | LOA 转 ESA、设备、发电、监管、融资任一环节弱化即可触发 | 保留 | 悲观下限 | 中 | 同一客户延期风险只在收入确认 / 执行层处理，不再重复压低需求池 |
+| 基准 | AEP 正常兑现 2026 指引和 7GW/10GW 负荷节奏，NTM revenue `$23.7-$24.7B` | 2026Q1 业绩、EPS 指引、`$78B` capex、`63GW` agreements、AEP Ohio DCT | 数据中心直接收入未披露，部分 LOA 不能按 ESA 处理 | 保留 | 最可能情景 | 中高 | 不因 `190GW queue` 强就自动上移，也不因一般监管风险重复下调 |
+| 乐观 | 更多 ESA / tariff / 通电前置，NTM revenue `$24.8-$26.0B`，operating earnings `$3.55-$3.80B` | AEP Texas / Ohio load 强、PJM/SPP awards、additional capital line of sight | 需证明“谁买、何时上电、谁承担成本、如何回收” | 保留 | 乐观情景 | 中 | 燃机/变压器同一供应链风险只限制执行，不重复惩罚需求 |
+| 极度乐观 | 大负荷、输电、配电、发电、tariff 和融资同时突破，NTM revenue `$26.0-$27.4B` | 需求池和长期 capex 非常强，行业电力瓶颈明确 | NTM 时间表不足；2028-2030 项目不能提前确认；FFO/debt 和监管压力上升 | 下移 | 乐观上限 / 附录跟踪 | 低到中 | 不把远期 Piketon、63GW 全量、190GW queue 和低碳期权重复加入 NTM |
+
+## 8. 结论
+
+- 最可能情景：基准。AEP 的需求锚强于传统 utility，但当前预期已经包括 `63GW` 合同负荷、`$78B` 资本计划和 2026 EPS 指引。NTM 最合理口径是收入 `$23.7-$24.7B`、operating earnings `$3.35-$3.55B`，经营价值通过 rate base、transmission / distribution earnings 和合同成本保护逐步兑现。
+- NTM 收入结论：收入增长主要来自受监管售电、商业/工业大负荷、T&D / VIU revenue、G&M pass-through 和资本回收；但数据中心直接收入仍未披露，不能把 `63GW` 或客户总 capex 直接换算为 AEP NTM revenue。
+- 利润/现金流结论：利润质量最强的是输电和配电 regulated return；大负荷电费收入本身含大量 pass-through。自由现金流在 NTM 仍大概率为负，因为 `$78B` 五年资本计划需要先投入，依赖客户预付款、抵押、termination fee、债务和股权融资来桥接。
+- 主要传导瓶颈：需求不是瓶颈，瓶颈是 `LOA/ESA -> load study -> transmission/distribution upgrade -> generation/resource adequacy -> regulatory recovery -> energization -> billed revenue`。任何一环延迟都会把需求下移到后续年度。
+- 乐观情景成立条件：2027 `10GW` 负荷不只签约而是更多进入可通电和可计费路径；ERCOT LOA 执行不弱于预期；PJM/SPP ESA 占比继续提升；pending 州大负荷 tariff 获批；客户 upfront funding / collateral 降低 AEP 现金占用；设备和燃机交期不恶化。
+- 极度乐观情景成立条件：需求、公司捕获、利润率和执行同时突破。具体表现为 `>12GW` 年化负荷通电节奏、Piketon / additional capital 中一部分提前形成明确 NTM 贡献、多州 tariff 模板化、transmission / distribution 回收快速、FFO/debt 不因 capex pull-forward 明显恶化。
+- 悲观情景触发条件：2026/2027 负荷通电明显落后；ERCOT LOA 大量延迟或缩量；PJM/SPP interconnection 或 RTO 计划后移；普通客户电价反弹导致 tariff 条款弱化；燃机/变压器/switchgear 延迟；FFO/debt 持续低于目标并迫使资本计划放缓。
+- 后续跟踪数据：每季度 contracted load GW、ESA/LOA 转化率、2026/2027 energization GW；AEP Ohio / AEP Texas commercial kWh 和 weather-normalized load；T&D / VIU / AEPTHCo operating earnings；PJM/SPP/ERCOT transmission awards；大负荷 tariff 批准和条款；客户 upfront construction funding / collateral；FFO/debt、ATM / forward equity、债务发行成本；燃机、变压器、switchgear、EPC lead time；Piketon、Wyoming fuel cell、SMR early-site 进展。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：AEP 最新季度数据截至 2026Q1，发布于 2026-05-05；本报告写作日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - AEP 2026Q1 earnings release：GAAP EPS `$1.61`、operating EPS `$1.64`、2026 operating EPS 指引 `$6.15-$6.45`、`63GW` contracted load、`$78B` capital plan、`>$10B` line-of-sight capital。来源：https://www.aep.com/news/stories/view/11917/
+  - AEP 2026Q1 earnings presentation：`63GW` load summary、ERCOT/PJM/SPP split、2026-2030 `7/10/16/16/14GW` 年度节奏、`$33B` transmission、`$24B` generation、`$17B` distribution、rate base CAGR nearly `11%`。来源：https://docs.aep.com/docs/newsroom/resources/earnings/2026-05/1Q26EarningsReleasePresentation.pdf
+  - AEP 2026Q1 supplemental schedules：分部 revenue、operating earnings、AEPTHCo / VIU / T&D / G&M 数据。来源：https://docs.aep.com/docs/newsroom/resources/earnings/2026-05/2026_03_IR_Package.pdf
+  - AEP 2026Q1 Form 10-Q。来源：https://docs.aep.com/docs/investors/AEP10Q20261Q.pdf
+  - AEP Facts：5.6M customers、32GW generating capacity、40,000 miles transmission、252,000 miles distribution、2025 revenue `$21.9B`。来源：https://www.aep.com/about/facts/
+  - AEP Ohio Data Center Tariff：PUCO 采纳日期、25MW+流程、load study fee、LOA/ESA、contract term、collateral、minimum demand、exit fees。来源：https://www.aepohio.com/company/about/rates/data-center-tariff/
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026：operating EPS 指引 `$6.15-$6.45` 是利润主锚；2026 contracted load 节奏 `7GW` 是需求和通电观察点，不是直接 revenue。
+  - FY2027：AEP 披露 2027E contracted load 累计节奏对应年度新增 `10GW`；本报告只把 2027Q1 或已进入 NTM 的部分纳入主表，其余为补充。
+  - 2030：`63GW` by 2030、`$78B` 资本计划、additional capital `>$10B`、Piketon 10GW、Wyoming fuel cell、SMR early-site 均属于中长期经营价值锚或远期期权。
+- 主要行业来源：
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`
+  - DOE / LBNL data center electricity demand：2023 `176TWh`、2028E `325-580TWh`，数据中心占美国用电 `6.7%-12.0%`。来源：https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers/ 和 https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf
+  - Goldman Sachs 2026-05-20：美国 data center power demand `31GW`(2025) -> `41GW`(2026) -> `66GW`(2027)，未来 1-2 年计划容量约 `50%-60%` 按期上线。来源：https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027

@@ -1,0 +1,162 @@
+# 公司收入传导与价值传导评估：Power Solutions International（PSIX）
+
+报告日期：2026-06-12  
+主口径：NTM = 2026Q2-2027Q1。  
+资料边界：公司侧只使用 `公司调研/` 与 PSIX 官方披露、SEC/IR 文件和产品页；行业侧只使用 `行业调研/` 中 AI 数据中心建设规模、自备发电/微电网、UPS/BESS 等直接相关资料及其一手外部来源校验。未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归或模型比较资料。  
+研究边界：本报告只评估经营层面的收入、利润和现金流传导，不做全公司排序，不给投资评级，不判断目标价、股价区间或估值倍数。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 2026Q2-2027Q1 NTM；FY2026、FY2027、长期 run-rate、3MW-5MW / 5MW 平台和 1.5MW gas engine 只作为补充或极度乐观条件。
+- 当前收入基准、指引和 run-rate：2025 收入 `$722.4M`、毛利率 `25.6%`；2026Q1 收入 `$128.6M`、毛利率 `22.9%`、Power Systems 收入 `$96.5M`。管理层不给 2026 全年正式指引，只说 Q2 大体与 Q1 持平、2026H2 随 larger Power Systems orders 投产而改善，约接近 2025H2 水平；同时数据中心收入和 backlog 均不单列。
+- 重要产品/业务线：数据中心 custom genset enclosures / integrated packages；1MW-1.25MW standby/continuous engines 和 power systems；microgrid / demand response / onsite prime power；oil & gas power products；Industrial / Transportation 成熟业务。
+- NTM 公司收入四情景：悲观 `$560-620M`；基准 `$650-720M`；乐观 `$800-900M`；极度乐观 `$1.0-1.2B`。基准不是行业高增外推，而是 Q2 flat + H2 恢复 + Q1 2027 延续正常交付节奏。
+- 利润或 EBITDA 四情景：悲观 EBITDA / 净利润 `$35-60M / $15-35M`；基准 `$75-105M / $45-70M`；乐观 `$115-155M / $75-110M`；极度乐观 `$180-260M / $125-190M`。2025 净利润含税收估值备抵释放，不能机械外推。
+- 最大传导瓶颈：需求不是第一瓶颈，第一瓶颈是数据中心 enclosure / power package 从订单、客户排程、客户 change order、Wisconsin/MTL throughput 到收入确认的执行路径。
+- 最大利润率变量：Wisconsin ramp-up 成本、MTL 垂直整合、steel / fabrication / painting / labor hours、bid-type enclosure 价格纪律，以及 oil & gas mix。
+- 最大现金流变量：客户预付款和 contract liabilities 是否恢复、存货和客户供料节奏、扩产资本开支和 2027 到期 revolver 再融资。
+- 可信度：基准公司层面为“中”；Power Systems 总收入为 A 级证据，数据中心细分收入为 C 级研究估算，极度乐观为低可信上限。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 数据中心 custom genset enclosures / integrated packages | 官方未单列；研究估算 2025 约 `$180-260M`，2026Q1 约 `$40-60M` | 估算约 `25-36%` of FY2025；Power Systems 总占比 `81.2%` | 当前增量核心，直接连接 AI 数据中心备用/过渡供电 | B/C：Power Systems 为 A，数据中心拆分和 enclosure 估算为 C | 进入基准，但只按可见 Power Systems、Q2/H2 节奏和 8-12 个月 firm-order planning 折扣纳入 | 5MW 标准化 package、多客户 hyperscale design book 扩散 |
+| 1MW-1.25MW gas/diesel engines and power systems | 官方未单列；研究估算数据中心/发电相关 NTM 基准 `$90-140M`，与 enclosure 部分重叠 | 无法可靠量化 | 支撑 standby、continuous、oilfield/mobile genset 和微电网 | C：有产品和 Q&A 证据，但缺少产品收入拆分 | 小比例进入基准；1.5MW gas engine 不进基准 | 1.5MW gas engine、large diesel data center solutions、Weichai/HDI 新平台 |
+| Microgrid / demand response / onsite prime power | 官方未单列；当前主要在 Power Systems 和 oil & gas use case 内 | 无法可靠量化 | 行业需求强，但 PSIX 当前更像组件/packager，不是系统总控商 | C/D：产品页和 Q&A 支持参与，AI prime revenue 未披露 | 基准仅纳入已有 power systems 产品，AI prime power 大单进乐观/极度乐观 | AI campus BTM prime power 标准化、BESS/EMS 打包 |
+| Oil & gas power products | 2025 公司披露 oil & gas products 约 `$193.9M` | `26.8%` of FY2025 | 传统大业务，2026Q1 已成为拖累项 | A/B：公司披露行业销售和 Q1 软弱 | 进入基准，但按疲弱需求折扣；不是 AI 收入 | 油价、rig/capex 反弹带来的周期修复 |
+| Industrial | 2025 `$114.8M`；2026Q1 `$26.6M` | `15.9%` of FY2025；`20.7%` of Q1 | 成熟现金流和吸收固定成本 | A | 进入基准，按低增速/稳定处理 | battery packs / New Energy 若转向数据中心储能，当前只跟踪 |
+| Transportation | 2025 `$21.3M`；2026Q1 `$5.5M` | `2.9%` of FY2025；`4.3%` of Q1 | 小体量非核心 | A | 进入基准但不影响情景中枢 | 无 |
+
+## 3. 产品需求四情景
+
+本步口径：只评估外部需求池，不评估 PSIX 份额、收入确认或利润率。需求单位优先用 MW/GW、订单池美元和客户项目节奏。相对当前预期的锚点是：2026 美国 AI 数据中心建设务实情景 `$310-390B`、新增或进入设备订单的 AI IT-load equivalent `6.0-8.5GW`，其中微电网/自备发电 2026 订单规模 `$6-14B`；公司层面锚点是管理层“data center demand remains solid”但不预测数据中心收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 数据中心 custom genset enclosures / integrated packages | AI 数据中心 BTM/backup/bridge power 需求；2026 微电网/自备发电订单 `$6-14B`，BTM 可上电约 `2.8-3.5GW` | 数据中心上电项目因 permit、燃气、排放和客户排程延后，BTM 可上电仅约 `2.0-2.8GW`，enclosure PO 滞后 | BTM 可上电约 `2.8-3.5GW`，设备订单继续落地；backup + bridge power 需求正常兑现 | BTM 可上电约 `3.5-5.0GW`，多个 100-500MW AI campus 选择 gas engines + BESS | BTM 可上电 `5.0-7.0GW`，3MW-5MW power block 在 hyperscale design 中快速标准化 | 悲观比基准少约 `0.5-1.5GW`；乐观多约 `0.7-1.5GW`；极度多约 `2GW+` | 基准符合当前行业预期；乐观/极度需要新增订单、permit 和交付证据 | Caterpillar/AIP `2GW`、Wartsila `790MW` 和 Bloom/Oracle `2.8GW` 证明需求真实；反证是 Cleanview/Sightline 类项目库显示公告容量到在建/运行折扣很大 |
+| 1MW-1.25MW gas/diesel engines and power systems | 天然气往复式发动机 + BESS 是 2026 主流路径之一；行业 12 个月 gas engine / genset order pool 基准约 `$6-12B` | 订单集中在 CAT/Cummins/Wartsila/Rolls-Royce，PSIX 适用功率段需求低于预期；客户转向 SOFC 或大型 turbine | gas engine / genset demand 随 AI backup 与 oilfield/mobile genset 正常增长，1MW-1.25MW 区间有持续需求 | 1MW continuous、1.25MW standby 被更多 OEM/packager 采用，Weichai/HDI supply 支撑交付 | 1.5MW gas engine 或 3MW-5MW package 成为标准选项 | 悲观比基准少约 `$2-4B` 行业订单池；乐观多约 `$4-10B`；极度多约 `$15B+` | 基准需求成立，但 PSIX 捕获另行判断 | 行业上天然气 engines 成熟且交付快；反证是大 OEM 服务网络和排放/燃气许可优势更强 |
+| Microgrid / demand response / onsite prime power | AI campus 从纯备用电转向 BTM/onsite prime；2026 未来 12 个月可确认收入/可上电折算 `$8-18B` | 只作为备用或 oilfield/mobile 小场景，AI prime power 延后 | gas + BESS + EMS 作为 bridge / hybrid power 正常扩散 | utility interconnection 慢导致 AI 园区把 onsite prime 作为容量销售前置条件 | 大型 AI campus 把 onsite prime + BESS + EMS 作为默认一期方案 | 悲观低于基准约 `$3-8B`；乐观高于基准约 `$10-20B`；极度高于基准 `$25B+` | 基准略高于历史，但符合 2026 行业主线 | 需求强，但 PSIX 不是 EMS/utility/IPP 总控；若客户选择 Bloom SOFC 或 turbine island，PSIX 捕获有限 |
+| Oil & gas power products | 2025 强，2026Q1 公司明确 oil & gas softness；客户通常希望油价高于约 `$70/bbl` | 油气 capex 继续疲弱，mobile genset / wellhead power 订单低于 2025 | 低于 2025 高位但不崩，H2 稳定 | 油价和客户预算改善，wellhead gas / mobile power 需求恢复 | 油气与数据中心 rental / mobile power 需求同时恢复 | 绝对需求难以可靠量化；相对 2025 高位悲观为明显下滑，乐观为恢复 | 当前预期偏谨慎，基准不假设油气反弹 | 公司 Q1 表述是直接反证：oil & gas softness 已压制 Power Systems |
+| Industrial / Transportation | Industrial 2025 下滑、Q1 2026 回升；Transportation 小体量 | 工业设备需求回落，固定成本吸收变差 | 工业低个位数到低双位数波动，交通小幅稳定 | Material handling / industrial engines 需求延续 Q1 修复 | 非核心业务意外修复，但不改变公司主线 | 绝对变化通常在 `$10-30M` 收入口径内 | 基准符合当前 run-rate | 不是 AI 需求池；只作为抵消项和现金流底座 |
+
+## 4. 可收入化暴露与收入基数
+
+本步口径：只判断哪些需求能进入 PSIX 的 NTM 收入表，以及当前可收入化基数。PSIX 能参与 AI 自备发电需求，不等于能确认整台 genset、全项目 CapEx、客户总预算或 hyperscaler power spend。公司收入锚点优先级为：已披露收入/分部收入/10-Q/10-K > 管理层公开 Q&A > 产品页和产能 > 行业映射。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 数据中心 custom genset enclosures / integrated packages | Power Systems 2025 `$586.3M`、2026Q1 `$96.5M`；数据中心拆分未披露；Q&A 称 enclosure firm orders 至少规划 8-12 个月，直接客户通常不是 hyperscaler | 直接向 OEM/packager/OEM customer 确认 enclosure / integration value-add；间接受益于 hyperscaler capex | 中等毛利、项目型、受工时/材料/painting/空间约束；可受益于 MTL 垂直整合 | `$180-240M` | `$250-330M` | `$380-480M` | `$600M+` | 基准大体符合 H2 恢复预期；乐观高于当前可见路径；极度只是上限 | B/C | 是，但折扣纳入 | A 级 Power Systems 收入表 + B/C 级 Q&A/MTL/产品页；无数据中心 revenue split | 进入 NTM 基准，不能把行业 `$6-14B` 订单池直接映射为 PSIX 收入 |
+| 1MW-1.25MW gas/diesel engines and power systems | 10-K 和产品页披露 engines / power systems；Q&A 披露 `1.25MW` standby、`1MW` continuous，研究 1.5MW；产品收入未拆 | 直接供 engine/power system 或 package another manufacturer product；部分收入可能与 enclosure 同项目 | engine 侧价格有 supply contract 调整，竞争强；服务网络弱于大 OEM | `$60-90M` | `$90-140M` | `$160-230M` | `$300M+` | 基准为当前产品正常兑现；1.5MW 不进基准 | C | 部分进入 | 有产品、客户采用和 Weichai/HDI 供应线索，但无产品收入表 | 进入基准的只是已有 1MW/1.25MW 和 power systems；1.5MW、large diesel data-center solutions 进乐观/极度 |
+| Microgrid / demand response / onsite prime power | 产品页列 wellhead gas up to `5MW`、switchgear/controls/gas conditioning；Q&A 称 oil & gas microgrid 产品向数据中心应用迁移 | 多数是组件/engine/enclosure 参与，不是全站 EPC/EMS 收入 | 若只是 hardware pass-through，毛利中等；若 controls/engineering 增加才改善 | `$15-30M` | `$30-60M` | `$80-130M` | `$200M+` | 基准只代表已有产品低比例纳入；乐观需要 AI prime 项目客户证据 | C/D | 小比例进入 | 现有应用可见，但 AI prime power 可确认收入缺客户/金额 | 不把 BTM microgrid 行业订单池直接进基准；大部分作为乐观和跟踪项 |
+| Oil & gas power products | 2025 公司披露约 `$193.9M` oil & gas products；Q1 2026 公司称需求软 | 直接进入 Power Systems 收入 | 过去毛利较好，但周期性强，2026 mix 下降拖累 GM | `$100-130M` | `$125-170M` | `$180-220M` | `$250M+` | 基准低于 2025 高位；乐观需要油气 capex 修复 | A/B | 是 | 2025 披露 + Q1 softness | 作为抵消项进入；不能把 oil & gas 收入当 AI 收入 |
+| Industrial | 2025 `$114.8M`，2026Q1 `$26.6M` | 直接 | 成熟、毛利和需求更稳定；非 AI | `$95-105M` | `$105-125M` | `$125-145M` | `$160M+` | 基准符合当前 run-rate | A | 是 | 收入表 | 进入基准，但不是情景核心 |
+| Transportation | 2025 `$21.3M`，2026Q1 `$5.5M` | 直接 | 小体量 | `$18-21M` | `$21-25M` | `$25-30M` | `$35M+` | 符合当前 run-rate | A | 是 | 收入表 | 进入基准，影响有限 |
+
+## 5. 产品级收入和利润贡献
+
+本步口径：从第一步需求和第二步收入基数出发，判断每个重要产品/业务线在 NTM 内对公司收入和利润的贡献。产品行存在项目重叠风险：3MW-5MW package、1MW/1.25MW engine、microgrid 可能与 enclosure 同一客户预算共用；第 6 节汇总时只按公司收入表确认一次。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 数据中心 custom genset enclosures / integrated packages | 悲观 | `$180-240M`，较基准少 `$70-90M+` | 毛利额 `$35-50M`，经营利润贡献低 | 下行或维持 `20-22%` GM 附近 | 低于当前 H2 恢复预期 | Q1 数据中心出货 uneven、Wisconsin costs persist | 保留为悲观 | 客户排程、change order、space-intensive enclosure、contract liabilities 未恢复 |
+| 数据中心 custom genset enclosures / integrated packages | 基准 | `$250-330M` | 毛利额 `$58-82M`，经营利润贡献中等 | GM 回到 `23-25%` | 符合当前预期正常兑现 | Q2 flat + H2 接近 2025H2；enclosure 8-12 个月 firm-order planning；MTL 提升 control | 保留 | 数据中心收入未披露，客户不是 hyperscaler，不能确认整台 genset ASP |
+| 数据中心 custom genset enclosures / integrated packages | 乐观 | `$380-480M`，较基准多 `$80-170M` | 毛利额 `$100-130M`，经营杠杆出现 | 上行至 `25-27%` | 高于当前预期 | 多客户项目 level-load，MTL throughput 改善，标准化提升 | 保留但需客户/订单证据 | bid-type sales 和多竞争者压价；大客户仍要求按原 schedule 交付 |
+| 数据中心 custom genset enclosures / integrated packages | 极度乐观 | `$600M+` | 毛利额 `$165M+`，若标准化可带来强杠杆 | `27%+` 但可信度低 | 大幅高于当前预期 | 3MW-5MW / 5MW block 被多家 packager 标准化复制 | 下移为乐观上限，除非披露 backlog/PO | 无公开 backlog；产能、验收、劳动力、空间、油箱/paint bottleneck 需同时突破 |
+| 1MW-1.25MW gas/diesel engines and power systems | 悲观 | `$60-90M` | 毛利额 `$12-22M` | 低位，竞争压价 | 低于预期 | 大 OEM 占据主要 engine/genset 订单，客户双供 | 保留 | 服务网络、认证、排放和客户指定 engine 限制捕获 |
+| 1MW-1.25MW gas/diesel engines and power systems | 基准 | `$90-140M` | 毛利额 `$20-35M` | 大致稳定 | 符合预期 | 1MW continuous、1.25MW standby 已有；Weichai/HDI 支持 | 保留 | 产品收入未披露；与 enclosure 重叠 |
+| 1MW-1.25MW gas/diesel engines and power systems | 乐观 | `$160-230M` | 毛利额 `$40-65M` | 小幅上行 | 高于预期 | AI backup / continuous power 扩散，客户接受 PSI engine-agnostic package | 保留 | 客户可能选择 CAT/Cummins/MTU/Wartsila；engine supply 不是唯一瓶颈 |
+| 1MW-1.25MW gas/diesel engines and power systems | 极度乐观 | `$300M+` | 毛利额 `$80M+` | 上行但非线性利润不确定 | 明显高于预期 | 1.5MW gas engine 或 large diesel DC solution 获认证和客户导入 | 移入附录/乐观上限 | 当前 1.5MW 是未来产品，缺 NTM 客户、认证和收入确认路径 |
+| Microgrid / demand response / onsite prime power | 悲观 | `$15-30M` | 毛利额 `$3-7M` | 中低 | 低于预期 | 只停留在 oilfield/mobile 小场景 | 保留 | PSIX 不是微电网 EMS、BESS 或 utility interconnection 主承包商 |
+| Microgrid / demand response / onsite prime power | 基准 | `$30-60M` | 毛利额 `$7-15M` | 稳定 | 符合谨慎预期 | 产品页有 wellhead gas / on-off grid / controls；Q&A 称 oil & gas rental 市场转向 DC 应用 | 保留但低权重 | AI prime power 收入无法可靠量化 |
+| Microgrid / demand response / onsite prime power | 乐观 | `$80-130M` | 毛利额 `$20-35M` | 上行 | 高于预期 | BTM/prime power 项目使 engines/enclosures/controls 打包 | 保留为低可信乐观 | 需要具体客户、NTP、permit、燃气和收入确认节点 |
+| Microgrid / demand response / onsite prime power | 极度乐观 | `$200M+` | 毛利额 `$55M+` | 取决于工程/controls mix | 大幅高于预期 | AI campus 从 backup 直接转 prime power，PSIX 被 OEM/packager 批量采用 | 移入附录 | 行业机会大，但公司 alpha 证据不足 |
+| Oil & gas power products | 悲观 | `$100-130M` | 毛利额 `$20-30M` | 下行 | 低于当前 run-rate | Q1 2026 softness 延续 | 保留 | 油气客户 capex、commodity price 和租赁需求 |
+| Oil & gas power products | 基准 | `$125-170M` | 毛利额 `$30-45M` | 稳定或小幅恢复 | 符合谨慎预期 | 2025 已有收入基数，Q1 已反映疲弱 | 保留 | 若油气继续弱，会抵消数据中心增长 |
+| Oil & gas power products | 乐观 | `$180-220M` | 毛利额 `$45-60M` | 小幅上行 | 高于预期 | 油价/客户预算改善，wellhead gas power 恢复 | 保留 | 不应把油气修复当 AI 传导 |
+| Oil & gas power products | 极度乐观 | `$250M+` | 毛利额 `$65M+` | 上行但周期性强 | 高于预期 | 油气与移动发电需求同步修复 | 下移为乐观上限 | 2026Q1 反证仍在，缺持续订单 |
+| Industrial / Transportation | 悲观 | `$115-126M` | 毛利额 `$25-32M` | 稳定偏低 | 低于 run-rate | 工业设备需求转弱 | 保留 | 体量小，无法抵消 Power Systems 失速 |
+| Industrial / Transportation | 基准 | `$126-150M` | 毛利额 `$30-40M` | 稳定 | 符合 run-rate | Q1 Industrial +13%、Transportation 小幅增长 | 保留 | 非 AI，不给上修溢价 |
+| Industrial / Transportation | 乐观 | `$150-175M` | 毛利额 `$38-50M` | 稳中上行 | 略高于预期 | 工业客户补库 | 保留低权重 | 公司战略重心不在此 |
+| Industrial / Transportation | 极度乐观 | `$195M+` | 毛利额 `$55M+` | 上行但不改变叙事 | 高于预期 | 全面工业复苏 | 仅作跟踪 | 不是 NTM 主要收入传导 |
+
+## 6. 公司收入和利润四情景
+
+本步口径：把产品贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。汇总时已扣除 3MW-5MW package、microgrid、engine 和 enclosure 在同一 Power Systems 项目中的重复计算；没有把行业 TAM、客户总预算、项目总金额或 market valuation 当作公司收入。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$560-620M` | vs FY2025 `-22%` 到 `-14%`；vs TTM 约 `-22%` 到 `-13%` | 低于管理层 Q2 flat + H2 恢复路径；Power Systems H2 未接近 2025H2 | `20.5-22.5%` | `4-7%` | EBITDA `$35-60M`；净利润 `$15-35M` | 正到小幅负；库存、低利用率和客户延期吞噬现金 | 中 | H2 大型 Power Systems 订单未投产，oil & gas 继续软，Wisconsin 成本持续 |
+| 基准公司 | `$650-720M` | vs FY2025 `-10%` 到 `0%`；vs TTM 约 `-9%` 到 `+1%` | 符合当前预期正常兑现；Q2 约 Q1，H2 接近 2025H2，Q1 2027 不显著失速 | `23-25%` | `8-12%` | EBITDA `$75-105M`；净利润 `$45-70M` | 小幅正；取决于客户预付款和扩产周转 | 中 | 数据中心收入不单列，订单/客户排程可见度不足，MTL 效率需验证 |
+| 乐观公司 | `$800-900M` | vs FY2025 `+11%` 到 `+25%`；vs TTM `+12%` 到 `+26%` | 高于当前预期，且不是单一小项目造成 | `25-27%` | `12-15%` | EBITDA `$115-155M`；净利润 `$75-110M` | 正，但 working capital 会随大单占用 | 中低 | 数据中心 enclosure level-load、MTL throughput、oil & gas 不再拖累同时成立 |
+| 极度乐观公司 | `$1.0-1.2B` | vs FY2025 `+38%` 到 `+66%`；vs TTM `+40%` 到 `+68%` | 显著高于当前预期，只能视为 NTM 上限 | `27-30%` | `16-20%` | EBITDA `$180-260M`；净利润 `$125-190M` | 账面利润强，但存货、应收、扩产和供应商预付可能吞现金 | 低 | 多客户 hyperscale 标准化、5MW package、1.5MW/large diesel、MTL 工艺和客户验收同时突破 |
+
+汇总检查：
+
+- 重复计算：数据中心 enclosure、engine、3MW-5MW package 和 microgrid 可能属于同一 Power Systems 项目，汇总时按公司收入表确认一次。
+- 一次性项目：2025 净利润受 `$38.3M` valuation allowance release 影响；2026 净利润按正常税率，不用 2025 EPS 外推。
+- 并购口径：MTL 主要作为产能/成本/交期变量，而不是独立新增大收入线。
+- 传统抵消：oil & gas 已单独作为抵消项处理，不在需求、收入基数和公司汇总中重复惩罚。
+- 低毛利 pass-through：enclosure revenue reflects enclosure value-add，不等于整台 engine/genset cost；因此收入上修不能自动推导为同等利润上修。
+
+## 7. 证据校准、反证和可信度
+
+本步口径：不重新预测经营结果，只校准前四步情景。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在它实际影响的层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Power Systems 已占 2025 收入 `81.2%`，但 2026Q1 同比 `-9.5%` | 公司组合 / 产品贡献 | 支持基准中 Power Systems 仍是主收入池，但反证 H1 非线性 | 若 mix 不佳，收入恢复不等于利润恢复 | 客户排程和 throughput 决定 H2 | 基准保留，乐观需 Q2/Q3 订单转收入验证 |
+| 数据中心需求“solid”，但公司不预测具体数据中心 revenue | 收入基数 / 可信度 | 支持数据中心进入基准，但只能折扣纳入 | 不支持自动毛利扩张 | 订单 visibility 不足，无法验证 backlog | 基准保留为中可信；极度乐观下移为上限 |
+| MTL 收购和 Wisconsin vertical integration | 产品贡献 / 利润率 / 执行 | 可提高交期和产能，支持 H2 恢复 | 有望减少 fabrication、painting、supplier bottleneck，但整合初期有成本 | 改善 lead time，但可能占用现金和管理精力 | 乐观保留；若 Q2/Q3 GM 不改善则下移 |
+| Enclosure 是 bid-type sales，竞争者多 | 产品利润 | 收入可增长，但 ASP/margin 被压制 | 限制极度乐观毛利 | 客户标准化和 dual-source 降低定价权 | 对极度乐观利润下移；不重复压低需求 |
+| Revenue recognition / backlog 不披露；custom-build 可 over time | 收入确认 | 收入基准可用 Power Systems 表，但产品级可见度低 | 若 first articles 和 change orders 增多，毛利滞后 | contract liabilities 和 customer inventory 是验证点 | 低证据产品不进基准或小比例进入 |
+| 油气需求软 | 公司组合 / 传统业务 | 抵消数据中心增长，压低悲观/基准收入 | oil & gas mix 下滑拉低 GM | capex 和 commodity price 决定恢复 | 只在 oil & gas 和公司汇总处理一次 |
+| 行业 BTM/自备发电需求强，但 permit/燃气/排放风险高 | 需求层 | 支持乐观需求，但可确认收入要打折 | 若项目延后，固定成本吸收差 | 上电日期、EPC NTP、燃气接入是关键 | 需求乐观保留；收入极度乐观下移 |
+| SOFC / turbine / large OEM 替代 | 份额 / 技术位置 | 限制 PSIX 捕获率，尤其 prime power | 大 OEM 服务/认证优势压制价格 | 客户指定 engine 和 OEM packager 决策影响交付 | 对 engine / microgrid 极度乐观移入附录 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | H2 Power Systems 恢复不足，NTM 收入 `$560-620M` | Q1 已暴露 oil & gas softness、shipment timing 和 Wisconsin costs；公司明确不保证均匀强 H2 | 数据中心需求仍 solid；MTL/Wisconsin 有效率改善计划 | 保留 | 悲观公司 | 中 | oil & gas softness 只在传统业务和公司汇总处理，不再重复压低行业需求 |
+| 基准 | Q2 大体持平、H2 接近 2025H2，NTM `$650-720M` | 2025 Power Systems 实际放量；8-12 个月 firm-order planning；MTL 垂直整合；Power Systems 为收入表 A 级证据 | 数据中心 revenue/backlog 未披露；Q1 Power Systems 同比下滑；GM 仍受 ramp-up 成本影响 | 保留 | 基准公司 | 中 | 数据中心收入不可见性只限制可信度，不把所有产品都降为悲观 |
+| 乐观 | 数据中心 enclosure level-load，NTM `$800-900M` | 行业 BTM/自备发电订单强；MTL 增加 fabrication/painting/UL 能力；客户标准化可降低工时 | bid-type competition、dual-source、客户 change order 和交付空间瓶颈 | 保留 | 乐观公司 | 中低 | 行业需求强不能替代公司订单，因此不把所有需求直接收入化 |
+| 极度乐观 | 多核心环节同时突破，NTM `$1.0-1.2B` | 行业 AI 电力需求非线性上修；3MW-5MW / 5MW package 和 1.5MW gas engine 有路线图线索 | 缺公开 backlog、产品认证、客户/金额、产能和验收证据；公司自己不预测数据中心收入 | 下移 | 乐观上限 / 附录跟踪 | 低 | 不因股价或题材热度上移经营结论；不把长期期权纳入 NTM 基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。PSIX NTM 收入最可能落在 `$650-720M`，低端意味着 2026Q2 与 Q1 持平后 H2 恢复不完全，高端意味着 2026H2 接近 2025H2 且 Q1 2027 延续较好交付。公司经营价值传导的主链条是 `AI 数据中心 power bottleneck -> OEM/packager enclosure / power package 订单 -> Wisconsin/MTL 制造 throughput -> Power Systems 收入确认 -> GM 回到 23-25% -> EBITDA/净利润恢复`。
+- NTM 收入结论：不要把 2026 微电网/自备发电行业 `$6-14B` 订单池直接映射为 PSIX 收入。PSIX 的基准收入来自 Power Systems 已披露收入表、Q2/H2 可见节奏和既有 enclosure/engine 产品，数据中心细分为研究估算而非公司披露。
+- 利润/现金流结论：基准 EBITDA / 净利润约 `$75-105M / $45-70M`。利润质量取决于 gross margin 是否从 Q4 2025 `21.9%`、Q1 2026 `22.9%` 向约 `25%` 目标区域修复；现金流取决于客户预付款、contract liabilities、存货和扩产节奏。
+- 主要传导瓶颈：最大瓶颈不是 AI 数据中心有没有电力需求，而是 PSIX 是否能在 NTM 内把客户项目变成可确认收入，且在 bid-type enclosure、客户 change orders、space-intensive manufacturing 和 MTL 整合中留下足够毛利。
+- 乐观情景成立条件：Q2 不低于 Q1、Q3/Q4 Power Systems 明显恢复；MTL 降低 lead time；contract liabilities / customer-provided inventory 或管理层订单可见度改善；gross margin 回到 `25%+`；oil & gas 不再继续拖累。
+- 极度乐观情景成立条件：公司披露或实质验证多客户 hyperscale / OEM packager 订单，3MW-5MW / 5MW package 标准化复制，1MW/1.25MW engine 或 1.5MW 路线进入客户 design book，同时 Wisconsin/MTL throughput、客户验收、材料供应和现金周转不出问题。
+- 悲观情景触发条件：Q2 明显低于 `$125M` 且 H2 订单投产延期；Power Systems 继续同比下滑；gross margin 停在 `21-23%`；contract liabilities 不恢复；oil & gas 和工业需求同时转弱。
+- 后续跟踪数据：Q2 revenue 与 Power Systems revenue；gross margin 和 Wisconsin cost commentary；contract liabilities、customer inventory 和 operating cash flow；MTL integration / lead time / painting / fabrication 进展；是否开始披露 data center revenue、backlog 或更明确的 customer/order window；oil & gas demand；5MW package、1.5MW gas engine 和 large diesel solution 认证/客户导入。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司经营数据截至 2026Q1（2026-03-31）；行业资料主要截至 2026-06-11/2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - PSIX 2026Q1 earnings release（2026-05-11）：Q1 net sales `$128.6M`、gross profit `$29.4M`、net income `$7.3M`、Q2 flat/H2 stronger、data center revenue 不预测。https://investors.psiengines.com/news-releases/news-release-details/power-solutions-international-announces-first-quarter-2026
+  - PSIX 2026Q1 Form 10-Q：Power Systems `$96.5M`、Industrial `$26.6M`、Transportation `$5.5M`；Q1 Power Systems 下滑来自 oil & gas softness 与 data-center shipment timing。https://investors.psiengines.com/static-files/f14a666c-8b2d-4a6d-9333-d3d177973e41
+  - PSIX FY2025 earnings release（2026-03-02）：FY2025 revenue `$722.4M`、net income `$114.0M`、Q4 GM `21.9%`、数据中心产能爬坡影响毛利。https://investors.psiengines.com/news-releases/news-release-details/power-solutions-international-announces-fourth-quarter-and
+  - PSIX FY2025 Form 10-K：2025 gross margin `25.6%`，Power Systems 增加 `$260.6M`，数据中心和油气为增长方向，2025 税收 valuation allowance release 影响净利润。https://investors.psiengines.com/node/13726/html
+  - PSIX March 11, 2026 Investor Calls Q&A Summary：8-12 个月 firm-order planning、直接客户通常不是 hyperscaler、enclosure revenue 只反映 value-add、1MW continuous / 1.25MW standby、约 25% 长期 GM 目标、典型 enclosure 约 2,500 man-hours、50-60% 标准化。https://investors.psiengines.com/static-files/5860e1b0-7139-41b2-b338-02c0a4808aa9
+  - MTL acquisition press release：MTL 有 switchgear subbases、electrical enclosure assemblies、fuel tanks、UL142/ULC S601/UL2085、185,000 sq ft，并强化数据中心交付能力。https://investors.psiengines.com/news-releases/news-release-details/power-solutions-international-inc-acquires-mtl-manufacturing
+  - PSI power systems / enclosures product pages：2.0-65L engines、up to 2MWe；enclosures up to 5MW、UL 142 / UL 52804 tanks、fuel conditioning、switchgear、Beloit/Darien over 300,000 sq ft。https://psiengines.com/power-systems/ 和 https://psiengines.com/enclosures/
+- 本地公司资料：
+  - `公司调研/电力_发电_能源_储能/PSIX_Power_Solutions_International_公司调研_2026-06-11.md`
+- 本地行业资料：
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- 行业一手/外部校验：
+  - Goldman Sachs Research：美国数据中心 power demand 预计从 2025 `31GW` 到 2026 `41GW`、2027 `66GW`。https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027
+  - DOE/LBNL：美国数据中心用电 2023 `176TWh`，2028 估计 `325-580TWh`。https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers
+  - Cleanview behind-the-meter report 页面：59 个 BTM data center projects 数据集。https://cleanview.co/reports/behind-the-meter-data-centers
+  - Caterpillar/AIP：`2GW` fast-response natural gas generator sets，2026-09 至 2027-08 交付，并配 BESS。https://investors.caterpillar.com/news/news-details/2026/American-Intelligence--Power-Forms-Strategic-Alliance-with-Caterpillar-and-Boyd-CAT-to-Deploy-2-Gigawatts-of-Dedicated-Power-for-Hyperscale-AI-Infrastructure/default.aspx
+  - Wartsila：Texas off-grid data center `790MW`、42 台 50SG natural gas engines，Q2 2026 订单。https://www.wartsila.com/media/news/23-04-2026-wartsila-continues-to-expand-its-data-center-footprint-with-new-790-mw-order-in-texas-the-next-data-center-alley-3744599
+  - Bloom Energy / Oracle：最高 `2.8GW` fuel cell master agreement，初始 `1.2GW` 已签约部署。https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-and-Oracle-Expand-Strategic-Partnership-to-Deploy-up-to-2-8-GW-to-Accelerate-AI-Infrastructure-Build-Out/default.aspx
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 若按管理层 Q2 flat、H2 接近 2025H2 机械推算，全年大致 `$650-670M`，但这不是正式指引。
+  - FY2027 可能受 5MW package、BTM/onsite prime、1.5MW gas engine、large diesel solutions 和 oil & gas 修复影响，但当前缺少公司披露 backlog、客户、认证和交付时间表，不能替代 NTM 主表。
+  - 远期期权包括 1.5MW gas engine、5MW 标准化 hyperscale enclosure、SOFC/Weichai/Ceres 相关产品、New Energy / battery packs 与数据中心 BESS 结合；当前均不进入 NTM 基准。

@@ -1,0 +1,187 @@
+# 公司收入传导与价值传导评估：Cohu Inc（COHU）
+
+报告日期：2026-06-12。  
+公司代号：COHU。公司名称：Cohu Inc。  
+正式输出目录：`分析报告/公司评估/`。  
+主口径：NTM，即 2026-06-12 起未来 12 个月，近似覆盖 2026Q2-2027Q1；因 COHU 只披露 FY2026 和 Q2 指引，NTM 的 2027Q1 部分为模型估算。  
+边界说明：本报告只使用 `公司调研/`、`行业调研/` 和 COHU/SEC/公司 IR 等公开资料校准经营传导；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归、排序或市场定价资料。本报告不输出投资评级、目标价、股价区间或估值倍数判断；报告标题沿用任务指定文件名中的“估值评估”，正文实际只做经营价值传导评估。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 公司收入、利润率、EBITDA/净利润和自由现金流方向；FY2026 指引、HPC pipeline、SAM 和 2027 放量只作为当前预期锚或上限，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：2026Q1 revenue 为 1.251 亿美元，约 60% recurring、40% systems；2026Q2 指引为 1.44 亿美元 +/- 700 万美元；FY2026 管理层收入指引为同比 +20%-25%，以 2025 revenue 4.530 亿美元计算，隐含 FY2026 约 5.44-5.66 亿美元；Q1 non-GAAP gross margin 46.5%，Q2 指引约 44%，FY2026 为 mid-40%。
+- 当前预期锚：COHU 当前经营预期不是“全部 7.5 亿美元 HPC pipeline 转收入”，而是 FY2026 收入 5.44-5.66 亿美元、FY2026 HPC systems-only revenue 0.8-1.0 亿美元、Q2 revenue 1.44 亿美元 +/- 700 万美元、Q2 adjusted EBITDA 约 10%、低 5,000 万美元区间的季度 non-GAAP opex。
+- 重要产品/业务线：Eclipse active thermal / AI xPU Test、Neon HBM inspection/metrology、DiamondX power/GaN/PMIC test、recurring interface/contactors/services、PAICe software analytics、传统非 HPC handlers/ATE/automation。
+- NTM 公司收入四情景：悲观 5.15-5.60 亿美元；基准 5.75-6.25 亿美元；乐观 6.60-7.35 亿美元；极度乐观 8.00-9.20 亿美元。基准相对 FY2026 指引是“正常兑现并延续到 2027Q1”，不是大幅超预期；乐观需要 qualification 客户转正式订单并在 NTM 内确认；极度乐观需要需求、客户捕获、毛利和交付同时突破。
+- 利润或 EBITDA 四情景：悲观毛利率约 41%-43%，经营利润率仍低或接近盈亏平衡；基准毛利率约 44%-46%，adjusted EBITDA 约 8%-12%；乐观毛利率约 46%-49%，adjusted EBITDA 约 13%-18%；极度乐观毛利率约 49%-52%，adjusted EBITDA 约 18%-24%。GAAP 净利润受摊销、重组、SBC 和所得税影响，无法可靠量化到同等置信度。
+- 最大传导瓶颈：7.5 亿美元 HPC pipeline 中 6.0-7.0 亿美元仍处 qualification/engagement 或尚未贡献收入，NTM 能确认多少取决于客户 qualification、production ramp、交付、验收和收入确认节奏。
+- 最大利润率变量：Eclipse/HPC ramp 初期成本与产品 mix。Q1 毛利率高于指引，但 Q2 non-GAAP gross margin 指引回落至约 44%，说明高增长 systems 并不会自动带来毛利率扩张。
+- 最大现金流变量：systems ramp 会拉动库存、客户预付款、应收款和现场交付；Q1 operating cash flow 为 1,030 万美元、capex 200 万美元，但 NTM 若加速交付，短期营运资本可能吞掉一部分利润改善。
+- 可信度：基准为中高；悲观为中；乐观为中；极度乐观为低。原因是 FY2026 指引、Q2 指引、Q1 revenue/recurring/systems 和 3,000 万美元 Eclipse follow-on orders 证据强，但极度乐观依赖尚未转收入的 pipeline。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Eclipse active thermal / AI xPU Test | FY2026 forecast 6,000-8,000 万美元；FY2026 HPC systems-only 总口径 8,000 万-1.0 亿美元 | FY2026 指引隐含约 11%-18%；NTM 基准估计 8,000 万-1.10 亿美元 | 最大增量；绑定 GPU、CPU、custom AI accelerator、ASIC 的高功耗 final test/SLT/thermal handler | B：3,000 万美元 follow-on orders、第二客户订单、FY2026 revenue outlook；部分为管理层展望 | 进入基准，但只按已披露订单、qualified pipeline 和 FY2026 outlook 折扣纳入；qualification/engagement 不直接进基准 | 10kW roadmap、多客户标准平台、2027 Rubin/MI400/HBM4 更高功耗测试 |
+| Neon HBM inspection/metrology | FY2026 forecast 约 2,000 万美元，同比约 +80%；供应 world-leading HBM memory manufacturer | FY2026 指引隐含约 3%-4%；NTM 基准估计 2,000 万-3,000 万美元 | 小但高质量；绑定 HBM/先进封装 defect inspection、AI deep learning inspection 和良率控制 | B/C：收入 outlook 明确，客户方向明确，但客户扩线/扩客户金额未完整披露 | 进入基准，小额保守纳入；新增客户和 HBM4/HBM4E 加速只进乐观/极度乐观 | 多 HBM 客户复制、HBM4/4E inspection bottleneck |
+| DiamondX power/GaN/PMIC test | 已披露约 500 万美元 GaN orders；Q1 材料称 secured AI GPU rack-scale server power management IC test orders；FY2026 模型 800 万-1,500 万美元 | FY2026 指引隐含约 1%-3%；NTM 基准估计 1,000 万-2,000 万美元 | AI rack power density 外溢；GaN/PMIC/high-current test 是二级增量 | B/C：500 万美元订单为 B，广义 rack-scale power IC pipeline 为 C | 进入基准但金额小；只承认已披露订单和保守 follow-on | 800V/HVDC、advanced PoL、GaN 大规模导入 |
+| Recurring interface/contactors/services/spares | 2026Q1 recurring revenue 约 7,600 万美元；约 60% revenue；年化约 3.04 亿美元 | 约 55%-60% | 利润与现金流底座；随 installed base、contactors、spares、services、software attach 增长 | A：已披露 recurring revenue；AI/HPC 拆分为 C | 进入基准；AI/HPC contactor/socket attach 只作辅助上修 | 高功耗 socket/contactor 更换频率和 ASP 上行 |
+| PAICe software analytics | ARR through Apr. 2026 约 120 万美元；大型 xPU 客户 33 万美元 annual subscription，initial production order lifetime value 约 500 万美元 | 当前 <1%；NTM 基准估计 100 万-300 万美元 | 当前不改写收入表，但改善 recurring 质量和客户粘性 | C：订阅和客户披露明确，但收入基数小、扩展节奏需估算 | 基准仅小额纳入 recurring；多客户平台化进入乐观/远期期权 | 工厂级 predictive maintenance/yield analytics 标准层 |
+| 传统非 HPC handlers/ATE/automation | Q1 systems 总收入约 4,900 万美元，剔除 AI/HPC 后无法可靠量化；NTM 基准估计约 1.25 亿-1.60 亿美元 | 约 20%-30% | 周期恢复和抵消项；汽车、工业、移动、消费、普通 PMIC/RF/analog 需求决定下行保护 | A/C：系统收入 A，按终端拆分和非 HPC 产品金额 C | 进入基准，但不赋予 AI 溢价；传统周期下滑在悲观中处理 | 印度/区域 OSAT 扩产、汽车 ADAS/power 复苏 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估产品外部需求池，不判断 COHU 份额、收入确认或利润率。需求锚来自 `行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-06-11.md`、`行业调研_HBM与存储测试设备_2026-06-11.md` 和 COHU 最新 IR。绝对变化指 NTM 对该产品需求池或可服务机会相对当前需求锚的变化，不等于 COHU revenue。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Eclipse active thermal / AI xPU Test | COHU Q1 材料给 AI xPU Test SAM 6.5 亿美元、FY2026 revenue forecast 6,000-8,000 万美元；行业资料将高功耗 SLT/burn-in/thermal handler 2026 需求定义为 AI processor 放量瓶颈 | AI GPU/ASIC rack acceptance 推迟、客户降低 SLT/burn-in 强度，NTM 需求池只维持 2026 已排产订单，约低于当前预期 20%-35% | GB300/MI350/TPU/custom ASIC 按当前节奏导入，高功耗 final test 和 thermal handler 需求正常扩张；COHU 所见 pipeline 中 qualified 部分开始转收入 | qualification 客户中 1-2 个在 NTM 内转 production，客户接受更多 thermal test cell 和高 force socket，需求池较当前预期上修 25%-50% | Rubin/MI400/HBM4/定制 ASIC 同时提前，1,000W+ package 的 thermal SLT 成硬瓶颈，需求池非线性上修 75%+ | 绝对需求池由“FY2026 6,000-8,000 万美元 COHU systems outlook”向 1.0 亿美元以上年化需求迁移；极度乐观为数亿美元级 pipeline 加速 | 基准符合当前预期；乐观高于当前预期；极度乐观显著高于当前预期 | 正证：3,000 万美元 follow-on orders、第二客户、系统订单 +62% QoQ、production ramp 2H26。反证：客户 qual 延迟、二供、测试时间优化、AI rack 验收放慢 |
+| Neon HBM inspection/metrology | COHU Q1 材料给 HBM Inspection SAM 1.0 亿美元、FY2026 forecast 约 2,000 万美元、+80% YoY；行业资料显示 HBM3E/HBM4、KGD、advanced package inspection 需求上升 | HBM 客户扩线放慢或 inspection bottleneck 被其他工具吸收，需求低于 FY2026 2,000 万美元路径 | HBM3E 高位、HBM4 qualification，现有 HBM 客户按计划扩线，需求大体符合 2,000 万美元 forecast | 第二客户或 OSAT 导入，HBM4/HBM4E inspection coverage 提升，需求池较当前预期上修 50%-100% | HBM4/4E 和 16H stack 使 defect inspection 成为多客户硬瓶颈，Neon/NV-Core 需求接近 SAM 上沿 | 绝对需求从 2,000 万美元 revenue forecast 向 3,000 万-5,000 万美元年化机会迁移；极度乐观可接近 1.0 亿美元 SAM | 基准符合当前预期；乐观明显高于当前预期 | 正证：world-leading HBM manufacturer、HBM test/inspection 强需求。反证：COHU 不是 HBM memory ATE 龙头，inspection 工具份额需验证 |
+| DiamondX power/GaN/PMIC test | COHU 披露约 500 万美元 GaN orders；Q1 材料给 Power Management SAM 2.5 亿美元，并称已获 AI GPU rack-scale server power management IC test orders | GaN 在 AI data center power 仍停留 characterization，500 万美元订单后 follow-on 弱；需求低于当前乐观叙事 | AI rack power density 提升带来 GaN/PMIC/high-current test 小规模量产需求；500 万美元订单正常交付 | 多个 AI rack power IC/GaN 客户进入 production test，需求池较当前预期上修 50%-150% | HVDC/advanced PoL/GaN 方案在 NTM 内快速标准化，DiamondX 类平台需求非线性扩张 | 绝对需求从已披露 500 万美元订单和低千万美元机会向数千万美元 NTM 机会迁移 | 基准略高于单笔订单但仍保守；乐观需 follow-on 证据 | 正证：订单明确、AI power density 趋势真实。反证：电源架构保守、Si/SiC 替代、客户自建测试 |
+| Recurring interface/contactors/services/spares | Q1 recurring 7,600 万美元，约 60% revenue；行业资料显示高功耗 socket/contactor、load board、services 具有耗材和复购属性 | 传统 test utilization 下滑，spares/services 低于 Q1 run-rate，客户延后换件和服务 | installed base 正常利用，HPC/Neon/DiamondX 系统 attach 增加；Q1 run-rate 大体延续 | 高功耗 contactor/socket ASP 与更换频率上行，recurring 较当前 run-rate 上修 10%-20% | AI/HPC installed base 快速扩大，高端 contactor/socket 交期紧，recurring attach 显著上修 | 绝对需求从 Q1 年化约 3.04 亿美元向基准 3.10-3.40 亿美元、乐观 3.60 亿美元以上迁移 | 基准符合当前预期；乐观高于当前 run-rate | 正证：recurring A 级披露、services/interface/spares 同比强。反证：test cell utilization 回落、客户库存消化 |
+| PAICe software analytics | ARR 120 万美元；xPU 客户 33 万美元 annual subscription，initial production order lifetime value 500 万美元；行业资料称 test analytics/yield software 小而高毛利 | 客户只做 demo 或单点订阅，ARR 不明显增长 | 已有 xPU production order 分阶段确认，作为 recurring 小额增长 | PAICe 被 Eclipse/Neon 客户作为 OEE/predictive maintenance 附加订阅，ARR 达数百万美元 | 多家 OSAT/fab/test floor 标准化部署，ARR 向 1,000 万美元以上迈进 | 绝对需求从 120 万美元 ARR 向数百万 ARR 迁移；极度乐观为千万级 ARR | 基准符合当前披露；乐观高于当前预期但仍小基数 | 正证：真实订阅和 lifetime value。反证：IT/OT 集成、客户数据权限、自研 analytics |
+| 传统非 HPC handlers/ATE/automation | 2026Q1 systems revenue 约 4,900 万美元，传统汽车/工业/移动/消费仍占一部分；FY2025 revenue 4.530 亿美元，2026Q1 test cell utilization 78% | 汽车/工业/移动复苏低于预期，客户 capex 推迟，传统 systems 低于当前 run-rate | 传统周期温和恢复，支撑 FY2026 +20%-25% 总收入但不贡献 AI 溢价 | 汽车 ADAS、industrial power、regional OSAT 扩产带来超预期订单 | 多终端周期同时上行，但与 AI/HPC 无直接关系，不作为极度乐观核心来源 | 绝对需求围绕低到中个位数或低双位数恢复；极度乐观也主要是抵消项 | 基准符合当前预期；乐观有限 | 正证：Q4/Q1 利用率改善、传统 design wins。反证：半导体设备周期波动、价格竞争 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断哪些产品需求能进入 COHU NTM 收入表，以及当前可收入化基数。A 级为已披露收入/指引；B 级为订单、合同、backlog/RPO 或明确交付时间表；C 级为 design win、认证、管理层可验证披露；D/E 不进基准。所有 pipeline 均先折扣，不能把 SAM、TAM、客户总预算或 industry demand 直接当 COHU revenue。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Eclipse active thermal / AI xPU Test | 2026Q1 systems revenue 约 4,900 万美元；FY2026 HPC systems-only outlook 8,000 万-1.0 亿美元；Eclipse 2026 forecast 6,000 万-8,000 万美元；3,000 万美元 follow-on orders；3 qualified customers 约 1.0 亿美元 pipeline | 直接 | Systems 硬件，初期 ramp 毛利受成本和良率影响；后续 attach recurring | 5,000 万-7,000 万美元 | 8,000 万-1.10 亿美元 | 1.30 亿-1.80 亿美元 | 2.20 亿-3.00 亿美元 | 基准基本符合 FY2026 outlook 加 Q1 2027 延续；乐观高于当前预期；极度乐观仅为上限 | B，部分 management outlook 可视为 A/B；qualification 为 C | 是 | 已有订单、FY2026 outlook、qualified customers 和 Q2/FY revenue guide；qualification/engagement 折扣处理 | 基准纳入 8,000 万-1.10 亿美元；未 qualified 的 6.0-7.0 亿美元机会不进基准 |
+| Neon HBM inspection/metrology | FY2026 forecast 约 2,000 万美元，+80% YoY；现有 world-leading HBM customer；HBM inspection multi-unit order 金额未披露 | 直接 | Inspection/metrology + AI vision，毛利质量可能高于普通 handler，但客户集中 | 1,200 万-1,800 万美元 | 2,000 万-3,000 万美元 | 4,000 万-6,000 万美元 | 7,000 万-1.0 亿美元 | 基准符合当前 forecast；乐观需要扩线或第二客户 | B/C | 是 | 收入 outlook、客户供应关系、HBM industry demand；未披露金额保守折扣 | 基准小额纳入；新增客户进乐观/极度乐观 |
+| DiamondX power/GaN/PMIC test | 约 500 万美元 GaN orders；AI GPU rack-scale server power management IC test orders 未披露金额；Power Management SAM 2.5 亿美元 | 直接 | ATE/power systems，毛利中等；若附带服务/耗材可改善 | 300 万-800 万美元 | 1,000 万-2,000 万美元 | 3,000 万-5,000 万美元 | 7,000 万-1.0 亿美元 | 基准略高于已披露订单，仍低于题材上限；乐观需要 follow-on | B for 500 万美元订单；C for broader PMIC pipeline | 是，小额 | 已披露订单可确认；未量化 AI rack-scale PMIC 只做保守估计 | 基准低千万美元；SAM 不进基准 |
+| Recurring interface/contactors/services/spares | Q1 recurring revenue 约 7,600 万美元，约 60%；年化约 3.04 亿美元 | 直接/间接；AI attach 通过 installed base 和 consumables | Recurring、高毛利/稳定现金流；服务和接口耗材比普通 systems 更抗周期 | 2.75 亿-3.05 亿美元 | 3.10 亿-3.40 亿美元 | 3.60 亿-4.15 亿美元 | 4.40 亿-5.00 亿美元 | 基准符合 Q1 run-rate 和 FY2026 指引；乐观高于当前 run-rate | A for total recurring；C for AI/HPC split | 是 | 已披露 recurring revenue 是最强基数；AI/HPC 拆分未披露，不能单独夸大 | 作为公司基准核心纳入；高功耗 contactors 只作乐观上修 |
+| PAICe software analytics | ARR 约 120 万美元；xPU 客户 33 万美元 annual subscription，initial order lifetime value 约 500 万美元 | 直接，通常归入 recurring | 高毛利订阅，但规模很小；客户集成成本高 | <100 万-150 万美元 | 100 万-300 万美元 | 500 万-1,000 万美元 | 1,500 万-2,500 万美元 | 基准符合当前 ARR；乐观需要多客户生产部署 | C | 是，但只小额 | 已披露 ARR 和订阅订单；lifetime value 不等于 NTM revenue | 基准只作为 recurring 小额组成，不单独驱动公司情景 |
+| 传统非 HPC handlers/ATE/automation | Q1 systems revenue 约 4,900 万美元；剔除 Eclipse/Neon/DiamondX 后无法可靠量化；传统终端 automotive 12%、industrial 8%、consumer 7%、mobile 5%、computing 8% 仅为终端口径 | 直接 | 周期性 capital equipment；利润随 utilization 和 mix 波动 | 1.05 亿-1.30 亿美元 | 1.25 亿-1.60 亿美元 | 1.60 亿-2.05 亿美元 | 2.00 亿-2.40 亿美元 | 基准符合温和复苏；乐观非 AI 主线 | A for total systems，C for residual split | 是 | 用 systems 总收入和总公司指引反推，不单独赋予高可信细分金额 | 纳入公司汇总，但作为抵消项和周期项处理 |
+| 未披露客户预算、SAM/TAM、industry pipeline | 7.5 亿美元 HPC pipeline、1.6 亿美元 SAM growth opportunities、行业测试市场规模 | 间接 | 不可作为收入表基数 | 0 | 0 | 仅情景解释 | 仅上限解释 | 不代表当前预期收入 | E/C | 否 | 没有客户、价格、交付和收入确认时间表时不能进入 NTM 基准 | 排除出基准；只在乐观/极度乐观条件中跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从需求和收入基数出发，判断每个重要产品在 NTM 内对 COHU revenue 和经营利润/现金流质量的贡献。表中“利润贡献”使用方向和区间估算，因 COHU 不按产品披露毛利或经营利润，无法可靠量化到 GAAP 净利润。收入贡献为模型口径，产品线之间可能共享客户预算；公司汇总在第 6 节重新去重。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Eclipse active thermal / AI xPU Test | 悲观产品 | 5,000 万-7,000 万美元 | 毛利可贡献但 ramp 成本、低利用率和现场支持吞噬经营杠杆；EBITDA 贡献有限 | 低于公司 mid-40% 或拖累整体毛利 | 低于 FY2026 HPC outlook | 客户订单存在但交付/验收后移 | 保留为悲观 | 客户 qualification 延迟、AI rack 验收放慢、竞争二供、Q3/Q4 guide 未上修 |
+| Eclipse active thermal / AI xPU Test | 基准产品 | 8,000 万-1.10 亿美元 | 毛利正贡献，但初期不假设显著扩张；随 Q2 adjusted EBITDA 改善体现经营杠杆 | 接近公司 mid-40%，H2 可改善 | 符合当前 FY2026 HPC outlook 加 Q1 2027 延续 | FY2026 HPC systems-only 8,000 万-1.0 亿美元、3,000 万美元 follow-on、3 qualified customers | 保留为基准 | 7.5 亿美元 pipeline 不是 backlog；2H26 production ramp 仍需执行 |
+| Eclipse active thermal / AI xPU Test | 乐观产品 | 1.30 亿-1.80 亿美元 | 规模效应、recurring attach 和客户复购带来 EBITDA 明显改善 | 毛利率上行至 mid/high-40% | 高于当前预期 | 5 qualification customers 中部分转 production、Eclipse follow-on 连续化 | 保留为乐观 | 客户数量和订单金额需公开继续验证 |
+| Eclipse active thermal / AI xPU Test | 极度乐观产品 | 2.20 亿-3.00 亿美元 | 只有高利用率、高 ASP、高 attach 和交付顺利同时成立才显著增厚利润 | 可接近 50%+，但低置信 | 显著高于当前预期 | 10kW roadmap、Rubin/MI400/ASIC 提前、pipeline 快速转化 | 下移为乐观上限/低可信极度乐观 | 任一环节缺证据都会下移；pipeline 大部分未收入化 |
+| Neon HBM inspection/metrology | 悲观产品 | 1,200 万-1,800 万美元 | 小额利润贡献，固定成本吸收有限 | 稳定或略低 | 低于 current forecast | 现有订单可见但扩线慢 | 保留为悲观 | HBM 客户扩产推迟、检测工具份额不及预期 |
+| Neon HBM inspection/metrology | 基准产品 | 2,000 万-3,000 万美元 | 高端 inspection/metrology 和软件算法带来较好毛利，但规模小 | 略高于公司平均 | 符合当前 forecast | FY2026 约 2,000 万美元、world-leading HBM customer | 保留为基准 | 客户集中、COHU 非检测量测龙头 |
+| Neon HBM inspection/metrology | 乐观产品 | 4,000 万-6,000 万美元 | 毛利率和现金转换质量较好，若扩客户可提升 mix | 上行 | 高于当前预期 | HBM4/HBM4E inspection 强需求、第二客户或 OSAT 导入 | 保留为乐观 | 新客户/产线未披露 |
+| Neon HBM inspection/metrology | 极度乐观产品 | 7,000 万-1.0 亿美元 | 若接近 SAM 上沿，利润率强，但需要多客户复制 | 明显上行 | 显著高于当前预期 | HBM4/4E defect inspection 成瓶颈 | 下移为乐观上限/低可信极度乐观 | 竞争来自 KLA/Onto/Camtek/Nova 等更强检测量测平台 |
+| DiamondX power/GaN/PMIC test | 悲观产品 | 300 万-800 万美元 | 订单小，研发/销售支持可能抵消利润 | 无明显改善 | 低于当前叙事 | 500 万美元订单后无 follow-on | 保留为悲观 | GaN adoption 慢、客户仍在 characterization |
+| DiamondX power/GaN/PMIC test | 基准产品 | 1,000 万-2,000 万美元 | 毛利正贡献但规模小，对公司 EBITDA 影响有限 | 接近公司平均 | 符合保守订单转化 | 500 万美元订单、AI rack-scale PMIC test orders、Power Management SAM | 保留为基准小额 | 未披露量产客户规模 |
+| DiamondX power/GaN/PMIC test | 乐观产品 | 3,000 万-5,000 万美元 | 若量产 follow-on 形成，可改善 systems mix | 略上行 | 高于当前预期 | 多客户 GaN/PMIC production test | 保留为乐观 | 电源架构路线不确定 |
+| DiamondX power/GaN/PMIC test | 极度乐观产品 | 7,000 万-1.0 亿美元 | 需要平台 of record 和高利用率；否则低毛利硬件上修不等于利润上修 | 上行但需验证 | 显著高于当前预期 | HVDC/advanced PoL/GaN 快速导入 | 下移为乐观上限/低可信极度乐观 | NTM 内 GaN 大规模渗透缺明确时间表 |
+| Recurring interface/contactors/services/spares | 悲观产品 | 2.75 亿-3.05 亿美元 | 仍为毛利和现金流底座，但 utilization 下行压低 spares/services | 稳定或小幅下行 | 低于 Q1 run-rate | Q1 recurring 7,600 万美元 A 级证据 | 保留为悲观 | 传统 test volume 回落、客户消化库存 |
+| Recurring interface/contactors/services/spares | 基准产品 | 3.10 亿-3.40 亿美元 | 高于 systems 的稳定性，支撑 mid-40% 毛利和 FCF | 稳定 | 符合当前 run-rate | Q1 recurring 60%、services/interface/spares demand | 保留为基准 | AI/HPC 拆分未披露，不额外上修 |
+| Recurring interface/contactors/services/spares | 乐观产品 | 3.60 亿-4.15 亿美元 | 高功耗 contactor/socket attach 与服务复购提升 EBITDA/FCF 质量 | 上行 | 高于当前 run-rate | Eclipse/Neon/DiamondX installed base 扩大 | 保留为乐观 | 客户可能压价或多供 |
+| Recurring interface/contactors/services/spares | 极度乐观产品 | 4.40 亿-5.00 亿美元 | 需要 AI/HPC installed base 快速扩大和高端耗材紧缺；利润质量最好 | 明显上行 | 显著高于当前预期 | 高功耗 contactor/socket 瓶颈 | 下移为乐观上限 | AI/HPC recurring 拆分缺 A/B 证据 |
+| PAICe software analytics | 悲观产品 | <100 万-150 万美元 | 对利润表几乎无影响，客户集成成本可能吞噬毛利 | 无明显影响 | 低于当前 ARR 增长叙事 | ARR 120 万美元 | 保留为悲观 | 客户数据权限和 IT/OT 集成 |
+| PAICe software analytics | 基准产品 | 100 万-300 万美元 | 高毛利但金额小；改善 recurring 质量但不改公司利润 | 小幅上行 | 符合当前 ARR/订单 | 33 万美元 annual subscription、500 万美元 lifetime value | 保留为基准小额 | lifetime value 不等于 NTM revenue |
+| PAICe software analytics | 乐观产品 | 500 万-1,000 万美元 | 高毛利订阅开始可见，EBITDA 贡献高于收入占比 | 上行 | 高于当前预期 | 多客户附加订阅、OEE/predictive maintenance | 保留为乐观 | 销售周期长、客户自研 |
+| PAICe software analytics | 极度乐观产品 | 1,500 万-2,500 万美元 | 软件毛利强，但需要多个生产客户标准化 | 明显上行 | 显著高于当前预期 | PAICe 成 test floor 标准层 | 移入附录/仅作跟踪 | 缺 NTM 大规模客户和收入确认证据 |
+| 传统非 HPC handlers/ATE/automation | 悲观产品 | 1.05 亿-1.30 亿美元 | 低利用率、价格竞争和固定成本吸收不足拖累毛利 | 下行 | 低于当前温和复苏预期 | 传统系统收入分拆不透明 | 保留为悲观 | 汽车/工业/移动 capex 走弱 |
+| 传统非 HPC handlers/ATE/automation | 基准产品 | 1.25 亿-1.60 亿美元 | 稳定贡献，主要抵消而非高弹性来源 | 稳定 | 符合当前预期 | Q1/Q2 run-rate 和 FY2026 总指引 | 保留为基准 | 与 AI/HPC 共用制造资源 |
+| 传统非 HPC handlers/ATE/automation | 乐观产品 | 1.60 亿-2.05 亿美元 | 利用率改善带来经营杠杆，但毛利低于高端 AI/HPC mix | 小幅上行 | 高于当前预期 | Automotive/industrial/mobile design wins 和区域 OSAT 扩产 | 保留为乐观 | 周期恢复难以线性外推 |
+| 传统非 HPC handlers/ATE/automation | 极度乐观产品 | 2.00 亿-2.40 亿美元 | 即使收入上修，也不应自动给高利润率 | 稳定或小幅上行 | 高于当前预期但非核心 | 多终端周期共振 | 下移为乐观上限 | 传统业务不是极度乐观主因 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：第一个表固定为公司收入和利润四情景。公司汇总时对产品重叠做去重：HPC pipeline 不等于订单，SAM 不等于 revenue，recurring 和 PAICe 不重复计算，DiamondX 普通 ATE 与传统 systems 不重复计算。绝对增速以 TTM revenue 约 4.81 亿美元和 FY2025 revenue 4.53 亿美元作参考；相对预期以 FY2026 +20%-25% 指引、Q2 1.44 亿美元 +/- 700 万美元和 Q1 run-rate 为主。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 5.15 亿-5.60 亿美元 | 约 +7%-16% vs TTM；约 +14%-24% vs FY2025 | 低于当前 FY2026 指引斜率或仅贴近指引低端；Q2 后 H2/Q1 2027 未延续 | 41%-43% | -4%-1% | adjusted EBITDA 0%-5%；GAAP 净利润无法可靠量化，倾向亏损 | OCF 可为正但 FCF 波动，库存和应收占用上升 | 中 | Eclipse/Neon 延迟、传统系统复苏不足、gross margin 低于 mid-40%、R&D/opex 投入无法被收入吸收 |
+| 基准公司 | 5.75 亿-6.25 亿美元 | 约 +19%-30% vs TTM；约 +27%-38% vs FY2025 | 接近 FY2026 +20%-25% 正常兑现并延续到 2027Q1；不把 pipeline 大幅提前 | 44%-46% | 1%-5% | adjusted EBITDA 8%-12%；GAAP 净利润接近盈亏平衡到小额盈利/亏损，无法可靠量化 | FCF 正向，capex 约 revenue 2%，营运资本随 systems ramp 上升 | 中高 | 需要 Q2 1.44 亿美元指引兑现、H2 订单稳定、Eclipse ramp 不大幅压毛利 |
+| 乐观公司 | 6.60 亿-7.35 亿美元 | 约 +37%-53% vs TTM；约 +46%-62% vs FY2025 | 高于当前 FY2026 指引，且不是单一小基数项目；HPC qualification 客户转订单 | 46%-49% | 6%-11% | adjusted EBITDA 13%-18%；GAAP 净利润改善但仍受摊销/SBC/税影响，无法可靠量化 | FCF 明显改善，但库存和客户交付节奏可能造成季度波动 | 中 | qualification 转化、Eclipse/Neon/DiamondX follow-on、recurring attach、交付和验收同步成立 |
+| 极度乐观公司 | 8.00 亿-9.20 亿美元 | 约 +66%-91% vs TTM；约 +77%-103% vs FY2025 | 显著高于当前预期；需求、公司捕获、利润质量和执行同时突破 | 49%-52% | 11%-17% | adjusted EBITDA 18%-24%；GAAP 净利润方向转正但无法可靠量化 | FCF 大幅改善的同时，营运资本高占用和客户集中风险上升 | 低 | 7.5 亿美元 pipeline 在 NTM 内快速转化，供应链、field install、客户验收、毛利率和 opex 杠杆均无明显掉链 |
+
+### 汇总校验
+
+| 校验项 | 处理结论 |
+| --- | --- |
+| 产品之间重复计算 | Recurring 与 PAICe 可能重叠，汇总时 PAICe 只作为 recurring 质量上修，不另加大额收入；DiamondX broader ATE 与传统 systems 去重。 |
+| 一次性项目和 pipeline 外推 | 3,000 万美元 Eclipse orders、500 万美元 GaN orders 可纳入订单锚；7.5 亿美元 HPC pipeline 只影响乐观/极度乐观，不作为 backlog。 |
+| 传统业务抵消 | Automotive/industrial/mobile/consumer 传统 systems 是抵消项；若半导体周期走弱，AI/HPC 增量可能被传统系统下滑和低利用率抵消。 |
+| 低毛利 pass-through | COHU 的 AI/HPC systems 不是纯 pass-through，但 Eclipse ramp 初期成本可能压毛利；因此基准不假设收入增长自动带来 operating leverage。 |
+| 会计口径 | GAAP 净利润受 purchased intangibles amortization、SBC、restructuring、tax provision 和 convertible note interest 影响；本报告以 gross margin、operating margin、adjusted EBITDA 和 FCF 方向作为经营质量主口径。 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在影响层级处理一次：需求风险在第 3 节，收入确认风险在第 4 节，产品份额/价格/成本在第 5 节，公司组合和现金流在第 6 节。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 revenue 1.251 亿美元、Q2 指引 1.44 亿美元 +/- 700 万美元、FY2026 revenue +20%-25% | 公司汇总 | 给基准公司收入 5.75 亿-6.25 亿美元提供 A 级锚；悲观低于该斜率 | Q2 gross margin 指引约 44%，限制基准毛利率上修 | Q2 revenue 上升会带来营运资本需求 | 基准保留；悲观保留为下行；乐观需额外订单 |
+| Q1 recurring revenue 约 7,600 万美元、约 60% revenue | 收入基数/公司利润 | 提供 A 级收入底座，减少纯 systems 周期波动 | 支撑 mid-40% gross margin 和 FCF 质量 | services/interface/spares 通常现金转换好 | 基准保留；乐观只允许 modest 上移 |
+| 3,000 万美元 Eclipse follow-on orders、第二客户、3 qualified customers 约 1.0 亿美元 pipeline | 产品贡献 | 支撑 Eclipse 进入基准，不只进乐观 | 初期 ramp 成本限制利润率，但规模化可改善 | 需要 2H26 production ramp、验收和现场支持 | 基准保留；乐观保留；极度乐观下移为低可信上限 |
+| 7.5 亿美元 HPC pipeline，其中 6.0-7.0 亿美元 qualification/engagement 尚未贡献 revenue | 收入基数/可信度 | 不能进入基准；只影响乐观和极度乐观上限 | pipeline 不提供利润率证据 | qualification 转收入周期长，客户验收不确定 | 基准中排除；乐观保留；极度乐观低可信 |
+| Neon FY2026 forecast 约 2,000 万美元、world-leading HBM customer | 产品贡献 | 小额进入基准，支撑 HBM inspection | 高端 inspection 可能改善 mix，但规模小 | 客户集中，扩线节奏决定确认 | 基准保留；乐观保留；极度乐观下移为上限 |
+| DiamondX 约 500 万美元 GaN orders 与 AI rack power IC test | 产品贡献 | 已披露订单进入基准小额；广义 SAM 不进基准 | 毛利取决于是否 production test 和服务 attach | GaN 从 characterization 到 HVM 的时间不确定 | 基准保留小额；乐观保留；极度乐观下移 |
+| Q1 non-GAAP gross margin 46.5%，Q2 指引约 44%，opex low-$50M | 公司利润 | 收入上行才有 opex 杠杆 | Q2 毛利率回落限制基准上修；Eclipse ramp 初期成本可能拖累 | opex 维持投入，若收入低于预期 EBITDA 下行 | 基准毛利率保留 44%-46%；乐观需要 mix/scale 证据 |
+| Q1 operating cash flow 1,030 万美元，capex 200 万美元，FY2026 capex target 约 revenue 2% | 公司现金流 | 收入可转为现金，但季度波动大 | 利润质量需看 working capital | systems ramp 增库存、AR 和 customer advances | 基准 FCF 正向保留；悲观现金流波动保留 |
+| 行业 HBM3E/HBM4、AI ASIC、thermal SLT 和 high-power contactor 需求强 | 产品需求 | 支撑需求池，但不能直接当 COHU revenue | 提供高端 mix 潜力 | 客户认证和现场集成限制收入确认 | 需求基准/乐观保留；收入基数不因行业 beta 自动上移 |
+| 竞争和替代：Advantest/Teradyne/Chroma/Aehr/FormFactor/Technoprobe/KLA/Onto/Camtek 等 | 产品份额/利润 | 限制份额和价格上修 | 二供和客户压价限制 gross margin | 客户可能多源化 | 乐观保留但不升为基准；极度乐观下移 |
+| 传统汽车/工业/移动/消费周期 | 公司组合 | 可能抵消 AI/HPC 增量 | 低利用率拖累毛利 | 传统 systems 订单波动快 | 悲观保留；基准不假设强复苏 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM revenue 5.15 亿-5.60 亿美元，gross margin 41%-43%，adjusted EBITDA 0%-5% | Q1/Q2 run-rate 和 recurring 底座使极端下行有限 | Eclipse/Neon/DiamondX 延迟、Q2 后订单降温、传统系统复苏弱、gross margin 跌破 44% | 保留 | 悲观下行情景 | 中 | 同一“AI rack 验收延迟”只压需求和收入确认，不在每个产品利润中重复扣减 |
+| 基准 | NTM revenue 5.75 亿-6.25 亿美元，gross margin 44%-46%，adjusted EBITDA 8%-12% | A/B 级证据包括 Q1 revenue、Q2 指引、FY2026 指引、recurring、Eclipse orders、HPC outlook、Neon forecast | 基准不能依赖未转收入的 6.0-7.0 亿美元 qualification/engagement pipeline；Q2 margin 约 44% 限制上修 | 保留 | 最可能情景 | 中高 | pipeline 未收入化的折扣只在收入基数处理，不再在公司汇总二次扣罚 |
+| 乐观 | NTM revenue 6.60 亿-7.35 亿美元，gross margin 46%-49%，adjusted EBITDA 13%-18% | qualification 客户转 production、Eclipse orders 连续、Neon 扩线、DiamondX follow-on、recurring attach | 需要公司特定订单和交付证据，不能只用行业高景气 | 保留 | 乐观超预期情景 | 中 | 竞争二供只限制份额/价格，不重复否定行业需求 |
+| 极度乐观 | NTM revenue 8.00 亿-9.20 亿美元，gross margin 49%-52%，adjusted EBITDA 18%-24% | 7.5 亿美元 pipeline 提供上限，行业 thermal SLT/HBM/HPC 测试需求强 | pipeline 绝大多数尚未 revenue；客户认证、交付、验收、毛利和营运资本都缺 A/B 级证据 | 下移 | 保留为低可信上限，部分移入附录跟踪 | 低 | 远期 10kW roadmap、Rubin/MI400/HBM4 只作上限条件，不在 NTM 基准中重复计入 |
+
+## 8. 结论
+
+- 最可能情景：基准。COHU 的 NTM 经营结论是“FY2026 指引正常兑现并延续到 2027Q1”，即 revenue 约 5.75 亿-6.25 亿美元，gross margin 约 44%-46%，adjusted EBITDA 约 8%-12%，FCF 方向为正但季度受营运资本扰动。
+- NTM 收入结论：Eclipse/HPC systems 是主要增量，但基准只承认已披露订单、FY2026 outlook 和 qualified pipeline 的保守转化；7.5 亿美元 HPC pipeline 不进入基准。Recurring interface/services/spares 是收入表中最可靠的 A 级底座，Neon 与 DiamondX 是小而高弹性增量。
+- 利润/现金流结论：利润质量取决于 mix 与 ramp，而不是收入本身。Q1 non-GAAP gross margin 46.5% 显示 mix 可以改善，但 Q2 指引约 44% 说明 Eclipse ramp、产品组合和 HPC 投入会压制短期利润率。现金流方向较好，Q1 OCF 为正且 capex 低，但 systems ramp 可能增加库存、应收款和现场交付压力。
+- 主要传导瓶颈：需求池到 COHU revenue 的最大断点是 qualification/engagement 转订单、订单转交付、交付转验收/收入确认；利润传导的最大断点是 Eclipse/HPC 初期 ramp 成本与客户价格/二供压力。
+- 乐观情景成立条件：未来 1-2 个季度持续披露 Eclipse follow-on orders；5 个 qualification customers 中至少 1-2 个进入 production；Neon 扩线或新增 HBM/OSAT 客户；DiamondX 的 500 万美元 GaN 订单出现 follow-on；recurring attach 维持或高于 Q1 run-rate；gross margin 回到 46% 以上而不是停留 44%。
+- 极度乐观情景成立条件：Rubin/MI400/TPU/Broadcom ASIC/HBM4 需求同时提前，客户把 high-power thermal SLT 和 HBM inspection 作为量产硬瓶颈；7.5 亿美元 pipeline 在 NTM 内快速转化大比例订单；COHU 供应链、field install、客户验收、质量和 gross margin 同时稳定。
+- 悲观情景触发条件：Q2 指引低端或 Q3 指引未延续；HPC systems-only outlook 不再上修或下修；Eclipse/Neon 客户 qualification 延迟；Q2/Q3 non-GAAP gross margin 持续低于 44%；traditional systems 恢复失败导致 recurring 外的 systems revenue 下滑；inventory 和 AR 上升但 revenue 不兑现。
+- 后续跟踪数据：Q2/Q3 revenue guide；FY2026 HPC systems-only revenue outlook 是否继续上修；Eclipse 订单金额和客户数；HPC pipeline 的 qualified/qualification/engagement 金额迁移；Neon HBM 客户扩线和新客户；DiamondX GaN/PMIC follow-on；recurring revenue 占比和增长；non-GAAP gross margin；operating cash flow、inventory 和 customer advances；test cell utilization；竞争对手在 AI processor SLT/burn-in/thermal handler 的订单语言。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：COHU 2026Q1 财报与 presentation 为 2026-04-30；COHU Q1 10-Q 期间截至 2026-03-28；Eclipse 第二客户公告为 2026-03-17；Eclipse follow-on orders 公告为 2026-04-02；DiamondX GaN orders 公告为 2026-05-12；本地公司/行业资料日期为 2026-06-11。
+- 主要收入、订单、指引和利润率来源：COHU Q1 2026 results、COHU Q1 2026 financial results presentation、COHU Q1 2026 Form 10-Q、COHU Q4 2025 results、Cohu Eclipse/GaN order announcements。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 revenue 指引 5.44 亿-5.66 亿美元是基准锚；FY2026 HPC systems-only 8,000 万-1.0 亿美元是 AI/HPC 可收入化锚；7.5 亿美元 HPC pipeline、6.5 亿美元 AI xPU Test SAM、1.0 亿美元 HBM Inspection SAM、2.5 亿美元 Power Management SAM、6.0 亿美元 PAICe SAM 均为上限或长期机会，不直接进入 NTM 基准。
+- 无法可靠量化项目：产品级 GAAP 净利润、产品级 backlog、book-to-bill、取消率、按产品的 gross margin、AI/HPC recurring 拆分、DiamondX broader PMIC pipeline 金额、Neon 客户扩线金额、PAICe NTM revenue 确认节奏。原因是 COHU 未按这些维度完整披露。
+
+### 本地资料
+
+| 来源 | 用途 |
+| --- | --- |
+| `公司调研/封测_检测_计量_光罩/COHU_Cohu_Inc_公司调研_2026-06-11.md` | COHU 业务线、近期财报、订单、产品定位、pipeline 与产品级判断初始锚点。 |
+| `行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-06-11.md` | ATE、SLT、burn-in、thermal handler、device interface、AI processor 测试需求和反证指标。 |
+| `行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-06-11.md` | HBM3E/HBM4、KGD、thermal handler、inspection/metrology、test analytics 需求与利润率背景。 |
+| `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-06-11.md` | HBM/先进封装 inspection/metrology 的行业位置、竞争和客户认证背景。 |
+| `行业调研/晶圆制造_设备_材料_测试/行业调研_高速互连与光学验证测试_2026-06-11.md` | 高速互连、SiPh/network switch testing 与 PAICe/测试数据机会的辅助背景；不作为 COHU 基准收入。 |
+
+### 公司与公开来源
+
+| 来源 | 日期 | 关键使用内容 |
+| --- | ---: | --- |
+| COHU Q1 2026 Results, https://ir.cohu.com/news-releases/news-release-details/cohu-reports-first-quarter-2026-results | 2026-04-30 | Q1 revenue 1.251 亿美元、60% recurring、GAAP GM 46.3%、non-GAAP GM 46.5%、FY2026 HPC outlook 8,000 万-1.0 亿美元、Q2 sales guide 1.44 亿美元 +/- 700 万美元。 |
+| COHU Q1 2026 Presentation, https://ir.cohu.com/static-files/5bb7aa77-7444-4fd2-9917-dade31fd5925 | 2026-04-30 | Q1 systems 4,900 万美元、recurring 7,600 万美元、Eclipse/Neon/PAICe/DiamondX SAM 和 revenue outlook、HPC pipeline 分层、Q2/FY2026 outlook、cash/debt/OCF/capex。 |
+| COHU Q1 2026 Form 10-Q, https://www.sec.gov/Archives/edgar/data/21535/000143774926014308/cohu20260328_10q.htm | 2026-05 | Gross margin 驱动、R&D/SG&A/摊销/重组、经营现金流、库存、capex、风险披露。 |
+| COHU Q4 2025 Results, https://ir.cohu.com/news-releases/news-release-details/cohu-reports-fourth-quarter-2025-results | 2026-02-12 | FY2025 revenue 4.530 亿美元、FY2025 gross margin 42.7%、non-GAAP gross margin 43.3%、Q4 recurring revenue 增长、cash/debt。 |
+| COHU second Eclipse customer, https://ir.cohu.com/news-releases/news-release-details/cohu-receives-second-multi-unit-order-testing-next-generation-ai | 2026-03-17 | 第二个 Eclipse 客户、next-generation HPC/AI datacenter processors、ULFF package、高 socket force、precise thermal control。 |
+| COHU Eclipse follow-on orders, https://cohu.gcs-web.com/news-events/press-releases | 2026-04-02 | 两个客户 3,000 万美元 Eclipse follow-on orders，configured with active thermal control，用于 next-generation HPC processors。 |
+| COHU GaN/DiamondX orders, https://ir.cohu.com/news-releases/news-release-details/cohu-receives-multiple-orders-testing-next-generation-gan-power | 2026-05-12 | 约 500 万美元 DiamondX GaN power device test orders；AI data center AC-DC、HV DC-DC、advanced PoL PMIC 应用。 |
+
+### NTM 建模口径
+
+| 项目 | 口径 |
+| --- | --- |
+| 基准 NTM revenue | 以 FY2026 5.44 亿-5.66 亿美元指引为 FY2026 锚，加入 2027Q1 正常延续，扣除 Q1 已实际确认后估算；不把未收入化 pipeline 直接纳入。 |
+| 悲观 NTM revenue | Q2 指引低端、H2/Q1 2027 ramp 弱、Eclipse/Neon/DiamondX 延迟、传统 systems 恢复不足。 |
+| 乐观 NTM revenue | FY2026 指引上方、HPC qualification 转 production、Neon/DiamondX follow-on、recurring attach 超 run-rate。 |
+| 极度乐观 NTM revenue | 7.5 亿美元 HPC pipeline 在 NTM 内异常快速转化，多个客户同时进入 production，且供应链和毛利率同步兑现；低可信。 |
+| 利润率 | 使用 Q1 actual 46.5% non-GAAP GM、Q2 guide 约 44%、FY2026 mid-40% 和 opex low-$50M 区间校准；产品级利润率因未披露，以方向和区间判断。 |
+| 自由现金流 | 使用 Q1 operating cash flow 1,030 万美元、capex 200 万美元和 FY2026 capex target 约 revenue 2% 作为基础；营运资本按 systems ramp 风险校准。 |
+

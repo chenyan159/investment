@@ -1,0 +1,114 @@
+[
+  {
+    "item": "HBM 工作点，十亿美元",
+    "actual": 51.204,
+    "expected": 51.204,
+    "tolerance": 0.001,
+    "pass": true
+  },
+  {
+    "item": "ASIC 保本利用率",
+    "actual": 0.5281250000000001,
+    "expected": 0.528125,
+    "tolerance": 0.00001,
+    "pass": true
+  },
+  {
+    "item": "ASIC 40%利用率相对成本",
+    "actual": 1.3203125,
+    "expected": 1.3203125,
+    "tolerance": 0.00001,
+    "pass": true
+  },
+  {
+    "item": "HBM 效率情景存量倍率",
+    "actual": 0.8250000000000001,
+    "expected": 0.825,
+    "tolerance": 0.00001,
+    "pass": true
+  },
+  {
+    "item": "Neo 三家公司季度收入，十亿美元",
+    "actual": 3.2204,
+    "expected": 3.2204,
+    "tolerance": 0.00001,
+    "pass": true
+  },
+  {
+    "item": "Neo 3年15%年资本成本",
+    "actual": 17519.07847372211,
+    "expected": 17519,
+    "tolerance": 2,
+    "pass": true
+  },
+  {
+    "item": "Neo 4年12%年资本成本",
+    "actual": 13169.377452227585,
+    "expected": 13169,
+    "tolerance": 2,
+    "pass": true
+  },
+  {
+    "item": "Neo 5年10%年资本成本",
+    "actual": 9232.911827816082,
+    "expected": 9233,
+    "tolerance": 2,
+    "pass": true
+  },
+  {
+    "item": "电力 净平均负荷GW",
+    "actual": 53.08219178082192,
+    "expected": 53.08,
+    "tolerance": 0.02,
+    "pass": true
+  },
+  {
+    "item": "电力 利用率65%升85%净容量GW",
+    "actual": 42.407900989689864,
+    "expected": 42.4,
+    "tolerance": 0.1,
+    "pass": true
+  },
+  {
+    "item": "电力 出货涨20%后毛利额",
+    "actual": 22.5,
+    "expected": 22.5,
+    "tolerance": 0.001,
+    "pass": true
+  },
+  {
+    "item": "液冷 流量L/min",
+    "actual": 129001.43334925945,
+    "expected": 129000,
+    "tolerance": 100,
+    "pass": true
+  },
+  {
+    "item": "液冷 共享冗余CDU台数",
+    "actual": 58,
+    "expected": 58,
+    "tolerance": 0,
+    "pass": true
+  },
+  {
+    "item": "液冷 10分区冗余CDU台数",
+    "actual": 70,
+    "expected": 70,
+    "tolerance": 0,
+    "pass": true
+  },
+  {
+    "item": "液冷 年新增热容量GW",
+    "actual": 12,
+    "expected": 12,
+    "tolerance": 0,
+    "pass": true
+  },
+  {
+    "item": "ASIC 年电量TWh",
+    "actual": 7.8839999999999995,
+    "expected": 7.884,
+    "tolerance": 0.001,
+    "pass": true
+  }
+]

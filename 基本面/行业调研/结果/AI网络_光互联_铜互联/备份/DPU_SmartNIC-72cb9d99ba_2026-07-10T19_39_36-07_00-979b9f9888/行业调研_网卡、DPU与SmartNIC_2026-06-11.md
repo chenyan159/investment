@@ -1,0 +1,461 @@
+# 行业调研：网卡、DPU与SmartNIC
+
+报告日期：2026-06-11  
+资料截至：2026-06-11，美国太平洋时间  
+标准行业名称：网卡、DPU与SmartNIC  
+分类目录：AI网络_光互联_铜互联  
+资料边界：项目内资料仅参考 `基本面/行业调研/产业背景/` 及 `行业调研/行业索引.md` 的标准行业名和目录映射；未读取、引用或继承项目内其他目录资料。外部资料优先使用公司一手发布、财报、标准组织和行业研究公开摘要；非正式资料只作为低权重线索。
+
+## 结论摘要
+
+1. 网卡、DPU 与 SmartNIC 在 2026 年从“服务器外设”升级为 AI 工厂的关键产能件。原因很直接：AI 集群的瓶颈不再只是 GPU 数量，而是 GPU 间通信、租户隔离、存储/KV cache 数据路径、故障收敛、拥塞控制、遥测和安全策略能否让昂贵 GPU 保持高利用率。NVIDIA FY2027Q1 数据中心 networking 收入约 150 亿美元，接近同比三倍；Broadcom FY2026Q2 AI 半导体收入 108 亿美元、Q3 指引 160 亿美元；Cisco FY2026Q3 AI infrastructure 订单年初至今 53 亿美元，并把 FY2026 订单预期上修到 90 亿美元。这些数字共同说明网络 silicon 已经进入 AI capex 的主战场。
+
+2. 2026 最可能放量的路径是：`400G/800G AI NIC + RoCE/InfiniBand + UEC-ready Ethernet + DPU/IPU 云基础设施卸载 + BlueField/DOCA 或云厂自研 offload`。短期不是所有客户都直接跳 1.6T，也不是 CPO 立刻替代可插拔光模块；2026 的现实部署仍以 400G/800G NIC、OCP 3.0、PCIe 5/6、OSFP/QSFP-DD、RoCE/IB、DPDK/P4/DOCA、云厂自研 Nitro/Azure Boost/Titanium 为主。
+
+3. 本报告对 2026-2028 采用明显乐观的 AI 基础设施假设。基准情景下，全球 Ethernet Adapter + SmartNIC/DPU/IPU 相关收入 2026 年约 100-125 亿美元，2027 年 135-175 亿美元，2028 年中年化运行率 170-230 亿美元；乐观情景下分别为 120-150 亿、170-230 亿、230-320 亿美元；极度超预期乐观情景下，若 800G/1.6T 和 UEC 在 hyperscaler/NeoCloud 同步放量，2028 年中运行率可上探 360-450 亿美元。这里包含标准 NIC、高速 AI NIC、DPU/IPU/SmartNIC 卡和内部云 offload 等价价值，和交换机、光模块、GPU 不机械相加。
+
+4. 投资价值排序：第一梯队是 NVIDIA Networking/BlueField/ConnectX、Broadcom AI Ethernet/Thor Ultra/Tomahawk、AMD Pensando Pollara/Salina、Marvell SerDes/定制互联/OCTEON、云厂自研 Nitro/Azure Boost/Titanium 这类控制 silicon + software stack 的环节；第二梯队是 OCP NIC 卡、板卡 ODM、测试设备、连接器、Retimer、散热和高速线缆；第三梯队是普通 10/25/100G NIC 和无 AI 后端附着的传统网络设备，收入大但 AI 弹性弱。
+
+5. 2026 的主要挑战不是“有没有需求”，而是 6 个交付约束：800G/1.6T SerDes 与 PCIe Gen6 良率、OSFP/光模块/高速铜缆可得性、UEC/RDMA/ROCE 软件成熟度、DPU 安全隔离和云厂认证周期、板卡散热功耗、以及能够调试 10 万卡级集群的固件/驱动/网络工程人才。网卡/DPU 的价值量只占 AI rack 的小比例，但一旦失效，损失的是 GPU 利用率和集群验收周期，因此具备很强的“低 BOM 占比、高故障成本”定价逻辑。
+
+## 关键来源快照
+
+| 来源 | 日期 | 关键事实 | 本文用途 |
+|---|---:|---|---|
+| 项目内产业背景：头部 AI 芯片全景与产能释放 | 2026-06-10 | 2026/2027 主要 AI 芯片路径：B200/GB200、B300/GB300、Rubin、MI350、MI400、TPU v7、Trainium3、Maia 200、MTIA 300/400、Broadcom/Marvell 定制 XPU | 用于判断 NIC/DPU 附着路径 |
+| 项目内产业背景：AI 数据中心建设规模与订单映射 | 2026-06-11 | 美国 AI 数据中心建设 2026 务实 310-390B 美元、乐观 420-520B 美元；网络/光互联为最大弹性链条之一 | 总量和弹性假设 |
+| 项目内产业背景：AI 产业链瓶颈与反证指标 | 2026-06-10 | `switch ASIC/NIC/DPU` 为 2026 局部严重瓶颈；网络决定 time-to-train、time-to-first-token 和 GPU utilization | 行业定位 |
+| NVIDIA SuperNIC 产品页 | 2026 检索 | ConnectX-9 SuperNIC 最高 1.6Tb/s per GPU；ConnectX-8 最高 800Gb/s；BlueField-3 SuperNIC 最高 400Gb/s | NVIDIA 路线和 800G/1.6T 节奏 |
+| NVIDIA BlueField-4 与 STX 发布 | 2026-03/2026-05 | BlueField-4 集成 Grace CPU + ConnectX-9；STX 称可提升 token throughput 最高 5x、能效 4x、数据摄入 2x，H2 2026 合作伙伴供货 | DPU 从网络/安全走向存储/KV cache |
+| AMD Pensando Pollara 400 AI NIC | 2026 检索 | 400Gbps、UEC-ready、P4 可编程、宣称 job completion +8%、cluster uptime +50%、capex -58%、UEC RDMA collective +25% | 开放 Ethernet AI NIC 代表 |
+| AMD Pensando DPU | 2026 检索 | Salina 400 DPU 为第三代 P4 可编程 DPU，400Gb/s line-rate 估计，16 Arm N1 cores；Azure/OCI/IBM 等客户证据 | DPU 已放量产品 |
+| Broadcom Thor Ultra | 2025-10-14 | 800G AI Ethernet NIC，UEC compliant，面向数十万 XPU 互联，含 packet multipathing、out-of-order、selective retransmit、congestion control | 800G UEC AI NIC 代表 |
+| Ultra Ethernet Consortium | 2025-06-11/2026-01 | UEC 1.0/1.0.2 覆盖 NIC、switch、optics、cables，多厂商互操作 | 2026-2027 标准拐点 |
+| Dell'Oro Ethernet Adapter & SmartNIC | 2024-08/2026 检索 | Ethernet Adapter + SmartNIC 市场 2028 超 160 亿美元，CAGR 27%；覆盖 1G 到 1.6T、SmartNIC/DPU/IPU | 市场规模锚点 |
+| Dell'Oro AI back-end networks | 2025-12/2026 检索 | 2025Q3 AI 后端以太网交换销售占比超过三分之二；800G 为绝大多数出货和收入；关注 400G、800G、1.6T、3.2T、Ethernet/IB/UALink/NVLink | 速率迁移和 Ethernet 份额 |
+| Cisco FY2026Q3 | 2026-05-13 | AI infrastructure YTD orders 53 亿美元，FY26 预期订单上修至 90 亿美元；data center switching orders +40% | 传统网络厂商 AI 订单验证 |
+| Arista FY2026Q1 | 2026-05-05 | Q1 收入 27.09 亿美元、同比 +35.1%；XPO MSA 目标减少网络 rack 最高 75%、节省 floor space 最高 44% | AI Ethernet fabric 订单验证 |
+| Marvell FY2027Q1/OFC 2026 | 2026-03/05 | Q1 收入 24.18 亿美元、同比 +28%；OFC 2026 展示端到端 AI 数据中心 connectivity，强调 connectivity 已成主要瓶颈 | SerDes/光/定制互联 |
+| Microsoft Azure Boost | 2026 检索 | 通过软硬件卸载 hypervisor/host OS 传统 virtualization 流程，释放 CPU 并增强安全基础 | 云厂自研 DPU/IPU 路径 |
+| AWS Nitro | 2026 检索 | Nitro cards offload VPC/EBS/instance storage/security；几乎释放全部服务器资源给实例 | 云厂自研 DPU/IPU 路径 |
+| Google Titanium | 2026 检索 | purpose-built custom silicon 和多层 offload 提升性能、可靠性和安全，Next 2026 demo 继续强调 Titanium offload I/O | 云厂自研 IPU 路径 |
+
+主要外部链接：  
+NVIDIA SuperNIC: https://www.nvidia.com/en-us/networking/products/ethernet/supernic/  
+NVIDIA BlueField: https://www.nvidia.com/en-us/networking/products/data-processing-unit/  
+NVIDIA BlueField-4: https://blogs.nvidia.com/blog/bluefield-4-ai-factory/  
+NVIDIA BlueField-4 STX: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Launches-BlueField-4-STX-Storage-Architecture-With-Broad-Industry-Adoption/default.aspx  
+AMD Pollara 400 AI NIC: https://www.amd.com/en/products/network-interface-cards/pensando.html  
+AMD Pensando DPU: https://www.amd.com/en/products/data-processing-units/pensando.html  
+Broadcom Thor Ultra: https://investors.broadcom.com/news-releases/news-release-details/broadcom-introduces-industrys-first-800g-ai-ethernet-nic  
+UEC 1.0: https://ultraethernet.org/ultra-ethernet-consortium-uec-launches-specification-1-0-transforming-ethernet-for-ai-and-hpc-at-scale/  
+Dell'Oro Ethernet Adapter & SmartNIC: https://www.delloro.com/news/ethernet-adapter-and-smart-nic-market-to-exceed-16-billion-by-2028/  
+Dell'Oro AI back-end networks: https://www.delloro.com/market-research/data-center-infrastructure/data-center-switch-ai-back-end-networks/  
+Cisco FY2026Q3: https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-THIRD-QUARTER-EARNINGS/default.aspx  
+Arista FY2026Q1: https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Networks-Inc--Reports-First-Quarter-2026-Financial-Results/default.aspx  
+Marvell FY2027Q1: https://investor.marvell.com/news-events/press-releases/detail/1023/marvell-technology-inc-reports-first-quarter-of-fiscal-year-2027-financial-results  
+Microsoft Azure Boost: https://learn.microsoft.com/en-us/azure/azure-boost/overview  
+AWS Nitro: https://aws.amazon.com/ec2/nitro/  
+Google Titanium: https://cloud.google.com/blog/products/compute/titanium-underpins-googles-workload-optimized-infrastructure
+
+## 一、行业定义和 2026 核心判断
+
+### 1.1 产品边界
+
+| 名称 | 本文定义 | 典型产品 | AI 集群价值 |
+|---|---|---|---|
+| 标准 NIC / Ethernet adapter | 主机到以太网的标准连接卡，强调带宽、功耗、驱动、可靠性 | Intel Ethernet、NVIDIA ConnectX、Broadcom NetXtreme/Thor 系、Marvell/Intel/云厂自研控制器 | front-end 管理网络、storage 网络、普通云网络、部分 AI scale-out |
+| AI NIC / SuperNIC | 为 GPU/XPU scale-out 优化的高带宽、低延迟、RDMA、拥塞控制、遥测和 collective 通信 NIC | NVIDIA ConnectX-8/9 SuperNIC、AMD Pollara 400、Broadcom Thor Ultra | 训练和推理集群的 GPU-GPU/XPU-XPU 通信，决定 job completion、tail latency 和故障恢复 |
+| SmartNIC | 在 NIC 上加入可编程数据面、卸载、遥测或安全能力，范围宽于 DPU | BlueField SuperNIC、Pensando NIC、Intel FPGA/IPU 类、云厂自研 | 降低 CPU 开销，支持多租户、虚拟网络、NVMe-oF、加密、遥测 |
+| DPU / IPU | 集成 CPU cores、网络、存储、安全、虚拟化加速和软件栈的基础设施处理器 | NVIDIA BlueField、AMD Pensando Salina/Giglio/Elba、Intel IPU、AWS Nitro、Azure Boost、Google Titanium | 把云基础设施、存储、安全和租户隔离从 host CPU/GPU 路径移出，提升有效算力 |
+| Storage / context-memory DPU | 面向 agentic inference、KV cache、NVMe、加密和数据完整性的 DPU 架构 | NVIDIA BlueField-4 STX、CMX context memory storage、VAST/DDN/NetApp 等合作系统 | 推理时代新增路径，目标是减少 CPU/storage 瓶颈导致的 GPU stall |
+
+### 1.2 为什么 2026 年会成为重估节点
+
+第一，AI 芯片平台把网络价值量推高。项目内产业背景显示，2026-2027 最大出货和价值释放的芯片路径包括 NVIDIA B200/GB200、B300/GB300、Rubin、AMD MI350/MI400、Google TPU v7、AWS Trainium3、Microsoft Maia 200、Meta MTIA 300/400/450/500、Broadcom/Marvell custom XPU。它们共同特点是：单卡价值高、机架功率高、HBM 成本高、集群规模大。NIC/DPU 的绝对 BOM 比例不高，但对 GPU idle、checkpoint、RDMA、故障隔离和多租户安全的影响极高。
+
+第二，Ethernet 和 InfiniBand 的边界正在重构。NVIDIA 仍通过 InfiniBand/XDR、Spectrum-X、ConnectX、BlueField 和 NVLink 保持全栈优势；但 Broadcom Thor Ultra、AMD Pollara 400、UEC 1.0、Arista/Cisco 订单和云厂多供应商诉求共同推动 Ethernet scale-out。Dell'Oro 已经披露 2025Q3 AI 后端网络中 Ethernet 交换销售占比超过三分之二，说明“Ethernet 只适合普通云网络”的旧认知已失效。
+
+第三，DPU/IPU 的商业逻辑从“节省 CPU cores”升级为“保护 AI 工厂现金流”。普通虚拟化时代，DPU 的收益是释放 CPU、减少安全域耦合；AI 工厂时代，收益还包括：减少 GPU 等待 I/O、隔离多租户 agent runtime、保护模型/数据、做存储加密与压缩、快速重建故障路径、记录可审计遥测。NVIDIA STX 把 DPU 与 KV cache/context memory 绑定，是 2026 年最重要的新信号之一。
+
+### 1.3 2026 最可能使用的技术路径
+
+| 路径 | 2026 成熟度 | 2026 收入贡献 | 2027 放量斜率 | 结论 |
+|---|---|---:|---:|---|
+| 400G AI NIC + RoCEv2/IB | 高 | 高 | 中 | 仍是 2026 装机基盘，ConnectX-7/BlueField-3、现有云网络大量使用 |
+| 800G SuperNIC / AI NIC | 中高 | 高增长 | 高 | ConnectX-8、Broadcom Thor Ultra、NVIDIA ConnectX-9/BlueField-4 先导，2026H2 起附着 GB300/Rubin/大规模 XPU |
+| UEC-ready Ethernet NIC | 中 | 中 | 高 | AMD Pollara 400 和 Broadcom Thor Ultra 是代表；2026 是认证和早期部署，2027 进入采购门槛 |
+| DPU/IPU for cloud offload | 高 | 稳定增长 | 中高 | AWS Nitro、Azure Boost、Google Titanium、AMD Pensando、BlueField 已证明价值，2026 继续扩散 |
+| DPU for AI storage/KV cache | 中低到中 | 低到中 | 高 | BlueField-4 STX H2 2026 伙伴供货，2027 看 agentic inference 是否真实放量 |
+| 1.6T per GPU NIC / 224G SerDes | 低到中 | 低 | 高 | ConnectX-9 已发布方向，2026 主要是 design-in，2027-2028 更实质 |
+| NIC 侧 CPO/光 I/O | 低 | 很低 | 中 | CPO 2026 主战场在交换机侧，NIC 侧更可能先通过 OSFP、LPO/LRO、AEC/DAC、Retimer 过渡 |
+
+## 二、AI 芯片路线对 NIC/DPU 的拉动
+
+### 2.1 头部 AI 芯片与网络附着矩阵
+
+| 芯片/平台 | 2026/2027 阶段 | 关键互联需求 | 对 NIC/DPU 的拉动 |
+|---|---|---|---|
+| NVIDIA B200/GB200/NVL72 | 2026 主力放量，2027 退为存量高基数 | NVLink/NVSwitch + InfiniBand/Spectrum-X + ConnectX/BlueField | 400G/800G NIC 高附着，BlueField 用于租户隔离、存储、安全和云基础设施 |
+| NVIDIA B300/GB300 Blackwell Ultra | 2026 主力增量，长上下文/推理强化 | 更高 GPU 密度、HBM3E、800G networking、Spectrum-X | ConnectX-8/BlueField-3/4 和 Spectrum-X 收入弹性最大；DPU 与推理存储开始相关 |
+| NVIDIA Vera Rubin/Rubin NVL72 | 2026H2 伙伴供货，2027 主升浪 | ConnectX-9、BlueField-4、Spectrum-X Ethernet Photonics、NVLink | 800G/1.6T 过渡，DPU 从网络卸载扩到 STX/context memory |
+| AMD MI350/MI355X | 2025H2-2026 放量 | ROCm/RCCL、RoCE、Pollara 400、开放 Ethernet | AMD Pensando Pollara 400 是 MI350/MI400 生态关键补位；UEC-ready 提升非 NVIDIA 集群竞争力 |
+| AMD MI400/Helios | 2026 起、2027 主放量 | UALink/Ultra Ethernet、72 GPU rack、HBM4 | Pollara 后续代际、UEC、open scale-up/scale-out 会成为 AMD 能否规模化的关键 |
+| Google TPU v7 Ironwood | 2025Q4-2026 进入云服务/内部放量 | Google ICI/OCS/Titanium/自研 offload | merchant NIC 暴露低，但会拉动 Broadcom custom silicon、Google 自研 IPU/offload 和以太网/光互联生态 |
+| AWS Trainium2/Trainium3 | 2026 主放量 | NeuronLink/EFA/Nitro/自研网络 | AWS Nitro、EFA 和自研网络附着，merchant DPU 暴露低，但供应链证明云厂会持续自研 offload |
+| Microsoft Maia 200 | 2026 起区域部署 | Azure Boost DPU、Ethernet scale-up/scale-out、Azure 网络 | Azure Boost/Fungible-derived DPU 代表云厂内部 DPU 价值；外部只能通过代工/封装/IP 间接受益 |
+| Meta MTIA 300/400/450/500 | 2026-2027 快迭代 | Meta 标准化机架、Broadcom custom XPU、Ethernet | Broadcom custom silicon + Ethernet 受益；普通 NIC 厂商不一定能分到份额 |
+| Broadcom/Marvell custom XPU | 2025-2027 多客户爬坡 | 定制高 I/O、SerDes、Ethernet/UEC、NVLink Fusion/开放互联 | 价值捕获在 custom ASIC + NIC/switch/SerDes 组合，单卡 NIC 价值被整合进平台 |
+| 中国 Ascend/国产 GPU | 2026-2027 区域放量 | 本土以太网、RoCE/HCCS/自研 DPU、国产交换 | 受出口管制影响，国内 NIC/DPU 自主化空间大，但先进节点、HBM、驱动生态约束强 |
+
+### 2.2 三情景：技术成熟和放量时间
+
+| 技术 | 基准情景 | 乐观情景 | 极度超预期乐观情景 |
+|---|---|---|---|
+| 400G AI NIC | 2026 已成熟，2027 作为中低端和 front-end 基盘 | 2026H2 因 GPU 供给扩大继续补货 | 低价 400G 成为大量推理集群标配，市场不退坡而转入长尾 |
+| 800G AI NIC | 2026H2 规模导入，2027 主流 | 2026Q3-Q4 伴随 GB300/Rubin/Thor Ultra 加速 | 2027H1 就成为新建大型 AI 后端网络默认规格 |
+| UEC-ready NIC | 2026 早期验证，2027 成为部分 RFP 要求 | 2026H2 hyperscaler/NeoCloud 开始多厂商采购 | 2027 UEC 成为开放 AI Ethernet 的事实标准，抢走部分 IB/NVIDIA 专有链路增量 |
+| BlueField-4 / STX | 2026H2 合作伙伴供货，2027 小规模到中规模 | 2027H1 在 long-context inference 和 AI storage 放量 | 2027 成为 agentic AI 工厂标准 BOM，DPU ASP 和软件 attach 同时上行 |
+| 1.6T NIC / 224G SerDes | 2026 design-in，2027 下半年爬坡，2028 主流化 | 2027H1 高端客户提前导入 | 2027 新建 Rubin/MI400/TPU/Trainium 高端 pod 默认 1.6T |
+| NIC 侧光 I/O/CPO | 2027 仍以试点为主 | 2027H2 高端 rack 试量产 | 若 800G/1.6T pluggable 功耗压不住，2027 就出现小批量 NIC 侧光 I/O 收入 |
+
+## 三、已经开始放量的关键产品和市场预测
+
+### 3.1 已放量或开始放量产品清单
+
+| 产品/技术 | 代表公司 | 当前状态 | 关键证据 | 投资含义 |
+|---|---|---|---|---|
+| 400G/800G ConnectX SuperNIC | NVIDIA | 大规模在产到新代际爬坡 | ConnectX-8 最高 800Gb/s；ConnectX-9 最高 1.6Tb/s per GPU；NVIDIA FY2027Q1 networking 约 150 亿美元 | NVIDIA 非 GPU 收入占比继续上修，NIC 与 GPU/rack 锁定 |
+| BlueField-3 DPU / SuperNIC | NVIDIA | 已规模化 | BlueField-3 DPU 400Gb/s，BlueField 平台覆盖网络、存储、安全加速 | 云/AI 多租户和安全隔离的高毛利 silicon/software |
+| AMD Pensando Salina/Giglio/Elba DPU | AMD/Pensando | hyperscaler/enterprise 已采用 | Salina 400 5nm、400Gb/s line-rate 估计、P4 可编程；Azure/OCI/IBM/HPE Aruba 客户案例 | AMD 在 AI 网络上不只卖 GPU，Pensando 是开放 Ethernet 的关键 |
+| AMD Pollara 400 AI NIC | AMD/Pensando | 2026 推广和早期放量 | 400Gbps、UEC-ready、P4 可编程、宣称集群 uptime +50%、capex -58% | MI350/MI400 生态补短板，若 UEC 成功将提升 AMD rack 竞争力 |
+| Broadcom Thor Ultra 800G AI Ethernet NIC | Broadcom | 2025Q4 发布，2026 设计导入/早期部署 | UEC compliant，800G，数十万 XPU，packet-level multipathing、out-of-order、selective retransmit、congestion control | 开放 Ethernet AI NIC 的最强 merchant silicon 之一 |
+| AWS Nitro Cards | AWS | 超大规模内部部署 | Nitro cards offload VPC/EBS/storage/security，几乎释放全部 host 资源 | merchant 市场不可直接捕捉，但证明 DPU/IPU 经济性 |
+| Microsoft Azure Boost DPU | Microsoft | Azure 内部推广 | offload virtualization/hypervisor/host OS，释放 CPU、增强安全 | 云厂会把 DPU 作为自研基础设施，外部供应商需通过合作或 IP 进入 |
+| Google Titanium/IPU | Google | Cloud infrastructure 基盘 | custom silicon + scale-out offload，Next 2026 继续强调 offload I/O | Google TPU 网络和 IPU 自研降低 merchant NIC 暴露 |
+| Intel IPU | Intel | 存量云/边缘使用，AI 后端份额不明 | Intel IPU 主打租户隔离、CPU utilization、virtual storage | 若 Intel 18A/Xeon 6+ AI rack 成功，IPU 可回到视野；否则偏存量 |
+| Marvell OCTEON / custom connectivity | Marvell | 5G/网络/安全和 AI connectivity 扩张 | OFC 2026 表示 connectivity 成为 hyperscale bottleneck，覆盖 SerDes、DSP、drivers/TIAs、switch、telemetry | 不一定以独立 DPU 卡变现，更多是 custom silicon/互联 IP |
+
+### 3.2 市场规模：已放量产品三情景
+
+口径说明：3 个月为 2026-09 附近年化运行率或当季订单折年化，不是完整年度收入；1 年为 2027-06 附近年度运行率；2 年为 2028-06 附近年度运行率。美元区间为全球口径，包含 merchant 出货和可合理估算的云厂内部等价价值；不与交换机、光模块和 GPU 市场机械相加。
+
+| 细分产品 | 2026-09 基准 | 2026-09 乐观 | 2026-09 极度乐观 | 2027-06 基准 | 2027-06 乐观 | 2027-06 极度乐观 | 2028-06 基准 | 2028-06 乐观 | 2028-06 极度乐观 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 标准高速 NIC/adapter，100G-400G 为主 | 55-70 亿 | 65-80 亿 | 75-95 亿 | 62-80 亿 | 78-100 亿 | 95-120 亿 | 70-92 亿 | 95-125 亿 | 115-145 亿 |
+| 400G AI NIC/SuperNIC | 22-32 亿 | 30-42 亿 | 40-55 亿 | 28-42 亿 | 42-62 亿 | 58-80 亿 | 30-45 亿 | 50-75 亿 | 75-105 亿 |
+| 800G AI NIC/SuperNIC | 8-16 亿 | 15-28 亿 | 25-45 亿 | 25-45 亿 | 45-75 亿 | 70-110 亿 | 45-75 亿 | 80-130 亿 | 120-180 亿 |
+| DPU/IPU/SmartNIC 卡，网络/安全/存储卸载 | 28-38 亿 | 35-50 亿 | 45-65 亿 | 38-58 亿 | 55-80 亿 | 75-110 亿 | 55-85 亿 | 80-125 亿 | 115-170 亿 |
+| 云厂内部 DPU/IPU 等价价值 | 35-55 亿 | 50-75 亿 | 70-100 亿 | 55-90 亿 | 85-130 亿 | 120-180 亿 | 75-120 亿 | 120-190 亿 | 180-260 亿 |
+| DPU/NIC 软件、固件、遥测、服务 attach | 5-10 亿 | 8-15 亿 | 12-22 亿 | 10-20 亿 | 18-32 亿 | 28-45 亿 | 18-35 亿 | 30-55 亿 | 50-85 亿 |
+
+合并看，剔除重复后全球 Ethernet Adapter + AI NIC + SmartNIC/DPU/IPU 可投资市场：
+
+| 时间点 | 基准 | 乐观 | 极度超预期乐观 |
+|---|---:|---:|---:|
+| 2026-09 年化运行率 | 100-125 亿美元 | 120-150 亿美元 | 145-190 亿美元 |
+| 2027-06 年化运行率 | 135-175 亿美元 | 170-230 亿美元 | 220-300 亿美元 |
+| 2028-06 年化运行率 | 170-230 亿美元 | 230-320 亿美元 | 360-450 亿美元 |
+
+### 3.3 渗透率路径
+
+| 指标 | 2026-09 基准 | 2027-06 基准 | 2028-06 基准 | 乐观上修条件 |
+|---|---:|---:|---:|---|
+| 新建高端 AI 后端网络中 400G 及以上 NIC 占比 | 70-80% | 80-88% | 85-92% | GB300/Rubin/MI400/TPU/Trainium 出货顺利 |
+| 新建高端 AI 后端网络中 800G NIC 占比 | 15-25% | 35-50% | 50-70% | 800G 光/铜/PCIe Gen6 和芯片供给充足 |
+| 新建大型 AI cluster 中 UEC-ready NIC 占比 | 3-8% | 15-30% | 30-55% | UEC compliance 测试顺利，多供应商互通成功 |
+| 公有云新服务器中 DPU/IPU/SmartNIC offload attach | 55-70% | 65-80% | 75-88% | 云厂把 DPU 用于 storage/security/AI tenant isolation |
+| 企业/colo AI rack 中 DPU attach | 10-20% | 20-35% | 35-55% | 多租户 AI cloud、GPUaaS 和模型服务客户增加 |
+| long-context / agentic inference 集群中 storage DPU attach | 0-5% | 8-20% | 20-40% | BlueField-4 STX/CMX 或同类方案证明 TCO |
+
+### 3.4 毛利率和价格能力
+
+| 产品层 | 当前毛利率估计 | 2027 基准 | 2027 乐观 | 2027 极度乐观 | 定价原因 |
+|---|---:|---:|---:|---:|---|
+| NVIDIA/Broadcom/AMD/Marvell 高端 NIC/DPU silicon | 55-75% | 55-72% | 60-75% | 65-78% | 先进 SerDes、RDMA/UEC、软件栈和客户认证，替换成本高 |
+| 高端 AI NIC/SmartNIC 板卡 | 35-55% | 34-52% | 38-56% | 42-60% | 800G 供给紧、客户愿为 GPU utilization 付费 |
+| DPU/IPU 软件、DOCA/P4/telemetry/security 服务 | 70-90% | 72-88% | 75-90% | 78-92% | 软件和运维 attach，故障成本高 |
+| 云厂内部 DPU/IPU | 不以毛利衡量 | TCO 节省 5-15% | TCO 节省 10-20% | TCO 节省 15-30% | 释放 host CPU、降低安全和存储路径开销 |
+| 普通 NIC/OCP commodity adapter | 18-35% | 15-30% | 18-32% | 20-35% | 同质化强，取决于速率迁移和供应紧张 |
+| ODM/OEM NIC 卡集成 | 8-20% | 8-18% | 10-20% | 12-22% | 收入弹性大但替代多，客户议价强 |
+
+## 四、在研关键产品和未来快速增长方向
+
+### 4.1 在研或早期关键技术
+
+| 技术/产品 | 代表公司 | 阶段 | 预计成熟 | 放量时间 | 关键风险 |
+|---|---|---|---|---|---|
+| ConnectX-9 / 1.6Tb/s per GPU SuperNIC | NVIDIA | 发布/平台导入 | 2026H2-2027 | 2027H1-H2 | PCIe Gen6、224G SerDes、系统散热、软件栈 |
+| BlueField-4 DPU | NVIDIA | 发布/合作伙伴导入 | 2026H2 | 2027 | Grace CPU + ConnectX-9 成本高，适用场景需证明 |
+| BlueField-4 STX / context memory storage | NVIDIA、DDN、Dell、HPE、IBM、NetApp、VAST、CoreWeave、OCI 等 | 参考架构/伙伴供货 | 2026H2 | 2027 | long-context/agentic inference 是否足够大 |
+| Broadcom Thor Ultra 800G UEC NIC | Broadcom | 发布/设计导入 | 2026H2 | 2027 | UEC 生态、客户认证和与 Tomahawk/Jericho 组合落地 |
+| AMD Pollara 400 UEC RDMA | AMD/Pensando | 产品化/早期推广 | 2026 | 2026H2-2027 | MI350/MI400 规模、ROCm/RCCL 和客户迁移 |
+| Pollara 800 或下一代 AMD AI NIC | AMD/Pensando | 未公开命名，逻辑推演 | 2027 | 2027H2-2028 | 224G SerDes、UEC 互通、供应链 |
+| 1.6T/3.2T Ethernet adapter | Broadcom、NVIDIA、Marvell、Intel、云厂自研 | 研发和早期设计 | 2027-2028 | 2028 | 功耗、光互联成本、PCIe/CXL 侧瓶颈 |
+| PCIe 6/7 + CXL/AI fabric NIC/DPU | Marvell、Astera、Broadcom、NVIDIA、Intel | 研发/部分发布 | 2026-2027 | 2027-2028 | 标准碎片化、验证周期 |
+| DPU 侧 confidential computing / zero-trust tenant isolation | NVIDIA、AMD、AWS、Microsoft、Google、Intel | 已有基础，AI 场景强化 | 2026 | 2026-2027 | 性能开销、客户接受度、合规 |
+| NIC/DPU 可观测性和 autonomous network remediation | Cisco、Arista、NVIDIA、AMD、Broadcom、云厂 | 早期到中期 | 2026-2027 | 2027 | 误报、自动化权限、跨厂商 telemetry 标准 |
+
+### 4.2 快速增长产品的三情景预测
+
+| 产品/技术 | 2026-09 市场规模 | 2027-06 市场规模 | 2028-06 市场规模 | 渗透率路径 | 毛利率区间 |
+|---|---:|---:|---:|---|---|
+| 800G UEC/AI NIC，含 Thor Ultra、ConnectX-8/9、Pollara 后续 | 基准 8-16 亿；乐观 15-28 亿；极度 25-45 亿 | 基准 25-45 亿；乐观 45-75 亿；极度 70-110 亿 | 基准 45-75 亿；乐观 80-130 亿；极度 120-180 亿 | 新建高端 AI 后端网络 2026H2 15-25%，2027 35-50%，2028 50-70% | silicon 60-78%，卡 38-60% |
+| DPU/IPU for AI tenant/security/storage offload | 基准 28-38 亿；乐观 35-50 亿；极度 45-65 亿 | 基准 38-58 亿；乐观 55-80 亿；极度 75-110 亿 | 基准 55-85 亿；乐观 80-125 亿；极度 115-170 亿 | 公有云新服务器 65-88%，AI cloud/colo 20-55% | silicon 55-75%，软件 75-90% |
+| Storage DPU/context memory，含 STX 类 | 基准 0.5-2 亿；乐观 2-5 亿；极度 5-10 亿 | 基准 5-15 亿；乐观 15-30 亿；极度 30-55 亿 | 基准 18-40 亿；乐观 40-75 亿；极度 80-130 亿 | long-context/agentic inference 2026 <5%，2027 8-20%，2028 20-40% | 60-80%，系统/存储集成 25-45% |
+| UEC-ready RDMA software/firmware/compliance | 基准 1-3 亿；乐观 3-6 亿；极度 5-10 亿 | 基准 5-10 亿；乐观 10-18 亿；极度 18-30 亿 | 基准 12-25 亿；乐观 25-45 亿；极度 45-70 亿 | 2026 RFP 加分项，2027 部分客户硬门槛，2028 多厂商互通 | 75-92% |
+| 1.6T NIC/224G SerDes | 基准 <1 亿；乐观 1-3 亿；极度 3-6 亿 | 基准 5-15 亿；乐观 15-35 亿；极度 35-60 亿 | 基准 35-75 亿；乐观 75-130 亿；极度 130-200 亿 | 2026 design-in，2027 高端 pod，2028 大规模 | silicon 62-80%，板卡 40-60% |
+
+### 4.3 未来 2 年最值得看的技术分歧
+
+1. UEC 是否从“标准发布”进入“客户 RFP 硬要求”。如果 UEC compliance 在 2026H2-2027H1 成为 hyperscaler 和 NeoCloud 的采购门槛，AMD Pollara、Broadcom Thor Ultra、Arista/Cisco、部分白盒和自研 ASIC 都受益；如果互通和性能不达标，NVIDIA 的 full-stack Spectrum-X/InfiniBand 继续收割更高溢价。
+
+2. DPU 是否从云厂 front-end/offload 扩到 AI 后端推理数据路径。STX 类产品成功时，DPU 不只是省 CPU，而是直接提高 token throughput、energy efficiency 和数据摄入速度；失败时，DPU 仍是重要云基础设施，但市场空间按传统 SmartNIC/DPU 轨道增长。
+
+3. 800G 是否在 2027 前完全主流化，1.6T 是否提前。若 GB300/Rubin/MI400/TPU/Trainium 同时放量，800G 可能提前成为 2027 新建集群默认规格；若电力/光模块/交换芯片/验证拖慢，400G 会延长生命周期。
+
+## 五、供给侧：产能结构、瓶颈、成本和毛利
+
+### 5.1 产能结构
+
+| 层级 | 主要地区 | 主要公司 | 工艺/能力 | 约束 |
+|---|---|---|---|---|
+| 芯片设计 | 美国、以色列、加拿大、印度、中国 | NVIDIA/Mellanox、Broadcom、AMD/Pensando、Marvell、Intel、AWS、Microsoft、Google、Huawei | RDMA、SerDes、P4/DPDK/DOCA、security/storage offload、AI collective | 顶级网络 ASIC 架构师、firmware、验证团队稀缺 |
+| 晶圆代工 | 台湾、美国、日本、韩国、中国大陆部分成熟节点 | TSMC、Samsung Foundry、Intel Foundry、SMIC 等 | 7nm/5nm/4nm/3nm；高端 SerDes 需要先进模拟/混合信号能力 | TSMC 先进节点、N3/N4 产能、长期锁单 |
+| 封装/基板 | 台湾、日本、韩国、东南亚、中国大陆 | ASE/SPIL、Amkor、Ibiden、Unimicron、Shinko、Nan Ya | ABF、高层 PCB、OCP NIC 3.0、BGA/FCBGA、散热结构 | ABF/高层板、信号完整性、热设计 |
+| 板卡制造 | 台湾、中国大陆、东南亚、墨西哥/美国少量 | Foxconn、Quanta、Wiwynn、Wistron、Celestica、Accton、Jabil、Flex、Supermicro、ASUS、Gigabyte | OCP NIC 3.0、PCIe Gen5/6、OSFP/QSFP-DD、散热和电源 | 800G 热、连接器、测试治具 |
+| 光/铜连接 | 美国、日本、台湾、中国大陆、东南亚 | Amphenol、TE、Molex、Luxshare、Credo、Broadcom、Lumentum、Coherent、Sumitomo、Innolight、Eoptolink | OSFP、QSFP-DD、DAC/AEC、LPO/LRO、800G/1.6T optics | 224G SerDes、EML/CW-DFB、线缆损耗、功耗 |
+| 系统/客户认证 | 美国 hyperscaler、全球 NeoCloud、服务器 OEM | AWS、Microsoft、Google、Meta、Oracle、CoreWeave、Dell、HPE、Lenovo、Cisco、Arista | RFP、security attestation、interoperability、cluster burn-in | 客户验收 6-8 个季度、故障复盘成本 |
+
+### 5.2 关键供给瓶颈
+
+1. 先进 SerDes 和 PCIe Gen6：800G/1.6T NIC 需要 100G/200G/224G SerDes、低 BER、低功耗和长 reach。SerDes 不是单纯数字逻辑，模拟/封装/板级协同决定良率。
+
+2. UEC/RDMA/ROCE 固件成熟度：AI workload 对 tail latency、拥塞、丢包和故障收敛极敏感。packet spray、out-of-order placement、selective retransmission、path-aware congestion control 都需要 NIC、switch、driver、collective library 和 telemetry 一致。
+
+3. 高速连接器、光模块和铜缆：800G NIC 放量会拉动 OSFP/QSFP-DD、DAC/AEC、LPO/LRO、Retimer、EML/CW-DFB。即使 NIC 芯片足够，光/铜链路和交换机端口不足也会限制集群。
+
+4. 散热和功耗：400G 到 800G 后，OCP NIC 卡功耗和热密度显著上升。AI rack 已经 100-230kW，网卡和 DPU 不能再以“外设热设计”处理。
+
+5. 客户认证与软件调试：hyperscaler 对网络件的验证周期长。一个 NIC firmware bug 会导致上万卡 job 失败，认证时间本身是产能。
+
+6. 安全合规和多租户隔离：DPU/IPU 需要支撑 secure boot、signed firmware、key management、tenant isolation、confidential computing 和审计。安全漏洞会直接阻断云客户部署。
+
+7. 人才瓶颈：能同时懂 RDMA、P4、DPDK、Linux kernel、GPU collective、cloud SDN、NVMe-oF、加密和大规模 fleet telemetry 的工程师极少。
+
+8. 出口管制和地区供应：高端 AI NIC/DPU 与 GPU/交换机配套，容易受先进芯片出口管制、客户 region policy、供应链转移影响。
+
+### 5.3 成本结构和 BOM 拆分
+
+| 成本项 | 高端 400G AI NIC | 高端 800G AI NIC | DPU/IPU SmartNIC | 成本说明 |
+|---|---:|---:|---:|---|
+| NIC/DPU ASIC | 35-50% | 40-58% | 35-55% | 先进节点、SerDes、CPU cores、加速器和安全模块决定成本 |
+| DRAM/LPDDR/DDR5/Flash | 3-8% | 5-10% | 8-18% | DPU 比纯 NIC 需要更多本地内存和 boot/storage |
+| PCB/基板/电源/散热 | 12-22% | 15-25% | 15-25% | 800G 和 DPU 热设计更复杂 |
+| Cage/connector/optics interface | 8-18% | 12-25% | 8-20% | 不含外置光模块时为接口成本；含模块时光学占比大幅上升 |
+| 测试/验证/烧机 | 5-10% | 6-12% | 7-15% | 高速 SerDes 和安全固件测试时间长 |
+| 固件/软件/支持摊销 | 8-18% | 8-18% | 12-25% | DOCA/P4/DPDK/云 SDN、驱动和客户支持 |
+| 组装/物流/渠道 | 5-12% | 5-10% | 5-10% | ODM/OEM 层附加 |
+
+### 5.4 价格传导机制
+
+| 触发因素 | 价格传导 | 谁最受益 | 谁最受压 |
+|---|---|---|---|
+| GPU 供给紧、AI rack 排队 | NIC/DPU 作为必须 attach 的小比例 BOM 可维持高 ASP | NVIDIA、Broadcom、AMD/Pensando、Marvell | 普通 NIC 供应商不一定同步受益 |
+| 800G/1.6T 端口紧缺 | 先进 SerDes 和高端板卡溢价 | 高端 NIC silicon、连接器、测试 | ODM 卡厂毛利受客户压制 |
+| UEC 成为 RFP 硬要求 | 支持 UEC 的 NIC/switch/firmware 获得份额 | Broadcom、AMD、Arista/Cisco、UEC 生态 | 专有或闭源能力弱的供应商 |
+| 光模块/铜缆价格下行 | 系统总成本下降，更多端口部署 | NIC/switch 出货量 | 低端光模块 ASP |
+| DPU 用于 storage/security/KV cache | DPU ASP 和软件 attach 上行 | NVIDIA BlueField、AMD Pensando、云厂自研 | 传统 CPU-only storage path |
+| 客户 capex 放缓 | NIC/DPU 跟随 GPU/rack 延后 | 有长约和自研客户的公司 | 单一 spot 订单厂商 |
+
+## 六、竞争格局与壁垒
+
+### 6.1 市场结构
+
+| 市场层 | 头部格局 | 集中度判断 | 2026 变化 |
+|---|---|---|---|
+| AI 后端 NIC/SuperNIC | NVIDIA、Broadcom、AMD/Pensando，云厂自研 | 高 | NVIDIA 绑定 GPU/rack，Broadcom/AMD 用 UEC/open Ethernet 反攻 |
+| DPU/IPU merchant | NVIDIA BlueField、AMD Pensando、Intel IPU、Marvell OCTEON | 中高 | NVIDIA 和 AMD 更贴 AI；Intel/Marvell 偏云/网络/安全和 custom |
+| 云厂内部 offload | AWS Nitro、Azure Boost、Google Titanium、Meta/内部网络 | 极高，内部闭环 | 外部无法直接抢份额，只能通过代工/IP/收购/合作进入 |
+| 标准 Ethernet adapter | Intel、Broadcom、NVIDIA、Marvell、Realtek 等 | 中 | 传统 10/25/100G 竞争激烈，高端 400/800G 更集中 |
+| 系统和板卡 ODM | Celestica、Accton、Foxconn、Wiwynn、Quanta、Wistron、Jabil、Flex 等 | 中 | 收入弹性强但毛利低，依赖头部客户设计 |
+
+### 6.2 壁垒清单：为什么能定价
+
+| 壁垒 | 解释 | 为什么能定价 |
+|---|---|---|
+| 高速 SerDes/PHY | 800G/1.6T 需要高频模拟、封装、板级信号完整性和低功耗 | 客户无法用低端 NIC 替代；失败会导致 BER、重传和 GPU idle |
+| RDMA/UEC/IB 协议栈 | AI collective 对拥塞和丢包极敏感，协议不是纸面带宽 | 软件和固件调好后形成强锁定 |
+| GPU/XPU 生态绑定 | NVIDIA CUDA/DOCA/NVLink/Spectrum-X，AMD ROCm/Pensando，云厂自研 | NIC/DPU 成为平台一部分，不再是可替换外设 |
+| 客户认证周期 | hyperscaler 一旦认证通过，通常跨多代部署 | 新进入者即使芯片规格强，也要经历长 burn-in |
+| 安全和多租户可信根 | DPU 进入租户边界，需要 secure boot、signed firmware、attestation | 安全事故成本极高，客户偏好已验证供应商 |
+| 大规模遥测和故障调试 | 10 万卡级集群需要 per-flow/per-packet telemetry 和自动修复 | 运营数据和软件工具越积累越难替换 |
+| 供应链和产能锁定 | 先进节点、ABF、OCP 卡、光/铜链路、测试治具要提前锁 | 能稳定交付的厂商获得份额和预付款 |
+| 软件开发者生态 | DOCA、DPDK、P4、ROCm/RCCL、EFA、Azure/GCP/AWS APIs | 客户应用和运维脚本迁移成本高 |
+
+### 6.3 价值捕获排序
+
+| 排名 | 价值链层 | 长期 ROIC/毛利判断 | 原因 |
+|---:|---|---|---|
+| 1 | 平台型 networking silicon + software stack | 极高 | NVIDIA、Broadcom、AMD/Pensando、Marvell 这类同时控制芯片、固件、协议、客户关系 |
+| 2 | 云厂自研 DPU/IPU 平台 | 内部 ROIC 高 | Nitro/Azure Boost/Titanium 通过 TCO 和资源利用率变现，不靠外售毛利 |
+| 3 | 高端 SerDes/IP/测试/验证工具 | 高 | 800G/1.6T/PCIe Gen6/UEC 使验证难度上升 |
+| 4 | 高端 OCP NIC/SmartNIC 板卡 | 中高 | 高速迁移期有溢价，但 ODM 和客户议价强 |
+| 5 | 系统集成和 ODM | 中低但收入弹性高 | 量大、毛利低，除非绑定设计和交付能力 |
+| 6 | 普通标准 NIC | 中低 | 竞争充分，AI 纯度低，ASP 周期化 |
+
+## 七、2026 关键变化和最可能放量方向
+
+### 7.1 三个拐点
+
+1. 800G AI NIC 开始从“高端样品/局部部署”转向“新建 AI 后端网络默认候选”。ConnectX-8/9、Thor Ultra、Pollara 400 和 UEC 生态共同推动 800G；反证是 800G 光模块/铜缆/PCIe Gen6 供应不足导致客户继续大量采购 400G。
+
+2. Ethernet 后端网络获得结构性份额。Dell'Oro 2025Q3 已显示 AI 后端 Ethernet 交换销售占比超过三分之二，Cisco/Arista 订单和 Broadcom/AMD 产品进一步验证开放 Ethernet。2026 不是 InfiniBand 消失，而是新建 scale-out 集群出现更多 Ethernet 方案。
+
+3. DPU 的叙事从 virtualization offload 升级到 agentic AI storage/security。NVIDIA BlueField-4 STX 是最强信号：KV cache 和 context memory 可能成为推理时代的新瓶颈。若 2026H2 合作伙伴系统顺利供货，2027 DPU TAM 上修。
+
+### 7.2 2026 最可能放量的子方向
+
+| 子方向 | 2026 放量概率 | 订单弹性 | 主要公司 |
+|---|---:|---:|---|
+| 400G/800G AI NIC/SuperNIC | 高 | 高 | NVIDIA、Broadcom、AMD/Pensando、Intel、Marvell、云厂自研 |
+| BlueField/Pensando/云厂 DPU/IPU for offload | 高 | 中高 | NVIDIA、AMD、AWS、Microsoft、Google、Intel |
+| UEC-ready Ethernet NIC | 中高 | 高 | AMD、Broadcom、UEC 生态、Arista/Cisco/white-box |
+| DPU security/tenant isolation | 高 | 中 | NVIDIA、AMD、AWS、Microsoft、Google、Intel |
+| DPU storage/KV cache | 中 | 高 | NVIDIA、DDN、Dell、HPE、IBM、NetApp、VAST、Oracle、CoreWeave 等 |
+| 1.6T NIC/224G SerDes | 中低 | 极高 | NVIDIA、Broadcom、Marvell、Credo、Astera、Intel |
+
+## 八、2027 关键变化和最可能放量方向
+
+### 8.1 三个拐点
+
+1. Rubin/MI400/Trainium3/TPU7/MTIA 后续平台拉动 800G 到 1.6T 过渡。2027 的问题不是单个 GPU 速度，而是每 rack、每 pod、每 MW 的网络吞吐和故障恢复。若 1.6T SuperNIC 和 224G SerDes 良率顺利，高端 NIC ASP 会再上一个台阶。
+
+2. UEC 从生态宣传进入生产互通。到 2027，客户会更清楚地比较 UEC Ethernet、InfiniBand、Spectrum-X、UALink/NVLink 的 TCO。UEC 若能证明 collective 性能和故障收敛，就会改变 AMD/Broadcom/Arista/Cisco 的收入上沿。
+
+3. DPU/IPU attach 从 hyperscaler 扩散到 NeoCloud 和 AI colo。2026 的 GPUaaS/AI cloud 租户越来越多，2027 如果多租户推理和专用 AI 工厂继续扩张，安全隔离、billing telemetry、storage encryption、data path isolation 会从“云厂自研能力”变成“AI cloud 必须项”。
+
+### 8.2 2027 最可能放量的子方向
+
+| 子方向 | 2027 放量概率 | 市场规模上修弹性 | 跟踪指标 |
+|---|---:|---:|---|
+| 800G AI NIC 主流化 | 很高 | 高 | 新建 AI pod 800G attach、光/铜交付、NIC ASP |
+| 1.6T SuperNIC 早期规模 | 中高 | 极高 | ConnectX-9、Broadcom/Marvell 224G SerDes、PCIe Gen6 平台 |
+| Storage DPU/context memory | 中高 | 极高 | STX/CMX 伙伴系统供货、long-context inference 收入、NVMe/KV cache offload |
+| UEC-compliant multi-vendor Ethernet | 中高 | 高 | compliance program、RFP 条款、AMD/Broadcom/Arista/Cisco 客户案例 |
+| Cloud internal DPU/IPU | 很高 | 中高 | AWS/Azure/GCP 新实例、Nitro/Azure Boost/Titanium 更新 |
+| AI network telemetry/autonomous remediation | 中 | 中高 | Cisco Cloud Control、Arista EOS/CloudVision、NVIDIA DOCA telemetry、客户事故率 |
+
+## 九、头部公司和细分技术公司清单
+
+### 9.1 AI NIC、DPU、SmartNIC 核心厂商
+
+| 公司 | 核心产品/能力 | 优势 | 风险 |
+|---|---|---|---|
+| NVIDIA | ConnectX-7/8/9、BlueField-3/4、Spectrum-X、InfiniBand/XDR、DOCA、STX | GPU/rack/网络/软件全栈锁定，FY2027Q1 networking 年化接近 600 亿美元 | 专有生态价格高，客户寻求多供应商 |
+| Broadcom | Thor Ultra 800G AI NIC、Tomahawk/Jericho、custom ASIC、UEC、SerDes | merchant Ethernet 最强阵营，custom ASIC 和 switch/NIC 组合 | 客户集中、AI 半导体毛利 mix、与 NVIDIA 竞争 |
+| AMD/Pensando | Pollara 400 AI NIC、Salina/Giglio/Elba DPU、P4、ROCm/RCCL | MI350/MI400 open AI rack 的网络补位，UEC-ready | AMD GPU 份额和 ROCm 迁移决定网络 attach |
+| Marvell | OCTEON DPU、SerDes、switch、DSP/TIA/driver、custom XPU、PCIe/CXL switch | AI connectivity portfolio 宽，OFC 2026 端到端展示，收购 Celestial/XConn | 独立 DPU 声量弱于 NVIDIA/AMD，依赖 custom ramp |
+| Intel | Intel IPU、Ethernet controller、FPGA/Agilex、Xeon platform | 云/企业基础深，Google Titanium 曾采用 Intel IPU | AI 后端生态弱，先进制程和产品节奏需验证 |
+| AWS | Nitro Cards、EFA、Trainium 网络 | 内部规模最大之一，TCO 闭环 | 不外售，外部投资捕捉难 |
+| Microsoft | Azure Boost DPU、Fungible IP、Azure 网络 | Azure/OpenAI 工作负载强，DPU 直接绑定云效率 | 内部化强，外部供应链不透明 |
+| Google | Titanium/IPU、TPU pod/ICI/OCS | TPU + Titanium 一体化，内部优化深 | merchant NIC 暴露低，生态封闭 |
+| Meta | MTIA + Broadcom custom silicon + AI infrastructure network | 大规模内部推理，Broadcom 协同 | 自研路径不透明，外部收入不可直接捕捉 |
+| Huawei | Ascend 生态、交换/NIC/自研网络 | 中国本土替代和全栈能力 | 先进制程/HBM/出口管制和软件生态 |
+
+### 9.2 系统、交换和 AI fabric 相关公司
+
+| 公司 | 相关能力 | 与 NIC/DPU 的关系 |
+|---|---|---|
+| Arista | AI Ethernet fabric、EOS、CloudVision、XPO MSA | 客户侧证明 Ethernet AI fabric；影响 NIC 选择和 800G/1.6T 节奏 |
+| Cisco | Silicon One、Nexus、AI infrastructure orders、Cloud Control | AI infrastructure 订单验证，Nexus/安全/遥测提升 DPU 价值 |
+| HPE Aruba | CX 10000 + Pensando | DPU/SmartNIC 下沉到交换/企业数据中心 |
+| Dell | AI server/rack、NVIDIA/AMD platforms | DPU/NIC attach 和 STX/AI storage 伙伴 |
+| HPE | AI rack、storage/networking | STX 伙伴和企业/colo 推广 |
+| Lenovo | AI server/rack | NIC/DPU 大规模 attach 通道 |
+| Supermicro | AI server/rack、NVIDIA/AMD 生态 | 快速导入新 NIC/DPU，但毛利较低 |
+| Foxconn / Hon Hai | rack integration、AI factory | 大规模制造和客户交付 |
+| Quanta / QCT | hyperscale server/rack | OCP NIC/AI rack 重要制造 |
+| Wiwynn | hyperscale AI server | AI NIC/DPU attach 高弹性 |
+| Wistron / Inventec / Pegatron / ASUS / Gigabyte | AI server/rack/OEM | 800G NIC 和 DPU 卡落地制造 |
+| Celestica / Accton | white-box networking/OCP | Dell'Oro 提到在 AI 后端 Ethernet share 中重要 |
+
+### 9.3 IP、测试、连接和小型技术公司
+
+| 公司 | 细分能力 | 机会 |
+|---|---|---|
+| Credo | AEC/DSP/SerDes connectivity | 800G/1.6T 铜互联和线性方案 |
+| Astera Labs | PCIe/CXL retimer/switch/connectivity | NIC/DPU 与 GPU/CPU/SSD 间 PCIe/CXL 链路 |
+| Synopsys / Cadence / Siemens EDA | PCIe/Ethernet/SerDes IP、验证 | 224G/PCIe Gen6/UEC 验证复杂度提升 |
+| Alphawave Semi | high-speed connectivity IP | 112G/224G SerDes 和 chiplet connectivity |
+| Rambus | interface IP/security | DPU 安全和高速内存/接口 IP |
+| Napatech | FPGA SmartNIC | niche programmable packet processing |
+| Silicom | Intel/FPGA/NIC appliances | 定制 SmartNIC/edge/network appliance |
+| Achronix | FPGA accelerator | SmartNIC/packet processing 备选架构 |
+| Kalray | DPU/MPPA | 欧洲 DPU 小型供应商，需看量产客户 |
+| Asterfusion | DPU/SmartNIC/SONiC 网络设备 | 中国/开放网络生态小型参与者 |
+| Amphenol / TE / Molex | 高速连接器、cage、线缆 | 800G/1.6T NIC 物理层必需 |
+| Luxshare / BizLink / Samtec | 高速线缆/连接 | AEC/DAC/OSFP 需求 |
+| Keysight / Tektronix / Anritsu / Spirent / VIAVI | 高速网络测试、BERT、协议分析 | 800G/1.6T/UEC/PCIe Gen6 验证 |
+| Advantest / Teradyne | 半导体测试 | 高端 NIC/DPU ASIC 测试需求 |
+
+### 9.4 中国和区域替代链条
+
+| 公司/类型 | 可能位置 | 需要验证 |
+|---|---|---|
+| 华为/海思 | Ascend 网络、交换、DPU/NIC、RoCE/HCCS 生态 | 高端训练集群实际性能、国产供应链良率 |
+| 中兴通讯 | 服务器/交换/运营商云网络 | AI 后端网络份额和 DPU 自研程度 |
+| 新华三/H3C | 企业和云数据中心网络 | AI 后端高端份额 |
+| 盛科通信、锐捷网络、星网锐捷等 | 交换/NIC 相关生态 | 高速 400G/800G silicon 来源和客户 |
+| 中科驭数、云豹智能等 DPU 初创 | 国产 DPU/SmartNIC | 真实量产、客户、P4/DPDK/云平台适配 |
+| 寒武纪、海光、沐曦等 AI 芯片生态 | AI 集群网卡配套 | 是否自建完整网络和 DPU 生态 |
+
+## 十、投资结论和跟踪指标
+
+### 10.1 投资结论
+
+网卡、DPU 与 SmartNIC 是 2026 AI 基础设施里确定性被低估的网络侧细分。相比光模块，它更靠近 GPU/XPU 利用率、集群稳定性和云平台多租户控制面；相比交换机，它更贴近每台 AI server/rack 的 attach；相比普通服务器部件，它有更高协议、固件、安全和客户认证壁垒。
+
+最优投资叙事不是“所有 NIC 都涨”，而是三条线：
+
+1. NVIDIA 全栈继续扩张：ConnectX/BlueField/Spectrum-X/InfiniBand/DOCA 与 GPU/rack 绑定，2026-2027 仍具最强确定性。
+
+2. 开放 Ethernet/UEC 反攻：Broadcom Thor Ultra、AMD Pollara 400、Arista/Cisco 和云厂多供应商诉求使 UEC-ready AI NIC 成为最大预期差。若 AMD MI400/Helios 与 UEC 同步放量，2027 上修空间很大。
+
+3. DPU 从云基础设施变成 AI 推理数据路径：BlueField-4 STX、context memory、KV cache offload 和 secure agent runtime 是 2027 高弹性方向。若 agentic AI 和长上下文推理兑现，DPU ASP、软件 attach 和系统方案都会重估。
+
+### 10.2 反证条件
+
+| 假设 | 反证条件 | 调整 |
+|---|---|---|
+| 800G AI NIC 2027 主流化 | 800G 光模块/铜缆/PCIe Gen6 供应延迟，客户继续大规模部署 400G | 推迟 800G 收入 2-4 个季度 |
+| UEC 成为开放 Ethernet 标准 | UEC compliance 不完善，跨厂商性能明显低于专有方案 | 下调 AMD/Broadcom/开放生态上沿 |
+| DPU 进入 AI storage/KV cache | STX/同类方案没有生产客户，long-context 推理收入不足 | DPU 回到传统 virtualization/security 增长曲线 |
+| AI capex 乐观 | hyperscaler/NeoCloud capex guide 下修 10-15% 以上 | 全行业估算下调 15-30% |
+| 高毛利可维持 | 客户因多供应商采购压价，800G NIC ASP 连续两个季度下跌 10%+ | 毛利率回归普通网络 silicon |
+| 云厂外部采购增长 | AWS/Azure/Google/Meta 进一步内制 NIC/DPU/IPU | merchant TAM 下修，代工/IP/封装替代受益 |
+
+### 10.3 后续跟踪清单
+
+| 时间 | 指标 | 来源 | 解释 |
+|---|---|---|---|
+| 2026Q2-Q3 财报 | NVIDIA networking revenue、Broadcom AI semiconductor、AMD data center、Marvell data center、Cisco AI orders、Arista AI fabric | 公司财报 | 验证网络 silicon 是否继续高增 |
+| 2026H2 | GB300/Rubin/MI350/MI400 交付和验收 | NVIDIA/AMD/OEM/云厂 | NIC/DPU attach 的直接上游 |
+| 2026H2 | Thor Ultra、Pollara 400、ConnectX-8/9 客户案例 | Broadcom/AMD/NVIDIA/OEM | 验证 800G/UEC 是否进入生产 |
+| 2026H2 | UEC compliance 和互通测试 | UEC、Arista/Cisco/Broadcom/AMD | 判断 UEC 是否从标准走向 RFP |
+| 2026H2-2027 | BlueField-4 STX/CMX partner availability | NVIDIA、DDN、Dell、HPE、NetApp、VAST、Oracle、CoreWeave | 判断 DPU storage/KV cache 是否成立 |
+| 2027 | 1.6T NIC、224G SerDes、PCIe Gen6 平台 | NVIDIA、Broadcom、Marvell、Intel、Credo、Astera | 判断第二轮 ASP 上行 |
+| 每季度 | NIC/DPU ASP、毛利、lead time | Dell'Oro、Omdia、公司渠道 | 防止光模块式库存周期外溢 |
+| 每月/事件 | AI cluster 故障、GPU utilization、job completion、租赁价 | 云厂/NeoCloud/开发者社区 | NIC/DPU 的真实价值来自提升有效利用率 |
+
+## 附录：数字口径和模型假设
+
+1. 本报告市场规模以 2026-06-11 可见公开资料为基础，并对 AI 数据中心建设采用乐观假设。基准不等于悲观，已经隐含美国和全球 AI capex 继续高增。
+
+2. Dell'Oro 的 2028 超 160 亿美元 Ethernet Adapter + SmartNIC 公开摘要是保守锚点；本报告乐观和极度乐观情景上修，是因为 2026 年后可见信息显示 NVIDIA networking、Broadcom AI networking、Cisco AI infrastructure orders、Arista AI Ethernet 和 UEC-ready NIC 同时增强。
+
+3. Fortune Business Insights 的 DPU 市场 2026 约 26.3 亿美元、2034 约 212.2 亿美元作为 DPU-only 参考；但本文把云厂内部 DPU/IPU 等价价值和 AI storage DPU 单独列示，避免把内部价值误当外售收入。
+
+4. 毛利率区间来自公司披露和行业结构推断：NVIDIA FY2026 非 GAAP gross margin 71%+、FY2026Q4 75% 左右；Broadcom FY2026Q2 non-GAAP operating margin 指引 67% 左右；Marvell FY2027Q1 non-GAAP gross margin 58.9%；Cisco FY2026Q3 non-GAAP gross margin 66%；Arista FY2026Q1 non-GAAP operating margin 47.8%。单个 NIC/DPU 产品毛利可能与公司整体不同。
+
+5. 对未披露产品 ASP 和出货量的估算使用三条约束：AI accelerator/rack 出货附着率、公开市场规模报告反推、以及 400G/800G/1.6T 代际 ASP 上升。所有极度乐观情景都要求 AI capex、GPU/ASIC 交付、网络/光模块供给和客户验收同时向上，不应当作为默认值。

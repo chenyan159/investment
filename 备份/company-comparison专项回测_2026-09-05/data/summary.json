@@ -1,0 +1,36 @@
+{
+  "reports_by_cohort": {
+    "latest_0718": {
+      "2026-07-14": 176,
+      "2026-07-18": 16
+    },
+    "original_0714": {
+      "2026-07-14": 192
+    }
+  },
+  "unique_comparison_files": 208,
+  "rows": 73344,
+  "parse_warnings": 0,
+  "updated_company_count": 16,
+  "updated_tickers": [
+    "AEHR",
+    "ASML",
+    "AVGO",
+    "BE",
+    "CDNS",
+    "GOOGL",
+    "IBM",
+    "INTC",
+    "META",
+    "MMM",
+    "MSFT",
+    "NBIS",
+    "NTAP",
+    "NVDA",
+    "TSEM",
+    "TSM"
+  ],
+  "end_date": "2026-09-04",
+  "prices_rows": 35140,
+  "source_hashes": 216
+}

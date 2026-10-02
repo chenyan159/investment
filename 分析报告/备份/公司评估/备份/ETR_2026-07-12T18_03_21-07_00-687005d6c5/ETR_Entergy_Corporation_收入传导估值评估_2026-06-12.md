@@ -1,0 +1,148 @@
+# 公司收入传导与价值传导评估：Entergy Corporation（ETR）
+
+生成日期：2026-06-12  
+公司代号：`ETR`  
+公司名称：Entergy Corporation  
+正式输出目录：`分析报告/公司评估/`  
+
+本报告只评估 ETR 从行业和产品需求到 NTM 收入、利润和经营价值传导的过程，不做全公司排序，不给投资评级，不判断股价区间，不使用市场价格或估值倍数作为经营价值传导证据。
+
+本次主口径：`NTM = 2026Q2-2027Q1`。  
+补充口径：公司 2026E 指引、2026E-2030E Investor Day 资本计划和长期数据中心/核电机会只用于解释可见性和远期期权，不替代 NTM 主表。
+
+资料边界：本地资料只使用 `公司调研/` 与 `行业调研/` 内资料；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归或模型比较资料。外部补充只使用公司公告、Investor Day、财报、DOE/LBNL 等公开来源。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM；2026 指引用于校准当前预期；2026E-2030E 资本计划、rate base 路径、新核电和更大 GW 级管线只作为补充或远期期权。
+- 当前收入基准、指引和 run-rate：ETR 1Q26 operating revenue 为 `$3.188B`，截至 2026-03-31 的 LTM operating revenue 为 `$13.287B`，其中 electric revenue 为 `$13.188B`；LTM operating income 为 `$3.074B`。公司 2026 adjusted EPS 指引为 `$4.25-4.45`。6 月 9 日 Investor Day 把 2026E-2030E capital plan 更新为约 `$67B`，并给出 2025E rate base `$46B`、2026E `$58B`、2027E `$73B`、2030E `$97B` 的路径。
+- 重要产品/业务线：传统受监管零售电力和既有工商业负荷、数据中心/大工业 ESA 售电、专用发电容量与 CCCT、新增输电/变电/配电资产、可再生/BESS/核电与新核电远期期权。
+- NTM 公司收入四情景：悲观 `$13.2-13.8B`，基准 `$14.0-14.8B`，乐观 `$14.8-16.0B`，极度乐观 `$16.0-17.5B`。这些是 operating revenue 口径，包含燃料和购电 pass-through，不等同于利润。
+- 利润或 EBITDA 四情景：公司不披露 NTM EBITDA 指引，本报告用 adjusted EPS 和 operating margin 替代。悲观 adjusted EPS `$3.90-4.20`，基准 `$4.25-4.45`，乐观 `$4.45-4.75`，极度乐观 `$4.75-5.20`；极度乐观在第五步校准后只保留为低可信上限。
+- 最大传导瓶颈：不是客户需求，而是 ESA/特殊费率能否通过监管、客户是否承担 full cost of service、燃机和大型变压器/开关设备交付、500kV 输电和变电站能否准时投运。
+- 最大利润率变量：大负荷收入中燃料、购电和低毛利 pass-through 占比高；股东收益主要来自新增 rate base 的准许回报、需求电费、客户成本分担和 O&M/折旧/利息控制，而不是简单售电收入放大。
+- 最大现金流变量：2026E-2030E capex 约 `$67B`，同期 OCF outlook 约 `$38B`，自由现金流在建设期大概率持续为负；客户出资、CIAC、forward equity、债务成本、信用指标和监管回收速度决定现金流质量。
+- 可信度：基准情景中高；乐观情景中；极度乐观低。当前证据足以支持 ETR 由传统 regulated utility 转为高可见度 load-growth utility，但不足以把全部 7-12GW 数据中心管线直接写入 NTM 可确认收入。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 传统受监管零售电力与既有工商业负荷 | LTM electric revenue `$13.188B`；剔除新大负荷后的单独基数无法可靠拆分 | 绝大部分 | 当前收入和利润底座；天气、费率案、工业产量和燃料 pass-through 决定 NTM 波动 | A | 进入基准；按当前指引和 run-rate 处理 | 无 |
+| 数据中心 / 大工业 ESA 售电 | 公司未单独披露 data center revenue；当前确认收入估计仍为低个位数收入占比，已混在 industrial/commercial | 当前低，增量高 | NTM 最大增量线索；Meta、Google、Amazon/ Mississippi、其他 pipeline 通过 ESA、special rate 和 large industrial sales 进入收入 | A/B；已计费部分 A，已签/公告 ESA B | 小比例进入基准；未签或未获批 GW 只能进乐观/极度乐观 | 更大 7-12GW pipeline 的未签部分 |
+| 专用发电容量、CCCT、燃气与容量资源 | 2026E-2030E total generation capex `$44.555B`，其中 other new generation `$31.45B`；capex 不是收入 | 当期收入小，rate base 价值高 | 将负荷需求转为可获得监管回报的资产；OCAPS、Delta Blues、Richland/Pointe Coupee 等决定 2027 后利润 | B/C；已批项目 B，申请/规划 C | NTM 只纳入已批、在建、AFUDC、rider 或确定投运项目；不得把 capex 全额当收入 | Richland/Pointe Coupee 5.278GW 和更多 2030-31 项目 |
+| 输电、变电、配电、grid hardening | 2026E-2030E transmission capex `$9.99B`，distribution `$10.29B`；2026E 合计约 `$4.98B` | 当期收入中通过费率/折旧/回报逐步体现 | 决定 time-to-power，且比纯售电更接近长期 rate base 回报 | A/B | 已批和公式费率/rider 支持部分进入基准；未批线路进乐观 | 多条 500kV 项目加速 |
+| 可再生、BESS、核电增容与新核电 | Renewables/storage capex `$7.09B`，nuclear capex `$3.15B`；新核电仍非 NTM 收入主线 | NTM 小，长期重要 | 满足清洁、容量和客户采购要求；BESS 可做桥接和调峰，新核电是 2030 年后期权 | B/C/D；已公告项目 B/C，新核电 MOU/研究 D | 已公告 2026-2028 solar/BESS 小比例进入基准；新核电不进 NTM 基准 | CCS、新核电、SMR、长期 clean firm capacity |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池和客户/电网需求，不评估 ETR 份额、收入确认、利润率或公司汇总。需求单位按最能解释业务线的指标选择，包括 TWh、GW、capital plan、项目 MW、rate base 和合同期限。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 传统受监管零售电力与既有工商业负荷 | 1Q26 total retail usage `30.7TWh`，industrial `15.9TWh`；Investor Day 显示 2026E-2030E total retail sales CAGR 约 `~9%`、industrial sales CAGR 约 `~16%` | NTM weather-adjusted retail sales 仅 `+1%-4%` | `+5%-8%`，符合指引和正常工业增长 | `+8%-11%`，工业/商业负荷强于计划 | `+11%-14%`，传统工业与大负荷同步强于计划 | 以年化约 `120-130TWh` retail 基数计，约 `+1-18TWh` 区间 | 悲观低于当前增长路径；基准接近当前预期；乐观/极度乐观高于 Investor Day 隐含节奏 | 正向：Gulf South 工业、LNG、化工、数据中心；反证：天气、工业周期、燃料价格、客户延期 |
+| 数据中心 / 大工业 ESA 售电 | 公司公开强调 AR/LA/MS 数据中心协议对 2.3M 客户带来 `$7B` 二十年 savings；本地公司底稿和行业底稿使用 `7-12GW` data center pipeline 口径 | 已签/advanced load 少于 `2GW`，NTM energization 仅 `0.2-0.5GW` | pipeline 稳定，`2-4GW` 进入 signed/advanced，NTM energization `0.5-1.0GW` | signed/advanced `4-6GW`，NTM energization `1-2GW` | `6GW+` 在 NTM 内进入 signed/advanced，`2GW+` 提前通电或桥接供电 | 相对当前 pipeline：悲观 `-2GW+`，基准 `0-2GW`，乐观 `+2-4GW`，极度乐观 `+5GW+` | 基准符合当前大负荷叙事；乐观需要合同和监管证据；极度乐观需要多个项目同步突破 | 正向：15-20 年合同、full cost of service、Meta/Google/Amazon 线索；反证：GPU/AI ROI、融资、社区/用水、并网排队 |
+| 专用发电容量、CCCT、燃气与容量资源 | Investor Day 2026E-2030E generation capex `$44.555B`；公告项目含 OCAPS `1,215MW`、Delta Blues `754MW`、Richland/Pointe Coupee `5,278MW` 等 | NTM 只推进已批/近投运 `1-2GW`，新增 resource approval 延后 | `3-5GW` 项目维持监管和采购节奏 | `5-8GW` 项目获批、采购或进入可执行窗口 | `8GW+` 通过客户担保、燃机锁定和监管加速进入执行 | 相对当前计划：悲观少 `1-3GW`，基准按计划，乐观多 `2-3GW`，极度乐观多 `5GW+` | 基准只承认已公告/已批/可审查项目；极度乐观不是 NTM 收入，而是资产转化上限 | 正向：高负荷因子客户需要 firm power；反证：燃机、汽轮机、EPC、排放许可、燃气管输 |
+| 输电、变电、配电、grid hardening | 2026E-2030E transmission `$9.99B`、distribution `$10.29B`；2026E 合计约 `$4.98B` | NTM 执行低于计划，审批或设备交期延迟，capex `~$3.5-4.2B` | 按 2026E 计划执行，`~$4.8-5.2B` | 多个 500kV、变电和客户接入项目加速，`~$5.2-6.2B` | 客户资金和监管同步支持，`~$6.2-7.0B+` 包含部分客户出资项目 | 相对 2026E 计划：`-$0.8B` 至 `+$2B+` | 基准符合公司资本计划；乐观需要 docket/施工证据 | 正向：电力接入是行业硬瓶颈；反证：大型变压器、switchgear、线路许可、地权、保护调试 |
+| 可再生、BESS、核电增容与新核电 | 2026E-2030E renewables/storage `$7.09B`、nuclear `$3.15B`；公告 solar/BESS 项目多在 2026-2029 | NTM 仅 `0.2-0.4GW` 已公告/PPA 小项目推进 | `0.5-1.0GW` 已公告 solar/BESS、核电维护/增容准备正常推进 | `1-2GW` clean capacity 或 BESS 与大客户合同绑定 | `2GW+` clean firm / BESS / nuclear framework 上修，但多数仍非 NTM 收入 | NTM 可确认 clean capacity 增量约 `0.2-2GW+` | 基准只纳入已公告/已批；新核电只作远期期权 | 正向：客户 clean energy 需求；反证：新核电时间表、BESS 消防/并网、可再生并网和容量价值 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断需求能否进入 ETR NTM 收入表或受监管回报路径，不预测增长、不判断利润率。capex、项目总额、GW pipeline、客户总预算和长期 run-rate 不等于 NTM 可确认收入；只有已确认售电、已披露收入、指引、已签 ESA、监管批准、rider/AFUDC/CWIP 或明确交付时间表才可进入基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 传统受监管零售电力与既有工商业负荷 | LTM operating revenue `$13.287B`、electric revenue `$13.188B`；1Q26 revenue `$3.188B` | 直接 | 燃料/购电 pass-through 使 revenue 弹性大于利润；利润来自费率、需求费和受监管回报 | `$11.8-12.4B` | `$12.4-13.0B` | `$12.8-13.4B` | `$13.2-13.8B` | 基准符合 run-rate 和 2026 指引 | A | 是 | 已披露收入、财报、指引 | 作为 NTM 收入底座；不把天气或燃料单独上修为利润 |
+| 数据中心 / 大工业 ESA 售电 | 公司未单独披露 data center revenue；已计费部分在 industrial/commercial；官方披露 AR/LA/MS 数据中心协议和 Meta/Google/Amazon 线索 | 直接 | gross revenue 高，净利润取决于需求费、固定成本吸收、燃料 pass-through、客户成本承担 | `$0.3-0.6B` | `$0.8-1.4B` | `$1.5-2.5B` | `$2.5-3.7B` | 基准只反映小部分已签/早期上电；乐观高于当前收入锚点 | A/B | 是，但折扣纳入 | 已计费收入 A；已签/公告 ESA B；未签 pipeline 不纳入基准 | NTM 可纳入少量确定性大负荷收入；未签 GW 留在乐观/极度乐观 |
+| 专用发电容量、CCCT、燃气与容量资源 | 2026E generation capex `$7.735B`、2026E-2030E `$44.555B`；capex 不是收入 | 间接为主 | 建设期经 AFUDC、rider、CWIP 和后续 rate base 回收；短期利润受折旧/利息拖累 | `$0.0-0.1B` | `$0.1-0.3B` | `$0.3-0.6B` | `$0.6-1.0B` | 当前预期是资产建设，不是收入爆发 | B/C | 部分是 | 已批/在建项目、AFUDC、公式费率或明确投运路径 | 不把 `$44.6B` capex 作为收入；只纳入可回收和投运相关收益 |
+| 输电、变电、配电、grid hardening | 2026E transmission + distribution capex 约 `$4.975B`；五年合计 `$20.28B` | 间接为主，部分直接通过费率回收 | 回报质量通常高于低毛利售电 pass-through，但依赖监管滞后和工程执行 | `$0.2-0.4B` | `$0.4-0.8B` | `$0.8-1.2B` | `$1.2-1.7B` | 基准符合 capex/rider 执行；乐观为加速审批 | A/B | 是 | capital plan、rider、rate base、utility grid assets | NTM 进入基准，但以回收/回报口径，不以工程总额口径 |
+| 可再生、BESS、核电增容与新核电 | 已公告 solar/BESS 和 nuclear capex；新核电仍为研究/合作/长期方案 | 间接 | 可改善客户清洁电力属性和长期 rate base；NTM 利润小 | `$0-0.1B` | `$0.1-0.2B` | `$0.2-0.5B` | `$0.5-0.9B` | 基准低于长期叙事，符合 NTM 可确认性 | B/C/D | 小比例是 | 已公告/PPA/已批项目进入；MOU/新核电不进基准 | NTM 主表只承认已公告项目；新核电移入附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，评估每条业务线 NTM 能给公司贡献多少 operating revenue 和经营利润/adjusted earnings 方向。表中利润贡献为研究估算的方向性经营贡献，不是公司披露分部利润；各行不能机械相加，因为燃料 pass-through、费率回收、AFUDC、折旧、利息和客户出资存在重叠。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 传统受监管零售电力与既有工商业负荷 | 悲观 | `$11.8-12.4B` | operating income `$2.3-2.6B` | 低于 LTM | 低于当前预期 | 工业或天气低于计划，燃料/购电成本上升 | 保留悲观 | 天气、工业周期、监管滞后 |
+| 传统受监管零售电力与既有工商业负荷 | 基准 | `$12.4-13.0B` | operating income `$2.7-3.0B` | 接近 LTM | 符合预期 | 1Q26 收入增长、2026 EPS 指引、retail/industrial CAGR | 保留基准 | 季节性和燃料 pass-through 影响 revenue/profit 对应关系 |
+| 传统受监管零售电力与既有工商业负荷 | 乐观 | `$12.8-13.4B` | operating income `$2.9-3.1B` | 小幅改善 | 略高于预期 | 工业负荷、费率行动、O&M discipline | 保留乐观 | 增长可能被折旧和利息抵消 |
+| 传统受监管零售电力与既有工商业负荷 | 极度乐观 | `$13.2-13.8B` | operating income `$3.0-3.3B` | 改善有限 | 高于预期但非主要上修源 | 传统负荷和大客户同步强 | 下移为上限 | 传统售电不具备设备商式非线性利润率 |
+| 数据中心 / 大工业 ESA 售电 | 悲观 | `$0.3-0.6B` | adjusted earnings `$0.05-0.12B` | 低毛利/中性 | 低于当前大负荷预期 | ESA 延迟、上电窗口后移 | 保留悲观 | 需求延期、客户取消、监管担保不足 |
+| 数据中心 / 大工业 ESA 售电 | 基准 | `$0.8-1.4B` | adjusted earnings `$0.12-0.25B` | 温和改善 | 符合当前可见路径 | 15-20 年合同、full cost-of-service、已公告数据中心协议 | 保留基准 | 已签不等于 NTM 全部通电 |
+| 数据中心 / 大工业 ESA 售电 | 乐观 | `$1.5-2.5B` | adjusted earnings `$0.25-0.45B` | 改善 | 高于当前收入锚点 | 多个 ESA signed/advanced，1-2GW NTM energization | 保留乐观 | 燃料和购电 pass-through 稀释利润率 |
+| 数据中心 / 大工业 ESA 售电 | 极度乐观 | `$2.5-3.7B` | adjusted earnings `$0.40-0.70B` | 明显改善但非线性有限 | 显著高于预期 | `2GW+` 提前上电、客户担保、需求费和固定成本吸收 | 下移为乐观上限 | 7-12GW 管线多数没有 NTM 确认路径 |
+| 专用发电容量、CCCT、燃气与容量资源 | 悲观 | `$0.0-0.1B` | 中性至 `-$0.05B` | 承压 | 低于计划 | 项目审批/设备延迟，利息费用先行 | 保留悲观 | capex 先于收入，折旧和融资成本 |
+| 专用发电容量、CCCT、燃气与容量资源 | 基准 | `$0.1-0.3B` | `+$0.05-0.15B` | 中性至小幅改善 | 符合计划 | OCAPS、已公告 CCCT、AFUDC/CWIP、rate base 路径 | 保留基准 | 大部分项目 COD 在 2028 以后 |
+| 专用发电容量、CCCT、燃气与容量资源 | 乐观 | `$0.3-0.6B` | `+$0.10-0.25B` | 改善 | 高于计划 | 采购锁定、监管批准加速、客户承担成本 | 保留乐观 | 燃机、EPC、排放许可 |
+| 专用发电容量、CCCT、燃气与容量资源 | 极度乐观 | `$0.6-1.0B` | `+$0.20-0.40B` | 改善 | 明显高于计划 | 快速资源、bridge power、多个 CCCT 审批 | 下移为上限 | NTM 内难以把 2030-31 项目变成利润 |
+| 输电、变电、配电、grid hardening | 悲观 | `$0.2-0.4B` | `+$0.00-0.08B` | 中性 | 低于计划 | 线路、变电、设备交付延期 | 保留悲观 | 变压器/switchgear lead time、地权、调试 |
+| 输电、变电、配电、grid hardening | 基准 | `$0.4-0.8B` | `+$0.10-0.20B` | 小幅改善 | 符合计划 | 五年 transmission/distribution 计划、rider、rate base | 保留基准 | 监管滞后和施工窗口 |
+| 输电、变电、配电、grid hardening | 乐观 | `$0.8-1.2B` | `+$0.20-0.35B` | 改善 | 高于计划 | 多个 500kV 项目加速、客户出资 | 保留乐观 | 不能把客户侧 eHouse/UPS/PDU 计入 ETR |
+| 输电、变电、配电、grid hardening | 极度乐观 | `$1.2-1.7B` | `+$0.30-0.50B` | 改善 | 显著高于计划 | 大客户接入和高压线路同步获批 | 下移为上限 | 工程队、保护调试和监管节奏不可无限压缩 |
+| 可再生、BESS、核电增容与新核电 | 悲观 | `$0-0.1B` | 中性至小幅负面 | 中性/承压 | 低于长期叙事 | 项目延后，BESS/新核电只停留在讨论 | 保留悲观 | 清洁项目不等于 NTM 现金利润 |
+| 可再生、BESS、核电增容与新核电 | 基准 | `$0.1-0.2B` | `+$0.00-0.05B` | 中性 | 符合可见项目 | 已公告 solar/BESS、nuclear capex | 保留基准 | 新核电不进入 NTM |
+| 可再生、BESS、核电增容与新核电 | 乐观 | `$0.2-0.5B` | `+$0.05-0.10B` | 小幅改善 | 高于基准 | BESS 与大客户合同绑定，solar PPA 扩张 | 保留乐观 | 容量价值和并网限制 |
+| 可再生、BESS、核电增容与新核电 | 极度乐观 | `$0.5-0.9B` | `+$0.10-0.20B` | 改善但不非线性 | 显著高于基准 | clean firm capacity 框架上修 | 移入附录/仅作跟踪 | 新核电、SMR、CCS 多数超过 NTM |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献去重后合成为公司 NTM operating revenue、operating margin、adjusted EPS/净利润和自由现金流方向。公司不披露标准产品毛利率，且 utility revenue 受燃料、购电和监管会计影响，毛利率字段在无法可靠量化处明确标注。收入增长先与自身指引、run-rate、rate base 和大负荷合同节奏比较，再讨论行业质量。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$13.2-13.8B` | `0%-4%` vs LTM `$13.287B` | 低于 2026 指引和 Investor Day load-growth 路径；大负荷延期、监管滞后或燃料/购电成本冲击 | 无法可靠量化；公司未按产品披露 gross margin，fuel/purchased power pass-through 扭曲 | `19%-21%` | adjusted EPS `$3.90-4.20`；净利润约 `$1.8-1.95B` | OCF 为正但 FCF 明显为负；外部融资需求上升 | 中 | ESA 延迟、监管保护不足、项目利息和折旧先行、天气/燃料 |
+| 基准公司 | `$14.0-14.8B` | `+5%-11%` | 接近 2026 指引、Q1 run-rate 与当前资本计划；数据中心主要贡献可见性和少量早期收入 | 无法可靠量化；用 operating margin/adj EPS 观察 | `22%-24%` | adjusted EPS `$4.25-4.45`；净利润约 `$2.0-2.1B` | FCF 为负但符合高 capex utility 模式；取决于客户出资、debt/equity 和监管回收 | 中高 | 把签约负荷转成已批 rate base，控制 O&M、折旧、利息和客户补贴争议 |
+| 乐观公司 | `$14.8-16.0B` | `+11%-20%` | 高于当前基准；Meta/Google/Amazon 之外新增 ESA，部分大负荷早于预期通电 | 无法可靠量化；若需求费/固定成本吸收提高，质量好于纯燃料 pass-through | `23%-25%` | adjusted EPS `$4.45-4.75`；净利润约 `$2.1-2.25B` | FCF 仍为负，但合同期限、客户担保和 rate recovery 改善融资质量 | 中 | 多个州监管审批、燃机/变压器交付、客户 minimum bill/exit fee 是否足够强 |
+| 极度乐观公司 | `$16.0-17.5B` | `+20%-32%` | 显著高于当前预期；多个 GW 在 NTM 内进入 signed/advanced 并局部 energization | 无法可靠量化；只有需求费、rate base 和客户成本承担同步成立才改善 | `24%-26%` | adjusted EPS `$4.75-5.20`；净利润约 `$2.25-2.45B` | FCF 仍为负且融资强度最高；若 equity/forward issuance 过大，EPS 会被摊薄 | 低 | 需要需求、监管、设备、融资、施工和客户信用同时突破；第五步校准后下移为乐观上限 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。正向证据必须说明提升的是需求、收入基数、产品贡献、公司利润还是执行可信度；反证只限制实际影响层级，避免重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 1Q26 财报与 2026 adjusted EPS 指引 `$4.25-4.45` | 公司汇总、利润 | 支持 `$14.0-14.8B` 基准收入区间 | 支持 operating margin 回到 LTM 附近，但 Q1 margin 偏低提醒季节性 | 指引没有消除高 capex 融资压力 | 基准保留 |
+| 2026 Investor Day：2026E-2030E capex `$67B`、rate base 2025E `$46B` 到 2030E `$97B` | 收入基数、公司利润、现金流 | 提升长期可收入化资产池，但不等于 NTM revenue | rate base 回报提升长期利润质量 | OCF outlook `$38B` 小于 capex `$67B`，外部融资是硬约束 | 基准上修可见性，极度乐观不直接纳入 NTM |
+| Data center agreements、Fair Share Plus、15-20 年合同、full cost of service | 收入基数、执行可信度 | 提高已签/advanced load 转收入概率 | 若 minimum bill、需求费、客户成本分担足够强，可改善利润质量 | 降低 stranded cost 和普通客户补贴风险 | 乐观保留 |
+| 7-12GW data center pipeline | 需求、公司捕获 | 显示需求池大，但未签/未批部分不能进基准收入 | 未签 pipeline 对利润无直接贡献 | 若客户延迟，上电和 capex 回收后移 | 基准只折扣纳入，极度乐观下移 |
+| 燃机、变压器、switchgear、500kV 线路和工程调试交期 | 产品贡献、执行可信度 | 限制 generation/transmission 从需求到收入的速度 | 延误会先带来 AFUDC/利息/折旧压力，不一定同步带来利润 | 项目越大，construction work in progress 和融资占用越高 | 悲观保留；乐观需实物进度 |
+| 监管与 ratepayer cost-shift 风险 | 收入基数、利润率 | special rate、CCN、rider 失败会把可参与需求移出基准 | 若监管要求股东承担更多风险，ROE/回收速度下降 | 影响债务评级和融资成本 | 只在收入确认/公司组合层级处理一次 |
+| 客户替代供电、behind-the-meter、fuel cell、IPP/PPA | 公司捕获 | 可能减少 ETR 捕获的 utility-side capex 和售电量 | 替代方案可能保留 interconnection/standby 服务但降低利润池 | 降低大负荷粘性 | 乐观降权，不重复惩罚需求 |
+| 燃料、购电、天气和飓风 | 公司汇总 | 可显著影响 operating revenue，但 pass-through 后不等于利润 | storm/O&M/fuel lag 可压低 margin | storm restoration、securitization 和 working capital 波动 | 悲观保留 |
+| 可再生、BESS、核电和 CCS | 远期期权、执行可信度 | NTM 收入小；支持长期客户采购 | BESS/核电若进入 rate base 才改善长期利润 | 新核电和 CCS 超出 NTM，融资和许可长 | 基准小比例；新核电移入附录 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 大负荷延期、监管/融资/设备约束使 NTM 收入和 EPS 低于当前预期 | 已有正式收入基数、2026 指引、已公告数据中心协议降低彻底失速概率 | capex 先行、燃料/购电、weather、storm 和监管滞后仍可压低 NTM | 保留 | 悲观公司情景 | 中 | 同一 data center delay 只在需求/收入确认层级处理，不再重复压低所有利润项 |
+| 基准 | 传统 utility 底座正常兑现，少量大负荷收入进入 NTM，rate base 可见性提升 | A 级财报、2026 指引、Investor Day capex/rate-base 路径、已签/公告 ESA | 数据中心当前收入仍低；项目 capex 和 GW 不是当期收入 | 保留 | 基准公司情景 | 中高 | 燃料 pass-through 不重复作为需求风险和利润风险 |
+| 乐观 | 新增 ESA、监管批准和部分 energization 使收入与利润略高于指引 | 15-20 年合同、Fair Share Plus、`$7B` 客户 savings、Meta/Google/Amazon 线索 | 大型发电和输电项目大多 2028 以后 COD；设备/审批限制 NTM 速度 | 保留 | 乐观公司情景 | 中 | 未签 pipeline 不重复计入 data center revenue 与 generation capex |
+| 极度乐观 | 多个 GW 同时签约、获批、提前上电，并把收入转成更高利润质量 | 7-12GW pipeline、`$67B` capex、rate base 到 2030E 近 `$100B` 的长期路径 | NTM 内客户、监管、设备、施工、融资和利润质量不可能全部无摩擦；新核电/CCS 超出 NTM | 下移 | 乐观上限 / 附录跟踪 | 低 | 长期新核电、Richland/Pointe Coupee 2030-31 项目不重复进入 NTM 极度乐观 |
+
+## 8. 结论
+
+- 最可能情景：基准。ETR 的 NTM 主线是传统受监管电力底座正常兑现，加上数据中心/大工业 ESA 带来的少量可确认收入、更多 capital plan 和 rate base 可见性。最可能 NTM operating revenue 为 `$14.0-14.8B`，adjusted EPS 更接近公司 `$4.25-4.45` 指引，而不是把 7-12GW pipeline 全部转成收入。
+- 乐观情景成立条件：至少 `1-2GW` NTM 内通电或进入强约束 ESA/advanced load；Meta、Google、Amazon 或其他 hyperscaler 合同明确 minimum bill、full cost of service、退出费用和客户出资；LPSC/APSC/MPSC/PUCT 对关键发电和输电项目批准顺利；燃机、变压器和 EPC 交付不拖延。
+- 极度乐观情景成立条件：`6GW+` 在 12 个月内变成 signed/advanced，`2GW+` 实际 energization 或桥接供电，同时 demand charge、rate base、客户担保和 financing 条件使 revenue 上修能留在利润表。当前证据不足，校准后只保留为低可信上限。
+- 悲观情景触发条件：data center load ramp 从 2027 后移到 2028-2030；监管机构要求普通客户保护或股东承担更多 stranded cost；燃机/变压器/500kV 工程延期；FFO/debt、equity issuance 或利息费用恶化导致 EPS 被摊薄；燃料、购电、storm 和 O&M 压力使 operating margin 低于 LTM。
+- 后续跟踪数据：signed/advanced ESA MW、actual energization MW、industrial sales GWh、large customer minimum bill/exit fee、CIAC/customer contribution、LPSC/APSC/MPSC/PUCT docket、CCCT turbine/transformer delivery、500kV NTP/COD、CWIP/AFUDC、rate base roll-forward、O&M per MWh、FFO/debt、equity/forward issuance、OCF vs capex、新核电/CCS 是否从 MOU 进入许可或 FID。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财报使用 2026Q1 和截至 2026-03-31 LTM；Investor Day 使用 2026-06-09 资料；本报告生成日为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Entergy 1Q26 earnings release with financials：1Q26 operating revenue `$3.188B`、LTM operating revenue `$13.287B`、LTM electric revenue `$13.188B`、LTM operating income `$3.074B`、2026 adjusted EPS guidance `$4.25-4.45`。链接：<https://s201.q4cdn.com/714390239/files/doc_financials/2026/q1/1Q26-Earnings-Release-with-financials.pdf>
+  - Entergy 2026 Investor Day：2026E-2030E capital plan `$67B`，projected rate base 2025E `$46B` 到 2030E `$97B`，total retail sales CAGR `~9%`、industrial sales CAGR `~16%`，五年 OCF outlook `~$38B`，合同保护和 15-20 年 hyperscale terms。链接：<https://s201.q4cdn.com/714390239/files/doc_presentations/2026/Jun/09/Entergy-2026-Investor-Day.pdf>
+  - Entergy data centers page：data center agreements 对 Arkansas、Louisiana、Mississippi 的 2.3M 客户预计二十年 savings `$7B`，并披露 Meta、Google、AWS 相关 fact sheet/news 入口。链接：<https://www.entergy.com/datacenters>
+  - Entergy Meta Louisiana agreement：Meta 支付 full cost of service，额外 `$2B` customer savings over 20 years，叠加此前 `$650M`。链接：<https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings>
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - 2026E-2030E capex 和 rate base 是长期经营价值传导补充，不替代 NTM revenue。
+  - Richland/Pointe Coupee `5,278MW`、新核电、CCS、SMR 和更大 clean firm capacity 机会主要属于 2028-2031 以后，不进入 NTM 基准收入。
+  - 每 `1GW IT load` 的 gross electric revenue 可按本地公司底稿的 PUE `1.15-1.30`、电价 `$55-85/MWh` 粗算为约 `$0.55-0.97B/年`，但这只是收入上限校准，不能直接当 NTM 可确认收入或利润。
+- 主要来源：
+  - 本地公司资料：`公司调研/电力_发电_能源_储能/ETR_Entergy Corporation_公司调研_2026-06-11.md`
+  - 本地行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+  - 本地行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+  - 本地产业背景：`行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - 本地产业背景：`行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+  - DOE/LBNL data center energy use report release：美国 data center electricity usage 从 2014 年 `58TWh` 到 2023 年 `176TWh`，预计 2028 年 `325-580TWh`，占美国用电 `6.7%-12%`。链接：<https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers>

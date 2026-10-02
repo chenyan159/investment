@@ -1,0 +1,137 @@
+[
+  {
+    "ticker": "ANET",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "ADBE",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "CRDO",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "NVDA",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "ALAB",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "COHR",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "CBRS",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "AVGO",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "MU",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "LIN",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "SPCX",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "MRVL",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "CRWV",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "AMD",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "SNDK",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "VRT",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "GOOGL",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "LITE",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "MSFT",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "GEV",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "IREN",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "AMZN",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "RKLB",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "TSM",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "NBIS",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "OKLO",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  },
+  {
+    "ticker": "TSLA",
+    "prompt_hash_match": true,
+    "contains_bound_plan": true
+  }
+]

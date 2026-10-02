@@ -1,0 +1,365 @@
+# IREN Limited（IREN）公司调研：比特币矿场向 AI Cloud / AI Factory 的高杠杆转型
+
+> 报告日期：2026-06-12。  
+> 市场数据截点：美股 2026-06-11 收盘后 / 2026-06-12 UTC 报价源可见时间。  
+> 本地资料边界：仅结合 `基本面/行业调研/` 下 AI 数据中心、NeoCloud、AI 服务器、液冷、电力接入、MEP 等行业研究；未读取、引用或继承 `特征量化/`，未读取同目录公司旧报告。  
+> 正式归属：`公司调研/公司索引.md` 中 IREN 对应 `云算力_IDC_AI软件平台/`。
+
+## 0. 结论先行
+
+IREN 已经不是单纯的比特币矿商估值逻辑，而是“低成本电力和数据中心土地 + GPU 采购/融资 + 长约 AI Cloud”的高杠杆转型标的。2025 年之前投资人主要把它看成低成本 Bitcoin mining beta；2025 年 11 月 Microsoft $9.7bn 五年合同、2026 年 5 月 NVIDIA $3.4bn AI Cloud 合同和 5GW DSX 战略合作后，市场把它重新定价为 NeoCloud / AI factory 基建平台。当前估值主要买的是 2026-2027 年 AI Cloud ARR 能否从 Q3 FY26 的 $33.6m 单季收入跳升到公司目标的 $3.7bn-$4.4bn 年化收入，而不是当前 TTM 收入。
+
+最核心的投资变量只有四个：1）200MW Microsoft GB300 液冷集群能否按 2026 年分阶段交付；2）60MW NVIDIA / Dell air-cooled Blackwell 项目能否在 2027 年初投产；3）480MW 2026 运营容量和 1,210MW 2027 在建容量的供电、冷却、网络、调试是否按期；4）融资结构是否能被合同现金流覆盖，而不是依赖持续股权融资。公司已经用 Microsoft 预付款、$3.65bn investment-grade GPU financing、NVIDIA 合作、Dell 采购和 Mirantis 软件补强显著降低需求侧疑问，但交付侧、杠杆侧、GPU 残值和客户集中度风险仍然很高。
+
+从产业链位置看，IREN 不是 GPU 芯片、光模块、液冷件或电力设备供应商，而是 AI 基建栈中的“AI compute capacity aggregator”：把电力、土地、变电站、数据中心壳体、液冷/风冷机房、NVIDIA GPU、Dell 集成系统、云软件运维和客户长约打包成可交付的 GPU 云服务。行业资料显示，2026 年 AI 数据中心真正瓶颈不是单点芯片，而是可交付 MW、电力接入、液冷 rack、变压器/开关柜、融资和长约客户。IREN 的稀缺性正在于它同时拥有电力场址、建设执行和已签 hyperscaler / NVIDIA 需求。
+
+## 1. 公司整体业务、三年变化、产业链位置和估值快照
+
+### 1.1 业务构成
+
+| 业务 | 当前收入确认 | 资产/能力 | 对投资叙事的作用 | AI 相关性 |
+|---|---:|---|---|---|
+| Bitcoin Mining | Q3 FY26 $111.2m，仍占当季收入 76.8% | ASIC 矿机、低成本电力、现有机房 | 提供现金流、证明电力运营能力；但会被 GPU 转换挤出 | 间接，主要是电力/机房再利用 |
+| AI Cloud Services | Q3 FY26 $33.6m，占 23.2%；QoQ +94%，YoY 约 +8 倍 | NVIDIA GPU 集群、Dell 系统、Mirantis / IREN 云软件、运维团队 | 核心重估来源；从白标 GPU 云走向 hyperscaler / NVIDIA 长约 | 直接 |
+| AI Data Centers / Power Bank | 当前多为内部承载，少量可作为 colocation / powered shell 选择权 | Childress 750MW、Sweetwater 2GW、BC 160MW、Oklahoma 1.6GW、Spain 490MW、South Australia 800MW pipeline | 决定未来 MW 和 ARR 上限；是 IREN 相对普通 GPU 租赁平台的护城河 | 直接 |
+| Software / Managed Cloud | Mirantis 收购后收入未单列 | Kubernetes / OpenStack / cluster management / customer support | 从 bare metal GPU 租赁升级为 managed GPU cloud，提升客户粘性和利用率 | 直接 |
+| Demand response / energy services | 非核心、收入小 | 电力负载灵活性 | 降低净电力成本，增强 Bitcoin 和 AI 负载切换弹性 | 间接 |
+
+### 1.2 投资人心中的公司形象
+
+2024-2025 上半年：低成本比特币矿商，卖点是 15 J/TH 级别矿机效率、Childress 低电价、50 EH/s 扩张和可再生能源叙事。AI 只是已有 H100/H200 GPU 云的小业务，FY25 全年 AI Cloud 收入仅 $16.4m 左右，明显不是当时主营。
+
+2025 年 8 月以后：开始被看成“矿场转 AI 数据中心”的高 beta 标的。FY25 年报提出 10.9k GPU、$200m-$250m AI Cloud 年化收入目标，并披露 BC / Childress 可支持大量 Blackwell / GB300 GPU。
+
+2025 年 11 月以后：Microsoft $9.7bn 五年 AI Cloud 合同改变公司性质。该合同覆盖 NVIDIA GB300 GPUs、200MW critical IT load、Childress Horizon 1-4 液冷数据中心，并包含 20% 预付款。此后 IREN 从“可能转型”变成“有 anchor tenant 的 NeoCloud”。
+
+2026 年 5-6 月：NVIDIA $3.4bn 五年合同、5GW DSX 战略合作、NVIDIA 可投资至多 $2.1bn 的购股权、$3.65bn GPU financing、South Australia 800MW 连接协议，把叙事进一步推到“全球 AI factory power platform”。但这也使 IREN 的风险从“有没有客户”转为“能否按期交付、融资和运营超大规模 GPU 云”。
+
+### 1.3 最近三年重大业务变动 / 转型 / 收购
+
+| 时间 | 事件 | 对业务模型的影响 |
+|---|---|---|
+| 2024 | AI Cloud Services 开始商业化，H100/H200 GPU 云收入出现 | 证明非 Bitcoin 负载可在现有机房上运行，但规模很小 |
+| 2025-02 至 2025-05 | Horizon 1 50MW liquid-cooled AI data center、Sweetwater 2GW hub、暂停 50 EH/s 后继续矿机扩张 | 公司开始把增量资本从 ASIC mining 转向 AI/HPC 数据中心 |
+| 2025-08 | FY25 披露：收入 $501.0m（+168% YoY）、AI Cloud capacity 1.9k NVIDIA GPUs、目标 10.9k GPUs / $200m-$250m AI Cloud ARR by Dec 2025 | AI Cloud 开始成为投资者定价变量 |
+| 2025-11 | Microsoft $9.7bn 五年 GPU cloud services contract，Dell $5.8bn GPU/ancillary equipment purchase，200MW Childress Horizon 1-4 | hyperscaler anchor tenant；订单规模远大于历史收入 |
+| 2026-03 | 采购 over 50,000 NVIDIA B300 GPUs，总 fleet 至 150,000 GPUs，目标 2026 年底 AI Cloud ARR >$3.7bn | 增量 GPU supply 和 ARR 目标上修 |
+| 2026-05 | 收购 Spain Nostrum Group，增加约 490MW secured grid-connected power，power portfolio 至 5GW | 从北美扩展到 Europe，增加 sovereign AI / European demand optionality |
+| 2026-05 | NVIDIA $3.4bn 五年 AI Cloud contract，60MW Childress air-cooled Blackwell；NVIDIA DSX 5GW strategic partnership；NVIDIA 5 年可购 30m 股、$70/股、至多 $2.1bn | 需求、供应链和架构背书显著增强 |
+| 2026-05 | 收购 Mirantis | 增强 managed cloud、orchestration、cluster management 和客户支持能力 |
+| 2026-06 | $3.65bn investment-grade GPU financing，资金 + Microsoft 预付款覆盖 Microsoft GPU capex 的 96% | 降低短期资金缺口，但提升资产负债表复杂度和长期负债 |
+| 2026-06 | South Australia Bundey 800MW campus transmission connection agreement，目标 2028 起 energization | APAC pipeline，远期选择权，不应计入 2026-2027 收入基准情景 |
+
+### 1.4 产业链位置
+
+IREN 位于 AI 基建的“算力运营 / AI cloud / data center developer”层。上游是 NVIDIA GPU、HBM/CoWoS、Dell 服务器和集成、Arista / NVIDIA Networking / Broadcom 等网络、Vertiv / Eaton / Schneider / Siemens / GE Vernova 等电力和冷却设备；中游是 IREN 自有或控制的数据中心、变电站、液冷/风冷 hall、云软件；下游是 Microsoft、NVIDIA internal AI/research workloads、AI-native enterprises、model developers、white-label cloud providers。
+
+本地行业资料对这个位置的判断很明确：2026 年 NeoCloud / AI 数据中心胜负关键不是“会不会买 GPU”，而是 GPU/ASIC allocation、power/site、长期客户、融资、liquid-cooled rack delivery 和高利用率。IREN 当前的优势正好集中在这些点，但技术护城河不在芯片本身，更多是 MW 交付、合同融资和运营规模。
+
+### 1.5 最新估值、盈利能力和增长快照
+
+| 指标 | 最新值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | $56.71 | 2026-06-12 00:15 UTC / 2026-06-11 美股收盘附近市场报价 | 当日 +6.09%，52 周区间约 $5.14-$76.98 |
+| 市值 | $18.93bn | 同上 | 与 TTM 收入相比已显著预支 AI Cloud ramp |
+| trailing P/E | 87.25x | 2026-06-12 市场报价源 | 金融数据商口径；受 GAAP / 衍生工具公允价值和股本口径影响很大 |
+| 自算 trailing P/E | 119.6x | 市值 $18.93bn / 最近四季 GAAP net income $158.3m | 仅作一致口径参考；净利包含大量非现金公允价值和减值，质量低 |
+| forward P/E | 136.99x | Yahoo / Intellectia 等数据商 2026-06-10 至 2026-06-12 截点 | 分析师 EPS 口径差异大，StockAnalysis 显示 forward PE n/a；不可单独使用 |
+| trailing P/S | 25.0x | 市值 $18.93bn / TTM revenue $757.1m | 当前交易的不是历史收入，而是 2026-2027 AI Cloud ARR |
+| forward P/S | 6.4x-9.6x | Intellectia / StockAnalysis 2026-06-12/06-11 数据商口径 | 隐含市场已把未来收入 ramp 纳入分母 |
+| TTM revenue | $757.1m | Q4 FY25-Q3 FY26 官方季度表加总 | Bitcoin $690.8m，AI Cloud $66.3m |
+| Q3 FY26 revenue growth | Total 约持平 YoY；AI Cloud 约 +833% YoY；Bitcoin 约 -21% YoY | Q3 FY26 vs Q3 FY25，FY25 与 FY26 会计口径有差异 | 总收入被 Bitcoin 下行和矿机退役抵消，AI Cloud 增速很高但基数小 |
+| FY25 revenue growth | +168% YoY | FY25 年报，$501.0m vs FY24 $187.2m | 主要由 Bitcoin mining 扩张驱动 |
+| Q3 FY26 gross margin excl. D&A | 72.4% | Q3 FY26 revenue $144.8m，cost of revenue excl. D&A $39.9m | Bitcoin direct margin约 68%；AI Cloud direct margin约 86% |
+| TTM gross margin excl. D&A | 68.4% | 最近四季 revenue $757.1m，cost of revenue excl. D&A $239.3m | 不含折旧、减值和 SG&A，不等于最终经营利润 |
+| TTM operating margin | -53.6% | operating loss $405.7m / revenue $757.1m | 大量 D&A、impairment、SG&A、转型成本 |
+| TTM net margin | 20.9% | net income $158.3m / revenue $757.1m | 净利受金融工具公允价值大幅扰动，不代表经营质量 |
+| TTM Adjusted EBITDA margin | 46.0% | Adj. EBITDA $348.4m / revenue $757.1m | 仍由 Bitcoin 现金流和高 direct margin 支撑 |
+
+### 1.6 资产负债表和财务健康
+
+截至 2026-03-31，IREN 现金及等价物 $2.213bn，current assets $2.425bn，current liabilities $651m，current ratio 3.72x，短期流动性充足。公司在 Q3 FY26 公告中还披露 2026-04-30 现金约 $2.6bn。问题不在短期现金，而在未来 12-24 个月的 capex 强度和杠杆。
+
+负债端，截至 2026-03-31，总资产 $7.265bn，总负债 $4.600bn，股东权益 $2.665bn；convertible notes $3.688bn，finance lease liabilities 合计 $274m。用可转债 + finance lease 对权益，interest-bearing debt / equity 约 1.49x；若用 total liabilities / equity，则约 1.73x。2026-06-01 公司又关闭 $3.65bn GPU financing，尽管该融资由 Microsoft offtake 和 GPU collateral 支撑，实质上仍把公司推向高杠杆、项目融资驱动的资产运营模式。
+
+健康程度判断：近端流动性健康，融资能力强，客户预付款和 investment-grade GPU financing 是重大正面；中长期财务风险高，原因是（1）TTM GAAP operating loss 为 $405.7m；（2）Q3 FY26 单季 capex / investing outflow $1.477bn，远高于 operating cash flow $75m；（3）2026-2027 收入高度依赖 Microsoft / NVIDIA / 大客户按期接收和付款；（4）GPU 折旧、残值、技术换代和云租赁价格若低于预期，会快速压缩权益价值。
+
+## 2. 最近五个财报季度：收入、利润率、订单、交期和 AI 占比
+
+> 说明：FY26 起公司转为 US GAAP / U.S. domestic issuer 表述；FY25 Q3 使用当时 IFRS / non-IFRS 公告口径，与 FY26 可比性有限。表内 direct margin = `(segment revenue - segment cost of revenue excl. D&A) / segment revenue`，若无分部成本则用公司披露的 adjusted EBITDA 或 non-IFRS direct cost 近似。
+
+| 财报季度 | 披露日期 | 总收入 | Bitcoin Mining | AI Cloud Services | AI收入占比 | direct margin / Adj. EBITDA | 净利润 | 订单、Backlog、Bookings、交期、取消率 |
+|---|---:|---:|---:|---:|---:|---|---:|---|
+| Q3 FY26 ended 2026-03-31 | 2026-05-07 | $144.8m，QoQ -21.6% | $111.2m，QoQ -33.6%；segment direct margin 68.3% | $33.6m，QoQ +94.2%；segment direct margin 86.3% | 23.2% | Cost excl. D&A margin 72.4%；Adj. EBITDA $59.5m / 41% | $(247.8)m | $3.1bn ARR under contract；target $3.7bn ARR by 2026YE；Horizon 1-4 2026YE；NVIDIA $3.4bn / 60MW early 2027；2027 1,210MW in build；取消率未披露，合同违约/客户不履约风险在前瞻风险中提示 |
+| Q2 FY26 ended 2025-12-31 | 2026-02-05 | $184.7m，QoQ -23.1% | $167.4m，QoQ -28.2%；direct margin 62.1% | $17.3m，QoQ +137.0%；direct margin 86.1% | 9.4% | Cost excl. D&A margin 64.4%；Adj. EBITDA $75.3m / 41% | $(155.4)m | Microsoft 合同已签；deferred revenue $46.6m；GPU financing 工作推进；实际大额 GPU cloud 收入尚未完全起量；取消率未披露 |
+| Q1 FY26 ended 2025-09-30 | 2025-11-06 | $240.3m，YoY +355% | $232.9m；direct margin 65.7% | $7.3m；direct margin 90.4% | 3.0% | Cost excl. D&A margin 66.4%；Adj. EBITDA $91.7m / 38% | $384.6m | Microsoft $9.7bn 合同宣布；20% 预付款；目标 140k GPUs、2026YE AI Cloud ARR $3.4bn；Together AI / Fluidstack / Fireworks AI 等多年度合同；Horizon 1-4 200MW through 2026 |
+| Q4 FY25 ended 2025-06-30 | 2025-08-28 | $187.3m，QoQ 约 +26.5% | $180.3m | $7.0m | 3.7% | Cost excl. D&A margin 71.8%；Adj. EBITDA $121.9m / 65% | $176.9m | 目标 10.9k GPUs / $200m-$250m AI Cloud ARR by Dec 2025；BC 可部署 >60k Blackwell GPUs，Horizon 1 可支持 >19k GB300s；NVIDIA Preferred Partner status；Backlog 未披露 |
+| Q3 FY25 ended 2025-03-31 | 2025-05-14 | $148.1m（公司公告口径） | $141.2m；1,514 BTC mined；all-in cash cost约 $41k/BTC vs revenue $93k/BTC | $3.6m；run-rate revenue $28m annually | 2.4% | Adj. EBITDA $83.3m / 56% | $24.2m | Horizon 1 50MW liquid-cooled AI DC：200kW rack density，capex $6m-$7m/MW，目标 Q4 2025；客户尽调和合同谈判中；Sweetwater 1 1.4GW 目标 2026-04 energization；取消率未披露 |
+
+### 2.1 从五个季度看出的变化
+
+AI Cloud 已从 Q3 FY25 的 $3.6m 提升到 Q3 FY26 的 $33.6m，约 9.3 倍；收入占比从 2.4%-3.7% 区间升到 23.2%。但到 Q3 FY26 为止，IREN 的财务报表仍主要由 Bitcoin mining 驱动。市场看重的是已签和目标 ARR，而不是已确认收入。
+
+Bitcoin mining 收入在 Q1 FY26 达 $232.9m 后连续两个季度回落到 $167.4m、$111.2m，既受 Bitcoin price / hash economics 影响，也受公司将 ASIC 退役、为 GPU 安装腾出数据中心容量影响。这个下降不是传统主营自然恶化那么简单，而是主动转型的收入换挡期。
+
+利润质量的关键变化是：AI Cloud 的 direct margin 很高（Q3 FY26 约 86% before D&A），但折旧、GPU 融资利息、数据中心 SG&A、矿机减值和转型费用会在 GAAP 层面吞噬利润。未来一年的核心不是毛利率，而是可用 GPU 利用率、合同开始计费日期和融资成本。
+
+## 3. 2026 最新指引、业务收入占比和重点产品
+
+### 3.1 最新财报和后续公告给出的业务指引
+
+| 指引 / 目标 | 公司披露 | 投资解读 |
+|---|---|---|
+| 2026 expansion | 480MW on track；operational capacity fully contracted；Horizon 1-4 on track for year-end delivery | 2026 年收入 ramp 的核心物理约束；若延期，$3.7bn ARR 目标延后 |
+| 2026 ARR target | $3.1bn ARR under contract，target $3.7bn by end CY26 | $3.7bn 中约 $1.9bn 来自 Microsoft，约 $1.8bn 来自 BC / Childress 约 74k GPU 部署；不是全部已签合同 |
+| 2027 expansion | 1,210MW AI Cloud capacity in build，包括 Childress Horizons 5-6、Childress air-cooled capacity、Sweetwater 1 initial phase | 如果 2027 能转化为客户长约，公司可能进入 >$5bn ARR 级别；如果客户/融资不足，成为高 capex 风险 |
+| NVIDIA contract | $3.4bn 五年合同，air-cooled Blackwell，60MW Childress，early 2027 ramp | 平均年收入约 $0.68bn，约 $11.3m/MW-year；验证 managed cloud 而非纯裸金属 |
+| Microsoft contract | $9.7bn 五年合同，GB300 GPUs，200MW critical IT load，20% prepayment，Dell $5.8bn 系统采购 | 平均年收入约 $1.94bn，约 $9.7m/MW-year；anchor tenant 是公司信用和融资的核心 |
+| GPU fleet | over 50k B300 purchases，总 fleet 150k GPUs，目标 2026YE ARR >$3.7bn | 采购规模与 Microsoft 约 100k GPU footprint、BC / Childress 自营云目标相互验证 |
+| Global power pipeline | North America + Europe + APAC 5GW 以上；Spain 490MW；South Australia 800MW，2028 起 energization | 远期选择权强，但 2026-2027 基准情景不能把全部 5GW 当成收入 |
+
+### 3.2 最新收入占比和增长
+
+| 业务 | Q3 FY26 收入 | Q3 FY26 占比 | QoQ | YoY / 趋势 | 重点程度 |
+|---|---:|---:|---:|---:|---|
+| Bitcoin Mining | $111.2m | 76.8% | -33.6% | 低于 Q3 FY25 $141.2m，约 -21% | 现金流重要，但估值边际下降 |
+| AI Cloud Services | $33.6m | 23.2% | +94.2% | 高于 Q3 FY25 $3.6m，约 +8.3x | 最核心 |
+| Data center / colocation / powered shell | 未单列 | n.a. | n.a. | 主要内化为 AI Cloud capacity | 核心资产，但收入表现为 AI Cloud |
+| Software / Mirantis managed cloud | 未单列 | n.a. | n.a. | 2026 年收购，未来增强服务附加值 | 小但潜力高 |
+
+### 3.3 需要跳过或降权的业务 / 产品
+
+| 跳过 / 降权项 | 原因 |
+|---|---|
+| 纯 Bitcoin mining 增量矿机 | 当前仍贡献收入，但高增长 AI 论点不依赖继续扩大 ASIC；公司正在把部分容量从 ASIC 转向 GPU |
+| demand response / ERS / power credits | 能改善电力成本，但不是独立高增长产品 |
+| 普通 powered shell / generic colocation | 有价值，但若没有 GPU、客户长约和融资，估值弹性低于 AI Cloud |
+| 品牌/营销类收购 Awaken | 对全球品牌有帮助，但不是收入和 BOM 核心 |
+| 传统低密度企业数据中心 | 与 130-200kW rack、GB300/Blackwell、训练/推理集群的瓶颈不同，不是 IREN 当前重估主线 |
+
+### 3.4 重点产品和小业务
+
+| 重点产品 / 业务 | 对应产品 / 型号 / 服务 | 当前已知规模 | 利润率推断 | 增速 / 规模推断 |
+|---|---|---:|---|---|
+| Microsoft GB300 AI Cloud | NVIDIA GB300 GPUs，Dell servers/storage/network/ancillary，Childress Horizon 1-4 direct-to-chip liquid-cooled data centers，200MW IT load | $9.7bn TCV / 5 年；Dell equipment约 $5.8bn；约 100k GPU footprint | direct gross margin before D&A 可能 75%-88%；扣除折旧、融资、运维后 EBITDA margin 取决于利用率和 debt cost，基准 45%-60% | 2026 分阶段部署；从 FY26 已确认 AI Cloud $66m TTM 跳到 $1.9bn ARR 贡献 |
+| NVIDIA managed Blackwell cloud | Air-cooled Blackwell platform systems，Childress existing data centers，Mirantis orchestration / cluster management | $3.4bn TCV / 5 年；60MW；early 2027 commissioning；Dell $1.6bn purchase | revenue/MW 较 Microsoft 更高，air-cooled capex/MW略低；但需承担 managed services SLA | 2027 年初新增约 $0.68bn ARR |
+| B300 / 150k GPU fleet for AI-native customers | over 50k NVIDIA B300 GPUs，total 150k GPUs；BC Mackenzie / Prince George、Childress | 目标 2026YE AI Cloud ARR >$3.7bn，其中约 $1.8bn 来自约 74k GPU BC/Childress 部署，非全部已签 | 若客户为多租户/spot，毛利弹性高但利用率和价格波动更大 | 可能是 Microsoft 以外第二增长曲线，需客户签约验证 |
+| IREN AI data center power portfolio | Childress 750MW、Sweetwater 2GW、Oklahoma 1.6GW、BC 160MW、Spain 490MW、South Australia 800MW | 2026 480MW，2027 1,210MW in build，5GW+ global pipeline | 单纯 powered shell margin 低于 fully managed AI cloud；与 GPU 云打包时价值放大 | 2028+ 远期产能选择权，关键在 interconnection、substation、MW-to-revenue |
+| Mirantis / managed cloud software | Kubernetes / OpenStack / orchestration / cluster management / support | 收入未披露，支持 NVIDIA managed cloud contract | 软件服务毛利可高于硬件服务，但规模小；主要作用是提高客户粘性和利用率 | 小业务，但不能漏：它把 IREN 从 bare metal 租赁推向 managed GPU cloud |
+
+## 4. 高增长 / 关键业务当前贡献、AI 基建重要性和供需评分
+
+评分：5 = 极高 / 极紧 / 极强；1 = 低。当前收入贡献以 Q3 FY26 或已签合同年化口径评估。
+
+| 业务 | 当前收入贡献 | 当前增速 | AI基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 评价 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| AI Cloud Services overall | Q3 FY26 $33.6m；TTM $66.3m；已签/目标 ARR $3.1bn-$3.7bn | Q3 QoQ +94%；YoY约 +8x | 5 | 5 | 5 | 3.5 | 是当前估值核心；需求由 hyperscaler 和 NVIDIA 直接验证，关键是交付而非销售 |
+| Microsoft GB300 liquid-cooled cluster | 尚未在 Q3 FY26 完整确认；合同平均年收入约 $1.94bn | 2026 从接近 0 到分阶段计费 | 5 | 5 | 5 | 4 | GB300、200MW、液冷、长约、20%预付，属于最强订单质量 |
+| NVIDIA 60MW air-cooled Blackwell managed cloud | early 2027 目标，当前未确认 | 2027 起约 $0.68bn ARR | 5 | 5 | 5 | 4 | NVIDIA 既是客户又是战略伙伴，供应链背书很强；但 2027 前无收入 |
+| BC / Childress B300 multi-customer fleet | 当前 AI Cloud $33.6m/季中已有部分 | 公司目标约 $1.8bn ARR from 74k GPUs | 4.5 | 4 | 4 | 3 | 客户更分散，价格/利用率波动高于 Microsoft 长约 |
+| Data center power portfolio | 直接收入未单列；承载 Q3 Bitcoin + AI Cloud | MW pipeline 是未来 ARR 上限 | 5 | 5 | 5 | 3.5 | 电力接入稀缺，变压器/开关柜/并网长周期，形成区域性护城河 |
+| Mirantis / managed cloud | 未披露，估计当前收入贡献小 | 2026 新纳入 | 3.5 | 3 | 2 | 2.5 | 本身不稀缺，但对 managed GPU cloud SLA、客户迁移和利用率重要 |
+| Bitcoin Mining | Q3 FY26 $111.2m；TTM $690.8m | 下降，且受 BTC/hashprice 波动 | 1.5 | 2 | 2 | 2 | 现金流和场址证明仍重要，但不是 AI 投资主线 |
+
+## 5. 一年后收入贡献和业务质量三情景预测
+
+预测窗口：2026-06-12 至 2027-06-12。所有预测为研究估算，不是公司指引。关键假设：Microsoft 200MW 在 2026 年持续 ramp；NVIDIA 60MW 在 2027 年初投产；2027 年 1,210MW in build 中部分进入可签约/调试；AI cloud 定价未快速坍塌。
+
+### 5.1 收入和 ARR 情景
+
+| 业务 | 基准情景（2027-06） | 乐观情景（2027-06） | 极度乐观情景（2027-06） |
+|---|---|---|---|
+| Microsoft GB300 AI Cloud | 150-200MW 已计费或接近满计费；ARR $1.4bn-$1.94bn；实际未来 12 个月收入 $1.2bn-$1.8bn | 200MW 全部按期，SLA 稳定；ARR $1.94bn；后续扩容谈判开启 | 200MW 满产 + Microsoft 追加容量；ARR $2.3bn-$3.0bn |
+| NVIDIA 60MW Blackwell | 2027 年初投产，年化 ARR $0.5bn-$0.68bn；实际 FY 计入低于年化 | 按期 commissioning，$0.68bn ARR，服务质量带来追加需求 | early ramp 超预期，NVIDIA / DSX 追加 60-140MW；ARR $1.0bn-$1.8bn |
+| BC / Childress B300 multi-customer fleet | 74k GPU 中 50%-75% 达到高利用；ARR $0.8bn-$1.4bn | 74k GPU 高利用，ARR $1.8bn 基本兑现 | 150k GPU fleet 利用率高、价格坚挺；ARR $2.5bn-$4.0bn |
+| AI data center / power portfolio | 480MW 2026 capacity 稳定，1,210MW 中部分在 construction / pre-lease；直接收入少，ARR option value $4bn-$7bn | 700-900MW 可见客户/融资；ARR option value $6bn-$10bn | 1.0-1.2GW 已签/即将通电；ARR option value $8bn-$12bn |
+| Mirantis / managed cloud | 主要体现为提高利用率 3-5pct、支持 NVIDIA managed service；独立收入 $50m-$100m run-rate | 形成 enterprise managed cloud package；$100m-$250m ARR-like 服务 | 软件平台对外输出/white-label，$250m-$500m，低置信度 |
+| Bitcoin Mining | AI 转换后容量下降；收入 $350m-$650m，取决于 BTC/hashprice | BTC 强、hash economics 好，$700m-$1.0bn | BTC 极强且保留更多 ASIC 负载，$1.0bn+；与 AI 资源竞争 |
+
+### 5.2 三情景下的业务评分
+
+| 业务 | 情景 | 收入增速 | AI重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 |
+|---|---|---:|---:|---:|---:|---:|
+| Microsoft GB300 | 基准 | 从几乎未确认到 >$1bn 年收入 | 5 | 5 | 5 | 4 |
+| Microsoft GB300 | 乐观 | ARR 满 $1.94bn | 5 | 5 | 5 | 4 |
+| Microsoft GB300 | 极度乐观 | 追加订单，>$2.3bn ARR | 5 | 5 | 5 | 4.5 |
+| NVIDIA Blackwell | 基准 | 2027 起 $0.5bn-$0.68bn ARR | 5 | 5 | 5 | 4 |
+| NVIDIA Blackwell | 乐观 | 按期 $0.68bn ARR | 5 | 5 | 5 | 4.2 |
+| NVIDIA Blackwell | 极度乐观 | DSX 扩容，>$1bn ARR | 5 | 5 | 5 | 4.5 |
+| B300 multi-customer fleet | 基准 | $0.8bn-$1.4bn ARR | 4.5 | 4 | 4 | 3 |
+| B300 multi-customer fleet | 乐观 | $1.8bn ARR | 4.5 | 4 | 4.5 | 3.5 |
+| B300 multi-customer fleet | 极度乐观 | $2.5bn-$4.0bn ARR | 5 | 5 | 5 | 4 |
+| Data center power portfolio | 基准 | MW option 转化慢 | 5 | 5 | 5 | 3.5 |
+| Data center power portfolio | 乐观 | 700-900MW 可签约 | 5 | 5 | 5 | 4 |
+| Data center power portfolio | 极度乐观 | 1GW+ 可交付 | 5 | 5 | 5 | 4.5 |
+| Mirantis software | 基准 | 小规模服务收入 | 3.5 | 3 | 2 | 2.5 |
+| Mirantis software | 乐观 | enterprise managed cloud 起量 | 4 | 3 | 2.5 | 3 |
+| Mirantis software | 极度乐观 | 平台化输出 | 4 | 4 | 3 | 3.5 |
+
+## 6. BOM、每 MW / rack / GPU / optical port 内容量、价格传导链、当前产能和认证
+
+### 6.1 Microsoft GB300 200MW 液冷 AI Cloud：BOM 和价格链
+
+| 层级 | 每 MW / 每 rack / 每 GPU 内容量估算 | 价格 / 价值链 | 交付瓶颈 |
+|---|---|---|---|
+| 合同收入 | $9.7bn / 5 年 / 200MW = $1.94bn ARR = $9.7m/MW-year | 约 $19.4k/GPU-year（若 100k GPU footprint）；100% uptime 相当 $2.21/GPU-hour，75% 可计费利用率相当 $2.95/GPU-hour | 交付窗口和 SLA，而非单价本身 |
+| GPU / server system | Dell equipment $5.81bn / 200MW = $29.1m/MW；若 100k GPUs，约 $58k/GPU 系统级 capex | 包括 GPU、服务器、存储、网络、ancillary equipment；不等于单颗 GPU ASP | GB300 supply、HBM/CoWoS、系统集成、验收 |
+| Rack | IREN Horizon 规格 130-200kW rack density；NVL72-class 可按 72 GPUs/rack 近似 | 每 MW 约 5.0-7.7 racks；每 MW 约 360-554 GPUs；200MW 约 72k-111k GPUs，与 100k footprint 相互验证 | 高密度 rack commissioning、液冷漏液/流量/热交换 |
+| Liquid cooling | direct-to-chip cold plate、rack/in-row CDU、manifold、UQD、warm-water loop、pump/filter/water treatment/leak detection | 本地行业资料显示液冷系统毛利在稀缺阶段可高于普通 MEP；IREN 是买方/集成运营方 | GB300/Rubin 时代液冷从可选变为刚需，认证和现场运维是瓶颈 |
+| Power train | transmission interconnection -> substation -> transformer -> MV switchgear/eHouse -> UPS/BESS/genset -> low-voltage busway/PDU -> rack power shelf | 每 100MW IT load 通常需要 115-130MW facility load（PUE 1.15-1.30）；200MW IT 需约 230-260MW facility load 支撑 | 变压器/开关柜 lead time 可 >100 周；并网和电力设备是第一瓶颈 |
+| Network / optics | 粗略假设 1-2 个 400G/800G-equivalent scale-out ports/GPU；每 MW 约 360-1,100 GPU-facing endpoints，再加 leaf/spine switch-side optics | 光模块/交换机不是 IREN 收入，但进入 IREN capex 和交付风险；大型训练集群需要低延迟、高双向带宽 | 800G/1.6T 光互联、交换机供给、网络调优 |
+| Data center shell / MEP | IREN 早期 Horizon 1 披露 $6m-$7m/MW IT load；增强冗余和高密度后可按 $7m-$12m/MW 估算 | 合计设备 + 机房可能 $35m-$41m/MW 级别 | 土建、MEP、commissioning、当地许可和公用事业 |
+
+当前产能能力：Microsoft 项目对应 200MW critical IT load、2026 年分阶段部署，已通过 $3.65bn GPU financing + customer prepayment 覆盖 96% of $5.81bn GPU capex。供应链采纳程度极高：Microsoft 是 anchor customer，Dell 是系统供应商，融资获得 Fitch A / DBRS A(low)，这等同于合同现金流被债务市场验证。
+
+认证 / 架构阶段：Microsoft 合同不等于公开“认证证书”，但 hyperscaler offtake + Dell equipment + investment-grade financing 是商业认证。技术认证重点在液冷数据中心 commissioning、SLA、security / compliance、network performance、NVIDIA GB300 系统验收。
+
+### 6.2 NVIDIA 60MW air-cooled Blackwell managed cloud
+
+| 项目 | 内容 |
+|---|---|
+| 合同收入 | $3.4bn / 5 年 = $0.68bn ARR；60MW = $11.3m/MW-year，高于 Microsoft $9.7m/MW-year |
+| 设备采购 | Dell $1.6bn purchase agreement，约 $26.7m/MW，包含 GPUs、servers、storage、networking、ancillary equipment、integration services、warranties |
+| 技术路线 | air-cooled Blackwell platform systems；不等同于 GB300 liquid-cooled NVL72，但同属 Blackwell 高端 AI compute |
+| 每 MW rack / GPU | 若 rack 130-180kW，每 MW 约 5.6-7.7 racks；具体 GPU/rack 未披露，按 Blackwell 系统密度估算每 MW 数百 GPUs |
+| 价格传导 | NVIDIA internal AI/research workloads -> IREN managed GPU cloud -> Dell/NVIDIA hardware capex -> IREN data center power/cooling/network |
+| 当前产能 | Childress existing data centers 60MW，target early 2027 commissioning |
+| 采纳程度 | NVIDIA 同时是客户、战略伙伴、DSX 架构方和潜在股权投资方，采纳程度极高 |
+| 认证阶段 | NVIDIA DSX-aligned strategic partnership；商业层面由 NVIDIA workloads 验收；技术层面还需 cluster management、software orchestration 和 uptime SLA 验证 |
+
+### 6.3 B300 / 150k GPU multi-customer AI Cloud
+
+| 项目 | 内容 |
+|---|---|
+| GPU 规模 | 2026-03 披露 over 50,000 NVIDIA B300 GPUs，total fleet 150,000 GPUs |
+| 收入口径 | 公司目标 2026YE AI Cloud ARR >$3.7bn，其中 Microsoft 平均年收入约 $1.9bn，BC/Childress 约 74k GPU 估算 ARR $1.8bn |
+| 每 GPU 价格校验 | $1.8bn / 74k GPUs = $24.3k/GPU-year；100% uptime = $2.77/GPU-hour；75% utilization = $3.69/GPU-hour |
+| 每 MW 校验 | 若 360-550 GPUs/MW，则 ARR/MW 约 $8.7m-$13.4m，接近 Microsoft / NVIDIA 合同区间 |
+| 当前采纳 | Together AI、Fluidstack、Fireworks AI 等多年度合同；另有 white-label AI cloud providers；但 $1.8bn 部分并非全部签约 |
+| 风险 | 多客户业务比 hyperscaler 长约更受 spot GPU 租赁价格、利用率和客户信用影响 |
+
+### 6.4 Data center power portfolio
+
+| 场址 / 平台 | MW | 当前阶段 | 供应链采纳 / 价值 |
+|---|---:|---|---|
+| Childress, Texas | 750MW | Horizon 1-4 200MW for Microsoft；60MW NVIDIA air-cooled；Horizons 5-6 in build | 当前最核心收入场址，已获 Microsoft / NVIDIA / Dell 验证 |
+| Sweetwater, Texas | 2GW | Sweetwater 1 substation energized / initial phase in 2027 build；future DSX flagship focus | 5GW NVIDIA partnership 中的旗舰远期平台 |
+| British Columbia | 160MW | ASIC to GPU transition；Mackenzie / Prince George / Canal Flats | 支持 B300 / GB300 GPU 云，小而快 |
+| Oklahoma | 1.6GW | secured power / development pipeline | 2028+ 选择权，暂不计入近端收入 |
+| Spain Nostrum | 490MW + pipeline | acquisition agreed，Europe entry | European / sovereign AI optionality |
+| South Australia Bundey | 800MW | transmission connection agreement；four 330kV feeder exits；target 2028 energization | APAC optionality，远期很大，近端收入低 |
+
+每 MW 价格传导：如果只是 powered shell，价值可能是每 MW 每年数百万美元以下；如果与 NVIDIA GPUs 和 managed cloud 打包，Microsoft / NVIDIA 合同显示 $9.7m-$11.3m/MW-year 的收入强度。IREN 的商业模型应尽量避免只卖低毛利壳体，而是把 MW 转化为 GPU cloud ARR。
+
+## 7. 一年后产能能力、供应链采纳和认证阶段三情景
+
+| 业务 | 基准产能 / 采纳 / 认证 | 乐观产能 / 采纳 / 认证 | 极度乐观产能 / 采纳 / 认证 |
+|---|---|---|---|
+| Microsoft GB300 200MW | 150-200MW delivered；GPU financing 执行；Microsoft 验收进入稳定计费；SLA 验收仍是跟踪点 | 200MW 全部按期，PUE、网络和液冷稳定；追加扩容意向出现 | Microsoft 追加 100MW+；IREN 成为 Azure / OpenAI 周边长期算力供应节点 |
+| NVIDIA 60MW Blackwell | 60MW early 2027 commissioning；NVIDIA workloads 验收；Mirantis 参与 orchestration | 60MW 稳定上线，NVIDIA DSX-aligned reference 在 Sweetwater 扩展 | NVIDIA 追加 DSX 部署，Sweetwater 成为多百 MW AI factory anchor |
+| B300 / 150k fleet | 100k-150k GPU 中 70%-80% commercially utilized；客户组合包括 hyperscaler + AI-native | 150k GPUs 高利用，更多多年度合同，GPU financing 重复验证 | 新采购/融资继续，fleet >200k GPUs，价格和利用率维持高位 |
+| Data center power portfolio | 480MW 2026 capacity 稳定；1,210MW 中 300-500MW 进入可签/施工确定性较高 | 1,210MW 大部分具备客户/融资路径；Spain/SA 开始 pre-leasing | 1.5GW+ 可见客户/融资；5GW pipeline 估值显著前移 |
+| Mirantis managed cloud | 完成集成，支撑 NVIDIA 合同和多客户运营；主要认证为客户安全/SLA/cluster management | 形成标准化 managed GPU cloud stack，缩短新客户上线 | 对外输出平台或与 NVIDIA DSX/enterprise AI stack 深度绑定 |
+
+## 8. 基于真实订单积压和供给的未来一年业务增速预测
+
+### 8.1 真实订单 / backlog 质量
+
+| 订单 / pipeline | 合同金额 | 交付窗口 | 确定性 | 取消率 / 风险推断 |
+|---|---:|---|---|---|
+| Microsoft GPU cloud | $9.7bn / 5 年，20% prepayment | 2026 phased deployment，Childress Horizon 1-4，200MW | 极高：hyperscaler customer + Dell supply + $3.65bn financing | 未披露取消率；风险来自交付延误、SLA、客户履约、GPU/网络/液冷验收 |
+| NVIDIA managed cloud | $3.4bn / 5 年 | early 2027，60MW Childress | 极高：NVIDIA 客户 + 战略伙伴 | 未披露取消率；技术/交付风险小于需求风险 |
+| 2026 target ARR gap | $3.1bn under contract -> $3.7bn target | 2026YE | 中高：部分未完全签约，依赖 74k GPU 利用率、客户和价格 | 若 GPU spot price 或客户签约低于假设，$1.8bn estimated ARR 是主要变动项 |
+| 2027 1,210MW in build | 未披露合同金额 | 2027-2028 | 中：电力/建设和融资更关键 | 若无 anchor tenant，MW 不等于收入；若有 hyperscaler，弹性巨大 |
+| Spain / South Australia / Oklahoma | 未披露收入合同 | 2028+ | 低到中：pipeline 选择权 | 不应提前计入未来 12 个月收入 |
+
+### 8.2 未来一年增长预测
+
+| 情景 | AI Cloud 未来一年收入 / ARR | Total revenue 未来一年 | 增速判断 | 关键条件 |
+|---|---:|---:|---|---|
+| 基准 | 年化 ARR 到 2027-06 达 $3.5bn-$4.4bn；实际确认收入 $2.0bn-$3.0bn | $2.5bn-$3.7bn（含 Bitcoin $0.35bn-$0.65bn） | TTM revenue $757m 基础上 +230% 至 +390% | Microsoft 大部分上线，NVIDIA early ramp，BC/Childress 多客户 utilization 中高 |
+| 乐观 | ARR $5.5bn-$7.0bn；确认收入 $3.5bn-$5.0bn | $4.2bn-$6.0bn | +450% 至 +690% | 200MW Microsoft 满产，60MW NVIDIA 按时，额外 200-400MW 已签/部分计费 |
+| 极度乐观 | ARR $8bn-$12bn；确认收入 $5.0bn-$8.0bn | $6bn-$9bn+ | +690% 至 +1,090% | 1GW 级客户和融资连续落地，GPU/电力设备/液冷无重大延误，AI GPU 租赁价格坚挺 |
+
+基准情景已经非常高增长，但并不等于低风险。原因是 IREN 的当前已确认 AI Cloud 收入只有 $33.6m/季，而估值隐含它必须把 $3bn+ ARR 目标按期转成 revenue。未来一年最应该跟踪的不是新闻标题，而是：Horizon 1-4 每 50MW block 的通电日期、GPU 到货和验收、deferred revenue 变化、accounts receivable 天数、capex per MW、AI Cloud cost of revenue、utilization、是否新增同等质量 offtake。
+
+## 9. 竞争格局、技术路线、替代方案和客户替换成本
+
+### 9.1 主要竞争对手
+
+| 类型 | 代表公司 | 与 IREN 的竞争点 | IREN 相对优势 | IREN 劣势 |
+|---|---|---|---|---|
+| Hyperscaler 自建 | Microsoft、AWS、Google、Meta、Oracle | 自建 AI 数据中心和 GPU cluster | IREN 能帮助 hyperscaler 更快获得增量 capacity，绕过部分自建周期 | hyperscaler 可内生替代，长期议价强 |
+| NeoCloud / GPU Cloud | CoreWeave、Nebius、Lambda、Crusoe、Fluidstack、Together AI 等 | GPU 供给、融资、客户、云软件、价格 | Microsoft + NVIDIA 双 anchor、5GW power pipeline、Dell/GPU financing | CoreWeave 等已有更长 AI cloud 运营历史和更成熟客户生态 |
+| Bitcoin miners 转 AI | Core Scientific、TeraWulf、Cipher Mining、Hut 8、Applied Digital、Bitfarms、HIVE | 电力场址转 HPC / AI colocation | IREN 已签 $9.7bn Microsoft 和 $3.4bn NVIDIA，订单质量领先多数 miner peers | 同业也拥有低成本电力，若拿到 hyperscaler 长约可快速追赶 |
+| Data center REIT / colo | Equinix、Digital Realty、QTS、Switch、Aligned、Vantage 等 | powered shell、colocation、超大规模数据中心 | IREN 更偏高密度 AI rack 和 GPU cloud 一体化，建设速度/电力场址更激进 | REIT / colo 的信用、客户、资本成本、运营成熟度更强 |
+| OEM / 集成商 | Dell、Supermicro、HPE、Lenovo | 部分客户可能直接买系统自建 | IREN 与 Dell 合作，不直接正面替代 | OEM 不提供电力/MW，但可能与其他运营商绑定 |
+
+### 9.2 技术路线是否主流
+
+IREN 押注的主流路线是：NVIDIA Blackwell / GB300 + liquid-cooled 或 high-density air-cooled AI racks + hyperscaler / enterprise long-term reservation + vertically integrated data center operations。这条路线在 2026 年是 AI 训练和高端推理的主流。行业资料显示，B200/GB200、B300/GB300、Rubin / Vera Rubin 会继续推高 rack power density，直接液冷、800G/1.6T 网络、48V/800VDC 讨论、eHouse、变电站和 commissioning 将成为关键瓶颈。
+
+IREN 的技术路线不是小众路线，风险不在“方向错”，而在“执行难”。高密度 AI cluster 的每个环节都可能卡住：GB300 供给、液冷 CDU 和现场水路、变压器/开关柜、UPS / generator redundancy、网络低延迟和拥塞控制、客户验收、GPU fleet management、SOC/security/compliance、以及高利用率调度。
+
+### 9.3 替代方案和风险
+
+| 风险 / 替代 | 影响 |
+|---|---|
+| Hyperscaler 自建恢复速度快于预期 | Microsoft / NVIDIA 对 IREN 后续追加订单减少，IREN 从高溢价外包变成周期性承包商 |
+| GPU cloud rental pricing 下行 | $1.8bn estimated ARR from multi-customer fleet 最敏感；长约保护 Microsoft/NVIDIA，但新增客户毛利承压 |
+| GPU 技术换代 / 残值风险 | GB300/B300 若被 Rubin 快速替代，未签长约或短租 fleet 残值压力大 |
+| 电力设备和液冷延误 | MW 通电延迟会直接推迟收入确认和 debt service coverage |
+| 客户集中 | Microsoft + NVIDIA 合同是信用背书，也是集中度风险；任何验收/争议都会影响融资市场信心 |
+| 资本结构过重 | 现金多但 capex 更大；convertibles、GPU financing、equity ATM 都可能稀释或压缩权益回报 |
+| 同业复制 power-to-cloud 模式 | TeraWulf、Cipher、Core Scientific、Crusoe、CoreWeave/Nebius 可能拿到类似长约，压缩 IREN 溢价 |
+| ASIC / inference 替代 | 长期若 custom ASIC、TPU、Trainium 或更高效推理芯片降低通用 NVIDIA GPU 紧缺，GPU cloud 价格下降 |
+
+### 9.4 客户替换成本
+
+Microsoft 这类 200MW GB300 项目的替换成本很高。不是简单“换一家 GPU 租赁商”，而是要重新确认 GPU allocation、Dell/NVIDIA 系统交付、液冷数据中心、200MW 电力、网络连接、SLA、安全和 financing。若 IREN 能按期交付，合同期内客户替换成本高，IREN 的议价能力中高。
+
+NVIDIA 60MW managed cloud 的替换成本也高，但 NVIDIA 对架构和供应链掌控更强，因此 IREN 的议价力来自执行速度和已建场址，而不是对 NVIDIA 的技术锁定。
+
+多客户 B300 cloud 的替换成本中等。模型公司和 AI-native 客户可以在 CoreWeave、Nebius、Lambda、Fluidstack、自建云和 hyperscaler 之间切换，实际粘性来自 reservation price、可用集群规模、网络性能、数据迁移、support、SLA 和软件栈，而不是硬件独占。
+
+## 10. 跟踪清单
+
+| 跟踪项 | 触发信号 | 判断 |
+|---|---|---|
+| Horizon 1-4 逐 block 通电 | 每 50MW data center 的 energization / commissioning / customer acceptance | 最重要，直接决定 Microsoft revenue timing |
+| AI Cloud revenue vs deferred revenue | AI Cloud 单季收入、deferred revenue、accounts receivable | 判断订单是否真实转收入、是否有回款压力 |
+| AI Cloud cost of revenue | GPU cloud direct margin 是否维持 80%+ before D&A | 若 direct margin 下降，可能是电力/运维/利用率/价格问题 |
+| Capex per MW / per GPU | Dell purchase、facility capex、financing cost | 判断 $9.7m-$11.3m/MW-year 是否足以覆盖资本成本 |
+| 新增长约质量 | 是否是 Microsoft/NVIDIA 类 hyperscaler/vendor offtake，而非短租 | 决定估值能否继续从目标 ARR 前移 |
+| Debt service coverage | GPU financing 利率、现金流 sweep、合同现金流保障 | 高杠杆模型的生死线 |
+| Bitcoin capacity conversion | ASIC 退役速度和 Bitcoin revenue 下降 | 判断 AI ramp 前现金流缺口 |
+| 设备 lead time | 变压器、switchgear、CDU、800G optics、GB300/B300 delivery | 行业瓶颈是否影响 IREN |
+
+## 11. 资料来源
+
+### 公司官方 / SEC / 交易数据
+
+- IREN Q3 FY26 business update and results, 2026-05-07: https://www.globenewswire.com/news-release/2026/05/07/3290719/0/en/iren-business-update-and-q3-fy26-results.html
+- IREN Q2 FY26 results, 2026-02-05: https://www.globenewswire.com/news-release/2026/02/05/3233417/0/en/iren-reports-q2-fy26-results.html
+- IREN Q1 FY26 results, 2025-11-06: https://www.globenewswire.com/news-release/2025/11/06/3183028/0/en/iren-reports-q1-fy26-results.html
+- IREN FY25 results, 2025-08-28: https://irisenergy.gcs-web.com/news-releases/news-release-details/iren-reports-full-year-fy25-results
+- IREN Q3 FY25 results, 2025-05-14: https://irisenergy.gcs-web.com/news-releases/news-release-details/iren-reports-q3-fy25-results
+- IREN secures $9.7bn Microsoft AI Cloud contract, 2025-11-03: https://www.globenewswire.com/news-release/2025/11/03/3178993/0/en/iren-secures-9-7bn-ai-cloud-contract-with-microsoft.html
+- IREN expands AI Cloud capacity to 150,000 GPUs, 2026-03-04: https://www.globenewswire.com/news-release/2026/03/04/3249758/0/en/iren-expands-ai-cloud-capacity-to-150-000-gpus.html
+- IREN secures $3.4bn AI Cloud contract with NVIDIA, 2026-05-07: https://www.globenewswire.com/news-release/2026/05/07/3290760/0/en/iren-secures-3-4bn-ai-cloud-contract-with-nvidia.html
+- NVIDIA and IREN 5GW strategic partnership, 2026-05-07: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-IREN-Announce-Strategic-Partnership-to-Accelerate-Deployment-of-up-to-5-Gigawatts-of-AI-Infrastructure/default.aspx
+- IREN targets $4.4bn ARR with Dell / Blackwell deployment, 2026-05-26: https://www.globenewswire.com/news-release/2026/05/26/3301524/0/en/iren-targets-4-4bn-in-arr-with-blackwell-deployment-at-childress.html
+- IREN closes $3.65bn investment-grade GPU financing, 2026-06-01: https://www.globenewswire.com/news-release/2026/06/01/3304211/0/en/iren-closes-3-65bn-investment-grade-gpu-financing.html
+- IREN expands to Europe via Nostrum Group, 2026-05-07: https://www.globenewswire.com/news-release/2026/05/07/3290678/0/en/iren-expands-ai-cloud-platform-to-europe-with-acquisition-of-nostrum-group.html
+- IREN South Australia 800MW data center campus, 2026-06-03: https://www.globenewswire.com/news-release/2026/06/03/3305925/0/en/iren-announces-first-australian-data-center-campus-800mw-in-south-australia.html
+- Yahoo Finance / StockAnalysis / Intellectia valuation snapshots, 2026-06-10 至 2026-06-12，用于 forward PE / PS 交叉核对。
+
+### 项目内行业资料
+
+- `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+

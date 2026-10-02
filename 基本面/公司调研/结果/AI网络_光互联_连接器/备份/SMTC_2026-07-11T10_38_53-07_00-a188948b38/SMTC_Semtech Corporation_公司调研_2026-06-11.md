@@ -1,0 +1,378 @@
+# SMTC_Semtech Corporation（Semtech）公司调研_2026-06-11
+
+> 报告日期：2026-06-11（America/Los_Angeles）。  
+> 资料边界：本报告只结合 `基本面/行业调研/AI网络_光互联_铜互联/` 下的产业资料与联网检索；未读取、引用或继承 `特征量化/`。  
+> 重要口径：公司披露的硬数据以季度财报、IR 新闻稿和电话会为准；公司未披露单产品收入、backlog 金额、客户项目金额和取消率，相关部分用“披露值 / 推算值 / 情景值”分层标注。
+
+## 0. 核心结论
+
+Semtech Corporation（SMTC）正在被市场从“模拟混合信号 + LoRa/IoT 公司”重新定价为“AI 数据中心互联链条里的光电模拟前端 + 有源铜缆信号完整性 + InP 光子器件平台”。这不是纯概念：FY2026 数据中心收入已达约 $223M，同比增长 58%；Q1 FY2027 数据中心收入 $71.6M，同比增长 39%、环比增长 14%；公司对 Q2 FY2027 给出的数据中心目标是环比再增长 35%、同比增长 85%，即单季约 $96.7M，占 Q2 指引总收入中值 $328M 的约 29.5%。
+
+投资人现在买 SMTC 的主线不是传统 LoRa 或保护器件，而是三条 AI 基建互联斜率：1）800G FiberEdge TIA/driver 在现有 AI 光模块中放量；2）1.6T FiberEdge、224G linear TIA/driver、LPO/LRO/TRO 从设计赢单进入收入；3）CopperEdge 1.6T ACC / onboard linear equalizer 与 HieFo InP gain chip / DFB / CW laser 把公司从单点模拟器件扩展到更完整的光电链条。风险也很集中：估值已高，TTM GAAP P/E 不可用，按 TTM non-GAAP EPS 约 $1.84 计算的调整后 P/E 约 86x；当前股价主要在定价 FY2027 下半年和 FY2028 的数据中心订单兑现。
+
+本报告的基准判断：SMTC 的数据中心收入未来 12 个月有能力从 FY2026 的 $223M 提升到 $430M-$500M 区间；乐观情形 $520M-$620M；极度乐观情形需要 1.6T optical、CopperEdge ACC 和 HieFo InP 产能同时兑现，可能触及 $700M 级别。但从公司总收入角度，AI 数据中心高增速会被 IoT Systems、cellular module divestiture、传统工业/消费周期部分稀释。
+
+## 1. 公司整体业务、定位和三年变化
+
+### 1.1 业务结构和产业链位置
+
+Semtech 是高性能模拟、混合信号、IoT 系统和云连接方案供应商。FY2027 Q1 公司按三个报告分部披露：
+
+| 分部 | Q1 FY2027 收入 | 收入占比 | 分部毛利率 | 产业链位置 | AI 数据中心相关性 |
+|---|---:|---:|---:|---|---|
+| Signal Integrity | $102.0M | 35.1% | 62.7% | 光模块和铜缆里的 TIA、driver、CDR/redriver、linear equalizer、视频传输等信号完整性 IC | 最高；FiberEdge、DirectEdge、Tri-Edge、CopperEdge、HieFo 均在此分部 |
+| Analog Mixed Signal and Wireless | $100.8M | 34.6% | 58.7% | LoRa、无线 RF、保护器件、传感、部分模拟混合信号 | 中等；LoRa/edge AI 是可选项，但不是 AI 数据中心主线 |
+| IoT Systems and Connectivity | $88.3M | 30.3% | 35.8% | Sierra Wireless 带来的 cellular IoT modules、routers、connectivity services | 低；公司正推进 cellular module 业务剥离，更多是组合优化 |
+
+在 AI 基建产业链里，SMTC 不卖 GPU、交换 ASIC 或完整光模块，而是卖隐藏在光模块和有源铜缆里的高价值模拟/光电器件：
+
+- 光模块接收端：TIA（transimpedance amplifier），决定光电探测器弱电流信号放大的噪声、线性度、带宽。
+- 光模块发送端：laser/modulator driver，驱动 EML、MZM、SiPh、InP、TFLN 等调制器。
+- 线性光学：224G/lane TIA + MZM driver 支持 LPO、LRO、XPO、NPO、CPO，减少或弱化光模块 DSP，目标是低功耗、低延迟。
+- 铜缆互联：CopperEdge redriver / linear equalizer 支持 1.6T ACC、active backplane、onboard integration，用于 AI rack 内/近 rack 短距高速互联。
+- 光子器件：HieFo 带来 InP gain chip、DFB laser、CW laser 能力，使 Semtech 可把 TIA/driver 与激光器/增益芯片做协同优化。
+
+### 1.2 投资人心中的公司画像
+
+2023-2024 年，SMTC 在投资人心中更像“收购 Sierra Wireless 后负债较重、整合复杂、IoT 周期承压的模拟半导体公司”。2025-2026 年，市场画像明显变化：
+
+- 从 IoT 整合故事转为 AI 数据中心互联故事。Q1 FY2027 电话会中，公司明确把增长重心放在 data center、LoRa、portfolio optimization，其中 data center 是斜率最高的业务。
+- 从单一 FiberEdge 800G TIA 供应商，升级为 800G/1.6T optical + linear optics + active copper + InP photonics 的组合平台。
+- 从“周期复苏股”转为“高估值 AI 互联 beta”。截至 2026-06-11 联网行情抓取，SMTC 盘中股价约 $158.44，市值约 $15.53B；用 TTM revenue $1.09B 计算 P/S 约 14.2x，估值已明显高于传统模拟半导体恢复期公司。
+
+### 1.3 最近三年重大业务变动、转型和收购
+
+| 日期 | 事件 | 金额/规模 | 业务影响 | 对本报告判断的影响 |
+|---|---:|---:|---|---|
+| 2023-01-12 | 完成收购 Sierra Wireless | 企业价值约 $1.2B | 把 Semtech 从 LoRa/模拟芯片扩展到 cellular IoT modules、routers、connectivity/cloud services；收入规模接近翻倍，也带来高负债和整合压力 | 这是公司过去三年资产负债表和业务复杂度上升的主因；现在 cellular module divestiture 是反向简化 |
+| 2024-2025 | 债务削减、整合和组合优化 | FY2026 利息费用显著下降 | 公司把现金流从还债/整合转向 R&D、产能扩张和 AI 数据中心项目 | 财务健康度改善，给 HieFo 和 1.6T R&D 腾出空间 |
+| 2025-11 左右 | 收购/整合 Qorvo force sensing 业务 | 未披露大额金额 | 加强 PerSe / Smart Sensing，面向手机、汽车、工业 HMI | 不是 AI 数据中心主线，报告中列为非核心增长项 |
+| 2026-03-03 | 收购 HieFo Corporation | 约 $34M cash；Q1 FY2027 净现金对价约 $29.2M | 增加 InP gain chip、DFB laser、CW laser 和 Alhambra 产能，进入更上游的光子器件 | 对 1.6T、3.2T、coherent、CPO/NPO/OCI 是战略拼图；管理层称需求约为当前产能 3 倍 |
+| 2026-03-12/16 | OFC 2026 展示 1.6T ACC、3.2T ACC、224G TIA/driver、1.6T optical demos | GN8234、GN8304、GN1834L/GN1834DL/GN1838DL、GN1877、GN1887 | 从 800G TIA 放量扩展到 224G/lane linear optics 与 active copper | 是 FY2027 下半年收入加速的产品证据 |
+| 2026-05-26 | Q1 FY2027 电话会披露 cellular module divestiture 已在 final stages | 未披露买方/金额 | 降低低毛利 IoT Systems 业务复杂度，聚焦 data center / LoRa | 若顺利完成，毛利率和投资人叙事更干净；但收入基数会少一块 |
+
+### 1.4 最新股价、估值、收入增速和利润率
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | $158.44 | 2026-06-11 联网行情抓取，盘中/延迟 | 52 周区间约 $22.33-$168.29，波动极高 |
+| 市值 | $15.53B | 2026-06-11 联网行情抓取 | 按当前行情源 |
+| TTM GAAP P/E | N/M | 2026-06-11，本报告估算 | TTM GAAP 净利润受 Q2/Q4 FY2026 亏损、impairment、收购摊销影响，不适合用简单 P/E |
+| TTM non-GAAP P/E | 约 86.1x | 股价 $158.44 / 最近四季 non-GAAP EPS $1.84 | Q2 FY2026 $0.41 + Q3 $0.48 + Q4 $0.44 + Q1 FY2027 $0.51 |
+| Forward P/E | 约 53x-56x | StockStory 2026-06-10 报 NTM P/E 52.9x（股价 $150.65）；按 $158.44 平移约 55.6x | 共识 EPS 口径会随 Q2 指引上修而变 |
+| TTM P/S | 约 14.2x | 市值 $15.53B / TTM 收入 $1.090B | TTM 收入：Q2 FY2026-Q1 FY2027 |
+| Forward P/S | 约 11.8x | 市值 $15.53B / Q2 FY2027 指引中值年化 $1.312B | 简单年化，不是公司全年指引 |
+| 最新收入增速 | Q1 FY2027 +16% YoY；Q2 FY2027 指引 +27% YoY | Q1 截至 2026-04-26；Q2 指引发布 2026-05-26 | 增速核心来自 data center 与 LoRa |
+| 最新 GAAP 毛利率 | 52.0% | Q1 FY2027 | non-GAAP adjusted gross margin 53.0% |
+| 最新 GAAP 净利率 | 9.1% | Q1 FY2027，$26.6M / $291.0M | adjusted net margin 约 17.0% |
+| 最新 adjusted EBITDA margin | 22.8% | Q1 FY2027 | Q2 指引中值 24.2% |
+
+### 1.5 资产负债表和财务健康
+
+Q1 FY2027 末，Semtech 现金及等价物约 $163.3M，债务本金约 $503M，净债务约 $340M；StockStory 用最近 12 个月 EBITDA $243M 估算 net debt / EBITDA 约 1.4x。相比 Sierra Wireless 收购后的高杠杆期，公司财务健康已明显恢复：Q1 FY2027 经营现金流 $36.2M，自由现金流 $28.0M；Q4 FY2026 自由现金流 $59.1M。公司 Q1 仍为净利息收入/接近零净利息成本状态，说明 2024-2025 年债务重组/削减效果已经体现在损益表。
+
+健康程度评估：中等偏健康。正面是净杠杆低于 2x、自由现金流转正、利息负担显著下降、数据中心高毛利组合上升；负面是 goodwill/intangible impairment 仍在出现，Sierra Wireless 遗留业务毛利率低，HieFo 扩产需要资本和执行，且当前估值容错率低。
+
+## 2. 最近五个财报季度复盘
+
+### 2.1 财报核心数字
+
+| 财报季度 | 截止日/发布日 | 总收入/YoY | GAAP GM / Adj GM | GAAP EPS / Adj EPS | Adj EBITDA / Margin | 数据中心收入/占比 | 订单、交期、backlog、取消率线索 |
+|---|---|---:|---:|---:|---:|---:|---|
+| Q1 FY2027 | 截止 2026-04-26；发布 2026-05-26 | $291.0M / +16% | 52.0% / 53.0% | $0.27 / $0.51 | $66.4M / 22.8% | $71.6M / 24.6%；+14% QoQ、+39% YoY | 披露“very strong bookings and backlog”；800G FiberEdge 为主；1.6T optical 设计赢单支持 H2 ramp；CopperEdge 1.6T Q1 开始向 cable partners 出货；Q2 data center 目标 +35% QoQ |
+| Q4 FY2026 | 截止 2026-01-25；发布 2026-03-16 | $274.4M / +9% | 50.4% / 51.6% | -$0.32 / $0.44 | $57.4M / 20.9% | 约 $63.0M / 23.0%；+12% QoQ、+26% YoY | LPO transceivers 开始产生收入；FY2026 data center $223M、+58%；管理层当时称 FY2027 data center growth >50% |
+| Q3 FY2026 | 截止 2025-10-26；发布 2025-11-24 | $267.0M / +13% | 51.9% / 53.0% | -$0.03 / $0.48 | $62.7M / 23.5% | $56.2M / 21.0%；+8% QoQ、+30% YoY | 数据中心由 FiberEdge TIA 需求拉动，净销售创新高；LoRa 也强；未披露 backlog 金额 |
+| Q2 FY2026 | 截止 2025-07-27；发布 2025-08-25 | $257.6M / +20% | 52.1% / 53.2% | -$0.31 / $0.41 | $56.5M / 21.9% | 约 $52.1M / 20.2%；约 +92% YoY、约 +1% QoQ | 数据中心强但 Q2 到 Q3 增速仍温和；公司开始强调客户 engagement、运营纪律和债务削减 |
+| Q1 FY2026 | 截止 2025-04-27；发布 2025-05-27 | $251.1M / +22% | 52.3% / 53.5% | $0.22 / $0.38 | $55.4M / 22.1% | $51.6M / 20.6%；+158% YoY | 800G optical ramp 是数据中心收入跃升主因；之后 FY2026 全年 data center 达 $223M |
+
+### 2.2 分部收入、增速、毛利率和 AI 数据中心占比
+
+说明：Q1 FY2027、Q4 FY2026、Q3 FY2026、Q1 FY2026 分部数据来自公司披露表；Q2 FY2026 分部数据用 FY2026 全年分部表扣除 Q1/Q3/Q4 推算，因公司 Q2 新闻稿未直接列示完整分部表，故标注为“推算”。
+
+| 财报季度 | Signal Integrity 收入/YoY/GM | Analog Mixed Signal & Wireless 收入/YoY/GM | IoT Systems & Connectivity 收入/YoY/GM | AI 数据中心收入占比 | 业务结构解读 |
+|---|---:|---:|---:|---:|---|
+| Q1 FY2027 | $102.0M / +38.8% / 62.7% | $100.8M / +11.2% / 58.7% | $88.3M / +1.5% / 35.8% | 24.6% | Signal Integrity 已超过 $100M，几乎全部增量来自 data center；IoT Systems 毛利率仍低 |
+| Q4 FY2026 | $90.7M / +25.1% / 67.4% | $93.7M / +9.7% / 56.2% | $89.9M / -3.4% / 31.6% | 23.0% | Signal Integrity 毛利率高但 Q4 有 impairment/IoT 拖累；LPO 开始贡献 |
+| Q3 FY2026 | $81.6M / +14.1% / 65.1% | $97.0M / 约 +17% / 58.0% | $88.3M / +7.0% / 36.6% | 21.0% | data center 与 LoRa 双驱动，adjusted EBITDA margin 达 23.5% |
+| Q2 FY2026（推算） | 约 $76.8M / +29.3% / 约 62.1% | 约 $92.1M / 约 +20%-27% / 约 59.3% | 约 $88.8M / 约 +5%-7% / 约 39.4% | 20.2% | Signal Integrity 增速最高；Q2 GAAP 亏损主要来自非经营性/收购相关项目 |
+| Q1 FY2026 | $73.5M / 约 +26% / 65.5% | $90.6M / 约 +10%-20% / 62.3% | $86.9M / 约 +20% / 34.4% | 20.6% | data center 从小基数高速增长，IoT Systems 收入恢复但毛利率低 |
+
+### 2.3 订单与交期判断
+
+公司没有披露 backlog 金额、book-to-bill、lead time、取消率或客户项目金额。可用线索如下：
+
+- Q1 FY2027 明确披露 bookings and backlog 强，且 1.6T optical design wins 支持 FY2027 下半年 module ramps。
+- Q2 FY2027 指引总收入 $328M，环比 Q1 增加 $37M；其中 data center 目标环比 +35%，约从 $71.6M 到 $96.7M，单季度增量约 $25M，说明数据中心是 Q2 指引上修的大头。
+- 管理层称当前 data center visibility 覆盖 FY2027 下半年到 FY2028 上半年；HieFo gain chip 聚合需求约为当前产能 3 倍，计划 2026 年底产能提升 3-4 倍，2027 年底再提升 3-4 倍。
+- Q1 电话会中提到部分 module supplier 的 socket 为 sole source，且 Semtech 支持过 forecast 外的 drop-in demand；这说明短期需求有超原计划特征，但也增加执行压力。
+- 取消率：未披露。根据 AI 光模块/ACC 的 qualification 特征，已进入 hyperscaler / GPU system / module maker ramp 的订单取消率通常低于一般消费电子，但仍可能受 800G 库存、1.6T 项目窗口、客户架构切换和 module maker share 变化影响。
+
+## 3. 最新 FY2027 Q1 指引、业务占比和产品拆解
+
+### 3.1 Q2 FY2027 指引
+
+| 指标 | Q2 FY2027 指引中值 | 相对 Q1 FY2027 | 关键含义 |
+|---|---:|---:|---|
+| 总收入 | $328.0M +/- $5M | +12.7% QoQ；+27% YoY | 强于正常季节性，主要由 data center 和 LoRa 拉动 |
+| Adj gross margin | 54.0% +/- 50 bps | +100 bps QoQ | 数据中心和 LoRa mix 改善 |
+| Total semiconductor products GM | 62.1% +/- 50 bps | +140 bps QoQ | 半导体产品分部毛利率优于 IoT Systems |
+| Adj operating income | $71.9M +/- $2.3M | +21% QoQ | 收入放量带来经营杠杆 |
+| Adj operating margin | 21.9% +/- 40 bps | +150 bps QoQ | 费用率被收入增长摊薄 |
+| Adj EPS | $0.61 +/- $0.02 | +20% QoQ | 共识上修的核心 |
+| Adj EBITDA | $79.2M +/- $2.3M | +19% QoQ | EBITDA margin 指引 24.2% |
+| Data center | 约 $96.7M（公司给 +35% QoQ 目标，本报告用 Q1 $71.6M 推算） | +35% QoQ；+85% YoY | 约占 Q2 指引收入 29.5%，已接近公司收入三成 |
+
+### 3.2 FY2027 Q1 业务收入占比
+
+| 口径 | 收入 | 占总收入 | 增长/变化 | 重点程度 |
+|---|---:|---:|---|---|
+| Infrastructure end market | $98.8M | 33.9% | +14% QoQ、+36% YoY | 高；其中 data center 是核心 |
+| Data center | $71.6M | 24.6% | +14% QoQ、+39% YoY | 最高；Q2 目标 +35% QoQ |
+| High-end consumer | $38.4M | 13.2% | 受季节和 TVS/PerSe 影响 | 中低；非 AI 主线 |
+| Industrial | $153.9M | 52.9% | LoRa 和 IoT Systems 是主要内容 | 中；LoRa 有恢复和 edge AI 可选项 |
+| LoRa-enabled sales | 约 $44.5M | 15.3% | Q2 目标 >15% QoQ | 中高；高毛利但不是 AI 数据中心 |
+| IoT Systems & Connectivity | $88.3M | 30.3% | -2% QoQ、+2% YoY | 低到中；cellular module divestiture 可能改变基数 |
+
+### 3.3 重点产品和型号
+
+| 产品/平台 | 代表型号/资产 | 对应业务 | 当前收入阶段 | 毛利率判断 | 销售增速判断 | AI 数据中心重要性 |
+|---|---|---|---|---|---|---|
+| 800G FiberEdge / DirectEdge optical IC | FiberEdge TIA、linear TIA、driver、Tri-Edge PAM4 CDR；本地行业资料列出 GN1832/GN1834/GN1836 TIA、GN1887/GN1878 driver | Signal Integrity / data center | 已放量；Q1 data center 的主体 | 高，接近/高于 Signal Integrity 60%+ | Q1 仍强，Q2 继续增长；但 800G 后续可能有 ASP 压力 | 最高；当前收入底座 |
+| 224G/lane linear optics IC | GN1834L、GN1834DL、GN1838DL TIA；GN1877、GN1887 MZM driver | 1.6T/3.2T LPO、LRO、XPO、NPO、CPO | 2026-03 发布，部分 available now；1.6T H2 ramp | 高；线性 TIA/driver 可保持高毛利，但 early ramp 良率/支持成本高 | 高；取决于 LPO/LRO 采用率 | 最高；决定 SMTC 能否从 800G 过渡到 1.6T/3.2T |
+| 1.6T FiberEdge FRO/LRO/LPO | 200G/lane TIA/driver、DSP design 相关配套 | 1.6T optical transceiver | Q2 FY2027 首次看到 1.6T optical transceiver support revenue，H2 加速 | 高；公司称 1.6T 组合对半导体产品毛利率和 SI 毛利率 accretive | 极高，小基数进入量产 | 最高；未来一年主要增量 |
+| CopperEdge ACC / active backplane | GN8234 1.6T redriver；GN8304 3.2T / 448G channel next-gen redriver | active copper cable、linear equalizer、onboard integration | Q1 开始向 cable partners 出货，用于美国 hyperscaler 部署；多个 hyperscaler/enterprise 评估 | 高；芯片毛利率可高于模块毛利率 | 高，但取决于 ACC MSA、客户拓展和线缆生态 | 高；scale-up / rack 内短距高速互联低功耗方案 |
+| HieFo InP photonics | InP gain chip、DFB laser、CW laser、C-band gain chip | coherent optical modules、IMDD links、CPO/NPO/OCI/CW laser | Q1 FY2027 首季纳入；需求约为当前产能 3x | 中高到高；扩产期毛利率短期承压，成熟后可高 | 极高，但受产能限制 | 高；把 SMTC 从电子前端扩展到光子器件 |
+| LoRa / LoRa Plus / Amazon Sidewalk | LoRa chipsets、LoRaWAN、multi-protocol LoRa Plus、Amazon Sidewalk | AMW / industrial IoT | Q1 约 $44.5M；Q2 目标 >15% QoQ | 高，AMW 分部 58.7% | 中高；库存周期后恢复 | 低到中；edge AI 可选项，不是 data center |
+
+### 3.4 跳过或低优先级产品
+
+以下业务在收入上可能不小，但与本报告要求的 AI 芯片/AI 数据中心主线相关性低，故只在财务健康和风险中保留：
+
+- Cellular IoT modules 和部分 router/module 业务：Sierra Wireless 资产，低毛利、组合复杂，公司正推进 divestiture。
+- AirLink RX400 / EX400 routers：有行业应用价值，但与 AI 数据中心互联无关。
+- TVS / circuit protection：消费/工业保护器件，可能贡献稳定现金流，但 AI 斜率低。
+- PerSe proximity / force sensing：高端消费和 HMI，非 AI 数据中心；收购 Qorvo force sensing 后有新品，但不是本报告重点。
+- BlueRiver professional AV、broadcast video、PON：技术上属于信号完整性/光通信邻近业务，但不是 AI cluster scale-out/scale-up 主线。
+
+## 4. 当前关键产品和业务评估
+
+### 4.1 当前收入贡献、增速、重要性和供需
+
+| 关键业务/产品 | 当前收入贡献（披露/推算） | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---:|---|---|---|---|---|
+| 800G FiberEdge optical IC | 推算 Q1 FY2027 约 $45M-$55M，占 data center $71.6M 的 60%-75%；披露称 Q1 data center 主要由 800G FRO/LPO 驱动 | data center +39% YoY；800G 仍是 Q2 主力 | 极高；800G 是现有 AI cluster scale-out 主流端口 | 高；2026 年仍在大规模部署 | 偏紧；模块厂和 hyperscaler 持续拉货 | 中高；部分 module supplier socket 可能 sole source，但 Broadcom/Marvell/MACOM/MaxLinear 竞争强 |
+| 1.6T FiberEdge / 224G linear optics | Q1 很小；Q2 开始贡献；H2 FY2027 加速。推算 Q2 $5M-$15M，H2 单季可达 $25M-$60M | 小基数高增 | 极高；1.6T 是下一代 AI 网络端口 | 极高；2026 是 design-in 和初始量产窗口 | 高；224G TIA/driver、module qualification、test capacity 均紧 | 高；若通过 major module makers qualification，切换成本高 |
+| CopperEdge ACC / onboard equalizer | Q1 early ramp，推算 $2M-$8M；Q2 支持 H2 cable demand，推算 $5M-$15M | 极高，小基数 | 高；rack 内/近 rack scale-up 低功耗短距互联 | 高；GB300/Rubin 时代 rack 功率和线缆复杂度上升 | 中高；MSA 尚在定型，客户评估广泛 | 中高；与 NVIDIA 224G SerDes 演示提升可信度，但 Credo/Astera/Marvell/MACOM 竞争强 |
+| HieFo InP gain chip / DFB / CW laser | Q1 首季纳入，推算低个位数百万到约 $10M；公司称需求约为产能 3x | 受产能限制，高潜在增速 | 高；coherent、CPO/NPO/OCI 和 1.6T/3.2T 光源能力 | 高；客户需求已超过供给 | 极高；需求约 3x capacity | 中高；InP 器件有工艺和客户认证壁垒，但 Coherent/Lumentum 等强 |
+| LoRa / LoRa Plus / Amazon Sidewalk | Q1 约 $44.5M；Q2 目标 >15% QoQ，约 $51M+ | 中高；库存后恢复 | 低到中；edge AI/IoT optionality | 中；不是 AI cluster 瓶颈 | 中；供给压力小于 data center | 中高；LoRa 生态强，但应用分散 |
+
+### 4.2 单产品收入交叉验证
+
+Q1 FY2027 data center 披露值是 $71.6M。管理层明确说 Q1 predominant revenue 是 800G FRO and LPO，Q1 也有 CopperEdge early ramp，HieFo 也计入 Signal Integrity / data center。因此本报告对 Q1 拆分采用以下约束：
+
+- 800G FiberEdge 必须是最大块，合理区间 $45M-$55M。
+- 1.6T optical Q1 尚未明显放量，Q2 才第一次看到支持 1.6T optical transceiver 的 FiberEdge revenue，Q1 估计低个位数百万。
+- CopperEdge Q1 已开始出货给 cable partners，但用于 H2 cable demand 的前置 ramp，估计 $2M-$8M。
+- HieFo Q1 首季纳入，且处于 ramp mode，估计低个位数百万到 $10M。
+- 剩余为其他 data center signal integrity、legacy optical、PON/mobile transport 等。
+
+Q2 FY2027 data center 目标约 $96.7M，较 Q1 增加约 $25M。增量应来自 800G 继续强、1.6T optical 首次收入、CopperEdge 扩大出货和 HieFo 产能爬坡，而不是单一产品。
+
+## 5. 未来一年产品收入贡献：基准、乐观、极度乐观
+
+### 5.1 未来 12 个月按产品的收入情景
+
+| 产品/业务 | 当前年化基础 | 基准：未来 12 个月收入贡献 | 乐观：未来 12 个月收入贡献 | 极度乐观：未来 12 个月收入贡献 | 核心假设 |
+|---|---:|---:|---:|---:|---|
+| Data center total | FY2026 $223M；Q1 FY2027 $71.6M；Q2 目标约 $96.7M | $430M-$500M，YoY +90%-125% | $520M-$620M，YoY +130%-180% | $650M-$750M，YoY +190%-235% | 基准已包含 Q2 35% QoQ 和 H2 加速；极度乐观要求 1.6T、CopperEdge、HieFo 同时顺利 |
+| 800G FiberEdge | Q1 推算 $45M-$55M | $210M-$260M | $260M-$320M | $320M-$380M | 800G 继续放量但 ASP 有压力；客户 share 稳定 |
+| 1.6T FiberEdge / 224G linear | Q1 很小；Q2 起量 | $80M-$130M | $150M-$230M | $260M-$350M | 1.6T FRO 先量产，LRO/LPO 在 H2 进入更多 hyperscaler/module maker |
+| CopperEdge ACC / onboard | Q1 推算 $2M-$8M | $35M-$70M | $80M-$140M | $160M-$240M | ACC MSA、美国 hyperscaler deployment、多个客户评估转设计赢单 |
+| HieFo InP photonics | Q1 低个位数百万到 $10M | $35M-$70M | $80M-$140M | $150M-$220M | 2026 年底产能 3-4x，客户需求接近/超过新增产能 |
+| LoRa | Q1 约 $44.5M | $200M-$230M | $240M-$280M | $300M+ | Q2 >15% QoQ 后维持高个位数/低双位数季度增长；Amazon Sidewalk/LoRa Plus 拉动 |
+
+### 5.2 情景指标矩阵
+
+| 产品/业务 | 情景 | 收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---|---:|---|---|---|---|
+| 800G FiberEdge | 基准 | +30%-60% | 极高 | 高 | 中高 | 中高 |
+| 800G FiberEdge | 乐观 | +60%-90% | 极高 | 高 | 高 | 中高 |
+| 800G FiberEdge | 极度乐观 | +90%-120% | 极高 | 高 | 高，但需避免 800G 库存修正 | 中 |
+| 1.6T FiberEdge / 224G linear | 基准 | 从低基数到 $80M+ | 极高 | 极高 | 高 | 高 |
+| 1.6T FiberEdge / 224G linear | 乐观 | $150M+ | 极高 | 极高 | 很高 | 高 |
+| 1.6T FiberEdge / 224G linear | 极度乐观 | $260M+ | 极高 | 极高 | 极高 | 很高，但受竞争和良率制约 |
+| CopperEdge | 基准 | 从早期 ramp 到 $35M+ | 高 | 高 | 中高 | 中高 |
+| CopperEdge | 乐观 | $80M+ | 高 | 高 | 高 | 中高 |
+| CopperEdge | 极度乐观 | $160M+ | 高 | 极高 | 高 | 高，若成为主客户标准配置 |
+| HieFo InP | 基准 | $35M+ | 高 | 高 | 很高 | 中高 |
+| HieFo InP | 乐观 | $80M+ | 高 | 高 | 极高 | 高 |
+| HieFo InP | 极度乐观 | $150M+ | 很高 | 极高 | 极高 | 高，但产能和客户认证是硬约束 |
+
+## 6. BOM、内容量、价格传导链和认证/采纳
+
+### 6.1 光模块 BOM 和 Semtech 内容量
+
+| 架构 | 典型 BOM 构成 | Semtech 可覆盖内容 | 每 optical port/module end 的 Semtech 内容量（本报告估算） | 价格传导链 |
+|---|---|---|---:|---|
+| 800G FRO pluggable | DSP/CDR、TIA、laser/modulator driver、EML/SiPh/InP/TFLN 光器件、PCB、connector、壳体、test | TIA、driver、CDR/Tri-Edge，部分 telemetry/link monitoring | $25-$90/module end；若含 CDR/retimer 可到 $40-$130 | hyperscaler/GPU OEM -> switch/NIC/module spec -> 光模块厂 -> Semtech IC |
+| 800G LPO/LRO | 取消或减少 module DSP；更依赖 host SerDes、linear TIA/driver、telemetry | linear TIA、linear driver、equalization/monitoring | $30-$100/module end | hyperscaler 低功耗需求 -> LPO/LRO module qualification -> TIA/driver socket |
+| 1.6T FRO | 8x200G 或相关 200G/lane 架构，DSP 仍在，TIA/driver 规格更高 | 200G/224G TIA、driver、CDR/retimer 配套 | $50-$150/module end | 1.6T switch ASIC/GPU fabric -> module maker design win -> high-speed IC allocation |
+| 1.6T LRO/LPO/TRO | 部分 retimed 或 linear，功耗低于全 DSP，系统调参更复杂 | GN1834L/GN1834DL/GN1838DL TIA，GN1877/GN1887 MZM driver | $60-$180/module end | hyperscaler architecture decision -> MSA/interop -> module qualification -> IC sole/dual source |
+| CPO/NPO/XPO/OCI | 光引擎靠近 switch/GPU package，短电长光或近封装光 | TIA/driver、linear front-end、CW/DFB/gain chip、laser-driver co-optimization | 单 module/engine 口径差异大；按 1.6T 等效 port $80-$250 | GPU/switch platform roadmap -> optical engine design -> co-design/IP lock-in |
+
+本地行业资料给出的 BOM 约束：LPO/LRO 中 TIA/driver 价值占比可高于传统 FRO，DSP/CDR/retimer 价值占比下降；200G/224G TIA+driver 是未来 12-24 个月的隐藏利润池，供给瓶颈集中在高线性 TIA/driver、200G/400G EML/EAM、InP wafer/laser、封装与测试。
+
+### 6.2 CopperEdge / ACC BOM 和内容量
+
+| 架构 | 典型 BOM 构成 | Semtech 内容 | 每 cable/link 内容量（估算） | 价格传导链 |
+|---|---|---|---:|---|
+| 800G/1.6T ACC | redriver/linear equalizer、cable assembly、connector、EEPROM/MCU、test/burn-in、firmware | GN8234 1.6T redriver、linear equalizer、未来 GN8304 3.2T redriver | $20-$80/link（双端合计，取决于速率、lane 数和是否多颗 IC） | hyperscaler/GPU system -> cable vendor -> active cable silicon supplier |
+| active backplane / onboard linear equalizer | PCB trace、connector、linear equalizer/redriver、thermal/mechanical design | CopperEdge linear equalizer IP | $10-$60/board link 或通道组合 | system board design -> signal integrity simulation -> socket qualification |
+| 3.2T / 448G channel ACC | 448G/channel redriver、下一代 cable/connector/test | GN8304 next-gen redriver | 早期样品，价格不稳定；等效 $60-$160/link | 2027/2028 架构预研 -> MSA -> early qualification |
+
+本地 AEC/DAC 行业资料显示，AEC/ACC 硅片毛利率通常明显高于 cable assembly 毛利率；在 1.6T/224G 时代，retimer/redriver/linear silicon、低 skew twinax、高密连接器和测试认证是主要瓶颈。Semtech 的优势是 redriver/linear equalizer 与 Broadcom/NVIDIA 等高质量 SerDes 互补，而不是替代 SerDes。
+
+### 6.3 每 rack / 每 GPU / 每 MW 内容量估算
+
+这些不是公司披露值，而是本报告为评估 AI 基建内容量建立的工程估算。
+
+| 单位 | 假设 | Optical IC 内容量 | CopperEdge 内容量 | 说明 |
+|---|---|---:|---:|---|
+| 每 GPU | 以 72-GPU rack、scale-out optical module ends 分摊 16-64/rack | 约 $6-$140/GPU | 约 $4-$80/GPU | 取决于每 GPU 分摊多少 scale-out port、是否使用 ACC scale-up |
+| 每 rack | 约 72 GPU、100kW-140kW/rack；分摊 16-64 个 optical module ends | 约 $0.4k-$10k/rack | 约 $0.3k-$5.8k/rack | 只计 Semtech IC/光子器件，不计完整模块/线缆 |
+| 每 MW IT load | 约 7-10 个 100kW-140kW rack；约 500-720 GPU/MW | 约 $3k-$100k/MW | 约 $2k-$60k/MW | 端口密度、网络 oversubscription、spine/leaf 分摊差异很大 |
+| 每 1.6T optical port/module end | 1 个模块端，8x200G 或类似 lane 配置 | $50-$180 | 不适用 | TIA/driver/CDR/HieFo 是否同时在 BOM 中决定上限 |
+| 每 1.6T ACC link | 双端 active cable | 不适用 | $20-$80 | 若主客户高密度采用，rack 内容量可快速上升 |
+
+结论：SMTC 的 AI 内容量不是每 GPU 数百美元级别，而是每 optical port / active cable link 数十到一百多美元级别。它的投资弹性来自端口数、速率升级、线性化后 TIA/driver 价值占比提升、以及在多个 module maker/hyperscaler socket 中同时复制，而不是单机 BOM 高。
+
+### 6.4 当前产能能力、采纳和认证
+
+| 产品 | 当前产能能力（美元计） | 供应链采纳 | 认证/标准阶段 | 约束 |
+|---|---:|---|---|---|
+| 800G FiberEdge | 用 Q1/Q2 data center run-rate 看，已支撑 $250M-$350M 年化 data center 基础，其中 800G 是主体 | 多家 established/emerging module suppliers 已 qualification；部分 socket sole source | 已量产，支持 FRO/LPO | 800G ASP、module share、客户库存 |
+| 1.6T FiberEdge / 224G linear | 当前小；H2 取决于 module ramp。公司层面 Q2 data center 年化接近 $390M | major optical module makers 的 1.6T transceiver design wins；LRO/LPO 正被 hyperscaler 评估 | CEI-224G-Linear、LPO-MSA compliant；GN1834L/GN1834DL/GN1887 available，GN1838DL/GN1877 2026-04 release | 224G/lane 良率、测试、系统级 interop |
+| CopperEdge ACC | 当前低；已开始出货 1.6T IC 给 cable partners | Q1 为美国 hyperscaler deployment 出货；多个 hyperscaler/enterprise 评估 | ACC MSA 仍在 common denominator/specification 形成；OFC 展示 GN8234 live traffic to NVIDIA 224G SerDes | MSA、线缆生态、客户由评估转量产 |
+| HieFo InP | 当前需求约 3x 产能；公司计划 2026 年底产能 +3-4x，2027 年底再 +3-4x | 既有 gain chip 客户基础 + Semtech 收购后新增 inbound demand | CFIUS non-objection；coherent/tunable laser/IMDD/CPO/NPO 相关客户评估 | clean room、设备、良率、客户资格认证 |
+
+## 7. 未来一年产能、采纳和认证情景
+
+| 产品 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| 800G FiberEdge | 维持 $250M-$300M 年化出货能力，module makers 扩大 dual/sole source socket；毛利率保持 60%+ | 800G AI cluster 需求继续强，年化能力 $320M+；部分客户从 backup source 变主供 | 800G 与 1.6T 叠加而非替代，短期供给紧，价格压力被量抵消 |
+| 1.6T FiberEdge / 224G linear | H2 FY2027 通过主要 module maker certification，年化能力 $100M-$180M | 1.6T LRO/LPO 在第一层 scale-out fabric 采用率提升，年化能力 $250M+ | 多家 hyperscaler 把 LRO/LPO/XPO 纳入标准平台，年化能力 $350M+ |
+| CopperEdge ACC | ACC MSA 推进，单一美国 hyperscaler 项目量产，年化能力 $50M-$90M | 多个 hyperscaler/enterprise 评估转 design win，年化能力 $120M-$180M | 1.6T ACC 成为 AI rack 内短距互联主流之一，年化能力 $250M+ |
+| HieFo InP | 2026 年底产能 +3-4x 部分释放，年化收入能力 $60M-$100M | 新增 clean room/shift/equipment 顺利，coherent/CW laser 客户快速拉货，年化 $150M+ | 2027 年底第二轮 +3-4x 产能被提前锁定，年化 $220M+ |
+
+认证阶段判断：800G 已进入量产认证；1.6T FRO 是当前量产初期，1.6T LRO/LPO 是客户评估/设计导入到部分项目早期量产；CopperEdge ACC 是美国 hyperscaler 部署 + 多客户 evaluation，MSA 可能成为后续 adoption catalyst；HieFo 是已有客户基础加新客户认证/产能扩张并行。
+
+## 8. 基于订单积压和供给的未来一年增长预测
+
+### 8.1 披露订单线索
+
+Semtech 没有披露 backlog 金额，但披露了足够强的方向性线索：
+
+- Q1 FY2027：record quarterly revenue，very strong bookings and backlog。
+- 1.6T optical：major optical module makers design wins，支持 H2 FY2027 module ramps。
+- CopperEdge：Q1 已向 cable partners 出货 1.6T IC，用于美国 hyperscaler deployment；多个 hyperscaler/enterprise customers 评估。
+- HieFo：gain chip 聚合需求约为当前 capacity 的 3x，2026 年底计划 capacity +3-4x。
+- 可见度：管理层称 visibility/backlog/bookings 可看至 FY2027 下半年和 FY2028 上半年。
+
+### 8.2 公司未来一年业务增速情景
+
+| 口径 | 总收入未来 12 个月 | 总收入增速 | Data center 收入 | Data center 增速 | 约束 |
+|---|---:|---:|---:|---:|---|
+| 基准 | $1.35B-$1.45B | +24%-33% vs TTM $1.09B | $430M-$500M | +90%-125% vs FY2026 $223M | 800G 持续，1.6T/CopperEdge/HieFo H2 加速但不爆发 |
+| 乐观 | $1.50B-$1.65B | +38%-51% | $520M-$620M | +130%-180% | Q2 +35% data center 后 H2 单季继续环比增长，LoRa 也强 |
+| 极度乐观 | $1.70B-$1.90B | +56%-74% | $650M-$750M | +190%-235% | 1.6T optical、ACC、HieFo 产能同时兑现；cellular divestiture 不严重压低收入基数 |
+
+取消率和交付窗口推断：
+
+- 交付窗口：800G 当前季度到未来 2 个季度最强；1.6T FiberEdge/CopperEdge 从 Q2 FY2027 起进入 H2 ramp；HieFo 产能扩张从 2026 年底开始形成收入能力。
+- 取消率：AI 光模块和 hyperscaler design win 的取消率通常不高，但项目切换/推迟会体现为 ramp slope 下修。最大风险不是订单突然归零，而是 1.6T / ACC 的认证和客户架构窗口后移。
+- 供给：HieFo 最明确处于需求大于供给；FiberEdge 供给紧张体现在客户 drop-in demand 和 lead-time 内供货；CopperEdge 的限制更偏客户标准化和生态，而不是单纯芯片产能。
+
+## 9. 竞争格局、替代方案和客户替换成本
+
+### 9.1 竞争对手地图
+
+| 领域 | SMTC 位置 | 主要竞争对手 | 竞争焦点 |
+|---|---|---|---|
+| 800G/1.6T optical TIA/driver | 强，尤其 FiberEdge TIA 和 224G linear TIA/driver | MACOM、MaxLinear、Broadcom、Marvell、Credo、Cisco Acacia、Coherent/Lumentum 部分垂直整合能力 | 噪声、线性度、功耗、客户支持、module maker qualification、供货能力 |
+| DSP/CDR/retimer | 有 Tri-Edge/PAM4 CDR 和 signal integrity，但不是 DSP 最大玩家 | Broadcom、Marvell、MaxLinear、Credo、MACOM | DSP 功耗与性能、retimed vs linear architecture |
+| LPO/LRO/TRO/XPO | 受益于 DSP 弱化，TIA/driver 价值上升 | MACOM、MaxLinear、Credo、Broadcom/Marvell 生态 | 线性链路稳定性、host SerDes 质量、MSA/telemetry/interop |
+| ACC/AEC active copper silicon | CopperEdge 进入 early deployment | Credo、Astera Labs、Marvell、Broadcom、MACOM、Parade/谱瑞等高速互联芯片公司 | power、latency、reach、link margin、MSA、线缆厂生态 |
+| InP gain chip / laser | HieFo 加强垂直能力 | Coherent、Lumentum、Emcore 资产相关竞争、三菱电机、住友、Broadcom/MACOM 光子生态 | InP 工艺、良率、功率/温度性能、客户认证、美国本土供应 |
+| LoRa/IoT | LoRa 生态核心 IP 方 | Wi-SUN、NB-IoT/LTE-M、BLE、proprietary sub-GHz、cellular module vendors | 生态、功耗、覆盖、运营商/标准、应用碎片化 |
+
+### 9.2 新技术是否是未来主流
+
+800G FRO 是现在的主流收入；1.6T FRO 是 2026-2027 放量确定性最高的下一代；LPO/LRO/TRO 是功耗压力下的重要方向，但不会一夜之间替代所有 DSP-based modules。更现实的路径是：高端 AI scale-out 在 2026 年继续 800G/1.6T FRO 和部分 LPO/LRO 并行，2027 年 LRO/TRO/LPO 在短距、第一层 fabric 和特定 hyperscaler 架构中提升渗透率。
+
+CopperEdge ACC 的主流化取决于 AI rack 内互联距离、功耗预算和 MSA。它不是替代所有光互联，而是在短距高速互联中用更低功耗/成本延长 copper reach。若 rack 继续变大、GPU/ASIC SerDes 速率继续上升，redriver/linear equalizer 的价值不会消失。
+
+HieFo InP 的价值更长线。1.6T/3.2T、coherent light、CPO/NPO/OCI 都需要更高效率、更稳定的光源和更紧密的 laser-driver-TIA 协同。SMTC 通过 HieFo 进入上游光子器件，能够提高设计绑定程度，但也承担制造爬坡和良率风险。
+
+### 9.3 替代方案和风险
+
+| 风险 | 对 SMTC 的影响 | 观察指标 |
+|---|---|---|
+| 800G ASP 压缩和库存修正 | 800G FiberEdge 仍是当前收入底座，若 800G module ASP/库存下修，收入弹性下降 | module maker 订单、lead time、Q3/Q4 data center QoQ |
+| 1.6T LPO/LRO adoption 慢于预期 | 224G linear TIA/driver 收入推迟，估值承压 | 公司是否继续披露 1.6T design wins、客户认证数量、H2 ramp |
+| DSP 方案继续占优 | LPO/LRO 节能价值被 retimed optics/DSP 生态抵消 | 1.6T FRO vs LRO/LPO mix、Broadcom/Marvell DSP 平台 |
+| CopperEdge 只停留在单一客户/单一 cable partner | ACC 收入上限低，难以成为第二增长曲线 | 多个 hyperscaler/enterprise evaluation 是否转 design win |
+| HieFo 扩产不及预期 | InP revenue 上不去，且扩产期毛利率拖累 SI margin | 产能 3-4x 计划、capex、Q2/Q3 SI gross margin |
+| Sierra Wireless 遗留业务剥离不顺 | IoT Systems 低毛利拖累组合，管理注意力分散 | divestiture 交易是否完成、收入基数和毛利变化 |
+| 客户集中和 module maker share 变化 | 某个 module supplier 失去 hyperscaler share 会影响 Semtech socket | 管理层对 broad-based qualification 的持续表述 |
+| 估值过高 | 即使基本面改善，也可能因 P/E/P/S 过高而波动 | forward P/E、FY2027 consensus EPS、股价对财报 beat 的敏感度 |
+
+### 9.4 客户替换成本
+
+客户替换成本在不同产品上差异大：
+
+- 800G/1.6T TIA/driver：中高。模块厂完成器件选型、PCB/layout、thermal、firmware/telemetry、hyperscaler qualification 后，替换供应商通常要重新验证，时间以数月计。
+- LPO/LRO：高。因为 linear architecture 更依赖 host SerDes、module front-end、equalization 和 telemetry 的系统级协同，替换不是 pin-to-pin 成本，而是系统稳定性风险。
+- CopperEdge ACC：中高。若只是 cable vendor 内部双供，替换成本中等；若已进入 hyperscaler reference design/qualification，替换成本高。
+- HieFo InP：高。激光器/gain chip 涉及光学性能、温度、寿命、封装和长期可靠性认证，替换周期长。
+- LoRa：高。生态和终端部署形成锁定，但增长斜率不如 data center。
+
+## 10. 监控清单
+
+| 监控项 | 判断阈值 | 影响 |
+|---|---|---|
+| Q2 FY2027 data center 是否达到约 $96M-$100M | 达到或超过，说明 Q1 backlog 转收入顺利；低于 $90M 则削弱 H2 加速假设 | 高 |
+| Q3 FY2027 指引是否继续 data center 高双位数 QoQ 或强 H2 描述 | 若 Q3 guide 只持平，说明 1.6T/CopperEdge/HieFo ramp 不够 | 高 |
+| SI gross margin | 若 Q2 半导体产品 GM 约 62.1%、SI GM 企稳，说明 HieFo ramp 没明显拖累 | 中高 |
+| 1.6T FiberEdge/CopperEdge 定量披露 | 若公司开始给 product revenue 或 annualized run-rate，估值可继续重估 | 高 |
+| HieFo capacity 3-4x 扩张进度 | 若 2026 年底兑现，2027 revenue capacity 上修 | 高 |
+| cellular module divestiture | 完成后毛利和叙事更清晰；若价格差或拖延，影响组合优化 | 中 |
+| 竞争对手 design win 新闻 | MACOM/MaxLinear/Credo/Marvell/Broadcom 若拿走关键 1.6T socket，会压低 SMTC 极度乐观情形 | 高 |
+
+## 11. 资料来源
+
+### 公司和财务资料
+
+- Semtech Q1 FY2027 results, 2026-05-26: https://www.semtech.com/company/press/semtech-announces-first-quarter-of-fiscal-year-2027-results
+- Semtech Q4/FY2026 results, 2026-03-16: https://www.businesswire.com/news/home/20260316127252/en/Semtech-Announces-Fourth-Quarter-and-Fiscal-Year-2026-Results
+- Semtech Q3 FY2026 results, 2025-11-24: https://www.semtech.com/company/press/semtech-announces-third-quarter-of-fiscal-year-2026-results
+- Semtech Q2 FY2026 results, 2025-08-25: https://www.semtech.com/company/press/semtech-announces-second-quarter-of-fiscal-year-2026-results
+- Semtech Q1 FY2026 results, 2025-05-27: https://www.semtech.com/company/press/announces-first-quarter-fiscal-year-2026-results
+- Semtech Q1 FY2027 earnings transcript, Investing.com, 2026-05-26: https://www.investing.com/news/transcripts/earnings-call-transcript-semtech-beats-q1-2027-forecasts-stock-rises-93CH-4710949
+- Semtech Q3 FY2026 earnings transcript, The Motley Fool, 2025-11-24: https://www.fool.com/earnings/call-transcripts/2025/11/24/semtech-smtc-q3-2026-earnings-call-transcript/
+- StockStory SMTC valuation and balance sheet snapshot, updated 2026-06-10: https://stockstory.org/us/stocks/nasdaq/smtc
+- Yahoo Finance SMTC quote page: https://finance.yahoo.com/quote/SMTC/
+
+### 产品、会议和收购资料
+
+- Semtech 224 Gbps linear optics IC family, 2026-03-16: https://www.semtech.com/company/press/semtech-launches-224-gbps-ic-family-for-linear-optics-era
+- Semtech OFC 2026 live 1.6T demos, 2026-03-12: https://www.semtech.com/company/press/showcases-ai-interconnect-leadership-with-live-1.6t-demos-ofc-2026
+- Semtech OFC 2026 blog: https://blog.semtech.com/ofc-2026-semtech-advances-the-future-of-ai-data-center-optical-and-active-copper-interconnects
+- Semtech HieFo acquisition, 2026-03-03: https://www.semtech.com/company/press/semtech-expands-data-center-portfolio-with-acquisition-of-hiefo-corporation
+- Semtech completes Sierra Wireless acquisition, 2023-01-12: https://www.semtech.com/company/press/semtech-corporation-completes-acquisition-of-sierra-wireless
+
+### 项目内行业资料
+
+- `基本面/行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `基本面/行业调研/AI网络_光互联_铜互联/行业调研_LPO_LRO线性光模块_2026-06-11.md`
+- `基本面/行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md`
+- `基本面/行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-06-11.md`

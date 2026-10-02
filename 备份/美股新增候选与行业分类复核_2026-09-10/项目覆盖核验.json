@@ -1,0 +1,1858 @@
+{
+  "checked_at": "2026-09-10T02:01:27.383770-07:00",
+  "company_index": "D:\\drive\\Investment\\基本面\\公司调研\\公司索引.md",
+  "company_index_sha256": "3d22421421ef43f0450ed68bd95f953a384f69c9cc4bb3f36596b98262abc959",
+  "existing_companies": [
+    {
+      "symbol": "DELL",
+      "name": "Dell Technologies",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "FN",
+      "name": "Fabrinet",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "HPE",
+      "name": "惠普企业",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "JBL",
+      "name": "Jabil Inc",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "MRAM",
+      "name": "Everspin Technologies",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "NTAP",
+      "name": "NetApp",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "PENG",
+      "name": "Penguin Solutions",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "SANM",
+      "name": "Sanmina Corporation",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "SMCI",
+      "name": "Super Micro Computer Inc",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "STX",
+      "name": "Seagate Technology",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "WDC",
+      "name": "WesternDigital",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "CLS",
+      "name": "Celestica Inc",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "FLEX",
+      "name": "Flex Ltd",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron Technology 美光科技",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "P",
+      "name": "Everpure",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "RMBS",
+      "name": "Rambus",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "SIMO",
+      "name": "Silicon Motion Technology",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "SNDK",
+      "name": "SanDisk",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "SKHY",
+      "name": "SK hynix Inc",
+      "category": "AI服务器_存储_EMS"
+    },
+    {
+      "symbol": "ADI",
+      "name": "Analog Devices",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "CDNS",
+      "name": "Cadence Design Systems",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "INTC",
+      "name": "Intel Corporation 英特尔",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "MCHP",
+      "name": "Microchip Technology",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "ON",
+      "name": "onsemi",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "QCOM",
+      "name": "Qualcomm",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "STM",
+      "name": "STMicroelectronics",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "TXN",
+      "name": "德州仪器",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "ALAB",
+      "name": "AsteraLabs",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "ARM",
+      "name": "Arm Holdings",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "SNPS",
+      "name": "Synopsys",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "MXL",
+      "name": "MaxLinear",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "CBRS",
+      "name": "Cerebras Systems Inc",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC"
+    },
+    {
+      "symbol": "ANET",
+      "name": "Arista Networks",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "APH",
+      "name": "Amphenol 安费诺",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "BDC",
+      "name": "Belden",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "COHR",
+      "name": "Coherent",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "CRDO",
+      "name": "Credo Technology Group",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "CSCO",
+      "name": "Cisco Systems",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "GLW",
+      "name": "Corning",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "LITE",
+      "name": "Lumentum",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "LWLG",
+      "name": "Lightwave Logic",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "NOK",
+      "name": "诺基亚",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "TEL",
+      "name": "TE Connectivity",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "VIAV",
+      "name": "VIAVI Solutions",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "VISN",
+      "name": "Vistance Networks",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "AAOI",
+      "name": "Applied Optoelectronics",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "BELFB",
+      "name": "Bel Fuse Inc",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "CIEN",
+      "name": "Ciena Corporation",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "MTSI",
+      "name": "MACOM Technology Solutions",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "POET",
+      "name": "POET Technologies",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "SITM",
+      "name": "SiTime Corporation",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "SMTC",
+      "name": "Semtech Corporation",
+      "category": "AI网络_光互联_连接器"
+    },
+    {
+      "symbol": "AJNMY",
+      "name": "味之素 Ajinomoto",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "APD",
+      "name": "Air Products and Chemicals",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "ASGLY",
+      "name": "AGC Inc",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "AXTI",
+      "name": "AXT Inc",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "HOCPY",
+      "name": "HOYA Corporation",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "LIN",
+      "name": "Linde plc",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "MMM",
+      "name": "3M",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "NDSN",
+      "name": "Nordson",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "Q",
+      "name": "Qnity Electronics",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "SHECY",
+      "name": "Shin-Etsu Chemical 信越化学",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "SOMMY",
+      "name": "住友化学 Sumitomo Chemical",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "CC",
+      "name": "The Chemours Company",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "ECL",
+      "name": "Ecolab",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "ENTG",
+      "name": "Entegris",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "MTRN",
+      "name": "Materion",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "ROG",
+      "name": "Rogers Corporation",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "SMTOY",
+      "name": "住友电工 Sumitomo Electric Industries",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "DHR",
+      "name": "Danaher Corporation",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "DD",
+      "name": "DuPont de Nemours",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "DKILY",
+      "name": "Daikin Industries",
+      "category": "半导体材料_化学品_基板"
+    },
+    {
+      "symbol": "AEP",
+      "name": "American Electric Power",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "BE",
+      "name": "Bloom Energy",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "BWXT",
+      "name": "BWX Technologies",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "CMI",
+      "name": "Cummins Inc",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "DTE",
+      "name": "DTE Energy Company",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "ENS",
+      "name": "EnerSys",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "ENPH",
+      "name": "Enphase Energy",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "ET",
+      "name": "Energy Transfer LP",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "ETR",
+      "name": "Entergy Corporation",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "FCEL",
+      "name": "FuelCell Energy",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "GEV",
+      "name": "GE Vernova",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "GNRC",
+      "name": "Generac Holdings",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "OKLO",
+      "name": "Oklo Inc",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "PSIX",
+      "name": "Power Solutions International",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "PWR",
+      "name": "Quanta Services",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "RYCEY",
+      "name": "Rolls-Royce Holdings",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "VST",
+      "name": "Vistra Corp",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "CEG",
+      "name": "Constellation Energy",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "FLNC",
+      "name": "Fluence Energy",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "SMR",
+      "name": "NuScale Power",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "AMPX",
+      "name": "Amprius Technologies",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "HTHIY",
+      "name": "Hitachi Ltd",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "TE",
+      "name": "T1 Energy Inc",
+      "category": "电力_发电_能源_储能"
+    },
+    {
+      "symbol": "AEHR",
+      "name": "Aehr Test Systems",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "ASX",
+      "name": "ASE Technology Holding",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "COHU",
+      "name": "Cohu Inc",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "IMOS",
+      "name": "ChipMOS Technologies 南茂科技",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "KEYS",
+      "name": "Keysight Technologies",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "KLIC",
+      "name": "Kulicke Soffa",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "MICLF",
+      "name": "Mycronic AB",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "ONTO",
+      "name": "Onto Innovation",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "PLAB",
+      "name": "Photronics",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "TDY",
+      "name": "Teledyne Technologies",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "TMO",
+      "name": "Thermo Fisher Scientific",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "AMKR",
+      "name": "Amkor Technology",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "CAMT",
+      "name": "Camtek",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "FORM",
+      "name": "FormFactor",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "TER",
+      "name": "Teradyne",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "ATEYY",
+      "name": "Advantest",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "ASMVY",
+      "name": "ASMPT",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "BESIY",
+      "name": "BE Semiconductor",
+      "category": "封测_检测_计量_光罩"
+    },
+    {
+      "symbol": "ALLE",
+      "name": "Allegion plc",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "CARR",
+      "name": "Carrier Global",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "CAT",
+      "name": "Caterpillar Inc",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "DCI",
+      "name": "Donaldson Company",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "FIX",
+      "name": "Comfort Systems USA",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "FTV",
+      "name": "Fortive Corporation",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "MSI",
+      "name": "Motorola Solutions",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "PH",
+      "name": "Parker-Hannifin",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "PNR",
+      "name": "Pentair plc",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "RKLB",
+      "name": "Rocket Lab",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "TT",
+      "name": "Trane Technologies",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "VRT",
+      "name": "Vertiv",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "DOV",
+      "name": "Dover Corporation",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "JCI",
+      "name": "Johnson Controls",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "MOD",
+      "name": "Modine Manufacturing",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "AAON",
+      "name": "AAON",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "IESC",
+      "name": "IES Holdings",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "EME",
+      "name": "EMCOR Group",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "MYRG",
+      "name": "MYR Group",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "SPCX",
+      "name": "SpaceX",
+      "category": "机电_冷却_工程_水处理_边缘工业AI"
+    },
+    {
+      "symbol": "ACLS",
+      "name": "Axcelis Technologies",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "ACMR",
+      "name": "ACM Research",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "AMAT",
+      "name": "Applied Materials",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "ASMIY",
+      "name": "ASM International",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "ASML",
+      "name": "ASML Holding NV",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "DSCSY",
+      "name": "DISCO",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "GFS",
+      "name": "GlobalFoundries",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "KLAC",
+      "name": "KLA Corporation",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "LRCX",
+      "name": "Lam Research",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "MKSI",
+      "name": "MKS Inc",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "TSEM",
+      "name": "Tower Semiconductor",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "TSM",
+      "name": "台积电",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "UCTT",
+      "name": "Ultra Clean Holdings",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "UMC",
+      "name": "United Microelectronics 联华电子",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "VECO",
+      "name": "Veeco Instruments",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "ICHR",
+      "name": "Ichor Holdings",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "NVMI",
+      "name": "Nova Ltd",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "TOELY",
+      "name": "Tokyo Electron",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "AEIS",
+      "name": "Advanced Energy Industries",
+      "category": "晶圆制造_前道设备"
+    },
+    {
+      "symbol": "ABBNY",
+      "name": "ABB Ltd",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "AOSL",
+      "name": "Alpha and Omega Semiconductor",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "ATKR",
+      "name": "Atkore",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "DIOD",
+      "name": "Diodes Incorporated",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "HUBB",
+      "name": "Hubbell",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "LFUS",
+      "name": "Littelfuse",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "MIELY",
+      "name": "三菱电机 Mitsubishi Electric",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "MPWR",
+      "name": "Monolithic Power Systems",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "POWI",
+      "name": "Power Integrations",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "POWL",
+      "name": "Powell Industries",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "ST",
+      "name": "Sensata Technologies",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "VICR",
+      "name": "Vicor Corporation",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "VSH",
+      "name": "Vishay Intertechnology",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "WOLF",
+      "name": "Wolfspeed",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "ETN",
+      "name": "Eaton Corporation",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "IFNNY",
+      "name": "Infineon Technologies AG 英飞凌科技",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "NVT",
+      "name": "nVent Electric",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "NVTS",
+      "name": "Navitas Semiconductor",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "MRAAY",
+      "name": "Murata Manufacturing",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "TTDKY",
+      "name": "TDK Corporation",
+      "category": "配电_电源_功率器件"
+    },
+    {
+      "symbol": "ADBE",
+      "name": "Adobe",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "APLD",
+      "name": "Applied Digital",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "CRWD",
+      "name": "CrowdStrike",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "CRWV",
+      "name": "CoreWeave",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "DLR",
+      "name": "Digital Realty",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "IBM",
+      "name": "International Business Machines",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "IREN",
+      "name": "IREN Limited",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "META",
+      "name": "Meta Platforms",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "MSFT",
+      "name": "微软",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "NTNX",
+      "name": "Nutanix",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "ORCL",
+      "name": "Oracle Corporation",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "BABA",
+      "name": "Alibaba 阿里巴巴",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "EQIX",
+      "name": "Equinix",
+      "category": "云算力_IDC_AI软件平台"
+    },
+    {
+      "symbol": "NBIS",
+      "name": "Nebius Group",
+      "category": "云算力_IDC_AI软件平台"
+    }
+  ],
+  "new_candidates": [
+    "TTMI",
+    "ALGM",
+    "CGNX",
+    "SYM",
+    "ROK",
+    "EMR",
+    "SPXC",
+    "AMBA",
+    "ITT",
+    "CW",
+    "CCJ",
+    "LEU",
+    "PL",
+    "ASTS",
+    "RDW",
+    "NOW",
+    "PANW",
+    "SNOW",
+    "DDOG",
+    "PLTR",
+    "NET",
+    "SBGSY",
+    "FANUY",
+    "YASKY",
+    "SMCAY"
+  ],
+  "active_report_collision_count": 0,
+  "industry_index": "D:\\drive\\Investment\\基本面\\行业调研\\行业索引.md",
+  "industry_index_sha256": "5ff58e78e8d9b9b519debd22407443c2e319fe56f23a3355b525189363a0bf3a",
+  "industry_index_count": 82,
+  "industries": [
+    {
+      "name": "数据中心电力接入与高压变电",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": ""
+    },
+    {
+      "name": "数据中心自备发电与微电网",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": ""
+    },
+    {
+      "name": "数据中心UPS与电池储能",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": ""
+    },
+    {
+      "name": "动态UPS、飞轮与超级电容",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": ""
+    },
+    {
+      "name": "数据中心开关设备与变压器",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": ""
+    },
+    {
+      "name": "中压直流、800VDC与固态变压器",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": ""
+    },
+    {
+      "name": "数据中心低压配电、PDU与母线槽",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": ""
+    },
+    {
+      "name": "机柜级供电与服务器电源架构",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": ""
+    },
+    {
+      "name": "功率半导体与高压保护器件",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": ""
+    },
+    {
+      "name": "数据中心土建、MEP与预制化交付",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": ""
+    },
+    {
+      "name": "导管、桥架与线缆管理",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": ""
+    },
+    {
+      "name": "数据中心风冷、冷水机组与HVAC",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": ""
+    },
+    {
+      "name": "数据中心直液冷系统",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": "系统设计、整套交付、验证/验收、集成责任与经济；与小组件、冷却液/水处理按收入层级和交付责任区分。"
+    },
+    {
+      "name": "液冷小组件与流体控制",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": "流体连接、阀泵/分配及组件资格和单位价值；不把整套冷却系统订单重复计作组件终端市场。"
+    },
+    {
+      "name": "冷却液、水处理、过滤与制冷剂",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": "介质与水处理/过滤耗材的性能、适配、复购、成本和责任；区分系统设备与耗材收入。"
+    },
+    {
+      "name": "机柜、围护结构与物理安防",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": ""
+    },
+    {
+      "name": "DCIM、能控与AI工厂数字孪生",
+      "category": "AI园区电力_机电_冷却",
+      "scope_note": ""
+    },
+    {
+      "name": "商用AI加速芯片",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "云厂自研AI ASIC",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "AI服务器CPU与控制平面芯片",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "AI边缘推理芯片",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "AI服务器整机与机架集成",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "HBM与高带宽内存",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "系统内存、SOCAMM与内存模组",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "企业级SSD与高速存储控制器",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": "SSD器件/控制器、有效性能、容量、客户资格与量价；软件平台收费和KV架构需求仅作传导，不重复估整个数据软件池。"
+    },
+    {
+      "name": "HDD、对象存储与冷温数据存储",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "AI-native存储与KV Cache基础设施",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": "系统数据流、KV生命周期与存储架构的需求传导；区分硬件、数据平台与软件嵌套收入，和CXL、eSSD、运行时交叉核对，不相加成终端需求。"
+    },
+    {
+      "name": "CXL内存扩展与内存池化",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": "内存扩展/池化硬件、采用、有效带宽与容量经济；与高速I/O器件、eSSD和KV系统架构区分层级。"
+    },
+    {
+      "name": "片上SRAM、MRAM与近存计算",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "AI芯片先进封装",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": "封装架构、资源消耗、良率和平台可交付性；与代工/封装服务、基板材料及设备分清价值层级。"
+    },
+    {
+      "name": "封装基板、中介层与RDL",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "先进封装材料与热界面材料",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "服务器BMC、MCU与嵌入式控制",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "精密时钟与同步芯片",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "EDA工具、接口IP与Chiplet IP",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "AI集群调度与推理运行时",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": "集群调度、推理执行和资源效率，区分开源/捆绑与独立收费；企业Agent应用付费与数据库商业模式由相关专题研究。"
+    },
+    {
+      "name": "AI云算力外包和NeoCloud与AI数据中心运营商",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "MLCC与高端陶瓷电容",
+      "category": "AI服务器_存储_芯片",
+      "scope_note": ""
+    },
+    {
+      "name": "AI以太网交换系统与Fabric芯片",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "InfiniBand与专有Scale-up互联",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "开放Scale-up互联",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "网卡、DPU与SmartNIC",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "PCIe/CXL高速I/O交换与Retimer",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "800G/1.6T可插拔光模块",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "LPO/LRO线性光模块",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "光DSP、TIA与CDR芯片",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "激光器、EML与光器件",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "CPO/NPO与交换侧光引擎",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "封装内光I/O与Optical Chiplet",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "Optical Interposer与新型光引擎",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "OCS光路交换",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "OCI （光学计算互连）/ Open CPX / XPO",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "AEC、DAC与高速铜缆",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "高速连接器、背板与结构化布线",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "AI Fabric网络操作系统与遥测软件",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "宽带接入、PON、DOCSIS 4.0与Wi-Fi 7",
+      "category": "AI网络_光互联_铜互联",
+      "scope_note": ""
+    },
+    {
+      "name": "先进逻辑晶圆代工和封装",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": "制造/封装服务的客户分配、良率、产能、定价与资本回报；架构分析和供应链器件收入不作为可相加终端总池。"
+    },
+    {
+      "name": "存储晶圆制造",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "特种晶圆代工",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "AI芯片前道制造设备",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "存储前道制造设备",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "先进封装设备与混合键合",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "半导体检测量测设备",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "探针卡、ATE与系统级测试",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "HBM与存储测试设备",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "高速互连与光学验证测试",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "高端光罩与先进封装掩模",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "晶圆厂洁净室与厂务系统",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "半导体高纯水、气体与化学流体系统",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "高纯氟聚合物流体系统",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "硅片、光刻胶与前道材料",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "先进封装湿化学与表面处理材料",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "玻璃基板、TGV与玻璃检测",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "硅光材料、光子材料与电光聚合物",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "半导体设备子系统与真空/RF/流体模块",
+      "category": "晶圆制造_设备_材料_测试",
+      "scope_note": ""
+    },
+    {
+      "name": "机器人硬件",
+      "category": "机器人_硬件_零部件",
+      "scope_note": ""
+    },
+    {
+      "name": "商业火箭与商业航天",
+      "category": "商业航天_火箭_卫星",
+      "scope_note": ""
+    },
+    {
+      "name": "企业AI与Agent工作流软件",
+      "category": "AI应用_软件_数据平台",
+      "scope_note": "新增待调研。企业任务、编码与业务工作流的付费、成功率、人工接管、预算及席位/用量替代；研究应用收费，不重复底层推理运行时调度。"
+    },
+    {
+      "name": "AI创作与文档生产软件",
+      "category": "AI应用_软件_数据平台",
+      "scope_note": "新增待调研。创作、设计、文档和内容生产的付费、分发入口、AI增量与存量蚕食；不同于广告主投放预算和平台流量变现。"
+    },
+    {
+      "name": "数据平台、数据库与AI数据软件",
+      "category": "AI应用_软件_数据平台",
+      "scope_note": "新增待调研。数据库、数据平台、检索/治理软件的客户价值、收费、开源/自建和迁移成本；不重复CXL/eSSD器件或KV数据流的物理能力。"
+    },
+    {
+      "name": "网络安全、身份权限与AI治理",
+      "category": "AI应用_软件_数据平台",
+      "scope_note": "新增待调研。安全采购、身份与权限、AI使用/部署治理的责任、预算、平台捆绑和独立收费；区分安全产品与一般数据治理。"
+    },
+    {
+      "name": "广告推荐、搜索与数字分发",
+      "category": "AI应用_软件_数据平台",
+      "scope_note": "新增待调研。广告/搜索/推荐与内容分发的支付来源、转化、流量控制、算力ROI及利润分配；不把内部AI投入当外售云收入。"
+    }
+  ],
+  "industry_files": [
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_DCIM、能控与AI工厂数字孪生_2026-09-06.md",
+      "sha256": "5b50dc6588a8e8037d6b3d6a5c03edb8a67084e5b84eab4c3f86741c94f3d2b2",
+      "lines": 464
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_中压直流、800VDC与固态变压器_2026-09-06.md",
+      "sha256": "050ca14dbfac1b5008dee30e277f9ead16ac814ea48af4494ffc63426255092c",
+      "lines": 461
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_冷却液、水处理、过滤与制冷剂_2026-09-06.md",
+      "sha256": "7f4e2d9b9f38e8b1d9829add72cd3a90c83b9a60a76a82b0d238a0bd3e0106d4",
+      "lines": 554
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_功率半导体与高压保护器件_2026-09-06.md",
+      "sha256": "82c2981c4e68bfe2b09da4c0787919bc667f640850f500ee26a148edb519f129",
+      "lines": 473
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_动态UPS、飞轮与超级电容_2026-09-06.md",
+      "sha256": "8a8faadeb336580df47ed34c97f174ee97074a8fda9853f899ac29eae5221cfc",
+      "lines": 492
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_导管、桥架与线缆管理_2026-09-06.md",
+      "sha256": "cb1a2d51d8a0b7ad467c11710f118323913bec5215836144a450f95aee6b33b3",
+      "lines": 526
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心UPS与电池储能_2026-09-06.md",
+      "sha256": "7ffd3f56630d68c59bec7b46aea7c44e45b9b179f7f072ad07a93c74149756c7",
+      "lines": 593
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心低压配电、PDU与母线槽_2026-09-06.md",
+      "sha256": "93537694af38431633860bcbeede8929c1ecfab3a6a70e89dd888bab4cad8e30",
+      "lines": 470
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心土建、MEP与预制化交付_2026-09-06.md",
+      "sha256": "2830c552245f9e38b54bef36b20065ef8d6c9e2219ed40a760d40a9c689bfa1f",
+      "lines": 467
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心开关设备与变压器_2026-09-06.md",
+      "sha256": "28ffa37b0aa89e469596c7bfd3892b57f1060261bdf4521bea284dcb77945856",
+      "lines": 389
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心电力接入与高压变电_2026-09-06.md",
+      "sha256": "337720bea470f9c8fa11fd33e3f0ffa9b11744ae41b38b6dfc67593731a51b1c",
+      "lines": 505
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心直液冷系统_2026-09-06.md",
+      "sha256": "cc70a733b91177fcaa0bd66f8286793483ddad21c5804c11f5ee26292ab26374",
+      "lines": 538
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心自备发电与微电网_2026-09-06.md",
+      "sha256": "0be01c9f1aed1ea1644c6ab0ad3ba08c9de49ca68c2c4da54cf4214a018e03a0",
+      "lines": 587
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心风冷、冷水机组与HVAC_2026-09-06.md",
+      "sha256": "1aa1a378629ad67312030bd0908e24c760dd25a3c775febd13e9636b1e92d99a",
+      "lines": 475
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_机柜、围护结构与物理安防_2026-09-06.md",
+      "sha256": "2d9535faede08b1469fb6fcf22656135e0ebf15f11a4da1ed37de556305622ad",
+      "lines": 489
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_机柜级供电与服务器电源架构_2026-09-06.md",
+      "sha256": "656c7995aa4786e20bac41183bf04276aba6a50692e1a1fcdde716a25e900423",
+      "lines": 572
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_液冷小组件与流体控制_2026-09-06.md",
+      "sha256": "70718cebd3410beb3712f8706bde1fb2244a1a756475440459d69e350339e011",
+      "lines": 569
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI应用_软件_数据平台\\行业调研_AI创作与文档生产软件_2026-09-06.md",
+      "sha256": "ba509f65828689312b790d4f4148cb15f7f8518bd433fc8b5c3fdf2b12cea457",
+      "lines": 450
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI应用_软件_数据平台\\行业调研_企业AI与Agent工作流软件_2026-09-06.md",
+      "sha256": "2c246b5690f63fe054e72e41a28e49572b3d5adacfebcbbec42587f410572d88",
+      "lines": 544
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI应用_软件_数据平台\\行业调研_广告推荐、搜索与数字分发_2026-09-06.md",
+      "sha256": "d3b3b9a6d2305acfd7d25b4d229a1de72cc73509d7a93b8ecfdd5a154683f7e6",
+      "lines": 486
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI应用_软件_数据平台\\行业调研_数据平台、数据库与AI数据软件_2026-09-06.md",
+      "sha256": "0c2ddc5672763fa2ee1eb7121a7136835f3c6a11f2d9a142654b6512d5544502",
+      "lines": 602
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI应用_软件_数据平台\\行业调研_网络安全、身份权限与AI治理_2026-09-06.md",
+      "sha256": "82581dff8ceeb1c4910b4b469c7d95c8a55f7ad640ae0f80403e12679835d266",
+      "lines": 533
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI-native存储与KV_Cache基础设施_2026-09-06.md",
+      "sha256": "0ea553debfee59cd74965d2fd7c34560677a31b29c908babc105b140e2df1c76",
+      "lines": 430
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-09-06.md",
+      "sha256": "327db67eaea2f7a6a54279a027f22ca012b22f6fe024ecc38bcf191ca5f658c3",
+      "lines": 587
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI服务器CPU与控制平面芯片_2026-09-06.md",
+      "sha256": "9fe08555d1426d858ae3572cde490dd8ccb3e97cee3b1d45350760d7aa8e6dd9",
+      "lines": 398
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI服务器整机与机架集成_2026-09-06.md",
+      "sha256": "9ef6acb1ff074d11c5fcdb29db9071a91b59cf2913cee2b14a8ee229207184a7",
+      "lines": 579
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI芯片先进封装_2026-09-06.md",
+      "sha256": "f4951898e7ba39f8109487d91b607b0577dfd0bb3e6a40152d478872449578ce",
+      "lines": 549
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI边缘推理芯片_2026-09-06.md",
+      "sha256": "0337d7347e5d77c719af513200d94666b6bf17da3234fcfc1c154ffbfe65aff3",
+      "lines": 417
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_AI集群调度与推理运行时_2026-09-06.md",
+      "sha256": "7a847b5033557fe579e0ec2cb27f18515fd023669b5381aeb488697e4241642f",
+      "lines": 570
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_CXL内存扩展与内存池化_2026-09-06.md",
+      "sha256": "0558bd61d2c83c87461488eba6f6eeda31f1d7d865af3fed7bbb3e5f60404f79",
+      "lines": 433
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_EDA工具、接口IP与Chiplet_IP_2026-09-06.md",
+      "sha256": "e67e40163ebb8535a73a033586b041b47d33b20dcbb50c6a84aa4582cf4fae5d",
+      "lines": 602
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_HBM与高带宽内存_2026-09-06.md",
+      "sha256": "5f24d8b799d32d0eda22f6ec0487a1b1a2f01d7d73b99e819fbbadd2435c5e78",
+      "lines": 521
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_HDD、对象存储与冷温数据存储_2026-09-06.md",
+      "sha256": "c79aa44fce47e0dd8bef9371405f229dcbc652b922923a9209421ab2cb1c0980",
+      "lines": 512
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_MLCC与高端陶瓷电容_2026-09-06.md",
+      "sha256": "4ca6903f5cae7fb3419015f97169bd5669925c09d9b7ba7aec3d97cc798789b6",
+      "lines": 509
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_云厂自研AI_ASIC_2026-09-06.md",
+      "sha256": "94b6f44e0a55692e92ee9df3f94d5c300940924b0fffcbcd557cf222737b45e7",
+      "lines": 498
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_企业级SSD与高速存储控制器_2026-09-06.md",
+      "sha256": "f3acb68e1f91065c2edadf7e38f98a8c3fd14285324a8fcf6277bf709b195cff",
+      "lines": 577
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_先进封装材料与热界面材料_2026-09-06.md",
+      "sha256": "c223bb0fed8447a20de9d5b653084246b3748b5845bbcd48363c46435751bc7e",
+      "lines": 462
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_商用AI加速芯片_2026-09-06.md",
+      "sha256": "5ba247ed20c167267ce29d704b18a8bfbfd349221da55fc6e17f846bccbf8d27",
+      "lines": 549
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_封装基板、中介层与RDL_2026-09-06.md",
+      "sha256": "2c7e45aae20b5c43530f8912615ff5c0e72e9f27e346a8983b2a2db212716f53",
+      "lines": 503
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_服务器BMC、MCU与嵌入式控制_2026-09-06.md",
+      "sha256": "d3e3d962b94c5d91ecacd0f018e7f3add5e9c7aede41b8df5f744a05d4d9d215",
+      "lines": 486
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_片上SRAM、MRAM与近存计算_2026-09-06.md",
+      "sha256": "64d258900435b85ceebd02510e5eab33adbde144fd69de7285a10be0130d6599",
+      "lines": 505
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_精密时钟与同步芯片_2026-09-06.md",
+      "sha256": "d9d37b28feac08372bfa78e2c31db7b6220df1fed66a01d5d74f0ab560c2d3aa",
+      "lines": 522
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_系统内存、SOCAMM与内存模组_2026-09-06.md",
+      "sha256": "0dc9c308e392fa0b2b115e2da1c1443eaaf42fa08521b290270692eaebe726d5",
+      "lines": 507
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_800G_1.6T可插拔光模块_2026-09-06.md",
+      "sha256": "1bba349dbff25aa27bb3cabfe712b0ac87969c53a7fbdf2c348790523075836d",
+      "lines": 423
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_AEC、DAC与高速铜缆_2026-09-06.md",
+      "sha256": "32d00ff4d7ee0fd59a9045ce6363530976380b48538b76b02c01c9e4e135cfdc",
+      "lines": 500
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_AI_Fabric网络操作系统与遥测软件_2026-09-06.md",
+      "sha256": "2d36e5a896276364a935e5c3c0e9240f9a7fbfda45c8339bded06eb9d63d691a",
+      "lines": 520
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_AI以太网交换系统与Fabric芯片_2026-09-06.md",
+      "sha256": "5ec2b768a025222a7db08dd5a2ac77c9eed94187bf870791595e27af2fc13117",
+      "lines": 547
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_CPO_NPO与交换侧光引擎_2026-09-06.md",
+      "sha256": "5ef77f7b34083072ef7c93092be0b7889d15e60db8966bb6979c359d29fc072a",
+      "lines": 584
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_InfiniBand与专有Scale-up互联_2026-09-06.md",
+      "sha256": "248d280165470ba42e62a7f229563b766d9092c57040b196bafadc706f32ee4e",
+      "lines": 558
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_LPO_LRO线性光模块_2026-09-06.md",
+      "sha256": "34a935016b508e9121c6f9a29623d30fe29ac1e83d72fbfcfd4b3633d34ad11e",
+      "lines": 520
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_OCI_（光学计算互连）_Open_CPX_XPO_2026-09-06.md",
+      "sha256": "e0eee5dbfce301f94aa81ad96f33d465be8fa3938fa860a045a0ef495f51fe85",
+      "lines": 726
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_OCS光路交换_2026-09-06.md",
+      "sha256": "829a92a6baa2a2243a18b7481318daa1ccbe01288067d1f0d3dd99b1b7c8d60a",
+      "lines": 493
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_Optical_Interposer与新型光引擎_2026-09-06.md",
+      "sha256": "6a6c75d94eb7e92e86c9a2e92f0a2be796b4d14ae2afe1b6944a608d4a584f30",
+      "lines": 482
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_PCIe_CXL高速I_O交换与Retimer_2026-09-06.md",
+      "sha256": "df402ede213557776d42449d22cf1257b12cb61b6a3cf60d01288b3204a87fe8",
+      "lines": 539
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_光DSP、TIA与CDR芯片_2026-09-06.md",
+      "sha256": "7705c77cbf46f64eaed6971e69cdb8ab16023a8de489da287341cee1b71d5a9e",
+      "lines": 540
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_宽带接入、PON、DOCSIS_4.0与Wi-Fi_7_2026-09-06.md",
+      "sha256": "77b9c66bfcbf256e38c821c0c7f2e29999b7dfd8432a9a51f944e02a02819b01",
+      "lines": 507
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_封装内光I_O与Optical_Chiplet_2026-09-06.md",
+      "sha256": "780ddda9f03109fdf07bce39d665b2764bd57bef5ac11d3dd569f6c664ae62e1",
+      "lines": 494
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_开放Scale-up互联_2026-09-06.md",
+      "sha256": "38928146552119d4e55f7857222bf5522d0d8d646a60cd2389aa43ae958c22f2",
+      "lines": 550
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_激光器、EML与光器件_2026-09-06.md",
+      "sha256": "dbdb290e525dde41d0b9f3dcbb49ce3c142ee2a0d3d8ad6b49c8b0c646fe2a7f",
+      "lines": 490
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_网卡、DPU与SmartNIC_2026-09-06.md",
+      "sha256": "c5c287b1effc47d2b992d7ecf5555cffa2b18b58631ae02168218c1b6a899a4b",
+      "lines": 396
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_高速连接器、背板与结构化布线_2026-09-06.md",
+      "sha256": "8e54247ffc3c7a2d6542c7f9145473dec817b265f1923533f645a129eaf645e1",
+      "lines": 515
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\商业航天_火箭_卫星\\行业调研_商业火箭与商业航天_2026-09-06.md",
+      "sha256": "3e770144eb302d30c135b2e7b38ac52d36b689d3b9675a3abbf75c04cd965cec",
+      "lines": 635
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_AI芯片前道制造设备_2026-09-06.md",
+      "sha256": "38a6831bd0d2fd7cee64d8910983c59deafda389b8cad58d17ffbe2ca7123331",
+      "lines": 522
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_HBM与存储测试设备_2026-09-06.md",
+      "sha256": "a0687d157f36d5ec3ed9db7d0959a3e5575e7adb4eb850eb4b2ffdb8b12cf836",
+      "lines": 519
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_先进封装湿化学与表面处理材料_2026-09-06.md",
+      "sha256": "f500a7c7380983a948496c24f89cca616a24553b446a4d79a22b78403a640470",
+      "lines": 414
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_先进封装设备与混合键合_2026-09-06.md",
+      "sha256": "d5d8fbc26375f040a79a6d367aa15bb237c78bc573fe557fb40e9404c609d7a7",
+      "lines": 492
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_先进逻辑晶圆代工和封装_2026-09-06.md",
+      "sha256": "7ceb451fc8b4e35b5ea0adb968c647adc7d1484a867c0c829b3a2fbf38bdd708",
+      "lines": 532
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_半导体检测量测设备_2026-09-06.md",
+      "sha256": "d09d98aad0a03cbf8e4538f4cde89bd4f6531c875e5e1644a811723d814555bb",
+      "lines": 577
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_半导体设备子系统与真空_RF_流体模块_2026-09-06.md",
+      "sha256": "0fd1778ef7f80511dbe26d11e9b4342b969b32951a77cd6a65cabf34b5ebb53c",
+      "lines": 528
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_半导体高纯水、气体与化学流体系统_2026-09-06.md",
+      "sha256": "b613b6a4934e73134831844b33191ac853bd16026024e64214b4a784189c1f39",
+      "lines": 458
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_存储前道制造设备_2026-09-06.md",
+      "sha256": "defc84f26a49e0323d0473e5f4aade3283991216bb6156360cf6b90bb7e7f41c",
+      "lines": 507
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_存储晶圆制造_2026-09-06.md",
+      "sha256": "e232844fedc7bb163c39d9559e38aea9b275b45ef7b5d340771883f97ab091c6",
+      "lines": 558
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_探针卡、ATE与系统级测试_2026-09-06.md",
+      "sha256": "426e14d183bc7ff2e684d3a8f76e376a7ccdd56ca072d0441e2d3ac44a68342a",
+      "lines": 566
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_晶圆厂洁净室与厂务系统_2026-09-06.md",
+      "sha256": "0dbfbd9a45c91e71af307350ca42a80b0ae88f55abd938935a2737aff1f2649e",
+      "lines": 423
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_特种晶圆代工_2026-09-06.md",
+      "sha256": "c0c58721a95aa05916b768fd9c7a7995597ed45af63de8b1159728230dbeaecf",
+      "lines": 430
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_玻璃基板、TGV与玻璃检测_2026-09-06.md",
+      "sha256": "3ae564c0d8578e5b8600b84484ec79eab8ed99a1ed7b893c7397cb2c36201ff8",
+      "lines": 496
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_硅光材料、光子材料与电光聚合物_2026-09-06.md",
+      "sha256": "75b38df19d2074ad4c2b1cb1e76d461902c1ca6efa3f4716e9f3c73f0a5ec359",
+      "lines": 616
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_硅片、光刻胶与前道材料_2026-09-06.md",
+      "sha256": "28785bcd0a7f061ccb0e82e13a104e93a77fa11cf3cd1fd16e496e9d0b4fed0f",
+      "lines": 452
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_高端光罩与先进封装掩模_2026-09-06.md",
+      "sha256": "693f7bbe9236c085e01da655871237af4dee574ab87e61f79fd4cb02b3f99c34",
+      "lines": 502
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_高纯氟聚合物流体系统_2026-09-06.md",
+      "sha256": "2add136510829e1a90cc2184306d3befa09e34eae75969cebfbbbfed008c8ebc",
+      "lines": 508
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_高速互连与光学验证测试_2026-09-06.md",
+      "sha256": "130e8b5908a67b10b77cee1728ad69981b708aac6cb7cbb291d87a58d9420ff0",
+      "lines": 473
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\机器人_硬件_零部件\\行业调研_机器人硬件_2026-09-06.md",
+      "sha256": "606fa74f1f138b7a47f27b0e49c6e43ebbc949199c38df4b9297e56d115e40a8",
+      "lines": 598
+    }
+  ],
+  "initial_lookup_symbols": [
+    "SYM",
+    "CGNX",
+    "ROK",
+    "EMR",
+    "AMBA",
+    "ALGM",
+    "TTMI",
+    "ITT",
+    "SPXC",
+    "CW",
+    "ASTS",
+    "PL",
+    "RDW",
+    "CCJ",
+    "LEU",
+    "NET",
+    "PANW",
+    "SNOW",
+    "DDOG",
+    "NOW",
+    "PLTR",
+    "SBGSY",
+    "FANUY",
+    "YASKY",
+    "SMCAY",
+    "HPKCY"
+  ],
+  "initial_lookup_note": "首轮包含一个未通过身份核验的候选查询HPKCY，已排除。Hamamatsu美国ADR应为HPHTY，但流动性限制使其未进入最终25家。原始查询文件保留失败记录。",
+  "final_candidate_count": 25,
+  "proposed_company_count_with_all": 218
+}

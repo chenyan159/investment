@@ -1,0 +1,14 @@
+file,rows,columns,min_date,max_date,note
+data/data_inventory.csv,13,6,,,
+data/metadata/download_failures.csv,0,5,,,"Download failures and fallback usage, if any."
+data/metadata/series_coverage.csv,70,12,1990-01-01,2026-06-26,Observed date coverage and 30-year-history checks.
+data/metadata/source_map.csv,46,7,,,"Data source, IDs, descriptions, and expected-history metadata."
+data/raw/fred_interest_daily_long.csv,174832,9,1990-01-01,2026-06-23,Raw FRED interest-rate and rate-adjacent series in long form.
+data/raw/yahoo_index_ohlcv_daily.csv,33640,12,1990-01-02,2026-06-23,"Raw daily OHLCV for SPX, NDX, and ETF proxies from Yahoo Finance chart API."
+data/weekly/index_prices_weekly.csv,1903,33,1990-01-05,2026-06-19,Weekly market prices and returns in wide form.
+data/weekly/index_prices_weekly_long.csv,6973,17,1990-01-05,2026-06-19,Weekly Friday market bars and returns in long form.
+data/weekly/interest_rates_weekly.csv,1903,32,1990-01-05,2026-06-19,Weekly FRED levels aligned to market week calendar and forward-filled with frequency-specific stale-data limits.
+data/weekly/interest_rates_weekly_data_age.csv,1903,32,1990-01-05,2026-06-19,Weeks since each rate series' last real observation after limited forward-fill.
+data/weekly/interest_rates_weekly_observed.csv,42572,10,1990-01-05,2026-06-26,"Weekly last observed value per FRED series, before panel forward-fill."
+data/weekly/market_rates_weekly_panel.csv,1903,160,1990-01-05,2026-06-19,Main modeling panel: weekly market data joined to rate features.
+data/weekly/rate_features_weekly.csv,1903,128,1990-01-05,2026-06-19,"Weekly rate levels, spreads, inversion flags, and rate-change features."

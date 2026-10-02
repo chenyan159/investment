@@ -1,0 +1,158 @@
+{
+  "conference_examples": [
+    {
+      "conference": "DAC",
+      "ticker": "ATEYY",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": -0.062195564921476154,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    },
+    {
+      "conference": "DAC",
+      "ticker": "TER",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": -0.11851934679950171,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    },
+    {
+      "conference": "DAC",
+      "ticker": "KLAC",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": -0.05518222461397071,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    },
+    {
+      "conference": "DAC",
+      "ticker": "ONTO",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": -0.15467585527669692,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    },
+    {
+      "conference": "DAC",
+      "ticker": "LITE",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": -0.012267436868941717,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    },
+    {
+      "conference": "FMS",
+      "ticker": "MU",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": 0.059654397074872856,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    },
+    {
+      "conference": "FMS",
+      "ticker": "SNDK",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": 0.03423371286948407,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    },
+    {
+      "conference": "FMS",
+      "ticker": "ALAB",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": 0.020951863772533885,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    },
+    {
+      "conference": "FMS",
+      "ticker": "DELL",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": 0.12005304773742043,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    },
+    {
+      "conference": "FMS",
+      "ticker": "HPE",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": -0.0662596286173952,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    },
+    {
+      "conference": "RSS",
+      "ticker": "TER",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": -0.11851934679950171,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    },
+    {
+      "conference": "RSS",
+      "ticker": "NVDA",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": 0.039202429346271606,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    },
+    {
+      "conference": "Farnborough",
+      "ticker": "ETN",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": -0.05577769186896464,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    },
+    {
+      "conference": "Farnborough",
+      "ticker": "PH",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": -0.07807348764957456,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    },
+    {
+      "conference": "Farnborough",
+      "ticker": "RYCEY",
+      "entry_date": "2026-08-19",
+      "entry": "open",
+      "end_date": "2026-09-04",
+      "ret": -0.036398388509575996,
+      "status": "mapped_example_not_recommendation_basket",
+      "selection": "purposive examples of original company mapping, not exhaustive or a performance ranking"
+    }
+  ],
+  "core_without_META": -0.007293606026029298,
+  "sources": 4,
+  "special_companies": 24,
+  "views": 7
+}

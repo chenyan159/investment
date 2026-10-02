@@ -1,0 +1,666 @@
+# 公司：GLW Corning Incorporated（康宁公司）全面尽调
+
+> 研究基准日：2026-07-11；证券行情采用最近交易日 2026-07-10 收盘数据。  
+> 报告边界：公司事实优先采用 SEC、康宁 IR、产品页、客户公告和行业会议资料；项目内只使用“行业调研/”中的相关 AI 网络、光互联、连接器、数据中心建设及技术路线资料，未读取或继承其他公司报告，也未使用“特征量化/”。  
+> 口径说明：康宁 2026Q1 起采用 Optical Communications、Glass Innovations、Automotive、Solar、Life Sciences + Emerging Growth 五类新分部。本报告用公司发布的 2025 年重述表统一回溯五个季度。GAAP 用于法定财务和估值；core sales、core EPS、core operating margin 用于经营趋势。所有标注“模型估算”的产品收入、AI 占比、BOM、内容量和情景值均不是公司指引。
+
+## 一、结论先行
+
+康宁已经从投资人眼中的“成熟、分散、周期性特种玻璃公司”，重估为“AI 数据中心被动光基础设施与下一代光子封装平台”。这种重估有真实经营基础，但股票价格已经把相当大一部分未来成功提前计入：
+
+- 经营拐点真实。2026Q1 core sales 为 43.45 亿美元，同比增长 18%；Optical Communications 收入 18.46 亿美元，同比增长 36%，分部净利润率从一年前的 14.8% 升至 21.0%。Enterprise Network 单季 9.62 亿美元，同比增长 36%，仍是增长中枢。[2026Q1 业绩公告](https://investor.corning.com/news-and-events/news/news-details/2026/Corning-Announces-Strong-First-Quarter-2026-Financial-Results-1/default.aspx) [2026Q1 演示材料](https://s203.q4cdn.com/212458750/files/doc_financials/2026/q1/2026-04-28-First-Quarter-Earnings-Call-Presentation-with-Appendix.pdf)
+- AI 订单信号强，但“合同上限”不等于 backlog。Meta 协议上限 60 亿美元；康宁随后称又取得两项规模、期限类似的 hyperscaler 协议；Amazon 另外公开了多年、数十亿美元协议；NVIDIA 合作要求美国连接产品产能提高 10 倍、光纤产能提高 50%。这些信息证明需求和客户共担扩产风险，却没有给出固定采购量、逐年交付表、取消率或标准 backlog。[Meta 协议](https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2026/01/corning-and-meta-announce-multiyear-up-to-6-billion-agreement-to-accelerate-us-data-center-buildout.html) [Amazon 协议](https://www.corning.com/worldwide/en/about-us/news-events/news/news-releases/2026/06/amazon-announces-agreement-with-corning-to-boost-us-fiber-optics-manufacturing-creating-1000-advanced-manufacturing-jobs-in-north-carolina.html) [NVIDIA 合作](https://investor.corning.com/news-and-events/news/news-details/2026/NVIDIA-and-Corning-Announce-Long-Term-Partnership-To-Strengthen-U-S--Manufacturing-for-AI-Infrastructure/default.aspx)
+- 供给确实紧。CRU 在 OFC 2026 观察到高芯数 ribbon cable 交期超过一年、部分符合 BABA 要求的光纤 2026 年产能基本售罄、典型交期超过 50 周；CRU 光纤价格指数从 2025 年 3 月的 78.6 升至 2026 年 3 月的 263.0。当前约束首先是 preform、拉丝、ribbon/cabling、端接与测试的综合能力，而不是单纯缺少石英原料。[CRU OFC 2026](https://www.crugroup.com/en/communities/thought-leadership/2026/key-takeaways-and-trends-from-the-ofc-2026-conference/) [CRU 月度价格跟踪](https://www.crugroup.com/en/communities/thought-leadership/2026/cru-introduces-monthly-optical-fibre-price-reporting-in-response-to-market-volatility/)
+- 康宁不是 AI 芯片公司，也不是完整光模块公司。它位于光纤 preform—光纤—光缆—连接器—预端接系统—机内 FAU/被动光子接口这一层，当前主要收入仍来自机外结构化布线、园区和 DCI；GlassBridge、PRIZM TMT、MMC、4-core MCF 和 CPO switch tray 是潜在增量。激光器、DSP、PIC、交换 ASIC、完整 transceiver 和 GPU 不在康宁主要产品范围内。
+- 直接及相邻 AI 数据中心收入没有披露。根据 Enterprise Network、hyperscale 增速、carrier DCI 和产品组合推算，2026Q1 直接/相邻 AI 数据中心收入约 7.7–10.2 亿美元，占 core sales 约 18%–23%；TTM 约 26–35 亿美元，占 TTM core sales 约 15%–21%。这是模型区间，不应把全部 Optical Communications 都算成 AI。
+- 资产负债表健康但并不宽松。2026-03-31 净债务约 72.18 亿美元，债务/资本 42%，流动比率约 1.61；15 亿美元循环额度未使用，平均债务期限约 20 年，TTM 自由现金流约 19.5 亿美元。主要风险是 13 亿美元一年内到期债务、扩产期库存和营运资本、2026 年 17 亿美元资本开支，以及 NVIDIA 权证潜在约 2.1% 股份稀释。[2026Q1 10-Q](https://www.sec.gov/Archives/edgar/data/24741/000002474126000205/glw-20260331.htm) [NVIDIA 权证 8-K](https://www.sec.gov/Archives/edgar/data/24741/000120677426000273/glw4631061-8k.htm)
+- 最大投资风险不是“业务会不会增长”，而是增长能否持续超过极高估值隐含门槛。2026-07-10 收盘价 190.89 美元，市值 1,642.9 亿美元，GAAP trailing P/E 约 91.9 倍、forward P/E 约 56.8 倍、P/S 约 10.1 倍。即使 FY2026 市场一致预期收入增长约 21%、EPS 增长约 27%，估值仍要求光通信高增、产能兑现、利润率提升和 CPO/MCF 可选性同时成立。[估值快照](https://stockanalysis.com/stocks/glw/statistics/) [市场一致预期](https://stockanalysis.com/stocks/glw/forecast/)
+
+综合判断：公司质量和产业位置显著改善，Optical Communications 的订单、供给和利润率证据相互印证；但短期最可靠的增长来自传统形态的高密度光纤、光缆、MPO/MTP、EDGE8、机架到园区的结构化系统和 DCI，不是 2027 年突然全面 CPO 化。基本情景下公司仍可实现很强增长；极度乐观情景需要 CPO/光学 scale-up 提前两年以上、三项 hyperscaler 协议快速转化且新厂良率顺利，概率明显低于当前市场叙事给人的感觉。
+
+## 二、公司整体业务、投资人定位与产业链位置
+
+### 2.1 公司做什么
+
+康宁的核心能力不是单一“玻璃”，而是材料配方、熔融/拉制、精密成形、表面处理、陶瓷、光学设计和大规模高良率制造。2026 年新分部结构如下。
+
+| 分部 | 主要市场 | 代表产品 | 在 AI 基建中的位置 | 2026Q1 core sales |
+|---|---|---|---|---:|
+| Optical Communications | 数据中心、运营商、园区、FTTH | SMF-28 系列、ClearCurve、Vascade、LEAF、TXF；Contour Flow、RocketRibbon、miniXtend；EDGE8、Evolv、Centrix、MPO/MTP/MMC；GlassBridge、FAU、PRIZM TMT、MCF | 当前核心：机外结构化光互联、园区和 DCI；未来可进入 CPO/NPO 机内被动光子层 | 18.46 亿美元 |
+| Glass Innovations | 显示、手机、可穿戴、半导体和精密光学 | 显示玻璃、Gorilla Glass、Ceramic Shield 相关材料、先进光学/玻璃解决方案 | 直接 AI 收入有限；先进封装玻璃和精密光学是观察项，尚无可验证的大额 AI 收入 | 14.20 亿美元 |
+| Automotive | 汽车排放、车载玻璃和连接 | 汽油/柴油颗粒过滤器、催化基材、车载显示玻璃 | 与 AI 数据中心基本无直接关系 | 4.37 亿美元 |
+| Solar | 光伏上游和美国制造 | 多晶硅、晶圆及 2025 年并入的组件制造能力 | 非 AI 产品；只能通过电力供给间接服务数据中心 | 3.70 亿美元 |
+| Life Sciences + Emerging Growth | 实验室耗材、药物包装及小型新业务 | 培养器皿、实验室玻璃/塑料、药物包装等 | 非 AI 基建主线 | 2.72 亿美元 |
+
+分部和产品描述以 [2025 10-K](https://www.sec.gov/Archives/edgar/data/24741/000002474126000124/glw-20251231.htm) 及 [2026Q1 分部重述](https://www.sec.gov/Archives/edgar/data/24741/000002474126000198/glw-xsegmentrecastxq12026x.htm) 为准。
+
+### 2.2 投资人如何看这家公司
+
+投资人认知经历了三阶段：
+
+1. 传统阶段：LCD 玻璃、手机盖板、汽车陶瓷、光纤和生命科学的多元材料公司；特点是资产重、资本开支高、显示和运营商周期明显、分红稳定，但估值通常受周期和资本回报率约束。
+2. Springboard 阶段：从 2023Q3 开始，管理层强调在既有技术和产能平台上提高利用率、压缩成本、退出低回报产品，以较少新增研发风险换取收入和利润率提升。Q4 年化 core sales 从 2023 年约 131 亿美元升至 2025 年约 176 亿美元，core operating margin 从约 16.3% 升至 20.2%，ROIC 从约 8.8% 升至 14.2%，自由现金流从约 8.8 亿美元升至约 17 亿美元。
+3. AI 光基础设施阶段：2025–2026 年 Enterprise Network、DCI、Meta/Amazon/NVIDIA 合作和 OFC 新产品把康宁推到 AI 网络瓶颈交易中。过去 52 周股价上涨约 263%，forward P/E 被抬升到约 57 倍，市场已经不再按传统材料股定价。[Springboard 2026 更新](https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2026/05/corning-upgrades-and-extends-springboard-plan-outlines-new-phase-of-accelerating-growth.html)
+
+关键边界：2026Q1 Optical Communications 只占 core sales 的 42.5%，本报告估算直接/相邻 AI 数据中心占比约 18%–23%。因此“AI 光互联公司”是增长和估值标签，不是完整收入事实。
+
+### 2.3 最近三年的重大业务变化、转型与收购
+
+| 时间 | 事件 | 战略意义 | 财务/执行含义 |
+|---|---|---|---|
+| 2023 | 推出 Springboard；进行约 4.71 亿美元重组、裁员、资产减值和产品线退出，主要涉及 Optical、Specialty Materials、Life Sciences | 从追求分散增长转为利用率、产品组合和资本效率 | 为 2024–2026 利润率扩张奠定成本基础，但说明旧产能曾明显闲置 |
+| 2024 | AI hyperscale 和 carrier DCI 开始吸收既有光通信闲置产能；GlassWorks AI/高密度布线定位形成 | 光通信从运营商周期复苏升级为 AI 数据中心结构性需求 | Enterprise Network 成为最快增长分项 |
+| 2025-04 | 以约 2.78 亿美元公允价值取得一家美国太阳能组件制造设施：现金约 1,700 万美元、票据约 1.11 亿美元、或有对价约 1.50 亿美元 | 建立多晶硅—晶圆—组件的美国垂直链条 | 该收购 2025 年贡献约 2.58 亿美元收入、税前亏损约 1,300 万美元；仍处爬坡期 |
+| 2025-04 | 将无线 DAS/小基站相关资产出售给 Airspan | 退出低协同、低回报的无线系统业务，聚焦光连接 | 不是大额现金驱动交易，重点是组合简化。[Airspan 公告](https://www.nasdaq.com/press-release/airspan-completes-acquisition-cornings-wireless-business-2025-04-01) |
+| 2025-08 | Apple 承诺约 25 亿美元，用于扩大 Kentucky 盖板玻璃制造；目标到 2026 年底把 iPhone/Apple Watch 盖板玻璃集中于该厂 | 强化 Glass Innovations 的长期客户锁定 | 非 AI，但提高产能利用率和客户集中度；不应与 AI 订单相加。[Apple 相关报道](https://apnews.com/article/2c33bfcce191a078926447f2c40980ab) |
+| 2026-01 至 06 | Meta 上限 60 亿美元协议；两项规模和期限类似的 hyperscaler 协议；Amazon 多年数十亿美元协议；NVIDIA 长期合作 | 从“卖标准光缆”转为客户共担扩产、联合规划和系统级交付 | 提高收入可见度与定价权，但公开文本没有最低采购量、取消条款和年度交付表 |
+| 2026Q1 | 重组外部报告分部：Display + Specialty 合为 Glass Innovations；Solar 独立；Life Sciences 与 Emerging Growth 合并 | 更清晰地展示 Optical 和 Solar 增长平台 | 历史比较必须使用重述表，不能把旧分部口径直接拼接 |
+| 2026-05 | 升级 Springboard；提出 Photonics 新增长平台，2030 年目标形成约 100 亿美元收入流 | 把光纤连接能力向 CPO/NPO、FAU、GlassBridge、MCF 和机内被动光子扩展 | 2030 目标不是当前订单；2026–2027 主要仍是设计验证和早期放量 |
+| 2026-05 | NVIDIA 支付 5 亿美元取得 300 万股预付权证及可按 180 美元执行的 1,500 万股传统权证 | 客户以股权方式支持美国扩产和供应链绑定 | 若传统权证全部执行，康宁另获约 27 亿美元、总潜在投资约 32 亿美元，但潜在稀释约 1,800 万股，约占现有股数 2.1% |
+
+康宁过去三年没有以大型并购改造主业。真正的转型来自重组、客户共担扩产、出售非核心无线资产、收购一项太阳能制造资产，以及把已有材料/制造 IP 延伸至 AI 光互联。
+
+### 2.4 产业链位置
+
+AI 网络的价值链可简化为：
+
+GPU/CPU → SerDes/交换 ASIC → 激光器、DSP、PIC、transceiver 或 CPO optical engine → FAU、被动对准接口、连接器 → 光纤、ribbon cable、trunk、cassette、panel → 机架、数据厅、园区和 DCI。
+
+康宁覆盖最后两层，并尝试向 CPO 机内层上移：
+
+- 上游：石英配方、preform、拉丝和涂覆，形成 SMF-28、ClearCurve、Vascade 等光纤。
+- 中游：RocketRibbon、Contour Flow、miniXtend 等高芯数光缆。
+- 连接与系统：MPO/MTP、EDGE8、Evolv、Centrix、cassette、panel、预端接 trunk 和工程服务。
+- 新一代机内接口：PRIZM TMT、MMC、GlassBridge、FAU、外置激光连接、4-core MCF 和 CPO switch tray。
+
+这带来三项结构优势：
+
+1. 垂直整合使公司在 preform 紧缺时既能保障供给，也能把原材料、拉丝、端接和系统价值留在内部。
+2. 数据中心客户买的不是裸光纤，而是满足损耗预算、极性、弯曲半径、消防规范、清洁度、施工时间和可追溯性的完整系统。系统收入的毛利和替换成本显著高于裸光纤。
+3. CPO 若放量，康宁不必取代光模块厂；只要前面板连接迁移为机内 fiber array、FAU、expanded-beam connector、PMF 和高密度 cable，康宁即可增加每台 switch/GPU 的被动光学内容量。
+
+限制也很清楚：康宁没有控制激光器、DSP、PIC 或交换芯片；commodity fiber 不具有垄断性；PRIZM 和 SDM4 MCF 均在推动 multi-source；若客户采用 BiDi/WDM、继续使用短距铜/AEC，或 CPO 推迟，实际纤芯需求会低于“每 GPU 160 根”的上限叙事。
+
+## 三、股价、估值、收入质量与资产负债表
+
+### 3.1 2026-07-10 最新市场与财务快照
+
+2026-07-11 为周六，因此“今天最新股价”采用 2026-07-10 最近交易日收盘。
+
+| 指标 | 最新值 | 数据日期/口径 | 判断 |
+|---|---:|---|---|
+| 股价 | 190.89 美元 | 2026-07-10 收盘 | 52 周涨幅约 263%，市场已按 AI 高增长资产定价 |
+| 市值 | 1,642.9 亿美元 | 2026-07-10，约 8.606 亿股 | 相对 TTM 收入规模非常高 |
+| 企业价值 | 1,724.6 亿美元 | 2026-07-10 | 反映约 72 亿美元净债务 |
+| Trailing P/E | 约 91.9 倍 | TTM GAAP EPS 约 2.08 美元 | GAAP 盈利倍数极高 |
+| Forward P/E | 约 56.8 倍 | 数据商未来十二月一致预期 | 若用 FY2026 EPS 共识 3.20 美元直接除，约 59.7 倍；口径差异来自预测期 |
+| P/S | 约 10.07 倍 | TTM | 已高于传统材料/光纤公司的常见中枢 |
+| Forward P/S | 约 8.33 倍 | 未来十二月收入 | 仍隐含持续 20% 左右增长 |
+| TTM GAAP 收入 | 163.21 亿美元 | 截至 2026-03-31 | 同比约 +20.1% |
+| TTM 毛利率 | 36.36% | GAAP | 受 Optical 高价值组合改善 |
+| TTM 营业利润率 | 15.15% | GAAP | 低于 core 口径，后者排除部分特殊项目 |
+| TTM 归母净利率 | 11.09% | GAAP 归属普通股股东 | 净利润约 18.10 亿美元 |
+| 2026Q1 core 毛利率 | 39.1% | 单季非 GAAP | 同比改善，体现产能利用率和产品组合 |
+| 2026Q1 core 营业利润率 | 20.2% | 单季非 GAAP | 已达到管理层至少 20% 的长期门槛 |
+| FY2026 市场收入共识 | 189.5 亿美元，约 +21.3% | 2026-07-07 数据快照 | 高于 Q4 2026 年化 200 亿美元目标所对应的全年均值逻辑 |
+| FY2026 市场 EPS 共识 | 3.20 美元，约 +27.1% | core/调整后预测为主 | EPS 增长快于收入，依赖利润率和固定成本杠杆 |
+| FY2027 市场收入共识 | 225.2 亿美元，约 +18.8% | 2026-07-07 | 与公司 2027–2030 高可信方案的高双位数 CAGR 接近 |
+
+来源：[StockAnalysis 估值与资本结构](https://stockanalysis.com/stocks/glw/statistics/)；[StockAnalysis TTM 财务](https://stockanalysis.com/stocks/glw/financials/)；[市场一致预期](https://stockanalysis.com/stocks/glw/forecast/)。市场数据会随交易日变化。
+
+### 3.2 资产负债表健康度
+
+| 项目 | 2026-03-31 | 变化/含义 |
+|---|---:|---|
+| 现金及现金等价物 | 17.55 亿美元 | 能覆盖约 1.35 倍的一年内到期债务，但不会同时覆盖全部扩产需求 |
+| 流动资产 | 95.26 亿美元 | 包含较高库存和应收 |
+| 流动负债 | 59.16 亿美元 | 营运资本 36.10 亿美元 |
+| 流动比率 | 1.61 倍 | 足够但不属于现金极充裕型 |
+| 库存 | 32.79 亿美元 | 较 2025 年末增加约 2.02 亿美元、约 +6.6%；扩产和交付准备推动占用 |
+| 总债务 | 89.73 亿美元 | 绝对额较高 |
+| 一年内到期债务 | 约 13.0 亿美元 | 需再融资、现金偿还或用经营现金流覆盖 |
+| 长期债务 | 77.18 亿美元 | 平均到期期限约 20 年，降低利率和集中到期风险 |
+| 净债务 | 72.18 亿美元 | 约为 TTM EBITDA 的 1.9 倍；总债务/TTM EBITDA 约 2.4 倍 |
+| 债务/资本 | 42% | 低于循环信贷 60% 上限，有较大 covenant 缓冲 |
+| 未使用循环信贷 | 15 亿美元 | 到期 2030 年，提供扩产和营运资本缓冲 |
+| 2026Q1 经营现金流 | 3.62 亿美元 | 季节性较弱，低于全年平均 |
+| 2026Q1 资本开支 | 3.32 亿美元 | 简单 OCF-capex 仅 0.30 亿美元；公司调整后 FCF 为 1.88 亿美元，二者定义不可混用 |
+| TTM 经营现金流/资本开支/FCF | 约 36.9/17.4/19.5 亿美元 | 自由现金流覆盖约 10 亿美元年度股息约 1.9 倍 |
+| 2026 年资本开支计划 | 约 17 亿美元 | 光通信扩产、太阳能升级和客户项目是主要用途 |
+
+判断为 B+ 至 A-：
+
+- 正面：收入和利润率上行、TTM FCF 接近 20 亿美元、循环额度未用、债务期限长、客户协议有风险共担性质。
+- 中性：净债务不低，但以总债务/TTM EBITDA 约 2.4 倍、净债务/TTM EBITDA 约 1.9 倍和 42% debt/capital 看仍可管理。
+- 风险：2026 年是扩产重年，库存和预付款会先于收入增加；太阳能和 Photonics 新线初期良率可能拖累现金；若 hyperscaler 项目延后，公司会同时承受利用率和营运资本压力。
+- 稀释：NVIDIA 的 1,800 万股权证若全部转股，约相当于当前股数 2.1%。换取的是最高约 32 亿美元潜在资金和客户绑定，经济上并非无成本订单。
+
+## 四、最新及最近四次财报
+
+### 4.1 五季度统一口径财务表
+
+单位：百万美元；分部“利润率”为公司披露的 segment net income / segment core sales，不是毛利率。同比均使用康宁 2026 年新分部重述口径。AI 占比为本报告估算。
+
+| 财报季度（发布日期） | GAAP sales / core sales；core EPS；core OM | Optical：收入、同比、分部净利率；Carrier / Enterprise | Glass Innovations：收入、同比、分部净利率 | Automotive：收入、同比、分部净利率 | Solar：收入、同比、分部净利率 | Life + Emerging：收入、同比、分部净利率 | 模型估算 AI 数据中心占 core sales |
+|---|---|---|---|---|---|---|---:|
+| 2025Q1（2025-04-29） | 3,452 / 3,679；0.54；18.0% | 1,355，+45.7%，14.8%；650 / 705，Enterprise +106% | 1,406，+6.0%，22.5% | 440，-10.4%，15.5% | 206，-4.6%，13.1% | 272，-7.8%，-11.0% | 13%–16% |
+| 2025Q2（2025-07-29） | 3,862 / 4,045；0.60；19.0% | 1,566，+40.7%，15.8%；797 / 769，Enterprise +81% | 1,443，-4.8%，22.5% | 460，-4.0%，17.2% | 231，+16.1%，0.9% | 345，+15.8%，1.7% | 13%–17% |
+| 2025Q3（2025-10-28） | 4,100 / 4,272；0.67；19.6% | 1,652，+32.6%，17.9%；821 / 831，Enterprise +58% | 1,560，-0.2%，23.3% | 454，+5.6%，15.0% | 319，+64.4%，9.4% | 287，-4.3%，-5.2% | 14%–18% |
+| 2025Q4（2026-01-28） | 4,215 / 4,412；0.72；20.2% | 1,701，+24.3%，17.9%；811 / 890，Enterprise 约 +30% | 1,499，+0.9%，23.7% | 440，-1.3%，14.3% | 475，+85.5%，6.3% | 297，-6.6%，-5.1% | 15%–20% |
+| 2026Q1（2026-04-28，最新） | 4,144 / 4,345；0.70；20.2% | 1,846，+36.2%，21.0%；884 / 962，两者均约 +36% | 1,420，+1.0%，22.8% | 437，-0.7%，16.0% | 370，+79.6%，1.9% | 272，0.0%，-8.8% | 18%–23% |
+
+来源：[2026Q1 业绩](https://investor.corning.com/news-and-events/news/news-details/2026/Corning-Announces-Strong-First-Quarter-2026-Financial-Results-1/default.aspx)、[2025 全年及 Q4 业绩](https://investor.corning.com/news-and-events/news/news-details/2026/Corning-Announces-Outstanding-2025-Financial-Results-1--Upgrades-Springboard-Plan-for-Faster-Sales-Growth-on-Significantly-Enhanced-Financial-Profile/default.aspx)、[2025Q3](https://investor.corning.com/investor-relations/news-and-events/news/news-details/2025/Corning-Announces-Third-Quarter-2025-Financial-Results1-with-Record-Core-Sales-and-Core-EPS/default.aspx)、[2025Q2](https://investor.corning.com/news-and-events/news/news-details/2025/Corning-Announces-Outstanding-Second-Quarter-2025-Financial-Results1-Highlighted-by-Record-Core-Sales-and-Core-EPS/default.aspx)、[2025Q1](https://investor.corning.com/news-and-events/news/news-details/2025/Corning-Announces-Strong-First-Quarter-2025-Financial-Results1-and-Reiterates-Confidence-in-Springboard-Plan/default.aspx)、[SEC 新分部重述表](https://www.sec.gov/Archives/edgar/data/24741/000002474126000198/glw-xsegmentrecastxq12026x.htm)。
+
+五季最重要的变化：
+
+- Optical 收入从 13.55 亿美元升至 18.46 亿美元，五个季度增长 36%；分部净利润率从 14.8% 升至 21.0%，说明收入不是单纯低毛利裸纤放量，而是高密度连接系统、利用率和价格/组合共同改善。
+- Enterprise Network 从 7.05 亿美元升至 9.62 亿美元，过去四季度合计 34.52 亿美元；对应前四季度约 23.42 亿美元，TTM 同比约 +47%。其在 core sales 中占比从 19.2% 升到 22.1%。
+- Carrier Network TTM 33.13 亿美元，同比约 +21%。增长来自运营商恢复和 hyperscaler DCI；不能把全部 carrier 收入算成 AI。
+- Solar TTM 13.95 亿美元，同比约 +63%，但 2026Q1 分部净利润率只有 1.9%。它是收入高增长业务，不是当前利润引擎。
+- Glass Innovations 稳定且利润率高，Q1 占 core sales 32.7%、分部净利率 22.8%，为扩产期现金和利润提供底盘；它不是本轮 AI 增长的主要来源。
+
+### 4.2 指引兑现记录
+
+| 发布季度 | 对下一季度指引 | 下一季度实际 | 兑现情况 |
+|---|---|---|---|
+| 2025Q1 | Q2 core sales 约 38.5 亿美元；EPS 0.55–0.59 | 40.45 亿美元；0.60 | 收入和 EPS 均超上限 |
+| 2025Q2 | Q3 core sales 约 42 亿美元；EPS 0.63–0.67 | 42.72 亿美元；0.67 | 收入超、EPS 达上限 |
+| 2025Q3 | Q4 core sales 约 43.5 亿美元；EPS 0.68–0.72 | 44.12 亿美元；0.72 | 收入超、EPS 达上限 |
+| 2025Q4 | Q1 core sales 42–43 亿美元；EPS 0.66–0.70 | 43.45 亿美元；0.70 | 收入略超上限、EPS 达上限 |
+| 2026Q1 | Q2 core sales 约 46 亿美元、同比约 +14%；EPS 0.73–0.77、同比约 +25% | 截至 2026-07-11 尚未公布；计划 2026-07-28 发布 | 尚待验证；含 Solar 约 3,000 万美元额外停线/升级费用 |
+
+连续四次达到或超过指引上限，说明管理层在需求和产能排程上较保守；但这也抬高了 2026Q2 之后必须继续“beat-and-raise”的市场预期。
+
+### 4.3 Backlog、bookings、B2B、交期和取消率
+
+康宁没有像设备公司一样按季度披露标准 backlog、bookings、book-to-bill、平均 lead time 或 cancellation rate。任何精确 B2B 数字都将是伪精确。可用的代理证据如下。
+
+| 时点 | 公司/客户证据 | 可推断内容 | 不能推断内容 |
+|---|---|---|---|
+| 2025Q1 | Enterprise +106%，公司承担约 3,000 万美元扩产爬坡费用 | 需求超过既有运行能力，隐含订单进入速度高于收入确认 | 无法算 B2B，也不知道未交货金额 |
+| 2025Q2 | Enterprise +81%，Q2 实际明显超过 Q1 指引；继续承担约 2,000–3,000 万美元 ramp costs | 客户拉货未见明显取消，产量是主要限制 | 不能把增长全部归因新订单；部分来自基数和旧闲置产能复用 |
+| 2025Q3 | Enterprise +58%；Q4 指引继续上调 | 高增长在更高基数上延续 | 没有按产品/客户的订单表 |
+| 2025Q4 | FY2025 Enterprise +61%，管理层称 hyperscale 增速接近其两倍；Meta 上限 60 亿美元协议公开 | hyperscale 项目进入多年供货安排 | 60 亿美元是上限，不是保证 backlog，也不代表当年收入 |
+| 2026Q1 | Optical +36%；公司称新增两项与 Meta 规模、期限类似的 hyperscaler 协议 | 以参考口径计算，三项协议名义上限可能接近 180 亿美元，但应视作框架容量而非可确认订单 | 最低采购、年度分配、预付款、take-or-pay、取消条款均未披露 |
+| 2026Q2 前 | Amazon 公布多年数十亿美元协议；NVIDIA 要求美国 connectivity 产能 10 倍、fiber 产能 +50% | 客户愿意以多年协议、设施锚定和股权资金支持扩产 | Amazon 在时间上可能对应 Q1 所称两项协议之一，但康宁未确认，模型必须只计一次；NVIDIA 产能目标不是采购金额 |
+| 2026 行业渠道 | ribbon cable 交期超过一年；BABA 光纤 2026 年产能近售罄、交期超过 50 周；北美产能紧 | 供给侧验证 Optical 的高利用率、加急溢价和客户锁量动机 | 行业交期不是康宁全部 SKU 的公司交期 |
+
+本报告对未来一年采用以下订单假设：
+
+- 基准：框架合同可转化部分的取消/延后率 3%–5%，价格/组合贡献 3%–7%，主要瓶颈为产能和认证。
+- 乐观：取消/延后率 1%–3%，客户预付款/最低量覆盖更多扩产，价格/组合贡献 5%–10%。
+- 极度乐观：取消/延后率 0%–1%，三项大型框架快速拉到名义上限附近，CPO/optical scale-up 提前，价格/组合贡献 8%–15%。
+
+这些不是公司披露，而是把不透明合同转化为可审计情景所需的模型参数。
+
+## 五、2026 年最新指引、业务占比与最突出方向
+
+### 5.1 2026Q1 收入结构与增长
+
+| 业务 | 2026Q1 core sales | 占 core sales | 同比 | 分部净利润 | 分部净利润率 | 结论 |
+|---|---:|---:|---:|---:|---:|---|
+| Optical Communications | 18.46 亿美元 | 42.5% | +36.2% | 3.87 亿美元 | 21.0% | 收入、利润和估值的核心；Enterprise 与 Carrier 均约 +36% |
+| Glass Innovations | 14.20 亿美元 | 32.7% | +1.0% | 3.24 亿美元 | 22.8% | 高利润稳定底盘，非本轮 AI 高增主线 |
+| Automotive | 4.37 亿美元 | 10.1% | -0.7% | 0.70 亿美元 | 16.0% | 成熟、低增 |
+| Solar | 3.70 亿美元 | 8.5% | +79.6% | 0.07 亿美元 | 1.9% | 高收入增长但低利润；Q2 停线升级短期承压 |
+| Life Sciences + Emerging Growth | 2.72 亿美元 | 6.3% | 0.0% | -0.24 亿美元 | -8.8% | 不是资本市场主线 |
+
+2026Q2 最新指引为 core sales 约 46 亿美元、同比约 +14%，core EPS 0.73–0.77、同比约 +25%。EPS 增速明显高于收入，核心假设是 Optical 的高利用率和产品组合抵消 Solar 停线额外成本。
+
+### 5.2 公司最侧重的业务
+
+优先级从高到低：
+
+1. Optical Communications 的 AI hyperscale structured cabling：当前最大、最确定。
+2. Carrier Network 中的 DCI、长距离低损耗光纤和园区互联：AI 相邻、供给紧、可与 Enterprise 共用垂直产能。
+3. Photonics：GlassBridge、FAU、PRIZM TMT、MMC、PMF、MCF 和 CPO/NPO switch tray；当前小、潜在内容量高。
+4. Solar：收入增速高且有客户承诺，但利润率低、非 AI，重点是制造爬坡和单位经济性。
+5. Glass Innovations：利润贡献重要但增长低，本报告不做产品级 AI 预测。
+
+管理层 2026 年升级 Springboard，目标 Q4 2026 年化 core sales 约 200 亿美元；内部目标为 2028 年约 300 亿美元、2030 年约 400 亿美元，高可信版本分别约 270 亿和 350 亿美元；2027–2030 高可信收入 CAGR 约 19%。其中 Photonics 目标到 2030 年形成约 100 亿美元收入流。该长期目标相当激进，不能当作当前 backlog。[2026 Investor Day 演示](https://s203.q4cdn.com/212458750/files/doc_events/2026/May/06/Corning-GLW-Investor-Event-Presentation-2026-05-06.pdf)
+
+### 5.3 重点产品、规模、增速和利润率交叉验证
+
+下表分为“业务层”和“产品层”。产品层是业务层子集，彼此也可能重叠，不可纵向相加。
+
+| 层级 | 产品/业务 | 当前收入贡献 | 当前增速 | 估算产品毛利率 | 交叉验证与判断 |
+|---|---|---:|---:|---:|---|
+| 业务 | Enterprise Network | TTM 34.52 亿美元 | TTM 约 +47%；2026Q1 +36% | 约 38%–50% | Q1 分部整体净利率 21%；高密度预端接系统、工程和供给溢价使其优于裸光纤 |
+| 业务 | 其中 hyperscale/AI structured systems | TTM 约 20.5–26.0 亿美元，模型估算 | 约 +60%–90%，模型区间 | 约 40%–55% | FY2025 Enterprise +61%，管理层称 hyperscale 增速接近其两倍；大型客户合同和高芯数交期相互验证 |
+| 业务 | Carrier Network | TTM 33.13 亿美元 | TTM 约 +21%；2026Q1 +36% | 约 30%–42% | 包含 FTTH、长途、无线回传和 DCI，不能全部归入 AI |
+| 业务 | 其中 hyperscaler DCI | TTM 约 5–9 亿美元，模型估算 | 约 +25%–45% | 约 35%–48% | carrier 增长高于传统电信建设，低损耗 fiber/cable 与园区互联需求一致 |
+| 产品子集 | EDGE8、MTP/MPO、cassette、panel、预端接 trunk | TTM 约 12–20 亿美元，模型估算，含在 Enterprise/DCI | 约 +35%–70% | 约 40%–58% | EDGE8 已在大量数据中心使用，Base-8 提高纤芯利用率并支持 800G/1.6T 迁移 |
+| 产品子集 | SMF-28 Contour、Contour Flow、RocketRibbon、高芯数 ribbon cable | TTM 约 7–12 亿美元，模型估算，含在 Enterprise/Carrier | 约 +30%–60% | 约 32%–48% | Contour Flow 用 190µm fiber，在相近管道空间可容纳约 2 倍纤芯；外部渠道显示高芯数 ribbon 供不应求 |
+| 产品子集 | MMC + PRIZM TMT、GlassBridge、FAU、CPO tray | 年化合计低于约 1 亿美元，模型估算 | 从样品/NRE 小基数快速增长，无法可靠量化 | 成熟量产约 45%–60%；当前因低良率/NRE 经营利润可能为负 | 有 Broadcom silicon/Nexthop switch tray 和 GlobalFoundries Fotonix 演示，但尚无公开量产客户收入 |
+| 产品子集 | 4-core MCF/SDM4 | 当前收入很小，估计低于 2,000 万美元 | 试样阶段 | 早期 45%–65%，量产后 40%–55% | 125µm 包含 4 core，技术价值高；仍处 MSA 初始规范和客户试验阶段 |
+| 业务 | Solar | TTM 13.95 亿美元 | TTM 约 +63%；2026Q1 +80% | 当前整合毛利可能约 10%–20%；分部净利润率仅 1.9% | 收入和承诺强，但组件厂停线升级、良率和垂直整合成本拖累利润 |
+
+毛利率区间由项目内行业 BOM、康宁分部净利润率、系统复杂度和成熟度推算，不是公司披露。参考：[项目内高速连接器、背板与结构化布线研究](../../行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-07-10.md)。
+
+### 5.4 重点产品和型号
+
+#### A. 当前放量产品
+
+- SMF-28 Ultra / SMF-28 Contour：低损耗、弯曲优化和更小外径系列。190µm Contour 纤维横截面积较传统 250µm 约减少 40%，支撑高芯数 cable。
+- Contour Flow：armored 24–1,728F、dielectric 24–6,912F、micro cable 432–1,728F；价值是同一 conduit/duct 的纤芯密度、重量和施工效率。[Contour Flow 产品页](https://www.corning.com/optical-communications/cala/en/home/products/fiber-optic-cable/indoor-outdoor-cables/contour-flow.html)
+- RocketRibbon：高芯数 ribbon cable，公开配置可到 3,456F；适合园区、数据中心和高密度接入。
+- EDGE8：Base-8 MTP/MPO 结构化系统，包括 trunk、module、cassette、panel 和 harness；典型 module 可实现 144 fibers/1U、576 fibers/4U，强调低损耗、极性管理和快速部署。[EDGE8 方案](https://www.corning.com/data-center/worldwide/en/home/solutions/edge8.html)
+- Vascade、LEAF、TXF、SMF-28 系列：长距离、海缆、城域和 DCI 的低损耗/大有效面积光纤。
+
+#### B. 2026–2028 潜力小产品
+
+- MMC + PRIZM TMT expanded-beam：12/16/24/32F，宣称 mating force 较传统方案下降约 70%；Corning、Fujikura、Sumitomo 参与 multi-source，US Conec 为关键接口生态方。它适合 blind-mate、CPO tray 和高密度前/后面板。[PRIZM 多源公告](https://www.usconec.com/media/h4zopm3k/us-conec-corning-fujikura-and-sumitomo-electric-joint-press-release_3-11-2026_final.pdf)
+- GlassBridge：以离子交换玻璃波导和被动对准连接 fiber 与 PIC，可支持超过 24 通道；公开资料给出 O-band fiber-to-PIC coupling loss 约 1.5dB，仍需平台级验证。[GlassBridge 产品页](https://www.corning.com/oem-solutions/worldwide/en/home/products-solutions/optical-communication-components/next-generation-optics/glassbridge-connector.html)
+- FAU / PMF / ELS connector：CPO/NPO optical engine 周围的 fiber array、偏振保持光纤和外置激光接口。其价值在机内，不是替代完整 transceiver。
+- 4-core MCF：在标准 125µm 外径中布置 4 cores，理论上同截面容量约 4 倍；康宁称 cable mass 可降约 70%、connector 数量可降约 75%、安装时间可降约 60%。当前是技术和施工效率选项，不是已验证的大规模收入。[康宁 MCF 产品页](https://www.corning.com/optical-communications/worldwide/en/home/products/multicore-fiber-technology.html)
+- CPO switch tray：康宁在 OFC 2026 展示 Nexthop tray、Broadcom silicon 和康宁 FAU/连接系统，并与 GlobalFoundries/Lumentum 等开展生态合作。它证明工程可行性，不等于量产导入。[OFC 2026 产品综述](https://www.corning.com/optical-communications/worldwide/en/home/the-signal-network-blog/corning-at-ofc-2026.html) [GlobalFoundries 合作](https://www.corning.com/optical-communications/emea/en/home/news-and-events/news-releases/2025/09/corning-and-globalfoundries-collaborate.html)
+
+#### C. 跳过深挖但仍应监控的业务
+
+| 跳过项 | 原因 | 仍需监控的触发点 |
+|---|---|---|
+| Display glass | 2026Q1 归入 Glass Innovations，增速约 1%，与 AI 数据中心直接关系低 | 面积需求、价格纪律、日元、Gen 10.5 利用率 |
+| Gorilla Glass、Apple 盖板 | 25 亿美元 Apple 承诺重要，但属于消费电子制造，不是 AI 基建 | Kentucky 扩产是否按 2026 年底完成、客户集中 |
+| Automotive 陶瓷和车载玻璃 | Q1 收入 -1%，成熟低增 | 排放法规、车载显示和汽车周期 |
+| Life Sciences、药物包装 | Q1 持平且分部亏损 | 重组、处置或利润率改善 |
+| 传统 FTTH/5G 回传 | Carrier 总盘子重要，但低增部分不是 AI | 电信资本开支恢复、BEAD/BABA 政策 |
+| 无线 DAS/small cell | 2025 年已出售给 Airspan | 只关注剩余服务义务 |
+| 先进玻璃基板、TGV | AI 封装潜力高，但康宁目前没有披露可验证的独立收入和大客户量产 | 客户认证、封装厂量产、独立收入披露；参考[项目内玻璃基板研究](../../行业调研/晶圆制造_设备_材料_测试/行业调研_玻璃基板、TGV与玻璃检测_2026-07-11.md) |
+
+## 六、当前高增长/关键业务的收入贡献与产业评分
+
+评分 1–5，5 代表更重要、更紧急、更供不应求或更强。垄断能力不是法律意义垄断，而是技术、产能、客户 AVL 和系统切换形成的综合壁垒。
+
+| 业务/产品 | 当前公司收入贡献 | 收入增速 | AI 技术栈重要性 | 时间紧急性 | 供需紧张 | 垄断/控制力 | 溢价能力 | 核心判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| Enterprise Network 总体 | TTM 34.52 亿美元 | 约 +47% | 5.0 | 5.0 | 5.0 | 4.0 | 4.5 | AI 园区要先建纤芯、trunk、panel 和连接系统，工期早于 GPU 上线 |
+| hyperscale AI structured systems | TTM 20.5–26.0 亿美元，估算 | +60%–90% | 5.0 | 5.0 | 5.0 | 4.5 | 4.5 | 三项大型框架与高芯数 cable 交期验证需求；系统级价值高于裸纤 |
+| Carrier Network 总体 | TTM 33.13 亿美元 | 约 +21% | 3.5 | 4.0 | 4.0 | 4.0 | 4.0 | 混有传统电信；AI 主要是 DCI/园区和长途骨干 |
+| DCI/低损耗 fiber + cable | TTM 5–9 亿美元，估算 | +25%–45% | 4.5 | 4.5 | 4.5 | 4.0 | 4.0 | 大型 AI campus 与多园区训练集群必须先配置 DCI |
+| EDGE8/MTP/MPO/预端接系统 | TTM 12–20 亿美元，重叠估算 | +35%–70% | 5.0 | 5.0 | 4.5 | 4.0 | 4.5 | 施工、极性、损耗和迁移决定实际替换成本 |
+| Contour Flow/RocketRibbon | TTM 7–12 亿美元，重叠估算 | +30%–60% | 4.5 | 5.0 | 5.0 | 4.0 | 4.0 | conduit 和施工空间成为约束，高纤密度直接节省土建和时间 |
+| MMC/PRIZM/GlassBridge/FAU | 当前合计低于约 1 亿美元，估算 | 小基数高增 | 当前 3.0；未来 5.0 | 3.0 | 2.5 | 3.5 | 4.5 | 需求瓶颈目前是平台采用和认证，而非供给；一旦 design-in，切换成本高 |
+| 4-core MCF | 低于约 2,000 万美元，估算 | 试样阶段 | 当前 2.5；未来 4.5 | 2.5 | 2.0 | 3.0 | 4.0 | 技术优势明显，但标准、fan-in/out、测试和生态尚未成熟 |
+| Solar | TTM 13.95 亿美元 | 约 +63% | 1.0 | 3.5 | 3.0 | 2.5 | 2.5 | 高增但非 AI；美国本地化有政策价值，利润取决于良率和垂直整合 |
+
+为什么 Enterprise 的“时间紧急性”高：结构化布线、duct、panel、splice、测试和 labeling 通常在服务器进场前完成；一旦土建或 conduit 容量错配，后期改造成本远高于材料差价。因此 hyperscaler 愿意为按期交付、美国制造和完整系统付溢价。
+
+## 七、一年后收入贡献：基准、乐观、极度乐观
+
+预测窗口定义为截至 2027 年中附近的未来十二个月运行水平，与截至 2026Q1 的 TTM/年化基数比较。Enterprise、Carrier、Solar 是业务池；下面的 hyperscale、DCI、Photonics、MCF 是子集，不得再次与母项相加。
+
+### 7.1 业务层收入预测
+
+| 业务 | 当前基数 | 基准：一年后收入/增速 | 乐观：一年后收入/增速 | 极度乐观：一年后收入/增速 | 关键条件 |
+|---|---:|---:|---:|---:|---|
+| Enterprise Network | TTM 34.52 亿美元 | 46 亿，+33% | 55 亿，+59% | 65 亿，+88% | 新厂爬坡、三项 hyperscaler 框架转化、高芯数 trunk/连接系统占比 |
+| 其中 AI hyperscale | 约 20.5–26.0 亿美元 | 30 亿，约 +15%–46% | 40 亿，约 +54%–95% | 52 亿，约 +100%–154% | 不发生重大项目延后；极端情景含 optical scale-up 提前 |
+| Carrier Network | TTM 33.13 亿美元 | 39 亿，+18% | 44 亿，+33% | 50 亿，+51% | DCI 抵消传统 FTTH/telecom 波动 |
+| 其中 DCI | 约 5–9 亿美元 | 8 亿 | 12 亿 | 16 亿 | AI campus 跨楼/跨园区带宽、低损耗长距需求 |
+| Solar | TTM 13.95 亿美元 | 18 亿，+29% | 22 亿，+58% | 26 亿，+86% | 停线升级顺利、组件良率改善、客户承诺转交付 |
+
+### 7.2 产品层收入预测
+
+| 产品子集，均与母业务重叠 | 当前估算 | 基准 | 乐观 | 极度乐观 | 判断 |
+|---|---:|---:|---:|---:|---|
+| EDGE8/MTP/MPO/高密度预端接系统 | 12–20 亿美元 | 18–24 亿 | 24–32 亿 | 32–43 亿 | 最确定的 AI 被动光增长；无需等待 CPO |
+| Contour Flow/RocketRibbon/高芯数 cable | 7–12 亿美元 | 11–15 亿 | 15–21 亿 | 21–29 亿 | preform、ribbon 和 cable line 决定上限 |
+| CPO/NPO 被动 Photonics：FAU、GlassBridge、PRIZM、PMF 等 | 年化低于约 1 亿美元 | 2.5 亿 | 6 亿 | 12 亿 | 基准仍是 NRE/样品加少量量产；极端情景要求一至多个大平台提前批量 |
+| 4-core MCF | 低于约 0.2 亿美元 | 0.3 亿 | 1.2 亿 | 3.5 亿 | 基准为试点，乐观为首批 AVL，极端为多个 hyperscaler 量产 |
+
+### 7.3 情景评分
+
+| 业务/产品 | 情景 | AI 重要性 | 时间紧急性 | 供需紧张 | 控制力 | 溢价能力 |
+|---|---|---:|---:|---:|---:|---:|
+| Enterprise structured systems | 基准 / 乐观 / 极度乐观 | 5 / 5 / 5 | 5 / 5 / 5 | 4.5 / 5 / 5 | 4 / 4.5 / 4.5 | 4 / 4.5 / 5 |
+| Carrier DCI | 基准 / 乐观 / 极度乐观 | 4 / 4.5 / 5 | 4 / 4.5 / 5 | 4 / 4.5 / 5 | 4 / 4 / 4.5 | 3.5 / 4 / 4.5 |
+| CPO/NPO Photonics | 基准 / 乐观 / 极度乐观 | 4 / 5 / 5 | 2.5 / 3.5 / 5 | 2 / 3.5 / 5 | 3 / 4 / 4.5 | 3.5 / 4.5 / 5 |
+| MCF | 基准 / 乐观 / 极度乐观 | 3 / 4 / 5 | 2 / 3 / 4.5 | 1.5 / 3 / 4.5 | 3 / 3.5 / 4 | 3.5 / 4 / 5 |
+| Solar | 基准 / 乐观 / 极度乐观 | 1 / 1 / 1 | 3 / 3.5 / 4 | 2.5 / 3 / 4 | 2.5 / 3 / 3 | 2 / 2.5 / 3 |
+
+极度乐观不是“最可能”。行业会议的主流判断仍是 2026 年 pluggable 为主、CPO 广泛采用更接近 2029–2030；因此 CPO 2027 年 12 亿美元和 MCF 3.5 亿美元只能视作尾部情景。[康宁 2026 数据中心技术判断](https://www.corning.com/optical-communications/worldwide/en/home/the-signal-network-blog/2026-data-center-predictions.html)
+
+## 八、BOM、每 MW/每 rack/每 GPU/每 optical port 内容量与价格传导
+
+### 8.1 真实物理内容量：先区分 lane、fiber 和 cable
+
+康宁 Investor Day 用 NVIDIA Rubin Ultra 示例说明：
+
+- Scale-out：1.6Tb/s ÷ 200Gb/s = 8 lanes；每 lane 双向按两根 fiber 计算，约 16 fiber lanes/GPU。
+- Scale-up：14.4Tb/s ÷ 200Gb/s = 72 lanes；若全部光学化，约 144 fiber lanes/GPU。
+- 合计：从仅 scale-out 的 16，到 scale-up 100% 光学化时的 160 fiber lanes/GPU，即最高约 10 倍。
+- 72-GPU rack：约 1,152 至 11,520 fiber lanes。
+- 以约 142kW 的高密度 rack 作模型锚点，一 MW 可容纳约 7.04 racks，对应约 8,100 至 81,100 fiber lanes/MW。
+
+这是 fiber-lane/termination-path 的架构计数，不是每根都独立铺设到同一远端，也不是康宁独占。交换网络存在聚合、oversubscription、WDM/BiDi、patching 和共享 trunk，物理 cable 中的 fibers 也可服务多个 GPU。
+
+| 架构/端口 | 典型物理 fiber 数 | 康宁可能提供的内容 | 关键变体 |
+|---|---:|---|---|
+| 800G DR8 或并行 8×100G duplex | 16 fibers/port | MTP-16/MPO、trunk、cassette、panel、SMF/MMF cable | 800G FR4/LR4 用 WDM 时可降至 2 fibers |
+| 1.6T DR8，8×200G duplex | 16 fibers/port | 更低损耗 fiber、MTP/MMC、trunk、panel | WDM/2×FR4 等方案可显著减少物理纤芯 |
+| 传统 pluggable switch | 端口外部 fiber | 康宁主要收入在 box 外 | 康宁明确指出现有 pluggable switch 的 box 内被动光内容有限 |
+| CPO/NPO switch | optical engine 到面板/外置激光需要更多机内 fiber lanes | FAU、PMF、GlassBridge、PRIZM/MMC、high-density cable | 采用率、可维护性、laser strategy 和标准仍在演进 |
+| Rubin Ultra scale-out | 约 16 fiber lanes/GPU | 外部 structured cabling + DCI | 实际端口数与网络拓扑有关 |
+| Rubin Ultra full optical scale-up 上限 | 额外约 144 fiber lanes/GPU | 机内/机架间 Photonics 内容显著增加 | 2027 年不应假定 100% 光学化 |
+
+### 8.2 美元内容量模型
+
+公开 hyperscaler 协议没有 SKU 单价。以下按被动光系统的材料、端接、测试、panel、设计、安装和康宁可获得份额估算，是 vendor revenue content，不是整个网络成本。
+
+| 单位 | 当前 pluggable/scale-out 主导 | 一年后基准 | 一年后乐观 | 一年后极度乐观 |
+|---|---:|---:|---:|---:|
+| 每 800G 并行 optical port 的康宁被动内容 | 短直连约 80–250 美元；经多层 panel 的完整结构化路径约 250–900 美元 | 100–300 / 300–950 | 120–350 / 350–1,050 | 150–450 / 450–1,250 |
+| 每 1.6T 并行 optical port | 约 120–350 美元；完整路径约 300–1,000 美元 | 150–400 / 350–1,100 | 180–480 / 400–1,250 | 220–600 / 500–1,500 |
+| 每 GPU | 约 250–600 美元 | 500–1,000 美元 | 1,000–2,000 美元 | 2,000–4,000 美元 |
+| 每 72-GPU rack | 1.8–4.3 万美元 | 3.6–7.2 万美元 | 7.2–14.4 万美元 | 14.4–28.8 万美元 |
+| 每 MW，按 7.04 racks/MW | 约 13–30 万美元 | 25–51 万美元 | 51–101 万美元 | 101–203 万美元 |
+
+为什么每 GPU 美元没有随 fiber lanes 从 16 到 160 线性增长 10 倍：
+
+- 共享 trunk、panel 和园区骨干会把多个 GPU 聚合；
+- 多芯连接器和 ribbon cable 的单位 fiber 成本随密度下降；
+- BiDi/WDM 可减少物理 fiber；
+- 不是所有系统都由康宁供货；
+- CPO 提高机内价值，但同时减少部分可插拔 front-panel hardware。
+
+### 8.3 产品 BOM
+
+#### 结构化预端接 trunk / EDGE8
+
+| BOM 环节 | 典型成本占比 | 康宁价值来源 |
+|---|---:|---|
+| Fiber 和 cable | 20%–35% | 自有 preform/fiber/cable 垂直整合、低损耗和高密度 |
+| Ferrule、connector、adapter | 20%–30% | MPO/MTP/MMC 接口精度、清洁度和损耗预算 |
+| Termination、polish、inspection、test | 18%–28% | 高芯数良率、端面质量、自动化与可追溯 |
+| Cassette、panel、housing | 10%–20% | 机架密度、极性、布线和维护 |
+| 工程、定制、包装、物流 | 8%–15% | hyperscaler 设计服务、准时交付和现场风险降低 |
+
+普通裸 cable 的毛利可能只有约 20%–38%；ULL、VSFF、预端接和完整系统可达到约 40%–58%。康宁 Q1 Optical 分部净利润率 21% 与这一产品组合方向一致。
+
+#### Contour Flow / RocketRibbon 高芯数 cable
+
+| BOM 环节 | 典型成本占比 | 主要瓶颈 |
+|---|---:|---|
+| Silica、掺杂材料和 preform | 15%–25% | preform furnace 周期长、扩产需 18–24 个月 |
+| Draw、coating、检验 | 15%–25% | 拉丝速度、良率和低损耗一致性 |
+| Ribbon/buffer/binder、armor/strength member | 25%–35% | 高芯数 ribbon line 和 cable line |
+| Jacket、阻燃、环境认证 | 10%–15% | OFNP/FT6、温度和机械规范 |
+| 测试、包装、物流、项目定制 | 15%–25% | 高芯数长度、reel、现场 schedule 和 BABA 来源证明 |
+
+#### PRIZM TMT / GlassBridge / FAU / CPO passive assembly
+
+| BOM 环节 | 典型成本占比 | 主要瓶颈 |
+|---|---:|---|
+| Ferrule、lens、ion-exchange waveguide | 20%–30% | 微米级被动对准和界面标准 |
+| Fiber、PMF、ribbon | 10%–18% | polarization、弯曲和端面管理 |
+| Alignment、termination、assembly | 20%–30% | 自动化、良率和可维修性 |
+| Optical test、burn-in、yield loss | 15%–25% | channel 数增加后测试时间和失效率 |
+| Tooling、license、NRE | 10%–20% | platform-specific design 和 multi-source 协议 |
+| 其他材料/物流 | 5%–10% | 清洁、包装和客户现场条件 |
+
+早期小批量 gross margin 可能看似 45%–60%，但 NRE、低良率和固定成本会让经营利润很低甚至为负；真正价值要在 switch platform 量产后体现。
+
+#### 4-core MCF 系统
+
+| BOM 环节 | 典型成本占比 | 与传统 SMF 的差异 |
+|---|---:|---|
+| 多芯 preform | 25%–35% | core geometry、串扰和一致性要求更高 |
+| 拉丝、coating、检测 | 20%–30% | 外径仍为 125µm，但测试复杂度更高 |
+| Cable/ribbon | 15%–25% | 同容量可减少 cable mass 和 conduit 占用 |
+| Fan-in/fan-out、connector | 20%–30% | 当前生态最不成熟、价格最高 |
+| 系统测试和良率 | 10%–20% | 需逐 core 检测串扰和损耗 |
+
+#### Solar
+
+每 1MW 组件销售额按 0.25–0.35 美元/W 粗略对应 25–35 万美元。典型组件价值链中，多晶硅约 15%–20%、晶圆约 20%–25%、电池片约 30%–40%、组件封装约 20%–30%，BOS 不在组件 BOM。康宁控制多晶硅、晶圆和组件部分环节，但是否自供电池片及具体转移价格未充分披露，因此不能把整个 25–35 万美元/MW 都视为康宁新增内容。
+
+### 8.4 价格传导链
+
+Silica/掺杂材料/能源 → preform → fiber draw → ribbon/cable → connector/ferrule/termination → cassette/panel/trunk → engineering/qualification/logistics → hyperscaler/EPC。
+
+当前价格传导机制：
+
+- Preform 紧缺首先推高裸 fiber 转移价格；CRU 指数一年内大幅上升，说明供给价格弹性很低。
+- 康宁垂直整合，既会承受能源、材料和扩产成本，也能保留 preform 到系统的多层利润；独立 cable assembler 更容易被上游涨价挤压。
+- hyperscaler 对材料单价的敏感度低于对工期和停机风险的敏感度。行业渠道显示 2026 年 allocation/expedite 溢价约 5%–20%；完整产品+工程 bundle 的毛利率可比裸 cable 高 10–20 个百分点。
+- 多年客户协议可通过预付款、最低量、设备投资分担、价格重置或长约锁量降低风险，但康宁没有公开具体条款。
+- 2027–2028 新产能释放后，commodity fiber 价格可能回落；只有高密度、低损耗、预端接、系统设计和机内 Photonics 能维持结构性溢价。
+
+## 九、当前产能、供应链采纳与认证
+
+“产能能力（美元计）”不是公司披露的 nameplate。下表以最新季度年化收入、外部满产/交期信号、公司扩产公告和合理利用率反推可销售能力。
+
+| 业务/产品 | 当前可销售产能估算 | 当前利用/瓶颈 | 供应链采纳程度 | 认证/标准阶段 |
+|---|---:|---|---|---|
+| Enterprise Network | 年化 40–46 亿美元 | Q1 年化收入 38.48 亿美元；北美高芯数 cable、端接和连接硬件接近满负荷 | 高；大型 hyperscaler 多年协议、成熟 AVL | EDGE8/MTP/MPO 已 GA；产品符合相应 ANSI/ICEA、NFPA/NEC、RoHS 等规范；客户 AVL 不公开 |
+| Carrier Network | 年化 36–40 亿美元 | Q1 年化 35.36 亿美元；preform、低损耗 fiber 和 cable line 紧 | 高；运营商、DCI 和园区均已量产 | SMF-28 等符合 ITU/Telcordia 体系；具体客户认证不公开 |
+| Contour Flow/RocketRibbon | 年化约 10–14 亿美元，含在上述两项 | ribbon/preform/大芯数 cable line 为瓶颈 | 中高至高；商业产品，AI 园区快速采用 | 公开产品含 G.652.D/G.657.A1 等 fiber 规范，cable 按场景满足 ICEA/Telcordia/消防规范 |
+| EDGE8/MTP/MPO 系统 | 年化约 18–22 亿美元，重叠估算 | 端接、测试、cassette/panel 和项目定制 | 高；已在大量数据中心部署 | GA、ULL 和 RoHS/消防等产品规范；hyperscaler AVL 保密 |
+| MMC/PRIZM TMT | 低于约 1 亿美元 | 设计验证、良率和平台采用，而非材料短缺 | 低至中；OFC 演示、三家制造商 multi-source | 多源生态建立中；不是公开的大规模 hyperscaler production qualification |
+| GlassBridge/FAU/CPO | 低于约 1 亿美元 | PIC interface、可靠性、可维修性、测试 | 低；GF Fotonix 和 Broadcom/Nexthop 演示 | ISO 9001 制造体系不等于产品 AVL；仍处 demo/qualification |
+| 4-core MCF | 低于约 0.2 亿美元 | 标准、fan-in/out、测试、客户 network architecture | 很低；试样和联合开发 | SDM4 MCF MSA 计划发布初始规范，后续才进入 ITU/IEC/IEEE；当前属于 pre-standard |
+| Solar | 年化 15–18 亿美元 | Q2 wafer line 停线升级、组件良率和供应链整合 | 中高；已有多年客户承诺 | 产品/客户具体认证未按 SKU 披露 |
+
+产能建设证据：
+
+- Meta 是 North Carolina 新 cable facility 的 anchor customer，康宁预计当地就业增加约 15%–20%。
+- Amazon 协议对应北卡制造扩张，计划新增约 1,000 个先进制造岗位。
+- NVIDIA 合作覆盖 North Carolina 与 Texas 三座新设施，约 3,000 个岗位；目标是美国 optical connectivity 产能 10 倍、fiber 产能 +50%。10 倍仅指美国连接产品子集，不能把整个 Optical segment 收入乘以十。
+- Poland 扩产预计 2026 年下半年投运并带来约 2,500 个岗位，为欧洲 AI 数据中心和全球项目提供第二来源。[Poland 扩产](https://www.corning.com/optical-communications/emea/en/home/news-and-events/news-releases/2026/04/corning-expands-poland-manufacturing-for-ai-data-centers.html)
+- 2026 年公司资本开支约 17 亿美元，但公司没有拆出每个 optical plant 的美元产能。
+
+## 十、一年后产能、采纳和认证情景
+
+### 10.1 美元产能
+
+| 业务/产品 | 基准产能 | 乐观产能 | 极度乐观产能 | 主要前提 |
+|---|---:|---:|---:|---|
+| Enterprise Network | 52 亿美元 | 65 亿美元 | 80 亿美元 | 北卡/德州/波兰连接产能按期爬坡；极端情景要求美国 10 倍子集快速转化 |
+| Carrier Network | 42 亿美元 | 48 亿美元 | 55 亿美元 | fiber +50% 扩产、DCI 和传统 carrier 共用能力 |
+| EDGE8/高密度 structured systems，重叠 | 28 亿美元 | 38 亿美元 | 50 亿美元 | 自动端接、测试、panel/cassette 和现场工程同步扩张 |
+| Contour Flow/RocketRibbon，重叠 | 16 亿美元 | 22 亿美元 | 30 亿美元 | preform 和 ribbon line 是最慢环节 |
+| CPO/NPO passive Photonics | 4 亿美元 | 10 亿美元 | 18 亿美元 | 从 pilot line 到稳定量产；极端情景需多个 switch platform |
+| 4-core MCF | 0.5 亿美元 | 2 亿美元 | 5 亿美元 | fan-in/out、测试标准和 MSA 成熟 |
+| Solar | 20 亿美元 | 25 亿美元 | 30 亿美元 | 停线升级、良率和模块产能利用率 |
+
+收入不能超过可销售产能。基准情景下 Enterprise 46 亿美元收入/52 亿美元产能约 88% 利用率；乐观为 55/65、约 85%；极端为 65/80、约 81%。这看似利用率下降，是因为新厂爬坡需要缓冲；如果所有新产能一开始就按 95% 利用率建模，良率和交付风险会被低估。
+
+### 10.2 采纳与认证
+
+| 产品 | 基准，一年后 | 乐观，一年后 | 极度乐观，一年后 |
+|---|---|---|---|
+| EDGE8/MTP/MPO | 现有 hyperscaler AVL 扩大，800G/1.6T 常规批量 | 更多项目标准化为 Base-8/ULL，跨园区统一设计 | 供给仍被分配，康宁系统份额显著提高 |
+| Contour Flow/RocketRibbon | 新园区高芯数主干批量采用 | 多个客户把 190µm/high-density cable 写入标准设计 | conduit 约束使其成为主流默认选项 |
+| MMC/PRIZM TMT | 少量 blind-mate/CPO design wins；多源件开始小批量 | 至少一个 hyperscaler 或 switch OEM 完成 production AVL | 多个平台批量，expanded-beam 进入主流高密度接口 |
+| GlassBridge/FAU | GF/Broadcom 生态继续可靠性验证和客户样品 | 1–2 个 CPO/NPO platform 进入初量产 | optical scale-up 提前，多个 switch tray 批量 |
+| 4-core MCF | MSA 初版、试点 trunk 和实验网络 | 1–2 个 hyperscaler 进入受控 AVL/早期部署 | 多个客户量产并启动 ITU/IEC/IEEE 快速标准化 |
+| Solar | 升级后恢复量产，组件线跨过经营盈亏平衡 | 客户承诺转为更高利用率，垂直整合改善毛利 | 美国本地化供需继续紧、价格和产量同时超预期 |
+
+认证时间通常是 12–24 个月，且设计寿命约 3–5 年。对于 MCF、CPO 和 GlassBridge，2026 年演示到 2027 年大额量产只有很短窗口；必须看到客户 AVL、可靠性、field failure、可维护性和 multi-source 证据，不能只看 OFC 展台。
+
+## 十一、基于订单与供给的未来一年增速
+
+### 11.1 模型方法
+
+未来收入约等于：
+
+min〔可转化合同/需求，合格可销售产能〕 ×（1－取消/延后率）＋价格/组合效应。
+
+公开证据对需求上限有帮助，对最低量帮助较小；供应侧证据则较强。因此基准模型把产能视为主要约束，乐观和极度乐观模型再提高合同转化、良率和价格/组合。
+
+### 11.2 分业务推演
+
+| 业务 | 需求/订单代理 | 当前供给 | 基准增长 | 乐观增长 | 极度乐观增长 | 主要失效点 |
+|---|---|---|---:|---:|---:|---|
+| Enterprise Network | Meta 上限 60 亿美元、两项类似协议、Amazon 数十亿美元、NVIDIA 扩产合作 | ribbon/cable 交期长、美国连接产能扩建中 | +33% | +59% | +88% | 框架上限转化慢、客户项目延后、新线良率 |
+| Carrier Network | DCI 与 AI campus 扩张；传统 carrier 复苏 | preform 和低损耗 fiber 紧 | +18% | +33% | +51% | FTTH/telecom 下滑抵消 DCI |
+| CPO/NPO Photonics | Broadcom/Nexthop/GF demo、客户联合开发 | pilot/qualification 为主，不是产能短缺 | 从小基数至约 2.5 亿美元 | 至约 6 亿美元 | 至约 12 亿美元 | CPO 推迟至 2029–2030、标准变化、维护性问题 |
+| MCF | MSA 和 hyperscaler 试验 | pre-standard、fan-in/out 生态不足 | 至约 0.3 亿美元 | 至约 1.2 亿美元 | 至约 3.5 亿美元 | 标准和经济性不成立；WDM/普通 SMF 更便宜 |
+| Solar | 多年客户承诺、美国本地制造政策 | Q2 停线升级、组件良率爬坡 | +29% | +58% | +86% | 价格下跌、供应链政策、组件良率 |
+
+### 11.3 公司整体未来十二个月
+
+当前 TTM core sales 约 170.74 亿美元；2026Q2 指引单季约 46 亿美元，年化 184 亿美元。公司目标是在 2026Q4 达到约 200 亿美元年化运行率。
+
+| 情景 | 未来十二个月 core sales | 相对当前 TTM 增长 | core operating margin | core EPS 模型 | 关键假设 |
+|---|---:|---:|---:|---:|---|
+| 基准 | 约 208 亿美元 | +22% | 20%–21% | 3.4–3.8 美元 | Q4 运行率达到约 200 亿；Enterprise +33%；Solar 恢复；CPO 贡献很小 |
+| 乐观 | 约 230 亿美元 | +35% | 21%–22% | 4.0–4.6 美元 | hyperscaler 合同转化快、价格/组合强、新厂良率顺利 |
+| 极度乐观 | 约 255 亿美元 | +49% | 22%–24% | 4.9–5.9 美元 | 产能和订单同步超预期，CPO/MCF 提前，几乎无取消或工期延迟 |
+
+与当前 190.89 美元股价对照：
+
+- 基准 EPS 中点 3.6 美元对应约 53 倍；
+- 乐观 EPS 中点 4.3 美元对应约 44 倍；
+- 极度乐观 EPS 中点 5.4 美元对应约 35 倍。
+
+即使极度乐观，估值也不便宜。因此投资回报需要的不仅是盈利增长，还需要市场继续给予 AI 光基础设施高倍数；一旦 forward P/E 回到 25–35 倍，盈利增长可能被估值压缩部分或全部抵消。
+
+## 十二、竞争格局、技术主流性与替代风险
+
+### 12.1 分层竞争者
+
+| 层级 | 主要竞争者 | 康宁优势 | 康宁弱点 |
+|---|---|---|---|
+| Preform、fiber、cable | Prysmian、Sumitomo Electric、Fujikura/AFL、Furukawa/OFS、YOFC、Hengtong、ZTT、FiberHome、STL | 垂直整合、低损耗和弯曲专利、全球产能、美国 BABA 能力 | 商品 fiber 会周期性过剩；中国供应商成本低 |
+| 数据中心 structured cabling | Amphenol、CommScope/SYSTIMAX、Panduit、Leviton、Legrand、Belden、Siemon、R&M、Molex/TE | 从 fiber 到 cable、connector、panel 的完整系统；hyperscaler 关系 | 客户可多供，部分 connector/interface 依赖生态和授权 |
+| Ferrule、VSFF、expanded beam | US Conec、SENKO、3M、Molex、TE、Amphenol、Fujikura、Sumitomo | 材料、端接、GlassBridge 和大规模制造结合 | PRIZM/SDM4 本身推动 multi-source，难形成永久独占 |
+| CPO/NPO passive interface | 3M EBO、SENKO、Molex/Teramount、Fujikura、Sumitomo、Ayar Labs/Xscape 生态及各光模块/封装厂 | FAU、PMF、GlassBridge、fiber/cable 全栈；Broadcom/GF/NVIDIA 关系 | 不控制 laser、DSP、switch ASIC；平台选择可能绕开其接口 |
+| MCF | Sumitomo、Fujikura/AFL、Furukawa 及研究机构 | 4-core/125µm 与 cable/connectivity 系统协同 | 标准、串扰、fan-in/out、维修和规模成本未定 |
+| Solar | 美国本地 polysilicon/wafer/module 厂及全球低成本组件供应商 | 本地制造、客户承诺、材料工艺 | 全球价格竞争、政策和低利润率 |
+
+康宁在 10-K 中明确列出的 Optical 主要竞争者包括 Amphenol、Fujikura/AFL、Sumitomo 和 Prysmian；两名 Optical 客户在 2025 年占该分部约 28%，说明规模优势与客户集中风险并存。
+
+### 12.2 哪些技术会成为主流
+
+| 技术 | 2026–2027 主流概率 | 长期主流概率 | 结论 |
+|---|---:|---:|---|
+| Base-8/16 MPO/MTP、ULL 预端接 trunk | 很高 | 高 | 已成熟量产，是 800G/1.6T 迁移的最确定受益者 |
+| 高芯数 ribbon、Contour Flow、RocketRibbon | 很高 | 高 | conduit、重量和安装时间约束真实；未来会继续提高密度 |
+| VSFF/MMC/SN/MDC | 中高 | 高 | 机架和 faceplate 密度要求推动，但接口份额会分散 |
+| PRIZM expanded beam/blind mate | 中 | 中高 | CPO 和可维修 tray 需要；multi-source 有利采用但削弱独占 |
+| CPO/NPO | 2027 年中低 | 长期高 | 2026–2027 仍以 pluggable 为主；功耗、密度和 scale-up 最终推动采用 |
+| 4-core MCF | 低 | 中 | 可能先用于受 conduit 限制的 DCI/园区和高密度 trunk，不一定全面替代 SMF |
+| GlassBridge fiber-to-PIC | 低至中 | 中高 | 被动对准有成本和密度优势，但取决于 PIC 平台、可靠性和多源 |
+| 铜 DAC/AEC | rack 内仍高 | 中 | 2m 以内低成本、低功耗；不会因 AI 立即消失 |
+
+项目内行业研究也支持“先高密度 structured cabling，后 CPO/MCF”的顺序：2026 年 Base-8/16 MPO/MTP 已成熟，VSFF 和 EBO 早期放量，CPO 2027 年仅选定平台批量，MCF 先试验和初期 trunk。[项目内 CPO/NPO 研究](../../行业调研/AI网络_光互联_铜互联/行业调研_CPO_NPO与交换侧光引擎_2026-07-10.md) [项目内 800G/1.6T 光模块研究](../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md)
+
+### 12.3 替代方案与风险
+
+1. 铜仍在短距占优。NVL72 等机架内 2m 以内连接可继续采用 DAC/AEC；只有距离、带宽、密度和功耗跨过阈值才需要光学化。
+2. WDM/BiDi 减少 fibers。每 port 从并行 16 fibers 转成 duplex 2 fibers 会降低物理纤芯需求，但对低损耗、connector 和 transceiver 精度要求更高。康宁价值可能从数量转向品质，未必完全抵消。
+3. MCF 有自我蚕食。4 cores/125µm 会减少 fiber strands、cable mass 和 connector 数；若 ASP 和系统份额不能覆盖数量下降，commodity fiber 收入受损。
+4. CPO 采用延迟。激光可靠性、可维修性、thermal、connector cleanliness、field service 和 multi-source 尚未完全解决。CRU 的行业判断更接近 2029–2030 才有显著采用。
+5. 标准和 multi-source 削弱垄断。PRIZM、MMC、SDM4 MCF 的生态扩展有助需求，却允许 Fujikura、Sumitomo 等竞争者进入。
+6. 扩产后过剩。Preform 和 cable 的短缺会吸引全行业资本开支；若 AI campus 工期推迟，2027–2028 commodity fiber ASP 和利用率可能快速回落。
+7. 客户集中。Optical 两大客户占分部约 28%；三个大型 hyperscaler 框架提高可见度，也提高议价与项目集中。
+8. 资本开支和营运资本。17 亿美元 capex、库存增加、Solar 停线和新线良率可能让利润增长快于现金流增长。
+9. 权证和股权稀释。NVIDIA 资金降低融资风险，但未来股份增加会压低每股盈利增幅。
+10. 估值。当前约 57 倍 forward P/E 和 8.3 倍 forward sales 对执行偏差容忍度很低。
+
+### 12.4 客户替换成本
+
+| 产品层级 | 替换成本 | 原因 |
+|---|---|---|
+| Commodity G.652.D fiber | 中低 | 标准化程度高，可通过重新认证切换多家供应商 |
+| Low-loss/bend-insensitive fiber 与高芯数 cable | 中高 | loss budget、splice、bend、diameter、ribbon 工具和 conduit 设计绑定 |
+| EDGE8/MTP/MPO 完整系统 | 高 | 极性、cassette、panel、端面、清洁流程、fire rating、warranty 和现场工具联动 |
+| hyperscaler 定制 trunk/engineering | 很高 | 设计冻结、BOM/AVL、标签、包装、物流和 12–24 个月认证；切换可能影响开服时间 |
+| CPO FAU/GlassBridge/PRIZM | 设计导入前中等，量产后很高 | 早期标准未定可替换；一旦 PIC package、tray 和自动装配线锁定，重新设计代价高 |
+| MCF | 当前中等，成熟后高 | 当前尚未锁定标准；若 fan-in/out、test、splice 和 cable ecosystem 固化，替换成本上升 |
+
+康宁最强的 pricing power 不在“每公里裸 fiber”，而在客户不愿承担工期、损耗、污染、返工和停机风险的系统环节。
+
+## 十三、投资观察清单与可证伪点
+
+### 13.1 未来两个季度最重要的验证项
+
+1. 2026Q2 core sales 是否达到约 46 亿美元，core EPS 是否达到 0.73–0.77；Optical 分部净利润率能否维持约 21%。
+2. Enterprise Network 在 36% 高基数增长后是否仍高于 25%；Carrier DCI 是否继续快于普通 telecom。
+3. Meta、Amazon及另外一项 hyperscaler 框架是否披露设施、交付批次、最低量或收入贡献；避免把同一协议重复计数。
+4. 北卡、德州和波兰产能的投产日期、初始良率、招聘进度、端接/测试能力是否与 fiber draw 同步。
+5. CRU ribbon cable lead time 是否从 50 周以上回落；若交期下降但 Optical 增长仍高，说明是扩产兑现；若交期与价格同时快速下降，可能是需求转弱。
+6. Solar Q2 额外 3,000 万美元停线费用之后，分部净利润率能否从 1.9% 恢复并跨过中个位数。
+7. CPO/MCF 是否出现真实 production AVL、可靠性认证和客户量产，而非重复 demo。
+8. 经营现金流是否跟上利润；库存增速是否回落到收入增速以下。
+
+### 13.2 论点何时被证伪
+
+- 基本面证伪：Enterprise 连续两个季度低于 20% 增长，Optical margin 回落至 18% 以下，同时高芯数 lead time 快速缩短。
+- 订单证伪：大型框架项目延期、取消或客户资本开支下调，且没有新客户吸收已建产能。
+- 技术证伪：CPO 平台采用 WDM/BiDi 或其他接口显著降低康宁被动内容；GlassBridge/PRIZM 未进入 production AVL；MCF 标准停滞。
+- 财务证伪：capex 和库存持续上升而 FCF 低于 15 亿美元年化；net debt/EBITDA 高于约 3 倍。
+- 估值证伪：即使收入仍增长，市场把 forward P/E 从约 57 倍压缩到 30–35 倍，股价仍可能显著下跌。
+
+## 十四、最终评估
+
+### 业务质量
+
+强。康宁在 AI 数据中心最需要提前施工、最难临时替换的被动光层中拥有从 preform 到完整连接系统的垂直能力。2025Q1 至 2026Q1 Optical 的收入、分部利润率、Enterprise 增速、客户合同和外部交期均互相验证，不是单一叙事。
+
+### 增长确定性
+
+未来一年中高。基准情景 2027 年中 Enterprise 约 46 亿美元、Carrier 约 39 亿美元、公司 NTM core sales 约 208 亿美元具有较强证据。最可靠产品是高密度 cable、EDGE8/MPO/MTP、预端接 trunk、panel/cassette 和 DCI，不需要 CPO 大规模采用。
+
+### 小产品可选性
+
+高，但时间不确定。PRIZM TMT/MMC、GlassBridge、FAU 和 4-core MCF 的确能显著增加机内内容量或节省 conduit/施工；现阶段收入很小、认证不完整。市场若把 2030 年 100 亿美元 Photonics 目标折现为 2027 年确定收入，会高估短期。
+
+### 财务健康
+
+健康但处于重资本扩张期。总债务/TTM EBITDA 约 2.4 倍、净债务/TTM EBITDA 约 1.9 倍、42% debt/capital、20 年平均期限和 15 亿美元未用额度提供缓冲；17 亿美元 capex、13 亿美元短债、库存增加和权证稀释需要跟踪。
+
+### 估值
+
+极其昂贵。当前约 91.9 倍 trailing P/E、56.8 倍 forward P/E、10.1 倍 TTM sales，意味着“高增长但正常执行”未必产生高股东回报。投资判断的核心不应是“AI 光纤会增长吗”，而应是“康宁能否连续多年把 AI 系统收入增长转化为超过市场预期的每股自由现金流，同时避免估值倍数大幅压缩”。
+
+一句话结论：康宁是 AI 光互联上游最完整、当前订单与供给证据最强的美国平台之一；业务趋势值得高评价，股票价格则要求极高执行标准。基本情景支持盈利继续增长，极度乐观情景才接近充分支撑现有估值的安全边际。
+
+## 十五、来源与方法
+
+### 15.1 公司和监管一手资料
+
+- [Corning 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/24741/000002474126000124/glw-20251231.htm)
+- [Corning 2026Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/24741/000002474126000205/glw-20260331.htm)
+- [2026Q1 业绩公告](https://investor.corning.com/news-and-events/news/news-details/2026/Corning-Announces-Strong-First-Quarter-2026-Financial-Results-1/default.aspx)
+- [2026Q1 earnings presentation](https://s203.q4cdn.com/212458750/files/doc_financials/2026/q1/2026-04-28-First-Quarter-Earnings-Call-Presentation-with-Appendix.pdf)
+- [2025 年分部重述表](https://www.sec.gov/Archives/edgar/data/24741/000002474126000198/glw-xsegmentrecastxq12026x.htm)
+- [2025Q4/FY2025 earnings presentation](https://s203.q4cdn.com/212458750/files/doc_financials/2025/q4/2026-01-28-Fourth-Quarter-and-Full-Year-Earnings-Call-Presentation-with-Appendix.pdf)
+- [2026 Investor Day / Springboard / Photonics](https://s203.q4cdn.com/212458750/files/doc_events/2026/May/06/Corning-GLW-Investor-Event-Presentation-2026-05-06.pdf)
+- [NVIDIA 战略合作](https://investor.corning.com/news-and-events/news/news-details/2026/NVIDIA-and-Corning-Announce-Long-Term-Partnership-To-Strengthen-U-S--Manufacturing-for-AI-Infrastructure/default.aspx)
+- [NVIDIA 权证 8-K](https://www.sec.gov/Archives/edgar/data/24741/000120677426000273/glw4631061-8k.htm)
+- [Meta 多年协议](https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2026/01/corning-and-meta-announce-multiyear-up-to-6-billion-agreement-to-accelerate-us-data-center-buildout.html)
+- [Amazon 多年协议](https://www.corning.com/worldwide/en/about-us/news-events/news/news-releases/2026/06/amazon-announces-agreement-with-corning-to-boost-us-fiber-optics-manufacturing-creating-1000-advanced-manufacturing-jobs-in-north-carolina.html)
+
+### 15.2 产品、标准和行业会议
+
+- [Corning OFC 2026 产品发布](https://www.corning.com/optical-communications/worldwide/en/home/the-signal-network-blog/corning-at-ofc-2026.html)
+- [4-core multicore fiber](https://www.corning.com/optical-communications/worldwide/en/home/products/multicore-fiber-technology.html)
+- [SDM4 MCF MSA](https://sumitomoelectric.com/press/2026/02/prs011)
+- [PRIZM TMT multi-source](https://www.usconec.com/media/h4zopm3k/us-conec-corning-fujikura-and-sumitomo-electric-joint-press-release_3-11-2026_final.pdf)
+- [GlassBridge](https://www.corning.com/oem-solutions/worldwide/en/home/products-solutions/optical-communication-components/next-generation-optics/glassbridge-connector.html)
+- [EDGE8](https://www.corning.com/data-center/worldwide/en/home/solutions/edge8.html)
+- [Contour Flow](https://www.corning.com/optical-communications/cala/en/home/products/fiber-optic-cable/indoor-outdoor-cables/contour-flow.html)
+- [CRU：OFC 2026 光纤、ribbon、CPO 和 MCF 观察](https://www.crugroup.com/en/communities/thought-leadership/2026/key-takeaways-and-trends-from-the-ofc-2026-conference/)
+- [CRU：preform 约束与光纤涨价](https://www.crugroup.com/en/communities/thought-leadership/2026/optical-fibre-prices-rise-as-preform-availability-tightens/)
+- [CRU：月度光纤价格指数](https://www.crugroup.com/en/communities/thought-leadership/2026/cru-introduces-monthly-optical-fibre-price-reporting-in-response-to-market-volatility/)
+
+### 15.3 项目内行业资料
+
+- [高速连接器、背板与结构化布线](../../行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-07-10.md)
+- [800G/1.6T 可插拔光模块](../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md)
+- [CPO/NPO 与交换侧光引擎](../../行业调研/AI网络_光互联_铜互联/行业调研_CPO_NPO与交换侧光引擎_2026-07-10.md)
+- [AI 以太网交换系统与 Fabric 芯片](../../行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-07-10.md)
+- [AI 数据中心建设规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+- [AI 服务器整机与机架集成](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-07-10.md)
+- [玻璃基板、TGV 与玻璃检测](../../行业调研/晶圆制造_设备_材料_测试/行业调研_玻璃基板、TGV与玻璃检测_2026-07-11.md)
+
+### 15.4 估算纪律
+
+- 未披露数据一律写成区间或“不披露”，不把合同 cap 当 backlog。
+- AI 收入以 Enterprise hyperscale、Carrier DCI 和产品技术栈逐层推算；不把全部 Optical Communications 算作 AI。
+- 产品收入是从分部收入、增速、客户协议、行业容量和产品组合反推，子产品可能重叠，不能相加。
+- 产能以最新收入年化、满产/交期和已公告扩产反推；“美国 connectivity 10 倍”只用于相关子集，不外推整个公司。
+- BOM 的物理 lane 数采用公司 Investor Day 架构；美元内容量采用行业 BOM 和系统定价区间，因 hyperscaler 合同价格保密，不给单点伪精确值。
+- 基准、乐观、极度乐观情景用于检验估值敏感性，不构成公司指引或投资承诺。

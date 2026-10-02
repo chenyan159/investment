@@ -1,0 +1,174 @@
+# 公司收入传导与价值传导评估：Constellation Energy（CEG）
+
+报告日期：2026-06-12  
+主口径：NTM，即 2026Q2-2027Q1 / 未来 12 个月。  
+补充口径：FY2026 指引、2027 年合同生效节点、2026-2029 Base EPS 增长框架、Crane / Clinton / Freestone / Thad Hill 等项目全周期 run-rate 和远期期权。  
+资料边界：使用 `公司调研/`、`行业调研/` 内允许资料，并补充 Constellation Energy 官方公告、SEC 10-Q、IR presentation、NRC / Federal Register 等公开一手资料；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、模型比较或全公司排序结果。  
+输出边界：本报告只评估 CEG 单家公司从行业需求到 NTM 收入、利润、现金流和经营质量的传导；不做全公司排序，不给投资评级，不判断股价区间，不使用金融市场价格、估值倍数或股价表现作为经营证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：NTM 主表只纳入 2026Q2-2027Q1 能进入收入表或已在指引 / run-rate 中可见的电力、容量、零售、长期合同和并表收入。Crane / Microsoft `835MW` 核电重启、Clinton / Meta 2027-06 后全输出 PPA、Freestone / Thad Hill / CyrusOne 约 `1.16GW` 数据中心站点供电、`147M MWh` 可长约核电库存和 `~9,350MW` add / extend path 只按收入确认时间表折扣处理，不把项目全周期金额直接写入 NTM。
+- 当前收入基准、指引和 run-rate：2025 revenue `$25.533B`；2026Q1 revenue `$11.122B`，同比 `+63.8%`，主要由 Calpine 2026-01-07 并表、市场条件和组合变化驱动；2026Q1 GAAP net income `$1.590B` / EPS `$4.49`，Adjusted operating earnings `$972M` / EPS `$2.74`。公司在 Q1 后维持 FY2026 adjusted operating EPS `$11.00-$12.00` 指引；按 361M 股指引口径，大致对应 FY2026 adjusted operating earnings `$3.97-$4.33B`。
+- 重要产品/业务线：1）存量核电 clean firm MWh 与 PTC / ZEC / CMC 支撑；2）长期清洁电力合同与 C&I clean energy 平台；3）Calpine 天然气 / 油 / 抽蓄 / 容量资产；4）数据中心站点供电和 co-location：Freestone / Thad Hill / long-term gas structures；5）竞争性零售和商业客户平台；6）地热、可再生、储能和需求响应；7）Crane Clean Energy Center / Microsoft 和核电 uprate / relicensing 远期期权。
+- NTM 公司收入四情景：悲观 `$40.0-$43.5B`；基准 `$43.5-$48.5B`；乐观 `$48.5-$54.5B`；极度乐观 `$54.5-$60.0B`。2025 到 2026/NTM 的绝对增长主要是 Calpine 并表台阶，不等同同店需求增速；经营质量要看 adjusted operating earnings、contracted MWh、容量价、核 PTC、燃气 spark spread 和现金流。
+- 利润或 EBITDA 四情景：CEG 不以制造业 EBITDA / gross margin 管理，主锚用 adjusted operating earnings。悲观 `$3.60-$3.95B`；基准 `$4.00-$4.45B`；乐观 `$4.45-$5.15B`；极度乐观 `$5.20-$6.10B`。乐观利润必须来自合同价格、容量 / spark spread、核电可用率、Calpine 协同和高质量长约，不自动跟随 revenue 上修。
+- 最大传导瓶颈：从“数据中心 / AI 电力需求强”到“CEG 可确认收入”的中间链条很长：客户签约 -> PUCT / PJM / ERCOT / NRC / FERC / DOJ 条件 -> site infrastructure -> 并网 / net metering -> 发电资产可用率 -> 合同结算 -> adjusted gross margin。任何一个环节延期都会把远期 MW 从基准下移到乐观上限或附录。
+- 最大利润率变量：核电 PTC floor 与市场电价 / gross receipts 的相互作用、长期 PPA premium、Calpine gas fleet spark spread / 容量价、核电 refueling outage days、Freestone / Thad Hill 是否具备高 margin site / infrastructure fee、以及 Calpine 整合成本。
+- 最大现金流变量：Calpine 并购后债务、资产剥离现金回收、`$3.9B` growth capex、Crane / uprate / BESS / gas new build 资本支出、客户合同预付款或成本承担、核燃料和维护 capex、collateral 变化。
+- 可信度：基准为中高；悲观为中；乐观为中；极度乐观为低到中。CEG 的需求证据强、资产稀缺性强、Q1 收入和指引为 A 级锚；但 NTM 直接 AI 数据中心收入占比仍低，Crane 和大部分新增站点供电更偏 2027H2-2029，不能前置进 NTM 基准。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 存量核电 clean firm MWh 与 PTC / ZEC / CMC 支撑 | 2026Q1 核电产量 `44,666GWh`；公司称核电 fleet 年能力 `180M+ MWh`；2026Q1 公司总收入 `$11.122B`，未按核电收入单列 | 收入表不单列；对 adjusted earnings 和清洁电力合同价值权重最高 | 当前利润质量和长约重定价核心 | A/B：核电产量、PTC 规则、州清洁补偿、公司披露 | 进入基准；按可用 MWh、PTC、现有合约和市场电价处理 | 更多可用核电 MWh 以 premium long-term price 锁定 |
+| 长期清洁电力合同与 C&I clean energy 平台 | Outlook 显示 2026 contracted clean MWh 约 `36M MWh`，2029 提升至 `53-54M MWh`；仍有约 `147M MWh` PTC 支撑但可长约库存 | 当前收入占比无法可靠拆分；对利润弹性和可见性高 | 把 merchant MWh 转成长期现金流 | B：长期合同、NY ZEC / IL CMC / retail C&I load、企业客户 | 基准只纳入已签、已生效或 NTM 尾端可确认部分 | 147M MWh 可长约库存是最大远期利润期权 |
+| Calpine 天然气 / 油 / 抽蓄 / 容量资产 | Calpine 2026-01-07 并表；10-Q 披露 Calpine post-divest generation capacity 约 `23GW`；CEG outlook 提到约 `27GW` natural gas fleet，其中约 80% 为 CCGT / cogeneration | 2026 收入台阶的最大来源之一 | 可靠容量、spark spread、数据中心 time-to-power | A/B：并表、资产、EFOF、容量和 long-term structures | 进入基准；2026 全年并表收入为主锚 | 更多 gas-site data center contracts 和高利用率 |
+| 数据中心站点供电与 co-location：Freestone / Thad Hill / gas structures | Freestone Phase 1 `380MW` PUCT net metering 获批且 subject to conditions；Phase 2 `380MW` exclusive；Thad Hill / Freestone 合计 `>1,100MW` data center agreements；outlook 另有 `~2,300MW` long-term structures at natural gas plants | 当前直接收入低，未单列；NTM 以工程 / site / 部分电力收入为主 | AI 电力叙事转收入的关键增量 | B/C：客户协议、监管节点、站点基础设施；部分交付细节未披露 | 小比例进入基准；大部分进入乐观 / 极度乐观上限 | 满负荷后可形成 `$0.8-$1.5B+` 年化收入池，但多在 NTM 之后 |
+| 竞争性零售和商业客户平台 | 公司称约 `2.5M` customer accounts，服务约 `80%` Fortune 100；outlook 显示约 `190M MWh` C&I load served、combined electric load served 约 `275M MWh` | 收入表中与批发 / 发电 / 套保重叠；外部收入可见但不按产品拆分 | 需求捕获、客户关系和 cross-sell | A/B：客户账户、C&I load、商业平台披露 | 进入基准，但不与发电 MWh 重复加总 | Hourly carbon-free energy、demand response、structured clean products |
+| 地热、可再生、储能和需求响应 | The Geysers `725MW` firm geothermal PPA 口径；Pastoria solar `105MW` 已投运，`80MW/320MWh` BESS 2026 春夏上线；contracted storage `~880MW` | 当前小于核电 / 燃气，但对 24/7 clean portfolio 有战略价值 | 组合质量、客户 clean attribute、峰值管理 | A/B：项目投运、PPA、容量披露 | 进入基准的小额和中等确定性部分；不夸大独立收入 | 与数据中心 flexible interconnection / BESS / geothermal PPA 打包 |
+| Crane Clean Energy Center / Microsoft 与核电 uprate / relicensing | Microsoft 20 年 PPA 支持 Three Mile Island Unit 1 / Crane `835MW` 重启；DOE `$1.0B` loan 支持；NRC 2026-06 发布 Draft EA / Draft FONSI；公司 path to add / extend `~9,350MW` | 当前 NTM 收入接近 `0`，但长期合同价值高 | 核电重启模板和最大可验证 AI 清洁电力期权 | B/C：正式 PPA、贷款、监管节点；尚未 COD | 不进入 NTM 基准；只作为乐观上限、极度乐观和附录跟踪 | Crane COD、第二个核重启 / uprate、SMR / advanced nuclear |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不评估 CEG 份额、收入确认、利润率或公司汇总。需求单位按业务线选择 MWh、MW、TWh、PPA 年限、容量、客户负荷或储能 MW。所有情景均相对 CEG 当前需求锚：2026Q1 run-rate、FY2026 adjusted EPS 指引、2026 Business & Earnings Outlook、已披露 PPA / site agreements、行业电力需求和本地行业调研的 2026-2027 AI 数据中心电力瓶颈。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 存量核电 clean firm MWh 与 PTC / ZEC / CMC 支撑 | 2026Q1 核电 `44.666TWh`；capacity factor `92.3%` excluding Salem / STP；年能力 `180M+ MWh`；核 PTC 2024-2032 | refueling / non-refueling outage、市场价、CMC / ZEC 结算或 PTC phase-out 低于当前预期；可用 MWh 或实现价格下修 | capacity factor 维持低 90% 到中 90%；PTC floor 和现有州计划提供下行保护；NTM 核电可用量正常 | 核电 availability 好于计划，outage 少于预期，长约 premium 或 market price 高于 base | 核电可用率、价格、长约和政策安全垫同时优于预期，且更多 available MWh 被锁定 | 年核电 MWh 绝对池约 `180M+`，1% capacity factor 变化约等于 `1.8M MWh` 量级 | 基准=符合当前 operational excellence；乐观=高于指引和 outage 计划 | Q1 无 non-refueling outage days；反证是计划检修、设备修复、PTC phase-out、核监管 |
+| 长期清洁电力合同与 C&I clean energy 平台 | 2026 contracted clean MWh 约 `36M`，2029 `53-54M`；可长约库存约 `147M MWh`；C&I load served 约 `190M MWh` | 大客户签约放慢，clean premium 降低，客户转向 utility / onsite gas / fuel cell 或 flexible interconnection | 现有 clean contracts 正常滚动，Clinton / Meta 2027-06 开始进入需求锚，企业客户续约稳定 | 新增 `10-20M MWh` long-term clean contracts 或更高 premium pricing，更多 Fortune 100 客户锁定 24/7 CFE | 大客户把核电 / 地热 / 储能组合视为稀缺资源，`147M MWh` 中可签部分明显加速 | 相对 2026 `36M MWh`，乐观可多锁定 `10M+ MWh` 年化池；但 NTM 收入确认只认生效部分 | 基准=当前 long-term contracting 正常兑现；极度乐观=超出当前路径 | Outlook 提到 long-term deals；反证是 AI CapEx 降速、客户议价、FERC / state rules |
+| Calpine 天然气 / 油 / 抽蓄 / 容量资产 | 并表后约 `23GW` post-divest generation capacity；约 `27GW` natural gas fleet，约 80% CCGT / cogeneration；Q1 gas / oil / pumped hydro EFOF `4.5%` | spark spread、容量价、燃气供应或 forced outages 低于预期；DOJ-required divestiture 执行扰动 | 2026 全年并表正常，gas fleet 利用率和容量收入按当前市场 / contract 路径兑现 | ERCOT / PJM 数据中心负荷抬高 utilization，gas contracts 和容量价均优于基准 | 数据中心负荷 + 容量紧张 + 高 spark spread 同时成立，gas fleet 大幅提高 earnings contribution | NTM 需求绝对池是数十 GW dispatchable capacity；收入受 MWh、spark spread、容量和套保共同影响 | 基准=并表台阶正常；乐观=高于当前市场和指引 | Calpine 并表、ERCOT/PJM 负荷增长；反证是气价、排放许可、容量规则、资产出售 |
+| 数据中心站点供电与 co-location | Freestone `380MW + 380MW`，Thad Hill / Freestone `>1,100MW` data center agreements；行业资料显示美国 AI IT-load equivalent 2026 务实 `6.0-8.5GW`，2027 `9.0-14.0GW` | PUCT / ERCOT / site build / 客户数据中心施工延迟，NTM 只保留极少 site / early-stage revenue | Freestone Phase 1 条件推进，Thad Hill 维持可见，部分工程 / site / power revenue 进入 NTM 尾端 | Freestone Phase 1 + Thad Hill 交付窗口清楚，Phase 2 从 exclusive 转更强合同路径 | `1GW+` 数据中心站点供电进入不可撤销工程或接近满负荷年化路径 | 满负荷 1.16GW 按 `$70-$110/MWh` 和 80%-95% 利用率约 `$0.57-$1.06B` 电能年化，未含容量 / infrastructure fee | 基准=只承认可确认路径；乐观=客户和监管明显快于当前 | Q1 Freestone PUCT net metering approved subject to conditions；反证是 announced MW 与 energized MW 差距 |
+| 竞争性零售和商业客户平台 | 约 `2.5M` accounts，80% Fortune 100；combined electric load served 约 `275M MWh`；平均 customer duration `5+` years | C&I demand 弱、客户流失、margin 压缩、套保失误或客户转向自备电 | 客户平台维持稳定，C&I clean / carbon-free products 正常销售，支持 generation monetization | Fortune 100 / hyperscaler / C&I 对 hourly CFE、demand response、structured capacity 需求上升 | 零售平台成为更多清洁电力、flexible load 和容量产品入口，客户 duration 与 margin 同时上升 | 需求池以 `190M+ MWh` C&I load 和 `275M MWh` combined load 表达 | 基准=当前平台稳定；乐观=产品 mix 和 margin 上修 | 商业平台披露；反证是零售价格竞争、信用风险、客户自供 |
+| 地热、可再生、储能和需求响应 | The Geysers `725MW` firm geothermal PPA；2026-06 Geysers `25MW` expansion；Pastoria solar `105MW` + BESS `80MW/320MWh`；contracted storage `~880MW` | 项目上线慢、储能收益低、clean attribute 价格低，需求只维持小额 | 已投运 / 近投运项目正常贡献，小额增强 clean portfolio | 24/7 clean energy 和 flexible interconnection 使地热 / BESS 需求强于预期 | 数据中心客户把 geothermal + BESS + clean attributes 作为标准合同附件 | NTM 绝对需求小于核 / gas，但容量和清洁属性价值较高 | 基准=小额稳增；乐观=打包价值上修 | Geysers expansion、Pastoria、BESS；反证是储能 price spread、许可、消防 |
+| Crane / Microsoft 与核电 uprate / relicensing | Crane `835MW` 20 年 Microsoft PPA；DOE `$1.0B` loan；NRC Draft EA / Draft FONSI；company path to add / extend `~9,350MW` | NRC、施工、设备修复、成本或融资延期，NTM 需求仍为 `0` 收入 | NTM 作为监管 / 施工 backlog，不确认实质电力收入 | NRC / DOE / 施工节点超预期，2027H2 调试可信度提升，但 NTM 只可能小额 | Crane 监管大幅提前且第二个核重启 / uprate 项目进入公司特定路径 | 完全年化 `835MW` 核电在 `$70-$100/MWh`、90%-95% CF 下约 `$0.46-$0.69B` 电能收入 | 基准=远期期权，不进收入；乐观=可信度上修而非当期收入 | Microsoft PPA 和 NRC 节点；反证是 2028 目标、核监管和施工复杂性 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断需求能否进入 CEG NTM 收入表，以及当前可收入化基数；不预测增长，不判断利润率。CEG 不按“核电 / 燃气 / 数据中心 / 零售”披露标准产品收入，且发电、零售、套保、容量和 clean attributes 会重叠。因此表内产品基数是经营传导锚，不可机械相加；公司汇总在第 6 节去重。证据等级：A=收入表、分部 / 财务指引、已确认产量或收入；B=已披露合同、PPA、MW、监管节点、明确交付时间表；C=管理层可验证披露或认证 / 规划；D=早期合作；E=主题相关。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 存量核电 clean firm MWh 与 PTC / ZEC / CMC 支撑 | 2026Q1 核电产量 `44,666GWh`；2026Q1 total revenue `$11.122B`；核 PTC 最高约 `$15/MWh` 且有 phase-out；核电年能力 `180M+ MWh` | 直接 | 高固定成本、高可用率、高 operating leverage；PTC 提供下行保护，高电价时 PTC 减少 | revenue / adjusted gross margin proxy `$11-$13B` | `$13-$16B` | `$16-$19B` | `$19-$22B` | 基准符合当前运营和 PTC / 市场价路径；乐观需 MWh / realized price / contracts 同时更强 | A/B | 是 | 核电产量、PTC、州补偿、FY2026 指引 | 进入 NTM 基准主口径；不与零售平台重复加总 |
+| 长期清洁电力合同与 C&I clean energy 平台 | 2026 contracted clean MWh 约 `36M`；2029 `53-54M`；可长约库存 `147M MWh`；Clinton / Meta 2027-06 生效 | 直接 / 间接 | 相对 merchant 更可见；价格、容量、clean attributes 和 customer solution 决定 margin | `$2.4-$3.0B` 合同电能 / attributes pool | `$3.0-$4.0B` | `$4.0-$5.5B` | `$5.5-$7.5B` | 基准只纳入已生效 / NTM 生效部分；库存不提前算收入 | B | 是，保守 | 长期合同 MWh、企业客户、PPA 生效节点 | 进入基准；147M MWh 未签库存只作乐观 / 远期期权 |
+| Calpine 天然气 / 油 / 抽蓄 / 容量资产 | Calpine 2026-01-07 并表；10-Q 披露约 `23GW` post-divest capacity；Q1 gas / oil / pumped hydro EFOF `4.5%` | 直接 | 收入对电价 / spark spread / 容量价敏感；燃料 pass-through 多，利润质量低于 premium nuclear PPA | `$8-$10B` | `$10-$14B` | `$14-$18B` | `$18-$22B` | 基准主要是并表和正常 utilization；乐观需容量 / spark spread / data center load 更强 | A/B | 是 | 并表、资产、Q1 指标、FY2026 指引 | 进入 NTM 基准；注意 DOJ-required divestiture 和市场波动 |
+| 数据中心站点供电与 co-location | Freestone `380MW` Phase 1 PUCT net metering approved subject to conditions；Phase 2 `380MW` exclusive；Thad Hill / Freestone `>1,100MW`; `~2,300MW` long-term gas structures | 直接潜在；当前收入低 | 若含 site infrastructure / capacity / premium power，利润质量好于普通 merchant MWh；若只是低毛利电能则较弱 | `$0-$0.15B` | `$0.15-$0.45B` | `$0.45-$0.95B` | `$0.95-$1.60B` | 基准仅承认 NTM 可确认的工程 / site / 部分电力；满负荷 run-rate 不进基准 | B/C | 部分 | 已披露客户协议、PUCT 节点、站点条件 | 小比例进入 NTM 基准；大部分为乐观 / 极度乐观上限 |
+| 竞争性零售和商业客户平台 | 约 `2.5M` accounts，80% Fortune 100；`190M MWh` C&I load served，combined electric load served 约 `275M MWh` | 直接且与发电重叠 | 零售毛利、结构化产品、客户关系和 clean premium；energy cost pass-through 不等于利润 | `$17-$20B` gross platform revenue proxy | `$20-$24B` | `$24-$28B` | `$28-$32B` | 基准符合当前 load served 和客户 duration；乐观需 product mix / margin 上修 | A/B | 是 | 客户账户、load served、商业平台 | 进入基准但作为平台收入锚；汇总时与发电去重 |
+| 地热、可再生、储能和需求响应 | Geysers `725MW` firm geothermal PPA；Geysers `25MW` expansion；Pastoria `105MW` solar、`80MW/320MWh` BESS；contracted storage `~880MW` | 直接 / 间接 | 相对高 clean attribute 和 reliability value；储能收益取决于容量 / 能量 / ancillary services | `$0.4-$0.7B` | `$0.7-$1.2B` | `$1.2-$2.0B` | `$2.0-$3.0B` | 基准为小额稳增；乐观需打包到 24/7 clean contracts | A/B | 是，小比例 | 已投运 / 合同项目、PPA、储能容量 | 进入 NTM 基准的小额部分；高端组合价值进乐观 |
+| Crane / Microsoft 与核电 uprate / relicensing | Crane `835MW` 20 年 PPA，DOE `$1.0B` loan，NRC Draft EA / Draft FONSI；目前未 COD | 未来直接 | COD 后可能高质量长约；NTM 主要是 capex 和执行风险，不是收入 | `$0` | `$0` | `$0-$0.05B` | `$0.05-$0.15B` | 基准不进收入；乐观只反映调试 / 监管节点可信度 | B/C | 否 | PPA 强，但收入确认窗口大概率超出 NTM | 排除出 NTM 基准；移入附录 / 乐观上限 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，评估每条业务线在 NTM 内对 CEG 的收入、利润、现金流和经营质量贡献。由于 CEG 的发电、零售、套保、容量、PTC 和 clean attributes 在会计上交叉，产品贡献为经营传导区间，不可逐项相加；第 6 节公司四情景已去重。利润贡献以 adjusted operating earnings / adjusted gross margin 方向为主，不以 GAAP gross margin 或 EBITDA 机械推导。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 存量核电 clean firm MWh 与 PTC / ZEC / CMC 支撑 | 悲观产品 | `$11-$13B` proxy | adjusted earnings 低于当前核电运营路径，PTC 支撑但 realized price / outage 拖累 | 下行 | 低于当前预期 | Q1 nuclear output 强，但 refueling days 高于去年 | 保留 | outage、PTC phase-out、CMC / ZEC 结算、市场价 |
+| 存量核电 clean firm MWh 与 PTC / ZEC / CMC 支撑 | 基准产品 | `$13-$16B` proxy | 核电是 FY2026 指引的核心支撑，贡献稳定 | 稳定 | 符合当前预期 | 2026Q1 `44,666GWh`，no non-refueling outage days | 保留 | 不把高电价和 PTC 同时最大化 |
+| 存量核电 clean firm MWh 与 PTC / ZEC / CMC 支撑 | 乐观产品 | `$16-$19B` proxy | MWh、合同价或 market price 更强，PTC / commercial margin 共同改善 | 上行 | 高于当前预期 | available nuclear generation 稀缺，客户愿意签 premium clean firm MWh | 保留 | 高 price 会降低 PTC；不能重复计算 |
+| 存量核电 clean firm MWh 与 PTC / ZEC / CMC 支撑 | 极度乐观产品 | `$19-$22B` proxy | 只有可用率、价格、长约和政策同时有利时大幅上修 | 明显上行 | 显著高于当前预期 | 147M MWh 库存被快速重定价 | 下移为上限 | NTM 内新签合同不一定当期全部生效 |
+| 长期清洁电力合同与 C&I clean energy 平台 | 悲观产品 | `$2.4-$3.0B` | premium 低或客户签约慢，利润可见性弱于预期 | 下行 | 低于当前预期 | clean demand 强但客户可替代路径存在 | 保留 | AI CapEx 放慢、客户议价、合同价格未披露 |
+| 长期清洁电力合同与 C&I clean energy 平台 | 基准产品 | `$3.0-$4.0B` | 现有 long-term clean contracts 正常贡献；Clinton 尾端开始增强可见性 | 稳定到小幅上行 | 符合当前预期 | contracted clean MWh 和 C&I load served | 保留 | Clinton 2027-06 生效，对 NTM 贡献只有尾端 |
+| 长期清洁电力合同与 C&I clean energy 平台 | 乐观产品 | `$4.0-$5.5B` | 更多 MWh premium pricing，clean attributes / capacity 组合改善 | 上行 | 高于当前预期 | Meta / Microsoft 案例验证 hyperscaler 核电需求 | 保留 | 合同公告不等于 NTM 收入确认 |
+| 长期清洁电力合同与 C&I clean energy 平台 | 极度乐观产品 | `$5.5-$7.5B` | 多个客户和多个区域同时锁约，利润质量显著提高 | 明显上行 | 显著高于当前预期 | 147M MWh 可长约库存被加速商业化 | 下移为乐观上限 | 价格、交付、监管和会计生效节点必须同时成立 |
+| Calpine 天然气 / 油 / 抽蓄 / 容量资产 | 悲观产品 | `$8-$10B` | spark spread / 容量价 / forced outage 拖累，整合成本偏高 | 下行 | 低于当前预期 | 并购后资产大，但 gas / capacity 波动高 | 保留 | 燃气价、排放、资产出售、市场价 |
+| Calpine 天然气 / 油 / 抽蓄 / 容量资产 | 基准产品 | `$10-$14B` | 2026 全年并表贡献，capacity / energy / retail 正常兑现 | 稳定 | 符合当前预期 | 2026Q1 并表、EFOF `4.5%` | 保留 | 不把 Q1 高市场条件简单全年化 |
+| Calpine 天然气 / 油 / 抽蓄 / 容量资产 | 乐观产品 | `$14-$18B` | ERCOT / PJM 负荷和容量价提升，gas contracts 增强 | 上行 | 高于当前预期 | 约 27GW gas fleet，数据中心需要 firm capacity | 保留 | 低毛利电能 pass-through 不能自动上修利润 |
+| Calpine 天然气 / 油 / 抽蓄 / 容量资产 | 极度乐观产品 | `$18-$22B` | gas utilization、spark spread、capacity 和 data center contracts 同时突破 | 上行但波动 | 显著高于当前预期 | CCGT excess capacity 被数据中心负荷吸收 | 下移为上限 | 监管、气价和燃气管线限制 |
+| 数据中心站点供电与 co-location | 悲观产品 | `$0-$0.15B` | 主要是成本和前期投入，利润贡献有限 | 下行 / 未显性 | 低于当前预期 | PUCT approval subject to conditions | 保留 | site build、客户施工、ERCOT 条件 |
+| 数据中心站点供电与 co-location | 基准产品 | `$0.15-$0.45B` | 小额 site / capacity / early power revenue；利润率取决于合同结构 | 小幅上行 | 符合当前预期 | Freestone Phase 1、Thad Hill / Freestone agreements | 保留 | MW 不等于 energized revenue |
+| 数据中心站点供电与 co-location | 乐观产品 | `$0.45-$0.95B` | 若含 infrastructure fee / capacity premium，利润质量好于普通 MWh | 上行 | 高于当前预期 | Phase 1 工程和 Thad Hill 节奏更清楚 | 保留但中等可信 | 客户、许可、燃气、并网同时推进 |
+| 数据中心站点供电与 co-location | 极度乐观产品 | `$0.95-$1.60B` | 1GW 级站点供电接近年化，且合同价格高 | 明显上行 | 显著高于当前预期 | `>1,100MW` data center agreements 大部分落入不可撤销工程 | 下移为极度上限 | NTM 时间窗口太短，收入确认证据不足 |
+| 竞争性零售和商业客户平台 | 悲观产品 | `$17-$20B` gross proxy | margin 压缩或客户流失，负荷收入仍可能高但利润差 | 下行 | 低于当前预期 | 零售竞争和能源价格波动 | 保留 | credit / churn / hedging / pass-through |
+| 竞争性零售和商业客户平台 | 基准产品 | `$20-$24B` gross proxy | 客户平台支持发电 MWh monetization 和 clean products | 稳定 | 符合当前预期 | 2.5M accounts、80% Fortune 100、C&I load | 保留 | 与发电收入去重 |
+| 竞争性零售和商业客户平台 | 乐观产品 | `$24-$28B` gross proxy | HCFE / clean products / demand response mix 改善 | 小幅上行 | 高于当前预期 | 企业客户需求强、平均 duration `5+` years | 保留 | product mix 披露不足 |
+| 竞争性零售和商业客户平台 | 极度乐观产品 | `$28-$32B` gross proxy | 零售平台成为 AI / C&I clean energy 入口，margin 扩张 | 上行 | 显著高于当前预期 | 多客户打包 energy + capacity + clean attributes | 下移为上限 | 低毛利 pass-through 不等于高质量利润 |
+| 地热、可再生、储能和需求响应 | 悲观产品 | `$0.4-$0.7B` | 项目小、储能收益低，利润贡献弱 | 稳定到下行 | 低于当前预期 | Geysers / Pastoria 规模有限 | 保留 | spread、消防、许可 |
+| 地热、可再生、储能和需求响应 | 基准产品 | `$0.7-$1.2B` | 小额但高质量 clean / reliability contribution | 稳定 | 符合当前预期 | Geysers `25MW` expansion、Pastoria solar / BESS | 保留 | 不夸大体量 |
+| 地热、可再生、储能和需求响应 | 乐观产品 | `$1.2-$2.0B` | BESS / geothermal 与 long-term CFE 打包，利润率改善 | 上行 | 高于当前预期 | The Geysers `725MW` firm geothermal PPA 口径 | 保留 | 项目确认和收入拆分不足 |
+| 地热、可再生、储能和需求响应 | 极度乐观产品 | `$2.0-$3.0B` | 24/7 CFE 打包标准化，高毛利 attributes / service 上行 | 明显上行 | 上限 | 地热 + BESS + demand response 成为数据中心合同附件 | 移入乐观上限 | 远期组合价值多于 NTM 收入 |
+| Crane / Microsoft 与核电 uprate / relicensing | 悲观产品 | `$0` | 前期成本和 capex，不贡献 NTM 收入 | 下行 / 费用化 | 低于题材预期 | 监管 / 施工复杂 | 保留 | NRC、设备、成本、融资 |
+| Crane / Microsoft 与核电 uprate / relicensing | 基准产品 | `$0` | 不贡献 NTM 收入；作为 future backlog 增强长期可见性 | 中性 | 符合严格口径 | 20 年 PPA 强，但 COD 不在 NTM 主窗口 | 排除出基准收入 | 不能把 2028 年化收入前置 |
+| Crane / Microsoft 与核电 uprate / relicensing | 乐观产品 | `$0-$0.05B` | 监管节点顺利提高可信度，收入仍小 | 小幅上行 / 主要是可信度 | 高于当前执行路径 | NRC Draft EA / Draft FONSI、DOE loan | 仅作跟踪 | 调试收入或前期确认无法可靠量化 |
+| Crane / Microsoft 与核电 uprate / relicensing | 极度乐观产品 | `$0.05-$0.15B` | 只在极少数提前调试 / 附带收入情形出现 | 上限 | 显著高于当前预期 | 核重启路径大幅提前 | 移入附录 | NTM 证据不足，2028 目标约束 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节将产品级贡献去重后合成为 CEG NTM 公司收入、毛利率、经营利润率、adjusted operating earnings / 净利润方向和自由现金流方向。CEG 的 GAAP revenue 受电力价格、燃料、购电、套保、衍生品、Calpine 并表和资产出售影响，不能用制造业毛利率简单比较；表内“毛利率”填入“无法可靠量化”并说明用 adjusted gross margin / adjusted operating earnings 观察。收入增长不自动等于利润质量改善。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$40.0-$43.5B` | vs FY2025 `$25.533B` 约 `+57%-70%`，但主要来自 Calpine 并表；同店低于当前路径 | 低于 FY2026 指引 / Q1 run-rate；Calpine utilization、核电价格或站点供电低于预期 | 无法可靠量化；以 adjusted gross margin / PTC / spark spread 看 | adjusted operating earnings / revenue proxy `8.3%-9.5%` | adjusted operating earnings `$3.60-$3.95B`；GAAP 净利润可能受 fair value、整合成本和资产出售扰动 | FCF before growth 仍可为正但低于当前预期；growth capex、Crane、collateral 和并购整合占用现金 | 中 | 核电 outage、spark spread、Calpine 整合、PPA 生效延迟、资产出售条件 |
+| 基准公司 | `$43.5-$48.5B` | 约 `+70%-90%`；Calpine 全年化 + 核电 / 零售 / 容量正常兑现 | 符合 FY2026 adjusted EPS `$11-$12`、Q1 run-rate、当前合同和并表节奏 | 无法可靠量化；看 adjusted gross margin 与 Base EPS | `8.5%-10.2%` proxy | adjusted operating earnings `$4.00-$4.45B`；接近 FY2026 指引并含 2027Q1 正常延续 | FCF before growth 正向；growth capex 和客户项目使总 FCF 对时点敏感 | 中高 | 不把 Q1 一次性 market / fair value 机械全年化；Clinton 只有 NTM 尾端 |
+| 乐观公司 | `$48.5-$54.5B` | 约 `+90%-113%` | 高于当前预期；需要更多 long-term clean contracts、Calpine utilization / capacity、站点供电和 C&I clean products 同步改善 | 无法可靠量化；若 high-quality contracted clean / capacity mix 上升则质量改善 | `9.0%-10.8%` proxy | adjusted operating earnings `$4.45-$5.15B`；向 2026-2029 `20%+` Base EPS CAGR 路径提前 | 经营现金流改善，但若项目和 capex 前置，短期 FCF 可能不如利润 | 中 | PPA premium、Freestone / Thad Hill 进度、gas spark spread、核电可用率和客户成本承担 |
+| 极度乐观公司 | `$54.5-$60.0B` | 约 `+113%-135%` | 显著高于当前预期；需要需求、公司捕获、合同价格、利润质量和执行同时突破 | 无法可靠量化；只有高质量合同占比上升才算利润质量上修 | `9.5%-11.5%` proxy | adjusted operating earnings `$5.20-$6.10B`；需要多个核心传导环节同时超预期 | FCF 方向强，但 capex、DOE / customer financing、collateral 和 working capital 必须同步顺利 | 低到中 | 不能只靠 Crane 或单一 MW 项目；监管、施工、燃气、核电和客户需求都要同时成立 |
+
+汇总检查：
+
+- 去重：零售 / C&I 平台收入、核电 MWh、Calpine gas MWh、capacity 和 clean attributes 在收入表中交叉，产品表不可机械相加；公司表按 Q1 run-rate、FY2026 指引和项目生效时间去重。
+- 一次性：未把 2026Q1 fair value gains、并购会计或单季市场条件机械全年化；未把资产出售 proceeds 当经营收入。
+- 替代：自备电 / microgrid / fuel cell 会影响 CEG 数据中心供电定价，但 Bloom / CAT / GE Vernova / Wärtsilä 等 onsite route 也是竞争路径。
+- 传统业务抵消：普通零售价格竞争、燃料 / 购电 pass-through、spark spread 和资产剥离可能抵消 AI / data center 叙事。
+- 远期期权：Crane / Microsoft、更多核电 uprate / relicensing、SMR / advanced nuclear、`147M MWh` 长约库存和 `~9,350MW` add / extend path 不进入 NTM 基准收入。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在其实际影响层级处理一次；市场定价、股价、估值倍数不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 revenue `$11.122B`，同比 `+63.8%`；GAAP net income `$1.590B`；adjusted operating EPS `$2.74` | 收入基数 / 公司汇总 | 强化 NTM 基准收入台阶，说明 Calpine 并表已进入收入表 | Q1 adjusted operating earnings 支撑 FY2026 指引，但 GAAP 受 fair value 影响 | Q1 是 A 级锚，但不能机械全年化 | 基准保留；悲观需明确 market / integration 下行触发 |
+| FY2026 adjusted operating EPS 指引 `$11.00-$12.00`，Q1 后维持 | 公司汇总 | 为 NTM 利润基准提供硬锚 | 用 adjusted operating earnings 而非 GAAP EPS 校准利润率 | 指引不直接等于 FCF，仍需看 capex / collateral / integration | 基准保留；乐观需超出指引证据 |
+| Calpine 2026-01-07 完成并表，约 `23GW` post-divest capacity；DOJ 要求部分资产出售 | 收入基数 / 执行 | 并表是 2026 revenue 台阶主因 | gas / capacity / spark spread 提供利润弹性，但波动高 | 资产出售可回收现金，但交易和监管条件仍需执行 | 基准保留；整合风险只在 Calpine 层处理 |
+| 核电 Q1 产量 `44,666GWh`、capacity factor `92.3%`、无 non-refueling outage days | 产品贡献 / 利润 | 核电 MWh 可用性支撑 revenue 和 clean contracts | 高固定成本下，可用率是利润率核心变量 | outage days 影响短期现金和燃料 / 维护节奏 | 基准保留；乐观需持续验证 |
+| 核 PTC 到 2032，最高约 `$15/MWh`，gross receipts 超阈值 phase out | 利润率 / 现金流 | 对低电价情景提供下行保护 | 高电价时 PTC 减少，不能重复计入 | transferable credit 可影响 cash tax / monetization | 悲观不下移过度；乐观不重复加总 |
+| 2026 Outlook：Base EPS 2026-2029 `20%+` CAGR，且不含 147M MWh 库存额外上行 | 公司组合 / 远期期权 | 增强长期收入可见性，不直接增加 NTM 基准 | premium nuclear PPA 和 gas contracts 是利润上行来源 | growth capex 和客户合同要匹配 | 乐观保留；远期库存不进基准 |
+| Microsoft / Crane `835MW` 20 年 PPA，DOE `$1.0B` loan，NRC Draft EA / Draft FONSI | 执行可信度 / 远期期权 | 证明核重启 PPA 可商业化，但 NTM 收入窗口不足 | COD 后可能高质量利润；NTM 主要是 capex / execution | 监管、施工、设备修复、融资和成本是主约束 | 排除出基准收入；移入附录 / 仅作跟踪 |
+| Meta / Clinton `1,121MW` 20 年 PPA，2027-06 起，支持 `30MW` uprate | 收入确认 / 长期合同 | NTM 尾端开始增强收入可见度，但当期贡献受生效月份限制 | 若价格高于旧 ZEC / merchant 路径，利润率改善 | 支持 relicensing / uprate，需看执行和价格披露 | 基准小比例保留；乐观保留 |
+| Freestone `380MW` Phase 1 PUCT approval subject to conditions，Phase 2 `380MW` exclusive，Thad Hill / Freestone `>1,100MW` | 收入基数 / 执行 | 证明 data center site power 有客户路径，但 NTM 确认需工程和并网 | 合同若含 site / capacity premium，利润质量好；若只是普通 MWh 则弱 | PUCT 条件、ERCOT、燃气、客户数据中心施工影响现金流 | 基准小比例；大部分保留在乐观 / 极度上限 |
+| 本地行业调研：美国 AI 数据中心 2026 务实 IT-load equivalent `6.0-8.5GW`，实际 energized 滞后 `6-24` 个月；电力接入是第一瓶颈 | 需求 / 收入确认 | 支持需求侧乐观，但限制 NTM 收入确认上修 | 电力稀缺支持 pricing，但并不保证 CEG 捕获全部需求 | 延迟使 signed / announced MW 不能直接变收入 | 需求乐观保留；收入不自动上移 |
+| Geysers `25MW` expansion、Pastoria `105MW` solar、`80MW/320MWh` BESS、contracted storage `~880MW` | 产品贡献 / 组合质量 | 小额增强 NTM 收入和清洁组合 | 清洁属性、储能和 24/7 matching 提升合同质量 | 项目上线和 PPA 结算改善可见性 | 基准小额保留；极度乐观不因小项目上移 |
+| Calpine integration costs、debt and divestitures | 公司汇总 / 现金流 | 不直接否定收入基数，但会影响净利润和现金回收 | 整合成本压低 GAAP / adjusted bridge | debt, collateral, asset sale timing 影响 FCF 和 leverage | 风险只在公司组合 / Calpine 层处理，不重复惩罚核电需求 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 需求仍在，但 NTM 收入和利润低于当前指引 / run-rate；收入 `$40.0-$43.5B`，adjusted operating earnings `$3.60-$3.95B` | 核电可用性和 PTC floor 防止基本盘坍塌；Calpine 并表已发生 | Calpine integration、spark spread、outage、PPA 生效慢、data center site 延迟 | 保留 | 悲观公司 | 中 | 同一 “AI CapEx 放缓” 只限制长约 / data center site demand，不再重复压低已并表 Calpine 基数 |
+| 基准 | FY2026 指引和 Q1 run-rate 正常兑现；收入 `$43.5-$48.5B`，adjusted operating earnings `$4.00-$4.45B` | Q1 A 级财务锚、FY2026 EPS 指引、Calpine closing、核电产量、existing contracts | 产品收入拆分不足；Clinton 只在 NTM 尾端生效；Crane 不在 NTM | 保留 | 基准公司 | 中高 | Crane 2028 时间表不应惩罚 NTM 基准，因为基准未纳入 Crane 收入 |
+| 乐观 | 收入和利润高于当前预期，来自 clean contracts、Calpine utilization、capacity / spark spread 和 data center site power；收入 `$48.5-$54.5B` | `147M MWh` 长约库存、Meta / Microsoft 模板、Freestone / Thad Hill、AI 电力瓶颈、gas fleet scale | 合同价格未披露、announced MW 与 energized revenue 差距、监管和施工 | 保留 | 乐观公司 | 中 | 电力瓶颈只支持需求和定价，不自动支持收入确认和利润率 |
+| 极度乐观 | 多个核心传导环节同时突破；收入 `$54.5-$60.0B`，adjusted operating earnings `$5.20-$6.10B` | 核电 / gas / retail / storage / data center site 多线资产稀缺，客户需求强 | 任一核心环节缺证据：Crane 未 COD、Freestone 条件、gas / PTC / capacity volatility、现金流占用 | 下移 | 极度乐观上限 | 低到中 | 同一 MW 不能同时算作 PPA、零售 load、发电收入和 site infrastructure revenue |
+
+## 8. 结论
+
+- 最可能情景：基准公司。CEG 在 NTM 内最可验证的是 Calpine 全年并表、核电可用 MWh、FY2026 adjusted EPS `$11-$12` 指引、已有 clean / retail / capacity 结构和小比例数据中心站点供电进展。NTM revenue 更像 `$43.5-$48.5B` 的并表后新平台收入，adjusted operating earnings 更像 `$4.00-$4.45B` 的指引延续，而不是 Crane / AI 电力题材的全部兑现。
+- NTM 收入结论：收入高增主要来自 Calpine 并表和发电 / 零售 / 套保 / 容量的组合，不应把美国 AI 数据中心 GW 需求直接映射为 CEG 当期收入。Freestone / Thad Hill / Clinton 会提高 2027 可见度，但 NTM 基准只纳入有明确确认路径的部分；Crane 不进 NTM 基准。
+- 利润 / 现金流结论：利润质量优于普通低毛利 pass-through power revenue 的部分，是核电 clean firm MWh、PTC 下行保护、long-term clean contracts、容量和高质量客户合同。现金流方向取决于 growth capex、Crane / uprate / BESS / gas 项目支出、Calpine 整合和 collateral，而不是 revenue alone。
+- 主要传导瓶颈：需求不是最大问题，最大问题是“可收入化”：客户合同价格和结构、监管 / interconnection / net metering 条件、项目 COD、核电 / gas asset availability、资产出售和现金回收。
+- 乐观情景成立条件：1）更多可用核电 MWh 以 premium long-term contract 锁定；2）Calpine gas fleet 在 ERCOT / PJM 获得更高 utilization / capacity / spark spread；3）Freestone / Thad Hill 监管与施工快于基准；4）Clinton / Meta 2027-06 生效路径清晰且价格 / margin 好于旧路径；5）核电 outage 和整合成本不恶化。
+- 极度乐观情景成立条件：至少三个高质量传导同时成立：`147M MWh` 可长约库存加速商业化、`1GW+` data center gas-site agreements 进入强收入确认路径、Calpine gas / capacity 利润显著高于基准、Crane 监管 / 施工大幅提前并形成第二个核重启模板、现金流和资产出售同步顺利。
+- 悲观情景触发条件：核电非计划 outage 或 refueling 负担高于预期；Calpine 整合 / 资产出售 / 债务成本恶化；spark spread / capacity 价格低于预期；Freestone / Thad Hill / Clinton 节点延后；客户 clean PPA 价格低于市场期待；AI CapEx 或 data center energized MW 明显后移。
+- 后续跟踪数据：季度 adjusted operating earnings 和 guidance update；核电 capacity factor、refueling / non-refueling outage days；contracted clean MWh、PPA price / term /生效日期；Freestone / Thad Hill PUCT / ERCOT /客户施工节点；Calpine asset sale proceeds 和 leverage；Crane NRC / DOE /施工节点；gas spark spread、PJM / ERCOT capacity price；FCFbG、growth capex、collateral 和 share repurchase / debt paydown。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：最新公司财务主锚为 2026Q1，季度截至 2026-03-31，公告和 10-Q 发布于 2026-05-11；报告补充事件更新至 2026-06-12 前可得公开资料。
+- 主要收入、订单、指引和利润率来源：
+  - Constellation Q1 2026 earnings release，2026-05-11：2026Q1 revenue、GAAP EPS、adjusted operating EPS、FY2026 adjusted EPS guidance、Pastoria、Pin Oak、Freestone、核电运营和 EFOF。https://www.constellationenergy.com/news/2026/05/constellation-reports-first-quarter-2026-results.html
+  - CEG 2026Q1 Form 10-Q / SEC filing，2026-05-11：收入、Calpine acquisition accounting、资产、债务、PTC、ZEC / CMC、现金流和 divestiture。https://www.sec.gov/Archives/edgar/data/1868275/000186827526000067/ceg-20260331.htm
+  - 2026 Business and Earnings Outlook presentation，2026-03-31：FY2026 adjusted EPS guidance、2026-2029 Base EPS growth、contracted clean MWh、147M MWh 可长约库存、5,650+ MW long-term deals、~9,350MW add / extend path、retail / C&I load、ratings。https://constellationenergy.gcs-web.com/static-files/2a1fcbce-ab5d-40fa-b349-5674d3287472
+  - Constellation completes Calpine transaction，2026-01-07：Calpine 收购完成、55GW、2.5M accounts、80% Fortune 100。https://www.constellationenergy.com/news/2026/01/constellation-completes-calpine-transaction-powering-americas-clean-energy-future.html
+  - Constellation / Meta Clinton PPA，2025-06-03：1,121MW、20 年 PPA、2027-06 起、30MW uprate。https://www.constellationenergy.com/news/2025/constellation-meta-sign-20-year-deal-for-clean-reliable-nuclear-energy-in-illinois.html
+  - Constellation / Microsoft Crane PPA，2024-09-20：835MW、20 年 PPA、Crane Clean Energy Center / TMI Unit 1 restart。https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html
+  - Federal Register / NRC Crane Draft EA and Draft FONSI，2026-06-08：Crane restart 最新环境审查节点。https://www.federalregister.gov/documents/2026/06/08/2026-11377/constellation-energy-generation-llc-christopher-m-crane-clean-energy-center-draft-environmental
+  - Geysers geothermal expansion，2026-06-08：Calpine / Constellation 完成 25MW Geysers expansion，18MW 给 Clean Power Alliance、7MW 给 MCE。https://www.constellationenergy.com/news/2026/06/the-geysers-geothermal-complex-completes-25-megawatt-expansion-project-strengthening-california-grid-reliability.html
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 adjusted operating EPS `$11.00-$12.00` 是利润主锚，不等同 GAAP net income。
+  - 2026Q1 revenue annualized 仅作 sanity check，不直接作为 FY2026 / NTM 预测，因为 Q1 包含并表、fair value、季节性和市场条件。
+  - Clinton / Meta 从 2027-06 起生效，只覆盖 NTM 尾端；Crane / Microsoft 即使监管进展顺利，主收入窗口仍大概率在 NTM 之后。
+  - Freestone / Thad Hill / gas-site agreements 的满负荷年化收入按 MW、利用率和 `$70-$110/MWh` 电能价格可形成可观池，但 NTM 基准只承认可确认路径。
+  - `147M MWh` 可长约核电库存、`~9,350MW` add / extend path、advanced nuclear / SMR、更多 gas contracts 和 hourly CFE 产品均为长期经营期权，不替代 NTM 主表。
+- 本项目内主要来源：
+  - `公司调研/电力_发电_能源_储能/CEG_Constellation_Energy_公司调研_2026-06-11.md`：CEG 公司侧经营、产品、合同、项目、风险和资料来源。
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`：AI 数据中心建设规模、电力瓶颈、CapEx 与 MW 口径。
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`：utility interconnection、高压变电、设备和上电瓶颈。
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`：behind-the-meter、自备发电、microgrid、燃气 / SOFC / BESS 与 time-to-power 路径。

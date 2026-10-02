@@ -1,0 +1,168 @@
+# 公司收入传导与价值传导评估：Rocket Lab（RKLB）
+
+报告日期：2026-06-12  
+公司：Rocket Lab Corporation  
+股票代号：RKLB  
+主口径：NTM，即以 2026Q2-2027Q1 为未来四个财务季度经营窗口；截至本报告日，最新已披露实际季度为 FY2026 Q1，尚未披露 FY2026 Q2 实际结果。  
+研究边界：本报告只评估行业和产品需求向公司 NTM 收入、利润和经营质量的传导，不给投资评级，不判断股价区间，不使用市场价格或估值倍数作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM（2026Q2-2027Q1）收入、毛利率、经营利润率、调整后 EBITDA、净利润和自由现金流方向。FY2026、FY2027、Neutron 2026-2029 发射合同、SDA 项目全周期和空间数据中心叙事只作补充口径。
+- 当前收入基准、指引和 run-rate：FY2026 Q1 收入 `200.3M` 美元，同比增长 `63.5%`；Q2 2026 指引收入 `225-240M` 美元、GAAP 毛利率 `33%-35%`、调整后 EBITDA 亏损 `20-26M` 美元。Q1 末 backlog `2.220B` 美元，其中约 `36%` 预计 12 个月内确认，对应约 `799M` 美元的可见转化池。S&P Global/StockAnalysis 2026-06-11 口径下，FY2026 收入一致预期约 `914.1M` 美元、FY2027 约 `1.29B` 美元，仅作为“当前预期”锚，不作为估值判断。
+- 重要产品/业务线：`Space Systems` 国防整星/卫星平台；`Space Systems` 组件与子系统（太阳能、姿控、分离、Gauss、Mynaric、Motiv 等）；`Launch Services` 的 Electron 与 HASTE；`Neutron` 中型火箭；AI/轨道数据中心远期期权。
+- NTM 公司收入四情景：悲观 `850-930M` 美元；基准 `980M-1.08B` 美元；乐观 `1.12-1.25B` 美元；极度乐观 `1.32-1.50B` 美元。基准含义是 Q2 指引正常兑现、backlog 约 36% 转化、Space Systems 与 Electron/HASTE 正常执行，Neutron 不作为基准核心收入。
+- 利润或 EBITDA 四情景：悲观仍明显亏损，调整后 EBITDA 约 `-140M` 至 `-90M`；基准调整后 EBITDA 约 `-70M` 至 `-20M`；乐观约 `0-60M`；极度乐观约 `70-170M`。GAAP 净利润在基准和大部分乐观情景仍可能为负，因为 Neutron、并购整合、研发、股权激励和固定价项目管理费用仍高。
+- 最大传导瓶颈：不是外部空间需求，而是 backlog 是否按期确认、SDA/SSC 固定价项目是否控本、HASTE/Electron cadence 是否维持、Neutron 是否从订单变成可飞行和可确认收入。
+- 最大利润率变量：Space Systems 大项目毛利率、HASTE/Launch 吸收率、组件内制比例、Mynaric/Motiv 整合成本、Neutron 初期低利用率。
+- 最大现金流变量：合同负债/客户预付款能否持续覆盖库存、应收账款、Neutron capex 和并购整合；Q1 2026 经营现金流为 `-50.3M` 美元，购置物业设备和软件 `-27.1M` 美元，粗略自由现金流约 `-77.4M` 美元。
+- 可信度：基准收入可信度中高，利润率可信度中，Neutron 与轨道 AI 远期期权可信度低。公司已有 A/B 级收入、backlog 和正式合同，但 NTM 利润质量仍取决于固定价项目执行和新产品爬坡。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Space Systems：国防整星、卫星平台和任务交付 | Q1 2026 Space Systems 收入 `136.7M` 美元；Q1 末 Space Systems backlog `1.298B` 美元 | Q1 收入 `68.2%` | 当前最大收入与订单主体；SDA T2TL、TRKT3、SSC GEO 是 NTM 与后续年度主线 | A/B | 进入基准。按 backlog、项目里程碑和 Q2 指引保守确认 | 后续 SDA tranche、SBI/Golden Dome、商业星座 prime |
+| Space Systems：组件与子系统（太阳能、星敏、反作用轮、分离、Gauss、Mynaric、Motiv 等） | 公司只披露 Space Systems 产品收入 `127.5M` 美元，不拆组件/整星；现有成熟组件为 A，Gauss/Mynaric/Motiv 新增为 C/D | 无法可靠量化；嵌入 Space Systems | 决定毛利率、垂直整合和项目控本；也是外售组件可选性 | A/C/D | 成熟组件进入基准；Gauss/Mynaric/Motiv 只小比例保守纳入，主要进乐观和远期期权 | 激光光通信、批量电推进、空间机器人、轨道高功率平台 |
+| Launch Services：Electron + HASTE | Q1 2026 Launch Services 收入 `63.7M` 美元；Q1 末 Launch backlog `921.4M` 美元；Q1 新签 31 个 Electron/HASTE 合同 | Q1 收入 `31.8%` | Electron 是已飞行收入底盘；HASTE 是国防高超声速测试增量 | A/B | 进入基准。按现有 manifest、HASTE block buy 和正常发射节奏确认 | 更高 HASTE cadence、responsive launch、国防追加订单 |
+| Neutron 中型可复用火箭 | 已签 5 次 Neutron + 3 次 Electron 最大发射合同，2026-2029 baseline；尚未商业首飞 | Q1 收入 0 或无法可靠量化 | 可能改变公司收入天花板，但 NTM 内主要是执行和认证事件 | B/C | 不作为基准核心收入；只允许少量里程碑或首飞后收入进入乐观 | 中型发射、星座部署、国家安全发射、商业替代 SpaceX 部分需求 |
+| AI/轨道数据中心和空间基础设施 | 当前可确认收入 `0`；Motiv 公告提到轨道数据中心高功率太阳阵列需求，但未披露 NTM 客户收入 | 0 | 题材可选性，不是当前收入线 | D/E | 不进入 NTM 基准、乐观收入表；仅附录跟踪 | 轨道数据中心、空间计算、空间光互联、高功率太阳阵列 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 Rocket Lab 份额、收入确认、利润率或公司汇总。需求强弱均相对该产品当前需求锚判断。对 Space Systems 采用合同美元、卫星数量和项目节奏；对 Launch 采用 launch count、manifest、HASTE test cadence 和 ASP/mix；对 Neutron 采用可飞行中型发射 slot；对 AI/轨道数据中心只记录远期期权需求，不进入 NTM。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Space Systems：国防整星和卫星平台 | SDA TRKT3 为 72 颗、约 `3.5B` 美元外部需求池，其中 Rocket Lab 获 18 颗、约 `805-816M` 美元；另有 SDA T2TL 18 颗 `515M` 美元和 SSC GEO `90M` 美元 | 国防预算或项目审批不变，但验收、传感器或供应链使 NTM 需求节奏后移；外部需求池不消失，转化延迟 | PWSA/国防分布式低轨星座按既定 tranche 执行，T2/T3 项目继续消化 | SBI/Golden Dome、SSC GEO、SDA 子系统扩展使新任务/载荷需求提前 | 多个国防导弹预警、跟踪、防御项目同时扩大，并将非传统 prime 加速纳入 | NTM 主要是已签项目执行；外部新增可见项目为 `90M` GEO、SBI demonstrator 和后续 option/pipeline | 基准符合当前预期；乐观需要新增正式合同或明确任务化 | 正向：SDA 72 颗 T3、Rocket Lab 18 颗、SSC GEO。反证：固定价项目技术/验收/供应链延迟，TRKT3 发射在 FY2029，不等于 NTM 全额收入 |
+| Space Systems：组件与子系统 | SIA 2026 报告显示 2025 年商业卫星产业收入 `303B` 美元、卫星制造收入 `20.4B` 美元、全球发射 4,434 颗商业制造卫星；PWSA 卫星需要 OCT、太阳能、姿控、通信和传感器 | 星座客户推迟采购，Mynaric/Gauss/Motiv 认证或量产不及预期；组件需求仍有但转化慢 | 卫星制造与国防星座需求延续，成熟太阳能、姿控、分离系统随整星和外部客户交付 | 激光终端、Gauss 电推进、SADA/精密机构成为瓶颈件，客户加速双供 | 卫星光互联、空间电力、轨道基础设施需求在 NTM 非线性提前 | 成熟组件需求可随 `20B+` 制造池稳步增长；新组件 NTM 绝对需求无法可靠量化 | 基准只承认成熟组件；新产品多为乐观或远期 | 正向：Mynaric、Motiv 补齐瓶颈件；Gauss 目标高产能。反证：Mynaric 历史量产压力、新品 flight heritage 不足 |
+| Launch Services：Electron + HASTE | FAA FY2025 记录 195 次获许可发射，其中 Rocket Lab 15 次；Rocket Lab Q1 2026 新签 31 个 Electron/HASTE 合同，launch manifest 超过 70；HASTE 已有 TRMC `20` 次/四年与 Anduril `3` 次 | 客户卫星延迟、窗口/天气/监管/任务准备影响 cadence；商业 rideshare 价格压制 Electron ASP | Electron 继续小型专用发射；HASTE block buy 按数年节奏启动；Q2 指引隐含 launch 正常执行 | HASTE 因高超声速测试需求加速，Electron 对 iQPS/Synspective/国防 responsive launch 需求增强 | HASTE/响应式发射被视为国防测试基础设施，NTM 内明显提高发射频次 | 基准需求为 NTM `20+` 次级别发射/任务执行潜力；HASTE 合同池为 `23` 次已披露测试飞行 | 基准符合当前 manifest；乐观高于当前预期 | 正向：31 个新 Electron/HASTE 合同、20+3 HASTE。反证：SpaceX rideshare 价格锚、发射窗口和客户 payload 迟延 |
+| Neutron 中型火箭 | 已签 5 次 Neutron 发射，2026-2029 baseline；公司称首飞目标为 2026 年晚些时候；外部需求来自非 SpaceX 中型发射 slot、国防与商业星座部署 | 首飞或发动机/结构测试延迟，客户把 2026-2027 任务重新排期；需求存在但不转 NTM | NTM 以首飞、qualification、LC-3 准备为主，少量合同里程碑，不假设商业 cadence | 首飞成功且客户确认 2027 slot，新增 Neutron 合同进入 backlog | 首飞和复用路径均顺利，多个客户因 Falcon 9 slot 紧张转向 Neutron | 当前可见订单为 5 次 Neutron；NTM 可确认需求绝对量取决于首飞，不可靠量化 | 基准低于题材热度；乐观需飞行证据 | 正向：5 发订单。反证：未商业飞行、可靠性和复用经济性未验证 |
+| AI/轨道数据中心和空间基础设施 | 本地 AI 行业调研显示 2026-2028 地面 AI 数据中心瓶颈在 GPU/ASIC、HBM、先进封装、800G/1.6T 光模块、电力、液冷、MEP；Rocket Lab 当前不在这些供应链。Motiv 公告提到轨道数据中心可能需要 `100kW+` 太阳阵列 | NTM 无可确认需求，保持 0 | 不进入基准；只作远期跟踪 | 若有明确客户、试验平台或太阳阵列/机构订单，可进入低可信乐观跟踪 | 只有轨道数据中心在 NTM 内签正式订单且 Rocket Lab 供货路径明确，才可上移 | 当前 NTM 绝对需求为 0；远期需求无法可靠量化 | 低于热门叙事；不影响 NTM 基准 | 正向：空间电力和光通信资产具备远期入口。反证：没有 NTM 客户、合同、交付和收入确认路径 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求能进入 Rocket Lab NTM 收入表，以及当前可收入化基数。公司能参与空间经济、国防星座或轨道数据中心叙事，不等于能在 NTM 确认收入。证据等级以收入表可确认性为准：A 为已披露收入/分部/指引，B 为 backlog/正式合同/明确交付时间表，C 为认证/产能/管理层可验证披露，D 为样品/发布/早期合作，E 为主题相关。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Space Systems：国防整星和卫星平台 | Q1 2026 Space Systems 收入 `136.7M` 美元；Q1 末 Space Systems backlog `1.298B` 美元；SDA `515M`、TRKT3 `805-816M`、SSC GEO `90M` | 直接 | 项目制、长期合同、固定价风险；垂直整合有利于毛利，但成本超支会吞噬利润 | `470-540M` | `540-620M` | `620-730M` | `760-900M` | 基准符合 backlog 12 个月确认路径；乐观需新增合同或加速里程碑 | A/B | 是 | 已披露分部收入、backlog、正式国防合同和 Q2 指引 | NTM 主收入底盘；不把项目全周期金额一次性确认 |
+| Space Systems：组件与子系统 | Q1 2026 Space Systems 产品收入 `127.5M` 美元，但公司不拆整星/组件；成熟组件已有收入表，Gauss/Mynaric/Motiv 多为新品或并购后整合 | 直接和间接；内供也影响项目成本 | 成熟组件毛利较好；新组件有产能、认证和整合风险 | `90-120M` | `130-170M` | `180-260M` | `280-380M` | 基准只承认成熟产品和小比例并购贡献；不把产能目标等同收入 | A/C/D | 部分进入 | 产品收入 A；Gauss/Mynaric/Motiv 为 C/D，仅折扣纳入 | 成熟组件进基准，新品主要进乐观/远期期权 |
+| Launch Services：Electron + HASTE | Q1 2026 Launch Services 收入 `63.7M` 美元；Launch backlog `921.4M`；31 个 Q1 Electron/HASTE 合同；HASTE 20+3 次合同 | 直接 | 发射利用率和任务 mix 决定毛利；HASTE 国防属性可能改善 ASP/mix | `230-280M` | `280-330M` | `330-420M` | `430-540M` | 基准接近当前 manifest；乐观需要 HASTE cadence 明显加速 | A/B | 是 | 已披露分部收入、launch backlog、正式 HASTE 合同和 manifest | Electron/HASTE 是 NTM 第二收入底盘 |
+| Neutron | 5 次 Neutron + 3 次 Electron 多发射合同，2026-2029 baseline；尚未首飞 | 直接，但收入确认依赖飞行和里程碑 | 初期低利用率、研发和首飞成本重；成功后单次收入更高 | `0` | `0-30M` | `40-100M` | `120-220M` | 基准低于题材预期；当前主要是上限期权 | B/C | 小比例或不进入 | 合同为 B，技术/认证为 C；无商业飞行 A 级证据 | NTM 基准只放少量里程碑或 0；成功首飞后上移 |
+| AI/轨道数据中心 | 当前收入表、订单、backlog、客户项目中未披露 NTM 轨道 AI 数据中心收入 | 间接远期 | 可能带动太阳能、SADA、光通信；但当前无收入 | `0` | `0` | `0` | 无法可靠量化 | 低于热门叙事；只作远期期权 | D/E | 否 | 只有并购叙事和技术入口，无 NTM 客户、合同、交付 | 移入附录跟踪，不进入 NTM 收入 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求和收入基数出发，评估每个重要产品在 NTM 内能给公司贡献多少收入和利润。利润贡献以毛利贡献和对调整后 EBITDA/现金流方向的影响表达，因为公司披露称不按分部审阅 operating expenses。产品级区间不能机械相加：Space Systems 整星和组件存在内制、打包合同和同一客户预算重叠，最终以第 6 节公司表去重。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Space Systems：国防整星和卫星平台 | 悲观产品 | `470-540M` | 毛利约 `130-175M`；营运资本消耗偏高 | 低于 Q1 35.3% segment GM 或难扩张 | 低于当前 backlog 转化预期 | MDA 延迟和供应链 liquidated damages 风险、固定价大单成本压力 | 保留为悲观 | 里程碑延迟、传感器/光终端/供应链问题、验收推后 |
+| Space Systems：国防整星和卫星平台 | 基准产品 | `540-620M` | 毛利约 `180-235M`；仍需研发和项目管理费用 | 接近当前 segment GM，略有规模效应 | 符合当前预期 | Q1 Space Systems 收入 `136.7M`、backlog `1.298B`、SDA/SSC 正式合同 | 保留为基准 | 不把 TRKT3 全周期金额一次性收入化 |
+| Space Systems：国防整星和卫星平台 | 乐观产品 | `620-730M` | 毛利约 `235-320M`；EBITDA 拖累缩小 | 毛利率小幅上行 | 高于当前预期 | GEO `90M`、StarLite/Phoenix 传感器、SBI/Golden Dome 选择带来项目外延 | 保留为乐观 | 新项目必须有 NTM 交付或里程碑 |
+| Space Systems：国防整星和卫星平台 | 极度乐观产品 | `760-900M` | 毛利约 `330-430M`；若费用率同步下降可接近经营盈亏平衡 | 明显上行 | 显著高于当前预期 | 多项目同时加速、供应链内制有效、验收顺利 | 下移为乐观上限，除非新增合同和里程碑明确 | 固定价项目越大，成本超支风险越大 |
+| Space Systems：组件与子系统 | 悲观产品 | `90-120M` | 毛利约 `25-40M`；并购整合费用抵消 | 低于成熟组件应有水平 | 低于当前预期 | Mynaric 量产压力、Gauss 新品缺少飞行履历、Motiv 小体量 | 保留为悲观 | 新品不能以产品发布替代客户收入 |
+| Space Systems：组件与子系统 | 基准产品 | `130-170M` | 毛利约 `45-70M`；对整星控本有帮助 | 稳定或小幅上行 | 符合当前预期 | Space Systems 产品收入 A 级；成熟太阳能、姿控、分离系统已有收入 | 保留为基准 | 公司不披露组件拆分，无法高精度量化 |
+| Space Systems：组件与子系统 | 乐观产品 | `180-260M` | 毛利约 `75-120M`；mix 改善 | 上行 | 高于当前预期 | Mynaric 并入、Motiv 完成、Gauss 高产能目标，外部客户或国防项目导入 | 保留但可信度中 | 需要客户、交付、良率和认证证据 |
+| Space Systems：组件与子系统 | 极度乐观产品 | `280-380M` | 毛利约 `120-180M`；可明显提升公司毛利率 | 明显上行 | 显著高于当前预期 | 激光终端、电推进、SADA/太阳阵列同时成为瓶颈件 | 下移为乐观上限 | 多个新产品同年量产缺少 A/B 级收入证据 |
+| Launch Services：Electron + HASTE | 悲观产品 | `230-280M` | 毛利约 `80-125M`；利用率不足 | 下行或不扩张 | 低于当前 manifest | 客户 payload 延迟、发射窗口/监管、SpaceX rideshare 价格锚 | 保留为悲观 | cadence 和客户准备度 |
+| Launch Services：Electron + HASTE | 基准产品 | `280-330M` | 毛利约 `115-150M`；HASTE mix 支撑 | 接近 Q1 Launch GM `44.3%` | 符合当前预期 | Q1 Launch 收入 `63.7M`、31 个 Electron/HASTE 合同、manifest 超 70 | 保留为基准 | 部分 backlog 超过 12 个月，不能全额 NTM 化 |
+| Launch Services：Electron + HASTE | 乐观产品 | `330-420M` | 毛利约 `145-200M`；吸收率提高 | 上行 | 高于当前预期 | TRMC 20 次/四年和 Anduril 3 次，HASTE 成为国防测试平台 | 保留为乐观 | HASTE 预算和窗口必须兑现 |
+| Launch Services：Electron + HASTE | 极度乐观产品 | `430-540M` | 毛利约 `190-260M`；若 cadence 高则 EBITDA 杠杆明显 | 明显上行 | 显著高于当前预期 | HASTE + Electron 多客户同时加速，响应式发射需求扩散 | 下移为乐观上限 | 发射服务产能、客户 payload 与监管窗口限制 |
+| Neutron | 悲观产品 | `0` | 继续消耗研发、测试和 capex；EBITDA 负贡献 | 负向 | 低于题材预期 | 首飞/测试延迟 | 保留为悲观 | 未商业飞行 |
+| Neutron | 基准产品 | `0-30M` | 毛利贡献不稳定，EBITDA 仍为负 | 负向或无法可靠量化 | 低于热门叙事但符合证据 | 5 发合同存在，但首飞和认证未完成 | 保留为基准低纳入 | 合同不等于收入确认 |
+| Neutron | 乐观产品 | `40-100M` | 毛利约 `10-45M`，但研发/启动成本仍可能抵消 | 从负向转中性 | 高于当前基准 | 首飞成功、客户确认、部分里程碑收入确认 | 保留为乐观 | 首飞成功后仍需 cadence 与可靠性 |
+| Neutron | 极度乐观产品 | `120-220M` | 毛利约 `40-110M`；若初期低利用率，利润仍可能弱于收入 | 上行但不自动非线性 | 显著高于当前预期 | NTM 内多次飞行、客户加单、成本曲线可见 | 下移为乐观上限 | 需多个核心环节同时成立 |
+| AI/轨道数据中心 | 悲观产品 | `0` | `0`；若为叙事投入则费用增加 | 无 | 符合经营证据 | 无 NTM 客户 | 保留为排除项 | 主题相关性不能收入化 |
+| AI/轨道数据中心 | 基准产品 | `0` | `0` | 无 | 符合当前证据 | 本地行业调研显示 RKLB 不在地面 AI 数据中心硬件链 | 排除 | 无收入表、订单、客户和交付 |
+| AI/轨道数据中心 | 乐观产品 | `0` | `0` | 无法可靠量化 | 仅远期 | Motiv/Mynaric/太阳能有技术入口 | 移入附录 | 缺少 NTM 收入确认路径 |
+| AI/轨道数据中心 | 极度乐观产品 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 远期期权，不代表当前预期 | 只有在签订明确 NTM 订单时才重新评估 | 仅作跟踪 | 没有客户、时间表和收入确认路径 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为 Rocket Lab NTM 总收入、毛利率、经营利润率、调整后 EBITDA、净利润和自由现金流方向，不讨论市场定价。汇总前已剔除 Space Systems 整星/组件之间的重复计算，并将 Neutron 未完成首飞的收入确认折扣处理。第一个表为公司收入和利润四情景。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `850-930M` | 较 Q1 后 TTM `679.6M` 约 `+25%-37%` | 低于 FY2026E `914.1M` 与 NTM 桥接预期；Q2 或后续季度低于指引/共识 | `32%-35%` | `-35%` 至 `-25%` | 调整后 EBITDA `-140M` 至 `-90M`；GAAP 净亏损扩大或改善有限 | FCF `-350M` 至 `-250M`，库存/应收和 Neutron 投入拖累 | 中 | SDA/SSC 里程碑延迟、HASTE cadence 不及预期、Neutron 延迟、组件整合费用高 |
+| 基准公司 | `980M-1.08B` | 约 `+44%-59%` | 接近 Q2 指引、FY2026E/FY2027E 桥接和 backlog 36% 转化路径；不把 Neutron 当核心 | `36%-39%` | `-22%` 至 `-16%` | 调整后 EBITDA `-70M` 至 `-20M`；GAAP 净利润大概率仍为负 | FCF `-250M` 至 `-150M`，但客户预付款和规模增长缓冲现金消耗 | 中高收入/中利润 | 固定价项目控本、费用率下降速度、合同负债能否持续增长 |
+| 乐观公司 | `1.12-1.25B` | 约 `+65%-84%` | 高于当前预期，且不是单一小基数项目；Space Systems、HASTE 和组件至少两条线超预期 | `39%-42%` | `-15%` 至 `-8%` | 调整后 EBITDA `0-60M`；GAAP 净亏损明显收窄，部分季度可能接近盈亏平衡 | FCF `-170M` 至 `-60M`，仍可能受 Neutron capex 影响 | 中 | 新订单 NTM 确认、HASTE 执行、组件 mix 提升和费用杠杆同步成立 |
+| 极度乐观公司 | `1.32-1.50B` | 约 `+94%-121%` | 显著高于当前预期；需求、捕获、利润质量和执行质量同时突破 | `42%-46%` | `-8%` 至 `+3%` | 调整后 EBITDA `70-170M`；GAAP 净利润可能接近盈亏平衡或小幅盈利，但无法可靠保证 | FCF `-80M` 至 `+50M`，取决于预付款、Neutron 投资和应收回款 | 低到中 | 多个大项目加速、Neutron 成功、组件高毛利放量、费用率下降同时发生，证据门槛高 |
+
+补充去重说明：
+
+| 汇总检查项 | 处理方式 | 对情景的影响 |
+| --- | --- | --- |
+| Space Systems 整星和组件重复计算 | 组件既可能外售，也可能内供整星；公司层收入只确认对外合同，不把内制转移重复加总 | 降低极度乐观收入上限，利润率可受益但收入不重复 |
+| Neutron 合同与 Launch backlog | 已签 5 次 Neutron 是 B 级合同，但未首飞，收入确认依赖飞行和里程碑 | 基准只少量纳入；乐观/极度乐观需要飞行证据 |
+| 国防项目全周期金额 | SDA `515M`、TRKT3 `805-816M`、SSC `90M` 均按交付期确认，不一次性进 NTM | 保持基准收入可信度，限制极度乐观 |
+| 一次性并购与新品发布 | Mynaric/Motiv/Gauss 提升能力，但不等于 NTM 外部收入 | 进入利润率和远期期权，不直接拉高基准收入 |
+| 低毛利 pass-through | 若整星项目外购 payload/组件占比高，收入增长可能弱于毛利增长 | 悲观和基准不自动假设经营杠杆 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在其实际影响层级处理一次，避免重复惩罚。市场定价、股价波动、指数纳入和估值倍数不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 收入 `200.3M`、GAAP 毛利率 `38.2%`、调整后 EBITDA `-11.8M`，均好于历史 run-rate | 公司汇总、利润 | 支持 Q2 `225-240M` 指引和 NTM 基准 | 支持基准毛利率 `36%-39%` | 亏损缩小但仍烧钱 | 保留基准 |
+| Q1 末 backlog `2.220B`，约 `36%` 预计 12 个月内确认 | 收入基数 | 提供约 `799M` 可见 NTM 转化池 | 不直接保证毛利率 | 转化越快，应收、库存和合同负债波动越大 | 保留基准；乐观需转化比例上升 |
+| Space Systems backlog `1.298B`、Launch backlog `921M` | 产品贡献 | 两条主线均有 B 级订单支撑 | Space Systems 固定价风险高于 Launch | 大项目执行决定营运资本 | 保留基准 |
+| SDA T2TL `515M`、TRKT3 `805-816M`、SSC GEO `90M` | 需求、收入基数、执行 | 支持 Space Systems NTM 和远期增长 | 固定价可能改善也可能压低毛利 | 验收和供应链延迟会拖累现金 | 保留基准；极度乐观下移为上限 |
+| Q1 新签 31 个 Electron/HASTE 合同、5 个 Neutron 合同，manifest 超 70 | 需求、Launch 收入 | 支持 Electron/HASTE 基准和乐观 | HASTE mix 有改善空间 | 发射窗口和客户 payload 准备影响确认 | 保留基准/乐观 |
+| HASTE TRMC 20 次/四年、Anduril 3 次且首个 Anduril 任务预计 12 个月内 | 产品贡献 | 强化 NTM Launch 需求 | 若利用率高，毛利率可上行 | cadence 和国防预算是执行变量 | 上移 Launch 乐观可信度 |
+| Neutron 5 发合同，但尚未商业首飞 | 收入确认、执行可信度 | 合同可见但 NTM 收入不可靠 | 初期费用和低利用率拖累利润 | 首飞延迟会继续消耗现金 | 基准保守；极度乐观下移为乐观上限 |
+| Mynaric、Motiv、Gauss 增强组件能力 | 产品贡献、利润率 | 成熟组件可进基准；新产品收入需折扣 | 可能改善垂直整合和毛利，也可能带来整合成本 | 并购、良率和认证影响现金 | 成熟部分保留；新品仅作乐观/跟踪 |
+| 本地 AI 行业调研显示地面 AI 数据中心主链为 GPU/ASIC、HBM、光模块、电力、液冷、MEP | 需求边界 | RKLB 当前 AI 数据中心可确认收入为 0 | 不影响现有航天毛利 | 防止主题误入收入模型 | 排除 NTM AI 数据中心收入 |
+| Q1 经营现金流 `-50.3M`、PPE/software 购置 `-27.1M`、库存和应收增加 | 现金流 | 不影响确认收入，但显示增长占用资金 | 规模效应未完全落入现金 | FCF 仍负，Neutron 和并购继续消耗 | 保留基准现金流负值 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 需求仍增长，但低于指引/共识和 backlog 转化路径；收入 `850-930M`，利润率低于当前结构 | backlog 大、Q1 表现强，说明不是需求塌陷 | 固定价项目、Neutron 延迟、发射窗口、并购整合和营运资本可能拖累 | 保留 | 公司悲观情景 | 中 | Neutron 延迟只在收入确认/执行层处理，不再重复压低 Space Systems 需求 |
+| 基准 | Q2 指引正常兑现，backlog 约 36% 转化，Space Systems 与 Electron/HASTE 正常执行，收入 `980M-1.08B` | Q1 收入和毛利率、`2.220B` backlog、正式 SDA/HASTE 合同、Q2 指引 | Space Systems 固定价毛利和 cash conversion 仍需估算 | 保留 | 公司基准情景 | 中高收入/中利润 | AI 数据中心无收入不惩罚主业，只作为排除项 |
+| 乐观 | 收入 `1.12-1.25B`，至少两条主线超预期；HASTE、组件 mix 或 Space Systems 里程碑加速 | HASTE 20+3 合同、SSC GEO `90M`、Mynaric/Motiv/Gauss、SBI 选择 | 新品收入拆分不披露，Neutron 首飞前不能重仓 | 保留 | 公司乐观情景 | 中 | 同一 HASTE 合同不同时作为需求、收入和利润三重上修，只在 Launch 产品层处理 |
+| 极度乐观 | 收入 `1.32-1.50B`，毛利率 `42%-46%`，调整后 EBITDA 明显转正 | 多个国防项目和组件高毛利同时兑现，Neutron 成功会显著提升收入天花板 | 任一核心环节缺证据：Neutron 未飞、组件新品未拆分、固定价项目成本未知 | 下移 | 乐观上限/低可信极度乐观 | 低到中 | 新订单、Neutron 和组件新品不能把全部好事相加；需去重和执行折扣 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入最可能落在 `980M-1.08B` 美元区间，较 Q1 后 TTM `679.6M` 美元继续高增长，但这是 backlog、Q2 指引和 FY2026/FY2027 预期正常桥接的结果，不是 Neutron 或轨道 AI 远期期权提前兑现。
+- 利润/现金流结论：毛利率基准为 `36%-39%`，调整后 EBITDA 仍可能在 `-70M` 至 `-20M` 美元之间；GAAP 净利润大概率仍为负。自由现金流在基准仍为负，主要因为 Neutron、库存、应收、并购整合和空间系统产线投入仍处于扩张阶段。
+- 主要传导瓶颈：第一，Space Systems 大型固定价项目能否按期、按成本完成；第二，HASTE/Electron cadence 是否把 manifest 变成收入；第三，Neutron 是否从订单和首飞目标变成可重复商业发射；第四，Mynaric/Gauss/Motiv 是否从供应链能力变成外部高毛利收入或有效控本。
+- 乐观情景成立条件：Q2 2026 收入接近或高于 `240M` 美元上沿且毛利率不低于指引；backlog 12 个月转化比例上升；HASTE 20+3 次合同开始按期执行；SSC/SDA 里程碑顺利；组件新品出现明确客户或项目导入；费用率随收入上升下降。
+- 极度乐观情景成立条件：Space Systems 新增大单和里程碑同时加速，HASTE cadence 非线性提高，Neutron 首飞成功且客户确认 2027 slot，Gauss/Mynaric/Motiv 形成可量化外部收入或明显改善整星毛利，现金流不因扩张恶化。缺任一核心环节，极度乐观应降为乐观上限。
+- 悲观情景触发条件：Q2 或 Q3 收入低于指引/共识；Space Systems 项目出现成本超支、liquidated damages 或验收推迟；HASTE 发射窗口延后；Neutron 再次延期；Mynaric/Motiv 整合费用高于贡献；库存、应收和 capex 使 FCF 年化消耗持续超过 `300M` 美元且无合同负债改善。
+- 后续跟踪数据：Q2 2026 收入和毛利率；backlog 总额、分部构成和 12 个月转化比例；contract liabilities、应收、库存和经营现金流；SDA T2TL/TRKT3/SSC GEO 里程碑；HASTE 发射节奏；Neutron 首飞、发动机和 LC-3 进度；Mynaric 光终端、Gauss 电推进、Motiv SADA/机构件的客户订单与良率；任何轨道数据中心相关正式合同。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：报告日为 2026-06-12；最新财务实际期为 FY2026 Q1（截至 2026-03-31）；Q2 2026 为公司 2026-05-07 指引；一致预期采用 StockAnalysis/S&P Global 2026-06-11 页面，仅作为当前收入预期锚。
+- 主要收入、订单、指引和利润率来源：
+  - Rocket Lab Q1 2026 financial results / SEC Exhibit 99.1, 2026-05-07：https://www.sec.gov/Archives/edgar/data/1819994/000181999426000027/rklb-05072026ex991.htm
+  - Rocket Lab Form 10-Q, quarter ended 2026-03-31：https://www.sec.gov/Archives/edgar/data/1819994/000181999426000028/rklb-20260331.htm
+  - Rocket Lab Q4/FY2025 financial results / SEC Exhibit 99.1, 2026-02-26：https://www.sec.gov/Archives/edgar/data/1819994/000181999426000012/rklb-02262026ex991.htm
+  - StockAnalysis RKLB forecast, last checked 2026-06-11：https://stockanalysis.com/stocks/rklb/forecast/
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026E 收入 `914.1M` 美元、FY2027E 收入 `1.29B` 美元来自 StockAnalysis/S&P Global 2026-06-11，作为当前预期锚，不作为估值或评级依据。
+  - Neutron 5 次发射合同覆盖 2026-2029，不代表 NTM 全额收入。
+  - SDA TRKT3 官方发射期为 FY2029，项目全周期金额不能替代 NTM 收入。
+  - 轨道数据中心、空间 AI、空间光通信只列远期期权；当前 NTM 基准收入为 0。
+- 主要来源：
+  - 本地公司调研：`公司调研/机电_冷却_工程_水处理_边缘工业AI/RKLB_Rocket_Lab_公司调研_2026-06-11.md`
+  - 本地行业调研：`行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+  - 本地行业调研：`行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - 本地行业调研：`行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+  - 本地行业调研：`行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+  - FAA Aerospace Forecast FY2026-2046, Commercial Space chapter：https://www.faa.gov/data_research/aviation/aerospace_forecasts/2026_Commercial_Space_2.pdf
+  - SIA 2026 State of the Satellite Industry Report summary：https://sia.org/news-resources/state-of-the-satellite-industry-report/
+  - SIA 2026 report release summary：https://sia.org/affordability-productivity-drive-historic-satellite-industry-growth-satellite-industry-association-releases-the-29th-annual-state-of-the-satellite-industry-report/
+  - SDA TRKT3 72-satellite award announcement, 2025-12-19：https://www.sda.mil/space-development-agency-makes-awards-to-build-72-tracking-layer-satellites-for-tranche-3/
+  - Rocket Lab SDA T2TL Beta `515M` contract：https://rocketlabcorp.com/updates/rocket-lab-makes-its-defense-prime-debut-with-0-5-billion-contract-to-design-and-build-satellite-constellation-for-space-development-agency/
+  - Rocket Lab TRKT3 `816M` contract：https://rocketlabcorp.com/updates/rocket-lab-awarded-816m-prime-contract-to-build-missile-defense-satellite-constellation-for-u-s-space-force/
+  - Rocket Lab SSC GEO `90M` contract：https://rocketlabcorp.com/updates/rocket-lab-awarded-90m-contract-to-build-geo-satellites-hosting-space-domain-awareness-payload-for-u-s-space-force/
+  - Rocket Lab `190M` / 20 HASTE MACH-TB contract：https://rocketlabcorp.com/updates/rocket-lab-secures-190m-contract-for-20x-haste-launches-cements-hypersonics-leadership-with-department-of-war-partnership/
+  - Rocket Lab / Anduril `30M` HASTE contract：https://rocketlabcorp.com/updates/rocket-lab-awarded-30-million-contract-for-haste-hypersonic-rocket-launches-for-anduril/
+  - Rocket Lab 5 Neutron + 3 Electron launch contract：https://rocketlabcorp.com/updates/rocket-labs-biggest-launch-deal-yet-confidential-customer-books-multiple-neutron-and-electron-launches/
+  - Rocket Lab Mynaric completion：https://rocketlabcorp.com/updates/rocket-lab-completes-mynaric-acquisition-adding-laser-optical-communications-to-growing-space-systems-portfolio/
+  - Rocket Lab Motiv completion：https://rocketlabcorp.com/updates/rocket-lab-adds-mars-proven-robotics-capabilities/
+  - Rocket Lab Raytheon SBI selection：https://rocketlabcorp.com/updates/rocket-lab-and-raytheon-selected-to-demonstrate-advanced-capabilities-for-u-s-space-forces-space-based-interceptor-program/

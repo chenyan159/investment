@@ -1,0 +1,47 @@
+focus union 121 appearances 480 same_hashes True
+focus counts [('MU', 14), ('NVDA', 14), ('ADBE', 13), ('CRDO', 12), ('SNDK', 11), ('GOOGL', 11), ('META', 11), ('AVGO', 11), ('TSM', 11), ('MSFT', 10), ('SMCI', 10), ('VRT', 10), ('CLS', 10), ('PNR', 9), ('DELL', 9), ('HPE', 8), ('ORCL', 8), ('EME', 7), ('NBIS', 7), ('ET', 6), ('ST', 6), ('FLNC', 6), ('SKHY', 6), ('TEL', 6), ('QCOM', 6)]
+highest focus overlap
+E04-B E05-B 24 /30 unique ['BDC', 'CARR', 'DOV', 'ENS', 'GNRC', 'ST'] ['CRDO', 'HUBB', 'ORCL', 'QCOM', 'SKHY', 'VRT']
+E05-A E04-B 22 /30 unique ['ALLE', 'AMZN', 'CRDO', 'CSCO', 'FTV', 'ORCL', 'QCOM', 'VRT'] ['AMAT', 'CARR', 'ETN', 'FN', 'GNRC', 'LRCX', 'MOD', 'STX']
+E05-A E05-B 22 /30 unique ['ALLE', 'AMZN', 'BDC', 'CSCO', 'DOV', 'ENS', 'FTV', 'ST'] ['AMAT', 'ETN', 'FN', 'HUBB', 'LRCX', 'MOD', 'SKHY', 'STX']
+E06-A E06-B 22 /30 unique ['AEHR', 'AMZN', 'ASML', 'CBRS', 'COHR', 'DELL', 'GOOGL', 'HPE'] ['AAOI', 'AXTI', 'COHU', 'MKSI', 'OKLO', 'SMR', 'TSLA', 'VSH']
+02 E05-A 21 /30 unique ['AEP', 'ALAB', 'ANET', 'BABA', 'BWXT', 'CDNS', 'ET', 'SMCI', 'SNPS'] ['ALLE', 'BDC', 'CLS', 'DOV', 'EME', 'ENS', 'HPE', 'NTAP', 'TEL']
+E04-A E05-A 21 /30 unique ['COHR', 'ETN', 'FLEX', 'FN', 'HUBB', 'JBL', 'KLAC', 'LRCX', 'PLAB'] ['ALLE', 'CSCO', 'DELL', 'FTV', 'ORCL', 'SNDK', 'ST', 'VST', 'WDC']
+E04-A E05-B 21 /30 unique ['AMZN', 'BDC', 'COHR', 'DOV', 'ENS', 'FLEX', 'JBL', 'KLAC', 'PLAB'] ['AMAT', 'DELL', 'MOD', 'ORCL', 'SKHY', 'SNDK', 'STX', 'VST', 'WDC']
+02 N05 20 /30 unique ['AEP', 'ALAB', 'AMZN', 'BWXT', 'CDNS', 'CSCO', 'FTV', 'SNPS', 'VST', 'WDC'] ['ACLS', 'ASML', 'ATKR', 'CLS', 'FLNC', 'GEV', 'HTHIY', 'POWL', 'SKHY', 'TEL']
+E04-A E04-B 20 /30 unique ['AMZN', 'COHR', 'CRDO', 'FLEX', 'HUBB', 'JBL', 'KLAC', 'PLAB', 'QCOM', 'VRT'] ['AMAT', 'CARR', 'DELL', 'GNRC', 'MOD', 'SNDK', 'ST', 'STX', 'VST', 'WDC']
+01 04 19 /30 unique ['ACLS', 'ASML', 'CRDO', 'EME', 'HPE', 'HUBB', 'MKSI', 'SKHY', 'SNDK', 'ST', 'TEL'] ['ALLE', 'AMZN', 'BDC', 'CAMT', 'KLIC', 'NOK', 'NVMI', 'QCOM', 'SANM', 'TDY', 'TSM']
+07 E05-B 19 /30 unique ['ALAB', 'AMD', 'ANET', 'COHR', 'CRWV', 'FIX', 'IREN', 'LITE', 'MRVL', 'NBIS', 'SMCI'] ['AMAT', 'HPE', 'HUBB', 'LRCX', 'NTAP', 'ORCL', 'PNR', 'QCOM', 'SKHY', 'TEL', 'VST']
+01 N05 18 /30 unique ['AEP', 'ASGLY', 'DKILY', 'DOV', 'DTE', 'EME', 'GFS', 'HPE', 'HUBB', 'MKSI', 'PLAB', 'VISN'] ['ANET', 'ATKR', 'AVGO', 'CLS', 'DELL', 'GEV', 'HTHIY', 'ORCL', 'POWL', 'QCOM', 'TSM', 'VRT']
+07 09 18 /30 unique ['ALAB', 'AMD', 'ANET', 'AVGO', 'COHR', 'EME', 'ETN', 'FIX', 'FN', 'GOOGL', 'MOD', 'MSFT'] ['CEG', 'ET', 'HPE', 'NOK', 'ORCL', 'SANM', 'SIMO', 'SKHY', 'SMTC', 'TER', 'UMC', 'VST']
+N05 E05-A 18 /30 unique ['ACLS', 'ANET', 'ASML', 'ATKR', 'BABA', 'ET', 'FLNC', 'GEV', 'HTHIY', 'POWL', 'SKHY', 'SMCI'] ['ALLE', 'AMZN', 'BDC', 'CSCO', 'DOV', 'EME', 'ENS', 'FTV', 'HPE', 'NTAP', 'VST', 'WDC']
+N05 E05-B 18 /30 unique ['ACLS', 'ANET', 'ASML', 'ATKR', 'BABA', 'ET', 'FLNC', 'GEV', 'HTHIY', 'POWL', 'SMCI', 'ST'] ['AMAT', 'EME', 'ETN', 'FN', 'HPE', 'HUBB', 'LRCX', 'MOD', 'NTAP', 'STX', 'VST', 'WDC']
+02 E05-B 17 /30 unique ['AEP', 'ALAB', 'AMZN', 'ANET', 'BABA', 'BWXT', 'CDNS', 'CSCO', 'ET', 'FTV', 'SMCI', 'SNPS', 'ST'] ['AMAT', 'CLS', 'EME', 'ETN', 'FN', 'HPE', 'HUBB', 'LRCX', 'MOD', 'NTAP', 'SKHY', 'STX', 'TEL']
+07 E04-B 17 /30 unique ['ALAB', 'AMD', 'ANET', 'COHR', 'CRDO', 'CRWV', 'FIX', 'IREN', 'LITE', 'MRVL', 'NBIS', 'SMCI', 'VRT'] ['AMAT', 'BDC', 'CARR', 'DOV', 'ENS', 'GNRC', 'HPE', 'LRCX', 'NTAP', 'PNR', 'ST', 'TEL', 'VST']
+01 06 16 /30 unique ['ACLS', 'AEP', 'ASML', 'DOV', 'DTE', 'EME', 'GFS', 'GOOGL', 'HPE', 'HUBB', 'MKSI', 'PLAB', 'SKHY', 'TEL'] ['AAOI', 'ALAB', 'AMD', 'AMZN', 'AVGO', 'BDC', 'CLS', 'COHR', 'ENPH', 'FLEX', 'MRVL', 'NBIS', 'P', 'TSM']
+02 06 16 /30 unique ['AEP', 'ANET', 'BWXT', 'CDNS', 'CSCO', 'DELL', 'FTV', 'GOOGL', 'ORCL', 'QCOM', 'SNPS', 'VRT', 'VST', 'WDC'] ['AAOI', 'AMD', 'ASGLY', 'BDC', 'CLS', 'COHR', 'DKILY', 'ENPH', 'FLEX', 'FLNC', 'MRVL', 'NBIS', 'P', 'VISN']
+02 07 16 /30 unique ['AEP', 'AMZN', 'BABA', 'BWXT', 'CDNS', 'CSCO', 'ET', 'FTV', 'ORCL', 'PNR', 'QCOM', 'SNPS', 'ST', 'VST'] ['AMD', 'CLS', 'COHR', 'CRWV', 'EME', 'ETN', 'FIX', 'FN', 'IREN', 'LITE', 'MOD', 'MRVL', 'NBIS', 'STX']
+04 06 16 /30 unique ['AEP', 'ALLE', 'CAMT', 'DOV', 'DTE', 'GFS', 'GOOGL', 'KLIC', 'NOK', 'NVMI', 'PLAB', 'QCOM', 'SANM', 'TDY'] ['AAOI', 'ALAB', 'AMD', 'AVGO', 'CLS', 'COHR', 'CRDO', 'ENPH', 'FLEX', 'MRVL', 'NBIS', 'P', 'SNDK', 'ST']
+06 07 16 /30 unique ['AAOI', 'AMZN', 'ASGLY', 'BABA', 'BDC', 'DKILY', 'ENPH', 'ET', 'FLEX', 'FLNC', 'P', 'PNR', 'ST', 'VISN'] ['ANET', 'CRWV', 'DELL', 'EME', 'ETN', 'FIX', 'FN', 'GOOGL', 'IREN', 'LITE', 'MOD', 'STX', 'VRT', 'WDC']
+06 N05 16 /30 unique ['AAOI', 'ALAB', 'AMD', 'AMZN', 'ASGLY', 'BDC', 'COHR', 'DKILY', 'ENPH', 'FLEX', 'MRVL', 'NBIS', 'P', 'VISN'] ['ACLS', 'ANET', 'ASML', 'ATKR', 'DELL', 'GEV', 'GOOGL', 'HTHIY', 'ORCL', 'POWL', 'QCOM', 'SKHY', 'TEL', 'VRT']
+07 N03 16 /30 unique ['AMD', 'CRWV', 'DELL', 'FIX', 'GOOGL', 'IREN', 'META', 'MOD', 'MRVL', 'MSFT', 'NBIS', 'SMCI', 'STX', 'WDC'] ['AAOI', 'CIEN', 'GNRC', 'HPE', 'JBL', 'KEYS', 'KLIC', 'MCHP', 'MKSI', 'MTSI', 'NVT', 'ONTO', 'SKHY', 'SMTC']
+N02 N06 16 /30 unique ['ADBE', 'CBRS', 'DELL', 'FCEL', 'GEV', 'GOOGL', 'LWLG', 'ORCL', 'SKHY', 'SMCI', 'SMR', 'SNDK', 'SPACEX', 'WOLF'] ['AEHR', 'AMD', 'CAMT', 'CLS', 'COHR', 'LITE', 'MOD', 'MRVL', 'MTSI', 'ONTO', 'RKLB', 'RMBS', 'SITM', 'TSEM']
+current report sets {'01': {'3': [], '6': []}, '02': {'3': [], '6': []}, '04': {'3': [], '6': []}, '06': {'3': [], '6': []}, '07': {'3': ['ADBE'], '6': ['ADBE']}, 'N03': {'3': [], '6': []}, 'N06': {'3': [], '6': []}, '09': {'3': [], '6': []}, 'N05': {'3': [], '6': []}, 'E04-A': {'3': [], '6': ['TEL']}, 'E05-A': {'3': ['ADBE', 'ST'], '6': ['ADBE', 'ST', 'TEL']}, 'E04-B': {'3': ['ADBE', 'MSFT', 'TEL'], '6': ['ADBE', 'EME', 'MSFT', 'TEL']}, 'E05-B': {'3': ['ADBE', 'TEL'], '6': ['ADBE', 'MSFT', 'TEL']}}
+historical
+01 2.42 1.56 0.135 9
+02 1.0 0.44 0.108 10
+03 -3.26 -5.87 0.004 7
+04 2.33 1.97 0.187 10
+05 -9.44 -12.82 0.0 2
+06F 0.77 -2.38 0.071 8
+06G -2.03 -6.58 -0.054 9
+06E -5.97 -10.45 -0.117 6
+07 -2.33 -5.92 0.055 7
+08 -2.93 -5.68 0.037 4
+09 -4.75 -7.83 0.097 6
+N01 -1.74 -4.82 0.192 8
+N02 2.59 2.66 0.275 9
+N03 -7.13 -9.88 -0.003 5
+N04 -3.96 -7.0 0.115 4
+N05 0.48 -1.28 0.206 10
+N06 -4.0 -9.02 0.073 5

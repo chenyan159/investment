@@ -1,0 +1,356 @@
+[
+  {
+    "path": "分析报告/公司排序/AGENTS.md",
+    "sha256": "dc084379c5a8c9b69ad15eb470d2b1ae66015fd2413fbfcac036878d9c0eb2fb",
+    "bytes": 9191,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/00_总索引.md",
+    "sha256": "b25408e28e291ac43cbcce5c712a84e3acb87494bbc3f3f9c0886d5c29650ef3",
+    "bytes": 5395,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/00_待运行研究方案注册表.csv",
+    "sha256": "27af29fdeb7dcafdc73bb2f8dc9ab5f01c09508c6df2ebd73ca4edf87b1706f1",
+    "bytes": 15178,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/00_方案状态总表.csv",
+    "sha256": "57ff4fcefc9d6266d77fea844907cabc8abf8eece3ffd9d647b6650ee0ea88d7",
+    "bytes": 12679,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/00_站点发布策略.csv",
+    "sha256": "6086f02a97eea64aa014781510d4b3869f9ef7cbf2a338db11691be7291fe7fd",
+    "bytes": 4566,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/07_输入扩展对照方案_待验证/README.md",
+    "sha256": "054ecb77fc216fbdd2fe162c0af62a490086dc3b4f1f84187d43fd525cf04523",
+    "bytes": 3634,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/91_通用研究方案/README.md",
+    "sha256": "dcf20a1ab0936a4fb9450100b8e15d43f7233f264e76c5a2e2a459de67da7e20",
+    "bytes": 848,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/08_常规研究单元/U01_赔率与基准承载/迭代版本/R01_2026-09-08_双判断/01_研究方案.md",
+    "sha256": "e42d5f95730e38f70ecd8def6b0e607831320067b191fcaa4d982073788556e5",
+    "bytes": 11854,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/08_常规研究单元/U01_赔率与基准承载/迭代版本/R01_2026-09-08_双判断/02_排序结果.md",
+    "sha256": "7c8f74bfd7720f686a23cf71101a7d88802a85720692ced113a631fa00b56694",
+    "bytes": 364391,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/01_暂时有效_核心/02_预期兑现概率_十二句话S02_原10/迭代版本/R11_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "sha256": "762aaba715d9c3374c722f2f4f1261f41558185c946e26d0b95a64d386872166",
+    "bytes": 9566,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/01_暂时有效_核心/02_预期兑现概率_十二句话S02_原10/迭代版本/R11_2026-09-07_期限证据与选择语义/02_排序结果.md",
+    "sha256": "366bac5a00b0a71feb782de590d18aa9d4150fa06bde668a009ac9581360e168",
+    "bytes": 417230,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/02_暂时有效_辅助/04_极简基准兑现_迭代实验_原06/迭代版本/R24_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "sha256": "b6992adeb396caaa77469b3852d9cf1c8a80ba49c1ac5aff84ad58b2c463170e",
+    "bytes": 9536,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/02_暂时有效_辅助/04_极简基准兑现_迭代实验_原06/迭代版本/R24_2026-09-07_期限证据与选择语义/02_排序结果.md",
+    "sha256": "deef7aadf467ca91c812f65eac09802b1c62ca1674e8653a70c68e8a5025c15c",
+    "bytes": 170249,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/02_暂时有效_辅助/06_双源三视图_原01/迭代版本/R04_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "sha256": "c01354c3a59e5f5efdb19cac5e855c2435cf9726a56c6aeac0b3722081a9c02e",
+    "bytes": 9869,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/02_暂时有效_辅助/06_双源三视图_原01/迭代版本/R04_2026-09-07_期限证据与选择语义/02_排序结果.md",
+    "sha256": "d5550b3cdb514c2e5e2b28ae8fb01bedcb539a0504f40ab5d87127dd1eb381b3",
+    "bytes": 267865,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/08_常规研究单元/U07_收入台阶与现金转化/迭代版本/R01_2026-09-08_双判断/01_研究方案.md",
+    "sha256": "3b3d0d729bb13b844d1a6a1ee1cab3bcefe484c3d1c4ded1eeeed55c412d08c0",
+    "bytes": 11826,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/08_常规研究单元/U07_收入台阶与现金转化/迭代版本/R01_2026-09-08_双判断/02_排序结果.md",
+    "sha256": "d31c47fc2f9ae0aaa87ff46518ed2e3368d3ed076e35141b60723546dbaee2d7",
+    "bytes": 307830,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/08_常规研究单元/U08_证据与经济风险审查/迭代版本/R01_2026-09-08_联合审查/01_研究方案.md",
+    "sha256": "8964d1df703a515bb8a32a10342de8a8547836165a5d33d9de95e6adebb42a3d",
+    "bytes": 10922,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/08_常规研究单元/U08_证据与经济风险审查/迭代版本/R01_2026-09-08_联合审查/02_排序结果.md",
+    "sha256": "903e12fd3ab55f315d9655d174f0fffbade3adb6279b6ddf73c37a515d99b209",
+    "bytes": 368313,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N03_预期差增量与证据升级/迭代版本/R03_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "sha256": "0ad3c90df2e0cd2e452e9d148077df6b1ff471e0902ca2a090c6d4fd1f97bd7d",
+    "bytes": 9666,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N03_预期差增量与证据升级/迭代版本/R03_2026-09-07_期限证据与选择语义/02_排序结果.md",
+    "sha256": "486e8f028fc7fc3f2f5926fe08345c0a0b06a3e3b969d0832dcb39a4b5e676c6",
+    "bytes": 315802,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N06_超高增长与多倍价值/迭代版本/R03_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "sha256": "548f73a2d6f9a3e60790d781401729883ec13930cd9c7dfeaeb4b7c4731bfb79",
+    "bytes": 9860,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N06_超高增长与多倍价值/迭代版本/R03_2026-09-07_期限证据与选择语义/02_排序结果.md",
+    "sha256": "6736db866b1f78e551d4b7c5c3d223a039906adbc2a872cb57afcd091cf141c2",
+    "bytes": 290680,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/07_输入扩展对照方案_待验证/E04_风险调整赔率_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/01_研究方案.md",
+    "sha256": "08020b96f9b670c5ba198685d0ec97ebbd3a538c540def5e4c8f1e7f9d9a3c94",
+    "bytes": 9750,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/07_输入扩展对照方案_待验证/E04_风险调整赔率_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/02_排序结果.md",
+    "sha256": "dbcc605fec3575ebd36d9897149d258bdffa60d2f932967c354419ec25df9765",
+    "bytes": 333376,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/07_输入扩展对照方案_待验证/E05_极简基准兑现_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/01_研究方案.md",
+    "sha256": "73cdc6f473a86b1d1f8af6eba3f62f9ab17aac55476652e31788ef67d83b5cd9",
+    "bytes": 9720,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/07_输入扩展对照方案_待验证/E05_极简基准兑现_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/02_排序结果.md",
+    "sha256": "d74ca5c42d17a64eea335bc0559d1e85d21c392594d07b73f9733c0b9be895d5",
+    "bytes": 200655,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/07_输入扩展对照方案_待验证/E06_尾部生存_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/01_研究方案.md",
+    "sha256": "e7204a6f5782b8e1ee0c725841ac95740ad0f7d8fe26106499019533bd19d8cd",
+    "bytes": 9668,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/07_输入扩展对照方案_待验证/E06_尾部生存_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/02_排序结果.md",
+    "sha256": "3e23c57a84d6faf47e6a4b1b0af327dda6b9d798ab7338b1d594a3c5538fbf51",
+    "bytes": 256563,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/03_观察_待更新/09_弹性成长_原02/迭代版本/R10_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "sha256": "656e9508983d8cf652802ad564c05c950c25a15da89c5ddceb6b00b32bf18a3a",
+    "bytes": 9292,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/03_观察_待更新/09_弹性成长_原02/迭代版本/R10_2026-09-07_期限证据与选择语义/02_排序结果.md",
+    "sha256": "beec8d944a96bb5108a4c80c081e03b022938d8aab9b5b5babe499aaf8c12ed5",
+    "bytes": 328298,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N05_市场状态自适应双阶段/迭代版本/R03_2026-09-07_期限证据与选择语义/01_研究方案.md",
+    "sha256": "b5408faf27cf6827b70c89cfd495c43f568dde43048f61259e525249ec0092a1",
+    "bytes": 9915,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N05_市场状态自适应双阶段/迭代版本/R03_2026-09-07_期限证据与选择语义/02_排序结果.md",
+    "sha256": "bf5c7a7835e7e5b204d0731aaa4f1dcefaad1b003ceb66acea413431fd05951e",
+    "bytes": 297549,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/07_输入扩展对照方案_待验证/E04_风险调整赔率_输入隔离/迭代版本/R01_2026-09-08_输入隔离/BCDE/01_研究方案.md",
+    "sha256": "4fe45c0bc1aca0750c17ffda47c5609ab715baceedd769615c614e72b65ca2bd",
+    "bytes": 9701,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/07_输入扩展对照方案_待验证/E04_风险调整赔率_输入隔离/迭代版本/R01_2026-09-08_输入隔离/BCDE/02_排序结果.md",
+    "sha256": "bce429d1c26266d870e2b9130a9342075968dd454f789651fa023d24cd27fc35",
+    "bytes": 262760,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/07_输入扩展对照方案_待验证/E05_极简基准兑现_输入隔离/迭代版本/R01_2026-09-08_输入隔离/BCDE/01_研究方案.md",
+    "sha256": "61bff80862dcd6db6ba56ce4ca77afad6c3421062fe56719f19b345d70a36c91",
+    "bytes": 9671,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/07_输入扩展对照方案_待验证/E05_极简基准兑现_输入隔离/迭代版本/R01_2026-09-08_输入隔离/BCDE/02_排序结果.md",
+    "sha256": "3dca50e4deb2f0b8441782e3ef41f73e1d865ed37476397e3f3e4172ae6523b2",
+    "bytes": 269291,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/07_输入扩展对照方案_待验证/E06_尾部生存_输入隔离/迭代版本/R01_2026-09-08_输入隔离/BCDE/01_研究方案.md",
+    "sha256": "fbb599b73e4bd9a7403c99742c65e7549dfb37c8cc796f5323b32adf1ca88b1e",
+    "bytes": 9619,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/07_输入扩展对照方案_待验证/E06_尾部生存_输入隔离/迭代版本/R01_2026-09-08_输入隔离/BCDE/02_排序结果.md",
+    "sha256": "832bc06bc401028e34478e15bf1f5854831d19efba658e0752045bfb885ba0e9",
+    "bytes": 276226,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/00_运行与榜单注册表.csv",
+    "sha256": "58e9a281f3d064ebfd9af0b1cd77bfd9d2f4de2a088564b66d957fbc87467f23",
+    "bytes": 14947,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/00_当前评估.json",
+    "sha256": "1457a45ddfd17233e8c034fc7fe3dce161daba574e1e8a73c8ea04fd631fb298",
+    "bytes": 1709,
+    "role": "protected"
+  },
+  {
+    "path": "tools/queue.jsonl",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "role": "protected"
+  },
+  {
+    "path": "tools/queue.done.jsonl",
+    "sha256": "d02e06eaf0c0ee0448c6bcd1e736110b33b1b3626e7042fdea3ea19276805b7d",
+    "bytes": 1659702,
+    "role": "protected"
+  },
+  {
+    "path": "tools/queue.control.json",
+    "sha256": "033edfbbcbcf8ebc964bc263372ec291ed084efdeddf4eae36224b4bc6f61022",
+    "bytes": 24,
+    "role": "protected"
+  },
+  {
+    "path": "tools/research-runner/runner.mjs",
+    "sha256": "445b7d573b30d5382ab185e01a998dbf127e9aa2bf6d15c1b31283c5e056556b",
+    "bytes": 32099,
+    "role": "protected"
+  },
+  {
+    "path": "tools/research-runner/domains/file-run.mjs",
+    "sha256": "be7a16b30717ea7e3e8a5807b95dd64158f73b76a2e0a02ac1286b97958e6876",
+    "bytes": 7092,
+    "role": "protected"
+  },
+  {
+    "path": "tools/research-runner/prompts/file-run.mjs",
+    "sha256": "eb3f01c038b2a3de71b1a969d751baf1385728a7042f68b84d333a5631dc4589",
+    "bytes": 321,
+    "role": "protected"
+  },
+  {
+    "path": "tools/research-runner/research-plans.json",
+    "sha256": "4c80546abf4b6a567e9e8ad0cb796636ece962b8a7ecf9538bc54e30cbf1df18",
+    "bytes": 2511,
+    "role": "protected"
+  },
+  {
+    "path": "分析报告/公司排序/站点数据/current.json",
+    "sha256": "2817945867f5bbdb017b5111e481e7933d3c3f3d8346a74303d3354c6570bde7",
+    "bytes": 443974,
+    "role": "generated"
+  },
+  {
+    "path": "分析报告/公司排序/01_暂时有效_核心/02_预期兑现概率_十二句话S02_原10/00_方案状态.md",
+    "sha256": "1ed95597567ec7d56d597aeb8f65ccd9a32ef1fadf38dfb96857e6bade524be9",
+    "bytes": 2116,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/02_暂时有效_辅助/04_极简基准兑现_迭代实验_原06/00_方案状态.md",
+    "sha256": "e03509debeaa8ec7591f6d73e3fc99c6a37d3c959706f01d6862d7a307bc6bdb",
+    "bytes": 2025,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/02_暂时有效_辅助/06_双源三视图_原01/00_方案状态.md",
+    "sha256": "3788ba16e198f884e43510f9be4e90515779c67105bec2c1c6b1248c617ed57a",
+    "bytes": 2252,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N03_预期差增量与证据升级/00_方案状态.md",
+    "sha256": "270e64d649fa2b3ead3010dc55b0185654b134fdad17e793dca97c443fdc0db6",
+    "bytes": 942,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N03_预期差增量与证据升级/00_方案说明.md",
+    "sha256": "5d056942933c40db6f9b5dbb6c99a66ad2ef2ae9c3a2e591efaca55e361c8a9c",
+    "bytes": 776,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N06_超高增长与多倍价值/00_方案状态.md",
+    "sha256": "9de17aa20d11dbca8cd152fb7fa7dee3b020d2e4e38b4a611f61cc527c013d4e",
+    "bytes": 939,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N06_超高增长与多倍价值/00_方案说明.md",
+    "sha256": "56e548813239b6cdd50d633db3d3a9e84afba23032301b63f13d9ca1108fd8f7",
+    "bytes": 1452,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/03_观察_待更新/09_弹性成长_原02/00_方案状态.md",
+    "sha256": "b3c74fc78dde7469f52f8ba3a3b8f1b78a10908fd494668e0259cdb2b1a26ceb",
+    "bytes": 1971,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N05_市场状态自适应双阶段/00_方案状态.md",
+    "sha256": "d4ff7fbac79b34b7d50c50e2cec84d3b69bb431b598d21707d6589e5b2a89e2a",
+    "bytes": 933,
+    "role": "management"
+  },
+  {
+    "path": "分析报告/公司排序/06_候选新方案_待验证/N05_市场状态自适应双阶段/00_方案说明.md",
+    "sha256": "3b8c1a307069090a662c498f5831939cf49e3302cb14d306f88deab7c3cd5c58",
+    "bytes": 976,
+    "role": "management"
+  }
+]

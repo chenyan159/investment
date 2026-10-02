@@ -1,0 +1,360 @@
+# ASGLY / AGC Inc 公司调研：半导体材料、低损耗基板与AI封装上游材料（2026-06-11）
+
+报告日期：2026-06-11  
+股票代码：ASGLY（OTC ADR；1 ADS = 0.2 ordinary share）/ 5201.T（东京证券交易所）  
+公司名称：AGC Inc.（旭硝子，原 Asahi Glass）  
+正式归属目录：`公司调研/半导体材料_化学品_基板/`  
+资料边界：本报告只读取项目内 `行业调研/` 相关资料与 `公司调研/公司索引.md` 用于确定目录；未读取、引用或继承 `特征量化/`、`日度资料/`、`tmp/`、`data/` 或既有公司报告正文。  
+口径说明：AGC 报表单位常用 `100 million JPY`，本文已换算为十亿日元 `¥bn`；美元估算除特别说明外按公司 FY2026 指引汇率 `USD/JPY=155` 换算。AI 数据中心收入为本文估算，AGC 未单独披露。
+
+## 0. 结论先行
+
+AGC 不是一家“AI 数据中心设备公司”，而是一家老牌日本玻璃、化学与生命科学材料集团。投资人眼中的 AGC 过去更像周期型材料公司：建筑玻璃、汽车玻璃、显示玻璃、氯碱/PVC、含氟化学品和 CDMO 共同决定利润，ROE 偏低、资本占用重。但 2026 年新的投资看点明显集中到半导体材料和 AI 互联材料：`EUV mask blanks`、ArF 光刻镜头用合成石英、CMP slurry、半导体设备用 FFKM/含氟部件、ETFE release film、ArF/KrF pellicle raw material CYTOP、AI 路由/交换机用低损耗 CCL、低介电含氟树脂、TGV/glass core substrate、光电融合用 MLA/光波导。
+
+最关键的边界：AGC 当前 AI 数据中心收入占比仍小。2025 年公司披露“半导体相关业务”合计约 `¥100bn`，目标 2030 年翻倍到约 `¥200bn`；相对 2025 年集团收入 `¥2,058.8bn`，半导体相关业务仅约 `4.9%`。其中真正直接受 AI 数据中心拉动的部分，本文估计 2025 年约 `¥25-40bn`，2026 年约 `¥35-60bn`，约占集团收入 `1.6%-2.7%`。所以 ASGLY 的 AI 逻辑是“上游高壁垒材料期权 + 半导体周期复苏 + 组合改善”，不是当前收入主轴。
+
+截至 2026-06-11，最新正式财报是 FY2026 Q1，AGC Q1 销售 `¥538.0bn`，同比 `+7.7%`；营业利润 `¥38.5bn`，同比 `+48.8%`；归母净利润 `¥22.8bn`，同比 `+245%`。FY2026 全年指引维持销售 `¥2.20tn`、营业利润 `¥150bn`、归母净利润 `¥77bn`、营业利润率 `6.8%`、ROE `5.2%`。资产负债表不脆弱：2026-03-31 总资产 `¥2,995.5bn`，现金 `¥119.8bn`，有息债 `¥702.7bn`，D/E `0.41`；但 ROE 仍低，Q1 自由现金流为 `-¥17.1bn`，资本强度和周期业务仍压制估值。
+
+产品优先级排序：
+
+| 优先级 | 产品/业务 | 当前证据 | 投资判断 |
+|---:|---|---|---|
+| 1 | EUV mask blanks | AGC 是全球 leading two，且是唯一覆盖玻璃材料、抛光、成膜全流程的 blanks 厂商；Low-NA 已完成，High-NA/Hyper-NA 开发中；2026 需求恢复并预计超过 2024 可比期 | 现有收入最大、毛利和壁垒最高之一；直接受 AI GPU/ASIC/HBM tape-out 与 EUV 层数增长驱动 |
+| 2 | 低损耗 CCL / METEORWAVE ELL / 低介电树脂 | AI 路由器和交换机已有部分采用；224Gbps 新树脂样品在评估，预计 2027 开始贡献 | 最直接对应 AI 数据中心网络硬件；短期收入基数小，但弹性高 |
+| 3 | Performance Chemicals 半导体材料 | FY2025 Performance Chemicals 半导体相关应用约 `24%`，约 `¥41bn`；FFKM、ETFE release film、CYTOP、热介质和 post-CMP cleaner 形成组合 | 单品较分散，但更高利润率、耗材属性和客户切换成本强 |
+| 4 | CMP slurry + post-CMP cleaner | Ceria slurry 随半导体市场增长，AGC 可从 slurry 延伸到清洗液；台湾新技术服务点强化客户验证 | 中高确定性，AI 间接拉动；不如 EUV blanks 有叙事，但现金流更稳 |
+| 5 | TGV / glass core substrate | AGC 有 TGV 玻璃能力，行业资料与公司 Q&A 都指向 2028 开始客户应用、2029 更可能 ramp | 高潜力小业务，当前不应计入主收入；若 AI/HPC 封装进入玻璃 core，弹性很大 |
+| 6 | 光电融合组件：MLA、光波导、CPO 相关玻璃/光学材料 | 公司称已有大量 inquiries、样品提供，目标未来“tens of billions of yen”市场，量产仍在后面 | 2028-2029 以后期权；当前为研发/客户验证，不是 FY2026 收入核心 |
+
+## 1. 公司整体业务、产业链位置和估值快照
+
+### 1.1 AGC 是什么公司
+
+AGC 成立于 1907 年，起点是日本平板玻璃国产化，现在是全球大型玻璃、电子材料、化学品和生命科学 CDMO 集团。2023 年以后公司报告分为五个主要分部：Architectural Glass、Automotive、Electronics、Chemicals、Life Science，另有 Ceramics/Others。
+
+| 分部 | 主要产品 | 2026 指引销售 | 占集团销售约 | 2026 指引营业利润 | 利润率 | AI/半导体相关性 |
+|---|---|---:|---:|---:|---:|---|
+| Architectural Glass | 建筑平板玻璃、节能玻璃、欧美/亚洲建筑玻璃 | `¥480bn` | `21.8%` | `¥20bn` | `4.2%` | 低；非 AI 主线 |
+| Automotive | 汽车玻璃、车载显示 cover glass、CASE 高附加值玻璃 | `¥510bn` | `23.2%` | `¥32bn` | `6.3%` | 低到中；车载显示/传感材料有成长性，但非 AI 数据中心 |
+| Electronics | LCD 玻璃基板、EUV mask blanks、CMP slurry、合成石英、CCL、TGV/光学材料 | `¥360bn` | `16.4%` | `¥45bn` | `12.5%` | 最高；半导体材料和 AI 高速互联都在此 |
+| Chemicals | 氯碱/PVC、Integrated Chemicals、Performance Chemicals、含氟化学品 | `¥680bn` | `30.9%` | `¥56bn` | `8.2%` | 中高；含氟半导体材料、低介电树脂、FFKM、release film |
+| Life Science | 小分子/农药 CDMO、生物药 CDMO | `¥160bn` | `7.3%` | `-¥5bn` | `-3.1%` | 低；2026 重点是减亏 |
+| Ceramics/Others | 玻璃熔炉耐火材料等 | `¥60bn` | `2.7%` | `¥2bn` | `3.3%` | 低 |
+
+注：分部占比以 FY2026 consolidated sales `¥2.20tn` 为分母，因 intersegment elimination 存在，分部占比合计略高于 100%。
+
+### 1.2 投资人心中的 AGC
+
+AGC 的估值折价来自三点：第一，建筑玻璃、汽车玻璃、显示玻璃、氯碱/PVC 都有明显周期性；第二，显示、Life Science、部分成熟化学品拖累 ROE；第三，公司资本开支长期较重。估值重估的核心不是集团总收入突然高增，而是半导体相关业务从“隐藏在 Electronics/Chemicals 里的材料组合”变成可被单独跟踪的增长资产。
+
+AGC 对投资者的吸引力在于几个不容易复制的材料壁垒：
+
+- 玻璃材料、抛光、成膜、缺陷控制贯穿 EUV blanks 全流程。
+- 含氟化学品从上游原料到高纯制造、部件、膜材料和半导体耗材形成纵向能力。
+- 多数产品进入客户工艺后切换成本高，特别是 EUV blanks、FFKM、ETFE release film、CYTOP、CMP slurry。
+- AI 网络从 112Gbps 向 224Gbps 迁移，低介电损耗 CCL 和树脂材料开始有明确客户拉动。
+
+### 1.3 最近三年重大业务变动、转型和退出
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2024-2026 | `AGC plus-2026` 中期战略推动“core businesses + strategic businesses”的双轮经营 | 建筑/汽车/基础化学品保现金流，Electronics、Performance Chemicals、Life Science、Mobility 做成长资产 |
+| 2025 | 宣布或推进 Specialty glass business for chemical strengthening 退出、Polycarbonate business 退出、AGC Coat-Tech 退出、美国 Colorado 生物药 CDMO 大型 SUS bioreactor sites 关闭 | 目标是提高 ROCE、降低亏损资本占用；Life Science 从扩张转向减亏和生产率修复 |
+| 2025-2026 | Electronics 与 Performance Chemicals 半导体材料被单独强化披露 | 2025 半导体相关业务约 `¥100bn`，2030 目标约 `¥200bn`，以 EUV blanks、CCL、CMP、含氟材料和 packaging materials 为主 |
+| 2025-2026 | Large-scale capacity expansions 完成后，FY2026 CAPEX 从 `¥251.3bn` 降至 `¥190.0bn` | 现金流压力边际下降；但仍有电子材料、Life Science、玻璃炉修等资本需求 |
+| 2026-06-02 | 半导体业务说明会首次集中披露产品栈：EUV blanks、lens materials、CMP、CCL、FFKM、release film、CYTOP、AF-164、post-CMP cleaner、TGV、光学材料 | 使 AGC 的 AI/半导体材料资产更可跟踪，但也明确 TGV/光电融合仍是中长期期权 |
+
+### 1.4 产业链位置
+
+AGC 位于 AI 基础设施链条的上游材料层，不直接卖 GPU、服务器、交换机或数据中心服务。它的材料进入四类客户链条：
+
+| AGC 产品层 | 进入的客户链条 | 最终映射到 AI |
+|---|---|---|
+| EUV mask blanks、合成石英、CMP slurry | ASML/ZEISS/光罩厂/foundry/DRAM 厂/逻辑客户 | GPU、ASIC、HBM、先进逻辑节点 tape-out 和量产良率 |
+| FFKM、fluoropolymer、热介质、post-CMP cleaner | 半导体设备商、晶圆厂、O-ring/部件商、清洗/CMP工艺 | 先进节点设备 uptime、刻蚀/沉积/温控/清洗良率 |
+| ETFE release film、低介电 underfill、silica filler | OSAT、foundry、HBM/advanced packaging、molding resin/equipment makers | HBM、AI ASIC 封装和先进封装放量 |
+| METEORWAVE CCL、低介电树脂/填料 | CCL/PCB 厂、网络设备和交换机供应链 | 224G/448G SerDes、800G/1.6T AI 交换机、core router、supercomputer |
+| TGV glass core、carrier glass、MLA/光波导 | advanced packaging、CPO/光引擎、glass interposer 生态 | 2028-2030 玻璃基板、CPO、光 I/O 期权 |
+
+### 1.5 股价和估值快照
+
+数据日期：2026-06-11。ASGLY 为 OTC ADR，成交稀疏，本文以 5201.T 为主价格锚，ASGLY 只做 ADR 参考。
+
+| 指标 | 最新值 | 日期/来源 | 说明 |
+|---|---:|---|---|
+| 5201.T 股价 | `¥6,964` | 2026-06-11，Yahoo/Google/Investing/FT 报价页 | 东京普通股更可靠 |
+| ASGLY ADR 价格 | 约 `$8.8-$9.0` | 2026-06-11，Google/StockAnalysis/Trading212/OTC 报价页区间 | ADR 低流动性导致平台间差异 |
+| 市值 | 约 `¥1.48tn`，约 `$9.2-$9.4bn` | 2026-06-11，Yahoo/Google/MarketWatch/Investing | 5201.T 口径约 `¥1.47-1.51tn` |
+| TTM PE | `16.5x-21.4x` | 2026-06-11，WSJ/Yahoo/StockAnalysis/GuruFocus 多源 | 差异来自 ADR/ordinary、EPS 口径和更新时间 |
+| Forward PE | 约 `14.7x` | 2026-06-11，GuruFocus 5201.T | 作为近似估值锚 |
+| P/S | `0.54x-0.59x` | 2026-06-11，WSJ/GuruFocus | 与低 ROE、周期材料属性一致 |
+| TTM Revenue | 约 `$13.2bn` | 2026-06-11，StockAnalysis | 与 FY2025 `¥2.0588tn` 大体一致 |
+| 收入增速 | Q1 FY2026 `+7.7% YoY`；FY2026 指引 `+6.9%` | 2026-05-12 AGC Q1 财报 | 指引销售 `¥2.20tn` vs FY2025 `¥2.0588tn` |
+| 毛利率 | 约 `24.3%` | 2026-06-11，GuruFocus/FinanceCharts | 公司财报未在 Q1 slide 明示 gross margin |
+| 净利率 | Q1 FY2026 `4.2%`；FY2026 指引 `3.5%`；数据站 TTM约 `3.4%-4.1%` | 2026-05-12 AGC；GuruFocus/StockAnalysis | Q1 归母净利 `¥22.8bn` / 销售 `¥538.0bn` |
+| 股息 | FY2026 指引 `¥210/share` | 2026-05-12 AGC Q1 财报 | 与 FY2025 持平 |
+
+估值判断：AGC 不是高增长倍数型 AI 标的。按 2026 指引归母净利 `¥77bn`、市值 `¥1.48tn`，forward P/E 约 `19.2x`；按外部一致预期/调整 EPS 可到 `14-15x`。如果只看集团 ROE `5.2%`，估值不便宜；如果半导体相关收入从 `¥100bn` 向 `¥200bn`兑现，且利润率显著高于集团平均，则估值有结构性上修空间。
+
+### 1.6 资产负债表和财务健康
+
+| 项目 | 2025-12-31 | 2026-03-31 | 变化 | 解读 |
+|---|---:|---:|---:|---|
+| 现金及等价物 | `¥94.7bn` | `¥119.8bn` | `+¥25.2bn` | 流动性改善 |
+| 存货 | `¥465.4bn` | `¥472.4bn` | `+¥7.0bn` | 存货仍高，需跟踪电子材料和化学品周期 |
+| 总资产 | `¥2,950.1bn` | `¥2,995.5bn` | `+¥45.5bn` | 资本密集型集团 |
+| 有息债 | `¥646.5bn` | `¥702.7bn` | `+¥56.3bn` | Q1 借款增加，部分用于现金/营运资金/投资 |
+| 负债 | `¥1,218.4bn` | `¥1,276.1bn` | `+¥57.7bn` | 可控但需关注利率和日元 |
+| 归母权益 | `¥1,485.1bn` | `¥1,494.9bn` | `+¥9.7bn` | 权益盘稳定 |
+| D/E | `0.37` | `0.41` | `+0.04` | 杠杆温和，不是财务困境 |
+| Q1 Operating CF | `¥42.6bn` | 2026 Q1 | - | 仍能造血 |
+| Q1 Free CF | `-¥17.1bn` | 2026 Q1 | - | Q1 投资与营运资金消耗导致 FCF 为负 |
+| FY2026 CAPEX 指引 | `¥190.0bn` | 2026 指引 | FY2025 `¥251.3bn` | 大扩产完成后 CAPEX 下台阶 |
+
+健康程度：中等偏稳。AGC 的 D/E 低于很多资本密集材料公司，债务不是主要风险；主要风险是资本回报率低、周期业务利润波动、Life Science 减亏兑现、以及电子材料扩产能否转化为高利润增长。
+
+## 2. 最近五个财报季度：收入、利润、订单/交期和AI暴露
+
+AGC 未披露 backlog、bookings、lead time、取消率，也不披露 AI data center revenue。下表的“AI/DC 相关收入”是本文根据半导体相关业务约 `¥100bn`、Electronics semiconductor-related products 约 `¥70-80bn`、Performance Chemicals 半导体应用约 `¥41bn`、以及公司对 EUV blanks/CCL/fluorochemicals 的 Q&A 线索反推的区间估算。
+
+| 财报季度 | 总收入 / 营业利润 / 归母净利 | 主要分部收入 | 半导体/AI 相关线索 | 订单、交期、取消率判断 |
+|---|---|---|---|---|
+| FY2025 Q1 | 收入 `¥499.6bn`；OP `¥25.8bn`；归母净利 `¥6.6bn` | Architectural `¥104.0bn`；Auto `¥128.7bn`；Electronics `¥86.7bn`，其中 Display `¥45.8bn`、Electronic Materials `¥40.5bn`；Chemicals `¥144.1bn`；Life Science `¥31.0bn` | Electronic Materials 增长来自 EUV photomask blanks 等半导体材料与 FX；半导体/AI DC 相关季度收入估计 `¥7-10bn` | 无 backlog 披露。EUV blanks 出货强，说明客户消耗和订单正常；Essential Chemicals 受检修拖累 |
+| FY2025 Q2 | 收入 `¥495.9bn`；OP `¥28.2bn`；归母净利约 `¥7.3bn`（按 H1 `¥13.9bn` 减 Q1） | Architectural `¥106.8bn`；Auto `¥126.9bn`；Electronics `¥81.5bn`，Electronic Materials `¥36.7bn`；Chemicals `¥141.7bn`，Performance Chemicals `¥49.6bn`；Life Science `¥32.5bn` | Electronic Materials 因 EUV blanks 等半导体材料出货减少和日元升值同比下滑；Performance Chemicals 因涨价改善 | Q2 半导体材料显示阶段性放缓；不是取消信号，更像客户节点/库存和汇率影响 |
+| FY2025 Q3 | 收入 `¥516.7bn`；OP `¥40.8bn`；归母净利约 `¥25.6bn`（按 Q1-Q3 `¥39.5bn` 减 H1） | Architectural `¥110.0bn`；Auto `¥129.9bn`；Electronics `¥91.5bn`，Electronic Materials `¥45.0bn`；Chemicals `¥145.5bn`，Performance Chemicals `¥48.9bn`；Life Science `¥32.6bn` | Q3 累计 Electronics 收入因 EUV blanks 等下降；但 Performance Chemicals 因半导体和运输设备用含氟产品出货/价格增长 | 半导体材料混合：EUV blanks 仍未完全恢复；含氟材料需求更稳，耗材属性强 |
+| FY2025 Q4 | 收入 `¥546.7bn`；OP `¥32.7bn`；归母净利约 `¥29.7bn`（按 FY2025 `¥69.2bn` 减 Q1-Q3） | 按年度减 Q1-Q3倒算：Architectural `¥120.3bn`；Auto `¥135.1bn`；Electronics `¥95.4bn`；Chemicals `¥152.9bn`；Life Science `¥37.0bn` | FY2025 结束时半导体相关业务约 `¥100bn`；公司随后称 EUV blanks 2025 是低点，2026 会恢复 | Q4 没披露 backlog。FY2026 指引开始假设半导体市场由 AI 需求驱动增长，电子材料出货回升 |
+| FY2026 Q1 | 收入 `¥538.0bn`；OP `¥38.5bn`；归母净利 `¥22.8bn` | Architectural `¥112.0bn`；Auto `¥137.6bn`；Electronics `¥90.3bn`，Display `¥48.1bn`、Electronic Materials `¥41.7bn`；Chemicals `¥157.2bn`；Life Science `¥35.6bn` | Electronic Materials：EUV mask blanks 处于恢复趋势，其他半导体相关材料和 optoelectronics 增加；Performance strategic businesses 同比增长；半导体/AI DC 相关季度收入估计 `¥10-15bn` | EUV blanks 客户使用量增加并稳定；CCL 在 AI router/switch 已部分采用、224Gbps prototype 评估；玻璃 core/TGV 和光电融合仍是样品/研发，不构成 FY2026 backlog |
+
+季度结论：
+
+- Q1 FY2026 是最近五季中质量最好的一季：收入、营业利润、净利率都改善，Life Science 减亏，Chemicals 出货和制造成本改善。
+- Electronics 的营业利润 Q1 FY2026 同比下降 `¥1.8bn`，原因是制造成本恶化和 Display 受日元贬值负面影响；这说明半导体材料恢复并未完全抵消显示业务和成本压力。
+- 订单证据最清晰的是 EUV blanks 和 CCL：EUV blanks 2026 需求较 2025 恢复，客户使用量增加；CCL 已在 AI router/switch 部分采用，224Gbps 仍在样品评价阶段。
+- 玻璃 core/TGV 与光电融合的“订单积压”还不能当作真实 backlog。AGC 自己判断 TGV 大规模 ramp 更可能在 2029，光电融合 2028-2029 起飞、2030s 显著增长。
+
+## 3. 2026 指引、业务占比和重点产品
+
+### 3.1 FY2026 指引拆解
+
+| 分部 | FY2025 销售 | FY2026 指引 | 增长 | FY2025 OP | FY2026 指引 OP | OP 增长 | 2026 业务重点 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Architectural Glass | `¥441.1bn` | `¥480.0bn` | `+8.8%` | `¥17.3bn` | `¥20.0bn` | `+15.6%` | 欧洲/亚洲价格调整、成本控制、需求恢复有限 |
+| Automotive | `¥520.6bn` | `¥510.0bn` | `-2.0%` | `¥29.3bn` | `¥32.0bn` | `+9.2%` | 产量压力下靠 mix、生产率、价格调整 |
+| Electronics | `¥355.1bn` | `¥360.0bn` | `+1.4%` | `¥47.5bn` | `¥45.0bn` | `-5.3%` | 半导体材料增长，LCD 玻璃略降，继续改善 Display 收益 |
+| Chemicals | `¥584.2bn` | `¥680.0bn` | `+16.4%` | `¥53.0bn` | `¥56.0bn` | `+5.7%` | Integrated Chemicals 电子应用产品增长，泰国扩产放量 |
+| Life Science | `¥133.1bn` | `¥160.0bn` | `+20.2%` | `-¥22.3bn` | `-¥5.0bn` | 减亏 `¥17.3bn` | 小分子/农化 CDMO 扩产、生物药 CDMO 生产率改善、Colorado 关闭减亏 |
+| Ceramics/Other | `¥59.9bn` | `¥60.0bn` | `+0.2%` | `¥2.6bn` | `¥2.0bn` | `-23.1%` | 稳定但非投资主线 |
+| Total | `¥2,058.8bn` | `¥2,200.0bn` | `+6.9%` | `¥127.5bn` | `¥150.0bn` | `+17.6%` | 半导体市场由 AI 需求驱动增长；欧洲、中国和PVC仍偏弱 |
+
+最突出的业务不是集团收入最大的 Chemicals，而是利润质量和产业链位置更好的 Electronics semiconductor materials + Performance Chemicals semiconductor-related products。AGC 2026 年在投资人沟通中主动强化“半导体相关业务”口径，说明公司希望市场重新定价这部分资产。
+
+### 3.2 产品和型号/系列拆解
+
+| 产品/系列 | 所属分部 | 官方状态 | 当前收入贡献估计 | AI 数据中心相关性 | 利润率推断 |
+|---|---|---|---:|---|---|
+| EUV photomask blanks | Electronics | Low-NA 已完成；High-NA、Hyper-NA 开发中；全球 leading two；唯一覆盖玻璃材料、抛光、成膜全流程 | FY2026 估计 `¥45-55bn`，约 `$290-355m` | 高。AI GPU/ASIC/HBM 的先进节点和 DRAM EUV 层数增长直接拉动 | 高于集团平均，估计 GM `45-65%`，OPM `25-45%` |
+| 合成石英 lens materials for lithography | Electronics | AGC 称其在 ArF lithography tools 合成石英镜头材料中为 No.1 share | FY2026 估计 `¥8-15bn` | 中高。先进制程设备装机和维护拉动，但不是直接按 GPU 出货计费 | 高，估计 GM `35-55%` |
+| CMP slurry / ceria slurry | Electronics | 从原料 abrasive powder 到 slurry 一体化，目标维持 ceria slurry leading position，并拓展 3D mounting | FY2026 估计 `¥10-20bn` | 中。先进逻辑、HBM、3D/先进封装均增加 CMP 步骤 | 中高，估计 GM `30-50%` |
+| Post-CMP cleaner | Chemicals + Electronics | Under development；台湾 Hsinchu 技术服务点支持客户验证 | 2026 收入很小，估计 `<¥1bn` | 中。先进节点和先进封装 CMP 扩张后才明显 | 若通过客户 qual，GM 可 `35-55%` |
+| METEORWAVE ELL / ultra-low-loss CCL | Electronics / AGC Multi Material | AI router/switch 已部分采用；224Gbps prototype 评估；ELL 面向 next-gen routers、high-speed switches、supercomputers | FY2026 估计 `¥5-12bn`，其中 AI/DC 约 `¥3-8bn` | 很高。直接进入 AI 网络 PCB/交换机链条 | 估计 GM `25-45%`；若 224G 供需紧张可更高 |
+| 低介电 fluoropolymer resin / raw material / silica filler | Performance Chemicals | 多家 CCL makers 量产、销售和 adoption evaluation 进行中；raw material 供给结构已建；silica filler 准备量产 | FY2026 估计 `¥3-10bn` | 很高。用于 AI server boards、high-speed communication boards 降低 Dk/Df | 估计 GM `35-60%`，取决于客户认证 |
+| AFLAS FFKM / semiconductor equipment components | Performance Chemicals | 用于 CVD/etching 等设备密封；刻蚀 harsh plasma 环境下季度更换；AGC 强调 heat/plasma resistance | Performance Chemicals 半导体应用 FY2025 合计约 `¥41bn`，FFKM 是主要组成之一 | 中高。先进节点、设备利用率和 wafer starts 拉动 | 高，耗材+切换成本，估计 GM `40-65%` |
+| Fluon ETFE release film / AFLEX | Performance Chemicals | 世界 No.1 ETFE resin supplier，唯一从 raw resin 到 film 一体化；半导体 release film 世界 No.1，HBM/advanced package 使用 | 估计 FY2026 `¥8-15bn` | 高。HBM 和大尺寸封装 molding 增长拉动 | 高，客户切换极难，估计 GM `40-60%` |
+| CYTOP pellicle raw material | Performance Chemicals | ArF/KrF pellicle raw material virtually no substitutes；不用于 EUV | 估计 FY2026 `¥5-10bn` | 中。成熟/DUV 层稳定增长，AI 先进节点更多在 EUV，不是主弹性 | 高，估计 GM `45-65%` |
+| AMOLEA AF-164 thermal medium | Performance Chemicals | Under development；164°C 单一化合物，低 GWP，日本国内一体化生产；面向半导体 etch 温控 | 2026 收入很小，估计 `<¥1bn` | 中。AI servers 带动半导体设备需求和温控要求 | 若导入，GM `35-55%` |
+| TGV / glass core substrate | Electronics | AGC 可做 thin glass TGV；产品规格包括 wafer/panel，孔径 `20-150um`；公司认为 2028 应用开始、2029 ramp | 当前主要样品/开发，FY2026 估计 `<¥1-2bn` | 中长期很高。AI/HPC advanced package 若转 glass core，弹性大 | 初期低，良率拖累；成熟后可 GM `25-50%` |
+| 光电融合 MLA / optical waveguide / CPO components | Electronics | 当前 development/prototyping；收到 many inquiries 和 sample provision；目标未来 tens of billions yen 市场，2028-2029 起飞 | FY2026 收入接近 0 | 中长期很高。CPO/光 I/O 对 AI fabric 重要 | 若 design-in，GM `35-60%` |
+
+### 3.3 可以跳过或低权重业务
+
+以下业务在集团收入中很大，但对本次 AI 数据中心/半导体材料尽调的边际意义较低：
+
+- Architectural Glass：价格和能源成本影响大，AI 相关性弱。
+- Automotive glass：车载显示、天线玻璃有成长性，但不是 AI 数据中心链条。
+- LCD display glass：2026 指引略降，属于成熟显示周期；除非显示业务改善带来利润修复，否则不是高增长主线。
+- Essential Chemicals/PVC/caustic soda：化学品周期和东南亚扩产决定收入，AI 相关性低。
+- Life Science CDMO：2026 重点是减亏、订单和生产率改善，与 AI 基建无关。
+- Ceramics/Others：除少量半导体/玻璃炉材料外，非核心。
+
+## 4. 高增长/关键产品：当前收入、增速、重要性、供需和定价权
+
+评分口径：5 分最高。重要性 = 对 AI 基建技术栈的不可替代程度；紧急性 = 客户近期必须解决的程度；供需紧张 = 越高越供不应求；垄断/溢价 = AGC 议价和切换成本。
+
+| 产品/业务 | 当前收入贡献估计 | 当前增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| EUV mask blanks | FY2026 `¥45-55bn`；AI/DC 间接相关约 `¥20-35bn` | 2026 从 2025 低点恢复，预计超过 2024 可比期 | 5 | 5 | 4 | 5 | AGC 最硬资产之一；AI GPU/ASIC/HBM tape-out 越密，越需要高端 blanks |
+| 合成石英 + CMP slurry | FY2026 合计 `¥18-35bn` | 随设备/wafer/CMP steps 稳增 | 4 | 4 | 3 | 4 | 更偏制造耗材/设备材料，收入稳定性优于热点叙事 |
+| METEORWAVE ELL / CCL | FY2026 `¥5-12bn`，AI/DC 约 `¥3-8bn` | 从低基数高增，224G 2027 更关键 | 5 | 4 | 4 | 3 | 直接受 AI switch/router 224G 需求拉动，但竞争者多，需看 design-in |
+| 低介电含氟树脂/填料 | FY2026 `¥3-10bn` | adoption evaluation + mass production 准备 | 5 | 4 | 4 | 4 | 若进入主流 CCL makers，材料粘性强；当前公司承认尚不能判断绝对领先 |
+| FFKM / ETFE release film / CYTOP 等半导体含氟材料 | Performance Chemicals 半导体应用 FY2025 约 `¥41bn`，FY2026 估计 `¥45-55bn` | 中高个位数到十几% | 4 | 4 | 3 | 4 | FFKM 和 release film 是耗材+认证壁垒；CYTOP 在 ArF/KrF 稳定但非 EUV |
+| TGV / glass core | FY2026 `<¥1-2bn` | 样品/原型，收入可忽略 | 5（中长期） | 2 | 2 | 3 | 技术潜力大，但 AGC 判断 2029 更可能 ramp；当前不能资本化过多 |
+| 光电融合 MLA/光波导 | FY2026 接近 0 | prototype/sample | 5（中长期） | 2-3 | 2 | 3 | CPO/光 I/O 趋势明确，但量产和客户资格未定 |
+| AF-164 / post-CMP cleaner | FY2026 `<¥1bn` | under development | 3 | 3 | 2 | 3 | 客户验证后可能成为高利润工艺材料，但现在证据不足 |
+
+## 5. 一年后收入贡献三情景
+
+时间窗口：2026-06 至 2027-06。收入为年化或未来 12 个月 AGC 可确认收入估算。
+
+| 产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| EUV mask blanks | 收入 `¥50-60bn`；增长 `+15-25%`；AI 重要性 5，紧急性 5，供需 4，溢价 5 | 收入 `¥60-75bn`；增长 `+30-45%`；High-NA 样品和多客户 usage 继续增加 | 收入 `¥75-90bn`；增长 `+50%+`；客户预留产能，EUV blanks 供给成为 AI ASIC/HBM tape-out 约束之一 |
+| 合成石英 + CMP slurry | 收入 `¥22-38bn`；增长 `+8-15%`；重要性 4 | 收入 `¥30-45bn`；增长 `+20-30%`；先进节点/CMP steps 增加 | 收入 `¥45-60bn`；AI 晶圆厂利用率和设备装机超预期 |
+| CCL / METEORWAVE / ELL | 收入 `¥8-18bn`；AI/DC `¥6-14bn`；增长 `+40-70%`；重要性 5，供需 4 | 收入 `¥18-30bn`；224G 评价转订单，AI switch/router design-in 扩大 | 收入 `¥30-50bn`；1.6T/102.4T switch 提前放量，AGC 成为多个 CCL/PCB 大客户关键二供 |
+| 低介电含氟树脂/填料 | 收入 `¥6-15bn`；增长 `+50%+`；重要性 5，溢价 4 | 收入 `¥15-25bn`；几家 major CCL makers 通过 qualification | 收入 `¥25-40bn`；AI server board 低 Dk 材料供给紧，AGC 原料被锁单 |
+| FFKM / release film / CYTOP / 半导体含氟耗材 | 收入 `¥50-65bn`；增长 `+10-20%`；重要性 4，溢价 4 | 收入 `¥65-80bn`；HBM、advanced package、etch chamber utilization 同时上升 | 收入 `¥80-100bn`；高端 FFKM、release film 和新 process materials 都进入紧供给 |
+| TGV / glass core | 收入 `¥1-3bn`；客户样品和工艺合作为主 | 收入 `¥3-8bn`；2027H1 出现明确 design-in/小批验证订单 | 收入 `¥8-15bn`；一家以上 AI/HPC 客户提前确认 2028 量产路线 |
+| 光电融合 MLA/光波导 | 收入 `¥0.5-2bn`；样品/NRE/小批 | 收入 `¥2-8bn`；CPO/CPX 客户认证进入小批 | 收入 `¥8-20bn`；NVIDIA/交换机/CPO 平台拉动 glass/optical coupling 组件订单 |
+| AF-164 / post-CMP cleaner | 收入 `¥0.5-2bn`；客户验证 | 收入 `¥2-6bn`；台湾/先进节点客户导入 | 收入 `¥6-12bn`；温控介质和 post-CMP cleaner 成为高利润新线 |
+
+集团层面一年增速预测：
+
+| 情景 | 半导体相关业务未来 12 个月收入 | 对集团收入贡献 | 关键假设 |
+|---|---:|---:|---|
+| 基准 | `¥115-135bn` | 集团销售 `5.0%-6.0%` | EUV blanks 继续恢复，CCL 小幅放量，Performance Chemicals 稳增，TGV/光电融合仍小 |
+| 乐观 | `¥140-175bn` | 集团销售 `6.3%-7.8%` | 224G CCL 和低介电材料通过更多客户评价，EUV blanks 客户组合稳定增长 |
+| 极度乐观 | `¥180-230bn` | 集团销售 `8.0%-10.0%` | AI ASIC/HBM tape-out 与 1.6T/102.4T 网络同步加速，客户提前锁定材料产能 |
+
+## 6. BOM、单位含量和价格传导链
+
+重要说明：AGC 的多数产品不是按“每台服务器”直接销售，而是在 wafer process、mask shop、equipment consumables、PCB/CCL、advanced packaging 和 optical packaging 里被摊入成本。因此“每 GPU / 每 rack / 每 MW”只能作为工程折算，不能视为 AGC 报价。本文假设：`1 AI rack ≈ 72 GPUs，功率约 120kW；1MW ≈ 8.3 racks ≈ 600 GPUs`；AI high-end switch 用 `64x800G` 或 `64x1.6T` 光口作为 optical port 估算。
+
+| 产品 | BOM 位置 | 每 GPU / rack / MW / optical port 内容量估算 | 价格传导链 |
+|---|---|---|---|
+| EUV mask blanks | 先进逻辑/DRAM mask set；属于 tape-out NRE 和光罩供应链，不是每颗芯片直接 BOM | 每片 EUV mask blank 可对应一张 EUV photomask；mask set 成本按几十万到数千万芯片摊销。AGC 内容量折算到单 GPU 可能 `<$1-$10`，但对新节点 tape-out 时间极关键 | NVIDIA/AMD/ASIC/HBM design -> foundry/IDM -> mask shop -> EUV mask blank supplier -> AGC；客户付的是良率和交付时间保险 |
+| 合成石英 lens materials | ArF 光刻设备/光学组件材料，资本设备链条 | 不按 GPU 计；按设备装机和维护摊销。每 MW 折算金额很小，但如果镜头材料卡供给，会影响设备交付 | ASML/光学组件/设备链 -> 晶圆厂 CAPEX -> 芯片产能 |
+| CMP slurry / post-CMP cleaner | 晶圆前道 CMP 和先进封装/3D mounting 清洗 | 单 GPU 折算约 `$1-$5`，每 rack `$72-$360`，每 MW `$600-$3,000`；先进节点/HBM/3D 封装可提高 | 晶圆厂 wafer starts -> CMP steps -> slurry/cleaner consumables -> AGC；良率验证后价格粘性强 |
+| FFKM / fluoro parts | Etch/CVD/deposition 设备密封、O-ring、部件 | 设备 OPEX，不按 GPU 计。高端 etch chamber FFKM 年消耗可达数千到数万美元；按 AI GPU wafer 摊销，单 GPU约 `$0.5-$3` | 半导体设备商/O-ring makers -> fab maintenance -> wafer output；quarterly replacement 形成稳定需求 |
+| ETFE release film | Advanced packaging molding / film-assisted molding；HBM/large package | 每 AI GPU package 估算 `$0.1-$2`；每 rack `$7-$144`；每 MW `$60-$1,200` | OSAT/foundry/HBM package -> molding equipment/resin makers -> release film -> AGC；change control 严格，切换成本高 |
+| CYTOP pellicle raw material | ArF/KrF pellicle raw material，photomask protection | 主要用于 DUV/成熟和先进非 EUV 层；单 GPU摊销极小，但 mask defect 避免价值高 | Pellicle maker -> photomask maker -> fab；AGC 在 ArF/KrF 原料替代性低 |
+| CCL / METEORWAVE / low-Dk resin | AI switch/router/supercomputer PCB laminate；224G/448G SerDes 板材 | 64x800G switch：高端 PCB/CCL 总价值约 `$1k-$5k`，AGC 材料份额若采用约 `$100-$1,500`，约 `$2-$25/optical port`；64x1.6T switch 可到 `$5-$40/port` | AI switch OEM/ODM -> PCB/CCL maker -> resin/glass cloth/laminate -> AGC；224G 低损耗要求推动 ASP |
+| 低介电含氟树脂/填料 | CCL resin system、low-Dk filler、AI backplane/board 材料 | per optical port 约 `$1-$15` 的 AGC 原料可能性，取决于 board stack 和采用比例 | AGC raw material -> CCL maker -> PCB -> switch/router/server board -> hyperscaler |
+| TGV / glass core | AI/HPC package substrate core / glass interposer / 3D integration | 当前无量产。若进入 AI package，AGC glass/TGV 内容量可能 `$10-$100/GPU package`；每 rack `$720-$7,200`；每 MW `$6k-$60k` | xPU package design -> substrate/OSAT/foundry -> glass core/TGV supplier -> AGC；良率和可靠性决定定价 |
+| MLA / optical waveguide | CPO/optical engine coupling、grating coupler、光波导 | 若用于 1.6T/CPO optical engine，AGC 光学件估计 `$2-$20/optical port`；早期高端可更高 | Switch ASIC/CPO platform -> optical engine/module maker -> glass/optical coupling components -> AGC |
+| AF-164 thermal medium | 半导体 etch/deposition/ion implantation 温控介质 | 设备耗材，不按 GPU 计。若导入，按设备 installed base 年消耗形成 `¥bn` 级收入 | Equipment maker/fab process chem -> AGC；低 GWP + 日本本土一体化供给是溢价点 |
+
+## 7. 产能、客户采纳和认证阶段
+
+| 产品 | 当前产能/能力（美元计估算） | 当前采纳程度 | 当前认证阶段 | 一年后基准 | 一年后乐观 | 一年后极度乐观 |
+|---|---:|---|---|---|---|---|
+| EUV mask blanks | 年收入能力估计 `$300m+`，2026-2027 继续投资 | 少数先进逻辑/DRAM客户；客户 usage 增加 | Low-NA 完成；High-NA/Hyper-NA under development | 收入能力 `$350-400m`，客户需求稳定 | `$450-500m`，High-NA 样品和客户评价加速 | `$550m+`，AI ASIC/HBM tape-out 使客户提前锁产能 |
+| 合成石英 lens materials | 年收入能力估计 `$60-100m` | ArF lithography tools 高份额 | 已量产，No.1 share | 随 equipment market 稳增 | 设备装机上修 | 若设备瓶颈延长，ASP 和订单上修 |
+| CMP slurry | 年收入能力估计 `$80-130m` | ceria slurry leading position | 量产；3D mounting 扩应用 | 稳增 `+8-15%` | advanced packaging 拉动 `+20%+` | 与 post-CMP solution 打包导入 |
+| CCL / METEORWAVE ELL | 当前 AGC 相关收入能力估计 `$50-100m` | AI routers/switches 已部分采用；224G prototype | 112G/现有 AI 应用量产；224G qualification | 224G 评价推进，收入 `$80-120m` | 多个客户 design-in，`$120-200m` | 高端 AI switch 紧缺，`$200-320m` |
+| Low-Dk fluoropolymer / filler | 当前能力估计 `$20-60m` | major CCL makers 量产/销售/adoption evaluation | low-Dk raw material 供给结构已建，silica filler 准备量产 | `$40-100m` | `$100-160m` | `$160-260m`，成为 CCL 关键配方 |
+| FFKM / release film / CYTOP | Performance Chemicals 半导体应用 FY2025约 `$265m` | FFKM、release film、CYTOP 均有强客户基础 | 多数已量产；AF-164/post-CMP 为 under development | `$320-400m` | `$420-520m` | `$550-650m`，先进节点和 HBM package 同步拉动 |
+| TGV / glass core | 当前收入能力估计 `<$10m`，主要样品 | TGV样品/技术开发 | 客户样品和原型验证；非 HVM | 样品和 pilot，`$5-20m` | 明确 2028 design-in，`$20-50m` | 客户提前锁 2028 线，`$50-100m` |
+| 光电融合 MLA/光波导 | 当前收入能力接近 0，样品能力 | many inquiries，sample provision | development/prototyping，非 mass production | `$3-15m` | `$15-50m` | `$50-130m`，CPO/CPX 小批 |
+| AF-164 / post-CMP cleaner | 当前收入接近 0 | AF-164 under development；post-CMP 台湾技术中心支持 | 客户验证/技术服务阶段 | `$3-15m` | `$15-40m` | `$40-80m` |
+
+关键认证结论：
+
+- EUV blanks：Low-NA 是现有量产，High-NA/Hyper-NA 是下一代资格赛。
+- CCL：当前 AI routers/switches 已部分采用，224Gbps 是 2027 关键认证点。
+- Low-Dk fluoropolymer/silica filler：多家 CCL makers adoption evaluation 和准备量产，是 2026-2027 最值得跟踪的小产品。
+- TGV/glass core：公司自己从 2028 应用、2029 ramp 的口径更可信；2026-2027 不应按量产收入估值。
+- 光电融合：目前是 prototype/sample，量产仍在后面；2028-2029 前后才更可能进入收入拐点。
+
+## 8. 订单积压、供应能力和未来一年业务增速推断
+
+AGC 不披露 backlog，也没有把半导体材料订单、取消率、lead time 单独披露。本文使用客户验证、产能扩张、客户问答、行业供需和产品生命周期作为 proxy。
+
+| 产品 | 订单/渠道证据 | 取消率判断 | 供给约束 | 未来一年增速预测 |
+|---|---|---|---|---|
+| EUV mask blanks | 公司称 2026 客户 usage 增加且稳定，2026 将超过 2024 可比期，2027 进一步增长；客户数量少但组合更稳定 | 低。mask blanks 是客户 tape-out 和先进制程刚需，取消风险低，节奏风险来自客户节点/利用率 | 高端 defect、flatness、coating、customer qualification | 基准 `+15-25%`，乐观 `+30-45%`，极度乐观 `+50%+` |
+| CCL / METEORWAVE | AI router/switch 已部分采用；224Gbps prototype 在评估；2027 起贡献 | 中低。RFP/qualification 失败是主要风险，不是订单取消 | 低介电树脂、先进玻纤/替代材料、PCB 客户认证 | 基准 `+40-70%`，乐观 `+100%+`，极度乐观 `+200%+`（低基数） |
+| 低介电含氟树脂/填料 | major CCL makers 已推进量产/销售/评价；silica filler 准备量产 | 中。客户材料配方替换慢 | 配方可靠性、供给稳定、PFAS/环保审查 | 基准 `+50%+`，乐观 `+150%`，极度乐观 `+250%+` |
+| FFKM / release film | FFKM etch 环境季度替换，release film 被设备/树脂商推荐评价，HBM/advanced package 拉动 | 低。耗材属性强，除非 wafer utilization 下滑 | 高纯制造、含氟原料、客户 change control | 基准 `+10-20%`，乐观 `+25-40%`，极度乐观 `+50%+` |
+| CMP slurry / post-CMP | CMP process 扩张，post-CMP cleaner under development，台湾技术中心靠近客户 | slurry 低，post-CMP 中高 | 客户工艺兼容性、particle/damage 指标 | slurry `+8-15%`；post-CMP 从低基数开始 |
+| TGV/glass core | 行业 pilot 和样品多，但 AGC Q&A 明确 2029 ramp；本地行业资料也认为 2026-2027 主要是 pilot/qualification | 高。新技术 qualification 未通过即可延后 | TGV成孔、金属化、panel warpage、可靠性 | 基准收入仍小；乐观/极度乐观看 design-in 公告 |
+| 光电融合 | NVIDIA/CPO/交换机生态推动 inquiry；AGC 当前仅开发和样品 | 中高。CPO 量产节奏和可维护性风险 | 光耦合、热、封装测试、客户平台绑定 | 基准很小；乐观从样品/NRE转小批 |
+
+未来一年集团增长判断：
+
+- 集团基准收入增长大概率接近公司指引 `+6.9%`，营业利润 `+17.6%`，主要靠 Chemicals、Life Science 减亏、Architectural 价格和半导体材料恢复。
+- 半导体相关收入可明显高于集团平均，基准 `+15-30%`，但占集团收入仍小。
+- 若 AI switch/224G CCL 和低介电树脂评价提前转量产，AGC 的“AI 材料”增速可能远高于集团，但投资人需要防止把 2028-2029 的玻璃 core/光电融合提前计入 2026。
+
+## 9. 竞争格局、替代方案和客户切换成本
+
+### 9.1 主要竞争对手
+
+| 产品 | 主要竞争对手 | AGC 优势 | 风险/替代 |
+|---|---|---|---|
+| EUV mask blanks | HOYA、S&S Tech、Shin-Etsu/相关日系材料、Schott/Ohara 等上游材料 | 全球 leading two；全流程覆盖；客户技术支持和 in-house film design | HOYA 等同样强；客户集中，单一客户 demand shift 会造成波动 |
+| ArF synthetic quartz lens materials | Shin-Etsu Quartz、Heraeus、Hoya/Ohara 等光学材料 | AGC 称 No.1 share；深 UV 到 IR 透过率、光学均匀性、laser durability | ArF 设备增长慢于 EUV；High-NA 不直接靠 ArF |
+| CMP slurry | Entegris/Cabot、Fujimi、Fujifilm、Resonac、JSR/JSR生态、DuPont、Merck 等 | Ceria slurry leading，一体化 abrasive-to-slurry，能与 post-CMP cleaner 形成方案 | 客户配方多源，价格竞争和工艺替代 |
+| CCL / low-loss laminate | Panasonic Megtron、Rogers、Isola、ITEQ、TUC、Elite Material、Shengyi、Doosan、Mitsubishi Gas 等 | 自研树脂 + CCL；METEORWAVE 面向 router/switch/supercomputer；可用较低等级 glass cloth 达到性能 | 竞争强，客户认证长；大客户可多源压价 |
+| Low-Dk fluoropolymer / silica filler | Daikin、Chemours/DuPont、Solvay/Syensqo、3M legacy、国产含氟材料商、日系填料商 | 含氟合成、量产、高纯和 CCL 协同 | PFAS监管、客户尚未确认 AGC 是否领先 |
+| FFKM | DuPont/Kalrez、Daikin、Solvay/Syensqo、Greene Tweed、Trelleborg、Parker 等 | 高温/耐等离子、无乳化剂/无含氟聚合溶剂工艺、Circular Fluorspar | 设备商 qualification 和原有份额强，替换周期慢 |
+| ETFE release film | Daikin、Chemours、Toray/日系膜材、中国膜材 | AGC 称半导体 release film 世界 No.1，从 resin 到 film 一体化；change control 极严 | 新封装工艺可能改变 release film 需求形态 |
+| CYTOP | 少数氟树脂/光学膜材料厂 | ArF/KrF pellicle raw material 几乎无替代 | 不用于 EUV，增长上限受 DUV/KrF/ArF 市场限制 |
+| TGV/glass core | Corning、SCHOTT、NEG、DNP、TOPPAN、Absolics/SKC、Samsung Electro-Mechanics/Sumitomo、Intel、LPKF 生态 | 玻璃和 TGV 技术基础，薄玻璃 panel 能力 | 量产平台和客户入口可能由 Intel/Samsung/DNP/Absolics/Corning 等主导；AGC未必最大获益 |
+| 光电融合组件 | Corning/GF、SENKO、Samtec、Molex、TE、Amphenol、Coherent、Lumentum、Broadcom/Marvell生态 | 玻璃、MLA、光波导材料和处理能力 | CPO 维护和标准未定，硅光/CPO 价值可能被模块/交换芯片商捕获 |
+
+### 9.2 新技术是否会成为主流
+
+| 技术 | 是否主流 | 时间判断 | AGC 机会 | 最大风险 |
+|---|---|---|---|---|
+| EUV blanks | 已经是先进逻辑/DRAM 主流 | 2026-2027 持续增长，High-NA 2027 后更重要 | 当前最确定 | 客户集中、先进节点节奏 |
+| 224G low-loss CCL | 会成为 AI 交换机/高速网络的重要材料路径 | 2027 起更明显 | 很高，且有部分采用和样品评价 | Panasonic/Rogers/TUC 等竞争、客户多源 |
+| Low-Dk fluoropolymer/filler | 可能成为高端 CCL/AI boards 的关键配方 | 2026-2028 | 高，但需要客户认证 | PFAS监管、可靠性和材料组合不确定 |
+| Glass core/TGV | 中长期可能成为高端 AI/HPC package 的重要补充，不会 2026 立刻替代 ABF | 2028 limited，2029 ramp，2030 后更大 | 高期权 | ABF/CoWoS/organic RDL 继续升级；TGV 金属化和良率难 |
+| 光电融合/CPO 玻璃组件 | 高端 AI switch/scale-up 可能采用，但路线未收敛 | 2028-2030 | 中高期权 | 可插拔/XPO/ELS/SiPh 方案分流，客户维护风险 |
+| AF-164 / post-CMP cleaner | 有机会成为高值半导体 process materials | 2027 后 | 中等 | 导入慢，竞争者多 |
+
+客户替换成本：
+
+- 极高：EUV blanks、ETFE release film、FFKM、CYTOP、CMP slurry。原因是客户 qualification、良率、change control 和失效成本高。
+- 中高：CCL/低介电树脂。材料进板后切换成本高，但 design-in 前竞争激烈。
+- 中等：TGV glass core 和 optical components。未来若 design-in 成功切换成本高，但当前仍在技术路线竞争阶段。
+
+### 9.3 主要风险
+
+1. **AI 收入占比被市场高估。** 2025 半导体相关业务约 `¥100bn`，直接 AI/DC 收入更小；AGC 仍主要由建筑、汽车、显示、基础化学品和 CDMO 决定短期利润。
+2. **玻璃 core/TGV 过早定价。** AGC 管理层把 ramp 感觉推到 2029，行业资料也显示 2026-2027 主要是样品、pilot、客户 qualification。
+3. **CCL 竞争激烈。** Panasonic Megtron、Rogers、TUC、Elite、Shengyi 等都在争 AI 高速板材，AGC 需要更多 design-in 证据。
+4. **客户集中。** EUV blanks 客户数很少，单个客户需求变化会造成季度波动；公司提到 2025 某客户需求下降，2026 恢复。
+5. **PFAS/含氟监管。** 公司称直接影响目前有限，但欧洲监管推进是 Performance Chemicals 长期风险。
+6. **Life Science 减亏不达预期。** Colorado 关闭有利，但 CDMO 订单和生产率仍需连续验证。
+7. **汇率和能源。** AGC 指引假设 FY2026 USD/JPY 155、EUR/JPY 180、Dubai crude $100/bbl；能源和日元波动会影响玻璃和化学品利润。
+
+## 10. 信息来源和置信度
+
+### 公司官方资料
+
+- AGC Investors 页面，列示 FY2026 Q1 财报、2026-06-02 半导体业务说明会、IR calendar：`https://www.agc.com/en/ir/index.html`
+- AGC FY2026 Q1 Financial Results，2026-05-12：`https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260512/20260511523532.pdf`
+- AGC FY2025 Financial Results，2026-02-06：`https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20260206/20260205549340.pdf`
+- AGC FY2025 Q3 Financial Results，2025-11-05：`https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20251105/20251104587314.pdf`
+- AGC FY2025 Q2 Financial Results，2025-08-01：`https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20250801/20250731526243.pdf`
+- AGC FY2025 Q1 Financial Results，2025-05-12：`https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20250512/20250509538718.pdf`
+- AGC Semiconductor-Related Business Briefing，2026-06-02：`https://www.agc.com/en/ir/library/bizbriefing/pdf/2026_0602esemiconductor.pdf`
+- AGC Semiconductor-Related Business Briefing Transcript，2026-06-02：`https://www.agc.com/en/ir/library/bizbriefing/pdf/2026_0602esemiconductor_transcript.pdf`
+- AGC Company Overview，2026-05/06 版：`https://www.agc.com/en/ir/library/outline/pdf/c_overview.pdf`
+- AGC TGV product page：`https://www.agc.com/en/products/electoric/detail/tgv.html`
+- AGC METEORWAVE ELL release and product pages：`https://www.agc.com/en/news/detail/1207556_2814.html`，`https://www.agc-multimaterial.com/meteorwave-ultra-low-loss-materials/`
+
+### 本地行业资料
+
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_玻璃基板、TGV与玻璃检测_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_封装基板、中介层与RDL_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_先进封装材料与热界面材料_2026-06-10.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_高端光罩与先进封装掩模_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_硅光材料、光子材料与电光聚合物_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+
+### 市场数据
+
+- Yahoo Finance：ASGLY / 5201.T stock quote，2026-06-11
+- Google Finance：ASGLY / 5201.T quote，2026-06-11
+- Investing.com：5201.T / ASGLY quote，2026-06-11
+- WSJ quote financials：ASGLY valuation ratios，2026-06-11
+- GuruFocus：5201.T valuation and margin snapshot，2026-06-11
+- StockAnalysis：ASGLY revenue, net income, PE and market data，2026-06-11
+
+置信度：
+
+- 公司财务、分部收入、指引、D/E、CAPEX：高。
+- EUV blanks、CCL、TGV、光电融合等产品状态：高，来自 AGC 官方说明会和 Q&A。
+- AI data center 相关收入拆分、产品毛利率、BOM/单位内容量：中低到中，因公司不披露，本文基于公开产品状态、行业 BOM、客户验证阶段和项目内行业研究估算。
+- 未来一年三情景：中，取决于 AI capex、客户 qualification、EUV/CCL/低介电材料订单兑现和半导体周期。

@@ -1,0 +1,119 @@
+{
+  "Date": "2026-10-01",
+  "Root": "D:\\investment",
+  "Actions": [
+    {
+      "Action": "delete",
+      "Source": "D:\\investment\\备份\\company-comparison专项回测_2026-09-05\\data\\comparison_pairs_parsed.csv",
+      "Destination": null,
+      "Bytes": 66128048,
+      "SHA256": "A74C2BAAD01A3EF7443E196EC7B6DF3259473ADB87335F0E7B51C4016C85FFCB",
+      "Status": "completed"
+    },
+    {
+      "Action": "delete",
+      "Source": "D:\\investment\\技术面\\data\\common_daily\\features\\market_momentum_features.csv",
+      "Destination": null,
+      "Bytes": 53906911,
+      "SHA256": "7E01BE5808BD44108F8D63F7E5F5D9068CF9F2406B2E963CD6E3792C5CDC07CF",
+      "Status": "completed"
+    },
+    {
+      "Action": "move",
+      "Source": "D:\\investment\\备份\\全部公司情景投资综合分析_2026-09-09\\extracted_reports.json",
+      "Destination": "D:\\investment\\备份\\全部公司情景投资综合分析_2026-09-09\\tmp\\extracted_reports.json",
+      "Bytes": 22181850,
+      "SHA256": "C337BF382C742A8F79251904AEDF702956F42992DE285866C492A74B5F3AAA8D",
+      "Status": "completed"
+    },
+    {
+      "Action": "move",
+      "Source": "D:\\investment\\备份\\全部公司情景投资综合分析_2026-09-09\\current_judgments.txt",
+      "Destination": "D:\\investment\\备份\\全部公司情景投资综合分析_2026-09-09\\tmp\\current_judgments.txt",
+      "Bytes": 1226311,
+      "SHA256": "1C36AC0475807904D0CF4D9A5143DBE4ACE5FC9DE9D842698239D9241A28A898",
+      "Status": "completed"
+    },
+    {
+      "Action": "move",
+      "Source": "D:\\investment\\tools\\site\\.codex-preview-8080.err.log",
+      "Destination": "D:\\investment\\tools\\site\\tmp\\preview-logs-20261001\\.codex-preview-8080.err.log",
+      "Bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "Status": "completed"
+    },
+    {
+      "Action": "move",
+      "Source": "D:\\investment\\tools\\site\\.codex-preview-8080.out.log",
+      "Destination": "D:\\investment\\tools\\site\\tmp\\preview-logs-20261001\\.codex-preview-8080.out.log",
+      "Bytes": 275,
+      "SHA256": "258CB6BCBB3F7BCAE59B133643C69CB28E52FF98EFB7D3DBB137A9A02D55F35F",
+      "Status": "completed"
+    },
+    {
+      "Action": "move",
+      "Source": "D:\\investment\\tools\\site\\.codex-preview-8081.err.log",
+      "Destination": "D:\\investment\\tools\\site\\tmp\\preview-logs-20261001\\.codex-preview-8081.err.log",
+      "Bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "Status": "completed"
+    },
+    {
+      "Action": "move",
+      "Source": "D:\\investment\\tools\\site\\.codex-preview-8081.out.log",
+      "Destination": "D:\\investment\\tools\\site\\tmp\\preview-logs-20261001\\.codex-preview-8081.out.log",
+      "Bytes": 275,
+      "SHA256": "1A207645ACA015E51AA5430E843F3196DB15693E86CD41D57BA97AF269FA71EC",
+      "Status": "completed"
+    },
+    {
+      "Action": "move",
+      "Source": "D:\\investment\\tools\\site\\.preview-8081.err.log",
+      "Destination": "D:\\investment\\tools\\site\\tmp\\preview-logs-20261001\\.preview-8081.err.log",
+      "Bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "Status": "completed"
+    },
+    {
+      "Action": "move",
+      "Source": "D:\\investment\\tools\\site\\.preview-8081.out.log",
+      "Destination": "D:\\investment\\tools\\site\\tmp\\preview-logs-20261001\\.preview-8081.out.log",
+      "Bytes": 275,
+      "SHA256": "1A207645ACA015E51AA5430E843F3196DB15693E86CD41D57BA97AF269FA71EC",
+      "Status": "completed"
+    },
+    {
+      "Action": "move",
+      "Source": "D:\\investment\\tools\\site\\.preview-8082.err.log",
+      "Destination": "D:\\investment\\tools\\site\\tmp\\preview-logs-20261001\\.preview-8082.err.log",
+      "Bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "Status": "completed"
+    },
+    {
+      "Action": "move",
+      "Source": "D:\\investment\\tools\\site\\.preview-8082.out.log",
+      "Destination": "D:\\investment\\tools\\site\\tmp\\preview-logs-20261001\\.preview-8082.out.log",
+      "Bytes": 275,
+      "SHA256": "9A3E63E538970E83FC10E5663BBB2B6EE30BB750736EFF11AD2DF9AFB1DE80FE",
+      "Status": "completed"
+    },
+    {
+      "Action": "move",
+      "Source": "D:\\investment\\tools\\site\\.preview-8083.err.log",
+      "Destination": "D:\\investment\\tools\\site\\tmp\\preview-logs-20261001\\.preview-8083.err.log",
+      "Bytes": 0,
+      "SHA256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "Status": "completed"
+    },
+    {
+      "Action": "move",
+      "Source": "D:\\investment\\tools\\site\\.preview-8083.out.log",
+      "Destination": "D:\\investment\\tools\\site\\tmp\\preview-logs-20261001\\.preview-8083.out.log",
+      "Bytes": 159,
+      "SHA256": "A3105B2F5A31AC56BC433AD54AD5417508C36301C7F4AD3747284EE7D4137042",
+      "Status": "completed"
+    }
+  ],
+  "Note": "Only the two explicitly named CSV files are deleted. Moved files retain their SHA256 and can be moved back. Original Python scripts are in 修改前."
+}

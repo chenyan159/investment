@@ -1,0 +1,154 @@
+# 公司收入传导与价值传导评估：MACOM Technology Solutions（MTSI）
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即 2026-06-12 后未来 12 个月，主要覆盖 FY2026Q3、FY2026Q4、FY2027Q1、FY2027Q2；FY2026 全年、FY2027、3.2T/400G-per-lane、CPO/ELS、IQE 长协供应和 SATCOM/LEO 后续放量只作补充或远期期权。
+- 当前收入基准、指引和 run-rate：FY2026Q2 收入 `$289.0M`，同比 `+22.5%`、环比 `+6.4%`；Q2 TTM 收入约 `$1.074B`；FY2026Q3 指引为 `$331M-$339M`，中点 `$335M`，对应 Q3 年化 run-rate 约 `$1.34B`；Q3 non-GAAP gross margin 指引 `59.0%-60.0%`，non-GAAP EPS 指引 `$1.31-$1.37`。
+- 重要产品/业务线：`800G/1.6T PAM4 optical analog IC`、`1.6T LPO/LRO/ACC copper driver/equalizer`、`448G/400G-per-lane drivers for 3.2T`、`CW laser / InP photonics / coherent-lite`、`Industrial & Defense / GaN RF / SATCOM`、`Telecom / PON / 5G / SATCOM access`。
+- NTM 公司收入四情景：悲观 `$1.25B-$1.36B`；基准 `$1.43B-$1.55B`；乐观 `$1.60B-$1.78B`；极度乐观 `$1.85B-$2.10B`。基准不是行业 TAM 外推，而是 Q3 指引兑现、Data Center FY2026 `>60%` 路径正常延续、I&D `>20%` 左右增长、Telecom 低双位数恢复的组合。
+- 利润或 EBITDA 四情景：悲观 non-GAAP operating margin `24%-27%`；基准 `28%-30.5%`；乐观 `30.5%-33%`；极度乐观 `33%-36%`。调整后 EBITDA 为测算口径，不是公司指引；基准约 `$470M-$550M`，对应调整后净利润约 `$410M-$490M`。
+- 最大传导瓶颈：不是 AI 光模块需求本身，而是 MTSI 是否在模块厂、线缆厂、交换机/NIC/系统厂的 1.6T/ACC/LRO/TRO BOM 中保持 design-in，并把 Q2 record backlog 转为 Q3/Q4 收入。
+- 最大利润率变量：Data Center 高速 analog/optical mix、1.6T/800G ASP 年降速度、TIA/driver/laser 多器件 attach、RTP/Lowell/IQE 供应链和 fab 利用率。
+- 最大现金流变量：库存和 WIP 是否健康跟随 backlog 上升；FY2026H1 inventory 从 `$237.8M` 到 `$252.2M`，若客户拉货延迟，现金流会先受压。
+- 可信度：公司层基准为中高；产品级 800G/1.6T optical analog 和 I&D/GaN 为中高；LPO/LRO/ACC 为中；448G/3.2T 为低到中；CW laser/InP/coherent-lite 为中。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 800G/1.6T PAM4 optical analog IC：driver、TIA、CDR/OCR、linear equalizer、PD/laser 相关器件 | FY2026Q2 估计 `$55M-$75M`；Data Center 总收入 `$98.2M` | 约 `19%-26%` 公司收入；约 `55%-75%` Data Center | Data Center 主增量和毛利率上行主线 | A/B：Data Center 收入为 A；产品拆分和 production-volume 归因为 B/C | 进入基准，作为 Data Center 基准收入主体，但产品拆分需折扣 | 3.2T、CPO/NPO/XPO 相关高端 driver/TIA 只作补充 |
+| 1.6T LPO/LRO/ACC copper driver/equalizer，含 MACD-41804、linear equalizer、active copper 相关 silicon | FY2026Q2 估计 `$8M-$18M` | 约 `3%-6%` | 低功耗 scale-up 短距互联；可能从小基数变成高弹性产品 | C/D：已发布产品和演示为 D；若已进入 production volume 的旧产品为 C | 基准只小比例纳入；主要放在乐观和极度乐观 | 若 1.6T LRO/TRO/ACC 成为默认短距路线，收入上限显著上修 |
+| 448G PAM4 / 400G-per-lane drivers for 3.2T：MAOM-025408、MAOM-022404 | 当前收入估计 `$0M-$5M`，主要样品、NRE、qualification | `0%-2%` | 下一代 3.2T/204.8T switch 前置卡位 | D：产品发布、OFC 展示、无明确客户量产收入 | 不进 NTM 基准主收入；只保留少量样品/NRE | 2027-2028 若 3.2T 提前量产，可从附录进入乐观收入 |
+| CW laser / InP photonics / coherent-lite 800G LR2 / photodiode | FY2026Q2 估计 `$8M-$20M` | 约 `3%-7%` | LPO/LRO、SiPh、OCS、CPO、scale-across 的共同瓶颈 | B/C：部分已在收入表；IQE LTSA/投资为 C | 基准纳入已出货部分；IQE 供应提升只进乐观以上 | OCS、ELS、CPO、coherent scale-across 更偏 FY2027+ |
+| Industrial & Defense / GaN RF / SATCOM，含 Wolfspeed RF、RTP fab、OMMIC 能力 | FY2026Q2 I&D `$120.7M`；防务/GaN 未披露，估计 `$70M-$95M` | I&D 为 `41.8%` | 最大当前收入池；稳定利润和 fab 利用率 | A：I&D end-market 收入；B/C：防务/GaN 产品拆分 | 进入基准主口径 | Advanced GaN MMIC、LEO/SATCOM program 大规模放量是乐观/远期期权 |
+| Telecom / PON / 5G / SATCOM access / microwave backhaul | FY2026Q2 `$70.1M` | `24.3%` | 当前收入大，但增长慢于 Data Center 和 I&D | A：Telecom end-market 收入 | 进入基准，按低双位数恢复处理 | SATCOM/LEO late FY2026 / early FY2027 若明确 production program，可上移 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估产品或业务线的外部需求池，不评估 MTSI 份额、收入确认、利润率或公司汇总。需求强弱均相对当前需求锚判断。行业 TAM、客户 capex、AI 叙事只作为需求背景，不能直接转成 MTSI 收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 800G/1.6T PAM4 optical analog IC | AI-focused optical transceiver 2026 约 `$26B`；1.6TbE 模块 2026 预计 `>5M` 只；800G 仍为最大出货底座 | NTM AI optics `$24B-$30B`，1.6T ramp 后移，800G ASP 先跌 | NTM `$30B-$40B`，800G 继续主力，1.6T 在 2026H2/2027 进入导入 | NTM `$42B-$55B`，1.6T 高端平台更快成为新增默认 | NTM `$60B-$75B`，1.6T/3.2T/CPO/OCS 同时提前 | 相对 2026 `$26B` 光模块锚，悲观为低个位到低双位增长，基准为继续高增，乐观上修 `$10B+` | 基准符合当前预期；乐观和极度乐观需要客户 LTA、1.6T ASP 和出货验证 | 行业报告显示需求强，但反证是 800G/1.6T ASP 连续两季跌 `10%+`、客户库存超过 1 季度需求、switch/GPU 交付延迟 |
+| 1.6T LPO/LRO/ACC copper driver/equalizer | LPO/LRO 线性模块及直接线性器件未来 12 个月基准 `$4B-$8B`；1.6T LRO/TRO 2026H2 qualification | `$3B-$5B`，LPO 互操作和 LRO/TRO field issue 推迟 `2-4` 季度 | `$4B-$8B`，800G LPO 小量、1.6T LRO/TRO 在短距扩大 | `$8B-$14B`，大客户把 LRO/TRO 作为低功耗默认选项 | `$14B-$22B`，host 可控客户让 1.6T LPO/LRO 大规模放量 | 基准较当前小基数显著增长；乐观相对基准约翻倍 | 基准略高于当前导入节奏但仍合理；极度乐观需证明 host/switch 协同 | 依据是行业对 LPO/LRO 功耗优势和 1.6T switch 的判断；反证是 telemetry/loopback/BER 不达标 |
+| 448G / 400G-per-lane drivers for 3.2T | 2026 主要为样品、演示和 design-in；行业 448G/400G-lane TIA/driver 未来 12 个月基准 `<$0.5B` | `<$0.1B`，仅实验室和少量 NRE | `<$0.5B`，客户验证和小量样品 | `$0.5B-$1.2B`，2026Q4 起客户样品订单扩大 | `$1B-$2.5B`，204.8T switch 提前锁 3.2T 订单 | 绝对需求从很小基数起步；极度乐观仍主要是早期市场 | 基准低于热门叙事；不应把 2027-2028 TAM 提前进 NTM | MACOM 已发布 448G PAM4 driver，但没有客户量产收入；400G/lane 良率、BER、功耗和测试时间是主要反证 |
+| CW laser / InP photonics / coherent-lite | EML + CW-DFB 2026 月产能约 `5,070万颗`；AI optical transceiver 2026 `$26B`；OCS/CPO/SiPh 拉动高功率 laser | 高速 laser/PD/InP 需求仍增，但低端扩产压价；利用率低于 `80%` | 800G/1.6T 对 InP/laser/PD/TIA 需求继续增长，OCS/CPO 仍以试点为主 | OCS、CPO、coherent scale-across 让高功率 laser 与 PD 需求提前 | 外置激光、coherent-lite、OCS 同时成为瓶颈，高端型号短缺 | 绝对市场池无法可靠拆成单一口径；可用 EML/CW、SiPh、coherent pluggable 三个池交叉验证 | 基准符合行业预期；乐观是高端型号和长协锁单上修 | 反证是 EML/CW 扩产快于上电节奏、客户转向内部光源、CPO field service 后移 |
+| Industrial & Defense / GaN RF / SATCOM | FY2026Q2 I&D `$120.7M`；管理层方向为 2026 I&D 可能 `>20%`；欧美防务电子、雷达、电子战、SATCOM 需求较强 | 行业/项目需求仅高个位到低双位增长，项目验收或预算拨付后移 | 需求符合 `>20%` 附近增长路径，既有 program 正常交付 | 防务电子、GaN RF、SATCOM 同时加速，需求高于公司当前节奏 | 欧洲防务、LEO/SATCOM production program、RTP fab 利用率同时突破 | 相对 Q2 年化 `$483M` I&D run-rate，基准需求支持 `$520M-$600M` 年收入池 | 基准符合当前预期；乐观需有订单/项目交付证据 | 反证是项目验收延期、国防预算拨付慢、RTP/Lowell 利用率不足 |
+| Telecom / PON / 5G / SATCOM access | FY2026Q2 Telecom `$70.1M`；管理层方向为低双位数恢复；PON、metro/long-haul、broadband access、SATCOM 支撑 | 需求持平到低个位增长，RAN 继续疲弱，SATCOM 后移 | 低双位数恢复，PON/metro/SATCOM 抵消 RAN 平淡 | PON/metro/SATCOM 同步改善，Telecom 超过低双位数 | LEO/SATCOM 与电信 access 周期同时上修，Telecom 重新成为增长引擎 | 相对 Q2 年化 `$280M`，基准需求支持 `$290M-$330M` | 基准符合当前预期，极度乐观不是当前主口径 | 反证是 RAN capex 继续疲弱、SATCOM production program 推迟 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求能进入 MTSI NTM 收入表，以及当前可收入化基数是多少；不预测增长，不判断利润率。证据等级按收入表可确认性处理。公司能参与 AI 光互联需求池，不等于可确认收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 800G/1.6T PAM4 optical analog IC | Data Center Q2 `$98.2M`；产品估计 `$55M-$75M`，来自 production volume 的 analog/optical/cable 相关产品 | 直接 | 芯片/光电器件，高毛利、认证粘性较强 | NTM `$270M-$360M` | NTM `$360M-$470M` | `$500M-$650M` | `$700M-$900M` | 基准符合 Data Center `>60%` 年增路径和 Q3 指引隐含节奏 | A/B/C | 是 | Data Center 总收入和 Q3 指引为 A；product mix 估算为 B/C，按保守折扣纳入 | 基准主收入；不得把 AI optics TAM 直接当收入 |
+| 1.6T LPO/LRO/ACC copper driver/equalizer | Q2 估计 `$8M-$18M`，MACD-41804 为 2026-03 可用产品；客户量产金额未披露 | 直接 | 高毛利 silicon，但导入期验证风险高 | `$30M-$60M` | `$60M-$110M` | `$120M-$210M` | `$250M-$360M` | 当前预期中只有小比例显性收入；乐观需要多客户平台认证 | C/D | 小比例进入 | 已有产品和行业路线，但客户/合同/量产节奏未披露 | 基准低权重；主要是乐观弹性 |
+| 448G / 400G-per-lane drivers for 3.2T | 当前估计 `$0M-$5M`，产品发布和 OFC 展示，无量产客户收入披露 | 直接 | 若成功可高毛利，但 NTM 确认路径弱 | `$0M-$5M` | `$0M-$15M` | `$20M-$70M` | `$80M-$180M` | 相对当前预期只是 NTM 上限，不是基准增长主因 | D | 否，除少量样品/NRE | 产品可用不等于客户量产；3.2T 更偏 FY2027+ | 不进基准主收入；进入乐观、极度乐观或附录跟踪 |
+| CW laser / InP photonics / coherent-lite | Q2 估计 `$8M-$20M`；IQE LTSA/拟投资 `GBP 45M` 为供应链增强，不是已确认收入 | 直接/间接 | 高端 laser/InP/PD 有较强价格传导，但客户和项目拆分不透明 | `$40M-$70M` | `$70M-$130M` | `$140M-$240M` | `$300M-$450M` | 基准只承认现有出货和小幅增长；IQE 只提升供应可信度 | B/C | 是，小比例 | 已有 optical component 收入可见；IQE 是 C 级供给证据 | 基准保守纳入；OCS/CPO/ELS 是乐观/远期期权 |
+| Industrial & Defense / GaN RF / SATCOM | I&D Q2 `$120.7M`，Q2 年化 `$483M`；FY2026 I&D 方向 `>20%` | 直接 | 防务 program 和 GaN RF 通常毛利较好，但 fab 利用率/整合影响大 | `$440M-$500M` | `$520M-$600M` | `$620M-$760M` | `$800M-$950M` | 基准符合当前 I&D 增长预期；极度乐观需 program 和 fab 同时突破 | A/B | 是 | End-market 收入为 A；防务/GaN/SATCOM 拆分为估算 | 基准主口径；不要与 Telecom SATCOM 重复计算 |
+| Telecom / PON / 5G / SATCOM access | Telecom Q2 `$70.1M`，Q2 年化 `$280M`；低双位数恢复 | 直接 | 混合毛利，RAN 平淡，PON/SATCOM/metro 改善 | `$250M-$285M` | `$290M-$330M` | `$340M-$410M` | `$450M-$520M` | 基准符合低双位数恢复；非主要超预期来源 | A/B | 是 | End-market 收入为 A；产品拆分为 B | 基准纳入，作为稳定收入和抵消项 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，判断每个产品在 NTM 内能贡献的收入和利润。利润贡献为经营贡献口径，优先判断毛利率方向和费用杠杆，不把 TAM、客户总预算或远期 pipeline 直接写成公司收入。Data Center 四个子线之间存在共享客户预算和 BOM 重叠，公司汇总时需要封顶消重。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 800G/1.6T PAM4 optical analog IC | 悲观 | `$270M-$360M` | 毛利约 `$145M-$220M`；经营贡献仍正但低于预期 | GM 低于当前改善路径 | 低于 Data Center `>60%` 路径 | Q2 Data Center `$98.2M`，但 ASP/认证/订单可能放缓 | 保留为悲观 | 800G/1.6T ASP 连续两季跌 `10%+`；客户库存过高；design-in 丢失 |
+| 800G/1.6T PAM4 optical analog IC | 基准 | `$360M-$470M` | 毛利约 `$210M-$305M`；费用杠杆正常 | GM 支撑公司向 `59%-60%` 靠近 | 符合当前预期 | Q3 指引上修、Q2 book-to-bill `1.5:1`、Data Center 订单突出 | 保留为基准 | 产品线收入未披露，客户和份额不可验证 |
+| 800G/1.6T PAM4 optical analog IC | 乐观 | `$500M-$650M` | 毛利约 `$315M-$455M`；经营杠杆明显 | Mix 上行，GM >60% 的概率提高 | 高于当前预期 | 1.6T production volume、多个模块/线缆平台进入量产 | 保留为乐观 | 需证明“谁买、买什么、何时确认” |
+| 800G/1.6T PAM4 optical analog IC | 极度乐观 | `$700M-$900M` | 毛利约 `$480M-$680M`；但需防 ASP 下行 | 强扩张 | 显著高于预期 | 多客户多器件 attach、1.6T 端口短缺持续 | 下移为乐观上限 | 单一产品很难独立支撑公司极度乐观，需与 I&D 和 LPO/ACC 同时成立 |
+| 1.6T LPO/LRO/ACC copper driver/equalizer | 悲观 | `$30M-$60M` | 毛利约 `$15M-$35M`；研发/客户支持吸收大 | 持平到小幅下降 | 低于预期 | 产品发布但客户量产节奏未披露 | 保留为悲观 | LPO 互操作失败，LRO/TRO field issue，retimer/AEC 替代 |
+| 1.6T LPO/LRO/ACC copper driver/equalizer | 基准 | `$60M-$110M` | 毛利约 `$35M-$70M`；经营贡献有限但增速高 | 小幅改善 | 符合小基数放量预期 | 行业 1.6T LRO/TRO 导入，MACD-41804 可用 | 保留但低权重 | 客户认证和实际出货不透明 |
+| 1.6T LPO/LRO/ACC copper driver/equalizer | 乐观 | `$120M-$210M` | 毛利约 `$75M-$145M` | 明显改善 | 高于预期 | 多客户把 LRO/TRO/ACC 作为低功耗路线 | 保留为乐观 | 必须看到 platform win 或订单 |
+| 1.6T LPO/LRO/ACC copper driver/equalizer | 极度乐观 | `$250M-$360M` | 毛利约 `$170M-$260M` | 大幅改善 | 显著高于预期 | 1.6T short-reach linear/copper 默认化 | 下移为乐观上限 | 当前缺少客户、份额和量产收入披露 |
+| 448G / 400G-per-lane drivers for 3.2T | 悲观 | `$0M-$5M` | 利润贡献可忽略，R&D 费用先行 | 下降 | 低于题材预期 | 仅样品/NRE | 保留 | 3.2T 延后到 2028+ |
+| 448G / 400G-per-lane drivers for 3.2T | 基准 | `$0M-$15M` | 利润贡献小，主要是战略卡位 | 基本无贡献 | 符合当前商业化阶段 | 产品发布、>120GHz RF bandwidth、支持 SiPh/EML/TFLN | 下移为附录跟踪 | D 级证据，缺客户量产 |
+| 448G / 400G-per-lane drivers for 3.2T | 乐观 | `$20M-$70M` | 若进入 qualification，毛利可较高，但费用仍高 | 改善 | 高于当前预期 | 2026Q4/2027H1 客户 qual/NRE 增加 | 保留为低可信乐观 | 400G/lane 良率、BER、测试时间 |
+| 448G / 400G-per-lane drivers for 3.2T | 极度乐观 | `$80M-$180M` | 高毛利上限，但不应直接外推 | 大幅改善 | 远高于当前预期 | 204.8T switch/3.2T module 提前 | 移入附录或极度乐观上限 | 无客户、时间表、收入确认路径则不得进 NTM |
+| CW laser / InP photonics / coherent-lite | 悲观 | `$40M-$70M` | 毛利约 `$20M-$40M`；供应链投资回报延后 | 持平或下降 | 低于预期 | 低端扩产、客户内制 | 保留 | IQE 交易延迟；EML/CW 利用率 <80% |
+| CW laser / InP photonics / coherent-lite | 基准 | `$70M-$130M` | 毛利约 `$40M-$80M`；对公司 GM 小幅正贡献 | 小幅改善 | 符合预期 | 现有 optical components、InP/laser 路线、IQE LTSA 提升供应可信度 | 保留 | 产品拆分和客户未披露 |
+| CW laser / InP photonics / coherent-lite | 乐观 | `$140M-$240M` | 毛利约 `$85M-$155M` | 改善 | 高于预期 | OCS/CPO/scale-across 拉动 laser/PD/InP | 保留为乐观 | 需要客户 LTA 和 wafer output |
+| CW laser / InP photonics / coherent-lite | 极度乐观 | `$300M-$450M` | 毛利约 `$200M-$320M` | 大幅改善 | 显著高于预期 | ELS/CW/coherent-lite 成为瓶颈 | 下移为乐观上限/远期期权 | CPO/OCS 时间表多在 NTM 外 |
+| Industrial & Defense / GaN RF / SATCOM | 悲观 | `$440M-$500M` | 毛利和经营贡献仍稳定，但 fab 利用率不足拖累 | 持平到小幅下降 | 低于 `>20%` 增长路径 | I&D 收入 A 级，但项目节奏可能后移 | 保留 | 防务验收、RTP/Lowell 利用率、出口管制 |
+| Industrial & Defense / GaN RF / SATCOM | 基准 | `$520M-$600M` | 毛利约 `$300M-$360M`；经营杠杆稳定 | 稳定到小幅改善 | 符合当前预期 | Q2 I&D `$120.7M`，管理层方向 `>20%` | 保留 | 防务/GaN 拆分未披露 |
+| Industrial & Defense / GaN RF / SATCOM | 乐观 | `$620M-$760M` | 毛利约 `$370M-$480M`；fab 利用率改善 | 改善 | 高于预期 | GaN/RTP/OMMIC、欧洲防务、SATCOM/LEO | 保留为乐观 | 需要 program 订单和交付验证 |
+| Industrial & Defense / GaN RF / SATCOM | 极度乐观 | `$800M-$950M` | 毛利约 `$500M-$650M`，但项目型波动大 | 大幅改善 | 显著高于预期 | 防务、SATCOM、GaN capacity 同时突破 | 下移为乐观上限 | 单一 I&D 超预期不能替代 Data Center 验证 |
+| Telecom / PON / 5G / SATCOM access | 悲观 | `$250M-$285M` | 毛利贡献稳定但低增长 | 持平 | 低于低双位数恢复 | RAN 疲弱 | 保留 | RAN/PON/SATCOM 后移 |
+| Telecom / PON / 5G / SATCOM access | 基准 | `$290M-$330M` | 毛利贡献中性；抵消周期波动 | 稳定 | 符合当前预期 | Q2 Telecom `$70.1M`，低双位数恢复 | 保留 | 不是 AI 主增量 |
+| Telecom / PON / 5G / SATCOM access | 乐观 | `$340M-$410M` | 毛利改善有限 | 小幅改善 | 高于预期 | PON、metro/long-haul、SATCOM 同步改善 | 保留为乐观 | 需要订单和客户资本开支 |
+| Telecom / PON / 5G / SATCOM access | 极度乐观 | `$450M-$520M` | 利润改善，但公司结构影响小于 Data Center/I&D | 改善 | 显著高于预期 | SATCOM/LEO 和 access 周期同时上行 | 下移为乐观上限 | Telecom 极度乐观证据不足 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、调整后 EBITDA、调整后净利润和自由现金流方向，不讨论市场定价。汇总时对 Data Center 子线封顶消重，避免把 800G/1.6T optical analog、LPO/LRO/ACC、CW/InP 和 448G/3.2T 的同一客户预算重复计算。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$1.25B-$1.36B` | 相对 Q2 TTM `$1.074B` 为 `+16%-27%`；相对 Q3 指引年化 `$1.34B` 为 `-7%` 至 `+1%` | 低于当前 Q3 指引后续延续、Data Center `>60%` 和 I&D `>20%` 的隐含路径 | GAAP GM `55.5%-57.5%`；non-GAAP GM `56.5%-58.0%` | non-GAAP op margin `24%-27%` | 调整后 EBITDA 约 `$365M-$440M`；调整后净利润约 `$300M-$380M` | FCF 仍为正但受库存/WIP 压制，约 `$200M-$300M` | 中 | 1.6T/800G ASP 下行、客户库存、Data Center 订单转收入低于预期、RTP/IQE 整合拖累 |
+| 基准公司 | `$1.43B-$1.55B` | 相对 Q2 TTM `+33%-44%`；相对 Q3 指引年化 `+7%-16%` | 符合当前预期正常兑现：Q3 指引达成，Q4/FY2027H1 继续增长但不失控 | GAAP GM `57.5%-59.2%`；non-GAAP GM `58.5%-60.2%` | non-GAAP op margin `28%-30.5%` | 调整后 EBITDA 约 `$470M-$550M`；调整后净利润约 `$410M-$490M` | FCF 改善，约 `$320M-$430M`；库存随订单健康上升 | 中高 | Data Center 产品拆分和客户份额不透明；1.6T 放量需要持续 production-volume 证据 |
+| 乐观公司 | `$1.60B-$1.78B` | 相对 Q2 TTM `+49%-66%`；相对 Q3 指引年化 `+19%-33%` | 高于当前预期，且不是单一新品造成：Data Center、I&D 和 LPO/ACC 至少两条线超预期 | GAAP GM `59.0%-61.0%`；non-GAAP GM `60.0%-62.0%` | non-GAAP op margin `30.5%-33.0%` | 调整后 EBITDA 约 `$570M-$680M`；调整后净利润约 `$500M-$620M` | FCF 约 `$430M-$560M`，但营运资本随增长上升 | 中 | 需确认 book-to-bill 维持 `>1.2`、1.6T/ACC 多客户认证、I&D 交付不后移 |
+| 极度乐观公司 | `$1.85B-$2.10B` | 相对 Q2 TTM `+72%-96%`；相对 Q3 指引年化 `+38%-57%` | 显著高于当前预期，必须同时满足需求、公司捕获、利润率和执行质量突破 | GAAP GM `61.0%-63.5%`；non-GAAP GM `62.0%-64.5%` | non-GAAP op margin `33%-36%` | 调整后 EBITDA 约 `$720M-$880M`；调整后净利润约 `$650M-$820M` | FCF 约 `$550M-$700M`，但若产能扩张和库存急增会打折 | 低到中 | 需要 1.6T 端口短缺延续、多器件 attach、3.2T/448G 提前收入化、I&D/GaN/SATCOM 同步突破；任一环节缺证据则下移 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。正向证据必须说明提升的是需求、收入基数、产品贡献、公司利润还是执行可信度；反证只限制实际影响的层级，不重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026Q2 收入 `$289.0M`，Q3 指引 `$331M-$339M` | 公司收入基数 / 执行可信度 | 支持基准 NTM `$1.43B-$1.55B`，说明 backlog 可短期转收入 | Q3 non-GAAP GM `59%-60%` 支持利润率上行 | Q3 sequential 增长要求产能、交付和验收同步 | 保留基准；悲观不能低于已指引路径太多，除非 Q4/FY2027H1 反转 |
+| Q2 book-to-bill `1.5:1`、turns `18%`、record backlog 但未披露金额 | 收入确认 / 执行可信度 | 支持 Q3/Q4 收入可见度，但不能直接量化 backlog | 若订单结构偏 Data Center/I&D，支撑 GM；若急单/低毛利项目多则折扣 | turns 低于全部收入说明未来交付订单增加；但取消率未知 | 保留基准和乐观；极度乐观需更多订单金额和客户确认 |
+| Data Center FY2026 增长基准上调到 `>60%` | 产品需求 / 公司收入 | 把 800G/1.6T optical analog 放入基准主收入 | Data Center mix 是 GM 上行主因 | 需要持续出货而非单季拉货 | 保留基准；若 Q3 Data Center 未接近 `$128M-$142M` 估算区间，下移 |
+| 1.6T/LPO/LRO/ACC 行业需求强，但客户验证复杂 | 产品需求 / 产品贡献 | 支持 LPO/LRO/ACC 乐观收入；基准只小比例 | 高线性 driver/TIA 可高毛利，但客户年降和多供应商会压价 | Qualification、telemetry、field reliability 是关键 | 基准保守保留；乐观保留；极度乐观下移为上限 |
+| 448G/400G-per-lane driver 已发布，但无客户量产金额 | 收入基数 / 证据等级 | 不足以进入 NTM 基准主收入 | 若成功可高毛利，但 NTM 利润贡献小 | 2026 多为样品、NRE、qualification | 基准下移为附录跟踪；乐观保留低可信 |
+| IQE LTSA/拟投资 `GBP 45M` | 供应链 / 执行可信度 | 提高 InP/SiC supply 上限，不等于短期收入 | 可降低高端 optical/GaN 供应风险 | 需交易完成、监管、实际 wafer output | 对基准只加供应可信度；收入上修放在乐观 |
+| 800G/1.6T ASP 连续两季跌 `10%+` 或客户库存 >1 季需求 | 价格 / 利润率 | 先压 Data Center 收入上沿和订单质量 | 直接压 GM 和 operating margin | 库存/WIP 占用现金 | 若触发，乐观下移到基准，基准下移到悲观 |
+| I&D `>20%` 方向、Q2 I&D `$120.7M` | 公司组合 / 利润质量 | 支持非 AI 收入底座，降低 Data Center 单线风险 | 防务/GaN 可改善 fab 利用率，但整合成本需观察 | 项目验收和政府预算影响现金节奏 | 保留基准；若项目后移，悲观只处理 I&D，不重复惩罚 Data Center |
+| Telecom 低双位数恢复 | 公司组合 | 支撑 `$290M-$330M` NTM Telecom 基准 | 利润率中性，不是公司 GM 上修主因 | 回款和库存风险低于新品 | 保留基准；不因 Telecom 稳定而上移公司情景 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM `$1.25B-$1.36B`，收入低于 Q3 指引年化延续，利润率回落 | 即使悲观，Q3 指引和 Q2 backlog 仍提供短期收入底座 | ASP 下行、库存上升、book-to-bill 回到 `1.0x`、Data Center Q3/Q4 增速弱 | 保留 | 悲观公司情景 | 中 | ASP/库存风险只在价格和现金流层级处理，不再重复压低所有产品需求 |
+| 基准 | NTM `$1.43B-$1.55B`，Q3 指引兑现，Data Center/I&D 正常增长 | A 级收入、Q3 指引、Q2 book-to-bill、GM 指引、I&D/Telecom 收入均支持 | 产品线客户和 backlog 绝对金额未披露；LPO/448G 证据不足 | 保留 | 最可能情景 | 中高 | 客户不披露只限制乐观和极度乐观，不否定 A 级 end-market 收入 |
+| 乐观 | NTM `$1.60B-$1.78B`，Data Center 与 I&D 至少两条线高于预期 | 1.6T production volume、LPO/LRO/ACC 行业需求、I&D program、GM 上行共同支持 | 需要多客户 design-in、book-to-bill `>1.2`、Data Center Q3/Q4 连续强增长 | 保留 | 乐观公司情景 | 中 | 3.2T/448G 证据不足只限制该产品，不重复惩罚 800G/1.6T 基准 |
+| 极度乐观 | NTM `$1.85B-$2.10B`，收入、mix、利润率和执行同时突破 | 若 1.6T 端口短缺持续、MACOM 多器件 attach、I&D/GaN/SATCOM 超预期，同时 GM >62%，存在上限可能 | 任一核心环节缺证据；448G/3.2T、CPO/ELS、IQE 多为 C/D 级或 NTM 外 | 下移 | 极度乐观上限 / 附录跟踪 | 低到中 | 远期期权不允许进入基准；极度乐观不能把所有好事机械相加 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入最可能落在 `$1.43B-$1.55B`，相对 Q2 TTM `$1.074B` 增长 `+33%-44%`；核心传导是 `AI 光互联需求 -> 800G/1.6T optical analog / Data Center 收入 -> GM 向 59%-60% 靠近 -> adjusted operating margin 约 28%-30.5%`，并由 I&D/GaN 提供非 AI 收入底座。
+- NTM 收入结论：MTSI 已经有 A 级收入表证据和 Q3 指引支持，但产品级客户、订单和 backlog 金额不透明，所以基准要以 Data Center end-market 和 I&D/Telecom end-market 为主，不能把 1.6T/3.2T/CPO 总市场直接映射为公司收入。
+- 利润/现金流结论：基准 non-GAAP GM 约 `58.5%-60.2%`，non-GAAP operating margin 约 `28%-30.5%`；调整后 EBITDA 约 `$470M-$550M`，调整后净利润约 `$410M-$490M`。FCF 基准约 `$320M-$430M`，但库存、WIP、CapEx 和 IQE/供应链投入会让现金流滞后于利润。
+- 主要传导瓶颈：最大瓶颈是可收入化，而不是需求池。MTSI 需要证明 Q2 `1.5:1` book-to-bill 和 record backlog 能在 Q3/Q4 转为可确认收入，并且 Data Center 收入增长不是低毛利 pass-through 或单客户拉货。
+- 乐观情景成立条件：Q3 revenue 达到或高于 `$335M` 中点；Data Center 接近或高于 `$128M-$142M` 估算区间；book-to-bill 维持 `>1.2`；non-GAAP GM 稳定在 `59.5%+` 并向 `60%+`；1.6T optical analog、LPO/LRO/ACC 和 I&D/GaN 至少两条线同时超预期。
+- 极度乐观情景成立条件：1.6T 高端端口短缺延续至 FY2027H1，MACOM 在多个头部客户平台实现多器件 attach；3.2T/448G 不是停留在 demo，而是出现客户 qualification/NRE/早期订单；I&D/GaN/SATCOM program 同步上修；GM 进入 `62%+` 且库存没有异常积压。
+- 悲观情景触发条件：Q3 虽达指引但 Q4/FY2027H1 指引保守；book-to-bill 回落到 `1.0x` 附近；Data Center 增长没有带来 GM 上行；800G/1.6T ASP 连续两季跌 `10%+`；客户库存超过 1 季度需求；I&D 项目验收或 Telecom/SATCOM 后移。
+- 后续跟踪数据：季度 Data Center 收入、I&D 收入、book-to-bill、turns orders、backlog 质量、non-GAAP GM、inventory/WIP、operating cash flow、1.6T production volume、MACD-41804 客户平台、448G driver customer qualification、IQE transaction closing、SATCOM/LEO production program。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务主数据截至 FY2026Q2，即 2026-04-03；Q3 指引对应季度截至 2026-07-03；本报告生成日为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - MACOM FY2026Q2 results, 2026-05-07: <https://ir.macom.com/news-releases/news-release-details/macom-reports-fiscal-second-quarter-2026-financial-results>
+  - MACOM FY2026Q2 Form 10-Q, period ended 2026-04-03: <https://www.sec.gov/Archives/edgar/data/1493594/000149359426000028/mtsi-20260403.htm>
+  - MACOM FY2026Q2 earnings call transcript, 2026-05-07: <https://www.fool.com/earnings/call-transcripts/2026/05/07/macom-mtsi-q2-2026-earnings-transcript/>
+  - MACOM FY2026Q1 results, 2026-02-05: <https://ir.macom.com/news-releases/news-release-details/macom-reports-fiscal-first-quarter-2026-financial-results>
+  - `公司调研/AI网络_光互联_连接器/MTSI_MACOM_Technology_Solutions_公司调研_2026-06-11.md`
+- 产品和供应链来源：
+  - MACOM 448G per lane drivers for 3.2T, 2026-03-17: <https://www.macom.com/updates/news/2026/macom-announces-two-new-448g-per-lane-drivers-for-3-2t-data-cent>
+  - MACOM high density copper interconnects / MACD-41804, 2026-03-16: <https://ir.macom.com/news-releases/news-release-details/macom-enables-high-density-copper-interconnects-next-generation>
+  - MACOM IQE long-term supply agreements and proposed `GBP 45M` investment, 2026-04-27: <https://www.macom.com/updates/news/2026/macom-to-enter-into-agreements-to-further-strengthen-supply-chai>
+  - MACOM Data Center application/product positioning: <https://www.macom.com/applications/data-center>
+- 行业资料：
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_LPO_LRO线性光模块_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_激光器、EML与光器件_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 全年收入的保守推算区间约 `$1.23B-$1.30B`，由 FY2026H1 `$560.6M`、Q3 指引 `$331M-$339M` 和 Q4 正常增长假设组成；不是公司正式全年指引。
+  - FY2027 不是本报告主口径。若 1.6T 在 2027 成为新增高端 AI fabric 默认端口，且 3.2T/400G-per-lane 进入 early production，Data Center revenue run-rate 可明显高于 NTM 基准；但这需要客户认证、ASP、供应链和订单共同验证。
+  - 3.2T/448G、CPO/CPX/NPO/XPO、ELS、coherent scale-across、LEO/SATCOM 大规模 production program 作为远期期权跟踪；除已在收入表体现的出货外，不进入 NTM 基准主收入。
+- 主要口径限制：
+  - 公司未披露产品级收入、客户名单、backlog 绝对金额、产品级毛利率、Data Center 内部 800G/1.6T/ACC/laser 拆分；所有产品级数字均为基于 end-market 收入、公司披露、行业 BOM 和生产节奏的估算。
+  - 本报告不使用 `特征量化/`、Signals、排序结果、回归结论或市场价格/估值倍数作为经营价值传导证据。

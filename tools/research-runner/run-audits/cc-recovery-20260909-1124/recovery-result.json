@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-09-09T18:25:09.810Z",
+  "event": "Recovered CC after authorized runner shutdown.",
+  "id": "company-investment-decision-CC-2026-09-08T22_52_16-07_00-aef3039ce3",
+  "threadId": "01a086fb-2560-7f02-bdd8-c3da150bc8a3",
+  "sessionCompletedAt": "2026-09-09T16:59:01.380Z",
+  "outputFile": "分析报告/公司情景投资决策/结果/CC_经营情景市场状态投资决策_2026-09-09.md",
+  "outputSha256": "86a29f24c6f3297d64f67a64bca212f47421c735f4c0d69eb10ffee27d76ccb1",
+  "outputTokens": 60279,
+  "archivedDoneItems": 1,
+  "otherActiveItemsUnchanged": true
+}

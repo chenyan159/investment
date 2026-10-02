@@ -1,0 +1,3605 @@
+{
+  "corpus": {
+    "report_count": 192,
+    "index_count": 192,
+    "indexed_match_count": 192,
+    "file_dates": {
+      "2026-07-16": 192
+    },
+    "cutoff_dates": {
+      "2026-07-16": 190,
+      "2026-07-15": 2
+    },
+    "total_bytes": 10976337,
+    "file_size_bytes": {
+      "n": 192,
+      "mean": 57168.4219,
+      "median": 56456.5,
+      "min": 43712.0,
+      "max": 78690.0
+    },
+    "characters": {
+      "n": 192,
+      "mean": 30086.099,
+      "median": 29699.0,
+      "min": 22038.0,
+      "max": 42278.0
+    },
+    "lines": {
+      "n": 192,
+      "mean": 437.4167,
+      "median": 425.5,
+      "min": 309.0,
+      "max": 659.0
+    },
+    "events": {
+      "n": 192,
+      "mean": 9.3958,
+      "median": 9.0,
+      "min": 4.0,
+      "max": 19.0
+    },
+    "community_items": {
+      "n": 192,
+      "mean": 6.0781,
+      "median": 6.0,
+      "min": 0.0,
+      "max": 10.0
+    },
+    "future_frequency_rows": {
+      "n": 192,
+      "mean": 9.099,
+      "median": 9.0,
+      "min": 6.0,
+      "max": 13.0
+    },
+    "future_catalysts": {
+      "n": 192,
+      "mean": 11.5156,
+      "median": 11.0,
+      "min": 7.0,
+      "max": 16.0
+    },
+    "tracking_items": {
+      "n": 192,
+      "mean": 12.2083,
+      "median": 12.0,
+      "min": 8.0,
+      "max": 20.0
+    },
+    "urls": {
+      "n": 192,
+      "mean": 47.3229,
+      "median": 44.0,
+      "min": 22.0,
+      "max": 94.0
+    }
+  },
+  "structure": {
+    "has_metadata": 192,
+    "has_conclusion": 192,
+    "has_recent": 192,
+    "has_layers": 192,
+    "has_community": 192,
+    "has_future_frequency": 192,
+    "has_future_direction": 192,
+    "has_framework": 192,
+    "has_counterevidence": 192,
+    "has_tracking": 192,
+    "has_sources": 192,
+    "has_fact_inference_sentiment": 192,
+    "has_root_event": 192,
+    "has_boundary_statement": 192,
+    "has_version_freeze": 192,
+    "numeric_composite_flag": 0,
+    "trade_advice_flag": 0,
+    "price_forecast_flag": 0
+  },
+  "scores": {
+    "fact_direction": {
+      "n": 192,
+      "mean": 7.0969,
+      "median": 7.0,
+      "min": 1.5,
+      "max": 9.0,
+      "explicit_n": 177,
+      "mapped_n": 15,
+      "split_component_reports": 0,
+      "bins": {
+        "偏正面": 87,
+        "混合/中性": 5,
+        "明显/强正面": 89,
+        "偏负面": 9,
+        "强负面": 2
+      }
+    },
+    "future_direction": {
+      "n": 192,
+      "mean": 5.8932,
+      "median": 6.0,
+      "min": 4.0,
+      "max": 7.0,
+      "explicit_n": 177,
+      "mapped_n": 15,
+      "split_component_reports": 0,
+      "bins": {
+        "混合/中性": 47,
+        "偏正面": 143,
+        "偏负面": 2
+      }
+    },
+    "negative_risk": {
+      "n": 192,
+      "mean": 6.65,
+      "median": 7.0,
+      "min": 5.0,
+      "max": 8.0,
+      "explicit_n": 177,
+      "mapped_n": 15,
+      "split_component_reports": 0,
+      "bins": {
+        "高": 102,
+        "中等": 10,
+        "中高": 80
+      }
+    },
+    "community_quality": {
+      "n": 192,
+      "mean": 3.6328,
+      "median": 4.0,
+      "min": 2.0,
+      "max": 6.0,
+      "explicit_n": 177,
+      "mapped_n": 15,
+      "split_component_reports": 0,
+      "bins": {
+        "中等": 102,
+        "低": 79,
+        "极低": 10,
+        "中高": 1
+      }
+    },
+    "heat": {
+      "n": 192,
+      "mean": 7.2633,
+      "median": 8.0,
+      "min": 3.3,
+      "max": 9.3,
+      "explicit_n": 177,
+      "mapped_n": 15,
+      "split_component_reports": 7,
+      "bins": {
+        "高": 100,
+        "中等": 19,
+        "中高": 38,
+        "极高": 33,
+        "低": 2
+      }
+    },
+    "long_crowding": {
+      "n": 192,
+      "mean": 6.8747,
+      "median": 7.0,
+      "min": 3.0,
+      "max": 9.0,
+      "explicit_n": 177,
+      "mapped_n": 15,
+      "split_component_reports": 0,
+      "bins": {
+        "高": 127,
+        "低": 8,
+        "中等": 20,
+        "中高": 31,
+        "极高": 6
+      }
+    },
+    "short_crowding": {
+      "n": 190,
+      "mean": 3.5316,
+      "median": 3.0,
+      "min": 1.0,
+      "max": 9.0,
+      "explicit_n": 176,
+      "mapped_n": 14,
+      "split_component_reports": 0,
+      "bins": {
+        "中等": 36,
+        "低": 59,
+        "极低": 64,
+        "高": 15,
+        "中高": 15,
+        "缺失": 2,
+        "极高": 1
+      }
+    },
+    "disagreement": {
+      "n": 192,
+      "mean": 7.8417,
+      "median": 8.0,
+      "min": 5.0,
+      "max": 9.3,
+      "explicit_n": 177,
+      "mapped_n": 15,
+      "split_component_reports": 0,
+      "bins": {
+        "极高": 41,
+        "中高": 11,
+        "高": 137,
+        "中等": 3
+      }
+    },
+    "reviewability": {
+      "n": 192,
+      "mean": 8.9333,
+      "median": 9.0,
+      "min": 8.0,
+      "max": 9.0,
+      "explicit_n": 177,
+      "mapped_n": 15,
+      "split_component_reports": 0,
+      "bins": {
+        "极高": 180,
+        "高": 12
+      }
+    }
+  },
+  "category_summary": [
+    {
+      "category": "AI服务器_存储_EMS",
+      "n": 19,
+      "fact_direction_mean": 7.716,
+      "future_direction_mean": 6.095,
+      "negative_risk_mean": 6.758,
+      "community_quality_mean": 3.637,
+      "heat_mean": 7.697,
+      "long_crowding_mean": 6.895,
+      "short_crowding_mean": 3.574,
+      "disagreement_mean": 8.016,
+      "reviewability_mean": 8.937,
+      "event_count_median": 10.0,
+      "community_count_median": 7.0,
+      "future_frequency_count_median": 9.0,
+      "future_catalyst_count_median": 11.0,
+      "tracking_count_median": 12.0,
+      "characters_median": 30102.0,
+      "url_count_median": 44.0
+    },
+    {
+      "category": "AI网络_光互联_连接器",
+      "n": 20,
+      "fact_direction_mean": 7.29,
+      "future_direction_mean": 5.94,
+      "negative_risk_mean": 6.735,
+      "community_quality_mean": 3.615,
+      "heat_mean": 7.25,
+      "long_crowding_mean": 7.325,
+      "short_crowding_mean": 3.475,
+      "disagreement_mean": 7.9,
+      "reviewability_mean": 8.99,
+      "event_count_median": 8.5,
+      "community_count_median": 6.0,
+      "future_frequency_count_median": 9.0,
+      "future_catalyst_count_median": 12.0,
+      "tracking_count_median": 13.0,
+      "characters_median": 30369.5,
+      "url_count_median": 44.0
+    },
+    {
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "n": 17,
+      "fact_direction_mean": 7.353,
+      "future_direction_mean": 5.912,
+      "negative_risk_mean": 6.647,
+      "community_quality_mean": 4.059,
+      "heat_mean": 7.647,
+      "long_crowding_mean": 7.159,
+      "short_crowding_mean": 3.471,
+      "disagreement_mean": 8.0,
+      "reviewability_mean": 8.941,
+      "event_count_median": 9.0,
+      "community_count_median": 6.0,
+      "future_frequency_count_median": 9.0,
+      "future_catalyst_count_median": 11.0,
+      "tracking_count_median": 12.0,
+      "characters_median": 30114.0,
+      "url_count_median": 38.0
+    },
+    {
+      "category": "云算力_IDC_AI软件平台",
+      "n": 16,
+      "fact_direction_mean": 6.219,
+      "future_direction_mean": 5.406,
+      "negative_risk_mean": 7.169,
+      "community_quality_mean": 4.206,
+      "heat_mean": 7.975,
+      "long_crowding_mean": 6.856,
+      "short_crowding_mean": 4.467,
+      "disagreement_mean": 8.506,
+      "reviewability_mean": 8.863,
+      "event_count_median": 12.0,
+      "community_count_median": 7.5,
+      "future_frequency_count_median": 9.0,
+      "future_catalyst_count_median": 11.0,
+      "tracking_count_median": 12.0,
+      "characters_median": 31354.0,
+      "url_count_median": 50.0
+    },
+    {
+      "category": "半导体材料_化学品_基板",
+      "n": 20,
+      "fact_direction_mean": 6.73,
+      "future_direction_mean": 5.905,
+      "negative_risk_mean": 6.405,
+      "community_quality_mean": 3.42,
+      "heat_mean": 6.175,
+      "long_crowding_mean": 6.17,
+      "short_crowding_mean": 3.165,
+      "disagreement_mean": 7.45,
+      "reviewability_mean": 8.84,
+      "event_count_median": 9.0,
+      "community_count_median": 5.0,
+      "future_frequency_count_median": 9.0,
+      "future_catalyst_count_median": 11.0,
+      "tracking_count_median": 12.0,
+      "characters_median": 28162.0,
+      "url_count_median": 43.5
+    },
+    {
+      "category": "封测_检测_计量_光罩",
+      "n": 18,
+      "fact_direction_mean": 7.417,
+      "future_direction_mean": 6.028,
+      "negative_risk_mean": 6.5,
+      "community_quality_mean": 3.778,
+      "heat_mean": 7.5,
+      "long_crowding_mean": 7.167,
+      "short_crowding_mean": 3.333,
+      "disagreement_mean": 7.667,
+      "reviewability_mean": 9.0,
+      "event_count_median": 9.0,
+      "community_count_median": 5.5,
+      "future_frequency_count_median": 9.0,
+      "future_catalyst_count_median": 12.0,
+      "tracking_count_median": 12.0,
+      "characters_median": 29141.0,
+      "url_count_median": 45.0
+    },
+    {
+      "category": "晶圆制造_前道设备",
+      "n": 19,
+      "fact_direction_mean": 7.753,
+      "future_direction_mean": 6.316,
+      "negative_risk_mean": 6.537,
+      "community_quality_mean": 3.358,
+      "heat_mean": 7.868,
+      "long_crowding_mean": 7.563,
+      "short_crowding_mean": 3.122,
+      "disagreement_mean": 7.868,
+      "reviewability_mean": 8.947,
+      "event_count_median": 10.0,
+      "community_count_median": 6.0,
+      "future_frequency_count_median": 9.0,
+      "future_catalyst_count_median": 11.0,
+      "tracking_count_median": 12.0,
+      "characters_median": 29127.0,
+      "url_count_median": 47.0
+    },
+    {
+      "category": "机电_冷却_工程_水处理_边缘工业AI",
+      "n": 20,
+      "fact_direction_mean": 6.965,
+      "future_direction_mean": 5.825,
+      "negative_risk_mean": 6.325,
+      "community_quality_mean": 3.4,
+      "heat_mean": 6.56,
+      "long_crowding_mean": 6.053,
+      "short_crowding_mean": 2.96,
+      "disagreement_mean": 7.42,
+      "reviewability_mean": 8.9,
+      "event_count_median": 8.0,
+      "community_count_median": 5.0,
+      "future_frequency_count_median": 9.0,
+      "future_catalyst_count_median": 12.0,
+      "tracking_count_median": 12.0,
+      "characters_median": 27446.0,
+      "url_count_median": 40.0
+    },
+    {
+      "category": "电力_发电_能源_储能",
+      "n": 23,
+      "fact_direction_mean": 6.609,
+      "future_direction_mean": 5.717,
+      "negative_risk_mean": 6.783,
+      "community_quality_mean": 3.665,
+      "heat_mean": 7.361,
+      "long_crowding_mean": 6.943,
+      "short_crowding_mean": 4.183,
+      "disagreement_mean": 7.926,
+      "reviewability_mean": 8.957,
+      "event_count_median": 10.0,
+      "community_count_median": 7.0,
+      "future_frequency_count_median": 9.0,
+      "future_catalyst_count_median": 11.0,
+      "tracking_count_median": 12.0,
+      "characters_median": 31438.0,
+      "url_count_median": 51.0
+    },
+    {
+      "category": "配电_电源_功率器件",
+      "n": 20,
+      "fact_direction_mean": 6.95,
+      "future_direction_mean": 5.765,
+      "negative_risk_mean": 6.71,
+      "community_quality_mean": 3.365,
+      "heat_mean": 6.86,
+      "long_crowding_mean": 6.71,
+      "short_crowding_mean": 3.635,
+      "disagreement_mean": 7.8,
+      "reviewability_mean": 8.95,
+      "event_count_median": 8.0,
+      "community_count_median": 6.0,
+      "future_frequency_count_median": 9.0,
+      "future_catalyst_count_median": 11.0,
+      "tracking_count_median": 12.0,
+      "characters_median": 28974.0,
+      "url_count_median": 43.0
+    }
+  ],
+  "correlations": [
+    {
+      "a": "negative_risk",
+      "b": "disagreement",
+      "rho": 0.6932,
+      "n": 192
+    },
+    {
+      "a": "fact_direction",
+      "b": "future_direction",
+      "rho": 0.6921,
+      "n": 192
+    },
+    {
+      "a": "heat",
+      "b": "long_crowding",
+      "rho": 0.5884,
+      "n": 192
+    },
+    {
+      "a": "fact_direction",
+      "b": "long_crowding",
+      "rho": 0.5164,
+      "n": 192
+    },
+    {
+      "a": "short_crowding",
+      "b": "disagreement",
+      "rho": 0.5122,
+      "n": 190
+    },
+    {
+      "a": "future_direction",
+      "b": "negative_risk",
+      "rho": -0.4928,
+      "n": 192
+    },
+    {
+      "a": "future_direction",
+      "b": "disagreement",
+      "rho": -0.4459,
+      "n": 192
+    },
+    {
+      "a": "negative_risk",
+      "b": "short_crowding",
+      "rho": 0.3996,
+      "n": 190
+    },
+    {
+      "a": "future_direction",
+      "b": "long_crowding",
+      "rho": 0.3967,
+      "n": 192
+    },
+    {
+      "a": "heat",
+      "b": "disagreement",
+      "rho": 0.3932,
+      "n": 192
+    },
+    {
+      "a": "fact_direction",
+      "b": "short_crowding",
+      "rho": -0.3762,
+      "n": 190
+    },
+    {
+      "a": "fact_direction",
+      "b": "negative_risk",
+      "rho": -0.3682,
+      "n": 192
+    },
+    {
+      "a": "future_direction",
+      "b": "short_crowding",
+      "rho": -0.3389,
+      "n": 190
+    },
+    {
+      "a": "negative_risk",
+      "b": "heat",
+      "rho": 0.3381,
+      "n": 192
+    },
+    {
+      "a": "fact_direction",
+      "b": "disagreement",
+      "rho": -0.3263,
+      "n": 192
+    },
+    {
+      "a": "community_quality",
+      "b": "heat",
+      "rho": 0.2678,
+      "n": 192
+    },
+    {
+      "a": "long_crowding",
+      "b": "reviewability",
+      "rho": 0.2406,
+      "n": 192
+    },
+    {
+      "a": "fact_direction",
+      "b": "reviewability",
+      "rho": 0.2346,
+      "n": 192
+    },
+    {
+      "a": "fact_direction",
+      "b": "heat",
+      "rho": 0.2297,
+      "n": 192
+    },
+    {
+      "a": "long_crowding",
+      "b": "short_crowding",
+      "rho": -0.2039,
+      "n": 190
+    },
+    {
+      "a": "negative_risk",
+      "b": "community_quality",
+      "rho": 0.1998,
+      "n": 192
+    },
+    {
+      "a": "community_quality",
+      "b": "long_crowding",
+      "rho": 0.1692,
+      "n": 192
+    },
+    {
+      "a": "future_direction",
+      "b": "heat",
+      "rho": 0.1418,
+      "n": 192
+    },
+    {
+      "a": "community_quality",
+      "b": "reviewability",
+      "rho": 0.1263,
+      "n": 192
+    },
+    {
+      "a": "community_quality",
+      "b": "disagreement",
+      "rho": 0.1245,
+      "n": 192
+    },
+    {
+      "a": "disagreement",
+      "b": "reviewability",
+      "rho": -0.0867,
+      "n": 192
+    },
+    {
+      "a": "negative_risk",
+      "b": "reviewability",
+      "rho": -0.0502,
+      "n": 192
+    },
+    {
+      "a": "community_quality",
+      "b": "short_crowding",
+      "rho": -0.0486,
+      "n": 190
+    },
+    {
+      "a": "heat",
+      "b": "reviewability",
+      "rho": 0.0458,
+      "n": 192
+    },
+    {
+      "a": "future_direction",
+      "b": "community_quality",
+      "rho": -0.0392,
+      "n": 192
+    },
+    {
+      "a": "fact_direction",
+      "b": "community_quality",
+      "rho": 0.0355,
+      "n": 192
+    },
+    {
+      "a": "negative_risk",
+      "b": "long_crowding",
+      "rho": 0.0325,
+      "n": 192
+    },
+    {
+      "a": "heat",
+      "b": "short_crowding",
+      "rho": 0.0242,
+      "n": 190
+    },
+    {
+      "a": "future_direction",
+      "b": "reviewability",
+      "rho": 0.0202,
+      "n": 192
+    },
+    {
+      "a": "long_crowding",
+      "b": "disagreement",
+      "rho": 0.0192,
+      "n": 192
+    },
+    {
+      "a": "short_crowding",
+      "b": "reviewability",
+      "rho": 0.0085,
+      "n": 190
+    }
+  ],
+  "archetypes": {
+    "强事实_高热度": {
+      "n": 104,
+      "tickers": [
+        "ABBNY",
+        "ACMR",
+        "AEHR",
+        "AEIS",
+        "AEP",
+        "AJNMY",
+        "ALAB",
+        "AMAT",
+        "AMD",
+        "AMKR",
+        "AMZN",
+        "ANET",
+        "APLD",
+        "ASMIY",
+        "ASML",
+        "ASMVY",
+        "ASX",
+        "ATEYY",
+        "BE",
+        "BELFB",
+        "BESIY",
+        "BWXT",
+        "CAT",
+        "CDNS",
+        "CEG",
+        "CIEN",
+        "CLS",
+        "CMI",
+        "COHR",
+        "COHU",
+        "CRDO",
+        "CRWD",
+        "CSCO",
+        "DELL",
+        "DSCSY",
+        "ETR",
+        "FIX",
+        "FLEX",
+        "FORM",
+        "GEV",
+        "GLW",
+        "GOOGL",
+        "HPE",
+        "HTHIY",
+        "ICHR",
+        "IESC",
+        "IFNNY",
+        "IMOS",
+        "INTC",
+        "IREN",
+        "JBL",
+        "KEYS",
+        "KLAC",
+        "KLIC",
+        "LITE",
+        "LRCX",
+        "MCHP",
+        "MICLF",
+        "MIELY",
+        "MKSI",
+        "MOD",
+        "MPWR",
+        "MRAAY",
+        "MRVL",
+        "MTRN",
+        "MTSI",
+        "MU",
+        "MXL",
+        "NBIS",
+        "NOK",
+        "NTAP",
+        "NVDA",
+        "NVT",
+        "ONTO",
+        "P",
+        "PENG",
+        "POWL",
+        "PWR",
+        "Q",
+        "RKLB",
+        "RYCEY",
+        "SIMO",
+        "SITM",
+        "SKHY",
+        "SMTC",
+        "SMTOY",
+        "SNDK",
+        "SOMMY",
+        "STM",
+        "STX",
+        "TER",
+        "TOELY",
+        "TSEM",
+        "TSM",
+        "TT",
+        "TXN",
+        "UCTT",
+        "UMC",
+        "VECO",
+        "VIAV",
+        "VICR",
+        "VRT",
+        "VST",
+        "WDC"
+      ]
+    },
+    "强事实_高负面风险": {
+      "n": 63,
+      "tickers": [
+        "ACMR",
+        "AEIS",
+        "AEP",
+        "ALAB",
+        "AMAT",
+        "AMD",
+        "AMZN",
+        "ANET",
+        "APLD",
+        "ASMVY",
+        "ATEYY",
+        "AVGO",
+        "BE",
+        "BESIY",
+        "CARR",
+        "CAT",
+        "CIEN",
+        "COHR",
+        "COHU",
+        "CSCO",
+        "DD",
+        "DELL",
+        "DLR",
+        "ETR",
+        "FN",
+        "FORM",
+        "GEV",
+        "GFS",
+        "GLW",
+        "GOOGL",
+        "HUBB",
+        "ICHR",
+        "IFNNY",
+        "INTC",
+        "IREN",
+        "KLIC",
+        "LRCX",
+        "MRAAY",
+        "MRVL",
+        "MU",
+        "MXL",
+        "MYRG",
+        "NBIS",
+        "NOK",
+        "NVDA",
+        "NVT",
+        "P",
+        "PENG",
+        "RKLB",
+        "SITM",
+        "SKHY",
+        "SMTOY",
+        "SNDK",
+        "SOMMY",
+        "STX",
+        "TER",
+        "TOELY",
+        "TTDKY",
+        "VECO",
+        "VIAV",
+        "VICR",
+        "VRT",
+        "WDC"
+      ]
+    },
+    "弱事实_高热度": {
+      "n": 9,
+      "tickers": [
+        "ENPH",
+        "IBM",
+        "NVTS",
+        "ORCL",
+        "PNR",
+        "POET",
+        "SMCI",
+        "SMR",
+        "WOLF"
+      ]
+    },
+    "高热度_低社区质量": {
+      "n": 116,
+      "tickers": [
+        "AAOI",
+        "ABBNY",
+        "ACMR",
+        "ADBE",
+        "AEHR",
+        "AEIS",
+        "AEP",
+        "AJNMY",
+        "ALAB",
+        "AMAT",
+        "AMKR",
+        "AMPX",
+        "AMZN",
+        "ANET",
+        "APLD",
+        "ARM",
+        "ASMIY",
+        "ASMVY",
+        "ASX",
+        "ATEYY",
+        "AXTI",
+        "BABA",
+        "BE",
+        "BELFB",
+        "BESIY",
+        "BWXT",
+        "CAT",
+        "CBRS",
+        "CEG",
+        "CIEN",
+        "CLS",
+        "CMI",
+        "COHR",
+        "COHU",
+        "CRDO",
+        "CRWV",
+        "CSCO",
+        "DELL",
+        "DSCSY",
+        "DTE",
+        "ENPH",
+        "ETR",
+        "FCEL",
+        "FLEX",
+        "FORM",
+        "GEV",
+        "GLW",
+        "GOOGL",
+        "HPE",
+        "HTHIY",
+        "IBM",
+        "ICHR",
+        "IESC",
+        "IFNNY",
+        "IMOS",
+        "IREN",
+        "JBL",
+        "KEYS",
+        "KLAC",
+        "KLIC",
+        "LITE",
+        "LRCX",
+        "MCHP",
+        "MICLF",
+        "MIELY",
+        "MKSI",
+        "MMM",
+        "MOD",
+        "MPWR",
+        "MRAAY",
+        "MRAM",
+        "MRVL",
+        "MSFT",
+        "MTRN",
+        "MTSI",
+        "MXL",
+        "NTAP",
+        "NVT",
+        "NVTS",
+        "OKLO",
+        "ON",
+        "ONTO",
+        "ORCL",
+        "P",
+        "PENG",
+        "POET",
+        "POWL",
+        "PWR",
+        "QCOM",
+        "SIMO",
+        "SITM",
+        "SKHY",
+        "SMCI",
+        "SMR",
+        "SMTC",
+        "SMTOY",
+        "SNDK",
+        "SNPS",
+        "SOMMY",
+        "STX",
+        "TE",
+        "TER",
+        "TOELY",
+        "TSEM",
+        "TSLA",
+        "TSM",
+        "TT",
+        "TXN",
+        "UCTT",
+        "UMC",
+        "VECO",
+        "VIAV",
+        "VRT",
+        "VST",
+        "WDC",
+        "WOLF"
+      ]
+    },
+    "多空双拥挤": {
+      "n": 12,
+      "tickers": [
+        "AMPX",
+        "APLD",
+        "AXTI",
+        "COHU",
+        "CRWV",
+        "FCEL",
+        "IREN",
+        "NBIS",
+        "NVTS",
+        "POET",
+        "SMCI",
+        "TE"
+      ]
+    },
+    "高分歧_低空头拥挤": {
+      "n": 71,
+      "tickers": [
+        "ABBNY",
+        "ACLS",
+        "AEIS",
+        "AMAT",
+        "AMKR",
+        "AMZN",
+        "ANET",
+        "AVGO",
+        "BABA",
+        "BELFB",
+        "BESIY",
+        "CAT",
+        "CEG",
+        "CIEN",
+        "CLS",
+        "COHR",
+        "CRDO",
+        "CRWD",
+        "DELL",
+        "DHR",
+        "DKILY",
+        "DLR",
+        "DSCSY",
+        "DTE",
+        "ETN",
+        "FLNC",
+        "FORM",
+        "GFS",
+        "GLW",
+        "GOOGL",
+        "HPE",
+        "IESC",
+        "IFNNY",
+        "IMOS",
+        "INTC",
+        "JBL",
+        "KLAC",
+        "KLIC",
+        "LFUS",
+        "LRCX",
+        "META",
+        "MMM",
+        "MOD",
+        "MRAAY",
+        "MRVL",
+        "MSFT",
+        "MTRN",
+        "MTSI",
+        "MU",
+        "NOK",
+        "NVDA",
+        "ORCL",
+        "P",
+        "QCOM",
+        "RMBS",
+        "ROG",
+        "SHECY",
+        "SITM",
+        "SNPS",
+        "SOMMY",
+        "STM",
+        "TEL",
+        "TMO",
+        "TSEM",
+        "TSLA",
+        "TSM",
+        "TTDKY",
+        "UMC",
+        "VIAV",
+        "VICR",
+        "VRT"
+      ]
+    },
+    "低热度_偏正事实": {
+      "n": 17,
+      "tickers": [
+        "APD",
+        "ASGLY",
+        "ATKR",
+        "DCI",
+        "DHR",
+        "FLNC",
+        "FN",
+        "FTV",
+        "LIN",
+        "MSI",
+        "NDSN",
+        "PH",
+        "SANM",
+        "SHECY",
+        "ST",
+        "TDY",
+        "VISN"
+      ]
+    },
+    "未来改善_当前较弱": {
+      "n": 0,
+      "tickers": []
+    },
+    "当前强_未来降温": {
+      "n": 6,
+      "tickers": [
+        "BE",
+        "BESIY",
+        "DD",
+        "DLR",
+        "TEL",
+        "VIAV"
+      ]
+    }
+  },
+  "topics": [
+    {
+      "topic": "订单需求与客户验证",
+      "n": 192,
+      "share": 1.0,
+      "fact_direction_mean": 7.097,
+      "negative_risk_mean": 6.65,
+      "disagreement_mean": 7.842,
+      "risk_difference_vs_absent": null
+    },
+    {
+      "topic": "预期共识与目标价",
+      "n": 192,
+      "share": 1.0,
+      "fact_direction_mean": 7.097,
+      "negative_risk_mean": 6.65,
+      "disagreement_mean": 7.842,
+      "risk_difference_vs_absent": null
+    },
+    {
+      "topic": "AI与数据中心",
+      "n": 190,
+      "share": 0.9896,
+      "fact_direction_mean": 7.119,
+      "negative_risk_mean": 6.646,
+      "disagreement_mean": 7.845,
+      "risk_difference_vs_absent": -0.354
+    },
+    {
+      "topic": "治理管理层与审计",
+      "n": 189,
+      "share": 0.9844,
+      "fact_direction_mean": 7.093,
+      "negative_risk_mean": 6.644,
+      "disagreement_mean": 7.839,
+      "risk_difference_vs_absent": -0.356
+    },
+    {
+      "topic": "监管政策诉讼与地缘",
+      "n": 183,
+      "share": 0.9531,
+      "fact_direction_mean": 7.086,
+      "negative_risk_mean": 6.645,
+      "disagreement_mean": 7.85,
+      "risk_difference_vs_absent": -0.099
+    },
+    {
+      "topic": "利润率现金与资本效率",
+      "n": 174,
+      "share": 0.9062,
+      "fact_direction_mean": 7.12,
+      "negative_risk_mean": 6.647,
+      "disagreement_mean": 7.84,
+      "risk_difference_vs_absent": -0.031
+    },
+    {
+      "topic": "产能供应与交付",
+      "n": 172,
+      "share": 0.8958,
+      "fact_direction_mean": 7.166,
+      "negative_risk_mean": 6.653,
+      "disagreement_mean": 7.864,
+      "risk_difference_vs_absent": 0.028
+    },
+    {
+      "topic": "周期库存与补库",
+      "n": 155,
+      "share": 0.8073,
+      "fact_direction_mean": 7.152,
+      "negative_risk_mean": 6.604,
+      "disagreement_mean": 7.792,
+      "risk_difference_vs_absent": -0.239
+    },
+    {
+      "topic": "融资稀释与证券供给",
+      "n": 125,
+      "share": 0.651,
+      "fact_direction_mean": 7.114,
+      "negative_risk_mean": 6.69,
+      "disagreement_mean": 7.922,
+      "risk_difference_vs_absent": 0.113
+    },
+    {
+      "topic": "电力能源与环境约束",
+      "n": 110,
+      "share": 0.5729,
+      "fact_direction_mean": 7.161,
+      "negative_risk_mean": 6.606,
+      "disagreement_mean": 7.789,
+      "risk_difference_vs_absent": -0.102
+    },
+    {
+      "topic": "安全漏洞与事故",
+      "n": 71,
+      "share": 0.3698,
+      "fact_direction_mean": 6.986,
+      "negative_risk_mean": 6.606,
+      "disagreement_mean": 7.87,
+      "risk_difference_vs_absent": -0.07
+    },
+    {
+      "topic": "回购股息与资本回报",
+      "n": 67,
+      "share": 0.349,
+      "fact_direction_mean": 7.193,
+      "negative_risk_mean": 6.522,
+      "disagreement_mean": 7.648,
+      "risk_difference_vs_absent": -0.196
+    }
+  ],
+  "event_direction_totals": {
+    "positive": 951,
+    "negative": 263,
+    "mixed": 391,
+    "neutral": 106
+  },
+  "community_direction_totals": {
+    "positive": 526,
+    "negative": 229,
+    "mixed": 269
+  },
+  "future_direction_totals": {
+    "positive": 657,
+    "negative": 252,
+    "mixed": 995
+  },
+  "future_frequency_totals": {
+    "high": 328,
+    "medium_high": 58,
+    "medium": 109,
+    "medium_low": 9,
+    "low": 87
+  },
+  "top_domains_by_document_count": [
+    {
+      "domain": "reddit.com",
+      "documents": 181
+    },
+    {
+      "domain": "sec.gov",
+      "documents": 161
+    },
+    {
+      "domain": "marketbeat.com",
+      "documents": 150
+    },
+    {
+      "domain": "investing.com",
+      "documents": 123
+    },
+    {
+      "domain": "benzinga.com",
+      "documents": 113
+    },
+    {
+      "domain": "stockanalysis.com",
+      "documents": 98
+    },
+    {
+      "domain": "stocktwits.com",
+      "documents": 89
+    },
+    {
+      "domain": "fool.com",
+      "documents": 70
+    },
+    {
+      "domain": "seekingalpha.com",
+      "documents": 66
+    },
+    {
+      "domain": "finance.yahoo.com",
+      "documents": 63
+    },
+    {
+      "domain": "tipranks.com",
+      "documents": 57
+    },
+    {
+      "domain": "barchart.com",
+      "documents": 38
+    },
+    {
+      "domain": "marketscreener.com",
+      "documents": 36
+    },
+    {
+      "domain": "apnews.com",
+      "documents": 32
+    },
+    {
+      "domain": "sahmcapital.com",
+      "documents": 28
+    },
+    {
+      "domain": "uk.investing.com",
+      "documents": 28
+    },
+    {
+      "domain": "chartexchange.com",
+      "documents": 27
+    },
+    {
+      "domain": "ca.investing.com",
+      "documents": 24
+    },
+    {
+      "domain": "kiplinger.com",
+      "documents": 23
+    },
+    {
+      "domain": "zacks.com",
+      "documents": 22
+    },
+    {
+      "domain": "nasdaq.com",
+      "documents": 22
+    },
+    {
+      "domain": "globenewswire.com",
+      "documents": 20
+    },
+    {
+      "domain": "investor.tsmc.com",
+      "documents": 19
+    },
+    {
+      "domain": "altindex.com",
+      "documents": 18
+    },
+    {
+      "domain": "opencompute.org",
+      "documents": 17
+    },
+    {
+      "domain": "streetinsider.com",
+      "documents": 17
+    },
+    {
+      "domain": "finance.yahoo.co.jp",
+      "documents": 17
+    },
+    {
+      "domain": "investors.micron.com",
+      "documents": 16
+    },
+    {
+      "domain": "depositaryreceipts.citi.com",
+      "documents": 16
+    },
+    {
+      "domain": "cdn.cboe.com",
+      "documents": 15
+    },
+    {
+      "domain": "tomshardware.com",
+      "documents": 15
+    },
+    {
+      "domain": "reuters.com",
+      "documents": 14
+    },
+    {
+      "domain": "investor.atmeta.com",
+      "documents": 14
+    },
+    {
+      "domain": "linkedin.com",
+      "documents": 14
+    },
+    {
+      "domain": "axios.com",
+      "documents": 14
+    },
+    {
+      "domain": "spglobal.com",
+      "documents": 13
+    },
+    {
+      "domain": "morningstar.com",
+      "documents": 13
+    },
+    {
+      "domain": "simplywall.st",
+      "documents": 13
+    },
+    {
+      "domain": "dockets.justia.com",
+      "documents": 12
+    },
+    {
+      "domain": "investor.nvidia.com",
+      "documents": 12
+    }
+  ],
+  "extremes": {
+    "fact_direction": {
+      "highest": [
+        {
+          "ticker": "TSM",
+          "company": "台积电",
+          "category": "晶圆制造_前道设备",
+          "score": 9.0,
+          "text": "9/10 | 10＝事实强正面 | 两次财报、月营收、N2 收入、第三季指引、全年上调 | 第二季净利润含非营业收益；智能手机环比下降；第三季毛利指引回落 | AI 与非 AI、价格与出货、汇率贡献未完全拆分"
+        },
+        {
+          "ticker": "SNDK",
+          "company": "SanDisk",
+          "category": "AI服务器_存储_EMS",
+          "score": 9.0,
+          "text": "强正面 | 9/10 | Q3、Q4 指引、RPO、数据中心收入、BiCS10 送样 | 利润高度受 ASP 推动；两份合同细节未量化"
+        },
+        {
+          "ticker": "NVT",
+          "company": "nVent Electric",
+          "category": "配电_电源_功率器件",
+          "score": 9.0,
+          "text": "9/10，强正面 | Q1 销售、订单、积压和指引同时上修；Siemens 生态验证 | 高管出售、Electrical Connections 利润率压力和监管事件部分抵消"
+        },
+        {
+          "ticker": "MU",
+          "company": "Micron Technology 美光科技",
+          "category": "AI服务器_存储_EMS",
+          "score": 9.0,
+          "text": "9/10，强正面 | 财报、指引、SCA、客户协作和工程执行均为高可靠新事实；扣分来自位元增速低、价格主导和合同约束"
+        },
+        {
+          "ticker": "MKSI",
+          "company": "MKS Inc",
+          "category": "晶圆制造_前道设备",
+          "score": 9.0,
+          "text": "9/10，明显正面 | Q1 与 Q2 指引、三个终端增长、产能执行、SEMI/ASML/Lam/Applied Materials 独立印证"
+        },
+        {
+          "ticker": "MICLF",
+          "company": "Mycronic AB",
+          "category": "封测_检测_计量_光罩",
+          "score": 9.0,
+          "text": "强正面 | 9/10 | Q1、Q2 连续超过共识；两次上调销售判断；Q2 订单、毛利率和 EBIT 强 | 分部差异大，不能把集团结果均匀分配到所有业务"
+        },
+        {
+          "ticker": "ASML",
+          "company": "ASML Holding NV",
+          "category": "晶圆制造_前道设备",
+          "score": 9.0,
+          "text": "明显正面 | 9/10，1=负面、10=正面 | Q2 beat-and-raise、Q3 强指引、2027 扩产、Intel High-NA、TSMC Q2 | 中国 20% 暴露、重组、2028 尚为研究计划"
+        },
+        {
+          "ticker": "APH",
+          "company": "Amphenol 安费诺",
+          "category": "AI网络_光互联_连接器",
+          "score": 9.0,
+          "text": "9/10 | 强正面 | Q1 收入、订单、有机增长、AI 归因、利润率与 Q2 指引均强；扣分来自税务、收购费用和业务分化"
+        },
+        {
+          "ticker": "AEHR",
+          "company": "Aehr Test Systems",
+          "category": "封测_检测_计量_光罩",
+          "score": 9.0,
+          "text": "9/10，强正面 | 历史最大 AI 订单、两个不同硅光子客户追加、800 万美元以上 SiC 订单、record bookings/backlog 都是高质量新事实"
+        },
+        {
+          "ticker": "ABBNY",
+          "company": "ABB Ltd",
+          "category": "配电_电源_功率器件",
+          "score": 9.0,
+          "text": "强正面 | 9/10 | 两季订单强、数据中心三位数增长、两次上调展望 | Q1 地产收益、Q2 分部差异和绝对数据中心披露不足"
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "IBM",
+          "company": "International Business Machines",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 1.5,
+          "text": "混合转显著负面 | E08 是窗口内新颖度和重要性最高的事件；Red Hat、量子和产品信息提供正面反证 | 正式财报量化订单回补并保持关键全年目标"
+        },
+        {
+          "ticker": "PNR",
+          "company": "Pentair plc",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 2.0,
+          "text": "2/10 | 10=高度正面 | Q2 初值、全年下修和 CFO 快速离任主导；Flow/Water Solutions 稳定仅提供边界"
+        },
+        {
+          "ticker": "PSIX",
+          "company": "Power Solutions International",
+          "category": "电力_发电_能源_储能",
+          "score": 3.0,
+          "text": "偏负面 | 3/10 | Q1 利润和毛利率大幅下降、Power Systems 下滑、CEO 无解释离任；正面抵消项为现金流和毛利率环比改善"
+        },
+        {
+          "ticker": "ALLE",
+          "company": "Allegion plc",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 4.0,
+          "text": "中性偏负面 | 4/10；1=强负面，10=强正面 | 收入和指引提供反证，但销量、利润率、EPS 未达预期和 ERP 更有新增信息量 | 高"
+        },
+        {
+          "ticker": "CC",
+          "company": "The Chemours Company",
+          "category": "半导体材料_化学品_基板",
+          "score": 4.0,
+          "text": "方向类 | 混合偏负 | 4/10 | TSS 强和指引维持被 TT/APM 弱、住宅需求疑问、长期 PFAS 义务及纽约诉讼压制 | 联邦和解是否最终批准、Q2 是否证明弱项可逆"
+        },
+        {
+          "ticker": "ENPH",
+          "company": "Enphase Energy",
+          "category": "电力_发电_能源_储能",
+          "score": 4.0,
+          "text": "4/10，偏负但混合 | safe-harbor、FCF、IQ9 rollout、SST 工作模块 | 美国 sell-through、渠道风险、欧洲约束、SST 尚早 | 高"
+        },
+        {
+          "ticker": "ORCL",
+          "company": "Oracle Corporation",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 4.0,
+          "text": "混合偏负面 | 4/10 | OCI/RPO/实体交付为正；负自由现金流、筹资、长期承诺、诉讼与评级为负，且负面信息更新更晚、更新颖 | 客户预付与外部融资实际能抵减多少净资本需求"
+        },
+        {
+          "ticker": "PLAB",
+          "company": "Photronics",
+          "category": "封测_检测_计量_光罩",
+          "score": 4.0,
+          "text": "4/10，偏负面但混合 | Q2 miss、IC／高端 IC 和利润率下滑、弱于预期的 Q3 指引占主导；FPD 增长和行业阻力证据提供部分抵消"
+        },
+        {
+          "ticker": "SMCI",
+          "company": "Super Micro Computer Inc",
+          "category": "AI服务器_存储_EMS",
+          "score": 4.0,
+          "text": "4/10，混合偏负 | Q3 毛利率修复和收入指引是正面事实；但 390 亿美元订单可取消、70 亿美元融资、负现金流和调查延续压过单纯产品新闻 | Q4 订单转化、毛利率、现金流和客户集中变化"
+        },
+        {
+          "ticker": "SMR",
+          "company": "NuScale Power",
+          "category": "电力_发电_能源_储能",
+          "score": 4.0,
+          "text": "混合偏负面 | 4/10 | 供应链与流动性正面，但 Q1 项目收入低、无 PPA、Doicești 条件未满足、ATM 股本扩张是更高重要性的事实"
+        }
+      ]
+    },
+    "future_direction": {
+      "highest": [
+        {
+          "ticker": "VISN",
+          "company": "Vistance Networks",
+          "category": "AI网络_光互联_连接器",
+          "score": 7.0,
+          "text": "条件式偏正面，7/10 | 分配、季度披露、统一节点、两个行业活动均可验证 | 最重要事件的方向取决于金额、利润和客户数据，不能预先算作利好"
+        },
+        {
+          "ticker": "TSM",
+          "company": "台积电",
+          "category": "晶圆制造_前道设备",
+          "score": 7.0,
+          "text": "7/10 | 10＝未来消息更可能强化正面叙事 | 已排期月营收、OIP、客户 AI 投入、N2 爬坡 | 资本开支、毛利、定价执行和政策反向消息 | 第三季法说日期未定，客户计划可变"
+        },
+        {
+          "ticker": "TOELY",
+          "company": "Tokyo Electron",
+          "category": "晶圆制造_前道设备",
+          "score": 7.0,
+          "text": "条件式正面 | 7/10 | 已知财报、客户数据、SEMICON、拆股和回购形成高密度验证 | 高预期使“符合预期”未必被解释为正面惊喜"
+        },
+        {
+          "ticker": "SNDK",
+          "company": "SanDisk",
+          "category": "AI服务器_存储_EMS",
+          "score": 7.0,
+          "text": "偏正面但条件化 | 7/10 | 8 月公司日历、QLC、Investor Day、NBM 可能更新 | 已知正面信息大量被预期，重复信息的新颖度低"
+        },
+        {
+          "ticker": "SMTC",
+          "company": "Semtech Corporation",
+          "category": "AI网络_光互联_连接器",
+          "score": 7.0,
+          "text": "条件式偏正面 | 7/10 | 公司给出可验证的高增长目标，多个产品/生态窗口 | 高预期使“仅达标”的情绪解释不确定"
+        },
+        {
+          "ticker": "SIMO",
+          "company": "Silicon Motion Technology",
+          "category": "AI服务器_存储_EMS",
+          "score": 7.0,
+          "text": "条件式偏正面 | 7/10 | 日历密集、产品与客户 ramp 有潜在增量；Q2 是高门槛双向事件"
+        },
+        {
+          "ticker": "RYCEY",
+          "company": "Rolls-Royce Holdings",
+          "category": "电力_发电_能源_储能",
+          "score": 7.0,
+          "text": "7/10 | 正面倾向、条件性强 | Farnborough、半年结果、SMR 执行、投资者会议 | 预期基线较高；高频新闻可能只是重复；地缘冲突不可控"
+        },
+        {
+          "ticker": "MKSI",
+          "company": "MKS Inc",
+          "category": "晶圆制造_前道设备",
+          "score": 7.0,
+          "text": "7/10，正面但条件化 | 行业背景仍强；Q2 是兑现检验，重复性正面信息的新颖度下降"
+        },
+        {
+          "ticker": "MICLF",
+          "company": "Mycronic AB",
+          "category": "封测_检测_计量_光罩",
+          "score": 7.0,
+          "text": "条件式偏正面、波动增加 | 7/10 | CMD、订单管线、GT 产能和行业会议提供正面验证机会 | 高预期使正常化信息也可能被解释为负面；Q3 不在窗口内"
+        },
+        {
+          "ticker": "ET",
+          "company": "Energy Transfer LP",
+          "category": "电力_发电_能源_储能",
+          "score": 7.0,
+          "text": "7/10，条件性偏正面 | 已排定财报、多个 Q3/Q4 项目节点、负债管理 | Q2 基数与套保、项目延迟、经济性披露不足 | 中"
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "IBM",
+          "company": "International Business Machines",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 4.0,
+          "text": "近端混合偏负面审视；存在修复路径 | 卖方重置和 7 月 22 日追问将先聚焦缺口，产品发布次之 | 明确成交、客户采用和路线图落地把传播重心重新带回增长/创新"
+        },
+        {
+          "ticker": "PNR",
+          "company": "Pentair plc",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 4.0,
+          "text": "4/10 | 10=更可能正面 | 有明确验证窗口和修复机会，但在份额、库存与治理闭环前负面偏斜"
+        },
+        {
+          "ticker": "AAOI",
+          "company": "Applied Optoelectronics",
+          "category": "AI网络_光互联_连接器",
+          "score": 5.0,
+          "text": "中性、条件式 | 5/10 | Q2 有增长基础，但方向取决于毛利、出货、ATM、回款和认证，不是消息数量"
+        },
+        {
+          "ticker": "ADBE",
+          "company": "Adobe",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 5.0,
+          "text": "5/10 | 中性、条件式 | 高概率有 Q3 与产品兑现，但方向取决于转化和领导层，不取决于发布数量"
+        },
+        {
+          "ticker": "ALLE",
+          "company": "Allegion plc",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 5.0,
+          "text": "条件式中性 | 5/10；1=更可能负面，10=更可能正面 | Q2 必然出现但结果双向；产品新闻偏正面却公司级影响小 | 中"
+        },
+        {
+          "ticker": "AMPX",
+          "company": "Amprius Technologies",
+          "category": "电力_发电_能源_储能",
+          "score": 5.0,
+          "text": "5/10，高度条件式 | Q2 和订单可能正面，也可能直接强化增长质量/代工反叙事"
+        },
+        {
+          "ticker": "AOSL",
+          "company": "Alpha and Omega Semiconductor",
+          "category": "配电_电源_功率器件",
+          "score": 5.0,
+          "text": "5/10，条件式中性 | 财报和 10-K 可提供硬验证，AI 仍有增长基础 | 指引能见度受 memory、PC 和客户拉货影响"
+        },
+        {
+          "ticker": "ARM",
+          "company": "Arm Holdings",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 5.0,
+          "text": "条件式混合，表面正面消息较多 | 已排期活动和产品会产生较多正面宣传 | 真正决定主叙事的是 7 月 29 日供应/royalty，以及低频监管消息"
+        },
+        {
+          "ticker": "ASGLY",
+          "company": "AGC Inc",
+          "category": "半导体材料_化学品_基板",
+          "score": 5.0,
+          "text": "混合、事件驱动 | 8 月 4 日可验证多个叙事；半导体和 CDMO 仍有消息流 | 事件发生不等于市场会正面解释"
+        },
+        {
+          "ticker": "ATKR",
+          "company": "Atkore",
+          "category": "配电_电源_功率器件",
+          "score": 5.0,
+          "text": "高度条件式、基准混合 | 5/10 | 8 月财报与 9–10 月法院听证均可复盘，但结果解释双向"
+        }
+      ]
+    },
+    "negative_risk": {
+      "highest": [
+        {
+          "ticker": "WOLF",
+          "company": "Wolfspeed",
+          "category": "配电_电源_功率器件",
+          "score": 8.0,
+          "text": "8/10，高 | Q4 毛利/现金、利用率、客户认证、证券供给、诉讼和政策传闻失效 | 充足流动性和已有重组降低近期生存叙事的极端程度，但不消除执行风险"
+        },
+        {
+          "ticker": "VECO",
+          "company": "Veeco Instruments",
+          "category": "晶圆制造_前道设备",
+          "score": 8.0,
+          "text": "8/10，高 | SAMR、指引/出货、出口许可、扩产执行、板块拥挤 | 风险高不代表必然发生；部分已被市场讨论或对冲"
+        },
+        {
+          "ticker": "TSLA",
+          "company": "Tesla",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 8.0,
+          "text": "8/10，高 | 安全/监管、资本开支、时间表、治理和地区需求均有明确触发点 | 负面事件是否发生及严重程度不可预测；后续权威材料可能纠正初始叙事"
+        },
+        {
+          "ticker": "TE",
+          "company": "T1 Energy Inc",
+          "category": "电力_发电_能源_储能",
+          "score": 8.0,
+          "text": "高 | 8/10 | G2融资延迟、PFE/45X、客户集中、KORE交割、法律/内控、项目税收抵免期限"
+        },
+        {
+          "ticker": "SMR",
+          "company": "NuScale Power",
+          "category": "电力_发电_能源_储能",
+          "score": 8.0,
+          "text": "高 | 8/10 | PPA 延迟、PMA付款、Doicești、稀释、诉讼、竞争性政策资金均有可验证触发点"
+        },
+        {
+          "ticker": "SMCI",
+          "company": "Super Micro Computer Inc",
+          "category": "AI服务器_存储_EMS",
+          "score": 8.0,
+          "text": "8/10，高 | 调查、内部控制、审计、融资、订单取消权和营运资金均有明确事实基础 | 风险是否在未来三个月落地、公司能否提供反证"
+        },
+        {
+          "ticker": "RKLB",
+          "company": "Rocket Lab",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 8.0,
+          "text": "高 | 8/10 | Neutron、融资、审批、整合、launch scrub/失败均可独立触发反叙事 | 高风险不代表高概率全部发生；多项风险可能只是常规过程"
+        },
+        {
+          "ticker": "PNR",
+          "company": "Pentair plc",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 8.0,
+          "text": "8/10 | 10=风险很高 | 同业反证、产品社区线索、永久 CFO 与指引可信度仍待解决"
+        },
+        {
+          "ticker": "ORCL",
+          "company": "Oracle Corporation",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 8.0,
+          "text": "高 | 8/10 | 信用、客户集中、供电/监管、安全、融资和诉讼均有可观察窗口 | 稳定展望、项目融资及客户预付提供缓冲"
+        },
+        {
+          "ticker": "META",
+          "company": "Meta Platforms",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 8.0,
+          "text": "8/10，高 | 青少年庭审、欧盟调查、版权、劳动、隐私/安全产品治理 | 法律主张并非判决；Meta 有资源回应并已推出缓释措施 | 诉讼证据和救济范围未知"
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "AAON",
+          "company": "AAON",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 5.0,
+          "text": "中等 | 毛利/外包/爬坡、客户集中、诉讼和生态支出 | 诉讼实体进展不可预测；公司未量化若干关键风险"
+        },
+        {
+          "ticker": "CDNS",
+          "company": "Cadence Design Systems",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 5.0,
+          "text": "中等 | 5/10 | 中国/出口政策、并购整合、产品延期、成本/安全问题 | 未发现窗口内新的高可靠做空报告、审计异常或针对公司的新监管根事件"
+        },
+        {
+          "ticker": "DOV",
+          "company": "Dover Corporation",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 5.0,
+          "text": "中等 | 高预期、长周期订单、产能约束、价格成本和竞争 | 订单取消、book-to-bill 接近/低于 1、指引下调会提高到高"
+        },
+        {
+          "ticker": "EME",
+          "company": "EMCOR Group",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 5.0,
+          "text": "5/10，中等 | 项目执行、客户/电力/设计延迟、法律尾部、内部人卖股 | 暂无指引下调、重大取消、可信做空报告或审计问题"
+        },
+        {
+          "ticker": "FTV",
+          "company": "Fortive Corporation",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 5.0,
+          "text": "中等 | 5/10 | 关税、医院资本设备、融资成本、执行和产品监管均有现实基础。 | 截止时点未见新的重大监管、会计或控制问题。"
+        },
+        {
+          "ticker": "HTHIY",
+          "company": "Hitachi Ltd",
+          "category": "电力_发电_能源_储能",
+          "score": 5.0,
+          "text": "5/10，中等 | 当前无做空报告、审计或治理危机的高可靠根事件 | 中东、关税、长项目执行、数据主权、网络安全、整合风险均可成为负面根事件"
+        },
+        {
+          "ticker": "LIN",
+          "company": "Linde plc",
+          "category": "半导体材料_化学品_基板",
+          "score": 5.0,
+          "text": "5/10，中等 | 欧洲、项目执行、治理/审计、氦气供应恢复与高门槛 | 商业模式和现有 backlog 降低单一事件迅速推翻主叙事的可能"
+        },
+        {
+          "ticker": "NDSN",
+          "company": "Nordson",
+          "category": "半导体材料_化学品_基板",
+          "score": 5.0,
+          "text": "5/10，中等 | 订单减速、MFS 切换、通胀、工业需求和并购执行 | 当前没有重大调查、审计或融资稀释事件"
+        },
+        {
+          "ticker": "Q",
+          "company": "Qnity Electronics",
+          "category": "半导体材料_化学品_基板",
+          "score": 5.0,
+          "text": "中等，5/10 | 补库存正常化、成本与定价、客户集中、债务 / FCF、政策和领导过渡。 | 当前没有核验到强负面根事件、公开做空报告、监管调查或财务重述。"
+        },
+        {
+          "ticker": "TDY",
+          "company": "Teledyne Technologies",
+          "category": "封测_检测_计量_光罩",
+          "score": 5.0,
+          "text": "5/10，中等 | 产能、项目拨款、稀土/关税、出口合规、外汇、局部漏洞 | 全球制造、低客户集中、现有 backlog 和公司缓释措施 | 中"
+        }
+      ]
+    },
+    "community_quality": {
+      "highest": [
+        {
+          "ticker": "TMO",
+          "company": "Thermo Fisher Scientific",
+          "category": "封测_检测_计量_光罩",
+          "score": 6.0,
+          "text": "6/10，中等 | 抗体数据集可复核、专业媒体质量较高；员工和散户匿名观点质量低 | 图片问题与产品性能、公司财务之间仍有证据断层"
+        },
+        {
+          "ticker": "VICR",
+          "company": "Vicor Corporation",
+          "category": "配电_电源_功率器件",
+          "score": 5.0,
+          "text": "5/10，中等 | 有较完整技术和许可论证，也有实质反问 | 核心多头作者有长仓，匿名意见和自动帖较多 | 缺少客户／竞争者一手材料"
+        },
+        {
+          "ticker": "STM",
+          "company": "STMicroelectronics",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 5.0,
+          "text": "5/10，中等偏低 | 最好的帖子能引用原始资料，但含未验证市占率和利润率推断 | 平台覆盖有限，X/YouTube/Stocktwits 原始样本不足"
+        },
+        {
+          "ticker": "RYCEY",
+          "company": "Rolls-Royce Holdings",
+          "category": "电力_发电_能源_储能",
+          "score": 5.0,
+          "text": "5/10 | 中低 | 有少数长文和核能专业分歧 | 专门社区大量依赖公司材料、卖方目标价和持仓叙事"
+        },
+        {
+          "ticker": "RKLB",
+          "company": "Rocket Lab",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 5.0,
+          "text": "中等 | 5/10 | 有链接 SEC/财报的高质量长文和 Megathread | 目标价标题、猜测、粉丝社区与 Substack 导流显著"
+        },
+        {
+          "ticker": "Q",
+          "company": "Qnity Electronics",
+          "category": "半导体材料_化学品_基板",
+          "score": 5.0,
+          "text": "中等，5/10 | P14 等能引用数据，也讨论部分反证。 | 持仓和订阅利益冲突；公司社媒回声多；零售独立调查少。"
+        },
+        {
+          "ticker": "PNR",
+          "company": "Pentair plc",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 5.0,
+          "text": "5/10 | 10=证据很强 | 从业者案例具体且有旧公告部分印证，但缺总体分母和公司级确认"
+        },
+        {
+          "ticker": "NVDA",
+          "company": "NVIDIA",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 5.0,
+          "text": "中等偏低 | 5 | 高价值内容会引用原始材料，但口号、持仓偏见和首代/Ultra 混淆普遍"
+        },
+        {
+          "ticker": "NTNX",
+          "company": "Nutanix",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 5.0,
+          "text": "5/10，中等 | 多个线程包含版本、KB、协议、性能、订单和 POC 细节，且正反观点并存 | 匿名、自选择、无法确认组织规模/身份；不是代表性调查，不能直接外推留存率"
+        },
+        {
+          "ticker": "NOK",
+          "company": "诺基亚",
+          "category": "AI网络_光互联_连接器",
+          "score": 5.0,
+          "text": "5/10，中等 | 有少量能够校正口径并引用一手材料的高质量作者，但大量内容将 partner、call OI 和远期可选性过度外推"
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "DCI",
+          "company": "Donaldson Company",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 2.0,
+          "text": "2/10，低 | 少量内容可追溯到公司公告 | 缺乏原创研究、数据与反证，机器人转载占比高 | 高"
+        },
+        {
+          "ticker": "DIOD",
+          "company": "Diodes Incorporated",
+          "category": "配电_电源_功率器件",
+          "score": 2.0,
+          "text": "很低 | 2/10 | 缺少有原始材料和反证的长文；自动化摘要占主导 | 小样本可能遗漏封闭社区或付费通讯"
+        },
+        {
+          "ticker": "FTV",
+          "company": "Fortive Corporation",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 2.0,
+          "text": "很低 | 2/10 | 少数专业媒体有可核验问答分析。 | Stocktwits/Reddit/X 当前样本不足，自动转载多于独立论证。"
+        },
+        {
+          "ticker": "HTHIY",
+          "company": "Hitachi Ltd",
+          "category": "电力_发电_能源_储能",
+          "score": 2.0,
+          "text": "2/10，低 | 少数帖子准确链接公司公告 | 样本极小、自选择、匿名、缺乏原始分析和反证"
+        },
+        {
+          "ticker": "LFUS",
+          "company": "Littelfuse",
+          "category": "配电_电源_功率器件",
+          "score": 2.0,
+          "text": "很低 | 2/10 | 大多为自动搬运，原创和独立验证稀少 | 登录墙和私域社区可能遗漏部分讨论"
+        },
+        {
+          "ticker": "MYRG",
+          "company": "MYR Group",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 2.0,
+          "text": "低 | 2/10 | 可见内容主要为自动转发和机械信号，缺少原始材料、反证和实质互动"
+        },
+        {
+          "ticker": "NDSN",
+          "company": "Nordson",
+          "category": "半导体材料_化学品_基板",
+          "score": 2.0,
+          "text": "2/10，很低 | Stocktwits 数据不足，Reddit 只有少量评论和机器人帖 | 私域、付费社区及不可检索内容可能未覆盖"
+        },
+        {
+          "ticker": "ROG",
+          "company": "Rogers Corporation",
+          "category": "半导体材料_化学品_基板",
+          "score": 2.0,
+          "text": "很低 | 2 | 主要为自动转发，缺乏有数据、有反证的独立长文"
+        },
+        {
+          "ticker": "AXTI",
+          "company": "AXT Inc",
+          "category": "半导体材料_化学品_基板",
+          "score": 2.2,
+          "text": "低 | 3 | 原创核验少，持仓和价格驱动强；少数内容正确链接 SEC/Reuters"
+        },
+        {
+          "ticker": "DKILY",
+          "company": "Daikin Industries",
+          "category": "半导体材料_化学品_基板",
+          "score": 2.2,
+          "text": "低 | 2 | 主要是天气、行业地位和 AI 冷却联想，少有原始数据 | 公开搜索可能遗漏封闭社群和日文专业社区"
+        }
+      ]
+    },
+    "heat": {
+      "highest": [
+        {
+          "ticker": "IBM",
+          "company": "International Business Machines",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 9.3,
+          "text": "极高，事件后仍在升温/分化 | 历史极端单日反应、跨媒体和跨社区传播、同行外溢 | 若 7 月 22 日没有新增冲击，热度可能快速衰退；衰退不等于事实改善"
+        },
+        {
+          "ticker": "TSM",
+          "company": "台积电",
+          "category": "晶圆制造_前道设备",
+          "score": 9.0,
+          "text": "9/10 | 10＝传播最强 | AI、涨价、美国投资、财报与地缘均具传播性 | 重复转发造成虚假密度 | 平台算法和事件日会放大"
+        },
+        {
+          "ticker": "TSLA",
+          "company": "Tesla",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 9.0,
+          "text": "9/10，极高 | Robotaxi、FSD、机器人、Musk 和交付同时具备大众传播属性 | 热度可能在财报后短暂回落，但新事件供给充足"
+        },
+        {
+          "ticker": "SNDK",
+          "company": "SanDisk",
+          "category": "AI服务器_存储_EMS",
+          "score": 9.0,
+          "text": "极高 | 9/10 | 财报、卖方追调、7 月波动、Stocktwits Trending 2 | 未登录平台不给出可验证净情绪分"
+        },
+        {
+          "ticker": "SKHY",
+          "company": "SK hynix Inc",
+          "category": "AI服务器_存储_EMS",
+          "score": 9.0,
+          "text": "极高 | 9/10 | 美国上市、AI/HBM 标签、首周成交和期权 | 热度可能快速衰减，不代表方向"
+        },
+        {
+          "ticker": "PNR",
+          "company": "Pentair plc",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 9.0,
+          "text": "9/10 | 10=极热 | 高成交下跌、同业受牵连、连续评级动作和律所征集"
+        },
+        {
+          "ticker": "PENG",
+          "company": "Penguin Solutions",
+          "category": "AI服务器_存储_EMS",
+          "score": 9.0,
+          "text": "极高 | 9/10 | 单日大幅波动、卖方密集更新、Stocktwits 极端情绪和 Reddit 跨社区扩散"
+        },
+        {
+          "ticker": "ORCL",
+          "company": "Oracle Corporation",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 9.0,
+          "text": "很高 | 9/10 | RPO、融资、裁员、BBB- 均是强传播标签；跨财经、科技和反 AI 社区扩散 | 若短期无新根事件，热度可能在 8 月财报静默期回落"
+        },
+        {
+          "ticker": "NVDA",
+          "company": "NVIDIA",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 9.0,
+          "text": "很高，持续 | 9 | 公司、媒体、卖方和社区均高频；每个产品或政策节点都可跨平台放大"
+        },
+        {
+          "ticker": "MU",
+          "company": "Micron Technology 美光科技",
+          "category": "AI服务器_存储_EMS",
+          "score": 9.0,
+          "text": "9/10，极高 | 公司、卖方、媒体和多个社区同时高频传播；截至截止日由升温转为分化"
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "FLNC",
+          "company": "Fluence Energy",
+          "category": "电力_发电_能源_储能",
+          "score": 3.3,
+          "text": "中低；6 月峰值极高 | 当前 4；峰值 9 | 6 月 1 日极端热度已退，7 月尚未形成第二轮同等社区扩散"
+        },
+        {
+          "ticker": "SHECY",
+          "company": "Shin-Etsu Chemical 信越化学",
+          "category": "半导体材料_化学品_基板",
+          "score": 3.3,
+          "text": "卖方高、媒体中高、社区中低 | 评级共识强、主流媒体反复连接 AI/回购与行情；社区互动低 | Q1 后热度可能快速变化"
+        },
+        {
+          "ticker": "ATKR",
+          "company": "Atkore",
+          "category": "配电_电源_功率器件",
+          "score": 4.0,
+          "text": "中低 | 4/10 | 公司、卖方和财经媒体有持续覆盖；零售社区指标和实质讨论很弱"
+        },
+        {
+          "ticker": "DCI",
+          "company": "Donaldson Company",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 4.0,
+          "text": "4/10，低至中 | Q3 公告和卖方跟进形成短时峰值 | 财报后公开社区迅速降温、互动很低 | 中高"
+        },
+        {
+          "ticker": "FTV",
+          "company": "Fortive Corporation",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 4.0,
+          "text": "低至中 | 4/10 | 财报和品牌稿在专业媒体有连续覆盖。 | 零售社区无热度，财报后讨论快速衰减。"
+        },
+        {
+          "ticker": "PH",
+          "company": "Parker-Hannifin",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 4.0,
+          "text": "4/10，总体中低 | 财报和政治交易帖阶段性放大 | 公司经营零售讨论稀少，IR 新闻进入静默期 | 卖方热度明显高于社区，单一总分会掩盖分层"
+        },
+        {
+          "ticker": "ALLE",
+          "company": "Allegion plc",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 4.5,
+          "text": "低 | 3/10；10=极热 | Stocktwits 无有效分数、缺少 ALLE 专题社区长文 | 中 || 中高 | 6/10；10=极热 | Sense Pro 在 HomeKit/Matter 社区形成明显讨论和分化 | 中高"
+        },
+        {
+          "ticker": "AAON",
+          "company": "AAON",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 5.0,
+          "text": "中等，较 5 月高点降温 | 财报日传播和成交极强，之后硬信息减少 | Q2 可迅速重启传播"
+        },
+        {
+          "ticker": "APD",
+          "company": "Air Products and Chemicals",
+          "category": "半导体材料_化学品_基板",
+          "score": 5.0,
+          "text": "5/10，中等且事件集中 | 机构与主流媒体在 LCEC 事件上热度高，日常零售热度很低；预计财报期再次短暂升温"
+        },
+        {
+          "ticker": "ASGLY",
+          "company": "AGC Inc",
+          "category": "半导体材料_化学品_基板",
+          "score": 5.0,
+          "text": "中等、正在降温 | 6 月 2—3 日爆发后回撤，7 月议题转向 Q2 | Q2 前后可能短期再次升温"
+        }
+      ]
+    },
+    "long_crowding": {
+      "highest": [
+        {
+          "ticker": "STX",
+          "company": "Seagate Technology",
+          "category": "AI服务器_存储_EMS",
+          "score": 9.0,
+          "text": "9/10，很高 | 22 Buy/5 Hold/0 Sell、低且下降的 short interest、AI 超级周期话术 | 期权保护较多，说明并非无风险一致"
+        },
+        {
+          "ticker": "SNDK",
+          "company": "SanDisk",
+          "category": "AI服务器_存储_EMS",
+          "score": 9.0,
+          "text": "很高 | 9/10 | 卖方几乎单向上调，社区“去周期”叙事强 | 7 月回撤已削弱部分短期一致性"
+        },
+        {
+          "ticker": "CRWD",
+          "company": "CrowdStrike",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 9.0,
+          "text": "9/10，很高 | 多数卖方正面、主流 AI 控制平面叙事、三个月价格反应 | 财报后仍大幅回落显示内部脆弱性 | “拥挤”不等于方向会反转"
+        },
+        {
+          "ticker": "COHU",
+          "company": "Cohu Inc",
+          "category": "封测_检测_计量_光罩",
+          "score": 9.0,
+          "text": "卖方高 9/10；广泛社区中低 4/10 | 近期公开评级动作几乎全为正面；Investing.com 快照为 8 Buy/0 Hold/0 Sell；社区互动仍有限 | MarketBeat 的更广/更旧覆盖池仍含 Sell/Hold，聚合口径不同；社区检索不完全"
+        },
+        {
+          "ticker": "ICHR",
+          "company": "Ichor Holdings",
+          "category": "晶圆制造_前道设备",
+          "score": 8.5,
+          "text": "高 | 8.5 | 6/7 正向、无 Sell；AI/利润率叙事一致 [S19] | 一名 Hold、反向文章和高波动显示并非完全单边"
+        },
+        {
+          "ticker": "CRDO",
+          "company": "Credo Technology Group",
+          "category": "AI网络_光互联_连接器",
+          "score": 8.5,
+          "text": "高 | 8.5/10 | 17 个正面评级、0 个 Sell；空头比例下降 | 评级聚合可能滞后，机构实际持仓未知"
+        },
+        {
+          "ticker": "VST",
+          "company": "Vistra Corp",
+          "category": "电力_发电_能源_储能",
+          "score": 8.0,
+          "text": "8/10，高 | 19/20 卖方为正面评级，社区正面标签广泛 | 目标价跨度大、Q1 后反应弱 | 卖方完整报告不可全部取得"
+        },
+        {
+          "ticker": "VRT",
+          "company": "Vertiv",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 8.0,
+          "text": "高，8/10 | 卖方评级高度一致，社区常把生态参与和长期目标简化为确定性 | 价格反应并不单向，说明交易层仍有反方力量"
+        },
+        {
+          "ticker": "VICR",
+          "company": "Vicor Corporation",
+          "category": "配电_电源_功率器件",
+          "score": 8.0,
+          "text": "8/10，高 | 小规模卖方覆盖几乎一致 Buy；“不可替代／IP compounder”口号化 | 社区开始重视兑现条件；Stocktwits 快照非单边 | 拥挤可因一份高质量披露快速缓解或反转"
+        },
+        {
+          "ticker": "UCTT",
+          "company": "Ultra Clean Holdings",
+          "category": "晶圆制造_前道设备",
+          "score": 8.0,
+          "text": "8/10 | 高 | 正面卖方高度一致、AI/HBM 词汇重复、价格曾快速上行 | 7 月回撤已经释放部分拥挤"
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "ALLE",
+          "company": "Allegion plc",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 3.0,
+          "text": "低 | 3/10；10=极拥挤 | 卖方下调、金融社区低热度，正面叙事并不一致 | 中高"
+        },
+        {
+          "ticker": "ATKR",
+          "company": "Atkore",
+          "category": "配电_电源_功率器件",
+          "score": 3.0,
+          "text": "低至中 | 3/10 | 卖方仍维持中性类评级；社区没有单边热度；期权 call 倾向样本小"
+        },
+        {
+          "ticker": "CC",
+          "company": "The Chemours Company",
+          "category": "半导体材料_化学品_基板",
+          "score": 3.0,
+          "text": "程度类 | 低至中 | 3/10 | 股票社区参与低，卖方 Buy/Hold 接近，价格对 Q1 反应负面；AI 叙事尚小众 | 若 Q2 或客户合同触发跨平台传播，拥挤可快速上升"
+        },
+        {
+          "ticker": "DHR",
+          "company": "Danaher Corporation",
+          "category": "半导体材料_化学品_基板",
+          "score": 3.0,
+          "text": "3/10，低 | 卖方评级仍偏正面，但目标价下调、新增中性覆盖且社区不热 | OI 偏认购不能识别实际策略"
+        },
+        {
+          "ticker": "FTV",
+          "company": "Fortive Corporation",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 3.0,
+          "text": "低 | 3/10 | AI/数据中心叙事存在，但尚未成为大众主题。 | 卖方仍以 Hold/Neutral 为主，社区 N/A。"
+        },
+        {
+          "ticker": "PNR",
+          "company": "Pentair plc",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 3.0,
+          "text": "3/10 | 10=极度拥挤 | 正面共识已被打破；仍有机构保留正面观点，但不是单边市场"
+        },
+        {
+          "ticker": "AAON",
+          "company": "AAON",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 3.3,
+          "text": "卖方层中高；零售层中低 | 财报后卖方集中上调，主叙事高度一致 | 仅约 5 位分析师；零售专属讨论不多"
+        },
+        {
+          "ticker": "JBL",
+          "company": "Jabil Inc",
+          "category": "AI服务器_存储_EMS",
+          "score": 3.3,
+          "text": "卖方高、社区中低 | 10 买/3 持有/0 卖出及财报后集中目标价上修 | 评级样本和目标价来自二级汇总；价格回落已释放部分拥挤"
+        },
+        {
+          "ticker": "ADBE",
+          "company": "Adobe",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 4.0,
+          "text": "4/10 | 中低 | 抄底/大额看涨仓位在社区升温，但卖方总体没有形成一致正面；多方常依赖价格/倍数而非产品证据"
+        },
+        {
+          "ticker": "DCI",
+          "company": "Donaldson Company",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 4.0,
+          "text": "4/10，未见明显社交拥挤 | 纪录标题和质量型分红叙事容易形成正向框架 | 卖方仍为 Hold、社区低量、反证清晰 | 中"
+        }
+      ]
+    },
+    "short_crowding": {
+      "highest": [
+        {
+          "ticker": "WOLF",
+          "company": "Wolfspeed",
+          "category": "配电_电源_功率器件",
+          "score": 9.0,
+          "text": "9/10，表面极高 | 约 2,441.5 万股空头及供应商高流通占比估算 | 可转换证券对冲使方向纯度下降；约 3.9 天回补天数不代表必然挤压"
+        },
+        {
+          "ticker": "SMCI",
+          "company": "Super Micro Computer Inc",
+          "category": "AI服务器_存储_EMS",
+          "score": 8.0,
+          "text": "8/10，高 | 6 月底空头股数升至约 1.032 亿股、约占可比流通口径的 20.45% | 不同数据商分母不同；低 days to cover 限制“必然挤压”推断"
+        },
+        {
+          "ticker": "NBIS",
+          "company": "Nebius Group",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 8.0,
+          "text": "8/10，高 | 6 月末空头股数 6,101 万、三个月显著增加 | float 口径不同；部分可能为可转债对冲；借券费和回补天数不极端"
+        },
+        {
+          "ticker": "IREN",
+          "company": "IREN Limited",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 8.0,
+          "text": "高 | 8/10（10 为更拥挤） | 聚合 short float 22.4%、近月 put OI 较重 | days-to-cover 仅约 2.1，且部分可能是对冲"
+        },
+        {
+          "ticker": "CRWV",
+          "company": "CoreWeave",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 8.0,
+          "text": "高 | 8 | 6 月底空头股数约 8096 万股并显著上升；但 days-to-cover 低"
+        },
+        {
+          "ticker": "COHU",
+          "company": "Cohu Inc",
+          "category": "封测_检测_计量_光罩",
+          "score": 8.0,
+          "text": "高，8/10 | 804 万股、short/float 约 17.6%—21.2%、4 月以来增约 32.7% | 可转债套利和对冲占比未知，不能全部视为方向空头"
+        },
+        {
+          "ticker": "AMPX",
+          "company": "Amprius Technologies",
+          "category": "电力_发电_能源_储能",
+          "score": 8.0,
+          "text": "8/10，高 | 6 月底约 2,631 万股、约 19%流通股、3.21 天回补；较窗口前基线上升"
+        },
+        {
+          "ticker": "TE",
+          "company": "T1 Energy Inc",
+          "category": "电力_发电_能源_储能",
+          "score": 7.0,
+          "text": "中高 | 7/10 | 空头占流通盘约 21.9%，做空框架广泛传播；但 days-to-cover 较低且报告后多次快速反弹"
+        },
+        {
+          "ticker": "SMR",
+          "company": "NuScale Power",
+          "category": "电力_发电_能源_储能",
+          "score": 7.0,
+          "text": "中高 | 7/10 | short float 约 20%，数量在 6 月增加；但高成交使 days-to-cover 仅约 2 天"
+        },
+        {
+          "ticker": "PSIX",
+          "company": "Power Solutions International",
+          "category": "电力_发电_能源_储能",
+          "score": 7.0,
+          "text": "中高 | 7/10 | 6 月底空头股数较 4 月底高约 30%，控制股东与创始人持仓使可交易供给相对有限；但空头股数已停止加速"
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "ABBNY",
+          "company": "ABB Ltd",
+          "category": "配电_电源_功率器件",
+          "score": 1.0,
+          "text": "很低 | 1/10 | ABBNY 空头 14.64 万份、FINRA DTC 不高于 1 | 不覆盖 ABBN、掉期和其他衍生品"
+        },
+        {
+          "ticker": "HTHIY",
+          "company": "Hitachi Ltd",
+          "category": "电力_发电_能源_储能",
+          "score": 1.0,
+          "text": "1/10，未见证据 | ADR 短仓低且下降 | 仅为 ADR 和公开时点数据；不能排除主股、衍生品或未披露观点"
+        },
+        {
+          "ticker": "AJNMY",
+          "company": "味之素 Ajinomoto",
+          "category": "半导体材料_化学品_基板",
+          "score": 2.0,
+          "text": "低，2/10 | ADR short interest 规模/覆盖天数有限，未见有传播能力的系统性空头论证 | ADR 数据滞后且流动性薄，不能精确衡量全部空头"
+        },
+        {
+          "ticker": "AMZN",
+          "company": "Amazon",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 2.0,
+          "text": "2/10，低 | 6 月底短仓约占流通股 1%、回补天数低 | 不包括场外衍生品和所有相对价值仓位"
+        },
+        {
+          "ticker": "ANET",
+          "company": "Arista Networks",
+          "category": "AI网络_光互联_连接器",
+          "score": 2.0,
+          "text": "低 | 2/10 | 6 月末短仓约占流通股 1.77%，回补天数约 2.5 天"
+        },
+        {
+          "ticker": "APH",
+          "company": "Amphenol 安费诺",
+          "category": "AI网络_光互联_连接器",
+          "score": 2.0,
+          "text": "2/10 | 低 | 短仓 1.32%、1.6 天回补，不支持大规模空头共识"
+        },
+        {
+          "ticker": "ASMIY",
+          "company": "ASM International",
+          "category": "晶圆制造_前道设备",
+          "score": 2.0,
+          "text": "2/10，低 | 无 AFM 0.5% 以上披露大额净空仓；少数负面卖方论点有影响但非数量共识"
+        },
+        {
+          "ticker": "ASML",
+          "company": "ASML Holding NV",
+          "category": "晶圆制造_前道设备",
+          "score": 2.0,
+          "text": "低 | 2/10，10=最拥挤 | Nasdaq 短仓占比很低 | 不含 Euronext 与衍生品，不能证明没有宏观对冲"
+        },
+        {
+          "ticker": "ASMVY",
+          "company": "ASMPT",
+          "category": "封测_检测_计量_光罩",
+          "score": 2.0,
+          "text": "2 | 低 | ASMVY 半月 short interest 仅数千份；港股卖空成交不等于大规模未平仓空头"
+        },
+        {
+          "ticker": "ASX",
+          "company": "ASE Technology Holding",
+          "category": "封测_检测_计量_光罩",
+          "score": 2.0,
+          "text": "低 | 2/10 | 短仓虽快速增加，但仅 1.06% 流通股、回补 1.4 天"
+        }
+      ]
+    },
+    "disagreement": {
+      "highest": [
+        {
+          "ticker": "IBM",
+          "company": "International Business Machines",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 9.3,
+          "text": "极高 | 暂时错配、结构性挤出和 IBM 特有执行三种假说均有部分事实 | 连续季度订单和分部数据能够排除其中至少一种解释"
+        },
+        {
+          "ticker": "FLNC",
+          "company": "Fluence Energy",
+          "category": "电力_发电_能源_储能",
+          "score": 9.3,
+          "text": "极高 | 9 | 卖方 Buy/Hold/Sell 并存；两次巨量上冲后反复；多空都有事实锚点"
+        },
+        {
+          "ticker": "WOLF",
+          "company": "Wolfspeed",
+          "category": "配电_电源_功率器件",
+          "score": 9.0,
+          "text": "9/10，很高 | 同一组事实可被解释为 AI 商业拐点或主题包装；诉讼、融资结构也双向可讲 | 高分歧不自动提供方向，只意味着事件敏感度高"
+        },
+        {
+          "ticker": "WDC",
+          "company": "WesternDigital",
+          "category": "AI服务器_存储_EMS",
+          "score": 9.0,
+          "text": "极高 | 9/10 | 卖方目标和评级跨度、Fox 快速反转、强事实与弱价格反应并存 | 公开卖方原文有限，部分信息来自二级转述"
+        },
+        {
+          "ticker": "VECO",
+          "company": "Veeco Instruments",
+          "category": "晶圆制造_前道设备",
+          "score": 9.0,
+          "text": "9/10，极高 | 可靠订单事实与监管/换股/兑现风险同时强；社区即时对冲叙事 | 若 SAMR 或 Q2 给出决定性证据，分歧可能快速下降"
+        },
+        {
+          "ticker": "TSLA",
+          "company": "Tesla",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 9.0,
+          "text": "9/10，极高 | 同一事实常产生相反解释，且多空都有高传播账号和可引用材料 | 若公司提供统一运营分母，部分分歧可快速收敛"
+        },
+        {
+          "ticker": "TE",
+          "company": "T1 Energy Inc",
+          "category": "电力_发电_能源_储能",
+          "score": 9.0,
+          "text": "极高 | 9/10 | 相同的 Trina减持、政策与融资事实被双方解释为完全相反方向"
+        },
+        {
+          "ticker": "SNDK",
+          "company": "SanDisk",
+          "category": "AI服务器_存储_EMS",
+          "score": 9.0,
+          "text": "极高 | 9/10 | 强事实、强卖方叙事与高 IV/put 比例、峰值周期反证并存 | 社区观点噪音大，不能把每条归因视为独立分歧"
+        },
+        {
+          "ticker": "SMR",
+          "company": "NuScale Power",
+          "category": "电力_发电_能源_储能",
+          "score": 9.0,
+          "text": "极高 | 9/10 | 卖方目标区间 6—25 美元、零售情绪数据互相冲突、罗马尼亚同一事件可被截取成相反标题"
+        },
+        {
+          "ticker": "SMCI",
+          "company": "Super Micro Computer Inc",
+          "category": "AI服务器_存储_EMS",
+          "score": 9.0,
+          "text": "9/10，极高 | 需求规模、毛利率恢复与审计、调查、融资、现金流形成同等强度的对立叙事 | 新财报可能短期压缩分歧，也可能制造新的拆分解读"
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "LIN",
+          "company": "Linde plc",
+          "category": "半导体材料_化学品_基板",
+          "score": 5.0,
+          "text": "5/10，中等 | 主流卖方一致偏正面；Q1 事实质量高 | space/helium 的兑现边界、欧洲和治理风险带来局部分化"
+        },
+        {
+          "ticker": "NDSN",
+          "company": "Nordson",
+          "category": "半导体材料_化学品_基板",
+          "score": 5.0,
+          "text": "5/10，中等 | 正面财务事实较强；持续性、AI 量化和利润率存在反方论点 | 目前缺少高传播做空报告，分歧主要隐含于预期与仓位"
+        },
+        {
+          "ticker": "SIMO",
+          "company": "Silicon Motion Technology",
+          "category": "AI服务器_存储_EMS",
+          "score": 5.0,
+          "text": "中等 | 5/10 | 机构方向一致；技术社区、消费者、库存和客户证据形成实质分歧"
+        },
+        {
+          "ticker": "ALLE",
+          "company": "Allegion plc",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 6.0,
+          "text": "中高 | 6/10；10=高度分歧 | 公司强调订单/规格/恢复，市场关注销量/利润率/执行；产品社区也正负并存 | 高"
+        },
+        {
+          "ticker": "APH",
+          "company": "Amphenol 安费诺",
+          "category": "AI网络_光互联_连接器",
+          "score": 6.0,
+          "text": "6/10 | 中高 | 当前需求强的争议小；持续性、架构、份额、整合和预期门槛争议显著"
+        },
+        {
+          "ticker": "ET",
+          "company": "Energy Transfer LP",
+          "category": "电力_发电_能源_储能",
+          "score": 6.0,
+          "text": "6/10，中等偏高 | 多头有可靠合同/指引，反方有一次性/capex/法律事实 | 纯粹否定公司经营的证据较弱，分歧主要在兑现质量而非事实存在 | 中高"
+        },
+        {
+          "ticker": "KEYS",
+          "company": "Keysight Technologies",
+          "category": "封测_检测_计量_光罩",
+          "score": 6.0,
+          "text": "中高 | 6/10 | 强事实与高门槛并存；6 月快速回撤；Truist 保留 Hold | 缺少有影响力的公司特定做空报告或系统性负面社区"
+        },
+        {
+          "ticker": "MICLF",
+          "company": "Mycronic AB",
+          "category": "封测_检测_计量_光罩",
+          "score": 6.0,
+          "text": "中等 | 6/10 | 强集团结果与弱 PCB Assembly、客户周期、正常化利润率并存 | 正面事实暂时压过反向传播，分歧可能尚未充分显性化"
+        },
+        {
+          "ticker": "RYCEY",
+          "company": "Rolls-Royce Holdings",
+          "category": "电力_发电_能源_储能",
+          "score": 6.0,
+          "text": "6/10 | 中高 | SMR FOAK/成本、历史发动机问题、预期门槛与地缘风险都有实质反方 | 近期可验证事实总体偏正面，使反方暂缺窗口内强根事件"
+        },
+        {
+          "ticker": "TT",
+          "company": "Trane Technologies",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 6.0,
+          "text": "6/10，中高 | 10 = 多空均有高质量证据和强传播 | 需求真实性较少争议，份额、积压质量、利润率和预期门槛分歧明显；负面传播力仍弱于正面"
+        }
+      ]
+    },
+    "reviewability": {
+      "highest": [
+        {
+          "ticker": "WOLF",
+          "company": "Wolfspeed",
+          "category": "配电_电源_功率器件",
+          "score": 9.0,
+          "text": "9/10，很高 | Q4 指引、AI 披露、毛利、现金、客户、8 月 28 日法院期限、正式资金文件均可验证 | 公司可能继续使用定性描述；诉讼和客户认证时间可能超出三个月"
+        },
+        {
+          "ticker": "WDC",
+          "company": "WesternDigital",
+          "category": "AI服务器_存储_EMS",
+          "score": 9.0,
+          "text": "很高 | 9/10 | 7 月 28 日、8 月 5 日、10-K、40TB/HAMR 均有明确窗口和条件 | 产品客户名和 LTA 条款可能继续不披露"
+        },
+        {
+          "ticker": "VST",
+          "company": "Vistra Corp",
+          "category": "电力_发电_能源_储能",
+          "score": 9.0,
+          "text": "9/10，很高 | Q2 日期、FERC docket、PJM 文件、EPA Phase 2、半月空头数据均有明确节点 | 新 PPA 和 45U 时点不确定 | 需保留本版本，不能事后覆盖"
+        },
+        {
+          "ticker": "VSH",
+          "company": "Vishay Intertechnology",
+          "category": "配电_电源_功率器件",
+          "score": 9.0,
+          "text": "高 | 9/10 | 8 月 5 日、10 月 3 日、短仓结算日、扩产里程碑和监管复审都有明确窗口与验证字段"
+        },
+        {
+          "ticker": "VRT",
+          "company": "Vertiv",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 9.0,
+          "text": "高，9/10 | 7 月 29 日、客户财报、EMEA H2、库存/现金、技术里程碑均有明确窗口 | 公司订单披露政策限制部分直接验证"
+        },
+        {
+          "ticker": "VISN",
+          "company": "Vistance Networks",
+          "category": "AI网络_光互联_连接器",
+          "score": 9.0,
+          "text": "很高，9/10 | 60 天分配窗口、下一季财报、客户财报、统一节点和行业活动均有日期/条件 | 公司尚未确认 Q2 具体披露日，客户公告数量不可精确预测"
+        },
+        {
+          "ticker": "VICR",
+          "company": "Vicor Corporation",
+          "category": "配电_电源_功率器件",
+          "score": 9.0,
+          "text": "9/10，很高 | Q2 日期、1.42 亿美元指引、产能窗口、H2 客户转换和 USITC 案号均明确 | 部分合同和客户保密 | 可按日期和披露字段逐项复盘"
+        },
+        {
+          "ticker": "VIAV",
+          "company": "VIAVI Solutions",
+          "category": "AI网络_光互联_连接器",
+          "score": 9.0,
+          "text": "9/10 | 财报日期、指引区间、活动日历、短仓和产品采用条件均明确 | 客户/订单披露时间不可控；卖方原文可得性有限"
+        },
+        {
+          "ticker": "VECO",
+          "company": "Veeco Instruments",
+          "category": "晶圆制造_前道设备",
+          "score": 9.0,
+          "text": "9/10，高 | Q2、Q3 出货、9 月 30 日、短仓半月数据、SEMICON West 均有日期 | 客户匿名和监管非公开程序使部分判断难以完全验证"
+        },
+        {
+          "ticker": "UMC",
+          "company": "United Microelectronics 联华电子",
+          "category": "晶圆制造_前道设备",
+          "score": 9.0,
+          "text": "很高 | 9 | Q2 业绩和三次月营收均有明确日期；12nm/22nm/SiPh 有具体条件 | 非排期技术公告时间不确定"
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "AAON",
+          "company": "AAON",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 8.0,
+          "text": "高 | Q2、积压、指引、毛利、Memphis、案卷和 short interest 均有日期或验证条件 | 新客户与项目归属可能仍缺乏公开细节"
+        },
+        {
+          "ticker": "ARM",
+          "company": "Arm Holdings",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 8.0,
+          "text": "高 | 7 月 29 日、活动日期、9 月 30 日收购目标、Q4 法律窗口均明确 | FTC 和 Meta OCP 更新缺确切日期"
+        },
+        {
+          "ticker": "ASGLY",
+          "company": "AGC Inc",
+          "category": "半导体材料_化学品_基板",
+          "score": 8.0,
+          "text": "高 | 8 月 4 日、明确分部指标、设施计划、ECHA 进度均有日期和条件 | 部分产品缺少公司披露的季度拆分"
+        },
+        {
+          "ticker": "BABA",
+          "company": "Alibaba 阿里巴巴",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 8.0,
+          "text": "高（8/10） | 财报、Apple 上线、ARR、H200 交付、政策文本和诉讼节点均有明确验证条件；部分政策时间仍不可预测"
+        },
+        {
+          "ticker": "DKILY",
+          "company": "Daikin Industries",
+          "category": "半导体材料_化学品_基板",
+          "score": 8.0,
+          "text": "高 | 9 | 8 月 4 日确定；PoC 时段、商业化目标、诉讼案卷和 FCSR 机制均可跟踪 | 商业合同与部分卖方原文不可得"
+        },
+        {
+          "ticker": "DOV",
+          "company": "Dover Corporation",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 8.0,
+          "text": "高 | 7 月 23 日、订单/book-to-bill、指引、AI 拆分、股息和 short interest 都有明确日期与条件 | 若公司继续只提供宽泛口径，部分叙事仍难量化"
+        },
+        {
+          "ticker": "ETN",
+          "company": "Eaton Corporation",
+          "category": "配电_电源_功率器件",
+          "score": 8.0,
+          "text": "高 | 7 月 31 日、SEC 字段、Dana 文件、订单/利润率/债务均有明确验证项 | 社区传播强度和期权动机仍难完全归因"
+        },
+        {
+          "ticker": "FLNC",
+          "company": "Fluence Energy",
+          "category": "电力_发电_能源_储能",
+          "score": 8.0,
+          "text": "高 | 9 | 首单、12 GWh pipeline、指引、流动性、Form 4、SEC/法院均有明确验证点"
+        },
+        {
+          "ticker": "IBM",
+          "company": "International Business Machines",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 8.0,
+          "text": "高 | 7 月 22 日、7 月 24 日、9 月 23 日和 10 月中旬均有明确验证窗口 | 若公司只用定性语言、不披露订单桥接，可复盘性会下降"
+        },
+        {
+          "ticker": "JBL",
+          "company": "Jabil Inc",
+          "category": "AI服务器_存储_EMS",
+          "score": 8.0,
+          "text": "高 | 9 月业绩/正式指引、库存、客户、产能、回购和 Adani 均有明确验证条件 | 部分客户身份和合同条款可能继续保密"
+        }
+      ]
+    },
+    "event_count": {
+      "highest": [
+        {
+          "ticker": "NBIS",
+          "company": "Nebius Group",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 19,
+          "text": ""
+        },
+        {
+          "ticker": "META",
+          "company": "Meta Platforms",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 18,
+          "text": ""
+        },
+        {
+          "ticker": "RKLB",
+          "company": "Rocket Lab",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 16,
+          "text": ""
+        },
+        {
+          "ticker": "GFS",
+          "company": "GlobalFoundries",
+          "category": "晶圆制造_前道设备",
+          "score": 16,
+          "text": ""
+        },
+        {
+          "ticker": "ASML",
+          "company": "ASML Holding NV",
+          "category": "晶圆制造_前道设备",
+          "score": 16,
+          "text": ""
+        },
+        {
+          "ticker": "AMZN",
+          "company": "Amazon",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 16,
+          "text": ""
+        },
+        {
+          "ticker": "TSLA",
+          "company": "Tesla",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 15,
+          "text": ""
+        },
+        {
+          "ticker": "OKLO",
+          "company": "Oklo Inc",
+          "category": "电力_发电_能源_储能",
+          "score": 15,
+          "text": ""
+        },
+        {
+          "ticker": "CRWV",
+          "company": "CoreWeave",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 15,
+          "text": ""
+        },
+        {
+          "ticker": "AMD",
+          "company": "Advanced Micro Devices",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 15,
+          "text": ""
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "DCI",
+          "company": "Donaldson Company",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 4,
+          "text": ""
+        },
+        {
+          "ticker": "CC",
+          "company": "The Chemours Company",
+          "category": "半导体材料_化学品_基板",
+          "score": 5,
+          "text": ""
+        },
+        {
+          "ticker": "DHR",
+          "company": "Danaher Corporation",
+          "category": "半导体材料_化学品_基板",
+          "score": 5,
+          "text": ""
+        },
+        {
+          "ticker": "DSCSY",
+          "company": "DISCO",
+          "category": "晶圆制造_前道设备",
+          "score": 5,
+          "text": ""
+        },
+        {
+          "ticker": "ENS",
+          "company": "EnerSys",
+          "category": "电力_发电_能源_储能",
+          "score": 5,
+          "text": ""
+        },
+        {
+          "ticker": "IESC",
+          "company": "IES Holdings",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 5,
+          "text": ""
+        },
+        {
+          "ticker": "NVMI",
+          "company": "Nova Ltd",
+          "category": "晶圆制造_前道设备",
+          "score": 5,
+          "text": ""
+        },
+        {
+          "ticker": "ONTO",
+          "company": "Onto Innovation",
+          "category": "封测_检测_计量_光罩",
+          "score": 5,
+          "text": ""
+        },
+        {
+          "ticker": "PH",
+          "company": "Parker-Hannifin",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 5,
+          "text": ""
+        },
+        {
+          "ticker": "SANM",
+          "company": "Sanmina Corporation",
+          "category": "AI服务器_存储_EMS",
+          "score": 5,
+          "text": ""
+        }
+      ]
+    },
+    "community_count": {
+      "highest": [
+        {
+          "ticker": "NBIS",
+          "company": "Nebius Group",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 10,
+          "text": ""
+        },
+        {
+          "ticker": "MSFT",
+          "company": "微软",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 10,
+          "text": ""
+        },
+        {
+          "ticker": "MRVL",
+          "company": "Marvell Technology",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 10,
+          "text": ""
+        },
+        {
+          "ticker": "CIEN",
+          "company": "Ciena Corporation",
+          "category": "AI网络_光互联_连接器",
+          "score": 10,
+          "text": ""
+        },
+        {
+          "ticker": "WOLF",
+          "company": "Wolfspeed",
+          "category": "配电_电源_功率器件",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "TSLA",
+          "company": "Tesla",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "TE",
+          "company": "T1 Energy Inc",
+          "category": "电力_发电_能源_储能",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "POET",
+          "company": "POET Technologies",
+          "category": "AI网络_光互联_连接器",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "ORCL",
+          "company": "Oracle Corporation",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "NVTS",
+          "company": "Navitas Semiconductor",
+          "category": "配电_电源_功率器件",
+          "score": 9,
+          "text": ""
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "FLNC",
+          "company": "Fluence Energy",
+          "category": "电力_发电_能源_储能",
+          "score": 0,
+          "text": ""
+        },
+        {
+          "ticker": "HOCPY",
+          "company": "HOYA Corporation",
+          "category": "半导体材料_化学品_基板",
+          "score": 0,
+          "text": ""
+        },
+        {
+          "ticker": "KEYS",
+          "company": "Keysight Technologies",
+          "category": "封测_检测_计量_光罩",
+          "score": 0,
+          "text": ""
+        },
+        {
+          "ticker": "LWLG",
+          "company": "Lightwave Logic",
+          "category": "AI网络_光互联_连接器",
+          "score": 0,
+          "text": ""
+        },
+        {
+          "ticker": "TDY",
+          "company": "Teledyne Technologies",
+          "category": "封测_检测_计量_光罩",
+          "score": 0,
+          "text": ""
+        },
+        {
+          "ticker": "VISN",
+          "company": "Vistance Networks",
+          "category": "AI网络_光互联_连接器",
+          "score": 0,
+          "text": ""
+        },
+        {
+          "ticker": "ASMVY",
+          "company": "ASMPT",
+          "category": "封测_检测_计量_光罩",
+          "score": 3,
+          "text": ""
+        },
+        {
+          "ticker": "ECL",
+          "company": "Ecolab",
+          "category": "半导体材料_化学品_基板",
+          "score": 3,
+          "text": ""
+        },
+        {
+          "ticker": "MICLF",
+          "company": "Mycronic AB",
+          "category": "封测_检测_计量_光罩",
+          "score": 3,
+          "text": ""
+        },
+        {
+          "ticker": "MYRG",
+          "company": "MYR Group",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 3,
+          "text": ""
+        }
+      ]
+    },
+    "future_catalyst_count": {
+      "highest": [
+        {
+          "ticker": "NVT",
+          "company": "nVent Electric",
+          "category": "配电_电源_功率器件",
+          "score": 16,
+          "text": ""
+        },
+        {
+          "ticker": "SNDK",
+          "company": "SanDisk",
+          "category": "AI服务器_存储_EMS",
+          "score": 15,
+          "text": ""
+        },
+        {
+          "ticker": "FN",
+          "company": "Fabrinet",
+          "category": "AI服务器_存储_EMS",
+          "score": 15,
+          "text": ""
+        },
+        {
+          "ticker": "ENPH",
+          "company": "Enphase Energy",
+          "category": "电力_发电_能源_储能",
+          "score": 15,
+          "text": ""
+        },
+        {
+          "ticker": "AEIS",
+          "company": "Advanced Energy Industries",
+          "category": "晶圆制造_前道设备",
+          "score": 15,
+          "text": ""
+        },
+        {
+          "ticker": "TDY",
+          "company": "Teledyne Technologies",
+          "category": "封测_检测_计量_光罩",
+          "score": 14,
+          "text": ""
+        },
+        {
+          "ticker": "RYCEY",
+          "company": "Rolls-Royce Holdings",
+          "category": "电力_发电_能源_储能",
+          "score": 14,
+          "text": ""
+        },
+        {
+          "ticker": "MXL",
+          "company": "MaxLinear",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 14,
+          "text": ""
+        },
+        {
+          "ticker": "MSFT",
+          "company": "微软",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 14,
+          "text": ""
+        },
+        {
+          "ticker": "MRVL",
+          "company": "Marvell Technology",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 14,
+          "text": ""
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "STX",
+          "company": "Seagate Technology",
+          "category": "AI服务器_存储_EMS",
+          "score": 7,
+          "text": ""
+        },
+        {
+          "ticker": "ADI",
+          "company": "Analog Devices",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 8,
+          "text": ""
+        },
+        {
+          "ticker": "CDNS",
+          "company": "Cadence Design Systems",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 8,
+          "text": ""
+        },
+        {
+          "ticker": "ANET",
+          "company": "Arista Networks",
+          "category": "AI网络_光互联_连接器",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "ASGLY",
+          "company": "AGC Inc",
+          "category": "半导体材料_化学品_基板",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "AVGO",
+          "company": "Broadcom",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "CRWD",
+          "company": "CrowdStrike",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "DSCSY",
+          "company": "DISCO",
+          "category": "晶圆制造_前道设备",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "ENS",
+          "company": "EnerSys",
+          "category": "电力_发电_能源_储能",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "ETN",
+          "company": "Eaton Corporation",
+          "category": "配电_电源_功率器件",
+          "score": 9,
+          "text": ""
+        }
+      ]
+    },
+    "tracking_count": {
+      "highest": [
+        {
+          "ticker": "MRVL",
+          "company": "Marvell Technology",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 20,
+          "text": ""
+        },
+        {
+          "ticker": "MXL",
+          "company": "MaxLinear",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 17,
+          "text": ""
+        },
+        {
+          "ticker": "FN",
+          "company": "Fabrinet",
+          "category": "AI服务器_存储_EMS",
+          "score": 17,
+          "text": ""
+        },
+        {
+          "ticker": "ASX",
+          "company": "ASE Technology Holding",
+          "category": "封测_检测_计量_光罩",
+          "score": 17,
+          "text": ""
+        },
+        {
+          "ticker": "SMTC",
+          "company": "Semtech Corporation",
+          "category": "AI网络_光互联_连接器",
+          "score": 16,
+          "text": ""
+        },
+        {
+          "ticker": "MSFT",
+          "company": "微软",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 16,
+          "text": ""
+        },
+        {
+          "ticker": "BELFB",
+          "company": "Bel Fuse Inc",
+          "category": "AI网络_光互联_连接器",
+          "score": 16,
+          "text": ""
+        },
+        {
+          "ticker": "STX",
+          "company": "Seagate Technology",
+          "category": "AI服务器_存储_EMS",
+          "score": 15,
+          "text": ""
+        },
+        {
+          "ticker": "ST",
+          "company": "Sensata Technologies",
+          "category": "配电_电源_功率器件",
+          "score": 15,
+          "text": ""
+        },
+        {
+          "ticker": "MTSI",
+          "company": "MACOM Technology Solutions",
+          "category": "AI网络_光互联_连接器",
+          "score": 15,
+          "text": ""
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "FTV",
+          "company": "Fortive Corporation",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 8,
+          "text": ""
+        },
+        {
+          "ticker": "HOCPY",
+          "company": "HOYA Corporation",
+          "category": "半导体材料_化学品_基板",
+          "score": 8,
+          "text": ""
+        },
+        {
+          "ticker": "ONTO",
+          "company": "Onto Innovation",
+          "category": "封测_检测_计量_光罩",
+          "score": 8,
+          "text": ""
+        },
+        {
+          "ticker": "ADI",
+          "company": "Analog Devices",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "AVGO",
+          "company": "Broadcom",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "BE",
+          "company": "Bloom Energy",
+          "category": "电力_发电_能源_储能",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "DKILY",
+          "company": "Daikin Industries",
+          "category": "半导体材料_化学品_基板",
+          "score": 9,
+          "text": ""
+        },
+        {
+          "ticker": "ABBNY",
+          "company": "ABB Ltd",
+          "category": "配电_电源_功率器件",
+          "score": 10,
+          "text": ""
+        },
+        {
+          "ticker": "ACLS",
+          "company": "Axcelis Technologies",
+          "category": "晶圆制造_前道设备",
+          "score": 10,
+          "text": ""
+        },
+        {
+          "ticker": "AMKR",
+          "company": "Amkor Technology",
+          "category": "封测_检测_计量_光罩",
+          "score": 10,
+          "text": ""
+        }
+      ]
+    },
+    "characters": {
+      "highest": [
+        {
+          "ticker": "IREN",
+          "company": "IREN Limited",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 42278,
+          "text": ""
+        },
+        {
+          "ticker": "GOOGL",
+          "company": "Alphabet Inc",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 41466,
+          "text": ""
+        },
+        {
+          "ticker": "MSFT",
+          "company": "微软",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 40727,
+          "text": ""
+        },
+        {
+          "ticker": "MRVL",
+          "company": "Marvell Technology",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 39934,
+          "text": ""
+        },
+        {
+          "ticker": "APLD",
+          "company": "Applied Digital",
+          "category": "云算力_IDC_AI软件平台",
+          "score": 39834,
+          "text": ""
+        },
+        {
+          "ticker": "ENPH",
+          "company": "Enphase Energy",
+          "category": "电力_发电_能源_储能",
+          "score": 39077,
+          "text": ""
+        },
+        {
+          "ticker": "SNDK",
+          "company": "SanDisk",
+          "category": "AI服务器_存储_EMS",
+          "score": 38032,
+          "text": ""
+        },
+        {
+          "ticker": "TSLA",
+          "company": "Tesla",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 38022,
+          "text": ""
+        },
+        {
+          "ticker": "CEG",
+          "company": "Constellation Energy",
+          "category": "电力_发电_能源_储能",
+          "score": 37234,
+          "text": ""
+        },
+        {
+          "ticker": "RYCEY",
+          "company": "Rolls-Royce Holdings",
+          "category": "电力_发电_能源_储能",
+          "score": 37116,
+          "text": ""
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "DOV",
+          "company": "Dover Corporation",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 22038,
+          "text": ""
+        },
+        {
+          "ticker": "CBRS",
+          "company": "Cerebras Systems Inc",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 23566,
+          "text": ""
+        },
+        {
+          "ticker": "NVMI",
+          "company": "Nova Ltd",
+          "category": "晶圆制造_前道设备",
+          "score": 23875,
+          "text": ""
+        },
+        {
+          "ticker": "ROG",
+          "company": "Rogers Corporation",
+          "category": "半导体材料_化学品_基板",
+          "score": 24575,
+          "text": ""
+        },
+        {
+          "ticker": "ATKR",
+          "company": "Atkore",
+          "category": "配电_电源_功率器件",
+          "score": 24677,
+          "text": ""
+        },
+        {
+          "ticker": "SHECY",
+          "company": "Shin-Etsu Chemical 信越化学",
+          "category": "半导体材料_化学品_基板",
+          "score": 24692,
+          "text": ""
+        },
+        {
+          "ticker": "ASMIY",
+          "company": "ASM International",
+          "category": "晶圆制造_前道设备",
+          "score": 24746,
+          "text": ""
+        },
+        {
+          "ticker": "ADI",
+          "company": "Analog Devices",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 24806,
+          "text": ""
+        },
+        {
+          "ticker": "MCHP",
+          "company": "Microchip Technology",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 25029,
+          "text": ""
+        },
+        {
+          "ticker": "ANET",
+          "company": "Arista Networks",
+          "category": "AI网络_光互联_连接器",
+          "score": 25100,
+          "text": ""
+        }
+      ]
+    },
+    "url_count": {
+      "highest": [
+        {
+          "ticker": "IFNNY",
+          "company": "Infineon Technologies AG 英飞凌科技",
+          "category": "配电_电源_功率器件",
+          "score": 94,
+          "text": ""
+        },
+        {
+          "ticker": "SOMMY",
+          "company": "住友化学 Sumitomo Chemical",
+          "category": "半导体材料_化学品_基板",
+          "score": 82,
+          "text": ""
+        },
+        {
+          "ticker": "VRT",
+          "company": "Vertiv",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 79,
+          "text": ""
+        },
+        {
+          "ticker": "ATEYY",
+          "company": "Advantest",
+          "category": "封测_检测_计量_光罩",
+          "score": 78,
+          "text": ""
+        },
+        {
+          "ticker": "CSCO",
+          "company": "Cisco Systems",
+          "category": "AI网络_光互联_连接器",
+          "score": 77,
+          "text": ""
+        },
+        {
+          "ticker": "DKILY",
+          "company": "Daikin Industries",
+          "category": "半导体材料_化学品_基板",
+          "score": 75,
+          "text": ""
+        },
+        {
+          "ticker": "ASML",
+          "company": "ASML Holding NV",
+          "category": "晶圆制造_前道设备",
+          "score": 75,
+          "text": ""
+        },
+        {
+          "ticker": "AMPX",
+          "company": "Amprius Technologies",
+          "category": "电力_发电_能源_储能",
+          "score": 75,
+          "text": ""
+        },
+        {
+          "ticker": "QCOM",
+          "company": "Qualcomm",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 74,
+          "text": ""
+        },
+        {
+          "ticker": "AXTI",
+          "company": "AXT Inc",
+          "category": "半导体材料_化学品_基板",
+          "score": 74,
+          "text": ""
+        }
+      ],
+      "lowest": [
+        {
+          "ticker": "MCHP",
+          "company": "Microchip Technology",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 22,
+          "text": ""
+        },
+        {
+          "ticker": "PSIX",
+          "company": "Power Solutions International",
+          "category": "电力_发电_能源_储能",
+          "score": 25,
+          "text": ""
+        },
+        {
+          "ticker": "DOV",
+          "company": "Dover Corporation",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 26,
+          "text": ""
+        },
+        {
+          "ticker": "NVMI",
+          "company": "Nova Ltd",
+          "category": "晶圆制造_前道设备",
+          "score": 26,
+          "text": ""
+        },
+        {
+          "ticker": "BELFB",
+          "company": "Bel Fuse Inc",
+          "category": "AI网络_光互联_连接器",
+          "score": 27,
+          "text": ""
+        },
+        {
+          "ticker": "SNPS",
+          "company": "Synopsys",
+          "category": "AI计算芯片_EDA_IP_custom_ASIC",
+          "score": 27,
+          "text": ""
+        },
+        {
+          "ticker": "TDY",
+          "company": "Teledyne Technologies",
+          "category": "封测_检测_计量_光罩",
+          "score": 27,
+          "text": ""
+        },
+        {
+          "ticker": "ANET",
+          "company": "Arista Networks",
+          "category": "AI网络_光互联_连接器",
+          "score": 28,
+          "text": ""
+        },
+        {
+          "ticker": "FORM",
+          "company": "FormFactor",
+          "category": "封测_检测_计量_光罩",
+          "score": 30,
+          "text": ""
+        },
+        {
+          "ticker": "FTV",
+          "company": "Fortive Corporation",
+          "category": "机电_冷却_工程_水处理_边缘工业AI",
+          "score": 30,
+          "text": ""
+        }
+      ]
+    }
+  },
+  "flagged_files": {
+    "numeric_composite": [],
+    "trade_advice": [],
+    "price_forecast": [],
+    "missing_root_event": [],
+    "missing_boundary": [],
+    "missing_version_freeze": []
+  }
+}

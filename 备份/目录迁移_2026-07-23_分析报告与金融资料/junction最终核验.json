@@ -1,0 +1,35 @@
+{
+  "verifiedAt": "2026-07-23T21:38:46.8764220-07:00",
+  "physicalRoots": [
+    {
+      "path": "D:\\drive\\Investment\\分析报告",
+      "isReparse": false
+    },
+    {
+      "path": "D:\\drive\\Investment\\金融资料",
+      "isReparse": false
+    }
+  ],
+  "compatibilityLinks": [
+    {
+      "path": "D:\\drive\\Investment\\基本面\\分析报告",
+      "target": "D:\\drive\\Investment\\分析报告",
+      "isReparse": true,
+      "isHidden": true,
+      "isSystem": true,
+      "targetCorrect": true,
+      "targetExists": true
+    },
+    {
+      "path": "D:\\drive\\Investment\\基本面\\日度资料",
+      "target": "D:\\drive\\Investment\\金融资料",
+      "isReparse": true,
+      "isHidden": true,
+      "isSystem": true,
+      "targetCorrect": true,
+      "targetExists": true
+    }
+  ],
+  "internalJunctionCount": 24,
+  "invalidInternalJunctions": []
+}

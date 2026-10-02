@@ -1,0 +1,158 @@
+# 公司收入传导与价值传导评估：Littelfuse（LFUS）
+
+报告日期：2026-06-12（America/Los_Angeles）  
+主口径：NTM，即从 2026-06-12 起未来 12 个月，主要覆盖 2026Q2-2027Q1。  
+资料边界：使用 `公司调研/` 与 `行业调研/`，并补充 Littelfuse 官方 IR、SEC、产品公告和 Investor Day 材料；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较。  
+货币单位：美元。表内区间为经营估算；无法从收入表、订单、客户项目或公司披露可靠拆分时，标注“无法可靠量化”。  
+重要限制：本文只评估收入、利润、现金流和经营质量传导，不给投资评级，不判断股价区间，不做估值倍数判断，不把金融市场价格作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM。LFUS 的 NTM 主线不是 800VDC 在 2026 年全面放量，而是 2026Q2 指引、2026Q1 run-rate、Electronics 保护件恢复、Industrial 中 Basler 并表和 grid/data center 需求、以及 Transportation 稳定现金流。Investor Day 的 2-4x data center content uplift、25%-30%+ data center revenue CAGR、800VDC、solid-state protection 和 1MW rack 只作为乐观、极度乐观或远期期权校准。
+- 当前收入基准、指引和 run-rate：2026Q1 收入 `$657M`，同比 `+19%`，有机 `+9%`；GAAP operating margin `15.4%`，adjusted EBITDA margin `22.9%`，FCF `$66M`。2026Q2 指引收入 `$690-710M`，约 `+14%` 同比，管理层称 strong backlog、customer momentum 和 Basler acquisition contribution 支撑。FY2025 收入 `$2.386B`，adjusted EBITDA margin `20.9%`。以 Q2 指引中值年化，当前收入预期锚约 `$2.8B`。
+- 重要产品/业务线：1）Electronics broad protection/passives/protection semiconductor；2）Industrial high-power fuses、UPS/BESS/PDU protection 和 Basler electrical control/protection；3）Transportation fuses、sensors、switches；4）48V/54V AI rack board-level protection，包括 NANO2 SMD 708 Series；5）TVS/ESD/GDT/MOV/SIDACtor、telemetry/sensing/switching；6）power semiconductor、SiC/thyristor/solid-state protection 和 800VDC/HVDC 远期期权。
+- NTM 公司收入四情景：悲观 `$2.58-2.70B`；基准 `$2.78-2.95B`；乐观 `$3.05-3.25B`；极度乐观 `$3.30-3.55B`。相对当前预期，基准代表 Q2 指引和 Basler 年化正常兑现；乐观需要 Electronics 与 Industrial 同时超预期，且 AI/DC 相关保护件形成可见订单；极度乐观需要 data center protection、Basler cross-sell、传统汽车/工业不拖累、800VDC early adoption 同时成立。
+- 利润或 EBITDA 四情景：悲观 gross margin `36-38%`、operating margin `12-14%`、adjusted EBITDA `$500-580M`；基准 gross margin `38.5-40.5%`、operating margin `15-17.5%`、adjusted EBITDA `$625-700M`；乐观 gross margin `40.5-42.5%`、operating margin `18-20.5%`、adjusted EBITDA `$740-840M`；极度乐观 gross margin `42-44%`、operating margin `21-24%`、adjusted EBITDA `$900M-1.05B`。
+- 最大传导瓶颈：LFUS 没有披露 data center revenue、AI revenue、segment backlog、book-to-bill、客户项目金额或具体 hyperscaler design win。因此 48V/708、800VDC 和 Basler data center cross-sell 不能直接按行业 TAM 或客户 capex 映射为 NTM 公司收入。
+- 最大利润率变量：Electronics passive/protection semiconductor volume leverage、Industrial/Basler mix、power semiconductor 是否继续弱、以及 AI/DC 保护件是否从标准件变成认证型高可靠产品。若收入增长主要来自低毛利 pass-through 或价格重谈，经营杠杆会明显低于收入增速。
+- 最大现金流变量：2026Q1 FCF `$66M`，FY2025 FCF `$366M`；NTM 现金流取决于应收账款、库存、Basler 整合、产能/认证投入和客户备货节奏。基准 FCF 方向为 `$300-430M`，乐观可到 `$450-580M`，但高增长也会先消耗营运资本。
+- 可信度：公司基准情景为“中高”；Electronics 和 Industrial/Basler 为“中高”；48V/54V AI rack protection 为“中”；800VDC/HVDC/solid-state protection NTM 收入为“低”。最可能情景是基准，偏向温和乐观，但不是极度乐观。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Electronics protection/passives/protection semiconductor | 2026Q1 Electronics 收入 `$362.8M/季`，年化约 `$1.45B`；segment adjusted EBITDA margin `25.1%` | 2026Q1 `55.2%` | 公司最大收入和利润池；passive products organic `+22%`，semiconductor organic `+8%`，AI/DC 板级保护包含在内 | A for segment；C/D for AI/DC split | 进入基准；NTM segment 基准 `$1.45-1.56B`，其中 AI/DC 直接或强相关部分不能可靠拆分，估算仅作 mix | 48V/54V AI rack 保护件、power shelf/PDU/BBU 认证件、high-voltage architecture 内容量提升 |
+| Industrial high-power fuses + Basler electrical control/protection | 2026Q1 Industrial 收入 `$123.8M/季`，年化约 `$495M`；Basler FY2025 预计收入 `$125M`、high-teens adjusted EBITDA margin | 2026Q1 `18.8%` | NTM 增量最直接，grid、utility、data center、UPS/BESS、power generation 和 protection control 相关性高 | A/B | 进入基准；NTM 基准 `$520-600M`，其中 AI/DC/grid 强相关部分估算 `$120-200M` | Basler+LFUS cross-sell、data center generator/grid tie/switchgear relay、AI factory microgrid |
+| Transportation fuses、sensors、switches | 2026Q1 Transportation 收入 `$170.4M/季`，年化约 `$682M`；segment adjusted EBITDA margin `19.1%` | 2026Q1 `25.9%` | 大基数现金流和利润稳定器；不是 AI data center 主线，但可迁移高压保护和开关能力 | A | 进入基准；NTM 基准 `$670-730M` | eMobility 高压保护技术可迁移，但 NTM 不能把汽车内容量直接算作 AI/DC 收入 |
+| 48V/54V AI rack board-level protection，包括 NANO2 SMD 708 Series | 708 Series 2026-06 发布；60A-200A、14kA@80VDC、应用指向 PDUs、power shelves、BBUs、PSUs、AI server clusters；当前收入未披露 | 占公司收入无法可靠量化；估算 NTM 基准仍低于 `1-2%` | 最直接的数据中心新品信号；可从 through-hole/bolt-down 向 SMD 自动化装配切换 | D for 708 launch；C if customer design-in；A only for broader Electronics revenue | 不作为独立 segment 进入公司基准；小额收入已隐含在 Electronics 基准，乐观需要客户 AVL/出货验证 | 若成为多家 PSU/PDU/BBU 平台默认料号，2027+ 弹性高 |
+| TVS/ESD/GDT/MOV/SIDACtor、telemetry/sensing/switching | 收入包含在 Electronics 和 Transportation 内；公司未按产品拆分 | 无法可靠量化 | 为 PSU、PDU、control board、BMS、networking、telemetry 和工业控制提供过压/瞬态/接口保护 | A for segment；C for data center application | 进入基准但不单独加总；NTM 以现有 segment run-rate 和 mix 处理 | 高压 TVS、telemetry、leak/temperature/current sensing 若进入 data center 标准包可上修 |
+| Power semiconductor、SiC/thyristor/solid-state protection、800VDC/HVDC | 公司披露 2026Q1 lower power semiconductor sales 抵消 protection semiconductor volume；800VDC/HVDC 收入未披露 | 无法可靠量化；当前估算低个位数收入占比 | 长期可改变产品结构，但 NTM 证据弱，竞争强 | C/D | 不进入 NTM 基准独立收入；仅在乐观/极度乐观中小额计入，并在公司汇总时去重 | 800VDC sidecar、solid-state breaker、HV fuse、SST/MVDC、high-voltage protection |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不评估 LFUS 份额、收入确认、利润率或公司汇总。需求锚点来自 2026Q1 run-rate、2026Q2 指引、公司 segment 需求表述、项目内行业资料对 AI 数据中心 power/protection/UPS/BESS/48V/800V 的判断，以及 NTM 内可观察订单节奏。相对预期以 Q2 指引中值 `$700M`、Q1 年化 run-rate、管理层 strong backlog/customer momentum、FY2025 基数和可见 segment 走势为锚。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Electronics protection/passives/protection semiconductor | Q1 Electronics `$362.8M`，organic `+15%`；passive `+22%` organic，semiconductor `+8%` organic；行业 2026 主线为 48V/54V rack power、PDU/PSU/BBU、hot-swap、fuse/TVS/SPD | 电子周期补库结束，power semiconductor 继续弱，NTM demand 回到 `$1.30-1.40B` | protection/passive volume 正常延续，48V/54V 与普通工业电子恢复共同支撑，NTM demand `$1.45-1.56B` | AI power shelf/PDU/BBU 认证件和 protection semiconductor volumes 同步强，NTM demand `$1.62-1.78B` | 多平台 AI rack 保护件短缺，且传统电子不拖累，NTM demand `$1.90-2.10B` | 相对当前 Q1 年化 `$1.45B`，悲观 `-0.15B` 至 `-0.05B`，基准 `0` 至 `+0.11B`，乐观 `+0.17-0.33B`，极度 `+0.45-0.65B` | 基准符合当前；乐观高于当前；极度需多个客户平台同时成立 | 正向：Q1 有机增长和 Q2 backlog 语言强。反证：power semiconductor lower sales、无 data center backlog dollar、标准保护件竞争强 |
+| Industrial high-power fuses + Basler electrical control/protection | Q1 Industrial `$123.8M`，organic `+5%`；Basler 对 segment 增长贡献 `39pct`；grid/utility infrastructure and data center demand 抵消 HVAC 弱 | HVAC/传统工业弱，Basler 并表后 organic 不继续，NTM demand `$470-520M` | Basler 年化、grid/data center 和 energy storage 正常兑现，NTM demand `$520-600M` | Basler cross-sell 与 high-power fuse 同时放量，NTM demand `$630-760M` | AI factory grid tie、generator、BESS、switchgear protection 成为短缺，NTM demand `$850M-1.05B` | 相对 Q1 年化 `$495M`，基准 `+25-105M`，乐观 `+135-265M`，极度 `+355-555M` | 基准略高于当前；乐观需要订单/客户证据增强 | 正向：Basler 已并表，data center demand 被公司点名。反证：Basler 客户项目和 LFUS cross-sell 未量化，HVAC 可继续拖累 |
+| Transportation fuses、sensors、switches | Q1 Transportation `$170.4M`，organic `+1%`；passenger vehicle `+4%` organic，commercial vehicle `-1%`，marine exit 拖累 | 商用车、农业/off-highway 和传感器继续弱，NTM demand `$620-660M` | passenger content expansion 抵消 build decline，NTM demand `$670-730M` | eMobility/high-voltage protection 和 passenger content 超预期，NTM demand `$760-830M` | 汽车与商用车同步复苏且高压保护份额提升，NTM demand `$880-980M` | 相对 Q1 年化 `$682M`，悲观 `-62M` 至 `-22M`，基准 `-12M` 至 `+48M`，乐观 `+78-148M` | 基准接近当前；乐观不是 AI 逻辑而是汽车内容量逻辑 | 正向：passenger content expansion。反证：全球 car builds、commercial vehicle、marine exit、sensor declines |
+| 48V/54V AI rack board-level protection，包括 708 Series | 行业 2026 高确定性为 48/50V ORv3/HPR power shelf、PDU、BBU、PSU、hot-swap/fuse/TVS；708 Series 发布但收入未披露 | 708 停留样品和低量 distributor demand，NTM direct demand `<$10M` | 进入若干 PSU/PDU/BBU 设计，小额订单，NTM direct demand `$10-30M` | 多个 OEM/ODM/PSU/PDU/BBU 平台验证完成，NTM demand `$35-80M` | 成为高电流 SMD fuse 标准件，替代部分 bolt-down/through-hole，NTM demand `$100-180M` | 相对当前可见收入，基准为小额新增，乐观 `+35M+`，极度 `+100M+` | 基准不能按主题放大；乐观才代表超预期 | 正向：产品参数和应用明确。反证：无客户、订单、产能、交付节奏披露 |
+| TVS/ESD/GDT/MOV/SIDACtor、telemetry/sensing/switching | 行业 power telemetry、BMS、control ports、liquid cooling sensors 和接口保护需求上升；LFUS segment 内已有广泛产品组合 | 标准件价格竞争、客户二供充分，NTM demand 随 segment 低增 | 随 PSU/PDU/control/networking 端口增长，NTM demand 正常嵌入 Electronics/Transportation | 高可靠瞬态保护和 sensing attach 率提升，NTM demand 高于 segment 平均 | 传感/保护成为客户验收/insurance/RMA 要求，形成非线性 attach | 无法可靠量化；作为 segment mix 影响而非独立收入池 | 基准符合当前；乐观需要具体客户应用证据 | 正向：行业对 telemetry 和保护需求提高。反证：产品标准化、价格竞争、LFUS 不披露收入 |
+| Power semiconductor、SiC/thyristor/solid-state protection、800VDC/HVDC | 行业 2026 为 800VDC design-in 和 48V 主线并行；LFUS power semiconductor 当前较弱 | 800VDC/HVDC 停留展示和客户评估，NTM demand `$0-10M` | 小额 design-in/NRE/样品，NTM demand `$0-20M` | 1-2 个 UPS/BESS/HVDC/solid-state protection 客户项目转小批量，NTM demand `$25-70M` | Rubin/1MW rack 或 800V sidecar 需求提前，NTM demand `$100-200M` | 相对当前可见收入，基准几乎无变化，乐观/极度为新增上限 | 基准低于题材热度；乐观需要客户项目 | 正向：行业路径清晰。反证：标准/安全/运维慢，LFUS 不是 800VDC 生态主导厂 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断外部需求中哪些能进入 LFUS NTM 收入表，以及当前可收入化基数，不预测增长、不判断利润率。必须区分“可参与需求”和“可确认收入”。证据等级按收入表可确认性划分：A 为已披露收入、分部收入、出货收入或正式财务指引；B 为订单/backlog/合同/客户项目/交付时间；C 为 design win、客户认证、产能规划或管理层可验证披露；D 为产品发布、样品、测试或早期合作；E 为只有主题相关或同业映射。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Electronics protection/passives/protection semiconductor | 2026Q1 Electronics `$362.8M`；segment revenue 表内可见；AI/DC 子集未披露 | 直接 | 调整后 EBITDA margin `25.1%`，passive/protection volume leverage 强；power semiconductor 弱会稀释 | `$1.30-1.40B` | `$1.45-1.56B` | `$1.62-1.78B` | `$1.90-2.10B` | 基准符合 Q1/Q2 指引和 run-rate；乐观高于当前 | A for segment；C/D for AI/DC submix | 是 | 已在收入表和 Q2 指引可见；只把 AI/DC 作为 mix，不单独加总 | NTM 基准纳入 segment；直接 AI/DC 收入无法可靠拆分 |
+| Industrial high-power fuses + Basler electrical control/protection | 2026Q1 Industrial `$123.8M`；Basler FY2025 expected revenue `$125M`，并入 Industrial；公司点名 grid/data center demand | 直接 | Basler high-teens EBITDA 起步；高功率熔断器和保护控制认证价值高 | `$470-520M` | `$520-600M` | `$630-760M` | `$850M-1.05B` | 基准高于 2025 run-rate，符合 Basler 年化和需求恢复 | A/B | 是 | Segment revenue、Basler deal economics、Q2 strong backlog | NTM 基准纳入；data center/grid 子集估算，不与 segment 重复 |
+| Transportation fuses、sensors、switches | 2026Q1 Transportation `$170.4M`；organic `+1%`，passenger `+4%`，commercial `-1%` | 直接 | EBITDA margin `19.1%`，稳定但低于 Electronics；AI/DC 直接收入低 | `$620-660M` | `$670-730M` | `$760-830M` | `$880-980M` | 基准接近当前 run-rate；乐观需汽车内容量/产量改善 | A | 是 | 收入表和 segment disclosure | 进入基准，作为公司组合和现金流稳定器 |
+| 48V/54V AI rack board-level protection，包括 NANO2 708 | 当前收入未披露；708 为 2026-06 产品发布，可申请样品，应用明确指向 PDU/power shelf/BBU/PSU | 直接 | 若客户认证进入高可靠 SMD fuse，毛利可能高于标准件；初期规模小 | `$0-10M` | `$10-30M` | `$35-80M` | `$100-180M` | 基准只是小额新增，不代表当前预期大幅上修 | D/C | 只以小额 mix 进入基准，不独立加总 | 产品发布和技术规格有据，但无客户/订单/收入确认 | 纳入 Electronics mix；乐观以上才作为单独跟踪项 |
+| TVS/ESD/GDT/MOV/SIDACtor、telemetry/sensing/switching | 收入在 Electronics/Transportation 中，不按产品披露；行业需求来自 control ports、BMS、PDU、PSU、networking、liquid cooling telemetry | 直接/间接 | 标准件毛利中等；高可靠/认证/定制件更好 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 相对当前预期只能判断 mix，不单独预测 | A for segment；C for application | 是，但只通过 segment | 产品收入未披露，不能把应用需求直接当公司收入 | 进入 segment 基准，不单独加总 |
+| Power semiconductor、SiC/thyristor/solid-state protection、800VDC/HVDC | 当前收入未披露；公司仅披露 Q1 power semiconductor sales lower；800VDC/HVDC 为行业路线和产品能力映射 | 直接/间接 | 若赢得 HVDC/solid-state protection 可高毛利；当前周期和竞争拖累 | `$0-10M` | `$0-20M` | `$25-70M` | `$100-200M` | 基准低于题材热度；极度乐观只是上限 | C/D | 否，除已含在 existing segment 的小额 | 缺少客户、订单、交付和收入确认路径 | 不进入 NTM 独立基准；乐观/极度乐观列为上限或附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第一步需求和第二步可收入化基数出发，判断每个产品在 NTM 内能给公司贡献多少收入和利润。产品级区间为经营估算，已避免把行业 TAM、客户总预算、数据中心总 capex、项目总金额或远期 pipeline 直接写成公司收入。公司层汇总会在第 6 节去重，尤其是 48V/54V、TVS/ESD、800VDC 与 Electronics/Industrial segment 的重叠。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Electronics protection/passives/protection semiconductor | 悲观 | `$1.30-1.40B` | adjusted EBITDA 约 `$285-330M`，margin 回落 | 下行 | 低于 Q1 年化和 Q2 指引隐含恢复 | Q1 segment 强，但 power semiconductor weak | 保留悲观 | 电子补库结束、价格竞争、power semis 继续弱、AI/DC 订单不显性 |
+| Electronics protection/passives/protection semiconductor | 基准 | `$1.45-1.56B` | adjusted EBITDA 约 `$360-400M` | 持平到小幅上行 | 符合当前 run-rate 和指引 | Q1 Electronics organic `+15%`，passive `+22%`，semiconductor `+8%` | 保留基准 | AI/DC 子集无法拆分，不能把 segment 全部解释为 AI |
+| Electronics protection/passives/protection semiconductor | 乐观 | `$1.62-1.78B` | adjusted EBITDA 约 `$430-500M`，mix 改善 | 上行 | 高于当前预期 | protection semiconductor volumes、48V/54V、PSU/PDU/BBU 需求同向 | 保留乐观 | 客户二供、ASP 压力、交付/认证时间 |
+| Electronics protection/passives/protection semiconductor | 极度乐观 | `$1.90-2.10B` | adjusted EBITDA 约 `$550-690M`，若高可靠保护件短缺 | 大幅上行 | 明显高于当前预期 | 多平台 AI rack 和高压保护 design win 同时成立 | 下移为乐观上限 | 缺少 backlog/customer/design-win dollar，且普通电子周期可能抵消 |
+| Industrial high-power fuses + Basler electrical control/protection | 悲观 | `$470-520M` | adjusted EBITDA 约 `$85-105M` | 下行 | 低于 Basler 年化和 grid/data center 期待 | HVAC/传统工业弱，Basler synergy 慢 | 保留悲观 | 有机需求放缓、Basler integration、项目延迟 |
+| Industrial high-power fuses + Basler electrical control/protection | 基准 | `$520-600M` | adjusted EBITDA 约 `$115-145M` | 小幅上行 | 符合当前 | Basler 并表，grid/utility/data center demand 被公司点名 | 保留基准 | data center 子集不披露，不能把 all Industrial 当 AI |
+| Industrial high-power fuses + Basler electrical control/protection | 乐观 | `$630-760M` | adjusted EBITDA 约 `$155-215M` | 上行 | 高于当前预期 | Basler cross-sell、高功率 fuse、UPS/BESS/PDU/grid tie 同步 | 保留乐观 | 项目制订单和客户标准库证据不足 |
+| Industrial high-power fuses + Basler electrical control/protection | 极度乐观 | `$850M-1.05B` | adjusted EBITDA 约 `$250-350M` | 大幅上行 | 明显高于当前预期 | AI factory microgrid、generator、BESS、switchgear protection 短缺 | 下移为上限 | 需多个大项目同时进入收入确认，NTM 证据不足 |
+| Transportation fuses、sensors、switches | 悲观 | `$620-660M` | adjusted EBITDA 约 `$105-120M` | 下行 | 低于当前 run-rate | commercial vehicle weak、marine exit、sensor decline | 保留悲观 | 汽车产量、农业/off-highway、价格重谈 |
+| Transportation fuses、sensors、switches | 基准 | `$670-730M` | adjusted EBITDA 约 `$125-150M` | 持平 | 接近当前预期 | passenger content expansion，Q1 margin 改善 | 保留基准 | 不是 AI data center 增长核心 |
+| Transportation fuses、sensors、switches | 乐观 | `$760-830M` | adjusted EBITDA 约 `$155-190M` | 小幅上行 | 高于当前预期 | eMobility/high-voltage protection 和 passenger content 同时改善 | 保留乐观 | 全球汽车需求、客户定价、sensor weakness |
+| Transportation fuses、sensors、switches | 极度乐观 | `$880-980M` | adjusted EBITDA 约 `$200-260M` | 上行 | 明显高于当前预期 | 汽车和商用车同步复苏，content 扩张 | 下移为上限 | 与 AI/DC 逻辑无关，不能支撑 data center 经营上修 |
+| 48V/54V AI rack board-level protection，包括 708 Series | 悲观 | `$0-10M` | 毛利贡献很小，应用工程和样品费用抵消 | 持平到下行 | 低于题材预期 | 产品刚发布，无订单披露 | 保留悲观 | 客户验证慢、替代方案多、through-hole/bolt-down 仍保留 |
+| 48V/54V AI rack board-level protection，包括 708 Series | 基准 | `$10-30M` | 贡献毛利约 `$4-12M`，嵌入 Electronics | 小幅上行 | 符合保守收入确认 | 708 可用于 PDU/power shelf/BBU/PSU，48V 架构是 2026 主线 | 保留基准但不独立加总 | 没有客户 AVL 和出货量，不可放大 |
+| 48V/54V AI rack board-level protection，包括 708 Series | 乐观 | `$35-80M` | 贡献毛利约 `$15-35M`，若认证件溢价 | 上行 | 高于当前预期 | 多个 PSU/PDU/BBU 平台转量产，自动化 SMD 替代 | 保留乐观 | 谁买、买什么、何时确认仍需后续披露 |
+| 48V/54V AI rack board-level protection，包括 708 Series | 极度乐观 | `$100-180M` | 贡献毛利约 `$45-85M` | 大幅上行 | 明显高于当前预期 | 成为高电流 48V AI rack 默认保护料号 | 下移为乐观上限 | 单一新产品不能独自支撑公司极度乐观 |
+| TVS/ESD/GDT/MOV/SIDACtor、telemetry/sensing/switching | 悲观 | 无法可靠量化 | 标准件价格竞争压缩利润 | 下行 | 低于 mix 预期 | 二供充足，客户压价 | 保留悲观 | 收入未披露，无法核验 |
+| TVS/ESD/GDT/MOV/SIDACtor、telemetry/sensing/switching | 基准 | 无法可靠量化 | 嵌入 Electronics/Transportation segment 利润 | 持平 | 符合当前 | control ports、BMS、networking、PDU/PSU 都需要保护和 sensing | 保留基准 | 只能作为 segment mix，不能单独加总 |
+| TVS/ESD/GDT/MOV/SIDACtor、telemetry/sensing/switching | 乐观 | 无法可靠量化 | 高可靠和认证件提升 mix | 小幅上行 | 高于当前预期 | telemetry、leak/temperature/current sensing attach 增加 | 保留乐观 | 客户项目证据不足 |
+| TVS/ESD/GDT/MOV/SIDACtor、telemetry/sensing/switching | 极度乐观 | 无法可靠量化 | 若成为验收必要件，利润率明显改善 | 上行 | 高于当前 | 保护/传感被写入客户标准包 | 下移为附录跟踪 | 缺少产品级收入基数 |
+| Power semiconductor、SiC/thyristor/solid-state protection、800VDC/HVDC | 悲观 | `$0-10M` | 研发/认证投入大于短期毛利 | 下行 | 低于题材预期 | Q1 power semiconductor sales lower | 保留悲观 | 竞争强、需求后置 |
+| Power semiconductor、SiC/thyristor/solid-state protection、800VDC/HVDC | 基准 | `$0-20M` | 对公司利润几乎无贡献 | 持平 | 符合保守 NTM | 2026 行业以 design-in 为主 | 移入附录 | D/C 级证据不足，不能进独立基准 |
+| Power semiconductor、SiC/thyristor/solid-state protection、800VDC/HVDC | 乐观 | `$25-70M` | 高压保护/solid-state 若转小批量可高毛利 | 上行 | 高于当前 | 1-2 个 UPS/BESS/HVDC/customer design-in 转订单 | 保留为乐观 | 无客户名、订单金额、交付窗口 |
+| Power semiconductor、SiC/thyristor/solid-state protection、800VDC/HVDC | 极度乐观 | `$100-200M` | 若赢得关键 800VDC protection slot，利润率上行 | 大幅上行 | 明显高于当前 | Rubin/1MW rack/800V sidecar 提前采用 | 移入附录 | 2026 NTM 时间表不足，任一安全/标准环节延后即失效 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节将产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、adjusted EBITDA/净利润和自由现金流方向。汇总时已经剔除 48V/54V、TVS/ESD、800VDC 与 Electronics/Industrial segment 的潜在重复。绝对增速以 FY2025 收入 `$2.386B` 为历史基数，同时用 2026Q2 指引中值年化约 `$2.80B` 判断相对当前预期。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观 | `$2.58-2.70B` | 相对 FY2025 `+8%` 至 `+13%`；低于 Q2 指引年化 | 低于当前 backlog/customer momentum 隐含路径；Basler 年化被传统工业/汽车/电子周期抵消 | `36-38%` | `12-14%` | adjusted EBITDA `$500-580M`；净利润约 `$250-320M` | 正向但低于 FY2025，约 `$220-300M`；库存和应收拖累 | 中 | Electronics 补库结束，power semiconductor 继续弱，Industrial organic 放缓，Transportation 商用车弱，AI/DC 订单不显性 |
+| 基准 | `$2.78-2.95B` | 相对 FY2025 `+16%` 至 `+24%`；接近 Q2 指引年化和 Basler full-year contribution | 当前经营预期正常兑现；strong backlog 转收入，低证据 AI 机会保守处理 | `38.5-40.5%` | `15-17.5%` | adjusted EBITDA `$625-700M`；净利润约 `$350-430M` | 正向，约 `$300-430M`；营运资本可控 | 中高 | 必须维持 Electronics volume leverage，Basler 整合不能压 margin，传统汽车/工业不能明显转弱 |
+| 乐观 | `$3.05-3.25B` | 相对 FY2025 `+28%` 至 `+36%` | 高于当前预期；需要 Electronics 和 Industrial 双强，不是单一 708 小产品造成 | `40.5-42.5%` | `18-20.5%` | adjusted EBITDA `$740-840M`；净利润约 `$450-560M` | 明显改善，约 `$450-580M`；若备货上升则滞后 | 中 | 需要 AI/DC 保护件、Basler cross-sell、高功率 fuse 和 protection semiconductor 同时超预期；价格/mix 要留下利润 |
+| 极度乐观 | `$3.30-3.55B` | 相对 FY2025 `+38%` 至 `+49%` | 显著高于当前预期；成长业务成为主要增长引擎 | `42-44%` | `21-24%` | adjusted EBITDA `$900M-1.05B`；净利润约 `$600-750M` | 强正向，约 `$600-750M`，但扩产/库存会占用现金 | 低 | 需要多个核心传导环节同时成立：data center demand 非线性、LFUS 获关键 design-win、Basler 大项目兑现、传统分部不拖累、800VDC early adoption 提前 |
+
+汇总判断：LFUS 的基准经营价值传导是“高质量工业/电子保护件公司在周期恢复中叠加 Basler 并表和 data center/grid mix”，不是“AI 数据中心纯标的”。AI/DC 强相关收入在 NTM 内可以提高 mix 和增速，但当前仍不足以单独决定公司总收入。乐观情景成立的关键不是行业电力 TAM，而是 LFUS 是否把高压保护、熔断、保护继电器、TVS/ESD 和 power semiconductor 变成客户可确认订单，并在毛利率中体现出来。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一个风险只在实际影响层级处理一次：需求风险放在需求层，收入确认风险放在收入基数层，份额/价格/成本放在产品贡献层，公司组合风险放在公司汇总层，可信度放在本节。金融市场价格、估值倍数和股价变化不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 `$657M`、organic `+9%`、adjusted EBITDA margin `22.9%`，Q2 指引 `$690-710M` | 公司汇总 | 支持 NTM 基准接近 `$2.8B+` | 支持基准 margin 高于 FY2025 | FCF 为正，但 Q1 不能代表全年 | 基准保留 |
+| 管理层 Q2 表述 strong backlog、customer momentum、Basler contribution | 收入基数/执行可信度 | 支持 Q2 和 NTM 正常兑现 | 若 backlog 为高质量产品，margin 支撑 | backlog 未披露金额，不能完全校准 | 基准保留，乐观保留 |
+| Electronics organic `+15%`，passive `+22%`，protection semiconductor volumes strong | 产品贡献 | 支持最大 segment 的基准和乐观 | 支持 volume leverage 和 mix 改善 | 需要连续季度验证 | 基准保留，乐观保留 |
+| Q1 power semiconductor sales lower | 产品贡献 | 限制 800VDC/SiC/power semis 的 NTM收入基准 | 限制高毛利非线性上修 | 研发/认证可能先消耗费用 | 800VDC/HVDC 基准移入附录 |
+| Industrial organic `+5%`，data center/grid demand 被公司点名，Basler +39pct | 收入基数/产品贡献 | 支持 Industrial 基准上修到年化以上 | Basler/high-power protection 可能提升 mix | 整合和项目交付仍是变量 | 基准保留，乐观保留 |
+| Basler FY2025 expected revenue `$125M`，high-teens adjusted EBITDA margin | 收入基数 | 提供 A/B 级年化锚 | 起始 margin 低于 Electronics，但可通过 cross-sell 改善 | integration risk 需要扣减 | 基准保留 |
+| Investor Day data center 2-4x content uplift、25%-30%+ revenue CAGR through 2030 | 需求/远期期权 | 提高长期数据中心机会，但不是 NTM 收入锚 | 若内容量提升来自高压保护，长期 margin 有利 | NTM 需要订单和客户节奏验证 | 极度乐观保留为上限，不上移基准 |
+| 708 Series 48V SMD fuse 发布，60A-200A、14kA@80VDC、面向 AI servers、PDUs、PSUs、BBUs | 收入基数/产品贡献 | 支持 48V/54V 产品乐观情景 | 高可靠 SMD 认证件可提高 mix | 客户 AVL、出货和产能未披露 | 基准小额保留，乐观保留 |
+| 未披露 data center revenue、AI revenue、backlog dollar、客户名和 book-to-bill | 收入确认/可信度 | 限制把行业需求直接转成公司收入 | 无法验证 price/mix | 无法监控取消率和交付 | 极度乐观下移为乐观上限或附录 |
+| Transportation 占收入约四分之一，但 AI/DC 直接相关性低 | 公司组合 | 稳定基准收入，但稀释 AI/DC 增速 | margin 稳定但不高 | 汽车周期会影响 FCF | 基准保留，AI叙事降权 |
+| 行业 2026 48V/54V 确定性高、800VDC 更偏 2027+ | 需求/收入确认 | 48V 进入基准更合理，800VDC 不进 NTM 基准 | 保护件优于普通 pass-through | 认证/安全延迟会推迟收入 | 800VDC 移入附录，48V 保留 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 电子/工业/汽车任一核心传导低于当前预期，NTM 收入 `$2.58-2.70B` | 仍有 FY2025 以上收入基数、Basler 并表和 segment profitability | 若 Q2 指引正常兑现，悲观概率下降 | 保留 | 悲观公司情景 | 中 | power semiconductor 弱只在 Electronics/800VDC 处理，不再重复压低 Transportation |
+| 基准 | Q2 指引、Q1 run-rate、Basler 年化、Electronics volume leverage 正常兑现，NTM 收入 `$2.78-2.95B` | A 级 segment revenue、Q2 指引、FCF、Basler revenue anchor、Industrial data center/grid demand | AI/DC 子集和 backlog dollar 不披露，限制上修 | 保留 | 最可能情景 | 中高 | 未披露 data center revenue 只限制 AI/DC 上修，不否定公司基准 |
+| 乐观 | Electronics 和 Industrial 同时强，48V/54V、Basler cross-sell、高功率 fuse/protection semis 高于当前预期，NTM 收入 `$3.05-3.25B` | 708 product launch、Investor Day data center targets、Q1 segment organic growth、行业电力/保护需求强 | 缺少客户订单金额和收入确认节奏，Transportation 稀释增长 | 保留 | 乐观公司情景 | 中 | 800VDC 标准慢只限制 HVDC，不重复惩罚 48V/54V 已放量主线 |
+| 极度乐观 | 需求、公司捕获、利润率和执行质量同时突破，NTM 收入 `$3.30-3.55B` | 2-4x content uplift、25%-30%+ DC revenue CAGR、strong backlog、Basler+LFUS portfolio | 任一核心环节缺少 NTM A/B 级证据，特别是 hyperscaler design-win、800VDC timing、segment backlog | 下移 | 保留为极度乐观上限，不作为当前预期 | 低 | 远期 800VDC 机会只进附录/上限，不在基准和极度乐观中重复相加 |
+
+## 8. 结论
+
+- 最可能情景：基准。LFUS NTM 最可能收入 `$2.78-2.95B`，adjusted EBITDA `$625-700M`，FCF `$300-430M`。这个情景的核心是 Q2 指引正常兑现、Electronics 保护件恢复延续、Basler 并表提供 Industrial 增量、Transportation 稳定，而不是 800VDC 大规模收入。
+- NTM 收入结论：公司收入可以高于 FY2025 明显增长，但主要来自已有收入表分部、Basler 年化和周期恢复。AI/DC 强相关收入估算仍是小到中等占比，不能用 AI data center capex 或 power TAM 直接映射成 LFUS 收入。
+- 利润/现金流结论：利润质量高于普通硬件 pass-through，因为保护件、熔断器、保护继电器和认证型产品具备可靠性溢价；但 power semiconductor 弱、Transportation 稀释、Basler 整合和传统工业波动会限制非线性 margin 扩张。现金流基准正向，但若 AI/DC 客户提前备货或公司扩产，营运资本会先上升。
+- 主要传导瓶颈：第一，data center/AI revenue 和 backlog 不披露，收入确认可见度不足；第二，708/48V 产品有明确技术和应用，但缺少客户 AVL 和出货证据；第三，800VDC/HVDC 是 2027+ 设计期权，不应前置进 NTM 基准；第四，LFUS 是保护/控制部件供应商，不是整机 PSU、UPS、PDU 或 data center equipment 总包商。
+- 乐观情景成立条件：2026Q2 实际收入超过 `$710M` 或 Q3 指引继续双位数；Electronics organic growth 连续维持双位数；Industrial organic growth 高于中个位数且 Basler margin 改善；708 Series 或其他 48V protection 出现客户案例、lead time、分销缺货或订单；公司开始披露 data center/customer project 线索。
+- 极度乐观情景成立条件：多个 hyperscaler、PSU/PDU/BBU 或 power OEM 把 LFUS 高压保护平台标准化；Basler 在 data center generator/grid tie/switchgear protection 获大型项目；800VDC/solid-state protection 在 NTM 内从 design-in 变成收入；传统汽车/工业不拖累；gross margin 明显超过 `42%` 且 FCF 不被库存吞噬。
+- 悲观情景触发条件：Q2/Q3 指引或实际收入低于当前路径；Electronics passive/protection volume 回落；power semiconductor 继续拖累且 price/mix 恶化；Industrial organic growth 转负，Basler 只并表不协同；Transportation 商用车/传感器进一步下滑；AI/DC 新品只停留样品，没有客户订单。
+- 后续跟踪数据：Q2 2026 实际收入和 Q3 指引；Electronics organic growth、passive products、protection semiconductor volumes、power semiconductor trend；Industrial organic growth、Basler margin、data center/grid wording；708 Series design-win、客户 AVL、lead time、distributor availability；Basler data center/generator/grid project evidence；800VDC/OCP/NVIDIA ecosystem 中 LFUS 是否被明确列入 protection slot；gross margin、adjusted EBITDA margin、FCF 和库存周转。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务数据截至 2026-03-28 的 2026Q1，Q2 指引发布日期为 2026-05-06；报告日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：Littelfuse 2026Q1 earnings release；Littelfuse FY2025/Q4 earnings release；Littelfuse 2026 Investor Day；Basler acquisition announcement；Littelfuse NANO2 SMD 708 Series press release and datasheet；本地 `公司调研/配电_电源_功率器件/LFUS_Littelfuse_公司调研_2026-06-12.md`。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：Investor Day 的 data center revenue CAGR through 2030、2-4x content uplift、800VDC/HVDC/solid-state protection、SST/MVDC 和 1MW rack 只用于乐观、极度乐观和后续跟踪，不替代 NTM 主表。
+- 项目内行业资料：
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`
+- 外部主要来源：
+  - Littelfuse Q1 2026 earnings release: https://investor.littelfuse.com/news/news-details/2026/Littelfuse-Reports-First-Quarter-Results-for-2026/default.aspx
+  - Littelfuse Q4/FY2025 earnings release: https://investor.littelfuse.com/news/news-details/2026/Littelfuse-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx
+  - Littelfuse 2026 Investor Day PDF: https://s202.q4cdn.com/691005561/files/doc_presentations/2026/May/14/Littelfuse-2026-Investor-Day_FINAL.pdf
+  - Littelfuse to acquire Basler Electric: https://investor.littelfuse.com/news/news-details/2025/Littelfuse-to-Acquire-Basler-Electric-Enhancing-High-Growth-Industrial-Market-Positioning/default.aspx
+  - Littelfuse NANO2 SMD 708 Series release: https://www.littelfuse.com/company/news-and-events/in-the-news/newspages-articles/press-releases/2026/littelfuse-nano2-smd-708-series-fuse-enables-high-current-48-vdc-ai-data-center-protection
+  - Littelfuse 708 Series datasheet: https://www.littelfuse.com/assetdocs/0708-nano2-smd-fuse-datasheet?assetguid=aa4e184c-f52e-4aee-9498-1732e8c47d37
+  - NVIDIA 800VDC architecture: https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/
+  - Open Compute Project Diablo/Open Data Center ecosystem: https://www.opencompute.org/blog/realizing-the-open-data-center-ecosystem-vision

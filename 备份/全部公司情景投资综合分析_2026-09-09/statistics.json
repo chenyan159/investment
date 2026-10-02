@@ -1,0 +1,180 @@
+{
+  "6": {
+    "悲观": {
+      "n": 193,
+      "positive": 0,
+      "labels": {
+        "强烈不建议投资": 193
+      },
+      "median_low": -80.1,
+      "median_high": -75.2,
+      "median_interval_midpoint": -77.55,
+      "uniform_floor_pass": 0
+    },
+    "基准": {
+      "n": 193,
+      "positive": 5,
+      "labels": {
+        "不建议投资": 107,
+        "建议投资": 1,
+        "强烈不建议投资": 67,
+        "中性": 14,
+        "谨慎建议投资": 4
+      },
+      "median_low": -40.6,
+      "median_high": -21.3,
+      "median_interval_midpoint": -31.549999999999997,
+      "uniform_floor_pass": 4
+    },
+    "乐观": {
+      "n": 193,
+      "positive": 85,
+      "labels": {
+        "不建议投资": 63,
+        "中性": 40,
+        "谨慎建议投资": 54,
+        "强烈建议投资": 6,
+        "建议投资": 25,
+        "强烈不建议投资": 5
+      },
+      "median_low": -11.6,
+      "median_high": 21.2,
+      "median_interval_midpoint": 5.300000000000001,
+      "uniform_floor_pass": 47
+    },
+    "突破": {
+      "n": 193,
+      "positive": 153,
+      "labels": {
+        "谨慎建议投资": 58,
+        "中性": 30,
+        "强烈建议投资": 23,
+        "建议投资": 72,
+        "不建议投资": 10
+      },
+      "median_low": 15.2,
+      "median_high": 65.1,
+      "median_interval_midpoint": 39.9,
+      "uniform_floor_pass": 115
+    }
+  },
+  "12": {
+    "悲观": {
+      "n": 193,
+      "positive": 0,
+      "labels": {
+        "强烈不建议投资": 193
+      },
+      "median_low": -78.7,
+      "median_high": -73.5,
+      "median_interval_midpoint": -76.19999999999999,
+      "uniform_floor_pass": 0
+    },
+    "基准": {
+      "n": 193,
+      "positive": 6,
+      "labels": {
+        "不建议投资": 113,
+        "建议投资": 1,
+        "强烈不建议投资": 60,
+        "中性": 14,
+        "谨慎建议投资": 5
+      },
+      "median_low": -37.9,
+      "median_high": -18.0,
+      "median_interval_midpoint": -28.5,
+      "uniform_floor_pass": 4
+    },
+    "乐观": {
+      "n": 193,
+      "positive": 89,
+      "labels": {
+        "不建议投资": 63,
+        "中性": 38,
+        "谨慎建议投资": 53,
+        "强烈建议投资": 7,
+        "建议投资": 29,
+        "强烈不建议投资": 3
+      },
+      "median_low": -7.2,
+      "median_high": 26.9,
+      "median_interval_midpoint": 9.95,
+      "uniform_floor_pass": 45
+    },
+    "突破": {
+      "n": 193,
+      "positive": 153,
+      "labels": {
+        "谨慎建议投资": 54,
+        "强烈建议投资": 23,
+        "建议投资": 76,
+        "不建议投资": 10,
+        "中性": 30
+      },
+      "median_low": 20.7,
+      "median_high": 72.3,
+      "median_interval_midpoint": 46.35,
+      "uniform_floor_pass": 108
+    }
+  },
+  "36": {
+    "悲观": {
+      "n": 193,
+      "positive": 0,
+      "labels": {
+        "强烈不建议投资": 189,
+        "不建议投资": 4
+      },
+      "median_low": -74.5,
+      "median_high": -69.1,
+      "median_interval_midpoint": -71.9,
+      "uniform_floor_pass": 0
+    },
+    "基准": {
+      "n": 193,
+      "positive": 5,
+      "labels": {
+        "不建议投资": 133,
+        "建议投资": 1,
+        "强烈不建议投资": 44,
+        "中性": 11,
+        "谨慎建议投资": 4
+      },
+      "median_low": -25.9,
+      "median_high": -3.1,
+      "median_interval_midpoint": -13.8,
+      "uniform_floor_pass": 4
+    },
+    "乐观": {
+      "n": 193,
+      "positive": 86,
+      "labels": {
+        "不建议投资": 68,
+        "中性": 37,
+        "谨慎建议投资": 57,
+        "强烈建议投资": 6,
+        "建议投资": 23,
+        "强烈不建议投资": 2
+      },
+      "median_low": 11.5,
+      "median_high": 49.5,
+      "median_interval_midpoint": 31.65,
+      "uniform_floor_pass": 43
+    },
+    "突破": {
+      "n": 193,
+      "positive": 154,
+      "labels": {
+        "谨慎建议投资": 60,
+        "建议投资": 66,
+        "强烈建议投资": 28,
+        "不建议投资": 11,
+        "中性": 28
+      },
+      "median_low": 47.4,
+      "median_high": 104.4,
+      "median_interval_midpoint": 75.55000000000001,
+      "uniform_floor_pass": 114
+    }
+  }
+}

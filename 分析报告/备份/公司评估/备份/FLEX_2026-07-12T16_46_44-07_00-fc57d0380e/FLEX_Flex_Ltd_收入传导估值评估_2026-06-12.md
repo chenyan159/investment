@@ -1,0 +1,174 @@
+# 公司收入传导与价值传导评估：Flex Ltd
+
+> 评估对象：FLEX / Flex Ltd  
+> 报告日期：2026-06-12  
+> 主口径：NTM 经营窗口，采用 FY2027 管理层指引作为未来 12 个月近似锚点。Flex 财年截至 3 月 31 日，FY2027 指 2026-04-01 至 2027-03-31。  
+> 资料边界：使用 `公司调研/`、`行业调研/` 和 Flex 官方 IR/SEC/产品资料；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较内容。  
+> 限制：本报告只评估收入、利润、现金流和经营质量传导，不输出投资评级、目标价、股价区间、估值倍数判断，也不把金融市场价格作为经营证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM/FY2027 经营窗口；FY2028 SpinCo 目标、800VDC、1MW rack、Rubin/后续 ASIC rack 只作远期期权或极度乐观上限，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：FY2026 总收入 279.14 亿美元；FY2027 总收入指引 323-338 亿美元，中点 330.5 亿美元，同比增长约 18.4%；FY2026 调整后经营利润率 6.3%，FY2027 指引 7.0%-7.1%；FY2026 自由现金流 10.60 亿美元。
+- 重要产品/业务线：CPI Cloud & Cooling、CPI Power、ITS Communications/AI-adjacent manufacturing、ITS Lifestyle/consumer 低价值组合、RMS Industrial/Automotive/Healthcare。
+- NTM 公司收入四情景：悲观 300-315 亿美元；基准 323-338 亿美元；乐观 345-370 亿美元；极度乐观 390-430 亿美元。
+- 利润或 EBITDA 四情景：基准采用管理层 FY2027 调整后经营利润率 7.0%-7.1%；乐观需要 CPI 产品 mix 和 Power margin 继续改善；极度乐观只有在 CPI 收入、Power/液冷 mix、产能爬坡和验收节奏同时成立时才允许经营利润率上修到 8%+。
+- 最大传导瓶颈：不是 AI 需求本身，而是 AI 数据中心电力、液冷、整柜预集成、客户验收和 Flex 自身高增长产能的同步兑现。
+- 最大利润率变量：CPI 内 Power 高于 Cloud & Cooling margin；若 FY2027 增长主要来自 Power、CESS、power shelf、critical power、JetCool/液冷和现场服务，利润留下来的比例明显高于普通 EMS/rack assembly。
+- 最大现金流变量：FY2027 CapEx 指引 14-16 亿美元、库存/应收和客户验收节奏。收入高增长可能先拉高营运资本，不能自动等同为自由现金流同步扩张。
+- 可信度：基准高，悲观中，乐观中，极度乐观低到中。A/B 级证据足以支持基准；极度乐观仍依赖未披露订单拆分、客户份额和 800VDC/高密液冷平台量产节奏。
+
+核心判断：Flex 的 NTM 收入传导已经有较强 A 级证据，基准不需要靠主题映射。FY2026 CPI 收入 66 亿美元，Cloud & Cooling 45 亿美元、Power 21 亿美元；公司对 FY2027 CPI 给出 +65%-75% 目标，隐含 CPI 接近 109-116 亿美元。真正需要校准的是利润质量：CPI 的增长如果来自 critical power、embedded/in-rack power、液冷和服务，经营利润率上修可信；如果更多是低毛利 compute/rack pass-through 或客户指定 BOM，收入上修不能同等传导为利润上修。
+
+## 2. 重要产品清单
+
+本步口径：只列入当前收入占比高、NTM 可能贡献主要增量、或能显著改变利润结构的业务线。财务基数优先使用 FY2026 已披露 segment/business-unit 收入；产品细分未披露时标注为估算或无法可靠量化。
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| CPI Cloud & Cooling：cloud compute、liquid cooling、data center architecture、rack/compute integration | 45 亿美元 | 16.1% | FY2027 CPI 增量主引擎之一；承接 AI rack、整柜集成、液冷和数据中心架构需求 | A | 进入基准。FY2027 需要从 FY2026 45 亿美元向约 67-73 亿美元爬坡 | Rubin/后续 ASIC rack、完整 AI infrastructure platform、更多端到端 architecture 收入 |
+| CPI Power：critical power、embedded power、power shelf、CESS、DC/DC、IBC、VPD、Anord Mardix、Crown/EP2 | 21 亿美元 | 7.5% | 利润质量最高的增量池；电力瓶颈和 grid-to-rack/grid-to-chip 架构决定收入确认速度 | A | 进入基准。FY2027 需要向约 41-45 亿美元爬坡，且 Power margin 高于 Cloud margin | 800VDC/±400V、1MW rack、HVDC sidecar、utility/grid-edge 一体化 |
+| ITS Communications / AI-adjacent manufacturing：通信、高速网络、卫星通信、部分企业/云制造 | 55 亿美元 | 19.7% | 对 AI 网络、通信和云基础设施有间接受益，但披露口径不等于 AI 收入 | A | 进入基准，但按 ITS flat to low-single growth 保守处理 | AI networking、卫星通信、客户定制网络平台放量 |
+| ITS Lifestyle / consumer / low-value markets | 56 亿美元 | 20.1% | 传统/低价值组合，可能抵消成长业务；公司持续去强调低价值市场 | A | 进入公司汇总，但不作为 AI 增长基准 | 若消费电子复苏，只作为非核心修复 |
+| RMS Industrial / Automotive / Healthcare | 102 亿美元 | 36.5% | 稳定现金流和利润底座；工业能源、自动化、汽车 compute/power electronics 有少量间接受益 | A | 进入基准，按 low-single to mid-single growth 处理 | 医疗、工业自动化、汽车电力电子中长期 mix 改善 |
+| JetCool SmartPlate / SmartSense CDU / manifold / direct-to-chip liquid cooling | 未单独披露，包含在 CPI Cloud & Cooling | 无法可靠量化 | 小基数但可能显著改变 CPI 毛利结构和客户粘性 | C | 不单独进入基准收入，只作为 Cloud & Cooling 内部 mix 上修因素 | 两相/高热流冷板、更多 CSP/OEM 平台认证 |
+| BMR317/BMR720、power shelves、CESS、VPD、DC/DC/IBC | 未单独披露，包含在 CPI Power | 无法可靠量化 | 小产品但高价值量；决定 48/54V、800VDC、rack power 传导 | C | 不单独进入基准收入，只作为 CPI Power 内部 mix 上修因素 | 800VDC/1MW rack 量产、Rubin/ASIC platform design-in |
+
+## 3. 产品需求四情景
+
+本步口径：只评估外部需求池，不评估 Flex 份额、收入确认、利润率或公司汇总。需求单位按最能解释业务线的指标选择：AI rack/整柜、MW/机柜功率、critical power 项目、液冷系统订单、通信/工业制造需求。当前需求锚来自项目内行业调研和 Flex 管理层 FY2027 指引中的需求假设。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| CPI Cloud & Cooling | 项目内 AI 服务器整机与机架集成研究：2026-2027 主线为 GB200/GB300、云厂自研 ASIC、整柜预集成、液冷和现场验收；Flex 管理层称客户需求从单品向完整 architecture 迁移 | AI rack 项目延期，客户把整柜预集成收回 OEM/ODM，自研 ASIC 节奏慢；需求仍增长但低于当前 FY2027 目标 | AI rack、液冷 ready rack、compute/storage/network integration 正常放量，NTM 支持 CPI +65%-75% | GB300/ASIC rack 提前交付，客户要求 fully assembled/fully tested rack，Flex 可参与的 architecture 订单加速 | 多个 hyperscaler、neocloud、colo 同时把整柜、液冷、power/cooling architecture 外包，形成非线性需求 | 悲观：低于 FY2027 目标约 10%-20%；基准：支持 CPI 109-116 亿美元；乐观：CPI 可到 125-145 亿美元；极度：CPI 160-200 亿美元 | 基准符合当前预期；乐观高于预期；极度只是 NTM 上限 | 正向：Flex 披露 multiyear contracts across Google、multiple hyperscalers、neoclouds、colos、utilities；反证：客户名/订单金额/取消率未披露 |
+| CPI Power | 项目内机柜级供电研究：2026 主线为 48/50V ORv3/HPR、power shelf、BBU/CESS、busbar、PDU；800VDC 2026H2-2027 设计导入 | 电力接入和 switchgear 项目延期，48V/800VDC 设计导入慢，客户多供压价 | critical power 和 embedded power 跟随 AI 数据中心建设正常放量；Power 继续强于公司平均 | 电力成为上电瓶颈，客户提前锁定 power pod、PDU、switchgear、CESS、power shelf 产能 | 800VDC/sidecar、1MW rack、utility/grid-edge 项目在 NTM 内提前收入化 | 悲观：Power 仍增长但低于 +60%；基准：FY2027 约 41-45 亿美元；乐观：50-58 亿美元；极度：70-85 亿美元 | 基准和当前指引一致；极度需要新增预算和认证解释 | 正向：FY2026 Power +61%；管理层称 Power margin 高于 Cloud；反证：800VDC 仍早期，安全/认证/运维 SOP 可能拖慢 |
+| ITS Communications / AI-adjacent manufacturing | FY2027 指引：ITS flat to up low-single digit；Communications continued momentum in high-speed networking and satellite communications | 普通通信/网络客户库存修正，AI networking 增量被其他 ODM/OEM 捕获 | 高速网络、卫星通信和企业/云制造维持小幅增长 | AI 后端网络、卫星通信和客户平台需求强于预期 | 某些大客户平台放量，但因 Flex 未披露订单，极度需求无法可靠量化 | 悲观：55 亿美元以下；基准：约 56-60 亿美元；乐观：60-65 亿美元；极度：无法可靠量化 | 基准略高于 FY2026；乐观高于当前预期 | 依据为公司 FY2027 指引和行业 AI 网络需求；反证是披露口径无法拆出 AI 收入 |
+| ITS Lifestyle / consumer / low-value markets | FY2026 Lifestyle 56 亿美元，同比 -9%；公司继续去强调低价值市场 | 消费/低价值组合继续下滑，价格压力和客户去库存延续 | 收入低位稳定，管理层以 margin/productivity 为主，不追求低价值增长 | 消费电子和生活方式客户补库存，收入小幅恢复 | 极度乐观不适用，不能因 AI 主题上修 | 悲观：47-51 亿美元；基准：52-56 亿美元；乐观：56-59 亿美元；极度：不纳入 | 基准符合当前预期，主要是抵消项 | 依据为 FY2026 -9% 和管理层低价值市场去强调；反证为消费周期可能波动 |
+| RMS Industrial / Automotive / Healthcare | FY2027 指引：RMS up low-single to mid-single digit；Industrial driven by energy infrastructure、automation、capital equipment；Automotive stabilizing；Healthcare steady growth | 汽车/工业客户需求弱、医疗设备增速放缓 | 工业、医疗稳定增长，汽车企稳；RMS 保持现金流和利润底座 | 能源基础设施、自动化、汽车 compute/power electronics 超预期 | 极度乐观不作为 AI 主线，只能作为公司组合上限 | 悲观：100-103 亿美元；基准：105-108 亿美元；乐观：109-114 亿美元；极度：115-118 亿美元 | 基准符合当前预期；乐观需要工业/医疗订单增强 | 依据为公司 FY2027 指引；反证为周期性工业、汽车需求和监管产品认证周期 |
+
+## 4. 可收入化暴露与收入基数
+
+本步口径：只判断哪些外部需求能进入 Flex NTM 收入表，以及当前可收入化基数是多少；不预测增长、不判断利润率。A 级证据为 FY2026 已披露收入、segment/business-unit 收入和 FY2027 正式指引；C/D 级产品发布、样品、认证或合作不单独进入基准，只能影响乐观或极度乐观。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| CPI Cloud & Cooling | FY2026 business-unit 收入 45 亿美元；Q4 FY2026 CPI 总收入约 18 亿美元但未拆 Cloud/Power | 直接 | 高于普通 EMS，但 Cloud margin 低于 Power；液冷和 architecture mix 可改善 | 40-45 亿美元 | 45 亿美元 | 50-60 亿美元 | 70 亿美元以上作为 NTM 上限 | 基准符合 FY2027 CPI 指引；乐观为 Cloud & Cooling 2H 加速 | A；液冷子产品为 C | 是 | 已披露 FY2026 收入；管理层 FY2027 指引称 Cloud & Cooling 2H 加速 | 进入 NTM 基准；JetCool/SmartSense/SmartPlate 不单独加总，作为 mix 上修 |
+| CPI Power | FY2026 business-unit 收入 21 亿美元；Power FY2026 +61% | 直接 | CPI 内利润属性最强；Power margin 高于 Cloud margin | 20-21 亿美元 | 21 亿美元 | 25-30 亿美元 | 40 亿美元以上作为 NTM 上限 | 基准符合当前收入表；乐观来自 power shelf/critical power/CESS/800VDC design-in | A；800VDC/小产品为 C/D | 是 | 已披露 FY2026 收入；FY2027 CPI +65%-75%；管理层说明 Power 继续强劲 | 进入 NTM 基准；800VDC/1MW rack 只进乐观/极度乐观 |
+| ITS Communications / AI-adjacent manufacturing | FY2026 Communications 收入 55 亿美元 | 部分直接，部分间接 | 普通制造利润率低于 CPI；高端网络/卫星通信 mix 有改善 | 51-55 亿美元 | 55 亿美元 | 58-62 亿美元 | 65 亿美元上限 | 基准符合 ITS flat to low-single；AI 相关占比不可审计 | A；AI 子集为 E/C | 是，但不把全部当 AI 收入 | 已披露收入；FY2027 指引提及 high-speed networking、satellite momentum | 进入公司基准，但 AI 传导保守折扣 |
+| ITS Lifestyle / consumer / low-value markets | FY2026 Lifestyle 收入 56 亿美元，同比 -9% | 间接/非 AI | 低价值组合；公司以 margin/productivity 和去强调为主 | 47-51 亿美元 | 52-56 亿美元 | 56-59 亿美元 | 不适用 | 基准低于 FY2026 run-rate 或持平；不作为增长上修依据 | A | 是 | 已披露收入；管理层说明 consumer-related end markets 仍弱 | 进入公司汇总作为抵消项 |
+| RMS Industrial / Automotive / Healthcare | FY2026 RMS 收入 102 亿美元；Industrial 38 亿、Automotive 36 亿、Healthcare 28 亿 | 直接/间接 | 稳定现金流，margin 约 6%；工业能源和自动化有间接受益 | 100-103 亿美元 | 102 亿美元 | 106-110 亿美元 | 115 亿美元上限 | 基准符合 low-single to mid-single 指引 | A | 是 | 已披露收入；FY2027 RMS 指引 | 进入公司基准；不作为 AI 主题收入 |
+| JetCool liquid cooling 子产品 | 未披露；包含于 CPI Cloud & Cooling | 直接 | 可能高于 CPI 平均，但需认证和现场服务 | 0 | 不单独纳入 | 作为 Cloud & Cooling 内部上修 | 作为极度乐观上限 | 当前预期中只体现为 CPI 指引，不可单独量化 | C | 否，单独不进 | 收购、产品页、Sabey/Broadcom/OCP/Dell 生态是 C 级，不是收入表 | 不单独进 NTM 主表，作为产品 mix 与毛利率变量 |
+| BMR/Power shelf/CESS/VPD/800VDC 子产品 | 未披露；包含于 CPI Power | 直接 | 高价值模块，可能显著高于普通电源代工 | 0 | 不单独纳入 | 作为 CPI Power 内部上修 | 作为极度乐观上限 | 当前预期中只体现为 CPI 指引，不可单独量化 | C/D | 否，单独不进 | 产品发布和资源页不等于订单收入 | 不单独进 NTM 主表，作为乐观/极度乐观触发项 |
+
+## 5. 产品级收入和利润贡献
+
+本步口径：从第一步需求和第二步收入基数出发，判断每个重要产品/业务线在 NTM/FY2027 内能给公司贡献多少收入和利润。收入贡献为 FY2027 收入区间，利润贡献优先用调整后经营利润/segment income 近似；产品级毛利率和 EBITDA 未披露时填“无法可靠量化”并解释。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| CPI Cloud & Cooling | 悲观 | 55-63 亿美元 | 调整后经营利润无法可靠量化；估算低于 6 亿美元 | 低于 CPI 平均 | 低于当前预期 | AI rack 仍增长但验收/液冷/客户站点延迟 | 下行情景保留 | Cloud margin 低于 Power；客户订单金额未披露 |
+| CPI Cloud & Cooling | 基准 | 67-73 亿美元 | 无法可靠量化；估算约 6.5-7.5 亿美元 | 随规模回收 ramp cost，小幅改善 | 符合当前预期 | FY2027 CPI +65%-75%；Cloud & Cooling 2H FY2027 加速 | 保留 | GPU/液冷/电力/现场验收不同步 |
+| CPI Cloud & Cooling | 乐观 | 80-92 亿美元 | 无法可靠量化；估算约 8-10 亿美元 | 改善 | 高于当前预期 | 客户把整柜、液冷、compute architecture 更多交给 Flex | 保留但需 Q1/Q2 run-rate 验证 | ODM/OEM 竞争和客户自建替代 |
+| CPI Cloud & Cooling | 极度乐观 | 100-120 亿美元 | 无法可靠量化；估算约 11-14 亿美元 | 明显改善但不自动非线性 | 极高于当前预期 | 多 hyperscaler/neocloud/colo 同时 architecture 化采购 | 低可信上限 | 没有披露足够客户份额和订单金额 |
+| CPI Power | 悲观 | 35-39 亿美元 | 无法可靠量化；估算约 3.5-4.0 亿美元 | 仍较高但低于预期 | 低于当前预期 | Power 需求强但交期/认证/客户多供压价 | 下行情景保留 | 800VDC 仍早期；switchgear/PDU 项目可能延期 |
+| CPI Power | 基准 | 41-45 亿美元 | 无法可靠量化；估算约 4.5-5.2 亿美元 | 高于 Cloud；CPI margin +100bps 主要来源之一 | 符合当前预期 | FY2026 Power +61%；管理层称 Power margin 高于 Cloud | 保留 | 产品 mix、成本回收和现场交付必须兑现 |
+| CPI Power | 乐观 | 50-58 亿美元 | 无法可靠量化；估算约 6.0-7.2 亿美元 | 扩张 | 高于当前预期 | critical power、power shelf、CESS、embedded power 订单增强 | 保留 | Vertiv/Schneider/Eaton/Delta 等强竞争 |
+| CPI Power | 极度乐观 | 70-85 亿美元 | 无法可靠量化；估算约 9-12 亿美元 | 显著扩张 | 只代表上限 | 800VDC/1MW rack、utility/grid-edge、power pod 同时放量 | 保留为低可信上限 | 安全、UL/IEC、运维 SOP 和客户保守性 |
+| ITS Communications / AI-adjacent manufacturing | 悲观 | 51-55 亿美元 | 按 ITS margin 估算约 2.7-3.0 亿美元 | 持平或下降 | 低于当前预期 | 通信/网络客户库存修正 | 保留 | AI 子集不可审计，不得全部当 AI 收入 |
+| ITS Communications / AI-adjacent manufacturing | 基准 | 56-60 亿美元 | 约 3.1-3.4 亿美元 | 小幅改善 | 符合当前预期 | FY2027 ITS flat to low-single；Communications momentum | 保留 | AI 网络收入份额未披露 |
+| ITS Communications / AI-adjacent manufacturing | 乐观 | 60-65 亿美元 | 约 3.4-3.9 亿美元 | 小幅改善 | 高于当前预期 | 高速网络、卫星通信、云平台制造强于预期 | 保留 | 多供、客户指定 BOM、低毛利制造属性 |
+| ITS Communications / AI-adjacent manufacturing | 极度乐观 | 67-72 亿美元 | 约 4.0-4.5 亿美元 | 改善但有限 | 上限 | 大客户平台放量 | 降低可信度 | 证据不足，不能用行业 AI 网络 TAM 替代公司订单 |
+| ITS Lifestyle / consumer / low-value markets | 悲观 | 47-51 亿美元 | 约 2.2-2.6 亿美元 | 下行 | 低于当前预期 | consumer-related end markets 继续弱 | 保留 | 低价值组合拖累 |
+| ITS Lifestyle / consumer / low-value markets | 基准 | 52-56 亿美元 | 约 2.6-3.0 亿美元 | 稳定 | 符合当前预期 | 公司去强调低价值市场，关注 productivity | 保留 | 不应因 AI 叙事上修 |
+| ITS Lifestyle / consumer / low-value markets | 乐观 | 56-59 亿美元 | 约 3.0-3.2 亿美元 | 稳定 | 略高于预期 | 消费/生活方式补库存 | 仅作公司组合上限 | 周期修复不改变 AI 传导 |
+| ITS Lifestyle / consumer / low-value markets | 极度乐观 | 无法可靠量化 | 无法可靠量化 | 不适用 | 不纳入 | 与本方案主线无关 | 排除 | 不是 NTM AI/价值传导核心 |
+| RMS Industrial / Automotive / Healthcare | 悲观 | 100-103 亿美元 | 约 5.8-6.2 亿美元 | 稳定或小幅下行 | 低于当前预期 | 工业/汽车需求弱 | 保留 | 周期和客户认证节奏 |
+| RMS Industrial / Automotive / Healthcare | 基准 | 105-108 亿美元 | 约 6.4-6.9 亿美元 | 稳定小升 | 符合当前预期 | FY2027 RMS low-single to mid-single | 保留 | 不是 AI 主增量 |
+| RMS Industrial / Automotive / Healthcare | 乐观 | 109-114 亿美元 | 约 7.0-7.6 亿美元 | 小幅改善 | 高于当前预期 | 工业能源、自动化、医疗稳健 | 保留 | 汽车/工业周期 |
+| RMS Industrial / Automotive / Healthcare | 极度乐观 | 115-118 亿美元 | 约 7.5-8.1 亿美元 | 小幅改善 | 上限 | 工业基础设施和汽车 power electronics 同时好转 | 保留为组合上限 | 与 CPI 增长不应重复计算 |
+
+## 6. 公司收入和利润四情景
+
+本步口径：把产品级贡献合成为公司 NTM/FY2027 总收入、毛利率、经营利润率、净利润和自由现金流方向。公司层面先与自身 FY2027 指引比较，再判断是否真正高于当前预期。第一个表固定为公司收入和利润四情景。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 300-315 亿美元 | +7%-13% | 低于 FY2027 指引 323-338 亿美元；CPI 仍增长但低于 +65%-75% | 调整后毛利率约 9.5%-9.8% | 调整后经营利润率约 6.2%-6.6% | EBITDA 无法可靠量化；调整后净利润估算约 12-14 亿美元 | 低于 FY2026 或持平，约 6-10 亿美元，因库存/应收和 CapEx 压力 | 中 | 电力接入、液冷认证、站点验收、客户 capex 消化导致收入递延 |
+| 基准公司 | 323-338 亿美元 | +16%-21% | 符合 FY2027 管理层指引；CPI 109-116 亿美元，+65%-75% | 调整后毛利率约 10.0%-10.3% | 调整后经营利润率 7.0%-7.1% | EBITDA 无法可靠量化；调整后 EPS 4.21-4.51 美元，按约 3.74 亿股约 15.7-16.9 亿美元调整后净利润 | 约 60% FCF conversion；但 CapEx 14-16 亿美元使 FCF 对验收和营运资本敏感 | 高 | CPI 高增长是否按季度爬坡，并把 FY2026 投资成本回收 100bps+ |
+| 乐观公司 | 345-370 亿美元 | +24%-33% | 高于当前指引；CPI 125-145 亿美元，且不是单一小基数项目 | 调整后毛利率约 10.3%-10.8% | 调整后经营利润率约 7.2%-7.8% | EBITDA 无法可靠量化；调整后净利润估算约 18-21 亿美元 | 改善到 13-18 亿美元，但取决于客户预付款、库存和应收周转 | 中 | 需要 Power、液冷、服务 mix 同步改善，不能只是 compute/rack pass-through |
+| 极度乐观公司 | 390-430 亿美元 | +40%-54% | 显著高于当前预期；CPI 160-200 亿美元，成长业务成为主要增长引擎 | 调整后毛利率约 10.8%-11.5% | 调整后经营利润率约 8.0%-8.7% | EBITDA 无法可靠量化；调整后净利润估算约 23-28 亿美元 | 可能改善，但若扩产/库存/应收同步放大，FCF 不一定跟随利润非线性增长 | 低到中 | 多个核心环节必须同时成立：客户份额、Power/液冷认证、产能、站点验收、营运资本 |
+
+汇总检查：
+
+| 检查项 | 处理 |
+| --- | --- |
+| 产品重复计算 | CPI Cloud & Cooling 和 CPI Power 按公司 FY2026 business-unit 收入分开；JetCool、CESS、BMR、power shelf 不单独加总，只作为内部 mix 变量 |
+| 一次性/并购 | Crown、JetCool、Poland power facility、Electrical Power Products 已体现在 CPI 资产和 FY2027 预期中；不把并购年化作为单独新增收入 |
+| 传统业务抵消 | ITS Lifestyle 继续作为抵消项；RMS 是现金流底座而非 AI 增长主线 |
+| 低毛利 pass-through | CPI Power 和液冷/服务 mix 需要单独验证；Cloud/rack integration 的收入上修不能自动等同利润上修 |
+| 会计口径 | 使用调整后经营利润率作为经营主表；GAAP 净利润受重组、摊销、税和拆分成本影响，无法可靠精确预测 |
+
+## 7. 证据校准、反证和可信度
+
+本步口径：不重新预测经营结果，只校准前四步情景。正向证据只提升其实际影响的层级；反证只限制实际传导环节；同一风险不重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2027 总收入 323-338 亿美元、调整后经营利润率 7.0%-7.1% 指引 | 公司汇总 | 支持基准公司收入 | 支持基准经营利润率提升 | FCF conversion 约 60%，但仍受 CapEx 和营运资本约束 | 基准保留 |
+| FY2026 CPI 66 亿美元，Cloud & Cooling 45 亿美元、Power 21 亿美元 | 收入基数 | A 级收入表证据，支持 CPI 进入基准 | Power 高于 Cloud margin，支持 mix 改善 | 已经有规模化交付，不是概念业务 | 基准保留 |
+| SpinCo FY2027 +65%-75%、FY2028 +80%+ 目标 | 产品贡献/公司汇总 | 支持 FY2027 CPI 109-116 亿美元；FY2028 只作补充 | 管理层预计 CPI 收回 FY2026 投资 100bps+ | 说明客户项目/产能承诺可见，但未披露 backlog | FY2027 基准保留；FY2028 移入附录 |
+| Google、多 hyperscaler、neocloud、colo、utility multiyear contracts 表述 | 收入基数/执行可信度 | 支持乐观需求和收入化路径 | 若客户采购 full architecture，则利润率更好 | 多客户降低单一客户风险，但订单金额未披露 | 乐观保留，可信度中 |
+| Power margin 高于 Cloud margin | 利润率 | 不直接提高收入 | 支持 CPI 利润率上修 | 若 Power 占比提高，FCF 质量更好 | 基准和乐观保留 |
+| JetCool、SmartSense CDU、SmartPlate、液冷生态 | 产品贡献 | C 级证据，不能单独进基准收入 | 可能提高 Cloud & Cooling mix | 认证、漏液、设施水路和现场服务决定兑现 | 乐观保留；单独收入仅作跟踪 |
+| BMR/Power shelf/CESS/VPD/800VDC | 产品贡献 | C/D 级证据，不能单独进基准收入 | 高价值电源模块可提高 Power margin | 认证和安全规范周期较长 | 乐观保留；800VDC 极度乐观低可信 |
+| 电力接入、switchgear、液冷和现场验收延迟 | 收入确认/现金流 | 可能把收入从 NTM 推迟 1-2 个季度 | 延迟会降低利用率并增加项目成本 | 库存、应收、CapEx 和 FCF 压力上升 | 悲观保留；不在需求层重复惩罚 |
+| 竞争压价：Vertiv、Schneider、Eaton、Delta、Jabil、Celestica、Quanta/Wiwynn | 份额/价格/利润率 | 限制 Flex share 和 ASP | 限制极度乐观利润率 | 可能迫使客户多供，降低替换成本 | 乐观下限保留；极度乐观低可信 |
+| ITS Lifestyle 低价值市场弱 | 公司组合 | 抵消公司总收入增量 | 有助于 mix 优化但压低收入 | 非核心现金流风险 | 基准公司保留该抵消项 |
+| RMS 稳定增长 | 公司组合 | 提供 low-single/mid-single 增长 | 提供约 6% margin 稳定底座 | 支撑现金流 | 基准保留，不用作 AI 上修 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | FY2027 收入 300-315 亿美元，CPI 增长低于 +65%-75%，经营利润率 6.2%-6.6% | FY2026 CPI 已有 66 亿美元基数，订单取消概率低于普通消费电子 | 电力/液冷/验收递延、客户 capex 消化、库存/应收上升 | 保留 | 下行情景 | 中 | 电力接入延迟只在收入确认和现金流层处理，不再重复压低外部需求 |
+| 基准 | FY2027 收入 323-338 亿美元，调整后经营利润率 7.0%-7.1%，CPI 109-116 亿美元 | A 级收入表、正式 FY2027 指引、CPI business-unit 收入、FY2026 FCF | CPI backlog/客户金额未披露；Cloud margin 低于 Power | 保留 | 最可能情景 | 高 | 客户未披露只限制乐观上修，不否定 A 级指引 |
+| 乐观 | FY2027 收入 345-370 亿美元，CPI 125-145 亿美元，经营利润率 7.2%-7.8% | multiyear contracts、多客户类型、Power 高 margin、液冷和 power shelf 产品化 | 订单金额、份额、ASP 和确认节奏仍需假设 | 保留 | 有证据的上行情景 | 中 | 竞争压价只限制份额/价格，不重复惩罚行业需求 |
+| 极度乐观 | FY2027 收入 390-430 亿美元，CPI 160-200 亿美元，经营利润率 8.0%-8.7% | AI 数据中心 power/cooling/rack integration 需求强；Flex 有端到端组合和扩产计划 | 800VDC/1MW rack 多为早期设计导入；客户订单金额和产能约束未披露；FCF 可能被营运资本吸收 | 保留 | 低可信 NTM 上限 | 低到中 | 远期期权只放极度乐观/附录，不进入基准或普通乐观核心 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。FY2027 收入 323-338 亿美元、调整后经营利润率 7.0%-7.1% 是当前最可靠经营锚。CPI 从 FY2026 66 亿美元升至约 109-116 亿美元是主要传导链，RMS 提供稳定底座，ITS 中 Communications 有小幅正贡献，Lifestyle/consumer 继续作为抵消项。
+- 乐观情景成立条件：Q1/Q2 FY2027 CPI 单季 run-rate 超过 20 亿美元并继续向 25 亿美元以上爬坡；Power 和液冷收入占比提升；CPI margin 比 FY2026 至少改善 100bps；库存和应收没有明显恶化。
+- 极度乐观情景成立条件：多个 hyperscaler/neocloud/colo/utility 客户把 compute + power + cooling + rack + commissioning 的完整 architecture 交给 Flex；Power、JetCool、CESS、power shelf、800VDC/sidecar、critical power 共同放量；现场验收不拖慢收入确认；增长不被营运资本吞噬。
+- 悲观情景触发条件：FY2027 初期 CPI 收入停留在 Q4 FY2026 18 亿美元附近，无法显示 +65%-75% 所需 run-rate；电力接入、switchgear、液冷可靠性或客户站点 commissioning 延误；公司仍维持收入增长但毛利率/经营利润率不能同步提升。
+- 后续跟踪数据：Q1 FY2027 收入、CPI 收入和 margin；Cloud & Cooling vs Power 增速；Form 10 中 SpinCo 客户集中、资本结构、CapEx、毛利率和产品收入拆分；库存、应收、应付、FCF conversion；JetCool/SmartSense/SmartPlate 客户认证；power shelf/CESS/BMR720/800VDC 的订单或平台导入。
+
+NTM 收入结论：Flex 的 NTM 收入传导主线清晰，基准有 A 级证据支撑。外部 AI 数据中心需求先进入 CPI 的 Cloud & Cooling 和 Power，再通过 rack integration、critical power、embedded power、液冷和现场服务进入收入表。FY2027 公司收入主表应锚定 323-338 亿美元，不应把 FY2028 +80%+ SpinCo 目标提前计入基准。
+
+利润/现金流结论：利润传导强于普通 EMS，但仍需校准。Power、critical power、embedded power、液冷和服务 mix 可以解释经营利润率从 FY2026 6.3% 到 FY2027 7.0%-7.1%；但如果增长主要来自低毛利 compute/rack assembly 或客户指定 BOM，收入增长会弱化为 pass-through。现金流最大风险是 CapEx、库存、应收和项目验收，而不是会计收入。
+
+主要传导瓶颈：从需求到收入的瓶颈是电力、液冷、客户认证和现场验收；从收入到利润的瓶颈是 Power/液冷/服务 mix 与成本回收；从利润到现金流的瓶颈是营运资本和扩产 CapEx。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Flex FY2026 财务截至 2026-03-31；Q4/FY2026 results 和 FY2027 指引发布于 2026-05-05；本报告撰写日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Flex FY2026 Form 10-K：`https://www.sec.gov/Archives/edgar/data/866374/000086637426000012/flex-20260331.htm`
+  - Flex Q4/FY2026 results：`https://investors.flex.com/news/news-details/2026/FLEX-REPORTS-FOURTH-QUARTER-AND-FISCAL-2026-RESULTS/default.aspx`
+  - Flex Q4 FY2026 earnings presentation：`https://s202.q4cdn.com/732614612/files/doc_earnings/2026/q4/presentation/Flex_EP_FY26Q4.pdf`
+  - Flex FY2026 Q4 earnings transcript：`https://s202.q4cdn.com/732614612/files/doc_earnings/2026/q4/transcript/FLEX_FY26Q4_Transcript.pdf`
+  - Flex SpinCo announcement：`https://www.prnewswire.com/news-releases/flex-announces-intention-to-spin-off-its-cloud-and-power-infrastructure-segment-into-a-new-independent-publicly-traded-company-302763151.html`
+- 产品和技术来源：
+  - Flex data center solutions：`https://flex.com/industries/data-center`
+  - Flex 2024 OCP liquid-cooled rack and power solutions：`https://investors.flex.com/news/news-details/2024/Flex-Announces-Liquid-Cooled-Rack-and-Power-Solutions-for-AI-Data-Centers-at-2024-OCP-Global-Summit/default.aspx`
+  - Flex acquires JetCool：`https://investors.flex.com/news/news-details/2024/Flex-Acquires-JetCool-to-Expand-Data-Center-and-Power-Portfolio/default.aspx`
+- 项目内公司资料：
+  - `公司调研/AI服务器_存储_EMS/FLEX_Flex_Ltd_公司调研_2026-06-11.md`
+- 项目内行业资料：
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2027 是 NTM 主口径。FY2028 SpinCo +80%+ 目标只用于判断多年度 pipeline，不进入基准。
+  - 800VDC、1MW rack、Rubin/Helios/后续 ASIC rack、two-phase/liquid-cooled busbar 属于高弹性方向；只有在披露客户、时间表、收入确认和利润属性后，才能从极度乐观/附录进入基准。
+  - JetCool 和 Flex Power Modules 的单品收入未披露，不能单独加总到公司收入；本报告只把它们作为 CPI 内部 mix、margin 和极度乐观上限的校准因素。

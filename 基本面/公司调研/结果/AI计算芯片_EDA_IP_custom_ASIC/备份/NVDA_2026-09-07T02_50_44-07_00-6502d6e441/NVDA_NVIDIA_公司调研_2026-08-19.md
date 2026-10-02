@@ -1,0 +1,591 @@
+# NVIDIA（NVDA）：从 GPU 供应商到全栈 AI 基础设施平台的公司尽调
+
+> 报告日期：2026-08-19（America/Los_Angeles）  
+> 公司：NVIDIA Corporation（NASDAQ: NVDA）  
+> 财务口径：NVIDIA 财年；FY2027 Q1 截至 2026-04-26，FY2027 Q2 指引为截至 2026-07-26 的季度。除特别注明外，金额均为美元。  
+> 研究边界：联网资料以截至本报告日可获得的公司文件、监管文件、客户/供应商一手资料和少量明确标注的产业渠道资料为主；项目内仅交叉验证 `基本面/行业调研/` 的 AI 芯片、服务器、HBM、先进封装、网络/光互联、供电和液冷资料。没有读取其他项目研究目录，也没有修改公司索引。  
+> 重要定义：文中“供应相关承诺”是 NVIDIA 对上游供应商/产能的采购与预付款承诺，不是客户 backlog；“客户项目金额”通常是客户整套 AI 云或数据中心合同，也不是 NVIDIA 可确认收入。产品级收入、毛利率和美元产能若公司未披露，均以“本报告推算”标识，不应与审计财务数字混用。
+
+## 核心结论
+
+NVIDIA 已不宜再仅按“GPU 设计公司”理解。它正在把控制点从单颗加速器扩展到 **GPU/CPU—HBM—NVLink scale-up—InfiniBand/Spectrum-X scale-out—DPU/NIC—整机架—CUDA/Dynamo/NIM/AI Enterprise—云与支持服务**。公司把自身定义为“data-center-scale AI infrastructure company”；FY2027 Q1 数据中心收入 $75.246bn，占总收入 **92.2%**，其中传统口径计算收入 $60.4bn、网络收入 $14.8bn。网络同比增长 **199%**、环比增长 **35%**，说明下一层价值捕获已经从 GPU 向互联、交换和数据处理扩散。[NVIDIA FY2027 Q1 CFO Commentary](https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf)
+
+投资人购买的实质是三项叠加的稀缺性：
+
+1. **计算标准与软件生态**：CUDA、库、模型工具链和七百多万开发者形成最深护城河；切换并非单纯换芯片，而是重写、验证、运维和重新调优整个栈。
+2. **AI 工厂系统级交付能力**：Blackwell Ultra/GB300 已把销售单位从 GPU 推到 72-GPU 液冷机架；Rubin 又把 Vera CPU、Rubin GPU、NVLink 6、ConnectX-9、BlueField-4、Spectrum-6/CPO 绑定为七芯片平台。
+3. **产能与供应链编排能力**：最新库存 $25.797bn、供应相关承诺 $119.0bn，分别约为单季收入的 31.6% 和 145.8%。这既是抢占先进晶圆、HBM、封装、光学与系统产能的进攻性壁垒，也是需求错配时最大的营运资本风险。[NVIDIA FY2027 Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm)
+
+当前基本面仍极强：Q1 收入同比 +85%，数据中心 +92%，GAAP 毛利率 74.9%，经营现金流 $50.344bn，自由现金流 $48.554bn；Q2 指引 $91bn，隐含环比约 +11.5%，且**没有假设任何中国数据中心计算收入**。但估值已预支高持续增长：2026-08-19 约 $219.05/股、市值 $5.344tn、TTM P/E 33.35x、TTM P/S 21.08x；FY2027 调整后 EPS 一致预期口径对应约 25.5x forward P/E。核心争议不是“AI 是否增长”，而是 NVIDIA 能否在 Rubin 换代、客户自研 ASIC、AMD/TPU/Trainium、开放互联和出口限制同时存在时，维持 70% 上下的系统毛利和当前增速。
+
+本报告的未来 12 个月独立情景为：
+
+| 情景 | 未来 12 个月公司收入 | 较当前 TTM $253.5bn | 主要条件 | 判断 |
+|---|---:|---:|---|---|
+| 基准 | $500–530bn，中值 $515bn | +97% 至 +109% | Blackwell Ultra 持续放量；Rubin H2 按期爬坡；网络仍快于计算；HBM4/封装/电力不发生系统性中断 | 最可能，但仍高于普通半导体周期的可见度要求 |
+| 乐观 | $565–615bn，中值 $590bn | +123% 至 +143% | Rubin 在云厂商和 ACIE 同时快速认证；Spectrum-X/CPO 与 GPU 高绑定；客户资本开支继续上修 | 与外部 FY2028 收入一致预期约 $562bn 的上沿相近至略高 |
+| 极度乐观 | $650–720bn，中值 $685bn | +156% 至 +184% | Rubin/HBM4 良率快速成熟；AI 推理 token 需求超预期；大型客户不延单；供电和液冷瓶颈被顺利解除 | 需要多个瓶颈同时向好，不应作为基准估值依据 |
+
+最大上行来自 Rubin 平台、网络/CPO、ACIE 主权与企业 AI 工厂，以及尚未被财务报表单列的软件和推理服务；最大下行来自客户集中、建设电力约束、上游长期承诺、客户自研 ASIC 替代、出口管制和 GPU/机架世代切换中的减值。
+
+## 1. 公司整体业务、投资人定位与三年变动
+
+### 1.1 业务结构与产业链位置
+
+NVIDIA 是无晶圆厂半导体及系统平台公司：自研芯片、互联和软件，由 TSMC 等代工，依赖 HBM 厂商、先进封装/基板、ODM/OEM、光学和液冷供应商，最终通过云厂商、服务器厂商、主权 AI 项目、企业和边缘设备变现。它处在 AI 产业链的**架构与平台控制层**，上游不拥有晶圆厂、HBM 厂或大规模数据中心电力，下游又不直接拥有大多数终端客户工作负载；其议价权来自架构、CUDA 生态、系统协同和稀缺产能编排。
+
+FY2027 Q1 起，公司把市场平台改为更符合 AI 工厂商业模式的新口径：[Q1 新闻稿](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027)
+
+| 新口径 | Q1 FY27 收入 | 占总收入 | Q/Q | Y/Y | 实质内容 |
+|---|---:|---:|---:|---:|---|
+| Hyperscale | $37.869bn | 46.4% | +12% | +115% | 公有云和最大型消费互联网公司；约占数据中心 50% |
+| AI Clouds, Industrial & Enterprise（ACIE） | $37.377bn | 45.8% | +31% | +74% | GPU 云、AI 原生云、企业、工业、主权 AI 工厂 |
+| Edge Computing | $6.369bn | 7.8% | +10% | +29% | RTX PC/工作站、游戏机、AI-RAN、机器人、汽车等 agentic/physical AI 设备 |
+| 合计 | **$81.615bn** | **100%** | **+20%** | **+85%** | 数据中心与边缘两大平台 |
+
+旧口径仍有助于看清价值来源：Q1 数据中心计算 $60.4bn，占总收入 74.0%；数据中心网络 $14.8bn，占 18.1%；其余 Edge $6.369bn，占 7.8%。换言之，AI 加速计算仍是发动机，但网络已成为第二增长曲线。
+
+### 1.2 投资人心中的 NVIDIA
+
+市场通常同时赋予 NVIDIA 四种身份：
+
+- **AI 算力“收费站”**：每一代前沿模型训练、推理扩容都直接增加 GPU、HBM 和网络需求。
+- **事实标准平台**：离散数据中心 GPU 市场的控制力与 CUDA 生态相互强化。欧盟在审查 Run:ai 交易时也把 NVIDIA 描述为很可能在离散数据中心 GPU 领域占主导地位。[European Commission — Run:ai clearance](https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_24_6548/IP_24_6548_EN.pdf)
+- **AI 工厂总架构师**：GB300/Rubin 的单位从卡变成液冷 rack、pod 和整座 AI 工厂，连接器、网络、DPU、软件均可附加销售。
+- **高增长但资本承诺迅速上升的平台公司**：公司本身资本开支轻于晶圆厂，但用 $119bn 供应承诺、$30bn 多年云服务承诺和战略投资锁定生态；经济风险只是从固定资产转成了采购、预付款、投资和保函。
+
+这种身份决定估值敏感度：当训练与推理需求强于供给时，NVIDIA 像平台软件公司；当客户建设延迟或代际切换时，它仍会暴露出半导体库存、良率和单一产品周期风险。
+
+### 1.3 最近三年的重大转型、收购和战略动作
+
+| 时间 | 事件 | 业务含义与尽调判断 |
+|---|---|---|
+| 2023 | Grace 数据中心 CPU 进入产品化 | 从 GPU 附加卡扩展为 CPU+GPU+互联完整计算节点，减少 x86 主机对平台控制的限制 |
+| 2024 | Blackwell/GB200 NVL72 发布并转向 72-GPU 液冷 rack | 销售单位、ASP 和系统 BOM 明显上移；同时把液冷、供电、铜缆、交换和集成变成成套交付瓶颈 |
+| 2024-12 | 完成 Run:ai 收购 | 获得 GPU 调度与编排软件，强化异构集群利用率和软件锁定；欧委会无条件批准，但竞争审查本身说明平台捆绑风险 |
+| 2024-12 | 收购 VinBrain | 加入医疗影像和医疗 AI 人才/IP，规模不大，战略意义是垂直模型与应用栈；[NVIDIA Vietnam/Thailand sovereign AI update](https://blogs.nvidia.com/blog/thailand-vietnam-sovereign-ai/) |
+| 2025 | Blackwell Ultra/GB300 和一年一代路线图 | 计算性能、HBM 容量和机架功率继续抬升，缩短产品世代、加快客户折旧，也提高供应链执行要求 |
+| 2025-05 | 推出 NVLink Fusion | 允许合作方把自研 CPU/XPU 接入 NVIDIA scale-up fabric，是对客户 custom ASIC 的“包容式防御”：即使不卖全部 GPU，也力争收互联和平台价值；[NVLink Fusion announcement](https://nvidianews.nvidia.com/news/nvidia-nvlink-fusion-semi-custom-ai-infrastructure-partner-ecosystem) |
+| 2025-09 至 12 | 以 $23.28/股投资 Intel $5bn，并合作定制 x86 数据中心 CPU 和 x86+RTX PC SoC | 不等于收购 Intel；目标是把 NVLink/RTX 嵌入 x86 生态并扩大 CPU 选择，亦带来对一家转型中晶圆厂/CPU 厂的资本风险；[Intel–NVIDIA announcement](https://www.intc.com/news-events/press-releases/detail/1750/nvidia-and-intel-to-develop-ai-infrastructure-and-personal) |
+| 2025-12 | 与 Groq 签非独家 LPU 技术许可并吸收团队，交易总对价约 $17bn | **不是收购 Groq 公司、客户或产品**。10-K 披露约 $13bn 已付、$4bn 待付，确认约 $14.4bn 商誉及 $2.5bn/5 年技术无形资产；用于补齐低延迟推理，但回报尚无收入证据；[NVIDIA FY2026 10-K](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm) |
+| 2026 | Vera Rubin 七芯片平台投入生产；报表改为 Hyperscale/ACIE/Edge | 经营重心由“卖 GPU”正式改成“部署 AI 工厂”；Rubin 的 HBM4、NVLink 6、800G/1.6T 网络、CPO、BlueField-4 和软件共同决定交付 |
+
+### 1.4 当期股价、估值和盈利质量
+
+| 指标 | 数值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | **$219.05** | 2026-08-19 17:59 UTC 附近 | 盘中快照；实时价格会变化，可用 [Nasdaq NVDA quote](https://www.nasdaq.com/market-activity/stocks/nvda) 复核 |
+| 市值 | **$5.344tn** | 同上 | 约 24.4bn 稀释/流通股量级乘股价 |
+| TTM P/E | **33.35x** | 同上；TTM EPS 约 $6.57 | Q1 GAAP 净利润含 $15.936bn 股权证券净收益，故该倍数比经常性盈利口径更低 |
+| Forward P/E | **25.5x（FY27）/18.1x（FY28）** | 2026-08-19；调整后 EPS 一致预期 $8.59/$12.13 | 依据 [Barchart earnings estimates](https://www.barchart.com/stocks/quotes/NVDA/earnings-estimates)；分析师口径会更新 |
+| TTM P/S | **21.08x** | 市值 / TTM 收入 $253.491bn | 高于一般半导体公司，隐含长期平台毛利和高增长 |
+| TTM 收入增速 | **+70.7%** | 最近四季 $253.491bn / 前四季 $148.515bn - 1 | 最新单季同比 +85% |
+| TTM GAAP 毛利率 | **约 74.1%** | 最近四季按收入加权 | Q1 FY26 的 H20 费用已滚出 TTM |
+| TTM GAAP 净利率 | **约 63.0%** | 最近四季净利润 $159.613bn / 收入 $253.491bn | 被 Q1 FY27 $15.936bn 股权证券净收益明显抬高；最新单季 non-GAAP 净利率为 55.8% |
+
+外部一致预期截至 2026-08-19 约为 FY2027 收入 $393.9bn（+82.4%）、FY2028 $562.1bn（+42.7%）；这是估值锚而非本报告预测。[StockAnalysis NVDA forecast](https://stockanalysis.com/stocks/nvda/forecast/)
+
+### 1.5 资产负债表健康度
+
+最新 10-Q 显示资产负债表在静态意义上非常健康，但经营承诺远大于账面债务：
+
+| 项目（2026-04-26） | 数值 | 评估 |
+|---|---:|---|
+| 流动资产 / 流动负债 | $150.995bn / $43.884bn | 流动比率 **3.44x**，短债压力低 |
+| 现金、现金等价物和可交易债券 | $50.335bn | 可覆盖有息债务约 5.9 倍 |
+| 可交易股权证券 | $30.237bn | 流动性强但市值波动会穿透 GAAP 净利润 |
+| 有息债务 | $8.470bn | 债务/资产约 **3.3%**；仅以现金及债券计净现金 $41.865bn |
+| 总资产 / 总负债 / 股东权益 | $259.474bn / 约 $64.0bn / $195.474bn | 负债率约 **24.7%**，偿债风险很低 |
+| 应收账款 / DSO | $40.710bn / 45 天 | DSO 环比从 51 天降至 45 天；但前三大直接客户占应收 64% |
+| 库存 | $25.797bn | 较 FY26 Q1 $11.3bn 增逾一倍，支持增长也放大换代减值风险 |
+| 供应相关承诺 | $119.0bn | 约 1.46 倍最新单季收入，且部分交期超过 12 个月；是最应监控的表外经营杠杆 |
+| 多年云服务承诺 | $30.0bn | 支撑研发/内部计算，但形成固定支出；Q1 环比增加 $3bn |
+| 条件性投资承诺 | $27.0bn | 公司预计在 FY27 余下期间投入，受若干条件约束；不全是当期现金流，但规模超过账面有息债务三倍 |
+| 尚未起租的数据中心租赁义务 | $32.4bn | 预计 FY27 Q2–FY33 开始，期限 3–20 年；体现内部研发算力和机房需求的长期固定成本 |
+| 合作伙伴设施租赁保函 | 最大毛敞口 $3.5bn；伙伴已存托管资金 $0.712bn | 伙伴违约时形成信用敞口；以 warrants 换取，当前公允价值不重大，但带有客户/生态融资性质 |
+| 经营现金流 / 自由现金流 | $50.344bn / $48.554bn | 单季现金创造极强，足以覆盖研发、回购和大部分承诺滚动需求 |
+
+健康度结论为 **强（4.5/5）**：净现金、超高毛利和自由现金流提供巨大缓冲。但应把五项“债务之外”的风险纳入估值：供应承诺与库存、长期云/租赁义务、战略投资及其市值波动、生态伙伴信用支持、客户与应收集中。Q1 三大直接客户收入占比分别约 21%、17%、16%，合计 **54%**；应收占比分别约 30%、18%、16%，合计 **64%**。此外，公司有约 $3.121bn 与超额库存/采购义务有关的负债，并在 Q1 计提约 $0.8bn 库存准备、约 $1.1bn 库存及购买义务费用，证明供需错配并非理论风险。[NVIDIA FY2027 Q1 10-Q PDF](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/927dc2d6-a76c-4006-9f34-8769b2c665fb.pdf)
+
+## 2. 最新与最近四次财报：五季度经营拆解
+
+### 2.1 财务和业务收入
+
+下表均为公司披露；“Edge/非数据中心”采用新口径重列值或总收入减数据中心值。金额为十亿美元。
+
+| 财报季度（期末） | 收入；Q/Q；Y/Y | GAAP 毛利率 | GAAP 营业利润；营业率 | GAAP 净利润；净利率 | 数据中心 | 其中计算 | 其中网络 | Edge/非数据中心 | AI 数据中心收入占比 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| FY26 Q1（2025-04-27） | $44.062；+12%；+69% | 60.5% | $21.638；49.1% | $18.775；42.6% | $39.112（+73% Y/Y） | $34.155（+76%） | $4.957（+56%） | $4.950 | **88.8%** |
+| FY26 Q2（2025-07-27） | $46.743；+6%；+56% | 72.4% | $28.440；60.8% | $26.422；56.5% | $41.096（+56%） | $33.844（+50%） | $7.252（+98%） | $5.647 | **87.9%** |
+| FY26 Q3（2025-10-26） | $57.006；+22%；+62% | 73.4% | $36.010；63.2% | $31.910；56.0% | $51.215（+66%） | $43.028（+56%） | $8.187（+162%） | $5.791 | **89.8%** |
+| FY26 Q4（2026-01-25） | $68.127；+20%；+73% | 75.0% | $44.299；65.0% | $42.960；63.1% | $62.314（+75%） | $51.334（+58%） | $10.980（+263%） | $5.813 | **91.5%** |
+| **FY27 Q1（2026-04-26）** | **$81.615；+20%；+85%** | **74.9%** | **$53.536；65.6%** | **$58.321；71.5%** | **$75.246（+92%）** | **$60.4（+77%）** | **$14.8（+199%）** | **$6.369** | **92.2%** |
+
+来源：[FY26 Q1](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2026)、[FY26 Q2](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2026)、[FY26 Q3](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2026?page=478)、[FY26 Q4](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026)、[FY27 Q1](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027)。
+
+需要对净利率做两点调整：
+
+- FY26 Q1 的 H20 出口限制造成 $4.5bn 库存和采购义务费用，压低 GAAP 毛利率至 60.5%；剔除该项后公司给出的 non-GAAP 毛利率约 71.3%。当季已售 H20 约 $4.6bn，另有约 $2.5bn 无法发货，FY26 Q2 指引因此减少约 $8bn 中国收入机会。
+- FY27 Q1 的 $58.321bn GAAP 净利润含 $15.936bn 股权证券净收益；同季 non-GAAP 净利润 $45.548bn、净利率 **55.8%**。不能把 71.5% 单季 GAAP 净利率线性外推。
+
+最近四季合计（FY26 Q2–FY27 Q1）收入 $253.491bn，其中数据中心 $229.871bn（90.7%）、计算 $188.606bn（74.4%）、网络 $41.219bn（16.3%）、Edge/其余 $23.620bn（9.3%）。网络规模已接近一年前整家公司一个季度的收入。
+
+### 2.2 各项业务增长、利润率和侧重点
+
+公司没有披露 GPU、网络、软件、汽车等产品级毛利率；可审计的最细利润率只到报告分部。FY27 Q1 Compute & Networking 收入 $74.550bn，分部营业利润约 $53.335bn，对应分部营业率约 **71.5%**；Graphics 收入 $7.065bn，分部营业利润 $2.941bn，对应约 **41.6%**。这些是未分摊部分公司级费用前的分部营业率，不是产品毛利率，且无法据此准确拆出 GPU 与网络毛利。[NVIDIA FY2027 Q1 10-Q PDF](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/927dc2d6-a76c-4006-9f34-8769b2c665fb.pdf)
+
+五季度趋势清晰：
+
+- 数据中心收入占比从 88.8% 升至 92.2%，计算仍是绝对主体。
+- 网络从 $4.957bn/季增至 $14.8bn/季，五季度约三倍，增速连续显著快于计算；Blackwell 机架对 NVLink、InfiniBand、Spectrum-X、ConnectX 和 BlueField 的绑定正在提高附加值。
+- Edge 从 $4.95bn 增至 $6.369bn，Q1 同比 +29%，明显低于数据中心但并非停滞；其中 Blackwell 工作站需求强，消费 PC 受内存和系统价格拖累。
+- 毛利率在 H20 冲击后恢复到约 75%，说明 Blackwell 的复杂封装、液冷和系统爬坡暂未破坏整体定价权；但早期 Rubin 毛利可能受 HBM4、双芯粒封装和整机集成成本影响。
+
+### 2.3 订单、交期、bookings、取消率与供应信号
+
+**关键审计结论：NVIDIA 在这五份财报中没有披露标准化的客户 backlog、bookings、bill-to-book、lead time 或取消率。** 因此，下表把“公司可审计数字”与“需求代理变量”分开，绝不把供应承诺当成客户订单。
+
+| 财报季度 | 客户 backlog / bookings / B2B | 库存 | 供应/采购承诺 | 交期、取消和需求代理 | 下一季收入指引 |
+|---|---|---:|---:|---|---:|
+| FY26 Q1 | 未披露 | $11.3bn | $29.8bn | H20 已售 $4.6bn，约 $2.5bn 因许可无法发货；这是监管取消/阻断，不是普通客户取消率 | $45bn ±2%；含中国缺口约 $8bn |
+| FY26 Q2 | 未披露 | $15.0bn | $45.8bn“总采购承诺”，其中混入云服务，**不可与其余季度直接比较** | Blackwell 收入环比约 +17%；计算环比 -1% 主要受 H20 减少约 $4bn；网络环比 +46% | $54bn ±2% |
+| FY26 Q3 | 未披露 | $19.8bn | $50.3bn | 数据中心环比 +25%，网络同比 +162%；库存与承诺先于 Rubin/Blackwell Ultra 继续抬升 | $65bn ±2% |
+| FY26 Q4 | 未披露 | $21.4bn | $95.2bn | 网络环比 +34%；供应承诺单季几乎翻倍，显示公司为后续多个季度锁产能，但不证明客户不可取消订单 | $78bn ±2% |
+| **FY27 Q1** | **未披露** | **$25.8bn** | **$119.0bn** | 公司称已为“未来数个季度之外”锁定库存和产能；DSO 45 天；没有中国 Hopper 数据中心出货 | **$91bn ±2%** |
+
+10-Q 的采购合同条款说明，部分协议可在 firm order 之前取消、改期或调整，供应交期可能超过 12 个月；公司同时确认库存/购买义务准备，故不能用 $119bn 机械推导收入。真正可量化的合同负债也很小：递延收入约 $3.117bn；期限超过一年的合同剩余履约义务约 $2.6bn，约 40% 预计在未来 12 个月确认，而且混合了硬件、软件、云和支持。[NVIDIA FY2027 Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm)
+
+下游渠道给出更强、但仍不能等同 NVIDIA backlog 的验证：
+
+- Dell FY2027 Q1 披露 AI 优化服务器订单 $24.4bn、收入 $16.1bn，并把 FY2027 AI 服务器收入指引提高到 $60bn（同比约 +144%）；电话会披露 AI backlog 约 $51.3bn、客户超过 5,000 家，且需求高于供给，主要约束转向内存。该 backlog 属于 Dell 整机，不是 NVIDIA 收入。[Dell earnings release](https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm)、[Dell earnings call transcript](https://investors.delltechnologies.com/static-files/b63ffff9-b729-403b-a231-c6af05667759)
+- IREN 披露首个 50MW GB300 Horizon 1 已被 Microsoft 接受，是四个 2026 年 50MW 项目的第一座；相关 5 年云合同总值 $9.7bn，并通过 NVIDIA Exemplar Cloud 测试。该金额是 IREN 云服务合同，不是 GPU 采购额，但“已验收+已签长期服务合同”是比意向书更强的交付证据。[IREN 2026-08-13 update](https://iren.gcs-web.com/static-files/49325cad-f6fe-42ba-acd6-b286ede0fb4a)
+- Meta 与 NVIDIA 公布多年部署数百万颗 Blackwell/Rubin GPU 并采用 Spectrum-X，但没有金额与逐季交期；只能视为方向性需求，不可进入确定 backlog。[Meta–NVIDIA infrastructure announcement](https://nvidianews.nvidia.com/news/meta-builds-ai-infrastructure-with-nvidia)
+
+综合判断：客户侧需求强、下游 backlog 大、NVIDIA 供应承诺急升三者互相印证，但缺乏 NVIDIA 自身客户订单金额、取消率和交付窗口，报告只能给情景区间而不能给“真实 backlog 总额”。
+
+## 3. FY2027 Q1 指引、业务占比与产品交叉验证
+
+### 3.1 最新一次财报指引
+
+FY2027 Q2 公司指引如下：[NVIDIA Q1 FY27 CFO Commentary](https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf)
+
+| 指标 | Q2 FY27 指引 | 相对 Q1 实际 | 尽调含义 |
+|---|---:|---:|---|
+| 收入 | $91.0bn ±2%，即 $89.18–92.82bn | 中值 Q/Q +11.5% | 在 $81.6bn 高基数继续双位数环比；年化 run-rate 约 $364bn |
+| 中国数据中心计算 | 假设为 $0 | Q1 也无中国 Hopper DC 出货 | 指引不依赖中国恢复，因此牌照放松是可选上行，收紧仍是长期 TAM 风险 |
+| GAAP / non-GAAP 毛利率 | 74.9% / 75.0%，均 ±50bp | 基本持平 | Blackwell Ultra 与网络增长可抵消新平台爬坡；若 Rubin 提前影响 mix，毛利不一定即时上升 |
+| GAAP / non-GAAP 营业费用 | $8.5bn / $8.3bn | Q/Q +11.5% / +11.4% | 与收入增速相近，研发材料、算力和人员投入仍高 |
+| FY27 税率 | 16%–18% | — | 不含离散项目和税制重大变化 |
+
+FY2027 是 **53 周财年**，Q4 有 14 周；因此全年和跨年一致预期会包含约一周额外销售时间。未来 12 个月模型按实际季度节奏建模，但比较 FY2027 与 52 周财年时必须避免把全部增量都解释为需求改善。[NVIDIA FY2027 Q1 10-Q PDF](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/927dc2d6-a76c-4006-9f34-8769b2c665fb.pdf)
+
+最突出业务并非只有 Hyperscale：ACIE 单季 $37.377bn、环比 **+31%**，增速显著快于 Hyperscale 的 +12%。这意味着 GPU 云、工业、企业和主权 AI 工厂正扩展客户面；同时网络 +199% Y/Y，是收入规模已达 $14.8bn 后仍最快的已披露业务。公司当前的实际侧重点可排序为：**Blackwell Ultra 计算 > Rubin 换代 > NVLink/Spectrum-X/InfiniBand 网络 > CUDA/Dynamo/企业 AI 软件 > physical AI/边缘 > Groq LPU 推理补充**。
+
+### 3.2 业务—产品—收入—毛利交叉表
+
+以下产品级收入和毛利均不是公司分项披露；用财报总量、产品配置、项目内行业模型和渠道数量交叉验证。区间不相加，以免重复计入整机、GPU、网络或软件。
+
+| 业务 | 主要产品/型号 | 当前收入锚（TTM 或最新季） | 本报告产品毛利率推算 | 销售增速证据 | 结论 |
+|---|---|---:|---:|---|---|
+| AI 加速计算 | H100/H200；B200、GB200 NVL72；B300/GB300 NVL72；RTX PRO Server | 数据中心计算 TTM **$188.606bn**；Blackwell/Ultra 估计其中 $150–175bn | Blackwell/Ultra **73%–78%**；早期 Rubin **68%–74%** | Q1 计算 $60.4bn，Q/Q +18%、Y/Y +77%；Blackwell 已为公司收入多数 | 绝对核心，ASP、产能、软件生态和系统绑定均最强 |
+| 下一代 AI 平台 | Vera Rubin NVL72、Rubin CPX、Vera CPU | 截至 Q1 财报确认收入接近 0；H2 开始规模出货 | 爬坡期 **68%–74%**，成熟后可回到 73%–79% | 产品进入 full production；Microsoft Fairwater、CoreWeave 等公布 H2 部署 | 最大换代上行，也是 HBM4、封装和液冷执行风险中心 |
+| AI 网络与 scale-up/scale-out | NVLink 5/6、NVSwitch；Quantum-X800 InfiniBand；Spectrum-X/Spectrum-6 Ethernet；ConnectX-8/9；BlueField-3/4；Spectrum-X Photonics | 官方 TTM **$41.219bn**，Q1 $14.8bn | **68%–76%**；CPO 初期可能低于成熟交换 ASIC | Q1 Q/Q +35%、Y/Y +199% | 已是第二增长曲线；系统绑定提高每 GPU 内容量 |
+| AI 软件、云和支持 | CUDA-X、Dynamo、NIM、NeMo、AI Enterprise、Run:ai、DGX Cloud、Base Command、Omniverse | 公司不单列；本报告估算 TTM **$3–6bn**，大多嵌在硬件/服务；递延收入 $3.117bn、长期 RPO $2.6bn 是上限锚之一 | **85%–95%** 增量毛利；云转售毛利较低 | Dynamo 1.0 宣称可把 Blackwell 生成式/agentic 推理提升最高 7 倍，采用面广但货币化披露不足 | 战略护城河远大于当前可见收入；避免把全部递延收入当纯软件 ARR |
+| Physical/Edge AI | RTX PRO、Jetson Thor/Orin、IGX、DRIVE Thor/Hyperion、Isaac、Omniverse、AI-RAN | Edge TTM **$23.620bn**；其中 AI 工作站/机器人/汽车/AI-RAN 本报告估计 $4–7bn，消费游戏亦包含在 Edge | **55%–70%**，软件占比越高越好 | Edge Q1 +29% Y/Y；Blackwell 工作站强，消费 PC 较弱 | 不应整体忽略；机器人、工业数字孪生和自动驾驶是低基数潜力业务 |
+| 低延迟推理补充 | Groq 3 LPX/LPU；与 GPU 协同的推理 rack | 当前收入约为 0 或不重大；公司仅披露 $17bn 技术许可/团队交易 | 早期硬件 **45%–65%**，规模和软件化后可高于 65% | 产品进入 full production，但无大额客户收入披露 | 潜力小业务，技术速度重要，经济回报和客户采纳尚未验证 |
+| 开放定制互联 | NVLink Fusion、合作伙伴定制 CPU/XPU 接口与 IP | 当前直接收入接近 0，可能含在网络/许可中 | IP/交换硅成熟后 **75%–90%** | Marvell 等加入生态；尚无单独收入或大规模量产数字 | 对 custom ASIC 的防御性期权，可能牺牲部分 GPU 份额换取互联标准控制 |
+
+### 3.3 重点产品规格与官方/渠道核验
+
+#### Blackwell Ultra / GB300 NVL72
+
+GB300 NVL72 由 72 颗 B300 GPU、36 颗 Grace CPU、18 个 compute tray、9 个 NVSwitch tray 构成；每个 compute tray 含 4 GPU、2 CPU、4 个 ConnectX-8 和 1 个 BlueField-3。整 rack 因此约含 **72 个 800G ConnectX-8 端口和 18 个 DPU**，官方参考架构最高功耗约 **142kW**。[NVIDIA GB300 reference architecture](https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory/latest/components.html)
+
+每颗 B300 配 288GB HBM3E；项目内行业调研采用 $42k–58k/GPU、$3.6m–5.2m/GB300 rack 的绑定价值区间。该区间包含系统级经济价值，不等于 NVIDIA 单一 GPU 发票价。按 Q1 计算收入 $60.4bn 和管理层所称 Blackwell 已为收入多数，当前年度化 Blackwell/Ultra 可变现能力约 $210–260bn 是合理量级。
+
+#### Vera Rubin NVL72
+
+Rubin NVL72 含 72 Rubin GPU、36 Vera CPU；整 rack 20.7TB HBM4、1580TB/s HBM 带宽，单 GPU 288GB HBM4、22TB/s，NVLink 6 整 rack 260TB/s、单 GPU 3.6TB/s，Vera 合计 3,168 CPU cores 和 54TB LPDDR。[NVIDIA Vera Rubin NVL72](https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/)
+
+系统还含约 **1.3m 个部件、1,300 颗芯片、5,000 条铜缆/约 2 英里铜线**；DGX 参考系统配置超过 144 个单端口 ConnectX-9 800G 和超过 18 个双端口 BlueField-4 400G，等价于每 GPU 至少约 2×800G NIC 内容量。[NVIDIA Rubin pod technical overview](https://developer.nvidia.com/blog/nvidia-vera-rubin-pod-seven-chips-five-rack-scale-systems-one-ai-supercomputer/)、[DGX Vera Rubin specifications](https://www.nvidia.com/en-au/data-center/dgx-vera-rubin-nvl72/)
+
+NVIDIA 于 2026 年 5 月宣布 Vera Rubin full production，150 家台湾伙伴、350 多座工厂、30 个国家参与生态，同时 Spectrum-X Photonics 已生产。[Vera Rubin full-production announcement](https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory) 这证明“已进入生产”，但不等于所有 OEM SKU、HBM4 良率和客户数据中心均完成验收。产业渠道在 4 月曾提示 HBM4 验证、ConnectX-9、功率和液冷可能造成延迟；5 月生产公告与 HBM4 供应商出货缓释了风险，但没有给出良率和季度单位数。[TrendForce Rubin supply-chain note](https://www.trendforce.com/presscenter/news/20260408-13003.html)
+
+#### 网络、CPO、DPU 与 NIC
+
+Spectrum-6 交换 ASIC 提供 102.4Tb/s：可对应 128×800G 或 64×1.6T；CPO 版本每颗交换 ASIC配 32 个 3.2T 光引擎，即每个光引擎服务 4×800G 或 2×1.6T。SN6810 单 ASIC 可给 128×800G，SN6800 四 ASIC可给 512×800G/409.6T。[NVIDIA Spectrum-X Photonics architecture](https://developer.nvidia.com/blog/scaling-power-efficient-ai-factories-with-nvidia-spectrum-x-ethernet-photonics/)
+
+BlueField-4 集成 64 核 Grace CPU、800G 网络、PCIe 6.0 和 LPDDR5X，承担存储、安全和数据基础设施卸载；ConnectX-9 已有 2026-02 发布的固件 GA，但部分订购 SKU 文档仍可能标“prototype”，故应把“核心固件可用”“平台量产”和“特定 OEM/SKU 认证”分开看。[BlueField-4 technical overview](https://developer.nvidia.com/blog/scaling-agentic-ai-factories-through-extreme-co-design-with-nvidia-bluefield/)、[ConnectX-9 firmware release notes](https://networking-docs.nvidia.com/connectx9fwrn/82481000)
+
+#### 软件、Groq 3 LPX 与小业务
+
+Dynamo/NIM/AI Enterprise 直接提升 GPU 利用率与推理吞吐，商业价值有两条：收费许可/云服务，以及通过性能和迁移成本守住 GPU ASP。Groq 3 LPX 则采用每 LPU 500MB SRAM、150TB/s SRAM 带宽和 2.5TB/s scale-up；每 rack 256 LPU、128GB SRAM、12TB DDR5、40PB/s SRAM 带宽和 640TB/s scale-up。[NVIDIA Groq 3 LPX](https://www.nvidia.com/en-gb/data-center/lpx/) 其确定性远低于 Rubin：产品规格和 full production 可验证，但 NVIDIA 没有披露客户数、订单额、取消率或收入。
+
+### 3.4 明确跳过或降权的低增速业务
+
+以下项目没有从公司整体描述中删除，但不进入核心一年预测，原因是非 AI、低增速、规模小或收入不可见：
+
+- 纯消费游戏 GeForce/游戏机图形：仍有现金流和生态价值，但 Q1 消费 PC 需求受系统/内存价格压制；仅保留 RTX 端侧 AI 和开发者生态的交叉价值。
+- 传统专业可视化中不涉及 AI 工作站的部分：规模远小于数据中心；Blackwell RTX PRO Server/工作站则保留为重点。
+- OEM 与其他、PC 加密货币挖矿处理器等历史小项：规模小、周期性强。
+- 传统汽车信息娱乐和非 AI 车载图形：只保留 DRIVE Thor/Hyperion、自动驾驶软件和机器人等 physical AI 部分。
+- Hopper 常规升级尾盘：除存量维护和潜在受许可约束的中国业务外，增量重心已转向 Blackwell/Rubin。
+
+### 3.5 最近半年会议、产业论坛与技术报告信号
+
+| 来源/时间 | 可验证信号 | 如何进入本报告 |
+|---|---|---|
+| NVIDIA GTC 2026 及同期技术材料 | Rubin 七芯片协同、Dynamo 1.0、Groq 3 LPX、Spectrum-X Photonics 和 800G/1.6T 路线被放在同一 AI factory 叙事下 | 产品规格用于 BOM/内容量；厂商性能倍数不直接进入收入模型 |
+| 2026-05 Rubin full-production 生态公告 | 150 家台湾伙伴、350+工厂、30 个国家，证明供应链已从概念进入生产 | 提升 Rubin 从“路线图”到“量产爬坡”的证据等级；没有官方单位数，故未视为满产 |
+| OCP/800VDC 产业协作，2026-08 | NVIDIA、Google、Microsoft 参与规范，80+供应商；MGX 兼容 power rack 目标 2026 H2、2MW/row 目标 2027 | 只作为下一代高功率 rack 的认证路径，不把厂商节能目标预先变成利润率 |
+| UALink Consortium 2026 路线图 | 开放 scale-up 标准正从 1.0 规格进入 2026–27 产品期 | 作为 NVLink/NVLink Fusion 垄断力的下行情景，不因尚未大规模出货而忽略 |
+| TrendForce 2026-04 供应链调查 | HBM4 验证、ConnectX-9、高功率/液冷被列为 Rubin 潜在延迟点 | 属渠道预警；用 5 月官方生产公告、Samsung/SK hynix/Micron HBM4 出货做反向核验，仍保留良率与验收折扣 |
+| Dell、Micron 等 2026 财报会/业绩材料 | 下游 AI server backlog、内存约束、HBM4 商业出货可量化 | 比匿名论坛权重高；Dell backlog 不归为 NVIDIA backlog，Micron 出货不等于 NVIDIA 合格 HBM 数量 |
+
+业内匿名论坛和未具名“订单售罄”信息没有进入数字结论。对高 ASP、长建设周期产品，可靠性排序始终是：监管文件/财报 > 已验收客户项目 > 供应商出货 > 公司发布会规格 > 具名产业渠道 > 匿名论坛。
+
+## 4. 当前高增长或关键产品/业务评估
+
+评分均为 1–5：重要性/紧迫性/供需紧张/垄断力/溢价能力越高越强；“供需紧张 5”表示最供不应求。收入贡献是当前 TTM 或 Q1 年化推算，带“嵌入”者不可相加。
+
+| 关键产品/业务 | 当前收入贡献 | 收入增速 | AI 栈重要性 | 部署紧迫性 | 供需紧张 | 垄断/控制力 | 溢价能力 | 关键判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| Blackwell / Blackwell Ultra 计算 | 本报告估计 TTM **$150–175bn**；Q1 计算年化 $241.6bn | 计算 Q1 +77% Y/Y、+18% Q/Q | 5.0 | 5.0 | 4.5 | 4.5 | 4.5 | 前沿训练与高吞吐推理核心；CUDA 和 rack 绑定使替换远难于比较芯片峰值 |
+| Vera Rubin 平台 | 当前财报确认接近 $0；已投入生产、H2 交付 | 新产品，无可比增速 | 5.0 | 4.5 | 4.5 | 4.5 | 4.5 | 每瓦 token、HBM4、NVLink 6 和 800G/1.6T 网络推动换代；早期供给由全栈最短板决定 |
+| NVLink/NVSwitch scale-up | 嵌入计算与网络；估算 TTM $10–16bn | 网络整体 +199% Y/Y | 5.0 | 5.0 | 4.0 | 5.0 | 4.5 | NVIDIA 封闭集群的核心控制点；NVLink Fusion 试图把 custom ASIC 纳入该标准 |
+| Spectrum-X / InfiniBand / CPO | 与 NIC/DPU 合计官方网络 TTM **$41.219bn** | +199% Y/Y、+35% Q/Q | 4.8 | 4.5 | 4.0 | 4.0 | 4.0 | scale-out 性能影响昂贵 GPU 利用率；CPO 降功耗但现场可靠性和运维仍需验证 |
+| ConnectX-8/9、BlueField-3/4 | 嵌入网络 $41.219bn；GB300 每 GPU 约 1×800G，Rubin 至少约 2×800G | 随 rack 内容量快增 | 4.7 | 4.5 | 4.0 | 4.5 | 4.0 | NIC/DPU 是每 GPU 可量化附加值，平台认证和软件驱动形成锁定 |
+| CUDA/Dynamo/NIM/AI Enterprise/Run:ai | 估计 TTM **$3–6bn**，多数嵌入；递延收入 $3.117bn | 未披露；采用快于可见货币化 | 5.0 | 4.5 | 2.0 | 5.0 | 4.5 | 不是物理短缺，稀缺性是生态、人才和优化；对硬件份额的间接贡献远大于直接 ARR |
+| Physical AI/Edge AI | AI 特定部分估计 **$4–7bn**，嵌在 Edge TTM $23.620bn | Edge +29% Y/Y | 3.8 | 3.5 | 2.5 | 4.0 | 3.5 | 机器人、工业、汽车尚在采用前中期，小基数但潜在终端数量巨大 |
+| Groq 3 LPX/LPU | 接近 $0 或不重大 | 无可比 | 3.5 | 3.5 | 2.5 | 3.0 | 3.0 | 补低延迟推理；$17bn 技术交易意味着高回报门槛，尚无订单与规模收入验证 |
+| NVLink Fusion/custom XPU 互联 | 直接收入接近 $0 | 无可比 | 4.2 | 4.0 | 2.0 | 4.0 | 4.0 | 可能让 NVIDIA 在客户自研 XPU 增长时仍收取 IP、交换和平台价值，是小而关键的防御期权 |
+
+当前供需结论不能只看 GPU：Blackwell Ultra 的主要约束正在从单一 CoWoS 扩散到 **HBM3E/4、先进封装、基板、800G 网络、光学、液冷 CDU、配电与可通电机房**。Samsung 已商业出货 HBM4 并称 2026 HBM 销售有望超过三倍；SK hynix 宣布 HBM4 量产准备完成；Micron FY2026 Q3 称 HBM4 出货已超过 $1bn。这些证据支持供应放量，但供应商没有披露 NVIDIA 对应的最终良率和可交付 rack 数。[Samsung HBM4 shipment](https://news.samsung.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing)、[SK hynix HBM4](https://news.skhynix.com/en/sk-hynix-completes-worlds-first-hbm4-development-and-readies-mass-production/)、[Micron FY2026 Q3 materials](https://investors.micron.com/static-files/2354ecda-77a0-4ddd-8462-a631eb491356)
+
+## 5. 一年后关键产品/业务：基准、乐观、极度乐观
+
+预测窗口为本报告日起未来 12 个月，约覆盖 2026-08 至 2027-08；收入指已由 NVIDIA 确认或高度归属于该产品族的美元贡献，不是终端数据中心总投资。产品之间存在嵌套：例如 NVLink/NIC 可包含在整 rack 收入，软件又可嵌在硬件合同，因此**本表不得逐行相加**；公司总收入在第 8 节独立建模。
+
+### 5.1 加速计算、Rubin 和网络
+
+| 产品/业务 | 情景 | 未来 12 个月收入贡献 | 对当前估算增速 | AI 栈重要性 | 紧迫性 | 供需紧张 | 垄断/控制力 | 溢价能力 | 核心假设 |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| Blackwell/Blackwell Ultra | 基准 | $225–255bn | +38% 至 +57% | 5.0 | 5.0 | 4.0 | 4.5 | 4.5 | GB300 稳定爬坡，Rubin 换代但不造成大面积延单 |
+| 〃 | 乐观 | $260–300bn | +60% 至 +85% | 5.0 | 5.0 | 4.5 | 4.5 | 4.5 | ACIE 与 Hyperscale 同时扩容，老一代与 Rubin 重叠出货 |
+| 〃 | 极度乐观 | $300–345bn | +85% 至 +112% | 5.0 | 5.0 | 5.0 | 4.6 | 4.6 | 推理需求使 Blackwell Ultra 即使 Rubin 上量仍满产 |
+| Vera Rubin GPU/机架 | 基准 | $85–125bn | 新增，N/M | 5.0 | 4.5 | 4.2 | 4.5 | 4.5 | H2 如期交付，HBM4 和液冷以正常新平台速度爬坡 |
+| 〃 | 乐观 | $135–190bn | 新增，N/M | 5.0 | 4.8 | 4.6 | 4.5 | 4.5 | 主要云厂和 GPU 云快速认证，供应改善但仍追不上需求 |
+| 〃 | 极度乐观 | $205–270bn | 新增，N/M | 5.0 | 5.0 | 5.0 | 4.7 | 4.7 | HBM4/先进封装/ConnectX-9/CPO/液冷均无明显短板，Rubin 成为默认新建平台 |
+| AI 网络总盘（NVLink、InfiniBand、Spectrum-X、NIC/DPU/CPO） | 基准 | $72–80bn | +75% 至 +94% | 4.9 | 4.7 | 3.8 | 4.3 | 4.2 | 每 GPU 网络内容量继续上升，Ethernet 与 InfiniBand 并行 |
+| 〃 | 乐观 | $90–105bn | +118% 至 +155% | 5.0 | 4.8 | 4.4 | 4.4 | 4.3 | Rubin 至少 2×800G/GPU，Spectrum-X Photonics 在大集群放量 |
+| 〃 | 极度乐观 | $115–135bn | +179% 至 +228% | 5.0 | 5.0 | 5.0 | 4.5 | 4.5 | 1.6T/CPO 提前成为新 AI 工厂主流，网络附加率接近全平台 |
+
+这里的 Rubin 区间与项目内 `行业调研_商用AI加速芯片_2026-08-18.md` 的下一年产品市场情景（基准 $100–155bn、乐观 $150–225bn、极乐观 $215–310bn）方向一致，但本报告为避免把 OEM/服务器/内存等全链条价值全部归给 NVIDIA，采用了更低的公司收入区间。Blackwell/Ultra 也同理：项目行业市场模型为 $250–335bn / $320–420bn / $405–520bn，本报告按 NVIDIA 可确认收入、代际重叠和公司总收入约束下调。
+
+### 5.2 软件、physical AI、Groq 与 NVLink Fusion
+
+| 产品/业务 | 情景 | 未来 12 个月收入贡献 | 对当前估算增速 | AI 栈重要性 | 紧迫性 | 供需紧张 | 垄断/控制力 | 溢价能力 | 核心假设 |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| CUDA/Dynamo/NIM/AI Enterprise/Run:ai/DGX Cloud | 基准 | $6–8bn | 约 +50% 至 +100% | 5.0 | 4.5 | 2.0 | 5.0 | 4.5 | 直接订阅增长，更多价值仍通过硬件 ASP/份额实现 |
+| 〃 | 乐观 | $9–12bn | 约 +100% 至 +200% | 5.0 | 4.7 | 2.5 | 5.0 | 4.7 | 企业 agentic AI 进入生产，调度和推理服务变成标准采购项 |
+| 〃 | 极度乐观 | $14–18bn | 约 +200% 至 +350% | 5.0 | 5.0 | 3.0 | 5.0 | 4.8 | 软件单列收费与云收入同时爆发；仍只占公司小比例 |
+| Physical/Edge AI 特定部分 | 基准 | $7–9bn | 约 +30% 至 +60% | 3.9 | 3.6 | 2.5 | 4.0 | 3.5 | RTX PRO、Jetson、DRIVE/Isaac 稳步采用 |
+| 〃 | 乐观 | $10–13bn | 约 +80% 至 +130% | 4.2 | 4.0 | 3.2 | 4.2 | 3.7 | 工业机器人、AI-RAN、L4-ready 汽车开始规模化 |
+| 〃 | 极度乐观 | $15–20bn | 约 +170% 至 +250% | 4.5 | 4.5 | 4.0 | 4.4 | 4.0 | 机器人“ChatGPT 时刻”提前，端边云一体采用 NVIDIA |
+| Groq 3 LPX/LPU | 基准 | $2–4bn | 从近零起量 | 3.5 | 3.5 | 2.5 | 3.0 | 3.0 | 首批低延迟推理客户部署，尚未形成默认平台 |
+| 〃 | 乐观 | $6–10bn | 从近零起量 | 4.0 | 4.0 | 3.5 | 3.5 | 3.5 | 与 GPU 组合销售，特定 agentic/语音工作负载验证 TCO |
+| 〃 | 极度乐观 | $12–20bn | 从近零起量 | 4.3 | 4.5 | 4.5 | 4.0 | 4.0 | SRAM 推理架构规模化且供给受限；需要大客户订单佐证 |
+| NVLink Fusion/custom XPU | 基准 | $0.5–1.5bn | 从近零起量 | 4.2 | 4.0 | 2.0 | 4.0 | 4.0 | 设计导入与 IP/NVSwitch 小规模收入 |
+| 〃 | 乐观 | $1.5–3bn | 从近零起量 | 4.5 | 4.3 | 2.8 | 4.2 | 4.2 | 多家 ASIC/CPU 伙伴量产，把 NVIDIA fabric 变成事实接口 |
+| 〃 | 极度乐观 | $3–6bn | 从近零起量 | 4.7 | 4.7 | 3.5 | 4.5 | 4.5 | UALink 尚未成熟、NVLink Fusion 抢先成为异构 scale-up 标准 |
+
+软件和 NVLink Fusion 的直接收入虽小，不能据此低估护城河：前者降低客户每 token 成本并提高 GPU 利用率，后者使 NVIDIA 即使在 custom XPU 项目中也可能保留交换、互联、IP 与软件收入。Groq 反而应采用“技术强、收入证据弱”的折扣，直到出现可核验客户、rack 数、合同金额和重复采购。
+
+## 6. BOM、真实内容量、价格传导、当前产能与认证
+
+### 6.1 加速器模块与 AI rack 的 BOM
+
+NVIDIA 不披露产品级 BOM。下表是项目内行业资料经本报告整理的**成本占比模型**，用于理解价格传导，不代表公司实际采购价。
+
+| BOM 层级 | 加速器模块成本占比 | 整体 NVL72 rack 成本占比 | 主要供应/传导变量 |
+|---|---:|---:|---|
+| GPU logic die / 双芯粒与封装内逻辑 | 25%–35% | 随 accelerator/HBM 计入 | 晶圆价格、良率、die 面积、双芯粒互连 |
+| HBM3E/HBM4 | 28%–38% | accelerator/HBM 合计约 55%–70% | 每 GPU 288GB、堆叠层数、HBM4 溢价与合格率 |
+| 先进封装、基板、硅中介层 | 15%–22% | 多计入 accelerator | CoWoS 类产能、基板和中介层尺寸；Rubin 区间偏高 |
+| 测试与 burn-in | 8%–13% | 多计入 accelerator | 高功率芯片测试时间、已知良品率 |
+| PCB、VRM、连接器与模块散热 | 8%–14% | 机架另有 3% 左右 chassis/copper | 高电流电源、连接器、铜缆 |
+| 保修/良率准备 | 3%–7% | 保修 3%–7% | 新平台现场失效率和返修 |
+| CPU、NIC/DPU、NVSwitch/网络 | — | 10%–17% | Grace/Vera、ConnectX、BlueField、NVSwitch；多由 NVIDIA 自身捕获 |
+| 机架供电与液冷 | — | 8%–14% | PSU/BBU、busbar、CDU、cold plate、manifold |
+| DRAM/NVMe/安全与管理 | — | 4%–8% | 主机内存与存储价格 |
+| 组装、测试、物流、服务 | — | 5%–10% | ODM/OEM 议价、运输和机房验收 |
+
+项目内 `行业调研_AI服务器整机与机架集成_2026-08-18.md` 对 NVL72 终端经济价值的代表拆分为：accelerator/HBM 约 76%，CPU/DPU/NIC/NVLink 8%，DRAM/NVMe 3%，供电 3%，冷却 3%，PCB/chassis/copper 3%，集成/软件/物流 4%。因此 HBM 或液冷涨价并不会 1:1 按整 rack 百分比传导：NVIDIA 可以通过高系统 ASP 吸收小部分成本，真正决定价格的是可交付 rack 的稀缺性和客户每 token TCO。
+
+### 6.2 每 GPU、每 rack、每 MW 的真实内容量
+
+以下“官方”列来自 NVIDIA 产品文档；功耗和绑定价值标“行业模型”者来自项目内行业调研，不是产品官方标价。1MW 按 IT load、连续满载且不含 PUE 计算。
+
+| 内容量 | GB300 NVL72 | Vera Rubin NVL72 | 计算说明 |
+|---|---:|---:|---|
+| GPU / rack | 72×B300 | 72×Rubin | 官方 |
+| CPU / rack | 36×Grace | 36×Vera、合计 3,168 cores | 官方；每 GPU 0.5 CPU |
+| HBM / GPU；/rack | 288GB HBM3E；20.736TB | 288GB HBM4；20.7TB | 官方；Rubin 单 GPU 22TB/s |
+| compute tray / NVSwitch tray | 18 / 9 | 18 / 9（平台 pod 结构） | 每 GPU 0.25 / 0.125 tray |
+| NIC 内容 | 72×ConnectX-8 800G，即约 1×800G/GPU | >144×ConnectX-9 800G，即 >2×800G/GPU | 来自官方参考配置 |
+| DPU 内容 | 18×BlueField-3，即 0.25/GPU | >18×双端口 BlueField-4 400G，即 >0.25/GPU | 参考配置下限 |
+| NVLink | NVLink 5，机架级 scale-up | NVLink 6：3.6TB/s/GPU、260TB/s/rack | 官方 |
+| rack 功耗 | 最高约 142kW（官方架构） | **187–227kW（项目行业模型）** | Rubin 官方具体部署依 MaxQ/MaxP、冷却与 OEM 而变 |
+| racks / 1MW | **7.04** | **4.41–5.35** | 1,000kW / rack kW |
+| GPUs / 1MW | **507** | **317–385** | racks/MW ×72 |
+| CPUs / 1MW | **254** | **159–193** | racks/MW ×36 |
+| HBM / 1MW | **约 146TB** | **约 91–111TB** | GPUs/MW ×288GB |
+| 800G NIC ports / 1MW | **约 507** | **>635–770** | Rubin >2×800G/GPU |
+| rack 绑定价值 | **$3.6–5.2m** | **$4.8–6.8m** | 项目行业模型；含系统级价值，不等于纯 GPU ASP |
+| 每 MW 绑定价值 | **$25.4–36.6m** | **$21.2–36.4m** | 仅 IT rack 价值；不含土地、建筑、变电站、发电、PUE 与土建 |
+
+GB300 每 GPU 的共享机架功耗约 142/72 = **1.97kW**；Rubin 按项目模型约 **2.60–3.15kW/GPU**。看似 Rubin 每 MW GPU 数减少，但单位 GPU token 吞吐、HBM 带宽和网络内容量显著上升；客户采购依据应是每 MW token 和每 token TCO，而不是每 MW GPU 数。
+
+GB300 参考架构：[NVIDIA enterprise reference architecture](https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory/latest/components.html)。Rubin 规格与复杂度：[Vera Rubin NVL72](https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/)、[Rubin GPU architecture](https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/)。NVIDIA 宣称 Rubin 相对上一代可带来数量级的 agentic AI 性能/能效提升；这类数值依模型、精度、批量和软件版本，报告只将其作为厂商性能目标，不直接用于收入预测。
+
+### 6.3 每 optical port 与网络 BOM
+
+| 单位 | Spectrum-6/CPO 内容量 | 经济含义 |
+|---|---|---|
+| 每 800G optical port | 1/128 颗 102.4T Spectrum-6 ASIC；1/4 个 3.2T optical engine | 单 ASIC 128×800G；32 个光引擎各服务 4×800G |
+| 每 1.6T optical port | 1/64 颗 ASIC；1/2 个 3.2T optical engine | 单 ASIC 64×1.6T；网络速率翻倍不等于整机价格线性翻倍 |
+| Rubin 每 GPU 的 scale-out NIC | >2×800G，约 1 个 1.6T 等价值 | NIC 端不等于交换机光口端；fabric 还需 spine/leaf、光模块/引擎和布线 |
+| 102.4T 交换机不含 optics 的 BOM | ASIC/封装 25%–35%；PCB/retimer/连接器 15%–22%；power/cooling 12%–18%；CPU/BMC/DRAM/SSD 4%–7%；chassis 7%–11%；组装/测试/物流 8%–12%；保修 3%–7% | CPO 把一部分可插拔光模块价值迁到交换系统，提升 NVIDIA/光引擎伙伴的控制点 |
+| 若配置 64×1.6T 外部 optics | optics/fiber 可占整机发票 50%–70% | 因此只看 switch ASIC ASP 会严重低估 AI 网络总内容量 |
+| 800G NIC/DPU BOM | ASIC 35%–50%；PCIe/CXL/retimer/memory 15%–22%；PCB/VRM 10%–15%；thermal 8%–12%；assembly/firmware/warranty 12%–20% | ConnectX/BlueField 的芯片、固件和驱动一体化形成溢价 |
+
+价格传导链可简化为：**HBM/晶圆/封装成本 → GPU 模块成本 → NVIDIA GPU/compute tray ASP → NVL72 rack 价格 → OEM/云服务商每小时 GPU 租价 → 模型客户每百万 token 成本**；并行链为 **交换 ASIC/光引擎/NIC/DPU → fabric 资本开支与功耗 → GPU 有效利用率 → 每 token TCO**。在 100,000-GPU 集群中，项目行业模型估算全生命周期投入 $10–20bn；仅 2 个百分点的利用率差异就对应 $0.2–0.4bn 资本效率，因此客户愿意为稳定网络和软件调度支付溢价。
+
+### 6.4 当前收入产能、供应链采纳和认证阶段
+
+“产能能力（美元计）”定义为在当前供应链和产品 mix 下可交付并确认的**年度化收入能力**，不是晶圆厂名义产能。官方可审计锚是 Q1 年化 $326.5bn、Q2 指引年化 $364bn；分产品为本报告推算。
+
+| 产品/业务 | 当前年度化收入能力 | 供应链采纳程度 | 当前认证/量产阶段 | 主要瓶颈 |
+|---|---:|---|---|---|
+| Blackwell/GB200/B200 | $80–110bn | 全球云、OEM、GPU 云已大规模部署 | 成熟量产；部分需求转向 Ultra | HBM3E、机房上电和客户代际切换 |
+| Blackwell Ultra/GB300 | $130–165bn | 主要 OEM/ODM 和云厂商量产；IREN 50MW 项目已获 Microsoft 接受 | **量产/客户验收**；NVIDIA Exemplar Cloud 可作为云运营质量认证之一 | 内存、液冷、供电、机架集成与现场验收 |
+| Blackwell 合计 | **$210–260bn** | 主流 AI 工厂默认平台之一 | 大规模量产 | 系统级而非单芯片瓶颈 |
+| Vera Rubin | $0–30bn（当前 pilot/早期能力） | 150 家台湾伙伴、350+工厂参与；Microsoft/CoreWeave 等公布部署 | NVIDIA 称 **full production**；H2 OEM/客户 rack 认证和爬坡中 | HBM4、双芯粒良率、ConnectX-9、CPO、187kW+供电液冷 |
+| 网络总盘 | $55–65bn | GB300/Rubin 参考架构高绑定；Spectrum-X 在以太网 AI 云扩大 | InfiniBand/Spectrum-X/NVLink 成熟；Spectrum-X Photonics 生产中 | 光引擎良率、现场可靠性、800G/1.6T 光学供应 |
+| ConnectX-9 / BlueField-4 | 网络盘内约 $8–14bn | Rubin/DGX 参考系统采用 | 核心固件 GA/平台生产；特定 OEM SKU 逐项认证 | PCIe 6、固件兼容和 OEM qualification |
+| 软件/云/支持 | $4–7bn | 所有 NVIDIA 计算客户使用 CUDA；付费深度差异大 | CUDA/Dynamo/NIM 生产可用，Run:ai 集成中 | 货币化、云毛利和开源替代，不是物理产能 |
+| Physical/Edge AI 特定部分 | $6–8bn | PC/工作站成熟；机器人、AI-RAN、L4-ready 汽车早中期 | 依垂直行业：PC 量产，汽车需车型级安全认证 | 汽车周期、机器人客户量产和终端需求 |
+| Groq 3 LPX | $0–2bn | 技术/产品已发布，客户采纳未量化 | full production；**经济认证未完成** | 客户 benchmark、软件迁移、良率与重复订单 |
+| NVLink Fusion | $0–1bn | Marvell 等生态伙伴设计导入 | IP/设计阶段至初始量产前 | 合作 XPU tape-out 周期、接口标准竞争 |
+
+认证必须分四级看：①芯片/固件可用；②OEM 服务器或 rack 量产；③云/客户平台通过 burn-in、网络和可靠性验收；④真实 workload 的 TCO 与重复采购。Rubin 已跨过①并进入②，少数先行客户正在③；不能把“full production”直接等同全行业④。GB300 已有 IREN/Microsoft 验收，证据等级更高。CPO 已生产，但大规模现场可维护性仍处于③前中期。Groq LPX 有①②、缺少③④公开证据。
+
+## 7. 一年后产能、采纳与认证情景
+
+下表同样是可变现年度化收入能力；它回答“如果需求存在，公司及供应链最多能变现多少”，不保证相同金额最终成为收入。
+
+| 产品/业务 | 情景 | 一年后产能能力（年化） | 供应链采纳程度 | 预期认证阶段 | 关键约束/触发器 |
+|---|---|---:|---|---|---|
+| Blackwell/Ultra | 基准 | $260–300bn | 广泛量产，作为 Rubin 之外的性价比层 | 大多数云/OEM 完成平台与客户验收 | 维持 GB300 良率、内存与电力供应 |
+| 〃 | 乐观 | $300–350bn | Hyperscale、ACIE、主权 AI 均高采用 | 全面成熟、供应不再是唯一约束 | 客户不因 Rubin 延后 Blackwell 订单 |
+| 〃 | 极度乐观 | $350–410bn | 与 Rubin 双轨满产 | 成熟并扩展二级市场 | 推理需求吸收全部旧代容量 |
+| Vera Rubin | 基准 | $130–170bn | 先行云和 GPU 云规模采用 | OEM 量产、主要客户通过 burn-in/TCO 验收 | HBM4 与高功率 rack 爬坡正常 |
+| 〃 | 乐观 | $190–240bn | 成为新建大型 AI factory 默认平台 | 多云 GA、主权/企业复制，现场可靠性成熟 | CPO/ConnectX-9/液冷同步到位 |
+| 〃 | 极度乐观 | $260–330bn | 多数前沿训练和 agentic 推理项目采用 | 跨 OEM、云和区域大规模认证 | 良率迅速提升且供电不延迟项目 |
+| AI 网络总盘 | 基准 | $80–90bn | Spectrum-X/InfiniBand 共存，Rubin 高绑定 | 800G 成熟，1.6T/CPO 初步规模验收 | optics 和机房布线 |
+| 〃 | 乐观 | $100–115bn | CPO 在超大集群扩展，BlueField-4 标配化 | 1.6T 多客户生产验证 | 光引擎良率与可维护性 |
+| 〃 | 极度乐观 | $125–145bn | 网络内容量随每 GPU 翻升 | CPO/1.6T 成为 AI 工厂事实主流 | 大客户统一采用 NVIDIA fabric |
+| 软件/云/支持 | 基准 | $7–9bn | CUDA 必选、付费工具逐步增购 | 企业生产认证扩展 | 付费转化而非算力容量 |
+| 〃 | 乐观 | $11–14bn | Agentic AI 栈标准化 | NIM/Dynamo/Run:ai 进入采购目录 | 与云厂商分成、定价透明度 |
+| 〃 | 极度乐观 | $17–22bn | 软件层深度绑定大部分 rack | 形成可审计经常性收入指标 | 公司开始单列软件 KPI |
+| Physical/Edge AI 特定部分 | 基准 | $8–10bn | 工作站/Jetson 扩张，汽车温和爬坡 | 若干车型/机器人平台量产 | 长认证周期 |
+| 〃 | 乐观 | $12–16bn | 多行业复制 | DRIVE/Isaac/AI-RAN 多客户量产 | 机器人 ROI 和车规安全 |
+| 〃 | 极度乐观 | $18–25bn | 端边云统一生态快速形成 | 大规模车型和机器人平台认证 | 终端数量和软件附加率 |
+| Groq 3 LPX | 基准 | $3–6bn | 少数低延迟工作负载 | 1–2 个规模客户 TCO 验收 | 软件适配和客户复购 |
+| 〃 | 乐观 | $8–14bn | GPU+LPU 组合进入多云 | 多客户生产级认证 | SRAM 容量边界与供应 |
+| 〃 | 极度乐观 | $15–25bn | 特定推理类别成为主流 | 重复订单和标准化服务 | 必须出现可核验合同 |
+| NVLink Fusion | 基准 | $1–2bn | 少数合作 XPU 导入 | 首批 silicon / platform qualification | tape-out 和接口兼容 |
+| 〃 | 乐观 | $3–5bn | 多家 CPU/XPU 量产 | 多供应商互操作认证 | 合作伙伴愿意接受 NVIDIA 控制层 |
+| 〃 | 极度乐观 | $6–10bn | 成为 custom ASIC 的通用 scale-up 选项 | 形成公开互操作生态 | 领先 UALink 产品成熟期 |
+
+对于 2027 年更高密度 rack，电力架构本身是认证路径。NVIDIA 推动 800VDC，并称 80 多家供应商参与；MGX-compatible power rack 计划 2026 H2，2MW/row power center 计划 2027。该路线可减少铜和转换损耗，但规范、配电、保护、维护和运营商安全认证仍需一起成熟。[NVIDIA 800VDC ecosystem](https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/) 项目内供电/液冷行业资料把 2027 年 1MW 级 rack 视为方向性路线，而非已锁定交付参数，本报告没有把尚未认证的 800V 节省直接计入 Rubin 收入。
+
+## 8. 订单与供给约束下的未来一年增长推断
+
+### 8.1 客户项目证据梯度
+
+由于 NVIDIA 不披露 backlog，本报告按证据强度排序：**已交付/验收并有合同 > 已签采购或明确单位数 > 多年部署公告 > 条件性投资/LOI > 产业传闻**。只有前三类可提高基准情景，后两类只提高可选上行。
+
+| 客户/项目 | 公开内容 | 粗算 NVIDIA/系统内容量 | 交付窗口 | 证据强度与限制 |
+|---|---|---:|---|---|
+| IREN Horizon 1–4 / Microsoft | 首座 50MW GB300 已获 Microsoft 接受；2026 年四座各 50MW；5 年云合同 $9.7bn | 50MW 约 352 个 GB300 rack、25,350 GPU、绑定价值约 **$1.27–1.83bn**；200MW 约 $5.1–7.3bn | 2026 | **高**：首座已验收；但 $9.7bn 是云收入，绑定价值含非 NVIDIA 部件 |
+| Dell AI server | Q1 订单 $24.4bn、收入 $16.1bn、backlog $51.3bn；FY27 收入指引 $60bn | 无法把整机 backlog 全归 NVIDIA；若 accelerator/HBM 占 rack 55%–70%，只可作需求敏感度 | FY27 | **高/中**：财务披露真实，但属于 Dell、可能含 AMD/其他部件，且取消率未披露 |
+| Microsoft Fairwater / CoreWeave | 公布 Rubin H2 部署，微软集群规模为数十万至数十万级 GPU 的方向性描述 | 无确切采购金额，不能进入确定订单 | 2026 H2 起 | **中**：客户/供应商官方公告，有时间窗口，无合同额 |
+| Meta | 多年部署数百万 Blackwell/Rubin GPU并采用 Spectrum-X | 若按最低“数百万”估值会得到极大金额，因跨年、架构和定价不明，不做金额化 | 多年 | **中**：数量方向强，但缺季度交付、价格、取消条款；Meta 同时扩大 MTIA |
+| 日本 Noetra 国家 AI 基础设施 | 27,500 Rubin GPU、13,750 Vera CPU、约 140MW | 约 382 rack；按 $4.8–6.8m/rack，绑定价值约 **$1.83–2.60bn** | 未完全披露 | **中高**：明确单位数；仍需看融资、施工和验收 |
+| NAVER/Brookfield 韩国项目 | 首期 55MW，目标 2028 年 200MW，另有 1GW 意向；NVIDIA $1bn、Brookfield 最高 $9bn 为条件性支持 | 55MW Rubin 约 243–294 rack、绑定价值 **$1.17–2.00bn**；200MW 约 $4.2–7.3bn | 2026–2028 | **中/低**：首期较具体，后续资本和 1GW 有条件，不能当 backlog |
+| SK Group | 公布 2GW Vera Rubin AI factory，首座 2027；更广泛项目提到 $500bn+ 倡议 | 2GW 理论约 8,820–10,700 rack、绑定价值 **$42–73bn** | 2027 起 | **低/中**：规模大但属战略合作/LOI，电力、融资、施工和最终采购均需验证 |
+| OpenAI 10GW | 2025-09 LOI：首个 1GW 计划 2026 H2；NVIDIA 表示拟随部署最高投资 $100bn | 按 Rubin $21.2–36.4m/MW，10GW 全部兑现对应系统绑定价值 $212–364bn；**只作敏感度，不作订单** | 2026 H2 起、多年 | **低**：LOI、融资与 NVIDIA 反向投资带循环融资风险，无取消率/固定价格 |
+
+来源：[IREN update](https://iren.gcs-web.com/static-files/49325cad-f6fe-42ba-acd6-b286ede0fb4a)、[Dell release](https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm)、[Rubin customer deployments](https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer)、[Meta deployment](https://nvidianews.nvidia.com/news/meta-builds-ai-infrastructure-with-nvidia)、[Japan Noetra](https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure)、[NAVER project](https://nvidianews.nvidia.com/news/naver-nvidia-and-brookfield-to-expand-koreas-national-ai-factory-infrastructure-buildout)、[SK Group project](https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory)、[OpenAI LOI](https://nvidianews.nvidia.com/news/openai-and-nvidia-announce-strategic-partnership-to-deploy-10gw-of-nvidia-systems)。
+
+这些项目的共同瓶颈不再只是 GPU wafer：项目要同时具备电网接入、变压器/开关设备、液冷水路、机架组装、HBM、先进封装、800G/1.6T 网络、光学和客户软件验收。任一环节延迟都会把“订单”推迟为未来收入。反之，GB300 已验收项目、Dell 下游订单和 HBM4 商业出货同时出现，使“AI 需求只是口头意向”的概率下降。
+
+### 8.2 供需、延迟/取消和收入模型
+
+公司没有取消率，故本报告用“项目延迟/缩量率”作为综合折扣：包含客户取消、融资/电力推迟、SKU 换代、出口许可、组件良率和验收失败。它不是公司历史统计。
+
+| 变量 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| 可见需求池（按 NVIDIA 可捕获收入，不含未融资 10GW 全额） | $570–620bn | $640–710bn | $760bn+ |
+| 未来一年可变现供应/系统能力 | $500–540bn | $570–625bn | $660–730bn |
+| 项目延迟/缩量折扣 | 10%–15% | 5%–10% | 0%–5% |
+| 中国数据中心计算 | $0 | 小规模许可上行，不超过总收入 1%–2% | 恢复部分 H200/合规产品，但不作为结构性假设 |
+| 产品 mix | Blackwell Ultra 主体、Rubin H2 爬坡、网络快于计算 | Rubin/网络附加率更高 | Blackwell 与 Rubin 双轨满产、CPO提前放量 |
+| 供需紧张度 | 4.0/5 | 4.6/5 | 5.0/5 |
+| 公司未来 12 个月收入 | **$500–530bn** | **$565–615bn** | **$650–720bn** |
+| 中值及较当前 TTM $253.491bn 增速 | **$515bn；+103%** | **$590bn；+133%** | **$685bn；+170%** |
+| 预期公司 GAAP 毛利率 | 73%–76% | 75%–78% | 77%–80% |
+
+需求池不是披露 backlog，而是以 Q2 指引年化 run-rate 为底，再用已验收项目、明确 GPU/MW 数量、多云产品上架节奏和网络 attach rate 增量构建，最后对跨年重复项目、非 NVIDIA BOM、融资/电力延迟和取消做折扣；条件性 10GW/2GW 意向的绝大部分不进入基准。
+
+模型校验：Q1 实际收入年化 $326.5bn，Q2 指引中值年化 $364bn。达到基准情景中值，未来四季平均收入须约 $128.8bn/季，相对 Q2 指引提高约 41%；达到乐观/极乐观中值分别需约 $147.5bn/$171.3bn/季，相对 Q2 指引提高 62%/88%。考虑 FY26 Q2 到 FY27 Q1 单季收入从 $46.7bn 升到 $81.6bn，基准并非数学上不可能，但它要求 Rubin 与 Blackwell 继续复现异常陡峭的供给曲线；极乐观则要求几乎所有瓶颈同时解除。
+
+另一个交叉检查是供应承诺：$119bn 约相当于 Q2 指引收入的 1.31 倍。若加上 $25.8bn 库存，它可支持多个季度爬坡，但采购成本不等于收入，且 GPU/网络高毛利会放大为更高销售额。反向看，一旦客户项目延迟，库存与不可取消采购义务也会把毛利向下拉。基准情景因此保留 10%–15% 延迟/缩量折扣。
+
+### 8.3 最值得每季追踪的订单和供给 KPI
+
+| KPI | 当前锚 | 看多触发 | 看空触发 |
+|---|---:|---|---|
+| 数据中心计算 Q/Q | +18% | Rubin 上线后仍 >15% 连续增长 | 换代期连续两季 <5% 或转负 |
+| 网络 Q/Q / Y/Y | +35% / +199% | 维持 >100% Y/Y 且网络占比继续升 | 增速迅速低于计算，说明 attach rate 或竞争恶化 |
+| 库存 / 供应承诺 | $25.8bn / $119bn | 收入增长快于库存、承诺转成出货 | 库存继续快于收入、准备/超额义务上升 |
+| 毛利率 | Q1 74.9%；Q2 guide 74.9% ±50bp | Rubin 爬坡仍 ≥75% | 新平台/库存费用使其持续 <70% |
+| DSO / 客户集中 | 45 天；前三大收入 54% | DSO 稳定、ACIE 分散客户 | DSO >60 天、应收集中继续升 |
+| 已验收 Rubin rack / MW | 未系统披露 | 多云 GA、重复订单和明确 MW/rack | 只见公告无验收，交付窗口不断后移 |
+| HBM4/CPO/液冷 | 供应商已商业出货/平台生产 | 良率、单位数和多客户认证可量化 | 单一组件造成季度收入延期 |
+| 软件经常性收入 | 未单列；递延收入 $3.117bn | 公司开始披露 ARR/订阅/attach rate | 软件仍仅作免费硬件护城河，收购回报不透明 |
+
+## 9. 竞争格局、技术主流性、替代与切换成本
+
+### 9.1 竞争者矩阵
+
+| 层级 | NVIDIA 控制点 | 主要竞争者/替代 | 竞争判断 |
+|---|---|---|---|
+| Merchant AI accelerator | Blackwell/Ultra、Rubin、CUDA | AMD Instinct MI350/MI450/Helios；Intel Gaudi；Cerebras；其他专用加速器 | NVIDIA 软件/系统领先，AMD 是最现实 merchant 替代；性能差距必须按真实 workload、网络和软件而非峰值 FLOPS 比 |
+| Hyperscaler custom ASIC | GPU 通用性、NVLink、软件生态 | Google TPU、AWS Trainium/Inferentia、Meta MTIA、Microsoft Maia、自研 ASIC/Marvell/Broadcom 方案 | 对稳定超大批量内部 workload，ASIC 可降低成本并削弱 GPU 份额；对快速变化模型和多租户，GPU 灵活性更强 |
+| Scale-up interconnect | NVLink/NVSwitch、NVLink Fusion | UALink、Infinity Fabric、厂商自有互联 | NVLink 当前成熟度和软件协同领先；UALink 1.0 目标 200G/lane、800G/station、最多 1,024 accelerators、低于 1μs RTT，2026–27 产品将检验开放标准替代力 |
+| Scale-out network | InfiniBand、Spectrum-X Ethernet、ConnectX、BlueField、CPO | Broadcom Tomahawk/Jericho、Arista/Cisco、Marvell、AMD Pensando、传统可插拔光模块生态 | Ethernet 生态广，NVIDIA 通过 Spectrum-X 和 CPO争取系统协同；客户可替换交换层，但需重新调优拥塞控制、遥测和运维 |
+| AI software/orchestration | CUDA-X、Dynamo、NIM、Run:ai、AI Enterprise | ROCm、OpenAI Triton、PyTorch/XLA、JAX、开源编译器/调度器、云原生 Kubernetes 工具 | CUDA 是最大护城河，但开放框架正在把上层模型与底层硬件解耦；长期风险是兼容层足够好后切换成本下降 |
+| Low-latency inference | GPU + Groq 3 LPX | 原 Groq 云、Cerebras、TPU、Trainium/Inferentia、各类 ASIC | LPX 拓宽产品，但 SRAM 容量、编译和客户规模仍待证明；不是已建立垄断 |
+| Edge/physical AI | Jetson、DRIVE、Isaac、Omniverse、RTX | Qualcomm、Mobileye、Tesla、自研车芯片、AMD/Intel、机器人 ASIC | NVIDIA 强在统一开发栈；汽车长周期、安全责任和客户自研会限制毛利与速度 |
+
+### 9.2 最强替代证据
+
+- AMD 与 Anthropic 公布最高 2GW MI450/Helios 合作，首个 1GW 目标在 2027 H1，并伴随 AMD 最高 $5bn 投资。这是 merchant GPU 在大型模型客户的强验证，但尚需观察实际部署、软件稳定和持续复购。[AMD–Anthropic partnership](https://newsroom.amd.com/news/amd-anthropic-strategic-partnership/)
+- Google Cloud 发布 TPU 8t/8i：8t pod 可扩到 9,600 芯片、121 EFLOPS 和 2PB HBM；8i 单芯片 288GB HBM、19.2Tb/s ICI，并声称 80% perf/$ 改善。均为厂商测试，但说明 hyperscaler ASIC 在自有云内能系统级竞争。[Google Cloud TPU 8](https://cloud.google.com/blog/products/compute/ai-infrastructure-at-next26)
+- AWS Trainium3 已 GA，AWS 声称相对 Trainium2 约 4.4× 计算、4× 内存带宽和近 4× 能效；这是封闭云内替代，不一定适合希望跨云或自建的客户。[AWS Trainium3 update](https://aws.amazon.com/blogs/industries/aws-reinvent-2025-recap-for-automotive-and-manufacturing/)
+- Meta 表示未来两年推进四代自研 silicon，MTIA 300 已投入生产，目标部署数十万颗；Meta 同时采购数百万 NVIDIA GPU，说明现实不是“全替代”，而是高利用率固定 workload 转 ASIC、前沿和通用 workload 留给 GPU。[Meta custom silicon update](https://about.fb.com/news/2026/03/expanding-metas-custom-silicon-to-power-our-ai-workloads/)
+- UALink Consortium 路线图预计 2026–2027 出现更多兼容产品；开放 scale-up 标准若成熟，会压低 NVLink 的封闭溢价。[UALink 1.0 white paper](https://ualinkconsortium.org/wp-content/uploads/2025/04/UALink-1.0-White_Paper_FINAL_UPDATED.pdf)、[UALink roadmap](https://ualinkconsortium.org/blog/ualink-roadmap-insights-accelerating-open-scalable-ai-networking-1296/)
+
+### 9.3 NVIDIA 新技术是否会成为主流
+
+| 技术 | 成为主流的概率 | 判断 |
+|---|---|---|
+| Rack-scale GPU + NVLink | **高，未来 1–2 年 80%+** | 大模型训练和高并行推理需要高带宽 scale-up；GB300 已量产、Rubin延续同一范式。风险是开放 UALink/custom fabric 在 2027 后削弱份额 |
+| HBM4 + 双芯粒 GPU | **高，75%–90%** | 模型参数/上下文和推理吞吐需要容量、带宽；Rubin供应链已量产准备。风险是 HBM4 良率/成本和存算架构替代 |
+| 800G→1.6T AI Ethernet | **高，80%+** | 每 GPU NIC 内容量和集群规模决定升级；Ethernet生态使其比专有协议更易普及 |
+| CPO | **中高，50%–70%（先超大集群）** | 能降低功耗和前面板密度，但现场可维修性、激光器寿命、光引擎良率和多供应商互操作决定速度；可插拔 optics 会长期共存 |
+| 800VDC 数据中心供电 | **中，40%–65%（2027+）** | MW 级 rack 使低压铜缆不可持续；但数据中心安全、标准和维护体系的认证慢于芯片，不能用发布会时间表替代项目验收 |
+| Groq 3 LPU 与 GPU 混合推理 | **中低，25%–45%** | 对低延迟、确定性 token 生成有优势；SRAM 容量、编译栈、客户适用面和 $17bn 回报门槛均待验证 |
+| NVLink Fusion | **中高，50%–70%** | 若客户一定要自研 XPU，开放 NVLink 可让 NVIDIA 保留互联控制；风险是合作方不愿接受平台依赖并转向 UALink |
+
+### 9.4 客户替换成本
+
+项目内行业调研给出的完整平台切换时间为约 **6–18 个月**、大型客户直接迁移/验证投入可达 **$10m–100m**；超大云可通过长期自研把成本摊薄，中小企业则更难。成本层次如下：
+
+1. **代码与算子层**：CUDA kernels、cuDNN/cuBLAS/TensorRT、custom ops 要重写或兼容；性能正确不等于数值和生产稳定相同。
+2. **模型与编译层**：精度格式、并行策略、checkpoint、编译缓存和推理调度需重新调优。
+3. **网络与集群层**：collectives、拓扑、拥塞控制、故障恢复、遥测和调度器需要长时间 burn-in。
+4. **运维与人才层**：SRE/MLOps 工具、监控、故障手册和工程师经验是隐性资产。
+5. **商业与供给层**：云合同、保留实例、备件、OEM 保修和融资使更换不可能瞬间完成。
+
+替换成本不是永恒垄断。Hyperscaler 有足够 workload 稳定性、软件人才和采购规模，能让 TPU/Trainium/MTIA 在内部任务获得回报；上层框架抽象和开放互联也在降低成本。NVIDIA 的最佳防御不是封闭，而是用每代更高的每瓦 token、全栈可靠性与 NVLink Fusion 让替代的总拥有成本仍不划算。
+
+### 9.5 主要风险与可观察预警
+
+| 风险 | 发生机制 | 概率/冲击 | 预警指标 |
+|---|---|---|---|
+| Rubin/HBM4/封装爬坡 | 单一组件良率或认证拖延整 rack | 中 / 高 | OEM GA 延后、HBM4 合格率不披露、库存和准备上升 |
+| 电力、液冷和施工 | GPU 已有但机房无法上电验收 | 高 / 高 | 客户 MW 延期、变压器/CDU 交付期、资本开支转向土地电力而非 IT |
+| 客户自研 ASIC | 稳定推理/推荐 workload 从 GPU 迁出 | 高 / 中高 | TPU/Trainium/MTIA 单位数、云实例利用率、NVDA hyperscale 增速低于 ACIE |
+| AMD/开放互联 | 性能与 ROCm 成熟、UALink 降低锁定 | 中 / 高 | MI450 大客户按期生产、ROCm 生产故障率、UALink量产 switch |
+| 毛利正常化 | HBM4、CPO、系统集成成本增加，竞争压价 | 中 / 高 | 毛利持续低于 72%、早期 Rubin 返修和库存准备 |
+| 客户集中/循环融资 | NVIDIA 投资客户，客户再采购 NVIDIA；需求对融资敏感 | 中高 / 高 | 前三客户占比、应收/DSO、投资承诺、客户融资条款 |
+| 出口管制与中国 | 合规产品仍受许可或中国客户转国产 | 高 / 中高 | 许可政策、H200/H20收入、库存费用；Q2 指引已假设中国 DC compute 为零 |
+| 软件货币化不足 | CUDA 有护城河但没有独立高毛利 ARR | 中 / 中 | 递延收入/RPO、软件 attach、是否开始单列 ARR |
+| 收购/许可回报 | Groq $17bn、Run:ai 等无法形成现金流 | 中 / 中 | Groq客户订单、LPU毛利、无形资产减值和商誉 |
+| 估值压缩 | 21x TTM 销售额对增长下修极敏感 | 中高 / 高 | FY28 一致预期、forward P/E、增速与毛利同时下修 |
+
+## 10. 综合投资判断与监控框架
+
+NVIDIA 当前仍是 AI 基建中最难替换、最能提价、最能把技术瓶颈转成收入的公司之一。Q1 计算年化 $241.6bn、网络年化 $59.2bn，以及 Q2 $91bn 指引证明需求和供给曲线仍陡峭；75% 左右毛利说明公司捕获的不只是芯片制造价值，而是时间价值、软件生态和系统可用性。
+
+但“好公司”与“好赔率”必须分开：$5.344tn 市值、21.1x TTM P/S 要求 Rubin 快速接棒、网络继续翻倍级增长、客户建设不延期、毛利保持平台水平。即使 FY2028 一致预期 $562bn 实现，当前市值对应约 9.5x 远期销售额；任何 10%–15% 交付推迟都会显著改变贴现结果。资产负债表不会先出问题，估值和毛利率会先反应。
+
+本报告的结论排序为：
+
+1. **最强确定性**：Blackwell Ultra、CUDA、NVLink、ConnectX/BlueField 与 AI 网络的组合；已有收入、增速和客户验收共同验证。
+2. **最大一年上行**：Vera Rubin 和随之翻升的 HBM4/网络/CPO 内容量；已进入生产，但仍需用 OEM GA、客户验收和单位数验证爬坡。
+3. **被低估的小业务**：NVLink Fusion、Dynamo/NIM/Run:ai 软件货币化、RTX PRO/Jetson/Isaac physical AI；当前收入小但能守住系统控制点。
+4. **高潜力低证据**：Groq 3 LPX、800VDC 和超大规模 CPO；产品与路线图可信，商业收入、认证和现场可靠性证据不足。
+5. **最大结构风险**：客户自研 ASIC 并不需要全面击败 NVIDIA；只要把稳定、高利用率推理 workload 分流，就会降低 GPU 增量和平台溢价。NVIDIA 以 NVLink Fusion、软件和网络扩大控制层，是对该风险最合理的回应。
+
+下一次财报应首先检查四个“真伪开关”：Rubin 是否出现明确确认收入和已验收 rack/MW；网络增速是否继续快于计算；库存/供应承诺增速是否低于收入；GAAP 毛利能否在新平台爬坡时守住 74%–75%。只有四项同时为正，乐观情景才应取代基准情景。
+
+## 11. 口径、推算方法与项目内行业交叉验证
+
+### 11.1 已披露、推算和情景的边界
+
+- **公司披露**：五季收入、分部/平台收入、毛利、利润、现金流、资产负债、库存、供应承诺、指引和产品配置，均直接来自 NVIDIA 新闻稿、CFO commentary、10-Q/10-K 或产品文档。
+- **客户/供应商披露**：Dell backlog、IREN/Microsoft 验收、HBM4 出货、客户项目单位数只用于需求/供给验证；没有全额归入 NVIDIA backlog。
+- **本报告推算**：Blackwell/Rubin/软件/physical AI/Groq 产品收入、产品毛利、美元产能、绑定价值和未来三情景。推算受重复计入限制，产品表不可相加。
+- **行业模型**：每 rack 价格、BOM 占比、Rubin rack 功耗、切换成本等来自项目内行业调研；报告在关键位置明确标识，未包装为官方事实。
+- **传闻处理**：没有把未具名论坛帖子、二手“售罄”说法或供应商营销数字当结论。唯一采用的产业渠道预警为 TrendForce Rubin 延迟风险，并以随后官方 production 与 HBM4 出货证据交叉验证。
+
+### 11.2 项目内 `基本面/行业调研/` 交叉验证文件
+
+| 项目内文件 | 本报告使用范围 |
+|---|---|
+| `AI服务器_存储_芯片/行业调研_商用AI加速芯片_2026-08-18.md` | Blackwell/Rubin 单 GPU与 rack 绑定价值、产品市场情景、产品毛利、加速器 BOM、竞争份额和切换成本 |
+| `AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-08-18.md` | NVL72 rack 构成、系统 BOM、Rubin 功耗模型、每 MW 内容量 |
+| `AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-08-18.md`；`行业调研_AI芯片先进封装_2026-08-18.md` | HBM/CoWoS 类约束、模块成本传导和供应验证框架 |
+| `AI网络_光互联_铜互联/行业调研_InfiniBand与专有Scale-up互联_2026-08-18.md`；`行业调研_AI以太网交换系统与Fabric芯片_2026-08-18.md`；`行业调研_网卡、DPU与SmartNIC_2026-08-18.md`；`行业调研_CPO_NPO与交换侧光引擎_2026-08-18.md`；`行业调研_800G_1.6T可插拔光模块_2026-08-18.md` | 102.4T switch、NIC/DPU BOM、每 optical port 内容量和网络利用率经济性 |
+| `AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-08-18.md`；`行业调研_数据中心直液冷系统_2026-08-18.md` | 142kW 到 187–227kW 的供配电/液冷约束、MW 口径与 800VDC 认证风险 |
+| `AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-08-18.md`；`行业调研_云厂自研AI_ASIC_2026-08-18.md`；`行业调研_EDA工具、接口IP与Chiplet_IP_2026-08-18.md` | CUDA/编排护城河、ASIC 替代路径、NVLink Fusion 与开放接口竞争 |
+| `产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md` | AI 芯片供应释放、厂商相对位置与情景口径的横向校验 |
+
+## 12. 主要联网资料
+
+### 公司财务与监管
+
+- [NVIDIA FY2027 Q1 CFO Commentary](https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q127/Q1FY27-CFO-Commentary.pdf)
+- [NVIDIA FY2027 Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm)
+- [NVIDIA FY2026 10-K](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm)
+- [FY2026 Q1](https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q126/Q1FY26-CFO-Commentary.pdf)、[Q2](https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Q2FY26-CFO-Commentary.pdf)、[Q3](https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q326/Q3FY26-CFO-Commentary.pdf)、[Q4](https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/Q4FY26-CFO-Commentary.pdf) CFO Commentary
+
+### 产品、供应链与客户
+
+- [Vera Rubin NVL72](https://www.nvidia.com/en-us/data-center/vera-rubin-nvl72/)、[Rubin full production](https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory)、[Rubin platform/chips](https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/)
+- [GB300 enterprise reference architecture](https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory/latest/components.html)
+- [Spectrum-X CPO](https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/)、[NVLink scale-up](https://developer.nvidia.com/blog/nvidia-nvlink-the-scale-up-network-for-ai-factories/)
+- [Dell FY2027 Q1](https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~05~dell-technologies-delivers-first-quarter-fiscal-2027-financial-results.htm)、[IREN/Microsoft GB300 acceptance](https://iren.gcs-web.com/static-files/49325cad-f6fe-42ba-acd6-b286ede0fb4a)
+- [Samsung HBM4](https://news.samsung.com/global/samsung-unveils-hbm4e-showcasing-comprehensive-ai-solutions-nvidia-partnership-and-vision-at-nvidia-gtc-2026)、[SK hynix HBM4](https://news.skhynix.com/en/sk-hynix-completes-worlds-first-hbm4-development-and-readies-mass-production/)、[TSMC FY2026 Q1 transcript](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-04/3cef85204275f94fd111485cfdf4adb3c0263c45/TSMC%201Q26%20Transcript.pdf)
+
+### 竞争与监管
+
+- [AMD–Anthropic](https://newsroom.amd.com/news/amd-anthropic-strategic-partnership/)、[Google TPU 8](https://cloud.google.com/blog/products/compute/ai-infrastructure-at-next26)、[Meta MTIA](https://about.fb.com/news/2026/03/expanding-metas-custom-silicon-to-power-our-ai-workloads/)
+- [UALink 1.0 white paper](https://ualinkconsortium.org/wp-content/uploads/2025/04/UALink-1.0-White_Paper_FINAL_UPDATED.pdf)
+- [U.S. BIS 2026 advanced-computing export licensing policy](https://www.bis.gov/sites/default/files/documents/DoC%20Revises%20License%20Review%20Policy%20for%20Semiconductors%20Exports.pdf)
+
+> 最后更新：2026-08-19。股价、分析师一致预期、出口许可和产品认证会快速变化；财务与产品事实以对应链接日期为准，情景不是投资建议。

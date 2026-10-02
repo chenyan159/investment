@@ -1,0 +1,158 @@
+# 公司收入传导与价值传导评估：MKS Inc（MKSI）
+
+报告日期：2026-06-12（America/Los_Angeles）  
+公司代号：MKSI  
+公司名称：MKS Inc（2025-05-16 前为 MKS Instruments, Inc.）  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM = 2026Q2-2027Q1 滚动四季度。  
+资料边界：项目内只使用 `公司调研/` 与 `行业调研/`；未读取、引用或继承 `特征量化/`、Signals、回归、模型比较或全公司排序资料。  
+估值边界：本文只做收入、利润、现金流和经营质量传导，不输出投资评级、目标价、股价区间或估值倍数判断；金融市场价格不作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 2026Q2-2027Q1 NTM；FY2026、FY2027、长期 HBM4/Rubin/玻璃基板/TGV/CPO 只作为补充和远期期权，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：Q1 2026 收入 10.78 亿美元；Q2 2026 管理层收入指引中位数 12.00 亿美元、区间 11.60-12.40 亿美元；Q2 指引分终端市场为 Semiconductor 5.50 亿美元、Electronics & Packaging 3.50 亿美元、Specialty Industrial 3.00 亿美元。Q2 2025-Q1 2026 最近四季度收入约 40.72 亿美元；FY2025 收入 39.31 亿美元。市场销售预期作为辅助锚，FY2026 约 48 亿美元、FY2027 约 55 亿美元量级；本文基准 NTM 公司收入放在 50.0-52.0 亿美元，等同于 Q2 指引和 H2/Q1 正常延续，而不是把行业 TAM 直接折成公司收入。
+- 重要产品/业务线：VSD 半导体真空/RF/气体流体控制；MSD/Atotech 先进 PCB、封装基板、电镀化学品和电镀设备；PSD/ESI 激光钻孔和 via formation；PSD 后道 lasers、光学、运动控制、datacom/defense photonics；跨业务 consumables & service；Specialty Industrial 传统和工业暴露作为抵消项。
+- NTM 公司收入四情景：悲观 44.0-47.0 亿美元；基准 50.0-52.0 亿美元；乐观 54.0-58.0 亿美元；极度乐观 59.0-64.0 亿美元。
+- 利润或 EBITDA 四情景：悲观 adjusted EBITDA 10.0-11.8 亿美元；基准 12.8-14.0 亿美元；乐观 14.6-16.8 亿美元；极度乐观 17.1-19.8 亿美元。GAAP 净利润受 Atotech 相关摊销、债务重组费用和利息路径影响，本文只作方向判断，不把 GAAP 净利精确量化为主口径。
+- 最大传导瓶颈：MKS 的 AI 需求不是直接进 rack BOM，而是通过 WFE、HBM/DRAM、先进逻辑、先进封装、高层 PCB/IC substrate 设备和耗材传导；真正瓶颈是客户 capex 节奏、OEM design-in、订单转收入、化学品/设备交付、laser drilling 客户结构和 Atotech/ESI 是否进入 AI package substrate 而不是只受益消费电子 flex PCB。
+- 最大利润率变量：MSD/Atotech 高毛利化学品 mix、VSD 高端 RF/remote plasma/flow control mix、PSD laser drilling 设备利用率、服务/耗材占比、低毛利设备和贵金属 pass-through 对毛利率的稀释、关税和供应链成本。
+- 最大现金流变量：库存和应收随 Q2/H2 ramp 上升、设备交付验收和化学品 pull-through 的营运资本占用、capex 3-5% revenue、现金利息和净杠杆下降速度。Q1 2026 free cash flow 只有约 0.29 亿美元，不能简单年化为低现金流；但也说明 ramp 阶段现金流滞后于收入和 EBITDA。
+- 可信度：基准为中高；乐观为中；极度乐观为低到中。高可信的是 Q2 指引、Q1/Q2 分终端市场收入、三大 division 收入和毛利率、consumables & service 金额；低可信的是按 AI GPU/rack 直接分摊收入、未披露 backlog、未量化 customer design wins 和远期 CPO/glass/TGV。
+
+## 2. 重要产品清单
+
+口径说明：本节识别重要产品和业务线，只判断当前收入基数、重要性和是否可进入 NTM。VSD、PSD、MSD 是公司报告分部口径；Semiconductor、E&P、Specialty Industrial 是终端市场口径；consumables & service 横跨分部，不能与分部收入机械相加。公司层面汇总在第 6 节按总收入和终端市场去重。
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| VSD 半导体真空/RF/微波/remote plasma/压力与气体流体控制 | Q1 2026 VSD 4.25 亿美元；Q2 Semiconductor 终端市场指引 5.50 亿美元；FY2025 VSD 15.79 亿美元 | Q1 division 39.4%；Semi 终端市场 43.2% | 核心收入和 AI 制造链主引擎；直接随 WFE、advanced DRAM、logic、NAND upgrade 传导 | A | 进入基准；NTM 基准按 19.5-21.0 亿美元的 division/产品组贡献处理 | HBM4、3D DRAM/HAR etch、High-NA/2nm 新平台的更高 ASP 和服务 attach |
+| MSD/Atotech 电镀化学品、先进 PCB/封装基板表面处理、plating equipment | Q1 2026 MSD 3.50 亿美元；E&P 终端市场 3.21 亿美元；FY2025 MSD 13.23 亿美元 | Q1 division 32.5%；E&P 终端市场 29.8% | 最高毛利和 AI PCB/package substrate 传导；设备销售可带来 chemistry pull-through | A/B | 进入基准；NTM 基准按 15.0-16.5 亿美元处理，C 级新品只小比例纳入 | TGV、glass core、panel-level、hybrid bonding surface prep、AI organic interposer |
+| PSD/ESI 激光钻孔、via formation、PCB/封装基板加工设备 | PSD 子集中无法单独披露；Q1 2026 PSD 合计 3.03 亿美元；官方称 laser drilling orders very healthy | PSD 28.1% 中的一部分；公司级约中个位数到低双位数 | 对高层 PCB、HDI、IC substrate 和 rigid/package substrate 有弹性，但当前订单仍包含 smartphone/wearables flex 和 LEO rigid PCB | A/B/C | 进入基准但折扣；NTM 基准只纳入已可见激光钻孔和 via formation 订单，不把所有 AI server PCB capex 当收入 | AI server board、package substrate、CPO/光引擎载板、LEO/defense 高可靠 PCB |
+| PSD 后道 lasers、光学、运动控制、Ophir/Newport/Spectra-Physics、datacom/defense photonics | Q1 2026 PSD 3.03 亿美元；Specialty Industrial 同比增长由 datacom 和 defense 等支撑 | PSD 28.1% 中的一部分；终端市场横跨 Semi/E&P/SI | 现金流和利润质量重要；AI 纯度低于 VSD/MSD，主要是制造/测试工具间接受益 | A/B | 进入基准但按普通工业和半导体后道 mix 保守处理 | CPO、silicon photonics、optical I/O 制造/测试工具 |
+| Consumables & service、化学品消耗、field service、calibration、maintenance | Q1 2026 consumables & service 4.28 亿美元，占收入 40%；不与 division 收入相加 | 40% 横跨全公司 | 决定利润韧性、现金流和客户粘性；equipment ramp 后的滞后收益 | A | 作为利润率和现金流校准进入基准；收入汇总不单独相加 | installed base service、predictive maintenance、chemistry refill |
+| Specialty Industrial 传统工业、表面处理、普通 photonics、general metal finishing | Q1 2026 Specialty Industrial 2.91 亿美元；Q2 指引 3.00 亿美元 | Q1 27.0%；Q2 指引 25.0% | 不是 AI 主线，但可稳定现金流，也可能稀释 AI 增长和毛利率 | A | 进入公司基准作为稳定项和抵消项；不作为 AI 收入上修来源 | defense/datacom photonics 中的少数高端应用 |
+
+## 3. 产品需求四情景
+
+本步口径：只评估外部需求池，不判断 MKS 份额、收入确认和利润率。需求单位优先采用 WFE/设备子系统收入池、先进封装湿化学材料池、PCB/封装基板设备订单、客户 capex/订单强度和已披露终端市场指引。所有相对判断均相对当前需求锚：Q2 2026 指引、Q1/Q2 订单措辞、本地行业资料的 2026H2-2027H1 需求池，以及 SEMI/设备链对 2026-2027 WFE 上行的最新判断。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| VSD 真空/RF/remote plasma/气体流体控制 | 本地行业资料估算半导体设备子系统与真空/RF/流体模块未来 12 个月收入池约 280-370 亿美元；SEMI/300mm/WFE 资料显示 2026 设备需求上修；MKS Q2 Semi 指引 5.50 亿美元 | 240-300 亿美元；WFE 仍增长但订单后移，advanced DRAM/logic tool pull-in 低于 Q2 指引隐含节奏 | 280-370 亿美元；leading-edge logic、HBM/DRAM、NAND upgrade 正常兑现 | 370-500 亿美元；HBM4/Rubin/ASIC 预拉货，高端 RF/MFC/vacuum valve 出现交期拉长 | 500-650 亿美元；3D DRAM/HAR etch、HBM4、2nm/GAA、advanced packaging 同时抢产能 | 悲观较锚点低约 40-70 亿美元；乐观高约 90-130 亿美元；极度高约 220-280 亿美元 | 悲观=低于当前预期；基准=符合；乐观/极度=高于并需要多客户 pull-in | 正向：Q2 Semi 指引 +18% QoQ、remote plasma/microwave/dissolved gas 订单强；反证：Lam/AMAT/TEL/KLA 指引转弱、Ichor/UCT/VAT 订单回落、客户推迟 tool install |
+| MSD/Atotech 先进 PCB、封装基板、电镀化学品/设备 | 本地先进封装湿化学材料未来 1 年市场基准 19-26 亿美元；E&P Q2 指引 3.50 亿美元；公司称 chemistry、chemistry equipment、laser drilling orders robust | 先进封装材料仍增长但 CoWoS/HBM/高层 PCB 交付滞后，湿化学材料池约 16-21 亿美元；设备订单回落 | 湿化学材料池 19-26 亿美元，AI package substrate 和 high-layer PCB 正常扩产；Atotech equipment 带来 chemistry pull-through | 材料池 26-36 亿美元，package substrate/AI server PCB/HBM4 qualification 加速；化学品和设备绑定 | 材料池 36-48 亿美元，HBM4/Rubin/MI400/TPU/ASIC 同时上修，客户提前锁定高端配方和设备 | 悲观低 3-5 亿美元材料池；乐观高 7-10 亿美元；极度高 17-22 亿美元；设备池无法可靠量化 | 基准符合；乐观以上需要客户扩产、配方认证和设备交付同时成立 | 正向：Atotech JPCA/CPCA 新产品、Q1/Q2 E&P 强；反证：CoWoS lead time 回落、OSAT/基板厂利用率低于 85%、材料商 electronics organic growth 低于 5% |
+| PSD/ESI 激光钻孔、via formation | 需求锚不是全部 AI PCB，而是已可见 laser drilling orders；公司称订单 very healthy，但主要包括 smartphone/wearables flex 和 LEO satellite rigid PCB | Flex/消费电子订单正常化，AI rigid/package substrate 订单未接续；需求低于当前乐观叙事 | Flex/rigid/PCB 设备订单维持健康，AI server board 和 package substrate 小幅增加 | Geode/G2/CapStone 在 rigid PCB、AI server board、package substrate 中显著放量 | 高层 PCB 和 package substrate via formation 变成瓶颈，客户提前锁定激光钻孔设备 | 无可靠行业统一美元口径；以 MKS 激光钻孔订单强弱和 PSD/E&P 交付验证 | 基准=订单健康但 AI 纯度保守；乐观=AI PCB 客户明确放量 | 正向：laser drilling orders robust；反证：订单主要来自 flex smartphone/wearables，不能证明 AI server PCB 收入 |
+| PSD 后道 lasers、光学/运动控制、datacom/defense photonics | 需求锚为 backend laser、semiconductor photonics tools、datacom/defense 增长；不是 AI 光模块 BOM | 普通工业/研究预算走弱，datacom/defense 只能部分抵消 | 后道 laser 和 datacom/defense 稳健，随封装、光学制造和测试缓慢增长 | CPO/硅光/光电封装制造工具订单提前，后道 laser 与 motion/measurement attach 上升 | Optical I/O/CPO 在 NTM 内形成明显制造工具 pull-in，但需客户验证 | 无可靠单一美元口径；以 PSD 收入和 Specialty Industrial 中 datacom/defense 贡献验证 | 基准=符合当前预期；乐观以上=制造工具超预期而非光模块本身 | 正向：Specialty Industrial 中 datacom/defense 支撑；反证：MKS 不是 optical transceiver/CPO 主供应商，CPO 仍偏远期期权 |
+| Consumables & service | Q1 2026 4.28 亿美元，占收入 40%；installed base 利用率和化学品消耗随设备上行滞后增长 | 客户 ramp 推迟、设备安装少，service/chemistry 只随 base 低个位数增长 | 设备利用率提升，chemistry refill、maintenance、calibration 正常增长 | Q2/H2 设备交付带来 service attach 和 chemistry pull-through，消耗品增速高于设备收入 | 高端 fabs/packaging 满产，uptime 价值上升，客户为服务和化学品稳定性付费 | 当前 run-rate 年化 17.1 亿美元；NTM 悲观约 17-18 亿、基准 18-20 亿、乐观 20.5-23 亿、极度 24-27 亿美元；与 division 重叠 | 基准=符合；乐观=质量改善；极度=需高利用率和服务 attach 同时突破 | 正向：consumables/service 已占 40%；反证：Q1 FCF 偏低、库存应收上升说明收入 ramp 先占现金 |
+| Specialty Industrial 传统/工业需求 | Q1 2026 2.91 亿美元，Q2 指引 3.00 亿美元；终端多元但 AI 纯度低 | 普通工业、汽车、general metal finishing 需求走弱；datacom/defense 不足以抵消 | Q2 指引正常兑现，低个位到高个位增长 | datacom/defense 和高端表面处理提升，传统工业不拖累 | 工业、defense、datacom 全部上修，但仍不是 AI 主线 | NTM 悲观约 11.0-11.5 亿，基准 11.8-12.5 亿，乐观 12.8-13.8 亿美元；与 division 重叠 | 基准=稳定现金流；乐观以上对公司收入有帮助但不应标成 AI | 正向：Q2 指引 +3% QoQ；反证：传统工业周期、价格竞争、低毛利项目 |
+
+## 4. 可收入化暴露与收入基数
+
+本步口径：只判断外部需求中哪些能进入 MKS 的 NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入。证据等级按收入表可确认性定义：A=已披露收入/分部/指引；B=订单、合同、客户项目和明确交付节奏；C=design win、认证、产能规划和管理层可验证披露；D=产品发布/样品/早期合作；E=只有主题相关。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| VSD 真空/RF/remote plasma/气体流体控制 | Q1 VSD 4.25 亿美元；FY2025 VSD 15.79 亿美元；Q2 Semi 终端市场指引 5.50 亿美元 | 直接卖给 WFE OEM、fab 工具链和服务；AI 为制造端间接受益 | 高端 RF/remote plasma/MFC/pressure control 毛利好；普通模块和客户压价较低 | 17.5-18.5 亿美元 | 19.5-21.0 亿美元 | 21.5-23.5 亿美元 | 24.5-27.5 亿美元 | 基准符合 Q2 指引和当前 run-rate；乐观需 Q3/Q4 继续高于 5 亿美元 Semi run-rate | A/B | 是 | 已披露 division 收入、终端市场指引、官方订单措辞；remote plasma/microwave/dissolved gas 有明确产品线 | NTM 主收入项；不得把全球 WFE 需求池直接折为公司份额 |
+| MSD/Atotech chemistry + plating equipment | Q1 MSD 3.50 亿美元；FY2025 MSD 13.23 亿美元；Q2 E&P 指引 3.50 亿美元；company 称 chemistry equipment record/robust | 直接进入 PCB、IC substrate、surface finishing 和 advanced packaging 客户收入；AI 为 package substrate/high-layer PCB look-through | MSD 2025 分部毛利率 54.1%，公司最高；设备毛利低于化学品但带动耗材 | 13.5-14.5 亿美元 | 15.0-16.5 亿美元 | 17.0-19.5 亿美元 | 20.5-23.5 亿美元 | 基准符合 Q1/Q2 run-rate；乐观需 Atotech 订单超预期和 chemistry pull-through | A/B/C | 是 | 分部收入和 Q2 E&P 指引为 A；新产品/CPCA/JPCA 是 C，只作乐观或上限 | NTM 基准纳入已在收入/指引/订单中的化学品和设备；TGV/glass/hybrid 只列远期期权 |
+| PSD/ESI laser drilling/via formation | Q1 PSD 3.03 亿美元中一部分；Q2 E&P 和 SI 指引支持；官方提 laser drilling orders robust | 直接卖设备给 PCB/flex/rigid/package substrate 客户；AI 通过高层 PCB 和基板间接受益 | 设备毛利中等，利用率和配置 mix 决定利润；若只来自消费电子 flex，AI 利润质量较低 | 2.8-3.4 亿美元 | 3.5-4.5 亿美元 | 4.5-6.0 亿美元 | 6.5-8.0 亿美元 | 基准只承认已可见订单；乐观代表 AI rigid/package substrate 增量显性化 | B/C | 部分进入 | 订单措辞强但未披露金额；客户结构部分不清 | 基准折扣纳入；未量化 AI server board design win 不进基准 |
+| PSD 后道 lasers/Photonics/光学运动控制 | Q1 PSD 3.03 亿美元；FY2025 PSD 10.29 亿美元；datacom/defense 支撑 SI | 直接卖 lasers、optics、motion、measurement；AI 主要通过半导体后道、datacom/defense 制造工具 | 高端测量/光学和运动控制毛利较好，普通工业/项目型较低 | 7.5-8.5 亿美元 | 8.5-9.5 亿美元 | 9.5-11.0 亿美元 | 11.0-13.0 亿美元 | 基准符合当前 run-rate；乐观需 CPO/光电制造工具订单明确 | A/B/C | 是，但保守 | PSD 分部收入为 A，具体 AI photonics 机会多为 C/D | 当前 PSD 主体进入基准；CPO/optical I/O 只作乐观/远期期权 |
+| Consumables & service / chemistry refill | Q1 4.28 亿美元，占收入 40%；跨分部，不与 division 相加 | 直接进入收入表，但跨 VSD/PSD/MSD；服务和耗材随 installed base 兑现 | 通常高于硬件，稳定现金流和客户锁定 | 17.0-18.0 亿美元 | 18.0-20.0 亿美元 | 20.5-23.0 亿美元 | 24.0-27.0 亿美元 | 基准符合 installed base 利用率；乐观代表设备销售后续耗材拉动 | A | 作为质量因子进入 | 公司披露 Q1 金额；但和分部收入重叠，不能相加 | 用于利润率/现金流校准，不作为额外收入叠加 |
+| Specialty Industrial / legacy offset | Q1 2.91 亿美元；Q2 指引 3.00 亿美元 | 直接收入表；AI 纯度低 | 现金流稳定但 mix 可能低于 MSD，高端 datacom/defense 例外 | 11.0-11.5 亿美元 | 11.8-12.5 亿美元 | 12.8-13.8 亿美元 | 14.0-15.5 亿美元 | 基准符合指引；上修不应归因于 AI 主线 | A | 是，作为公司收入稳定项 | 终端市场收入和指引明确 | 纳入公司汇总；作为抵消项和稳定项处理 |
+
+排除项：每 MW、每 rack、每 GPU、每 optical port 的直接物理 BOM 收入为 0；未披露客户名称、未量化 design win、玻璃/TGV/CPO/hybrid bonding 样品和产品发布不进入 NTM 基准；市场估值和股价变化不作为收入锚点。
+
+## 5. 产品级收入和利润贡献
+
+本步口径：从第 3 节需求和第 4 节收入基数出发，判断每个重要产品在 NTM 能给 MKS 贡献多少收入、利润和经营质量。产品收入贡献按 division 或可识别子业务估算；consumables & service 和 Specialty Industrial 为横向质量/抵消口径，汇总时去重。利润贡献以 gross profit/adjusted operating profit 方向为主；无法由公司披露精确拆分时写区间或方向。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| VSD 真空/RF/remote plasma/气体流体控制 | 悲观 | 17.5-18.5 亿美元 | gross profit 约 7.3-8.0 亿美元；operating profit 受利用率压缩 | GM 41-43%，低于当前结构 | 低于 Q2 Semi 指引隐含路径 | Q1 VSD 4.25 亿、Q2 Semi 5.50 亿指引，但 WFE 订单可能后移 | 保留为悲观 | WFE pushout、OEM dual-source、出口限制、低端模块价格压力 |
+| VSD 真空/RF/remote plasma/气体流体控制 | 基准 | 19.5-21.0 亿美元 | gross profit 约 8.6-9.7 亿美元 | GM 44-46%，接近当前结构并小幅 mix 改善 | 符合当前指引/run-rate | remote plasma/microwave for advanced DRAM、dissolved gas for logic 订单强；行业 RF/真空/流体需求上行 | 保留 | MKS 不披露 backlog，需 Q3 指引验证 |
+| VSD 真空/RF/remote plasma/气体流体控制 | 乐观 | 21.5-23.5 亿美元 | gross profit 约 9.9-11.3 亿美元 | GM 46-48%，高端 RF/flow/remote plasma mix 上移 | 高于当前预期 | HBM4/Rubin/ASIC tool pull-in、高端子系统交期变紧 | 保留但可信度中 | 客户可提前下单但收入确认受交期和验收限制 |
+| VSD 真空/RF/remote plasma/气体流体控制 | 极度乐观 | 24.5-27.5 亿美元 | gross profit 约 12.0-14.0 亿美元 | GM 49-51%，需短缺溢价和服务 attach | 显著高于预期 | HBM4、GAA/2nm、3D DRAM/HAR etch、NAND upgrade 同时成立 | 下移为乐观上限/低可信极度 | 单一 WFE 周期很难在 NTM 内同时突破需求、份额、价格、交付 |
+| MSD/Atotech chemistry + plating equipment | 悲观 | 13.5-14.5 亿美元 | gross profit 约 7.0-7.6 亿美元 | GM 51-53%，设备/贵金属 pass-through 稀释 | 低于 E&P 当前预期 | E&P Q2 指引强，但封装/PCB capex 可能后移 | 保留 | 高层 PCB/封装基板订单不及预期，客户双源和本地化压价 |
+| MSD/Atotech chemistry + plating equipment | 基准 | 15.0-16.5 亿美元 | gross profit 约 8.1-9.1 亿美元 | GM 54-55%，化学品 pull-through 支撑 | 符合当前 run-rate 和 Q2 指引 | Q1 MSD 3.50 亿、2025 MSD GM 54.1%、chemistry equipment 和 chemistry orders robust | 保留 | 新配方认证慢；设备收入低毛利且营运资本占用高 |
+| MSD/Atotech chemistry + plating equipment | 乐观 | 17.0-19.5 亿美元 | gross profit 约 9.5-11.3 亿美元 | GM 56-58%，高端配方和服务占比上升 | 高于当前预期 | AI server PCB、package substrate、advanced packaging materials 需求增强；Atotech/ESI integrated solutions | 保留，可信度中 | 需要客户、产品、交付和化学品消耗同时验证 |
+| MSD/Atotech chemistry + plating equipment | 极度乐观 | 20.5-23.5 亿美元 | gross profit 约 12.0-14.3 亿美元 | GM 58-61%，需要 allocation 和配方涨价 | 显著高于当前预期 | Rubin/MI400/HBM4/custom ASIC 同时推高高端 PCB/基板和材料用量 | 下移为乐观上限/低可信极度 | TGV/glass/panel/hybrid 多数不是 NTM 基准收入 |
+| PSD/ESI laser drilling/via formation | 悲观 | 2.8-3.4 亿美元 | gross profit 约 1.1-1.4 亿美元 | GM 38-42%，利用率不佳 | 低于当前乐观叙事 | laser drilling 订单可能主要来自 flex/消费电子 | 保留 | AI rigid/package substrate 未形成明确订单，消费电子周期回落 |
+| PSD/ESI laser drilling/via formation | 基准 | 3.5-4.5 亿美元 | gross profit 约 1.5-2.1 亿美元 | GM 42-47% | 符合当前订单措辞但保守 | 官方称 laser drilling orders very healthy，E&P Q2 指引强 | 保留 | 公司未披露子业务金额和客户结构 |
+| PSD/ESI laser drilling/via formation | 乐观 | 4.5-6.0 亿美元 | gross profit 约 2.1-3.0 亿美元 | GM 46-50% | 高于当前预期 | Geode/G2/CapStone 在 AI server board、rigid PCB、package substrate 订单提升 | 保留，可信度中低 | 必须回答谁买、买什么、何时验收；当前证据不足以进入基准 |
+| PSD/ESI laser drilling/via formation | 极度乐观 | 6.5-8.0 亿美元 | gross profit 约 3.1-4.2 亿美元 | GM 48-53% | 明显高于预期 | 高层 PCB/package substrate via formation 成为瓶颈 | 移入附录/仅作跟踪 | 缺少 NTM 大客户、金额和交付时间表 |
+| PSD 后道 lasers/Photonics | 悲观 | 7.5-8.5 亿美元 | gross profit 约 3.0-3.6 亿美元 | GM 40-43% | 低于当前 run-rate | 普通工业/研究预算弱，datacom/defense 抵消有限 | 保留 | AI 纯度不高，项目型收入波动 |
+| PSD 后道 lasers/Photonics | 基准 | 8.5-9.5 亿美元 | gross profit 约 3.7-4.4 亿美元 | GM 43-46% | 符合当前预期 | Q1 PSD 3.03 亿，后道 lasers 和 datacom/defense 需求稳健 | 保留 | CPO/硅光制造工具尚不能替代当前收入锚 |
+| PSD 后道 lasers/Photonics | 乐观 | 9.5-11.0 亿美元 | gross profit 约 4.4-5.3 亿美元 | GM 46-48% | 高于当前预期 | 后道封装、datacom/defense、光学测量和运动控制 mix 改善 | 保留但折扣 | CPO/optical I/O 可能仍在试点 |
+| PSD 后道 lasers/Photonics | 极度乐观 | 11.0-13.0 亿美元 | gross profit 约 5.4-6.6 亿美元 | GM 49-51% | 显著高于预期 | 光电封装/CPO 提前，MKS 被制造/测试生态吸收 | 移入附录/仅作跟踪 | 缺少 NTM 可确认客户收入路径 |
+| Consumables & service | 悲观 | 17.0-18.0 亿美元（重叠口径） | 支撑 gross profit 但增长有限 | 毛利韧性高，但无法抵消硬件降速 | 略低于当前质量预期 | Q1 已披露 4.28 亿 | 保留 | installed base 利用率、field service 成本、客户延期 |
+| Consumables & service | 基准 | 18.0-20.0 亿美元（重叠口径） | 毛利和现金流质量改善 | 服务/耗材 mix 支撑 GM 47% 附近 | 符合当前预期 | 40% 收入占比，设备和化学品 installed base 扩大 | 保留 | 与分部收入重叠，不能相加 |
+| Consumables & service | 乐观 | 20.5-23.0 亿美元（重叠口径） | 毛利率和 FCF 同步改善 | 服务/耗材附加显著 | 高于当前预期 | chemistry pull-through、维护校准、客户 uptime 价值上升 | 保留，作为利润率上修条件 | 现金流需要营运资本释放验证 |
+| Consumables & service | 极度乐观 | 24.0-27.0 亿美元（重叠口径） | 利润质量显著上移 | 高毛利 recurring 占比上升 | 显著高于预期 | AI/HBM/封装链持续满产，客户愿付服务溢价 | 下移为乐观上限 | 需要 installed base、利用率、服务 attach 三者同时突破 |
+
+## 6. 公司收入和利润四情景
+
+本步口径：把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、adjusted EBITDA、非 GAAP 净收益和自由现金流方向。汇总时不把 division、终端市场和 consumables/service 重复相加；以 Q2 2025-Q1 2026 最近四季度收入约 40.72 亿美元作为同比增长基数，以 Q2 2026 指引和当前 run-rate 作为当前预期锚。公司没有披露 backlog/book-to-bill 数字，因此订单转收入可信度低于明确 backlog 公司。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观 | 44.0-47.0 亿美元 | 较 Q2 2025-Q1 2026 +8%-15% | 低于 Q2 指引延续和约 50 亿美元 NTM 当前预期；相当于 Q2 后 Semi/E&P 明显降速 | 44.5%-46.5% | non-GAAP operating margin 19.5%-22.0% | adjusted EBITDA 10.0-11.8 亿美元；non-GAAP 净收益约 6.5-7.6 亿美元；GAAP 净利无法可靠量化 | FCF 2.5-4.5 亿美元；营运资本仍占用，去杠杆变慢 | 中 | WFE 订单后移、E&P 设备/化学品 pull-through 低于预期、laser drilling 订单消费电子化、关税/成本和利息吞噬利润 |
+| 基准 | 50.0-52.0 亿美元 | +23%-28% | 接近 Q2 指引、当前 run-rate 和市场销售预期正常兑现；不把 C/D 级机会提前放入基准 | 47.0%-48.0% | non-GAAP operating margin 23.0%-24.5% | adjusted EBITDA 12.8-14.0 亿美元；non-GAAP 净收益约 8.0-9.2 亿美元；GAAP 净利方向改善但受摊销/债务费用影响 | FCF 4.5-6.5 亿美元；H2 若应收/库存释放，去杠杆继续 | 中高 | 需要 Q2 12 亿美元指引兑现、Semi/E&P 在 H2 不掉速、service/chemistry 消耗跟上设备 |
+| 乐观 | 54.0-58.0 亿美元 | +33%-42% | 高于当前预期约 4-8 亿美元；必须由 VSD 和 MSD/E&P 双引擎，而非单一小基数项目 | 48.0%-50.0% | non-GAAP operating margin 24.5%-26.5% | adjusted EBITDA 14.6-16.8 亿美元；non-GAAP 净收益约 9.5-11.0 亿美元 | FCF 7.0-9.5 亿美元；若库存周转改善，净杠杆下降加快 | 中 | HBM4/Rubin/AI ASIC 订单提前、Atotech high-end chemistry pull-through、VSD 高端 RF/flow mix、laser drilling AI 客户结构验证 |
+| 极度乐观 | 59.0-64.0 亿美元 | +45%-57% | 显著高于当前预期约 9-14 亿美元；需求、公司捕获、利润率和执行同时突破 | 50.0%-52.0% | non-GAAP operating margin 27.0%-29.0% | adjusted EBITDA 17.1-19.8 亿美元；non-GAAP 净收益约 11.5-13.5 亿美元 | FCF 9.5-12.0 亿美元；可显著降低净杠杆，但需营运资本不失控 | 低到中 | 多个极端条件同时成立：高端 WFE、HBM4、package substrate、高层 PCB、service attach、价格/mix 和交付验收均超预期 |
+
+补充说明：公司层面极度乐观不是把 VSD、MSD、PSD 各自极度乐观简单相加；必须扣除共同客户预算、设备安装节奏、化学品消耗滞后、同一 E&P 需求在 Atotech equipment 与 ESI laser 中的重复、以及普通工业/消费电子订单的非 AI 属性。
+
+## 7. 证据校准、反证和可信度
+
+本步口径：不重新预测经营结果，只校准前四步情景。校准动作只能使用保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响的层级处理一次：WFE/封装需求风险放第 3 节，第 4 节处理可收入化，第 5 节处理产品贡献和利润，第 6 节处理公司组合和现金流。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q2 2026 收入指引 12.00 亿美元，Semi 5.50 亿、E&P 3.50 亿、SI 3.00 亿 | 收入基数、公司汇总 | 给 NTM 基准提供 A 级锚；若 Q2 低于 11.6 亿，悲观概率上升 | Q2 GM 指引 47% +/-100bps，支持基准 GM 47%-48% | Q2 ramp 会增加应收和库存，占用现金 | 基准保留；低于指引下限则基准下移 |
+| Q1 2026 VSD/MSD/PSD division 收入和 FY2025 division 毛利 | 收入基数、产品贡献 | VSD 4.25 亿、MSD 3.50 亿、PSD 3.03 亿为 A 级基数 | MSD 毛利最高，VSD/PSD 中等偏高；组合决定 GM 上限 | 分部增长需要制造、field service 和化学品本地供货 | 基准保留；极度乐观需更多订单证据 |
+| 官方 strong bookings、remote plasma/microwave、dissolved gas、chemistry equipment、laser drilling 订单措辞 | 产品贡献、执行可信度 | 支持 VSD/MSD/ESI 乐观，但未披露 backlog 金额 | 高端产品 mix 可改善利润率 | 未披露 B:B 和交期，收入确认仍需 Q3/Q4 验证 | 乐观保留；极度乐观下移为上限 |
+| Consumables & service Q1 4.28 亿美元、占收入 40% | 利润率、现金流 | 不新增收入叠加，但提高收入韧性 | 支撑 GM 和 operating margin 稳定 | 设备装机后滞后贡献 FCF，service attach 改善现金质量 | 基准保留；乐观为利润率上修条件 |
+| Q1 FCF 0.29 亿美元、库存 9.49 亿美元、应收 7.75 亿美元 | 现金流、执行 | 不直接下修收入 | 利润兑现可能先于现金 | ramp 阶段营运资本占用，去杠杆速度需验证 | 现金流情景保守；不重复惩罚收入 |
+| Atotech/ESI 新产品、JPCA/CPCA 展示、TGV/glass/panel/hybrid bonding | 远期期权、收入基数 | C/D 级证据，不进入 NTM 基准 | 若量产可显著提高 mix，但 NTM 证据不足 | 需客户认证、设备验收和化学品消耗 | 移入附录/仅作跟踪；乐观小比例 |
+| AI 数据中心 capex、HBM/CoWoS/Rubin/ASIC 需求 | 产品需求 | 支持外部需求池，不等于 MKS 可确认收入 | 高端工艺更利于 MKS mix | 若 capex 验收或电力/HBM 瓶颈推迟，订单后移 | 只影响第 3 节需求；不重复在公司层惩罚 |
+| Specialty Industrial 和消费电子 flex PCB 暴露 | 公司组合 | 稳定收入但可能稀释 AI 增长；laser drilling 订单若偏 flex，AI 贡献下降 | 普通工业/消费电子毛利和可持续性低于高端封装 | 周期性较强 | 作为抵消项处理；不把所有 PSD/E&P 上修归为 AI |
+| 高债务、利息和 refinancing 后净杠杆 3.5x | 利润/现金流 | 不影响产品需求和收入基数 | GAAP 净利受利息、摊销和债务活动影响 | FCF 去杠杆速度是经营质量关键 | 只在利润/现金流层处理；不作为需求反证 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Q2 后 Semi/E&P 降速，NTM 44.0-47.0 亿美元，GM 44.5%-46.5% | 当前 Q2 指引强，使悲观不是主情景 | WFE/PCB 订单若推迟、laser drilling 订单消费电子化、FCF 弱和营运资本占用会触发 | 保留 | 下行情景 | 中 | AI capex 放缓只在需求层处理一次；高债务只在利润/现金流层处理 |
+| 基准 | Q2 指引兑现，VSD/MSD 正常增长，NTM 50.0-52.0 亿美元，GM 47.0%-48.0% | A 级收入/指引、division 收入、Q1/Q2 订单措辞、40% service/consumables | backlog/B:B 未披露，Q3/Q4 仍需验证；C/D 级新品不能进入基准 | 保留 | 最可能情景 | 中高 | 不因未披露 backlog 直接下移全部基准，只限制乐观和极度乐观 |
+| 乐观 | VSD 和 MSD/E&P 双超预期，NTM 54.0-58.0 亿美元，GM 48%-50% | remote plasma/microwave、advanced DRAM、dissolved gas、chemistry equipment、laser drilling 订单增强；行业 WFE/先进封装需求上行 | 公司未披露订单金额；AI server PCB/package substrate 客户结构需验证；现金流滞后 | 保留 | 上行情景 | 中 | 不把 TGV/glass/CPO 远期期权重复计入乐观收入 |
+| 极度乐观 | 需求、捕获、利润率、执行同步突破，NTM 59.0-64.0 亿美元，GM 50%-52% | 高端 WFE、HBM4/Rubin/MI400/custom ASIC、Atotech chemistry pull-through、service attach 同时成立时可达 | 任一环节缺证据；TGV/glass/panel/hybrid/CPO 多数没有 NTM 可确认收入；交付和验收可能滞后 | 下移 | 保留为低可信上限，部分机会移入附录 | 低到中 | 远期期权不得既抬高收入又抬高利润率；同一 AI capex 不能在 VSD/MSD/ESI 重复计算 |
+
+## 8. 结论
+
+- 最可能情景：基准。MKS 的 NTM 最合理主口径是收入 50.0-52.0 亿美元、毛利率 47.0%-48.0%、non-GAAP operating margin 23.0%-24.5%、adjusted EBITDA 12.8-14.0 亿美元。这个结果代表 Q2 12 亿美元指引正常兑现，Semi 和 E&P 在 2026H2 保持高 run-rate，Specialty Industrial 稳定，service/consumables 跟随 installed base 改善。
+- 乐观情景成立条件：Q2 实际收入在指引中位数以上，Q3 指引继续维持或超过 12 亿美元级别；Semiconductor 不回落到 5 亿美元以下；E&P 继续接近或超过 3.5 亿美元/季；管理层继续点名 remote plasma、microwave、dissolved gas、chemistry equipment、laser drilling orders；Atotech 高端化学品和设备订单能转成 chemistry pull-through；non-GAAP GM 保持 48% 以上且 FCF 在 H2 明显恢复。
+- 极度乐观情景成立条件：HBM4/Rubin/MI400/custom ASIC、advanced DRAM、2nm/GAA、package substrate/high-layer PCB 在 NTM 内同步 pull-in；MKS 不仅参与需求池，而且在 VSD/MSD/ESI 均拿到明确订单和交付；高端 mix 推动 GM 50% 以上；营运资本没有吞噬 EBITDA；客户对服务、耗材和化学品稳定性付溢价。当前证据不足以把极度乐观作为主情景。
+- 悲观情景触发条件：Q2 实际收入低于 11.6 亿美元或 Semi/E&P 低于各自指引下限；Q3 指引显示 Semi 回到 5 亿美元以下或 E&P 低于 3.2 亿美元；订单措辞从 strong/robust 转为 normalization/pushout；laser drilling 订单主要来自消费电子 flex 且 AI PCB/基板无接续；FCF 继续低于 0.5 亿美元/季、库存应收上升、净杠杆下降停滞。
+- 后续跟踪数据：Q2 2026 实际收入和分终端市场收入；Q3 2026 指引；VSD/MSD/PSD division revenue 和 margin；consumables & service 美元额及占比；remote plasma/microwave/dissolved gas/chemistry equipment/laser drilling 订单措辞；应收、库存、FCF、净杠杆；Atotech/ESI 在 JPCA、SEMICON Taiwan、CPCA、TPCA、ECTC 的客户认证和产品量产证据；竞争对手 AEIS、Comet、VAT、Ichor、UCT、Entegris、Element Solutions/Qnity 的订单和 margin 信号。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：MKS Q1 2026 财务数据截至 2026-03-31，披露日期 2026-05-06/2026-05-07；Q2 2026 指引为公司 2026-05-06 财报和 Q1 2026 earnings presentation 口径；本报告生成日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：MKS Q1 2026 results release；MKS Q1 2026 earnings presentation；MKS Q1 2026 net revenues by end market and division；MKS FY2025 annual report and 2026 Q1 Form 10-Q；项目内 `公司调研/晶圆制造_前道设备/MKSI_MKS_Inc_公司调研_2026-06-11.md`。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026/FY2027 市场销售预期只作为当前预期辅助，不用于估值倍数判断；HBM4、Rubin/MI400、3D DRAM、TGV、glass core、panel-level、CPO/optical I/O 是远期期权，除已进入收入/订单/明确交付时间表的部分外，不进入 NTM 基准。
+- 项目内主要来源：
+  - `公司调研/晶圆制造_前道设备/MKSI_MKS_Inc_公司调研_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体设备子系统与真空_RF_流体模块_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装湿化学与表面处理材料_2026-06-11.md`
+- 外部主要来源：
+  - MKS Inc., Q1 2026 Results Release, 2026-05-06: https://investor.mks.com/news-releases/news-release-details/mks-inc-reports-first-quarter-2026-financial-results
+  - MKS Inc., Q1 2026 Earnings Presentation, 2026-05-07: https://investor.mks.com/static-files/382a3833-c6d9-47a6-9b39-bf4d1f1a2fce
+  - MKS Inc., Q1 2026 Net Revenues by End Market and Division: https://investor.mks.com/static-files/e165cd1d-705c-4603-8f5d-a657872848f9
+  - MKS Inc., Q4 and FY2025 Results Release, 2026-02-17: https://investor.mks.com/news-releases/news-release-details/mks-inc-reports-fourth-quarter-and-full-year-2025-financial
+  - MKS Inc., Form 10-Q for quarter ended 2026-03-31, SEC EDGAR: https://www.sec.gov/Archives/edgar/data/1049502/000104950226000062/mksi-20260331.htm
+  - MKS Inc., 2025 Annual Report / SEC: https://www.sec.gov/Archives/edgar/data/1049502/000119312526133426/d101621dars.pdf
+  - MKS Atotech and ESI, JPCA 2026 advanced PCB and packaging solutions: https://www.atotech.com/mks-atotech-and-esi-to-highlight-integrated-pcb-and-advanced-packaging-solutions-at-jpca-2026/
+  - MKS Atotech, CPCA 2026 next-generation PCB manufacturing technologies: https://www.atotech.com/mks-atotech-unveils-next%E2%80%91gen-pcb-manufacturing-technologies-at-cpca-2026/
+  - MKS Atotech Semiconductor Products: https://www.atotech.com/products/electronics/semiconductor/
+  - SEMI, Global semiconductor equipment billings increased 14% YoY in Q1 2026, 2026-06-04: https://www.semi.org/en/semi-press-release/semi-reports-global-semiconductor-equipment-billings-increased-14-percent-year-over-year-in-q1-2026
+  - SEMI, 300mm Fab Outlook / fab equipment spending data: https://www.semi.org/en/products-services/market-data/300mm-fab-outlook
+  - SEMI, global semiconductor equipment sales projected to reach record $156 billion in 2027: https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-projected-to-reach-a-record-of-156-billion-dollars-in-2027-semi-reports
+  - MarketScreener, MKS Inc. analyst sales estimates, used only as sales expectation cross-check, not as valuation evidence: https://www.marketscreener.com/quote/stock/MKS-INC-10036/finances/

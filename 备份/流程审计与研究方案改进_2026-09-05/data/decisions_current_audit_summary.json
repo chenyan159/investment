@@ -1,0 +1,379 @@
+{
+  "report_counts": {
+    "decision": {
+      "2026-07-15": 158,
+      "2026-07-18": 10,
+      "2026-08-19": 24
+    },
+    "comparison": {
+      "2026-07-14": 176,
+      "2026-07-18": 16
+    }
+  },
+  "post_merger_reports": {
+    "decision": 0,
+    "comparison": 0
+  },
+  "old_evaluation_mentions": {
+    "decision": 192,
+    "comparison": 192
+  },
+  "scenario_mentions": {
+    "decision": 0,
+    "comparison": 0
+  },
+  "batch_count": 1,
+  "batch_subject_count": 24,
+  "batch_echo_counts": {
+    "snapshot_hash_ok": 24,
+    "batch_id_echo": 24,
+    "snapshot_path_echo": 24,
+    "sha256_echo": 24,
+    "snapshot_id_echo": 24,
+    "price_anchor_echo": 24,
+    "main_state_echo": 24,
+    "neighbor_echo": 24
+  },
+  "comparison_rows": 36672,
+  "comparison_parse_warnings": 0,
+  "comparison_row_distribution": {
+    "191": 192
+  },
+  "comparison_confidence_distribution": {
+    "near": {
+      "": 4382,
+      "中": 19269,
+      "高": 10607,
+      "低": 2414
+    },
+    "long": {
+      "中": 18008,
+      "高": 10566,
+      "": 5858,
+      "低": 2240
+    },
+    "odds": {
+      "高": 10832,
+      "中": 17348,
+      "": 4862,
+      "低": 3630
+    },
+    "defense": {
+      "高": 13480,
+      "中": 16592,
+      "": 4849,
+      "低": 1751
+    },
+    "explosion": {
+      "中": 18566,
+      "高": 10010,
+      "": 4407,
+      "低": 3689
+    },
+    "mispricing": {
+      "高": 3711,
+      "中": 18820,
+      "": 7265,
+      "低": 6876
+    },
+    "overall": {
+      "高": 4881,
+      "中": 10230,
+      "": 19068,
+      "低": 2493
+    }
+  },
+  "reciprocal": [
+    {
+      "cohort": "all",
+      "dimension": "defense",
+      "pairs": 18336,
+      "oneDecisiveOneClose": 3045,
+      "sameWinner": 12582,
+      "eachSelf": 673,
+      "bothClose": 272,
+      "eachOther": 1761,
+      "unavailable": 3
+    },
+    {
+      "cohort": "all",
+      "dimension": "explosion",
+      "pairs": 18336,
+      "oneDecisiveOneClose": 2798,
+      "sameWinner": 11869,
+      "eachSelf": 542,
+      "bothClose": 169,
+      "eachOther": 2956,
+      "unavailable": 2
+    },
+    {
+      "cohort": "all",
+      "dimension": "long",
+      "pairs": 18336,
+      "oneDecisiveOneClose": 3890,
+      "sameWinner": 12065,
+      "eachOther": 1874,
+      "eachSelf": 145,
+      "bothClose": 360,
+      "unavailable": 2
+    },
+    {
+      "cohort": "all",
+      "dimension": "mispricing",
+      "pairs": 18336,
+      "oneDecisiveOneClose": 4277,
+      "eachOther": 3948,
+      "bothClose": 380,
+      "sameWinner": 8608,
+      "eachSelf": 204,
+      "unavailable": 919
+    },
+    {
+      "cohort": "all",
+      "dimension": "near",
+      "pairs": 18336,
+      "oneDecisiveOneClose": 2775,
+      "sameWinner": 11886,
+      "bothClose": 171,
+      "eachOther": 2956,
+      "eachSelf": 545,
+      "unavailable": 3
+    },
+    {
+      "cohort": "all",
+      "dimension": "odds",
+      "pairs": 18336,
+      "oneDecisiveOneClose": 2321,
+      "eachOther": 2570,
+      "sameWinner": 12037,
+      "eachSelf": 283,
+      "bothClose": 126,
+      "unavailable": 999
+    },
+    {
+      "cohort": "all",
+      "dimension": "overall",
+      "pairs": 18336,
+      "eachOther": 3172,
+      "oneDecisiveOneClose": 4842,
+      "bothClose": 505,
+      "sameWinner": 9338,
+      "unavailable": 326,
+      "eachSelf": 153
+    },
+    {
+      "cohort": "different_dates",
+      "dimension": "defense",
+      "pairs": 2816,
+      "oneDecisiveOneClose": 444,
+      "sameWinner": 2004,
+      "eachOther": 276,
+      "eachSelf": 58,
+      "bothClose": 34
+    },
+    {
+      "cohort": "different_dates",
+      "dimension": "explosion",
+      "pairs": 2816,
+      "sameWinner": 1844,
+      "oneDecisiveOneClose": 376,
+      "bothClose": 30,
+      "eachOther": 496,
+      "eachSelf": 70
+    },
+    {
+      "cohort": "different_dates",
+      "dimension": "long",
+      "pairs": 2816,
+      "sameWinner": 2068,
+      "oneDecisiveOneClose": 539,
+      "eachOther": 158,
+      "bothClose": 32,
+      "eachSelf": 19
+    },
+    {
+      "cohort": "different_dates",
+      "dimension": "mispricing",
+      "pairs": 2816,
+      "sameWinner": 1443,
+      "eachOther": 636,
+      "oneDecisiveOneClose": 622,
+      "eachSelf": 43,
+      "bothClose": 33,
+      "unavailable": 39
+    },
+    {
+      "cohort": "different_dates",
+      "dimension": "near",
+      "pairs": 2816,
+      "sameWinner": 1878,
+      "bothClose": 44,
+      "eachOther": 403,
+      "oneDecisiveOneClose": 390,
+      "eachSelf": 101
+    },
+    {
+      "cohort": "different_dates",
+      "dimension": "odds",
+      "pairs": 2816,
+      "sameWinner": 2073,
+      "eachOther": 412,
+      "oneDecisiveOneClose": 234,
+      "eachSelf": 57,
+      "unavailable": 34,
+      "bothClose": 6
+    },
+    {
+      "cohort": "different_dates",
+      "dimension": "overall",
+      "pairs": 2816,
+      "sameWinner": 1813,
+      "oneDecisiveOneClose": 609,
+      "eachOther": 327,
+      "eachSelf": 29,
+      "bothClose": 38
+    },
+    {
+      "cohort": "same_date_2026-07-14",
+      "dimension": "defense",
+      "pairs": 15400,
+      "oneDecisiveOneClose": 2577,
+      "sameWinner": 10493,
+      "eachSelf": 615,
+      "bothClose": 235,
+      "eachOther": 1477,
+      "unavailable": 3
+    },
+    {
+      "cohort": "same_date_2026-07-14",
+      "dimension": "explosion",
+      "pairs": 15400,
+      "oneDecisiveOneClose": 2403,
+      "sameWinner": 9942,
+      "eachSelf": 470,
+      "bothClose": 137,
+      "eachOther": 2446,
+      "unavailable": 2
+    },
+    {
+      "cohort": "same_date_2026-07-14",
+      "dimension": "long",
+      "pairs": 15400,
+      "oneDecisiveOneClose": 3319,
+      "sameWinner": 9918,
+      "eachOther": 1708,
+      "eachSelf": 125,
+      "bothClose": 328,
+      "unavailable": 2
+    },
+    {
+      "cohort": "same_date_2026-07-14",
+      "dimension": "mispricing",
+      "pairs": 15400,
+      "oneDecisiveOneClose": 3614,
+      "eachOther": 3281,
+      "bothClose": 347,
+      "sameWinner": 7119,
+      "eachSelf": 159,
+      "unavailable": 880
+    },
+    {
+      "cohort": "same_date_2026-07-14",
+      "dimension": "near",
+      "pairs": 15400,
+      "oneDecisiveOneClose": 2368,
+      "sameWinner": 9923,
+      "eachSelf": 442,
+      "eachOther": 2537,
+      "bothClose": 127,
+      "unavailable": 3
+    },
+    {
+      "cohort": "same_date_2026-07-14",
+      "dimension": "odds",
+      "pairs": 15400,
+      "oneDecisiveOneClose": 2068,
+      "eachOther": 2134,
+      "sameWinner": 9890,
+      "eachSelf": 223,
+      "bothClose": 120,
+      "unavailable": 965
+    },
+    {
+      "cohort": "same_date_2026-07-14",
+      "dimension": "overall",
+      "pairs": 15400,
+      "eachOther": 2839,
+      "oneDecisiveOneClose": 4197,
+      "bothClose": 466,
+      "sameWinner": 7449,
+      "unavailable": 326,
+      "eachSelf": 123
+    },
+    {
+      "cohort": "same_date_2026-07-18",
+      "dimension": "defense",
+      "pairs": 120,
+      "sameWinner": 85,
+      "bothClose": 3,
+      "oneDecisiveOneClose": 24,
+      "eachOther": 8
+    },
+    {
+      "cohort": "same_date_2026-07-18",
+      "dimension": "explosion",
+      "pairs": 120,
+      "eachOther": 14,
+      "sameWinner": 83,
+      "oneDecisiveOneClose": 19,
+      "eachSelf": 2,
+      "bothClose": 2
+    },
+    {
+      "cohort": "same_date_2026-07-18",
+      "dimension": "long",
+      "pairs": 120,
+      "sameWinner": 79,
+      "oneDecisiveOneClose": 32,
+      "eachOther": 8,
+      "eachSelf": 1
+    },
+    {
+      "cohort": "same_date_2026-07-18",
+      "dimension": "mispricing",
+      "pairs": 120,
+      "oneDecisiveOneClose": 41,
+      "sameWinner": 46,
+      "eachOther": 31,
+      "eachSelf": 2
+    },
+    {
+      "cohort": "same_date_2026-07-18",
+      "dimension": "near",
+      "pairs": 120,
+      "eachOther": 16,
+      "sameWinner": 85,
+      "oneDecisiveOneClose": 17,
+      "eachSelf": 2
+    },
+    {
+      "cohort": "same_date_2026-07-18",
+      "dimension": "odds",
+      "pairs": 120,
+      "sameWinner": 74,
+      "oneDecisiveOneClose": 19,
+      "eachSelf": 3,
+      "eachOther": 24
+    },
+    {
+      "cohort": "same_date_2026-07-18",
+      "dimension": "overall",
+      "pairs": 120,
+      "sameWinner": 76,
+      "oneDecisiveOneClose": 36,
+      "eachSelf": 1,
+      "eachOther": 6,
+      "bothClose": 1
+    }
+  ]
+}

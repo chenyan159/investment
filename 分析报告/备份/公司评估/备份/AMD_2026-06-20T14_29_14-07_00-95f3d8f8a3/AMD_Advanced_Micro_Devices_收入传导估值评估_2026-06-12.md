@@ -1,0 +1,178 @@
+# 公司收入传导与价值传导评估：Advanced Micro Devices（AMD）
+
+报告日期：2026-06-12（America/Los_Angeles）。  
+评估对象：AMD / Advanced Micro Devices。  
+正式输出目录：`分析报告/公司评估/`。  
+主口径：NTM，即 2026-06-12 起未来 12 个月，近似对应 2026Q2 至 2027Q1。  
+资料边界：公司层证据使用 `公司调研/AI计算芯片_EDA_IP_custom_ASIC/AMD_Advanced_Micro_Devices_公司调研_2026-06-11.md` 与 AMD 官方财报、10-Q、客户/产品公告；行业层证据使用 `行业调研/` 下 AI 芯片、AI 服务器 CPU、HBM、先进封装、机架集成和开放互联报告。未读取、引用或继承 `特征量化/`。  
+排除项：不做全公司排序，不给投资评级，不判断目标价、交易价格、估值倍数或金融市场定价。本文只判断需求、收入确认、利润和经营质量的传导。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表均为 NTM 经营口径；FY2026、FY2027、6GW 协议全周期和长期 run-rate 只作为补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：AMD Q1 2026 收入 102.53 亿美元，同比 +38%；Q2 2026 指引 112 亿美元上下 3 亿美元，中点同比约 +46%、环比约 +9%；Q1 2026 Data Center 收入 57.75 亿美元，同比 +57%；Q1 2026 non-GAAP 毛利率 55%，Q2 指引约 56%。Q1 年化 run-rate 约 410 亿美元，Q2 指引中点年化约 448 亿美元，但 NTM 基准不能机械年化，必须加入 H2 MI350、MI450/Helios 初始交付和 EPYC 继续增长。
+- 重要产品/业务线：`MI350/MI355X Instinct GPU`、`MI450/MI455X + Helios rack-scale platform`、`EPYC server CPU`、`Pensando/Pollara/Vulcano 网络与 DPU/AI NIC`、`Client Ryzen/Ryzen AI`、`Gaming Radeon/semi-custom`、`Embedded/Adaptive`、`ROCm/Silo AI/系统设计能力`。
+- NTM 公司收入四情景：悲观 460-500 亿美元；基准 540-620 亿美元；乐观 620-750 亿美元；极度乐观 750-880 亿美元。这里的增长是相对截至 Q1 2026 的 TTM 收入约 374.5 亿美元，不是股价或估值口径。
+- 利润或 EBITDA 四情景：悲观 non-GAAP 毛利率 52%-54%、经营利润率 18%-22%；基准 55%-58%、24%-28%；乐观 58%-61%、28%-33%；极度乐观 61%-65%、33%-38%。GAAP 会受到并购摊销、股权激励和一次性项目影响，本文以经营传导更清楚的 non-GAAP 经营利润率为主，同时保留 GAAP 风险说明。
+- 最大传导瓶颈：AI GPU 与 Helios 的收入确认不是由行业需求单独决定，而由 HBM3E/HBM4、先进封装、rack 级液冷/电源/网络、ROCm 工作负载迁移、客户验收和出口限制共同决定。
+- 最大利润率变量：AI GPU/Helios 的 ASP 与 HBM/封装成本差额、EPYC 高端 SKU mix、Data Center 占比、ROCm/客户支持费用、MI450/Helios 首批项目良率和系统级服务成本。
+- 最大现金流变量：AI GPU/HBM/封装采购承诺、客户预付款和验收节奏、存货周转、应收账款回款。AMD Q1 2026 自由现金流 25.66 亿美元，说明当前扩张未被营运资本明显吞噬，但 Q1 10-Q 披露未来无条件采购/云服务等承诺合计 256.62 亿美元，其中 2026 剩余 183.42 亿美元，现金流需要持续跟踪。
+- 可信度：公司收入基准为中高；产品级 AI GPU 拆分为中；MI450/Helios 乐观与极度乐观为中到低；Client/Gaming/Embedded 为中高。核心原因是 AMD 披露分部收入，但不披露 Instinct、EPYC、Pensando 单项收入或 backlog。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| MI350/MI355X Instinct GPU 与 MI300/MI325 余量 | Q1 2026 估算 22-28 亿美元，AMD 未单独披露；Data Center 分部总收入 57.75 亿美元 | 估算 21%-27% | 2026 AI GPU 主增量，决定收入弹性和毛利率方向 | A/C：Data Center 收入为 A，产品拆分为 C | 进入基准，但用保守折扣；基准 NTM 约 140-200 亿美元 | MI350 之外的部分客户加速和新云实例上修放入乐观 |
+| MI450/MI455X + Helios rack-scale platform | Q1 2026 基本无显性收入；Oracle 50,000 MI450 从 2026Q3 计划开始，OpenAI/Meta 首个 1GW 均从 2026H2 开始 | 当前接近 0，NTM 上限高 | 2026H2-2027 估值与经营弹性的核心，但 NTM 只承认初始确认 | B/C：Oracle 数量和时间表为 B，OpenAI/Meta 6GW 为 B/C，量产验收仍未完成 | 基准只纳入 20-70 亿美元；大部分进入乐观、极度乐观或附录跟踪 | OpenAI/Meta 多 GW 加速、Helios 成为第二 rack 标准，主要是 2027+ |
+| EPYC server CPU（Turin、Venice、Verano） | Q1 2026 Data Center 中估算 30-36 亿美元；AMD 披露 EPYC 需求强、Data Center 高增 | 估算 29%-35% | 最确定的收入和利润底盘，AI host CPU/feeder 需求上升 | A/C：Data Center 收入为 A，EPYC 拆分为 C，Meta Venice/Verano lead customer 为 B/C | 进入基准；NTM 基准 150-190 亿美元 | Venice/Verano 与 Helios/Meta 深绑定后，2027 可上修 |
+| Pensando、Pollara、Vulcano、DPU/AI NIC | Q1 2026 估算低于 5 亿美元；多在 Data Center 内部体现 | <5% | 当前小，但影响 Helios 可用率、网络 attach 和平台控制力 | C：Oracle Helios 公开设计含 Vulcano/三 800G AI-NIC，但收入拆分未披露 | 基准小比例纳入，主要作为 MI450/Helios attach | 若 UALink/UEC 和 Helios 成为开放 rack 事实标准，2027 弹性更大 |
+| ROCm、Silo AI、ZT 设计/NPI 能力 | 直接收入无法可靠量化 | 无法可靠量化 | 不直接贡献大收入，但决定 GPU 可用性、迁移成本和验收速度 | C/D：产品与软件进展可验证，独立收入弱 | 不作为独立基准收入；作为 AI GPU/Helios 兑现条件 | 企业 AI enablement、软件服务化是远期期权 |
+| Client Ryzen / Ryzen AI | Q1 2026 Client 收入 28.85 亿美元 | 28.1% | 当前收入占比高，现金流和份额稳定器 | A：已披露分部内 Client 收入 | 进入基准；NTM 基准 115-130 亿美元 | AI PC 换机潮加速属于乐观，不作为 Data Center 逻辑 |
+| Gaming Radeon / semi-custom | Q1 2026 Gaming 收入 7.20 亿美元 | 7.0% | 周期性和 console mix 可能抵消部分成长业务 | A：已披露 Gaming 收入 | 进入基准，但不作为增长主引擎；NTM 基准 25-33 亿美元 | 新 GPU、console refresh 超预期仅为小权重乐观 |
+| Embedded / Adaptive / FPGA / Versal | Q1 2026 Embedded 收入 8.73 亿美元，segment OPM 38.7% | 8.5% | 高利润率业务，工业/通信/边缘 AI 恢复可改善组合 | A：已披露分部收入和经营利润 | 进入基准；NTM 基准 36-41 亿美元 | 物理 AI、边缘 AI、长期设计赢单主要为远期期权 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池和产品需求强弱，不评估 AMD 份额、收入确认和利润率。需求锚以行业报告、客户部署公告、AMD 指引隐含需求和当前出货节奏为主。所有金额为需求池或产品需求压力口径，不等同 AMD 可确认收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| MI350/MI355X 与现有 Instinct GPU | 2026 商用 AI 加速器价值池基准 3,760-5,200 亿美元；行业报告把 MI350/MI355X 列为 2026 第二供给主力；AMD Q1 Data Center 57.75 亿美元、Instinct ramp 已在收入表体现 | 高端第二供给需求池 120-180 亿美元，客户将更多增量给 NVIDIA/ASIC，MI350 只做补充 | 200-350 亿美元，MI350 在大内存推理和多供策略中稳定放量 | 350-550 亿美元，OCI/Meta/OEM/NeoCloud 增加采购，ROCm 迁移改善 | 550-800 亿美元，AMD 在高端 merchant GPU 价值份额达到 10%+，客户因供给和 TCO 大幅多供 | 相对悲观到极度乐观差额约 430-680 亿美元需求池 | 基准符合当前行业与财报预期；乐观高于当前预期；极度乐观需要客户迁移和供给同时突破 | 支持：AI rack 需求强、HBM3E/大内存推理、客户多供。反证：NVIDIA GB300/Rubin 供给充足、自研 ASIC 吞噬推理、ROCm 迁移慢 |
+| MI450/MI455X + Helios | Oracle 50,000 MI450 从 2026Q3 计划开始；OpenAI/Meta 各 6GW 多代协议，首个 1GW 从 2026H2 开始；行业报告把 MI400/Helios 定义为 2027 第二 rack 生态变量 | NTM 需求多停留在样机/早期部署，需求池 20-60 亿美元；客户推迟验收 | 80-180 亿美元，OCI 初始、OpenAI/Meta 首批工程部署进入 2026H2-2027Q1 | 180-350 亿美元，OCI 50k 和至少一个 GW 客户加速，HPE/主权 AI 跟进 | 350-600 亿美元，Helios 2026H2 即被多个 hyperscaler 接收为第二 rack 标准 | 绝对差额约 330-540 亿美元需求池 | 基准仅略高于当前已公告低端路径；乐观/极度乐观显著高于当前预期 | 支持：明确客户名、数量、时间表、HBM4/Helios 规格。反证：HBM4、液冷、UALink/UEC、ROCm、现场验收任一延迟都会把需求后移 |
+| EPYC server CPU | Q1 2026 Data Center 高增由 EPYC 与 Instinct 共同驱动；AI server CPU/control 行业报告认为 GPU/ASIC 机架化带来 CPU feeder、调度、I/O、KV cache 和控制面需求 | AI host CPU 需求仍增长，但云厂 Arm 和 NVIDIA Grace/Vera 压制 x86；NTM EPYC 可服务需求池 130-160 亿美元 | 160-220 亿美元，AI server、云和企业继续采用 EPYC，高端 SKU mix 稳定 | 220-300 亿美元，Venice ramp、Meta lead customer 和 AI feeder 需求超预期 | 300-400 亿美元，EPYC 与 Helios/Verano 成为开放 AI rack 标准控制面 | 约 270 亿美元上行空间 | 基准符合当前 CPU 高增预期；乐观来自 AI host CPU attach 和高端 SKU ASP | 支持：AI server CPU 需求、x86 生态、Meta Venice/Verano。反证：云厂 Arm 内部化、NVIDIA Grace/Vera 绑定、Intel 反攻 |
+| Pensando/Pollara/Vulcano DPU/AI NIC | AI NIC/DPU/SmartNIC 行业池 2027 年中滚动基准约 90-180 亿美元；Oracle Helios 设计含每 GPU 最多三 800G Vulcano AI-NIC | 需求主要由 NVIDIA/云厂自研吸收，AMD attach 需求池低于 5 亿美元 | 5-15 亿美元，随 Helios 和 EPYC 平台小规模 attach | 15-40 亿美元，Helios/开放 rack 交付顺利，AI NIC attach 上升 | 40-80 亿美元，开放 UALink/UEC 生态成型，AMD 网络从配套变平台收入 | 35-75 亿美元需求池差额 | 当前预期为小基数导入；乐观和极度乐观需要 Helios 放量 | 支持：GPU 利用率对网络敏感、Oracle 设计明确。反证：NVIDIA Networking 和云厂自研 DPU/NIC 锁定 |
+| Client Ryzen / Ryzen AI | Q1 2026 Client 收入 28.85 亿美元，同比 +26%；AI PC 产品组合扩大，商业 PC refresh 支撑需求 | PC 需求受内存/组件成本和消费放缓影响，NTM 需求低于当前 run-rate，约 95-110 亿美元 | 115-130 亿美元，企业与消费正常替换，Ryzen 份额稳中有升 | 130-155 亿美元，AI PC 与商用 refresh 加速，ASP/mix 改善 | 155-180 亿美元，AI PC 进入明显换机周期且 AMD 份额快速上修 | 60-85 亿美元差额 | 基准符合当前 run-rate；极度乐观仍是补充口径，不改变公司主线 | 支持：Ryzen 份额、平台数增加。反证：PC 周期、内存成本、Intel/Arm PC 竞争 |
+| Gaming Radeon / semi-custom | Q1 2026 Gaming 收入 7.20 亿美元，同比 +11%，但 semi-custom 和消费 GPU 周期性强 | 20-25 亿美元，console 周期下滑和显存成本压缩需求 | 25-33 亿美元，Radeon 和 semi-custom 正常兑现 | 33-40 亿美元，GPU 新品和 console/handheld 需求较好 | 40-50 亿美元，消费 GPU 与 semi-custom 同时超预期 | 20-30 亿美元差额 | 基准略低到符合当前预期；乐观不是公司主驱动 | 支持：Radeon 需求。反证：console 后周期、组件成本、消费需求 |
+| Embedded / Adaptive | Q1 2026 Embedded 收入 8.73 亿美元，同比 +6%；工业、通信、A&D、边缘 AI 逐步复苏；AMD Analyst Day 称 2022 以来 secured design wins 超 500 亿美元 | 31-35 亿美元，工业/通信复苏弱，客户库存调整延长 | 36-41 亿美元，终端市场温和复苏，高毛利业务稳定 | 41-48 亿美元，工业、通信、航空国防和边缘 AI 设计转收入加快 | 48-56 亿美元，物理 AI/边缘 AI 在 NTM 内提前收入化 | 17-25 亿美元差额 | 基准符合当前收入表与温和复苏；极度乐观更多是长期设计赢单提前 | 支持：高毛利、设计赢单。反证：工业周期慢、设计赢单转收入周期长 |
+| ROCm / Silo AI / 系统设计能力 | 需求单位不是独立收入，而是客户迁移、软件支持、rack NPI 和验收速度；ROCm 下载、MLPerf、云实例和客户生产 workload 是需求锚 | 客户只做小规模测试，无法支持高价值训练/推理 | 足以支撑 MI350 生产推理和部分训练，Helios 初始客户需要定制支持 | 迁移周期缩短，客户把更多 workload 放到 AMD 实例 | 开发者和企业生态明显改善，软件不再是采购阻力 | 无法可靠量化 | 基准是必要条件，不是独立收入上修项 | 支持：ROCm cadence、客户合作。反证：CUDA/NVLink/NVSwitch 粘性、迁移成本 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些需求能进入 AMD NTM 收入表，以及当前可收入化基数是多少；不预测增长，不判断利润率。`可参与需求` 不等于 `可确认收入`。证据等级按收入表可确认性定义，A/B 可作为基准主锚，C 级只有在客户、产品和时间表清楚时小比例纳入，D/E 不进入基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| MI350/MI355X 与现有 Instinct GPU | Data Center Q1 2026 收入 57.75 亿美元；公司称 Data Center 增长由 EPYC 与 Instinct ramp 驱动；产品级估算 Q1 22-28 亿美元 | 直接收入 | 初期毛利可能低于成熟 CPU，但随良率/ASP/mix 可改善 | 100-140 亿美元 | 140-200 亿美元 | 200-280 亿美元 | 280-360 亿美元 | 基准符合当前 MI350 ramp；悲观低于指引隐含路径；乐观高于当前预期 | A/C | 是 | Data Center 已入收入表；Instinct ramp 已披露，但单项收入需估算 | 基准纳入，估算折扣；产品级拆分标注无法官方量化 |
+| MI450/MI455X + Helios | Q1 2026 无显性收入；OpenAI/Meta 首个 1GW 均从 2026H2；Oracle 50,000 MI450 从 2026Q3 计划开始 | 直接收入，但需交付/验收 | 早期可能有高支持成本；若 rack 级平台成功，利润质量上行 | 0-20 亿美元 | 20-70 亿美元 | 70-150 亿美元 | 150-250 亿美元 | 基准只代表小比例初始确认；乐观/极度乐观才反映加速验收 | B/C | 小比例进入 | Oracle 有数量和时间；OpenAI/Meta 有多代协议和里程碑，但 NTM 确认节奏未披露 | 基准低折扣纳入，主体放乐观/极度乐观与附录跟踪 |
+| EPYC server CPU | Data Center 收入 A 级；Q1 server CPU 高增在公司调研中已引用管理层口径；Meta 为 Venice/Verano lead customer | 直接收入 | 高毛利、高现金流质量，AI host CPU mix 改善 | 130-150 亿美元 | 150-190 亿美元 | 190-250 亿美元 | 250-320 亿美元 | 基准符合当前 run-rate 与 Q2 高增预期；乐观需 Venice/AI host CPU 超预期 | A/C | 是 | Data Center 收入表和客户/云实例可见；产品拆分仍为估算 | 基准纳入，是 AMD NTM 最稳收入和利润底盘 |
+| Pensando/Pollara/Vulcano DPU/AI NIC | Data Center 内部未单独披露；Oracle Helios 设计明确含 Vulcano AI-NIC、Pensando DPU | 直接小收入 + 间接平台 attach | 芯片/IP 毛利可高，板卡/系统毛利较低 | 0-5 亿美元 | 5-12 亿美元 | 12-25 亿美元 | 25-50 亿美元 | 基准小于当前叙事热度；乐观依赖 Helios 放量 | C | 小比例进入 | 有产品和客户设计，但无单独收入表和订单金额 | 基准只纳入小额 attach；不得把全部网络/光模块价值算给 AMD |
+| ROCm / Silo AI / ZT design/NPI | 直接收入未披露；软件和设计主要支持硬件销售 | 间接受益为主 | 短期费用，长期提高硬件转化率 | 0 | 0 | 0-10 亿美元 | 10-20 亿美元 | 不能作为当前收入基准 | C/D | 否 | 无独立收入表或订单 | 不进入基准独立收入，只作为 GPU/Helios 兑现条件 |
+| Client Ryzen / Ryzen AI | Q1 Client 收入 28.85 亿美元，A 级 | 直接收入 | 毛利好于 Gaming，但低于部分 Embedded；与 Gaming 合并 OPM 15.9% | 95-110 亿美元 | 115-130 亿美元 | 130-155 亿美元 | 155-170 亿美元 | 基准符合 run-rate；悲观反映 H2 成本和需求风险 | A | 是 | 已披露 Client 收入 | 基准纳入，作为非 Data Center 稳定器 |
+| Gaming Radeon / semi-custom | Q1 Gaming 收入 7.20 亿美元，A 级 | 直接收入 | 周期性较强，semi-custom 毛利较低 | 20-25 亿美元 | 25-33 亿美元 | 33-40 亿美元 | 40-50 亿美元 | 基准符合或略低于当前 run-rate；不是增长核心 | A | 是 | 已披露 Gaming 收入 | 基准纳入，但情景上修权重低 |
+| Embedded / Adaptive | Q1 Embedded 收入 8.73 亿美元，segment OI 3.38 亿美元，A 级 | 直接收入 | 高毛利、高经营利润率；设计赢单转收入慢 | 31-35 亿美元 | 36-41 亿美元 | 41-48 亿美元 | 48-56 亿美元 | 基准符合温和复苏；乐观需库存/工业周期改善 | A/B | 是 | 已披露收入、利润和长期 design wins | 基准纳入，作为利润率支撑项 |
+
+排除项：客户总 AI capex、OpenAI/Meta 6GW 全周期金额、Oracle 2027+ 扩展、全球 AI 芯片价值池、光模块和数据中心土建机电总包均不得直接当作 AMD NTM 收入。它们只用于需求池、约束或远期期权。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从需求与收入基数出发，判断每条业务在 NTM 内能给 AMD 贡献的收入和经营利润方向。收入贡献为 AMD 可确认收入估算，不是行业 TAM、客户 capex 或项目总金额。利润贡献以 non-GAAP 经营利润/经营利润增量方向为主；AMD 未披露产品级毛利率时，填入区间并说明推算口径。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| MI350/MI355X 与现有 Instinct GPU | 悲观 | 100-140 亿美元 | 经营利润约 20-35 亿美元 | 毛利率低于公司平均或仅小幅改善 | 低于当前 MI350 ramp 预期 | Q1 Data Center 已高增，但 AI GPU 环比可能受中国/产品切换影响 | 保留为悲观 | ROCm 迁移慢、HBM3E/CoWoS 不足、客户优先拿 NVIDIA/ASIC |
+| MI350/MI355X 与现有 Instinct GPU | 基准 | 140-200 亿美元 | 经营利润约 40-65 亿美元 | 随良率、mix 和规模效应改善，仍低于 mature CPU | 符合当前预期 | Q1 Data Center 57.75 亿美元；MI350 为 2026 主力；行业报告确认第二供给需求 | 保留为基准 | 产品级收入未披露，估算需折扣 |
+| MI350/MI355X 与现有 Instinct GPU | 乐观 | 200-280 亿美元 | 经营利润约 65-100 亿美元 | ASP 和利用率改善，接近或高于公司平均 | 高于当前预期 | OCI/Meta/OEM/NeoCloud 需求增强，ROCm 生产 workload 增加 | 保留为乐观 | NVIDIA GB300 降价或供应超预期 |
+| MI350/MI355X 与现有 Instinct GPU | 极度乐观 | 280-360 亿美元 | 经营利润约 100-150 亿美元 | 供需紧张带来高 ASP，规模效应明显 | 显著高于当前预期 | AMD 在高端 merchant GPU 份额明显上修 | 下移为乐观上限，可信度低到中 | 极度乐观不能只靠行业需求，需要客户迁移和产能同步 |
+| MI450/MI455X + Helios | 悲观 | 0-20 亿美元 | 亏损到小幅盈利，早期支持成本高 | 稀释或低于平均 | 低于当前公告路径 | 客户项目虽明确，但收入确认被验收推迟 | 保留为悲观 | HBM4、Vulcano、UALink/UEC、液冷、ROCm 任一延迟 |
+| MI450/MI455X + Helios | 基准 | 20-70 亿美元 | 经营利润约 0-20 亿美元 | 早期毛利不稳定，费用投入高 | 符合保守收入确认路径 | Oracle 50,000 MI450 从 2026Q3 计划开始；OpenAI/Meta 2026H2 首批 | 保留但低折扣 | 6GW 全周期不得当 NTM 基准 |
+| MI450/MI455X + Helios | 乐观 | 70-150 亿美元 | 经营利润约 20-55 亿美元 | 若良率和 rack ASP 稳定，毛利率改善 | 高于当前预期 | OCI 初始部署、OpenAI/Meta 首批 1GW、HPE/主权 AI 多点推进 | 保留为乐观 | 客户验收和上电节奏 |
+| MI450/MI455X + Helios | 极度乐观 | 150-250 亿美元 | 经营利润约 55-100 亿美元 | 平台定价权和规模效应同步出现 | 显著高于当前预期 | Helios 在 2026H2 就成为第二 rack 标准 | 下移为极度乐观上限，可信度低 | 需要需求、捕获、利润和执行全部成立 |
+| EPYC server CPU | 悲观 | 130-150 亿美元 | 经营利润约 45-60 亿美元 | 维持较高但 ASP/mix 上修有限 | 低于当前高增预期 | Data Center CPU 需求仍强，但云厂 Arm/Grace 抢份额 | 保留为悲观 | NVIDIA Grace/Vera、云厂 Arm、Intel 竞争 |
+| EPYC server CPU | 基准 | 150-190 亿美元 | 经营利润约 60-85 亿美元 | 高端 SKU mix 稳定改善 | 符合当前预期 | EPYC 在 AI feeder/host CPU 中受益，Meta lead customer 支持 Venice/Verano | 保留为基准 | AMD 不单独披露 EPYC 收入 |
+| EPYC server CPU | 乐观 | 190-250 亿美元 | 经营利润约 85-120 亿美元 | 高端 SKU ASP 与利用率上行 | 高于当前预期 | AI inference/agentic workflow 提升 CPU/内存/I/O 重要性 | 保留为乐观 | 云厂自研控制面侵蚀 |
+| EPYC server CPU | 极度乐观 | 250-320 亿美元 | 经营利润约 120-160 亿美元 | 平台型 CPU 接近高端溢价 | 显著高于当前预期 | Venice/Verano 与 Helios/Meta/OpenAI 大规模绑定 | 下移为乐观上限或极度乐观低可信 | CPU 高增不能无限超过 AI rack 实际交付 |
+| Pensando/Pollara/Vulcano DPU/AI NIC | 悲观 | 0-5 亿美元 | 无法可靠量化，可能被研发/支持费用抵消 | 稀释 | 低于叙事预期 | 没有独立披露收入 | 保留为悲观 | NVIDIA/云厂自研网络锁定 |
+| Pensando/Pollara/Vulcano DPU/AI NIC | 基准 | 5-12 亿美元 | 经营利润 1-3 亿美元，间接提升 Helios | 小幅正向 | 符合小基数导入 | Oracle Helios 设计含 Vulcano/Pensando | 保留为基准 | 不得把光模块和交换机全链价值算给 AMD |
+| Pensando/Pollara/Vulcano DPU/AI NIC | 乐观 | 12-25 亿美元 | 经营利润 3-8 亿美元，attach 提升 | 利润率上行 | 高于当前预期 | Helios、UEC、UALink 需求带动 | 保留为乐观 | 开放 fabric 认证慢 |
+| Pensando/Pollara/Vulcano DPU/AI NIC | 极度乐观 | 25-50 亿美元 | 经营利润 8-18 亿美元 | 高毛利网络芯片/IP 属性显现 | 显著高于当前预期 | 开放 rack 成为第二事实标准 | 下移为远期期权/极度乐观上限 | 2026 NTM 证据不足 |
+| ROCm / Silo AI / ZT design/NPI | 悲观 | 独立收入 0 | 费用增加，压低经营杠杆 | 稀释 | 低于需要 | 客户迁移慢 | 保留为悲观 | 软件不达生产稳定性 |
+| ROCm / Silo AI / ZT design/NPI | 基准 | 独立收入 0 | 支撑 GPU 收入，不单列利润 | 间接正向 | 符合当前预期 | ROCm 和 NPI 是 AI GPU/Helios 必要条件 | 保留为基准条件 | 无独立收入披露 |
+| ROCm / Silo AI / ZT design/NPI | 乐观 | 0-10 亿美元 | 直接利润小，硬件转化率提高 | 间接改善 | 高于当前预期 | 企业支持和迁移工具减少客户阻力 | 仅作跟踪 | 直接收入证据不足 |
+| ROCm / Silo AI / ZT design/NPI | 极度乐观 | 10-20 亿美元 | 软件/服务毛利高，但 NTM 不稳 | 上行 | 显著高于当前预期 | 软件生态明显改善 | 移入附录 | NTM 无 A/B 证据 |
+| Client Ryzen / Ryzen AI | 悲观 | 95-110 亿美元 | 经营利润约 12-17 亿美元 | 受组件成本和促销影响下行 | 低于 run-rate | Q1 Client 28.85 亿美元，但 H2 PC 需求可能放缓 | 保留为悲观 | 内存/组件成本、消费 PC 周期 |
+| Client Ryzen / Ryzen AI | 基准 | 115-130 亿美元 | 经营利润约 18-24 亿美元 | 稳定到小幅改善 | 符合 run-rate | Q1 +26%，Ryzen 份额和 AI PC 组合 | 保留为基准 | 与 Gaming 合并披露，利润拆分不可靠 |
+| Client Ryzen / Ryzen AI | 乐观 | 130-155 亿美元 | 经营利润约 24-33 亿美元 | mix 改善 | 高于当前预期 | 企业 refresh 和 AI PC 渗透超预期 | 保留为乐观 | Intel/Arm PC 竞争 |
+| Client Ryzen / Ryzen AI | 极度乐观 | 155-170 亿美元 | 经营利润约 33-42 亿美元 | 明显改善 | 显著高于当前预期 | AI PC 换机周期提前 | 下移为乐观上限 | 不是 Data Center 主传导 |
+| Gaming Radeon / semi-custom | 悲观 | 20-25 亿美元 | 经营利润低或接近 0 | 低于平均 | 低于预期 | Console 后周期和显存成本 | 保留为悲观 | semi-custom 下滑 |
+| Gaming Radeon / semi-custom | 基准 | 25-33 亿美元 | 经营利润约 2-5 亿美元 | 低于公司平均 | 符合预期 | Q1 Gaming 7.20 亿美元 | 保留为基准 | 消费 GPU 周期 |
+| Gaming Radeon / semi-custom | 乐观 | 33-40 亿美元 | 经营利润约 5-8 亿美元 | 小幅改善 | 高于预期 | Radeon 与 semi-custom 同时较好 | 保留为乐观 | 低毛利收入不能自动上修利润 |
+| Gaming Radeon / semi-custom | 极度乐观 | 40-50 亿美元 | 经营利润约 8-12 亿美元 | 改善但非核心 | 高于预期 | 新 GPU/console demand 超预期 | 下移为乐观上限 | 对公司总利润弹性有限 |
+| Embedded / Adaptive | 悲观 | 31-35 亿美元 | 经营利润约 10-13 亿美元 | 高利润但收入弱 | 低于预期 | 工业/通信库存调整延长 | 保留为悲观 | 设计赢单转收入慢 |
+| Embedded / Adaptive | 基准 | 36-41 亿美元 | 经营利润约 13-16 亿美元 | 高于公司平均 | 符合预期 | Q1 segment OPM 38.7%，需求温和复苏 | 保留为基准 | 终端复苏节奏 |
+| Embedded / Adaptive | 乐观 | 41-48 亿美元 | 经营利润约 16-20 亿美元 | 利润率支撑增强 | 高于预期 | 工业、通信、A&D 和边缘 AI 转收入 | 保留为乐观 | 客户库存和项目周期 |
+| Embedded / Adaptive | 极度乐观 | 48-56 亿美元 | 经营利润约 20-25 亿美元 | 高利润率业务占比上升 | 显著高于预期 | 物理 AI/边缘 AI 设计提前收入化 | 下移为乐观上限 | 多数设计赢单超出 NTM |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节将产品级贡献合成为 AMD NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。汇总已去重：MI350/MI450/EPYC/Pensando 均属于 Data Center，不能与 Data Center 总收入重复相加；Client 和 Gaming 的利润只按合并披露保守拆分；ROCm/Silo/ZT 设计能力只作为转化条件，不单独加入基准收入。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 460-500 亿美元 | 相对 TTM 约 +23% 至 +34% | 低于 Q2 指引隐含高增和 Data Center 当前 run-rate；成长业务不足以完全覆盖 Gaming/Client 成本和 Helios 延迟 | non-GAAP 52%-54% | non-GAAP 18%-22% | 调整后 EBITDA 100-130 亿美元；non-GAAP 净利润 70-90 亿美元；GAAP 净利润约 50-70 亿美元 | 仍为正，约 70-100 亿美元，但存货/HBM/封装承诺占用现金 | 中 | MI350 转化慢、MI450/Helios 延迟、ROCm 迁移慢、Client/Gaming 成本上行、出口限制 |
+| 基准公司 | 540-620 亿美元 | 相对 TTM 约 +44% 至 +66% | 接近当前经营预期正常兑现：Q2 指引兑现，MI350 和 EPYC 成为 H2 主力，MI450/Helios 小比例确认 | non-GAAP 55%-58% | non-GAAP 24%-28% | 调整后 EBITDA 140-180 亿美元；non-GAAP 净利润 100-140 亿美元；GAAP 净利润约 75-110 亿美元 | 100-140 亿美元，随客户预付款和验收改善 | 中高 | HBM3E/HBM4、CoWoS、rack 验收、产品级毛利率未披露 |
+| 乐观公司 | 620-750 亿美元 | 相对 TTM 约 +66% 至 +100% | 高于当前预期：Data Center 同时受 MI350、EPYC、初始 MI450/Helios 拉动，Embedded 支撑利润率 | non-GAAP 58%-61% | non-GAAP 28%-33% | 调整后 EBITDA 180-250 亿美元；non-GAAP 净利润 140-200 亿美元；GAAP 净利润约 110-160 亿美元 | 140-200 亿美元，仍需观察库存和应收 | 中 | OCI/Meta/OpenAI 首批验收、HBM4 供应、Vulcano/UALink 可用性、客户 capex 不下修 |
+| 极度乐观公司 | 750-880 亿美元 | 相对 TTM 约 +100% 至 +135% | 显著高于当前预期：MI450/Helios 在 NTM 内非线性确认，EPYC 与网络 attach 同步，AI GPU 份额明显上修 | non-GAAP 61%-65% | non-GAAP 33%-38% | 调整后 EBITDA 250-340 亿美元；non-GAAP 净利润 200-280 亿美元；GAAP 净利润约 160-230 亿美元 | 200-280 亿美元，但现金流波动也最大，取决于预付款、存货和验收 | 低 | 需求、捕获、利润和执行必须同时突破；任一环节缺证据即下移 |
+
+补充说明：本文不把 OpenAI/Meta 各 6GW 全周期协议直接资本化为 NTM 收入。1GW 部署本身也不能机械折算为当期收入，必须经过 GPU/OAM、CPU、NIC、rack、系统测试、客户验收和收入确认节奏折扣。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q1 2026 Data Center 收入 57.75 亿美元，同比 +57%，Q2 公司总收入指引 112 亿美元上下 3 亿美元 | 收入基数、公司汇总 | 明确抬高 Data Center 基准和公司 NTM 起点 | Data Center mix 支撑 non-GAAP GM 55%-56% | Q1 FCF 强，说明高增暂未被营运资本吞噬 | 基准保留 |
+| AMD 不披露 Instinct、EPYC、Pensando 单项收入或 backlog | 证据可信度 | 产品级拆分不能按 A 级处理 | 产品级利润率无法精确量化 | 无法验证每条产品线订单转收入节奏 | 产品级基准保守折扣 |
+| OpenAI 6GW、Meta 6GW、Oracle 50,000 MI450 | 收入基数、产品贡献 | 提升 MI450/Helios 可收入化上限，但不能全额进入 NTM | 若 rack ASP 和良率稳定，利润率上修；早期支持成本可能抵消 | 里程碑、发货、验收和上电决定现金流 | 乐观保留，基准低比例纳入 |
+| Oracle 明确 2026Q3 开始 50,000 MI450 初始部署 | 收入确认、执行可信度 | 比纯 MoU 强，可作为 MI450/Helios NTM 小比例基准锚 | 初始项目可能毛利不稳定 | 现场验收和云实例上线是关键 | 基准保留但金额折扣 |
+| Meta 首个 1GW 使用 custom MI450-based GPU + Venice + ROCm + Helios，且 Meta 为 Venice/Verano lead customer | 公司捕获、产品组合 | 同时提升 GPU 与 EPYC attach | 组合销售有利于毛利率，但 warrant/技术里程碑说明条件仍多 | 取决于技术与商业里程碑 | 乐观保留 |
+| HBM3E/HBM4 与 CoWoS/先进封装仍是行业硬瓶颈 | 需求到收入转化 | 限制 MI350/MI450 可交付量 | HBM/封装成本可能吞噬 ASP | 采购承诺和存货占用现金 | 在收入确认层处理，不重复压公司整体 |
+| ROCm、UALink/UEC、Vulcano、液冷 rack 验收 | 产品贡献、执行可信度 | 影响 Helios 是否从可参与需求变成可确认收入 | 影响系统级服务成本和客户支持费用 | 验收失败会推迟收入和回款 | 极度乐观必须同时成立，否则下移 |
+| EPYC AI host CPU 需求 | 产品贡献、公司利润 | 支撑 Data Center 稳定增长，降低 GPU 单线风险 | 高端 SKU mix 支撑经营利润率 | CPU 供应链压力低于 GPU，但也抢先进节点/基板 | 基准保留，乐观保留 |
+| Client/Gaming 组件成本和周期风险 | 公司组合 | 可能抵消部分 Data Center 增量 | Gaming/semi-custom 毛利弱，Client 受内存成本影响 | 存货和促销压力 | 只在公司组合层处理一次 |
+| Embedded 高 OPM 与长期 design wins | 公司组合、利润质量 | 收入弹性小，但可稳定利润 | Segment OPM 高于公司平均 | 设计赢单转收入慢，现金流较稳定 | 基准保留，极度乐观下移 |
+| 美国出口限制和区域合规 | 收入确认、库存风险 | 可能影响中国相关 GPU 收入 | 可能造成类似 MI308 的 charge 或 reserve | 存货和承诺风险上升 | 悲观保留，只在收入确认/库存层处理 |
+| 客户 capex、融资、上电和数据中心施工 | 需求风险、执行 | 若下修或延迟，GPU/rack 收入后移 | 低利用率和价格重谈压毛利 | IT 设备可能领先上电 6-24 个月 | 悲观保留，乐观需持续验证 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | MI350/EPYC 仍增长，但低于当前 Q2 指引隐含路径；MI450/Helios 多数推迟；Client/Gaming 成本压力抵消部分增量 | 已有 Data Center 收入基数、净现金和 FCF，悲观不是衰退情景 | 没有证据显示需求崩塌；OpenAI/Meta/Oracle 仍提供下限需求代理 | 保留 | 悲观公司 | 中 | HBM/封装/验收风险只在收入确认层处理，不再重复压需求池 |
+| 基准 | Q2 指引兑现，MI350 和 EPYC 正常放量，MI450/Helios 小比例确认，Client/Gaming/Embedded 正常 | Q1 2026 收入、毛利、FCF、Data Center 和客户公告均支持 | 产品级拆分和 backlog 未披露；MI450/Helios 仍非 A 级收入 | 保留 | 基准公司 | 中高 | 未披露产品收入只降低拆分可信度，不重复削减公司已披露分部收入 |
+| 乐观 | MI350、EPYC 和初始 MI450/Helios 均高于基准，Data Center mix 推动利润率上行 | Oracle 50,000、OpenAI/Meta 6GW、Meta Venice/Verano、行业 AI rack 需求强 | 客户验收、ROCm、HBM4 和液冷/网络仍需证明 | 保留 | 乐观公司 | 中 | 客户 capex 风险只影响需求和验收，不再在利润率中重复扣减 |
+| 极度乐观 | Helios 在 NTM 内非线性收入确认，EPYC 与网络 attach 同步，GPU 份额大幅上修 | 多个大客户、多代协议和行业第二供给需求提供上限逻辑 | 任一核心环节缺 A/B 级证据：产品收入未披露、HBM4/Helios 未大规模验收、ROCm 迁移仍需证明 | 下移 | 极度乐观上限，不能作为基准或普通乐观 | 低 | 不能把 OpenAI/Meta 6GW、Oracle 2027+ 扩展和行业 TAM 同时相加 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。AMD 的 NTM 经营主线是 `EPYC 高确定性增长 + MI350/MI355X 放量 + MI450/Helios 小比例初始确认 + Client/Gaming/Embedded 稳定或小幅波动`。基准 NTM 收入 540-620 亿美元，non-GAAP 毛利率 55%-58%，non-GAAP 经营利润率 24%-28%。这是相对 Q1/Q2 run-rate 和管理层指引的正常兑现，不是对股价或估值的判断。
+- 利润/现金流结论：利润质量最稳的是 EPYC 与 Embedded；弹性最大但波动也最大的是 AI GPU/Helios；Client/Gaming 是收入稳定器但不是估值主线。Q1 FCF 25.66 亿美元说明当前收入质量较好，但 Q1 10-Q 披露的大额采购/云服务承诺意味着 HBM、封装和云容量若与客户验收错配，会先冲击现金流和库存。
+- 主要传导瓶颈：需求层不是问题，核心瓶颈在收入化和利润留下来。AI 芯片行业需求池足够大，但 AMD 只能确认自己能交付、被客户验收、价格覆盖成本且符合收入确认条件的部分。`OpenAI/Meta 6GW` 是高质量需求代理，`Oracle 50,000 MI450` 是更强的 NTM 项目锚，但都不能直接等同当期收入。
+- 乐观情景成立条件：Q2 2026 收入和毛利率不低于指引；MI350/MI355X 云实例和客户生产 workload 增加；EPYC server CPU 继续高增；Oracle MI450 从 2026Q3 开始按期交付；OpenAI/Meta 首批 1GW 里程碑出现可验证发货/验收；ROCm 在主流推理/训练 workload 上降低迁移阻力；HBM3E/HBM4 与 CoWoS 供应没有明显延迟。
+- 极度乐观情景成立条件：上述乐观条件之外，还需要 MI450/Helios 在 2026H2 就形成 rack 级大规模验收，Meta/OpenAI/OCI 至少两个大客户同步加速，EPYC Venice/Verano 与 Vulcano/Pensando attach 明确提高平台收入，AI GPU 毛利率随良率、ASP 和规模效应显著改善，Client/Gaming 不出现明显拖累。
+- 悲观情景触发条件：MI350 增长低于 Data Center 指引隐含路径；MI450/Helios 延迟超过两个季度；HBM4 qualification 或 CoWoS/先进封装不足；ROCm 迁移导致客户只保留小规模测试；客户 capex/上电/融资延后；出口限制导致库存 charge；Client/Gaming 因内存/组件成本出现明显毛利压缩。
+- 后续跟踪数据：AMD Q2 2026 实际收入、Data Center 收入、non-GAAP GM、FCF；管理层是否量化 Instinct 或 AI GPU revenue run-rate；OCI 50,000 MI450 是否按 2026Q3 启动；OpenAI/Meta 1GW milestone；Samsung/SK hynix/Micron HBM4 qualification；MI350/MI450 云实例可用区和客户案例；ROCm/MLPerf/vLLM/PyTorch 生产性能；采购承诺、存货和应收账款变化；出口管制更新。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：AMD Q1 2026 季度截至 2026-03-28，财报发布日期 2026-05-05；Q2 2026 指引同日披露；FY2025 结果发布日期 2026-02-03；本报告生成日 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - AMD Q1 2026 results：收入 102.53 亿美元，Data Center 57.75 亿美元，Client 28.85 亿美元，Gaming 7.20 亿美元，Embedded 8.73 亿美元，Q2 指引 112 亿美元上下 3 亿美元，non-GAAP GM 56% 指引。https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results
+  - AMD Q1 2026 10-Q：现金及短投 123.47 亿美元、经营现金流 30 亿美元、Meta warrant、未来承诺 256.62 亿美元。https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000076/amd-20260328.htm
+  - AMD FY2025 results：FY2025 收入 346.39 亿美元，Data Center 166 亿美元，non-GAAP operating income 77.68 亿美元，Q1 2026 原始指引。https://ir.amd.com/news-events/press-releases/detail/1276/amd-reports-fourth-quarter-and-full-year-2025-financial-results
+  - AMD Analyst Day 2025：MI350 fastest ramping、Helios/MI450 从 2026Q3、ROCm downloads 10x、长期财务目标和 data center CAGR。https://ir.amd.com/news-events/press-releases/detail/1266/amd-unveils-strategy-to-lead-the-1-trillion-compute-market-and-accelerate-next-phase-of-growth
+  - AMD + OpenAI 6GW：首个 1GW MI450 从 2026H2，最多 1.6 亿股 warrant 与里程碑。https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus
+  - AMD + Meta 6GW：首个 1GW 从 2026H2，custom MI450-based GPU、Venice、ROCm、Helios，Meta 为 Venice/Verano lead customer。https://ir.amd.com/news-events/press-releases/detail/1279/amd-and-meta-announce-expanded-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus
+  - Oracle + AMD：OCI 从 2026Q3 起初始部署 50,000 颗 MI450，Helios 72-GPU rack、432GB HBM4、20TB/s、Vulcano/UALink/UEC。https://www.oracle.com/news/announcement/ai-world-oracle-and-amd-expand-partnership-to-help-customers-achieve-next-generation-ai-scale-2025-10-14/
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - OpenAI/Meta 各 6GW 是多年多代需求代理，不等于 NTM 收入。
+  - Oracle 50,000 MI450 是 NTM 内最强数量锚，但收入确认仍取决于 Q3 2026 后发货、rack 集成、客户验收和云实例上线。
+  - MI500、Verano、更深度软件/服务化、物理 AI/边缘 AI 和 Embedded 长期 design wins 只作为远期期权。
+- 项目内主要来源：
+  - `公司调研/AI计算芯片_EDA_IP_custom_ASIC/AMD_Advanced_Micro_Devices_公司调研_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_商用AI加速芯片_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI服务器CPU与控制平面芯片_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_开放Scale-up互联_2026-06-11.md`

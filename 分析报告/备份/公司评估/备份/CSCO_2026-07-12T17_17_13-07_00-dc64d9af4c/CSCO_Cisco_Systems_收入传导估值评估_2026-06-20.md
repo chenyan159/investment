@@ -1,0 +1,173 @@
+# 公司收入传导与价值传导评估：Cisco Systems
+
+报告日期：2026-06-20  
+公司代号：CSCO  
+公司名称：Cisco Systems, Inc.  
+正式输出目录：`分析报告/公司评估/`  
+研究边界：本报告只使用 `公司调研/`、`行业调研/` 与外部公开资料；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、排序结果、市场价格或估值倍数。  
+主口径：NTM，定义为 2026-06-20 起未来 12 个月，近似覆盖 Cisco FY2026 Q4 至 FY2027 Q3。  
+补充口径：FY2026 管理层指引、FY2026 AI infrastructure orders/revenue、FY2027 中期产品节奏只作为校准，不替代 NTM 主表。  
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径是 NTM 经营窗口；补充口径使用 Cisco FY2026 最新指引、FY2026 AI infrastructure orders 目标和 FY2026 AI infrastructure revenue 目标。Cisco 最新官方口径显示，FY2026 Q3 收入 `15.841B` 美元，同比 `+12%`，Q4 FY2026 收入指引 `16.7-16.9B` 美元，FY2026 全年收入指引 `62.8-63.0B` 美元，non-GAAP operating margin 指引 Q4 `34%-35%`。
+- 当前收入基准、指引和 run-rate：FY2026 Q3 单季年化收入约 `63.4B` 美元；FY2026 全年收入指引中点约 `62.9B` 美元；FY2026 Q4 指引中点年化约 `67.2B` 美元。NTM 基准不是简单年化，而是把 Q4 强指引、AI orders 转收入、campus refresh 与 Security/Observability 低增速一起处理，基准区间为 `68-71B` 美元。
+- 重要产品/业务线：AI infrastructure systems + optics；Campus/enterprise networking；Security；Splunk/Observability/Data Fabric；Collaboration；Services/CX/support。
+- NTM 公司收入四情景：悲观 `64-66B` 美元；基准 `68-71B` 美元；乐观 `72-76B` 美元；极度乐观 `78-83B` 美元。
+- 利润或 EBITDA 四情景：采用 non-GAAP 经营利润和 non-GAAP 净利润作为主利润口径。悲观 non-GAAP operating margin `31.5%-33.0%`，non-GAAP 净利润约 `16-17B` 美元；基准 `33.5%-35.0%`，约 `18-19B` 美元；乐观 `35.0%-36.5%`，约 `19.5-21B` 美元；极度乐观 `36.0%-38.0%`，约 `21-23B` 美元。EBITDA 未由公司正式指引披露，本报告不强行精确量化。
+- 最大传导瓶颈：AI infrastructure 从订单到收入确认的交付、客户验收、1.6T optics/200G SerDes、G300/102.4T 生产导入，以及 Cisco 在 hyperscaler 多供应商采购中的份额。
+- 最大利润率变量：AI 网络收入的硬件/optics mix 与软件、Nexus One、Cloud Control、Splunk、support attach 能否抵消白盒、SONiC、optics ASP 和客户议价压力。
+- 最大现金流变量：库存从 FY2025 末 `3.164B` 美元升至 FY2026 Q3 `4.708B` 美元，若 AI/campus 订单按期确认则是备货；若订单或验收延迟，则会压低经营现金流和毛利。
+- 可信度：基准情景为中高，因收入、分部、订单、RPO、指引均有 A/B 级证据；乐观为中，依赖 FY2027 AI revenue 上修和 G300/1.6T 生产客户；极度乐观为低到中，需需求、份额、利润率和执行同时突破。
+
+核心经营判断：Cisco 的 NTM 经营价值传导不是“AI 网络题材等于全公司高增”。最可靠传导链是 `AI/campus 订单 -> Networking 收入 -> Services/support attach -> 高现金流`。最有弹性的传导链是 `AI infrastructure orders 90 亿美元目标 -> FY2027 AI revenue 50-90 亿美元年化 -> G300/1.6T/Nexus One/Cloud Control/Splunk attach -> Networking 毛利不被稀释`。当前可进入基准的 AI 收入主要是 FY2026 `4B` 美元收入目标及其 NTM 延伸，不包括没有客户、时间表或收入确认路径的 CPO、AgenticOps 大规模 ARR 和 AI Defense 长期期权。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| AI infrastructure systems + optics | FY2026 AI infrastructure revenue 指引 `4.0B` 美元；FY2026 AI orders 目标 `9.0B` 美元；FY2026 Q3 YTD orders `5.3B` 美元 | FY2026 收入约 `6.4%`；Networking 内约 `11%-14%` | 最高增量业务，决定 Networking 增速和叙事质量 | A/B | 基准纳入 `5.0-6.5B` 美元 NTM 收入；订单高于收入，需确认节奏折扣 | G300 成为多家 hyperscaler 主供、CPO/1.6T optics 大规模打包、scale-across 收入 |
+| Campus/enterprise networking | FY2026 Q3 Networking 收入 `8.815B` 美元，剔除 AI 后为 Cisco 最大收入底座；campus orders `>25%` YoY | 估算 NTM `32-35B` 美元，约公司 `47%-50%` | 最大收入和现金流底座 | A/B | 基准纳入；按 refresh 周期和 Q4 指引处理，不因 AI 叙事上修过度 | 企业 AI edge、Wi-Fi 7、quantum-safe/security attach |
+| Security | FY2026 Q3 `2.008B` 美元，YoY `0%` | 约 `12%-13%` | 战略重要，短期增速一般 | A | 基准纳入 `8.0-8.6B` 美元；Hypershield/AI Defense 小比例进入乐观 | Agentic security、Hypershield 大规模 runtime enforcement |
+| Splunk/Observability/Data Fabric | FY2026 Q3 Observability `0.269B` 美元，YoY `+3%`；Splunk 还影响 Security 和 Services，但未完整单列 | 报告分部约 `1.5%-2%`；战略影响高于披露收入 | 高毛利软件期权，当前收入贡献小 | A/C | 披露 Observability 基准纳入 `1.1-1.4B` 美元；Machine Data Lake、Agent Builder 只小比例纳入乐观 | Cloud Control/AgenticOps 独立大 ARR、AI Fabric telemetry 按 GPU idle ROI 定价 |
+| Collaboration | FY2026 Q3 `1.024B` 美元，YoY `-1%` | 约 `6%-7%` | 稳定但非本次增量核心 | A | 基准纳入 `3.9-4.2B` 美元，按低增或小幅下滑处理 | AI meeting/contact center attach |
+| Services/CX/support | FY2026 Q3 `3.724B` 美元，YoY `-1%`，services gross margin GAAP `69.2%`，non-GAAP `71.6%` | 约 `23%-24%` | 利润和现金流底座 | A | 基准纳入 `14.8-15.5B` 美元；AI systems support attach 是乐观变量 | Cisco IQ、Resilient Infrastructure Services、managed AgenticOps |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池和客户采购节奏，不评估 Cisco 份额、收入确认或利润率。当前需求锚以 Cisco 管理层指引、订单趋势、行业资料中 800G/1.6T、AI Fabric 软件、Ethernet switch 市场数据和正常企业网络 refresh 周期为准。需求强弱均相对“当前已被管理层指引、订单、行业数据和 run-rate 反映的预期”判断。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| AI infrastructure systems + optics | Cisco FY2026 AI orders 目标 `9.0B` 美元，FY2026 AI revenue 目标 `4.0B` 美元；data center switching orders `>40%` YoY；Dell'Oro 称 1Q26 AI back-end Ethernet 中 800G 占绝大多数且 1600G H2 ramp | NTM AI 网络需求仅支撑 Cisco AI revenue `4-5B` 美元；订单节奏在 FY2027 降至 `7-9B` 美元 | NTM 需求支撑 Cisco 可服务订单 `9-11B` 美元，收入池转为 `5-6.5B` 美元 | FY2027 订单需求 `12-15B` 美元，1.6T/G300 新客户加速，收入池 `7-9B` 美元 | FY2027 订单需求 `16B+` 美元，多个 AI cluster 同时采用 Cisco 系统/optics/software，收入池 `10-12B` 美元 | 悲观较基准少 `1-2B` revenue demand；乐观多 `2-3B`；极度多 `5B+` | 基准等于当前强预期正常兑现；乐观需要 FY2027 订单继续上修；极度需非线性份额和端口升级 | 正向：AI back-end Ethernet 强、800G/1.6T 迁移、Cisco Q3 orders 上修。反证：InfiniBand/NVIDIA/Arista/Broadcom/白盒份额、客户自带 optics、验收延迟 |
+| Campus/enterprise networking | Q3 campus networking orders `>25%` YoY；IDC 2025 non-datacenter Ethernet switch 全年 `+9.1%` | 企业 refresh 放缓，预算从硬件切向云/AI 应用；NTM campus/enterprise 需求 `0%-3%` 增长 | 多年 campus refresh 正常延续，NTM 需求 `4%-8%` 增长 | Wi-Fi 7、AI edge、secure branch、quantum-safe 形成更强 refresh，需求 `8%-12%` 增长 | 旧设备大规模替换与安全合规同时发生，需求 `12%+`，但非线性概率低 | 对 Cisco 非 AI Networking revenue 影响约 `-2B` 到 `+3B` | 基准符合订单和换机周期；乐观高于当前 refresh 预期 | 正向：Cisco installed base 和渠道强。反证：宏观 IT 预算、HPE/Juniper/Aruba、Fortinet、云网络替代 |
+| Security | Q3 Security `2.008B` 美元，YoY `0%`；AI Defense/Hypershield 早期 | 网络安全预算增长但 Cisco share 或产品迁移慢，需求低于当前预期，`-2%` 到 `+2%` | 安全预算稳定，Cisco flat 到低个位数增长 | AI agent security、runtime security、Live Protect 和 Secure Access attach 推动中个位数增长 | Agentic SOC 与 Hypershield 成为大型客户标准预算，双位数增长 | 相对基准收入需求约 `-0.5B` 到 `+1.5B` | 基准不把安全叙事当成高增；乐观需产品化和客户 attach 证据 | 正向：AI 扩大攻击面。反证：Palo Alto、CrowdStrike、Wiz、Zscaler、Microsoft Sentinel/Defender 强竞争 |
+| Splunk/Observability/Data Fabric | Q3 Observability `0.269B` 美元，YoY `+3%`；Splunk Machine Data Lake Alpha、Agent Builder Fall 2026 GA 计划 | 客户压缩日志/ingest 成本，Splunk 迁移或优化使需求低于预期 | Observability 低个位数增长，Machine Data Lake 主要保留客户和降成本 | Federated Search、Machine Data Lake、Agent Builder 提升续约和新 workload，增速中高个位数 | AgenticOps 数据层成为生产控制面，AI Fabric telemetry 独立付费快速形成 | 披露 Observability NTM 影响约 `-0.2B` 到 `+0.8B`；战略 attach 影响更大但难量化 | 基准只承认披露业务低增；乐观承认产品路线但折扣 | 正向：Cloud Control 需要统一数据层。反证：Datadog、Dynatrace、Elastic、Grafana、云原生日志和低成本 data lake |
+| Collaboration | Q3 `1.024B` 美元，YoY `-1%` | 会议和协作硬件继续下滑，需求 `-5%` 到 `-8%` | 稳定到小幅下滑，`-2%` 到 `+1%` | Webex AI、contact center、设备 refresh 拉动 `+2%-4%` | 协作成为 AI agent 工作流入口，需求 `+5%+`，但证据不足 | 对公司收入影响通常小于 `0.5B` | 基准为稳定现金流，不作为 AI 主线 | 正向：AI meeting/contact center。反证：Microsoft Teams、Zoom、低差异化 |
+| Services/CX/support | Q3 Services `3.724B` 美元，YoY `-1%`；RPO `43.462B` 美元，deferred revenue `28.599B` 美元 | 硬件延迟和客户优化使服务续约弱，`-2%` 到 `0%` | Support/CX 稳定，AI systems attach 抵消传统下滑，`0%-3%` | AI networks、Cloud Control、Cisco IQ 和 resilience services 提升 attach，`3%-6%` | AgenticOps managed service 和安全韧性服务显著放量，`6%+` | 相对基准收入影响约 `-0.6B` 到 `+1B` | 基准高可信；极度乐观需新服务 SKU 规模化 | 正向：大客户 AI fabric 验收和支持复杂度上升。反证：硬件一次性订单不带服务续约、客户自行运维 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断需求中有多少能进入 Cisco NTM 收入表，以及当前可收入化基数；不预测增长，不判断利润率。A 级为已披露收入、分部收入或正式指引；B 级为已披露订单、RPO、deferred revenue、正式合同或明确交付时间表；C 级为管理层可验证产品发布、客户认证或产能规划；D/E 级不进入基准 NTM 收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| AI infrastructure systems + optics | FY2026 AI revenue 指引 `4.0B` 美元；FY2026 AI orders 目标 `9.0B` 美元；FY2026 Q3 YTD orders `5.3B` 美元 | 直接 | 高端硬件加软件/服务 attach；毛利受 optics 和白盒影响 | `4.0-5.0B` | `5.0-6.5B` | `7.0-9.0B` | `10.0-12.0B` | 基准略高于 FY2026 revenue guide，因 NTM 包含 FY2027 三季；乐观高于当前可见路径 | A/B | 是 | 已披露 orders/revenue guide、data center switching orders、Networking 增速；订单到收入需折扣 | 基准纳入；`>9B` 只进乐观/极度乐观；未披露客户或无交付表的 G300 大单不进基准 |
+| Campus/enterprise networking | FY2026 Q3 Networking `8.815B` 美元；campus orders `>25%`，但 Cisco 不单列 campus revenue | 直接 | 系统硬件加软件/支持；成熟高现金流 | `30-32B` | `32-35B` | `35-38B` | `38-40B` | 基准符合 Q4 指引和 refresh 正常延续 | A/B | 是 | Networking 分部收入 A 级；campus orders B 级；剔除 AI 后为研究估算 | 基准纳入；不把 AI data center demand 重复计算入 campus |
+| Security | FY2026 Q3 Security `2.008B` 美元，YoY `0%` | 直接 | 软件/硬件混合，长期高毛利潜力但当前增长低 | `7.7-8.0B` | `8.0-8.6B` | `8.7-9.5B` | `10.0B+` | 基准为低个位数增长；不因 AI security 叙事上修 | A/C | 是 | 分部收入 A 级；Hypershield/AI Defense 产品发布 C/D 级 | 基准只纳入披露业务；AI Defense/Hypershield 增量主要进乐观 |
+| Splunk/Observability/Data Fabric | FY2026 Q3 Observability `0.269B` 美元；Machine Data Lake Alpha；Agent Builder 计划 2026 年秋 GA | 直接和间接 | 高毛利软件，但数据成本和销售周期制约 | `1.0-1.1B` | `1.1-1.4B` | `1.5-2.0B` | `2.5B+` | 基准符合低个位数增长；乐观需 Data Lake 和 Cloud Control 生产采用 | A/C/D | 是，有限纳入 | Observability 分部 A 级；Splunk Data Fabric/AgenticOps 为 C/D 级 | 披露 Observability 进基准；AgenticOps 远期 ARR 不进基准，只作乐观和附录跟踪 |
+| Collaboration | FY2026 Q3 `1.024B` 美元，YoY `-1%` | 直接 | 稳定软件和设备，AI 相关性低 | `3.7-3.9B` | `3.9-4.2B` | `4.2-4.5B` | `4.7B` | 基准为稳定或小幅下滑 | A | 是 | 分部收入 A 级 | 基准纳入，作为公司汇总的稳定项 |
+| Services/CX/support | FY2026 Q3 `3.724B` 美元；RPO 和 deferred revenue 支撑续约 | 直接和间接 | 高毛利、现金流稳定；AI systems attach 提升质量 | `14.2-14.8B` | `14.8-15.5B` | `15.6-16.5B` | `17.0B+` | 基准符合当前 RPO 和服务 run-rate | A/B | 是 | Services 收入 A 级；RPO `43.462B` 美元和 deferred revenue `28.599B` 美元为 B 级可见性 | 基准纳入；AI support attach 作为乐观变量 |
+
+排除项：G300 发布本身、Cloud Control controlled availability、Machine Data Lake Alpha、Hypershield/AI Defense 早期产品、CPO/NPO/3.2T/400G lane 长期路线，若无客户、交付时间表和收入确认路径，不进入 NTM 基准收入。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求和收入基数出发，评估每条业务在 NTM 内能给 Cisco 贡献多少收入和利润。收入贡献为 NTM 产品线收入区间；利润贡献以经营利润或利润质量方向表述，因为 Cisco 不披露单项产品利润率。不得把行业 TAM、客户总预算或项目总金额直接写成 Cisco 收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| AI infrastructure systems + optics | 悲观 | `4.0-5.0B` | 中等，增量利润被 optics/验收/价格吞噬 | 低于公司 product GM | 低于当前强预期 | FY2026 AI revenue `4B` 仍可兑现，但 FY2027 订单转收入慢 | 保留为下行情景 | G300/1.6T 延迟、客户自带 optics、白盒压价、库存上升 |
+| AI infrastructure systems + optics | 基准 | `5.0-6.5B` | 较强，支持 Networking 增长但不明显抬升公司 GM | product GM 稳在 `63%-65%` 附近 | 符合当前预期正常兑现 | FY2026 orders `9B` 目标、Q3 YTD `5.3B`、data center switching orders `>40%` | 保留 | 订单到 revenue 的季度确认折扣 |
+| AI infrastructure systems + optics | 乐观 | `7.0-9.0B` | 强，若 Nexus/Cloud Control/support attach 提升，可明显增厚经营利润 | 稳中略升 | 高于当前预期 | FY2027 orders `12-15B`、1.6T/G300 客户生产部署 | 保留但中可信 | 需要明确客户和确认节奏 |
+| AI infrastructure systems + optics | 极度乐观 | `10.0-12.0B` | 很强，但只有软件/服务和高端系统 mix 成立才可非线性扩张 | 上升 | 显著高于预期 | Cisco 成为多家 AI cluster 主供/二供，G300/Acacia/Nexus 一体化 | 下移为乐观上限，除非后续有新大单 | 任一环节缺证据即不能保留为主判断 |
+| Campus/enterprise networking | 悲观 | `30-32B` | 稳定但低于计划，费用杠杆不足 | 小幅下行 | 低于当前 refresh 预期 | campus orders 放缓或宏观预算收缩 | 保留 | 企业 IT 预算、竞争替代 |
+| Campus/enterprise networking | 基准 | `32-35B` | 强现金流，支撑公司整体利润 | 稳定 | 符合预期 | Q3 campus orders `>25%`，Networking `+25%` | 保留 | AI revenue 与 campus 不得重复计算 |
+| Campus/enterprise networking | 乐观 | `35-38B` | 较强，渠道规模带来费用杠杆 | 稳中略升 | 高于预期 | 多年 refresh、Wi-Fi 7、安全/管理 attach | 保留但不作为极度弹性主线 | 传统硬件 ASP 和竞争 |
+| Campus/enterprise networking | 极度乐观 | `38-40B` | 强，但大概率仍是周期性 refresh 而非结构重估 | 略升 | 明显高于预期 | 旧设备替换和 AI edge 同时加速 | 下移为乐观上沿 | 证据不足以假设非线性 |
+| Security | 悲观 | `7.7-8.0B` | 一般，销售投入和产品迁移拖累 | 下行或持平 | 低于预期 | Q3 Security YoY `0%`，竞争强 | 保留 | AI security 叙事未转收入 |
+| Security | 基准 | `8.0-8.6B` | 稳定，高毛利但增速低 | 持平 | 符合预期 | 分部收入 A 级，客户安全预算持续 | 保留 | 产品组合复杂 |
+| Security | 乐观 | `8.7-9.5B` | 改善，Hypershield/AI Defense/Live Protect attach | 略升 | 高于预期 | Cloud Control、Live Protect、AI Defense 产品节奏 | 保留为中可信 | 需生产客户和付费 attach |
+| Security | 极度乐观 | `10B+` | 强，但需新安全平台放量 | 上升 | 明显高于预期 | Agentic security 成为新预算 | 移入附录/仅作跟踪 | 目前缺少量化订单 |
+| Splunk/Observability/Data Fabric | 悲观 | `1.0-1.1B` | 高毛利但增长不足，可能受数据成本优化压制 | 持平或下行 | 低于预期 | Observability 仅 `+3%` | 保留 | 客户降低 ingest、云原生替代 |
+| Splunk/Observability/Data Fabric | 基准 | `1.1-1.4B` | 稳定，对公司利润影响小于战略叙事 | 持平 | 符合预期 | 分部收入 A 级，Splunk 产品在整合期 | 保留 | 不把 Alpha 产品当基准 |
+| Splunk/Observability/Data Fabric | 乐观 | `1.5-2.0B` | 高质量，attach 改善公司软件 mix | 上升 | 高于预期 | Machine Data Lake、Federated Search、Agent Builder、Cloud Control 接入 | 保留为中低到中可信 | Fall 2026 GA 和客户转付费仍需验证 |
+| Splunk/Observability/Data Fabric | 极度乐观 | `2.5B+` | 很高，但短期收入化证据不足 | 上升 | 显著高于预期 | AgenticOps 数据层成为生产控制面 | 移入附录 | Alpha/early product 不进 NTM 主判断 |
+| Collaboration | 悲观 | `3.7-3.9B` | 稳定现金流但小幅下滑 | 略降 | 低于预期 | 协作竞争和设备周期 | 保留 | Microsoft Teams/Zoom |
+| Collaboration | 基准 | `3.9-4.2B` | 稳定 | 持平 | 符合预期 | Q3 `-1%` | 保留 | 非 AI 主线 |
+| Collaboration | 乐观 | `4.2-4.5B` | 小幅改善 | 略升 | 略高于预期 | Webex AI 和 contact center attach | 保留但影响小 | 需要新 seat 或设备需求 |
+| Collaboration | 极度乐观 | `4.7B` | 小幅改善 | 略升 | 高于预期 | AI 工作流入口假设 | 排除为公司极度主因 | 证据不足 |
+| Services/CX/support | 悲观 | `14.2-14.8B` | 仍高，但续约和递延收入增长弱 | 略降 | 低于预期 | Services YoY `-1%` | 保留 | 硬件交付延迟、客户优化 |
+| Services/CX/support | 基准 | `14.8-15.5B` | 很强，是公司利润底座 | 稳定在高位 | 符合预期 | Services GM 高、RPO/deferred revenue 稳定 | 保留 | 不与软件收入重复 |
+| Services/CX/support | 乐观 | `15.6-16.5B` | 强，AI fabric 支持与 Cisco IQ 提升附加值 | 略升 | 高于预期 | Cloud Control、Cisco IQ、resilience services | 保留 | 需要 attach 和付费服务订单 |
+| Services/CX/support | 极度乐观 | `17B+` | 很强，但需 managed AgenticOps 规模化 | 上升 | 显著高于预期 | AI network SRE/managed service 标准化 | 下移为乐观上限 | 服务交付人力和客户预算 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：先剔除产品之间的重复计算，再把产品级收入贡献合成为公司 NTM 总收入、毛利率、经营利润率、净利润和现金流方向。不讨论市场定价、目标价、评级或估值倍数。利润率以 non-GAAP 为主，因 Cisco 最新指引也使用 non-GAAP gross margin、non-GAAP operating margin 和 non-GAAP EPS；GAAP 受收购摊销、重组和税项影响更大。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `64-66B` 美元 | 较 FY2026 指引中点约 `+2%-5%`；较上一滚动 12 个月约 `+5%-9%` | 低于当前强指引和订单隐含路径；AI revenue 仅从 FY2026 `4B` 小幅延伸 | non-GAAP GM `64.0%-65.5%` | non-GAAP OM `31.5%-33.0%` | EBITDA 无法可靠量化；non-GAAP 净利润约 `16-17B` 美元 | 经营现金流仍正，但库存和交付延迟压低 FCF 转化 | 中 | AI orders 转收入慢、1.6T/G300 未生产化、Security/Splunk 不加速、库存消化慢 |
+| 基准公司 | `68-71B` 美元 | 较 FY2026 指引中点约 `+8%-13%`；较上一滚动 12 个月约 `+12%-17%` | 符合 Q4 强指引、FY2026 AI orders `9B` 目标正常延伸、campus refresh 正常兑现 | non-GAAP GM `65.5%-66.5%` | non-GAAP OM `33.5%-35.0%` | EBITDA 无法可靠量化；non-GAAP 净利润约 `18-19B` 美元 | FCF 稳定到改善；库存随 AI/campus 出货消化 | 中高 | AI revenue 从 `4B` 向 `5-6.5B` 转化，product GM 保持 `63%-65%`，RPO/deferred 稳定 |
+| 乐观公司 | `72-76B` 美元 | 较 FY2026 指引中点约 `+14%-21%` | 高于当前预期；需要 AI revenue `7-9B`、campus 继续强、Services attach 改善 | non-GAAP GM `66.0%-67.2%` | non-GAAP OM `35.0%-36.5%` | EBITDA 无法可靠量化；non-GAAP 净利润约 `19.5-21B` 美元 | FCF 改善，库存周转恢复，递延和 RPO 提升 | 中 | G300/1.6T 大客户、Cloud Control/Splunk attach、白盒/optics ASP 压力可控 |
+| 极度乐观公司 | `78-83B` 美元 | 较 FY2026 指引中点约 `+24%-32%` | 显著高于当前预期；AI、campus、security/software、services 同时突破 | non-GAAP GM `66.5%-68.0%` | non-GAAP OM `36.0%-38.0%` | EBITDA 无法可靠量化；non-GAAP 净利润约 `21-23B` 美元 | FCF 明显改善，但需营运资本不被高增长吞噬 | 低到中 | Cisco 成为多个 AI cluster 主供/二供，AI revenue `10-12B`，软件和服务 attach 明显提高，执行风险全部顺利 |
+
+公司层面校验：
+
+- 不重复计算：AI infrastructure 是 Networking 子集；Campus/enterprise networking 为剔除 AI infrastructure 后的 Networking 研究口径；Services 不重复计入硬件收入，只计支持、CX 和专业服务收入。
+- 一次性项目：未把并购、重组、股价、市值、估值倍数或一次性市场情绪作为经营证据。
+- 传统业务抵消：Collaboration 低增或小幅下滑，Security/Observability 当前低增，会抵消一部分 AI 网络增量。
+- 低毛利 pass-through：AI systems 和 optics 若只是硬件/模块转售，收入上修不能自动等同利润上修；只有 Nexus/Cloud Control/Splunk/support attach 提升时，乐观利润才成立。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q3 收入 `15.841B` 美元、FY2026 revenue guide `62.8-63.0B` 美元、Q4 guide `16.7-16.9B` 美元 | 公司汇总 | 抬高 NTM 基准收入底座至 `68-71B` 美元 | Q4 non-GAAP OM guide `34%-35%` 支撑基准利润率 | 高收入 run-rate 需要库存按期转收入 | 基准保留 |
+| FY2026 AI infrastructure orders YTD `5.3B`、FY2026 orders 目标 `9B`、revenue 目标 `4B` | 收入基数和产品贡献 | 支撑 AI NTM 基准 `5-6.5B` 美元，乐观 `7-9B` | 若仅硬件/optics mix，利润率不自动上修 | 订单到交付和验收是核心执行变量 | 基准保留，乐观保留 |
+| Product orders `+35%`、networking product orders `>50%`、data center switching orders `>40%` | 需求和收入基数 | 支撑 Networking 双位数增长和 AI/campus 双周期 | 有助于费用杠杆，但可能被 mix 抵消 | 需观察 RPO 和库存消化 | 基准保留 |
+| RPO `43.462B` 美元、product RPO `22.058B`、deferred revenue `28.599B` | 收入确认和服务 | 支撑服务和产品可见性，但 RPO 增速低于 orders | 支撑高毛利服务续约 | RPO 未同步大幅上升限制极度乐观可信度 | 基准保留，极度乐观下移 |
+| Inventory `4.708B` 美元，高于 FY2025 末 `3.164B` | 执行和现金流 | 若出货顺利，支撑 Q4/NTM；若延迟，压收入确认 | 库存跌价、价格下行会压 GM | 是 FCF 最大变量之一 | 悲观保留，不重复惩罚到需求层 |
+| Dell'Oro 1Q26 AI back-end：Ethernet 约占 AI cluster data center switch sales 三分之二，800G 为绝大多数，1600G H2 ramp；Cisco 份额提升 | 需求和份额 | 支撑 AI Ethernet 需求和 Cisco 可参与池 | 高端端口有溢价，但竞争强 | 需客户认证和产能配合 | 乐观保留，极度乐观仍需公司订单证据 |
+| G300/102.4T/1.6T 系统、液冷、Nexus One、Cloud Control | 产品贡献和利润质量 | 为 FY2027 增量提供 C 级产品证据 | 软件/支持 attach 可改善利润质量 | Controlled availability 和客户生产节奏未完全验证 | 进入乐观；极度乐观仅作跟踪 |
+| Security `0%` YoY、Observability `+3%` YoY | 公司组合 | 限制软件高增长基准 | 限制公司 mix 上修 | 说明 Splunk/AI security 仍在转化期 | 基准下修为低增，不把产品叙事放入基准 |
+| 白盒/SONiC、NVIDIA/Arista/Broadcom/Marvell、客户自研网络 | 份额、价格和利润 | 限制 AI revenue 份额上限 | 压硬件 ASP 和 product GM | 多供应商采购导致订单和 margin 波动 | 在 AI 产品层处理一次，不再重复惩罚公司整体 |
+| Splunk Machine Data Lake Alpha、Agent Builder Fall 2026 GA、Cloud Control Controlled Availability | 软件远期期权 | NTM 基准收入贡献小 | 若付费生产，利润质量高 | GA、客户迁移和数据成本模型未验证 | 基准保留披露 Observability；新品移入附录或乐观 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | AI 订单转收入慢，Security/Splunk 不加速，收入 `64-66B` 美元 | FY2026 指引和 RPO 仍提供底座，服务现金流稳定 | 库存升高、G300/1.6T 延迟、白盒压价、Security flat | 保留 | 下行情景 | 中 | 白盒/SONiC 只在 AI 产品份额和利润层处理，不再同时压低 campus 和 services |
+| 基准 | 当前强指引和订单正常兑现，收入 `68-71B` 美元 | FY2026 Q3 record revenue、AI orders/revenue 上修、Networking +25%、RPO 稳定 | Security/Observability 增速低，AI revenue 当前仍约中个位数占比 | 保留 | 最可能情景 | 中高 | Security 低增只影响软件组合，不重复惩罚 AI infrastructure demand |
+| 乐观 | AI revenue `7-9B`，campus refresh 延续，收入 `72-76B` 美元 | 1.6T/800G 行业需求强，Cisco G300/Nexus/Cloud Control 产品线完整，Dell'Oro 显示 Cisco 份额提升 | 需要 FY2027 新订单和客户生产证据；软件 attach 未单列披露 | 保留 | 上行情景 | 中 | 客户认证周期只限制 AI 产品贡献，不重复下调公司全部业务 |
+| 极度乐观 | AI revenue `10-12B`，公司收入 `78-83B` 美元，利润率扩张 | 需求池、技术路线、订单目标和 installed base 给出上限可能性 | 任一核心环节缺证据：份额、1.6T 供给、客户验收、软件 attach、毛利质量 | 下移 | 乐观上限和附录跟踪 | 低到中 | 库存和验收风险已在执行层处理，不再作为需求层反证重复扣减 |
+
+可信度结论：
+
+- 高可信：FY2026 Q3 分部收入、FY2026 Q4/FY2026 revenue 指引、AI infrastructure FY2026 orders/revenue、RPO/deferred revenue、毛利率和经营利润率指引。
+- 中高可信：AI infrastructure NTM `5-6.5B` 美元基准、Services/CX 支撑利润、Campus refresh 延续。
+- 中可信：AI infrastructure 乐观 `7-9B` 美元、Cloud Control/Splunk attach 改善利润质量。
+- 低可信：NTM 内 AgenticOps 大 ARR、Hypershield/AI Defense 非线性收入、CPO/3.2T 直接成为 Cisco NTM 主收入。
+
+## 8. 结论
+
+- 最可能情景：基准情景。Cisco NTM 收入大概率在 `68-71B` 美元，核心来自 Q4 FY2026 强指引延伸、AI infrastructure 从 FY2026 `4B` revenue guide 向 `5-6.5B` NTM 转化、Campus/enterprise networking refresh 延续，以及 Services/CX 维持高毛利底座。利润/现金流更可能是稳健改善，而不是因 AI revenue 占比小幅提升而立即大幅扩张。
+- 乐观情景成立条件：FY2026 AI orders 达到或超过 `9B` 美元；FY2027 AI orders 进一步进入 `12-15B` 美元区间；G300/1.6T/N9000/8000 在 2026H2 至 2027H1 获得明确生产客户；product non-GAAP GM 稳在 `63%-65%+`；Cloud Control/Nexus One/Splunk/support attach 能证明收入不是低毛利硬件 pass-through。
+- 极度乐观情景成立条件：Cisco 在多个 hyperscaler、neocloud 或 sovereign AI cluster 中成为主供或强二供；AI infrastructure NTM revenue 达到 `10-12B` 美元；1.6T optics、200G SerDes、液冷系统、客户验收全部顺利；Security/Splunk/Cloud Control 从产品发布转为付费生产；Services attach 提升使 non-GAAP operating margin 达到 `36%-38%`。目前证据不足以把该情景作为主判断。
+- 悲观情景触发条件：FY2026 AI orders 低于 `9B` 美元目标，或 FY2026 `4B` AI revenue 目标未兑现；FY2027 管理层对 AI orders/revenue 语气转弱；库存继续上升但 Networking revenue 和 gross margin 未跟上；RPO/product RPO 不随 orders 改善；G300/1.6T 只有发布和样品而缺少生产部署；Security/Observability 继续低增或被客户日志成本优化拖累。
+- 后续跟踪数据：FY2026 Q4 AI orders 新增额、FY2026 AI revenue 是否兑现 `4B` 美元、FY2027 AI revenue 或 orders 初始框架、Networking product orders 和 data center switching orders、product non-GAAP GM、RPO/product RPO、inventory、G300/1.6T 客户生产案例、Cloud Control global availability、Splunk Machine Data Lake/Agent Builder 付费采用、Hypershield/AI Defense 生产客户。
+
+最终经营结论：Cisco NTM 价值传导的质量高于普通网络硬件周期，但弹性低于纯 AI networking 高 beta 标的。最可确认的收入传导来自 Networking 和 Services；最重要的上行来自 AI infrastructure orders 继续转 revenue；最关键的利润传导来自 Cisco 是否能把 Silicon One/Nexus/Acacia/SONiC 与 Cloud Control/Splunk/support 打包成可运维、可审计、可防御的 AI factory 网络方案。若 Cisco 只是卖更多 switches 和 optics，收入可上修但利润质量有限；若软件和服务 attach 成立，经营质量才会真正上一个台阶。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Cisco FY2026 Q3 截至 2026-04-25，发布日 2026-05-13；本报告编制日 2026-06-20。
+- 主要收入、订单、指引和利润率来源：
+  - Cisco FY2026 Q3 earnings, 2026-05-13: https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-THIRD-QUARTER-EARNINGS/default.aspx
+  - Cisco FY2026 Q2 earnings, 2026-02-11: https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-SECOND-QUARTER-EARNINGS/default.aspx
+  - Cisco Silicon One G300, advanced systems and optics, 2026-02-10: https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m02/cisco-announces-new-silicon-one-g300.html
+  - Cisco Cloud Control / AgenticOps, 2026-06-02: https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m06/cisco-unveils-agentic-platform-for-operating-and-defending-critical-it-infrastructure.html
+  - Splunk Platform innovations at Cisco Live 2026: https://www.splunk.com/en_us/blog/platform/new-splunk-platform-innovations-cisco-live-2026.html
+  - Dell'Oro 1Q26 AI back-end networks, Ethernet/800G/1600G: https://www.delloro.com/news/ethernet-extends-lead-in-ai-scale-out-networks-despite-strong-infiniband-rebound/
+  - IDC Ethernet switch market 2025/4Q25: https://www.idc.com/resource-center/blog/ethernet-switch-market-size-and-growth-datacenter-segment-surges-60-in-q4-as-ai-workloads-expand/
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 management guide `62.8-63.0B` 美元收入和 Q4 `16.7-16.9B` 美元收入是基准收入底座。
+  - FY2026 AI infrastructure orders `9B` 美元和 revenue `4B` 美元是 AI 收入基准锚；FY2027 `7-9B` 美元以上 AI revenue 只作为乐观条件，不作为当前基准。
+  - G300/1.6T/CPO/Cloud Control/AgenticOps/Splunk Machine Data Lake/Hypershield/AI Defense 若缺少客户、价格、交付和确认节奏，只列为乐观、极度乐观或后续跟踪。
+- 项目内主要来源：
+  - `公司调研/AI网络_光互联_连接器/CSCO_Cisco Systems_公司调研_2026-06-20.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AI Fabric网络操作系统与遥测软件_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`

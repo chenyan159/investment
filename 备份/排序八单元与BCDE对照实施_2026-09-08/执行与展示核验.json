@@ -1,0 +1,50 @@
+{
+  "companyPoolRegressionChecks": 4,
+  "fileRunPromptChecks": 9,
+  "activeSortingTasks": 0,
+  "siteDefault": "01",
+  "sitePublishedMethods": 8,
+  "sitePublishedLists": 10,
+  "consensusFamilies": 5,
+  "oldResultCompanyCount": 192,
+  "queueWrites": false,
+  "researchRuns": false,
+  "checks": [
+    {
+      "promptFile": "分析报告/公司排序/08_常规研究单元/U01_赔率与基准承载/迭代版本/R01_2026-09-08_双判断/01_研究方案.md",
+      "valid": true
+    },
+    {
+      "promptFile": "分析报告/公司排序/08_常规研究单元/U07_收入台阶与现金转化/迭代版本/R01_2026-09-08_双判断/01_研究方案.md",
+      "valid": true
+    },
+    {
+      "promptFile": "分析报告/公司排序/08_常规研究单元/U08_证据与经济风险审查/迭代版本/R01_2026-09-08_联合审查/01_研究方案.md",
+      "valid": true
+    },
+    {
+      "promptFile": "分析报告/公司排序/07_输入扩展对照方案_待验证/E04_风险调整赔率_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/01_研究方案.md",
+      "valid": true
+    },
+    {
+      "promptFile": "分析报告/公司排序/07_输入扩展对照方案_待验证/E04_风险调整赔率_输入隔离/迭代版本/R01_2026-09-08_输入隔离/BCDE/01_研究方案.md",
+      "valid": true
+    },
+    {
+      "promptFile": "分析报告/公司排序/07_输入扩展对照方案_待验证/E05_极简基准兑现_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/01_研究方案.md",
+      "valid": true
+    },
+    {
+      "promptFile": "分析报告/公司排序/07_输入扩展对照方案_待验证/E05_极简基准兑现_输入隔离/迭代版本/R01_2026-09-08_输入隔离/BCDE/01_研究方案.md",
+      "valid": true
+    },
+    {
+      "promptFile": "分析报告/公司排序/07_输入扩展对照方案_待验证/E06_尾部生存_输入隔离/迭代版本/R01_2026-09-08_输入隔离/ABCDE/01_研究方案.md",
+      "valid": true
+    },
+    {
+      "promptFile": "分析报告/公司排序/07_输入扩展对照方案_待验证/E06_尾部生存_输入隔离/迭代版本/R01_2026-09-08_输入隔离/BCDE/01_研究方案.md",
+      "valid": true
+    }
+  ]
+}

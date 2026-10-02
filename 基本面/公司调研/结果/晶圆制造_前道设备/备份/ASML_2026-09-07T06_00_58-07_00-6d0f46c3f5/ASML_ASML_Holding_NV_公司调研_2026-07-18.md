@@ -1,0 +1,549 @@
+# 公司：ASML + ASML Holding N.V.（阿斯麦控股）全面尽调
+
+> 研究基准日：2026-07-18（美股最新可用收盘为 2026-07-17；最新财报为 2026Q2，财务期末 2026-06-28）  
+> 股票代码：NASDAQ: ASML / Euronext Amsterdam: ASML  
+> 报告币种：公司财务默认欧元；凡写“美元”均按 ECB 2026-07-16 参考汇率 **€1=$1.1467** 换算；模型值不代表公司指引。  
+> 本地资料边界：只交叉使用 `基本面/行业调研/` 内与 AI、先进逻辑、HBM/DRAM、前道设备和技术会议直接相关的资料；未读取其他研究目录，未修改公司索引。  
+> 证据标记：**A**＝公司财报/产品页/客户或会议一手资料；**B**＝SEMI、imec 等行业机构；**C**＝监管披露经 Reuters 等可信媒体转述；**D**＝行业论坛/供应链传闻，仅用于压力测试；**M**＝本文模型估算。
+
+## 核心结论
+
+ASML 不是普通“半导体设备周期股”，而是先进逻辑与先进 DRAM 的**关键层曝光产能供应商、EUV 唯一量产整机商、以及装机后生产率升级和维保的收费入口**。AI 需求已经从“GPU 数量增长”扩散为 3nm/2nm 逻辑、云 ASIC、HBM4/先进 DRAM、更多 Low-NA EUV 层、更多 ArFi 非关键层和更高装机利用率，因而同时拉动新机和 Installed Base Management（IBM，装机管理/服务/升级）。本地行业资料的核心判断仍成立：**2026—2027 年收入主角是 Low-NA EUV＋ArFi＋服务升级，而不是 High-NA 立即全面替代 Low-NA**。[项目内 AI 芯片前道设备研究](../../行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-07-10.md)
+
+截至 2026Q2，经营拐点比三个月前更强：季度收入 **€9.326bn**、毛利率 **54.0%**；公司把 2026 全年收入指引由 Q1 的 €36—40bn 大幅上调到 **€43—45bn**，并把 Low-NA EUV 2026 出货计划提高到约 **65 台**。2027 年 Low-NA 产能将增加约 30% 至约 **85 台**且已接近订满；2028 年再研究增加 30% 至约 **110 台**，且已有“显著订单”。这说明短期矛盾已经由需求不足转为**合格光学、光源、精密运动模块、整机集成和现场安装的供给约束**。[ASML 2026Q2 业绩](https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results)；[ASML 2026Q2 电话会](https://ourbrand.asml.com/asset/1fd3908a-0381-47b5-9b69-a3094f656651/2026_07_15-ASML-Transcript-investor-call-Q2-2026.pdf)
+
+最强验证来自客户而非 ASML 自己：台积电 2026Q2 把全年资本开支提高到 **$60—64bn**，其中 70%—80%投向先进制程，并称 AI 需求“极强”；SK hynix 监管披露的 ASML EUV 采购额为 **KRW11.95tn/$7.97bn**、交付到 2027 年末；Micron FY2026 资本开支约 **$27bn**并签订多年 ASML EUV 供应协议。需求并非只有一家 GPU 客户或一家晶圆厂。[台积电 2026Q2 电话会](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/547d1696765e05ce3adb81c108ce1c8c1682b80c/TSMC%202Q26%20Transcript.pdf)；[SK hynix 订单（Reuters）](https://uk.finance.yahoo.com/news/sk-hynix-buy-euv-scanners-044726234.html/)；[Micron FY2026Q3 材料](https://investors.micron.com/static-files/2354ecda-77a0-4ddd-8462-a631eb491356)
+
+但股票定价已极其苛刻。2026-07-17 ASML ADR 收于 **$1,747.58**，对应约 **55.7 倍 TTM PE、31.5 倍 forward PE、16.7 倍 PS**。市场已经把“EUV 垄断＋AI 超级周期＋2027 扩产成功”计入较大部分；投资风险更多来自估值压缩、客户验收时点、出口限制、供应链扩产失败或 High-NA 采用慢于预期，而不是公司会突然失去技术地位。[StockAnalysis ASML 行情](https://stockanalysis.com/stocks/asml/)；[StockAnalysis 阿姆斯特丹估值统计](https://stockanalysis.com/quote/ams/ASML/statistics/)
+
+### 一页判断
+
+| 维度 | 判断 | 最关键数字/证据 |
+|---|---|---|
+| 产业地位 | 先进制程“光刻收费站”；EUV 量产整机份额约 100% | 2025 EUV 收入 €11.6bn；2026E 增长 >45% |
+| 2026 主增长 | Low-NA EUV、先进 DRAM/Memory、IBM 升级、ArFi 下半年拉货 | 2026 收入指引 €43—45bn；Memory 系统收入预计 >75%增长；IBM >30% |
+| 订单紧张度 | Low-NA EUV 极紧，ArFi 很紧；High-NA 是认证/采用约束而非当期供给最紧 | 2027 Low-NA 约 85 台、接近订满；2028 已有显著订单 |
+| AI 相关度 | 公司不披露；本文估算 Q2 直接或高度可归因 AI 收入约 €5.2—6.8bn，即 56%—73% | Logic 51%/Memory 49%；先进逻辑与 DRAM/HBM 同时加速（M） |
+| 盈利质量 | 服务/升级是利润稳定器；系统毛利受 High-NA 和研发摊销影响 | 2026H1 EU-IFRS 系统毛利率 47.0%，服务/field option 60.3%；Q2 US-GAAP GM 54.0% |
+| 财务健康 | 很健康，但 H1 营运资金波动大 | 净现金约 €3.86bn；合同负债 €17.43bn；H1 OCF -€0.48bn，Q2 FCF +€1.32bn |
+| 估值 | 质量极高、容错极低 | TTM PE 55.7x、forward PE 31.5x、PS 16.7x |
+| 12 个月基准 | 供给决定收入上限，不是订单决定下限 | NTM 收入约 €48—51bn、同比 TTM +36%—44%（M） |
+
+## 1. 公司整体业务、投资者定位与财务健康
+
+### 1.1 做什么：不是“制造芯片”，而是制造芯片图形的核心生产工具
+
+ASML 向晶圆厂提供硬件、软件和服务，把芯片版图以纳米级精度反复投影到 300mm 晶圆上。公司只有**一个报告分部**，但经济上可拆成五层：
+
+1. **Low-NA EUV（NXE，0.33NA）**：2nm/3nm 逻辑、先进 DRAM 的关键层主力；当前最大增长和利润池。
+2. **High-NA EUV（EXE，0.55NA）**：8nm 分辨率，面向 2nm 以下/Å 级逻辑和未来 DRAM；2026 已有 Intel 少数产品层进入生产验证，但行业广泛采用仍主要在 2027—2028。
+3. **DUV**：ArF immersion（ArFi）、ArF dry、KrF、i-line。先进芯片不是“只用 EUV”，大量非关键层仍必须使用 DUV；ArFi 与 EUV 是互补而非简单替代。
+4. **Metrology & Inspection（M&I）＋Holistic Lithography**：YieldStar 光学量测、HMI e-beam 检测/量测、计算光刻与控制软件，连接曝光—检测—修正闭环。
+5. **Installed Base Management（IBM）**：备件、现场服务、生产率/光源/软件升级和 field options；装机越多、利用率越高，收入越具年金属性。
+
+ASML 位于半导体产业链“设备—晶圆制造—先进封装—GPU/ASIC—服务器/云服务”的最上游。它本身不进入服务器实体 BOM，但决定晶圆厂能否按时交付先进逻辑和 DRAM 晶圆。客户无法通过多买刻蚀机、封装设备或 GPU 来绕过关键曝光能力，因此在 AI 基建技术栈中，ASML 的**时间紧急性高于收入占 GPU BOM 的表面比例**。
+
+### 1.2 投资者心中的公司
+
+投资者通常把 ASML 看成三种公司的叠加：
+
+- **摩尔定律的垄断收费站**：EUV 无量产整机替代者；每代节点关键层数、overlay、检测和升级内容上升。
+- **半导体资本开支周期中的最高质量 Beta**：客户资本开支上行时收入弹性大，但整机确认受发货、安装、验收影响，季度波动仍明显。
+- **地缘政治敏感的战略资产**：中国可购买的 DUV 型号和维保受荷兰、美国规则约束；2026 中国预计仍约占公司收入 20%，政策变化可改变区域 mix、交期与毛利。
+
+这也解释为何 ASML 能长期获得高估值，却会在订单或政策消息上剧烈波动：技术护城河很深，但股价反映的是未来 18—36 个月的客户资本开支和交付能力，而不是只反映当季利润。
+
+### 1.3 最近三年重大业务变化、转型与收购
+
+| 时间 | 重大变化 | 对业务的影响 |
+|---|---|---|
+| 2023-12 | 首台 High-NA EXE:5000 运往客户；Intel 为首个商业系统接收方 | ASML 从 0.33NA 向 0.55NA 平台跨代，但早期收入规模小、研发与安装成本高 |
+| 2024-04 | Christophe Fouquet 接任 CEO；资深技术负责人 Martin van den Brink 退休；ASML-imec High-NA Lab 开放 | 管理重心由“证明 EUV 可行”转向产品化、客户插入和全生态共优化。[CEO 交接说明](https://www.asml.com/news/stories/2024/christophe-fouquet-asml-ceo) |
+| 2025 | EXE:5200B 达到完整规格；首台 XT:260 出货；Low-NA NXE:3800E 生产率升级；公司演示 1,000W EUV 光源原型 | 产品路线由单纯分辨率升级转向“更高吞吐＋3D 集成＋量测/软件闭环”；1kW 尚是 2030 前后产业化期权，不是 2026 出货配置。[ASML 2025 年报技术故事](https://www.asml.com/en/investors/annual-report/2025/strategy-and-stories) |
+| 2025-09 | 向 Mistral AI 投资约 €1.3bn、取得约 11%持股并建立战略合作 | 不是设备并购；目标是把 AI 用于产品研发、客户应用和运营。带来小比例非核心估值风险。[ASML-Mistral 合作](https://www.asml.com/en/news/press-releases/2025/asml-mistral-ai-enter-strategic-partnership) |
+| 2026-01 | 宣布技术与 IT 组织重构，净减少约 1,700 个岗位，主要为管理层级，同时制造和客户支持仍扩张 | 减少组织复杂度、把资源集中到工程创新；H1 R&D 费用受技术转型和研发摊销影响。[组织重构公告](https://www.asml.com/en/news/press-releases/2026/strengthening-focus-on-engineering-and-innovation) |
+| 2026-07 | 上调全年指引并宣布 Low-NA EUV 与 ArFi 2027 各扩产约 30%，研究 2028 再扩 30% | 从谨慎配置产能转向明确扩产，确认 AI 逻辑与 DRAM 订单已跨越 2027 |
+
+过去三年**没有改变公司边界的大型并购**。ASML 的历史关键并购 Cymer、HMI、Brion 均早于本窗口；最近三年的战略动作以 High-NA 产品化、Mistral 少数股权和内部组织/产能转型为主。
+
+### 1.4 最新股价、估值和利润指标
+
+| 指标 | 最新值 | 日期/口径 | 判断 |
+|---|---:|---|---|
+| NASDAQ ADR 股价 | **$1,747.58** | 2026-07-17 收盘；盘后 $1,741.31 | 财报后仍处历史高估值区 |
+| 阿姆斯特丹股价 | **€1,537.00** | 2026-07-17 收盘 | 与 ADR/汇率大致一致 |
+| 市值 | **$675.55bn / €590.36bn** | StockAnalysis，2026-07-18 更新；不同数据商因股本/汇率可有约 1%—2%差异 | 欧洲最大市值梯队 |
+| TTM PE | **55.68x—55.81x** | 美股/阿姆斯特丹口径 | 极高，要求增长持续兑现 |
+| Forward PE | **31.47x—31.57x** | 市场一致预期 | 已计入 FY2026—2027 盈利跳升 |
+| PS | **16.71x** | 阿姆斯特丹口径 | 对设备公司非常昂贵 |
+| TTM 收入 | **€35.33bn / $40.29bn** | 截至 2026Q2 | 同比 **+9.8%**；低于 FY2026 指引增速是因 H2 尚未进入 TTM |
+| TTM 毛利率 | **52.73%** | 截至 2026Q2 | Q2 单季已回到 54.0% |
+| TTM 营业利润率 | **35.42%** | 截至 2026Q2 | 高研发下仍有强运营杠杆 |
+| TTM 净利率 | **30.11%** | 截至 2026Q2 | 设备行业顶级水平 |
+| TTM 自由现金流 | **€10.04bn** | 第三方按季度现金流汇总 | FCF margin 28.4%，但 H1 单独看受预收/应收时点扭曲 |
+
+数据源：[ASML 行情与 TTM 财务](https://stockanalysis.com/stocks/asml/)；[估值、利润率与资产负债统计](https://stockanalysis.com/quote/ams/ASML/statistics/)；[ECB 汇率](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)。估值结论不是“公司质量差”，而是**任何出货推迟、GM 低于 54%或 2027 产能爬坡不及预期，都可能先通过估值倍数而非当年 EPS 伤害股价**。
+
+### 1.5 资产负债表：8.5/10，偿债安全，营运资金时点需跟踪
+
+截至 2026-06-28 的 EU-IFRS 资产负债表显示：[ASML 2026 中期报告](https://ourbrand.asml.com/asset/468514ab-2a25-42be-a284-1560ebebcb6a/Statutory-Interim-Report-2026.pdf)
+
+| 项目 | 数值 | 计算/解释 |
+|---|---:|---|
+| 现金＋短期投资 | **€7.582bn** | 现金 €6.672bn＋短投 €0.910bn |
+| 有息债务 | **€3.720bn** | 长债 €1.984bn＋短借/一年内到期 €1.735bn |
+| 净现金 | **€3.862bn** | 足以覆盖全部有息债务约 2.0 倍 |
+| 流动资产/流动负债 | **€29.178bn / €22.394bn** | 自算流动比率 **1.30x**；第三方 US-GAAP/分类口径为 1.33x |
+| 简化速动比率 | **约 0.78x** | （流动资产－库存）/流动负债；第三方更严格口径 0.72x |
+| 库存 | **€11.740bn** | 约为 TTM 收入 33%；高但与超长制造周期、在制整机和扩产匹配 |
+| 应收账款 | **€7.253bn** | 2025 年末仅 €3.023bn；Q2 大量发货/验收形成明显时点上升 |
+| 合同负债 | **€17.429bn** | 其中流动 €13.858bn；主要是客户预付款/待履约义务，不是传统借款，反而验证订单质量 |
+| 股东权益 | **€25.995bn** | 有息债务/权益约 14.3%；财务杠杆低 |
+| H1 经营现金流 | **-€0.482bn** | 主要因应收增加 €4.228bn、合同资产/负债净流出 €1.995bn；不是经营亏损 |
+| H1 简化 FCF | **约 -€1.276bn** | OCF 减 PP&E/无形资产投入；但 Q2 单季 FCF 已转正 **€1.317bn** |
+| 未使用授信 | **€1.5bn 已承诺＋€3.5bn 未承诺** | 均未提款；短期流动性充足 |
+
+**健康判断：**净现金、105 倍左右利息覆盖、巨额客户预收款和高 FCF 能力使偿债风险很低。需要跟踪的不是破产风险，而是三件事：①应收是否在 Q3 随客户付款回落；②库存增长是否与 85 台 Low-NA/169 台 ArFi 的 2027 产能匹配，而非验收卡住；③€12bn 回购计划、股息和扩产同时进行时，净现金缓冲是否过快下降。合同负债很大意味着未来收入有支撑，也意味着 ASML 必须按合同交付，不能把全部预收款当作可自由分配现金。
+
+## 2. 最新及此前四次财报：五季度拆解
+
+### 2.1 五季度核心数字
+
+下表全部财务数字来自 ASML 各季度业绩与 [2026Q2 投资者演示](https://ourbrand.asml.com/asset/9078cf4d-91fd-4dd9-a5d5-d1caab6dc046/2026_07_15_Presentation-Investor-Relations-Q2-2026.pdf)。产品技术收入按官方“系统销售技术占比”乘系统收入计算，因图表百分比取整，合计可能有约 €0.01bn 误差。Bookings 是净新增订单，不等同收入；B2B＝bookings/系统收入。2026Q1 起公司停止披露季度 bookings，因此不以 0 代替。
+
+| 财报季度 | 总收入；YoY/QoQ | 系统 / IBM（€bn） | 系统技术收入（€bn） | Logic / Memory（系统） | Bookings / B2B / backlog | GM / OM / NM | 光刻机台数 | AI 相关收入占比（M） |
+|---|---:|---:|---|---:|---|---:|---:|---:|
+| **2026Q2（最新）** | **€9.326bn；+21.2%/+6.4%** | 6.565 / 2.762 | EUV 3.74；ArFi 1.90；其他 DUV 0.72；M&I 0.20 | 51% / 49% | 不披露；H1 合并模型见下；管理层称 backlog 增加 | **54.0% / 37.1% / 31.3%** | 91（86 新＋5 二手） | **56%—73%** |
+| **2026Q1** | €8.767bn；+13.2%/-9.8% | 6.279 / 2.488 | EUV 4.14；ArFi 1.44；其他 DUV 0.56；M&I 0.13 | 49% / 51% | 不披露；订单“very strong” | 53.0% / 36.0% / 31.4% | 79（67 新＋12 二手） | 52%—69% |
+| **2025Q4** | €9.718bn；+4.9%/+29.3% | 7.584 / 2.134 | EUV 3.64；ArFi 3.03；其他 DUV 0.61；M&I 0.30 | 70% / 30% | **€13.158bn / 1.73x / €38.797bn**；EUV bookings €7.4bn | 52.2% / 35.3% / 29.2% | 102 | 47%—62% |
+| **2025Q3** | €7.516bn；+0.7%/-2.3% | 5.554 / 1.962 | EUV 2.11；ArFi 2.89；其他 DUV 0.33；M&I 0.22 | 65% / 35% | €5.399bn / 0.97x / 未披露 | 51.6% / 32.8% / 28.3% | 72 | 41%—55% |
+| **2025Q2** | €7.692bn；+23.2%/-0.6% | 5.596 / 2.096 | EUV 2.69；ArFi 2.41；其他 DUV 0.39；M&I 0.11 | 69% / 31% | €5.541bn / 0.99x / 未披露；EUV bookings €2.3bn | 53.7% / 34.6% / 29.8% | 76 | 39%—52% |
+
+> AI 归因方法：ASML 不披露“AI 数据中心收入”。本文分别对先进 Logic、先进 Memory 和 IBM 赋予区间权重；Q2 采用 Logic 60%—75%、Memory 70%—90%、IBM 35%—50%，得到 €5.2—6.8bn。它包括为 AI GPU/ASIC、CPU、HBM/DRAM 和相关产能服务的设备，**不是 ASML 收到的数据中心客户直接订单**，也不应与客户整个 fab 收入混同。
+
+### 2.2 每次财报最重要的信息
+
+#### 2026Q2：从“需求恢复”升级为“产能再设计”
+
+- 收入 €9.326bn 高于公司原指引；IBM €2.762bn 比指引高约 €0.3bn，主要来自高毛利生产率升级/部件，推动 GM 至 54.0%。
+- Q3 指引为 **€11—12bn**、IBM 约 €2.9bn、GM **55%—57%**；FY2026 指引升至 **€43—45bn**、GM **54%—56%**。
+- 全年 Low-NA EUV 预计约 65 台，EUV 系统收入增长 >45%；非 EUV 系统约 +25%；IBM >30%。先进 Logic 晶圆代工系统收入预计 >25%增长，Memory 系统收入预计 >75%增长。
+- 一台 High-NA 在 Q2 确认；Intel 已把若干 18A 层在 EXE 与 NXE 上双重认证，使用 High-NA 制造的一部分 Core Ultra Series 3 已发货，且良率与 NXE 路线匹配。这是生产资格里程碑，不等于所有 Intel 18A 或整个行业已切到 High-NA。[High-NA/Intel 官方公告](https://www.asml.com/en/news/press-releases/2026/high-na-euv-reaches-new-readiness-milestone)
+
+#### 2026Q1：Memory 超越 Logic，订单转强但取消披露
+
+- EUV 系统收入超过 €4.1bn，含 2 台 High-NA；Memory 占系统收入 51%，首次明确反映 DRAM/HBM 扩产。
+- High-NA 累计处理超过 50 万片晶圆、6 台运行、可用率超过 80%；Logic 18nm line/space、DRAM 28nm contact pitch 等技术结果已证明成像能力，主要缺口转向 uptime、mask/resist、量测和客户经济性。
+- 公司预计 2026 Low-NA 至少 60 台、2027 至少 80 台，后在 Q2 再提高至约 65/85 台。[ASML 2026Q1 电话会](https://ourbrand.asml.com/asset/8e1f7393-33dd-4737-a436-cfe1b68cc577/2026_04_15-ASML-Transcript-investor-call-Q1-2026.pdf)
+- 从 Q1 起停止披露季度订单，理由是订单高度集中、波动大且对股价造成噪声；这降低了外部可见度，必须用 backlog、合同负债、客户 CapEx、交付槽位和渠道订单反推。[停止披露 bookings（Reuters）](https://www.investing.com/news/stock-market-news/asml-to-stop-publishing-mostclosely-watched-metric--bookings-3840216)
+
+#### 2025Q4：订单 inflection 和 backlog 基线
+
+- Bookings €13.158bn、其中 EUV €7.4bn，B2B 1.73x；年末 backlog €38.797bn，其中约 65% EUV、Logic/Memory 约 60%/40%。
+- 2025 全年收入 €32.667bn、GM 52.8%、净利 €9.609bn；EUV 收入 €11.6bn、+39%，48 台；DUV €12.0bn、-6%，279 台；M&I €0.825bn、+28%；IBM €8.2bn、+26%。
+- 这份 backlog 是本文推算 2026H1 订单的唯一可靠起点。[ASML 2025Q4/FY2025](https://www.asml.com/en/news/press-releases/2026/q4-2025-financial-results)
+
+#### 2025Q3：低谷中的产品扩展
+
+- Bookings €5.399bn，接近系统收入；EUV bookings €3.6bn，说明先进节点需求尚可，但总盘没有 Q4 的 Memory 爆发。
+- 首台 **XT:260** 出货，把 ASML 的精密光刻能力扩展到厚晶圆/3D 集成/先进封装；当期金额很小，却是容易被忽略的产品期权。[ASML 2025Q3](https://www.asml.com/en/news/press-releases/2025/q3-2025-financial-results)
+
+#### 2025Q2：高收入但对 2026 谨慎
+
+- Bookings €5.541bn、EUV €2.3bn；Logic 占系统收入 69%。管理层当时因宏观、客户节奏和出口管制无法确认 2026 增长。
+- 随后 Q4 bookings、2026Q1 Memory 拉货、Q2 产能上修推翻了最悲观情景，说明订单/验收有明显季度错位。[ASML 2025Q2](https://www.asml.com/en/news/press-releases/2025/q2-2025-financial-results)
+
+### 2.3 Backlog、B2B、交期和取消率：披露缺口下的反推
+
+| 指标 | 官方/可验证事实 | 本文推断 | 置信度 |
+|---|---|---|---|
+| 2025 年末 backlog | **€38.797bn**；65% EUV | 约覆盖当时 1.1—1.3 年收入，且先进产品占比高 | A |
+| 2026H1 bookings | 不披露；H1 系统收入 €12.844bn，管理层称 backlog 增加 | 若忽略汇率/价格调整，H1 净订单必然 **>€12.844bn**；结合 SK hynix、客户 CapEx 和产能覆盖，模型区间 **€18—26bn** | M，中低 |
+| 2026-06 backlog | 不披露 | €38.797bn＋€18—26bn bookings－€12.844bn 系统收入≈**€44—52bn** | M，中低 |
+| 2026H1 B2B | 不披露 | 订单/系统收入约 **1.4—2.0x** | M，中低 |
+| Low-NA 交期 | 2026-07 时 2027 约 85 台接近订满，且已有大量 2028 订单 | 新增标准槽位约 **18—30 个月**；客户需更早预定光学、光源和安装资源 | A/M |
+| High-NA 交期 | 少量系统、复杂安装和客户 qualification | **24—36 个月**，但近端约束更偏 adoption/uptime，而非单纯缺整机 | M |
+| ArFi 交期 | 2026 约 130 台，2027 计划 +30% | **12—24 个月**；先进 DRAM 与多重图形化推高紧张度 | A/M |
+| 取消率 | 公司不披露，未见重大 EUV 取消公告；合同负债 €17.43bn | EUV/先进 ArFi 年化经济取消率估 **0%—3%**；更多表现为延期/重排而非取消。中国许可风险另估为交付延期，不伪装成已发生取消 | M |
+| 发货到收入 | 取决于装运、现场安装、验收和特定合同条款 | 可错位 **1—3 个季度**；因此订单强不保证同季收入，库存/应收会先波动 | A/M |
+
+SK hynix 的 $7.97bn 订单要求在 2027 年末前交付；渠道按单机 KRW300—400bn 估算为 **30 台以上**，但台数不是客户正式披露，本文只把金额/窗口当硬证据，把“30+台”当 C 级交叉验证。[Reuters 转述](https://uk.finance.yahoo.com/news/sk-hynix-buy-euv-scanners-044726234.html/)；[韩国行业媒体台数估算](https://en.sedaily.com/finance/2026/03/24/sk-hynix-secures-over-30-euv-machines-in-88-billion-asml)
+
+## 3. 2026 最新指引、业务占比与产品深挖
+
+### 3.1 最新指引与收入桥
+
+| 口径 | 最新公司指引/表态 | 由 2025 基数推得的 2026 规模 | FY2026 收入占比（M） |
+|---|---|---:|---:|
+| 总收入 | **€43—45bn**；中值 €44bn | 同比 **+31.6%—37.8%** | 100% |
+| EUV 系统 | 同比 **>45%**；约 65 台 Low-NA | 2025 €11.6bn ×1.45＝**>€16.8bn**；含约 €2.0—2.5bn High-NA（M） | **38%—40%** |
+| 非 EUV 系统 | 同比约 **+25%** | 2025 DUV €12.0bn＋M&I €0.825bn，推得约 **€16.0bn** | **35%—37%** |
+| IBM/服务/field options | 同比 **>30%** | 2025 €8.2bn，推得 **>€10.7bn** | **24%—26%** |
+| 先进 Logic 系统 | 同比 **>25%** | 公司未给绝对额 | 系统收入中的重要增长池 |
+| Memory 系统 | 同比 **>75%** | 2025 约 €8.4bn，机械下限 >€14.7bn；与 H2 强拉货匹配 | 系统收入约 44%—48%（M） |
+| 中国 | 全年约总收入 **20%** | 约 €8.6—9.0bn | 主要 DUV/成熟工艺，受出口规则约束 |
+
+这个桥的合计约 €43.5bn，与 €43—45bn 指引高度一致。最突出业务是：**EUV 新机、Memory/DRAM 系统、IBM 生产率升级**；最侧重的研发则是 EXE、NXE:3800F/4200G、DUV throughput/overlay、XT:260、YS550/eScan2200 和 holistic software。
+
+### 3.2 2026H1 真实产品结构和增速
+
+2026H1 是比单季图表更可靠的产品金额口径。美元值按 $1.1467/€换算：[ASML 2026 中期报告](https://ourbrand.asml.com/asset/468514ab-2a25-42be-a284-1560ebebcb6a/Statutory-Interim-Report-2026.pdf)。
+
+| 产品/业务 | 2026H1 收入 | 占总收入 | YoY | 数量/ASP | 解释 |
+|---|---:|---:|---:|---:|---|
+| **High-NA EUV EXE** | **€1.189bn / $1.363bn** | 6.6% | **+334.2%** | 3 台；€396.3m/台 | 低基数＋早期高价；量产认证比收入增速更重要 |
+| **Low-NA EUV NXE** | **€6.709bn / $7.692bn** | **37.1%** | **+19.9%** | 29 台；€231.3m/台 | 当前最大单一产品；AI Logic 和先进 DRAM 共同驱动 |
+| **ArFi immersion** | **€3.332bn / $3.820bn** | 18.4% | **-22.5%** | 40 台；€83.3m/台 | H1 台数低、H2/2027 扩产；先进芯片非 EUV 层仍不可缺 |
+| ArF dry | €0.367bn / $0.421bn | 2.0% | +90.0% | 13 台；€28.3m/台 | mix/低基数，AI 直接相关度较低 |
+| KrF | €0.773bn / $0.886bn | 4.3% | +55.9% | 65 台；€11.9m/台 | 成熟/辅助层、DRAM 与中国需求；不是核心 AI 增量 |
+| i-line | €0.113bn / $0.130bn | 0.6% | -28.4% | 20 台；€5.7m/台 | XT:260 属潜力子集，未单独披露 |
+| **M&I** | **€0.362bn / $0.415bn** | 2.0% | **+12.8%** | 104 台；€3.5m/台均价 | e-beam/overlay/量测闭环，金额小但潜在增速高 |
+| **IBM 服务/升级** | **€5.249bn / $6.019bn** | **29.0%** | **+28.1%** | 不适用 | 装机利用率和生产率升级驱动，利润率最高 |
+| **合计** | **€18.093bn / $20.746bn** | 100% | **+17.2%** | 170 台光刻机 | System €12.844bn＋IBM €5.249bn |
+
+利润率方面，公司不披露单一型号 GM，但 H1 EU-IFRS 可直接算出：系统业务毛利率 **47.0%**，服务/field option **60.3%**。Q2 高毛利升级部件使 US-GAAP 综合 GM 达 54.0%。本文产品毛利率预测以这两个锚为边界，而不是把 54%机械套到所有产品。
+
+### 3.3 重点产品、型号、增速与利润率交叉验证
+
+| 重点产品/业务 | 主要型号/内容 | 2026 状态与官方参数 | AI 交叉验证 | 当前产品 GM 估算（M） | 未来 12 个月销售判断（M） |
+|---|---|---|---|---:|---|
+| **Low-NA EUV 新机** | NXE:3800E；后续 NXE:3800F、NXE:4200G | 3800E 升级约 **230 wph**；3800F 目标 **260 wph**、2027 首发/2028 全面量产 | 3nm AI accelerator、4/5nm 多类 AI 芯片、2nm HPC/移动；DRAM EUV 层增加 | **50%—55%** | 2027 约 85 台产能接近全订；收入 +13%—43% |
+| **High-NA EUV** | EXE:5000、EXE:5200B | 0.55NA、8nm；175 wph@50mJ；比 Low-NA 约 +40% contrast、1.7x 更小特征、2.9x 密度 | Intel 18A 若干层已双认证并发货；imec 2026-03 装机；其他客户仍 product-wafer qualification | **40%—50%**，早期爬坡 | 收入可高增，但 2027 仍以少数关键层/客户为主；勿把技术成功等同全面采用 |
+| **ArFi immersion** | NXT:2150i、NXT 系列 | 2150i 改善 overlay 约 15%、throughput 约 5%；全组合与 EUV matched fleet | AI 芯片几十个非关键层、先进 DRAM、多重图形化；2027 产能计划 +30% | **45%—52%** | H1 低基数后恢复；一年 +11%—44% |
+| **IBM/生产率升级/软件** | 光源、throughput、overlay、部件、field options、计算光刻/控制软件 | H1 +28.1%、业务 GM 60.3%；3800E 230wph、未来更高光源功率形成升级池 | 客户先提升现有 fab output，通常快于建新厂；AI 紧缺时单位停机损失极高 | **60%—68%** | 一年 +21%—61%，最稳健利润增长项 |
+| **M&I/holistic lithography** | YieldStar 1390/未来 YS550；HMI eP5、eScan、未来 eScan2200 | H1 +12.8%；eP5 可做 1nm pixel、5nm 级缺陷、<0.1nm CD precision；多束 e-beam 在研 | EUV/High-NA、GAA、DRAM 层数越多，overlay/随机缺陷/良率闭环价值越高 | **45%—55%** | 一年 +20%—120%；小基数但容易被低估 |
+| **XT:260/3D integration** | 新一代 i-line 厚晶圆/先进封装光刻 | 270 wph、最高约 1.7mm 厚晶圆、约 4x productivity；2025 首台出货 | chiplet、先进封装、3D 集成；不是 GPU 前道关键层，但可进入 AI 封装扩产 | **20%—40%**，导入期 | 一年从极低基数 +25%—525%；需客户重复订单证明 |
+| **1kW EUV 光源路线** | 三脉冲/更高 droplet frequency 概念 | 已完成 1,000W 演示；目标最终把 Low-NA 提高至约 330 wph | 长期降低每片曝光成本、扩大单机产能 | 当前无独立产品 GM | **不计 12 个月基准收入**；更接近 2030 平台/升级期权 |
+
+产品页：[NXE:3800E](https://www.asml.com/products/euv-lithography-systems/twinscan-nxe-3800e)、[EXE:5200B](https://www.asml.com/products/euv-lithography-systems/twinscan-exe-5200b)、[NXT:2150i](https://www.asml.com/en/products/duv-lithography-systems/twinscan-nxt-2150i)、[XT:260](https://www.asml.com/en/products/duv-lithography-systems/twinscan-xt-260)、[M&I 组合](https://www.asml.com/en/products/metrology-and-inspection-systems)。技术会议交叉验证：SPIE 2026 仍集中于 High-NA mask、resist、stochastic defect 和量测，说明生态成熟是量产前提；imec 的 0.55NA 结果达到 16nm pitch line/space、局部 CD 均匀性改善 18%—42%、部分图形剂量下降约 60%，证明物理性能，但不直接证明客户经济性。[imec High-NA 技术综述](https://www.imec-int.com/en/articles/case-high-na-euv-unlocking-next-era-chip-manufacturing)；[项目内 VLSI 2026 会议更新](../../行业调研/产业背景/顶级会议信息/conference_update_ieee_vlsi_symposium_2026_2026-06-20.md)
+
+### 3.4 列明跳过的低优先级产品/业务
+
+以下业务仍贡献现金流，**只是对“未来一年 AI 高增长产品”深挖优先级低**，并非收入为零：
+
+- **ArF dry、KrF 和传统 i-line（不含 XT:260）**：H1 合计 €1.253bn，部分因中国、成熟工艺和 mix 高增；AI 数据中心直接归因低，竞争也强于 EUV。
+- **二手光刻机**：H1 17 台、系统收入中金额有限；对新节点瓶颈不具决定性。
+- **消费/汽车/工业成熟节点 DUV**：会被 AI 电源管理、传感器等间接拉动，但无法与 AI GPU/HBM 进行可靠一一归因。
+- **Mistral AI 股权投资收益**：属于非核心财务资产，不是设备业务收入；不纳入产品预测。
+
+容易被漏掉、因此**不跳过**的潜力小业务包括：XT:260、YS550、eScan2200、多束 e-beam、计算光刻/holistic software、3800E 生产率升级、3800F/4200G 和未来高功率光源升级。
+
+## 4. 当前高增长/关键产品：收入贡献、AI 重要性、紧迫性和定价权
+
+评分为 1—5，5 代表最高。收入贡献是产品对 **ASML 公司总收入**的贡献；“AI 可归因”是本文根据 Logic/Memory 用途和装机利用率估算的子集，不是公司披露。
+
+| 关键产品/业务 | 2026H1 公司收入贡献 | H1 YoY | AI 可归因收入（美元，M） | AI 技术栈重要性 | 时间紧急性 | 当前供需紧张度 | 垄断能力 | 溢价能力 | 核心判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| **Low-NA EUV NXE** | **$7.69bn；总收入 37.1%** | **+19.9%** | **$5.0—6.5bn** | **5** | **5** | **5** | **5** | **5** | 2026—2027 AI 前道最关键设备；2027 槽位接近售罄，唯一 EUV 供应商 |
+| **High-NA EUV EXE** | **$1.36bn；6.6%** | **+334.2%** | **$0.95—1.36bn** | 4 | 3 | 3 | **5** | 4 | 量产资格跨越大于当期收入；广泛采用仍取决于 uptime、mask/resist 和经济性 |
+| **ArFi immersion** | **$3.82bn；18.4%** | **-22.5%** | **$1.5—2.5bn** | 4 | **5** | 4 | 4 | 4 | EUV 不能消除非关键层；先进 Logic/DRAM 扩产必需，2027 同样扩产 30% |
+| **IBM 服务/生产率升级/软件** | **$6.02bn；29.0%** | **+28.1%** | **$1.8—2.7bn** | **5** | **5** | 4 | **5** | **5** | 现有 fab 提产最快路径；60%+业务毛利率，装机与利用率双驱动 |
+| **M&I/holistic lithography** | **$0.42bn；2.0%** | **+12.8%** | **$0.17—0.27bn** | 4 | 4 | 3 | 3 | 3 | KLA/Applied 等竞争强，但 scanner 数据闭环给 ASML 特殊优势；小基数潜力大 |
+| **XT:260/3D integration** | i-line 全部 **$0.13bn**；XT 子集未披露，估 **<$0.03bn** | 母类 -28.4% | **<$0.02bn** | 3 | 3 | 2 | 2 | 2 | 先进封装小期权；必须等重复订单和客户 qualification，不能把全部 i-line 算 XT |
+
+### 4.1 为什么 Low-NA 比 High-NA 更紧急
+
+High-NA 的分辨率更先进，但 2026—2027 的客户生产计划已经围绕成熟的 Low-NA fleet、更多 EUV 层和 ArFi 非关键层设计。ASML 披露，一次 High-NA 曝光可替代约 3—4 次 Low-NA 曝光，某些相关工序可能减少约 10 倍；然而客户只有在 High-NA uptime、mask、resist、overlay、field size 和产品良率都达到经济门槛时才会切换。对正在扩张 N3/N2、HBM4/1c/1δ DRAM 的客户而言，**先买能在 2026—2027 量产的 NXE，比等待完整 High-NA 生态更紧急**。
+
+本地行业资料给出的路线与 ASML 最新财报一致：2026 最确定的是更多 Low-NA 层、复杂刻蚀/沉积和更高过程控制强度；High-NA 是 2027—2028 弹性。[项目内 AI 前道设备路线](../../行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-07-10.md) 2026Q2 的 Intel 里程碑把 High-NA 从“纯验证”推进到“少数产品层有限 HVM/生产学习”，但并未推翻上述收入顺序。
+
+### 4.2 Memory 为什么从周期变量变成结构增量
+
+HBM4/4E 不只增加后段堆叠，也提高前道 DRAM 核心 die 的面积、EUV 层数、TSV 前处理和良率要求。项目内 HBM 研究显示，HBM 同 bit 消耗的 DRAM 晶圆资源通常超过普通 DDR5 两倍；2026 HBM4 是商业出货元年，2027 HBM4E/更多 1c/1γ 节点又继续提高先进 DRAM 工艺强度。[项目内 HBM 研究](../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-07-10.md) 这解释了 ASML 2026 年 Memory 系统收入预计 >75%增长、SK hynix 直接锁定到 2027 年的巨额 EUV 订单，以及 ArFi 也同步扩产。
+
+## 5. 一年后产品收入和竞争力：基准、乐观、极度乐观
+
+### 5.1 预测口径与关键假设
+
+- 预测窗口：**NTM 2026-07-01 至 2027-06-30**；增长率相对本文 2026 全年产品收入估算，而非相对低基数的 2026H1 简单年化。
+- 2026E 产品锚（欧元）：Low-NA €15.0bn、High-NA €2.2bn、ArFi €10.4bn、IBM €10.9bn、M&I €1.0bn、XT:260 约 €0.08bn。
+- 评分码顺序为 **I/U/S/M/P＝AI 重要性/时间紧急性/供需紧张度/垄断力/溢价力**，均为 1—5。
+- 三情景不是概率相等：本文主观权重为基准 55%、乐观 35%、极度乐观 10%；X 是供应、需求、验收和定价同时顺利的压力测试上界。
+
+### 5.2 每一关键产品的三情景
+
+| 产品 | 情景 | NTM 收入贡献（美元） | 较 2026E 增速 | 产品 GM（M） | I/U/S/M/P | 成立条件 |
+|---|---|---:|---:|---:|---|---|
+| **Low-NA NXE** | 基准 | **$19.49bn** | **+13%** | 53%—57% | **5/5/5/5/5** | 2027 约 85 台产能按计划、客户验收正常、ASP 随配置温和提升 |
+|  | 乐观 | **$22.36bn** | **+30%** | 56%—60% | 5/5/5/5/5 | 约 95 台等价产能、3800E 升级更多、TSMC/Memory 拉货前置 |
+|  | 极度乐观 | **$24.65bn** | **+43%** | 58%—62% | 5/5/5/5/5 | 110 台潜在 2028 产能部分前移、接受率近满、价值定价增强 |
+| **High-NA EXE** | 基准 | **$2.98bn** | **+18%** | 48%—54% | 4/3/3/5/4 | Intel 少数层持续；其他客户 product-wafer qualification，不假设广泛 HVM |
+|  | 乐观 | **$4.36bn** | **+73%** | 52%—58% | 5/4/4/5/5 | 约 10 台价值量；至少第二家 Logic/DRAM 客户进入有限量产 |
+|  | 极度乐观 | **$5.73bn** | **+127%** | 56%—62% | 5/5/5/5/5 | 约 14 台；多客户少数层 HVM、availability 接近成熟平台、mask/resist 瓶颈显著改善 |
+| **ArFi immersion** | 基准 | **$13.19bn** | **+11%** | 48%—54% | 4/5/4/4/4 | 2027 约 169 台能力，先进非关键层和 DRAM 多重图形化兑现 |
+|  | 乐观 | **$15.25bn** | **+28%** | 52%—57% | 4/5/5/4/4 | 180 台等价能力、先进节点 mix 上升、overlay/throughput 配置提升 |
+|  | 极度乐观 | **$17.20bn** | **+44%** | 55%—60% | 4/5/5/4/5 | 200 台等价能力、DUV 供应极紧、客户接受约 5%—10%价值/通胀定价 |
+| **IBM/升级/软件** | 基准 | **$15.14bn** | **+21%** | 60%—65% | 5/5/4/5/5 | 装机基数和利用率上升，升级保持强需求，未假设 1kW 商业化 |
+|  | 乐观 | **$17.77bn** | **+42%** | 63%—68% | 5/5/5/5/5 | 3800E throughput、光源/overlay、软件 attach 加速，部件 mix 高 |
+|  | 极度乐观 | **$20.07bn** | **+61%** | 66%—72% | 5/5/5/5/5 | 客户为避免新机等待最大化升级，服务能力和高毛利部件无约束 |
+| **M&I/holistic** | 基准 | **$1.38bn** | **+20%** | 48%—55% | 4/4/3/3/3 | 现有 YieldStar/HMI 随层数增长，YS550/eScan2200 主要仍在导入 |
+|  | 乐观 | **$1.83bn** | **+60%** | 52%—60% | 5/5/4/4/4 | 多束 e-beam/新 YieldStar 获多客户重复订单，软件闭环 attach 提升 |
+|  | 极度乐观 | **$2.52bn** | **+120%** | 57%—65% | 5/5/5/4/4 | High-NA/2nm/HBM 缺陷控制强度大增，ASML 从 scanner 数据优势扩大份额 |
+| **XT:260** | 基准 | **$0.11bn** | **+25%** | 30%—45% | 3/3/2/2/2 | 首批客户完成 qualification，但仍是小批量 |
+|  | 乐观 | **$0.29bn** | **+212%** | 40%—52% | 4/4/3/3/3 | 两至三家 advanced packaging 客户复制、厚晶圆良率与 throughput 达标 |
+|  | 极度乐观 | **$0.57bn** | **+525%** | 48%—58% | 4/5/4/3/4 | AI 3D integration 产线批量采购；ASML matched-control 优势获得溢价 |
+
+### 5.3 公司合计的三情景
+
+| NTM 情景 | 公司收入 | 相对 TTM €35.33bn | GM | 供给/订单假设 | 判断 |
+|---|---:|---:|---:|---|---|
+| **基准** | **€48—51bn / $55—58bn** | **+36%—44%** | **54%—56%** | Low-NA 约 85 台；ArFi +30%；订单取消/经济流失 1%—3%；按期验收 85%—92% | 最可能；供给限制仍在，但高 backlog 保证下限 |
+| **乐观** | **€54—59bn / $62—68bn** | **+53%—67%** | **56%—58%** | Low-NA 约 95 台等价能力；服务/升级和 Memory mix 高；取消 0%—1.5%；验收 92%—96% | 需要供应链扩产快于官方最低计划 |
+| **极度乐观** | **€62—68bn / $71—78bn** | **+75%—93%** | **57%—60%** | 部分 2028 产能前移；High-NA 多客户采用；无出口/安装大延误；验收 96%—99% | 压力测试，不应直接作为基准估值 |
+
+> 公司合计还包含未在重点产品表单列的成熟 DUV、二手机和其他小项；重点产品之间也存在升级、软件和服务接口交叉。因此，不能把六行重点产品机械相加后要求与公司总收入区间完全相等。
+
+概率加权中值约 **€53bn/$61bn**。该模型比 ASML 尚未更新的 2030 长期框架激进，因此必须在 2027-06-10 Capital Markets Day 用公司新长期目标复核；若公司届时仅维持旧 2030 上限而未上修，则乐观/X 情景应明显下调。
+
+## 6. BOM、真实单位内容量与价格传导链
+
+### 6.1 先纠正口径：服务器里没有一块“ASML 零件”
+
+ASML 系统安装在晶圆厂，**每台服务器、rack、GPU、optical port 的实体 ASML BOM 都是 0**。下面的“内容量”是将晶圆厂为生产 AI 芯片购置/维护 ASML 工具的资本开支和服务费，按工具吞吐、曝光层数、良率、使用寿命和 GPU 数量摊销后的**隐含制造成本**。这比把数亿美元扫描机价格直接除以一批 GPU 更真实，但仍是区间模型，不能当作客户发票。
+
+### 6.2 ASML 设备 BOM 拆分
+
+ASML 不公开型号级采购成本，以下是依据系统架构、核心供应商关系和 H1 ASP 的归一化估算。区间存在接口交叉，取中点归一化约 100%，不可把所有上限相加。
+
+| 产品 | 官方/实绩 ASP 锚 | 核心 BOM（成本占比，M） | 最难扩的模块 | 定价传导 |
+|---|---:|---|---|---|
+| **Low-NA NXE** | H1 **€231.3m/$265.2m** | ZEISS 投影/照明/collector 25%—30%；Cymer/TRUMPF 光源 20%—25%；wafer/reticle stage 与 mechatronics 15%—20%；真空/热控/handling/电子 15%—20%；软件、系统集成、安装 15%—20% | 超精密反射光学、EUV source、双工件台、洁净装配和现场工程 | 生产率/overlay 增益→客户每片成本下降→ASML 可按价值和通胀调整 ASP |
+| **High-NA EXE** | H1 **€396.3m/$454.4m** | 更大/更重 ZEISS anamorphic optics 30%—35%；光源 15%—20%；高速 stage/mechatronics 20%—25%；真空/热/污染控制 10%—15%；软件/集成/安装 15%—20% | 镜面原子级精度、anamorphic field、stage 加速度、mask/resist/量测共同资格 | 单次曝光替代多重图形化的总拥有成本；早期客户会用量产学习换取价格谈判 |
+| **ArFi NXT** | H1 **€83.3m/$95.5m** | 光学＋excimer laser 30%—35%；stage 25%—30%；浸没液/wafer handling 10%—15%；传感器/电子 10%—15%；软件/集成 15%—20% | overlay、matched-machine、stage throughput、浸没污染控制 | 客户用同平台复制 recipe；即使 Nikon 价格较低，切换的良率/停机成本可更高 |
+| **IBM/升级** | H1 收入 **€5.249bn** | 备件/升级模块 45%—55%；现场人工与物流 20%—30%；软件/数据 15%—25%；保修/overhead 5%—10% | 全球 24/7 现场团队、专用部件、设备历史数据 | 停机损失和新增 wafer output 决定价值；通常比新机更快通过客户 ROI 审批 |
+| **M&I** | H1 均价约 **€3.5m/$4.0m**，产品差异很大 | 光学/e-beam column 25%—35%；精密 stage 20%—25%；detector/electronics 15%—20%；compute/software 20%—30%；集成 10%—15% | 多束电子光学、吞吐/分辨率平衡、缺陷算法和 scanner 数据闭环 | 良率损失价值→检测覆盖率/软件 attach→按性能定价；但 KLA 等限制溢价 |
+| **XT:260** | 未披露；i-line H1 平均仅 €5.7m，本文估 XT 明显高于母类均价 | 光学/光源 20%—30%；stage/厚晶圆 handling 25%—35%；alignment/metrology 10%—15%；电子/软件 15%—20%；集成 10%—20% | 1.7mm 厚晶圆搬运、overlay、客户封装 recipe | 初期为资格/复制定价，只有多客户重复订单后才具规模溢价 |
+
+ZEISS 光学、TRUMPF 激光放大器、ASML 自有 Cymer source 以及精密机电/真空链条共同决定 EUV 交期。任何一个模块扩产慢于整机计划，都会让名义 85/110 台能力无法成为收入。ASML 对已在 backlog 的系统通常已有合同金额并可做通胀调整；2026-07 渠道称公司讨论把 Low-NA 从纯 productivity-based 定价扩展到 value-based 定价，并可能提高 DUV 价格，而台积电存在抵触。该消息来自媒体/供应链，本文仅在 O/X 情景使用，未放进 B 情景。[价格讨论的渠道报道](https://www.tomshardware.com/tech-industry/semiconductors/asml-looks-to-increase-prices-of-its-low-na-euv-tools-beyond-existing-productivity-based-model-company-wants-to-capture-the-value-of-all-the-advantages-its-tools-offer-not-just-wafer-throughput-improvements)
+
+### 6.3 每 GPU / rack / MW / optical port 的经济内容量
+
+模型假设：300mm 可用面积约 65,000—70,000mm²；大型 AI compute package 对应每片 **30—80 个合格 GPU/加速器当量**；Low-NA 12—25 个曝光层、230 wph、80%—90% availability、75%—90% utilization；High-NA 2—6 个适用层、175 wph、75%—85% availability、65%—85% utilization；ArFi 20—50 层、约 295 wph；扫描机折旧/经济寿命 6—7 年。一个 72-GPU rack、每 MW 600—900 个 GPU、每 GPU 4—8 个高速 optical/fabric port。实际不同芯片、die size、yield、层数和机架功率差异很大。
+
+以 Low-NA 为例：
+
+`年晶圆能力 = 230 wph × 8,760 × availability × utilization ÷ EUV层数 ≈ 4.8万—13.6万片`  
+`年GPU当量 = 年晶圆 × 30—80 ≈ 145万—1,088万颗`  
+`单GPU设备折旧内容 = $265m ÷ 年GPU当量 ÷ 6年 ≈ $4—31`
+
+| 产品/业务 | 单 GPU 隐含内容 | 72-GPU rack | 每 MW（600—900 GPU） | 每 optical port（4—8/GPU） | 解释 |
+|---|---:|---:|---:|---:|---|
+| **Low-NA NXE** | **$4—31** | **$0.29k—2.23k** | **$2.4k—27.9k** | **$0.5—7.8** | 已把 12—25 个 EUV 层、吞吐和 6 年寿命计入 |
+| **High-NA EXE** | **$2—20** | $0.14k—1.44k | $1.2k—18.0k | $0.25—5.0 | 只适用于采用 High-NA 的少数层；其曝光会替代部分 Low-NA 多重曝光，不能满额叠加 |
+| **ArFi immersion** | **$2—12** | $0.14k—0.86k | $1.2k—10.8k | $0.25—3.0 | 非关键层多、工具寿命更长；matched fleet/overlay 决定真实数量 |
+| **IBM/升级/软件** | **$4—18** | $0.29k—1.30k | $2.4k—16.2k | $0.5—4.5 | 按相关 litho fleet 年服务/升级支出摊销，非折旧 |
+| **M&I** | **$1—6** | $0.07k—0.43k | $0.6k—5.4k | $0.13—1.5 | 只计 ASML 自有量测/检查，不含 KLA/Applied 等其他工具 |
+| **XT:260** | **$0.2—2** | $0.014k—0.144k | $0.12k—1.8k | $0.03—0.5 | 只适用于使用该平台的先进封装路径，当前多数 GPU 未采用 |
+
+**不重复计算后的总量判断：**当前主流 Low-NA AI GPU 路线，ASML 隐含制造内容约 **$11—69/GPU、$0.8k—5.0k/72-GPU rack、$7k—62k/MW、$1.4—17/optical port**。未来 High-NA 路线会新增 EXE 内容、同时减少部分 Low-NA 多重曝光，因此合理总量约 **$10—80/GPU**，而不是把上表所有最大值相加。相对于数万美元 GPU 和数百万美元 rack，金额看似小；但没有曝光能力就无法生产，说明 ASML 的价值来自**时间/供给瓶颈**而非下游 BOM 占比。
+
+### 6.4 价格传导链
+
+| 环节 | 价格/价值如何传导 | 2026—2027 观察点 |
+|---|---|---|
+| ZEISS/TRUMPF/精密机电/真空供应商 → ASML | 长周期零件、工资和材料涨价进入整机成本；ASML 用配置、生产率和合同通胀条款转嫁 | 供应商交期、yield、ASML 系统 GM 是否随出货增长而下降 |
+| ASML → TSMC/Samsung/Intel/SK hynix/Micron | 以 ASP、升级费、软件/服务费收费；客户为槽位预付款，形成合同负债 | Low-NA/ArFi 2027 槽位、价格调整、客户是否延后验收 |
+| 晶圆厂 → NVIDIA/AMD/云 ASIC/存储客户 | 通过先进节点 wafer price、长期容量协议、HBM 合同价格回收设备 CapEx | TSMC advanced-node GM、HBM4 价格、客户预付款/长约 |
+| 芯片 → rack/云服务 | GPU/ASIC、HBM、封装成本进入加速卡/rack ASP，再通过云租金或 token 成本传导 | 若 AI ROI 下降，首先压缩芯片/云毛利，随后反向影响晶圆订单 |
+
+台积电 Q2 2026 明确说上调资本开支的一部分来自工具通胀，但最主要原因仍是客户需求继续提高；这同时验证了 ASML 的价格传导能力和客户仍会反抗无上限提价。[台积电 Q2 电话会](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/547d1696765e05ce3adb81c108ce1c8c1682b80c/TSMC%202Q26%20Transcript.pdf)
+
+## 7. 当前与一年后的产能、供应链采用和认证阶段
+
+### 7.1 当前产能能力（美元计）
+
+“产能美元值”＝可交付系统/服务能力×当前 ASP 的价格等价，不等于同年已确认收入。High-NA 台数和 XT 金额未披露，明确标 M。
+
+| 产品 | 2026 当前产能能力 | 美元价格等价值 | 当前采用程度 | 当前认证阶段 |
+|---|---:|---:|---|---|
+| **Low-NA NXE** | 约 **65 台** | **约 $17.2bn** | TSMC/Samsung/Intel 及先进 DRAM 广泛 HVM；EUV 整机唯一供应商 | **5/5：广泛 HVM**；3800E 230wph 升级中 |
+| **High-NA EXE** | 估 **5—7 台/年等价**；H1 已确认 3 台 | **约 $2.3—3.2bn** | Intel 少数 18A 层生产；imec 研发平台；其他 Logic/DRAM 产品晶圆测试 | **3—4/5：双认证/有限 HVM**；广泛 HVM 尚未完成 |
+| **ArFi immersion** | 约 **130 台** | **约 $12.4bn** | 全部主流客户成熟量产；先进与成熟节点均采用 | **5/5：广泛 HVM**；新 NXT 配置持续 qualification |
+| **IBM/升级** | FY2026E €10.9bn 服务能力 | **约 $12.5bn** | 活跃装机广泛覆盖；升级渗透取决于型号/客户 | **5/5：成熟服务**；每个升级包仍需客户工艺签核 |
+| **M&I** | FY2026E €0.9—1.1bn | **约 $1.0—1.3bn** | YieldStar/HMI 已在关键客户量产；整体份额低于 KLA | 现有产品 **4—5/5**；YS550/eScan2200 **2—3/5** |
+| **XT:260** | 估 **<$0.15bn** | **<$0.15bn** | 2025 首客户出货，尚无公开多客户批量数字 | **2—3/5：客户 qualification/早期复制** |
+
+### 7.2 一年后产能和认证：三情景
+
+| 产品 | 基准：美元产能/采用/认证 | 乐观：美元产能/采用/认证 | 极度乐观：美元产能/采用/认证 |
+|---|---|---|---|
+| **Low-NA NXE** | **$22.9bn**；约 85 台；2027 基本订满；3800F 首批，认证 5/5 | **$26.7bn**；约 95 台等价；更多供应商良率/升级；认证 5/5 | **$32.2bn**；约 110 台潜能部分提前；客户接受 2028 配置；认证 5/5 |
+| **High-NA EXE** | **$3.25bn**；约 7 台；Intel 1—3 层、其他客户产品资格；行业认证 3—4/5 | **$4.82bn**；约 10 台；第二家客户有限 HVM；认证 4/5 | **$7.06bn**；约 14 台；多客户 2—6 层量产、availability 接近成熟 EUV；认证 4—5/5 |
+| **ArFi** | **$16.47bn**；约 169 台；NXT matched-fleet 广泛采用；认证 5/5 | **$18.58bn**；约 180 台；高配置 mix、DRAM 重复订单；认证 5/5 | **$21.79bn**；约 200 台；DUV 全链无部件瓶颈；认证 5/5 |
+| **IBM/升级** | **$15.14bn**；3800E/overlay/software attach 扩大；认证 5/5 | **$17.77bn**；高毛利升级包成为客户提产首选；认证 5/5 | **$20.07bn**；更多光源/throughput 升级前置；不假设 1kW 量产；认证 5/5 |
+| **M&I** | **$1.38bn**；新产品单客户/少量客户验证；认证 3—4/5 | **$1.83bn**；YS550/eScan2200 多客户复制；认证 4/5 | **$2.52bn**；High-NA/2nm closed-loop 标配化；认证 4—5/5 |
+| **XT:260** | **$0.11bn**；首客户重复订单；认证 3/5 | **$0.34bn 产能**、约 $0.29bn 销售；2—3 客户；认证 3—4/5 | **$0.69bn 产能**、约 $0.57bn 销售；advanced packaging 批量；认证 4/5 |
+
+> Low-NA 官方口径为 2027 较 2026 增约 30%；极度乐观的 110 台是公司正在研究的 2028 再增约 30%能力的前移压力测试。ArFi 同理。ASP 假设分别随配置/通胀温和上升，绝非公司公开价格表。
+
+### 7.3 关键认证的具体状态
+
+- **EXE:5200B / Intel 18A：**若干产品层已在 Oregon 与 NXE 双重认证，High-NA 产品良率匹配 NXE，并已有一部分 Panther Lake/Core Ultra Series 3 发货；这是 ASML 官方所称“first high-volume Logic product”。但未披露产品数量、层数和 EXE uptime，不能推成整个 18A 已改用 High-NA。[官方里程碑](https://www.nasdaq.com/press-release/high-na-euv-reaches-new-readiness-milestone-first-high-volume-logic-product-2026-07)
+- **imec EXE:5200：**2026-03 已运抵 Leuven cleanroom，与 patterning、metrology、材料生态直接整合，为 sub-2nm Logic/高密度 Memory 客户提供共同验证入口。[imec 装机公告](https://www.imec-int.com/en/press/imec-receives-worlds-most-advanced-high-na-euv-system)
+- **NXE:3800F：**目标 260 wph，2027 首批、2028 full-volume；当前应视为客户预资格/首发准备，不视为成熟收入主力。
+- **YS550/eScan2200：**公司 H1 研发项目明确列名，但未披露正式多客户 HVM；基准只给 2—3 级认证。
+- **XT:260：**首台发货只证明客户接受测试，不证明 Process of Record。真正跨越点是同一客户重复订单、第二/第三客户、厚晶圆良率和 24/7 uptime。
+
+行业论坛对 High-NA 官方表述更谨慎：SemiWiki 参与者把 Intel 18A 应用解读为量产环境学习/对照组，认为未来节点可能从 2—3 层逐步增至 5—10 层；这些是 D 级观点，不用于收入硬数，但提醒投资者区分“有产品发货”和“成为主工艺”。[SemiWiki 讨论](https://semiwiki.com/forum/threads/high-na-euv-reaches-new-readiness-milestone-with-first-high-volume-logic-product.25520/)
+
+## 8. 订单积压、供给与未来一年业务增速
+
+### 8.1 过去半年最重要的报告、会议和渠道信号
+
+| 日期 | 来源 | 新信息 | 对订单/收入的含义 |
+|---|---|---|---|
+| 2026-01-28 | ASML FY2025/Q4 | Q4 bookings €13.158bn；年末 backlog €38.797bn；2026 初始指引仅 €34—39bn | 形成 backlog 基线；当时尚未完全反映 Q1/Q2 AI 加速 |
+| 2026-02-24—26 | SPIE Advanced Lithography + Patterning | High-NA mask/resist/defect 仍是研发核心；ASML 展示 1,000W source 路线 | 技术上限提高，但 1kW 商业化较远；近端仍靠 3800E/F |
+| 2026-03-18 | imec | EXE:5200 进入 Leuven cleanroom | 多客户生态资格从共享 lab 进入完整 cleanroom 环境 |
+| 2026-03-24 | SK hynix 监管披露/Reuters | **$7.97bn** EUV 采购，到 2027 年末 | 公开客户订单中最大之一，直接验证 DRAM/HBM 多年拉货 |
+| 2026-04-15 | ASML Q1 | 订单很强；Low-NA 2026 ≥60、2027 ≥80；High-NA >50 万片 | 供给紧张开始显性化；停止披露 bookings 增加外部模型难度 |
+| 2026-06-16—20 | VLSI Symposium 2026 | Intel 18A-P risk production；A16/背面供电、4F²/3D DRAM 等路线继续提升 litho/量测强度 | 2027—2029 设备强度仍上升；远期技术不应提前全算收入 |
+| 2026-07-15 | ASML Q2 | FY2026 指引 €43—45bn；65 Low-NA；2027 各扩产 30%；2028 再研究 30% | 需求已穿透 2027，业务上限由供应链/验收决定 |
+| 2026-07-16 | TSMC Q2 | CapEx 提至 $60—64bn，70%—80%先进制程；N2 已占 wafer revenue 3%，HPC 66% | 最大客户先进工具预算上修；N2/N3/AI 同时拉动 EUV/ArFi |
+| 2026-07-17 | 供应链媒体 | ASML 讨论 Low-NA value pricing/DUV 提价，TSMC 据称抵触 | 2028 后 ASP 有上行期权；现有 backlog 价格大多已锁定，近端不能过度外推 |
+
+### 8.2 客户项目、订单金额、交付窗口和取消风险
+
+| 客户/项目 | 可验证需求 | 对 ASML 产品的映射 | 交付窗口 | 取消/推迟风险 |
+|---|---|---|---|---|
+| **TSMC N3/N2/N2P/A16、全球 3nm/2nm fab** | 2026 CapEx **$60—64bn**；70%—80%先进制程；3nm/5nm/2nm 合计 Q2 wafer revenue 66% | Low-NA NXE、ArFi NXT、YieldStar/HMI、IBM；A14/未来节点形成 High-NA 选择权 | 2026H2—2028 | 需求取消低；fab/电力、海外厂 ramp、设备安装和高 ASP 争议可推迟 |
+| **SK hynix HBM/先进 DRAM** | ASML EUV 订单 **$7.97bn**、截至 2027 年末；行业估 30+台但未官宣台数 | Low-NA NXE＋ArFi＋服务；未来先进 DRAM High-NA 资格 | 2026—2027 | HBM/DRAM 长约和缺货使取消低；客户厂务/良率决定验收 |
+| **Micron 1γ/1δ、HBM4/4E** | FY26 CapEx 约 **$27bn**；多年 ASML EUV agreement；FY27 单季 CapEx 预计高于 FY26Q4 约 $10bn | NXE/ArFi/IBM，后续 High-NA DRAM 层；M&I | 2026H2—2028 | 内存周期风险仍在，但客户长约/预付款降低短期取消 |
+| **Samsung HBM/DRAM＋Foundry 2nm** | ASML 指引中的 Memory >75%增长与韩国 H1 收入 €7.09bn；无单笔公开 ASML 金额 | NXE/ArFi/IBM；Foundry 2nm 和 DRAM 同时竞争 EUV 槽位 | 2026—2028 | HBM qualification、foundry 客户/良率和内部 CapEx 分配 |
+| **Intel 18A/18A-P/14A** | 18A HVM、High-NA 少数层双认证；18A-P risk production | 当前 Low-NA 主体＋少量 EXE；14A 更可能扩大 High-NA | 2026—2028 | Intel 产品量、外部 foundry 客户与工厂利用率；High-NA 层数可低于预期 |
+| **TeraFab/其他新客户** | ASML CFO 表示 2027/2028 扩产计划已考虑潜在 TeraFab 需求 | 可能是 Low-NA/ArFi 新需求 | 2027—2028+ | 项目融资、工厂建设、节点选择均未充分披露；不计基准订单 [Reuters](https://live.euronext.com/en/financial-news/asml-financial-guidance-includes-terafab-plans-cfo-says) |
+
+### 8.3 从 backlog 与供给反推未来一年增速
+
+模型公式：
+
+`期末backlog = 期初backlog + 净订单 ± 价格/汇率调整 − 已确认系统收入`  
+`未来收入 = min（可交付产能，backlog中可排产金额）×按期安装率×客户验收率 + IBM/升级收入`
+
+| 情景 | 订单/供给假设 | 取消/重排 | 安装/验收 | 未来一年收入增速 | 关键产品增速 |
+|---|---|---:|---:|---:|---|
+| **基准** | 2026-06 backlog €44—52bn（M）；Low-NA 85 台、ArFi 169 台；新增订单保持 B2B 1.1—1.4x | 经济取消 1%—3%；许可/厂务延期另 3%—7%时点影响 | 85%—92% | **公司 +36%—44%（相对 TTM）** | NXE +13%、EXE +18%、ArFi +11%、IBM +21% |
+| **乐观** | backlog €50bn+；约 95 Low-NA/180 ArFi 等价；Memory/TSMC 前置拉货；B2B 1.3—1.7x | 0%—1.5%；延期 1%—4% | 92%—96% | **+53%—67%** | NXE +30%、EXE +73%、ArFi +28%、IBM +42% |
+| **极度乐观** | 2028 产能部分前移；110 Low-NA/200 ArFi 潜能；High-NA 14 台；B2B >1.5x | 0%—1%；几乎无许可/厂务延误 | 96%—99% | **+75%—93%** | NXE +43%、EXE +127%、ArFi +44%、IBM +61% |
+
+基准增速看似很高，但 FY2026 中值本身已比 2025 增长约 35%；NTM 再叠加 2027 +30%产能的一部分，数学上可达到约 €50bn。更关键的是**收入分母的时点**：TTM 仍包含较弱的 2025Q3，而 NTM 包含强势的 2026H2/2027H1。因此不应把 +40%简单当作稳态 CAGR。
+
+### 8.4 三个最重要反证
+
+1. **ASML backlog 其实没有显著上升。**若下一次公司重新给出数据低于本文 €44bn 下限，说明 H1 订单模型过高，或价格/取消调整大于预期。
+2. **客户 CapEx 很强但设备安装不动。**库存继续上升、应收不回落、现场验收延长，说明收入被 fab readiness/供应链而非订单卡住。
+3. **2027 Low-NA“接近订满”转化率低。**若客户把槽位推迟到 2028、ASML 只能靠高毛利升级填收入，系统收入情景需要下修，尽管 IBM 可能暂时缓冲。
+
+## 9. 竞争格局、新技术主流性、替代方案与客户切换成本
+
+### 9.1 各关键产品竞争图
+
+| 产品/业务 | 直接竞争对手 | 替代技术/方案 | ASML 地位 | 是否未来主流 | 客户切换成本 |
+|---|---|---|---|---|---|
+| **Low-NA EUV** | **无量产整机直接对手** | ArFi 多重图形化、e-beam direct write、未来 nanoimprint/其他新型光刻 | EUV 约 100%份额；ZEISS/Cymer/TRUMPF 独特生态 | **2026—2028 明确主流**；即使 High-NA 导入，Low-NA 仍大量存在 | **极高**：无同级替代；mask/recipe/overlay/field service 全链锁定 |
+| **High-NA EUV** | 无直接整机对手 | 更多 Low-NA multi-patterning；延后节点；设计技术协同 | 唯一 0.55NA 商业平台 | **长期大概率主流，近两年是少数关键层** | **极高供应商锁定，采用切换成本也高**：客户需重做 mask、resist、OPC、工艺和经济性 |
+| **ArFi/DUV** | Nikon、Canon；中国 SMEE 在较低节点追赶 | EUV 替代部分关键层；Canon nanoimprint；成熟节点延寿 | 先进 immersion/overlay/throughput 领先，非绝对垄断 | **绝对曝光量长期仍主流**，收入增速低于 EUV但不消失 | **高**：matched fleet、recipe、overlay、工程师/备件；成熟层切换成本低于先进层 |
+| **M&I/过程控制** | KLA、Applied Materials、Hitachi High-Tech、Lasertec、Nova、Onto | 客户自研算法、混合量测、其他 optical/e-beam 工具 | 有 scanner/计算光刻数据闭环优势，但整体过程控制非龙头 | High-NA/GAA/DRAM 越复杂越主流；份额仍需争夺 | **中高**：数据/recipe 粘性强，但可多供应商并用 |
+| **Computational/holistic software** | Synopsys、Siemens EDA、KLA、客户内部软件 | 单点 OPC/APC/FDC、独立 EDA/良率平台 | 与 scanner/overlay/IBM 打包优势明显 | 软件 attach 将增长，但不会垄断全部 EDA/yield stack | **高**：模型、scanner fingerprint、历史数据和 signoff 流程迁移成本 |
+| **XT:260/先进封装光刻** | Canon、Nikon、SUSS MicroTec、EV Group、USHIO 等不同子类 | stepper、mask aligner、直接成像、panel/wafer 级替代路线 | 新进入/小份额，靠高吞吐和厚晶圆能力挑战 | 3D integration 会增长；XT 是否成为主流尚未验证 | **中**：资格很重要，但客户替代选项多于 EUV |
+| **IBM/现场服务** | 第三方备件/维修仅有限范围；客户内部团队 | 延后升级、买新机、备份工具 | 原厂几乎不可替代，尤其 EUV | 随装机和利用率结构增长 | **极高**：安全、软件、专用部件、保修和 uptime 责任 |
+
+### 9.2 替代方案为何短期难以动摇 EUV
+
+1. **ArFi 多重图形化：**技术成熟，但需要更多 mask、曝光、刻蚀、清洗、overlay 控制和 cycle time。它是出口受限地区/少数层的可行替代，却不是先进节点大规模摆脱 EUV 的低成本方案。
+2. **Canon nanoimprint：**理论上可一次复制高分辨率图形、设备更便宜，但 template defect、颗粒、overlay、throughput、inspection 和大规模 Logic 良率仍需证明。更可能先进入 NAND/特殊层，而非一年内替代先进 Logic EUV。
+3. **e-beam direct write/多束电子束：**分辨率高、无 mask，但 serial throughput 远低于 HVM scanner；更适合 mask writing、inspection 或小批量。
+4. **X-ray、helium atom beam、自由电子激光等：**会议/初创结果可证明物理可行，距离 300mm HVM 的 source、optics、resist、mask、stage、污染控制和全球服务仍有多年工程鸿沟。
+5. **中国本土光刻：**DUV 追赶可能在部分节点/成熟层降低 ASML 份额；但 EUV 的光源、反射光学、精密运动和生态协同没有可验证的量产同级整机。出口限制可能加速长期替代投资，却无法在 12—24 个月内复制 ASML 的整体能力。
+
+### 9.3 High-NA 会不会成为主流
+
+**技术方向大概率正确，商业时间表仍可能右移。**正面证据包括：0.55NA 实际分辨率/contrast、超过 50 万片平台处理量、Intel 产品层双认证、imec EXE:5200 装机、客户 1.4nm/先进 DRAM 路线需求。负面因素包括：
+
+- High-NA 的 anamorphic field 较小，对大 die/stitching 带来新约束；mask、pellicle、resist、actinic inspection 和 OPC 必须同步成熟。
+- 单机约 $450m，若 Low-NA 230/260 wph 加多重图形化仍更便宜，客户会延后 High-NA 层数。
+- 当前 availability >80%虽有进步，但成熟 HVM 通常要求更高稳定性；一台机器停机对客户产线影响巨大。
+- Intel 少数层成功是学习平台，TSMC/Samsung/Memory 客户何时公开量产层才是第二个更强验证。
+
+因此本文把 High-NA 定义为：**2026 技术/资格拐点、2027 有限 HVM 和收入加速、2028—2029 更可能成为多客户主流关键层**。若 2027 仍只有 Intel 少量层，High-NA 收入可低于基准，但 Low-NA/ArFi 可能因多重图形化被反向延寿，ASML 公司总收入受损小于 EXE 单产品受损。
+
+### 9.4 主要风险及可量化预警
+
+| 风险 | 传导路径 | 早期指标 | 触发条件/影响 |
+|---|---|---|---|
+| **估值压缩** | 55.7x PE/16.7x PS 对利率、AI 风险偏好、单季 miss 极敏感 | forward PE、订单/收入 surprise、GM | 即使 EPS 上升，PE 从 55x 降到 35x 也会显著压股价 |
+| **EUV/ArFi 供应链扩产失败** | ZEISS 光学、source、stage、洁净集成或工程师卡住 | 计划台数、系统库存、安装周期、供应商 CapEx | 2027 Low-NA <80 台或 ArFi <155 台，基准收入下修 |
+| **客户 fab/验收延迟** | 发货不能及时确认收入，应收/库存先升 | 库存、应收、OCF、客户 fab ready | 连续两季库存/应收增速高于收入且 FCF 不恢复 |
+| **AI 资本开支/Memory 周期反转** | TSMC/DRAM 厂取消或推迟槽位 | TSMC CapEx、HBM 合同、DRAM 价格/利用率 | 大客户 CapEx 下修 >10%且 ASML 系统订单弱于交付 |
+| **High-NA 采用延迟** | EXE 收入/毛利低，研发摊销持续 | 客户量产层、availability、出货台数、mask/resist defect | 2027 无第二家有限 HVM客户；收入窗口右移到 2029 |
+| **出口管制/中国服务限制** | 中国约 20%收入的 DUV/服务受影响，地区 mix 改变 | 荷兰/BIS 许可、服务规则、中国收入 | 新规则覆盖更多 immersion 或限制已装机维保 |
+| **客户/地区集中** | 台湾、韩国、中国 H1 合计约 83%收入 | 地区收入、单客户 CapEx、地缘事件 | 任一核心地区物流/政策中断会跨季度影响交付 |
+| **价格反弹/客户抵制** | 价值定价过度会促使客户延后、推动 Nikon/Canon 或自研替代 | ASP、TSMC 公开意见、竞争者订单 | DUV 提价不能覆盖成本或客户把订单移向竞品 |
+| **Mistral 投资估值** | €1.3bn 左右未上市股权存在估值波动 | 融资估值、业务增长、会计重估 | 对资产/利润有影响，但远小于设备执行风险 |
+| **人才/组织转型** | 1,700 人重构可能短期影响研发与执行 | R&D 里程碑、员工流失、产品延期 | 3800F/4200G、YS550/eScan2200 同时推迟 |
+
+### 9.5 客户替换成本排序
+
+| 排名 | 业务 | 替换成本 | 原因 |
+|---:|---|---|---|
+| 1 | EUV 新机＋原厂服务 | **近乎不可替换** | 无第二家整机；光学、source、软件、备件、现场责任一体化 |
+| 2 | ArFi 先进 matched fleet | **极高** | 更换影响 overlay、recipe、mask、APC、工程训练和产线匹配 |
+| 3 | Holistic software/overlay/IBM upgrades | **高** | 历史 scanner 数据、模型、控制回路和停机风险锁定 |
+| 4 | M&I | **中高** | 数据粘性大，但客户通常同时采用 KLA/Applied/Hitachi 等 |
+| 5 | XT:260/先进封装光刻 | **中** | qualification 有壁垒，但替代设备和工艺路线更多 |
+
+## 10. 综合判断与跟踪清单
+
+### 10.1 公司层面的结论
+
+ASML 的核心矛盾已不是“AI 是否需要 EUV”，而是**公司能否把接近售罄的 2027 订单转化为光学、光源、精密运动、安装和验收能力**。Low-NA、ArFi 和 IBM 同时扩张，使 2026—2027 收入质量高于只依赖 High-NA 单一新品的故事；Memory >75%增长和 SK hynix 的公开大单又把需求从单一先进 foundry 扩展到 DRAM/HBM。
+
+基准情景下，未来一年公司收入约 €48—51bn，Low-NA、ArFi 和 IBM 分别贡献约 $19.5bn、$13.2bn 和 $15.1bn；High-NA 约 $3.0bn，仍是重要但非最大收入池。乐观情景需要供应链把官方 30%扩产做得更快，极度乐观则要求 2028 能力前移、High-NA 多客户采用且验收无延误，不能直接当目标价基础。
+
+公司护城河几乎无争议，股票回报却取决于买入估值和执行。**55.7 倍 TTM PE/16.7 倍 PS 意味着“业务很好”只是必要条件，不是充分条件。**真正值得上调模型的证据是：2027 Low-NA 产量继续上修、H1 隐含 backlog 得到官方验证、IBM 高增长不牺牲系统交付、第二家 High-NA 客户进入有限 HVM。反之，若供应链/验收让库存和应收持续堆积，或公司在 2027 Capital Markets Day 不上修长期能力，估值风险会先于技术风险暴露。
+
+### 10.2 未来四个季度必须跟踪的 15 个指标
+
+1. FY2026 收入是否落在 €43—45bn 上半区、GM 是否达到 54%—56%。
+2. Q3 €11—12bn 收入和 55%—57% GM 是否兑现；IBM 是否仍约 €2.9bn 以上。
+3. Low-NA 2026 实际出货是否约 65 台；2027 是否从约 85 台继续上修。
+4. ArFi 2026/2027 产能是否达到约 130/169 台。
+5. Backlog 是否重新披露并达到本文 €44—52bn 模型区间。
+6. SK hynix $7.97bn 订单的实际交付、预付款和型号 mix。
+7. TSMC $60—64bn CapEx、N2/N3 wafer revenue 和 A16 Q4 量产进度。
+8. Samsung/SK hynix/Micron 的 HBM4/4E、1c/1γ DRAM、EUV层数和设备搬入。
+9. Intel High-NA 18A 产品层的实际层数、volume、yield 和 uptime；14A 是否扩大采用。
+10. 第二家 High-NA 客户是否宣布 limited HVM；EXE 年出货台数。
+11. High-NA availability 是否由 >80%向成熟 HVM 水平靠近；mask/resist/actinic defect 是否下降。
+12. NXE:3800F 260 wph 首发、客户资格和 2028 full-volume 是否按期。
+13. YS550、eScan2200、XT:260 是否出现多客户重复订单，而非单台研发收入。
+14. 应收 €7.25bn、库存 €11.74bn 是否在收入增长中保持可控；Q3 OCF/FCF 是否恢复。
+15. 荷兰/美国出口规则、中国约 20%收入及维保许可是否变化。
+
+## 11. 资料来源与模型限制
+
+### 11.1 项目内允许资料
+
+1. [AI芯片前道制造设备行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-07-10.md)：用于 Low-NA/High-NA 时间表、WFE、前道设备强度、供应瓶颈和竞争格局交叉验证。
+2. [HBM与高带宽内存行业调研](../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-07-10.md)：用于 HBM4/4E、先进 DRAM 资源强度、客户资格和 Memory EUV 需求解释。
+3. [IEEE VLSI Symposium 2026 更新](../../行业调研/产业背景/顶级会议信息/conference_update_ieee_vlsi_symposium_2026_2026-06-20.md)：用于 A16、18A-P、4F²/3D DRAM、背面供电和技术成熟度反证。
+
+### 11.2 主要联网一手资料
+
+- [ASML 2026Q2 业绩新闻稿](https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results)、[Q2 演示](https://ourbrand.asml.com/asset/9078cf4d-91fd-4dd9-a5d5-d1caab6dc046/2026_07_15_Presentation-Investor-Relations-Q2-2026.pdf)、[Q2 电话会](https://ourbrand.asml.com/asset/1fd3908a-0381-47b5-9b69-a3094f656651/2026_07_15-ASML-Transcript-investor-call-Q2-2026.pdf)、[2026 中期报告](https://ourbrand.asml.com/asset/468514ab-2a25-42be-a284-1560ebebcb6a/Statutory-Interim-Report-2026.pdf)。
+- [ASML 2026Q1](https://www.asml.com/en/news/press-releases/2026/q1-2026-financial-results)、[2025Q4/FY2025](https://www.asml.com/en/news/press-releases/2026/q4-2025-financial-results)、[2025Q3](https://www.asml.com/en/news/press-releases/2025/q3-2025-financial-results)、[2025Q2](https://www.asml.com/en/news/press-releases/2025/q2-2025-financial-results)。
+- [ASML 2025 年报](https://ourbrand.asml.com/m/6ea363f69344ebd4/original/asml-2025-annual-report-based-on-ifrs.pdf)及正文所列产品页。
+- [TSMC 2026Q2 结果页](https://investor.tsmc.com/english/quarterly-results/2026/q2)与[电话会](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/547d1696765e05ce3adb81c108ce1c8c1682b80c/TSMC%202Q26%20Transcript.pdf)。
+- [Micron FY2026Q3 材料](https://investors.micron.com/static-files/2354ecda-77a0-4ddd-8462-a631eb491356)、[imec EXE:5200 装机](https://www.imec-int.com/en/press/imec-receives-worlds-most-advanced-high-na-euv-system)、[imec High-NA 技术综述](https://www.imec-int.com/en/articles/case-high-na-euv-unlocking-next-era-chip-manufacturing)、[Intel VLSI 2026/18A-P](https://newsroom.intel.com/intel-foundry/intel-foundry-details-process-milestones-future-innovation-at-vlsi-symposium)。
+- [ASML 实时/TTM 估值数据](https://stockanalysis.com/stocks/asml/)、[阿姆斯特丹统计](https://stockanalysis.com/quote/ams/ASML/statistics/)、[ECB 汇率](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)。
+
+### 11.3 渠道与论坛资料的使用边界
+
+- Reuters 转述的 SK hynix **订单金额与交付期限**来自监管披露，作为 C 级高可信事实；“30+台”是媒体按单价推算，不当作公司台数指引。
+- 2026-07 的 ASML/TSMC 价格谈判、Low-NA value-based pricing 和约 10% DUV 提价为供应链报道，只用于 O/X 的 ASP 敏感性。
+- SemiWiki 对 Intel High-NA 的讨论只用于提醒 adoption 风险，未用于财务硬数。
+- 任何未由公司披露的 backlog、取消率、AI 收入占比、单型号 GM、High-NA/XT 产能、BOM 成本占比和单位 GPU 内容均标为 M；后续若有正式披露，应以正式数据替换。
+
+### 11.4 最重要限制
+
+ASML 自 2026Q1 起不再披露季度 bookings；公司又以单一报告分部披露，产品级利润率、AI 收入、客户金额和绝大部分交期均不可直接观察。因此本文的产品/订单模型重视**区间、公式和可证伪指标**，不以伪精确点数掩盖信息缺口。所有 NTM 情景均是业务预测，不是股价预测、估值建议或交易建议。

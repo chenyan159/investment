@@ -1,0 +1,375 @@
+# APLD Applied Digital 公司调研：从加密托管转向 1.4GW AI Factory 长约数据中心
+
+报告日期：2026-06-12  
+公司：Applied Digital Corporation  
+股票代码：APLD / NASDAQ  
+标准分类目录：`公司调研/云算力_IDC_AI软件平台/`  
+研究边界：本报告只使用 `基本面/行业调研/` 下的产业资料与联网公开资料；未读取、引用或继承 `特征量化/`、`日度资料/`、`tmp/`、旧公司报告或其他目录内容。  
+核心数据截点：公司财报截至 FY2026 Q3（季度结束 2026-02-28，发布 2026-04-08）；公司订单与融资公告截至 2026-06-09；股价和估值采用 2026-06-11 美股收盘快照。
+
+## 0. 核心结论
+
+Applied Digital 已不再适合只按“加密矿场托管”或“GPU 云”理解。2025-2026 年，公司完成了三件决定性转型：第一，Cloud Services 被剥离到 ChronoScale，APLD 本体更像 AI 数据中心开发和运营平台；第二，核心产品从短周期 GPU 计算服务变成 15 年 take-or-pay AI Factory 租约；第三，公司用项目融资、优先股、担保票据和循环信贷把 100-300MW 级园区做成可复制资产。
+
+截至 2026-06-08，公司已披露 5 个 AI Factory 园区、约 `1.4GW` 已签 critical IT load、约 `2.15GW` grid-connected utility power、约 `$36B` 15 年 base-term contracted lease revenue；若全部续约期权行权，潜在合同额约 `$86B`。这是 APLD 当前估值的核心，不是 FY2026 Q3 仍只有 `$126.6M` 的季度收入。
+
+投资主线是“可上电 MW + 长约客户 + 低成本项目融资 + 高密度液冷交付”。APLD 的真实产品不是 GPU、AI 芯片、光模块或 CDU，而是可被 hyperscaler 接收的高功率 AI 数据中心容量。公司的每 MW 15 年基础合同收入大致 `$24.8-27.5M`，折合年收入约 `$1.65-1.83M/MW-year`；若按公司对 Polaris Forge 1 的目标，400MW fully operational 后年化 NOI 约 `$500M`，对应约 `$1.25M/MW-year` 的 NOI run-rate。
+
+最大优点是订单可见度从 2025 年几乎没有，快速跃迁到 1.4GW 和 `$36B` base-term lease revenue；最大风险是资产还没有全部通电。APLD 现在是高弹性、高杠杆、强订单但强执行风险的 AI 基础设施开发商，估值已经把“1.4GW 合同能按期转收入”大量前置定价。
+
+## 1. 公司整体业务、市场形象、三年转型和产业链位置
+
+### 1.1 业务是什么
+
+APLD 的业务可以分成三层：
+
+| 层级 | 当前状态 | 收入属性 | 投资重要性 |
+|---|---:|---:|---:|
+| HPC Hosting / AI Factory | 核心增长业务；为 CoreWeave 和投资级 hyperscaler 建设、租赁和运营 100-300MW AI 数据中心 | 长期租约、base rent、tenant fit-out、power pass-through、ancillary revenue | 最高；决定估值和未来现金流 |
+| Data Center Hosting | 106MW Jamestown + 180MW Ellendale，为 Bitcoin/crypto mining 客户提供 energized space | 稳定托管收入、较高当期资产回报，但增长有限 | 中等；提供现金流和历史资产基础 |
+| Cloud Services / ChronoScale | 2026-05-05 完成剥离并与 EKSO 合并为 ChronoScale，APLD 持有约 97% 股权 | APLD 本体不再作为长期核心经营口径；保留权益价值 | 中低；AI 计算服务可有弹性，但风险画像与 APLD 本体不同 |
+
+APLD 对客户出售的不是 GPU 芯片，而是“已经拿到电力、场址、冷却、机电、调试能力、能承载高密 AI rack 的 critical IT load”。从产业链位置看，它在上游电力设备、土建/MEP、液冷、机架集成商与下游 CoreWeave、hyperscaler、AI cloud 客户之间，类似 AI Factory 开发商 / colo 运营商 / build-operate landlord。
+
+### 1.2 投资人心中的公司
+
+市场当前把 APLD 看成三种东西的叠加：
+
+1. AI 数据中心“抢电、抢场址、抢交付”的高弹性标的。
+2. 类 REIT 化的数据中心开发商，但还处在建设和融资高峰，尚未进入稳定分红型 REIT 阶段。
+3. CoreWeave 与大型 hyperscaler AI CapEx 的上游容量供应商，客户集中度高、订单弹性高、融资敏感度高。
+
+它不是低波动 IDC REIT。2026-06-11 收盘价 `$41.47`，过去 52 周股价涨幅按 StockAnalysis 快照约 `+232%`，beta `5.64`，空头仓位约 `27.0%` 流通股，说明市场分歧很大：多头买的是 `$36B` 合同组合和 AI power scarcity，空头担心的是交付、债务、稀释、客户集中和未来租金回报率。
+
+### 1.3 最近三年重大业务变化
+
+| 时间 | 变化 | 对公司定位的影响 |
+|---|---|---|
+| 2023-2024 | 从 Applied Blockchain / crypto hosting 逐步转向 HPC 和 AI 基础设施；Ellendale HPC campus 开始成为核心叙事 | 从矿场托管转为高密数据中心开发商 |
+| FY2025 | Cloud Services 增长但波动大；2025-04 董事会批准出售 Cloud Services；Garden City 资产出售；Data Center Hosting 继续经营 | 公司开始压缩非核心业务，准备走纯 AI data center platform |
+| 2025-05 至 2025-08 | CoreWeave 签约 Polaris Forge 1，250MW 初始 lease 约 `$7B`，后续 150MW option 使 PF1 总计 400MW、约 `$11B` | 第一次证明 APLD 能拿到长期 hyperscaler 级租约 |
+| 2025-10 至 2026-01 | Polaris Forge 1 首个 100MW building ready-for-service；Polaris Forge 2 200MW 投资级 hyperscaler 租约约 `$5B`；完成 `$2.35B` senior secured notes 和 Macquarie preferred equity draw | 从“签约”进入“上电和项目融资”阶段 |
+| 2026-04 至 2026-06 | Delta Forge 1 300MW `$7.5B`、Polaris Forge 3 300MW `$7.5B`、Delta Forge 2 210MW `$5.2B` 继续签约；总 contracted base-term revenue 到约 `$36B` | APLD 从单一 Dakotas 项目变成多园区 AI Factory franchise |
+| 2026-05 | Cloud Services 完成剥离为 ChronoScale，APLD 持有约 97% 股权 | APLD 本体更纯粹，ChronoScale 变成权益投资/可选项 |
+| 2026-06 | `$550M` revolving credit facility、`$1.59B` 7.000% senior secured notes due 2031 支持 PF1 ELN-04 | 低成本项目债和信用增强成为扩张速度的关键 |
+
+### 1.4 最新股价、估值、盈利质量和资产负债表
+
+估值口径说明：股价和第三方估值采用 StockAnalysis 2026-06-11 美股收盘快照；财务健康度以公司 FY2026 Q3 财报和随后融资公告为主。APLD 股价在 2026-06-12 UTC 仍处于 2026-06-11 美股交易日后的最新可用收盘数据。
+
+| 指标 | 最新值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | `$41.47`；盘后 `$42.05` | 2026-06-11 收盘 / 盘后 | 股价已大幅反映新租约预期 |
+| 市值 | `$11.85B` | 2026-06-11 | 与 FY2026 Q3 年化收入相比很贵，与 `$36B` 合同组合相比是开发商折现估值 |
+| 企业价值 | `$12.95B` | 2026-06-11 | 尚未完全反映 2026-06 后续债务闭合的全部 pro forma 变化 |
+| PE | N/A | 2026-06-11 | TTM 净亏损，PE 无意义 |
+| Forward PE | N/A | 2026-06-11 | 市场仍预期亏损或 EPS 不稳定，forward PE 无意义 |
+| P/S | `37.12x` | StockAnalysis TTM revenue `$319.26M` | 如果只看当前收入，估值极高 |
+| Forward P/S | `20.80x` | 2026-06-11 | 市场假设 AI Factory 租约快速转收入 |
+| TTM 收入 | `$319.26M`，同比 `+66.1%` | 2026-06-11 第三方快照 | 官方 Q3 单季收入同比 `+139%`，增长主要来自 HPC Hosting |
+| FY2026 Q3 收入 | `$126.6M`，同比 `+139%` | 季度截至 2026-02-28 | 其中 HPC Hosting `$71.0M`，Data Center Hosting `$37.5M`，Cloud `$18.1M` |
+| 毛利率 | TTM `45.41%`；Q3 FY2026 GAAP 约 `42.5%` | 2026-06-11 / FY2026 Q3 | Q2 受低毛利 fit-out 拉低，Q3 随 base rent 提升改善 |
+| 净利率 | TTM `-59.47%`；Q3 FY2026 约 `-79.6%` | 2026-06-11 / FY2026 Q3 | Q3 含 Cloud held-for-sale reclassification loss 等非经营项 |
+| 现金及受限现金 | 公司披露约 `$2.1B` | FY2026 Q3，2026-02-28 | 项目融资后流动性显著增强 |
+| 债务 | 公司披露约 `$2.7B` | FY2026 Q3，2026-02-28 | 后续还有项目 notes / revolver / bridge，杠杆继续上升 |
+| Current ratio | 约 `2.38` | FY2026 Q3 / 第三方统计 | 短期偿债能力较 FY2025 明显改善 |
+| Debt / Equity | 约 `1.10x` | 2026-06-11 第三方统计 | 对开发商可接受，但项目未稳定前风险仍高 |
+
+资产负债表健康度：从流动性看，APLD 比 2025 年显著改善。FY2025 年末继续经营现金及受限现金约 `$120.9M`，到 FY2026 Q3 变为约 `$2.1B`，这来自 senior secured notes、preferred equity、项目债和股权融资。从风险看，健康度不能按传统软件公司理解。APLD 的资产负债表正在快速工程化：现金大多是建设资金、受限现金和债务服务储备；债务和优先权益跟着项目建设扩张；公司还提供 completion guarantee。只要项目按期 RFS 并由 investment-grade tenant 接收，杠杆会被长期租约吸收；如果电力、设备、MEP、客户 acceptance 或资本市场出问题，风险会集中暴露。
+
+## 2. 最新和最近四次财报：收入、利润、订单、AI 暴露
+
+口径说明：FY2025 Q4 及 Q1/Q2 FY2026 当时多数披露将 Cloud Services 作为 held-for-sale / discontinued operations；FY2026 Q3 因 ChronoScale 交易结构变化，Cloud Services 在 GAAP 中被重新纳入 continuing operations，但公司 non-GAAP adjusted revenue 排除了 Cloud Services。为了比较，表中同时标注 GAAP 总收入和核心调整口径。
+
+| 财报季度 | 发布日期 | 总收入与增速 | 业务收入拆分 | 毛利/成本口径 | 净利润与 Adj. EBITDA | Backlog / bookings / 交付窗口 / 取消率 | AI 数据中心收入占比 |
+|---|---:|---:|---|---:|---:|---|---:|
+| FY2026 Q3（截至 2026-02-28） | 2026-04-08 | GAAP revenue `$126.6M`，同比 `+139%`；adjusted revenue ex-Cloud `$108.6M` | HPC Hosting `$71.0M`，含 base rent `$44.1M`、tenant fit-out `$18.9M`、power pass-through/ancillary `$8.1M`；Data Center Hosting `$37.5M`；Cloud Services `$18.1M` | Cost of revenue `$72.8M`，GAAP gross margin 约 `42.5%`；adjusted EBITDA margin 对 adjusted revenue 约 `40.7%` | Net loss attr. common `-$100.9M`；Adjusted EBITDA `$44.1M` | 截至 Q3 报告，PF1 CoreWeave 400MW + PF2 200MW，约 600MW、`$16B` base-term prospective lease revenue；PF1 100MW 已 full quarter operating；第二个 150MW 预计 CY2026，第三个 150MW 预计 CY2027；无披露取消率，take-or-pay 结构降低取消风险但不消除施工/信用风险 | 按 GAAP 收入，HPC Hosting 约 `56%`；按 adjusted revenue，约 `65%` |
+| FY2026 Q2（截至 2025-11-30） | 2026-01-07 | Revenue `$126.6M`，同比 `+250%` | HPC Hosting 约 `$85.0M`，其中 tenant fit-out `$73.0M`、partial-quarter lease revenue `$12.0M`；Data Center Hosting `$41.6M` | Cost of revenue `$100.6M`，gross margin 约 `20.6%`，被低毛利 fit-out 拉低 | Net loss attr. common `-$19.1M`；Adjusted EBITDA `$20.2M` | PF1 400MW CoreWeave，约 `$11B`；PF2 200MW investment-grade hyperscaler，约 `$5B`；合计 600MW、约 `$16B`；CoreWeave Q2 支付约 `$85.0M`，含 `$73.0M` fit-out | 约 `67%`，但大部分是一次性 fit-out 与初始租金 |
+| FY2026 Q1（截至 2025-08-31） | 2025-10-09 | Revenue `$64.2M`，同比 `+84%` | Data Center Hosting `$37.9M`；HPC tenant fit-out 约 `$26.3M`；租赁收入尚未明显 ramp | Cost of revenue `$55.6M`，gross margin 约 `13.4%` | Net loss attr. common `-$18.5M`；Adjusted EBITDA `$0.5M` | CoreWeave 追加 150MW，使 PF1 400MW 全部签约，约 `$11B`；PF2 200MW 初始阶段破土，预计 2026 开始上线、2027 达 full capacity；无披露取消率 | 约 `41%`，主要是 tenant fit-out，不是稳定租金 |
+| FY2025 Q4（截至 2025-05-31） | 2025-07-30 | Continuing revenue `$38.0M`，同比 `+41%`；FY2025 revenue `$144.2M`，同比 `+6%` | 几乎全部为 Data Center Hosting `$38.0M`；Cloud Services 已列为 discontinued / strategic options | Cost of revenue `$30.2M`，gross margin 约 `20.4%` | GAAP net loss attr. common `-$53.9M`；continuing net loss 约 `-$25.2M`；Adjusted EBITDA `$1.0M` | 250MW CoreWeave 15 年 lease，约 `$7B`；季度后 CoreWeave 行权追加 150MW，PF1 总计 400MW、约 `$11B`；首个 100MW building 计划 2025H2 RFS | AI leasing 尚未贡献稳定收入，收入仍以 crypto hosting 为主 |
+| FY2025 Q3（截至 2025-02-28） | 2025-04-14 | Revenue `$52.9M`，同比 `+22%` | Data Center Hosting `$35.2M`；Cloud Services `$17.8M`；HPC 数据中心建设中，尚无租金收入 | Cost of revenue `$49.1M`，gross margin 约 `7.1%` | Net loss attr. common `-$36.1M`；Adjusted EBITDA `$10.0M` | 与 MAM 讨论 up to `$5B` capital；SMBC `$375M` financing；Ellendale 100MW building 预计 2025H2 ready for service；仍在与多个 hyperscaler 谈判 up to 400MW | 直接 AI 数据中心租赁收入约 `0%`；Cloud Services 有 AI 暴露但后续剥离 |
+
+这个五季度序列说明：APLD 的财务报表还没有完整体现 `$36B` 合同组合。FY2026 Q3 的 `$44.1M` base rent 是第一个 100MW building 的完整季度信号，但后面 1.3GW 的主体仍在建设、融资、RFS 和客户验收阶段。
+
+## 3. 最新 FY2026 财报指引、收入占比和产品/业务梳理
+
+### 3.1 最新一次财报的指引
+
+FY2026 Q3 公司没有给传统软件式的下一季度 revenue / EPS 指引；它给的是项目式经营指引和长期目标：
+
+| 指引/目标 | 公司披露 | 对收入的含义 |
+|---|---|---|
+| PF1 100MW | 已 fully operational，并在 FY2026 Q3 贡献 full quarter revenue | 这是已验证的 recurring rent 样本 |
+| PF1 后续 150MW + 150MW | 第二个 150MW 预计 CY2026；第三个 150MW 预计 CY2027 | PF1 base rent 可从 100MW 向 400MW 扩张 |
+| PF2 200MW | 已完成 `$2.15B` 6.750% notes due 2031，支持 200MW critical IT load；原计划 2026 开始、2027 full capacity | 2026H2-2027 是第二条收入 ramp |
+| Delta Forge 1 300MW | 2026-04-23 签约，初始运营预计 mid-2027 | 12-18 个月后的新增 rent ramp |
+| Polaris Forge 3 300MW | 2026-05-20 签约，初始运营预计 2027-08 | FY2028 更明显 |
+| Delta Forge 2 210MW | 2026-06-08 签约，初始运营预计 2028Q1 | 超出未来 12 个月，但提高长期 backlog |
+| 长期 NOI | 管理层仍表示有信心 5 年内超过 `$1B` NOI | 估值主要围绕 NOI 折现，而不是当前 EPS |
+
+### 3.2 最新收入占比
+
+FY2026 Q3 的业务收入占比如下：
+
+| 业务 | FY2026 Q3 收入 | 占 GAAP 总收入 | 同比/环比信息 | 是否核心 |
+|---|---:|---:|---|---|
+| HPC Hosting / AI Factory | `$71.0M` | `56.1%` | Q2 约 `$85.0M`，但 Q2 大量 fit-out；Q3 base rent `$44.1M` 是质量更高的 recurring revenue | 是 |
+| Data Center Hosting | `$37.5M` | `29.6%` | 同比 `+7%`，segment operating profit `$13.9M` | 现金流核心，但非长期增长核心 |
+| Cloud Services | `$18.1M` | `14.3%` | 公司 non-GAAP adjusted revenue 排除；2026-05 已剥离到 ChronoScale | 非 APLD 本体核心 |
+
+### 3.3 跳过的低增速或非 AI 业务
+
+| 业务/资产 | 跳过原因 | 仍需跟踪的风险 |
+|---|---|---|
+| Bitcoin / crypto Data Center Hosting | FY2026 Q3 收入 `$37.5M`、利润贡献不错，但成长性主要跟矿工需求和 BTC 价格相关，不是 AI 基建瓶颈 | 矿工续约、功率价格、BTC 下行导致客户需求变弱 |
+| Cloud Services / ChronoScale | AI 属性强，但已作为独立上市公司 ChronoScale 运作；APLD 持 97% 股权，不宜与本体数据中心租金混算 | APLD 持股价值、ChronoScale 融资和 GPU 利用率 |
+| State Radio tower / 社区基础设施 | 对许可和社区关系有帮助，但收入体量小 | 社区许可、地方关系、建设配合 |
+| 普通短租 GPU 云 | APLD 本体已经主动分离；短租 GPU 周期和折旧风险与 AI Factory 长约逻辑不同 | GPU 残值、利用率、租价下行 |
+
+### 3.4 重点业务和潜力小业务
+
+| 重点业务/产品 | 实质产品 | 当前证据 | 为什么不能漏 |
+|---|---|---|---|
+| Polaris Forge 1 CoreWeave 400MW | 已签 take-or-pay AI Factory campus；100MW 运行，后续 300MW 在建 | `$11B` base-term prospective lease revenue；100MW full quarter base rent `$44.1M` | 当前唯一已经大规模转收入的 AI Factory 资产 |
+| Polaris Forge 2 200MW | Harwood, North Dakota 投资级 hyperscaler campus | 200MW、约 `$5B`；`$2.15B` secured notes 支持建设 | 第二条收入 ramp，且客户信用质量更强 |
+| Delta Forge 1 300MW | 南部美国 430MW campus 中 300MW IT load | 2026-04-23 签约，约 `$7.5B`，mid-2027 初始运营 | 证明 APLD 模型可从 Dakotas 复制到 southern geography |
+| Polaris Forge 3 300MW | 北部州第四园区 | 2026-05-20 签约，约 `$7.5B`，2027-08 初始运营 | 使总签约 critical load 超过 1GW |
+| Delta Forge 2 210MW | 第五园区，新南部州 | 2026-06-08 签约，约 `$5.2B`，2028Q1 初始运营 | 最新签约，说明同一 investment-grade hyperscaler 继续追加容量 |
+| Waterless / direct-to-chip cooling architecture | 不是独立出售产品，而是 AI Factory 交付能力 | 100MW direct-to-chip liquid-cooled data center 已在线；投资 Corintis `$15M` | 高密 AI rack 的交付门槛，影响租金、用水、许可和客户验收 |
+| Grid-connected utility power / site pipeline | 可开发电力和场址 | 合同组合对应约 `2.15GW` gross utility power；公司还在 marketing 1.7GW+ | AI 数据中心最稀缺的是可上电 MW，场址和电力本身有期权价值 |
+
+## 4. 当前关键业务贡献、AI 技术栈重要性、供需和定价权
+
+评分：5 为最强。收入贡献使用当前已披露收入、合同额和可投产节奏综合判断。
+
+| 关键业务 | 当前收入贡献 | 当前收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| PF1 100MW 已投产 AI Factory | FY2026 Q3 HPC Hosting `$71.0M` 中，base rent `$44.1M` 来自首个 100MW；年化 base rent 约 `$176M` | 从 0 到 full quarter recognition | 5 | 5 | 5 | 4 | 这是公司商业模式的 proof point：100MW 级高密液冷数据中心能按期接收并产生租金 |
+| PF1 后续 300MW | 当前未完全转收入；PF1 总合同约 `$11B`，折合约 `$733M/yr` base-term revenue | 未来 12-18 个月主要增长源 | 5 | 5 | 5 | 4 | 如果第二、第三 building 按期 RFS，APLD 的收入基数会从季度 `$100M` 级提升到年化 `$700M+` 级 |
+| PF2 200MW | 当前主要在建设与融资；合同约 `$5B`，约 `$333M/yr` | 2026-2027 ramp | 5 | 5 | 5 | 4 | 投资级 hyperscaler 客户提升债务融资质量，是估值从单客户 CoreWeave 向多客户扩展的关键 |
+| Delta Forge 1 / PF3 / Delta Forge 2 合计 810MW | 当前基本不贡献收入；已签 base-term 合同约 `$20.2B`，约 `$1.35B/yr` when stabilized | 2027-2028 ramp | 5 | 4 | 5 | 4 | 这些项目使 APLD 从单园区开发商变成多园区 franchise，但建设期风险更长 |
+| Waterless / liquid-ready AI Factory architecture | 不单独确认收入 | 绑定每个 campus 的租金和验收能力 | 5 | 5 | 4 | 3 | 技术路线顺应 GB300/Rubin/ASIC 高密 rack；溢价来自客户验收和用水约束，不来自专利独占 |
+| Legacy Data Center Hosting | FY2026 Q3 `$37.5M`，segment operating profit `$13.9M` | 同比 `+7%` | 1 | 2 | 3 | 2 | 当前利润好，但不是 AI 主线；更多是现金流和资产再开发可选项 |
+| ChronoScale 股权 | FY2026 Q3 Cloud revenue `$18.1M`，但 APLD 本体剥离 | 不应并入 APLD 经营收入预测 | 3 | 3 | 3 | 2 | 是 AI compute optionality，不是 APLD 本体核心产品 |
+
+## 5. 未来一年情景预测：收入贡献、重要性和定价能力
+
+未来一年指 2026-06 至 2027-06 附近，不等同公司 FY2027 指引。由于 APLD 没有给完整年度 revenue guidance，下表为基于合同额、RFS 计划、FY2026 Q3 100MW 收入样本和行业交付瓶颈的估算。收入为 APLD 可确认收入，不含 tenant 自带 GPU/服务器价值。
+
+| 业务 | 基准情景：一年后贡献 | 乐观情景：一年后贡献 | 极度乐观情景：一年后贡献 | 增速和关键假设 |
+|---|---:|---:|---:|---|
+| PF1 已投产/在建 AI Factory | 年化收入 `$450-650M`；100MW 全年贡献，第二 150MW 部分贡献，第三 150MW 仍处 ramp | 年化收入 `$700-950M`；第二 150MW 提前稳定，第三 150MW 进入收入 | 年化收入 `$950M-1.15B`；PF1 400MW 基本稳定并有较多 power/ancillary/pass-through | 取决于 ELN-03/ELN-04 RFS、客户 fit-out、债务成本和电力设备交期 |
+| PF2 200MW | 年化收入 `$80-180M`，以建设进度、fit-out 和早期 rent 为主 | 年化收入 `$180-330M`，200MW 接近 full capacity | 年化收入 `$330-450M`，租金和 pass-through 提前进入稳定状态 | PF2 已有 `$2.15B` 项目 notes，融资可见度较高；主要风险是施工与 commissioning |
+| Delta Forge 1 300MW | 一年内收入 `$0-50M`，主要为 pre-development / early fit-out，不作为 base case rent | `$50-150M`，mid-2027 初始运营兑现 | `$150-250M`，客户加速接收并有一次性 fit-out | 2027 年中才开始运营，未来一年更多贡献 backlog 而非收入 |
+| PF3 300MW / Delta Forge 2 210MW | 一年内收入接近 0 | `$0-50M` | `$50-100M` | 初始运营分别预计 2027-08 和 2028Q1，超出 12 个月主体窗口 |
+| Data Center Hosting | `$145-160M` 年收入，经营利润率保持 | `$160-180M`，BTC/矿工需求强、功率效率提升 | `$180M+`，矿工续约价格上行 | 非 AI，增长弹性有限 |
+| APLD 本体总收入 | `$700M-950M` | `$1.1B-1.5B` | `$1.6B-2.0B` | 对比 TTM `$319M`，基准仍是翻倍级；极度乐观需要 PF1/PF2 均顺利且 early Delta 有贡献 |
+
+业务质量排序：PF1/PF2 稳定 rent 最高，fit-out 收入次之，power pass-through 对毛利贡献有限但提高总收入，legacy hosting 现金流好但估值倍数低，ChronoScale 股权不宜混入 APLD 本体收入。
+
+## 6. BOM 拆分、每 MW / rack / GPU / optical port 内容量、价格传导链、产能与认证
+
+### 6.1 APLD 的“BOM”边界
+
+APLD 不卖 AI 芯片、GPU、光模块、服务器或液冷部件。它的 BOM 是 AI Factory facility BOM：土地、电力接入、变电、建筑、MEP、液冷-ready 设施、控制系统、调试、运营团队和项目融资。GPU、HBM、NVSwitch、光模块通常由 tenant 或其系统供应链承担。
+
+公司披露的项目融资给出了最直接的单位成本锚：
+
+| 项目 | 披露金额 | 对应容量 | 隐含设施融资强度 |
+|---|---:|---:|---:|
+| PF2 senior secured notes | `$2.15B` | 200MW critical IT load | 约 `$10.75M/MW` |
+| PF1 ELN-04 7.000% notes | `$1.59B` | 150MW critical IT load | 约 `$10.6M/MW` |
+| PF2 campus 早期披露 | 约 `$3B` | 200MW initial IT load | 约 `$15.0M/MW`，更像总 campus / early-stage envelope |
+
+因此，本报告把 APLD AI Factory facility capex 的合理区间设为约 `$10.5-15.0M/MW`，不含 tenant GPU/服务器主体。
+
+### 6.2 每 MW / rack / GPU / optical port 的真实内容量
+
+| 口径 | 基准假设 | 对应内容量 | 解释 |
+|---|---:|---:|---|
+| 每 MW IT load 的 facility load | PUE `1.15-1.30` | 每 `1MW` IT load 需要约 `1.15-1.30MW` utility/facility load | 来自项目内电力接入研究；AI hall 的 interconnection 往往还要预留 N+1、维护和扩容 |
+| 每 MW facility capex | `$10.5-15.0M/MW` | 每 100MW 项目约 `$1.05-1.50B` facility capex / financing | 由 APLD 近期 notes 和 campus 融资反推 |
+| 每 MW 15 年基础合同收入 | `$24.8-27.5M/MW` | 年化 `$1.65-1.83M/MW-year` | PF1 `$11B/400MW`、PF2 `$5B/200MW`、Delta Forge 2 `$5.2B/210MW` |
+| 每 rack 数量 | 100-250kW/rack | 每 `1MW` 约 `4-10` 个 AI racks；150kW/rack 时约 `6.7` racks | 2026 AI rack 进入 100-250kW 设计区间，APLD 的建筑价值随 rack density 上升 |
+| 每 rack facility capex | 150kW/rack | 约 `$1.6-2.25M/rack` | `$10.5-15.0M/MW * 0.15MW` |
+| 每 rack facility rent | 150kW/rack | 约 `$247k-275k/rack-year` | `$1.65-1.83M/MW-year * 0.15MW` |
+| 每 GPU facility content | NVL72 72 GPUs/rack，150kW/rack | 约 `480 GPUs/MW`；facility capex `$22k-31k/GPU`；facility rent `$3.4k-3.8k/GPU-year` | 只代表数据中心 shell / power / cooling / operations 分摊，不含 GPU |
+| 每 optical port | APLD 无直接光端口内容 | 如果 tenant fabric 为 `2-4` optical ports/GPU，则 480 GPUs/MW 对应 `960-1,920 ports/MW`；facility rent 分摊约 `$860-1,900/port-year` | 这不是光模块 BOM，不能与光模块 ASP 相加；只是设施容量对网络端口的间接成本 |
+
+### 6.3 AI Factory facility BOM 估算
+
+| BOM 模块 | 每 MW facility capex 占比估算 | 每 MW 金额区间 | 关键供应链/瓶颈 |
+|---|---:|---:|---|
+| 土地、许可、interconnection、utility upgrades | `10-20%` | `$1.1-3.0M/MW` | 并网、PPA、utility 协调、社区许可 |
+| 高压/中压电气：变压器、switchgear、substation、eHouse、保护控制 | `20-30%` | `$2.1-4.5M/MW` | 变压器和 MV switchgear 交期最硬 |
+| 低压电力链：UPS、ATS、busway、PDU、generator/BESS 接口 | `15-25%` | `$1.6-3.8M/MW` | 高密 rack 的瞬态负载、保护、冗余 |
+| 冷却与液冷-ready：CDU 接口、二次侧管路、泵阀、水处理、heat rejection | `10-18%` | `$1.1-2.7M/MW` | direct-to-chip readiness、漏液、压降、维护 |
+| 土建、data hall、MEP 安装、预制化模块、commissioning | `20-30%` | `$2.1-4.5M/MW` | 熟练劳动力、FAT/SAT、施工并行度 |
+| DCIM/BMS、安全、网络 meet-me、保险、owner cost、reserves | `10-20%` | `$1.1-3.0M/MW` | 客户验收、数据中心运营可靠性、融资储备 |
+
+### 6.4 价格传导链
+
+AI workload 需求先转为 GPU/ASIC cluster，然后转为 rack density、网络 fabric 和 IT load，再转为 APLD 可出租的 critical MW。
+
+价格链条如下：
+
+`模型训练/推理需求 -> hyperscaler / CoreWeave 采购 AI capacity -> 100-300MW take-or-pay lease -> APLD base rent + fit-out reimbursement + power pass-through -> 项目债/优先股/股权资本 -> 变压器、switchgear、MEP、液冷、电力、土建、调试供应商 -> RFS / tenant acceptance -> recurring rent / NOI`
+
+其中 GPU 价格上涨不直接成为 APLD 收入，但会提高 tenant 对“按期上电容量”的紧迫性。电力、变压器、MEP 和液冷短缺则会推高 APLD 的建设成本，也会提高已经锁定电力和可交付 MW 的租金议价能力。
+
+### 6.5 当前产能、采纳程度和认证阶段
+
+| 业务/产品 | 当前产能能力（美元计） | 供应链采纳程度 | 当前认证/验收阶段 |
+|---|---:|---|---|
+| PF1 100MW 已运营 | 年化 base rent 约 `$176M`，加 power/ancillary 约 `$200M+` 收入 run-rate | CoreWeave 已接收并运行；Q3 已 full quarter revenue | RFS / tenant operation 已完成；CoreWeave lease 通过 SPV 和 A3 refinancing 增强信用质量 |
+| PF1 400MW 总体 | Base-term revenue 约 `$11B`，年化约 `$733M`；管理层称 fully operational 后 NOI run-rate 约 `$500M` | CoreWeave 400MW 签约 | 100MW 完成；后续 150MW + 150MW 在建；融资包括 notes、preferred equity、lease credit enhancement |
+| PF2 200MW | Base-term revenue 约 `$5B`，年化约 `$333M` | U.S. based investment-grade hyperscaler | `$2.15B` senior secured notes；建设中，foundation / precast / MEP mobilization |
+| Delta Forge 1 300MW | Base-term revenue 约 `$7.5B`，年化约 `$500M` | 第二个 investment-grade hyperscaler | 已签约，mid-2027 初始运营目标；还需项目融资闭合和 RFS |
+| PF3 300MW | Base-term revenue 约 `$7.5B`，年化约 `$500M` | 同一 investment-grade hyperscaler 追加 | 已签约，2027-08 初始运营目标；还需融资、建设、commissioning |
+| Delta Forge 2 210MW | Base-term revenue 约 `$5.2B`，年化约 `$347M` | 该 hyperscaler 第三个长期 lease | 已签约，2028Q1 初始运营目标；处早期开发 |
+| Waterless / liquid-ready architecture | 不直接销售；嵌入所有 AI Factory lease | 已被 CoreWeave 和 investment-grade hyperscaler 接受为设计一部分 | 不是 UL 单品认证；关键是 tenant due diligence、RFS、liquid-cooling commissioning、保险和运维验收 |
+
+## 7. 一年后产能能力、采纳和认证阶段预测
+
+| 业务/产品 | 基准情景：2027-06 产能/采纳 | 乐观情景：2027-06 产能/采纳 | 极度乐观情景：2027-06 产能/采纳 |
+|---|---|---|---|
+| PF1 | 250MW 级别接近稳定，400MW 后段在 commissioning；年化收入能力 `$450-650M` | 400MW 大部分完成 RFS；年化收入能力 `$700-950M` | 400MW 稳定并优化 power/pass-through；NOI run-rate 接近公司 `$500M` 目标 |
+| PF2 | 200MW 分阶段上线，tenant fit-out 和早期 rent 开始；融资完整 | 200MW 接近 full capacity；投资级客户验收顺利 | 200MW 稳定，项目债再融资利率下降，成为第二个 proof point |
+| Delta Forge 1 | 建设推进，mid-2027 初始运营刚开始或推迟；收入小 | 首批容量进入 tenant acceptance；新增融资闭合 | 初始容量提前贡献收入，市场把 southern campus 模型视为已复制 |
+| PF3 | 已完成详细设计、融资推进、设备锁单；收入基本没有 | 早期施工顺利，2027-08 RFS 可见度高 | 客户追加 site scope 或加快 schedule |
+| Delta Forge 2 | 早期开发、permit、utility、融资 | 项目融资提前完成，长交期设备锁定 | 同一客户追加更多 south capacity，成为第六园区线索 |
+| Waterless / liquid-ready architecture | PF1/PF2 形成客户验收记录；供应商锁定 | 被多个 hyperscaler 视为 repeatable design | 成为 APLD 获取新 lease 的差异化 due diligence 资产 |
+
+认证阶段应按数据中心项目逻辑跟踪，而不是按硬件 SKU 跟踪：`site control -> utility agreement/interconnection -> long-lead electrical equipment purchase -> project financing -> building permit -> mechanical/electrical completion -> factory/site acceptance testing -> RFS -> tenant equipment fit-out -> tenant acceptance -> stabilized operations -> project debt refinancing / rating uplift`。
+
+## 8. 基于真实 backlog 和供给能力的未来一年增长预测
+
+### 8.1 真实 backlog
+
+截至 2026-06-08，APLD 已披露：
+
+| Campus | 客户 | Critical IT load | Base-term revenue | 初始运营/交付窗口 |
+|---|---|---:|---:|---|
+| Polaris Forge 1 | CoreWeave | 400MW | 约 `$11B` | 100MW 已运营；第二 150MW CY2026；第三 150MW CY2027 |
+| Polaris Forge 2 | U.S. investment-grade hyperscaler | 200MW | 约 `$5B` | 2026 开始，2027 full capacity |
+| Delta Forge 1 | U.S. high investment-grade hyperscaler | 300MW | 约 `$7.5B` | mid-2027 |
+| Polaris Forge 3 | 同 Delta Forge 1 客户 | 300MW | 约 `$7.5B` | 2027-08 |
+| Delta Forge 2 | 同一 U.S. high investment-grade hyperscaler | 210MW | 约 `$5.2B` | 2028Q1 |
+| 合计 | 多客户，约 70% 收入由 U.S. investment-grade hyperscaler 支持 | 约 `1.4GW` | 约 `$36B` | 2026-2028 分批转收入 |
+
+取消率：公司没有披露 cancel rate。由于合同为 15 年 take-or-pay 且客户包括 CoreWeave 和投资级 hyperscaler，合同取消风险低于普通未绑定 pipeline；但在 RFS 前，仍有 construction delay、客户技术要求变化、融资失败、permit、电力设备和交付成本超支风险。续约期权不应视为 backlog。
+
+### 8.2 未来一年业务增速情景
+
+| 情景 | 供给/产能假设 | 订单转收入假设 | 未来一年 APLD 总收入增速 | 关键反证 |
+|---|---|---|---:|---|
+| 基准 | PF1 250MW 左右进入稳定或半稳定；PF2 初步贡献；Delta Forge 1 贡献很小 | `$36B` backlog 中只有约 100-300MW 平均运营容量转收入 | 收入从 TTM `$319M` 到 `$700-950M`，增长约 `+120% 至 +200%` | ELN-03/ELN-04 RFS 延迟、PF2 MEP/电力设备延期、融资成本上升 |
+| 乐观 | PF1 400MW 多数转收入；PF2 200MW 明显 ramp；Delta Forge 1 early revenue | 平均运营容量 350-550MW，fit-out 和 pass-through 均较高 | 收入 `$1.1-1.5B`，增长约 `+245% 至 +370%` | CoreWeave / hyperscaler acceptance 放慢、power pass-through 不计入或低毛利拖累 |
+| 极度乐观 | PF1 400MW 稳定，PF2 提前 full capacity，Delta Forge 1 首批容量提前 | 平均运营容量 550-750MW，且建设 reimbursement 高 | 收入 `$1.6-2.0B`，增长约 `+400% 至 +525%` | 需要电力、变压器、MEP、液冷、客户 fit-out 和融资同时顺利，容错率低 |
+
+最重要的判断：APLD 未来一年增长不是需求侧问题，而是供给侧兑现问题。项目内行业资料显示，2026-2027 AI 数据中心最大瓶颈顺序是电力接入/变压器/switchgear、HBM/CoWoS、液冷集成、MEP 劳动力与调试、NeoCloud 融资与利用率。APLD 直接暴露在第一、第三、第四和第五个瓶颈上。
+
+## 9. 竞争格局、技术主流性、替代方案和客户替换成本
+
+### 9.1 主要竞争对手
+
+| 类别 | 代表公司 | 与 APLD 的竞争关系 |
+|---|---|---|
+| AI Factory / NeoCloud infrastructure | CoreWeave、Crusoe、Nebius、IREN、Nscale、Lambda、TeraWulf、Hut 8、Cipher、Bitdeer | 争夺电力、客户、融资和高密设施；部分既是客户又可能自建 |
+| 大型 colo / 数据中心开发商 | Digital Realty、Equinix xScale、QTS / Blackstone、Vantage、CyrusOne、Aligned、Compass、DataBank、CloudHQ、Flexential、Switch | 经验、客户关系和资本成本强；但有些传统资产密度和上电速度不如专用 AI Factory |
+| Hyperscaler 自建 | Microsoft、Amazon、Google、Meta、Oracle | 最大替代方案；当自建能力不足或上电慢时才外包给 APLD/colo/NeoCloud |
+| 能源优先型开发商 | Crusoe、Lancium 类能源侧平台、utility-backed campus developer | 如果能更快拿到 behind-the-meter power 或大规模 interconnection，会抢 APLD 的核心壁垒 |
+| 矿场转型 HPC 的上市公司 | IREN、TeraWulf、Cipher、Hut 8、Bitdeer 等 | 低成本电力和土地可能相似，但 hyperscaler diligence、融资结构和交付记录分化大 |
+
+### 9.2 APLD 的竞争优势
+
+1. 已经完成 100MW direct-to-chip liquid-cooled AI data center 的 full quarter revenue recognition，这比纯 pipeline 更有说服力。
+2. 1.4GW contracted critical IT load 和 `$36B` base-term revenue 让融资方能按项目 underwriting。
+3. 客户从 CoreWeave 扩展到多个 U.S. investment-grade hyperscaler，客户集中度有所改善。
+4. North Dakota/Dakotas 和 southern states 的多园区布局，降低单一区域许可和电力风险。
+5. Waterless cooling、高密 power delivery 和 repeatable AI Factory design 有利于通过 hyperscaler technical diligence。
+6. 项目融资能力增强：Macquarie preferred equity、Goldman revolver、Morgan Stanley/notes、市政/项目化资产结构提高了扩张速度。
+
+### 9.3 风险和替代方案
+
+| 风险 | 具体表现 | 替代/反证路径 |
+|---|---|---|
+| 施工和上电延迟 | 变压器、switchgear、MEP、液冷、commissioning 任一环节拖延会使 backlog 不能转收入 | 传统 colo、hyperscaler 自建、其他能源优先开发商拿走后续订单 |
+| 融资成本上升 | notes 利率、优先股资本成本、completion guarantee 压力上升 | 客户转向资本成本更低的 REIT 或自建 |
+| 客户集中 | CoreWeave 和少数 investment-grade hyperscaler 占大部分合同 | 若客户 CapEx 放缓或技术路线调整，APLD 缺乏分散客户缓冲 |
+| 租约收入不等于利润 | Fit-out 和 power pass-through 收入毛利低；建设成本超支会侵蚀 NOI | 投资人应看 stabilized NOI / MW，而不是 headline revenue |
+| 技术路线变化 | 更高效 ASIC、低功率推理、分布式 inference 或区域能源约束变化 | 需求可能从超大训练园区转向更分散推理 colo |
+| 续约期权不确定 | `$86B` potential revenue 不是确定 backlog | 估值应以 `$36B` base-term 为主，续约作为 upside |
+| ChronoScale 股权复杂性 | APLD 持有 97% CHRN，市场可能把权益价值和经营收入混淆 | 分开建模：APLD 本体按 data center NOI，CHRN 按 GPU cloud 风险 |
+
+### 9.4 新技术是否是主流
+
+APLD 的核心技术不是某个单点硬件，而是高密 AI Factory 设计：高功率电力接入、direct-to-chip liquid cooling readiness、waterless / low-water cooling、MEP 预制化、100-300MW campus 复制和长期 take-or-pay 租约。这个方向符合 2026-2028 主流，因为 GB300、Rubin、MI400/Helios、TPU/Trainium 等平台会把 rack density、液冷、power quality、commissioning 从可选项变成交付前提。
+
+但主流不等于 APLD 独占。真正的壁垒不是“我有液冷设计”，而是“我能拿到电、签下客户、完成融资、按时 RFS、通过 hyperscaler acceptance 并稳定运行”。如果其他开发商用更低资本成本、更好的区域电价或更快 interconnection 复制同样模型，APLD 的溢价会下降。
+
+### 9.5 客户替换成本
+
+客户替换成本分阶段：
+
+| 阶段 | 替换成本 | 原因 |
+|---|---:|---|
+| 签约前 / RFP 阶段 | 中等 | 客户可以比较多个 campus、colo、self-build 和 NeoCloud |
+| Lease 签署后、设备未进场 | 高 | take-or-pay、工期、GPU 交付排期、网络和电力设计已绑定 |
+| Tenant fit-out / GPU 进场后 | 很高 | 迁移 100-300MW GPU cluster 需要重新做电力、液冷、网络、物流、调试和 downtime 安排 |
+| 稳定运行后 | 极高 | AI 训练/推理平台对 uptime、网络拓扑、数据路径和运维流程高度绑定 |
+
+因此，APLD 的客户粘性在 RFS 后显著增强，RFS 前则仍要面对其他开发商和客户自建的竞争。
+
+## 10. 投资跟踪清单
+
+| 跟踪项 | 重要性 | 具体观察指标 |
+|---|---:|---|
+| PF1 150MW + 150MW RFS | 最高 | 是否按 CY2026 / CY2027 时间表交付；是否出现 liquid cooling / electrical / commissioning 延迟 |
+| PF2 200MW | 最高 | `$2.15B` notes 资金使用、施工进度、tenant fit-out、full capacity 2027 是否兑现 |
+| Delta Forge 1 / PF3 / Delta Forge 2 | 高 | permit、utility、project financing、long-lead equipment、initial operations 是否提前或延迟 |
+| Stabilized NOI / MW | 最高 | PF1 400MW 是否达到管理层 `$500M` NOI run-rate；NOI / MW 是否接近 `$1.25M` |
+| 债务成本和再融资 | 高 | 7.000% notes、6.750% notes、SOFR+225 revolver、A3 tenant/SPV refinancing 是否降低资本成本 |
+| 客户信用和集中度 | 高 | CoreWeave SPV / LC / guarantees；investment-grade hyperscaler 是否扩大占比 |
+| 供应链瓶颈 | 高 | 变压器、switchgear、MEP、CDU、液冷验收、熟练劳动力 |
+| Legacy hosting 现金流 | 中 | `$37-42M` 季度收入是否稳定，BTC 下行是否压缩客户需求 |
+| ChronoScale 股权 | 中 | CHRN 融资、GPU utilization、APLD 是否减持或继续支持 |
+| 新签约 pipeline | 高 | 1.7GW+ actively marketed power 是否转成第六/第七园区 lease |
+
+## 11. 结论
+
+APLD 是 AI 基础设施周期中最纯粹、也最容易被误读的高弹性公司之一。它不是卖 GPU，也不是传统软件云，更不是普通地产 REIT。它的核心资产是可交付、可融资、可被 hyperscaler 接收的高密 AI 数据中心 MW。
+
+当前最重要的数字不是 TTM revenue `$319M`，而是 1.4GW contracted critical IT load、`$36B` base-term contracted lease revenue、PF1 100MW full quarter base rent `$44.1M`、PF1 fully operational 后约 `$500M` NOI run-rate 目标，以及未来 12-24 个月能否把 PF1/PF2/Delta Forge 系列项目从合同转成 RFS 和现金流。
+
+基准判断：APLD 的需求端真实且强，合同质量在 2026 年显著改善；公司已从概念阶段进入交付阶段。未来一年最可能看到收入翻倍级增长，但估值已经不便宜，且主要风险从“有没有客户”转向“能不能按期、按预算、按资本成本交付”。在 AI 数据中心供需仍紧、变压器/switchgear/MEP/液冷仍短缺的情况下，APLD 的已签 MW 和电力场址具备稀缺性；若这些瓶颈缓解或项目延迟，公司高杠杆会放大回撤。
+
+## 12. 主要资料来源
+
+### 公司官方资料
+
+- Applied Digital FY2026 Q3 results, 2026-04-08: https://ir.applieddigital.com/news-events/press-releases/detail/148/applied-digital-reports-fiscal-third-quarter-2026-results
+- Applied Digital FY2026 Q2 results, 2026-01-07: https://ir.applieddigital.com/news-events/press-releases/detail/142/applied-digital-reports-fiscal-second-quarter-2026-results
+- Applied Digital FY2026 Q1 results, 2025-10-09: https://ir.applieddigital.com/news-events/press-releases/detail/131/applied-digital-reports-fiscal-first-quarter-2026-results
+- Applied Digital FY2025 Q4 and FY2025 results, 2025-07-30: https://ir.applieddigital.com/news-events/press-releases/detail/126/applied-digital-reports-fiscal-fourth-quarter-and-full-year
+- Applied Digital FY2025 Q3 results, 2025-04-14: https://ir.applieddigital.com/news-events/press-releases/detail/121/applied-digital-reports-fiscal-third-quarter-2025-results
+- Delta Forge 1 300MW lease, 2026-04-23: https://ir.applieddigital.com/news-events/press-releases/detail/149/applied-digital-announces-new-u-s-based-high
+- ChronoScale separation, 2026-05-05: https://ir.applieddigital.com/news-events/press-releases/detail/151/applied-digital-completes-separation-of-cloud-business
+- Polaris Forge 3 300MW lease, 2026-05-20: https://ir.applieddigital.com/news-events/press-releases/detail/152/applied-digital-reaches-significant-milestone-surpassing-1
+- `$550M` revolving credit facility, 2026-06-08: https://ir.applieddigital.com/news-events/press-releases/detail/153/applied-digital-secures-revolving-credit-facility-of-up-to
+- Delta Forge 2 210MW lease, 2026-06-08: https://ir.applieddigital.com/news-events/press-releases/detail/154/applied-digital-signs-210-mw-lease-at-delta-forge-2
+- `$1.59B` 7.000% senior secured notes due 2031, 2026-06-09: https://ir.applieddigital.com/news-events/press-releases/detail/156/applied-digital-announces-pricing-of-1-59-billion-of
+
+### 市场与估值数据
+
+- StockAnalysis APLD quote and overview, 2026-06-11 close: https://stockanalysis.com/stocks/apld/
+- StockAnalysis APLD statistics and valuation, 2026-06-11 close: https://stockanalysis.com/stocks/apld/statistics/
+
+### 项目内行业资料
+
+- `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md`

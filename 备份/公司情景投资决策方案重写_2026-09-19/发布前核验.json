@@ -1,0 +1,20 @@
+{
+  "draft": "备份\\公司情景投资决策方案重写_2026-09-19\\研究方案.md",
+  "characters": 9945,
+  "checks": {
+    "input_paragraph_unchanged": true,
+    "all_three_input_directories_exist": true,
+    "scenario_definitions_unchanged": true,
+    "twelve_matrix_cells": true,
+    "new_horizons_present": true,
+    "obsolete_horizons_absent": true,
+    "no_project_history_or_upstream_language": true,
+    "archived_old_plan_matches": true
+  },
+  "old_plan_sha256": "9c32609fd770e7388c6a41d4369e49c7acb66b7cd57bf5f414431f2a23bb4f63",
+  "other_current_plans": {
+    "基本面\\公司调研\\研究方案\\研究方案_20260918_024255.md": "8530e0404c106b4ecdec71ec3ac22155261d18f39fabd768b524c2010a3f4e62",
+    "基本面\\行业调研\\研究方案\\研究方案_20260918_130642.md": "d290eed43355b2dbd84da9f7bbb84f619c28a7b22da491ffb1c4c4417570fe96"
+  },
+  "validation_note": "期限检查按独立数字匹配，36个月为指定期限。"
+}

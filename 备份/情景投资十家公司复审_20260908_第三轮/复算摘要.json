@@ -1,0 +1,269 @@
+{
+  "ratingChanges": 48,
+  "byTicker": {
+    "SOMMY": 8,
+    "PSIX": 3,
+    "ET": 8,
+    "SPACEX": 4,
+    "GOOGL": 6,
+    "MU": 9,
+    "CRWV": 3,
+    "SNDK": 3,
+    "AVGO": 0,
+    "CRDO": 4
+  },
+  "matrixDetailMatched": 120,
+  "returnArithmetic": {
+    "testedEndpoints": 120,
+    "failures": [],
+    "maxAbsoluteErrorPp": 0.06631892697467379
+  },
+  "priceAndBaseChanges": [
+    {
+      "ticker": "SOMMY",
+      "priceOld": 20,
+      "priceNew": 20,
+      "priceChangePct": 0.0,
+      "base3yOldPct": [
+        23.7,
+        82.0
+      ],
+      "base3yNewPct": [
+        -5.4,
+        46.2
+      ],
+      "newModelAtOldPricePct": [
+        -5.400000000000006,
+        46.19999999999999
+      ]
+    },
+    {
+      "ticker": "PSIX",
+      "priceOld": 40.49,
+      "priceNew": 43.15,
+      "priceChangePct": 6.569523339096062,
+      "base3yOldPct": [
+        -13.3,
+        10.3
+      ],
+      "base3yNewPct": [
+        9.4,
+        27.8
+      ],
+      "newModelAtOldPricePct": [
+        16.587058532971085,
+        36.19585082736475
+      ]
+    },
+    {
+      "ticker": "ET",
+      "priceOld": 21.5,
+      "priceNew": 21.51,
+      "priceChangePct": 0.0465116279069866,
+      "base3yOldPct": [
+        65.1,
+        93.9
+      ],
+      "base3yNewPct": [
+        56.9,
+        97.0
+      ],
+      "newModelAtOldPricePct": [
+        56.97297674418604,
+        97.09162790697675
+      ]
+    },
+    {
+      "ticker": "SPACEX",
+      "priceOld": 147.95,
+      "priceNew": 153.47,
+      "priceChangePct": 3.7309901993916927,
+      "base3yOldPct": [
+        -92.5,
+        -88.4
+      ],
+      "base3yNewPct": [
+        -88.4,
+        -79.7
+      ],
+      "newModelAtOldPricePct": [
+        -87.96720513687056,
+        -78.94260898952349
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "priceOld": 338.46,
+      "priceNew": 338.36,
+      "priceChangePct": -0.02954558884357139,
+      "base3yOldPct": [
+        -24.5,
+        -5.6
+      ],
+      "base3yNewPct": [
+        -12.8,
+        20.2
+      ],
+      "newModelAtOldPricePct": [
+        -12.825763753471605,
+        20.16448620221003
+      ]
+    },
+    {
+      "ticker": "MU",
+      "priceOld": 1016.59,
+      "priceNew": 1000.26,
+      "priceChangePct": -1.6063506428353636,
+      "base3yOldPct": [
+        -0.6,
+        35.9
+      ],
+      "base3yNewPct": [
+        33.3,
+        62.5
+      ],
+      "newModelAtOldPricePct": [
+        31.158734593100462,
+        59.88968020539252
+      ]
+    },
+    {
+      "ticker": "CRWV",
+      "priceOld": 102.86,
+      "priceNew": 99.83,
+      "priceChangePct": -2.945751506902583,
+      "base3yOldPct": [
+        -90.1,
+        -63.7
+      ],
+      "base3yNewPct": [
+        -99.9,
+        -68.5
+      ],
+      "newModelAtOldPricePct": [
+        -99.90294575150692,
+        -69.42791172467432
+      ]
+    },
+    {
+      "ticker": "SNDK",
+      "priceOld": 1740,
+      "priceNew": 1737.99,
+      "priceChangePct": -0.11551724137931485,
+      "base3yOldPct": [
+        30.6,
+        63.2
+      ],
+      "base3yNewPct": [
+        -7.2,
+        16.4
+      ],
+      "newModelAtOldPricePct": [
+        -7.307200000000009,
+        16.265537931034487
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "priceOld": 369.35,
+      "priceNew": 368.56,
+      "priceChangePct": -0.21388926492487137,
+      "base3yOldPct": [
+        -10.4,
+        12.6
+      ],
+      "base3yNewPct": [
+        -12.0,
+        6.5
+      ],
+      "newModelAtOldPricePct": [
+        -12.188222553133883,
+        6.272207932855011
+      ]
+    },
+    {
+      "ticker": "CRDO",
+      "priceOld": 170.57,
+      "priceNew": 167.75,
+      "priceChangePct": -1.6532801782259465,
+      "base3yOldPct": [
+        3.6,
+        34.6
+      ],
+      "base3yNewPct": [
+        -15.3,
+        1.6
+      ],
+      "newModelAtOldPricePct": [
+        -16.700328310957374,
+        -0.07973266107755705
+      ]
+    }
+  ],
+  "waitingBenchmarkTests": [
+    {
+      "ticker": "CRWV",
+      "initial": 99.83,
+      "annualHurdle": 0.2,
+      "originalYears": 3,
+      "waitYears": 0.5,
+      "eventCash": 101.80702360839355,
+      "exitValue": 200,
+      "assumedBuy": 125,
+      "reportedMaximumBuy": 126.8,
+      "maximumBuyAtOriginalWealthTarget": 118.03285911094413,
+      "maximumBuyAtRemainingExposureHurdle": 126.7876290521218,
+      "finalWealthIfBuy": 162.89123777342968,
+      "originalRequiredWealth": 172.50623999999996,
+      "annualReturnFromOriginalStart": 0.17727760895442346
+    },
+    {
+      "ticker": "PSIX",
+      "initial": 43.15,
+      "annualHurdle": 0.2,
+      "originalYears": 1,
+      "waitYears": 0.25,
+      "eventCash": 43.575174492588005,
+      "exitValue": 77.07,
+      "assumedBuy": 65,
+      "reportedMaximumBuy": 67.22,
+      "maximumBuyAtOriginalWealthTarget": 64.85783503560752,
+      "maximumBuyAtRemainingExposureHurdle": 67.22014182745798,
+      "finalWealthIfBuy": 51.66674920221165,
+      "originalRequiredWealth": 51.779999999999994,
+      "annualReturnFromOriginalStart": 0.19737541604198494
+    },
+    {
+      "ticker": "GOOGL",
+      "initial": 338.36,
+      "annualHurdle": 0.12,
+      "originalYears": 3,
+      "waitYears": 0.25,
+      "eventCash": 341.61183102578343,
+      "exitValue": 565.5,
+      "assumedBuy": 414,
+      "reportedMaximumBuy": 414,
+      "maximumBuyAtOriginalWealthTarget": 406.3800955844766,
+      "maximumBuyAtRemainingExposureHurdle": 414.07884848215446,
+      "finalWealthIfBuy": 466.6219575968129,
+      "originalRequiredWealth": 475.37143808000013,
+      "annualReturnFromOriginalStart": 0.11308599477042303
+    },
+    {
+      "ticker": "CRDO",
+      "initial": 167.75,
+      "annualHurdle": 0.15,
+      "originalYears": 0.5,
+      "waitYears": 0.25,
+      "eventCash": 169.40290894858953,
+      "exitValue": 223,
+      "assumedBuy": 215,
+      "reportedMaximumBuy": 215,
+      "maximumBuyAtOriginalWealthTarget": 209.9975740611246,
+      "maximumBuyAtRemainingExposureHurdle": 215.3428234443455,
+      "finalWealthIfBuy": 175.70627300249055,
+      "originalRequiredWealth": 179.89183381965952,
+      "annualReturnFromOriginalStart": 0.0971082374968335
+    }
+  ]
+}

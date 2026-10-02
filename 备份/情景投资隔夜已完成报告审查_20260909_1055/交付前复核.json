@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-09-09T11:10:52.098178-07:00",
+  "batchStatus": {
+    "running": 1,
+    "retry_pending": 7,
+    "pending": 100,
+    "done": 75
+  },
+  "completedAfterFrozenSnapshot": [],
+  "planUnchanged": true,
+  "frozenReportHashMatches": 85,
+  "formalReportHashMatches": 85,
+  "intradaySnapshot": {
+    "source": "web finance tool",
+    "tradeTimeUTC": {
+      "MU": "2026-09-09 17:48:37",
+      "ET": "2026-09-09 17:49:06",
+      "SMCI": "2026-09-09 17:48:51"
+    },
+    "prices": {
+      "MU": 1024.325,
+      "ET": 21.615,
+      "SMCI": 39.245
+    },
+    "SMCI_same_model_one_year_return": 0.21671550515989302
+  }
+}

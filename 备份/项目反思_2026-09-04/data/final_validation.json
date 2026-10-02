@@ -1,0 +1,18 @@
+{
+  "companies": 192,
+  "rank_lists": 28,
+  "rank_rows": 5376,
+  "source_date_observations": 768,
+  "matrix_cells": 3840,
+  "price_rows": 35146,
+  "local_links_checked": 494,
+  "invalid_links": 0,
+  "empty_line_citations": 0,
+  "unique_source_hashes_rechecked": 602,
+  "source_hash_changes": 0,
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "pandas": "3.0.2",
+  "numpy": "2.4.4",
+  "requests": "2.33.1",
+  "os": "Windows-11-10.0.26200-SP0"
+}

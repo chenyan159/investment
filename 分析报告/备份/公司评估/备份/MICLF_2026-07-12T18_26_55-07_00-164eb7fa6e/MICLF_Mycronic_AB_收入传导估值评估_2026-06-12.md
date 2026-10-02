@@ -1,0 +1,192 @@
+# 公司收入传导与价值传导评估：Mycronic AB（MICLF）
+
+> 报告日期：2026-06-12。  
+> 评估对象：MICLF / Mycronic AB；主上市为 Nasdaq Stockholm `MYCR`，本报告只评估经营收入、利润、现金流和经营价值传导，不输出投资评级、目标价、股价区间、估值倍数判断或市场定价结论。  
+> 资料边界：项目内只使用 `公司调研/` 与 `行业调研/`；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、模型比较或全公司排序结果。外部资料以 Mycronic 2026Q1 报告、2025 年报/年末报告、2026-04 SLX 订单公告、Mycronic 产品页和行业公开资料为主。  
+> 货币口径：除特别说明外，金额为瑞典克朗 `SEK`，`m` 为百万，`bn` 为十亿。NTM 指从 2026-06-12 起未来约 12 个月或未来 4 个季度；因 Mycronic 最新财报为 2026Q1，NTM 主口径近似为 2026Q2-2027Q1。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营收入、毛利率、EBIT/EBITDA、净利润方向和自由现金流方向；2026 年全年指引、2027 年系统交付、2028 年定制 SLX 和 CPO/photonic interconnect 机会只作补充或远期期权。
+- 当前收入基准、指引和 run-rate：Mycronic 2025 年收入 `SEK 7.938bn`，2026Q1 TTM 收入 `SEK 8.300bn`，2026Q1 单季收入 `SEK 2.503bn`、订单 `SEK 2.529bn`、期末订单积压 `SEK 4.707bn`；董事会在 2026Q1 将 2026 年收入预期从 `SEK 8.25bn` 上调到 `SEK 8.75bn`。这就是本报告的“当前预期”主锚，而不是市场估值或股价。
+- 重要产品/业务线：`Pattern Generators`、`PCB Assembly Solutions`、`High Volume / dispensing & coating`、`PCB Test / RoBAT / ETZ`、`Die Bonding / MRSI optical communications`、`Photonic Interconnects / Applied Plasma / Magnetic Test`，以及横向的 `Aftermarket / service / probes / consumables`。
+- NTM 公司收入四情景：悲观 `SEK 7.6-8.2bn`；基准 `SEK 8.8-9.4bn`；乐观 `SEK 9.7-10.6bn`；极度乐观 `SEK 10.8-12.0bn`。基准情景略高于 FY2026 `SEK 8.75bn` 指引，不是因为 2026 指引已再次上调，而是 NTM 包含 2027Q1 且 Pattern Generators 已有 2027Q1 交付排程。
+- 利润或 EBITDA 四情景：悲观 EBITDA `SEK 1.7-2.1bn`、净利润约 `SEK 1.1-1.4bn`；基准 EBITDA `SEK 2.4-2.9bn`、净利润约 `SEK 1.6-2.1bn`；乐观 EBITDA `SEK 2.9-3.5bn`、净利润约 `SEK 2.1-2.7bn`；极度乐观 EBITDA `SEK 3.5-4.5bn`、净利润约 `SEK 2.7-3.5bn`。净利润为经营情景推算，不是公司指引。
+- 最大传导瓶颈：Mycronic 是制造设备公司，AI 需求必须经过客户 capex、客户产线认证、订单、交付、验收和收入确认后才进入报表；AI 芯片或光模块 TAM 不能直接等同公司收入。
+- 最大利润率变量：`Pattern Generators` 的系统 mix 和交付节奏仍是利润率的最大单变量；`Global Technologies` 的 PCB Test / Die Bonding 是否在高毛利订单中转收入，是第二变量；`PCB Assembly` 与 `High Volume` 的竞争和 ESOP/并购费用会压低经营杠杆。
+- 最大现金流变量：高系统交付后的应收账款、库存和客户验收节奏；2026Q1 经营现金流强，但工作资本仍有 `SEK -333m` 现金流影响，说明收入兑现不自动等于自由现金流同步改善。
+- 可信度：基准情景为`中高`。集团收入、分部收入、backlog、指引和 PG 交付表证据强；但 PCB Test、Die Bonding、optical modules、Photonic Interconnects 的产品级收入拆分未披露，因此乐观和极度乐观可信度只能到`中`或`低到中`。
+
+核心判断：Mycronic 的 NTM 收入传导最可靠路径不是“AI 数据中心直接 BOM”，而是 `AI 芯片/先进封装/显示和半导体 photomask 需求 -> Pattern Generators 系统和服务交付`，以及 `AI advanced PCB / high-end optical transceiver 需求 -> PCB Test、Die Bonding、High Volume 光模块相关设备订单 -> Global Technologies / High Volume 收入确认`。基准情景应围绕公司 `SEK 8.75bn` FY2026 指引和 `SEK 4.707bn` backlog 正常兑现；极度乐观必须同时看到 GT 订单继续高位、PG 高 ASP mix、High Volume 光模块重复订单和现金流跟上，不能只依赖 2028 交付的定制 SLX 或 CPO 远期期权。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Pattern Generators：Prexision、SLX、FPS、MMX、MMS、Cowin DST repair/inspection | 2026Q1 收入 `SEK 1.291bn`；TTM `SEK 3.326bn`；2026Q1 backlog `SEK 1.888bn`、14 台系统排到 2027Q2 | TTM 约 `40%`；2026Q1 约 `52%` | 利润核心。2026Q1 EBIT margin `64.4%`，TTM `51.2%` | A/B：已披露收入、订单、backlog、交付表 | 进入基准，是 NTM 收入和利润主口径 | 2028 交付的定制 SLX `USD 27-30m`、新半导体 photomask inspection 产品、High-NA/curvilinear 生态，只作补充或远期跟踪 |
+| PCB Assembly Solutions：SMT、jet printing、placement、AOI、storage/software | 2026Q1 收入 `SEK 318m`；TTM `SEK 1.398bn`；backlog `SEK 116m` | TTM 约 `17%` | 规模底座但短期弱；欧洲/美国需求弱，利润率低 | A：已披露分部收入和 backlog | 进入基准，但不作为 AI 增量主线 | AI server SMT 高端产线只作小权重上修项；竞争充分，不进极度乐观主因 |
+| High Volume / dispensing & coating：Axxon、点胶、涂覆、光模块新市场 | 2026Q1 收入 `SEK 408m`；TTM `SEK 1.798bn`；backlog `SEK 1.011bn` | TTM 约 `22%` | NTM 增量来源之一；Q1 订单 `SEK 737m` 创新高 | A/B：分部收入、订单和 backlog 披露；光模块子业务未拆 | 核心业务进入基准；光模块作为 C 级小比例增量 | 光模块重复订单、泰国工厂放量、1.6T 设备相关需求进入乐观/极度乐观 |
+| PCB Test / RoBAT / ETZ probes | GT 内部未拆；GT 2026Q1 收入 `SEK 492m`、TTM `SEK 1.801bn`、backlog `SEK 1.692bn`；ETZ 2025 收入近 `EUR 4m`，约 85% 销给 Mycronic | 无法可靠量化；GT TTM 约 `22%`，PCB Test 为 GT 关键线之一 | 最直接 AI 先进 PCB 暴露。公司明确称需求由 AI applications advanced boards 和东南亚投资驱动 | B/C：GT backlog A/B，PCB Test 产品拆分和客户名 C | 基准可纳入，但需折扣；不能把 AI PCB 行业 capex 直接当收入 | AI server/switch 高层板、背钻/信号质量测试、探针耗材附着率是乐观变量 |
+| Die Bonding / MRSI optical communications | GT 内部未拆；产品覆盖 MRSI-LEAP、MRSI-HVM、MRSI-S-HVM、active aligner、epoxy dispenser | 无法可靠量化；并入 GT | 连接 AI 高端光模块、硅光、AOC、PIC 和 wafer-level packaging | B/C：公司点名 optical communications 强需求；产品级收入未拆 | 基准小比例纳入；超预期需订单和客户认证继续验证 | 1.6T/3.2T 光模块、silicon photonics、CPO/optical engine 设备进入乐观/远期 |
+| Photonic Interconnects / Applied Plasma / Magnetic Test | 收入未拆；Hprobe、Vanguard、Surfx 已并入 GT；2026Q1 并购贡献合计包括 Hprobe/RoBAT/Surfx/ETZ `SEK 77m` | 无法可靠量化，当前小 | 技术期权强，但 NTM 可确认收入有限 | C/D：并购和产品页明确，订单/收入拆分不足 | 只把既有小收入纳入 GT 基准；新增大额机会不进基准 | CPO/NPO、光子封装、advanced packaging plasma cleaning、MRAM/TMR test 多为 2027+ 期权 |
+| Aftermarket / service / probes / consumables（横向，不单独加总） | 2026Q1 aftermarket `SEK 525m`；TTM `SEK 1.971bn` | TTM 约 `24%`，已包含在各分部 | 利润质量和现金流稳定器；系统装机越多，服务和耗材越重要 | A：公司披露收入类型 | 进入基准，但在公司汇总中不重复加总 | ETZ probes、PG service、PCB Test consumables 和软件化可提高利润质量 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池和需求强弱，不判断 Mycronic 份额、可确认收入、利润率或公司层收入。`当前需求锚`来自公司 2026Q1 披露、公司产品页、项目内行业调研和公开行业资料。需求指数以当前预期为 `100`；绝对变化写需求单位、订单/系统、市场或指数变化，不把行业 TAM 直接视作公司收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Pattern Generators | 2026Q1 photomask markets for displays and semiconductors stable；PG 期末 backlog 14 台系统，2026Q2-2027Q2 有明确交付表；2026-04 定制 SLX 交付 2028 | 指数 `85-95`：显示面板价格和客户 capex 转弱，半导体客户 design release 延迟，部分 SLX/Prexision 验收延后 | 指数 `98-105`：显示和半导体光罩需求稳定，已排产系统按计划交付，AI 只是正向间接变量 | 指数 `108-120`：AI ASIC/先进封装/半导体 mask shop 订单增强，SLX/Prexision 追加订单，Cowin DST repair/inspection 改善客户覆盖 | 指数 `125-145`：多客户同时上修 mask writer、repair/metrology 和先进封装掩模需求，但 NTM 仍受交期约束 | NTM 可见交付 2026Q2 6 台、Q3 3 台、Q4 1 台、2027Q1 3 台；新增 2028 定制 SLX不计入 NTM基准 | 基准符合当前预期；乐观要求 2026H2 新订单和 mix 上修；极乐主要影响 2027+ backlog | 正向：AI leading-edge photomask、advanced packaging masks、SLX replacement；反证：High-NA 节奏延后、display photomask 2026 轻微下滑、客户验收推迟 |
+| PCB Assembly Solutions | 2026Q1 欧洲持续逆风，美国弱，客户等待终端订单；TTM 收入 `SEK 1.398bn`，backlog 低 | 指数 `80-90`：欧美电子制造继续弱，客户订单确认延后，SMT 竞争压价 | 指数 `95-103`：弱周期维持，但亚洲/软件/售后支撑，收入大体平稳 | 指数 `105-115`：AI server/communications electronics 和 Productronica/GenI 兴趣转订单，欧美从低位恢复 | 指数 `118-130`：AI server SMT 高端线和一般电子周期同步恢复，但仍非公司核心利润主线 | 需求变化主要体现在季度订单从 Q1 `SEK 287m` 低位恢复到 `SEK 330-450m/季`区间 | 基准略低到符合当前预期；乐观需要终端订单确认 | 正向：服务器/通信电子更复杂；反证：欧洲/美国弱、客户多源、SMT 价格竞争 |
+| High Volume / optical modules | 2026Q1 需求强，中国消费电子和 optical modules；订单 `SEK 737m`、backlog `SEK 1.011bn`，泰国工厂首批设备组装 | 指数 `85-95`：中国消费电子周期回落，光模块客户试单不重复，关税/迁厂拖交付 | 指数 `100-112`：强订单按正常交付，光模块作为新市场小比例贡献 | 指数 `120-145`：1.6T 光模块、光通信客户扩线、泰国工厂对冲关税，订单保持高位 | 指数 `150-180`：光模块客户多地复制产线，High Volume 从消费电子强周期转为 AI 光模块设备增量线 | Q1 order/backlog 已高；绝对变化取决于光模块设备是否从新市场变成重复订单 | 基准符合当前强订单；乐观高于当前预期 | 正向：行业调研显示 2026 光模块需求强、1.6T 进入导入；反证：模块 ASP/库存、客户 capex 延迟、普通点胶竞争 |
+| PCB Test / RoBAT / ETZ | GT Q1 订单 `SEK 915m`，backlog `SEK 1.692bn`；公司称 PCB Test demand driven by advanced boards used in AI applications 和 SE Asia investment | 指数 `75-90`：AI PCB 厂 capex 延迟，订单为一次性，东南亚投资放慢 | 指数 `105-120`：AI advanced board 和东南亚扩产延续，backlog 正常转收入 | 指数 `130-160`：服务器/交换机/加速卡高层板测试升级，RoBAT signal quality 和 ETZ probes 形成重复订单 | 指数 `170-220`：头部 AI PCB 供应链将 signal quality/back-drill/substrate test 作为标准配置，多区域复制 | 需求单位为 advanced PCB test systems、fixtures/probes、service；无法从公司披露拆出数量 | 基准已高于普通电子周期；乐观需要 GT order intake 连续高位 | 正向：AI 高层板、高速信号完整性、SE Asia PCB 投资；反证：客户名和项目未披露、PCB capex 周期、竞争分散 |
+| Die Bonding / MRSI optical communications | 公司称 optical communications segment 强需求由 AI-fuelled data center expansion 和 high-end transceivers 驱动；Mycronic 产品覆盖 optical components/transceivers、silicon photonics、AOC、WLP | 指数 `80-95`：光模块客户库存/ASP 压力，客户用 ASMPT/Besi/ficonTEC 等替代，CPO 延后 | 指数 `105-125`：800G/1.6T 光模块扩产支撑 MRSI die bonding 稳定需求 | 指数 `140-175`：1.6T、silicon photonics、active alignment 和高精度 die bonder 订单加速 | 指数 `190-260`：CPO/光引擎/硅光封装在 NTM 内提前进入多客户量产设备采购 | 需求单位为 die bonder/active aligner/dispensing line；无法可靠量化数量 | 基准略高于当前预期但需产品拆分折扣；极乐只有在 CPO 订单前置时成立 | 正向：光模块行业 2026 强、MRSI-LEAP 适用 AI optical modules；反证：CPO 仍多为 design-in、客户认证周期长 |
+| Photonic Interconnects / Applied Plasma / Magnetic Test | Vanguard photonic wire bonding / micro-optics、Surfx atmospheric plasma、Hprobe MRAM/TMR test；多为并购后小基数 | 指数 `70-90`：客户验证慢，新并购整合优先，只有少量研发/样线订单 | 指数 `95-115`：既有小收入延续，作为 GT 平台技术补充 | 指数 `130-180`：CPO/NPO、advanced packaging plasma cleaning、MRAM/TMR test 取得更多小批量订单 | 指数 `220-350`：光子封装、surface activation、magnetic test 同时进入量产客户，但 NTM 仍偏上限 | 绝对需求小；更适合按 design wins、NRE、样线、试产订单跟踪 | 基准只保留小收入；新增需求多为乐观或附录 | 正向：CPO/NPO 与先进封装趋势；反证：产品拆分、客户名、量产时间表不足 |
+| Aftermarket / service / probes / consumables | TTM aftermarket `SEK 1.971bn`，约集团收入 `24%`；系统装机和 PCB Test probes 形成服务/耗材需求 | 指数 `90-98`：系统利用率或客户 capex 放缓，服务附着率下降 | 指数 `100-106`：装机基数和正常维护支撑 | 指数 `108-118`：PG/PCB Test/Die Bonding 装机和 ETZ probes 提升耗材附着 | 指数 `120-135`：高端系统装机快速扩大，软件/服务/耗材占比明显提升 | NTM 需求约 `SEK 1.9-2.2bn` 服务/aftermarket 区间，但已包含在分部收入 | 基准符合当前预期；乐观改善利润质量 | 正向：installed base、probes/fixtures、service contracts；反证：系统交付减少或客户利用率低 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些需求能进入 Mycronic 的 NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入；行业 TAM、客户总 capex、项目总金额和远期 pipeline 不直接进入基准。若公司未披露产品级收入，使用分部收入和 backlog 做保守锚，并在表中标明“无法可靠量化”。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Pattern Generators | 2026Q1 `SEK 1.291bn`；TTM `SEK 3.326bn`；backlog `SEK 1.888bn`、14 台系统；Q1 delivered first Prexision 8000 Evo、1 Prexision 8 Evo、1 FPS Evo、4 SLX | 直接收入；AI 为间接需求驱动 | 高毛利、高 EBIT、季度 lumpy | `SEK 2.6-3.0bn` | `SEK 3.2-3.7bn` | `SEK 3.8-4.4bn` | `SEK 4.6-5.2bn` | 基准符合当前交付表；乐观为 mix/追加订单高于当前 | A/B | 是 | 已披露收入、backlog、交付表、订单产品 | NTM 基准主收入和利润线；2028 定制 SLX不进 NTM基准 |
+| PCB Assembly Solutions | 2026Q1 `SEK 318m`；TTM `SEK 1.398bn`；backlog `SEK 116m` | 直接收入；AI server SMT 为间接受益 | 毛利中等、EBIT 低，竞争充分 | `SEK 1.15-1.30bn` | `SEK 1.35-1.55bn` | `SEK 1.60-1.80bn` | `SEK 1.85-2.05bn` | 基准符合或略低当前 run-rate；乐观需欧美恢复 | A | 是 | 已披露分部收入；Q1客户订单延迟说明短期约束 | 进入公司基准，但不是 AI 收入上修核心 |
+| High Volume / optical modules | 2026Q1 `SEK 408m`；TTM `SEK 1.798bn`；orders `SEK 737m`；backlog `SEK 1.011bn` | 直接收入；光模块需求为部分直接应用 | 毛利约 40%，EBIT 受 ESOP/费用影响 | `SEK 1.50-1.75bn` | `SEK 1.85-2.15bn` | `SEK 2.25-2.65bn` | `SEK 2.80-3.25bn` | 基准略高当前 TTM，符合强订单；乐观高于当前 | A/B，光模块 C | 是 | 分部收入、orders/backlog A/B；光模块子业务未拆 | 核心业务进入基准；光模块新增只小比例纳入，需订单续验证 |
+| PCB Test / RoBAT / ETZ | GT 分部 Q1 `SEK 492m`、TTM `SEK 1.801bn`、orders `SEK 915m`、backlog `SEK 1.692bn`；ETZ 2025 近 `EUR 4m` | 直接收入；AI advanced PCB 为明确需求驱动 | 中高毛利，服务/探针/fixtures 有附加 | `SEK 0.55-0.75bn` | `SEK 0.75-1.05bn` | `SEK 1.10-1.45bn` | `SEK 1.55-2.00bn` | 基准为强需求正常兑现；产品拆分不足需折扣 | B/C | 是，小比例折扣 | GT backlog 强；公司明确点名 AI advanced boards；但客户/产品金额未拆 | 进入基准但不得把 AI PCB capex 线性映射；乐观需 Q2/Q3订单延续 |
+| Die Bonding / MRSI optical communications | GT 分部内未拆；公司称 optical communications 强需求来自 AI data center expansion/high-end transceivers；产品页覆盖 optical modules、silicon photonics | 直接收入；AI 光模块为明确但未量化暴露 | 中高毛利，客户认证后粘性较强 | `SEK 0.35-0.50bn` | `SEK 0.50-0.75bn` | `SEK 0.80-1.10bn` | `SEK 1.20-1.55bn` | 基准为当前强需求小比例兑现；乐观要求订单/客户确认 | B/C | 是，小比例折扣 | 公司明确需求描述和产品能力；收入拆分不足 | NTM 基准纳入保守区间；CPO/硅光上修多放在乐观/极乐 |
+| Photonic Interconnects / Applied Plasma / Magnetic Test | GT 内部未拆；Hprobe/RoBAT/Surfx/ETZ Q1 acquisition effect `SEK 77m`；Vanguard/Surfx/Hprobe 产品页和收购公告 | 直接收入，但当前多为小基数平台 | 技术毛利潜力高，当前整合费用和验证周期限制 | `SEK 0.10-0.18bn` | `SEK 0.20-0.35bn` | `SEK 0.40-0.65bn` | `SEK 0.80-1.20bn` | 基准只保留既有小收入；新增大机会不在当前预期 | C/D | 既有收入少量进入；新增机会不进基准 | 并购已完成，但产品级订单、客户和确认时间表不足 | NTM 基准低权重；大额 CPO/advanced packaging/MRAM 机会移入附录或乐观上限 |
+| Aftermarket / service / probes / consumables | 2026Q1 `SEK 525m`；TTM `SEK 1.971bn`，其中系统收入 TTM `SEK 6.329bn` | 直接收入，但横跨各分部，不能重复加总 | 利润质量好，稳定性高 | `SEK 1.75-1.90bn` | `SEK 1.95-2.20bn` | `SEK 2.20-2.45bn` | `SEK 2.50-2.80bn` | 基准符合 installed base；乐观来自 probes/software/service attach | A | 是，但不单独加总 | 公司按 revenue type 披露；ETZ probes 和 PG installed base 支撑 | 作为利润和现金流质量变量处理，已包含在各分部收入 |
+
+排除项：`2028` 交付的定制 SLX `USD 27-30m` 不进入 NTM 基准；Photonic Interconnects 的 CPO/optical chiplet、Applied Plasma 的 advanced packaging 大额量产、Hprobe 的 MRAM/TMR 大规模测试、High-NA/curvilinear 光罩相关大额需求均作为远期期权或乐观/极度乐观上限，不替代 NTM 主表。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求和可收入化基数出发，评估每个重要产品/业务线在 NTM 内能给公司贡献多少收入和利润。分部披露不足时使用区间和可信度，不把行业 TAM、客户总预算、项目总金额或远期 pipeline 直接写成公司收入。Aftermarket 为横向收入类型，已包含在各分部中，不与产品线重复加总。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Pattern Generators | 悲观 | `SEK 2.6-3.0bn` | EBIT `SEK 1.0-1.3bn` | 毛利/EBIT margin 低于 TTM，mix 转弱 | 低于当前交付表和 FY2026 预期 | 交付推迟、显示/半导体 mask 客户排程延后 | 保留为下行情景 | 2026Q1 高利润不能年化；客户验收和 mix 波动大 |
+| Pattern Generators | 基准 | `SEK 3.2-3.7bn` | EBIT `SEK 1.6-2.0bn` | EBIT margin `48%-55%`区间 | 符合当前 backlog、交付表和 TTM | Q1 backlog 14 台系统，2026Q2-2027Q1 13 台排程；TTM EBIT margin `51.2%` | 保留 | 新订单不必强，但交付不能明显滑期 |
+| Pattern Generators | 乐观 | `SEK 3.8-4.4bn` | EBIT `SEK 2.0-2.6bn` | mix 改善，服务/repair/metrology 更好 | 高于当前基准 | 半导体光罩 AI 需求、SLX/Prexision 追加订单、Cowin DST 整合 | 保留为乐观 | 需要高 ASP 系统或交付提前，不可只靠行业叙事 |
+| Pattern Generators | 极度乐观 | `SEK 4.6-5.2bn` | EBIT `SEK 2.6-3.2bn` | 高毛利系统占比高 | 显著高于当前预期 | 多客户高端光罩/repair/metrology 同时上修 | 下移为极乐上限 | 2028 定制 SLX 不能进入 NTM；供给和验收限制强 |
+| PCB Assembly Solutions | 悲观 | `SEK 1.15-1.30bn` | EBIT `SEK 0-70m` | 低毛利、低利用率 | 低于 run-rate | 欧美弱、客户等待终端订单 | 保留 | 竞争充分，价格压力 |
+| PCB Assembly Solutions | 基准 | `SEK 1.35-1.55bn` | EBIT `SEK 80-150m` | EBIT margin `6%-10%` | 符合当前预期 | TTM `SEK 1.398bn`，Q1 EBIT margin `2.5%`但 TTM `7.2%` | 保留 | Q1 backlog 仅 `SEK 116m`，能见度弱 |
+| PCB Assembly Solutions | 乐观 | `SEK 1.60-1.80bn` | EBIT `SEK 150-250m` | 利用率改善 | 高于当前预期 | 欧美恢复、AI/通信电子复杂度、GenI/AOI兴趣转订单 | 保留但低权重 | AI server SMT 不应直接等同 Mycronic share |
+| PCB Assembly Solutions | 极度乐观 | `SEK 1.85-2.05bn` | EBIT `SEK 230-350m` | margin 接近高位 | 高于当前预期但非核心 | 通用电子周期+AI SMT 同时恢复 | 下移为非核心上限 | 多供压价、客户 capex 周期 |
+| High Volume / optical modules | 悲观 | `SEK 1.50-1.75bn` | EBIT `SEK 120-220m` | ESOP/费用和低利用率压制 | 低于强订单隐含路径 | 中国消费电子回落、光模块试单不重复 | 保留 | 产品 mix、关税、迁厂和客户延迟 |
+| High Volume / optical modules | 基准 | `SEK 1.85-2.15bn` | EBIT `SEK 230-360m` | EBIT margin `12%-17%`，略高 Q1 | 符合强订单正常兑现 | Q1 orders `SEK 737m`、backlog `SEK 1.011bn`；光模块为新市场 | 保留 | optical modules 未拆收入，不能过度上修 |
+| High Volume / optical modules | 乐观 | `SEK 2.25-2.65bn` | EBIT `SEK 360-570m` | mix/规模改善 | 高于当前预期 | 1.6T/光模块扩线，泰国工厂改善交付 | 保留 | 普通点胶竞争、光模块周期和客户验收 |
+| High Volume / optical modules | 极度乐观 | `SEK 2.80-3.25bn` | EBIT `SEK 560-850m` | 高利用率和光模块 mix | 显著高于当前预期 | 多客户重复扩线，光模块成为主增量 | 下移为上限 | 需要子业务收入和订单验证，否则只能作上限 |
+| PCB Test / RoBAT / ETZ | 悲观 | `SEK 0.55-0.75bn` | EBIT `SEK 70-130m` | mix 可好但交付不足 | 低于 GT 当前强订单 | AI PCB capex 延迟，订单一次性 | 保留 | GT backlog 不能保证 PCB Test 全部兑现 |
+| PCB Test / RoBAT / ETZ | 基准 | `SEK 0.75-1.05bn` | EBIT `SEK 140-260m` | 中高，service/probes 支撑 | 符合 GT 强需求折扣后 | GT orders +260%、backlog `SEK 1.692bn`；ETZ probes 垂直整合 | 保留 | 产品级收入未披露，客户未披露 |
+| PCB Test / RoBAT / ETZ | 乐观 | `SEK 1.10-1.45bn` | EBIT `SEK 260-450m` | 利润率改善 | 高于当前预期 | AI advanced boards、SE Asia 投资、RoBAT/ETZ repeat orders | 保留 | 需要 Q2/Q3 orders 继续高位 |
+| PCB Test / RoBAT / ETZ | 极度乐观 | `SEK 1.55-2.00bn` | EBIT `SEK 450-750m` | 高附加耗材/服务 | 明显高于当前预期 | 头部 AI PCB 测试流程标准化，多区域复制 | 下移为上限 | 份额、价格、客户 capex 都需同时成立 |
+| Die Bonding / MRSI optical communications | 悲观 | `SEK 0.35-0.50bn` | EBIT `SEK 40-90m` | 低利用率或价格压力 | 低于当前 AI 光通信描述 | 光模块客户库存、CPO 推迟、竞争替代 | 保留 | 客户认证周期长 |
+| Die Bonding / MRSI optical communications | 基准 | `SEK 0.50-0.75bn` | EBIT `SEK 90-180m` | 中高，正常规模 | 略高于普通周期，符合 AI high-end transceiver 需求 | 公司点名 optical communications demand strong；MRSI 产品适用 optical modules/silicon photonics | 保留但折扣 | 收入拆分不足 |
+| Die Bonding / MRSI optical communications | 乐观 | `SEK 0.80-1.10bn` | EBIT `SEK 180-330m` | mix 上行 | 高于当前预期 | 1.6T、硅光、active alignment、光模块扩线 | 保留 | 需要谁买、何时验收、公司为何捕获 |
+| Die Bonding / MRSI optical communications | 极度乐观 | `SEK 1.20-1.55bn` | EBIT `SEK 330-560m` | 高端设备定价强 | 显著高于当前预期 | CPO/光引擎和硅光封装提前量产 | 下移为极乐上限 | CPO 2026 多为 design-in，不能作为基准 |
+| Photonic Interconnects / Applied Plasma / Magnetic Test | 悲观 | `SEK 0.10-0.18bn` | 小额亏损到 `SEK 20m` EBIT | 并购整合费用吞噬 | 低于平台化期待 | 验证慢、订单小 | 保留 | C/D 级证据多 |
+| Photonic Interconnects / Applied Plasma / Magnetic Test | 基准 | `SEK 0.20-0.35bn` | EBIT `SEK 0-60m` | 低到中，整合期 | 符合保守纳入 | 并购完成，产品存在，GT 收入中已有小贡献 | 保留 | 无产品级订单拆分 |
+| Photonic Interconnects / Applied Plasma / Magnetic Test | 乐观 | `SEK 0.40-0.65bn` | EBIT `SEK 60-160m` | 规模改善 | 高于当前预期 | CPO/NPO、plasma cleaning、MRAM/TMR 客户项目增加 | 保留为低可信乐观 | 客户和时间表不足 |
+| Photonic Interconnects / Applied Plasma / Magnetic Test | 极度乐观 | `SEK 0.80-1.20bn` | EBIT `SEK 180-360m` | 平台化成功 | 明显高于当前预期 | 光子封装/advanced packaging/MRAM test 同时突破 | 移入附录/极乐上限 | 任一核心环节缺客户证据即不能保留为 NTM 主判断 |
+| Aftermarket / service / probes / consumables | 悲观 | `SEK 1.75-1.90bn`，已含在上方 | 支撑毛利但不抵消系统下滑 | 稳定偏弱 | 低于当前 TTM | 客户利用率低、系统交付少 | 保留 | 不重复惩罚 |
+| Aftermarket / service / probes / consumables | 基准 | `SEK 1.95-2.20bn`，已含在上方 | 改善现金流稳定性 | 稳定 | 符合 installed base | TTM aftermarket `SEK 1.971bn` | 保留 | 不能重复加总 |
+| Aftermarket / service / probes / consumables | 乐观 | `SEK 2.20-2.45bn`，已含在上方 | 利润质量改善 | 上行 | 高于当前预期 | ETZ probes、PG installed base、service attach | 保留 | 需服务附着率披露验证 |
+| Aftermarket / service / probes / consumables | 极度乐观 | `SEK 2.50-2.80bn`，已含在上方 | 高质量 recurring mix | 明显上行 | 高于当前预期 | 装机快速扩大、耗材/软件附加 | 下移为利润质量上限 | 不可作为独立收入叠加 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。汇总时扣除分部内部估算重叠，Aftermarket 不单独加总，2028 定制 SLX 与 CPO/advanced packaging 远期期权不进入 NTM 基准。第一个表为公司收入和利润四情景；不讨论证券市场定价。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `SEK 7.6-8.2bn` | 相对 TTM `SEK 8.300bn` 为 `-8%` 至 `-1%`；低于 FY2026 指引 `SEK 8.75bn` 约 `SEK 0.55-1.15bn` | 低于当前指引、run-rate 和 backlog 正常兑现路径 | `48%-51%` | EBIT margin `17%-21%` | EBITDA `SEK 1.7-2.1bn`；净利润约 `SEK 1.1-1.4bn` | 经营现金流仍可能为正，但工作资本和并购/库存使 FCF 明显弱化 | 中 | PG 系统交付或 mix 下滑；GT 强订单无法转收入；PCB Assembly/High Volume 周期同时弱 |
+| 基准公司 | `SEK 8.8-9.4bn` | 相对 TTM `+6%` 至 `+13%`；相对 2025 `+11%` 至 `+18%` | 接近 FY2026 `SEK 8.75bn` 指引正常兑现并滚入 2027Q1；符合当前预期 | `52%-55%` | EBIT margin `24%-27%` | EBITDA `SEK 2.4-2.9bn`；净利润约 `SEK 1.6-2.1bn` | 正向但不线性；应收、库存和验收会造成季度波动 | 中高 | PG 交付排程、GT backlog 转收入、High Volume 光模块订单是否重复 |
+| 乐观公司 | `SEK 9.7-10.6bn` | 相对 TTM `+17%` 至 `+28%`；高于 FY2026 指引约 `SEK 0.95-1.85bn` 的 NTM 运行率 | 高于当前预期，但需要多个产品线同时超预期，不是单一小基数项目 | `54%-57%` | EBIT margin `27%-31%` | EBITDA `SEK 2.9-3.5bn`；净利润约 `SEK 2.1-2.7bn` | FCF 改善，但订单增长可能先占用营运资本 | 中 | GT 订单必须连续高位，PG mix 不能恶化，High Volume 光模块/泰国工厂要兑现 |
+| 极度乐观公司 | `SEK 10.8-12.0bn` | 相对 TTM `+30%` 至 `+45%`；显著高于当前预期 | 需求、公司捕获、利润质量和执行质量同时突破 | `56%-60%` | EBIT margin `31%-36%` | EBITDA `SEK 3.5-4.5bn`；净利润约 `SEK 2.7-3.5bn` | FCF 大概率改善，但若交付集中和库存拉高，现金转换可能滞后 | 低到中 | 极度乐观不能只靠 2028 SLX 或 CPO 期权；必须看到 PG 高 ASP系统、GT AI PCB/optics 转收入、High Volume 重复订单和服务 attach 同时成立 |
+
+公司汇总校验：
+
+- 与当前预期比较：Mycronic 已把 2026 收入预期上调到 `SEK 8.75bn`。因此基准公司情景不是再上调指引，而是把 2026 剩余三季度和 2027Q1 合成 NTM；乐观和极度乐观才代表经营路径高于当前预期。
+- 分部重复计算：PCB Test、Die Bonding、Photonic Interconnects/Applied Plasma/Magnetic Test 共同属于 Global Technologies；本报告的产品估算只用于传导判断，最终公司收入表按分部合并口径约束。
+- 低毛利收入检查：PCB Assembly 与部分 High Volume 收入若上修但利润率不升，对经营价值贡献弱于 PG 或 GT 高毛利收入。
+- 一次性/非重复项：2026Q1 GT EBIT 包含 Vanguard contingent consideration revaluation 正面 `SEK 22m`；High Volume ESOP 负面 `SEK 24m`；这些不应机械外推。
+- 区域与汇率：TTM 收入中亚洲 `SEK 6.006bn`、美洲 `SEK 1.361bn`、EMEA `SEK 932m`。亚洲占比高增强 AI/电子制造暴露，也提高地缘、关税、客户集中和汇率风险。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。正向证据只提升它实际影响的层级，反证只限制实际影响的环节；同一风险不在多个步骤重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。金融市场价格、估值倍数和股价表现不作为经营价值传导证据。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 `SEK 2.503bn`、订单 `SEK 2.529bn`、backlog `SEK 4.707bn`，董事会上调 2026 收入预期至 `SEK 8.75bn` | 公司汇总 | 支撑基准公司收入 `SEK 8.8-9.4bn` | Q1 高利润强，但需剔除 PG mix 高峰 | 强订单和 backlog 有利，但工作资本波动仍在 | 基准保留；悲观需具体交付/订单恶化触发 |
+| Pattern Generators Q1 backlog 14 台系统，2026Q2-2027Q1 有 13 台计划交付 | 产品贡献/收入基数 | 支撑 PG 基准收入 `SEK 3.2-3.7bn` | 高毛利系统正常交付支撑集团 margin | 客户验收和交期是执行变量 | 基准保留；极乐下移为上限，因新增订单交期可能超过 NTM |
+| 2026-04 定制 SLX `USD 27-30m`，交付 2028，公告称 one-off | 收入基数/附录 | 不进入 NTM 基准；可增强长期 backlog 质量 | 不提高 NTM 利润 | 对 NTM 现金流可能有预付款但未披露，不计入 | NTM 基准排除；移入附录/仅作跟踪 |
+| Global Technologies Q1 orders `SEK 915m`、backlog `SEK 1.692bn`，订单同比 +260% | 产品贡献/公司利润 | 支撑 PCB Test/Die Bonding 基准和乐观 | GT TTM EBIT margin `16.1%`，Q1 `24.1%`但含 `SEK 22m`正面重估 | backlog 转收入和并购整合是关键 | 基准保留，乐观保留；极乐需连续订单验证 |
+| 公司明确称 PCB Test 受 AI advanced boards、Die Bonding 光通信受 AI data center expansion/high-end transceivers 驱动 | 需求/收入基数 | 提升 GT 需求可信度 | 若高端设备和探针/服务占比高，利润率上行 | 客户、项目、金额未披露，执行可信度有限 | 基准小比例保留；乐观保留；不能上移到极乐主因 |
+| High Volume Q1 orders `SEK 737m`、backlog `SEK 1.011bn`，optical modules 为新市场 | 需求/产品贡献 | 支撑 High Volume 基准高于 TTM | mix 若偏光模块可改善，ESOP/费用会抵消 | 泰国工厂、关税和客户验收影响交付 | 基准保留；乐观保留；极乐下移为上限 |
+| PCB Assembly 欧洲和美国弱，backlog 仅 `SEK 116m` | 产品贡献 | 限制 PCB Assembly 收入上修 | 低利用率和竞争压低 EBIT margin | 客户等待终端订单，能见度短 | 基准保守；乐观低权重保留 |
+| Aftermarket TTM `SEK 1.971bn`，约收入 24% | 利润质量/现金流 | 支撑稳定收入底座 | 提高利润和现金流质量 | 装机和客户利用率决定续费/耗材 | 基准保留；作为利润质量加分，不重复加总 |
+| 并购集中：Hprobe、RoBAT、Surfx、ETZ、Cowin DST、Vanguard | 执行可信度/利润率 | 扩大产品覆盖，但产品拆分不足 | 收购费用、摊销、整合可压 margin | Q1 ETZ/Cowin contribution 小，PPA preliminary | 基准保守；C/D 级机会进入乐观/附录 |
+| 行业调研显示 2026 光罩/先进封装/光模块需求强，但多个环节不是 Mycronic 主收入池 | 需求校准 | 支撑需求背景，不等于公司收入 | 高毛利层在 PG/GT，但普通 SMT/点胶利润弱 | 需订单/交付/验收 | 行业 beta 不直接上移公司情景；只作为需求正向证据 |
+| 客户和产品级收入拆分不足 | 证据可信度 | 限制 PCB Test、Die Bonding、Photonic Interconnects 的基准权重 | 无法证明利润率单独改善 | 无法验证客户集中和交付节奏 | 乐观保留但可信度中；极乐低到中 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 `SEK 7.6-8.2bn`，低于 FY2026 指引和 TTM；利润率回落到 EBIT `17%-21%` | 没有强正向证据支持悲观成为主情景；仅作为执行/需求下行框架 | 2026Q1 强订单、强 backlog、指引上调、PG 明确交付表 | 保留 | 下行情景 | 中 | PG 交付推迟、GT 订单转化慢、PCB/High Volume 周期弱分别只在其层级处理，不在全公司重复压低 |
+| 基准 | NTM 收入 `SEK 8.8-9.4bn`，公司按 `SEK 8.75bn` FY2026 指引正常兑现并滚入 2027Q1 | Q1 收入/订单/backlog、FY2026 指引上调、PG 交付表、GT backlog、aftermarket 稳定 | 产品级 AI 收入未拆，Q1 PG margin 不可年化，并购费用/工作资本会扰动 | 保留 | 最可能情景 | 中高 | AI 题材不可直接上修；客户未披露只限制 GT 子线，不惩罚 PG A/B 级证据 |
+| 乐观 | NTM 收入 `SEK 9.7-10.6bn`，GT/High Volume/PG mix 同时优于基准 | GT 订单 +260%，PCB Test/Die Bonding 被公司点名 AI 驱动，High Volume 光模块新市场，PG 订单和行业需求稳定 | 需要连续订单、客户认证和交付；否则只是 Q1 强订单和叙事 | 保留 | 有条件乐观情景 | 中 | 光模块/CPO 延迟只限制 Die Bonding/Photonic，不重复压低 PCB Test 已有订单 |
+| 极度乐观 | NTM 收入 `SEK 10.8-12.0bn`，收入和利润率同时显著高于当前预期 | 多条需求线方向正确：AI advanced PCB、高端 transceivers、photomask、optical modules | 2028 定制 SLX 不进 NTM；CPO/photonic interconnect 多为 C/D 级；产品级客户/金额不足 | 下移 | 极度乐观上限，非当前主判断 | 低到中 | 远期期权缺证据只移入附录，不重复惩罚已确认 PG/backlog 和 GT 基准 |
+
+可信度说明：
+
+- 高可信证据：集团收入、订单、backlog、FY2026 指引、分部收入、PG 系统交付表、revenue type、现金和现金流。
+- 中高可信证据：GT backlog 与公司对 PCB Test / Die Bonding 需求的明确描述，但产品级收入拆分不足。
+- 中可信证据：High Volume 光模块新市场、PCB Assembly 恢复、Aftermarket attach 上行。
+- 低可信证据：CPO/Photonic Interconnects 大额 NTM 收入、Applied Plasma advanced packaging 大规模转收入、Magnetic Test 大额放量、2028 定制 SLX 对 NTM 的贡献。
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入中枢约 `SEK 9.1bn`，区间 `SEK 8.8-9.4bn`；EBIT margin 中枢约 `25%-26%`；EBITDA 中枢约 `SEK 2.6bn`。经营价值传导成立的主因是：PG 交付表和高利润底座可见，GT backlog 明显增强，High Volume 订单强，aftermarket 约四分之一收入提供稳定器。
+- NTM 收入结论：收入传导主链为 `photomask / advanced PCB / optical communications 需求 -> Mycronic 系统、测试、die bonding、点胶和服务订单 -> 交付验收 -> 收入确认`。基准收入不是把 AI 行业 TAM 线性映射到公司，而是围绕 `SEK 8.75bn` FY2026 指引、`SEK 4.707bn` backlog、PG 系统排程和 GT/High Volume 强订单做折扣后合成。
+- 利润/现金流结论：利润质量高于普通电子设备公司，核心原因是 Pattern Generators 和部分 GT 业务具有高毛利/服务粘性；但 Q1 的 `37.5%` 集团 EBIT margin 和 PG `64.4%` EBIT margin 不宜年化。现金流方向为正，但营运资本、应收、库存、并购整合和客户验收会造成季度波动。
+- 主要传导瓶颈：第一是 PG 系统 mix 和交付验收；第二是 GT 的 AI advanced PCB / optical communications 订单能否连续转收入；第三是 High Volume 的 optical modules 是否从新市场试单变成重复订单；第四是并购平台化能否提高服务/耗材，而不是只增加整合费用。
+- 乐观情景成立条件：2026Q2/Q3 GT orders 继续高于收入、backlog 不快速消耗；PCB Test 明确继续受 AI advanced boards 拉动；MRSI/Die Bonding 继续获得 high-end transceiver 或 silicon photonics 订单；High Volume 光模块订单重复；PG 新订单和 2027 交付排程维持高 ASP mix。
+- 极度乐观情景成立条件：PG 高毛利系统交付提前或新高 ASP 订单可在 NTM 内确认，GT 的 PCB Test 与 Die Bonding 都形成多客户量产订单，High Volume optical modules 从小市场变为主要增量，Aftermarket/service/probes attach 明显上升，且并购费用下降、现金转换同步改善。缺少任一核心环节，极度乐观都应降为乐观上限或附录跟踪。
+- 悲观情景触发条件：PG 交付表明显滑期或 mix 恶化；GT backlog 不能转收入或 Q2/Q3 订单回落到低位；光模块和 AI PCB capex 因客户库存/ASP/验收推迟；PCB Assembly 和 High Volume 同时受欧美/中国周期压制；并购整合费用和工作资本占用吞噬利润与现金流。
+- 后续跟踪数据：Mycronic 2026Q2 报告（公司财务日历显示 2026-07-14）、PG 系统交付表更新、GT order intake/backlog、GT organic growth 和 EBIT margin 剔除一次性重估后的水平、High Volume optical modules 是否被再次点名、PCB Assembly backlog、aftermarket revenue、现金流和工作资本、Cowin DST/ETZ/Surfx/RoBAT/Vanguard 的整合进度。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Mycronic 最新完整经营数据为 2026Q1，报告发布日期 2026-04-24；2025 年全年/年末报告发布日期 2026-02-05；Annual Report 2025 发布日期 2026-04-01；2026-04-14 定制 SLX 订单为期后事项，交付计划为 2028。
+- 主要收入、订单、指引和利润率来源：
+  - Mycronic Interim Report January-March 2026：https://storage.mfn.se/fc37436b-e2f2-4f49-9f06-cc710a20f428/interim-report-january-march-2026.pdf
+  - Mycronic Q1 2026 press release：https://www.mycronic.com/news-events/our-press-releases/interim-report-january-march-2026/
+  - Mycronic Year-end Report January-December 2025：https://www.mycronic.com/news-events/our-press-releases/year-end-report-january-december-2025/
+  - Mycronic Annual Report 2025：https://storage.mfn.se/74466bcb-9f6d-45f8-9c6a-71c20d3e0d6e/annual-report-2025.pdf
+  - Mycronic customized SLX order, 2026-04-14：https://www.mycronic.com/product-areas/photomask-equipment/press-releases/mycronic-receives-order-for-an-slx-mask-writer10/
+- 产品与技术来源：
+  - Mycronic Photomask Equipment：https://www.mycronic.com/product-areas/photomask-equipment/
+  - Mycronic MRSI-LEAP High-Speed Die Bonders：https://www.mycronic.com/product-areas/die-bonding/products/high-precision-flip-chip-die-bonders/mrsi-leap/
+  - Mycronic Die Bonding Products：https://www.mycronic.com/product-areas/die-bonding/products/
+  - Mycronic Photonic Interconnects / Telecom & Datacom：https://www.mycronic.com/product-areas/photonic-interconnects/application-markets/telecom-datacom/
+  - Mycronic Applied Plasma：https://www.mycronic.com/product-areas/applied-plasma/
+  - Mycronic Surfx acquisition：https://www.mycronic.com/news-events/our-press-releases/global-technologies-acquires-surfx-in-the-us/
+  - Mycronic ETZ acquisition：https://www.mycronic.com/news-events/our-press-releases/global-technologies-makes-acquisition-in-germany2/
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 公司当前收入预期为 `SEK 8.75bn`，由 2026Q1 报告上调；本报告 NTM 基准 `SEK 8.8-9.4bn` 包含 2027Q1，不能直接解读为公司已经再次上调 FY2026 指引。
+  - 2028 交付的定制 SLX `USD 27-30m` 为 one-off，公告明确不应作为可重复新 SLX 版本外推；本报告将其放入远期 backlog/极乐上限，不进入 NTM 基准。
+  - CPO/NPO、Photonic Interconnects、Applied Plasma advanced packaging、Magnetic Test/MRAM/TMR 在技术方向上正确，但产品级客户、订单金额和 NTM 确认路径不足，因此只作乐观或附录跟踪。
+- 项目内公司和行业资料：
+  - `公司调研/封测_检测_计量_光罩/MICLF_Mycronic_AB_公司调研_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_高端光罩与先进封装掩模_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`
+  - `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+- 主要限制：
+  - Mycronic 未披露 AI 数据中心收入占比，也未拆分 PCB Test、Die Bonding、Photonic Interconnects、Applied Plasma、Magnetic Test 的产品级收入；本报告对这些产品线使用区间和证据折扣。
+  - 本报告没有使用 `特征量化/`、Signals、回归、模型比较、排序结果、市场价格、股价、市值、P/E、P/S、EV/EBITDA 或目标价作为经营价值传导证据。

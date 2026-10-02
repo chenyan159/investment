@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "rootCorrect": true,
+    "versionCorrect": true,
+    "currentEqualsSnapshot": true,
+    "currentEqualsDraft": true,
+    "oldArchiveUnchanged": true,
+    "otherPlansUnchanged": true
+  },
+  "version": "20260919_003943",
+  "planFile": "分析报告/公司情景投资决策/研究方案/研究方案_20260919_003943.md",
+  "snapshot": "分析报告/公司情景投资决策/研究方案/20260919_003943/研究方案_20260919_003943.md",
+  "sha256": "a170cb8fa1a4e7b22a9c2b919826bf91e79ae897f30e94a044a3b746bde1eaa8",
+  "validation": "在内存构造任务并验证方案绑定和读取；未入队、未启动研究任务。"
+}

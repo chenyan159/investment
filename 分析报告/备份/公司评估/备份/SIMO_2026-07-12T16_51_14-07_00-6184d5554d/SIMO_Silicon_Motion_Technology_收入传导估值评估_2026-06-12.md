@@ -1,0 +1,156 @@
+# 公司收入传导与价值传导评估：Silicon Motion Technology
+
+评估对象：`SIMO` / Silicon Motion Technology Corporation / 慧荣科技  
+正式输出目录：`分析报告/公司评估/`  
+报告日期：2026-06-12  
+经营数据日期：公司财务数据截至 2026-04-29 披露的 2026Q1 财报和 Q2 2026 指引；行业数据补充到 2026-06-11 TrendForce 企业级 SSD 供需更新。  
+资料边界：使用 `公司调研/`、`行业调研/` 与公开一手公司/行业资料；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归或模型比较结论。  
+排除口径：不做全公司排序，不给投资评级，不判断股价区间，不做估值倍数判断；市场价格和估值数据不作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即 2026Q2-2027Q1 的未来 12 个月经营窗口；FY2026、FY2027、Gen6、ICMS、CMX、SM8466 和更长期 AI memory tier 只作补充或远期期权。
+- 当前收入基准、指引和 run-rate：2026Q1 收入 `$342.1M`，同比 `+105%`；Q2 2026 指引 `$393M-$411M`，同比 `+98%-107%`，GAAP 毛利率 `48.5%-49.5%`，GAAP 经营利润率 `19.8%-21.1%`。以 Q1 实际和 Q2 指引中位数看，2026H1 收入约 `$744M`，已经相当于 2025 全年 `$885.6M` 的约 `84%`。
+- 重要产品/业务线：`eMMC+UFS controllers`、`client/edge PCIe Gen5 SSD controllers`、`MonTitan enterprise SSD controllers`、`enterprise boot drive / SM8008 / BGA boot SSD`、`Ferri automotive/industrial embedded storage`。
+- NTM 公司收入四情景：悲观 `$1.35-$1.60B`；基准 `$1.75-$2.10B`；乐观 `$2.25-$2.80B`；极度乐观 `$3.10-$3.80B`。基准不是把 AI 行业增长直接套到公司，而是 Q2 指引兑现、eMMC/UFS 和 PCIe5 client 延续、MonTitan 与 boot drive 在 H2 部分收入化。
+- 利润或 EBITDA 四情景：悲观 GAAP 经营利润率约 `10%-15%`、净利润约 `$120-$210M`；基准 GAAP 经营利润率约 `20%-24%`、净利润约 `$300-$430M`；乐观 GAAP 经营利润率约 `25%-30%`、净利润约 `$470-$700M`；极度乐观 GAAP 经营利润率约 `31%-37%`、净利润约 `$800M-$1.15B`。净利润为经营模型估算，不包含未实现投资收益等非经营波动。
+- 最大传导瓶颈：MonTitan/boot drive 从 design win、客户 ramp 和产品展示变成可确认收入的速度；企业级 SSD 控制器需通过 NAND 兼容、OCP/NVMe、安全、固件和云厂 AVL 验证。
+- 最大利润率变量：产品 mix 从低端/周期性 controller 转向 PCIe5/enterprise/boot solution 的速度，以及 NAND 成本在 SSD solutions 中是否被客户吸收。
+- 最大现金流变量：Q1 2026 inventory 已升至 `$515.3M`，收入高增但经营现金流为 `-$31.2M`；若 H2 ramp 兑现，库存是交付准备，若延迟则压现金流和毛利。
+- 可信度：基准情景 `中高`，因为 Q1 和 Q2 指引为 A 级证据，MonTitan/5 家 CSP 为 B/C 级证据但未披露美元 backlog；乐观 `中`；极度乐观 `低到中`，必须等客户、SKU、出货和现金流验证。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| eMMC+UFS controllers | 2025 收入约 `$354-$399M`；2026Q1 推算 `$145-$170M` | 2025 `40%-45%`；2026Q1 推算 `42%-50%` | 当前最大收入底座，Q1 同比 `+140%-145%` | A | 进入基准，是 NTM 规模和 EPS 底座，但需求受手机产量与存储成本压制 | Edge AI/mobile AI 带动更高 UFS 规格，但不按 AI 数据中心收入处理 |
+| Client/edge PCIe Gen5 SSD controllers | 2025 SSD controller 全部约 `$398-$443M`；2026Q1 client/edge 部分推算 `$105-$125M` | 2025 SSD controller 全部 `45%-50%`；2026Q1 client/edge 推算 `30%-37%` | PCIe5 高 ASP、AI PC 和高端 PC/edge SSD 现实增长 | A | 进入基准，按 PCIe5 mix 和 NAND 供给约束保守纳入 | SM2524XT AI PC/KV cache 主要进入 2026H2-2027，基准只小比例反映 |
+| MonTitan enterprise SSD controllers | Q1 2026 收入未披露，推算 `<$10M`；Q2 volume production，H2 客户 ramp | Q1 很小；NTM 可能成为主要增量 | AI data center / enterprise SSD controller 的核心上修项 | B/C | 进入基准但需折扣，因有官方 Q2 量产和 5 家 tier-one CSP ramp 线索，但未披露订单美元额 | SM8466 Gen6、NVIDIA ICMS/CMX、near-GPU SSD、KV cache storage 主要列为乐观/极度乐观或附录 |
+| Enterprise boot drive / SM8008 / BGA boot SSD | Q1 2026 Ferri & Boot Drive solutions 合计推算 `$35-$65M`，boot drive 推算 `$15-$35M` | Q1 合计 `10%-19%`，boot 部分低个位到约 `10%` | 最快从 AI infrastructure 进入收入表的产品，已随 AI/GPU customer scale | A/B | boot/solution 总体进入基准；SM8008 新 adoption 进入乐观，因 ATP/Exascend adoption 与 AI providers 仍需转量产 | 若 AI server/DPU/switch boot 标配化，NTM 上限较高 |
+| Ferri automotive/industrial embedded storage | Q1 2026 Ferri & Boot Drive solutions 中推算 `$15-$30M` | Q1 低个位到约 `9%` | 高可靠嵌入式和车载/工业稳定性，利润属性可能好于低端 controller | A/C | 进入基准，但不作为 AI 数据中心主线 | Automotive physical AI、robotics 和长期车规周期作为补充 |
+
+## 3. 产品需求四情景
+
+本步口径：只判断外部需求池，不判断 SIMO 份额、收入确认、利润率或公司合计收入。需求强弱相对该产品自己的当前预期衡量。当前需求锚主要来自公司 Q1/Q2 指引、2025 20-F 产品结构、TrendForce 2026-06-11 企业级 SSD 供需、TrendForce 2026-06-09 手机产量、项目内 `行业调研_企业级SSD与高速存储控制器_2026-06-10.md` 和 `行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md`。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| eMMC+UFS controllers | Q1 2026 该线收入 QoQ `+30%-35%`、YoY `+140%-145%`；但 TrendForce 预计 2026 全球智能手机产量约 `1.051B`、YoY `-16.2%` | 手机产量和低端机 BOM 压力使 UFS/eMMC unit 下滑，客户降规格，需求低于当前 share gain 路径 | 单位需求弱但 SIMO 份额和 UFS mix 抵消，NTM 需求基本符合 Q2 指引和正常替换 | 高端 Android、edge/IoT、车载嵌入式需求维持，UFS mix 继续上行 | AI phone/edge AI 推动高规格 UFS 非线性放量，但需要终端 sell-through | 需求单位以 controller 出货和 UFS mix 衡量；基准为中高双位数到高双位数收入增速 | 基准略高于传统手机行业，但不等同 AI 数据中心 | 正向：Q1 份额提升；反证：手机 2026 下行、存储涨价压低中低端需求 |
+| Client/edge PCIe Gen5 SSD controllers | Q1 2026 SSD controller YoY `+40%-45%`，PCIe5 ASP 高于前代；SM2524XT/SM2508 代表 Gen5 edge/AI PC 方向 | NAND 价格过高抑制 PC/consumer SSD 容量，低端 controller unit 下滑，PCIe5 高 ASP 不能完全抵消 | PCIe5 渗透和 AI PC/高端 notebook 需求正常兑现，高 ASP 支撑收入 | AI PC、本地 agent、creator/gaming 和 white-box server 带动 Gen5 高端 mix 上修 | Edge AI KV cache 使高 IOPS DRAMless Gen5 成为主流，客户抢 controller allocation | 需求单位为 PCIe5 controller 出货、ASP 和 Gen5 mix；基准为收入继续高于 2025 run-rate | 基准高于历史周期底部，乐观需看到 PC/edge 真实出货 | 正向：SM2524XT 新品、PCIe5 ASP；反证：PC 需求弹性、NAND 成本挤压 |
+| MonTitan enterprise SSD controllers | TrendForce 1Q26 top-five enterprise SSD revenue `$18.46B`、QoQ `+86.1%`；AI Agent/CSP 采购强，SIMO Q2 volume 和 H2 5 家 CSP ramp | 企业级 SSD 供应紧但客户偏 captive controller 或 NAND 原厂完整 SSD，merchant controller 需求低于预期 | PCIe Gen5 enterprise SSD、QLC/TLC warm storage、compute SSD 需求强，MonTitan 对应需求池正常增长 | AI inference、RAG、checkpoint、near-GPU storage 使高 QoS controller 需求超过当前预期 | ICMS/CMX/Storage-Next 提前进入采购清单，Gen6/near-GPU SSD 需求非线性放量 | 需求单位为 enterprise SSD controller sockets、high-capacity QLC/TLC attach 和 ASP；行业需求绝对高增 | 基准符合行业景气，乐观要求 SIMO 进入客户 SKU | 正向：企业级 SSD 供需强、公司 5 CSP 线索；反证：qualification、captive controller、Gen6 时点 |
+| Enterprise boot drive / SM8008 / BGA boot SSD | AI server、DPU、switch、management node 均需 boot storage；SM8008 2026-03 发布，ATP/Exascend adoption；Q1 boot drive 随 AI/GPU customer scale | AI/GPU customer 初始订单一次性，boot attach 或 ASP 低于预期，客户沿用既有方案 | AI infrastructure server 数量增长，boot drive 作为低功耗安全基础件正常放量 | GPU/DPU/switch 平台对 OCP boot SSD、安全和低功耗要求提高，boot solution attach 上修 | AI rack 中 DPU/switch/server boot 标准化，SIMO 完整 solution 而非只卖 controller | 需求单位为 boot SSD/AI server、DPU/switch attach、controller/solution ASP；基准为随 AI server 线性增长 | 基准可进入 NTM，极度乐观需平台级指定 | 正向：Q1 已 scale、SM8008 under 5W、OCP boot spec；反证：单机价值低、多供替代 |
+| Ferri automotive/industrial embedded storage | Q1 Ferri 与 boot 合并收入 QoQ `+205%-210%`，公司称新 Ferri automotive products ramp | 汽车/工业客户受存储成本和库存周期影响推迟，Ferri 增长回落 | 车载、工业、通信、medical、server embedded 稳定增长，基准低于 boot/enterprise 弹性 | Automotive physical AI、ADAS 和工业 edge AI 带动高可靠存储需求上修 | 车规/工业 AI 设备集中上量并锁定 SIMO 方案 | 需求单位为 embedded storage solution 出货与 ASP；绝对增量低于前三条主线 | 基准为稳定附加项，不是公司上修主因 | 正向：Ferri Q1 ramp；反证：车规周期长、NAND 成本和客户库存 |
+
+## 4. 可收入化暴露与收入基数
+
+本步口径：只判断外部需求能否进入 SIMO NTM 收入表，以及当前可收入化基数；不预测增长，不判断利润率。证据等级按收入表可确认性定义：A=已披露收入/财务指引，B=订单/backlog/客户项目/交付时间表，C=design win/认证/管理层可验证披露，D=产品发布/样品/早期合作，E=只有主题相关。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| eMMC+UFS controllers | 2025 收入约 `$354-$399M`；Q1 2026 推算 `$145-$170M` | 直接收入 | 高量 controller，毛利受 ASP/mix 和 NAND 客户成本传导影响 | `$480-$620M` | `$650-$780M` | `$780-$900M` | `$900M-$1.05B` | 基准符合 Q1/Q2 高 run-rate，但不把手机行业弱势忽略 | A | 是 | 2025 20-F 产品占比、Q1 产品线增速、Q2 指引 | 基准主口径收入底座；反证来自手机产量和存储成本 |
+| Client/edge PCIe Gen5 SSD controllers | 2025 SSD controller 全部约 `$398-$443M`；Q1 client/edge 推算 `$105-$125M` | 直接收入 | 高 ASP controller，利润属性好于低端 SSD controller | `$400-$500M` | `$520-$680M` | `$650-$800M` | `$850M-$1.10B` | 基准符合 PCIe5 mix 上行和公司 Q2 指引 | A/C | 是 | 2025 20-F、Q1 SSD controller YoY `+40%-45%`、SM2508/SM2524XT 新品 | 基准纳入现有 PCIe5；SM2524XT 大规模 AI PC 只小比例纳入 |
+| MonTitan enterprise SSD controllers | Q1 收入未披露；Q2 2026 volume commercial production；H2 5 家 tier-one CSP ramp | 直接收入，但需客户 SSD/SKU 确认 | 高 ASP、高 firmware/QoS 价值，前期 R&D 和 support 重 | `$20-$80M` | `$120-$240M` | `$300-$450M` | `$650-$900M` | 基准高于 Q1 revenue visible base，但低于长期 TAM；当前只代表有折扣收入化路径 | B/C | 是，折扣纳入 | 公司 Q1 release 明确 Q2 volume、H2 5 CSP ramp；GTC 2026 展示 ICMS/near-GPU/nearline | 基准纳入部分 ramp；Gen6/ICMS 非线性只进乐观/极度乐观 |
+| Enterprise boot drive / SM8008 / BGA boot SSD | Q1 Ferri & Boot Drive solutions 合计推算 `$35-$65M`，boot 部分推算 `$15-$35M`；SM8008 ATP/Exascend adoption | 直接收入，完整 solution 时 ASP 高于 controller | 若含 NAND，则毛利低于纯 IC但 ASP 高；安全/firmware 粘性较强 | `$80-$150M` | `$200-$360M` | `$350-$550M` | `$700M-$1.00B` | 基准符合 AI/GPU customer scale 和 Q2 指引；SM8008 新客户量产不全部进入基准 | A/B/C | 是 | Q1 solutions 已确认高增；公司披露 enterprise boot drive with AI infrastructure/GPU customer scale；SM8008 发布和客户采用 | NTM 重要增量，需分清 boot drive 单价低和完整 solution ASP |
+| Ferri automotive/industrial embedded storage | Q1 Ferri & Boot 合计中推算 `$15-$30M`；Ferri automotive products ramp | 直接收入 | 高可靠嵌入式 solution，毛利受 NAND 成本影响 | `$60-$100M` | `$100-$180M` | `$150-$220M` | `$220-$350M` | 基准略高于历史 run-rate，但低于 AI/enterprise 弹性 | A/C | 是 | Q1 公司披露新 Ferri automotive ramp；2025 20-F SSD solutions `0%-5%` | 基准作为稳定附加项；physical AI 只作远期期权 |
+| SM8466 Gen6 / CMX / ICMS / GPU-initiated SSD | 产品展示和生态线索，未披露 NTM 收入 | 直接潜在收入 | 若量产为高 ASP controller，利润属性好 | `无法可靠量化` | `0-$20M` | `$50-$150M` | `$200-$500M` | 当前不是基准收入主线，只是 NTM 上限/远期期权 | C/D | 基准仅象征性或不纳入 | GTC/COMPUTEX 展示，行业 Gen6 2026H2-2027 才成熟 | 主要移入附录和后续跟踪；不能替代 NTM 主表 |
+
+## 5. 产品级收入和利润贡献
+
+本步口径：从第一步需求和第二步收入基数出发，判断每个重要产品在 NTM 内能贡献的收入和利润。因公司不披露分产品毛利率和 OPM，本表“利润贡献”采用产品毛利贡献近似并附利润率方向；公司层面在第 6 节统一扣除 R&D、sales、G&A、税和营运资本。所有金额为 NTM 估算，不是公司指引。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| eMMC+UFS controllers | 悲观产品 | `$480-$620M` | 毛利约 `$200-$290M` | 下行到持平 | 低于当前 Q1/Q2 run-rate | TrendForce 预计 2026 手机产量 YoY `-16.2%`，中低端机受存储成本压制 | 保留悲观 | 手机需求、客户降规格、价格重谈 |
+| eMMC+UFS controllers | 基准产品 | `$650-$780M` | 毛利约 `$300-$380M` | 持平到小幅改善 | 符合当前预期 | Q1 该线 YoY `+140%-145%`，公司称 share gain | 保留基准 | 不能把 share gain 永久化 |
+| eMMC+UFS controllers | 乐观产品 | `$780-$900M` | 毛利约 `$370-$460M` | 改善 | 高于当前预期 | 高端 UFS mix、Android share gain、edge/auto 需求 | 保留乐观 | 手机总量下滑限制上限 |
+| eMMC+UFS controllers | 极度乐观产品 | `$900M-$1.05B` | 毛利约 `$440-$560M` | 明显改善 | 显著高于当前预期 | AI phone/edge AI 高规格化与份额继续突破 | 下移为乐观上限 | 缺少 NTM 可验证终端需求，不得按 AI 数据中心逻辑上修 |
+| Client/edge PCIe Gen5 SSD controllers | 悲观产品 | `$400-$500M` | 毛利约 `$180-$240M` | 下行 | 低于当前预期 | PC/consumer SSD 受 NAND 价格挤压，低端 unit 下滑 | 保留悲观 | NAND supply 挤出 consumer，客户降容量 |
+| Client/edge PCIe Gen5 SSD controllers | 基准产品 | `$520-$680M` | 毛利约 `$260-$360M` | 小幅改善 | 符合当前预期 | Q1 SSD controller YoY `+40%-45%`，PCIe5 ASP 高 | 保留基准 | 高 ASP 能否抵消 unit 弱势 |
+| Client/edge PCIe Gen5 SSD controllers | 乐观产品 | `$650-$800M` | 毛利约 `$340-$440M` | 改善 | 高于当前预期 | AI PC、SM2508/SM2524XT、high-end Gen5 mix | 保留乐观 | AI PC 出货和本地 KV cache 仍需验证 |
+| Client/edge PCIe Gen5 SSD controllers | 极度乐观产品 | `$850M-$1.10B` | 毛利约 `$460-$650M` | 明显改善 | 显著高于当前预期 | Edge AI 本地存储成为系统瓶颈，客户锁 controller allocation | 下移为乐观上限 | NTM 缺少足够 SSD SKU 和终端需求证据 |
+| MonTitan enterprise SSD controllers | 悲观产品 | `$20-$80M` | 毛利约 `$10-$45M`，费用吸收后经营贡献有限 | 低于目标 | 低于当前 enterprise/AI 叙事 | 客户偏 NAND 原厂/captive controller，qualification 延迟 | 保留悲观 | Captive controller、AVL、Gen5/Gen6 验证 |
+| MonTitan enterprise SSD controllers | 基准产品 | `$120-$240M` | 毛利约 `$70-$150M` | 改善 | 符合折扣后的当前预期 | 公司称 Q2 volume、H2 5 家 tier-one CSP ramp | 保留基准 | 未披露 backlog 美元数和具体客户 SKU |
+| MonTitan enterprise SSD controllers | 乐观产品 | `$300-$450M` | 毛利约 `$180-$300M` | 明显改善 | 高于当前预期 | AI Agent 带动 enterprise SSD 收入 QoQ `+86.1%`，SIMO 进入多客户量产 | 保留乐观 | NAND allocation、客户多供压价 |
+| MonTitan enterprise SSD controllers | 极度乐观产品 | `$650-$900M` | 毛利约 `$400-$600M` | 大幅改善 | 显著高于当前预期 | ICMS/CMX/near-GPU SSD 变成采购清单，SM8466/SM8366 被多云厂采用 | 下移为极度乐观上限 | 任一环节缺证据就不能保留为主判断 |
+| Enterprise boot drive / SM8008 / BGA boot SSD | 悲观产品 | `$80-$150M` | 毛利约 `$30-$65M` | 持平到下行 | 低于当前预期 | boot drive 只是一两个客户初始订单，完整 solution ASP 低 | 保留悲观 | 单机价值低、多供、客户平台切换 |
+| Enterprise boot drive / SM8008 / BGA boot SSD | 基准产品 | `$200-$360M` | 毛利约 `$80-$160M` | 小幅改善 | 符合当前预期 | Q1 Ferri & Boot Drive solutions YoY `+755%-760%`，AI/GPU customer scale | 保留基准 | Boot 与 Ferri 未拆分披露，需折扣 |
+| Enterprise boot drive / SM8008 / BGA boot SSD | 乐观产品 | `$350-$550M` | 毛利约 `$150-$270M` | 改善 | 高于当前预期 | SM8008 OCP boot spec、ATP/Exascend adoption、AI server/DPU/switch attach | 保留乐观 | 需要更多 AI infrastructure providers 转量产 |
+| Enterprise boot drive / SM8008 / BGA boot SSD | 极度乐观产品 | `$700M-$1.00B` | 毛利约 `$300-$520M` | 明显改善 | 显著高于当前预期 | Boot storage 在 AI rack 标准化，SIMO 供应完整 BGA boot solution | 下移为乐观上限到极度乐观 | attach rate 和 ASP 缺少可审计披露 |
+| Ferri automotive/industrial embedded storage | 悲观产品 | `$60-$100M` | 毛利约 `$25-$45M` | 持平到下行 | 低于当前预期 | 汽车/工业客户库存或成本压力 | 保留悲观 | 车规周期长、NAND 成本 |
+| Ferri automotive/industrial embedded storage | 基准产品 | `$100-$180M` | 毛利约 `$45-$85M` | 持平到小幅改善 | 符合当前预期 | 公司称新 Ferri automotive products ramp | 保留基准 | 与 boot 合并披露，拆分低可信 |
+| Ferri automotive/industrial embedded storage | 乐观产品 | `$150-$220M` | 毛利约 `$70-$115M` | 改善 | 小幅高于当前预期 | 车载、工业和通信 edge 需求同步 | 保留乐观 | 终端周期和认证节奏 |
+| Ferri automotive/industrial embedded storage | 极度乐观产品 | `$220-$350M` | 毛利约 `$100-$190M` | 明显改善 | 高于当前预期 | Physical AI/robotics/vehicle compute 大幅拉动高可靠 embedded storage | 移入附录 | NTM 缺少明确客户和出货时间表 |
+
+## 6. 公司收入和利润四情景
+
+本步口径：将产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向；不讨论市场定价。汇总时已扣除产品间重复计算，尤其是 SSD controller 内的 client/edge 与 MonTitan、Ferri 与 boot drive 的合并披露问题。`绝对增速` 相对 TTM 收入约 `$1.061B` 计算，TTM = 2025 全年 `$885.6M` + 2026Q1 `$342.1M` - 2025Q1 `$166.5M`。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$1.35-$1.60B` | `+27%-51%` vs TTM | 低于 Q2 后继续 sequential growth 的管理层路径；Q2 可兑现但 H2 放缓 | `44%-47%` | `10%-15%` | 净利润约 `$120-$210M` | 低或负，库存继续占现金 | 中 | 手机/PC 弱、MonTitan qualification 慢、boot 订单一次性、库存消化慢 |
+| 基准公司 | `$1.75-$2.10B` | `+65%-98%` vs TTM | 接近当前 Q2 指引和管理层“sequential growth throughout 2026”的正常兑现 | `48%-50%` | `20%-24%` | 净利润约 `$300-$430M` | 由负转正但低于净利润，库存和应收仍占用 | 中高 | MonTitan/boot 从可见项目变收入的节奏，NAND allocation 与客户验收 |
+| 乐观公司 | `$2.25-$2.80B` | `+112%-164%` vs TTM | 明显高于当前 run-rate，且由 eMMC/UFS、PCIe5、boot、MonTitan 多项共同贡献 | `50%-53%` | `25%-30%` | 净利润约 `$470-$700M` | 正且改善，库存周转和客户预付款/回款改善 | 中 | 需看到 5 家 CSP 大多转量产、boot 多客户、GM 回到 50%+ |
+| 极度乐观公司 | `$3.10-$3.80B` | `+192%-258%` vs TTM | 显著高于当前预期，AI enterprise/boot 成为主要增长引擎而非辅助项 | `52%-56%` | `31%-37%` | 净利润约 `$800M-$1.15B` | 强正向，但需供应和客户付款同步 | 低到中 | 需要需求、份额、ASP/mix、执行、现金流同时成立；不能只靠 SM8466/ICMS 叙事 |
+
+## 7. 证据校准、反证和可信度
+
+本步口径：只校准前四步情景，不重新预测经营结果。校准动作仅使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 实际收入 `$342.1M`，Q2 指引 `$393-$411M` | 收入基数、公司汇总 | 抬高基准公司收入下限，证明 Q2 revenue path 已在 backlog/订单节奏中可见 | Q2 GM 指引 `48.5%-49.5%` 抬高基准利润率 | Q1 OCF 仍负，说明高增需营运资本支持 | 基准保留 |
+| Q1 eMMC+UFS YoY `+140%-145%`，但 2026 手机产量预期下滑 | 产品需求、产品贡献 | eMMC/UFS 进入基准，但不按行业热度继续无限上修 | mix 有利，但手机降规格和客户成本压制会限制 GM | 若手机客户保守排产，库存和应收回款变慢 | 基准保留，极度乐观下移 |
+| Enterprise SSD 1Q26 行业收入 `$18.46B`、QoQ `+86.1%` | 产品需求 | 支撑 MonTitan 和 enterprise controller 乐观情景 | 高端 controller/firmware 可获得更高 ASP | 行业供需紧支持订单，但也带来 NAND allocation 风险 | 乐观保留 |
+| MonTitan Q2 volume production 和 H2 5 家 tier-one CSP ramp | 收入基数、产品贡献 | 使 MonTitan 从远期期权进入 NTM 基准，但需折扣 | 若量产良好，GM/OPM 改善明显 | qualification、firmware support、客户验收决定收入确认 | 基准保留，可信度中 |
+| Enterprise boot drive 已随 AI/GPU customer scale，SM8008 获 ATP/Exascend adoption | 收入基数、产品贡献 | boot/solution 进入基准，SM8008 新客户进入乐观 | 完整 solution ASP 高，但含 NAND 会拉低纯 IC 毛利率 | boot drive 客户平台化后替换成本高 | 基准保留，乐观保留 |
+| Q1 inventory `$515.3M`，OCF `-$31.2M` | 公司组合、现金流 | 不直接压收入，但若 H2 ramp 延迟会使收入下移 | 库存减值、NAND 成本错配会压 GM | 现金流主要反证，不能重复压需求和份额 | 现金流悲观保留 |
+| NAND 2026 供应紧、enterprise/server allocation 优先 | 产品需求、成本 | 支撑 enterprise/boot/client 高端 ASP，但抑制低端 PC/mobile unit | 高端 controller 利好，solutions 受 NAND 成本双刃剑影响 | 供应锁定决定交付能力 | 基准和乐观保留 |
+| Captive controller 和 NAND 原厂完整 SSD 替代 | 公司捕获 | 限制 MonTitan 份额和 extreme case | 多供压价限制超高 GM | qualification 失败会延后收入 | 极度乐观下移为上限 |
+| SM8466 Gen6、ICMS/CMX、GPU-initiated SSD | 远期期权 | NTM 可小额收入或工程样品，不能替代主表 | 若量产利润属性好，但 2026 证据不足 | 需要平台、retimer、DPU、软件共同成熟 | 移入附录或仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Q2 指引兑现但 H2 sequential growth 失败，NTM 收入 `$1.35-$1.60B` | Q1/Q2 高基数使收入仍高于 TTM | 手机/PC 下行、MonTitan 延迟、boot 订单一次性、库存现金流压力 | 保留 | 悲观公司 | 中 | 库存风险只在现金流和毛利处理，不重复压低所有产品需求 |
+| 基准 | Q2 指引兑现，H2 温和 sequential growth，NTM 收入 `$1.75-$2.10B` | A 级财务指引、A 级产品线收入、B/C 级 MonTitan/boot ramp | MonTitan 未披露美元 backlog，eMMC/UFS 受手机弱势约束 | 保留 | 基准公司 | 中高 | 手机需求反证只限制 eMMC/UFS，不惩罚 enterprise SSD demand |
+| 乐观 | 5 家 CSP、boot drive 多客户、PCIe5 高 ASP 同时兑现，NTM 收入 `$2.25-$2.80B` | Enterprise SSD 行业强、公司 Q2 volume、SM8008 adoption、COMPUTEX 产品线 | 客户 AVL、NAND allocation、captive controller、多供压价 | 保留 | 乐观公司 | 中 | 行业 SSD 景气不能自动等同 SIMO 份额，已在 MonTitan 份额折扣处理 |
+| 极度乐观 | AI storage/KV/ICMS 把 enterprise controller 和 boot drive 非线性拉入主 BOM，NTM 收入 `$3.10-$3.80B` | AI Agent、enterprise SSD 供需、ICMS/CMX 方向、SM8466/SM8366/SM8008 产品齐备 | 任一核心环节缺少可审计订单、客户、SKU 或收入确认，且 Gen6/ICMS 更偏 2027 | 下移 | 极度乐观上限，部分移入附录 | 低到中 | 不把 SM8466/ICMS 技术方向同时当成需求、收入和利润三次加分 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。NTM 收入最可能落在 `$1.75-$2.10B`，核心是 Q2 2026 指引兑现后，eMMC/UFS 和 PCIe5 client/edge SSD controller 维持高 run-rate，MonTitan 和 boot drive 在 H2 2026 开始贡献但还不是全部收入主体。利润上，毛利率最可能回到 `48%-50%`，GAAP 经营利润率约 `20%-24%`，自由现金流从 Q1 的负值逐步改善但不会立刻等同净利润。
+- NTM 收入结论：SIMO 的 NTM 收入上修来自三条不同传导链。第一条是 A 级证据的 eMMC/UFS 和 PCIe5 controller 现实收入；第二条是 boot drive / Ferri & Boot Drive solutions 已经在 Q1 进入收入表的快速放大；第三条是 MonTitan enterprise SSD controller 的 Q2 volume 和 H2 CSP ramp。第三条是最有弹性但也最需要折扣的部分。
+- 利润/现金流结论：产品 mix 向 PCIe5、enterprise controller 和 boot solution 上移，理论上利好 GM/OPM；但 SSD solutions 若包含 NAND，毛利率不一定像纯 controller 那样扩张。Q1 inventory `$515.3M` 和 OCF `-$31.2M` 是现金流最大约束。基准要求 H2 收入消化库存，乐观要求 inventory turns 和应收回款同步改善。
+- 主要传导瓶颈：不是 AI 存储有没有需求，而是 SIMO 能否把需求变成可确认收入。MonTitan 需要客户 SSD SKU、NAND 兼容、firmware validation、OCP/NVMe、security、tail latency、客户 AVL 和验收；boot drive 需要从 leading AI/GPU customer 扩散到更多 server/DPU/switch 平台。
+- 乐观情景成立条件：Q2 实际收入接近或高于 `$411M`，Q3 指引继续明显 sequential growth；5 家 tier-one CSP 至少多数在 H2 形成可确认出货；Ferri & Boot Drive solutions 继续高增长但 GM 不下滑；GAAP GM 稳定在 `50%` 附近或更高。
+- 极度乐观情景成立条件：MonTitan/SM8008 同时在多家云厂和 AI infrastructure providers 中变成量产 SKU；enterprise SSD controller ASP 和份额同步上修；ICMS/CMX/near-GPU SSD 在 NTM 内从展示进入采购；库存不再吞现金，经营现金流显著转正。
+- 悲观情景触发条件：Q2 落在指引低端且 Q3 sequential growth 停止；MonTitan 仍停留在 volume production 但缺客户出货披露；Ferri/boot Q1 的高增被证明为一次性；手机/PC 因存储成本进一步下修；GM 回落到 `47%` 以下且 inventory 继续增加。
+- 后续跟踪数据：Q2 实际收入、Q3 指引、产品线 QoQ/YoY 增速、MonTitan 客户/SKU/量产披露、boot drive customer 扩散、Ferri/boot 与 MonTitan 拆分线索、inventory turns、OCF、GAAP GM、enterprise SSD 行业 ASP、TrendForce eSSD revenue、NAND allocation、Gen6/ICMS/CMX 客户验证。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：2026Q1 财报和 Q2 指引来自 Silicon Motion 2026-04-29 earnings release；2025 年度结构来自 2026-04-30 2025 Form 20-F；行业供需最新补充至 2026-06-11 TrendForce enterprise SSD 更新。
+- 主要收入、订单、指引和利润率来源：
+  - Silicon Motion Q1 2026 earnings release：Q1 revenue `$342.1M`、Q1 product line growth、Q2 revenue guide `$393-$411M`、Q2 GM/OPM guide、MonTitan Q2 volume、H2 5 家 CSP ramp、inventory 和 OCF。链接：https://siliconmotiontechnologycorporation.gcs-web.com/news-releases/news-release-details/silicon-motion-announces-results-quarterly-period-ended-march-31
+  - Silicon Motion 2025 Form 20-F：2025 产品结构、地区收入、客户集中、MonTitan/boot drive 产品定义、fabless manufacturing、客户购买方式。链接：https://ir.siliconmotion.com/static-files/75ed9457-abd3-4fe2-8dc0-bbe8ffb9942a
+  - Silicon Motion SM8008 release：SM8008 PCIe Gen5 x4、under 5W、OCP Hyperscale NVMe Boot SSD Spec 1.0、ATP/Exascend adoption。链接：https://siliconmotiontechnologycorporation.gcs-web.com/news-releases/news-release-details/silicon-motion-launches-sm8008-industrys-first-purpose-built
+  - Silicon Motion GTC 2026 enterprise SSD controller release：MonTitan SM8466/SM8366、SM8308、SM8388、SM8008、NVIDIA ICMS、near-GPU、nearline/warm storage 和 boot drive AI server positioning。链接：https://siliconmotiontechnologycorporation.gcs-web.com/news-releases/news-release-details/silicon-motion-showcases-differentiated-enterprise-ssd
+  - Silicon Motion COMPUTEX 2026 release：SM2524XT、SM2508、SM2755、SM2738、SM8466、SM8366、SM8388、boot drive 和 Ferri 的 AI/edge/physical AI 产品线。链接：https://ir.siliconmotion.com/news-releases/news-release-details/silicon-motion-showcases-next-generation-storage-architectures
+  - Silicon Motion SM2524XT release：PCIe Gen5 DRAMless、AI inference/KV cache、14GB/s、2.5M IOPS、25% performance-per-watt improvement。链接：https://www.businesswire.com/news/home/20260528225884/en/Silicon-Motion-Introduces-Advanced-AI-Optimized-SM2524XT-PCIe-Gen5-DRAMless-SSD-Controller-for-AI-PCs
+- 行业需求来源：
+  - `行业调研/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-06-10.md`：PCIe Gen5/Gen6、QLC、EDSFF、enterprise controller、AI storage 和反证指标。
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md`：KV cache、CMX/STX、AI storage share、eSSD/data platform 需求框架。
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_存储晶圆制造_2026-06-11.md`：NAND/eSSD、HBM、server memory、存储晶圆供需和制造瓶颈。
+  - TrendForce 2026-06-11 enterprise SSD：top five enterprise SSD brands 1Q26 revenue `$18.46B`、QoQ `+86.1%`、contract price约 `+80%`、AI Agent/CSP procurement 和 high-performance SSD 作为 memory hierarchy 的需求。链接：https://www.trendforce.com/presscenter/news/20260611-13092.html
+  - TrendForce 2026-05-25 NAND suppliers：top-five NAND supplier revenue 1Q26 `$38.9B`、QoQ `+83.7%`，2026 主要 NAND 厂几乎不新增产能，server storage 和 high-capacity QLC enterprise SSD 优先。链接：https://www.trendforce.com/presscenter/news/20260525-13058.html
+  - TrendForce 2026-06-09 smartphone：1Q26 smartphone production `284M`、YoY `-1.7%`，2026 global smartphone production forecast `1.051B`、YoY `-16.2%`，memory cost pressure 影响 2Q and annual production。链接：https://www.trendforce.com/presscenter/news/20260609-13087.html
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 基准可由 Q1 `$342.1M`、Q2 midpoint `$402M` 和 H2 温和 sequential growth 推导到约 `$1.55-$1.80B`；若 H2 CSP/boot 兑现较强，可高于 `$1.85B`。
+  - FY2027 的主要变量不是手机/eMMC，而是 MonTitan enterprise SSD controller、SM8008/boot drive、SM8466 Gen6、ICMS/CMX、near-GPU/warm SSD、AI Agent/KV cache storage 是否进入云厂标准采购清单。
+  - SM8466 Gen6、GPU-initiated SSD、CMX/STX 和 computational storage 是远期期权；在 NTM 主表中只允许作为乐观/极度乐观上限，不能替代基准收入。
+- 主要来源：
+  - `公司调研/AI服务器_存储_EMS/SIMO_Silicon Motion Technology_公司调研_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_存储晶圆制造_2026-06-11.md`
+  - Silicon Motion Q1 2026 earnings release、2025 Form 20-F、SM8008 release、GTC 2026 release、COMPUTEX 2026 release、SM2524XT release
+  - TrendForce 2026-06-11 enterprise SSD、TrendForce 2026-05-25 NAND suppliers、TrendForce 2026-06-09 smartphone production

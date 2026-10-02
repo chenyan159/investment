@@ -1,0 +1,19 @@
+{
+  "plan": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\研究方案.md",
+  "before_sha256": "101821739377a4a9f941b66f0e87275dd1d6c57b39e0588725fc6c2931e681c7",
+  "before_bytes": 73300,
+  "protected": {
+    "D:\\drive\\Investment\\tools\\research-runner\\domains\\company-investment-decision.mjs": "3c15c54ed2d219bc757d1c9644fc762da0075811c9592e105218c6e49275dc64",
+    "D:\\drive\\Investment\\tools\\research-runner\\prompts\\company-investment-decision.mjs": "3a124a30ee8bb0c0ac79bc091fb5652a4a22296004e7f0de0652b46b4d832b01",
+    "D:\\drive\\Investment\\tools\\research-runner\\prompts\\common.mjs": "5e004e5b50b5f083e1de3e708b0538a7036e9f342b6fc505f50c9192a16af45a"
+  },
+  "after_bytes": 29591,
+  "after_sha256": "b9a747f38d207711d7b8919c94b6bb8151121943d6b943eb466bb36b58828657",
+  "backup": "D:\\drive\\Investment\\备份\\情景投资研究方案重构_2026-09-07_151607",
+  "verification": {
+    "original_backup_exact": true,
+    "runner_files_unchanged": true,
+    "formal_prompt_build": true,
+    "matrix_cells": 12
+  }
+}

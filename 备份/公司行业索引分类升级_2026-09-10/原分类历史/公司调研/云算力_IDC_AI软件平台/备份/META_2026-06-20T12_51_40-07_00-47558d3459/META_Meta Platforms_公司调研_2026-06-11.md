@@ -1,0 +1,398 @@
+# 公司：META Meta Platforms
+
+报告日期：2026-06-11（America/Los_Angeles 工作区日期）  
+行情快照：2026-06-11 美股收盘后 / 2026-06-12 00:15 UTC  
+正式分类目录：`公司调研/云算力_IDC_AI软件平台/`  
+资料边界：本报告仅使用项目内 `行业调研/` 相关 AI 产业资料和联网搜索；未读取、引用或继承 `特征量化/`、`日度资料/`、旧公司调研报告或其他目录。  
+核心结论：META 仍是广告现金牛，但 2026 年已经从轻资产广告平台变成“广告现金流 + 超大 AI CapEx + 自研推理芯片 + 多区域 AI 数据中心容量”的混合体。当前收入几乎全部来自广告，AI 数据中心本身没有外部收入；AI 对 META 的财务价值主要体现为广告推荐/定价改善、用户时长、未来 Meta AI/agent 商业化、以及 MTIA 降低单位推理成本。
+
+## 0. 核心摘要
+
+### 0.1 投资人眼中的 META
+
+| 维度 | 结论 |
+|---|---|
+| 当前公司形象 | 全球最大社交广告平台之一，核心资产是 Facebook、Instagram、WhatsApp、Messenger、Threads 的用户网络、广告数据、推荐系统和中小商家广告 ROI。 |
+| 2026 新定位 | 从“Family of Apps 广告平台”升级为“AI 驱动的注意力/广告平台 + 自用 AI 基础设施运营商 + 消费 AI 和 AI 眼镜平台”。 |
+| 当前收入来源 | 2026Q1 总收入 `$56.31B`，其中 Advertising `$55.02B`，占 `97.7%`；Reality Labs 仅 `$0.40B`，占 `0.7%`。 |
+| AI 现实口径 | AI 已强力支撑广告 impressions、价格、推荐和内容供给，但**AI 数据中心和 MTIA 不产生外部硬件收入**，其经济价值是降低推理成本、提高广告/推荐效率、支撑未来 AI 产品。 |
+| 最大变量 | 2026 CapEx 指引上调至 `$125-145B`，单年 CapEx 约等于 2025 年 `$72.22B` 的 `1.7-2.0x`；如果广告增长不能覆盖折旧、云服务、能源和人才成本，估值会被固定成本化压缩。 |
+| 最大优势 | 3.56B Family DAP、广告需求强、FoA 经营利润率高、现金流仍厚、MTIA 与 PyTorch/Triton/vLLM/OCP 深度结合。 |
+| 最大风险 | AI 基建超前投资、消费者 AI 直接收入路径不清晰、Reality Labs 长期亏损、EU/美国监管、青少年安全诉讼、模型/AI assistant 竞争落后于 OpenAI/Google/Anthropic。 |
+
+### 0.2 最新估值与财务健康度
+
+| 指标 | 最新数值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | `$568.43` | 2026-06-12 00:15 UTC 报价 | Q1 后因 AI CapEx 争议回落，估值低于多数 AI 高增长软件/半导体。 |
+| 市值 | `$1.46T` | 2026-06-12 00:15 UTC 报价 | 仍是 mega-cap，但不再按纯轻资产平台定价。 |
+| Trailing P/E | `20.67x-20.77x` | 2026-06-11/12，不同行情源 | 对应 TTM EPS 约 `$27.5`。 |
+| Forward P/E | `17.4x` | StockAnalysis/S&P Global，2026-06-11 | 市场仍预期利润增长，但分歧在 CapEx 折旧压力。 |
+| P/S | `6.71x` | StockAnalysis/S&P Global，2026-06-11 | 对 2026Q1 `+33%` 收入增速不算贵，但收入质量高度依赖广告。 |
+| Forward P/S | `5.47x` | StockAnalysis/S&P Global，2026-06-11 | 隐含未来 12 个月收入继续高增长。 |
+| 收入增速 | `+33% YoY` | 2026Q1 | 广告 impressions `+19%`，average price per ad `+12%`，量价齐升。 |
+| TTM 毛利率 | `81.94%` | StockAnalysis/S&P Global，2026-06-11 | 广告软件业务仍极高毛利；数据中心折旧主要进成本和 R&D。 |
+| TTM 净利率 | `32.84%` | StockAnalysis/S&P Global，2026-06-11 | Q1 GAAP 净利率被一次性税收收益抬高；标准化后仍约低 30% 区间。 |
+| Q1 2026 经营利润率 | `41%` | Meta Q1 2026 | 与 Q1 2025 持平，暂未被 AI 开支明显压垮。 |
+| 现金+有价证券 | `$81.18B` | 2026-03-31 | 流动性强。 |
+| 长债 | `$58.75B` | 2026-03-31 | 长债可控；但总债务含租赁后约 `$86.77B`。 |
+| 总债务/EBITDA | `0.76x` | StockAnalysis/S&P Global，2026-06-11 | 健康，但 AI CapEx 正把资产负债表从净现金推向接近净债务。 |
+| Q1 2026 FCF | `$12.39B` | Meta Q1 2026 | 仍强，但若全年 CapEx `$125-145B`，FCF 弹性会明显下降。 |
+
+资产负债表评价：**健康但固定成本化速度很快**。Meta 仍能用广告现金流、`$81B` 现金证券和较低杠杆覆盖 2026 AI 投资；但 Q1 已无回购、仅支付股息，且 2026 CapEx 上修至 `$125-145B`。如果 2027 继续高 CapEx，债务、租赁、供应商预付款和外部算力合同会成为估值约束。
+
+## 1. 公司业务、产业链定位与三年转型
+
+### 1.1 整体业务
+
+Meta Platforms 的正式报表分为两段：
+
+| 报表分部 | 主要产品 | 收入模式 | 2026Q1 收入 | 2026Q1 经营利润 |
+|---|---|---:|---:|---:|
+| Family of Apps | Facebook、Instagram、Messenger、WhatsApp、Threads、Meta AI、广告和商业消息 | 广告、商务消息、订阅、Meta Verified、少量支付/服务 | `$55.91B` | `$26.90B` |
+| Reality Labs | Meta Quest、Horizon、Ray-Ban Meta AI glasses、AR/VR/MR 软件硬件与内容 | 硬件销售、内容/服务，仍处早期 | `$0.40B` | `-$4.03B` |
+
+业务本质：
+
+- **广告是现金流主机**：2026Q1 advertising `$55.02B`，占总收入 `97.7%`，广告量 `+19%`、价格 `+12%`。
+- **WhatsApp/Other 是小而快的第二现金流苗头**：2026Q1 FoA other revenue `$885M`，同比 `+74%`，主要由 WhatsApp paid messaging 和 Meta Verified 推动。
+- **Reality Labs 是长期期权**：2026Q1 RL revenue `$402M`、同比 `-2%`，Quest 下滑被 AI glasses 增长部分抵消；经营亏损 `-$4.03B`。
+- **AI 数据中心是成本和产能资产，不是收入分部**：Meta 自建/租赁 AI capacity 支撑广告推荐、Meta AI、模型训练/推理和未来个人 AI，但报表不披露 AI 收入。
+
+### 1.2 投资人心中的公司变化
+
+过去三年投资人对 META 的看法大致经历三段：
+
+| 阶段 | 时间 | 投资人关注点 | 业务含义 |
+|---|---|---|---|
+| 效率修复 | 2023-2024 | “Year of Efficiency”、裁员、成本纪律、广告恢复 | 估值从元宇宙亏损折价中修复，广告利润率回升。 |
+| AI 广告红利 | 2024-2025 | Reels、推荐系统、Advantage+、广告信号恢复 | AI 提升 engagement、广告转化和平均广告价格，FoA 利润强。 |
+| AI 固定资产化 | 2025H2-2026 | CapEx 暴增、MTIA、自研模型、AI 数据中心、外部云容量合同 | 投资逻辑从轻资产广告转向“广告现金流能否养得起超级 AI 基建”。 |
+
+### 1.3 最近三年重大业务变动/转型/收购
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2023-2024 | 大幅削减低优先级项目、提高广告和推荐 AI 投入 | 恢复经营杠杆，广告收入和利润率改善。 |
+| 2023-2025 | Reels 和推荐系统成为 Instagram/Facebook 增长核心 | 短视频 monetization gap 逐步收窄，impressions 增长恢复。 |
+| 2024-2026 | MTIA 从第一/二代进入多代际路线：MTIA 300/400/450/500 | 自研推理/推荐芯片成为降本和供给安全核心。 |
+| 2025 | 通过 Scale AI 相关投资/人才引入强化 Superintelligence Labs | 增强数据、模型训练和 AI 组织能力，但也提高费用和声誉风险。 |
+| 2025 | 收购/整合语音、AI 可穿戴、芯片相关小团队（如 PlayAI、WaveForms、Limitless、Rivos 等公开报道） | 更偏 acquihire 与技术补强，规模远小于广告主业和 AI CapEx。 |
+| 2026-04 | Muse Spark 发布，Meta Superintelligence Labs 第一款模型进入 Meta AI app，API 私测 | 证明模型团队重组后的第一步，但商业化仍早期。 |
+| 2026-04 | CoreWeave 与 Meta 扩大约 `$21B` AI 云容量协议至 2032 | 明确外部推理/AI cloud capacity backlog。 |
+| 2026-04 | Broadcom-Meta 扩展 MTIA 合作，多代 custom silicon，2nm AI accelerator | 说明 MTIA 从单代项目变成多 GW、多代际基础设施路线。 |
+| 2026-06 | Meta 与 Reliance 签订印度首个 AI-enabled data center lease，首期 `168MW`，另配近 `1GW` 可再生能源 | AI capacity 从美国扩至核心国际市场，降低延迟并服务印度大用户盘。 |
+
+### 1.4 产业链位置
+
+Meta 在 AI 产业链中不是卖铲子的硬件供应商，而是**超大需求方、平台方和自用 ASIC owner**：
+
+```text
+
+用户/广告主/开发者需求
+-> Meta 应用流量、广告转化、Meta AI 使用量
+-> 推荐/广告/LLM/多模态模型
+-> GPU/MTIA/AMD/第三方云容量
+-> 数据中心、电力、冷却、网络、HBM、先进封装、光互联
+-> 折旧/云费用/电力/运维进入 Meta 成本
+-> 广告收入、未来 AI 产品收入、单位 token 成本改善
+
+```
+
+与项目内 `行业调研/` 口径一致，Meta 相关 AI 价值要分三层：
+
+| 层级 | 是否进入 Meta 收入 | 如何影响股票 |
+|---|---|---|
+| 广告/商业消息/订阅 | 是 | 当前收入和利润主体。 |
+| Meta AI、Muse、Llama、agent、AI glasses | 少量或未来才进入 | 可带来用户时长、订阅、API、硬件和广告新库存。 |
+| MTIA、数据中心、CoreWeave、Reliance、Richland Parish | 否，主要是 CapEx/成本 | 决定算力供给、单位推理成本、折旧压力和未来 AI 产品上限。 |
+
+## 2. 最近五个财报季度
+
+### 2.1 五季度核心财务表
+
+单位：十亿美元，除百分比外。
+
+| 财报季度 | 总收入 / YoY | 广告收入 | FoA other | Reality Labs | FoA 经营利润率 | RL 经营亏损 | 总经营利润率 | CapEx incl. finance lease | OCF / FCF | 订单、交期、backlog 与取消率判断 | AI 数据中心相关收入占比 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| 2026Q1 | `$56.31` / `+33%` | `$55.02` / `+33%` | `$0.89` / `+74%` | `$0.40` / `-2%` | `48.1%` | `-$4.03` | `41%` | `$19.84` | `$32.23 / $12.39` | 无广告 backlog；披露 2026 CapEx guide `$125-145B`，CoreWeave `$21B` through 2032，Broadcom-MTIA 多代合作，Reliance `168MW` lease。硬件/电力 lead time 紧。取消率未披露，签约 capacity 取消风险低但项目交付风险高。 | `0%` 直接收入；间接支撑几乎全部广告 AI。 |
+| 2025Q4 | `$59.89` / `+24%` | `$58.14` / `+24%` | `$0.80` | `$0.96` / `-12%` | `52.2%` | `-$6.02` | `41%` | `$22.14` | `$36.21 / $14.08` | 2026 初始 CapEx guide `$115-135B`；费用增长主因 infrastructure、depreciation、third-party cloud spend。 | `0%` 直接收入。 |
+| 2025Q3 | `$51.24` / `+26%` | `$50.08` / `+26%` | `$0.69` | `$0.47` / `+74%` | `49.2%` | `-$4.43` | `40%` | `$19.37` | `$30.00 / $10.62` | 指引 2026 CapEx dollar growth notably larger than 2025；明确自建和第三方云并用。Q3 一次性税费压低 GAAP EPS。 | `0%` 直接收入。 |
+| 2025Q2 | `$47.52` / `+22%` | `$46.56` / `+21.5%` | `$0.58` | `$0.37` / `+5%` | `53.0%` | `-$4.53` | `43%` | `$17.01` | `$25.56 / $8.55` | 2025 CapEx guide `$66-72B`；开始提示 2026 infrastructure depreciation 和 operating costs 明显上行。 | `0%` 直接收入。 |
+| 2025Q1 | `$42.31` / `+16%` | `$41.39` / `+16%` | `$0.51` | `$0.41` / `-6%` | `51.9%` | `-$4.21` | `41%` | `$13.69` | `$24.03 / $10.33` | 2025 CapEx guide 从 `$60-65B` 上修至 `$64-72B`，原因是 AI data center 和 infrastructure hardware 成本上升。 | `0%` 直接收入。 |
+
+解读：
+
+- META 没有传统制造业意义的 backlog/bookings；广告是实时竞价和消耗型收入，不形成长期 backlog。
+- 可确认的“订单/容量承诺”主要在成本侧：`$125-145B` 年 CapEx、CoreWeave `$21B` 长约、Richland Parish `>2GW`、Reliance `168MW`、Broadcom 多代 MTIA。
+- Q1 2026 收入和经营利润仍很强，但 CapEx run-rate 暗示 2026 下半年和 2027 折旧压力会继续上升。
+- Q3 2025 GAAP 净利受一次性非现金税费影响；经营利润和 FCF 更能反映真实业务。
+
+### 2.2 最近一次财报指引
+
+| 指标 | 2026Q1 后公司指引 | 投资含义 |
+|---|---:|---|
+| 2026Q2 收入 | `$58-61B` | 中点 `$59.5B`，同比约高 20% 区间，广告需求仍强。 |
+| 2026 全年总费用 | `$162-169B` | 与此前不变，但相对 2025 `$117.69B` 明显跳升。 |
+| 2026 全年 CapEx | `$125-145B` | 较 Q4 2025 指引 `$115-135B` 再上调 `$10B`；公司称因 component pricing 和 future capacity data center costs。 |
+| 2026 经营利润 | 高于 2025 operating income | 2025 operating income `$83.28B`；公司仍要求广告和成本效率覆盖 AI 投资。 |
+| 剩余季度税率 | `13-16%` | Q1 税收收益不可年化。 |
+
+## 3. 2026 收入占比、重点业务和产品
+
+### 3.1 最新收入占比
+
+以 2026Q1 为基准：
+
+| 业务/收入项 | 收入 | 占总收入 | YoY | 判断 |
+|---|---:|---:|---:|---|
+| Advertising | `$55.02B` | `97.7%` | `+33%` | 绝对主业，AI 推荐和广告工具已经直接改善量价。 |
+| FoA other | `$0.89B` | `1.6%` | `+74%` | WhatsApp paid messaging、Meta Verified 等，小而高增。 |
+| Reality Labs | `$0.40B` | `0.7%` | `-2%` | Quest 下滑，AI glasses 增长；仍大亏。 |
+| AI 数据中心 / MTIA / 外部云容量 | `0` 外部收入 | `0%` | NA | 是支撑广告和未来 AI 的成本/资产，不应计入收入。 |
+
+### 3.2 跳过或低优先级业务
+
+以下业务不是本报告重点：
+
+| 业务/产品 | 跳过原因 |
+|---|---|
+| 传统 Facebook feed 非 AI 改版细节 | 收入已并入广告，增速和差异化主要由 AI 推荐/广告系统解释。 |
+| Quest 传统 VR 游戏硬件 | 2026Q1 Reality Labs 收入下降，亏损大，短期不是 AI 基建高增主线。 |
+| Horizon Worlds / VR 社交内容 | 仍属于长期平台期权，财务可见度低。 |
+| 非 AI 消费订阅小功能 | 可能增长，但规模和战略重要性低于广告 AI、WhatsApp business、Meta AI。 |
+
+### 3.3 重点产品和小业务清单
+
+| 产品/业务 | 对应产品/型号 | 当前证据 | 当前贡献 |
+|---|---|---|---|
+| AI 广告与推荐引擎 | Facebook/Instagram/Reels/Threads 推荐、Advantage+、广告 targeting/measurement、Andromeda ads model、Ranking Engineer Agent/KernelEvolve | Q1 ad impressions `+19%`，price `+12%`；KernelEvolve 对 ads model 推理吞吐 `+60%`、MTIA 训练吞吐 `+25%` | 直接支撑 `$55.02B` Q1 advertising。 |
+| MTIA 自研 AI 芯片 | MTIA 100/200 已部署；MTIA 300、400、450、500；72-accelerator scale-up domain；PyTorch/vLLM/Triton/OCP | Meta 披露已部署 hundreds of thousands MTIA；300 in production，400 data center deployment path，450/500 mass deployment in 2027 | 无外部收入；内部转移价值/节省成本。 |
+| Meta AI / Muse Spark / Llama 系列 | Muse Spark、Meta AI app、private API preview、Contemplating mode、多模态/agent/tool-use | 2026-04 发布 Muse Spark；目标个人 superintelligence；API 私测 | 当前收入近 0，战略价值极高。 |
+| AI 数据中心容量 | 2026 CapEx `$125-145B`；Richland Parish `>2GW`；CoreWeave `$21B` capacity；Reliance Jamnagar `168MW`；近 `1GW` 印度 renewable contracts | 2026 最新可见订单和租赁 capacity 明确 | 成本/产能资产，支撑 AI 广告、Meta AI、模型训练推理。 |
+| WhatsApp paid messaging / Meta Verified | WhatsApp business messaging、click-to-message ads、Verified subscriptions | FoA other Q1 `$885M`，同比 `+74%` | 年化 `$3.5B+`，小而高增。 |
+| AI glasses / wearables | Ray-Ban Meta AI glasses、未来 AR glasses | RL Q1 revenue 下降但 AI glasses sales 增长；行业口碑和渠道强于 Quest | 收入不披露，估计仍小；长期可能成为个人 AI 入口。 |
+
+## 4. 当前关键产品：收入贡献、增速、AI 基建重要性
+
+评分：1 低，5 高。供需紧张程度越高代表越供不应求/越受瓶颈约束。
+
+| 关键产品/业务 | 当前收入贡献 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| AI 广告与推荐引擎 | Q1 advertising `$55.02B`；可归因 AI 增量不披露，估算 Q1 YoY 增量 `$13.6B` 中 `30-60%` 受 AI 推荐/广告工具影响 | `+33%` | 4 | 5 | 3 | 4.5 | 现金流核心；若 AI 广告 ROI 继续提升，可直接覆盖 CapEx。 |
+| MTIA 自研芯片 | 外部收入 `0`；2026 内部硬件转移/替代价值估算 `$3-8B`，成本节省尚不披露 | 高增，从 inference 到 R&R training、GenAI inference | 5 | 5 | 4.5 | 3.5 | 对降低推理成本和供应安全关键；但不卖给外部客户。 |
+| AI 数据中心容量 | 外部收入 `0`；Q1 CapEx `$19.84B`，FY guide `$125-145B` | CapEx YoY 约 `+73-101%` vs 2025 | 5 | 5 | 5 | 2.5 | 最大 bottleneck：电力、HBM、封装、液冷、光互联、施工。 |
+| Meta AI / Muse Spark / Llama | 当前直接收入近 `0`；广告/engagement 间接受益未披露 | 用户和能力爬坡期 | 5 | 5 | 4 | 3 | 若不能商业化，CapEx 会被质疑；若成为默认个人 AI 入口，空间很大。 |
+| WhatsApp paid messaging / Verified | Q1 FoA other `$0.885B` | `+74%` | 2 | 3 | 1.5 | 4 | 小而优质，可能成为广告外第二收入曲线。 |
+| AI glasses / wearables | RL 内不披露；RL 总收入 Q1 `$0.402B` | AI glasses 增长，Quest 下滑 | 3 | 3 | 2.5 | 3.5 | 小业务但潜力大；亏损和产品周期风险高。 |
+
+## 5. 一年后关键业务三情景预测
+
+口径：未来一年指截至 2027-06 附近的年化收入/内部价值，不是公司正式指引。所有 AI 数据中心和 MTIA 估算均为内部成本/转移价值或支撑能力，不计入外部收入。
+
+| 产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 | 关键反证 |
+|---|---|---|---|---|
+| AI 广告与推荐引擎 | 年化广告收入 `$275-295B`；增速 `+14-20%`；AI 继续推高 impressions 和 price，但折旧压利润率。重要性 4、紧急性 5、供需 3、溢价 4.5。 | 年化 `$300-320B`；增速 `+22-28%`；Reels/Threads/Advantage+ 和商务广告持续超预期。 | 年化 `$330-360B`；增速 `+30%+`；AI agent/creative 自动化显著提升广告转化，价格继续上行。 | 广告价格转负、用户时长下滑、欧盟广告个性化限制扩大。 |
+| MTIA 自研芯片 | 2027 内部转移/替代价值 `$12-25B`；渗透推荐/广告/GenAI inference `20-35%`；节省推理 TCO。 | `$25-45B`；MTIA 450/500 量产顺利，更多 GenAI inference 迁移。 | `$45-70B`；MTIA 成为 Meta 内部推理主平台，多 GW 级部署提前。 | HBM/TSMC/封装不足、软件迁移低效、模型架构变化导致 ASIC 利用率低。 |
+| AI 数据中心容量 | 2027 年化 CapEx/租赁承诺 `$140-165B`；新增有效 AI IT load `1.5-2.5GW` 级；CoreWeave/Richland/Reliance 按期推进。 | `$170-210B`；多个 multi-GW campus 和外部云容量同时推进，Rubin/MTIA/GB300 供给改善。 | `$220-280B`；Meta 采取更激进融资/租赁/快速部署，短期算力 per researcher 大幅领先。 | 电力并网、变压器、液冷、施工劳动力、利用率或融资成本恶化。 |
+| Meta AI / Muse / Llama | 直接收入 `$0-2B`，更多体现在 engagement 和广告；API 私测扩大。 | `$2-6B`，消费者/开发者/企业付费开始出现，Meta AI 广告或订阅试验有效。 | `$6-12B`，个人 AI 入口形成独立变现，开放模型生态拉动平台分发。 | 模型能力落后、免费用户无法转化、隐私/安全限制、API 价格战。 |
+| WhatsApp paid messaging / Verified | 年化 `$5-7B`，增速 `+35-60%`。 | `$7-10B`，印度/巴西/东南亚商务消息、click-to-message 转化强。 | `$10-15B`，WhatsApp business 变成 SMB/客服/agent 入口。 | 监管限制消息商业化、用户体验恶化、商户 ROI 下降。 |
+| AI glasses / wearables | RL revenue 年化 `$2-4B`，亏损仍大；AI glasses 增长抵消 Quest。 | `$4-7B`，AI glasses 成为日常 AI 入口，渠道扩张。 | `$7-12B`，下一代轻量 AR/AI glasses 打开高端消费电子曲线。 | 硬件续航/隐私/成本/应用不足，Apple/Google/Snap 竞争。 |
+
+## 6. BOM、单位内容量、价格传导链和当前产能
+
+### 6.1 AI 数据中心 / MTIA / GPU rack BOM 拆分
+
+Meta 不披露单 rack 采购价，下表为项目内行业调研和公开 AI rack 区间的交叉估算，用于判断数量级。
+
+| 单位 | 真实内容量估算 | 美元内容量 | Meta 相关性 |
+|---|---|---:|---|
+| 每 `1MW` AI IT load | 约 `6-17` 个高密度 rack，按 `60-160kW/rack`；约 `500-800` 个 GPU/ASIC accelerator-equivalent；网络、存储、供电、冷却按 rack 配套 | all-in AI CapEx 约 `$38-65M/MW`；facility-heavy `$10-22M/MW` | Richland `>2GW` 对应理论 `$76-130B` all-in 等效上限，但官方披露投资 `$10B+` 可能只覆盖早期/园区建设口径。 |
+| 每 Blackwell/同级 GPU rack | 典型 `72` GPU/rack，约 `120-140kW`；液冷、power shelf、switch/NIC/optics、管理节点 | `$3-8M+/rack`，高端代际更高 | Meta 使用 NVIDIA、AMD、CoreWeave 容量；用于训练、GenAI、推荐。 |
+| 每 MTIA 400/450/500 rack | Meta 披露 `72-accelerator scale-up domain`，同 chassis/rack/network 可跨代复用；450/500 面向 GenAI inference | 未披露；按 HBM ASIC rack 估算为数百万美元/rack | 核心是成本/token，而非外部 ASP。 |
+| 每 GPU/ASIC | 逻辑 die/芯片、HBM、先进封装、基板、VRM/board、NIC/scale-up/scale-out I/O、firmware/runtime | 高端 GPU/ASIC 等效价值约 `$15k-60k+`，视 HBM/封装/供给 | MTIA 450 HBM bandwidth 是 MTIA 400 的 `2x`；MTIA 500 比 450 再增 `50%`，Meta 目标是推理优先。 |
+| 每高速 optical port | 800G/1.6T optical transceiver 或 AEC/DAC/光引擎、DSP/TIA/CDR、EML/CW laser、连接器、光纤、测试 | 800G 约 `$500-1,500/port`；1.6T 早期约 `$1,500-4,000/port`，客户价差大 | 大集群对 800G/1.6T 端口需求非线性；Meta 的 MTIA/GPU/AMD/外部云都需要高带宽 fabric。 |
+
+Rack-level 成本结构：
+
+| 成本项 | 占 rack/system 成本 | 价格传导 |
+|---|---:|---|
+| GPU/ASIC + HBM + 先进封装 | `55-70%` | HBM、CoWoS、先进节点紧缺 -> ASP/预付款上升 -> Meta CapEx 上升。 |
+| 网络/NIC/switch/optics | `8-18%` | 800G/1.6T、Spectrum-X、Ethernet fabric、CPO 提升 GPU 利用率，价格可传导。 |
+| CPU/DRAM/storage/管理节点 | `5-10%` | 长上下文和 KV cache 增加 SSD/eSSD/CXL/SOCAMM attach。 |
+| 供电/机柜/液冷 | `8-15%` | 100kW+ rack 使 CDU、cold plate、busbar、48V/800VDC 重要性上升。 |
+| 系统测试/物流/现场调试 | `3-8%` | Rack acceptance 和 field reliability 决定收入确认和可用 token 产能。 |
+
+### 6.2 价格传导链
+
+```text
+广告 ROI / Meta AI 使用量 / agent tokens
+-> 模型训练、推荐、推理请求增长
+-> GPU/MTIA/AMD/第三方云 capacity planning
+-> HBM、先进封装、AI rack、网络、光模块、电力、液冷订单
+-> Meta CapEx、云费用、折旧、能源和运维成本上升
+-> 若 AI 提升广告转化和成本/token 下降，FoA 利润率守住
+-> 若 AI 收入和广告增量低于折旧/云费用，估值多重压缩
+```
+
+### 6.3 当前产能能力和供应链采纳
+
+| 产品/资产 | 当前产能/金额能力 | 供应链采纳 | 认证/阶段 |
+|---|---:|---|---|
+| MTIA 100/200 | Meta 披露 hundreds of thousands 已部署 | 内部生产模型已 onboard，Llama 也测试过 | 生产部署。 |
+| MTIA 300 | 2026 已生产，用于 R&R training | Broadcom/Meta/TSMC/HBM/OCP server chain | 生产阶段。 |
+| MTIA 400 | 72-accelerator scale-up domain；labs testing finished，path to data center deployment | 同 chassis/rack/network 可复用 | 数据中心导入前后。 |
+| MTIA 450 | 2027 early mass deployment；HBM bandwidth 较 400 翻倍 | 需要 HBM、先进封装、液冷/供电、PyTorch/vLLM/Triton 适配 | 预量产/认证。 |
+| MTIA 500 | 2027 mass deployment；HBM bandwidth 较 450 再 `+50%` | 面向 GenAI inference | 设计/导入。 |
+| CoreWeave capacity | `$21B` through Dec. 2032，含 Vera Rubin 初期部署 | 多地点部署，服务 Meta AI operations | 签约，交付窗口 2026-2032。 |
+| Richland Parish / Hyperion | 官方披露 `>2GW` compute capacity、`$10B+` investment、4M sq ft | Entergy、DPR/Mortenson/Turner 等建设生态 | 建设中，官方称支持未来开源 LLM 训练。 |
+| Reliance Jamnagar | 首期 `168MW`，可扩展；CleanMax/Fourth Partner 合计近 `1GW` renewable backing | Reliance built-to-suit，Meta lease | 已签 agreement，未来建设/交付。 |
+
+## 7. 一年后产能能力和认证阶段三情景
+
+| 产品/资产 | 基准：2027-06 | 乐观：2027-06 | 极度乐观：2027-06 |
+|---|---|---|---|
+| MTIA 300/400/450/500 | 300/400 承接 R&R 和部分 GenAI；450 进入量产验证；内部 ASIC 渗透 `20-35%`；内部转移价值 `$12-25B`。 | 450 量产顺利，500 早期上电；GenAI inference 大规模迁移；内部转移价值 `$25-45B`。 | 450/500 提前，Broadcom 2nm 进展顺利；MTIA 多 GW 级容量兑现，内部转移价值 `$45-70B`。 |
+| AI 数据中心 capacity | FY2027 CapEx/lease run-rate `$140-165B`；Richland、CoreWeave、India lease 按期推进。 | `$170-210B`；Rubin、GB300、MTIA、AMD 多路供应，电力和液冷缓解。 | `$220-280B`；多 campus、外部云和快速部署结构并行，算力供给领先同行。 |
+| 网络/光互联 | 800G 继续主流，1.6T 增加；每 accelerator `0.6-1.4` 高速端口等效。 | 1.6T 和 Spectrum-X/以太网 fabric 供给改善，Meta 内部和 CoreWeave capacity 更快上线。 | CPO/1.6T/OCS 提前渗透，网络不再是主要瓶颈。 |
+| 电力/液冷/MEP | 变压器、switchgear、施工和电力接入仍是最大约束。 | behind-the-meter、renewable、prefab electrical skids、AALC/液冷改善交付。 | Meta 大规模复制快速部署和多区域并网，缩短 time-to-compute。 |
+| Meta AI / Muse API | API 私测扩大，主要内部消化；安全评估和产品体验是认证重点。 | 面向开发者和企业开放更大范围 API/agent；付费试点。 | Consumer AI + business agent 形成独立收入，API 进入主流。 |
+
+## 8. 基于订单积压和供给推断未来一年业务增速
+
+### 8.1 可确认“订单/容量”线索
+
+| 线索 | 数字 | 解释 |
+|---|---:|---|
+| 2026 CapEx 指引 | `$125-145B` | Meta 自身最强采购信号，含 finance lease principal。 |
+| Q1 2026 CapEx | `$19.84B` | 若简单年化为 `$79B`，低于全年指引，意味着后续季度可能继续加速。 |
+| CoreWeave agreement | `$21B` through Dec. 2032 | 明确外部 AI cloud capacity backlog，用于 inference workloads，并包括 Vera Rubin 初期部署。 |
+| Richland Parish | `$10B+` investment，`>2GW` compute capacity | 长周期自建训练/推理 capacity。 |
+| Reliance Jamnagar | `168MW` first phase，可扩展 | 国际 capacity 和低延迟本地服务。 |
+| Broadcom-Meta | 多代 MTIA、2nm accelerator、未来三年合作 | 不披露金额；供应链采纳信号强。 |
+| Restricted cash | Q1 2026 将 `$5B` money market funds 转为 restricted cash，关联 multi-year purchase agreement | 说明存在长期采购义务/预留，未披露对象。 |
+
+### 8.2 未来一年业务增速情景
+
+| 业务 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| Total revenue FY2026/FY2027 run-rate | 2026E `$245-255B`；2027H1 run-rate `+14-18%` | 2026E `$255-265B`；2027H1 `+20-25%` | 2026E `$265B+`；2027H1 `+28%+` |
+| Advertising | `+14-20%` | `+22-28%` | `+30%+` |
+| FoA other | `+35-60%`，至年化 `$5-7B` | `+70-100%`，至 `$7-10B` | `+120%+`，至 `$10-15B` |
+| Reality Labs | `0-20%`，AI glasses 抵消 Quest | `+30-60%`，AI glasses 放量 | `+80%+`，新一代 AI/AR glasses 爆发 |
+| CapEx | 2026 `$125-145B`；2027 维持高位 `$140B+` | 2027 `$170B+` | 2027 `$220B+` |
+| FCF | 2026 受 CapEx 挤压，仍可能为正但低于广告利润增长 | 广告增长抵消折旧，FCF 较基准好 | 收入强但 CapEx 也极高，FCF 不一定最好 |
+
+判断：未来一年 META 收入增速主要由广告量价决定，不由 AI 数据中心收入决定。真实 backlog 更像是**成本侧产能 backlog**：CapEx、数据中心租赁、芯片供给、网络供给、外部云 capacity。若这些 capacity 没有转化为广告/Meta AI 使用量和利润率，业务增长不一定跟 CapEx 同步。
+
+## 9. 竞争格局、替代方案和客户替换成本
+
+### 9.1 广告与推荐
+
+| 竞争对手 | 竞争点 | META 优势 | 风险 |
+|---|---|---|---|
+| Google / YouTube | 搜索、视频、Performance Max、Gemini 广告工具 | Meta 社交流量、Instagram/Reels、社交图谱和 SMB 广告生态 | Google 搜索意图强，AI search 可重塑广告预算。 |
+| TikTok / ByteDance | 短视频时长和年轻用户 | Reels 已恢复增长，Meta 广告系统更成熟 | 用户时长竞争、创作者生态、监管变数。 |
+| Amazon Ads / retail media | 购物意图和闭环交易 | Meta 发现式广告和中小商家强 | 电商广告预算向 retail media 迁移。 |
+| Snap/Pinterest/Reddit/X | 垂直社区和年轻用户 | 规模、广告技术和 ROI | 局部用户增长和品牌预算分流。 |
+
+客户替换成本：广告主可快速调预算，技术替换成本不高；但 Meta 的规模、数据、创意工具、转化 API、lookalike/Advantage+ 模型和跨应用触达形成较强 ROI 粘性。真正护城河是**广告效果**，不是合同锁定。
+
+### 9.2 Meta AI / 模型 / Consumer AI
+
+| 竞争对手 | 竞争点 | META 优势 | 风险 |
+|---|---|---|---|
+| OpenAI / ChatGPT | Consumer AI、API、agent、enterprise | Meta 有应用分发和免费入口 | 模型品牌和付费习惯落后。 |
+| Google Gemini | Android/Search/Workspace/Cloud/TPU | Meta 社交图谱和开放模型生态 | Google 端到端闭环更强。 |
+| Anthropic Claude | 企业、coding、safety | Meta 免费分发和开源生态 | 企业付费与开发者心智弱。 |
+| xAI / Grok | 社交平台入口 | Meta 应用规模更大 | xAI 快速基础设施和模型迭代。 |
+
+客户替换成本：消费者 AI 替换成本低；企业/API 替换成本中等。Meta 必须利用 Facebook/Instagram/WhatsApp 的默认入口和个人上下文形成粘性。
+
+### 9.3 MTIA / AI 基础设施
+
+| 竞争/替代 | 对 Meta 的影响 | 判断 |
+|---|---|---|
+| NVIDIA GB200/GB300/Rubin + CUDA | 训练和通用推理仍是最大金额池；性能和软件生态最强 | Meta 会继续买，不会被 MTIA 完全替代。 |
+| AMD MI350/MI400/Helios | 第二供应和开放机架路线 | Meta 已投 AMD 生态；降低 NVIDIA lock-in。 |
+| Google TPU / AWS Trainium / Microsoft Maia | 其他云厂自研 ASIC | 不直接竞争 Meta 外部收入，但证明 hyperscaler ASIC 是主流。 |
+| Broadcom custom XPU | Meta MTIA 供应伙伴，也是 Google/OpenAI 等的 custom silicon partner | 对 Meta 是关键供应链；也增加客户集中和供应排期风险。 |
+| 通用 GPU 租赁/NeoCloud | CoreWeave 等外部 capacity 补充 | 快速扩容，但长期成本可能高于自建/MTIA。 |
+
+MTIA 是否是未来主流：**对 Meta 内部推理和推荐是主流方向之一；对外部 AI 芯片市场不是独立商品**。未来 AI 基建技术栈会越来越多样：GPU 负责最前沿训练和通用推理，ASIC 负责稳定、高频、成本敏感的内部 workload。MTIA 的最大风险是模型架构变化快于芯片迭代、HBM/封装受限、软件迁移不足导致利用率低。
+
+客户替换成本：Meta 内部一旦把推荐/广告/GenAI inference kernel、调度、监控、OCP rack 和数据中心运维绑定 MTIA，替换成本很高；但外部供应链（Broadcom/TSMC/HBM）集中度也高。
+
+### 9.4 AI glasses / Reality Labs
+
+| 竞争对手 | 竞争点 | META 优势 | 风险 |
+|---|---|---|---|
+| Apple Vision / future glasses | 高端硬件、生态、芯片 | Meta/Ray-Ban 更轻、更日常、更社交 | Apple 若推出轻量眼镜，体验和隐私优势强。 |
+| Google / Android XR | Gemini、Android 生态 | Meta 已有 Ray-Ban 渠道和社交应用 | Google 可借 Android/OEM 扩散。 |
+| Snap Spectacles | AR 创作者和年轻用户 | Meta 资金、供应链、应用规模 | Snap 更灵活但规模小。 |
+| 中国硬件厂 | 低成本、快速迭代 | Meta 品牌、AI/社交入口 | 价格竞争和硬件同质化。 |
+
+AI glasses 是否主流：比 Quest VR 更可能成为个人 AI 入口，但时间线仍不确定。短期财务贡献小，长期如果叠加 Meta AI、相机/语音/上下文和社交分享，可能成为高价值入口。
+
+## 10. 风险、反证指标和结论
+
+### 10.1 关键风险
+
+| 风险 | 观察指标 |
+|---|---|
+| AI CapEx 回报不足 | 广告增速低于费用/折旧增速；FCF 连续下降；管理层继续上修 CapEx 但不披露 AI 收入。 |
+| 模型和产品落后 | Meta AI 使用量、API 客户、consumer engagement、developer adoption 弱于 OpenAI/Google/Anthropic。 |
+| MTIA 迁移失败 | MTIA 450/500 延迟、HBM/封装不足、广告/GenAI inference 无法大规模迁移。 |
+| 电力/施工瓶颈 | Richland/Reliance/CoreWeave/Rubin capacity 延期；变压器、液冷、MEP、并网 lead time 拉长。 |
+| 广告监管 | EU DMA、隐私、青少年安全、美国诉讼导致广告个性化和用户体验受损。 |
+| Reality Labs 亏损扩大 | AI glasses 未放量，Quest 下滑，RL 年亏损继续扩大。 |
+| 资本市场融资约束 | 债务/租赁/供应商预付款增加，回购暂停时间延长，投资人要求削减 CapEx。 |
+
+### 10.2 投资结论
+
+META 的主线不是“AI 芯片收入”或“AI 数据中心收入”，而是：
+
+1. **广告 AI 已经兑现**：2026Q1 advertising `$55.02B`、`+33%`，ad impressions `+19%`、price `+12%`，这是当前最硬的基本面。
+2. **AI 基建正在吞噬轻资产模型**：CapEx guide `$125-145B`，CoreWeave `$21B`，Richland `>2GW`，Reliance `168MW`，MTIA 多代量产，这些会带来更强算力，也会带来更重折旧。
+3. **MTIA 是降低推理成本的关键，不是外部卖芯片业务**：应按内部 TCO、供应安全、广告/Meta AI 毛利改善评估，不能按 Broadcom 或 NVIDIA 的收入逻辑套 META。
+4. **小业务里最不能忽视 WhatsApp 和 AI glasses**：FoA other Q1 `+74%`，虽然体量小；AI glasses 是 Reality Labs 中更贴近个人 AI 的产品，比传统 VR 更值得跟踪。
+5. **估值分歧点很清晰**：若广告继续 `20%+` 增长且 MTIA/数据中心降低 token 成本，`17x` forward P/E 有吸引力；若 CapEx 上行但 AI 产品收入不成规模，META 会被重新定价为高固定成本、低 FCF 可见度的平台。
+
+本报告基准判断：META 在 2026-2027 仍能保持强广告收入增长，但 FCF 和估值弹性取决于 AI CapEx 的节奏。最应跟踪的不是“Meta 花了多少钱”，而是 `广告价格/转化率、Meta AI 使用量、MTIA 450/500 部署、CoreWeave/Richland/Reliance 上电进度、折旧占收入比例、FCF margin` 六个指标。
+
+## 资料来源
+
+### 公司一手与监管文件
+
+- Meta Q1 2026 Results（2026-04-29）：https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/default.aspx
+- Meta FY2025/Q4 2025 Results（2026-01-28）：https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx
+- Meta Q3 2025 Results：https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Reports-Third-Quarter-2025-Results/default.aspx
+- Meta Q2 2025 Results：https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Reports-Second-Quarter-2025-Results/default.aspx
+- Meta Q1 2025 Results：https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Reports-First-Quarter-2025-Results/default.aspx
+- Meta 2026Q1 Form 10-Q：https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/meta-20260331.htm
+
+### AI 基建、MTIA、模型和容量
+
+- Meta MTIA: Four MTIA Chips in Two Years：https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/
+- Meta Newsroom: Expanding Meta's Custom Silicon：https://about.fb.com/news/2026/03/expanding-metas-custom-silicon-to-power-our-ai-workloads/
+- Broadcom-Meta custom silicon partnership：https://investors.broadcom.com/news-releases/news-release-details/broadcom-announces-extended-partnership-meta-deploy-technology
+- Meta Engineering: Infrastructure Evolution and the Advent of AI：https://engineering.fb.com/2025/09/29/data-infrastructure/metas-infrastructure-evolution-and-the-advent-of-ai/
+- Meta Engineering: KernelEvolve：https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/
+- Meta Muse Spark：https://ai.meta.com/blog/introducing-muse-spark-msl/
+- CoreWeave-Meta `$21B` AI Infrastructure Agreement：https://investors.coreweave.com/news/news-details/2026/CoreWeave-and-Meta-Announce-21-Billion-Expanded-AI-Infrastructure-Agreement/default.aspx
+- Meta-Reliance India AI Data Center：https://about.fb.com/news/2026/06/meta-partners-with-reliance-on-ai-enabled-data-center-in-india/
+- Meta Richland Parish Data Center：https://datacenters.atmeta.com/richland-parish-data-center/
+
+### 行情和估值
+
+- Web finance quote for META, 2026-06-12 00:15 UTC.
+- StockAnalysis/S&P Global Market Intelligence META Statistics, checked 2026-06-11：https://stockanalysis.com/stocks/meta/statistics/
+
+### 项目内行业资料
+
+- `行业调研/产业背景/全球AI需求与Token经济框架_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`

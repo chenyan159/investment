@@ -1,0 +1,26 @@
+[
+  {
+    "planId": "company",
+    "version": "20260918_021710",
+    "current": "D:\\investment\\基本面\\公司调研\\研究方案\\研究方案_20260918_021710.md",
+    "archive": "D:\\investment\\基本面\\公司调研\\研究方案\\20260918_021710\\研究方案_20260918_021710.md",
+    "sha256": "9fc8bbfd742f97c131d8dd09488d2ed148f555099aea1de5a1f03a264161d6be",
+    "oldCharacters": 7167,
+    "newCharacters": 9915,
+    "oldArchivePreserved": true,
+    "sourceMatches": true,
+    "bindingReadMatches": true
+  },
+  {
+    "planId": "company-investment-decision",
+    "version": "20260918_021711",
+    "current": "D:\\investment\\分析报告\\公司情景投资决策\\研究方案\\研究方案_20260918_021711.md",
+    "archive": "D:\\investment\\分析报告\\公司情景投资决策\\研究方案\\20260918_021711\\研究方案_20260918_021711.md",
+    "sha256": "de6655156cb454c866320a64257e70ab54b16d206d6c81f02ec7a6d2c3834318",
+    "oldCharacters": 17415,
+    "newCharacters": 9871,
+    "oldArchivePreserved": true,
+    "sourceMatches": true,
+    "bindingReadMatches": true
+  }
+]

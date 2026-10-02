@@ -1,0 +1,100 @@
+[
+  {
+    "ticker": "LIN",
+    "type": "公司调研",
+    "source": "D:\\investment\\基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\LIN_Linde_plc_公司调研_2026-09-07.md",
+    "snapshot": "D:\\investment\\备份\\七家公司研究入队检查_2026-09-18\\运行前报告快照\\LIN\\LIN_Linde_plc_公司调研_2026-09-07.md",
+    "sha256": "232e5996a1fd2564785afa757938a34d05f69a14303b11e0045720e0c763a776"
+  },
+  {
+    "ticker": "LIN",
+    "type": "公司情景投资决策",
+    "source": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\LIN_经营情景市场状态投资决策_2026-09-09.md",
+    "snapshot": "D:\\investment\\备份\\七家公司研究入队检查_2026-09-18\\运行前报告快照\\LIN\\LIN_经营情景市场状态投资决策_2026-09-09.md",
+    "sha256": "2561ecdbb70c1588581f91d59c2412145e34016836601c0ce140415c3862a070"
+  },
+  {
+    "ticker": "AVGO",
+    "type": "公司调研",
+    "source": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AVGO_Broadcom_公司调研_2026-09-07.md",
+    "snapshot": "D:\\investment\\备份\\七家公司研究入队检查_2026-09-18\\运行前报告快照\\AVGO\\AVGO_Broadcom_公司调研_2026-09-07.md",
+    "sha256": "8372897d84df354a965824472470408ba347b42233795e20b1dda02f46f951e7"
+  },
+  {
+    "ticker": "AVGO",
+    "type": "公司情景投资决策",
+    "source": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\AVGO_经营情景市场状态投资决策_2026-09-08.md",
+    "snapshot": "D:\\investment\\备份\\七家公司研究入队检查_2026-09-18\\运行前报告快照\\AVGO\\AVGO_经营情景市场状态投资决策_2026-09-08.md",
+    "sha256": "40706b8fe3b1ed9b8656165878db012c8033d41a53e38ec1334cbcfe4d767508"
+  },
+  {
+    "ticker": "ALAB",
+    "type": "公司调研",
+    "source": "D:\\investment\\基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\ALAB_AsteraLabs_公司调研_2026-09-07.md",
+    "snapshot": "D:\\investment\\备份\\七家公司研究入队检查_2026-09-18\\运行前报告快照\\ALAB\\ALAB_AsteraLabs_公司调研_2026-09-07.md",
+    "sha256": "72ca1cfa29e8ee4bf8ec12e83a424599da83fc8c397971a6d884c3c1812cdeb9"
+  },
+  {
+    "ticker": "ALAB",
+    "type": "公司情景投资决策",
+    "source": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\ALAB_经营情景市场状态投资决策_2026-09-08.md",
+    "snapshot": "D:\\investment\\备份\\七家公司研究入队检查_2026-09-18\\运行前报告快照\\ALAB\\ALAB_经营情景市场状态投资决策_2026-09-08.md",
+    "sha256": "b4a85367271b0ce2da322da90eb33e6b82545419e91a024bef45112fd5d1c614"
+  },
+  {
+    "ticker": "SPCX",
+    "type": "公司调研",
+    "source": "D:\\investment\\基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\SPCX_SpaceX_公司调研_2026-09-07.md",
+    "snapshot": "D:\\investment\\备份\\七家公司研究入队检查_2026-09-18\\运行前报告快照\\SPCX\\SPCX_SpaceX_公司调研_2026-09-07.md",
+    "sha256": "5954db3707ed114580aa53858f94c182075098693cf544bedfb17e9af25cddde"
+  },
+  {
+    "ticker": "SPCX",
+    "type": "公司情景投资决策",
+    "source": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\SPCX_经营情景市场状态投资决策_2026-09-08.md",
+    "snapshot": "D:\\investment\\备份\\七家公司研究入队检查_2026-09-18\\运行前报告快照\\SPCX\\SPCX_经营情景市场状态投资决策_2026-09-08.md",
+    "sha256": "7bfc2bfc287a9cad126575b00ca25d03530d38013e68b4e6ac800ba3845cbb87"
+  },
+  {
+    "ticker": "MU",
+    "type": "公司调研",
+    "source": "D:\\investment\\基本面\\公司调研\\结果\\AI服务器_存储_EMS\\MU_Micron_Technology_美光科技_公司调研_2026-09-07.md",
+    "snapshot": "D:\\investment\\备份\\七家公司研究入队检查_2026-09-18\\运行前报告快照\\MU\\MU_Micron_Technology_美光科技_公司调研_2026-09-07.md",
+    "sha256": "4883089314c3d3ba9afc7628ef78f9de0927adc04a6fa811c0def2633c2c386e"
+  },
+  {
+    "ticker": "MU",
+    "type": "公司情景投资决策",
+    "source": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\MU_经营情景市场状态投资决策_2026-09-08.md",
+    "snapshot": "D:\\investment\\备份\\七家公司研究入队检查_2026-09-18\\运行前报告快照\\MU\\MU_经营情景市场状态投资决策_2026-09-08.md",
+    "sha256": "88cbbc4f98008267dee1a14f3cac771a1c87d2553475f9582750f0a77f1870ab"
+  },
+  {
+    "ticker": "CRWV",
+    "type": "公司调研",
+    "source": "D:\\investment\\基本面\\公司调研\\结果\\云算力_IDC_边缘云\\CRWV_CoreWeave_公司调研_2026-09-07.md",
+    "snapshot": "D:\\investment\\备份\\七家公司研究入队检查_2026-09-18\\运行前报告快照\\CRWV\\CRWV_CoreWeave_公司调研_2026-09-07.md",
+    "sha256": "575fd6135202c54a298e06417d852a56d8128d2cdb1f4d3d23977f646d7e0a66"
+  },
+  {
+    "ticker": "CRWV",
+    "type": "公司情景投资决策",
+    "source": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\CRWV_经营情景市场状态投资决策_2026-09-08.md",
+    "snapshot": "D:\\investment\\备份\\七家公司研究入队检查_2026-09-18\\运行前报告快照\\CRWV\\CRWV_经营情景市场状态投资决策_2026-09-08.md",
+    "sha256": "6e5a96ca5be18bea8e134c82ca121173ed7741eb88b97023ad615a20a2152c9d"
+  },
+  {
+    "ticker": "ADBE",
+    "type": "公司调研",
+    "source": "D:\\investment\\基本面\\公司调研\\结果\\企业软件_数据平台\\ADBE_Adobe_公司调研_2026-09-07.md",
+    "snapshot": "D:\\investment\\备份\\七家公司研究入队检查_2026-09-18\\运行前报告快照\\ADBE\\ADBE_Adobe_公司调研_2026-09-07.md",
+    "sha256": "bbbe2328ab974512067a38b5fbe7a8278e68e10b6b286eeaf7f7f84bcc4d1209"
+  },
+  {
+    "ticker": "ADBE",
+    "type": "公司情景投资决策",
+    "source": "D:\\investment\\分析报告\\公司情景投资决策\\结果\\ADBE_经营情景市场状态投资决策_2026-09-09.md",
+    "snapshot": "D:\\investment\\备份\\七家公司研究入队检查_2026-09-18\\运行前报告快照\\ADBE\\ADBE_经营情景市场状态投资决策_2026-09-09.md",
+    "sha256": "79906452350d4b00840a1bfc22f12520393fd5ef274a83aa8842e1c4daeff0cf"
+  }
+]

@@ -1,0 +1,398 @@
+# MPWR Monolithic Power Systems 公司调研：AI 服务器供电核心受益者，48V/54V 已进入兑现期，800V 是 2027+ 期权
+
+报告日期：2026-06-11（美国市场 2026-06-11 收盘后口径）。  
+研究范围：本报告只使用 `基本面/行业调研/` 下的相关行业资料、`公司调研/公司索引.md` 的目录归属信息，以及联网公开资料。未读取或引用 `特征量化/`、`日度资料/`、既有公司报告或 `tmp/` 文件。
+
+## 一句话结论
+
+MPWR（Monolithic Power Systems, MPS）不是卖数据中心 UPS、变压器或整柜 PSU 的公司，而是卖高性能电源管理 IC、数字多相控制器、DrMOS/Intelli-Phase、Intelli-Module、48V/54V 中间母线模块、eFuse/Hot-Swap 和遥测保护器件的上游芯片与模块公司。AI 服务器功耗从 H100/Hopper 到 GB200/GB300、Rubin 继续上行后，真正变稀缺的是 GPU/ASIC 附近的高电流、低损耗、可遥测、可验证的电源转换能力；这正好落在 MPWR 的强项上。
+
+我的结论分三层：
+
+1. **2026 年高确定性主线是 48V/54V AI 服务器与机柜级供电**：MPS 官方 Q1 2026 Enterprise Data 收入 2.628 亿美元，同比 +97.7%，占总收入 32.7%；Q2 2026 公司总收入指引 8.90-9.10 亿美元。公司把年度产能目标从已达成的 40 亿美元级别继续推向 60 亿美元，说明客户 forecast 和订单可见度足以支持扩产。
+2. **Communications 的光模块/交换机供电是容易被市场低估的小主线**：Q1 2026 Communications 收入 1.115 亿美元，环比 +33.1%、同比 +55.5%，官方解释是 optical modules 和 switches。它不是 GPU 核心供电，但在 AI 集群网络带宽升级中是“跟着端口数和交换芯片功耗涨”的附带受益业务。
+3. **800V/HVDC 是长期赔率，不是 2026 年主要收入**：MPS 在 Q4 2025 已经 sample data center 800V power solution，且 48V 页面有 2000A OAM/SXM 参考设计可供 sampling；但 800V 大规模采用仍取决于 2027 年以后 Rubin/Kyber、OCP Diablo 400、±400V/800V 生态成熟。2026 年收入贡献应保守处理。
+
+核心风险也很明确：估值极高（2026-06-11 收盘价 1,589.55 美元，TTM P/E 113.75x，Forward P/E 62.22x，TTM P/S 约 26.4x），公司不披露 backlog 金额，2025 年 Enterprise Data 全年收入反而同比 -2.0%，说明 AI 客户拉货节奏会造成季度波动；此外，MPS 的客户账面上高度依赖分销商，2025 年前三大 distributor 合计占收入 54%。
+
+## 1. 公司整体业务、市场印象、产业链位置和财务健康度
+
+### 1.1 公司业务：高性能电源管理 IC 和模块
+
+MPS 是 fabless 高性能模拟/混合信号电源半导体公司。公司 2025 10-K 对自身定位是：提供 high-performance, semiconductor-based power electronics solutions，核心能力包括系统级知识、半导体设计、工艺/系统集成/封装。2025 年公司收入按 end market 分为六类：
+
+| 业务 | 2025 收入 | 2025 占比 | 2025 同比 | 典型应用 |
+|---|---:|---:|---:|---|
+| Storage & Computing | $732.5M | 26.3% | +46.0% | memory、storage、notebook、graphics cards 电源 |
+| Enterprise Data | $701.8M | 25.2% | -2.0% | AI/server power management、数据中心服务器 |
+| Automotive | $592.5M | 21.2% | +43.1% | ADAS、infotainment、USB、48V/zonal、BMS |
+| Communications | $309.1M | 11.1% | +36.8% | optical modules、routers、switches |
+| Consumer | $255.2M | 9.1% | +26.3% | home appliances、gaming、TV/monitor |
+| Industrial | $199.4M | 7.1% | +35.3% | power sources、instrumentation、meters |
+| **总计** | **$2,790.5M** | **100%** | **+26.4%** |  |
+
+业务本质可以拆成四类产品能力：
+
+1. **DC/DC 转换和数字多相控制**：把 12V、48V/54V、4V-6V 等中间电压转换到 CPU/GPU/ASIC/内存所需的低压大电流轨。
+2. **DrMOS / Intelli-Phase / Intelli-Module**：把 driver、MOSFET、电感、检测和保护做成高功率密度器件或模块，缩短到负载点距离，降低 PDN loss。
+3. **Hot-Swap/eFuse/电流检测/遥测保护**：解决 48V/54V 或更高电压进入板卡时的浪涌、过流、过温、故障上报和系统级功率可观测性。
+4. **汽车、通信、工业、消费类电源 IC**：支撑公司基本盘，但本报告后文只重点看 AI 数据中心和高增长相关产品。
+
+### 1.2 投资人心中的公司形象
+
+投资人通常把 MPWR 看成三种资产的叠加：
+
+1. **高质量模拟半导体成长股**：毛利率稳定在 55% 左右，非 GAAP operating margin 在 35% 左右，长期收入连续增长。
+2. **AI power picks-and-shovels 公司**：不是 AI GPU 芯片本身，而是 GPU/ASIC、HBM/内存、AI 交换机、光模块附近必须使用的电源转换和保护器件。
+3. **高估值、高预期、高客户节奏敏感度标的**：由于市场已经把 AI 供电成长性计入股价，任何 Enterprise Data 增速放缓、客户平台切换、毛利率受压或 800V 进展低于预期，都可能造成估值压缩。
+
+2025 年 Q4 官方材料强调，公司正从 “chip-only semiconductor supplier” 向 “full-service, silicon-based solutions provider” 转型。这个转型不是营销词：MPS 48V 数据中心页面已经把 first-stage IBC modules、digital multi-phase controller、Intelli-Phase、Intelli-Module、eFuse 和 OAM/SXM 参考设计放在同一个架构里销售，说明公司越来越像“电源子系统方案商”，而不只是卖单颗 IC。
+
+### 1.3 最近 3 年重大业务变化、转型和收购
+
+| 时间 | 变化 | 投资含义 |
+|---|---|---|
+| 2023-2024 | AI 服务器功耗快速上升，Enterprise Data 成为市场叙事核心之一；2024 年 Enterprise Data 收入 $716.2M，占 32.5% | 公司从传统多元 analog 成长股，升级为 AI power 暴露标的 |
+| 2025 | 全年收入 $2.790B，同比 +26.4%；但 Enterprise Data 全年 $701.8M，同比 -2.0%，同时非 Enterprise Data 端市场增长超过 40% | AI 节奏有平台/客户切换波动，但公司并非单一 AI 客户拉动；Storage、Auto、Comms 是缓冲 |
+| 2025 Q4 | 官方称已达成超过 $4B 的 geographically balanced capacity，并 sample data center 800V power solution；record module revenue | 从单芯片向高价值模块和系统方案迁移；800V 进入样品/设计验证阶段 |
+| 2026 Q1 | 总收入 $804.2M，Enterprise Data $262.8M，同比 +97.7%；Communications $111.5M，同比 +55.5%；产能目标提高到 $6B near future | AI/server 与光模块/交换机供电开始重新加速；扩产方向从 $4B 升级到 $6B |
+| 收购 | 近三年未看到改变公司收入结构的重大并购；10-K 中 goodwill 和 acquisition-related intangibles 规模很小 | 公司成长主要靠内部研发、design win、供应链扩张，不是靠买收入 |
+
+### 1.4 产业链位置：在 AI 机柜供电链条中的“板级/负载点电源”
+
+结合 `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`，AI 机柜供电链条大致是：
+
+电网/变压器/开关柜/UPS 或 BESS -> RPP/PDU/母线 -> rack power shelf / PSU -> 48V/54V busbar -> 中间母线转换（IBC/DC-DC）-> GPU/ASIC/CPU/HBM/交换芯片 point-of-load VRM -> 遥测/保护/热管理。
+
+MPS 的主要位置不在前端大型电气设备，而在：
+
+1. **48V/54V 到 4V-12V 的中间母线转换**：MPC1100C-54、MPC11057-54-0750、MPC12106-54-0750 等 first-stage power module。
+2. **GPU/ASIC 附近的多相降压和 power stage**：MP2891、MP2888A、MP2882、MP2972、MP87006、MP87000、MP86972、MP86976、MPC22163/166/167 等。
+3. **板卡保护和功率遥测**：MP5048 60V Hot-Swap Intelli-Fuse、PMBus POL、current/temperature/fault reporting。
+4. **AI 网络端口/交换机/光模块供电**：Communications segment 受 optical modules 和 switches 拉动。
+
+这意味着 MPWR 的投资逻辑不是“AI 数据中心总 CapEx 越大越好”那么粗；真正要看的是每一代 GPU/ASIC/rack 的电压架构、每颗 GPU 的电流、每张 OAM/SXM 板卡的 VRM 面积和热约束、是否从离散 DrMOS 转向高集成 module，以及 MPWR 是否拿到对应客户/平台的 socket。
+
+### 1.5 最新股价、估值、利润率和资产负债表
+
+市场数据来自 StockAnalysis，时间戳为 2026-06-11 16:00 EDT 收盘；财务数据以 MPS Q1 2026 commentary、2025 10-K 和 Q4/Q3/Q2 2025 commentary 为主。
+
+| 指标 | 最新值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | $1,589.55 | 2026-06-11 收盘 | After-hours $1,603.84 |
+| 市值 | $78.09B | 2026-06-11 | Shares out 49.13M |
+| TTM Revenue | $2.96B | 截至 Q1 2026 的 TTM | Q2'25-Q1'26 合计约 $2.957B |
+| TTM P/S | 约 26.4x | $78.09B / $2.96B | 高成长 analog/AI power 估值 |
+| TTM P/E | 113.75x | 2026-06-11 | StockAnalysis |
+| Forward P/E | 62.22x | 2026-06-11 | StockAnalysis |
+| 2025 收入增速 | +26.4% | FY2025 vs FY2024 | 官方 2025 10-K / Q4 commentary |
+| Q1 2026 收入增速 | +26.1% YoY；+7.1% QoQ | Q1 2026 | 总收入 $804.2M |
+| Q1 2026 GAAP 毛利率 | 55.3% | Q1 2026 | 非 GAAP 55.5% |
+| Q1 2026 GAAP 净利率 | 24.0% | $193.2M / $804.2M | 非 GAAP 净利率 31.2% |
+| 2025 GAAP 毛利率 | 55.2% | FY2025 | 非 GAAP 55.5% |
+| 2025 GAAP 净利率 | 22.1% | $615.9M / $2.790B | 10-K restatement 后净利 $621.5M，口径差异很小 |
+| 现金+短投 | $1.367B | 2026-03-31 | Q1 2026 |
+| 总资产 | $4.449B | 2026-03-31 | Q1 2026 |
+| 总负债 | $771.5M | 2026-03-31 | 资产负债率约 17.3% |
+| 股东权益 | $3.677B | 2026-03-31 | 总资产 - 总负债 |
+| Current ratio | 约 4.8x | $2.331B current assets / $487.0M current liabilities | 非常健康 |
+| 库存 | $619.2M | 2026-03-31 | DIO 157 天；按 Q2 指引用 next-quarter revenue 算为 140 天 |
+| 经营现金流 | $250.3M | Q1 2026 | 现金转换良好 |
+
+资产负债表评价：**非常健康，但库存和分销渠道节奏要跟踪**。公司现金/短投远高于总负债的一半，流动比率接近 5 倍，经营现金流强，没有明显金融杠杆压力。但库存从 Q1 2025 的 $454.8M 升至 Q1 2026 的 $619.2M，DIO 157 天，说明公司为 AI/汽车/通信设计赢单和供应稳定主动备货；如果 Enterprise Data 客户平台切换、AI rack 出货推迟或分销商去库存，库存会成为利润率和现金流的波动源。
+
+## 2. 最近五次财报：收入、利润率、业务结构、订单/交期与 AI 收入 proxy
+
+### 2.1 最近五个季度核心财务与 end market 收入
+
+MPS 只披露 end market 收入，不披露 segment gross margin 或 product-level margin。下表中的“AI 数据中心 proxy”主要用 Enterprise Data，并补充 Communications 中 optical modules/switches 的 AI 网络相关性；它不是公司披露的纯 AI 收入。
+
+| 财报季度 | 总收入 | GAAP GM | GAAP 净利 | Non-GAAP EPS | Enterprise Data | Storage & Computing | Automotive | Communications | Consumer | Industrial | AI 数据中心 proxy |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| Q1 2026 | $804.2M | 55.3% | $193.2M | $5.10 | $262.8M / 32.7%，YoY +97.7%，QoQ +12.6% | $174.4M / 21.7%，YoY -7.5% | $152.4M / 18.9%，YoY +5.1% | $111.5M / 13.9%，YoY +55.5%，QoQ +33.1% | $54.5M / 6.8% | $48.6M / 6.0% | ED 直接受 AI/server power 拉动；Comms 光模块/交换机供电是 AI 网络附加受益 |
+| Q4 2025 | $751.2M | 55.2% | $170.1M | $4.79 | $233.5M / 31.1%，YoY +19.8%，QoQ +21.9% | $162.1M / 21.6%，YoY +18.8% | $151.0M / 20.1%，YoY +17.6% | $83.7M / 11.1%，YoY +31.2% | $66.2M / 8.8% | $54.7M / 7.3% | AI/server power 重新加速；800V power solution 已 sample |
+| Q3 2025 | $737.2M | 55.1% | $178.3M | $4.73 | $191.5M / 26.0%，YoY +3.8% | $186.6M / 25.3%，YoY +29.6% | $151.5M / 20.6%，YoY +36.1% | $79.9M / 10.8%，YoY +11.1% | $72.4M / 9.8% | $55.3M / 7.5% | ED 尚未完全进入 Q4/Q1 加速段；Storage/Auto 承接增长 |
+| Q2 2025 | $664.6M | 55.1% | $133.7M | $4.21 | $144.0M / 21.7%，YoY -23.1%，QoQ +8.4% | $195.3M / 29.4%，YoY +70.0% | $145.1M / 21.8%，YoY +66.4% | $73.8M / 11.1%，YoY +69.3% | $59.7M / 9.0% | $46.7M / 7.0% | 初始出货支持客户 ASIC-based AI products；但 ED 同比仍下滑 |
+| Q1 2025 | $637.6M | 55.4% | $133.8M | $4.04 | $132.9M / 20.8%，QoQ -31.8% | $188.5M / 29.6% | $144.9M / 22.7% | $71.8M / 11.3% | $56.9M / 8.9% | $42.6M / 6.7% | ED 处在平台切换/低基期，给 Q1 2026 高同比奠定基数 |
+
+观察：
+
+1. **Q1 2026 的加速不是单点**：Enterprise Data +97.7% YoY，Communications +55.5% YoY，Industrial +14.2% YoY，只有 Storage & Computing 和 Consumer 同比下滑。
+2. **Enterprise Data 的 2025 全年波动很大**：Q1 $132.9M -> Q2 $144.0M -> Q3 $191.5M -> Q4 $233.5M -> Q1 2026 $262.8M。2025 全年 ED 仍同比 -2.0%，所以不能把 Q1 2026 的同比高增长线性外推到所有季度。
+3. **Communications 是第二条 AI 相关曲线**：Q1 2026 官方称其增长来自 optical modules 和 switches，这与 AI 集群从 800G/1.6T、spine/leaf 交换芯片功耗上行一致。
+4. **Storage & Computing 的 AI 相关性复杂**：它包括 memory/storage/notebooks/graphics cards；其中 memory/storage 与 AI 服务器/HBM/SSD 相关，但 notebook 等非 AI 产品会稀释增长信号。
+
+### 2.2 订单、Backlog、Bookings、交期和取消率
+
+MPS 不披露 backlog 金额、bookings、book-to-bill、lead time 或取消率。可用的事实是：10-K 说明未履行履约义务主要包括 consignment products 和未发货 purchase orders，因预计一年内履行，公司选择不披露 remaining performance obligations；2025 年 85% 销售通过分销安排完成；前三大 distributor 2025 年合计占收入 54%。因此，下表是“公开披露 + 渠道/订单推断”，不是公司正式 backlog。
+
+| 财报季度 | 公开订单/供应线索 | 交期/取消率判断 | 对未来 12 个月的含义 |
+|---|---|---|---|
+| Q1 2026 | 公司称 Automotive 和 Enterprise Data pipeline 继续加速，跨客户和区域赢得多个新项目；产能目标从原 $4B 计划提高到 near future $6B；Q2 收入指引 $890-$910M | 没有披露 lead time；Q2 指引中点较 Q1 +11.9%，说明订单覆盖强。库存 DIO 157 天，但按 Q2 指引用 revenue 算 DIO 140 天，说明库存不是孤立堆积 | 2026 年收入 run-rate 从 Q1 的 $3.22B 年化升向 Q2 指引的 $3.6B 年化；AI/server 与光模块/交换机需求可见度高 |
+| Q4 2025 | 已达成超过 $4B geographically balanced capacity；新增供应链伙伴；record module revenue；data center 客户覆盖 AI、server、memory、optical modules、switch；sample 800V data center solution | ED QoQ +21.9%，说明 Q3 后客户拉货恢复；但未披露 cancellation rate | 2026 年从 $4B 产能向 $6B 目标推进，订单更像多客户 forecast + design win，而不是可审计 backlog |
+| Q3 2025 | 公司称各 end market 同比增长；库存管理是在不确定市场与准备上行之间平衡 | DIO 从 Q2 150 天降到 Q3 139 天，库存效率改善 | Q3 是 Q4/Q1 加速前的过渡季度，AI 出货节奏尚未全部体现 |
+| Q2 2025 | 公司称 broad-based ordering patterns，并开始 initial shipments to support customers' new ASIC-based AI products | 没披露取消率；Q3 原指引 $710-$730M，实际 $737.2M，说明 Q2 时订单可见度偏保守 | custom ASIC power 开始贡献，支持后续 Enterprise Data 从 Q2 $144M 升至 Q4 $233.5M |
+| Q1 2025 | ED QoQ -31.8%，总收入仍 +39% YoY；公司后续季度显示非 ED 增长补位 | AI 平台切换或客户拉货节奏影响明显；不能把 design win 直接等同于稳定季度收入 | Q1 2025 是 AI 相关低基期，后续 Q4/Q1 2026 高增长需要与这个低基数一起看 |
+
+订单推断结论：
+
+1. **真实 backlog 不可得，但“产能目标 + Q2 指引 + ED 加速 + inventory build”共同指向订单可见度提升**。
+2. **供给压力不是传统晶圆短缺，而是高可靠电源模块、封装、测试、客户认证和供应链地域多元化的综合产能**。
+3. **取消率风险低于 2023 年行业去库存期，但不能视为零**。MPS 通过 distributor 销售，客户 forecast 和最终 OEM/ODM 平台出货之间有传导误差。
+
+## 3. 2026 最新指引、收入结构、重点产品与可跳过业务
+
+### 3.1 Q2 2026 指引与 2026 业务结构判断
+
+Q1 2026 后，公司给出 Q2 2026 指引：
+
+| 指标 | Q2 2026 指引 | 与 Q1 2026 对比 |
+|---|---:|---|
+| Revenue | $890M-$910M | 中点 $900M，较 Q1 $804.2M +11.9% QoQ |
+| GAAP GM | 55.1%-55.7% | 与 Q1 55.3% 基本持平 |
+| Non-GAAP GM | 55.3%-55.9% | 与 Q1 55.5% 基本持平 |
+| GAAP Opex | $219.1M-$225.1M | Q1 $203.9M，继续投入 |
+| Non-GAAP Opex | $167.0M-$171.0M | Q1 $158.3M，继续投入 |
+
+基于 Q1 结构与 Q2 指引，2026 年业务重心排序如下：
+
+1. **Enterprise Data：最核心、最需要盯的业务**。Q1 占 32.7%，同比 +97.7%。业务包括 AI/server power management、GPU/ASIC/CPU 供电、OAM/SXM/AI accelerator 参考设计、48V/54V 架构、模块化和遥测保护。
+2. **Communications：高增速小主线**。Q1 占 13.9%，同比 +55.5%，主要由 optical modules 和 switches 的 power solutions 拉动。AI 集群网络侧端口数、交换芯片功耗、光模块功耗上行会持续提升板级电源价值。
+3. **Storage & Computing：AI 相关但信号混杂**。Q1 占 21.7%，同比 -7.5%；2025 全年 +46.0%。memory/storage 与 AI 服务器相关，notebook/graphics cards 会稀释 AI 纯度。
+4. **Automotive：稳健但非本报告重点**。Q1 占 18.9%，同比 +5.1%；长期 48V/zonal、ADAS、BMS 有增长，但不如 AI power 紧急。
+5. **Consumer、Industrial：本报告后续跳过大部分细节**。Consumer Q1 同比 -4.2%，Industrial 虽同比 +14.2% 但规模小、与 AI 直接关联弱。
+
+### 3.2 重点产品、型号和收入交叉验证
+
+| 产品/业务簇 | 代表型号/方案 | 官方技术事实 | 对应收入归属 | 2026 收入/增长判断 |
+|---|---|---|---|---|
+| 48V/54V first-stage IBC / power modules | MPC1100C-54 300W 10:1；MPC11057-54-0750 750W 10:1；MPC12106-54-0750 800W 4:1 | MPS 48V page：48V distribution 可降低 I^2R；MPC1100C-54 peak efficiency 96.7%；MPC11057 750W efficiency @750W 96.3%；MPC12106 800W efficiency @800W 96.5% | Enterprise Data；部分 Storage/Computing 和 Communications | 高增长。AI rack 从 12V 到 48V/54V 后，IBC 价值量提升；估计 2026 AI 相关收入 $0.20B-$0.35B |
+| GPU/ASIC core power：digital multi-phase controller + Intelli-Phase/Module | MP2891 16-phase controller；MP2888A、MP2882、MP2972；MP87006/87000 90A Intelli-Phase；MP86972/86976；MPC22163/166/167 130A Intelli-Module | MP2891 支持 NVIDIA PWM-VID core power；MPC22166 130A、4mm height，适合 Z-Axis/PCIe；MPS 2000A OAM reference design uses MP2891 + MPC22167 and is available for sampling | Enterprise Data | 最高确定性主线。Q1 2026 ED $262.8M 中大部分增量来自 AI/server power；估计 2026 AI core power 收入 $0.55B-$0.80B |
+| Protection/telemetry/eFuse/hot-swap | MP5048 60V 15A 7mΩ Hot-Swap Intelli-Fuse；PMBus POL 如 MPQ8655；current/temperature/fault reporting | MP5048 24V-60V input、parallel/scalable、1.5% IMON reporting；MPQ8655 支持 PMBus、遥测、8-phase scaling | Enterprise Data、Communications、Storage | 单颗价值低但 attach 广。AI rack 可观测性和保护需求上升，估计 2026 AI 相关收入 $0.08B-$0.18B |
+| AI networking / optical modules / switches power | Communications segment 中 optical modules 和 switches；MPQ8655、POL、load switch、LDO、monitoring | Q1 2026 Communications $111.5M，QoQ +33.1%，YoY +55.5%；官方说明来自 optical modules 和 switches | Communications | 潜力小主线。AI 网络端口数与 800G/1.6T 升级带动；估计 2026 AI 网络相关收入 $0.18B-$0.30B |
+| 800V/HVDC / vertical power / Z-Axis | data center 800V power solution sample；Z-Axis Power Delivery；OAM/SXM 2000A EVB | Q4 2025 sample 800V；MPS 页面称 Z-Axis 可使 PDN losses 下降超过 10x；2000A EVB available for sampling | 当前少量 Enterprise Data / R&D / sample | 2026 收入小，2027+ 期权。估计 2026 <$50M，若 2027 平台认证成功可显著上修 |
+| Automotive 48V/zonal/BMS | 48V eFuse、kilowatt-level zonal controller、BMS、ADAS power | Q4 2025：launched 48V and Zonal architecture solutions；Q3 2025：major Tier 1 supplier adopted next-gen ADAS solution；first full BMS robotics platform design win | Automotive、Industrial | 中长期好业务，但不直接决定 AI thesis。2026 增速可能低于 Enterprise Data |
+
+### 3.3 本报告后续跳过的低相关业务
+
+以下业务不是没有价值，而是与本次 AI 数据中心尽调的边际结论关系较弱，后文不逐项展开：
+
+| 跳过业务 | 原因 |
+|---|---|
+| Consumer 家电、TV、gaming、monitor 电源 | Q1 2026 同比 -4.2%，AI 相关性弱，更多是消费电子周期 |
+| 普通 notebook power | 属于 Storage & Computing，但与 AI 基建关系不稳定 |
+| 工业仪表、security、meter 类电源 | 规模小，增长不如 AI power 紧急 |
+| 传统汽车 infotainment/USB 低压电源 | 有设计赢单但与 AI 数据中心无直接关系；只保留 48V/zonal/BMS 的长期观察 |
+| 通用 LDO、audio、LED backlight 等老产品 | 不构成当前估值主要解释变量 |
+
+## 4. 高增长/关键业务的当前收入贡献、增长、重要性、紧急性、供需和溢价能力
+
+评分说明：1=弱，5=强。收入为模型估计，不是公司披露值；以 Q1 2026 run-rate、2025 full-year、Q2 2026 指引和产品结构交叉推算。
+
+| 关键业务 | 当前收入贡献估计 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 判断 |
+|---|---:|---|---:|---:|---:|---:|---|
+| Enterprise Data AI/server power 总体 | Q1 2026 $262.8M；2026 年化 $1.25B-$1.45B | Q1 YoY +97.7%；Q4 QoQ +21.9%，Q1 QoQ +12.6% | 5 | 5 | 4 | 4 | 2026 年最核心增长引擎；直接绑定 GPU/ASIC/rack 功耗上行 |
+| GPU/ASIC core VRM + digital controller + Intelli-Phase/Module | 2026E $0.55B-$0.80B | 高于公司平均，随 ED 增长 | 5 | 5 | 4 | 4 | 最贴近 GPU/ASIC 的价值层，验证周期长，替换成本高 |
+| 48V/54V first-stage IBC / power modules | 2026E $0.20B-$0.35B | 高增长，随 48V rack 渗透 | 5 | 4 | 4 | 4 | 48V/54V 是 2026 量产主线；模块化提升单机价值 |
+| eFuse/Hot-Swap/telemetry/protection | 2026E $0.08B-$0.18B | 中高增长，attach 扩张 | 4 | 4 | 3 | 3 | 单价不高但必须上板；AI 电源瞬态和可观测性越重要，attach 越高 |
+| Communications：optical modules/switch power | 2026E AI 网络相关 $0.18B-$0.30B | Q1 Comms YoY +55.5% | 4 | 4 | 3 | 3 | 不是 GPU 核心，但跟随 AI 集群网络带宽升级 |
+| 800V/HVDC / Z-Axis / advanced architecture | 2026E <$50M | sample/设计验证，低基数高弹性 | 5 | 3（2026）/5（2027+） | 3（当前）/5（未来） | 3-4 | 2026 贡献小；若进入 2027 平台 socket，价值量上修 |
+| Automotive 48V/zonal/BMS | 2026E $0.60B-$0.70B 全 automotive | Q1 Auto YoY +5.1%，2025 全年 +43.1% | 2（AI）/4（公司） | 3 | 2 | 3 | 公司质量底盘，不是 AI thesis 的主驱动 |
+
+当前最值得跟踪的不是“MPWR 是否是 AI 公司”，而是：
+
+1. Enterprise Data 是否能从 Q1 的 32.7% 收入占比继续提升到 2026 全年 35%-40%。
+2. Communications 的光模块/交换机供电能否保持 40%+ 增速。
+3. 48V/54V module 和 Intelli-Module 是否从 sampling/reference design 转成更多量产平台。
+4. 800V 是否在 2026 下半年出现明确客户/平台认证，而不是停留在概念样品。
+
+## 5. 一年后收入贡献三情景预测
+
+时间口径：一年后指 2027 年中附近 run-rate / 2027E 年化能力。以下不是公司指引，是基于 MPS 公开数据、AI 机柜供电行业资料和订单/产能线索的情景模型。
+
+### 5.1 公司总收入和 Enterprise Data
+
+| 情景 | 2026E 总收入 | 2027 run-rate 总收入 | 2027 run-rate 增速 | Enterprise Data 2027 run-rate | 关键假设 |
+|---|---:|---:|---:|---:|---|
+| 基准 | $3.50B-$3.70B | $4.05B-$4.45B | +12%-25% | $1.55B-$1.85B | Q2 2026 指引兑现；GB300/ASIC 平稳；48V/54V 渗透继续，800V 小量 |
+| 乐观 | $3.65B-$3.90B | $4.70B-$5.30B | +25%-45% | $2.00B-$2.45B | ED 2026 高增情景兑现；多客户 AI/ASIC 平台放量；Comms 继续高增 |
+| 极度乐观 | $3.85B-$4.15B | $5.60B-$6.20B | +40%-65% | $2.70B-$3.30B | $6B capacity near future 被快速消化；Rubin/AI ASIC/800V early socket 多点成功；AI power 供不应求 |
+
+### 5.2 重点产品簇一年后收入贡献
+
+| 产品簇 | 基准：一年后收入贡献 | 乐观：一年后收入贡献 | 极度乐观：一年后收入贡献 | 重要性/紧急性变化 | 供需与溢价能力变化 |
+|---|---:|---:|---:|---|---|
+| GPU/ASIC core VRM + Intelli-Phase/Module | $0.85B-$1.10B | $1.20B-$1.55B | $1.75B-$2.20B | 重要性 5、紧急性 5 不变；每代 GPU/ASIC 电流继续上行 | 基准供需偏紧；乐观/极度乐观下高端模块和 controller socket 稀缺，溢价能力 4-5 |
+| 48V/54V IBC / power modules | $0.35B-$0.50B | $0.55B-$0.85B | $0.90B-$1.30B | 2026 量产主线延续；若 rack power >150kW，重要性从 4.5 升到 5 | 模块化供给和认证成为瓶颈；高效率/低高度模块有溢价 |
+| eFuse/Hot-Swap/telemetry/protection | $0.14B-$0.24B | $0.25B-$0.40B | $0.45B-$0.65B | 随电源链更复杂，遥测和保护从可选变成系统必需 | 单价低但 attach 率高；供需不如核心 VRM 紧，但客户替换成本高 |
+| Communications 光模块/交换机供电 | $0.28B-$0.40B | $0.45B-$0.65B | $0.75B-$1.00B | 800G/1.6T 端口、AI spine/leaf 交换机功耗上升，重要性 4 | 竞争比 GPU VRM 分散，溢价能力 3；若拿到交换机平台 socket 可升至 4 |
+| 800V/HVDC / Z-Axis | <$0.10B | $0.15B-$0.35B | $0.50B-$0.85B | 2027 后重要性上升至 5；2026 多为 DVT/PVT 前期 | 极度乐观下供不应求；但竞争者更多，MPS 溢价取决于是否绑定核心平台 |
+| Automotive 48V/zonal/BMS | $0.70B-$0.80B | $0.85B-$1.00B | $1.10B+ | 公司重要性 3-4，AI 重要性 2 | 汽车认证长、替换成本高，但增速不会解释 AI 溢价 |
+
+## 6. BOM 拆分、每 MW / rack / GPU / optical port 内容量、价格传导链和当前产能/认证
+
+### 6.1 AI 机柜电源 BOM 中 MPWR 可拿到的位置
+
+以行业资料中的 100-155kW 级 GB200/GB300 机柜、72 GPU 级 NVL rack、48V/54V busbar 架构为基础，AI rack power BOM 大致分为：
+
+| BOM 层级 | 典型供应商 | MPWR 是否核心 | MPWR 可卖内容 |
+|---|---|---|---|
+| 中压/低压配电、变压器、开关柜 | Eaton、Schneider、ABB、Vertiv、GE Vernova 等 | 否 | 几乎不参与 |
+| UPS/BESS/RPP/PDU/busway | Vertiv、Eaton、Schneider、Delta、Lite-On 等 | 否/少量 | 不卖整机；可能通过子系统电源管理少量参与 |
+| Rack power shelf / PSU | Delta、Lite-On、AcBel、Advanced Energy、Flex、Murata 等 | 不是整机核心 | 可能通过控制/驱动/保护器件进入部分 PSU，但不是主收入 |
+| 48V/54V bus 到板卡中间母线 | MPS、Vicor、Infineon、TI、Renesas、onsemi 等 | 是 | MPC1100C-54、MPC11057、MPC12106 等 IBC/power modules |
+| GPU/ASIC/CPU/HBM point-of-load | MPS、Infineon、TI、Renesas、ADI、Vicor、AOS、Richtek 等 | 是 | MP2891、MP2888A、MP2882、MP2972、MP87006、MP87000、MP86972、MP86976、MPC22163/166/167 |
+| 热插拔、eFuse、遥测、保护 | MPS、TI、ADI、Infineon、onsemi 等 | 是 | MP5048、PMBus POL、current/temperature/fault reporting |
+| Optical module / switch board power | MPS、TI、ADI、Renesas、Infineon、Monolithic/other PMIC suppliers | 部分是 | MPQ8655/POL、load switch、current monitor、module power |
+
+### 6.2 当前每单位内容量估算
+
+以下为“设计内容量”估算，不是确认收入。实际收入 = 每单位内容量 × MPS socket share × 客户出货量 × 良率/交付节奏。
+
+| 单位 | 基准 MPWR 内容量 | 乐观 MPWR 内容量 | 极度乐观 MPWR 内容量 | 解释 |
+|---|---:|---:|---:|---|
+| 每 GPU/AI accelerator | $40-$120 | $120-$250 | $250-$500 | 包括 controller、power stage/module、遥测保护；若只中部分 rail 则偏低，若核心 rail + Z-Axis/module 多 socket 则偏高 |
+| 每 72-GPU rack | $8k-$25k | $25k-$60k | $60k-$120k | 72 GPU × 每 GPU 内容量 + CPU/NVSwitch/NIC/storage/保护/IBC；不包括整机 PSU、UPS、冷却 |
+| 每 MW IT load | $65k-$210k | $160k-$500k | $390k-$1.0M | 120-155kW/rack 对应 6.5-8.3 rack/MW；极度乐观假设高 attach 和先进架构 |
+| 每 optical port | $0.20-$2.00 | $2-$8（按系统级 power allocation） | $8-$15 | MPS 不是光 DSP/laser 主受益者；主要是模块和交换机板级电源、保护、遥测 |
+| 每 800V/HVDC high-power rack | <$5k 当前 | $10k-$40k | $50k-$150k | 当前 sample/EVB 阶段；若 800V->12V/48V 或 sidecar/rack-level DC-DC socket 成立才会上升 |
+
+交叉验证：
+
+1. Q1 2026 Enterprise Data $262.8M，年化 $1.05B；如果 2026 全年 Enterprise Data 达 $1.25B-$1.45B，说明每 rack/GPU 内容量不可能只有几美元，必须是多颗/多模块 attach。
+2. MPS 48V page 展示 300W/750W/800W first-stage modules 和 130A Intelli-Module，说明产品不仅是小信号 IC，而是在向高 ASP 模块迁移。
+3. 本地行业资料估计 GB200/GB300 机柜电源链 BOM 可达 $80k-$180k/rack；MPS 只拿其中板级/模块级一部分，因此 $8k-$60k/rack 的可得内容量区间与 BOM 分层一致。
+
+### 6.3 价格传导链
+
+AI 数据中心 CapEx -> GPU/ASIC 平台订单 -> ODM/OEM/OAM/SXM 板卡设计 -> 48V/54V power architecture 决策 -> MPS design win -> distributor/OEM purchase order -> MPS 出货确认收入。
+
+关键传导环节：
+
+1. **NVIDIA/AMD/custom ASIC 平台功耗上升**：GPU core current、HBM/SoC/NVSwitch/NIC rail 增多，phase count 和 module count 上升。
+2. **rack power 从 30-60kW 升到 100-155kW**：48V/54V bus 和 IBC 成为主流，MPS first-stage module attach 提升。
+3. **客户要求实时功率遥测和故障隔离**：MP5048、PMBus POL、current/temperature/fault reporting 的价值提升。
+4. **800V 进入样机后**：如果 2027 以后从 48V sidecar 走向 800V/±400V rack-level architecture，MPS 需要证明高压 hot-swap、DC/DC、控制和保护的可靠性；这会扩大 TAM，但也会引入 TI、Infineon、ST、onsemi、Renesas、Vicor、GaN/SiC 公司的更强竞争。
+
+### 6.4 当前产能能力和采用/认证阶段
+
+| 项目 | 当前状态 | 证据 | 判断 |
+|---|---|---|---|
+| 公司总产能能力 | 已达成 >$4B annual capacity，目标 near future $6B | Q4 2025 / Q1 2026 commentary | 相对 2025 收入 $2.79B，有扩产空间；若 2027 收入逼近 $5B-$6B，产能会变成关键约束 |
+| 48V/54V power modules | 公开产品线完整，300W/750W/800W module，支持并联 | MPS 48V data center page | 已具备量产产品和客户评估条件 |
+| OAM/SXM AI accelerator power | 2000A reference design available for sampling | MPS 48V page | 处于客户 sampling / design-in 阶段，适合下一代板卡 |
+| 800V data center solution | 已 sample | Q4 2025 commentary | 仍属早期设计验证，2026 收入不应高估 |
+| DDR5 high-speed interface | Q1 2026 sampled first high-speed interface products for DDR5 at major customers | Q1 2026 commentary | 可能拓展 Storage/Computing 或 Enterprise Data，但收入规模待验证 |
+| 客户采纳 | 85% 销售经 distributor；MPS 与 OEM/ODM 沟通 design wins，但没有 OEM/ODM purchase commitments | 2025 10-K | design win 粘性高，但最终需求要看客户平台量产 |
+
+## 7. 一年后产能、采纳和认证阶段预测
+
+| 产品/业务 | 基准：一年后产能和认证 | 乐观：一年后产能和认证 | 极度乐观：一年后产能和认证 |
+|---|---|---|---|
+| GPU/ASIC core VRM + Intelli-Module | 公司总产能向 $5B+ 年化靠近；多客户 OAM/SXM/ASIC 平台量产；认证集中在现有 48V/54V 板卡 | $6B 目标大部分锁定；130A Intelli-Module 和 MP2891/next-gen controller 在更多主流平台中量产 | AI 客户把 MPS 作为首选/核心 second source；模块供给成为客户排产约束 |
+| 48V/54V IBC modules | 300W/750W/800W 模块从 design-in 到更多量产；并联架构成熟 | 更多 rack-level/customer reference design 进入 PVT/MP；单 rack 内容量上升 | 48V/54V 在 GB300/ASIC 扩展中成为标准，MPS 获得高 attach |
+| eFuse/Hot-Swap/telemetry | 60V hot-swap/eFuse 和 PMBus POL 广泛上板；更多客户要求 IMON/thermal/fault reporting | attach 从关键 rail 扩到更多 rail；保护器件内容量随系统复杂度提升 | AI rack 电源瞬态成为系统风险，遥测/保护被架构性标配 |
+| Communications optical/switch power | 800G/1.6T switch 与光模块电源需求支撑高增；认证在客户板级 | 与交换芯片/光模块平台绑定，Q1 2026 高增延续 | 若 AI 网络扩容超预期，Comms 成第二条大增长曲线 |
+| 800V/HVDC / Z-Axis | 800V 仍以 sample/EVT/DVT 为主，收入小 | 2026H2-2027 进入部分客户 platform qualification / PVT | 获得 NVIDIA/OCP/大型 hyperscaler 相关生态 socket，2027 开始实质出货 |
+
+## 8. 基于订单积压和供给推断的未来一年业务增速
+
+由于公司不披露 backlog，预测必须用“公开订单线索 + 产能 + 指引 + 客户项目节奏”推断。
+
+### 8.1 订单和供给真实约束
+
+| 维度 | 已知事实 | 对预测的含义 |
+|---|---|---|
+| Backlog | 公司未披露 remaining performance obligations 金额；预计一年内履行，选择不披露 | 不能直接用 backlog/order cover 倍数做模型，只能用指引和产能反推 |
+| Purchase orders | 10-K 称 purchase orders 通常定义 unit price、quantity、shipping、payment，是客户合同基础 | 订单可见度存在，但客户可变更/取消和 forecast 误差仍可能存在 |
+| Distributor concentration | 2025 年 85% 销售经分销；Distributor A/B/C 分别占 26%/18%/10% | 渠道集中度高；终端 OEM/ODM 需求通过 distributor 传导 |
+| Capacity | 2025 已达成 >$4B capacity；Q1 2026 目标 near future $6B | 公司未来一年收入上限不是 2025 $2.79B，而是向 $4B-$6B 过渡 |
+| Inventory | Q1 2026 库存 $619.2M，DIO 157 天；按 Q2 指引为 140 天 | 公司在为增长备货；若 Q2/Q3 需求兑现，库存合理；若平台延后，会压现金和毛利 |
+| 客户项目 | Q2 2025 initial shipments for ASIC-based AI products；Q4 2025 data center 客户扩展至 AI/server/memory/optical/switch；Q1 2026 多客户多区域新项目 | 订单基础从单一 GPU 扩到 ASIC、光模块、交换机、内存和服务器平台 |
+
+### 8.2 未来一年业务增速预测
+
+| 情景 | 未来一年总收入增速 | Enterprise Data 增速 | Communications 增速 | 订单/供给假设 | 取消率/延后假设 |
+|---|---:|---:|---:|---|---|
+| 基准 | +18%-28% | +30%-45% | +20%-35% | Q2 2026 指引兑现；$4B+ capacity 足够；AI rack 平稳出货 | 少量平台切换延后；取消率低但 forecast 下修偶发 |
+| 乐观 | +30%-45% | +55%-80% | +40%-60% | Q1 2026 的 ED 高增长延续到更多 AI/ASIC/optical/switch 项目；库存快速周转 | 主要客户继续拉货，取消率低，供给偏紧 |
+| 极度乐观 | +50%-70% | +100%+ | +70%+ | $6B capacity 快速被订单消化；Rubin/GB300/custom ASIC 和 AI 网络扩容叠加；MPS 高端模块 socket share 提升 | 供不应求，客户提前锁产能；订单延后主要来自客户机柜/电力/液冷瓶颈而非 MPS 自身 |
+
+基准预测已经不低，因为 2025 收入基数是 $2.79B，而 Q2 2026 指引中点已经是 $900M，即 $3.6B 年化。真正决定股价继续上行的不是“2026 是否增长”，而是 2027 run-rate 能否逼近 $5B-$6B，并保持 55%+ gross margin。
+
+## 9. 竞争格局、技术路线、替代风险和客户替换成本
+
+### 9.1 主要竞争对手
+
+| 领域 | 竞争对手 | 与 MPS 的竞争关系 |
+|---|---|---|
+| GPU/ASIC 多相控制器、DrMOS、smart power stage | Infineon、Texas Instruments、Renesas、ADI/Maxim、onsemi、ST、Richtek/MediaTek、AOS、Diodes | 直接竞争；客户通常要求 second source，性能/封装/热/遥测决定 socket |
+| Factorized power / direct-to-load / high-density module | Vicor、Infineon、TI、MPS、Renesas、onsemi | Vicor 在 factorized/current multiplier 方案上强；MPS 强在 monolithic/module、controller、OAM/SXM 参考设计 |
+| 48V/54V IBC / power module | Vicor、MPS、Infineon、TI、Renesas、Murata、Delta/Flex power module 等 | 模块效率、厚度、散热、并联、客户认证是关键 |
+| Hot-swap/eFuse/current monitor/PMBus | TI、ADI、MPS、Infineon、onsemi、Renesas | 单点差异小于核心 VRM，但系统可靠性和遥测要求提升后替换成本变高 |
+| Rack PSU / power shelf / sidecar | Delta、Lite-On、AcBel、Advanced Energy、Flex、Murata、Vertiv、Eaton、Schneider | MPS 不是整机供应商，更多是其上游器件/模块；不要把这些公司收入全部映射给 MPS |
+| 800V/HVDC 高压器件和系统 | Infineon、TI、ST、onsemi、Renesas、Navitas、EPC、Power Integrations、ROHM、Delta、Vertiv、Eaton、Schneider | 800V 竞争更开放，高压 SiC/GaN 和系统级电气公司话语权更强，MPS 必须证明从板级到高压架构的延展性 |
+
+### 9.2 MPS 的技术是否是未来主流
+
+我的判断是：**48V/54V + board-level high-current multiphase + module + telemetry 是 2026-2027 的主流，MPS 处在主航道；800V/HVDC 是未来主流候选，但 MPS 在其中的收入弹性尚未完全确认。**
+
+理由：
+
+1. 本地行业资料判断，2026 最确定的是 48/50V ORv3/HPR power shelf、100-155kW AI rack、GB200/GB300 级机柜；800V 更像 2026H2-2027 design-in。
+2. MPS 官方产品页正是围绕 48V distribution、10:1/4:1 IBC、digital multi-phase、Intelli-Phase/Module、eFuse、Z-Axis、OAM/SXM reference design 展开。
+3. 公司 Q4 2025 已 sample 800V data center solution，但公开信息仍不足以证明 800V 将在 2026 成为大收入。
+
+### 9.3 风险和替代方案
+
+| 风险 | 影响 | 监控指标 |
+|---|---|---|
+| AI 客户/平台节奏波动 | Enterprise Data 季度收入可能大起大落，2025 全年 ED -2.0% 已证明这一点 | ED QoQ、Q2/Q3 指引、客户库存、AI rack 出货 |
+| 高估值 | 即使基本面好，也可能因估值压缩下跌 | P/S、Forward P/E、2027 revenue revision |
+| 800V 竞争格局不利于 MPS | 800V 高压侧可能更偏向 TI/Infineon/ST/onsemi/Navitas/EPC/整机电源公司 | 800V design win、OCP/NVIDIA 生态名单、实际量产时间 |
+| 客户要求 second source | MPS 溢价能力受限 | 同一 GPU/ASIC 平台的 second-source 情况 |
+| 分销商集中 | 2025 前三大 distributor 占 54% 收入，账款也集中 | Distributor A/B/C 占比、AR 占比、库存天数 |
+| 毛利率受压 | 高端模块放量可能提高 ASP，但产能扩张、价格谈判、竞争可能压 GM | GAAP/Non-GAAP GM 是否维持 55%+ |
+| 内控/会计风险 | 2025 10-K 存在递延所得税相关 restatement 和内控重大缺陷 | 后续 10-Q/10-K remediation 进度 |
+
+### 9.4 客户替换成本
+
+客户替换成本总体高，但不是不可替代：
+
+1. **高替换成本部分**：GPU/ASIC core rail、OAM/SXM 板卡、Z-Axis/Intelli-Module、PMBus telemetry 和保护策略。一旦进入平台，替换会牵涉 PCB layout、thermal、firmware、load-line、瞬态响应、可靠性验证、客户 qualification，通常不是简单换料。
+2. **中等替换成本部分**：48V/54V IBC 模块和 eFuse。模块尺寸、效率、热、并联、遥测和认证会形成粘性，但客户仍会推动 second source。
+3. **较低替换成本部分**：普通 POL、LDO、消费类/工业通用电源。这里的价格竞争更强，不应给高 AI 倍数。
+
+结论：MPS 在高电流 AI power 位置具备较强设计壁垒和替换成本，但不是垄断。最合理的估值框架是“高质量 analog 公司 + AI power 模块化成长 + 800V 期权”，而不是“唯一不可替代的 AI 基建垄断公司”。
+
+## 10. 投资跟踪清单
+
+| 观察项 | 正面信号 | 负面信号 |
+|---|---|---|
+| Q2 2026 实际收入 | 高于 $910M，且 ED/Comms 继续超预期 | 低于指引中点或 Q3 guide 保守 |
+| Enterprise Data 占比 | 从 32.7% 向 35%-40% 提升 | ED QoQ 放缓或客户平台切换导致回落 |
+| Communications | Optical modules/switches 连续高增 | Q1 的 +55.5% YoY 只是一次性拉货 |
+| 毛利率 | Non-GAAP GM 稳在 55%+ | 模块放量但 GM 下滑，说明价格/成本压力大 |
+| 库存 | DIO 按 next-quarter revenue 下降 | 库存继续高增但收入不兑现 |
+| 800V | 出现明确客户/platform qualification 或 volume timing | 仍停留在 sample / industry demo，没有收入指引 |
+| 产能 | $6B capacity 目标进展顺利 | 扩产带来成本上升但订单不足 |
+| 分销商/客户集中 | 终端客户和区域更分散 | 前三大 distributor 或单一 AI 客户依赖进一步上升 |
+
+## 主要资料来源
+
+### 联网资料
+
+1. MPS Q1 2026 Earnings Commentary：`https://www.monolithicpower.com/media/investor-relations/press-releases/Q1_2026_MPS_Earnings_Commentary.pdf`
+2. MPS Q4 2025 / Full Year 2025 Earnings Commentary：`https://www.monolithicpower.com/media/investor-relations/press-releases/Q4_2025_MPS_Earnings_Commentary.pdf`
+3. MPS Q3 2025 Earnings Commentary：`https://www.monolithicpower.com/media/investor-relations/press-releases/Q3_2025_MPS_Earnings_Commentary.pdf`
+4. MPS Q2 2025 Earnings Commentary / GlobeNewswire：`https://www.globenewswire.com/news-release/2025/07/31/3125370/0/en/monolithic-power-systems-provides-earnings-commentary-for-the-quarter-ended-june-30-2025.html`
+5. MPS 2025 Form 10-K：`https://media.monolithicpower.com/mps_cms_document/2/0/2025_form_10-k_final.pdf`
+6. MPS 48V Data Center Solutions：`https://www.monolithicpower.com/en/products/power-management/48v-data-center.html`
+7. StockAnalysis MPWR quote and valuation snapshot：`https://stockanalysis.com/stocks/mpwr/`
+8. APEC 2026 conference program / 400V-800VDC hot-swap industry topic：`https://apec-conf.org/wp-content/uploads/2026/03/APEC-2026-Program-Book-20260223.pdf`
+
+### 项目内行业资料
+
+1. `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+2. `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+3. `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`

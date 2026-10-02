@@ -1,0 +1,376 @@
+# Adobe（ADBE）公司调研：创意与文档软件龙头的 AI 工作流再定价
+
+报告日期：2026-06-11（America/Los_Angeles）  
+主要数据日期：财务数据截至 Adobe FY2026 Q2（季度截止 2026-05-29，2026-06-11 发布）；股价与估值快照截至 2026-06-11 17:15 PT / 2026-06-12 00:15 UTC；项目内行业资料截至 2026-06-11。  
+资料边界：本报告只读取项目内 `行业调研/` 相关资料，并结合联网搜索、Adobe IR/SEC、财报电话会、产品发布、行业会议和低权重论坛线索；未读取、引用或继承 `特征量化/`、`日度资料/` 或其他公司调研报告。
+
+## 0. 结论先行
+
+1. **Adobe 不是 AI 数据中心硬件供应商，而是“企业和创意工作流里的 AI 应用/agent 收费层”。** 它对 AI 基建的直接收入不是每 MW、每 rack、每 GPU 或每 optical port 的硬件 BOM，而是通过 Firefly、Acrobat AI Assistant、GenStudio、Adobe Experience Platform Agent Orchestrator、Creative Cloud Pro/Express 等，把生成式 AI 消耗嵌入订阅、席位、credits 和企业合同。报告后文所有 “AI 数据中心相关收入” 均按“AI 应用收入/ARR + 推理算力输入成本”拆分，避免硬套硬件供应链口径。
+2. **最新 FY2026 Q2 很强：收入 66.18 亿美元，同比 +13%；GAAP / non-GAAP EPS 分别 3.94 / 5.06 美元；Digital Media ARR 220.0 亿美元，总 ARR 271.0 亿美元；RPO 222.7 亿美元，其中约 67% 在 12 个月内履约。** FY2026 全年收入指引上调至 265.0-266.0 亿美元，non-GAAP EPS 24.30-24.50 美元，经营现金流 100-102 亿美元。
+3. **投资人眼里的 Adobe 是高毛利、高现金流、强黏性的创意/文档/营销云软件平台，但过去两年估值被“生成式 AI 是否破坏护城河”压低。** 2026-06-11 盘后附近 ADBE 股价约 218.80 美元，市值约 899 亿美元，TTM P/E 约 12.8x，按 FY2026 non-GAAP EPS 指引中点 24.40 美元计算的 forward P/E 约 9.0x，TTM P/S 约 3.6x。这个倍数已经不是传统 SaaS 龙头溢价，而是市场在定价“AI 防守能否重新变成增长进攻”。
+4. **AI 证据开始从演示进入 ARR。** 管理层披露 AI-first ending ARR 已超过 5 亿美元；Firefly App + Services ending ARR 接近 3 亿美元，环比 +25%；Firefly 资产生成量超过 40 亿次、同比 4 倍以上；Acrobat AI Assistant ARR 在 Q2 近 3 倍增长；Experience Cloud AI-first ARR 同比超过 4 倍；GenStudio ARR 环比 +25%；Semrush 并入带来约 4.8 亿美元 ARR 和超过 100 万用户。  
+5. **最大分歧：AI 是净新增收入，还是只是保护原订阅不流失的成本中心。** Q2 GAAP 毛利率仍约 89.2%，说明 AI 推理成本尚未明显侵蚀公司层毛利；但 Firefly/video/agent 使用若快速放量，推理 COGS、模型合作分成、云算力采购会成为未来 4-8 个季度最重要的利润率验证项。
+6. **一年视角的基准判断：公司总收入增速大概率维持 11-13%，AI-first ARR 可从 >5 亿美元上行到 8-11 亿美元；乐观情景可到 13-18 亿美元；极度乐观情景 22-30 亿美元。** 极度乐观需要三个条件同时满足：Creative Cloud Pro 带动 AI 价格/credit 变现、Acrobat/Express 大规模转化、GenStudio/Agent Orchestrator/Semrush 成为企业营销 agent 标准栈。
+
+## 1. 公司整体业务、投资人定位与产业链位置
+
+### 1.1 Adobe 做什么
+
+Adobe 是全球创意、文档和数字体验软件平台。FY2025 年收入 237.69 亿美元，FY2026 Q2 单季收入 66.18 亿美元，业务可拆成三层：
+
+| 层级 | 主要业务 | 核心产品 | 收入属性 | AI 相关性 |
+|---|---|---|---|---|
+| Digital Media - Creative & Marketing Professionals | 创意与营销内容生产 | Photoshop、Illustrator、Premiere Pro、After Effects、Lightroom、InDesign、Creative Cloud、Adobe Stock、Frame.io、Firefly、Express | 高毛利订阅、部分 usage/credit | Firefly、Creative Cloud Pro、视频/图像生成、Express freemium 转付费是 AI 主战场 |
+| Digital Media - Business Professionals & Consumers | 文档、PDF、生产力、普通用户入口 | Acrobat、Reader、Adobe Scan、Acrobat Sign、Acrobat AI Assistant、PDF Spaces、Express in Acrobat | 订阅、企业文档席位、签名/文档流程 | PDF agent、文档问答、合同/知识库提取，较像 Microsoft 365 Copilot 的垂直 PDF 版本 |
+| Digital Experience | 企业营销云、数据平台、客户体验 | Adobe Experience Platform、AEM、Real-Time CDP、Customer Journey Analytics、Journey Optimizer、GenStudio、Workfront、Commerce、Semrush | 企业 SaaS、长期合约、服务 | GenStudio、Agent Orchestrator、Brand Concierge、LLM Optimizer、agentic web / agentic marketing |
+
+从产业链看，Adobe 位于 **AI 应用层、企业工作流层和创意内容生产层**，上游依赖 GPU/云算力、模型、存储和数据治理，下游连接创作者、设计师、营销部门、文档工作流和企业客户体验预算。项目内 `全球AI需求与Token经济框架_2026-06-11.md` 将 Adobe 归入“已经货币化的 AI seat / workflow”和“多模态、广告素材、设计工作流”需求层；`AI集群调度与推理运行时_2026-06-11.md` 则提示 2026-2028 年 AI 应用平台的关键利润变量是 `tokens/GPU-hour`、`cost/token`、`tail latency` 和多租户运行效率。Adobe 的价值不是卖 GPU，而是把这些推理能力封装成可收费工作流。
+
+### 1.2 投资人心中的 Adobe
+
+投资人通常把 Adobe 看作三类资产的混合体：
+
+| 资产属性 | 支撑逻辑 | 当前争议 |
+|---|---|---|
+| 创意软件事实标准 | Photoshop、Illustrator、Premiere、Acrobat 的专业工作流、文件格式和协作生态强 | Canva、Figma、Runway、OpenAI / Google / Meta 图像视频模型可能降低部分创作门槛 |
+| 高毛利订阅现金流 | FY2026 Q2 GAAP 毛利率 89.2%，non-GAAP operating margin 44.5%，单季经营现金流 21.65 亿美元 | AI 生成推理成本是否会降低毛利；credit/usage 价格能否覆盖成本 |
+| 企业营销云平台 | Experience Cloud 与 AEP 在大型企业营销数据、内容供应链、个性化和合规中有地位 | Salesforce、ServiceNow、HubSpot、Braze、Snowflake、Databricks、Google/Meta 广告生态、独立 SEO/MarTech 工具竞争 |
+
+过去两年 ADBE 从高增长 SaaS 龙头被市场重新定价为“成熟现金牛 + AI 防守股”。Q2 FY2026 业绩显示 AI-first ARR 的绝对额开始可见，但 5 亿美元级别相对 271 亿美元 ARR 仍只有约 1.8%，还不足以完全改变公司级增长斜率。因此当前估值低，核心原因不是盈利差，而是市场担心 AI 把创意工具边际价值商品化。
+
+### 1.3 最近 3 年重大业务变动、转型和收购
+
+| 时间 | 事件 | 金额/数字 | 投资含义 |
+|---|---|---:|---|
+| 2023-03 起 | Firefly 生成式 AI 发布并逐步进入 Creative Cloud、Express、Stock、企业服务 | Q2 FY2026 Firefly App + Services ending ARR 接近 3 亿美元；生成资产超过 40 亿次 | Adobe 从“工具订阅”转向“工具 + 模型 + credits + 企业内容供应链” |
+| 2023-12 | Adobe 与 Figma 终止原 200 亿美元收购协议 | Adobe 支付 10 亿美元终止费 | 监管阻断横向整合，Adobe 只能靠 XD/Express/Firefly/协作生态自我补强；Figma 仍是 UI/协作设计强对手 |
+| 2023-2024 | 收购/整合 Rephrase.ai 等生成式视频与 AI 创作能力；Firefly 扩展图像、矢量、设计、视频工作流 | 未披露金额 | 重点从“静态图像”扩展到视频、广告素材和企业品牌生成 |
+| 2024-2025 | GenStudio、AEP AI Assistant、Experience Platform Agent Orchestrator、Brand Concierge、LLM Optimizer 等推出 | GenStudio Q2 FY2026 ARR 环比 +25%；超过 1,500 个 customer trials | 企业营销云转向 agentic marketing / 内容供应链自动化 |
+| 2026-04 | 完成 Semrush 收购 | Semrush 带来约 4.8 亿美元 ARR、超过 100 万用户 | Adobe 进入 SEO / GEO / brand visibility / AI 搜索可见性；补上“内容生成之后如何被 AI/搜索发现”的闭环 |
+| 2026-05 | 发布 Acrobat AI Assistant / Productivity Agent、PDF Spaces、Acrobat Studio 方向 | Acrobat AI Assistant ARR Q2 近 3 倍，付费 MAU 环比 +150% | PDF 从文件阅读器升级为文档 agent 与知识工作流入口 |
+| 2026-06 | Q2 FY2026 指引上调，同时 CEO Shantanu Narayen 计划于 2026-11-30 退休，David Wadhwani 将接任 CEO | CEO 交接已宣布 | 业务强、估值低，但领导层交接会影响中期产品节奏和资本配置预期 |
+
+## 2. 估值、利润率和资产负债表健康度
+
+### 2.1 最新估值快照
+
+| 指标 | 数值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | 218.80 美元 | 2026-06-11 17:15 PT / 2026-06-12 00:15 UTC，Google Finance 快照 | Q2 发布后盘后/收盘附近水平 |
+| 市值 | 约 899 亿美元 | 同上 | 市场数据快照 |
+| TTM 收入 | 251.98 亿美元 | FY2025 Q3 - FY2026 Q2 四季合计 | 5.988 + 6.194 + 6.398 + 6.618 |
+| TTM P/S | 约 3.6x | 市值 / TTM 收入 | 对 Adobe 历史明显偏低 |
+| FY2026 forward P/S | 约 3.4x | 市值 / FY2026 收入指引中点 265.5 亿美元 | 指引来自 Q2 FY2026 |
+| TTM P/E | 约 12.8x | 市场数据口径 | 受股价大幅回撤影响 |
+| FY2026 forward P/E（non-GAAP） | 约 9.0x | 218.80 / FY2026 non-GAAP EPS 指引中点 24.40 | 更贴近管理层利润口径 |
+| FY2026 forward P/E（GAAP） | 约 12.2x | 218.80 / FY2026 GAAP EPS 指引中点约 17.95 | 包含摊销、重组、税项等 |
+| FY2026 Q2 收入增速 | +13% YoY | 2026-05-29 季度 | 总收入 66.18 亿美元 |
+| FY2026 Q2 GAAP 毛利率 | 89.2% | 2026-05-29 季度 | GAAP gross profit 59.03 亿 / revenue 66.18 亿 |
+| FY2026 Q2 GAAP 净利率 | 25.9% | 2026-05-29 季度 | GAAP net income 17.12 亿 / revenue 66.18 亿 |
+| TTM GAAP 净利率 | 约 28.7% | 最近四季 | 最近四季 GAAP 净利约 72.34 亿美元 |
+
+估值结论：Adobe 当前价格对应的 **forward non-GAAP P/E 约 9x**，已经更像低增长软件现金牛，而不是 AI 受益应用平台。若 AI-first ARR 在未来 12 个月从 >5 亿美元扩大到 13 亿美元以上，且总毛利率维持 88-90%，估值有修复空间；若 AI 只是维持原订阅不流失且推理成本拉低毛利，低倍数会合理。
+
+### 2.2 资产负债表与现金流
+
+| 项目 | 数值 | 日期 | 评价 |
+|---|---:|---|---|
+| 现金及现金等价物 | 49.19 亿美元 | 2026-05-29 | 高流动性 |
+| 短期投资 | 7.07 亿美元 | 2026-05-29 | 合计现金+短投约 56.26 亿美元 |
+| 总债务 | 66.45 亿美元 | 2026-05-29 | Current debt 18.43 亿 + long-term debt 48.02 亿 |
+| 净债务 | 约 10.19 亿美元 | 2026-05-29 | 以现金+短投抵扣后很轻 |
+| 当前资产 | 90.68 亿美元 | 2026-05-29 | current ratio 约 0.75x |
+| 当前负债 | 120.78 亿美元 | 2026-05-29 | 其中 deferred revenue 71.52 亿美元，本质是预收订阅，不等同现金偿债压力 |
+| 股东权益 | 115.18 亿美元 | 2026-05-29 | 资产负债表稳健 |
+| Q2 FY2026 经营现金流 | 21.65 亿美元 | 2026-05-29 季度 | 现金转化强 |
+| Q2 FY2026 CapEx | 0.58 亿美元 | 2026-05-29 季度 | 轻资产软件公司，AI 算力多通过云/合作和 COGS 体现 |
+| Q2 FY2026 回购 | 21.11 亿美元 | 2026-05-29 季度 | 持续回购支撑 EPS |
+| FY2026 经营现金流指引 | 100-102 亿美元 | 2026 全年 | 约占收入 38% |
+
+财务健康度：**很健康。** 核心理由是净债务轻、订阅预收高、毛利率接近 90%、经营现金流指引超过 100 亿美元。需要跟踪的不是偿债风险，而是三件事：第一，AI 推理成本是否进入 subscription COGS；第二，Semrush 等收购是否带来商誉/无形资产摊销和整合风险；第三，大额回购在收入增速放缓时是否掩盖真实经营杠杆。
+
+## 3. 最近五个财报季度复盘：财务、RPO/Backlog、业务收入与 AI 占比
+
+Adobe 不披露传统硬件公司的 backlog、bookings、lead time 或取消率。最接近订单积压的指标是 RPO（Remaining Performance Obligations）和 current RPO。RPO 是已签合同未来待确认收入，包含多年企业订阅和服务义务；对消费者/中小企业月度订阅、credit 消耗和 freemium 转化的覆盖不完整。
+
+| 财季 | 发布/季度截止 | 总收入 | YoY | Digital Media 订阅收入 | Digital Experience 订阅收入 | 主要业务/ARR | RPO/订单池与交付 | 利润率 | AI 数据中心/AI-first 相关 |
+|---|---:|---:|---:|---:|---:|---|---|---|---|
+| FY2026 Q2 | 2026-06-11 / 2026-05-29 | 66.18 亿美元 | +13% | 48.30 亿美元，约 +13% | 15.60 亿美元，约 +17% | Total ARR 271.0 亿美元，其中 Semrush 贡献约 4.8 亿；Digital Media ARR 220.0 亿 | RPO 222.7 亿美元，约 67% 在 12 个月内履约，current RPO 约 149 亿；bookings/取消率未披露 | GAAP gross margin 89.2%；GAAP op margin 33.8%；non-GAAP op margin 44.5%；GAAP net margin 25.9% | AI-first ending ARR >5 亿；Firefly App + Services ARR 接近 3 亿，环比 +25%；Acrobat AI Assistant ARR 近 3 倍；Experience Cloud AI-first ARR >4x YoY |
+| FY2026 Q1 | 2026-03-12 / 2026-02-28 | 63.98 亿美元 | +12% | 46.98 亿美元，约 +12% | 14.71 亿美元，约 +15% | Total ARR 260.6 亿；Digital Media ARR 212.9 亿 | RPO 222.2 亿美元，约 67% 12 个月内履约，current RPO 约 148.9 亿 | GAAP gross margin 89.6%；GAAP op margin 37.8%；non-GAAP op margin 47.4%；GAAP net margin 29.5% | Firefly ARR 超过 2.5 亿；AI-first ARR 未披露精确值但显著高于 FY2025 末；AI Assistant 与 GenStudio 开始进入 ARR 口径 |
+| FY2025 Q4 | 2025-12-10 / 2025-11-28 | 61.94 亿美元 | +10% | 45.51 亿美元，约 +11% | 14.12 亿美元，约 +11% | Total ARR 256.6 亿；Digital Media ARR 211.3 亿；FY2025 年收入 237.69 亿 | RPO 225.2 亿美元，约 65% 12 个月内履约，current RPO 约 146.4 亿 | GAAP gross margin 89.5%；GAAP op margin 36.5%；non-GAAP op margin 45.6%；GAAP net margin 30.0% | AI-first ARR 仍为低个位数亿美元级；核心是 Firefly、Acrobat AI、GenStudio 的企业扩张信号 |
+| FY2025 Q3 | 2025-09 / 2025-08-29 | 59.88 亿美元 | +11% | 44.03 亿美元，约 +12% | 13.66 亿美元，约 +11% | Total ARR 247.4 亿；Digital Media ARR 203.4 亿 | RPO 204.4 亿美元，约 67% 12 个月内履约，current RPO 约 136.9 亿 | GAAP gross margin 89.3%；GAAP op margin 36.3%；non-GAAP op margin 46.3%；GAAP net margin 29.6% | AI 处于“产品嵌入 + 消耗增长”阶段；收入披露少，市场仍质疑 monetization |
+| FY2025 Q2 | 2025-06 / 2025-05-30 | 58.73 亿美元 | +11% | 42.76 亿美元，约 +11% | 13.33 亿美元，约 +11% | Total ARR 240.8 亿；Digital Media ARR 197.1 亿 | RPO 196.9 亿美元，约 67% 12 个月内履约，current RPO 约 131.9 亿 | GAAP gross margin 89.1%；GAAP op margin 35.9%；non-GAAP op margin 45.5%；GAAP net margin 28.8% | Firefly/Express/Acrobat AI 处于早期，AI-first ARR 尚未形成公司级披露 |
+
+### 3.1 从五季表看出的真实趋势
+
+1. **收入增速从 10-11% 上移到 12-13%。** 这不是爆发式 AI 硬件增长，但对 250 亿美元收入规模的软件公司很稳。
+2. **RPO 从 FY2025 Q2 的 196.9 亿美元到 FY2026 Q2 的 222.7 亿美元，YoY 约 +13%。** 这与收入增速匹配，说明企业合约池没有明显恶化。
+3. **current RPO 约 149 亿美元，大约覆盖未来 12 个月收入指引的一半以上。** Adobe 的消费者和中小订阅有大量非 RPO 收入，因此 cRPO 不是完整 backlog，但能说明企业订阅可见性。
+4. **毛利率保持接近 90%。** 如果 Firefly/AI Assistant 用量已经明显增加但毛利率仍稳定，说明 Adobe 当前通过 subscription COGS、credit 包、模型路由或云采购控制住了推理成本。未来若视频生成和 agent 步数上升，需要重新验证。
+5. **AI-first ARR >5 亿美元仍小。** 它证明 Adobe 能收费，但相对 Total ARR 271 亿美元只有约 1.8%。要让市场重新给成长溢价，AI-first ARR 至少要在未来一年进入 10-20 亿美元区间，并带动核心订阅 ARPU / retention。
+
+## 4. FY2026 最新指引、业务收入占比与重点产品
+
+### 4.1 FY2026 指引拆分
+
+| 指标 | FY2026 指引 | 占总收入中点比例 | 增长/备注 |
+|---|---:|---:|---|
+| 总收入 | 265.0-266.0 亿美元 | 100% | 较 FY2025 237.69 亿美元约 +11.7% |
+| Digital Media segment revenue | 197.8-198.3 亿美元 | 约 74.6% | 核心 Creative + Document Cloud |
+| Digital Media net new ARR | 20.0 亿美元 | 不适用 | FY2026 净新增 ARR 指引 |
+| Digital Experience segment revenue | 60.60-60.80 亿美元 | 约 22.9% | 企业营销云 |
+| Digital Experience subscription revenue | 56.80-57.00 亿美元 | 约 21.4% | 指引增长约 12.5-13% |
+| 其他/Publishing & Advertising 等 | 约 6.4-7.0 亿美元 | 约 2.5% | 非核心、低增长 |
+| non-GAAP EPS | 24.30-24.50 美元 | 不适用 | 以 218.80 股价计 forward P/E 约 9.0x |
+| operating cash flow | 100-102 亿美元 | 约 38% of revenue | 现金流极强 |
+
+### 4.2 当前公司最侧重业务
+
+Adobe 的 2026 年侧重点不是单一产品，而是四个 AI 工作流闭环：
+
+| 优先级 | 业务/产品群 | 为什么重要 | 当前数字 |
+|---|---|---|---|
+| 1 | Firefly + Creative Cloud Pro + Express | 创意 AI 直接决定 Adobe 是否守住专业创作工具护城河，并把 freemium 转成订阅/credits | Firefly App + Services ARR 接近 3 亿美元；Firefly 生成资产 >40 亿次、同比 >4x；Firefly App MAU 环比 +30%；Creative freemium MAU >9,000 万、同比 >70% |
+| 2 | Acrobat AI Assistant + Productivity Agent + PDF Spaces | PDF 是 Adobe 最强格式护城河，AI 可以把 Reader/Acrobat 从工具变成知识工作流入口 | Acrobat + Express combined MAU >8.5 亿；Acrobat AI Assistant ARR 近 3 倍；付费 MAU 环比 +150% |
+| 3 | GenStudio + Experience Platform Agent Orchestrator + CX Enterprise | 企业营销从“内容管理/投放”转向“AI 生成、编排、归因、个性化”，客单价和合约可见性更高 | Digital Experience subscription Q2 15.6 亿美元，+17%；AEP + Apps subscription +30%；GenStudio ARR 环比 +25%；AI-first ARR >4x YoY |
+| 4 | Semrush + LLM Optimizer + Brand Concierge | AI 搜索/GEO 改变品牌可见性，Semrush 给 Adobe 补 SEO/流量发现数据和 SMB/中端入口 | Semrush ARR 约 4.8 亿美元，用户 >100 万；被并入 Adobe ARR |
+
+### 4.3 可跳过的低增速/非 AI 业务
+
+| 业务/产品 | 为什么暂时跳过 | 仍需监控的风险 |
+|---|---|---|
+| Publishing and Advertising legacy 产品 | 收入占比低，增长不构成公司主线 | 若继续萎缩，会拖累小部分收入但不改变投资主线 |
+| 非 AI 专业服务/实施 | 毛利低于 SaaS，战略价值在带动订阅，不是高增速利润池 | 大型 GenStudio/CX Enterprise 项目可能需要服务交付，服务成本需控 |
+| 传统 perpetual / 单点工具购买 | Adobe 已长期转订阅，增量价值有限 | 价格敏感用户向低价工具迁移 |
+| 非 AI Stock/素材库传统销售 | Firefly、版权安全素材和企业品牌资产才是重点 | 生成式 AI 可能压低传统素材 ASP |
+| 低端单功能设计工具 | 与 Canva、CapCut、Figma、Runway 竞争激烈，毛利和黏性低 | Express freemium 若转化不足，会成为成本和获客压力 |
+
+## 5. 高增长/关键产品：当前收入贡献、AI 基建重要性、供需与定价权
+
+下表的“当前收入贡献”分为公开披露和模型估计。Adobe 未按产品披露 Firefly、Acrobat AI、GenStudio 的 GAAP revenue，因此本表把 ARR、业务分部收入、管理层披露和合理分摊结合使用，所有估计值均应视为区间。
+
+| 产品/业务 | 当前收入/ARR 贡献 | 当前增速信号 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---:|---|---|---|---|---|
+| Firefly App + Firefly Services + Firefly credits | 官方披露 ending ARR 接近 3 亿美元；占 Total ARR 约 1.1% | Q2 环比 +25%；生成资产 >40 亿次、同比 >4x；credit 消耗环比 >25% | 高：多模态推理消耗直接拉动 GPU/模型服务，但 Adobe 是需求方/应用层，不卖硬件 | 高：必须在 Runway、OpenAI、Google、Canva、Meta 等前保持专业 workflow | 中等偏紧：视频/高质量图像推理成本高，但 Adobe 可多模型路由 | 中高：商业安全、版权、Creative Cloud 工作流和品牌控制有溢价；底层模型本身非垄断 |
+| Creative Cloud Pro / AI-infused flagship apps | C&M Pro subscription Q2 45.4 亿美元，年化约 181.6 亿美元；AI 增量未单独披露 | Q2 +13%；Creative freemium MAU >9,000 万、同比 >70% | 中高：决定 AI 是否提升专业创作者 ARPU 和 retention | 极高：专业用户若迁移到 AI-native 工具，护城河受损 | 供给不紧，算力是成本约束 | 高：Photoshop/Illustrator/Premiere 文件格式、插件、团队流程和培训成本构成强锁定 |
+| Acrobat AI Assistant / PDF Spaces / Productivity Agent | AI Assistant 绝对 ARR 未披露；按 AI-first ARR 剩余池估计 0.9-1.5 亿美元级别；BP&C subscription Q2 18.5 亿美元 | Acrobat AI Assistant ARR 近 3 倍；付费 MAU 环比 +150%；Acrobat/Express combined MAU >8.5 亿 | 中：文档问答/agent 是企业推理高频场景 | 高：Microsoft 365 Copilot、Google Workspace、OpenAI 文件工作流快速推进 | 不紧：文本/文档推理比视频低成本 | 高：PDF 格式、Reader 装机量、企业文档合规和签名流程有锁定 |
+| GenStudio / AEP Apps / Agent Orchestrator / CX Enterprise | DX subscription Q2 15.6 亿美元；GenStudio ARR 环比 +25%；AI-first CX ARR >4x；可归因 AI ARR 估计 1.0-2.0 亿美元级别 | AEP + Apps subscription +30%；>1,500 customer trials；>150 家客户测试 CX agents | 中高：营销内容生成、个性化、agent 调用会消耗推理，且企业数据治理复杂 | 极高：企业营销 AI 是 Salesforce、ServiceNow、HubSpot、Google/Meta 广告生态争夺区 | 中等：实施和数据接入比算力更瓶颈 | 中高：AEP 数据、AEM 内容、Workfront 流程、Creative Cloud 资产联动有差异化 |
+| Semrush / LLM Optimizer / Brand Visibility | Semrush ARR 约 4.8 亿美元，用户 >100 万；并入 Total ARR | 收购贡献无机增长；AI 搜索可见性需求上行 | 中：不是算力硬件，而是 AI 搜索/agentic web 的流量发现层 | 中高：搜索从 Google SEO 转向 LLM/GEO，品牌预算正在试探 | 供给不紧，数据和模型追踪能力是瓶颈 | 中：Semrush 强在 SEO 数据和 SMB/中端客户；竞争 Ahrefs、Similarweb、Google Search Console、独立 GEO 工具 |
+| Express freemium + SMB funnel | 收入未单披露；与 BP&C/Creative 订阅、Firefly credits 重叠；当前更像获客池 | Express MAU 环比 +20%；creative freemium MAU >9,000 万 | 中：长尾多模态生成请求可形成推理需求 | 高：Canva/CapCut 已抓住大众设计入口 | 中等：免费用户推理成本需严格限额 | 中：Adobe 品牌强，但大众设计替换成本低于专业创作者 |
+
+## 6. 高增长/关键产品一年后收入贡献：基准、乐观、极度乐观
+
+| 产品/业务 | 当前贡献基准 | 一年后基准 | 一年后乐观 | 一年后极度乐观 | 增长/验证指标 |
+|---|---:|---:|---:|---:|---|
+| Firefly App + Services + credits | ARR 接近 3 亿美元 | 5.5-7.0 亿美元 ARR；YoY/年化 +80-130% | 8.5-11.0 亿美元 ARR；+180-260% | 13-17 亿美元 ARR；+330-470% | Firefly generation、credit paid conversion、视频生成成本、Creative Pro attach rate |
+| Creative Cloud Pro / AI-infused Creative | C&M Pro 年化约 181.6 亿美元，其中 AI 增量未披露 | C&M Pro 年化 198-205 亿美元；增长 9-13% | 210-218 亿美元；增长 15-20% | 225-235 亿美元；增长 24-29% | Pro plan 升级率、取消率、seat 扩张、AI credit ARPU |
+| Acrobat AI Assistant / PDF agent | AI ARR 估计 0.9-1.5 亿美元；BP&C 年化约 74 亿美元 | AI ARR 2.5-3.5 亿美元；BP&C 年化 82-85 亿 | AI ARR 4.5-6.5 亿；BP&C 年化 88-92 亿 | AI ARR 8-10 亿；BP&C 年化 96-102 亿 | Acrobat AI paid MAU、企业文档 seat、PDF Spaces 活跃率、每用户文档查询频次 |
+| GenStudio / AEP Agents / CX Enterprise | 可归因 AI ARR 估计 1.0-2.0 亿美元；DX subscription 年化约 62.4 亿 | AI/CX agent ARR 3-5 亿；DX subscription 年化 70-73 亿 | 7-10 亿；DX 年化 76-82 亿 | 12-18 亿；DX 年化 88-96 亿 | GenStudio trials 转付费、AEP + Apps +30% 是否持续、agent private beta 转 GA、Semrush 交叉销售 |
+| Semrush / LLM Optimizer | ARR 约 4.8 亿美元 | 5.2-5.8 亿美元；+8-20% | 6.2-7.5 亿美元；+30-56% | 9-12 亿美元；+88-150% | GEO/AI search 产品 ARPU、Adobe Experience Cloud 交叉销售、SMB churn |
+| Express / freemium funnel | MAU 强，收入未披露 | 年化收入/转化贡献 4-6 亿美元；与 Firefly/Acrobat 重叠 | 7-10 亿美元 | 12-18 亿美元 | 9,000 万+ creative freemium MAU 的付费转化、教育/SMB/creator 渠道 |
+
+一年后公司总收入情景：
+
+| 情景 | 未来 12 个月总收入 | 同比/环比增长逻辑 | 隐含条件 |
+|---|---:|---|---|
+| 基准 | 290-296 亿美元 | 公司级 +11-13%；RPO +13%、FY2026 指引 +11.7% 支撑 | AI-first ARR 到 8-11 亿美元，但主要仍是防守和 ARPU 小幅提升 |
+| 乐观 | 302-310 亿美元 | 公司级 +15-17%；Digital Media +14-16%，DX +17-21% | Firefly/Acrobat AI/GenStudio 均有可见付费升级，Semrush 交叉销售开始 |
+| 极度乐观 | 320-333 亿美元 | 公司级 +21-25%；AI-first ARR 22-30 亿美元 | Creative Pro pricing、Acrobat agent、enterprise GenStudio、GEO/LLM Optimizer 同时兑现，且毛利率不明显下滑 |
+
+## 7. BOM、每 MW / 每 rack / 每 GPU / 每 optical port 内容量与价格传导链
+
+### 7.1 先给结论：Adobe 的硬件 BOM 内容量为 0
+
+Adobe 不是服务器、GPU、光模块、交换机、电源或数据中心工程供应商。对 AI 数据中心建设链条而言，Adobe 的 **每 MW / 每 rack / 每 GPU / 每 optical port 的硬件收入内容量均为 0 美元**。它不会因为某个数据中心增加 1MW、1 个 GB200 rack、1 张 GPU 或 1 个 800G optical port 而获得直接硬件 BOM 收入。
+
+但 Adobe 是 AI 推理工作负载的需求方和应用收费层。它的价格传导链是：
+
+```text
+用户/企业订阅、seat、credits、enterprise contract
+-> Adobe Firefly / Acrobat AI / GenStudio / AEP agents / Semrush
+-> 模型选择与调度：Adobe Firefly 模型 + 第三方模型 + enterprise governance
+-> 云 GPU/ASIC 推理、存储、网络、内容安全、审计
+-> Adobe subscription revenue / ARR
+-> Adobe subscription COGS、模型/云成本、毛利率
+```
+
+### 7.2 替代 BOM：Adobe AI 产品的“算力输入成本”口径
+
+| 物理口径 | 硬件供应链公司如何变现 | Adobe 口径 | 可观察指标 |
+|---|---|---|---|
+| 每 MW | 电力、UPS、冷却、服务器、GPU、网络按 MW 建设收入 | 0 美元硬件收入；Adobe 可能消耗相当于若干 MW 的云推理能力，体现在 subscription COGS 或云/模型供应商账单 | subscription gross margin、credit 消耗、Firefly generations、AI feature usage |
+| 每 rack | AI rack BOM 可能数百万美元 | 0 美元硬件收入；Adobe 只购买/租用其吞吐能力 | 生成速度、延迟、视频生成容量、用户限额 |
+| 每 GPU | GPU 供应商/云厂按卡销售或租赁 | 0 美元硬件收入；每 GPU-hour 是 Adobe 的成本输入，而非收入内容量 | cost / image、cost / video second、tokens / GPU-hour、gross margin |
+| 每 optical port | 光模块/交换芯片公司按端口变现 | 0 美元硬件收入 | Adobe 无端口级收入；只间接受益于更低推理成本和更高可用性 |
+
+### 7.3 用行业资料做成本边界
+
+项目内 `AI集群调度与推理运行时_2026-06-11.md` 指出，2026 年推理/调度软件真正影响的是 `tokens/GPU-hour`、`time-to-first-token`、`tail latency`、`GPU utilization` 和 `KV cache hit rate`；纯软件和运行时支持层毛利可达 75-90%，托管推理服务毛利更常见为 35-60%。这对 Adobe 的含义是：
+
+1. **成熟 Creative/Document SaaS 毛利率可维持 90% 左右。** Q2 FY2026 公司 GAAP 毛利率 89.2% 是强证据。
+2. **Firefly/video/agent 的边际毛利初期可能低于传统工具订阅。** 若用户大量生成视频或多步 agent，COGS 会高于 Photoshop 传统软件功能。
+3. **Adobe 的关键是 credit 和 seat 定价。** 如果 Creative Cloud Pro、Firefly credit packs、enterprise Firefly Services 能把高成本请求货币化，AI 是净新增收入；如果无限免费生成消耗过大，AI 会变成利润率压力。
+
+### 7.4 当前产能能力、采纳程度与认证/合规状态
+
+| 产品/业务 | 当前“产能能力”美元计 | 供应链/客户采纳 | 认证/合规/生态阶段 |
+|---|---:|---|---|
+| Firefly App + Services | ARR 接近 3 亿美元；按基准 60-75% AI 产品毛利估计，可承载 0.9-1.6 亿美元级年化 AI 推理/模型/云成本而仍保留高软件毛利，但公司未披露真实 COGS | Creative Pro、Firefly App、enterprise services 均已商业化；生成量 >40 亿次 | Adobe 强调商业安全、版权友好、Content Credentials / 内容出处生态；与多个第三方模型集成，非单模型封闭 |
+| Creative Cloud Pro | 年化 C&M Pro subscription 约 181.6 亿美元；AI 功能作为订阅升级和 credit 消耗 | 已在专业创作工具链深度采用 | 专业 workflow 事实标准，无硬件认证；重点是企业授权、版权、安全和品牌控制 |
+| Acrobat AI / PDF agents | BP&C 年化约 74 亿美元；AI Assistant ARR 仍小但三倍增长 | Acrobat/Reader 装机和 MAU 大，企业文档工作流基础强 | 企业数据安全、文档权限、PDF 格式兼容；不是硬件认证 |
+| GenStudio / AEP agents | DX subscription 年化约 62.4 亿美元；GenStudio/AI agents 仍处高增速导入 | >1,500 trials，>150 CX agent private beta；大型品牌采用 | 企业数据治理、品牌安全、营销合规、内容审批流程；Certification 更像 enterprise compliance，不是芯片认证 |
+| Semrush / LLM Optimizer | ARR 约 4.8 亿美元 | SEO/SEM 用户 >100 万，Adobe 可交叉销售到企业营销云 | 数据源覆盖、GEO/AI search 监测能力；依赖搜索/LLM 平台可见性 |
+
+## 8. 一年后产能能力、采纳程度和认证阶段：三情景
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| Firefly | ARR 5.5-7.0 亿美元；生成量继续 2-3 倍增长；视频/图像混合模型路由；企业采用进入常规采购 | ARR 8.5-11.0 亿美元；Firefly Services 成为大型品牌内容供应链标准件；credit 包显著扩张 | ARR 13-17 亿美元；Firefly 成为商业安全生成模型事实标准之一，视频生成大规模付费但毛利率仍可控 |
+| Creative Cloud Pro | 年化收入 198-205 亿美元；AI 功能主要提升 retention 和小幅 ARPU | 年化 210-218 亿；Pro plan/credit 定价成功，专业用户接受 AI 加价 | 年化 225-235 亿；AI 原生创作成为 Creative Cloud 的重新加速周期 |
+| Acrobat AI / PDF agent | AI ARR 2.5-3.5 亿；文档问答和 PDF Spaces 常规化 | AI ARR 4.5-6.5 亿；企业文档 agent 采购扩大 | AI ARR 8-10 亿；Acrobat 成为法律、金融、采购、HR 文档 agent 的通用入口 |
+| GenStudio / AEP agents | AI/CX agent ARR 3-5 亿；trials 转部分付费；Agent Orchestrator GA | AI/CX agent ARR 7-10 亿；企业营销内容工厂规模化 | AI/CX agent ARR 12-18 亿；Adobe 成为 agentic marketing 的头部平台 |
+| Semrush / LLM Optimizer | ARR 5.2-5.8 亿；GEO 产品小幅提升 ARPU | ARR 6.2-7.5 亿；与 GenStudio/AEP 交叉销售顺利 | ARR 9-12 亿；AI 搜索/agentic web 预算快速替代部分传统 SEO 工具 |
+
+认证/合规阶段判断：Adobe 的关键不是 “GB200 认证” 或 “800G 认证”，而是企业级合规、安全、版权可商用、Content Credentials、品牌治理和数据驻留。未来一年最重要认证/生态里程碑是：更多 Firefly/第三方模型通过企业合规审查；GenStudio/CX Enterprise 从 private beta 到大规模 GA；Acrobat AI 在高合规行业的权限、审计和数据隔离被采购部门接受。
+
+## 9. 基于订单积压和供给的未来一年业务增速预测
+
+### 9.1 当前真实订单和供给约束
+
+| 指标 | 当前读数 | 对未来一年收入的含义 |
+|---|---:|---|
+| RPO | 222.7 亿美元 | 企业订阅合同池同比约 +13%，与公司级 11-13% 增速匹配 |
+| current RPO | 约 149 亿美元 | 覆盖未来 12 个月相当大部分企业订阅收入 |
+| Total ARR | 271.0 亿美元 | 已高于 FY2026 revenue guide，说明订阅年化基础强 |
+| Digital Media ARR | 220.0 亿美元 | Creative + Document 仍是 75% 左右收入主轴 |
+| AI-first ARR | >5 亿美元 | 绝对小但增速快；若未来一年新增 5-15 亿 ARR，可改变估值叙事 |
+| Semrush ARR | 约 4.8 亿美元 | FY2026 下半年和 FY2027 起贡献并表与交叉销售 |
+| 供给约束 | 不是实体产能，而是推理成本、模型质量、企业合规、产品交付和销售转化 | 不存在硬件交期式 backlog；取消率未披露，需用 churn/ARR/RPO 间接观察 |
+
+### 9.2 三情景预测
+
+| 情景 | 未来一年收入增速 | 关键订单/供给假设 | 取消率/流失推断 | 毛利率影响 |
+|---|---:|---|---|---|
+| 基准 | +11-13% | RPO +13% 转收入；Creative/Document 稳定；DX +12-15%；Semrush 小幅并表 | 无公开取消率；ARR 和 RPO 稳定说明无明显企业取消潮 | GAAP gross margin 88.5-89.5%，AI COGS 可控 |
+| 乐观 | +15-17% | Firefly、Acrobat AI、GenStudio 均带来新增 ARR；Semrush 交叉销售；Creative Pro ARPU 提升 | AI 功能降低 churn，企业续约上升 | gross margin 88-90%，AI credit 定价覆盖推理成本 |
+| 极度乐观 | +21-25% | AI-first ARR 22-30 亿；GenStudio/CX agents 大型企业批量部署；Express/freemium 转化显著 | churn 下降且净扩张率明显上行 | gross margin 86.5-89.0%；若视频/agent 成本高，毛利可能短暂承压 |
+
+需要强调：Adobe 的 backlog 不像 CoreWeave、Oracle OCI 或硬件供应商那样由 MW、GPU、机柜或长期容量合同决定。对 Adobe 来说，最重要的“订单池”是 ARR/RPO、enterprise trials 转合同、用户 MAU 转付费、credit 消耗转收入。若只看数据中心供需，Adobe 是 **AI 推理需求的应用侧验证指标**，不是数据中心订单受益股。
+
+## 10. 竞争格局、替代方案和客户替换成本
+
+### 10.1 创意 AI 与 Firefly
+
+| 竞争者 | 优势 | 对 Adobe 的威胁 | Adobe 防守点 |
+|---|---|---|---|
+| OpenAI、Google、Meta、xAI 等基础模型 | 模型能力、生态流量、API 降价 | 图像/视频生成能力快速商品化，削弱 Firefly 模型差异 | Adobe 嵌入专业工作流、版权/品牌安全、企业合规和工具链 |
+| Runway、Pika、Luma、Kling 等视频 AI | AI-native 视频生成体验 | Premiere/After Effects 的部分新增工作流被绕过 | Adobe 可把视频生成嵌入后期、素材、审批和团队协作 |
+| Canva | 大众设计和 SMB 入口强 | Express/freemium 用户被吸走，低端创作 ARPU 受压 | Adobe 专业生态、Creative Cloud Pro、企业品牌资产 |
+| Figma | 协作设计事实标准 | UI/产品设计工作流替代 XD/部分 Creative 协作 | Adobe 的创意制作、图片视频、PDF/营销云联动更强 |
+
+判断：Firefly 的底层生成模型不一定长期垄断，真正护城河是 **专业 workflow + 商业安全 + 版权 + 企业品牌治理 + 订阅/credits 定价**。客户替换成本在专业设计师、代理商、媒体制作团队中高；在长尾社媒设计中低。
+
+### 10.2 PDF、文档 AI 和生产力 agent
+
+| 竞争者 | 优势 | 替代风险 | Adobe 锁定 |
+|---|---|---|---|
+| Microsoft 365 Copilot | Office、Teams、SharePoint、企业身份和数据 | 文档问答/总结被 Copilot 吸收 | PDF 格式、Acrobat/Reader、签名、扫描、外部文档交换 |
+| Google Workspace / Gemini | 云文档协作、搜索和 Gmail | 中小企业文档工作流替代 | PDF 标准、企业合规、跨组织文档 |
+| OpenAI / Anthropic / Perplexity 文件问答 | 模型体验快，直接上传文件 | 低端 PDF 问答商品化 | Acrobat 的权限、批量文档、签名、审计和长期文件管理 |
+| DocuSign / Box / Dropbox / Notion | 垂直文档协作或签名 | 部分合同/知识库工作流替代 | Adobe Sign + Acrobat + PDF 全生命周期 |
+
+判断：Acrobat AI 的护城河比一般聊天式文件问答强，因为 PDF 是跨企业边界的事实标准。替换成本在高合规行业高，在个人用户低。
+
+### 10.3 Enterprise marketing / GenStudio / AEP agents
+
+| 竞争者 | 优势 | 替代风险 | Adobe 锁定 |
+|---|---|---|---|
+| Salesforce Marketing Cloud / Data Cloud / Agentforce | CRM 数据、销售/服务流程、企业关系 | Salesforce 可把营销 agent 绑定 CRM | Adobe 强在内容供应链、创意资产、AEM/AEP、品牌一致性 |
+| ServiceNow | 企业 workflow 和 agent 平台 | IT/HR/服务流程预算优先 | Adobe 在营销/内容/创意端更垂直 |
+| HubSpot / Braze / Klaviyo | 中端和增长营销强 | SMB/中端客户流失 | Adobe 大企业复杂内容和品牌治理 |
+| Google/Meta/TikTok ad stack | 广告投放数据和渠道闭环 | 生成广告素材 + 投放优化一体化 | Adobe 跨渠道内容供应链和企业数据治理 |
+| Snowflake / Databricks | 数据平台和 AI/ML | AEP 数据层被客户自建替代 | Adobe 应用层、AEM/Workfront/Creative 联动 |
+
+判断：GenStudio/AEP agents 是 Adobe 最有机会把 AI 变成企业级高 ACV 的方向。客户替换成本高于低端创意工具，因为迁移涉及内容库、品牌审批、客户数据、营销自动化、AEM 站点和 Workfront 流程。
+
+### 10.4 Semrush / GEO / AI 搜索可见性
+
+| 竞争者 | 优势 | 替代风险 | Adobe 锁定 |
+|---|---|---|---|
+| Ahrefs、Similarweb、Moz | SEO 数据和用户基础 | Semrush 客户可迁移 | Adobe 可把 SEO/GEO 接入 GenStudio 和 AEP |
+| Google Search Console / Ads 工具 | 原始搜索/广告数据 | 免费或低成本替代部分功能 | Adobe 提供跨渠道、品牌、AI 搜索可见性组合 |
+| 新兴 GEO / LLM visibility 工具 | 更专注 AI search | Semrush legacy SEO 被挑战 | Semrush 数据资产 + Adobe 客户入口 |
+
+论坛/小道消息低权重结论：SEO 社区对 Adobe 收购 Semrush 的常见担忧是价格、产品独立性和功能变化；价值投资社区关注点是 Adobe 估值低但 AI 叙事不明确。这些不是主模型证据，但提示 Semrush 整合需要避免伤害原 SMB/SEO 用户群，同时要尽快证明 LLM Optimizer/GEO 不是概念包装。
+
+## 11. 风险、反证指标和下一步跟踪
+
+### 11.1 关键风险
+
+| 风险 | 触发信号 | 对估值影响 |
+|---|---|---|
+| AI monetization 不足 | AI-first ARR 未来 2-3 季低于 8 亿美元 run-rate；Firefly ARR 增速放缓 | 市场继续按成熟现金牛估值，P/E 难修复 |
+| AI COGS 上升 | subscription gross margin 从 89% 降到 86% 以下且未换来 ARR 加速 | AI 从增长叙事变成利润率压力 |
+| 专业创作护城河被低价 AI 工具侵蚀 | Creative Cloud 净新增 ARR 下滑，freemium MAU 高但转化弱 | Digital Media 多重估值下修 |
+| Enterprise AI 被 Salesforce/Microsoft/Google 吸收 | GenStudio trials 转付费弱，AEP growth 下滑 | DX 业务无法享受 agentic marketing 溢价 |
+| Semrush 整合失败 | Semrush 用户 churn 上升、SEO 社区反弹、ARR 低于 4.8 亿美元基线 | 无机增长被折价，GEO 叙事失败 |
+| CEO 交接执行风险 | 2026-2027 产品节奏、销售组织或资本配置变化 | 短期折价扩大 |
+
+### 11.2 未来四个季度最重要的跟踪指标
+
+1. **AI-first ARR：** 是否从 >5 亿美元快速逼近 10 亿美元。
+2. **Firefly App + Services ARR：** 是否从接近 3 亿美元提升到 5 亿美元以上。
+3. **subscription gross margin：** 是否保持 88-90%。
+4. **Digital Media net new ARR：** FY2026 指引 20 亿美元是否兑现。
+5. **GenStudio trials 转换：** 1,500+ trials 中多少转为付费企业合同。
+6. **Acrobat AI paid MAU：** +150% 环比后是否继续增长。
+7. **Semrush ARR/churn：** 4.8 亿美元 ARR 是否稳定并交叉销售。
+8. **RPO/current RPO：** 是否维持双位数增长；若 cRPO 增速低于收入增速，企业订单可见性恶化。
+
+## 12. 投资判断框架
+
+Adobe 当前的投资问题不是“公司好不好”，而是“AI 能否把低估值现金牛重新变成增长平台”。
+
+| 维度 | 当前判断 | 权重 |
+|---|---|---:|
+| 基础业务质量 | 强：毛利率 89%，现金流 100 亿美元级，净债务轻 | 高 |
+| AI 防守能力 | 中高：Firefly、Acrobat AI、GenStudio 已有 ARR，但绝对规模仍小 | 高 |
+| AI 进攻能力 | 中：AI-first ARR >5 亿美元，相对 Total ARR 271 亿美元仍早期 | 高 |
+| 数据中心硬件受益 | 低：Adobe 不卖硬件，每 MW/rack/GPU/port 收入内容量为 0 | 中 |
+| 应用侧 AI 需求验证价值 | 高：Adobe 是企业/创意多模态 AI 是否货币化的重要样本 | 高 |
+| 估值保护 | 强：按 FY2026 non-GAAP EPS forward P/E 约 9x，现金流覆盖强 | 高 |
+| 最大风险 | AI 商品化导致 ARPU 难升，同时推理成本上升 | 高 |
+
+**基准结论：** ADBE 是“低估值、高质量、AI 应用层再定价期”的软件公司。它不应被当作 AI 数据中心硬件/供电/光模块受益股，而应被当作 **AI 工作流 monetization 验证标的**。如果未来 12 个月 AI-first ARR 进入 10 亿美元以上、Firefly/Acrobat/GenStudio 均保持高增长、毛利率不被推理成本侵蚀，当前估值有明显修复空间；如果 AI 收入仍停留在数亿美元级且只是防止用户流失，Adobe 会继续被市场视为成熟订阅现金牛。
+
+## 13. 主要资料来源
+
+### Adobe / SEC / 市场数据
+
+- Adobe Q2 FY2026 results release, 2026-06-11: https://www.businesswire.com/news/home/20260611266804/en/Adobe-Reports-Record-Revenue-in-Q2-Fiscal-2026
+- Adobe Q2 FY2026 investor data sheet PDF, 2026-06-11: https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/11606202/bu45teegrf.pdf
+- Adobe Q2 FY2026 earnings call transcript, 2026-06-11: https://www.fool.com/earnings/call-transcripts/2026/06/11/adobe-adbe-q2-2026-earnings-transcript/
+- Adobe Q1 FY2026 results release, 2026-03-12: https://business.adobe.com/newsroom/pressreleases/2026/3/Adobe-Reports-Record-Revenue-in-Q1-Fiscal-2026
+- Adobe FY2025 Q4 and FY2025 results release, 2025-12-10: https://business.adobe.com/newsroom/pressreleases/2025/12/Adobe-Reports-Record-Revenue-in-Q4-and-Fiscal-2025
+- Adobe FY2025 Form 10-K PDF: https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/adbe-10k-fy25-final.pdf
+- Adobe completes acquisition of Semrush, 2026-04-28: https://business.adobe.com/newsroom/pressreleases/2026/4/Adobe-Completes-Acquisition-of-Semrush
+- Adobe to acquire Semrush, 2026-01-15: https://business.adobe.com/newsroom/pressreleases/2026/1/Adobe-to-Acquire-Semrush
+- Adobe unveils Acrobat AI Assistant / Productivity Agent, 2026-05-06: https://business.adobe.com/newsroom/pressreleases/2026/5/Adobe-Unveils-First-of-its-Kind-Productivity-Agent
+- Adobe GenStudio for Performance Marketing availability, 2024-10-14: https://news.adobe.com/news/news-details/2024/Adobe-GenStudio-for-Performance-Marketing-to-Accelerate-Generative-AI-Powered-Advertising-Campaigns
+- Adobe Firefly app and partner models: https://blog.adobe.com/en/publish/2025/04/24/adobe-firefly-mobile-web-app-puts-best-creative-ai-models-industry-your-fingertips
+- Adobe Firefly product page / commercial safety framing: https://www.adobe.com/products/firefly.html
+- Google Finance ADBE market snapshot: https://www.google.com/finance/quote/ADBE:NASDAQ
+
+### 项目内行业资料
+
+- `行业调研/产业背景/全球AI需求与Token经济框架_2026-06-11.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+
+### 论坛/非正式线索（低权重，只作情绪和整合风险观察）
+
+- Reddit / r/bigseo: Adobe buying Semrush discussion, 2026-01: https://www.reddit.com/r/bigseo/comments/1i2b899/adobe_just_bought_semrush/
+- Reddit / r/ValueInvesting: Adobe AI strategy and valuation discussion, 2026-06: https://www.reddit.com/r/ValueInvesting/comments/1l73mn3/why_the_heck_is_adbe_down_6/

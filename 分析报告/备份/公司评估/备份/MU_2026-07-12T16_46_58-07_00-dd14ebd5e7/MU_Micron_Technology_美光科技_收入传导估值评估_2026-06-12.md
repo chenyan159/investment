@@ -1,0 +1,169 @@
+# 公司收入传导与价值传导评估：Micron Technology 美光科技
+
+报告日期：2026-06-12  
+公司代号：MU  
+公司名称：Micron Technology, Inc. / 美光科技  
+正式输出目录：`分析报告/公司评估/`  
+资料边界：使用 `公司调研/` 与 `行业调研/` 的正式资料，并用 Micron IR、SEC/10-Q、公司产品公告和公开一致预期页面刷新关键数据；未读取、引用或继承 `特征量化/`、Signals、回归或排序结果。  
+估算口径：本报告只评估 NTM 经营收入、利润和现金流传导，不输出目标价、投资评级、股票价格区间或估值倍数判断。所有产品级 HBM、SOCAMM、eSSD 收入均为模型估算，因为 Micron 不逐项披露这些产品收入。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即从最新已披露 FY2026 Q2 后的未来四个可见财务季度，实际使用 `FY2026 Q3E + FY2026 Q4E + FY2027 Q1E + FY2027 Q2E`。截至 2026-06-12，FY2026 Q3 已结束但尚未披露，Micron 已公告 FY2026 Q3 财报电话会在 2026-06-24，因此本报告把 FY2026 Q3 仍作为未披露的当前预期季度处理。FY2026、FY2027、HBM 2028 TAM、HBM4E 长期机会只作补充口径。
+- 当前收入基准、指引和 run-rate：最新实际财报为 FY2026 Q2，收入 `238.60 亿美元`，Non-GAAP 毛利率 `74.9%`，Non-GAAP EPS `12.20 美元`；FY2026 Q3 指引收入 `335 亿美元 +/- 7.5 亿美元`，毛利率约 `81%`，Non-GAAP EPS `19.15 美元 +/- 0.40`。公开一致预期的 FY2026 收入约 `1116 亿美元`，FY2027 收入约 `1836 亿美元`，但这只是当前经营预期锚，不用于市场定价判断。
+- 重要产品/业务线：`HBM3E/HBM4 12H`、`SOCAMM2/LP server DRAM/高容量 DDR5-MRDIMM`、`数据中心 SSD/NAND/Gen6 SSD/高容量 QLC`、`Mobile and Client Business Unit`、`Automotive and Embedded Business Unit`。`HBM4 16H/HBM4E/custom base die` 是关键新品，但 NTM 基准只允许小比例或作为上限跟踪，不能替代 HBM3E/HBM4 12H 的当前收入锚。
+- NTM 公司收入四情景：悲观 `1250-1450 亿美元`，基准 `1550-1750 亿美元`，乐观 `1800-2100 亿美元`，极度乐观 `2150-2450 亿美元`。这些区间以 FY2026 Q3 指引、FY2026/FY2027 一致预期、CMBU/CDBU/MCBU/AEBU 最新收入和产品可收入化证据交叉约束。
+- 利润或 EBITDA 四情景：悲观毛利率 `58-66%`、经营利润率 `45-56%`；基准毛利率 `68-78%`、经营利润率 `58-68%`；乐观毛利率 `75-84%`、经营利润率 `66-75%`；极度乐观毛利率 `80-88%`、经营利润率 `72-82%`。EBITDA 公司未在指引中给出，无法可靠直接量化，本报告以经营利润和净利润方向替代。
+- 最大传导瓶颈：不是总需求，而是 HBM4/HBM3E 可交付 supply、HBM stack 良率、客户平台认证、SOCAMM2/LPDRAM allocation、NAND/DRAM cleanroom 约束、先进封装/测试和客户长期协议的收入确认节奏。
+- 最大利润率变量：HBM/HBM4 与高端数据中心产品 mix、DRAM/NAND ASP、HBM4 初期良率、CDBU data center NAND 是否保持高端 eSSD 占比，以及 MCBU 价格上涨是否被 PC/手机需求破坏抵消。
+- 最大现金流变量：FY2026 capex 已指引 `>250 亿美元`，FY2027 capex 还会明显上台阶；即使经营利润很高，自由现金流仍受 cleanroom、Tongluo、美国 fab、Singapore HBM advanced packaging、Singapore NAND fab 等长期资本开支吸收。
+- 可信度：基准情景为`中高`。A/B 级证据非常强：公司已披露 FY2026 Q2 分部收入、FY2026 Q3 指引、2026 HBM 价量协议、HBM4/SOCAMM2/Gen6 SSD 高量产信号。主要不确定性在产品级收入拆分、FY2027 定价持续性和 capex 后的供给释放。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| HBM3E/HBM4 12H | 官方未拆 HBM；CMBU FY2026 Q2 收入 `77.49 亿美元`，其中 HBM 是核心组成；公司披露 CY2026 HBM 价量协议已完成，HBM4 36GB 12H 已在 CY2026 Q1 volume shipment | CMBU 占 FY2026 Q2 收入 `32.5%`；HBM 单项无法可靠直接量化 | 最高，决定 AI GPU/ASIC attach 和 CMBU 利润质量 | A/B | 进入 NTM 基准，采用 CMBU 收入、HBM 价量协议和 HBM4 量产路径做保守区间 | HBM4 份额继续上修、HBM4 premium 维持、客户二供不足 |
+| HBM4 16H/HBM4E/custom base die | 已有 HBM4 48GB 16H 样品；HBM4E/custom base die 开发和客户接触明确，但 NTM 收入未披露 | 当前占比无法可靠直接量化 | 关键新品，可能改变 2027 后利润结构 | C/D | 不进入 NTM 基准主贡献；只能作为 HBM 组合中的乐观上限或附录跟踪 | 2027 后 premium HBM、custom base die、客户定制协同 |
+| SOCAMM2/LP server DRAM/高容量 DDR5-MRDIMM | 192GB SOCAMM2 high-volume production，48-256GB portfolio；CMBU/CDBU 中含 server DRAM 和 system memory，但官方未拆 | CMBU+CDBU 合计 FY2026 Q2 收入 `134.36 亿美元`，占 `56.3%` | 很高，决定 AI rack CPU 侧内存和推理/agent memory wall | A/C | 进入 NTM 基准，但对 SOCAMM2 单项采用保守折扣；高容量 DDR5/server DRAM 用 BU 收入和 ASP 证据纳入 | LPDDR6 SOCAMM2、CXL memory、跨 NVIDIA 外平台扩散 |
+| 数据中心 SSD/NAND/Gen6 SSD/高容量 QLC | CDBU FY2026 Q2 收入 `56.87 亿美元`；FY2026 Q2 NAND 收入 `50 亿美元`；data center NAND revenue sequentially more than doubled；9650 Gen6 SSD 和 122TB SSD 有官方量产/采用信号 | CDBU 占 FY2026 Q2 收入 `23.8%`；NAND 总收入占 `21%` | 很高，决定 AI storage、KV cache、RAG/data lake 和 CDBU 利润质量 | A/B | 进入 NTM 基准；Gen6 SSD 高端收入按小比例，Gen5/高容量 QLC/数据中心 NAND 为主 | CMX/STX、persistent KV cache、245TB QLC、Gen6 大规模平台化 |
+| Mobile and Client Business Unit | FY2026 Q2 收入 `77.11 亿美元`，毛利率 `79%` | `32.3%` | 当前收入占比高，短期 ASP 弹性大，但 AI 数据中心质量弱于 CMBU/CDBU | A | 进入 NTM 基准，按供应挤出和价格强度处理；不把 AI PC 叙事直接等同于高质量增长 | AI PC、on-device agentic AI、旗舰手机高 DRAM 容量 |
+| Automotive and Embedded Business Unit | FY2026 Q2 收入 `27.08 亿美元`，毛利率 `68%` | `11.4%` | 稳定和周期扩散项，不是 AI 主线，但可贡献利润和多元化 | A | 进入 NTM 基准，作为非数据中心补充 | 工业边缘 AI、汽车高容量 memory、长期生命周期产品 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不判断 Micron 份额、收入确认或利润率。当前需求锚来自 Micron FY2026 Q2/Q3 指引、公司产品公告、本地 HBM/系统内存/eSSD/AI-native 存储行业报告、公开一致预期和行业供需数据。需求单位采用最能解释该业务的指标：HBM/DRAM/NAND 以收入池、bit demand、ASP 和客户平台节奏表达；SOCAMM/eSSD 以 AI rack attach、容量、平台认证和订单池表达；MCBU/AEBU 以终端出货、内容量和 ASP/mix 表达。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| HBM3E/HBM4 12H | 2026 HBM 供应价量已锁；本地行业报告用 2026 纯 HBM 收入池 `550-700 亿美元` 作基准，HBM3E 12H 仍是 2026 主力，HBM4 12H 为 2026H2-2027 主升浪 | 需求池降至 `450-550 亿美元`，HBM4 ramp 延迟或客户二供压价，HBM3E 退坡快 | `550-700 亿美元`，HBM3E 12H 正常兑现，HBM4 12H 导入 | `700-850 亿美元`，Rubin/MI400/ASIC 采用提前，HBM4 premium 维持 | `850-1000 亿美元`，GPU/ASIC 同时非线性上修且供应仍短缺 | 悲观较锚点低 `100-200 亿美元`；乐观高 `150-300 亿美元`；极度高 `300 亿美元+` | 悲观低于预期；基准符合；乐观高于；极度显著高于 | 正向：公司 HBM 价量协议、HBM4 volume shipment、AI accelerator 内容量上升。反证：HBM ASP 连续下跌、Rubin/MI400/ASIC 延迟、竞争对手良率追赶并以价格换份额 |
+| HBM4 16H/HBM4E/custom base die | 当前是样品、开发和客户协同阶段；NTM 内可见收入小，需求主要来自更高容量/定制 HBM 平台 | 样品维持，需求不进入采购清单 | 小批量验证，需求池 `0-20 亿美元` | 16H 进入 premium 平台初量，需求池 `20-80 亿美元` | HBM4E/custom base die 提前锁定头部客户，需求池 `80-150 亿美元` | 从接近 0 到最高 `150 亿美元` 上限 | 基准只是跟踪，乐观/极度才高于当前预期 | 正向：48GB 16H 样品和 HBM4E 开发。反证：客户认证、热、翘曲、良率或 base die 协同滞后 |
+| SOCAMM2/LP server DRAM/高容量 DDR5-MRDIMM | Vera/Vera Rubin 使 SOCAMM2 成平台部件；高容量 RDIMM/MRDIMM 是最大系统内存需求池；本地行业报告认为 SOCAMM2 未来 12 个月基准 `60-150 亿美元`，高容量 DDR5/RDIMM 需求池更大 | LPDRAM allocation 紧缺导致单机容量下调且模块数未补，server DRAM ASP 回落 | SOCAMM2 随 Rubin 导入，高容量 DDR5/MRDIMM 继续紧缺 | SOCAMM attach 上升、96/192/256GB mix 改善，AI host memory wall 加速 | SOCAMM 成为 AI rack CPU 侧事实标准，并向非 NVIDIA 平台扩散 | SOCAMM 需求池较基准低 `30-70 亿美元` 或高 `100 亿美元+`；DDR5 价格/mix 决定更大总量 | 基准符合，乐观高于，极度显著高于 | 正向：SOCAMM2 HVM、Vera CPU 每 CPU 最高 2TB/1.2TB/s；TrendForce 口径显示 LPDRAM allocation 紧。反证：Vera/Rubin 节奏推迟、客户降配且总 rack 不增 |
+| 数据中心 SSD/NAND/Gen6 SSD/高容量 QLC | CDBU QoQ `+139%`，data center NAND revenue QoQ 超过翻倍；本地 eSSD 行业报告认为 2026 企业级 SSD 从普通存储升级为 AI memory tier | 高容量 QLC 认证/RMA 阻碍，Gen6 平台支持滞后，NAND ASP 回落 | Gen5/高容量 QLC 继续放量，Gen6 小比例导入，AI data lake 和 checkpoint 支撑 | KV cache、CMX/STX、RAG 和 persistent context storage 进入采购清单 | Gen6 + CMX/STX + 245TB QLC 成为新 AI rack 标配，storage share 从 2-3% 向 5%+ 上移 | 数据中心 NAND/eSSD 需求池基准约 `180-350 亿美元`，乐观高 `150-300 亿美元` | 基准符合，乐观高于，极度显著高于 | 正向：9650 Gen6 HVM、122TB SSD 强采用、NAND demand exceed supply。反证：Gen6 root complex/retimer 延迟、SSD ASP 下行、KV cache 硬件 ROI 不成立 |
+| MCBU mobile/client DRAM/NAND | FY2026 Q2 MCBU 收入 `77.11 亿美元`，毛利率 `79%`，主要受价格和供应挤出推动；AI PC/旗舰手机增加 memory content | PC/手机单位出货因高价和缺货低双位数下滑，价格无法完全抵消 | 内容量提升和供应紧张使收入维持高位，但质量低于数据中心 | AI PC 32GB/64GB、旗舰手机 12GB+ mix 扩散，价格继续上行 | 非 AI 市场被严重挤出，MCBU ASP 再上修且客户接受高价 | 需求单位可能下降，但美元需求可高于基准 `20-40%`；悲观为美元需求下修 `15-25%` | 基准符合；乐观高于；悲观低于 | 正向：DRAM/NAND 全行业紧缺和内容量提升。反证：价格破坏终端需求、渠道库存累积、客户延后采购 |
+| AEBU automotive/industrial/embedded | FY2026 Q2 AEBU 收入 `27.08 亿美元`，毛利率 `68%`，恢复来自价格和工业/汽车供应紧 | 汽车/工业周期弱，成熟节点供需缓和 | 价格和长期生命周期产品正常兑现 | 工业/汽车缺货延续，价格和 mix 改善 | 老节点紧缺与工业边缘 AI 同时上修 | 绝对需求无法可靠直接量化；以收入美元看悲观低 `10-20%`，乐观高 `15-35%` | 基准符合，乐观高于 | 正向：长期供给安全需求、成熟节点紧缺。反证：汽车产量下修、客户库存恢复、成熟 DRAM/NAND 供给回归 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断哪些需求能进入 Micron NTM 收入表，以及当前可收入化基数。Micron 能参与 AI memory/storage 需求池，不等于都能在 NTM 确认收入。A 级证据来自已披露分部收入、财务指引和已确认出货；B 级证据来自价量协议、正式产品量产、设计导入和可验证交付时间表；C/D 级证据只用于乐观或极度乐观上限。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| HBM3E/HBM4 12H | CMBU FY2026 Q2 收入 `77.49 亿美元`；HBM 单项不披露；CY2026 HBM 价量协议已完成；HBM4 36GB 12H CY2026 Q1 volume shipment | 直接 | 高毛利、高客户认证、高供应稀缺；但初期良率和客户集中影响利润 | `220-320 亿美元` | `350-480 亿美元` | `480-650 亿美元` | `650-850 亿美元` | 基准符合当前 HBM 锁单和 CMBU run-rate；乐观高于当前预期 | A/B | 是 | A 级 CMBU 收入与 Q3 指引；B 级 HBM 价量协议和 HBM4 volume shipment | NTM 核心基准；不把全部 CMBU 都算 HBM |
+| HBM4 16H/HBM4E/custom base die | 48GB 16H 样品，HBM4E/custom base die 开发；无正式收入拆分 | 直接但未完全收入化 | 若成功，利润质量高；当前更像技术期权 | `0` | `0-20 亿美元`，且包含在 HBM 组合高端 mix 中 | `20-60 亿美元` | `60-120 亿美元` | 基准只是小比例/上限，不是当前预期 | C/D | 基准主表不单独加总 | 客户样品和路线图明确，但收入确认、客户、量和价格均未披露 | 作为乐观/极度乐观上限和附录跟踪，防止重复加总 |
+| SOCAMM2/LP server DRAM/高容量 DDR5-MRDIMM | CMBU/CDBU 中含 server memory；SOCAMM2 192GB HVM、48-256GB portfolio；高容量 DDR5/MRDIMM 已在服务器平台收入化 | 直接 | 中高毛利，低于 HBM 但强于普通 DRAM；平台 design-in 提高粘性 | `180-260 亿美元` | `250-380 亿美元` | `380-550 亿美元` | `550-750 亿美元` | 基准符合当前 AI server/system memory 紧缺；乐观需 attach 或 ASP 继续上修 | A/C | 是，但 SOCAMM2 单项折扣 | A 级 BU 收入，C 级 SOCAMM2 HVM/平台导入，行业 LPDRAM allocation 约束 | NTM 基准纳入高容量 server DRAM；SOCAMM2 单项谨慎 |
+| 数据中心 SSD/NAND/Gen6 SSD/高容量 QLC | CDBU FY2026 Q2 收入 `56.87 亿美元`；NAND 总收入 `50 亿美元`；data center NAND revenue QoQ 超过翻倍；9650 Gen6 SSD HVM | 直接 | 高端 eSSD 毛利中高；普通 NAND 周期性强，需看 mix | `180-280 亿美元` | `280-430 亿美元` | `430-620 亿美元` | `620-850 亿美元` | 基准符合 CDBU run-rate 和进一步增长指引；乐观需 Gen6/QLC/CMX 拉动 | A/B | 是 | A 级 CDBU/NAND 收入；B 级 Gen6 SSD HVM、数据中心 NAND 强需求、design wins | NTM 基准纳入，Gen6/CMX 作为上修项 |
+| MCBU mobile/client DRAM/NAND | FY2026 Q2 收入 `77.11 亿美元`，毛利率 `79%` | 直接 | 当前利润率高，但客户需求弹性和周期性强，经营质量低于 HBM | `260-350 亿美元` | `350-480 亿美元` | `480-620 亿美元` | `620-780 亿美元` | 基准符合供应挤出和 ASP 高位；乐观取决于价格不破坏需求 | A | 是 | 已披露分部收入和毛利率，AI PC/手机内容量为辅助 | NTM 基准纳入，但不作为 AI 数据中心核心收入 |
+| AEBU automotive/industrial/embedded | FY2026 Q2 收入 `27.08 亿美元`，毛利率 `68%` | 直接 | 周期性低于 client，生命周期长；增长弹性低于 CMBU/CDBU | `90-120 亿美元` | `120-170 亿美元` | `170-230 亿美元` | `230-300 亿美元` | 基准符合恢复和价格改善；乐观需成熟节点紧缺延续 | A | 是 | 已披露分部收入和毛利率 | NTM 基准纳入，作为非 AI 主线稳定项 |
+
+排除项：普通 TAM、客户总 AI CapEx、GPU/ASIC 总项目金额、AI 数据中心总建设金额均不直接进入 Micron NTM 收入；未披露客户 pipeline、未量化样品和仅有主题相关性的 CXL/PIM/LPDDR6 机会只列附录跟踪。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从需求和可收入化基数出发，逐项评估 NTM 产品收入和利润贡献。表内金额为产品/业务线经营贡献模型，不是公司正式披露分项。收入贡献不得用行业 TAM、客户总预算或项目总金额直接替代。利润贡献以毛利和经营利润方向表达，因公司未披露产品级 EBITDA/净利润，无法可靠直接量化到净利润。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| HBM3E/HBM4 12H | 悲观 | `220-320 亿美元` | 毛利约 `120-210 亿美元`，经营利润仍高但低于当前高位 | 毛利率回落到 `55-68%` | 低于当前预期 | 仍有 HBM 锁单，但 HBM4 ramp 或 ASP 低于预期 | 保留为需求/份额/价格受压情景 | HBM ASP 下跌、客户平台延迟、竞争二供压价、良率不达标 |
+| HBM3E/HBM4 12H | 基准 | `350-480 亿美元` | 毛利约 `230-360 亿美元`，CMBU 维持高经营利润 | 毛利率 `65-78%` | 符合当前预期 | CY2026 HBM 价量协议、HBM4 36GB 12H volume shipment、CMBU Q2 GM `74%` | 保留 | 官方不披露 HBM 单项，需用 CMBU 和客户节奏估算 |
+| HBM3E/HBM4 12H | 乐观 | `480-650 亿美元` | 毛利约 `350-520 亿美元` | 毛利率 `72-82%` | 高于当前预期 | Rubin/MI400/ASIC 提前、HBM4 premium、客户二供不足 | 保留但需 Q3/Q4 指引验证 | 高客户集中、长约可能限制极端涨价 |
+| HBM3E/HBM4 12H | 极度乐观 | `650-850 亿美元` | 毛利约 `520-720 亿美元` | 毛利率 `78-85%+` | 显著高于当前预期 | 需求、份额、价格、良率和交付同时突破 | 下移为上限跟踪，除非 Q3/Q4 再上修 | 任一核心环节缺证据则不能放进基准 |
+| HBM4 16H/HBM4E/custom base die | 悲观 | `0` | 无可确认利润 | 无法可靠量化 | 低于远期期权预期 | 仅样品/开发阶段 | 保留为排除基准项 | 客户、价格、量产时间表缺失 |
+| HBM4 16H/HBM4E/custom base die | 基准 | `0-20 亿美元`，且包含在 HBM 组合上限中 | 小额工程/初量，利润无法可靠量化 | 不单独判断 | 符合“仅跟踪” | 48GB 16H 样品、HBM4E 开发 | 基准主汇总不单独加总 | 与 HBM 主产品重复计算风险 |
+| HBM4 16H/HBM4E/custom base die | 乐观 | `20-60 亿美元` | 若进入 premium 平台，毛利率可高于 HBM 平均 | 上行 | 高于当前预期 | 16H 样品转客户认证，小批量收入化 | 仅作乐观上限 | 热、翘曲、测试、客户认证 |
+| HBM4 16H/HBM4E/custom base die | 极度乐观 | `60-120 亿美元` | 高毛利但低可信 | 显著上行 | 显著高于当前预期 | custom base die/HBM4E 提前商业化 | 移入附录或极度上限 | NTM 内缺少正式 volume evidence |
+| SOCAMM2/LP server DRAM/高容量 DDR5-MRDIMM | 悲观 | `180-260 亿美元` | 毛利约 `80-160 亿美元` | 毛利率 `45-62%` | 低于当前预期 | 高容量 server DRAM 仍有基础需求 | 保留 | Vera/Rubin 低于预期、客户降配且总模块不增、DRAM ASP 回落 |
+| SOCAMM2/LP server DRAM/高容量 DDR5-MRDIMM | 基准 | `250-380 亿美元` | 毛利约 `150-260 亿美元` | 毛利率 `55-70%` | 符合当前预期 | SOCAMM2 HVM、Vera CPU 平台、高容量 DDR5 紧缺 | 保留 | SOCAMM 单项未披露，需保守折扣 |
+| SOCAMM2/LP server DRAM/高容量 DDR5-MRDIMM | 乐观 | `380-550 亿美元` | 毛利约 `250-420 亿美元` | 毛利率 `65-78%` | 高于当前预期 | SOCAMM attach 上升、server DRAM ASP/mix 改善 | 保留 | LPDRAM allocation 和平台节奏 |
+| SOCAMM2/LP server DRAM/高容量 DDR5-MRDIMM | 极度乐观 | `550-750 亿美元` | 毛利约 `420-630 亿美元` | 毛利率 `75-84%` | 显著高于当前预期 | SOCAMM 成 AI rack CPU 侧标准且跨平台扩散 | 下移为上限跟踪 | 极度依赖多个平台同时采用 |
+| 数据中心 SSD/NAND/Gen6 SSD/高容量 QLC | 悲观 | `180-280 亿美元` | 毛利约 `70-170 亿美元` | 毛利率 `38-60%` | 低于当前预期 | CDBU 基数仍大，但 NAND 周期回落 | 保留 | NAND ASP 下跌、Gen6 平台延迟、QLC 认证/RMA、KV cache ROI 不成立 |
+| 数据中心 SSD/NAND/Gen6 SSD/高容量 QLC | 基准 | `280-430 亿美元` | 毛利约 `150-300 亿美元` | 毛利率 `52-72%` | 符合当前预期 | CDBU Q2 GM `74%`、data center NAND revenue QoQ 超过翻倍、9650 Gen6 HVM | 保留 | 普通 NAND 与高端 eSSD mix 不披露 |
+| 数据中心 SSD/NAND/Gen6 SSD/高容量 QLC | 乐观 | `430-620 亿美元` | 毛利约 `260-470 亿美元` | 毛利率 `60-78%` | 高于当前预期 | Gen6/QLC/AI storage attach 提前，CDBU 继续强 QoQ | 保留 | eSSD 客户多供压价、存储系统价值被软件/系统厂捕获 |
+| 数据中心 SSD/NAND/Gen6 SSD/高容量 QLC | 极度乐观 | `620-850 亿美元` | 毛利约 `470-680 亿美元` | 毛利率 `70-82%` | 显著高于当前预期 | CMX/STX 和 persistent KV cache 成采购清单，NAND 短缺持续 | 下移为极度上限 | 低毛利 pass-through 风险，不可自动转成利润上修 |
+| MCBU mobile/client DRAM/NAND | 悲观 | `260-350 亿美元` | 毛利约 `90-190 亿美元` | 毛利率 `35-55%` | 低于当前预期 | 客户需求弹性高 | 保留 | 高价破坏 PC/手机需求，渠道库存上升 |
+| MCBU mobile/client DRAM/NAND | 基准 | `350-480 亿美元` | 毛利约 `190-330 亿美元` | 毛利率 `55-72%` | 符合当前预期 | FY2026 Q2 MCBU 收入 `77.11 亿美元`、GM `79%` | 保留 | 当前高毛利可能是周期高点 |
+| MCBU mobile/client DRAM/NAND | 乐观 | `480-620 亿美元` | 毛利约 `310-460 亿美元` | 毛利率 `65-78%` | 高于当前预期 | AI PC/旗舰手机内容量和供给挤出 | 保留但质量低于 CMBU/CDBU | 价格上涨可能压制终端出货 |
+| MCBU mobile/client DRAM/NAND | 极度乐观 | `620-780 亿美元` | 毛利约 `450-610 亿美元` | 毛利率 `72-82%` | 显著高于当前预期 | 非 AI 市场被严重挤出且客户接受高价 | 下移为上限 | 低切换成本和消费周期反转 |
+| AEBU automotive/industrial/embedded | 悲观 | `90-120 亿美元` | 毛利约 `40-75 亿美元` | 毛利率 `40-60%` | 低于当前预期 | 成熟业务仍有生命周期需求 | 保留 | 汽车/工业需求下修、库存恢复 |
+| AEBU automotive/industrial/embedded | 基准 | `120-170 亿美元` | 毛利约 `70-115 亿美元` | 毛利率 `55-70%` | 符合当前预期 | FY2026 Q2 AEBU 收入 `27.08 亿美元`、GM `68%` | 保留 | 不是公司主要增量来源 |
+| AEBU automotive/industrial/embedded | 乐观 | `170-230 亿美元` | 毛利约 `110-165 亿美元` | 毛利率 `62-74%` | 高于当前预期 | 成熟节点紧缺、工业/汽车恢复 | 保留 | 周期恢复力度有限 |
+| AEBU automotive/industrial/embedded | 极度乐观 | `230-300 亿美元` | 毛利约 `160-225 亿美元` | 毛利率 `68-78%` | 显著高于当前预期 | 成熟节点和工业边缘 AI 同时超预期 | 下移为上限 | 对公司整体贡献有限，不能驱动极度公司情景 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。公司不披露产品级 EBITDA，本报告在 `EBITDA/净利润` 字段中优先给出净利润和经营利润方向；无法可靠量化 EBITDA 的地方明确说明。绝对增速按 NTM 收入区间相对 TTM 收入 `581.19 亿美元` 粗算。当前预期锚为 FY2026 Q3 指引 `335 亿美元`、FY2026 一致预期 `1116 亿美元`、FY2027 一致预期 `1836 亿美元` 和 CMBU/CDBU 当前 run-rate。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `1250-1450 亿美元` | 约 `+115% 至 +150%` | 低于当前 FY2026/FY2027 混合预期；即使绝对增长仍高，也代表 HBM4/SOCAMM/eSSD 或 ASP 兑现低于已定价路径 | `58-66%` | `45-56%` | EBITDA 无法可靠量化；净利润约 `450-650 亿美元`，经营利润约 `560-810 亿美元` | 正 FCF，但因 FY2026 capex `>250 亿美元` 和 FY2027 capex 上台阶，adjusted FCF 可能降至 `150-300 亿美元` | 中 | HBM ASP 回落、客户平台延迟、client/mobile 需求被高价破坏、NAND 价格反转、capex 先行 |
+| 基准公司 | `1550-1750 亿美元` | 约 `+167% 至 +201%` | 接近当前 NTM 经营锚；FY2026 Q3 指引正常兑现，FY2026 Q4 和 FY2027 上半段延续紧供给 | `68-78%` | `58-68%` | EBITDA 无法可靠量化；净利润约 `780-1050 亿美元`，经营利润约 `900-1190 亿美元` | 强正 FCF，约 `350-600 亿美元`，但被 cleanroom、HBM、NAND 和美国 fab 建设吸收 | 中高 | 产品级拆分不披露，FY2027 ASP 和高毛利持续性需验证 |
+| 乐观公司 | `1800-2100 亿美元` | 约 `+210% 至 +261%` | 高于当前预期；不是单一小产品，而是 HBM、SOCAMM、高端 eSSD 和 MCBU 价格共同超预期 | `75-84%` | `66-75%` | EBITDA 无法可靠量化；净利润约 `1050-1400 亿美元`，经营利润约 `1190-1580 亿美元` | FCF 约 `600-900 亿美元`，经营现金流足以覆盖高 capex 后仍大幅为正 | 中 | HBM4 良率、客户长期承诺、NAND/eSSD mix、MCBU 周期是否同步转弱 |
+| 极度乐观公司 | `2150-2450 亿美元` | 约 `+270% 至 +322%` | 显著高于当前预期；需求、公司捕获、利润质量和执行质量同时突破 | `80-88%` | `72-82%` | EBITDA 无法可靠量化；净利润约 `1400-1750 亿美元`，经营利润约 `1550-2010 亿美元` | FCF 约 `850-1200 亿美元`，但需客户预付款/LTA 和 capex 纪律共同支持 | 低 | 需要 HBM4/HBM3E、SOCAMM、eSSD、client/mobile 和 AEBU 多条线同时短缺，且 FY2027 扩产不压价 |
+
+汇总检查：
+
+- 没有把 HBM4 16H/HBM4E 与 HBM3E/HBM4 12H 重复相加；16H/HBM4E 只作为 HBM 组合上限或附录跟踪。
+- 没有把 AI 数据中心总 CapEx、GPU/ASIC 项目金额或行业 TAM 直接当作 Micron 收入。
+- MCBU 虽然短期毛利率极高，但不被视为 AI 数据中心核心收入质量；其周期回落风险只在公司组合层处理一次。
+- FY2026 Q3 指引已非常高，因此基准不是“保守低增”，而是当前高预期正常兑现。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。校准动作仅使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次，避免需求风险、收入确认风险和利润风险重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q2 实际收入 `238.60 亿美元`、Non-GAAP GM `74.9%`、FY2026 Q3 指引收入 `335 亿美元`、GM 约 `81%` | 公司汇总 | 明确抬高当前收入锚，悲观情景也不能按普通存储周期低收入处理 | 支撑基准/乐观毛利率高于历史均值 | 强 OCF，但也提高客户应收、库存和供应执行要求 | 基准保留；悲观只定义为低于当前高预期，不定义为收入绝对下降 |
+| CMBU FY2026 Q2 收入 `77.49 亿美元`、CDBU `56.87 亿美元`，两者合计占 `56.3%` | 收入基数/公司组合 | 数据中心收入已在收入表中可见，不是主题映射 | 两个 BU 毛利率均为 `74%`，支撑利润质量 | 数据中心客户集中和验收节奏更关键 | 基准保留，中高可信 |
+| CY2026 HBM supply 价量协议已完成，HBM4 36GB 12H 已 volume shipment | 产品贡献 | HBM 进入 A/B 级可收入化路径 | HBM4 premium 和供应稀缺支持高毛利 | 交付、测试、良率和客户平台节奏决定确认 | HBM 基准保留；极度乐观仍需更多份额和良率证据 |
+| SOCAMM2 192GB HVM、48-256GB portfolio、Vera CPU 每 CPU 最高 2TB/1.2TB/s | 收入基数/产品贡献 | 支撑 SOCAMM2 进入 NTM，但单项不披露需折扣 | 高端 LPDRAM 模块毛利上行 | LPDRAM allocation 既是短缺正面，也可能限制出货量 | 基准小比例保留，乐观保留 |
+| CDBU data center NAND revenue QoQ 超过翻倍，9650 Gen6 SSD HVM，122TB SSD 强采用 | 产品贡献 | 支撑数据中心 SSD/NAND 进入基准 | 高端 eSSD mix 支撑 CDBU 高毛利 | Gen6 平台和高容量 QLC 认证影响兑现 | 基准保留，乐观保留；极度乐观需 CMX/STX 采购证据 |
+| FY2026 capex `>250 亿美元`，FY2027 capex 预计明显上台阶 | 公司利润/现金流 | 不直接减少收入，但未来供给释放可能影响 ASP | 折旧、利用率和价格回落会压利润率 | 现金流最大吸收项，若客户承诺不足则 ROIC 风险上升 | 现金流方向下调，不重复惩罚需求 |
+| 客户集中：10-Q 披露 2025 年 top ten customers 超过半数收入，data center end market 约一半收入 | 执行可信度/公司组合 | 客户平台或库存策略变化可影响收入节奏 | 大客户议价可能限制长期毛利 | 长约可提高可见度，也限制灵活性 | 作为执行风险保留，不把全部情景直接打入悲观 |
+| MCBU FY2026 Q2 GM `79%` | 公司组合/利润率 | 短期收入强，但不可等同 AI 基础设施质量 | 当前利润率异常高，均值回归风险大 | 终端高价可能压低 PC/手机出货 | 基准保留，乐观下调可信度 |
+| HBM4 16H/HBM4E/custom base die 只有样品和开发证据 | 收入基数 | 不能作为基准主收入 | 可提高长期利润质量，但 NTM 证据不足 | NTM 执行可信度低 | 基准主表排除单独加总，移入附录/极度上限 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入和利润低于当前高预期，但绝对收入仍大幅增长 | FY2026 Q2/FY2026 Q3 指引提供高起点，CMBU/CDBU 已收入化 | ASP 回落、HBM4 ramp 延迟、MCBU 需求破坏、NAND 价格回落、客户集中 | 保留 | `1250-1450 亿美元` 收入，GM `58-66%`，OPM `45-56%` | 中 | 客户平台延迟只在 HBM/SOCAMM/eSSD 收入确认层处理，不再重复压低 AEBU |
+| 基准 | 当前预期正常兑现，HBM、CMBU/CDBU、MCBU 和 AEBU 均按可见路径收入化 | Q3 指引、CMBU/CDBU 74% GM、HBM 价量协议、HBM4/SOCAMM2/Gen6 SSD HVM | 产品级拆分缺失、FY2027 ASP 可持续性未知、capex 抬升 | 保留 | `1550-1750 亿美元` 收入，GM `68-78%`，OPM `58-68%` | 中高 | capex 风险只压现金流和未来折旧，不重复压 NTM 需求 |
+| 乐观 | 多条线高于基准，收入和利润同步上修 | HBM4 premium、SOCAMM attach、CDBU/eSSD、MCBU 供给挤出均有正向证据 | 需要 Q3/Q4 指引继续上修或订单/客户信号增强 | 保留 | `1800-2100 亿美元` 收入，GM `75-84%`，OPM `66-75%` | 中 | 行业 HBM TAM 上修不能单独当作公司 alpha，必须有 Micron 份额和收入确认路径 |
+| 极度乐观 | 需求、公司捕获、利润质量和执行质量同时突破 | HBM4 与 AI memory/storage 的战略稀缺性强，FY2026 Q3 指引已显示极高 pricing power | 任一核心环节缺少证据；HBM4E/16H 仍多为样品/期权；低毛利收入不能自动变利润 | 下移 | 作为 `2150-2450 亿美元` 上限情景和后续跟踪，不作为当前经营预期 | 低 | 远期期权缺证据只限制极度情景，不再重复压基准 HBM3E/HBM4 |
+
+## 8. 结论
+
+- 最可能情景：基准偏乐观。更准确地说，Micron 的 NTM 经营预期已经不是普通周期复苏，而是以 HBM、server DRAM、SOCAMM、data center NAND/eSSD 和全行业 memory shortage 共同驱动的高利润期。基准 NTM 收入为 `1550-1750 亿美元`，毛利率 `68-78%`，经营利润率 `58-68%`。这个情景不是低门槛，已经要求 FY2026 Q3 指引正常兑现、FY2026 Q4 继续高位、FY2027 上半段供需仍紧。
+- NTM 收入结论：公司收入传导最硬的路径是 `HBM 价量协议 + HBM4 volume shipment + CMBU/CDBU 已披露收入 + Q3 指引`。HBM3E/HBM4、SOCAMM/server DRAM 和 data center SSD 是主要上修来源；MCBU 是短期价格弹性来源；AEBU 是稳定补充。不能把 HBM4E、CXL、PIM 或 AI 数据中心总 CapEx 提前并入基准收入。
+- 利润/现金流结论：毛利率和经营利润率的上修来自价格、mix、供应紧缺和高利用率，但自由现金流不是简单跟随净利润，因为 FY2026 capex `>250 亿美元` 且 FY2027 capex 会继续上台阶。经营现金流大概率非常强，但真正要跟踪的是客户长期承诺是否足以覆盖扩产后的价格/利用率风险。
+- 主要传导瓶颈：第一是 HBM4/HBM3E 可交付 supply 与良率；第二是 SOCAMM2/LPDRAM allocation；第三是 CDBU 的 Gen5/Gen6 eSSD 与高容量 QLC 是否保持高端 mix；第四是 MCBU 高价格是否破坏 PC/手机终端需求；第五是 capex 和折旧是否在 FY2027-FY2028 后反噬利润率。
+- 乐观情景成立条件：FY2026 Q3 实际收入高于 `335 亿美元` 指引中值或 FY2026 Q4 指引继续上修；CMBU/CDBU 毛利率维持 `70%+`；HBM4 客户平台确认扩量；SOCAMM2 模块数或容量 mix 上升；data center NAND/eSSD 继续 QoQ 增长。
+- 极度乐观情景成立条件：HBM4、HBM3E、SOCAMM2、高端 eSSD、MCBU 和 AEBU 同时短缺，且 Micron 份额、价格、良率、客户交付和 capex 执行同时优于当前预期。只靠 HBM4E/16H 样品、行业 HBM TAM 上修或单个客户订单，不能成立极度乐观。
+- 悲观情景触发条件：HBM ASP 或 DRAM/NAND 合约价连续两个季度明显下跌；FY2026 Q3/Q4 指引低于当前预期；Rubin/MI400/云厂 ASIC 平台量产延迟；CDBU data center NAND 增长停滞；MCBU 高价导致终端出货和渠道库存恶化；FY2027 capex 上修但客户长期承诺不足。
+- 后续跟踪数据：2026-06-24 FY2026 Q3 财报；CMBU/CDBU/MCBU/AEBU 收入和毛利率；HBM4/HBM3E 价格和客户份额；SOCAMM2 96/192/256GB mix；data center NAND revenue QoQ；9650/6600 ION/7600/9550 设计导入；FY2026 Q4 指引；FY2027 capex、客户长期协议和预付款；库存天数和应收账款周转。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新已披露实际财报为 FY2026 Q2，披露日 2026-03-18；FY2026 Q3 财报电话会公告时间为 2026-05-27，计划在 2026-06-24 举行；本报告截至 2026-06-12 不把 FY2026 Q3/Q4 当作已披露实际结果。
+- 主要收入、订单、指引和利润率来源：
+  - Micron FY2026 Q2 press release：收入 `238.60 亿美元`、Non-GAAP GM `74.9%`、CMBU/CDBU/MCBU/AEBU 收入和毛利率、FY2026 Q3 指引。https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-results-second-quarter-fiscal-2026
+  - Micron FY2026 Q2 prepared remarks：DRAM/NAND 收入、bit/price、CMBU/CDBU 解释、capex、net cash、FY2026 Q3 guide。https://investors.micron.com/static-files/e089f8c0-065d-47b8-9d02-bfa863cdb357
+  - Micron FY2026 Q2 Form 10-Q：业务单元定义、客户集中、系统级产品风险和财务披露。https://investors.micron.com/static-files/236af4a3-d99f-4287-b088-09721d0f6ace
+  - Micron HBM4/SOCAMM2/PCIe Gen6 SSD announcement：HBM4 36GB 12H volume shipment、HBM4 16H samples、SOCAMM2 192GB HVM、9650 Gen6 SSD HVM。https://investors.micron.com/news-releases/news-release-details/micron-high-volume-production-hbm4-designed-nvidia-vera-rubin
+  - Micron FY2026 Q1 prepared remarks：CY2026 HBM supply price and volume agreements completed、HBM TAM 从 2025 年约 `350 亿美元` 到 2028 年约 `1000 亿美元`。https://investors.micron.com/static-files/088991c5-a249-4f66-a0a6-258d9b66f3f9
+  - Micron FY2026 Q3 earnings schedule announcement：FY2026 Q3 财报将在 2026-06-24 披露。https://investors.micron.com/news-releases/news-release-details/micron-technology-report-fiscal-third-quarter-results-june-24
+  - StockAnalysis MU forecast：只使用 FY2026/FY2027 revenue consensus 和更新时间，不使用价格目标或市场估值作为经营证据。https://stockanalysis.com/stocks/mu/forecast/
+  - Seeking Alpha MU earnings page：只使用 FY2026 Q3 revenue estimate 和 FY2026 consensus revenue estimate 作为交叉验证，不使用股票价格或估值判断。https://seekingalpha.com/symbol/MU/earnings
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 一致预期收入约 `1116 亿美元`，FY2027 一致预期约 `1836 亿美元`；本报告用二者和 FY2026 Q3 指引推导 NTM 经营锚约 `1600-1750 亿美元`。
+  - 2028 HBM TAM `约 1000 亿美元` 只用于远期供需背景，不直接进入 NTM 公司收入。
+  - HBM4 16H/HBM4E/custom base die、LPDDR6 SOCAMM2、CXL memory、PIM 和 CMX/STX 大规模化是远期期权或乐观上限，除非出现正式订单、收入确认或量产交付证据。
+- 本地项目来源：
+  - `公司调研/AI服务器_存储_EMS/MU_Micron Technology 美光科技_公司调研_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_系统内存、SOCAMM与内存模组_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-06-10.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV Cache基础设施_2026-06-10.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_存储晶圆制造_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+

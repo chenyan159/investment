@@ -1,0 +1,436 @@
+# ROG_Rogers Corporation 公司调研：高性能电子材料、功率陶瓷基板与AI数据中心材料可选弹性
+
+报告日期：2026-06-11  
+股票代码：ROG / NYSE  
+公司：Rogers Corporation  
+正式分类目录：`公司调研/半导体材料_化学品_基板/`  
+项目内资料使用范围：仅使用 `行业调研/` 下相关行业资料；未读取、引用或继承 `特征量化/`，未读取旧版公司调研正文。  
+重要口径：ROG 未披露 backlog、bookings、AI数据中心收入、产品级收入和产品级毛利。本报告把官方披露、行业交叉验证和模型估算分开标注；所有“AI数据中心收入”和“每 rack/MW/GPU 内容量”均为估算，不是公司指引。
+
+## 0. 核心结论
+
+1. Rogers Corporation 是一家小市值、高现金、低负债的高性能材料公司，不是纯 AI 数据中心供应商。投资人对它的典型认知是：`汽车/EV/ADAS + 工业/防务 + 高频电子材料 + 弹性材料` 的细分龙头，过去几年因 EV/5G 周期和 curamik 资产减值承压，2025-2026 正在靠成本削减、组织重整和新产品 design win 修复利润率。
+2. 2026 最新财报 Q1 显示恢复迹象：净销售额 `$200.5M`，同比 `+5.2%`；毛利率 `32.2%`，同比 +230bp；净利润 `$4.5M`；Adj. EBITDA `$32.0M`，Adj. EBITDA margin `16.0%`，同比 +580bp。Q2 2026 指引收入 `$210M-$220M`，中点同比约 `+6%`，Adj. EBITDA 中点 `$38M`、margin `17.7%`。
+3. 资产负债表很健康，但盈利质量还在修复：截至 2026-03-31 现金 `$195.8M`，总债务约 `$29.8M`，净现金约 `$166.0M`；current ratio `4.02`；TTM FCF `$70.1M`。风险在于 2025 curamik 相关 `$71.8M` 非现金减值、欧洲/德国重组、EV 区域需求错配和 PFAS/原料供应链。
+4. AI 数据中心当前不是 ROG 的主要收入来源。可验证口径下，Q1 2026 `Electronics & Communications` 只占销售额约 `18%`，且包含 smartphones、consumer electronics、wireless infrastructure、wired infrastructure/data centers。公司和二级财报摘要均把 data center 机会描述为长期，2026 更像 sampling / prototype / design-in，当前直接 AI 数据中心收入估计仅 `低个位数到约 $10M/quarter`，占比约 `1%-5%`，置信度低。
+5. 最值得跟踪的 AI 相关产品不是“AI芯片”，而是 AI 基建材料小环节：高频/低损耗电路材料、RO4000/RO4835T/RO4400/SpeedWave/XtremeSpeed 等高速 PCB 材料；PORON/BISCO/DeWAL/Silicone Engineering 类密封、减振、gap filling 和热材料；curamik 陶瓷功率基板、ROLINX busbar 和 cooling solutions 在数据中心电力转换中的可选暴露。这些单机价值不高，但若进入 hyperscaler / switch / optical / power module 认证，切换成本和溢价会显著提高。
+6. 未来一年最合理的公司级基准情景：FY2026 收入 `$850M-$880M`，同比 `+5%-9%`，Adj. EBITDA margin 向 `16%-18%` 修复；直接 AI 数据中心相关收入 `$20M-$50M`。乐观情景需要高速 PCB/热材料进入更多 AI networking 或 optical module BOM；极度乐观情景需要 224G/448G、1.6T/CPO、AI rack 热材料或数据中心电力模块出现可验证 LTA / 客户项目。
+
+## 1. 公司整体业务、投资人心智与产业链位置
+
+### 1.1 公司业务框架
+
+Rogers 是高可靠性工程材料和组件公司，总部在 Arizona，制造设施覆盖美国、比利时、中国、德国、韩国。官方 2025 10-K 将公司分成两个战略经营分部和一个非核心 Other：
+
+| 分部 | 2025收入 | 2025收入占比 | Q1 2026收入 | Q1 2026毛利率 | 主要产品 | 主要下游 |
+|---|---:|---:|---:|---:|---|---|
+| Advanced Electronics Solutions / AES | `$445.2M` | `54.9%` | `$107.7M` | `29.2%` | 高频/高速电路材料、陶瓷功率基板、busbar、cooling solutions | EV/HEV、ADAS、A&D、renewables、wireless/wired infrastructure、industrial |
+| Elastomeric Material Solutions / EMS | `$349.7M` | `43.1%` | `$88.4M` | `35.4%` | PORON polyurethane、BISCO/ARLON/Silicone Engineering silicones、DeWAL PTFE/UHMW、thermal propagation delay materials | 工业、便携电子、汽车、A&D、医疗、轨交、数据中心外壳/密封/缓冲 |
+| Other | `$15.9M` | `2.0%` | `$4.4M` | `43.2%` | NITROPHYL floats、ENDUR components | 工业与汽车液位/组件 |
+
+ROG 的业务本质是“材料进入客户系统 BOM 后长期供货”。它不直接卖 GPU、光模块或数据中心设备，而是向 PCB 厂、功率模块厂、汽车/工业/通信设备客户、转换器和系统集成链条提供材料。它的议价力来自材料配方、可靠性数据、客户认证、应用工程支持和长期平台设计锁定，而不是产能规模。
+
+### 1.2 投资人心中的 ROG
+
+| 视角 | 投资人通常如何看 ROG | 当前证据 |
+|---|---|---|
+| 质量 | 高性能材料细分龙头，技术壁垒高，但业务规模小、周期性强 | RO4000、RO3000、curamik、PORON/BISCO 等品牌有行业认知；2025收入仅 `$810.8M` |
+| 周期 | 受 EV/HEV、ADAS、5G、工业资本开支和便携电子周期影响 | 2025 AES/EMS收入分别同比 `-1.5%` / `-3.1%`；Q1 2026恢复到公司整体 `+5.2%` |
+| 利润修复 | 2025-2026 是成本削减和组织重整故事 | 2025宣布 `$45M` 成本削减，预计到 Q4 2026 完全兑现；Q1 2026 Adj. EBITDA margin 同比 +580bp |
+| AI弹性 | 有 AI 数据中心材料“可选项”，但短期不是主要收入 | wired infrastructure/data center 未单独披露；2026更偏 sampling / prototype / design-in |
+| 资产负债表 | 现金多、债务轻、抗周期能力较好 | 2026-03-31 现金 `$195.8M`，净现金约 `$166.0M`，current ratio `4.02` |
+| 风险 | EV错配、curamik资产减值、客户采购可取消、亚洲低价替代、PFAS/原料 | 10-K 明确短期 PO 可取消/变更；2025 curamik impairment `$71.8M` |
+
+### 1.3 最近三年重大业务变动、转型和收购
+
+| 时间 | 事项 | 影响 |
+|---|---|---|
+| 2024-2025 | 合并高频电路材料制造 footprint，影响 Belgium Evergem 工厂；该项目在 2025 Q4 完成 | 降低高频材料成本、改善 AES 毛利；但也表明原有 5G/无线基础设施需求不足以支撑原 footprint |
+| 2025 Q2 | curamik 业务因 EV 区域需求变化和客户结构变化产生 `$71.8M` goodwill / intangible impairment；同时宣布 curamik 成本削减和 Germany facility 相关行动 | 这是过去三年最大负面事件。说明原来对欧美 EV power substrate 增长的预期过高，中国 EV power module 更多被本土供应链捕获 |
+| 2025 | 全球 workforce reduction 和组织扁平化；累计宣布 `$45M` 成本削减，预计 Q4 2026 完全实现 | 利润率修复核心来源。Q1 2026 SG&A 同比 `-7.4%`，Adj. OpEx 销售占比从 `25.6%` 降到 `22.6%` |
+| 2025-2026 | Ali El-Haj 先任 interim CEO，2026-05-19 被任命为正式 CEO；2026-05 增补 Brett Cope 和 Eric Starkloff 进董事会 | 管理层进入“执行、成本、资本配置、M&A筛选”阶段 |
+| 2025-2026 | 新 curamik China facility ramp / customer qualification；更多 EV battery、ADAS design wins | 本地化制造补齐中国 EV/工业链条，但也面临中国本土功率模块/基板供应商竞争 |
+| 最近三年 | 未见大型并购完成；公司 2026 focus 里提到 selective M&A | 资产负债表允许 M&A，但目前主线仍是 organic repair + targeted growth |
+
+### 1.4 产业链定位
+
+| 产业链层级 | ROG位置 | AI数据中心相关度 | 议价力 |
+|---|---|---:|---|
+| AI accelerator / GPU / ASIC | 不参与芯片设计或封装服务 | 低 | 无直接议价力 |
+| 高速 PCB / 背板 / RF / microwave materials | RO4000、RO4835T、RO4400、SpeedWave、XtremeSpeed 等 | 中；绑定 112G/224G/448G、800G/1.6T switch/server板材升级 | 若被认证进平台，切换成本高 |
+| 光模块/交换机热材料 | PORON/BISCO/DeWAL/silicone/gap filling/thermal interface 可参与 | 中低到中；当前未见大客户公开 LTA | 低于 Henkel/Honeywell/Parker/Indium 等高端 TIM 龙头，但有材料组合和 converter 网络 |
+| 数据中心电力转换 | curamik ceramic substrates、ROLINX busbars、cooling solutions 可服务 power module / inverter / UPS / renewables | 中低；更多是电力/工业/EV共用技术 | 功率模块客户认证后有粘性，但 curamik 竞争强 |
+| ADAS / mmWave radar | RO3003G2、RO4830 Plus、RO4835/RO4835T、RO4400/T | 与 AI 数据中心无关，但与汽车智能化相关 | 较高，车规设计周期长 |
+| 工业/A&D高频材料 | antenna、radar、phased array、industrial automation | 与 AI 间接，非主线 | A&D认证和可靠性要求提高粘性 |
+
+### 1.5 最新股价、估值、增长和利润率
+
+快照日期：2026-06-11。股价为盘中/延迟市场数据，财务口径以最近披露 Q1 2026 和 TTM 为准。
+
+| 指标 | 最新值 | 日期/口径 | 说明 |
+|---|---:|---|---|
+| 股价 | `$144.00` 左右 | 2026-06-11 14:46 EDT，StockAnalysis | 当日 +4.75%；web finance 同时段显示约 `$143.71` |
+| 市值 | `$2.57B` | 2026-06-11，StockAnalysis | shares outstanding `17.85M` |
+| 企业价值 EV | `$2.39B` | 2026-06-11，StockAnalysis | 因净现金，EV低于市值 |
+| PE / TTM | `n/a / 负值` | TTM至Q1 2026 | TTM净亏损 `$55.9M`，loss per share `-$3.10`，PE不具分析意义 |
+| Forward PE | `37.4x` | 2026-06-11，StockAnalysis | 隐含 forward EPS 约 `$3.85` |
+| PS | `3.11x` | 2026-06-11，StockAnalysis | TTM revenue `$820.8M` |
+| Forward PS | `2.87x` | 2026-06-11，StockAnalysis | 反映市场预期 2026收入恢复 |
+| EV/Sales | `2.91x` | 2026-06-11，StockAnalysis | 小市值材料股偏高估值 |
+| EV/EBITDA | `20.1x` | 2026-06-11，StockAnalysis | 需要利润率继续修复才能消化 |
+| Q1 2026收入增速 | `+5.2% YoY` | 2026-03-31季度 | FX贡献 `$7.9M`，实际有机增长弱于表面 |
+| FY2025收入增速 | `-2.3% YoY` | FY2025 | `$810.8M` vs FY2024 `$830.1M` |
+| Q1 2026毛利率 | `32.2%` | Q1 2026 | 同比 +230bp |
+| TTM毛利率 | `32.21%` | TTM至Q1 2026 | 与 Q1 2026接近 |
+| Q1 2026净利率 | `2.2%` | Q1 2026 | 净利润 `$4.5M` |
+| TTM净利率 | `-6.81%` | TTM至Q1 2026 | 受 Q2 2025 curamik impairment拖累 |
+| TTM FCF | `$70.1M` | TTM至Q1 2026 | FCF yield 约 `2.7%` |
+
+### 1.6 资产负债表健康度
+
+| 项目 | 2026-03-31 | 2025-12-31 | 评价 |
+|---|---:|---:|---|
+| Cash & equivalents | `$195.8M` | `$197.0M` | 现金充足，Q1环比基本稳定 |
+| Total debt | 约 `$29.8M` | 约同级别 | 债务很低 |
+| Net cash | 约 `$166.0M` | 约 `$167M` | 每股净现金约 `$9.30` |
+| Accounts receivable | `$142.1M` | `$130.6M` | Q1末月销售较高，AR上升 |
+| Inventories | `$127.5M` | `$125.0M` | 原料/WIP上升、成品下降，未见明显库存爆雷 |
+| Current liabilities | `$127.3M` | `$126.1M` | 与现金和AR相比压力低 |
+| Total assets | `$1.4265B` | `$1.4299B` | 资产规模稳定 |
+| Shareholders' equity | `$1.1927B` | `$1.1957B` | 账面价值约 `$67/share` |
+| Current ratio | `4.02` | 市场数据口径 | 短期偿债能力强 |
+| Debt / Equity | `0.02` | 市场数据口径 | 杠杆极低 |
+| Asbestos liabilities | 约 `$57.3M` | `$57.4M` | 有历史尾部风险，但有约 `$52.8M` insurance recoverables 对冲 |
+
+综合判断：财务状况健康，ROG 不是资产负债表风险股。真正问题是收入增长和 ROIC 修复。以当前市值约 `$2.57B`、EV约 `$2.39B`，市场已经在给利润恢复和新产品/AI材料可选项定价；如果 Q2-Q4 2026 收入没有明显加速，`37x` forward PE 和 `20x` EV/EBITDA 会显得偏贵。
+
+## 2. 最近五个财报季度：收入、业务、订单与AI数据中心暴露
+
+说明：ROG 不披露正式 backlog / bookings / book-to-bill / lead time / cancellation rate。公司 10-K 明确指出，多数 point-in-time 销售来自短期 purchase orders，订单可在较短通知期内重新排期、取消或修改且通常无重大罚金。因此，以下订单列使用 `合同资产 + 分部收入 + 管理层评论 + design wins + 下游行业信号` 做代理判断。
+
+分部收入口径说明：Q1 2025 和 Q1 2026 分部收入来自 10-Q；Q2/Q3 2025 使用公司披露的顺序增长率倒算；Q4 2025 使用 FY2025 分部总额扣除前三季度倒算，均四舍五入。
+
+| 财报期 | 总收入 / 增速 | 利润率与利润 | AES收入 / 毛利率 | EMS收入 / 毛利率 | 业务与终端市场重点 | 订单/交期/取消率代理判断 | AI数据中心收入占比估算 |
+|---|---:|---|---|---|---|---|---|
+| Q1 2026 | `$200.5M`，YoY `+5.2%`，QoQ `-0.5%`；FX贡献 `$7.9M` | GM `32.2%`；净利 `$4.5M`；Adj. EPS `$0.75`；Adj. EBITDA `$32.0M`，margin `16.0%` | `$107.7M`，YoY `+3.4%`；GM `29.2%` | `$88.4M`，YoY `+7.0%`；GM `35.4%` | Q1销售按终端：Industrial `37%`、Automotive `24%`、Electronics & Communications `18%`、A&D `15%`、Other `6%`；smartphone 双位数增长，无线基础设施因订单时点改善 | 合同资产 `$25.9M`，其中 AES `$22.2M`；over-time revenue `$44.8M`。公司称 ADAS和EV battery有 design wins，R&D pipeline获 major OEM traction；无 backlog披露 | 估算 `1%-5%`。E&C约 `$36M`，但包含手机、消费电子、无线和 wired infrastructure/data center；数据中心更像 sampling/prototype |
+| Q4 2025 | `$201.5M`，YoY `+4.8%`，QoQ `-6.7%` | GM `31.5%`；净利 `$4.6M`；Adj. EPS `$0.89`；Adj. EBITDA `$34.4M`，margin `17.1%` | 约 `$117.3M`；YoY `+14.6%` | 约 `$80.6M`；YoY `-6.7%` | 工业、ADAS、renewables销售提高；EMS EV/HEV下降但工业抵消部分 | 2025年底现金 `$197.0M`，Q4 FCF `$42.2M`；Belgium高频材料 footprint wind-down完成，订单没有公开积压 | 估算 `<3%`；未见大型 data center 客户订单披露 |
+| Q3 2025 | `$216.0M`，QoQ `+6.5%`，YoY `+2.7%` | GM `33.5%`；净利 `$8.6M`；Adj. EPS `$0.90`；Adj. EBITDA `$37.2M`，margin `17.2%` | 约 `$114.7M`，QoQ `+5.2%` | 约 `$97.1M`，QoQ `+8.7%` | Industrial `28%`、A&D `16%`、e-mobility `14%`、ADAS `9%`、portable `9%`、renewables `5%`、wireless `5%`；无线基础设施从Q2软订单恢复 | 订单时点改善集中在 wireless infrastructure；没有披露 backlog。工业连续第三季改善 | 估算 `<3%`；更像高频/通信和工业修复 |
+| Q2 2025 | `$202.8M`，QoQ `+6.5%`，YoY `-5.3%` | GM `31.6%`；净亏损 `$73.6M`，含 `$71.8M` curamik非现金减值；Adj. EPS `$0.34`；Adj. EBITDA `$23.9M` | 约 `$109.0M`，QoQ `+4.6%` | 约 `$89.4M`，QoQ `+8.2%` | Industrial `28%`、A&D `16%`、e-mobility `14%`、ADAS `9%`、portable `7%`、renewables `5%`、wireless `5%`；Q2无线因5G rollout放缓 | curamik China facility准备 ramp，customer qualification推进；公司right-size curamik并预计年化 savings `$13M` | 估算 `<2%`；财报主线是EV/curamik重估，不是AI |
+| Q1 2025 | `$190.5M`，QoQ `-0.9%` | GM `29.9%`；净亏损 `$1.4M`；Adj. EPS `$0.27`；Adj. EBITDA `$19.5M`，margin `10.2%` | `$104.2M`；GM `27.9%` | `$82.6M`；GM `32.3%` | AES受ADAS和A&D改善支撑，EMS受portable seasonality和汽车下滑影响 | 现金 `$175.6M`；合同资产约 `$27.9M`。订单短周期、客户可变更是风险 | 估算 `<2%` |
+
+### 2.1 过去五个季度的关键观察
+
+1. 收入从 Q1 2025 `$190.5M` 恢复到 Q3 2025 `$216.0M`，Q4/Q1季节性回落，但 Q1 2026同比转正。增长并不强，主要靠工业、电子通信、A&D和部分汽车 design wins。
+2. 利润率修复比收入更明显。Adj. EBITDA margin 从 Q1 2025 `10.2%` 升到 Q1 2026 `16.0%`，主要来自 higher volume/mix、新工厂表现、operational excellence和 OpEx下降。
+3. 2025 Q2 是业绩“清洗”季度：curamik impairment `$71.8M` 把 TTM PE 变成负值，但现金流没有同步恶化。
+4. backlog 不透明是研究难点。ROG 的订单更偏短 PO 和 design-in pipeline，不像电力设备公司有多年 backlog。即使 AI 数据中心材料需求成立，也需要客户认证转量产才会变成可见收入。
+5. 当前 AI 数据中心仍是小数。ROG 的 E&C 终端里手机和无线基础设施信号更明确；wired infrastructure/data center没有单列，也没有客户项目名、LTA金额或交付窗口。
+
+## 3. 2026最新指引、收入占比、重点产品和跳过业务
+
+### 3.1 Q2 2026 指引
+
+| 指标 | Q2 2026指引 | 中点 | 含义 |
+|---|---:|---:|---|
+| Net sales | `$210M-$220M` | `$215M` | 同比约 `+6%` |
+| Gross margin | `32.5%-33.5%` | `33.0%` | 继续高于 Q1 2026 `32.2%` |
+| Adj. EPS | `$0.90-$1.10` | `$1.00` | 环比 Q1 `$0.75`改善 |
+| Adj. EBITDA | `$35M-$41M` | `$38M` | 中点margin `17.7%`，同比改善约 590bp |
+| 2026 CapEx | `$30M-$40M` | `$35M` | 资本开支温和，说明短期不是大规模扩产周期 |
+
+### 3.2 Q1 2026 终端市场收入占比
+
+| 终端市场 | Q1 2026销售占比 | 折算收入 | 同比评论 | 与AI数据中心关系 |
+|---|---:|---:|---|---|
+| Industrial | `37%` | 约 `$74M` | EMS industrial双位数增长，美国和欧洲多个子市场强；rail改善 | 可间接受益于数据中心电力/工业自动化，但不是纯AI |
+| Automotive | `24%` | 约 `$48M` | 美国EV疲弱和light vehicle production下降；ADAS因去年底强需求后回落 | ADAS/智能车相关，非AI数据中心 |
+| Electronics & Communications | `18%` | 约 `$36M` | smartphones双位数增长；wireless infrastructure因订单时点改善 | 这是 data center/wired infrastructure唯一披露入口，但混合度高 |
+| Aerospace & Defense | `15%` | 约 `$30M` | 商用航空EMS需求提高，A&D略增 | 高频材料、雷达、天线，与AI数据中心无直接关系 |
+| Other | `6%` | 约 `$12M` | 未单列 | 非核心 |
+
+### 3.3 产品和型号映射
+
+| 业务/产品族 | 具体产品/型号 | 对应收入池 | 2026增长判断 | 粗略产品毛利判断 | 交叉验证 |
+|---|---|---|---|---|---|
+| 高频/低损耗电路材料 | RO4000系列、RO4003C、RO4350B、RO4000 LoPro、RO4400/RO4400T bondply、RO4835/RO4835T、RO4830 Plus、RO3003G2、CLTE-MW、SpeedWave 300P、XtremeSpeed RO1200、RT/duroid | AES；wireless、wired infrastructure/data center、ADAS、A&D | 2026基准中个位数到高个位数；若 224G/448G/1.6T 高速板材进入AI switch/server BOM，可更高 | AES分部GM `29.2%`；高频材料估计 `30%-42%`，高认证产品可更高 | 本地AI互联资料显示低Dk/Df、铜粗糙度、224G/448G、AI switch PCB成为约束；RO4000/RO4835T产品页强调低损耗、FR-4兼容和Dk/Df |
+| curamik ceramic substrates | curamik Endurance、Performance、Performance Plus、Power、Power Plus、Thermal；DBC/AMB ceramic substrates | AES；EV/HEV、industrial、renewables、power conversion | 2025受EV错配拖累；2026看中国facility qualification和renewables/industrial转单 | 估计 `24%-34%`；车用/工业认证好但价格竞争强 | 10-K/Q2 slides披露curamik impairment、China ramp、customer qualification、`$13M` savings |
+| Busbar / cooling | ROLINX busbars、curamik cooling solutions | AES；EV battery、power module、工业和可能的数据中心电力架构 | 2026中低增长，若AI rack power shelf/HVDC/UPS采用可选弹性 | 估计 `25%-35%` | 数据中心电力链条对busbar/功率连接/热管理需求上行，但ROG未披露AI客户 |
+| EMS弹性/硅胶/密封/减振 | PORON Industrial/Medical/Comfort、BISCO、ARLON、Silicone Engineering silicones、DeWAL PTFE/UHMW、XRD、ProCell EV Firewall | EMS；industrial、portable electronics、A&D、automotive、data center enclosure/gasket/gap filling | Q1 2026 EMS `+7.0%`，工业/E&C/A&D增长；portable有季节性 | EMS分部GM `35.4%`；高性能硅胶/密封估计 `30%-45%`，高端热/低析出材料可更高 | 本地TIM资料显示AI rack/光模块需要gap filler、sealing、low pump-out材料；但ROG不是公开头部AI TIM供应商 |
+| ADAS / automotive radar materials | RO3003G2、RO4830 Plus、RO4835/RO4835T、RO4400/T、SpeedWave 300P、PORON/BISCO sensor sealing | AES+EMS；ADAS radar、camera/LiDAR sensor sealing | 2025 ADAS约 `9%`销售占比，约 `$73M`；Q1 2026因去年底强需求后回落 | 估计 `30%-42%`，车规design-in粘性高 | 2025-02 RO4830 Plus发布，面向76-81GHz汽车角雷达，低插损、PFAS-free、FR-4兼容 |
+| A&D高频材料 | antenna systems、phased array/radar相关RF laminates和EMS aerospace材料 | AES+EMS；A&D Q1占比 `15%` | 2026中高个位数，受防务和商航需求支撑 | 估计 `32%-45%`，认证强 | Q1 2026 A&D略增，Q2/Q3 2025 A&D占比 `16%` |
+
+### 3.4 本报告跳过或降低权重的业务
+
+这些业务不是没有价值，而是与本次“AI芯片/AI数据中心”问题弱相关，且当前增长弹性较低或难形成材料溢价：
+
+| 跳过/低权重业务 | 原因 |
+|---|---|
+| R/bak flexographic printing cushions | 非AI、非高增长；与数据中心硬件无关 |
+| NITROPHYL floats / ENDUR components | Other仅约2%收入，非核心 |
+| 普通 footwear / impact safety / comfort foam | 消费/运动防护属性强，非AI基础设施 |
+| 普通 portable electronics cushioning | Q1 2026 smartphones增长有贡献，但更偏消费电子周期 |
+| ICE auto普通密封/缓冲 | 汽车周期属性强，非AI数据中心 |
+| 通用低端PTFE/UHMW tape | 可作为材料收入，但标准品议价弱 |
+
+## 4. 关键/高增长产品当前收入贡献、增速、AI基建重要性和供需
+
+评分：1低、5高。收入贡献为本报告估算或披露映射，除非特别注明。`AI重要性` 指对AI基建技术栈的重要性，不等同于 ROG 当前收入占比。
+
+| 产品/业务 | 当前收入贡献估算 | 当前增速 | AI重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 关键判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| AI高速/低损耗电路材料 | 2026年直接AI data center run-rate 估计 `$5M-$20M`；全高频/通信/ADAS/A&D材料远高于此 | 直接AI：高但基数小；整体AES Q1 `+3.4%` | `3.5/5` | `3/5` | `2.5/5` | `3.5/5` | 224G/448G、1.6T switch/server PCB需要低Dk/Df材料；但AI客户量产证据不足 |
+| EMS高性能密封/热/减振材料 | 直接AI data center run-rate 估计 `$5M-$25M`；EMS Q1收入 `$88.4M` | EMS Q1 `+7.0%` | `3/5` | `3/5` | `2.5/5` | `3/5` | AI rack和光模块热/密封需求真实，但ROG产品定位更多是gasket/gap/cushion，非公开高端TIM主供应商 |
+| curamik功率陶瓷基板 / ROLINX / cooling | curamik/功率相关年化估计 `$120M-$170M`，其中AI数据中心直接占比很小 | 2025下滑，2026修复；China ramp和renewables/industrial是关键 | `2.5/5` | `2/5` | `2/5` | `2.5/5` | 数据中心UPS、inverter、power module理论可用，但当前更受EV/renewables/industrial驱动 |
+| ADAS/mmWave radar材料 | FY2025 ADAS约 `9%`销售，约 `$73M`；Q1 2026汽车总收入约 `$48M` | 2025 ADAS双位数增长；Q1 2026回落 | `1.5/5` | `3/5` | `3/5` | `4/5` | 非AI数据中心，但车规认证强、RO4830 Plus等新品有明确76-81GHz应用 |
+| A&D/工业高频材料 | A&D Q1 2026约 `$30M`；Industrial约 `$74M`，其中材料/EMS混合 | A&D略增，industrial强 | `1.5/5` | `3/5` | `3/5` | `4/5` | 非AI，但防务/工业可靠性壁垒高，可稳定ROG利润率 |
+
+## 5. 一年后收入贡献三情景预测
+
+时间窗口：2027年中附近，即从 2026-06-11 往后约12个月。以下不是公司指引，而是基于 Q1/Q2 2026披露、行业AI建设订单、认证周期和ROG产品定位的模型。
+
+| 产品/业务 | 基准情景：一年后收入贡献/增速 | 乐观情景 | 极度乐观情景 | AI重要性变化 | 供需/定价变化 |
+|---|---|---|---|---|---|
+| AI高速/低损耗电路材料 | 年化直接AI收入 `$20M-$40M`，同比约 `+50%-100%`，但占公司收入仍小 | `$45M-$80M`，若进入1.6T switch、AI server backplane、near-ASIC/cabled PCB更多BOM | `$90M-$150M`，需出现hyperscaler或ASIC/rack平台公开/半公开design-in和多季度交付 | 从 `3.5`升至`4` | 基准供需不极紧；乐观下客户认证后短交期/高良率材料有premium |
+| EMS高性能密封/热/减振材料 | 年化AI相关 `$20M-$45M`，同比 `+40%-80%` | `$50M-$100M`，若光模块、server/cold plate、rack sealing项目进入量产 | `$100M-$180M`，需成为高端AI TIM/gap filler或液冷rack关键材料供应商 | 从`3`升至`3.5-4` | 低端可替代；高导热/低泵出/低析出认证品供需更紧 |
+| curamik功率陶瓷基板 / ROLINX / cooling | 全业务 `$150M-$180M`，同比个位数到十几；AI数据中心直接小于 `$20M` | `$190M-$230M`，EV修复+renewables/industrial+数据中心power module小批量 | `$250M-$320M`，需AI数据中心UPS/HVDC/solid-state transformer或power shelf项目明显采用 | 从`2.5`到`3` | 竞争强，供应不是最大瓶颈；认证和区域本地化更重要 |
+| ADAS/mmWave radar材料 | `$80M-$100M`，同比 `+10%-25%` | `$110M-$145M`，RO4830 Plus/RO3003G2平台放量，ADAS渗透提升 | `$160M-$220M`，L2+/NOA带动多雷达方案普及且ROG拿到更多亚洲/欧洲客户份额 | AI数据中心无变化 | 车规认证带来粘性，价格受汽车客户压价 |
+| A&D/工业高频材料 | A&D/工业相关合计高个位数增长，A&D年化 `$120M-$150M` | `$160M-$200M`，防务雷达/通信和工业自动化同时改善 | `$210M-$270M`，需大型A&D项目和工业周期共振 | AI数据中心无变化 | 认证强、供应链区域化提高溢价 |
+
+公司级三情景：
+
+| 情景 | FY2026/FY2027中收入路径 | 公司增长 | Adj. EBITDA margin | 直接AI数据中心收入 | 关键触发 |
+|---|---:|---:|---:|---:|---|
+| 基准 | FY2026 `$850M-$880M`，2027 run-rate `$890M-$930M` | `+5%-9%`后转中个位数 | `16%-18%` | `$20M-$50M` | Q2指引兑现、成本削减落地、工业/ADAS稳健 |
+| 乐观 | FY2026 `$900M-$950M`，2027 run-rate `$960M-$1.02B` | `+11%-17%` | `18%-20%` | `$50M-$120M` | 高速材料/热材料进入AI networking与optics BOM，curamik修复 |
+| 极度乐观 | FY2026 `$980M-$1.08B` run-rate | `+21%-33%` | `20%+` | `$120M-$250M` | 出现可验证AI客户LTA、1.6T/224G/448G平台设计锁定、数据中心电力材料订单 |
+
+## 6. BOM拆分、每MW/每rack/每GPU/每optical port内容量、价格传导和认证
+
+### 6.1 AI高速/低损耗电路材料
+
+| 口径 | 内容量估算 | 说明 |
+|---|---:|---|
+| 每 GPU / accelerator | `$0.5-$5`，高端复杂设计 `$5-$15` | 指ROG可捕获的低损耗 laminate/bondply/特殊材料价值，不是整张PCB价值 |
+| 每 100kW-120kW AI rack | `$100-$700`；若高端switch/server背板design-in可到 `$1,000-$2,500` | GPU baseboard、NIC/DPU、switch tray、management/control PCB、backplane/cabled PCB中只有部分材料可能用ROG |
+| 每 MW IT load | 基准 `$1,000-$7,000`；乐观 `$8,000-$20,000` | 取决于每MW约8-10个100kW+ rack和switch/rack拓扑 |
+| 每 800G/1.6T optical port | `$0.05-$1.50` | 多数光模块材料不一定由ROG提供；若涉及高频小板/热材料才有内容量 |
+
+BOM拆分：低损耗介质/树脂/填料 `35%-55%`，铜箔/表面粗糙度相关 `15%-30%`，压合/良率/测试 `15%-30%`，认证/NRE/应用工程 `5%-15%`。价格传导主要来自低 Dk/Df、低插损、低CTE、低PIM、铜粗糙度控制、FR-4兼容加工和客户认证。普通 PCB 材料容易被 Panasonic/Isola/AGC/生益等替代；但进入 224G/448G/1.6T 高速通道认证后，重新验证成本会提高粘性。
+
+当前产能能力：ROG AES 2025收入 `$445.2M`，Q1 2026年化 `$431M`。在现有产能利用不满和2026 CapEx仅 `$30M-$40M`背景下，短期问题不是“总产能绝对不足”，而是高端规格、良率、客户认证和产品组合。公司已完成 Belgium 高频材料制造整合，毛利改善但也削减了低效产能。
+
+认证阶段：公开信息只支持“产品可用于 wired infrastructure/data centers / high frequency / high speed / microwave / mmWave”，不支持确认进入任何特定 hyperscaler AI rack BOM。当前应视作 sample / design-in / qualification阶段，非大规模量产确认。
+
+### 6.2 EMS高性能密封、热和减振材料
+
+| 口径 | 内容量估算 | 说明 |
+|---|---:|---|
+| 每 GPU / accelerator | `$1-$8` | thermal pad/gap filler/gasket/减振/密封材料；若只用普通缓冲材料则更低 |
+| 每 100kW-120kW AI rack | `$100-$1,000`；若进入cold plate interface/高导热gap filler可达 `$1,500-$4,000` | ROG有PORON/BISCO/DeWAL/Silicone Engineering材料组合，但公开资料未证明其是AI高端TIM主供 |
+| 每 MW IT load | 基准 `$1,000-$10,000`；乐观 `$15,000-$40,000` | 随液冷rack、optical module和现场可维护密封需求上行 |
+| 每 optical port | `$0.10-$1.00` | 光模块高导热gap filler和密封材料的可能内容量；头部竞争对手包括Henkel/Parker/Honeywell/3M等 |
+
+BOM拆分：普通硅胶/聚氨酯体系中 polymer `20%-35%`，陶瓷/导热填料或功能填料 `30%-60%`，加工/切片/点胶/质量控制 `15%-30%`，认证与转换器加工 `5%-20%`。价格传导来自低compression set、低outgassing、温湿/UV/臭氧耐受、低泵出、热循环寿命和客户converter网络。普通foam/pad价格竞争强；高导热、低泵出、低应力材料若进入平台，可出现溢价。
+
+当前产能能力：EMS 2025收入 `$349.7M`，Q1 2026年化 `$354M`；Q1毛利率 `35.4%` 已高于AES。ROG EMS靠全球材料制造+preferred converter网络交付，当前更像“可扩产/可转产的材料能力”，不是确定的AI专线产能。
+
+认证阶段：portable electronics、industrial、automotive、A&D材料已成熟；AI数据中心 thermal / optical module / liquid-cooled rack 公开认证阶段不明。应按“部分材料可采纳，特定客户项目未确认”处理。
+
+### 6.3 curamik ceramic substrates、ROLINX busbar和cooling
+
+| 口径 | 内容量估算 | 说明 |
+|---|---:|---|
+| 每 GPU / accelerator等效 | `$0.5-$5` | 不是GPU封装材料；主要穿透到rack power shelf、UPS、inverter、power module |
+| 每 100kW-120kW AI rack | `$20-$200`，高功率模块化电源架构可到 `$300-$800` | 取决于客户是否用ROG基板/母排在电力模块中 |
+| 每 MW IT load | `$1,000-$10,000`；乐观 `$15,000-$50,000` | 数据中心facility power和rack-level power conversion价值远大于ROG材料可捕获份额 |
+| 每 optical port | 基本无直接内容量 | 与光模块无直接关系 |
+
+BOM拆分：ceramic substrate中陶瓷材料 `20%-35%`，铜/银/钎焊/金属化 `35%-55%`，加工/烧结/测试 `10%-20%`，应用工程与质量 `5%-15%`。价格传导受铜、银、陶瓷粉体、良率、热循环寿命、部分放电/绝缘电压和客户认证影响。
+
+当前产能能力：curamik 产能经历欧洲/Germany right-sizing，同时 China facility ramp 和客户qualification推进。2025 impairment说明原先欧美EV需求假设下修；若AI数据中心电力链条采用，需要从功率模块客户处间接验证，不应直接按数据中心CapEx放大。
+
+认证阶段：EV/industrial/renewables客户认证持续；China facility qualification是近端催化。AI数据中心power module认证暂无公开项目名。
+
+### 6.4 ADAS/mmWave radar材料
+
+| 口径 | 内容量估算 | 说明 |
+|---|---:|---|
+| 每车 | `$5-$40` | 按 4-8个雷达、每雷达材料内容量 `$1-$5+` 粗估，车型和雷达数量差异很大 |
+| 每GPU/MW/rack | 不适用 | 与AI数据中心无直接关系 |
+| 关键材料 | RO3003G2、RO4830 Plus、RO4835/RO4835T、RO4400/T、SpeedWave | 76-81GHz radar、corner radar、multi-layer RF board |
+
+2025年 ADAS约占销售 `9%`，对应约 `$73M`。2025-02发布的 RO4830 Plus 明确面向76-81GHz汽车角雷达，Dk约 `3.03 @77GHz`，5mil laminate插损约 `1.5 dB/inch`，PFAS-free且FR-4兼容。这是有官方产品证据的高增长小产品，比AI数据中心收入更可验证。
+
+### 6.5 A&D/工业高频材料
+
+该类产品按项目定制，无法给出统一每MW/rack/GPU内容量。A&D Q1 2026销售约 `$30M`，Q2/Q3 2025占比均约 `16%`，是ROG高可靠性材料的稳定利润池。BOM价值取决于雷达/天线/通信设备的RF板面积、频段、可靠性认证和寿命要求。
+
+## 7. 一年后产能能力、供应链采纳和认证阶段三情景
+
+| 产品/业务 | 基准：一年后产能与采纳 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| AI高速/低损耗电路材料 | 可支持直接AI收入 `$20M-$40M`；处于多客户sample/design-in到小批量量产；认证以PCB厂/设备客户为主 | 可支持 `$45M-$80M`；进入至少1-2个AI switch/server背板或高速互联平台；LTA或capacity reservation开始出现 | 可支持 `$90M-$150M`；224G/448G/1.6T设计锁定，出现公开客户案例或多个季度显著E&C增长 |
+| EMS高性能密封/热/减振材料 | 可支持AI相关 `$20M-$45M`；converter网络承接项目，认证分散 | `$50M-$100M`；进入optical module、冷板interface、server tray密封的多平台BOM | `$100M-$180M`；成为高端AI thermal/gap filler核心供应商之一，并有可见客户扩产 |
+| curamik/ROLINX/cooling | 全功率相关可支持 `$150M-$180M`；China facility qualification推进 | `$190M-$230M`；EV/renewables/industrial恢复，数据中心power module小批量 | `$250M-$320M`；AI facility/rack power转换用陶瓷基板/母排认证转量产 |
+| ADAS/mmWave radar | 支持 `$80M-$100M`，RO4830 Plus等新品设计导入 | `$110M-$145M`，多OEM/平台量产 | `$160M-$220M`，多雷达配置和亚洲客户份额明显提升 |
+| A&D/工业高频材料 | 支持中高个位数增长；认证稳定 | 防务/航空/工业订单共同增长 | 大型项目驱动收入台阶式提升 |
+
+产能风险：ROG 总体资产负债表足以支撑中小规模扩产，CapEx 指引 `$30M-$40M` 不像瓶颈型超级扩产；真正限制是客户认证、材料良率、产品组合、欧洲重组执行、China facility爬坡和原料供应。10-K 披露 AES关键原料包括 copper/copper foil、polymer、PTFE、fiberglass、ceramic/brazing paste、silver、fillers、flame retardants；EMS关键原料包括 polyol、isocyanates、PTFE、UHMWPE、silicone materials，部分存在 sole/limited-source供应风险。
+
+## 8. 基于订单积压和供给的未来一年业务增速预测
+
+### 8.1 为什么不能把AI行业订单直接映射到ROG
+
+本地 `AI数据中心建设规模与产业链订单映射` 对美国AI数据中心 2026 务实建设规模估算为 `$310B-$390B`，2027为 `$430B-$560B`；网络/光互联/铜互联 2026订单池估计 `$28B-$47B`，2027 `$39B-$67B`；DAC/AEC/背板/连接器 2026 `$4B-$9B`，2027 `$7B-$15B`。这些数字说明高速互联材料需求真实，但ROG只捕获其中极小的材料份额，且必须先通过客户认证。
+
+ROG订单披露与电力设备/光模块公司不同：
+
+1. 多数 point-in-time销售是短期purchase orders，可较短通知期重排、取消或修改。
+2. Q1 2026 over-time revenue `$44.8M`、contract assets `$25.9M` 可以说明部分长期合同/定制项目存在，但不是 backlog。
+3. 公司只披露 design wins、pipeline traction、customer qualification，不披露客户名、订单金额、交付窗口或取消率。
+4. 因此 ROG 未来一年增长应基于收入指引、设计导入和成本削减，而不是 backlog线性外推。
+
+### 8.2 公司未来一年业务增速三情景
+
+| 情景 | 订单/需求假设 | 供给/产能假设 | 未来一年收入增速 | 毛利/EBITDA | 取消率/风险判断 |
+|---|---|---|---:|---|---|
+| 基准 | Q2指引兑现；industrial、E&C、ADAS温和改善；data center为小批量设计导入 | 现有产能足够，欧洲/德国重组继续兑现，China curamik爬坡但不爆发 | `+5%-9%` | GM `32%-34%`；Adj. EBITDA margin `16%-18%` | 短PO取消风险中等；AI相关订单取消影响小，因为基数小 |
+| 乐观 | AI networking/thermal材料和ADAS design wins贡献；curamik/renewables/industrial恢复 | 高端材料良率提升，无重大原料短缺；客户认证缩短 | `+10%-18%` | GM `34%-36%`；Adj. EBITDA margin `18%-20%` | 客户多源化压价，但认证供应商可部分转嫁 |
+| 极度乐观 | 至少一个AI数据中心材料链条变成可见量产；1.6T/224G/448G或液冷rack材料被多客户采纳 | ROG可快速利用现有/轻capex产能；无地缘和PFAS冲击 | `+20%-30%+` | GM `36%+`；Adj. EBITDA margin `20%+` | 需要订单证据，目前尚未看到；若没有LTA则不应作为主情景 |
+
+### 8.3 需要跟踪的订单验证指标
+
+| 指标 | 为什么重要 | 当前状态 |
+|---|---|---|
+| E&C收入中 wired infrastructure/data center 是否单列或被管理层点名 | 证明AI数据中心从“材料叙事”进入财报 | 尚未单列 |
+| RO4000/RO4835T/SpeedWave/XtremeSpeed 等是否获得AI switch/server/optical platform客户案例 | 证明高速材料进入AI平台BOM | 尚未公开 |
+| EMS是否出现 optical module / data center thermal / liquid-cooled rack项目名 | 证明热材料进入高增长环节 | 尚未公开 |
+| curamik China facility qualification进度 | 决定curamik从减值后修复为增长 | 公司称推进中 |
+| Contract assets持续上升且集中在AES | 可作为订单/长项目代理 | Q1 2026 AES contract assets `$22.2M`，低于2024年更高水平 |
+| Q2/Q3 2026毛利率是否达到 `33%+` | 成本削减是否兑现 | Q2 2026指引中点 `33%` |
+
+## 9. 竞争格局、主流技术判断、替代方案与客户切换成本
+
+### 9.1 高频/高速电路材料
+
+| 竞争对手 | 竞争点 |
+|---|---|
+| Panasonic / Megtron | 高速服务器、交换机、低损耗材料强势，AI switch/server PCB最强竞争者之一 |
+| Isola | 高速数字材料和PCB生态 |
+| AGC、Taconic、DuPont、Park/Nelco、Ventec、ITEQ、生益科技、南亚、台光、联茂等 | RF、PTFE、低损耗、高层PCB材料多区域竞争 |
+| PCB厂自有材料认证体系 | 客户可能通过多材料认证压价 |
+
+ROG的优势是历史品牌、RF/microwave材料可靠性、RO4000系列成本/性能平衡、FR-4兼容加工、ADAS/A&D客户经验。风险是 AI数据中心高速数字主流材料未必由ROG主导，Panasonic Megtron等在高端AI服务器/交换机板材中更常被提及。若客户转向cabled backplane、flyover copper、CPO/optical I/O，传统PCB材料内容量可能被结构重新分配，但高速小板和近封装材料仍有机会。
+
+客户切换成本：中高。只要材料进入具体PCB stack-up、阻抗/损耗模型、热循环/可靠性认证，替换材料需要重新仿真、打样、可靠性验证和客户批准，周期可达数月到一年以上。但在平台前期，客户会尽量认证多家以压价。
+
+### 9.2 EMS热/密封/减振材料
+
+| 竞争对手 | 竞争点 |
+|---|---|
+| Henkel/Bergquist | 高导热gap filler、光模块/服务器TIM强 |
+| Honeywell | AI TIM/PCM材料，强调BLT、warpage、可靠性 |
+| Parker Chomerics | 导热gel/pad、EMI shielding、data center thermal management |
+| DuPont/Laird、3M、Dow、Shin-Etsu、Fujipoly、Boyd、Indium | 热界面、硅胶、相变、金属TIM、导热垫多形态竞争 |
+| Nitto、Tesa、Saint-Gobain、Sekisui、区域converter | 普通泡棉、胶带、密封件竞争 |
+
+主流技术判断：AI rack 热材料主流正从普通硅脂/硅胶垫转向高导热、低泵出、低应力、可返修、低析出、液冷兼容材料；光模块 800G/1.6T 也需要更高导热gap filler。ROG有材料组合，但公开证据不足以证明其在AI TIM中领先。最现实机会是密封、减振、gap filling和converter解决方案，而不是取代Honeywell/Henkel/Indium的高端TIM1材料。
+
+客户切换成本：普通材料低到中，高端热/密封认证材料中高。若涉及光模块热失效、液冷兼容、field maintenance，客户更不愿频繁换料。
+
+### 9.3 curamik / power substrates
+
+| 竞争对手 | 竞争点 |
+|---|---|
+| Heraeus、Ferrotec、Kyocera、Maruwa、NGK/NTK、Toshiba Materials、KCC、Denka 等 | DBC/AMB、Si3N4/AlN/Al2O3陶瓷基板、功率模块客户认证 |
+| 中国本土功率模块/陶瓷基板供应链 | 中国EV和工业客户本地化，价格/速度优势 |
+| 功率模块厂自有或绑定供应 | 客户可能要求本地化与多供 |
+
+主流技术判断：SiC/GaN、高压高功率密度、EV inverter、renewables inverter、工业驱动、数据中心电力转换都需要更可靠的陶瓷基板和母排/冷却设计。curamik Performance/Performance Plus基于Si3N4 AMB，适合高功率密度和长寿命场景。风险是ROG 2025已确认curamik预期下修，说明这个市场不是线性高增长，尤其中国EV链条被本土厂商捕获。
+
+客户切换成本：中高。功率模块可靠性、热循环、绝缘、局放、寿命和车规/工业认证会形成粘性；但在量产前客户多供压价明显。
+
+### 9.4 ADAS/mmWave radar材料
+
+| 竞争对手 | 竞争点 |
+|---|---|
+| Panasonic、Taconic、Isola、AGC、DuPont、生益/台光/联茂等 | 77GHz低损耗、低Dk漂移、低插损、FR-4兼容和成本 |
+| 雷达模组厂和PCB厂材料选择 | 车规成本压力、平台复用 |
+
+主流技术判断：L2+/NOA继续提高雷达数量和性能要求，76-81GHz corner radar需要低损耗、稳定Dk和高制造良率。RO4830 Plus的定位是“更低总材料和PCB制造成本”的76-81GHz方案，符合车厂降本需求。风险是视觉/激光雷达/端到端模型架构对雷达数量存在争议，且汽车客户压价长期存在。
+
+客户切换成本：高。车规平台验证、PPAP、可靠性和生产一致性使设计锁定后替换困难。
+
+## 10. 投资判断：ROG的AI相关性应如何定价
+
+### 10.1 可验证事实
+
+1. ROG Q1 2026已经恢复到正增长和利润修复，且Q2指引继续改善。
+2. 公司资产负债表强，净现金约 `$166M`，有能力支撑R&D、轻扩产、回购或小型M&A。
+3. AES确实服务 wired infrastructure/data center，ROG官网也把数据中心和有线基础设施列为应用市场。
+4. 本地行业资料显示，AI rack-scale和1.6T/224G/448G会提高低损耗材料、背板、热材料、密封和连接材料的重要性。
+5. 当前没有公开证据证明 ROG 已拿到大型AI数据中心材料LTA、可量产AI客户项目、明确订单金额或数据中心收入拆分。
+
+### 10.2 最可能的正向催化
+
+| 催化 | 对ROG影响 |
+|---|---|
+| Q2 2026收入达到 `$215M+` 且GM接近 `33.5%` | 证明利润修复加速 |
+| E&C继续双位数增长，且管理层明确提到 wired infrastructure/data center | AI材料叙事从可选项变成财务事实 |
+| RO4830 Plus / RO3003G2取得更多ADAS design wins | 车规高频材料增长更确定 |
+| curamik China qualification推进并减少减值后不确定性 | 修复AES利润和增长信心 |
+| 高速材料或热材料获得AI switch / optical / rack客户认证 | 打开估值上修空间 |
+| 小型M&A补齐AI thermal、high-speed digital或data center material能力 | 利用净现金增强成长性 |
+
+### 10.3 主要风险
+
+| 风险 | 影响 |
+|---|---|
+| AI数据中心收入长期停留在sample/prototype | 当前估值中的AI可选项会被压缩 |
+| EV/curamik继续低于预期 | AES毛利修复受阻，可能再有资产/产线重估 |
+| 高速PCB材料被Panasonic/Isola/AGC/亚洲材料商主导 | ROG无法捕获1.6T/224G材料红利 |
+| 客户短PO取消或重排 | 没有backlog保护，收入波动高 |
+| PFAS和环保法规 | PTFE/含氟材料相关产品面临合规、替代和成本压力 |
+| 中国本土化替代 | 中国销售和China EV/工业链条受价格和政策影响 |
+| 估值偏高 | Forward PE `37.4x`、EV/EBITDA `20.1x` 已要求利润持续改善 |
+
+### 10.4 最终判断
+
+ROG 的基本面正在从 2025 的“EV/curamik失望 + 重组”转向 2026 的“利润率修复 + design win恢复”。它适合被归入半导体/电子材料链条，但当前更像高性能材料小盘修复股，而不是AI数据中心核心瓶颈股。投资上应把ROG拆成三层：
+
+1. **确定性层**：净现金、成本削减、工业/A&D/ADAS和EMS利润修复。这支撑公司不容易出资产负债表事故。
+2. **中期成长层**：ADAS/mmWave、curamik China qualification、renewables/industrial、E&C恢复。这决定收入能否从 `$810M` 回到 `$900M+`。
+3. **AI可选层**：高速低损耗材料、数据中心热/密封材料、电力转换材料。当前证据不足，估值应给“期权”而不是“主业”。只有当公司披露data center客户、产品design-in、订单金额、交付窗口或E&C持续超预期，才应把AI数据中心收入上修为核心驱动。
+
+在没有进一步订单证据前，基准观点是：ROG未来一年收入增速 `+5%-9%`、利润率持续修复，AI数据中心直接收入占比仍低于 `5%-6%`；乐观观点是AI高速材料和热材料带来 `$50M-$120M` 年化收入；极度乐观观点需要公开客户/订单证据，目前只能作为跟踪清单，不能作为主预测。
+
+## 11. 主要来源与本地交叉验证
+
+### 官方与市场数据
+
+- Rogers Q1 2026 earnings release: https://www.rogerscorp.com/news/2026/rogers-corporation-reports-first-quarter-2026-results
+- Rogers Q1 2026 10-Q: https://www.sec.gov/Archives/edgar/data/84748/000008474826000023/rog-20260331.htm
+- Rogers Q1 2026 conference call slides: https://www.rogerscorp.com/-/media/project/rogerscorp/documents/investor-relations/english/presentation-slides/2026/rogers-corporation-2026-first-quarter-conference-call-slides.pdf
+- Rogers Q4/FY2025 earnings release: https://www.rogerscorp.com/news/2026/rogers-corporation-reports-fourth-quarter-and-full-year-2025-results
+- Rogers FY2025 10-K: https://www.sec.gov/Archives/edgar/data/84748/000008474826000007/rog-20251231.htm
+- Rogers Q3 2025 earnings release: https://www.rogerscorp.com/news/2025/rogers-corporation-reports-third-quarter-2025-results
+- Rogers Q2 2025 earnings release: https://www.rogerscorp.com/news/2025/rogers-corporation-reports-second-quarter-2025-results
+- StockAnalysis ROG statistics and valuation, checked 2026-06-11: https://stockanalysis.com/stocks/rog/statistics/
+- Rogers Investor Relations overview: https://www.rogerscorp.com/Investors
+
+### 产品与技术资料
+
+- RO4000 Series laminates: https://www.rogerscorp.com/advanced-electronics-solutions/ro4000-series-laminates
+- RO4835T laminates: https://www.rogerscorp.com/advanced-electronics-solutions/ro4000-series-laminates/ro4835t-laminates
+- curamik metallized ceramic substrates: https://www.rogerscorp.com/advanced-electronics-solutions/curamik-ceramic-substrates
+- RO4830 Plus launch for automotive radar, 2025-02-27: https://www.rogerscorp.com/news/2025/rogers-corporation-launches-new-thermoset-laminates-for-automotive-radar-sensor-applications
+- Rogers Active Safety application page: https://www.rogerscorp.com/applications/active-safety
+- Rogers Elastomeric Material Solutions: https://www.rogerscorp.com/elastomeric-material-solutions
+
+### 项目内行业资料
+
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_先进封装材料与热界面材料_2026-06-10.md`
+- `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`

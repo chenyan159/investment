@@ -1,0 +1,403 @@
+# AAOI Applied Optoelectronics 公司调研：800G/1.6T AI 光模块小巨头的订单、产能与估值弹性
+
+报告日期：2026-06-11  
+股价与估值快照：2026-06-11 17:23 UTC / 2026-06-11 10:23 PT  
+本地资料边界：仅使用 `行业调研/` 下 AI 网络、光互联、AI 数据中心产业背景资料；未读取、引用或继承 `日度资料/`、`特征量化/` 或同目录旧公司报告。  
+公司归属目录：`公司调研/AI网络_光互联_连接器/`，与 `公司调研/公司索引.md` 中 AAOI 归类一致。  
+核心结论：AAOI 已从 2024-2025 年 CATV 修复股，快速转成 2026 年 AI datacenter 800G/1.6T 光模块产能股。当前最重要变量不是“AI 光模块需求是否存在”，而是 `客户认证 -> InP/激光器设备交期 -> 自动化产线良率 -> 订单按 Q3/Q4 确认收入` 的兑现速度。
+
+## 0. 一页结论
+
+AAOI 是一家垂直整合的光通信与 HFC/CATV 设备公司，核心能力在 InP/激光器、光器件、光模块封装、自动化制造和 HFC 网络产品。2025 年以前，投资人对它的印象更接近“周期性小型光模块/CATV 供应商，客户集中、长期亏损、曾受 Amazon/Microsoft 订单波动冲击”。2025-2026 年叙事发生剧烈切换：公司获得 Amazon 相关 warrant/交易安排，重回 hyperscaler 视野；Q1 2026 完成首批 800G volume shipment；2026-03/04 连续公告 `>$200M` 1.6T 订单和 `$124M` 800G 订单；Q1 退出时 800G 月产能接近 `100,000` 只；Sugar Land 新 210,000 平方英尺产能扩建把投资从 `$150M` 上修到最高 `$300M`。
+
+最强看点：
+
+| 看点 | 事实锚点 | 投资含义 |
+|---|---:|---|
+| 数据中心收入重回主线 | Q1 2026 Datacenter 收入 `$81.4M`，同比 `+154%`，占收入 `53.9%` | 公司从 CATV 复苏切到 AI 光模块 ramp |
+| 订单能见度强 | 1.6T volume order `>$200M`，800G 同一 hyperscale 客户订单合计 `$124M` | Q3/Q4 2026 收入可见度高，但要过客户 qualification |
+| 产能是瓶颈 | Q1 退出 800G 月产能近 `100k` 只；管理层称 Q3 额外产能上线后收入增长更大 | 2026 收入更多受供给限制，不是需求限制 |
+| 上游激光器能力关键 | 管理层称 InP capacity critical，MOCVD/镀膜等设备需 qualification，激光设备交期可达 `18-24` 个月，客户需 `2,000-5,000` 小时可靠性数据 | AAOI 的垂直整合是优势，也是扩产交付风险 |
+| 资产负债表变强但稀释明显 | Q1 2026 现金/限制现金 `$449.4M`，股东权益 `$1.106B`；Q1 发行普通股带来大量资金 | 生存风险显著下降，股本摊薄和资本开支执行成为新风险 |
+| 估值已经极高 | 股价 `$162.45`，市值 `$12.33B`；TTM P/S 约 `24.3x`，按 2026 管理层收入 `>$1.1B` 仍约 `11.2x` forward sales | 市场已定价“2026-2027 高速兑现”，容错率低 |
+
+总体判断：AAOI 当前不是传统低估值制造股，而是“产能兑现型 AI 光互联高 beta”。如果 Q3/Q4 2026 800G/1.6T 订单按期出货、1.6T qualification 顺利、InP 激光器扩产按计划，公司收入可能从 2025 年 `$455.7M` 跳到 2026 年 `>$1.1B`，并在 2027 年继续上修。但如果 800G/1.6T ASP 提前下滑、客户二供扩散、产品认证延迟或 Digicomm 应收账款/客户集中恶化，当前高估值会快速压缩。
+
+## 1. 公司整体业务、产业链位置与投资人认知
+
+### 1.1 公司做什么
+
+Applied Optoelectronics, Inc.，简称 AOI，NASDAQ 代码 `AAOI`，总部在美国 Texas Sugar Land。公司做两类核心产品：
+
+1. **Datacenter 光模块与光器件**：100G、400G、800G、1.6T 光收发模块，尤其是 800G OSFP 2xFR4、800G OSFP DR8、1.6T OSFP DR8 等高速 AI 数据中心产品；上游包括半导体激光器、laser components、optical components。
+2. **CATV / HFC / broadband 产品**：1.8GHz boost amplifier、line extender、HGD/HGBT system amplifier、DAA optical node、headend/node/distribution equipment 等，用于 cable broadband、DOCSIS 4.0/HFC 升级。
+
+公司按终端市场披露收入：`CATV`、`Datacenter`、`Telecom`、`Other`。2025 年全年收入 `$455.7M`，其中 CATV `$245.1M`、Datacenter `$195.7M`；Q1 2026 Datacenter 上升到 `$81.4M`，首次明显压过 CATV 的 `$66.8M`，收入结构进入 AI 光模块主导阶段。
+
+产业链位置：
+
+| 层级 | AAOI 所在位置 | 上游/下游关系 |
+|---|---|---|
+| 上游材料/芯片 | InP 激光器、EML/CW laser、部分光器件 | 与 Lumentum、Coherent、Broadcom、Sumitomo、Mitsubishi 等竞争或互为供应链比较对象 |
+| 模块制造 | 400G/800G/1.6T OSFP/QSFP-DD 光模块 | 与中际旭创、Eoptolink、新易盛、Coherent、Hisense、Accelink、Fabrinet EMS 等竞争 |
+| 系统/客户 | Hyperscaler data center、CATV MSO、telecom/FTTH | 客户包括 Microsoft、Digicomm、Amazon 相关实体，以及其他 hyperscale/cloud 客户；客户集中度极高 |
+| 未来架构 | ELSFP、CPO/NPO、6.4T OBO demo、400mW laser | 不是交换 ASIC 平台公司，但可切入 CPO/SiPh 外置光源和光引擎供给 |
+
+### 1.2 投资人心中是什么公司
+
+投资人对 AAOI 的认知经历三段变化：
+
+| 阶段 | 市场认知 | 关键原因 |
+|---|---|---|
+| 2017-2023 | 高波动、小型光模块公司，客户集中且容易被大客户砍单 | 早年 Microsoft/Amazon 等云客户波动、CATV 周期、亏损、债务压力 |
+| 2024-2025 | CATV 修复 + 客户重新导入 | Digicomm/CATV 收入爆发；2025 Digicomm 占收入 `53.1%`，Microsoft 占 `28.8%`；全年收入同比 `+82.8%` |
+| 2026 至今 | AI datacenter 光模块产能股 | 800G volume shipment、1.6T `>$200M` 订单、800G `$124M` 订单、美国/台湾产能扩张、Amazon warrant/交易安排 |
+
+需要明确：AAOI 不是 NVIDIA/Broadcom/Marvell 那类 AI 网络 ASIC 或 DSP 平台公司，也不是单纯 EMS。它的投资价值在于：当 hyperscaler 因 AI fabric 急需 800G/1.6T、又希望美国/台湾/非中国产能和 InP 激光器内制能力时，AAOI 这种小体量、垂直整合供应商的收入弹性极大。弱点同样直接：规模小、客户少、仍亏损、良率和资本开支风险大。
+
+### 1.3 最近 3 年重大业务变化/转型
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2022-2023 | 曾公告拟出售中国制造设施及部分 transceiver 资产，原意是聚焦更高毛利、更高增长机会；后续公司 2025/2026 仍披露 Sugar Land、Taipei、Ningbo 等制造/工程布局 | 反映管理层曾想重构资产与业务组合；最终经营主线转向保留/扩张高速光模块和激光能力 |
+| 2024-2025 | CATV 大幅修复，Digicomm 成为第一大客户 | 2025 CATV 收入 `$245.1M`，占全年 `53.8%`；为公司提供现金流和规模基础，但应收账款集中明显 |
+| 2025-03 | 与 Amazon.com, Inc. 相关交易协议/warrant：Amazon NV Investment Holdings 获得最高 `7,945,399` 股 warrant，Q1 2026 披露其中 `1,324,233` 股已在签署时 vest | Amazon 从潜在客户/战略客户变成股权激励绑定的关键关系；但 warrant 带来摊薄 |
+| 2025-2026 | 800G/1.6T 产品导入 | 2026-03 1.6T 订单 `>$200M`；2026-04 800G 追加 `$71M`，同一客户自 3 月以来 800G 合计 `$124M` |
+| 2025-2026 | Sugar Land 美国制造扩张 | 新 210,000 平方英尺设施；投资从 `$150M` 提至最高 `$300M`；500 个工作岗位；定位为 AI datacenter transceiver 产能扩张 |
+| Q1 2026 | 财务结构强化 | 现金/限制现金从 2025 年末 `$216.0M` 增至 `$449.4M`；股东权益增至 `$1.106B`；短期扩张资金更充足 |
+
+### 1.4 最新股价、估值和财务健康
+
+| 指标 | 数值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | `$162.45` | 2026-06-11 17:23 UTC | 当日高 `$180.37`、低 `$162.19`，波动很大 |
+| 市值 | `$12.33B` | 2026-06-11 17:23 UTC，市场数据口径 | 若用 2026-05-05 的 80.24M 股完全摊薄基础粗算，隐含市值可高于该口径 |
+| TTM PE | `-249.7x` | 2026-06-11 市场数据，EPS `-$0.65` | 公司 TTM 仍亏损，传统 PE 不适用 |
+| Forward PE | 第三方口径约 `183x`；管理层非 GAAP 口径难直接折算 | GuruFocus 2026-06-10；公司指引 2026 non-GAAP operating income `>$140M` | EPS 估计差异极大，应用 forward sales / 订单兑现优先于 PE |
+| TTM P/S | `24.3x` | 市值 `$12.33B` / TTM 收入 `$507.0M` | 已很高 |
+| 2026 forward P/S | `<11.2x` | 市值 `$12.33B` / 管理层 2026 收入 `>$1.1B` | 如果 2026 兑现，估值显得不那么极端；如果未兑现则非常贵 |
+| Q1 2026 收入增速 | `+51.4% YoY` | Q1 2026 vs Q1 2025 | Datacenter `+154%` 是核心 |
+| FY2025 收入增速 | `+82.8% YoY` | FY2025 `$455.7M` vs FY2024 `$249.4M` | CATV + datacenter 双轮 |
+| TTM 收入增速 | 约 `+64.3%` | Q2 2025-Q1 2026 vs Q2 2024-Q1 2025 | 自行按公司季度披露计算 |
+| TTM 毛利率 | 约 `29.6%` | Q2 2025-Q1 2026 | 仍低于高端光芯片/系统公司，但较 2024 改善 |
+| TTM 净利率 | 约 `-8.55%` | Q2 2025-Q1 2026 | 仍亏损 |
+| Q1 2026 GAAP 毛利率 | `29.1%` | 公司 Q1 2026 release | Q4 2025 为 `31.2%`，Q1 回落因 ramp/mix |
+| Q1 2026 GAAP 净利率 | `-9.4%` | Q1 净亏损 `$14.3M` / 收入 `$151.1M` | 扩产前期费用和低效率仍拖累 |
+
+资产负债表评估：
+
+| 项目 | Q1 2026 | 2025 年末 | 变化 | 判断 |
+|---|---:|---:|---:|---|
+| 现金、现金等价物和限制现金 | `$449.4M` | `$216.0M` | `+108%` | 现金充裕，显著缓解扩产融资压力 |
+| 应收账款 | `$299.0M` | `$244.4M` | `+22%` | 高增长同时带来营运资本压力 |
+| 其中 Digicomm 应收 | `$222.7M` | 未列同口径 | 占 AR `74.5%` | CATV 客户集中和回款风险必须盯 |
+| 存货 | `$206.2M` | `$183.1M` | `+12.6%` | WIP `$120.5M`，符合 ramp，但若订单延迟会形成库存风险 |
+| 流动资产 | `$992.6M` | `$675.7M` | `+46.9%` | 扩产前资金和营运资本充足 |
+| 流动负债 | `$259.4M` | `$257.3M` | 基本持平 | 流动比率约 `3.83x`，短期偿债强 |
+| 总负债 | `$459.9M` | `$434.5M` | `+5.8%` | 负债可控 |
+| 短期借款/长期债务当期部分 | `$41.2M` | `$34.0M` | `+21.3%` | 相对现金较小 |
+| 可转债账面值 | `$129.5M` | `$129.8M` | 基本持平 | 公允价值 `$278.7M`，股价高企导致潜在摊薄 |
+| 股东权益 | `$1.106B` | `$733.9M` | `+50.7%` | 发行股票后资本垫厚，但股本摊薄 |
+
+财务健康结论：短期健康程度明显改善，现金和流动性足以支撑 2026 扩产；但经营质量仍未完全证明。真正风险不在“破产”，而在 `高估值 + 大客户集中 + 资本开支/产能爬坡 + 应收账款集中 + ASP 周期`。如果 Q3/Q4 没能把订单转为收入，市场会从“供不应求成长股”重新按“高 CAPEX、低利润、客户集中制造商”定价。
+
+## 2. 最近五个财报季度：收入、利润、订单和 AI 占比
+
+说明：公司不披露分产品毛利率、bookings、正式 backlog 或 cancellation rate。下表中的业务利润率、AI 数据中心占比、订单/交期为基于公司披露、财报电话会和公开订单公告的研究口径估算；`Datacenter` 不是全部等于 AI，但 2026 年增量主要由 AI datacenter 800G/1.6T 驱动。
+
+| 财报季度 | 披露/报告日期 | 总收入 | YoY / QoQ | CATV | Datacenter / AI相关占比 | Telecom + Other | GAAP GM / 净利率 | 非GAAP净利 | 订单、交期、Backlog/Bookings 线索 | 业务重点 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|---|
+| Q1 2025 | 2025-05 | `$99.9M` | `+145.5% / -0.4%` | `$64.5M`，`64.6%`，YoY `+638%` | `$32.0M`，`32.1%`，YoY `+10.6%` | `$3.3M` | `30.6% / -9.2%` | `-$0.9M` | 尚未披露 800G/1.6T 大额订单；客户集中：CATV 大客户约 `64%`、datacenter 大客户约 `27%` 的公开电话会口径 | CATV 修复是主线，datacenter 仍在 400G/800G 准备期 |
+| Q2 2025 | 2025-08 | `$103.0M` | `+137.9% / +3.1%` | `$56.0M`，`54.4%`，YoY `+863%` | `$44.8M`，`43.5%`，YoY `+30.4%` | `$2.1M` | `30.3% / -8.8%` | 未完整披露于 release 摘要；GAAP 净亏 `$9.1M` | CATV 继续强；datacenter 开始恢复，市场预期 800G 进入客户 qualification | CATV + early AI optics 双轮 |
+| Q3 2025 | 2025-11 | `$118.6M` | `+82.1% / +15.2%` | `$70.6M`，`59.5%`，YoY `+237%` | `$43.9M`，`37.0%`，YoY `+7.3%` | `$4.1M` | `28.0% / -15.1%` | `-$5.4M` | Q4 指引 `$125-140M`；市场关注 400G 与 initial 800G shipment；尚未体现 2026 大订单 | CATV 最高，datacenter 暂时不是最大 |
+| Q4 2025 | 2026-02-26 | `$134.3M` | `+33.9% / +13.2%` | `$54.0M`，`40.2%`，YoY `+3.4%` | `$74.9M`，`55.8%`，YoY `+69.2%` | `$5.4M` | `31.2% / -1.5%` | `-$0.6M` | Q1 2026 指引 `$150-165M`，non-GAAP GM `29-31%`；管理层提出 2026 收入 `>$1B` 的初始框架 | Datacenter 重新成为最大业务，CATV 正常化 |
+| Q1 2026 | 2026-05-07 | `$151.1M` | `+51.4% / +12.6%` | `$66.8M`，`44.2%`，YoY `+3.6%` | `$81.4M`，`53.9%`，YoY `+154.0%` | `$2.9M` | `29.1% / -9.4%` | `-$4.9M` | 首批 800G volume shipment；Q1 退出 800G 月产能近 `100k`；800G 同一客户订单 `$124M`，1.6T 订单 `>$200M`，Q2 指引 `$180-198M`；Q3 起更大增长因产能上线 | 800G/1.6T AI datacenter 正式接棒 |
+
+季度趋势判断：
+
+1. **收入结构已切换。** Q3 2025 还是 CATV 占 `59.5%`，到 Q4 2025/Q1 2026 Datacenter 分别为 `55.8%/53.9%`。考虑 1.6T 订单 Q3/Q4 才开始发货，2026H2 Datacenter 占比有概率升至 `65-75%`。
+2. **毛利率短期没有跟收入同步爆发。** Q1 2026 GAAP GM `29.1%`，低于 Q4 2025 `31.2%`。原因是 800G/1.6T 早期 ramp、产线调试、数据中心 mix 初期毛利压力和扩产费用。管理层中长期目标是 non-GAAP GM 回到约 `40%`，并在电话会中提到 Q4 2026 向 `35%` 以上改善的可能。
+3. **订单能见度强但不是无风险 backlog。** 800G `$124M` 和 1.6T `>$200M` 都以客户 qualification、产能、交付窗口为前提；公司未给正式 backlog 口径，不能把订单完全等同确定收入。
+4. **客户集中极端。** Q1 2026 top ten customers 占收入 `98%`；应收账款中 Digicomm `$222.7M`。这既说明大客户质量高，也说明任一客户节奏变化都会放大季度波动。
+
+## 3. 2026 最新指引、业务收入占比与重点产品
+
+### 3.1 Q2 2026 指引和 2026 管理层框架
+
+公司 Q1 2026 release 给出 Q2 2026 指引：
+
+| 指标 | Q2 2026 指引 |
+|---|---:|
+| Revenue | `$180M - $198M`，中点 `$189M` |
+| Non-GAAP gross margin | `29% - 30%` |
+| Non-GAAP net income | `-$2.5M` 到 `+$2.8M` |
+| Non-GAAP EPS | `-$0.03` 到 `+$0.03`，约 `80.7M` 股 |
+
+管理层在 Q1 2026 电话会中把全年 2026 收入口径上修到 `>$1.1B`，non-GAAP operating income `>$140M`，并表示这一收入水平受生产能力和供应链限制，而不是受市场需求限制。这个表述非常关键：市场当前给 AAOI 的高估值，基本在买“产能释放会追上订单”的假设。
+
+按 Q2 指引中点和订单节奏推断的 Q2 业务 mix：
+
+| 业务 | Q1 2026 实际 | Q2 2026 推断 | 主要驱动 |
+|---|---:|---:|---|
+| Datacenter | `$81.4M`，`53.9%` | `$105-120M`，约 `56-63%` | 400G 继续、800G Q2 volume ramp、部分订单开始发货 |
+| CATV | `$66.8M`，`44.2%` | `$60-72M`，约 `32-38%` | Digicomm/Charter 供应链、1.8GHz HFC/DOCSIS 4.0 |
+| Telecom + Other | `$2.9M`，`1.9%` | `$3-5M`，约 `2%` | 小业务 |
+| AI datacenter 相关收入 | Q1 估计 `$75-85M` | Q2 估计 `$105-125M` | 将 Datacenter 视为 AI/云光模块主口径，但含少量非 AI 云 |
+
+### 3.2 产品和型号清单：重点 vs 跳过
+
+AAOI 官方 patent/product 信息可确认的重点型号包括：
+
+| 产品族 | 具体产品/型号线索 | 当前状态 | 是否重点 |
+|---|---|---|---|
+| 800G Datacenter transceiver | `800G OSFP 2xFR4`、`800G OSFP DR8`、800G single-mode data center transceiver | 已完成首批 volume shipment；同一 hyperscale 客户 800G 订单 `$124M` | 核心重点 |
+| 1.6T Datacenter transceiver | `1.6T OSFP DR8` | 2026-03 获 `>$200M` 首个 volume order，预计 Q3 开始、Q4 完成交付，需 product qualification | 核心重点 |
+| 400G/legacy datacenter | `400G SR8`、`400G AOC`、`400G DR4/DR4+`、`400G FR4` | Q4/Q1 datacenter 收入底盘；增长不如 800G/1.6T | 维持但不作为高弹性核心 |
+| 100G/QSFP | `100G SR4`、`100G AOC`、`100G PSM4`、`100G CWDM4` | 成熟产品 | 跳过 |
+| ELSFP / high-power laser | `25dBm Ultra-High Power ELSFP`、`400mW CW laser`、OFC 2026 live `6.4T OBO` demo | 样品/展示/客户导入期；可切入 CPO/NPO/SiPh 外置光源 | 小但有潜力，不能漏 |
+| CATV/HFC | `1.8GHz Boost Amplifier`、`DAA optical node`、`1.8GHz Line Extender`、`1.8GHz HGD/HGBT System Amplifier` | 2025-2026 大收入，Q1 2026 `$66.8M` | 财务重要，但非 AI，高估值弹性低 |
+| Telecom/FTTH/PON/Other | 光器件、低速接入模块 | Q1 2026 合计 `$2.9M` | 跳过 |
+
+本报告后续重点分析四个产品/业务：
+
+1. `800G OSFP 2xFR4/DR8 single-mode datacenter transceivers`
+2. `1.6T OSFP DR8 / 2xDR4 类 datacenter transceivers`
+3. `InP/EML/CW laser、400mW ELSFP、CPO/NPO/OBO 光源期权`
+4. `CATV 1.8GHz HFC / DAA 产品`，作为现金流和客户集中风险，不作为 AI 主线
+
+低增速或非 AI 业务跳过：100G、部分 400G legacy、telecom、FTTH/PON、Other、普通 HFC 旧代设备。
+
+## 4. 高增长/关键产品：当前贡献、增速、重要性和供需
+
+| 产品/业务 | 当前收入贡献 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 结论 |
+|---|---:|---:|---|---|---|---|---|
+| 800G OSFP 2xFR4/DR8 | Q1 2026 估计 `$5-10M`；Q2 2026 管理层/问答暗示约 `$18-20M` 800G revenue；已获 `$124M` 订单 | 从低基数快速放量；Datacenter Q1 `+154%` | 极高：2026 AI back-end network 主流端口 | 极高：订单要求 Q2-Q4 交付 | 高：产能和 manufacturing cycle time 卡住 | 中高：客户认证 + U.S./Taiwan capacity + laser 内制；但中国模块厂和大厂竞争强 | 2026 收入主引擎之一 |
+| 1.6T OSFP DR8 | Q1 2026 基本未贡献；订单 `>$200M` | 2026H2 从 0 到大额收入 | 极高：2027 新增高端 AI fabric 默认升级方向 | 高：Q3/Q4 订单窗口 | 很高：200G/lane optics、测试、qualification 短缺 | 高于 800G：早期供应商少、ASP 高、qualification 强 | 估值弹性最大 |
+| InP/EML/CW laser + 400mW ELSFP | 外部收入未单列，当前更多内部供给与样品/NRE；Q1 支撑 800G 产能 | 随 800G/1.6T 内部用量放大；ELSFP 2026 量产预期仍早 | 高：没有激光器就没有 800G/1.6T；ELS 是 CPO/NPO 关键 | 高：管理层称 InP capacity critical | 很高：MOCVD 等设备交期 `18-24` 个月，客户需 `2,000-5,000` 小时可靠性数据 | 中高到高：AAOI 有内制激光器，但行业头部是 Lumentum/Broadcom/Coherent/Sumitomo/Mitsubishi | 决定毛利和交付上限 |
+| CATV 1.8GHz/HFC/DAA | Q1 2026 `$66.8M`，FY2025 `$245.1M` | Q1 YoY `+3.6%`，2025 高基数后趋稳 | 低：不是 AI datacenter | 中：MSO 网络升级周期 | 中：客户/项目节奏驱动 | 中：1.8GHz/DOCSIS 4.0 认证和 MSO 关系有壁垒，但市场不如 AI 光模块紧 | 财务底盘，但不是高估值核心 |
+
+关键判断：AAOI 的“AI 收入贡献”当前主要在 Datacenter segment，而不是 ELS/CPO。Q1 2026 数据中心 `$81.4M` 约为收入 `53.9%`；到 Q4 2026，如果 1.6T `>$200M` 和 800G `$124M` 在 H2 转化，Datacenter 单季收入可能超过 `$200M`，成为绝对主导。
+
+## 5. 未来一年收入贡献三情景
+
+预测窗口：2026-06-11 至 2027-06-11，按未来四个季度 run-rate 估算。公司没有披露正式 backlog，本表使用公开订单、Q2 指引、Q3/Q4 产能上线、管理层 `>$1.1B` 2026 revenue 框架和行业 800G/1.6T 需求口径推算。
+
+| 产品/业务 | 基准情景：一年后收入贡献 | 乐观情景 | 极度乐观情景 | 收入增速 | AI 重要性/时间紧急性/供需 | 垄断和溢价 |
+|---|---:|---:|---:|---|---|---|
+| 800G transceivers | 年化 `$300-450M` | `$500-700M` | `$800M-1.1B` | `+300%+`，低基数 | 极高/极高/供不应求但 2027 可能 ASP 压力 | 中高；客户认证强，但 800G 竞争最激烈 |
+| 1.6T transceivers | 年化 `$220-350M` | `$450-650M` | `$800M-1.2B` | 从 0 放量 | 极高/高/更供不应求 | 高；早期 ASP 和 qualification 溢价强 |
+| InP/EML/CW laser + ELSFP | 内部支撑收入不单列；外部/样品/NRE `$20-50M` | `$80-150M` | `$200-350M` | `+100%+`，取决于是否外售/ELS design win | 高/高/设备与可靠性数据紧 | 中高；若进入 ELS/CPO BOM，溢价显著 |
+| CATV 1.8GHz/HFC/DAA | 年化 `$240-310M` | `$320-380M` | `$400M+` | `0-25%` | 非 AI/中/中 | 中；MSO 认证和客户关系有壁垒 |
+| Telecom/Other | `$10-20M` | `$20-30M` | `$30M+` | 低 | 非核心 | 低 |
+| 公司总收入 | 2026 日历年 `>$1.1B` 可兑现，未来 12m run-rate `$1.1-1.4B` | `$1.5-2.0B` | `$2.2B+` | FY2026 vs FY2025 `+141%+` | 由 800G/1.6T 决定 | 高 beta |
+
+情景触发条件：
+
+| 情景 | 必须满足的条件 |
+|---|---|
+| 基准 | Q2 收入达 `$180-198M`；800G `$124M` 订单按 Q2-Q4 交付；1.6T `>$200M` Q3/Q4 开始确认；GM H2 改善但不超过 35% |
+| 乐观 | 新增 hyperscaler LTA；Q3/Q4 环比增长接近管理层提到的 `60-80%`；1.6T qualification 顺利；InP 设备按月进厂并通过内部 qualification |
+| 极度乐观 | 2027 中月收入/产能接近管理层电话会中非常激进的 mid-2027 run-rate 表述；多个 hyperscaler 同时锁 800G/1.6T；ASP 没有明显下降；ELS/CPO 光源获得真实订单 |
+
+## 6. BOM、每 MW / rack / GPU / optical port 内容量与价格传导
+
+### 6.1 从 AI 集群到 AAOI 产品的传导链
+
+```text
+AI 模型训练/推理需求
+-> GPU/ASIC rack-scale 集群
+-> back-end Ethernet / InfiniBand / custom fabric 端口数
+-> 800G/1.6T switch port 与 NIC port
+-> 每条链路两端 transceiver / optical engine
+-> EML/CW laser、DSP/TIA/driver、SiPh/InP PIC、封装、测试
+-> AAOI 数据中心光模块收入和激光器内部价值
+```
+
+行业本地报告给出的可用基准：AI 高速网络每个 XPU/GPU 的高速端口等效从 `0.5-1.0` 上升到 `0.8-1.6`；2026 美国 AI 数据中心务实建设口径对应新增或进入设备订单的 AI IT-load `6.0-8.5GW`；网络/光互联/铜互联 2026 务实订单约 `$28-47B`，乐观 `$42-73B`。
+
+### 6.2 单位内容量：保守工程口径
+
+| 口径 | 800G 内容量 | 1.6T 内容量 | AAOI 可捕获位置 |
+|---|---:|---:|---|
+| 每 optical port | 1 个模块端点；一条完整链路需要 2 个模块端点 | 1 个模块端点；一条完整链路需要 2 个模块端点 | 完整 OSFP transceiver、内部 laser、组装测试 |
+| 每 GPU / XPU | 基准 `0.6-1.0` 个高速模块端点；乐观 `1.0-1.4`；极度 `1.4-2.0` | 端口数可能减半但 ASP 约 2x；新增高端集群更偏 1.6T | 800G/1.6T 模块 |
+| 每 rack | 低配 `8-16` 个模块端点；高端 AI rack `16-48` 个；scale-across/OCS 可更高 | 新增高端 rack 中逐步替代 800G | 机架跨 rack/pod 光互联 |
+| 每 MW IT load | 约 `600-1,000` GPU/MW；对应 `500-1,600` 个高速模块端点/MW | 若 1.6T 默认，约 `300-900` 个模块端点/MW，但 ASP 高 | 800G/1.6T 模块收入约 `$0.35-2.0M/MW`，取决于 ASP 和拓扑 |
+| 每 `$1B` AI 网络/光互联订单池 | 模块层可占 `30-55%`，其余为 switch、NIC、DSP、cable、fiber、test | 1.6T 提高模块 ASP 和测试成本 | AAOI 只能捕获被客户认证的 module/laser 份额 |
+
+### 6.3 单模块 BOM 拆分和毛利
+
+下表是行业成本结构估算，非 AAOI 披露成本表。
+
+| 模块 | ASP 估计 | BOM / 成本结构 | 毛利率推断 | 价格传导 |
+|---|---:|---|---:|---|
+| 800G OSFP DR8/2xFR4 | 2026 高端 `$700-1,000/只`，客户急单更高；2027 有下行压力 | DSP/CDR/retimer `15-25%`；EML/TOSA/SiPh/PIC `20-35%`；TIA/driver `8-15%`；PCB/连接器/FAU/壳体热件 `15-25%`；测试/老化/良率损失 `10-20%`；人工/制造/保修 `5-10%` | AAOI 公司层面 Q1 GM `29.1%`，成熟后高端模块可向 `32-40%` 靠近 | GPU 交付越紧 -> 光模块交期越紧 -> ASP 稳；二供导入后 ASP 先跌 |
+| 1.6T OSFP DR8 | 早期 `$1,400-2,200/只`，行业报告以该区间建模 | 200G/lane optics/laser/PIC `25-35%`；DSP/SerDes `20-30%`；TIA/driver `10-15%`；封装/散热/连接器 `10-20%`；测试/良率 `15-25%` | 早期 `35-45%` 可能性高；AAOI 需靠自动化和激光内制兑现 | 1.6T design-in 成功 -> 客户锁定 -> Q3/Q4 有溢价；2027 多供应商后回落 |
+| InP/EML/CW laser | 单颗/组件 ASP 差异大，取决于 100G/200G lane、功率、窄线宽、可靠性 | 外延/wafer、MOCVD、光刻/刻蚀、镀膜、封装、burn-in、可靠性测试 | 高端行业毛利可 `45-60%`；AAOI 未单列 | MOCVD/设备交期 `18-24` 月、可靠性数据 `2,000-5,000` 小时，供给慢于订单 |
+| ELSFP / 400mW laser | 当前样品/展示阶段，暂不做确定 ASP；若进入 CPO/NPO，可按数百到上千美元级组件理解 | 高功率 CW laser、波长控制、热控、冗余、fiber coupling、封装和可靠性 | 若进入客户 CPO BOM，可高于普通模块 | CPO/NPO 设计赢单 -> ELS 先于整机放量 |
+| CATV 1.8GHz amplifier/DAA | 大客户项目制，价格公开度低 | RF/光节点/放大器硬件、机箱、电源、远程管理软件、现场认证 | 2025 CATV mix 拉高公司 GM 至约 `30%` | MSO 升级预算和 Digicomm/Charter 节奏驱动，不跟 AI GPU 绑定 |
+
+### 6.4 当前产能能力和供应链采纳
+
+| 产品 | 当前产能/能力 | 供应链采纳 | 认证阶段 |
+|---|---|---|---|
+| 800G | Q1 2026 退出时 800G 月产能近 `100k` 只；产线在美国/台湾扩张 | 已向一个大型 hyperscaler 完成首批 volume shipment；同一客户订单 `$124M`，另一个 hyperscale 客户已收到首批 `10,000` 只 | 已有客户通过量产/早期交付；新增订单仍需 product qualification 和现场审核 |
+| 1.6T | Q1 2026 仍在导入；`>$200M` order 预计 Q3 起发货、Q4 完成 | 来自 longtime customer，预期重新成为 `10%+` 客户 | product qualification 后发货；200G/lane 和测试/良率是重点 |
+| InP laser | 管理层称扩产 underway，MOCVD/镀膜等设备部分到厂、部分接近到厂；设备内部 qualification 周期长 | 客户重视公司 in-house laser；行业短缺使内制有价值 | 新设备需内部 qualification；客户可能要求 `2,000-5,000` 小时可靠性数据 |
+| ELSFP / 400mW laser / 6.4T OBO | OFC 2026 展示 25dBm 400mW ELSFP 和 6.4T OBO demo | 技术展示和 select customer sample 阶段 | 样品/设计导入，2026 后续看 volume production 与 CPO/NPO 客户 |
+| CATV | 已规模供货 | Digicomm/Charter 供应链线索强，应收账款集中 | MSO 项目认证和现场部署周期 |
+
+## 7. 未来一年产能与认证三情景
+
+| 产品 | 基准产能/认证 | 乐观产能/认证 | 极度乐观产能/认证 | 风险 |
+|---|---|---|---|---|
+| 800G | 2026H2 月有效出货从 `100k` 附近爬到 `200k-300k` 只，订单按 Q4 大部分确认 | 美国/台湾产线良率提升，月有效出货 `300k-450k` 只 | 客户拉货强、设备/人力/测试不卡，月有效出货 `500k+` 只 | 制造 cycle time、客户现场审核、ASP 下行 |
+| 1.6T | Q3 小批量/Q4 大批量，`>$200M` order 确认大部分收入 | Q3 即顺利 ramp，新增 LTA，H2 订单超过 `$400M` | 多客户同时 qualification，2027 中成为 AAOI 主产品 | 200G/lane 良率、测试、热、客户 qualification |
+| InP/EML/CW laser | 新设备逐步通过内部 qualification，满足 800G/1.6T 内供 | 关键设备每月到厂，良率快速达标，激光短缺变成公司溢价 | 到 2027 年底进入全球 laser 产能 top tier 的管理层目标兑现 | 设备交期、外延良率、可靠性数据、客户二供 |
+| ELSFP/CPO 光源 | 2026 以样品/NRE/小额收入为主 | 2027 初获得 CPO/NPO 客户 design-in | 2027 H1 形成可见订单，外置光源成为新 revenue line | CPO 推迟、field service、竞争对手更强 |
+| CATV | 年化 `$240-310M`，维持 | 新项目/Charter/Digicomm 继续拉货 | DOCSIS 4.0/HFC 升级超预期 | Digicomm 回款、项目周期、HFC 被 fiber 替代 |
+
+## 8. 订单积压、供给与未来一年业务增速
+
+### 8.1 真实订单和可推断 backlog
+
+正式披露的“订单/准 backlog”：
+
+| 订单/承诺 | 金额/数量 | 交付窗口 | 风险 |
+|---|---:|---|---|
+| 1.6T data center transceivers 首个 volume order | `>$200M` | 2026 Q3 初开始，Q4 完成 | product qualification、产能、客户 schedule |
+| 800G single-mode transceivers，同一 hyperscale 客户 | `$124M`，其中先前 `>$53M` + 追加 `$71M` | 初始订单 Q2 开始、Q3 完成；追加订单至年底 | product qualification；同一客户集中 |
+| 另一个 hyperscale 客户 800G | 首批 `10,000` 只已发 | Q1/Q2 起 | 后续 order 未披露 |
+| Amazon 交易/warrant | warrant 最高 `7.945M` 股；二级资料称长期采购潜力高 | 2025 起 | 具体采购节奏未在 10-Q 中以 backlog 披露 |
+
+因此，可见 2026H2 data center 订单至少 `$324M+`（1.6T `>$200M` + 800G `$124M`），不含其他客户 800G、400G、legacy datacenter、CATV。按 2025 全年收入 `$455.7M` 来看，这个可见订单量已经非常大。
+
+### 8.2 未来一年增速预测
+
+| 情景 | 2026 公司收入 | 未来 12m run-rate | Datacenter 占比 | GM 路径 | 主要假设 |
+|---|---:|---:|---:|---:|---|
+| 基准 | `$1.1-1.25B` | `$1.1-1.4B` | `65-75%` | Q4 接近 `33-35%`，2027 向 `35-38%` | 已披露订单大体兑现；800G ASP 温和下行；1.6T Q4 顺利 |
+| 乐观 | `$1.3-1.6B` | `$1.5-2.0B` | `75-82%` | Q4/2027 `35-40%` | 新 LTA、良率改善、1.6T 不缺件、CATV 不拖累 |
+| 极度乐观 | `$1.8B+` | `$2.2B+` | `80%+` | `38-42%` | 管理层中期激进产能目标兑现，多客户同时锁单，1.6T 供不应求延续 |
+
+反证指标：
+
+| 反证 | 触发阈值 | 影响 |
+|---|---|---|
+| Q2 2026 收入低于 `$180M` 或 non-GAAP GM 低于 `29%` | 指引下限失守 | 产能或需求节奏存在问题 |
+| 1.6T order 未在 Q3 开始发货 | qualification/良率延迟 | 2026 `>$1.1B` 收入框架受挑战 |
+| 800G/1.6T ASP 连续两个季度跌 `10%+` | 行业供给追上 | 模块厂毛利下修 |
+| Digicomm 应收账款继续上升且现金回款慢 | AR 继续大幅集中 | CATV 现金流风险 |
+| top ten customer 占比仍 `>95%` 且新增客户未扩散 | 客户集中 | 估值折价应扩大 |
+| InP 设备 qualification 不及预期 | 激光器产能卡住 | 800G/1.6T 出货上限下降 |
+
+## 9. 竞争格局、替代风险与客户切换成本
+
+### 9.1 主要竞争对手
+
+| 环节 | 竞争对手 | 对 AAOI 的威胁 |
+|---|---|---|
+| 800G/1.6T datacom 模块 | 中际旭创 Innolight、Eoptolink、新易盛、Coherent、Lumentum、Hisense、Accelink、Fabrinet EMS、Source Photonics | 规模更大、成本更低、客户更广；中国/东南亚供应链如果合规问题可控，会压 ASP |
+| 激光器/EML/CW laser | Lumentum、Coherent、Broadcom、Sumitomo、Mitsubishi Electric、LandMark/LuxNet、源杰、光迅 | 头部激光器份额和毛利更强；AAOI 内制是优势但规模未必领先 |
+| DSP/TIA/driver | Broadcom、Marvell、Credo、MaxLinear、Semtech、MACOM | AAOI 依赖外部 DSP/analog 生态，无法捕获最高毛利层 |
+| CPO/NPO/optical engine | NVIDIA、Broadcom、Coherent、Ciena/Nubis、Marvell、Ayar、Celestial、Ranovus、POET、OpenLight | 若价值从 pluggable module 迁到 optical engine/ASIC package，AAOI 必须靠 ELSFP/laser 和 OBO/CPO demo 跟上 |
+| CATV/HFC | CommScope、Harmonic、Vecima、ATX、Technetix、Teleste、Casa/CommScope、Broadcom/MaxLinear silicon | CATV 非 AI，项目周期和 MSO 预算决定；竞争更偏系统和运营商关系 |
+
+### 9.2 AAOI 的护城河
+
+1. **In-house laser / vertical integration。** Q1 电话会里管理层把 InP capacity 称为 critical，并强调客户喜欢 AAOI 的 in-house laser manufacturing，尤其行业激光器短缺时。
+2. **美国 + 台湾 + 中国/宁波制造组合。** 2026 年 hyperscaler 更重视供应链地域、关税和合规；Sugar Land 扩产有战略价值。
+3. **Hyperscaler qualification。** 高速光模块不是标准 commodity，一旦进入客户平台，可靠性数据、CMIS/firmware、BER/FEC、现场 SOP 都形成切换成本。
+4. **800G/1.6T 订单先发优势。** `>$324M` 的公开 AI datacenter 订单对小公司收入基数非常重要。
+5. **CATV 现金流底盘。** 尽管不是 AI，CATV 提供收入规模和客户关系，但应收账款集中是反面。
+
+### 9.3 技术是否是未来主流
+
+| 技术 | 是否主流 | 对 AAOI |
+|---|---|---|
+| 800G pluggable | 2026 主流，但 2027 ASP 和份额被 1.6T 分流 | 2026 收入确定性最强，2027 需要成本/良率领先 |
+| 1.6T pluggable | 2026H2/2027 新增高端 AI fabric 主流方向 | AAOI 估值核心；`1.6T OSFP DR8` 是必须兑现的产品 |
+| LPO/LRO/TRO | 2026-2027 短距/封闭生态渗透提升，纯 LPO 不会一夜全替代 | 如果 AAOI 只做 fully retimed，远期会承压；需跟进低功耗形态 |
+| CPO/NPO/CPX | 2026 设计导入，2027 小批量，2028 更大规模 | 对 pluggable 是中期替代风险；对 AAOI 的 laser/ELS 是机会 |
+| ELSFP / external laser | CPO/NPO/SiPh 重要候选 | AAOI 的 400mW/25dBm ELSFP 是小业务高期权 |
+| CATV/HFC 1.8GHz | MSO 升级仍有需求，但不是 AI 主流 | 支撑收入，不应给 AI 高倍数 |
+
+### 9.4 客户替换成本
+
+客户替换成本高，但不是永久垄断：
+
+| 阶段 | 替换成本 | 原因 |
+|---|---|---|
+| 样品/qualification 前 | 中 | 客户可并行测试多家供应商 |
+| 进入量产 ramp | 高 | 需要可靠性、BER/FEC、firmware、CMIS、thermal、现场维护、供应链审计；激光器可能要求 `2,000-5,000` 小时数据 |
+| 多供应商都通过后 | 中低到中 | hyperscaler 会用二供/三供压价，800G ASP 先承压 |
+| CPO/NPO/ELS 设计绑定 | 很高 | 进入 switch/optical engine/外置光源 BOM 后，替换涉及系统架构和现场维护 |
+
+## 10. 估值和投资框架
+
+### 10.1 当前估值隐含什么
+
+以 2026-06-11 市值 `$12.33B` 计：
+
+| 收入口径 | 收入 | P/S | 含义 |
+|---|---:|---:|---|
+| 2025 实际 | `$455.7M` | `27.1x` | 极高 |
+| TTM 至 Q1 2026 | `$507.0M` | `24.3x` | 极高 |
+| 2026 管理层最低框架 | `>$1.1B` | `<11.2x` | 仍贵，但可由高增长解释 |
+| 乐观 2027 run-rate | `$1.8-2.2B` | `5.6-6.9x` | 如果兑现，估值可被接受 |
+| 极度乐观 run-rate | `$3B+` | `<4.1x` | 需要多客户、多产品、GM 40% 附近同时成立 |
+
+市场已经把 AAOI 当成 `2026-2027 AI optical ramp winner` 定价，而不是按通信硬件制造商定价。关键不是“便宜不便宜”，而是每个季度是否能用收入、毛利、订单、产能和现金回款证明故事。
+
+### 10.2 核心监控指标
+
+| 优先级 | 指标 | 为什么重要 |
+|---:|---|---|
+| 1 | Q2 2026 收入是否接近/超过 `$189M` 中点，GM 是否守住 `29-30%` | 确认 ramp 不是推迟 |
+| 2 | Q3 2026 1.6T 是否开始收入确认 | `>$200M` 订单兑现核心 |
+| 3 | 800G/1.6T 每月有效出货量、良率、ASP | 决定收入和毛利 |
+| 4 | 新 hyperscaler LTA / 追加订单 / customer qualification | 决定是否摆脱单客户风险 |
+| 5 | InP/MOCVD/laser 设备到货和 qualification | 决定 supply ceiling |
+| 6 | Digicomm AR 回款和 CATV 收入稳定性 | 防止非 AI 财务风险拖累 |
+| 7 | 股本、warrant、可转债摊薄 | 当前估值对每股收益极敏感 |
+| 8 | 行业 800G/1.6T ASP | 判断供需是否从短缺转向价格战 |
+
+## 11. 资料来源
+
+### 公司一手资料
+
+- AAOI Q1 2026 results，2026-05-07：https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-reports-first-quarter-2026-results
+- AAOI Q1 2026 Form 10-Q / SEC：https://www.sec.gov/Archives/edgar/data/1158114/000143774926015620/aaoi20260331_10q.htm
+- AAOI Q4/FY2025 results，2026-02-26：https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-reports-fourth-quarter-and-full-year-5
+- AAOI Q3 2025 results：https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-reports-third-quarter-2025-results
+- AAOI Q2 2025 results：https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-reports-second-quarter-2025-results
+- AAOI Q1 2025 results：https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-reports-first-quarter-2025-results
+- AAOI 1.6T order `>$200M`，2026-03：https://investors.ao-inc.com/news-releases/news-release-details/aoi-receives-first-volume-order-16t-data-center-transceivers
+- AAOI 800G upsized order `$71M` / `$124M` total，2026-04：https://www.stocktitan.net/news/AAOI/aoi-receives-new-upsized-order-for-800g-data-center-transceivers-chfxeg1gjkoq.html
+- AAOI OFC 2026 25dBm ELSFP / 400mW laser / 6.4T OBO：https://investors.ao-inc.com/news-releases/news-release-details/aoi-showcases-25dbm-ultra-high-power-elsfp-foundation-next-gen
+- AAOI patents / product-series list，2026-05-11：https://ao-inc.com/patents/
+- AAOI Sugar Land 210,000 sq ft manufacturing expansion，2026-02-13：https://investors.ao-inc.com/news-releases/news-release-details/applied-optoelectronics-breaks-ground-planned-manufacturing
+- Amazon warrant / transaction agreement exhibit，SEC：https://www.sec.gov/Archives/edgar/data/1158114/000168316825001580/appliedopto_ex0401.htm
+- AAOI 2025 Annual Report PDF：https://investors.ao-inc.com/static-files/6e93dd0b-5f30-4019-9855-643c1458d94f
+
+### 财报电话会和二级验证
+
+- Motley Fool AAOI Q1 2026 earnings call transcript：https://www.fool.com/earnings/call-transcripts/2026/05/07/aaoi-q1-2026-earnings-call-transcript/
+- Yahoo Finance / market data snapshot，AAOI quote：https://finance.yahoo.com/quote/AAOI/
+- GuruFocus AAOI forward PE snapshot：https://www.gurufocus.com/term/forward-pe-ratio/AAOI
+- IBD / The New America，AAOI Amazon/Microsoft/Charter customer context：https://www.investors.com/research/the-new-america/applied-optoelectronics-revenue-growth-data-center-ai-amazon-charter/
+
+### 项目内行业资料
+
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_激光器、EML与光器件_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_LPO_LRO线性光模块_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+
+### 行业外部资料入口
+
+- TrendForce AI optical transceiver market 2026 `$26B` / 2025 `$16.5B`：https://www.trendforce.com/presscenter/news/20260420-13017.html
+- TrendForce EML + CW-DFB 2026 monthly capacity `50.7M`：https://www.trendforce.com/presscenter/news/20260603-13077.html
+- Dell'Oro AI back-end switch market > `$100B` by 2030：https://www.delloro.com/news/ai-back-end-switch-market-will-push-past-100-billion-by-2030/
+- Cignal AI optical component revenue / 400G+ datacom：https://cignal.ai/2026/04/datacom-optical-component-revenue-surpasses-19b-in-2025/

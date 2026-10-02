@@ -1,0 +1,607 @@
+# 公司：ARM Arm Holdings 全面公司调研（2026-07-11）
+
+> **研究时点**：2026-07-11（美国西海岸）；股价取最近交易日 2026-07-10 收盘。  
+> **最新财报**：截至 2026-03-31 的 FY2026 Q4 / 全年，2026-05-06 发布；FY2027 Q1 尚未发布，计划于 [2026-07-29](https://investors.arm.com/news-events/investor-events-presentations) 发布。  
+> **本地资料边界**：仅使用 `基本面/行业调研/` 中与 AI 服务器 CPU、EDA/接口与 Chiplet IP、边缘 AI 芯片及产业会议相关的正式行业资料；未读取其他目录、其他公司报告或 `特征量化/`。  
+> **货币与口径**：除特别说明外均为美元；季度和财年采用 Arm 的 3 月末财年；“未来一年”定义为 2026-07-01—2027-06-30 的收入贡献或 2027-06-30 年化产能。数字可能因四舍五入不完全相加。
+
+## 一、结论先行
+
+Arm 不是传统意义上的“芯片制造商”，而是全球计算架构与处理器 IP 的**上游收费站**：客户先支付架构/IP 许可费，芯片量产后再按芯片售价比例或固定单价支付 royalty。FY2026 公司收入 **49.20 亿美元，同比增长 22.8%**，其中 royalty **26.13 亿美元、占 53.1%、增长 21%**；license and other **23.07 亿美元、占 46.9%、增长 25%**。这一模式带来 **97.5% 毛利率、35.99 亿美元现金与短期投资、31.08 亿美元净现金**，但也形成研发人员密集、收入确认波动、客户集中和对 Arm China/SoftBank 关联交易依赖等特殊风险。[FY2026 20-F](https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/arm-20260331.htm)
+
+本轮最重要的变化是商业模式从“IP → CSS → 自有硅片”连续下沉：
+
+1. **Armv9 与 Compute Subsystems（CSS）提高每颗芯片收费内容量。**管理层称 Armv8 升级到 Armv9 的 royalty rate 大约翻倍，Armv9 升级到 CSS 又大约翻倍；CSS 还把客户设计周期大致压缩一半。云端、手机、汽车的高端客户因此从单核授权转向预集成、预验证的子系统。
+2. **数据中心是目前最快的 IP 增长引擎。**FY2026 Q4 数据中心 royalty 再次超过同比翻倍，并成为 royalty 增长的最大贡献者；FY2026 Q3 管理层给出的数据中心收入占比口径是“十几个百分点、接近 20%”。本报告据此估计 FY2026 数据中心相关收入 **7.4—9.8 亿美元**，但公司没有按终端市场披露正式分部数据。
+3. **Arm AGI CPU 是 35 年来首次直接销售自有处理器硅片。**产品基于 TSMC 3nm、最高 136 个 Neoverse V3 核、12 通道 DDR5-8800、96 条 PCIe 6.0，量产系统预计 2026 年第四季度上市。管理层披露 FY2027—FY2028 可见需求/机会已超过 **20 亿美元**，但当前可由供应支撑的展望仍约 **10 亿美元**；这不是标准化、不可取消 backlog，且绝大多数收入在 FY2028。[Arm AGI CPU 发布](https://newsroom.arm.com/news/arm-agi-cpu-launch)；[产品说明](https://www.arm.com/static/az/pdf/product-brief/arm-agi-cpu-product-brief.pdf)
+4. **投资人给 Arm 的是“AI 计算平台垄断者”而非成熟 IP 公司的估值。**2026-07-10 收盘价 **323.39 美元**，市值约 **3,454 亿美元**，静态 PE **382 倍**、forward PE **149 倍**、PS **70.2 倍**。即便公司实现 FY2031 的 **250 亿美元收入、非 GAAP EPS 超过 9 美元**目标，按当前股价仍对应约 **13.8 倍 FY2031 销售额、35.9 倍 FY2031 非 GAAP PE**；估值已经预支了多年高增长和 AGI CPU 成功。
+5. **基本面最强项是生态与资产负债表，最大风险是估值、执行和渠道冲突。**Arm ISA、软件栈、工具链与数十亿台设备形成极高迁移成本；但 AGI CPU 会与原本购买 Neoverse IP 的 Nvidia、云厂商和商用 Arm CPU 厂商发生边界冲突，还把公司从近乎纯软件/IP 模型带入晶圆、封装、内存、库存和硬件售后风险。
+
+**总体判断**：公司质量高、AI 云端和 CSS 变现拐点真实，AGI CPU 供需缺口也具备上行选择权；但当前股价要求“IP 收费内容量持续提升 + 云端份额快速扩张 + 自有硅片高毛利爬坡”同时兑现。投资上更适合把 2026 年底 AGI 系统可用性、供给锁定、独立性能、RPO/ACV 补充速度和 Arm China 回款作为硬验证节点，而不能仅凭合作生态名单外推订单。
+
+## 二、证据等级、估算纪律与本地行业交叉验证
+
+### 2.1 证据等级
+
+| 等级 | 定义 | 本报告使用方式 |
+|---|---|---|
+| A | SEC/Arm 财报、正式产品规格、客户或标准组织一手公告 | 可作为已确认事实；仍区分“需求”“承诺”“部署”“采购”和“收入” |
+| B | 客户产品页、OCP/UCIe 等标准/会议资料、可重复的独立技术资料 | 用于交叉验证产品采用、规格、认证和产业位置 |
+| C | 供应链渠道、主流产业媒体、分析师拆机/价格估算 | 只用于范围和方向，不能替代公司订单或收入 |
+| D | 本报告模型 | 明示假设、范围与重叠，不伪装成公司披露 |
+
+Arm 不披露按终端市场的 GAAP 收入、按产品的 ASP/毛利率、标准化 bookings、book-to-bill、lead time 或取消率。故本报告采用以下代理链：**ACV（承诺许可费年化值）→ RPO（已签约未履约许可义务）→ 芯片设计/认证里程碑 → 客户量产 → royalty**；AGI CPU 另用**客户状态、可见需求、供给支持金额、系统上市窗口和假设取消/延期率**推演。
+
+### 2.2 只使用的本地行业资料
+
+- [AI 服务器 CPU 与控制平面芯片](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器CPU与控制平面芯片_2026-07-10.md)：用于 CPU 在 AI 机架中的角色、Grace/Vera/云厂自研 Arm 芯片、DPU、BOM 与价格传导交叉验证。
+- [EDA 工具、接口 IP 与 Chiplet IP](../../行业调研/AI服务器_存储_芯片/行业调研_EDA工具、接口IP与Chiplet%20IP_2026-07-10.md)：用于 IP 公司的“产能”定义、工程师/PDK/验证瓶颈、AMBA/CHI/CSA 与客户集中度。
+- [AI 边缘推理芯片](../../行业调研/AI服务器_存储_芯片/行业调研_AI边缘推理芯片_2026-07-10.md)：用于 Lumex、Ethos-U85、Corstone、KleidiAI 与边缘设备 BOM。
+- [头部 AI 芯片全景与产能释放](../../行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md)：用于 AI 芯片代际、产能释放与收入口径一致性。
+- [Chiplet Summit 2026 更新](../../行业调研/产业背景/顶级会议信息/chiplet_summit_2026_update.md)及 [ISCA 2026 更新](../../行业调研/产业背景/顶级会议信息/conference_update_isca_2026_2026-07-10.md)：用于 UCIe 3.0、开放 Chiplet、互连/一致性、内存与数据移动瓶颈。
+
+本地行业资料与本次联网核查共同支持两个关键判断：第一，AI 服务器 CPU 的价值不能用 GPU BOM 占比简单衡量，它承担操作系统、虚拟化、网络/存储中断、数据预处理与 agent orchestration；第二，Arm 的 IP “产能”主要由架构/验证工程师、PDK 和客户 tape-out 节奏决定，而 AGI CPU 才受 TSMC N3、先进封装、测试和 DDR5 的实物产能约束。
+
+## 三、公司整体业务、投资人定位与产业链位置
+
+### 3.1 商业模式与收入链
+
+| 商业层级 | Arm 交付内容 | 收费方式与确认 | 代表产品/能力 | 经济特征 |
+|---|---|---|---|---|
+| ISA/架构许可 | 使用 Arm 指令集并可自研 CPU 核 | 高额多年许可费 + 量产 royalty | Armv9 Architecture License | 自主性最高、签约少但战略价值大；客户仍通常按出货付费 |
+| Technology IP | Arm 设计的 CPU/GPU/NPU/系统 IP | 前期 license + 每颗芯片 royalty | Cortex、Neoverse、Mali、Ethos、AMBA/CHI、CMN | 传统核心业务；量产跨多年，收入具长尾 |
+| CSS | 已集成、已验证、带物理实现与软件的子系统 | 更高 license 与更高 royalty 内容量 | Neoverse CSS V3/N3、Lumex、Zena、Niva、Orbis | 降低客户集成风险、缩短 tape-out，Arm 获取更多价值 |
+| 软件/开发工具 | 优化库、性能分析、参考软件、认证 | 多数免费或捆绑，直接收入很小 | KleidiAI、Performix、SystemReady、SOAFEE | 主要提高采用率、迁移成本和硬件 royalty，而非独立 SaaS |
+| 自有硅片 | Arm 设计、委外制造的商用 CPU | 芯片 ASP；预计确认产品收入 | Arm AGI CPU | 单 socket 收入显著提高，但毛利率、库存和供应风险恶化 |
+
+FY2026 收入只按 monetization 类型披露，而非终端市场分部：
+
+| FY2026 收入类型 | 收入 | 同比 | 占总收入 | 关键驱动 |
+|---|---:|---:|---:|---|
+| Royalty | 26.13 亿 | +21% | 53.1% | Armv9 渗透、CSS 初始 royalty、数据中心翻倍、每芯片核数/售价提高 |
+| License and other | 23.07 亿 | +25% | 46.9% | AI/数据中心新设计、CSS 签约、SoftBank 相关设计服务；季度确认高度波动 |
+| **合计** | **49.20 亿** | **+22.8%** | **100%** | AGI CPU 尚未贡献硅片收入 |
+
+Royalty 通常为客户芯片 ASP 的一定比例或每颗固定金额；大客户虽有量折，但合同设最低费率。license 则随签约、交付 IP、验收和履约义务确认，不能把单季高 license 机械年化。[FY2026 20-F](https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/arm-20260331.htm)
+
+### 3.2 投资人如何看这家公司
+
+Arm 同时承载四种投资叙事：
+
+1. **移动端垄断性 IP 收费站**：智能手机 CPU ISA 近乎行业标准，现金流稳定，但终端数量低增长；增长来自 Armv9/CSS 提价和每颗芯片计算内容量。
+2. **云端 CPU 架构份额提升者**：AWS Graviton、Google Axion、Microsoft Cobalt、Nvidia Grace/Vera、定制 DPU/SmartNIC 都扩大 Arm royalty 池。云厂自研既是 Arm IP 的客户，也是 AGI CPU 的替代品。
+3. **AI 平台公司**：从云端 Neoverse 到手机 Lumex、汽车 Zena、IoT Orbis，以统一 ISA、KleidiAI 和软件认证连接 cloud-to-edge；AI 是提高核数、系统复杂度和 royalty rate 的催化剂，而不是 FY2026 全部 49.2 亿收入都应被称为 AI 收入。
+4. **新晋无晶圆厂 CPU 供应商**：AGI CPU 让每个 socket 的收入从数十/约百美元量级 IP 经济价值提高到约千美元芯片 ASP，但也使纯 IP 高毛利叙事被稀释。
+
+产业链位置可概括为：
+
+`应用/云服务商 → OEM/ODM/云厂芯片团队 → Arm ISA、CPU/CSS/系统 IP → EDA/晶圆代工/封测/内存 → 服务器/终端`。
+
+传统 Arm 位于芯片设计最上游，不拥有客户芯片库存；AGI CPU 则使 Arm 直接向云服务商/OEM 交货，并需要向 TSMC、Socionext、封测和内存供应链采购。其护城河是 ISA 和生态，价值捕获正在从“核”扩到“子系统、互连、软件和整颗 CPU”。
+
+### 3.3 最近三年重大业务变化、转型与收购
+
+| 时间 | 事件 | 战略含义 | 财务/风险含义 |
+|---|---|---|---|
+| 2023-09 | Nasdaq 重新上市 | 从 SoftBank 全资子公司转为公众公司，但 SoftBank 仍绝对控股 | 流通盘有限、关联交易和控制权折价长期存在 |
+| FY2024—FY2025 | Armv9 加速、Neoverse CSS V3/N3 推出，CSS 从云端延伸到终端 | 从单 IP 许可转向预集成、预验证平台；V3 每 socket 性能较 CSS N2 提升 50%，N3 每瓦性能提升 20% | CSS license/royalty rate 更高，但客户差异化空间缩小、与 ASIC 服务商边界重叠。[Neoverse CSS](https://newsroom.arm.com/news/enabling-ai-infrastructure-on-arm) |
+| 2025-06—09 | Zena 汽车 CSS、Lumex 移动 CSS 发布；产品线更名为 Neoverse/Niva/Lumex/Zena/Orbis | 把相同 CSS 方法复制到汽车、移动、PC、IoT | 设计周期更快、收费内容量提高；汽车 royalty 仍需 3—5 年后兑现 |
+| 2025-08 | 出售 Artisan Foundation IP 业务 | 退出低战略协同的物理基础 IP | FY2026 确认约 1.31 亿税前处置收益；提高聚焦度但降低产品广度 |
+| 2025-10 | 同意以约 2.65 亿现金收购 DreamBig Semiconductor | 补齐 Chiplet Hub、AI SuperNIC/先进互连工程能力，为整机架/系统 IP 做准备 | 截至 2026-07-11 尚未见官方完成公告；最新 20-F 把预计完成时间延至 FY2027 Q2 末，存在审批与整合不确定性。[20-F 收购说明](https://investors.arm.com/node/8281/html) |
+| 2025-11 | SoftBank 收购 Ampere 后，Arm 处置 Ampere 股权并收到约 1.827 亿美元对价/票据结算；2026-03 又与 Ampere 签开发协议 | 资本关系退出但技术合作延续 | Ampere 既是生态伙伴，也是未来 AGI CPU 的潜在商用竞争者 |
+| 2026-03-24 | 发布 Arm AGI CPU，首次直接提供生产级自有硅片 | 商业模式从纯 IP/CSS 下沉到 fabless CPU；Meta 为 lead partner | 显著扩大 TAM 与单 socket 收入，同时引入 3nm、封装、内存、库存、硬件毛利和渠道冲突 |
+| 2026-04 | 免费发布 Performix AI/agent 性能分析工具 | 用软件推动 workload 优化和 AGI/Neoverse 采用 | 直接收入有限，目标是拉动平台用量和迁移成本。[Performix](https://newsroom.arm.com/news/announcing-arm-performix) |
+
+## 四、股价、估值与财务健康度
+
+### 4.1 最新市场与经营指标
+
+| 指标 | 最新值 | 日期/期间 | 口径与说明 |
+|---|---:|---|---|
+| 股价 | **$323.39** | 2026-07-10 收盘 | 2026-07-11 为周六，取最近交易日 |
+| 已发行在外普通股 | 约 **10.68 亿股** | 2026-05-21 | 20-F 披露；FY2026 稀释加权平均股数也约 10.68 亿 |
+| 市值 | **约 $3,454 亿** | 2026-07-10 | 价格 × 官方约 10.68 亿股；部分行情商因股数口径显示约 $3,389 亿，故可视为 $3,389—3,454 亿区间 |
+| 企业价值 | **约 $3,423 亿** | 2026-07-10 | 市值减净现金，行情页口径 |
+| 静态 PE | **382.1×** | 2026-07-10 | 基于 TTM GAAP EPS 约 $0.85 |
+| Forward PE | **149.2×** | 2026-07-10 | 市场一致预期，非公司指引，随分析师预测变化 |
+| PS / Forward PS | **70.2× / 57.7×** | 2026-07-10 | TTM 收入 $4.92B；forward 为一致预期 |
+| FY2026 收入增速 | **22.8%** | 截至 2026-03-31 | $4.920B / $4.007B - 1 |
+| 毛利率 | **97.5%** | FY2026 | GAAP；纯 IP 仍占全部收入，AGI 硅片尚未出货 |
+| 营业利润率 | **18.3%** | FY2026 | GAAP 营业利润 $0.900B |
+| 净利率 | **18.4%** | FY2026 | GAAP 净利润 $0.904B |
+| 简化自由现金流率 | **19.9%** | FY2026 | 经营现金流 $1.524B - PP&E 资本开支 $0.545B = $0.979B；公司 non-GAAP FCF 为 $0.882B（另扣无形资产购买/义务） |
+
+行情估值来源为 [StockAnalysis ARM Statistics](https://stockanalysis.com/stocks/arm/statistics/)（2026-07-10 页面快照）；财务分母以 [Arm FY2026 20-F](https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/arm-20260331.htm) 为准。forward 指标是卖方一致预期，不是 Arm 承诺。
+
+### 4.2 资产负债表与现金流评估
+
+| 项目 | 2026-03-31 | 同比/质量判断 |
+|---|---:|---|
+| 现金及现金等价物 | $2.751B | 流动性强 |
+| 短期投资 | $0.850B | 与现金合计 $3.601B |
+| 应收账款 | $1.300B | 占收入 26.4%，需关注大客户和 Arm China 回款 |
+| 合同资产 | $1.297B | 其中流动 $0.977B、非流动 $0.320B；反映已履约但未达开票条件，收入质量需与后续现金回收核验 |
+| 流动资产 / 流动负债 | $6.236B / $1.040B | 流动比率约 **6.00×**，短期偿债极强 |
+| 总资产 / 总负债 | $10.703B / $2.417B | 负债率 22.6% |
+| 租赁类债务 | $0.491B | 约 $0.432B 经营租赁 + $0.059B 融资租赁；无重大传统借款 |
+| 净现金 | **$3.110B** | 为收购、研发与 AGI 初期供应提供缓冲 |
+| 经营现金流 | $1.524B | 高于净利润，但包括 $1.052B 股权激励加回 |
+| 简化自由现金流 / 公司 non-GAAP FCF | $0.979B / $0.882B | 前者为 OCF 减 PP&E；后者还扣无形资产购买/义务，口径更保守；现金转换健康 |
+
+**健康度结论：偿债与流动性 9/10，现金流 7/10，收入/治理质量 5/10，综合 7/10。**没有偿债压力，DreamBig 2.65 亿美元收购也只占现金与短投约 7%。不过以下因素限制“极健康”判断：
+
+- **股权激励很高**：FY2026 SBC **10.52 亿美元，占收入 21.4%、超过 GAAP 净利润**；非 GAAP 利润与真实股东稀释之间差距不可忽视。
+- **合同资产与应收高**：两者合计 **25.97 亿美元、相当于 FY2026 收入 52.8%**。这并非等同坏账，但需要后续开票/回款验证。
+- **客户集中**：前五大客户（含 Arm China、SoftBank 相关方）贡献 FY2026 **57%** 收入。Arm China 单一客户收入 **7.906 亿美元、占 16%**，应收 **2.965 亿美元**，信用损失准备由 1,600 万升至 **2,830 万美元**。
+- **关联交易抬升**：FY2026 关联方收入 **14.99 亿美元、占 30.5%**；SoftBank 相关 license/design service 收入约 **7.044 亿美元**，显著高于上年 1.455 亿，必须区分生态协同与可持续第三方需求。
+- **控制权与股票供给**：SoftBank 截至 2026-05-21 约持股 **86.4%**；约 **7.690 亿股（总股本约 72%）**被质押于保证金贷款。Arm 属“controlled company”，独立董事、资本配置和潜在股票供给风险均高于一般公众公司。
+
+## 五、最新及最近四次财报：五季度财务、订单代理与交期
+
+### 5.1 五季度核心财务表
+
+单位：百万美元；利润率为 GAAP，括号内为 non-GAAP 营业利润率。
+
+| 财报季度（截至日） | 总收入 / 同比 | Royalty / 同比 | License & other / 同比 | Royalty/License 占比 | 毛利率 | 营业利润率（non-GAAP） | GAAP 净利润 | 数据中心/AI 关键信号 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| FY2025 Q4（2025-03-31） | 1,241 / **+34%** | 607 / +18% | 634 / +53% | 48.9% / 51.1% | 97.7% | 33.0%（52.8%） | 210 | 管理层称头部 hyperscaler 新增服务器芯片中 Arm 接近 50%；本报告估计 DC 收入 $110—160M、占 9%—13%（D） |
+| FY2026 Q1（2025-06-30） | 1,053 / **+12%** | 585 / +25% | 468 / -1% | 55.6% / 44.4% | 97.2% | 10.8%（39.1%） | 130 | Neoverse 覆盖逾 7 万企业；CSS 16 项许可/10 家公司、5 项已出货；估计 DC $115—160M、11%—15%（D） |
+| FY2026 Q2（2025-09-30） | 1,135 / **+34%** | 620 / +21% | 515 / +56% | 54.6% / 45.4% | 97.4% | 14.4%（41.1%） | 238 | 数据中心 royalty **同比翻倍**；Neoverse 累计逾 10 亿核；CSS 19 项/11 家；估计 DC $150—195M、13%—17%（D） |
+| FY2026 Q3（2025-12-31） | 1,242 / **+26%** | 737 / +27% | 505 / +25% | 59.3% / 40.7% | 97.6% | 14.9%（40.7%） | 223 | 数据中心 royalty **三位数增长**；CFO 表示数据中心收入在“十几个百分点、接近 20%”；估计 $185—250M、15%—20%（B/D） |
+| **FY2026 Q4（2026-03-31）** | **1,490 / +20%** | **671 / +11%** | **819 / +29%** | 45.0% / 55.0% | **97.9%** | **29.4%（49.1%）** | **313** | 数据中心 royalty 再度 **>2×**、为 royalty 最大增量；估计 DC $265—330M、18%—22%（D）；AGI 硅片收入仍为 0 |
+
+财报原始来源：[FY2025 Q4](https://investors.arm.com/static-files/a9baed37-2c28-4ac3-83b0-c11387d02bb2)、[FY2026 Q1](https://investors.arm.com/static-files/4b94004f-5de2-4842-a03c-9477b978b117)、[FY2026 Q2](https://investors.arm.com/static-files/bcc1691e-9226-493f-95a8-363ba1c6946a)、[FY2026 Q3](https://investors.arm.com/static-files/941fd4cb-0027-4e81-9541-66dcd954a14a)、[FY2026 Q4/FY2026](https://investors.arm.com/static-files/adf3bac7-1e91-442e-92e0-5f2d8f1b6a14)。数据中心金额是根据管理层占比/增速定性和季度结构反推的模型区间，不是分部披露；各季度不可当成精确可加的 GAAP 数字。
+
+五季度呈现三点：
+
+- 收入增长并非线性。License 受大合同履约节点影响，FY2026 Q1 同比 -1%，Q4 又增长 29%；Royalty 更能反映终端芯片出货和单芯片内容量。
+- FY2026 Q4 license 占比升至 55%，带动季度收入创新高；但 RPO 同比下降 7%，说明已确认 license 的消耗速度阶段性快于可见未履约义务补充，不能只看当季收入。
+- 数据中心 royalty 连续加速而总 royalty Q4 仅增长 11%，意味着传统手机/消费端仍在稀释增长。FY2026 不是“纯 AI 数据中心”收入结构，移动端仍是最大终端。
+
+### 5.2 Backlog、Bookings、B2B、交期与取消率：公司不披露项的代理表
+
+| 财报季度 | ACV（$M）/同比 | RPO（$M）/同比或环比 | 未来 12 月 RPO 覆盖 | Bookings / B2B | 交期/转收入 | 取消率 |
+|---|---:|---:|---:|---|---|---|
+| FY2025 Q4 | 1,365 / +15% | 2,226 / 环比近持平 | 25% ≈ **557** | 未披露；ACV 是已承诺许可费年化值，不等于当季 bookings；无法算 B2B | 许可按里程碑确认；设计到量产 royalty 通常 1—3 年 | 未披露 |
+| FY2026 Q1 | 1,528 / +28% | 2,232 / 环比近持平、同比 +3% | 27% ≈ **603** | 同上 | 3 项新 CSS（2 项数据中心、1 项 PC）；CSS 可显著缩短设计周期 | 未披露 |
+| FY2026 Q2 | 1,600 / +28% | 2,246 / 环比 +1%、同比 -6% | 29% ≈ **651** | 同上 | 19 项 CSS 许可中 5 项已出货，其他处设计/验证阶段 | 未披露 |
+| FY2026 Q3 | 1,620 / +28% | 2,148 / 同比 -8% | 31% ≈ **666** | 同上 | 21 项 CSS/12 家公司，5 项已出货、2 家进入第二代 | 未披露 |
+| **FY2026 Q4** | **1,660 / +22%** | **2,071 / 同比 -7%** | **28% ≈ 580** | 同上；RPO 不含未来 royalty，因此不能与总收入直接求 book-to-bill | 新增 2 项 CSS 许可；AGI 首批系统计划 CY2026 Q4，绝大多数需求在 FY2028 | 未披露；AGI 三情景采用 20%/10%/5% 延期或取消假设，均为模型 |
+
+**RPO 的正确解释**：2026-03-31 RPO **20.714 亿美元**，其中约 28% 在未来 12 个月确认、21% 在第 13—24 个月、其余更长期；它只覆盖满足会计定义的已签许可履约义务，**排除未来按出货产生的 royalty**，也不包括尚未达到合同成立条件的机会。因此，RPO 下降不代表总需求收缩，却是 license 签约补充速度需要观察的领先指标。
+
+**交期的正确解释**：
+
+- Architecture/Technology IP：签约到 tape-out 通常约 18—36 个月，复杂数据中心/汽车项目可达 3—5 年；再由终端芯片出货转 royalty。
+- CSS：Arm 提供已验证物理实现、参考软件与系统 IP，管理层称可把设计周期大致缩短一半；现实仍取决于客户差异化、代工厂 PDK、封装、软件认证。
+- AGI CPU：2026-03 发布，首批生产系统预计 2026 年第四季度，形成约 6—9 个月产品化窗口；供应链主要约束为 TSMC N3、封装/测试及 DDR5-8800，而非传统 IP 工程产能。
+
+## 六、2026 年最新指引、收入占比与公司资源重心
+
+### 6.1 最新季度和长期指引
+
+| 指引项目 | 管理层口径 | 本报告解读 |
+|---|---:|---|
+| FY2027 Q1 收入 | **$1.260B ± $0.050B**，中点同比约 +20% | Royalty 与 license 均预计约 +20%；说明 IP 基盘仍强，但不含规模化 AGI 芯片收入 |
+| FY2027 Q1 non-GAAP 运营费用 | 约 **$0.760B** | 研发、市场与 AGI 产品化投入抬升；GAAP 费用还包括大额 SBC |
+| FY2027 Q1 non-GAAP EPS | **$0.40 ± $0.04** | 不应与 TTM GAAP PE 直接混用 |
+| FY2031 IP 收入 | **$10B** | 目标 99% 毛利率、non-GAAP 营业利润率 >65%；FY2026—FY2031 royalty CAGR 约 20% |
+| FY2031 AGI 产品收入 | **$15B** | 目标毛利率至少 50%、non-GAAP 营业利润率 >30%；真正物质化从 FY2028 开始 |
+| FY2031 合计 | **$25B、non-GAAP EPS >$9** | 相对 FY2026 收入需约 38.5% CAGR；目标进取，AGI 占 60% |
+
+公司称 2027—2031 年 forecast royalty 约 **70% 已由现有合同架构覆盖**，即使 FY2031 仍约 60%；Cloud AI 和 Physical AI 的相应覆盖约 85%/95%。这里的“contracted”主要指已签 IP 架构及未来出货会触发 royalty，**不是客户保证采购某一数量芯片**。长期目标来源：[Arm Everywhere Investor Session](https://investors.arm.com/static-files/01d3c055-162f-4cf4-a983-5bb338aeb5e5)。
+
+### 6.2 FY2026 终端业务占比：披露与模型分开
+
+公司只正式披露 royalty 与 license，不披露手机、数据中心、汽车等分部。以下区间依据管理层在财报会中的占比定性、royalty 增速、客户量产和行业终端结构反推；各项中点约合 100%，误差区间会重叠。
+
+| 终端业务 | FY2026 收入贡献估计 | 占比估计 | 同比增速估计 | 证据与判断 |
+|---|---:|---:|---:|---|
+| 智能手机/消费移动 | **$1.97—2.21B** | 40%—45% | 约 +8%—15% | Q3 CFO 给出 40%—45%口径；Armv9/CSS 提价抵消手机台数低增速 |
+| Cloud AI/数据中心（含 CPU、DPU/SmartNIC、license） | **$0.74—0.98B** | 15%—20% | 约 +55%—90% | 数据中心 royalty 多季翻倍；Q3 CFO 表示收入在十几个百分点、接近 20% |
+| Physical AI/汽车 | **$0.34—0.49B** | 7%—10% | 约 +18%—30% | 现有 Cortex-A/R/汽车系统 IP；Zena 主要还是 license，royalty 后移 |
+| Client PC | **$0.25—0.39B** | 5%—8% | 约 +20%—40% | Windows on Arm、Niva/架构许可；绝对规模仍小 |
+| IoT、嵌入式、网络、消费电子及其他 | **$1.08—1.38B** | 22%—28% | 约 +8%—18% | 设备量大、单颗 royalty 低；DPU 若按数据中心归类则不在此项 |
+
+**最突出、资源最侧重的业务排序**：
+
+1. **Cloud AI：Neoverse/CSS + AGI CPU + DPU/网络/Chiplet**。它是增速最快、产品内容量提升最大、公司公开资源投入最高的业务；FY2031 目标中 AGI 单独占 150 亿美元。
+2. **Edge AI：Lumex CSS + KleidiAI**。手机收入基盘最大，核心不是手机台数，而是从 Armv8 单核 IP 升级到 Armv9.3/CSS、SME2 和系统 IP，从而提高每台设备 royalty。
+3. **Physical AI：Zena + 汽车 AE + SOAFEE/SystemReady**。当期金额小于手机和云端，但安全、软件认证和 3—5 年车型周期形成长期锁定；属于不能遗漏的小业务。
+4. **Chiplet/系统互连：AMBA CHI、CMN、CSA/FCSA、Total Design，拟收购 DreamBig**。当前收入不单列，但在异构 AI 机架里决定一致性、die-to-die 互操作和网络，是提高系统 IP 价值的重要“小而关键”业务。
+5. **Orbis/Corstone/Ethos-U85 与 Performix**。直接收入很小，却能把 Armv9、NPU 和工具链扩展至工业、机器人和 agent 软件，主要价值是拓宽未来 royalty 池。
+
+### 6.3 明确跳过或降权的低增速产品/业务
+
+| 跳过/降权对象 | 原因 | 仍需保留的观察点 |
+|---|---|---|
+| 旧 Armv8、旧 Cortex-A/M/R 和低端 MCU royalty | 存量大但单价低、终端量低增速；不是未来一年主要增量 | 仍是现金流底座，快速 RISC-V 替代会伤害基盘 |
+| 老一代 Mali GPU 与传统消费电子 | 竞争激烈、增长慢，且 Android 高端 GPU 受 Qualcomm/自研方案挤压 | 新 Mali G1-Ultra 随 Lumex CSS 重新纳入重点 |
+| Artisan Foundation IP | 已于 2025-08 出售，FY2026 处置收益不应年化 | 无持续业务贡献 |
+| 传统支持、培训、维护及低价 Flexible Access | 直接收入小，通常是许可漏斗而非利润增长核心 | 转化为量产项目后的 royalty 才重要 |
+| Pelion 等历史 IoT 服务叙事 | 已不是核心战略和独立增长引擎 | Orbis/Corstone/Ethos 的 IP 机会仍保留 |
+| 非 AI 的成熟手机/IoT 出货量波动 | 与本报告重点无关且可见增长低 | 用于压力测试整体 royalty，不做产品逐一展开 |
+
+## 七、高增长或关键产品：产品、当前收入、增速、利润率与供需
+
+### 7.1 当前产品组合总表
+
+评分 1—5：**AI 栈重要性** 5 为不可或缺控制/计算层；**时间紧急性** 5 为客户未来 12 个月必须部署；**供需紧张** 5 为明显供不应求；**垄断/溢价** 5 为缺少等价替代且能持续提价。金额为 FY2026 或 2026-06 年化估计；“重叠”项不可相加。
+
+| 产品/业务 | 对 Arm 当前收入贡献 | 当前增速 | 估算产品毛利率 | AI 栈重要性 | 紧急性 | 供需紧张 | 垄断/溢价 | 证据等级 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| Neoverse CPU/CSS 数据中心 IP | **$0.50—0.70B** | +50%—80% | 约 98%—99% | 5 | 4 | 4 | 4 | A/D；含 license+royalty |
+| Armv9/CSS“增量收费层” | Royalty 约 **$0.34—0.50B** | +60%—100% | 约 99% | 5 | 4 | 3 | 4 | B/D；与终端行重叠 |
+| **Arm AGI CPU** | **$0** 已确认收入；可见需求 >$2B | 新产品 | 初期 **35%—45%**，长期目标 ≥50% | 5 | 5 | **5** | 3 | A/C/D |
+| DPU/SmartNIC/网络与系统 IP | **$0.15—0.25B** | +50%—100% | 约 98%—99%（IP） | 5 | 5 | 4 | 4 | B/D；Arm 称架构份额接近 100% |
+| Lumex CSS/高端移动 Edge AI | 新平台增量 **$0.10—0.20B**；广义手机 $1.97—2.21B | CSS royalty 三位数、广义手机 +8%—15% | 约 98%—99% | 3 | 4 | 3 | 4 | A/D |
+| Zena CSS/Physical AI 汽车 | Zena license **$0.02—0.06B**；广义汽车 $0.34—0.49B | +18%—30%；Zena 新产品 | 约 98%—99% | 4 | 3 | 2 | 4 | A/D |
+| Ethos-U85/Corstone/Orbis 边缘 NPU | **$0.05—0.12B** | +15%—30% | 约 98%—99% | 3 | 3 | 2 | 3 | A/D |
+| Chiplet/CSA/CHI/CMN/Total Design | **$0.08—0.18B** | +25%—50% | 约 98%—99% | 5 | 4 | 3 | 3 | B/D；DreamBig 尚待交割 |
+| KleidiAI/Performix/认证软件 | 直接收入 **<$0.025B** | 安装/采用高速增长 | 直接商业毛利无意义 | 4 | 4 | 1 | 3 | A；生态拉动项 |
+
+纯 IP 产品的毛利率无法按产品拆分，表中以公司 IP 长期约 99% 目标和 FY2026 97.5% 综合毛利为锚。AGI CPU 35%—45% 是本报告根据约 $1,250 初始 ASP、3nm 双 die、封装/测试/渠道成本做的模型，不是公司指引；公司只给出 FY2031 AGI 毛利率“至少 50%”。
+
+### 7.2 Neoverse 与数据中心 CSS：最确定的 royalty 增长
+
+**产品与型号**：Neoverse V3/N3 CPU IP；Neoverse CSS V3/N3；CMN S3、CHI、一致性/内存控制系统 IP；客户也可采用架构许可自研核。CSS V3 相对 CSS N2 每 socket 性能提高约 50%，N3 相对 N2 每瓦性能提高约 20%。Microsoft Cobalt 200 已公开采用 Neoverse CSS V3；AWS Graviton、Google Axion、Nvidia Grace/Vera 和各类 DPU 扩大 Arm 数据中心安装基数。[Cobalt 200 与 CSS V3](https://newsroom.arm.com/blog/microsoft-azure-cobalt-200-arm-neoverse-css-v3)
+
+**收入交叉验证**：FY2026 Q2 数据中心 royalty 翻倍、Q3 三位数、Q4 再超 2 倍；公司披露 Neoverse 累计超过 10 亿核、超过 7 万家企业使用。Q3 已有 21 项 CSS 许可/12 家公司、5 项出货、2 家第二代，Q4 再新增 2 项许可，推算至少 23 项。由 CFO 15%—20% 数据中心收入占比反推，云端 IP（剔除部分 DPU）约 $0.50—0.70B 是合理区间。
+
+**利润与价格**：IP 增量成本很低，产品毛利接近公司整体上限。Armv9→CSS 再一次提高 royalty rate；更多核心、SVE/CCA/系统 IP 和更高服务器芯片 ASP共同扩大内容量。最大定价制约来自 hyperscaler 规模折扣、自研核的架构许可议价，以及 RISC-V/自研互连的长期替代。
+
+**供需**：这里的瓶颈不是 Arm 能“生产多少颗”，而是 Arm 的 CPU/物理实现/验证工程师、代工厂 PDK、客户后端设计和软件验证。采用后的 royalty 不受 Arm 库存限制；客户芯片仍受先进节点、封装和内存约束。
+
+### 7.3 Arm AGI CPU：从 IP 收费站到直接硅片
+
+**正式规格**：TSMC 3nm、两颗相同 compute die、最高 136 个 Neoverse V3 核（Armv9.2）、每核 2MB L2、128MB system-level cache、12 通道 DDR5-8800（总带宽 >800GB/s）、96 条 PCIe 6.0、CXL 3.0。官方营销口径为 300W；产品说明的可配置 TDP 表还出现最高 410/420W，和发布会 300W 口径存在需要量产 SKU/固件确认的差异，不能把 300W 当所有负载硬上限。[产品说明](https://www.arm.com/static/az/pdf/product-brief/arm-agi-cpu-product-brief.pdf)
+
+**系统**：OCP DC-MHS 1OU 双节点，每节点 1 颗 CPU、12 DIMM、PCIe 6.0 和 OCP NIC；标准 36kW 风冷机架 30 个 blade、60 颗 CPU、8,160 核。Supermicro 200kW 液冷设计可放 336 颗 CPU、45,696 核。Red Hat 软件栈及 Lenovo、Supermicro、ASRock Rack 等生态支持，首批方案预期 2026 年 Q4 可用。[Arm/Red Hat](https://newsroom.arm.com/blog/agentic-ai-infrastructure-arm-agi-cpu-red-hat)
+
+**客户状态必须分层**：
+
+| 客户/伙伴 | 可核实状态 | 可否当作订单 |
+|---|---|---|
+| Meta | Lead partner、共同开发，发布时明确为生产合作方 | 强需求证据，但未披露数量/金额/取消条款 |
+| Verda | 在 OCP EMEA 宣布将部署 AGI CPU，与 GB300/未来 Vera Rubin 系统一起用于 agent orchestration | 可视为部署承诺，仍无金额。[Verda](https://newsroom.arm.com/blog/ocp-arm-agi-cpu-meta-verda) |
+| ByteDance | COMPUTEX 渠道/管理层称已购买未披露数量 | 采购信号，金额和交付窗口未公开 |
+| Oracle Cloud Infrastructure | 官方表述为“加入生态、探索” | **不能**当成确定采购；官方措辞仅是 explore。[OCI](https://newsroom.arm.com/news/arm-agi-cpu-oracle-cloud-infrastructure-agentic-ai) |
+| Cerebras、Cloudflare、F5、OpenAI、Positron、Rebellions、SAP、SKT | 发布/生态支持或正在合作名单 | 不能逐一当成订单，必须等采购、实例或部署公告 |
+| Lenovo、Supermicro、ASRock Rack、Socionext | OEM/ODM/设计与供应伙伴 | 支持交付，不代表终端 sell-through |
+
+**需求与供给**：Q4 财报时管理层称 FY2027—FY2028 机会/需求由发布时约 10 亿美元上调至 **超过 20 亿美元**，但仍维持约 **10 亿美元“supply-backed”展望**并继续锁定晶圆/封测/内存。用行业约 **$1,250 ASP**估算，20 亿需求相当于约 160 万颗，10 亿可供应金额约 80 万颗；这只是数量级，不是 Arm 披露 ASP 或单位数。
+
+**利润率交叉验证**：行业估算传统服务器 IP 每颗给 Arm 带来的毛利约 $50，CSS 约 $100，而直接 AGI CPU 可接近 $500 毛利；若 ASP $1,250，则约 40%毛利，落在本报告 35%—45%初期区间。长期 ≥50%要求良率改善、ASP/产品复杂度提升、供应规模和渠道效率同时兑现。
+
+**主要技术疑问**：Arm 宣称同功耗机架性能超过最新 x86 2 倍，但尚缺广泛独立生产 benchmark；V3 核、较保守频率、双 die 和 12 通道内存相对 2026 年 AMD/Intel 新平台是否足以覆盖真实 agent workload，必须等量产系统验证。AGI 更像 GPU 集群的控制、数据预处理、网络服务及 CPU 推理层，不是取代高端 GPU 训练。
+
+### 7.4 DPU/SmartNIC、网络与 Chiplet 系统 IP：容易被漏掉的高价值小业务
+
+Arm 在 DPU/SmartNIC 的 CPU 控制核和系统 IP 中占据极高架构份额，公司称接近 100%。每个 GPU 机架需要网络、存储、安全、虚拟化卸载，AI 集群放大 DPU 数量与带宽；其价值随 400G→800G→1.6T 网络升级上升。代表性内容包括 Cortex/Neoverse 核、CMN、AMBA CHI/CHI C2C、CSA/FCSA、固件和安全模块。
+
+拟收购 DreamBig 将补充 MARS Chiplet Hub、Mercury AI-SuperNIC（12.8Tbps 级）及先进封装/互连团队，但截至研究日仍是**待完成交易**，不应将 DreamBig 销售计入 Arm FY2026。Chiplet Summit 2026 的 Arm 主题强调 converged AI datacenter 的开放 Chiplet；UCIe 3.0 的安全、可管理性和多厂商验证说明竞争焦点已从 PHY 带宽扩到协议、一致性、软件和认证。
+
+这项业务的短期约束是客户验证和标准碎片化而非晶圆：UCIe/UALink/PCIe/CXL 与 Nvidia NVLink 等专有体系并存；若客户只采用标准 PHY 而不用 Arm CMN/CHI，Arm 的内容量会下降。
+
+### 7.5 Lumex CSS、KleidiAI 与移动端 AI：最大收入池的提价层
+
+Lumex CSS（2025-09 发布）包含 Armv9.3 C1-Ultra/Pro/Premium CPU、C1 DSU、SME2、Mali G1-Ultra、SI L1/MMU L1 系统 IP 和 3nm 物理实现。官方称相对上代最高 **5× CPU AI 性能、3× 能效改善、2× 光追提升**；MediaTek 已公开配置，OPPO/vivo 在 2025 年第四季度首批采用，Q3 财报称前四大 Android 芯片/平台均在出货 CSS。[Lumex CSS](https://newsroom.arm.com/news/announcing-lumex-css-platform-ai-era)
+
+广义手机收入仍约 $1.97—2.21B，但 Lumex 新平台当期增量仅估 $0.10—0.20B；增长来自每台收费内容量和高端渗透，而不是手机台数。KleidiAI 已集成 PyTorch ExecuTorch、Google LiteRT、ONNX Runtime、MNN 等框架，其累计安装/部署口径超过 80 亿次；本身主要免费，却让 SME2 优化可被应用直接调用，形成从软件到 Armv9/CSS royalty 的价格传导。
+
+风险是 Apple 自研核、Qualcomm Oryon 等架构许可客户不必采用 Arm CPU CSS；Mali 也面对 Qualcomm/Apple/Imagination GPU。Arm ISA 仍收 royalty，但 CSS 的第二次“提价”并非覆盖所有高端设备。
+
+### 7.6 Zena CSS 与汽车 Physical AI：小收入、长锁定、慢兑现
+
+Zena 是基于 Armv9 Automotive Enhanced 的预集成/预验证平台：16 个 Cortex-A720AE、Cortex-R82AE Safety Island、Runtime Security Engine、TrustZone、CMN S3AE 和参考软件。Arm 称可把汽车开发周期缩短最多 12 个月、节约约 20%工程资源；产品“ASIL-D capable”是功能安全设计能力，**不等于每个客户整车/SoC 已取得 ASIL-D 认证**。[Zena CSS](https://newsroom.arm.com/news/arm-unveils-zena-css)
+
+Q1 财报披露首个 Zena design win，并称已与超过三分之一 OEM 深度接洽。传统汽车设计至量产通常 3—5 年，故未来一年主要是 license、虚拟平台、软件和认证里程碑，royalty 大规模贡献更可能在 FY2028 以后。它的重要性在于汽车 central compute 把原来分散的 MCU/域控制器整合到高 ASP SoC，单车 Arm 内容量可以从多个低价核提升到 1—3 颗高价值中央计算 SoC。
+
+### 7.7 Ethos-U85、Corstone/Orbis 与软件：潜力小产品
+
+Ethos-U85 是面向端侧 transformer 的 NPU IP，支持 128—2,048 MAC、最高 4 TOPS@1GHz，较 U55/U65 能效提升约 20%；Corstone-320 将 Cortex-M85、DMA-350、Mali-C55 ISP 和 Ethos-U85 组合为参考系统。[Ethos-U85](https://www.arm.com/products/silicon-ip-cpu/ethos/ethos-u85) 这些产品适合工业视觉、机器人、智能摄像机、语音和小模型，不直接受 GPU 数据中心建设拉动，却能在 Physical AI 端点产生大量、低单价 royalty。
+
+Performix 免费提供云端/agent 性能分析，KleidiAI 提供底层优化 kernel；直接收入接近零，但它们降低软件迁移成本、改善 Arm workload 性能并支持 AGI/Neoverse 销售。因此在估值模型中不能把软件下载量乘一个 SaaS 单价，也不能忽略其生态护城河价值。
+
+## 八、BOM、每 MW / rack / GPU / optical port 内容量与价格传导
+
+### 8.1 先区分“物理 BOM”与“Arm 经济内容量”
+
+Arm 的 IP/royalty 通常不是服务器采购清单上的独立元件，而是被包含在 CPU、DPU、手机 SoC 或汽车 SoC 的售价中。故以下采用两种口径：
+
+- **物理数量**：机架中真实 CPU、GPU、DPU、内存通道和网络端口数。
+- **Arm 经济内容量**：客户芯片 ASP 触发的 royalty 或直接 AGI CPU 销售价。除 AGI CPU 外，客户合同费率保密，均给区间而非伪精确点值。
+
+### 8.2 Arm AGI CPU 单颗与机架 BOM
+
+按行业初期 ASP 中枢 **$1,250/颗**构建的单颗 AGI CPU 经济模型如下。Arm 未披露 die size、晶圆成本、良率或封装报价，故为 D 级估算。
+
+| 单颗 AGI CPU 项目 | 金额估计 | 占 ASP | 说明/敏感项 |
+|---|---:|---:|---|
+| TSMC N3 双 compute die/晶圆与良率 | $300—430 | 24%—34% | 最大变量；双 die 降低超大单片良率风险，但增加互连/封装复杂度 |
+| 基板、封装、散热盖、测试 | $130—190 | 10%—15% | 高 I/O、96 条 PCIe 6.0、12 通道 DDR5 提高封装/测试要求 |
+| 第三方 PHY/IP、设计服务、NRE/掩膜摊销 | $90—150 | 7%—12% | Socionext/接口 PHY/EDA 等；随销量扩大摊薄 |
+| 物流、质保、渠道与库存准备 | $40—80 | 3%—6% | 纯 IP 模式过去几乎没有的成本 |
+| **总销售成本** | **$690—830** | **55%—66%** | 对应初期毛利率约 34%—45% |
+| **Arm 毛利** | **$420—560** | **34%—45%** | 与行业“约 $500/颗”估算相符；非公司披露 |
+
+DDR5 DIMM、OCP NIC、电源、主板、机箱和冷却属于**服务器/机架 BOM，不在 Arm CPU ASP 内**。12 条 DDR5-8800 通道使每个双节点 blade 至少需要 24 条 DIMM；内存供应不足会延迟整机出货，却不会直接增加 Arm 的单颗售价，除非稀缺性支持更高系统定价或客户优先配置。
+
+### 8.3 每机架、每 MW、每 GPU 与每端口真实内容量
+
+| 部署形态 | 真实物理数量 | Arm 收入/经济内容量 | 计算过程 | 置信度与限制 |
+|---|---|---:|---|---|
+| **AGI 36kW 风冷 rack** | 30 个 1OU blade × 2 CPU = **60 颗 AGI CPU**；8,160 核 | 以 $1,250 ASP 为 **$75,000/rack** | 60 × $1,250 | A（数量）/C（ASP）；不含 DIMM、NIC |
+| **AGI 200kW 液冷 rack** | **336 颗 CPU**；45,696 核 | **$420,000/rack** | 336 × $1,250 | A/C；Supermicro 设计，不代表所有客户配置 |
+| **AGI 每 MW IT 负载** | 风冷约 1,667 颗/MW；液冷约 1,680 颗/MW | **约 $2.08—2.10M/MW**，ASP $1,000—2,000 时为 $1.67—3.36M/MW | 60/36kW 或 336/200kW，再乘 ASP | A/C/D；未计 PUE，按 IT 功率而非园区总电力 |
+| **Nvidia GB200/GB300 NVL72 的 Grace CPU IP** | 官方参考架构 **36 Grace CPU / 72 GPU = 0.5 CPU/GPU** | 行业以传统 IP 约 $50、CSS 约 $100 毛利/CPU作代理：**$25—50/GPU；$1,800—3,600/rack** | 0.5 × $50—100 | B/C；不是 Nvidia 合同 royalty，且是毛利代理而非 GAAP 收入 |
+| **Vera 独立 CPU rack** | Nvidia 公开 rack 最高约 **256 Vera CPU** | **$12,800—25,600/rack** IP 经济代理 | 256 × $50—100 | B/C；Vera 使用自研 Olympus Arm 核，真实架构许可费保密 |
+| **GB300 NVL72 的 BlueField-3 DPU** | **18 DPU / 72 GPU = 0.25 DPU/GPU**；每 DPU 双 400G，约 36 个 400G 端口/rack | 若 Arm royalty $5—20/DPU：**$90—360/rack、$1.25—5/GPU、$2.5—10/400G port** | 18 × $5—20；再除 GPU/端口 | B/D；费率为模型；Arm 对光模块、DSP、激光器的直接内容量为 **$0** |
+| **高端手机 SoC** | 1 颗主 SoC/手机 | 估 **$1.5—5/机** | SoC 约 $40—180 × 费率/固定 royalty；CSS/Armv9提高内容 | C/D；架构许可客户与 CSS 客户差异大 |
+| **中央汽车 SoC** | 约 1—3 颗高算力 SoC/车 | 估 **$2—15/SoC，即 $2—45/车** | SoC 约 $80—600；ASIL、安全岛、CPU/系统 IP叠加 | C/D；大规模 Zena royalty 尚未开始 |
+| **Ethos/Corstone 边缘芯片** | 1 个 NPU/参考子系统/SoC | 估 **$0.05—1/芯片** | 低价 MCU/MPU 的 IP 固定或比例 royalty | D；数量潜力大、单价低 |
+| **高端 AI Chiplet/系统 IP** | 每 package 1 套互连/一致性 IP | 项目 license 数百万美元 + 估 **$5—25/package** royalty | CHI/CMN/CSA/PHY 组合；按客户采用层级变化 | C/D；不能在未有客户公告时套到 Nvidia/AMD |
+
+**每 optical port 的结论**：Arm 不销售光模块、DSP、硅光引擎或连接器，因此光学链条的直接 BOM 为 0。只有当端口连接的 DPU/SmartNIC 采用 Arm CPU/系统 IP 时，才有上述 **$2.5—10/400G 端口**的间接经济内容量；升级到 800G/1.6T 不会自动按带宽线性翻倍，必须观察 DPU ASP、核数和 royalty 合同。
+
+### 8.4 价格传导链
+
+1. **传统 IP/CSS**：Arm 研发/验证投入 → 客户支付 license/NRE → 客户将 IP 集成到 SoC → 代工/封测/内存成本形成芯片 ASP → Arm 按 ASP 比例或固定单价收 royalty。若合同为 ASP 比例，先进节点和更多功能推高芯片售价可自动传导；若固定单价，则需新架构/CSS 升级重新定价。
+2. **AGI CPU**：TSMC N3 晶圆 + 封装测试 + 第三方 IP/设计服务 → Arm 芯片成本 → Arm 对 OEM/云厂 CPU ASP → 服务器厂加入 DIMM/NIC/主板/冷却 → 云厂以实例/算力收费。供应紧张时 Arm 可优先高价/战略客户，但长期面对 x86 和云厂自研 CPU 的 TCO 上限。
+3. **汽车 CSS**：Arm license/安全 IP → 芯片商 NRE/认证 → 汽车 SoC ASP → Tier 1 ECU/域控制器 → 整车。价格溢价来自减少 12 个月开发时间、约 20%工程量和复用安全软件，而非单纯核面积。
+4. **Chiplet/网络**：Arm 互连/一致性 IP → ASIC/Chiplet 设计 → UCIe/封装验证 → DPU/SuperNIC/AI package → 机架网络。多厂商互操作和认证越成熟，采用面越大；标准化也可能压低单一 IP 供应商费率。
+
+## 九、当前产能、供应链采用与认证阶段
+
+### 9.1 当前状态表
+
+| 产品/业务 | 当前“产能能力”（美元） | 供应链采用 | 当前认证/验证阶段 | 判断 |
+|---|---:|---|---|---|
+| 全部 IP/license/royalty | FY2026 已实现 **$4.92B**；Q4 年化收入约 $5.96B | 前五客户 57%；Arm China 16%；超过 7 万企业使用 Neoverse | PDK、tape-out、客户 SoC 认证分散进行 | 产能主要是工程交付，短期收入受签约/确认而非 wafer 限制 |
+| Neoverse/CSS | 当前支持约 **$0.8—1.0B/年**数据中心 IP 收入能力（模型） | 至少约 23 项 CSS 许可、12+家公司；5 项已出货、2 家第二代；Cobalt 200 等公开 | Arm SystemReady、CCA、SVE2、客户云实例验证；各客户状态不同 | 采用强，royalty 由客户量产产能决定 |
+| **AGI CPU** | 管理层当前可供应支持约 **$1.0B，横跨 FY2027—FY2028**；按 $1,250 约 80 万颗 | Meta lead；Verda 部署；ByteDance 采购信号；OCI/其他多为生态或探索 | OCP DC-MHS 参考设计；目标支持 Arm SystemReady；Red Hat/OpenShift 栈；量产系统预期 CY2026 Q4 | 可见需求 >$2B、供给覆盖 <50%，是唯一明确实物紧缺项 |
+| DPU/SmartNIC/系统 IP | 约 **$0.2—0.3B/年**可支持收入（模型） | Arm 自称 DPU/SmartNIC 架构份额接近 100%；Nvidia、云厂/网络芯片广泛采用 Arm 核 | PCIe/CXL、OCP NIC、客户安全/虚拟化验证 | IP 采用成熟；高带宽系统 IP 是增量 |
+| Lumex CSS | 新平台约 **$0.15—0.25B/年**收入承载能力（模型） | MediaTek 公开配置；OPPO/vivo 首发；前四大 Android 平台已有 CSS 出货 | Android、主要 AI framework、3nm 物理实现验证 | 无实物产能限制，受客户高端 SoC 出货限制 |
+| Zena CSS | 目前 **<$0.1B/年**直接 Zena 收入能力；广义汽车 $0.34—0.49B | 首个 design win；与 >1/3 OEM 接洽；Arm 架构覆盖几乎所有主要 OEM | ASIL-D capable；SOAFEE blueprint、SystemReady Automotive；整车/SoC 认证仍由客户完成 | 处设计与验证期，非供不应求 |
+| Ethos-U85/Corstone | 约 **$0.05—0.12B/年** | 统一工具链、Paddle/ExecuTorch 等生态扩展，客户项目分散 | TOSA、工具链、Corstone 参考设计；终端认证因行业而异 | 工程/渠道采用是瓶颈，非 wafer |
+| Chiplet/CSA/CHI/CMN | 约 **$0.1—0.2B/年**直接相关收入（模型） | Arm Total Design、多个代工厂；云端和网络 SoC 已用 CMN/CHI | CSA/FCSA、CHI C2C、UCIe 互操作/安全/管理仍推进 | DreamBig 尚未交割，不能将其产能计入已完成 |
+| KleidiAI/Performix | 直接收入能力 **<$0.05B/年** | KleidiAI 累计采用/安装口径 >80 亿；主要框架集成；Performix 获 Microsoft、MongoDB、Redis、SAP 支持 | 软件兼容和性能验证，非硬件认证 | 生态成熟度高、直接变现低 |
+
+**“$1B AGI 产能”的含义**：管理层措辞是 supply-backed outlook，时间跨 FY2027 与 FY2028；不是当前单年满产收入，也不是已完成晶圆。把其除以 $1,250 得 80 万颗仅为转换尺度。真实数量取决于 SKU ASP、N3 良率、封装、DDR5 与客户系统认证。
+
+### 9.2 AGI 关键供应链节点
+
+| 节点 | 当前状态 | 未来 12 个月验证点 | 若失败的后果 |
+|---|---|---|---|
+| TSMC 3nm 晶圆 | 官方确认 3nm；Arm 管理层持续争取更多供给 | wafer allocation、良率、双 die 分档、是否增加长期预付款 | 交付量低于 $1B 供应展望、毛利率低于 35% |
+| 设计/量产服务 | Socionext 等参与供应支持 | tape-out 后量产爬坡和多 SKU 稳定性 | 延迟 CY2026 Q4 系统上市 |
+| 封装与测试 | 未披露具体 OSAT/封装形式和承诺量 | 高 I/O 基板、测试时间、热设计是否可规模化 | 良率/成本恶化，限制每 MW 密度 |
+| DDR5-8800 | 每 CPU 12 通道、>800GB/s | DIMM 可获得量、认证和整机配置 | 即使 CPU 有货也无法完整交付服务器 |
+| OEM/ODM | Lenovo、Supermicro、ASRock Rack 等支持 | 量产 SKU、报价、交期、全球服务能力 | 生态名单无法转化为收入 |
+| 软件/认证 | Red Hat/OpenShift 支持；SystemReady 为目标 | 公开兼容矩阵、SystemReady 证书、独立 benchmark | 企业迁移风险上升，客户延后部署 |
+
+## 十、一年后三情景：收入、增速、AI 重要性、紧急性、供需与溢价
+
+### 10.1 情景定义
+
+| 情景 | 宏观/需求 | IP 转化 | AGI 供给与延期/取消假设 | 概率性质 |
+|---|---|---|---|---|
+| 基准 | AI 基建延续高增但客户优化资本开支；手机低个位数出货增长 | ACV/RPO 平稳，CSS 按既有项目量产 | 有效需求转化约 50%，延期/取消 **20%**；未来 12 月收入受初期系统爬坡限制 | 最可执行 |
+| 乐观 | agentic inference、CPU 控制平面和 DPU需求超预期 | CSS 许可补充、Armv9/royalty rate 提升加快 | 有效需求转化约 70%，延期/取消 **10%**；获得额外 N3/封装/DDR5 | 需要多项外部条件 |
+| 极度乐观 | 云厂同时扩 CPU、GPU和网络；Arm 抢占 x86/自研 CPU预算 | 新客户快速采用 CSS，license 和 royalty 同时高增长 | 有效需求转化约 85%，延期/取消 **5%**；产能大幅扩张且系统一次通过认证 | 低概率上限，不是目标价基准 |
+
+### 10.2 各关键产品未来 12 个月收入与四维评分
+
+收入为 2026-07-01—2027-06-30 对 Arm 的贡献；重叠层不可相加。增速按当前贡献区间中点估算，新产品以“新增”表示。
+
+| 产品/业务 | 情景 | 未来一年收入 | 收入增速 | AI重要性 | 紧急性 | 供需紧张 | 垄断/溢价 | 核心假设 |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| Neoverse CPU/CSS IP | 基准 | **$0.78B** | 约 +30% | 5 | 4 | 4 | 4 | 已签 CSS 按计划量产、数据中心 royalty 增速正常化 |
+|  | 乐观 | **$0.98B** | 约 +60% | 5 | 5 | 5 | 4 | Cobalt/Graviton/Grace及新客户共同放量 |
+|  | 极度乐观 | **$1.20B** | 约 +95% | 5 | 5 | 5 | 5 | Arm CPU架构份额和单芯片内容量同步跃升 |
+| **AGI CPU** | 基准 | **$0.25B** | 新增 | 5 | 5 | 4 | 3 | 约 20 万颗@$1,250；Q4’26上市后温和爬坡 |
+|  | 乐观 | **$0.65B** | 新增 | 5 | 5 | 5 | 4 | 约 46 万颗@$1,400；Meta/Verda及新增客户规模部署 |
+|  | 极度乐观 | **$1.20B** | 新增 | 5 | 5 | 5 | 4 | 约 75 万颗@$1,600；供给和独立性能均达标 |
+| DPU/SmartNIC/网络 IP | 基准 | **$0.26B** | 约 +30% | 5 | 5 | 4 | 4 | 400G/800G 机架继续增长，Arm 核份额稳定 |
+|  | 乐观 | **$0.38B** | 约 +80% | 5 | 5 | 5 | 4 | DPU/GPU 比例和高端系统 IP内容量提升 |
+|  | 极度乐观 | **$0.55B** | 约 +140% | 5 | 5 | 5 | 5 | DreamBig交割、SuperNIC/Chiplet 快速导入 |
+| Armv9/CSS 增量收费层 | 基准 | **$0.55B** | 约 +30% | 5 | 4 | 3 | 4 | CSS royalty 升至 royalty mix 的约两成 |
+|  | 乐观 | **$0.75B** | 约 +80% | 5 | 5 | 4 | 4 | 多终端从 v9 快速迁移到 CSS |
+|  | 极度乐观 | **$1.00B** | 约 +140% | 5 | 5 | 5 | 5 | 管理层“数年内占 royalty 一半”提前兑现 |
+| Lumex CSS/高端移动增量 | 基准 | **$0.25B** | 约 +65% | 3 | 4 | 3 | 4 | 主要 Android 旗舰正常换代；广义手机收入约 $2.20B |
+|  | 乐观 | **$0.40B** | 约 +165% | 4 | 5 | 4 | 4 | SME2/KleidiAI带动更多 CSS 采用；广义手机约 $2.45B |
+|  | 极度乐观 | **$0.60B** | 约 +300% | 4 | 5 | 5 | 5 | CSS 快速扩大至高端 PC/多家自研 SoC；广义手机约 $2.75B |
+| Zena/广义汽车 Physical AI | 基准 | **$0.45B** | 约 +8% | 4 | 3 | 2 | 4 | 收入仍以旧汽车 IP+Zena license 为主，Zena royalty很小 |
+|  | 乐观 | **$0.60B** | 约 +45% | 4 | 4 | 3 | 4 | 多家 OEM/芯片商进入 tape-out，license 提前确认 |
+|  | 极度乐观 | **$0.80B** | 约 +95% | 5 | 5 | 4 | 5 | 中央计算 SoC提前量产；受汽车周期限制，概率低 |
+| Ethos-U85/Corstone/Orbis | 基准 | **$0.12B** | 约 +40% | 3 | 3 | 2 | 3 | 工业/摄像头/机器人设计稳步转量产 |
+|  | 乐观 | **$0.20B** | 约 +135% | 4 | 4 | 3 | 4 | 小模型端侧部署扩张，Flexible Access转正式许可 |
+|  | 极度乐观 | **$0.32B** | 约 +275% | 4 | 5 | 4 | 4 | Physical AI终端放量且 Ethos成为标准 NPU IP |
+| Chiplet/CSA/CHI/CMN | 基准 | **$0.16B** | 约 +25% | 5 | 4 | 3 | 3 | 现有系统 IP/Total Design增长，DreamBig贡献有限 |
+|  | 乐观 | **$0.25B** | 约 +90% | 5 | 5 | 4 | 4 | DreamBig按期交割，UCIe/FCSA项目进入设计 |
+|  | 极度乐观 | **$0.40B** | 约 +200% | 5 | 5 | 5 | 4 | 开放 Arm Chiplet 成为多家 AI ASIC默认方案 |
+| KleidiAI/Performix软件直接收入 | 基准 | **<$0.03B** | 不具意义 | 4 | 4 | 1 | 3 | 继续免费，价值通过 royalty体现 |
+|  | 乐观 | **$0.07B** | 新商业化 | 4 | 5 | 2 | 3 | 企业支持/工具服务开始收费，但不损害生态 |
+|  | 极度乐观 | **$0.15B** | 新商业化 | 5 | 5 | 3 | 4 | 形成付费优化/支持层；目前无公司指引支持 |
+
+**重要防重叠说明**：Neoverse、DPU、Lumex、Zena 是终端/产品收入；“Armv9/CSS 增量收费层”是这些产品内部的变现升级，不可再相加。KleidiAI/Performix 的主要价值已体现在其他产品采用，不宜另行给高倍数收入。
+
+### 10.3 一年后产能能力、采用和认证三情景
+
+以下“产能”是 2027-06-30 时点可支持的年化收入：AGI 为实物供给；其余 IP 是工程交付、客户量产与 royalty 承载能力。
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| Neoverse/CSS | **$1.0B/年**；约 26—30 项 CSS许可、7—8 项出货；更多客户完成 SystemReady/CCA/SVE2生产验证 | **$1.3B/年**；30—36 项许可、10—12 项出货；第二代客户≥4家 | **$1.6B/年**；40+项许可、15+项出货；成为多数新建云 CPU/AI控制平面的默认基础 |
+| **AGI CPU** | **$0.8B/年**退出产能，约 64 万颗@$1,250；3—5 个明确部署客户、2+ OEM量产；SystemReady/Red Hat兼容完成 | **$1.4B/年**，约 100 万颗@$1,400；8—12 个部署客户、3—4 OEM；主要 Linux/虚拟化/云镜像通过 | **$2.1B/年**，约 130 万颗@$1,600；12+客户、多区域云实例；广泛企业认证和第二代 roadmap明确 |
+| DPU/SmartNIC/网络 IP | **$0.35B/年**；Arm核份额保持，400/800G DPU放量；PCIe/CXL/OCP验证 | **$0.50B/年**；更高核数与CMN/CHI采用；FCSA/UCIe互操作样片 | **$0.70B/年**；Mercury/开放Chiplet方案量产；800G/1.6T网络标准平台化 |
+| Lumex CSS | **$0.35B/年**平台收入能力；前四大Android持续，SME2在主流框架稳定 | **$0.55B/年**；CSS扩至更多高端手机/PC；第二代Lumex签约 | **$0.80B/年**；大部分Android旗舰采用完整CSS；应用普遍调用SME2/KleidiAI |
+| Zena CSS | 直接 **$0.12B/年**；3—5 个design win；客户完成ISO 26262安全工作产品/虚拟验证，量产royalty仍少 | **$0.20B/年**；6—10 个design win、2—3 个tape-out；SOAFEE/SystemReady Automotive生态成熟 | **$0.35B/年**；10+ design win、首批量产SoC；ASIL-D相关客户认证按车型完成 |
+| Ethos/Corstone/Orbis | **$0.15B/年**；工业/视觉客户稳步量产；TOSA/工具链兼容 | **$0.25B/年**；主流edge framework和更多参考设计认证 | **$0.40B/年**；机器人/端侧SLM形成标准子系统需求 |
+| Chiplet/CSA/CHI/CMN | **$0.20B/年**；DreamBig交割后整合，UCIe 3.0互操作测试 | **$0.35B/年**；多家AI ASIC进入tape-out，FCSA/CHI C2C验证 | **$0.60B/年**；多供应商Arm Chiplet量产，安全/管理/一致性认证完成 |
+| KleidiAI/Performix | 直接 **<$0.05B/年**；继续免费、框架覆盖扩大 | **$0.10B/年**；出现企业支持/优化服务，软件仍以拉动硬件为主 | **$0.20B/年**；形成可收费开发/运维层；目前证据最弱 |
+
+汽车“ASIL-D capable”、服务器“targeting SystemReady”、UCIe“符合规范”都不等于客户最终产品已经认证。本报告把**IP 可设计 → 客户样片 → 系统兼容 → 量产/车型认证**作为四个独立阶段，防止把产品功能列表当成供应链采用。
+
+## 十一、用真实订单代理、供给与取消假设推演未来一年公司增速
+
+### 11.1 可见订单覆盖到底有多少
+
+| 可见性来源 | 已披露金额/状态 | 能覆盖什么 | 不能证明什么 |
+|---|---:|---|---|
+| RPO | **$2.071B**；未来12月约 $0.580B | 已签且满足会计定义的 license 履约义务 | 不含未来 royalty；不是总公司 backlog；不等于都不可取消 |
+| ACV | **$1.660B，+22%** | 承诺许可费的年化运行水平 | 不是当季 bookings，不含 royalty，不能直接除以收入算 B2B |
+| 既有 royalty 合同 | 公司称 2027—2031 forecast royalty 约 70%来自已签架构 | 对 ISA/IP 采用有较高可见度 | 不保证终端芯片数量、ASP或云资本开支 |
+| AGI CPU 可见需求 | **>$2B，FY2027—FY2028** | 客户兴趣、合作和潜在采购规模 | 未披露客户逐笔金额、不可取消PO、定金、交期或取消条款 |
+| AGI supply-backed | 约 **$1B，跨 FY2027—FY2028** | 当前管理层认为供应链能支持的金额 | 不是单年收入，也不保证全部按时交付/验收 |
+
+因此，最硬的 license 未来 12 月可见收入只有约 5.8 亿美元；更大的 royalty 取决于客户芯片 sell-through，AGI 则处于“需求超过供给、但订单质量不透明”的早期阶段。**禁止把 >20 亿美元需求直接加到 FY2027 收入。**
+
+### 11.2 AGI 需求—供给—交付桥
+
+| 情景 | 毛需求/机会池 | 订单质量与延期/取消 | 供给上限假设 | 未来12月可确认收入 | 关键客户/交付窗口 |
+|---|---:|---:|---:|---:|---|
+| 基准 | >$2.0B（官方下限） | 约50%进入明确部署；20%延期/取消 | 官方约$1.0B跨两财年，不假设大幅新增 | **$0.25B** | Meta/Verda与少量ByteDance；CY2026 Q4起爬坡 |
+| 乐观 | $2.5B（模型） | 约70%进入部署；10%延期/取消 | 追加至 $1.4B年化退出能力 | **$0.65B** | 8—12 客户；OCI从探索转采购、OEM多SKU量产 |
+| 极度乐观 | $3.0B+（模型） | 约85%进入部署；5%延期/取消 | 追加至 $2.1B年化退出能力 | **$1.20B** | Meta及多家云厂规模采购；Q4’26一次通过认证 |
+
+取消/延期率是为解决“不披露取消率”而设的压力测试，不是管理层数据。对 AGI 而言，“延期”比永久取消更可能：客户可能因 DDR5、主板、软件认证或 GPU 集群节奏把订单从 FY2027 推到 FY2028。
+
+### 11.3 全公司未来增速桥
+
+FY2027 是最可比的报告期；未来 12 个月则多包含一个 FY2028 季度。AGI 作为新产品未来可能被单列，表中为分析分类。
+
+| 情景 | FY2027 Royalty | FY2027 License/other | FY2027 AGI产品 | FY2027 总收入 | FY2027 同比 | 2026-07至2027-06 总收入 | 核心触发条件 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| **基准** | $3.14B（+20%） | $2.70B（+17%） | $0.10B | **$5.94B** | **+21%** | **约 $6.20B，较FY2026 +26%** | Q1指引兑现；RPO不继续明显恶化；AGI小规模Q4确认 |
+| **乐观** | $3.35B（+28%） | $2.90B（+26%） | $0.35B | **$6.60B** | **+34%** | **约 $7.15B，+45%** | 数据中心/CSS加速；新增AGI供给；手机CSS提价 |
+| **极度乐观** | $3.66B（+40%） | $3.15B（+37%） | $0.80B | **$7.61B** | **+55%** | **约 $8.40B，+71%** | AGI大规模交付、license签约强补充、royalty多终端同步加速 |
+
+基准与公司 FY2027 Q1 约 +20%指引一致。极度乐观需要 AGI 在不足一年内跨过供给、OEM、软件、客户验收四道门槛，并假定 RPO 下降只是确认时点而非新签约疲弱；不适合作为估值基准。
+
+## 十二、行业会议、技术报告与渠道验证
+
+### 12.1 过去半年高价值现场/技术信号
+
+| 来源/时间 | 信号 | 对收入预测的意义 | 证据权重 |
+|---|---|---|---|
+| Arm Everywhere，2026-03-24 | AGI CPU首发、Meta lead partner、从IP进入硅片；公布机架密度 | 证明产品和战略，不能证明独立性能或订单金额 | A |
+| OCP EMEA，2026-04-29 | Verda宣布部署；FCSA、开放系统和远程管理议题 | 首个具名部署强于一般生态支持；开放标准降低采用门槛 | A/B；[OCP EMEA](https://www.opencompute.org/events/past-events/2026-ocp-emea-summit) |
+| COMPUTEX，2026-06 | ASRock Rack展示首批AGI服务器；ByteDance采购信号、OCI加入生态 | 证明硬件原型和渠道建设；OCI仍是explore而非订单 | B/C；[ASRock Rack现场](https://www.servethehome.com/asrock-rack-had-one-of-the-first-arm-agi-servers-at-computex-2026/) |
+| Chiplet Summit 2026 | Arm讨论converged AI datacenter开放Chiplet；UCIe 3.0强调安全、管理、多厂商验证 | 支持DreamBig/CSA/CHI方向，但标准竞争仍未结束 | B；见本地会议资料 |
+| ISCA 2026 | 数据移动、内存、cache/coherence成为AI系统焦点 | 支持Arm从CPU核扩展到CMN/CHI和rack control plane | B；见本地会议资料 |
+| RISC-V 2025年报及2026规范 | Server Platform v1.0已于2026-05 ratified，服务器软件标准成熟度提高 | RISC-V从长期概念变成中期替代风险，但12个月内仍缺高端量产生态 | A/B；[RISC-V Server Platform](https://docs.riscv.org/reference/server-platform/_attachments/riscv-server-platform.pdf) |
+
+### 12.2 业内论坛/媒体传言的使用边界
+
+ServeTheHome 在 COMPUTEX 看到了 ASRock Rack 实机/原型，这是可核对的渠道进展；但公开资料尚未给出量产报价、交付周期或独立 benchmark。硬件论坛的主要质疑集中于：V3 核代际相对 2026 x86 是否偏旧、136 核/12 通道能否在非高度并行 workload 获胜、Arm“AGI”命名是否营销过度、以及 Arm 与现有 Neoverse 客户的渠道冲突。这些是**合理待证伪问题，不是负面事实**。
+
+本报告没有把论坛中的“OpenAI/Oracle已经大单采购”“AGI 已量产”之类转述纳入订单。官方截至 2026-06 对 OCI 的措辞仍是 explore；首批系统预期 CY2026 Q4，故当前最合理阶段是**原型/生态认证 → 初始生产**，不是全面量产。
+
+## 十三、竞争格局、替代方案与客户切换成本
+
+### 13.1 AGI CPU 与主流服务器 CPU
+
+| 方案 | 2026 代表规格/优势 | 相对 AGI 的优势 | 相对 AGI 的弱点/Arm机会 |
+|---|---|---|---|
+| **Arm AGI CPU** | 最高136 V3核、12×DDR5-8800、96×PCIe6/CXL3、300W营销口径；高机架核密度 | 开放DDR/CXL、Arm云原生生态、直接可买且比自研快 | 新供应商；独立性能/可用性未证；TDP规格口径有差异 |
+| AMD EPYC “Venice” | TSMC 2nm，最高约256核；成熟x86、平台/渠道与高单核性能 | 无需重编译，企业兼容、独立benchmark和供应体系成熟 | 更高功耗/成本可能给高密度Arm机会；agent并发不一定需要超宽核 |
+| Intel Xeon 6+/Clearwater Forest | Intel 18A、最高约288 E-core、约450W级；x86软件/企业装机基础 | 平台、OEM、支持、虚拟化和采购关系最深 | 能效与执行历史是Arm切入点 |
+| Nvidia Vera | 88个自研Olympus Arm核/176线程、最高1.5TB LPDDR5X、1.2TB/s、CXL3.1；与GPU/DPU/NVLink垂直整合 | 在Vera Rubin机架有GPU互连和CUDA系统锁定 | 专有平台、通用CPU开放性较低；AGI可服务异构GPU/加速器 |
+| 云厂自研Arm CPU | AWS Graviton5约192核、Azure Cobalt200 132 V3核、Google Axion等 | 针对自家云优化、内部规模经济和服务整合 | 只在各自云可得；仍向Arm付架构/IP royalty，扩大Arm总生态 |
+| Ampere/AmpereOne | 商用Arm服务器经验、最高192核等SKU | 既有部署、Arm原生软件、商用CPU渠道 | 资本/规模较弱；与Arm直接硅片形成竞争/合作混合关系 |
+
+**新技术是否会成为主流**：Arm 服务器 ISA 已经是主流架构之一；Neoverse/CSS 在云厂自研芯片中有明确验证。AGI CPU 作为“独立商用整颗芯片”尚未成为主流，未来 12 个月要靠公开云实例、独立性能/TCO和稳定供货证明。其最大市场不是全面替代 GPU 或 x86，而是 AI 集群的高并发控制、数据处理、网络服务和 CPU inference。
+
+### 13.2 每个关键业务的竞争与替代
+
+| Arm业务 | 主要竞争对手/替代 | Arm优势 | 风险/客户替换路径 |
+|---|---|---|---|
+| Neoverse/CSS | Intel/AMD x86；RISC-V；客户自研非Arm核；Ampere/Nvidia自研Arm核 | ISA生态、能效、云原生、完整CSS、广泛foundry/EDA支持 | 大客户可用Architecture License减少CSS内容量；RISC-V标准成熟后消除royalty |
+| AGI CPU | AMD EPYC、Intel Xeon、Nvidia Vera、AmpereOne、云厂自研CPU | 无需客户自研、开放CXL/DDR、机架密度、Arm软件生态 | 性能不及宣传、供应不足、毛利低、与IP客户冲突；x86替代最直接 |
+| DPU/SmartNIC | Nvidia BlueField、AMD Pensando、Intel IPU、Broadcom/Marvell/云厂ASIC | 几乎所有DPU控制面已经熟悉Arm，CPU核和系统IP组合成熟 | 厂商可用RISC-V控制核或自研微控制器；网络数据面价值由专用加速器占据 |
+| Lumex CSS | Apple自研核/GPU、Qualcomm Oryon、Imagination GPU、RISC-V、客户自研NPU | Android生态、Armv9/SME2/KleidiAI、3nm物理实现、快速上市 | Architecture License客户仍付ISA royalty但绕开CPU CSS；Mali不具垄断 |
+| Zena/汽车 | Nvidia DRIVE Thor、Qualcomm Snapdragon Ride、Mobileye、Renesas/NXP/Infineon、RISC-V | 几乎所有OEM已有Arm软件；ASIL-capable子系统、安全岛、cloud-to-car ISA一致 | 汽车周期慢；功能安全责任在整系统；中央计算可能采用x86/RISC-V或专有NPU |
+| Ethos/Corstone | Synopsys ARC、Cadence Tensilica、CEVA、厂商自研NPU、RISC-V+NPU | CPU+NPU+参考系统和统一工具链；低开发成本 | NPU算力小、端侧模型变化快；客户可能只用Arm CPU而自研NPU |
+| Chiplet/系统IP | Synopsys、Cadence、Alphawave/Marvell接口IP；UCIe通用生态；Nvidia NVLink、AMD Infinity等专有互连 | AMBA/CHI一致性与Arm CPU天然结合、Total Design生态 | 标准PHY商品化压价；客户使用UCIe但不用Arm协议/CMN；多厂商验证失败 |
+| KleidiAI/Performix | CUDA、oneAPI、x86优化库、厂商自有编译器/分析器、RISC-V工具链 | 免费、跨云到边、直接嵌入主流framework | 免费软件难直接变现；优化不及CUDA/x86会削弱硬件采用 |
+
+### 13.3 客户切换成本
+
+| 切换层级 | 典型时间/成本 | Arm锁定强度 | 说明 |
+|---|---|---:|---|
+| 云原生应用从x86迁到Arm | 约 6—18 个月，取决于专有二进制、观测/运维和性能调优 | 3/5 | Linux/容器源代码可重编译，但企业认证和第三方软件是实际阻力 |
+| SoC从Arm CPU IP换到RISC-V/自研核 | 约 2—4 年，数千万至数亿美元NRE | 5/5 | 需重做CPU、验证、编译器、OS、固件、性能和安全；已量产产品更难换 |
+| 从单Arm IP升级/退出CSS | 约 1—3 年 | 4/5 | CSS缩短开发但提高依赖；Architecture License客户切换回自研Arm核较容易 |
+| 云厂自研CPU改买AGI或反向切回自研 | 约 2—4 年 | 3/5 | 工作负载仍是Arm，软件切换较低；供应链、TCO和差异化决定硬件选择 |
+| 汽车平台切换ISA/CSS | 约 5—10 年、跨车型/安全认证 | 5/5 | 功能安全、AUTOSAR/SOAFEE、供应商和售后生命周期形成最高锁定 |
+| DPU/SmartNIC控制核切换 | 约 2—3 年 | 4/5 | 数据面可保持，固件、安全、驱动和虚拟化栈需重写 |
+
+RISC-V 是最重要的长期免 royalty 替代。2026-05 Server Platform v1.0 已 ratified，说明规范风险正在下降；但高性能核、RAS、企业固件、OEM支持和云生产验证仍落后。因此未来 12 个月 RISC-V 更可能先侵蚀低端 MCU/控制核，3—5 年后才对高端服务器 royalty 构成实质威胁。
+
+## 十四、风险、催化剂与可证伪监控清单
+
+### 14.1 主要风险排序
+
+1. **估值风险（极高）**：70× TTM PS、149× forward PE 对增长小幅失误都高度敏感；FY2031 目标全部实现后静态估值仍不便宜。
+2. **AGI 执行/毛利风险（高）**：从 97% IP 毛利进入约 35%—45%初期硅片毛利；任何 N3 良率、封装、DDR5、库存或质保问题都会侵蚀利润和现金。
+3. **渠道冲突（高）**：Arm 直接与 Nvidia、Ampere和云厂自研CPU竞争；客户可能减少CSS采用、转Architecture License甚至加速RISC-V。
+4. **客户/关联方集中（高）**：前五客户57%、Arm China 16%、关联方30.5%；SoftBank 86.4%控制和大量质押影响治理、流通盘及关联项目定价。
+5. **RPO补充不足（中高）**：FY2026 Q4 RPO同比-7%，若ACV增速也持续下行，可能意味着license增长在未来几个季度失速。
+6. **AI叙事错配（中高）**：手机仍占约40%—45%，AGI尚无收入；GPU资本开支增长不等于Arm收入同比例增长。
+7. **竞争/替代（中高）**：AMD/Intel 2026新平台、Nvidia Vera封闭整合、云厂自研和RISC-V共同限制定价。
+8. **出口与地缘（中）**：Arm China治理/回款、美国/英国对高性能IP或芯片出口规则可能限制中国许可或AGI销售。
+9. **会计与稀释（中）**：SBC占收入21.4%，合同资产/应收合计占收入52.8%；non-GAAP EPS可能高估普通股东经济收益。
+
+### 14.2 未来 12 个月催化剂
+
+- 2026-07-29 FY2027 Q1：收入是否达到 $1.21—1.31B；ACV/RPO是否重新增长；数据中心royalty能否继续接近翻倍。
+- 2026年Q3—Q4：DreamBig是否完成监管审批；AGI是否披露正式SKU价格、wafer/封装供给和具名采购数量。
+- 2026年Q4：首批AGI生产系统、SystemReady/Red Hat兼容矩阵、独立benchmark和云实例上线。
+- FY2027 Q4：AGI首次收入及毛利；是否仍能维持IP高毛利/费用纪律。
+- Lumex第二代和更多CSS客户；Zena从design win进入tape-out/认证；UCIe/CSA多厂商chiplet验证。
+
+### 14.3 可证伪阈值
+
+| 观察指标 | 基准情景支持 | 负面证伪 | 乐观确认 |
+|---|---|---|---|
+| ACV / RPO | ACV同比≥15%，RPO企稳 | ACV增速<10%且RPO连续两季同比<-10% | ACV同比>25%、RPO恢复同比增长 |
+| 数据中心royalty | 同比>50% | 连续两季低于25% | 持续>100% |
+| AGI供给 | 2026Q4系统可用，2027-06年化>$0.8B | 上市推迟至2027、无独立benchmark或毛利<30% | 新增供给使年化>$1.4B、多个云实例上线 |
+| AGI订单质量 | ≥3个具名部署/采购客户 | 仍只有生态“支持”，无采购金额/实例 | 8+部署客户、披露不可取消订单/预付款 |
+| CSS渗透 | 2027-06许可26—30、出货7—8 | 许可增长停滞、出货仍≤5 | 许可>30、出货≥10、第二代≥4 |
+| Arm China | 回款与坏账准备稳定 | 应收上升、准备率继续恶化、收入骤降 | 应收下降且外部第三方收入增速超过关联方 |
+| SBC | 占收入向<20%下降 | 持续>22%且股数增长 | 收入增速明显高于SBC/股数增速 |
+
+## 十五、最终投资判断
+
+Arm 的核心资产不是某一颗芯片，而是“**统一 ISA + 处理器/系统 IP + CSS + 软件生态**”产生的全球转换成本。FY2026 已证明 Armv9、CSS 和数据中心可以同时推高 royalty rate 与芯片内容量；Neoverse、DPU和Lumex是已经开始兑现的增长，Zena、Ethos/Corstone和Chiplet是容易被忽略的长期期权。
+
+AGI CPU 则是收益/风险分布的决定性变化：按当前供给支持约10亿美元和可见需求超20亿美元，短期确有供不应求；但这些不是标准 backlog，且首批收入、独立性能和硬件毛利尚未验证。基准情景给 FY2027 **约59.4亿美元、+21%**，未来12个月约 **62亿美元**；乐观为 FY2027 **66亿美元、+34%**；极度乐观 **76.1亿美元、+55%**。当前约3,454亿美元市值对基准仍约58倍 FY2027销售额，对乐观约52倍，风险收益主要由估值而非资产负债表决定。
+
+**投资结论**：基本面评级“高质量、高增长、高不确定性”；财务健康，产业地位强，AI云端上行真实，但股价已隐含极高兑现率。最合理的研究姿态是把 AGI 看作尚未完全定价可验证的产品期权，把 Neoverse/CSS/royalty 作为主业锚，把 SoftBank/Arm China/SBC/渠道冲突作为折价项。在 2026年Q4生产系统和 FY2027 Q4首批财务贡献之前，不应以超过20亿美元的“需求”替代收入或不可取消订单。
+
+## 十六、主要来源
+
+### 16.1 公司与监管一手来源
+
+- [Arm FY2026 Form 20-F，2026-05-28](https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/arm-20260331.htm)：全年财务、资产负债表、客户/关联方、RPO、收购、股权与风险。
+- [FY2026 Q4/FY2026 财报材料，2026-05-06](https://investors.arm.com/static-files/adf3bac7-1e91-442e-92e0-5f2d8f1b6a14)：季度收入、ACV、RPO、指引、数据中心与AGI需求。
+- [FY2026 Q3](https://investors.arm.com/static-files/941fd4cb-0027-4e81-9541-66dcd954a14a)、[Q2](https://investors.arm.com/static-files/bcc1691e-9226-493f-95a8-363ba1c6946a)、[Q1](https://investors.arm.com/static-files/4b94004f-5de2-4842-a03c-9477b978b117)、[FY2025 Q4](https://investors.arm.com/static-files/a9baed37-2c28-4ac3-83b0-c11387d02bb2)：五季度可比数据。
+- [Arm Everywhere 长期财务目标](https://investors.arm.com/static-files/01d3c055-162f-4cf4-a983-5bb338aeb5e5)：FY2031 IP、AGI、利润率与EPS目标。
+- [Arm AGI CPU 发布](https://newsroom.arm.com/news/arm-agi-cpu-launch)、[技术博客](https://newsroom.arm.com/blog/introducing-arm-agi-cpu)、[产品说明书](https://www.arm.com/static/az/pdf/product-brief/arm-agi-cpu-product-brief.pdf)：产品、机架和规格。
+- [Lumex CSS](https://newsroom.arm.com/news/announcing-lumex-css-platform-ai-era)、[Zena CSS](https://newsroom.arm.com/news/arm-unveils-zena-css)、[Neoverse CSS](https://newsroom.arm.com/news/enabling-ai-infrastructure-on-arm)、[Ethos-U85](https://www.arm.com/products/silicon-ip-cpu/ethos/ethos-u85)、[Performix](https://newsroom.arm.com/news/announcing-arm-performix)：高增长产品资料。
+
+### 16.2 客户、标准、会议与渠道交叉验证
+
+- [OCP EMEA Summit 2026](https://www.opencompute.org/events/past-events/2026-ocp-emea-summit)、[Verda部署与开放标准](https://newsroom.arm.com/blog/ocp-arm-agi-cpu-meta-verda)、[Red Hat与AGI](https://newsroom.arm.com/blog/agentic-ai-infrastructure-arm-agi-cpu-red-hat)、[OCI生态表述](https://newsroom.arm.com/news/arm-agi-cpu-oracle-cloud-infrastructure-agentic-ai)。
+- [Microsoft Cobalt 200与Neoverse CSS V3](https://newsroom.arm.com/blog/microsoft-azure-cobalt-200-arm-neoverse-css-v3)、[ASRock Rack COMPUTEX原型](https://www.servethehome.com/asrock-rack-had-one-of-the-first-arm-agi-servers-at-computex-2026/)。
+- [RISC-V 2025 Annual Report](https://riscv.org/about/annual-report/)与 [Server Platform v1.0](https://docs.riscv.org/reference/server-platform/_attachments/riscv-server-platform.pdf)：替代技术成熟度。
+- [ARM 行情与估值快照](https://stockanalysis.com/stocks/arm/statistics/)：2026-07-10 市场数据；forward 数据为市场一致预期。
+
+### 16.3 模型局限
+
+- 终端市场收入、产品毛利、ASP、每芯片 royalty、取消率和分产品产能均未由 Arm 完整披露；相应数据均以区间和证据等级呈现。
+- 公司合作/生态名单不等于订单；“>$2B AGI需求”不等于不可取消PO；“$1B supply-backed”不等于单年收入。
+- 每 GPU/端口内容量只计算与Arm CPU/DPU/IP相关的经济价值；Arm不生产GPU、光模块或网络交换芯片。
+- 三情景用于识别敏感变量，不是价格目标或公司指引；产品层收入存在明显重叠，只有全公司增长桥按互斥会计类别构建。

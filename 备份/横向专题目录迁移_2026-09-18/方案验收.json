@@ -1,0 +1,125 @@
+{
+  "plans": [
+    {
+      "id": "company",
+      "directory": "基本面/公司调研/研究方案",
+      "current": "D:\\investment\\基本面\\公司调研\\研究方案\\研究方案_20260909_213416.md",
+      "version": "20260909_213416",
+      "sha256": "047ef9e4219b899e7a660f871a83cc69587782a97668789694518463117cd59b",
+      "defaultOutputDir": "(dedicated domain)"
+    },
+    {
+      "id": "industry",
+      "directory": "基本面/行业调研/研究方案",
+      "current": "D:\\investment\\基本面\\行业调研\\研究方案\\研究方案_20260909_213416.md",
+      "version": "20260909_213416",
+      "sha256": "ca609916dbd8198db6ac576c8d2846a0ca849b0752c4543e741c155983a398d0",
+      "defaultOutputDir": "(dedicated domain)"
+    },
+    {
+      "id": "company-investment-decision",
+      "directory": "分析报告/公司情景投资决策/研究方案",
+      "current": "D:\\investment\\分析报告\\公司情景投资决策\\研究方案\\研究方案_20260909_213416.md",
+      "version": "20260909_213416",
+      "sha256": "e3a89ee326581733723ab73014ffe785a28c5d16119cb15ea34b2ff029859a51",
+      "defaultOutputDir": "(dedicated domain)"
+    },
+    {
+      "id": "company-comparison",
+      "directory": "分析报告/公司对比/研究方案",
+      "current": "D:\\investment\\分析报告\\公司对比\\研究方案\\研究方案_20260909_213416.md",
+      "version": "20260909_213416",
+      "sha256": "cfb0c01a16526971da8e763295419163ec46ea34e3e5505cc9b1a9a472cfe992",
+      "defaultOutputDir": "(dedicated domain)"
+    },
+    {
+      "id": "company-sentiment",
+      "directory": "情绪面/研究方案",
+      "current": "D:\\investment\\情绪面\\研究方案\\研究方案_20260909_213416.md",
+      "version": "20260909_213416",
+      "sha256": "41dcf2761dd5448ce5b0694223fedd1b7f3a40b39f064a0f43be89679af986d6",
+      "defaultOutputDir": "(dedicated domain)"
+    },
+    {
+      "id": "background-1",
+      "directory": "基本面/行业调研/横向专题/AI产业链全局图谱与口径字典/研究方案",
+      "current": "D:\\investment\\基本面\\行业调研\\横向专题\\AI产业链全局图谱与口径字典\\研究方案\\研究方案_20260910_225943.md",
+      "version": "20260910_225943",
+      "sha256": "112b9c5319b99e3d80ed843da8095c1a7c094d0bc78e0c4033eeb27d0d558467",
+      "defaultOutputDir": "基本面/行业调研/产业背景"
+    },
+    {
+      "id": "background-2",
+      "directory": "基本面/行业调研/横向专题/AI产业链瓶颈与反证指标总表/研究方案",
+      "current": "D:\\investment\\基本面\\行业调研\\横向专题\\AI产业链瓶颈与反证指标总表\\研究方案\\研究方案_20260910_225943.md",
+      "version": "20260910_225943",
+      "sha256": "17bbdcd12a820574caa60c28d6917b88d4b74abcb329497901061b40d939d8d2",
+      "defaultOutputDir": "基本面/行业调研/产业背景"
+    },
+    {
+      "id": "background-3",
+      "directory": "基本面/行业调研/横向专题/全球AI需求与Token经济框架/研究方案",
+      "current": "D:\\investment\\基本面\\行业调研\\横向专题\\全球AI需求与Token经济框架\\研究方案\\研究方案_20260910_225943.md",
+      "version": "20260910_225943",
+      "sha256": "36db2aedfcdb7bbfb5aecf85a41cde1561963743eaed8f6fad0a903d0d65ae75",
+      "defaultOutputDir": "基本面/行业调研/产业背景"
+    },
+    {
+      "id": "background-4",
+      "directory": "基本面/行业调研/横向专题/数据中心建设规模/研究方案",
+      "current": "D:\\investment\\基本面\\行业调研\\横向专题\\数据中心建设规模\\研究方案\\研究方案_20260910_225943.md",
+      "version": "20260910_225943",
+      "sha256": "22e8d953addacefdb13299602b522eebd194c76c1c494f28e605d3742b524f4d",
+      "defaultOutputDir": "基本面/行业调研/产业背景"
+    },
+    {
+      "id": "background-5",
+      "directory": "基本面/行业调研/横向专题/头部AI芯片/研究方案",
+      "current": "D:\\investment\\基本面\\行业调研\\横向专题\\头部AI芯片\\研究方案\\研究方案_20260910_225943.md",
+      "version": "20260910_225943",
+      "sha256": "1192b5aa0c93b20c7190e3901f420981cf5c766e97fa39345ca85aa7fbcad4b2",
+      "defaultOutputDir": "基本面/行业调研/产业背景"
+    },
+    {
+      "id": "conference",
+      "directory": "基本面/行业调研/横向专题/会议调研/研究方案",
+      "current": "D:\\investment\\基本面\\行业调研\\横向专题\\会议调研\\研究方案\\研究方案_20260918_012214.md",
+      "version": "20260918_012214",
+      "sha256": "7a2a6034290f74d297c686f6c4556c8f0de803de41677f954b165a11b6d63504",
+      "defaultOutputDir": "基本面/行业调研/产业背景/顶级会议信息"
+    }
+  ],
+  "cliItems": [
+    {
+      "planId": "background-1",
+      "expectedOutputDir": "基本面/行业调研/产业背景",
+      "planVersion": "20260910_225943"
+    },
+    {
+      "planId": "background-2",
+      "expectedOutputDir": "基本面/行业调研/产业背景",
+      "planVersion": "20260910_225943"
+    },
+    {
+      "planId": "background-3",
+      "expectedOutputDir": "基本面/行业调研/产业背景",
+      "planVersion": "20260910_225943"
+    },
+    {
+      "planId": "background-4",
+      "expectedOutputDir": "基本面/行业调研/产业背景",
+      "planVersion": "20260910_225943"
+    },
+    {
+      "planId": "background-5",
+      "expectedOutputDir": "基本面/行业调研/产业背景",
+      "planVersion": "20260910_225943"
+    },
+    {
+      "planId": "conference",
+      "expectedOutputDir": "基本面/行业调研/产业背景/顶级会议信息",
+      "planVersion": "20260918_012214"
+    }
+  ],
+  "validation": "Active items: 6\nErrors: 0\nWarnings: 0\n"
+}

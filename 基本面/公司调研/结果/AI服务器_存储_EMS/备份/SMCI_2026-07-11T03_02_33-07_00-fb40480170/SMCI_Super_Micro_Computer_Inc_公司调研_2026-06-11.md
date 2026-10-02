@@ -1,0 +1,397 @@
+# SMCI / Super Micro Computer Inc 公司调研：AI 服务器整柜交付、液冷 DCBBS 与低毛利高周转的订单放大器（2026-06-11）
+
+> 资料边界：本报告只使用 `基本面/行业调研/` 下与 AI 服务器、液冷、光互联、AI 芯片相关的产业资料，以及 2026-06-11 前可联网核验的公开资料；未读取、引用或继承 `特征量化/`、`日度资料/`、其他公司调研旧文或目录内旧 SMCI 报告。美元金额均为 USD。  
+> 核心判断：SMCI 不是 AI 芯片公司，而是 NVIDIA/AMD AI 平台从“GPU 盒子”变成“液冷整柜、整排、整站交付”后的高弹性系统集成商。它的优势是上市速度、SKU 覆盖、NVIDIA/AMD 参考架构适配、液冷与现场交付能力；弱点是毛利率低、营运资本消耗大、客户集中、治理与出口合规风险仍高。2026 年股价下跌不是因为需求消失，而是因为约 390 亿美元新订单需要约 70 亿美元融资去买料，投资人开始重新定价“订单增长 + 低毛利 + 大额融资/稀释”的组合。
+
+## 1. 公司整体业务、投资人认知与产业链定位
+
+### 1.1 业务概况
+
+Super Micro Computer Inc.（NASDAQ: SMCI，常称 Supermicro）总部在美国加州 San Jose，主要做服务器、存储、AI GPU 服务器、整柜系统、液冷、机柜级网络/电力/管理软件与现场服务。公司在 2025 Form 10-K 中把收入分为两类：`Server and storage systems` 与 `Subsystems and accessories`。FY2025 总收入 219.72 亿美元，其中服务器和存储系统 213.12 亿美元、占 97.0%；子系统和配件 6.60 亿美元、占 3.0%。这已经说明 SMCI 的收入主体不是零部件，而是整机/整柜/系统级交付。
+
+SMCI 的传统标签是“白牌/准白牌服务器厂商、速度快、成本低、SKU 多”。进入 2024-2026 年后，投资人对它的看法明显转向“AI 服务器和液冷整柜交付的高 beta 标的”：它把 NVIDIA H100/H200/B200/B300/GB200/GB300、AMD MI300/MI350/MI400 等加速器平台，封装成可部署的服务器、rack-scale plug-and-play、DLC direct liquid cooling、DCBBS Data Center Building Block Solutions。公司本质上赚的是平台设计、系统集成、供货组织、液冷/网络/电力/软件/服务的交付差价，而不是 GPU/HBM 的高毛利。
+
+### 1.2 投资人心中的公司：高增长订单放大器，但不是高毛利垄断资产
+
+| 维度 | 投资人通常如何理解 SMCI | 对估值的影响 |
+|---|---:|---|
+| 增长属性 | AI GPU server/rack 的收入弹性大，季度收入可从 50 亿美元跃升到 100 亿美元以上 | 给收入高 beta，但也导致季度波动大 |
+| 毛利属性 | GPU/HBM 大比例 pass-through，整机/整柜毛利率远低于芯片、网络芯片和光模块 | 低 P/S、低 forward P/E 是市场给低毛利与执行风险的折价 |
+| 技术属性 | 技术重点在系统工程、液冷、rack-scale validation、time-to-online，而非底层芯片 | 与 Dell/HPE/Lenovo/ODM 竞争，定价权不是垄断级 |
+| 财务属性 | 订单越大，库存、应收和借款越大；2026 年现金流压力很明显 | 融资能力、客户预付款、库存周转决定安全边际 |
+| 风险属性 | 曾有延迟披露、内控缺陷、审计师更换、出口管制相关司法事件 | 投资人要求治理折价；大客户和供应商也会审查 |
+
+### 1.3 最近三年重大业务变动、转型和治理事件
+
+1. FY2024-FY2025：从服务器整机向 GPU rack-scale 方案转型。FY2024 收入 149.89 亿美元，FY2025 收入 219.72 亿美元，增长 46.6%；FY2025 10-K 说明增长主要来自 GPU & Super Racks 需求，H200/H100/B200、液冷和风冷服务器提升 ASP。服务和软件收入 FY2025 同比增加 1.022 亿美元，但基数仍小。
+2. 2025-2026：从“服务器制造商”继续转成“AI data center infrastructure provider”。Q1 FY2026 公司明确用 DCBBS 描述转型：设计、集成、部署、支持数据中心基础设施，产品范围扩大到冷却、网络、电力、电池备份、管理软件和现场服务。
+3. Blackwell/Blackwell Ultra 过渡带来订单跃迁，也带来交付延迟。Q1 FY2026 先因客户设计升级把部分收入推迟到 Q2；Q2 FY2026 创 126.83 亿美元收入记录；Q3 FY2026 又因客户数据中心 readiness、供应链和平台偏好切换，收入环比降至 102.43 亿美元。
+4. 2024-2025 治理与披露修复：公司曾延迟提交 FY2024 10-K 和 FY2025 Q1/Q2 10-Q，EY 在 2024 年 10 月辞任审计师；公司后续聘请 BDO，于 2025 年 2 月补交文件并恢复 Nasdaq filing compliance，且公司称未重述已提交财务报表。但内控、审计信任和诉讼/监管风险仍是估值折价的一部分。
+5. 2026 年 3 月出口管制司法事件：美国 DOJ 披露针对三名个人的起诉，指控其串谋将含受控 AI GPU 的美国服务器转运至中国；其中一名被指为一家美国上市 AI 服务器厂商的 co-founder、board member 和 SVP。DOJ 同时声明起诉内容为指控、被告未定罪。对 SMCI 的投资含义是：出口合规、渠道审查、客户尽调、供应商分配资格都会更敏感。
+6. 2026 年 6 月：公司宣布拟进行总额约 70 亿美元股权和股权挂钩融资，资金用于购买零部件以履行近期收到的约 390 亿美元 advanced AI server 订单，订单来自 20 多个客户，并包括 DCBBS。市场反应偏负面，核心担忧是摊薄、营运资本和毛利率。
+
+### 1.4 产业链定位
+
+AI 基建产业链可以简化为：GPU/ASIC/HBM/先进封装 → 服务器主板/电源/机箱/冷板/CDU/网络/光模块 → 整柜集成与 FAT/L10/L11 测试 → 现场电力/液冷/网络接入 → 云厂商、NeoCloud、主权 AI、企业 AI factory 投产。
+
+SMCI 位于“系统设计 + 整柜集成 + 液冷/电力/网络/软件/现场交付”的中游偏下游位置。它的上游定价权主要在 NVIDIA、AMD、HBM、网络芯片、光模块、电源和液冷关键部件；下游则是 hyperscaler、NeoCloud、企业和主权 AI 项目。SMCI 的价值不是独占芯片，而是把高复杂 BOM 更快变成可上线容量。行业调研中对 2026 年 AI server/rack 的判断是：采购单位从服务器节点转向整柜交付，客户关注的是整柜交付、液冷交付、电力交付、网络交付和现场验收交付，而不是单台服务器报价。
+
+### 1.5 最新股价、估值和财务快照
+
+| 指标 | 最新数值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | 29.11 美元 | 2026-06-11 14:57 UTC 行情快照 | 6 月融资公告后显著回落 |
+| 市值 | 201.5 亿美元 | 2026-06-11 14:57 UTC 行情快照 | 已低于 FY2026 指引收入的一半 |
+| TTM P/E | 约 14.0x | 2026-06-11 行情快照；FullRatio 同日口径约 14x | 低于多数 AI 硬件成长股，反映低毛利与治理折价 |
+| Forward P/E | 约 9.7-9.8x | StockAnalysis 2026-06 估值页 | 市场假设未来 EPS 增长，但不愿给高倍数 |
+| P/S | 约 0.60x | 市值 201.5 亿 / TTM 收入约 337.0 亿 | 系统集成低毛利属性决定 P/S 不能与芯片股相比 |
+| TTM 收入 | 约 337.0 亿美元 | Q4 FY2025 + Q1-Q3 FY2026 | Q2 和 Q3 已进入单季百亿美元量级 |
+| 最新季度收入增速 | +123% YoY，-19% QoQ | Q3 FY2026，季度截至 2026-03-31 | 同比爆发，环比受客户 readiness 和供应约束影响 |
+| FY2026 收入指引 | 389-404 亿美元 | 公司 Q3 FY2026 指引，2026-05-05 | 对 FY2025 的 219.72 亿美元增长约 77%-84% |
+| 最新季度 GAAP 毛利率 | 9.9% | Q3 FY2026 | 较 Q2 的 6.3% 修复，但仍低于 FY2024-FY2025 早期水平 |
+| 最新季度 GAAP 净利率 | 4.7% | Q3 FY2026，4.834 亿净利 / 102.43 亿收入 | 利润改善，但依赖产品/客户 mix |
+| FY2026 前三季度净利率 | 3.8% | 10.52 亿净利 / 279.43 亿收入 | 高收入低净利的结构非常清楚 |
+| 现金 | 12.90 亿美元 | 2026-03-31 | 低于 Q3 单季经营现金流流出 |
+| 银行债务和可转债 | 88 亿美元 | 2026-03-31 公司披露 | Q3 后又宣布大额融资，说明现金流压力仍高 |
+| 净债务 | 约 75 亿美元 | 88 亿债务 - 12.9 亿现金 | 以订单交付换现金回流；若订单延迟，杠杆压力上升 |
+| 存货 | 111.03 亿美元 | 2026-03-31 | 较 2025-06-30 的 46.80 亿美元大增，体现为 AI 订单备料 |
+| 应收账款 | 84.13 亿美元 | 2026-03-31 | 客户集中和大项目结算周期会放大营运资本 |
+| Current ratio | 2.66x | 215.68 亿流动资产 / 81.23 亿流动负债 | 表面流动性尚可，但资产质量高度依赖应收和存货变现 |
+| Q3 FY2026 经营现金流 | -66 亿美元 | 单季 | 收入增长没有转化为现金流 |
+| FY2026 前三季度经营现金流 | 约 -75.6 亿美元 | 2025-07 至 2026-03 | 最核心的财务压力点 |
+| 2026-06 拟融资 | 约 70 亿美元 | 2026-06-09 公司公告 | 为约 390 亿美元 AI server 订单买料；缓解现金压力但摊薄 |
+
+### 1.6 资产负债表健康程度
+
+资产负债表不是“资不抵债”问题，而是“AI 订单驱动的营运资本极度前置”问题。2026-03-31 公司流动资产 215.68 亿美元、流动负债 81.23 亿美元，current ratio 2.66x；但流动资产里最大两项是存货 111.03 亿美元和应收账款 84.13 亿美元，合计 195.16 亿美元，占流动资产 90.5%。如果订单顺利交付和回款，这些资产能转成现金；如果客户数据中心 site readiness 延迟、平台切换、融资放缓或取消，存货减值、应收回款慢和利息费用会一起压缩利润。
+
+SMCI 的财务健康度可以评为“订单支持下的可融资扩张，但不是低风险资产负债表”。正面因素是：Q3 后公开披露约 390 亿美元订单、客户超过 20 家，说明融资并非无订单扩张；公司 FY2026 指引仍接近 400 亿美元，收入规模足以覆盖固定费用。负面因素是：Q3 单季经营现金流流出 66 亿美元，前三季度经营现金流约 -75.6 亿美元；银行债务和可转债 88 亿美元，且 2026 年 6 月还需要约 70 亿美元融资买料。结论是：短期偿债风险取决于融资成交、客户预付款和订单转收入；中期健康度取决于毛利率能否稳定回到 10%-12% 以上，以及 DCBBS/软件/服务能否贡献更高利润。
+
+## 2. 最新及最近四次财报：订单、业务收入、利润率和 AI 数据中心占比
+
+公司没有按 GPU 平台、液冷、网络、软件逐项披露完整收入和利润率。因此下表把官方披露、财报电话会信息和行业拆分结合：明确披露的数字直接列示；未披露处用“估算/推断”，并标明依据。
+
+| 财报季度 | 收入与增速 | 利润率与 EPS | 订单、交期、取消率 | 业务/客户结构 | AI 数据中心相关收入占比与业务判断 |
+|---|---:|---:|---|---|---|
+| Q3 FY2026，截至 2026-03-31，2026-05-05 发布 | 收入 102.43 亿；+123% YoY，-19% QoQ | GAAP 毛利率 9.9%；Non-GAAP 毛利率 10.1%；净利润 4.83 亿；GAAP EPS 0.72，Non-GAAP EPS 0.84；Non-GAAP operating margin 7.3% | 公司称订单和 backlog 仍强；收入受数据中心/customer readiness 与供应约束影响，部分收入递延到未来季度。未披露取消率；从 Q3 后 390 亿美元订单和 Q4 指引看，取消率不是主矛盾，主矛盾是交付窗口和买料融资 | Enterprise/channel 约 28%，27.8 亿；OEM appliance + large datacenter 约 72%，74 亿；两个现有客户各超过 10% 收入，其中一个大数据中心客户 27%、一个企业客户 10%；美国收入约 69% | AI GPU-related platforms 超过 80%，即至少约 82 亿美元；DLC/Green Computing/DCBBS 是毛利率修复方向。Q3 环比下滑不代表需求消失，而是客户数据中心 ready、供应链和平台切换造成收入节奏波动 |
+| Q2 FY2026，截至 2025-12-31，2026-02-03 发布 | 收入 126.83 亿；对 Q1 的 50.18 亿环比 +153%；对 Q2 FY2025 的约 56.8 亿约 +123% | GAAP 毛利率 6.3%；Non-GAAP 6.4%；净利润 4.01 亿；GAAP EPS 0.60，Non-GAAP EPS 0.69 | Q1 延迟/升级订单在 Q2 大量交付；公司 Q2 时给 Q3 至少 123 亿收入指引、FY2026 至少 400 亿收入。低毛利反映大客户 mix、供应链和战略订单让利 | 现金 40.91 亿，债务和可转债 49 亿。大客户/大型数据中心占比更高，后续 Q3 说明 Q2 large datacenter mix 高达约 85% | AI server/rack 贡献极高，但 GPU pass-through 和战略客户定价导致毛利率跌到 6.3%。这是“收入很强但利润质量偏弱”的典型季度 |
+| Q1 FY2026，截至 2025-09-30，2025-11-04 发布 | 收入 50.18 亿；对 Q4 FY2025 的 57.57 亿环比 -13%；对 Q1 FY2025 的 59.37 亿同比 -15% | GAAP 毛利率 9.3%；Non-GAAP 9.5%；净利润 1.68 亿；GAAP EPS 0.26，Non-GAAP EPS 0.35 | 10 月业务更新称 recent design wins 超过 120 亿美元、请求 Q2 交付；设计升级把部分 Q1 收入推到 Q2；Q1 正式披露提到超过 130 亿美元 Blackwell Ultra 订单 | 现金 42 亿，债务和可转债 48 亿；经营现金流 -9.18 亿 | 这是 Blackwell Ultra/GB300/B300 切换期。低于原 Q1 指引不是需求弱，而是客户设计升级、交付时点后移；但也暴露 SMCI 季度收入对客户 readiness 高度敏感 |
+| Q4 FY2025，截至 2025-06-30，2025-08-05 发布 | 收入 57.57 亿；+7.5% YoY，+25% QoQ；FY2025 全年收入 219.72 亿，+46.6% | GAAP 毛利率 9.5%；Non-GAAP 9.6%；净利润 1.95 亿；GAAP EPS 0.31，Non-GAAP EPS 0.41；FY2025 GAAP 净利约 10.49 亿 | 公司给 Q1 FY2026 收入 60-70 亿指引，FY2026 至少 330 亿；表示计划 FY2026 大型数据中心客户从 FY2025 的 4 家增至 6-8 家 | FY2025 产品结构：server/storage 213.12 亿，占 97%；subsystems/accessories 6.60 亿，占 3%；服务和软件收入 3.305 亿 | FY2025 仍在 H100/H200/B200 与 Super Racks 阶段，液冷/整柜已经推动 ASP，但利润率被客户/产品 mix 和竞争定价压低 |
+| Q3 FY2025，截至 2025-03-31，2025-05-06 发布 | 收入 46.00 亿；+19% YoY，-19% QoQ | GAAP 毛利率 9.6%；Non-GAAP 9.7%；净利润 1.09 亿；GAAP EPS 0.17，Non-GAAP EPS 0.31；经营现金流 +6.27 亿 | 公司表示部分客户延迟平台决策，预计承诺会落在 6 月和 9 月季度；给 Q4 FY2025 收入 56-64 亿指引。未披露取消率 | 现金 25.4 亿，债务和可转债 24.9 亿；公司同时披露已完成治理和 Nasdaq filing compliance 修复 | 该季度已经显示同一个模式：AI 平台换代造成客户决策延迟，收入推迟但不必然取消。与 Q1/Q3 FY2026 的波动相互印证 |
+
+### 2.1 财报交叉验证结论
+
+1. 订单趋势强于单季收入趋势。Q1 FY2026 有超过 120 亿美元 design wins 请求 Q2 交付；Q2 收入跳到 126.83 亿美元；Q3 因 site readiness 和供应限制下滑，但 Q3 后又披露约 390 亿美元新订单。SMCI 的收入应按多季度交付窗口看，不宜单季线性外推。
+2. 毛利率是最大争议。Q2 FY2026 6.3% 是极低毛利，Q3 修复到 9.9%，但仍明显低于 FY2024 早期水平。GPU/HBM pass-through 比例越高，收入越大、毛利率越低；DCBBS、软件、服务、液冷和企业/channel mix 越高，利润率越好。
+3. 业务收入细分并不透明。SMCI 披露“AI GPU-related platforms 超过 80%”“enterprise/channel 28%”“OEM/large datacenter 72%”“两个客户超过 10%”，但未按 B200/B300/GB300、DLC、网络、软件逐项披露收入。因此后续产品预测必须以收入 mix、订单披露、行业 BOM 和公司产能口径交叉推算。
+4. 取消率没有公开数据。当前更像“交付延迟/平台切换/供应链约束”而非大面积取消；但如果 GPU 租赁价格、客户融资、数据中心电力审批或 NVIDIA/AMD 平台节奏变化，取消或推迟风险会迅速上升。
+
+## 3. 2026 年最新指引、业务收入占比与产品映射
+
+### 3.1 最新指引
+
+截至 2026-06-11，SMCI 最新正式财报指引来自 2026-05-05 Q3 FY2026 公告：
+
+| 指引项目 | 公司指引 | 对比与含义 |
+|---|---:|---|
+| Q4 FY2026 收入 | 110-125 亿美元 | 对 Q4 FY2025 的 57.57 亿美元增长约 91%-117% |
+| Q4 FY2026 GAAP EPS | 0.53-0.67 | 假设稀释股数 6.95 亿 |
+| Q4 FY2026 Non-GAAP EPS | 0.65-0.79 | 假设 Non-GAAP 稀释股数 7.12 亿 |
+| FY2026 收入 | 389-404 亿美元 | 对 FY2025 的 219.72 亿美元增长约 77%-84% |
+| 2026-06 订单披露 | 约 390 亿美元 advanced AI server orders，来自 20 多个客户 | 公司计划未来多个季度履行；这是订单和融资逻辑的核心，但不是不可取消的 GAAP backlog |
+
+### 3.2 最新业务收入占比
+
+| 口径 | 最新披露 | 对 Q3 FY2026 收入的美元映射 | 业务意义 |
+|---|---:|---:|---|
+| AI GPU-related platforms | 超过 80% | 至少约 82 亿美元 | 公司已经高度 AI 化，非 AI 业务不再决定增长 |
+| Enterprise/channel | 约 28% | 约 28 亿美元 | 毛利率通常优于大客户，但规模较小 |
+| OEM appliance + large datacenter | 约 72% | 约 74 亿美元 | 增长核心，但客户议价强、营运资本占用大 |
+| 最大单一数据中心客户 | 27% | 约 28 亿美元 | 客户集中风险极高 |
+| 另一个企业客户 | 10% | 约 10 亿美元 | 企业大单也可贡献百亿美元年化潜力 |
+| U.S. 地区收入 | 约 69% | 约 71 亿美元 | 与美国/北美 AI factory 和出口合规高度相关 |
+| Server/storage systems | FY2025 占 97% | FY2025 213.12 亿美元 | 子系统/配件被战略性压缩，整系统是核心 |
+
+### 3.3 产品与业务映射：重点产品、潜在小业务与跳过业务
+
+| 业务/产品族 | 对应产品和型号/平台 | 当前重要性 | 预计毛利率特征 | 增长判断 |
+|---|---|---:|---:|---|
+| NVIDIA Blackwell/Blackwell Ultra AI rack | HGX B200/B300、GB200/GB300 NVL72、B200/B300 full-rack DLC、SuperCluster、rack-scale plug-and-play | 最高 | 系统整体毛利率低到中个位数至低双位数；GPU pass-through 拉低毛利 | 未来 12 个月收入主轴，决定 FY2026/FY2027 能否超预期 |
+| DCBBS / Data Center Building Block Solutions | 5MW-1GW blueprint、1,152-GPU scalable unit、DLC-2、in-row CDU、冷却塔、电力分配、现场服务、SuperCloud Composer/Director | 最高 | 设计/集成/软件/服务毛利率显著高于整机硬件；公司目标未来利润占比提升 | 小收入项可能变成利润杠杆，是最值得跟踪的小业务 |
+| Direct Liquid Cooling / DLC-2 | 冷板、CDU、manifold、RDHx、cooling tower、PG25-A coolant、液冷 rack validation | 最高 | 行业冷板/CDU 28%-42%，短缺和认证锁定时可更高；SMCI 作为系统商拿到的是集成和服务溢价 | 100kW+ rack 的必选项，2026 年不是可选升级 |
+| AMD rack-scale AI | AMD Helios、72-GPU double-width rack、MI455X、6th Gen EPYC、Pensando networking、ROCm | 中高 | 当前份额小、毛利率取决于 AMD 供货和客户验证；可能高于 NVIDIA 超大客户低价订单 | 2027 年第二来源潜力大，2026 年仍是小基数 |
+| AI storage / context memory storage | Petascale NVMe storage、checkpointing、NVIDIA Context Memory Storage Platform 节点、长上下文和检索工作负载 | 中高 | 存储硬件毛利中等；若绑定软件和现场服务，利润率上升 | 容易被忽视的小业务；agentic AI 和长上下文推理提高需求 |
+| Data center management software | SuperCloud Composer、SuperCloud Director、power/cooling/utilization/safety 监控、GPU workload orchestration | 中高但基数小 | 软件和服务毛利率最高；当前收入仍小 | 若随 DCBBS 打包，可能成为净利率修复关键 |
+| 800G/1.6T 网络集成 | NVIDIA Spectrum-X、Quantum-X800 InfiniBand、以太网/IB switch、NIC/DPU、光模块、铜缆/ACC/AEC | 中高 | 光模块和交换芯片利润主要在上游；SMCI 获取系统集成和验收利润 | 不是 SMCI 独立产品，但没有网络就无法交付 AI cluster |
+| 传统 CPU-only server、通用 storage、5G/Telco/Embedded、普通 edge/IoT | X86/Arm 通用服务器、传统配件、非 AI 边缘设备 | 低 | 毛利可能不差，但增长低、战略权重下降 | 本报告后续不展开；除非绑定 AI factory、液冷或高密部署 |
+
+### 3.4 不应漏掉的潜力小业务
+
+1. SuperCloud Composer/Director：公司电话会提到管理软件可管理系统、rack、电力、冷却、安全、设备利用率，并支持 CPU/GPU workload orchestration。软件收入基数小，但毛利率和客户锁定作用显著高于硬件。
+2. Context memory storage / Petascale storage：Rubin DCBBS 蓝图包含 4 个高性能存储 rack 和 2 个 context memory storage rack。长上下文、agentic workflow 和 RAG/检索推理会让“AI storage as part of rack blueprint”成为整站 BOM 的标准项。
+3. 现场服务与 4 小时响应：DCBBS 把 site survey、项目设计、rack stacking/cabling、L10/L11 测试、现场安装、commissioning、软件栈部署、长期支持打包。这些服务不一定收入大，但对利润率和客户替换成本很关键。
+4. 电池备份和电力分配：Rubin blueprint 中包含中压/低压配电、rack power shelves、BBU、BESS。SMCI 不一定自制所有电气部件，但单一供应商责任制会扩大它的订单口径。
+
+## 4. 高增长/关键产品当前收入贡献、增速、重要性与供需
+
+评分：5 为最高。收入贡献为基于 Q3 FY2026 102.43 亿美元、公司披露 mix 和行业 BOM 的估算，非公司逐项披露。
+
+| 高增长/关键业务 | 当前收入贡献估算 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 | 交叉验证 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| NVIDIA Blackwell/Ultra AI GPU systems 与 full-rack DLC | Q3 至少 82 亿美元 AI GPU-related revenue；其中 NVIDIA 相关大概率占绝大部分 | Q3 AI 平台随总收入 +123% YoY；Blackwell Ultra 订单 Q1 已超 130 亿美元 | 5 | 5 | 4 | 3 | 公司 Q3 披露 AI GPU 平台 >80%；行业资料显示 2026 高端 AI server/rack 仍以 NVIDIA GPU 生态 55%-70% 为主 |
+| DCBBS / rack-scale plug-and-play / 现场集成 | Q3 未单独披露；若 rack-scale 相关收入按至少 20%-25% 推算，约 20-26 亿美元系统收入；其中服务/集成真实价值约数亿美元级 | 由小到大快速提升；管理层称 DCBBS 是转型核心 | 5 | 5 | 4 | 4 | 6 月 9 日约 390 亿美元订单包含 DCBBS；Rubin blueprint 从 5MW 到 1GW，说明 DCBBS 已从营销词变成交付架构 |
+| Direct Liquid Cooling / DLC-2 | Q3 若 DLC-attached system revenue 占 40% 以上，则对应系统收入至少 41 亿美元；纯液冷/集成 value capture 估算 2%-8%，约 0.8-3.3 亿美元/季 | 100kW+ rack 推动高增；液冷从高端可选变成 GB200/GB300/Rubin 默认条件 | 5 | 5 | 4 | 4 | 本地液冷行业调研显示 2026 主路径为单相 direct-to-chip + rack/in-row CDU + manifold/UQD；SMCI 官方披露 DLC-2 和冷却塔/CDU/冷板全栈 |
+| 2026 年 390 亿美元 AI server 订单池 | 尚未转收入；按未来 15 个月平均约 26 亿美元/月理论交付口径 | 对 FY2026/FY2027 收入形成最直接支撑 | 5 | 5 | 4 | 2-3 | 官方 2026-06-09 公告披露约 390 亿美元 advanced AI server orders、20 多个客户；但订单不是不可取消 backlog，仍受融资、供货和客户 site readiness 约束 |
+| AMD Helios / MI455X / MI350-MI400 系统 | 当前收入估计低于 NVIDIA，可能仍低于 5%-10% AI 平台收入，即 Q3 0.5-1.0 亿至数亿美元级 | 小基数高增；2026 展示，2027 才可能显著放量 | 3 当前 / 4 未来 | 3 | 3 | 3 | 2026-06-02 官方宣布 Helios 72-GPU double-width rack，说明 SMCI 不只押 NVIDIA，但客户验证和 ROCm 生态仍需时间 |
+| AI storage/context memory/software | FY2025 服务和软件收入 3.305 亿美元；Q3 单季软件/服务未披露，估计仍低于总收入 2% | 高增但小基数 | 4 | 4 | 3 | 4 | Rubin DCBBS 蓝图把 storage/context memory racks 写入参考架构；长上下文推理和 checkpointing 对存储要求提升 |
+| AI network integration / 800G-1.6T | 网络硬件在 AI rack BOM 中约 8%-18%；按 Q3 AI revenue 82 亿推算，内含网络/光互联价值约 6.5-14.8 亿美元，但多数利润在上游 | 随 rack-scale GPU 集群同步高增 | 4 | 4 | 4 | 2 | 本地光互联调研显示 2026 800G 仍主流、1.6T 开始 design-in；SMCI 主要赚系统集成和验证，不赚光模块核心利润 |
+
+## 5. 一年后关键产品收入贡献预测：基准、乐观、极度乐观
+
+预测窗口：未来 12 个月，约 2026-07 至 2027-06。基准场景假设 390 亿美元订单中约 65%-75% 在未来 12-15 个月内转收入，Q4 FY2026 达到公司指引中值，FY2027 前三个季度延续增长但毛利率仍受大客户压制。乐观场景假设订单转化 80%-90%、GB300/Rubin early deployments 顺利、融资和 GPU/液冷供应跟上。极度乐观场景假设 390 亿美元订单基本顺利执行，并追加大客户项目，产能/融资/客户站点准备均配合。
+
+| 关键产品/业务 | 基准：一年后收入贡献 | 乐观：一年后收入贡献 | 极度乐观：一年后收入贡献 | 增速与约束 |
+|---|---:|---:|---:|---|
+| 公司总收入 | 450-500 亿美元，较 FY2026 指引中值约 +14%-26% | 550-650 亿美元，约 +39%-64% | 750-900 亿美元，约 +89%-127% | 核心约束为 GPU/HBM、液冷、电力、光网络、客户数据中心 readiness、营运资本和订单不可取消性 |
+| NVIDIA Blackwell/Ultra/Rubin 相关 AI systems | 330-370 亿美元 | 430-520 亿美元 | 600-720 亿美元 | 基准仍由 B200/B300/GB300 主导；乐观加入 Rubin early；极度乐观需要 NVIDIA 分配和客户集群投产极顺 |
+| DCBBS / rack-scale / 现场集成 | DLC/rack attached system revenue 200-250 亿美元；纯集成/服务/软件价值 10-20 亿美元 | attached revenue 300-380 亿美元；纯 value capture 20-35 亿美元 | attached revenue 450-550 亿美元；纯 value capture 35-55 亿美元 | DCBBS 与 NVIDIA/AMD 系统收入重叠，不可简单相加；真正投资重点是利润占比上升 |
+| Direct Liquid Cooling / DLC-2 | attached system revenue 180-230 亿美元；液冷组件和服务价值约 10-18 亿美元 | 280-360 亿美元；价值约 20-35 亿美元 | 430-520 亿美元；价值约 35-50 亿美元 | 100kW+ rack 从高端变默认；如果 facility water/CDU/冷板/现场 flushing 卡住，则收入后移 |
+| AMD Helios / MI455X / MI400 相关系统 | 10-20 亿美元 | 30-60 亿美元 | 80-120 亿美元 | 取决于 AMD 供货、ROCm 软件成熟度、云客户第二来源意愿；2026 内不宜把它当主收入 |
+| AI storage/context memory/software | 8-15 亿美元，其中软件/服务 3-6 亿美元 | 15-30 亿美元，其中软件/服务 6-12 亿美元 | 30-50 亿美元，其中软件/服务 12-20 亿美元 | 长上下文推理、checkpointing、GPU cloud orchestration 会提高附加率；但公司披露颗粒度低 |
+| 传统非 AI/低增速业务 | 40-60 亿美元 | 45-65 亿美元 | 50-70 亿美元 | 维持客户覆盖和现金流，但不是估值主要变量 |
+
+### 5.1 一年后评分预测
+
+| 业务 | 场景 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | SMCI 溢价能力 | 解释 |
+|---|---|---:|---:|---:|---:|---|
+| NVIDIA AI rack systems | 基准 | 5 | 5 | 4 | 3 | 客户必须上架，但 Dell/ODM/云自研仍压价 |
+| NVIDIA AI rack systems | 乐观 | 5 | 5 | 5 | 3 | GB300/Rubin 切换让认证和交付能力更稀缺 |
+| NVIDIA AI rack systems | 极度乐观 | 5 | 5 | 5 | 4 | 如果客户愿为 time-to-online 付费，SMCI 定价权提升 |
+| DCBBS/DLC | 基准 | 5 | 5 | 4 | 4 | 液冷和现场集成是客户上线瓶颈 |
+| DCBBS/DLC | 乐观 | 5 | 5 | 5 | 4 | 2MW CDU、100kW+ rack、现场施工资源短缺 |
+| DCBBS/DLC | 极度乐观 | 5 | 5 | 5 | 5 | 若 SMCI 成为单一责任方，服务和软件可提高利润池 |
+| AMD Helios/open rack | 基准 | 3 | 3 | 3 | 3 | 第二来源价值存在，但主流仍是 NVIDIA |
+| AMD Helios/open rack | 乐观 | 4 | 4 | 4 | 3 | 如果客户急需 NVIDIA 外第二来源，SMCI 有先发产品 |
+| AMD Helios/open rack | 极度乐观 | 4 | 4 | 4 | 4 | ROCm、MI455X/MI400 和开放网络生态若成熟，SMCI 可享早期集成溢价 |
+| AI storage/software | 基准 | 4 | 3 | 3 | 4 | 随 rack 打包，软件粘性强但客户可替代 |
+| AI storage/software | 乐观 | 4 | 4 | 3 | 4 | 长上下文推理增加 context memory storage 需求 |
+| AI storage/software | 极度乐观 | 5 | 4 | 4 | 5 | 如果变成 DCBBS 控制平面，利润率和替换成本明显提升 |
+
+## 6. BOM 拆分、每 MW / rack / GPU / optical port 内容量与价格传导
+
+### 6.1 AI rack 通用 BOM：钱主要流向 GPU/HBM，SMCI 赚系统交付
+
+本地 AI 服务器行业调研给出的高端液冷 AI rack 系统交易价值为每 rack 约 200-700 万美元以上。典型 BOM 拆分如下：
+
+| BOM 层 | 占系统 ASP 估算 | 主要内容 | 主要利润归属 | SMCI 的价值捕获 |
+|---|---:|---|---|---|
+| GPU/ASIC + HBM | 60%-80% | NVIDIA B200/B300/GB200/GB300/Rubin、AMD MI455X/MI400、HBM3e/HBM4 | NVIDIA/AMD/HBM/封装 | 多数为 pass-through，拉大收入但压低毛利率 |
+| CPU/内存/SSD/主板 | 5%-12% | Grace/EPYC/Xeon、DDR、NVMe、motherboard、PCIe/CXL | CPU/内存/SSD厂商 + 主板/系统商 | SMCI 自有主板/机箱设计可拿部分设计和集成价值 |
+| 网络/互联 | 8%-18% | NVLink/NVSwitch、Spectrum-X/Quantum-X800、NIC/DPU、800G/1.6T 光模块、铜缆 | NVIDIA/Broadcom/Marvell/光模块/交换机 | SMCI 主要拿 rack cabling、验证、拓扑集成、现场调试价值 |
+| 液冷 | 2%-8% | 冷板、CDU、manifold、UQD、coolant、RDHx、冷却塔 | CoolIT/Boyd/Vertiv/Schneider/Delta/SMCI 等 | SMCI 通过 DLC-2、冷却塔、CDU、冷板和服务增加溢价 |
+| 电力 | 2%-7% | power shelf、PSU、PDU、BBU、BESS、变压器和配电 | 电源/电气厂商 | SMCI 通过 DCBBS 方案和单一责任方拿系统利润 |
+| 机柜/结构/背板/线缆 | 2%-5% | 48U/52U rack、chassis、backplane、cable harness | 结构件/线缆/系统商 | SMCI 强项之一，决定交付速度 |
+| 工厂集成、测试、软件、现场服务 | 3%-8% | racking、stacking、cabling、L10/L11 测试、commissioning、SuperCloud 管理 | 系统集成商/服务商 | SMCI 最值得提升的利润池 |
+
+价格传导链：GPU/HBM 价格和分配决定系统 ASP 上限；液冷、电力、网络短缺决定交付速度和附加溢价；客户数据中心 readiness 决定收入确认；SMCI 的现金流由“先买料、后交付、再收款”主导。大客户会压低硬件毛利，但如果 DCBBS、现场服务、软件和紧急交付占比提高，毛利率有机会回到低双位数。
+
+### 6.2 每 rack / 每 GPU 内容量：以 GB200/GB300 NVL72 为参考
+
+| 指标 | 参考值 | 说明 |
+|---|---:|---|
+| GPU 数 | 72 GPU / NVL72 rack | GB200/GB300 NVL72 主流 rack-scale 单元 |
+| CPU 数 | 约 36 Grace CPU / rack | GB200/GB300 NVL72 参考架构常见口径 |
+| 系统 ASP | 约 280-560 万美元/rack | 本地 AI 芯片和 AI server 行业调研的 Blackwell/GB300 rack 估算区间 |
+| 每 GPU 系统 ASP | 约 3.9-7.8 万美元/GPU | 以 72 GPU/rack 计算；不是 GPU 单价，而是整 rack ASP 分摊 |
+| SMCI 每 GPU 毛利美元 | 约 3,900-7,800 美元/GPU 的系统毛利上限 | 以系统 ASP 和 10% 毛利率粗算；真实 SMCI 可控毛利更多来自集成、液冷、服务 |
+| rack 功率 | 80-250kW/rack | 2026 主流高密 AI rack 区间；Rubin/后续平台走向更高功率 |
+| 每 MW rack 数 | 4-12.5 rack/MW | 250kW/rack 时 4 rack；120kW/rack 时 8.3 rack；80kW/rack 时 12.5 rack |
+| 每 MW GPU 数 | 288-900 GPU/MW | 72 GPU/rack 乘以上述 rack 数 |
+
+### 6.3 Rubin DCBBS 官方 blueprint 的每 MW 内容量
+
+SMCI 2026-06-01 发布的 NVIDIA Vera Rubin/HGX Rubin DCBBS blueprint 把部署从 5MW 扩到 1GW，并给出 1,152-GPU scalable unit 的结构。官方披露的单元包括：1,152 个 Rubin GPU、331TB HBM4、DLC-2、5MW cooling tower、4 个 up to 1.8MW in-row CDU、16 个 vertical manifold、576 个 direct-to-chip copper cold plates、16 个 compute racks、6 个 networking racks、4 个 high-performance storage racks、2 个 context memory storage platform racks，以及电力分配/BBU/BESS 等。
+
+| Rubin DCBBS 指标 | 单 scalable unit | 每 MW 折算 | 投资含义 |
+|---|---:|---:|---|
+| 功率包络 | 约 6.8MW 级别参考 | 1MW | 客户先看可用电力，再倒推 GPU/rack/cooling/network |
+| Rubin GPU | 1,152 | 约 169 GPU/MW | 每 MW 的 GPU 内容量低于低功率 rack 估算，原因是包含网络、存储、冷却、电力和冗余 |
+| HBM4 | 331TB | 约 48.7TB/MW | HBM4 是 Rubin 供应约束核心 |
+| in-row CDU | 4 台，单台最高 1.8MW | 约 0.59 台/MW | CDU 供货和现场水路决定上线速度 |
+| vertical manifold | 16 | 约 2.35 个/MW | 标准化 manifold/QD 降低泄漏和施工风险 |
+| direct-to-chip copper cold plates | 576 | 约 84.7 个/MW | 冷板不是每 GPU 简单一对一，按 host processor module 计 |
+| compute racks | 16 | 约 2.35 rack/MW | 与 32 个 NVL72 rack 字面口径不同，实际按 blueprint 的 compute/network/storage 组合理解 |
+| networking racks | 6 | 约 0.88 rack/MW | 训练/推理集群的网络密度提升 |
+| storage + context memory racks | 6 | 约 0.88 rack/MW | 长上下文和 checkpointing 推动存储成为标准 BOM |
+
+### 6.4 每 optical port 内容量与 SMCI 可捕获价值
+
+800G/1.6T 光模块是 AI cluster scale-out 的带宽瓶颈。本地光互联行业调研显示：2026 年 800G 仍是主流，1.6T 在 2026-2027 开始 design-in；1.6T 早期 ASP 约 1,400-2,200 美元/只，2026 年可能超过 500 万只。
+
+| 光互联单位 | 内容量估算 | 价格链 | SMCI 捕获 |
+|---|---:|---|---|
+| 每 800G optical port | 1 只 800G 模块/端口；一条链路两端 2 只 | 模块 ASP 估计 500-1,000 美元/只，随距离和 DSP/LPO/LRO 不同变化 | SMCI 不赚模块核心利润，主要赚选型、cabling、交换机/NIC 集成、验收 |
+| 每 1.6T optical port | 1 只 1.6T 模块/端口；一条链路两端 2 只 | 1,400-2,200 美元/只；链路两端 2,800-4,400 美元 | 早期 design-in 可提高集成服务价值，但核心利润在光模块/DSP/SiPh |
+| 每 GPU optical port 等效 | 1-4 个高速外部端口/GPU 等效，取决于拓扑和超售 | 800G 约 500-4,000 美元/GPU；1.6T 约 1,400-8,800 美元/GPU | 拓扑依赖强；SMCI 只拿系统集成和运维价值 |
+| 每 rack 网络价值 | 系统 ASP 的 8%-18% | NVIDIA/Arista/Broadcom/Marvell/光模块厂商分走大部分 | SMCI 的优势在 L10/L11 测试、线缆管理、现场调试、单一责任 |
+
+## 7. 当前产能、供应链采纳和认证；一年后场景预测
+
+### 7.1 当前产能能力：理论美元产能很大，真实收入受 GPU/资金/客户站点限制
+
+SMCI 在 Q3 FY2026 电话会和 2026 年产品发布中多次强调 rack-scale 和 DLC 产能。公开口径包括：全球 DLC capacity 超过 6,000 racks/月、rack-scale capacity 约 5,000 racks/月；Rubin DCBBS blueprint 可从 5MW 扩至 1GW；DCBBS 支持 site survey、项目设计、工厂预集成、L10/L11 测试、现场安装和长期支持。
+
+| 产能口径 | 物理产能 | 理论美元产能 | 必须打折的原因 |
+|---|---:|---:|---|
+| rack-scale capacity | 5,000 rack/月，60,000 rack/年 | 若每 rack 280-560 万美元，理论年化 1,680-3,360 亿美元 | GPU/HBM、网络、液冷、电力、客户机房、营运资本不可能同时满配 |
+| DLC capacity | 6,000 rack/月，72,000 rack/年 | 若每 rack 280-560 万美元，理论年化 2,016-4,032 亿美元 | DLC capacity 不等于有 GPU 的可收入 rack；可能包含不同功率和配置 |
+| FY2026 revenue guide | 389-404 亿美元 | 约为理论 rack 产能的一小部分 | 说明当前限制主要不是机柜装配线，而是上游高值组件、资金、客户验收和项目节奏 |
+| 2026-06 订单 | 约 390 亿美元，未来多个季度履行 | 接近 FY2026 全年收入 | 需要融资买料和供应链配合；订单不是现金收入 |
+
+### 7.2 当前供应链采纳和认证阶段
+
+| 平台/产品 | 当前采纳/认证阶段 | 证据与含义 |
+|---|---|---|
+| NVIDIA Blackwell/Blackwell Ultra | 已进入大规模订单和交付阶段 | Q1 披露 Blackwell Ultra 订单超过 130 亿美元；Q3 后 390 亿美元 AI server orders；AI GPU 平台 >80% 收入 |
+| NVIDIA GB300/B300 full-rack DLC | 正在多季度交付，客户 site readiness 影响收入节奏 | Q3 明确提到需求和 backlog 强，但数据中心 readiness 和供应约束使收入延迟 |
+| NVIDIA Vera Rubin NVL72/HGX Rubin NVL8 DCBBS | 蓝图和客户 engagement 阶段，计划 2026 下半年随 Rubin GA 对齐部署 | 2026-06-01 官方发布 Rubin blueprint，包含 NVIDIA reference architecture、1,152 GPU scalable unit 和 5MW-1GW |
+| AMD Helios / MI455X | 早期展示和合作阶段 | 2026-06-02 官方宣布与 AMD 合作展示 72-GPU double-width Helios rack；对 2027 第二来源有意义 |
+| DLC-2 液冷 | 已用于 DCBBS 与 Rubin blueprint；量产/交付能力是卖点 | 包含冷板、CDU、manifold、RDHx、cooling tower、coolant 和现场服务 |
+| SuperCloud Composer/Director | 随 DCBBS 附加，处于商业化放量早期 | 软件收入未单独充分披露；但管理软件被写入 DCBBS blueprint |
+
+### 7.3 一年后产能、采纳和认证场景
+
+| 场景 | 一年后可收入产能能力 | 供应链采纳 | 认证/平台阶段 | 关键观察指标 |
+|---|---:|---|---|---|
+| 基准 | 450-500 亿美元年化可收入能力 | GB300/B300 成为主出货；Rubin 小规模 early deployment；AMD Helios 试点 | NVIDIA Blackwell Ultra 认证/交付持续；Rubin blueprint 转少量项目；AMD Helios 开始客户验证 | Q4 FY2026 是否达到 110-125 亿；毛利率是否稳定 9.5%-10.5%；经营现金流是否改善 |
+| 乐观 | 600-700 亿美元年化可收入能力 | GB300 快速放量，Rubin 首批项目顺利，AMD 第二来源进入部分 NeoCloud | DCBBS 被更多客户当作标准交付模型；SuperCloud 软件随项目附加 | 390 亿美元订单 80%-90% 转收入；新订单续签；企业/channel mix 回升 |
+| 极度乐观 | 800-1000 亿美元年化可收入能力 | 多客户、多平台、多地域同步扩张，SMCI 成为若干 AI factory 单一责任方 | Rubin/NVIDIA next-gen、AMD Helios、液冷、电力、存储、软件全部进入标准化复制 | 需要 GPU/HBM 分配极顺、融资无障碍、客户机房按期 ready、低取消率 |
+
+## 8. 基于订单积压和供给的未来一年增速预测
+
+SMCI 不披露标准化 backlog。可用证据包括：Q1 FY2026 超过 120 亿美元 design wins 请求 Q2 交付；Q1 正式财报称 Blackwell Ultra 订单超过 130 亿美元；Q2 FY2026 收入创 126.83 亿美元；Q3 FY2026 因客户 readiness 和供应限制降至 102.43 亿美元但订单/backlog 强；2026-06-09 公司披露约 390 亿美元 advanced AI server orders、来自 20 多个客户，并拟融资 70 亿美元买料。
+
+### 8.1 订单转化模型
+
+| 场景 | 订单转化假设 | 供给/产能假设 | 取消/延迟假设 | 未来 12 个月收入 | 增速判断 |
+|---|---|---|---|---:|---:|
+| 基准 | 390 亿美元订单中 65%-75% 在 12-15 个月转收入；未来 12 个月确认约 220-290 亿 | GPU/HBM 和液冷供应仍紧，但足够支撑每季 110-130 亿美元 | 取消率 5%-10%；延迟一两个季度是常态 | 450-500 亿美元 | 对 FY2026 指引中值 +14%-26% |
+| 乐观 | 390 亿订单中 80%-90% 转收入，并有 150-200 亿新增订单续接 | GB300/B300、液冷、网络和客户机房同步 ready；融资解决买料 | 取消率 0%-5%；延迟可被新订单和加急交付抵消 | 550-650 亿美元 | +39%-64% |
+| 极度乐观 | 390 亿订单基本执行，并出现新的 250-350 亿美元大客户/主权 AI/NeoCloud 项目 | 5,000-6,000 rack/月物理能力被高值 GPU rack 较高利用；融资和供应链充足 | 取消率接近 0；客户愿意为 time-to-online 付费 | 750-900 亿美元 | +89%-127% |
+| 下行提醒 | 订单转化低于 50%，客户项目推迟或融资困难 | GPU/液冷/电力/光网络任一环节卡住 | 取消或重谈价格 10%-20%+ | 350-420 亿美元 | 接近或低于 FY2026 run-rate，估值继续折价 |
+
+### 8.2 关键判断
+
+1. 约 390 亿美元订单是强需求信号，但不应当等同于无风险 backlog。大额 AI server 订单通常受客户项目融资、电力审批、GPU 分配、平台升级和最终验收约束。
+2. SMCI 的物理 rack capacity 不是短板；真正短板是高值组件供应、现金买料、客户 site readiness、液冷施工和验收。
+3. 毛利率和现金流比收入增速更重要。如果 500 亿美元收入只能维持 6%-8% 毛利且经营现金流持续流出，估值不会显著扩张；如果收入 450-500 亿但毛利率稳定 10%-12%、FCF 转正，股票重估空间更大。
+4. 订单结构决定利润。企业/channel、DCBBS、软件/服务、液冷集成占比越高，毛利率越好；单一超大 hyperscaler 硬件订单越多，收入越大但毛利越薄。
+
+## 9. 竞争格局、主流技术判断、风险和替代方案
+
+### 9.1 主要竞争对手
+
+| 竞争层 | 主要竞争对手 | 与 SMCI 的竞争焦点 |
+|---|---|---|
+| 品牌 OEM | Dell、HPE、Lenovo、ASUS、Gigabyte、MiTAC | 全球服务、企业渠道、液冷 rack、AI factory 解决方案、融资能力 |
+| ODM/JDM | Quanta/QCT、Wiwynn、Foxconn/FII、Wistron、Inventec、Pegatron | Hyperscaler 直供、低成本制造、定制设计、规模化交付 |
+| EMS/系统制造 | Celestica、Jabil、Flex 等 | 代工、供应链组织、客户定制 |
+| 液冷/电力基础设施 | Vertiv、Schneider Electric、Eaton、Delta、nVent、CoolIT、Boyd、Modine、Parker、Stäubli、CPC、Amphenol | CDU、冷板、manifold、UQD、RDHx、电力和现场工程 |
+| 网络系统 | NVIDIA Networking、Arista、Cisco、Broadcom/Marvell 白盒生态、Celestica | 800G/1.6T、InfiniBand/Ethernet、Spectrum-X、Quantum-X800、CPO/硅光 |
+| 平台所有者 | NVIDIA、AMD、Intel、云厂商自研 ASIC | 参考架构、供货分配、软件生态和客户认证决定 SMCI 的上限 |
+
+### 9.2 SMCI 的优势
+
+1. Time-to-market：SMCI 的历史优势是第一时间推出新 CPU/GPU/accelerator 平台，AI 平台换代越快，速度价值越高。
+2. SKU 和 building-block 模式：从单机到整柜、存储、网络、液冷、电力和软件，能用模块化组合快速响应客户。
+3. NVIDIA/AMD 平台覆盖：公司有大量 NVIDIA-certified 系统和 Blackwell/Blackwell Ultra 产品，也在 2026 年展示 AMD Helios，降低单一平台叙事风险。
+4. 液冷和 DCBBS 的早期工程经验：Rubin blueprint 把 5MW-1GW、1,152 GPU scalable unit、DLC-2、冷却塔、CDU、storage/context memory、网络和软件合并成完整交付模型，这比单纯卖服务器更接近客户真正痛点。
+5. 美国本土制造和台湾供应链结合：在出口管制、主权 AI 和美国客户场景下有一定价值，但同时也提高合规审查强度。
+
+### 9.3 技术路线是否会成为主流
+
+| 技术/产品 | 主流概率 | 判断 |
+|---|---:|---|
+| Direct-to-chip liquid cooling | 高 | 100kW+ AI rack 下基本成为主路径；浸没式液冷 2026 年不是主流替代 |
+| Rack-scale plug-and-play AI systems | 高 | GB200/GB300/Rubin/Helios 都把采购单位从 server node 推向 rack/cluster |
+| DCBBS / 单一责任整站交付 | 中高 | 大客户仍可能自管多个供应商，但 NeoCloud、企业和主权 AI 更需要单一责任方 |
+| 800G 到 1.6T 光互联 | 高 | 2026 800G 主流，1.6T 开始 design-in；SMCI 不是核心光模块受益者，但交付离不开它 |
+| AMD Helios/open rack | 中 | 对 NVIDIA 第二来源很重要；能否成主流取决于 MI455X/MI400 性能、ROCm 和客户迁移 |
+| CPO/硅光直接替代可插拔 | 中长期高，短期中低 | 2026-2027 更多是试点/高端方案，不会立刻替代 800G/1.6T 可插拔主流 |
+| SMCI 自身软件控制平面 | 中 | 若只是附带管理工具，价值有限；若成为 DCBBS 运维控制层，利润和粘性都大幅提升 |
+
+### 9.4 替代方案和风险
+
+1. ODM 直供替代：超大云厂商可以直接找 Quanta/Wiwynn/Foxconn/Wistron 等 ODM，压低 SMCI 的系统毛利。SMCI 必须用速度、液冷、现场服务和多平台 SKU 证明价值。
+2. Dell/HPE/Lenovo 的企业渠道替代：企业和主权 AI 客户重视全球服务、融资、长期支持，Dell/HPE/Lenovo 有天然优势。SMCI 的服务体系和治理可信度要持续补课。
+3. NVIDIA 分配权风险：SMCI 的 AI 收入高度依赖 NVIDIA 平台。NVIDIA 可以通过 reference architecture、认证、供货分配和 DGX/partner ecosystem 影响系统商利润池。
+4. 平台切换风险：Q1/Q3 FY2026 已经证明客户会因 Blackwell/GB300/B300/Rubin 切换推迟收入。下一代平台越强，旧库存减值风险越大。
+5. 毛利率结构风险：Q2 FY2026 6.3% 毛利率说明大客户订单可能让收入看起来很高，但利润质量很薄。若 DCBBS/软件/服务不能放大，SMCI 会长期被当作低毛利集成商。
+6. 营运资本和融资风险：2026-03-31 存货 111 亿、应收 84 亿、现金 12.9 亿、债务和可转债 88 亿；6 月又拟融资 70 亿美元。订单扩张必须靠资本市场和银行支持。
+7. 治理与合规风险：延迟披露和内控修复虽已阶段性解决，但出口管制案件、客户审查、供应商合规要求会长期影响估值和订单资格。
+8. 客户替换成本分阶段变化：设计认证前替换成本中等，客户可让多家 OEM/ODM 报价；一旦 rack BOM、液冷、电力、网络、软件、现场验收和运维流程完成，替换成本高。但 hyperscaler 会保持多供应商策略，不能给 SMCI 垄断溢价。
+
+## 10. 投资跟踪框架
+
+### 10.1 最重要的正向信号
+
+| 信号 | 为什么重要 |
+|---|---|
+| Q4 FY2026 收入达到或超过 110-125 亿美元指引 | 证明 Q3 延迟收入可转回 |
+| GAAP 毛利率稳定在 10% 以上，Non-GAAP 更高 | 证明 Q2 6.3% 是阶段性而非结构性崩塌 |
+| 经营现金流从大幅流出转为接近平衡或转正 | 订单不再只消耗现金 |
+| 390 亿美元订单分季度转收入且客户数维持 20+ | 证明订单质量高、不是单一客户单点风险 |
+| DCBBS/软件/服务利润占比披露更清晰 | 证明公司不是单纯 pass-through box builder |
+| 企业/channel 占比继续维持 25%-35% | 有助于毛利率和客户分散 |
+| Rubin/Helios 客户验证顺利 | 证明下一代平台和非 NVIDIA 第二来源可以增加 runway |
+
+### 10.2 最重要的负向信号
+
+| 信号 | 风险含义 |
+|---|---|
+| Q4 FY2026 收入低于 110 亿美元或再次下调 | Q3 延迟不是短期时点问题 |
+| 毛利率回落到 6%-8% 且无恢复路径 | 大客户硬件订单吞噬利润，估值应继续低 P/S |
+| 经营现金流继续每季数十亿美元流出 | 融资摊薄和债务风险加剧 |
+| 存货继续大增但收入没有同步增长 | 平台切换和减值风险上升 |
+| 390 亿美元订单出现取消、重谈价或客户融资延迟 | 订单质量被重新定价 |
+| NVIDIA/AMD 平台认证或供应分配被竞争对手领先 | SMCI 的速度优势减弱 |
+| 出口合规/内控/诉讼事件升级 | 客户和供应商审查加强，估值折价扩大 |
+
+## 11. 结论
+
+SMCI 当前最好的投资解释不是“便宜 AI 股”，而是“AI rack 交付瓶颈下的高收入弹性系统商”。它的关键产品不是单台服务器，而是 NVIDIA Blackwell/GB300/Rubin 和 AMD Helios 时代的液冷整柜、DCBBS、现场集成、网络/电力/存储/软件打包。2026 年本地行业资料与公司披露相互印证：AI 服务器采购单位正在从节点转向 rack/cluster/AI factory，液冷、电力、网络和现场验收成为真正交付瓶颈，这正是 SMCI 的定位。
+
+但 SMCI 不是垄断型高毛利资产。GPU/HBM 和网络核心利润在上游，客户议价在下游，SMCI 被夹在中间，需要用速度、液冷、认证、现场工程和 DCBBS 单一责任方来换取溢价。Q2 FY2026 6.3% 毛利率、Q3 FY2026 66 亿美元经营现金流流出、2026 年 6 月 70 亿美元融资计划，都说明订单增长本身并不等于股东回报。未来 12 个月，最关键不是能不能拿订单，而是能否把约 390 亿美元订单按期转成收入、把毛利率稳定在 10% 以上、把 DCBBS/软件/服务变成利润而不是营销词，并把经营现金流从“买料黑洞”拉回可持续状态。
+
+综合判断：基准情形下，SMCI 未来 12 个月收入可达 450-500 亿美元，继续增长但估值仍受现金流和毛利率约束；乐观情形下，若 390 亿美元订单大部分转收入、GB300/Rubin/DLC 交付顺利、毛利率维持低双位数，收入可达 550-650 亿美元并出现估值修复；极度乐观情形下，需要新增大客户和高利用率 rack capacity，收入可冲 750-900 亿美元，但这对融资、供应、客户机房、合规和执行都要求极高。真正的上行杠杆来自 DCBBS/液冷/软件/服务利润占比提升，而不是单纯 GPU pass-through 收入堆高。
+
+## 12. 主要资料来源
+
+### 公司公告、财报和监管文件
+
+- Supermicro Q3 FY2026 financial results, 2026-05-05: https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Third-Quarter-Fiscal-Year-2026-Financial-Results/default.aspx
+- Supermicro Q3 FY2026 prepared remarks PDF, 2026-05-05: https://s204.q4cdn.com/707617056/files/doc_financials/2026/q3/SMCI-Q326-Prepared-Remarks.pdf
+- Supermicro Q2 FY2026 financial results, 2026-02-03: https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Second-Quarter-Fiscal-Year-2026-Financial-Results/default.aspx
+- Supermicro Q1 FY2026 financial results, 2025-11-04: https://ir.supermicro.com/news/news-details/2025/Supermicro-Announces-First-Quarter-Fiscal-Year-2026-Financial-Results/default.aspx
+- Supermicro Q4 and FY2025 financial results, 2025-08-05: https://ir.supermicro.com/news/news-details/2025/Supermicro-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2025-Financial-Results/default.aspx
+- Supermicro Q3 FY2025 financial results, 2025-05-06: https://ir.supermicro.com/news/news-details/2025/Supermicro-Announces-Third-Quarter-Fiscal-Year-2025-Financial-Results/default.aspx
+- Supermicro FY2025 Form 10-K: https://www.sec.gov/Archives/edgar/data/1375365/000137536525000027/smci-20250630.htm
+- Supermicro proposed $7.0B equity and equity-linked financing to fund AI orders, 2026-06-09: https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Proposed-7-0-Billion-of-Equity-and-Equity-linked-Financing-Transactions-To-Fund-AI-Orders/default.aspx
+- Supermicro Nasdaq filing compliance update, 2025-02-26: https://ir.supermicro.com/news/news-details/2025/Super-Micro-Computer-Inc.-is-in-Compliance-with-the-Nasdaq-Filing-Requirements/default.aspx
+- DOJ export-control indictment press release, 2026-03-19: https://www.justice.gov/opa/pr/three-charged-conspiring-unlawfully-divert-cutting-edge-us-artificial-intelligence
+
+### 产品、行业会议和技术资料
+
+- Supermicro DCBBS Blueprints for NVIDIA Vera Rubin NVL72 and HGX Rubin NVL8, 2026-06-01: https://ir.supermicro.com/news/news-details/2026/Supermicro-Introduces-DCBBS-Blueprints-for-NVIDIA-Vera-Rubin-NVL72-and-NVIDIA-HGX-Rubin-NVL8-Built-to-Scale-from-5MW-to-1GW-as-an-End-to-End-Total-Solution/default.aspx
+- Supermicro AMD Helios rack-scale AI platform, 2026-06-02: https://ir.supermicro.com/news/news-details/2026/Supermicro-Expands-Rack-Scale-AI-Leadership-with-AMD-Helios-Platform-Accelerating-Deployment-and-Operational-Efficiency/default.aspx
+- StockAnalysis SMCI valuation ratios, 2026-06 查询: https://stockanalysis.com/stocks/smci/statistics/
+- FullRatio SMCI PE ratio, 2026-06 查询: https://fullratio.com/stocks/nasdaq-smci/pe-ratio
+- Investor's Business Daily, Supermicro financing and AI orders market reaction, 2026-06-10: https://www.investors.com/news/technology/smci-stock-supermicro-falls-on-financing-to-fund-ai-orders/
+- MarketWatch, Super Micro $7B equity raise and $39B orders, 2026-06-10: https://www.marketwatch.com/story/super-micro-stock-plunges-as-7-billion-equity-raise-overshadows-booming-backlog-c5df2fc8
+
+### 项目内行业调研文件
+
+- `行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+- `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`

@@ -1,0 +1,154 @@
+# 公司收入传导与价值传导评估：Atkore（ATKR）
+
+报告日期：2026-06-12  
+公司：Atkore Inc. / ATKR  
+主口径：NTM，即 2026-06 至 2027-06 的未来 12 个月经营窗口。  
+资料边界：使用 `公司调研/`、`行业调研/` 与 Atkore 官方披露/产品资料；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较资料。  
+重要限制：本文只评估收入、利润、现金流和经营质量传导，不输出投资评级、目标价、股价区间或估值倍数判断；金融市场价格和估值数据不作为经营证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表全部使用 NTM；FY2026 指引、FY2026 H1 实际数、FY2027 或长期 AI 数据中心机会只作为补充锚，不替代 NTM。
+- 当前收入基准、指引和 run-rate：Atkore FY2026 H1 净销售额为 `$1.3869B`；Q2 FY2026 净销售额 `$731.4M`，同比 `+4.2%`，有机销量同比约 `+5%`；FY2026 最新净销售额指引为 `$2.90B-$2.95B`，隐含 FY2026 H2 收入 `$1.513B-$1.563B`，Q3 高于 Q2、Q4 略高于 Q3。当前 NTM 基准应以这个 H2 run-rate 加 FY2027 H1 正常兑现为主，而不是以 AI 数据中心总 CapEx 外推。
+- 重要产品/业务线：`metal framing / cable management / construction services`、`plastic pipe / conduit / fittings`、`metal electrical conduit / fittings`、`electrical cable / flexible conduit`、`mechanical tube & other`；其中 Unistrut、US Tray、FRE fiberglass conduit、large diameter steel conduit、specialty conduit、aisle containment / prefab construction services 是最关键的传导点。
+- NTM 公司收入四情景：悲观 `$2.78B-$2.95B`，基准 `$3.05B-$3.18B`，乐观 `$3.25B-$3.45B`，极度乐观 `$3.55B-$3.90B`。基准比 FY2026 指引中点 `$2.925B` 高约 `+4% 至 +9%`，核心来自 FY2026 H2 正常 ramp、data center / construction services、steel/specialty conduit 和 PVC/fiberglass conduit 的延续增长。
+- 利润或 EBITDA 四情景：悲观调整 EBITDA `$285M-$340M`；基准 `$370M-$430M`；乐观 `$460M-$570M`；极度乐观 `$620M-$760M`。利润弹性不是收入自动放大，而是 price-cost spread、HDPE 剥离后 mix、factory closure savings、construction services 利润率和 cable 铜铝成本共同决定。
+- 最大传导瓶颈：公司未披露 data center backlog、客户名、项目金额或交付时间表；普通 core business 仍偏短周期，不能把 AI 数据中心行业订单池直接收入化。
+- 最大利润率变量：钢、PVC resin、铜、铝、进口与 tariff、以及客户是否愿意为短交期、BIM / prefab 和认证产品付费。Q2 FY2026 毛利率只有 `18.6%`，说明“需求增长”尚未自动转化为利润修复。
+- 最大现金流变量：FY2026 H1 自由现金流约 `-$53.5M`，Q3 还有 `$136.5M` PVC litigation settlement payment；NTM 现金流修复依赖 AR 回收、库存效率、capex `$80M-$90M` 年化控制和利润率恢复。
+- 可信度：基准为中高，因收入表、产品结构和 FY2026 指引证据为 A 级；乐观为中，因有 data center 需求和产品线证据但缺少量化 backlog；极度乐观为低，只能作为“多个 AI campus 标准 BOM + 明确 backlog + price-cost spread 明显转正”的上限。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Metal framing, cable management & construction services | FY2026 H1 约 `$375M`；按 H1 占比和 H2 ramp，NTM 基准约 `$0.82B-$0.90B` | H1 `27%` | 最关键 AI/DC 传导点，含 Unistrut、US Tray、wire basket、cable tray、strut、global construction services、aisle containment | A/B | 进入基准；收入表可见，Q2 deck 写明继续期待 project 和 data center 需求 ramp | Prefab pathway、BIM kit、liquid-ready support 和 aisle containment 若被 hyperscaler 标准化，进乐观或极度乐观 |
+| Plastic pipe, conduit & fittings | FY2026 H1 约 `$305M`；HDPE 出售后 NTM 基准降为约 `$0.55B-$0.62B` | H1 `22%`，但后续 continuing share 低于 H1 | PVC conduit、fiberglass conduit、FRE、fire-rated / corrosion-resistant conduit；数据中心地下、室外、灰空间路径 | A/B | 进入基准，但必须扣除 HDPE 直接经营收入；PVC/fiberglass 可进入基准，HDPE 只保留 10% 股权影响 | Fiberglass / fire-rated / DC campus duct bank 标准化进乐观；HDPE 不再作为直接 NTM 收入 |
+| Metal electrical conduit & fittings | FY2026 H1 约 `$305M`；NTM 基准约 `$0.68B-$0.76B` | H1 `22%` | 大尺寸 steel conduit、specialty conduit、fittings；受非住宅、电气基础设施、数据中心和进口变化影响 | A/B | 进入基准；Q2 Electrical 收入同比 `+8.1%`，steel/specialty conduit 需求明确 | 若 steel conduit imports 继续下降、large diameter / specialty 产品短交期溢价，进乐观 |
+| Electrical cable & flexible conduit | FY2026 H1 约 `$236M`；NTM 基准约 `$0.46B-$0.52B` | H1 `17%` | 收入大但利润质量弱；铜铝成本和 spread compression 是主要变量 | A | 进入基准但低权重；不把 data center 电缆需求等同于高利润贡献 | 若铜铝价格可快速传导且数据中心安装加速，进入乐观；否则只贡献收入不贡献利润 |
+| Mechanical tube & other | FY2026 H1 约 `$166M`；NTM 基准约 `$0.37B-$0.43B` | H1 `12%` | solar torque tube 和部分其他业务，非 AI 主线但会影响公司收入和固定成本吸收 | A/B | 进入公司汇总，作为抵消项和非 AI 增长项；不作为 AI 数据中心收入 | Utility-scale solar 强于预期可改善公司收入和利用率，但不作为 data center alpha |
+| HDPE、Tectron、Belgium surface protection / powder coating | Q2 后已 divest 或退出；FY2026 H2 指引减少约 `$75M` | 不适用 | 影响可比口径、收入基数和利润率 mix | A | 排除直接 NTM 收入；HDPE 只保留 10% 股权和约 `$28M` 未来出资义务 | 仅作附录跟踪，不进入基准收入 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估产品或服务的外部需求池，相对“当前需求锚”判断需求强弱，不评估 Atkore 份额、收入确认或利润率。当前需求锚主要来自 Atkore FY2026 Q2 deck、电话会文字记录、项目内 `导管、桥架与线缆管理` 行业研究和 AI 数据中心建设规模资料。需求单位以 NTM 行业/终端需求增速、AI/DC 项目路径需求和产品采购节奏表达。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Metal framing, cable management & construction services | Atkore H1 该产品区占收入 `27%`，YTD 量增 `+LSD%`；行业报告认为 wire basket、ladder tray、strut、prefab pathway 是 2026 最可能放量方向 | 全行业 data center 项目延迟，需求仅 `0-5%` 增长；construction services 项目推迟 | 终端需求 `+5-10%`；AI/DC 子需求 `+15-25%`，符合公司 H2 ramp 预期 | 终端需求 `+12-20%`；AI/DC 子需求 `+30-50%`，客户加速 prefab 与 BIM kit | 终端需求 `+25-40%`；AI/DC 子需求 `+70%+`，多个 25MW/50MW block 标准化采购 | 相对当前预期约 `-$80M` 至 `+$300M+` 行业需求可服务变化；公司收入化另在后两步判断 | 悲观低于当前预期；基准符合 FY2026 指引；乐观和极度乐观高于当前预期 | 正向：AI rack 密度、路径宽度、预制化、JLL/CBRE 的建设强度；反证：电力接入、MEP 劳动力、客户项目延迟 |
+| Plastic pipe, conduit & fittings | H1 占收入 `22%`，YTD `+HSD%`；Q2 deck 写明 PVC conduit 支撑 data center、commercial、industrial；HDPE 已出售 | PVC resin 上行、进口/价格竞争、HDPE 剥离后需求无法替代，continuing demand `-5% 至 +2%` | Continuing PVC/fiberglass conduit demand `+4-9%`；AI/DC duct bank 与灰空间路径稳定 | Continuing demand `+10-18%`；fiberglass/fire-rated conduit、larger duct bank、utility interconnect 项目强 | Continuing demand `+20-35%`；AI campus 地下/室外 duct bank 和 fire-rated conduit 局部紧缺 | 相对当前预期 continuing product demand 约 `-$60M` 至 `+$180M+` | 基准略高于一般非住宅但符合公司 HSD 线索；HDPE 不能计入需求基准 | 正向：PVC/fiberglass 导管是数据中心刚需；反证：HDPE divestiture、PVC resin 成本、普通 PVC 商品化 |
+| Metal electrical conduit & fittings | H1 占收入 `22%`，YTD `+MSD%`；Q2 披露 metal conduit 特别是 larger sizes demand 健康，specialty conduit 增长 | 非住宅/工业开工放缓，steel cost 传导失败，需求 `-3% 至 +2%` | Demand `+4-8%`，large diameter steel 和 specialty conduit 正常增长 | Demand `+10-18%`，进口下降、项目短交期和特殊规格带来上修 | Demand `+20-35%`，大尺寸/特殊 conduit 进入多个 AI campus 标准路径 | 相对当前预期约 `-$70M` 至 `+$220M+` | 基准符合当前 YTD MSD 与 FY2026 mid-single volume guide | 正向：steel conduit imports from Mexico 下降、数据中心大尺寸路径；反证：钢/锌成本、进口替代、普通导管低差异化 |
+| Electrical cable & flexible conduit | H1 占收入 `17%`，YTD `-MSD%`；Q2 管理层称 volume down but revenue flat，铜铝 cost spread compression | 需求 `-8% 至 -3%`，客户推迟采购，铜铝价格压制项目 | 需求 `-2% 至 +3%`，收入因价格维持但销量弱 | 需求 `+5-10%`，数据中心电气安装强于预期且价格可传导 | 需求 `+12-20%`，但除非 price-cost 同步改善，否则利润不跟随 | 相对当前预期约 `-$70M` 至 `+$80M` | 基准低于其他产品线；乐观也不能自动上调利润 | 正向：电气安装总量增加；反证：铜铝成本、低差异化、客户可多供 |
+| Mechanical tube & other | H1 占收入 `12%`，YTD `+DD%`；solar product volumes 强，Tectron 已出售 | Solar 项目延迟，non-core 业务继续退出，需求 `-5% 至 +3%` | Solar torque tube / remaining tube demand `+5-12%`；非 AI 但支撑工厂利用率 | Demand `+15-25%`，utility-scale solar 项目集中交付 | Demand `+30%+`，太阳能项目和电气 conduit 产能转移同时顺利 | 相对当前预期约 `-$40M` 至 `+$100M+` | 基准符合当前 DD 但不是 AI demand | 正向：solar backlog 与产能转移；反证：太阳能税收/项目排期和非核心业务剥离 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些需求可以进入 Atkore NTM 收入表，以及当前可收入化基数；不预测增长和利润率。证据等级按收入表可确认性定义。A 级为收入表、分部或正式指引；B 级为订单、backlog、正式合同或明确交付时间表；C 级为客户认证、design win、产能规划或可验证管理层披露；D/E 不进 NTM 基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Metal framing, cable management & construction services | FY2026 H1 约 `$375M`，H1 占收入 `27%`；Q2 deck 指向 project/data center demand ramp | 直接 | 较高，项目化、BIM/prefab 和 construction services 比普通材料件利润更好 | `$0.74B-$0.82B` | `$0.82B-$0.90B` | `$0.92B-$1.05B` | `$1.05B-$1.20B` | 基准符合 FY2026 H2 ramp；乐观高于当前预期 | A/B，项目 backlog 定性但未量化 | 是 | 收入表、H1 产品结构、FY2026 guide、管理层 data center commentary | 基准纳入；未披露 backlog 的增量只进乐观和极度乐观 |
+| Plastic pipe, conduit & fittings | FY2026 H1 约 `$305M`，H1 占收入 `22%`；HDPE 2026-04 已出售，FY2026 H2 指引减少约 `$75M` 包含 HDPE/Belgium | 直接，HDPE 后续仅间接/股权 | PVC/fiberglass 中等；普通 PVC 商品化；HDPE 剥离后 mix 可能改善但收入减少 | `$0.50B-$0.57B` | `$0.55B-$0.62B` | `$0.62B-$0.72B` | `$0.70B-$0.85B` | 基准低于按 H1 share 简单年化，因为要扣除 HDPE | A；fiberglass/data center 项目为 B/C | 是，但扣除 HDPE | H1 product area 和 Q2 divestiture披露；PVC/fiberglass仍在 continuing operations | Continuing PVC/fiberglass 纳入；HDPE 直接收入排除 |
+| Metal electrical conduit & fittings | FY2026 H1 约 `$305M`，H1 占收入 `22%`；Q2 Electrical segment 收入 `$532.5M`，同比 `+8.1%` | 直接 | 中等；large diameter/specialty 比普通 steel conduit 更好 | `$0.62B-$0.70B` | `$0.68B-$0.76B` | `$0.76B-$0.86B` | `$0.85B-$1.00B` | 基准符合当前预期；乐观需要进口下降和特殊规格溢价 | A/B | 是 | 收入表、产品结构、management commentary | 基准纳入；specialty conduit 超预期只进乐观 |
+| Electrical cable & flexible conduit | FY2026 H1 约 `$236M`，H1 占收入 `17%`；管理层称 cable 约占公司销售 `17%`，volume down but revenue flat | 直接 | 低到中；铜铝 spread compression 使收入质量弱 | `$0.43B-$0.49B` | `$0.46B-$0.52B` | `$0.50B-$0.58B` | `$0.53B-$0.62B` | 基准略低于 H1 share 正常年化；收入可见但利润折扣 | A | 是，低权重 | 收入表和 product area disclosure | 纳入收入，利润贡献保守 |
+| Mechanical tube & other | FY2026 H1 约 `$166M`，H1 占收入 `12%`；Tectron divestiture 已反映，solar volume强 | 直接但非 AI | 中；solar torque tube 和产能利用率决定 | `$0.34B-$0.40B` | `$0.37B-$0.43B` | `$0.40B-$0.48B` | `$0.42B-$0.52B` | 基准符合当前 volume growth；不作为 data center 暴露 | A/B | 是，作为公司汇总 | H1 product area disclosure 和 FY2026 guide | 纳入公司收入，但不作为 AI 需求捕获 |
+| HDPE、Tectron、Belgium non-core divestitures | 已完成或退出；HDPE 2026-04 sale，Atkore 保留 10% equity stake 并将出资约 `$28M` | 间接 | 不进入 direct EBITDA，可能有权益法或现金影响 | `$0` direct | `$0` direct | `$0` direct | `$0` direct | 低于旧收入锚点 | A | 否 | 交易已完成；FY2026 guide 已下调 | 排除 direct NTM 收入，只作现金/附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内可贡献的收入和利润。利润贡献使用“产品/分部层面调整 EBITDA 贡献近似值”，不是 GAAP 净利润；公司未披露产品级毛利率和 backlog，因此含估算。行业 TAM、客户总预算、AI 数据中心 CapEx 不直接转为 Atkore 收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Metal framing, cable management & construction services | 悲观 | `$0.74B-$0.82B` | `$80M-$110M` | 低于当前结构，项目延迟和施工服务吸收不足 | 低于当前预期约 `$80M-$120M` | H1 收入可见，但项目 backlog 未量化 | 保留悲观 | data center 项目推迟、MEP劳动力、低端 strut/tray 价格竞争 |
+| Metal framing, cable management & construction services | 基准 | `$0.82B-$0.90B` | `$115M-$155M` | margin 逐步修复，施工服务和 prefab mix 改善 | 符合 FY2026 H2 ramp 和当前 guide | H1 `27%` share；Q2 deck 预期 project/DC demand ramp；产品页有 data center construction services | 保留基准 | 缺少客户名、项目金额和交付表，不能超配 |
+| Metal framing, cable management & construction services | 乐观 | `$0.92B-$1.05B` | `$160M-$220M` | 利润率上行，BIM/prefab 和 global construction services 占比提升 | 高于当前预期 `$80M-$180M` | 数据中心是最高增长 end market；行业对 prefab pathway、strut/support 需求强 | 保留乐观 | 必须看到项目订单、分销商 backlog 或 construction services 加速 |
+| Metal framing, cable management & construction services | 极度乐观 | `$1.05B-$1.20B` | `$240M-$330M` | 大幅扩张，但只在标准 BOM / repeatable AI hall 成立 | 代表 NTM 上限 | Fortune 50 / colo project capability、Unistrut HAC、US Tray、wire basket 组合 | 下移为低可信上限 | 未披露 data center backlog；普通 strut/tray 不是稀缺硬件 |
+| Plastic pipe, conduit & fittings | 悲观 | `$0.50B-$0.57B` | `$55M-$80M` | margin 受 PVC resin、进口和 HDPE 剥离扰动 | 低于当前预期 | HDPE direct revenue 移除，普通 PVC 可替代 | 保留悲观 | 树脂成本和价格传导失败 |
+| Plastic pipe, conduit & fittings | 基准 | `$0.55B-$0.62B` | `$75M-$105M` | continuing PVC/fiberglass 稳定，中等利润 | 符合扣除 HDPE 后当前预期 | Q2 deck：PVC conduit 支撑 data center/commercial/industrial；FRE 覆盖 data center | 保留基准 | H1 share 不可直接年化，必须扣除 HDPE |
+| Plastic pipe, conduit & fittings | 乐观 | `$0.62B-$0.72B` | `$105M-$150M` | fiberglass/fire-rated/specialty mix 改善 | 高于当前预期 `$50M-$120M` | FRE fiberglass、fire-rated、duct bank 需求；AI campus 外场路径先下单 | 保留乐观 | 客户指定和交付时间表缺少量化 |
+| Plastic pipe, conduit & fittings | 极度乐观 | `$0.70B-$0.85B` | `$160M-$240M` | 特殊 conduit 高 mix，普通 PVC 不拖累 | NTM 上限，不是当前预期 | 大型 AI campus 地下/室外 duct bank、fire-rated conduit 标准化 | 下移为低可信上限 | 若只是 PVC commodity demand，利润无法非线性上修 |
+| Metal electrical conduit & fittings | 悲观 | `$0.62B-$0.70B` | `$75M-$105M` | steel cost 与进口压制 margin | 低于当前预期 | Electrical Q2 收入增长，但 input cost outpaced price | 保留悲观 | steel/zinc 成本、进口替代、普通 conduit 商品化 |
+| Metal electrical conduit & fittings | 基准 | `$0.68B-$0.76B` | `$95M-$130M` | margin 稳定修复，large diameter 与 specialty 支撑 | 符合当前预期 | Q2 Electrical 收入 `+8.1%`；metal conduit 和 specialty conduit 需求健康 | 保留基准 | 价格/成本滞后仍可能拖累 |
+| Metal electrical conduit & fittings | 乐观 | `$0.76B-$0.86B` | `$135M-$190M` | price-cost spread 转正，specialty mix 提升 | 高于当前预期 `$70M-$140M` | imports from Mexico steel conduit 下降、data center larger conduit 需求 | 保留乐观 | 需要持续价格上涨和国内供需改善 |
+| Metal electrical conduit & fittings | 极度乐观 | `$0.85B-$1.00B` | `$210M-$300M` | 大尺寸/specialty 供应紧，短交期溢价 | NTM 上限 | 多个 AI campus 采用标准电气路径，机械产能转向 conduit | 下移为低可信上限 | 普通 steel conduit 非高壁垒，不能只靠 AI 叙事上修 |
+| Electrical cable & flexible conduit | 悲观 | `$0.43B-$0.49B` | `$15M-$35M` | margin 下行，volume down、铜铝成本高 | 低于当前预期 | Q2 管理层称 cable volume down but revenue flat | 保留悲观 | 铜铝成本、低差异化、客户采购节奏 |
+| Electrical cable & flexible conduit | 基准 | `$0.46B-$0.52B` | `$30M-$55M` | margin 低位稳定，价格部分传导 | 符合当前预期但利润折扣 | H1 `17%` share；成本压缩已在管理层披露 | 保留基准 | 收入可见不等于利润可见 |
+| Electrical cable & flexible conduit | 乐观 | `$0.50B-$0.58B` | `$50M-$85M` | price-cost spread 改善，数据中心安装需求回升 | 小幅高于当前预期 | 数据中心电气安装总量增加 | 保留但中低可信 | 铜铝价格波动会吞噬收入 |
+| Electrical cable & flexible conduit | 极度乐观 | `$0.53B-$0.62B` | `$80M-$120M` | 只有成本完全传导时才扩张 | 上限 | 高密机房电缆安装强，客户接受 price escalation | 下移为附录上限 | 低毛利 pass-through 不能自动变利润 |
+| Mechanical tube & other | 悲观 | `$0.34B-$0.40B` | `$35M-$55M` | 产能吸收弱，solar 项目延迟 | 低于当前预期 | Tectron 已 divest，非核心减少 | 保留悲观 | solar 项目、税收、非核心退出 |
+| Mechanical tube & other | 基准 | `$0.37B-$0.43B` | `$45M-$70M` | 正常，支撑固定成本 | 符合当前预期 | H1 `+DD%` volume，solar product growth | 保留基准 | 非 AI，不应上调公司 data center 纯度 |
+| Mechanical tube & other | 乐观 | `$0.40B-$0.48B` | `$55M-$85M` | 利用率改善 | 高于当前预期但非 AI | Utility-scale solar 项目和产能转移顺利 | 保留乐观 | Solar demand 可波动，和 AI 传导不同 |
+| Mechanical tube & other | 极度乐观 | `$0.42B-$0.52B` | `$80M-$120M` | 利润率上修，但非公司长期主轴 | 上限 | Solar 与 conduit capacity shift 同时顺利 | 仅作跟踪 | 不能用来证明 AI 数据中心收入质量 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品贡献合成为公司 NTM 总收入、毛利率、经营利润率、调整 EBITDA、净利润和自由现金流方向。公司未披露产品级 backlog、data center revenue 或 FY2027 指引，因此基准以 FY2026 H2 指引 run-rate、FY2026 H1 实际、产品结构和可见需求为主。公司层面调整 EBITDA 低于产品贡献合计，因为还要扣除 unallocated expenses；GAAP 净利润受诉讼、资产出售和重组时点影响，无法可靠点估。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$2.78B-$2.95B` | 相对 FY2026 指引中点 `$2.925B` 为 `-5% 至 +1%` | 低于当前 FY2026 H2 run-rate 和 mid-single-digit volume 预期 | `18.0%-20.0%` | `5.5%-7.5%` | 调整 EBITDA `$285M-$340M`；GAAP净利润无法可靠量化，可能受 settlement/restructuring 继续扰动 | 负到接近盈亏平衡；Q3 settlement、AR和库存消化压制 | 中 | data center 项目延迟、HDPE剥离后缺口、price-cost spread 仍负、cable 铜铝压缩 |
+| 基准公司 | `$3.05B-$3.18B` | `+4% 至 +9%` | 接近当前经营预期正常兑现，FY2026 H2 指引达成且 FY2027 H1温和增长 | `20.5%-22.5%` | `8.5%-10.0%` | 调整 EBITDA `$370M-$430M`；调整净利润方向改善，GAAP净利润受一次性项影响无法可靠量化 | Q3 settlement 后转正；NTM FCF 约 `$50M-$150M` 方向性改善 | 中高 | 收入拐点已出现但利润率仍未完全修复，data center backlog 未量化 |
+| 乐观公司 | `$3.25B-$3.45B` | `+11% 至 +18%` | 高于当前预期，且不是单一小基数项目造成 | `22.5%-25.0%` | `10.5%-12.5%` | 调整 EBITDA `$460M-$570M`；调整净利润明显改善 | FCF 明显转正，约 `$170M-$300M`，营运资本不再吞噬增长 | 中 | 需要 construction services、specialty conduit、PVC/fiberglass 同时强，且价格覆盖成本 |
+| 极度乐观公司 | `$3.55B-$3.90B` | `+21% 至 +33%` | 显著高于当前预期；需多个核心传导环节同时突破 | `25.5%-28.0%` | `13.0%-16.0%` | 调整 EBITDA `$620M-$760M`；调整净利润大幅改善，GAAP仍取决于一次性项 | FCF 强转正，约 `$300M-$450M`，但需客户预付款/项目回款顺利 | 低 | 必须披露或验证 data center backlog / standard BOM / 客户项目和 price-cost spread，不能只靠行业 CapEx |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Q2 FY2026 收入同比 `+4.2%`、有机销量约 `+5%`，FY2026 指引 `$2.90B-$2.95B` | 公司汇总、收入基数 | 支撑基准 NTM `$3.05B-$3.18B`，因为 H2 指引高于 H1 run-rate | 不自动提高利润率；Q2 EBITDA margin 仍低 | 说明收入拐点比现金流和利润拐点更早 | 基准保留 |
+| FY2026 H1 产品结构：metal framing/cable mgmt/construction services `27%`，plastic conduit `22%`，metal conduit `22%`，cable `17%`，mechanical/other `12%` | 收入基数、产品贡献 | 允许按产品逐项建模，而非按 AI TAM 分摊 | 高利润产品与低利润 cable 需要分开处理 | 结构可见但产品级 backlog 不可见 | 基准保留 |
+| Data center 是公司最高增长终端之一，Q2 deck 写明 project/data center related demand ramp | 需求、产品贡献 | 上移 metal framing/cable mgmt/construction services、PVC/fiberglass、large conduit 的乐观需求 | 只有 prefab/construction services/specialty mix 才上修利润 | 支持 H2 ramp，但缺少合同金额 | 乐观保留，极度乐观下移为上限 |
+| 公司未披露 data center revenue、customer names、backlog、RPO、项目金额或取消率 | 收入基数、可信度 | 限制把 C 级项目线索纳入基准 | 限制利润率非线性上修 | 交付节奏、验收和营运资本不可精确验证 | 极度乐观下移；部分机会仅作跟踪 |
+| HDPE、Tectron、Belgium 非核心资产剥离，FY2026 H2 收入指引减少约 `$75M` | 收入基数、公司组合 | 直接降低 plastic/other 可收入化基数 | 可能改善 continuing operations mix，但不能立即确认 | HDPE 保留 10% 股权和约 `$28M` 出资义务 | HDPE direct revenue 排除；mix 改善只保守纳入 |
+| Q2 FY2026 毛利率 `18.6%`，input costs `$82.1M` 明显超过 price increase `$10.2M` | 利润率、产品贡献 | 收入增长不能直接上修利润 | 限制 base margin，特别是 cable、PVC、steel conduit | 若库存和成本滞后持续，FCF修复推迟 | 悲观保留，基准利润率保守 |
+| Cable business 占销售约 `17%`，volume down but revenue flat，铜铝 spread compression | 产品贡献、公司利润 | 收入可见但质量低 | 抑制 company EBITDA margin 上限 | 铜铝价格波动提高营运资本需求 | Cable 乐观利润下移，极度乐观仅作上限 |
+| 三座工厂关闭、80/20 initiative、产能转向 electrical conduit | 执行可信度、利润率 | 支撑 FY2026 H2 sequential improvement | 支撑 `$10M-$12M+` 年化节省和固定成本吸收 | 执行顺利则现金流改善 | 基准保留，乐观可上修 |
+| FY2026 H1 FCF `-$53.5M`，Q3 需支付 `$136.5M` settlement | 现金流 | 不直接影响需求或收入 | 不影响调整 EBITDA，但影响 GAAP/FCF | 短期 FCF 压力明确 | FCF 结论保守；不重复惩罚收入情景 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 收入低于当前 FY2026 H2 run-rate，margin 维持低位 | Q2 收入已同比转正，销量改善，资产负债表不构成近端压力 | input cost、cable spread、HDPE收入移除、settlement cash outflow、data center 项目延迟 | 保留 | 悲观公司 `$2.78B-$2.95B` / EBITDA `$285M-$340M` | 中 | 原材料成本只在利润率层级处理；不再重复压低需求和收入基数 |
+| 基准 | FY2026 H2 指引达成，FY2027 H1 继续温和增长 | A级收入表、FY2026 guide、H1产品结构、data center需求定性支持 | backlog未量化，Q2毛利率仍弱，HDPE剥离后口径变化 | 保留 | 基准公司 `$3.05B-$3.18B` / EBITDA `$370M-$430M` | 中高 | HDPE剥离只处理一次：收入基数扣除，后续不再作为额外需求风险 |
+| 乐观 | 数据中心、construction services、specialty conduit 和 price-cost 改善共同上修 | 行业需求强；公司产品页和Q2 deck均指向data center/project demand；工厂关闭和80/20改善执行 | 缺少客户/项目金额；普通conduit与tray商品化；cable成本风险 | 保留 | 乐观公司 `$3.25B-$3.45B` / EBITDA `$460M-$570M` | 中 | data center backlog不透明只限制收入可确认性，不重复惩罚行业需求 |
+| 极度乐观 | 多个AI campus标准BOM、prefab/Unistrut/FRE/specialty conduit同时突破 | Atkore产品组合覆盖数据中心路径、支撑、导管、桥架和施工服务；AI建设行业总量足够大 | 任一核心环节缺证据：客户、订单、价格、交付、利润率均未量化 | 下移 | 作为极度乐观上限保留，不进入基准或普通乐观主口径 | 低 | 行业CapEx大不是公司收入证据，不能再次作为利润上修证据 |
+
+## 8. 结论
+
+- 最可能情景：基准偏乐观的经营修复，而不是纯 AI 高成长。NTM 收入最可能落在 `$3.05B-$3.18B`，高于 FY2026 指引中点约 `+4% 至 +9%`；调整 EBITDA 最可能 `$370M-$430M`，对应利润率逐步修复但尚未回到疫情后高利润期。
+- NTM 收入结论：收入传导可以成立，但主要是“数据中心和非住宅电气路径需求 + FY2026 H2 ramp + continuing operations mix”共同推动。可收入化证据最强的是收入表、产品结构和 FY2026 指引；data center backlog 没有量化，因此不能把 AI 数据中心行业高增直接转成公司基准收入。
+- 利润/现金流结论：利润修复比收入修复更难。Q2 FY2026 毛利率 `18.6%` 和 input costs 超过 price increase 是最大反证；基准利润需要 H2 price-cost 改善、factory closure savings、HDPE 剥离后 mix 改善和 construction services 规模效应同时兑现。现金流在 Q3 settlement 后才更容易转正。
+- 主要传导瓶颈：第一，data center 项目需求与 Atkore 已确认收入之间缺少量化 backlog；第二，普通 conduit/tray 商品化会限制利润率；第三，铜铝/钢/PVC成本会使收入增长变成低毛利 pass-through；第四，HDPE剥离让 H1 product share 不可简单年化。
+- 乐观情景成立条件：Q3/Q4 FY2026 收入和调整 EBITDA 连续高于 Q2；metal framing/cable management/construction services 从 low-single-digit 加速；Electrical adjusted EBITDA margin 从 `14.0%` 明显回升；公司披露更多 project backlog、客户范围、data center revenue 或 construction services订单。
+- 极度乐观情景成立条件：多个 AI campus 把 Unistrut/US Tray/FRE/specialty conduit/prefab services 纳入标准 BOM；订单或 LOI 转为可交付 backlog；price-cost spread 转正；S&I margin 修复到 `12%-15%+`，Electrical margin 修复到 `16%-18%+`；FCF 在 settlement 后强转正。
+- 悲观情景触发条件：FY2026 H2 未达到 `$1.51B-$1.56B` 隐含收入；Q3/Q4 EBITDA margin 仍在 `11%-12%`；cable spread compression 扩大；PVC/steel成本无法传导；data center项目因电力、许可或融资延后。
+- 后续跟踪数据：Q3/Q4 FY2026 sequential revenue、Electrical adjusted EBITDA margin、S&I margin、metal framing/cable management/construction services 量增、PVC/fiberglass conduit volume、steel conduit imports、铜铝/钢/PVC resin price-cost spread、data center backlog/LOI量化、settlement后 FCF、HDPE 10% equity stake 的现金义务。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司经营数据以 Atkore FY2026 Q2 release 和 Q2 deck 为主，季度截至 2026-03-27，披露日期 2026-05-05；本地公司调研日期 2026-06-11；行业资料日期 2026-06-10 至 2026-06-11；外部刷新日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Atkore Q2 FY2026 results, 2026-05-05: https://investors.atkore.com/investors/news/news-details/2026/Atkore-Inc--Announces-Second-Quarter-2026-Results/default.aspx
+  - Atkore Q2 FY2026 earnings deck: https://s202.q4cdn.com/690266772/files/doc_financials/2026/q2/Q2-2026-Earnings-Deck-vFinal.pdf
+  - Atkore 2025 Annual Report: https://s202.q4cdn.com/690266772/files/doc_financials/2025/q4/ATKR-2025-Annual-Report-Filed.pdf
+  - Atkore HDPE Pipe & Conduit sale, 2026-04-08: https://investors.atkore.com/investors/news/news-details/2026/Atkore-Inc--Announces-Sale-of-HDPE-Pipe--Conduit-Business-to-Infra-Pipes/default.aspx
+  - Atkore Q2 FY2026 call transcript, secondary transcript: https://www.fool.com/earnings/call-transcripts/2026/05/05/atkore-atkr-q2-2026-earnings-transcript/
+- 主要产品来源：
+  - Atkore Data Centers and Telecom Solutions: https://www.atkore.com/markets/data-centres
+  - Atkore Unistrut Data Center Construction: https://www.atkore.com/products/global-construction-services/data-center-construction
+  - Atkore US Tray: https://www.atkore.com/about-us/brands/us-tray
+  - Atkore FRE Composites: https://www.atkore.com/about-us/brands/fre-composites
+- 项目内行业来源：
+  - `行业调研/AI园区电力_机电_冷却/行业调研_导管、桥架与线缆管理_2026-06-10.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`
+- 外部行业交叉来源：
+  - JLL 2026 Global Data Center Market Outlook: https://www.jll.com/en-us/insights/market-outlook/data-center-outlook
+  - CBRE U.S. Real Estate Market Outlook 2026, Data Centers: https://www.cbre.com/insights/books/us-real-estate-market-outlook-2026/data-centers
+  - Goldman Sachs, U.S. data center power demand projected to double by 2027: https://www.goldmansachs.com/insights/articles/us-data-center-power-demand-projected-to-double-by-2027
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 指引只作为当前预期锚，不能替代 NTM；NTM 基准用 FY2026 H2 指引 run-rate 加 FY2027 H1温和增长估算。
+  - FY2027 及以后最大的远期期权是 prefab modular pathway、HVDC/800VDC 配套路由、liquid-cooling-ready support、smart / sensorized cable management 和 data hall 标准 BOM。由于 Atkore 没有披露客户、订单、RPO 或交付时间表，这些不进入 NTM 基准。
+  - AI 数据中心建设总量用于判断外部需求池，不直接计入公司收入；只有通过 Atkore 已披露收入、产品结构、订单/LOI、客户项目、产能和交付路径验证后，才可收入化。

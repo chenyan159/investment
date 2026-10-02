@@ -1,0 +1,44 @@
+[
+  {
+    "path": "D:\\investment\\AGENTS.md",
+    "backup": "D:\\investment\\备份\\旧目录删除后收尾_2026-09-13_225000\\修改前\\AGENTS.md",
+    "before_sha256": "7fdf7afd87e6c327449a9cb5806a913bd96ec14b7979d231e2ce2f64a060c08b",
+    "after_sha256": "632680e2471521c10fa76a90e541aa34c05371defdafedd1427e247c4233832f"
+  },
+  {
+    "path": "C:\\Users\\cheny\\.codex\\AGENTS.md",
+    "backup": "C:\\Users\\cheny\\.codex\\tmp\\investment-cleanup-2026-09-13_225000\\AGENTS.md",
+    "before_sha256": "8f1c63a48714c76eb17e96471ea76383e16559722966cafa1298250f878f3b34",
+    "after_sha256": "e60d2fb85fbea04c2f122c93e8a955271eed57d47c8c091c9c7d041e507255dc"
+  },
+  {
+    "path": "C:\\Users\\cheny\\.codex\\config.toml",
+    "backup": "C:\\Users\\cheny\\.codex\\tmp\\investment-cleanup-2026-09-13_225000\\config.toml",
+    "before_sha256": "84f98dc80c437621e05e0dda81a887d4c9f10fbb1a73f9d27272d6ce7524e73a",
+    "after_sha256": "f93b1ac1fbcfd829568e3298bd040ebffa144c0f2cb2f82ca2247d31a596841c"
+  },
+  {
+    "path": "D:\\investment\\tools\\site\\etl\\build-data.mjs",
+    "backup": "D:\\investment\\备份\\旧目录删除后收尾_2026-09-13_225000\\修改前\\build-data.mjs",
+    "before_sha256": "aa246bc796019160b234078f8bce7ef7e22d95e3b14ea80b3ed818549737a250",
+    "after_sha256": "0ab50a68d5b3376a90b81de165022f8a085b9533f079ee679bbaf8361397b46b"
+  },
+  {
+    "path": "D:\\investment\\tools\\site\\etl\\build-daily-news.mjs",
+    "backup": "D:\\investment\\备份\\旧目录删除后收尾_2026-09-13_225000\\修改前\\build-daily-news.mjs",
+    "before_sha256": "926254a0fd25073fade1bf1b8d11de58f4952bbf25b7ee718d2d619a7f439f7f",
+    "after_sha256": "a6bb0def693be8baba21c7b5c97b0df62b7953d36db5b08271c65e15a62d5683"
+  },
+  {
+    "path": "D:\\investment\\分析报告\\公司情景投资决策\\生成站点数据.mjs",
+    "backup": "D:\\investment\\备份\\旧目录删除后收尾_2026-09-13_225000\\修改前\\生成站点数据.mjs",
+    "before_sha256": "54e9c5667215b1bb33c1cd6fc47c1bc3ab6da431d303a662cd0a2ee84c7275f9",
+    "after_sha256": "5878f547e133b1eaeaadd16f0b96dc58f49449f2ee4aaa29e6bfa7609a3b1e01"
+  },
+  {
+    "path": "D:\\investment\\tools\\site\\README.md",
+    "backup": "D:\\investment\\备份\\旧目录删除后收尾_2026-09-13_225000\\修改前\\README.md",
+    "before_sha256": "fa70c3b7c90be72ad5b386fbe9b77273f040189fddac6d3dcf94ba64cda6b7ed",
+    "after_sha256": "7cfd6eccd43b9558a6709db8c83dde5f825beadf37c71b61e9251e48b6371a03"
+  }
+]

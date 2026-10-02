@@ -1,0 +1,197 @@
+# 公司收入传导与经营价值传导评估：Marvell Technology（MRVL）
+
+> 报告日期：2026-06-20。  
+> 主口径：NTM，即 2026-06-20 之后未来 12 个月，近似覆盖 Marvell FY2027 Q2-Q4 与 FY2028 Q1。  
+> 资料边界：使用 `公司调研/` 与 `行业调研/`，并用公司 IR、SEC 文件和产品公告补齐最新财务与产品证据；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论、模型比较或市场排序。  
+> 方法边界：本报告只评估需求到收入、利润、现金流和经营质量的传导，不输出投资评级、目标价、股价区间或估值倍数判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 公司收入、non-GAAP 经营利润和经营现金流方向；FY2027、FY2028、产品长期 run-rate 与 Celestial/Polariton 光互联期权只作补充校准。
+- 当前收入基准、指引和 run-rate：FY2027 Q1 收入 24.178 亿美元，Data center 18.327 亿美元、占 76%；Q2 FY2027 收入指引 27.0 亿美元 +/-5%；管理层预计 FY2027 全年收入约同比 +40%，Data center 约 +50%，interconnect 约 +70%以上，FY2028 收入约 165 亿美元。
+- 重要产品/业务线：1. Custom AI XPU / XPU attach；2. 800G/1.6T optical DSP、TIA、driver；3. DCI coherent / COLORZ 1600；4. Ethernet switch silicon / Teralynx；5. PCIe/CXL switch、retimer、AEC、XConn/Structera；6. NPO/CPO、Photonic Fabric、Celestial/Polariton；7. AI storage/security/control plane；8. Communications and other。
+- NTM 公司收入四情景：悲观 107-115 亿美元；基准 124-131 亿美元；乐观 136-150 亿美元；极度乐观 155-170 亿美元。基准约等于“FY2027 约 115 亿美元路径 + FY2028 Q1 继续加速”的正常兑现。
+- 利润或 EBITDA 四情景：用 non-GAAP 经营利润作主口径，悲观 35-39 亿美元，基准 45-49 亿美元，乐观 53-60 亿美元，极度乐观 62-72 亿美元；GAAP 净利润会继续受并购摊销、SBC、或有对价和一次性项目扰动，不作为产品传导主指标。
+- 最大传导瓶颈：不是行业 TAM，而是少数 hyperscaler custom 项目的 tape-out、量产和客户验收能否在 NTM 内按期转为 Marvell 可确认收入。
+- 最大利润率变量：1.6T optics 与 custom silicon mix 能否抵消 800G ASP 下行、customer second-source 压价、Celestial/XConn/Polariton 并购后研发和摊销负担。
+- 最大现金流变量：先进节点、光器件、封测和采购承诺下的营运资本；Q1 FY2027 经营现金流 6.388 亿美元为强信号，但高增长期库存和预付款仍可能吞噬部分自由现金流。
+- 可信度：公司层基准为中高；产品级 custom 与 optics 为中高；switch/PCIe-CXL 为中；NPO/CPO/Photonic Fabric 的 NTM 收入为低，长期战略价值高但不能进入 NTM 基准主收入。
+
+当前最可能情景是“基准偏上”：Marvell 已经有 A 级 Data center 收入和正式 Q2 指引，B 级 FY2027/FY2028 管理层展望也明确指向加速；但产品线收入没有单独披露，custom 客户、1.6T 认证、T100/Structera sampling 到量产之间仍有执行假设。因此本报告不把行业 AI capex 上修直接等同为 Marvell 收入上修。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Custom AI XPU / XPU attach | FY27 年化估算 25-35 亿美元，未单独披露 | 约 25-35% | 最大成长线之一，连接云厂自研 ASIC、SerDes、D2D、security、storage/network attach 和 NRE | B/C | 进入基准，但按管理层 custom FY27 +20%以上、FY28 翻倍以上保守折扣 | 多客户 XPU 同步量产、NVLink Fusion 设计进入 FY2028+ |
+| 800G/1.6T optical DSP / TIA / driver | FY27 年化估算 25-35 亿美元，包含在 Data center/interconnect | 约 25-35% | 当前 AI 互联最确定收入池，1.6T 是 NTM 主要增量 | B | 进入基准，是 NTM 最强收入和毛利主线之一 | 3.2T、400G/lane、CPO/NPO 光引擎 |
+| DCI coherent / COLORZ 1600 | FY27 年化估算 3-7 亿美元；FY28 年化 10 亿美元可见 | 约 3-7% | AI campus、multi-campus training 和 scale-across 连接 | B/C | 小比例进入基准，更多在乐观中体现 | 1.6T ZR/ZR+ 大规模部署、2nm coherent DSP 放量 |
+| Ethernet switch silicon / Teralynx | FY27 管理层称 scale-out switch revenue 超 6 亿美元，FY28 tracking to 10 亿美元 | 约 6-10% | 51.2T 到 102.4T AI fabric；T100 是 2026H2-2027 验证门票 | B/C | 进入基准，但 T100 大量贡献需折扣 | 102.4T T100 成为 tier-1 AI Ethernet fabric 量产选择 |
+| PCIe/CXL switch / retimer / AEC / XConn / Structera | 当前含基础 PCIe/CXL/retimer，XConn Q4 FY27 年化 5,000 万美元、FY28 1 亿美元 | 约 4-8% | AI rack 内 scale-up、memory pooling、AEC/AOC 延伸 | B/C | 基础产品进入基准，Structera/XConn 只小比例进入 | UALink/open scale-up 与 CXL memory pooling 在非 NVIDIA ASIC 集群放量 |
+| NPO/CPO / Photonic Fabric / Celestial / Polariton | 当前主要为 NRE、样品、研发和小规模；Celestial 初始收入预计 FY2028H2 | <2% 可确认 | 长期改变 scale-up optics 和 optical I/O 结构 | C/D | NTM 基准不纳入主收入，只保留小额样品/NRE和已包含 Data center 的部分 | Celestial FY2028H2 年化 5 亿美元、FY2029 Q4 年化 10 亿美元路径；Polariton 3.2T+ |
+| AI storage/security/control plane silicon | Data center 内已确认但未拆分；估算 NTM 10-16 亿美元 | 约 8-12% | 存储控制、安全、DPU/控制平面是 AI data center 附着需求 | A/C | 进入基准，但不按 AI 高弹性上修 | AI-native storage、KV cache、security accelerator 与 XPU attach |
+| Communications and other | Q1 FY2027 5.851 亿美元，Q2 预计环比中个位数下降 | 24% | 传统企业、运营商、消费和剩余汽车/工业；主要是抵消项和现金流底盘 | A | 进入基准，作为公司层抵消/稳定项 | AI-RAN、运营商 AI infra 只作远期期权 |
+
+证据等级说明：A=收入表或正式指引；B=公司披露订单、正式展望、明确客户项目或交付时间表；C=design win、认证、产能规划、管理层可验证披露；D=产品发布、样品、测试或未量化 pipeline；E=只有主题相关性。公司未披露各产品线收入，因此除 `Data center` 与 `Communications and other` 外，产品金额均为经营估算，不是会计分部数据。
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不判断 Marvell 份额、收入确认、利润率或公司汇总。当前需求锚以行业调研、公司产品公告、云厂自研 ASIC 节奏、800G/1.6T 光互联代际、AI Ethernet fabric 和传统通信库存周期为主。相对预期以 2026-06-20 前后公司管理层指引、行业公开预测和项目内行业资料为锚。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Custom AI XPU / XPU attach | 项目内云厂自研 AI ASIC：2026 交付/转移价值 700-1,100 亿美元、2027 1,200-1,900 亿美元；云厂多 GW Trainium/TPU/MTIA/Maia/OpenAI XPU 路径 | ASIC 仍增长，但客户迁移慢、HBM/封装/软件拖延，NTM 需求池低于当前 +20-40% 路径 | 自研 ASIC 在推理和稳定 workload 中继续放量，需求符合当前云厂 capex 与管理层 custom +20%/+FY28翻倍路径 | 多个 hyperscaler 同步拉货，ASIC 从补充变成主线，NTM 需求池较预期高 20-40% | TPU/Trainium/Maia/MTIA/OpenAI XPU 同时提速，GPU 紧缺和推理爆发使 ASIC 需求非线性上修 | 悲观仍可增长；基准为 2026-2027 大盘扩张；乐观/极度乐观为额外 100-500 亿美元级行业池提前 | 基准=符合当前预期；乐观=高于当前预期 | 依据：云厂 ASIC 行业资料、MRVL 管理层 custom 展望。反证：compiler/utilization 不达标、客户改架构、Broadcom/内部团队拿走项目 |
+| 800G/1.6T optical DSP / TIA / driver | AI-focused optical transceiver 2026 约 260 亿美元；1.6T 2026 出货 >500 万只；800G 仍主流、1.6T 2026H2-2027 导入 | 800G ASP 快速下跌，1.6T 认证慢，LPO/LRO 压缩 DSP 价值，需求低于当前 1.6T ramp 路径 | 800G 继续放量，1.6T 新增 AI 集群导入，DSP/TIA/driver 芯片层收入增长符合 interconnect +70% 预期 | 1.6T 成为 2027 新增集群默认端口，200G lane 供应紧，DSP/TIA/driver ASP 更坚挺 | 1.6T 供不应求叠加 3.2T/400G lane 提前设计，芯片层既有量又有价格 | 基准：NTM AI optics 高双位数增长；乐观：1.6T 提前贡献数十亿美元增量；极度乐观：1.6T/3.2T 定价窗口延长 | 基准=符合当前预期；乐观=高于预期 | 依据：800G/1.6T 行业报告、MRVL 1.6T DSP公告、Q1 FY27 interconnect 展望。反证：模块库存、低端 800G 价格战、LPO 替代 DSP |
+| DCI coherent / COLORZ 1600 | AI campus 与多园区训练推高 800G/1.6T ZR/ZR+，MRVL COLORZ 1600 预计 2026H2 sampling | DCI 部署慢于 AI 服务器建设，仍由传统 metro/campus 网络节奏决定 | 800G ZR/ZR+ 继续，1.6T COLORZ 1600 进入重点客户 sampling/early production | 分散上电和多园区训练使 20km/120km/1000km scale-across 需求提前 | multi-campus AI factory 成为标准架构，1.6T ZR/ZR+ 变成关键瓶颈 | 无法可靠量化；基准为小规模到年化 10 亿美元路径，乐观为超过该路径 | 基准=略低到符合当前预期；乐观=高于预期 | 依据：COLORZ 1600、Electra 2nm DSP、行业 DCI 资料。反证：客户数据中心集中建设、DCI 认证推迟 |
+| Ethernet switch silicon / Teralynx | AI backend Ethernet、51.2T 当前主线，102.4T/1.6T switch 2026H2-2027 验证；MRVL FY27 switch revenue 超 6 亿美元 | 102.4T 停留样品，Broadcom/NVIDIA/Cisco 抢走主份额，MRVL 只保留 51.2T 小份额 | 51.2T 继续出货，T100 进入客户验证；FY27 超 6 亿美元、FY28 10 亿美元路径正常 | T100 低功耗/高 radix 获得 tier-1 design-in，102.4T 订单提前 | 开放 Ethernet scale-up 和 102.4T scale-out 同时放量，MRVL 成为 Broadcom/NVIDIA 外主要选择之一 | 基准需求为 AI switch/fabric silicon NTM 550-900 亿美元行业池中的高端子集；MRVL 可参与部分 | 基准=符合当前预期；乐观=高于预期 | 依据：AI Ethernet 行业报告、T100 发布、MRVL 管理层 switch 展望。反证：软件生态不足、客户偏 NVIDIA Spectrum-X 或 Broadcom Tomahawk/Jericho |
+| PCIe/CXL switch / retimer / AEC / XConn / Structera | AI rack 内 PCIe 6/CXL 3.x、AEC/AOC、memory pooling 需求明确，但系统采用慢于 optics | PCIe/CXL memory pooling ROI 不清晰，Structera/XConn 认证延后，需求只停留基础 retimer | PCIe/CXL 基础需求随 AI server 增长；XConn Q3/Q4 FY27 开始小额收入 | UALink/open scale-up、CXL pooling 与 AEC/AOC 同时获得 hyperscaler 采用 | 非 NVIDIA ASIC 集群需要开放 scale-up fabric，PCIe/CXL/UALink 从附属变成核心互联层 | 基准为数亿美元级 NTM 需求对 MRVL；乐观/极度乐观可上修到十亿美元级 | 基准=符合当前预期；乐观=高于预期 | 依据：XConn、Structera sampling 时间表。反证：CXL 软件生态慢、Astera/Broadcom 替代、客户用私有互联 |
+| NPO/CPO / Photonic Fabric / Celestial / Polariton | NPO/CPO/optical I/O 是 2027-2030 方向；Celestial 初始收入预计 FY2028H2，Polariton 指向 3.2T+ | CPO/NPO 可靠性、维护和标准化未解决，NTM 只有研发和样品需求 | NTM 内主要是 pilot、NRE、工程样品，不形成显著可确认收入 | 少数客户把 optical scale-up 或 NPO/CPO 提前纳入 2027 平台 | 大客户提前选择 Photonic Fabric/optical I/O，部分 FY2028H2 收入被前拉 | NTM 基准无法可靠量化；乐观为 2-5 亿美元级收入化机会；极度乐观为 5-10 亿美元上限 | 基准=低于市场题材热度；乐观=高于当前收入预期 | 依据：Celestial/Polariton 收购、NPO/CPO 行业资料。反证：良率、现场维护、ELS/连接器、架构未定 |
+| AI storage/security/control plane silicon | AI data center 需要 SSD/HDD controllers、storage accelerators、security/HSM、control plane；需求与 server attach 同步 | 客户把预算集中到 XPU/GPU 和 optical，storage/security attach 延后 | 随 Data center 基础设施正常增长，但不按 AI optics/custom 的高弹性处理 | KV cache、agent memory、security isolation 推高 storage/security attach | AI-native storage/control plane 独立预算化，Marvell 内容量超预期 | 基准为高个位数到中双位数增长；乐观为 20%+ | 基准=符合当前预期 | 依据：公司 data center portfolio 与 AI-native storage 行业背景。反证：云厂自研 controller、传统 storage ASP 压力 |
+| Communications and other | Q1 FY2027 5.851 亿美元；公司预计 Q2 环比中个位数下降、同比高个位数增长 | 库存修复后需求再转弱，运营商/企业预算推迟 | 库存修复基本完成，收入稳定但 Q2 环比下滑 | 企业网络、运营商或 consumer 补库存强于预期 | AI-RAN 或运营商 AI infra 提前拉动，但 NTM 证据弱 | 基准 NTM 约 21-24 亿美元；悲观约 18-21 亿美元 | 基准=符合当前预期；乐观=小幅高于预期 | 依据：Q1 FY27 end market 披露和 Q2 指引。反证：运营商 capex、企业网络周期、贸易限制 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求能进入 Marvell NTM 收入表，以及当前可收入化基数；不预测增长，不判断利润率。当前收入锚点优先使用收入表、正式指引、管理层披露的 FY2027/FY2028 产品展望、已完成并购的明确财务影响和已发布产品的 sampling/交付时间表。可参与需求不等于可确认收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Custom AI XPU / XPU attach | Data center Q1 FY27 18.327 亿美元中未拆分部分；管理层称 custom FY27 +20%以上、FY28 翻倍以上；several new design wins | 直接 | 高研发投入、高客户锁定，量产后毛利好，但前期 NRE/验证成本高 | 23-28 亿美元 | 30-38 亿美元 | 40-52 亿美元 | 55-70 亿美元 | 基准符合当前 FY27/FY28 路径；乐观高于当前预期 | B/C | 是 | 正式管理层展望、Data center 已确认收入、design win；未披露客户和产品线收入，保守折扣 | NTM 基准主收入之一，但不把 pipeline 全额收入化 |
+| 800G/1.6T optical DSP / TIA / driver | Data center/interconnect；管理层称 FY27 interconnect +70%以上，TIA/driver 年化收入未来几个季度超 10 亿美元 | 直接 | 高毛利芯片层，1.6T early window 利润质量好；800G ASP 下行是风险 | 25-30 亿美元 | 30-37 亿美元 | 42-55 亿美元 | 58-75 亿美元 | 基准符合当前预期；乐观需 1.6T 提前普及 | B | 是 | Q1 FY27 财报、Financial and Business Results、1.6T DSP 产品已 shipping/sampling | NTM 基准主收入之一，可信度中高 |
+| DCI coherent / COLORZ 1600 | COLORZ 1600 / Electra 2nm coherent DSP，2026H2 sampling；FY28 年化 10 亿美元 line of sight | 直接 | coherent DSP/模块认证壁垒高，利润好；但 H2 sampling 到收入确认有时滞 | 3-5 亿美元 | 5-8 亿美元 | 9-14 亿美元 | 15-22 亿美元 | 基准略低到符合当前 FY28 line of sight；乐观高于当前 NTM 预期 | B/C | 是，小比例 | 产品时间表明确，但大规模量产偏 FY2028 | NTM 小比例纳入，主要收入弹性在乐观 |
+| Ethernet switch silicon / Teralynx | 管理层称 scale-out switch revenue FY27 超 6 亿美元、FY28 tracking to 10 亿美元；T100 Q2 2026 sampling | 直接 | 高端 switch ASIC 毛利高，但软件/生态和竞争决定溢价 | 5.5-7.5 亿美元 | 8-11 亿美元 | 12-18 亿美元 | 20-30 亿美元 | 基准符合当前预期；T100 量产拉动才是乐观 | B/C | 是 | FY27/FY28 管理层产品展望，T100 sampling | 基准纳入 51.2T/现有 switch；T100 超预期放量进乐观 |
+| PCIe/CXL switch / retimer / AEC / XConn / Structera | XConn Q4 FY27 年化 5,000 万美元、FY28 1 亿美元；Structera PCIe/CXL Q3 2026 sampling；基础 PCIe/CXL/retimer 已有 | 直接 | 芯片毛利高，但系统认证慢；XConn 初期增加费用 | 4-6 亿美元 | 6-10 亿美元 | 10-16 亿美元 | 18-27 亿美元 | 基准符合当前小额收入路径；乐观需系统采用加速 | B/C | 是，小比例 | XConn 财务影响明确；Structera sampling 时间表明确；基础产品已存在 | 基础与 XConn 小额进入基准；Structera 大量收入不进基准 |
+| NPO/CPO / Photonic Fabric / Celestial / Polariton | Celestial 初始收入预计 FY2028H2，Q4 FY28 年化 5 亿美元；Polariton 未披露财务条款 | 直接/间接 | 早期研发和整合期可能压利润；长期若量产毛利好 | 0-0.5 亿美元 | 0.5-1.5 亿美元 | 2-5 亿美元 | 5-10 亿美元 | 基准低于题材热度；极度乐观只是 NTM 上限 | C/D | 否，仅小额已确认样品/NRE | Celestial 主要收入时间在 NTM 之后；Polariton 无量化收入路径 | NTM 基准主表不纳入，放入乐观上限和附录跟踪 |
+| AI storage/security/control plane silicon | Data center portfolio 已包含 storage、security、control plane；未披露单独收入 | 直接 | 较稳健，增速低于 custom/optics，但现金流质量较好 | 8-11 亿美元 | 10-16 亿美元 | 16-22 亿美元 | 22-30 亿美元 | 基准符合当前 Data center 基础收入 | A/C | 是 | Data center A 级收入已确认，但产品拆分需估算 | 进入基准，作为数据中心底盘和 attach 收入 |
+| Communications and other | Q1 FY27 5.851 亿美元；Q2 预计环比中个位数下降、同比高个位数增长 | 直接 | 较成熟，利润率通常低于高端 AI data center 芯片，周期性更强 | 18-21 亿美元 | 21-24 亿美元 | 24-27 亿美元 | 28-32 亿美元 | 基准符合当前预期；乐观不是核心 | A | 是 | 收入表和 Q2 指引 | 进入公司汇总，主要是抵消项和现金流底盘 |
+
+公司层收入锚点校验：Q1 FY2027 实际收入 24.178 亿美元，Q2 指引中点 27.0 亿美元；若 FY2027 全年约同比 +40%，全年约 114.7 亿美元，扣除 Q1 后 Q2-Q4 合计约 90.5 亿美元。再加 FY2028 Q1 的加速收入，NTM 基准 124-131 亿美元是合理的当前预期口径。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内对 Marvell 可确认收入和利润的贡献。利润贡献使用 non-GAAP 经营利润贡献方向和区间，不以行业 TAM、客户 capex 或项目总金额替代公司收入。公司没有披露产品线毛利率，利润区间为经营推算，关键缺口以“无法可靠量化”标注。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Custom AI XPU / XPU attach | 悲观 | 23-28 亿美元 | 6-9 亿美元 | 低于当前结构，NRE/验证成本吞噬杠杆 | 低于当前预期 | 客户项目推迟、竞争者或内部团队拿份额 | 保留为悲观 | tape-out 延迟、HBM/封装、客户软件迁移 |
+| Custom AI XPU / XPU attach | 基准 | 30-38 亿美元 | 10-14 亿美元 | 稳中改善 | 符合当前 custom FY27/FY28 路径 | 管理层 custom FY27 +20%以上、FY28 翻倍以上；new design wins | 保留 | 产品线未披露，客户集中 |
+| Custom AI XPU / XPU attach | 乐观 | 40-52 亿美元 | 15-22 亿美元 | 改善，量产项目覆盖固定研发 | 高于当前预期 | 多项目同步 ramp，NVLink Fusion 带来生态入口 | 保留 | second source 压价、Broadcom 竞争 |
+| Custom AI XPU / XPU attach | 极度乐观 | 55-70 亿美元 | 22-32 亿美元 | 明显改善但客户议价仍强 | 显著高于预期 | 多个 hyperscaler volume production 且 attach content 超预期 | 下移为乐观上限 | 需要客户、供应、封装、软件同时成立 |
+| 800G/1.6T optical DSP / TIA / driver | 悲观 | 25-30 亿美元 | 8-11 亿美元 | ASP 下行，毛利率低于当前高 50% 公司结构 | 低于当前 interconnect 预期 | 800G 库存、1.6T 认证慢、LPO 替代 DSP | 保留 | 模块 ASP、测试良率、laser/PIC 供给 |
+| 800G/1.6T optical DSP / TIA / driver | 基准 | 30-37 亿美元 | 12-16 亿美元 | 稳定到小幅改善 | 符合当前预期 | interconnect FY27 +70%以上；1.6T ramping quickly；TIA/driver 年化 >10 亿美元 | 保留 | 产品线未披露，需估算 |
+| 800G/1.6T optical DSP / TIA / driver | 乐观 | 42-55 亿美元 | 18-27 亿美元 | 改善，1.6T mix 和芯片层议价支撑 | 高于当前预期 | 1.6T 成为新增集群默认端口，200G lane 供应紧 | 保留 | LPO/LRO 路线降低 DSP 内容量 |
+| 800G/1.6T optical DSP / TIA / driver | 极度乐观 | 58-75 亿美元 | 27-38 亿美元 | 高位扩张 | 显著高于预期 | 1.6T 短缺延续且 MRVL DSP 份额领先 | 下移为乐观上限 | 800G/1.6T 价格周期和二供策略 |
+| DCI coherent / COLORZ 1600 | 悲观 | 3-5 亿美元 | 0.5-1.5 亿美元 | 中性，sampling 未充分收入化 | 低于当前 FY28 line of sight | DCI 部署慢、认证延后 | 保留 | 网络互操作、客户 DCI 拓扑 |
+| DCI coherent / COLORZ 1600 | 基准 | 5-8 亿美元 | 1.5-3.0 亿美元 | 稳定改善 | 符合当前小规模 NTM 路径 | COLORZ 1600 2026H2 sampling，FY28 年化 10 亿美元 line of sight | 保留 | NTM 只覆盖 early production |
+| DCI coherent / COLORZ 1600 | 乐观 | 9-14 亿美元 | 3-6 亿美元 | 改善 | 高于当前预期 | AI campus/scale-across 提前，1.6T ZR/ZR+ 获得客户认证 | 保留 | Ciena/Cisco/Acacia 等竞争 |
+| DCI coherent / COLORZ 1600 | 极度乐观 | 15-22 亿美元 | 6-10 亿美元 | 明显改善 | 显著高于预期 | multi-campus training 成为标准架构 | 下移为乐观上限 | 需要 2026H2 采样快速转量产 |
+| Ethernet switch silicon / Teralynx | 悲观 | 5.5-7.5 亿美元 | 1.5-2.5 亿美元 | 低于预期 | 低于当前预期 | 102.4T 停留 sample，51.2T 份额有限 | 保留 | Broadcom/NVIDIA/Cisco 生态 |
+| Ethernet switch silicon / Teralynx | 基准 | 8-11 亿美元 | 2.5-4.5 亿美元 | 稳定 | 符合当前 FY27 >6 亿美元/FY28 10 亿美元路径 | T100 sampling，51.2T switch revenue 继续增长 | 保留 | 软件/SDK/telemetry 客户验证 |
+| Ethernet switch silicon / Teralynx | 乐观 | 12-18 亿美元 | 4.5-8 亿美元 | 改善 | 高于当前预期 | T100 tier-1 design-in、低功耗优势被采购确认 | 保留 | 客户多供应商压价 |
+| Ethernet switch silicon / Teralynx | 极度乐观 | 20-30 亿美元 | 8-14 亿美元 | 高位扩张 | 显著高于预期 | 102.4T 和开放 Ethernet scale-up 同时放量 | 下移为乐观上限 | 生态和系统厂绑定难度高 |
+| PCIe/CXL switch / retimer / AEC / XConn / Structera | 悲观 | 4-6 亿美元 | 0.5-1.5 亿美元 | 低于预期，XConn 费用先行 | 低于当前预期 | CXL/PCIe 6 认证慢，Astera/Broadcom 抢份额 | 保留 | 软件生态、memory pooling ROI |
+| PCIe/CXL switch / retimer / AEC / XConn / Structera | 基准 | 6-10 亿美元 | 1.5-3.5 亿美元 | 稳定 | 符合当前预期 | XConn Q4 FY27 年化 5,000 万美元、FY28 1 亿美元；Structera Q3 2026 sampling | 保留 | 大规模收入偏 FY2028+ |
+| PCIe/CXL switch / retimer / AEC / XConn / Structera | 乐观 | 10-16 亿美元 | 3.5-7 亿美元 | 改善 | 高于当前预期 | UALink/open scale-up、AEC/AOC 和 CXL 共同采用 | 保留 | 客户可能采用私有互联 |
+| PCIe/CXL switch / retimer / AEC / XConn / Structera | 极度乐观 | 18-27 亿美元 | 7-13 亿美元 | 高位扩张 | 显著高于预期 | 非 NVIDIA ASIC 集群大量采用开放 scale-up fabric | 下移为乐观上限 | 需要软件、标准和客户架构同时成熟 |
+| NPO/CPO / Photonic Fabric / Celestial / Polariton | 悲观 | 0-0.5 亿美元 | -1.5 至 -0.5 亿美元 | 费用先行，利润拖累 | 低于题材预期但符合收入证据 | Celestial 收入在 FY2028H2 之后；Polariton 未量化 | 保留 | 良率、维护、标准未定 |
+| NPO/CPO / Photonic Fabric / Celestial / Polariton | 基准 | 0.5-1.5 亿美元 | -1 至 0 亿美元 | 对 NTM 利润轻微拖累 | 符合收入确认证据 | pilot、NRE、样品，不作为主收入 | 保留但不作为主增长 | 收入确认时间在 NTM 之外 |
+| NPO/CPO / Photonic Fabric / Celestial / Polariton | 乐观 | 2-5 亿美元 | -0.5 至 1.5 亿美元 | 可能开始改善 | 高于当前 NTM 基准 | 部分客户把 optical scale-up 提前导入 | 下移为乐观上限 | 尚缺客户、产品、时间表量化 |
+| NPO/CPO / Photonic Fabric / Celestial / Polariton | 极度乐观 | 5-10 亿美元 | 1-4 亿美元 | 明显改善但可信度低 | 显著高于预期 | Photonic Fabric/optical I/O 提前被大客户采用 | 移入附录/仅作跟踪 | 任一核心环节缺证据，不能进 NTM 基准 |
+| AI storage/security/control plane silicon | 悲观 | 8-11 亿美元 | 1.5-3 亿美元 | 中性偏弱 | 低于当前预期 | 云厂自研 controller、预算转向 compute/network | 保留 | 价格压力和产品替代 |
+| AI storage/security/control plane silicon | 基准 | 10-16 亿美元 | 3-6 亿美元 | 稳定 | 符合当前预期 | Data center 基础设施 attach，storage/security portfolio | 保留 | 未披露产品线收入 |
+| AI storage/security/control plane silicon | 乐观 | 16-22 亿美元 | 6-10 亿美元 | 改善 | 高于当前预期 | KV cache、agent memory、security isolation 提升 attach | 保留 | 不应把 AI-native storage TAM 全归 MRVL |
+| AI storage/security/control plane silicon | 极度乐观 | 22-30 亿美元 | 10-15 亿美元 | 改善 | 显著高于预期 | control plane/storage accelerator 独立预算化 | 下移为乐观上限 | 证据不足以单独极度乐观 |
+| Communications and other | 悲观 | 18-21 亿美元 | 3-5 亿美元 | 下行 | 低于当前预期 | 企业/运营商需求再弱，Q2 后继续下滑 | 保留 | 周期、库存、贸易限制 |
+| Communications and other | 基准 | 21-24 亿美元 | 4-7 亿美元 | 稳定 | 符合当前预期 | Q1 FY27 5.851 亿美元，Q2 环比中个位数下降 | 保留 | 不是 AI 主线 |
+| Communications and other | 乐观 | 24-27 亿美元 | 6-9 亿美元 | 小幅改善 | 高于当前预期 | 库存修复和企业/运营商 capex 改善 | 保留 | AI 相关性弱 |
+| Communications and other | 极度乐观 | 28-32 亿美元 | 8-12 亿美元 | 改善有限 | 显著高于预期但非主线 | AI-RAN/运营商 AI infra 提前 | 移入附录/仅作跟踪 | 证据弱，不可作为公司极度乐观核心 |
+
+产品级汇总检查：在基准情景下，Data center 相关产品合计约 103-108 亿美元，Communications and other 约 21-24 亿美元，对应公司 NTM 收入约 124-131 亿美元。NPO/CPO、Celestial、Polariton、Structera 大量贡献都没有进入基准主收入；它们只影响乐观上限或附录跟踪。
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向，不讨论市场定价。汇总前已剔除重复计算：1.6T optics、DCI、T100、PCIe/CXL 和 NPO/CPO 可能服务同一 AI cluster 预算，不能把客户 capex 和每条产品线机会简单相加。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 107-115 亿美元 | 较最近四季度收入约 +23% 至 +32% | 低于当前管理层 FY27/FY28 加速路径约 10-18 亿美元 | GAAP 51%-53%；non-GAAP 57%-58% | non-GAAP 32%-34% | non-GAAP 经营利润 35-39 亿美元；non-GAAP 净利润约 29-33 亿美元；GAAP 净利润无法可靠量化 | 经营现金流仍为正，但库存、预付款和并购整合压制 FCF | 中 | custom 项目推迟、1.6T ASP/库存压力、T100/Structera 认证慢、communications 再转弱 |
+| 基准公司 | 124-131 亿美元 | 较最近四季度收入约 +42% 至 +50% | 符合 Q2 指引、FY27 +40%、Data center +50%、FY28 165 亿美元前置路径 | GAAP 52%-54%；non-GAAP 58%-59% | non-GAAP 35%-37% | non-GAAP 经营利润 45-49 亿美元；non-GAAP 净利润约 38-43 亿美元；GAAP 净利润受摊销/或有对价扰动 | 经营现金流强，FCF 正向但低于经营利润；营运资本占用上升 | 中高 | 产品线未披露、客户集中、先进节点/光器件/封装交付 |
+| 乐观公司 | 136-150 亿美元 | 较最近四季度收入约 +56% 至 +72% | 高于当前预期约 8-21 亿美元 | GAAP 53%-55%；non-GAAP 59%-61% | non-GAAP 37%-40% | non-GAAP 经营利润 53-60 亿美元；non-GAAP 净利润约 46-53 亿美元；GAAP 净利润无法可靠量化 | 经营现金流加速，若库存不失控，FCF 明显改善 | 中 | 多项目同步 ramp、1.6T 供应紧、T100 design-in、DCI 提前收入化 |
+| 极度乐观公司 | 155-170 亿美元 | 较最近四季度收入约 +78% 至 +95% | 显著高于当前预期，接近把 FY28 165 亿美元 run-rate 提前到 NTM | GAAP 54%-56%；non-GAAP 60%-62% | non-GAAP 40%-42% | non-GAAP 经营利润 62-72 亿美元；non-GAAP 净利润约 54-64 亿美元；GAAP 净利润无法可靠量化 | FCF 大幅改善但先进产能预付款和库存风险同步上升 | 低到中 | 需要需求、Marvell 捕获、利润质量、供应链和客户认证全部同时突破 |
+
+公司层解释：
+
+1. 悲观不是“收入下降”，而是低于当前预期。Marvell 当前 run-rate 很高，即使悲观情景仍可能同比增长，但如果低于 Q2/FY27/FY28 管理层路径，就应视为经营传导不达预期。
+2. 基准情景已经很强。它要求 FY2027 Q2 27 亿美元中点兑现、Q3/Q4 继续加速、FY2028 Q1 延续 FY28 165 亿美元年化方向，同时 non-GAAP 毛利率维持约 58%-59%。
+3. 乐观情景必须来自至少两条主线共同上修：custom XPU 项目转量产、1.6T optics 供需紧、Teralynx/T100 early design-in 或 DCI/COLORZ 提前收入化。单一小基数 NPO/CPO 不能推动公司乐观。
+4. 极度乐观不能由 Celestial、Polariton 或单一 NVLink Fusion 叙事支撑；必须是 custom、optics、switching、DCI/scale-across、供应链和利润率同时成立。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一个风险只在实际影响层级处理一次，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2027 Q1 收入 24.178 亿美元，Data center 18.327 亿美元、占 76% | 收入基数/公司汇总 | 支撑基准收入进入 124-131 亿美元 | 高 Data center mix 支撑 non-GAAP GM 58%-59% | 高收入 run-rate 支撑采购和营运资本周转 | 保留基准 |
+| Q2 FY2027 指引 27.0 亿美元 +/-5%，non-GAAP GM 58.25%-59.25%，non-GAAP EPS 0.93 +/-0.05 | 公司汇总/利润 | 短期收入可见度强 | 利润率未随收入加速显著下滑 | Q2 若兑现，NTM 前两季锚点强 | 保留基准，乐观需继续超指引 |
+| 管理层预计 FY2027 收入约 +40%、Data center +50%、interconnect +70%以上、FY2028 收入约 165 亿美元 | 需求/产品贡献/公司汇总 | 支撑 NTM 基准偏高 | interconnect/custom mix 支撑利润率 | bookings 转收入仍需客户验收 | 保留基准，乐观需产品层证据增强 |
+| Custom FY27 +20%以上、FY28 翻倍以上，several new custom design wins | 产品贡献 | 支撑 custom 30-38 亿美元 NTM 基准 | 量产后经营杠杆好 | tape-out、封装、HBM 和客户软件决定兑现 | 保留基准；极度乐观下移为乐观上限 |
+| 800G PAM4 demand strong、1.6T ramp quickly、TIA/driver 年化收入未来几个季度超 10 亿美元 | 产品贡献/利润率 | 支撑 optics 30-37 亿美元基准和乐观弹性 | 芯片层毛利较好，1.6T mix 改善 | 认证和测试产能是执行约束 | 保留基准和乐观 |
+| Scale-out switch revenue FY27 超 6 亿美元、FY28 tracking 10 亿美元；T100 Q2 2026 sampling | 产品贡献 | 支撑 switch 基准；T100 大量收入偏乐观 | 高端 ASIC 利润好但生态竞争强 | sampling 到 production 需客户系统验证 | 保留基准；T100 超预期只进乐观 |
+| XConn Q4 FY27 年化 5,000 万美元、FY28 1 亿美元；Structera Q3 2026 sampling | 收入基数/产品贡献 | 支撑 PCIe/CXL 小比例基准 | 初期费用与收入并存 | 认证慢，软件生态未成熟 | 保留小比例基准 |
+| Celestial 初始收入预计 FY2028H2，Q4 FY28 年化 5 亿美元；Polariton 未披露财务条款 | 收入基数/远期期权 | 不支持 NTM 基准主收入 | NTM 费用先行，利润可能拖累 | 并购整合、良率、维护、客户架构未定 | 基准排除主收入，移入附录/仅作跟踪 |
+| Q1 FY2027 经营现金流 6.388 亿美元、现金 38.44 亿美元、债务 49.61 亿美元 | 现金流/执行 | 支撑高增长供给和并购整合 | 利息和摊销影响 GAAP，但经营现金强 | 采购承诺和库存仍需跟踪 | 保留基准现金流为正 |
+| 10-Q 披露采购承诺和供应容量保留安排；余下 FY2027 foundry/test/assembly purchase commitments 约 22.65 亿美元 | 执行/现金流 | 支撑供给可见度，也放大误判风险 | 若需求不及预期，毛利和库存承压 | 营运资本和预付款压力上升 | 悲观风险只在现金流/利润率层处理，不重复压需求 |
+| 公司不披露产品线收入、backlog/RPO 不透明 | 可信度 | 限制产品级精确量化 | 限制产品级毛利判断 | 依赖 bookings、指引和产品时间表校准 | 基准可信度中高，不升为高 |
+| 客户集中、Broadcom/NVIDIA/Cisco/Astera 等强竞争 | 公司捕获/利润率 | 限制份额上修 | 客户二供和平台竞争压制溢价 | 单一客户项目滑坡会影响季度节奏 | 乐观保留但极度乐观下移 |
+| 800G ASP 下行、1.6T/LPO/LRO/CPO 路线分裂 | 利润率 | 影响 optics 收入 mix | 影响 DSP/TIA/driver 毛利和库存 | 影响模块厂认证与采购节奏 | 仅在 optics 产品层处理，不重复惩罚公司所有业务 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 107-115 亿美元，低于当前指引/展望路径但仍同比增长 | Data center 已有 A 级收入，Q2 指引较强 | custom 推迟、1.6T ASP/库存、T100/Structera 认证慢、communications 转弱 | 保留 | 悲观公司 | 中 | 客户集中只在 custom/公司捕获层处理，不再重复压 optics 需求 |
+| 基准 | NTM 收入 124-131 亿美元，FY2027/FY2028 路径正常兑现 | Q1 FY27 record revenue，Q2 27 亿美元指引，FY27 +40%、Data center +50%、interconnect +70% | 产品线收入/backlog 未披露；Celestial 大收入在 NTM 之后 | 保留 | 基准公司 | 中高 | 产品线未披露只降低可信度，不再单独下调每个产品 |
+| 乐观 | NTM 收入 136-150 亿美元，custom、1.6T optics、switch/ DCI 至少两条超预期 | exceptional AI-related bookings、1.6T ramp、TIA/driver 年化 >10 亿美元、T100 sampling、custom FY28 翻倍 | 需客户、供应链、认证和价格同时较顺；竞争强 | 保留 | 乐观公司 | 中 | 供应链紧张只在收入确认和现金流层处理，不重复压需求 |
+| 极度乐观 | NTM 收入 155-170 亿美元，接近把 FY28 165 亿美元 run-rate 前拉 | AI ASIC/optics/switching/DCI 多线都有上修证据 | NPO/CPO/Celestial 时间表偏 FY2028H2；任一核心环节缺证据都会破坏情景 | 下移 | 乐观上限/附录跟踪 | 低到中 | Celestial/Polariton 不能同时在需求、收入、利润三层重复加成 |
+
+可信度总评：
+
+- 高可信：公司 Q1 FY2027 收入、Data center 占比、Q2 指引、non-GAAP 毛利率/经营利润率、经营现金流。
+- 中高可信：FY2027/FY2028 管理层收入路径、interconnect +70%、custom FY27/FY28 方向、switch FY27/FY28 目标。
+- 中可信：产品线收入区间、产品线经营利润贡献、DCI 和 PCIe/CXL 的 NTM 收入化节奏。
+- 低可信：NPO/CPO、Photonic Fabric、Celestial/Polariton 在 NTM 内的显著收入贡献。
+
+## 8. 结论
+
+- 最可能情景：基准偏上。NTM 收入最可能落在 124-131 亿美元，non-GAAP 经营利润约 45-49 亿美元；若 Q2/Q3 FY2027 数据中心收入连续高于指引并且 1.6T optics/custom 贡献确认，结果可上移到乐观低端。
+- NTM 收入结论：Marvell 的 NTM 收入不是由一个 AI 题材驱动，而是由 custom AI XPU、800G/1.6T optics、switch silicon、DCI、PCIe/CXL 和传统 communications 的组合传导。基准收入主要来自 A/B 级证据，C/D 级 NPO/CPO 期权没有进入基准。
+- 利润/现金流结论：non-GAAP 经营利润率基准 35%-37%，上行来自 1.6T optical DSP/TIA/driver、custom volume ramp、switch ASIC 和 DCI mix；下行来自 800G ASP、客户二供、并购费用、采购承诺和库存。经营现金流方向正向，但自由现金流需扣除先进产能、库存和并购整合占用。
+- 主要传导瓶颈：需求端不是最大问题，收入确认和公司捕获才是核心。custom 项目需要客户 tape-out、先进节点、HBM/封装、系统验证和软件迁移；1.6T optics 需要客户认证、模块良率、laser/PIC/test 供给；T100/Structera 需要系统厂和 hyperscaler design-in。
+- 乐观情景成立条件：Q2/Q3 FY2027 收入连续高于指引；Data center 环比维持双位数或接近双位数；interconnect 年化增速超过 +70%；TIA/driver 年化收入如期超过 10 亿美元；custom FY28 翻倍路径被再次确认；T100 或 COLORZ 1600 出现明确客户 production design-in。
+- 极度乐观情景成立条件：custom 多客户量产、1.6T optics 供不应求、T100 取得 tier-1 AI fabric 份额、DCI/scale-across 提前放量、PCIe/CXL/UALink 被非 NVIDIA ASIC 集群采用、non-GAAP GM 提升到 60%+，且这些条件在 NTM 内同时成立。
+- 悲观情景触发条件：FY2027 Q2 低于指引中点或 Q3 指引未继续加速；Data center 收入连续两个季度低于管理层路径；800G/1.6T optics 出现库存和 ASP 快速下跌；custom 客户项目推迟；non-GAAP GM 跌破 57%；采购承诺导致库存或现金流压力显著上升。
+- 后续跟踪数据：Data center revenue QoQ；interconnect revenue growth；custom FY28 翻倍路径；TIA/driver 年化收入；scale-out switch revenue；T100 客户验证；COLORZ 1600 sampling/订单；Structera/XConn sampling；Celestial/Polariton integration；non-GAAP GM；经营现金流与库存。
+
+本报告的核心判断是：MRVL 的经营价值传导已经从“AI 相关”进入“AI 数据中心收入表可见”，但还没有到所有远期期权都能进入 NTM 基准的阶段。当前基准足够强，反而需要严格区分：已确认 Data center/interconnect/custom/switch 收入，能够进入基准；NPO/CPO、Photonic Fabric、Polariton、部分 Structera 大规模收入，仍是乐观上限或 FY2028+ 跟踪项。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新正式财报为 FY2027 Q1，季度截止 2026-05-02，发布 2026-05-27；本报告外部资料核验至 2026-06-20；项目内行业资料主要截至 2026-06-10 至 2026-06-11。
+- 主要收入、订单、指引和利润率来源：Marvell FY2027 Q1 earnings release、FY2027 Q1 Financial and Business Results PDF、FY2027 Q1 10-Q、FY2026 Q4/FY2026 annual results、Corporate Overview。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 收入 81.95 亿美元；FY2027 管理层展望约 +40%；FY2028 管理层展望约 165 亿美元；Celestial 初始收入预计 FY2028H2，Q4 FY2028 年化 5 亿美元，FY2029 Q4 年化 10 亿美元。
+- 产品公告来源：1.6T optical DSP platform、COLORZ 1600 / Electra 2nm coherent DSP、Teralynx T100 102.4T switch、Structera PCIe 6.0 switch、Structera CXL switch、XConn acquisition、Celestial AI acquisition、Polariton acquisition、NVIDIA NVLink Fusion partnership。
+- 项目内来源：`公司调研/AI计算芯片_EDA_IP_custom_ASIC/MRVL_Marvell Technology_公司调研_2026-06-20.md`；`行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`；`行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`；`行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md`；`行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`；`行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`；`行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`；`行业调研/产业背景/顶级会议信息/nvidia_gtc_2026_research.md`。
+- 主要外部来源：
+  - Marvell FY2027 Q1 financial results: https://investor.marvell.com/news-events/press-releases/detail/1023/marvell-technology-inc-reports-first-quarter-of-fiscal-year-2027-financial-results
+  - Marvell FY2027 Q1 Financial and Business Results PDF: https://d1io3yog0oux5.cloudfront.net/_42983632e195ee742c33f9b8a960384d/marvell/db/3734/35382/presentation/2026_05_27_Marvell_Q1_FY27_financial_business_results_FINAL.pdf
+  - Marvell FY2027 Q1 10-Q: https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000019/mrvl-20260502.htm
+  - Marvell FY2026 Q4 and FY2026 results: https://investor.marvell.com/news-events/press-releases/detail/1011/marvell-technology-inc-reports-fourth-quarter-and-fiscal-year-2026-financial-results
+  - Marvell Corporate Overview, 2026-05-27: https://investor.marvell.com/news-events/presentations/detail/35388/marvell-corporate-overview
+  - Marvell 1.6T optical DSP platform, 2026-03-12: https://investor.marvell.com/news-events/press-releases/detail/1013/marvell-ushers-in-the-1-6t-era-with-expanded-optical-dsp-platform-portfolio-redefining-ai-data-center-end-to-end-connectivity
+  - Marvell COLORZ 1600 / Electra 2nm coherent DSP, 2026-03-05: https://www.marvell.com/company/newsroom/marvell-1-6t-zr-zr-plus-pluggable-2nm-coherent-dsp-ai-interconnects.html
+  - Marvell Teralynx T100 102.4Tbps switch, 2026-06-01: https://investor.marvell.com/news-events/press-releases/detail/1024/marvell-announces-availability-of-industrys-first-102-4-tbps-switch-purpose-built-for-ai-and-cloud-data-center-infrastructure
+  - Marvell Structera PCIe 6.0 switch, 2026-03-17: https://www.marvell.com/company/newsroom/marvell-260-lane-pcie-6-switch-ai-data-center-scale-up.html
+  - Marvell Structera CXL switch, 2026-03-17: https://www.marvell.com/company/newsroom/marvell-next-gen-cxl-switch-memory-pooling-breaks-ai-memory-wall.html
+  - Marvell completes XConn acquisition, 2026-02-10: https://investor.marvell.com/news-events/press-releases/detail/1007/marvell-completes-acquisition-of-xconn-technologies
+  - Marvell completes Celestial AI acquisition, 2026-02-02: https://investor.marvell.com/news-events/press-releases/detail/1005/marvell-completes-acquisition-of-celestial-ai
+  - Marvell acquires Polariton Technologies, 2026-04-22: https://investor.marvell.com/news-events/press-releases/detail/1020/marvell-announces-acquisition-of-polariton-technologies-advancing-optical-performance-scaling-to-3-2t-and-beyond
+  - NVIDIA and Marvell NVLink Fusion partnership, 2026-03-31: https://investor.marvell.com/news-events/press-releases/detail/1019/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion
+

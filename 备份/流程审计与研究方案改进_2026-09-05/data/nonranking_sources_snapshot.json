@@ -1,0 +1,137 @@
+[
+  {
+    "path": "D:/drive/Investment/tools/research-runner/prompts/file-run.mjs",
+    "sha256": "54f23bca72a9f7345558e578442c76696f5dfde9d586c16058393d5a6875e766",
+    "chars": 338
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/研究方法/产业背景：AI产业链全局图谱与口径字典.md",
+    "sha256": "1e183a9a8ab7bc5ba97548193d0c21eefdef63bb7e6db9d2a523984df0684752",
+    "chars": 7397
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/产业背景/AI产业链全局图谱与口径字典_T03_2026-07-09.md",
+    "sha256": "6e0ade9207645d7f8228d9d67e75c34c9391ed032c2a15070cf5e7a91ebce7cf",
+    "chars": 87436
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/研究方法/产业背景：AI产业链瓶颈与反证指标总表.md",
+    "sha256": "d615f51a54cb72e1a283291e11cf6a09e0457a8285b4333d3da7962892a10b17",
+    "chars": 7409
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-07-10.md",
+    "sha256": "88d4cd3080ecf500da0665711276ac1d2b8b53a90f13e739922ba1f800c1f4f8",
+    "chars": 79028
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/产业背景/全球AI需求与Token经济框架_2026-07-10.md",
+    "sha256": "58c2dd0791b86359be9867f978c9db625ed2bdc304bcf954c22479537e77d3bf",
+    "chars": 57351
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/研究方法/产业背景：全球AI需求与Token经济框架.md",
+    "sha256": "5cae398a3193e8575d5332b026f4b38a234a48e55746fa9e9cd3a15bb3e8c96c",
+    "chars": 10396
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/研究方法/产业背景：头部AI芯片.md",
+    "sha256": "39822981a85ec5ed83758bbc0584c15e48b4c4d0f5500a9fc141597e0468be97",
+    "chars": 6025
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-07-10.md",
+    "sha256": "5397f5ccceb416cd7b9be157907fbd9792accf61bc050012b382e2c5425cb79b",
+    "chars": 71883
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/研究方法/产业背景：数据中心建设规模.md",
+    "sha256": "a64ae492381236d5d667c5c29ee3dae9753da1524904c42c492920a2790e4836",
+    "chars": 16718
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md",
+    "sha256": "db43bfaef2403ff529ed18ee4595cf0ef039ec905e814c6a7ce1a8598cb0e7c5",
+    "chars": 84413
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/研究方法/会议调研方案.md",
+    "sha256": "e86b8eae55bb8540f367c241e1cb948d87964067791526ede190f0e47f20dfd2",
+    "chars": 3198
+  },
+  {
+    "path": "D:/drive/Investment/基本面/tmp/research-runner-prompts/2026-08-18/conference_dac_2026.md",
+    "sha256": "5cc725985eafc579594d54afd7dd73c19c69017c7b329d66c965f12ead13aa73",
+    "chars": 1120
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/产业背景/顶级会议信息/conference_update_dac_2026_2026-08-18.md",
+    "sha256": "733dd6444ba6a9835ae7cb973a9e27874a51490289226c98a766964734095a7f",
+    "chars": 44732
+  },
+  {
+    "path": "D:/drive/Investment/基本面/tmp/research-runner-prompts/2026-08-18/conference_fms_2026.md",
+    "sha256": "07bb046b6f9aca6df42c3f7af7198d13b79613fb30a7b6974cf5d5a0db361ff0",
+    "chars": 1132
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/产业背景/顶级会议信息/conference_update_fms_2026_2026-08-18.md",
+    "sha256": "249dd90c7a0d45d44d6689c64f67a96b647fc7714ec7356ed6416a83e4b4207c",
+    "chars": 42217
+  },
+  {
+    "path": "D:/drive/Investment/基本面/tmp/research-runner-prompts/2026-08-18/conference_rss_2026.md",
+    "sha256": "93d55fb3eb4758515d281518244e07765f5b51b76e415156937376e05499f16b",
+    "chars": 1094
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/产业背景/顶级会议信息/conference_update_rss_2026_2026-08-18.md",
+    "sha256": "04c0118be15b675c89abca3cef00b7e3abe8cc2b9811035278cdcc5ed07eff08",
+    "chars": 34479
+  },
+  {
+    "path": "D:/drive/Investment/基本面/tmp/research-runner-prompts/2026-08-18/conference_farnborough_international_airshow_2026.md",
+    "sha256": "77a7a4c478969800aea556b3fd4e442608442991209b52db50682a56a2fdcad8",
+    "chars": 1192
+  },
+  {
+    "path": "D:/drive/Investment/基本面/行业调研/产业背景/顶级会议信息/conference_update_farnborough_international_airshow_2026_2026-08-18.md",
+    "sha256": "6d8913dc19371f32b41457f71311af7910192c1e5ac35f6243ec3c3ab2b1636e",
+    "chars": 47871
+  },
+  {
+    "path": "D:/drive/Investment/备份/24家公司最新投资价值多情景评估_2026-08-19/prompts/00_通用规范.md",
+    "sha256": "21b43f5fc9fb256a34ee2f432fddb8be3b0228f33ad54234ddc512592e140ff7",
+    "chars": 3183
+  },
+  {
+    "path": "D:/drive/Investment/备份/24家公司最新投资价值多情景评估_2026-08-19/prompts/05_24家公司综合排名与配置_prompt.md",
+    "sha256": "dfad801484764774698d0d286cc0569957e4b4386e8e190d5fcbb78383521145",
+    "chars": 2927
+  },
+  {
+    "path": "D:/drive/Investment/备份/24家公司最新投资价值多情景评估_2026-08-19/prompts/01_半导体计算与制造_prompt.md",
+    "sha256": "650c7fa054bacbaddf1de80b40052ce6bb57dabf465dc373ea21f3adddfa3312",
+    "chars": 997
+  },
+  {
+    "path": "D:/drive/Investment/备份/24家公司最新投资价值多情景评估_2026-08-19/prompts/02_网络互连与连接器_prompt.md",
+    "sha256": "aeb9bbedf808c4c70f784adcb6cae322cfc83496682d49864d0cd53b5a2d6de0",
+    "chars": 951
+  },
+  {
+    "path": "D:/drive/Investment/备份/24家公司最新投资价值多情景评估_2026-08-19/prompts/03_云算力服务器与存储_prompt.md",
+    "sha256": "2512f4ff50e49ccccd26abcde7ab337cb9469725397ceab962282ed986077b13",
+    "chars": 985
+  },
+  {
+    "path": "D:/drive/Investment/备份/24家公司最新投资价值多情景评估_2026-08-19/prompts/04_电力冷却与工业基础设施_prompt.md",
+    "sha256": "e3b8f24a2f749b783b7f90ddfb64667a0e447d08003ddd4f06d40fb8bf733cf2",
+    "chars": 1014
+  },
+  {
+    "path": "D:/drive/Investment/金融资料/研究方案/区间涨跌.md",
+    "sha256": "1f4bbc7753946aaac4e99e3f2e0081559708cb808e6c3c11adf0b7d8ac2fc0f1",
+    "chars": 182
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "ranking_current_modes": {
+    "routine": 7,
+    "experiment": 2
+  },
+  "current_plan_count": 57,
+  "current_plan_alias_hits": [],
+  "archive_verified_count": 1843,
+  "archive_mismatches": [],
+  "missing_path_count": 9,
+  "missing_fields": {
+    "expected_output_file": 9
+  }
+}

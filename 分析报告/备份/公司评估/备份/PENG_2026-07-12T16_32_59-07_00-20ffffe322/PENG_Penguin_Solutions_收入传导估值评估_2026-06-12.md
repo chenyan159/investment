@@ -1,0 +1,155 @@
+# 公司收入传导与价值传导评估：Penguin Solutions（PENG）
+
+报告日期：2026-06-12  
+公司代码：PENG / Nasdaq  
+公司名称：Penguin Solutions, Inc.  
+正式输出目录：`分析报告/公司评估/`  
+资料边界：本报告使用 `公司调研/` 与 `行业调研/` 内资料，并补充 Penguin Solutions 官方 IR、SEC、产品页和公开新闻稿；未读取、引用或继承 `特征量化/`、Signals、回归、评分或模型比较资料。  
+主口径：NTM 经营窗口以最新已披露 FY2026 Q2 为基点，覆盖未来 4 个未披露季度，即 FY2026 Q3-Q4 与 FY2027 Q1-Q2；截至 2026-06-12，FY2026 Q3 已结束但尚未披露，公司预计 2026-07-07 发布 Q3 财报。  
+当前预期锚：2026-04-01 公司给出 FY2026 收入 `+12% YoY ±5%`、non-GAAP EPS `$2.15 ±0.15` 指引；2026-06-01 公司重申 FY2026 收入和摊薄 EPS 预计落在原区间高端，主要由 Integrated Memory 与 AI Infrastructure 的 agentic AI 需求支撑。  
+重要限制：本报告只评估经营收入、利润、现金流和执行传导，不输出投资评级、目标价、股价区间或估值倍数判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即 FY2026 Q3-Q4 加 FY2027 Q1-Q2。FY2026 全年指引只作为当前预期锚，不替代 NTM；FY2027、长期 run-rate、MemoryAI 远期平台化机会只作补充。
+- 当前收入基准、指引和 run-rate：最新已披露 FY2026 Q2 收入 `$343.0M`，H1 FY2026 收入 `$686.1M`；FY2026 高端指引隐含全年收入约 `$1.60B`，扣除 H1 后 H2 需要约 `$915M`，明显高于 Q1/Q2 run-rate，说明公司当前预期已经包含 H2 项目确认和内存需求继续强劲。
+- 重要产品/业务线：`Integrated Memory` 是当前收入和利润兑现主线；`Advanced Computing AI/HPC` 是订单和系统集成主线；`MemoryAI/CXL KV Cache Server` 是小基数高期权新品；`ClusterWareAI/managed services` 是利润率和客户粘性变量；`Optimized LED/传统边缘业务` 是低相关现金流和抵消项。
+- NTM 公司收入四情景：悲观 `$1.45-1.60B`，基准 `$1.70-1.85B`，乐观 `$1.90-2.15B`，极度乐观 `$2.25-2.65B`。基准不是简单延续 Q2 run-rate，而是假设 FY2026 高端指引基本兑现，FY2027 H1 正常承接。
+- 利润或 EBITDA 四情景：悲观为收入存在但低毛利硬件和项目延迟吞噬利润；基准为 non-GAAP 经营利润率约 `8-11%`；乐观需要 Integrated Memory 维持 mid-teens segment operating margin 且 Advanced Computing 服务/软件 attach 上升；极度乐观必须同时看到 MemoryAI 多客户生产化和 AI/HPC 项目从硬件转售升级为全栈平台交付。
+- 最大传导瓶颈：Advanced Computing 的 bookings 到 revenue 之间存在 `3-6` 个月部署、供应链、验收和 customer go-live 延迟；公司不披露完整 backlog 金额，不能把 AI/HPC pipeline 直接当收入。
+- 最大利润率变量：收入增量来自低毛利 GPU/server pass-through 还是来自 memory pricing、ClusterWareAI、managed services、MemoryAI appliance 和服务 attach。公司已提示 FY2026 H2 lower-margin AI hardware mix 会压低毛利率。
+- 最大现金流变量：库存、应收、客户预付款和 deferred revenue 的节奏。截至 FY2026 Q2，contract liabilities 为 `$145.4M`，库存为 `$322.4M`；若交付延期，营运资本先承压。
+- 可信度：基准为中高，因 FY2026 高端指引、Integrated Memory 已兑现、AI/HPC 客户数和 deferred revenue 有证据；乐观为中，因客户和订单金额未充分量化；极度乐观为低，应作为上限和后续跟踪，不应进入基准。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Integrated Memory：SMART Modular DRAM/Flash、企业/工业/数据中心内存、Zefr | FY2026 Q2 `$171.6M`；H1 `$308.2M`；Q2 annualized `$686M` | Q2 `50.0%`，H1 `44.9%` | 当前收入和利润主线；直接受 DRAM/Flash 需求、价格和数据中心内存配置拉动 | A | 进入基准主口径；基准以 H1/Q2 revenue、FY2026 高端指引和行业内存供需为锚 | CXL/MemoryAI attach 提升单位价值，但不把 CXL 远期 TAM 放入基准 |
+| Advanced Computing AI/HPC 系统集成、OriginAI、AI factory design/build/deploy | FY2026 Q2 `$115.7M`；H1 `$267.2M`；其中 non-hyperscale AI/HPC H1 超过 Advanced H1 的 `40%`，约 `$107M+` | Q2 `33.7%`，H1 `38.9%` | 未来 12 个月收入弹性主线；但项目制、验收制和硬件透传导致波动 | A/B | 进入基准，但按订单到收入确认折扣处理；不能把客户 AI capex 或整柜 TAM 直接当公司收入 | 企业/主权/NeoCloud full-stack prime contractor 角色是乐观/极度乐观条件 |
+| MemoryAI / CXL KV Cache Server 与 CXL big-memory servers | 已披露 Tier-1 金融客户购买；产品收入金额未披露；估计 FY2026 当前收入小于 `$20M` | 当前低个位数或无法可靠量化 | 可能改变 AI/HPC 收入结构和利润属性的关键新品 | C，少量 B 迹象 | 基准只纳入保守小额；主要进入乐观和极度乐观上限 | 多客户 production deployment、Dell/NVIDIA catalog attach、CXL memory tier 标准化 |
+| ClusterWareAI / ICE ClusterWare / managed services attach | 总 services Q2 `$64M`，AI factory 相关服务未披露；收入已包含在 Advanced Computing 内 | 无法可靠量化；不单独加总 | 利润率和客户粘性变量，高于普通硬件透传 | A 级服务总额，C 级 AI attach | 不作为独立收入加总；在 Advanced Computing 利润率和情景校准中体现 | 若成为独立预算/SLA/FinOps 控制面，进入乐观和极度乐观 |
+| Optimized LED / Cree LED | FY2026 Q2 `$55.7M`；H1 `$110.8M` | Q2 `16.2%`，H1 `16.1%` | 非 AI 现金流和业务组合抵消项；收入下滑但利润可改善 | A | 进入公司收入汇总，但不进入 AI 增长基准叙事 | 若剥离或重新定价属于资本结构问题，本方案不处理 |
+| Stratus 高可用、传统 Advanced Computing、Penguin Edge wind-down | 未单独披露；包含在 Advanced Computing | 无法可靠量化 | 传统业务和 wind-down 是 Advanced headline 下滑来源之一 | B/C | 作为抵消项处理；不作为成长基准 | 边缘 AI 只作跟踪，不进 NTM 基准 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只判断外部需求池，不判断 PENG 份额、收入确认、利润率或公司汇总。需求单位采用最能解释该业务的经营指标：Integrated Memory 用可采购内存订单金额和 Q2 run-rate；Advanced Computing 用 AI/HPC 项目/集群需求和可交付项目金额；MemoryAI 用 CXL/KV cache appliance 生产化需求；ClusterWareAI 用服务 attach 和管理节点需求；LED 用终端 LED 元件需求。所有情景均相对当前预期锚，而不是相对行业热度。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Integrated Memory | FY2026 Q2 `$171.6M`，同比 `+63.1%`；H1 `$308.2M`，同比 `+52.6%`；系统内存行业资料显示 DDR5/RDIMM、server DRAM、CXL pilot 受 AI inference 和 memory wall 拉动 | NTM 可服务需求 `$600-680M`，DRAM/Flash 价格或客户配置回落，仍可能高于 FY2025 但低于高端指引隐含路径 | `$700-850M`，Q2 annualized 维持并小幅上行，符合 FY2026 高端指引与 server memory 紧缺 | `$850M-1.05B`，AI server/推理内存配置、CXL/高容量模块和价格/mix 同时强于预期 | `$1.05-1.25B+`，DRAM/LPDDR/HBM/SOCAMM 持续紧缺，客户预付款/LTA 扩大，PENG 获更多 allocation | 悲观较 Q2 annualized 持平或下滑；基准较 FY2026 H1 annualized 上行；乐观/极度为新增 `$150-550M+` 需求池 | 基准符合当前预期；乐观高于当前预期；极度乐观只代表供应紧缺下上限 | 正向：Q2/H1 已兑现、行业内存紧缺、公司 6 月重申高端指引；反证：PENG 不控制 DRAM die，若 DRAM ASP 两季下跌或库存上升，需求降级 |
+| Advanced Computing AI/HPC 系统集成与 OriginAI | FY2026 H1 Advanced `$267.2M`；non-hyperscale AI/HPC H1 超过 `40%` segment net sales 且同比 `+50%`；Q2 新增 5 个 AI/HPC customers | NTM AI/HPC 项目需求 `$250-350M`，客户 go-live 推迟、GPU/内存/网络到货慢或企业预算放缓 | `$350-500M`，Q2/H1 新客户在 3-12 个月逐步确认，企业/NeoCloud/主权 AI 延续 | `$500-750M`，多项目从 pilot 转 production，Dell/NVIDIA 生态带来更多 full-stack 项目 | `$750M-1.1B+`，PENG 成为多个 enterprise/sovereign AI factory 的核心交付商，而不仅是子承包商 | 相对 H1 AI/HPC run-rate `$214M+`，基准增加 `$135-286M`；乐观增加 `$286-536M` | 基准已经隐含 H2 ramp；乐观需要明显高于 bookings 转 revenue 的正常节奏 | 正向：AI/HPC logo 增加、6 月高端指引、AI rack/NeoCloud 行业需求强；反证：FY2026 Q2 Advanced headline `-42.2%`，项目制收入不稳定 |
+| MemoryAI / CXL KV Cache Server | 2026-03 发布 11TB CXL-based KV cache server；Q2 披露 Tier-1 金融机构部署；产品页显示 4U、dual AMD EPYC 9005、88 DIMMs、最高 11TB DDR5/CXL | `<$20M` 需求，客户停留在 PoC/单点部署，CXL 延迟、软件和采购责任不清 | `$30-80M`，金融/RAG/合规/长上下文场景形成少量生产化订单 | `$100-200M`，Dell/NVIDIA 生态多客户复制，appliance + ClusterWare attach 成为企业推理方案 | `$250-400M+`，CXL/KV cache memory tier 成为 enterprise inference 标配，多个行业按集群配置 | 从接近 0 到几十/数亿美元级；绝对变化大但基数小 | 基准仅略高于当前可见客户；乐观才是商业化验证；极度乐观超出当前证据 | 正向：产品具备明确场景、官方客户、NVIDIA Dynamo compatibility；反证：订单金额未披露、CXL 仍处早期、可被多买 GPU/HBM 或软件优化替代 |
+| ClusterWareAI / managed services | 总 services Q2 `$64M`，但 AI factory 服务拆分未披露；AI/HPC 部署复杂度提升服务需求 | `$40-70M` AI 相关服务需求，客户买硬件但少买持续运维 | `$80-140M`，随 AI/HPC 项目正常 attach，服务收入缓慢增长 | `$160-250M`，SLA、observability、multi-tenant、FinOps 成为独立预算 | `$300-450M+`，ClusterWareAI 成为企业 AI factory 控制面和长期运维标准 | 绝对变化无法从财报精确拆分；以服务 attach 率和经营利润率体现 | 基准为当前预期内的附加层；乐观需要服务 attach 明显提升 | 正向：AI factory 复杂度提高、PENG 服务能力长期存在；反证：可能被 Dell/HPE/NVIDIA/云厂软件内化 |
+| Optimized LED / 传统业务抵消项 | FY2026 Q2 `$55.7M`，H1 `$110.8M`，H1 同比 `-12.8%`；与 AI 数据中心弱相关 | `$180-210M`，需求继续下滑或价格承压 | `$210-240M`，低增长/稳定，降本维持利润 | `$240-270M`，产品 mix 和 tariff recovery 带动恢复 | `$270-300M`，传统需求周期性恢复，但不改变 AI 传导结论 | 悲观相对 Q2 annualized 下滑；乐观最多新增数千万美元 | 基准不改变公司 AI 主线；极度乐观也不是核心驱动 | 正向：Q2 segment operating income 改善；反证：H1 收入下滑，非 AI 需求弹性有限 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断外部需求有多少能在 NTM 进入 PENG 收入表，以及当前可收入化基数来自收入表、分部披露、订单、客户项目、产品发布还是主题映射。不判断增长率和利润率。C/D 级证据不直接进入基准，除非有客户、产品和时间表并经保守折扣；E 级主题相关不进入 NTM。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Integrated Memory | 已披露 FY2026 Q2 `$171.6M`、H1 `$308.2M`；Q2 segment operating margin `16.1%`；公司称 FY2026 高端预期受 memory demand 支撑 | 直接收入；同时间接受益 AI server memory 配置 | 中等毛利、较强经营杠杆，但受 DRAM/Flash 价格周期影响 | `$580-680M` | `$720-850M` | `$900M-1.05B` | `$1.10-1.25B` | 基准略高于 Q2 run-rate，符合高端指引；乐观/极度高于当前预期 | A | 是 | 财报分部收入、10-Q 分部利润、FY2026 指引、6 月高端指引重申 | NTM 基准核心，收入可确认性最高 |
+| Advanced Computing AI/HPC 系统集成与 OriginAI | Segment FY2026 Q2 `$115.7M`、H1 `$267.2M`；AI/HPC subset H1 `$107M+`；Q2 新增 5 个 AI/HPC customers，H1 新增 7 个 | 直接收入；需求来自 enterprise、sovereign、neocloud AI factory | 项目制；硬件透传低毛利，服务/软件 attach 较高毛利 | `$250-320M` AI/HPC；segment 总额更高但含传统业务 | `$350-500M` AI/HPC | `$550-750M` AI/HPC | `$850M-1.1B` AI/HPC | 基准符合高端指引需要的 H2 ramp；乐观要求多个新 logo 快速 production | A for segment，B for AI/HPC subset | 是，但折扣 | 分部收入 A 级，non-hyperscale AI/HPC 披露和客户数为 B 级；部署周期需折扣 | 进入基准，但不把 pipeline、客户 capex 或 AI rack TAM 直接转收入 |
+| MemoryAI / CXL KV Cache Server | 产品发布和 Tier-1 金融客户部署；产品规格清楚但订单金额未披露 | 直接产品收入，也可带动 Integrated Memory 和 ClusterWareAI attach | appliance 毛利可能高于普通硬件但低于纯软件；DDR5/CXL AIC BOM 重 | `$0-15M` | `$20-60M` | `$80-180M` | `$250-400M` | 基准仅代表保守早期收入；乐观高于当前预期；极度为上限 | C，局部 B | 小比例进入基准 | 有客户、产品和场景，但缺订单金额和复制证据 | 基准只放小额；主要作为乐观/极度乐观可收入化上限 |
+| ClusterWareAI / managed services attach | Total services Q2 `$64M`；AI related services 未拆分；包含在 Advanced Computing | 直接服务收入，但不能与 Advanced 总额重复加总 | 高于硬件透传，影响 operating margin 和客户粘性 | `$40-70M` | `$80-140M` | `$160-250M` | `$300-450M` | 基准以 attach 方式进入利润率，不单独抬高公司收入 | A for services total，C for AI attach | 部分进入基准，且只在去重后体现 | 服务总额可见，AI attach 需估算；不可重复计入 Advanced | 用于利润质量校准，不作为独立收入池机械相加 |
+| Optimized LED / Cree LED | FY2026 Q2 `$55.7M`、H1 `$110.8M`；H1 同比 `-12.8%` | 直接收入，AI 间接性弱 | 毛利可较好但增长弱；现金流支持 | `$180-210M` | `$210-240M` | `$240-270M` | `$270-300M` | 基准低增长/稳定，符合当前非核心预期 | A | 是，作为公司总收入但非 AI 主线 | 分部收入和分部利润可见 | 进入公司汇总，作为抵消项而非成长引擎 |
+| Stratus/传统 Advanced 与 Penguin Edge wind-down | 传统业务未单独披露；公司称 Penguin Edge wind-down 和 FY2025 hyperscale hardware 非重复拖累 FY2026 Q2 | 直接收入或收入消失 | 混合毛利；wind-down 是负面抵消 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 相对当前预期为拖累项 | B/C | 只作为抵消项 | 管理层披露原因但未拆分金额 | 不单独预测，防止与 Advanced AI/HPC 重复 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第 3 节需求和第 4 节收入基数出发，判断每个产品在 NTM 内能给 PENG 贡献多少收入和经营利润。这里的利润贡献优先用 segment operating income 或 non-GAAP operating income 近似；对未披露产品填“无法可靠量化”或给出研究估算区间。MemoryAI、ClusterWareAI 和 Advanced Computing 之间存在收入重叠，进入第 6 节公司汇总时会去重。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Integrated Memory | 悲观产品 | `$580-680M` | `$60-85M` operating income | 低于 Q2 segment margin，约 `10-13%` | 低于高端指引隐含路径 | Q2/H1 已高增，但 DRAM/Flash 周期可能反转 | 保留为需求和价格下行情景 | PENG 不控制 DRAM die；库存和 ASP 下跌 |
+| Integrated Memory | 基准产品 | `$720-850M` | `$100-140M` | mid-teens segment margin | 符合 FY2026 高端预期和 Q2 run-rate 延续 | FY2026 Q2 `$171.6M`、H1 `$308.2M`、Q2 segment operating margin `16.1%` | 保留 | 高价可能压制客户配置；采购成本滞后 |
+| Integrated Memory | 乐观产品 | `$900M-1.05B` | `$150-210M` | `17-20%`，mix/价格改善 | 高于当前预期 | server DDR5、CXL appliance、AI inference memory demand 同时强 | 保留但需后续季度验证 | 供应 allocation 限制和客户二供 |
+| Integrated Memory | 极度乐观产品 | `$1.10-1.25B` | `$200-275M` | `18-22%`，但非原厂利润率 | 显著高于当前预期 | 内存短缺延续，客户 LTA/预付款扩大 | 下移为上限 | PENG 是模组/系统供应，不是 Micron/SK hynix/Samsung |
+| Advanced Computing AI/HPC 系统集成与 OriginAI | 悲观产品 | `$250-320M` AI/HPC；segment 总额由传统业务补充但无法可靠拆分 | `$10-25M` | 低个位数到中个位数 | 低于当前预期 | Q2 Advanced `-42.2%`，收入确认受 go-live 和供应链影响 | 保留 | 部署周期超过 `6` 个月、低毛利硬件占比高 |
+| Advanced Computing AI/HPC 系统集成与 OriginAI | 基准产品 | `$350-500M` AI/HPC | `$35-70M` | `8-12%` non-GAAP segment margin | 符合高端指引正常兑现 | H1 AI/HPC `$107M+`、新增客户、bookings 强但未披露金额 | 保留 | 订单金额、交付时间和验收未完全可见 |
+| Advanced Computing AI/HPC 系统集成与 OriginAI | 乐观产品 | `$550-750M` AI/HPC | `$70-120M` | `10-16%`，服务/软件 attach 上升 | 高于当前预期 | Dell/NVIDIA 生态、Deepgram 案例、企业/主权/NeoCloud 需求 | 保留 | Dell/HPE/SMCI/ODM 竞争，PENG 可能只拿部分工程收入 |
+| Advanced Computing AI/HPC 系统集成与 OriginAI | 极度乐观产品 | `$850M-1.1B` AI/HPC | `$120-220M` | `14-20%`，仅在服务/软件高占比时成立 | 显著高于当前预期 | 多个 full-stack AI factory 项目由 PENG 承接 | 下移为乐观上限 | 低毛利 pass-through 不能自动转成高利润 |
+| MemoryAI / CXL KV Cache Server | 悲观产品 | `$0-15M` | `亏损至 breakeven` | 研发/销售投入吞噬利润 | 低于当前 AI 叙事 | 只有少量客户，PoC 周期长 | 保留 | CXL 软件栈、延迟、互操作和采购责任 |
+| MemoryAI / CXL KV Cache Server | 基准产品 | `$20-60M` | `$0-10M` | 小幅正贡献或基本持平 | 略高于当前可见订单，但经保守折扣 | Tier-1 金融客户、11TB 产品、NVIDIA Dynamo compatibility | 保留但低权重 | 订单金额未披露，无法证明可复制 |
+| MemoryAI / CXL KV Cache Server | 乐观产品 | `$80-180M` | `$15-45M` | 高于普通服务器，低于纯软件 | 高于当前预期 | 多客户 production deployment、Dell channel attach | 保留 | GPU/HBM 供给改善或软件优化降低 appliance 必要性 |
+| MemoryAI / CXL KV Cache Server | 极度乐观产品 | `$250-400M` | `$50-110M` | 明显改善公司 mix | 显著高于当前预期 | CXL/KV cache memory tier 成为企业推理标配 | 移入附录/仅作跟踪 | 当前缺多客户金额和标准化采购证据 |
+| ClusterWareAI / managed services attach | 悲观产品 | `$40-70M`，已含在 Advanced 内 | `$5-15M` | 服务 attach 低 | 低于当前预期 | 企业客户只买一次性部署 | 保留 | 被 OEM/NVIDIA/云厂软件内化 |
+| ClusterWareAI / managed services attach | 基准产品 | `$80-140M`，去重后体现 | `$15-40M` | 高于硬件透传 | 符合当前预期 | PENG 具备 design/build/deploy/manage 服务线，AI factory 复杂度上升 | 保留 | 收入未拆分，无法独立验证 |
+| ClusterWareAI / managed services attach | 乐观产品 | `$160-250M`，去重后体现 | `$45-90M` | 高毛利服务占比提升 | 高于当前预期 | SLA、observability、multi-tenant、agentic workflow 运维需求 | 保留 | 客户可能采用开源或 OEM 平台 |
+| ClusterWareAI / managed services attach | 极度乐观产品 | `$300-450M`，去重后体现 | `$100-180M` | 软件/服务化明显 | 显著高于当前预期 | 成为多个 AI factory 长期控制面 | 下移为远期期权 | 财报未拆，缺独立 ARR/RPO |
+| Optimized LED / Cree LED | 悲观产品 | `$180-210M` | `$5-15M` | 经营杠杆不足 | 低于当前预期 | H1 收入 `-12.8%` | 保留 | 终端 LED 需求继续下滑 |
+| Optimized LED / Cree LED | 基准产品 | `$210-240M` | `$15-25M` | 稳定或小幅改善 | 符合当前预期 | Q2 收入稳定，成本改善 | 保留 | 与 AI 弱相关，不应抬高公司叙事 |
+| Optimized LED / Cree LED | 乐观产品 | `$240-270M` | `$25-35M` | mix/tariff recovery 改善 | 略高于当前预期 | Q2 segment operating income 改善 | 仅作跟踪 | 规模不够改变公司传导结论 |
+| Optimized LED / Cree LED | 极度乐观产品 | `$270-300M` | `$35-45M` | 改善但非 AI 主线 | 高于当前预期但战略价值有限 | 周期恢复 | 仅作跟踪 | 不是 AI revenue transmission 核心 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步将产品级贡献去重后合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。公司层面不把 MemoryAI、ClusterWareAI 与 Advanced Computing 机械相加；不把 AI server/rack 总成交额、客户 CapEx、行业 TAM 或项目全周期金额直接当 PENG 收入；不讨论市场定价、股价或估值倍数。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$1.45-1.60B` | 较最新 TTM `$1.348B` 约 `+8-19%`；接近或低于 FY2026 高端指引年化路径 | 低于当前高端预期；Integrated Memory 增长回落，AI/HPC 部署延后 | `25.0-27.0%` | `4-7%` | Adjusted EBITDA 约 `$130-210M`；non-GAAP 净利润约 `$60-110M`；GAAP 受非经常项影响无法可靠量化 | 中性到偏负；库存和应收占用增加，客户 advances 若下降则 FCF 承压 | 中 | AI/HPC bookings 不转收入、内存价格回落、低毛利硬件 mix 上升 |
+| 基准公司 | `$1.70-1.85B` | 较最新 TTM 约 `+26-37%` | 基本符合 FY2026 高端指引在 Q3/Q4 兑现，并假设 FY2027 H1 正常延续；不额外放大 MemoryAI | `27.0-29.0%` | `8-11%` | Adjusted EBITDA 约 `$220-320M`；non-GAAP 净利润约 `$115-170M` | 小幅正向但波动；客户预付款/deferred revenue 可缓冲，库存采购仍吃现金 | 中高 | H2 revenue ramp 和 AI hardware mix 对毛利率的稀释 |
+| 乐观公司 | `$1.90-2.15B` | 较最新 TTM 约 `+41-59%` | 高于当前预期；Integrated Memory 保持强 pricing，多个 AI/HPC logo 转 production，MemoryAI 开始多客户贡献 | `29.0-32.0%` | `11-15%` | Adjusted EBITDA 约 `$320-480M`；non-GAAP 净利润约 `$180-290M` | 正向；若客户预付款随订单增长，营运资本压力可被部分抵消 | 中 | 需要 revenue 上修同时利润质量上修，不能只靠低毛利硬件透传 |
+| 极度乐观公司 | `$2.25-2.65B` | 较最新 TTM 约 `+67-97%` | 显著高于当前预期；要求 demand、PENG capture、利润率和执行同时突破 | `31.0-34.0%` | `15-20%` | Adjusted EBITDA 约 `$500-750M`；non-GAAP 净利润约 `$300-450M` | 理论上强正向，但若项目采购先行，短期 FCF 仍可能被库存/应收拖累 | 低 | MemoryAI/CXL 缺规模订单证据；full-stack prime contractor 地位未验证；硬件 pass-through 难支撑高利润率 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准第 3-6 节情景位置。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次：需求风险放第 3 节，收入确认风险放第 4/5 节，价格/成本/mix 风险放第 5/6 节，证据可信度放本节。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026-06-01 公司重申 FY2026 收入和 EPS 位于原指引高端 | 公司汇总、执行可信度 | 上修 FY2026 Q3/Q4 收入确认概率；基准不能只用 Q2 run-rate | 若 EPS 也在高端，说明利润没有完全被硬件 mix 吞噬 | 提高 H2 兑现可信度，但 Q3 尚未披露 | 基准保留；悲观不排除但触发门槛提高 |
+| Integrated Memory FY2026 Q2/H1 已兑现 | 收入基数、产品贡献 | A 级证据支持 `$720-850M` NTM 基准 | Q2 segment operating margin `16.1%` 支持 mid-teens 利润假设 | 库存采购和 supplier allocation 仍需跟踪 | 基准保留；乐观保留 |
+| Non-hyperscale AI/HPC H1 增长和新增客户 | 需求、可收入化暴露 | 支持 Advanced Computing 从 H1 `$107M+` 走向 `$350M+` NTM AI/HPC 收入 | 利润率取决于服务/软件 attach，不能自动扩张 | 部署周期 `3-6` 个月，验收节奏决定收入确认 | 基准保留但折扣；乐观保留 |
+| Q2 Advanced Computing headline 收入下滑 | 产品贡献、公司汇总 | 限制把 AI/HPC bookings 直接放入基准 | 若 H2 由低毛利 AI hardware 拉动，毛利率可能下降 | 项目 timing 和客户 go-live 是核心瓶颈 | 悲观保留；基准不下移，因原因与转型/一次性对比相关 |
+| MemoryAI Tier-1 金融客户和产品 ready | 收入基数、乐观期权 | 允许基准纳入小额 `$20-60M`，但不允许大额进入基准 | appliance 可能改善 mix，但 BOM 重 | 多客户复制、软件栈和售后验证待证明 | 乐观保留；极度乐观下移为上限/附录 |
+| Dell AI Partner award 和 Deepgram/Dell/GTC 案例 | 需求、公司捕获 | 增强企业 AI factory 生态可信度 | 若转成服务 attach，可提高利润质量 | 目前是案例和合作证据，不等于 backlog 金额 | 乐观保留；不把案例金额化进基准 |
+| Contract liabilities `$145.4M`、deferred revenue next 12 months `$81.6M` | 收入确认、现金流 | 支持可见收入，但金额不足以覆盖全部 NTM 预测 | deferred revenue 本身不说明高毛利 | 客户预付款对 FCF 有帮助，若下降则反证 | 基准保留；作为现金流跟踪指标 |
+| 库存 `$322.4M`、accounts payable `$454.5M` 上升 | 现金流、执行 | 可能预示订单准备，也可能形成延期风险 | 库存跌价会压毛利 | 营运资本风险不重复惩罚需求，只在现金流/执行处理 | 悲观保留；基准现金流可信度降为中高而非高 |
+| AI server/rack 行业高景气 | 需求层 | 支持外部需求池，但不能直接变成 PENG 收入 | 行业收入含 GPU/HBM 透传，利润率需折扣 | 供应链和客户验收决定公司兑现 | 需求基准/乐观保留；不作为公司收入基数 |
+| CXL/KV cache 技术仍早期 | 证据可信度、新品收入 | 限制 MemoryAI 进入基准金额 | 若只是 PoC，费用先行、利润有限 | 多客户 production 和 SLA 数据是关键 | 极度乐观下移；仅作跟踪 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | AI/HPC 延迟、Memory pricing 回落、硬件 mix 稀释导致 NTM 收入 `$1.45-1.60B` | 仍有 FY2026 高端指引、Integrated Memory 已兑现、deferred revenue 支撑 | 6 月高端预期降低了全面悲观概率；AI/HPC 客户数在增加 | 保留 | 下行情景，不作为最可能 | 中 | Advanced Q2 下滑只在收入确认/传统业务抵消处处理，不再重复压低需求 |
+| 基准 | FY2026 高端指引兑现，FY2027 H1 正常承接，NTM 收入 `$1.70-1.85B` | A 级财报收入、FY2026 高端预期、Integrated Memory 高增、AI/HPC logo、contract liabilities | Q3 尚未披露，H2 ramp 幅度大；MemoryAI 金额未披露 | 保留 | 最可能经营情景 | 中高 | 内存价格风险只在 Integrated Memory 的价格/mix 处理，不再重复惩罚 Advanced |
+| 乐观 | 多个 AI/HPC 项目转 production，MemoryAI 多客户，NTM 收入 `$1.90-2.15B` | Dell/NVIDIA 生态、Tier-1 金融客户、Deepgram 案例、AI server/NeoCloud 行业需求强 | 缺公司级 backlog 和 product-level order amount；低毛利 pass-through 可能拉低利润 | 保留 | 上行情景 | 中 | 行业 TAM 不能替代 PENG capture；只在收入基数处折扣一次 |
+| 极度乐观 | PENG 同时获得强需求、强捕获、高利润 mix 和执行突破，NTM 收入 `$2.25-2.65B` | MemoryAI 产品位置正确，AI factory 和 memory-centric architecture 方向明确 | 任一核心环节缺规模证据：MemoryAI 金额、ClusterWareAI ARR、full-stack prime contractor 地位、服务 attach 均未充分披露 | 下移 | 乐观上限 + 附录跟踪，不进入基准 | 低 | CXL 早期风险只限制 MemoryAI/极度乐观，不重复压低 Integrated Memory 基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。PENG 的 NTM 经营结论不是“AI 主题全部兑现”，而是“FY2026 高端指引有较高可见度，Integrated Memory 已经兑现，AI/HPC 项目有客户和 pipeline 支撑，但 MemoryAI/CXL 仍需从单点客户走向可复制收入”。对应 NTM 收入约 `$1.70-1.85B`，non-GAAP 经营利润率约 `8-11%`。
+- NTM 收入结论：当前可确认性最高的是 Integrated Memory，基准 NTM `$720-850M`；Advanced Computing AI/HPC 需要从 H1 `$107M+` 的 non-hyperscale AI/HPC 基数扩展到 `$350-500M`，这是公司能否从 FY2026 高端指引延续到 FY2027 的核心；MemoryAI/CXL 基准只能放小额 `$20-60M`，多客户生产化才进入乐观。
+- 利润/现金流结论：收入增长质量取决于 mix。Integrated Memory 的 mid-teens segment operating margin 对利润最重要；Advanced Computing 如果只是低毛利 AI hardware pass-through，收入上修不能等额转利润；ClusterWareAI/managed services attach 是利润率上移的关键。现金流要跟踪库存、应收、客户预付款和 deferred revenue，而不是只看订单叙事。
+- 主要传导瓶颈：第一，AI/HPC bookings 到 revenue 的部署和验收周期；第二，DRAM/Flash 价格和供应 allocation；第三，MemoryAI/CXL 缺少多客户订单金额；第四，H2 AI hardware mix 可能压低毛利率；第五，非核心 LED/传统业务仍会抵消增长。
+- 乐观情景成立条件：FY2026 Q3/Q4 Advanced Computing sequential rebound 明显，non-hyperscale AI/HPC mix 超过 `45-50%` 且收入继续增长；Integrated Memory 季度收入维持 `$170M+` 并保持 `14-18%` segment operating margin；MemoryAI 出现第二、第三个可披露 production deployment；gross margin 在 lower-margin AI hardware mix 下仍能维持 non-GAAP `28%+`。
+- 极度乐观情景成立条件：MemoryAI/CXL 从单品变成 enterprise inference 标准 attach；ClusterWareAI/managed services 形成可量化长期服务收入；PENG 在 Dell/NVIDIA 或其他 ecosystem 中成为多个 AI factory 项目的 full-stack prime contractor；同时 DRAM/Flash 供需继续紧缺且不引发客户配置下修。当前证据不足，需作为附录跟踪。
+- 悲观情景触发条件：FY2026 Q3/Q4 Advanced Computing 继续低于 `$120M` 且没有明确 H2 转化；customer advances/deferred revenue 下降而库存继续上升；Integrated Memory segment operating margin 跌破 `10%`；MemoryAI 仍只有单一未量化客户；non-GAAP gross margin 跌破 `27%`。
+- 后续跟踪数据：2026-07-07 FY2026 Q3 财报；FY2026 Q3/Q4 segment revenue 和 gross margin；non-hyperscale AI/HPC net sales 和 bookings 评论；MemoryAI 客户数量、订单金额、Dell/NVIDIA reference attach；contract liabilities、customer advances、inventory、accounts receivable；Integrated Memory ASP/mix 和库存风险；AI hardware mix 对 company gross margin 的影响。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务数据截至 FY2026 Q2，季度截止日 2026-02-27，财报发布日期 2026-04-01；6 月高端指引确认截至 2026-06-01；本报告外部资料检索截至 2026-06-12。
+- 主要收入、订单、指引和利润率来源：Penguin Solutions FY2026 Q2 earnings release、FY2026 Q2 Form 10-Q、Q2 FY26 prepared remarks/Q&A、Q2 FY26 presentation、Needham May 2026 presentation、CFO transition/outlook reaffirmation release。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 全年收入高端约 `$1.60B` 只作为当前预期锚；MemoryAI `$250M+`、ClusterWareAI `$300M+`、Advanced AI/HPC `$850M+` 均属于极度乐观/远期期权上限，不进入基准。
+- 主要来源：
+
+| 来源 | 日期 | 用途 | 链接 |
+| --- | ---: | --- | --- |
+| Penguin Solutions Reports Q2 Fiscal 2026 Financial Results | 2026-04-01 | Q2 收入、分部收入、FY2026 updated outlook、EPS、毛利率、AI/HPC 客户评论 | https://ir.penguinsolutions.com/news/news-details/2026/Penguin-Solutions-Reports-Q2-Fiscal-2026-Financial-Results/default.aspx |
+| Penguin Solutions FY2026 Q2 Form 10-Q | 2026-04-01 | 分部成本、segment operating income、deferred revenue、contract liabilities、风险披露、供应链和收入确认风险 | https://www.sec.gov/Archives/edgar/data/1616533/000161653326000030/sgh-20260227.htm |
+| Penguin Solutions Announces CFO Transition | 2026-06-01 | 重申 FY2026 收入和摊薄 EPS 预计位于原指引高端，Q3 计划披露日期 | https://ir.penguinsolutions.com/news/news-details/2026/Penguin-Solutions-Announces-CFO-Transition/default.aspx |
+| Penguin Solutions Introduces Production-Ready CXL-Based KV Cache Server | 2026-03-16 | MemoryAI 11TB CXL-based KV cache server、3TB main memory + 8TB CXL AIC、NVIDIA Dynamo compatibility | https://ir.penguinsolutions.com/news/news-details/2026/Penguin-Solutions-Introduces-Industrys-First-Production-Ready-CXL-Based-KV-Cache-Server/default.aspx |
+| Penguin CXL Memory Expansion Servers product page | 2026 检索 | MemoryAI/Altus 4U、dual AMD EPYC 9005、88 DIMMs、11TB DDR5/CXL、Altus CXL up to 22TB/server | https://www.penguinsolutions.com/en-us/products/cxl-memory-expansion-servers |
+| Penguin Solutions Needham Conference Presentation May 2026 | 2026-05-12 | AI factory platform、memory-centric architecture、H1 FY26 mix、Integrated Memory + non-hyperscale AI/HPC 表述 | https://s204.q4cdn.com/917347554/files/doc_presentations/2026/May/12/PENG-Needham-Conference-Presentation-May-12-2026.pdf |
+| Penguin Solutions Q2 FY26 prepared remarks and Q&A | 2026-04-02 | Non-hyperscale AI/HPC H1 增长、占比、bookings、部署周期、客户讨论 | https://s204.q4cdn.com/917347554/files/doc_downloads/2026/PENG-Q2-FY26-Earnings-Call-Prepared-Remarks-and-Q-A-_4-2-26.pdf |
+| Penguin Solutions Recognized as Dell Technologies Global Alliances Americas AI Partner of the Year | 2026-06-03 | Dell/Deepgram/GTC 案例、Full-Stack AI Factory Platform 合作证据 | https://ir.penguinsolutions.com/news/news-details/2026/Penguin-Solutions-Recognized-as-Dell-Technologies-Global-Alliances-Americas-AI-Partner-of-the-Year/default.aspx |
+| `公司调研/AI服务器_存储_EMS/PENG_Penguin Solutions_公司调研_2026-06-11.md` | 2026-06-11 | 本地 PENG 分部、产品、财务、客户、订单代理、风险和行业映射底稿 | 本地文件 |
+| `行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md` | 2026-06-10 | AI server/rack、集成商收入口径、GPU/HBM 透传与利润去重、行业需求反证 | 本地文件 |
+| `行业调研/AI服务器_存储_芯片/行业调研_系统内存、SOCAMM与内存模组_2026-06-10.md` | 2026-06-10 | DDR5/RDIMM、CXL、SOCAMM、系统内存需求、价格和周期反证 | 本地文件 |
+| `行业调研/AI服务器_存储_芯片/行业调研_CXL内存扩展与内存池化_2026-06-10.md` | 2026-06-10 | CXL Type-3、memory pooling、KV cache、production pilot 与技术瓶颈 | 本地文件 |
+| `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md` | 2026-06-11 | enterprise/neocloud/sovereign AI factory 需求、推理、长约和交付约束 | 本地文件 |
+

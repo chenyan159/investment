@@ -1,0 +1,3 @@
+﻿"feature_ticker","yahoo_symbol_used","company_name_from_results","split_event_count","split_details","primary_adj_open_to_adj_close_return","auxiliary_adj_close_to_adj_close_return","max_abs_daily_adj_return","status","source_url"
+"CRWD","CRWD","CrowdStrike","1","2026-07-02 4:1","0.1107451193","0.0412047766","0.067604347","ok","https://query1.finance.yahoo.com/v8/finance/chart/CRWD?period1=1780124400&period2=1783926000&interval=1d&events=div%2Csplits%2CcapitalGains"
+"KLAC","KLAC","KLA / KLA Corporation","1","2026-06-12 10:1","0.1272488763","0.0863873286","0.1292352957","ok","https://query1.finance.yahoo.com/v8/finance/chart/KLAC?period1=1780124400&period2=1783926000&interval=1d&events=div%2Csplits%2CcapitalGains"

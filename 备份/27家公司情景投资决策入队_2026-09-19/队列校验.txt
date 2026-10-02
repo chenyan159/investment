@@ -1,0 +1,3 @@
+Active items: 27
+Errors: 0
+Warnings: 0

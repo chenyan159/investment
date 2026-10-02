@@ -1,0 +1,171 @@
+# 公司收入传导与价值传导评估：Cummins Inc（CMI）
+
+> 生成日期：2026-06-12  
+> 公司代号：CMI  
+> 公司名称：Cummins Inc  
+> 主口径：NTM，约 2026Q2 至 2027Q1。FY2026 指引、FY2027 和 2030 目标只作补充锚点。  
+> 资料边界：使用 `公司调研/`、`行业调研/` 及 Cummins 官方公开资料；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较结果。  
+> 重要限制：本报告只做经营收入、利润和现金流传导，不做股票评级、目标价、股价区间或估值倍数判断。所有美元金额除特别说明外均为美元。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM，即 2026Q2-2027Q1。Cummins 官方 FY2026 指引是收入同比 +8% 至 +11%、EBITDA margin 17.75%-18.50%（剔除 2026Q1 低压燃料电池业务出售相关 charge）；本报告用该指引叠加 2026Q1 已确认收入和 2027Q1 run-rate，作为 NTM 基准锚。
+- 当前收入基准、指引和 run-rate：2025 年收入 337 亿美元；2026Q1 收入 84 亿美元，合并收入同比 +3%。按 FY2026 指引，2026 全年收入约 364-374 亿美元；扣除 Q1 后，2026Q2-Q4 可见指引收入约 280-290 亿美元。若 2027Q1 按 2026Q1 之后的正常化 run-rate 估算，NTM 基准收入约 375-385 亿美元。
+- 当前预期口径：优先使用管理层指引、已确认收入、产品线 run-rate、可见客户/订单节奏和本地行业需求锚；市场一致预期因缺少本地可审计一手来源，不作为主锚，只在“相对当前预期”中以指引和 run-rate 替代。
+- 重要产品/业务线：大型数据中心备用/连续工况发电机组、天然气 prime power / bridge-to-grid、Distribution power generation 与服务、Generator technologies / alternators、Engine 与 Components 商用车核心业务、BESS/微电网/Power Integration Center、Accelera 零排放业务。
+- NTM 公司收入四情景：悲观 358-368 亿美元，基准 375-385 亿美元，乐观 392-408 亿美元，极度乐观 418-435 亿美元。悲观不是“行业没增长”，而是数据中心发电交付、北美 on-highway 恢复或项目许可低于当前指引路径；极度乐观需要 Power Systems、Distribution、天然气 onsite power、Truck recovery 和 Accelera 减亏同时成立。
+- 利润或 EBITDA 四情景：悲观 EBITDA 约 61-65 亿美元；基准 68-72 亿美元；乐观 75-80 亿美元；极度乐观 84-91 亿美元。净利润受特殊项、税率、Accelera 后续处置和营运资本影响，无法可靠量化为单点。
+- 最大传导瓶颈：数据中心发电需求很强，但 Cummins 的可确认收入取决于大功率发动机/alternator 产能、客户 design-in、现场许可、燃气供应、ATS/并机/switchgear、施工进度和验收，而不是行业 TAM 或 announced GW。
+- 最大利润率变量：Power Systems mix 和 pricing 是正向变量，Accelera 减亏是第二变量；反向变量是关税、原材料、产能爬坡、固定价格项目、发电机组从紧缺转向竞价、以及 on-highway 周期低迷导致 Engine/Components 利润率恢复慢。
+- 最大现金流变量：数据中心和发电项目会拉动应收、库存和预制/测试支出，2026 capex 官方计划约 13.5-14.5 亿美元；自由现金流方向仍为正，但若大项目交付和扩产同时上行，营运资本吸收会推迟利润转现金。
+- 可信度：基准为中高。A/B 级证据来自 Q1 2026 已披露收入、FY2026 指引、2025 年报分部收入、Power Systems 与 Distribution power generation 已确认增长；乐观和极度乐观更多依赖 C 级产能、客户和 bridge-to-grid 路径，可信度低于基准。
+
+## 2. 重要产品清单
+
+本步口径：只列入会影响 NTM 收入、利润或经营质量的业务线。表中“当前收入基数”优先使用已披露分部、产品线、指引或收入表口径；Cummins 未披露单独 AI 数据中心收入、数据中心 backlog、book-to-bill 或取消率，因此数据中心子集只作为模型估算，不直接替代公司披露收入。
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 大型数据中心柴油 standby / data-center continuous 发电机组 | Power Systems power generation 2025 年 47.31 亿美元；2026Q1 12.83 亿美元，年化约 51 亿美元。数据中心子集未披露，模型估约 2026 年 50 亿美元级别 | 披露产品线约 14%-15%；数据中心子集约 13%-16%，无法精确 | NTM 最核心增量 | A/B；数据中心子集为 C | 进入基准；只用已确认 power generation 和 FY2026 指引作主锚，数据中心子集作校验 | 若高马力扩产和 2030 数据中心目标提前，进入乐观/极度乐观 |
+| 天然气 prime power / bridge-to-grid / onsite generation | 当前直接数据中心收入无法可靠量化；Power Systems 工业与 gas genset 产品可参与，NTM 基准只纳入小比例 | <3% 可可靠归因 | 可能改变增长质量 | C | 基准小比例纳入；大规模园区订单只进入乐观或极度乐观 | GW 级 onsite power、gas+BESS、长期 O&M |
+| Distribution power generation、parts 与 service | Distribution 2025 总销售 124.05 亿美元；其中 power generation 49.32 亿美元，service 17.98 亿美元；2026Q1 Distribution 销售 31.16 亿美元 | Distribution 总销售约 37%；power generation 外部销售约 15% | 收入确认和现金流质量核心 | A | 进入基准；但与 Power Systems 制造口径有 intersegment 关系，不能机械相加 | 多园区长期服务、PowerCare、远程监控、服务合同 |
+| Generator technologies / alternators / controls | 2025 销售 6.69 亿美元；2026Q1 1.67 亿美元 | 约 2% | 小体量但卡住系统交付 | A | 进入基准；随发电机组需求正常放量 | 若 alternator 成为瓶颈，利润率弹性上移 |
+| Engine + Components 商用车核心业务 | 2025 Engine 约 108.75 亿美元；Components 约 101.49 亿美元；2026Q1 分别 -4%、-5% | 合计为公司最大基本盘，但分部含 intersegment | 稳定基本盘和周期反弹来源 | A | 进入基准；按 on-highway 低位改善而非 AI 需求处理 | 2027 EPA / HELM 平台内容量、X10/X15、天然气 X15N |
+| BESS / 微电网 / Power Integration Center | 当前收入未单独披露；Cummins 有 BESS、PIC、微电网验证能力 | 无法可靠量化 | 提高系统方案价值 | C/D | 基准仅作小额 attach；单独收入不可靠量化 | 若 BESS+genset+控制成为数据中心标准包，进入乐观 |
+| Accelera 零排放业务 | 2025 销售 4.60 亿美元、EBITDA 亏损 8.96 亿美元；2026Q1 销售 1.01 亿美元、EBITDA 亏损 2.77 亿美元含 1.99 亿美元 charge | 收入小，亏损影响利润质量 | 利润拖累和远期期权 | A | 收入进入公司基准，增长不作为基准弹性；减亏进入利润校准 | e-mobility、battery、selected hydrogen；电解槽/燃料电池不进入 NTM 乐观主线 |
+
+## 3. 产品需求四情景
+
+本步口径：只评估外部需求池，不评估 Cummins 份额、收入确认和利润率。需求强弱只和各产品自己的当前需求锚比较；行业高景气不能自动等于公司收入增长。数据中心发电相关需求采用 `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`、`行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` 和 Cummins 官方披露作锚。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 大型数据中心柴油 standby / DCC 发电机组 | 2026Q1 Power Systems power generation +28%；公司称数据中心 power generation demand 继续超预期；行业侧 2026 数据中心 generator / onsite power 仍为电力瓶颈 | 需求仍增长但项目延期，NTM 数据中心发电需求增速降至 +5%-10% | 需求按当前指引兑现，NTM +15%-25% | 需求继续上修，NTM +30%-40%，客户提前锁定大功率 slot | 非线性上修，NTM +50%+，备用电源变成多园区容量销售前置条件 | 悲观较基准少约 5-10 亿美元需求池；乐观多约 10-20 亿美元；极度多 25 亿美元以上 | 基准符合当前预期；乐观高于当前预期 | 正向：AI IT load、电网排队、bridge-to-grid；反证：柴油排放许可、云 capex 放缓、发电机/ATS 交期使收入后移 |
+| 天然气 prime power / bridge-to-grid | 行业路线从 backup 扩到 onsite prime；Cummins Analyst Day 强调 prime power，但公开 Cummins GW 项目证据少于 Caterpillar/Wartsila/GE/Bloom | 需求停留在方案讨论和小项目，NTM Cummins 可参与需求 <5 亿美元 | 小规模项目和产品验证，NTM 可参与需求 5-10 亿美元 | 多个 50-200MW 园区采用 gas+BESS，NTM 可参与需求 10-25 亿美元 | Cummins 拿到 GW 级园区链条，NTM 可参与需求 30 亿美元以上 | 相对基准：悲观少 5 亿美元以内；乐观多 5-15 亿美元；极度多 25 亿美元以上 | 基准偏保守；乐观需订单验证 | 正向：BTM/onsite power 管线；反证：燃气管线、NOx/CO2 许可、客户可能选择燃机、SOFC 或 utility generation |
+| Distribution power generation 与服务 | 2025 Distribution power generation 49.32 亿美元，2026Q1 12.75 亿美元，服务和零件稳定；数据中心客户重视本地响应 | 设备交付延迟导致短期销售放缓，服务稳定；NTM +0%-5% | 按发电设备和售后装机正常兑现，NTM +8%-12% | 设备交付和服务 attach 同步提升，NTM +13%-18% | 多园区框架服务合同，NTM +20%+ | 相对基准：悲观少 3-5 亿美元；乐观多 3-6 亿美元；极度多 8 亿美元以上 | 基准符合当前预期 | 正向：装机扩大、PowerCare、服务网络；反证：设备收入一次性、客户自维保、项目延期 |
+| Generator technologies / alternators | 2025 销售 6.69 亿美元，2026Q1 1.67 亿美元；发电机头随 genset 和外部 OEM 需求上行 | 发电机组排产或外部 OEM 放缓，NTM 持平至 +5% | 随 Power Systems 正常增长，NTM +8%-15% | alternator 成为隐性瓶颈，NTM +18%-30% | 外部 OEM 与内部需求同时抢产能，NTM +35%+ | 基准约 0.7-0.8 亿美元增量；乐观多 0.1-0.2 亿美元；极度多 0.3 亿美元以上 | 基准略高于历史但符合当前发电景气 | 正向：genset 交付、AvK/Stamford；反证：供应链、铜钢成本、客户双供 |
+| Engine + Components 商用车核心业务 | 2026Q1 Engine -4%、Components -5%；管理层称北美 on-highway 从周期低位改善；2027 EPA/HELM 内容量是补充 | 北美中重卡恢复不及预期，NTM 收入持平或下滑 0%-5% | H1 弱、H2 改善，NTM +2%-6% | truck cycle 和新平台内容量提前，NTM +7%-10% | EPA 2027 前置采购、客户赢单和国际市场同时改善，NTM +12%+ | 相对基准：悲观少 8-15 亿美元；乐观多 5-10 亿美元；极度多 15 亿美元以上 | 基准符合管理层指引 | 正向：OEM 合作、HELM、aftermarket；反证：OEM 排产、关税、排放政策不确定、货运周期 |
+| BESS / 微电网 / PIC | 行业 BESS/微电网需求上升；Cummins 产品和测试能力存在，但收入未披露 | 客户继续以单独 UPS/BESS 供应商为主，Cummins attach 很小 | 作为 genset 项目的少量系统 attach，需求可见但收入小 | Cummins 将 BESS+genset+control 打包，获得多个数据中心项目 | onsite power 标准包化，微电网控制成为高毛利层 | 基准绝对收入难可靠量化；乐观可带来数亿美元级机会；极度可达 10 亿美元级机会 | 基准低于行业叙事，因收入证据不足 | 正向：AI 负载动态、BESS 毫秒响应；反证：Fluence/Tesla/Vertiv/Eaton/Schneider 竞争，认证周期 |
+| Accelera 零排放业务 | 氢能采用低于预期；2025/2026 出现电解槽/燃料电池 charges；e-mobility 仍有客户基础 | 氢能/燃料电池继续低迷，需求弱于旧预期 | 收入小幅恢复但仍亏损；重点是减亏 | 电驱/电池客户拉动收入，亏损收窄 | 政策或大客户项目恢复，收入超 10 亿美元 run-rate | 悲观较基准少 1-2 亿美元收入但利润拖累更大；乐观多 2-4 亿美元；极度多 5 亿美元以上 | 基准低于历史远期叙事 | 正向：e-mobility deployments；反证：电解槽退出、新能源采用慢、政策激励削弱 |
+
+## 4. 可收入化暴露与收入基数
+
+本步口径：只判断哪些需求能进入 Cummins NTM 收入表，以及当前可收入化基数；不预测增长、不判断利润率。A/B 级证据可进入基准，C 级需保守折扣，D/E 级不进入 NTM 基准。Cummins 能参与数据中心自备电需求池，不等于可在 NTM 确认收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 大型数据中心柴油 standby / DCC 发电机组 | Power Systems power generation 2025 年 47.31 亿美元；2026Q1 12.83 亿美元；官方称数据中心需求强 | 直接 | 高于公司平均，Power Systems Q1 EBITDA margin 29.5%，但数据中心子集未披露 | 数据中心/critical power 约 48-55 亿美元 | 55-63 亿美元 | 65-78 亿美元 | 82-95 亿美元 | 基准符合指引上调后的路径；乐观高于当前预期 | A/B；数据中心子集 C | 是 | 已披露产品线收入、Q1 增长、FY2026 指引；数据中心估算只作交叉校验 | 基准纳入，但不把 2030 或产能目标提前计入 |
+| 天然气 prime power / bridge-to-grid | Cummins 有 integrated gas generators、prime power 能力；Analyst Day 提到从 backup 扩到 onsite prime；未披露数据中心订单 | 直接/间接 | 硬件中等，若含长期服务可改善 | 0-3 亿美元 | 3-8 亿美元 | 10-20 亿美元 | 25-35 亿美元 | 基准仅为小额；乐观/极度代表订单上限 | C | 小比例 | 产品和战略路径明确，但客户、合同、交付时间表不足 | 基准保守折扣，主要在乐观以上体现 |
+| Distribution power generation 与服务 | 2025 Distribution power generation 49.32 亿美元、service 17.98 亿美元；2026Q1 Distribution 31.16 亿美元 | 直接 | 服务和零件质量高；设备销售毛利低于纯服务 | power generation 50-53 亿美元；服务 18-19 亿美元 | power generation 54-60 亿美元；服务 19-21 亿美元 | power generation 62-70 亿美元；服务 21-24 亿美元 | power generation 75-85 亿美元；服务 25 亿美元以上 | 基准符合当前 run-rate；乐观需要服务 attach | A | 是 | 收入表和产品线披露；服务/parts 稳定 | 进入基准，但注意与 Power Systems 制造口径存在传导关系，不直接相加 |
+| Generator technologies / alternators | 2025 6.69 亿美元；2026Q1 1.67 亿美元 | 直接/间接 | 零部件/alternator，可受益于紧缺和 mix | 6.5-7.0 亿美元 | 7.2-8.0 亿美元 | 8.5-10.0 亿美元 | 11-13 亿美元 | 基准略高于 2025；符合发电需求 | A | 是 | 已披露产品线收入 | 进入基准，收入小但对交付瓶颈重要 |
+| Engine + Components 商用车核心业务 | 2025 Engine 108.75 亿美元；Components 101.49 亿美元；Q1 2026 分别 26.72 亿、25.30 亿 | 直接 | 利润率随 truck cycle 和内容量变化；Components 受 Meritor/Atmus 可比口径影响 | 合计 205-212 亿美元 | 215-225 亿美元 | 228-238 亿美元 | 245 亿美元以上 | 基准符合 H2 改善；悲观低于当前预期 | A | 是 | 分部收入、Q1 趋势、管理层 on-highway 改善判断 | 进入基准；但不是 AI 数据中心收入 |
+| BESS / 微电网 / PIC | 产品和测试能力存在；BESS 容量 200kWh-2MWh 等资料；未披露收入 | 直接/间接 | 若为软件/控制和服务则高，若硬件集成则中低 | 无法可靠量化 | 0-2 亿美元 | 3-8 亿美元 | 10-15 亿美元 | 基准低于行业热度 | C/D | 仅小额 | 需求明确但收入表缺锚点 | 不作为基准主增量；列入乐观和后续跟踪 |
+| Accelera 零排放业务 | 2025 销售 4.60 亿美元；2026Q1 销售 1.01 亿美元；Q1 EBITDA 亏损 2.77 亿美元含 charge | 直接 | 亏损；减亏比收入更重要 | 3-4 亿美元 | 4-6 亿美元 | 6-9 亿美元 | 10 亿美元以上 | 基准低于历史氢能叙事；符合当前收缩策略 | A | 是 | 已披露收入、charge、出售低压燃料电池业务 | 收入进入公司总表；不进入成长主线 |
+
+排除项：客户总 AI capex、数据中心总建设金额、美国 AI 数据中心电力需求 GW、2030 data center revenue target、未披露客户 pipeline、同业 Caterpillar/Wartsila/GE/Bloom 的 GW 订单，均不能直接当作 Cummins NTM 可确认收入。
+
+## 5. 产品级收入和利润贡献
+
+本步口径：从需求和收入基数出发，评估每个产品在 NTM 内给 Cummins 贡献的收入和利润。表内金额是经营贡献口径，部分产品线存在 intersegment 和 sell-through 关系，不能横向机械相加到公司收入。利润贡献以 EBITDA 或利润方向表示，净利润影响无法在产品级可靠拆分。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 大型数据中心柴油 standby / DCC 发电机组 | 悲观 | 48-55 亿美元 | EBITDA 约 10-13 亿美元 | 低于 Q1 高点，仍高于公司平均 | 低于指引隐含路径 | Power generation 已确认，但项目延迟 | 保留为悲观 | 柴油许可、ATS/switchgear、客户 capex、交付后移 |
+| 大型数据中心柴油 standby / DCC 发电机组 | 基准 | 55-63 亿美元 | EBITDA 约 13-17 亿美元 | 高于公司平均，价格/mix 稳定 | 符合当前预期 | Q1 PS power generation +28%、FY2026 指引上调 | 保留为基准 | 数据中心收入未单独披露，不能把行业需求全额映射 |
+| 大型数据中心柴油 standby / DCC 发电机组 | 乐观 | 65-78 亿美元 | EBITDA 约 17-23 亿美元 | 继续扩张或维持高位 | 高于当前预期 | 高马力排产、客户提前采购、行业 time-to-power | 保留为乐观 | 产能、燃油/排放、客户多供压价 |
+| 大型数据中心柴油 standby / DCC 发电机组 | 极度乐观 | 82-95 亿美元 | EBITDA 约 23-30 亿美元 | 显著扩张但需极强 mix | 远高于当前预期 | 需要多个大型框架订单和产能提前兑现 | 下移为乐观上限 | 目前缺少 Cummins 官方数据中心 backlog/客户量化 |
+| 天然气 prime power / bridge-to-grid | 悲观 | 0-3 亿美元 | 利润小；工程支持费用可能抵消 | 不明确 | 低于管理层战略期待 | 行业需求强但 Cummins 项目证据少 | 保留为悲观 | 燃气许可、竞争对手项目更强 |
+| 天然气 prime power / bridge-to-grid | 基准 | 3-8 亿美元 | EBITDA 约 0.5-1.5 亿美元 | 中等，服务可提升 | 小幅纳入 | 官方提到 backup 到 prime power，产品存在 | 保留为基准小项 | 缺少客户、MW、交付期披露 |
+| 天然气 prime power / bridge-to-grid | 乐观 | 10-20 亿美元 | EBITDA 约 2-4 亿美元 | 上升 | 高于当前预期 | BTM/onsite power 变主流，Cummins 进入项目 | 保留为乐观 | 燃气供应、SOFC/燃机替代 |
+| 天然气 prime power / bridge-to-grid | 极度乐观 | 25-35 亿美元 | EBITDA 约 5-8 亿美元 | 明显上升 | 只代表 NTM 上限 | 需 Cummins 取得 GW 级项目 | 移入附录/乐观上限 | 证据等级不足，不进 NTM 主结论 |
+| Distribution power generation 与服务 | 悲观 | power generation 50-53 亿美元；服务 18-19 亿美元 | EBITDA 约 9-11 亿美元 | 稳定但设备 mix 放缓 | 低于当前 run-rate | Q1 Distribution +7%，服务稳定 | 保留为悲观 | 项目延期、设备销售一次性 |
+| Distribution power generation 与服务 | 基准 | power generation 54-60 亿美元；服务 19-21 亿美元 | EBITDA 约 11-13 亿美元 | 稳中有升 | 符合预期 | 2025/2026Q1 披露、售后网络 | 保留为基准 | 与 Power Systems 传导关系，不能重复计算 |
+| Distribution power generation 与服务 | 乐观 | power generation 62-70 亿美元；服务 21-24 亿美元 | EBITDA 约 13-16 亿美元 | 服务 attach 推升 | 高于预期 | 多园区服务、Parts/PowerCare | 保留为乐观 | 服务人员、现场响应、价格竞争 |
+| Distribution power generation 与服务 | 极度乐观 | power generation 75-85 亿美元；服务 25 亿美元以上 | EBITDA 约 17 亿美元以上 | 明显改善 | 远高于预期 | 多年框架服务合同和强交付 | 下移为乐观上限 | 缺少单独数据中心服务合同披露 |
+| Generator technologies / alternators | 悲观 | 6.5-7.0 亿美元 | EBITDA 无法可靠量化；利润率中高 | 持平 | 低于发电景气 | 产品线已披露 | 保留为悲观 | 外部 OEM 放缓、材料成本 |
+| Generator technologies / alternators | 基准 | 7.2-8.0 亿美元 | 利润随规模温和改善 | 小幅上升 | 符合预期 | 2025 与 Q1 2026 收入锚 | 保留为基准 | 体量小，对公司总利润影响有限 |
+| Generator technologies / alternators | 乐观 | 8.5-10.0 亿美元 | 利润率上行 | 上升 | 高于预期 | alternator 紧缺和外部客户 | 保留为乐观 | 客户可双供 |
+| Generator technologies / alternators | 极度乐观 | 11-13 亿美元 | 高利用率改善明显 | 上升 | 远高于预期 | 需成为行业瓶颈 | 仅作跟踪 | 证据不足 |
+| Engine + Components 商用车核心业务 | 悲观 | 205-212 亿美元 | EBITDA 约 25-29 亿美元 | 低于正常周期 | 低于指引路径 | Q1 Engine/Components 仍下滑 | 保留为悲观 | 北美 truck 弱、关税、OEM 排产 |
+| Engine + Components 商用车核心业务 | 基准 | 215-225 亿美元 | EBITDA 约 31-35 亿美元 | 恢复到正常区间 | 符合当前预期 | on-highway 改善、aftermarket 稳定、HELM | 保留为基准 | 恢复节奏不宜线性外推 |
+| Engine + Components 商用车核心业务 | 乐观 | 228-238 亿美元 | EBITDA 约 36-41 亿美元 | 上升 | 高于预期 | truck recovery、客户赢单、内容量 | 保留为乐观 | 2027 EPA 前置需求可能一次性 |
+| Engine + Components 商用车核心业务 | 极度乐观 | 245 亿美元以上 | EBITDA 43 亿美元以上 | 明显上升 | 远高于预期 | EPA27、HELM、国际市场同步 | 下移为乐观上限 | 强周期业务，不应给结构性高倍增 |
+| BESS / 微电网 / PIC | 悲观 | 无法可靠量化，0-1 亿美元 | 亏平或小利 | 不明确 | 低于行业叙事 | 产品存在但收入披露不足 | 保留为悲观 | 系统商竞争 |
+| BESS / 微电网 / PIC | 基准 | 0-2 亿美元 | 小额利润或工程投入抵消 | 中性 | 保守 | BESS/PIC 能力 | 保留为基准小项 | D 级 pipeline 不进基准 |
+| BESS / 微电网 / PIC | 乐观 | 3-8 亿美元 | 若控制/服务占比高，利润率上升 | 上升 | 高于预期 | genset+BESS+控制打包 | 保留为乐观 | 需客户认证和标准化 SKU |
+| BESS / 微电网 / PIC | 极度乐观 | 10-15 亿美元 | 高毛利软件/服务才有意义 | 上升 | 远高于预期 | onsite power 标准化 | 移入附录 | 客户和订单证据不足 |
+| Accelera 零排放业务 | 悲观 | 3-4 亿美元 | EBITDA 亏损 8-10 亿美元 | 拖累扩大 | 低于当前减亏期待 | 氢能 adoption 慢 | 保留为悲观 | 新 impairment、政策变化 |
+| Accelera 零排放业务 | 基准 | 4-6 亿美元 | EBITDA 亏损 5-8 亿美元 | 拖累收窄 | 符合当前收缩策略 | 出售低压燃料电池、聚焦投资 | 保留为基准 | 减亏节奏不可确认 |
+| Accelera 零排放业务 | 乐观 | 6-9 亿美元 | EBITDA 亏损 3-5 亿美元 | 明显改善 | 高于预期 | e-mobility 客户和退出亏损业务 | 保留为乐观 | 低收入基数，不应主导公司情景 |
+| Accelera 零排放业务 | 极度乐观 | 10 亿美元以上 | 接近盈亏平衡或亏损显著收窄 | 上升 | 远高于预期 | 需政策/客户项目恢复 | 移入附录/仅作跟踪 | 氢能证据不足 |
+
+## 6. 公司收入和利润四情景
+
+本步口径：把产品级贡献合成为 Cummins NTM 总收入、毛利率、经营利润率、EBITDA、净利润和自由现金流方向。先和 Cummins 自身指引、run-rate 和可见产品线比较，再考虑同业需求。产品之间存在制造、分销和服务传导关系，已在公司汇总时去重；不讨论市场定价。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 358-368 亿美元 | 较 2025 年收入约 +6% 至 +9%；较 NTM 基准少约 10-20 亿美元 | 低于 FY2026 指引中点和当前 run-rate；但仍不是需求崩塌 | 25.8%-26.5% | 13.8%-14.6% | EBITDA 61-65 亿美元；净利润无法可靠量化，方向低于基准 | 正但低于基准；库存/应收占用增加 | 中 | 数据中心项目延期、北美 truck 恢复弱、Accelera 亏损减不下来、关税/材料成本 |
+| 基准公司 | 375-385 亿美元 | 较 2025 年收入约 +11% 至 +14%；较 FY2026 指引路径正常延伸 | 接近指引、Q1 后上调预期和可见 power generation run-rate | 26.7%-27.4% | 14.8%-15.4% | EBITDA 68-72 亿美元；净利润受特殊项和税率影响无法可靠量化 | 正向；OCF 强但 capex 13.5-14.5 亿美元、营运资本吸收 | 中高 | Power Systems 交付节奏、Distribution 服务 attach、Engine/Components 正常化 |
+| 乐观公司 | 392-408 亿美元 | 较 2025 年收入约 +16% 至 +21%；较基准多约 15-25 亿美元 | 高于当前指引路径，且不是单一小基数项目造成 | 27.5%-28.5% | 15.8%-16.8% | EBITDA 75-80 亿美元；净利润方向明显高于基准 | 正向改善；若预付款/服务合同增加则 FCF 质量上升 | 中 | 需要数据中心发电、truck recovery、服务和 Accelera 减亏同时较顺 |
+| 极度乐观公司 | 418-435 亿美元 | 较 2025 年收入约 +24% 至 +29%；较基准多约 35-55 亿美元 | 显著高于当前预期，只能作为上限情景 | 28.5%-29.5% | 17.2%-18.5% | EBITDA 84-91 亿美元；净利润方向大幅高于基准但无法可靠量化 | 强正向但营运资本和扩产 capex 同步上行 | 低 | 需要大型数据中心 genset、gas prime、on-highway、service、Accelera 减亏和产能全部突破 |
+
+汇总判断：基准情景的核心不是把 AI 数据中心行业增速照搬给 Cummins，而是 FY2026 指引已上修、Power Systems 与 Distribution power generation 已在收入表体现，且 NTM 可见度高于普通周期制造业务。乐观情景必须来自 Cummins 自身 power generation 和服务收入继续超指引，而不是同业订单或 announced data center GW。极度乐观可以保留为上限，但当前证据不足以作为经营主结论。
+
+## 7. 证据校准、反证和可信度
+
+本步口径：只校准前四步情景，不重新预测。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 Power Systems 销售 19.56 亿美元、同比 +19%，EBITDA margin 29.5% | 产品贡献/公司利润 | 支持基准和乐观的收入可见性 | 明确支持高于公司平均利润率 | 高交付带来应收和库存，但利润质量强 | 基准保留；乐观保留 |
+| FY2026 收入指引上调到 +8% 至 +11%、EBITDA margin 上调到 17.75%-18.50% | 公司汇总 | 基准 NTM 收入从旧路径上移 | 支持基准 EBITDA 18% 左右 | 仍需 capex 和营运资本支持 | 基准保留 |
+| Cummins 未披露数据中心 revenue、backlog、book-to-bill、客户清单或取消率 | 收入基数/可信度 | 限制数据中心子集的基准放大 | 限制非线性利润外推 | 订单是否转收入不可直接验证 | 极度乐观下移为乐观上限 |
+| 行业自备发电与微电网需求 2026-2027 强，但项目延迟率高 | 需求/执行 | 支持 demand pool；限制 revenue timing | 许可和施工拖延会拖累吸收 | 可能形成应收、库存和交付后移 | 需求乐观保留，收入乐观折扣 |
+| Distribution power generation 和 service 已披露、服务网络强 | 收入确认/利润质量 | 支持可确认收入，不只是制造订单 | 服务和零件提高质量 | 改善生命周期现金流 | 基准保留，乐观保留 |
+| 天然气 prime power 是行业主线但 Cummins 项目证据弱于部分同业 | 产品贡献 | 基准只能小额纳入 | 硬件利润不应自动上修 | 许可/燃气/客户选择影响大 | 乐观保留；极度移入附录 |
+| Engine/Components 当前仍受 truck cycle 影响 | 公司组合 | 限制 Power Systems 好消息向全公司增速的线性传导 | 若 truck 恢复慢，合并 margin 被稀释 | 周期库存和客户排产影响 FCF | 悲观保留；基准保持 |
+| Accelera 低压燃料电池出售和电解槽收缩 | 公司利润/可信度 | 收入弹性下降 | 减亏是正向；新 charge 是风险 | 现金消耗有望下降但不确定 | 基准保留；乐观需持续减亏证据 |
+| 关税、材料、产能爬坡和固定价格项目 | 利润率 | 不一定压低收入 | 会压缩毛利率和 EBITDA margin | 增加营运资本和交付风险 | 只在利润层处理，不重复压需求 |
+| 数据中心 AI capex 放缓 | 需求 | 影响新订单，已锁定项目收入更滞后 | 价格压力滞后体现 | 项目延期和取消风险上升 | 悲观触发条件，不在基准重复惩罚 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 数据中心和 truck 需求仍有增长，但低于 Cummins 当前指引路径；NTM 收入 358-368 亿美元 | 已确认 Power Systems/Distribution 基数给收入下限 | 项目延期、柴油许可、truck recovery 弱、Accelera 亏损 | 保留 | 悲观公司 | 中 | AI capex 放缓只在需求和新增订单处理一次，不再重复压服务和毛利 |
+| 基准 | FY2026 指引正常兑现，Power Systems 和 Distribution 继续高于普通工业，NTM 收入 375-385 亿美元 | Q1 2026 已确认收入、指引上调、Power Systems margin、2025 年报产品线 | 数据中心子集未披露，天然气 prime power 证据不足 | 保留 | 基准公司 | 中高 | 不把缺少数据中心分拆披露重复惩罚为需求弱和利润弱 |
+| 乐观 | 数据中心发电、Distribution 服务和 truck recovery 同步好于当前预期，NTM 收入 392-408 亿美元 | 行业 time-to-power、Power Systems 强 margin、服务网络、Analyst Day 强化 power generation | Cummins 缺少公开数据中心 backlog；竞争激烈 | 保留 | 乐观公司 | 中 | 许可/燃气风险只限制天然气 prime 和项目确认，不重复压柴油 standby 已确认收入 |
+| 极度乐观 | 多个核心传导环节同时突破，NTM 收入 418-435 亿美元 | 需求池足够大，Cummins 有技术和服务网络 | 缺少客户、订单、backlog、MW、产能兑现节奏的 A/B 级证据 | 下移 | 乐观上限/附录跟踪 | 低 | 不把同业 GW 订单当 Cummins 订单，也不把 2030 目标提前进 NTM |
+
+## 8. 结论
+
+- 最可能情景：基准偏乐观的正常兑现。Cummins 的 NTM 收入最可能落在约 375-385 亿美元区间，EBITDA 约 68-72 亿美元。核心支撑来自 2026 指引上修、Power Systems 和 Distribution power generation 已在收入表体现、数据中心可靠备用电源和 power generation demand 继续强于普通工业周期。
+- NTM 收入结论：Cummins 不是把 AI 数据中心总 CapEx 直接转成收入，而是通过发电机组、alternator、控制、Distribution 交付、服务和后续 parts/O&M 把一部分电力需求收入化。最可确认的是大型柴油 standby / critical power 和 Distribution power generation；天然气 prime power 和 BESS/微电网属于乐观增量，不应放入基准大数。
+- 利润/现金流结论：Power Systems 已显示高质量利润率，但公司层面还要被 Engine/Components 周期和 Accelera 亏损稀释。基准 EBITDA margin 约 18.0%-18.5%较合理；若 Power Systems 高 margin 持续、Distribution 服务占比提升且 Accelera 减亏，乐观可上移至 19%上下。自由现金流为正，但数据中心发电项目和扩产会占用应收、库存和 capex。
+- 主要传导瓶颈：需求瓶颈不是 AI 算力需求，而是 Cummins 能否在 NTM 内把 design-in、排产、工厂测试、ATS/并机、现场许可、燃气或柴油方案、施工和客户验收串成收入确认。第二瓶颈是 on-highway truck cycle：即使数据中心业务强，Engine/Components 仍能稀释合并增速。
+- 乐观情景成立条件：Power Systems power generation 连续季度维持 20%上下或更高增速；Distribution power generation 和服务保持双位数增长；Power Systems margin 不因扩产/关税回落；管理层继续上调或确认数据中心发电需求；天然气 prime power 至少出现可验证客户/交付项目。
+- 极度乐观情景成立条件：Cummins 公布或市场验证大型数据中心框架订单、数据中心收入或 backlog；高马力扩产提前转收入；多个数据中心采用 Cummins gas+BESS/prime power；Truck recovery 和 2027 EPA/HELM 内容量同步兑现；Accelera 亏损快速收窄。缺少任一核心环节，极度乐观必须降为乐观上限。
+- 悲观情景触发条件：FY2026 指引下修或 Q2/Q3 收入明显低于 run-rate；Power Systems power generation 增速跌到个位数；数据中心项目因许可、燃气、开关设备或客户 capex 推迟；Engine/Components 继续负增长；Power Systems margin 回落到 20%以下；Accelera 继续出现大额 charge。
+- 后续跟踪数据：每季跟踪 Power Systems power generation、Distribution power generation、Power Systems EBITDA margin、Distribution service/parts mix、管理层对 data center demand 的措辞、任何数据中心客户/backlog/产能披露、large genset lead time、gas prime power 项目、BESS/microgrid attach、Accelera EBITDA loss、营运资本和 capex。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Cummins 2025 年报截至 2025-12-31；Cummins 2026Q1 截至 2026-03-31；本报告完成日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：Cummins 2026Q1 earnings release、Cummins 2026Q1 Form 10-Q、Cummins 2025 annual report、Cummins 2026 Analyst Day press release / page、Cummins 数据中心和 S17 产品资料、本地 CMI 公司调研、本地数据中心自备发电与微电网行业调研。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 指引用于 NTM 基准锚；2030 目标、large-engine capacity、数据中心收入长期目标只作远期期权和乐观上限，不进入 NTM 基准。
+- 主要来源：
+  - Cummins 2026Q1 earnings release（2026-05-05）：https://investor.cummins.com/news/detail/694/cummins-delivered-strong-operating-results-and-returned
+  - Cummins 2026Q1 Form 10-Q：https://investor.cummins.com/sec-filings/annual-reports/content/0000026172-26-000016/cmi-20260331.htm
+  - Cummins 2025 Annual Report to Shareholders：https://d1io3yog0oux5.cloudfront.net/_d17722f8dc0bbbfdabec9e5f299397d4/cummins/files/pages/events-presentations/annual-shareholder-meeting/2025_Annual_Report_to_Shareholders.pdf
+  - Cummins 2026 Analyst Day：https://investor.cummins.com/AnalystDay
+  - Cummins Analyst Day press release（2030 targets / large-engine capacity and product investments，2026-05-21）：https://investor.cummins.com/news/detail/696/cummins-raises-2030-financial-targets-announces
+  - Cummins `Powering the data center surge`（2026-06-10）：https://www.cummins.com/en-na/news/2026/06/10/powering-data-center-surge
+  - Cummins `How AI is shaping the future of data center power infrastructure design`（2025-11-24）：https://www.cummins.com/en-na/news/2025/11/24/how-ai-shaping-future-data-center-power-infrastructure-design
+  - Cummins reliable generators for data centers：https://www.cummins.com/en-na/generators/data-centers
+  - Cummins S17 Centum Series Product Award（2026-06-02）：https://www.cummins.com/en-na/news/releases/2026/06/02/centumtm-s17-series-earns-latest-product-award-cummins-power-generation
+  - Cummins 17-liter generator set launch（2025-06-25）：https://www.cummins.com/en-na/news/releases/2025/06/25/cummins-redefines-power-density-announcement-groundbreaking-17-liter
+  - 本地公司资料：`公司调研/电力_发电_能源_储能/CMI_Cummins_Inc_公司调研_2026-06-11.md`
+  - 本地行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+  - 本地行业资料：`行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - 本地行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_动态UPS、飞轮与超级电容_2026-06-11.md`
+  - 本地会议资料：`行业调研/产业背景/顶级会议信息/data_center_world_2026_research_report.md`
+  - 本地会议资料：`行业调研/产业背景/顶级会议信息/conference_update_datacloud_global_congress_2026_2026-06-10.md`

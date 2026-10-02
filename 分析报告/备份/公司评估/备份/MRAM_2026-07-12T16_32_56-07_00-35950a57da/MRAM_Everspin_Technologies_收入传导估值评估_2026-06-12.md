@@ -1,0 +1,162 @@
+# 公司收入传导与价值传导评估：Everspin Technologies（MRAM）
+
+报告日期：2026-06-12（America/Los_Angeles）  
+评估对象：MRAM / Everspin Technologies, Inc.  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM，即 2026Q2-2027Q1 四个季度的经营收入、利润和现金流传导。  
+资料边界：本报告只使用 `公司调研/`、`行业调研/` 和公开一手资料；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较内容。  
+排除项：不输出投资评级、目标价、股价区间、估值倍数判断，也不把金融市场价格作为经营价值传导证据。  
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口。FY2026、FY2027、Microchip 产线全周期、UNISYST 长期 TAM 和 2029 run-rate 只能作为附录或后续跟踪，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：FY2025 revenue 为 `$55.2M`，MRAM product sales 为 `$48.3M`，gross margin 为 `51.2%`；2026Q1 revenue 为 `$14.872M`，其中 product sales 为 `$14.100M`，gross margin 为 `52.7%`，GAAP net loss 为 `$0.296M`；TTM revenue 约 `$56.9M`，TTM product sales 约 `$51.4M`。2026Q2 管理层 revenue guidance 为 `$15.5-16.5M`，且不包含 2026-04 宣布的新 subcontract 影响。
+- 重要产品/业务线：`PERSYST / discrete MRAM product sales` 是当前收入主锚；`HR xSPI 64/128/256Mb` 是产品 mix 与 A&D/LEO/industrial 增量；`Amentum / Mil-Aero engineering and foundry services` 是 NTM 最明确的合同增量；`licensing / royalty / IP / engineering services` 是高波动补充；`UNISYST` 和 `D-MRAM / AgILYST` 是远期期权，不进入 NTM 基准收入；`Microchip second-source` 是产能和现金流变量，不是 NTM 收入来源。
+- NTM 公司收入四情景：悲观 `$57-67M`；基准 `$73-86M`；乐观 `$92-112M`；极度乐观 `$118-144M`。相对 TTM `$56.9M` 的绝对变化分别约为 `+$0-10M`、`+$16-29M`、`+$35-55M`、`+$61-87M`。
+- 利润或 EBITDA 四情景：悲观情景 GAAP operating loss 仍明显；基准情景接近盈亏平衡到小幅正经营利润；乐观情景开始出现可见经营杠杆；极度乐观情景只有在 product GM、Amentum milestone、license/IP mix 和费用控制同时成立时才可能出现双位数 operating margin。
+- 最大传导瓶颈：公司不披露 backlog/bookings，产品收入只能用 Q2 指引、design wins、qualification 和客户评论校准；MRAM 不是 2026 AI GPU/HBM 主链，不能把 AI capex 直接等同于 MRAM 收入。
+- 最大利润率变量：product / license / engineering services mix、yield、Amentum 项目成本、litigation cost、Microchip bring-up 成本，以及 xSPI/高可靠产品能否维持 50%+ gross margin。
+- 最大现金流变量：Microchip agreement 相关约 `$13.95M` estimated reimbursement obligations、Amentum milestone billing、distributor revenue 占比升高带来的 AR / inventory 周转，以及产品收入放量是否需要更多 work-in-process inventory。
+- 可信度：基准情景为中高可信，因为由 A/B 级收入表、正式 guidance、产品销售 run-rate 和 `$40M` 合同支持；乐观情景为中等可信；极度乐观为低可信上限，不能视作当前预期。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| PERSYST / discrete MRAM product sales（Toggle、STT-MRAM、ST-DDR、现有 xSPI） | 2026Q1 product sales `$14.1M`；TTM product sales 约 `$51.4M`；Q1 年化约 `$56.4M` | 2026Q1 约 `94.8%`；TTM 约 `90%` | 当前收入和毛利主锚，覆盖 industrial automation、transportation、data center persistent memory、A&D、gaming 等 | A | 进入基准；公司 NTM 产品收入主口径为 `$62-68M` | 高密度 STT / future 2Gb 作为补充，不直接纳入基准 |
+| HR xSPI 64/128/256Mb、FPGA configuration、A&D/LEO/auto/industrial 高可靠增量 | 未单独披露；包含在 product sales 中；64Mb 已完成 AEC-Q100 Grade 1 qualification，128Mb/256Mb 处于 2026Q2 qualification 节点 | 无法可靠量化 | 最现实的产品 mix 上移和高可靠客户扩张线 | B/C | 作为 product sales 的结构增量进入基准，但不得与 PERSYST product sales 重复相加 | 若 256Mb 后续扩大到 UNISYST 或 chiplet config，列远期期权 |
+| Amentum / Mil-Aero Toggle MRAM engineering and foundry services | 2026-04 宣布 `$40.0M`、约 2.5 年 subcontract；Q2 指引未包含其影响 | 2026Q1 无收入确认；NTM 基准按 `$8-12M` milestone 处理 | NTM 最明确的合同增量；提升 domestic MRAM supply chain 可信度 | B | 进入基准，按 milestone 节奏折扣；利润率不能按 product GM 直接外推 | 若带动后续 defense production orders，列 2027+ 跟踪 |
+| Licensing / royalty / IP / engineering services（含 GF eMRAM 相关、RAD-Hard、NRE 等，不含 Amentum） | FY2025 `$6.9M`；2026Q1 `$0.8M`，Q1 年化约 `$3.1M` | FY2025 约 `12.5%`；2026Q1 约 `5.2%` | 高毛利但波动大；可提高利润质量，但不可线性外推 | A/C | 基准只纳入 `$3-5M`；超出部分进入乐观 | 新 license / patent / customer-specific NRE 作为低可见度期权 |
+| UNISYST high-density code-and-data MRAM | 0；公司预计 2026Q4 engineering samples | 0 | 可能改变 2027+ 收入结构，但 NTM 主要是样品、验证和 design-in | D | 不进入 NTM 基准收入；乐观/极度乐观只允许小额样品或 early production | Edge AI、enhanced NOR replacement、2Gb density、software-defined embedded systems |
+| Microchip Oregon second-source foundry capacity | 0；2026-04 初始 10 年 agreement；Toggle/Sensor capacity 预计约 18 个月，STT flows 约 30 个月 | 0 | 供应链韧性和客户信心变量；短期更像现金流和执行变量 | B | 不作为 NTM 收入；只影响执行可信度和现金流 | 2027H2/2028 产能释放、ITAR/onshore capacity、TMR sensor |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只看产品或服务的外部需求池，不判断公司份额、收入确认和利润率。MRAM 的需求锚不能用 AI GPU/HBM 总 capex 替代；需求单位采用 product sales run-rate、qualification/design win、contract milestone、客户认证和样品节点。HR xSPI 是 product sales 内部 mix 增量，不能与 PERSYST 总产品收入重复相加。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| PERSYST / discrete MRAM product sales | Q1 product sales `$14.1M`；Q2 total revenue guide `$15.5-16.5M`；Japan inventory worked down；industrial / transportation / data center demand strong | NTM product demand `$52-58M`，产品 run-rate 未能超过 `$14-15M/q` | `$62-68M`，Q2 guide 正常兑现，2025 design wins 逐步转量产 | `$72-82M`，industrial、A&D、data center persistent memory 同步增强 | `$88-100M`，多个大客户/渠道补货同时放量 | vs TTM product `$51.4M`：约 `+$1-49M` | 悲观低于当前上行预期；基准符合当前指引和 run-rate；乐观以上需有订单/客户证据 | 正向：Q1 product +27.9% YoY，Q2 guide 上修。反证：无 backlog/bookings；AI 主链不是 MRAM |
+| HR xSPI 64/128/256Mb / FPGA config / A&D/LEO | 64Mb 完成 qualification；128Mb 预计 2026-05；256Mb 预计 2026-07，H2 volume availability；Lattice FPGA validation | 仅维持小批客户，NTM mix 增量 `$2-4M` | `$5-9M`，作为 product sales 内部结构增量 | `$10-16M`，A&D/LEO/auto/FPGA 多个项目转采购 | `$18-25M`，高可靠 xSPI 成为关键 FPGA/config 标准件 | 绝对增量无法与 product total 相加；只表示 mix 上移 | 基准略高于旧产品结构预期，但仍在 product sales 总额中保守纳入 | 正向：qualification 和客户验证明确。反证：未披露订单额、ASP、客户量产时间 |
+| Amentum / Mil-Aero engineering and foundry services | `$40M` over about 2.5 years；domestic Toggle MRAM process and engineering services | NTM milestone demand `$3-6M`，合同启动慢或验收后移 | `$8-12M`，按 30 个月线性附近折扣确认 | `$14-18M`，早期 milestone 和 billing 节奏快于基准 | `$18-24M`，前置 milestone + scope 扩展 | vs 0 基数：`+$3-24M` | 基准符合正式合同折扣；乐观高于当前 guide，因为 Q2 guide 尚未纳入 | 正向：正式合同金额和周期明确。反证：收入确认、成本和验收节奏未披露 |
+| Licensing / royalty / IP / engineering services excluding Amentum | FY2025 `$6.9M`；2026Q1 `$0.8M`；GF eMRAM license / RAD-Hard / customer NRE | `$2-3M`，旧项目结束后低位 | `$3-5M`，Q1 年化附近，少量 NRE | `$5-8M`，新客户/royalty/NRE 恢复 | `$8-12M`，多个 license 或 patent/NRE 同时发生 | vs Q1 annualized `$3.1M`：`-$1M` 到 `+$9M` | 基准符合 Q1 低 run-rate；高于 FY2025 需要新项目证据 | 正向：eMRAM adoption 推进。反证：license revenue 高波动，不可线性 |
+| UNISYST | 2026Q4 engineering samples；128Mb-2Gb planned density；edge AI / industrial / A&D target | 0，样品延期或只停留 demo | 样品和 design-in，不形成可量化基准收入 | `$1-4M`，少量 engineering sample / early customer payment | `$4-8M`，early production 或大客户 pre-production | vs 0：`+$0-8M` | 不进入基准；乐观以上才体现 NTM 小额收入 | 正向：产品发布、性能和应用描述明确。反证：D 级证据，无客户量产订单 |
+| Microchip second-source capacity | 10 年 agreement；Toggle/Sensor capacity about 18 months；STT about 30 months；1,300 wafers/q max purchase commitment over time | 需求存在但 NTM 不转收入，且现金支出先行 | 改善客户供货信心，不贡献 NTM product shipments | 客户因 onshore supply assurance 加快 design-in | 2027H2 前置客户 qualification 增强后续订单 | NTM revenue 绝对变化为 0；现金支出可能增加 | 当前 NTM 收入预期中不应纳入 | 正向：第二来源强化 supply chain。反证：产能时间表在 NTM 外，minimum purchase 可能成为现金约束 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断哪些需求可以进入公司 NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入。PERSYST product sales 和 licensing/royalty 已在收入表；Amentum 是正式合同但需 milestone；UNISYST 仍是样品；Microchip 是产能协议，不是 NTM 收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| PERSYST / discrete MRAM product sales | 2026Q1 product sales `$14.1M`；TTM product sales 约 `$51.4M`；Q2 total guide 支撑继续上行 | 直接 | 高可靠小批量产品，GM 通常 50%+，但受 mix/yield/渠道影响 | `$52-58M` | `$62-68M` | `$72-82M` | `$88-100M` | 基准符合当前 Q2 guide、run-rate 和 design win ramp | A | 是 | 已确认产品收入、正式季度指引、Q1 产品增长 | 作为公司 NTM revenue 主锚 |
+| HR xSPI / FPGA config / A&D/LEO 高可靠增量 | 不单独披露；包含在 product sales；qualification milestones 可见 | 直接，但在 product sales 内部 | 若进入高可靠客户，利润率方向偏正；早期 qualification 支持成本较高 | `$2-4M` mix 增量 | `$5-9M` mix 增量 | `$10-16M` mix 增量 | `$18-25M` mix 增量 | 基准略高于旧产品结构，但仍不额外加总 | B/C | 是，作为 product sales mix | 64Mb qualification、128/256Mb 时间表、Lattice validation | 纳入 product sales，不单独加总 |
+| Amentum / Mil-Aero engineering and foundry services | `$40M` over about 2.5 years subcontract；Q2 guide excluded impact | 直接 | 工程服务/工艺能力 revenue；毛利率无法可靠量化，项目成本和验收节奏决定利润 | `$3-6M` | `$8-12M` | `$14-18M` | `$18-24M` | 基准高于 Q2 guide 内含口径，但符合正式合同折扣 | B | 是 | 正式合同金额、周期和客户属性明确；确认节奏需折扣 | 作为 NTM 合同收入单独纳入 |
+| Licensing / royalty / IP / engineering services excluding Amentum | FY2025 `$6.9M`；2026Q1 `$0.8M` | 直接 | 可能高毛利，但极度不稳定 | `$2-3M` | `$3-5M` | `$5-8M` | `$8-12M` | 基准低于 FY2025，但符合 Q1 低 run-rate | A/C | 是，保守 | 已披露收入，未来项目未完全可见 | 以低 run-rate 纳入基准 |
+| UNISYST | 产品发布，Q4 2026 engineering samples；无收入表/订单锚点 | 直接潜在，但当前未收入化 | 早期样品可能毛利低或负；长期若量产可改善 mix | 0 | 0 | `$1-4M` | `$4-8M` | 基准为 0；乐观以上是 NTM 上限 | D | 否 | 只有产品发布和样品时间表，无量产客户或订单 | 不进入基准；仅作乐观/极度乐观上限 |
+| D-MRAM / AgILYST / AI memory roadmap | 技术路线和长期研发叙事 | 间接/远期 | 无 NTM 利润 | 0 | 0 | 0 | 无法可靠量化 | 低于 AI 叙事预期 | D/E | 否 | 无 NTM 客户、订单和收入确认路径 | 排除出 NTM，移入附录跟踪 |
+| Microchip second-source capacity | 10 年 foundry agreement；estimated reimbursement obligations about `$13.95M`；capacity begins after NTM mainly | 间接 | 短期现金流消耗；长期改善供货和客户信任 | 0 | 0 | 0 | 0 | 不应计入当前 NTM revenue | B | 否 | 是产能协议，不是客户收入合同 | 不纳入 NTM 收入，只纳入执行/现金流校准 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从需求和可收入化基数出发，评估每个重要产品/业务线在 NTM 内的 revenue and profit contribution。PERSYST product sales 是产品总额；HR xSPI 是其中的 mix 增量，表内明确为“不额外加总”。毛利贡献使用区间和方向表达；若项目成本、ASP 或合同会计缺失，则填“无法可靠量化”。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| PERSYST / discrete MRAM product sales | 悲观 | `$52-58M` | gross profit 约 `$24-29M` | GM 降至 `46-50%` | 低于当前 Q2 guide 隐含路径 | Q1 product `$14.1M` 但无 backlog | 保留 | demand 回落、渠道库存、客户项目延期 |
+| PERSYST / discrete MRAM product sales | 基准 | `$62-68M` | gross profit 约 `$31-36M` | GM `50-53%` | 符合当前 run-rate、design wins 和 Q2 guide | Q1 product +27.9% YoY；Q2 guide `$15.5-16.5M` | 保留 | 产品 mix 不披露，无法确认每条应用线 |
+| PERSYST / discrete MRAM product sales | 乐观 | `$72-82M` | gross profit 约 `$39-47M` | GM `53-57%` | 高于当前基准 | industrial / transportation / data center / A&D 同步走强 | 保留 | 需要具体订单和客户量产，不可只靠 AI memory 叙事 |
+| PERSYST / discrete MRAM product sales | 极度乐观 | `$88-100M` | gross profit 约 `$50-60M` | GM `56-60%` | 明显高于当前预期 | 多客户放量、xSPI high-rel mix、高利用率同时成立 | 保留为上限 | 无 backlog；产能和客户认证需同时突破 |
+| HR xSPI / FPGA config / A&D/LEO 高可靠增量（不额外加总） | 悲观 | product sales 内部 `$2-4M` mix 增量 | 无法可靠量化；贡献有限 | 略正或中性 | 低于 qualification 节点期待 | 64Mb qualified，但 128/256 未完成商业放量 | 保留 | qualification 不等于订单 |
+| HR xSPI / FPGA config / A&D/LEO 高可靠增量（不额外加总） | 基准 | product sales 内部 `$5-9M` mix 增量 | 无法可靠量化；对 GM 方向小幅正面 | 正向 | 符合当前客户认证节奏 | 64Mb AEC-Q100 Grade 1；128/256Mb H2 availability | 保留 | 订单、ASP 和客户时间表未披露 |
+| HR xSPI / FPGA config / A&D/LEO 高可靠增量（不额外加总） | 乐观 | product sales 内部 `$10-16M` mix 增量 | 若高可靠客户占比提升，GM 可能高于公司平均 | 正向扩张 | 高于当前预期 | Lattice validation、A&D/LEO 客户评价、design-in pipeline | 保留 | 必须证明谁买、买什么、何时量产 |
+| HR xSPI / FPGA config / A&D/LEO 高可靠增量（不额外加总） | 极度乐观 | product sales 内部 `$18-25M` mix 增量 | 可能显著改善 product mix，但无法可靠量化 | 明显正向 | 作为上限 | xSPI 成为 FPGA/config 高可靠标准件 | 保留为低可信上限 | 无订单额披露；不能替代全部 NOR/flash |
+| Amentum / Mil-Aero engineering and foundry services | 悲观 | `$3-6M` | 无法可靠量化；项目毛利可能低于 license，高于低毛利服务 | 不确定 | 低于线性合同节奏 | `$40M` contract 但 Q2 guide 未含 | 保留 | milestone /验收 / cost timing |
+| Amentum / Mil-Aero engineering and foundry services | 基准 | `$8-12M` | 无法可靠量化；gross contribution positive，operating leverage 取决项目成本 | 中性到正向 | 符合正式合同折扣 | 合同金额和 2.5 年周期明确 | 保留 | 不是普通 product revenue，不能按 product GM 直接算 |
+| Amentum / Mil-Aero engineering and foundry services | 乐观 | `$14-18M` | 若 billing 和成本控制好，可明显改善 operating leverage | 正向 | 高于当前基准 | domestic MRAM/DoW program 需求强，Microchip onshore capacity 提供后续支撑 | 保留 | 需要 milestone 提前和范围扩张证据 |
+| Amentum / Mil-Aero engineering and foundry services | 极度乐观 | `$18-24M` | 无法可靠量化；可能成为利润上修来源，也可能被项目成本抵消 | 正向但不确定 | 上限 | early milestone + additional scope | 保留为上限 | 单一合同不能当作长期 run-rate |
+| Licensing / royalty / IP / engineering services excluding Amentum | 悲观 | `$2-3M` | gross profit 约 `$1-2M` | 低于历史 | 低于 FY2025 | Q1 `$0.8M` 已处低位 | 保留 | 旧项目结束，新增 license 不可见 |
+| Licensing / royalty / IP / engineering services excluding Amentum | 基准 | `$3-5M` | gross profit 约 `$2-4M` | 中性 | 符合 Q1 annualized run-rate | 已披露 revenue line | 保留 | 波动大，不可线性 |
+| Licensing / royalty / IP / engineering services excluding Amentum | 乐观 | `$5-8M` | gross profit 约 `$4-7M` | 正向 | 高于当前低 run-rate | eMRAM / RAD-Hard / customer NRE 增强 | 保留 | 缺少具体新合同披露 |
+| Licensing / royalty / IP / engineering services excluding Amentum | 极度乐观 | `$8-12M` | gross profit 约 `$6-10M` | 明显正向 | 上限 | 多个 license/NRE 同时确认 | 保留为低可信上限 | timing 高波动，不能作为基准 |
+| UNISYST | 悲观 | 0 | 负贡献或研发费用化 | 负向 | 低于产品发布叙事 | Q4 samples 可能延期 | 保留 | 仅 D 级证据 |
+| UNISYST | 基准 | 0 | 负贡献或不显著 | 中性到负向 | 符合 NTM 保守口径 | Q4 engineering samples，不是 volume shipment | 保留 | 无订单、客户量产和价格 |
+| UNISYST | 乐观 | `$1-4M` | 无法可靠量化；早期样品毛利不宜乐观 | 中性 | 高于基准 | Edge AI / industrial / A&D 设计导入 | 保留 | 必须有客户付款或 early production |
+| UNISYST | 极度乐观 | `$4-8M` | 小额正贡献，但费用投入仍高 | 小幅正向 | 上限 | 一家或多家客户提前 production | 下移为乐观上限 | 核心证据仍是样品时间表 |
+| Microchip second-source capacity | 悲观 | 0 | 现金流负向，可能出现 underutilization 或 shortfall payment 风险 | 负向 | 低于供应链叙事 | capacity starts after NTM mostly | 保留 | upfront reimbursements 和 qualification delay |
+| Microchip second-source capacity | 基准 | 0 | 现金流负向；长期执行可信度正向 | 短期负向，长期正向 | 符合 NTM 边界 | 10 年 agreement，18/30-month capacity timeline | 保留 | 不贡献 NTM revenue |
+| Microchip second-source capacity | 乐观 | 0 | 改善客户信心，但 NTM 利润仍不直接受益 | 中性 | 高于执行可信度 | 客户因 onshore supply assurance 加速 design-in | 保留 | 客户订单仍需单独证明 |
+| Microchip second-source capacity | 极度乐观 | 0 | 若 qualification 前置，可提高 2027+ 可信度；NTM 利润仍无法可靠量化 | 中性 | 只作为执行上限 | bring-up 超预期 | 仅作跟踪 | NTM 内没有产品出货时间表 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。公司汇总使用 `PERSYST total product sales + Amentum + other licensing/IP/engineering + small UNISYST only in upside`，不把 HR xSPI 与 product total 重复相加，不纳入 Microchip 产能收入，不使用股价、P/S 或估值倍数。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$57-67M` | vs TTM `$56.9M` 约 `+0-18%`；绝对变化 `+$0-10M` | 低于当前 Q2 guide、design win ramp 和 Amentum 合同隐含路径 | `48-51%` | `-25%` 到 `-9%` | GAAP net loss 约 `-$12M` 到 `-$5M`；EBITDA 仍可能接近负值 | 负向；Microchip setup、inventory/AR 和 litigation 吞噬现金 | 中 | 产品 run-rate 回到 `$14-15M/q`，Amentum milestone 后移，费用刚性 |
+| 基准公司 | `$73-86M` | vs TTM 约 `+28-51%`；绝对变化 `+$16-29M` | 符合当前指引、product run-rate、238 design wins ramp 和 `$40M` contract 的保守折扣 | `50-54%` | `-10%` 到 `+5%` | GAAP net income 约 `-$6M` 到 `+$3M`；non-GAAP 利润大概率为正 | 中性到小幅负向；经营现金流改善但 Microchip 与营运资本消耗抵消 | 中高 | Amentum 确认节奏、product GM、litigation cost、渠道库存 |
+| 乐观公司 | `$92-112M` | vs TTM 约 `+62-97%`；绝对变化 `+$35-55M` | 高于当前预期，需产品、Amentum 和 xSPI 同步兑现 | `53-57%` | `5-15%` | GAAP net income 约 `$5-15M`；EBITDA 转明显正值 | 中性到正向；若 milestone billing 快于成本，FCF 改善 | 中 | 需要具体客户订单、xSPI volume、Amentum early milestones；不能只靠 AI narrative |
+| 极度乐观公司 | `$118-144M` | vs TTM 约 `+107-153%`；绝对变化 `+$61-87M` | 明显高于当前预期，只能作为 NTM 上限 | `55-60%` | `15-24%` | GAAP net income 约 `$16-30M`；EBITDA 强正 | 正向但伴随 working capital 和 Microchip investment 压力 | 低 | 多个核心传导环节必须同时成立：product demand、xSPI mix、Amentum、license/IP、费用控制 |
+
+公司汇总校验：
+
+- 与当前预期的关系：`基准公司` 是当前经营预期正常兑现，不是行业 beta 上修；`乐观公司` 需要公司特定订单、contract milestones 或 product mix 证据；`极度乐观公司` 不应被视为预测，而是收入和利润同时上修的上限。
+- 不重复计算：HR xSPI 是 product sales 内部结构增量；Microchip second-source 不产生 NTM revenue；UNISYST 不进入基准；Amentum 与 ordinary licensing/IP 分开列示。
+- 利润质量：产品收入具备 50%+ GM 历史锚，质量高于低毛利 pass-through；Amentum 的利润质量取决于成本和验收，不能按 license revenue 毛利外推；UNISYST 早期可能增加研发和客户支持，不应直接贡献利润。
+- 现金流：公司无金融债、现金充足，但 Microchip reimbursement obligations、litigation、库存、AR 和 distributor mix 会使 GAAP 利润与 FCF 短期不完全同步。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步只校准前四步情景，不重新预测股价或市场定价。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在其实际影响层级处理一次：需求风险在第 3 节，收入确认风险在第 4 节，产品利润风险在第 5 节，公司组合和现金流风险在第 6 节。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 product sales `$14.1M`、+27.9% YoY，Q2 total revenue guide `$15.5-16.5M` | 收入基数、产品贡献、公司汇总 | 支撑 product sales 基准 `$62-68M` | 52.7% GM 支撑基准 GM `50-54%` | AR/inventory 上升需跟踪，但经营需求真实 | 基准保留；悲观需产品 run-rate 回落触发 |
+| 2025 design wins `238` vs 2024 `178`，预计 2026-2027 ramp | 需求、产品贡献、执行可信度 | 支撑 xSPI / PERSYST product mix 上移 | 若高可靠 mix 提升，利润率方向正面 | design win 到量产周期 3-18 个月，timing 不确定 | 基准保留；乐观需要具体订单确认 |
+| `$40M` Amentum / Mil-Aero subcontract | 收入基数、公司汇总、现金流 | 支撑 NTM `$8-12M` 基准合同收入 | 利润率无法可靠量化，不能按 product GM 外推 | milestone billing 和项目成本决定 FCF | 基准保留；极度乐观仅作为上限 |
+| UNISYST Q4 2026 engineering samples | 需求、收入确认 | 不进入基准；乐观/极度乐观可有 `$1-8M` 上限 | 早期样品和客户支持可能压低利润率 | 研发和认证投入先行 | 基准排除；乐观保留；极度乐观下移为乐观上限 |
+| Microchip 10 年 foundry agreement，Toggle/Sensor about 18 months，STT about 30 months | 执行可信度、现金流 | 不贡献 NTM 收入 | 短期不改善利润率 | 约 `$13.95M` setup reimbursement obligations，minimum purchase commitments 是后续风险 | NTM 收入排除；执行因素仅作跟踪 |
+| No disclosed backlog/bookings/cancellation/lead-time | 证据可信度 | 限制乐观和极度乐观收入上修 | 限制利润率非线性扩张 | 无法提前验证渠道库存和客户交付 | 乐观保留为中可信；极度乐观为低可信 |
+| AI data-center main-chain mismatch | 需求、收入确认 | 排除把 GPU/HBM/Hyperscaler capex 直接映射为 MRAM revenue | 防止把低可见收入上修为高质量利润 | 防止市场叙事替代订单 | 只在需求层处理一次；不重复惩罚利润和公司汇总 |
+| Litigation and higher G&A in Q1 | 产品利润、公司汇总 | 不直接影响需求 | 压低 operating margin，尤其悲观/基准 | 现金费用与管理精力风险 | 在公司利润层处理；不重复压低需求 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Product run-rate 无法明显超过 `$14-15M/q`，Amentum milestone 延后，NTM revenue `$57-67M` | Q1 product sales 和 Q2 guide 仍提供底部 | 无 backlog，license/other 下滑，litigation cost 上升 | 保留 | 悲观经营下沿 | 中 | AI 主链暴露弱只在需求层处理，不再额外压低所有利润项 |
+| 基准 | Product sales 按 Q2 guide 和 design wins 正常兑现，Amentum 按折扣确认，NTM revenue `$73-86M` | A/B 级证据充足：收入表、指引、产品销售、正式 `$40M` 合同 | Amentum timing、xSPI 客户订单、license/IP 波动仍需假设 | 保留 | 基准主情景 | 中高 | Backlog 未披露只限制上行情景，不应否定已确认 product sales |
+| 乐观 | Product、xSPI、Amentum 和 license/IP 中至少两项强于当前预期，NTM revenue `$92-112M` | 238 design wins、64Mb qualification、128/256Mb timetable、Japan inventory recovery、A&D/LEO需求 | 未披露客户订单额；UNISYST 仍为 samples | 保留 | 乐观情景 | 中 | AI capex 不能作为公司 alpha；必须有 MRAM-specific 订单 |
+| 极度乐观 | Product sales 接近 `$90-100M`，Amentum and IP 同时强，UNISYST early revenue，NTM revenue `$118-144M` | Microchip supply assurance、Amentum、xSPI qualification、UNISYST roadmap 同时提供方向性支持 | 任一核心环节缺订单、客户或确认节奏；Microchip 不在 NTM 内释放产能 | 保留 | 极度乐观上限 | 低 | 同一“无 backlog”风险只限制上限可信度，不重复下调基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM revenue 约 `$73-86M`，相对 TTM `$56.9M` 增长约 `+28-51%`；收入增量主要来自 product sales 正常兑现和 Amentum milestone，而不是 AI GPU 主链导入。基准毛利率约 `50-54%`，GAAP operating margin 约 `-10%` 到 `+5%`，non-GAAP 利润更可能为正。
+- 乐观情景成立条件：Q2 之后 product sales 能稳定超过 `$16-18M/q`；xSPI 128/256Mb qualification 后出现可验证 A&D/LEO/industrial/FPGA orders；Amentum milestone 在 NTM 内确认 `$14M+`；license/IP 不再停留在 Q1 低 run-rate；litigation 和 Microchip setup 不吞噬 operating leverage。
+- 极度乐观情景成立条件：PERSYST product demand、HR xSPI mix、Amentum milestone、license/IP 和费用控制同时突破；UNISYST 至少出现 early customer payment 或 pre-production signal；同时毛利率维持 `55%+`。当前证据不足以把极度乐观放入主情景。
+- 悲观情景触发条件：产品收入跌回 `$12-14M/q` 或 Q2 guide 之后无法延续；Amentum revenue 确认后移；渠道库存反复；gross margin 跌破 `50%`；litigation/G&A 继续抬升；Microchip setup 带来现金消耗但客户订单不跟进。
+- 后续跟踪数据：2026Q2 actual revenue and product sales、2026Q3 guidance、Amentum milestone revenue/billing、product GM、operating expenses excluding litigation、AR/inventory/distributor mix、128/256Mb qualification 是否完成、UNISYST Q4 samples 是否按期、Microchip bring-up cash spending、客户证明是否超过泛 AI 用语。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司 FY2025 数据截至 2025-12-31，2026Q1 数据截至 2026-03-31，Q2 指引发布于 2026-04-29；本报告写作日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：Everspin 2026Q1 financial results；Everspin 2026Q1 Form 10-Q；Everspin FY2025 / Q4 2025 financial results；Everspin 2025 Form 10-K；Everspin 2026-04 Microchip agreement 8-K；Everspin 2026-04 Amentum / Mil-Aero agreement press release。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：若 2026H2 每季 revenue 维持 `$16-18M` 且 Amentum 开始贡献，FY2026 revenue 有可能进入 `$65-80M` 区间；若 Amentum 与 product sales 同步增强，2027 run-rate 才可能接近 `$90-110M+`。Microchip second-source 主要影响 2027H2/2028 产能，UNISYST 和 D-MRAM 主要影响 2027+ 期权。
+- 本地来源：
+  - `公司调研/AI服务器_存储_EMS/MRAM_Everspin_Technologies_公司调研_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_片上SRAM、MRAM与近存计算_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_特种晶圆代工_2026-06-11.md`
+- 主要公开来源：
+  - Everspin 2026Q1 results: https://investor.everspin.com/news-releases/news-release-details/everspin-reports-unaudited-first-quarter-2026-financial-results
+  - Everspin 2026Q1 Form 10-Q: https://www.sec.gov/Archives/edgar/data/1438423/000162828026028464/mram-20260331.htm
+  - Everspin FY2025 results: https://investor.everspin.com/news-releases/news-release-details/everspin-reports-unaudited-fourth-quarter-and-full-year-2025
+  - Everspin 2025 Form 10-K: https://www.sec.gov/Archives/edgar/data/1438423/000162828026014733/mram-20251231.htm
+  - Everspin / Microchip manufacturing agreement: https://investor.everspin.com/news-releases/news-release-details/everspin-technologies-expands-shore-mram-manufacturing-capacity
+  - SEC 8-K for Microchip agreement: https://www.sec.gov/Archives/edgar/data/1438423/000162828026024696/mram-20260408.htm
+  - Everspin `$40M` Mil-Aero agreement: https://investor.everspin.com/news-releases/news-release-details/everspin-executes-40m-agreement-mil-aero-mram-applications
+  - Everspin UNISYST launch: https://investor.everspin.com/news-releases/news-release-details/everspin-launches-new-generation-unified-memory-embedded-systems
+  - Everspin HR xSPI 256Mb qualification milestones: https://investor.everspin.com/news-releases/news-release-details/everspin-advances-high-reliability-xspi-mram-portfolio-256mb
+  - IBM FlashCore Module 4 with Everspin PERSYST 1Gb STT-MRAM: https://investor.everspin.com/news-releases/news-release-details/next-generation-ibm-flashcore-modules-feature-everspins-persyst
+  - Lattice FPGA validation: https://investor.everspin.com/news-releases/news-release-details/everspin-and-lattice-semiconductor-collaborate-bring-high
+  - GlobalFoundries AutoPro 150 eMRAM: https://gf.com/gf-press-release/globalfoundries-announces-availability-of-autopro-150-emram-technology-on-enhanced-fdx-platform-for-advanced-automotive-applications/
+  - Samsung eMRAM roadmap: https://semiconductor.samsung.com/news-events/tech-blog/developing-the-industrys-most-energy-efficient-next-generation-mram-selected-as-iedm-highlight-paper/
+  - TSMC MRAM research page: https://research.tsmc.com/english/research/memory/mram/publish-time-1.html

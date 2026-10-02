@@ -1,0 +1,825 @@
+# CRDO：Credo Technology Group 公司全面尽调（2026-07-11）
+
+> 研究截止：2026-07-11（美国太平洋时间）。股价采用最近交易日 2026-07-10 收盘价；财务数据采用截至 2026-05-02 的 FY2026 10-K 和 2026-06-01 发布的 FY2026 Q4 财报。除特别注明外，金额均为美元。  
+> 研究边界：公司事实来自 SEC、公司 IR、财报电话会、产品发布、OFC 2026、PCI-SIG 及公开行业资料；项目内只调用“基本面/行业调研/”下相关产业资料，未调用公司调研兄弟文件、日度资料、特征量化或其他目录。  
+> 口径警告：Credo 只披露一个经营分部，不披露 AEC、光 DSP、光模块、SiPho PIC、Retimer 的季度收入和产品毛利率，也不披露产品 backlog、bookings、B2B、交期或取消率。因此本文把“公司披露”“渠道/客户验证”“模型估算”严格分开；区间估算不可当作公司口径。
+
+## 核心结论
+
+Credo 已从一家 SerDes/IP 与连接芯片供应商，变成当前最纯的 AI 数据中心高速互联平台之一：FY2026 主要靠 ZeroFlap AEC 放量把收入从 4.37 亿美元推到 13.35 亿美元，FY2027 又计划由 AEC 与光学产品各贡献约一半新增收入。其核心护城河不是普通线缆制造，而是低功耗 SerDes/DSP、系统级信号完整性、PILOT 遥测、客户联合定义产品以及已经嵌入大规模 AI 集群的资格认证。
+
+投资判断可以压缩为四句话：
+
+1. **基本面非常强**：FY2026 收入增长 205.7%，GAAP 毛利率 68.0%，净利率 35.4%；FY2027 管理层预计收入增长超过 80%，光学组合收入超过 6 亿美元。
+2. **AEC 不是马上被光学淘汰的过渡品**：7 米以内，AEC 仍有功耗、成本、可靠性和可维护性优势；但 1.6T/200G-per-lane 以后铜的热与损耗约束加大，Credo 收购 DustPhotonics、推出 ZF Optics 正是在给自己的铜业务做技术对冲。
+3. **增长可见性强于传统“无 backlog”半导体公司，但并非无风险订单**：一年内库存从 0.90 亿美元增至 2.51 亿美元、不可取消库存 PO 从 0.303 亿美元增至 1.492 亿美元、可退供应商产能押金从 0.081 亿美元增至 0.710 亿美元；同时客户 PO 通常可以在有限通知期内取消、变更或延后。
+4. **估值已预付大量成功**：2026-07-10 收盘市值约 480.7 亿美元、GAAP P/E 102.7 倍、P/S 36.0 倍、FY2027 一致预期 non-GAAP forward P/E 42.1 倍。产品失去份额、光学爬坡延迟或大客户季度消化库存，都可能造成高倍数压缩。
+
+| 维度 | 结论 | 关键证据 | 判断 |
+|---|---|---|---|
+| 收入动能 | FY2026 +205.7%；FY2027 指引 >80% | FY2026 99% 以上收入增量来自超大规模客户 AEC 出货量；光学 FY2027 >6 亿美元 | 5/5 |
+| 产品壁垒 | AEC 芯片/系统、SerDes、PILOT、客户资格认证形成组合壁垒 | AEC 已部署数百万条；公司称达到 1 亿小时 MTBF；供应商更换通常需 9–12 个月 | 4.5/5 |
+| 财务健康 | 低负债、高现金、强盈利和经营现金流 | 现金及短投 14.43 亿美元，流动比率 10.15 倍，FY2026 OCF 4.64 亿美元 | 4.5/5；Dust 收购后降至约 4/5 |
+| 客户风险 | 极高集中度但在改善 | FY2026 三大终端客户贡献 33%/32%/19%，Top 10 约 90%；Q4 四大客户 34%/27%/16%/10% | 2/5 |
+| 供应链 | 现有 100G/lane 较稳，200G/lane 与光学偏紧 | 12nm 是 AEC 主力；200G/lane 全部使用 3nm；管理层称供应链“显著紧张” | 3.5/5 |
+| 估值容错 | 很低 | 36.0 倍销售额、约 103 倍 GAAP 盈利；分析师均价目标仅比现价高约 4.7% | 1.5/5 |
+
+## 1. 公司整体业务、投资者定位与财务健康
+
+### 1.1 公司是什么、在产业链哪里
+
+Credo Technology Group Holding Ltd（NASDAQ: CRDO）成立于 2008 年，上市主体是开曼群岛控股公司，主要运营与研发分布在美国、加拿大、中国大陆、香港和台湾。FY2026 期末有 807 名全职等效员工，其中 616 名是工程师，占 76.3%；公司 FY2026 研发费用 2.794 亿美元，占收入 20.9%。[FY2026 10-K](https://www.sec.gov/Archives/edgar/data/1807794/000162828026043303/crdo-20260502.htm)
+
+Credo 位于 AI 数据中心产业链的“物理层/链路层连接”位置：
+
+GPU/AI ASIC、NIC、交换芯片、CPU/CXL 主机  
+→ Credo SerDes、DSP、Retimer、AEC、光 DSP、SiPho PIC、光模块与诊断软件  
+→ OEM/ODM、线缆厂、光模块厂、交换机厂  
+→ hyperscaler、NeoCloud、企业 AI 集群。
+
+它不生产 GPU、交换 ASIC 或光纤本体，也不是传统低毛利线缆代工厂。公司以 fabless 模式控制高价值芯片、固件、遥测和系统设计，晶圆在 FY2026 全部由 TSMC 生产，IC 封装由 Amkor/ASE、测试由 KYEC/Sigurd、部分 AEC 系统制造由 BizLink 承接。这个位置决定了 Credo 的收入同时具备半导体毛利率与线缆/模块出货弹性。[10-K 产品与供应链说明](https://www.sec.gov/Archives/edgar/data/1807794/000162828026043303/crdo-20260502.htm)
+
+### 1.2 业务组合
+
+| 业务 | 产品/型号 | 解决的问题 | 当前阶段 |
+|---|---|---|---|
+| ZeroFlap AEC | 100G/200G/400G/800G/1.6T；CLOS、SPAN、SHIFT、SWITCH | 7 米以内 GPU—NIC—交换机、机架内/相邻机架高速连接；替代粗重 DAC 或高功耗 AOC | FY2026 绝对主力，量产数百万条 |
+| 光 PAM4 DSP | Seagull；Dove、Lark、Robin；Bluebird、Cardinal | 400G/800G/1.6T 光模块的信号恢复、FEC、激光器驱动、FRO/LRO | FY2027 三个光学收入支柱之一 |
+| ZeroFlap Optics | 200G DR2、400G DR4、800G 2×DR4；1.6T 路线图 | 500 米以内光连接的 link-flap、遥测和远程诊断 | 800G 于 2026-03 GA；FY2027 快速放量 |
+| SiPho PIC | DustPhotonics 400G/800G/1.6T，3.2T 路线图 | 把调制、耦合等光学功能集成到硅光 PIC；支持可插拔、NPO、CPO | 2026-05 收购完成，已有 hyperscaler design wins |
+| Ethernet/Scale-up Retimer | Blue Heron 224G multiprotocol | UALink、ESUN、Ethernet 的 40+dB 224G 背板/线缆链路恢复 | 送样，2026 年第三季度量产可用 |
+| PCIe/CXL Retimer 与 AEC | Toucan 7nm；OSFP-XD x16 Gen6 AEC | CPU/GPU/NIC/NVMe/CXL 内存之间远距离 PCIe | PCIe 5.0 速率合规；Gen6 技术可用但尚非 64GT/s 合规认证 |
+| OmniConnect | Weaver 5nm、112G VSR memory fanout gearbox | 把 LPDDR 移出封装基板，扩大推理内存容量与带宽 | 设计导入；管理层预计 FY2028 初始量产收入 |
+| microLED ALC | Hyperlume Active LED Cable | 以 microLED 将可插拔连接延长至约 30 米，追求铜级可靠性 | 早期研发/客户评估；预计 FY2028 初始收入 |
+| PILOT | 跨 AEC、Retimer、光模块的软件/遥测平台 | 实时链路质量、故障定位、事件记录、预测性维护 | 已嵌入产品；不单独披露收入 |
+| SerDes chiplet/IP | 112G XSR、3.2Tbps chiplets、SerDes IP | 给客户 ASIC/MCM 提供接口 IP 或 chiplet | 有量产，但已不是当前增长主叙事 |
+
+AEC 四个系列不是营销上的同义词：
+
+- **CLOS**：高密度机架内或机架间 CLOS 拓扑；公司称相对光学最多降低 50% 功耗、相对 DAC 最多减少 75% 体积，单机架布线密度最高可达 1,000 条。
+- **SPAN**：最长约 7 米的 AOC 替代，目标寿命 10 年。
+- **SHIFT**：breakout/gearbox，支持一条高速口拆成 2/4 个低速口，并可转换 lane 速率、PAM4/NRZ 与 FEC。
+- **SWITCH**：单 NIC 双 ToR 主备连接，支持网络操作系统管理的亚毫秒故障切换。
+
+以上为公司正式产品定义，不代表每个 AI 机架实际会装 1,000 条；真实单位内容量取决于 GPU、NIC、交换机和拓扑，后文单独建模。
+
+### 1.3 投资者如何看这家公司
+
+投资者对 CRDO 的主流定位已经从“小型 SerDes/IP 公司”切换为“AI 互联纯度最高的高速成长平台”：
+
+- **多头叙事**：AEC 在短距 AI 连接中占据领先份额；每次 GPU/NIC/交换端口升级都会提升速率和价值量；Credo 又用光 DSP、SiPho、ZF Optics、PCIe、scale-up Retimer 接住铜向光和 scale-out 向 scale-up 的迁移。
+- **空头叙事**：当前收入高度依赖少数 hyperscaler 和 AEC；1.6T 以后铜距离缩短、光学渗透率上升；Broadcom、Marvell、Astera 与大型连接器厂进入；公司为维持增长大量备货、锁产能、并购和增发。
+- **市场定价**：截至 2026-07-09/10，S&P Global 汇总的 19 名分析师给予“Strong Buy”，平均目标价 269.81 美元，只比 257.79 美元收盘价高 4.66%；这说明基本面共识很强，但多数好消息已进入价格。[分析师一致预期](https://stockanalysis.com/stocks/crdo/forecast/)
+
+因此 CRDO 不是“便宜的 AI 连接公司”，而是“必须连续兑现高增长、且投资者已相信会兑现”的公司。当前最大分歧不在 FY2027 是否增长，而在：光学 6 亿美元以上的组合能否按时量产、AEC 在 1.6T 是否仍保持份额、以及 FY2028 能否继续消化 FY2027 的高基数。
+
+### 1.4 最近三年的重大业务变化与收购
+
+| 时间 | 变化 | 金额/结果 | 战略意义 |
+|---|---|---:|---|
+| FY2024 | 仍以 SerDes、DSP、IP、早期 AEC 为主 | 收入 1.930 亿美元；GAAP 净亏损 0.284 亿美元 | 产品研发期，尚未形成规模经济 |
+| FY2025 | AEC 在超大规模 AI 集群大规模导入 | 收入 4.368 亿美元，+126.3%；95% 以上产品销售增量来自 AEC | 从 IP/芯片供应商转成系统级 AEC 平台 |
+| FY2026 | 多个 hyperscaler AEC 同时爬坡 | 收入 13.351 亿美元，+205.7%；99% 以上总收入增量来自 hyperscaler AEC | AEC 成为公司现金牛，毛利率升至 68.0% |
+| 2025-09-29 | 收购 Hyperlume | 对价 0.920 亿美元；净现金 0.826 亿美元 | 获得 microLED ALC，布局 7–30 米新媒介 |
+| 2025-11 | 推出 OmniConnect/Weaver | 5nm、112G VSR；公司称相对传统封装内 LPDDR 可达 12×带宽、40×密度 | 从网络连接扩展到 AI 推理内存扩展 |
+| 2026-02-25 | 收购 CoMira Solutions | 对价 0.351 亿美元；净现金 0.303 亿美元 | 补入 link layer、FEC 和安全 IP，强化 scale-up/scale-out 系统方案 |
+| 2026-05-28 | 完成 DustPhotonics 收购 | 10-K 期后事项口径：7.70 亿美元现金、约 80 万股；另有最高约 280 万股和 0.316 亿美元或有对价 | 获得 SiPho PIC、hyperscaler design wins 与 400G–3.2T 路线图，完成 SerDes→DSP→PIC→系统的垂直整合 |
+
+DustPhotonics 最初公告口径为 7.50 亿美元现金加约 92 万股，收购完成后的 10-K 期后事项因交割调整记为 7.70 亿美元现金加约 80 万股；本报告采用后者作为最新会计口径。[Dust 收购公告](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Agrees-to-Acquire-DustPhotonics-Accelerating-Expansion-into-Silicon-Photonics-and-Next-Generation-Optical-Connectivity/default.aspx)；[完成公告](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Completes-Acquisition-of-DustPhotonics/default.aspx)
+
+这三次收购形成清晰路径：Hyperlume 解决未来 7–30 米、CoMira 补链路层与 FEC、DustPhotonics 解决 800G/1.6T 以上光连接。它们不是对现有 AEC 收入的简单叠加，而是为了避免 Credo 在媒介从铜迁移到光、网络从 scale-out 扩展到 scale-up 时被边缘化。
+
+### 1.5 最新股价、估值与盈利指标
+
+| 指标 | 最新值 | 日期/计算口径 | 解读 |
+|---|---:|---|---|
+| 股价 | 257.79 美元 | 2026-07-10 正常交易收盘；盘后 259.03 美元 | 最近交易日 |
+| 市值 | 480.72 亿美元 | 2026-07-10，数据商当前股本口径 | 不同数据商因稀释股本/更新时间可在约 476–495 亿美元间 |
+| FY2026 GAAP P/E | 102.71× | 257.79 / FY2026 diluted EPS 2.51 | 高估值、低容错 |
+| FY2027 forward P/E | 42.12× | 一致预期 non-GAAP EPS 6.12 | EPS 口径剔除 SBC 等，不能与 GAAP P/E直接等同 |
+| P/S | 36.01× | 当前市值 / FY2026 收入 13.351 亿美元 | 对硬件公司极高 |
+| EV/Sales | 34.94× | 2026-07-10 | 净现金略降低企业价值 |
+| FY2026 收入 | 13.351 亿美元 | 截至 2026-05-02 | 同比 +205.7% |
+| FY2027 一致预期收入 | 24.5 亿美元 | 2026-06-26 更新 | 同比 +83.6%；略高于管理层 >80% 下限 |
+| FY2026 GAAP 毛利率 | 68.0% | 全年 | FY2025 为 64.8% |
+| FY2026 GAAP 营业利润率 | 33.3% | 4.450 / 13.351 亿美元 | 规模杠杆明显 |
+| FY2026 GAAP 净利率 | 35.4% | 4.723 / 13.351 亿美元 | 包含 0.304 亿美元其他收入且有效税率仅约 1% |
+
+股价和估值来源：[StockAnalysis 当前比率](https://stockanalysis.com/stocks/crdo/financials/ratios/?p=quarterly)；FY2026 EPS、利润率来自 [SEC 10-K](https://www.sec.gov/Archives/edgar/data/1807794/000162828026043303/crdo-20260502.htm)。GAAP P/E 用 FY2026 年度稀释 EPS 2.51 计算，优先于尚未完整更新最新财报的行情源。
+
+### 1.6 资产负债表评估
+
+| 项目 | 2026-05-02 | 同比变化/派生值 | 评价 |
+|---|---:|---:|---|
+| 现金 | 11.650 亿美元 | 2025-05-03 为 2.363 亿美元 | 其中大量来自增发 |
+| 短期投资 | 2.783 亿美元 | +42.7% | 高流动性 |
+| 现金+短投 | 14.433 亿美元 | 占总资产 62.9% | 交割 Dust 前极强 |
+| 应收账款 | 2.334 亿美元 | +43.9% | 增幅远低于收入增幅，暂未恶化 |
+| 库存 | 2.508 亿美元 | +178.6%；其中产成品 1.522 亿美元 | 为爬坡备货，也扩大错配/减值风险 |
+| 流动资产 | 20.011 亿美元 | — | — |
+| 流动负债 | 1.971 亿美元 | — | 流动比率约 10.15× |
+| 营运资本 | 18.040 亿美元 | 流动资产减流动负债 | 极充足 |
+| 总负债 | 2.320 亿美元 | 仅占总资产约 10.1% | 无重大传统金融债务 |
+| 股东权益 | 20.636 亿美元 | +202.8% | 盈利与增发共同推动 |
+| FY2026 OCF | 4.643 亿美元 | OCF margin 34.8% | 强现金创造 |
+| 资本开支 | 0.573 亿美元 | — | fabless 模式资本强度低 |
+| 简化自由现金流 | 4.070 亿美元 | OCF－购置固定资产 | 不等于公司 non-GAAP FCF 口径 |
+| SBC | 1.826 亿美元 | 占收入 13.7%、GAAP 净利 38.7% | 稀释不可忽视 |
+
+**健康度判断：强，但不能只看 14.4 亿美元现金。**
+
+- 2025-10 公司启动最高 7.50 亿美元 ATM，FY2026 发行 482 万股，净募资 7.363 亿美元；期末普通股从 1.712 亿股增至 1.854 亿股，增长 8.3%，另有客户权证行权和员工股权发行。因此现金强度部分是资本市场融资，不全是经营积累。
+- Dust 交割若按 7.70 亿美元现金简单扣减，期末现金+短投的静态备考余额约 6.73 亿美元，仍健康，但并购前缓冲减少 53%。之后还有最高 0.316 亿美元现金或有对价、股票对价、整合和无形资产摊销。
+- FY2026 库存增加 1.740 亿美元，并计提 0.151 亿美元过剩/呆滞库存减值；产成品占库存 60.7%。只要 FY2027 指引兑现，这是合理的前置备货；若光学或 1.6T 延迟，库存会先于收入暴露问题。
+- FY2026 有效税率约 1%，低于成熟美国半导体企业的正常化税率；GAAP 净利率 35.4% 不应直接外推为长期税后结构。
+- 单一晶圆厂 TSMC、少数封测/系统制造商及 3nm 紧张是表外经营风险；低会计负债不等于低供应风险。
+
+综合评分：**并购前 4.7/5，并购后备考约 4.2/5**。短期偿债几乎没有压力，主要风险从“财务杠杆”转为“库存、客户取消、并购整合和股权稀释”。
+
+## 2. 最新及最近四次财报：五季度拆解
+
+### 2.1 财务与业务收入
+
+| 财报季度（截止日；发布日期） | 收入；环比；同比 | 初始指引中值/实际超额 | 收入构成（公司披露） | AEC 收入估算 | AI 数据中心收入占比估算 | GAAP 毛利率 | GAAP 净利润；净利率 | 主要终端客户占比 |
+|---|---|---:|---|---:|---:|---:|---:|---|
+| FY2025 Q4（2025-05-03；2025-06-02） | 1.700 亿；+25.9%；+179.7% | 上季指引未在本表追溯 | 产品 1.645 亿；工程 0.013 亿；IP 0.042 亿 | 1.40–1.55 亿（82%–91%） | 85%–92% | 67.2% | 0.366 亿；21.5% | 约 61%/12%/11% |
+| FY2026 Q1（2025-08-02；2025-09-03） | 2.231 亿；+31.2%；+273.6% | 1.900 亿；超 17.4% | 产品 2.171 亿；IP 0.060 亿 | 1.90–2.10 亿（85%–94%） | 88%–94% | 67.4% | 0.634 亿；28.4% | 约 35%/33%/20% |
+| FY2026 Q2（2025-11-01；2025-12-01） | 2.680 亿；+20.2%；+272.1% | 2.350 亿；超 14.1% | 产品 2.613 亿；IP 0.067 亿 | 2.40–2.55 亿（90%–95%） | 90%–95% | 67.5% | 0.826 亿；30.8% | 约 42%/24%/16%/11% |
+| FY2026 Q3（2026-01-31；2026-03-02） | 4.070 亿；+51.9%；+201.5% | 3.400 亿；超 19.7% | 因产品占绝大多数，公司改为单一收入行 | 3.75–3.95 亿（92%–97%） | 92%–97% | 68.5% | 1.571 亿；38.6% | 约 39%/32%/17% |
+| FY2026 Q4（2026-05-02；2026-06-01） | 4.370 亿；+7.4%；+157.0% | 4.300 亿；超 1.6% | 单一收入行；AEC 与 IC 为主，光学开始爬坡 | 4.05–4.20 亿（93%–96%） | 93%–97% | 68.2% | 1.691 亿；38.7% | 34%/27%/16%/10% |
+
+来源：公司 [FY2025 Q4](https://investors.credosemi.com/news-events/news/news-details/2025/Credo-Technology-Group-Holding-Ltd-Reports-Fourth-Quarter-and-Fiscal-Year-2025-Financial-Results/default.aspx)、[FY2026 Q1](https://investors.credosemi.com/news-events/news/news-details/2025/Credo-Technology-Group-Holding-Ltd-Reports-First-Quarter-of-Fiscal-Year-2026-Financial-Results/)、[FY2026 Q2](https://investors.credosemi.com/news-events/news/news-details/2025/Credo-Technology-Group-Holding-Ltd-Reports-Second-Quarter-of-Fiscal-Year-2026-Financial-Results/default.aspx)、[FY2026 Q3](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-Third-Quarter-of-Fiscal-Year-2026-Financial-Results/default.aspx)、[FY2026 Q4](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Financial-Results/default.aspx)；客户占比采用电话会终端客户口径，可能不同于 SEC 按下单合同实体口径。
+
+**估算方法与校验：**
+
+- 公司明确披露 FY2026 比 FY2025 增加 8.983 亿美元收入，其中超 99% 来自 hyperscaler AEC 单位量增长。按 FY2025 AEC 基数和 FY2026 每季度产品收入反推，FY2026 AEC 约 12.1–12.8 亿美元，占公司收入约 91%–96%。
+- “AI 数据中心占比”采用广义口径：hyperscaler/NeoCloud 的 AI scale-out、scale-up、前端网络及其直接配套。公司没有把一般云计算与 AI 单列，因此给区间，不给虚假精确值。
+- 产品利润率没有单独披露。行业 BOM 模型显示 AEC 核心硅毛利率约 68%–78%、完整 AEC 系统约 48%–60%；Credo 公司毛利率达到 68%，说明其价值分配明显偏向自研 silicon/DSP、IP、固件和高 ASP 系统方案，而非普通线缆代工。
+
+### 2.2 订单、backlog、交期与供应侧代理指标
+
+| 季度末 | 库存 | 不可取消库存 PO（未来一年） | 制造/产能采购承诺 | 可退产能押金 | RPO | 订单与交期判断 |
+|---|---:|---:|---:|---:|---:|---|
+| FY2025 Q4 | 0.900 亿 | 0.303 亿 | 0.435 亿 | 0.081 亿 | 未履约 0.048 亿；另已履约未确认 0.011 亿 | AEC 已进入量产；RPO 主要是 IP/服务，不是产品 backlog |
+| FY2026 Q1 | 1.167 亿 | 0.281 亿 | 0.436 亿 | 0.079 亿 | 0.034 亿；另 0.007 亿受约束 | 库存用于未交付订单与新品爬坡；供应承诺仍温和 |
+| FY2026 Q2 | 1.502 亿 | 0.613 亿 | 0.774 亿 | 0.073 亿 | 0.339 亿，主要为 IP license | AEC 需求加速，PO 环比翻倍；RPO 跳升不能等同 AEC backlog |
+| FY2026 Q3 | 2.080 亿 | 1.145 亿，且不含在左侧产能承诺中 | 1.575 亿 | 0.288 亿 | 0.318 亿 | 为 H2/FY2027 提前锁封测；供应侧挤压明显 |
+| FY2026 Q4 | 2.508 亿 | 1.492 亿，已含在制造承诺中 | 3.377 亿；另 FY2027–28 最低产能采购水平 1.886 亿 | 0.710 亿 | 0.319 亿 | 3 份产能预留协议；期后再付 0.131 亿押金并承诺两年采购 0.437 亿 |
+
+来源：[FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1807794/000162828025033813/crdo-20250503.htm)、[FY2026 Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1807794/000180779425000021/crdo-20250802.htm)、[FY2026 Q2 10-Q](https://www.sec.gov/Archives/edgar/data/1807794/000162828025054549/crdo-20251101.htm)、[FY2026 Q3 10-Q](https://www.sec.gov/Archives/edgar/data/1807794/000162828026014017/crdo-20260131.htm)、[FY2026 10-K](https://www.sec.gov/Archives/edgar/data/1807794/000162828026043303/crdo-20260502.htm)。
+
+必须强调：
+
+- **Credo 没有披露产品 backlog、bookings、B2B、标准交期或历史取消率。**RPO 0.319 亿美元主要是跨期 IP/合同义务，只相当于 FY2026 Q4 收入的 7.3%，不能拿来证明硬件需求弱，也不能冒充产品积压。
+- 公司产品销售几乎全部按 PO；通常没有长期最低采购承诺。客户可以在约定通知后取消、变更或延迟交付，部分订单可在短期通知且无罚金下取消。[10-K 风险因素](https://www.sec.gov/Archives/edgar/data/1807794/000162828026043303/crdo-20260502.htm)
+- 因此供应侧 PO、库存和产能押金只能说明公司对需求有信心并在抢产能，不能证明客户订单同等“不可取消”。这也是 FY2027 最大的库存风险来源。
+- 行业资格认证通常需要约 6–12 个月；Credo 10-K 说明更换主要供应商往往需要 9–12 个月。真实客户交付窗口可合理推断为 2–4 个季度的平台爬坡，但不是公司披露 lead time。
+
+### 2.3 五季度趋势判断
+
+1. **增速由单客户爆发转向多客户放量。**Q4 FY2025 最大客户约 61%，到 FY2026 Q4 最大客户降至 34%，但四大客户仍占 87%。
+2. **毛利率在 AEC 规模化时没有被系统产品稀释，反而从 67.2% 升至 68.2%。**这验证 Credo 不是以低价抢普通线缆份额；但未来 ZF Optics 初始量产、Dust 整合可能暂时压低 mix。
+3. **FY2026 Q3 是需求加速点。**收入环比增长 51.9%，较原指引中值高 19.7%；库存、PO、产能押金随后同步扩大。
+4. **FY2026 Q4 环比仅 7.4% 不是终端需求转弱的直接证据。**公司已预告 FY2027 上半年为中个位数环比、下半年由光学产生拐点；但这也把全年兑现压力集中到了后两个季度。
+
+## 3. 2026 年最新指引、收入占比与产品交叉验证
+
+### 3.1 最新指引
+
+| 指标 | 指引/推导 | 对比 |
+|---|---:|---|
+| FY2027 Q1 收入 | 4.65–4.75 亿美元；中值 4.70 亿 | 环比约 +7.6%，同比约 +110.7% |
+| FY2027 Q1 GAAP 毛利率 | 66.9%–68.9% | 中值 67.9%，基本保持 FY2026 水平 |
+| FY2027 Q1 non-GAAP 毛利率 | 67.0%–69.0% | 中值 68.0% |
+| FY2027 Q1 GAAP Opex | 1.676–1.716 亿美元 | 包含 SBC、并购整合等 |
+| FY2027 Q1 non-GAAP Opex | 0.86–0.90 亿美元 | 中值 0.88 亿 |
+| FY2027 全年收入增长 | >80% | 以 FY2026 13.351 亿为基数，最低约 24.03 亿美元 |
+| FY2027 光学收入 | >6 亿美元 | 光 DSP、SiPho PIC、ZF Optics 各自 >1 亿美元 |
+| FY2027 增量来源 | 约一半光学、约一半现有铜组合 | 铜侧以 AEC 为主，也包括 Retimer |
+| FY2027 non-GAAP 毛利率 | 大致与 FY2026 相当 | 光模块初期爬坡由产品 mix、ASP 和垂直整合抵消 |
+| FY2027 non-GAAP Opex | 同比约 +50% | 低于收入增长 |
+| FY2027 non-GAAP 净利率 | 约 50% | 排除 SBC、并购摊销等，不能等同 GAAP |
+
+来源：[FY2026 Q4 财报](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Financial-Results/default.aspx)；[Q4 电话会](https://www.fool.com/earnings/call-transcripts/2026/06/01/credo-crdo-q4-2026-earnings-transcript/)。
+
+指引中最重要的算术不是“80% 很高”，而是下半年交付门槛：
+
+- Q1 中值 4.70 亿美元；管理层称 Q2 也大致是中个位数环比，按 5% 估算约 4.94 亿美元。
+- FY2027 若仅达到 80% 下限 24.03 亿美元，H1 约 9.64 亿，则 H2 仍需 14.40 亿，平均每季约 7.20 亿美元。
+- 若达到当前一致预期 24.5 亿美元，H2 需约 14.87 亿，平均每季约 7.44 亿。
+
+所以 FY2027 的核心不是 AEC 上半年能否维持，而是 ZF Optics、Dust SiPho PIC 与光 DSP 能否在 H2 把单季收入从约 5 亿台阶推到 7 亿以上。
+
+### 3.2 最新收入占比：披露值与模型值
+
+公司不披露产品线收入，下表为以 FY2026 全年、Q4 run-rate、管理层 FY2027 指引和行业 BOM 反推的非 GAAP 模型：
+
+| 业务 | FY2026 收入贡献估算 | FY2026 占比 | FY2026 Q4 估算 | FY2027 管理层锚点 | 置信度 |
+|---|---:|---:|---:|---|---|
+| 100G/lane 400G/800G AEC | 11.0–11.8 亿 | 82%–88% | 3.65–3.90 亿 | 上半年主要增长来源；12nm 为量产主力 | 中高 |
+| 200G/lane/1.6T AEC | 0.5–1.2 亿 | 4%–9% | 0.30–0.55 亿 | FY2027 收入仍相对轻，FY2028 更实质 | 中低 |
+| 光 DSP | 0.4–0.7 亿 | 3%–5% | 0.08–0.15 亿 | FY2027 >1 亿 | 中 |
+| ZF Optics | 0–0.15 亿 | 0%–1% | 0.03–0.10 亿 | FY2027 >1 亿；光学三支柱中有一个显著大于 1 亿 | 低 |
+| Dust SiPho PIC | CRDO FY2026 合并口径为 0 | 0% | 0 | FY2027 >1 亿；Dust 原业务 backlog 健康且增长 | 公司合并口径高；Dust 单体规模低 |
+| 独立 Ethernet/scale-up Retimer | 0.10–0.30 亿 | 1%–2% | 0.03–0.08 亿 | FY2027 H2 拐点 | 低 |
+| PCIe Toucan/PCIe AEC | <0.10 亿 | <1% | 很小 | FY2027 量产，当前不应当作主收入 | 低 |
+| IP、工程、chiplet、其他 | 余额约 0.15–0.30 亿 | 1%–2% | 很小 | 非核心增长 | 中 |
+
+区间不可机械相加。最可靠的边界是：FY2026 收入增量几乎全部来自 AEC，FY2027 光学明确超过 6 亿美元，且约一半年度新增美元来自光学。
+
+按 FY2027 80% 下限计算，总新增收入约 10.68 亿美元；若一半来自光学，则光学同比增量约 5.34 亿美元。结合光学总收入 >6 亿美元，反推 FY2026 原有光 DSP/ZF Optics 基数约数千万美元，与上表相符。另一半约 5.34 亿美元来自 AEC/Retimer，意味着铜侧仍需从约 12.5 亿美元附近增长到约 17.5–18.0 亿美元，而非停止增长。
+
+### 3.3 重点产品、利润率、增速、规模与交叉验证
+
+| 产品/业务 | 当前规模估算 | 产品毛利率模型 | FY2027 增速判断 | 关键事实与交叉验证 |
+|---|---:|---:|---|---|
+| 100G/lane ZF AEC | FY2026 11.0–11.8 亿 | 核心 silicon 68%–78%；完整系统 48%–60%；Credo 实际未披露 | 基准 +20%–30% | FY2026 >99% 增量来自 AEC；12nm 供应相对成熟；数百万条部署 |
+| 200G/lane/1.6T ZF AEC | 0.5–1.2 亿 | 50%–65% 系统；高 ASP 但 3nm、测试和热设计成本高 | +140%–250%，低基数 | OFC 展示 1.6T 3nm AEC、Rubin NVL144 与 Kyber Ultra NVL576；管理层称 FY2027 200G/lane 收入仍轻 |
+| Robin 400G/800G 光 DSP | 光 DSP 合计 0.4–0.7 亿 | 62%–75% | >80%，模型 +120%–220% | 2026-03 发布、现已可供货；公司称 2026–27 年 400G+800G 光模块总量将超 1.2 亿只（引用 LightCounting） |
+| Bluebird/Cardinal 1.6T DSP | 包含在上述小基数 | 60%–72%；3nm 成本高，低功耗可溢价 | 数倍增长 | Cardinal 3nm、224G/lane，LRO <15W、单向延迟 <40ns；OFC 展示 Bluebird 1.6T LRO |
+| 800G ZF Optics | FY2026 0–0.15 亿 | 爬坡期约 30%–50%；公司长期目标“mid-60s” | >10× 的量产跃迁可能 | 2026-03 800G 2×DR4 GA；TensorWave 开始部署，另有 3 家客户资格认证；PILOT/SONiC 遥测 |
+| Dust SiPho PIC | CRDO FY2026 为 0；Dust 单体未披露 | 模型 50%–65%；取决于 PIC 设计、激光配置、良率与商用模式 | 公司称各光学支柱均 >80% | 400G/800G/1.6T 已有领先 hyperscaler design wins；3.2T、NPO/CPO 路线；管理层称 backlog 健康且 FY2027 增长 |
+| Blue Heron 224G Retimer | FY2026 0.1–0.3 亿的一部分 | 60%–78% | +100%–200% | 3nm、40+dB、UALink/ESUN/Ethernet；2026 CQ3 量产可用；Upscale AI/SkyHammer 与 UALink 背书不是订单金额 |
+| Toucan PCIe Retimer/PCIe AEC | <0.10 亿 | Retimer 60%–80%；完整 PCIe AEC 55%–68% | >200%，但绝对额仍小 | 7nm、PCIe 6 技术可用；只在 32GT/s 获 PCI-SIG 合规，不能称已通过 64GT/s Gen6 认证 |
+| OmniConnect Weaver | 接近 0 | 尚不可估；早期量产固定成本高 | FY2027 不重要，FY2028 可选项 | 5nm、112G VSR；公司称 12×内存带宽/40×密度，尚缺客户名、ASP、认证 |
+| microLED ALC | 接近 0 | 尚不可估 | FY2027 不重要，FY2028 初始收入 | 最长约 30m；技术差异大，但良率、封装、可靠性、标准生态均待验证 |
+| PILOT | 不单独收费/披露 | 软件随硬件增强整体毛利与黏性 | 随全组合扩张 | 已覆盖 SerDes、Retimer、AEC、ZF Optics；是客户切换成本而非独立收入 |
+
+产品发布与会议验证：[Cardinal 1.6T DSP](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Introduces-Cardinal-A-LowPower-1-6T-Optical-DSP-Family-Engineered-for-MassiveScale-AI-Fabrics/default.aspx)、[Robin 800G DSP](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Introduces-Robin-800G-Optical-DSP-Family-Tailored-for-Next-Wave-of-AI-Applications/default.aspx)、[ZF 800G Optics](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Launches-800G-ZeroFlap-Optical-Transceivers-Engineered-for-AI-Networks/default.aspx)、[OFC 2026 展示](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-to-Showcase-Optical-Solutions-for-AI-Scale-Out-Fabrics-at-OFC-2026/default.aspx)、[Blue Heron](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Introduces-Industrys-First-224G-Multiprotocol-AI-Scale-Up-Retimer-Supporting-UALink-ESUN-and-Ethernet/default.aspx)、[Toucan PCI-SIG](https://investors.credosemi.com/news-events/news/news-details/2026/Credos-Toucan-PCIe-Retimer-Achieves-PCISIG-Compliance/default.aspx)。
+
+### 3.4 重点突出产品与主动跳过的低重要性产品
+
+**最突出、必须跟踪：**
+
+1. 100G/lane 400G/800G AEC：当前利润与现金流核心。
+2. 200G/lane 1.6T AEC：决定铜在下一代 AI 机架中是否延续份额。
+3. Robin/Bluebird/Cardinal 光 DSP：进入 800G/1.6T 大批量光模块的芯片入口。
+4. ZF Optics：决定 Credo 能否从“卖芯片/铜缆”升级为高可靠光系统平台。
+5. Dust SiPho PIC：收购金额最大、FY2027 光学指引的核心增量。
+6. Blue Heron 与 Toucan：当前收入小，却是 scale-up、UALink/ESUN、PCIe/CXL 的潜在第二增长曲线。
+7. OmniConnect、ALC：FY2027 财务贡献很小，但对应内存墙与 7–30 米连接，不能因为收入为零而遗漏。
+8. PILOT：没有单独收入，但可能是 ZF 品牌的真正软件/运维护城河。
+
+**本报告后续收入预测主动弱化或跳过：**
+
+- Seagull 50G/lane、64G Fibre Channel、旧 50G/100G 非 AI 光模块：成熟或低增速，不影响 FY2027 主线。
+- 传统电信、5G、企业网、DOCSIS、USB 等非 AI 连接：公司仍服务，但未披露显著增长或收入占比。
+- 单独的产品工程服务、SerDes IP license：利润率可能高，但 FY2026 总体占比已很小且季度波动由里程碑决定。
+- 普通被动 DAC/AOC 线缆：不是 Credo 的核心自有高价值产品。
+- 旧代 line-card PHY、MACsec/安全等未形成独立规模的功能：保留在技术栈中，不纳入主要收入模型。
+
+## 4. 每个高增长/关键产品的当前收入、AI 重要性与供需
+
+评分均为 1–5：AI 重要性越高表示越接近关键数据通路；时间紧急性越高表示本轮 2026–27 平台部署越不能等待；供需紧张越高表示越可能供不应求；垄断/溢价越高表示 Credo 越能控制设计、资格认证和价格。所谓“垄断”是经济护城河评分，不是法律或绝对市场垄断。
+
+| 高增长/关键产品 | FY2026 收入贡献估算 | FY2026 增速估算 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 判断依据 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 100G/lane 400G/800G AEC | 11.0–11.8 亿 | 约 +200%–270% | 5 | 5 | 3 | 5 | 当前 AI scale-out 短距互联主力；12nm 供应较成熟；项目内行业模型估计 Credo AEC silicon 份额约 65%–80%，但完整线缆份额低于 silicon 份额 |
+| 200G/lane 1.6T AEC | 0.5–1.2 亿 | 数倍、低基数 | 5 | 4 | 4 | 4 | 1.6T/224G 是下一代端口升级；3nm、散热、高速测试更紧；FY2027 仍处爬坡 |
+| 400G/800G/1.6T 光 DSP | 0.4–0.7 亿 | 约 +50%–100% | 5 | 5 | 4 | 3 | 每个 retimed/LRO 光端口需要 DSP；3nm/5nm/7nm 组合；Broadcom、Marvell、MaxLinear 竞争强 |
+| ZF Optical Transceiver | 0–0.15 亿 | N/M | 5 | 5 | 5 | 3 | AI 集群光链路 flap 直接影响 GPU 利用率；800G 已 GA，光器件、激光器、封装和测试整体偏紧；模块市场本身很竞争 |
+| Dust SiPho PIC | CRDO 合并 FY2026 为 0；Dust 单体不披露 | N/M | 5 | 5 | 4 | 3 | 800G/1.6T/3.2T 的核心光引擎；已有领先 hyperscaler design wins；但 merchant PIC 与 foundry/custom PIC 都可替代 |
+| Blue Heron 224G Scale-up Retimer | 0.10–0.30 亿的一部分 | 约 +100% 以上、低基数 | 4 | 4 | 4 | 3 | UALink/ESUN/Ethernet 在 224G PHY 汇合；40+dB 链路恢复有价值；协议生态仍在形成 |
+| Toucan PCIe/CXL Retimer 与 PCIe AEC | <0.10 亿 | 数倍、低基数 | 4 | 3 | 3 | 2 | GPU/内存解耦会提高 PCIe/CXL 内容量；Astera、Broadcom、Marvell、Microchip 等先发或规模更强 |
+| OmniConnect Weaver | 约 0 | N/M | 3 | 2 | 2 | 2 | 推理“内存墙”真实，但客户可用 HBM、CXL、板上 LPDDR 或定制 ASIC；尚无量产客户和 ASP |
+| microLED ALC | 约 0 | N/M | 3 | 2 | 2 | 2 | 7–30 米潜在空白带；microLED 差异化强，生产良率和标准化尚未证明 |
+| PILOT | 独立收入为 0；嵌入硬件价值 | 随硬件增长 | 5 | 5 | 1 | 4 | 遥测、故障定位、远程管理和历史数据提高系统切换成本；软件不受晶圆产能约束 |
+
+### 4.1 AEC：当前收入核心与最强护城河
+
+AEC 的价值来自两端有源 DSP/Retimer 对高速铜通道进行均衡、时钟恢复、FEC/gearbox 和遥测，而非铜本身。400G/800G 的物理距离在 GPU 液冷机架和相邻机架场景通常落在 AEC 的 7 米上限内；同距离光模块虽可用，但功耗、成本、故障点和运维复杂度更高。
+
+Credo 的优势有四层：
+
+1. 低功耗 SerDes/DSP 可以在 12nm 等较成熟工艺实现 100G/lane，避免完全依赖最紧张的先进制程。
+2. 从芯片、固件到完整 AEC 共同调试，能针对 hyperscaler 特定拓扑做 CLOS、SHIFT、SWITCH。
+3. 数百万条实际部署形成故障数据、PILOT 诊断和客户 AVL 资格认证；公司在 TensorWave 合作公告中称 ZeroFlap AEC 已实现 1 亿小时 MTBF、无软错误导致的 link-flap。此为厂商数据，尚无第三方审计。[TensorWave 合作](https://investors.credosemi.com/news-events/news/news-details/2026/TensorWave-Partners-with-Credo-to-Power-Next-Generation-AMD-Based-AI-Clusters/)
+4. 客户直接指定 OEM/ODM/CM 采用 Credo 方案，形成“终端客户设计—供应链下单”的双层销售模式。
+
+限制同样明确：AEC 完整系统还有 Amphenol、Molex、TE、Luxshare、BizLink 等制造与连接器厂，silicon 也有 Marvell Alaska/Leo、Broadcom AEC DSP 等替代。大型 hyperscaler 会主动要求 second source，成熟 400G/800G ASP 也会逐年下降约 10%–18%。Credo 的垄断能力来自认证和 silicon，不等于可以无限提价。
+
+### 4.2 光学：增长最快、供应最紧、执行风险最高
+
+光学产品同时增加 TAM 和对冲 AEC 被替代的风险：
+
+- **光 DSP** 是模块内高价值 silicon，毛利率结构最接近 Credo 传统芯片，竞争壁垒在 SerDes、FEC、功耗和客户 module qualification。
+- **SiPho PIC** 把光调制和耦合功能集成化，Dust 已经进入 hyperscaler 与模块厂设计；但 PIC 本身也可能被客户 custom silicon、foundry platform 或其他 SiPho 供应商替代。
+- **ZF Optics** 把 DSP/PIC/系统/软件打包，单端口收入最高，但也要承担激光器、光器件、FAU、封装、测试、良率和质保的完整供应链风险。
+
+管理层称光学供应链存在显著紧张，但已对完整 BOM 做前置承诺；同时说明 100G/lane 光 DSP 正从 12nm/旧节点切换到 7nm，并有 5nm 大批量项目，所有 200G/lane 产品使用 3nm。[Q4 电话会供应链说明](https://www.fool.com/earnings/call-transcripts/2026/06/01/credo-crdo-q4-2026-earnings-transcript/)
+
+光学 FY2027 超 6 亿美元是高质量的管理层量化锚，但不是无条件订单保证。Dust 的具体收入、客户名、订单金额和取消率均未披露；Dust 收购电话会只称其 backlog “healthy”并将在 FY2027 增长。[Dust M&A 电话会记录](https://earningscalls.dev/transcripts/dustphotonics-ltd_crdo_earnings_call_transcript_2026-04-14)
+
+### 4.3 小业务的潜在不对称性
+
+- **Blue Heron** 的关键不在 FY2027 数千万收入，而在 UALink、ESUN、Ethernet 三种 scale-up 协议在 224G 物理层共用一颗 multiprotocol Retimer。如果开放 scale-up 生态扩张，Credo 可复用 AEC/SerDes/PILOT 的客户与供应链。
+- **Toucan/PCIe AEC** 让 PCIe 从板内短距延伸到机架/相邻机架；如果 GPU、CXL 内存和存储解耦，完整 x16 link 的价值量可高于普通 Ethernet AEC。但现阶段只能说“Gen6-capable”，正式公开合规仍是 32GT/s。
+- **Weaver** 若能让低成本 LPDDR 大规模离开封装基板，会直接切入推理内存成本；但这需要 AI ASIC、内存拓扑、板级设计和软件生态共同采用，销售周期可能比线缆更长。
+- **ALC** 可能占据 AEC 7 米上限与传统光模块之间的 7–30 米区间。microLED 无传统激光器的潜在可靠性/功耗优势很吸引人，但最容易被市场叙事提前估值、最晚被收入验证。
+
+## 5. 一年后：三情景产品收入、增速与战略评分
+
+### 5.1 预测定义与公司收入桥
+
+为与管理层可核验指引一致，本文把“未来一年”主要定义为 **FY2027（约 2026-05-03 至 2027-05-01）**。它比报告日未来 12 个月少约两个月；第 7 节再用 2027 年中年化产能补齐这个时间差。
+
+| 情景 | FY2027 收入 | 同比 | 光学收入 | AEC 收入 | 关键假设 | 主观权重 |
+|---|---:|---:|---:|---:|---|---:|
+| 基准 | 24.5 亿 | +83.5% | 6.6 亿 | 16.4 亿 | 达到一致预期；Q1/Q2 中个位数环比，H2 光学按计划爬坡；客户取消/延后 5%–10% | 55%–60% |
+| 乐观 | 30.2 亿 | +126.2% | 8.7 亿 | 18.9 亿 | ZF Optics/Dust 超计划，1.6T AEC 提前，新增 hyperscaler/NeoCloud 放量；取消/延后 2%–5% | 25%–30% |
+| 极度乐观 | 36.7 亿 | +174.9% | 11.4 亿 | 21.5 亿 | 200G/lane 与光学同时加速、供应约束基本解除、多个平台单季放量；取消/延后 0%–2% | 5%–10% |
+
+“主观权重”是研究模型，不是统计概率或目标价依据。基准与公司 >80% 指引一致；乐观高于当前分析师 FY2027 收入最高预期约 27 亿美元；极度乐观需要 H2 单季收入跃升到约 12–14 亿美元附近，属于低概率容量上限检验。
+
+收入桥如下，单位为十亿美元：
+
+| 产品 | FY2026 当前模型中值 | 基准 FY2027 | 乐观 FY2027 | 极度乐观 FY2027 |
+|---|---:|---:|---:|---:|
+| 100G/lane 400G/800G AEC | 1.14 | 1.40 | 1.53 | 1.63 |
+| 200G/lane/1.6T AEC | 0.08 | 0.24 | 0.36 | 0.52 |
+| 光 DSP | 0.055 | 0.15 | 0.20 | 0.28 |
+| ZF Optics | 0.008 | 0.27 | 0.36 | 0.46 |
+| Dust SiPho PIC | CRDO 合并为 0 | 0.24 | 0.31 | 0.40 |
+| Blue Heron/Ethernet scale-up Retimer | 0.02 | 0.07 | 0.12 | 0.18 |
+| Toucan/PCIe/CXL | 0.005 | 0.04 | 0.07 | 0.10 |
+| OmniConnect+ALC | 约 0 | 0.01 | 0.04 | 0.07 |
+| IP、chiplet、旧产品及其他 | 0.02 | 0.03 | 0.03 | 0.03 |
+| **合计** | **约 1.34** | **2.45** | **3.02** | **3.67** |
+
+### 5.2 基准情景
+
+| 产品 | FY2027 收入/增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 一年后状态 |
+|---|---:|---:|---:|---:|---:|---|
+| 100G/lane AEC | 14.0 亿；约 +23% | 5 | 5 | 3 | 5 | 多 hyperscaler 稳态放量，ASP 下行被单位数和端口增长抵消 |
+| 200G/lane/1.6T AEC | 2.4 亿；约 +200% | 5 | 4 | 4 | 4 | 1.6T 在少数新平台量产，仍未替代 100G/lane 主体 |
+| 光 DSP | 1.5 亿；约 +170% | 5 | 5 | 4 | 3 | Robin 量产、Cardinal/Bluebird 开始贡献 |
+| ZF Optics | 2.7 亿；>20× | 5 | 5 | 5 | 3 | 800G 多客户量产，1.6T 处资格认证/初始爬坡 |
+| SiPho PIC | 2.4 亿；CRDO 口径 N/M | 5 | 5 | 4 | 3 | Dust 设计赢单转收入，可插拔为主，NPO/CPO 尚未大规模 |
+| Blue Heron | 0.7 亿；约 +250% | 4 | 4 | 4 | 3 | 2026 CQ3 后量产，2–4 个客户平台导入 |
+| Toucan/PCIe AEC | 0.4 亿；数倍 | 4 | 3 | 3 | 2 | PCIe 6 客户验证和少量量产，公开 64GT/s 认证未必完成 |
+| OmniConnect+ALC | 0.1 亿；N/M | 3 | 2 | 2 | 2 | 工程样品/初始 FY2028 订单，不影响 FY2027 主财务 |
+| PILOT | 独立收入 0 | 5 | 5 | 1 | 4 | 跨铜、光、PCIe 的统一遥测层，提高 attach 与黏性 |
+
+基准情景最合理，因为管理层已经给出光学 >6 亿、总收入 >80% 的量化承诺，而且供应侧投入与客户认证方向一致；但它仍要求 FY2027 H2 平均每季约 7.4 亿美元，不能视为“自动兑现”。
+
+### 5.3 乐观情景
+
+| 产品 | FY2027 收入/增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 一年后状态 |
+|---|---:|---:|---:|---:|---:|---|
+| 100G/lane AEC | 15.3 亿；约 +34% | 5 | 5 | 4 | 5 | 现有客户需求高于计划，NeoCloud 提供额外量 |
+| 200G/lane/1.6T AEC | 3.6 亿；约 +350% | 5 | 5 | 5 | 5 | Rubin/下一代 ASIC 拓扑提前量产，高 ASP 抵消 3nm 成本 |
+| 光 DSP | 2.0 亿；约 +260% | 5 | 5 | 5 | 4 | 800G/1.6T merchant DSP 获得更多模块厂 sockets |
+| ZF Optics | 3.6 亿；>30× | 5 | 5 | 5 | 4 | ZF 遥测成为 hyperscaler 可靠性规格，客户数和端口数同时上升 |
+| SiPho PIC | 3.1 亿；N/M | 5 | 5 | 5 | 4 | Dust 在模块厂和 hyperscaler 双渠道同步放量 |
+| Blue Heron | 1.2 亿；约 +500% | 5 | 5 | 4 | 4 | UALink/ESUN 形成可观规模，multiprotocol 优势转化为份额 |
+| Toucan/PCIe AEC | 0.7 亿；>10× | 4 | 4 | 4 | 3 | 64GT/s 客户认证、Gen6 AEC 多平台量产 |
+| OmniConnect+ALC | 0.4 亿；N/M | 4 | 3 | 3 | 3 | FY2028 初始量产提前进入 FY2027 尾部 |
+| PILOT | 独立收入 0 | 5 | 5 | 1 | 5 | 成为客户跨产品统一运维接口，带动更高 bundle ASP |
+
+乐观情景需要 H2 平均单季约 10 亿美元，且光学供应链不能因 3nm、激光器、PIC/FAU、封装测试和良率中的任何一项失速。
+
+### 5.4 极度乐观情景
+
+| 产品 | FY2027 收入/增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 一年后状态 |
+|---|---:|---:|---:|---:|---:|---|
+| 100G/lane AEC | 16.3 亿；约 +43% | 5 | 5 | 4 | 5 | 成熟代仍不降量，价格下降完全被端口扩张覆盖 |
+| 200G/lane/1.6T AEC | 5.2 亿；约 +550% | 5 | 5 | 5 | 5 | 200G/lane 大规模提前，Credo 在 1.6T 继续保持主导 |
+| 光 DSP | 2.8 亿；约 +410% | 5 | 5 | 5 | 4 | Cardinal/Bluebird/Robin 同时成为多个主流模块平台首选 |
+| ZF Optics | 4.6 亿；>40× | 5 | 5 | 5 | 4 | link-flap 遥测由差异化功能变成事实行业要求 |
+| SiPho PIC | 4.0 亿；N/M | 5 | 5 | 5 | 4 | Dust 大客户 design wins 全部按期转量，1.6T/NPO 领先 |
+| Blue Heron | 1.8 亿；近 10× | 5 | 5 | 5 | 4 | 开放 scale-up 快速侵入专有互联，224G Retimer 成为必需器件 |
+| Toucan/PCIe AEC | 1.0 亿；>15× | 5 | 5 | 4 | 4 | PCIe/CXL 机架级解耦成为主流 |
+| OmniConnect+ALC | 0.7 亿；N/M | 4 | 4 | 4 | 3 | 两条新线均出现首批规模量产 |
+| PILOT | 独立收入 0 | 5 | 5 | 1 | 5 | 数据和工具链形成跨媒介锁定效应 |
+
+极度乐观情景的意义是检验产能和估值上限，不是最可能预测。它要求多个彼此独立的新产品在同一年无延迟量产，而现实中半导体/光模块客户认证、良率和供应链往往至少有一个环节偏离计划。
+
+### 5.5 额外下行情景敏感性
+
+用户要求的三种口径均为基准以上情景；投资风险仍需加一个压力测试：若光学 FY2027 仅实现 3–4 亿美元、AEC 客户消化库存且同比只增 15%–25%，公司 FY2027 收入可能只有约 20–22 亿美元，即同比约 +50%–65%。基本面仍增长，但相对 >80% 指引属于明显失约；在约 36 倍 trailing sales 的估值下，股价反应可能远大于收入差额本身。
+
+## 6. BOM、每 MW/机架/GPU/端口内容量与当前产能/认证
+
+### 6.1 价格传导链
+
+Credo 收入的价格传导可以表示为：
+
+AI 加速器数量  
+× 每 GPU 的物理端口/链路数  
+× 铜/光/PCIe/scale-up 的拓扑选择  
+× 每条链路两端器件与线缆/模块数量  
+× ASP  
+× Credo 在芯片、PIC、系统和软件中的价值份额  
+× 良率与供货率  
+= 可确认收入。
+
+价格上行并不是简单“铜价上涨”：
+
+- 400G→800G→1.6T 提高 DSP lane 数、速率、测试时间、封装和散热难度，提升新产品 ASP。
+- 成熟 AEC ASP 通常每年下降约 10%–18%；1.6T 新品上市初期可有 15%–25% 溢价，但在 second source 导入后会回落。
+- 资格认证供应紧张时，Credo 可通过更高系统 ASP、减少折扣或优先分配产能保利润 2–6 个季度；客户规模大、具有 most-favored-nation 或价格谈判权，又会压制永久性提价。
+- 光模块把价值链从单颗 DSP 扩展到 PIC、激光器、光学耦合、模块封装、测试和软件。收入内容量更高，但初期良率风险也更大。
+
+### 6.2 AEC BOM
+
+以下为项目内行业模型对完整 AEC 归一化制造成本的拆分；范围会随速率、长度、连接器和良率变化，不是 Credo 披露：
+
+| BOM 项 | 400G/800G AEC 成本占比 | 1.6T AEC 成本占比 | 价值如何传给 Credo |
+|---|---:|---:|---|
+| Twinax 铜缆/屏蔽材料 | 8%–14% | 7%–12% | 多由线缆供应商获得；长度越长占比越高 |
+| 连接器、PCB、cage/机械件 | 12%–18% | 10%–16% | Amphenol/Molex/TE 等生态；Credo 控制规格但不全自产 |
+| 两端有源 DSP/Retimer/SerDes silicon | 32%–45% | 38%–52% | Credo 最核心价值；1.6T/3nm 比重上升 |
+| 系统装配 | 8%–13% | 7%–12% | BizLink 等制造伙伴 |
+| 测试、固件、FEC、良率损失 | 10%–16% | 12%–20% | Credo 的测试算法/PILOT/系统工程提升价值和良率 |
+| 物流、质保、售后 | 5%–9% | 5%–9% | 完整系统销售需要承担 |
+
+区间中位数并不严格相加到 100%，因为不同配置的 silicon、测试和机械成本会互相替换。行业 ASP 参考：
+
+- 400G/800G DAC：约 60–250 美元/条。
+- 400G/800G AEC：约 300–850 美元/条。
+- 1.6T AEC：约 700–1,800 美元/条。
+- PCIe 5/6 x16 完整有源铜链路：约 800–2,500 美元/条；较短/简化版本可低于此范围。
+
+完整 AEC 的行业毛利率模型为约 48%–60%，AEC silicon 为约 68%–78%。Credo 同时出售 silicon 与系统，且不披露二者 mix；因此不能用完整线缆 ASP 乘数量后再额外加一遍 Credo 芯片收入。
+
+### 6.3 光模块、DSP 与 SiPho BOM
+
+典型 1.6T 模块 BOM 的公开行业模型如下：
+
+| 1.6T 模块项目 | FRO/全 retimed 参考美元 | LRO 参考美元 | Credo 可获得的部分 |
+|---|---:|---:|---|
+| 光 DSP/FEC | 约 250 | 约 110（接收侧线性化，DSP 内容减少） | Bluebird/Cardinal 等 |
+| SiPho PIC/光引擎 | 约 230 | 约 230 | DustPhotonics PIC；并非所有模块必用 Dust |
+| 激光器/driver/TIA | 70–100 | 70–100 | Cardinal/Robin 有集成 driver 选项；激光源通常外采 |
+| FAU、耦合、封装 | 90–110 | 90–110 | ZF Optics 系统收入包含，单卖 DSP/PIC 不包含 |
+| PCB、PMIC、控制器、机械件 | 55–65 | 55–65 | ZF Optics 包含 |
+| 测试、老化、良率、质保 | 75–85 | 75–85 | ZF 系统和 PILOT 价值 |
+| 模块制造成本合计 | 约 770–840 | 约 630–700 | 不含销售毛利 |
+
+参考 ASP：
+
+- 普通 800G 光模块约 280–420 美元；具备 ZF 遥测、远程管理和可靠性溢价的 800G 模块，本文采用 350–600 美元。
+- 1.6T LRO 约 600–900 美元，1.6T FRO/SiPho 模块约 750–1,050 美元。
+- 独立光 DSP 的 Credo 内容量约 100–250 美元/光端口。
+- SiPho PIC 的本文模型内容量约 80–220 美元/光端口。
+
+FRO 与 LRO 的权衡是：LRO 减少接收侧 DSP 功耗和 BOM，但对主机侧/系统信号质量、线性器件和链路管理要求更高。Credo 同时拥有完整 retimed DSP、LRO DSP、PIC、模块与 PILOT，因此无论客户选 FRO 或 LRO 都可能获得内容量；但同一端口的 DSP 与模块收入不可重复相加。
+
+### 6.4 Retimer、PCIe、OmniConnect 与 ALC BOM
+
+| 产品 | 功能 BOM | 单位 ASP/内容量模型 | 备注 |
+|---|---|---:|---|
+| Blue Heron 224G Retimer | 3nm die、封装、SerDes/FEC、遥测、PCB/电源、测试 | 100–350 美元/颗；一条高损耗链路通常 1–2 颗 | 公开价格不存在，范围参考高速 Retimer 市场 |
+| Toucan Retimer | 7nm die、封装、PCIe/CXL 协议与低延迟 SerDes、PILOT | Gen6 级 Retimer 约 180–350 美元/颗 | 当前公开 PCI-SIG 合规为 32GT/s |
+| 完整 PCIe x16 AEC | 两端 Retimer 30%–50%；连接器/铜缆 18%–30%；PCB/PMIC 12%–20%；装配测试 10%–18%；质保 5%–10% | 800–2,500 美元/链路；若两端各一颗 Credo Retimer，则 silicon 内容约 360–700 美元 | OSFP-XD 方案最高约 7m、1Tb/s |
+| OmniConnect Weaver | 5nm gearbox、112G VSR SerDes、LPDDR 接口、封装、板级电源/固件 | 公司未给 ASP；本文不把示意 ASP计入基准 BOM | 必须知道每 ASIC 的 memory fanout 数量才可可靠估算 |
+| microLED ALC | microLED 发射/接收、driver/TIA、SerDes/FEC、光纤/导光、连接器、封装、PILOT | 极早期示意 500–1,500 美元/条 | 无公开量产报价、良率或客户 BOM，置信度低 |
+
+### 6.5 每 MW、机架、GPU、端口的内容量
+
+为建立可复算锚点，采用一个 72-GPU、约 142kW 的高密度机架，即约 **507 GPU/MW IT 负载**。这只是 GB300/NVL 级高密度架构的参考；传统风冷、不同 GPU、交换机和功率利用率会显著改变结果。
+
+管理层在 FY2026 Q4 电话会表示，很多客户设计为每 GPU 两个物理端口。本文据此建立拓扑区间，但不假设所有端口都使用同一种介质。
+
+| 产品 | 部署系数 | 每端口/链路 Credo相关内容 | 每 GPU 内容量 | 72-GPU 机架内容量 | 每 MW 内容量 |
+|---|---|---:|---:|---:|---:|
+| 400G/800G AEC | 0.8–1.8 条 AEC/GPU；58–130 条/架 | 300–850 美元/完整 AEC；折算每个 port-end 150–425 美元 | 240–1,530 美元 | 1.74–11.05 万美元 | 12.2–77.6 万美元 |
+| 1.6T AEC | 同样 0.8–1.8 条/GPU，仅在下一代端口采用 | 700–1,800 美元/条；port-end 350–900 美元 | 560–3,240 美元 | 4.06–23.40 万美元 | 28.4–164.3 万美元 |
+| 独立光 DSP | 0.2–0.8 个被选光模块端/GPU；14–58 个/架 | 100–250 美元/模块端 | 20–200 美元 | 0.14–1.45 万美元 | 1.0–10.2 万美元 |
+| 800G ZF Optics | 0.3–1.0 个模块端/GPU；22–72 个/架 | 350–600 美元/光端口 | 105–600 美元 | 0.77–4.32 万美元 | 5.3–30.4 万美元 |
+| 1.6T ZF Optics | 0.3–1.0 个模块端/GPU | 750–1,050 美元/光端口 | 225–1,050 美元 | 1.62–7.56 万美元 | 11.4–53.2 万美元 |
+| SiPho PIC | 与选用 SiPho 的光模块端一致，0.3–1.0/GPU | 80–220 美元/PIC/端口 | 24–220 美元 | 0.18–1.58 万美元 | 1.2–11.2 万美元 |
+| 224G scale-up Retimer | 32–128 颗/架；约 0.44–1.78 颗/GPU | 100–350 美元/颗 | 44–622 美元 | 0.32–4.48 万美元 | 2.3–31.5 万美元 |
+| PCIe x16 完整有源链路 | 0.25–1.0 条/GPU；18–72 条/架 | 800–2,500 美元/链路；其中两颗 Credo silicon 约 360–700 美元 | 完整链路 200–2,500 美元；Credo silicon 约 90–700 美元 | 完整链路 1.44–18.0 万美元 | 完整链路 10.1–126.8 万美元 |
+| microLED ALC | 早期示意 0.2–0.8 条/GPU | 500–1,500 美元/条 | 100–1,200 美元 | 0.72–8.64 万美元 | 5.1–60.8 万美元 |
+| OmniConnect Weaver | 取决于每 ASIC 的 memory fanout 和 LPDDR 容量 | 未披露 | 不可靠 | 不可靠 | 不可靠 |
+| PILOT | 随 AEC/Optics/Retimer 附着 | 不单独计价 | 已含在硬件 ASP | 已含 | 已含 |
+
+**不可相加规则：**
+
+- AEC 与 ZF Optics 大多对应同一批物理端口的不同介质选择，不能把两行上限相加。
+- 独立光 DSP、SiPho PIC 与完整 ZF Optics 是同一光模块内部的层级：若按完整 ZF 模块收入计量，不可再加一次 DSP/PIC。
+- PCIe AEC、Ethernet AEC、scale-up Retimer 可能连接不同 fabric，但要按具体 GPU 架构去重。
+- “每 MW”是 IT 负载口径，不是园区电网接入 MW；若 PUE 1.2，则每 1MW 园区电力对应的 IT 负载低于 1MW。
+
+### 6.6 当前产能能力：美元口径
+
+公司不披露 wafer starts、封装/测试 UPH、AEC 月产能或光模块良率。这里的“产能能力”定义为在当前产品 mix 和 ASP 下，供应链可交付的年化收入，而不是工厂理论产能。
+
+| 产品 | 2026 年中当前年化收入能力模型 | 采用程度 | 产能/供应证据 | 置信度 |
+|---|---:|---|---|---|
+| 100G/lane AEC | 16–18 亿美元 | 多个 hyperscaler 大规模量产 | Q4 AEC 估算 4.05–4.20 亿；12nm 为 workhorse；数百万条部署 | 中高 |
+| 200G/lane/1.6T AEC | 1–2 亿美元，快速扩充中 | 客户资格认证、平台准备；收入仍轻 | 3nm 产品 ready for production；OFC 展示 Rubin/Kyber 平台 | 中低 |
+| 光 DSP | 1–2 亿美元 | 400G/800G 商用；1.6T 送样/初始量产 | Robin available；Cardinal/Bluebird 3nm；FY2027 >1 亿收入承诺 | 中 |
+| ZF Optics | 1–2.5 亿美元，H2 继续扩产 | TensorWave 生产部署，另 3 家资格认证 | 800G GA；公司对完整 BOM 提前锁供货 | 低中 |
+| Dust SiPho PIC | 1.5–3 亿美元，独立产能未披露 | 已有 hyperscaler design wins/模块厂客户 | backlog 健康；约 70 人团队；收购后整合 | 低 |
+| Blue Heron | 0.5–1 亿美元 | 送样，2026 CQ3 production quantity | 3nm；UALink/ESUN/Ethernet multiprotocol | 低 |
+| Toucan/PCIe AEC | 0.2–0.5 亿美元 | PCIe 5 合规、Gen6 客户验证 | 7nm；OFC 实机 Gen6 over AEC | 低 |
+| OmniConnect/ALC | 研发/工程样品，不具可验证量产能力 | 客户接触阶段 | 管理层预计 FY2028 初始生产收入 | 低 |
+| **公司总计** | **约 19–21 亿美元当前 run-rate 能力** | — | FY2026 Q4 年化 17.48 亿；FY2027 Q1 指引中值年化 18.8 亿；新增产能协议支持后续爬坡 | 中 |
+
+库存也可做一个“收入等值”压力测试：
+
+- FY2026 期末库存 2.508 亿美元；按 FY2026 31.96% COGS 率粗算，若全部可销售且 mix/良率不变，对应约 7.85 亿美元收入。
+- 其中产成品 1.522 亿美元，对应约 4.76 亿美元收入，接近一个 Q1 指引季度。
+- 未来一年不可取消库存 PO 1.492 亿美元，对应约 4.67 亿美元收入 COGS。
+- 库存加 PO 的简单收入等值约 12.5 亿美元，但 PO、在制品、产成品、交期和产品 mix 不同，不能称为 12.5 亿美元客户订单，也不能与 3.377 亿美元制造承诺重复相加。
+
+### 6.7 当前供应链采纳与认证阶段
+
+| 产品 | 当前采纳证据 | 正式/公开认证状态 | 尚缺的验证 |
+|---|---|---|---|
+| 100G/lane AEC | 数百万条、多个 hyperscaler；TensorWave、Rebellions 公开合作 | 客户 AVL/平台认证未公开；公司可靠性数据为厂商口径 | 每客户订单额、端口数、取消率 |
+| 1.6T AEC | OFC 2026 实机/静态展示，200G/lane 产品 ready | 没有统一“1.6T AEC 认证”可替代客户平台 qual | Rubin/其他平台量产时间和实际份额 |
+| Robin 光 DSP | 2026-03 发布，available now | 由模块厂和 hyperscaler 完成设计/链路认证，未披露名单 | socket 数、模块厂份额 |
+| Cardinal/Bluebird | 1.6T LRO OFC 演示；Cardinal 向 lead customers 送样 | 3nm/224G 产品级验证中 | 批量模块良率与客户量产 |
+| ZF Optics | 800G 2×DR4 GA；TensorWave 生产出货；3 家额外客户 qualification | 光性能符合 IEEE 802.3-2022 Clause 124.7；支持 SONiC/PILOT | 另外 3 家是否完成 qual、每家放量 |
+| Dust SiPho PIC | 领先 hyperscaler design wins；模块厂与 CPO/NPO design-in | 客户认证详情未公开 | 收入、出货量、激光配置、良率 |
+| Blue Heron | 送样；Upscale AI/SkyHammer 与 UALink 生态公开支持 | Credo 是 UALink 自 2024 年末起的 contributing member；非最终客户认证 | CQ3 2026 量产、真实 platform wins |
+| Toucan | production-ready，客户可部署在 Gen5 系统 | **PCI-SIG 仅在 32.0GT/s 合规**；Gen6-capable 不等于 64GT/s listed | 64GT/s Gen6 compliance、CXL 3.x 客户验证 |
+| OmniConnect | Weaver 产品发布 | 无公开行业/客户认证 | 客户名、内存拓扑、量产日期 |
+| ALC | Hyperlume 技术并入 Credo | 无公开平台认证 | microLED 良率、寿命、连接标准、客户 |
+| PILOT | FY2026 已覆盖 SerDes、Retimer、AEC；ZF Optics 通过 SONiC 扩展 | 软件工具无独立硬件认证 | 第三方运维数据与客户标准化程度 |
+
+公开合作必须降权：TensorWave 和 Rebellions 证明产品进入真实架构，但公告没有披露 PO 金额或最低采购量；OFC 静态展示 Rubin NVL144/Kyber Ultra NVL576 证明物理兼容方向，不等于 NVIDIA 命名认证或批量订单。[Rebellions 合作](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-and-Rebellions-Work-Together-to-Maximize-Operational-Efficiency-in-Enterprise-AI-Factories/default.aspx)
+
+## 7. 一年后产能、供应链采纳与认证：三情景
+
+### 7.1 公司级产能框架
+
+| 情景 | 2027 年中年化可交付收入能力 | FY2027 预测收入 | 隐含利用率 | 需要的供应链状态 |
+|---|---:|---:|---:|---|
+| 基准 | 27–29 亿美元 | 24.5 亿 | 84%–91% | 12nm AEC 平稳；3nm/7nm/5nm DSP 按承诺；ZF 光学良率逐季改善 |
+| 乐观 | 33–36 亿美元 | 30.2 亿 | 84%–92% | 新增封测、光模块、PIC、激光器和 FAU 产能按期；供应商无重大延误 |
+| 极度乐观 | 40–45 亿美元 | 36.7 亿 | 82%–92% | 3nm、光器件、测试与系统装配全部提前扩产；多个新产品一次性通过客户 qual |
+
+当前 19–21 亿美元 run-rate 产能到基准 27–29 亿，需约 35%–45% 扩张。公司已经通过 3 份产能预留、3.377 亿美元制造采购承诺、0.710 亿美元押金和期后新增协议做准备；但承诺金额是供应链支出，不等于收入产能，且光学产能受多个串联系统约束，最弱环节决定最终交付。
+
+### 7.2 基准情景：产能与认证
+
+| 产品 | 2027 年中收入产能 | 供应链采纳 | 一年后认证/阶段 |
+|---|---:|---|---|
+| 100G/lane AEC | 15.5–17.0 亿 | 多 hyperscaler 稳态 AVL；NeoCloud 增量 | 现有客户认证延续；second source 增加但 Credo silicon 仍主导 |
+| 200G/lane/1.6T AEC | 2.8–3.2 亿 | 2–4 个下一代 AI 平台量产 | 1.6T/224G 完成选定平台 qual；不假设整个市场在 FY2027 全面迁移 |
+| 光 DSP | 1.7–2.0 亿 | Robin 进入更多 400G/800G 模块；Cardinal/Bluebird 初量 | 多家模块厂完成 800G，1.6T 在 lead customers 量产 |
+| ZF Optics | 3.0–3.4 亿 | 4–6 家客户量产或完成资格认证 | 800G 2×DR4 扩大；1.6T 处平台 qual/初始产量 |
+| SiPho PIC | 2.8–3.2 亿 | Dust 既有 hyperscaler/模块厂 design wins 转量 | 400G/800G 量产，1.6T qualification；NPO/CPO 仍以设计导入为主 |
+| Blue Heron | 0.9–1.1 亿 | 2–4 个 UALink/ESUN/Ethernet 平台 | 量产可用，客户级认证但未必公开 |
+| Toucan/PCIe AEC | 0.5–0.7 亿 | 少数 PCIe 6/CXL 平台 | 客户 64GT/s 验证；基准不假设已列入公开 Gen6 合规清单 |
+| OmniConnect/ALC | 0.1–0.3 亿 | 工程样品、首个付费项目 | FY2028 初始生产；无大规模标准认证 |
+
+### 7.3 乐观情景：产能与认证
+
+| 产品 | 2027 年中收入产能 | 供应链采纳 | 一年后认证/阶段 |
+|---|---:|---|---|
+| 100G/lane AEC | 17.0–18.0 亿 | 新 hyperscaler/NeoCloud 平台追加 | 主要客户双供但 Credo 保持首选 silicon |
+| 200G/lane/1.6T AEC | 4.2–4.8 亿 | Rubin/新一代 ASIC、NIC、交换平台提前量产 | 多平台 1.6T qual，3nm 良率稳定 |
+| 光 DSP | 2.4–2.8 亿 | Robin/Cardinal/Bluebird 跨模块厂放量 | 800G/1.6T 多家 hyperscaler 认证 |
+| ZF Optics | 4.2–4.8 亿 | 6–10 家客户，ZF 可靠性成为采购规格 | 800G 大量；1.6T 一家以上量产 |
+| SiPho PIC | 3.8–4.3 亿 | Dust PIC 同时进入 merchant module 与 Credo ZF | 1.6T 量产，NPO/CPO 客户样片/系统验证 |
+| Blue Heron | 1.6–2.0 亿 | 开放 scale-up 获得明显端口份额 | UALink/ESUN/Ethernet 多平台认证 |
+| Toucan/PCIe AEC | 0.9–1.2 亿 | PCIe 6 rack-to-rack 开始规模部署 | 64GT/s PCI-SIG/客户认证有望完成；CXL 3.x 平台导入 |
+| OmniConnect/ALC | 0.5–0.8 亿 | 至少一项出现首个规模客户 | 工程验证转初始量产 |
+
+### 7.4 极度乐观情景：产能与认证
+
+| 产品 | 2027 年中收入产能 | 供应链采纳 | 一年后认证/阶段 |
+|---|---:|---|---|
+| 100G/lane AEC | 18.0–19.0 亿 | 成熟代端口继续增长 | 主客户份额未因 Marvell/Broadcom 明显流失 |
+| 200G/lane/1.6T AEC | 6.0–7.0 亿 | 200G/lane 提前成为新装平台主流 | 多 hyperscaler 大量量产 |
+| 光 DSP | 3.4–3.8 亿 | Credo 在 800G/1.6T merchant DSP 大幅提份额 | 全系列量产并完成主流模块认证 |
+| ZF Optics | 5.8–6.5 亿 | ZF 成为高可靠 AI 光模块事实子类别 | 800G/1.6T 多客户大量，3.2T 样片 |
+| SiPho PIC | 5.2–5.8 亿 | Dust 同时获得外售 PIC 与内部 ZF attach | 1.6T 主流，NPO/CPO 至少一个量产前认证 |
+| Blue Heron | 2.3–2.7 亿 | 开放 scale-up 广泛采用 | 多协议多平台量产 |
+| Toucan/PCIe AEC | 1.4–1.7 亿 | PCIe/CXL 跨机架大量采用 | Gen6 合规、CXL 客户验证全面完成 |
+| OmniConnect/ALC | 1.0–1.5 亿 | 两项均有量产客户 | FY2028 初始收入提前、形成可复用 reference design |
+
+极度乐观表中的“认证完成”不是现有事实，而是情景条件。对于 PCIe 6，只有 PCI-SIG 官方 64GT/s Integrators List 或公司明确公告才能升级为“正式 Gen6 合规”；不能用当前 32GT/s 认证替代。
+
+## 8. 根据订单积压与供给推断未来一年增速
+
+### 8.1 证据分层
+
+**一级证据：财务和合同**
+
+- FY2027 收入增长 >80%、光学 >6 亿美元、三个光学支柱各 >1 亿美元。
+- 库存 2.508 亿、未来一年不可取消库存 PO 1.492 亿、制造承诺 3.377 亿、产能押金 0.710 亿。
+- FY2026 期末客户应收集中：合同客户 A/B/C 占应收 53%/20%/19%；FY2026 合同客户收入 A/B 占 49%/32%。
+- 终端客户口径三大客户占 FY2026 收入 33%/32%/19%，合计 84%；Top 10 约 90%。
+
+**二级证据：客户项目、认证与管理层渠道**
+
+| 客户/项目 | 产品 | 公开状态 | 交付窗口推断 | 订单金额/取消率 |
+|---|---|---|---|---|
+| TensorWave 下一代 AMD AI clusters | ZF AEC + ZF Optics | 公开“deploy”，不是仅评估 | FY2027 起 | 未披露 |
+| Rebellions RebelPOD | ZF AEC | 公开采用以提高 AI factory 稳定性 | 2026–27 | 未披露 |
+| Oracle | ZF Optics | 与 Credo 联合开发可靠性/遥测方案 | FY2027 光学 ramp | 未披露 |
+| Microsoft 双 ToR 架构 | ZF SWITCH AEC | 联合定义并开源实现 | 已产品化 | 未披露 |
+| Rubin NVL144 / Kyber Ultra NVL576 | 1.6T AEC | OFC 2026 静态展示 | 大规模更偏 2027/FY2028 | 不是订单披露 |
+| 额外 3 家未命名客户 | ZF Optics | FY2026 Q3 电话会称 qualification 中 | FY2027 | 未披露 |
+| Dust 未命名领先 hyperscaler | SiPho PIC | design wins；backlog 健康并增长 | FY2027 H2 为主 | 未披露 |
+| Upscale AI/SkyHammer | Blue Heron | 产品生态背书 | CQ3 2026 后 | 不等于采购承诺 |
+
+**三级证据：行业与模型**
+
+- AEC/光模块客户资格认证通常 6–12 个月，供应商/制造流程切换约 9–12 个月。
+- 800G/1.6T 光学的主要瓶颈包括 200G EML/CW laser、SiPho PIC/FAU、3nm/5nm DSP、封装老化与高速测试。
+- AEC 100G/lane 主要在 12nm，晶圆本身相对不紧；但完整 AEC 仍受连接器、线缆、系统装配、测试和客户指定 BOM 约束。
+
+### 8.2 为什么供应侧数据比 RPO 更有用
+
+产品 RPO 没有披露，客户 PO 又可取消，因此没有可信的“订单金额/未来收入”一一映射。更实用的方法是看公司是否为需求承担不可逆成本：
+
+- 一年内库存增加 1.608 亿美元，产成品增加约 0.995 亿美元。
+- 不可取消库存 PO 增加约 1.189 亿美元。
+- 可退产能押金增加 0.629 亿美元；即使可退，公司也把现金提前交给供应商换产能。
+- FY2026 还投入 0.573 亿美元资本开支，主要是 mask set、生产/实验设备和设计软件。
+
+这些投入与 FY2027 H2 光学 ramp 的时间一致，是“公司层面 demand conviction”的强证据；但客户无需承担同等不可取消义务，所以不是硬 backlog。
+
+### 8.3 订单/供给三情景增速
+
+| 情景 | FY2027 收入/增速 | H1 路径 | H2 所需平均单季 | 供给能力 | 客户取消/延后假设 | 订单与供给解释 |
+|---|---:|---|---:|---:|---:|---|
+| 基准 | 24.5 亿；+83.5% | Q1 4.70 亿，Q2 约 4.94 亿 | 约 7.44 亿 | 27–29 亿 | 5%–10% | 现有 AEC 维持；光学 >6 亿按计划；部分订单滚动但库存可缓冲 |
+| 乐观 | 30.2 亿；+126.2% | Q1 约 4.75 亿，Q2 约 5.2 亿 | 约 10.1 亿 | 33–36 亿 | 2%–5% | 多个 ZF/Dust 客户同时转量，1.6T/scale-up 提前，供应投入转化率高 |
+| 极度乐观 | 36.7 亿；+174.9% | Q1 约 4.75 亿，Q2 约 5.5 亿 | 约 13.2 亿 | 40–45 亿 | 0%–2% | 新旧产品全线无延迟；需要超常季度爬坡，低概率 |
+
+这里的 H2 是算术压力测试，不是公司逐季指引。基准情景利用率约 85%–91%，给良率、客户延后和产品 mix 留出合理缓冲；极度乐观虽然理论产能可覆盖，但任何一项串联供应链低于计划都会破坏结果。
+
+### 8.4 各产品订单挤压判断
+
+| 产品 | 客户需求相对供给 | 订单可见性 | 取消风险 | 结论 |
+|---|---|---|---|---|
+| 100G/lane AEC | 偏紧但可管理 | 现有平台和客户重复采购，最高 | 中；大客户可延后 | 需求强、12nm 供应相对稳，最适合做基准 |
+| 200G/lane/1.6T AEC | 认证产能偏紧 | 平台路线清楚，量产时间不完全清楚 | 中高；平台延期 | 供不应求程度高于成熟 AEC，但收入兑现更后置 |
+| 光 DSP | 3nm/5nm 与模块 qual 偏紧 | 管理层 >1 亿锚较强 | 中 | FY2027 可见度较高 |
+| ZF Optics | 全 BOM 显著紧张 | 管理层 >1 亿、TensorWave+3 家 qual | 中高；客户可选其他模块 | 最大供给与良率风险，也是最大收入弹性 |
+| SiPho PIC | PIC/封装偏紧 | Dust backlog 健康但数额不披露 | 中；design win 转量风险 | 收购给出强信号，但透明度最低 |
+| Blue Heron | 3nm/测试偏紧 | sampling→CQ3 production | 高；协议和平台时间 | 小基数、高赔率 |
+| Toucan | 7nm 相对可供 | 公开认证不足以证明订单 | 高 | 不能在基准里放太大 |
+| OmniConnect/ALC | 尚未到供需挤压阶段 | 很低 | 很高 | 技术选择权，而非现有 backlog |
+
+## 9. 竞争格局、技术主流性、替代方案与客户切换成本
+
+### 9.1 逐产品竞争
+
+| 产品/市场 | 主要竞争对手 | 替代技术 | Credo 优势 | Credo 弱点 |
+|---|---|---|---|---|
+| 400G/800G/1.6T AEC silicon | Marvell Alaska A、Broadcom AEC DSP、Point2/其他 Retimer | 被动 DAC、ACC、AOC、可插拔光、板内 copper backplane | 已部署规模、低功耗 SerDes、CLOS/SHIFT/SWITCH、PILOT、客户资格认证 | Marvell 已有 5nm 1.6T 8×200G、>3m 产品；大客户要求多源 |
+| 完整 AEC 系统 | Amphenol、Molex、TE Connectivity、Luxshare、BizLink、Volex 等 | 同上 | Credo 控制 silicon/固件/系统 reference design | 连接器/线缆厂拥有制造规模和客户渠道 |
+| 400G/800G/1.6T 光 DSP | Broadcom Taurus、Marvell 光 PAM DSP、MaxLinear、Cisco/Acacia 自供 | LPO/LRO 减 DSP、CPO 取消传统 pluggable DSP | 第七代 DSP、低功耗、小封装、LRO、与 ZF/PIC 交叉销售 | Broadcom 2026 已发布 3nm 400G/lane Taurus；巨头研发/客户绑定更强 |
+| ZF Optics | Innolight、Eoptolink、Coherent、Lumentum、Cisco/Acacia、其他模块厂 | 普通可插拔、LPO/LRO、AOC、CPO/NPO | link-flap hardening、PILOT、Oracle 联合定义、完整责任主体 | 模块制造/良率经验相对新；竞争者规模与成本更强 |
+| SiPho PIC | Broadcom、Marvell、Cisco/Acacia、Intel SiPhotonics、GlobalFoundries/Tower 平台、OpenLight 等 | EML、薄膜铌酸锂、客户 custom PIC | Dust 400G–1.6T design wins、3.2T/NPO/CPO 路线、与 Credo DSP/ZF 一体化 | 7.70 亿美元收购价格高；merchant PIC 毛利和客户自研风险 |
+| PCIe/CXL Retimer/AEC | Astera Labs Aries 6/COSMOS、Broadcom、Marvell、Microchip、Montage/Parade | 板上短距、PCIe over optics、专有 scale-up | 低功耗 SerDes、PILOT、7m OSFP-XD reference | Astera 已公开 64GT/s、PCIe 6/CXL 3.x Smart Cable，多代 PCIe 生态领先 |
+| 224G scale-up Retimer | Broadcom、Marvell、Astera、客户自研 PHY | NVIDIA NVLink/NVSwitch、AMD/专有 fabric、光 scale-up | UALink/ESUN/Ethernet multiprotocol、40+dB、3nm | 开放协议可能晚于专有 NVLink；客户可集成 Retimer |
+| OmniConnect | Astera/CXL memory、Marvell Structera、HBM、板上 LPDDR、客户 custom I/O | 更大 HBM、CXL pooling、先进封装 | 112G VSR、late-bound、多用途 fabric | 生态和软件尚未证明，客户架构修改大 |
+| microLED ALC | Avicena 等 microLED interconnect、Ayar Labs/Lightmatter optical I/O、传统 AOC/光模块 | AEC、AOC、CPO/NPO | Hyperlume microLED、30m、可插拔、铜级运维目标 | 技术/良率/标准均早期；替代方案很多 |
+| PILOT | Marvell RELIANT、Astera COSMOS、模块厂 DOM/telemetry、客户自研工具 | 标准 CMIS/SONiC telemetry | 跨铜/光/PCIe统一数据与诊断 | 若开放标准充分，软件差异可能被压缩 |
+
+竞争产品的公开验证：[Marvell Alaska A 1.6T AEC DSP](https://www.marvell.com/company/newsroom/marvell-extends-connectivity-leadership-industry-first-1-6t-pam4-dsp-active-electrical-cables.html)、[Marvell DesignCon 2026 AEC 演示](https://videos.marvell.com/watch/e2woLfu6biwqjuuQZH67Tw)、[Astera Aries PCIe 6 Smart Cable](https://www.asteralabs.com/enabling-multi-rack-ai-clusters-with-aries-smart-cable-modules-for-pcie-6/)、[Broadcom 3nm Taurus 400G/lane optical DSP](https://www.broadcom.com/company/news/product-releases/64016)。
+
+### 9.2 新技术是否是未来主流
+
+| 技术 | 主流性判断 | 时间窗口 | 主要风险 |
+|---|---|---|---|
+| AEC 400G/800G | **已是 3–7 米 AI 短距主流之一** | 现在–至少 2028 | 端口转 1.6T 后有效距离/热约束，竞争增多 |
+| 1.6T AEC | **会成为短距主流，但不是所有端口主流** | 2027–29 | 3nm 功耗、224G 信号完整性、光替代 |
+| 800G/1.6T retimed optics | **确定性主流** | 现在–2029 | ASP 下行、供应链/良率、DSP 竞争 |
+| LRO | **特定 hyperscaler 场景的重要分支** | 2026–29 | 主机侧信号要求高，FRO 保持兼容与稳定优势 |
+| LPO | **选择性采用，不会立即全面替代 DSP** | 2026–29 | 互操作、链路预算、运维和温度漂移 |
+| SiPho PIC | **800G/1.6T 及 CPO/NPO 的主流技术路线之一** | 现在–2030 | EML/TFLN/custom PIC 并存，merchant margin 未定 |
+| CPO/NPO | **长期方向，短期不是可插拔的全面替代** | Credo 指引初始收入 FY2028 起 | 可维护性、激光源、封装良率、标准 |
+| PCIe 6/CXL Retimer | **复杂 AI 机架中的必需品概率高** | 2026–29 | 客户集成、Astera 领先、光 PCIe 替代 |
+| UALink/ESUN 224G scale-up | **潜在主流，尚未胜出** | 2027–30 | NVIDIA NVLink 专有生态强、标准碎片化 |
+| OmniConnect memory fanout | **有价值但未被验证的架构选择** | FY2028 以后 | HBM/CXL/客户定制替代 |
+| microLED ALC | **技术可选项，不是已确认主流** | FY2028 以后 | 量产良率、生态、成本、传统光替代 |
+
+Credo 的组合策略比押注单一媒介更稳：7 米内卖 AEC，7–30 米探索 ALC，更长距离卖 ZF Optics；光模块内部又卖 DSP 和 PIC；PCIe/scale-up 则复用 SerDes、Retimer 与 PILOT。真正风险是这些产品在客户预算里相互替代，管理层若把每个 TAM 简单相加，会高估可服务市场。
+
+### 9.3 客户替换成本
+
+| 切换层级 | 直接成本 | 时间 | 实际壁垒 |
+|---|---:|---:|---|
+| 单条标准线缆/模块更换 | 几百至几千美元 | 分钟–小时 | 很低；物料本身不是护城河 |
+| 单一机架更换 vendor | 数万至数十万美元物料+停机/验证 | 数周–数月 | 固件、FEC、连接器、热和链路 margin 要重新验证 |
+| 平台/集群级第二来源导入 | 本文模型约 300–1,500 万美元工程、测试和机会成本 | 约 2–4 个季度 | SI/PI、BER、可靠性、CMIS/SONiC、PILOT 工具、OEM/ODM AVL 全链重验 |
+| silicon/DSP 架构替换 | mask/PCB/固件/模块重新设计 | 约 9–18 个月 | 最高；可能错过 GPU 平台量产窗口 |
+
+300–1,500 万美元为行业工程成本模型，不是 Credo 或客户披露。对 hyperscaler 而言，真正切换成本不是线缆采购价，而是数十万 GPU 集群的稳定性、认证时间和 GPU 停机机会成本。因此客户会维持第二来源，却也不会在平台量产中轻易更换已验证的第一来源。
+
+### 9.4 专利：护城河也是竞争扩散渠道
+
+过去半年 Credo 与 3M 签署 AEC 专利许可，与 Molex 达成 cross-license/和解，与 TE Connectivity 达成许可和解；条款均保密。[3M](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-and-3M-Enter-Into-Patent-License-Agreement/default.aspx)、[Molex](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-and-Molex-Reach-Settlement-in-Active-Electrical-Cable-Patent-Infringement-Disputes/default.aspx)、[TE](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-and-TE-Connectivity-Reach-Settlement-in-Active-Electrical-Cable-Disputes/default.aspx)。
+
+正面意义是多家大型连接厂愿意签约，验证 Credo AEC IP 有经济价值，并可能形成许可收入。负面意义是 cross-license/许可也让成熟制造商更合法、更快地进入生态，Credo 的护城河必须继续靠 silicon、功耗、可靠性、PILOT 和客户设计，而不能只靠诉讼。
+
+### 9.5 主要风险与触发器
+
+| 风险 | 概率 | 影响 | 需要监控的先行指标 |
+|---|---|---|---|
+| FY2027 H2 光学 ramp 延迟 | 中 | 极高 | Q1/Q2 是否继续维持 >6 亿光学指引；ZF 客户 qual 数；Dust 收入首次披露 |
+| AEC 大客户降单/延后 | 中 | 极高 | 最大客户占比、库存/收入、产成品、不可取消供应 PO |
+| AEC silicon 份额被 Marvell/Broadcom 抢走 | 中 | 高 | 新平台 reference design、200G/lane 客户评论、毛利率/ASP |
+| 1.6T 铜被光学更快替代 | 中 | 高，但被 Credo 自有光学部分对冲 | 1.6T AEC vs optical mix、实际部署距离、每 GPU 光端口 |
+| Dust 收购整合/商誉风险 | 中 | 高 | PIC 收入、毛利、客户留存、核心约 70 人团队、或有对价达标 |
+| 3nm、激光器、PIC/FAU、封测短缺 | 中高 | 高 | 可退押金、供应承诺、Q1/Q2 毛利、交付延迟 |
+| 库存减值 | 中 | 中高 | 库存增速是否持续高于收入；E&O write-down（FY2026 已 0.151 亿） |
+| 客户自研/标准化压低溢价 | 中 | 中高 | custom silicon、LPO/CPO、CMIS/SONiC 标准功能替代 PILOT |
+| 估值压缩 | 高 | 极高股价影响 | P/S、forward P/E 与 FY2028 增长预期；任何指引 miss |
+| SBC/增发稀释 | 高 | 中高 | FY2026 SBC 1.826 亿；普通股同比 +8.3%；并购股票/PSU |
+| 税率正常化 | 中 | 中 | FY2026 有效税率约 1%，非长期稳态 |
+| 地缘/出口/TSMC 单点 | 中低但尾部大 | 高 | 美国出口规则、台海、TSMC 3nm/12nm 分配、亚洲封测 |
+
+### 9.6 投资结论与验证清单
+
+**最合理结论：公司质量高，股票安全边际低。**Credo 通过 AEC 已证明产品、客户与执行力；FY2027 的光学收入目标和供应投入又把第二增长曲线从“故事”推进到可量化阶段。与此同时，36 倍销售额要求 AEC、光 DSP、PIC、ZF Optics 至少三条线同时成功，且 FY2028 不能快速降速。
+
+接下来四个季度应依次验证：
+
+1. FY2027 Q1 是否达到或超过 4.75 亿美元，GAAP/non-GAAP 毛利率是否仍在约 68%。
+2. Q2 是否仍为中个位数环比，管理层是否维持 FY2027 >80% 与光学 >6 亿。
+3. H2 单季收入是否跃升到至少约 7.2–7.5 亿美元；若没有，全年算术很难成立。
+4. 光 DSP、SiPho PIC、ZF Optics 是否各自都超过 1 亿美元，并至少一个明显高于 2 亿。
+5. 库存/收入比和 E&O 是否改善；供应承诺是否转成收入而非过剩库存。
+6. 200G/lane AEC 是否仍被描述为 FY2027“light”，还是实际提前放量；这决定 FY2028 增长斜率。
+7. ZF Optics 的另外 3 家 qualification 客户是否转量；TensorWave/Rebellions 是否有可量化订单或扩容。
+8. Toucan 是否获得 64GT/s PCIe 6 正式合规；Blue Heron 是否按 CQ3 2026 提供量产。
+9. 客户集中度是否继续下降而不是只在四个大客户之间轮换。
+10. Dust 并购后的现金、SBC、无形资产摊销和整合费用是否侵蚀 GAAP 盈利质量。
+
+## 附录 A：过去半年关键事件与会议时间线
+
+| 日期 | 事件 | 可验证信息 | 投资含义 |
+|---|---|---|---|
+| 2026-01-22 | 与 3M 签 AEC 专利许可 | 条款保密 | IP 有价值；也扩大授权生态 |
+| 2026-01-29 | 发布 Blue Heron | 3nm、224G、40+dB、UALink/ESUN/Ethernet；CQ3 2026 production quantity | scale-up 第二曲线进入送样 |
+| 2026-02-09 | Q3 收入预告大幅上修 | 原指引 3.35–3.45 亿，上修至 4.04–4.08 亿，最终 4.070 亿 | AEC 需求/供货在 Q3 明显加速 |
+| 2026-02-10 | Toucan PCI-SIG 公告 | PCIe 6-capable，但正式合规速度为 32GT/s | 进入 PCIe 市场，认证表述必须谨慎 |
+| 2026-02-25 | TensorWave 合作 | AMD AI 集群部署 ZF AEC 与 Optics | 真实客户架构验证，无金额 |
+| 2026-02-25/03-02 | 收购 CoMira/公告 | 0.351 亿美元对价，补 link layer、FEC、安全 IP | 系统级连接能力扩充 |
+| 2026-03-02 | FY2026 Q3 财报 | 收入 4.070 亿，+201.5%；库存 2.080 亿 | 收入与供应投入同步加速 |
+| 2026-03-12 至 03-19 | OFC 2026 | 400/800G ZF、1.6T LRO、Gen6 PCIe over AEC、1.6T AEC 实机/静态展示 | 产品路线跨铜、光、PCIe |
+| 2026-03-17 | Robin、Cardinal、800G ZF Optics 同日发布 | Robin available；Cardinal lead-customer sampling；800G 2×DR4 GA | 光学从路线图进入可销售产品 |
+| 2026-03-26/27 | Molex、TE 和解/交叉许可 | 诉讼撤销、条款保密 | 降诉讼不确定性，也加强竞争生态 |
+| 2026-04-13/14 | 宣布收购 DustPhotonics/电话会 | SiPho PIC 400G–1.6T、3.2T 路线、健康 backlog；原指引光学 >5 亿 | 光学垂直整合 |
+| 2026-04-22 | TSMC 2026 Technology Symposium 展示 | 下一代 AI 连接方案 | 与唯一晶圆供应商协同，但不等于产能无约束 |
+| 2026-05-20 | Rebellions 合作 | RebelPOD 采用 ZF AEC | 非 hyperscaler 客户扩展 |
+| 2026-05-28 | Dust 交割完成 | 最新 10-K 期后口径 7.70 亿美元现金+股票/或有对价 | 现金缓冲下降，FY2027 开始合并 |
+| 2026-06-01 | FY2026 Q4/全年财报 | Q4 4.370 亿；FY2026 13.351 亿；FY2027 >80%；光学 >6 亿 | 最新财务与估值核心锚 |
+
+## 附录 B：来源、模型和置信度
+
+### B.1 一级来源
+
+- [Credo FY2026 10-K，2026-06-15](https://www.sec.gov/Archives/edgar/data/1807794/000162828026043303/crdo-20260502.htm)
+- [Credo FY2026 Q3 10-Q](https://www.sec.gov/Archives/edgar/data/1807794/000162828026014017/crdo-20260131.htm)
+- [Credo FY2026 Q2 10-Q](https://www.sec.gov/Archives/edgar/data/1807794/000162828025054549/crdo-20251101.htm)
+- [Credo FY2026 Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1807794/000180779425000021/crdo-20250802.htm)
+- [Credo FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1807794/000162828025033813/crdo-20250503.htm)
+- [Credo 2026 年 IR 新闻与产品发布索引](https://investors.credosemi.com/news-events/news/default.aspx)
+- [DustPhotonics 收购 SEC 8-K](https://www.sec.gov/Archives/edgar/data/1807794/000162828026024892/crdo-20260413.htm)
+
+### B.2 电话会、会议与技术验证
+
+- [FY2026 Q4 电话会全文](https://www.fool.com/earnings/call-transcripts/2026/06/01/credo-crdo-q4-2026-earnings-transcript/)
+- [FY2026 Q3 电话会全文](https://www.fool.com/earnings/call-transcripts/2026/03/02/credo-tech-crdo-q3-2026-earnings-call-transcript/)
+- [DustPhotonics M&A 电话会记录](https://earningscalls.dev/transcripts/dustphotonics-ltd_crdo_earnings_call_transcript_2026-04-14)
+- [OFC 2026 产品与技术展示](https://investors.credosemi.com/news-events/news/news-details/2026/Credo-to-Showcase-Optical-Solutions-for-AI-Scale-Out-Fabrics-at-OFC-2026/default.aspx)
+- [PCI-SIG：Toucan 公开合规公告](https://investors.credosemi.com/news-events/news/news-details/2026/Credos-Toucan-PCIe-Retimer-Achieves-PCISIG-Compliance/default.aspx)
+
+电话会是管理层陈述，不等同经审计财务；合作公告、论坛展示和客户背书证明技术/导入状态，不自动证明采购数量。
+
+### B.3 项目内行业资料
+
+本报告只从以下“基本面/行业调研/”正式产业资料提取 ASP、BOM、资格认证周期、端口系数、每 MW/GPU 锚点和竞争结构：
+
+- [AEC、DAC与高速铜缆](../../行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-07-10.md)
+- [PCIe／CXL高速I／O交换与Retimer](../../行业调研/AI网络_光互联_铜互联/行业调研_PCIe／CXL高速I／O交换与Retimer_2026-07-10.md)
+- [LPO_LRO线性光模块](../../行业调研/AI网络_光互联_铜互联/行业调研_LPO_LRO线性光模块_2026-07-10.md)
+- [800G_1.6T可插拔光模块](../../行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-07-10.md)
+- [AI数据中心建设规模与产业链订单映射 T05](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)
+
+未使用行业调研备份、实验输出、其他公司报告、日度资料或特征量化内容。
+
+### B.4 模型置信度
+
+| 数据 | 置信度 | 原因 |
+|---|---|---|
+| 总收入、利润率、现金、库存、客户集中、供应承诺 | 高 | 经审计 10-K/10-Q |
+| FY2027 >80%、光学 >6 亿、各支柱 >1 亿 | 中高 | 最新管理层指引，尚未实现 |
+| FY2026 AEC 占比 91%–96% | 中高 | 公司披露增量 >99% 来自 AEC，可从季度产品收入反推 |
+| 单一产品收入与毛利率 | 中低 | 公司不分产品披露；依赖行业 BOM 与管理层锚 |
+| 每 GPU/机架/MW 内容量 | 中低 | 拓扑差异大；已给公式和互斥规则 |
+| Dust 当前收入/backlog 金额 | 低 | 管理层明确拒绝披露具体数额 |
+| OmniConnect/ALC ASP、量产收入 | 低 | 尚无客户、价格、良率或认证数据 |
+| 三情景预测 | 模型 | 用于决策边界和产能压力测试，不是公司承诺 |
+
+## 最终判断
+
+Credo 当前是“由 AEC 现金牛资助光学、scale-up、PCIe 和内存互联扩张”的高速互联平台。FY2026 的 205.7% 增长和 68% 毛利率已经证明其 AEC 不是普通线缆生意；FY2027 光学 >6 亿美元若兑现，会证明 Dust、ZF Optics 与光 DSP 不是防御性故事，而是第二个规模业务。
+
+基准情景下，公司 FY2027 收入约 24.5 亿美元、增长约 84%，仍是极高质量增长；但当前约 480.7 亿美元市值对应约 19.6 倍 FY2027 一致预期销售额，仍要求 FY2028 继续大幅增长。投资上最值得等待的不是更多 TAM 宣布，而是三个可核验事实：**H2 单季收入是否达到约 7.5 亿美元、光学三支柱是否各自超过 1 亿美元、库存和客户集中度是否在增长中下降。**
+
+本报告用于基本面研究，不构成投资建议。
+

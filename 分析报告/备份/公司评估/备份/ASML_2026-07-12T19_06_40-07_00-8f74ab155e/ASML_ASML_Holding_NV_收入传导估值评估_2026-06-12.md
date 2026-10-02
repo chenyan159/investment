@@ -1,0 +1,164 @@
+# 公司收入传导与价值传导评估：ASML Holding NV
+
+报告日期：2026-06-12（美国太平洋时间）  
+评估对象：ASML / ASML Holding NV  
+主口径：NTM 经营窗口，近似为 2026Q2-2027Q1。  
+边界：只评估行业需求到 ASML 可确认收入、利润和经营质量的传导；不做全公司排序，不给投资评级，不判断股价区间，不使用估值倍数作为经营证据。  
+资料边界：使用 `公司调研/`、`行业调研/` 和 2026-06-12 前可验证公开资料；未读取、引用或继承 `特征量化/`、Signals、回归、模型比较或排序结果。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径是 NTM，即 2026Q2-2027Q1 的收入确认、毛利率、经营利润和现金流方向；FY2026 指引、2027 Low-NA EUV output、2030 长期模型只作为补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：ASML 2025 全年收入 `€32.667bn`、毛利率 `52.8%`、净利润 `€9.609bn`；2026Q1 收入 `€8.767bn`、毛利率 `53.0%`、净利润 `€2.757bn`，其中 Installed Base Management 为 `€2.488bn`。2026Q2 指引收入 `€8.4-9.0bn`、毛利率 `51-52%`；2026 全年指引已上调至 `€36-40bn`、毛利率 `51-53%`。2025 年末 backlog `€38.797bn`，2025Q4 net bookings `€13.158bn`，其中 EUV `€7.4bn`。
+- 重要产品/业务线：Low-NA EUV、High-NA EUV、DUV/Non-EUV、Installed Base Management、Metrology & Inspection / computational lithography、XT:260 / advanced packaging lithography。汇总时必须注意：M&I 和 XT:260 在披露口径中包含于系统销售或 Non-EUV，不可与 DUV/Non-EUV 机械相加。
+- NTM 公司收入四情景：悲观 `€35-38bn`；基准 `€39.5-43.0bn`；乐观 `€43.5-48.0bn`；极度乐观 `€49-54bn`。基准相当于 2026 指引正常兑现并叠加 2027Q1 Low-NA EUV/IBM run-rate 抬升；乐观需要 2026H2 客户 pull-in、DUV 回升、IBM 升级和 2027 Low-NA 80 台产能路径同时被订单验证。
+- 利润或 EBITDA 四情景：ASML 不按产品披露 EBITDA；本报告用净利润和经营利润率作为主口径。基准 NTM 净利润估 `€11.2-13.2bn`、经营利润率 `34-36%`；乐观净利润估 `€13.5-16.5bn`；极度乐观需要 IBM/field option mix、EUV 稀缺供给、DUV 价格和 High-NA 早期成本共同改善。
+- 最大传导瓶颈：不是需求主题本身，而是 EUV/DUV 产能、ZEISS optics/source/stage 等关键子系统、客户 cleanroom/site acceptance、出口管制和客户资本开支排产。
+- 最大利润率变量：IBM/field option 高毛利 mix 是否继续上升；High-NA 早期系统是否拖累或改善产品 mix；DUV 是否因中国限制和 Nikon/Canon 竞争出现价格压力。
+- 最大现金流变量：客户预付款、inventory/WIP build、site acceptance 节奏和 installed base service 收款。收入高增长时 FCF 可能被库存和交付节奏阶段性压低。
+- 可信度：公司层基准为中高；产品层 Low-NA EUV、IBM 为高；High-NA、XT:260 独立放量为中到低。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Low-NA EUV（NXE 系列） | 2026Q1 EUV 系统收入 `>€4.1bn`，2025 EUV 系统销售约 `€11.6bn`；2026 Low-NA output 目标至少 60 台 | NTM 约 `42-50%`，按收入确认口径估算 | ASML 最核心收入和稀缺供给来源，先进逻辑和 DRAM/HBM EUV 化主线 | A/B | 进入基准，NTM 基准收入估 `€16.5-20.5bn` | 2027 80 台以上 output、2031 330 WPH roadmap 是补充，不直接替代 NTM |
+| High-NA EUV（EXE:5000/5200B） | 2025Q4 已确认 2 台 High-NA 收入；2026Q1 公司调研口径显示继续有 High-NA 收入确认；EXE:5200B 面向 sub-2nm Logic 和 leading-edge DRAM | NTM 约 `6-11%`，但波动大 | 决定 2027-2029 节点路线，但 2026 仍以 qualification/early product wafer 为主 | B/C | 小比例进入基准；大规模 HVM 不进入基准 | TSMC/Samsung/SK hynix/Micron/Intel 多客户 HVM 才能上移 |
+| DUV / Non-EUV 系统（ArFi、KrF、i-line、dry、部分 AP/M&I） | 2026Q1 non-EUV 系统收入 `>€2.1bn`；2025 DUV 系统销售约 `€12.0bn` | NTM 约 `22-28%` | 先进节点非 EUV 层、成熟节点、中国/区域化、先进封装光刻的基本盘 | A/B | 进入基准，NTM 基准收入估 `€8.5-11.0bn` | 高端 ArFi 受 Nikon/Canon 价格和出口限制影响；AP extension 属小基数期权 |
+| Installed Base Management（服务、field options、PEP、升级） | 2025 IBM `€8.193bn`；2026Q1 `€2.488bn`，高于指引 | NTM 约 `25-30%` | 最高质量现金流和利润池，客户用升级包快速提升 wafer output | A | 进入基准，NTM 基准收入估 `€10.0-11.8bn` | 若 EUV 交期继续拉长，field option 可能成为乐观利润核心 |
+| Metrology & Inspection / computational lithography | 2025 M&I 约 `€0.825bn`；2026Q1 系统收入中约 2% 属 M&I；Brion/holistic lithography 软件未完全单独披露 | NTM 约 `2-4%` | N2/GAA/High-NA/HBM4 的良率、overlay、defect learning 关键工具 | A/C | 小比例进入基准，NTM 基准估 `€1.0-1.4bn`；与 Non-EUV 口径有重合，汇总去重 | AI process control、computational lithography attach rate 是 2027+ 期权 |
+| XT:260 / advanced packaging lithography | 2025Q3 首台发货；单独收入未披露，当前估计 `<1%` | 独立 NTM 基准 `<1%`，含在 Non-EUV | 进入 2.5D/3D、RDL、interposer 和 panel/wafer-level 图形化，但 ASML 不是此环节唯一供应商 | C/D | 不作为独立基准收入池；只在 DUV/Non-EUV 内保守计入 `€0.1-0.3bn` | 若 CoWoS/RDL/PLP 客户认证加速，进入乐观或极度乐观，不进入当前基准 |
+
+注：占比为本报告研究估算，分母采用 NTM 公司收入中位数附近；产品口径存在披露重叠，不能逐项相加为公司收入。
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 ASML 份额、收入确认、利润率或公司汇总。需求单位按产品选择：EUV/DUV 用系统需求和客户产能计划，IBM 用 installed base 升级/服务金额，M&I 用工具和软件 attach demand，XT:260 用先进封装 lithography tool demand。相对预期锚是 ASML 2026 指引、2026Q1 管理层表述、2025 年末 backlog、SEMI 2026 设备景气和客户先进节点/HBM/AI 资本开支节奏。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Low-NA EUV | 2026 至少 60 台 output；2027 如客户需求支撑至少 80 台；先进 Logic、DRAM/HBM 和 N2/N3/N4 客户扩产 | NTM tool-year 需求仅支撑约 `55-65` 台节奏，客户验收或 cleanroom 延后 | 2026 60 台正常兑现，2027Q1 run-rate 向 80 台路径爬坡 | 客户提前锁 2027 槽位，需求支持 `80-90` 台年化节奏 | 市场需求证明 `90-110+` 台年化能力仍不足，客户预付款和 long-term agreement 扩大 | 悲观约 `-5` 到 `-10` 台；基准约 `0`；乐观约 `+10-20` 台；极度约 `+25` 台以上，相对当前产能路径 | 基准到偏强 | ASML Q1 称 AI infrastructure 推动 advanced Memory/Logic 需求，客户加速 2026 以后扩产；反证是客户 fab readiness、EUV 子系统交付或 HBM/CoWoS 瓶颈导致 wafer demand 后移 |
+| High-NA EUV | EXE:5200B 面向 sub-2nm Logic 和 leading-edge DRAM；2026-2027 以 Intel、imec、存储和先进逻辑客户验证为主 | 仅 R&D/qualification，NTM 需求约 `4-8` 台，客户延迟 HVM insertion | `8-12` 台级别需求，少数客户 product wafer 验证 | `12-18` 台需求，Intel/存储客户把 High-NA 纳入 2027 早期量产准备 | `18-25` 台需求，TSMC 或更多客户提前 design-in，High-NA 从研发预算转入主 capex | 悲观 `-3` 到 `-5` 台；乐观 `+4-8` 台；极度 `+10` 台以上 | 2026 不高于当前预期；2027 是上修点 | ASML 产品页显示 EXE:5200B 支持 sub-2nm/leading-edge DRAM；反证是客户认为 Low-NA multi-patterning 经济性更优，High-NA masks/resist/pellicle/half-field 生态未成熟 |
+| DUV / Non-EUV | 2026Q1 后 ASML 将 non-EUV 从“类似 2025”上修为“增长”；先进节点非 EUV 层、成熟节点和中国/区域化支撑 | 需求较当前预期低 `10-15%`，主要由出口许可、中国成熟节点消化或客户 push-out 导致 | 与 2025 相近到中高个位数增长，ArFi、KrF/i-line 和 dry DUV 正常交付 | 增长 `10-20%`，EUV 短缺、先进 DRAM/logic multi-patterning 和区域化扩产同步拉动 | 增长 `25%+`，EUV 供给不足迫使更多 DUV 多重曝光和成熟节点扩产同时上修 | 绝对变化约 `-€1-2bn`、`0`、`+€1.5-3bn`、`+€4bn+` 的需求池 | 基准略高于年初预期 | 管理层明确说 immersion slow start 已反转；反证是出口管制扩大、Nikon 低价竞争、成熟节点过剩 |
+| Installed Base Management | 2026Q1 IBM `€2.488bn`，客户通过 performance upgrades 提高现有设备 output | 升级/服务需求降至 `€9.0-10.0bn` NTM，客户利用率或预算减弱 | `€10.0-11.8bn` NTM，PEP、source power、overlay、uptime 正常增长 | `€12-14bn`，客户把升级包作为最快增产路径 | `€14.5-16bn+`，EUV/DUV 新机交期紧张导致 field option 成为短期产能主渠道 | 相对当前 run-rate：悲观 `-5-10%`，基准 `0-10%`，乐观 `+15-30%`，极度 `+35%+` | 当前预期正常兑现，利润质量偏强 | Q1 IBM 高于指引且 ASML 称 installed base 是快速增加客户 capacity 的方式；反证是 fab utilization 下降或客户把升级预算转向新线 |
+| Metrology & Inspection / computational lithography | N2/GAA、High-NA、HBM4、AI 大 die 良率和 overlay 要求提高；2025 M&I 高增但基数小 | 需求约 `€0.8-1.0bn` NTM，客户把良率工具采购后移 | `€1.0-1.4bn`，随节点复杂度稳步增长 | `€1.4-2.0bn`，e-beam/overlay/holistic lithography attach 提升 | `€2.0bn+`，量测/计算光刻成为 High-NA/GAA/HBM4 关键瓶颈 | 绝对变化约 `-€0.2bn`、`0`、`+€0.4-0.8bn`、`+€1bn+` | 基准保守，乐观有证据但需订单 | 行业资料显示 process control 和良率学习价值上升；反证是客户先买主设备、把软件/量测延后 |
+| XT:260 / advanced packaging lithography | 2025Q3 首台发货；CoWoS/RDL/interposer/PLP 需求上升，但 ASML 不是后段图形化唯一供应商 | 仅试点，NTM 独立需求接近 `0` | 小量验证，`€0.1-0.3bn`，含在 Non-EUV | 多客户采用，`€0.3-0.7bn` | 从小众工具变成 AI packaging 标准采购项，`€0.8-1.5bn` | 相对当前预期：悲观 `0`；基准小；乐观 `+€0.3bn` 级；极度 `+€1bn` 级 | 不进入独立基准 | 行业资料确认先进封装仍是瓶颈；反证是 SUSS/EVG/Canon/Nikon/TEL/USHIO/Onto 等替代和客户认证周期 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断外部需求中哪些能进入 ASML NTM 收入表，以及当前可收入化基数。不预测产品增长，不判断利润率。证据等级按收入确认可见性处理：A 为已披露收入/分部收入/正式指引，B 为订单/backlog/明确交付时间表，C 为客户认证和产能规划，D 为样品/早期合作，E 为仅主题相关。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Low-NA EUV | 2026Q1 EUV 系统收入 `>€4.1bn`；2025 EUV 系统约 `€11.6bn`；2026 Low-NA output 至少 60 台；2027 至少 80 台路径 | 直接系统销售 | 高 ASP、高壁垒、高客户切换成本；早期安装和供应链成本影响毛利 | `€14-16bn` | `€16.5-20.5bn` | `€20-24bn` | `€25-29bn` | 基准符合当前指引和订单节奏；乐观高于当前收入锚点 | A/B | 是 | 已披露收入、订单/backlog、output plan、客户先进节点/HBM 扩产 | NTM 主收入池；不可用 AI capex 总额直接替代收入 |
+| High-NA EUV | 已有 High-NA 收入确认；EXE:5200B 为正式产品；客户验证路径清楚但 HVM 节奏未统一 | 直接系统销售，但大规模 HVM 仍偏远期期权 | 早期系统成本、安装和生态成熟度可能压毛利；长期定价权强 | `€1.5-2.5bn` | `€2.5-4.5bn` | `€4.5-7.0bn` | `€7-9bn+` | 基准只承认已交付/可验收路径；极度乐观只是 NTM 上限 | B/C | 是，折扣纳入 | 已确认系统收入和客户验证；但客户、层数和收入确认节奏仍需折扣 | 小比例进入基准；多客户 HVM 移入乐观/极度乐观 |
+| DUV / Non-EUV | 2026Q1 non-EUV `>€2.1bn`；2025 DUV 系统 `€12.0bn`；管理层称 non-EUV 需求上修 | 直接系统销售 | 毛利好但低于 EUV/IBM；中国/成熟节点和价格竞争影响较大 | `€7.0-8.5bn` | `€8.5-11.0bn` | `€11-13bn` | `€13-15bn` | 基准较年初预期上修，但仍受出口管制和客户排产限制 | A/B | 是 | 已披露系统销售、管理层需求表述、客户成熟/先进节点需求 | NTM 第二大系统收入池；中国和 AP 机会不得重复计算 |
+| Installed Base Management | 2025 IBM `€8.193bn`；2026Q1 `€2.488bn`；Q2 指引内含约 `€2.5bn` IBM | 直接服务、升级和 field options | 高毛利、高现金质量、与 installed base 和稼动率绑定 | `€9.0-10.0bn` | `€10.0-11.8bn` | `€12-14bn` | `€14.5-16bn` | 基准符合 Q1/Q2 run-rate；乐观要求客户普遍用升级替代新机等待 | A | 是 | 已披露服务/field option 销售和管理层指引 | NTM 利润质量最强业务；现金流需看预付款和库存周期 |
+| Metrology & Inspection / computational lithography | 2025 M&I 约 `€0.825bn`；Q1 系统收入约 2%；Brion/软件未完全单独披露 | 直接工具/软件，部分与系统服务绑定 | 软件和高端量测毛利较好，但规模小；产品 margin 无单独披露 | `€0.8-1.0bn` | `€1.0-1.4bn` | `€1.4-2.0bn` | `€2.0bn+` | 基准小幅增长；乐观需客户良率/High-NA/GAA 订单验证 | A/C | 是，小比例 | 已披露小规模收入、行业良率需求、客户路线图 | 进入基准但不能用 process control 行业 TAM 直接外推 |
+| XT:260 / advanced packaging lithography | 2025Q3 首台发货，独立收入未披露 | 直接系统销售，但与 DUV/Non-EUV 重合 | 早期业务，客户认证和竞争对手多；利润属性暂无法可靠量化 | `€0` | `€0.1-0.3bn`（含在 Non-EUV） | `€0.3-0.7bn` | `€0.8-1.5bn` | 基准只代表已知小量验证，不代表独立新增收入池 | C/D | 否，除非作为 Non-EUV 小额组成 | 产品发货和先进封装需求明确，但客户和收入确认节奏未量化 | 不独立进入公司基准；作为乐观和附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步可收入化基数出发，判断每个重要产品在 NTM 给 ASML 贡献的收入和利润质量。产品级利润不是 ASML 披露分部利润，本表为研究估算；若无法可靠量化，明确写出原因。汇总公司收入时去除 M&I/XT:260 与 Non-EUV 的披露重叠。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Low-NA EUV | 悲观产品 | `€14-16bn` | 高但低于预期；研究估算经营利润池约 `€4.5-5.6bn` | 持平到下行 | 低于当前产能和订单预期 | 需求仍在，但客户验收和交付慢 | 保留悲观 | optics/source/stage、客户 cleanroom、site acceptance |
+| Low-NA EUV | 基准产品 | `€16.5-20.5bn` | 高；估算经营利润池约 `€5.8-7.6bn` | 持平到小幅上行 | 符合当前指引、backlog 和 60/80 台路径 | Q1 EUV 收入、2025 backlog、Low-NA output plan | 保留 | 产能和验收节奏，而非终端叙事 |
+| Low-NA EUV | 乐观产品 | `€20-24bn` | 高；估算经营利润池约 `€7.5-9.3bn` | 上行 | 高于当前预期 | 客户 pull-in、先进逻辑/DRAM EUV 同步拉动 | 保留乐观 | 需要连续订单和交付验证 |
+| Low-NA EUV | 极度乐观产品 | `€25-29bn` | 很高；估算经营利润池约 `€9.8-11.8bn` | 明显上行 | 远高于当前 NTM 预期 | 90-110+ 台能力被客户需求和预付款验证 | 保留 | 极度依赖供应链、安装队伍、客户 fab readiness；只代表上限 |
+| High-NA EUV | 悲观产品 | `€1.5-2.5bn` | 低到中；早期成本可能吞噬部分利润 | 下行 | 低于市场乐观叙事 | 已有客户验证但 HVM 延后 | 保留悲观 | cost-of-ownership、mask/resist/pellicle、半场曝光生态 |
+| High-NA EUV | 基准产品 | `€2.5-4.5bn` | 中；估算经营利润池约 `€0.6-1.3bn` | 持平到小幅上行 | 符合“早期验证+少量收入确认” | EXE 产品、已确认系统收入、客户 product wafer 测试 | 保留 | 客户不统一采用，TSMC 等可能延后；基准需折扣纳入 |
+| High-NA EUV | 乐观产品 | `€4.5-7.0bn` | 中高；估算经营利润池约 `€1.3-2.5bn` | 上行 | 高于当前基准 | Intel/存储/先进逻辑客户扩大验证并转订单 | 保留乐观 | 需要明确客户、层数、验收和收入确认 |
+| High-NA EUV | 极度乐观产品 | `€7-9bn+` | 高；估算经营利润池约 `€2.5-3.7bn` | 明显上行 | 只代表 NTM 上限 | 多客户 HVM design-in 提前 | 保留 | 任一核心客户延后即下移；只代表上限 |
+| DUV / Non-EUV | 悲观产品 | `€7.0-8.5bn` | 中高；估算经营利润池约 `€2.0-2.8bn` | 下行 | 低于 Q1 后上修预期 | 中国/export control 或 mature-node push-out | 保留悲观 | 出口许可、价格竞争、成熟节点利用率 |
+| DUV / Non-EUV | 基准产品 | `€8.5-11.0bn` | 中高；估算经营利润池约 `€2.9-3.9bn` | 持平 | 符合当前预期 | ASML 称 immersion slow start 已反转，non-EUV 需求增加 | 保留 | 中国需求不可简单外推，AP 与 M&I 不重复计入 |
+| DUV / Non-EUV | 乐观产品 | `€11-13bn` | 中高；估算经营利润池约 `€4.0-5.0bn` | 小幅上行 | 高于当前预期 | EUV 短缺、先进节点非 EUV 层和区域化共振 | 保留乐观 | Nikon/Canon 价格、客户验收 |
+| DUV / Non-EUV | 极度乐观产品 | `€13-15bn` | 高；估算经营利润池约 `€5.0-6.3bn` | 上行 | 远高于当前基准 | DUV 多重曝光和成熟节点扩产同时上修 | 保留 | 出口管制可能直接限制收入确认；只代表上限 |
+| Installed Base Management | 悲观产品 | `€9.0-10.0bn` | 高；估算经营利润池约 `€3.5-4.3bn` | 持平到下行 | 低于 Q1/Q2 run-rate | 客户降低升级预算或 utilization 下行 | 保留悲观 | 客户利用率和预算周期 |
+| Installed Base Management | 基准产品 | `€10.0-11.8bn` | 很高；估算经营利润池约 `€4.2-5.4bn` | 上行 | 符合当前预期 | Q1 IBM `€2.488bn`、Q2 指引内含约 `€2.5bn` | 保留 | 需防止把一次性升级外推为长期 run-rate |
+| Installed Base Management | 乐观产品 | `€12-14bn` | 很高；估算经营利润池约 `€5.5-7.0bn` | 明显上行 | 高于当前预期 | 客户普遍购买 PEP/source/overlay/uptime 升级 | 保留乐观 | 如果新机交付改善，升级紧迫性下降 |
+| Installed Base Management | 极度乐观产品 | `€14.5-16bn` | 极高；估算经营利润池约 `€7.0-8.5bn` | 明显上行 | 只代表上限 | field option 成为短期增产核心手段 | 保留 | 供应/工程师/客户停机窗口 |
+| Metrology & Inspection / computational lithography | 悲观产品 | `€0.8-1.0bn` | 无法可靠量化；方向为中等 | 下行 | 低于复杂节点需求 | 客户推迟非主设备采购 | 保留悲观 | 小业务披露不足 |
+| Metrology & Inspection / computational lithography | 基准产品 | `€1.0-1.4bn` | 无法可靠量化；估算经营利润池约 `€0.35-0.6bn` | 上行 | 符合当前预期 | N2/GAA/HBM4 良率和 overlay 要求 | 保留 | 与 Non-EUV 口径重合 |
+| Metrology & Inspection / computational lithography | 乐观产品 | `€1.4-2.0bn` | 无法可靠量化；估算经营利润池约 `€0.6-1.0bn` | 明显上行 | 高于当前预期 | e-beam/holistic lithography attach 提升 | 保留乐观 | 需要订单和客户节点验证 |
+| Metrology & Inspection / computational lithography | 极度乐观产品 | `€2.0bn+` | 无法可靠量化；利润方向高 | 上行 | 上限 | process control 成为 High-NA/GAA/HBM4 主瓶颈 | 保留 | 低基数，不能主导公司收入；只代表上限 |
+| XT:260 / advanced packaging lithography | 悲观产品 | `€0` | 无法可靠量化 | 无贡献 | 低于主题预期 | 客户只做试点 | 保留悲观 | 竞争者多、客户认证慢 |
+| XT:260 / advanced packaging lithography | 基准产品 | `€0.1-0.3bn`，含在 Non-EUV | 无法可靠量化；可能低到中 | 小幅贡献 | 符合小基数路径 | 2025Q3 首台发货 | 移入附录 | 独立披露缺失；不独立加总 |
+| XT:260 / advanced packaging lithography | 乐观产品 | `€0.3-0.7bn` | 无法可靠量化；方向改善 | 上行 | 高于当前基准 | CoWoS/RDL/interposer 客户采用 | 保留乐观 | 不能把 advanced packaging TAM 直接当 ASML 收入 |
+| XT:260 / advanced packaging lithography | 极度乐观产品 | `€0.8-1.5bn` | 无法可靠量化；取决于利用率和 ASP | 上行但不确定 | 上限 | AP lithography 标准化采购 | 仅作跟踪 | SUSS/EVG/Canon/Nikon/TEL/USHIO/Onto 替代 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为 ASML NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。不讨论市场定价。合成时去除 M&I、XT:260 与 Non-EUV 的披露重叠；不把 SK hynix、TSMC、AI capex 或 SEMI WFE 总额直接当 ASML 收入；不把 2030 长期模型提前作为 NTM 基准。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `€35-38bn` | 约 `+7%` 至 `+16%` vs 2025 | 低于 2026 指引中枢和当前订单/run-rate；增长仍为正但低于已定价路径 | `49.5-51.0%` | `30-33%` | EBITDA 未披露且无法可靠量化；净利润估 `€8.8-10.8bn` | 正但弱于 2025，库存和交付延迟占用现金 | 中 | EUV/DUV site acceptance、出口管制扩大、High-NA 早期成本、客户 push-out |
+| 基准公司 | `€39.5-43.0bn` | 约 `+21%` 至 `+32%` vs 2025 | 接近 2026 指引正常兑现并叠加 2027Q1 Low-NA/IBM run-rate；符合当前可见路径 | `51-53%` | `34-36%` | EBITDA 未披露且无法可靠量化；净利润估 `€11.2-13.2bn` | 明显为正，但可能因 inventory/WIP 和客户验收节奏波动 | 中高 | Low-NA 60/80 台路径、IBM 升级持续性、客户 cleanroom 与交付节奏 |
+| 乐观公司 | `€43.5-48.0bn` | 约 `+33%` 至 `+47%` vs 2025 | 高于当前预期；需不是单一 High-NA 或 XT:260 小基数造成 | `53-55%` | `36-39%` | EBITDA 未披露且无法可靠量化；净利润估 `€13.5-16.5bn` | 强正向，若预付款和服务 mix 上升则现金转换改善 | 中 | 客户 pull-in、DUV 同步增长、IBM 高毛利 mix、High-NA 成本不拖累 |
+| 极度乐观公司 | `€49-54bn` | 约 `+50%` 至 `+65%` vs 2025 | 显著高于当前预期；需要需求、ASML 捕获、利润质量和执行质量同时突破 | `55-57%` | `40-43%` | EBITDA 未披露且无法可靠量化；净利润估 `€17-20bn` | 很强，但取决于预付款、库存周转和安装验收；若产能扩张过急，FCF 可能滞后 | 低到中 | 90-110+ Low-NA 年化需求、High-NA 多客户 HVM、field option 爆发、供应链和安装能力 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。正向证据只提升它实际影响的层级；反证只限制它实际影响的环节。同一个风险不重复惩罚：例如出口管制主要影响 DUV/中国收入和收入确认，不再同时重复压低 EUV、IBM、公司利润和现金流；HBM/CoWoS 瓶颈主要影响第一步需求节奏，不把同一风险在第二至四步重复扣减。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2025 年末 backlog `€38.797bn` 与 2025Q4 net bookings `€13.158bn` | 收入基数、公司汇总 | 支撑 2026-2027 系统收入可见度，尤其 EUV | 间接支撑高端系统 mix | backlogged orders 仍需交付、安装和验收 | 基准保留；乐观需后续订单继续验证 |
+| 2026Q1 上调 FY2026 指引至 `€36-40bn` | 公司收入、利润率 | 将当前预期锚上移；悲观必须低于新指引逻辑 | 毛利率 `51-53%` 是基准 GM 约束 | 管理层称指引已容纳出口管制讨论潜在结果 | 基准保留；悲观只作为低于指引路径 |
+| Low-NA EUV output：2026 至少 60 台、2027 至少 80 台 | 产品贡献、执行可信度 | 直接决定 Low-NA EUV NTM 上限 | 高 ASP 支撑毛利，但安装成本和 mix 影响短期 | 需要供应链、客户 fab readiness 和 site acceptance | 基准保留；乐观保留；极度乐观需额外证据 |
+| High-NA EUV 早期验证 | 收入基数、产品贡献 | 小比例进入基准，大规模放量不进入基准 | 早期成本可能压利润；长期毛利可高 | 客户 HVM insertion 时间不一致 | 基准折扣纳入；多客户 HVM 上移乐观 |
+| DUV 需求从“持平”上修为“增长” | 产品需求、收入基数 | 提高 Non-EUV 基准，但出口管制限制上限 | 受 China mix、Nikon/Canon 竞争和产品 mix 影响 | 许可和客户验收是收入确认风险 | 基准保留；出口风险只在 DUV 层处理 |
+| Installed Base Management `€2.488bn` Q1 run-rate | 利润率、现金流 | 服务/升级收入进入基准 | 高毛利 mix 支撑 GM/OPM | 现金质量好，但升级需客户停机窗口和工程师 | 基准保留；乐观利润需 IBM mix 继续上行 |
+| SEMI Q1 2026 设备 billings 和 300mm spending | 第一步需求 | 支撑外部需求池，但不能直接当 ASML 收入 | 稀缺设备毛利有支撑 | 行业景气不解决 ASML 交付瓶颈 | 只提升需求可信度，不上移收入基数 |
+| AI/HBM/先进逻辑客户需求 | 第一步需求、第三步捕获 | 支撑 EUV/DUV/IBM/M&I 需求 | 若高端 mix 上升则支撑利润率 | 若 HBM/CoWoS 过紧，设备订单仍可能先行但后续 push-out | 需求层保留；不在公司层重复惩罚 |
+| 客户 cleanroom、site acceptance、安装队伍 | 收入确认、执行 | 可能把订单延后到 NTM 以后 | 延迟安装降低短期 operating leverage | 增加库存/WIP 和验收周期 | 悲观保留；基准需正常执行 |
+| 出口管制 | DUV/中国收入、收入确认 | 限制中国高端 DUV/部分服务和备件 | 可能改变区域 mix | 许可不确定性影响订单转收入 | 只在 DUV/收入确认层处理，不重复压低 EUV/IBM |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入低于当前指引和订单节奏，主要来自交付、出口、验收或客户 push-out | backlog 大、Q1 指引上修、客户需求强，限制悲观幅度 | 出口管制、site acceptance、High-NA 早期成本、客户 cleanroom 延后 | 保留 | 悲观公司 `€35-38bn`，不是主情景 | 中 | 出口管制只在 DUV/中国和收入确认处理；不重复压低全部 EUV/IBM |
+| 基准 | 2026 指引正常兑现，2027Q1 Low-NA/IBM run-rate 高于 2026Q1 | A/B 证据强：Q1收入、Q2/FY指引、backlog、Low-NA output、IBM run-rate | High-NA 和 XT:260 不能大比例进入基准；客户验收仍需假设 | 保留 | 最可能情景，收入 `€39.5-43.0bn` | 中高 | HBM/CoWoS 瓶颈只限制需求节奏，不重复扣减收入基数和利润率 |
+| 乐观 | 需求、订单、DUV、IBM 和 Low-NA 产能利用均高于当前预期 | SEMI 设备 billings 创高、AI/HBM/先进逻辑需求强、ASML 客户上调短中期需求 | 需要明确“谁买、买什么、何时确认”；不能只用行业景气替代 ASML 收入 | 保留 | 乐观公司 `€43.5-48.0bn` | 中 | 行业 beta 不重复当作公司 alpha；必须有 ASML 订单/交付证据 |
+| 极度乐观 | Low-NA 年化 90-110+、High-NA 多客户 HVM、IBM 爆发和 DUV 上修同时成立 | ASML 长期产能和客户需求有上行线索，EUV/IBM 定价权强 | 任一核心环节缺证据即只能作为上限；XT:260/High-NA 不能单独支撑公司极度乐观 | 保留 | 极度乐观上限 `€49-54bn` | 低到中 | 不把远期期权、2030 模型或单一客户订单重复加总到 NTM |
+
+## 8. 结论
+
+- 最可能情景：基准，靠近基准区间上沿但尚未上移为乐观。理由是 ASML 已有 A/B 级证据支撑：2026Q1 实际收入、上调后的 FY2026 指引、2025 年末 backlog、Low-NA EUV 60/80 台产能路径和 IBM run-rate。当前最合理的 NTM 经营判断是收入 `€39.5-43.0bn`、毛利率 `51-53%`、净利润 `€11.2-13.2bn`。
+- 乐观情景成立条件：2026Q2/Q3 收入接近或高于指引上沿；毛利率持续在 `52%+`；Low-NA 交付和验收按 2027 至少 80 台路径爬坡；DUV/non-EUV 确认增长而不是只停留在需求表述；IBM 维持 `€2.5bn/季` 以上 run-rate 并显示高毛利 mix；客户订单措辞继续强。
+- 极度乐观情景成立条件：客户需求和预付款证明 Low-NA 年化 `90-110+` 台仍不够；High-NA 不只是研发工具，而在至少两个核心客户形成 HVM 插入路径；DUV、IBM、M&I 同时上修；供应链和安装队伍没有把订单推到 NTM 之外。任何一项缺失，极度乐观只能保留为上限。
+- 悲观情景触发条件：Q2/Q3 毛利率跌破 `51%` 且不是一次性 mix；出口管制扩大导致中国 DUV/服务确认显著低于管理层已容纳的范围；Low-NA/DUV site acceptance 连续延后；客户 capex 或 HBM/CoWoS/Rubin/ASIC 需求下修导致订单措辞转弱。
+- 后续跟踪数据：2026Q2/Q3 ASML revenue/GM/IBM；Low-NA EUV output 和 2027 order coverage；quarterly net bookings 和 EUV bookings；DUV/China revenue mix；High-NA 客户 product wafer 和 HVM insertion；SEMI equipment billings；TSMC/Samsung/Intel/SK hynix/Micron capex 和 advanced node/HBM 产能；customer advances、inventory 和 FCF。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：
+  - ASML 2026Q1：2026-04-15 发布，报告使用 `€8.767bn` 收入、`53.0%` 毛利率、`€2.757bn` 净利润、IBM `€2.488bn`、Q2 指引和 FY2026 指引。
+  - ASML 2025Q4/FY2025：2026-01-28 发布，报告使用 FY2025 `€32.667bn` 收入、`52.8%` 毛利率、`€9.609bn` 净利润、Q4 net bookings `€13.158bn`、2025 年末 backlog `€38.797bn`。
+  - SEMI 设备行业：2026-06-04 Q1 2026 billings；2026-04-01 300mm Fab Outlook。
+  - 本地资料：`公司调研/晶圆制造_前道设备/ASML_ASML_Holding_NV_公司调研_2026-06-11.md` 与 `行业调研/晶圆制造_设备_材料_测试/` 下 2026-06-11 行业报告。
+- 主要收入、订单、指引和利润率来源：
+  - ASML Q1 2026 financial results: https://www.asml.com/en/news/press-releases/2026/q1-2026-financial-results
+  - ASML Q1 2026 results page and package: https://www.asml.com/en/investors/financial-results/q1-2026
+  - ASML Q1 2026 video transcript: https://ourbrand.asml.com/asset/844a0685-bbac-42f3-8f68-5f2453a03a27/ASML-Transcript-video-Q1-2026.pdf
+  - ASML Q4/FY2025 financial results: https://www.asml.com/en/news/press-releases/2026/q4-2025-financial-results
+  - ASML 2025 annual report page: https://www.asml.com/en/investors/annual-report
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 只作为当前预期锚：`€36-40bn` 收入、`51-53%` 毛利率。
+  - FY2027 只使用 Low-NA EUV 至少 80 台 output 能力作为 NTM Q1 run-rate 的补充，不把 2027 全年直接替代 NTM。
+  - 2030 长期模型只作远期背景：ASML Investor Day 2024 提供 `€44-60bn` annual revenue 和 `56-60%` gross margin opportunity，不进入 NTM 基准。来源：https://www.asml.com/en/news/press-releases/2024/asml-investor-day-2024
+  - High-NA 和 advanced packaging lithography 是 2027-2029 弹性，不作为 2026-2027 NTM 基准主收入。
+- 主要行业和产品来源：
+  - ASML EUV lithography systems product page: https://www.asml.com/en/products/euv-lithography-systems
+  - ASML TWINSCAN EXE:5200B product page: https://www.asml.com/en/products/euv-lithography-systems/twinscan-exe-5200b
+  - SEMI Q1 2026 equipment billings: https://www.semi.org/en/semi-press-release/semi-reports-global-semiconductor-equipment-billings-increased-14-percent-year-over-year-in-q1-2026
+  - SEMI 300mm Fab Outlook 2026/2027: https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027
+  - SK hynix EUV order secondary confirmation from regulatory-filing reports: https://www.morningstar.com/news/dow-jones/202603241694/sk-hynix-to-buy-8-billion-of-asml-euv-equipment
+  - 本地行业资料：
+    - `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`
+    - `行业调研/晶圆制造_设备_材料_测试/行业调研_存储前道制造设备_2026-06-11.md`
+    - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-06-11.md`
+    - `行业调研/晶圆制造_设备_材料_测试/行业调研_高端光罩与先进封装掩模_2026-06-11.md`
+
+补充说明：本报告的产品级利润贡献为研究估算，非 ASML 披露分部利润；对缺少产品级 margin、EBITDA 或独立收入披露的项目，使用“无法可靠量化”并保守处理。报告未使用金融市场价格、估值倍数、目标价或投资评级作为经营价值传导证据。

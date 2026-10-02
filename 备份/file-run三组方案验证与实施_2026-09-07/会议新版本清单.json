@@ -1,0 +1,46 @@
+[
+  {
+    "conference": "DAC",
+    "version": "2026-09-07",
+    "prompt_file": "基本面/行业调研/研究方法/会议/版本/2026-09-07/DAC_研究方案.md",
+    "common_source": "基本面/行业调研/研究方法/会议/版本/2026-09-07/会议通用研究方案.md",
+    "common_sha256": "72414ed9c8c200774ab60933fc774ad60c6fdef04c11689e46ca109114a839a4",
+    "sha256": "5a6054da78200e6aa6e06a63a43a80fffb03703639c5ac7fc1a54b06ec09b411",
+    "expected_output_dir": "基本面/行业调研/产业背景/顶级会议信息",
+    "status": "方案更新_未运行",
+    "composition": "通用正文完整嵌入，并增加本会议研究重点；无需隐式模板继承"
+  },
+  {
+    "conference": "FMS",
+    "version": "2026-09-07",
+    "prompt_file": "基本面/行业调研/研究方法/会议/版本/2026-09-07/FMS_研究方案.md",
+    "common_source": "基本面/行业调研/研究方法/会议/版本/2026-09-07/会议通用研究方案.md",
+    "common_sha256": "72414ed9c8c200774ab60933fc774ad60c6fdef04c11689e46ca109114a839a4",
+    "sha256": "2c32e98247b573c56ceafc6c4944971b53a4e601bf9b839269fefd646bef24fd",
+    "expected_output_dir": "基本面/行业调研/产业背景/顶级会议信息",
+    "status": "方案更新_未运行",
+    "composition": "通用正文完整嵌入，并增加本会议研究重点；无需隐式模板继承"
+  },
+  {
+    "conference": "RSS",
+    "version": "2026-09-07",
+    "prompt_file": "基本面/行业调研/研究方法/会议/版本/2026-09-07/RSS_研究方案.md",
+    "common_source": "基本面/行业调研/研究方法/会议/版本/2026-09-07/会议通用研究方案.md",
+    "common_sha256": "72414ed9c8c200774ab60933fc774ad60c6fdef04c11689e46ca109114a839a4",
+    "sha256": "b7af3b357f7f6542c4b840926b5732901e0a9b069414414844d1dbfe37fba7b4",
+    "expected_output_dir": "基本面/行业调研/产业背景/顶级会议信息",
+    "status": "方案更新_未运行",
+    "composition": "通用正文完整嵌入，并增加本会议研究重点；无需隐式模板继承"
+  },
+  {
+    "conference": "Farnborough",
+    "version": "2026-09-07",
+    "prompt_file": "基本面/行业调研/研究方法/会议/版本/2026-09-07/Farnborough_研究方案.md",
+    "common_source": "基本面/行业调研/研究方法/会议/版本/2026-09-07/会议通用研究方案.md",
+    "common_sha256": "72414ed9c8c200774ab60933fc774ad60c6fdef04c11689e46ca109114a839a4",
+    "sha256": "255cfdae2152470c22132c08309116bf416cf660b7ac65669cc8a12d5d19c9b6",
+    "expected_output_dir": "基本面/行业调研/产业背景/顶级会议信息",
+    "status": "方案更新_未运行",
+    "composition": "通用正文完整嵌入，并增加本会议研究重点；无需隐式模板继承"
+  }
+]

@@ -1,0 +1,571 @@
+# 公司：ASMIY — ASM International N.V.（ASM International）
+
+> 调研日期：2026-07-31；最新公司财务截止 2026-06-30，最新股价快照为 2026-07-31。  
+> 证券识别：公司主板代码为 Euronext Amsterdam `ASM`；`ASMIY` 是美国 OTCQX 的 1:1 ADR。它不是 ASML，也不是 ASMPT；ASM 仍持有约 25% 的 ASMPT 股权，但本文分析的是 ASM International 的前道晶圆设备经营业务。  
+> 货币口径：公司财报为欧元；涉及美元的统一换算采用 ECB 2026-07-27 参考汇率 `€1=$1.1389`。若无特别说明，季度数字为百万欧元。  
+> 证据标记：`公司披露`=财报、产品页或管理层材料；`行业映射`=客户/行业扩产，并不等于 ASM 客户或订单确认；`模型估算`=由公司总量、分部排序、制程容量和供应链信息约束的区间，不能当成公司披露。评分均为 1–5，5 代表最高/最强/最紧张。
+
+## 结论先行
+
+ASM International 是全球最纯粹的“先进制程材料沉积”设备公司之一，核心不是光刻，也不是整条晶圆厂，而是把原子级薄膜、界面和外延层做进晶体管、互连、DRAM 与先进封装。其最重要的经济护城河是单片 ALD（Atomic Layer Deposition，原子层沉积）：公司称 2024 年全球单片 ALD 市场约 30 亿美元，ASM 份额超过 55%，并预计 2030 年市场达到 51–61 亿美元。[公司 Q2 2026 演示][Q2P-2026]
+
+投资判断可以压缩成六点：
+
+1. **AI 是间接但高强度的设备需求。** ASM 不向数据中心销售硬件；它向代工厂、逻辑厂、DRAM/HBM 厂销售 ALD、Epi、PECVD/CVD 等设备。AI 对 ASM 的拉动来自 2nm/1.4nm GAA、背面供电/新互连材料、HBM4/4E 与 4F² DRAM、TSV/混合键合等工艺复杂度。本文估算 2026 Q2 的 AI 数据中心可归因收入约占总收入 **44%–58%**，但公司没有披露该口径。
+2. **2026 年发生了盈利和需求斜率的上修。** Q2 收入首次超过 10 亿欧元，报表同比增长 20%、固定汇率增长 24%；ALD 销售创纪录，Q3 指引为 `€1.10bn±5%`，H2 固定汇率收入预计比 H1 高 20%以上。按数学关系，2026 全年固定汇率收入至少约 `€4.10bn`，比 2025 年 `€3.17bn` 高约 29%，实际欧元报表仍受美元贬值影响。[Q2-2026]
+3. **最大增量是 GAA ALD/Epi，而不是传统设备。** 每新增 10 万片/月产能，公司估计从 3nm FinFET 转向 2nm GAA 会增加约 **4 亿美元** ASM 可服务 ALD/Epi 市场；2nm 转向 1.4nm 再增加 **4.5–5.0 亿美元**。这是工艺层数和材料变化带来的结构性“设备强度”，不是一次性价格上涨。[Q2P-2026]
+4. **HBM 是第二条高斜率曲线。** 公司在 HBM 相关先进 DRAM 的 ALD dipole/work-function、Epi 与 TSV liner 等层获得新胜项，2026 Q2 内存销售环比上升，最大部分来自 HBM DRAM。公司估计传统 6F² DRAM 转向 4F²，每 10 万片/月增加 **4.0–4.5 亿美元** ASM 可服务市场，但大规模贡献更偏 2028，未来一年主要还是 HBM4/4E、先进 DRAM 节点与新层渗透。[Q3-2025][Q2-2026]
+5. **财务风险低，估值风险高。** 2026-06-30 现金 `€1.18bn`，流动比率 2.17 倍，基本无传统银行借款，权益/资产 72.5%；但 2026-07-31 主板市值已经 `€38.63bn`，P/S 11.48 倍，数据商 forward P/E 分歧约 28–36 倍。市场已经预支相当一部分 2027 超预期。
+6. **最关键的反证不是“AI 不增长”，而是增量层被竞争对手拿走。** Applied Materials 已公开 Spectral Mo ALD、Trillium GAA 金属栅 ALD 等方案；Lam Striker、TEL 空间/批式 ALD、Kokusai 批式 ALD 也在争夺相同层。ASM 的份额优势很强，但新材料、新节点和新客户都需要重新做 process-of-record（POR），不能把历史份额机械外推。
+
+基准判断：**ASM 是高质量、高毛利、净现金的 AI 前道设备“材料工程杠杆”，但当前价格要求 2027 收入至少达到管理层已上修的 `>€4.6bn`，并要求 1.4nm、HBM 与服务共同兑现。基本面健康程度高，安全边际主要取决于订单兑现和估值，而非偿债能力。**
+
+## 1. 整体业务、产业链定位与投资人认知
+
+### 1.1 公司到底卖什么
+
+ASM 设计、制造并服务晶圆前道设备，主要让原子级薄膜或单晶层在晶圆上生长。客户使用这些设备制造逻辑晶体管、先进互连、DRAM/HBM、功率/模拟器件和部分先进封装结构。公司的设备位于以下价值链：
+
+`AI 芯片/内存需求 → 芯片设计与云厂商 → 逻辑/DRAM/晶圆代工资本开支 → 制程层数、材料和良率要求 → ASM ALD/Epi/CVD 设备 → 晶圆产出 → 封装/HBM/服务器`
+
+| 业务 | 主要产品/平台 | 典型工艺位置 | 2025–2026 状态 | AI 相关性 |
+|---|---|---|---|---|
+| 单片 ALD | XP4 Pulsar、XP4 EmerALD；XP8 Synergis、DCM/QCM/JQCM、Magma、Tenza | high-k/metal gate、work-function、dipole、spacer/liner、Mo 等金属/介质薄膜 | 2025 年占设备收入一半以上；2026 Q2 销售创纪录；全球份额 >55% | **最高**：GAA、先进互连、HBM DRAM 都增加 ALD 层数 |
+| 硅 Epi 与表面预处理 | Intrepid ES/ESA；Previum V3/NEXT/VP | GAA nanosheet source/drain、沟道/应变工程、表面清洁 | 2025 年第二大产品线但收入大致持平；2026 年先进逻辑和 DRAM 新客户/新层推动份额增长 | **很高**：GAA 的结构和界面要求提升外延强度 |
+| PECVD/单片 CVD | XP8 DCM PECVD；正在客户认证的单片 CVD | SiCN/SiN/SiO、混合键合介质、先进存储/封装膜层 | PECVD 已称在逻辑与存储全球认证；CVD 仍处于 memory/AP 客户认证 | **中高、低基数**：混合键合和 HBM/封装可带来可选性 |
+| 垂直炉/批式沉积 | SONORA 300mm、A400 DUO 200mm | 氧化、扩散、LPCVD/ALD 等成熟批处理 | 2025 年双位数下降，竞争重、AI 直接增量低 | 低至中；特定 DRAM 层仍有价值 |
+| SiC/特色 Epi | PE1O6A、PE1O8、PE2O8；旧 Epsilon 2000 | 200mm/特色功率与模拟 | 2025 年 SiC Epi 明显下降 | 低；不是本轮 AI 核心 |
+| 先进封装/CMP | ALD TSV liner、XP8 PECVD/CVD；Axus Capstone/Aquarius 200mm CMP | TSV 隔离/阻挡层、混合键合、200mm CMP | 2025 年被列为新战略重点；当前规模极小、认证和客户扩展中 | 中高潜力，但 ASM 不是键合机或 300mm CMP 龙头 |
+| 备件与服务 | outcome-based service、预防维护、干法清洁/表面工程、PM 自动化 | 已装机台利用率、产能和良率 | 2025 年固定汇率增长 18%，outcome-based 占服务 25%；2026 Q2 固定汇率同比 +34% | 高质量“后周期”收入，随先进节点装机和利用率扩张 |
+
+来源：[ASM ALD 产品页][ALD]、[Epi 产品页][EPI]、[PECVD 产品页][PECVD]、[垂直炉产品页][VF]、[服务产品页][SERVICE]、[2025 年报][AR2025]、[Q2 2026][Q2-2026]。
+
+### 1.2 在产业链中的位置
+
+- **上游**：超高纯前驱体和气体、阀门/流量控制、真空泵、RF/plasma、加热与温控、石英/陶瓷/耐腐蚀腔体材料、机器人、控制器和检测件。ALD/ALE 2026 会议议程特别把 MoCl5 输送、前驱体阀门和量产稳定性列为工程问题，说明新材料的瓶颈常在“化学品—输送—腔体—量产重复性”整条链，而非单一反应配方。[ALD/ALE 2026][ALD2026]
+- **同层设备**：Applied Materials、Lam Research、Tokyo Electron、Kokusai Electric，以及 Wonik IPS、Jusung、Piotech、NAURA 等。ASM 不覆盖光刻、刻蚀全栈或量测全栈，因此客户会把 ASM 工艺模块嵌入多供应商晶圆厂。
+- **下游**：先进逻辑/代工、IDM、DRAM/HBM 厂。公司不公开客户名；任何 TSMC、Samsung、SK hynix、Micron 或 Intel 项目只能作为制程需求映射，不能写成 ASM 已确认订单。
+- **经济位置**：设备成本占终端 AI 系统成本很小，但制程失败会损失整片高价值晶圆。因而客户更关心良率、均匀性、颗粒、工艺窗口、吞吐和 uptime，而不是单台最低价；这使通过 POR 的供应商具备溢价和较高替换成本。
+
+### 1.3 投资人心中的公司
+
+ASM 常被视为“先进制程材料工程的 picks-and-shovels”：规模小于 ASML、Applied Materials、Lam、TEL，但对 ALD 的纯度更高、先进节点设备强度弹性更大。其典型投资标签是：
+
+- **质量标签**：单片 ALD 份额 >55%、合并毛利率约 52%、低负债、净现金、研发强度高。
+- **成长标签**：GAA、Mo/新金属、HBM/4F²、先进封装和 outcome-based service；不依赖晶圆出货量单一变量，而依赖每片晶圆工艺复杂度。
+- **风险标签**：客户集中、订单节奏跳动、美元/欧元换算、成熟中国业务与出口限制、单层 POR 丢失、AI 资本开支周期和高估值。
+- **与 ASML 的区别**：ASML 是受限于 EUV 光刻的系统级垄断；ASM 是多个材料层上的领先供应商，护城河强但不是全公司无替代的绝对垄断。
+
+### 1.4 最近三年的重大变动、转型与收购
+
+| 时间 | 变化 | 战略意义 | 量化信息 |
+|---|---|---|---|
+| 2024-05 | Hichem M’Saad 接任 CEO | 从产品/技术与运营出身的高管接棒，战略更聚焦 ALD、Epi、材料创新和先进节点执行 | 2024-05-13 生效。[CEO 交接][CEO] |
+| 2024–2027 | 美国 Scottsdale 扩张 | 将研发、设计、试制制造和客户协作集中在美国，支撑先进逻辑和新材料 | 最多 5 年投入约 `€300m`，约 20,000 平方米；公司最新称主要设施预计 2027 年初完成。[Scottsdale][SCOTTSDALE] |
+| 2025-09 | Investor Day 把先进封装列为新战略重点 | 从晶圆前道 ALD/Epi 向 TSV liner、混合键合介质、单片 CVD 等相邻工艺延伸 | 2030 收入目标 `>€5.7bn`，2024–2030 CAGR 至少 12%，毛利率 47%–51%、营业率 28%–32%。[Investor Day][ID2025] |
+| 2025-12 | 收购 Axus Technology | 补入 200mm CMP 与晶圆减薄/平坦化能力，为 compound semiconductor 和 advanced packaging 提供小型期权 | 对价公允价值 `€101.8m`（现金 `€83.1m`、或有对价 `€18.7m`；最高 earn-out $35m）；Axus 2025 pro-forma 收入仅 `€2.5m`、67 名员工，短期不构成利润主线。[2025 年报][AR2025] |
+| 2025–2026 | 韩国 Hwaseong 中心投产、全球产能爬坡 | 更靠近韩国存储客户，增加制造、研发和洁净室能力 | 投资约 `$100m`，7,400 平方米、两座洁净室。[Hwaseong][HWASEONG] |
+| 2025–2026 | Mo ALD、area-selective deposition 进入 2nm HVM；1.4nm 初始收入提前 | 从“设备平台”进一步转向材料/层级 POR，扩大每 10 万片/月的可服务市场 | 2nm→1.4nm 的 ALD/Epi SAM 增量 `+$450–500m/100k WSPM`；1.4nm 首批有意义收入预计 2026 H2。[Q4-2025][Q2-2026] |
+| 2026-07 | 管理层把 2027 收入预期上修到旧区间上端以上 | 旧目标 `€3.7–4.6bn` 已被强订单、客户可见性和供给扩张打破 | 现为 2027 收入 **高于 `€4.6bn`**；不是完整新上限。[Q2-2026] |
+
+过去三年的实质不是大规模并购，而是三条转型同时发生：`成熟/通用沉积 → GAA 和新材料层`、`单一先进逻辑 → 逻辑+HBM+封装`、`卖设备 → outcome-based 生命周期服务`。Axus 是低基数补丁，不能与 ALD 主业等量齐观。
+
+## 2. 今日股价、估值、增长和资产负债表
+
+### 2.1 2026-07-31 市场快照
+
+| 指标 | 最新值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 主板股价 | **€830.80** | 2026-07-31 11:55 CET，Euronext `ASM` 数据快照 | 最可靠的价格锚。[市场统计][STATS] |
+| ASMIY ADR | **$914.88** | 2026-07-31 OTC 报价快照；1 ADR=1 普通股 | 同日按 ECB 汇率的主板理论值约 `$946.2`，OTC 时点/流动性可造成折价，不应拿单笔 OTC 成交做精准估值。[ADR 条款][CITIADR][ADR forward P/E][GURUPF] |
+| 市值 | **€38.63bn / 约 $44.0bn** | 2026-07-31；美元按 `1.1389` 换算 | 对应约 48.98m 股。[STATS][ECB] |
+| TTM 收入 | **€3.364bn / $3.831bn** | 2025 Q3–2026 Q2，自财报相加 | Q2 单季年化已经到 `€4.012bn`，TTM 尚未反映 H2 指引斜率。 |
+| P/E（GAAP） | **36.06x** | 数据商 2026-07-31 | 与按市值/TTM GAAP 净利计算的 35.96x 一致；但 GAAP 净利含 Q3 2025 对 ASMPT 减值的 `€181m` 非现金转回。[STATS][Q3-2025] |
+| P/E（调整后 TTM） | **约 42.2x** | 本文：`€38.63bn / €914.7m` 调整后净利 | 更能反映经营利润，但仍含汇兑和联营公司波动。 |
+| Forward P/E | **27.99x（主板数据商）/ 36.16x（ASMIY 数据商）** | 2026-07-31；不同分析师样本和未来年度定义 | 分歧本身说明 2026 Q2 上修后共识正在滚动；本文不挑最低数字单独使用。[STATS][GURUPF] |
+| P/S | **11.48x** | 市值/TTM 收入 | 对设备公司属于高估值，要求未来两年高增长且毛利率不显著回落。[STATS] |
+| 最新季度收入增速 | **+20% 报表 / +24% 固定汇率 YoY** | 2026 Q2 | 设备 +18%/+22%，服务 +29%/+34%。[Q2-2026] |
+| H1 收入增速 | **+11.4% 报表** | H1 2026 `€1.866bn` vs H1 2025 `€1.675bn` | 美元贬值压低欧元报表增速；固定汇率明显更高。 |
+| 毛利率 | **51.9% Q2 / 51.83% TTM** | 2026 Q2；TTM 本文相加 | 接近 2025 Investor Day 47%–51% 长期区间上方，主要受产品/客户组合支撑。 |
+| 净利率 | **28.5% Q2；31.93% TTM GAAP；27.19% TTM 调整后** | Q2 及 TTM | TTM GAAP 被 ASMPT `€181m` 转回抬高，调整后口径更可比。 |
+
+### 2.2 资产负债表健康度
+
+截至 2026-06-30：[Q2 2026 财报][Q2-2026]
+
+| 项目 | 数值 | 比率/变化 | 评价 |
+|---|---:|---:|---|
+| 现金及现金等价物 | `€1,180.1m` | 占资产 19.2% | 很强；美元现金也带来汇兑波动。 |
+| 流动资产 / 流动负债 | `€2,996.4m / €1,381.4m` | **流动比率 2.17x** | 短债覆盖充分。 |
+| 速动资产 | `€2,380.6m` | **简化速动比率 1.72x**（仅扣库存；数据商按更严格定义为 1.65x） | 即使库存无法快速变现，流动性仍充足。 |
+| 库存 | `€615.8m` | 占流动资产 20.6% | 扩产和长交期备料的必要结果；若客户延迟，库存减值/周转会先恶化。 |
+| 应收账款 | `€969.8m` | 较高但与 10 亿欧元季度收入匹配 | 需要关注客户验收和回款集中度。 |
+| 合同负债 | `€676.7m` | 较 2025 年末 `€505.8m` **+33.8%** | 预收/待履约义务增强，是强需求佐证，但不等于 backlog。 |
+| 总资产 / 总负债 / 权益 | `€6,134.4m / €1,686.8m / €4,447.6m` | 负债/资产 27.5%；权益/资产 **72.5%** | 资本结构保守。 |
+| 债务与授信 | 无重大传统银行借款；`€150m` 授信未动用 | 净现金显著为正 | 偿债不是核心风险。 |
+| 商誉及其他无形资产 | `€1,384.9m` | 占权益 **31.1%** | LPE、Reno、Axus 等并购形成；若 SiC/Epi 或新产品不达标，存在减值风险。 |
+| H1 经营现金流 / FCF | `€510.1m / €306.5m` | Q2 FCF `€354.6m` | 利润现金化良好；扩建使 capex 上行。 |
+| 营运资本天数 | **50 天** | Q1 为 69 天 | Q2 改善明显，但高增长期仍会消耗库存与应收。 |
+
+**健康度：8.5/10。** 现金、净现金、流动比率和自由现金流均很强，能够自筹 Scottsdale/Hwaseong 与研发扩张。扣分来自三项：客户/应收集中、`€1.38bn` 商誉和无形资产、以及供给扩张期库存/营运资本风险。公司的主要财务风险是周期性利润和估值压缩，不是破产或再融资。
+
+## 3. 最新及最近四次财报：五季度全景
+
+### 3.1 财务、订单与积压
+
+| 财报季度 | 收入；YoY/固定汇率 | 设备收入；YoY/固定汇率 | 备件服务；YoY/固定汇率 | 毛利率 | 调整后营业利润率 | 调整后净利 | Orders / B2B / 期末 backlog | 交期与取消率 |
+|---|---|---|---|---:|---:|---:|---|---|
+| **2026 Q2 最新** | `1,003.1`；`+20%/+24%` | `794.3`；`+18%/+22%` | `208.7`；`+29%/+34%` | 51.9% | 33.0% | `292.9` | **不再披露**；模型 orders `1.15–1.35bn`、B2B `1.15–1.35x`、backlog `1.45–1.84bn` | 公司称交付紧迫、供应链承压；行业渠道正常约 6 个月拉长至最高 12 个月。ASM 特定取消率未披露，模型 1%–3%。 |
+| **2026 Q1** | `862.5`；`+3%/+16%` | `675.7`；`+1%/+14%` | `186.8`；`+9%/+23%` | 53.3% | 33.1% | `246.0` | **不再披露**；模型 orders `0.95–1.15bn`、B2B `1.10–1.33x`、backlog `1.30–1.51bn` | 需求开始明显上斜；模型交期 6–10 个月、取消率 1%–3%。 |
+| **2025 Q4** | `698.3`；`-14%/-7%` | `485.2`；`-22%/-16%` | `213.1`；`+14%/+22%` | 49.8% | 25.1% | `169.6` | `802.8 / 1.15x / 1,246.9` | 逻辑/代工订单反弹，收入受先前低订单与产品组合影响；未披露交期/取消率。 |
+| **2025 Q3** | `800.0`；`+3%/+8%` | `630.6`；`+5%/+10%` | `169.4`；`-3%/+2%` | 51.9% | 30.9% | `206.2` | `636.8 / 0.80x / 1,129.0` | 中国订单回落、先进逻辑订单环比强增但低于原预期；HBM DRAM 订单“稳定且健康”。 |
+| **2025 Q2** | `835.6`；`+18%/+23%` | `673.7`；按后续重分类基准约 `+20%` 报表 | `161.9`；按后续重分类基准约 `+14%` 报表 | 51.8% | 31.5% | `173.0` | `702.5 / 0.84x / 1,294.7` | GAA/HBM 与中国需求强；分业务固定汇率增速和取消率未单列。 |
+
+官方来源：[Q2 2026][Q2-2026]、[Q1 2026][Q1-2026]、[Q4 2025][Q4-2025]、[Q3 2025][Q3-2025]、[Q2 2025][Q2-2025]。2026 年模型从 2025 年末 backlog `€1.2469bn` 出发，使用 `期末 backlog≈期初 backlog+orders−revenue±FX`，并以管理层“H1 orders 强、H2 orders 预期强”和合同负债增长作约束。它不是公司订单披露。
+
+2026 年起停止季度披露 orders/backlog 是透明度下降。公司解释为订单时点波动和更适合年末披露，但投资者必须用合同负债、收入指引、客户 capex、交期、库存和产能利用率交叉验证，不能把本文区间当成点估计。
+
+### 3.2 客户业务拆分、业务增速和 AI 数据中心占比
+
+公司只正式披露 H1 2026 设备客户结构：logic/foundry 77%、memory 15%、power/analog/wafer & other 8%。下表把这组约束、2025 全年 memory=设备收入 16%、各季度业务排序和管理层定性描述反推到季度；因此标记为模型。
+
+| 季度 | Logic/foundry 设备收入 | Memory 设备收入 | P/A/W & other 设备收入 | S&S | 业务环比变化（模型） | AI 数据中心可归因占总收入（模型） |
+|---|---:|---:|---:|---:|---|---:|
+| 2025 Q2 | `≈472`（70% 设备） | `≈135`（20%） | `≈67`（10%） | `162` | 基准季度 | **37%–49%** |
+| 2025 Q3 | `≈467`（74%） | `≈107`（17%） | `≈57`（9%） | `169` | L/F `-1%`；memory `-21%`；other `-15%`；S&S `+5%` | **39%–51%** |
+| 2025 Q4 | `≈364`（75%） | `≈53`（11%） | `≈68`（14%） | `213` | L/F `-22%`；memory `-50%`；other `+20%`；S&S `+26%` | **35%–46%** |
+| 2026 Q1 | `≈524`（77.5%） | `≈95`（14.1%） | `≈57`（8.4%） | `187` | L/F `+44%`；memory `+79%`；other `-16%`；S&S `-12%` | **42%–55%** |
+| 2026 Q2 | `≈608`（76.6%） | `≈125`（15.8%） | `≈61`（7.6%） | `209` | L/F `+16%`；memory `+32%`；other `+7%`；S&S `+12%` | **44%–58%** |
+
+AI 归因公式不是把所有先进逻辑都算成 AI，而是：
+
+- 2026 Q2 logic/foundry 中仅取 55%–70% 为 AI GPU/CPU/agentic-AI 相关先进节点；成熟制程全部排除；
+- memory 中取 60%–80% 为 HBM/AI 相关先进 DRAM；
+- 服务中只取 15%–25% 为相关装机服务；
+- `AI 归因≈(€334–426m)+(€75–100m)+(€31–52m)=€440–578m`，即 Q2 总收入的 44%–58%。
+
+该方法比“把 77% logic/foundry 全部算 AI”更保守，也更符合公司所称 H1 同时包含成熟和先进 logic/foundry。
+
+### 3.3 各业务利润率：公司不披露，以下仅为约束估算
+
+| 关键业务 | 估算毛利率 | 估算依据 | 可信度 |
+|---|---:|---|---|
+| 先进逻辑 GAA ALD/Mo/选择性沉积 | **54%–60%** | 单片 ALD >55% 份额、record ALD mix、公司合并毛利约 52%；新层 POR 有溢价 | 中 |
+| 先进逻辑 Epi/Pre-clean | **48%–55%** | 第二大产品线，份额增长但竞争强于 ALD；LPE/Reno PPA 和平台投入压低初期利润 | 中低 |
+| HBM/先进 DRAM ALD+Epi+CVD | **51%–58%** | 关键层、高良率敏感度和 HBM 紧迫性；但大客户采购议价强 | 中低 |
+| 先进封装沉积与 Axus CMP | **30%–48%** | 低规模、认证期、Axus 收入极小；PECVD/ALD成熟平台可拉高增量毛利 | 低 |
+| 备件与服务 | **50%–65%** | 高价值备件、原厂工艺/IP、outcome-based 服务渗透；公司未披露分部毛利 | 中低 |
+| 成熟中国/传统炉管/SiC 等 | **38%–50%** | 竞争、出口限制和周期性更高；客户/产品组合会造成较大波动 | 低 |
+
+这些区间用于比较经济性，不能相加推导公司利润。实际季度毛利还受客户组合、美元、保修、验收、产能利用率和供应商成本影响。
+
+## 4. 2026 年最新指引、业务占比与产品交叉验证
+
+### 4.1 Q2 最新指引的数学含义
+
+- Q3 2026 固定汇率收入指引：`€1.10bn ±5%`，即 `€1.045–1.155bn`。
+- H2 2026 固定汇率收入：比 H1 `€1.8656bn` **高 20%以上**，即 H2 `>€2.2387bn`。
+- 因此 2026 全年固定汇率数学下限约 `€4.104bn`；若 Q3 为中点，则 Q4 需要 `>€1.139bn`。按 Q3 指引两端推算，Q4 约需 `>€1.084–1.194bn`。
+- 2027 收入预期：**高于旧目标上端 `€4.6bn`**。这是管理层基于 H1 订单、H2 预计订单和客户可见性作出的上修，而非本文模型。[Q2-2026]
+- 2026 全年毛利率：管理层仍预计位于 47%–51% 长期目标的上端；Q1/Q2 分别为 53.3%/51.9%，意味着 H2 即使产品组合正常化，全年仍有较厚缓冲。
+
+### 4.2 H1 2026 官方业务占比
+
+| 业务 | H1 收入 | 占设备收入 | 占总收入 | H1 报表增速/本文估算 | 重点程度 |
+|---|---:|---:|---:|---|---|
+| Logic/foundry 设备 | `€1,131.8m` | **77%** | **60.7%** | 模型同比 **+15%–20%**；公司称先进和成熟部分均有贡献 | **最高**：2nm GAA、3–7nm AI/CPU、1.4nm pilot |
+| Memory 设备 | `€220.5m` | **15%** | **11.8%** | 模型同比约 **-5%至+5%**，但 Q2 环比 +32%，H2 后置 | **快速上升**：HBM DRAM 为 Q2 memory 最大部分 |
+| P/A/W & other 设备 | `€117.6m` | **8%** | **6.3%** | 模型同比 **-10%至-20%** | 非核心；SiC/传统业务弱 |
+| Spares & Services | `€395.5m` | 不适用 | **21.2%** | 报表同比 **+18.7%**；Q1/Q2 固定汇率同比 +23%/+34% | 高质量复利，outcome-based 渗透 |
+| 总计 | `€1,865.6m` | — | 100% | 报表同比 **+11.4%** | H2 还将加速 |
+
+### 4.3 重点产品、型号、消息与商业含义
+
+| 重点业务 | 产品/型号 | 已知官方进展 | 交叉验证与利润/规模推断 |
+|---|---|---|---|
+| GAA high-k/metal gate 与新金属 ALD | XP4 Pulsar、XP4 EmerALD；XP8 Synergis、DCM/QCM/JQCM、Magma、Tenza；Mo ALD 与 area-selective deposition 工艺 | Mo ALD 和 area-selective deposition 已在 2nm HVM；另一批 Mo ALD 在 1.4nm 获胜；2026 H2 开始有意义的 1.4nm 收入 | 2nm/A14 每片晶圆设备强度上升、客户规划提前 2–3 年；ALD/ALE 会议同时出现 Mo 前驱体输送和选择性沉积议题，说明方向主流但工程难度高。估算毛利 54%–60%，当前为最大利润池。[Q4-2025][Q2-2026][ALD2026] |
+| GAA Epi 与 pre-clean | Intrepid ES/ESA；Previum V3/NEXT/VP | 公司称 leading-edge Epi 份额增长；GAA 和 DRAM 都获得新 Epi 层/客户选择 | 3nm FinFET→2nm GAA 的 `+$400m/100k WSPM` SAM 是 ALD+Epi 合计；Epi 不是 ALD 的附属品，而是 nanosheet/源漏/界面的良率工具。估算毛利 48%–55%。 |
+| HBM/先进 DRAM ALD、Epi、CVD | XP8 Magma/JQCM/DCM/QCM/Synergis；Intrepid/Previum；新单片 CVD | Q3 2025 披露 HBM DRAM 的 ALD dipole/work-function 和 Epi wins；Q2 2026 又被另一家 DRAM 客户选择 Epi，单片 CVD 在 memory/AP 认证 | Samsung HBM4 已商业出货，Micron HBM4 已 HVM，SK hynix 扩建 M15X；均为行业需求映射、不是 ASM 客户确认。估算当前 HBM/先进 DRAM贡献 `$0.35–0.50bn` 年化，H2 斜率高。[SAMSUNG-HBM4][MICRON-HBM4][SKHYNIX-M15X] |
+| TSV liner、混合键合介质与单片 CVD | ALD TSV liner；XP8 DCM PECVD（SiCN/SiO/应力可调 SiN）；单片 CVD | TSV liner 有近期 wins；PECVD 产品页称逻辑/存储全球认证；CVD 尚在认证 | 混合键合是潜在主流，但 ASM 并非 bonder 龙头；从已认证膜层平台延伸的增量毛利可高，整体业务因低规模和认证费用当前仅 30%–48%。 |
+| Axus CMP | Capstone/Aquarius 200mm CMP | 2025-12 并表；Axus 2025 pro-forma 收入 `€2.5m` | 它是 200mm/compound/More-than-Moore 和封装小期权，不应被包装成 300mm AI CMP 龙头。收购对 2026 收入影响接近舍入误差。 |
+| Outcome-based S&S | 备件、预防维护、dry clean/surface engineering、PM automation | 2025 占 S&S 25%，2024 为 20%；目标 2030 超过 50% | 服务把客户 uptime/良率结果与合同绑定，降低周期性、提高客户锁定；2026 Q2 S&S 固定汇率 +34%，是当前最确定的高增长业务之一。[SERVICE][Q2P-2026] |
+
+### 4.4 明确跳过或降权的业务/产品
+
+以下产品没有从公司范围中删除，但不进入 AI 高增长主模型：
+
+1. **A400 DUO 200mm 垂直炉**：成熟 200mm 氧化/扩散/LPCVD，AI 直接含量低。
+2. **Epsilon 2000 150/200mm 旧 Epi**：有存量服务价值，不是先进 GAA 增量主力。
+3. **PE1O6A/PE1O8/PE2O8 SiC Epi**：2025 年收入明显下降，主要受电动车/功率周期影响。
+4. **传统垂直炉和通用成熟沉积**：2025 年双位数下滑，竞争和价格敏感度高；SONORA 在特定 DRAM 层仍有价值，但缺乏本轮明确高增证据。
+5. **Power/analog/wafer & other**：H1 2026 仅占设备 8%，整体疲弱。
+6. **成熟中国 logic/foundry**：当前收入和毛利贡献不小，Q1/Q2 仍强，但它是周期/出口政策驱动的现金流而不是 AI 结构性增长。2025 Q3 管理层曾预计 2026 中国收入同比双位数下降，实际下降节奏可能被推迟。
+
+保留的小业务包括 TSV liner、SiCN 混合键合 PECVD、单片 CVD 和 Axus CMP，因为它们当前很小却可能在先进封装形成第二增长曲线；本文不会因规模小而遗漏，也不会因概念好而高估。
+
+## 5. 每个高增长/关键业务的当前贡献、增速与战略评分
+
+下表使用“终端工艺×产品”归因，尽量避免把同一台设备同时算入 logic 与 memory。收入是 2026 Q2 运行率或 TTM 的美元区间，不是 ASM 披露的产品收入。
+
+| 关键业务 | 当前收入贡献（美元） | 当前增速 | 估算毛利率 | AI 栈重要性 | 时间紧急性 | 供需紧张 | 垄断/护城河 | 溢价能力 | 核心依据 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| 先进逻辑 GAA ALD/Mo/ASD | **$1.25–1.45bn 年化** | **+30%–45% YoY 模型** | 54%–60% | 5.0 | 5.0 | 4.5 | 5.0 | 4.5 | Q2 ALD record；单片 ALD >55% 份额；2nm/1.4nm SAM 明确增加 |
+| 先进逻辑 GAA Epi/Pre-clean | **$0.55–0.70bn 年化** | **+15%–30%** | 48%–55% | 5.0 | 4.5 | 4.0 | 4.0 | 4.0 | Epi 是第二大线；先进逻辑份额和新层上升，竞争较 ALD 更强 |
+| HBM/先进 DRAM ALD+Epi+CVD | **$0.35–0.50bn 年化** | **+20%–40%** | 51%–58% | 5.0 | 5.0 | 4.5 | 4.0 | 4.0 | Q2 memory 环比 +32% 模型，最大部分来自 HBM；多层新 wins |
+| 先进封装 ALD/PECVD/CVD + Axus CMP | **$0.02–0.08bn 年化** | **>50%，低基数** | 30%–48% | 3.5 | 3.5 | 3.0 | 2.5 | 2.5 | TSV liner wins、PECVD qualified、CVD qualifying；Axus 规模极小 |
+| S&S/outcome-based | **$0.886bn TTM；Q2 年化 $0.951bn** | Q2 **+29% 报表/+34% 固定汇率** | 50%–65% | 4.0 | 4.0 | 3.5 | 4.5 | 4.0 | 装机、利用率、专有 recipe/备件与 uptime 绑定；现金流可见性最好 |
+
+模型校验：Q2 设备收入 `€794.3m` 中，本文估算 ALD 占 58%–63%（季度 `$525–570m`）、Epi 占 22%–27%（季度 `$199–244m`），其余为炉管、PECVD/CVD、特色 Epi/CMP 等；与“ALD 超过设备一半、Epi 第二大产品线”的年报描述一致。上表只取先进逻辑/HBM/封装部分，因此余下的成熟 logic、非 HBM memory、SiC、炉管等没有消失，也不能把各区间上端直接相加。
+
+## 6. 一年后的业务收入：基准、乐观、极度乐观
+
+预测窗口为截至约 2027-07 的未来十二个月/当期年化能力；美元按固定 `€1=$1.1389`，不预测汇率。管理层只给出 2027 收入高于 `€4.6bn`，其余均为本文模型。
+
+### 6.1 公司总收入三情景
+
+| 情景 | 一年后总收入 | 对当前 TTM `€3.364bn/$3.831bn` 增速 | 核心假设 | 主要反证 |
+|---|---:|---:|---|---|
+| **基准** | **€4.6–5.0bn / $5.24–5.69bn** | **+37%–49%** | 2nm 多客户扩产、1.4nm pilot 按计划；HBM4 与先进 DRAM 后置上量；产能扩张兑现；中国下降由先进逻辑/存储覆盖 | H2 2026 仅勉强达指引、订单低于模型、1.4nm 延迟、GM 回落到 <49% |
+| **乐观** | **€5.2–5.8bn / $5.92–6.61bn** | **+55%–73%** | 2nm/1.4nm 同时加速，Mo/ASD/Epi 多层 POR；HBM DRAM 客户扩产提前；S&S outcome-based 加速；交期维持 9–12 个月 | 客户把部分层 dual-source，供应链无法将订单转为验收收入 |
+| **极度乐观** | **€6.2–7.0bn / $7.06–7.97bn** | **+84%–108%** | AI fab capex 接近上行情景，1.4nm pilot 转量产早于常规节奏，4F² 部分设备提前，先进封装 CVD/PECVD 多客户转 POR；ASM 保持 ALD 份额且 Epi 增份额 | 超出公司公开产能和历史爬坡速度，需要订单、供应商、洁净室、客户验收全部无明显延误；概率低 |
+
+### 6.2 每个关键业务三情景
+
+评分列依次为：`AI 重要性 / 时间紧急性 / 供需紧张 / 垄断与护城河 / 溢价能力`。
+
+| 关键业务 | 情景 | 一年后收入贡献（美元） | 对当前归因收入增速 | 五项评分 | 必须出现的业务证据 |
+|---|---|---:|---:|---|---|
+| GAA ALD/Mo/ASD | 基准 | **$1.65–1.90bn** | **+25%–40%** | `5/5/4/5/4.5` | 2nm HVM 工具持续交付；1.4nm H2 2026 初始收入顺利；ALD 份额维持 >55% |
+| 同上 | 乐观 | **$2.00–2.35bn** | **+50%–75%** | `5/5/4.5/5/5` | Mo/ASD 在多家领先客户新增 POR；2nm 产能上修、工具交期 9–12 月 |
+| 同上 | 极度乐观 | **$2.30–2.70bn** | **+70%–100%** | `5/5/5/5/5` | 1.4nm pilot 快速转量产，客户预订跨年度产能；ASM 新层份额高于当前 ALD 总体份额 |
+| GAA Epi/Pre-clean | 基准 | **$0.70–0.85bn** | **+15%–35%** | `5/4.5/3.5/4/4` | 2nm Epi 份额增加，Intrepid/Previum 产能按计划；2025 年“平”转为增长 |
+| 同上 | 乐观 | **$0.90–1.10bn** | **+45%–75%** | `5/5/4/4.5/4.5` | 1.4nm 和 DRAM 新 Epi 层均通过客户验证，竞争对手未夺回份额 |
+| 同上 | 极度乐观 | **$1.00–1.25bn** | **+60%–100%** | `5/5/4.5/4.5/5` | 每片 GAA 外延步骤/腔体需求超过公司 SAM 基准，多客户同步扩产 |
+| HBM/先进 DRAM ALD+Epi+CVD | 基准 | **$0.60–0.80bn** | **+45%–85%** | `5/5/4/4/4` | HBM4/4E 与先进 DRAM H2 后置上量；另一 DRAM 客户 Epi 选择转为收入 |
+| 同上 | 乐观 | **$0.90–1.20bn** | **+110%–180%** | `5/5/4.5/4.5/4.5` | Samsung/Micron/SK hynix 行业扩产均按计划；ASM 赢得更多 dipole/work-function/CVD 层 |
+| 同上 | 极度乐观 | **$1.10–1.40bn** | **+160%–230%** | `5/5/5/4.5/5` | 4F² 相关设备采购部分提前到 2027，单片 CVD 从认证转多客户 POR；内存工具连续 >12 月满载 |
+| 先进封装沉积/CMP | 基准 | **$0.08–0.15bn** | **+60%–200%** | `3.5/3.5/2.5/2.5/2.5` | TSV liner wins 转收入；PECVD 认证转量产；Axus 保持小规模 |
+| 同上 | 乐观 | **$0.20–0.35bn** | **+300%–600%** | `4/4/3.5/3/3` | 混合键合 SiCN/CVD 获多个 POR，ASM 在前道客户关系中交叉销售 |
+| 同上 | 极度乐观 | **$0.35–0.55bn** | **+600%–1,000%** | `4.5/4.5/4.5/3.5/3.5` | 先进封装成为实质第三设备支柱；这要求 300mm 项目突破，不能仅靠 Axus 200mm CMP |
+| S&S/outcome-based | 基准 | **$1.05–1.15bn** | **+15%–25%** | `4/4/3/4.5/4` | 装机增长、fab 利用率高；outcome-based 占比继续提高 |
+| 同上 | 乐观 | **$1.20–1.35bn** | **+30%–45%** | `4.5/4.5/3.5/4.5/4.5` | 服务 attach rate 和每台工具收入上升，先进节点 uptime 合同扩大 |
+| 同上 | 极度乐观 | **$1.30–1.50bn** | **+40%–65%** | `5/5/4/4.5/5` | outcome-based 提前接近 2030 目标轨迹，客户接受更高价值定价且无大规模自维保替代 |
+
+上表的产品归因区间不能简单与总收入上端相加：同一客户项目的 ALD/Epi 设备与安装/服务在合同和验收期上可能跨期，且“HBM/先进 DRAM”内部也包含 ALD/Epi。总公司情景由季度产能和验收约束，优先级高于产品区间相加结果。
+
+## 7. BOM、每 MW / rack / GPU / optical port 含量与价格传导
+
+### 7.1 先区分两种“BOM”
+
+1. **ASM 设备物理 BOM**：腔体、真空/气体/前驱体输送、温控/plasma、机器人、电子与软件等真实进入一台晶圆设备。
+2. **AI 系统设备含量**：ASM 设备不在 GPU 服务器里；“每 GPU/每 rack/MW”只能把晶圆厂的一次性工具投入按其生命周期产出的合格芯片分摊。它是经济内容量，不是服务器采购清单。
+
+### 7.2 单台设备的物理 BOM 与毛利桥
+
+ASM 不披露逐型号采购成本。以设备售价=100，结合项目内前道设备行业调研和 ASM 约 52% 合并毛利率，合理的归一化 BOM 为：
+
+| 成本模块 | 售价占比 | ALD/Epi 中的真实内容 | 主要价格传导 |
+|---|---:|---|---|
+| 核心精密子系统 | 18%–30% | 真空泵/阀、MFC、前驱体 vaporizer/输送、RF/plasma、加热与极速温控、压力控制 | 长交期和定制化最高；关键阀/前驱体兼容失败会阻断整机出货 |
+| 电子、机器人与控制 | 8%–14% | wafer handler、load lock、运动控制、传感器、PLC/计算和安全系统 | 半导体/控制件短缺传导到交期；软件和 recipe 的价值不完全体现在硬件 BOM |
+| 高纯气液与输送件 | 5%–8% | 前驱体容器、管路、过滤、purge、gas box | MoCl5 等新化学品的稳定输送可成为技术瓶颈，供应商切换需要材料兼容验证 |
+| 腔体材料与耗材 | 5%–9% | 高纯金属/陶瓷/石英、耐腐蚀涂层、showerhead、密封件 | 颗粒、污染和寿命直接影响客户良率；认证合格件具溢价 |
+| 组装、校准与工厂测试 | 4%–7% | 模块集成、process matching、重复性测试 | 产能扩张不仅是厂房，还需要熟练工程师和测试工位 |
+| 运输、现场安装、验收与保修准备 | 3%–7% | 洁净运输、hook-up、SAT、客户 buyoff | 收入确认通常受交付/验收时点影响，季度间可大幅波动 |
+| 工厂间接费用 | 3%–6% | 洁净室、质量、供应链、设施折旧 | 高利用率摊薄固定成本，低利用率反向拖累毛利 |
+| **合计 COGS** | **42%–58%** | — | 对应行业毛利 42%–58%；ASM 当前约 52% 位于高端，体现产品/客户 mix 和工艺 IP |
+
+本地行业依据：[AI 芯片前道设备调研][LOCAL-AIWFE]。ASM 的 recipe、工艺窗口、专利、现场应用工程和 POR 价值属于售价/毛利，不应被误解为硬件件数。
+
+### 7.3 官方 SAM 锚与每 GPU 推导
+
+#### 先进逻辑
+
+公司给出的官方增量：
+
+- `3nm FinFET → 2nm GAA`：每 `100k WSPM` 增加约 `$400m` ASM ALD+Epi SAM；
+- `2nm GAA → 1.4nm GAA`：每 `100k WSPM` 再增加 `$450–500m`。
+
+模型假设 300mm 晶圆、约 800mm² 大型 AI 加速器 die、考虑边缘损失和 70%–85% 良率后每片 45–56 个合格 die；工具按 5 年、`100k×12×5=6m` 片晶圆摊销，生命周期产出约 2.70–3.36 亿颗大 die。因此：
+
+- 3nm→2nm 的**增量** ASM 含量约 `$400m / 270–336m = $1.2–1.5/GPU`；
+- 2nm→1.4nm 的**再增量**约 `$450–500m / 270–336m = $1.3–1.9/GPU`；
+- 加上原有 ALD/Epi 层，本文估算 2nm 大型 AI die 的 ASM 先进逻辑设备总摊销约 **$5–11/GPU**，1.4nm 约 **$7–14/GPU**。
+
+这里的 `$400m/$450–500m` 是 ASM 可服务市场，不是 100% 市占后的收入；实际含量要乘以 ASM 在具体层的赢单率、工具利用率和良率。
+
+#### HBM/先进 DRAM
+
+公司给出的官方增量：`6F² → 4F² DRAM` 每 `100k WSPM` 增加 `$400–450m` ASM SAM。以 36GB 12H HBM4/3E 堆栈、每片 DRAM wafer 约 700–1,100 个合格 core die、12 个 die/stack，则 6m 片晶圆约产 3.5–5.5 亿个 12H stack：
+
+- 4F² **增量**约 `$0.7–1.3/stack`；
+- 288GB GPU 采用 8 个 36GB stack，增量约 **$5.6–10.4/GPU**；
+- 加上既有先进 DRAM ALD/Epi/CVD 层，本文估算总 ASM 设备摊销约 **$8–20/GPU**。
+
+HBM4 的商用、HBM4E 采样与 2027 ramp，以及每颗 GPU 的 192–432GB HBM 容量见项目内 [HBM 行业调研][LOCAL-HBM]。HBM wafer 产出、堆叠良率和 stack 容量差异会使结果显著变化。
+
+### 7.4 每 GPU、rack、MW 和 optical port 的内容量
+
+统一假设：72 颗加速器/rack；IT power 120–140kW/rack，因此每 MW 约 7.1–8.3 racks、514–600 GPUs。不同 NVL、OAM、定制 ASIC 或液冷架构会偏离该假设。
+
+| 关键业务 | 每 GPU 设备摊销 | 每 72-GPU rack | 每 MW（514–600 GPU） | 每 optical port | 置信度/说明 |
+|---|---:|---:|---:|---:|---|
+| GAA ALD/Mo/ASD | **$3–7** | **$216–504** | **$1.5k–4.2k** | **$0 直接物理含量** | 中低；来自官方 SAM 与 ALD/Epi 分拆 |
+| GAA Epi/Pre-clean | **$1.5–4** | **$108–288** | **$0.8k–2.4k** | **$0** | 中低；与 ALD 合计约 $5–11/GPU（2nm） |
+| HBM/先进 DRAM沉积 | **$8–20** | **$576–1,440** | **$4.1k–12.0k** | **$0** | 中低；按 8×36GB stack，节点/stack 高度最敏感 |
+| 先进封装 ALD/PECVD/CVD/CMP | **$1–5 当前；成熟后 $3–10** | **$72–360；成熟后 $216–720** | **$0.5k–3.0k；成熟后 $1.5k–6.0k** | **$0** | 低；ASM 在 TSV liner/介质有机会，但并非 bonder 主供应商 |
+| S&S | 不另加；已嵌入设备生命周期成本 | 不另加 | 不另加 | `$0` | 服务是 fab OPEX/设备 uptime，若再分摊会与设备含量重复计算 |
+| **合计当前经济含量** | **约 $13.5–36/GPU** | **$0.97k–2.59k/rack** | **$6.9k–21.6k/MW** | **$0 直接含量** | 这是前道设备摊销，不是服务器 BOM，也不是 ASM 当期收入 |
+
+“每 optical port”必须为 0 的原因：ASM 不制造光模块、激光器、DSP、交换芯片或连接器。把 GPU/HBM 晶圆设备投入再除以 rack 的光口数可以人为得到一个间接数字，但没有采购、定价或供应链含义，本文拒绝制造伪精度。
+
+### 7.5 完整价格传导链
+
+1. 云厂商/模型算力需求决定 GPU、CPU、ASIC 和 HBM 的三年产能预期；
+2. 代工/DRAM 厂把预期转成 N2/A16/A14、HBM4/4E、DRAM 节点和封装线资本开支；
+3. 器件结构决定新增材料层、每层腔体吞吐和 process-of-record；
+4. `工具需求≈WSPM×每片工艺步骤÷单腔吞吐÷利用率`；新材料、较长 cycle time 或冗余腔体都会提高工具数；
+5. `ASM 收入≈客户 SAM×具体层赢单率×ASP×按期安装验收率`；order/backlog 不等于收入，客户 buyoff 是关键门槛；
+6. 上游阀门、前驱体、真空/温控成本上升先压 COGS，ASM 可凭关键层 POR、良率价值和 50%+ 毛利把部分成本通过 ASP/配置/服务合同传导；
+7. 工具投产后，备件、清洁、recipe 优化、uptime 与 outcome-based 合同形成多年服务收入。
+
+价格传导最容易断在三处：客户 capex 推迟、工具供应商输送/腔体部件短缺、客户验收延期。最不容易被削价的是造成整片晶圆良率风险的关键 ALD/Epi 层；最容易被比价的是成熟炉管、通用 PECVD/CMP 和非专有备件。
+
+## 8. 当前产能、供应链采纳与认证阶段
+
+### 8.1 产能口径
+
+ASM 不披露各产品的台数或名义产能。本文以 Q2 年化收入 `€4.01bn`、Q3 指引年化中点 `€4.4bn`、H2 `>€2.239bn`、planned production increases，以及工厂/供应链爬坡反推：
+
+- **当前可实现公司收入能力约 `$5.0–5.5bn/年`（`€4.4–4.8bn`）**；
+- 其中设备交付/验收能力约 `$4.0–4.4bn`，S&S 约 `$1.0–1.1bn`；
+- 这是“在订单和客户验收存在时可实现的美元收入”，不是工厂固定铭牌产能；研发 pilot、外包模块和客户现场验收工程师都会形成瓶颈。
+
+行业渠道称 2026 年全球头部设备正常约 6 个月交期已拉长至最高约 12 个月，韩国前/后道供应商从 3–4 个月拉长到 6–8 个月、部分超过一年。[设备交期渠道][ETLEAD] 这支持“设备供给紧张”，但不是 ASM 单独交期的确认。
+
+### 8.2 每个关键业务的当前产能与认证
+
+半导体设备没有一个可公开替代客户 POR 的统一“认证证书”。本文的认证阶段按 `研发/样机 → 客户 qualification → selected/win → pilot/POR → HVM` 分类。
+
+| 关键业务 | 当前收入能力（美元/年，模型） | 估算利用/负荷 | 供应链采纳程度 | 当前认证阶段 | 证据和缺口 |
+|---|---:|---:|---|---|---|
+| GAA ALD/Mo/ASD | **$1.5–1.7bn** | **80%–90%** | 单片 ALD 跨领先逻辑客户广泛采用；Mo/ASD 层仍是节点级而非全客户全层统一 | **2nm：HVM/POR；1.4nm：win/pilot，2026 H2 初始收入** | 公司确认 HVM/wins，但不披露客户、工具数、订单额和取消条款 |
+| GAA Epi/Pre-clean | **$0.70–0.85bn** | **75%–85%** | GAA 主流采用，ASM 正在增加 share；不同客户仍可选 Applied/TEL 等 | **2nm：HVM；1.4nm：pilot/qualification** | “share gain”和新层已披露，具体客户覆盖未知 |
+| HBM/先进 DRAM ALD+Epi+CVD | **$0.50–0.65bn** | **70%–85%，H2 上升** | ALD/Epi 已进入 HBM DRAM 层；另一 DRAM 客户选中 Epi | **ALD/Epi：selected/POR/HVM 混合；单片 CVD：qualification** | 公司未给客户名和收入层级；memory H2 back-loaded 是强约束 |
+| AP ALD/PECVD/CVD + CMP | **$0.10–0.15bn** | 工厂能力不紧，**认证/客户需求才是瓶颈** | TSV liner 有 wins；PECVD“globally qualified”；Axus 仅 200mm 小生态 | **PECVD：qualified；TSV ALD：wins/POR；CVD：qualification；Axus：既有小规模量产** | 无 300mm AP 收入规模和客户数披露，最容易被概念高估 |
+| S&S | **$1.0–1.1bn** | **85%–95%** | 原厂备件/recipe/uptime 在装机上自然采纳；outcome-based 2025 占 S&S 25% | **量产服务；合同模式扩张** | 2030 目标 >50%，但当前 attach rate、续约率和分部毛利未披露 |
+
+产能扩张的现实约束：Hwaseong 的制造/R&D 已投入，Scottsdale 主要是研发、设计和 pilot manufacturing，不能把其 `€300m` 投资直接等同于量产设备收入；工具总装还依赖全球供应商、应用工程师和客户现场。公司 Q2 已把原本 `€150–250m` 的扩张年 capex 提示上调，说明管理层在主动买速度，但供给不会瞬间增加。
+
+## 9. 一年后产能、采纳和认证三情景
+
+### 9.1 公司总能力
+
+| 情景 | 一年后收入能力（美元/年） | 相对当前能力 | 工厂/供应链假设 | 采纳与验收假设 |
+|---|---:|---:|---|---|
+| 基准 | **$6.0–6.5bn** | +15%–30% | Hwaseong 稳定、Scottsdale pilot 按期；关键部件交期缓解到 6–9 月 | 2nm/HBM 按既定 POR；1.4nm 仍以 pilot+早期量产为主 |
+| 乐观 | **$6.8–7.5bn** | +30%–50% | 外包模块、洁净室和现场团队快速增员；交期仍 9–12 月但不阻断验收 | 多客户 Mo/Epi/HBM 新层通过认证，需求吸收新增产能 |
+| 极度乐观 | **$7.8–8.8bn** | +50%–75% | 供应商预投、加班/复制线、客户现场无延迟，>95% 负荷仍保持质量 | 1.4nm 与 memory/AP 多层同时转 HVM；这是低概率、强执行情景 |
+
+### 9.2 每个关键业务的未来能力与认证节点
+
+| 关键业务 | 基准：能力；采纳/认证 | 乐观：能力；采纳/认证 | 极度乐观：能力；采纳/认证 |
+|---|---|---|---|
+| GAA ALD/Mo/ASD | **$2.0–2.2bn**；2nm 多线 HVM、1.4nm 早期 POR | **$2.4–2.7bn**；Mo/ASD 多客户多层 POR、1.4nm pilot 扩大 | **$3.0–3.4bn**；1.4nm 提前 HVM、关键配置预订跨年 |
+| GAA Epi/Pre-clean | **$0.9–1.0bn**；2nm 增份额、1.4nm qualification | **$1.15–1.30bn**；新客户/新层变 POR | **$1.5–1.8bn**；多家 1.4nm/HBM 客户同时 HVM |
+| HBM/先进 DRAM | **$0.9–1.1bn**；HBM4 量产、CVD 单客户/少数客户认证 | **$1.3–1.6bn**；HBM4E/DRAM 新层多客户 POR | **$1.8–2.2bn**；部分 4F² 工具提前，CVD 从认证全面量产 |
+| 先进封装/CMP | **$0.2–0.3bn**；TSV liner/PECVD 少数 POR | **$0.45–0.65bn**；混合键合介质多客户采用、Axus 扩展 | **$0.8–1.1bn**；形成 300mm 规模业务；若仍限 200mm 则不可能达到 |
+| S&S | **$1.2–1.3bn**；outcome-based 稳步提高 | **$1.4–1.55bn**；先进节点 attach/续约明显上升 | **$1.65–1.85bn**；合同模式提前接近 2030 渗透轨迹 |
+
+表内各产品能力并非可机械相加的工厂铭牌：一套 XP8 平台可能根据 chamber 配置服务不同工艺，平台总装、腔体和现场工程共享资源。公司总能力表是更严格的上限。
+
+## 10. 订单积压、交期、客户项目与未来一年增速
+
+### 10.1 真实 backlog 与 2026 隐含区间
+
+| 时点 | 期初 backlog | Orders | Revenue | FX | 期末 backlog | 证据等级 |
+|---|---:|---:|---:|---:|---:|---|
+| 2025 Q2 | `1,514.7` | `702.5` | `(835.6)` | `(86.8)` | **1,294.7** | 公司披露 |
+| 2025 Q3 | `1,294.7` | `636.8` | `(800.0)` | `(2.5)` | **1,129.0** | 公司披露 |
+| 2025 Q4 | `1,129.0` | `802.8` | `(698.3)` | `+13.4` | **1,246.9** | 公司披露 |
+| 2026 Q1 | `1,246.9` | **模型 `950–1,150`** | `(862.5)` | 未知 | **模型 `1,300–1,510`** | 低至中；公司停止披露 |
+| 2026 Q2 | 上述区间 | **模型 `1,150–1,350`** | `(1,003.1)` | 未知 | **模型 `1,450–1,840`** | 低至中；受 H1 强订单、合同负债 +33.8%、2027 上修约束 |
+
+H1 2026 order intake 模型合计 `€2.10–2.50bn`，对应 H1 B2B `1.13–1.34x`。若期末 backlog 在 `€1.45–1.84bn`，对最低 H2 收入 `€2.239bn` 的覆盖约 65%–82%；其余可来自服务、短交期配置、H2 新单和期内验收。由于 backlog 定义可能含设备/服务差异且 FX 未知，这只是范围检查。
+
+合同负债增加是预付款/待履约证据，不等于订单额；库存增加是备料/在制品证据，不等于需求；只有三者与收入指引、交期和客户 capex 同向时，才构成较强订单验证。
+
+### 10.2 客户项目和渠道验证：只做需求映射，不冒充客户确认
+
+过去半年没有找到同时满足“能核验来源、明确指向 ASM、给出客户项目名/订单金额/交付窗口”的公开订单泄露。可验证的渠道信息主要是设备全行业交期拉长；公司自己的强证据是 H1 order intake、合同负债、2027 上修和产品层 wins，但客户名与金额被保密。因此本文没有把匿名论坛帖或转述性“小道消息”写入结论；这比用未经证实的客户名单填空更符合尽调要求。
+
+| 行业项目/信号 | 已确认行业事实 | 对 ASM 的可能映射 | 不能推出什么 |
+|---|---|---|---|
+| 先进逻辑/代工 | TSMC 2026 capex `$52–56bn`，70%–80% 用于先进制程；公司称 N2 单位 WSPM capex 显著高于 N3、A14 更高，客户提前 2–3 年规划。[TSMC Q4 transcript][TSMC-TRANSCRIPT] | GAA ALD/Epi SAM、1.4nm pilot、服务装机增长 | **不能**确认 TSMC 是 ASM 某项 win 的客户，也不能给出 ASM 订单金额 |
+| 全球 WFE | SEMI 预计 2026 WFE `$143.9bn`、+23.1%；foundry/logic `$78.0bn`、+18.9%，DRAM `$38.8bn`、+39.0%。[SEMI WFE][SEMI-WFE] | ASM 所在两大市场均高增长，DRAM 斜率更高 | WFE 增长不保证 ASM 份额或收入同比等幅增长 |
+| Samsung HBM4 | 2026-02 已商业出货 HBM4，并计划 H2 HBM4E 样品；公司称 2026 HBM 收入可超过 2025 的 3 倍。[SAMSUNG-HBM4] | HBM DRAM ALD/Epi/CVD、服务需求 | 不能确认 Samsung 使用 ASM 的具体层或台数 |
+| Micron HBM4 | 2026 财季披露 HBM4 已高量产，HBM4E 面向 2027。[MICRON-HBM4] | HBM 设备采购和认证窗口加速 | 不能确认 Q2 ASM 所称“另一 DRAM 客户”就是 Micron |
+| SK hynix | 与 NVIDIA 建立多年技术合作；M15X 长期投资超过 KRW20tn，用于 HBM/DRAM。[SKHYNIX-NVIDIA][SKHYNIX-M15X] | 韩国 Hwaseong 本地支持和先进 DRAM设备强度 | 不能确认订单归属和交付窗口 |
+| 设备交期 | 行业渠道称头部设备从约 6 月延长至最高 12 月，部分供应商超过一年。[ETLEAD] | 支持 H1 orders 强和 planned production increase 的供给紧张叙事 | 不能给 ASM 每个型号的 lead time 或取消率 |
+
+### 10.3 取消率、供需和未来一年公司增速
+
+ASM 没有披露取消率。高端设备订单通常可延期、改配置或重新排期；“取消率低”不能由 backlog 自动推出。本文给出可证伪的三情景：
+
+| 情景 | 交期 | 产能负荷 | 取消/实质延期率 | 一年后总收入增速 | 订单与供给逻辑 |
+|---|---|---:|---:|---:|---|
+| 基准 | **6–9 月**；关键配置可到 9–12 月 | 85%–90% | **1%–3%** | **+37%–49%** | H1 订单区间中部；新增产能基本匹配需求，客户正常重新排期 |
+| 乐观 | **9–12 月** | 90%–95% | **0.5%–1.5%** | **+55%–73%** | 多客户为锁定 2nm/HBM/1.4nm 工具提前下单；供不应求使价格和优先级向 ASM 倾斜 |
+| 极度乐观 | **>12 月**（部分关键配置） | >95% | **<0.5%** | **+84%–108%** | 订单大幅超过当前扩产，供应商预投、客户无取消且验收速度不降；历史上很难长期保持 |
+
+“越乐观越供不应求”不等于“收入无限上升”：当交期过长，供应商、客户 hook-up 和验收反而会使 backlog 增长快于收入。极度乐观情景需要同时证明 orders、backlog、产能和验收，而不是只看需求新闻。
+
+### 10.4 未来四个季度的可监控门槛
+
+1. Q3 2026 报表/固定汇率收入是否进入 `€1.045–1.155bn`；
+2. H2 是否真正 `>€2.239bn`，即 Q4 是否达到约 `€1.08–1.19bn` 的隐含区间；
+3. 2026 年末恢复披露的 backlog/orders 是否支持 2027 `>€4.6bn`，而不是只靠提前确认；
+4. memory 占设备收入是否从 H1 的 15%在 H2 明显上升；
+5. 合同负债是否继续上升且应收/库存天数不恶化；
+6. 毛利率是否仍在长期 47%–51% 区间上端，而不是因供应加急和产品组合跌破 49%；
+7. 1.4nm 初始收入、Mo ALD wins、DRAM Epi 新客户、单片 CVD qualification 是否从定性词变成量产收入；
+8. outcome-based 服务占比是否在 2025 的 25%基础上继续提高。
+
+## 11. 竞争格局、主流技术、替代方案与客户替换成本
+
+### 11.1 分业务竞争矩阵
+
+| 业务 | 主要竞争者/产品 | ASM 优势 | 主流性判断 | 替代方案与风险 | 客户替换成本 |
+|---|---|---|---|---|---|
+| 单片 ALD/GAA | Applied Endura Trillium、Spectral Mo ALD；Lam Striker；TEL NT333/Triase+；Wonik/Jusung/Piotech/NAURA | >55% 单片 ALD份额、广泛材料库、工艺共同开发、XP4/XP8平台和 installed base | **ALD 是 GAA/先进互连主流，确定性高** | 批式/空间 ALD 在高吞吐层降低 CoO；CVD/PVD/选择性刻蚀改变 layer flow；客户 dual-source；本土设备替代 | **高，12–24 月**：recipe、颗粒、均匀性、良率、tool matching 与 POR 都需重做 |
+| Mo/area-selective deposition | Applied Spectral 已称多个领先 logic/foundry 使用，且 selective Mo 对接触电阻有优势；其他厂商也在开发选择性材料 | ASM 已在 2nm HVM并获 1.4nm wins；原子层材料和选择性沉积经验 | **Mo/选择性沉积方向主流概率高，但供应商格局未定** | W/Ru/Co 等互连材料路线、非选择性沉积+刻蚀、AMAT 自有整合平台 | **很高但节点重置**：现有节点替换高，新节点设计时竞争重新开放 |
+| GAA Epi/Pre-clean | Applied Centura/Xtera、TEL；Aixtron/Veeco 在 compound/SiC 更强 | ALD+Epi 联合工艺、Intrepid/Previum、先进逻辑份额上升 | **GAA Epi 为主流** | 竞争者一体化 preclean/Epi、客户二供、器件结构/材料改变 | **中高，9–18 月**：外延缺陷和界面直接影响良率，但竞争者成熟 |
+| HBM/先进 DRAM沉积 | Lam Striker/Halo、AMAT、TEL/Kokusai batch ALD、韩国/中国本地商 | ALD 份额、Epi 新层、HBM dipole/work-function wins | **HBM4/4E 与先进 DRAM确定；4F²大规模时点偏 2028** | batch ALD 更低 CoO；竞争者获下一节点 POR；HBM 堆叠/基础 die 架构变化 | **中高，6–18 月**；节点认证严格，但 memory 大客户有强 dual-source 动机 |
+| 先进封装沉积 | AMAT、Lam、TEL、Kokusai；CMP 为 AMAT/EBARA；bonding 为 BESI/EVG 等 | 前道 ALD chemistry、现有客户关系、TSV liner/SiCN 薄膜、跨售 | **混合键合很可能主流，但 ASM 的份额尚未证明** | PVD/CVD/electrofill layer stack、其他 PECVD/ALD、客户自有整合；Axus 200mm受限 | **中，12–24 月认证**；若仍在研发期，供应商切换成本低于已量产逻辑层 |
+| S&S | OEM 自维保、第三方维修/翻新、客户内部团队 | 专有部件、recipe、软件、安全、保修与 outcome contract | **随 installed base 稳健增长** | 客户自维保、第三方零件、成熟工具翻新；出口管制可能限制服务 | **高**：先进节点原厂服务影响 uptime/良率；成熟机台替换成本较低 |
+
+竞争产品来源：[Applied Spectral Mo ALD][AMAT-MO]、[Applied Trillium/Precision][AMAT-GAA]、[Lam Striker][LAM-STRIKER]、[Lam DRAM 方案][LAM-DRAM]、[TEL NT333][TEL-NT333]、[TEL batch/furnace][TEL-INDY]、[Kokusai ALD/ALE][KOKUSAI]。
+
+### 11.2 新技术是不是未来主流
+
+- **GAA + ALD/Epi：是，确定性最高。** 2nm 已进入 HVM，1.4nm 是下一代扩展。风险不在 GAA 是否存在，而在 ASM 赢多少层、客户投产时点和每层工具数。
+- **Mo ALD 与 area-selective deposition：高概率但非单一赢家。** 线宽变窄要求降低接触/互连电阻和减少刻蚀步骤；Applied 已公开商业方案，ALD/ALE 会议也显示 Mo 前驱体与选择性沉积是行业共同议题。ASM 有先发，但不能称“独家标准”。
+- **HBM4/4E 与先进 DRAM ALD/Epi：是。** HBM 商业出货和多厂扩产已确认；4F² 是更后期的大 SAM 台阶，未来一年不应把全部 `+$400–450m/100k WSPM` 当收入。
+- **混合键合与 TSV liner：方向主流，ASM 份额不确定。** 薄膜/界面重要，但价值链还包括刻蚀、清洗、CMP、bonding、量测；ASM 当前只是其中一段。
+- **Axus 200mm CMP：不是 AI 300mm 主流证据。** 它在 compound/特色和封装有战略价值，若要支持数亿美元 AI 收入，必须出现 300mm 客户/产品扩展的明确披露。
+
+### 11.3 客户为什么难换、又为什么仍会换
+
+客户替换成本由五层组成：
+
+1. **材料/recipe**：前驱体、温度、plasma、purge 和表面条件需要重新开发；
+2. **tool matching**：同厂多腔/多台的一致性必须达到 SPC 和良率要求；
+3. **integrated flow**：一层变化会影响后续刻蚀、清洗、退火、CMP 与电性；
+4. **可靠性/污染**：颗粒、金属污染和膜应力问题可能数月后才出现；
+5. **产能风险**：在 AI 紧缺期停线重新认证的机会成本极高。
+
+因此已经进入 HVM 的关键层替换通常需要 9–24 个月，且先从二供/新 fab 开始。但在新节点设计期，客户会主动重新竞标以避免单一来源、压低 CoO；竞争对手若能减少步骤、提高 throughput 或把多工艺整合到一台平台，替换会发生。ASM 的护城河是“已量产的工艺证据”，不是永不重新竞标。
+
+## 12. 风险、反证与估值结论
+
+### 12.1 核心风险
+
+| 风险 | 当前事实 | 可能影响 | 应监控指标 |
+|---|---|---|---|
+| 估值/预期 | P/S 11.48x；forward P/E 数据商 28–36x | 即使收入增长，若 2027 只略高于 `€4.6bn` 或 GM 正常化，倍数可压缩 | 2027 共识 EPS、order/backlog、GM 与 FCF |
+| 客户集中 | 2025 前十大客户占 72.3%，前五占 53.6%，两家各 >10% | 单一客户节点延迟造成季度断层，议价集中 | 客户排序、segment mix、应收和合同负债 |
+| 中国与出口限制 | 2025 中国占总收入 >30%；成熟业务曾被预计 2026 双位数下降 | 高毛利 mix 消失、订单取消/配置受限、服务受限 | 中国收入、出口规则、成熟 logic orders |
+| 汇率 | >80% 销售以美元计价，报表为欧元 | 美元弱使欧元收入增速显著低于固定汇率，现金产生汇兑 | EUR/USD、reported 与 CC 差额 |
+| 订单透明度 | 2026 起只在年末披露 orders/backlog | 市场无法及时区分真实需求与出货赶工 | 合同负债、库存、capex、客户 capex、年末订单 |
+| 供应/验收 | 管理层称 supply-chain pressure、delivery urgency | backlog 高但收入延迟；加急和低效压毛利 | 交期、库存/应收天数、Q3/Q4 指引兑现 |
+| 技术/份额 | AMAT、Lam、TEL、Kokusai 同时推进新 ALD/材料 | 某个高价值层丢失会比 WFE 总量更重要 | ALD share、Mo/ASD/Epi wins、客户二供 |
+| HBM/4F²时点 | HBM4 已量产，但 4F² 大 SAM 更偏 2028 | 把后期 SAM 提前资本化会高估 2027 | memory share、HBM4E/4F²设备采购时点 |
+| AP 叙事 | Axus 2025 pro-forma 收入仅 `€2.5m` | 若认证迟迟不转 POR，低基数高增没有绝对利润贡献 | CVD qualification、300mm客户、AP 收入披露 |
+| 并购无形资产 | 商誉/无形 `€1.385bn`，占权益 31.1% | SiC/Epi/AP 不达标可减值 | 产品收入、PPA、减值测试 |
+
+### 12.2 投资结论
+
+**业务质量：高。** 单片 ALD 的份额、GAA/HBM 的工艺强度、52% 左右毛利和净现金共同构成稀缺资产。服务增长把纯设备周期性部分平滑，Epi 和先进封装提供第二、第三曲线。
+
+**未来一年最有把握的顺序：**
+
+1. 2nm GAA ALD/Epi 与已进入 HVM 的 Mo/ASD；
+2. S&S 和 outcome-based 服务；
+3. HBM4/先进 DRAM ALD/Epi；
+4. 1.4nm pilot/早期收入；
+5. 单片 CVD、混合键合 PECVD/TSV liner；
+6. Axus CMP。
+
+**估值：昂贵但非脱离基本面。** 以 `€830.80`、`€38.63bn` 市值计，市场已把 2027 超过 `€4.6bn` 的大部分增长计入。基准情景若兑现，公司仍可能通过 2027–2030 的 12%+ CAGR 消化估值；但当前回报对订单/验收节奏十分敏感。乐观情景需要看到 1.4nm、HBM 和记忆体新层从“wins/selected/qualification”连续转成收入；极度乐观情景则要求产能能力跃升到 `$7.8–8.8bn`，不能只靠需求 headline。
+
+**最终判断：** ASM 应被归类为“AI 前道设备中的高质量材料工程龙头”，不是“无竞争的光刻垄断”。资产负债表健康，业务上行证据强，当前最大的风险是估值和市场把未来工艺 SAM 提前当成已实现订单。最具信息量的下一事件不是另一条 AI 新闻，而是 2026 年末恢复披露的 order/backlog、H2 memory mix、1.4nm 收入、单片 CVD 认证和 2027 指引上限。
+
+## 13. 证据边界与来源
+
+### 13.1 研究方法与独立性
+
+- 项目内只读取并引用 `基本面/行业调研/` 下与 AI 前道、先进逻辑、HBM 和先进封装相关的行业资料；未调用其他项目研究目录，也未修改公司索引。
+- 公司未披露的季度客户业务、AI 占比、产品收入/毛利、2026 orders/backlog、取消率、产品产能和 per-GPU 内容量全部明确标为模型。
+- 客户扩产、业内会议和设备交期用于交叉验证技术方向/需求/供给，不用于虚构 ASM 客户名、项目名或订单金额。
+- 网页和财报数据截至 2026-07-31；后续订单、价格和认证可能变化。
+
+### 13.2 项目内行业资料
+
+- [AI 芯片前道制造设备行业调研（2026-07-10）][LOCAL-AIWFE]
+- [存储前道制造设备行业调研（2026-07-10）][LOCAL-MEMORY-WFE]
+- [先进逻辑晶圆代工和封装行业调研（2026-07-10）][LOCAL-LOGIC]
+- [HBM 与高带宽内存行业调研（2026-07-10）][LOCAL-HBM]
+- [先进封装设备与混合键合行业调研（2026-07-10）][LOCAL-AP]
+
+### 13.3 公司、市场、行业与竞争来源
+
+- ASM 官方财报：[2026 Q2][Q2-2026]、[2026 Q2 投资者演示][Q2P-2026]、[2026 Q1][Q1-2026]、[2025 Q4][Q4-2025]、[2025 Q3][Q3-2025]、[2025 Q2][Q2-2025]、[2025 年报][AR2025]、[2025 Investor Day][ID2025]。
+- ASM 产品与扩产：[ALD][ALD]、[Epi][EPI]、[PECVD][PECVD]、[垂直炉][VF]、[服务][SERVICE]、[CEO 交接][CEO]、[Scottsdale][SCOTTSDALE]、[Hwaseong][HWASEONG]。
+- 市场数据：[Euronext ASM 统计][STATS]、[ASMIY forward P/E][GURUPF]、[Citi ADR 条款][CITIADR]、[ECB 汇率][ECB]。
+- 行业/客户：[SEMI WFE][SEMI-WFE]、[SEMI 300mm fab][SEMI-300]、[TSMC Q2 2026][TSMC-Q2]、[TSMC capex/节点 transcript][TSMC-TRANSCRIPT]、[Samsung HBM4][SAMSUNG-HBM4]、[Micron HBM4][MICRON-HBM4]、[SK hynix/NVIDIA][SKHYNIX-NVIDIA]、[SK hynix M15X][SKHYNIX-M15X]、[设备交期渠道][ETLEAD]。
+- 技术会议/竞争：[SEMICON Korea deposition tutorial][SEMICON-KOREA]、[ALD/ALE 2026 program][ALD2026]、[Applied Spectral Mo ALD][AMAT-MO]、[Applied GAA deposition][AMAT-GAA]、[Lam Striker][LAM-STRIKER]、[Lam DRAM][LAM-DRAM]、[TEL NT333][TEL-NT333]、[TEL batch/furnace][TEL-INDY]、[Kokusai ALD/ALE][KOKUSAI]。
+
+[Q2-2026]: https://www.asm.com/downloads/25242322-quarterly-reports/2026-q2-quarterly-report
+[Q2P-2026]: https://www.asm.com/downloads/presentations-other/2026-q2-investor-presentation
+[Q1-2026]: https://www.asm.com/downloads/25242322-quarterly-reports/2026-q1-quarterly-report
+[Q4-2025]: https://www.asm.com/downloads/25242322-quarterly-reports/2025-q4-quarterly-report
+[Q3-2025]: https://www.asm.com/downloads/25242322-quarterly-reports/2025-q3-quarterly-report
+[Q2-2025]: https://www.asm.com/downloads/25242322-quarterly-reports/2025-q2-quarterly-report
+[AR2025]: https://www.asm.com/media/3skhiimk/asm-2025-annual-report.pdf
+[ID2025]: https://www.asm.com/press-releases/3154400
+[ALD]: https://www.asm.com/our-technology-products/ald
+[EPI]: https://www.asm.com/our-technology-products/epitaxy
+[PECVD]: https://www.asm.com/our-technology-products/pecvd
+[VF]: https://www.asm.com/our-technology-products/vertical-furnace
+[SERVICE]: https://www.asm.com/our-technology-products/service-products
+[CEO]: https://www.asm.com/press-releases/benjamin-loh-to-retire-hichem-m-saad-to-succeed-him-as-new-ceo-2827200
+[SCOTTSDALE]: https://www.asm.com/press-releases/asm-announces-300m-expansion-of-us-operations-in-scottsdale-arizona-2791329
+[HWASEONG]: https://www.asm.com/news/asms-grand-opening-of-hwaseong-center-powering-growth-in-korea-and-beyond
+[STATS]: https://stockanalysis.com/quote/ams/ASM/statistics/
+[GURUPF]: https://www.gurufocus.com/term/forward-pe-ratio/ASMIY
+[CITIADR]: https://depositaryreceipts.citi.com/adr/guides/pgm_d.aspx?cusip=N07045102&pageId=15&subpageID=105&typeDisplay=C
+[ECB]: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+[SEMI-WFE]: https://www.semi.org/jp/news-resources/press/20260715
+[SEMI-300]: https://www.semi.org/en/products-services/market-data/300mm-fab-outlook
+[TSMC-Q2]: https://investor.tsmc.com/english/quarterly-results/2026/q2
+[TSMC-TRANSCRIPT]: https://investor.tsmc.com/chinese/encrypt/files/encrypt_file/reports/2026-01/51d09df96cd89ac19d65af39032b038dc2896a24/TSMC%204Q25%20Transcript.pdf
+[SAMSUNG-HBM4]: https://news.samsung.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing
+[MICRON-HBM4]: https://investors.micron.com/node/50671
+[SKHYNIX-NVIDIA]: https://news.skhynix.com/multi-year-tech-partnership-with-nvidia/
+[SKHYNIX-M15X]: https://news.skhynix.com/sk-hynix-to-produce-dram-from-m15x-in-cheongju/
+[ETLEAD]: https://en.etnews.com/20260724200002
+[SEMICON-KOREA]: https://www.semiconkorea.org/ko/conference/wfd/t2-Deposition-Tutorial
+[ALD2026]: https://avssymposium.org/ALD2026/Topics/ProgramBookDownload?topicCode=AM
+[AMAT-MO]: https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-unveils-transistor-and-wiring-innovations
+[AMAT-GAA]: https://www.appliedmaterials.com/kr/ko/newsroom/press-releases/260413-deposition-system-for-logic-chips-ko.html
+[LAM-STRIKER]: https://www.lamresearch.com/product/striker-product-family/
+[LAM-DRAM]: https://www.lamresearch.com/products/our-solutions/dram-2/
+[TEL-NT333]: https://www.tel.com/product/nt333.html
+[TEL-INDY]: https://www.tel.com/product/telindy.html
+[KOKUSAI]: https://www.kokusai-electric.com/en/news/document/2026052500
+
+[LOCAL-AIWFE]: ../../行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-07-10.md
+[LOCAL-MEMORY-WFE]: ../../行业调研/晶圆制造_设备_材料_测试/行业调研_存储前道制造设备_2026-07-10.md
+[LOCAL-LOGIC]: ../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-07-10.md
+[LOCAL-HBM]: ../../行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-07-10.md
+[LOCAL-AP]: ../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-07-10.md

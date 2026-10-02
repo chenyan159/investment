@@ -1,0 +1,1413 @@
+{
+  "scope": "Rounded report arithmetic, equity/share bridges, selected independent valuations. Does not establish forecast truth or reproduce every quarterly DCF.",
+  "reports": {
+    "GNRC": [
+      {
+        "line": 435,
+        "scenario": "悲观",
+        "horizon": "6个月／2027-03-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          66.54,
+          87.63
+        ],
+        "returns": [
+          -64.5,
+          -53.2
+        ],
+        "return_error_pp": [
+          0.01641313050440374,
+          -0.026581265012005417
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 436,
+        "scenario": "悲观",
+        "horizon": "12个月／2027-09-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          64.0,
+          85.75
+        ],
+        "returns": [
+          -65.8,
+          -54.2
+        ],
+        "return_error_pp": [
+          -0.03933813717641499,
+          -0.030050707232454954
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 437,
+        "scenario": "悲观",
+        "horizon": "36个月／2029-09-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          54.25,
+          66.45
+        ],
+        "returns": [
+          -71.0,
+          -64.5
+        ],
+        "return_error_pp": [
+          -0.04350146784092601,
+          -0.03162530024019361
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 438,
+        "scenario": "基准",
+        "horizon": "6个月／2027-03-07",
+        "rating": "中性 / 等待",
+        "prices": [
+          181.92,
+          229.03
+        ],
+        "returns": [
+          -2.9,
+          22.2
+        ],
+        "return_error_pp": [
+          0.0016813450760517767,
+          0.04713103816387232
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 439,
+        "scenario": "基准",
+        "horizon": "12个月／2027-09-07",
+        "rating": "谨慎建议投资",
+        "prices": [
+          200.21,
+          250.99
+        ],
+        "returns": [
+          6.9,
+          34.0
+        ],
+        "return_error_pp": [
+          -0.03584200693887407,
+          -0.03149186015478023
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 440,
+        "scenario": "基准",
+        "horizon": "36个月／2029-09-07",
+        "rating": "中性 / 等待",
+        "prices": [
+          187.6,
+          243.01
+        ],
+        "returns": [
+          0.1,
+          29.7
+        ],
+        "return_error_pp": [
+          0.0334400854016593,
+          0.009100613824390535
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 441,
+        "scenario": "乐观",
+        "horizon": "6个月／2027-03-07",
+        "rating": "建议投资",
+        "prices": [
+          256.13,
+          312.86
+        ],
+        "returns": [
+          36.7,
+          67.0
+        ],
+        "return_error_pp": [
+          0.012036295703225619,
+          -0.007739524953279897
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 442,
+        "scenario": "乐观",
+        "horizon": "12个月／2027-09-07",
+        "rating": "建议投资",
+        "prices": [
+          295.04,
+          359.32
+        ],
+        "returns": [
+          57.5,
+          91.8
+        ],
+        "return_error_pp": [
+          -0.019348812383213954,
+          -0.00923405390977905
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 443,
+        "scenario": "乐观",
+        "horizon": "36个月／2029-09-07",
+        "rating": "建议投资",
+        "prices": [
+          321.67,
+          400.66
+        ],
+        "returns": [
+          71.7,
+          113.9
+        ],
+        "return_error_pp": [
+          -0.005310915398965221,
+          -0.0435815318921442
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 444,
+        "scenario": "突破",
+        "horizon": "6个月／2027-03-07",
+        "rating": "建议投资",
+        "prices": [
+          274.22,
+          347.14
+        ],
+        "returns": [
+          46.4,
+          85.3
+        ],
+        "return_error_pp": [
+          -0.03223912463301559,
+          -0.010435014678407128
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 445,
+        "scenario": "突破",
+        "horizon": "12个月／2027-09-07",
+        "rating": "建议投资",
+        "prices": [
+          341.55,
+          427.41
+        ],
+        "returns": [
+          82.3,
+          128.1
+        ],
+        "return_error_pp": [
+          0.0058446757406045435,
+          0.03450760608487258
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 446,
+        "scenario": "突破",
+        "horizon": "36个月／2029-09-07",
+        "rating": "建议投资",
+        "prices": [
+          377.19,
+          509.67
+        ],
+        "returns": [
+          101.3,
+          172.0
+        ],
+        "return_error_pp": [
+          0.029063250600501078,
+          0.0416333066453376
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      }
+    ],
+    "MU": [
+      {
+        "line": 417,
+        "scenario": "悲观",
+        "horizon": "6个月 2027-03-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          248.0,
+          326.0
+        ],
+        "returns": [
+          -75.6,
+          -67.9
+        ],
+        "return_error_pp": [
+          0.024792689284765856,
+          -0.002497565390171985
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 418,
+        "scenario": "悲观",
+        "horizon": "12个月 2027-09-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          240.0,
+          308.0
+        ],
+        "returns": [
+          -76.3,
+          -69.6
+        ],
+        "return_error_pp": [
+          -0.032641477881952596,
+          -0.043612469137016774
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 419,
+        "scenario": "悲观",
+        "horizon": "36个月 2029-09-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          393.0,
+          443.0
+        ],
+        "returns": [
+          -61.2,
+          -56.2
+        ],
+        "return_error_pp": [
+          0.03571548018375381,
+          -0.045880836915571876
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 420,
+        "scenario": "基准",
+        "horizon": "6个月 2027-03-07",
+        "rating": "中性 / 等待",
+        "prices": [
+          954.0,
+          1304.0
+        ],
+        "returns": [
+          -6.1,
+          28.3
+        ],
+        "return_error_pp": [
+          -0.027347308157671613,
+          0.0014784721470775253
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 421,
+        "scenario": "基准",
+        "horizon": "12个月 2027-09-07",
+        "rating": "中性 / 等待",
+        "prices": [
+          973.0,
+          1312.0
+        ],
+        "returns": [
+          -4.3,
+          29.1
+        ],
+        "return_error_pp": [
+          0.07115651344200113,
+          0.017933483508571157
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 422,
+        "scenario": "基准",
+        "horizon": "36个月 2029-09-07",
+        "rating": "不建议投资",
+        "prices": [
+          1207.0,
+          1461.0
+        ],
+        "returns": [
+          18.9,
+          43.9
+        ],
+        "return_error_pp": [
+          0.007327437806786463,
+          -0.00718185305778718
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 423,
+        "scenario": "乐观",
+        "horizon": "6个月 2027-03-07",
+        "rating": "建议投资",
+        "prices": [
+          1615.0,
+          2124.0
+        ],
+        "returns": [
+          58.9,
+          108.9
+        ],
+        "return_error_pp": [
+          -0.006050620210707791,
+          0.06329887171821724
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 424,
+        "scenario": "乐观",
+        "horizon": "12个月 2027-09-07",
+        "rating": "建议投资",
+        "prices": [
+          1746.0,
+          2277.0
+        ],
+        "returns": [
+          71.8,
+          124.1
+        ],
+        "return_error_pp": [
+          0.009677451086460565,
+          -0.05687543650834925
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 425,
+        "scenario": "乐观",
+        "horizon": "36个月 2029-09-07",
+        "rating": "强烈建议投资",
+        "prices": [
+          2383.0,
+          2984.0
+        ],
+        "returns": [
+          134.6,
+          193.7
+        ],
+        "return_error_pp": [
+          -0.011817940369269309,
+          0.007394328096893332
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 426,
+        "scenario": "突破",
+        "horizon": "6个月 2027-03-07",
+        "rating": "建议投资",
+        "prices": [
+          1966.0,
+          2502.0
+        ],
+        "returns": [
+          93.4,
+          146.1
+        ],
+        "return_error_pp": [
+          0.021143233752027868,
+          0.04643071444732527
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 427,
+        "scenario": "突破",
+        "horizon": "12个月 2027-09-07",
+        "rating": "建议投资",
+        "prices": [
+          2133.0,
+          2699.0
+        ],
+        "returns": [
+          109.9,
+          165.5
+        ],
+        "return_error_pp": [
+          -0.021878043262304914,
+          0.054451647173380024
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 428,
+        "scenario": "突破",
+        "horizon": "36个月 2029-09-07",
+        "rating": "建议投资",
+        "prices": [
+          3402.0,
+          4332.0
+        ],
+        "returns": [
+          234.8,
+          326.3
+        ],
+        "return_error_pp": [
+          0.025249117146529443,
+          0.0075576190991455405
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      }
+    ],
+    "LWLG": [
+      {
+        "line": 444,
+        "scenario": "悲观 / 受损",
+        "horizon": "6个月/2027-03-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          0.14,
+          0.23
+        ],
+        "returns": [
+          -97.4,
+          -95.6
+        ],
+        "return_error_pp": [
+          0.016822429906540037,
+          -0.10093457943926865
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 445,
+        "scenario": "悲观 / 受损",
+        "horizon": "12个月/2027-09-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          0.16,
+          0.25
+        ],
+        "returns": [
+          -97.1,
+          -95.4
+        ],
+        "return_error_pp": [
+          0.09065420560747839,
+          0.07289719626169244
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 446,
+        "scenario": "悲观 / 受损",
+        "horizon": "36个月/2029-09-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          0.19,
+          0.29
+        ],
+        "returns": [
+          -96.5,
+          -94.7
+        ],
+        "return_error_pp": [
+          0.05140186915888023,
+          0.12056074766354641
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 447,
+        "scenario": "基准 / 正常兑现",
+        "horizon": "6个月/2027-03-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          0.14,
+          0.18
+        ],
+        "returns": [
+          -97.4,
+          -96.6
+        ],
+        "return_error_pp": [
+          0.016822429906540037,
+          -0.03551401869160031
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 448,
+        "scenario": "基准 / 正常兑现",
+        "horizon": "12个月/2027-09-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          0.14,
+          0.19
+        ],
+        "returns": [
+          -97.4,
+          -96.5
+        ],
+        "return_error_pp": [
+          0.016822429906540037,
+          0.05140186915888023
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 449,
+        "scenario": "基准 / 正常兑现",
+        "horizon": "36个月/2029-09-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          0.15,
+          0.24
+        ],
+        "returns": [
+          -97.1,
+          -95.6
+        ],
+        "return_error_pp": [
+          -0.09626168224299647,
+          0.08598130841120621
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 450,
+        "scenario": "乐观 / 超预期",
+        "horizon": "6个月/2027-03-07",
+        "rating": "不建议投资",
+        "prices": [
+          2.25,
+          3.56
+        ],
+        "returns": [
+          -57.9,
+          -33.5
+        ],
+        "return_error_pp": [
+          -0.04392523364485612,
+          0.042056074766364304
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 451,
+        "scenario": "乐观 / 超预期",
+        "horizon": "12个月/2027-09-07",
+        "rating": "不建议投资",
+        "prices": [
+          2.42,
+          3.78
+        ],
+        "returns": [
+          -54.7,
+          -29.4
+        ],
+        "return_error_pp": [
+          -0.06635514018690003,
+          0.05420560747663927
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 452,
+        "scenario": "乐观 / 超预期",
+        "horizon": "36个月/2029-09-07",
+        "rating": "不建议投资",
+        "prices": [
+          3.31,
+          4.82
+        ],
+        "returns": [
+          -38.1,
+          -9.9
+        ],
+        "return_error_pp": [
+          -0.030841121495313928,
+          -0.006542056074751557
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 453,
+        "scenario": "突破 / 非线性",
+        "horizon": "6个月/2027-03-07",
+        "rating": "谨慎建议投资",
+        "prices": [
+          7.83,
+          12.37
+        ],
+        "returns": [
+          46.3,
+          131.3
+        ],
+        "return_error_pp": [
+          0.055140186915892286,
+          -0.0850467289719461
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 454,
+        "scenario": "突破 / 非线性",
+        "horizon": "12个月/2027-09-07",
+        "rating": "建议投资",
+        "prices": [
+          8.45,
+          13.15
+        ],
+        "returns": [
+          57.9,
+          145.8
+        ],
+        "return_error_pp": [
+          0.04392523364487033,
+          -0.005607476635503872
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 455,
+        "scenario": "突破 / 非线性",
+        "horizon": "36个月/2029-09-07",
+        "rating": "建议投资",
+        "prices": [
+          11.56,
+          16.85
+        ],
+        "returns": [
+          116.1,
+          215.0
+        ],
+        "return_error_pp": [
+          -0.025233644859795845,
+          -0.046728971962579635
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      }
+    ],
+    "BE": [
+      {
+        "line": 390,
+        "scenario": "悲观",
+        "horizon": "6个月；2027-03-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          0.03,
+          1.88
+        ],
+        "returns": [
+          -100.0,
+          -99.3
+        ],
+        "return_error_pp": [
+          0.011863803535419493,
+          0.04346502155257781
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 391,
+        "scenario": "悲观",
+        "horizon": "12个月；2027-09-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          0.42,
+          2.33
+        ],
+        "returns": [
+          -99.8,
+          -99.1
+        ],
+        "return_error_pp": [
+          -0.03390675050421521,
+          0.02142207458376788
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 392,
+        "scenario": "悲观",
+        "horizon": "36个月；2029-09-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          2.29,
+          4.4
+        ],
+        "returns": [
+          -99.1,
+          -98.3
+        ],
+        "return_error_pp": [
+          0.005603669869884698,
+          0.0400245185273036
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 393,
+        "scenario": "基准",
+        "horizon": "6个月；2027-03-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          54.69,
+          73.12
+        ],
+        "returns": [
+          -78.4,
+          -71.1
+        ],
+        "return_error_pp": [
+          0.027713845058727316,
+          0.016043816981039072
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 394,
+        "scenario": "基准",
+        "horizon": "12个月；2027-09-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          58.06,
+          76.83
+        ],
+        "returns": [
+          -77.0,
+          -69.6
+        ],
+        "return_error_pp": [
+          -0.039585557796499415,
+          -0.016799145806146498
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 395,
+        "scenario": "基准",
+        "horizon": "36个月；2029-09-07",
+        "rating": "不建议投资",
+        "prices": [
+          72.92,
+          92.96
+        ],
+        "returns": [
+          -71.2,
+          -63.2
+        ],
+        "return_error_pp": [
+          0.036951793411631684,
+          -0.03802744493218313
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 396,
+        "scenario": "乐观",
+        "horizon": "6个月；2027-03-07",
+        "rating": "不建议投资",
+        "prices": [
+          133.46,
+          179.25
+        ],
+        "returns": [
+          -47.2,
+          -29.1
+        ],
+        "return_error_pp": [
+          -0.021892672124010915,
+          -0.013773875904611543
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 397,
+        "scenario": "乐观",
+        "horizon": "12个月；2027-09-07",
+        "rating": "不建议投资",
+        "prices": [
+          141.38,
+          188.08
+        ],
+        "returns": [
+          -44.1,
+          -25.6
+        ],
+        "return_error_pp": [
+          0.010151461225134994,
+          -0.021861035314586275
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 398,
+        "scenario": "乐观",
+        "horizon": "36个月；2029-09-07",
+        "rating": "不建议投资",
+        "prices": [
+          176.59,
+          225.3
+        ],
+        "returns": [
+          -30.2,
+          -10.9
+        ],
+        "return_error_pp": [
+          0.034302210622055185,
+          -0.002835449044956917
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 399,
+        "scenario": "突破",
+        "horizon": "6个月；2027-03-07",
+        "rating": "谨慎建议投资",
+        "prices": [
+          256.72,
+          346.66
+        ],
+        "returns": [
+          1.5,
+          37.1
+        ],
+        "return_error_pp": [
+          0.022521453711411787,
+          -0.00979554711906161
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 400,
+        "scenario": "突破",
+        "horizon": "12个月；2027-09-07",
+        "rating": "谨慎建议投资",
+        "prices": [
+          271.33,
+          363.19
+        ],
+        "returns": [
+          7.3,
+          43.6
+        ],
+        "return_error_pp": [
+          0.00019377545774190708,
+          0.027160200893739272
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 401,
+        "scenario": "突破",
+        "horizon": "36个月；2029-09-07",
+        "rating": "中性 / 等待",
+        "prices": [
+          336.55,
+          435.38
+        ],
+        "returns": [
+          33.1,
+          72.2
+        ],
+        "return_error_pp": [
+          -0.007897338553405575,
+          -0.02457389172302271
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      }
+    ],
+    "SNDK": [
+      {
+        "line": 453,
+        "scenario": "悲观",
+        "horizon": "6个月；2027-03-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          712.0,
+          907.0
+        ],
+        "returns": [
+          -59.1,
+          -47.9
+        ],
+        "return_error_pp": [
+          0.01954022988506665,
+          0.026436781609199045
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 454,
+        "scenario": "悲观",
+        "horizon": "12个月；2027-09-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          587.0,
+          749.0
+        ],
+        "returns": [
+          -66.3,
+          -57.0
+        ],
+        "return_error_pp": [
+          0.03563218390804934,
+          0.045977011494251485
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 455,
+        "scenario": "悲观",
+        "horizon": "36个月；2029-09-07",
+        "rating": "强烈不建议投资",
+        "prices": [
+          635.0,
+          775.0
+        ],
+        "returns": [
+          -63.5,
+          -55.5
+        ],
+        "return_error_pp": [
+          -0.005747126436773442,
+          0.04022988505747094
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 456,
+        "scenario": "基准",
+        "horizon": "6个月；2027-03-07",
+        "rating": "中性 / 等待",
+        "prices": [
+          1771.0,
+          2240.0
+        ],
+        "returns": [
+          1.8,
+          28.8
+        ],
+        "return_error_pp": [
+          -0.018390804597710586,
+          -0.06436781609195563
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 457,
+        "scenario": "基准",
+        "horizon": "12个月；2027-09-07",
+        "rating": "谨慎建议投资",
+        "prices": [
+          1845.0,
+          2421.0
+        ],
+        "returns": [
+          6.0,
+          39.1
+        ],
+        "return_error_pp": [
+          0.03448275862068506,
+          0.037931034482753034
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 458,
+        "scenario": "基准",
+        "horizon": "36个月；2029-09-07",
+        "rating": "中性 / 等待",
+        "prices": [
+          2324.0,
+          2999.0
+        ],
+        "returns": [
+          33.5,
+          72.3
+        ],
+        "return_error_pp": [
+          0.06321839080460734,
+          0.05632183908045363
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 459,
+        "scenario": "乐观",
+        "horizon": "6个月；2027-03-07",
+        "rating": "建议投资",
+        "prices": [
+          2846.0,
+          3601.0
+        ],
+        "returns": [
+          63.5,
+          106.9
+        ],
+        "return_error_pp": [
+          0.06321839080458602,
+          0.054022988505749936
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 460,
+        "scenario": "乐观",
+        "horizon": "12个月；2027-09-07",
+        "rating": "强烈建议投资",
+        "prices": [
+          3266.0,
+          4123.0
+        ],
+        "returns": [
+          87.7,
+          137.0
+        ],
+        "return_error_pp": [
+          0.0011494252873518462,
+          -0.04597701149424438
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 461,
+        "scenario": "乐观",
+        "horizon": "36个月；2029-09-07",
+        "rating": "强烈建议投资",
+        "prices": [
+          4946.0,
+          6619.0
+        ],
+        "returns": [
+          184.2,
+          280.4
+        ],
+        "return_error_pp": [
+          0.05287356321838388,
+          0.002298850574732114
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 462,
+        "scenario": "突破",
+        "horizon": "6个月；2027-03-07",
+        "rating": "建议投资",
+        "prices": [
+          3538.0,
+          4690.0
+        ],
+        "returns": [
+          103.3,
+          169.6
+        ],
+        "return_error_pp": [
+          0.03333333333331723,
+          -0.05977011494252338
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 463,
+        "scenario": "突破",
+        "horizon": "12个月；2027-09-07",
+        "rating": "强烈建议投资",
+        "prices": [
+          4227.0,
+          5593.0
+        ],
+        "returns": [
+          142.9,
+          221.4
+        ],
+        "return_error_pp": [
+          0.031034482758599324,
+          0.03678160919540119
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      },
+      {
+        "line": 464,
+        "scenario": "突破",
+        "horizon": "36个月；2029-09-07",
+        "rating": "强烈建议投资",
+        "prices": [
+          6897.0,
+          9624.0
+        ],
+        "returns": [
+          296.4,
+          453.1
+        ],
+        "return_error_pp": [
+          -0.020689655172361654,
+          0.0034482758620697496
+        ],
+        "return_pass": true,
+        "equity_bridge_pass": true
+      }
+    ]
+  },
+  "independent_models": {
+    "MU_4_long_DCF": [
+      {
+        "prices": [
+          393.10179333051394,
+          443.25513247914256
+        ],
+        "displayed": [
+          393.0,
+          443.0
+        ],
+        "pass": true
+      },
+      {
+        "prices": [
+          1207.287676270845,
+          1460.6624639686615
+        ],
+        "displayed": [
+          1207.0,
+          1461.0
+        ],
+        "pass": true
+      },
+      {
+        "prices": [
+          2383.4790228843567,
+          2984.2129742096035
+        ],
+        "displayed": [
+          2383.0,
+          2984.0
+        ],
+        "pass": true
+      },
+      {
+        "prices": [
+          3402.0616814189616,
+          4331.888876599346
+        ],
+        "displayed": [
+          3402.0,
+          4332.0
+        ],
+        "pass": true
+      }
+    ],
+    "SNDK_12_multiples": [
+      {
+        "prices": [
+          711.8094239465235,
+          907.2350743823317
+        ],
+        "displayed": [
+          712.0,
+          907.0
+        ],
+        "pass": true
+      },
+      {
+        "prices": [
+          587.2837712927505,
+          749.1746995906509
+        ],
+        "displayed": [
+          587.0,
+          749.0
+        ],
+        "pass": true
+      },
+      {
+        "prices": [
+          634.5000329576163,
+          775.0313097356799
+        ],
+        "displayed": [
+          635.0,
+          775.0
+        ],
+        "pass": true
+      },
+      {
+        "prices": [
+          1770.3168500596578,
+          2240.1232931194486
+        ],
+        "displayed": [
+          1771.0,
+          2240.0
+        ],
+        "pass": true
+      },
+      {
+        "prices": [
+          1844.9454939400096,
+          2421.0169950572144
+        ],
+        "displayed": [
+          1845.0,
+          2421.0
+        ],
+        "pass": true
+      },
+      {
+        "prices": [
+          2324.0008864593333,
+          2999.0396690551815
+        ],
+        "displayed": [
+          2324.0,
+          2999.0
+        ],
+        "pass": true
+      },
+      {
+        "prices": [
+          2845.663010967099,
+          3600.598205383848
+        ],
+        "displayed": [
+          2846.0,
+          3601.0
+        ],
+        "pass": true
+      },
+      {
+        "prices": [
+          3265.6090420099404,
+          4123.102063048955
+        ],
+        "displayed": [
+          3266.0,
+          4123.0
+        ],
+        "pass": true
+      },
+      {
+        "prices": [
+          4945.5362583790375,
+          6618.296770262035
+        ],
+        "displayed": [
+          4946.0,
+          6619.0
+        ],
+        "pass": true
+      },
+      {
+        "prices": [
+          3537.69577913459,
+          4690.6026015396865
+        ],
+        "displayed": [
+          3538.0,
+          4690.0
+        ],
+        "pass": true
+      },
+      {
+        "prices": [
+          4226.7635277344025,
+          5592.504582795846
+        ],
+        "displayed": [
+          4227.0,
+          5593.0
+        ],
+        "pass": true
+      },
+      {
+        "prices": [
+          6896.645512239346,
+          9623.300090661833
+        ],
+        "displayed": [
+          6897.0,
+          9624.0
+        ],
+        "pass": true
+      }
+    ]
+  },
+  "decision_sensitivities": {
+    "SNDK_12m_required_multiple_20pct": 10.265751763046543,
+    "GNRC_12m_required_multiple_15pct": 11.24986180560013,
+    "LWLG_break_3y_success_probability_low": 0.9022199603873239,
+    "LWLG_break_3y_success_probability_high": 0.6155686936936936,
+    "SNDK_3y_optimistic_probability_threshold": 0.38237591097104584,
+    "BE_break_3y_work_annual_return": 0.1450410911520872,
+    "BE_break_3y_afterhours_annual_return": 0.12568477122817545
+  },
+  "summary": {
+    "cells": 60,
+    "return_pass": 60,
+    "bridge_pass": 60,
+    "independent_model_cells": 16,
+    "independent_model_pass": 16
+  }
+}

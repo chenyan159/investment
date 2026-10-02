@@ -1,0 +1,365 @@
+# 公司：WOLF Wolfspeed 公司调研（2026-06-12）
+
+> **资料边界**：本报告只使用 `基本面/行业调研/` 内相关行业资料、Wolfspeed 官方 IR/新闻/产品页、公开行情页和公开行业信息；未读取或继承 `特征量化/` 内容，未修改 `公司调研/公司索引.md`。  
+> **核心结论**：Wolfspeed 是碳化硅（SiC）材料、功率器件和高压模块公司，投资人把它看作“SiC 长周期资产 + 重组后反转股”，不是一家已经兑现 AI 数据中心收入的公司。AI 数据中心对它的真实意义在于：1）高密度 PSU、UPS、BESS、800VDC、固态变压器（SST）会增加高压 SiC/GaN/功率模块需求；2）WOLF 已发布 3.3kV、10kV、Gen 5 SiC 和数据中心团队，但当前没有披露 AI 数据中心收入、backlog 或 hyperscaler 量产订单；3）公司财务健康程度仍弱，流动性改善但经营毛利、EBITDA 和现金流仍为负。
+
+## 1. 公司整体业务、定位与财务快照
+
+### 1.1 业务概览
+
+Wolfspeed, Inc.（NYSE: WOLF）是专注 **silicon carbide / SiC** 的垂直整合半导体公司，业务可拆成两层：
+
+| 层级 | 公司披露业务线 | 主要产品 | 典型下游 | 当前收入状态 |
+|---|---:|---|---|---|
+| 上游材料 | Materials Products | SiC 衬底、外延片、200mm SiC 平台、300mm SiC 研发平台 | 自用器件、外部功率半导体客户、未来先进封装/热管理 | FY26 Q3 收入 **$50.1M**，同比 **-35.7%** |
+| 下游功率器件 | Power Products | SiC MOSFET、Schottky diode、bare die、power modules、WolfPACK、gate driver/eval kit | EV traction、车载充电、工业驱动、太阳能、储能、UPS、数据中心电源 | FY26 Q3 收入 **$100.1M**，同比 **-6.9%** |
+
+产业链位置：WOLF 位于 **宽禁带功率半导体产业链的材料 + 器件 + 模块交界处**。它不是服务器 OEM、PSU 厂、PDU 厂、BBU 厂或数据中心 EPC；它卖的是这些系统里的高压/高效率功率半导体和 SiC 材料。对于 AI 数据中心，WOLF 的潜在位置主要在：
+
+- **AC/DC PSU 与 PFC**：高功率密度 5.5kW/8.5kW/12kW 服务器电源的高压开关器件。
+- **UPS / BESS / MV power conversion**：数据中心前端供电、储能、逆变、双向变换器中的 SiC 模块。
+- **800VDC / +-400VDC / HVDC sidecar**：1MW 级 rack 供电架构中，800V 到 50V/12V 或中压到低压转换链路。
+- **SST / MVDC**：固态变压器、中压直流配电、6MW+ 级别电力模块。
+- **未来先进封装材料**：300mm SiC wafer 作为 AI/HPC 大尺寸 interposer 或高导热封装材料的长期选项。
+
+### 1.2 投资人心中的公司画像
+
+WOLF 在投资人心中通常不是“稳定现金流半导体”，而是三类叙事叠加：
+
+| 投资叙事 | 事实支撑 | 主要反证/风险 |
+|---|---|---|
+| SiC 龙头/材料稀缺资产 | 公司长期聚焦 SiC，拥有材料、器件、模块和 200mm 制造平台；FY26 Q3 仍有 **$1.165B** 现金及短投流动性 | 过去几个季度收入下滑、毛利为负、材料业务同比大跌；SiC 竞争者很多 |
+| 重组后反转股 | 2025-2026 完成 Chapter 11 / fresh-start accounting，Q3 FY26 又完成约 **$476M** first-lien refinancing，债务减少约 **$97M**、年利息预计减少约 **$62M** | 重组改善资本结构，不等于经营恢复；Q3 FY26 GAAP 毛利率仍 **-27%** |
+| AI 数据中心功率升级受益者 | 发布数据中心团队、3.3kV 模块、10kV MOSFET、300mm SiC advanced packaging；行业正在从 48/50V 往 800VDC 和中压架构演进 | 公司没有披露 AI DC 收入、客户订单、backlog；NVIDIA 800VDC 生态公开名单中本地行业资料列出的核心合作伙伴未出现 WOLF |
+
+### 1.3 最近三年重大业务变动/转型
+
+| 时间 | 事项 | 对业务的影响 |
+|---|---|---|
+| 2023-2024 | 从传统 Cree/RF/LED 历史资产进一步转向 SiC power + materials | 公司估值逻辑集中到 SiC 产能、器件良率、EV/工业需求和高压应用 |
+| 2024-2025 | Mohawk Valley 200mm SiC 器件 fab ramp，但利用率不足 | FY25 Q4 Mohawk Valley 收入 **$94.1M**，但公司仍录得 **$23.6M** underutilization cost；毛利未转正 |
+| 2025 | 预重整 Chapter 11 / 债务重组 / fresh-start accounting | 压低利息和债务负担，但财报可比性变差；GAAP 净利润/亏损受重组项目扭曲 |
+| 2026-05 | 建立 Silicon Valley 数据中心解决方案团队 | 明确把 AI 数据中心电源架构作为战略市场，靠近 hyperscaler、ODM 和供电生态 |
+| 2026-05 | 推出 3.3kV SiC power module families | 对准 AI 数据中心电力瓶颈、SST、grid-scale storage、renewables |
+| 2026-05 | 发布 300mm SiC advanced packaging 方向 | 可能面向 AI/HPC 大尺寸封装和散热，但公司自己也定位为“decade-end”级长期平台 |
+| 2026-06 | 与 GE Aerospace 签署高压 SiC MOU，并供应 10kV MOSFET die | 10kV SiC 从实验/技术展示向模块标准化和商业引入推进 |
+| 2026-06 | 发布 Gen 5 SiC MOSFET 技术 | 1200V/750V 平台，号称相对竞争 1200V 方案效率提升最高 **27%**；用 Mohawk Valley 200mm 生产材料，无需新增量产 toolset |
+
+### 1.4 最新估值与经营快照
+
+> 行情数据截至 **2026-06-10/2026-06-11 可得公开行情页**；财务数据截至 **FY26 Q3，季度结束日 2026-03-29，报告日 2026-05-05**。WOLF 重组后股本和会计口径变化大，市值和 P/E 数据源存在差异，以下采用公开行情区间和公司披露财务交叉核对。
+
+| 指标 | 最新值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | 约 **$43-46/share** | 2026-06-10/11 公开行情页区间 | Google/Yahoo/MarketBeat 等口径接近但不同 |
+| 市值 | 约 **$2.1-2.3B** | 2026-06-10/11 | Google Finance 显示约 $2.20B；Yahoo 显示约 $2.26B |
+| 股本 | 约 **48.3M shares** | 2026-06-11 Google Finance | 重组后股本与历史不可直接比较 |
+| TTM 收入 | **$712.5M** | FY25 Q4 + FY26 Q1-Q3 | $197.0M + $196.8M + $168.5M + $150.2M |
+| P/S | 约 **3.0-3.2x** | 市值 $2.2B / TTM 收入 $712.5M | 对一家毛利为负公司不便宜，定价来自反转和 SiC 资产 |
+| Trailing P/E | **不可用/失真** | 2026-06-10/11 | 部分行情页显示正 P/E 约 1.9x，来自重组/会计项目造成的 EPS 扭曲；经营利润仍为负 |
+| Forward P/E | **N/A 或负数** | 2026-06 | 共识盈利仍为负，forward PE 没有正常含义 |
+| 最新季度收入增速 | **-19.0% YoY** | FY26 Q3 | $150.2M vs $185.4M |
+| 最新季度 GAAP 毛利率 | **-27%** | FY26 Q3 | gross loss $40.0M |
+| 最新季度 non-GAAP 毛利率 | **-21%** | FY26 Q3 | 仍为负 |
+| 最新季度 GAAP 净利率 | **-79.8%** | FY26 Q3 | net loss $119.9M / revenue $150.2M |
+| 最新季度 Adj. EBITDA | **-$61.7M** | FY26 Q3 | 经营现金能力仍弱 |
+| 最新季度 FCF | **-$90.0M** | FY26 Q3 | OCF -$84M，PP&E/patent spending 约 -$6M |
+| 现金+短投 | **$1.165B** | 2026-03-29 | 包括 cash $695.1M、short-term investments $469.7M |
+| 库存 | **$280.5M** | 2026-03-29 | 相当于 FY26 Q3 单季收入 **1.9x**，提示需求/产能错配 |
+| 应收账款 | **$96.8M** | 2026-03-29 | 约 0.64 个季度收入 |
+
+### 1.5 资产负债表与财务健康
+
+WOLF 的资产负债表在重组后 **流动性显著改善，但经营健康度仍偏弱**：
+
+- **流动性强于破产前**：FY26 Q3 期末 cash + short-term investments **$1.165B**，公司也披露 refinancing 和 Renesas 相关权益事项改善权益位置超过 **$400M**。
+- **利息压力下降**：FY26 Q3 refinancing 涉及约 **$476M** first-lien debt，债务减少约 **$97M**，年利息预计减少约 **$62M**。
+- **经营仍未自我造血**：FY26 Q3 revenue **$150.2M**，GAAP gross loss **$40.0M**，adjusted EBITDA **-$61.7M**，FCF **-$90.0M**。
+- **库存和固定资产利用率压力仍在**：Q3 库存 **$280.5M**，大于单季收入；FY25 Q4 披露 underutilization cost **$23.6M**。SiC 资产价值存在，但利用率不足会持续压低毛利。
+- **fresh-start accounting 降低可比性**：FY26 Q1/Q2 包含重组会计、predecessor/successor 分段；GAAP 净利润/亏损不适合直接判断经营趋势，non-GAAP gross margin、adjusted EBITDA、FCF 更关键。
+
+**健康程度判断**：财务上从“债务结构危险”改善到“有 runway 的亏损制造平台”，但还不是健康公司。未来 12 个月核心不是看 P/E，而是看 **Power Products 是否恢复增长、Mohawk Valley 利用率是否上升、Materials 是否止跌、AI/高压新产品是否从 design-in 变成可披露订单**。
+
+## 2. 最近五次财报：收入、业务线、利润率、backlog 与 AI 收入
+
+> 公司不披露标准化 backlog/bookings/lead time/cancel rate，也不披露 AI 数据中心收入占比。下表中“订单/交期”是根据收入、库存、毛利、官方新品/客户公告和行业需求推断，凡未披露均明确标注。
+
+| 财报季度 | 报告/季度结束 | 总收入 | Power Products | Materials Products | 毛利率 | 净利/Adj. EBITDA/FCF | 订单、交期、取消率与客户信号 | AI 数据中心收入占比 |
+|---|---:|---:|---:|---:|---:|---|---|---|
+| FY26 Q3 | 报告 2026-05-05；季末 2026-03-29 | **$150.2M**，YoY **-19.0%** | **$100.1M**，YoY **-6.9%**，占 **66.6%** | **$50.1M**，YoY **-35.7%**，占 **33.4%** | GAAP **-27%**；non-GAAP **-21%** | GAAP net loss **-$119.9M**；Adj. EBITDA **-$61.7M**；FCF **-$90.0M** | 未披露 backlog/bookings。材料业务大跌、库存仍高，说明广义 SiC 需求没有供不应求；但 10kV、TOLT、300mm 平台公告显示高压新品导入加速 | 未披露；研究估计当前直接 AI DC 收入仍小，基准为 **<5%** |
+| FY26 Q2 | 报告 2026-02；季度含 successor/predecessor 会计 | **$168.5M**，YoY **-6.6%** vs $180.5M | **$118.3M**，YoY **+30.3%** vs $90.8M，占 **70.2%** | **$50.2M**，YoY **-44.0%** vs $89.7M，占 **29.8%** | GAAP **-46%**；non-GAAP **-36%** | Successor GAAP net loss **-$150.6M**；one-day predecessor GAAP income **$1,063.8M**为重组会计；non-GAAP net loss **-$159.3M**；Adj. EBITDA **-$81.8M**；FCF **+$627.1M**主要受 incentive/reimbursement 影响 | 未披露 backlog。Power 同比增长但总收入环比下滑；Materials 大幅下滑提示外部材料需求/价格/库存周期偏弱 | 未披露；若有，多数在 power 线内，尚非独立量产段 |
+| FY26 Q1 | 报告 2025-11；季末 2025-09-28 | **$196.8M**，YoY **+1.1%** vs $194.7M | **$131.8M**，YoY **+35.7%** vs $97.1M，占 **67.0%** | **$65.0M**，YoY **-33.4%** vs $97.6M，占 **33.0%** | GAAP **-39%**；non-GAAP **-26%** | GAAP net loss **-$643.6M**；non-GAAP net loss **-$85.2M**；Adj. EBITDA **-$57.4M**；FCF **-$99.6M** | 重组期财报。Power 增长强于 Materials；毛利仍受 ramp/under-absorption 压制 | 未披露；官方尚未把 AI DC 作为收入 segment |
+| FY25 Q4 | 报告 2025-08-25；季末 2025-06-29 | **$197.0M**，YoY **-1.8%** | **$118.6M**，YoY **+13.4%**，占 **60.2%** | **$78.4M**，YoY **-18.4%**，占 **39.8%** | GAAP **-13%**；non-GAAP **-1%** | GAAP net loss **-$669.3M**；Adj. EBITDA **-$40.7M**；FCF **-$454.0M** | Mohawk Valley revenue **$94.1M** vs prior-year $41.0M，说明 200mm fab ramp；但 underutilization cost **$23.6M**，产能没有吃满 | 未披露；AI DC 不是 FY25 收入主线 |
+| FY25 Q3 | 报告 2025-05；季末 2025-03-30 | **$185.4M** | **$107.5M**，占 **58.0%** | **$77.9M**，占 **42.0%** | GAAP **-12%**；non-GAAP **+2%** | GAAP net loss **-$285.5M**；Adj. EBITDA **-$45.2M**；FCF **-$167.7M** | 未披露 backlog。毛利接近 break-even 但仍亏损，后续 Q1/Q2 FY26 毛利恶化说明 ramp 和需求波动未解决 | 未披露 |
+
+**读表结论**：
+
+- 过去五个季度最稳定的事实是：**Power Products 占比上升，Materials 占比下降**。FY25 Q3 Power 占 58.0%，FY26 Q3 已升至 66.6%。
+- 最危险的事实是：**收入没有增长，毛利仍为负**。Power 产品增长并未足以覆盖材料下滑和工厂利用率压力。
+- 最容易被误读的事实是：**AI 数据中心公告很多，但收入不可见**。当前 AI 相关应按 design-in/样品/未来高压供电选项处理，不应直接按数据中心设备股给高收入倍数。
+
+## 3. 2026 最新指引、收入占比、重点产品与跳过业务
+
+### 3.1 FY26 Q4 指引
+
+FY26 Q3 报告给出的下一季指引为：
+
+| 指引项 | 公司指引 | 投资含义 |
+|---|---:|---|
+| FY26 Q4 revenue | **$140M-$160M**，中点 **$150M** | 与 FY26 Q3 $150.2M 基本持平，说明短期还不是高增长恢复 |
+| Operating expenses | 大致与 Q3 持平 | 降本空间有限，收入恢复前经营杠杆仍弱 |
+| Gross margin | 仍为负 | 关键问题仍是利用率、良率、产品 mix 和价格 |
+
+按 FY26 Q3 实际收入拆分：
+
+| 业务线 | FY26 Q3 收入 | 收入占比 | 同比 | 当前判断 |
+|---|---:|---:|---:|---|
+| Power Products | **$100.1M** | **66.6%** | **-6.9%** | 公司当前经营重心；未来 AI/高压新产品都落在此线 |
+| Materials Products | **$50.1M** | **33.4%** | **-35.7%** | 纵向整合资产和外售材料业务；短期需求疲弱 |
+| AI data center explicit segment | **未披露** | **未披露** | **未披露** | 只能从产品公告和行业路线推断，不可当成已兑现收入 |
+
+### 3.2 官方重点产品与型号
+
+| 产品/平台 | 官方信息 | 对应业务线 | 主要应用 | 当前收入属性 |
+|---|---|---|---|---|
+| Gen 5 SiC MOSFET | 1200V/750V；公司称相对竞争 1200V 方案效率提升最高 **27%**；可用 Mohawk Valley 200mm 生产材料 | Power | EV、工业、能源、电源转换、潜在 AI PSU/UPS | 中期主线产品，收入已包含在 Power 中但未单列 |
+| 3.3kV SiC modules：LM half-bridge baseplate | >800A 高功率半桥模块；面向 solar、grid storage、wind、AI data center power constraints | Power | MV conversion、UPS/BESS、SST、AI 电力基础设施 | 新品/样品/设计导入，收入很小 |
+| 3.3kV SiC modules：WolfPACK full-bridge baseplate-less | 模块化、多电平、series-stacked、parallel converter；用于 SST 和模块化能源基础设施 | Power | SST、MVDC、AI 数据中心中压到机架供电 | 新品/样品/客户验证 |
+| 10kV SiC MOSFET die | 与 GE Aerospace MOU；供应 10kV MOSFET die，推动标准高压 power module format | Power | SST、工业电气化、A&D、高压 AI 电力链 | 战略重要但短期收入小 |
+| TOLT portfolio | FY26 Q3 披露 launch next-generation TOLT portfolio | Power | 高压/高功率封装，具体收入未披露 | 需跟踪 design win |
+| 200mm SiC manufacturing / Mohawk Valley | FY25 Q4 Mohawk Valley revenue **$94.1M**；Gen 5 使用 200mm 生产材料 | Power + Materials | 主流 SiC 器件量产平台 | 产能资产已产生收入，但利用率不足 |
+| 300mm SiC wafer / advanced packaging platform | 2026-01 生产 single-crystal 300mm SiC wafer；2026-05 公布 AI/HPC heterogeneous packaging 概念 | Materials / R&D | decade-end AI/HPC packaging、interposer、散热 | 长期选项，当前不应计入收入 |
+
+### 3.3 可以跳过或低权重处理的业务
+
+本次报告重点是 AI 基建相关功率链，因此以下业务只作为背景，不作为核心预测：
+
+| 业务/产品 | 跳过原因 |
+|---|---|
+| 历史 LED/照明/Cree 旧叙事 | 非当前 WOLF 投资主线 |
+| RF 旧资产叙事 | WOLF 当前主要逻辑已转向 SiC power/materials |
+| 普通 EV traction SiC 价格战产品 | 仍贡献收入，但短期增速和毛利受 EV/库存周期压制，不能支撑 AI 高增长叙事 |
+| 650V/1200V 标准分立器件中低端型号 | 有收入，但竞争强、价格压力大；除非进入高密度 PSU/UPS 关键 BOM，否则低权重 |
+| 300mm SiC advanced packaging 的“近期收入” | 技术潜力大，但官方定位偏长期，不能计入未来 12 个月核心收入 |
+
+## 4. 高增长或关键产品：当前贡献、增长、AI 重要性与定价能力
+
+评分口径：重要性/紧急性/供需紧张/垄断溢价均为 1-5 分，5 最高；收入贡献为研究估算，除公司 segment 总收入外均非公司披露值。
+
+| 产品/业务 | 当前收入贡献估计 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 关键判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Power Products 总线 | FY26 Q3 **$100.1M**；年化约 **$400M** | Q3 YoY **-6.9%**；Q2 YoY +30.3%，波动大 | 3 | 3 | 2 | 3 | 是公司现金流修复的核心，但不是纯 AI 业务 |
+| Gen 5 750V/1200V SiC MOSFET / die | 估计年化 **$150M-$300M**，包含在 Power | 新品导入，旧产品线收入承压 | 3 | 3 | 3 | 3 | 可进入 PSU、UPS、BESS、EV；Gen 5 性能和 200mm 兼容是优势 |
+| 3.3kV SiC modules | 当前估计 **<$10M/年** | 从低基数启动 | 4 | 4 | 4 | 4 | 对 MVDC/SST/大型储能/AI 电力链更直接，短期仍看认证和样品转量产 |
+| 10kV SiC MOSFET die / HV die | 当前估计 **<$5M-$10M/年** | 从研发/样品启动 | 4 | 4 | 4 | 4 | GE MOU 是验证信号，但不是订单金额；更偏 2027+ |
+| Data Center Solutions 团队/AI design-in | 当前估计 **<$10M-$20M/年** | 低基数 | 5 | 4 | 3 | 3 | 团队建立说明战略聚焦；当前缺 hyperscaler 量产披露 |
+| Materials Products / 200mm SiC substrates | FY26 Q3 **$50.1M**；年化约 **$200M** | Q3 YoY **-35.7%** | 3 | 3 | 2 | 3 | 是 WOLF 护城河资产，但短期外售材料疲弱 |
+| 300mm SiC advanced packaging | 当前收入近似 **$0** | N/A | 3（长期可到 4） | 1 | 2 | 4 | 技术想象空间大，未来十年级，不应纳入 12 个月收入核心 |
+
+### 4.1 与 AI 数据中心技术栈的真实关系
+
+本项目行业资料对 AI 数据中心供电的判断是：**2026 年确定性最高的是 48/50V ORv3/HPR rack power、5.5kW/8.5kW/12kW PSU、BBU/ESS、VR/TLVR/VPD 和保护器件；800VDC/+-400VDC 是 2026H2-2027 设计导入，1MW rack 和 SST/MVDC 是 2027-2028 更强的收入窗口。**
+
+这对 WOLF 的含义：
+
+- WOLF 对 **2026 服务器 PSU/48V rack power** 不是最直接的系统厂，主要卖 power semis/modules；能不能进入 Delta、LiteOn、Flex、Vertiv、Eaton、Schneider、ODM power shelf BOM 才关键。
+- WOLF 对 **800VDC / SST / MVDC** 更相关，因为 3.3kV、10kV SiC 能减少串联器件数量、提高效率和功率密度。
+- 但本地行业资料列出的 NVIDIA 800VDC 生态伙伴包括 ADI、Infineon、MPS、Navitas、onsemi、Renesas、ROHM、ST、TI、Delta、Flex、LiteOn、Megmeet、Eaton、Schneider、Vertiv 等，**没有把 Wolfspeed 列为第一批公开核心伙伴**。这不是否定 WOLF 技术，而是说明订单可见度低于这些已公开绑定的平台供应商。
+
+## 5. 一年后关键产品收入贡献：基准、乐观、极度乐观
+
+> 未来一年指 FY26 Q4 至 FY27 Q3 附近的滚动 12 个月。所有预测均为研究模型，不是公司指引。
+
+| 产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 | 需要发生什么 |
+|---|---:|---:|---:|---|
+| Power Products 总线 | **$420M-$500M**，同比低个位数到 +20%；重要性 3/5，供需 2/5，溢价 2.5/5 | **$550M-$700M**，同比 +35%-70%；重要性 4/5，供需 3/5，溢价 3/5 | **$800M-$1.0B**，同比翻倍附近；重要性 4/5，供需 4/5，溢价 3.5/5 | Mohawk Valley 利用率恢复，Power 客户拉货，AI/能源高压 design-in 部分转量产 |
+| Gen 5 750V/1200V MOSFET / die | **$180M-$280M**；增长 0%-20% | **$300M-$450M**；增长 30%-70% | **$500M-$650M**；增长 >100% | Gen 5 不新增 toolset、客户验证快，EV/工业和 PSU/UPS 同时回暖 |
+| 3.3kV SiC modules | **$10M-$30M**；从样品到小批量 | **$40M-$90M**；多个 SST/储能/AI power 试点 | **$120M-$200M**；一线数据中心 power rack/SST 项目量产 | Amperesand/PCIM 类验证转商业订单，AI 数据中心中压电力设备进入批量部署 |
+| 10kV SiC MOSFET die / HV modules | **$5M-$15M** | **$20M-$50M** | **$75M-$125M** | GE MOU 转标准模块和订单，A&D/工业/AI time-to-power 项目放量 |
+| AI data-center direct design-in | **$20M-$50M**，占公司收入 <8% | **$75M-$150M**，占 10%-18% | **$200M-$350M**，占 20%-30% | 至少一家 hyperscaler/ODM/power-shelf 厂把 WOLF SiC 选入 800VDC、UPS、SST 或 high-density PSU BOM |
+| Materials Products | **$180M-$230M**；止跌为主 | **$250M-$330M**；外售材料恢复 | **$350M-$450M**；200mm/300mm 评估订单和器件拉动 | SiC 客户库存出清，外部衬底需求恢复，价格不再快速下压 |
+| 300mm SiC advanced packaging | **$0-$5M**；NRE/评估 | **$5M-$20M** | **$30M-$60M** | foundry/OSAT/system architect 付费评估；但量产更可能在 decade-end |
+
+**整体公司一年收入预测**：
+
+| 情景 | 未来 12 个月收入 | 相对 TTM $712.5M | 毛利趋势 | 概率判断 |
+|---|---:|---:|---|---|
+| 基准 | **$600M-$720M** | **-16% 到 +1%** | GAAP/non-GAAP 毛利仍可能为负，但亏损收窄 | 最高 |
+| 乐观 | **$750M-$900M** | **+5% 到 +26%** | non-GAAP gross margin 接近 break-even 到低个位正数 | 需要 Power 和 Materials 同时改善 |
+| 极度乐观 | **$1.0B-$1.2B** | **+40% 到 +68%** | 利用率显著改善，毛利回到正区间 | 需要真实 AI/高压订单、EV/工业恢复、良率和产能执行全中 |
+
+## 6. BOM、单位含量、价格传导、当前产能与认证
+
+### 6.1 AI 数据中心电力链的 WOLF 可服务内容量
+
+本项目行业资料显示，2026 主流 AI rack power 的直接价值大致集中在 power shelf、PSU、BBU/ESS、rack PDU、busbar、DC/DC、VRM、保护和遥测。传统 AI rack power chain 可从 **$20k-$40k/rack** 升至 **$80k-$180k/rack**；若 800V sidecar、液冷 busbar 和 energy shelf 进入 300kW+ rack，power chain 价值可达 **$250k-$600k/rack**（不含园区变电站和冷却）。
+
+| 应用层 | 系统 BOM 中 WBG/SiC/GaN 价值位置 | WOLF 当前可捕获内容量估算 | 每 rack / MW / GPU / optical port 映射 |
+|---|---|---:|---|
+| 48/50V high-density PSU / PFC | 5.5kW/8.5kW/12kW PSU 内的高压 MOSFET/diode/module；power semis/driver/controller 占 PSU BOM 约 **18%-28%** | 如果被选入 PSU BOM，WOLF SiC 每 120-155kW rack 约 **$1k-$6k**；每 MW 约 **$8k-$50k** | 72 GPU rack 约 **$14-$83/GPU**；对 optical port 近似 **$0**，只通过共享电源间接分摊 |
+| UPS / BESS / 双向储能逆变 | SiC 模块、discrete、driver、保护；设备中 power module/semis 可占 **15%-30%** | 每 MW 数据中心前端储能/UPS 若采用 SiC，WOLF 可服务内容量约 **$20k-$100k/MW** | 与 GPU 数无直接线性关系，按 facility MW 分摊更合理 |
+| 800VDC sidecar / HV IBC | 800V 到 50V/12V，或 +-400V 到低压；WBG devices/driver/controller 可占 HV IBC BOM **25%-35%** | 若被选中，每 MW 约 **$50k-$200k** WOLF-addressable content；当前实际 capture 远低于可服务市场 | 1MW rack 约 **$50k-$200k/rack**，若 72-144 GPU 等效，约 **$350-$2,800/GPU**；optical port 仍非直接内容 |
+| SST / MVDC / 3.3kV-10kV modules | SST/MVSST 中 SiC/GaN cells/drivers 可占 **25%-40%** | 6MW 级 SST 若采用 WOLF 3.3kV/10kV，WOLF 模块/ die 内容量可达 **几十万到低百万美元级**，取决于拓扑和并联冗余 | 按 MW 分摊约 **$50k-$250k/MW**；不适合按 optical port 计算 |
+| 300mm SiC advanced packaging | 大尺寸 interposer/散热/机械稳定材料 | 当前约 **$0**；未来如果成为先进封装材料，内容量按 package 而非 rack/MW | 每 GPU/optical port 当前不可算，属于长期材料平台 |
+
+### 6.2 价格传导链
+
+WOLF 不是把产品直接卖给数据中心业主的主链条，多数价格传导为：
+
+1. **Hyperscaler / NeoCloud / enterprise AI owner**：购买算力集群，关心 time-to-power、效率、可靠性、认证和总拥有成本。
+2. **Rack/system vendor / ODM / PSU/power shelf 厂**：设计 48/50V、800VDC、PSU、BBU、sidecar、DC/DC 架构。
+3. **Power module / discrete / driver / protection supplier**：WOLF、Infineon、ST、onsemi、ROHM、Navitas、TI 等竞争进入 BOM。
+4. **SiC substrate / epi / wafer supplier**：WOLF materials、Coherent、onsemi、ST/ROHM/中国 SiC 供应链等。
+
+可涨价的环节不是“SiC 大宗材料”本身，而是 **经过平台认证、可靠性验证、效率显著改善且切换成本高的高压器件/模块**。在 AI power 路线里，若某器件进入 NVIDIA/AMD/OCP/hyperscaler power shelf 或 SST/800VDC design-in，2-4 个季度内可以有 **5%-20%** 的短期溢价；如果只是标准 EV/工业 SiC，则价格压力更明显。
+
+### 6.3 当前产能、采纳程度与认证阶段
+
+| 产品/业务 | 当前产能能力（美元计） | 当前被采纳程度 | 认证/导入阶段 | 风险 |
+|---|---:|---|---|---|
+| Power Products / Mohawk Valley 200mm | FY25 Q4 Mohawk Valley 已有 **$94.1M/季**收入，年化约 **$376M**；Power FY26 Q3 年化约 **$400M** | 已商业量产，但利用率不足 | Gen 5 使用 200mm 生产材料，官方称不需新增量产 toolset | 良率、利用率、客户需求恢复 |
+| Gen 5 MOSFET | 可依托 200mm 工具链，理论扩产快于新增 fab | NPI/sampling/customer validation | 样品和客户验证阶段；汽车/工业认证周期较长 | 竞争产品、价格、EV 需求 |
+| 3.3kV LM/WolfPACK modules | 当前收入很小；短期美元产能取决于封装和模块线 | select customer samples；PCIM 展示；Amperesand 引用验证 | 3.3kV module sample / demo / design-in | SST/AI MVDC 商业部署节奏 |
+| 10kV MOSFET die | 目前更像高压 die/样品/战略供货 | GE Aerospace MOU，推动模块标准 | MOU + high-voltage module format exploration | MOU 非订单；A&D/工业认证慢 |
+| Materials / 200mm SiC substrate | FY26 Q3 年化 **$200M**，但外部需求弱 | 内部供给 + 外部客户 | 200mm 已商业；300mm 单晶 wafer 已做出但非量产 | 价格、客户库存、竞争供给 |
+| 300mm SiC advanced packaging | 当前收入可忽略 | 与 foundry/OSAT/system architect 评估 | 技术可行性/可靠性/集成评估 | 时间太长，不适合 12 个月投资催化 |
+
+## 7. 一年后产能、采纳与认证：三种口径
+
+| 产品/业务 | 基准：一年后 | 乐观：一年后 | 极度乐观：一年后 |
+|---|---|---|---|
+| Power Products / Mohawk Valley | 可支撑 **$450M-$550M/年**收入；利用率小幅改善；毛利仍接近零以下 | 可支撑 **$650M-$850M/年**；部分产品 mix 转高压/AI/能源；non-GAAP 毛利转正 | 可支撑 **$1.0B+** revenue run-rate；高压/AI 订单填产能，利用率大幅提升 |
+| Gen 5 MOSFET | 完成更多客户验证，收入逐季替代旧平台 | EV、工业、PSU/UPS 同时导入，成为 Power 增长主力 | 进入多个 AI PSU/UPS/high-density power BOM，兼顾 EV 回暖 |
+| 3.3kV modules | select customer sample 转 1-2 个小批量项目，收入 **$10M-$30M** | 多个 SST/储能/AI power pilot，收入 **$40M-$90M** | 数据中心中压供电项目批量，收入 **$120M-$200M** |
+| 10kV MOSFET die | GE MOU 继续验证，收入 **$5M-$15M** | 标准模块格式确定，A&D/工业项目小量产 | 高压 time-to-power 项目拉动，收入 **$75M+** |
+| Materials / 200mm | 外售材料止跌，库存周期消化 | 外部客户恢复拉货，价格稳定 | SiC 短缺重新出现，但需 EV/工业/AI power 多端共振 |
+| 300mm SiC advanced packaging | 技术评估、NRE，小额收入 | foundry/OSAT 付费评估，形成路线图 | 出现 anchor customer 和联合开发协议，但量产仍非一年内主线 |
+
+## 8. 订单积压、供给与未来一年增速推断
+
+### 8.1 真实 backlog 可见度
+
+公司在最近财报中 **没有披露 backlog/bookings/lead time/cancel rate**。因此只能做渠道和行为推断：
+
+- **收入下滑 + 材料同比 -35.7%**：不支持“当前广义 SiC 供不应求”判断。
+- **库存 $280.5M，高于 FY26 Q3 单季收入 1.9x**：说明至少部分产品/材料存在需求或 mix 错配。
+- **Mohawk Valley 已有收入但 underutilization cost 仍高**：产能 ramp 和需求承接没有完全匹配。
+- **AI/高压公告密集**：说明管理层在找新的高增长市场，但公告多为团队、MOU、样品、技术平台，不是已披露订单。
+- **论坛/小道消息核验**：公开散户论坛曾传播“AI data center revenue sequential growth”类说法，但公司官方没有 AI revenue segment 或 dollar backlog 披露，本报告不把这类说法作为收入模型基础。
+
+### 8.2 未来一年业务增速情景
+
+| 情景 | 订单/供给假设 | Power 增速 | Materials 增速 | AI/高压增量 | 公司收入增速 | 取消率/风险 |
+|---|---|---:|---:|---:|---:|---|
+| 基准 | Q4 按中点 $150M；Power 平稳，Materials 低位震荡；AI 主要 sample/design-in | **0%-20%** | **-10% 到 +5%** | **$20M-$50M** | **-16% 到 +1%** vs TTM | EV/工业客户库存、价格压力、认证延迟 |
+| 乐观 | Power 客户恢复拉货；3.3kV/10kV 有小量产；数据中心 power 进入 1-2 个项目 | **35%-70%** | **+10%-35%** | **$75M-$150M** | **+5%-26%** | 若 hyperscaler 不采用，增速回落到基准 |
+| 极度乐观 | 800VDC/SST/UPS 订单明确，WOLF 进入 anchor BOM；Mohawk Valley 利用率快速改善 | **80%-130%** | **40%-80%** | **$200M-$350M** | **+40%-68%** | 需要订单、良率、融资、认证、供应链同时兑现，概率较低 |
+
+### 8.3 与行业需求的交叉验证
+
+本地行业资料给出的 AI 电力设备大盘约束：
+
+- 2026 AI electric/energy 相关订单池约 **$45B-$80B**，2027 约 **$65B-$120B**。
+- HVDC/800VDC/high-density supply architecture 订单：2026 约 **$2B-$5B**，2027 约 **$5B-$12B**。
+- Rack power/integration：2026 约 **$8B-$16B**，2027 约 **$15B-$30B**。
+- 800VDC / HV IBC / sidecar / NRE / 小批量：未来 12 个月基准约 **$150M-$400M**，乐观 **$400M-$800M**，极度乐观 **$800M-$1.5B**。
+
+用这些大盘反推 WOLF：即使 WOLF 在未来一年赢得 **5%-15%** 的 800VDC/HV SiC 器件内容份额，直接收入也大致是 **数千万到低一亿美元级**，很难仅靠 AI 在一年内把总收入翻倍；极度乐观情景必须叠加 EV/工业/材料恢复和 Mohawk Valley 利用率提升。
+
+## 9. 竞争格局、技术主流性、替代方案与客户切换成本
+
+### 9.1 主要竞争对手
+
+| 领域 | 主要竞争对手 | WOLF 相对位置 |
+|---|---|---|
+| SiC substrate / epi | Coherent、onsemi、ST、ROHM、Infineon、Mitsubishi、Bosch、Fuji、Toshiba、中国 SiC 供应链 | WOLF 有长期 SiC 材料经验和 200mm 平台，但价格和外售需求承压 |
+| SiC MOSFET/discrete | Infineon、STMicro、onsemi、ROHM、Mitsubishi、Toshiba、Fuji、Bosch、中国功率半导体厂 | WOLF 技术强，但不是垄断；汽车/工业客户倾向多供应商 |
+| SiC power modules | Infineon、ST、onsemi、ROHM、Mitsubishi、Semikron Danfoss、Wolfspeed、Fuji | 3.3kV/10kV 是差异化方向，仍需认证和量产项目验证 |
+| GaN for 800VDC/HV IBC | Infineon/GaN Systems、Navitas、Power Integrations、Renesas/Transphorm、EPC、Innoscience、TI、ROHM、Nexperia、ST、Qorvo | WOLF 主要是 SiC，不是 GaN 生态核心；800VDC 可能被 GaN 抢走部分节点 |
+| AI rack power 系统 | Delta、LiteOn、Flex、Megmeet、Vertiv、Eaton、Schneider、Vicor、MPS、TI、Infineon、Navitas、onsemi 等 | WOLF 多数是上游器件/模块，不掌控系统设计入口 |
+
+### 9.2 新技术是否会成为主流
+
+| 技术 | 主流概率 | 时间 | 对 WOLF 的含义 |
+|---|---:|---|---|
+| 48/50V ORv3/HPR rack power | 高 | 2026 已是最确定路径 | WOLF 只能通过 PSU/PFC/UPS 器件间接受益 |
+| 800VDC / +-400VDC rack-side power | 高，但节奏不确定 | 2026H2-2027 design-in，2027+ 批量 | 高压 SiC/GaN 都受益；WOLF 需要进入平台 BOM |
+| 1MW rack + HV sidecar | 中高 | 2027-2028 | 3.3kV/10kV SiC 和 SST 价值上升 |
+| SST / MVDC grid-to-rack | 中，长期更高 | 2028+ 更强 | WOLF 的 3.3kV/10kV 产品最相关，但一年内收入有限 |
+| 300mm SiC advanced packaging | 中，长期选项 | decade-end | 技术期权，不是 2026-2027 主要收入 |
+
+### 9.3 替代方案
+
+- **GaN 替代 SiC**：800V-to-50V HV IBC、服务器 PSU 高频高密度场景中，Navitas、Infineon、PI、Renesas/Transphorm、TI 等 GaN 路线很强。GaN 在高频/低损耗/高密度上有优势，SiC 在高压、高功率、热稳定、短路能力和大功率模块中更强。
+- **高压 silicon / superjunction MOSFET / IGBT**：成本低、供应成熟，但在效率、功率密度和高温高压场景不如 SiC/GaN。若客户更看重成本而非 0.5%-1% 效率，WOLF 溢价会被压缩。
+- **系统架构替代**：如果 AI 数据中心继续停留在 48/50V rack power 更久，WOLF 3.3kV/10kV 的收入兑现会延后；如果 800VDC 由 GaN/Si 主导，WOLF 的份额也会低于技术叙事。
+
+### 9.4 客户替换成本
+
+WOLF 的客户替换成本取决于产品层级：
+
+| 产品层级 | 替换成本 | 原因 |
+|---|---|---|
+| 标准 SiC discrete / commodity MOSFET | 中低 | 封装、规格和可靠性可替换，客户通常需要 second source |
+| Automotive-qualified SiC MOSFET / die | 中高 | 车规认证、可靠性数据、长期供货协议和逆变器设计绑定 |
+| 3.3kV/10kV modules / SST power cell | 高 | 系统拓扑、热设计、绝缘、安全认证、寿命模型和控制策略耦合 |
+| Hyperscaler 800VDC / PSU / UPS design-in | 高 | 一旦进入平台 BOM，客户不太会为 3%-5% 价格差在短期换供应商；但前提是先进入 BOM |
+| Materials substrate supply | 中 | 晶圆质量、缺陷密度、外延兼容性和良率影响大，但大客户会推动多源 |
+
+## 10. 投资判断框架
+
+### 10.1 为什么值得继续跟踪
+
+- **AI 电力架构确实在升级**：100kW-155kW rack 已是现实，1MW rack、800VDC、SST/MVDC 会提高高压功率器件价值量。
+- **WOLF 有可验证的产品动作**：数据中心团队、3.3kV 模块、10kV MOSFET、Gen 5 SiC、300mm SiC 平台都在 2026 年集中发布。
+- **重组后有流动性 runway**：$1.165B cash + short-term investments 给公司时间修复经营。
+- **Mohawk Valley 是稀缺资产**：200mm SiC 器件平台如果利用率改善，毛利弹性会很大。
+
+### 10.2 为什么不能把它当成已兑现 AI 数据中心供应链股
+
+- 公司没有披露 AI data center revenue、backlog、bookings、lead time 或客户订单金额。
+- 最新 Q4 指引中点 **$150M**，与 Q3 持平，没有体现短期爆发。
+- 最新季度 gross margin **-27%**、non-GAAP gross margin **-21%**，说明制造经济性尚未修复。
+- NVIDIA 800VDC 公开生态中，WOLF 不是本地行业资料列出的第一批核心平台伙伴；WOLF 必须证明自己能进入 power shelf、sidecar、SST 或 UPS 的核心 BOM。
+
+### 10.3 最重要的后续跟踪指标
+
+| 优先级 | 指标 | 触发意义 |
+|---:|---|---|
+| 1 | FY26 Q4/FY27 Q1 revenue 是否超过 $160M 并恢复增长 | 验证需求和产能利用率 |
+| 1 | non-GAAP gross margin 是否从 -21% 向 break-even 改善 | 验证 Mohawk Valley 利用率和良率 |
+| 1 | Power Products 是否重回 $120M-$140M/季 | 验证核心产品恢复 |
+| 2 | Materials 是否止跌，库存是否下降 | 验证外部 SiC 周期 |
+| 2 | AI 数据中心客户是否出现具名 design win/order | 从故事进入订单 |
+| 2 | 3.3kV/10kV 是否出现量产客户、认证阶段或订单金额 | 验证高压模块商业化 |
+| 3 | 300mm SiC 是否出现付费 joint development / OSAT/foundry 合作 | 只作为长期 option |
+
+## 11. 信息来源
+
+### 官方公司资料
+
+- Wolfspeed Q3 FY2026 Earnings Release：`https://s29.q4cdn.com/278875087/files/doc_earnings/2026/q3/earnings-result/Wolfspeed_Q3_2026_Earnings_Release.pdf`
+- Wolfspeed Q3 FY2026 Earnings Presentation：`https://s29.q4cdn.com/278875087/files/doc_earnings/2026/q3/presentation/Wolfspeed_Q3_2026_Earnings_Presentation.pdf`
+- Wolfspeed Q2 FY2026 Earnings Release：`https://s29.q4cdn.com/278875087/files/doc_earnings/2026/q2/earnings-result/Wolfspeed_Q2_2026_Earnings_Release.pdf`
+- Wolfspeed Q1 FY2026 Earnings Release：`https://s29.q4cdn.com/278875087/files/doc_earnings/2026/q1/earnings-result/Wolfspeed_Q1_2026_Earnings_Release.pdf`
+- Wolfspeed Q4 FY2025 Earnings Release：`https://s29.q4cdn.com/278875087/files/doc_earnings/2025/q4/earnings-result/Wolfspeed_Q4_2025_Earnings_Release.pdf`
+- Wolfspeed Gen 5 SiC MOSFET announcement：`https://www.wolfspeed.com/company/news-events/news/wolfspeed-announces-gen-5-silicon-carbide-technology/`
+- Wolfspeed / GE Aerospace high-voltage SiC MOU：`https://www.wolfspeed.com/company/news-events/news/ge-aerospace-and-wolfspeed-collaborate-to-accelerate-high-voltage-silicon-carbide-sic-adoption/`
+- Wolfspeed dedicated data center solutions team：`https://www.wolfspeed.com/company/news-events/news/wolfspeed-launches-dedicated-data-center-solutions-team-in-silicon-valley/`
+- Wolfspeed 3.3kV SiC power modules：`https://www.wolfspeed.com/company/news-events/news/wolfspeed-introduces-new-3-3-kv-sic-power-modules-in-two-industry-standard-footprints-to-address-the-surging-demand-for-energy/`
+- Wolfspeed 300mm SiC advanced packaging for AI/HPC：`https://www.wolfspeed.com/company/news-events/news/wolfspeed-unveils-foundation-for-next-generation-ai-data-center-advanced-packaging-leveraging-300mm-silicon-carbide-technology/`
+- Wolfspeed Power Products：`https://www.wolfspeed.com/products/power/`
+
+### 行情/估值参考
+
+- Yahoo Finance WOLF quote：`https://finance.yahoo.com/quote/WOLF/`
+- Google Finance WOLF quote：`https://www.google.com/finance/quote/WOLF:NYSE`
+- MarketBeat WOLF quote：`https://www.marketbeat.com/stocks/NYSE/WOLF/`
+- Morningstar WOLF quote：`https://www.morningstar.com/stocks/xnys/wolf/quote`
+
+### 本项目行业资料
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`

@@ -1,0 +1,162 @@
+# 公司收入传导与价值传导评估：Analog Devices（ADI）
+
+> 评估对象：ADI / Analog Devices  
+> 正式输出目录：`分析报告/公司评估/`  
+> 报告日期：2026-06-12  
+> 主口径：NTM，约指 2026-06 至 2027-05 的未来 12 个月经营窗口  
+> 边界：本报告只评估行业和产品需求到 ADI 可确认收入、利润和经营质量的传导，不做公司间比较结论，不给二级市场结论，不讨论市场价格区间或倍数口径。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 收入、利润率和现金流传导；FY2026、FY2027、长期 run-rate、Empower 并购后潜在收入和 AI 电源平台远期期权只作为补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：ADI FY2026Q2 收入为 $3.623B；TTM 收入为 $12.740B；FY2026Q3 官方收入指引为 $3.9B +/- $0.1B，对应 Q3 年化 run-rate 约 $15.6B。Q2 调整后毛利率为 73.0%，调整后经营利润率为 49.0%；Q3 调整后经营利润率指引为约 49.0% +/- 100 bps。
+- 重要产品/业务线：工业信号链与 ATE、Data Center Power Control / Power Management、Optical Control / Compact Power、汽车 GMSL/A2B/BMS/安全电源、传统无线/RF/通信 ex-Data Center、Consumer、Empower IVR/硅电容远期期权。
+- NTM 公司收入四情景：悲观 $14.0-14.8B；基准 $15.4-16.2B；乐观 $16.8-18.0B；极度乐观 $18.8-20.5B。相对当前预期，基准是 Q3 指引、Q2/Q3 run-rate 和 record bookings 的正常兑现；乐观需要数据中心电源、光模块控制/电源和工业 ATE 同时超过当前节奏；极度乐观需要多个核心传导环节同时突破，可信度低。
+- 利润或 EBITDA 四情景：悲观调整后经营利润率约 44%-47%；基准约 48%-49.5%；乐观约 50%-52%；极度乐观约 52%-54%。公司层面利润弹性主要来自高毛利模拟/电源/信号链 mix 和工厂利用率，而不是低毛利 pass-through。
+- 最大传导瓶颈：ADI 的数据中心收入披露粒度不足，Data Center 只在 Communications 内部披露比例，电源控制、光模块控制、ATE、时钟/同步和 Empower 均缺少独立收入表锚点；因此产品层面必须用公司披露、行业需求、产品定位和管理层描述做保守拆分。
+- 最大利润率变量：数据中心电源控制、光模块 TEC/控制/监测、高端工业信号链和 ATE 的 mix 是否上升；若增长转向低附加值电源模块、客户压价或库存/产能利用率恶化，收入上修不一定能保留为利润。
+- 最大现金流变量：ADI 当前 TTM 经营现金流 $5.106B、自由现金流 $4.565B，现金流质量较高；NTM 最大变量是 record bookings 转为出货时的库存、应收账款和产能准备占用，以及 Empower 现金收购对短期现金/净债务的影响。
+- 可信度：公司层面基准为中高；产品层面数据中心电源和光控制为中，工业/汽车/Consumer 为中高，Empower 为低。原因是 ADI 公司收入、利润率和端市场披露清晰，但数据中心子产品收入、backlog 和产品级利润率无法可靠量化。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 工业信号链、ATE、能源/A&D | FY2026Q2 Industrial $1.799B；年化约 $7.20B | Q2 50% | 最大收入和利润池；包含通用工业复苏、ATE、仪器、能源、航空航天与国防 | A | 进入基准；以端市场收入、订单和 book-to-bill 为主锚 | HBM4/AI ATE 拉动可进乐观，但 ATE 子收入无法可靠量化 |
+| Data Center Power Control / Power Management | Communications Q2 $555M，其中 Data Center 约 75%；数据中心总额约 $416M/季；电源与 optical 贡献大体各半，电源估计约 $200-215M/季 | 估计约 5.5%-6.0% | AI rack、GPU/ASIC 板级电源、PMBus/PSM、热插拔、保护、电源监测的核心增量 | B/C | 进入基准，但以公司披露的 data center 总额和管理层“电源与 optical 大体各半”为拆分锚 | 800VDC、下一代 IVR、垂直电源平台放入乐观/极度乐观或附录 |
+| Optical Control / Compact Power | 同属 Data Center 约 $416M/季中的另一半，估计约 $200-215M/季 | 估计约 5.5%-6.0% | 800G/1.6T 光模块中的 TEC、控制、监测、紧凑电源；不是主 DSP 收入 | B/C | 进入基准，但不能把光 DSP/TIA 总 TAM 直接算入 ADI | LPO/LRO、CPO/NPO 只在有客户设计和确认节奏时进入乐观 |
+| 汽车 GMSL/A2B/BMS/安全电源 | FY2026Q2 Automotive $872M；年化约 $3.49B | Q2 24% | 车载网络、座舱/音频、电池管理和安全电源，稳定但受车市周期影响 | A | 进入基准；按当前汽车端市场收入和正常内容量提升处理 | 更高阶 ADAS 与软件定义汽车内容提升是补充，不替代 NTM |
+| 传统无线/RF/通信 ex-Data Center | FY2026Q2 Communications $555M 减 Data Center 约 $416M，估计约 $139M/季 | 估计约 4% | 无线基础设施、宽带、传统通信链路；周期修复但不是主增量 | A/B | 进入基准，保守处理 | 若无线 capex 加速可进乐观，但需订单证据 |
+| Consumer / prosumer analog 与边缘感知 | FY2026Q2 Consumer $398M；年化约 $1.59B | Q2 11% | 周期恢复和高端消费模拟器件，但价格和订单可见度弱于工业/数据中心 | A | 进入基准，按正常恢复处理 | 只作为补充增长，不作为公司极度乐观核心 |
+| Empower IVR 与硅电容 | 并购对价 $1.5B；预计 2026H2 关闭；管理层表示 2026H2 收入不显著，2027 才可能有有意义需求 | 当前 ADI 收入表未合并 | 小基数但可能改变 AI 电源结构和利润属性 | C/D | 不进入基准主口径，只允许 NTM 极小额或乐观上限 | 2027 以后 IVR 大规模采用、hyperscaler 认证和 AI ASIC/GPU 设计导入 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只判断外部需求池，不判断 ADI 份额、收入确认或利润率。需求锚使用行业 capex、AI 机柜/电源架构、800G/1.6T 光模块、工业自动化/ATE、汽车产量和当前端市场订单节奏。所有情景均相对该产品自己的当前预期，而不是相对其他公司热度。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 工业信号链、ATE、能源/A&D | FY2026Q2 Industrial +56% YoY；B2B 市场 record bookings，工业 book-to-bill 强；行业端仍处周期修复和 AI ATE 局部上行 | 工业复苏放缓，ATE/HBM4 节奏推迟，需求低于当前订单节奏 | 工业库存正常化、自动化/仪器/能源/A&D 按当前 bookings 兑现 | AI ATE、能源电网、A&D 和高端仪器订单同时增强 | HBM4/先进封装测试、工业自动化和能源项目在 NTM 内非线性加速 | 工业需求池仍是数十亿美元级；ATE 增量无法可靠量化 | 基准符合当前预期；乐观需 ATE 与通用工业同时强 | 证据是 Q2 Industrial 收入和订单；反证是工业客户 capex 或半导体测试周期放缓 |
+| Data Center Power Control / Power Management | 2026 AI 数据中心建设与 48/50V rack power、GPU/ASIC 板级电源、PMBus/PSM、保护和监测需求上行；ADI data center power Q2 约 $200-215M/季 | AI rack 交付、48/50V 电源架构或客户预算低于预期，电源 IC 订单延后 | 48/50V ORv3/HPR rack power、BBU、power shelf 和板级电源控制按当前 AI 建设节奏放量 | 高密度 rack、AI ASIC/GPU 平台和电源遥测需求强于预期 | 新预算、800VDC/IVR/垂直电源架构在 NTM 内同步突破 | 需求池从 rack power 到板级电源控制均扩张；ADI 可服务部分远小于电源系统总额 | 基准偏强但未脱离当前预期；乐观需要订单继续高于出货 | 行业支持来自 AI rack power 报告；反证是 power interconnect、认证、field reliability 或 AI capex 转化率下降 |
+| Optical Control / Compact Power | 800G/1.6T pluggable 模块继续放量，LPO/LRO 小规模验证；ADI monetization 在 TEC、控制、监测和 compact power | 光模块采购或 1.6T qualification 延后，线性路线碎片化，模块厂压价 | 800G 继续、1.6T 开始 ramp，控制/TEC/电源 BOM 随模块数量增长 | 1.6T 和 LRO/TRO 放量快于预期，模块功耗/热管理要求提高控制价值量 | 主机 ASIC、SerDes、模块、CMIS 和网络 OS 协同加速，线性架构超预期 | 光模块市场大幅增长，但 ADI 只覆盖控制/电源/TEC，不覆盖主 DSP 总额 | 基准=模块量正常上行；乐观=控制/热管理价值量上行 | 证据是 data center optical 与 power 对 ADI 通信增长贡献大体各半；反证是 DSP/TIA 竞争不等于 ADI 收入 |
+| 汽车 GMSL/A2B/BMS/安全电源 | FY2026Q2 Automotive +2% YoY；车载电子内容量提升，但整车产量和 EV 周期分化 | 全球轻型车/EV 需求弱，客户库存或平台延后 | 车载内容量提升抵消产量平淡，GMSL/A2B/BMS 正常兑现 | ADAS、座舱、BMS 平台订单改善，车企库存正常化 | 多个平台同步拉动，车载网络和 BMS 内容量显著上修 | 需求池以车端平台为单位，绝对变化通常慢于数据中心 | 基准略低速；乐观需要车企平台和库存同步改善 | 证据是 Q2 汽车收入稳定；反证是车市价格战、EV 需求和平台 SOP 延后 |
+| 传统无线/RF/通信 ex-Data Center | Communications ex-Data Center 年化约 $0.56B；无线基础设施仍处修复 | 运营商 capex 或无线基础设施订单继续低迷 | 传统通信按低速恢复处理 | 无线 capex、宽带和 RF 链路需求明显修复 | 多区域无线投资同步恢复 | 绝对需求变化小于数据中心和工业 | 基准保守；乐观需要运营商订单证据 | 证据是 Q2 通信强但主要由 data center 驱动；反证是非 DC 通信占比小 |
+| Consumer / prosumer analog 与边缘感知 | FY2026Q2 Consumer +23% YoY；周期修复但可见度有限 | 消费电子补库存结束，价格和订单回落 | 正常季节性和产品 mix 恢复 | 高端设备、音频/边缘感知和 prosumer 需求超预期 | 多个消费平台同步换代并提高模拟内容量 | 需求绝对量约 $1.5B 年化附近 | 基准=恢复；乐观=终端平台节奏上修 | 证据是 Q2 收入；反证是消费端周期和价格敏感 |
+| Empower IVR 与硅电容 | AI GPU/ASIC 供电从传统多相 VRM 向更高密度、更靠近负载、可遥测的 IVR/硅电容演进；但 ADI 并购尚未关闭 | 并购延迟、认证未进 NTM 或客户只做测试 | NTM 需求存在但对 ADI 合并收入不显著 | 关闭顺利且 hyperscaler/AI silicon 客户在 NTM 内开始小批量拉货 | IVR 成为关键 AI 平台的标准设计，2027 前置到 NTM | 外部需求可大，但 ADI NTM 可确认需求小 | 基准不纳入；极度乐观也是上限 | 官方并购稿和管理层均提示 2026H2 收入不显著；反证是没有已披露量化订单 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断外部需求中哪些能进入 ADI NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入。证据等级按收入表可确认性定义：A=已披露收入/分部/指引；B=订单、backlog、正式合同或明确交付时间表；C=design win、认证、产能规划或管理层可验证披露；D=产品发布/测试/早期合作；E=只有主题相关性。由于 ADI 不披露产品级 backlog 和产品级毛利率，子产品基数为估算，且低证据机会不进入基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 工业信号链、ATE、能源/A&D | FY2026Q2 Industrial $1.799B，年化约 $7.20B；Q2 +56% YoY | 直接收入表端市场 | 高毛利、高专有模拟 mix；经营利润无法可靠拆分 | $6.8-7.3B | $7.3-7.8B | $7.9-8.4B | $8.5-9.2B | 基准符合当前订单和 Q3 run-rate；悲观低于 record bookings | A/B | 是 | 端市场收入、record bookings、book-to-bill 强 | 进入 NTM 主表；ATE 子项只在产品解释中处理，不单独硬拆 |
+| Data Center Power Control / Power Management | Q2 data center 约 $416M/季，电源与 optical 大体各半；电源估计 $200-215M/季 | 直接进入 Communications / Data Center；非系统电源总额 | 高附加值控制、遥测、保护和电源管理 IC，毛利率方向高于公司平均但无法可靠量化 | $0.80-0.95B | $1.00-1.25B | $1.35-1.65B | $1.80-2.30B | 基准略高于 Q2 年化，反映订单延续；乐观才纳入超预期 AI rack 节奏 | B/C | 是，保守进入 | 管理层披露 data center 占 Communications 约 75%，并称 power 与 optical 同为增长驱动 | 进入 NTM 主表；800VDC/IVR 不自动进入基准 |
+| Optical Control / Compact Power | Q2 data center optical 估计 $200-215M/季；产品包括 optical module controller、TEC controller、compact power | 直接进入 Data Center，但不是 DSP/TIA 主收入 | 高可靠控制/热管理/电源 IC，毛利率方向较好；产品级经营利润无法可靠量化 | $0.80-1.00B | $0.95-1.20B | $1.25-1.55B | $1.60-2.00B | 基准符合 800G/1.6T 正常 ramp；乐观需 1.6T/热管理价值量提升 | B/C | 是，保守进入 | 管理层称 optical 与 power 共同拉动 data center；产品页验证 ADI 在 optical control/power 的位置 | 进入 NTM 主表；不得把光 DSP/TIA 总市场作为 ADI 收入 |
+| 汽车 GMSL/A2B/BMS/安全电源 | FY2026Q2 Automotive $872M，年化约 $3.49B；Q2 +2% YoY | 直接收入表端市场 | 专用模拟和连接产品，毛利方向稳定；受车市和客户平台影响 | $3.1-3.4B | $3.4-3.8B | $3.7-4.0B | $4.0-4.4B | 基准接近当前 run-rate；乐观需平台/库存改善 | A | 是 | 端市场收入和正常平台周期 | 进入 NTM 主表，作为稳定现金流而非非线性 AI 增量 |
+| 传统无线/RF/通信 ex-Data Center | Q2 Communications $555M 扣 data center 后估计 $139M/季，年化约 $0.56B | 直接端市场，但估算拆分 | 专用 RF/信号链，利润率方向可观但量小 | $0.45-0.55B | $0.55-0.70B | $0.65-0.75B | $0.80-1.00B | 基准保守；乐观需无线 capex 修复证据 | A/B | 是，小比例 | Communications 收入和 data center 占比披露可反推 | 进入 NTM 主表，但不是核心传导来源 |
+| Consumer / prosumer analog 与边缘感知 | FY2026Q2 Consumer $398M，年化约 $1.59B；Q2 +23% YoY | 直接收入表端市场 | mix 低于工业/数据中心，高周期属性 | $1.30-1.45B | $1.45-1.65B | $1.65-1.80B | $1.75-1.95B | 基准符合当前恢复；乐观需终端平台上修 | A | 是 | 端市场收入 | 进入 NTM 主表，但利润质量权重低于工业和数据中心 |
+| Empower IVR 与硅电容 | 并购尚未关闭；管理层提示 2026H2 收入不显著，2027 才可能有意义 | 尚未进入 ADI 合并收入表 | 若成功，可能是高价值 AI 电源技术；但 NTM 兑现和利润率缺证据 | $0 | $0-0.05B | $0.05-0.15B | $0.20-0.50B | 基准只承认极小或零；极度乐观仅代表 NTM 上限 | C/D | 否，除关闭后极小收入外不进入基准 | 并购公告、关闭时间、管理层对收入时点的描述 | 移入附录/乐观上限；不得作为 NTM 基准增长引擎 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从需求和收入基数出发，判断每个业务线在 NTM 内对 ADI 可确认收入和利润质量的贡献。产品级利润贡献不是 ADI 披露口径；除公司层面毛利率/经营利润率外，本节使用“毛利贡献方向”和“经营利润无法可靠拆分”表述，避免把行业 TAM、客户总预算或项目金额直接写成公司利润。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 工业信号链、ATE、能源/A&D | 悲观 | $6.8-7.3B | 毛利贡献仍高，但低利用率和费用杠杆压低经营利润；无法可靠拆分 | 低于当前结构 | 低于当前预期 | 工业需求若低于 record bookings，Q2 年化不可延续 | 保留悲观 | 工业客户 capex 延后、ATE 节奏推迟、订单转出货慢 |
+| 工业信号链、ATE、能源/A&D | 基准 | $7.3-7.8B | 支撑公司 72%-73.5% 调整后毛利率和约 48%-49.5% 调整后经营利润率 | 接近公司高质量核心 | 符合当前预期 | Q2 Industrial $1.799B；B2B record bookings | 保留基准 | ATE 子收入不披露，不能单独上修过多 |
+| 工业信号链、ATE、能源/A&D | 乐观 | $7.9-8.4B | 高毛利 mix 和利用率改善，推动公司经营利润率上行 | 上行 | 高于当前预期 | ATE、能源、A&D 和通用工业同步强 | 保留乐观 | 若增量来自低毛利项目或费用投入，上修会被吞噬 |
+| 工业信号链、ATE、能源/A&D | 极度乐观 | $8.5-9.2B | 若高端 ATE/仪器占比显著提升，利润率可非线性改善；可信度低 | 明显上行 | 显著高于当前预期 | 需要 HBM4/AI test 和工业周期双重突破 | 下移为乐观上限 | 缺产品级订单和利润率披露 |
+| Data Center Power Control / Power Management | 悲观 | $0.80-0.95B | 毛利贡献不差，但低于 AI rack 预期；若库存或价格重谈，利润率承压 | 持平或下行 | 低于当前预期 | AI rack power 交付或客户预算低于预期 | 保留悲观 | 认证、供电架构、交期和客户 capex 转化 |
+| Data Center Power Control / Power Management | 基准 | $1.00-1.25B | 高附加值控制/监测 IC 支撑公司高毛利；经营利润无法可靠拆分 | 高于公司平均方向 | 符合当前预期 | Q2 data center power 约 $200-215M/季，订单强 | 保留基准 | 子产品拆分为估算；不能把电源系统总额当 ADI 收入 |
+| Data Center Power Control / Power Management | 乐观 | $1.35-1.65B | mix 和规模效应改善，若 PMBus/PSM/热插拔/保护 IC 占比提升，利润率上行 | 上行 | 高于当前预期 | 48/50V rack power、AI ASIC/GPU 平台、遥测需求强 | 保留乐观 | 多供压价和客户自研电源架构 |
+| Data Center Power Control / Power Management | 极度乐观 | $1.80-2.30B | 只有差异化控制、保护、遥测和高利用率同时成立才转化为大幅利润 | 明显上行但低可信 | 显著高于当前预期 | 需要 rack power、800V/IVR 路线和客户认证同步突破 | 下移为乐观上限/附录跟踪 | 800VDC/IVR 多数仍是设计导入和认证问题 |
+| Optical Control / Compact Power | 悲观 | $0.80-1.00B | 收入存在但模块 ASP 压力和 qualification 延后压低利润弹性 | 持平 | 低于当前预期 | 1.6T 或线性光路线延迟 | 保留悲观 | 光模块价格、LPO/LRO 碎片化、客户认证 |
+| Optical Control / Compact Power | 基准 | $0.95-1.20B | TEC/控制/监测和 compact power 属高可靠模拟器件，毛利方向较好 | 高于平均方向 | 符合当前预期 | 管理层称 optical 同为 data center 增长驱动 | 保留基准 | ADI 不是光 DSP 主供应商，不可外推 DSP TAM |
+| Optical Control / Compact Power | 乐观 | $1.25-1.55B | 若热管理/控制价值量提升，收入上修较容易保留为毛利 | 上行 | 高于当前预期 | 800G/1.6T 放量、模块功耗和 TEC 需求增加 | 保留乐观 | 模块厂压价和多供替代 |
+| Optical Control / Compact Power | 极度乐观 | $1.60-2.00B | 需要 1.6T/线性路线、热管理复杂度和 ADI design win 同时突破 | 明显上行但低可信 | 显著高于当前预期 | 线性架构加速可能提高控制/电源价值量 | 下移为乐观上限 | 缺少 ADI 对光模块子产品的量化订单披露 |
+| 汽车 GMSL/A2B/BMS/安全电源 | 悲观 | $3.1-3.4B | 产量弱或平台延后导致利用率和 mix 承压 | 小幅下行 | 低于当前预期 | 汽车 Q2 仅 +2% YoY，周期弹性有限 | 保留悲观 | EV/轻型车需求、客户库存和价格战 |
+| 汽车 GMSL/A2B/BMS/安全电源 | 基准 | $3.4-3.8B | 稳定毛利和现金流贡献，低非线性 | 稳定 | 符合当前预期 | Q2 Automotive $872M，内容量提升抵消产量 | 保留基准 | 平台 SOP 节奏和客户库存 |
+| 汽车 GMSL/A2B/BMS/安全电源 | 乐观 | $3.7-4.0B | ADAS/座舱/BMS mix 改善可小幅推升利润率 | 小幅上行 | 略高于当前预期 | 车载网络和 BMS 内容量提升 | 保留乐观 | 车端订单通常不易在 NTM 内非线性上修 |
+| 汽车 GMSL/A2B/BMS/安全电源 | 极度乐观 | $4.0-4.4B | 多平台同步拉动才有明显经营杠杆，可信度低 | 上行但有限 | 高于当前预期 | 需要多家 OEM 平台集中放量 | 下移为乐观上限 | 车市周期和长认证周期限制 NTM 爆发 |
+| 传统无线/RF/通信 ex-Data Center | 悲观 | $0.45-0.55B | 量小且恢复慢，对公司利润影响有限 | 持平或下行 | 低于当前预期 | 非 DC 通信需求仍弱 | 保留悲观 | 运营商 capex 不恢复 |
+| 传统无线/RF/通信 ex-Data Center | 基准 | $0.55-0.70B | 专用 RF/信号链毛利方向较好，但绝对贡献小 | 稳定 | 符合当前预期 | Q2 Communications 可扣除 data center 估算 | 保留基准 | 拆分估算误差 |
+| 传统无线/RF/通信 ex-Data Center | 乐观 | $0.65-0.75B | 若无线 capex 恢复，可贡献少量经营杠杆 | 小幅上行 | 略高于当前预期 | 无线/宽带订单恢复 | 保留乐观 | 不是公司主要增量 |
+| 传统无线/RF/通信 ex-Data Center | 极度乐观 | $0.80-1.00B | 对公司利润改善有限 | 小幅上行 | 高于当前预期 | 需要多区域无线投资同步改善 | 下移为乐观上限 | 缺明确订单和市场改善信号 |
+| Consumer / prosumer analog 与边缘感知 | 悲观 | $1.30-1.45B | 低于公司核心 mix，若补库存结束则利润率承压 | 下行 | 低于当前预期 | 消费周期和价格敏感 | 保留悲观 | 终端需求波动 |
+| Consumer / prosumer analog 与边缘感知 | 基准 | $1.45-1.65B | 稳定贡献，利润质量低于工业/数据中心 | 持平 | 符合当前预期 | Q2 Consumer $398M，恢复态势 | 保留基准 | 可见度低于 B2B 订单 |
+| Consumer / prosumer analog 与边缘感知 | 乐观 | $1.65-1.80B | 若高端设备 mix 改善，利润率小幅改善 | 小幅上行 | 略高于当前预期 | 高端消费平台恢复 | 保留乐观 | 价格竞争和季节性 |
+| Consumer / prosumer analog 与边缘感知 | 极度乐观 | $1.75-1.95B | 对公司整体利润率拉动有限 | 持平至小幅上行 | 高于当前预期 | 多个平台同步强 | 下移为乐观上限 | 小基数和低可见度 |
+| Empower IVR 与硅电容 | 悲观 | $0 | 无 NTM 利润贡献；收购和整合反而占用现金 | 不适用 | 低于主题预期但符合收入确认纪律 | 未关闭、未并表、未披露订单 | 保留悲观 | 并购关闭、认证和客户量产 |
+| Empower IVR 与硅电容 | 基准 | $0-0.05B | 对 NTM 公司利润不显著；可能有整合费用 | 不显著 | 符合管理层“2026H2 不显著”表述 | 官方并购稿和电话会说明 | 保留基准但不作为主增量 | 无量化收入锚点 |
+| Empower IVR 与硅电容 | 乐观 | $0.05-0.15B | 小额高价值收入，但利润率仍受整合和初期规模影响 | 小幅正向 | 高于当前基准 | 关闭顺利且客户小批量采用 | 保留乐观 | 客户认证和收入确认节奏 |
+| Empower IVR 与硅电容 | 极度乐观 | $0.20-0.50B | 只有 IVR 设计成为关键 AI 平台标准方案才有高利润弹性 | 潜在上行但低可信 | 远高于当前预期 | 需要 hyperscaler/AI silicon 客户在 NTM 内快速量产 | 移入附录 | 管理层已经提示更有意义需求在 2027 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为 ADI NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。汇总时剔除重复计算：Data Center Power 与 Optical Control 均来自 Communications 内部 data center，不再叠加光模块 DSP/TIA 总市场、电源系统总额或客户 capex。Empower 未关闭且收入不显著，不作为基准增长引擎。绝对增速以 FY2026Q2 TTM 收入 $12.740B 为比较基数，利润率采用调整后口径，因该口径与公司指引和经营质量更一致。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | $14.0-14.8B | +10%-16% | 低于 Q3 指引年化 run-rate 和 record bookings 隐含路径；成长业务不足以完全抵消工业/消费/汽车或订单转化放缓 | 调整后约 70%-72% | 调整后约 44%-47% | 净利润约 $5.1-5.7B；EBITDA 无法可靠量化 | FCF 仍为正，约 $4.4-5.0B，但库存和应收占用上升 | 中 | AI rack power、光模块 ramp 或工业订单转出货低于预期；产能利用率和价格压力 |
+| 基准公司 | $15.4-16.2B | +21%-27% | 接近 Q3 指引、Q2/Q3 run-rate、B2B record bookings 和当前管理层预期的正常兑现 | 调整后约 72%-73.5% | 调整后约 48%-49.5% | 净利润约 $6.0-6.5B；EBITDA 无法可靠量化 | FCF 约 $5.2-5.8B，保持高转换率但需营运资本投入 | 中高 | 数据中心子产品收入不披露；工业强订单需要按期确认 |
+| 乐观公司 | $16.8-18.0B | +32%-41% | 高于当前预期；Data Center Power、Optical Control 和工业 ATE/信号链至少两项同步超预期 | 调整后约 73.5%-75% | 调整后约 50%-52% | 净利润约 $6.8-7.6B；EBITDA 无法可靠量化 | FCF 约 $5.9-6.8B，若高毛利 mix 上升则现金质量改善 | 中 | 乐观收入必须由客户订单、交付和高毛利 mix 支撑，不能只来自低毛利系统 pass-through |
+| 极度乐观公司 | $18.8-20.5B | +48%-61% | 显著高于当前预期；AI 电源、光模块控制、工业 ATE、汽车平台和 Empower/IVR 前置同时成立 | 调整后约 74.5%-76.5% | 调整后约 52%-54% | 净利润约 $7.8-9.0B；EBITDA 无法可靠量化 | FCF 约 $6.8-8.0B，但并购、库存和应收占用风险上升 | 低 | 需要需求、ADI 捕获、利润率和执行同时突破；任一环节缺证据即降为乐观上限 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在实际影响层级处理一次：AI capex 转化率属于需求风险，data center 子产品拆分属于收入基数风险，DSP/TIA 市场误用属于产品贡献风险，Empower 关闭和认证属于执行/收入确认风险。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026Q2 收入 $3.623B、TTM 收入 $12.740B、Q3 指引 $3.9B +/- $0.1B | 公司汇总 | 支撑 $15B+ NTM 基准；悲观低于当前 run-rate，需订单或需求恶化解释 | Q2 调整后毛利率 73.0%、调整后经营利润率 49.0%，支撑基准利润率 | 高利润率和 TTM FCF $4.565B 支撑现金流质量 | 保留基准 |
+| B2B record bookings、Industrial book-to-bill 强、Data Center 约占 Communications 75% | 需求、收入基数 | 支撑工业和 data center 的 A/B 级基准纳入 | 高毛利 B2B mix 支撑利润质量 | 订单转出货需库存、产能和应收管理 | 保留基准和乐观 |
+| ADI 不披露产品级 backlog、data center 子产品收入和产品级利润率 | 收入基数、产品贡献 | 限制 Data Center Power、Optical Control、ATE 的精确量化 | 不能把高增长直接转为确定利润率扩张 | 需要用后续订单、客户、交付和库存验证 | 下移极度乐观 |
+| 行业 AI 数据中心建设和 48/50V rack power 强，但电源系统总额不是 ADI 收入 | 需求、产品贡献 | 支撑需求池上行，不支撑把系统市场直接计入 ADI | ADI 价值在控制/遥测/保护/电源管理 IC，不是所有电源硬件 | 避免 capex、系统收入和 IC 收入重复计算 | 保留乐观，排除 E 级映射 |
+| 800G/1.6T optical 放量，但 ADI 不是光 DSP 主线 | 产品贡献 | 支撑 optical control/TEC/power 收入，不支撑 DSP/TIA TAM 外推 | 控制/热管理价值量上升可改善 mix | 模块 ASP 压力和路线碎片化影响确认节奏 | 保留基准/乐观，排除 DSP 外推 |
+| 汽车端 Q2 只 +2% YoY，Consumer +23% YoY 但周期可见度低 | 公司组合 | 汽车稳定但非非线性；Consumer 可恢复但不能成为公司极度乐观核心 | 汽车和 Consumer 利润质量低于工业/高端数据中心 | 终端库存和价格周期影响现金转换 | 保留基准，限制极度乐观 |
+| Empower 收购预计 2026H2 关闭，管理层称 2026H2 收入不显著、2027 需求才可能有意义 | 收入确认、执行 | 不进入 NTM 基准，只允许极小额或乐观/极度乐观上限 | 初期收入和整合成本对 NTM 利润影响不确定 | $1.5B 现金收购影响现金/净债务；客户认证决定兑现 | 移入附录/仅作跟踪 |
+| AI capex 转化率、供电标准、认证、field reliability 和客户多供压价 | 需求、份额、价格 | 若恶化，限制 Data Center Power 和 Optical Control 的乐观/极度乐观 | 价格和多供压价会吞噬收入弹性 | 认证或 field failure 会把收入确认推迟 2-4 个季度 | 保留悲观，限制极度乐观 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 $14.0-14.8B，低于当前 run-rate；利润率降至调整后经营利润率 44%-47% | 公司基准仍有 A 级收入和高毛利结构，悲观不是断崖式下滑 | 工业和 data center 订单强，Q3 指引高于 Q2 run-rate | 保留 | 悲观公司 | 中 | AI capex 放缓只在需求层处理，不再在产品份额和利润率重复压低 |
+| 基准 | NTM 收入 $15.4-16.2B，接近 Q3 指引年化和 record bookings 正常兑现 | Q2 收入、Q3 指引、端市场披露、data center 占比和调整后利润率均有 A/B 级证据 | 子产品收入和产品级利润率未披露，Data Center Power/Optical 拆分需估算 | 保留 | 基准公司 | 中高 | 产品级拆分不确定只限制细项精度，不否定公司端市场收入表 |
+| 乐观 | NTM 收入 $16.8-18.0B，工业、data center power 和 optical 至少两项强于当前预期 | AI rack power、800G/1.6T optical、Industrial record bookings 和高毛利 mix 均有正向证据 | 需要客户订单、交付、价格和利润留存同时验证；不能只凭行业 beta | 保留 | 乐观公司 | 中 | 光模块总市场和电源系统总市场不得重复作为 ADI 收入上修 |
+| 极度乐观 | NTM 收入 $18.8-20.5B，多个核心环节同时突破 | 若 AI 电源、光控制、工业 ATE、汽车和 Empower 同步提前，理论上存在上限 | 任一核心环节缺证据；Empower 管理层已提示 2026H2 收入不显著；产品级订单不披露 | 下移 | 乐观上限/附录跟踪 | 低 | Empower 和 800V/IVR 的远期价值只在执行/收入确认层处理，不重复推高需求和利润 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。ADI 的 NTM 收入最可能落在 $15.4-16.2B，核心原因是 Q3 指引年化约 $15.6B、FY2026Q2 端市场收入和 B2B record bookings 已经提供 A/B 级锚点。该结论不是把 AI 数据中心行业增速直接套到 ADI，而是只承认 Communications 内 data center、Industrial、Automotive 和 Consumer 的可确认收入路径。
+- NTM 收入结论：Data Center Power 和 Optical Control 是最重要的增量传导链，各自基准约 $1.0B 左右至 $1.2B 左右，乐观可分别到 $1.35-1.65B 和 $1.25-1.55B；Industrial 是最大收入池，基准 $7.3-7.8B；汽车和 Consumer 提供稳定底盘但不是极度乐观核心。Empower 不进入 NTM 基准，最多是乐观/极度乐观上限和 2027 后跟踪项。
+- 利润/现金流结论：基准情景下，ADI 可以维持约 72%-73.5% 调整后毛利率和 48%-49.5% 调整后经营利润率，FCF 约 $5.2-5.8B。乐观情景成立时，利润改善来自高毛利数据中心电源控制、光控制/TEC、工业信号链和 ATE mix，而不是低毛利系统硬件规模扩大。
+- 主要传导瓶颈：最大瓶颈不是外部 AI 需求是否存在，而是 ADI 可确认收入的披露和执行路径。Data Center Power 与 Optical Control 缺少独立收入表、订单和利润率披露；工业 ATE/HBM4 也缺少子收入；Empower 仍处并购关闭和客户认证阶段。
+- 乐观情景成立条件：B2B record bookings 转为出货；AI rack power 订单继续高于 Q2 年化；800G/1.6T 模块带动 optical control、TEC 和 compact power 价值量上升；Industrial ATE/能源/A&D 需求强；公司维持 73%+ 调整后毛利率且费用率不明显上升。
+- 极度乐观情景成立条件：AI 电源架构升级、光模块热管理和控制、工业 ATE、汽车平台以及 Empower IVR 客户导入同时在 NTM 内兑现，并且这些增量以高毛利 IC 和控制/监测内容为主。当前证据不足以把该情景保留为独立主口径，应视为乐观上限和附录跟踪。
+- 悲观情景触发条件：AI capex 转为可确认订单比例下降、rack power/optical qualification 延后、工业订单转出货慢于预期、汽车和 Consumer 库存再度恶化、价格重谈或多供压价导致毛利率跌破当前结构。
+- 后续跟踪数据：FY2026Q3 实际收入和 Q4 指引；Communications 中 data center 占比是否继续高于 75%；管理层是否继续确认 power 与 optical 共同拉动；Industrial book-to-bill 和订单转出货；channel inventory 周数；调整后毛利率/经营利润率；Empower 关闭时间、客户量产和 2027 revenue commentary。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：ADI FY2026Q2 季度截至 2026-05-02；公司于 2026-05-20 发布 FY2026Q2 新闻稿和电话会材料；本报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - ADI FY2026Q2 新闻稿：收入 $3.623B、端市场收入、调整后毛利率 73.0%、调整后经营利润率 49.0%、Q3 收入和利润率指引、TTM 经营现金流和自由现金流。官方链接：https://investor.analog.com/news-releases/news-release-details/analog-devices-reports-record-fiscal-second-quarter-2026
+  - ADI FY2026Q2 earnings call transcript：data center 约占 Communications 75%，power 与 optical 均为 data center 增长驱动，B2B record bookings、channel inventory 和 lead time 评论。官方链接：https://investor.analog.com/static-files/74245ffb-8308-4b7d-bdc4-db7abf2ce11b
+  - ADI FY2026Q1 earnings call transcript：data center power、orders、book-to-bill 和 supply commentary 补充。官方链接：https://investor.analog.com/static-files/6040f10c-669c-487e-bfa8-60eb1db6c369
+  - ADI FY2026Q2 Form 10-Q：现金、债务、财务报表和会计口径补充。官方链接：https://investor.analog.com/static-files/f8b4d945-6385-400d-a93c-dce7bda80c46
+  - ADI 收购 Empower Semiconductor 公告：交易对价 $1.5B、预计 2026H2 关闭、IVR/硅电容产品定位和 hyperscaler/AI silicon 客户方向。官方链接：https://investor.analog.com/news-releases/news-release-details/analog-devices-acquire-empower-semiconductor-expanding-its-next
+  - ADI Data Center Solutions、Power Management、Optical Networking 产品页：用于验证 ADI 在 data center power、optical control、TEC、compact power、power system management、hot swap/protection 等产品位置。官方链接：https://www.analog.com/en/solutions/data-center.html ，https://www.analog.com/en/product-category/power.html ，https://www.analog.com/en/solutions/data-center/optical-networking.html
+- 本地公司资料：
+  - `公司调研/AI计算芯片_EDA_IP_custom_ASIC/ADI_Analog_Devices_公司调研_2026-06-11.md`：用于公司端市场、data center 拆分、产品清单、管理层表述和本地研究口径校验。
+- 本地行业资料：
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`：用于 AI 数据中心建设、rack、光模块、capex 转订单和反证口径。
+  - `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`：用于防止把 capex、供应商收入、设备订单、云收入和项目金额重复相加。
+  - `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`：用于 48/50V rack power、800VDC/IVR、power shelf、BBU、保护和电源控制需求。
+  - `行业调研/AI网络_光互联_铜互联/行业调研_光DSP、TIA与CDR芯片_2026-06-11.md` 与 `行业调研/AI网络_光互联_铜互联/行业调研_LPO_LRO线性光模块_2026-06-11.md`：用于光模块、1.6T、LPO/LRO 和 ADI 非 DSP 主线的边界。
+  - `行业调研/AI服务器_存储_芯片/行业调研_精密时钟与同步芯片_2026-06-10.md` 与 `行业调研/AI服务器_存储_芯片/行业调研_服务器BMC、MCU与嵌入式控制_2026-06-10.md`：用于 timing/sync 和服务器电源/控制远期期权边界。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 主线：Q3 指引和 Q2 run-rate 已经指向 $15B+ 年化收入能力，但 NTM 仍需订单转出货和端市场正常兑现。
+  - FY2027 补充：Empower IVR、800VDC、更多 AI ASIC/GPU 平台电源架构和更大规模 1.6T/线性光模块可能成为更明显收入来源，但当前不能替代 NTM 基准。
+  - 长期 run-rate：Data Center Power、Optical Control、工业 ATE 和 Empower 共同决定 ADI 是否从周期复苏转为结构性增长；但长期 TAM、客户 capex 或项目总金额均未直接计入本报告 NTM 收入。
+  - 远期期权：Empower IVR/硅电容、800VDC rack、CPO/NPO/线性光路线、timing/sync 和 AI 服务器嵌入式控制只在有客户、产品、交付和收入确认时间表后才可进入基准。

@@ -1,0 +1,638 @@
+{
+  "tasks": [
+    {
+      "id": "scenario-horizons-20260907-152623-MU",
+      "subject": "MU"
+    },
+    {
+      "id": "scenario-horizons-20260907-152623-SNDK",
+      "subject": "SNDK"
+    },
+    {
+      "id": "scenario-horizons-20260907-152623-CRDO",
+      "subject": "CRDO"
+    },
+    {
+      "id": "scenario-horizons-20260907-152623-GNRC",
+      "subject": "GNRC"
+    },
+    {
+      "id": "scenario-horizons-20260907-152623-LWLG",
+      "subject": "LWLG"
+    },
+    {
+      "id": "scenario-horizons-20260907-152623-SPACEX",
+      "subject": "SPACEX"
+    },
+    {
+      "id": "scenario-horizons-20260907-152623-GOOGL",
+      "subject": "GOOGL"
+    },
+    {
+      "id": "scenario-horizons-20260907-152623-AMZN",
+      "subject": "AMZN"
+    },
+    {
+      "id": "scenario-horizons-20260907-152623-BE",
+      "subject": "BE"
+    }
+  ],
+  "createdAt": "2026-09-07T15:26:24.1882759-07:00",
+  "planSha256": "B9A747F38D207711D7B8919C94B6BB8151121943D6B943EB466BB36B58828657",
+  "auditStarted": true,
+  "planPath": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\研究方案.md",
+  "previousAudit": "D:\\drive\\Investment\\备份\\九家公司情景投资全面审查_2026-09-07\\九家公司情景投资报告_全面审查.md",
+  "concurrency": 9,
+  "batchId": "scenario-horizons-20260907-152623",
+  "auditCompleted": true,
+  "reasoning": "high",
+  "model": "gpt-6-astra",
+  "runnerPid": 40876,
+  "launchedAt": "2026-09-07T15:26:41.0472312-07:00",
+  "automationId": "automation-3",
+  "promptVerification": [
+    {
+      "subject": "MU",
+      "newPlanExactPrefix": true,
+      "cells": 12,
+      "model": "gpt-6-astra",
+      "reasoning": "high",
+      "promptDebug": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-07T22-26-42-360Z_company-investment-decision_MU_prompt.md"
+    },
+    {
+      "subject": "SNDK",
+      "newPlanExactPrefix": true,
+      "cells": 12,
+      "model": "gpt-6-astra",
+      "reasoning": "high",
+      "promptDebug": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-07T22-26-43-455Z_company-investment-decision_SNDK_prompt.md"
+    },
+    {
+      "subject": "CRDO",
+      "newPlanExactPrefix": true,
+      "cells": 12,
+      "model": "gpt-6-astra",
+      "reasoning": "high",
+      "promptDebug": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-07T22-26-44-490Z_company-investment-decision_CRDO_prompt.md"
+    },
+    {
+      "subject": "GNRC",
+      "newPlanExactPrefix": true,
+      "cells": 12,
+      "model": "gpt-6-astra",
+      "reasoning": "high",
+      "promptDebug": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-07T22-26-45-372Z_company-investment-decision_GNRC_prompt.md"
+    },
+    {
+      "subject": "LWLG",
+      "newPlanExactPrefix": true,
+      "cells": 12,
+      "model": "gpt-6-astra",
+      "reasoning": "high",
+      "promptDebug": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-07T22-26-46-290Z_company-investment-decision_LWLG_prompt.md"
+    },
+    {
+      "subject": "SPACEX",
+      "newPlanExactPrefix": true,
+      "cells": 12,
+      "model": "gpt-6-astra",
+      "reasoning": "high",
+      "promptDebug": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-07T22-26-47-366Z_company-investment-decision_SPACEX_prompt.md"
+    },
+    {
+      "subject": "GOOGL",
+      "newPlanExactPrefix": true,
+      "cells": 12,
+      "model": "gpt-6-astra",
+      "reasoning": "high",
+      "promptDebug": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-07T22-26-48-578Z_company-investment-decision_GOOGL_prompt.md"
+    },
+    {
+      "subject": "AMZN",
+      "newPlanExactPrefix": true,
+      "cells": 12,
+      "model": "gpt-6-astra",
+      "reasoning": "high",
+      "promptDebug": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-07T22-26-49-478Z_company-investment-decision_AMZN_prompt.md"
+    },
+    {
+      "subject": "BE",
+      "newPlanExactPrefix": true,
+      "cells": 12,
+      "model": "gpt-6-astra",
+      "reasoning": "high",
+      "promptDebug": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-07T22-26-50-461Z_company-investment-decision_BE_prompt.md"
+    }
+  ],
+  "preparedBackups": [
+    {
+      "timestamp": "2026-09-07T22:26:42.307Z",
+      "level": "info",
+      "event": "Prepared company-investment-decision/MU formal run.",
+      "backupDir": "分析报告/公司情景投资决策/结果/备份/MU_2026-09-07T15_26_42-07_00-e47a15af1b",
+      "files": [
+        {
+          "from": "分析报告/公司情景投资决策/结果/MU_经营情景市场状态投资决策_2026-09-07.md",
+          "to": "分析报告/公司情景投资决策/结果/备份/MU_2026-09-07T15_26_42-07_00-e47a15af1b/MU_经营情景市场状态投资决策_2026-09-07.md"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-07T22:26:43.407Z",
+      "level": "info",
+      "event": "Prepared company-investment-decision/SNDK formal run.",
+      "backupDir": "分析报告/公司情景投资决策/结果/备份/SNDK_2026-09-07T15_26_43-07_00-9681c32009",
+      "files": [
+        {
+          "from": "分析报告/公司情景投资决策/结果/SNDK_经营情景市场状态投资决策_2026-09-07.md",
+          "to": "分析报告/公司情景投资决策/结果/备份/SNDK_2026-09-07T15_26_43-07_00-9681c32009/SNDK_经营情景市场状态投资决策_2026-09-07.md"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-07T22:26:44.442Z",
+      "level": "info",
+      "event": "Prepared company-investment-decision/CRDO formal run.",
+      "backupDir": "分析报告/公司情景投资决策/结果/备份/CRDO_2026-09-07T15_26_44-07_00-3ea2a5e4cf",
+      "files": [
+        {
+          "from": "分析报告/公司情景投资决策/结果/CRDO_经营情景市场状态投资决策_2026-09-07.md",
+          "to": "分析报告/公司情景投资决策/结果/备份/CRDO_2026-09-07T15_26_44-07_00-3ea2a5e4cf/CRDO_经营情景市场状态投资决策_2026-09-07.md"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-07T22:26:45.327Z",
+      "level": "info",
+      "event": "Prepared company-investment-decision/GNRC formal run.",
+      "backupDir": "分析报告/公司情景投资决策/结果/备份/GNRC_2026-09-07T15_26_45-07_00-355a2090db",
+      "files": [
+        {
+          "from": "分析报告/公司情景投资决策/结果/GNRC_经营情景市场状态投资决策_2026-09-07.md",
+          "to": "分析报告/公司情景投资决策/结果/备份/GNRC_2026-09-07T15_26_45-07_00-355a2090db/GNRC_经营情景市场状态投资决策_2026-09-07.md"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-07T22:26:46.243Z",
+      "level": "info",
+      "event": "Prepared company-investment-decision/LWLG formal run.",
+      "backupDir": "分析报告/公司情景投资决策/结果/备份/LWLG_2026-09-07T15_26_46-07_00-f47dfb900a",
+      "files": [
+        {
+          "from": "分析报告/公司情景投资决策/结果/LWLG_经营情景市场状态投资决策_2026-09-07.md",
+          "to": "分析报告/公司情景投资决策/结果/备份/LWLG_2026-09-07T15_26_46-07_00-f47dfb900a/LWLG_经营情景市场状态投资决策_2026-09-07.md"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-07T22:26:47.321Z",
+      "level": "info",
+      "event": "Prepared company-investment-decision/SPACEX formal run.",
+      "backupDir": "分析报告/公司情景投资决策/结果/备份/SPACEX_2026-09-07T15_26_47-07_00-5b3a678de0",
+      "files": [
+        {
+          "from": "分析报告/公司情景投资决策/结果/SPACEX_经营情景市场状态投资决策_2026-09-07.md",
+          "to": "分析报告/公司情景投资决策/结果/备份/SPACEX_2026-09-07T15_26_47-07_00-5b3a678de0/SPACEX_经营情景市场状态投资决策_2026-09-07.md"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-07T22:26:48.532Z",
+      "level": "info",
+      "event": "Prepared company-investment-decision/GOOGL formal run.",
+      "backupDir": "分析报告/公司情景投资决策/结果/备份/GOOGL_2026-09-07T15_26_48-07_00-61c02f43c9",
+      "files": [
+        {
+          "from": "分析报告/公司情景投资决策/结果/GOOGL_经营情景市场状态投资决策_2026-09-07.md",
+          "to": "分析报告/公司情景投资决策/结果/备份/GOOGL_2026-09-07T15_26_48-07_00-61c02f43c9/GOOGL_经营情景市场状态投资决策_2026-09-07.md"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-07T22:26:49.430Z",
+      "level": "info",
+      "event": "Prepared company-investment-decision/AMZN formal run.",
+      "backupDir": "分析报告/公司情景投资决策/结果/备份/AMZN_2026-09-07T15_26_49-07_00-1287ea15d6",
+      "files": [
+        {
+          "from": "分析报告/公司情景投资决策/结果/AMZN_经营情景市场状态投资决策_2026-09-07.md",
+          "to": "分析报告/公司情景投资决策/结果/备份/AMZN_2026-09-07T15_26_49-07_00-1287ea15d6/AMZN_经营情景市场状态投资决策_2026-09-07.md"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-07T22:26:50.412Z",
+      "level": "info",
+      "event": "Prepared company-investment-decision/BE formal run.",
+      "backupDir": "分析报告/公司情景投资决策/结果/备份/BE_2026-09-07T15_26_50-07_00-1be4caa43a",
+      "files": [
+        {
+          "from": "分析报告/公司情景投资决策/结果/BE_经营情景市场状态投资决策_2026-09-07.md",
+          "to": "分析报告/公司情景投资决策/结果/备份/BE_2026-09-07T15_26_50-07_00-1be4caa43a/BE_经营情景市场状态投资决策_2026-09-07.md"
+        }
+      ]
+    }
+  ],
+  "auditStartedAt": "2026-09-07T15:58:56.693223-07:00",
+  "selectedTasks": [
+    {
+      "id": "scenario-horizons-20260907-152623-GNRC",
+      "domain": "company-investment-decision",
+      "sourceDate": "2026-09-07",
+      "subject": "GNRC",
+      "displayName": "Generac Holdings",
+      "category": "电力_发电_能源_储能",
+      "status": "done",
+      "attempts": 1,
+      "outputFile": "分析报告/公司情景投资决策/结果/GNRC_经营情景市场状态投资决策_2026-09-07.md",
+      "startedAt": "2026-09-07 15:26:44",
+      "finishedAt": "2026-09-07 15:54:17",
+      "note": "codex_sdk_done",
+      "createdAt": "2026-09-07T15:26:23-07:00",
+      "updatedAt": "2026-09-07T15:54:17-07:00",
+      "reasoningEffort": "high",
+      "tokenUsage": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "formal": {
+              "inputTokens": 3320285,
+              "cachedInputTokens": 3159680,
+              "outputTokens": 43639,
+              "reasoningOutputTokens": 8542,
+              "totalTokens": 3363924,
+              "uncachedInputTokens": 160605,
+              "cachedInputRatio": 0.9516291523167439,
+              "model": "gpt-6-astra",
+              "reasoningEffort": "high",
+              "threadId": "01a07dfb-2388-7ad0-85d2-e2ffeaae3d31",
+              "threadCount": 1,
+              "subagentThreadCount": 0,
+              "unresolvedThreadCount": 0,
+              "usageSource": "sdk+codex_session_telemetry",
+              "includesSubagents": false
+            },
+            "total": {
+              "inputTokens": 3320285,
+              "cachedInputTokens": 3159680,
+              "outputTokens": 43639,
+              "reasoningOutputTokens": 8542,
+              "totalTokens": 3363924,
+              "uncachedInputTokens": 160605,
+              "cachedInputRatio": 0.9516291523167439,
+              "includesSubagents": false,
+              "usageAggregation": "parent_plus_subagents",
+              "threadCount": 1,
+              "subagentThreadCount": 0,
+              "unresolvedThreadCount": 0
+            },
+            "includesSubagents": false,
+            "usageAggregation": "parent_plus_subagents"
+          }
+        ],
+        "total": {
+          "inputTokens": 3320285,
+          "cachedInputTokens": 3159680,
+          "outputTokens": 43639,
+          "reasoningOutputTokens": 8542,
+          "totalTokens": 3363924,
+          "uncachedInputTokens": 160605,
+          "cachedInputRatio": 0.9516291523167439,
+          "threadCount": 1,
+          "subagentThreadCount": 0,
+          "unresolvedThreadCount": 0,
+          "includesSubagents": false
+        },
+        "includesSubagents": false,
+        "threadCount": 1,
+        "subagentThreadCount": 0,
+        "unresolvedThreadCount": 0,
+        "usageAggregation": "parent_plus_subagents"
+      },
+      "archivedAt": "2026-09-07T15:54:17-07:00",
+      "auditSnapshot": "D:\\drive\\Investment\\备份\\情景投资三期限首批复核_20260907-152623\\GNRC_新报告.md",
+      "previousOutputFile": "分析报告/公司情景投资决策/结果/备份/GNRC_2026-09-07T15_26_45-07_00-355a2090db/GNRC_经营情景市场状态投资决策_2026-09-07.md",
+      "sha256": "eb39f35ff29366a9100eac9dddea107a331d0c1cc81cb39fd08d4596a84a73ce"
+    },
+    {
+      "id": "scenario-horizons-20260907-152623-MU",
+      "domain": "company-investment-decision",
+      "sourceDate": "2026-09-07",
+      "subject": "MU",
+      "displayName": "Micron Technology 美光科技",
+      "category": "AI服务器_存储_EMS",
+      "status": "done",
+      "attempts": 1,
+      "outputFile": "分析报告/公司情景投资决策/结果/MU_经营情景市场状态投资决策_2026-09-07.md",
+      "startedAt": "2026-09-07 15:26:41",
+      "finishedAt": "2026-09-07 15:56:31",
+      "note": "codex_sdk_done",
+      "createdAt": "2026-09-07T15:26:23-07:00",
+      "updatedAt": "2026-09-07T15:56:31-07:00",
+      "reasoningEffort": "high",
+      "tokenUsage": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "formal": {
+              "inputTokens": 3666449,
+              "cachedInputTokens": 3484672,
+              "outputTokens": 46063,
+              "reasoningOutputTokens": 9280,
+              "totalTokens": 3712512,
+              "uncachedInputTokens": 181777,
+              "cachedInputRatio": 0.950421511386085,
+              "model": "gpt-6-astra",
+              "reasoningEffort": "high",
+              "threadId": "01a07dfb-17d6-7b90-8fbf-146874e91feb",
+              "threadCount": 1,
+              "subagentThreadCount": 0,
+              "unresolvedThreadCount": 0,
+              "usageSource": "sdk+codex_session_telemetry",
+              "includesSubagents": false
+            },
+            "total": {
+              "inputTokens": 3666449,
+              "cachedInputTokens": 3484672,
+              "outputTokens": 46063,
+              "reasoningOutputTokens": 9280,
+              "totalTokens": 3712512,
+              "uncachedInputTokens": 181777,
+              "cachedInputRatio": 0.950421511386085,
+              "includesSubagents": false,
+              "usageAggregation": "parent_plus_subagents",
+              "threadCount": 1,
+              "subagentThreadCount": 0,
+              "unresolvedThreadCount": 0
+            },
+            "includesSubagents": false,
+            "usageAggregation": "parent_plus_subagents"
+          }
+        ],
+        "total": {
+          "inputTokens": 3666449,
+          "cachedInputTokens": 3484672,
+          "outputTokens": 46063,
+          "reasoningOutputTokens": 9280,
+          "totalTokens": 3712512,
+          "uncachedInputTokens": 181777,
+          "cachedInputRatio": 0.950421511386085,
+          "threadCount": 1,
+          "subagentThreadCount": 0,
+          "unresolvedThreadCount": 0,
+          "includesSubagents": false
+        },
+        "includesSubagents": false,
+        "threadCount": 1,
+        "subagentThreadCount": 0,
+        "unresolvedThreadCount": 0,
+        "usageAggregation": "parent_plus_subagents"
+      },
+      "archivedAt": "2026-09-07T15:56:31-07:00",
+      "auditSnapshot": "D:\\drive\\Investment\\备份\\情景投资三期限首批复核_20260907-152623\\MU_新报告.md",
+      "previousOutputFile": "分析报告/公司情景投资决策/结果/备份/MU_2026-09-07T15_26_42-07_00-e47a15af1b/MU_经营情景市场状态投资决策_2026-09-07.md",
+      "sha256": "804ea1c990f2438c6d83dc917c60fa0053819b9f42e9befb397cb3a427790b07"
+    },
+    {
+      "id": "scenario-horizons-20260907-152623-LWLG",
+      "domain": "company-investment-decision",
+      "sourceDate": "2026-09-07",
+      "subject": "LWLG",
+      "displayName": "Lightwave Logic",
+      "category": "AI网络_光互联_连接器",
+      "status": "done",
+      "attempts": 1,
+      "outputFile": "分析报告/公司情景投资决策/结果/LWLG_经营情景市场状态投资决策_2026-09-07.md",
+      "startedAt": "2026-09-07 15:26:45",
+      "finishedAt": "2026-09-07 15:57:19",
+      "note": "codex_sdk_done",
+      "createdAt": "2026-09-07T15:26:23-07:00",
+      "updatedAt": "2026-09-07T15:57:19-07:00",
+      "reasoningEffort": "high",
+      "tokenUsage": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "formal": {
+              "inputTokens": 3776531,
+              "cachedInputTokens": 3592320,
+              "outputTokens": 45732,
+              "reasoningOutputTokens": 12301,
+              "totalTokens": 3822263,
+              "uncachedInputTokens": 184211,
+              "cachedInputRatio": 0.9512221665862136,
+              "model": "gpt-6-astra",
+              "reasoningEffort": "high",
+              "threadId": "01a07dfb-2717-76c1-96e7-4053ec96773b",
+              "threadCount": 1,
+              "subagentThreadCount": 0,
+              "unresolvedThreadCount": 0,
+              "usageSource": "sdk+codex_session_telemetry",
+              "includesSubagents": false
+            },
+            "total": {
+              "inputTokens": 3776531,
+              "cachedInputTokens": 3592320,
+              "outputTokens": 45732,
+              "reasoningOutputTokens": 12301,
+              "totalTokens": 3822263,
+              "uncachedInputTokens": 184211,
+              "cachedInputRatio": 0.9512221665862136,
+              "includesSubagents": false,
+              "usageAggregation": "parent_plus_subagents",
+              "threadCount": 1,
+              "subagentThreadCount": 0,
+              "unresolvedThreadCount": 0
+            },
+            "includesSubagents": false,
+            "usageAggregation": "parent_plus_subagents"
+          }
+        ],
+        "total": {
+          "inputTokens": 3776531,
+          "cachedInputTokens": 3592320,
+          "outputTokens": 45732,
+          "reasoningOutputTokens": 12301,
+          "totalTokens": 3822263,
+          "uncachedInputTokens": 184211,
+          "cachedInputRatio": 0.9512221665862136,
+          "threadCount": 1,
+          "subagentThreadCount": 0,
+          "unresolvedThreadCount": 0,
+          "includesSubagents": false
+        },
+        "includesSubagents": false,
+        "threadCount": 1,
+        "subagentThreadCount": 0,
+        "unresolvedThreadCount": 0,
+        "usageAggregation": "parent_plus_subagents"
+      },
+      "archivedAt": "2026-09-07T15:57:19-07:00",
+      "auditSnapshot": "D:\\drive\\Investment\\备份\\情景投资三期限首批复核_20260907-152623\\LWLG_新报告.md",
+      "previousOutputFile": "分析报告/公司情景投资决策/结果/备份/LWLG_2026-09-07T15_26_46-07_00-f47dfb900a/LWLG_经营情景市场状态投资决策_2026-09-07.md",
+      "sha256": "ea224d3258feca6fe383e719045a7756a25a1bc60eb5df67da20a501d2d7c93f"
+    },
+    {
+      "id": "scenario-horizons-20260907-152623-BE",
+      "domain": "company-investment-decision",
+      "sourceDate": "2026-09-07",
+      "subject": "BE",
+      "displayName": "Bloom Energy",
+      "category": "电力_发电_能源_储能",
+      "status": "done",
+      "attempts": 1,
+      "outputFile": "分析报告/公司情景投资决策/结果/BE_经营情景市场状态投资决策_2026-09-07.md",
+      "startedAt": "2026-09-07 15:26:49",
+      "finishedAt": "2026-09-07 15:58:28",
+      "note": "codex_sdk_done",
+      "createdAt": "2026-09-07T15:26:24-07:00",
+      "updatedAt": "2026-09-07T15:58:28-07:00",
+      "reasoningEffort": "high",
+      "tokenUsage": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "formal": {
+              "inputTokens": 4454368,
+              "cachedInputTokens": 4174592,
+              "outputTokens": 46125,
+              "reasoningOutputTokens": 9510,
+              "totalTokens": 4500493,
+              "uncachedInputTokens": 279776,
+              "cachedInputRatio": 0.9371906407373616,
+              "model": "gpt-6-astra",
+              "reasoningEffort": "high",
+              "threadId": "01a07dfb-375f-7a82-8a1b-6c56ed7994a2",
+              "threadCount": 1,
+              "subagentThreadCount": 0,
+              "unresolvedThreadCount": 0,
+              "usageSource": "sdk+codex_session_telemetry",
+              "includesSubagents": false
+            },
+            "total": {
+              "inputTokens": 4454368,
+              "cachedInputTokens": 4174592,
+              "outputTokens": 46125,
+              "reasoningOutputTokens": 9510,
+              "totalTokens": 4500493,
+              "uncachedInputTokens": 279776,
+              "cachedInputRatio": 0.9371906407373616,
+              "includesSubagents": false,
+              "usageAggregation": "parent_plus_subagents",
+              "threadCount": 1,
+              "subagentThreadCount": 0,
+              "unresolvedThreadCount": 0
+            },
+            "includesSubagents": false,
+            "usageAggregation": "parent_plus_subagents"
+          }
+        ],
+        "total": {
+          "inputTokens": 4454368,
+          "cachedInputTokens": 4174592,
+          "outputTokens": 46125,
+          "reasoningOutputTokens": 9510,
+          "totalTokens": 4500493,
+          "uncachedInputTokens": 279776,
+          "cachedInputRatio": 0.9371906407373616,
+          "threadCount": 1,
+          "subagentThreadCount": 0,
+          "unresolvedThreadCount": 0,
+          "includesSubagents": false
+        },
+        "includesSubagents": false,
+        "threadCount": 1,
+        "subagentThreadCount": 0,
+        "unresolvedThreadCount": 0,
+        "usageAggregation": "parent_plus_subagents"
+      },
+      "archivedAt": "2026-09-07T15:58:28-07:00",
+      "auditSnapshot": "D:\\drive\\Investment\\备份\\情景投资三期限首批复核_20260907-152623\\BE_新报告.md",
+      "previousOutputFile": "分析报告/公司情景投资决策/结果/备份/BE_2026-09-07T15_26_50-07_00-1be4caa43a/BE_经营情景市场状态投资决策_2026-09-07.md",
+      "sha256": "da082303996adf12a42f9aafec862e6905fe59edaf4a005a44ddeb1a921f91f0"
+    },
+    {
+      "id": "scenario-horizons-20260907-152623-SNDK",
+      "domain": "company-investment-decision",
+      "sourceDate": "2026-09-07",
+      "subject": "SNDK",
+      "displayName": "SanDisk",
+      "category": "AI服务器_存储_EMS",
+      "status": "done",
+      "attempts": 1,
+      "outputFile": "分析报告/公司情景投资决策/结果/SNDK_经营情景市场状态投资决策_2026-09-07.md",
+      "startedAt": "2026-09-07 15:26:42",
+      "finishedAt": "2026-09-07 15:58:33",
+      "note": "codex_sdk_done",
+      "createdAt": "2026-09-07T15:26:23-07:00",
+      "updatedAt": "2026-09-07T15:58:33-07:00",
+      "reasoningEffort": "high",
+      "tokenUsage": {
+        "attempts": [
+          {
+            "attempt": 1,
+            "formal": {
+              "inputTokens": 3752832,
+              "cachedInputTokens": 3547904,
+              "outputTokens": 50342,
+              "reasoningOutputTokens": 10132,
+              "totalTokens": 3803174,
+              "uncachedInputTokens": 204928,
+              "cachedInputRatio": 0.9453937719567516,
+              "model": "gpt-6-astra",
+              "reasoningEffort": "high",
+              "threadId": "01a07dfb-1c02-7873-8149-63fd5b324fc6",
+              "threadCount": 1,
+              "subagentThreadCount": 0,
+              "unresolvedThreadCount": 0,
+              "usageSource": "sdk+codex_session_telemetry",
+              "includesSubagents": false
+            },
+            "total": {
+              "inputTokens": 3752832,
+              "cachedInputTokens": 3547904,
+              "outputTokens": 50342,
+              "reasoningOutputTokens": 10132,
+              "totalTokens": 3803174,
+              "uncachedInputTokens": 204928,
+              "cachedInputRatio": 0.9453937719567516,
+              "includesSubagents": false,
+              "usageAggregation": "parent_plus_subagents",
+              "threadCount": 1,
+              "subagentThreadCount": 0,
+              "unresolvedThreadCount": 0
+            },
+            "includesSubagents": false,
+            "usageAggregation": "parent_plus_subagents"
+          }
+        ],
+        "total": {
+          "inputTokens": 3752832,
+          "cachedInputTokens": 3547904,
+          "outputTokens": 50342,
+          "reasoningOutputTokens": 10132,
+          "totalTokens": 3803174,
+          "uncachedInputTokens": 204928,
+          "cachedInputRatio": 0.9453937719567516,
+          "threadCount": 1,
+          "subagentThreadCount": 0,
+          "unresolvedThreadCount": 0,
+          "includesSubagents": false
+        },
+        "includesSubagents": false,
+        "threadCount": 1,
+        "subagentThreadCount": 0,
+        "unresolvedThreadCount": 0,
+        "usageAggregation": "parent_plus_subagents"
+      },
+      "archivedAt": "2026-09-07T15:58:33-07:00",
+      "auditSnapshot": "D:\\drive\\Investment\\备份\\情景投资三期限首批复核_20260907-152623\\SNDK_新报告.md",
+      "previousOutputFile": "分析报告/公司情景投资决策/结果/备份/SNDK_2026-09-07T15_26_43-07_00-9681c32009/SNDK_经营情景市场状态投资决策_2026-09-07.md",
+      "sha256": "f2d7c921c61defef5ddc824c2a40d4c760c8d7bdfff17fadc3d9ca27bdd4d45a"
+    }
+  ],
+  "auditCompletedAt": "2026-09-07T16:13:37.986137-07:00",
+  "auditArtifact": "D:\\drive\\Investment\\备份\\情景投资三期限首批复核_20260907-152623\\首五份情景投资报告_质量复核.md",
+  "numericAudit": "D:\\drive\\Investment\\备份\\情景投资三期限首批复核_20260907-152623\\numeric_audit.json"
+}

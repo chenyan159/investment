@@ -1,0 +1,518 @@
+# 公司：CDNS Cadence Design Systems（楷登电子）全面尽调
+
+> **数据截止日：2026-07-18（美国太平洋时间）。** 最新已公布财报为 2026Q1（截至 2026-03-31，2026-04-27 发布）；2026Q2 财报计划于 2026-07-27 发布，尚不能当作已知结果。股价采用 2026-07-17 美股收盘。  
+> **证据边界：** 本报告只使用项目内 基本面/行业调研 的相关产业材料和联网资料；未调用其他项目目录，未修改公司索引。  
+> **估算标识：** “公司披露”表示可由财报或公告直接核验；“M”表示本文模型估算。Cadence 不披露分产品收入、分产品毛利率、bookings、取消率、硬件交期或 AI 数据中心收入，因此相关数字均给区间、假设和可复算公式，避免把推测写成事实。
+
+## 核心结论
+
+1. **Cadence 是先进芯片设计的“收费公路”，正在从 EDA 双寡头之一升级为 silicon-to-system 工程软件平台。** 2025 年收入 52.97 亿美元，其中约 80% 为 recurring revenue；Core EDA / Semiconductor IP / System Design & Analysis（SDA）占 70% / 14% / 16%。时间型软件许可证通常为 2–3 年，销售周期经常超过 6 个月，客户一旦进入 foundry 认证、signoff、回归验证和 IP 流片闭环，替换成本极高。[2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/813672/000081367226000016/cdns-20251231.htm)
+2. **AI 拉动真实且比 GPU 出货领先约 18–36 个月，但不是按 GPU 数量线性计费。** AI 使芯片更大、chiplet 更多、HBM/SerDes 更快、验证状态空间和热/电/机械耦合更复杂，拉动 Innovus/Virtuoso/Tempus/Voltus、Palladium/Protium、HBM/UCIe/PCIe/SerDes IP、Integrity 3D-IC/Celsius/Clarity。公司披露 2026Q1 Core EDA +18%、IP +22%、SDA +18%，硬件创单季纪录；本文估算当季直接或高度相关的 AI/HPC 基础设施收入约 3.8–5.5 亿美元，占 26%–37%，但公司没有给出这一口径。
+3. **订单可见性强，但“供不应求”不是晶圆产能概念。** 2026Q1 RPO/backlog 为 80 亿美元，cRPO 为 40 亿美元，分别相当于 2026 指引中点的 130% 和 65%；其中约 7 亿美元是客户尚未指定具体产品/数量的不可取消承诺。真正稀缺的是先进节点认证工程师、可复用 PHY/controller/VIP、首硅与互操作验证、仿真硬件/云算力和客户支持带宽，而不是库存。
+4. **最强增量依次是：Agentic EDA、硬件辅助验证、HBM/高速互连 IP、3D-IC/先进封装多物理场。** 2025 年 IP 约 +25%，高于 EDA 行业 Q4 2025 的整体 +10.3%，且 SEMI 统计的 SIP 类别增长 +18.3%；这说明高价值 IP 的行业景气度高于传统工具席位。[SEMI ESD Alliance](https://www.semi.org/en/semi-press-release/esd-alliance-reports-electronic-system-design-industry-posts-5.5-billion-dollars-in-revenue-in-q4-2025)
+5. **最大近端催化是产品组合和客户验证，最大近端风险是估值与开源/Agent 替代叙事。** 2026-07-17 CDNS 收于 330.11 美元，单日 -9.47%；媒体将下跌归因于 Kimi K3 用开源 EDA 在 48 小时完成芯片设计流程的声明。但截至本报告截止日，尚无公开技术报告证明其完成先进节点 foundry signoff、tapeout、首硅或量产认证。它对低端 RTL/数字流程和席位定价是真风险，却尚未推翻先进节点 PDK、golden signoff、模拟设计、硬件验证和硅验证 IP 的护城河。
+6. **资产负债表仍健康，但已从“净现金、高有形资产”变成“可控杠杆、高商誉”。** 2026Q1 现金 14.07 亿美元、总债务约 29.06 亿美元、净债务 14.99 亿美元；流动比率 1.47，TTM 自由现金流约 14.30 亿美元，净债务/FCF 约 1.05 倍。另一方面，商誉和无形资产合计 68.63 亿美元，占总资产 56.7%，有形股东权益约 -3.02 亿美元，Hexagon 整合与减值风险不能忽略。
+7. **一年后基准情景：收入运行率约 68 亿美元、同比约 +10%；乐观 73 亿美元、+18%；极度乐观 79 亿美元、+28%。** 基准情景由 40 亿美元 cRPO、IP/硬件强势、Hexagon 全年化和 Agentic EDA 初步商业化支持；极度乐观需要 AgentStack 成为全流程控制层、HBM4E/UCIe/224G 多节点量产、Palladium/Protium 继续超常扩张，且合同修改/取消低于 1%。
+
+## 1. 公司整体业务、投资人定位与产业链位置
+
+### 1.1 Cadence 到底卖什么
+
+Cadence 不生产芯片。它向芯片公司、云厂、系统公司、汽车/工业/航空客户出售：
+
+| 正式业务 | 2025 收入占比 | 2025 收入（约） | 2026Q1 占比 / 收入 | 主要产品 | 收入模式 | AI 基建作用 |
+|---|---:|---:|---:|---|---|---|
+| Core EDA | 70% | 37.08 亿美元 | 71% / 10.47 亿美元 | Virtuoso、Spectre、Genus、Innovus、Tempus、Quantus、Pegasus、Voltus、Xcelium、Jasper、Verisium、Palladium Z3、Protium X3 | 2–3 年 time-based license、维护、硬件销售/租赁/云使用 | 从 RTL/模拟电路到布局布线、signoff、验证；几乎所有先进 AI ASIC/GPU 都需要 |
+| Semiconductor IP | 14% | 7.42 亿美元 | 14% / 2.06 亿美元 | HBM/DDR/LPDDR/GDDR、PCIe、CXL、UCIe、UALink、SerDes、Tensilica DSP、Artisan foundation IP、Secure-IC | 每设计 license + NRE/工艺 port + 维护；部分有 royalty | 直接嵌入 AI 芯片/Chiplet，缩短自研接口时间并降低首硅失败风险 |
+| System Design & Analysis | 16% | 8.48 亿美元 | 15% / 2.21 亿美元 | Integrity 3D-IC、Allegro、Sigrity、Clarity、Celsius、Fidelity CFD、Reality、Millennium M2000、BETA CAE、MSC Nastran/Adams/Marc | 软件许可证、维护、硬件/云计算、服务 | 芯片—封装—PCB—机柜—数据中心热、电磁、结构、流体和数字孪生协同 |
+
+产品与正式分部口径来自 [2025 10-K](https://www.sec.gov/Archives/edgar/data/813672/000081367226000016/cdns-20251231.htm) 和 [2026Q1 财报](https://investor.cadence.com/news/news-details/2026/Cadence-Reports-First-Quarter-2026-Financial-Results/default.aspx)。Cadence 的内部逻辑不是三条孤立产品线，而是：
+
+**foundry PDK/认证 → EDA 全流程 → 硬件验证 → 可复用 IP → 3D-IC/封装 → PCB/系统多物理场 → AI 工厂数字孪生。**
+
+因此，它在产业链中位于晶圆制造和芯片出货之前，是研发资本开支而非服务器物料成本的主要受益者。相关行业研究指出，EDA/IP 需求通常领先 AI 系统收入约 18–36 个月，不能把 GPU 出货增速直接乘到 Cadence 收入上；更合理的因子是设计启动数量、每代复杂度、验证迭代次数、先进节点/封装认证数和 IP attach rate。[项目内 EDA/IP/Chiplet 行业调研](../../行业调研/AI服务器_存储_芯片/行业调研_EDA工具、接口IP与Chiplet%20IP_2026-07-10.md)
+
+### 1.2 投资人心中的公司
+
+Cadence 通常同时被视为四种资产：
+
+- **EDA 双寡头中的高质量 recurring software。** Synopsys 与 Cadence 控制先进 IC 全流程中的多数关键环节；多年度合同、foundry 认证、历史设计数据库和 signoff 责任使续约粘性远高于普通 SaaS。
+- **AI “卖铲人”。** 无须押注某一 GPU/ASIC 胜出者；NVIDIA、云厂自研 ASIC、网络 ASIC、HBM 控制器、chiplet 和 CPO 都增加设计与验证复杂度。
+- **高毛利 IP 平台。** 2025 年 IP 增长近 25%，产品进入硅后可有维护与 royalty，理论增量毛利高于硬件验证。
+- **正在扩张的工程仿真平台。** BETA CAE 与 Hexagon D&E 将公司从电子 EDA 扩到结构、运动、声学和多体动力学，方向类似 Synopsys 收购 Ansys 后的 silicon-to-systems 组合，但 Cadence 为此承担了更高商誉、摊销和整合风险。
+
+这一叙事的关键不是“AI 自动设计芯片所以不再需要 EDA”，而是 **AI Agent 是否成为更多 signoff 引擎调用的入口、并让 Cadence 从按席位定价转向按工作流/计算/结果定价。** 若 Agent 只替代 GUI 操作但仍调用 Cadence 的 golden engines，Cadence 可能增加计算和全流程 bundle；若开源工具获得先进节点 foundry 认证并通过量产 silicon correlation，才会真正侵蚀护城河。
+
+### 1.3 最近三年的重大变动、转型与收购
+
+| 时间 | 交易/转型 | 对价（公司披露） | 战略含义 |
+|---|---|---:|---|
+| 2023-09 | 收购 Rambus SerDes 与 memory-interface PHY IP | 1.086 亿美元 | 直接补齐 HBM/GDDR/高速 SerDes PHY；今天 Star IP 高增长的关键底座。[SEC 2023Q3](https://www.sec.gov/Archives/edgar/data/813672/000081367223000068/cdns-20230930.htm) |
+| 2024-01 | 收购 Invecas | 总对价 0.950 亿美元；净现金 0.712 亿美元 | 增加 custom silicon、先进封装、嵌入式软件与客户工程交付能力。 |
+| 2024-05 | 收购 BETA CAE | 总对价 12.31 亿美元；净现金口径 11.4 亿美元 | 从电子/CFD 扩到结构仿真与前后处理，SDA 成为正式增长支柱。 |
+| 2025-05 | 收购 VLAB Works | 总对价 1.263 亿美元 | 虚拟原型与 pre-silicon 软件验证，主要计入 Core EDA。 |
+| 2025-08 | 收购 Arm Artisan foundation IP | 1.285 亿美元 | 标准单元、memory compiler、GPIO；提高先进节点 IP bundle 完整度。 |
+| 2025-10 | 收购 Secure-IC | 总对价 1.527 亿美元；净现金 1.396 亿美元 | Root of Trust、安全 IP、评估工具；适配数据中心、汽车、军工合规。 |
+| 2025-11 | 收购 ChipStack | 未披露 | 2026 年迅速推出 ChipStack/ViraStack/InnoStack/AgentStack；把 AI 从单工具优化器提升为工作流 Agent。 |
+| 2026-02 | 完成 Hexagon D&E 收购 | 总对价约 31.01 亿美元 | 加入 MSC Nastran、Adams、Marc 等结构/多体/非线性仿真；公司预计 2026 年增量收入约 1.60 亿美元，战略重心进一步转向 Physical AI 与多物理场。[完成公告](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-completes-acquisition-of-hexagons-design-and-engineering.html) |
+
+除 Rambus 外的收购金额可由 [2025 10-K 收购附注](https://www.sec.gov/Archives/edgar/data/813672/000081367226000016/cdns-20251231.htm) 与 [2026Q1 10-Q](https://www.sec.gov/Archives/edgar/data/813672/000081367226000047/cdns-20260331.htm) 交叉核验。三年转型可概括为：
+
+1. **EDA seat → AI 驱动全流程；**
+2. **工具 → 高速/存储/安全/foundation IP；**
+3. **chip design → chip-package-board-system-data center；**
+4. **人操作工具 → Agent 编排工具与计算资源。**
+
+### 1.4 最新股价、估值和经营指标
+
+| 指标 | 数值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | **330.11 美元** | 2026-07-17 收盘 | 当日 -9.47%，成交约 519 万股。[历史价格](https://www.marketbeat.com/stocks/NASDAQ/CDNS/chart/)；[Nasdaq 报价页](https://www.nasdaq.com/market-activity/stocks/cdns) |
+| 市值 | **约 904–911 亿美元** | 2026-07-17，不同供应商流通股口径 | 本文估值计算用约 903.6 亿美元。 |
+| TTM 收入 | **55.29 亿美元** | 2025Q2–2026Q1 | 同比约 **+13.4%**。 |
+| TTM GAAP 净利润 / EPS | **11.71 亿美元 / 4.29 美元** | 2025Q2–2026Q1 | EPS 与市场数据一致。 |
+| Trailing P/E | **约 77.0 倍** | 330.11 / 4.29 | GAAP 口径。 |
+| Forward P/E | **约 46.2 倍** | 2026-07-16 市场一致预期 | [GuruFocus forward P/E](https://www.gurufocus.com/term/forward-pe-ratio/CDNS)；不同数据商可能有 1–4 倍差异。 |
+| 公司指引隐含 forward P/E | **74.3 倍 GAAP / 41.8 倍 non-GAAP** | 2026-07-17 股价；FY26 EPS 指引中点 4.44 / 7.90 美元 | non-GAAP 与 trailing GAAP 不可直接同比。 |
+| P/S | **约 16.3 倍** | 市值 / TTM 收入 | 极高估值要求长期双位数增长和约 44% non-GAAP OPM 延续。 |
+| TTM 毛利率 | **86.1%** | 四季 GAAP 收入减 cost of revenue | 产品组合仍以高毛利软件/IP 为主。 |
+| TTM 净利率 | **21.2%** | TTM GAAP 净利润 / 收入 | 2025Q2 受 1.406 亿美元 DOJ/BIS 和解损失压低。 |
+| 2026Q1 non-GAAP OPM | **44.7%** | 公司披露 | 同比 +300bp。 |
+
+**估值判断：** 330.11 美元并不便宜。若 FY2026 non-GAAP EPS 达 7.90 美元，41.8 倍仍对应高质量复利股估值，而不是周期底部估值；若 Agentic AI 只产生功能升级、不能提升 ACV/计算消耗，或 Hexagon 低利润收入稀释，估值压缩会比盈利下修更快。相反，若 AgentStack 变成跨数字/模拟/验证/封装的控制层，传统“每席位”收入可升级为工作流、调用量和 outcome pricing，当前高倍数才有新增支撑。
+
+### 1.5 资产负债表与财务健康度
+
+| 2026-03-31 项目 | 数值 | 评价 |
+|---|---:|---|
+| 现金及现金等价物 | 14.07 亿美元 | Hexagon 交割使现金较年末 30.01 亿美元明显下降。 |
+| 流动资产 / 流动负债 | 31.80 / 21.63 亿美元 | 流动比率 **1.47**，净营运资本 **10.18 亿美元**，短期偿债充足。 |
+| 有息债务 | revolver 4.25 亿 + 长期债 24.81 亿 = **29.06 亿美元** | 净债务约 **14.99 亿美元**。2027 年票据 5 亿、2029 年 10 亿、2034 年 10 亿；利率约 4.2%–4.7%。 |
+| TTM OCF / capex / FCF | 15.98 / 1.68 / **14.30 亿美元** | 净债务/FCF 约 **1.05 倍**，现金创造足以去杠杆。 |
+| Q1 利息覆盖 | 约 **13.7 倍** | 以 GAAP 营业利润/利息估算，安全余量较高。 |
+| 商誉 / 无形资产 | 49.30 / 19.33 亿美元 | 合计占总资产 **56.7%**；收购整合失败或增速放缓会触发减值。 |
+| 股东权益 / 有形股东权益 | 65.61 / 约 **-3.02 亿美元** | 会计有形净资产已为负，但软件公司的主要资产是人才、代码、认证与客户关系；仍须把它视为 M&A 风险信号。 |
+| 2026Q1 经营现金流 | 3.56 亿美元，同比 -26.9% | 主要受应付/应计项目时点影响；单季不是趋势，但需要在 Q2/Q3 验证恢复。 |
+
+**综合判断：7.5/10，健康但不再保守。** 业务高毛利、FCF 强、债务到期分散且符合 covenant；风险集中在收购形成的商誉/无形资产、Hexagon 低初始利润率、股票回购与去杠杆的资本分配冲突。若 2027 年 FCF 仍在 15–18 亿美元，净债务可快速降至 1 倍 FCF 以下；若 AI/EDA 增速失速同时出现减值，GAAP EPS 与权益会双重承压。
+
+## 2. 最新及最近四次财报：五季度复盘
+
+### 2.1 五季度关键财务数字
+
+单位：亿美元；利润率为 GAAP，除 non-GAAP OPM 外。
+
+| 财报季度 | 收入 | 同比 | Core EDA / IP / SDA 收入（按披露占比折算） | 毛利率 | GAAP / non-GAAP OPM | 净利润 | 净利率 | 最重要信息 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| 2025Q1 | 12.424 | +23.1% | 8.821 / 1.739 / 1.864 | 86.6% | 29.1% / 41.7% | 2.736 | 22.0% | Core +16%、IP +40%、SDA >50%；Cerebrus 当季近 50 个新 logo、累计 >1,000 次 tapeout；hyperscaler 扩张硬件验证。 |
+| 2025Q2 | 12.754 | +20.2% | 9.056 / 1.658 / 2.041 | 85.6% | 19.0% / 42.8% | 1.601 | 12.5% | Core +16%、IP >25%、SDA >35%；推出 Cerebrus AI Studio，官方称特定任务 PPA 改善最高 20%、速度 5–10 倍；GAAP 受 1.406 亿美元 DOJ/BIS 和解影响。 |
+| 2025Q3 | 13.388 | +10.1% | 9.506 / 1.874 / 2.008 | 86.4% | 31.8% / 47.6% | 2.871 | 21.4% | Palladium/Protium 硬件创 Q3 纪录，AI/HPC 客户显著扩容；完成 Artisan IP，宣布 Hexagon D&E。 |
+| 2025Q4 | 14.401 | +6.2% | 9.937 / 2.160 / 2.304 | 86.9% | 32.2% / 45.8% | 3.881 | 27.0% | FY25 Core +13%、IP 近 +25%、SDA +13%；全年硬件创纪录，新增 >30 个客户，前十大客户中 7 家同时购买 Z3/X3。 |
+| **2026Q1** | **14.742** | **+18.7%** | **10.467 / 2.064 / 2.211** | **85.5%** | **29.3% / 44.7%** | **3.357** | **22.8%** | Core +18%、IP +22%、SDA +18%；硬件创单季纪录；发布 ViraStack/InnoStack/AgentStack；并入约 5 周 Hexagon D&E。 |
+
+来源：[2025Q1](https://investor.cadence.com/news/news-details/2025/Cadence-Reports-First-Quarter-2025-Financial-Results/default.aspx)、[2025Q2](https://investor.cadence.com/news/news-details/2025/Cadence-Reports-Second-Quarter-2025-Financial-Results/default.aspx)、[2025Q3](https://investor.cadence.com/news/news-details/2025/Cadence-Reports-Third-Quarter-2025-Financial-Results/default.aspx)、[2025Q4/FY2025](https://investor.cadence.com/news/news-details/2026/Cadence-Reports-Fourth-Quarter-and-Fiscal-Year-2025-Financial-Results/default.aspx)、[2026Q1](https://investor.cadence.com/news/news-details/2026/Cadence-Reports-First-Quarter-2026-Financial-Results/default.aspx)。分部金额按公司只披露到整数百分点的 mix 计算，误差约 ±0.5 个百分点。
+
+### 2.2 收入结构、分部增速与 AI 数据中心占比
+
+| 季度 | Core / IP / SDA 占比 | 分部同比增速 | AI/HPC 基础设施收入 M | AI/HPC 占比 M | 交叉验证 |
+|---|---:|---|---:|---:|---|
+| 2025Q1 | 71% / 14% / 15% | +16% / +40% / >+50%（公司披露） | 2.6–4.0 亿美元 | 21%–32% | IP 和 SDA 高增，硬件在 hyperscaler 扩张；但汽车、移动、工业也贡献。 |
+| 2025Q2 | 71% / 13% / 16% | +16% / >+25% / >+35%（公司披露） | 2.8–4.2 亿美元 | 22%–33% | HBM/PCIe/SerDes、3D-IC 和 AI Studio 同时拉动。 |
+| 2025Q3 | 71% / 14% / 15% | 约 +11.7% / +10.1% / +3.2%（M，按整数 mix 反推） | 3.1–4.7 亿美元 | 23%–35% | 硬件创 Q3 纪录，但总收入高基数使分部推算有较大舍入误差。 |
+| 2025Q4 | 69% / 15% / 16% | 约 +7.8% / +22.5% / -10.6%（M，按整数 mix 反推） | 3.5–5.2 亿美元 | 24%–36% | IP 强；SDA 对比 2024Q4 的 19% 高占比，单季同比受基数/交付时点影响，不能据此断言业务萎缩。 |
+| **2026Q1** | **71% / 14% / 15%** | **+18% / +22% / +18%（公司披露）** | **3.8–5.5 亿美元** | **26%–37%** | Core、硬件、Star IP 与 3D-IC 同向；Hexagon 约 5 周并表也抬升 SDA。 |
+
+AI/HPC 估算方法：Core 中 25%–35%、IP 中 45%–60%、SDA 中 15%–25% 归因于 AI/HPC 基础设施，并随季度产品信号调整。它是订单驱动的分析切片，**不是公司披露，也不能与三分部收入相加。**
+
+### 2.3 Backlog、隐含 bookings、B2B、交期和取消
+
+Cadence 将 RPO 称为 quarter-end backlog。公司没有公布 bookings 或 book-to-bill；下表的“隐含净合同增加”按：
+
+**期末 RPO + 当季收入 - 期初 RPO**
+
+计算。它会混入外汇、合同修改/终止、收购带入的 RPO 和收入确认时点，尤其 2026Q1 含 Hexagon，不能等同管理层内部订单。
+
+| 季度 | 期初→期末 RPO/backlog | cRPO | 隐含净合同增加 M | 隐含 B2B M | 交期/销售周期 | 取消率 |
+|---|---:|---:|---:|---:|---|---|
+| 2025Q1 | 68→64 亿美元 | 32 亿美元 | 8.42 亿美元 | 0.68x | 未按季披露；企业销售周期通常 ≥6 月，软件授权可快速交付，IP port/验证约 12–36 月 M，硬件约 3–12 月 M | 未披露 |
+| 2025Q2 | 64→64 亿美元 | 31 亿美元 | 12.75 亿美元 | 1.00x | 同上 | 未披露 |
+| 2025Q3 | 64→70 亿美元 | 35 亿美元 | 19.39 亿美元 | 1.45x | 同上；AI/HPC 硬件扩容显著 | 未披露 |
+| 2025Q4 | 70→78 亿美元 | 38 亿美元 | 22.40 亿美元 | 1.56x | 同上；公司明确称 strong Q4 bookings | 未披露 |
+| **2026Q1** | **78→80 亿美元** | **40 亿美元** | **16.74 亿美元** | **1.14x** | 同上；收购带入合同会使该推算偏高 | 未披露 |
+
+2026Q1 的 80 亿美元 RPO 包括约 7 亿美元不可取消、但具体产品/数量待客户选择的承诺；剔除此类承诺后，公司预计 55% 在未来 12 个月、43% 在 13–36 个月、其余更晚确认。未来 royalty 被排除在 RPO 外。公司同时警告安装/交付、续约、修改与终止会改变实际确认时点；历史上没有重大退货/退款，但这并不等于取消率为零。[2026Q1 10-Q](https://www.sec.gov/Archives/edgar/data/813672/000081367226000047/cdns-20260331.htm)
+
+**订单判断：**
+
+- Q1 2025 的低隐含 B2B 反映年末大单后的正常消化，不是需求断崖；随后三个季度 backlog 从 64 亿升至 80 亿。
+- 40 亿 cRPO 已覆盖 FY26 指引中点的 64.8%，而 80 亿总 RPO 相当于 FY25 收入的 151%；可见性强于多数半导体公司。
+- 供需紧张表现为更长企业协议、更大 bundle、优先支持、硬件/云验证资源和先进节点工程排期，而非客户拿不到“EDA 库存”。
+
+## 3. 2026 年最新指引、业务占比、产品与重点
+
+### 3.1 2026 指引及其含义
+
+| 指标 | 2026Q1 后最新 FY2026 指引 | 中点 | 同比/变化 |
+|---|---:|---:|---|
+| 收入 | 61.25–62.25 亿美元 | **61.75 亿美元** | 较 FY25 +16.6%（公司表述约 +17%） |
+| GAAP OPM | 27.5%–28.5% | 28.0% | Hexagon 摊销、整合与较低初始利润率造成稀释 |
+| non-GAAP OPM | 43.5%–44.5% | 44.0% | 仍接近 FY25 的 44.6% |
+| GAAP EPS | 4.39–4.49 美元 | 4.44 美元 | 高无形资产摊销压低 |
+| non-GAAP EPS | 7.85–7.95 美元 | 7.90 美元 | 约 +10.6% |
+| Q2 收入 | 15.55–15.95 亿美元 | 15.75 亿美元 | 对应同比约 +23.5% |
+| Q2 non-GAAP OPM | 44.5%–45.5% | 45.0% | 规模效应抵消部分并表稀释 |
+
+公司在 2026-02-17 初始指引为 59–60 亿美元且未包含 Hexagon；Q1 后上调至 61.25–62.25 亿美元。Hexagon D&E 预计贡献约 1.60 亿美元，因此以指引中点扣除此项的粗略“有机”收入约 60.15 亿美元，较 FY25 仍约 +13.6%。这说明上调不是纯收购，但 Q2 财报需要验证原业务是否继续超预期。
+
+### 3.2 FY2026 分部占比和增速模型
+
+公司没有给 FY2026 分部指引。结合 Q1 mix、Hexagon 全年并表和 IP 强势，本文基准模型为：
+
+| 分部 | FY2025 实际 | FY2026M 收入 | FY2026M 占比 | FY2026M 增速 | 关键解释 |
+|---|---:|---:|---:|---:|---|
+| Core EDA | 37.08 亿美元 | **42.61 亿美元** | 69.0% | **+14.9%** | Advanced digital/custom/verification、硬件和 Agentic AI；占比略降是 Hexagon 抬升分母。 |
+| Semiconductor IP | 7.42 亿美元 | **8.95 亿美元** | 14.5% | **+20.7%** | HBM/LPDDR、PCIe/UCIe/SerDes、Artisan 与 Secure-IC；最清晰的高增正式分部。 |
+| SDA | 8.48 亿美元 | **10.19 亿美元** | 16.5% | **+20.2%** | 约 1.60 亿美元 Hexagon；扣除该项的简单有机增速仅约 +1%，但口径受并表与交付时点影响。 |
+| **合计** | **52.97 亿美元** | **61.75 亿美元** | **100%** | **+16.6%** | 与公司指引中点一致。 |
+
+**公司最侧重的不是单一分部，而是两条横向主线：**
+
+1. **AI for Design：** Cerebrus、ChipStack、ViraStack、InnoStack、AgentStack、AuraStack 让 Agent 调用原有 golden engines，提高全流程 attach、计算量和 bundle ACV。
+2. **Design for AI：** advanced-node EDA、Palladium/Protium、HBM/UCIe/PCIe/SerDes、3D-IC/多物理场直接服务 GPU、云 ASIC、网络/光互连和 AI 工厂。
+
+### 3.3 重点产品、型号、利润与销售交叉验证
+
+| 产品群 | 主要产品/型号 | 当前商业信号 | 收入/增速/毛利率 M | 交叉验证 |
+|---|---|---|---|---|
+| 先进节点数字/模拟/signoff | Genus、Innovus、Virtuoso Studio、Spectre、Tempus、Quantus、Pegasus、Voltus、Joules | 2026Q1 Core +18%；TSMC N2/A16 已认证、A14 合作中；Samsung 第二代 2nm 扩大认证；Intel 14A DTCO/production-ready PDK 多年合作 | 当前年化 26–31 亿美元；+11%–16%；GM 88%–94% | [TSMC 2026](https://www.cadence.com/zh_TW/home/company/newsroom/press-releases/pr/2026/cadence-collaborates-with-tsmc-to-accelerate-design-of-next.html)、[Samsung 2026](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-and-samsung-foundry-deepen-2nm-and-3dic-collaboration-to.html)、[Intel 14A](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-announces-collaboration-with-intel-foundry-to-accelerate.html) |
+| Agentic AI | Cerebrus AI Studio、ChipStack、ViraStack、InnoStack、AgentStack、AuraStack | Google Gemini/Cloud 合作；NVIDIA 受控验证场景称 >40 倍 RTL validation、5 周缩至 <1 天；Level-5 预计 2026H2 early access；AuraStack 2026 可用 | 归因收入 1.8–3.5 亿美元、+35%–70%、GM 80%–92%；**与 EDA/HAV/SDA 重叠，不可相加** | [Google](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-and-google-collaborate-to-scale-ai-driven-chip-design.html)、[NVIDIA Level-5](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-unveils-industrys-first-fully-autonomous-virtual.html)、[AuraStack](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-introduces-aurastack-ai-super-agent-the-worlds-first.html) |
+| 硬件辅助验证 HAV | Palladium Z3、Protium X3，配套 Xcelium/Jasper/Verisium | FY25 新增 >30 客户，前十大客户 7 家双购 Z3/X3；2025Q3、FY25、2026Q1 均创相应纪录，AI/HPC 为主驱动 | 8.5–11 亿美元、+18%–28%、GM 55%–68% | 财报连续三个时期同向；硬件毛利低于软件但可锁定验证软件与云使用。 |
+| Memory IP | HBM3E/HBM4/HBM4E、GDDR7、LPDDR5X/6、DDR5 MRDIMM | TSMC N2P HBM4E 16G；2025 HBM4 test chip 为 pre-silicon-ready；Microsoft 首用 data-center LPDDR5X 9600 + RAIDDR ECC；Samsung 第二代 2nm 全 memory portfolio | 2.2–3.2 亿美元、+25%–40%、GM 86%–93% | Q1 IP +22%、FY25 近 +25%；[Microsoft/LPDDR5X](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-delivers-enterprise-level-reliability-with-next-gen-low.html) |
+| 高速互连/Chiplet IP | PCIe 5/6、CXL、UCIe 16G/下一代 48–64GT/s、224G SerDes、NVLink-C2C-enabled、UALink | Intel+Cadence 在 Chiplet Summit 2026 完成首个 live UCIe-S 跨厂商互操作（16G Cameron Creek）；Lightmatter Passage CPO 使用 Cadence SerDes/UCIe 路线 | 3.0–4.2 亿美元、+20%–35%、GM 85%–92% | [UCIe Consortium](https://www.uciexpress.org/post/chiplet-summit-2026-ucie-momentum-across-a-growing-ecosystem)、[Lightmatter](https://lightmatter.co/press-release/lightmatter-and-cadence-collaborate-to-accelerate-optical-interconnect-for-ai-infrastructure/) |
+| 3D-IC/封装/多物理场 | Integrity 3D-IC、Allegro AI Studio、AuraStack、Celsius、Clarity、Sigrity X、Voltus、Millennium M2000 | TSMC 3DFabric、Samsung 3D Cube-H/HCB；NVIDIA 使用 AuraStack/M2000 流程，官方称特定多物理场工作负载最高 20 倍 | 2.8–4.5 亿美元、+20%–35%、GM 70%–88% | AI 封装热/电源完整性和 late-stage respin 风险使其从“可选分析”升级为关键路径。 |
+| AI 工厂数字孪生 | Reality Digital Twin、Fidelity CFD、Celsius、Clarity、Omniverse/DSX 接口 | NVIDIA GB200/GB300/DSX 模型；厂商模型称固定功率 token output +30%、token/W +17%，客户数和付费规模未披露 | 0.4–1.0 亿美元、+30%–60%、GM 65%–85%；与 SDA 重叠 | 这是最容易被叙事高估、但最可能形成新小业务的方向；[Cadence 数据中心数字孪生](https://community.cadence.com/cadence_blogs_8/b/data-center/posts/digital-twins-enable-the-next-era-of-ai-infrastructure) |
+| Foundation/security/DSP | Artisan 标准单元/memory compiler/GPIO、Secure-IC Root of Trust/PQC、Tensilica Vision/HiFi/ConnX | Artisan 已进入 TSMC N3 production designs；安全和 DSP 可随 AI/physical AI SoC bundle | 1.5–2.5 亿美元、+15%–30%、GM 82%–90% | 规模小但 attach 面广；应关注是否产生数据中心客户名和 royalty，而非只看产品发布。 |
+
+上表的毛利率不是公司分部披露，而是依据公司 85%–87% 整体毛利率、硬件成本、IP/软件可复制性及项目内行业模型估算。厂商给出的 10 倍、20 倍、40 倍等数字均为特定任务/受控工作负载，不代表整颗芯片或全项目工期等比例缩短。
+
+### 3.4 可跳过的低 AI 直接增速业务
+
+以下业务仍可盈利、可交叉销售，但对未来一年 AI 基建增速的解释力较低，本报告不逐项建模：
+
+- OrCAD/低端 PCB 桌面工具及成熟板级设计；
+- 成熟节点的通用 EDA 席位、USB/MIPI/GPIO 等成熟接口；
+- 面向一般消费电子的 HiFi audio、低端 vision DSP；
+- 通用汽车/A&D 的 VLAB 虚拟原型，以及 BETA CAE/MSC 的非 AI 汽车、航空、结构分析收入；
+- 分子设计、生命科学与药物研发软件；
+- 非数据中心的 AWR RF、一般工业 CFD/声学、传统机械仿真；
+- 一次性设计服务中不产生可复用 IP、认证或后续 royalty 的低杠杆项目。
+
+跳过不等于看空。Hexagon/BETA CAE 的非 AI 收入可稳定 SDA，但其初期利润率和增长更像工程软件，不应与 HBM/Agentic EDA 使用同一高增长倍数。
+
+## 4. 当前高增长/关键产品：收入贡献、AI 重要性、供需与定价权
+
+评分 1–5：重要性 5=AI 技术栈不可缺；紧急性 5=未来 12 个月关键路径；供需 5=工程/认证/硬件资源明显紧；垄断 5=近似不可替代；溢价 5=可显著提价或扩大 bundle。收入均为 2026Q1 年化/近期运行率 M；Agentic 与数字孪生为交叉切片。
+
+| 高增长/关键产品 | 当前收入贡献 M | 当前增速 M | GM M | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断能力 | 溢价能力 | 核心判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| 先进节点 EDA/signoff | 26–31 亿美元 | +11%–16% | 88%–94% | 5.0 | 5.0 | 4.0 | 4.5 | 4.5 | PDK、golden signoff、历史 correlation 和全流程数据库是核心 moat；先进节点流片无法承担未经认证替代品的 respin 风险。 |
+| Agentic AI 全栈 | 1.8–3.5 亿美元（重叠） | +35%–70% | 80%–92% | 4.5 | 4.5 | 3.5 | 4.0 | 4.0 | 短期更像 bundle/ACV 扩张，长期可能成为 EDA 控制层；开放模型可替代 reasoning，但难替代 signoff engines。 |
+| Palladium/Protium + 验证软件 | 8.5–11 亿美元 | +18%–28% | 55%–68% | 5.0 | 5.0 | 4.5 | 4.5 | 4.5 | 大型 AI SoC 的软件启动、功耗、系统验证和回归量爆炸，供给瓶颈是硬件/FPGA/云容量和应用工程支持。 |
+| HBM/LPDDR/GDDR IP | 2.2–3.2 亿美元 | +25%–40% | 86%–93% | 5.0 | 5.0 | 5.0 | 3.5 | 4.5 | HBM4/4E 每个 foundry/node/package port 都需重做/重验，时间窗口最紧；竞争者存在但首硅记录决定 shortlist。 |
+| PCIe/CXL/UCIe/SerDes/NVLink-C2C IP | 3.0–4.2 亿美元 | +20%–35% | 85%–92% | 5.0 | 4.5 | 4.5 | 3.5 | 4.5 | Scale-up/scale-out 和 CPO 推升高速接口数量；标准开放降低协议垄断，但 PHY/封装/互操作经验形成工程垄断。 |
+| 3D-IC/封装/多物理场 | 2.8–4.5 亿美元 | +20%–35% | 70%–88% | 5.0 | 5.0 | 4.0 | 4.0 | 4.0 | HBM、chiplet、hybrid bonding 使热/IR/EM/机械耦合进入 signoff 关键路径，替换代价随数据模型统一而上升。 |
+| Foundation/security/Tensilica | 1.5–2.5 亿美元 | +15%–30% | 82%–90% | 3.5 | 3.5 | 3.5 | 3.0 | 3.5 | 小而有潜力；Artisan 使 advanced-node bundle 更完整，Secure-IC 受数据中心合规拉动，但竞品多。 |
+| AI 工厂数字孪生 | 0.4–1.0 亿美元（重叠） | +30%–60% | 65%–85% | 4.0 | 4.0 | 3.0 | 2.5 | 3.5 | 市场尚早、付费规模不透明；若 DSX/Omniverse 模型进入建造与运营闭环，会从设计软件扩为运营软件。 |
+
+**为什么“供不应求”仍然成立：** 高端 EDA/IP 的边际复制成本很低，但客户需要特定 PDK、工艺角、封装、PHY test chip、compliance、硅后 correlation 和现场支持。一个先进 PHY 的新工艺/封装 port，行业模型估计需要约 1,500–4,000 万美元、2–3 年；controller/VIP 大版本约 300–1,000 万美元。短期无法用多拷贝软件替代缺失的工程年和验证载具。[项目内 EDA/IP/Chiplet 行业调研](../../行业调研/AI服务器_存储_芯片/行业调研_EDA工具、接口IP与Chiplet%20IP_2026-07-10.md)
+
+## 5. 一年后各关键产品：基准、乐观、极度乐观
+
+### 5.1 情景定义
+
+- **T+1：** 以 2027 年中附近的 12 个月收入运行率衡量，不是单季收入，也不是公司正式 FY2027 指引。
+- **基准：** AI 设计活动维持高位；现有 40 亿美元 cRPO 正常确认；Agentic AI 从 pilot 进入选择性 production；Hexagon 按计划整合。
+- **乐观：** hyperscaler/AI ASIC 设计启动继续扩散；HBM4/4E、PCIe 6、UCIe、224G/CPO 多个工艺 port 提前；硬件验证和 Agent bundle 保持高 B2B。
+- **极度乐观：** AgentStack 成为事实上的全流程控制层；领先客户以 outcome/compute 付费；多家 foundry 的 HBM4E/3D-IC/高速 PHY 同期量产，且合同延迟/终止率低于 1%。
+- 评分次序为 **重要性/紧急性/供需紧张/垄断/溢价**，均为 1–5。
+
+### 5.2 分产品一年后收入与战略评分
+
+| 产品群（当前中点） | 基准情景 | 乐观情景 | 极度乐观情景 | 必须发生的验证点 |
+|---|---|---|---|---|
+| 先进节点 EDA/signoff（28.5 亿美元） | **31.5 亿，+11%**；5/5/4/4.5/4.5 | **33.1 亿，+16%**；5/5/4.5/4.5/4.5 | **34.8 亿，+22%**；5/5/5/4.5/5 | TSMC A14、Intel 14A、Samsung 2nm 流程从合作/认证走向客户 tapeout；EA 单价和 bundle 扩大。 |
+| Agentic AI 全栈（2.6 亿美元，重叠） | **3.6 亿，+38%**；4.5/4.5/3.5/4/4 | **4.5 亿，+73%**；5/5/4/4.5/4.5 | **5.8 亿，+123%**；5/5/4.5/4.5/5 | 2026H2 Level-5 early access 准时；披露 production 客户、付费 uplift、非受控全项目工期改善。 |
+| Palladium/Protium + 验证软件（9.8 亿美元） | **11.5 亿，+17%**；5/5/4.5/4.5/4.5 | **12.8 亿，+31%**；5/5/5/4.5/5 | **14.5 亿，+48%**；5/5/5/5/5 | 新客户之外有大规模扩容；Z3/X3 交付、云验证容量和应用工程不成为瓶颈。 |
+| HBM/LPDDR/GDDR IP（2.7 亿美元） | **3.4 亿，+26%**；5/5/5/3.5/4.5 | **3.8 亿，+41%**；5/5/5/4/4.5 | **4.4 亿，+63%**；5/5/5/4/5 | HBM4 test chip 首硅、HBM4E 16G N2P、Samsung 2nm memory portfolio 获得客户流片/量产。 |
+| PCIe/CXL/UCIe/SerDes 等（3.6 亿美元） | **4.5 亿，+25%**；5/4.5/4.5/3.5/4.5 | **5.1 亿，+42%**；5/5/5/4/4.5 | **6.0 亿，+67%**；5/5/5/4/5 | UCIe 16G 从互操作演示进入商业芯片；48/64GT/s 进入 pre-silicon；Lightmatter/CPO 出现明确 design win。 |
+| 3D-IC/封装/多物理场（3.6 亿美元） | **4.7 亿，+31%**；5/5/4/4/4 | **5.5 亿，+53%**；5/5/4.5/4.5/4.5 | **6.6 亿，+83%**；5/5/5/4.5/5 | Integrity/AuraStack/M2000 从工具采购变成 package+PCB+physics 全栈 bundle；CoWoS/HCB 客户案例增加。 |
+| Foundation/security/Tensilica（2.0 亿美元） | **2.4 亿，+20%**；3.5/3.5/3.5/3/3.5 | **2.7 亿，+35%**；4/4/4/3.5/4 | **3.1 亿，+55%**；4/4.5/4/3.5/4 | Artisan 扩展到更多 2nm/3nm production design；Secure-IC 获得可量化数据中心/PQC design win。 |
+| AI 工厂数字孪生（0.7 亿美元，重叠） | **1.0 亿，+43%**；4/4/3/2.5/3.5 | **1.4 亿，+100%**；4.5/4.5/3.5/3/4 | **2.0 亿，+186%**；5/5/4/3.5/4.5 | 从 NVIDIA 技术示范转为 hyperscaler/colo 的建设和运营合同；出现 ARR、MW 覆盖或客户数披露。 |
+
+上述分产品数字只用于识别敏感度。Agentic AI、AI 工厂数字孪生分别横跨 Core/SDA，不能与其底层产品重复求和。更可靠的正式分部与公司总额情景见第 8 节。
+
+### 5.3 主要利润率推断
+
+- **先进 EDA/Agent/IP：** 代码可复制、维护成本低，成熟产品 GM 可在高 80% 至低 90%；但 Agent 推理/cloud compute、首硅验证和大规模客户支持会降低早期贡献率。
+- **Palladium/Protium/Millennium：** 含服务器、FPGA/加速器、内存、制造和安装，GM 明显低于软件；其价值是拉动 Xcelium/Jasper/Verisium 和长期租赁/云使用。硬件收入在某季集中会使整体 GM 下移 100–200bp。
+- **SDA/Hexagon：** 软件自身毛利高，但结构仿真、服务、硬件和收购后摊销使 GAAP 利润较低。公司最新 FY26 non-GAAP OPM 中点由初始约 45.25% 降至 44.0%，是并表稀释的直接证据。
+- **IP royalty：** 未来 royalty 不在 RPO；若客户芯片量产，可在不同比例增加高毛利收入，但公开资料无法分产品预测 royalty rate。
+
+## 6. BOM、每 MW/rack/GPU/optical port 内容量与价格传导
+
+### 6.1 先澄清“真实 BOM”
+
+Cadence 的 EDA、IP 和数字孪生大多 **不以实体零件存在于服务器 BOM 中**：
+
+- 对 EDA、验证软件和 SDA 而言，每台已出货 GPU/rack 的物理 BOM 金额是 **0 美元**；客户在芯片/系统研发阶段购买软件、算力和硬件验证。
+- 对 semiconductor IP 而言，客户支付 license/NRE/工艺 port/维护，部分合同还有每片或预付 royalty；Cadence 不披露 royalty rate，因此不存在可由公开资料确认的“每 GPU 真实收费”。
+- 下表的 per-GPU/per-rack/per-MW 是把一个设计代际的 Cadence 研发支出摊到部署量上的 **经济内容量 M**，不是服务器厂商采购清单中的 Cadence 零件价格。
+
+模型假设：一个大型 AI accelerator/platform 代际出货 50–200 万颗；每 rack 72 颗 accelerator；功率 120–250kW/rack（即每 MW 约 4–8 rack）。不同架构差异可达数倍，数字应作为量级而非点估计。
+
+### 6.2 每代设计投入与摊销内容量
+
+| 产品群 | 物理 BOM | 单个领先 AI 平台/代际的 Cadence 支出 M | 每 GPU/XPU 摊销 M | 每 72-XPU rack M | 每 MW 摊销 M | 每 optical port M |
+|---|---:|---:|---:|---:|---:|---:|
+| 先进节点 EDA/signoff | 0 | 2,000–6,000 万美元 | 10–120 美元 | 720–8,640 美元 | 2,880–69,120 美元 | 若用于光互连 ASIC，约 0.05–0.50 美元；否则 0 |
+| Agentic AI 增量 | 0 | 300–1,500 万美元 | 1.5–30 美元 | 108–2,160 美元 | 432–17,280 美元 | 0.01–0.20 美元，仅作工作流摊销 |
+| HAV：Palladium/Protium/云验证 | 0（属于研发设备） | 1,000–4,000 万美元 | 5–80 美元 | 360–5,760 美元 | 1,440–46,080 美元 | 0.03–0.40 美元，仅光 ASIC 项目摊销 |
+| HBM/LPDDR/GDDR IP | 无实体件；可能有 royalty | 500–2,000 万美元 | 2.5–40 美元 | 180–2,880 美元 | 720–23,040 美元 | 不适用 |
+| PCIe/CXL/UCIe/SerDes/NVLink-C2C IP | 无实体件；可能有 royalty | 800–3,000 万美元 | 4–60 美元 | 288–4,320 美元 | 1,152–34,560 美元 | **0.10–2.00 美元**，仅当端口所在 ASIC/optical engine 使用 Cadence IP；否则 0 |
+| Foundation/security/Tensilica | 无实体件；可能有 royalty | 300–1,200 万美元 | 1.5–24 美元 | 108–1,728 美元 | 432–13,824 美元 | 0.02–0.30 美元，取决于交换/光 ASIC attach |
+| 3D-IC/封装/多物理场 | 0 | 500–2,000 万美元 | 2.5–40 美元 | 180–2,880 美元 | 720–23,040 美元 | 0.02–0.50 美元，仅封装/光引擎设计摊销 |
+| AI 工厂数字孪生 | 0；属于设施设计/运营软件 | 每 100MW 初始 80–400 万美元，年维护/运营 10–80 万美元 | 22–111 美元，按 72-XPU/200kW rack 分摊 | 1,600–8,000 美元 | **8,000–40,000 美元/MW** | 0 |
+
+若某顶级平台同时采用上述主要项目，设计阶段 Cadence 可寻址支出约 **5,400 万–1.97 亿美元/代**；按 50–200 万颗摊销约 **27–394 美元/XPU**。这是极宽区间，原因是客户可自研 IP、混用 Synopsys/Siemens/Ansys、在云端租用验证，且“平台”可能包含 accelerator、switch、DPU 与多种 package。
+
+AI 工厂数字孪生的区间来自项目内 100MW 工程模型：CFD/电气/设计孪生总价值约 400–1,200 万美元，Cadence 能获取其中约 20%–35% M，即 80–400 万美元，不含全部 DCIM/BMS/EPMS。[项目内 DCIM/AI 工厂数字孪生调研](../../行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-07-10.md)
+
+### 6.3 价格传导链
+
+| 环节 | 触发变量 | Cadence 收费方式 | 传导滞后 | 定价权来源 |
+|---|---|---|---|---|
+| AI 集群资本开支 | GPU/ASIC、HBM、网络和功率密度提升 | 不直接收费 | 18–36 月领先于系统出货 | 更多/更复杂设计启动 |
+| 芯片架构与 tapeout | 先进节点、chiplet、HBM、更多高速 I/O | 3–5 年 enterprise agreement；常规年价增约 3%–8% M；扩大 bundle 可提升 ACV 10%–30% M | 设计开始即收费 | PDK/signoff 认证、历史 flow、迁移风险 |
+| 验证与软件启动 | 状态空间、软件栈、回归量增加 | Palladium/Protium 销售、租赁或 cloud/usage；配套验证软件 | tapeout 前 6–24 月 | 设备供给、吞吐、客户已有验证资产 |
+| IP 选择/工艺 port | HBM/SerDes/UCIe 等 PHY/controller | license + NRE/port + 维护 + 可选 royalty | 设计前期到量产后 | 首硅记录、foundry/node/package 认证、互操作 |
+| 封装/系统协同 | 3D-IC、HCB、热/IR/EM/机械问题 | Integrity/Celsius/Clarity/Sigrity/AuraStack bundle、算力 | tapeout 前 6–18 月 | 多域数据闭环、减少 respin |
+| 数据中心设计/运营 | rack kW、冷却、电力和 token/W | Reality/Fidelity/Celsius/Millennium license、硬件/云、维护 | 建造前 12–24 月至运营期 | 已验证设备模型、Omniverse/DSX 集成、运营反馈 |
+
+因此，GPU ASP 上涨不会自动流给 Cadence；真正的价格传导是 **更高 AI 系统价值 → respin/延误成本提高 → 客户更愿意购买经认证的全流程、更多验证容量和已硅验证 IP → Cadence 折扣收窄、bundle 扩大和合同拉长。**
+
+### 6.4 当前“产能能力”（美元计）、采用与认证
+
+这里的产能定义为 **未来 12 个月在不显著降低服务质量的可交付收入上限 M**，包含工程人力、认证/IP port、硬件/云资源和支持能力，不是工厂额定产能。
+
+| 产品群 | 当前收入中点 | 当前可交付容量 M | 首要瓶颈 | 当前采用程度 | 当前认证/验证阶段 |
+|---|---:|---:|---|---|---|
+| 先进节点 EDA/signoff | 28.5 亿美元 | 32–35 亿美元 | foundry PDK/flow 团队、signoff correlation、客户迁移支持 | 大规模 production，先进节点主流工具之一 | TSMC N2/A16 已认证、A14 合作中；Samsung 第二代 2nm 扩大认证；Intel 14A production-ready PDK 合作中 |
+| Agentic AI | 2.6 亿美元（重叠） | 4–6 亿美元（重叠） | 安全部署、客户设计数据、Agent 可靠性、推理/EDA 计算 | Cerebrus 已 production；Super Agents 处于发布、pilot 和 early access 混合期 | NVIDIA Level-5 预计 2026H2 early access；Google Cloud/Gemini 集成；无统一行业认证 |
+| HAV | 9.8 亿美元 | 11–12.5 亿美元 | 设备/FPGA/服务器采购、应用工程、云机时 | FY25 >30 新客户；前十大 7 家 Z3/X3 双购；AI/HPC 大客户扩容 | 不适用 foundry 认证；以客户 regression throughput/软件启动为验收 |
+| HBM/LPDDR/GDDR IP | 2.7 亿美元 | 3.2–3.8 亿美元 | PHY 工程师、test chip、封装/内存协同、首硅 | 多代 HBM/GDDR/LPDDR；Microsoft 为 data-center LPDDR5X 首客户 | HBM3E 多节点已有 silicon/cert；HBM4 test chip 处 pre-silicon/tapeout 路线；HBM4E 16G N2P 正在交付/验证 |
+| 高速互连/Chiplet IP | 3.6 亿美元 | 4.2–5.0 亿美元 | 224G/下一代 PHY、compliance、跨厂互操作、CPO 电光协同 | PCIe/SerDes 成熟；UCIe 和 CPO 由 early production 向扩张 | 224G-LR N3E 已 first-pass silicon；UCIe 16G 已 live interoperability；48/64GT/s 仍属下一代 |
+| 3D-IC/封装/多物理场 | 3.6 亿美元 | 4.5–5.5 亿美元 | package/board/physics 模型统一、GPU 算力、客户组织跨域 | Integrity/Celsius/Clarity/Sigrity 已 production；AuraStack 2026 上市 | TSMC 3DFabric 与 Samsung 3D Cube-H/HCB 流程；具体客户 package 仍需逐案 signoff |
+| Foundation/security/Tensilica | 2.0 亿美元 | 2.4–3.0 亿美元 | advanced-node library port、安全认证、软件生态 | Artisan N3 production designs；DSP 广泛；Secure-IC 并入初期 | 认证因 ISO/汽车/安全规范而异；未披露 AI 数据中心单独阶段 |
+| AI 工厂数字孪生 | 0.7 亿美元（重叠） | 1.0–1.6 亿美元（重叠） | 真实设备模型、客户运营数据、设计到运营闭环 | NVIDIA DSX/GB200/GB300 技术集成；付费客户规模未披露 | 无统一 certification；以模型校准、commissioning 和运营 KPI 验收 |
+
+## 7. 一年后产能、采用程度与认证情景
+
+采用评分：1=概念/实验，2=early access，3=少量 production design，4=多客户 production，5=生态标准/广泛量产。容量仍为可交付收入上限，不等于预测收入。
+
+| 产品群 | 基准：T+1 容量 / 采用 / 认证 | 乐观：T+1 容量 / 采用 / 认证 | 极度乐观：T+1 容量 / 采用 / 认证 |
+|---|---|---|---|
+| 先进节点 EDA/signoff | **36 亿美元；A4.5**；A14/14A 有 reference/beta flow，N2/A16/2nm 持续客户 tapeout | **39 亿；A4.8**；A14 核心 flow 认证、Intel 14A production reference、Samsung 2nm 更多客户 | **43 亿；A5**；三家先进 foundry 多客户 production tapeout，Agent-ready flow 成 bundle 标配 |
+| Agentic AI | **6.5 亿（重叠）；A3**；Level-5 选择性 early production，安全/审计机制成熟 | **9.0 亿；A4**；Google/NVIDIA 外出现多个实名 production 客户和可量化 ACV uplift | **12 亿；A4.5**；AgentStack 成为跨工具控制层，按 workflow/compute/outcome 计价 |
+| HAV | **13.5 亿；A4.5**；现有 hyperscaler 扩容，交付稳定 | **15.5 亿；A4.8**；更多客户双购 emulation/prototyping 并转云混合 | **18.5 亿；A5**；AI ASIC 并行项目数超预期，硬件/云容量仍供不应求 |
+| HBM/LPDDR/GDDR IP | **4.5 亿；A3.5**；HBM4 首硅、HBM4E/N2P 更多 tapeout | **5.5 亿；A4**；HBM4E 在 TSMC/Samsung 多项目验证，LPDDR 数据中心扩散 | **7.0 亿；A4.5**；多 foundry 量产、royalty 开始形成可见增量 |
+| 高速互连/Chiplet IP | **5.8 亿；A3.5**；UCIe 16G 商用、PCIe6 扩散、224G 更多首硅 | **7.2 亿；A4**；32/48/64GT/s pre-silicon，CPO/光引擎明确 design win | **9.0 亿；A4.5**；UCIe/SerDes 成为多家 AI accelerator/switch 平台标配并产生 royalty |
+| 3D-IC/封装/多物理场 | **6.5 亿；A4**；更多 CoWoS/HCB/3Dblox reference flow，AuraStack 选择性 production | **8.5 亿；A4.5**；package-PCB-physics 联合优化成为 hyperscaler 标准流程 | **11 亿；A5**；全栈数据模型锁定，工具由项目采购升级为企业平台 |
+| Foundation/security/Tensilica | **3.2 亿；A3.5**；Artisan 扩更多节点，Secure-IC 获少量 AI design win | **4.0 亿；A4**；foundation+security+interface 组合销售，PQC/Root of Trust 增配 | **5.0 亿；A4.5**；先进节点 foundation IP 和安全子系统进入多家量产 AI SoC |
+| AI 工厂数字孪生 | **2.2 亿（重叠）；A2.5**；数个设计/commissioning 项目，运营闭环有限 | **3.5 亿；A3.5**；hyperscaler/colo 付费 deployment，披露 MW/ARR | **5.5 亿；A4**；DSX/Omniverse 参考架构被广泛采用，设计与运营续费建立 |
+
+容量扩张手段不是建厂，而是：增加 IP/PDK/应用工程师、复用 Rambus/Artisan/Secure-IC 资产、更多 test chip 与 compliance lab、扩大 Palladium/Protium/Millennium 制造和云资源、将 support 标准化为 Agent workflow，以及借 TSMC/Samsung/Intel reference flow 降低逐客户工程量。
+
+## 8. 基于真实 backlog、供给与渠道验证的未来一年增速
+
+### 8.1 可核验的订单基础
+
+截至 2026-03-31：
+
+- RPO/backlog **80 亿美元**，较 2025Q2 的 64 亿增长 25%；
+- cRPO **40 亿美元**，较 2025Q2 的 31 亿增长 29%；
+- RPO 中约 **7 亿美元**是不可取消但产品/数量尚待指定的承诺；
+- 剔除此类承诺的 RPO 中约 55% 预计 12 个月内确认、43% 在 13–36 个月确认；
+- 未来 royalty 不在 RPO，所以量产成功存在上行，失败也不会从 RPO 中直接看出；
+- 2025 年 recurring/upfront revenue 约 80%/20%，收入可见性高但硬件/IP 交付使季度波动较大。
+
+### 8.2 客户项目、交付窗口和“渠道”证据
+
+| 客户/生态 | 可核验项目 | 当前阶段/交付窗口 | 订单金额 | 取消/风险判断 |
+|---|---|---|---:|---|
+| NVIDIA | Xcelium/Jasper + ChipStack Level-5；AuraStack/M2000；Samsung 2nm/NVLink-C2C；Reality/DSX | ChipStack Level-5 2026H2 early access；AuraStack 2026 可用；其余为持续合作/production flow | 未披露 | 深度高但议价力也强；合作公告不等于全部收入已入 backlog |
+| Google/Google Cloud | ChipStack + Gemini + Cloud compute | 2026-04 宣布战略合作，处优化/部署阶段 | 未披露 | 若仅 cloud integration，收入可能较小；若进入内部 production design，ACV 显著 |
+| TSMC | N2/A16 认证、A14、3DFabric；N2P HBM4E 16G/PCIe6/LPDDR6 | N2/A16 production-ready/certified；A14 PDK 合作中；新 IP 分阶段交付 | 未披露 | 认证合作通常持续多年，取消概率低；客户芯片选择仍不保证 |
+| Samsung Foundry | 第二代 2nm memory/interface IP、NVLink-C2C、3D Cube-H/HCB flow | 多年协议；2026 SAFE 展示，部分 IP/flow 开发和扩认证中 | 未披露 | foundry enablement 强，但 Samsung 先进节点客户/良率决定最终量产量 |
+| Intel Foundry | 14A DTCO、IP readiness、production-ready PDK | 2026-06 起多年合作；T+1 主要为开发/认证而非大规模 royalty | 未披露 | Intel 14A 路线执行是外生风险 |
+| Microsoft | LPDDR5X 9600 + RAIDDR ECC data-center IP | 公司称首位客户；2026-01 公布 | 未披露 | 明确客户验证强于概念产品；量产平台、单位 royalty 未披露 |
+| Lightmatter | Cadence SerDes/UCIe + Passage CPO | 2026-01 技术合作，manufacturing-ready CPO 路线；商业量产仍待验证 | 未披露 | 高潜力小业务；同时 Lightmatter 也与 Synopsys 合作，不是排他设计胜利 |
+| Intel + UCIe Consortium | Cameron Creek 16G UCIe-S live interoperability | Chiplet Summit 2026 已完成演示 | 未披露 | 证明互操作，不证明 48/64GT/s 或大规模量产 |
+| 其他硬件客户 | FY25 >30 新客户，前十大 7 家双购 Z3/X3 | 已采购/扩容；交付节奏未披露 | 未披露 | 最强订单信号，但缺少项目名、金额和硬件 lead time |
+
+公开资料中没有客户项目金额、交付批次或取消率；因此，任何声称“某 hyperscaler 已给 Cadence 数亿美元订单”的说法都无法验证。本报告用实名技术采用、认证阶段、RPO 与实际分部增长代替传闻金额。
+
+### 8.3 公司未来一年收入与 backlog 情景
+
+基准期为最新 FY2026 指引中点 61.75 亿美元；T+1 为 2027 年中附近运行率。Bookings 仍是由 RPO roll-forward 反推的模型。
+
+| 情景 | T+1 收入 | 增速 | 未来一年净合同增加/Bookings M | B2B M | 期末 RPO M | 合同取消/延迟假设 | 供给假设 |
+|---|---:|---:|---:|---:|---:|---|---|
+| **基准** | **68 亿美元** | **+10%** | 68 亿美元 | 1.00x | 约 80 亿美元 | 修改/终止/重大延迟约 1%–3%；无重大退款 | PDK/IP 工程和 HAV 供应逐步扩张；Agent 仅选择性 production |
+| **乐观** | **73 亿美元** | **+18%** | 80 亿美元 | 1.10x | 约 87 亿美元 | 0.5%–1.5% | 硬件、HBM4E/UCIe port、3D-IC 支持都扩容；bundle/折扣改善 |
+| **极度乐观** | **79 亿美元** | **+28%** | 95 亿美元 | 1.20x | 约 96 亿美元 | <1%，且客户指定不可取消 commitment 的速度加快 | AgentStack 商业化、HAV 云/设备不受限，多 foundry IP 同时量产 |
+
+**为何基准不是简单套用 80 亿 backlog：** 80 亿中大量在 13–36 个月或更晚确认，且包括待指定产品承诺；不能把全部 backlog 当作未来一年收入。40 亿 cRPO 是下限型可见收入，剩余约 28 亿美元基准收入来自新合同当期确认、upfront hardware/IP、维护和 royalty。
+
+### 8.4 分业务未来一年增速汇总
+
+| 产品/业务 | 基准增速 | 乐观增速 | 极度乐观增速 | 订单与供给敏感点 |
+|---|---:|---:|---:|---|
+| 先进节点 EDA | +11% | +16% | +22% | EA 续约、先进节点设计启动、foundry 认证进度；供给主要是应用工程 |
+| Agentic AI（交叉） | +38% | +73% | +123% | production 转化率、计价方式、secure/on-prem 部署、推理成本 |
+| HAV | +17% | +31% | +48% | 设备/云交付、客户验证并行度、AI ASIC 数量；季度确认波动最大 |
+| HBM/Memory IP | +26% | +41% | +63% | HBM4/4E test chip、foundry/node/package port、量产 royalty |
+| 高速互连/Chiplet IP | +25% | +42% | +67% | PCIe6/UCIe/224G/CPO design win 与 compliance |
+| 3D-IC/多物理场 | +31% | +53% | +83% | advanced package 项目数、AuraStack bundle、GPU 加速 solver 容量 |
+| Foundation/security/DSP | +20% | +35% | +55% | M&A 交叉销售、标准单元 port、安全合规 |
+| AI 工厂数字孪生（交叉） | +43% | +100% | +186% | 付费项目数、MW 覆盖、运营 ARR；基数最小、误差最大 |
+
+## 9. 竞争格局、技术主流性、替代方案与客户替换成本
+
+### 9.1 竞争矩阵
+
+| 领域 | Cadence | 主要竞争对手 | 替代方案 | Cadence 相对位置 |
+|---|---|---|---|---|
+| Digital RTL-to-GDS / signoff | Genus/Innovus/Tempus/Quantus/Pegasus/Voltus/Cerebrus | Synopsys Fusion Compiler/PrimeTime/IC Validator/DSO.ai；Siemens Aprisa/Calibre；foundry/internal tools | OpenROAD、Yosys、KLayout、客户自研脚本 | 全流程双寡头之一；在 implementation、custom/analog 和 AI flow 强，signoff 与 Synopsys 分庭抗礼 |
+| Custom/analog | Virtuoso/Spectre/Quantus/ViraStack | Synopsys Custom Compiler/PrimeSim；Siemens Solido；Keysight | 开源 SPICE/版图工具、内部 PDK flow | Virtuoso 生态、PCell/PDK 和历史数据形成最强锁定之一 |
+| Functional verification/HAV | Xcelium/Jasper/Verisium/Palladium/Protium/ChipStack | Synopsys VCS/Verdi/ZeBu/HAPS/AgentEngineer；Siemens Questa/Veloce | FPGA 自建农场、云仿真、开源 simulator/formal | Cadence/Synopsys 在大规模仿真硬件近双寡头；转换会重做 regression、debug 和软件 bring-up |
+| Memory/interface/chiplet IP | HBM/DDR/LPDDR/GDDR、PCIe/CXL/UCIe/UALink/SerDes | Synopsys IP、Alphawave/Qualcomm、Rambus、Arm、CEVA、Arteris、Avery/Siemens、客户自研 | 自研 PHY/controller、开放标准实现 | 不垄断协议，但先进 PHY、first-pass silicon 和多 foundry port 提供溢价 |
+| 3D-IC/package/PCB | Integrity/Allegro/Sigrity/Celsius/Clarity/AuraStack | Synopsys 3DIC Compiler + Ansys；Siemens Xpedition/Calibre/HyperLynx；Keysight | foundry reference flow、客户拼接多工具 | “silicon-to-package-to-board”覆盖完整；Synopsys+Ansys 是最强威胁 |
+| 多物理场/结构/CFD | Fidelity/Celsius/Clarity/BETA CAE/MSC | Synopsys Ansys、Siemens Simcenter、Dassault SIMULIA、Altair、COMSOL、Keysight | 专用 solver、内部 HPC | Cadence 电子耦合强，但通用机械/结构市场中 Ansys/Siemens/Dassault 品牌与 installed base 更大 |
+| AI 工厂数字孪生 | Reality/Fidelity/Celsius + NVIDIA Omniverse/DSX | Ansys、Siemens、Dassault、Schneider、Bentley、Vertiv、传统 DCIM/BMS/CFD | 顾问+自研模型、设备厂工具 | 仍为早期挑战者；优势是从芯片/封装模型上接，弱点是设施运营软件和客户基数 |
+| Agentic AI | Cerebrus/ChipStack/ViraStack/InnoStack/AuraStack/AgentStack | Synopsys AgentEngineer（已展示 L4 多 Agent）；Siemens EDA AI System；Google/Anthropic/OpenAI + 客户自研 Agent；开源 EDA | 模型无关 orchestration、内部 copilot | Cadence 的 moat 是 Agent 原生调用其 signoff engines，不是基础模型本身 |
+
+Synopsys 在 2026 Converge 展示 L4 AgentEngineer，多 Agent 流程在部分客户任务中生产率约 2 倍、个别 5 倍；并发布 Synopsys-Ansys Multiphysics Fusion。[Synopsys 2026](https://news.synopsys.com/2026-03-11-Synopsys-Outlines-Vision-for-Engineering-the-Future) Siemens 的 EDA AI System 已跨 Aprisa、Questa、Solido、Tessent、Veloce 提供生成式/Agentic 功能，并强调 on-prem/security。[Siemens EDA AI System](https://eda.sw.siemens.com/en-US/eda-cloud-solutions/eda-ai-system/) 因此，Agentic EDA 会成为主流，但 **Cadence 不能仅凭“率先发布”获得永久垄断。**
+
+### 9.2 新技术是否会成为主流
+
+| 新技术 | 主流概率 | 时间 | 判断 |
+|---|---:|---|---|
+| AI 驱动 PPA 搜索/Cerebrus | 90% | 已在 production | 已累计 >1,000 tapeout（2025Q1 口径），价值可量化；会成为高级 flow 标配。 |
+| Agentic RTL/验证/implementation | 80% | 2026–2028 | 必然进入工程工作流，但 human-in-loop、安全、可追溯和 signoff 责任会长期保留。 |
+| HBM4/4E + 3D-IC | 95% | 2026–2028 | AI accelerator 的带宽/功耗关键路径，Cadence 的 EDA/IP 双重受益最确定。 |
+| UCIe/chiplet | 75% | 16G 已落地；48/64GT/s 更偏 2028 | 标准会扩张，但量产速度受封装成本、yield、互操作与软件影响；不能把演示当当年收入。 |
+| CPO/光 chiplet | 55% | 2027–2029 | AI scale-out/scale-up 的潜在主流，短期仍有激光、封装、热和可靠性风险；Lightmatter 合作非排他。 |
+| AI 工厂实时数字孪生 | 50% | 2027–2030 | 设计期 CFD/热分析已主流；运营闭环和按 MW/ARR 付费仍需客户数据证明。 |
+| 全自动 Level-5 芯片设计 | 25% 在 2027 前；长期更高 | 2028+ | 可在受控子任务实现，先进节点全项目需规格、模拟、物理、验证、signoff、封装和 silicon feedback，短期很难无人负责。 |
+
+### 9.3 客户替换成本
+
+| 产品 | 替换成本 | 典型迁移期 M | 为什么难换 |
+|---|---:|---:|---|
+| Virtuoso/先进模拟与 custom flow | 5/5 | 18–36+ 月 | PCell、PDK、schematic/layout、仿真模型、脚本、版图和工程师习惯全部耦合 |
+| Digital implementation + signoff | 4.5/5 | 12–36 月 | PPA 重新收敛、signoff correlation、foundry 认证、历史 ECO/flow 数据 |
+| Palladium/Protium 验证平台 | 4.5/5 | 6–18 月 | testbench、transactor、debug、软件 bring-up、设备/云容量和 regression 资产 |
+| HBM/SerDes PHY | 5/5 | 24–36 月且可能多一次流片 | 工艺/封装相关模拟 IP，替换意味着重新集成、验证、test chip、compliance 和首硅风险 |
+| Controller/VIP/security IP | 3.5–4/5 | 6–18 月 | 协议标准化使替代更多，但验证环境、软件驱动和认证仍有成本 |
+| 3D-IC/package/board flow | 4/5 | 12–24 月 | die-package-board 数据、热/IR/EM/机械模型和 foundry 格式联动 |
+| 通用 SDA/机械仿真 | 3/5 | 6–18 月 | 文件可交换但 solver correlation、材料库、流程和历史模型有锁定 |
+| Agentic AI 层 | 2.5/5 当前，可能升至 4/5 | 3–12 月 | 基础模型可替换；若 Agent 记忆、流程数据、审计和 Cadence engine API 深度绑定，锁定快速上升 |
+
+业内论坛的定性信号与此一致：模拟/混合信号工程师普遍把 Cadence/PDK 绑定视为最难替代，同时抱怨老旧 UX、脚本复杂和许可证价格；这为 Agent 前端或开源编排创造机会，却也显示底层 engine/PDK 仍是价值核心。论坛样本有选择偏差，只作方向验证，不用于收入估算。[analog EDA 讨论](https://www.reddit.com/r/chipdesign/comments/1tspo2n/honest_question_does_analog_eda_need_disruption/)、[设计流程瓶颈讨论](https://www.reddit.com/r/chipdesign/comments/1r59d0d/any_bottlenecks_in_the_current_chip_design/)
+
+### 9.4 Kimi K3 / 开源 EDA：最新风险事件
+
+2026-07-17，CDNS 从前收 364.65 美元跌至 330.11 美元，-9.47%。[Investing.com 报道](https://uk.investing.com/news/stock-market-news/why-is-cadence-design-systems-stock-plummeting-today-93CH-4776672)称 Moonshot AI 的 Kimi K3 在 48 小时内只用开源 EDA 完成完整芯片设计流程；[Kimi 官方更新页](https://www.kimi.com/code/docs/en/kimi-code/whats-new.html)确认 K3 面向包括 chip design 在内的长时程工程任务，但截至 2026-07-18：
+
+- 未公开工艺节点、PDK 授权、die size、时钟、功耗、DRC/LVS/STA/IR/EM signoff 结果；
+- 未证明 tapeout、首硅功能、良率或量产；
+- 技术报告和完整权重计划在 2026-07-27 后提供，晚于本报告截止日；
+- “完整流程”可能是公开 PDK/mature-node benchmark，不能自动外推到 TSMC N2/A16、Samsung 2nm 或 HBM4E/3D-IC。
+
+**合理结论：**
+
+1. **真实威胁：** RTL 生成、testbench、脚本、低端 synthesis/place-route 和 mature-node 设计的劳动价值下降；小团队可能用 open-source + Agent 替代部分低端 seat；Cadence 必须从 seat 转向 engine call/workflow/outcome 收费。
+2. **尚未证实的威胁：** 先进节点 foundry signoff、模拟/RF、PHY、硬件 emulation、silicon-proven IP 被一次演示替代。
+3. **潜在反身性上行：** Agent 自动跑数百次仿真/形式验证和 PPA 搜索，可能显著增加 Xcelium/Jasper/Innovus/Tempus/Palladium 的调用量；NVIDIA 的 Cadence 案例本身就是“Agent 消耗更多 EDA 引擎”。
+4. **下一验证日：** 2026-07-27 同日既有 Kimi 技术报告计划，也有 Cadence Q2 财报；需要逐项检查 benchmark 的节点、signoff、silicon 和 Cadence 的 Agent monetization 回答。
+
+### 9.5 其他主要风险
+
+| 风险 | 当前证据 | 影响路径 | 监控指标 |
+|---|---|---|---|
+| 高估值 | 约 77x trailing GAAP P/E、46x forward consensus、16.3x P/S | 增速从双位数降至高个位数即可触发估值压缩 | cRPO 增速、FY27 预期、non-GAAP OPM、FCF |
+| Synopsys+Ansys | 2026 已发布 Multiphysics Fusion 与 AgentEngineer | EDA+多物理场 bundle 与 Cadence 正面竞争 | 联合产品收入、客户迁移、3D-IC design wins |
+| 开源/AI seat cannibalization | Kimi K3 事件、OpenROAD/Yosys 进步 | 低端 seat、脚本/服务价值下降 | 先进节点 signoff 认证、付费 Agent uplift、license 模式 |
+| 中国/出口管制 | 2026Q1 中国收入占 13%；2025 支付约 1.406 亿美元 DOJ/BIS 和解 | 市场准入、合规成本、客户迁移至国产 EDA | 中国占比、出口规则、审计/和解后续义务 |
+| M&A/商誉 | goodwill+intangibles 占资产 56.7%，有形权益为负 | 减值、摊销、文化/产品整合、利润稀释 | Hexagon 收入 1.60 亿目标、SDA organic growth、去杠杆 |
+| 硬件交付/周期 | 硬件/IP upfront 约造成 20% 收入点时确认 | 季度波动、库存/供应、客户 capex 延迟 | 硬件 backlog、GM、库存、upfront mix |
+| 客户自研 IP | hyperscaler/CPU/GPU 厂可自研 SerDes/HBM controller | IP attach 和 royalty 下降 | 公开 IP design win、foundry port 数、royalty |
+| UCIe 标准化 | 协议开放、跨厂商互操作 | controller 可替代性上升，PHY 定价受压 | compliance 结果、first-pass silicon、客户量产 |
+| 厂商性能声明不可复现 | 10x/20x/40x 均为特定任务 | 投资人高估全项目节省和付费意愿 | 独立 benchmark、全项目工期、production 客户 |
+
+## 10. 结论、监控清单与证据来源
+
+### 10.1 投资判断
+
+**业务质量：高；AI 相关性：高且领先系统出货；财务健康：中高；估值安全边际：低；未来一年最大分歧：Agentic AI 是增量计算入口还是 seat 替代。**
+
+Cadence 的最佳资产不是某一个产品，而是 **认证过的计算引擎、PDK、历史设计/验证数据、硬件容量、硅验证 IP 与工程支持形成的闭环。** HBM4E、UCIe/SerDes、3D-IC 和 AI ASIC 并不会减少 signoff；相反，每代复杂度提升让客户更不愿承担 respin。基准情景中，公司可以凭现有 80 亿美元 RPO、40 亿美元 cRPO、IP/HAV 强势和 Hexagon 全年化，在一年后达到约 68 亿美元收入运行率。
+
+但股价已经给了很高的质量溢价。要支持乐观或极度乐观情景，Cadence 必须证明：
+
+1. AgentStack/ChipStack 不只是免费功能，而能提升 enterprise ACV、云/计算使用或 outcome pricing；
+2. HBM4/4E、UCIe、224G/CPO 的公告变成 silicon/量产和 royalty；
+3. Hexagon/SDA 在并表后不只是收入增加，还能恢复较高增量利润；
+4. 开源 Agent 能生成 RTL，但无法绕过先进节点 certified signoff，或者反而增加 Cadence engine calls；
+5. RPO 增长继续高于收入，且 cRPO 不因客户延迟、修改或出口限制下滑。
+
+### 10.2 未来 90 天与一年监控表
+
+| 日期/频率 | 必看项目 | 正面阈值 | 预警阈值 |
+|---|---|---|---|
+| **2026-07-27 Q2 财报** | 收入、Q3/FY26 指引、Core/IP/SDA 增速、GM、RPO/cRPO | Q2 ≥15.75 亿；维持/上调 FY26；RPO ≥80 亿；IP/HAV 继续双位数 | 下调 FY26、cRPO <40 亿、硬件确认推迟、Hexagon 稀释超预期 |
+| **2026-07-27 前后 Kimi 技术报告** | 节点/PDK、signoff、tapeout、silicon、工具链 | 仅 mature/open PDK benchmark；仍调用商业 signoff | 先进节点 foundry 认证、独立复现、真实首硅且成本显著低 |
+| 2026H2 | Level-5 ChipStack early access | 准时、多个实名 production 客户、付费 uplift | 延迟、只有 task demo、未披露商业化 |
+| 每季 | RPO/cRPO 和隐含 B2B | B2B ≥1、cRPO 同比双位数 | 连续两季 B2B <1 或合同修改增加 |
+| 每季 | IP | >18% 增长、HBM4E/UCIe/SerDes design win | <10%、只有产品发布无客户/硅 |
+| 每季 | HAV | 新客户+扩容、GM 稳定 | 供应/交付积压、客户转向竞品/自建 |
+| 未来 12 月 | TSMC/Samsung/Intel 认证 | A14/14A/2nm reference flow 与客户 tapeout | 认证延迟或 foundry 路线失速 |
+| 未来 12 月 | Balance sheet | 净债务/FCF <1x、商誉无减值 | FCF <12 亿、回购压过去杠杆、SDA 减值 |
+| 未来 12 月 | AI 工厂数字孪生 | 披露客户、MW、ARR/续费 | 继续只有性能模型和合作公告 |
+
+### 10.3 本地行业资料
+
+- [EDA 工具、接口 IP 与 Chiplet IP 行业调研，2026-07-10](../../行业调研/AI服务器_存储_芯片/行业调研_EDA工具、接口IP与Chiplet%20IP_2026-07-10.md)：市场规模、18–36 月领先关系、产品毛利/增速、工程容量、定价、竞争集中度和替换成本。
+- [云厂自研 AI ASIC 行业调研，2026-07-10](../../行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI%20ASIC_2026-07-10.md)：单代 AI ASIC NRE、respin 时间、EDA/IP/验证价值链。
+- [AI 芯片先进封装行业调研，2026-07-10](../../行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-07-10.md)：3D-IC、HBM、UCIe、热/电源完整性和先进封装路径。
+- [先进逻辑晶圆代工和封装行业调研，2026-07-10](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-07-10.md)：foundry 认证、先进节点与封装生态。
+- [DCIM、能控与 AI 工厂数字孪生行业调研，2026-07-10](../../行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-07-10.md)：每 MW 数字孪生内容量和 Cadence Reality/Celsius/Voltus 定位。
+
+### 10.4 主要联网一手来源
+
+- [Cadence 2026Q1 财报](https://investor.cadence.com/news/news-details/2026/Cadence-Reports-First-Quarter-2026-Financial-Results/default.aspx)；[2026Q1 10-Q](https://www.sec.gov/Archives/edgar/data/813672/000081367226000047/cdns-20260331.htm)
+- [Cadence 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/813672/000081367226000016/cdns-20251231.htm)
+- [Cadence 2025Q4/FY2025 财报](https://investor.cadence.com/news/news-details/2026/Cadence-Reports-Fourth-Quarter-and-Fiscal-Year-2025-Financial-Results/default.aspx)
+- [Cadence 2026Q2 webcast 公告](https://investor.cadence.com/news/news-details/2026/Cadence-Announces-Second-Quarter-2026-Financial-Results-Webcast/default.aspx)
+- [TSMC 先进节点/IP 合作](https://www.cadence.com/zh_TW/home/company/newsroom/press-releases/pr/2026/cadence-collaborates-with-tsmc-to-accelerate-design-of-next.html)
+- [Samsung 2nm/3D-IC 合作](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-and-samsung-foundry-deepen-2nm-and-3dic-collaboration-to.html)
+- [Intel 14A 合作](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-announces-collaboration-with-intel-foundry-to-accelerate.html)
+- [NVIDIA Level-5 ChipStack](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-unveils-industrys-first-fully-autonomous-virtual.html)
+- [Google + ChipStack](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-and-google-collaborate-to-scale-ai-driven-chip-design.html)
+- [AuraStack](https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-introduces-aurastack-ai-super-agent-the-worlds-first.html)
+- [UCIe Consortium：Chiplet Summit 2026](https://www.uciexpress.org/post/chiplet-summit-2026-ucie-momentum-across-a-growing-ecosystem)
+- [SEMI ESD Alliance Q4 2025](https://www.semi.org/en/semi-press-release/esd-alliance-reports-electronic-system-design-industry-posts-5.5-billion-dollars-in-revenue-in-q4-2025)
+
+---
+
+**最终判断：** Cadence 仍是 AI 基建中少数“在芯片出货前 18–36 个月收钱、对单一芯片赢家低敏感、具备高 switching cost”的核心工具/IP 公司。未来一年最确定的增长来自 advanced-node EDA、HAV、HBM/高速 IP 和 3D-IC；最有期权价值的是 AgentStack/AuraStack 与 AI 工厂数字孪生；最需要折价的是高估值、开源 Agent 叙事、Synopsys+Ansys 竞争和收购后资产负债表。对公司业务可以偏乐观，对当前估值必须比对业务更谨慎。

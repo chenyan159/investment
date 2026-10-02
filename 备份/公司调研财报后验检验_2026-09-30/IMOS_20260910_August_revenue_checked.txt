@@ -1,0 +1,8 @@
+Official source checked with web on 2026-09-30 PDT
+https://chipmostechnologiesinc.gcs-web.com/news-releases/news-release-details/chipmos-reports-333-yoy-increase-august-2026-revenue
+Release date: 2026-09-10
+Period: August 2026, unaudited monthly revenue
+Revenue TWD million 2785.7; July 2823.0; prior-year August 2090.3; MoM -1.3%; YoY +33.3%.
+No pretax profit, net profit, EPS, operating profit, gross margin, or cash flow disclosed in this release.
+September29 6-K contains new monthly pretax profit, parent net profit and ordinary-share EPS, while the revenue is already-known data and Q2/TTM fields repeat past periods. This is first disclosure within the checked official releases/SEC set, not proof of first publication anywhere.
+Raw request to official IR endpoint timed out; web source content was readable and inspected.

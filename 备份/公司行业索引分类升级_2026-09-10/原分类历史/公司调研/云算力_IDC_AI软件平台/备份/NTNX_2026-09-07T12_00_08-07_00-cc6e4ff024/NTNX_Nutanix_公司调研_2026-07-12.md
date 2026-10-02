@@ -1,0 +1,631 @@
+# 公司：NTNX Nutanix, Inc.（Nutanix）全面尽调
+
+> **研究日期：2026-07-12（美西时间）**  
+> **最新财务期：FY2026 Q3，截止 2026-04-30，披露于 2026-05-27**  
+> **市场数据日期：2026-07-10 收盘（2026-07-12 为周日，无当日交易）**  
+> **证据边界：**公司/SEC/产品与合作伙伴官方材料优先；过去半年会议、技术文档、行业调查与论坛只作交叉验证。项目内只使用 `基本面/行业调研/` 的相关产业资料，未调用其他目录中的既有研究。全文的“估算”“模型”“情景”均不是公司指引。
+
+## 核心结论
+
+1. **NTNX 目前首先是“VMware 替代与混合多云基础设施软件”公司，尚不是 AI 收入驱动公司。** Nutanix 以 AOS 分布式存储、AHV 虚拟化、Prism 运维为核心，把计算、存储、虚拟化、容器、数据库、文件/对象存储与 AI 平台放在一个控制面。AI 的直接收入仍很小；当前最强现金流来源是虚拟化/HCI 订阅，最强催化剂是 Broadcom-VMware 客户重新选型。
+2. **财务质量明显改善，但增长已从迁移红利早期的 20%+回落到约 10%。** Q3 FY26 收入 **$703.1m、+10% YoY**，ARR **$2.435bn、+15%**，RPO **$3.078bn、+26.8%**，非 GAAP 营业利润率 **22.3%**，自由现金流 **$197.2m**。同期 NRR 从一年前的 110% 降到 **106%**，说明扩容强度减弱；RPO 与 TCV 强于收入则说明未来开单和服务器交期把确认推后。
+3. **“订单挤压”来自客户服务器，而非 Nutanix 软件产能。** 管理层给出的服务器/部件交期跨度已从正常的 **3–4 周**拉长至部分配置的 **约 6 个月**；内存、CPU、GPU 涨价或缺货使客户把软件起始日推迟。Q3 TCV bookings 同比增长 **超过 20%**，但绝对 bookings 与取消率没有披露；历史取消“非常少”，可取消 backlog 仅约为已披露 RPO 的低个位数百分比。
+4. **最新组合变化比 AI 标签本身更重要。** 外部存储支持（Dell PowerFlex、Pure Storage Everpure 已商用；Dell PowerStore、NetApp、Lenovo 按路线图在 2026 年陆续进入）拆掉了 Nutanix 必须接管存储的迁移障碍；NKP Metal 把 Kubernetes 延伸到裸金属；NUS 获 NVIDIA 企业级存储认证；NAI 2.6/Agentic AI 与 AMD ROCm/Instinct 路线给未来 AI 增量留下入口。
+5. **独立拆分显示，狭义 AI 直接收入中值约 $35m/年、约占 TTM 1.3%；AI 相关“可销售产品池”远大于 AI 实际使用收入。** NUS、NKP、NDB、NCM 都能服务 AI，但不能把其全部收入算成 AI。以 TTM 收入约 **$2.750bn** 为基数，本报告估计核心 NCI/AHV/AOS 占 **74%**，全部相邻产品约占 **21%**，恰与 Investor Day 披露的 FY25 相邻产品占 land-and-expand ACV **21%**形成量级交叉验证。
+6. **一年后基准模型收入 $3.10bn、+12.6%；乐观 $3.32bn、+20.6%；极度乐观 $3.63bn、+32.1%。** 基准与市场 FY27 共识约 $3.20bn、+12.8% 接近；乐观以上必须同时满足硬件交期改善、VMware 大客户迁移加速、外部存储认证兑现、NRR 回升和相邻产品 attach 上升。极度乐观不是中心预测。
+7. **估值不再便宜，但 GAAP 盈利与现金净额形成保护。** 2026-07-10 收盘价 **$54.79**，市值 **$14.81bn**，TTM P/E **57.35x**、forward P/E **25.78x**、P/S **5.39x**。现金及短期投资 **$2.018bn**，可转债账面值 **$1.347bn**，净现金约 **$0.49bn**；负股东权益主要来自历史累计亏损、回购和递延收入会计，不等同流动性危机，但回购、SBC 与可转债稀释必须持续观察。
+
+## 一、公司整体业务、投资人定位与产业链位置
+
+### 1.1 公司做什么
+
+Nutanix Cloud Platform（NCP）是面向企业数据中心、边缘和公有云的一套基础设施软件。其核心不是销售服务器：Nutanix 研发软件，NX 设备由 Supermicro 等代工，更多客户通过 Cisco、Dell、HPE、Lenovo、Fujitsu 等 OEM/渠道采购认证硬件。公司收入主要来自期限订阅与支持服务。
+
+| 技术层 | Nutanix 产品/能力 | 计费主单位 | 客户买它解决什么问题 |
+|---|---|---:|---|
+| 虚拟化与分布式基础设施 | **NCI：AOS + AHV + Prism + Flow/DR** | 物理 CPU core，通常 1–5 年 | 替代 VMware、整合计算/存储、统一运维 |
+| 混合多云与管理 | **NCM、NC2 on AWS/Azure/Google Cloud** | 核心、节点、云资源/订阅组合 | 跨私有云与公有云运维、成本、安全、灾备与临时容量 |
+| Kubernetes | **NKP、NKP Metal** | worker 物理 core 或 vCPU；控制面免费 | 在虚机和裸金属统一运行/治理 Kubernetes 与 AI 工作负载 |
+| 文件、对象、块存储 | **NUS、DataLens** | usable TiB | 企业文件/对象/块、AI 数据管道、勒索防护与治理 |
+| 数据库自动化 | **NDB** | 物理 core 或 vCPU | 数据库部署、克隆、补丁、备份与生命周期自动化 |
+| AI 平台 | **NAI 2.6、GPT-in-a-Box、Agentic AI** | GPU RAM GB；CPU 推理按 worker vCPU | 模型服务、AI Gateway、RAG/向量库、Notebook/MLOps、治理 |
+| 迁移与生态 | **Move、外部存储、OEM/云合作** | 多数随平台或项目报价 | 降低 VMware/外部阵列迁移阻力，保留既有存储投资 |
+
+根据 [Nutanix FY2025 10-K](https://www.sec.gov/Archives/edgar/data/1618732/000119312525213801/ntnx-20250731.htm)，截至 2025-07-31 公司拥有 **29,000+ 客户**，前两大分销商合计贡献 FY25 收入 **41%**（FY24 为 47%、FY23 为 48%），渠道集中仍高。公司不生产通用服务器，因而没有传统硬件公司的晶圆、机柜或装配产能约束。
+
+### 1.2 投资人如何给公司贴标签
+
+| 投资叙事 | 证据 | 本报告判断 |
+|---|---|---|
+| VMware 替代者 | Broadcom 收购后的价格、打包与渠道变化促使客户重估虚拟化；Nutanix 连续获得大额迁移项目 | **当前最真实的主线**；但迁移周期长、客户常先续约一轮再迁 |
+| 高毛利订阅基础设施软件 | TTM 毛利率 87.1%，FCF margin 28.0%，ARR +15% | **已验证**；GAAP 利润仍受 SBC 影响 |
+| 混合多云控制平面 | NC2 覆盖 AWS/Azure/Google；Prism/NCM 跨环境管理 | **有差异化，但公有云原生服务也是替代品** |
+| 私有 AI/主权 AI 平台 | NAI、NUS NVIDIA 认证、NKP、AMD/NVIDIA 合作 | **有产品权利，尚无足够收入验证**；更像长久期期权 |
+| 外部存储解耦平台 | PowerFlex/Everpure 已 GA，更多阵列进入路线图 | **2026 年最值得关注的小产品/新入口**；能打开最大存量虚拟化池 |
+
+本地行业研究将 AI 集群软件栈拆成硬件/互连、虚拟化、Kubernetes、推理运行时、服务治理、MLOps、运维七层；Nutanix 主要位于 **虚拟化、Kubernetes 与控制/治理层**，而不是 vLLM、SGLang、TensorRT-LLM 等 L0–L2 性能运行时的所有者。参见[项目内：AI 集群调度与推理运行时](../../行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-07-10.md)。这意味着 Nutanix 能靠易用性、统一运维和迁移收费，但其 AI 性能护城河很大程度依赖 NVIDIA/AMD/Kubernetes 生态，而非独占算法。
+
+### 1.3 最近三年重大变化、转型与收购
+
+| 时间 | 事件 | 业务含义 |
+|---|---|---|
+| 2023 | 剥离 Frame 桌面即服务业务；12 月收购 D2iQ 的部分资产、IP 与团队 | 退出非核心 EUC，补齐企业 Kubernetes；[Axios 对 D2iQ 交易的报道](https://www.axios.com/2023/12/09/nutanix-acquires-d2iq)显示交易规模未公开 |
+| 2024 | 将 D2iQ 技术整合为 Nutanix Kubernetes Platform（NKP）；推进 GPT-in-a-Box 2.0 | 从“虚拟机 HCI”扩到“虚机+容器+AI”统一平台 |
+| 2025 | 外部存储从 PowerFlex 试点扩到 Pure Storage Everpure；NC2 扩展到 Google；与 Finanz Informatik 签长期平台项目 | 外部存储解耦降低 VMware 迁移门槛；NC2 提供服务器短缺时的云端缓冲 |
+| 2026 H1 | 发布 Agentic AI、NAI 2.6、NKP Metal；NUS 获 NVIDIA 认证；与 AMD 建立最高 $250m 的股权+研发/GTM 合作；宣布 NetApp/Lenovo 等外部存储路线 | 进入裸金属 K8s、AI Factory 与多阵列生态，但多个组件处于 EA/2026 H2 GA，收入验证尚未到来 |
+
+FY25 10-K 显示 FY25 收购付款为零，FY24 仅约 **$4.5m**；因此过去三年的主要转型是**有机研发、D2iQ 技术吸收和合作伙伴扩张**，不是大型并购整合。AMD 于 2026-05 以每股约 **$36.26** 购买 Nutanix **4.137m 股**、现金约 **$150m**；双方另计划最高约 **$100m** 的联合研发/GTM 投入。该股权投资改善现金，但新增股份也构成约 1.5% 的即时稀释。
+
+### 1.4 产业链定位
+
+```text
+GPU/CPU/内存/SSD（NVIDIA、AMD、Intel、Micron 等）
+        ↓
+服务器与阵列（Cisco/Dell/HPE/Lenovo/Supermicro/Pure/NetApp）
+        ↓
+Nutanix：AOS/AHV/Prism + NKP/NUS/NDB/NAI 统一软件控制面
+        ↓
+渠道、SI/MSP、云平台（AWS/Azure/Google/OVH）
+        ↓
+大型企业、政府、金融、医疗、制造、教育
+```
+
+Nutanix 的经济位置介于硬件 OEM 与企业应用之间：它不承担晶圆/服务器库存，却通过按核、容量和 GPU 内存计费，抽取基础设施全生命周期的软件价值。其最直接上游风险是服务器可得性，最直接下游风险是客户迁移速度和 IT 预算；最大替代来自 VMware/VCF、Red Hat OpenShift Virtualization、Microsoft Azure Local/Hyper-V、HPE、Oracle Linux 以及直接上公有云。
+
+## 二、最新股价、估值、盈利质量与资产负债表
+
+### 2.1 市场与估值快照
+
+| 指标 | 最新值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 收盘价 | **$54.79** | 2026-07-10 收盘 | 2026-07-12 为周日；盘后约 $54.95 |
+| 市值 | **$14.81bn** | 2026-07-10 | 约 270.32m 稀释前/流通口径股份 × 股价 |
+| 企业价值 | **$14.33bn** | 2026-07-10 | 因净现金低于市值 |
+| TTM P/E | **57.35x** | 截至 2026-07-10 | GAAP EPS 约 $0.96；历史一次性税项会影响可比性 |
+| Forward P/E | **25.78x** | 截至 2026-07-10 | 市场非 GAAP/预测口径，不与 GAAP P/E 直接等同 |
+| TTM P/S | **5.39x** | 截至 2026-07-10 | TTM 收入约 $2.75bn |
+| Forward P/S | **4.77x** | 截至 2026-07-10 | 对应未来收入共识 |
+| TTM 收入/增速 | **$2.75bn / 约 +12%** | 截止 FY26 Q3 的四季 | 最新单季增速 +10% |
+| 市场 FY26 收入共识 | **$2.83bn / +11.7%** | 2026-06-24 更新、7 月核查 | 公司指引 $2.82–2.84bn |
+| 市场 FY27 收入共识 | **$3.20bn / +12.8%** | 同上 | 本报告基准一年后模型 +12.6% |
+| 毛利率 | **87.09%** | TTM 截止 FY26 Q3 | 最新季 86.9% GAAP、87.8% 非 GAAP |
+| GAAP 营业利润率 | **8.90%** | TTM | 最新季 10.0% |
+| GAAP 净利率 | **10.03%** | TTM | 最新季 10.3%；税项与投资收益会波动 |
+| FCF margin | **28.03%** | TTM | 订阅预收使现金利润高于 GAAP 营业利润 |
+
+市场数据来自 [StockAnalysis NTNX statistics](https://stockanalysis.com/stocks/ntnx/statistics/) 与 [NTNX analyst forecast](https://stockanalysis.com/stocks/ntnx/forecast/)，均于 2026-07-12 核查。分析师一致评级为 Buy、目标价约 **$57.01**，仅比 $54.79 高约 **4.1%**；目标价不是基本面价值保证。过去 52 周股价约 **-28.4%**，而空头仓位约占流通股 **8.8%**，反映市场已在交易增长降速、VMware 迁移速度和 AI 兑现的不确定性。
+
+### 2.2 资产负债表健康度：8/10，流动性强，资本配置需监督
+
+| 项目 | 2026-04-30 | 判断 |
+|---|---:|---|
+| 现金 | $718.8m | 充足 |
+| 短期投资 | $1,299.1m | 高流动性资产；现金+投资合计 **$2.018bn** |
+| 流动资产/流动负债 | $2.612bn / $1.470bn | 流动比率 **1.78x**，短期偿债健康 |
+| 递延收入 | 流动 $1.155bn；长期 $1.152bn | 合计 **$2.307bn**；是已收/将确认订阅义务，不是同额现金债务 |
+| 可转债账面值 | $1.347bn | 2027 notes 本金 $500m、0.25%；2029 notes 本金 $862.5m、0.50% |
+| 净现金 | 约 $486m | 现金+短投减债务口径；AMD 交易后形式净现金更高 |
+| 股东权益 | **-$725.6m** | 历史亏损、SBC、回购与递延会计共同造成，不能单独判定资不抵债 |
+| TTM FCF | 约 $770.9m | 债务/FCF 约 1.99x；利息覆盖约 16.6x |
+| 循环信贷 | $500m，未提取 | 公司符合最高 3.75x 杠杆契约 |
+
+来源：[Q3 FY26 10-Q](https://www.sec.gov/Archives/edgar/data/1618732/000119312526248282/ntnx-20260430.htm)。现金+短投对可转债本金覆盖约 **1.48x**；计入 2026-05 AMD 约 $150m 股权款后约 **1.59x**。风险不在近期流动性，而在：
+
+- FY26 前九个月回购约 **$433.2m**，相当于同期 FCF 约 $563.1m 的 **77%**；回购能抵消稀释，但会消耗净现金。
+- TTM SBC 独立估算约 **$348m**、约占收入 **12.7%**；非 GAAP 利润率不能替代每股经济利润。
+- 2027 notes 初始转换价约 **$57.74**，已经接近股价；2029 notes 转换价约 **$85.83**。股价上涨时会出现稀释，股价不上涨时则需要现金偿债/再融资。
+- 两大分销商贡献 41% 收入，渠道政策或信用变化会传导到回款与订单。
+
+## 三、最近五次财报：收入、利润、订单、交期与 AI 占比
+
+### 3.1 五季损益与现金流
+
+单位除百分比外均为 **$m**；“产品收入”主要是订阅许可的产品部分，并非硬件产品；“支持/服务”是会计分类，不能等同 NUS/NDB/NKP 等产品线。
+
+| 财报季度（截止日） | 收入 / YoY | 订阅收入 / YoY | 产品收入 / YoY | 支持服务收入 / YoY | GAAP GM | GAAP / 非 GAAP营业利润率 | FCF / margin | 狭义 AI 直接收入估计* |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Q3 FY25（2025-04-30） | 638.98 / **+22%** | 609.66 / +25.3% | 345.48 / +35.2% | 293.50 / +9.1% | 87.0% | 7.6% / 21.5% | 203.4 / 31.8% | $3–6m / 0.5–0.9% |
+| Q4 FY25（2025-07-31） | 653.27 / **+19%** | 615.97 / +18.8% | 339.79 / +27.8% | 313.48 / +11.1% | 87.2% | 4.8% / 18.3% | 207.8 / 31.8% | $4–7m / 0.6–1.1% |
+| Q1 FY26（2025-10-31） | 670.58 / **+13%** | 637.84 / +13.8% | 349.00 / +15.6% | 321.57 / +11.3% | 87.0% | 7.4% / 19.7% | 174.5 / 26.0% | $5–9m / 0.7–1.3% |
+| Q2 FY26（2026-01-31） | 722.83 / **+10%** | 690.53 / +10.6% | 387.36 / +9.4% | 335.46 / +11.6% | 87.4% | 11.6% / 26.2% | 191.4 / 26.5% | $6–11m / 0.8–1.5% |
+| **Q3 FY26（2026-04-30）** | **703.07 / +10%** | **664.79 / +9.0%** | **364.94 / +5.6%** | **338.13 / +15.2%** | **86.9%** | **10.0% / 22.3%** | **197.18 / 28.0%** | **$8–15m / 1.1–2.1%** |
+
+\* 公司不披露 AI 产品收入。本栏是以 NAI/GPT-in-a-Box/Agentic AI 为狭义边界、结合管理层“仍然很小但增长很好”、产品 GA/EA 阶段与 TTM 模型反推的区间，置信度低。若把 NUS、NKP、NDB 全部收入都算 AI 会严重高估，因为这些产品的大部分部署仍服务普通企业负载。
+
+最新一季 Q3 的会计产品成本仅约 **$5.8m**，产品毛利率约 **98.4%**；支持/服务成本约 **$86.5m**，对应毛利率约 **74.4%**。因此订阅产品 mix、期限和起始日变化会显著影响毛利与收入，而客户成功、支持和专业服务仍需人力交付。
+
+五季官方来源：[Q3 FY25](https://ir.nutanix.com/news-releases/news-release-details/nutanix-reports-third-quarter-fiscal-2025-financial-results)、[Q4/FY25](https://ir.nutanix.com/news-releases/news-release-details/nutanix-reports-fourth-quarter-and-fiscal-2025-financial-results)、[Q1 FY26](https://ir.nutanix.com/news-releases/news-release-details/nutanix-reports-first-quarter-fiscal-2026-financial-results)、[Q2 FY26](https://ir.nutanix.com/news-releases/news-release-details/nutanix-reports-second-quarter-fiscal-2026-financial-results)、[Q3 FY26](https://ir.nutanix.com/news-releases/news-release-details/nutanix-reports-third-quarter-fiscal-2026-financial-results)。
+
+### 3.2 五季订单、积压、交期与取消
+
+| 财报季度 | ARR / YoY | 总 RPO / cRPO | Billings 或近似账单 / 收入 | TCV bookings 与客户信号 | 交期/取消/收入确认 |
+|---|---:|---:|---:|---|---|
+| Q3 FY25 | $2.119bn** / +约18% | $2.427bn / $1.201bn | $647.0m / 1.01x | NRR 110%；大客户迁移与新增 logo 强 | 未披露 lead time；取消率未披露 |
+| Q4 FY25 | $2.223bn / +17% | $2.693bn / 约$1.319bn | $726.9m / 1.11x | NRR 108%；Finanz Informatik 长期大单，金额未披露 | 订阅期限 3.2 年；订单转收入取决于 start date |
+| Q1 FY26 | $2.284bn / +18% | $2.671bn / $1.297bn | $708.1m / 1.06x | NRR 109%；bookings 略超预期，但更多 land/expand 未来起始 | 现金多先收、收入后认；可取消 backlog 很小 |
+| Q2 FY26 | $2.356bn / +16% | $2.897bn / $1.438bn | **约$774.0m / 1.07x*** | NRR 107%；TCV bookings **mid-teens**；新增客户 >1,000，为八年最强 | 内存/CPU 短缺加剧；历史取消“非常少” |
+| **Q3 FY26** | **$2.435bn / +15%** | **$3.078bn / $1.504bn** | **约$812.9m / 1.16x*** | NRR **106%**；TCV bookings **>20% YoY**；新增客户 >700 | 服务器交期从 3–4 周到约 6 个月；部分项目推迟，非普遍取消 |
+
+\* Q2/Q3 “近似账单”由“收入 + 当季递延收入净增加”推导：Q2 约 $722.8m+$51.2m，Q3 约 $703.1m+$109.9m。它不是公司披露的 TCV bookings；“Billings/收入”也**不是 book-to-bill**，因为公司未给出绝对 bookings。  
+\** 公司从 FY26 Q1 调整 ARR 方法，历史季度变化不超过约 2%；表中 Q3 FY25 用后续重列值以提高可比性。
+
+### 3.3 从五季数据能读出什么
+
+- **领先指标强、落后指标降速。** 收入增速由 22% 降至 10%，产品收入增速由 35% 降至 6%；但 RPO 一年增约 27%，Q3 TCV >20%。这更符合“订单存在、合同期限变长、起始日和硬件交付推迟”，而不是需求突然消失。
+- **ARR 仍快于收入，但 NRR 连续走低。** NRR 110%→108%→109%→107%→106%，说明老客户扩容、加购或价格提升不足以维持早期速度。新 logo 和大额迁移必须补上扩容降速。
+- **合同期变长推高 TCV/RPO。** Q3 平均合同期限 **3.4 年**，一年前 3.1 年。TCV 与 RPO 受期限拉长帮助；不能把 >20% TCV 增长等同未来 12 个月收入增长。
+- **取消不是主要矛盾。** [Q2 FY26 电话会](https://ir.nutanix.com/static-files/7288dce4-0255-4b9b-b3c8-e6e12cd3c4ad)称可取消 backlog 约为 RPO 的低个位数百分比、实际取消历史上“非常少”；公司未给精确取消率。已披露 RPO 本身以不可取消合同义务为主。
+- **客户硬件是关键瓶颈。** [Q3 FY26 电话会](https://ir.nutanix.com/static-files/307303de-e36e-4721-ac7b-2418fb1337b0)明确给出部分服务器/部件交期约 3–4 周至 6 个月。NC2 公有云和外部存储可绕过一部分新服务器需求，因此既是产品增长点，也是供应缓冲器。
+
+## 四、FY2026 最新指引、收入结构与产品交叉验证
+
+### 4.1 Q4/FY26 指引
+
+| 口径 | 公司指引 | 隐含增长/变化 | 读法 |
+|---|---:|---:|---|
+| Q4 FY26 收入 | **$725–745m** | +11.0%至+14.0%；中值 +12.5% | Q3 推迟收入进入 Q4/FY27；仍受服务器 start date 影响 |
+| Q4 非 GAAP营业利润率 | **21–23%** | 中值约 22% | 毛利稳定，销售/研发投入维持 |
+| FY26 收入 | **$2.82–2.84bn** | +11.1%至+11.9%；中值约 +11.5% | 比 Q2 时指引下限更稳，但没有把强 TCV 直接变成当期收入 |
+| FY26 非 GAAP营业利润率 | **约22.5%** | FY25 约21.1%，+约140bp | 订阅规模与费用纪律带来杠杆 |
+| FY26 FCF | **$760–780m** | +1.3%至+4.0% | 中值 margin 约27.2%，低于 FY25 约29.6%，有收款与投入时点因素 |
+
+### 4.2 公司不披露产品线收入：本报告独立拆分
+
+Nutanix 只披露“订阅/其他”和“产品/支持服务”两种会计口径，不披露 NCI、NUS、NKP、NDB、NAI 的收入。因此下表以截止 Q3 FY26 的 TTM 收入约 **$2.750bn** 为锚，综合 ACV attach、客户案例、产品成熟度、定价单位与管理层措辞反推；误差可能达到单项 ±30%–50%。
+
+| 独立估算产品池 | TTM 收入贡献 | 占收入 | 估计当前增速 | 估计毛利率 | 交叉验证与置信度 |
+|---|---:|---:|---:|---:|---|
+| **核心 NCI/AOS/AHV/Prism + 外部存储平台基础许可** | **$2.034bn** | **74.0%** | 9%–13% | 88%–94% | ARR/订阅主盘；高置信度量级、低置信度精确值 |
+| **NCM + NC2** | $245m | 8.9% | 15%–25% | 80%–88% | NC2 仍是少数但快速增长；云托管成本拉低毛利 |
+| **NUS + DataLens** | $135m | 4.9% | 25%–40% | 82%–90% | AI/安全/统一存储多驱动；NVIDIA 认证与 STX 给增量 |
+| **NDB** | $65m | 2.4% | 20%–30% | 80%–88% | 数据库自动化是小而粘的 attach；AI 只占部分用例 |
+| **NKP/Kubernetes** | $95m | 3.5% | 35%–55% | 75%–88% | D2iQ 整合后加速；裸金属仍处 EA/早期 GA |
+| **NAI/GPT-in-a-Box/Agentic AI** | **$35m** | **1.3%** | >70%，低基数 | 60%–80% | 管理层称仍“fairly small”；许多组件 H2 2026 才完整 GA |
+| 专业服务及其他 | $141m | 5.1% | 3%–10% | 25%–75% | 包含支持之外的服务/其他，毛利跨度大 |
+| **合计** | **$2.750bn** | **100.0%** | 约12% | 约87% | 独立模型 |
+
+相邻产品 NCM/NUS/NDB/NKP/NAI 合计估算 **$575m、20.9%**，与 [Nutanix 2026 Investor Day](https://ir.nutanix.com/static-files/6d96280d-3cb7-41d6-a173-49dcdaa09291)所披露“AI+Kubernetes、数据库自动化、NUS、NCM 占 FY25 land-and-expand ACV **21%**，FY29 目标 34%”量级相符。但 **ACV attach 不是收入**，这个吻合只能证明拆分没有明显数量级错误。
+
+### 4.3 最突出、公司最侧重的业务
+
+1. **核心 NCI/AHV 的 VMware 替换**：最大收入池、最高现金转化率，也是全部 attach 的落地底座。
+2. **外部存储 NCI**：可能是 2026–2027 最大的“隐藏小业务”。它允许客户保留现有阵列，只换 hypervisor/control plane，显著缩短决策链；管理层称当前体量小但快速增长，并尽量按接近 full-stack 定价捕获价值。
+3. **NKP + NKP Metal**：把 Nutanix 从虚机管理扩到容器和裸金属；AI 训练/推理偏好裸金属时尤其重要。
+4. **NUS NVIDIA 认证 + STX**：Nutanix 首次有可量化的 GPU 集群存储认证路径，但其优势是软件定义/统一管理，不是自有 SSD 或 DPU。
+5. **NAI 2.6/Agentic AI**：潜在增速最高、当前收入最小。NAI 可在 Nutanix 或任意 CNCF Kubernetes 上运行，按 GPU RAM 计费；这扩大市场，也降低对 NCI 的强绑定。
+6. **AMD 路线**：战略价值大，但时间错位。AMD/Nutanix 平台目标 2026 年末推出，管理层预计首批明显收入更可能在 **FY27 H2（约 2027 年 2–7 月）**。
+
+### 4.4 产品、型号/版本、状态与收入交叉验证
+
+| 产品/版本 | 主要组成与计费 | 2026-07 状态 | 收入/增速验证 | 判断 |
+|---|---|---|---|---|
+| NCI Pro/Ultimate；NCP Starter/Pro/Ultimate | AOS/AHV/Prism/Flow/DR；按物理 core | GA，主盘 | Q3 产品收入仅 +5.6%，支持 +15.2%；迁移大单与未来 start date 使当期低估 | 现金牛+迁移主线 |
+| 外部存储 NCI | AHV/NCI + NVMe/TCP 阵列 | PowerFlex、Everpure GA；PowerStore 计划 2026 夏季；NetApp/Lenovo 计划 2026 年内 | 医疗、金融、航空航天客户出现七位数/生产案例，金额多未披露 | **高潜力小业务，不能漏** |
+| NC2 on AWS/Azure/Google Cloud | 公有云裸金属上的 Nutanix 控制面 | GA；仍是收入少数 | 服务器短缺时部分客户先上 NC2，后回迁本地 | 增速快、毛利低于纯软件 |
+| NUS 5.3、DataLens | file/object/block、pNFS、GDS、勒索治理；按 usable TiB | NUS 5.3 GA；NVIDIA-Certified Enterprise Storage | 10 节点全 NVMe 认证；当前 NUS 多数收入并非 AI | AI 数据入口+安全 attach |
+| NKP Starter/Pro/Ultimate | K8s 生命周期与平台服务；worker core/vCPU | NKP GA | Kubernetes 普及、企业 AI 加速容器需求 | 高增长、竞争激烈 |
+| NKP Metal | 裸金属 Kubernetes + 与 VM 双原生管理 | EA；计划 H2 2026 GA | 尚无可验证规模收入 | **关键小产品，适合 GPU 裸金属** |
+| NDB | Oracle/SQL Server/Postgres/MongoDB 等自动化 | GA | 客户 attach、数据库复制/更新带粘性 | 小而稳，不应因非纯 AI 而删掉 |
+| NAI 2.6 / Agentic AI | AI Gateway、MaaS、NIM/Nemotron、MCP、RAG、Notebook/MLOps | NVIDIA 路线分组件 GA/EA；完整 Agentic AI 计划 H2 | 金融、医疗、教育早期 wins；公司称收入仍小 | AI 期权，不宜资本化过度 |
+| AMD Enterprise AI/ROCm/Instinct | EPYC+Instinct+ROCm 与 Nutanix 全栈 | 开发中，平台目标 late 2026 | 首批实质收入预计 FY27 H2 | 2027 之后期权 |
+
+产品打包/计费依据：[Nutanix Cloud Platform software options](https://www.nutanix.com/products/cloud-platform/software-options)；2026 发布依据：[Agentic AI](https://www.nutanix.com/press-releases/2026/nutanix-unveils-nutanix-agentic-ai)、[完整 Agentic AI 平台与外部存储路线](https://www.nutanix.com/press-releases/2026/nutanix-delivers-complete-platform-for-the-agentic-ai-era)、[NKP Metal](https://www.nutanix.com/press-releases/2026/nutanix-introduces-nkp-metal-bringing-bare-metal-kubernetes-to-its-platform)、[AMD/Nutanix 战略合作](https://www.amd.com/en/newsroom/press-releases/2026-2-25-amd-and-nutanix-announce-strategic-partnership-to.html)。
+
+### 4.5 本次跳过或降权的产品/业务
+
+| 跳过/降权项目 | 原因 | 是否完全忽略 |
+|---|---|---|
+| NX 通用硬件转售/代工 | Nutanix 不生产服务器，硬件不是主要经济利润池 | 否；仍把服务器交期作为收入瓶颈 |
+| 传统 EUC/Frame | Frame 已剥离，非当前核心增长 | 是，仅保留历史转型说明 |
+| 普通 VDI、通用远程办公 | 低增长且与 AI 基建关联弱 | 降权；若属于 VMware 迁移仍计入核心 NCI |
+| 单独专业服务 | 规模小、毛利低、不是产品护城河 | 降权；保留在收入和交付能力模型中 |
+| 传统备份/DR、普通边缘站点 | 重要但成熟，难以形成超额增速 | 降权；其 attach 仍计入 NCI/NCM |
+| 把全部 NUS/NKP/NDB 算作 AI | 这些产品大量服务普通企业负载 | 明确禁止，以防 AI 收入夸大 |
+
+## 五、当前每项关键业务：收入贡献、增速、AI 重要性与供需/定价力
+
+评分均为 **1–5 分，5 最高**。“供需紧张”按题意越高越供不应求；对于软件，评分反映客户所需服务器/GPU/实施资源，而不是 Nutanix 代码的物理产能。收入、增速、产品毛利均为本报告独立估算。
+
+| 关键业务 | 当前年化收入贡献 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断能力 | 溢价能力 | 关键理由 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| **核心 NCI/AHV/AOS + 外部存储基础许可** | **$2.034bn** | 9%–13% | 4.0 | **5.0** | 软件1.0/客户硬件4.0 | 3.0 | **4.0** | VMware 合同到期形成窗口；全栈集成强但替代品多；外部存储扩大可迁移池 |
+| **NCM + NC2** | $245m | 15%–25% | 3.0 | 4.0 | 2.0 | 2.5 | 3.0 | 混合云、灾备和服务器短缺绕行；云原生管理/FinOps 竞争多 |
+| **NUS + DataLens** | $135m | 25%–40% | **4.0** | 4.0 | 3.0 | 2.5 | 3.0 | AI 数据喂给、NVIDIA 认证、勒索治理；但 VAST/WEKA/DDN/NetApp/Pure 强 |
+| **NDB** | $65m | 20%–30% | 2.5 | 3.0 | 1.0 | 2.5 | 3.0 | DB 生命周期自动化粘性高；并非 AI 核心瓶颈 |
+| **NKP + NKP Metal** | $95m | 35%–55% | **4.0** | 4.0 | 2.0 | 2.5 | 3.0 | Kubernetes 已成为企业 AI 控制层；开源与托管 K8s 限制垄断 |
+| **NAI/Agentic AI** | **$35m** | >70%，低基数 | **4.0** | 3.0 | 4.0（GPU侧） | 2.0 | 2.5 | 统一 AI Gateway/治理有价值，但核心 runtime/GPU 不归 NTNX，且仍早期 |
+
+### 5.1 为什么核心业务紧急性最高
+
+VMware 替换具有明确的合同窗口：客户可以忍受一次高价续约，却不会无限期并行运行两套平台。Nutanix 的销售必须在客户下一次服务器刷新、阵列更新或 VMware 续约前进入验证；错过窗口通常意味着再等 1–3 年。Q3 客户案例已经显示两条缩短路径：
+
+- **保留阵列**：北美医疗客户继续用 Pure/Everpure、金融客户保留 Dell PowerFlex，只迁移虚拟化和控制面；这减少数据迁移、折旧损失和采购委员会数量。
+- **先上 NC2**：全球金融与 EMEA 外包客户因本地服务器缺货先在 AWS/OVH 上启动 NC2，硬件到货后再回迁或保留混合模式。
+
+所以 Nutanix 的真正“紧缺产品”不是软件许可证，而是**在合同窗口内完成架构验证、硬件认证、伙伴报价和迁移实施的组织能力**。
+
+### 5.2 AI 业务的真实重要性
+
+本地行业研究估计 2026 年 AI 调度/推理/管理核心软件市场约 **$11–18bn**、2027 年基准约 **$17–26bn**；同时，CNCF 调研显示容器用户中约 **82%** 已在生产使用 Kubernetes，采用 GenAI 的组织中约 **66%**用 Kubernetes 承载部分或全部推理，但只有约 **7%**做到日更部署，且 **44%**尚未在 Kubernetes 上运行 AI/ML。参见[项目内：AI 集群调度与推理运行时](../../行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-07-10.md)。
+
+这支持两个同时成立的结论：
+
+1. NKP/NAI 的 TAM 与战略重要性很高，企业需要统一容器、模型、数据和安全治理；
+2. 企业采用仍在实验/早期生产，Nutanix 不拥有底层 GPU、网络或主流推理引擎，因此当前收入不能按 TAM 直接外推。
+
+[Nutanix Enterprise Cloud Index 2026](https://www.nutanix.com/press-releases/2026/nutanix-enterprise-cloud-index-finds-ai-is-driving-rapid-container-adoption)调查 1,600 名 IT/业务决策者：85% 认为 AI 正加速容器采用，82% 认为现有基础设施尚未完全准备好运行本地 AI，87% 预计容器使用增加。该调查由 Nutanix 委托，方向可用、比例需考虑赞助偏差。
+
+## 六、一年后关键业务收入：基准、乐观、极度乐观
+
+### 6.1 情景假设
+
+| 驱动 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| 服务器/内存/CPU 交期 | 逐季改善，仍有特定 SKU 延迟 | 2026 H2 明显正常化 | 迅速正常化且价格下降 |
+| VMware 迁移 | 正常转换，客户仍常先续后迁 | 大客户外迁加速，外部存储显著降低门槛 | VMware 续约/打包触发超预期迁移潮 |
+| NRR | 106%附近企稳，随后小幅回升 | 回到 109%–111% | 回到 112%+ |
+| 相邻产品 ACV attach | 约 23%–25% | 约 27%–30% | 接近 FY29 34% 目标提前实现 |
+| 认证/GA | 按期推进，爬坡正常 | PowerStore/NetApp/NKP Metal/STX 快速落单 | 全部按期且形成大额标杆复制 |
+| AI | 企业小规模生产，NAI 低基数高增 | Agentic AI 与 NVIDIA/AMD 多个生产集群 | 私有 AI 工厂快速普及、GPU 供应改善 |
+
+### 6.2 逐产品收入情景
+
+收入为一年后的年化贡献，单位 **$m**；增长率相对第五章当前模型。评分解释同上。情景不等于公司 FY27 指引。
+
+| 业务 | 情景 | 一年后收入 | 增速 | AI重要性 | 紧急性 | 供需紧张 | 垄断力 | 溢价力 |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 核心 NCI/AHV/AOS | 基准 | **2,237** | 10% | 4.0 | 5.0 | 3.0 | 3.0 | 4.0 |
+|  | 乐观 | **2,339** | 15% | 4.0 | 5.0 | 2.5 | 3.2 | 4.2 |
+|  | 极度乐观 | **2,481** | 22% | 4.2 | 5.0 | 2.0 | 3.5 | 4.5 |
+| NCM + NC2 | 基准 | **282** | 15% | 3.0 | 4.0 | 2.0 | 2.5 | 3.0 |
+|  | 乐观 | **306** | 25% | 3.2 | 4.2 | 2.5 | 2.7 | 3.2 |
+|  | 极度乐观 | **343** | 40% | 3.5 | 4.5 | 3.0 | 3.0 | 3.5 |
+| NUS + DataLens | 基准 | **169** | 25% | 4.0 | 4.0 | 3.0 | 2.5 | 3.0 |
+|  | 乐观 | **189** | 40% | 4.3 | 4.3 | 3.5 | 2.8 | 3.3 |
+|  | 极度乐观 | **223** | 65% | 4.7 | 4.7 | 4.0 | 3.0 | 3.7 |
+| NDB | 基准 | **78** | 20% | 2.5 | 3.0 | 1.0 | 2.5 | 3.0 |
+|  | 乐观 | **88** | 35% | 2.8 | 3.2 | 1.5 | 2.7 | 3.2 |
+|  | 极度乐观 | **101** | 55% | 3.0 | 3.5 | 2.0 | 3.0 | 3.5 |
+| NKP + NKP Metal | 基准 | **124** | 30% | 4.0 | 4.0 | 2.0 | 2.5 | 3.0 |
+|  | 乐观 | **147** | 55% | 4.4 | 4.4 | 2.5 | 2.8 | 3.3 |
+|  | 极度乐观 | **176** | 85% | 4.8 | 4.8 | 3.0 | 3.0 | 3.7 |
+| NAI / Agentic AI | 基准 | **63** | 80% | 4.2 | 3.5 | 4.0 | 2.0 | 2.5 |
+|  | 乐观 | **98** | 180% | 4.7 | 4.2 | 4.5 | 2.3 | 3.0 |
+|  | 极度乐观 | **158** | 350% | 5.0 | 4.8 | 5.0 | 2.7 | 3.5 |
+
+另加专业服务/其他，基准/乐观/极度乐观分别约 **$145m/$148m/$152m**。于是总收入为：
+
+| 总体情景 | 一年后收入 | 同比增速 | 与市场/公司框架比较 | 需要的领先指标 |
+|---|---:|---:|---|---|
+| **基准** | **$3.098bn** | **+12.6%** | 接近 FY27 市场共识 $3.20bn/+12.8%，略保守 | ARR 13%–16%，cRPO 15%+，NRR 106%–108% |
+| **乐观** | **$3.315bn** | **+20.6%** | 回到 FY25 前后的高增区间 | TCV/RPO 25%+持续、NRR 109%+、服务器 start date 正常化 |
+| **极度乐观** | **$3.634bn** | **+32.1%** | 远超 Investor Day 中长期 mid-to-high teens 目标，低概率压力测试 | 核心迁移 20%+、attach 提前到 34%、AI/存储认证大规模复制 |
+
+注意：Nutanix Investor Day 的 FY29 目标是收入和 ARR **mid-to-high teens**、非 GAAP 营业利润率 **mid-to-high 20s**、FCF margin **high 20s**。所以极度乐观情景若发生，更可能是一年订单/起始日释放造成的阶段性跃升，不应永久外推 30%+。
+
+## 七、BOM、每 MW/rack/GPU/optical port 内容量与价格传导
+
+### 7.1 首先澄清：Nutanix 没有传统物理 BOM
+
+Nutanix 的“BOM”是许可证与软件组件，不是 GPU、SSD、光模块或机柜。公司不会因为一个 rack 多了 32 块 GPU 就取得 GPU 售价；只有客户为相关 CPU cores、GPU RAM、可用存储 TiB、Kubernetes worker 或云资源购买 Nutanix 软件时，才形成 NTNX 收入。
+
+| 业务 | Nutanix 软件 BOM | 许可单位 | 每 GPU / rack / MW 真实内容量 | 每 optical port 内容量 |
+|---|---|---|---|---|
+| NCI/NCP | AOS 分布式存储、AHV、Prism；高配含 Flow/DR/NCM | 物理 CPU core | 由服务器 CPU core 数决定，与 GPU 数没有直接合同关系 | **$0 直接固定内容量**；网络端口不触发许可 |
+| 外部存储 NCI | AHV/NCI + NVMe/TCP 驱动/认证 + Prism；阵列由 Dell/Pure/NetApp 等销售 | 物理 core，尽量接近 full-stack 报价 | 保留阵列只改变迁移 BOM，不改变按核逻辑 | $0/port；端口/交换机属于伙伴 BOM |
+| NUS/DataLens | Files/Objects/Block、pNFS、GDS、DataLens | usable TiB | 容量随数据集/检查点而变，不应按 GPU 固定；认证提供 32–1,024 GPU 性能点 | $0/port；性能需要合适 NIC/DPU/交换机，但不按口收费 |
+| NKP | K8s 生命周期、集群管理、平台服务 | 裸金属物理 core；VM/公有云 worker vCPU；control plane 免费 | 若一台 GPU 服务器 112 核/8 GPU，则约 14 worker cores/GPU，前提是全节点纳管 | $0/port |
+| NAI | AI Gateway、模型服务、NIM/Nemotron、RAG/向量库/Notebook/MLOps 集成 | GPU 推理按 aggregate GPU RAM GB；CPU 推理按 worker vCPU | H100 80GB=80 单位/GPU；B200 180GB；MI355X 288GB；按实际 GPU RAM 汇总 | $0/port |
+| NDB | 数据库生命周期、克隆、补丁、备份 | cluster 物理 cores 或 VM vCPU | 与数据库节点数/cores 相关，无固定每 GPU 内容量 | $0/port |
+| NCM/NC2 | 运维、自动化、成本、安全与云控制 | 资源/核心/订阅组合 | 与受管资源相关，无固定 GPU 内容量 | $0/port |
+
+### 7.2 DGX B200 例子：把计费单位换算到 rack/MW
+
+采用 [NVIDIA DGX B200 用户指南](https://docs.nvidia.com/dgx/dgxb200-user-guide/introduction-to-dgxb200.html)的单机规格：**8×B200、每 GPU 180GB、2×Xeon 8570（合计 112 物理 cores）、最大功耗约 14.3kW、10U**。为建立统一口径，假设 42U rack 放 4 台，即 **32 GPU、448 cores、5,760GB GPU RAM、57.2kW/rack**；1MW 最大 IT 功率约对应 **17.48 racks、约559 GPU、7,832 cores、约100,700GB GPU RAM**。这只是内容量示例，不是 Nutanix/NVIDIA 官方 rack 设计。
+
+公开合同价表显示 NCI Pro/Ultimate 1 年标价约 **$411.40/$519.60 每物理 core**，合同价约 $393.76/$497.32；参见[公开 Nutanix 价格表 PDF](https://www.cloudingenuity.com/contracts/5272/5272_Nutanix.pdf?_rsc=sx3r5)。按标价机械换算：
+
+| 计量对象 | 物理 cores | GPU 数 | NCI Pro 年标价内容量 | NCI Ultimate 年标价内容量 | 另需 NAI 许可单位 |
+|---|---:|---:|---:|---:|---:|
+| 每 DGX B200 | 112 | 8 | **$46,077** | **$58,195** | 1,440 GPU-RAM-GB |
+| 每 B200 GPU（均摊） | 14 | 1 | **$5,760** | **$7,274** | 180 GPU-RAM-GB |
+| 每 4×DGX rack | 448 | 32 | **$184,307** | **$232,781** | 5,760 GPU-RAM-GB |
+| 每 1MW 最大 IT 功率 | 约7,832 | 约559 | **$3.22m** | **$4.07m** | 约100,700 GPU-RAM-GB |
+
+这些数字是**公开标价乘理论 cores**，不是实际 ASP、ARR 或 NAI 价格。一个 2026-06 的 Reddit 渠道讨论声称 NCI Pro/Ultimate 谈判价约 **$140/$180 per core**；若把未核实的匿名报价代入，上述每 MW 年化 NCI 内容量仅约 **$1.10m/$1.41m**，显示折扣可达 50%+。[该论坛价格讨论](https://www.reddit.com/r/vmware/comments/1uh8q53/vmware_to_nutanix_your_price_per_core/)只能验证“折扣很大”，不能作为公司 ASP。公司在 FY25 电话会表示续约/标价大体随通胀上调。
+
+### 7.3 NUS 的真实技术内容量与认证
+
+[NUS NVIDIA 认证公告](https://www.nutanix.com/press-releases/2026/nutanix-unified-storage-achieves-nvidia-certification-as-enterprises-race-to-build-ai-factories)披露，认证配置使用 **10 节点全 NVMe** 集群、pNFS、NFS/RDMA 与 GPUDirect Storage，覆盖 RTX PRO 6000 Blackwell Server Edition、H200 NVL、HGX B200/H200/H100、GH200 等。官方给出的性能点为：
+
+| GPU 集群规模 | 认证/外推读吞吐 | 写吞吐 | 平均每 GPU 读/写 | 解释 |
+|---:|---:|---:|---:|---|
+| 32 GPU | 10GB/s | 5GB/s | 0.3125/0.156GB/s | 企业级入口测试点 |
+| 1,024 GPU | 160GB/s | 80GB/s | 0.156/0.078GB/s | 扩展点；不是训练模型的唯一性能瓶颈 |
+
+[NVIDIA Certified Storage 文档](https://docs.nvidia.com/certification-programs/certified-storage/latest/nvidia-certified-storage.html)说明 Enterprise 级认证覆盖约至 1,000 GPU 的功能、性能与扩展测试。认证证明互操作和基准门槛，不证明客户订单、实际 P99 延迟或对 VAST/WEKA/DDN 的性能领先。
+
+本地 AI-native 存储研究指出，Nutanix 已进入 BlueField-4 STX/CMX 生态；NVIDIA 宣称 STX 架构最多可提升 token 生成 **5×**、能效 **4×**、数据摄取 **2×**，但这些是架构/供应商口径，合作伙伴大规模量产预计 H2 2026，尚无 NTNX 订单金额或 $/rack/PB 披露。参见[项目内：AI-native 存储与 KV Cache 基础设施](../../行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV%20Cache基础设施_2026-07-10.md)与[NVIDIA STX 公告](https://nvidianews.nvidia.com/news/nvidia-launches-bluefield-4-stx-storage-architecture-with-broad-industry-adoption)。
+
+### 7.4 价格传导链
+
+```text
+GPU/CPU/DRAM/NVMe/光互连涨价或短缺
+  → OEM 服务器/阵列 ASP 上升、交期从 3–4 周拉长至部分 6 个月
+  → 客户推迟项目 start date，Nutanix 已签合同收入确认后移
+  → 客户用 NC2 临时上云、保留外部阵列，或缩小第一期范围
+  → Nutanix 以按 core/TiB/GPU-RAM 订阅定价，标价随通胀上调
+  → 大额项目折扣、OEM/渠道分成压低实际 ASP
+  → 相邻产品 attach 与续约率决定 ARR/FCF，硬件价格本身不进入 NTNX 收入
+```
+
+关键反直觉点：服务器涨价不直接提高 Nutanix 收入，反而可能因预算总额固定而挤压软件席位或推迟部署；只有当客户选择 NC2、外部存储或更高管理层级以规避瓶颈时，Nutanix 才能在软件侧获取增量。
+
+## 八、当前产能能力、供应链采纳与认证阶段
+
+### 8.1 “软件产能”的定义
+
+本报告把软件产能定义为：在未来 12 个月内，现有销售渠道、工程支持、认证硬件、云区覆盖与交付人员能够承接的**年化可销售收入上限**。它不是服务器产值，也不是各产品可以简单相加的 revenue ceiling，因为 NCP 套装会把 NCI、NCM、NKP、NUS、NDB、NAI 打包并产生重叠。
+
+| 关键业务 | 当前年化收入 | 当前可销售能力估计 | 利用率/余量 | 供应链采纳（1–5） | 当前认证/商用阶段 | 主要瓶颈 |
+|---|---:|---:|---:|---:|---|---|
+| 核心 NCI/AHV/AOS | $2.034bn | **$2.4–2.6bn** | 78%–85% | **4.5** | 主流 OEM 认证、GA；29,000+客户 | VMware 迁移实施、服务器交期、销售覆盖 |
+| 外部存储 NCI（含在核心） | 尚小，估计<$100m | **$150–250m** | 早期 | 2.5 | PowerFlex/Everpure GA；PowerStore EA/夏季 GA；NetApp/Lenovo 2026 路线 | NVMe/TCP 限制、双厂支持责任、功能一致性 |
+| NCM + NC2 | $245m | **$350–450m** | 54%–70% | 3.5 | AWS/Azure/Google Cloud 商用 | 云成本、区域/实例认证、客户数据主权 |
+| NUS + DataLens | $135m | **$200–300m** | 45%–68% | 3.0 | NUS 5.3 GA；NVIDIA Enterprise Certified；STX 计划 H2 | 参考架构复制、现场性能验证、存储强敌 |
+| NDB | $65m | **$100–140m** | 46%–65% | 3.0 | 多数据库 GA；MongoDB 等集成/认证 | DBA 变更阻力、数据库版本覆盖 |
+| NKP + NKP Metal | $95m | **$150–220m** | 43%–63% | 3.0 | NKP GA；NKP Metal EA→H2 2026 GA | 企业 K8s 人才、开源替代、裸金属稳定性 |
+| NAI / Agentic AI | $35m | **$80–120m** | 29%–44% | 2.0 | NVIDIA 路线部分 GA/EA；完整平台 H2；AMD late-2026 | GPU 供应、模型生态、客户从 PoC 到生产 |
+
+“利用率”低不代表闲置工厂，而代表产品/渠道还未用满可销售范围。核心平台的上限受实施和客户硬件约束；NAI/NKP/NUS 的上限受认证、参考客户和专业人才约束。
+
+### 8.2 供应链采纳证据
+
+- **核心/OEM**：Cisco、Dell、Fujitsu、HPE、Lenovo 等长期 OEM/认证，Supermicro 代工 NX，说明服务器供应链采用已成熟。前两大分销商占收入 41%，广度高但集中度不可忽视。
+- **外部存储**：[Nutanix 外部存储技术说明](https://www.nutanix.com/tech-center/blog/nutanix-cloud-platform-with-external-storage)确认 Dell PowerFlex 与 Pure/Everpure 通过 NVMe/TCP 实现计算/存储解耦。Q3 客户案例包括七位数北美医疗、金融、航空航天/国防项目；但公司没有给产品订单总额。
+- **NetApp/Lenovo**：[Nutanix–NetApp 联盟](https://www.nutanix.com/press-releases/2026/nutanix-and-netapp-form-strategic-alliance)计划 2026 年内支持 ONTAP，利用 NFS、Shift 与 Move 降低迁移；“计划”不等于 GA。
+- **NUS/NVIDIA**：企业级存储认证已取得；BlueField-4 STX 是 H2 2026 计划。认证提高供应商清单进入率，但实际采购还需客户基准、容量报价与支持矩阵。
+- **NKP/NAI**：NAI 可独立运行于任意 CNCF Kubernetes，增加被 Red Hat/公有云客户采用的机会；反面是 Nutanix 全栈捆绑能力下降。NKP Metal 把 GPU 裸金属纳管带入产品，但截至研究日仍处 EA。
+- **AMD**：AMD 已用真金白银投资约 $150m，并承诺最高 $100m 联合投入，合作强度高；然而产品在 late 2026，收入在 FY27 H2 才更可见，当前认证阶段不能写成“已放量”。
+- **行业会议热度**：2026 年 GTC 发布 Agentic AI/NUS 路线，.NEXT Chicago 到场超过 **5,000 人**。这说明渠道和客户关注度高，但会议人次不等于订单；报告仍以 RPO、TCV、生产认证和客户金额为准。
+
+### 8.3 渠道/论坛验证：采用障碍比需求更具体
+
+过去半年公开论坛中的可重复问题包括：
+
+- 外部存储当前主要接受 **NVMe/TCP**，客户既有 FC/iSCSI 网络可能需要改造；[2026-07 的迁移讨论](https://www.reddit.com/r/nutanix/comments/1uqx5am/moving_from_vmware/)提到 PowerStore GA 时间与协议限制，但这是匿名渠道信息，需以正式兼容矩阵为准。
+- VMware/NSX 客户关心 Flow 的功能对等、CVM 资源开销、外部阵列的双厂支持边界；[Pure/FC 迁移讨论](https://www.reddit.com/r/nutanix/comments/1u1ifbk/migration_from_vmware_to_nutanix_with_pure_on_fc/)显示“保留存储”虽然降低数据搬迁，却不会消除网络和运维重构。
+- 公开价格反馈从约 $140/$180 per core 的谈判价到接近 $520/core 的标价级报价不等，证明 ASP 取决于版本、期限、规模、OEM 与续约谈判。论坛不能证明公司整体价格下降，只说明客户替换决策对 TCO 很敏感。
+
+这些“小道消息”与公司电话会形成一致交叉验证：客户确有迁移动机，但需要 6–18 个月技术验证、采购与并行运行，不能把询价直接算作 bookings。
+
+## 九、一年后产能能力、采纳与认证三情景
+
+下表单位为**年化可销售能力 $m**，不是收入预测；采纳度 1–5。产能大于第六章收入是正常的，因为销售能力需要留有余量。
+
+| 业务 | 情景 | 一年后可销售能力 | 采纳度 | 预计认证/商用阶段 | 达成条件 |
+|---|---|---:|---:|---|---|
+| 核心 NCI/AHV/AOS | 基准 | **2,600** | 4.6 | 现有 OEM/GA 扩容 | 实施人员和硬件交期逐步改善 |
+|  | 乐观 | **3,000** | 4.8 | 更多外部阵列规模商用 | 迁移工厂/伙伴形成重复交付 |
+|  | 极度乐观 | **3,500** | 5.0 | 成为主要 VMware 退出平台之一 | 大型全球客户批量转换 |
+| NCM + NC2 | 基准 | **450** | 3.7 | 三大云覆盖扩展 | 公有云暂驻和灾备稳步增长 |
+|  | 乐观 | **600** | 4.1 | 更多区域/实例认证 | 服务器短缺推动 NC2，云成本可控 |
+|  | 极度乐观 | **800** | 4.5 | 大型跨云管理标准化 | 多云预算与主权云共同扩张 |
+| NUS + DataLens | 基准 | **320** | 3.4 | NVIDIA 认证转标杆；STX 商用起步 | 认证集群通过客户 POC |
+|  | 乐观 | **500** | 4.0 | STX/CMX 伙伴量产，多 GPU 平台验证 | 32–1,024 GPU 参考架构复制 |
+|  | 极度乐观 | **750** | 4.5 | 多家 OEM/AI Factory 标准 BOM | AI 数据管道成为采购必选项 |
+| NDB | 基准 | **150** | 3.3 | 现有数据库矩阵扩展 | 与 NCI/NKP attach 正常提升 |
+|  | 乐观 | **220** | 3.7 | 更多云原生/向量数据库支持 | AI 数据库自动化进入生产 |
+|  | 极度乐观 | **320** | 4.1 | 成为统一 DB control plane | 大客户将 DBA 流程平台化 |
+| NKP + NKP Metal | 基准 | **280** | 3.5 | NKP Metal GA，初批生产 | H2 2026 按期 GA、稳定性达标 |
+|  | 乐观 | **450** | 4.1 | 裸金属/VM 双原生规模部署 | GPU 集群和 VMware 迁移共同带单 |
+|  | 极度乐观 | **700** | 4.6 | 进入大型 AI 工厂标准栈 | 超越开源自建的运维/TCO优势被验证 |
+| NAI / Agentic AI | 基准 | **180** | 2.8 | NVIDIA 全栈 GA；AMD 首批 GA | PoC 转小规模生产 |
+|  | 乐观 | **400** | 3.7 | NVIDIA+AMD 多模型生产认证 | AI Gateway/治理成为合规刚需 |
+|  | 极度乐观 | **800** | 4.5 | 大型私有 AI 工厂重复采购 | GPU 可得、runtime 兼容和渠道培训同时完成 |
+
+### 9.1 认证里程碑清单
+
+| 产品 | 2026-07-12 已完成 | 未来 12 个月应验证 | 失败含义 |
+|---|---|---|---|
+| NUS | NVIDIA-Certified Enterprise Storage；10 节点全 NVMe 参考 | BlueField-4 STX H2 商用、更多客户生产基准 | AI 存储叙事停留在认证而非订单 |
+| 外部存储 | PowerFlex/Everpure 商用 | PowerStore 夏季 GA；NetApp/Lenovo 2026 GA；功能矩阵扩大 | 最大 VMware 存量池仍被协议/阵列锁住 |
+| NKP Metal | EA | H2 2026 GA、GPU 裸金属客户案例 | Nutanix 在 AI 训练层仍偏 VM 控制面 |
+| Agentic AI/NAI 2.6 | NVIDIA 组件分阶段 GA/EA | H2 完整平台、金融/医疗/政府生产案例 | NAI 保持低个位数千万美元体量 |
+| AMD | 股权投资和联合路线确定 | late-2026 产品、FY27 H2 实际收入 | 多 GPU 战略失去时间窗口 |
+| NC2 | AWS/Azure/Google 生产支持 | 区域、实例和主权云扩展 | 服务器短缺时的绕行能力受限 |
+
+## 十、基于真实 backlog、供给与渠道验证的未来一年增速
+
+### 10.1 可观测订单漏斗
+
+Nutanix 不披露绝对 TCV bookings、产品级 backlog、客户项目金额汇总或精确取消率。能用于模型的硬证据如下：
+
+| 观测项 | 最新值/事实 | 对未来收入的含义 | 局限 |
+|---|---|---|---|
+| 总 RPO | **$3.078bn，+26.8% YoY** | 超过一个 TTM 收入，合同覆盖强 | 约 3.4 年期限，不能一年全确认 |
+| cRPO | **$1.504bn** | 未来 12 个月较高可见性 | 仍受服务 start date/履约安排影响 |
+| 13–36个月 RPO | **$1.192bn** | 中期基础扎实 | 对下一年贡献有限 |
+| 36个月后 RPO | **$381m** | 大型长期合同锁定 | 期限长、年度收入低于 TCV headline |
+| Q3 TCV bookings | **>20% YoY** | 新签强于当季收入 | 平均期限变长至 3.4 年，有 duration 帮助 |
+| Q3 近似 billings | **约$812.9m，收入的1.16x** | 递延收入增加，现金/未来确认强 | 非 bookings，推导值 |
+| NRR | **106%** | 存量客户仍净扩张 | 从110%下降，扩容动能变弱 |
+| 新客户 | Q2 >1,000；Q3 >700 | VMware 替代漏斗扩展 | logo 大小不等，新增不代表立即规模收入 |
+| 可取消 backlog | 管理层称约为 RPO 的低个位数百分比 | 取消暴露小 | 没有绝对值与逐季变化 |
+| 服务器 lead time | **3–4周至约6个月** | 已签软件收入由 Q4 向 FY27 移动 | 不同部件/配置差异大 |
+
+以 RPO 的期限桶估算，cRPO $1.504bn 加上未来新签、续约与当季产品确认可覆盖 FY27 收入的大部分；但不能用 cRPO/全年收入简单计算 coverage，因为订阅收入中包含已履约合同的持续确认，RPO 也随每季新签补充。
+
+### 10.2 已知客户/项目名与交付窗口
+
+| 客户/行业 | 产品/项目 | 金额 | 交付窗口/订单推断 | 可信度 |
+|---|---|---:|---|---|
+| Finanz Informatik（德国金融 IT） | 长期 Nutanix 平台，服务约 50m 终端用户 | 未披露；管理层称 significant | FY25 Q4 签订，多年确认 | 公司披露，高 |
+| 北美医疗 | 外部存储保留 Everpure FlashArray | **七位数** | Q3 FY26 win，生产/扩展按硬件与迁移阶段 | 电话会，高 |
+| 金融服务客户 | Dell PowerFlex + Nutanix | 未披露 | Q3 win；外部存储避免整阵列替换 | 电话会，高 |
+| APJ 航空航天/国防 | NKP + NDB + NUS | 未披露 | 组合 attach，受认证与项目部署节奏影响 | 电话会，高 |
+| 全球金融客户 | NC2 on AWS | 未披露 | 因服务器 lead time 先上云 | 电话会，高 |
+| EMEA 外包客户 | NC2 on OVH 后回本地 | 未披露 | 等待硬件，形成两阶段确认 | 电话会，高 |
+| 美国联邦 GenAI 客户 | NCP+NUS+NDB+NAI+NKP | 未披露 | Q1 FY26 披露，多产品早期 AI 项目 | 电话会，高；规模未知 |
+
+这些项目证明产品组合能落地，但除一个“七位数”外没有金额，无法构成自下而上的完整 bookings。报告不把“客户名出现”直接乘典型合同值。
+
+### 10.3 订单—供给—收入桥
+
+| 桥接环节 | 基准判断 | 上行因素 | 下行因素 |
+|---|---|---|---|
+| RPO/TCV → 可履约订单 | 强，取消少 | 长期大单、新 logo、外部存储打开存量 | 合同期限拉长夸大 TCV 增速 |
+| 可履约订单 → start date | 正在推迟 | NC2 绕行、外部阵列保留 | CPU/内存/GPU/服务器最长约6个月 |
+| start date → 收入 | Q4/FY27逐步释放 | 订阅预收、产品许可高毛利 | 未来 start、服务验收与组合 mix |
+| 收入 → FCF | 仍约高20% margin | 预收、递延收入增加 | AMD/AI研发、GTM、实施投入；回购消耗现金 |
+
+### 10.4 未来一年业务增速结论
+
+- **基准：+11%至+15%，中心约 +12.6%。** RPO +26.8%、TCV >20% 提供订单底，NRR 106%和合同期限变长限制转化；硬件交期逐步缓解但不会瞬间归零。这个区间与公司 FY29 中长期 mid-to-high teens 的下端、FY27 市场 +12.8% 共识相容。
+- **乐观：+18%至+23%，中心约 +20.6%。** 要求 PowerStore/NetApp/NKP Metal/Agentic AI 按期 GA、外部存储迁移形成可复制模板、Q3 延迟收入集中进入 FY27、NRR 回到 109%+。
+- **极度乐观：+28%至+35%，中心约 +32.1%。** 要求 VMware 大客户大规模提前转换、硬件供应快速正常化、相邻产品 attach 提前达到 34%、NAI/NUS/NKP 同时放量。该情景明显高于公司中期目标，只适合作估值上限压力测试。
+- **悲观敏感性（非题设主情景，但投资必须看）：+5%至+9%。** 若服务器缺货延续、客户先续 VMware、NetApp/PowerStore 或 NKP Metal 延迟、NRR 跌至 103%–105%，强 RPO 也会因 duration/start date 继续后移。
+
+管理层 Q3 提到中东约占收入**中个位数百分比**，并因新业务环境对 Q4 保持谨慎。地缘/政府采购延迟会使订单确认波动，但目前不足以推翻总体模型。
+
+## 十一、竞争格局、技术主流性、替代方案与客户替换成本
+
+### 11.1 逐产品竞争矩阵
+
+| Nutanix 战场 | 主要竞争对手/替代 | Nutanix 优势 | 对手优势 | 未来主流判断 |
+|---|---|---|---|---|
+| 虚拟化/HCI | Broadcom VMware VCF、Microsoft Hyper-V/Azure Local、Red Hat OpenShift Virtualization、HPE VM Essentials/Morpheus、Oracle Linux、SUSE/Harvester、Proxmox | AOS+AHV+Prism 一体、迁移工具、支持口碑、无需单独 hypervisor 税 | VMware 功能/生态最深；Red Hat/开源更开放；Microsoft 与 Azure/Windows 绑定 | **虚拟化仍主流，但市场转向多平台；Nutanix 是主要受益者之一，不会垄断** |
+| 混合多云 | VMware Cloud Foundation、Azure Arc、AWS Outposts/EKS Anywhere、Google Anthos、Red Hat ACM、各 FinOps 工具 | 同一控制面跨本地/云，工作负载可移 | 云厂商原生集成和消费承诺更强 | **混合云主流，单一跨云控制面是否获溢价仍待证明** |
+| Kubernetes | Red Hat OpenShift、VMware Tanzu、SUSE Rancher、EKS/AKS/GKE、自建 K8s | 与 VM/NCI/NAI/NDB 一体，NKP Metal 双原生 | 开源、托管服务生态更大，客户可避免 Nutanix 绑定 | **K8s 主流确定；NKP 是竞争者而非标准制定者** |
+| AI 平台 | NVIDIA AI Enterprise/Mission Control/Run:ai、Red Hat OpenShift AI、HPE Private Cloud AI、Dell AI Factory、VMware Private AI、云 AI 平台 | 私有/主权部署、统一 VM/K8s/存储/DB、NAI 可跨 CNCF | 对手拥有 GPU/runtime、模型/云服务或硬件整机 | **企业 AI 治理主流，但 Nutanix 方案尚未证明为主流** |
+| AI/企业存储 | VAST、WEKA、DDN、NetApp、Pure Storage、Dell、IBM、Cloudian/MinIO | 软件定义、与 NCI/NKP/NAI 管理一致、NVIDIA 认证 | 专业 AI 存储吞吐/延迟、阵列销售和客户基础更强 | **统一 namespace/GDS/RDMA 主流；NUS 需要生产基准证明份额** |
+| 数据库自动化 | Oracle/SQL Server 原生、VMware Data Services、Red Hat、云托管 DB、DBaaS 工具 | 跨数据库、与 NCI 数据复制/克隆结合 | 数据库厂商掌握引擎与许可证，云 DB 运维更省 | **自动化主流，NDB 是 attach 而非独立平台垄断** |
+
+[Gartner 2026 VMware alternatives](https://www.gartner.com/en/documents/7739657)列出的主要路径包括 Nutanix、公有云、Microsoft Hyper-V/Azure Local、Red Hat OpenShift Virtualization、HPE Morpheus VM Essentials 和 Oracle Linux，印证客户不是“VMware 或 Nutanix”二选一。[Gartner Peer Insights 对比页](https://www.gartner.com/reviews/market/server-virtualization/compare/broadcom-vmware-vs-nutanix)上 Nutanix 约为 4.6/5、251 条评论（核查时页面值），可视为支持/易用性口碑信号，但评论样本不是市场份额统计。
+
+### 11.2 技术是否会成为主流
+
+| 新技术 | 成为主流的概率 | Nutanix 捕获程度 | 关键判断 |
+|---|---:|---:|---|
+| VMware 后多虚拟化平台 | 高 | 高 | 客户会多样化，但 AHV 只是多种方案之一 |
+| 外部存储+解耦虚拟化 | **高** | 中高 | 保留阵列是务实迁移路径，协议/功能认证决定上限 |
+| VM + bare-metal K8s 双原生 | 高 | 中 | AI 训练偏裸金属、企业应用仍在 VM；NKP Metal方向正确但较晚 |
+| 私有/主权 Agentic AI | 中高 | 中低 | 数据主权和治理驱动真实，底层模型/runtime快速商品化 |
+| GPU-RAM 计费的 AI 平台 | 中 | 中 | 与客户算力规模相关，但 GPU 内存世代变化、MIG/共享可能使单位经济复杂 |
+| STX/CMX 存储卸载 | 中高 | 中低 | DPU/存储卸载方向合理；Nutanix 是生态伙伴，不拥有 BlueField |
+| 全栈单厂锁定 | 中低 | 中 | 客户在逃离 VMware 打包后未必愿意再被单厂锁定；开放外部存储是必要修正 |
+
+### 11.3 客户替换成本
+
+**从 VMware 换到 Nutanix：成本中高，通常 6–18 个月，大型复杂客户可达 18–24 个月。** 主要成本不是复制 VM 本身，而是：
+
+1. 应用发现、依赖图、维护窗口和业务验证；
+2. vSphere/NSX/vSAN 自动化脚本、监控、安全与备份工具重写；
+3. AHV/Prism/Flow 运维培训、CVM 容量规划；
+4. 存储协议从 FC/iSCSI 转 NVMe/TCP/NFS 的网络变化；
+5. 双平台并行许可证与支持成本；
+6. Oracle、Microsoft 等按核心软件许可重新核算。
+
+Nutanix Move、外部存储和 2026 年宣布的“vSphere VVOL 到 AHV vDisk 零复制迁移”可减少数据搬迁，但不能消除应用验证与组织变更。行业调查报道显示许多客户会在 18–24 个月内分批降低 VMware 依赖，并同时把部分负载迁到公有云；参见 [ITPro 对 CloudBolt 调查的转述](https://www.itpro.com/cloud/virtualisation/the-vmware-panic-phase-is-over-but-that-isnt-stopping-the-exodus-86-percent-of-companies-are-actively-reducing-their-dependency-and-choosing-alternatives)。该调查为供应商调查，应作为方向证据而非精确市场份额。
+
+**从 Nutanix 再换出：成本也中高。** AOS 数据布局、AHV/Prism 运维、Flow 网络策略、NDB 克隆和 NUS 数据服务形成粘性；订阅客户仍可以通过 Move、标准 VM 镜像、Kubernetes 和外部阵列逐步退出。Nutanix 的开放性比早期强，但“统一平台”本身就是锁定来源。
+
+### 11.4 关键风险与替代路径
+
+| 风险 | 当前证据 | 影响 | 监控指标/替代路径 |
+|---|---|---|---|
+| 收入/ARR/NRR 连续降速 | 收入增速22%→10%；ARR 18%→15%；NRR110%→106% | 高 | NRR、产品收入、Q4/FY27 start date |
+| RPO 期限拉长掩盖订单质量 | 合同期3.1→3.4年 | 中高 | cRPO、TCV按年化值、平均期限；不要只看总 RPO |
+| VMware 客户先续约或上公有云 | 迁移复杂、云厂商提供直接替代 | 高 | 大额 logo、迁移周期、NC2与本地 mix |
+| AI 收入被市场高估 | 狭义估计仅约1.3%；多个产品 H2才完整GA | 高 | NAI ARR/客户数、生产 GPU 规模、产品单独披露 |
+| AI runtime/硬件不受控 | vLLM/SGLang/NVIDIA/AMD/云平台控制关键层 | 中高 | NAI attach、NVIDIA/AMD兼容速度、开源替代 |
+| 服务器/GPU供应 | 最长约6个月 lead time | 中高 | start date、NC2使用、OEM backlog、内存价格 |
+| 外部存储认证/支持割裂 | 协议与阵列矩阵仍在扩 | 中 | PowerStore/NetApp GA、支持SLA、客户案例复制 |
+| 价格与折扣压力 | 公开报价跨度极大 | 中高 | ARR per customer、续约 uplift、gross retention |
+| 渠道集中 | 前两分销商41%收入 | 中 | 分销商占比、OEM贡献与应收 |
+| SBC/回购/可转债稀释 | SBC约12.7%收入；9个月回购$433m；2027转换价接近股价 | 中高 | fully diluted shares、净现金、回购/SBC比 |
+| 中东/政府采购 | 中东收入中个位数，Q4谨慎 | 中 | 区域新单、政府预算/地缘延迟 |
+| 竞争性开源 | KVM/KubeVirt/Proxmox/Rancher等成本低 | 中高 | 大客户流失原因、支持/TCO差距 |
+
+## 十二、投资判断、催化剂与证伪条件
+
+### 12.1 投资判断
+
+NTNX 是一家具备高毛利、强预收现金流和明确竞争窗口的基础设施软件公司。它的核心投资逻辑应写成：
+
+> **VMware 重新定价/打包 → 客户迁移到 NCI/AHV → 外部存储与 NC2 降低迁移摩擦 → NKP/NUS/NDB/NAI 提高 ACV attach → ARR/FCF 增长。**
+
+不应写成：
+
+> **AI 数据中心资本开支上升 → Nutanix 按 GPU/rack 自动获得收入。**
+
+后者错误，因为 Nutanix 不卖 GPU、服务器、交换机或光模块；它需要赢得每个客户的软件控制层。按 2026-07-10 的 **5.39x TTM P/S、25.78x forward P/E**，市场已经给出软件质量溢价，却没有给很大目标价安全垫。合理的持有前提是 FY27 收入至少维持低双位数、NRR 不再恶化、外部存储/AI attach 开始可见；仅靠 RPO headline 和 AI TAM 不足以支撑重估。
+
+### 12.2 未来 12 个月催化剂
+
+| 时间窗 | 催化剂 | 需要看到的硬证据 |
+|---|---|---|
+| 2026 Q3–Q4 | Q3 延迟项目转为收入；服务器交期改善 | 收入回到12%+、cRPO/RPO仍强、NRR企稳 |
+| 2026 夏季/H2 | PowerStore GA、NetApp/Lenovo 外部存储支持 | 生产客户、订单金额、协议/功能矩阵而非只宣布合作 |
+| 2026 H2 | NKP Metal GA、Agentic AI 完整平台 | 大型裸金属/GPU生产案例，NAI attach或ARR披露 |
+| 2026 H2 | NUS STX/CMX 生态商用 | 客户基准、容量/吞吐、收入或 pipeline 数据 |
+| 2026 late | AMD Enterprise AI 平台 | 认证清单、ROCm模型支持、首批客户 |
+| FY27 H2 | AMD/NVIDIA 多GPU收入验证 | 管理层不再只说“small”，开始给规模或增速 |
+| 每季 | 外部存储、NC2、新logo与>$1m ARR客户 | $1m+ ARR客户继续从FY25的352家增长；attach向34%目标推进 |
+
+### 12.3 证伪条件
+
+若以下三项中出现两项，基准增长逻辑应下调：
+
+1. 连续两个季度 ARR 增速低于 12%且 NRR 低于 105%；
+2. cRPO 增速降到个位数，或公司以更长合同期限维持总 RPO 而年化合同价值不增长；
+3. 服务器交期改善后收入仍低于 10%，说明问题是需求/竞争而非供给；
+4. PowerStore/NetApp/NKP Metal/Agentic AI 延期超过两个季度或仍无生产客户；
+5. AI 相关产品一年后仍低于约 $60m 狭义年化收入，且没有 GPU规模/付费 attach 证据；
+6. SBC 与净新增股份长期超过 2%，回购主要用于抵消薪酬稀释而非创造每股价值。
+
+## 十三、口径、估算方法与主要来源
+
+### 13.1 口径说明
+
+- Nutanix 财年在 7 月底结束；FY26 Q3 截止 2026-04-30。
+- ARR、RPO、cRPO、TCV bookings、billings、revenue 是不同指标；报告没有把它们混同。公司未披露绝对 TCV bookings，因此不能计算真实 B2B。
+- Q2/Q3 FY26 近似 billings = 收入 + 当季递延收入净增加；只用于观察开票/递延方向。
+- 产品收入拆分、AI 收入、单产品增速/毛利、产能上限和三情景均为独立模型，不是管理层披露。
+- 每 MW/rack/GPU 内容量以 DGX B200 示例配置和公开 NCI 标价机械换算；实际客户折扣、CPU/GPU配比、许可版本和集群利用率可能使结果大幅变化。
+- 论坛与供应商调查只作渠道验证，不作为财务事实。未披露的订单金额、取消率、ASP 没有伪造精确值。
+
+### 13.2 公司与监管一手来源
+
+1. [Nutanix Q3 FY26 financial results，2026-05-27](https://ir.nutanix.com/news-releases/news-release-details/nutanix-reports-third-quarter-fiscal-2026-financial-results)
+2. [Nutanix Q3 FY26 earnings transcript](https://ir.nutanix.com/static-files/307303de-e36e-4721-ac7b-2418fb1337b0)
+3. [Nutanix Q2 FY26 financial results](https://ir.nutanix.com/news-releases/news-release-details/nutanix-reports-second-quarter-fiscal-2026-financial-results)与[电话会](https://ir.nutanix.com/static-files/7288dce4-0255-4b9b-b3c8-e6e12cd3c4ad)
+4. [Nutanix Q1 FY26 financial results](https://ir.nutanix.com/news-releases/news-release-details/nutanix-reports-first-quarter-fiscal-2026-financial-results)与[电话会](https://ir.nutanix.com/static-files/68984fde-bb37-44cc-81d2-5ec24d916f68)
+5. [Nutanix Q4/FY25 financial results](https://ir.nutanix.com/news-releases/news-release-details/nutanix-reports-fourth-quarter-and-fiscal-2025-financial-results)与[电话会](https://ir.nutanix.com/static-files/27bf927f-fb70-4c52-a3ba-b1cead13cb9c)
+6. [Nutanix Q3 FY25 financial results](https://ir.nutanix.com/news-releases/news-release-details/nutanix-reports-third-quarter-fiscal-2025-financial-results)
+7. [SEC Q3 FY26 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1618732/000119312526248282/ntnx-20260430.htm)
+8. [SEC FY25 Form 10-K](https://www.sec.gov/Archives/edgar/data/1618732/000119312525213801/ntnx-20250731.htm)
+9. [Nutanix 2026 Investor Day presentation](https://ir.nutanix.com/static-files/6d96280d-3cb7-41d6-a173-49dcdaa09291)
+
+### 13.3 产品、技术、行业与渠道来源
+
+1. [Nutanix Cloud Platform software options and licensing](https://www.nutanix.com/products/cloud-platform/software-options)
+2. [NUS NVIDIA certification](https://www.nutanix.com/press-releases/2026/nutanix-unified-storage-achieves-nvidia-certification-as-enterprises-race-to-build-ai-factories)
+3. [NVIDIA Certified Storage program](https://docs.nvidia.com/certification-programs/certified-storage/latest/nvidia-certified-storage.html)
+4. [NVIDIA BlueField-4 STX](https://nvidianews.nvidia.com/news/nvidia-launches-bluefield-4-stx-storage-architecture-with-broad-industry-adoption)
+5. [Nutanix Agentic AI](https://www.nutanix.com/press-releases/2026/nutanix-unveils-nutanix-agentic-ai)、[完整平台路线](https://www.nutanix.com/press-releases/2026/nutanix-delivers-complete-platform-for-the-agentic-ai-era)与[NKP Metal](https://www.nutanix.com/press-releases/2026/nutanix-introduces-nkp-metal-bringing-bare-metal-kubernetes-to-its-platform)
+6. [AMD–Nutanix strategic partnership](https://www.amd.com/en/newsroom/press-releases/2026-2-25-amd-and-nutanix-announce-strategic-partnership-to.html)
+7. [Nutanix–NetApp alliance](https://www.nutanix.com/press-releases/2026/nutanix-and-netapp-form-strategic-alliance)
+8. [NVIDIA DGX B200 technical specifications](https://docs.nvidia.com/dgx/dgxb200-user-guide/introduction-to-dgxb200.html)
+9. [Nutanix Enterprise Cloud Index 2026](https://www.nutanix.com/press-releases/2026/nutanix-enterprise-cloud-index-finds-ai-is-driving-rapid-container-adoption)
+10. [Gartner 2026 VMware alternatives](https://www.gartner.com/en/documents/7739657)
+
+### 13.4 本项目内允许范围的行业交叉验证
+
+1. [AI 集群调度与推理运行时](../../行业调研/AI服务器_存储_芯片/行业调研_AI集群调度与推理运行时_2026-07-10.md)：用于 AI 软件栈定位、Kubernetes/推理采用和市场模型。
+2. [AI-native 存储与 KV Cache 基础设施](../../行业调研/AI服务器_存储_芯片/行业调研_AI-native存储与KV%20Cache基础设施_2026-07-10.md)：用于 NUS/STX 的技术位置、量产时点和“合作不等于订单”边界。
+3. [AI 数据中心建设规模与产业链订单映射](../../行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_T05_2026-07-09.md)：用于 AI 存储与数据中心资本开支的量级约束。
+
+---
+
+**最终结论：**Nutanix 的可投价值来自高毛利订阅、强 FCF、VMware 替换窗口和外部存储解耦；AI 是由 NUS/NKP/NAI/AMD 路线支撑、但尚未被收入证明的增量期权。最值得跟踪的不是笼统“AI 客户数”，而是 **NRR、cRPO、合同期限、服务器 start date、外部存储 GA 后订单、NKP Metal/NAI 的生产 GPU 规模、以及相邻产品 ACV attach 是否从 21%向34%移动**。在这些指标验证前，应以约 12%–15% 收入增长为中心，而不是把极度乐观情景作为基准。

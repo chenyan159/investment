@@ -1,0 +1,160 @@
+# 公司收入传导与价值传导评估：Nebius Group（NBIS）
+
+报告日期：2026-06-12  
+NTM 主口径：2026Q2-2027Q1 四个季度；由于当前日期位于 2026Q2 中，本报告把 2026Q2 视为未披露季度，使用 2026 年公司指引、2026 年末 ARR 目标、Q1 2026 run-rate、合同交付节奏和 2027Q1 初步 ramp 做校准。  
+资料边界：本报告只使用 `公司调研/`、`行业调研/` 与外部一手公开披露；未读取、引用或继承 `特征量化/`、Signals、回归、模型比较或排序结论。市场价格、估值倍数和股价走势不作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营收入、毛利率、经营利润率、调整后 EBITDA 和自由现金流方向；FY2026 收入指引、2026 年末 ARR、2030 年 NVIDIA 系统容量、Microsoft/Meta 合同总额只作为校准和补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：Nebius 2026Q1 集团收入 `3.990亿美元`，其中 AI Cloud 收入 `3.897亿美元`、约 `98%`；Q1 末 AI Cloud ARR `19.2亿美元`；公司 2026 年收入目标 `30-34亿美元`、年末 ARR `70-90亿美元`、年末 connected power `800MW-1GW`、contracted power `>4GW`。
+- 重要产品/业务线：dedicated AI infrastructure/reserved supercluster；GB200/GB300 AI Cloud 和 on-demand/enterprise capacity；Vera Rubin/Meta dedicated capacity；Token Factory/Aether/AI Storage 软件与推理附着；power-first owned AI factories；Avride/TripleTen 等非核心业务。
+- NTM 公司收入四情景：悲观 `34-42亿美元`；基准 `46-56亿美元`；乐观 `62-78亿美元`；极度乐观 `85-108亿美元`。基准不是 Q1 annualized，而是 FY2026 指引正常兑现、Q4 ARR 接近目标区间、2027Q1 继续 ramp 的经营路径。
+- 利润或 EBITDA 四情景：Q1 2026 集团 adjusted EBITDA 已为正，AI Cloud adjusted EBITDA margin 约 `45%`；但 D&A、利息、SBC 和新站点爬坡使 GAAP operating margin 仍可能在 NTM 内承压。基准 adjusted EBITDA `15-24亿美元`，但 adjusted net income 只在区间上沿接近转正。
+- 最大传导瓶颈：不是行业需求，而是 `contracted power -> connected/active power -> GPU/rack delivery -> customer acceptance -> billable capacity -> utilization` 的连续兑现。
+- 最大利润率变量：AI Cloud 利用率、reserved 合同价格、GPU 折旧/残值、融资成本、电价/电力方案，以及 Token Factory/Aether 是否提高每 MW 收入和每 GPU 有效吞吐。
+- 最大现金流变量：2026-2027 CapEx 强度、客户预付款和 deferred revenue 增长、可转债/项目融资成本、Bloom/自备电是否缩短 time-to-power。
+- 可信度：基准为中高；悲观为中；乐观为中；极度乐观为低到中。A/B 级证据足以支持基准收入框架，但极度乐观需要 Rubin、connected power、客户吸收和融资同时超预期。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Dedicated AI infrastructure / reserved supercluster，含 Microsoft 和已服务 Meta tranche | 2026Q1 AI Cloud `3.897亿美元`的主体；估 `3.0-3.4亿美元/季` | 约 AI Cloud `75-85%`，约集团 `73-83%` | NTM 收入主线；长约、预付款和融资锚 | A/B：AI Cloud 收入已披露；Microsoft/Meta 合同披露 | 进入基准主口径；按交付、验收和 Q4 ARR 目标校准 | 后续更多 100MW+ 长约和第三方 AI lab 合同 |
+| GB200/GB300 AI Cloud、on-demand/enterprise capacity | 当前估 `0.4-0.8亿美元/季`，嵌入 AI Cloud | 约 `10-20%` | 决定客户多元化和价格弹性，降低对 anchor customer 依赖 | A/C：AI Cloud 总额 A；产品拆分和客户 pipeline C | 保守进入基准；不把 pipeline 全额计入 | 更多 enterprise vertical、healthcare/life science、media、robotics |
+| Vera Rubin / Meta 2026 新协议 dedicated capacity | 当前收入很小；合同从 early 2027 开始交付 | 当前 `<5%` | 2027 斜率最大，NTM 只确认早期收入 | B/C：Meta `120亿美元` dedicated + `150亿美元`可选 capacity；但交付在 2027 起 | NTM 基准只小比例纳入 2027Q1 早期 ramp；主要进入乐观和极度乐观 | 2027H2 以后多地点 Rubin 大规模放量 |
+| Token Factory / Aether / AI Storage / Networking attach | 当前未单独披露；估 `<0.2亿美元/季`直接/显性收入 | 低个位数，但影响 AI Cloud mix | 提高每 GPU 收入、利用率、客户粘性和毛利率 | C/D：Aether 已发布、Token Factory launched，但收入拆分不足 | 作为 AI Cloud 内部 mix 和利润率校准项进入基准；不额外重复加总 | 成为独立 managed inference / agent workflow 收入线 |
+| Power-first owned AI factories、contracted/connected/active power | 不直接确认收入；2026Q1 contracted power `>3.5GW`，2026YE 目标 `>4GW` | 不适用 | 收入确认前置条件；决定 ARR 能否兑现 | B/C：power 目标和站点披露 B；各站点通电时间 C | 不作为单独收入基数；作为收入确认和现金流执行变量 | 2030 `>5GW` NVIDIA systems、更多 behind-the-meter power |
+| Avride / TripleTen / 其他非核心经营收入 | 2026Q1 非 AI 收入约 `0.093亿美元` | 约 `2%` | 对 NTM 收入和利润影响小，避免扭曲 AI Cloud 判断 | A/C：集团收入可见；细分拆分有限 | 基准纳入小额经营收入；不影响主结论 | Avride robotaxi、TripleTen 增长、ClickHouse/Toloka 股权不进入经营收入 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不评估 NBIS 份额、收入确认、利润率或公司汇总。需求单位按产品选择：AI Cloud/NeoCloud 美元收入池、reserved capacity 合同池、Rubin 预留容量、managed inference 收入池、AI IT-load GW。当前需求锚来自项目内行业调研、公司订单披露和公开行业数据；需求强弱只和该产品当前预期比较。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Dedicated AI infrastructure / reserved supercluster | 项目内 NeoCloud 行业资料：高端 GPU reserved cluster 未来一年基准 `$65-105B`；长约 AI factory 确认收入池 `$45-90B`；客户采购单位转向 MW/GW capacity | `$45-65B`高端 reserved 需求；客户延期或利用率低但不崩盘 | `$65-105B`高端 reserved 需求；长约继续成为主流 | `$105-160B`；AI labs 和 hyperscaler 外包超预期 | `$160-240B`；100MW+ 外包成为高端训练/推理默认采购 | 悲观较锚点低 `$20-40B`；乐观高 `$40-55B`；极度高 `$95B+` | 基准符合当前行业预期；乐观以上需要新增大客户和长约继续出现 | 正向：Microsoft/Meta、CoreWeave backlog、Oracle RPO。反证：GPU 租赁价格连续两季跌 `20%+`、客户预付款减少、RPO/合同延期 |
+| GB200/GB300 AI Cloud、on-demand/enterprise capacity | Gartner/本地行业口径：2026 AI-optimized IaaS 约 `$37.5B`，推理占 `55%`；GB300/B300 是 2026H2 premium inference 主力 | `$28-36B`；供给改善导致短租和 on-demand 价格回落 | `$37-50B`；企业和 AI-native 客户按当前节奏增长 | `$55-80B`；agentic inference、vertical AI 和企业集群预留加速 | `$90-130B`；on-demand 与 reserved 融合成持续高利用 capacity market | 悲观低 `$5-15B`；乐观高 `$18-30B`；极度高 `$50B+` | 基准略高于 Q1 run-rate，但符合行业需求锚 | 正向：pipeline 环比扩大、AI inference 占比提升。反证：spot 实例可用性宽松、GB300 溢价消失、enterprise seat 活跃不足 |
+| Vera Rubin / Meta dedicated capacity | Rubin/Vera/BlueField-4 STX 属 2026H2 首批、2027 主流候选；Meta 合同明确 early 2027 起步 | `$10-25B` 预留/签约需求；Rubin 延迟或仅小批量 | `$40-90B` 预留/签约需求；2027 项目开始锁定 | `$90-170B`；Rubin 成为新 100MW+ 项目默认规格 | `$170-280B`；Rubin/HBM4/1.6T/BlueField 同时提前 | 悲观低 `$15-65B`；乐观高 `$50-80B`；极度高 `$130B+` | 当前预期是订单先于收入；NTM 内收入只小部分确认 | 正向：Meta `120亿美元` dedicated capacity 基于 Vera Rubin；NVIDIA/Nebius 早期采用合作。反证：Rubin 2026H2/2027 初交付延迟、HBM4/NVL rack 验收慢 |
+| Token Factory / Aether / AI Storage / Networking attach | 项目内需求框架：managed inference 未来一年基准 `$35-60B`；AI cloud storage/KV cache `$12-25B`；推理超过训练成为现金流主线 | 推理需求仍增长但价格战快于成本下降；managed inference `$20-35B` | managed inference `$35-60B`；AI storage/KV `$12-25B` | managed inference `$60-100B`；AI storage/KV `$25-45B` | managed inference `$100-160B`；AI storage/KV `$45-75B` | 乐观较基准高 `$25-40B` inference；极度高 `$65B+` | 基准符合当前需求锚；极度乐观需要 agent workflow 主流化 | 正向：token volume、长上下文、KV cache、enterprise workflow。反证：API token/min 停滞、token 价格年降 `>60%`且毛利无改善 |
+| Power-first owned AI factories | 项目内 AI 数据中心建设口径：2026 美国 AI 建设务实 `$310-390B`，新增或进入设备订单 AI IT-load `6.0-8.5GW`，实际 energized `4.0-6.5GW` | 设备订单 `4.0-5.5GW`；energized `2.5-4.0GW`；电力和融资明显拖延 | 设备订单 `6.0-8.5GW`；energized `4.0-6.5GW` | 设备订单 `9.0-12.0GW`；energized `6.0-9.0GW` | 设备订单 `12GW+`；自备电/微电网推动超预期 | 悲观低 `1.5-3.0GW`；乐观高 `3.0-3.5GW`；极度高 `5GW+` | 基准为行业当前高景气但受电力约束路径 | 正向：JLL/CBRE 低空置和预租，IEA 数据中心电力长期增长。反证：interconnection、transformer、permits、local opposition 或融资利差扩大 |
+| Avride / TripleTen / 非核心经营业务 | 小规模 robotaxi/edtech 需求；不由 AI data center 直接驱动 | 收入低速或投入加大 | 小额增长，不影响公司收入主线 | 商业进展带来小幅补充 | 作为股权/期权价值提升，但 NTM 收入仍小 | 无法可靠量化 | 相对 AI Cloud 预期不重要 | 不纳入 AI 需求主判断，避免把机器人/edtech 主题当作 AI Cloud 收入 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断哪些需求能进入 NBIS NTM 收入表，以及当前可收入化基数是多少；不预测增长，不判断利润率。公司能参与 AI demand pool，不等于能在 NTM 确认收入。A=已披露收入/指引；B=订单、合同、递延收入或明确交付时间表；C=认证/产能规划/管理层披露；D=产品发布或早期合作；E=主题相关。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Dedicated AI infrastructure / reserved supercluster | 2026Q1 AI Cloud revenue `3.897亿美元`，ARR `19.2亿美元`；Microsoft `174-194亿美元`多年度协议；已服务 Meta 早期 tranche；递延收入合计 `47.78亿美元` | 直接 | 云服务毛利高，但折旧和利息重；预付款改善 OCF | NTM `20-27亿美元` | NTM `30-38亿美元` | NTM `42-55亿美元` | NTM `60-75亿美元` | 基准符合 FY2026 指引和 ARR ramp；悲观低于当前指引路径 | A/B | 是 | AI Cloud 收入 A；Microsoft/Meta 合同、递延收入、交付路径 B | NTM 收入主口径；不把合同总额一次性计入，只按交付和验收确认 |
+| GB200/GB300 AI Cloud、on-demand/enterprise capacity | AI Cloud 总收入已披露；普通客户、enterprise pipeline、GB300 Exemplar status 和 Aether 平台可见，但公司不披露单项收入 | 直接 | 利用率高时毛利高；spot/短租价格更周期 | NTM `6-9亿美元` | NTM `10-15亿美元` | NTM `16-24亿美元` | NTM `28-40亿美元` | 基准小幅高于 Q1 run-rate，仍受 capacity 约束 | A/C | 是，保守进入 | 总收入 A；客户/pipeline/认证 C；产品拆分不足需折扣 | 进入基准但不放大；只承认可用容量和现有 GTM 能覆盖的部分 |
+| Vera Rubin / Meta dedicated capacity | 2026-03 Meta `120亿美元` dedicated + `150亿美元` available capacity，deliver starting early 2027；NVIDIA partnership 支持 Rubin/Vera/BlueField | 直接但 NTM 尾部 | 早期高价高毛利潜力；验收、平台成熟和 D&A 风险大 | `0-1亿美元` | `2-5亿美元` | `8-15亿美元` | `20-35亿美元` | 基准只代表 2027Q1 初步确认；大部分仍是 2027+ 补充口径 | B/C | 是，小比例 | 正式合同 B；具体季度交付和验收 C | NTM 基准低比例纳入；乐观以上取决于 early 2027 deployment |
+| Token Factory / Aether / AI Storage / Networking attach | Aether 3.0/3.1、Token Factory launched；AI Cloud 收入已包含部分软件/存储/网络附着；无单独 ARR | 直接和间接混合 | 软件/推理附着毛利高，可提高利用率；早期产品投入也会增加费用 | `0.5-1.5亿美元` | `2-5亿美元` | `6-10亿美元` | `12-18亿美元` | 基准为保守 attach/mix，不把 D 级产品发布当独立大收入 | C/D | 是，作为 mix 校准项 | Aether/AI Storage 属 AI Cloud 内部能力；Token Factory early PMF 但无拆分 | 可进入基准的小额附着收入和利润率校准；不可重复加总到 capacity 收入 |
+| Power-first owned AI factories | contracted power `>3.5GW`，2026YE target `>4GW`；connected power target `800MW-1GW`；PA `1.2GW`、Missouri `1.2GW`、Finland `310MW`、Bloom `328MW` | 间接 | 不直接产生收入；提高 time-to-power、unit economics 和融资能力 | 单独收入 `0` | 单独收入 `0` | 单独收入 `0` | 单独收入 `0` | 当前预期为 capacity 前置，不是收入基数 | B/C | 否，作为执行变量 | 站点和 power 披露 B；connected/active 转化仍需验证 | 不进入收入基数；只影响 dedicated/on-demand capacity 的收入确认概率和 FCF |
+| Avride / TripleTen / 非核心经营业务 | 2026Q1 非 AI 收入约 `0.093亿美元`；TripleTen 有增长但规模小；Avride 仍偏投资期 | 直接但低相关 | 可能亏损或小额贡献；与 AI Cloud 毛利逻辑不同 | `0.3-0.5亿美元` | `0.5-0.8亿美元` | `0.8-1.2亿美元` | `1.2-1.8亿美元` | 符合小额非核心收入预期 | A/C | 是，小额 | 集团收入 A；细分拆分不足 C | 小额进入公司总收入；不影响主传导 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第 3 节需求和第 4 节可收入化基数出发，评估每个重要产品在 NTM 内对 NBIS 的收入和利润贡献。产品级表用于传导判断，不能把各产品极值机械相加；第 6 节公司汇总已扣除 Microsoft/Meta/ordinary AI Cloud 之间的 capacity 重叠、软件附着重复和 power 底座重复。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Dedicated AI infrastructure / reserved supercluster | 悲观产品 | `20-27亿美元` | adjusted EBITDA `4-8亿美元`；GAAP经营利润仍可能为负 | 毛利率下行至 `60-68%`，D&A 吃掉利润 | 低于 FY2026 指引路径 | 只承认可见收入、已交付 capacity 和保守 Microsoft ramp | 保留 | connected power 低于 `800MW`、客户验收延期、GPU 残值/融资折扣 |
+| Dedicated AI infrastructure / reserved supercluster | 基准产品 | `30-38亿美元` | adjusted EBITDA `11-17亿美元` | 毛利率维持 `70-76%`，AI Cloud EBITDA margin 高但集团费用仍重 | 符合当前指引和 ARR 路径 | AI Cloud Q1 `3.897亿美元`、ARR `19.2亿美元`、deferred revenue `47.78亿美元`、Microsoft 合同 | 保留 | Q3/Q4 capacity in place 和 Q4 ARR 必须明显上升 |
+| Dedicated AI infrastructure / reserved supercluster | 乐观产品 | `42-55亿美元` | adjusted EBITDA `19-30亿美元` | 利用率和预付款改善，毛利率上行 | 高于当前预期 | Microsoft ramp 顺利，enterprise/reserved pipeline 转化，价格坚挺 | 保留但可信度中 | 新 capacity 若没有高利用客户，利润不会同步 |
+| Dedicated AI infrastructure / reserved supercluster | 极度乐观产品 | `60-75亿美元` | adjusted EBITDA `34-48亿美元` | 高利用率、高预付款、低 downtime 推动非线性经营杠杆 | 显著高于当前预期 | 多个 100MW+ 合同、上电和客户验收同时提前 | 下移为低可信上限 | 单一 capacity 超前不够，需客户、融资、供给和运维同时成立 |
+| GB200/GB300 AI Cloud、on-demand/enterprise capacity | 悲观产品 | `6-9亿美元` | adjusted EBITDA `1-2亿美元` | 短租/spot 价格下行，毛利压缩 | 低于当前普通客户增长预期 | 普通 AI Cloud 客户有需求但受 capacity/价格限制 | 保留 | GB300 溢价消失、instance availability 宽松 |
+| GB200/GB300 AI Cloud、on-demand/enterprise capacity | 基准产品 | `10-15亿美元` | adjusted EBITDA `3-6亿美元` | 利用率较高但销售和支持投入上升 | 符合当前预期 | pipeline 扩大、GB300 Exemplar、enterprise GTM 扩张 | 保留 | 产品拆分不披露，不能把 pipeline 直接当收入 |
+| GB200/GB300 AI Cloud、on-demand/enterprise capacity | 乐观产品 | `16-24亿美元` | adjusted EBITDA `7-12亿美元` | 新代 GPU premium 与客户 mix 改善 | 高于当前预期 | GB300/B300 推理溢价、AI-native 和 enterprise 多元客户 | 保留 | 与 Microsoft/Meta 抢同一 capacity，不能重复计入 |
+| GB200/GB300 AI Cloud、on-demand/enterprise capacity | 极度乐观产品 | `28-40亿美元` | adjusted EBITDA `14-24亿美元` | 高价 on-demand 与高利用推理同时成立 | 显著高于当前预期 | agentic inference 爆发，ordinary capacity 也满载 | 下移为上限 | 需要非 anchor 客户现金需求足以吃掉额外 capacity |
+| Vera Rubin / Meta dedicated capacity | 悲观产品 | `0-1亿美元` | 利润贡献小；前期费用和 D&A 可能拖累 | 负或中性 | 低于当前 early 2027 预期 | Rubin 或站点交付延迟 | 保留 | Rubin/HBM4/NVL rack 验收慢 |
+| Vera Rubin / Meta dedicated capacity | 基准产品 | `2-5亿美元` | adjusted EBITDA `0.5-2亿美元`，但 GAAP 贡献有限 | 初期毛利好，折旧重 | 符合“2027 起步、小比例确认”预期 | Meta `120亿美元` dedicated capacity 和 early 2027 time table | 保留 | NTM 仅覆盖初期，不能把五年合同拉入主表 |
+| Vera Rubin / Meta dedicated capacity | 乐观产品 | `8-15亿美元` | adjusted EBITDA `3-8亿美元` | 高端 platform 溢价和客户预付款增强利润 | 高于当前预期 | Rubin early deployment 顺利，additional capacity 吸收快 | 保留但低到中可信 | 2027Q1 确认节奏需要明确披露 |
+| Vera Rubin / Meta dedicated capacity | 极度乐观产品 | `20-35亿美元` | adjusted EBITDA `10-20亿美元` | 早期 Rubin 稀缺带来高毛利 | 显著高于当前预期 | Meta、第三方和 Nebius capacity 同时提前兑现 | 下移为附录上限 | 任一核心环节缺证据即不能留在主 NTM |
+| Token Factory / Aether / AI Storage / Networking attach | 悲观产品 | `0.5-1.5亿美元` | 利润贡献不明显，研发和 GTM 投入抵消 | 中性到轻微拖累 | 低于软件附着预期 | 产品已发布但 monetization 不清 | 保留 | token 价格战和开源推理平台压缩价值 |
+| Token Factory / Aether / AI Storage / Networking attach | 基准产品 | `2-5亿美元` | adjusted EBITDA `1-3亿美元`；更重要是提高底层利用率 | 毛利率方向正面 | 符合保守 attach 预期 | Aether、AI Storage、Token Factory、客户 vertical 需求 | 保留 | 收入未单列，估算可信度中低 |
+| Token Factory / Aether / AI Storage / Networking attach | 乐观产品 | `6-10亿美元` | adjusted EBITDA `4-7亿美元`；带动底层 GPU 利用率 | 毛利率上行 | 高于当前预期 | managed inference、KV cache、AI Storage 与 capacity 绑定 | 保留但需验证 | 与底层 AI Cloud 账单存在重复风险 |
+| Token Factory / Aether / AI Storage / Networking attach | 极度乐观产品 | `12-18亿美元` | adjusted EBITDA `8-13亿美元`，并提高公司毛利率 | 显著上行 | 显著高于当前预期 | Token Factory 成为独立高毛利产品线 | 下移为低可信上限 | 早期产品缺少 ARR、留存和毛利披露 |
+| Power-first owned AI factories | 悲观产品 | 单独收入 `0`；使上方 capacity 后移 | 现金流拖累扩大；闲置/在建资产吸收资本 | 利润率负面 | 低于当前执行预期 | 站点和电力已披露但通电未完成 | 保留为执行约束 | interconnection、permit、EPC、Bloom 项目延期 |
+| Power-first owned AI factories | 基准产品 | 单独收入 `0`；支持上方收入 `46-56亿美元`公司基准 | 通过预付款和高利用率改善 EBITDA，但 FCF 仍负 | 间接正面 | 符合当前 connected power 目标 | 2026YE connected power `800MW-1GW`、contracted `>4GW` | 保留 | contracted power 不等于 active/billable power |
+| Power-first owned AI factories | 乐观产品 | 单独收入 `0`；支持更高 capacity 转收入 | 降低 time-to-power，提高项目 ROIC | 间接正面 | 高于当前预期 | Bloom `328MW`、PA/MO/Finland 站点推进 | 保留 | 若 GPU/rack allocation 不匹配，电力本身不能产生收入 |
+| Power-first owned AI factories | 极度乐观产品 | 单独收入 `0`；支持 2027 更高 ARR | 运营杠杆强，但资本开支巨大 | 间接强正面 | 显著高于当前预期 | 多站点和 behind-the-meter power 同时提前 | 仅作跟踪 | 不得把 power pipeline 当已确认收入 |
+| Avride / TripleTen / 非核心经营业务 | 悲观产品 | `0.3-0.5亿美元` | 对集团利润小幅拖累或中性 | 中性偏负 | 低于当前小额增长 | 非核心收入小 | 保留 | Avride 投入大、TripleTen增长不影响 AI Cloud |
+| Avride / TripleTen / 非核心经营业务 | 基准产品 | `0.5-0.8亿美元` | 小额贡献或中性 | 中性 | 符合当前预期 | Q1 非 AI 收入约 `0.093亿美元` | 保留 | 不应影响公司主情景 |
+| Avride / TripleTen / 非核心经营业务 | 乐观产品 | `0.8-1.2亿美元` | 小额正贡献 | 中性偏正 | 略高于预期 | edtech/robotics 进展 | 保留但权重低 | 规模太小 |
+| Avride / TripleTen / 非核心经营业务 | 极度乐观产品 | `1.2-1.8亿美元` | 仍非公司利润主线 | 中性偏正 | 高于预期但不改主结论 | 非核心期权 | 移入附录 | 不把股权重估或机器人叙事当经营收入 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：第一个表为公司 NTM 收入和利润四情景。汇总时已扣除产品之间的重复计算：Microsoft/Meta 与普通 AI Cloud 共享 GPU/rack/power capacity；Token Factory/Aether/AI Storage 多数嵌入 AI Cloud 账单；power-first factory 是收入前置条件而非单独收入。绝对增速以 2026Q1 后 TTM revenue 约 `8.779亿美元` 为对比基准；相对预期以管理层 2026 revenue `30-34亿美元`、2026 年末 ARR `70-90亿美元`、2026YE connected power `800MW-1GW` 和当前合同交付路径为锚。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `34-42亿美元` | 约 `+287%至+378%` vs TTM | 低于当前指引/ARR 路径；2026 revenue 可能落在指引下沿或低于指引，2027Q1 ramp 延后 | `60-68%` | `-45%至-20%` | adjusted EBITDA `4-9亿美元`；adjusted net loss `-8亿至-2亿美元`；GAAP净利润受投资重估扰动，无法可靠量化 | 显著为负；若预付款放缓且 CapEx 维持，外部融资压力明显上升 | 中 | connected power 未达 `800MW`、客户验收延期、GPU价格/残值下行、融资成本上升 |
+| 基准公司 | `46-56亿美元` | 约 `+424%至+538%` vs TTM | 基本符合当前预期；FY2026 指引正常兑现，年末 ARR 接近 `70-90亿美元`区间，2027Q1 继续 ramp | `70-76%` | `-18%至+2%` | adjusted EBITDA `15-24亿美元`；adjusted net income `-4亿至+3亿美元`；GAAP净利润无法可靠量化 | 仍显著为负，主要因 CapEx；经营现金流可由 deferred revenue 支撑，但不是成熟 FCF | 中高 | contracted power 转 connected/active power，Q3/Q4 capacity in place，客户预付款是否继续增长 |
+| 乐观公司 | `62-78亿美元` | 约 `+606%至+789%` vs TTM | 高于当前预期；connected power 接近或超过 `1GW`，Microsoft ramp 与普通 AI Cloud 共同超预期，Meta/Rubin 早期贡献更明显 | `74-80%` | `-5%至+12%` | adjusted EBITDA `30-45亿美元`；adjusted net income `4-15亿美元` | FCF 仍负但预付款和融资覆盖能力增强；单位容量回收期改善 | 中 | GB300/Rubin 交付、上电速度、客户利用率和融资窗口必须同步顺利 |
+| 极度乐观公司 | `85-108亿美元` | 约 `+868%至+1130%` vs TTM | 显著高于当前预期；需求、公司捕获、利润质量和执行质量同时突破 | `76-83%` | `+5%至+18%` | adjusted EBITDA `50-70亿美元`；adjusted net income `15-30亿美元` | CapEx 仍大，但客户预付款、长期合同和项目融资使资金链更稳；FCF 可能接近改善但仍不宜假设转正 | 低到中 | 多站点提前上电、Rubin/GB300稳定量产、additional capacity被高价吸收、GPU残值和利率不恶化 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。正向证据只提升其实际影响的层级；反证只限制其实际影响的层级，不重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。市场价格、估值倍数和股价走势不作为经营证据。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 AI Cloud revenue `3.897亿美元`、ARR `19.2亿美元`、AI Cloud 占集团约 `98%` | 收入基数/公司汇总 | 支撑基准收入主口径；证明不是纯 pipeline | Q1 cost/revenue `26%`显示规模效应 | 收入已确认，证据等级 A | 基准保留；悲观不能低到无收入路径 |
+| 2026 revenue `30-34亿美元`、YE ARR `70-90亿美元`、connected power `800MW-1GW` | 公司汇总/执行 | 提供当前预期锚；基准必须围绕该路径 | ARR 高于 revenue，说明后续季度 ramp 对利润率关键 | connected power 是执行门槛 | 基准保留；若 Q3/Q4 无明显 capacity in place，悲观上移 |
+| Microsoft `174-194亿美元`和 Meta `120亿美元+150亿美元`协议 | 收入基数/产品贡献 | B 级合同支持长约收入可见性 | 长约提高利用率和融资质量 | 预付款、递延收入和项目融资能力增强 | 基准保留；Meta 2027 起步只小比例进 NTM |
+| 递延收入 current+non-current `47.78亿美元`，Q1 deferred revenue 增加 `31.98亿美元` | 收入基数/现金流 | 支持未来服务义务和收入确认 | 预付款可降低融资压力，但不是利润本身 | OCF 强但依赖预付款，不等同成熟 FCF | 基准保留；现金流可信度中高但 FCF仍负 |
+| NVIDIA `20亿美元`投资、`>5GW`系统目标、GB300 Exemplar Cloud、Rubin/Vera/BlueField合作 | 公司捕获/执行可信度 | 提高新代 GPU/rack allocation 和客户信任 | fleet health 和 inference stack 有利于利用率 | 降低供应链和认证风险，但不是采购义务 | 乐观保留；极度乐观仍需交付证据 |
+| Bloom `328MW` behind-the-meter fuel cell 今年运营目标，PA/MO/Finland 多站点 | 执行/现金流 | 缩短 time-to-power，有助于 2026H2/2027 capacity | 若按期，可提高资产利用和价格 | CapEx 和项目执行复杂度上升 | 乐观保留；若延期，只在执行层下移，不重复打击需求 |
+| Token Factory/Aether/AI Storage | 产品贡献/利润率 | 当前直接收入无法可靠量化 | 对毛利率和利用率有正向期权 | 需要 GTM、SLA、定价和留存数据 | 基准作为 mix 校准项；独立大收入移入乐观/附录 |
+| GPU租赁价格、利用率、残值和融资利差 | 产品利润/现金流 | 价格下行会压 on-demand 与续约 | 折旧和残值假设直接影响 EBITDA 到净利 | 债务成本和 collateral haircut 影响扩张 | 悲观保留；不在需求和公司汇总重复惩罚 |
+| 客户集中：Microsoft/Meta/hyperscaler 外包容量 | 收入确认/现金流 | 单一客户延期会显著影响季度收入 | 长约可稳毛利，也可能重议价 | 客户信用强但议价强 | 基准保留；乐观需客户多元化证据 |
+| Avride/TripleTen/ClickHouse/Toloka | 公司组合/证据可信度 | 非核心经营收入小；股权重估不进经营收入 | GAAP净利润会被投资重估扭曲 | 股权价值不改善 AI Cloud FCF | 仅作跟踪；不进入经营主结论 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 需求仍增长，但上电、验收或融资低于当前路径，NTM revenue `34-42亿美元` | 已披露收入、递延收入和 Microsoft/Meta 合同使收入不会回到早期水平 | connected power 低于 `800MW`、GPU租价跌、预付款放缓、Rubin延迟 | 保留 | 悲观公司 | 中 | 上电延迟只在收入确认/执行层处理，不再把行业需求整体打到悲观 |
+| 基准 | FY2026 指引正常兑现，年末 ARR `70-90亿美元`路径成立，NTM revenue `46-56亿美元` | A 级 AI Cloud revenue、B 级合同、B/C 级 power 和 NVIDIA合作共同支撑 | 产品拆分不足、Q1 OCF主要来自预付款、GAAP operating margin仍负 | 保留 | 基准公司 | 中高 | 递延收入既是现金流正向证据也是未来义务，不重复作为利润利好 |
+| 乐观 | connected power 接近/超过 `1GW`，普通 AI Cloud 与 reserved capacity 同时超预期，NTM revenue `62-78亿美元` | NVIDIA/Meta/Bloom/多站点和推理需求支持上修 | 需要 Q3/Q4 capacity、ARR、deferred revenue 和客户多元化同步验证 | 保留 | 乐观公司 | 中 | Microsoft/Meta capacity 与普通 AI Cloud capacity 共享底座，汇总时不重复加总 |
+| 极度乐观 | Rubin、GB300、上电、客户吸收、利润率和融资同时突破，NTM revenue `85-108亿美元` | 理论上由多 GW power、NVIDIA early access 和 Meta additional capacity 支撑 | 任一核心环节证据不足；Token Factory 独立收入、Rubin提前和多站点上电仍缺季度披露 | 下移 | 低可信上限/附录跟踪 | 低到中 | power pipeline、五年合同总额和软件期权不能叠加成 NTM 确认收入 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。Nebius 已经从早期 GPU broker 进入高收入可见度的 AI Cloud/NeoCloud 阶段，2026Q1 收入、ARR、deferred revenue 和 Microsoft/Meta/NVIDIA 证据足以支持 NTM `46-56亿美元`收入路径。利润质量优于传统低毛利转售，但 GAAP operating margin 在 NTM 内仍受 D&A、利息、SBC 和新站点爬坡压制。
+- NTM 收入结论：收入传导链的核心不是行业 TAM，而是 `已签合同/预付款 -> connected/active power -> GPU/rack 到货 -> 客户验收 -> billable capacity`。只要 2026YE connected power 达 `800MW`下沿、Q4 ARR 接近公司目标，基准收入可成立；若 Q3/Q4 capacity in place 不明显上升，收入会下移。
+- 利润/现金流结论：AI Cloud 毛利率和 adjusted EBITDA 已经显示规模效应，但公司仍是高 CapEx、高折旧、高融资依赖模型。NTM FCF 主方向仍为显著负，经营现金流质量要拆分 deferred revenue，不能把预付款直接当成熟自由现金流。
+- 主要传导瓶颈：第一，connected power 和 rack commissioning；第二，GB300/Rubin allocation 与整 rack 验收；第三，Microsoft/Meta 之外的客户多元化；第四，GPU 残值和融资成本；第五，Token Factory/Aether 能否把同一硬件转成更高利用率。
+- 乐观情景成立条件：2026H2 connected power 接近 `1GW`，Q4 ARR 达到或超过 `90亿美元`上沿，deferred revenue 继续增长，ordinary enterprise/startup demand 不被 Microsoft/Meta capacity 挤出，AI Cloud adjusted EBITDA margin 维持或高于 Q1 水平。
+- 极度乐观情景成立条件：Rubin/Vera early deployment 明确提前，Meta additional capacity 或第三方客户高价吸收，Bloom/自备电方案复制，多站点提前上电，Token Factory/AI Storage 开始单列或显示高 attach，融资利差和 GPU 残值不恶化。
+- 悲观情景触发条件：2026YE connected power 低于 `800MW`，Q3/Q4 ARR 明显低于目标路径，Microsoft/Meta delivery 表述转弱，deferred revenue 不增或 accounts receivable 急升，GB300/Rubin 实例价格连续两季下跌 `20%+`，或项目融资明显收紧。
+- 后续跟踪数据：AI Cloud revenue、ARR、AI Cloud adjusted EBITDA margin、deferred revenue、accounts receivable、CapEx、cash/restricted cash、connected/active/contracted power、Microsoft/Meta delivery、GB300/Rubin deployment、Bloom 328MW 项目、GPU spot/reserved pricing、Token Factory usage/ARR/客户数。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司经营数据截至 2026-03-31；Nebius Q1 2026 披露日期为 2026-05-13；Bloom 合作披露日期为 2026-05-20；报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Nebius Q1 2026 financial results, 2026-05-13: https://nebius.com/newsroom/nebius-reports-first-quarter-2026-financial-results
+  - Nebius Q1 2026 shareholder letter PDF: https://assets.nebius.com/assets/aa1bc2e6-df83-40cd-a6a2-95e7cda3d16c/Nebius%20SHL_Q1%202026.pdf
+  - Nebius Q1 2026 financial results PDF: https://assets.nebius.com/assets/6fc0ea6c-0884-4a1f-bed8-1f797eb9628f/Financial%20results_Q1%202026.pdf
+  - Nebius Q4/FY2025 shareholder letter PDF: https://assets.nebius.com/assets/85571bd2-050b-468c-954c-42e9d24e4cd2/Letter%20to%20Shareholders%20Q4%202025.pdf
+  - Microsoft agreement, 2025-09-08: https://nebius.com/newsroom/nebius-announces-multi-billion-dollar-agreement-with-microsoft-for-ai-infrastructure
+  - Meta agreement, 2026-03-16: https://nebius.com/newsroom/nebius-signs-new-ai-infrastructure-agreement-with-meta
+  - NVIDIA and Nebius partnership, 2026-03-11: https://nebius.com/newsroom/nvidia-and-nebius-partner-to-scale-full-stack-ai-cloud
+  - NVIDIA investor release on Nebius partnership, 2026-03-11: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Nebius-Partner-to-Scale-Full-Stack-AI-Cloud/
+  - Bloom Energy partnership, 2026-05-20: https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out
+- 项目内公司资料：
+  - `公司调研/云算力_IDC_AI软件平台/NBIS_Nebius_Group_公司调研_2026-06-12.md`
+- 项目内行业资料：
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - `行业调研/产业背景/全球AI需求与Token经济框架_2026-06-11.md`
+- 外部行业来源：
+  - JLL 2026 Global Data Center Outlook: https://www.jll.com/en-ca/insights/market-outlook/data-center-outlook
+  - CBRE North America data center market set records in 2025: https://www.cbre.com/press-releases/fast-growing-north-american-data-center-market-set-records-in-2025
+  - IEA Energy demand from AI: https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 revenue `30-34亿美元`和 YE ARR `70-90亿美元`用于校准，不替代 NTM 主表。
+  - Meta `120亿美元` dedicated capacity 和 `150亿美元` additional available capacity 是五年合同/可选容量，不等于 NTM 确认收入。
+  - NVIDIA `>5GW` systems by 2030 是战略容量目标，不等于采购义务或 NTM revenue backlog。
+  - ClickHouse、Toloka、Avride 和 TripleTen 只作为非核心/股权或远期期权跟踪，不进入 AI Cloud 经营主线。

@@ -1,0 +1,337 @@
+# 公司：AMKR Amkor Technology 公司调研
+
+报告日期：2026-06-11  
+研究边界：本报告只使用联网检索、公司公告/SEC 文件，以及项目内 `行业调研/` 下与先进封装、封装基板、测试、AI 基建瓶颈相关资料；未读取、引用或继承 `特征量化/` 及其他目录内容。  
+分类目录：`公司调研/封测_检测_计量_光罩/`
+
+## 0. 核心结论
+
+Amkor Technology, Inc. 是全球头部 OSAT（Outsourced Semiconductor Assembly and Test，外包封装测试）公司，也是美国总部口径下规模最大的 OSAT。它不是 GPU 设计商、不是 HBM 供应商，也不是 TSMC CoWoS 这种晶圆厂主导的先进封装平台；它的投资逻辑更像是“先进封装和系统级测试的第二供应链、区域化供应链、移动/汽车/计算需求复苏”的组合。AI 数据中心是重要期权，但截至 Q1 2026，公司披露口径仍以 Communications、Computing、Automotive & Industrial、Consumer 四个终端市场为主，未单独披露 AI 数据中心收入。
+
+截至 2026-06-11 的市场快照，AMKR 股价约 76.15 美元，市值约 190 亿美元，报价源 trailing P/E 约 43.8x，Forward P/E 约 36.6x；用最近四个已披露季度收入 70.71 亿美元推算，P/S 约 2.69x。这个估值已经把“先进封装扩产、美国本土封装、AI/HPC 客户设计导入”放进了预期，远高于传统 OSAT 周期股常见个位数到十几倍盈利估值。
+
+公司 2025 年收入 67.08 亿美元，同比增长 6%；Advanced Products 收入 55.56 亿美元，占 82.8%，其中 advanced SiP 模组约 30.80 亿美元。Q1 2026 收入 16.85 亿美元，同比增长 27%；Advanced Products 13.72 亿美元，占 81.4%；Computing 终端占比 21%，折合约 3.54 亿美元，但其中数据中心、基础设施、PC、存储混在一起，不能等同于 AI 数据中心。
+
+最值得跟踪的不是传统 wirebond/leadframe，而是：1）FCBGA、2.5D/3D、HDFO、SWIFT/S-SWIFT、S-Connect 等高密度多芯片封装；2）系统级测试、wafer-level test、burn-in/SLT；3）CPO/硅光子和 Lightmatter 类 3D photonics 早期项目；4）Arizona 与 TSMC 合作的美国先进封装产能。Arizona 项目 2025 年开工，官方称总规划投资扩大至 70 亿美元、两阶段建设、超过 75 万平方英尺洁净室，生产预计 2028 年开始，因此它是 2028+ 战略变量，对 2026-2027 当期收入贡献有限。
+
+最大风险同样明确：公司 10-K 明确说封测业务通常没有重大 backlog，客户一般不提供重大绑定采购承诺，订单可减少、取消或延期；同时 Apple 与 Qualcomm 等大客户集中度高，2025 年前十大客户占收入 72%，Apple 与 Qualcomm 分别占 29.8% 和 11.1%。AMKR 的 AI 逻辑需要用客户项目导入、产能利用率、毛利率和 test/advanced mix 的实际提升验证，不能仅凭“先进封装”四个字替代订单。
+
+## 1. 公司整体业务、投资人画像与产业链定位
+
+### 1.1 业务结构
+
+Amkor 的业务是把客户已经完成设计并由晶圆厂制造出的 wafer/die，完成后段封装、模组集成、测试和出货。其主要商业模式是收取封装加工、材料集成、测试服务和 turnkey 解决方案收入；客户通常保有 die/IP/系统架构主导权，Amkor 获取的是后段制造价值量和部分工艺溢价。
+
+公司披露产品分为两类：
+
+| 类别 | 2025 收入 | 2025 占比 | 主要内容 | 投资含义 |
+|---|---:|---:|---|---|
+| Advanced Products | 55.56 亿美元 | 82.8% | Flip chip、memory、wafer-level processing 及相关测试；包括 FC CSP、FCBGA、advanced SiP、WLCSP、WLFO、HDFO、SiPh/CPO 等 | 这是 AMKR 的核心增长和估值来源，也是 AI/HPC、手机 AI、汽车 ADAS、网络基础设施相关产品的承载层 |
+| Mainstream Products | 11.52 亿美元 | 17.2% | Wirebond、传统 power device packaging 及相关测试 | 更像成熟现金流和周期性填充产能，AI 数据中心相关性弱 |
+
+按终端市场，2025 年 Communications 占 46%，Computing 占 20%，Automotive/Industrial/Other 占 19%，Consumer 占 15%。这说明公司仍是手机和消费电子链条权重很高的 OSAT，而不是纯 AI 数据中心公司。Computing 口径包含 data center、infrastructure、PC/laptop、storage，不能直接等同 AI 服务器。
+
+### 1.2 投资人心中的公司
+
+投资人通常把 AMKR 看作三层资产：
+
+1. 传统 OSAT 周期股：受智能手机新品周期、汽车库存周期、客户拉货节奏、产能利用率影响大，毛利率长期低于设备/EDA/IP/材料环节。
+2. 先进封装受益者：2.5D、fan-out、FCBGA、advanced SiP、system-level test、CPO 等需求上升，会提高单位封装价值量和测试时间，但定价权仍受客户和晶圆厂平台约束。
+3. 美国先进封装本土化期权：Arizona 项目、TSMC Arizona 协作、CHIPS Act 奖励和 Apple/NVIDIA/AMD/TSMC 等生态关系，使 AMKR 成为美国先进封装缺口中的少数 OSAT 标的。
+
+因此，AMKR 的多头叙事是“先进封装外溢 + 美国供应链重构 + AI/HPC/edge AI 对高密度封装和测试的拉动”；空头叙事是“OSAT 低毛利、客户集中、没有硬 backlog、capex 周期重、真正高价值先进封装仍由 TSMC/Intel/Samsung 主导”。
+
+### 1.3 最近 3 年重大业务变化
+
+| 时间 | 事件 | 业务含义 |
+|---|---|---|
+| 2023-2024 | 越南工厂投产准备并在 2024 Q3 开始交付 advanced packages | 增加亚洲先进封装/SiP 产能，服务区域化供应链和客户分散制造需求 |
+| 2024-10 | Amkor 与 TSMC 签署 Arizona 先进封装与测试合作 MOU | TSMC 将在 Amkor Peoria 工厂采购 turnkey advanced packaging/test，双方计划定义 InFO、CoWoS 等技术路径以服务 TSMC Phoenix fab 客户 |
+| 2024-12 | 美国商务部给予 Amkor Technology Arizona 最高 4.07 亿美元 CHIPS Act 直接资金奖励 | 支持约 20 亿美元 greenfield Peoria 先进封装测试项目，资金按项目里程碑发放 |
+| 2025-08 | Arizona 新址调整至 Peoria Innovation Core 104 英亩地块 | 原 56 英亩地块换成更大用地，生产预计 2028 年初开始，增强未来扩展弹性 |
+| 2025-10 | Peoria Arizona 先进封装测试园区开工，官方称总规划投资扩大至 70 亿美元 | 两阶段建设、超过 75 万平方英尺洁净室、最多 3,000 个岗位，成为美国最大外包先进封装工厂之一 |
+| 2025-10/2026-01 | CEO 交接：Kevin Engel 接替 Giel Rutten，Rutten 转为董事会执行主席 | 从长期运营管理进入新一轮扩产和客户项目执行阶段 |
+| 2026-05 | 2026 Investor Day 强调 Advanced Packaging、全球制造扩张、HPC/汽车/移动等长期驱动 | 管理层把公司定位从周期封测进一步推向先进封装和区域化供应链平台 |
+| 2026-06 | ECTC 2026 展示 S-Connect、S-SWIFT、wafer-level packaging、CPO，强调 AI/HPC/photonics/advanced memory | 说明技术营销和客户导入重点已经转向高带宽、低功耗、高密度集成 |
+
+过去三年 AMKR 没有靠大型并购改造业务，核心变化是资本开支、产能区域化和先进封装技术平台扩展。
+
+### 1.4 最新估值和财务健康度
+
+| 指标 | 数值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | 76.15 美元 | 2026-06-11 最新市场快照 | 处于 52 周区间高位附近，市场已明显重估先进封装期权 |
+| 市值 | 190.0 亿美元 | 2026-06-11 最新市场快照 | 对应 2025 收入约 2.83x，对最近四季收入约 2.69x |
+| Trailing P/E | 43.8x | 2026-06-11 报价源，EPS 约 1.74 美元 | 高于传统 OSAT 历史中枢，隐含 AI/HPC 和 Arizona 扩产预期 |
+| Forward P/E | 约 36.6x | 2026-06-11 Yahoo key statistics 快照；也接近用 2026 EPS 约 2.0-2.2 美元推算的 34.6-38.1x | 若毛利率不能稳定进入 16%-18%，该估值压力较大 |
+| P/S | 2.69x | 市值 190.0 亿美元 / 最近四季收入 70.71 亿美元 | 对低双位数毛利的 OSAT 来说偏高 |
+| Q1 2026 收入增速 | +27% YoY | 2026-04-27 财报 | 低谷修复、communications/computing/auto broad-based 需求拉动 |
+| Q1 2026 毛利率 | 14.2% | 2026-04-27 财报 | 好于 Q1 2025 的 11.9%，但仍显著低于半导体设备/材料/EDA |
+| Q1 2026 净利率 | 4.9% | 83.35 百万美元 / 16.85 亿美元 | OSAT 资产重、客户议价强，净利率弹性有限 |
+| 最近四季毛利率 | 约 14.4% | Q2 2025-Q1 2026 | Q4 2025 16.7% 是近期高点，Q1 季节性回落 |
+| 最近四季净利率 | 约 6.2% | Q2 2025-Q1 2026 | 盈利改善但尚未证明先进封装可长期显著抬升公司级净利率 |
+| 现金及短投 | 18 亿美元 | 2026-03-31 | 仍有净现金 |
+| 总债务 | 14 亿美元 | 2026-03-31 | 净现金约 4 亿美元，资产负债表短期健康 |
+| 2026 capex 指引 | 25-30 亿美元 | Q1 2026 财报最新指引 | 进入重资本开支期，2026-2027 自由现金流承压，需关注 Arizona 里程碑和客户预付款/政府资金兑现 |
+
+资产负债表结论：短期健康，杠杆不高，净现金状态给了扩产缓冲；但 2026 capex 指引高达 25-30 亿美元，显著高于 2025 年约 7.9 亿美元 capex（用 2025 operating cash flow 10.96 亿美元、free cash flow 3.08 亿美元反推）。这意味着 AMKR 正从“现金流较稳的 OSAT”转入“前置建设美国先进封装产能”的阶段，未来两年现金流风险高于损益表表面数字。
+
+## 2. 最近五个季度财报、订单与交期推断
+
+公司不披露正式 backlog，而且 10-K 明确提示其封装测试业务通常没有重大 backlog，季度收入高度依赖当季客户需求；客户一般不承诺未来重大采购量，也可能减少、取消或延迟采购，甚至存在 double booking。因此下表中的订单/交期只能用收入、指引、客户集中度、产品组合、capex 和产业链约束推断，不能当作硬订单。
+
+| 财季 | 披露时间 | 收入/增速 | 利润 | 产品收入 | 终端市场 | Packaging/Test | 订单、交期和取消率推断 | AI 数据中心相关收入推断 |
+|---|---:|---:|---:|---|---|---|---|---|
+| Q1 2026 | 2026-04-27 | 16.85 亿美元，+27% YoY，-10.8% QoQ | 毛利率 14.2%；营业利润 1.00 亿美元；净利 0.83 亿美元；EPS 0.33；EBITDA 2.85 亿美元 | Advanced 13.72 亿美元，占 81.4%；Mainstream 3.13 亿美元 | Comm 44%；Computing 21%；Auto/Industrial 21%；Consumer 14% | Packaging 89%；Test 11%；Top 10 客户 68% | Q2 指引收入 17.5-18.5 亿美元、毛利率 14.5%-15.5%，说明 Q1 不是一次性拉货；但无硬 backlog，客户可调单。先进封装利用率改善，Arizona capex 尚未贡献收入 | 公司未披露。Computing 折合约 3.54 亿美元，但包含 PC/storage。直接 AI/HPC/DC 封装测试估计 0.6-1.3 亿美元，占总收入 4%-8%，置信度低 |
+| Q4 2025 | 2026-02-09 | 18.88 亿美元，+16% YoY，-5.0% QoQ | 毛利率 16.7%；营业利润 1.85 亿美元；净利 1.72 亿美元；EPS 0.69；EBITDA 3.69 亿美元 | Advanced 15.80 亿美元；Mainstream 3.08 亿美元 | Comm 49%；Computing 19%；Auto/Industrial 18%；Consumer 14% | Packaging 89%；Test 11%；Top 10 客户 72% | Q4 毛利率高点显示产能利用率和产品 mix 改善；2026 capex 25-30 亿美元显示订单可见度足以支撑扩产，但仍非绑定 backlog | Computing 折合约 3.59 亿美元。AI/HPC/DC 估计 0.6-1.2 亿美元，占 3%-6%，主要来自 FCBGA/advanced package/test，而非 Arizona |
+| Q3 2025 | 2025-10-27 | 19.87 亿美元，+? YoY，+31.5% QoQ | 毛利率 14.3%；营业利润 1.59 亿美元；净利 1.27 亿美元；EPS 0.51；EBITDA 3.40 亿美元 | Advanced 16.84 亿美元；Mainstream 3.03 亿美元 | Comm 51%；Computing 19%；Auto/Industrial 16%；Consumer 14% | Packaging 89%；Test 11%；Top 10 客户 73% | 季节性 smartphone/communications 拉动非常强，Advanced packaging 创纪录；CEO 交接公告同时说明管理层进入扩张执行期。订单集中在头部客户，新品周期取消率低于普通消费但仍可延后 | Computing 折合约 3.78 亿美元。AI/HPC/DC 估计 0.6-1.2 亿美元，占 3%-6%；大部分 Advanced 仍可能来自移动和通信 |
+| Q2 2025 | 2025-07-28 | 15.11 亿美元，+3% YoY，+14.3% QoQ | 毛利率 12.0%；营业利润 0.92 亿美元；净利 0.54 亿美元；EPS 0.22；EBITDA 2.59 亿美元 | Advanced 12.28 亿美元；Mainstream 2.83 亿美元 | Comm 40%；Computing 22%；Auto/Industrial 20%；Consumer 18% | Packaging 88%；Test 12%；Top 10 客户 72% | Q2 高于指引高端，且 Q3 指引 18.75-19.75 亿美元，显示客户拉货恢复。Q2 含 Nanium 收购相关 contingent payment 带来 0.32 亿美元营业利润收益，需要剔除看经营 | Computing 折合约 3.32 亿美元。AI/HPC/DC 估计 0.4-0.9 亿美元，占 3%-6%；test 占比 12% 有利于高复杂度芯片测试 |
+| Q1 2025 | 2025-04-28 | 13.22 亿美元 | 毛利率 11.9%；营业利润 0.32 亿美元；净利 0.21 亿美元；EPS 0.09；EBITDA 1.97 亿美元 | Advanced 10.64 亿美元；Mainstream 2.58 亿美元 | Comm 40%；Computing 22%；Auto/Industrial 21%；Consumer 17% | Packaging 88%；Test 12%；Top 10 客户 71% | 周期低位，毛利率被利用率拖累；Q2/Q3 后续修复说明 Q1 是比较低的基数。无硬 backlog，客户 forecast 能见度有限 | Computing 折合约 2.91 亿美元。AI/HPC/DC 估计 0.3-0.7 亿美元，占 2%-5% |
+
+五季趋势：收入从 Q1 2025 的 13.22 亿美元恢复到 Q1 2026 的 16.85 亿美元，Advanced Products 从 10.64 亿美元提升到 13.72 亿美元；但是 Q3/Q4 的强势主要仍和 communications/mobile 旺季强相关。AI 数据中心是增量方向，但公司级数据还没有显示它已经成为主收入来源。
+
+## 3. 2026 最新指引、业务占比与重点产品
+
+### 3.1 最新指引
+
+Q1 2026 财报给出的 Q2 2026 指引如下：
+
+| 指标 | Q2 2026 指引 | 中点 | 同比参考 |
+|---|---:|---:|---|
+| 净销售额 | 17.5-18.5 亿美元 | 18.0 亿美元 | 相比 Q2 2025 的 15.11 亿美元约 +19.1% |
+| 毛利率 | 14.5%-15.5% | 15.0% | 高于 Q2 2025 的 12.0%，低于 Q4 2025 的 16.7% |
+| 净利润 | 1.05-1.30 亿美元 | 1.175 亿美元 | 净利率中点约 6.5% |
+| EPS | 0.42-0.52 美元 | 0.47 美元 | Q1 2026 EPS 为 0.33 美元 |
+| 2026 全年 capex | 25-30 亿美元 | 27.5 亿美元 | 主要对应 Arizona 和先进封装扩产期 |
+
+Q2 指引和 Q1 实际合计，2026 上半年收入中点约 34.85 亿美元。若下半年保持 Q3/Q4 手机和 advanced packaging 季节性，2026 全年收入进入 72-78 亿美元区间并不激进；但公司未在 Q1 新闻稿中给出完整全年收入指引，本报告后文采用场景推演而非公司官方全年收入目标。
+
+### 3.2 Q1 2026 收入占比
+
+| 维度 | Q1 2026 占比 | 折算收入 | 增长/变化 |
+|---|---:|---:|---|
+| Advanced Products | 81.4% | 13.72 亿美元 | +28.9% YoY；仍是公司核心 |
+| Mainstream Products | 18.6% | 3.13 亿美元 | +21.3% YoY，但战略优先级较低 |
+| Packaging services | 89% | 约 15.0 亿美元 | 主要收入来源 |
+| Test services | 11% | 约 1.85 亿美元 | AI/HPC 复杂度提升会拉长测试时间，单位价值可能提升 |
+| Communications | 44% | 约 7.41 亿美元 | 仍是最大市场，主要绑定手机/平板/高端移动 |
+| Computing | 21% | 约 3.54 亿美元 | 包含 data center/infrastructure/PC/storage，是 AI 数据中心线索但不是纯 AI |
+| Automotive & Industrial | 21% | 约 3.54 亿美元 | ADAS、电动化、工业、功率和控制类封装 |
+| Consumer | 14% | 约 2.36 亿美元 | AR/gaming/connected home/wearables，优先级低于前三类 |
+
+### 3.3 重点产品与可跳过产品
+
+**重点产品/业务：**
+
+| 产品/业务 | 对应官方/业务口径 | 为什么重要 |
+|---|---|---|
+| Advanced SiP | 2025 advanced SiP 模组收入约 30.80 亿美元 | 公司已有大规模量产收入，覆盖 smartphone、automotive、IoT、gaming、computer、network system；edge AI 和高端手机 AI 是直接增量 |
+| FCBGA / flip-chip / large substrate packages | Advanced Products 核心，10-K 明确 FCBGA 可用于 networking、storage、computing、automotive、consumer，部分 FCBGA 使用 2.5D 集成 HBM/GPU | AI ASIC/GPU、网络 ASIC、交换芯片和高性能计算都需要高层 ABF/FCBGA 和热/电协同 |
+| 2.5D/3D、HDFO、SWIFT / S-SWIFT | Amkor 官网称 S-SWIFT 提供高带宽 die-to-die interconnect、高密度 interposer，并面向 AI/HPC/data center | 是 AMKR 争取非 TSMC 一体化平台、chiplet、多 die 封装价值量的关键 |
+| S-Connect | Amkor silicon bridge / embedded silicon bridge 技术，面向高带宽 die-to-die | 可作为 CoWoS/EMIB/FOCoS 之外的桥接路线，当前更像小基数高期权 |
+| Test services / system-level test / wafer-level test | Q1 2026 约 1.85 亿美元收入 | AI/HBM/HPC 芯片测试时间、burn-in、SLT、KGD 要求提升，测试可能比普通封装更具紧缺性 |
+| CPO / silicon photonics / Lightmatter 3D photonics | 2024 Amkor 与 Lightmatter 合作打造 3D photonics package；ECTC 2026 展示 CPO | 现阶段收入小，但与 AI 集群内互连、光 I/O、CPO 路线相关，不能忽略 |
+| Arizona Peoria advanced packaging campus | 官方 2025 开工，70 亿美元总规划投资，生产预计 2028 年初开始；与 TSMC Arizona 合作 InFO/CoWoS | 不是 2026 收入主力，却是公司估值溢价和美国本土 AI/HPC 封装能力的核心期权 |
+| Automotive/ADAS/power advanced packaging | Q1 2026 Auto/Industrial 约 3.54 亿美元 | 非 AI 数据中心，但增长稳定、客户认证周期长、替换成本高，有助于平滑手机周期 |
+
+**本报告低优先级或跳过的业务：**
+
+| 业务/产品 | 跳过原因 |
+|---|---|
+| 普通 wirebond、传统 leadframe、SOIC/SSOP/TQFP 等成熟封装 | Mainstream Products 范畴，价格压力大、AI 数据中心相关性低 |
+| 普通消费电子 WLCSP/低端 wearables | 收入可观但增速和战略壁垒弱于 advanced SiP/HDFO/test |
+| 成熟功率分立器件封装 | 汽车/工业有需求，但与 AI 数据中心 BOM 映射弱；仅在汽车电动化部分保留 |
+| 低端内存/普通 NAND/DRAM 封测 | 不是 HBM3E/HBM4 高端 bottleneck 的主要价值来源 |
+
+## 4. 当前高增长或关键业务的收入贡献、增速、供需和定价权
+
+以下估算把公司披露收入拆分与行业调研中 AI 先进封装价值量、测试价值量、产能紧缺程度交叉验证。由于 AMKR 不披露按具体产品的收入，除公司披露项目外均为估算区间。
+
+| 关键业务 | 当前收入贡献 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 交叉验证 |
+|---|---:|---:|---|---|---|---|---|
+| Advanced Products 总盘 | Q1 2026 为 13.72 亿美元；最近四季约 58.64 亿美元 | Q1 +28.9% YoY；2025 全年 +7.4% | 高，但其中大量来自手机/通信 | 高，客户新品节奏和先进封装窗口明确 | 中高 | 中等。技术/质量/客户认证有壁垒，但客户和晶圆厂议价强 | 行业资料显示 OSAT 先进封装收入弹性高，但毛利受折旧和客户议价约束 |
+| Advanced SiP | 2025 约 30.80 亿美元，约占公司收入 45.9% | 2023-2025 基本稳定在 29.55-30.85 亿美元，2026 受 edge AI/mobile 复苏拉动 | 对 edge AI/手机 AI/部分网络系统重要；对数据中心直接性中等 | 高，手机旗舰周期确定 | 中 | 中等偏高，客户认证和良率壁垒强；但大客户集中压价 | 2025 advanced SiP 没有爆发式增长，说明 AI 数据中心不是现有 SiP 主导收入 |
+| FCBGA、2.5D/3D、HDFO、SWIFT/S-SWIFT | 当前估计年化 4-8 亿美元，其中直接 AI/HPC 约 2-5 亿美元 | 高双位数到翻倍，取决于客户项目导入 | 高。AI ASIC/GPU/网络 ASIC 需要高密度互连、热管理和大尺寸封装 | 很高，2026 AI 先进封装仍是瓶颈 | 高，但 TSMC CoWoS 主导最紧的环节 | 中等。若进入客户 BOM，替换成本高；若未进入，替代路线多 | 本地行业资料估计 2026 高端 AI 先进封装服务约 120-180 亿美元，OSAT 可接外溢但需认证 |
+| S-Connect embedded silicon bridge | 当前估计小于 1 亿美元年化，多为 early engagement/NRE/小批量 | 小基数高增长 | 高。用于 die-to-die 高带宽和 chiplet routing | 2027 前后更紧急 | 中高，取决于客户是否选择 bridge/fan-out 替代或补充 CoWoS | 中等。技术差异化强，但要与 EMIB、CoWoS-L、FOCoS-Bridge、Samsung I-Cube 竞争 | ECTC 2026 展示，官方强调带宽/功耗/集成密度；还未形成单独披露收入 |
+| Test services / SLT / wafer-level test | Q1 2026 约 1.85 亿美元；最近四季约 7.93 亿美元 | Q1 YoY 约 +17%，随总收入增长 | 中高。AI/HBM/HPC 会拉长测试时间和 burn-in | 高，测试不足可限制出货 | 中高 | 中等。设备来自 Advantest/Teradyne/Cohu 等，上游设备商溢价更强，Amkor 享受服务能力和地理布局 | 本地测试行业资料显示 AI/HBM/HPC ATE、probe、SLT 是 2026 交付约束 |
+| CPO / silicon photonics / Lightmatter 3D photonics | 当前估计小于 0.5 亿美元年化，可能多为开发/验证 | 小基数高增长 | 中长期高。与 AI 集群光 I/O、CPO、photonic interconnect 相关 | 2027-2028 更紧急，2026 偏验证 | 早期，非量产紧缺 | 中等偏高。如果封装方案被客户绑定，替换成本高；但路线未定 | Lightmatter 合作和 ECTC 展示是强信号，但不能当作量产收入 |
+| Arizona advanced packaging capacity | 2026 当前收入约 0；生产预计 2028 年初 | N/A | 高，服务 TSMC Arizona、Apple、NVIDIA/AI/HPC 美国供应链 | 中长期紧急，2028 前对当前交付帮助有限 | 未来潜在紧缺 | 若 TSMC/Apple/NVIDIA 项目落地，区域化溢价强；但折旧和爬坡风险高 | 官方 70 亿美元规划、>75 万平方英尺洁净室、CHIPS 最高 4.07 亿美元资金支持 |
+| Automotive/Industrial advanced packaging | Q1 2026 约 3.54 亿美元；最近四季约 13-14 亿美元 | Q1 约 +27% YoY | 对 AI 数据中心低，但对 ADAS、自动驾驶、功率电子重要 | 中高，汽车认证长 | 中 | 中等偏高，汽车客户切换成本高但价格通常逐年下行 | 10-K 提示汽车要求长设计周期、高可靠性、低缺陷率 |
+
+## 5. 一年后收入贡献三情景预测
+
+这里的一年后指 2027 年中附近的年化 run-rate，不包括 Arizona 2028 量产后可能带来的完整扩产收入。
+
+| 业务 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| 公司总收入 | 年化 75-80 亿美元，较最近四季 +6%-13%；毛利率 15%-16.5% | 年化 82-88 亿美元，+16%-24%；毛利率 16.5%-18% | 年化 90-100 亿美元，+27%-41%；毛利率 18%-21%，需要 mobile 强周期 + AI/HPC 外溢 + 测试紧缺同时发生 |
+| Advanced Products | 62-67 亿美元，+6%-14%；AI 重要性高，供需中高 | 70-76 亿美元，+19%-30%；S-SWIFT/HDFO/FCBGA 项目贡献提高 | 80-88 亿美元，+36%-50%；需要多个 AI ASIC/GPU/网络 ASIC 客户导入且良率顺利 |
+| Advanced SiP | 32-34 亿美元，+4%-10%；edge AI/mobile 稳定 | 35-38 亿美元，+14%-23%；高端 smartphone/edge AI 模组升级 | 40 亿美元以上，+30%+；需大客户 AI phone/edge device 物料升级显著 |
+| FCBGA/2.5D/HDFO/SWIFT/S-SWIFT | 6-10 亿美元年化；直接 AI/HPC 3-6 亿美元 | 10-16 亿美元；直接 AI/HPC 7-11 亿美元 | 18-25 亿美元；直接 AI/HPC 13-20 亿美元，需要 second-source 先进封装快速放量 |
+| S-Connect | 0.5-1.5 亿美元；客户验证/小批量 | 2-4 亿美元；1-2 个 AI/HPC 或网络客户设计导入 | 5-8 亿美元；成为某些 chiplet/AI ASIC 路线的关键桥接方案 |
+| Test services | 8.5-9.5 亿美元；复杂芯片测试时间上升 | 10-12 亿美元；AI/HBM/HPC SLT 占比提升 | 13-15 亿美元；测试成为交付瓶颈且 Amkor 获得高利用率 |
+| CPO/photonic packaging | 小于 1 亿美元，仍以工程验证为主 | 1-3 亿美元，Lightmatter/其他硅光子项目进入小批量 | 3-6 亿美元，CPO/optical I/O 进入首批 AI 集群或交换系统部署 |
+| Arizona | 收入仍接近 0，主要 capex 和建设里程碑 | 小规模 pre-production/qualification 收入 | 仍难在 2027 中形成大收入；极度乐观也主要体现为订单可见度和估值溢价 |
+| Auto/Industrial | 14-16 亿美元，+5%-15% | 16-19 亿美元，ADAS/电动化修复 | 20 亿美元以上，汽车周期强复苏叠加先进封装占比提升 |
+
+判断优先级：未来一年对股价最有弹性的不是 Mainstream，而是 Advanced Products 中是否能看到 Computing 占比、Test 占比、毛利率和客户项目名称同时上行。如果收入增长但毛利率仍停留在 14%-15%，说明高价值 AI/HPC 封装没有真正改变公司级利润结构。
+
+## 6. BOM、单位内容量与价格传导链
+
+### 6.1 AI accelerator/package BOM 中 Amkor 可触达部分
+
+高端 AI accelerator 模组/封装的价值量大致分布如下：
+
+| BOM 项 | 典型占比 | AMKR 可触达程度 | 说明 |
+|---|---:|---|---|
+| Logic die/GPU/ASIC die | 30%-50% | 低 | 由 NVIDIA/AMD/Broadcom/Marvell/ASIC 客户和晶圆厂主导 |
+| HBM stack | 25%-45% | 低到中 | HBM 由 SK hynix/Samsung/Micron 主导，Amkor可能参与部分 memory package/test，但不是 HBM 主价值池 |
+| Advanced package service | 8%-18% | 中到高 | 如果客户选择 Amkor 的 FCBGA、HDFO、S-SWIFT、S-Connect、2.5D/3D 服务，这是核心收入池 |
+| ABF/organic substrate/interposer/RDL/bridge | 5%-12% | 中 | 材料和基板商供货，Amkor通过采购/集成获得加工价值量 |
+| Probe/test/burn-in/SLT | 3%-8% | 中到高 | Amkor test services 受益，但 Advantest/Teradyne/FormFactor 等设备/探针卡商溢价更强 |
+| Thermal lid/TIM/cold plate attach/机械件 | 2%-6% | 低到中 | Amkor可参与部分封装级热/机械集成，但系统级液冷不归它主导 |
+| Yield loss/rework/logistics/reserve | 3%-10% | 间接 | 新技术爬坡良率影响 Amkor 毛利率和客户选择 |
+
+### 6.2 每 GPU、每 rack、每 MW、每 optical port 内容量
+
+以下为 AMKR 对 AI 数据中心硬件的“封装测试服务收入”估算，不是芯片 ASP，也不是系统 BOM。由于 AMKR 没有披露客户项目和 AI/HPC 单位价格，区间较宽。
+
+| 单位 | 当前/基准内容量 | 乐观内容量 | 极度乐观内容量 | 解释 |
+|---|---:|---:|---:|---|
+| 每颗高端 AI GPU/ASIC | 50-500 美元 | 500-1,500 美元 | 1,500-3,000 美元 | 当前 NVIDIA 主流 CoWoS 仍由 TSMC 主导时 AMKR 内容量低；若客户 ASIC/second-source 采用 Amkor HDFO/S-SWIFT/S-Connect/test，内容量显著提升 |
+| 每 72 GPU rack | 0.004-0.036 百万美元 | 0.036-0.108 百万美元 | 0.108-0.216 百万美元 | 用 72 颗 accelerator 粗算，不含 switch/NIC/optics 额外封装 |
+| 每 MW AI IT load | 0.07-0.90 百万美元 | 0.6-2.7 百万美元 | 1.8-5.4 百万美元 | 假设 1MW 对应约 17-25 个 40-60kW rack；如果每 rack GPU 数/功耗改变，线性调整 |
+| 每 800G/1.6T optical port | 0-5 美元 | 5-30 美元 | 30-80 美元 | 当前主要收入在 pluggable optics/光模块链，不一定经过 Amkor；CPO/photonic interposer 若进入量产，Amkor可触达封装测试价值 |
+| 每个 CPO/photonic engine package | 50-300 美元 | 300-1,000 美元 | 1,000-3,000 美元 | 取决于是否包含 3D photonics、organic substrate、大面积封装、测试和可靠性验证 |
+
+价格传导链：AI 资本开支 -> GPU/ASIC/网络芯片订单 -> 晶圆厂先进节点产能 -> HBM 与 CoWoS/2.5D/基板/RDL/测试约束 -> 客户在 TSMC/ASE/Amkor/Samsung/Intel 等平台间做 design-in -> Amkor 按封装/测试工艺、材料 pass-through、良率、设备利用率定价。Amkor 的定价权弱于唯一性设备/材料，也弱于 TSMC 主平台，但强于普通 wirebond OSAT。
+
+### 6.3 当前产能、采纳和认证阶段
+
+| 业务 | 当前产能能力（收入计） | 供应链采纳 | 认证阶段 |
+|---|---:|---|---|
+| Advanced Products 总盘 | 最近四季约 58.64 亿美元收入，2026 年可支撑 60 亿美元以上年化 | 已被头部 smartphone、communications、computing、auto 客户广泛采纳 | 量产成熟 |
+| Advanced SiP | 2025 约 30.80 亿美元收入 | 大客户量产，主要在手机/模块/网络系统 | 量产成熟 |
+| FCBGA/2.5D/HDFO/S-SWIFT/S-Connect | 当前可见收入估计 4-8 亿美元年化；直接 AI/HPC 2-5 亿美元 | S-SWIFT/S-Connect 已进入技术展示和客户讨论，部分 FCBGA/2.5D 已有量产能力 | FCBGA/部分2.5D量产；S-SWIFT/S-Connect处于客户导入/验证到小批量之间 |
+| Test services | 最近四季约 7.93 亿美元 | 与封装 co-located，客户采纳度高 | 量产成熟；高端 AI/HPC SLT 需按项目认证 |
+| CPO/photonic packaging | 当前小于 0.5 亿美元年化估计 | Lightmatter 合作是明确项目线索，ECTC 展示 CPO | 设计验证/可靠性验证/早期客户验证 |
+| Arizona | 当前无量产收入；规划投资 70 亿美元，2028 年初生产 | TSMC 合作 MOU；官方/行业信息显示 Apple、NVIDIA 等生态关注 | 建设期，客户/工艺 qualification 预计 2026-2028 推进 |
+
+客户认证通常需要数月以上，汽车和高可靠性产品更长。10-K 也强调客户通常要求严格且漫长的 qualification，新封装技术早期良率低于成熟技术；这会限制 AI/HPC 新产品的一年内收入斜率。
+
+## 7. 一年后产能、采纳和认证三情景
+
+| 业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| Advanced Products | 年化产能/收入 62-67 亿美元；客户采纳稳定；毛利率 15%-16.5% | 70-76 亿美元；Computing 和 auto 采纳提高；毛利率 16.5%-18% | 80 亿美元以上；多个高端 AI/HPC design-in 同时放量；毛利率 18%+ |
+| FCBGA/2.5D/HDFO/S-SWIFT/S-Connect | 6-10 亿美元；1-2 个新增客户验证；S-Connect/S-SWIFT 小批量 | 10-16 亿美元；若客户需要 CoWoS 之外 second source，Amkor 获得中等批量 | 18-25 亿美元；Amkor 成为若干 AI ASIC/网络 ASIC 关键后段平台 |
+| Test services | 8.5-9.5 亿美元；AI/HPC测试占比提升但不披露 | 10-12 亿美元；SLT/burn-in 成为客户交付约束 | 13-15 亿美元；测试产能紧缺且 ASP 上行 |
+| CPO/photonic | 小于 1 亿美元；Lightmatter 等项目继续验证 | 1-3 亿美元；至少一个客户进入小批量量产 | 3-6 亿美元；CPO/光 I/O 项目进入首批 AI 集群部署 |
+| Arizona | 建设/设备导入/客户认证阶段，收入贡献仍低 | 工艺和客户 qualification 进展公开化，形成 2028 订单可见度 | 若 TSMC/Apple/NVIDIA/AMD 项目明确锁定，市场按 2028+ 收入提前定价，但 2027 收入仍有限 |
+
+## 8. 基于订单积压和供给的未来一年增速预测
+
+### 8.1 可验证订单线索
+
+AMKR 的硬订单可见度弱于设备公司：
+
+- 10-K 明确：公司封装测试业务通常没有重大 backlog，季度收入主要依赖当季客户需求。
+- 客户通常不承诺未来重大采购量，forecast 非绑定，订单可减少、取消、延迟。
+- Q1 2026 前十大客户占 68%，2025 年前十大客户占 72%，大客户新品和供应链节奏对收入影响极大。
+- 2025 年 Apple 占 29.8%，Qualcomm 占 11.1%，communications/mobile 仍是最大收入池。
+
+因此，需要用以下替代指标推断订单强度：
+
+| 指标 | 当前信号 | 含义 |
+|---|---|---|
+| Q2 2026 指引收入中点 18.0 亿美元 | 较 Q2 2025 +19% | 订单/forecast 至少支撑 H1 强复苏 |
+| Q2 2026 毛利率中点 15.0% | 较 Q2 2025 +300bp | 产能利用率和 mix 好转，但未达到高端封装稀缺时可能的 18%+ |
+| 2026 capex 25-30 亿美元 | 远高于 2025 约 7.9 亿美元 | 管理层对长期客户需求和 Arizona 项目有较强信心；短期 FCF 压力大 |
+| ECTC 2026 客户/生态讨论 | AMD、Apple、TSMC、NVIDIA 等生态被官方文章提及 | 说明技术导入讨论真实存在，但不是订单金额披露 |
+| Arizona 2028 生产预期 | 2026-2027 对收入贡献小 | 市场不应把 2028 产能直接算入未来一年收入 |
+
+### 8.2 未来一年公司增速三情景
+
+| 情景 | 收入增速 | 毛利率 | 关键假设 | 取消/延迟风险 |
+|---|---:|---:|---|---|
+| 基准 | +6%-13%，年化 75-80 亿美元 | 15%-16.5% | Q2 指引兑现；communications 新品周期正常；Computing 稳定；Advanced Products 继续高个位数到低双位数增长；Mainstream 持平 | 中。消费/手机客户可延迟；AI/HPC 未单独披露，可能低于市场想象 |
+| 乐观 | +16%-24%，年化 82-88 亿美元 | 16.5%-18% | AI/HPC/网络 ASIC 客户导入部分 HDFO/S-SWIFT/S-Connect/test；Advanced Products mix 上升；Q3/Q4 smartphone 强季节性 | 中低。先进封装设计导入后取消率低，但 ramp 可延期 |
+| 极度乐观 | +27%-41%，年化 90-100 亿美元 | 18%-21% | CoWoS/2.5D 供给持续紧张，客户明显采用 Amkor second source；test/SLT紧缺；CPO/photonic 小批量；mobile 同时强复苏 | 中。前提较多，最大风险是客户仍选择 TSMC/ASE/Intel/Samsung 主平台或项目认证推迟 |
+
+本报告倾向基准到乐观之间：Q1/Q2 2026 已显示复苏，AI 先进封装行业约束也真实存在；但公司没有披露 AI backlog，Arizona 尚未量产，当前毛利率仍只是 14%-15% 区间，尚未验证极度紧缺定价权。
+
+## 9. 竞争格局、技术主流性、风险和替代方案
+
+### 9.1 主要竞争对手
+
+| 领域 | 竞争对手 | AMKR 相对位置 |
+|---|---|---|
+| OSAT 综合封测 | ASE/SPIL、JCET、Tongfu、Huatian、Powertech、ChipMOS | AMKR 是全球头部，强在美资总部、全球 footprint、advanced SiP、汽车/通信客户关系；规模和生态上 ASE 仍更强 |
+| 先进封装平台 | TSMC CoWoS/InFO/SoIC、Intel EMIB/Foveros、Samsung I-Cube/H-Cube/X-Cube | 这些是高端 AI 先进封装最强平台。AMKR 更像 second source、turnkey OSAT、区域化 back-end partner |
+| Fan-out/bridge/RDL | ASE FOCoS、TSMC CoWoS-L/InFO、Intel EMIB、Samsung、JCET/Tongfu、Amkor S-SWIFT/S-Connect | AMKR 的 S-SWIFT/S-Connect 有技术亮点，但是否主流取决于客户 design-in |
+| 高端测试 | Advantest/Teradyne/Cohu/FormFactor/Technoprobe/Aehr/Chroma 等设备和服务生态 | Amkor是服务执行方和 co-located turnkey provider，设备商往往拥有更高毛利和更强上游定价权 |
+| 硅光子/CPO 封装 | TSMC、ASE、Intel、Broadcom/Marvell 生态、Lightmatter 等客户平台 | Amkor 与 Lightmatter 合作有早期优势，但 CPO 路线仍未大规模确定 |
+
+### 9.2 AMKR 新技术是不是主流
+
+S-SWIFT、S-Connect、HDFO、CPO/photonic packaging 都属于“有机会成为主流的一部分”，但不能简单说它们一定会替代 CoWoS。2026-2027 AI GPU/HBM 主线仍是高层 ABF/organic substrate + silicon interposer/CoWoS 类 2.5D + HBM3E/早期 HBM4 + 高功率测试。Amkor 的机会来自三个方向：
+
+1. 主平台产能不足带来的 second-source / overflow。
+2. 客户 custom ASIC、网络 ASIC、edge AI、CPO 项目选择更灵活的 fan-out/bridge/organic RDL 路线。
+3. 美国本土 TSMC fab 后段配套需要区域化先进封装测试能力。
+
+### 9.3 替代方案和客户替换成本
+
+| 风险/替代方案 | 对 AMKR 的影响 | 客户替换成本 |
+|---|---|---|
+| TSMC CoWoS/InFO/SoIC 继续主导 AI GPU 封装 | AMKR AI 数据中心直接内容量低于市场预期 | 已导入 TSMC 平台后切换成本极高 |
+| ASE/SPIL 承接更多 OSAT advanced packaging 外溢 | AMKR 争取订单难度增加 | 中到高，取决于客户认证和地理需求 |
+| Intel EMIB/Foveros 或 Samsung I-Cube 获得客户 | Amkor 的 bridge/fan-out 机会被分流 | 高，平台选择通常在设计早期确定 |
+| Glass substrate、panel-level、hybrid bonding 进展改变封装路线 | AMKR 需要持续 capex 和研发跟进 | 中。新路线早期尚未锁死，但量产后切换成本高 |
+| 客户自行/晶圆厂一体化 back-end | OSAT 可获得的毛利池被压缩 | 高，但大客户有足够议价能力推动多供应商 |
+| 大客户集中和消费周期 | Apple/Qualcomm/communications 拉货变化会掩盖 AI 进展 | 客户对供应商替换成本高，但对订单节奏拥有主导权 |
+| Arizona 爬坡延迟/成本超支 | 2026-2027 FCF 和折旧压力上升，估值受损 | 客户会等待认证，不会为未爬坡产能支付高价 |
+
+结论：AMKR 的技术路线不是“唯一主流”，但在先进封装需求持续外溢、美国供应链本土化、AI/HPC 封装测试复杂度上升的环境下，它具备实际受益通道。真正需要持续验证的是：Computing 占比是否从约 20% 上升、Test services 是否超过 11%-12%、毛利率是否稳定突破 16%-18%、以及 S-SWIFT/S-Connect/CPO/Arizona 是否出现明确客户量产项目。
+
+## 10. 跟踪指标清单
+
+| 指标 | 乐观信号 | 负面信号 |
+|---|---|---|
+| Computing 收入占比 | 连续多个季度超过 23%-25%，且管理层明确提 AI/HPC 客户 | 停留 19%-22%，增长主要来自手机 |
+| Test services 占比 | 从 11%-12% 抬升到 13%-15%，毛利率同步上升 | 占比不升或毛利率被折旧压制 |
+| 毛利率 | 2026 下半年稳定 16%-18% | 仍在 14%-15%，说明高端封装溢价弱 |
+| capex 兑现 | 25-30 亿美元 capex 有政府资金/客户承诺/里程碑支撑 | capex 超支、项目推迟、现金流恶化 |
+| S-SWIFT/S-Connect | 客户量产项目、design win、具体 AI/HPC/网络 ASIC 采用 | 只停留在会议展示和技术营销 |
+| CPO/photonic | Lightmatter 或其他客户进入小批量/量产 | 仍处验证阶段，无收入披露 |
+| 客户集中 | Apple/Qualcomm 占比下降但收入增长 | 收入增长仍主要由 Apple 新品周期拉动 |
+| 订单可见度 | 管理层给出更长期客户项目/产能锁定描述 | 继续强调需求不确定、客户 forecast 弱 |
+
+## 11. 资料来源
+
+### 公司公告、SEC 与市场数据
+
+- Amkor Q1 2026 财报新闻稿，2026-04-27：`https://www.businesswire.com/news/home/20260427274345/en/Amkor-Technology-Reports-Financial-Results-for-the-First-Quarter-2026`
+- Amkor Q4/FY2025 财报新闻稿，2026-02-09：`https://www.businesswire.com/news/home/20260209569058/en/Amkor-Technology-Reports-Financial-Results-for-the-Fourth-Quarter-and-Full-Year-2025`
+- Amkor Q3 2025 财报及 CEO 继任，2025-10-27：`https://www.businesswire.com/news/home/20251027632560/en/Amkor-Technology-Reports-Financial-Results-for-the-Third-Quarter-2025-and-Announces-CEO-Succession-Plan`
+- Amkor Q2 2025 财报，2025-07-28：`https://www.businesswire.com/news/home/20250728133188/en/Amkor-Technology-Reports-Financial-Results-for-the-Second-Quarter-2025`
+- Amkor 2025 Form 10-K：`https://www.sec.gov/Archives/edgar/data/1047127/000104712726000014/amkr-20251231.htm`
+- Amkor 与 TSMC Arizona 先进封装合作，2024-10-03：`https://amkor.com/blog/amkor-and-tsmc-to-expand-partnership-and-collaborate-on-advanced-packaging-in-arizona/`
+- Amkor CHIPS Act 资金奖励，2024-12-20：`https://amkor.com/blog/biden-harris-administration-announces-chips-incentives-award-with-amkor-technology-to-bring-end-to-end-chip-production-to-the-u-s/`
+- Amkor Arizona 新址，2025-08-28：`https://amkor.com/blog/amkor-announces-new-site-for-u-s-semiconductor-facility/`
+- Amkor Arizona 开工及 70 亿美元规划，2025-10-06：`https://amkor.com/blog/amkor-semiconductor-packaging-facility-peoria-arizona/`
+- Amkor 2026 Investor Day，2026-05-29：`https://amkor.com/blog/amkor-2026-investor-day-nasdaq/`
+- Amkor ECTC 2026，2026-06-05：`https://amkor.com/blog/amkor-ectc-2026-advanced-packaging/`
+- Amkor S-SWIFT 技术文章，2024-09-30：`https://amkor.com/blog/revolutionizing-ic-packaging-with-s-swift-technology/`
+- Lightmatter 与 Amkor 3D photonics package 合作：`https://amkor.com/company-news/lightmatter-and-amkor-partner-to-build-worlds-largest-3d-photonics-package/`
+- AMKR 市场数据快照：2026-06-11 web finance；Forward P/E 参考 Yahoo Finance key statistics 2026-06-11 搜索快照。
+
+### 项目内行业调研资料
+
+- `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_封装基板、中介层与RDL_2026-06-10.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`
+- `行业调研/晶圆制造_设备_材料_测试/行业调研_探针卡、ATE与系统级测试_2026-06-11.md`
+- `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md`
+- `行业调研/产业背景/顶级会议信息/conference_update_ectc_2026_2026-06-11.md`
+

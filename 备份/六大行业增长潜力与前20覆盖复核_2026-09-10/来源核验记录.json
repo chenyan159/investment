@@ -1,0 +1,525 @@
+{
+  "checked_at": "2026-09-10T01:06:46.944181-07:00",
+  "market_date": "2026-09-09",
+  "scenario_company_count": 56,
+  "same_hash_count": 55,
+  "verified_matrix_cells": 448,
+  "supplemented_universe_count": 8,
+  "industry_series_count": 24,
+  "industry_report_count": 15,
+  "inputs": [
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MPWR_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "101ea008b2adabeb009837c9e2ad8fc2e3984fb0dbb287c5f554bc710edda4c5"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\VICR_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "b21e31e48477b47824611cdd8958821dea4328a3ff07ab0e6bb5254c0527dcb3"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\NVTS_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "e8510b2433b1ed1bf6e5cd4f76581e840a9e8ff5fc4463bb14ec12406b32db96"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\IFNNY_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "567bce7a31085559103a5ca15d0f5ad7e56be5894685053a30141c681c6ead21"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ON_经营情景市场状态投资决策_2026-09-08.md",
+      "sha256": "39e67e099a914d94d75a5e440c1d9389c7cfd6df59f6e0663bf4003a947e5dc2"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\STM_经营情景市场状态投资决策_2026-09-08.md",
+      "sha256": "b863f9ecce0880290ec0eb6ef7026db4dbf7175784eb8ba0eec02ab348ca7465"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\LFUS_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "51a104c5f55f9f3d93b3edd823579a25154db30decd18d4d9c4ca69f6c3195d6"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\WOLF_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "a3c1747425e40dad87685cc9157acbade6878d3aa810a159bc3a69329fcab6bf"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ETN_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "37e1abee8dd01b9d896e05c9b5d53dad92ebb5abed8463c8f337228e23d875a4"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\NVT_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "2460d1cdd04b7965b039ef5e78dc4dbc8df28fc37100b9137f1e9b19de629f00"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\HTHIY_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "e68b1023ab1d821e6087996a72ee20292185d7c44027e6985233813ab64ba70e"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\EME_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "ba4c58642d12a13e6f185dbed97563ad23d1f1ee8389d1fb6e5ae98cb27e9d47"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\GEV_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "b6a06aa8ab34d9caf39bc38c3ddd69e389882305e381e0db374088c123053dfd"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\PWR_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "de7348002cecba412e5c9f641f85284d80fd0c545892a4cd61428ed58d568934"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\HUBB_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "145ba6f516eddfd245a82472ad1037a408137a75bc7b44b141545cda0f254f7c"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\GNRC_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "442c76a886946a603714e1ec88fdaae84894fd6d237a481cc3d8c95448e248a0"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\CMI_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "0918c713b94db9d8adf9752c36d703cec5c5317a365705ea6cee58c7d1232f2a"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\CAT_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "2ee2fab818b7d73ca2e4d08694d7444b8c9fd4e5d8a74546af580de2ccc5616a"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\BE_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "80ed504c8ac26b0ed43968628b9a75a0f055307a2a2f16e8d3fb8e08921d9ad2"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\VRT_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "fb63e63a8f5353d91294e19a37eaaf9d013a1f868f97827b52f5b5c5b7f71243"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MOD_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "d39e8849dbe51078118bb4153363f0f939a39c47e07fed0bff4844cd7d5e2e41"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AAON_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "c4d379a39280f761e21901a831f2ffacc59dd0ca0479648d846116280b3492d1"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\TT_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "993a05cfb0004dcf91f286e505350a3b3c6579ddd75e61c319acc7922b2a09c4"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\JCI_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "8cb7ccda5d400c73557e5dad88bd74735290e9dab21f8d8e24d034667ba524bd"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ECL_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "c7a9c3268670538c084f7b0c0377c7675c1c4c5e36765239e5beebc52929024b"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\DOV_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "c6306fe22ef140ac94260824df6198fce23c09eec74983c8be442a09b985980e"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\FLEX_经营情景市场状态投资决策_2026-09-08.md",
+      "sha256": "3079bdd8c1371890e70f363e019ca6d4277844ff6ba3ea58c31dda01373cdf4c"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\JBL_经营情景市场状态投资决策_2026-09-08.md",
+      "sha256": "718d8198f43fd89c74f27bae573787a9563bb1c269ea0fb6caa0174cef65e08a"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ENTG_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "a25b4efd28421926d069b3aa6ea027c272f09344d381cecfbc06aeca947d1405"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AJNMY_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "89d4b82b9d9e3cc7febbaf8e25461aff4148295418c9fa22b0ce2fa2d24dd66f"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\HOCPY_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "5be61230c5b74e9609792a663928541484577db1ef32208c20b2bbe9e1942194"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\SHECY_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "c9ebb0fa5dc5285675dc58fd719832c87062a97ca5aebbadbe1961231557bbb0"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\Q_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "32e09d1716da6ff52f72559eafc43d728e048ebe9b1ffd7eaad551f96bd7ddf0"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AXTI_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "3f97a52a6a362ef99b9668a7d180e9e136bd1cfe54d37a51433e316e4a97b0eb"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\LIN_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "2561ecdbb70c1588581f91d59c2412145e34016836601c0ce140415c3862a070"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ASGLY_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "c4f25d1dc1bfe8c23144d40330e8421f5de7bdb16b4285412b7be57a7630ae54"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ROG_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "48437d91bb4af4d9f97d8ccc2c9744d7d90036c93d49a48cea43c3176663226b"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\SMTOY_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "f6bdd6089078757fe066881fbbc5326e664aabd073334812f803ff5d6a8a8f7d"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\COHR_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "a049212e96e06a9577ab9e9ccfaf1affd58e1fba2fcd2bea9691fb6a95cd44a4"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\LITE_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "d9f70343e0fad7ce5e58f61a636c2e3cb97f576ba480aee0ee96565af1068323"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\CRDO_经营情景市场状态投资决策_2026-09-08.md",
+      "sha256": "8601c72ed3c682cec92ea6c40b16aef47a39c39a2bfa86e2dc1ac4d7f061b64c"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ANET_经营情景市场状态投资决策_2026-09-08.md",
+      "sha256": "6ad4b6ae6c0e03f5fadc5ea9c47d8760864a4c680410412bf7e9425062d74bae"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\AVGO_经营情景市场状态投资决策_2026-09-08.md",
+      "sha256": "40706b8fe3b1ed9b8656165878db012c8033d41a53e38ec1334cbcfe4d767508"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\APH_经营情景市场状态投资决策_2026-09-08.md",
+      "sha256": "4439f1398a15d6cf194d02d221c7bb2ee0c1cdea177dcbc58abcb2b2613817d3"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\TEL_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "2cad18182d8b0ab828a9fb2f7c88187e1ff8d176655f2eedefb1984a6c10d127"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\GLW_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "5d0e253bdc647d13e40a4536f1dce1697aef8d98df433f7e13a57a59698b8faa"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ALAB_经营情景市场状态投资决策_2026-09-08.md",
+      "sha256": "b4a85367271b0ce2da322da90eb33e6b82545419e91a024bef45112fd5d1c614"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\MTSI_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "d526ca9d8011d0b1a75f5cea37b23abe2a630ae2233991cbadfb80bbf69589b3"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\RKLB_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "85be99dc004033f2f351c6c4e59afe914e3c56dbb413f8f17f9c372c0f761029"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\SPCX_经营情景市场状态投资决策_2026-09-08.md",
+      "sha256": "7bfc2bfc287a9cad126575b00ca25d03530d38013e68b4e6ac800ba3845cbb87"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\TSLA_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "d01d774b8a582882e2efbff999e9e630fd330fb29b28208fbecb90b0cae4fe12"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\TER_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "6d13a88837cfa75cac5fb6b43b73ff0cfe60ba64b0845ee15f207697e217eea9"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\ABBNY_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "ed2551e8ff3282ae6c0f7b2aa86613fd710bf1837d3e984b94bfaa0646164753"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\BWXT_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "6708a7e9a0a0e381759bc42d3704e2ec91fd6854ec4f9e521bea006f5cced6b3"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\SMR_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "1cb61713d18c1c4852ac988f796446f515e76246fe648b7e5ebadabe6ded89f1"
+    },
+    {
+      "file": "D:\\drive\\Investment\\分析报告\\公司情景投资决策\\结果\\OKLO_经营情景市场状态投资决策_2026-09-09.md",
+      "sha256": "f5547cc87f5de06b34b648e7b81aa6a0007c24db14d35da14b113952f88f0acc"
+    }
+  ],
+  "industry_inputs": [
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_中压直流、800VDC与固态变压器_2026-09-06.md",
+      "sha256": "050ca14dbfac1b5008dee30e277f9ead16ac814ea48af4494ffc63426255092c"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_功率半导体与高压保护器件_2026-09-06.md",
+      "sha256": "82c2981c4e68bfe2b09da4c0787919bc667f640850f500ee26a148edb519f129"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心开关设备与变压器_2026-09-06.md",
+      "sha256": "28ffa37b0aa89e469596c7bfd3892b57f1060261bdf4521bea284dcb77945856"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心直液冷系统_2026-09-06.md",
+      "sha256": "cc70a733b91177fcaa0bd66f8286793483ddad21c5804c11f5ee26292ab26374"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_数据中心自备发电与微电网_2026-09-06.md",
+      "sha256": "0be01c9f1aed1ea1644c6ab0ad3ba08c9de49ca68c2c4da54cf4214a018e03a0"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI园区电力_机电_冷却\\行业调研_液冷小组件与流体控制_2026-09-06.md",
+      "sha256": "70718cebd3410beb3712f8706bde1fb2244a1a756475440459d69e350339e011"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI服务器_存储_芯片\\行业调研_封装基板、中介层与RDL_2026-09-06.md",
+      "sha256": "2c7e45aae20b5c43530f8912615ff5c0e72e9f27e346a8983b2a2db212716f53"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_800G_1.6T可插拔光模块_2026-09-06.md",
+      "sha256": "1bba349dbff25aa27bb3cabfe712b0ac87969c53a7fbdf2c348790523075836d"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_AEC、DAC与高速铜缆_2026-09-06.md",
+      "sha256": "32d00ff4d7ee0fd59a9045ce6363530976380b48538b76b02c01c9e4e135cfdc"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_CPO_NPO与交换侧光引擎_2026-09-06.md",
+      "sha256": "5ef77f7b34083072ef7c93092be0b7889d15e60db8966bb6979c359d29fc072a"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\AI网络_光互联_铜互联\\行业调研_激光器、EML与光器件_2026-09-06.md",
+      "sha256": "dbdb290e525dde41d0b9f3dcbb49ce3c142ee2a0d3d8ad6b49c8b0c646fe2a7f"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\商业航天_火箭_卫星\\行业调研_商业火箭与商业航天_2026-09-06.md",
+      "sha256": "3e770144eb302d30c135b2e7b38ac52d36b689d3b9675a3abbf75c04cd965cec"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_玻璃基板、TGV与玻璃检测_2026-09-06.md",
+      "sha256": "3ae564c0d8578e5b8600b84484ec79eab8ed99a1ed7b893c7397cb2c36201ff8"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\晶圆制造_设备_材料_测试\\行业调研_硅片、光刻胶与前道材料_2026-09-06.md",
+      "sha256": "28785bcd0a7f061ccb0e82e13a104e93a77fa11cf3cd1fd16e496e9d0b4fed0f"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\行业调研\\机器人_硬件_零部件\\行业调研_机器人硬件_2026-09-06.md",
+      "sha256": "606fa74f1f138b7a47f27b0e49c6e43ebbc949199c38df4b9297e56d115e40a8"
+    }
+  ],
+  "company_inputs": [
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\FLEX_Flex_Ltd_公司调研_2026-09-07.md",
+      "sha256": "b643cc6fd9aef62e1f953438330e5e741beb731f1ad14609dc59308fc9cfb8e3"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\AI服务器_存储_EMS\\JBL_Jabil_Inc_公司调研_2026-09-07.md",
+      "sha256": "5e20d1f345006307e5dd4fdaab31031477d68313c8d2b7da958f7e0d8a7807e1"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\ANET_Arista_Networks_公司调研_2026-09-07.md",
+      "sha256": "48f9e5af71b8f8dfa1ac7c74f4da036d0866ac6d2331e3e29146218f9de7e044"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\APH_Amphenol_安费诺_公司调研_2026-09-07.md",
+      "sha256": "bfa29602b2b224c4036373a37acf3350b959429a83a8acc21b3faa421afc2ddf"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\COHR_Coherent_公司调研_2026-09-07.md",
+      "sha256": "6c1b40a2cd6b4cabef1cb2cdb8c07f8b4a931b7443a9cd5b16de2f0853401b0c"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\CRDO_Credo_Technology_Group_公司调研_2026-09-07.md",
+      "sha256": "3a07eee72d88327a762e7c4de93b0a7f8587c9fa45f6471b5fac829a5b6c0fb3"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\GLW_Corning_公司调研_2026-09-07.md",
+      "sha256": "b43b9a407dd24056ea6842347ce2857702f330d7404101c5c6b31a91f8744471"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\LITE_Lumentum_公司调研_2026-09-07.md",
+      "sha256": "d599f00158a296d7cba102826235209243d93c9570b329255dc52cbd4315e138"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\MTSI_MACOM_Technology_Solutions_公司调研_2026-09-07.md",
+      "sha256": "1963b4580c817bddfefd10fd6bc1fda6281b155f6ebfd007a620781974681888"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\AI网络_光互联_连接器\\TEL_TE_Connectivity_公司调研_2026-09-07.md",
+      "sha256": "18a1c5df5295b0084a4fb06ca8346fe0b3a3c4facadc313d58299e755b735ec5"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\ALAB_AsteraLabs_公司调研_2026-09-07.md",
+      "sha256": "72ca1cfa29e8ee4bf8ec12e83a424599da83fc8c397971a6d884c3c1812cdeb9"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\AVGO_Broadcom_公司调研_2026-09-07.md",
+      "sha256": "8372897d84df354a965824472470408ba347b42233795e20b1dda02f46f951e7"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\ON_onsemi_公司调研_2026-09-07.md",
+      "sha256": "2b08c445f5e7b069904c6b95cf7cb999fa9aebfc179879d5b73cee0fd63df4ca"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\AI计算芯片_EDA_IP_custom_ASIC\\STM_STMicroelectronics_公司调研_2026-09-07.md",
+      "sha256": "6094fba4982de2efb615de4f7fee3754496f145aac4938d6545e9eff43ecde40"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\AJNMY_味之素_Ajinomoto_公司调研_2026-09-07.md",
+      "sha256": "b91ff323d9c2da8e18e8f06d35b9143b18c69169d535bdba27bdf0c1bada6b26"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\ASGLY_AGC_Inc_公司调研_2026-09-07.md",
+      "sha256": "fae05c4429fb4ec48c93b5ab4c21a5499510accd5b430f310948aed439e90f33"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\AXTI_AXT_Inc_公司调研_2026-09-07.md",
+      "sha256": "77eaaf566bcabcd3dfdf59fe65eebb434bc416c0865ed26a7083f2b79b9876d8"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\ECL_Ecolab_公司调研_2026-09-07.md",
+      "sha256": "119f50bdd4104d9dab8b663c3fb065baaa1b91c554147ae48ef58e6e3d69d763"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\ENTG_Entegris_公司调研_2026-09-07.md",
+      "sha256": "3d008f497c44a3bd4325ea2e20b43b932da426bb979375d43364909522bd24b8"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\HOCPY_HOYA_Corporation_公司调研_2026-09-07.md",
+      "sha256": "e55e29b1846911945f66f99cd1710b5f0bd3003a2ba1f91e071b9ebe88e43b60"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\LIN_Linde_plc_公司调研_2026-09-07.md",
+      "sha256": "232e5996a1fd2564785afa757938a34d05f69a14303b11e0045720e0c763a776"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\Q_Qnity_Electronics_公司调研_2026-09-07.md",
+      "sha256": "a7f2004d3f6bd535bb22e1537068f34ad77582e55ad55387435166c873f19193"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\ROG_Rogers_Corporation_公司调研_2026-09-07.md",
+      "sha256": "c2633864078295505719c2d13f586aaad28c74bbcc517757a09bdd77d57214d0"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\SHECY_Shin-Etsu_Chemical_信越化学_公司调研_2026-09-07.md",
+      "sha256": "712d02555c58c51a92b457ab8b0ded57f8ec15f14efdb3df56b935ddd3da50d2"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\半导体材料_化学品_基板\\SMTOY_住友电工_Sumitomo_Electric_Industries_公司调研_2026-09-07.md",
+      "sha256": "89a19e72f2c3c61892ca4ea5f0073d13f83077dd4536eb68b9601b5d052e461a"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\封测_检测_计量_光罩\\TER_Teradyne_公司调研_2026-09-07.md",
+      "sha256": "3fd79da6861b82d57637247c44b5b2f2f4d2941abe617e49c0ea1113b7ed28c3"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\AAON_AAON_公司调研_2026-09-07.md",
+      "sha256": "616c6a03dfe38a98dad67558711dd2218784bf6360708065fec90f2dd1605800"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\CAT_Caterpillar_Inc_公司调研_2026-09-07.md",
+      "sha256": "89e57ea7465bbdc3df23a524eff56271ff6592bcf3419d0cfda2e2d5b082d935"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\DOV_Dover_Corporation_公司调研_2026-09-07.md",
+      "sha256": "8aaba535259005b914b1ef76e406887125abb7a3f11540872c6ac918cb4d1751"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\EME_EMCOR_Group_公司调研_2026-09-07.md",
+      "sha256": "47e8eb1748a7a1a4f6972f8b1083a0aee0a40c237edebc20aad68c8b3cbff093"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\JCI_Johnson_Controls_公司调研_2026-09-07.md",
+      "sha256": "dc1652b0739c3c3e7b44669bac3bf0f63c65b8202308fff529bfe14af799336f"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\MOD_Modine_Manufacturing_公司调研_2026-09-07.md",
+      "sha256": "03dbb4d1c7e4eb7c093e8bc5faa8b0c08f346d7514449beee2f223b2119d78c5"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\RKLB_Rocket_Lab_公司调研_2026-09-07.md",
+      "sha256": "047766ff2f6245a713360eae6cf384c3f50f61ebbaff2f1a4b10f6cde6d0594f"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\SPCX_SpaceX_公司调研_2026-09-07.md",
+      "sha256": "5954db3707ed114580aa53858f94c182075098693cf544bedfb17e9af25cddde"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\TSLA_Tesla_公司调研_2026-09-07.md",
+      "sha256": "ecf126edeae7519638b6675bbe68bddbebc54d4a13dec97c79db7428629f953c"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\TT_Trane_Technologies_公司调研_2026-09-07.md",
+      "sha256": "fb99002287f42c81763b5f0b52d5af53a399836db37d07bb1b35fe40425c4380"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\机电_冷却_工程_水处理_边缘工业AI\\VRT_Vertiv_公司调研_2026-09-07.md",
+      "sha256": "88ed91f20f95b42a0a7bf5758e627fd73199c89a0f9f00a72801714a06da3181"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\BE_Bloom_Energy_公司调研_2026-09-07.md",
+      "sha256": "4aa24c235263dc70df6222dca02bc199a7e0b15df0d055094ab877b2553a7462"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\BWXT_BWX_Technologies_公司调研_2026-09-07.md",
+      "sha256": "f165988803753b13d366caf86aa40441bf71f0bc72383df4bf1b0f442de286c5"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\CMI_Cummins_Inc_公司调研_2026-09-07.md",
+      "sha256": "ab9897cbc3671cc3f8b0acfb7730a57dac76b84a392a4a58156c7c9a22038bc0"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\GEV_GE_Vernova_公司调研_2026-09-07.md",
+      "sha256": "45ea4a165d2eade49bf97fa3a17e4d8f91e7555ef90a7f110be350fa8a55141c"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\GNRC_Generac_Holdings_公司调研_2026-09-07.md",
+      "sha256": "20151450578e509dc9318a35bbe36fc0d3e4db14811fbd7e594b31a9f1ba6339"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\HTHIY_Hitachi_Ltd_公司调研_2026-09-07.md",
+      "sha256": "3fd7c133359d375a824d0509f1f51bba240d584c85472dbbb2fedc068c53d72f"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\OKLO_Oklo_Inc_公司调研_2026-09-07.md",
+      "sha256": "a11e5132aefc545c46b229bc09209075be52a75489df87110332dee9234cc0f1"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\PWR_Quanta_Services_公司调研_2026-09-07.md",
+      "sha256": "1a6d1dc0b9c84687b414bcc50db6e948cecaa5786c30ec16dc7d0dca4e95c18f"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\电力_发电_能源_储能\\SMR_NuScale_Power_公司调研_2026-09-07.md",
+      "sha256": "c3c75d940e7449ca54eb343e1f453c6f0cb8e84b3359fe6aad0eaa7f0fbbc360"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\配电_电源_功率器件\\ABBNY_ABB_Ltd_公司调研_2026-09-07.md",
+      "sha256": "401f66a366fd6c60e866c767ec6887d9e1e11a8f76c99606840f6ee4feff1cd7"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\配电_电源_功率器件\\ETN_Eaton_Corporation_公司调研_2026-09-07.md",
+      "sha256": "1f70eff0fe28e73337e5dce3c0a3a67c4784f726d09862d7a8417801b26cea06"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\配电_电源_功率器件\\HUBB_Hubbell_公司调研_2026-09-07.md",
+      "sha256": "9bff3d444ab88212bfd0a068af77190577d041802fd10296017924817f71cfea"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\配电_电源_功率器件\\IFNNY_Infineon_Technologies_AG_英飞凌科技_公司调研_2026-09-07.md",
+      "sha256": "8fbfdd0c36299328f596d0903e3b9a8c046c41c775f9d6de0fdcf60081a4d82b"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\配电_电源_功率器件\\LFUS_Littelfuse_公司调研_2026-09-07.md",
+      "sha256": "19551adb9f149a80f867f15a11f6efe49ce7ec1b75d43c4e6fb0b12dc2394e42"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\配电_电源_功率器件\\MPWR_Monolithic_Power_Systems_公司调研_2026-09-07.md",
+      "sha256": "00c6b4521f1f23e17216c1d41b5800fae4cf3642933800f650a343a8135466db"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\配电_电源_功率器件\\NVTS_Navitas_Semiconductor_公司调研_2026-09-07.md",
+      "sha256": "6f3f10bdf60ac634269d65ed47a387e85991e60f53eaa640ee36fc9df9d74424"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\配电_电源_功率器件\\NVT_nVent_Electric_公司调研_2026-09-07.md",
+      "sha256": "8edffddc6265dda1feac8f778335c1413146e8020b980cae0218319d464fac7c"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\配电_电源_功率器件\\VICR_Vicor_Corporation_公司调研_2026-09-07.md",
+      "sha256": "0d1069bac66990cdd760ea826b876536ac239d93b8f16655d7c9a01bb3157bd7"
+    },
+    {
+      "file": "D:\\drive\\Investment\\基本面\\公司调研\\配电_电源_功率器件\\WOLF_Wolfspeed_公司调研_2026-09-07.md",
+      "sha256": "8592a27559310631b43836120d5311b48744b91a5e8dfb62231da8e6e980113f"
+    }
+  ],
+  "note": "仅创建一次性备份成品；没有修改正式研究、行情生成器或公司池。SPCX为本次分析内更名映射，正式上下游数据修复另行实施。"
+}

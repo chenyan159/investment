@@ -1,0 +1,173 @@
+# 公司收入传导与价值传导评估：Tesla
+
+报告日期：2026-06-12  
+公司代号：TSLA  
+公司名称：Tesla, Inc.  
+主口径：NTM，约指 2026-06-12 至 2027-06-12 的未来 12 个月经营窗口。  
+资料边界：使用 `公司调研/` 与 `行业调研/` 下的上游资料，并用 Tesla IR、SEC、Tesla 产品/技术资料、IEA、Cox Automotive 等公开资料更新。未读取、引用或继承 `特征量化/`、Signals、回归、排序或模型比较资料。  
+重要限制：本报告只评估需求到可确认收入、利润和经营现金流的传导，不给投资评级，不判断股价区间，不做估值倍数判断；金融市场价格和估值数据不作为经营传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM。2026 全年共识、FY2027、长期 run-rate、Cybercab / Optimus / AI5 / Research Fab 只作校准或远期期权，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：Tesla 2026Q1 收入 `223.87 亿美元`，汽车 `162.34 亿美元`、Energy `24.08 亿美元`、Services `37.45 亿美元`；Q1 年化收入约 `895 亿美元`，TTM 收入约 `978.79 亿美元`。Tesla 未给全年收入指引；Tesla IR 共识页给出 2026 全年收入均值 `998.32 亿美元`，其中汽车 `686.46 亿美元`、Energy `167.73 亿美元`、Services `144.13 亿美元`。本报告把 NTM 当前预期锚定在 `1050-1100 亿美元`，这是从 2026 全年共识加 Q1 2027 正常滚动推算，不是公司指引。
+- 重要产品/业务线：汽车硬件；Megapack / Megablock / Powerwall / Energy 软件；Services & Other；FSD subscription / Robotaxi / Cybercab；Tesla Semi / Megacharger；Optimus；AI5 / Dojo / Cortex / Research Fab。
+- NTM 公司收入四情景：悲观 `920-980 亿美元`；基准 `1040-1120 亿美元`；乐观 `1180-1320 亿美元`；极度乐观 `1450-1650 亿美元`。基准接近当前预期正常兑现；乐观需要 Energy 和 FSD/Robotaxi 同时强于当前预期；极度乐观需要 Megapack 产能、Robotaxi 运营、Optimus 早期收入、汽车利用率和利润率同时突破。
+- 利润或 EBITDA 四情景：悲观 adjusted EBITDA `100-130 亿美元` / 净利润 `0-25 亿美元`；基准 adjusted EBITDA `150-185 亿美元` / 净利润 `40-65 亿美元`；乐观 adjusted EBITDA `210-280 亿美元` / 净利润 `80-130 亿美元`；极度乐观 adjusted EBITDA `350-480 亿美元` / 净利润 `180-300 亿美元`。产品层面最重要的不是收入总量，而是汽车硬件毛利、Energy 毛利是否正常化后仍高、FSD/Robotaxi 是否从小基数转成高毛利服务。
+- 最大传导瓶颈：汽车端是需求和价格，Energy 端是 Megapack / Megablock 产能、项目并网和 BESS 价格竞争，FSD/Robotaxi 是监管、安全和车队运营，Optimus 是量产可靠性和外部付费验证，AI5/Cortex 是高 CapEx 对 FCF 的压力。
+- 最大利润率变量：Energy 毛利率能否在一次性关税/保修收益消退后维持 `30%+`；汽车 ex-credit gross margin 能否维持在 `18-20%`；FSD/Robotaxi 收入能否覆盖 AI 训练、车队折旧、保险、服务和远程运营成本。
+- 最大现金流变量：2026 CapEx 已被管理层指向 `>250 亿美元`；即使收入基准兑现，NTM FCF 仍可能为负。现金流改善需要 Energy / Services / FSD 毛利增长快于 AI compute、semiconductor fab、Optimus、Cybercab 和工厂扩张投入。
+- 可信度：基准为中高，悲观为中，乐观为中，极度乐观为低。收入表 A/B 级证据支撑汽车、Energy 和 Services；FSD/Robotaxi 有订阅和城市运营证据但收入拆分不足；Optimus 和 AI5 外部收入仍为 C/D 级或非收入项目。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 汽车硬件：Model 3/Y、Cybertruck、其他车型、租赁、监管积分 | 2026Q1 `162.34 亿美元`；TTM 约 `718 亿美元` | Q1 `72.5%` | 最大收入和现金流底盘；决定工厂利用率和 ex-credit auto gross margin | A | 进入基准；按车辆交付、ASP、mix、库存天数和当前共识处理 | Cybercab 若规模化会改变车型组合，但 NTM 基准只小比例纳入 |
+| Energy：Megapack / Megablock / Powerwall / Solar / Energy 软件 | 2026Q1 `24.08 亿美元`；TTM `124.49 亿美元`；2026 共识 `167.73 亿美元` | Q1 `10.8%` | 最可验证高增长、高毛利和 AI 数据中心电力暴露 | A/B | 进入基准；以分部收入、储能部署、RPO 和产能为主 | AI data center BESS / grid-forming / Megablock 是乐观和极度乐观来源 |
+| Services & Other：维修、二手车、充电、保险、车队服务 | 2026Q1 `37.45 亿美元`；TTM `136.37 亿美元`；2026 共识 `144.13 亿美元` | Q1 `16.7%` | 随保有量增长；低毛利但改善；Robotaxi 和充电网络会在此显性化 | A | 进入基准；按保有量、服务毛利和 Supercharging 扩张处理 | 若 Robotaxi 收入进入 Services，利润质量显著改变 |
+| FSD subscription / Robotaxi / Cybercab | Active FSD subscriptions `1.28M`；汽车相关递延收入 `40.0 亿美元`，未来 12 个月预计确认 `9.41 亿美元`；Robotaxi 收入未披露 | 已包含在 Automotive / Services 中，无法单独可靠量化 | 最高毛利潜在业务和 AI 软件转化核心 | B/C；Robotaxi 当前 D | FSD 小比例进入基准；Robotaxi / Cybercab 只保守进入基准，主要进乐观与极度乐观 | 大规模无监督 Robotaxi、Cybercab fleet、高利用率车队经济性 |
+| Tesla Semi / Megacharger / V4 Supercharging cabinets | Semi 与 Megacharger 当前单独收入未披露；包含在 Automotive / Services / Infrastructure | 无法可靠量化 | 小基数增长和充电网络效率变量；可带动 Energy attach | C | 基准只作为汽车与服务的辅助增量，不单独放大 | Semi fleet + Megacharger + Megapack 组合销售 |
+| Optimus | 外部收入约 `0`；Fremont 一代线建设，设计能力 `1M robots/year`；Texas 二代线长期 `10M/year` 规划 | `0%` | 最大远期期权，但 NTM 收入证据最弱 | C/D | 不进入基准收入；只列乐观上限和极度乐观 | 外部客户、工厂部署小时、ASP、可靠性、维修网络和安全认证 |
+| AI5 / Dojo / Cortex / Research Fab | 对外收入 `0`；Cortex 1 `>100k H100e` production，Cortex 2 `>130k H100e` early ramp；AI5 final design completed | `0%` 外部收入 | 内部成本、能力和 CapEx 项；不是外部 AI 数据中心收入 | C/D | 不进入 NTM 收入；进入费用、CapEx、执行风险和长期成本曲线 | 若 AI5/AI6 降低 FSD/Optimus 推理成本，长期改善利润率 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 Tesla 份额、收入确认或利润率。当前需求锚来自 Tesla 2026Q1 运营指标、Tesla IR 共识、IEA / Cox Automotive、项目内数据中心 UPS/BESS 与边缘推理芯片报告。需求单位按业务选择：车辆交付量、储能 GWh、订阅数/城市数、服务收入需求、机器人台数或内部算力需求。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 汽车硬件 | 2026Q1 交付 `358,023` 辆，年化 `1.43M`；2026 共识汽车收入 `686 亿美元`；全球 EV 2026 预计 `23M`、占新车 `28%`，但美国 Q1 EV 销量同比 `-27%` | NTM 交付 `1.55-1.70M`，ASP / mix 下行 | `1.75-1.95M`，Model 3/Y 与更低价 trims 正常兑现 | `2.05-2.30M`，低价 trims、油价/欧洲需求和 Cybercab/Semi 小规模拉动 | `2.50-3.00M`，需要 Cybercab/Semi 快速放量且区域需求同步改善 | 相对 Q1 年化：悲观 `+0.12-0.27M`，基准 `+0.32-0.52M`，乐观 `+0.62-0.87M`，极度 `+1.07-1.57M` | 基准=大体符合当前预期；悲观=低于预期；乐观=高于；极度=非线性放量 | 正向：全球 EV 渗透继续上升、Model Y/3 trims、Cybercab/Semi 量产计划。反证：Q1 库存 `27` 天、美国 EV 市场重置、价格竞争、battery pack 仍是生产 ramp 限制 |
+| Energy / Megapack / BESS | 2025 储能部署 `46.7GWh`；2026Q1 `8.8GWh`，年化 `35.2GWh`；2026 共识储能部署约 `60.1GWh`；现有 California / Shanghai Megapack 能力 `60GWh`，Texas construction | NTM 部署 `45-55GWh`，AI DC 订单设计导入慢、项目延期 | `60-75GWh`，当前产能和项目节奏正常兑现 | `85-110GWh`，Houston / Megapack 3 / Megablock 提前贡献，AI DC BESS 需求加速 | `130-170GWh`，大型 AI campus 把 2h/4h BESS 作为接入加速标准件 | 相对 2025：悲观 `-2 至 +8GWh`，基准 `+13-28GWh`，乐观 `+38-63GWh`，极度 `+83-123GWh` | 基准=符合储能共识；乐观=AI DC 和产能强于预期；极度=需求、产能和并网标准同时突破 | 正向：项目内行业报告称 AI UPS/BBU/BESS 2026 订单池 `$12-25B`、2027 `$22-45B`；Tesla ERCOT 材料强调 load smoothing、LVRT、flexible connection。反证：Q1 部署同比 `-15%`、BESS 价格竞争、并网/融资/关税风险 |
+| Services & Other | 2026Q1 收入 `37.45 亿美元`，同比 `+42%`；Supercharger connectors `79,918`，同比 `+19%`；累计交付 `9.2M` | 服务需求增长放慢，二手车/保险/充电低毛利拖累；NTM 收入需求 `130-150 亿美元` | 保有量和充电/服务正常增长；`150-180 亿美元` | Robotaxi、保险、充电和维修 attach 改善；`200-250 亿美元` | Robotaxi fleet 显性化，服务从低毛利后市场变高毛利平台；`300-450 亿美元` | 相对 TTM `136 亿美元`：悲观 `-6 至 +14 亿`，基准 `+14-44 亿`，乐观 `+64-114 亿`，极度 `+164-314 亿` | 基准=符合保有量增长；乐观=Robotaxi/服务 attach 强于当前预期 | 正向：保有车队扩大、Supercharging 增长、保险/FSD 组合。反证：服务传统毛利低、二手车价格和维修成本波动、Robotaxi 仍未单独披露收入 |
+| FSD subscription / Robotaxi / Cybercab | Active FSD subscriptions `1.28M`，同比 `+51%`；Robotaxi paid miles nearly doubled sequentially；Austin/Dallas/Houston 无监督 rides，其他城市 preparation | FSD subs `1.2-1.5M`，Robotaxi 仅小规模测试，Cybercab 放量延迟 | FSD subs `1.6-2.0M`，Robotaxi 在 Texas 和少数城市小规模经营 | FSD subs `2.4-3.0M`，`10+` 城市或州、Cybercab 进入千到万辆级车队 | FSD subs `4M+`，Robotaxi fleet `>50k`，Cybercab 成为主要车队车辆 | 相对当前 `1.28M` FSD subs：悲观 `-0.08 至 +0.22M`，基准 `+0.32-0.72M`，乐观 `+1.12-1.72M`，极度 `+2.72M+` | 基准=订阅继续增长但 Robotaxi 收入仍小；乐观=监管和用户采用明显超预期；极度=服务商业化非线性 | 正向：FSD v14.3、Netherlands approval、Texas Robotaxi 扩区。反证：FSD Supervised 仍需驾驶监督；Robotaxi 城市运营、事故率、保险、远程协助和许可均未验证为大规模收入 |
+| Tesla Semi / Megacharger | Nevada Semi pilot production；V4 cabinets 和首个公共 Megacharger；量产目标在 2026 | NTM 交付 `<5k` 台，Megacharger 点状部署 | `5k-15k` 台，服务少数 fleet 客户 | `20k-40k` 台，物流客户和 Megacharger 扩张 | `50k+` 台，接近长期规划高端 | 相对当前 pilot production：从低基数到 `50k+` | 基准只作辅助增量；乐观需客户订单和电池供应 | 正向：官方量产计划、Megacharger 配套。反证：重卡 TCO、battery pack、客户充电基础设施和维修网络 |
+| Optimus | 当前外部收入 `0`，官方披露产线建设和长期设计能力 | 外部需求 `0`，仅内部样机 | 内部部署和低速试产，外部需求无法可靠量化 | 外部/内部 `10k-50k` 台级需求验证 | `100k+` 台级需求，客户按工时/lease 付费 | 相对当前 `0`：从 `0` 到 `100k+` 台 | 基准不纳入收入；乐观以上才进入收入上限 | 正向：工厂规划和 Tesla 制造能力。反证：安全认证、可靠性、任务泛化、维修网络、真实客户 ROI 均未披露 |
+| AI5 / Dojo / Cortex / Research Fab | 内部 AI compute 需求强，Cortex 1/2 合计 `>230k H100e` 能力口径；AI5 final design completed | 内部成本上升但对收入无明显帮助 | 支撑 FSD / Robotaxi / Optimus 开发，不形成外部收入 | 降低训练/推理成本，改善软件迭代 | 显著减少外部 GPU 依赖并支撑机器人/车队非线性扩张 | 外部需求收入变化为 `0`；内部算力需求持续上升 | 不作为 NTM 收入需求；只影响成本、CapEx 和执行可信度 | 正向：自研芯片和 AI infrastructure。反证：半导体良率、封装/HBM、资本强度、车规/机器人验证 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断需求能否进入 Tesla NTM 收入表，以及当前可收入化基数是多少；不预测增长，不判断利润率。A/B 级证据可进入基准，C 级只有客户、产品和时间表清楚时保守折扣，D/E 级不进入基准收入。FSD/Robotaxi、Semi 和 Optimus 的收入必须避免与 Automotive / Services 重复计算。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 汽车硬件 | 2026Q1 total automotive revenue `162.34 亿美元`；2026 共识 `686.46 亿美元`；Q1 交付 `358,023` 辆 | 直接 | 硬件制造毛利；FSD/ancillary 可提升，但价格竞争强 | `620-660 亿美元` | `680-740 亿美元` | `780-880 亿美元` | `950-1100 亿美元` | 基准符合当前共识；悲观低于当前预期；乐观及以上需要销量、ASP 和 mix 同时改善 | A | 是 | 分部收入、交付、产能和共识均可见 | 基准进入；Cybercab / Semi 增量只保守计入 |
+| Energy / Megapack / Powerwall / Solar | 2026Q1 Energy revenue `24.08 亿美元`；2026 共识 `167.73 亿美元`；Energy long-term performance obligations `101.5 亿美元`，未来 12 个月预计确认 `50.2 亿美元` | 直接；AI DC 为其中一部分间接需求转收入 | BESS 硬件/集成毛利 + 软件/服务高毛利；项目制波动 | `120-150 亿美元` | `170-210 亿美元` | `250-330 亿美元` | `400-550 亿美元` | 基准符合当前共识和可见产能；乐观要求 Houston / Megablock / AI DC 订单强于当前预期 | A/B | 是 | 分部收入 A；RPO / performance obligations B；产能 A；AI DC design-in C | 基准进入；AI DC 专项收入不单独大额假设，主要作为乐观上修来源 |
+| Services & Other | 2026Q1 `37.45 亿美元`；2026 共识 `144.13 亿美元`；Supercharger network +19% YoY | 直接 | 传统服务低毛利，规模和软件 attach 可改善 | `130-150 亿美元` | `150-180 亿美元` | `200-250 亿美元` | `300-450 亿美元` | 基准略高于 2026 共识并随保有量滚动；乐观需要 Robotaxi / 保险 / 充电 mix 改善 | A | 是 | 分部收入、网络规模、保有量可见 | 基准进入；Robotaxi 显性收入保守 |
+| FSD subscription | Active FSD subscriptions `1.28M`；汽车递延收入 `40.0 亿美元`，未来 12 个月预计确认 `9.41 亿美元`，但包含 connectivity、FSD、OTA、free Supercharging | 直接，但收入分布在汽车/服务；不能重复加总 | 高毛利软件，需扣 AI training / support / deferred recognition | `10-20 亿美元` | `20-40 亿美元` | `60-100 亿美元` | `150-250 亿美元` | 基准小于订阅 ARR 简单外推 + 递延收入约束；乐观需要付费基数、海外审批、转订阅均强 | B/C | 部分进入 | 订阅数 A/B；递延收入 B；单独 FSD 收入拆分不可见 | 基准只小比例纳入 Automotive / Services；不单独外推成公司新增 |
+| Robotaxi / Cybercab | Paid Robotaxi miles nearly doubled，但收入未披露；Austin / Dallas / Houston ramping unsupervised；Cybercab pilot / volume production 2026 | 直接服务收入，但当前不可量化 | 高潜在毛利，前期车队折旧、保险、清洁、充电、远程运营和监管成本高 | `0-5 亿美元` | `5-15 亿美元` | `30-80 亿美元` | `150-300 亿美元` | 基准是 NTM 小规模验证；极度乐观只是上限，不代表当前预期 | C/D | 基准小比例 | 城市运营和 Cybercab 时间表 C；收入 D | 基准仅作 Services / Automotive 的小增量；主要放入乐观/极度乐观 |
+| Tesla Semi / Megacharger | Semi pilot production；Megacharger and V4 cabinet deployment；单独收入未披露 | 直接，但包含于汽车和服务 | 硬件毛利初期不确定，充电基础设施高 CapEx | `0.5-1.5 亿美元` | `10-25 亿美元` | `40-70 亿美元` | `80-120 亿美元` | 基准为小基数量产；乐观需要 fleet 客户和充电网络同步 | C | 小比例 | 官方量产计划和 pilot production C | 进入基准的小额增量；不作为公司主线 |
+| Optimus | 外部收入 `0`；产线准备 / construction | 直接但尚未商业化 | 初期可能低毛利或亏损，长期取决于量产和软件 | `0` | `0-2 亿美元` | `10-30 亿美元` | `50-120 亿美元` | 当前预期应为近零；极度乐观为 NTM 上限 | C/D | 否 | 产线规划 C；外部订单 / ASP / 认证 D | 不进入基准；乐观以上才作为低可信上限 |
+| AI5 / Dojo / Cortex / Research Fab | 外部收入 `0`；内部 CapEx / R&D | 间接，不是外部收入 | 提升或拖累利润率：短期费用和 CapEx，长期单位推理/训练成本下降 | `0` | `0` | `0` | `0-20 亿美元` | 不应把内部 AI compute 当外部收入 | C/D | 否 | 官方 AI5 / Cortex 进展，但无外部销售路径 | 移入附录跟踪；只影响成本、CapEx、执行可信度 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求和收入基数出发，评估每个重要产品在 NTM 内能给 Tesla 贡献的收入和利润。产品利润贡献以分部毛利或经营贡献方向估算，Tesla 未披露产品级经营利润；FSD/Robotaxi、Semi、Optimus 与 Automotive / Services 存在会计归属重叠，第三步用于传导判断，第四步汇总时去重。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 汽车硬件 | 悲观产品 | `620-660 亿美元` | 毛利 `90-115 亿美元` | ex-credit GM 下行至 `14-17%` | 低于当前预期 | 美国 EV 重置、Q1 库存 `27` 天、价格竞争 | 保留为悲观 | 交付低于生产、ASP 下行、电池 pack 限制 |
+| 汽车硬件 | 基准产品 | `680-740 亿美元` | 毛利 `125-155 亿美元` | ex-credit GM `18-20%` | 符合当前预期 | 2026 共识 `686 亿美元`、产能充足、Model 3/Y trims | 保留为基准 | 基准不假设 Cybercab 大规模收入 |
+| 汽车硬件 | 乐观产品 | `780-880 亿美元` | 毛利 `170-220 亿美元` | GM `21-25%` | 高于预期 | 低价 trims、Cybercab/Semi 小规模贡献、服务/软件 attach | 保留为乐观 | 必须证明 ASP/mix 不被低价车型稀释 |
+| 汽车硬件 | 极度乐观产品 | `950-1100 亿美元` | 毛利 `240-310 亿美元` | GM `25%+` | 显著高于预期 | Cybercab/Semi 快速放量、工厂高利用率、软件 attach | 下移为极度乐观上限 | NTM 时间表紧、监管和量产难度高 |
+| Energy / Megapack | 悲观产品 | `120-150 亿美元` | 毛利 `30-42 亿美元` | GM 回落至 `24-28%` | 低于当前预期 | Q1 部署 `8.8GWh`、BESS 价格竞争、项目延期 | 保留为悲观 | RPO 确认节奏、并网、融资和关税 |
+| Energy / Megapack | 基准产品 | `170-210 亿美元` | 毛利 `50-70 亿美元` | GM `28-34%` | 符合或略高于共识 | 2026 Energy 共识 `167.7 亿美元`；RPO `101.5 亿美元`，未来 12 个月 `50.2 亿美元`；60GWh 产能 | 保留为基准 | Q1 `39.5%` 毛利含一次性因素，不线性外推 |
+| Energy / Megapack | 乐观产品 | `250-330 亿美元` | 毛利 `85-125 亿美元` | GM `32-38%` | 高于当前预期 | Houston Megapack 3 / Megablock、AI DC BESS 订单、grid-forming / LVRT | 保留为乐观 | AI DC 可参与需求不等于已签可确认收入 |
+| Energy / Megapack | 极度乐观产品 | `400-550 亿美元` | 毛利 `150-220 亿美元` | GM `35-42%` | 显著高于预期 | 多个 GW campus 默认配 2h/4h BESS、产能 `120GWh+` | 下移为极度乐观上限 | 产能、消防/utility approval、价格竞争同时约束 |
+| Services & Other | 悲观产品 | `130-150 亿美元` | 毛利 `8-15 亿美元` | GM `6-10%` | 低于或接近当前预期 | 传统维修/二手车/保险低毛利，Robotaxi 不显性 | 保留为悲观 | 服务成本、二手车残值、保险赔付 |
+| Services & Other | 基准产品 | `150-180 亿美元` | 毛利 `15-27 亿美元` | GM `10-15%` | 符合当前预期 | Q1 Services `37.45 亿美元`，保有量与 Supercharging 增长 | 保留为基准 | 不把 Robotaxi 小样本放大 |
+| Services & Other | 乐观产品 | `200-250 亿美元` | 毛利 `35-60 亿美元` | GM `17-24%` | 高于当前预期 | Robotaxi early revenue、保险/FSD bundle、充电网络利用率 | 保留为乐观 | 需要证明高毛利服务 mix |
+| Services & Other | 极度乐观产品 | `300-450 亿美元` | 毛利 `90-180 亿美元` | GM `30-40%` | 显著高于预期 | Robotaxi fleet 规模化，高利用率和软件化 | 下移为极度乐观上限 | 城市扩张、远程运营、事故率和车队折旧 |
+| FSD subscription / Robotaxi / Cybercab | 悲观产品 | `10-20 亿美元`，已包含于 Auto/Services | 利润 `3-8 亿美元` 或被 AI/ops 成本抵消 | 订阅毛利高，Robotaxi 前期低 | 低于当前预期 | FSD 需监管/用户采用，Robotaxi 规模小 | 保留为悲观 | 监管、安全、churn、事故率 |
+| FSD subscription / Robotaxi / Cybercab | 基准产品 | `25-55 亿美元`，去重后公司增量有限 | 利润 `10-30 亿美元` | 逐步扩张 | 符合当前预期偏上 | FSD subs `1.28M`、递延收入、Texas Robotaxi | 保留为基准但去重 | 递延收入不全是 FSD，Robotaxi 收入未披露 |
+| FSD subscription / Robotaxi / Cybercab | 乐观产品 | `90-180 亿美元` | 利润 `45-110 亿美元` | 高毛利服务开始显性化 | 高于预期 | 多城市、Cybercab 小规模量产、FSD 海外审批 | 保留为乐观 | 谁买、何时确认、车队成本必须验证 |
+| FSD subscription / Robotaxi / Cybercab | 极度乐观产品 | `250-500 亿美元` | 利润 `150-320 亿美元` | 高毛利平台化 | 显著高于预期 | 大规模无监督 Robotaxi + 高 FSD penetration | 下移为极度乐观上限 | 任一监管/安全/运营环节缺证据就不能上移 |
+| Tesla Semi / Megacharger | 悲观产品 | `0.5-1.5 亿美元` | 利润为负或接近零 | 初期低 | 低于预期 | pilot production，客户交付慢 | 保留为悲观 | Battery pack、充电场站和 fleet TCO |
+| Tesla Semi / Megacharger | 基准产品 | `10-25 亿美元` | 毛利 `0-4 亿美元` | 低到中 | 小额符合预期 | 2026 volume production 计划 | 保留为基准辅助 | 不能替代汽车主线 |
+| Tesla Semi / Megacharger | 乐观产品 | `40-70 亿美元` | 毛利 `5-12 亿美元` | 改善 | 高于预期 | 大客户 fleet 和 Megacharger 扩张 | 保留为乐观 | 商用车服务网络 |
+| Tesla Semi / Megacharger | 极度乐观产品 | `80-120 亿美元` | 毛利 `12-25 亿美元` | 中 | 极高于预期 | 产能和客户采纳同步 | 下移为极度乐观上限 | NTM 内难接近 50k 台年化 |
+| Optimus | 悲观产品 | `0` | 亏损 / 费用化投入 | 拖累 | 符合当前保守预期 | 无外部收入 | 保留 | 当前没有客户、ASP、认证 |
+| Optimus | 基准产品 | `0-2 亿美元` | 亏损或微小毛利 | 拖累 | 符合当前预期 | 内部部署/样机 | 保留为基准但不作为收入驱动 | 不能把产能规划当收入 |
+| Optimus | 乐观产品 | `10-30 亿美元` | `-5 至 +5 亿美元` | 仍取决于良率 | 高于当前预期 | 少量外部客户或内部工厂部署 | 下移为低可信乐观 | 需证明任务 ROI |
+| Optimus | 极度乐观产品 | `50-120 亿美元` | 毛利 `5-35 亿美元` | 若规模化则改善 | 显著高于预期 | `100k+` 台级需求和认证路径 | 仅作跟踪 / 极度乐观上限 | 可靠性、安全和维修体系 |
+| AI5 / Dojo / Cortex / Research Fab | 悲观产品 | 外部收入 `0` | 费用和 CapEx 拖累 | 下行 | 不作为收入 | 2026 CapEx >`250 亿美元` | 保留为成本风险 | 半导体自建资本强度 |
+| AI5 / Dojo / Cortex / Research Fab | 基准产品 | 外部收入 `0` | 通过 FSD/Robotaxi/Optimus 间接改善，但 NTM 主要是投入 | 中性到拖累 | 符合预期 | Cortex 2 online，AI5 design completed | 移入附录跟踪 | 不计入公司收入 |
+| AI5 / Dojo / Cortex / Research Fab | 乐观产品 | 外部收入 `0` | 降低训练/推理单位成本 | 长期改善 | 高于预期但不体现收入 | AI5 / Dojo 提速 | 仅作跟踪 | 成本改善难在 NTM 单独量化 |
+| AI5 / Dojo / Cortex / Research Fab | 极度乐观产品 | `0-20 亿美元`，仅若对外/关联服务出现 | 无法可靠量化 | 不可靠 | 非当前预期 | 无明确外部商业路径 | 排除出 NTM 主表 | 没有客户、价格、确认路径 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为 Tesla NTM 总收入、毛利率、经营利润率、EBITDA / 净利润和自由现金流方向。汇总时去重：FSD、Robotaxi、Cybercab、Semi、Optimus 若进入收入，分别落在 Automotive 或 Services，不额外叠加到分部合计之外。当前预期锚为 2026 全年共识 `998.32 亿美元` 与本报告滚动 NTM `1050-1100 亿美元`。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `920-980 亿美元` | 相对 TTM `978.79 亿美元` 为 `-6% 至 0%` | 低于滚动 NTM 当前预期约 `7-16%`；汽车和 Energy 均低于预期 | `17.5-19.0%` | `0-3%` | Adjusted EBITDA `100-130 亿美元`；GAAP 净利润 `0-25 亿美元` | `-100 至 -180 亿美元`，高 CapEx 叠加库存和项目延期 | 中 | 车端需求/价格、Energy 项目延期、AI/Optimus/Research Fab 投入先行 |
+| 基准公司 | `1040-1120 亿美元` | 相对 TTM `+6-14%` | 接近当前预期正常兑现；汽车低到中增长、Energy 高增长、Services 稳定增长 | `20.0-22.0%` | `4-6%` | Adjusted EBITDA `150-185 亿美元`；GAAP 净利润 `40-65 亿美元` | `-30 至 -80 亿美元`；OCF 改善但 CapEx `>250 亿美元` 压制 | 中高 | Energy 毛利正常化、汽车 ex-credit GM、Robotaxi 小样本不能放大 |
+| 乐观公司 | `1180-1320 亿美元` | 相对 TTM `+20-35%` | 高于当前预期约 `10-25%`；不是单一小项目，需 Energy + FSD/Services + 汽车 mix 同时改善 | `22.0-25.0%` | `7-10%` | Adjusted EBITDA `210-280 亿美元`；GAAP 净利润 `80-130 亿美元` | `-20 至 +50 亿美元`；若工作资本和 Energy 现金回收顺利可转正 | 中 | Houston / Megapack 3、Robotaxi 城市扩张、软件毛利能否覆盖 AI 投入 |
+| 极度乐观公司 | `1450-1650 亿美元` | 相对 TTM `+48-68%` | 高于当前预期约 `35-55%`；需要需求、捕获、利润率和执行同时突破 | `25.0-30.0%` | `12-17%` | Adjusted EBITDA `350-480 亿美元`；GAAP 净利润 `180-300 亿美元` | `+50 至 +150 亿美元`，但需高毛利服务快速覆盖扩产 CapEx | 低 | Megapack `120GWh+`、Robotaxi 大规模无监督、Optimus 早期收入、汽车工厂高利用率均需成立 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测，只校准前四步情景。正向证据只提升其实际影响的层级；反证只限制其实际影响的层级，同一风险不重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 `223.87 亿美元`、TTM 收入 `978.79 亿美元`、2026 共识 `998.32 亿美元` | 公司汇总 | 为基准收入提供 A 级锚；NTM 基准 `1040-1120 亿美元`合理 | 不直接提升利润率 | 共识没有自动保证 FCF | 基准保留 |
+| 汽车交付 `358,023`、生产 `408,386`、库存 `27` 天 | 需求 / 产品贡献 | 限制汽车极度乐观，不支持把产能直接等于销量 | 若库存上升需促销，压 ASP 和 GM | 库存占用现金 | 悲观保留；汽车乐观不下移但需条件 |
+| Automotive ex-credit gross margin Q1 `19.2%`，但含 mix、成本和一次性因素 | 产品利润 | 支持基准汽车毛利，但不能外推到极度乐观 | 一次性保修/关税收益限制上移 | 若价格战延续，现金回收弱 | 基准保留；极度乐观下移为上限 |
+| Energy revenue Q1 同比 `-12%`、storage deployed `8.8GWh` 同比 `-15%` | 需求 / 收入确认 | 限制把 Energy 需求直接上移；项目制波动需要确认 | Q1 高毛利不能线性外推 | 部署波动影响预收款和营运资本 | 悲观保留；基准保留 |
+| Energy 毛利率 Q1 `39.5%`、长期 performance obligations `101.5 亿美元`、未来 12 个月 `50.2 亿美元` | 收入基数 / 产品利润 | 支持 Energy 基准和乐观收入池 | 支持 `30%+` 毛利上沿，但需扣除一次性因素 | RPO 增强收入可见度 | Energy 基准保留；乐观保留 |
+| Tesla Megapack ERCOT 材料：AI load smoothing、LVRT、flexible connection | 产品需求 / 捕获 | 提升 AI DC BESS 需求可信度，但不等于已签收入 | 软件/控制可提升利润质量 | utility acceptance 和消防/并网仍需项目化 | Energy 乐观保留；极度乐观仅作上限 |
+| 项目内行业报告：AI 相关 UPS/BBU/BESS 2026 订单池 `$12-25B`、2027 `$22-45B` | 需求 | 支持 BESS 行业需求强 | 行业利润率分化，Tesla 不自动拿全部毛利 | 订单需转为 Tesla 交付 | Energy 乐观保留 |
+| Active FSD subscriptions `1.28M`、record net subs、Netherlands approval | 收入基数 / 产品贡献 | 支持 FSD 小基准和乐观订阅增长 | 软件毛利潜力高 | AI training / support 成本上升 | FSD 基准保留；乐观保留 |
+| Robotaxi paid miles doubled、Texas 三城 ramping unsupervised、Cybercab production path | 产品贡献 | 支持 Robotaxi / Cybercab 乐观，但当前收入未披露 | 车队成本和保险未验证 | 监管、安全、运营基础设施是硬约束 | 基准小比例保留；极度乐观下移为上限 |
+| Optimus 产线建设、但外部订单和收入为 0 | 收入基数 / 公司组合 | 不支持进入基准 | 初期可能拖累毛利 | CapEx / R&D / tooling 压现金流 | Optimus 基准排除；乐观仅低可信 |
+| AI5 / Cortex / Research Fab | 成本 / 执行可信度 | 外部收入为 0，不进入 NTM 收入 | 长期可能降本，短期费用/CapEx 增 | 2026 CapEx `>250 亿美元`，FCF 压力大 | 收入表排除；移入附录跟踪 |
+| IEA 2026 全球 EV 预计 `23M`、但 Cox Q1 美国 EV `-27%` | 需求 | 全球需求仍增长，美国需求偏弱；Tesla 区域 mix 关键 | 区域价格竞争影响毛利 | 库存和 incentives 影响现金 | 汽车基准保留；极度乐观不上移 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 汽车需求/价格低于预期，Energy 部署波动，AI/Optimus/Research Fab 投入先行，NTM 收入 `920-980 亿美元` | 资产负债表强、Q1 FCF 正、Energy RPO 可见，避免把公司直接打到现金危机 | Q1 库存 `27` 天、Energy 部署同比下降、CapEx `>250 亿美元` | 保留 | 悲观公司 | 中 | 汽车库存和价格压力只在汽车需求/利润层处理，不在 Energy 和 FSD 再重复惩罚 |
+| 基准 | 汽车、Energy、Services 正常兑现，FSD 小比例贡献，NTM 收入 `1040-1120 亿美元` | A/B 级分部收入、共识、RPO、产能和订阅数支撑 | 基准不能依赖 Robotaxi / Optimus / AI5 外部收入 | 保留 | 基准公司 | 中高 | CapEx 压力只在 FCF 处理，不重复压低产品收入 |
+| 乐观 | Energy 强于预期，FSD/Robotaxi 初步显性化，汽车 mix 和服务毛利改善，NTM 收入 `1180-1320 亿美元` | Megapack AI DC 用例、Houston ramp、FSD subs、Robotaxi 城市扩张提供公司特定证据 | Robotaxi 收入未披露，Energy AI DC 订单不是全部已签收入 | 保留 | 乐观公司 | 中 | AI DC 行业需求只提升 Energy 乐观，不直接上调汽车或 Optimus |
+| 极度乐观 | Megapack、Robotaxi、Optimus、汽车和 AI5 成本曲线同时突破，NTM 收入 `1450-1650 亿美元` | 官方产线、AI5、Cortex、Robotaxi 和 Megapack 材料提供方向性证据 | 任一核心环节缺客户、价格、产能、认证或收入确认路径；Optimus 和 Robotaxi 收入证据不足 | 下移 | 极度乐观上限 / 附录跟踪 | 低 | Optimus 和 AI5 的长期空间不能重复用于 NTM 收入和利润率双重上修 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。NTM 收入最可能落在 `1040-1120 亿美元`，略高于 2026 全年共识但不需要 Robotaxi 或 Optimus 大规模商业化。最主要收入来自汽车硬件和 Energy；利润质量相对 2025 改善，但 FCF 受 `>250 亿美元` CapEx 压制，基准下仍偏负。
+- NTM 收入结论：汽车硬件是最大收入底盘，但不应按产能线性外推；Energy 是最强可验证增量，基准 `170-210 亿美元`，乐观可到 `250-330 亿美元`；Services 基准 `150-180 亿美元`。FSD/Robotaxi 对收入的 NTM 主贡献仍小于叙事上限，Optimus 不进入基准收入。
+- 利润/现金流结论：基准毛利率 `20-22%`、经营利润率 `4-6%`、adjusted EBITDA `150-185 亿美元`，但公司正在前置 AI compute、semiconductor fab、Optimus、Cybercab、Megapack 3 和服务/充电网络投入，FCF 的基准方向为 `-30 至 -80 亿美元`。
+- 主要传导瓶颈：汽车端是需求和 ASP，Energy 端是 Megapack / Megablock 产能和项目确认，FSD/Robotaxi 是监管和安全运营，Optimus 是量产与客户 ROI，AI5/Cortex 是资本强度和执行风险。
+- 乐观情景成立条件：Energy 部署年化 `85GWh+`，Houston / Megapack 3 顺利，Energy 毛利率正常化后仍 `32%+`；FSD 订阅数超过 `2.4M`，Robotaxi 拓展至 `10+` 城市或州并开始披露可见收入；汽车 ex-credit GM 维持 `20%+` 且库存回落。
+- 极度乐观情景成立条件：Megapack / Megablock 在 NTM 内成为多个 AI campus 的标准化 BESS 方案，Robotaxi fleet 达到数万辆级并有高利用率，Optimus 形成外部收入，AI5 / Dojo 证明成本下降，同时汽车需求不被价格战拖累。缺少任一环节，极度乐观只能作为上限跟踪。
+- 悲观情景触发条件：汽车库存持续高于 `30` 天且降价扩大；Energy 部署低于 `55GWh` 或毛利率回落至 `25%` 以下；Robotaxi 发生重大安全/监管阻断；CapEx 继续上调但软件/服务收入不显性；营运资本恶化导致 FCF 大幅负数。
+- 后续跟踪数据：季度交付/生产/库存天数；Automotive gross margin ex-credit；Energy revenue、storage deployed GWh、RPO / deferred revenue、Energy GM；Houston Megapack 3 / Megablock SOP；FSD active paid subscriptions、deferred revenue recognition、欧洲/中国审批；Robotaxi cities、paid miles、fleet size、事故/接管率、单车日收入；Cybercab 和 Semi 产量；Optimus 实际产量、内部部署小时、外部订单和 ASP；CapEx、OCF、FCF、现金余额。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Tesla 最新完整财报为 2026Q1，期间截至 2026-03-31，发布于 2026-04-22；本报告外部复核截至 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Tesla Investor Relations, Q1 2026 Update, 2026-04-22: https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q1-2026-Update.pdf
+  - Tesla 2026Q1 Form 10-Q, period ended 2026-03-31: https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm
+  - Tesla Investor Relations, Q1 2026 earnings consensus: https://ir.tesla.com/press-release/earnings-consensus-first-quarter-2026
+  - Tesla Investor Relations quarterly disclosure page: https://ir.tesla.com/
+  - Tesla Megapack resources: https://www.tesla.com/support/energy/megapack/resources
+  - ERCOT Large Load Working Group, Tesla Megapack at Data Centers, 2025-05: https://www.ercot.com/files/docs/2025/05/15/11-Megapack-at-Data-Centers-_-ERCOT-LLWG_5.16.25_vShare.pdf
+  - IEA Global EV Outlook 2026 executive summary: https://www.iea.org/reports/global-ev-outlook-2026/executive-summary
+  - Cox Automotive Q1 2026 EV sales commentary: https://www.coxautoinc.com/insights/q1-2026-ev-sales-report-commentary/
+  - Cox Automotive April 2026 EV Market Monitor: https://www.coxautoinc.com/insights/ev-market-monitor-april-2026-2/
+- 项目内上游来源：
+  - `公司调研/机电_冷却_工程_水处理_边缘工业AI/TSLA_Tesla_公司调研_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI边缘推理芯片_2026-06-11.md`
+  - `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 共识仅作当前预期锚，不替代 NTM 主表。
+  - FY2027 与长期 run-rate 只用于判断 Tesla 是否有远期期权，不进入 NTM 基准。
+  - Optimus、AI5 / AI6、Dojo、Research Fab、大规模 Robotaxi 和 Cybercab fleet 均属于乐观以上或附录跟踪，除非出现客户、价格、交付和收入确认路径。
+- 主要推算口径：
+  - TTM 收入由 2025Q2、2025Q3、2025Q4、2026Q1 总收入相加：`224.96 + 280.95 + 249.01 + 223.87 = 978.79 亿美元`。
+  - NTM 当前预期 `1050-1100 亿美元` 为 2026 共识 `998.32 亿美元` 向前滚动至 2027Q1 的模型锚，非公司指引。
+  - 产品利润贡献主要用毛利或经营贡献方向估算；Tesla 未披露产品级 operating income。
+  - FSD、Robotaxi、Cybercab、Semi、Optimus 的收入与 Automotive / Services 会计口径可能重叠，公司汇总时已去重。

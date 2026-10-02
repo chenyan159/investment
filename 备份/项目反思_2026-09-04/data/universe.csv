@@ -1,0 +1,193 @@
+﻿ticker,company,category,vendor_symbol
+DELL,Dell Technologies,AI服务器存储EMS/,DELL
+FN,Fabrinet,AI服务器存储EMS/,FN
+HPE,惠普企业,AI服务器存储EMS/,HPE
+JBL,Jabil Inc,AI服务器存储EMS/,JBL
+MRAM,Everspin Technologies,AI服务器存储EMS/,MRAM
+NTAP,NetApp,AI服务器存储EMS/,NTAP
+PENG,Penguin Solutions,AI服务器存储EMS/,PENG
+SANM,Sanmina Corporation,AI服务器存储EMS/,SANM
+SMCI,Super Micro Computer Inc,AI服务器存储EMS/,SMCI
+STX,Seagate Technology,AI服务器存储EMS/,STX
+WDC,WesternDigital,AI服务器存储EMS/,WDC
+CLS,Celestica Inc,AI服务器存储EMS/,CLS
+FLEX,Flex Ltd,AI服务器存储EMS/,FLEX
+MU,Micron Technology 美光科技,AI服务器存储EMS/,MU
+P,Everpure,AI服务器存储EMS/,P
+RMBS,Rambus,AI服务器存储EMS/,RMBS
+SIMO,Silicon Motion Technology,AI服务器存储EMS/,SIMO
+SNDK,SanDisk,AI服务器存储EMS/,SNDK
+SKHY,SK hynix Inc,AI服务器存储EMS/,SKHY
+ADI,Analog Devices,AI计算芯片EDAIPcustomASIC/,ADI
+AMD,Advanced Micro Devices,AI计算芯片EDAIPcustomASIC/,AMD
+AVGO,Broadcom,AI计算芯片EDAIPcustomASIC/,AVGO
+CDNS,Cadence Design Systems,AI计算芯片EDAIPcustomASIC/,CDNS
+INTC,Intel Corporation 英特尔,AI计算芯片EDAIPcustomASIC/,INTC
+MCHP,Microchip Technology,AI计算芯片EDAIPcustomASIC/,MCHP
+MRVL,Marvell Technology,AI计算芯片EDAIPcustomASIC/,MRVL
+NVDA,NVIDIA,AI计算芯片EDAIPcustomASIC/,NVDA
+ON,onsemi,AI计算芯片EDAIPcustomASIC/,ON
+QCOM,Qualcomm,AI计算芯片EDAIPcustomASIC/,QCOM
+STM,STMicroelectronics,AI计算芯片EDAIPcustomASIC/,STM
+TXN,德州仪器,AI计算芯片EDAIPcustomASIC/,TXN
+ALAB,AsteraLabs,AI计算芯片EDAIPcustomASIC/,ALAB
+ARM,Arm Holdings,AI计算芯片EDAIPcustomASIC/,ARM
+SNPS,Synopsys,AI计算芯片EDAIPcustomASIC/,SNPS
+MXL,MaxLinear,AI计算芯片EDAIPcustomASIC/,MXL
+CBRS,Cerebras Systems Inc,AI计算芯片EDAIPcustomASIC/,CBRS
+ANET,Arista Networks,AI网络光互联连接器/,ANET
+APH,Amphenol 安费诺,AI网络光互联连接器/,APH
+BDC,Belden,AI网络光互联连接器/,BDC
+COHR,Coherent,AI网络光互联连接器/,COHR
+CRDO,Credo Technology Group,AI网络光互联连接器/,CRDO
+CSCO,Cisco Systems,AI网络光互联连接器/,CSCO
+GLW,Corning,AI网络光互联连接器/,GLW
+LITE,Lumentum,AI网络光互联连接器/,LITE
+LWLG,Lightwave Logic,AI网络光互联连接器/,LWLG
+NOK,诺基亚,AI网络光互联连接器/,NOK
+TEL,TE Connectivity,AI网络光互联连接器/,TEL
+VIAV,VIAVI Solutions,AI网络光互联连接器/,VIAV
+VISN,Vistance Networks,AI网络光互联连接器/,VISN
+AAOI,Applied Optoelectronics,AI网络光互联连接器/,AAOI
+BELFB,Bel Fuse Inc,AI网络光互联连接器/,BELFB
+CIEN,Ciena Corporation,AI网络光互联连接器/,CIEN
+MTSI,MACOM Technology Solutions,AI网络光互联连接器/,MTSI
+POET,POET Technologies,AI网络光互联连接器/,POET
+SITM,SiTime Corporation,AI网络光互联连接器/,SITM
+SMTC,Semtech Corporation,AI网络光互联连接器/,SMTC
+AJNMY,味之素 Ajinomoto,半导体材料化学品基板/,AJNMY
+APD,Air Products and Chemicals,半导体材料化学品基板/,APD
+ASGLY,AGC Inc,半导体材料化学品基板/,ASGLY
+AXTI,AXT Inc,半导体材料化学品基板/,AXTI
+HOCPY,HOYA Corporation,半导体材料化学品基板/,HOCPY
+LIN,Linde plc,半导体材料化学品基板/,LIN
+MMM,3M,半导体材料化学品基板/,MMM
+NDSN,Nordson,半导体材料化学品基板/,NDSN
+Q,Qnity Electronics,半导体材料化学品基板/,Q
+SHECY,Shin-Etsu Chemical 信越化学,半导体材料化学品基板/,SHECY
+SOMMY,住友化学 Sumitomo Chemical,半导体材料化学品基板/,SOMMY
+CC,The Chemours Company,半导体材料化学品基板/,CC
+ECL,Ecolab,半导体材料化学品基板/,ECL
+ENTG,Entegris,半导体材料化学品基板/,ENTG
+MTRN,Materion,半导体材料化学品基板/,MTRN
+ROG,Rogers Corporation,半导体材料化学品基板/,ROG
+SMTOY,住友电工 Sumitomo Electric Industries,半导体材料化学品基板/,SMTOY
+DHR,Danaher Corporation,半导体材料化学品基板/,DHR
+DD,DuPont de Nemours,半导体材料化学品基板/,DD
+DKILY,Daikin Industries,半导体材料化学品基板/,DKILY
+AEP,American Electric Power,电力发电能源储能/,AEP
+BE,Bloom Energy,电力发电能源储能/,BE
+BWXT,BWX Technologies,电力发电能源储能/,BWXT
+CMI,Cummins Inc,电力发电能源储能/,CMI
+DTE,DTE Energy Company,电力发电能源储能/,DTE
+ENS,EnerSys,电力发电能源储能/,ENS
+ENPH,Enphase Energy,电力发电能源储能/,ENPH
+ET,Energy Transfer LP,电力发电能源储能/,ET
+ETR,Entergy Corporation,电力发电能源储能/,ETR
+FCEL,FuelCell Energy,电力发电能源储能/,FCEL
+GEV,GE Vernova,电力发电能源储能/,GEV
+GNRC,Generac Holdings,电力发电能源储能/,GNRC
+OKLO,Oklo Inc,电力发电能源储能/,OKLO
+PSIX,Power Solutions International,电力发电能源储能/,PSIX
+PWR,Quanta Services,电力发电能源储能/,PWR
+RYCEY,Rolls-Royce Holdings,电力发电能源储能/,RYCEY
+VST,Vistra Corp,电力发电能源储能/,VST
+CEG,Constellation Energy,电力发电能源储能/,CEG
+FLNC,Fluence Energy,电力发电能源储能/,FLNC
+SMR,NuScale Power,电力发电能源储能/,SMR
+AMPX,Amprius Technologies,电力发电能源储能/,AMPX
+HTHIY,Hitachi Ltd,电力发电能源储能/,HTHIY
+TE,T1 Energy Inc,电力发电能源储能/,TE
+AEHR,Aehr Test Systems,封测检测计量光罩/,AEHR
+ASX,ASE Technology Holding,封测检测计量光罩/,ASX
+COHU,Cohu Inc,封测检测计量光罩/,COHU
+IMOS,ChipMOS Technologies 南茂科技,封测检测计量光罩/,IMOS
+KEYS,Keysight Technologies,封测检测计量光罩/,KEYS
+KLIC,Kulicke Soffa,封测检测计量光罩/,KLIC
+MICLF,Mycronic AB,封测检测计量光罩/,MICLF
+ONTO,Onto Innovation,封测检测计量光罩/,ONTO
+PLAB,Photronics,封测检测计量光罩/,PLAB
+TDY,Teledyne Technologies,封测检测计量光罩/,TDY
+TMO,Thermo Fisher Scientific,封测检测计量光罩/,TMO
+AMKR,Amkor Technology,封测检测计量光罩/,AMKR
+CAMT,Camtek,封测检测计量光罩/,CAMT
+FORM,FormFactor,封测检测计量光罩/,FORM
+TER,Teradyne,封测检测计量光罩/,TER
+ATEYY,Advantest,封测检测计量光罩/,ATEYY
+ASMVY,ASMPT,封测检测计量光罩/,ASMVY
+BESIY,BE Semiconductor,封测检测计量光罩/,BESIY
+ALLE,Allegion plc,机电冷却工程水处理边缘工业AI/,ALLE
+CARR,Carrier Global,机电冷却工程水处理边缘工业AI/,CARR
+CAT,Caterpillar Inc,机电冷却工程水处理边缘工业AI/,CAT
+DCI,Donaldson Company,机电冷却工程水处理边缘工业AI/,DCI
+FIX,Comfort Systems USA,机电冷却工程水处理边缘工业AI/,FIX
+FTV,Fortive Corporation,机电冷却工程水处理边缘工业AI/,FTV
+MSI,Motorola Solutions,机电冷却工程水处理边缘工业AI/,MSI
+PH,Parker-Hannifin,机电冷却工程水处理边缘工业AI/,PH
+PNR,Pentair plc,机电冷却工程水处理边缘工业AI/,PNR
+RKLB,Rocket Lab,机电冷却工程水处理边缘工业AI/,RKLB
+TSLA,Tesla,机电冷却工程水处理边缘工业AI/,TSLA
+TT,Trane Technologies,机电冷却工程水处理边缘工业AI/,TT
+VRT,Vertiv,机电冷却工程水处理边缘工业AI/,VRT
+DOV,Dover Corporation,机电冷却工程水处理边缘工业AI/,DOV
+JCI,Johnson Controls,机电冷却工程水处理边缘工业AI/,JCI
+MOD,Modine Manufacturing,机电冷却工程水处理边缘工业AI/,MOD
+AAON,AAON,机电冷却工程水处理边缘工业AI/,AAON
+IESC,IES Holdings,机电冷却工程水处理边缘工业AI/,IESC
+EME,EMCOR Group,机电冷却工程水处理边缘工业AI/,EME
+MYRG,MYR Group,机电冷却工程水处理边缘工业AI/,MYRG
+ACLS,Axcelis Technologies,晶圆制造前道设备/,ACLS
+ACMR,ACM Research,晶圆制造前道设备/,ACMR
+AMAT,Applied Materials,晶圆制造前道设备/,AMAT
+ASMIY,ASM International,晶圆制造前道设备/,ASMIY
+ASML,ASML Holding NV,晶圆制造前道设备/,ASML
+DSCSY,DISCO,晶圆制造前道设备/,DSCSY
+GFS,GlobalFoundries,晶圆制造前道设备/,GFS
+KLAC,KLA Corporation,晶圆制造前道设备/,KLAC
+LRCX,Lam Research,晶圆制造前道设备/,LRCX
+MKSI,MKS Inc,晶圆制造前道设备/,MKSI
+TSEM,Tower Semiconductor,晶圆制造前道设备/,TSEM
+TSM,台积电,晶圆制造前道设备/,TSM
+UCTT,Ultra Clean Holdings,晶圆制造前道设备/,UCTT
+UMC,United Microelectronics 联华电子,晶圆制造前道设备/,UMC
+VECO,Veeco Instruments,晶圆制造前道设备/,VECO
+ICHR,Ichor Holdings,晶圆制造前道设备/,ICHR
+NVMI,Nova Ltd,晶圆制造前道设备/,NVMI
+TOELY,Tokyo Electron,晶圆制造前道设备/,TOELY
+AEIS,Advanced Energy Industries,晶圆制造前道设备/,AEIS
+ABBNY,ABB Ltd,配电电源功率器件/,ABBNY
+AOSL,Alpha and Omega Semiconductor,配电电源功率器件/,AOSL
+ATKR,Atkore,配电电源功率器件/,ATKR
+DIOD,Diodes Incorporated,配电电源功率器件/,DIOD
+HUBB,Hubbell,配电电源功率器件/,HUBB
+LFUS,Littelfuse,配电电源功率器件/,LFUS
+MIELY,三菱电机 Mitsubishi Electric,配电电源功率器件/,MIELY
+MPWR,Monolithic Power Systems,配电电源功率器件/,MPWR
+POWI,Power Integrations,配电电源功率器件/,POWI
+POWL,Powell Industries,配电电源功率器件/,POWL
+ST,Sensata Technologies,配电电源功率器件/,ST
+VICR,Vicor Corporation,配电电源功率器件/,VICR
+VSH,Vishay Intertechnology,配电电源功率器件/,VSH
+WOLF,Wolfspeed,配电电源功率器件/,WOLF
+ETN,Eaton Corporation,配电电源功率器件/,ETN
+IFNNY,Infineon Technologies AG 英飞凌科技,配电电源功率器件/,IFNNY
+NVT,nVent Electric,配电电源功率器件/,NVT
+NVTS,Navitas Semiconductor,配电电源功率器件/,NVTS
+MRAAY,Murata Manufacturing,配电电源功率器件/,MRAAY
+TTDKY,TDK Corporation,配电电源功率器件/,TTDKY
+ADBE,Adobe,云算力IDCAI软件平台/,ADBE
+AMZN,Amazon,云算力IDCAI软件平台/,AMZN
+APLD,Applied Digital,云算力IDCAI软件平台/,APLD
+CRWD,CrowdStrike,云算力IDCAI软件平台/,CRWD
+CRWV,CoreWeave,云算力IDCAI软件平台/,CRWV
+DLR,Digital Realty,云算力IDCAI软件平台/,DLR
+GOOGL,Alphabet Inc,云算力IDCAI软件平台/,GOOGL
+IBM,International Business Machines,云算力IDCAI软件平台/,IBM
+IREN,IREN Limited,云算力IDCAI软件平台/,IREN
+META,Meta Platforms,云算力IDCAI软件平台/,META
+MSFT,微软,云算力IDCAI软件平台/,MSFT
+NTNX,Nutanix,云算力IDCAI软件平台/,NTNX
+ORCL,Oracle Corporation,云算力IDCAI软件平台/,ORCL
+BABA,Alibaba 阿里巴巴,云算力IDCAI软件平台/,BABA
+EQIX,Equinix,云算力IDCAI软件平台/,EQIX
+NBIS,Nebius Group,云算力IDCAI软件平台/,NBIS

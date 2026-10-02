@@ -1,0 +1,164 @@
+# 公司收入传导与价值传导评估：HOYA Corporation（HOCPY）
+
+> 正式输出目录：`分析报告/公司评估/`  
+> 报告日期：2026-06-12（America/Los_Angeles）  
+> 主口径：NTM，即 2026-06-12 起未来 12 个月或未来 4 个季度。HOYA 财年以 3 月末为年结；公司把截至 2026-03-31 的年度称为 FY25。  
+> 边界：本文只评估经营收入、利润、现金流和经营价值传导；不输出市场定价、目标价、投资评级、全公司排名或估值倍数判断。未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归结论或模型比较。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径是 NTM 经营收入和利润传导；FY25 全年和 FY25Q4 是当前收入锚点；FY28 以后新加坡 EUV blanks 新厂、越南 HDD glass substrates 新厂、玻璃/TGV 先进封装机会只作为补充或远期期权。
+- 当前收入基准、指引和 run-rate：FY25 收入 `9477.49亿日元`，经营利润 `2852.41亿日元`，经营利润率 `30.1%`；FY25Q4 收入 `2481.30亿日元`，季度年化 run-rate 约 `9925亿日元`。公司未给 FY26 全年正式量化指引；当前经营锚点来自管理层产品表述：Life Care 稳定增长，LSI/EUV blanks 延续中期约 `10%-15%` 轨迹，HDD substrates 对未来采用高个位数增长假设但若需求兑现会尽量供货，Imaging/CUPO 从高增长转向稳健扩张。
+- 重要产品/业务线：Health care related products（眼镜镜片、隐形眼镜）、Medical related products（内窥镜、IOL、人工骨等）、LSI mask blanks（EUV/DUV）、HDD glass substrates、FPD photomasks/blanks、Imaging/CUPO/optical products；玻璃/TGV/先进封装玻璃只列远期期权。
+- NTM 公司收入四情景：悲观 `9300-9800亿日元`；基准 `1.00-1.035万亿日元`；乐观 `1.055-1.11万亿日元`；极度乐观 `1.13-1.21万亿日元`。基准不是 FY25Q4 强势的线性外推，而是 Life Care 稳定、IT 高可信增长和低证据机会折扣后的经营兑现。
+- 利润或 EBITDA 四情景：HOYA 不披露统一传统毛利率；本文以经营利润率和净利润方向判断。悲观 OPM `27.0%-29.0%`、净利润约 `2100-2450亿日元`；基准 OPM `29.5%-31.0%`、净利润约 `2550-2850亿日元`；乐观 OPM `31.0%-33.0%`、净利润约 `2900-3300亿日元`；极度乐观 OPM `33.0%-36.0%`、净利润约 `3350-3900亿日元`。
+- 最大传导瓶颈：EUV/DUV mask blanks 和 HDD glass substrates 都有需求强信号，但 FY26 主要受现有产能、客户认证、交付节奏、折旧和客户 demand materialization 限制；大扩产收入贡献主要在 FY28 以后。
+- 最大利润率变量：IT 分部 mix 和利用率。FY25 IT OPM `52.5%`，但 FY25Q4 已因折旧和高稼动相关费用降至 `51.0%`；若 EUV/HDD 增长主要由高毛利 mix 支撑，利润率能保住；若 FPD、低附加值 imaging 或扩产折旧占比上升，收入上修不必然留下来。
+- 最大现金流变量：FY26-FY28 EUV blanks 与 HDD substrates 扩产会提高资本开支和折旧；基准下经营现金流可覆盖扩产，但自由现金流较 FY25 高点可能不线性增长。
+- 可信度：公司层面中高。分部和大类收入是 A 级证据；LSI/HDD/FPD/CUPO 的增长率和扩产是 B/C 级强证据；产品绝对收入拆分、CUPO 子项收入和玻璃/TGV 商业化仍需估算或降级。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Health care related products：眼镜镜片、隐形眼镜等 | FY25 `4507.60亿日元` | `47.6%` | 公司最大收入底座，决定 Life Care 稳定性和现金流 | A | 进入基准；按中个位数增长处理，不因 AI 上修 | MiYOSMART iQ、渐进片、订阅和自有品牌 mix 改善 |
+| Medical related products：内窥镜、IOL、AER、人工骨等 | FY25 `1399.19亿日元` | `14.8%` | 稳定但受中国采购、区域招标、供应恢复影响 | A | 进入基准；按低到中个位数增长处理 | IOL 高端化、内窥镜区域恢复、AER 替换周期 |
+| LSI mask blanks：EUV blanks + advanced DUV blanks | FY25 估算 `1250-1500亿日元` | 估算 `13%-16%` | IT 分部利润核心；AI/HPC、先进逻辑、HBM/DRAM EUV 层的最直接材料暴露 | B | 进入基准；以 A 级 IT/Electronics 收入和 B 级产品增长为锚，产品绝对值为估算 | 新加坡 EUV blank 新楼 FY28 量产、1nm/High-NA/curvilinear 相关认证 |
+| HDD glass substrates：3.5 寸 nearline 高容量盘玻璃基板 | FY25 估算 `900-1150亿日元` | 估算 `9%-12%` | AI 数据湖、对象存储、nearline HDD 容量扩张传导最清晰 | B | 进入基准；以 Q4 `+25%`、管理层高个位数假设和第二客户 H2 2026 节奏校准 | 越南新厂 phase 1 约 `500亿日元`，FY28 后贡献；第三客户 FY27 ramp |
+| FPD photomasks/blanks | FY25 估算 `450-650亿日元` | 估算 `5%-7%` | FY25Q4 增长高，但主要是显示新产品和低基数，不是 AI 数据中心主线 | B | 进入公司基准但不作为 AI 乐观主驱动；高增长需折扣 | 高附加值 phase-shift/halftone masks，折叠屏和 IT OLED |
+| Imaging/CUPO/optical products | FY25 `589.94亿日元`，其中 CUPO 未单独披露 | `6.2%` | CUPO 是光通信 optical isolator 小材料暴露；整体 Imaging 还包含镜头/可穿戴/车载 | A（Imaging）/C（CUPO） | Imaging 进入基准；CUPO 只作为乐观增强，不单独驱动公司基准 | CPO/optical I/O、1.6T/更高端口光通信材料 |
+| Glass carrier/TGV/advanced packaging glass adjacency | 未披露；NTM 可确认收入无法可靠量化 | 无法可靠量化 | 与 HOYA 光学玻璃能力相邻，但缺少客户、订单和收入确认路径 | D/E | 不进 NTM 基准；乐观也只作低可信小额上限 | 2028 后 glass core substrate、TGV、CPO glass coupler 或临时载板 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不判断 HOYA 份额、收入确认、利润率或公司层面汇总。需求强弱均相对该产品当前需求锚，而不是相对题材热度。若产品缺少量化行业单位，使用收入等价需求、客户项目节奏或管理层产品增长表述作为需求单位。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Health care related products | FY25 `4507.60亿日元`；FY25Q4 eyeglass lenses `+11%`、contact lenses `+4%`；管理层 FY26 目标是高附加值产品和渠道/订阅稳定增长 | 全球眼镜和隐形眼镜需求仅持平或低个位数，欧美疲弱、汇率和消费压力压制 | 中个位数需求增长，亚洲/南美和高附加值镜片抵消欧美弱 | MiYOSMART iQ、渐进片、自有品牌和订阅推动中高个位数增长 | 全球区域同步改善并且高附加值 mix 快速提升，需求接近双位数 | 约 `-2%` 到 `+10%+` 收入等价需求 | 基准符合当前预期 | A 级收入锚；反证是欧美弱、眼科消费压力、渠道竞争 |
+| Medical related products | FY25 `1399.19亿日元`；FY25Q4 endoscopes `+14%`、IOL `+8%`、artificial bone and other `+14%`，但中国内窥镜仍恢复慢 | 中国采购和本土竞争继续拖累，招标项目延迟，IOL 供应恢复低于预期 | 低到中个位数需求增长，欧美/日本稳定，中国逐步修复 | 内窥镜招标、IOL 高端化和 AER 替换同步改善 | 中国和欧美同时恢复且产品结构上移，需求高个位数到低双位数 | 约 `-5%` 到 `+12%` 收入等价需求 | 基准略保守，乐观需区域恢复证据 | A 级产品收入；反证是中国 NVBP/本土替代、医院预算和地缘扰动 |
+| LSI mask blanks：EUV/DUV | FY25Q4 LSI `+18%`，Q&A 确认 EUV blanks 约 `+25%`；管理层仍用 EUV 中期 `10%-15%` 作为合理轨迹 | AI/HPC tape-out 或先进节点 R&D 延后，DUV 中国/存储需求降温，需求低于中高个位数 | EUV/advanced DUV 需求按 `10%-15%` 左右增长；AI/HPC、leading-edge logic、memory 支撑 | 多客户 AI ASIC、2nm/3nm、HBM4/DRAM EUV 层和 respin 增多，需求 `18%-30%` | 先进逻辑、HBM、ASIC 和区域化 mask demand 同时突破，需求 `35%+` 但受供给和认证限制 | 产品需求池约 `-5%` 到 `+35%+` | 基准符合管理层当前锚，Q4 强势只支持乐观而非直接上移基准 | HOYA presentation 披露 LSI/EUV 强；行业高端光罩需求支持；反证是客户设计 release 延迟、capacity 和 High-NA 时间表 |
+| HDD glass substrates | FY25Q4 HDD substrates `+25%`；Q&A 称当前 demand very strong、工厂接近满产，但管理层用 high single-digit 作为合理假设；第二客户 11-substrate model 2026H2、12-substrate model 2027 | nearline HDD 客户库存重建后放缓，2.5 寸下滑更明显，第二客户 ramp 延后 | 高个位数到低双位数需求增长；3.5 寸 nearline 继续强，第二客户 H2 逐步贡献 | AI object storage 和 high-capacity HDD 供需紧，第二客户顺利 ramp，需求 `20%-35%` | hyperscaler 冷温存储 attach 大幅上修，客户抢锁 10/11/12 盘 glass capacity，需求 `40%+` | 约 `-5%` 到 `+40%+` 基板需求 | 基准低于 Q4 增速但符合管理层当前预期 | Seagate/WD 高容量 HDD 供需强支持需求；反证是 HAMR/SMR 可靠性、QLC SSD 替代、客户库存周期 |
+| FPD photomasks/blanks | FY25Q4 `+37%`，低基数、foldable smartphone、IT devices 和高附加值 mask mix 支撑 | 显示新机型开发放缓，FY25Q4 低基数效应消失，需求回落 | 中个位数增长，高附加值 phase-shift/halftone mix 支撑 | foldable、IT OLED 和客户新产品项目延续，需求中高双位数 | 显示客户新平台密集开发并且高端 mask 产能紧张，需求 `25%+` | 约 `-10%` 到 `+25%+` | 基准显著低于 Q4，因为 Q4 有低基数和恢复因素 | 需求证据为 B；反证是该线与 AI 数据中心弱相关，不能用 AI capex 上修 |
+| Imaging/CUPO/optical products | FY25 Imaging `589.94亿日元`；FY25Q4 `+30%`，CUPO 受 AI data center optical communications 支撑，另有 wearables/action cameras/vehicle sensing | 光模块或相机 DRAM 短缺、客户库存和可穿戴订单放缓，使需求低个位数或下降 | Imaging 中个位数到低双位数增长；CUPO 高于整体但体量小 | CUPO 在 optical isolator/光通信客户中扩大，wearables 同步强，整体 `15%-25%` | 1.6T/CPO/optical I/O 采用提前，CUPO 从小材料变成更广平台材料，整体 `30%+` | 约 `-5%` 到 `+30%+` | 基准按管理层“steady expansion”处理，乐观需 CUPO 客户证据 | A 级 Imaging 收入，C 级 CUPO 子项；反证是 CUPO 不披露绝对收入、客户集中和模块架构替代 |
+| Glass carrier/TGV/advanced packaging glass adjacency | 行业层面 SEMI/GNC 把 glass core substrate limited-volume production 放在约 2028；HOYA 未披露明确客户/订单 | NTM 仍为样品/研发，无商业需求池 | 仅有小额材料/样品/载板需求，不形成 HOYA 可确认收入池 | 出现客户样品或 pilot 订单，但收入仍小 | 一家以上 AI/HPC 客户在 NTM 内明确 design-in，需求提前但仍需资格认证 | `0` 到小额样品；无法可靠量化 | 不进入当前预期 | 只有行业相关性和能力邻接，缺公司特定 NTM 时间表；放入远期期权 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断产品需求是否能进入 HOYA 的 NTM 收入表，以及当前可收入化基数是多少；不预测增长、不判断利润率。A/B 级证据可进入基准；C 级只有客户、产品、时间表清楚时小比例纳入；D/E 级不进入 NTM 基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Health care related products | FY25 已披露收入 `4507.60亿日元`；FY25Q4 `1167.48亿日元` | 直接收入 | Life Care 稳定利润，低于 IT 但现金流韧性强 | `4400-4550亿日元` | `4680-4850亿日元` | `4900-5150亿日元` | `5200-5500亿日元` | 基准符合当前稳定增长预期 | A | 是 | 已披露收入表和产品增长；高附加值镜片、contact lens retention | 进入 NTM 主表，作为现金流底座 |
+| Medical related products | FY25 已披露收入 `1399.19亿日元`；FY25Q4 `383.15亿日元` | 直接收入 | 稳定但受区域和监管影响，利润率低于 IT | `1320-1400亿日元` | `1420-1500亿日元` | `1520-1650亿日元` | `1700-1850亿日元` | 基准符合当前预期，乐观取决于中国/欧美恢复 | A | 是 | 已披露收入表；内窥镜、IOL、AER 等产品均有 Q4 增长披露 | 进入 NTM 主表 |
+| LSI mask blanks：EUV/DUV | IT Electronics FY25 `2957.57亿日元`；LSI FY25Q4 `+18%`、EUV Q4约 `+25%`；产品绝对收入未披露，本文估算 FY25 `1250-1500亿日元` | 直接收入 | IT 高毛利核心，认证壁垒和定价权强 | `1250-1450亿日元` | `1450-1650亿日元` | `1750-2100亿日元` | `2100-2450亿日元` | 基准为当前 10%-15% 管理层锚；乐观高于当前预期 | B | 是 | LSI/EUV 增长、IT Electronics 收入、新加坡扩产、AI/HPC leading-edge logic | 进入 NTM 主表；极度乐观受现有产能限制 |
+| HDD glass substrates | IT Electronics FY25 `2957.57亿日元`；HDD substrates FY25Q4 `+25%`；3.5 寸 Q4约 `+25%`；产品绝对收入未披露，本文估算 FY25 `900-1150亿日元` | 直接收入 | 高毛利材料，受产能、客户认证和盘数路线约束 | `950-1100亿日元` | `1080-1300亿日元` | `1350-1650亿日元` | `1650-1950亿日元` | 基准接近管理层 high single-digit/低双位数；乐观高于当前预期 | B | 是 | Q4 增长、第二客户 H2 2026、12-substrate 2027、越南扩产计划 | 进入 NTM 主表；FY28 新厂不进 NTM 基准 |
+| FPD photomasks/blanks | IT Electronics 内产品；FY25Q4 `+37%`，绝对收入未披露，本文估算 FY25 `450-650亿日元` | 直接收入 | IT 内中高毛利但低于 EUV/HDD，周期和低基数扰动更大 | `420-550亿日元` | `500-620亿日元` | `650-800亿日元` | `800-1000亿日元` | 基准低于 Q4 增速；不因 AI 主题上修 | B | 是 | 产品增长披露；FY26 高附加值 masks mix 目标 | 进入 NTM 公司表，但不是 AI 数据中心传导核心 |
+| Imaging/CUPO/optical products | FY25 Imaging 已披露 `589.94亿日元`；FY25Q4 `141.26亿日元`、`+30%`；CUPO 未单独披露 | 直接收入；CUPO 为 AI 光通信间接收入 | Imaging 利润属性好但内部 mix 差异大；CUPO可能较高毛利 | `550-620亿日元` | `620-700亿日元` | `720-900亿日元` | `950-1200亿日元` | 基准符合稳健扩张；CUPO 只提高乐观上限 | A/C | 是，但 CUPO 子项折扣 | Imaging 收入表 A；CUPO 有公司披露但无绝对收入 | Imaging 进入 NTM；CUPO 不单独放大基准 |
+| Glass carrier/TGV/advanced packaging glass adjacency | 无 HOYA NTM 明确订单、客户或收入披露；行业预计 glass core limited-volume production 约 2028 | 主题相关/能力邻接，当前不是可确认收入 | 若商业化可能高毛利，但当前无法验证 | `0` | `0-20亿日元` | `20-80亿日元` | `80-200亿日元` | 当前预期之外，只代表上限和远期期权 | D/E | 否 | 只有行业与能力邻接，无客户、时间表、收入确认路径 | 不进入 NTM 基准；移入附录跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从第 3 节需求和第 4 节收入基数出发，判断每个重要产品在 NTM 内可能贡献的收入和利润。产品级区间是单项条件区间，不能把所有产品的上沿机械相加为公司情景；公司汇总在第 6 节重新去重和校准。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Health care related products | 悲观产品 | `4400-4550亿日元` | `750-830亿日元` | 小幅下行 | 低于当前预期 | 欧美弱、消费压力、汇率或渠道压力 | 保留悲观 | 高附加值 mix 不足、区域增长不均 |
+| Health care related products | 基准产品 | `4680-4850亿日元` | `850-930亿日元` | 稳定到小幅改善 | 符合当前预期 | FY25 A级收入；MiYOSMART iQ、渐进片、private-label/subscription | 保留基准 | 增长主要是稳定现金流，不是高弹性 |
+| Health care related products | 乐观产品 | `4900-5150亿日元` | `930-1050亿日元` | 改善 | 高于当前预期 | 中国眼镜恢复、亚洲/南美强、高附加值产品扩大 | 保留乐观 | 欧美和渠道执行需同时改善 |
+| Health care related products | 极度乐观产品 | `5200-5500亿日元` | `1050-1200亿日元` | 明显改善 | 明显高于当前预期 | 全球区域同步改善且 mix 快速上移 | 下移为乐观上限 | 缺少 NTM 非线性需求证据 |
+| Medical related products | 悲观产品 | `1320-1400亿日元` | `140-180亿日元` | 下行 | 低于当前预期 | 中国采购和本土竞争拖累、招标延迟 | 保留悲观 | 医疗产品审批和招标周期 |
+| Medical related products | 基准产品 | `1420-1500亿日元` | `180-220亿日元` | 稳定 | 符合当前预期 | FY25 A级收入；内窥镜、IOL、AER Q4 均增长 | 保留基准 | 中国恢复慢，IOL 供应和区域 mix |
+| Medical related products | 乐观产品 | `1520-1650亿日元` | `220-280亿日元` | 改善 | 高于当前预期 | 欧美项目、IOL 高端化、中国逐步修复 | 保留乐观 | 需要区域订单和供应恢复 |
+| Medical related products | 极度乐观产品 | `1700-1850亿日元` | `280-350亿日元` | 明显改善 | 明显高于当前预期 | 医疗多个子品类同步恢复 | 下移为乐观上限 | 缺少 NTM 订单和市场恢复的非线性证据 |
+| LSI mask blanks：EUV/DUV | 悲观产品 | `1250-1450亿日元` | `650-800亿日元` | 稳定到下行 | 低于当前预期 | advanced node tape-out 延后、DUV 需求放缓、客户库存 | 保留悲观 | 设计 release 延迟、High-NA 仍非 FY26 主收入 |
+| LSI mask blanks：EUV/DUV | 基准产品 | `1450-1650亿日元` | `820-1050亿日元` | 稳定 | 符合当前预期 | FY25Q4 LSI `+18%`，EUV约 `+25%`；管理层维持 `10%-15%` 中期锚 | 保留基准 | 现有产能和认证限制，不线性外推 Q4 |
+| LSI mask blanks：EUV/DUV | 乐观产品 | `1750-2100亿日元` | `1050-1350亿日元` | 改善 | 高于当前预期 | 多客户 AI ASIC、2nm/3nm、HBM/DRAM EUV 层、DUV 高端需求 | 保留乐观 | 谁买、何时确认取决于客户 tape-out 和供货能力 |
+| LSI mask blanks：EUV/DUV | 极度乐观产品 | `2100-2450亿日元` | `1300-1650亿日元` | 明显改善 | 远高于当前预期 | 需求、客户捕获、mix 和利用率同时突破 | 下移为乐观上限 | 新加坡扩产 FY28 才量产，FY26 产能上限硬 |
+| HDD glass substrates | 悲观产品 | `950-1100亿日元` | `420-550亿日元` | 下行 | 低于当前预期 | nearline HDD 需求降温、2.5 寸下滑、第二客户延后 | 保留悲观 | HAMR/SMR 可靠性、QLC SSD 替代 |
+| HDD glass substrates | 基准产品 | `1080-1300亿日元` | `550-750亿日元` | 稳定 | 符合当前预期 | FY25Q4 `+25%`；工厂接近满产；管理层 high single-digit 假设；第二客户 H2 2026 | 保留基准 | 产能、客户 qualification、盘片路线 |
+| HDD glass substrates | 乐观产品 | `1350-1650亿日元` | `750-1000亿日元` | 改善 | 高于当前预期 | AI object storage 和 30TB+ nearline HDD 供需紧，11/12 substrate model adoption | 保留乐观 | HDD OEM 订单节奏和客户集中 |
+| HDD glass substrates | 极度乐观产品 | `1650-1950亿日元` | `950-1250亿日元` | 明显改善 | 远高于当前预期 | hyperscaler 抢锁 high-capacity HDD glass capacity，多客户 ramp | 下移为乐观上限 | 越南新厂 FY28 贡献，FY26 极限受现有产能约束 |
+| FPD photomasks/blanks | 悲观产品 | `420-550亿日元` | `120-200亿日元` | 下行 | 低于当前预期 | 显示客户项目放缓，Q4 低基数效应消失 | 保留悲观 | 与 AI 数据中心弱相关 |
+| FPD photomasks/blanks | 基准产品 | `500-620亿日元` | `170-250亿日元` | 稳定 | 符合当前预期 | FY25Q4 `+37%`，FY26 高附加值 mask mix 目标 | 保留基准但折扣 Q4 增速 | display 周期和低基数 |
+| FPD photomasks/blanks | 乐观产品 | `650-800亿日元` | `230-340亿日元` | 改善 | 高于当前预期 | foldable/IT OLED 和 phase-shift/halftone mix 持续 | 保留乐观 | 需要显示客户新产品项目持续 |
+| FPD photomasks/blanks | 极度乐观产品 | `800-1000亿日元` | `300-450亿日元` | 改善 | 远高于当前预期 | 多个高端显示客户项目同时强 | 下移为乐观上限 | 不应因 AI 主题纳入极度乐观公司主驱动 |
+| Imaging/CUPO/optical products | 悲观产品 | `550-620亿日元` | `180-250亿日元` | 下行 | 低于当前预期 | 光模块库存、DRAM 短缺、相机/可穿戴订单放缓 | 保留悲观 | CUPO 未披露绝对收入，客户集中 |
+| Imaging/CUPO/optical products | 基准产品 | `620-700亿日元` | `230-320亿日元` | 稳定 | 符合当前预期 | FY25 Imaging A级收入；Q4 `+30%`；管理层称 CUPO momentum continued | 保留基准 | CUPO 体量小，不能替代总收入主线 |
+| Imaging/CUPO/optical products | 乐观产品 | `720-900亿日元` | `300-450亿日元` | 改善 | 高于当前预期 | AI data center optical communications、wearables 和车载 sensing 同步增长 | 保留乐观 | 光模块架构变化和客户库存 |
+| Imaging/CUPO/optical products | 极度乐观产品 | `950-1200亿日元` | `420-650亿日元` | 明显改善 | 远高于当前预期 | CUPO 或相关 optical material 进入更广泛 1.6T/CPO 平台 | 下移为乐观上限 | 缺少 CUPO 绝对收入、客户和端口 attach 证据 |
+| Glass carrier/TGV/advanced packaging glass adjacency | 悲观产品 | `0` | `0` | 无影响 | 符合谨慎预期 | 无订单和收入确认路径 | 保留排除 | 只有主题相关性 |
+| Glass carrier/TGV/advanced packaging glass adjacency | 基准产品 | `0-20亿日元` | `0-10亿日元` | 无实质影响 | 当前预期之外 | 行业仍在样品/qualification；HOYA 未披露客户 | 移入附录 | 2028 前 limited production 证据不足 |
+| Glass carrier/TGV/advanced packaging glass adjacency | 乐观产品 | `20-80亿日元` | `5-30亿日元` | 小幅正向 | 高于当前预期但低可信 | 出现样品或 pilot 订单 | 仅作跟踪 | 不能把行业 TAM 当 HOYA 收入 |
+| Glass carrier/TGV/advanced packaging glass adjacency | 极度乐观产品 | `80-200亿日元` | `30-90亿日元` | 小幅到中等正向 | 远高于当前预期 | 一家以上 AI/HPC 客户明确 design-in | 移入附录 | 无 NTM 公开客户/交付/确认路径 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品贡献合成为公司 NTM 总收入、经营利润率、净利润和自由现金流方向。汇总时排除产品间重复计算，不把所有产品上沿相加；不使用市场价格或估值数据作为经营证据。HOYA 不披露统一传统 COGS 毛利率，故毛利率字段按要求填“无法可靠量化”并说明原因。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `9300-9800亿日元` | `-1.9%` 至 `+3.4%` vs FY25 | 低于当前 run-rate 和产品锚；IT 增长不足以抵消 Life Care/FPD/Imaging 波动 | 无法可靠量化；公司按费用性质披露，未披露统一 COGS 毛利率 | `27.0%-29.0%` | 净利润约 `2100-2450亿日元` | 下降；库存、capex、折旧和利用率压制 FCF | 中 | EUV/HDD 订单延迟、Life Care 区域弱、IT 折旧和高稼动费用 |
+| 基准公司 | `1.00-1.035万亿日元` | `+5.5%` 至 `+9.2%` vs FY25 | 接近当前预期正常兑现；略高于 FY25Q4 年化但不线性外推 Q4 强增长 | 无法可靠量化；以 OPM 和 segment profit 校准 | `29.5%-31.0%` | 净利润约 `2550-2850亿日元` | 稳定到小幅下降；经营现金流强，但 EUV/HDD 扩产提高资本开支 | 中高 | 现有产能、产品 mix、客户确认节奏、FY26 折旧 |
+| 乐观公司 | `1.055-1.11万亿日元` | `+11.3%` 至 `+17.1%` vs FY25 | 高于当前预期；来自 LSI/HDD/CUPO/Health Care mix 多点增强，不靠单一小项目 | 无法可靠量化；高毛利 IT mix 支撑 | `31.0%-33.0%` | 净利润约 `2900-3300亿日元` | 稳定到改善；营运资本吸收部分增量，capex 仍高 | 中 | EUV/HDD 供给、HDD 客户 ramp、CUPO 体量和客户证据 |
+| 极度乐观公司 | `1.13-1.21万亿日元` | `+19.2%` 至 `+27.7%` vs FY25 | 远高于当前预期；要求需求、公司捕获、利润质量、执行同时突破 | 无法可靠量化；若 IT 高毛利 mix 大幅上升才成立 | `33.0%-36.0%` | 净利润约 `3350-3900亿日元` | 改善但不线性；高 capex 和产能爬坡仍消耗现金 | 中低 | FY26 产能上限、新厂 FY28 才贡献、无 backlog 披露、多个假设需同时成立 |
+
+公司层面校准说明：基准收入区间的中点约 `1.02万亿日元`，相当于 Life Care `+4%-7%`、IT `+8%-13%`、Other 基本退出后的组合；这与 FY25Q4 年化 run-rate、产品增长披露和管理层中期措辞相一致。乐观与极度乐观的差别不在于把每条产品线都上修，而在于 EUV/HDD 两条高利润线是否能同时把需求、可确认收入、mix 和利用率传导到利润。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景位置。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在实际影响层级处理一次，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY25 全年收入 `9477.49亿日元`、经营利润率 `30.1%`；FY25Q4 收入 `2481.30亿日元`、经营利润率 `30.1%` | 公司汇总 | 给公司 NTM 基准提供 A 级 run-rate | 证明 30% OPM 是当前结构锚，不自动上修 | 支撑经营现金流，但不代表 FCF 线性增长 | 保留基准 |
+| IT 分部 FY25 收入 `3547.51亿日元`、OPM `52.5%`；FY25Q4 IT 收入 `930.67亿日元`、OPM `51.0%` | 公司利润/产品贡献 | LSI、HDD、FPD、Imaging 的总收入上限受 IT 分部约束 | 高毛利 mix 支撑利润，但 Q4 OPM 下滑提醒折旧和费用 | 扩产和高稼动提高折旧 | 保留基准，限制极度乐观 |
+| FY25Q4 LSI `+18%`，EUV blanks 约 `+25%`；新加坡 EUV blanks 新楼约 `420亿日元`，FY28 量产 | 需求、收入基数、产品贡献 | 支持 NTM LSI 基准和乐观 | EUV mix 高，正向利润率 | FY26 有投资和折旧前置，收入大扩产在 FY28 | 保留乐观；极度乐观下移为乐观上限 |
+| 管理层对 EUV 中期仍采用 `10%-15%` 左右轨迹，不因 Q4 强势大幅上调 | 证据校准 | 限制把 Q4 `+25%` 线性放进 FY26 基准 | 防止利润率过度外推 | 执行取决于 customer demand materialization | 基准保留，极度乐观下移 |
+| FY25Q4 HDD substrates `+25%`，3.5 寸约 `+25%`；第二客户 11-substrate model H2 2026，12-substrate model 2027 | 需求、收入基数、产品贡献 | 支持 HDD 基准和乐观 | 高容量 substrates mix 正向利润 | 第二客户 ramp 增加交付和营运资本压力 | 保留乐观 |
+| 管理层称 HDD 工厂接近满产，但长期用 high single-digit growth 合理假设 | 收入确认/执行 | 限制 FY26 极度乐观收入上沿 | 满产有利利用率，但产能瓶颈限制收入 | FY28 越南新厂前，FY26 主要靠现有产能和 Laos 加设备 | 基准保留；极度乐观下移 |
+| FPD FY25Q4 `+37%` 来自低基数、新显示项目和高附加值 mask mix | 需求/产品贡献 | 支持 FPD 进入公司收入，但不支持 AI 主线外推 | 高附加值 mix 有利，但周期波动大 | 显示客户项目节奏不稳定 | 保留基准；乐观保留但不进公司极度乐观主驱动 |
+| Imaging FY25 `589.94亿日元`，FY25Q4 `+30%`；CUPO 受 AI data center optical communications 支撑 | 产品贡献 | 支持 Imaging 基准和 CUPO 乐观增强 | CUPO 可能高毛利，但绝对收入未披露 | 光模块库存、DRAM 短缺和客户架构影响确认 | 基准保留；CUPO 极度乐观下移为乐观上限 |
+| Life Care FY25 收入 `5906.80亿日元`，OPM `18.1%`；Health care `4507.60亿日元`、Medical `1399.19亿日元` | 公司组合 | 提供稳定收入底座 | 低于 IT 利润率，mix 变化影响公司 OPM | 现金流稳定但增长弹性有限 | 保留基准 |
+| 中国内窥镜恢复慢、本土竞争和采购要求更严格 | 医疗需求 | 限制 Medical 乐观 | 压制 Life Care mix 和利润 | 项目验收和区域执行风险 | 保留悲观，不重复惩罚公司整体 |
+| Glass/TGV/advanced packaging glass 行业约 2028 limited-volume production，HOYA 无明确客户和订单 | 收入基数/证据可信度 | 不允许进入 NTM 基准 | 利润率无法验证 | 无收入确认路径 | 移入附录，仅作跟踪 |
+| HOYA 不披露 backlog、booking、产品绝对收入、CUPO 子项收入 | 证据可信度 | 产品区间必须宽，不能用订单硬加总 | 不能精准量化产品 OPM | 可见度低于披露 backlog 的公司 | 保留中高可信度，限制极度乐观 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | IT 需求低于预期，Life Care 区域弱，收入 `9300-9800亿日元`、OPM `27.0%-29.0%` | Life Care 现金流底座、EUV/HDD 已有 A/B 级收入和需求证据 | 无 backlog；EUV/HDD 产能和客户确认延迟；中国 medical 弱；FPD/Imaging 波动 | 保留 | 悲观公司 | 中 | 中国 medical 风险只影响 Life Care/Medical；不再重复压低 LSI/HDD |
+| 基准 | 当前预期正常兑现，收入 `1.00-1.035万亿日元`、OPM `29.5%-31.0%` | FY25/FY25Q4 A级财务锚，IT OPM `52.5%`，LSI/HDD Q4 强，Life Care 稳定 | 产品绝对拆分需估算；FY26 扩产折旧；管理层未正式给 FY26 总量化指引 | 保留 | 基准公司 | 中高 | 折旧风险只在利润率/现金流处理，不重复削减需求 |
+| 乐观 | LSI/HDD/CUPO/Health Care mix 多点增强，收入 `1.055-1.11万亿日元`、OPM `31.0%-33.0%` | EUV 和 3.5 寸 substrates Q4 均约 `+25%`，第二客户 H2 2026，AI 光通信 CUPO momentum | 管理层对 EUV 和 HDD 都未把 Q4 强度线性上修；CUPO 未披露绝对收入 | 保留 | 乐观公司 | 中 | 无 backlog 只限制可信度和极度乐观，不取消已有乐观证据 |
+| 极度乐观 | 需求、公司捕获、利润率和执行同时突破，收入 `1.13-1.21万亿日元`、OPM `33.0%-36.0%` | EUV/HDD 是真实瓶颈型材料，IT 高毛利，客户扩产计划明确 | 新加坡/越南大扩产 FY28 才贡献；FY26 产能上限；Glass/TGV 无订单；CUPO小且未量化 | 下移 | 乐观上限/附录跟踪组合 | 中低 | 玻璃/TGV 只移入附录，不重复压低已确认 LSI/HDD 基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司。NTM 收入最可能在 `1.00-1.035万亿日元`，较 FY25 增长约 `5.5%-9.2%`；经营利润率最可能在 `29.5%-31.0%`。核心传导链是：AI/HPC 先进节点和存储需求提升 -> EUV/DUV blanks 与 3.5 寸 nearline HDD glass substrates 需求增强 -> HOYA 在认证、材料、良率和供给中的位置把部分需求转为高毛利 IT 收入 -> Life Care 提供现金流底座 -> 扩产折旧和产能节奏决定利润留下多少。
+- NTM 收入结论：HOYA 是“Life Care 稳定现金流 + IT 高壁垒材料弹性”的组合。NTM 基准收入增长不是单一 AI 题材推动，而是 Health care/Medical 稳定增长、LSI blanks `10%-15%` 左右可见增长、HDD substrates 高个位数到低双位数增长、FPD/Imaging 正常化后的合成。
+- 利润/现金流结论：利润质量高于普通材料公司，因为 IT 分部 FY25 OPM `52.5%`。但 FY26 不应把收入增长自动换成更高 OPM：Q4 IT OPM 已降至 `51.0%`，公司正在为 EUV/HDD 中期扩产投入资本，FY26-FY28 折旧和 capex 会吸收部分收入红利。
+- 主要传导瓶颈：第一是 FY26 现有产能而非 FY28 大扩产；第二是客户 qualification 和需求 materialization；第三是产品绝对收入缺少披露，导致 CUPO、FPD、LSI/HDD 细分贡献需要估算；第四是 Life Care 医疗线的区域修复和中国采购环境。
+- 乐观情景成立条件：EUV blanks 连续多个季度保持高双位数，AI ASIC/先进逻辑/HBM EUV 层带来更多 mask set；HDD 第二客户 H2 2026 顺利出货，11/12-substrate model 节奏兑现；IT OPM 维持 `51%+` 且折旧未吞噬高毛利 mix；CUPO 在光通信客户中继续被管理层反复强调。
+- 极度乐观情景成立条件：EUV/HDD 同时供不应求且 HOYA 能在 FY26 现有产能内提高 mix/价格/利用率；nearline HDD 客户抢锁 capacity 并带来高毛利 substrate mix；CUPO 或光通信材料从小业务变成可量化增长线；Life Care 同步不拖累。任何一个核心环节缺证据，极度乐观都应降为乐观上限。
+- 悲观情景触发条件：连续两个季度 LSI/EUV 或 HDD substrates 增速明显低于中个位数；第二客户 HDD ramp 延后；IT OPM 跌破 `48%-49%` 且不是短期折旧解释；中国 medical 继续拖累且 Health care 高附加值 mix 不能抵消；光模块/CUPO 或 FPD 出现库存周期。
+- 后续跟踪数据：HOYA FY26Q1/Q2 的 IT 分部收入和 OPM；LSI/EUV blanks 增长是否仍高于 `10%-15%`；HDD substrates 中 3.5 寸增长、第二客户 11-substrate model 出货；Vietnam/Singapore capex 进度和折旧；Imaging 中 CUPO 是否继续被提及；Life Care 中中国内窥镜、MiYOSMART iQ、IOL 供应恢复；Seagate/WD nearline HDD 毛利、lead time 和 high-capacity drive demand。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：HOYA 最新正式财务数据为 FY25Q4/全年，发布于 2026-04-30，期间截至 2026-03-31；本文 NTM 推断日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：HOYA FY25Q4 presentation、FY25Q4 quarterly report、FY25Q4 earnings call transcript、HOYA Information Technology business page；项目内 `公司调研/半导体材料_化学品_基板/HOCPY_HOYA_Corporation_公司调研_2026-06-11.md`；项目内正式行业资料。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：新加坡 EUV blank 新楼约 `420亿日元`、FY26 开工、FY28 mass production；越南 HDD glass substrate 新厂 phase 1 约 `500亿日元`，FY28 后贡献；Glass/TGV/advanced packaging glass 采用行业约 2028 limited-volume production 的补充口径，不进入 NTM 基准。
+- 主要来源：
+  - HOYA IR financial results page: https://www.hoya.com/en/investor/kessan/
+  - HOYA FY25 Q4 Earnings Presentation, 2026-04-30: https://ssl4.eir-parts.net/doc/7741/tdnet/2797232/00.pdf
+  - HOYA Quarterly Report for the three months ended Mar.31,2026, 2026-04-30: https://ssl4.eir-parts.net/doc/7741/tdnet/2797234/00.pdf
+  - HOYA FY25 Q4 Earnings Call Transcript, 2026-05-01: https://www.hoya.com/wp-content/uploads/2026/05/FY25-Q4-Transcript_E.pdf
+  - HOYA Information Technology business page: https://www.hoya.com/en/business/informationtechnology/
+  - `公司调研/半导体材料_化学品_基板/HOCPY_HOYA_Corporation_公司调研_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_高端光罩与先进封装掩模_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_HDD、对象存储与冷温数据存储_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_玻璃基板、TGV与玻璃检测_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_封装基板、中介层与RDL_2026-06-10.md`
+  - SEMI/GNC Glass Core Substrate market release, 2026-05-27: https://www.semi.org/en/semi-press-release/semi-and-global-net-corp-release-new-report-on-glass-core-substrate-market-and-development-trends-for-semiconductors
+  - Seagate FY2026Q3 results, 2026-04-28: https://investors.seagate.com/news/news-details/2026/Seagate-Technology-Reports-Fiscal-Third-Quarter-2026-Financial-Results/default.aspx
+  - Western Digital FY2026Q3 results, 2026-04-30: https://investor.wdc.com/news-releases/news-release-details/wd-reports-fiscal-third-quarter-2026-financial-results
+  - TSMC 2026 North America Technology Symposium, 2026-04-23: https://pr.tsmc.com/english/news/3302

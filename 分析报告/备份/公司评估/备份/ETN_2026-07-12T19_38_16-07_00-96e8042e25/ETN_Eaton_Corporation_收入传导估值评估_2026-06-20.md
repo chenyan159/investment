@@ -1,0 +1,193 @@
+# 公司收入传导与价值传导评估：Eaton Corporation（ETN）
+
+报告日期：2026-06-20  
+公司：Eaton Corporation plc  
+股票代码：ETN / NYSE  
+主口径：NTM，即从 2026-06-20 向后约 12 个月；因最新正式财报为 2026Q1，本报告用 2026Q2-2027Q1 为财务主口径，并用 2026H2-2027H1 作为需求和订单兑现的滚动参照。  
+资料边界：使用 `公司调研/`、`行业调研/` 及 Eaton 官方财报、投资者材料、新闻稿和产品资料；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较内容。  
+重要限制：Eaton 不披露 AI 数据中心单独收入、客户名单或分产品 backlog。本报告把数据中心、800VDC、Brightlayer、Boyd Thermal 等产品收入写成估算区间；凡无法可靠拆分的项目，标明“无法可靠精确拆分”，并以分部收入和订单为主锚。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营传导，不判断目标价、估值倍数或投资评级；FY2026 指引、2027 技术路线、Rubin/800VDC/SST/MVSST 只作为补充或上限跟踪。
+- 当前收入基准、指引和 run-rate：2025 年总收入 `274.48 亿美元`，Electrical Americas + Electrical Global 合计 `200.91 亿美元`、占 `73.2%`；2026Q1 总收入 `74.51 亿美元`、同比 `+17%`、organic `+10%`。管理层 2026 全年指引为 organic growth `+9% 至 +11%`，segment margin `24.1% 至 24.5%`，adjusted EPS `13.05-13.50 美元`，free cash flow `39-43 亿美元`。
+- 重要产品/业务线：Electrical Americas 配电系统、MV/LV switchgear、保护/断路器、UPS/BESS/ATS、busway/PDU/rack power、Fibrebond 预制电力模块、Electrical Global + Boyd Thermal、Brightlayer/EPMS/DCIM、800VDC/MVSST/Resilient、Aerospace、Mobility。
+- NTM 公司收入四情景：悲观 `308-320 亿美元`；基准 `325-340 亿美元`；乐观 `340-360 亿美元`；极度乐观 `360-385 亿美元`。基准相当于管理层 2026 指引正常兑现、Boyd 并表和 electrical backlog 正常转收入；极度乐观要求数据中心订单、交付、价格/mix、Boyd attach 和产能执行同时超预期。
+- 利润或 EBITDA 四情景：悲观 segment operating profit 约 `69-75 亿美元`、经营利润率 `22.5%-23.5%`；基准 `78-84 亿美元`、`24.0%-24.8%`；乐观 `85-94 亿美元`、`25.0%-26.0%`；极度乐观 `94-106 亿美元`、`26.0%-27.5%`。调整后净利润方向分别约 `47-51 / 52-56 / 57-63 / 63-71 亿美元`。
+- 最大传导瓶颈：不是行业需求，而是 electrical backlog 转收入的执行链条：breaker/relay/铜铝/busbar/功率器件供应、工程设计、FAT/SAT、现场 commissioning、客户 design freeze、电网 interconnection 和大型项目许可。
+- 最大利润率变量：Electrical Americas margin 能否从 2026Q1 的 `25.6%` 回到管理层全年指引隐含的高 20% 区间；Boyd Thermal 并表后的毛利/整合费用；Fibrebond/预制电力模块是否把 time-to-power 溢价留下来，而不是被大客户框架价吞掉。
+- 最大现金流变量：订单强度本身有利于预收和 backlog，但大额并购后债务、库存、应收账款、产能扩张、保修和现场交付会抬高营运资本。2026Q1 free cash flow `3.14 亿美元` 是季节性低点，管理层 FY2026 free cash flow 指引 `39-43 亿美元` 是基准现金流锚。
+- 可信度：公司级基准为中高；乐观为中；极度乐观为低至中。原因是 segment 收入、订单、backlog、指引证据较强，但数据中心单独收入、产品级利润率和 800VDC/液冷 attach rate 需要估算。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Electrical Americas 配电与电力系统：MV/LV switchgear、断路器、保护、UPS、busway、PDU、eHouse、Fibrebond | 2025 收入 `132.76 亿美元`；2026Q1 `36.00 亿美元`；NTM 基准 `154-165 亿美元` | 约 `47%-49%` | 公司增长和利润主引擎；数据中心、utility、C&I 共同驱动 | A | 进入基准。用 segment 收入、订单、backlog 和 2026 指引作为主锚 | 800VDC、MVDC、MVSST 在该业务内作为上限跟踪 |
+| Fibrebond / NordicEPOD / 预制电力模块 | Fibrebond 已并入 EA；收购时披露约 `14 亿美元`价格、2025E adjusted EBITDA `1.10 亿美元`；NTM 估算 `8-11 亿美元`收入能力，已含在 EA | 约 `2%-3%`，但不可与 EA 相加 | 缩短 data center time-to-power，可能提高系统 attach rate | B/C | 作为 EA 内的基准增量进入，但不单独加总 | 多园区标准化 power block 框架合同 |
+| UPS / BESS / ATS / backup power | 公司未单列；NTM 估算数据中心相关 `8-12 亿美元`，已含在 electrical segments | 约 `2%-4%` | AI 动态负载、电网稳定、BESS 接入加速器 | B/C | 进入基准的已成熟 UPS/ATS/电池柜；BESS/grid-shaping 上限折扣 | MV UPS、grid-interactive BESS、AI load smoothing |
+| Busway / PDU / rack power / containment | 公司未单列；NTM 估算数据中心相关 `7-11 亿美元`，已含在 electrical segments | 约 `2%-3%` | 高密 rack 的低压配电与可观测性核心 | B/C | 成熟 busway、PDU、rack power 进入基准；800VDC busway 不进基准 | 800VDC row bus、liquid-cooling compatible PDU |
+| Electrical Global + Boyd Thermal | 2025 Electrical Global `68.15 亿美元`；2026Q1 `19.45 亿美元`；Boyd 2025 sales `11 亿美元`、2026E sales `17 亿美元`含收购前收入；NTM 基准 `85-96 亿美元` | 约 `26%-29%` | 全球电气系统 + 液冷热管理并表 | A/B | 进入基准。Boyd 以保守并表收入进入，不把全部液冷订单池直接外推 | power + cooling 联合投标、chip-to-grid 平台 |
+| Brightlayer / EPMS / DCIM / power telemetry | 未单列；NTM 估算数据中心相关 `1.5-3.5 亿美元`，已含在 electrical segments | `<1%` 直接收入；利润属性高 | 软件和服务 attach，提高粘性和生命周期利润 | C | 小比例进入基准，必须依附硬件安装基础 | AI factory digital twin、energy orchestration |
+| 800VDC / MVSST / Resilient / DC protection | Resilient 收购价约 `0.86 亿美元`；直接收入小，当前多为 NRE、样品、试点、设计导入 | 直接收入 `<0.5%` | 2027+ 高密 AI rack 架构期权 | C/D | 不作为 NTM 基准主收入；只允许少量工程/试点收入进入基准 | Rubin/Kyber、1MW rack、SST/MVDC grid-to-rack |
+| Aerospace | 2025 `42.49 亿美元`；2026Q1 `11.39 亿美元`；NTM 基准 `48-53 亿美元` | 约 `15%-16%` | 高利润、订单强，但与 AI 数据中心弱相关 | A | 进入公司基准，但不作为 AI/DC 主线 | Ultra PCS、defense aerospace 长周期 |
+| Mobility | 2026Q1 `7.66 亿美元`；NTM 基准 `28-31 亿美元`；2027Q1 前计划分拆 | 约 `8%-10%` | 低增长、低利润率、组合稀释项 | A | 进入 NTM 公司总收入和利润，但按下行/剥离风险处理 | 分拆完成后公司组合更纯 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 Eaton 份额、收入确认或利润率。当前需求锚使用项目内行业调研的 AI 数据中心建设规模、设备订单池、rack power/UPS/液冷/DCIM 渗透，以及 Eaton 官方披露的 data center order momentum 作为交叉验证。所有需求变化均相对“当前已进入管理层指引、订单节奏、客户预算和行业建设路径的预期”判断。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Electrical Americas 配电与电力系统 | AI 数据中心电力/能源相关订单 2026 约 `450-800 亿美元`；transformer/switchgear 美国 AI 订单池 2026 约 `130-230 亿美元`；EA Q1 data center orders 约 `+240%` | AI 项目电力/许可延迟，订单保留但收入推迟；需求池低端 `4.0-5.5GW` IT-load 等效 | 2026 美国新增或进入设备订单 `6.0-8.5GW`，传统 MV/LV 和 eHouse 为主 | 设备抢购、slot reservation、utility 与 data center 共同抢产能，`9.0-12.0GW` | behind-the-meter、自备电、microgrid 和 fast-track 同时缓解，需求前移至 `12GW+` | 基准相对 2025 需求绝对扩张，订单池仍高于历史 run-rate | 基准符合当前强订单；悲观低于当前预期；乐观/极度乐观需要更多 book-to-bill 上修 | 正向：EA orders/backlog 强；反证：interconnection、许可、变压器 lead time 导致收入跨期 |
+| Fibrebond / 预制电力模块 | AI campus 从单品采购转向 `5/12.5/25/50MW` block；行业 e-house / prefab power block 一年订单池约 `45-85 亿美元` | 客户仍分拆采购，预制化只用于赶工项目 | 预制电力房成为新建 AI hall 的常见交付选项 | Hyperscaler/colo 把 prefab block 写入多园区模板 | 预制模块成为大型 AI campus 标准采购包，多个园区框架合同同步 | 基准需求较传统现场集成明显上升 | 基准略高于传统电气设备需求，但符合 time-to-power 约束 | 正向：Fibrebond/NordicEPOD 直接补能力；反证：大客户可指定多家集成商，价格不一定超预期 |
+| UPS / BESS / ATS / backup power | 行业 UPS/dynamic UPS/BESS 子环节 2026 约 `100-180 亿美元`；AI 相关 UPS/BBU/BESS 高弹性订单池 2026 约 `120-250 亿美元` | BESS 被消防/并网拖慢，UPS 仍按传统冗余采购 | 模块化 UPS、Li-ion 电池柜、ATS/STS、部分 BESS 正常增长 | AI dynamic power、load smoothing、grid-interactive BESS 进入更多 RFP | Utility 接入要求动态响应，BESS/UPS 成为上电前置条件 | 基准比传统 data center UPS 市场高，因 AI 负载突变和上电压力 | 基准符合当前预期；乐观需客户为电网稳定单独付费 | 正向：UPS/BESS 是电力瓶颈配套；反证：安全认证、固定价合同和大客户压价 |
+| Busway / PDU / rack power | 行业 busway/PDU/配电 2026 AI 订单池约 `80-140 亿美元`；2026 主流 `60-160kW/rack` | rack 出货或数据中心开工延迟，basic PDU 价格竞争 | AC 低压配电高密化、intelligent PDU、overhead busway 放量 | `100-200kW/rack` 项目增多，PDU/母线监控和 tap-off attach 提升 | 2027 高密 rack 快速进入 `200kW+`，早期 800VDC sidecar 拉动新 BOM | 基准绝对需求增长，但部分仍是低毛利硬件 | 基准符合当前数据中心供电升级；极度乐观高于当前 NTM | 正向：rack density 上行；反证：低端产品商品化、铜价和客户认证周期 |
+| Boyd Thermal / liquid cooling | 全球直液冷 2026 订单/收入池宽口径约 `75-115 亿美元`；直液冷已成为高密 rack 交付前提 | GB300/Rubin rack 延迟，液冷系统订单转收入慢 | 单相 D2C cold plate + CDU + manifold/UQD 正常放量 | GB300/Rubin/MI400 同步拉动，客户锁定冷板/CDU 产能 | 100kW+ 新增 AI rack 接近全量液冷 ready，CDU/UQD 短缺 | 基准绝对需求显著增长；但公司捕获率另行判断 | 基准符合当前行业预期；极度乐观要求 GPU/rack 交付同步 | 正向：Boyd 提供 thermal 技术；反证：客户平台认证、液冷事故和 JDM 压价 |
+| Brightlayer / EPMS / DCIM | 狭义 DCIM 2026 全球约 `40-43 亿美元`；宽口径 DCIM/能控/数字孪生 2026 订单池 `85-135 亿美元`，AI 相关 `30-58 亿美元` | 客户自研和 IT/OT 集成推迟外部采购 | EPMS/BMS/SCADA/DCIM 与硬件项目同步 attach | 电力和液冷 telemetry 成为验收项，服务 attach 上升 | AI factory digital twin 和 grid-interactive 操作系统前置 | 绝对需求中高速增长，但收入确认分散 | 基准小幅高于传统软件增长；极度乐观不应进公司基准 | 正向：硬件装机基数带动；反证：hyperscaler 自研、实施周期长 |
+| 800VDC / MVSST / Resilient | 行业共识为 2026 design-in、小批量；800VDC HV IBC/sidecar 一年基准订单池约 `1.5-4 亿美元`，极度乐观 `8-15 亿美元` | 标准、DC breaker、客户认证延后，只有样机/NRE | 2026 少量试点和工程收入，2027 先导项目 | 2026H2 进入头部 RFP，2027 小批量项目锁定 | Rubin/Kyber/1MW rack 提前，MVSST/800VDC sidecar 成早期稀缺 | 绝对增量很小，但增长率很高 | 基准低于题材热度，符合收入确认证据 | 正向：NVIDIA/OCP 生态和 Eaton reference；反证：标准未冻结、安规和运维流程未成熟 |
+| Aerospace | 商用航空 OEM、aftermarket、defense backlog 强；Aerospace Q1 orders `+13%`、backlog `+28%` | 航空供应链/客户交付延迟 | OEM/aftermarket/defense 正常增长 | Ultra PCS 集成顺利、defense 和 aftermarket 强 | 多平台交付加速，margin 同步改善 | 绝对需求稳定增长 | 基准符合当前预期 | 正向：订单和 backlog 强；反证：供应链、质量、项目节奏 |
+| Mobility | 全球商用车/轻型车周期偏弱；Q1 organic `-6%` | 终端车市和客户排产继续弱 | 收入低个位数下滑或持平，等待分拆 | 分拆前执行稳定，成本控制抵消收入弱 | 不作为极度乐观主线 | 绝对需求不构成增长主因 | 基准低于公司 electrical/aerospace 增长 | 正向：分拆降低组合拖累；反证：低利润率和周期下行 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求能进入 Eaton NTM 收入表，以及当前可收入化基数。公司能参与需求池不等于能确认收入。基准基数以 A/B 级证据为主：segment 收入、订单、backlog、管理层指引、已完成收购和明确产品线；C/D 级技术路线仅小比例或不进入基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Electrical Americas 配电与电力系统 | 2025 EA `132.76 亿美元`；2026Q1 `36.00 亿美元`；EA orders `+42%`、backlog `+44%` | 直接收入表和 backlog | 高于公司平均，2025 EA margin `29.9%`，2026Q1 `25.6%`受并购/扩产影响 | `145-154 亿美元` | `154-165 亿美元` | `165-178 亿美元` | `178-195 亿美元` | 基准符合指引和 backlog；悲观低于当前订单转化；乐观需 margin 恢复 | A | 是 | segment 收入、Q1 财报、订单、backlog、EA FY2026 organic guidance `12%-14%` | NTM 主收入和主利润引擎 |
+| Fibrebond / 预制电力模块 | Fibrebond 2025 收购完成；官方称 pre-integrated modular power enclosures，收购价约 `14.3 亿美元`，2025E adjusted EBITDA `1.10 亿美元`；收入已并入 EA | 直接，但不单列 | 工程集成和交付确定性溢价；需扣除保修和项目管理风险 | `6-8 亿美元` | `8-11 亿美元` | `11-15 亿美元` | `15-20 亿美元` | 基准略高于独立披露 run-rate，但有渠道协同；不单独加总 | B/C | 是，作为 EA 内子项 | 已完成收购、产品/客户场景明确；收入确认依赖项目交付 | 进入基准但在公司汇总时归入 EA |
+| UPS / BESS / ATS / backup power | 计入 Electrical Americas/Global；公司未单列 UPS/BESS 收入 | 直接产品收入，部分为间接系统 attach | 硬件中等，软件/服务/维护较高；BESS 项目毛利波动大 | `6-8 亿美元`数据中心相关 | `8-12 亿美元` | `12-16 亿美元` | `16-22 亿美元` | 基准符合 AI 电力动态需求；缺少独立披露需折扣 | B/C | 是，作为 electrical 内子项 | 产品成熟、客户需求明确、但收入表拆分不可见 | 进入基准，不能作为独立新增收入加总 |
+| Busway / PDU / rack power | 计入 Electrical Americas/Global；公司未单列 | 直接产品收入 | 高密 busway、智能 PDU、tap-off 利润优于 basic PDU | `5-7 亿美元`数据中心相关 | `7-11 亿美元` | `11-15 亿美元` | `15-20 亿美元` | 基准符合 rack density 上行；低端商品化限制利润 | B/C | 是，作为 electrical 内子项 | 成熟产品、数据中心需求强；公司级收入需用 segment 去重 | 进入基准，利润率不自动高弹性 |
+| Electrical Global + Boyd Thermal | 2025 EG `68.15 亿美元`；2026Q1 `19.45 亿美元`；Boyd 2025 sales `11 亿美元`，2026E sales `17 亿美元`含收购前；Eaton FY2026 Boyd acquisition sales 约 `14 亿美元` | 直接收入表，Boyd 2026Q1 后并入 EG | EG margin 2026Q1 `19.2%`；Boyd 液冷高增长但整合费用和客户认证存在 | `80-86 亿美元` | `85-96 亿美元` | `96-110 亿美元` | `110-125 亿美元` | 基准符合并表和指引；乐观需 Boyd attach 与订单兑现 | A/B | 是 | segment 收入、已完成 Boyd 收购、Q1 backlog `+73%` | NTM 第二增长引擎，利润质量低于 EA 但改善空间大 |
+| Brightlayer / EPMS / DCIM | 未单列；Brightlayer Data Centers suite、EPMS/DCIM 产品存在，收入随硬件和服务确认 | 直接软件/服务，依附硬件 | 软件毛利高，但实施/集成消耗人力 | `1-2 亿美元` | `1.5-3.5 亿美元` | `3.5-5 亿美元` | `5-8 亿美元` | 基准只承认小比例 attach；乐观需客户标准化 | C | 是，小比例 | 产品存在、数据中心需求强，但收入披露缺失 | 小比例进入基准，更多作为 margin/粘性变量 |
+| 800VDC / MVSST / Resilient | Resilient 已收购；MVSST/800VDC reference 有产品/架构披露；直接收入未单列 | 早期直接收入 + 未来系统 attach | 早期 NRE/工程毛利可能高，但量小、认证成本高 | `0-0.5 亿美元` | `0.5-1.5 亿美元` | `1.5-3 亿美元` | `3-6 亿美元` | 基准仅为小额工程和试点，不按题材外推 | C/D | 仅小额进入基准 | 有产品与收购证据，但缺少客户订单、量产时间和收入确认 | 主体移入乐观/极度乐观或附录跟踪 |
+| Aerospace | 2025 `42.49 亿美元`；2026Q1 `11.39 亿美元`；orders `+13%`、backlog `+28%` | 直接收入表 | 2026Q1 margin `26.7%`，高利润、现金质量好 | `46-48 亿美元` | `48-53 亿美元` | `53-58 亿美元` | `58-62 亿美元` | 基准符合订单与 Ultra PCS 并入 | A | 是 | segment 收入、backlog、Ultra PCS 收购 | 进入公司基准，但不是 AI/DC 收入传导主线 |
+| Mobility | 2026Q1 `7.66 亿美元`；organic `-6%`；计划 2027Q1 前 spin-off | 直接收入表 | margin `11.7%`，低于公司平均 | `26-28 亿美元` | `28-31 亿美元` | `31-33 亿美元` | `33-35 亿美元` | 基准为低增长/稳定；公司组合稀释项 | A | 是，作为抵消项 | Q1 segment 收入和分拆计划 | 进入公司总收入，情景中作为传统业务抵消项 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，判断各重要业务在 NTM 内能给公司确认多少收入和经营利润。下表的产品/驱动项存在收入归属重叠，例如 Fibrebond、UPS、PDU、Brightlayer、800VDC 均包含在 Electrical Americas 或 Electrical Global 中；因此本表用于分析传导环节，公司层面汇总在第 6 节按 segment 去重，不把这些产品行简单相加。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Electrical Americas 配电与电力系统 | 悲观 | `145-154 亿美元` | segment op profit `33-36 亿美元` | margin `23%-24%`，低于指引 | 低于当前 backlog 转化预期 | EA Q1 revenue `36 亿美元`，但 Q1 margin `25.6%` 已低于 2025 | 保留为 downside | 扩产/并购/材料/现场调试吞噬价格，数据中心交付推迟 |
+| Electrical Americas 配电与电力系统 | 基准 | `154-165 亿美元` | `43-48 亿美元` | margin 回到 `28%-29%`附近 | 符合 EA FY2026 organic `12%-14%`和订单节奏 | EA orders `+42%`、backlog `+44%`、data center orders `+240%` | 保留 | 订单强但收入确认跨期 |
+| Electrical Americas 配电与电力系统 | 乐观 | `165-178 亿美元` | `48-55 亿美元` | margin `29%-31%` | 高于当前预期 | backlog 转化加快、价格/mix 维持、pre-fab attach 提升 | 保留 | 大客户框架价、多供应商策略压制超额利润 |
+| Electrical Americas 配电与电力系统 | 极度乐观 | `178-195 亿美元` | `55-64 亿美元` | margin `31%-33%` | 显著高于当前预期 | 多个 GW 级 AI campus 同时抢 switchgear/eHouse slot | 保留为低可信上限 | 需需求、产能、价格、commissioning 同时超预期 |
+| Fibrebond / 预制电力模块 | 悲观 | `6-8 亿美元`，含在 EA | `0.8-1.4 亿美元`估算 | 利润率被项目成本压缩 | 低于协同预期 | 收购已完成，但独立订单不披露 | 保留 | 工厂预制项目延期、固定价合同、整合费用 |
+| Fibrebond / 预制电力模块 | 基准 | `8-11 亿美元`，含在 EA | `1.6-2.8 亿美元`估算 | 高于普通箱体，低于纯软件 | 符合当前 time-to-power 需求 | 产品明确服务 data center、utility、industrial power enclosures | 保留 | 无单独 backlog；需客户把模块化交付标准化 |
+| Fibrebond / 预制电力模块 | 乐观 | `11-15 亿美元`，含在 EA | `2.5-4.2 亿美元`估算 | margin 扩张 | 高于当前基准 | 与 Eaton switchgear/UPS 捆绑，提升系统 attach | 保留 | 客户可多供应商采购，压低溢价 |
+| Fibrebond / 预制电力模块 | 极度乐观 | `15-20 亿美元`，含在 EA | `4.0-6.5 亿美元`估算 | 明显扩张 | 显著高于预期 | AI campus 把 power blocks 产品化，多园区复制 | 保留为上限 | 需要大客户框架合同证据 |
+| UPS / BESS / ATS / backup power | 悲观 | `6-8 亿美元`数据中心相关，含在 electrical | `1.2-2.0 亿美元`估算 | 硬件利润受压 | 低于预期 | UPS 成熟但 BESS/AI dynamic power 还需认证 | 保留 | UL/NFPA、消防、固定价、电池和 PCS 成本 |
+| UPS / BESS / ATS / backup power | 基准 | `8-12 亿美元`，含在 electrical | `2.0-3.8 亿美元`估算 | 稳定到小幅改善 | 符合预期 | AI dynamic load、grid instability、UPS/BESS 配套刚需 | 保留 | 竞争强于 switchgear，价格传导弱一些 |
+| UPS / BESS / ATS / backup power | 乐观 | `12-16 亿美元`，含在 electrical | `3.5-5.6 亿美元`估算 | 服务和软件 attach 改善 | 高于预期 | grid-interactive BESS、load smoothing 成为 RFP 加分项 | 保留 | BESS 项目融资和并网不确定 |
+| UPS / BESS / ATS / backup power | 极度乐观 | `16-22 亿美元`，含在 electrical | `5.0-8.5 亿美元`估算 | 若软件/服务占比高则扩张 | 显著高于预期 | Utility 接入要求动态模型和负载平滑 | 下移为上限 | 2026 证据不足以把 MV UPS/BESS 爆发放入基准 |
+| Busway / PDU / rack power | 悲观 | `5-7 亿美元`数据中心相关，含在 electrical | `1.0-1.8 亿美元`估算 | basic PDU 商品化 | 低于预期 | rack power 需求存在，但客户压价 | 保留 | 铜价、basic SKU 竞争、认证变更 |
+| Busway / PDU / rack power | 基准 | `7-11 亿美元`，含在 electrical | `1.8-3.6 亿美元`估算 | 高密/智能化改善 mix | 符合预期 | 2026 主流为 AC 低压高密化、intelligent PDU、overhead busway | 保留 | 800VDC 不可提前替代为基准收入 |
+| Busway / PDU / rack power | 乐观 | `11-15 亿美元`，含在 electrical | `3.2-5.4 亿美元`估算 | busway/tap-off/telemetry 提升 | 高于预期 | `100-200kW/rack` 加速，客户重视监控和安全件 | 保留 | 多家竞争对手强，客户指定料号慢 |
+| Busway / PDU / rack power | 极度乐观 | `15-20 亿美元`，含在 electrical | `5.0-8.0 亿美元`估算 | 高密产品显著扩张 | 显著高于预期 | 2027 高密 rack 和早期 800VDC sidecar 同步拉动 | 下移为上限 | 需要 Rubin/800VDC 量产和客户名单 |
+| Electrical Global + Boyd Thermal | 悲观 | `80-86 亿美元` | `14-16 亿美元` | EG margin `17%-19%` | 低于当前预期 | Boyd 并入但整合和认证拖慢 | 保留 | 液冷客户认证、整合费用、全球项目延迟 |
+| Electrical Global + Boyd Thermal | 基准 | `85-96 亿美元` | `17-19 亿美元` | EG margin `19%-20%` | 符合预期 | EG Q1 revenue `19.45 亿美元`，backlog `+73%`，Boyd FY2026 acquisition sales 约 `14 亿美元` | 保留 | backlog 转收入和 Boyd attach 需观察 |
+| Electrical Global + Boyd Thermal | 乐观 | `96-110 亿美元` | `20-24 亿美元` | margin `20%-22%` | 高于预期 | Boyd power+cooling bundle 进入更多 AI 平台 | 保留 | 液冷竞争碎片化，JDM 压价 |
+| Electrical Global + Boyd Thermal | 极度乐观 | `110-125 亿美元` | `24-30 亿美元` | margin `22%-24%` | 显著高于预期 | GB300/Rubin 液冷和 electrical bids 联合标准化 | 保留为低可信上限 | 需多个客户平台认证和高交付率 |
+| Brightlayer / EPMS / DCIM | 悲观 | `1-2 亿美元`，含在 electrical | 无法可靠精确量化；估算 `0.3-0.8 亿美元` | 软件毛利高但实施拖累 | 低于预期 | 产品存在但收入不披露 | 保留 | 客户自研和 IT/OT 集成周期 |
+| Brightlayer / EPMS / DCIM | 基准 | `1.5-3.5 亿美元`，含在 electrical | `0.7-1.8 亿美元`估算 | attach 推动利润质量改善 | 符合预期 | DCIM/EPMS 与硬件、服务绑定 | 保留 | 规模小，对公司利润贡献有限 |
+| Brightlayer / EPMS / DCIM | 乐观 | `3.5-5 亿美元`，含在 electrical | `1.6-3.0 亿美元`估算 | 高毛利提升 mix | 高于预期 | 多站点监控、predictive maintenance 标准化 | 保留 | 实施人力和客户定制限制标准化 |
+| Brightlayer / EPMS / DCIM | 极度乐观 | `5-8 亿美元`，含在 electrical | `2.5-5.0 亿美元`估算 | 高毛利 | 显著高于预期 | AI factory digital twin 和 energy orchestration 前置 | 下移为上限 | 2026 收入证据不足 |
+| 800VDC / MVSST / Resilient | 悲观 | `0-0.5 亿美元`，含在 electrical | 不重要 | 无利润贡献或被研发/认证抵消 | 低于题材预期 | design-in 延后 | 保留 | 标准、客户认证、DC 保护 |
+| 800VDC / MVSST / Resilient | 基准 | `0.5-1.5 亿美元`，含在 electrical | 无法可靠量化，估算接近盈亏平衡到小幅盈利 | 基数小，不改变公司 margin | 符合保守预期 | Eaton 800VDC reference、MVSST、Resilient 收购 | 保留，小额 | 不得把 TAM 或客户总预算写成收入 |
+| 800VDC / MVSST / Resilient | 乐观 | `1.5-3 亿美元`，含在 electrical | `0.3-1.0 亿美元`估算 | 早期工程溢价 | 高于预期 | OCP/NVIDIA 生态项目进入小批量 | 下移为乐观上限 | 需客户、时间表、收入确认路径 |
+| 800VDC / MVSST / Resilient | 极度乐观 | `3-6 亿美元`，含在 electrical | `0.8-2.4 亿美元`估算 | 高毛利但高风险 | 显著高于预期 | 1MW rack 路线提前，SST/800VDC sidecar 被指定 | 仅作跟踪/上限 | NTM 内证据不足，不能进入基准 |
+| Aerospace | 悲观 | `46-48 亿美元` | `10.5-11.5 亿美元` | margin `22%-24%` | 低于预期 | orders/backlog 强但供应链风险 | 保留 | 航空供应链、客户交付 |
+| Aerospace | 基准 | `48-53 亿美元` | `12-14 亿美元` | margin `24%-27%` | 符合预期 | Q1 revenue `11.39 亿美元`，margin `26.7%`，backlog `+28%` | 保留 | Ultra PCS 整合和项目交付 |
+| Aerospace | 乐观 | `53-58 亿美元` | `14-16 亿美元` | margin 稳中有升 | 高于预期 | aftermarket/defense/OEM 同步强 | 保留 | 长周期项目不可线性外推 |
+| Aerospace | 极度乐观 | `58-62 亿美元` | `16-18 亿美元` | margin 扩张 | 显著高于预期 | Ultra PCS 协同和 defense 加速 | 保留为上限 | 不是 AI/DC 主线，不能替代 electrical 传导 |
+| Mobility | 悲观 | `26-28 亿美元` | `2.5-3.3 亿美元` | margin 下行 | 低于预期 | Q1 organic `-6%` | 保留 | 车市弱、分拆成本 |
+| Mobility | 基准 | `28-31 亿美元` | `3.4-4.5 亿美元` | margin `12%-15%` | 符合预期 | Q1 margin `11.7%`，待分拆 | 保留 | 低增长、组合稀释 |
+| Mobility | 乐观 | `31-33 亿美元` | `4.5-5.5 亿美元` | 成本控制改善 | 高于预期 | 分拆执行顺利，需求稳定 | 保留 | 不构成公司成长主线 |
+| Mobility | 极度乐观 | `33-35 亿美元` | `5.0-6.0 亿美元` | 小幅改善 | 高于预期但权重低 | 车市改善 | 下移为非核心 | 分拆前不应作为极度乐观核心来源 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：按公司分部去重汇总，即 Electrical Americas、Electrical Global、Aerospace、Mobility。产品行中的 Fibrebond、UPS、PDU、Brightlayer、800VDC 均在 electrical segments 内，不重复相加。利润率使用 segment operating margin 作为经营利润率主口径；毛利率和调整后净利润为估算。市场定价、股价和估值倍数不作为经营价值传导证据。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `308-320 亿美元` | 较 2025 年收入 `+34-46 亿美元`，约 `+12%-17%`；但低于当前 NTM 基准约 `10-20 亿美元` | 低于管理层 organic 指引和 backlog 正常转化路径；仍可能保持绝对增长 | `35.5%-36.5%` | `22.5%-23.5%` | segment op profit `69-75 亿美元`；调整后净利润约 `47-51 亿美元` | FCF 约 `35-40 亿美元`，低于 FY2026 指引中值，库存/应收和并购整合吸收现金 | 中 | 数据中心项目延迟、Electrical Americas margin 无法恢复、Boyd 整合慢、Mobility 拖累 |
+| 基准公司 | `325-340 亿美元` | 较 2025 年收入 `+51-66 亿美元`，约 `+19%-24%`；与当前指引、run-rate、订单节奏一致 | 当前经营预期正常兑现：2026 organic `+9%-11%`，并购贡献和 2027Q1 run-rate 正常进入 NTM | `36.5%-37.5%` | `24.0%-24.8%` | segment op profit `78-84 亿美元`；调整后净利润约 `52-56 亿美元` | FCF `42-47 亿美元`，大致高于 FY2026 指引低端，靠 electrical cash flow 消化并购杠杆 | 中高 | backlog 转收入、EA margin 恢复、EG/Boyd 并表、commissioning 和营运资本 |
+| 乐观公司 | `340-360 亿美元` | 较 2025 年收入 `+66-86 亿美元`，约 `+24%-31%`；高于当前基准约 `10-25 亿美元` | 高于当前预期，来自 EA/Fibrebond/Boyd/UPS/PDU 多个驱动同时强，不是单一小项目 | `37.5%-38.5%` | `25.0%-26.0%` | segment op profit `85-94 亿美元`；调整后净利润约 `57-63 亿美元` | FCF `48-55 亿美元`，预收和高利润 electrical 抵消库存/应收增加 | 中 | 需要 data center backlog 快速转收入、价格/mix 维持、Boyd attach 提升 |
+| 极度乐观公司 | `360-385 亿美元` | 较 2025 年收入 `+86-111 亿美元`，约 `+31%-40%`；显著高于当前预期 `25-45 亿美元` | 只有需求、公司捕获、利润率和执行质量同时突破才成立 | `38.5%-39.5%` | `26.0%-27.5%` | segment op profit `94-106 亿美元`；调整后净利润约 `63-71 亿美元` | FCF `55-65 亿美元`，需客户预付款、交付效率和低保修风险同步成立 | 低至中 | 多个 GW 级 AI campus 抢设备、预制电力模块标准化、Boyd 液冷认证成功、800VDC/软件附加提前贡献 |
+
+汇总检查：
+
+- 未把 industry TAM、客户 CapEx、项目总金额直接作为 Eaton 收入。所有公司收入均从 segment run-rate、指引、订单和已并入资产推导。
+- 未把 Fibrebond、UPS、PDU、Brightlayer、800VDC 与 Electrical Americas/Global 重复加总。
+- 未把 800VDC、SST、Rubin/Kyber、1MW rack 等远期技术当作基准收入主线。
+- 未用股票价格、PE、PS 或估值倍数证明经营价值传导。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测，只校准前四步情景。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在实际影响层级处理一次，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| Electrical Americas Q1 orders `+42%`、backlog `+44%`、data center orders 约 `+240%` | 收入基数、产品贡献、公司汇总 | 支持 EA 基准和乐观收入；悲观不能写成需求消失，只能写成转化延迟 | 若 backlog 价格/mix 好，支持 margin 恢复；若扩产费用高，则只支持收入不支持利润 | backlog 转收入需要产能、FAT、现场调试 | 基准保留，乐观保留；极度乐观需新增订单继续验证 |
+| Electrical Americas Q1 margin `25.6%`，低于 2025 全年 `29.9%` | 产品利润、公司利润 | 不直接否定收入 | 限制基准利润率不能自动上修；需要 H2 ramp 和扩产吸收 | 若 margin 不恢复，FCF 和 debt deleveraging 慢 | 对利润率乐观假设下移，收入基准保留 |
+| Electrical Global backlog `+73%` 与 Boyd 并表 | 收入基数、公司组合 | 支持 EG/thermal 基准收入上修 | Boyd 2026 初期整合费用、客户认证和 mix 决定利润质量 | 收购后债务和营运资本压力上升 | EG 基准保留，极度乐观仅作上限 |
+| Boyd Thermal 2025 sales `11 亿美元`、2026E sales `17 亿美元`含收购前；Eaton FY2026 acquisition sales 约 `14 亿美元` | 收入基数、产品贡献 | 可进入 NTM 基准，但不能把全球液冷订单池直接映射为 Eaton 收入 | 液冷组件/系统毛利可能较好，但 JDM 压价和 field failure 可压缩 | 需客户认证、产能、服务网络 | 基准保留；乐观保留；极度乐观需客户平台证据 |
+| Fibrebond 已完成收购且产品面向 data center/utility modular power enclosure | 收入基数、执行可信度 | 支持预制模块进入 EA 基准 | 工程交付确定性可能带来溢价 | 现场施工时间减少，但固定价和质保风险上升 | 基准保留，乐观保留；不单独加总 |
+| 800VDC/MVSST/Resilient 有产品与生态证据，但缺少 NTM 量化订单 | 需求、收入基数 | 只允许小额工程/试点收入进入基准 | 早期毛利潜力高但研发、认证和保修成本高 | 标准、DC 保护、客户 AVL 和安全流程未成熟 | 基准小额保留；大额收入下移到乐观/极度乐观；多数仅作跟踪 |
+| 行业 AI 电力设备订单池强，但电网/许可/变压器 lead time `12-48` 个月 | 需求、收入确认 | 支持需求不弱；限制收入确认速度 | 长交期可支持价格，但也推迟利润确认 | 订单前置、收入跨期、库存/应收增加 | 不在利润层重复惩罚，主要在收入确认层处理 |
+| 大客户议价和多供应商策略 | 产品贡献、利润率 | 不一定压低收入，可能压低 price/mix | 限制极度乐观 margin | 大客户框架合同可能压低现金转换 | 主要压低乐观/极度乐观利润，不重复压低需求 |
+| Mobility 分拆计划 2027Q1 前完成 | 公司组合、执行可信度 | NTM 仍需纳入 Mobility 收入 | 低 margin 业务减少后中期质量提升，但 NTM 仍有分拆成本 | 分拆执行有一次性费用和管理层注意力消耗 | NTM 基准保留；中期改善移入附录 |
+| FY2026 FCF 指引 `39-43 亿美元`、Q1 FCF `3.14 亿美元` | 现金流 | 不影响收入 | 不直接影响 margin | 现金流季节性和营运资本是验证项 | 基准现金流保留，乐观需 H2 转化验证 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | AI 数据中心需求仍增长，但项目延迟、收入确认慢、EA margin 恢复不足，公司收入低于当前 NTM 基准 | Electrical backlog 强，需求不是消失；Aerospace 提供利润底盘 | 电网/许可/commissioning、Boyd 整合、Mobility 弱、营运资本占用 | 保留 | 下行情景；不是需求崩溃，而是转收入和利润质量低于预期 | 中 | 电网/许可延迟只在收入确认层处理，不再在需求和利润层重复压低 |
+| 基准 | 管理层 2026 指引正常兑现，EA/EG backlog 按可见节奏转收入，Boyd 和 Ultra PCS 并表，Mobility 稳定待分拆 | Q1 revenue `+17%`、organic `+10%`；EA orders/backlog 强；EG backlog `+73%`；FY2026 guidance 上修 | 产品级 AI/DC 收入未单列，Boyd/Fibrebond利润率需估算；Q1 EA margin 偏低 | 保留 | 最可能情景 | 中高 | 800VDC/SST 缺证据不影响传统 electrical 基准，只限制远期期权 |
+| 乐观 | EA/Fibrebond/UPS/PDU/Boyd 多个传导环节高于基准，收入和 margin 同步改善 | data center orders `+240%`、book-to-bill `1.2`、AI 电力/液冷/低压配电需求强 | 需要 backlog 快速收入化和 price/mix 保持；大客户压价可能限制利润 | 保留 | 有证据的上行情景 | 中 | 大客户议价只压制 margin，不重复否定需求和收入 |
+| 极度乐观 | 数据中心需求、Eaton 捕获、利润质量和执行质量同时突破，NTM 收入和利润显著高于当前预期 | 多园区 AI campus、预制电力模块、Boyd power+cooling、software attach、800VDC 早期订单都有潜在证据 | 任一核心环节缺证据都会降为乐观上限；800VDC/SST NTM 收入证据不足 | 保留 | 低可信上限；800VDC/MVSST 大额部分仅作跟踪 | 低至中 | 不把 800VDC 早期设计导入重复加到基准收入、乐观收入和极度乐观收入里 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入最可能落在 `325-340 亿美元`，segment operating margin `24.0%-24.8%`，segment operating profit `78-84 亿美元`，free cash flow `42-47 亿美元`。这个情景的经营含义是：Eaton 的高可信增长来自 Electrical Americas/Global 的 backlog、data center/utility/C&I 电气设备需求、Boyd 并表和 Aerospace 稳定增长，而不是 800VDC/SST 在 NTM 内突然大规模收入化。
+- 乐观情景成立条件：2026Q2-Q4 Electrical Americas book-to-bill 继续明显高于 1.0，data center orders 高增不是 Q1 一次性；EA margin 回到 `28%-30%`附近；Boyd 2026H2 并表收入和 EG margin 同时改善；Fibrebond/预制模块进入更多 AI campus 标准采购包；UPS/BESS、busway/PDU 和 Brightlayer attach 不被大客户压价完全抵消。
+- 极度乐观情景成立条件：大型 AI campus 在 NTM 内加速下单并允许 Eaton 捕获更高系统份额；预制电力模块从赶工工具变成多园区标准 block；Boyd 获得多个可验证 AI 平台/客户认证；EA/EG 产能、FAT、现场调试和服务网络同步扩张；800VDC/MVSST 或 grid-to-chip reference 在 2027 前形成可确认小批量收入，而不是只停留在架构展示。
+- 悲观情景触发条件：Q2/Q3 orders 或 book-to-bill 明显降温；EA margin 维持在中 20%且管理层无法解释恢复路径；data center backlog 延迟转收入；Boyd/Fibrebond 整合费用高于预期；库存、应收和 capex 导致 FCF 低于 FY2026 指引；Mobility 分拆延迟并增加费用。
+- 后续跟踪数据：Electrical Americas orders/backlog/book-to-bill；Electrical Americas margin；Electrical Global backlog 转收入；Boyd acquisition sales、margin 和客户认证；Fibrebond 订单或模块化电力披露；UPS/BESS/grid-interactive 项目；busway/PDU/rack power 价格和铜价传导；Brightlayer/EPMS attach；800VDC/MVSST 客户、认证、量产时间；free cash flow 和 debt/EBITDA 下降路径。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：
+  - 最新正式财务期：2026Q1，截至 2026-03-31；Eaton 2026Q1 earnings release / analyst presentation 发布时间为 2026-05-05。
+  - 本报告生成日期：2026-06-20。2026Q2 仍未正式披露，因此 NTM 使用 2026Q2-2027Q1/2026H2-2027H1 推算口径。
+  - 项目内行业资料主要日期：2026-06-10 至 2026-06-11。
+- 主要收入、订单、指引和利润率来源：
+  - Eaton 2026Q1：总收入 `74.51 亿美元`，同比 `+17%`，organic `+10%`；segment margin `22.7%`；operating cash flow `5.07 亿美元`，free cash flow `3.14 亿美元`。
+  - Eaton 2026Q1 分部：Electrical Americas `36.00 亿美元`、margin `25.6%`、orders `+42%`、backlog `+44%`；Electrical Global `19.45 亿美元`、margin `19.2%`、backlog `+73%`；Aerospace `11.39 亿美元`、margin `26.7%`、backlog `+28%`；Mobility `7.66 亿美元`、margin `11.7%`。
+  - Eaton 2026 指引：organic growth `+9%-11%`，segment margin `24.1%-24.5%`，adjusted EPS `13.05-13.50 美元`，operating cash flow `50-54 亿美元`，free cash flow `39-43 亿美元`。
+  - Eaton 2025：总收入 `274.48 亿美元`；Electrical Americas `132.76 亿美元`，Electrical Global `68.15 亿美元`，Aerospace `42.49 亿美元`，Vehicle `25.05 亿美元`，eMobility `6.04 亿美元`。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 管理层指引是基准锚，不替代 NTM 主表。
+  - 2027 的 Rubin/Kyber、800VDC、SST/MVSST、MV UPS、AI factory digital twin 是上限和后续跟踪，不进入 NTM 基准主收入。
+  - Mobility 分拆计划目标为 2027Q1 前完成；本报告在 NTM 公司收入中仍纳入 Mobility。
+- 主要来源：
+  - Eaton 2026Q1 results news release: `https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-reports-record-first-quarter-2026-results.html`
+  - Eaton 2026Q1 analyst presentation: `https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q1/q1-2026-analyst-presentation.pdf`
+  - Eaton 2026Q1 financials only: `https://www.eaton.com/content/dam/eaton/company/investor-relations/quarterly-earnings/filings/2026/q1/q1-2026-financials-only.pdf`
+  - Eaton 2025 annual report: `https://www.eaton.com/content/dam/eaton/company/investor-relations/annual-report/eaton-2025-annual-report.pdf`
+  - Eaton completes Boyd Thermal acquisition: `https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-completes-acquisition-of-leading-liquid-cooling-solutions-provider-boyd-thermal.html`
+  - Eaton completes Fibrebond acquisition: `https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-completes-acquisition-of-fibrebond.html`
+  - Eaton 800VDC reference architecture: `https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-unveils-next-generation-architecture.html`
+  - Eaton MVSST product page: `https://www.eaton.com/us/en-us/catalog/medium-voltage-power-distribution-control-systems/medium-voltage-solid-state-transformer.html`
+  - Eaton Brightlayer Data Centers suite: `https://www.eaton.com/us/en-us/digital/brightlayer/brightlayer-data-centers-suite.html`
+  - 项目内公司资料：`公司调研/配电_电源_功率器件/ETN_Eaton Corporation_公司调研_2026-06-20.md`
+  - 项目内行业资料：`行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`
+  - 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`
+  - 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+  - 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+  - 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-06-10.md`
+  - 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`

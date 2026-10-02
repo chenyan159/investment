@@ -1,0 +1,374 @@
+# IFNNY - Infineon Technologies AG 英飞凌科技 公司调研（2026-06-11）
+
+报告日期：2026-06-11（本地系统日期）。  
+股票与估值快照：IFNNY OTC 收盘价使用 2026-06-11 行情；公司财务使用 Infineon FY2026 Q2 / 2026-03-31 季报与 2026-05-05 分析师会资料。  
+本地资料边界：仅使用 `基本面/行业调研/` 中与 AI 数据中心电源、功率半导体、800VDC、UPS/BBU、电力设备相关的行业报告；未读取 `特征量化/`，未读取或继承同目录其他公司报告，未修改 `公司调研/公司索引.md`。  
+货币口径：公司披露以欧元为主；股价和市值以美元；产品级收入与内容量为模型估算，均明确标注。
+
+## 0. 核心结论
+
+Infineon 是全球功率半导体、车规 MCU、汽车功率器件、工业功率模块和嵌入式安全芯片龙头。投资人过去主要把它看成“汽车电动化 + 工业功率周期 + 欧洲半导体政策”的公司；2026 年以后，AI 数据中心电源链把它重新放进 AI 基建篮子，但它仍不是纯 AI 公司。最新一个季度 FY2026 Q2 中，Automotive 仍占收入约 48%，Power & Sensor Systems 占 33%，Green Industrial Power 占 11%，Connected Secure Systems 占 8%；AI 数据中心相关收入主要藏在 PSS 的电源管理、功率器件、驱动、控制器、eFuse/hot-swap、CoolGaN/CoolMOS/CoolSiC 和部分 GIP 高压功率链条里。
+
+最重要变化是：公司把 AI power 从“潜在应用”变成了可量化收入目标。管理层在 FY2026 Q2 材料中把 FY2026 AI power 收入目标上调到约 `EUR1.5B`，并给出 FY2027 约 `EUR2.5B` 目标；同时披露 AI 服务器功率半导体与控制 IC 的可服务内容量约为 `$100-250/kW`，平均约 `$175/kW`。这个口径对 IFNNY 非常关键：100kW AI rack 对应 Infineon 可寻址内容量约 `$10-25k/rack`，300kW rack 为 `$30-75k/rack`，1MW rack 为 `$100-250k/rack`。这不是公司全部收入，而是公司认为其功率器件、控制器、驱动、传感、保护件在 AI power path 中的 addressable content。
+
+基本面处在“两条曲线相反”的位置：汽车和传统工业仍在库存修正、价格压力和 EV 增速放缓中，尤其 ATV 和 CSS 近期利润率承压；但 AI power、数据中心电力、BBU/energy shelf、800VDC/HV IBC、TLVR/PoL、SiC/GaN 高压功率产品正在贡献结构性增量。FY2026 Q2 订单积压升至约 `EUR25B`，较上一季增加约 `EUR4B`，其中 PSS 收入同比 `+26%`、环比 `+8%`，是本轮最清晰的增长引擎。
+
+财务健康度中等偏强。2026-03-31 公司现金及金融投资约 `EUR2.153B`，金融债务约 `EUR7.874B`，净债务约 `EUR5.721B`，股东权益约 `EUR17.408B`，净债务/权益约 `33%`，当前资产/当前负债约 `1.59x`。收购 Marvell 汽车以太网业务和高资本开支抬高了杠杆与现金流压力，但公司仍给出 FY2026 自由现金流约 `EUR1.25B`、调整后自由现金流约 `EUR1.65B` 的指引；问题不在破产风险，而在估值已提前反映 AI power 成长，汽车/工业若继续下修会压制集团利润弹性。
+
+## 1. 公司整体业务、投资人认知、产业链位置与近三年变化
+
+### 1.1 这是一家什么公司
+
+Infineon Technologies AG 总部在德国 Neubiberg，是从 Siemens 半导体业务拆分出的全球功率半导体和嵌入式半导体公司。公司产品覆盖：
+
+| 分部 | FY2026 Q2 收入 | 收入占比 | 主要产品 | 产业链位置 |
+|---|---:|---:|---|---|
+| Automotive / ATV | `EUR1.830B` | `48.0%` | AURIX MCU、TRAVEO MCU、汽车功率 MOSFET/IGBT/SiC、车身/底盘/安全、雷达/传感、电池管理、汽车以太网 | Tier1/OEM 的车规芯片和功率器件供应商 |
+| Green Industrial Power / GIP | `EUR403M` | `10.6%` | IGBT/SiC 模块、驱动、工业电机、可再生能源、充电、储能、轨交、数据中心设施侧功率链 | 工业与能源功率模块供应商 |
+| Power & Sensor Systems / PSS | `EUR1.260B` | `33.1%` | CoolMOS、OptiMOS、CoolGaN、CoolSiC、XDP/XDPE 数字电源控制器、TLVR/PoL、eFuse/hot-swap、USB-C、雷达、MEMS、传感器 | AI 服务器/电源/消费/工业电源管理与传感供应商 |
+| Connected Secure Systems / CSS | `EUR319M` | `8.4%` | PSoC MCU、AIROC 连接、OPTIGA 安全芯片、TPM、物联网安全与政府 ID | IoT、边缘设备和安全芯片供应商 |
+
+投资人心中的传统标签是“车规半导体 + 功率半导体龙头”，其估值经常随全球汽车产量、EV 渗透率、工业自动化、可再生能源逆变器和库存周期波动。2025-2026 年新标签是“AI data center power enabler”：它不卖 GPU、不卖服务器整机、不卖光模块，但卖给电源、BBU、power shelf、VRM、UPS、800VDC/HV IBC、固态断路器和高压保护链条的关键半导体。
+
+### 1.2 产业链位置
+
+Infineon 位于 AI 基建的“电源半导体和控制层”，不是终端系统商。其产品通常通过 Delta、Lite-On、Flex、Advanced Energy、Vicor、Vertiv、Schneider、Eaton、Siemens、汽车 Tier1、工业电源厂和 ODM/OEM 进入最终客户。AI 数据中心相关的链路可以概括为：
+
+`AC/MV 输入 -> UPS/BESS/BBU -> PFC/PSU -> 48/50V busbar 或 800VDC sidecar -> IBC/DC-DC -> VR/TLVR/PoL -> GPU/ASIC/HBM`
+
+Infineon 的价值在于其中的 MOSFET、CoolMOS、CoolGaN、CoolSiC、IGBT/SiC 模块、gate driver、数字电源控制器、hot-swap/eFuse、sensor、MCU、firmware/telemetry 和参考设计。它的客户粘性来自平台认证、可靠性数据、应用工程、系统级参考设计和大规模交付能力，而不是单颗通用 MOSFET 的稀缺。
+
+### 1.3 最近三年重大业务变动、转型与收购
+
+| 时间 | 事件 | 对业务含义 |
+|---|---|---|
+| 2023-10 | 完成收购 GaN Systems，交易金额约 `$830M` | 补齐 GaN 功率器件能力，强化 CoolGaN 在数据中心 PSU、适配器、工业电源和未来 800VDC 高频转换中的位置 |
+| 2025 | 完成/整合 Marvell Automotive Ethernet 业务，收购现金流出约 `EUR2.18B` | 强化软件定义汽车、车载高速网络和 zonal architecture，带来管理层提到的长期 design-win 管线；短期抬高债务和整合压力 |
+| 2025-2026 | 与 NVIDIA、TI、Delta、Schneider、OCP 生态共同推进 800VDC / HVDC AI data center power 架构 | 把 Infineon 的功率器件、控制器、驱动和参考设计推入 AI rack power 标准形成期 |
+| 2026-02 | 宣布收购 ams OSRAM 的非光学 MEMS/CMOS 传感器业务，交易对价约 `EUR570M`，预计 2026 年下半年完成 | 加强 XENSIV 传感器、汽车/工业/消费 MEMS 组合；与 AI 电源关系弱于 PSS power，但有边缘感知和工业控制协同 |
+| 2026-05 | FY2026 Q2 把 AI power 收入目标提高到 FY2026 `EUR1.5B`、FY2027 `EUR2.5B` | AI 数据中心从叙事进入公司指引；也是估值重估核心 |
+| 2026-05/06 | 披露自 2026-07-01 起由四个分部调整为三个：Automotive、Power & Sensor Systems、Embedded Solutions | 管理层把 CSS 合并进 Embedded Solutions，同时更突出 Power & Sensor Systems 作为 AI power、工业电源、传感和功率管理平台 |
+| 2026-06 | 与 Siemens 合作把 CoolSiC 1200V 模块用于新型 SENTRON 3QD2 电子式断路器 | 数据中心/工厂高压保护链条的真实产品化信号，虽然不是纯服务器侧收入 |
+
+## 2. 股价、估值、增长、利润率与资产负债表
+
+### 2.1 估值快照
+
+| 指标 | 数值 | 日期/口径 | 判断 |
+|---|---:|---|---|
+| IFNNY OTC 收盘价 | `$92.15` | 2026-06-11 收盘，StockAnalysis 历史行情 | 52 周低点后大幅修复，已反映 AI power 预期 |
+| 市值 | 约 `$120.9B` | 2026-06-11 Google/行情快照近似 | 对应大型全球功率半导体龙头估值 |
+| Trailing P/E | 约 `97x` | 2026-06-11 行情快照；受周期低利润影响 | 不宜单看 TTM P/E，当前利润处于周期低位 |
+| Forward P/E | 约 `29-30x` | 2026-06-11 Yahoo/市场数据近似 | 市场在给 AI power + 周期恢复溢价 |
+| P/S | 约 `6.5-6.8x` | 2026-06-11 市场数据近似 | 高于多数欧洲工业半导体周期股 |
+| 最新季度收入增速 | `+6% YoY`, `+4% QoQ` | FY2026 Q2，收入 `EUR3.812B` | 增长主要由 PSS/AI power 拉动 |
+| 最新季度毛利率 | `38.7%`，调整后毛利率 `41.0%` | FY2026 Q2 | 仍低于强周期高点，但结构改善中 |
+| 最新季度净利率 | 约 `7.9%` | FY2026 Q2，净利 `EUR301M` / 收入 `EUR3.812B` | 收购摊销、重组、周期低位压制 |
+| TTM/近似净利率 | 约 `7-8%` | 2026-03-31 附近公开比率 | 远低于公司长期高峰盈利能力，估值依赖利润恢复 |
+
+估值的核心矛盾：如果把 Infineon 当成传统汽车/工业周期股，当前市销率和 forward P/E 偏贵；如果 AI power 收入从 FY2026 `EUR1.5B` 扩到 FY2027 `EUR2.5B` 甚至更高，并且 PSS 毛利率维持 `40-60%` 的高端电源半导体特征，则估值有基本面支撑。风险在于 AI power 尚未成为集团过半收入，ATV 汽车业务的周期和价格压力仍能显著拖累集团利润。
+
+### 2.2 资产负债表与财务健康
+
+| 项目 | 2026-03-31 | 解读 |
+|---|---:|---|
+| 现金及现金等价物 + 金融投资 | `EUR2.153B` | 短期流动性充足，但不是净现金公司 |
+| 总资产 | `EUR31.716B` | 含大量商誉、无形资产、产线资产 |
+| 流动资产 | `EUR10.523B` | 库存仍高，但半导体公司需要库存与在制品支撑交付 |
+| 流动负债 | `EUR6.616B` | 当前比率约 `1.59x` |
+| 金融债务 | `EUR7.874B` | 受 Marvell 汽车以太网收购和资本开支影响 |
+| 净金融债务 | `EUR5.721B` | 净债务/权益约 `33%` |
+| 股东权益 | `EUR17.408B` | 权益基础厚，杠杆不激进 |
+| FY2026 投资指引 | 约 `EUR2.7B` | 产能和技术升级仍在投入期 |
+| FY2026 自由现金流指引 | 约 `EUR1.25B`，调整后约 `EUR1.65B` | 财务仍健康，但估值需要 FCF 恢复兑现 |
+
+健康程度：中等偏强。Infineon 不是高杠杆困境公司，现金流也不是一次性消耗型；但它也不是轻资产高 FCF 的 AI 软件公司。未来 12 个月的核心观察是：AI power 增量能否覆盖汽车/工业周期压力、Marvell/ams OSRAM 整合成本、Dresden/SiC/GaN/功率产能投入和库存周转压力。
+
+## 3. 最新和最近四次财报：收入、订单、分部和 AI 数据中心暴露
+
+说明：Infineon 不披露按 AI 数据中心产品拆分的季度收入、取消率或客户名单。下表中 backlog 为公司披露或分析师会图表数据；Bookings/book-to-bill 为估算或方向性判断，不作为公司正式披露。AI 数据中心占比为基于 FY2026 AI power 目标 `EUR1.5B` 和 PSS/GIP 产品结构的模型估算。
+
+### 3.1 集团层面
+
+| 财报季度 | 期间结束 | 收入 | YoY / QoQ | 毛利率 / 调整后毛利率 | Segment result / margin | 净利润 | 订单与交期信号 | AI 数据中心信号 |
+|---|---:|---:|---:|---:|---:|---:|---|---|
+| FY2026 Q2 | 2026-03-31 | `EUR3.812B` | `+6% / +4%` | `38.7% / 41.0%` | `EUR601M / 15.8%` | `EUR301M` | 订单积压约 `EUR25B`，环比 `+EUR4B`；若粗略按 backlog 变化 + 收入估算，Q2 订单强于出货，但公司未披露 B2B | PSS 同比 `+26%`，管理层上调 FY26 AI power 目标至 `EUR1.5B`，FY27 至 `EUR2.5B` |
+| FY2026 Q1 | 2025-12-31 | `EUR3.662B` | 约 `+3% / -7%` | `39.9% / 43.0%` | `EUR573M / 15.6%` | `EUR256M` | backlog 约 `EUR21B`；库存修正仍影响汽车/工业 | AI power 已成为 PSS 主要支撑，但收入尚未完全显性化 |
+| FY2025 Q4 | 2025-09-30 | `EUR3.943B` | 约 `-4% / +6%` | `38.1% / 40.7%` | `EUR707M / 17.9%` | `EUR231M` | backlog 约 `EUR20B`；汽车和工业订单改善有限 | PSS 收入 `EUR1.210B`，季度高点，AI power 开始显著拉动 |
+| FY2025 Q3 | 2025-06-30 | `EUR3.704B` | 约 `-5% / +3%` | `40.9% / 43.0%` | `EUR668M / 18.0%` | `EUR305M` | backlog 约 `EUR18B`；传统市场需求仍偏弱 | AI power 早期放量，PSS 环比增长 |
+| FY2025 Q2 | 2025-03-31 | `EUR3.591B` | 约 `-2% / +?` | `38.7% / 40.9%` | `EUR601M / 16.7%` | `EUR232M` | backlog 约 `EUR20B`；客户库存正常化尚未完成 | AI 数据中心仍小于 2026 当前 run-rate，更多是 design-in |
+
+### 3.2 分部收入和利润率
+
+| 财报季度 | ATV 收入 / margin | GIP 收入 / margin | PSS 收入 / margin | CSS 收入 / margin | 关键信息 |
+|---|---:|---:|---:|---:|---|
+| FY2026 Q2 | `EUR1.830B / 18.1%` | `EUR403M / 11.7%` | `EUR1.260B / 20.4%` | `EUR319M / 5.6%` | PSS 是唯一显著超额增长分部；ATV 利润率较上一年压力明显 |
+| FY2026 Q1 | `EUR1.821B / 22.1%` | `EUR349M / 8.9%` | `EUR1.171B / 17.4%` | `EUR321M / 7.2%` | 传统工业低位，PSS 已在恢复 |
+| FY2025 Q4 | `EUR1.921B / 22.4%` | `EUR442M / 16.3%` | `EUR1.210B / 14.5%` | `EUR369M / 12.2%` | Q4 季节性与产品组合推高收入；净利受费用影响 |
+| FY2025 Q3 | `EUR1.870B / 19.8%` | `EUR409M / 15.2%` | `EUR1.075B / 18.3%` | `EUR349M / 11.2%` | PSS 与 GIP 恢复，CSS 稳定 |
+| FY2025 Q2 | `EUR1.858B / 20.7%` | `EUR377M / 10.9%` | `EUR999M / 13.5%` | `EUR356M / 11.2%` | PSS 低基数，为 FY2026 Q2 的同比高增长提供基数 |
+
+### 3.3 订单、交期、取消率和 backlog 判断
+
+| 指标 | 公司披露 | 模型判断 |
+|---|---|---|
+| 订单积压 | FY2026 Q2 约 `EUR25B`，较 FY2026 Q1 的约 `EUR21B` 增加约 `EUR4B` | backlog 约为 FY2026 预期收入的 `1.5x` 左右，给 FY2026H2/FY2027 可见度；但公司未按产品披露 backlog |
+| Bookings / book-to-bill | 未正式按季度披露 | 如果把 backlog 当作未交付订单，则 FY2026 Q2 的环比增加与 `EUR3.812B` 收入意味着订单流很强；但该推算未扣除订单重估/取消/交付条款，不能等同官方 B2B |
+| Lead time | 未按产品披露 | 通用 MOSFET/IGBT/车规 MCU 交期已明显正常化；AI power 的高端控制器、TLVR、GaN/SiC、HV IBC、BBU/保护件因认证和平台绑定，交期和供给弹性更紧 |
+| 取消率 | 未披露 | 汽车/工业库存周期可能造成订单拉回；AI power 的设计导入订单取消率更低，但若 800VDC 标准延迟，收入会后移 |
+| AI data center backlog | 未披露 | 结合 FY2026 `EUR1.5B` AI power 目标、FY2027 `EUR2.5B` 目标和 Q2 backlog 上升，AI power 已有较强订单可见度；不能把 `EUR25B` backlog 全部映射为 AI |
+
+## 4. FY2026 最新指引、业务收入占比与重点产品
+
+### 4.1 最新指引
+
+| 指引项 | 最新管理层口径 | 含义 |
+|---|---|---|
+| FY2026 Q3 收入 | 约 `EUR4.1B` | 环比改善，PSS/AI power 继续支撑 |
+| FY2026 Q3 segment result margin | high teens percentage range | 利润率恢复但仍非高峰 |
+| FY2026 全年收入 | 显著高于 FY2025 `EUR14.662B` | Q3/Q4 需持续改善 |
+| FY2026 adjusted gross margin | low-to-mid 40s | 结构改善，但汽车/工业价格压力仍在 |
+| FY2026 segment result margin | 约 `20%` | 这是市场估值能否成立的核心 |
+| FY2026 投资 | 约 `EUR2.7B` | 资本开支仍高，支持功率半导体和 AI power |
+| FY2026 自由现金流 | 约 `EUR1.25B`，调整后约 `EUR1.65B` | 财务安全但非轻资产高 FCF |
+| FY2026 AI power 收入 | 约 `EUR1.5B` | 约占 FY2026 预期收入 `9%` 左右，取决于全年总收入 |
+| FY2027 AI power 收入 | 约 `EUR2.5B` | 对 FY2026 目标增长约 `+67%`，是估值核心变量 |
+
+### 4.2 最新季度业务占比和增长
+
+| 分部 | FY2026 Q2 收入 | 占比 | YoY | QoQ | 最重要驱动 |
+|---|---:|---:|---:|---:|---|
+| ATV | `EUR1.830B` | `48.0%` | `-2%` | `0%` | 汽车 MCU、功率器件、车身安全、SDV；EV 高压功率价格和库存压力仍在 |
+| GIP | `EUR403M` | `10.6%` | `+7%` | `+15%` | 工业功率、能源、充电、数据中心设施侧功率链；低基数恢复 |
+| PSS | `EUR1.260B` | `33.1%` | `+26%` | `+8%` | AI data center power、CoolMOS/CoolGaN/CoolSiC、电源控制器、传感器 |
+| CSS | `EUR319M` | `8.4%` | `-10%` | `-1%` | 安全芯片、PSoC、连接；非本次 AI 主线 |
+
+最突出业务是 PSS 的 AI power chain，其次是 GIP 在高压功率、数据中心设施侧、储能/UPS/solid-state protection 里的期权。ATV 仍是最大收入和利润池，但当前不是高增长主线；CSS 对 AI 数据中心贡献小，除 TPM/安全与边缘 MCU 外应降权。
+
+### 4.3 产品、型号和业务映射
+
+| 业务/产品 | 对应产品与型号/平台 | AI 数据中心相关性 | 毛利率与销售判断 |
+|---|---|---|---|
+| AI PSU / PFC / power shelf | CoolMOS、OptiMOS、CoolSiC、CoolGaN、EiceDRIVER、XDP/XDPE 数字电源控制器；12kW、18kW、30kW PSU/PFC 参考设计 | 高。服务 5.5kW/8kW/12kW/18.5kW/20kW+ AI PSU 与 ORv3/HPR power shelf | 半导体/控制器毛利高于系统 PSU；公司内容量随每 kW 增长，FY26 是主要收入兑现项 |
+| 48/50V DC/DC、IBC、VR/TLVR/PoL | TDM24745T quad-phase TLVR 模块，XDP/XDPE 控制器，OptiMOS power stage，eFuse/hot-swap | 高。GB200/GB300/MI350/TPU/ASIC 的近负载供电主线，不依赖 800VDC 量产 | 认证与控制算法绑定强，毛利率估计 `40-60%`，增速高于集团 |
+| 800VDC / HV IBC | 800VDC to 50V、800VDC to 12V reference designs；6kW TDP、10.8kW 400us 峰值、>98% 满载效率、约 `2.5kW/in3`；XDPP1188-200C | 极高但早期。2026 是 design-in、样品和小批量，2027-2028 才验证收入斜率 | 小基数高弹性；毛利取决于客户认证、磁性件/热设计、GaN/SiC 可靠性 |
+| BBU / energy shelf / power smoothing | 24kW SiC BBU reference design，4-12kW BBU 路线，hot-swap/eFuse、BMS/MCU/telemetry | 高。GB300 power smoothing、OCP BBU、rack energy shelf 都需要电源半导体与控制 | 2026-2027 attach rate 上升；系统电池毛利一般，但控制器/保护件毛利较好 |
+| SiC / solid-state protection / breaker | CoolSiC 1200V 模块；Siemens SENTRON 3QD2 电子式断路器合作；高压 DC protection | 中高。主要在 800VDC、MV UPS、SST、工业/数据中心保护 | 认证慢但替换成本高，属于高毛利小品类 |
+| 工业/能源 GIP | IGBT、CoolSiC 模块、驱动、可再生能源、充电、储能、工业电机 | 中。设施侧 UPS/BESS/逆变器/微电网受 AI 数据中心电力需求拉动 | 受工业周期影响，AI 贡献需与普通工业区分 |
+| 汽车 MCU / SDV / Automotive Ethernet | AURIX、TRAVEO、PSoC、Marvell Automotive Ethernet、车载网络 | 低到中。不是 AI 数据中心，但可能受智能汽车/边缘 AI 需求拉动 | 长期稳健，当前周期和价格压力比 AI power 更重要 |
+| CSS 安全与连接 | OPTIGA TPM/security、PSoC、AIROC | 低。可用于服务器安全、IoT/边缘，但金额小 | 本报告降权 |
+
+### 4.4 可以跳过或降权的业务
+
+以下业务不是无价值，而是对本次“AI 数据中心/AI 芯片基础设施”弹性较低：
+
+| 降权业务 | 原因 |
+|---|---|
+| 通用消费电源、普通 USB-C/适配器、低端 MOSFET | 竞争充分、ASP 压力大，AI 数据中心收入映射弱 |
+| 政府 ID、银行卡、安全证件类 CSS | 收入稳定但与 AI 基建关系弱 |
+| 普通汽车车身/底盘 MCU | 基数大但 2026 增长和 AI 相关性弱 |
+| EV 通用高压逆变器功率器件 | 长期重要，但 2025-2026 受 EV 增速、价格和库存压力影响；不能把 EV SiC 全部当 AI |
+| 泛工业 IGBT/MOSFET | 周期性强，若未进入数据中心 UPS/BESS/MV power path，估值弹性低 |
+
+## 5. 高增长或关键业务：当前收入贡献、增速、重要性、供需和溢价能力
+
+以下为模型估算。公司仅披露 FY2026 AI power 目标约 `EUR1.5B`、FY2027 约 `EUR2.5B`，不披露按产品的 AI data center 收入。
+
+| 关键业务/产品 | 当前 FY2026 收入贡献估算 | 当前增速 | 对 AI 基建重要性 | 时间紧急性 | 供需紧张度 | 垄断/溢价能力 |
+|---|---:|---:|---|---|---|---|
+| AI PSU/PFC/power shelf 半导体与控制器 | `EUR0.55-0.75B` | `+40-80%` | 高。所有高密 AI rack 都需要高效率 PSU/PFC | 高，GB200/GB300/MI350 当期出货驱动 | 中高，高端认证件紧；普通 PSU 器件不紧 | 中高。CoolMOS/CoolSiC/CoolGaN + 控制器组合强，但 Delta/TI/onsemi/ST/ROHM 可替代 |
+| 48/50V DC/DC、IBC、VR/TLVR/PoL、eFuse/hot-swap | `EUR0.45-0.60B` | `+50-100%` | 极高。GPU/ASIC/HBM 近负载供电和可靠性核心 | 高，不等 800VDC 即可放量 | 高，平台认证和应用工程紧 | 高。design-in 后替换会重测 EMI、热、瞬态和固件 |
+| 800VDC/HV IBC/CoolGaN 高压参考设计 | `EUR50-150M` | 小基数 `+100%+` | 2027+ 极高，2026 收入小 | 中高，2026 是定点窗口 | 中高，真正通过认证的供应商少 | 中高。早期 reference design 有窗口，但 TI/Navitas/PI/MPS/ST/ROHM 竞争激烈 |
+| BBU/energy shelf/功率平滑控制与保护 | `EUR150-250M` | `+40-90%` | 高。解决 AI 动态功率、电网友好和 rack 验收 | 高，GB300 power smoothing 提高优先级 | 中高，系统电池不稀缺，控制/保护/认证紧 | 中。单体电池无垄断，控制器、hot-swap、保护件有溢价 |
+| SiC/IGBT/GaN 用于 UPS/BESS/MV/SST/solid-state breaker | `EUR100-250M` AI/DC 相关 | `+20-60%` | 中高。设施侧电力和 800VDC 保护链条 | 中，2026 设施侧项目先于 SST 放量 | 中，普通 SiC 受 EV 周期影响，高可靠模块更紧 | 中高。车规/工规可靠性和模块封装强，但 ST/onsemi/ROHM/Wolfspeed/Mitsubishi 竞争 |
+| Automotive Ethernet/SDV MCU | `EUR100-200M` Marvell 业务初期贡献，长期更高 | `+20%+` 长期 | 对 AI 数据中心低；对智能车高 | 中 | 中 | 中。车规认证强，但非本次 AI 主线 |
+
+## 6. 未来一年三情景预测：产品收入、增长、重要性、供需和溢价
+
+时间口径：未来 12 个月大致指 2026H2 至 2027H1；FY2027 公司目标 `EUR2.5B` 作为中性到乐观锚。
+
+### 6.1 收入贡献预测
+
+| 关键业务/产品 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---:|---:|---:|
+| AI PSU/PFC/power shelf 半导体与控制器 | `EUR0.75-0.95B`，同比/滚动增速 `+25-45%` | `EUR1.0-1.2B`，`+50-80%` | `EUR1.3-1.6B`，`+90%+` |
+| 48/50V DC/DC、IBC、VR/TLVR/PoL、eFuse/hot-swap | `EUR0.65-0.85B`，`+35-60%` | `EUR0.9-1.1B`，`+70-110%` | `EUR1.2-1.5B`，`+120%+` |
+| 800VDC/HV IBC/CoolGaN 高压参考设计 | `EUR0.12-0.25B`，小基数 `+100%+` | `EUR0.30-0.50B`，若 Rubin/Helios 定点提前 | `EUR0.60-0.90B`，若 800V sidecar 进入多个 hyperscaler 采购规范 |
+| BBU/energy shelf/功率平滑控制与保护 | `EUR0.25-0.40B`，`+40-70%` | `EUR0.45-0.70B`，`+80-150%` | `EUR0.8-1.1B`，若 GB300/后续平台强制 attach |
+| SiC/IGBT/GaN 用于 UPS/BESS/MV/SST/solid-state breaker | `EUR0.18-0.35B`，`+20-50%` | `EUR0.40-0.65B`，`+60-120%` | `EUR0.8-1.2B`，若 MV UPS/SST/固态断路器试点提前 |
+| AI power 合计 | `EUR1.9-2.2B` | `EUR2.4-2.8B` | `EUR3.2-4.0B` |
+
+### 6.2 质量指标预测
+
+| 产品 | 基准：重要性 / 时间紧急性 / 供需 / 溢价 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| AI PSU/PFC | 高 / 高 / 中高 / 中高 | 高 / 高 / 高 / 中高 | 高 / 极高 / 高 / 高，客户为交期支付 5-15% 溢价 |
+| VR/TLVR/PoL/eFuse | 极高 / 高 / 高 / 高 | 极高 / 极高 / 高 / 高 | 极高 / 极高 / 极高 / 很高，design-in 供应商获得生命周期锁定 |
+| 800VDC/HV IBC | 中高 / 中高 / 中高 / 中高 | 极高 / 高 / 高 / 高 | 极高 / 极高 / 极高 / 很高，若 OCP/NVIDIA 标准冻结 |
+| BBU/energy shelf | 高 / 高 / 中高 / 中 | 高 / 高 / 高 / 中高 | 极高 / 极高 / 高 / 高，若电网 ramp-rate 成为验收条件 |
+| SiC/MV/SST/solid-state breaker | 中高 / 中 / 中 / 中高 | 高 / 中高 / 中高 / 高 | 极高 / 高 / 高 / 很高，但认证风险最大 |
+
+## 7. BOM、每 MW/每 rack/每 GPU/每 optical port 内容量与价格传导
+
+### 7.1 单位内容量：用公司披露的 `$100-250/kW` 校准
+
+Infineon 在 FY2026 Q2 分析师材料中给出 AI server power semiconductor and IC content 约 `$100-250/kW`，平均约 `$175/kW`。据此可反推：
+
+| 单位 | 假设 | Infineon 可寻址内容量 | 说明 |
+|---|---:|---:|---|
+| 每 MW AI IT power | `1,000kW` | `$100k-250k/MW`，均值 `$175k/MW` | 包含功率半导体、控制器、驱动、保护、传感等可寻址内容，不等于实际收入确认 |
+| 每 100kW rack | GB200/高密 rack 级别 | `$10k-25k/rack`，均值 `$17.5k` | 2026 现实主线 |
+| 每 120kW rack | GB200 NVL72 约 120kW | `$12k-30k/rack`，均值 `$21k` | 对应 72 GPU，约 `$167-417/GPU` |
+| 每 155kW rack | GB300 NVL72 peak 级别 | `$15.5k-38.8k/rack`，均值 `$27.1k` | 对应 72 GPU，约 `$215-538/GPU` |
+| 每 300kW rack | 2027 高密 rack | `$30k-75k/rack`，均值 `$52.5k` | 需要更强 BBU、busbar、保护和 IBC |
+| 每 1MW rack | 800VDC/sidecar 目标上限 | `$100k-250k/rack`，均值 `$175k` | 2026 不应作为基准收入；更多是 2027+ 期权 |
+| 每 GPU | 以 120-155kW / 72 GPU rack 估算 | `$167-538/GPU` | 这是把 rack power 内容量摊到 GPU，不是 GPU 模块直接 BOM |
+| 每 optical port | 800G/1.6T 光模块端口 | 主体不是 Infineon 暴露；仅辅助 DC/DC、hot-swap、eFuse、传感，估计 `<$1-3/port` | IFNNY 不应按 optical port 估值，光口主受益是 DSP/TIA/laser/模块商 |
+
+### 7.2 产品 BOM 拆分与价格传导
+
+| 产品链条 | 典型 BOM / 成本拆分 | Infineon 位置 | 价格传导 |
+|---|---|---|---|
+| AI PSU / PFC / power shelf | 功率半导体 `15-25%`；磁性件 `15-25%`；电容/滤波 `10-15%`；机械/散热 `10-20%`；控制/telemetry `5-10%`；装配测试 `15-25%` | CoolMOS/CoolSiC/CoolGaN、drivers、XDP/XDPE 控制器、PSoC/telemetry、current sense | 若进入高端认证 PSU，可通过效率、交期、可靠性传导 5-15% 溢价；通用 PSU 器件传导弱 |
+| 48/50V DC/DC、IBC、VR/TLVR/PoL | MOSFET/GaN/driver `25-35%`；控制器/telemetry `10-20%`；磁性件 `15-30%`；电容 `10-20%`；PCB/封装/热 `10-20%` | OptiMOS、TDM TLVR、数字控制器、eFuse/hot-swap | design-in 后替换成本高，客户不愿为 3-5% 单价差重测平台 |
+| 800VDC to 50V/12V HV IBC | GaN/SiC/MOSFET 与 driver `25-35%`；planar/matrix transformer `15-25%`；热/PCB/substrate `10-20%`；电容 `8-15%`；控制/传感 `5-10%`；测试 `15-20%` | CoolGaN/CoolSiC、EiceDRIVER、XDPP1188-200C、系统参考设计 | 2026 价格由 NRE、样机和定点决定；量产后由效率、功率密度、安规和可靠性数据决定 |
+| BBU / energy shelf | cells/supercaps `25-45%`；DC/DC/charger/hot-swap `25-35%`；BMS/firmware `10-20%`；结构/散热/连接 `10-20%`；认证服务 `5-10%` | SiC/MOSFET、drivers、MCU/BMS、hot-swap、sensors | 电池本体价格向下，控制与保护因 OCP/hyperscaler 认证保留溢价 |
+| Solid-state breaker / DC protection | 半导体开关 `30-45%`；驱动/传感/控制 `15-25%`；热管理 `10-15%`；机械/绝缘/连接 `10-20%`；测试认证 `10-20%` | CoolSiC 1200V 模块、drivers、sensors、控制 | 安规和事故责任使价格传导最强；通过认证后可获得 2-4 季度窗口 |
+| UPS/BESS/MV/SST 功率栈 | 功率模块 `20-40%`；磁性/电容 `15-25%`；控制/传感 `10-20%`；绝缘/开关柜/保护 `15-25%`；测试/服务 `10-20%` | SiC/IGBT 模块、驱动、传感、控制器 | 项目制可部分 pass-through 铜、SiC、磁性件成本；固定价项目风险仍存在 |
+
+### 7.3 当前产能能力、采纳程度与认证阶段
+
+| 产品 | 当前产能/收入能力（美元或欧元） | 供应链采纳程度 | 认证/阶段 |
+|---|---:|---|---|
+| AI power 总体 | FY2026 目标约 `EUR1.5B`，隐含当前年化出货能力接近该水平 | 已进入主流 AI PSU、power shelf、服务器电源和数据中心电源链 | 已量产 + 新平台 design-in；客户名多不披露 |
+| PSU/PFC 半导体与控制器 | 模型估算 FY2026 `EUR0.55-0.75B` | 高。多家电源厂/OEM 可用 Infineon 器件与参考设计 | 已量产，12kW/18kW/30kW 参考设计用于客户评估 |
+| VR/TLVR/PoL/eFuse | 模型估算 FY2026 `EUR0.45-0.60B` | 高。服务 GPU/ASIC 近负载供电和 rack power management | TLVR 模块、控制器和 eFuse 已产品化；客户平台认证中 |
+| 800VDC/HV IBC | 模型估算 FY2026 `EUR50-150M` | 中。NVIDIA/OCP/Schneider/Delta/TI 生态推进，实际大单尚未完全披露 | 参考设计/样品/小批量；2026H2 看 hyperscaler/OEM 定点 |
+| BBU/energy shelf | 模型估算 FY2026 `EUR150-250M` | 中高。GB300 power smoothing 与 OCP BBU 推动 attach | 24kW SiC BBU reference design；OCP/客户认证和热安全是关键 |
+| Solid-state breaker / SiC protection | 模型估算 FY2026 `EUR50-150M` AI/DC 相关 | 中。Siemens SENTRON 3QD2 合作是产品化信号 | PCIM 2026 展示/商业导入早期；需看 UL/IEC/客户项目 |
+
+## 8. 未来一年产能、采纳和认证三情景
+
+| 产品 | 基准：未来一年产能/采纳/认证 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| AI power 总体 | `EUR1.9-2.2B` 可交付收入；FY27 `EUR2.5B` 目标可见；AI rack 48/50V 主线继续 | `EUR2.4-2.8B`；多个客户加速锁定产能 | `EUR3.2-4.0B`；AI rack power 供给紧张，公司需扩产/外包/优先供货 |
+| PSU/PFC | 12/18/30kW reference 被更多电源厂导入，仍以 48/50V 架构为主 | 高端 PSU/PFC 器件 ASP 维持高位 | 20kW+ PSU 和三相 PSU 提前标准化，CoolSiC/CoolGaN attach 大幅提高 |
+| VR/TLVR/PoL/eFuse | 进入更多 GB300/MI350/ASIC 平台，认证周期 6-18 个月 | 高端 XPU 必配，毛利率提升 | VPD/TLVR 成为 HBM4/rack-scale 平台瓶颈，供应紧张 |
+| 800VDC/HV IBC | 完成多家 ODM/OEM/hyperscaler reference design 评估，2027 初小批量 | OCP/NVIDIA/Schneider 等标准进一步明确，定点 2-3 家供应商 | 1MW rack/800V sidecar 写入新建 AI hall 规范，2027 订单提前锁定 |
+| BBU/energy shelf | GB300/后续平台 attach 上升，OCP BBU 规格扩大 | 电网 ramp-rate 要求推动 BBU/energy shelf 标配化 | BBU/超级电容/电源平滑成为上电审批工具，控制器和保护件紧缺 |
+| SiC protection / SST/MV | Siemens/ABB/Eaton/Schneider 类合作验证，少量项目收入 | 800VDC sidecar 与 MV UPS 同步带动保护件定点 | 高压 DC 保护成为 800VDC 放量前置认证，认证供应商有显著溢价 |
+
+## 9. 基于真实订单积压和供给的未来一年增速预测
+
+Infineon 真实披露的订单积压是集团层面的约 `EUR25B`，不是 AI power backlog。不能把该数全额归因于 AI。但它有三点含义：
+
+1. `EUR25B` backlog 对 FY2026 预期收入有较强覆盖，说明公司不是没有订单，而是产品结构、交付、周期和定价决定利润。
+2. FY2026 Q2 backlog 环比增加约 `EUR4B`，与 PSS 高增长和 AI power 目标上修同向，说明 AI power 是 backlog 增量的重要候选，但无法量化占比。
+3. 普通汽车/工业订单可能有取消或推迟风险；AI power 的 design-in 类订单取消率通常较低，但若 800VDC 标准延迟，收入会从 2026/2027 后移。
+
+| 业务 | 基准未来一年增速 | 乐观 | 极度乐观 | 主要依据 |
+|---|---:|---:|---:|---|
+| 集团收入 | `+10-18%` | `+18-28%` | `+30%+` | Q3 guide、backlog、PSS 增长；受汽车/工业拖累 |
+| PSS | `+20-35%` | `+35-55%` | `+60%+` | AI power、CoolGaN/CoolMOS/控制器、传感 |
+| AI power | `+35-50%` vs FY26 target run-rate | `+60-90%` | `+100%+` | FY26 `EUR1.5B` 到 FY27 `EUR2.5B` 官方目标，叠加 800V design-in |
+| GIP AI/DC 相关 | `+15-30%` | `+35-60%` | `+80%+` | UPS/BESS/MV/SST、SiC/IGBT 模块；工业周期是约束 |
+| ATV | `0-8%` | `+8-15%` | `+15%+` | 汽车产量、SDV/以太网、MCU，但 EV 价格压力仍在 |
+| CSS / Embedded Solutions | `-5% to +5%` | `+5-12%` | `+15%` | 安全、IoT、MCU；AI 数据中心拉动有限 |
+
+## 10. 竞争格局、主流技术、替代风险和客户切换成本
+
+### 10.1 主要竞争对手
+
+| 细分 | 主要竞争对手 | Infineon 优势 | 主要风险 |
+|---|---|---|---|
+| AI PSU/PFC 功率器件 | STMicroelectronics、onsemi、ROHM、Vishay、Nexperia、Navitas、Power Integrations、TI | CoolMOS/CoolSiC/CoolGaN 组合完整，工业/车规可靠性强 | GaN/SiC 竞争者在特定 reference design 中取得先发 |
+| VR/TLVR/PoL/控制器 | MPS、TI、Renesas、ADI/Empower、Vicor、onsemi、Alpha & Omega | 控制器 + 功率级 + 保护 + 应用工程一体化 | MPS/Vicor 在高端 AI VRM/模块中品牌强，TI 800V->6V 架构差异化 |
+| 800VDC/HV IBC | TI、Navitas、Power Integrations、MPS、Vicor、ROHM、ST、onsemi、Renesas | 650V CoolGaN reference、800V->50/12V、数字控制器和 NVIDIA/OCP 生态参与 | 标准未定，客户可能选择 TI 两级 800V->6V 或 Navitas/PI 高压 GaN 方案 |
+| SiC/MV/UPS/SST 功率模块 | ST、onsemi、ROHM、Wolfspeed、Mitsubishi Electric、Fuji Electric、Semikron Danfoss | 车规/工规规模、SiC/IGBT 模块、Siemens/工业客户关系 | EV SiC 产能过剩导致价格战，高端数据中心认证慢 |
+| 高压保护/eFuse/hot-swap | Littelfuse、Mersen、Eaton/Bussmann、Nexperia、TI、ADI、Semtech、Vishay | 半导体保护 + driver + sensor + MCU 组合 | 传统 fuse/保护大厂在安规和渠道上更强 |
+| 数据中心电力系统入口 | Delta、Schneider、Eaton、Vertiv、Flex、Lite-On、Advanced Energy | 作为上游半导体进入多家系统商，客户覆盖广 | 系统商可能自定义方案并压价上游器件 |
+
+### 10.2 新技术会成为主流吗
+
+| 技术 | 是否主流 | 判断 |
+|---|---|---|
+| 48/50V rack power + AI PSU + VR/TLVR | 已是 2026 主流 | GB200/GB300/MI350 等现有平台最确定，Infineon 当前收入主要来自这里 |
+| 800VDC/HV IBC | 2026 不是全面主流，2027-2028 有望成为高密 rack 主流选项 | 当 rack 从 100-155kW 走向 300kW/1MW，48V 电流和铜耗不可持续；但安规、维护、连接器和保护标准会拖慢 |
+| CoolGaN 高压转换 | 有成为 800VDC 高频转换主流器件之一的潜力 | GaN 的高频/高功率密度优势强，但可靠性、EMI、短路能力和客户认证是瓶颈 |
+| CoolSiC 用于 UPS/BESS/SST/solid-state protection | 设施侧高压功率主流方向之一 | SiC 在高压、高温、高效率场景成熟度高于高压 GaN；但 EV/工业周期会影响价格 |
+| VPD/vertical power delivery | 高端 ASIC/GPU 中长期主流方向之一 | 解决近负载电源完整性和 PDN 损耗，竞争者 MPS/Vicor/ADI/Empower 都很强 |
+
+### 10.3 客户替换成本
+
+高端 AI power 的替换成本高于普通半导体，原因是：
+
+1. 更换 MOSFET/GaN/SiC/driver/control IC 会重新做效率、热、EMI、瞬态、故障注入和寿命测试。
+2. 进入 NVIDIA/OCP/hyperscaler reference design 后，替换供应商需要重新过 AVL、burn-in、可靠性和现场备件流程。
+3. 800VDC 与 BBU/energy shelf 涉及安规、消防、保险和运维 SOP，客户不会轻易为小幅降价换供应商。
+4. Infineon 的护城河更多在“组合 + 应用工程 + 可靠性数据 + 量产交付”，不是单一器件绝对垄断。
+
+## 11. 主要风险和反证指标
+
+| 风险 | 反证/跟踪指标 | 影响 |
+|---|---|---|
+| AI power 目标兑现不及预期 | FY2026H2 未能接近 `EUR1.5B` 年度目标，FY2027 `EUR2.5B` 被下修 | 估值压缩最直接 |
+| 800VDC 标准/认证延迟 | OCP/NVIDIA/hyperscaler 2026H2 未披露安全、连接、保护、sidecar 进一步规范 | HV IBC/GaN/SST 期权后移 2-4 季度 |
+| 汽车与 EV 周期拖累 | ATV 收入/利润率继续下滑，EV SiC 价格继续下降 | 集团利润恢复慢于估值预期 |
+| 工业库存与价格压力 | GIP 订单恢复不持续，普通 IGBT/MOSFET 毛利下降 | 抵消 AI 电源增量 |
+| GaN/SiC 竞争和替代 | TI/Navitas/PI/MPS/Vicor 拿到关键 800V 或 VPD design win | Infineon AI power 市占低于预期 |
+| 客户集中和订单透明度低 | 公司继续不披露 AI 客户和产品级 backlog | 投资人只能用目标和 PSS 增速间接验证，波动大 |
+| 现金流和资本开支 | FCF 不达 `EUR1.25B`，库存增加或并购整合费用超预期 | 杠杆与估值压力上升 |
+| 地缘/关税/出口限制 | 欧洲、中国、美国半导体和汽车供应链政策变化 | 影响汽车、工业和数据中心客户交付 |
+
+## 12. 后续跟踪清单
+
+| 时间点 | 跟踪事项 | 为什么重要 |
+|---|---|---|
+| FY2026 Q3/Q4 财报 | PSS 收入、PSS margin、AI power target 是否再上修 | 验证 AI power 是否真转收入 |
+| 每季度 | backlog 是否维持 `EUR20B+`，是否继续上升 | 验证订单能见度 |
+| 2026H2 | NVIDIA/OCP/Schneider/Delta/TI/Infineon 是否披露 800VDC 定点或客户案例 | 决定 800V/HV IBC 是 2027 收入还是 2028 期权 |
+| 2026H2 | TDM TLVR、eFuse、HV IBC、24kW BBU 是否从 reference design 进入客户量产 | 决定毛利和内容量 |
+| 2026H2-2027 | Siemens SENTRON 3QD2 和类似 SiC solid-state breaker 的商业订单 | 验证数据中心/工厂高压保护是否成真实收入 |
+| 每季度 | ATV margin 是否稳定在 `18-22%+` | 汽车仍是集团最大利润池 |
+| 每季度 | FY2026 FCF 和 capex | 判断 AI power 增长是否变成现金流 |
+
+## 13. 资料来源
+
+### 13.1 项目内行业调研来源
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+
+### 13.2 公司财报、新闻与技术资料
+
+- Infineon FY2026 Q2 press release and financial tables: https://www.infineon.com/assets/row/public/documents/corporate/press/2026/infxx202605-082e.pdf
+- Infineon FY2026 Q2 analyst call presentation: https://www.infineon.com/content/dam/infineon/row/public/documents/corporate/investors/presentations/2026/2026-05-05-q2-fy26-analyst-call-v01-00-en.pdf
+- Infineon FY2026 Q1 results: https://www.infineon.com/cms/en/about-infineon/press/press-releases/2026/INFCSS202502-048.html
+- Infineon FY2025 Q4 results: https://www.infineon.com/cms/en/about-infineon/press/press-releases/2025/INFCSS202511-007.html
+- Infineon FY2025 Q3 results: https://www.infineon.com/cms/en/about-infineon/press/press-releases/2025/INFCSS202508-004.html
+- Infineon FY2025 Q2 results: https://www.infineon.com/cms/en/about-infineon/press/press-releases/2025/INFCSS202505-089.html
+- Infineon 800VDC / HV IBC reference designs: https://www.infineon.com/market-news/2026/infpss202603-067
+- Infineon XDPP1188-200C custom HV/MV IBC designs: https://www.infineon.com/market-news/2026/infpss202603-068
+- Infineon AI data center voltage regulation portfolio: https://www.infineon.com/market-news/2026/infpss202603-070
+- Infineon TDM24745T quad-phase TLVR module: https://www.infineon.com/market-news/2026/infpss202603-076
+- Infineon AI data center power solutions: https://www.infineon.com/applications/ai-data-center/data-center-power-solutions
+- Infineon We Power AI: https://www.infineon.com/technology/ai/we-power-ai
+- Infineon acquisition of GaN Systems completion: https://www.infineon.com/cms/en/about-infineon/press/press-releases/2023/INFCSS202310-009.html
+- Infineon acquisition of ams OSRAM sensor business: https://www.infineon.com/cms/en/about-infineon/press/press-releases/2026/INFXX202502-076.html
+- Infineon and Siemens SiC circuit breaker cooperation: https://www.infineon.com/cms/en/about-infineon/press/market-news/2026/INFPMM202506-101.html
+- Infineon and SolarEdge collaboration for 800VDC AI data centers: https://www.businesswire.com/news/home/20251105508991/en/SolarEdge-and-Infineon-Collaborate-to-Advance-High-Efficiency-Power-Infrastructure-for-AI-Data-Centers
+
+### 13.3 行业、会议与行情来源
+
+- NVIDIA 800VDC architecture for next-generation AI factories: https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/
+- NVIDIA 800VDC technology page: https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/
+- TI complete 800VDC power architecture with NVIDIA: https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-03-16-ti-unveils-complete-800-vdc-power-architecture-for-future-generation-ai-data-centers-with-nvidia.html
+- Navitas 10kW 800V-to-50V GaN full-brick: https://navitassemi.com/navitas-unveils-breakthrough-10-kw-dc-dc-platform-delivering-98-5-efficiency-for-800-vdc-next-gen-ai-data-centers/
+- Power Integrations 1250V/1700V PowiGaN for 800VDC AI data centers: https://investors.power.com/news/news-details/2025/Power-Integrations-Details-1250-V-and-1700-V-PowiGaN-Technology-for-Next-Generation-800-VDC-AI-Data-Centers/default.aspx
+- OCP Open Data Center ecosystem / Diablo sidecar: https://www.opencompute.org/blog/realizing-the-open-data-center-ecosystem-vision
+- StockAnalysis IFNNY historical data: https://stockanalysis.com/quote/otc/IFNNY/history/
+- Google Finance IFNNY quote snapshot: https://www.google.com/finance/quote/IFNNY:OTCMKTS
+- Yahoo Finance IFNNY statistics snapshot: https://finance.yahoo.com/quote/IFNNY/key-statistics/

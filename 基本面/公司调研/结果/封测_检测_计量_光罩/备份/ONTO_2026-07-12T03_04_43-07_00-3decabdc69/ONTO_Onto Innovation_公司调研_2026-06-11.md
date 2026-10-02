@@ -1,0 +1,431 @@
+# Onto Innovation（ONTO）公司调研_2026-06-11
+
+报告日期：2026-06-11  
+股票代码：ONTO  
+公司名称：Onto Innovation Inc.  
+归属目录：公司调研/封测_检测_计量_光罩/  
+本地资料边界：仅结合 `行业调研/` 下的半导体检测量测、先进封装、HBM、AI 数据中心产业链资料；未读取、引用或继承 `特征量化/`、`日度资料/`、`tmp/`、`data/` 或旧版公司报告正文。  
+口径说明：美元金额为 USD；季度为公司披露季度。公司不按 Dragonfly、Atlas、JetStep 等产品线完整披露收入和 backlog，本文对产品收入、BOM pull-through、订单转化和情景预测均标注为模型估算。
+
+## 0. 一页结论
+
+Onto Innovation 是半导体 process control 设备公司，主业是光学检测、光学/材料量测、先进封装光刻和良率分析软件。投资人心中的 ONTO 已经从“中型半导体检测量测设备商”重新定价为“AI 先进封装/HBM inspection-metrology 弹性标的”：2025 年报称 2025 年超过 60% 收入直接支持 AI 芯片生产；2026Q1 Dragonfly G5 已在领先 2.5D logic 客户和 HBM 客户通过 qualification；2025Q4 披露与领先 HBM 厂签署超过 2.40 亿美元 VPA，覆盖 Dragonfly 2D inspection 和 3D bump metrology、支持扩产到 2027 年。
+
+当前最强增长线不是“AI 数据中心机房设备”，而是 AI GPU/ASIC 的上游制造瓶颈：HBM4、CoWoS/2.5D、chiplet、混合键合、panel-level packaging、GAA/DRAM advanced nodes。Onto 的工具不进入每台服务器或每张 GPU 的物理 BOM，但通过晶圆厂、HBM 厂、foundry 和 OSAT 的资本开支获得经济含量。结论上，物理 BOM 为 0；经济 pull-through 约为每 MW AI IT load 3万-12万美元、每 GPU/ASIC package 50-250 美元的过程控制工具摊销价值，极度乐观下可到每 MW 20万美元、每 GPU 300 美元以上。这个含量很小，但毛利高、切换成本高、订单可见度好。
+
+最新财务显示公司进入再加速：2026Q1 收入 2.919 亿美元，同比 +9.5%，环比约 +9.4%；non-GAAP gross margin 55.7%，non-GAAP operating margin 26.7%；Q2 2026 指引收入 3.20-3.30 亿美元，中点同比约 +28%，non-GAAP EPS 1.65-1.73 美元。管理层称 2026 年收入预计超过 13 亿美元、同比增长超过 30%，先进封装收入预计增长超过 50%，advanced nodes 预计增长约 25%。
+
+估值已经很高。按 2026-06-11 金融快照价格约 303.53 美元和市值约 151.8 亿美元计算，TTM GAAP P/E 约 142x，TTM non-GAAP P/E 约 63x，P/S 约 14.7x；若用市场 FY2026 non-GAAP EPS 约 7.1 美元，forward P/E 约 42x。这个估值要求 Dragonfly G5、Atlas G6、Semilab、Rigaku/X-ray、panel-level packaging 多条线同时兑现，且订单不能明显 push-out。
+
+资产负债表非常健康，但 Rigaku 交易会改变净现金结构。2026-03-31 现金+短投 6.542 亿美元，流动资产 13.20 亿美元，流动负债 2.144 亿美元，流动比率约 6.15x，总负债 2.642 亿美元，股东权益 21.32 亿美元，基本无经营性债务；但 2026-04-20 公司同意以约 7.10 亿美元收购 Rigaku 27% 股权，并安排 5.00 亿美元 364 天 bridge loan，交易完成后净现金垫会显著下降，短期债务和利息/再融资风险需要纳入估值折扣。
+
+## 1. 公司业务、定位与近三年重大变化
+
+### 1.1 公司整体业务
+
+Onto 是 process control 公司，核心产品不是制程主设备，而是让客户在晶圆、封装、面板、基板和软件层面发现缺陷、量测尺寸/材料/形貌、缩短 time-to-yield。2025 年报给出的业务边界包括：
+
+| 业务层 | 主要能力 | 典型产品/平台 | 客户环节 |
+|---|---|---|---|
+| Inspection | macro defect、2D/3D wafer/package inspection、edge/backside、subsurface defect | Dragonfly G5/G3、3Di、NovusEdge、EchoScan、Firefly | HBM、2.5D/3D、OSAT、foundry、silicon wafer、specialty |
+| Metrology | OCD、thin film、materials、surface charge、composition、topography | Atlas G6/V、Iris G2、Element、MetaPULSE、Semilab FAaST/CnCV/MBIR | advanced logic、DRAM/HBM、GAA、3D NAND、chiplet |
+| Lithography | advanced packaging steppers、panel/substrate lithography | JetStep X500、JetStep S3500、StepFAST | panel-level packaging、AICS、fan-out、glass/organic substrate |
+| Process control software | defect/yield management、factory analytics、OCD modeling | Discover、Ai Diffract、fabwide control software | fab/OSAT process control、recipe/fleet analytics |
+| Services/parts | installed base support、upgrades、repairs | service contracts、parts、field support | 全球装机客户 |
+
+公司收入主要来自 systems/software 销售，2026Q1 systems and software 为 2.472 亿美元、占 84.7%；parts 为 2655 万美元、占 9.1%；services 为 1824 万美元、占 6.2%。这说明 ONTO 仍是设备周期股，不是纯 recurring software，但 installed base 带来的 parts/services 已经是稳定毛利和客户锁定层。
+
+### 1.2 投资人心中的公司形象
+
+| 维度 | 投资人通常怎么理解 ONTO | 本报告判断 |
+|---|---|---|
+| 赛道标签 | 半导体检测量测、先进封装 inspection/metrology、HBM/AI 封装受益股 | 正确，但不要把它当成数据中心硬件 BOM 公司；它是 AI 芯片制造资本开支的上游弹性 |
+| 与 KLA 的差异 | KLA 是前道 process-control 龙头，ONTO 更聚焦光学量测、advanced packaging、panel lithography 和软件 | ONTO 更小、弹性更高、客户/项目更集中；在 advanced packaging inspection 里比 broad WFE 更纯 |
+| 增长驱动 | Dragonfly G5、3Di、Atlas G6、Semilab、Rigaku/X-ray、panel-level packaging | 2026 的确定性集中在 Dragonfly/3Di/Atlas/Semilab；Rigaku 与 panel-level 更偏 2027-2029 期权 |
+| 主要风险 | 高估值、订单 push-out、客户集中、Camtek/KLA/Nova 替代、先进封装 CapEx 波动 | 风险真实存在；尤其是 G5 从 qualification 到 volume purchase 的节奏决定 2026H2-2027 股价弹性 |
+
+### 1.3 近三年重大业务变动、转型与收购
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2024 | Dragonfly、Iris 等新产品放量；公司继续从传统 inspection/metrology 向 AI 先进封装和 advanced nodes 迁移 | 使公司从普通 WFE beta 转为 AI chip production beta；2024 年 Dragonfly 和 Iris 相关收入显著增长 |
+| 2024-09 | 开设 Packaging Applications Center of Excellence，聚焦 panel-level packaging、2.5D/3D chiplet、AI packages | 提前卡位 glass/organic panel、CoPoS/panel-level、AICS 生态 |
+| 2025 | 先进节点收入快速提升；Q1 advanced nodes 9300 万美元、同比/环比高增长；Q3 advanced nodes 全年目标约 3 亿美元，较 2024 的 1.485 亿美元近翻倍 | Atlas/Iris/OCD/thin-film 从 GAA、DRAM/HBM 和 NAND 中获得增量 |
+| 2025-06 至 2025-11 | 宣布并完成收购 Semilab International 的关键产品线；最终交易约 4.95-5.27 亿美元口径，获得 FAaST、CnCV、MBIR 等材料/表面电荷/污染监测能力 | 2026Q1 贡献约 2400-2500 万美元收入；公司称原产品组合过去 5 年约 20% 年增长，预计年收入超过 1.30 亿美元 |
+| 2025H2 | 加速亚洲 extended factory/region-for-region 制造；Q3 约 30% tools 从亚洲扩展工厂出货，Q4 超过一半工具在亚洲制造 | 降低运费/关税/交期，支撑 2026 毛利率和交付能力；管理层称长期可支撑 20 亿美元收入 run-rate |
+| 2025Q4 | 与领先 HBM 厂签署超过 2.40 亿美元 VPA，覆盖 Dragonfly 2D inspection 和 3D bump metrology，支持扩产到 2027 | 这是最硬的 backlog/订单线索，验证 HBM 客户把 Onto 纳入 2026-2027 扩产计划 |
+| 2026-03 | 发布 Dragonfly G5；领先 HBM 厂为 HBM4 ramp 选择 G5/3Di，获得双位数订单承诺，2026Q2 起发货 | 把 G5 从 demo 推进到商业订单；竞争逻辑从“能不能达到 150nm/吞吐”转为“量产交付和份额” |
+| 2026-04/05 | G5 在领先 2.5D logic 客户和 HBM 客户通过 qualification；Q1 收入超原指引，Q2 指引上调至 3.20-3.30 亿美元 | 使 2026 advanced packaging growth outlook 从 >30% 上修到 >50% |
+| 2026-04 | 与 Rigaku 达成战略合作，约 7.10 亿美元收购 27% 股权，整合 Ai Diffract 与 X-ray/CD-SAXS 能力 | 扩大 X-ray/materials metrology；短期不贡献大收入，但对 hybrid bonding、3D package、GAA/HBM 3-6 年路线重要 |
+
+### 1.4 产业链定位
+
+Onto 位于 AI 芯片制造链的 process-control 层，而不是芯片、封装代工或服务器层：
+
+```text
+AI CapEx -> GPU/ASIC/HBM 需求 -> TSMC/Samsung/Intel/Micron/SK hynix/OSAT 扩产
+         -> 前道 advanced nodes + HBM DRAM + CoWoS/2.5D/3D packaging
+         -> inspection / metrology / lithography / yield software
+         -> Onto Dragonfly/3Di/Atlas/Iris/Semilab/JetStep/Firefly/Ai Diffract
+```
+
+本地行业调研对 2026 的共识是：检测量测的核心投资逻辑不是传统 WFE beta，而是 AI 芯片复杂度把良率控制从“必要成本”推成“产能释放瓶颈”。HBM3E/HBM4、CoWoS/SoIC、2.5D/3D、混合键合把检测量测从晶圆厂延伸到封装厂和 OSAT。Onto 正好处在这个延伸层。
+
+### 1.5 最新估值与财务健康度
+
+估值快照日期：2026-06-11。股价/市值采用实时金融快照；P/E 与 P/S 为本文根据最新四个披露季度重新计算，第三方口径会因 GAAP/non-GAAP、盘中价格和 EPS 口径不同而差异较大。
+
+| 指标 | 数值 | 日期/口径 |
+|---|---:|---|
+| 股价 | 约 303.53 美元 | 2026-06-11 金融快照 |
+| 市值 | 约 151.8 亿美元 | 2026-06-11 金融快照 |
+| TTM 收入 | 10.306 亿美元 | 2025Q2-2026Q1：253.6 + 218.2 + 266.9 + 291.9 |
+| P/S | 约 14.7x | 市值 / TTM 收入 |
+| TTM GAAP EPS | 约 2.14 美元 | 2025Q2 0.69 + Q3 0.57 + Q4 0.21 + 2026Q1 0.67 |
+| TTM GAAP P/E | 约 142x | 股价 / TTM GAAP EPS；Yahoo 2026-06-10 口径约 125x |
+| TTM non-GAAP EPS | 约 4.85 美元 | 2025Q2 1.25 + Q3 0.92 + Q4 1.26 + 2026Q1 1.42 |
+| TTM non-GAAP P/E | 约 63x | 股价 / TTM non-GAAP EPS |
+| Forward P/E | 约 42x | 股价 / 市场 FY2026 non-GAAP EPS 约 7.1 美元；Yahoo 2026-06-10 口径约 37.6x |
+| 最新季度收入增速 | +9.5% YoY | 2026Q1 vs 2025Q1 |
+| Q2 指引收入增速 | 约 +28% YoY | Q2 2026 指引中点 3.25 亿美元 vs Q2 2025 2.536 亿美元 |
+| 2026 收入展望 | >13 亿美元，>30% YoY | 管理层 Q1 2026 call |
+| GAAP 毛利率 | 50.1% | 2026Q1 |
+| non-GAAP 毛利率 | 55.7% | 2026Q1 |
+| GAAP 净利率 | 11.6% | 2026Q1 净利润 3375 万美元 / 收入 2.919 亿美元 |
+| non-GAAP 净利率 | 24.2% | 2026Q1 non-GAAP 净利润 7080 万美元 / 收入 2.919 亿美元 |
+
+资产负债表：
+
+| 项目 | 2026-03-31 | 解读 |
+|---|---:|---|
+| 现金及等价物 | 2.522 亿美元 | 经营现金仍正向 |
+| 短期投资/有价证券 | 4.019 亿美元 | 与现金合计 6.542 亿美元 |
+| 应收账款 | 3.066 亿美元 | Q2/Q3 交付爬坡时可能继续上行 |
+| 存货 | 3.160 亿美元 | 材料 2.321 亿、WIP 6249 万、成品 2145 万；存货高但与 ramp 对应 |
+| 流动资产 | 13.197 亿美元 | 流动性强 |
+| 流动负债 | 2.144 亿美元 | 流动比率约 6.15x |
+| 总资产 | 23.964 亿美元 | Semilab 后 goodwill/intangibles 增加 |
+| 总负债 | 2.642 亿美元 | 负债率约 11.0% |
+| 股东权益 | 21.322 亿美元 | 净现金资产负债表 |
+| 经营现金流 | 2632 万美元 | 2026Q1；受 working capital -4157 万美元拖累 |
+| CapEx | 359 万美元 | 2026Q1；轻资产设备装配/集成模式 |
+| Rigaku 后续交易 | 约 7.10 亿美元 + 5.00 亿美元 bridge loan 承诺 | 交易完成后净现金垫下降，短债/再融资风险上升 |
+
+健康度评价：交易前非常健康，净现金、低负债、高流动比率。交易后仍不至于财务紧张，但投资者需要从“净现金高弹性设备股”切换到“净现金显著下降、但获得 X-ray/metrology 战略资产期权”的框架；如果 2026H2 订单强，交易可被增长消化；如果订单 push-out，估值和净现金折价会同时扩大。
+
+## 2. 最新和最近四次财报复盘
+
+公司不披露标准化 bookings、B2B、lead time、取消率或产品级 backlog。以下订单/交期栏把公司明确披露、call commentary、产品发布、VPA 和客户 qualification 作为硬证据；其余为模型推断。
+
+| 财报季度 | 收入/增速 | 毛利率/利润率 | 业务收入结构 | 订单、backlog、交期、取消率 | AI 数据中心相关收入占比估算 |
+|---|---:|---:|---|---|---:|
+| 2026Q1，期末 2026-03-31，发布 2026-05-05 | 2.919 亿美元，YoY +9.5%，QoQ +9.4%；non-GAAP EPS 1.42 美元 | GAAP GM 50.1%；non-GAAP GM 55.7%；non-GAAP OM 26.7%；GAAP 净利率 11.6% | Specialty devices + AP 约 1.60 亿美元，其中 AP 约 2/3 即约 1.07 亿美元；Advanced nodes 约 8000 万美元，其中 memory 约 60%；parts+services 4480 万美元；Semilab 约 2500 万美元 | Dragonfly G5 在领先 2.5D logic 和 HBM 客户通过 qualification；pipeline 超 15 个 applications、10+ customers；Q1 少量 G5，Q2/Q3 近似逐季翻倍；lead time 略拉长但未影响交付；未披露取消率 | 公司披露 2025 年 >60% 收入直接支持 AI 芯片生产。本文估算 Q1 AI 相关 60-68%，约 1.75-1.98 亿美元，来自 AP、HBM/DRAM advanced nodes、Semilab 材料/表面电荷、CPO/panel 小量 |
+| 2025Q4，期末 2026-01-03，发布 2026-02-19 | 2.669 亿美元，YoY +1.1%，QoQ +22.3%；non-GAAP EPS 1.26 美元 | GAAP GM 46.4%；non-GAAP GM 54.6%；non-GAAP OM 25.2%；GAAP 净利率 3.9% | SDEAP 管理层此前指引约 1.50 亿美元级；2025 全年收入 10.053 亿美元；Semilab 已并入 | 2.5D packaging orders 在季度内超过翻倍；签署超过 2.40 亿美元 HBM VPA，覆盖 Dragonfly 2D inspection 和 3D bump metrology、支持 2027 扩产；backlog 三个月内翻倍；precision optics 等供应链交期较固定 | 估算 58-65%，约 1.55-1.73 亿美元；VPA 提高 2026-2027 可见度 |
+| 2025Q3，期末 2025-09-27，发布 2025-11-06 | 2.182 亿美元，YoY -13.5%，QoQ -14.0%；non-GAAP EPS 0.92 美元 | GAAP GM 50.7%；non-GAAP GM 54.0%；non-GAAP OM 21.1%；GAAP 净利率 12.9% | Advanced nodes 5400 万美元，占 25%；Specialty devices + AP 1.13 亿美元，占 52%；software/services 5100 万美元，占 23% | 3Di 在两个 HBM 客户和一个 2.5D logic 客户通过 qualification；next-gen Dragonfly 向客户出货用于 HBM4 和 leading 2.5D logic 评估；客户 indications 显示 2026 Dragonfly demand 可能较 2025 增加最多 20% | 估算 52-60%，约 1.13-1.31 亿美元；Q3 是过渡低点，Q4 起 AI AP 订单恢复 |
+| 2025Q2，期末 2025-06-28，发布 2025-08-07 | 2.536 亿美元，YoY +5%；non-GAAP EPS 1.25 美元 | GAAP GM 48.2%；non-GAAP GM 54.5%；GAAP 净利率 13.4% | advanced packaging/AI 相关继续高占比；Dragonfly 与 3Di 是主要增长线；宣布 Semilab 交易 | 已向超过 10 家客户交付 3Di；超过 20 台 Dragonfly 系统用于 advanced AI packaging；Q3 指引降至 2.10-2.25 亿美元，管理层把 Q4 和 2026 作为回升点；说明客户 ramp/验收节奏有短期波动 | 估算 55-62%，约 1.40-1.57 亿美元；Q2 仍有高 AI AP 暴露，但 Q3 push-out 说明节奏不线性 |
+| 2025Q1，期末 2025-03-29，发布 2025-05-08 | 2.666 亿美元，YoY +16%；non-GAAP EPS 1.51 美元 | GAAP GM 48.3%；non-GAAP GM 54.6%；non-GAAP OM 27.1%；GAAP 净利率 15.6% | Advanced nodes 9300 万美元，同比增长约 120%；Specialty devices/AP 1.29 亿美元；software/services/other 4400 万美元 | advanced nodes 由 leading-edge DRAM 和 advanced logic 拉动；AI packaging 订单强，但 Q2/Q3 节奏后来显示客户消化与 ramp 时间差 | 估算 58-65%，约 1.55-1.73 亿美元；先进逻辑/DRAM 与 AP 均与 AI 芯片相关 |
+
+### 2.1 财报趋势判断
+
+1. **Q3 2025 是收入低点，不是需求崩塌。** Q3 收入低至 2.182 亿美元，表面同比下降 13.5%，但同时公司披露 next-gen Dragonfly/3Di qualification 和 2026 demand indication。Q4 起收入反弹到 2.669 亿美元，Q1 2026 又到 2.919 亿美元，说明主要是客户 ramp 节奏和新平台切换。
+2. **订单线索从“客户兴趣”变成“VPA + qualification + backlog”。** 2.40 亿美元 HBM VPA、G5 在 HBM 和 2.5D logic 客户过认证、Q4 backlog 三个月翻倍，是当前最强证据。
+3. **毛利率改善主要靠 mix、亚洲制造和 volume absorption。** 2026Q1 non-GAAP GM 55.7%，Q2 指引 56.0-56.5%；Semilab 早期摊销会压 GAAP，但 non-GAAP 经营杠杆较清楚。
+4. **AI 相关占比已经高，但不是全部。** 公司披露 2025 年超过 60% 收入直接支持 AI chip production；本文用 55-68% 做季度估算。低增长 specialty、parts/service、部分 mature-node metrology 仍存在。
+
+## 3. 2026 最新指引、业务占比和产品映射
+
+### 3.1 2026Q2 和全年指引
+
+| 项目 | 最新指引/事实 | 投资含义 |
+|---|---:|---|
+| 2026Q2 收入 | 3.20-3.30 亿美元 | 中点 3.25 亿美元，YoY 约 +28%，QoQ 约 +11% |
+| 2026Q2 GAAP GM | 约 52.5-53.5% | Semilab/Rigaku 相关摊销前，核心业务毛利改善 |
+| 2026Q2 non-GAAP GM | 56.0-56.5% | 已接近 56% 中高端设备商水平 |
+| 2026Q2 non-GAAP operating margin | 28.0-28.6% | 经营杠杆回升 |
+| 2026Q2 non-GAAP EPS | 1.65-1.73 美元 | 年化超过 6.6 美元 |
+| 2026 全年收入 | 管理层预计 >13 亿美元，YoY >30% | 对应 H2 继续上台阶 |
+| 2026 advanced packaging | 预计增长 >50%，此前 >30% | Dragonfly/3Di/G5/VPA 是主线 |
+| 2026 advanced nodes | 预计增长约 25% | Atlas/Iris/OCD、memory/logic metrology |
+| 2026 Semilab | 预计年收入 >1.30 亿美元 | Q1 25m，全年需持续爬坡 |
+| 长期制造能力 | extended factory strategy 支撑约 20 亿美元 revenue run-rate | 当前收入指引约占潜在制造能力 65%，供给侧尚未成为最大瓶颈 |
+
+### 3.2 2026Q1 业务收入占比
+
+| 业务/口径 | 2026Q1 收入 | 占比 | 增长/趋势 | 重点程度 |
+|---|---:|---:|---|---|
+| Specialty devices + Advanced packaging | 1.60 亿美元 | 54.8% | 其中 AP 约 2/3，即约 1.07 亿美元；AP 2026 预计 >50% 增长 | 最高，Dragonfly/3Di/G5 是估值核心 |
+| Advanced nodes | 8000 万美元 | 27.4% | 其中 memory 约 60%，logic 约 40%；全年预计 +25% | 高，Atlas/Iris/材料量测承接 DRAM/HBM/GAA |
+| Parts + services | 4480 万美元 | 15.3% | installed base 扩大后增长稳定 | 中，利润稳定但不是估值弹性主轴 |
+| Semilab product lines | 约 2500 万美元 | 8.6%，部分包含在上述口径中 | 年收入目标 >1.30 亿美元；过去 5 年约 20% CAGR | 高，材料/表面电荷/污染监测增强 AI/GAA/HBM 量测 |
+| 其他 specialty devices | 估算 2500-4000 万美元 | 9-14% | power/RF/MEMS/CIS/industrial 等，周期性较强 | 低到中，除 SiC/功率器件外不是本次重点 |
+
+### 3.3 产品/业务映射
+
+| 重点产品/业务 | 对应业务 | 主要用途 | 2026 状态 | 本报告收入贡献估算 |
+|---|---|---|---|---:|
+| Dragonfly G5 + 3Di | Advanced packaging inspection/metrology | HBM bump、2.5D/3D chiplet、RDL、micro-bump、defect + 3D metrology | G5 已在 HBM 和 2.5D logic 客户 qualification；VPA >2.40 亿美元到 2027；Q2/Q3 发货逐季上升 | 2026 年 2.5-3.5 亿美元，2027 基准 3.5-4.5 亿美元 |
+| Dragonfly legacy / 3Di installed base | Advanced packaging | 现有 HBM3E/CoWoS-like 量产检测，upgrade/service | 2025 已有大规模 AI packaging 收入；G5 逐步替代/扩展 | 2026 年 1.5-2.2 亿美元含在上项中 |
+| Atlas G6 / Atlas OCD / Iris | Advanced nodes metrology | GAA、advanced logic、DRAM/HBM、3D NAND、thin film/OCD | 2026 advanced nodes 预计 +25%；memory 占 Q1 advanced nodes 约 60% | 2026 年 3.5-4.0 亿美元 advanced nodes 总口径；其中 Atlas/Iris 核心 2.0-2.8 亿美元 |
+| Semilab FAaST/CnCV/MBIR 等 | Materials/surface charge metrology | contamination、surface charge、buried/subsurface、advanced logic/HBM/packaging 材料问题 | Q1 约 2500 万美元，全年目标 >1.30 亿美元 | 2026 年 1.25-1.40 亿美元 |
+| Rigaku / Ai Diffract / X-ray roadmap | X-ray/materials metrology | CD-SAXS、buried structures、hybrid bonding void、advanced package/logic 材料 | 2026 是战略交易和软件协同，收入贡献小；3-6 年期权 | 2026 直接贡献很小；2027 0.2-0.9 亿美元情景 |
+| JetStep X500/S3500 + Firefly + StepFAST | Panel-level packaging / AICS | panel lithography、glass/organic interposer、fan-out、CPO/optical I/O 封装 | 已在两个主要封装供应商通过 qualification；约 2 亿美元 SAM 分多年 | 2026 0.3-0.6 亿美元；2027 0.5-1.2 亿美元 |
+| EchoScan / NovusEdge / edge-backside tools | Wafer inspection / specialty | wafer defects、edge/backside、subsurface；部分用于 hybrid bonding/advanced package | 重要但披露少 | 2026 0.5-0.8 亿美元综合口径 |
+| Discover / yield software / service | Software/services | defect classification、yield analytics、fleet/recipe control | 随装机增长，毛利高但不独立披露 | 2026 1.9-2.3 亿美元 parts/services+software相关 |
+
+### 3.4 跳过或降权的非重点产品/业务
+
+以下业务不是没有价值，而是在本次“AI 芯片/AI 数据中心高增长”框架下弹性较低，报告后续只在风险和底盘收入中提及：
+
+| 跳过/降权对象 | 原因 |
+|---|---|
+| 传统 specialty devices 中的普通 RF/MEMS/CIS/industrial inspection | 收入可能稳定，但与 AI/HBM/CoWoS 的订单弹性弱 |
+| 部分成熟节点薄膜/膜厚/宏观检测工具 | 竞争更强，客户压价能力较高，不是估值重估主线 |
+| 传统 LED、显示、硬盘/存储非 AI 应用 | 与 AI 数据中心关联弱，周期性和价格弹性不如 HBM/advanced packaging |
+| 常规 parts/services | 毛利和现金流重要，但不是高增长产品；只作为 installed base 粘性和毛利支撑 |
+| 低端 panel/fan-out 封装 | 如果没有进入 AI package、CPO/optical I/O、glass substrate 或 CoPoS，增长和毛利都有限 |
+
+### 3.5 不能漏掉的潜力小业务
+
+| 潜力业务 | 为什么小但值得盯 |
+|---|---|
+| Rigaku X-ray / Ai Diffract | 先进封装和 GAA/HBM 的 buried/3D structure 越来越难用纯 optical 解决；若 X-ray + AI modeling 成为 inline 或 nearline process-control 工具，3-6 年期权大 |
+| JetStep / Firefly panel-level packaging | 2026 收入不大，但 CoPoS、glass core、large organic panel、CPO/optical I/O 若提前，Onto 是少数已有 panel lithography + inspection 组合的公司 |
+| CPO/optical I/O packaging inspection | 目前 optical port 的 Onto pull-through 很小，但 224G/448G electrical reach 受限后，PIC/EIC bonding、active alignment、photonic interposer inspection 会打开新工序 |
+| Semilab surface charge / contamination | 不是 headline 产品，但 GAA、HBM、hybrid bonding 对表面/污染/材料的容忍度下降，客户一旦导入，切换成本较高 |
+| Software/Discover/Ai Diffract | 设备硬件之外最高毛利；如果 defect library 和客户 recipe 数据积累加深，软件 attach 率会提高 |
+
+## 4. 高增长/关键产品当前收入贡献与战略评分
+
+评分口径：5 = 最高。收入贡献为本文模型估算，不是公司披露。
+
+| 产品/业务 | 当前收入贡献 | 当前增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Dragonfly G5 + 3Di advanced packaging inspection/metrology | 2026Q1 AP 子收入约 1.07 亿美元；全年 AP 估 5.0-5.8 亿美元，其中 Dragonfly/3Di 约 2.5-3.5 亿美元 | AP 2026 指引 >50%；G5 Q2/Q3 发货逐季近翻倍 | 5 | 5 | 4.5 | 4 | HBM4、2.5D logic、CoWoS-like 的良率卡点；VPA 和 qualification 最硬 |
+| Atlas/Iris advanced nodes metrology | Q1 advanced nodes 8000 万美元；全年 advanced nodes 估 3.5-4.0 亿美元 | 2026 约 +25%；memory 占 Q1 约 60% | 4 | 4 | 3.5 | 3.5 | GAA、DRAM/HBM、NAND 继续拉动；但 KLA/Nova/ASML 竞争更强 |
+| Semilab materials/surface charge metrology | Q1 约 2500 万美元；全年目标 >1.30 亿美元 | 原产品组合过去 5 年约 20% CAGR；并购后进入 Onto 渠道 | 4 | 4 | 3.5 | 4 | contamination/surface charge 在 GAA/HBM/advanced package 中重要，验证周期长 |
+| Rigaku X-ray / Ai Diffract | 2026 直接收入很小；战略投资 7.10 亿美元 | 2027 起取决于产品整合和客户验证 | 3.5 | 3 | 3 | 4 | X-ray/CD-SAXS 是 buried/3D structure 的潜在长期路径，短期估值不宜给太多 |
+| JetStep + Firefly panel-level packaging | 2026 估 3000-6000 万美元 | 分多年 2 亿美元 SAM；2027 若 glass/CoPoS/CPO 前置则加速 | 3.5 | 3 | 3 | 3.5 | panel-level 不是 2026 主收入，但大包体降本可能把它提前 |
+| Software/services/Discover | 2026 年 parts/services+software相关约 1.9-2.3 亿美元 | 随装机增长，低双位数到中双位数 | 3.5 | 3.5 | 2.5 | 4 | 高毛利和客户锁定；但披露不透明 |
+
+## 5. 关键产品一年后三情景预测
+
+时间窗口：2027 年中附近或未来 12 个月 run-rate。收入贡献为年化收入机会，非确定订单。
+
+| 产品/业务 | 基准情景 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| Dragonfly G5 + 3Di | 收入贡献 3.5-4.5 亿美元，YoY +35-55%；AI 重要性 5；紧急性 5；供需紧张 4；溢价 4。假设 VPA 按计划交付，新增 HBM/2.5D 客户正常 ramp | 收入 4.8-6.0 亿美元，YoY +70% 左右；G5 成为多个 HBM/2.5D 客户 POR，Q4 2026/Q1 2027 追加订单 | 收入 6.5-8.0 亿美元；HBM4/4E、Rubin/MI400/ASIC 同步拉动，客户为锁定 time-to-yield 接受更高配置和服务包 |
+| Atlas/Iris advanced nodes | 收入 4.0-4.6 亿美元，YoY +15-25%；重要性 4；供需 3 | 收入 5.0-5.7 亿美元，DRAM/HBM、GAA、N2/N3 节点扩产同步上行 | 收入 6.3-7.2 亿美元，High-NA/GAA/HBM4 metrology 前置采购，Onto 份额保持 |
+| Semilab materials/surface charge | 收入 1.45-1.60 亿美元，YoY +10-20%；重要性 4；溢价 4 | 收入 1.75-2.00 亿美元，Onto 渠道带来交叉销售，HBM/GAA/packaging customers 扩大 | 收入 2.2-2.6 亿美元，surface/contamination 成为 hybrid bonding 和 GAA 良率痛点 |
+| Rigaku / Ai Diffract / X-ray | 收入 0.2-0.4 亿美元，主要是协同项目和软件/试点；重要性 3 | 收入 0.5-0.9 亿美元，X-ray/CD-SAXS 进入更多 advanced package/GAA evaluation | 收入 1.0-1.5 亿美元，X-ray 方案拿到 early production qualification；但概率低 |
+| JetStep + Firefly panel-level | 收入 0.5-0.7 亿美元；重要性 3 | 收入 0.8-1.2 亿美元，CoPoS/glass/panel pilot 加速 | 收入 1.5-2.0 亿美元，panel-level packaging 提前从 pilot 转小规模 HVM |
+| Software/services | 收入 2.2-2.6 亿美元，毛利稳定 | 收入 2.7-3.2 亿美元，G5/Atlas/Semilab installed base 扩大，AI defect classification attach 提高 | 收入 3.5 亿美元以上，Discover/Ai Diffract 数据闭环成为高端客户默认配置 |
+
+## 6. BOM、每 MW/rack/GPU/optical port 内容量、价格传导和当前产能
+
+### 6.1 先说明：Onto 不在物理 BOM 里
+
+Onto 的工具不装进 rack、GPU、HBM stack 或 optical module。因此：
+
+| 口径 | 真实物理内容量 |
+|---|---:|
+| 每 MW AI 数据中心 | 0 台 Onto 工具 |
+| 每 rack | 0 台 Onto 工具 |
+| 每 GPU/ASIC | 0 个 Onto 组件 |
+| 每 optical port | 0 个 Onto 组件 |
+
+但 Onto 在“制造资本开支摊销”中有经济含量。价格传导链如下：
+
+```text
+AI rack/GPU/ASIC 订单 -> GPU/ASIC/HBM 供应商扩产
+-> TSMC/Samsung/Intel/Micron/SK hynix/OSAT 资本开支
+-> HBM/CoWoS/GAA/DRAM/advanced package 工序增加
+-> 需要更多 inspection/metrology/lithography/software
+-> Onto 工具订单、服务、软件和升级
+```
+
+### 6.2 经济 pull-through 估算
+
+关键假设：1MW 高密度 AI IT load 约 8-10 个 100-120kW rack，约 576-720 个高端 GPU/ASIC package。Onto 的收入来自上游工具摊销，不按单个 rack 采购；以下用行业产能和工具 ASP 粗算。
+
+| 口径 | 当前基准内容量 | 乐观内容量 | 极度乐观内容量 | 解释 |
+|---|---:|---:|---:|---|
+| 每 MW AI IT load | 3万-12万美元 | 8万-18万美元 | 15万-30万美元 | 按 HBM/CoWoS/GAA process-control 工具摊销；真实采购发生在 fabs/OSAT |
+| 每 rack | 3000-1.5万美元 | 8000-2.2万美元 | 1.5万-3.5万美元 | rack 功率越高，摊销到 rack 的 process-control 内容量越高 |
+| 每 GPU/ASIC package | 50-250 美元 | 150-350 美元 | 300-500 美元 | 只计 Onto 相关 inspection/metrology/lithography/software 的工具摊销，不含 KLA/Nova/Camtek 等 |
+| 每 HBM stack | 5-25 美元 | 15-40 美元 | 30-60 美元 | HBM wafer/package inspection、3D bump metrology、materials metrology 分摊 |
+| 每 optical port | 约 0 美元到 1 美元 | 1-5 美元 | 5-12 美元 | 仅在 CPO/optical I/O packaging inspection 或 panel lithography 被采用时成立 |
+
+### 6.3 重点产品 BOM/工序拆分
+
+| 产品/业务 | 对应工序 | 工具 ASP/内容量模型 | 当前产能能力（美元计） | 供应链采纳/认证阶段 |
+|---|---|---|---:|---|
+| Dragonfly G5 + 3Di | HBM bump/RDL/TSV/CoWoS-like/chiplet 2D inspection + 3D metrology，部分 150nm 级 defect sensitivity | 单台高端系统估 300万-700万美元；3Di/软件/服务提高系统 ASP；每 10k WPM 先进封装产能可能需要 1000万-5000万美元 Onto 工具包，取决于 inspection passes | 公司整体制造体系称可支撑约 20 亿美元 revenue run-rate；2026 AP 收入估 5亿+，说明仍有扩产空间 | 已在领先 HBM 厂和 2.5D logic 客户 qualification；HBM 厂 VPA >2.40 亿美元到 2027；部分客户已是 POR/工具记录候选 |
+| Atlas/Iris advanced nodes | OCD、thin film、in-device overlay/metrology、DRAM/HBM/GAA process control | 单台估 300万-800万美元；更多由 layer count、recipe、software 决定 | 2026 advanced nodes 收入估 3.5-4.0 亿美元 | 进入 leading-edge logic、DRAM/HBM 客户；竞争更直接来自 KLA/Nova/ASML/Applied |
+| Semilab | surface charge、contamination、materials/defect metrology、subsurface/wafer materials | 单台/模块差异大，估 100万-600万美元；与 materials lab/inline metrology 组合销售 | 年收入目标 >1.30 亿美元；并入 Onto 后渠道扩张 | 已有既有客户和 backlog；Onto 正在交叉销售到 AI/GAA/advanced package |
+| Rigaku/X-ray/Ai Diffract | X-ray/CD-SAXS、buried 3D structure、hybrid bonding void/overlay/materials | 高端 X-ray/metrology 工具估 200万-1000万美元；软件模型提高附加值 | 2026 直接产能贡献有限；战略交易后由 Rigaku 自身产能与 Onto渠道协同 | 战略投资/合作阶段；未来需客户 evaluation -> qualification -> HVM |
+| JetStep/Firefly | panel-level lithography + AOI/metrology，glass/organic interposer、AICS、CPO substrate | JetStep 估 500万-1200万美元/台，Firefly 估 100万-400万美元/台；每条 panel pilot/HVM 线需要多台 stepper+inspection | 公司称相关 SAM 约 2 亿美元、分多年兑现 | 已在两个主要 packaging suppliers qualification；多数仍是 pilot/early adoption |
+| Software/services | defect classification、yield analytics、recipe/fleet、Ai Diffract modeling | 软件毛利高；通常随工具 attach 或服务合同销售 | Q1 parts+services 4480 万美元；年化近 1.8 亿美元，不含系统软件 | 装机越多越强；切换成本来自 defect library、recipe 和历史数据 |
+
+### 6.4 当前产能与供给瓶颈
+
+| 项目 | 当前判断 |
+|---|---|
+| 公司制造能力 | 管理层称 extended factory / region-for-region strategy 可支持约 20 亿美元 revenue run-rate；2026 指引 >13 亿美元，尚未满产 |
+| 供应链瓶颈 | precision optics、camera/detector、stage、软件/算法工程、field service、客户 qualification；G5 ramp 会使若干供应商 lead time 拉长 |
+| 交期 | 管理层 Q1 2026 称 lead times 开始拉长，但没有限制 Q2/Q3 交付；若极度乐观，G5/3Di 可成为局部瓶颈 |
+| 取消率 | 未披露。本文对已 qualification/VPA 的 HBM/2.5D 项目假设取消率低于 5-10%，但 push-out 风险高于取消风险 |
+| 客户采纳 | HBM、2.5D logic、advanced packaging、advanced nodes 已有客户认证；panel-level 和 X-ray 更偏 early qualification |
+
+## 7. 一年后产能、采纳和认证阶段预测
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| Dragonfly G5 + 3Di | 年化交付能力 4.5-5.5 亿美元；更多 HBM/2.5D 客户从 qualification 进入 volume purchase；VPA 正常履约 | 年化能力 6-7 亿美元；新增 2-3 家 HBM/OSAT/foundry 客户追加；G5 成为部分 HBM4 line tool-of-record | 年化能力 8 亿美元以上；交期拉长，客户预定 2027-2028 产能，G5/3Di 成为 HBM4E/AI ASIC 的关键 bottleneck |
+| Atlas/Iris | 年化能力 4.5 亿美元级；advanced nodes +25% 后进入稳态 | 年化能力 5.5-6.0 亿美元；GAA/DRAM/HBM layer count 提升 | 年化能力 7 亿美元级；High-NA/GAA/HBM4 叠加，Onto 份额不被 KLA/Nova 挤压 |
+| Semilab | 年化 1.4-1.6 亿美元；完成渠道整合 | 年化 1.8-2.0 亿美元；materials/surface charge 成为 Onto 交叉销售标准包 | 年化 2.5 亿美元级；surface/contamination 在 hybrid bonding/HBM4E 中成为高优先级采购 |
+| Rigaku/X-ray | evaluation/合作阶段，年化 2000-4000 万美元 Onto 协同机会 | 多家客户 qualification，年化 5000-9000 万美元 | early HVM qualification，年化 1 亿美元以上，但概率低、取决于工具 throughput 和 inline 可用性 |
+| JetStep/Firefly | panel-level pilot 继续，年化 5000-7000 万美元 | panel-level/glass/CoPoS 订单前置，年化 8000万-1.2 亿美元 | CoPoS/optical I/O 提前，年化 1.5-2.0 亿美元 |
+| Software/services | 年化 2.2-2.6 亿美元；attach 率随装机上升 | 年化 2.7-3.2 亿美元；defect classification attach 提高 | 年化 3.5 亿美元以上；软件和 service package 随紧缺工具捆绑销售 |
+
+## 8. 订单积压、供给和未来一年业务增速推断
+
+### 8.1 真实订单线索
+
+| 线索 | 硬度 | 金额/窗口 | 含义 |
+|---|---|---:|---|
+| 领先 HBM 厂 VPA | 高 | >2.40 亿美元，覆盖扩产到 2027 | Dragonfly 2D inspection + 3D bump metrology 有真实多年可见度 |
+| Q4 2025 backlog 三个月翻倍 | 中高 | 未披露绝对金额 | 说明 Q4 订单转强，但无法计算 book-to-bill |
+| G5 HBM/2.5D qualification | 高 | 超 15 applications、10+ customers pipeline | 订单转化概率高于普通 evaluation，但 volume purchase 仍需客户 capex 节奏 |
+| G5 Q1/Q2/Q3 发货节奏 | 中高 | Q1 少量，Q2/Q3 近似逐季翻倍 | 支撑 Q2/Q3 收入和 H2 指引 |
+| Semilab 年收入目标 | 中高 | >1.30 亿美元 | 并购资产有清晰当年收入贡献 |
+| JetStep/panel SAM | 中 | 约 2 亿美元分多年 | 不是 2026 主线，但 2027-2029 可成为新增长点 |
+| Rigaku | 中 | 7.10 亿美元投资，收入协同未披露 | 战略意义高，短期订单可见度低 |
+
+### 8.2 未来一年公司总收入增速预测
+
+基准情景：2026 年收入 13.0-13.8 亿美元，YoY +29-37%；2027 年中 run-rate 14.5-16.0 亿美元。假设 VPA 正常履约，G5 发货按 Q2/Q3 ramp，Semilab 达成 >1.30 亿美元目标，advanced nodes +20-25%，panel/X-ray 小贡献。
+
+乐观情景：2026 年收入 14.0-15.2 亿美元，YoY +39-51%；2027 年中 run-rate 17-19 亿美元。假设 HBM4/2.5D 客户追加、Dragonfly G5 份额提高、Atlas/Iris 受 memory/GAA 拉动，Semilab 交叉销售快于预期。
+
+极度乐观情景：2026 年收入 15.5-17.0 亿美元，YoY +54-69%；2027 年中 run-rate 接近或超过 20 亿美元制造能力。前提是 Rubin/MI400/TPU/Trainium/Broadcom ASIC 同时推动 HBM4/CoWoS 订单，客户为锁定良率设备提前下单，G5/3Di 出现交期紧张。
+
+下修情景：2026 年收入 12.0-12.8 亿美元，YoY +19-27%。触发条件是 HBM4 ramp 推迟、VPA delivery 推后、客户消化前期 AP 工具、advanced nodes 客户验收慢、Semilab 整合低于预期。
+
+### 8.3 取消率和交付窗口推断
+
+Onto 未披露取消率。对已经进入 HBM VPA/qualification 的项目，本文假设取消率低，但交付推迟风险不低：
+
+| 项目类型 | 取消风险 | 推迟风险 | 原因 |
+|---|---:|---:|---|
+| HBM VPA / G5 量产订单 | 低 | 中 | HBM/AI 封装扩产刚需强，但客户产线 build-out、qualification 和 tool matching 可能推迟 |
+| 2.5D logic / CoWoS-like | 低到中 | 中 | 取决于 TSMC/OSAT/ASIC 客户封装产能和 GPU/ASIC ramp |
+| Advanced nodes Atlas/Iris | 中低 | 中 | WFE/节点 ramp 可能随客户 capex 调整 |
+| Semilab | 中低 | 低到中 | 既有客户+交叉销售，但并购整合有执行风险 |
+| Panel-level / CPO | 中 | 中高 | 技术路线和量产时点不确定 |
+| Rigaku/X-ray | 中 | 高 | 技术价值高，但进入 HVM 需 throughput、recipe、客户认证共同达标 |
+
+## 9. 竞争格局、主流性、替代方案与客户替换成本
+
+### 9.1 分产品竞争格局
+
+| 产品/业务 | 主要竞争对手 | Onto 优势 | 替代风险 | 客户切换成本 |
+|---|---|---|---|---|
+| Dragonfly G5 + 3Di advanced packaging inspection/metrology | Camtek Hawk/Eagle、KLA Kronos/CIRCL/ICOS、Nova、Nordson、Toray、SCREEN、UnitySC | 在 HBM/2.5D inspection + 3D bump metrology 上已有 VPA 和 qualification；3Di 与 Dragonfly 组合是差异化 | Camtek 在 AI/HBM/OSAT 订单非常强；KLA 可用前道 process-control 与服务网络打包；Nova/Rigaku/X-ray 可替代部分 3D/materials 场景 | 高。工具要匹配客户 defect library、recipe、false alarm、throughput、yield correlation；一旦成为 POR，替换会引入良率和交期风险 |
+| Atlas/Iris advanced nodes metrology | KLA Archer/SpectraShape、Nova PRISM/VeraFlex/chemical metrology、ASML YieldStar/HMI、Applied metrology、Hitachi | 光学/OCD/film metrology 组合成熟；在 memory/advanced nodes 有装机基础 | 龙头 KLA/Nova 在前道客户关系和材料/化学量测上更强；ASML 与 scanner 闭环有系统优势 | 中高。前道 metrology recipe 与 scanner/fab control 绑定强，但客户通常保留多供应商 |
+| Semilab materials/surface charge | Nova、KLA、Bruker、HORIBA、Park Systems、Thermo Fisher、Semilab 原有竞争者 | 并入 Onto 后渠道和交叉销售增强；surface charge/contamination 与 GAA/HBM/advanced package 痛点相关 | 如果客户更偏 inline chemical/materials metrology，Nova/KLA 可能占优；实验室工具向量产工具转化不一定顺利 | 中高。材料/表面量测需要客户 correlation，但不像 POR inspection 那样不可替代 |
+| Rigaku / X-ray / Ai Diffract | Bruker、Thermo Fisher、Carl Zeiss、Nova X-ray/materials、KLA、Applied/ASML e-beam 相邻 | X-ray penetration/buried structure 与 optical 互补；Ai Diffract 可与 Onto 软件/OCD 结合 | X-ray throughput 可能不够 inline；e-beam/optical/AFM/ultrasound/micro-CT 可能在不同工序替代 | 中。早期验证期切换成本低，进入量产 recipe 后切换成本升高 |
+| JetStep + Firefly panel-level packaging | Canon/Nikon/Ushio/SUSS/EVG/SCREEN、KLA/Orbotech panel inspection、Camtek/FRT、DISCO/TEL 相邻 | Onto 在 panel lithography + inspection/metrology 上有组合；已在两个 packaging supplier qualification | panel-level/CoPoS/glass 量产时点不确定；若 TSMC/Intel/OSAT 选择不同 lithography/inspection 路线，收入延后 | 中。panel 工艺仍早期，客户会多方案试产；量产后切换成本提高 |
+| Software/Discover/Ai Diffract | KLA Klarity/AI、Applied ExtractAI/SmartFactory、PDF Solutions、Synopsys/Cadence SLM 相邻、Camtek Visual Layer | 与 Onto tools 和 defect library 绑定；软件毛利高 | 数据平台通常由大客户自建或 KLA/Applied 打包；纯软件单独议价难 | 高。历史 defect data、recipe、tool matching 和工程流程绑定强 |
+
+### 9.2 新技术是否是未来主流
+
+| 技术 | 是否主流 | 判断 |
+|---|---|---|
+| HBM/2.5D/CoWoS-like advanced packaging inspection | 是，2026 已主流 | HBM4、AI ASIC、CoWoS/SoIC/2.5D 都需要更高 inspection/metrology 强度；Onto/Camtek/KLA 均有订单验证 |
+| 3D bump metrology / KGD / 100% high-coverage inspection | 是，渗透率上升 | 大包体和 HBM stack 的良率损失昂贵，抽检不足以支撑 ramp；3Di/G5 正在受益 |
+| GAA/DRAM/HBM advanced nodes metrology | 是 | 节点复杂度、DRAM/HBM layer count、thin-film/materials 控制都提升 metrology intensity |
+| X-ray/CD-SAXS/materials metrology | 未来主流的一部分，不会完全替代 optical/e-beam | buried structure、hybrid bonding void、材料组成需要 X-ray/多物理量测，但 throughput 决定 inline 渗透速度 |
+| Panel-level / glass / CoPoS | 可能成为 2028 后主流之一，2026 仍非主收入 | AI package 面积和成本压力会推动 panel/glass，但可靠性、warpage、yield、生态认证仍需时间 |
+| CPO/optical I/O packaging inspection | 长期期权 | 224G/448G electrical reach 越困难，PIC/EIC、active alignment、photonic interposer inspection 价值越大；2026 还不是大收入 |
+
+### 9.3 主要风险和替代方案
+
+| 风险 | 影响 | 反证/跟踪指标 |
+|---|---|---|
+| HBM4 / Rubin / MI400 / custom ASIC ramp 推迟 | Dragonfly/3Di、Semilab、advanced nodes 上沿下修 | HBM 厂 capex、TSMC CoWoS 月产能、NVIDIA/AMD/Broadcom/Google/AWS ASIC 节奏 |
+| Camtek/KLA 抢份额 | G5 订单转化低于预期，毛利承压 | Camtek Hawk 订单、KLA AP process-control 收入、客户 tool-of-record 披露 |
+| X-ray/Rigaku 整合慢 | 7.10 亿美元战略投资回报延后 | X-ray 产品 qualification、Ai Diffract attach、Rigaku 财务贡献和交易后债务 |
+| Panel-level 路线后移 | JetStep/Firefly 收入小于预期 | TSMC CoPoS、glass substrate、Intel/OSAT panel pilot 量产窗口 |
+| 客户集中和 VPA push-out | 收入季度波动大 | backlog conversion、DSO/inventory、Q2/Q3/Q4 revenue cadence |
+| 出口管制/中国需求波动 | 部分 advanced node/metrology 销售受限 | 美国/日本/荷兰规则变化，中国成熟节点 capex |
+| 估值过高 | 即使基本面向好，股价对小的订单延迟敏感 | forward P/E、P/S、2026/2027 EPS 修正、非 GAAP GM 能否保持 56%+ |
+
+### 9.4 客户替换成本
+
+Onto 在高端应用里的客户替换成本高，原因不是硬件本身不可复制，而是 process-control 工具与客户的 defect library、recipe、yield correlation、throughput、false-alarm threshold、tool matching、field support 和工程师经验绑定。对 HBM/2.5D，替换供应商的代价包括重新做 correlation、golden sample、process window、yield excursion 分析和量产 release，通常要数个季度。对 panel-level 和 X-ray 早期应用，切换成本当前较低，但一旦进入 HVM 或被写入 POR，切换成本会快速上升。
+
+## 10. 投资判断
+
+### 10.1 基准判断
+
+ONTO 是 2026-2027 AI 芯片制造链中最纯的中型 advanced packaging inspection/metrology 标的之一。基本面最强证据是 2.40 亿美元 HBM VPA、Dragonfly G5 qualification、Q2 指引上修、2026 收入 >13 亿美元和 advanced packaging >50% 增长。基准情景下，公司可以从 2025 年 10.05 亿美元收入提升到 2026 年 13.0-13.8 亿美元，2027 继续中双位数增长。
+
+### 10.2 乐观判断
+
+若 HBM4、GB300/Rubin、MI350/MI400、TPU/Trainium/Broadcom ASIC 同步拉动，且 OSAT 第二供应链承接更多 CoWoS-like 订单，Dragonfly G5/3Di 可能变成局部供不应求工具。乐观情景下 2026 收入 14.0-15.2 亿美元、non-GAAP EPS 7.5-8.5 美元，2027 年 run-rate 接近 18 亿美元。
+
+### 10.3 极度乐观判断
+
+极度乐观需要三个条件同时成立：一是 HBM4/4E 与 advanced packaging 继续短缺；二是 G5 成为多个客户的 HBM4/2.5D tool-of-record；三是 Atlas/Semilab/Rigaku/JetStep 小业务同时打开。若成立，ONTO 有机会接近 20 亿美元 revenue run-rate。但这已经接近管理层目前制造能力叙述上限，且估值会高度依赖 2027/2028 的持续订单。
+
+### 10.4 核心反证指标
+
+1. Onto Q2/Q3 2026 Dragonfly G5 发货没有逐季接近翻倍。
+2. advanced packaging 2026 增长指引从 >50% 下修。
+3. HBM VPA 交付窗口推迟，backlog conversion 低于收入指引。
+4. Camtek/KLA/Nova 披露 AI/HBM inspection 订单强于 Onto，且 Onto 未披露新增客户。
+5. non-GAAP gross margin 无法维持 56% 附近，说明 mix/制造/竞争压力恶化。
+6. Semilab 年收入低于 1.20 亿美元，说明并购整合或客户需求低于预期。
+7. Rigaku 交易带来债务/现金压力，但 12-18 个月内看不到实质客户验证。
+
+## 11. 主要来源
+
+### 11.1 项目内行业资料
+
+| 本地文件 | 使用内容 |
+|---|---|
+| `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体检测量测设备_2026-06-11.md` | 检测量测行业口径、2026 市场规模、Onto/Camtek/KLA/Nova 竞争格局、Dragonfly G5 和 AP process-control 订单线索 |
+| `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md` | HBM/CoWoS/混合键合设备链、Onto G5、Camtek 订单、TSMC CoWoS、panel/glass/CPO 路线 |
+| `行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-06-11.md` | HBM4/HBM3E、测试良率、KGD、AI 封装链交叉验证 |
+| `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` | AI CapEx、HBM/CoWoS 瓶颈、look-through 订单口径、MW/rack/GPU 传导框架 |
+| `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md` | 避免重复计算 GPU/HBM/封装/设备收入，区分物理 BOM 和上游工具摊销 |
+
+### 11.2 公司与官方资料
+
+| 来源 | 日期 | 链接 |
+|---|---:|---|
+| Onto Innovation Q1 2026 results | 2026-05-05 | https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2026-First-Quarter-Results/default.aspx |
+| Onto Innovation 2026Q1 Form 10-Q | 2026-05 | https://www.sec.gov/Archives/edgar/data/704532/000119312526206707/onto-20260331.htm |
+| Onto Innovation Q4 2025 results | 2026-02-19 | https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Reports-2025-Fourth-Quarter-and-Full-Year-Results/default.aspx |
+| Onto Innovation Q3 2025 results | 2025-11-06 | https://investors.ontoinnovation.com/news/news-details/2025/Onto-Innovation-Reports-2025-Third-Quarter-Results/default.aspx |
+| Onto Innovation Q2 2025 results | 2025-08-07 | https://investors.ontoinnovation.com/news/news-details/2025/Onto-Innovation-Reports-2025-Second-Quarter-Results/default.aspx |
+| Onto Innovation Q1 2025 results | 2025-05-08 | https://investors.ontoinnovation.com/news/news-details/2025/Onto-Innovation-Reports-2025-First-Quarter-Results/default.aspx |
+| Onto 2025 Annual Report / Form 10-K | 2026 | https://investors.ontoinnovation.com/financials/annual-reports/default.aspx |
+| Onto launches Dragonfly G5 | 2026-03-16 | https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Launches-Dragonfly-G5-Inspection-System/default.aspx |
+| Onto Dragonfly G5 qualified for 2.5D AI packaging | 2026 | https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovations-Dragonfly-G5-System-Qualified-for-Applications-in-2-5D-AI-Packaging/default.aspx |
+| Onto / Rigaku strategic partnership | 2026-04-20 | https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-and-Rigaku-Holdings-Corporation-Announce-Strategic-Partnership/default.aspx |
+| Onto Atlas G6 product launch | 2026 | https://investors.ontoinnovation.com/news/news-details/2026/Onto-Innovation-Launches-Atlas-G6-Optical-Critical-Dimension-Metrology-System/default.aspx |
+
+### 11.3 行业与竞争资料
+
+| 来源 | 日期 | 链接 |
+|---|---:|---|
+| Camtek over $105m AI/HBM orders | 2026-06-02 | https://www.prnewswire.com/il/news-releases/camtek-receives-over-105-million-multi-system-orders-from-a-tier-1-osat-and-a-leading-hbm-manufacturer-302788351.html |
+| Camtek Q1 2026 results | 2026-05-12 | https://www.prnewswire.com/news-releases/camtek-announces-results-for-the-first-quarter-of-2026-302769389.html |
+| KLA FY2026Q3 results | 2026-04-29 | https://ir.kla.com/news-events/press-releases/detail/514/kla-corporation-reports-fiscal-2026-third-quarter-results |
+| KLA Investor Day 2026 | 2026-03-12 | https://ir.kla.com/news-events/investor-day-2026 |
+| Nova Q1 2026 results | 2026-05-14 | https://www.novami.com/investors/press-releases/nova-reports-record-first-quarter-2026-financial-results/ |
+| SEMI 300mm equipment spending outlook | 2026-04-01 | https://www.semi.org/en/semi-press-release/semi-projects-double-digit-growth-in-global-300mm-fab-equipment-spending-for-2026-and-2027 |
+| SEMI global semiconductor equipment sales forecast | 2026 | https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-projected-to-reach-a-record-of-156-billion-dollars-in-2027-semi-reports |
+| TrendForce TSMC CoWoS/CoPoS capacity discussion | 2026-04-16 | https://www.trendforce.com/news/2026/04/16/news-tsmc-says-cowos-offers-industrys-largest-reticle-size-packaging-amid-intel-emib-rivalry-copos-advances/ |
+| Yahoo Finance ONTO valuation snapshot | 2026-06-10/11 | https://finance.yahoo.com/quote/ONTO/ |

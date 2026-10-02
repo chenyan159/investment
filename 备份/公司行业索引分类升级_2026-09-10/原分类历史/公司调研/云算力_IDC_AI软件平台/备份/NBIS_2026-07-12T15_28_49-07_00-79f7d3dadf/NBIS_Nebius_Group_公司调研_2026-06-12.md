@@ -1,0 +1,413 @@
+# 公司：NBIS Nebius Group 公司调研（2026-06-12）
+
+数据截点：2026-06-12。最新财报为 2026-05-13 发布的 2026Q1，季度截至 2026-03-31。估值和股价使用 2026-06-11 至 2026-06-12 可得市场快照。  
+本报告本地资料只使用 `基本面/行业调研/` 下的 AI 云算力、AI 数据中心、AI 服务器、网络、光互联、电力和冷却资料，并只读取 `公司调研/公司索引.md` 用于确认正式归档目录；未读取、引用或继承 `特征量化/`、`日度资料/` 或既有公司报告。
+
+## 0. 核心结论
+
+Nebius Group（NBIS）是从原 Yandex N.V. 国际资产重组出来的 AI 基础设施公司，2024 年出售俄罗斯业务、改名并恢复 Nasdaq 交易后，业务重心已经从传统互联网集团彻底转向 AI Cloud / NeoCloud。投资人现在把它看成“欧洲和美国扩张最快的 AI factory / GPU 云容量供应商之一”，更接近 CoreWeave、Crusoe、Lambda、IREN、Nscale 这类新型 AI 基础设施公司，而不是传统 SaaS 或普通 IDC。
+
+最重要的事实是四个数字：2026Q1 集团收入 `3.99 亿美元`，同比 `+684%`；Nebius AI Cloud 收入 `3.897 亿美元`，同比 `+841%`，占集团收入约 `98%`；2026Q1 末 AI Cloud ARR `19.2 亿美元`，较 2025Q4 末 `12.5 亿美元`再增 `+54%`；公司 2026 年目标为收入 `30-34 亿美元`、年末 ARR `70-90 亿美元`。这意味着市场给 NBIS 的不是当期利润估值，而是对 2026H2-2027 上电、合同转收入和 Rubin/GB300 先发容量的定价。
+
+订单能见度不来自传统 backlog 字段。Nebius 未披露标准 RPO/backlog，但可用四个代理指标验证：第一，Microsoft 2025-09 签订 `174-194 亿美元`多年度 AI 基础设施协议；第二，Meta 2026-03 签订最高约 `270 亿美元`五年协议，其中 `120 亿美元`为 dedicated capacity，另有 `150 亿美元`可按预定条款购买未来 Nebius 集群可用容量；第三，2026Q1 末递延收入达到 `47.78 亿美元`；第四，contracted power 已超过 `3.5GW`，并上调 2026 年末 contracted power 目标至 `>4GW`。按“硬合同 + 期权式承诺”看，Nebius 的合同收入包络已经超过 `450 亿美元`，但其中并非全部都是已确认、不可取消、已上电的 backlog。
+
+公司最大优势是“芯片 + 电力 + 长约客户 + 资本”同时拿到。NVIDIA 2026-03 宣布对 Nebius 投资 `20 亿美元`并支持其到 2030 年部署 `>5GW` NVIDIA 系统；Nebius 在 2026Q1 披露成为少数获得 NVIDIA GB300 NVL72 training Exemplar Cloud status 的云之一，且计划从 2026H2 在美国和 EMEA 部署 Vera Rubin NVL72。Meta 的 2027 起步 dedicated capacity 基于 Vera Rubin，是公司从 GB200/GB300 云租赁升级为下一代 AI factory 的关键验证。
+
+风险也很集中。NBIS 估值已经按成功扩张定价：按 2026-06-11 附近市值 `约569亿美元`和 TTM 收入 `8.779亿美元`，P/S 约 `64.8x`；GAAP P/E 约 `69x`，但这个 P/E 被 ClickHouse/Toloka 等股权重估收益扭曲，经营利润仍为负，Q1 2026 operating margin 约 `-32%`，adjusted net margin 约 `-25%`。资产负债表短期有 `96.3亿美元`现金及受限现金，流动性很强；但 2026 年 CapEx 强度可能达到 `200-250亿美元`级别，未来一年仍依赖客户预付款、合同抵押融资、可转债/股权资本和供应商支持。
+
+## 1. 公司业务、产业链位置与最近三年变化
+
+### 1.1 公司现在到底是什么
+
+Nebius 是全栈 AI 云公司，产品从底层数据中心、电力、GPU/AI rack、网络、存储，到云平台、模型训练/后训练、推理服务和开发者工具。公司披露的核心业务为 Nebius AI Cloud；集团还包括 Avride（自动驾驶/机器人）、TripleTen（教育科技），并持有 ClickHouse、Toloka 等股权。2026Q1 以后，AI Cloud 已经占收入绝对主体，非 AI 业务对投资结论影响很小。
+
+产业链位置：
+
+| 层级 | NBIS 的位置 | 价值捕获 | 关键约束 |
+|---|---|---|---|
+| 上游芯片/系统 | 采购 NVIDIA GB200/GB300、未来 Rubin/Vera/BlueField，以及 GPU rack、网络、液冷、电力设备 | 基本不捕获芯片毛利，但通过供给稀缺转化为云服务价格 | NVIDIA allocation、HBM/CoWoS、整柜验收、液冷、网络 |
+| 数据中心/电力 | 自有和 colocation 并行，2026Q1 contracted power `>3.5GW`，owned capacity 占 `>75%` | 电力和上电时间是溢价来源，能支撑资产融资 | 并网、变压器、燃料电池/自备电、许可、EPC |
+| 云服务 | AI Cloud、reserved cluster、dedicated capacity、on-demand GPU、AI Storage、Networking | 直接收入和毛利池；Q1 AI Cloud 毛利和 EBITDA 率快速改善 | 利用率、客户集中、价格下行、GPU 残值 |
+| 软件/推理 | Token Factory、Aether、AI orchestration、managed inference、agentic search/Tavily | 提高单位 GPU 收入和留存，潜在高毛利 | 产品成熟度、开源替代、客户迁移成本 |
+| 下游客户 | Microsoft、Meta、AI-native startups、enterprise、healthcare/life science、model builders | 长约和预付款降低融资成本 | 客户延期、重议价、内部自建或转向其他 NeoCloud |
+
+### 1.2 投资人心中的公司形象
+
+投资人对 NBIS 的主流叙事是“CoreWeave 之后最强的公开 NeoCloud 纯度之一”。它和普通 IDC 的差异在于：不只是出租机房 MW，而是把 GPU、液冷 rack、AI fabric、云软件和客户合同包装成可融资的 AI capacity。它和传统 hyperscaler 的差异在于：没有 AWS/Azure/GCP 的通用云规模和现金流，但更专注 AI workloads，并愿意用 anchor contracts 快速扩张。
+
+投资人给高估值的核心假设：
+
+| 假设 | 对 NBIS 的含义 | 当前证据 |
+|---|---|---|
+| AI 算力仍供不应求 | GPU 租价和长约价格可维持 | Q1 pipeline 环比约 `3.5x`，新代 GPU pricing 继续上升，older generation pricing 也有支撑 |
+| 长约客户能融资 | Microsoft/Meta 合同可抵押，递延收入支持 CapEx | Q1 递延收入 `47.78亿美元`，经营现金流 `+22.58亿美元`主要来自客户预付款 |
+| 电力是稀缺资产 | contracted power 比短租 GPU 更重要 | Q1 contracted power `>3.5GW`，目标年末 `>4GW` |
+| NVIDIA 生态背书有效 | 能拿早期 Rubin/GB300 资源，降低客户采购风险 | NVIDIA `20亿美元`投资，支持 `>5GW` 2030 系统部署 |
+| 软件层能提高毛利 | Token Factory/Aether/AI Storage 提高利用率和附加值 | Q1 AI Cloud adjusted EBITDA margin 接近 `45%`，明显高于 2025Q4 的 `24%` |
+
+### 1.3 最近三年重大变化、转型和收购
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2024-07 | 原 Yandex N.V. 完成出售俄罗斯业务及相关国际市场业务 | 从受俄乌制裁和俄罗斯资产束缚的互联网集团，转为以国际 AI 基础设施为核心的 Nebius Group |
+| 2024-08 | 正式从 Yandex N.V. 改名为 Nebius Group N.V.，股票代码变为 NBIS | 资本市场叙事从 Yandex 转为 AI infrastructure |
+| 2024-10 | Nasdaq 恢复 NBIS 交易 | 流动性恢复，后续股权/债权融资通道打开 |
+| 2024-12 | 获得包括 NVIDIA、Accel、Orbis 等在内的约 `7亿美元`私募融资 | 支撑 Blackwell 采购和美国/欧洲扩容 |
+| 2025-05 | Toloka 获 Bezos Expeditions 等战略投资，Nebius 不再并表 Toloka，改为权益法/股权投资 | AI data labeling 从集团收入中剥离，提升 AI Cloud 纯度 |
+| 2025-09 | 与 Microsoft 签订 `174-194亿美元` AI infrastructure 协议 | 首个超大 anchor contract，证明 hyperscaler 愿意采购 Nebius 外包容量 |
+| 2025-09 | 发行可转债和股权，共筹集约 `43亿美元` | 将 Microsoft 合同转化为融资能力 |
+| 2025Q4 | 推出 Nebius Token Factory，Aether 3.1，年末 ARR `12.5亿美元` | 从“租 GPU”扩展到推理和企业云平台 |
+| 2026-02 | 收购/整合 Tavily agentic search 能力 | 小型但有潜力的软件入口，和推理/agent 工作流相关 |
+| 2026-03 | NVIDIA 宣布 `20亿美元`投资和深度 AI factory 合作 | 供应链背书，支持 Rubin/Vera/BlueField、fleet health、inference stack |
+| 2026-03 | 与 Meta 签订最高约 `270亿美元`五年协议，基于 Vera Rubin 大规模部署 | 2027 收入和下一代平台采用的关键锚点 |
+| 2026-05 | Q1 披露 Pennsylvania `1.2GW`第二个美国 gigawatt site；Bloom Energy 328MW fuel cell power | 加速美国上电路径，降低并网等待时间 |
+
+## 2. 最新估值、股价和财务健康度
+
+### 2.1 市场和估值快照
+
+| 指标 | 数值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | `约222.24美元` | StockAnalysis ratio page 最近收盘快照，2026-06-11/06-12 附近 | 市场波动大，报告采用近端可得快照 |
+| 市值 | `约569亿美元` | StockAnalysis 2026-06-11 更新 | 用于 P/S 和 P/E 估算 |
+| TTM 收入 | `8.779亿美元` | 2025Q2-Q4 + 2026Q1 | 公司 2026Q1 后 TTM |
+| P/S | `约64.8x` | 市值 / TTM 收入 | 非常高，市场主要看 2026 年 ARR 和 2027 合同转收入 |
+| GAAP P/E | `约69-82x` | StockAnalysis/Yahoo 近端快照 | 被投资重估收益扭曲，不代表经营盈利 |
+| Forward P/E | `N/A 或高不确定；GuruFocus 2026-04 快照约168x` | 三方数据差异很大 | 由于公司未给 GAAP EPS 指引、经营利润仍为负，forward P/E 不适合作主估值锚 |
+| 2026Q1 收入增速 | `+684% YoY` | 公司 Q1 2026 财报 | 集团收入 `3.99亿美元` |
+| 2026Q1 AI Cloud 增速 | `+841% YoY` | 公司 Q1 2026 股东信 | AI Cloud 收入 `3.897亿美元` |
+| TTM 毛利率 | `72.06%` | StockAnalysis，2026-06-11 更新 | 与 Q1 cost of revenue 26% 对应 |
+| 2026Q1 毛利率 | `约74.0%` | `1 - 103.8/399.0` | 规模效应开始显现 |
+| TTM GAAP 净利率 | `93.09%` | StockAnalysis | 主要被非现金投资重估收益拉高 |
+| 2026Q1 GAAP 净利率 | `155.7%` | Q1 GAAP net income `6.212亿美元` | 含 ClickHouse 股权重估收益 `7.806亿美元`，不可线性外推 |
+| 2026Q1 调整净利率 | `-25.1%` | adjusted net loss `1.003亿美元` / revenue | 更接近经营真实状态 |
+| 2026Q1 经营利润率 | `-32.1%` | operating loss `1.28亿美元` / revenue | 仍处扩张投资期 |
+
+结论：NBIS 不能用传统 PE 解释。GAAP 净利来自 ClickHouse 等投资重估，经营利润仍亏损；更合理的估值锚是 `EV/2026 revenue`、`EV/YE2026 ARR`、`合同包络 / contracted MW`、`每 MW 可转收入`和`上电速度`。以市值约 `569亿美元`、公司 2026 收入指引 `30-34亿美元`计，2026E P/S 约 `16.7-19.0x`；以 2026 年末 ARR `70-90亿美元`计，market cap / ARR 约 `6.3-8.1x`。如果 ARR 兑现，当前估值不离谱；如果上电或合同转收入延迟，估值会非常脆弱。
+
+### 2.2 资产负债表健康度
+
+| 项目 | 2025-12-31 | 2026-03-31 | 变化 | 判断 |
+|---|---:|---:|---:|---|
+| 现金及等价物 | `36.78亿美元` | `92.98亿美元` | `+56.20亿美元` | 可转债、NVIDIA prefunded warrants、客户预付款显著补充现金 |
+| 受限现金 | `0.44亿美元` | `3.29亿美元` | `+2.85亿美元` | 与项目/融资安排相关，仍可作为流动性缓冲 |
+| 现金+受限现金 | `37.22亿美元` | `96.27亿美元` | `+59.05亿美元` | 短期资金充足 |
+| 应收账款 | `7.20亿美元` | `14.79亿美元` | `+7.59亿美元` | 大客户和快速收入增长带来回款/信用管理压力 |
+| PPE | `55.53亿美元` | `71.32亿美元` | `+15.79亿美元` | GPU、数据中心硬件快速资本化 |
+| 总资产 | `124.31亿美元` | `223.03亿美元` | `+98.72亿美元` | 资产负债表高速扩张 |
+| current debt | `0.25亿美元` | `0.18亿美元` | 小 | 短债压力不大 |
+| non-current debt | `41.03亿美元` | `84.32亿美元` | `+43.29亿美元` | 可转债/项目融资压力上升 |
+| deferred revenue current | `2.76亿美元` | `6.86亿美元` | `+4.10亿美元` | 客户预付款开始明显增加 |
+| deferred revenue non-current | `13.02亿美元` | `40.93亿美元` | `+27.91亿美元` | 长约融资能力强，但也是未来服务义务 |
+| total equity | `45.94亿美元` | `72.42亿美元` | `+26.48亿美元` | 股权和非现金收益扩大资本垫 |
+
+财务健康度判断：
+
+| 维度 | 评价 | 依据 |
+|---|---|---|
+| 短期偿债 | 强 | 2026Q1 current assets `112.38亿美元`，current liabilities `13.49亿美元`，current ratio 约 `8.3x` |
+| 净债务 | 表面可控 | 现金+受限现金 `96.27亿美元`，金融债务约 `84.50亿美元`，不含 lease 为净现金约 `11.8亿美元`；含 operating lease liability 后基本接近净现金/小净债 |
+| 现金流质量 | 需要拆分 | Q1 operating cash flow `+22.58亿美元`，但主要来自 deferred revenue `+31.98亿美元`，不是成熟经营现金流 |
+| FCF | 仍显著为负 | Q1 PPE/intangible purchases `24.73亿美元`；TTM FCF 约 `-31.5亿美元` |
+| 扩张能力 | 强但依赖资本市场 | 未来 CapEx 可达 `200-250亿美元`级别，必须继续依赖预付款、债务和股权/战略资金 |
+| 资产风险 | 中高 | GPU 残值、代际切换、客户集中、上电延迟、合同履约成本都会影响真实 ROIC |
+| 结论 | “高流动性、强合同融资、强扩张；但不是低杠杆现金牛” | 适合用项目融资和合同兑现跟踪，不适合只看 GAAP 净利润 |
+
+## 3. 最近五个财报季度拆解
+
+说明：Nebius 未披露传统 backlog/bookings/lead time/cancellation rate。下表用公司披露的 ARR、合同、递延收入、power/capacity、capex 和客户披露作为代理。AI Cloud 收入如未直接披露则为估计，标注为“估”。
+
+| 财报季度 | 集团收入 | AI Cloud/核心 AI 收入 | AI 收入占比 | 收入增速 | 毛利率/成本率 | adjusted EBITDA | 订单/Bookings/Backlog 代理 | 交期/Lead time/取消率 | CapEx/现金流 | 关键业务信息 |
+|---|---:|---:|---:|---:|---:|---:|---|---|---:|---|
+| 2026Q1 | `3.990亿美元` | `3.897亿美元` | `约98%` | 集团 `+684% YoY`；AI Cloud `+841% YoY`；集团 `+75% QoQ` | cost/revenue `26%`，毛利率 `74%` | 集团 `+1.295亿美元`；AI Cloud margin 约 `45%` | ARR `19.2亿美元`；deferred revenue `47.78亿美元`；Meta 新 `最高270亿美元`；Microsoft/Meta commitments 已交付 | 年末 connected power 目标 `800MW-1GW`；contracted power `>3.5GW`，年末目标 `>4GW`；未披露取消率，anchor contracts 推断低 | CapEx `24.73亿美元`；OCF `+22.58亿美元` | PA 新 `1.2GW` site；Finland `310MW`；owned capacity 占 contracted `>75%`；GB300 Exemplar Cloud；Rubin 2026H2 |
+| 2025Q4 | `2.277亿美元` | `2.142亿美元` | `约94%` | 集团 `+547% YoY`；AI Cloud `+802% YoY` | cost/revenue `30%`，毛利率 `70%` | 集团 `+0.150亿美元`；AI Cloud margin `24%` | 年末 ARR `12.5亿美元`，高于 `9-11亿美元`指引；2026 ARR 指引 `70-90亿美元` | 年末 active power `约170MW`，高于 `100MW`目标；2026 contracted power 指引 `>3GW` | CapEx `20.56亿美元`；OCF `+8.343亿美元` | AI Cloud Aether 3.1；Token Factory 商业化；五个新 location deployed，另 secured 9 个 |
+| 2025Q3 | `1.461亿美元` | `估1.31-1.33亿美元` | `估90-91%` | 集团 `+355% YoY`、`+39% QoQ`；核心 AI `+400% YoY`、`+40% QoQ` | cost/revenue `29%`，毛利率 `71%` | 集团估 `-0.052亿美元`；核心 AI margin `19%` | ARR `5.51亿美元`；Microsoft `174-194亿美元`；当时 Meta `约30亿美元`五年协议；融资 `43亿美元` | “sold out of all available capacity”；2026 connected power 目标上调至 `800MW-1GW`，contracted power `>2.5GW` | 9M CapEx 高速上升；9M PPE 到 `33.14亿美元` | Aether 3.0；Token Factory launch；SOC 2/HIPAA/ISO 27001 系列认证披露 |
+| 2025Q2 | `1.051亿美元` | `估0.95-1.00亿美元` | `估90-95%` | 集团 `+625% YoY`、`+106% QoQ` | cost/revenue `29%`，毛利率 `71%` | 集团 `-0.210亿美元`；核心业务已转正，核心 margin 估约 `10%` | 年末 ARR 指引上调至 `9-11亿美元`；大客户和 enterprise logos 扩大 | 年末 2025 connected power 目标 `220MW`；2026 contracted power “more than 1GW” | CapEx `5.106亿美元`，主要 GPU/GPU-related hardware 和数据中心扩张 | MLPerf Training v5.0 验证速度/可扩展性；客户包括 Cloudflare、Prosus、Shopify、HeyGen、Lightning.AI、Photoroom |
+| 2025Q1 | `0.509亿美元`（重分类口径） | `估0.414亿美元`（由 Q1 2026 AI 收入同比反推） | `估81%` | 集团 `+385%`原披露；重分类后对比基数 `0.509亿美元` | cost/revenue `49-53%`，毛利率 `47-51%` | 重分类集团 `-0.537亿美元`；原披露 `-0.626亿美元` | AI Cloud ARR `2.49亿美元`；April ARR 约 `3.10亿美元`；仍处早期爬坡 | 2025 计划继续扩容，美国/欧洲站点扩张；取消率未披露 | CapEx `5.439亿美元` | 第一份独立股东信；AI infrastructure 是增长主因；Toloka 后续去并表 |
+
+### 3.1 五季趋势判断
+
+1. 收入斜率很陡：2025Q1 到 2026Q1，集团季度收入从 `0.509亿美元`升至 `3.990亿美元`，四个季度增长约 `7.8x`。
+2. 规模效应非常明显：cost of revenue 占比从 2025Q1 的约 `49%`降到 2026Q1 的 `26%`；AI Cloud adjusted EBITDA margin 从 2025Q2 约 `10%`、Q3 `19%`、Q4 `24%`提升到 Q1 约 `45%`。
+3. 折旧和 CapEx 是最大会计压力：Q1 2026 D&A `2.12亿美元`，占收入 `53%`；这与公司按约 4 年折旧 GPU/相关硬件有关。
+4. 递延收入比当期收入更重要：Q1 2026 deferred revenue 合计 `47.78亿美元`，超过 Q1 revenue 的 `12x`，说明客户预付款/长期承诺是扩张核心。
+5. 未披露取消率，但 anchor contracts 的实际取消风险低于普通 cloud pipeline：Microsoft、Meta、NVIDIA/Bloom 这类合同通常绑定专用容量、预付款、交付窗口和资产融资；风险更多是延期、重定价、验收失败或 GPU 代际变化，而不是简单取消。
+
+## 4. 2026 指引、业务收入占比和重点产品
+
+### 4.1 2026 最新指引
+
+| 指引/目标 | 公司口径 | 投资含义 |
+|---|---:|---|
+| 2026 revenue | `30-34亿美元` | 较 2025 全年 revenue `5.298亿美元`增长约 `+466% 至 +542%` |
+| 2026 年末 ARR | `70-90亿美元` | 较 2025 年末 ARR `12.5亿美元`约 `5.6-7.2x` |
+| 2026 年末 connected power | `800MW-1GW` | 2025 年末 active power 约 `170MW`，需要 2026H2 大幅上电 |
+| 2026 年末 contracted power | `>4GW` | Q1 已 `>3.5GW`，后续合同主要贡献 2027+ |
+| owned facilities capacity | `3GW` across five sites | 自有比 colo 更能保留长期 unit economics，但建设和电力风险更高 |
+| NVIDIA 系统长期目标 | 2030 年 `>5GW` NVIDIA systems | NVIDIA 战略合作支撑多代平台部署 |
+
+2026 收入占比判断：
+
+| 业务 | 2026Q1 收入 | 2026Q1 占比 | 2026 全年判断 | 增长判断 |
+|---|---:|---:|---|---|
+| Nebius AI Cloud / AI infrastructure | `3.897亿美元` | `约98%` | 2026 revenue guide 基本都来自该业务 | Q1 `+841% YoY`，全年可能 `+500%+` |
+| Avride | immaterial / 很小 | `<1%` | 投资性期权，不是当期收入核心 | 车队/robotaxi 进展快，但与 AI 数据中心收入无直接相关 |
+| TripleTen | 约数百万美元级 | `约1-2%` | 稳定增长但对 NBIS 估值影响很小 | 2025 年收入增长约 `88%`，但规模太小 |
+| Tavily/Agentic Search | 2026 初整合 | 当前收入很小 | 有潜力成为 Token Factory/agent workflow 的入口 | 需要看与 Nebius Cloud 捆绑销售 |
+| ClickHouse/Toloka 股权 | 非经营收入/股权价值 | 不计入收入核心 | 可提供投资重估和潜在变现价值 | 会扭曲 GAAP 净利润 |
+
+### 4.2 跳过的低相关业务和产品
+
+| 业务/产品 | 为什么跳过 |
+|---|---|
+| Avride robotaxi / delivery robots | 技术上与 AI/机器人相关，但 2026Q1 收入贡献 immaterial；不驱动 AI data center 订单 |
+| TripleTen edtech | 收入增长不错，但不是 AI 基建瓶颈，也不是 NBIS 当前估值核心 |
+| Toloka equity/data labeling | 已不再并表；数据标注对 AI 生态有价值，但 NBIS 的收入弹性已经转向 AI Cloud |
+| ClickHouse stake | 股权价值重要，但不是 NBIS AI Cloud 的经常性收入；只在估值和 GAAP 利润部分单独讨论 |
+| 普通 CPU/传统云产品 | 不构成高增长主线；只作为 AI cluster 管理面或企业兼容需求 |
+
+### 4.3 重点和潜力产品，不应漏掉
+
+| 产品/业务 | 当前阶段 | 对应产品/型号 | 为什么重要 |
+|---|---|---|---|
+| Dedicated AI infrastructure / reserved supercluster | 已大规模签约 | Microsoft dedicated capacity、Meta Vera Rubin capacity、enterprise reserved clusters | 最直接转收入，支持融资和长约可见度 |
+| NVIDIA GB200/GB300 NVL72 capacity | 2026 主力 | GB200 NVL72、GB300/Grace Blackwell Ultra NVL72、NVIDIA Exemplar Cloud status | 决定 2026 上电收入和客户排队 |
+| NVIDIA Vera Rubin NVL72 | 2026H2 部署，2027 放量 | Vera CPU、Rubin GPU、BlueField、Rubin NVL72 | Meta `120亿美元` dedicated capacity 以此为核心，决定 2027 估值斜率 |
+| Nebius AI Cloud Aether | 已发布 3.0/3.1，继续 roadmap | enterprise-grade security、controls、可靠性、灵活实例、AI Storage/Networking | 从 GPU 转售升级为企业 AI 云，提高客户黏性 |
+| Nebius Token Factory | 2025Q4 launched，2026 early PMF | managed inference、post-training、fine-grained access、S3/KV/cache 相关能力 | 推理是 2026-2027 AI cloud 增长最快负载，软件毛利高 |
+| AI Storage / checkpoint / S3-compatible storage | 正在增强 | checkpoint streaming、AI Storage、对象存储、训练/推理数据管线 | 大模型训练和推理都需要高吞吐存储；有助于提高每 GPU 收入 |
+| Fleet health / NVIDIA software integration | 2026 NVIDIA 合作加强 | GPU health monitoring、software recommendations、AI factory ops | 降低 downtime，提高利用率和 SLA，直接影响毛利 |
+| Power-first AI factory | 2026-2027 扩张 | Missouri `1.2GW`、Pennsylvania `1.2GW`、Finland `310MW`、Bloom 328MW fuel cells | 电力是最硬瓶颈；上电速度决定 ARR 是否兑现 |
+| Tavily agentic search | 早期小业务 | agentic search API/workflow | 不是当期大收入，但可能提高 agentic inference attach 和开发者入口 |
+
+## 5. 当前关键业务的收入贡献、增速、重要性和供需
+
+评分：5 为最高，1 为最低。收入贡献为本报告估算，置信度分为高/中/低。
+
+| 关键业务/产品 | 当前季度收入贡献 | 增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 置信度与说明 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Reserved GPU clusters / dedicated capacity | `估3.0-3.4亿美元/季`，约 AI Cloud `75-85%` | `>700% YoY` | 5 | 5 | 5 | 4 | 中。Q1 AI Cloud 总额已披露，但公司未拆分 Microsoft/Meta/普通客户 |
+| Microsoft contract capacity | 当前已开始贡献，估 `0.8-1.5亿美元/季`爬坡 | 2026 ramp | 5 | 5 | 5 | 4 | 中低。合同总额明确，季度收入未披露；收入应在 2026 持续爬升 |
+| Meta / Vera Rubin dedicated capacity | 当前收入很小，主要 2027 起 | 2027 高增 | 5 | 4 | 5 | 4 | 中。`120亿美元` dedicated + `150亿美元`额外 capacity 明确，交付从 early 2027 |
+| On-demand AI Cloud for startups/enterprise | `估0.4-0.8亿美元/季` | `>300% YoY` | 4 | 4 | 4 | 3 | 中。公司披露客户面扩宽、pipeline 3.5x、deal size 上升 |
+| Token Factory / managed inference | 当前 `估<0.1-0.2亿美元/季` | 从低基数高增 | 5 | 4 | 4 | 3 | 低。产品早期，但行业推理需求确定，若绑定 GPU cloud 则收入弹性大 |
+| AI Storage / checkpoint / networking services | 当前 `估<0.2亿美元/季`附着收入 | 高增 | 4 | 4 | 4 | 3 | 低。通常嵌入 AI Cloud 账单，不单独披露 |
+| Power-first owned AI factories | 当前不单独确认收入 | 2027+ | 5 | 5 | 5 | 4 | 中。contracted MW 明确，但从 MW 到收入取决于 GPU/客户/融资 |
+| Tavily / agentic search | 当前很小 | 高但低基数 | 3 | 3 | 3 | 2-3 | 低。潜在入口，不是硬件供给瓶颈 |
+
+### 5.1 供需判断
+
+1. 最紧的是“可交付的新代 GPU + 已上电 MW + 长约客户”组合，不是单纯 GPU。Nebius 同时有 Microsoft/Meta、NVIDIA 和 Bloom/多地 power，供需评分应高于普通 GPU 租赁商。
+2. 2026H2 最大收入催化是 New Jersey 剩余 capacity 和新/既有 colocation 站点上线；2027 最大催化是 Missouri、Pennsylvania、Finland 等 owned sites 分阶段投产，以及 Meta/Rubin 合同开始。
+3. 市场供需的反证指标：GB200/GB300 实例价格连续两季下跌 `20%+`、利用率下降、Microsoft/Meta 延期、connected power 未达 `800MW`下限、deferred revenue 不再增长。
+
+## 6. 未来一年收入贡献三情景预测
+
+预测窗口：2026-06-12 至 2027-06-12。基准情景假设 Nebius 兑现 2026 revenue `30-34亿美元`和年末 ARR `70-90亿美元`的中值，且 2027H1 Meta/Rubin 开始贡献但尚未满负荷。乐观情景假设 connected power 接近或超过 `1GW`，客户预付款继续增长。极度乐观情景假设 Rubin/GB300 上线顺利、Meta 额外 capacity 被第三方或 Meta 快速吸收，且电力/融资不成为约束。
+
+| 业务/产品 | 当前收入基数 | 基准：一年后收入贡献 | 乐观：一年后收入贡献 | 极度乐观：一年后收入贡献 | 关键假设 |
+|---|---:|---:|---:|---:|---|
+| Reserved GPU clusters / dedicated AI capacity | `2026Q1 AI Cloud 3.897亿美元`主体 | 年化 `75-95亿美元`，YoY `+250-350%` | 年化 `100-130亿美元`，YoY `+350-500%` | 年化 `140-180亿美元`，YoY `+500%+` | 2026YE ARR `70-90亿美元`兑现，2027H1 继续 ramp |
+| Microsoft capacity | 估 `2026Q1 0.8-1.5亿美元/季` | 年化 `25-35亿美元` | 年化 `35-45亿美元` | 年化 `45-55亿美元` | `174亿美元`合同按 5-6 年摊销并在 2026-2027 爬坡 |
+| Meta / Rubin capacity | 当前很小 | 年化 `8-15亿美元` | 年化 `18-30亿美元` | 年化 `35-50亿美元` | early 2027 开始，Rubin 交付和验收决定斜率 |
+| On-demand AI Cloud / enterprise/startups | 估 `0.4-0.8亿美元/季` | 年化 `12-18亿美元` | `18-28亿美元` | `30-45亿美元` | pipeline 3.5x 转化，平均 deal size 上升 |
+| Token Factory / managed inference | 估 `<0.2亿美元/季` | 年化 `2-5亿美元` | `5-10亿美元` | `10-18亿美元` | 推理 workloads、KV cache、post-training 与 AI Cloud 绑定 |
+| AI Storage / Networking attach | 估 `<0.2亿美元/季` | 年化 `2-4亿美元` | `4-8亿美元` | `8-15亿美元` | checkpoint、S3、AI fabric、数据服务附着率提高 |
+| Tavily / agentic search | 很小 | `<1亿美元` | `1-2亿美元` | `2-4亿美元` | 需要成为 Nebius inference/agent workflow 的流量入口 |
+| 非核心 Avride/TripleTen | Q1 非 AI 收入约 `0.093亿美元` | 年化 `0.5-0.8亿美元` | `0.8-1.2亿美元` | `1.2-1.8亿美元` | 不决定 AI 基建估值 |
+
+重要性和供需一年后变化：
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| GB300/Blackwell capacity | 仍供不应求，但 2027 起老代际租价开始分化 | 供需紧张延续，reserved capacity 定价强 | agentic inference 爆发，older generation 也维持价格 |
+| Rubin capacity | 2027H1 稀缺，早期客户优先 | Rubin 成为新签大客户默认规格 | Rubin 交付提前，Meta/第三方争抢容量 |
+| Power-first owned sites | 建设期，尚未完全转收入 | 2027 站点分阶段上电，提升 unit economics | 自备电/燃料电池加速，time-to-power 溢价扩大 |
+| Token Factory | 仍是附加产品 | 绑定推理客户，提高每 GPU 收入 | 成为独立高毛利产品线，并反向拉动 compute |
+
+## 7. BOM、单位经济、价格传导和认证
+
+### 7.1 AI Cloud / NVL72 等效 rack BOM
+
+以下为投资分析口径，不是 Nebius 公司披露 BOM。用于判断每 MW、每 rack、每 GPU 和每 optical port 的真实内容量。
+
+| 单位 | 典型内容量 | 成本/收入口径 | 对 Nebius 的含义 |
+|---|---|---:|---|
+| 每 AI rack（高端液冷，NVL72 等效） | `72` 个 Blackwell/GB300/Rubin GPU 等效；Grace/Vera CPU；NVLink/NVSwitch；ConnectX/Spectrum-X；power shelf/busbar；冷板/CDU/manifold；SSD/管理节点 | 系统成交额 `250-700万美元/rack`，Rubin/GB300 可更高 | 每 rack 是收入单位，也是验收单位；不是简单服务器上架 |
+| 每 MW IT load | 约 `5.5-8.5` 个 120-180kW high-density racks，或 `400-700` 个高端 GPU 等效 | IT 侧 CapEx `2500-6000万美元/MW`；facility `800-2200万美元/MW` | 1GW connected power 不等于立即 1GW GPU 上线，要看 GPU allocation 和 rack 交付 |
+| 每 GPU 年收入 | Microsoft 传闻 `10万+ GB300`若对应 `174亿美元/5年`，约 `3.48万美元/GPU-year`，即 `约4.0美元/GPU-hour`满载；按 70%有效利用率等效 `5.7美元/used GPU-hour` | 官方未确认 GPU 数；仅作渠道交叉验证 | 长约批发价格低于 spot，但可融资、可预付款、可锁利用率 |
+| 每 optical port | 800G/1.6T OSFP/QSFP-DD、InfiniBand/Ethernet、DCI/ZR；每 GPU 等效 `0.6-1.4` 个高速端口，依拓扑而变 | 800G 模块 mature `约600-1200美元`，1.6T early `约1400-2200美元`；每 rack `40-100+` 个端口等效 | 网络决定 GPU utilization；Nebius 卖的是可运行 cluster，不是裸卡 |
+| 每 MW 年收入 | 按 2026YE ARR `70-90亿美元`、connected power `0.8-1.0GW`，隐含 `700-1125万美元/MW-year` | 这是云服务收入，不是 colo rent | 若 GPU 利用率高，每 MW 收入远高于传统 data center |
+
+### 7.2 BOM 成本拆分和价格传导链
+
+| 成本项 | 高端 AI rack 占比 | 稀缺程度 | 价格传导 |
+|---|---:|---|---|
+| GPU/ASIC + HBM | `55-75%` | 最高 | 通过 reserved price、setup fee、long-term capacity charge 转嫁给客户 |
+| CPU、内存、SSD、主板 | `5-12%` | 中 | 企业/推理 workloads 提高 CPU/SSD attach，价格部分传导 |
+| NVLink/NVSwitch、DPU/NIC、交换机、光模块、线缆 | `8-18%` | 高 | 以 goodput/SLA 体现，网络不足会导致 GPU idle，客户愿意付溢价 |
+| 液冷：冷板、CDU、manifold、快接、漏液监测 | `2-8%` | 高 | 单项占比不大，但认证和可靠性壁垒高；交付快可溢价 |
+| 电源：power shelf、PSU、busbar、PDU、BBU | `2-7%` | 高 | 高功率 rack 和 800VDC 试点提高定价权 |
+| 机柜、结构、背板、PCB | `2-5%` | 中低 | 更接近制造规模优势，价格传导弱 |
+| 工厂集成、burn-in、现场调试、SRE/运维 | `3-8%` | 高 | 直接影响上线时间和客户收入，time-to-compute 可收费 |
+
+价格传导链：
+
+1. `NVIDIA/HBM/CoWoS/系统价格`上升 -> Nebius GPU/rack CapEx 增加 -> 长约客户通过预付款、capacity reservation 和更高 GPU-hour/cluster price 吸收。
+2. `电力/变压器/燃料电池/MEP`紧缺 -> 上电窗口成为稀缺资产 -> Nebius 可以把 time-to-power 溢价写入合同或保留给高价客户。
+3. `网络/光模块/1.6T`紧缺 -> cluster goodput 成为销售指标 -> Nebius 若能证明更高利用率，可在同样 GPU 数下卖更高实际吞吐。
+4. `GPU 残值下行` -> 债务抵押价值下降 -> Nebius 需要更高预付款、更长合同或更低采购成本来维持 ROIC。
+5. `推理软件效率提升` -> token 成本下降 -> Nebius 可同时降价扩大需求和保留毛利，Token Factory 是这里的核心期权。
+
+### 7.3 产能能力、供应链采纳和认证
+
+| 项目 | 当前能力/状态 | 供应链采纳 | 认证/资格 |
+|---|---|---|---|
+| Connected power | 2025YE active power `约170MW`；2026YE 目标 `800MW-1GW` | 已服务 Microsoft/Meta commitments 和 AI Cloud 客户 | 不适用，主要看电力/许可/commissioning |
+| Contracted power | 2026Q1 `>3.5GW`，年末目标 `>4GW` | owned capacity `>75%`，包括 Missouri、Pennsylvania、Finland、Alabama 等 | 站点级许可和 utility/电力安排逐项推进 |
+| NVIDIA GB300 | Q1 披露获得 GB300 NVL72 training Exemplar Cloud status | 与 NVIDIA 深度合作；客户可把 Nebius 视作首批新代 GPU 云 | NVIDIA Exemplar Cloud status，且跨多代 GPU |
+| Vera Rubin NVL72 | 2026H2 在 US 和 EMEA 部署计划 | Meta `120亿美元` dedicated capacity 基于 Rubin，大客户已采纳 | NVIDIA Rubin 早期部署伙伴 |
+| AI Cloud Aether | 3.0/3.1 已发布，企业功能增强 | 企业客户、AI startups、Microsoft/Meta 长约客户间接受益 | SOC 2、HIPAA、ISO 27001-series 等认证披露 |
+| MLPerf/性能 | Q2 2025 披露 MLPerf Training v5.0 验证速度和可扩展性 | 用于证明 cluster 性能，不只是低价出租 GPU | MLPerf Training v5.0 benchmark participation |
+| Bloom fuel cells | 首个美国项目 `328MW` installed capacity 预计 2026 年运营 | behind-the-meter power，减少 transmission build 依赖 | 燃料电池/许可/现场验收，非 AI 芯片认证 |
+| Token Factory | 2025Q4 launched，2026 early product-market fit | AI-native 和 cloud-native 客户初期采用 | 需要看生产 SLA、模型支持、合规认证 |
+
+## 8. 未来一年产能能力和认证三情景
+
+| 维度 | 基准 | 乐观 | 极度乐观 |
+|---|---|---|---|
+| connected power | 2026YE 达 `800MW`下沿，2027H1 增至 `1.0-1.3GW` | 2026YE 接近 `1GW`，2027H1 达 `1.4-1.8GW` | 2026YE 超 `1GW`，2027H1 达 `2GW+` |
+| contracted power | 2026YE `>4GW`，2027H1 `4.2-4.8GW` | `4.8-5.5GW` | `>5.5GW`，更多 NVIDIA/自备电/utility 合同 |
+| revenue capacity | 2027H1 annualized `100-120亿美元` | `140-180亿美元` | `200-250亿美元` |
+| GPU/rack 供给 | GB300 继续 tight，Rubin 初期少量 | Rubin/GB300 allocation 优先提升，客户排队延长 | Rubin 提前量产并形成新一轮预付款 |
+| NVIDIA 认证 | GB300 Exemplar 持续有效；Rubin early deployment | 获更多 Rubin/BlueField/STX 公开 reference | 成为 Rubin/Vera/BlueField production reference cloud |
+| 安全/企业合规 | SOC 2/HIPAA/ISO 27001 维持，更多区域合规 | 金融/医疗/主权 AI 认证扩展 | 企业合规成为大客户采购门槛，Nebius 获溢价 |
+| Bloom/自备电 | 328MW 按期或小延迟 | 更多美国站点复制 fuel-cell behind-the-meter | 自备电显著缩短上电，形成竞争差异 |
+
+## 9. 基于订单积压和供给的未来一年业务增速
+
+### 9.1 真实订单积压估算
+
+| 订单/承诺来源 | 金额/容量 | 确定性 | 收入窗口 | 备注 |
+|---|---:|---|---|---|
+| Microsoft | `174亿美元`基础，最高 `194亿美元` | 高 | 2025 late start，2026 ramp，至 2031 前后 | Vineland, New Jersey dedicated capacity；可通过合同抵押融资 |
+| Meta 2026-03 | `120亿美元` dedicated + `150亿美元` additional capacity，总包络 `270亿美元` | `120亿美元`高；`150亿美元`中高 | early 2027 起五年 | 基于 Vera Rubin 大规模部署；部分 capacity 可卖给第三方，剩余由 Meta 购买 |
+| 2026Q1 deferred revenue | `47.78亿美元` | 高 | 随服务交付确认 | 是实际预收/递延，不等于全部 backlog |
+| AI Cloud ordinary pipeline | Q1 pipeline 环比约 `3.5x` | 中 | 2026H2-2027 | 未披露金额，受 capacity 约束 |
+| Contracted power | `>3.5GW`，年末目标 `>4GW` | 中高 | 2026-2030 | power 是收入前置条件，不是订单收入本身 |
+| NVIDIA partnership | 到 2030 年 `>5GW` NVIDIA systems 支持 | 中 | 2026-2030 | 战略支持和供应链背书，不等于采购义务 |
+
+下限口径：`Microsoft 174亿美元 + Meta dedicated 120亿美元 = 294亿美元` firm-like anchor revenue。  
+包络口径：`Microsoft 最高194亿美元 + Meta 最高270亿美元 = 464亿美元`。  
+经营性 backlog 口径：公司未披露 RPO，应使用 `递延收入 + 合同公告 + power commissioning`跟踪，不能把 `464亿美元`全部视为不可取消 RPO。
+
+### 9.2 未来一年业务增速预测
+
+| 情景 | 未来一年收入 | YoY/Run-rate 增速 | 依据 | 取消率/延期假设 |
+|---|---:|---:|---|---|
+| 基准 | 2026 全年 `30-34亿美元`兑现，2027H1 ARR `100-120亿美元` | 2026 revenue `+466-542%`，2027H1 ARR 较 Q1 ARR `+420-525%` | connected power 达 `800MW`下沿；Microsoft ramp；Meta 2027 初步贡献；ordinary cloud 继续满载 | anchor cancellation `<5%`，但 10-20% capacity 可能延期到后续季度 |
+| 乐观 | 2027H1 ARR `140-180亿美元` | 较 Q1 ARR `+630-840%` | connected power 接近或超过 `1.4GW`；Rubin/GB300 交付顺利；Meta 额外容量吸收好 | cancellation `<3%`，延期 `<10%` |
+| 极度乐观 | 2027H1 ARR `200-250亿美元` | 较 Q1 ARR `+940-1200%` | Rubin 成为新一轮供不应求平台；Bloom/自备电复制；第三方 AI-native 客户以市场价吃掉 Meta 可选 capacity | cancellation 近 0，最大风险变为供应不足而非需求不足 |
+
+关键判断：未来一年增长不是需求瓶颈，而是 supply conversion。若 2026YE connected power 达不到 `800MW`，或 Q3/Q4 capacity in place 未明显上升，收入会低于公司指引；若 Q4 ARR 接近 `90亿美元`上沿，市场会开始给 2027 Meta/Rubin 容量更高倍数。
+
+## 10. 竞争格局、新技术方向和替代风险
+
+### 10.1 主要竞争对手
+
+| 竞争层 | 主要对手 | 与 Nebius 的关系 | NBIS 优势 | NBIS 劣势 |
+|---|---|---|---|---|
+| AI-native NeoCloud | CoreWeave、Lambda、Crusoe、Nscale、IREN、TensorWave、Vultr、Together、RunPod | 直接竞争 GPU/AI factory capacity | NVIDIA 背书、Microsoft/Meta 合同、欧洲和美国布局、AI Cloud 软件 | CoreWeave revenue/backlog 更大；Crusoe/Nscale/IREN 电力项目激进 |
+| Hyperscaler | Microsoft Azure、AWS、Google Cloud、Oracle OCI | 既是客户又是竞争者 | Nebius 可作为容量外包和 time-to-compute 补充 | Hyperscaler 资本成本低、客户生态强、自研 ASIC 强 |
+| Colo/AI DC developer | Equinix、Digital Realty、QTS、Vantage、CyrusOne、Switch、Aligned、STACK | 在电力/站点层竞争 | Nebius 直接拥有 AI Cloud 客户和 GPU stack | 传统开发商在地产、电力、REIT 融资上更成熟 |
+| GPU/系统供应链 | NVIDIA、Dell、SMCI、HPE、Foxconn/Quanta/Wiwynn、Vertiv/Schneider/Eaton | 上游依赖，不是完全竞争 | 深度合作可优先导入 | 被上游 allocation 和价格约束 |
+| 推理/软件平台 | Together、Fireworks、Baseten、Modal、Replicate、Hugging Face、Databricks、Anyscale | Token Factory/managed inference 竞争 | 自有算力可形成成本优势 | 开源和专业推理平台会压软件毛利 |
+
+### 10.2 新技术是否是未来主流
+
+| 技术 | 是否主流 | 对 Nebius 的影响 |
+|---|---|---|
+| GB300/Blackwell Ultra NVL72 | 2026 主流 | 是 2026 收入兑现核心，决定 Microsoft/ordinary AI Cloud 可交付性 |
+| Vera Rubin NVL72 | 2027 主流候选 | Meta 合同证明早期采纳；若 Rubin 延迟，2027 增长会后移 |
+| Managed inference / Token Factory | 主流确定 | 推理在 AI-optimized IaaS 中占比上升，Nebius 必须从训练云转为 token factory |
+| 1.6T optical / Spectrum-X / CPO | 2026-2027 高端主流过渡 | 直接影响大集群利用率；Nebius 自身不卖光模块，但好网络可提高云毛利 |
+| Direct liquid cooling | 已从选配变门槛 | 100kW+ rack 必需；漏液/维护是交付风险 |
+| Fuel cells / behind-the-meter power | 重要补充，不是唯一主流 | Bloom 328MW 若按期成功，会降低并网等待并形成复制模板 |
+| TPU/Trainium/ASIC 替代 | 长期会提高竞争 | Hyperscaler 自研芯片会压 GPU 云 pricing，但也会扩大多架构 AI Cloud 需求 |
+
+### 10.3 主要风险和替代方案
+
+| 风险 | 触发条件 | 影响 | 替代/缓释 |
+|---|---|---|---|
+| GPU 租价下行 | GB200/GB300 供给显著改善，spot/reserved price 连续两季跌 `20%+` | P/S 压缩，GPU 残值和融资折扣扩大 | 长约、预付款、推理软件、客户 SLA 提高收入稳定性 |
+| 上电延迟 | connected power 年末低于 `800MW`，Bloom/utility/MEP 延迟 | ARR 指引落空，合同收入后移 | 自备电、更多 colo、分阶段上电、客户排期调整 |
+| Rubin 延迟 | 2026H2 early deployment 或 2027 Meta capacity 延后 | Meta `120亿美元`收入曲线后移 | GB300/B300 替代、第三方 capacity 重排 |
+| 客户集中 | Microsoft/Meta 延期、重议价、内部自建 | 融资成本上升，收入斜率下降 | 扩大 enterprise/startup pipeline，Token Factory 多租户化 |
+| 融资窗口关闭 | 高利率、可转债价格下跌、项目融资成本上升 | CapEx 放缓，contracted power 不能转 connected | 更多客户预付款、资产级债务、战略资本 |
+| 技术替代 | TPU/Trainium/AMD/ASIC 降低 NVIDIA GPU 稀缺 | GPU cloud 溢价下降 | 多架构支持、软件层和 workload migration |
+| 运维/SLA | 液冷漏液、网络 flap、GPU failure、fleet health 差 | 客户罚款和信誉损失 | NVIDIA fleet health、工厂 burn-in、SRE 自动化 |
+| 估值风险 | 市值按 ARR 上沿定价，任何季度 miss | 股价回撤大 | 用 Q3/Q4 connected power、deferred revenue、ARR 逐季验证 |
+
+### 10.4 客户替换成本
+
+客户替换成本中高，但不同客户差异很大：
+
+| 客户类型 | 替换成本 | 原因 |
+|---|---|---|
+| Microsoft/Meta dedicated clusters | 高 | 合同、多年容量、专用站点、网络/安全/运维集成、预付款和融资结构绑定 |
+| AI-native training startups | 中高 | 数据、checkpoint、集群拓扑、Slurm/K8s/Ray 环境、网络性能调优迁移成本高 |
+| 推理/API 客户 | 中 | 若模型和 serving stack 标准化，迁移到其他推理云较容易；但 KV cache、SLA、成本优化会形成黏性 |
+| 普通 spot GPU 用户 | 低 | 价格敏感，供应宽松后可快速转移 |
+| 企业合规客户 | 高 | SOC/HIPAA/ISO、数据驻留、安全审计和采购流程形成切换成本 |
+
+## 11. 监控清单
+
+| 频率 | 指标 | 看什么 |
+|---|---|---|
+| 每季度 | AI Cloud revenue、ARR、AI Cloud adjusted EBITDA margin | 是否按 `70-90亿美元`年末 ARR 爬坡 |
+| 每季度 | deferred revenue、accounts receivable、OCF | 预付款是否继续覆盖 CapEx，回款是否健康 |
+| 每季度 | connected power / contracted power | `800MW-1GW`年末 connected power 是否可信 |
+| 每季度 | CapEx、PPE、debt、cash | 扩张是否需要更高稀释或更贵债务 |
+| 每季度 | Microsoft/Meta 交付表述 | 是否按期、是否有延期/重定价 |
+| 每季度 | NVIDIA GB300/Rubin deployment status | 供给和认证是否保持领先 |
+| 实时 | Bloom 328MW fuel cell project | 能否按 2026 年运营，是否复制到其他站点 |
+| 实时 | GPU spot/reserved pricing、二手 H100/GB200 残值 | 影响毛利和融资抵押 |
+| 实时 | AI cloud 竞争对手 backlog/power | CoreWeave、Crusoe、Nscale、IREN 是否挤压融资和客户 |
+
+## 12. 结论
+
+NBIS 是一个高纯度、高增长、高资本强度的 AI factory/NeoCloud 标的。公司已经用 Microsoft、Meta、NVIDIA 和 Bloom Energy 四组关系证明自己不是普通 GPU broker：它有长约客户，有 GPU 生态背书，有多 GW 电力布局，也有以 Token Factory/Aether 为代表的软件层尝试。2026Q1 的财务数据说明 AI Cloud 已经出现规模效应，毛利率 `74%`、集团 adjusted EBITDA 转正、AI Cloud adjusted EBITDA margin 接近 `45%`，这比 2025 年市场担心的“高 CapEx 低毛利租卡商”更好。
+
+但这不是低风险成长股。当前市值约 `569亿美元`，已经提前计入 2026 年末 ARR `70-90亿美元`和 2027 Meta/Rubin 容量启动。真正需要验证的不是“有没有 AI 需求”，而是“MW 能否按期上电、GB300/Rubin 能否按期交付、客户预付款能否持续覆盖 CapEx、GPU 残值能否支撑债务融资、Token Factory 能否把 Nebius 从租卡升级为推理平台”。如果 2026H2 connected power 和 ARR 连续超预期，NBIS 仍可能被重新定价为“AI 基建容量金融化平台”；如果任何一个上电/融资/客户交付环节掉链，估值回撤空间会很大。
+
+## 13. 主要来源
+
+### 公司一手来源
+
+- Nebius Q1 2026 financial results, 2026-05-13: https://nebius.com/newsroom/nebius-reports-first-quarter-2026-financial-results
+- Nebius Q1 2026 shareholder letter PDF: https://assets.nebius.com/assets/aa1bc2e6-df83-40cd-a6a2-95e7cda3d16c/Nebius%20SHL_Q1%202026.pdf
+- Nebius Q4/FY2025 financial results, 2026-02-12: https://nebius.com/newsroom/nebius-reports-fourth-quarter-and-full-year-2025-financial-results
+- Nebius Q4/FY2025 shareholder letter PDF: https://assets.nebius.com/assets/e59fb92e-9027-473a-8cac-04f9d2e9ea9a/Shareholder%20Letter%20Q4%202025.pdf
+- Nebius Q3 2025 shareholder letter PDF: https://assets.nebius.com/assets/7f8a9169-0d2b-469d-87e7-44342ea7fcd2/SHLQ3%20%284%29.pdf
+- Nebius Q2 2025 shareholder letter PDF: https://assets.nebius.com/assets/98fceb3b-2951-4647-9864-4b0654af057c/Nebius%20-%20Letter%20to%20shareholders%20-%20Q2%202025.pdf
+- Nebius Q1 2025 financial results PDF: https://assets.nebius.com/assets/0369f7c5-dde6-4e32-873e-f1dd2a511212/20250520%20Nebius%20Group%20announces%20first%20quarter%202025%20financial%20results.pdf
+- Microsoft agreement, 2025-09-08: https://nebius.com/newsroom/nebius-announces-multi-billion-dollar-agreement-with-microsoft-for-ai-infrastructure
+- Meta agreement, 2026-03-16: https://nebius.com/newsroom/nebius-signs-new-ai-infrastructure-agreement-with-meta
+- NVIDIA partnership, 2026-03-11: https://nvidianews.nvidia.com/news/nvidia-and-nebius-partner-to-scale-full-stack-ai-cloud
+- Bloom Energy partnership, 2026-05-20: https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out
+- Yandex/Nebius Russia divestment completion, 2024-07-15: https://nebius.com/newsroom/ynv-announces-successful-completion-of-the-divestment-of-its-russia-based-businesses
+- Nasdaq resumption of NBIS trading, 2024-10-18: https://ir.nasdaq.com/news-releases/news-release-details/nasdaq-resumes-trading-nebius-group-nv
+
+### 市场与估值来源
+
+- StockAnalysis NBIS statistics, last updated 2026-06-11: https://stockanalysis.com/stocks/nbis/statistics/
+- StockAnalysis NBIS financial ratios: https://stockanalysis.com/stocks/nbis/financials/ratios/
+- Yahoo Finance NBIS statistics: https://finance.yahoo.com/quote/NBIS/key-statistics/
+- GuruFocus forward PE snapshot: https://www.gurufocus.com/term/forward-pe-ratio/NBIS
+
+### 项目内行业资料
+
+- `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md`
+- `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`

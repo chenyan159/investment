@@ -1,0 +1,355 @@
+# VST Vistra Corp 公司调研：AI 数据中心电力、核电 PPA 与可调度发电平台
+
+报告日期：2026-06-11  
+公司：Vistra Corp.  
+股票代码：VST / NYSE  
+所属目录：`公司调研/电力_发电_能源_储能/`  
+资料边界：仅使用 `基本面/行业调研/` 内与 AI 数据中心、电力接入、自备发电、微电网、产业背景相关资料，并结合联网搜索、公司公告、SEC/IR 披露、行业会议/技术资料；未读取、引用或继承 `特征量化/`，未读取旧 VST 公司报告，未修改 `公司调研/公司索引.md`。  
+核心结论：Vistra 是美国最大级别的竞争性发电 + 零售一体化平台，2026 年投资人给它的定价已经从“电价周期股/IPP”抬升为“AI 数据中心可调度电力与核电 CFE 供给商”。真正可量化的 AI 暴露来自 `AWS/Meta 核电 PPA + PJM/Comanche Peak 核电稀缺性 + gas fleet 作为 time-to-power 资源 + Helix AI infrastructure preferred power partner`，不是 AI 芯片或服务器硬件收入。
+
+## 1. 公司整体业务、产业链定位与最新估值
+
+### 1.1 公司是什么
+
+Vistra 是总部位于 Texas Irving 的 Fortune 500 综合电力公司，核心资产是：
+
+- **约 44GW 发电容量**：天然气、核电、煤电、太阳能、储能；公司网站口径称其是美国最大的竞争性发电商之一，且拥有美国第二大的 competitive nuclear fleet。
+- **约 500 万零售客户**：TXU Energy、Ambit、Dynegy、Homefield、Energy Harbor、U.S. Gas & Electric 等品牌，在 18 个州和 Washington D.C. 提供零售电力/天然气。
+- **五个报告分部**：Retail、Texas、East、West、Asset Closure；Texas/East/West 是发电与批发市场，Retail 是客户侧和综合套保平台，Asset Closure 是退役资产、矿山复垦、Moss Landing 电池事故处置等。
+- **商业模式**：不是受监管 utility 的 allowed ROE 模式，而是 competitive power / merchant generation + retail hedge + capacity market + bilateral PPA。股东回报高度受电价、容量价格、天气、燃料价、套保、信用、监管和客户长约影响。
+
+投资人眼中的 VST 已经发生三次重估：
+
+| 时间 | 重大变化 | 业务含义 | 投资人叙事变化 |
+|---|---|---|---|
+| 2023-2024 | Energy Harbor 并入 Vistra Vision，Vistra 获得 Perry、Davis-Besse、Beaver Valley 等核电资产，并最终收回 Nuveen/Avenue 的少数股权 | 核电 + 零售 + 可再生/储能组合扩大；核电 PTC 与 CFE 稀缺性增强 | 从 Texas merchant power 变成全国性零碳/可调度电力平台 |
+| 2025 | Lotus 2.6GW gas portfolio 收购完成，AWS Comanche Peak PPA、Oak Hill Solar PPA、Permian Basin 860MW 新 gas units 开工 | 增加 dispatchable gas 和 hyperscaler PPA 证据 | 从电价 beta 转向 AI 数据中心 power supplier |
+| 2026 | Meta 2.609GW PJM 核电 20 年 PPA、Cogentrix 5.5GW gas portfolio 待收购、KKR/NVIDIA/KIA/Vistra Helix AI infrastructure 平台发布 | 核电长约、gas time-to-power、资本平台三线并进 | 市场开始把 VST 与 CEG/TLN/GEV/BE 一起放进 AI 电力篮子 |
+
+### 1.2 产业链位置
+
+VST 不在 AI 芯片、服务器、光模块或机柜 BOM 内。它位于 AI 基建的 **电力供给与风险转移层**：
+
+```text
+AI 模型/云客户
+-> Hyperscaler / NeoCloud / AI campus
+-> 数据中心开发商 / Helix 这类资本与交付平台
+-> PPA / capacity / behind-the-meter / retail / wholesale power
+-> Vistra 核电、燃气、煤电、储能、零售套保
+-> PJM / ERCOT / ISO-NE / NYISO / CAISO 等电力市场
+```
+
+项目内 `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` 的主判断是：2026-2028 年 AI 数据中心最难绕过的瓶颈之一是电力接入、PPA、变压器、switchgear、time-to-power。VST 对应的是 **PPA/dispatchable MW/核电 CFE/天然气可调度容量**，不是普通电气设备供应商。
+
+### 1.3 最新估值与经营指标快照
+
+行情/估值日期：2026-06-11。股价采用 Yahoo chart 查询到的 NYSE 近收盘价格；PE/forward PE/PS 采用公开金融站点口径并用公司 TTM 数据交叉验证。不同金融站点会因价格时点、稀释股数、NCI、优先股和非经常项目处理不同而有小幅差异。
+
+| 指标 | 最新值 | 日期/口径 | 解释 |
+|---|---:|---|---|
+| 股价 | `$146.37` | 2026-06-11 NYSE regular market near close，Yahoo chart | 当日高低约 `$146.90 / $139.57` |
+| 市值 | 约 `$48-49B` | 2026-06-11，按约 333-337M 股估算 | 搜索端口显示约 `$47B`，价格和股数时点造成差异 |
+| TTM PE | 约 `22-25x` | 2026-06-11，公开筛选器约 `24.6x`；按 TTM net income 粗算约 `22x` | GAAP 受未实现套保损益影响大，forward PE 更有用 |
+| Forward PE | 约 `14-16x` | 2026-06-11，StockAnalysis/Yahoo 公开口径 | 隐含市场相信 2026-2027 EBITDA/FCF 上台阶 |
+| PS | 约 `2.5x` | 市值 / TTM revenue `$19.445B` | Utility/IPP 中偏高，反映 AI 电力期权 |
+| TTM revenue | `$19.445B` | FY2025 revenue `$17.738B` - 2025Q1 `$3.933B` + 2026Q1 `$5.640B` | 同比 TTM 约 `+7.4%`；2026Q1 revenue 同比 `+43.4%` |
+| FY2025 revenue growth | `+3.0%` | FY2025 `$17.738B` vs FY2024 `$17.224B` | 年度收入平稳，盈利弹性来自价格/容量/套保/核电 |
+| 2026Q1 revenue growth | `+43.4%` | `$5.640B` vs `$3.933B` | Q1 受 unrealized hedge gain、容量价格、Lotus 贡献影响 |
+| TTM gross margin | 约 `52.8%` | Revenue - fuel/purchased power/delivery fees | 发电公司“毛利率”口径不同于制造业；这里按燃料购电和配送费后毛利 |
+| TTM net margin | 约 `11.5%` | TTM net income `$2.241B` / TTM revenue | GAAP net income 受套保 MTM 大幅摆动 |
+| 2026 指引 | Ongoing Adj. EBITDA `$6.8-7.6B`；Ongoing Adj. FCFbG `$3.925-4.725B` | 2026-05-07 Q1 release，reaffirmed | 不含 Cogentrix 潜在影响 |
+| 2027 机会 | Ongoing Adj. EBITDA midpoint opportunity `$7.4-7.8B` | 2026-02-26 Q4/FY2025 release | 不含 Cogentrix，也不含 Meta PPA 执行的估计影响 |
+
+### 1.4 资产负债表健康度
+
+截至 2026Q1，VST 的财务状况是 **现金流强、杠杆中等偏高、信用改善、但仍有 commodity/套保 collateral 和并购资金需求**。
+
+| 项目 | 数字 | 评价 |
+|---|---:|---|
+| 可用流动性 | `$4.173B` | 2026Q1 10-Q：cash `$634M` + revolving `$2.126B` + commodity-linked facility `$1.413B`；较 2025 年末增加 `$1.39B` |
+| 经营现金流 | 2026Q1 `$1.199B`；FY2025 `$4.070B` | 现金生成强，但季节性偏下半年 |
+| Capex / nuclear fuel / LTSA prepay | 2026Q1 `$883M`；FY2025 capex 高 | 核燃料、发电资产维护、成长项目和并购会持续消耗现金 |
+| Share repurchase | 2026Q1 `$372M`；自 2021-11 以来累计约 `$6B` | 股本减少约 30%，但也提高财务杠杆敏感度 |
+| 信用评级 | 2026Q1 已获第二家主要评级机构 investment grade | Fitch 跟随 S&P 升至 IG，显著降低融资和 collateral 压力 |
+| 近期融资 | 2026-04 发行 `$4.0B` senior unsecured notes，用于偿还 2027 notes 和 Term Loan B-3 | 为 Cogentrix、2026/2027 债务到期、Nuveen 剩余付款提供弹药 |
+| 衍生品流动性风险 | 2026Q1 derivative liquidity exposure `$677M`，低于 2025 年末 `$963M` | 电价上行会推高 collateral 需求，但当前压力下降 |
+| Nuveen 远期回购义务 | 2026Q1 剩余 scheduled payments `$669M` | 2026 年现金义务；已纳入 liquidity 评估 |
+
+判断：VST 不是低杠杆公用事业。它的优势是 Ongoing Adj. FCFbG 中枢已到 `$4B+`，且大部分 2026-2027 发电量已套保；弱点是 merchant exposure、并购、核电 uprate/延寿 capex、Moss Landing/Asset Closure 和衍生品 collateral。总体健康度：**中高，信用质量明显改善，但不能按纯 regulated utility 低风险看待**。
+
+## 2. 最新五个季度财报、订单/交期与业务表
+
+说明：
+
+- VST 不披露传统制造业 backlog/bookings。可观察的 backlog-like 指标是：capacity auction/contract performance obligations、长期 PPA contracted MW、收购待交割 MW、已套保发电量、工程/核电 uprate 时间表。
+- “AI 数据中心相关收入占比”不是公司披露口径。本报告用已签约 hyperscaler PPA、可调度 MW 与核电 CFE 供给做估算：2025 和 2026Q1 已确认 direct AI/data-center PPA revenue 占比仍低，合同价值主要从 2026Q4/2027 以后体现。
+- 分部 revenue 使用公司 SEC/IR segment operating revenue 口径，包含 intersegment sales，合并层有 eliminations；因此分部收入不可简单相加。Adjusted EBITDA 更能代表业务利润贡献。
+
+| 财报季度 | 合并收入 / YoY | GAAP 净利润 | Ongoing Adj. EBITDA | 分部收入与增速 | 分部 Adj. EBITDA | 订单/Backlog/交期线索 | AI 数据中心相关占比 |
+|---|---:|---:|---:|---|---|---|---|
+| 2026Q1 | `$5.640B`，`+43.4%` | `$1.029B` | `$1.494B`，同比 `+20.5%` | Retail `$3.689B` `+16%`；Texas `$2.987B` `+1,323%`（套保/Intersegment 影响大）；East `$2.260B` `+64%`；West `$89M` `-43%`；Elim `-$3.391B` | Retail `$68M`；Texas `$586M`；East `$801M`；West `$56M` | 2026 guidance reaffirmed；capacity fixed-fee remaining performance obligations `$7.474B`；2026 hedging 支撑 guidance；Meta PPA 已签，delivery 将从 late 2026 ramp | 直接确认仍低；已签/准签可量化合同容量 `>3.8GW`（AWS+Meta）相当于公司 44GW 的约 `8-9%`，但收入 ramp 滞后 |
+| 2025Q4 | `$4.584B`，按 FY-9M 推算 | `$233M` | `$1.742B` | Retail 约 `$3.501B`；Texas 约 `$1.556B`；East 约 `$1.564B`；West 约 `-$22M`（套保/会计影响）；Elim 约 `-$2.063B` | 年报 release 披露 Q4 Ongoing Adj. EBITDA `$1.742B`；分部明细未在摘要完整列示 | 2026 guide `$6.8-7.6B`；2027 midpoint opportunity `$7.4-7.8B`；FY2025 capacity RPO 约 `$7.9B`；AWS Comanche Peak + Meta PJM PPAs 合计约 `3.8GW` | 2025 实际 AI revenue 仍非单独披露；AWS/Meta 长约开始改变市场对 nuclear fleet 的定价 |
+| 2025Q3 | `$4.971B`，`-20.9%` | `$652M` | `$1.581B`，`+9.9%` | Retail `$4.139B` `-2.6%`；Texas `$1.799B` `-57.6%`；East `$1.750B` `-5.6%`；West `$165M` `-28.9%`；Elim `-$2.884B` | Retail `$37M`；Texas `$784M`；East `$719M`；West `$63M` | 2026 guidance initiated `$6.8-7.6B`; as of 2025-10-31 hedged `98%/96%/70%` for 2025/2026/2027 expected generation | AI 仍主要是 forward opportunity；Q3 call/filing 已提到 large load facilities at nuclear/gas plants 的潜在交易 |
+| 2025Q2 | `$4.250B`，`+10.5%` | `$327M` | `$1.349B` | Retail `$3.532B` `+11.5%`；Texas `$1.788B` `+709%`；East `$1.480B` `-3.4%`；West `$25M` `-87%`；Elim `-$2.595B` | Retail `$756M`；Texas `$142M`；East `$418M`；West `$49M`；Corp/Other `-$16M` | Reaffirmed 2025 guide；2026 EBITDA midpoint opportunity raised to `>$6.8B`；Lotus 2.6GW gas acquisition announced/advanced | Q2 时 AI/data center 逻辑开始被市场交易，但直接 revenue 未披露 |
+| 2025Q1 | `$3.933B`，`+28.8%` | `-$268M` | `$1.240B`，`+53.1%` | Retail `$3.168B`；Texas `$210M`；East `$1.380B`；West `$157M`；Elim `-$986M` | Retail `$184M`；Texas `$490M`；East `$514M`；West `$62M` | Reaffirmed 2025 guide `$5.5-6.1B`; 2026 EBITDA midpoint opportunity `>$6B`; 2025/2026 expected generation hedged about `100%/90%` | Energy Harbor 多两个月贡献，核电资产价值开始进入 AI CFE 叙事 |
+
+季度结论：
+
+1. **利润质量比 GAAP 收入稳定**：GAAP revenue/net income 被套保 MTM、intersegment、天气和燃料成本扰动；Ongoing Adj. EBITDA 连续保持高位。
+2. **East 分部是 AI 核电长约的核心载体**：Meta PJM PPA 涉及 Perry、Davis-Besse、Beaver Valley；Q1 2026 East Adj. EBITDA `$801M`，已成最大 EBITDA 分部。
+3. **Texas 是 Comanche Peak + retail + ERCOT gas/coal/nuclear 的综合平台**：AWS Comanche Peak PPA、Permian Basin gas expansion、ERCOT power demand 都在 Texas 体现。
+4. **订单挤压不表现为“排产 backlog”，而表现为 contract MW + remaining performance obligations + hedged generation + fuel/gas asset pipeline**。
+
+## 3. 2026 指引、业务收入占比和重点产品
+
+### 3.1 最新一次财报指引
+
+2026Q1 公司重申：
+
+| 指标 | 2026 指引 | 2027 机会口径 | 备注 |
+|---|---:|---:|---|
+| Ongoing Operations Adjusted EBITDA | `$6.8-7.6B` | `$7.4-7.8B` midpoint opportunity | 2026 指引不含 Cogentrix；2027 opportunity 不含 Cogentrix 与 Meta PPA 执行影响 |
+| Ongoing Operations Adjusted FCFbG | `$3.925-4.725B` | 未给正式 guidance | 2026 midpoint `$4.325B`，是估算 PPA FCF accretion 的基准 |
+| 2026 hedging | Q4 release：约 `100%` expected generation volumes hedged | 2027/2028 分别约 `84%/58%`（2026-02-18 口径） | 降低短期电价波动，保留中长期上行 |
+| Cogentrix | 计划收购约 `5.5GW` gas generation，目标 2026H2 closing | 2027 可能贡献部分 EBITDA | 监管/交割风险仍在 |
+
+### 3.2 2025 收入占比与 2026Q1 业务侧重点
+
+| 业务/分部 | FY2025 segment operating revenue | FY2025 分部 revenue 占 reportable segments | 2026Q1 segment operating revenue | 2026Q1 Ongoing Adj. EBITDA | 业务重点 |
+|---|---:|---:|---:|---:|---|
+| Retail | `$14.340B` | `54.6%` | `$3.689B` | `$68M` | 500 万客户、TXU/Texas 零售护城河；天气温和导致 Q1 利润低 |
+| Texas generation | `$5.353B` | `20.4%` | `$2.987B` | `$586M` | Comanche Peak nuclear、ERCOT gas/coal/solar/storage、AWS PPA、Permian 860MW gas units |
+| East generation | `$6.174B` | `23.5%` | `$2.260B` | `$801M` | PJM nuclear + gas/coal；Meta 2.609GW PPA 是最大 AI CFE 合同 |
+| West generation | `$325M` | `1.2%` | `$89M` | `$56M` | CAISO/storage/legacy gas；Moss Landing 事故压低质量 |
+| Asset Closure | `$74M` | `0.3%` | `$6M` | 非 ongoing | 退役/复垦/事故处置，不是成长业务 |
+
+最突出的业务不是 Retail 收入体量，而是：
+
+1. **核电 PPA 与 uprate**：低碳、全天候、可立即支撑 AI 运算的电力。Meta PPA 合计 `2,609MW`，其中 `2,176MW` 现有 Perry/Davis-Besse 运行容量，`433MW` 是 Perry/Davis-Besse/Beaver Valley uprate；AWS Comanche Peak PPA 约 `1,200MW`。
+2. **可调度 gas fleet 扩张**：Lotus `2.6GW` 已闭合，Cogentrix `5.5GW` 待闭合，Permian `860MW` new units 在建；这类资源对 AI data center time-to-power 很关键。
+3. **Helix Digital Infrastructure 期权**：2026-06-11 KKR 宣布 Helix，承诺资本 `>$10B`，KIA/NVIDIA/Vistra 为 founding investors，NVIDIA 是 strategic technology partner，Vistra 是 preferred power partner。短期不应直接计收入，但它把 VST 放到 AI data center 项目早期选址/供电/融资链条。
+4. **Retail 一体化套保平台**：不是高增长 AI 产品，但能稳定现金流、降低 merchant risk，并形成天然电力负荷对冲。
+
+### 3.3 产品和业务分类：跳过与重点
+
+| 类别 | 产品/资产 | 是否重点 | 原因 |
+|---|---|---:|---|
+| 核电 CFE PPA | Comanche Peak、Perry、Davis-Besse、Beaver Valley；AWS/Meta PPA；license extension/uprate | 是 | AI 数据中心最需要的 24/7 clean firm power；容量大、合同长、替代难 |
+| Dispatchable gas generation | CCGT、peakers、Lotus/Cogentrix assets、Permian Basin new units | 是 | AI 园区需要 time-to-power、backup/bridge power、capacity market exposure；天然气是 2026-2027 最可执行路线 |
+| Helix / power partnership | 与 KKR/NVIDIA/KIA 的 AI infrastructure 平台 | 是，但作为期权 | 可带来 early-stage project access、new PPAs、BTM/hybrid power 机会；尚未披露项目订单 |
+| Retail electricity | TXU、Ambit、Dynegy、Homefield、Energy Harbor retail | 核心但非 AI 高增长 | 现金流和风险管理价值高；直接 AI 收入低 |
+| Solar + BESS | Oak Hill Solar、Pulaski/Newton solar、Moss Landing、Texas/CA batteries | 选择性重点 | 电池/solar 可搭配 AI PPA，但 VST 主要价值不是纯 renewables |
+| Coal legacy | coal fleet and retirement/closure | 跳过成长分析 | 现金流仍有价值，但与 AI 数据中心低碳需求冲突，长期倍数低 |
+| Asset Closure | retired generation, mines, battery removal/remediation | 跳过 | 成本中心/风险项，不是增长产品 |
+| 普通住宅零售套餐 | fixed-rate/renewable plan/add-on services | 跳过深度产品分析 | 收入大但成长性和 AI 基建相关性弱 |
+
+## 4. 当前关键业务：收入贡献、增速、AI 重要性、供需与溢价能力
+
+| 关键业务/产品 | 当前收入/现金流贡献估算 | 当前增速/变化 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 |
+|---|---:|---|---:|---:|---:|---:|
+| 核电 CFE PPA：AWS/Meta + existing nuclear fleet | FY2025 East+Texas 核电相关 EBITDA 未单独披露；Meta operating capacity `2,176MW`，full-year gross revenue 能力按 `$70-110/MWh` 估算约 `$1.2-1.9B/年`；更重要是 incremental FCF uplift | 2026 起合同 ramp；Meta operating output late 2026 到 2027 年底 full delivery；uprate 2031-2034 | 极高：AI 训练/推理需要 24/7 firm power，核电 CFE 可直接匹配 cloud 碳目标 | 极高：大型 AI 项目 2026-2027 已等电 | 极紧：可立即供应的 nuclear MW 极少 | 高：地理+许可+运行核电稀缺；但受 FERC/ISO、grid delivery 和政治审查约束 |
+| Dispatchable gas fleet / capacity / time-to-power | FY2025 Texas+East+West generation revenue `$11.852B` segment before eliminations；Lotus `2.6GW` 已贡献，Cogentrix `5.5GW` 待闭合 | Lotus/Permian/Cogentrix 提高 2026-2027 MW；容量价格和 load growth 抬升 margin | 高：AI 园区需要快速可调度电力、备用、桥接和 capacity | 很高：电网排队 24-48 个月时 gas 是最快实物路线之一 | 紧：turbine/engine/permit/fuel pipeline 均紧 | 中高：VST 有现有资产和市场能力，但 gas 发电不是天然垄断 |
+| Retail + integrated hedge | FY2025 segment revenue `$14.340B`，54.6% of reportable segment revenue；2026Q1 `$3.689B` | 收入高，利润天气敏感；2026Q1 mild Texas weather 压低 Retail Adj. EBITDA 到 `$68M` | 中：为发电资产提供天然对冲，不直接给 AI rack 供电 | 中 | 一般：零售竞争强 | 中：TXU 品牌和规模有价值，但不是 AI 稀缺资源 |
+| Helix preferred power partner | 2026-06-11 刚公布，当前收入 `$0` 或不可确认 | `>$10B` committed capital platform，NVIDIA strategic partner，VST preferred power partner | 高：它可能把 power、data center、connectivity 和 capital 预集成 | 高：hyperscaler 的瓶颈是 power + capital + site execution | 供给紧：可交付电力和资本组合稀缺 | 期权高但未验证：要看项目、PPA、site 和 Vistra 是否拿到收益 |
+| Solar/BESS/Vistra Zero | FY2025 revenue不单独披露；BESS owned: CA `350MW`、TX `270MW`、IL `4MW`，Oak Hill Solar `200MW` commissioned | 增长但基数小；Moss Landing 事故带来风险 | 中：可搭配 PPA、grid services、capacity，但不是 24/7 单独解决方案 | 中 | BESS/transformer/permit 局部紧 | 中：储能竞争大，VST 的优势是与发电/retail组合 |
+
+## 5. 一年后关键业务三情景预测
+
+预测时点：2027-06 附近。收入为年化或 run-rate 估算，不是公司 guidance。重要性/紧急性/供需/溢价评分采用 1-5，5 为最强。
+
+| 业务 | 情景 | 2027-06 收入/现金流贡献估算 | 收入增速 | AI 重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 关键假设 |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| 核电 CFE PPA | 基准 | Direct hyperscaler PPA gross run-rate `$0.8-1.5B/年`；incremental FCF `$250-400M/年` | `+50%+` from near-zero direct AI PPA base | 5 | 5 | 5 | 4 | Meta operating output ramp 正常，AWS/Comanche Peak 仍偏远期；market price 中性 |
+| 核电 CFE PPA | 乐观 | `$1.5-2.5B/年` gross run-rate；incremental FCF `$400-650M/年` | `+100%+` | 5 | 5 | 5 | 5 | Meta full delivery 提前、容量价格强、AWS/额外客户条款更明确 |
+| 核电 CFE PPA | 极度乐观 | `$2.5-3.5B/年` gross/contracted run-rate；incremental FCF `$700M+` | `+150%+` | 5 | 5 | 5 | 5 | 新增核电 PPA/Helix 绑定项目，市场给 nuclear CFE 明显溢价 |
+| Dispatchable gas | 基准 | Gas/dispatchable generation revenue `$8-10B/年` segment-level；Cogentrix 半年贡献，EBITDA 增量 `$250-450M` | `+5-10%` | 4 | 5 | 4 | 3 | Cogentrix H2 2026 close；容量价格高位，fuel spread 正常 |
+| Dispatchable gas | 乐观 | `$10-12B/年`；EBITDA 增量 `$500-800M` | `+10-20%` | 4 | 5 | 4 | 4 | 热夏/冷冬、PJM/ERCOT capacity scarcity、更多 AI/customer tolling |
+| Dispatchable gas | 极度乐观 | `$12B+`；EBITDA 增量 `$1B+` | `+20%+` | 5 | 5 | 5 | 4 | 多个 AI 园区为 time-to-power 签 gas-backed PPA/bridge power，Helix 落地项目 |
+| Retail integrated hedge | 基准 | Retail revenue `$14-15B/年`，Adj. EBITDA `$0.9-1.2B` | `0-5%` | 2 | 2 | 2 | 3 | 客户数稳定，天气正常，Texas margin normalizes |
+| Retail integrated hedge | 乐观 | `$15-16B`，EBITDA `$1.2-1.5B` | `5-8%` | 2 | 2 | 2 | 3 | 夏季高负荷、零售价差改善、坏账可控 |
+| Retail integrated hedge | 极度乐观 | `$16B+`，EBITDA `$1.5B+` | `8%+` | 3 | 3 | 3 | 3 | 高负荷/电价波动下 integrated hedge 大幅获利 |
+| Helix platform | 基准 | 2027-06 仍以 pipeline/option 为主，确认收入 `<$100M` 或不披露 | n.m. | 4 | 4 | 4 | 3 | 尚在选址/融资阶段，VST 以 strategic partner 角色参与 |
+| Helix platform | 乐观 | 首批项目签 PPA/供电框架，contracted gross value `$0.5-1.5B/年`，2027 低额确认 | n.m. | 5 | 5 | 5 | 4 | Helix 拿到 hyperscaler tenant，VST 被指定为 power supplier |
+| Helix platform | 极度乐观 | 多项目进入 NTP，VST 获得 `1-3GW` 新 power opportunity | n.m. | 5 | 5 | 5 | 5 | NVIDIA DSX/Helix 成为 AI factory 标准融资-交付平台 |
+| Solar/BESS | 基准 | revenue/EBITDA 小幅增长；grid service + solar PPA run-rate `$100-300M` | `5-15%` | 2 | 3 | 3 | 2 | Oak Hill/Pulaski/Newton 按计划，Moss Landing 不扩大 |
+| Solar/BESS | 乐观 | `$300-500M` revenue/contracted opportunity | `15-30%` | 3 | 3 | 3 | 3 | BESS 与 AI campus / capacity market 绑定 |
+| Solar/BESS | 极度乐观 | `$500M+` | `30%+` | 3 | 4 | 4 | 3 | 大型 BESS/grid service 套餐进入 Helix/AI campus |
+
+## 6. BOM、每 MW/rack/GPU/optical port 内容量与价格传导
+
+### 6.1 VST 的“BOM”不是硬件 BOM，而是 AI 电力 BOM
+
+VST 不供应 GPU、服务器、电源模块、光模块或 optical port。它供应的是每个 AI campus 都必须采购的 **可交付电力、容量、可靠性、碳属性和电力市场风险管理**。
+
+| 计量单位 | AI 数据中心侧真实内容量 | VST 可捕获的价值 | 估算公式 |
+|---|---|---|---|
+| 每 `1MW IT load` | 可支持约 `6-17` 个 rack（按 60-160kW/rack）；若 100kW/rack 约 `10` rack | 电能、capacity、PPA premium、CFE attribute、可靠性/套保 | `MWh/年 = 1MW * 8,760h * load factor` |
+| 每 `1MW nuclear PPA` | 90% capacity factor 约 `7,884MWh/年` | 若 PPA price `$70-110/MWh`，gross revenue `$0.55-0.87M/MW-year` | `7,884 * PPA price` |
+| 每 `1GW nuclear PPA` | 约 `7.9TWh/年` firm CFE | gross revenue `$552-867M/年`；incremental FCF 取决于 merchant baseline 与 capex | `1,000 * 每MW-year` |
+| 每 rack | 60-160kW 主流；GB200/GB300 NVL72 常被行业模型放在 100kW+ | VST 间接受益于 rack density 提高导致 MW 更紧缺 | `rack 数 = IT MW * 1,000 / kW per rack` |
+| 每 GPU | 视平台约 `450-800 GPU/MW`；GB/NVL72 若 120-160kW/rack，则约 `450-600 GPU/MW` | VST 不按 GPU 收费，但 GPU 折旧越高，客户越愿意为提前上电付溢价 | `GPU/MW = 1,000/kW per rack * GPU per rack` |
+| 每 optical port | VST 直接内容量为 `0` | 光端口越多代表 AI 网络越大、功耗越高，间接推高 MW/PPA 需求 | 不纳入 VST revenue |
+
+### 6.2 价格传导链
+
+```text
+GPU/rack 折旧成本和 AI revenue opportunity
+-> hyperscaler 对 time-to-power 的愿付溢价
+-> 数据中心 site 竞争从土地/网络转向可上电 MW
+-> long-term PPA / capacity contract / bridge gas / BTM power
+-> VST 的 nuclear/gas/retail portfolio 获得更高 contract price、更长 duration、更强 credit counterparty
+-> Ongoing Adj. EBITDA 和 FCFbG 抬升
+```
+
+关键价格变量：
+
+| 价格变量 | 传导方式 | 对 VST 有利的情形 | 反证 |
+|---|---|---|---|
+| PPA `$ / MWh` | 直接决定核电/气电长约 gross revenue | 24/7 CFE 和可立即上电 MW 短缺，客户接受 `$70-110+/MWh` 长约 | 客户转向 utility tariff、SMR/renewables、FERC 限制 behind-the-meter |
+| Capacity `$ / MW-day` | PJM/ERCOT/ISO capacity scarcity 进入收入 | load growth 高、退役多、reserve margin 紧 | capacity auction price 回落、监管干预 |
+| Fuel spread | gas plant 毛利 | power price > gas cost + emissions + O&M | gas basis 飙升或 spark spread 收窄 |
+| Nuclear PTC / tax credits | 给 existing nuclear downside support | 低电价时期提供保护，上行时参与市场 | 政策变化或 PTC 被削弱 |
+| Contract duration / counterparty credit | 支撑 leverage 和估值倍数 | Meta/AWS/Helix 等 investment-grade 或强信用客户 | 客户集中、合同条款不能覆盖 capex/operating risk |
+
+### 6.3 当前产能能力、采纳程度与认证阶段
+
+| 业务 | 当前产能能力 | 美元计能力 | 被供应链/客户采纳程度 | 认证/许可阶段 |
+|---|---:|---:|---|---|
+| Existing nuclear CFE | 约 `3.8GW+` 已签/披露 AWS+Meta PPA 容量；全部 nuclear fleet 更大但未全部签约 AI PPA | 若 3.8GW 全按 90% CF、`$70-110/MWh`，gross revenue 能力约 `$2.1-3.3B/年` | AWS/Meta 已采纳；PJM/Comanche Peak 资产被 hyperscaler 直接看中 | 现有核电已持证运行；Meta uprates `433MW` 需工程、NRC/运行许可与 2031-2034 交付 |
+| Gas / dispatchable generation | 约 44GW 总容量中天然气占大头；Lotus `2.6GW` 已闭合；Cogentrix `5.5GW` 待闭合；Permian `860MW` 在建 | 以 5.5GW Cogentrix、40-70% CF、`$55-90/MWh` 估算 gross revenue 能力约 `$1.1-3.0B/年` | AI/data center 侧高度需要，但 VST 未披露具体 gas-backed AI PPA | Cogentrix 需交易交割/监管；Permian 新机组建设中 |
+| Helix power partnership | 当前未披露 MW | 资本平台 committed capital `>$10B`；VST 收入取决于项目供电合同 | KKR/KIA/NVIDIA/Vistra 已形成平台；hyperscaler tenant 未披露 | 平台已公告；单个项目需 site、interconnection、PPA、permit |
+| Retail platform | 约 `5M` 客户，16-18 州/地区 | FY2025 Retail revenue `$14.34B` | 成熟采纳；对 AI 是间接 hedge | Retail license/PUC 合规成熟 |
+| Solar/BESS | CA `350MW`、TX `270MW`、IL `4MW` battery ESS；Oak Hill Solar `200MW` commissioned | 子业务未披露；按市场容量价值较小 | AWS Oak Hill PPA 已说明 hyperscaler 可采纳 renewables | BESS 受 UL/fire/insurance/事故审查；Moss Landing 仍是风险 |
+
+## 7. 一年后产能、采纳与认证阶段预测
+
+| 业务 | 情景 | 2027-06 产能能力（美元计） | 供应链/客户采纳 | 认证/许可阶段 |
+|---|---|---:|---|---|
+| Nuclear CFE PPA | 基准 | 3.8GW 已签合同的年化 gross revenue ability `$2.1-3.3B`；实际确认低于满产 run-rate | Meta operating output ramp；AWS 远期或按合同节奏推进 | Existing plants 正常运行；Meta license-extension/uprate planning 推进 |
+| Nuclear CFE PPA | 乐观 | `4-5GW` contracted nuclear/CFE opportunity，gross ability `$2.5-4.3B` | 新增 hyperscaler/Helix CFE 需求 | 部分 uprate 设计/NRC 前置工作可见 |
+| Nuclear CFE PPA | 极度乐观 | `5GW+` contracted/near-contracted CFE，gross ability `$3.5B+` | VST 与 CEG/TLN 一样成为 AI nuclear PPA Tier-1 | License extensions 和 uprate capital plan 更明确 |
+| Gas / dispatchable | 基准 | Cogentrix 完成后新增 `5.5GW`，gas gross revenue ability `$1.1-3.0B/年`；2027 部分年贡献 | AI/customer 侧更认可 gas as bridge power | Cogentrix closed；Permian 860MW 施工/投运进度正常 |
+| Gas / dispatchable | 乐观 | 新增/重定价 dispatchable opportunity `6-8GW` | Helix 或客户为 time-to-power 签 tolling/PPA | 多州许可和 fuel supply 可执行 |
+| Gas / dispatchable | 极度乐观 | `8GW+` 新增/重定价 opportunity | gas-backed AI campus 成为 2027 主线之一 | 监管未显著收紧，燃气供应与排放控制可落地 |
+| Helix | 基准 | 收入未显著确认；contract pipeline 可见但不量化 | 作为 preferred power partner 参与项目筛选 | 平台层面已成立，项目层面处早期 |
+| Helix | 乐观 | 绑定 `1-2GW` power opportunity | 首批 hyperscaler tenant / DSX project 落地 | site/interconnection/PPA/financing 进入 NTP |
+| Helix | 极度乐观 | `3GW+` power opportunity | Helix 成为 AI factory 标准化融资/交付平台之一 | 多项目获得 permit/utility/BTM 路径 |
+| Solar/BESS | 基准 | 小幅增长，年化 opportunity `$0.2-0.5B` | 作为 PPA 附加项 | Moss Landing 风险可控，新项目并网 |
+| Solar/BESS | 乐观 | `$0.5-1.0B` contracted/available | BESS 与 capacity/AI campus 绑定 | Fire/insurance/UL/NFPA 要求通过 |
+| Solar/BESS | 极度乐观 | `$1B+` | AI campus 对 BESS/backup/grid services 高 attach | 事故反证消除，更多项目进入商业运行 |
+
+## 8. 基于订单积压和供给预测未来一年业务增速
+
+VST 的未来一年增长应以 **Adjusted EBITDA/FCFbG** 而不是 GAAP revenue 为主，因为 GAAP revenue 受 hedge MTM 和 intersegment 消除严重扰动。
+
+### 8.1 真实订单与供给证据
+
+| 证据 | 数字 | 可信度 | 对未来一年影响 |
+|---|---:|---|---|
+| 2026 Ongoing Adj. EBITDA guidance | `$6.8-7.6B` | 高，公司正式重申 | 相比 FY2025 `$5.912B`，midpoint 增长约 `+21.8%` |
+| 2026 Ongoing FCFbG guidance | `$3.925-4.725B` | 高 | 相比 FY2025 `$3.592B`，midpoint 增长约 `+20.4%` |
+| 2027 EBITDA opportunity | `$7.4-7.8B` midpoint opportunity | 中高，不是 guidance | 不含 Cogentrix/Meta，说明基础 earnings power 继续上行 |
+| Capacity remaining performance obligations | `$7.474B` as of 2026Q1 | 高，SEC 披露 | 类 backlog，支持容量收入能见度 |
+| AWS + Meta nuclear PPAs | 约 `3.8GW`，Meta `2.609GW` 20 年 | 高，公司/客户公告 | 2026Q4-2027 起逐步贡献，且提高长期倍数 |
+| Lotus + Cogentrix + Permian | `2.6GW` closed；`5.5GW` target H2 2026 close；`860MW` new units | 高/中高 | 增加 gas fleet 和 AI time-to-power 可选性 |
+| Helix | `>$10B` committed capital，VST preferred power partner | 中，平台公告高可信但项目未披露 | 2027 前更多是 pipeline / option，不宜直接入基准收入 |
+
+### 8.2 未来一年增长三情景
+
+| 情景 | 2027-06 附近收入增速 | 2027-06 附近 Adj. EBITDA 增速 | 核心驱动 | 取消/延期率假设 |
+|---|---:|---:|---|---|
+| 基准 | `+5-10%` TTM revenue；GAAP 波动可能偏离 | `+8-15%` | 2026 guidance 落地、Cogentrix 部分贡献、capacity price、Meta ramp 初期 | 长约 PPA 取消率低；Helix 项目延期不影响基准 |
+| 乐观 | `+10-18%` | `+15-25%` | Meta ramp 快、gas fleet 高价差、PJM/ ERCOT tightness、更多 bilateral deal | 部分项目延迟但不取消；客户愿为 time-to-power 付 premium |
+| 极度乐观 | `+20%+` | `+25-35%+` | 新增 `1-3GW` AI/data center PPA 或 Helix 项目、容量价格上行、Cogentrix 全年化预期被上修 | announced projects 多数转 NTP，取消率低于行业担忧 |
+
+关键判断：**VST 的基准增长已经被 2026 guidance 和 hedging 覆盖；真正的超预期来自新增 AI PPA/Helix 或 gas-backed time-to-power 合同，而不是普通零售增长。**
+
+## 9. 竞争格局、技术路线与替代风险
+
+### 9.1 主要竞争对手
+
+| 竞争层 | 主要对手 | 与 VST 的差异 |
+|---|---|---|
+| 核电 CFE PPA | Constellation Energy、Talen Energy、Entergy、NextEra nuclear assets、Duke/Southern regulated nuclear | CEG 是最大核电纯度；TLN 有 Susquehanna co-location 经验；VST 有核电 + retail + gas 一体化 |
+| Dispatchable gas / IPP | NRG、Calpine、Constellation gas fleet、NextEra Energy Resources、Tenaska、Competitive Power Ventures | Gas 资产竞争多，但 VST 规模、市场覆盖、retail hedge 和信用改善是优势 |
+| Utility / regulated load growth | AEP、Dominion、Entergy、Duke、Southern、Oncor/ERCOT utilities | Regulated utilities 通过 rate base 捕获 load growth；VST 通过 merchant/PPA/capacity 捕获，弹性更高但风险更大 |
+| Behind-the-meter / dedicated power | Bloom Energy、GE Vernova、Caterpillar、Wärtsilä、Cummins、Crusoe/Lancium/VoltaGrid | 这些更像设备/项目商；VST 有现有发电资产，不一定卖设备 |
+| Data center energy platform | Helix、Blackstone/PPL、Brookfield/DigitalBridge/other PE-power alliances | VST 同时是 Helix founding investor/preferred power partner，但 Helix 也可能采购其他 power solutions |
+
+### 9.2 VST 新产品/新技术是否是主流
+
+| 方向 | 是否主流 | 判断 |
+|---|---|---|
+| Existing nuclear + 20 年 hyperscaler PPA | 是，2026 最稀缺主流之一 | AI 数据中心需要 24/7 clean firm power；现有核电是比 SMR 更快的解决方案 |
+| Nuclear uprate | 是，但收入滞后 | 433MW Meta uprate 2031-2034 才进入 full delivery；2026-2028 主要是 capex/许可/设计 |
+| Gas as bridge power / dispatchable capacity | 是，2026-2027 执行性最强 | 本地行业资料显示天然气快启发电+BESS/微电网是 AI data center time-to-power 的主路线之一 |
+| Helix integrated AI infrastructure | 方向主流，项目待证伪 | 把 capital + data center + NVIDIA DSX + power 组合，是市场想要的模型；但 VST 收益需要项目级合同 |
+| Solar/BESS-only | 非主流的单独解决方案 | 对 AI 重要但不能单独满足 24/7 firm power，需要核电/gas/grid 配合 |
+| SMR/先进核 | 长期方向，不是 2026-2027 VST 现金流主线 | SMR 更像 2030s 期权；VST 的优势是现有核电，而非新堆开发 |
+
+### 9.3 替代方案和风险
+
+| 风险/替代 | 影响 | 监测指标 |
+|---|---|---|
+| FERC/ISO 限制 co-location 或要求大负荷承担 grid cost | 降低 nuclear/data center 直连或 behind-the-meter 经济性 | PJM/FERC co-located large load rules、state PUC orders |
+| Hyperscaler 转向 utility tariff + regulated buildout | VST merchant premium 被压低 | AEP/Dominion/Entergy/Southern data center tariffs、cost allocation |
+| 现场 gas/fuel cell 设备商绕过 IPP | VST gas fleet 价值被部分替代 | Bloom/Oracle、Caterpillar/AIP、GE/Crusoe 等新增 GW 订单 |
+| 核电 PPA 政治/监管反弹 | 长约被要求修改、披露或承担额外 grid charge | FERC/PUC complaints、consumer advocate filings |
+| 电价/容量价格回落 | merchant earnings 和 capacity value 下修 | PJM capacity auction、ERCOT reserve margin、spark spread |
+| 核电运行/安全/延寿风险 | 高影响低频，可能损害长约和估值 | NRC event reports、capacity factor、outage duration |
+| Coal/排放和 ESG | 压低估值倍数，限制客户选择 | coal retirement schedule、emissions rules、客户 CFE 要求 |
+| M&A 执行风险 | Cogentrix 交割、整合、融资和 leverage | deal close、synergy、credit rating、debt/EBITDA |
+
+客户替换成本：对普通零售客户低；对 hyperscaler PPA 极高。AI campus 一旦把 site、interconnection、CFE claims、financial hedge、capacity accreditation 和 energization schedule 绑定到 VST 核电/气电资产，替换供应商可能推迟 6-36 个月，并影响 GPU/rack 投产，因此 VST 对大客户具有时间价值溢价。
+
+## 10. 投资结论与跟踪清单
+
+### 10.1 结论
+
+1. **VST 的 AI 逻辑真实但要拆清楚**：真实的是 `3.8GW+` hyperscaler nuclear PPA、dispatchable gas MW、Helix preferred power partner；不真实的是把 VST 当成 AI 硬件 BOM 公司。
+2. **短期业绩由已套保发电量、容量价格和气电资产贡献决定**：2026 guidance 已经给出 `$7.2B` EBITDA midpoint，比 FY2025 高约 22%。
+3. **长期 upside 来自 nuclear CFE repricing**：Meta 2.609GW 20 年 PPA 是行业标志性合同；如果更多客户愿意为 existing nuclear + uprate 付费，VST 的核电资产倍数会持续上修。
+4. **Gas fleet 是 AI time-to-power 的第二条腿**：Cogentrix/Lotus/Permian 让 VST 不只依赖核电，能覆盖需要快速可调度 power 的数据中心场景。
+5. **估值已不便宜**：约 `14-16x` forward PE 和 `2.5x` PS 对 IPP 偏高，市场已经预支 AI 电力稀缺。必须用新 PPA、Helix 项目、capacity auction、Cogentrix close 来验证。
+
+### 10.2 关键跟踪指标
+
+| 优先级 | 指标 | 上修触发 | 下修触发 |
+|---:|---|---|---|
+| 1 | Meta PPA ramp timing | late 2026 delivery 如期，2027 full delivery visibility 提高 | PJM/FERC/operational delay |
+| 1 | 新增 hyperscaler PPA / Helix 项目 | VST 获得 `1GW+` 新 CFE/gas-backed PPA | Helix 只做资本平台，VST 无实际供电合同 |
+| 1 | PJM/ERCOT capacity and power price | capacity auction 高位、load growth 上修 | 监管压价或 capacity auction 回落 |
+| 2 | Cogentrix close and financing | H2 2026 close，信用评级保持 IG | 交易延迟、杠杆压力、评级 outlook 转负 |
+| 2 | Nuclear capacity factor/outage | 高 availability，uprate/extension 进展 | 大修延长、NRC 事件 |
+| 2 | Gas fuel supply and emissions policy | gas-backed AI campus 获 permit | 排放/燃气管线/社区反对导致 delayed MW |
+| 3 | Retail margin | TXU ranking/retention 强、天气正常 | 竞争加剧、坏账、温和天气 |
+| 3 | Moss Landing / Asset Closure | 保险回收、成本可控 | 事故责任扩大、BESS 许可受限 |
+
+## 11. 主要资料来源
+
+### 项目内允许资料
+
+| 本地资料 | 使用内容 |
+|---|---|
+| `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` | AI 数据中心 2026/2027 CapEx、MW、瓶颈和电力/PPA 订单池 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md` | 电力接入、PPA、变压器、switchgear、800VDC/MV UPS、数据中心上电瓶颈 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md` | 天然气快启、SOFC、BESS、BTM power、微电网和 AI campus time-to-power |
+| `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md` | 电力作为 2026-2028 AI 基建硬瓶颈的反证指标 |
+| `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md` | 避免把电力、设备、GPU、数据中心租约重复计算 |
+
+### 外部资料
+
+| 来源 | 日期 | 内容 |
+|---|---:|---|
+| Vistra, Q1 2026 results, https://investor.vistracorp.com/2026-05-07-Vistra-Reports-First-Quarter-2026-Results | 2026-05-07 | Q1 net income `$1.029B`、Ongoing Adj. EBITDA `$1.494B`、2026 guidance reaffirmed |
+| Vistra, Q4/FY2025 results, https://investor.vistracorp.com/2026-02-26-Vistra-Reports-Fourth-Quarter-and-Full-Year-2025-Results | 2026-02-26 | FY2025 EBITDA/FCF、2026 guidance、2027 opportunity、AWS/Meta PPAs、Lotus/Cogentrix |
+| Vistra, Meta PPA announcement, https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid | 2026-01-09 | Meta 20 年 PPA，`2,176MW` operating + `433MW` uprate，总计 `2,609MW` |
+| Vistra 2026 Q1 Form 10-Q, https://www.sec.gov/Archives/edgar/data/1692819/000169281926000014/vistra-20260331.htm | 2026-05-08 | revenue disaggregation、remaining performance obligations、liquidity、debt/collateral |
+| Vistra 2025 Form 10-K, https://filecache.investorroom.com/mr5ir_vistracorp_ir/339/VST_10-K_2026-02-27.pdf | 2026-02-27 | business segments、Energy Harbor、FY2025 financial statements、44GW/5M customers |
+| Vistra 2025 Q2 results, https://investor.vistracorp.com/2025-08-07-Vistra-Reports-Second-Quarter-2025-Results | 2025-08-07 | Q2 net income、EBITDA、segment EBITDA |
+| Vistra 2025 Q3 results, https://investor.vistracorp.com/2025-11-06-Vistra-Reports-Third-Quarter-2025-Results%2C-Narrows-2025-Guidance%2C-and-Initiates-2026-Guidance | 2025-11-06 | Q3 net income、EBITDA、2026 guidance initiated、hedging |
+| KKR Helix Digital Infrastructure announcement, https://www.businesswire.com/news/home/20260610500794/en/KKR-Launches-Helix-Digital-Infrastructure-a-New-Company-to-Finance-and-Deliver-the-Next-Generation-of-AI-Infrastructure | 2026-06-11 | Helix `>$10B` committed capital；KIA/NVIDIA/Vistra founding investors；Vistra preferred power partner |
+| Vistra company overview, https://vistracorp.com/about/ | 2026 accessed | 44GW generation、5M retail customers、competitive power generator positioning |
+| Vistra generation page, https://vistracorp.com/generation/ | 2026 accessed | generation fleet overview |
+| Yahoo chart query / public quote | 2026-06-11 | VST stock price near close `$146.37` |
+| StockAnalysis/Yahoo/finance public statistics pages | 2026-06-10/11 | PE、forward PE、PS、TTM revenue/margin cross-check |

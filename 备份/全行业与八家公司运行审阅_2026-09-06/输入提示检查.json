@@ -1,0 +1,839 @@
+[
+  {
+    "subject": "数据中心开关设备与变压器",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-13-38-333Z_industry_数据中心开关设备与变压器_prompt.md",
+    "chars": 3376,
+    "logged_chars": 3430,
+    "full_current_plan": true,
+    "bytes": 9752,
+    "placeholder": false
+  },
+  {
+    "subject": "功率半导体与高压保护器件",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-13-41-679Z_industry_功率半导体与高压保护器件_prompt.md",
+    "chars": 3376,
+    "logged_chars": 3430,
+    "full_current_plan": true,
+    "bytes": 9752,
+    "placeholder": false
+  },
+  {
+    "subject": "数据中心低压配电、PDU与母线槽",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-13-40-056Z_industry_数据中心低压配电、PDU与母线槽_prompt.md",
+    "chars": 3384,
+    "logged_chars": 3438,
+    "full_current_plan": true,
+    "bytes": 9764,
+    "placeholder": false
+  },
+  {
+    "subject": "数据中心UPS与电池储能",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-13-36-565Z_industry_数据中心UPS与电池储能_prompt.md",
+    "chars": 3376,
+    "logged_chars": 3430,
+    "full_current_plan": true,
+    "bytes": 9740,
+    "placeholder": false
+  },
+  {
+    "subject": "中压直流、800VDC与固态变压器",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-13-39-107Z_industry_中压直流、800VDC与固态变压器_prompt.md",
+    "chars": 3386,
+    "logged_chars": 3440,
+    "full_current_plan": true,
+    "bytes": 9758,
+    "placeholder": false
+  },
+  {
+    "subject": "数据中心土建、MEP与预制化交付",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-13-42-548Z_industry_数据中心土建、MEP与预制化交付_prompt.md",
+    "chars": 3384,
+    "logged_chars": 3438,
+    "full_current_plan": true,
+    "bytes": 9764,
+    "placeholder": false
+  },
+  {
+    "subject": "数据中心自备发电与微电网",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-13-35-650Z_industry_数据中心自备发电与微电网_prompt.md",
+    "chars": 3376,
+    "logged_chars": 3430,
+    "full_current_plan": true,
+    "bytes": 9752,
+    "placeholder": false
+  },
+  {
+    "subject": "数据中心电力接入与高压变电",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-13-34-672Z_industry_数据中心电力接入与高压变电_prompt.md",
+    "chars": 3378,
+    "logged_chars": 3432,
+    "full_current_plan": true,
+    "bytes": 9758,
+    "placeholder": false
+  },
+  {
+    "subject": "机柜级供电与服务器电源架构",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-13-40-898Z_industry_机柜级供电与服务器电源架构_prompt.md",
+    "chars": 3378,
+    "logged_chars": 3432,
+    "full_current_plan": true,
+    "bytes": 9758,
+    "placeholder": false
+  },
+  {
+    "subject": "数据中心风冷、冷水机组与HVAC",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-34-49-066Z_industry_数据中心风冷、冷水机组与HVAC_prompt.md",
+    "chars": 3384,
+    "logged_chars": 3438,
+    "full_current_plan": true,
+    "bytes": 9760,
+    "placeholder": false
+  },
+  {
+    "subject": "数据中心直液冷系统",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-35-02-234Z_industry_数据中心直液冷系统_prompt.md",
+    "chars": 3491,
+    "logged_chars": 3545,
+    "full_current_plan": true,
+    "bytes": 10075,
+    "placeholder": false
+  },
+  {
+    "subject": "导管、桥架与线缆管理",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-33-12-892Z_industry_导管、桥架与线缆管理_prompt.md",
+    "chars": 3372,
+    "logged_chars": 3426,
+    "full_current_plan": true,
+    "bytes": 9740,
+    "placeholder": false
+  },
+  {
+    "subject": "动态UPS、飞轮与超级电容",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-13-37-450Z_industry_动态UPS、飞轮与超级电容_prompt.md",
+    "chars": 3378,
+    "logged_chars": 3432,
+    "full_current_plan": true,
+    "bytes": 9746,
+    "placeholder": false
+  },
+  {
+    "subject": "液冷小组件与流体控制",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-38-27-070Z_industry_液冷小组件与流体控制_prompt.md",
+    "chars": 3486,
+    "logged_chars": 3540,
+    "full_current_plan": true,
+    "bytes": 10062,
+    "placeholder": false
+  },
+  {
+    "subject": "机柜、围护结构与物理安防",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-38-40-307Z_industry_机柜、围护结构与物理安防_prompt.md",
+    "chars": 3376,
+    "logged_chars": 3430,
+    "full_current_plan": true,
+    "bytes": 9752,
+    "placeholder": false
+  },
+  {
+    "subject": "DCIM、能控与AI工厂数字孪生",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-41-20-550Z_industry_DCIM、能控与AI工厂数字孪生_prompt.md",
+    "chars": 3384,
+    "logged_chars": 3438,
+    "full_current_plan": true,
+    "bytes": 9752,
+    "placeholder": false
+  },
+  {
+    "subject": "AI边缘推理芯片",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-56-20-491Z_industry_AI边缘推理芯片_prompt.md",
+    "chars": 3367,
+    "logged_chars": 3421,
+    "full_current_plan": true,
+    "bytes": 9717,
+    "placeholder": false
+  },
+  {
+    "subject": "冷却液、水处理、过滤与制冷剂",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-38-29-805Z_industry_冷却液、水处理、过滤与制冷剂_prompt.md",
+    "chars": 3491,
+    "logged_chars": 3545,
+    "full_current_plan": true,
+    "bytes": 10077,
+    "placeholder": false
+  },
+  {
+    "subject": "系统内存、SOCAMM与内存模组",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-01-43-906Z_industry_系统内存、SOCAMM与内存模组_prompt.md",
+    "chars": 3383,
+    "logged_chars": 3437,
+    "full_current_plan": true,
+    "bytes": 9749,
+    "placeholder": false
+  },
+  {
+    "subject": "AI服务器CPU与控制平面芯片",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-54-21-172Z_industry_AI服务器CPU与控制平面芯片_prompt.md",
+    "chars": 3381,
+    "logged_chars": 3435,
+    "full_current_plan": true,
+    "bytes": 9747,
+    "placeholder": false
+  },
+  {
+    "subject": "HDD、对象存储与冷温数据存储",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-03-53-967Z_industry_HDD、对象存储与冷温数据存储_prompt.md",
+    "chars": 3381,
+    "logged_chars": 3435,
+    "full_current_plan": true,
+    "bytes": 9755,
+    "placeholder": false
+  },
+  {
+    "subject": "AI服务器整机与机架集成",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-00-15-903Z_industry_AI服务器整机与机架集成_prompt.md",
+    "chars": 3375,
+    "logged_chars": 3429,
+    "full_current_plan": true,
+    "bytes": 9741,
+    "placeholder": false
+  },
+  {
+    "subject": "AI服务器整机与机架集成",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-03-56-180Z_industry_AI服务器整机与机架集成_prompt.md",
+    "chars": 3375,
+    "logged_chars": 3429,
+    "full_current_plan": true,
+    "bytes": 9741,
+    "placeholder": false
+  },
+  {
+    "subject": "HBM与高带宽内存",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-00-18-919Z_industry_HBM与高带宽内存_prompt.md",
+    "chars": 3369,
+    "logged_chars": 3423,
+    "full_current_plan": true,
+    "bytes": 9719,
+    "placeholder": false
+  },
+  {
+    "subject": "HBM与高带宽内存",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-03-23-960Z_industry_HBM与高带宽内存_prompt.md",
+    "chars": 3369,
+    "logged_chars": 3423,
+    "full_current_plan": true,
+    "bytes": 9719,
+    "placeholder": false
+  },
+  {
+    "subject": "企业级SSD与高速存储控制器",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-01-52-163Z_industry_企业级SSD与高速存储控制器_prompt.md",
+    "chars": 3507,
+    "logged_chars": 3561,
+    "full_current_plan": true,
+    "bytes": 10103,
+    "placeholder": false
+  },
+  {
+    "subject": "CXL内存扩展与内存池化",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-17-57-359Z_industry_CXL内存扩展与内存池化_prompt.md",
+    "chars": 3495,
+    "logged_chars": 3549,
+    "full_current_plan": true,
+    "bytes": 10059,
+    "placeholder": false
+  },
+  {
+    "subject": "AI-native存储与KV Cache基础设施",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-17-30-320Z_industry_AI-native存储与KV Cache基础设施_prompt.md",
+    "chars": 3538,
+    "logged_chars": 3592,
+    "full_current_plan": true,
+    "bytes": 10134,
+    "placeholder": false
+  },
+  {
+    "subject": "片上SRAM、MRAM与近存计算",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-22-18-305Z_industry_片上SRAM、MRAM与近存计算_prompt.md",
+    "chars": 3383,
+    "logged_chars": 3437,
+    "full_current_plan": true,
+    "bytes": 9741,
+    "placeholder": false
+  },
+  {
+    "subject": "AI芯片先进封装",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-22-35-367Z_industry_AI芯片先进封装_prompt.md",
+    "chars": 3482,
+    "logged_chars": 3536,
+    "full_current_plan": true,
+    "bytes": 10042,
+    "placeholder": false
+  },
+  {
+    "subject": "先进封装材料与热界面材料",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-31-10-932Z_industry_先进封装材料与热界面材料_prompt.md",
+    "chars": 3375,
+    "logged_chars": 3429,
+    "full_current_plan": true,
+    "bytes": 9749,
+    "placeholder": false
+  },
+  {
+    "subject": "服务器BMC、MCU与嵌入式控制",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-32-45-868Z_industry_服务器BMC、MCU与嵌入式控制_prompt.md",
+    "chars": 3383,
+    "logged_chars": 3437,
+    "full_current_plan": true,
+    "bytes": 9749,
+    "placeholder": false
+  },
+  {
+    "subject": "EDA工具、接口IP与Chiplet IP",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-34-52-719Z_industry_EDA工具、接口IP与Chiplet IP_prompt.md",
+    "chars": 3393,
+    "logged_chars": 3447,
+    "full_current_plan": true,
+    "bytes": 9743,
+    "placeholder": false
+  },
+  {
+    "subject": "精密时钟与同步芯片",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-33-16-787Z_industry_精密时钟与同步芯片_prompt.md",
+    "chars": 3369,
+    "logged_chars": 3423,
+    "full_current_plan": true,
+    "bytes": 9731,
+    "placeholder": false
+  },
+  {
+    "subject": "封装基板、中介层与RDL",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-27-56-833Z_industry_封装基板、中介层与RDL_prompt.md",
+    "chars": 3375,
+    "logged_chars": 3429,
+    "full_current_plan": true,
+    "bytes": 9737,
+    "placeholder": false
+  },
+  {
+    "subject": "AI集群调度与推理运行时",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-39-27-124Z_industry_AI集群调度与推理运行时_prompt.md",
+    "chars": 3502,
+    "logged_chars": 3556,
+    "full_current_plan": true,
+    "bytes": 10092,
+    "placeholder": false
+  },
+  {
+    "subject": "MLCC与高端陶瓷电容",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-44-22-793Z_industry_MLCC与高端陶瓷电容_prompt.md",
+    "chars": 3373,
+    "logged_chars": 3427,
+    "full_current_plan": true,
+    "bytes": 9727,
+    "placeholder": false
+  },
+  {
+    "subject": "云厂自研AI ASIC",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-43-26-500Z_industry_云厂自研AI ASIC_prompt.md",
+    "chars": 3373,
+    "logged_chars": 3427,
+    "full_current_plan": true,
+    "bytes": 9715,
+    "placeholder": false
+  },
+  {
+    "subject": "AI以太网交换系统与Fabric芯片",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-50-46-517Z_industry_AI以太网交换系统与Fabric芯片_prompt.md",
+    "chars": 3388,
+    "logged_chars": 3442,
+    "full_current_plan": true,
+    "bytes": 9756,
+    "placeholder": false
+  },
+  {
+    "subject": "AI云算力外包和NeoCloud与AI数据中心运营商",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-44-21-177Z_industry_AI云算力外包和NeoCloud与AI数据中心运营商_prompt.md",
+    "chars": 3403,
+    "logged_chars": 3457,
+    "full_current_plan": true,
+    "bytes": 9785,
+    "placeholder": false
+  },
+  {
+    "subject": "网卡、DPU与SmartNIC",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-56-55-128Z_industry_网卡、DPU与SmartNIC_prompt.md",
+    "chars": 3382,
+    "logged_chars": 3436,
+    "full_current_plan": true,
+    "bytes": 9726,
+    "placeholder": false
+  },
+  {
+    "subject": "开放Scale-up互联",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-54-23-171Z_industry_开放Scale-up互联_prompt.md",
+    "chars": 3376,
+    "logged_chars": 3430,
+    "full_current_plan": true,
+    "bytes": 9720,
+    "placeholder": false
+  },
+  {
+    "subject": "800G/1.6T可插拔光模块",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-00-14-608Z_industry_800G_1.6T可插拔光模块_prompt.md",
+    "chars": 3382,
+    "logged_chars": 3436,
+    "full_current_plan": true,
+    "bytes": 9734,
+    "placeholder": false
+  },
+  {
+    "subject": "PCIe/CXL高速I/O交换与Retimer",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-57-35-350Z_industry_PCIe_CXL高速I_O交换与Retimer_prompt.md",
+    "chars": 3398,
+    "logged_chars": 3452,
+    "full_current_plan": true,
+    "bytes": 9746,
+    "placeholder": false
+  },
+  {
+    "subject": "LPO/LRO线性光模块",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-01-54-775Z_industry_LPO_LRO线性光模块_prompt.md",
+    "chars": 3376,
+    "logged_chars": 3430,
+    "full_current_plan": true,
+    "bytes": 9724,
+    "placeholder": false
+  },
+  {
+    "subject": "激光器、EML与光器件",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-09-44-585Z_industry_激光器、EML与光器件_prompt.md",
+    "chars": 3374,
+    "logged_chars": 3428,
+    "full_current_plan": true,
+    "bytes": 9734,
+    "placeholder": false
+  },
+  {
+    "subject": "商用AI加速芯片",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T07-42-50-496Z_industry_商用AI加速芯片_prompt.md",
+    "chars": 3367,
+    "logged_chars": 3421,
+    "full_current_plan": true,
+    "bytes": 9717,
+    "placeholder": false
+  },
+  {
+    "subject": "商用AI加速芯片",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-12-45-083Z_industry_商用AI加速芯片_prompt.md",
+    "chars": 3367,
+    "logged_chars": 3421,
+    "full_current_plan": true,
+    "bytes": 9717,
+    "placeholder": false
+  },
+  {
+    "subject": "封装内光I/O与Optical Chiplet",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-14-08-514Z_industry_封装内光I_O与Optical Chiplet_prompt.md",
+    "chars": 3398,
+    "logged_chars": 3452,
+    "full_current_plan": true,
+    "bytes": 9746,
+    "placeholder": false
+  },
+  {
+    "subject": "Optical Interposer与新型光引擎",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-14-20-408Z_industry_Optical Interposer与新型光引擎_prompt.md",
+    "chars": 3400,
+    "logged_chars": 3454,
+    "full_current_plan": true,
+    "bytes": 9752,
+    "placeholder": false
+  },
+  {
+    "subject": "CPO/NPO与交换侧光引擎",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-10-32-786Z_industry_CPO_NPO与交换侧光引擎_prompt.md",
+    "chars": 3380,
+    "logged_chars": 3434,
+    "full_current_plan": true,
+    "bytes": 9736,
+    "placeholder": false
+  },
+  {
+    "subject": "AEC、DAC与高速铜缆",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-20-08-811Z_industry_AEC、DAC与高速铜缆_prompt.md",
+    "chars": 3376,
+    "logged_chars": 3430,
+    "full_current_plan": true,
+    "bytes": 9728,
+    "placeholder": false
+  },
+  {
+    "subject": "光DSP、TIA与CDR芯片",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-09-15-529Z_industry_光DSP、TIA与CDR芯片_prompt.md",
+    "chars": 3380,
+    "logged_chars": 3434,
+    "full_current_plan": true,
+    "bytes": 9728,
+    "placeholder": false
+  },
+  {
+    "subject": "OCI （光学计算互连）/ Open CPX / XPO",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-19-58-242Z_industry_OCI （光学计算互连）_ Open CPX _ XPO_prompt.md",
+    "chars": 3405,
+    "logged_chars": 3459,
+    "full_current_plan": true,
+    "bytes": 9765,
+    "placeholder": false
+  },
+  {
+    "subject": "AI Fabric网络操作系统与遥测软件",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-31-33-410Z_industry_AI Fabric网络操作系统与遥测软件_prompt.md",
+    "chars": 3392,
+    "logged_chars": 3446,
+    "full_current_plan": true,
+    "bytes": 9764,
+    "placeholder": false
+  },
+  {
+    "subject": "高速连接器、背板与结构化布线",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-29-54-061Z_industry_高速连接器、背板与结构化布线_prompt.md",
+    "chars": 3380,
+    "logged_chars": 3434,
+    "full_current_plan": true,
+    "bytes": 9764,
+    "placeholder": false
+  },
+  {
+    "subject": "OCS光路交换",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-19-17-486Z_industry_OCS光路交换_prompt.md",
+    "chars": 3366,
+    "logged_chars": 3420,
+    "full_current_plan": true,
+    "bytes": 9710,
+    "placeholder": false
+  },
+  {
+    "subject": "先进逻辑晶圆代工和封装",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-33-48-884Z_industry_先进逻辑晶圆代工和封装_prompt.md",
+    "chars": 3497,
+    "logged_chars": 3551,
+    "full_current_plan": true,
+    "bytes": 10097,
+    "placeholder": false
+  },
+  {
+    "subject": "宽带接入、PON、DOCSIS 4.0与Wi-Fi 7",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-33-36-179Z_industry_宽带接入、PON、DOCSIS 4.0与Wi-Fi 7_prompt.md",
+    "chars": 3406,
+    "logged_chars": 3460,
+    "full_current_plan": true,
+    "bytes": 9762,
+    "placeholder": false
+  },
+  {
+    "subject": "存储前道制造设备",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-43-11-178Z_industry_存储前道制造设备_prompt.md",
+    "chars": 3369,
+    "logged_chars": 3423,
+    "full_current_plan": true,
+    "bytes": 9733,
+    "placeholder": false
+  },
+  {
+    "subject": "AI芯片前道制造设备",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-39-31-023Z_industry_AI芯片前道制造设备_prompt.md",
+    "chars": 3373,
+    "logged_chars": 3427,
+    "full_current_plan": true,
+    "bytes": 9737,
+    "placeholder": false
+  },
+  {
+    "subject": "存储晶圆制造",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-36-35-321Z_industry_存储晶圆制造_prompt.md",
+    "chars": 3365,
+    "logged_chars": 3419,
+    "full_current_plan": true,
+    "bytes": 9721,
+    "placeholder": false
+  },
+  {
+    "subject": "先进封装设备与混合键合",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-48-08-002Z_industry_先进封装设备与混合键合_prompt.md",
+    "chars": 3375,
+    "logged_chars": 3429,
+    "full_current_plan": true,
+    "bytes": 9751,
+    "placeholder": false
+  },
+  {
+    "subject": "半导体检测量测设备",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-49-13-971Z_industry_半导体检测量测设备_prompt.md",
+    "chars": 3371,
+    "logged_chars": 3425,
+    "full_current_plan": true,
+    "bytes": 9739,
+    "placeholder": false
+  },
+  {
+    "subject": "探针卡、ATE与系统级测试",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-49-40-275Z_industry_探针卡、ATE与系统级测试_prompt.md",
+    "chars": 3379,
+    "logged_chars": 3433,
+    "full_current_plan": true,
+    "bytes": 9751,
+    "placeholder": false
+  },
+  {
+    "subject": "高速互连与光学验证测试",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-01-10-613Z_industry_高速互连与光学验证测试_prompt.md",
+    "chars": 3375,
+    "logged_chars": 3429,
+    "full_current_plan": true,
+    "bytes": 9751,
+    "placeholder": false
+  },
+  {
+    "subject": "特种晶圆代工",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-37-39-092Z_industry_特种晶圆代工_prompt.md",
+    "chars": 3365,
+    "logged_chars": 3419,
+    "full_current_plan": true,
+    "bytes": 9721,
+    "placeholder": false
+  },
+  {
+    "subject": "HBM与存储测试设备",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T09-56-45-741Z_industry_HBM与存储测试设备_prompt.md",
+    "chars": 3373,
+    "logged_chars": 3427,
+    "full_current_plan": true,
+    "bytes": 9733,
+    "placeholder": false
+  },
+  {
+    "subject": "InfiniBand与专有Scale-up互联",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T08-51-55-359Z_industry_InfiniBand与专有Scale-up互联_prompt.md",
+    "chars": 3398,
+    "logged_chars": 3452,
+    "full_current_plan": true,
+    "bytes": 9746,
+    "placeholder": false
+  },
+  {
+    "subject": "高端光罩与先进封装掩模",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-02-23-885Z_industry_高端光罩与先进封装掩模_prompt.md",
+    "chars": 3375,
+    "logged_chars": 3429,
+    "full_current_plan": true,
+    "bytes": 9751,
+    "placeholder": false
+  },
+  {
+    "subject": "晶圆厂洁净室与厂务系统",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-03-22-618Z_industry_晶圆厂洁净室与厂务系统_prompt.md",
+    "chars": 3375,
+    "logged_chars": 3429,
+    "full_current_plan": true,
+    "bytes": 9751,
+    "placeholder": false
+  },
+  {
+    "subject": "高纯氟聚合物流体系统",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-14-32-125Z_industry_高纯氟聚合物流体系统_prompt.md",
+    "chars": 3373,
+    "logged_chars": 3427,
+    "full_current_plan": true,
+    "bytes": 9745,
+    "placeholder": false
+  },
+  {
+    "subject": "半导体高纯水、气体与化学流体系统",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-13-00-357Z_industry_半导体高纯水、气体与化学流体系统_prompt.md",
+    "chars": 3385,
+    "logged_chars": 3439,
+    "full_current_plan": true,
+    "bytes": 9781,
+    "placeholder": false
+  },
+  {
+    "subject": "先进封装湿化学与表面处理材料",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-20-06-584Z_industry_先进封装湿化学与表面处理材料_prompt.md",
+    "chars": 3381,
+    "logged_chars": 3435,
+    "full_current_plan": true,
+    "bytes": 9769,
+    "placeholder": false
+  },
+  {
+    "subject": "硅片、光刻胶与前道材料",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-15-40-149Z_industry_硅片、光刻胶与前道材料_prompt.md",
+    "chars": 3375,
+    "logged_chars": 3429,
+    "full_current_plan": true,
+    "bytes": 9751,
+    "placeholder": false
+  },
+  {
+    "subject": "玻璃基板、TGV与玻璃检测",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-22-31-338Z_industry_玻璃基板、TGV与玻璃检测_prompt.md",
+    "chars": 3379,
+    "logged_chars": 3433,
+    "full_current_plan": true,
+    "bytes": 9751,
+    "placeholder": false
+  },
+  {
+    "subject": "商业火箭与商业航天",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-24-14-738Z_industry_商业火箭与商业航天_prompt.md",
+    "chars": 3368,
+    "logged_chars": 3422,
+    "full_current_plan": true,
+    "bytes": 9732,
+    "placeholder": false
+  },
+  {
+    "subject": "硅光材料、光子材料与电光聚合物",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-22-37-055Z_industry_硅光材料、光子材料与电光聚合物_prompt.md",
+    "chars": 3383,
+    "logged_chars": 3437,
+    "full_current_plan": true,
+    "bytes": 9775,
+    "placeholder": false
+  },
+  {
+    "subject": "半导体设备子系统与真空/RF/流体模块",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-22-40-003Z_industry_半导体设备子系统与真空_RF_流体模块_prompt.md",
+    "chars": 3391,
+    "logged_chars": 3445,
+    "full_current_plan": true,
+    "bytes": 9783,
+    "placeholder": false
+  },
+  {
+    "subject": "机器人硬件",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-23-32-606Z_industry_机器人硬件_prompt.md",
+    "chars": 3360,
+    "logged_chars": 3414,
+    "full_current_plan": true,
+    "bytes": 9708,
+    "placeholder": false
+  },
+  {
+    "subject": "AI创作与文档生产软件",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-35-55-806Z_industry_AI创作与文档生产软件_prompt.md",
+    "chars": 3502,
+    "logged_chars": 3556,
+    "full_current_plan": true,
+    "bytes": 10100,
+    "placeholder": false
+  },
+  {
+    "subject": "企业AI与Agent工作流软件",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-27-44-222Z_industry_企业AI与Agent工作流软件_prompt.md",
+    "chars": 3517,
+    "logged_chars": 3571,
+    "full_current_plan": true,
+    "bytes": 10127,
+    "placeholder": false
+  },
+  {
+    "subject": "网络安全、身份权限与AI治理",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-40-57-185Z_industry_网络安全、身份权限与AI治理_prompt.md",
+    "chars": 3509,
+    "logged_chars": 3563,
+    "full_current_plan": true,
+    "bytes": 10119,
+    "placeholder": false
+  },
+  {
+    "subject": "数据平台、数据库与AI数据软件",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-37-28-290Z_industry_数据平台、数据库与AI数据软件_prompt.md",
+    "chars": 3521,
+    "logged_chars": 3575,
+    "full_current_plan": true,
+    "bytes": 10137,
+    "placeholder": false
+  },
+  {
+    "subject": "广告推荐、搜索与数字分发",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T10-42-24-716Z_industry_广告推荐、搜索与数字分发_prompt.md",
+    "chars": 3507,
+    "logged_chars": 3561,
+    "full_current_plan": true,
+    "bytes": 10113,
+    "placeholder": false
+  },
+  {
+    "subject": "GNRC",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T11-06-45-093Z_company_GNRC_prompt.md",
+    "chars": 3350,
+    "logged_chars": 3414,
+    "full_current_plan": true,
+    "bytes": 9468,
+    "placeholder": false
+  },
+  {
+    "subject": "GOOGL",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T11-06-39-334Z_company_GOOGL_prompt.md",
+    "chars": 3351,
+    "logged_chars": 3415,
+    "full_current_plan": true,
+    "bytes": 9467,
+    "placeholder": false
+  },
+  {
+    "subject": "CRWV",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T11-06-43-102Z_company_CRWV_prompt.md",
+    "chars": 3346,
+    "logged_chars": 3410,
+    "full_current_plan": true,
+    "bytes": 9462,
+    "placeholder": false
+  },
+  {
+    "subject": "SMCI",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T11-06-44-039Z_company_SMCI_prompt.md",
+    "chars": 3359,
+    "logged_chars": 3423,
+    "full_current_plan": true,
+    "bytes": 9471,
+    "placeholder": false
+  },
+  {
+    "subject": "CRDO",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T11-06-46-951Z_company_CRDO_prompt.md",
+    "chars": 3357,
+    "logged_chars": 3421,
+    "full_current_plan": true,
+    "bytes": 9475,
+    "placeholder": false
+  },
+  {
+    "subject": "AVGO",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T11-06-45-961Z_company_AVGO_prompt.md",
+    "chars": 3356,
+    "logged_chars": 3420,
+    "full_current_plan": true,
+    "bytes": 9466,
+    "placeholder": false
+  },
+  {
+    "subject": "MU",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T11-06-42-316Z_company_MU_prompt.md",
+    "chars": 3353,
+    "logged_chars": 3417,
+    "full_current_plan": true,
+    "bytes": 9473,
+    "placeholder": false
+  },
+  {
+    "subject": "SNDK",
+    "path": "D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-06T11-06-41-569Z_company_SNDK_prompt.md",
+    "chars": 3342,
+    "logged_chars": 3406,
+    "full_current_plan": true,
+    "bytes": 9454,
+    "placeholder": false
+  }
+]

@@ -1,0 +1,177 @@
+# 公司收入传导与价值传导评估：Amphenol 安费诺（APH）
+
+报告日期：2026-06-12  
+正式输出目录：`分析报告/公司评估/`  
+研究对象：`APH`，Amphenol Corporation，安费诺  
+主口径：NTM，即 2026-06-12 至 2027-06-12 的未来 12 个月经营窗口。  
+边界说明：本报告只评估行业和产品需求如何传导为公司 NTM 收入、利润、现金流和经营质量，不输出投资评级、目标价、股价区间、估值倍数判断或全公司排序。未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归或模型比较内容。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 公司收入、调整后经营利润、净利润和自由现金流方向；FY2026、FY2027、1.6T/224G/448G、CPO/NPO、Open CPX 和 Rubin/MI400 相关机会只作为补充或远期期权，不能替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：APH 2026Q1 净销售额 `$7.620B`，同比 `+58%`、有机 `+33%`；订单 `$9.435B`，book-to-bill `1.24x`；2026Q2 管理层收入指引 `$8.1-8.2B`，调整后 EPS `$1.14-1.16`。FY2025 收入 `$23.1B`；截至 2026Q1 的 TTM 收入约 `$25.9B`，Q1 年化收入约 `$30.5B`，Q2 指引中点年化约 `$32.6B`。
+- 重要产品/业务线：高速铜缆 DAC/AEC/ACC/OSFP cable；高速 I/O、cage、背板、板对板、CPC/flyover；CommScope CCS 带来的结构化光纤/铜缆和数据中心布线；rack power、高电流、800V/48V 与液冷相邻连接；非 AI 通信/移动/宽带/商业连接；Harsh Environment 高可靠航空、国防、航天、工业互联；Interconnect and Sensor Systems 汽车、工业、传感器。
+- NTM 公司收入四情景：悲观 `$30.8-32.5B`，基准 `$34.0-36.2B`，乐观 `$38.5-41.0B`，极度乐观 `$43.0-48.0B`。基准不是简单把 AI 行业增速套到 APH，而是 Q2 指引、Q1 订单、IT datacom run-rate、CCS 并表和非 AI 业务正常兑现后的经营路径。
+- 利润或 EBITDA 四情景：公司不披露标准 EBITDA 主口径，本报告以调整后经营利润和调整后净利润作为经营利润传导 proxy。悲观调整后经营利润约 `$7.7-8.6B`、调整后净利润约 `$5.0-5.6B`；基准约 `$9.2-10.1B`、`$6.0-6.7B`；乐观约 `$10.8-12.1B`、`$7.1-8.1B`；极度乐观约 `$12.5-14.8B`、`$8.3-10.0B`。
+- 最大传导瓶颈：不是行业需求是否存在，而是高端 AI datacom 订单能否在 NTM 内完成客户认证、良率、测试、交付和收入确认；公司没有披露产品级 backlog 或客户项目金额，因此高速铜缆、高速 I/O 和 rack power 的产品拆分只能作为模型估算。
+- 最大利润率变量：Communications Solutions 的 mix 和 CCS 整合速度。2026Q1 Communications segment operating margin 为 `30.6%`，但 CommScope/并购相关存货 step-up、backlog amortization、整合成本和更高债务利息会压制 GAAP 利润留存。
+- 最大现金流变量：AI datacom 高增长带来的应收和库存占用。2026Q1 operating cash flow `$1.122B`、free cash flow `$0.831B`，同比增长但低于净利润的主要约束是营运资本随收入增长放大。
+- 可信度：公司层面为中高，产品级为中。公司收入、订单、Q2 指引、segment margin 和 CCS 2026 贡献有 A/B 级证据；产品级收入拆分缺少公司披露，必须以估算和证据折扣处理。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 高速铜缆 DAC/AEC/ACC/OSFP cable | 2026Q1 估算 `$0.8-1.2B`；年化 `$3.2-4.8B` | 约 `11-16%` | AI rack 内和 rack 间短距互联主线；800G 已量产、1.6T/224G 进入导入 | A/B 用于 IT datacom 总额，C 用于产品拆分 | 进入基准，但产品级金额按折扣估算，不当作披露事实 | 448G、3.2T、PCIe 8-class 铜互联主要放入乐观/附录 |
+| 高速 I/O、cage、背板、板对板、CPC/flyover | 2026Q1 估算 `$0.6-0.9B`；年化 `$2.4-3.6B` | 约 `8-12%` | 224G/1.6T 信号完整性、热、插拔和平台 design-in 的高壁垒层 | A/B 用于 IT datacom 与 Communications，C 用于产品拆分 | 进入基准；CPC/flyover 更偏乐观，448G 仅作远期期权 | CPO/CPX/socket、448G/near-package copper |
+| 结构化光纤/铜缆与数据中心布线（CommScope CCS） | CCS 2026 公司预期销售约 `$4.1B`；2026Q1 估算并表收入约 `$0.9B` | 约 `12%` Q1 run-rate；NTM 占比上升 | 从设备端互联延伸到 rack-pod-campus 布线和 fiber management | A/B | 进入基准；AI campus 增量进入乐观；非 AI 宽带/建筑连接按较低增长处理 | 极端 AI campus、OCS/fiber management 放量 |
+| Rack power、高电流、800V/48V 与液冷相邻连接 | 2026Q1 估算 `$0.15-0.30B`；年化 `$0.6-1.2B` | 约 `2-4%` | AI rack 功耗密度提升推动高电流、blind-mate、busbar 和 power connector | C | 小比例进入基准；大幅放量只进乐观/极度乐观 | 800VDC 架构快速标准化、液冷机柜全面定制化 |
+| 非 AI 通信、移动设备、移动网络、宽带、商业/工业连接 | 2026Q1 估算 `$1.2-1.7B` | 约 `16-22%` | 公司现金流底盘，也可能抵消或拖累增长 | A/B | 进入基准，以低到中个位数/正常周期处理 | 无明显远期期权，只跟踪周期和价格 |
+| Harsh Environment：航空、国防、航天、工业高可靠互联 | 2026Q1 segment sales `$1.693B`，margin `28.0%` | `22.2%` | 高可靠、高认证、较高 margin；非 AI 主线但经营质量高 | A | 进入基准；国防和商用航空强于工业周期 | 航空/国防项目加速只进乐观 |
+| Interconnect and Sensor Systems：汽车、工业、传感器等 | 2026Q1 segment sales `$1.392B`，margin `20.2%` | `18.3%` | 多元化底盘，利润率低于 Communications/Harsh | A | 进入基准；不因 AI 主题自动上调 | 传感器新平台和工业自动化只作为小额跟踪 |
+
+口径说明：`A` 为收入表、segment、指引或公司正式披露；`B` 为订单、收购贡献、客户/交付时间表较明确；`C` 为管理层或产品线可验证披露但缺少产品级财务拆分；`D/E` 不进入 NTM 基准。
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估产品或业务线的外部需求池，不评估 APH 份额、收入确认、毛利率或公司汇总。需求单位优先用订单池、端口/链路、客户 CapEx、AI rack、客户预算和正常替换周期。相对预期以 2026Q1/Q2 管理层指引、AI datacom 订单、行业 2026-2027 基准路径和本地行业报告为锚。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 高速铜缆 DAC/AEC/ACC/OSFP cable | 本地 AEC/DAC 行业资料估算 2026 AI 相关高速铜互联池基准约 `$7.5-11.5B`；800G 已量产，1.6T/224G 进入导入 | `$6-8B`，1.6T/224G 验收慢，客户更多转向 optical 或推迟 rack 验收 | `$8-12B`，800G DAC/AEC 继续放量，1.6T 小批量进入 NTM | `$12-17B`，GB300/custom ASIC/TPU/Trainium 多路线共同拉动短距铜 | `$17-24B`，1.6T AEC/ACC 供不应求，224G copper 成为新增 rack 关键瓶颈 | 悲观较锚点低 `$1-3B`；乐观高 `$3-6B`；极度高 `$8B+` | 基准=当前预期兑现；乐观/极度需要订单继续高于出货 | 反证：5-7m 以上链路转光、AEC active silicon 价值被硅片厂捕获、客户 certification 拉长 |
+| 高速 I/O、cage、背板、板对板、CPC/flyover | 本地高速连接器资料将严格组件池 2027 基准约 `$15-28B`、乐观 `$25-45B`；224G 进入部署，448G 仍验证 | `$12-18B`，112G/800G 维持但 224G 平台推迟 | `$15-28B`，224G 在高端 AI switch/server 正常导入 | `$25-45B`，224G design win 快速转订单，CPC/flyover 采纳提高 | `$40-65B`，448G/3.2T 提前进入小批量且高端连接器短缺 | 悲观低 `$3-10B`；乐观高 `$10-17B`；极度高 `$25B+` | 基准=1.6T/224G 正常 ramp；极度为 NTM 上限 | 反证：客户多供压价、传统 PCB/retimer 改善延后 cabled backplane，448G 更可能是 2027+ |
+| 结构化光纤/铜缆与数据中心布线 | 本地资料显示 AI campus 和结构化光纤是 800G/1.6T 扩张的配套订单池；官方 CCS 2026 销售预期 `$4.1B` 是 APH 收入锚 | AI campus 交付受电力/土建/融资推迟，需求低于当前数据中心布线预期 | CCS 所处 IT datacom、通信网络、建筑连接需求正常兑现；800G/1.6T 带动高密布线 | hyperscaler campus、AI colo 和运营商数据中心共振，预端接光纤和 fiber management 订单高于预期 | 多 GW AI campus 加速，OCS/scale-across 使 fiber trunk、MPO/VSFF、管理系统非线性增加 | 外部 demand pool 无法可靠精确量化；APH 可服务收入以 CCS `$4.1B+` 为基准锚 | 基准=当前 CCS 2026 贡献和正常数据中心布线；乐观=AI campus 超预期 | 反证：结构化布线标准化程度高，低毛利项目收入不能自动等同高利润 |
+| Rack power、高电流、800V/48V 与液冷相邻连接 | 本地高速连接器资料估算 AI rack power/高电流连接一年基准 `$15-35B`，但 APH 产品级收入未披露 | `$10-18B`，rack power 标准分裂，客户/ODM 自研 busbar 或项目推迟 | `$15-35B`，48V、高电流、blind-mate 和液冷相邻连接正常提高内容量 | `$25-55B`，GB300/MI400/ASIC rack 的高密电源连接 SKU 增多 | `$40-90B`，800VDC/高密 rack 快速标准化，电连接成为短缺约束 | 悲观低 `$5-17B`；乐观高 `$10-20B`；极度高 `$25B+` | 基准只小比例进入 APH 收入，极度乐观不能直接转公司利润 | 反证：电源架构变化、客户自研、ODM 垂直整合、认证周期 |
+| 非 AI 通信、移动、宽带、商业连接 | Q1 非 IT datacom 通信相关收入仍大，但需求来自手机、移动网络、宽带和企业商业设备正常周期 | 移动/宽带库存或客户预算下修，绝对收入低于 run-rate | 正常替换和项目周期，低到中个位数增长 | 移动网络、宽带和企业网络回暖，抵消部分 AI 之外的周期压力 | 无法用 NTM 证据支持非线性需求 | 无法可靠量化 | 基准=当前预期正常；不是 AI 主题上修对象 | 反证：宽带/移动设备价格竞争、运营商 capex 波动 |
+| Harsh Environment 高可靠航空/国防/工业 | 2026Q1 Harsh organic `+23%`，国防、工业、商用航空和汽车均有增长 | 工业/航空交付放缓，国防项目排产延后 | 国防和航空需求正常兑现，工业保持温和增长 | 国防/商用航空订单增强，CIT/Trexon/Narda-MITEQ 协同好于预期 | 多项目交付同步加速，但非 AI 主线 | 无法可靠量化 | 基准偏强，但不应把 AI 网络需求映射到 Harsh | 反证：预算周期、供应链资质、航空交付节奏 |
+| Interconnect and Sensor Systems 汽车/工业/传感器 | 2026Q1 ISS organic `+17%`，汽车、工业、IT datacom 有增长 | 汽车和工业客户减产，价格压力侵蚀需求 | 汽车/工业/传感器正常增长，部分 IT datacom 传导 | 工业和传感器需求改善，汽车高端电子内容量提升 | 只有小概率由新平台带动结构改善 | 无法可靠量化 | 基准=当前 run-rate 小幅上行 | 反证：汽车周期、价格重谈、低利润率 mix |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些外部需求能进入 APH NTM 收入表，以及当前可收入化基数。公司能参与需求池，不等于能确认收入。产品级金额为模型估算时，必须低于公司披露收入和订单的证据权重；未披露客户、未量化 pipeline 和只有主题相关性的机会不得进入基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 高速铜缆 DAC/AEC/ACC/OSFP cable | 2026Q1 IT datacom 占比约 `41%`、IT datacom run-rate 约 `$12.5B`；产品级 Q1 估算 `$0.8-1.2B` | 直接 | 高速 cable assembly，毛利受认证、良率、测试和 active silicon attach 影响 | `$4.0-4.8B` | `$4.8-6.0B` | `$6.2-7.2B` | `$8.0-10.5B` | 基准符合 Q2 指引和订单；乐观高于当前预期 | A/B for IT datacom，C for product split | 是，折扣纳入 | Q1 订单 `$9.435B`、B2B `1.24x`；OSFP 200G/400G/800G/1.6T 产品可验证 | NTM 基准主线，但 product split 不作披露事实 |
+| 高速 I/O、cage、背板、板对板、CPC/flyover | Communications segment Q1 `$4.535B`，margin `30.6%`；产品级 Q1 估算 `$0.6-0.9B` | 直接 | 高毛利、高认证、高切换成本；NRE/tooling 和 mix 重要 | `$3.0-3.6B` | `$3.6-4.6B` | `$4.8-5.8B` | `$6.5-8.5B` | 基准略高于 Q1 run-rate但低于产品叙事上限 | A/B for segment，C for split | 是，折扣纳入 | 224G/OSFP/Paladin/OverPass 等产品线可验证，IT datacom 增长强 | 进入基准；CPC/448G 主要放入乐观/附录 |
+| 结构化光纤/铜缆与数据中心布线（CCS） | 官方称 CCS 2026 销售约 `$4.1B`，并入 Communications；Q1 并表收入估算约 `$0.9B` | 直接 | 规模大，EBITDA margin 原交易口径约 `26%`；结构化布线低于高端连接器定价权 | `$3.8-4.4B` | `$4.2-5.2B` | `$5.2-6.2B` | `$7.0-9.0B` | 基准符合官方 CCS 贡献；乐观需要 AI campus 明显加速 | A/B | 是 | 官方收购完成与 2026 sales 贡献披露；AI/fiber optic interconnect 战略匹配 | 进入基准；非 AI 建筑/宽带部分按低增处理 |
+| Rack power、高电流、800V/48V 与液冷相邻连接 | MGX/AI factory 产品页和 APH power interconnect 路线可验证；Q1 产品级估算 `$0.15-0.30B` | 直接 | 中高利润，但客户自研和 ODM 议价可能压低留存 | `$0.8-1.1B` | `$1.0-1.5B` | `$1.5-2.1B` | `$2.5-3.5B` | 基准只承认小比例收入化；乐观/极度需客户平台证据 | C | 是，小比例 | 800V/高密 rack 和 power connector 需求可验证，但收入拆分未披露 | 保守进入基准；极度仅作上限 |
+| 非 AI 通信、移动、宽带、商业连接 | Communications 非 IT datacom 估算 Q1 `$1.2-1.7B` | 直接 | 中等利润，价格和周期敏感 | `$5.2-5.8B` | `$5.6-6.5B` | `$6.2-6.9B` | `$7.0-8.0B` | 基准符合 run-rate；不因 AI 叙事上修 | A/B | 是 | Communications segment 披露，非 IT datacom 以残差估算 | 进入基准，作为底盘/抵消项 |
+| Harsh Environment 高可靠航空/国防/工业 | 2026Q1 segment sales `$1.693B`，segment margin `28.0%` | 直接 | 高认证、高可靠、高 margin，增长较稳 | `$6.8-7.3B` | `$7.1-8.0B` | `$7.6-8.4B` | `$8.8-9.5B` | 基准略高于 Q1 run-rate，符合有机增长路径 | A | 是 | Segment 收入、organic growth 和 margin 披露 | 基准重要利润底盘 |
+| Interconnect and Sensor Systems | 2026Q1 segment sales `$1.392B`，segment margin `20.2%` | 直接 | 利润率低于 Comms/Harsh，受汽车和工业周期影响 | `$5.6-6.0B` | `$5.8-6.5B` | `$6.2-6.9B` | `$7.3-8.0B` | 基准符合 run-rate 小幅增长 | A | 是 | Segment 收入、organic growth 和 margin 披露 | 进入基准，但不是 AI 弹性主线 |
+| 448G、CPO/NPO、Open CPX、封装内/近封装光 I/O | 产品、标准和行业设计导入可验证，但 APH NTM 收入未披露 | 间接/早期直接 | 设计赢单价值高，但 NTM 确认不确定 | `0` | `0` | 无法可靠量化 | 无法可靠量化 | 高于当前预期但缺少 NTM 收入确认路径 | D/E | 否 | 只有产品/生态相关性，缺少客户、订单、时间表和收入确认 | 移入附录/仅作跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步可收入化基数出发，评估每个重要产品在 NTM 内能给 APH 贡献多少收入和经营利润。收入贡献不是行业 TAM、客户 CapEx 或项目总金额；利润贡献以调整后经营利润或产品经营利润 proxy 表示。公司没有产品级利润披露，因此产品利润率方向为模型估算，可信度低于公司层面。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 高速铜缆 DAC/AEC/ACC/OSFP cable | 悲观 | `$4.0-4.8B` | `$0.8-1.2B` | 下行或持平 | 低于当前预期 | 只保留 800G/DAC/AEC 可见路径 | 保留 | 1.6T 验收延迟、active silicon 价值外流、客户转光 |
+| 高速铜缆 DAC/AEC/ACC/OSFP cable | 基准 | `$4.8-6.0B` | `$1.2-1.8B` | 稳中有升 | 符合 Q2 指引和订单节奏 | IT datacom 强、OSFP 1.6T/224G 产品可验证 | 保留 | 产品级 backlog 未披露，需估算 |
+| 高速铜缆 DAC/AEC/ACC/OSFP cable | 乐观 | `$6.2-7.2B` | `$1.8-2.4B` | 上行 | 高于当前预期 | 订单 B2B 维持高位，GB300/custom ASIC 拉动 | 保留 | 多供压价、客户认证周期 |
+| 高速铜缆 DAC/AEC/ACC/OSFP cable | 极度乐观 | `$8.0-10.5B` | `$2.4-3.5B` | 明显上行但低于硅片利润率 | NTM 上限 | 1.6T/224G 同时短缺，allocation 与 mix up | 下移 | 缺少客户/订单/交期披露，不能作为基准 |
+| 高速 I/O、cage、背板、板对板、CPC/flyover | 悲观 | `$3.0-3.6B` | `$0.8-1.1B` | 持平或下行 | 低于当前预期 | 只承认 112G/800G 与成熟 OSFP/cage | 保留 | 224G 平台推迟，客户多供 |
+| 高速 I/O、cage、背板、板对板、CPC/flyover | 基准 | `$3.6-4.6B` | `$1.1-1.6B` | 上行 | 符合当前预期 | 224G、OSFP、Paladin HD2、OverPass 等产品线可验证 | 保留 | 产品 mix 和 NRE 不能可靠量化 |
+| 高速 I/O、cage、背板、板对板、CPC/flyover | 乐观 | `$4.8-5.8B` | `$1.6-2.2B` | 明显上行 | 高于当前预期 | 224G design-in 转收入，CPC/flyover 内容量提高 | 保留 | CPC/flyover 可能仍偏 2027+ |
+| 高速 I/O、cage、背板、板对板、CPC/flyover | 极度乐观 | `$6.5-8.5B` | `$2.4-3.5B` | 非线性上行 | NTM 上限 | 448G/3.2T pathfinding 提前收入化 | 下移 | 448G 缺少 NTM 量产证据 |
+| 结构化光纤/铜缆与数据中心布线（CCS） | 悲观 | `$3.8-4.4B` | `$0.5-0.8B` | 下行 | 低于当前预期 | 只保留官方 CCS 收入底线和已并表业务 | 保留 | 整合成本、低毛利项目、AI campus 推迟 |
+| 结构化光纤/铜缆与数据中心布线（CCS） | 基准 | `$4.2-5.2B` | `$0.8-1.3B` | 持平到小幅上行 | 符合当前预期 | 官方 2026 CCS sales `$4.1B`；IT datacom/fiber optic interconnect 战略 | 保留 | margin 低于高端 connector |
+| 结构化光纤/铜缆与数据中心布线（CCS） | 乐观 | `$5.2-6.2B` | `$1.1-1.7B` | 上行 | 高于当前预期 | AI campus、fiber management、交叉销售 | 保留 | 标准化布线议价强 |
+| 结构化光纤/铜缆与数据中心布线（CCS） | 极度乐观 | `$7.0-9.0B` | `$1.5-2.6B` | 收入强于利润 | NTM 上限 | 多 GW campus 和 OCS/scale-across 光纤需求 | 下移 | 项目收入不能自动转高 margin |
+| Rack power、高电流、800V/48V 与液冷相邻连接 | 悲观 | `$0.8-1.1B` | `$0.15-0.30B` | 持平 | 略低于当前预期 | 高电流连接只保留可见 SKU | 保留 | 客户自研、架构分裂 |
+| Rack power、高电流、800V/48V 与液冷相邻连接 | 基准 | `$1.0-1.5B` | `$0.25-0.50B` | 小幅上行 | 符合当前预期 | AI rack power density 上升，APH power interconnect 可验证 | 保留 | 产品级收入未披露 |
+| Rack power、高电流、800V/48V 与液冷相邻连接 | 乐观 | `$1.5-2.1B` | `$0.45-0.80B` | 上行 | 高于当前预期 | 800V/48V、高密 rack、液冷相邻连接采用 | 保留 | 需客户平台订单证据 |
+| Rack power、高电流、800V/48V 与液冷相邻连接 | 极度乐观 | `$2.5-3.5B` | `$0.80-1.30B` | 明显上行 | NTM 上限 | 高密 rack 标准快速统一，power connector tight | 下移 | 缺少收入确认路径 |
+| 非 AI 通信、移动、宽带、商业连接 | 悲观 | `$5.2-5.8B` | `$1.1-1.4B` | 下行 | 低于当前预期 | 周期业务低增，宽带/移动设备拖累 | 保留 | 价格重谈和库存周期 |
+| 非 AI 通信、移动、宽带、商业连接 | 基准 | `$5.6-6.5B` | `$1.3-1.7B` | 稳定 | 符合当前预期 | Communications residual 正常 run-rate | 保留 | 不是 AI 弹性来源 |
+| 非 AI 通信、移动、宽带、商业连接 | 乐观 | `$6.2-6.9B` | `$1.5-1.9B` | 小幅上行 | 略高于当前预期 | 移动网络/宽带/企业连接回暖 | 保留 | 上修幅度受价格竞争限制 |
+| 非 AI 通信、移动、宽带、商业连接 | 极度乐观 | `$7.0-8.0B` | `$1.8-2.4B` | 上行有限 | NTM 上限 | 多终端周期同步改善 | 下移 | 无非线性证据 |
+| Harsh Environment 高可靠航空/国防/工业 | 悲观 | `$6.8-7.3B` | `$1.8-2.1B` | 持平 | 略低于当前预期 | 国防/航空仍稳，但工业放慢 | 保留 | 项目交付和预算周期 |
+| Harsh Environment 高可靠航空/国防/工业 | 基准 | `$7.1-8.0B` | `$2.0-2.4B` | 稳中有升 | 符合当前预期 | Q1 sales `$1.693B`、margin `28.0%`、organic `+23%` | 保留 | 并购 mix 可能稀释 |
+| Harsh Environment 高可靠航空/国防/工业 | 乐观 | `$7.6-8.4B` | `$2.2-2.6B` | 上行 | 高于当前预期 | 国防和商业航空订单改善，CIT/Trexon 协同 | 保留 | 增速不应按 AI datacom 上修 |
+| Harsh Environment 高可靠航空/国防/工业 | 极度乐观 | `$8.8-9.5B` | `$2.6-3.1B` | 上行 | NTM 上限 | 多项目交付同步加速 | 下移 | 非 AI 业务缺少非线性需求 |
+| Interconnect and Sensor Systems | 悲观 | `$5.6-6.0B` | `$1.0-1.2B` | 下行 | 略低于当前预期 | 汽车/工业周期压力 | 保留 | 价格重谈、低 margin mix |
+| Interconnect and Sensor Systems | 基准 | `$5.8-6.5B` | `$1.2-1.5B` | 稳定 | 符合当前预期 | Q1 sales `$1.392B`、margin `20.2%`、organic `+17%` | 保留 | 利润率低于公司平均 |
+| Interconnect and Sensor Systems | 乐观 | `$6.2-6.9B` | `$1.3-1.7B` | 小幅上行 | 略高于当前预期 | 工业/传感器改善，部分 IT datacom 传导 | 保留 | 汽车周期限制 |
+| Interconnect and Sensor Systems | 极度乐观 | `$7.3-8.0B` | `$1.6-2.0B` | 上行有限 | NTM 上限 | 汽车电子和工业传感器同步改善 | 下移 | 缺少结构性放量证据 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为 APH NTM 总收入、毛利率、调整后经营利润率、净利润和自由现金流方向。公司表使用调整后经营利润率作为主口径，因为 2026Q1 GAAP 利润受到 CommScope/Trexon acquisition-related backlog amortization、inventory step-up 和交易费用影响；但 GAAP 同向风险在第 7 节处理。不得把股价、估值或市场倍数作为经营证据。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$30.8-32.5B` | 较 TTM `$25.9B` 增长约 `+19-25%` | 低于 Q2 指引外推和订单隐含路径；仍可能绝对增长 | `35.0-36.0%` | 调整后 `25.0-26.5%`；GAAP 约低 `2-3pct` | EBITDA 无法可靠量化；调整后经营利润 `$7.7-8.6B`；调整后净利润 `$5.0-5.6B` | FCF `$4.2-5.0B`，营运资本占用偏高 | 中 | AI datacom 订单转交付慢、CCS 整合稀释、非 AI 周期抵消 |
+| 基准公司 | `$34.0-36.2B` | 较 TTM 增长约 `+31-40%` | 符合当前预期：Q2 指引正常兑现，B2B 从高位回落但仍健康 | `36.0-37.0%` | 调整后 `27.0-28.0%`；GAAP 随 step-up 摊销下降逐步接近 | EBITDA 无法可靠量化；调整后经营利润 `$9.2-10.1B`；调整后净利润 `$6.0-6.7B` | FCF `$5.1-6.1B`，现金转换恢复但低于成熟期 | 中高 | 产品级收入拆分不可见，增长需持续通过订单和 Q2/Q3 交付验证 |
+| 乐观公司 | `$38.5-41.0B` | 较 TTM 增长约 `+49-58%` | 高于当前预期，来自 IT datacom、CCS、Harsh 同步强于 run-rate | `36.8-38.0%` | 调整后 `28.0-29.5%` | EBITDA 无法可靠量化；调整后经营利润 `$10.8-12.1B`；调整后净利润 `$7.1-8.1B` | FCF `$6.3-7.5B`，规模效应抵消营运资本 | 中 | 需要 Q2-Q4 book-to-bill 保持强、1.6T/224G 认证转收入、CCS margin 不拖累 |
+| 极度乐观公司 | `$43.0-48.0B` | 较 TTM 增长约 `+66-85%` | 显著高于当前预期；只能作为 NTM 上限，不是当前基准 | `37.5-39.0%` | 调整后 `29.0-31.0%` | EBITDA 无法可靠量化；调整后经营利润 `$12.5-14.8B`；调整后净利润 `$8.3-10.0B` | FCF `$7.5-9.3B`，但需要库存/应收周转不恶化 | 低到中 | 需要需求、公司捕获、利润质量和执行同时突破；缺少产品级客户订单披露 |
+
+汇总检查：
+
+- 未把 AI 数据中心总 CapEx、行业 TAM、客户预算或 AI 网络订单池直接计入 APH 收入。
+- 结构化光纤/铜缆、光模块、CPO/NPO、AI Ethernet switch 和 rack power 之间存在客户预算和项目交付重叠，合成公司收入时已用公司披露的 Q1收入、Q2指引、orders 和 segment 作为上限约束。
+- 低毛利结构化布线、标准 cable、宽带和移动设备收入上修不自动转化为高利润；高利润率主要来自高速 I/O、CPC/flyover、定制线缆、高可靠 Harsh 和规模效应。
+- CommScope CCS 带来规模和 fiber capability，但也带来整合成本、存货 step-up、backlog amortization、债务利息和 margin 稀释。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测，只校准前四步情景。正向证据必须指向需求、收入基数、产品贡献、公司利润或执行可信度；反证只处理实际影响的层级，不重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 实际收入 `$7.620B`、有机 `+33%`，Q2 指引 `$8.1-8.2B` | 公司收入基准 | 把基准公司收入上移到 `$34B+` NTM 区间 | 规模效应支持调整后 OPM `27%+` | 需要 Q2 交付验证 | 保留基准 |
+| Q1 orders `$9.435B`、book-to-bill `1.24x` | 收入确认/执行 | 支持 AI datacom 和整体收入继续高于出货 | 若高端 mix 延续，利润率上行 | 若订单交付慢，会转为 backlog/营运资本压力 | 保留乐观 |
+| IT datacom 占收入约 `41%`，有机增长强，AI 相关产品贡献环比增量 | 产品需求/产品贡献 | 支持高速铜缆、高速 I/O 和 CCS 进入主线 | 高端产品 mix 支持 Communications margin | 客户认证和交付节奏仍需验证 | 保留基准与乐观 |
+| CCS 2026 sales 预期约 `$4.1B`，并入 Communications | 收入基数/公司组合 | 给结构化布线明确 A/B 级收入锚 | EBITDA margin 原交易口径较好，但整合初期低于公司平均 | 并购现金支出和债务利息提高现金约束 | 保留基准 |
+| Communications Q1 margin `30.6%`，Harsh `28.0%`，ISS `20.2%` | 利润率 | 高速 AI datacom 与 Harsh 支持利润质量 | ISS 和低毛利布线拉低公司 mix | Segment margin 是最直接跟踪项 | 保留基准 |
+| Q1 FCF `$0.831B`，operating cash flow `$1.122B`，capex `$0.292B` | 现金流 | 高收入能变成现金，但营运资本占用明显 | Capex 和库存增加拖累短期 FCF conversion | 应收、库存、payables 周转是核心监控 | 保留悲观现金流反证 |
+| 产品级 backlog、客户、交期和取消率未披露 | 证据可信度 | 限制产品级乐观和极度乐观 | 限制高利润率假设 | 无法确认订单何时进入 NTM 收入 | 下移极度乐观 |
+| AI rack 交付受 GPU/HBM/电力/液冷/MEP 约束 | 收入确认风险 | 需求可存在但收入确认推迟 | 低利用率、急单成本和验收延迟压 margin | 订单转收入节奏可能拉长 | 保留悲观 |
+| 低速标准件、宽带、移动设备和汽车周期 | 公司组合风险 | 抵消 AI datacom 的部分增量 | 价格重谈和低 margin mix 压制公司利润 | 库存周期可能影响现金 | 保留悲观 |
+| 448G、CPO/NPO、Open CPX、optical I/O | 远期期权 | NTM 收入无法可靠量化 | 设计赢单价值高，但收入/利润时间表不清楚 | 需要客户 qual、PO 和量产 | 移入附录 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | AI datacom 需求或订单低于当前路径，收入仍增长但低于 Q2 指引外推和订单隐含节奏 | 多元化底盘和 Q1 高订单使全面断崖风险较低 | 产品级交付不透明、AI rack 受 GPU/HBM/电力/液冷制约、CCS 整合成本 | 保留 | 下行情景，触发条件是 Q2/Q3 orders 或 IT datacom 明显回落 | 中 | AI rack 交付风险只在收入确认层处理，不再重复压低需求池和公司组合 |
+| 基准 | Q2 指引正常兑现，B2B 从高位回落但仍支持 NTM 高于 TTM，CCS 并表和高端 IT datacom 是主要增量 | Q1 sales/orders、Q2 指引、segment margin、CCS `$4.1B` 均为 A/B 证据 | 产品级拆分、客户项目和交期缺少披露 | 保留 | 主情景 | 中高 | CCS 整合成本只在利润率/现金流处理，不重复削减收入基数 |
+| 乐观 | IT datacom、CCS、Harsh 同时高于当前预期，1.6T/224G 订单转收入，margin 有 mix up | Q1 B2B `1.24x`、IT datacom 高增长、产品线覆盖 copper/optical/power | 乐观收入必须证明谁买、买什么、何时确认；当前缺产品级 backlog | 保留 | 证据支撑的上行情景 | 中 | 行业 AI capex 不能重复当作公司份额和利润率证据 |
+| 极度乐观 | 需求、公司捕获、利润率和执行同时突破，NTM 收入进入 `$43B+` 上限 | AI 数据中心建设、1.6T/224G、CCS、rack power 均有长期正向证据 | 缺少 NTM 客户/订单/交付披露；CPO/448G 多为设计导入或远期期权 | 下移 | 保留为 NTM 上限；CPO/448G/optical I/O 移入附录/仅作跟踪 | 低到中 | 远期期权缺证据时只移入附录，不重复压低基准 |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。APH NTM 收入最可能在 `$34.0-36.2B`，较截至 2026Q1 的 TTM 收入约 `$25.9B` 明显增长；调整后经营利润率维持 `27.0-28.0%`，调整后净利润约 `$6.0-6.7B`。核心原因是 Q1 已确认收入、Q2 指引、Q1 orders/book-to-bill 和 CCS 2026 sales 贡献均已进入 A/B 级证据，而不是只靠 AI 叙事。
+- 利润/现金流结论：利润质量高于普通电子零部件公司，但短期 GAAP 和 FCF 会被并购相关费用、债务利息、税率和营运资本占用拖累。现金流不是问题，但 FCF conversion 是最需要跟踪的经营质量变量。
+- 主要传导瓶颈：产品级收入和利润缺少披露，尤其是高速铜缆、高速 I/O、CPC/flyover、rack power 的客户订单、交期、价格和良率无法直接验证。报告基准只把 A/B 级 IT datacom、segment、orders、Q2 guide 和 CCS sales 纳入，C/D 级产品叙事只小比例或不纳入。
+- 乐观情景成立条件：Q2 实际收入超过 `$8.2B` 上沿，Q2/Q3 book-to-bill 仍显著高于 `1.10x`；IT datacom 占比继续高于 `40%` 且环比增长主要来自 AI；Communications margin 保持约 `30%` 或更高；CCS 交叉销售和整合未明显稀释利润。
+- 极度乐观情景成立条件：GB300/custom ASIC/TPU/Trainium/MI350 等 AI rack 在 NTM 内同步拉动 800G/1.6T、224G、结构化光纤和 rack power；APH 在 copper、optical、power 三层都有客户订单和收入确认；CCS margin 改善而不是稀释；应收和库存周转不恶化。
+- 悲观情景触发条件：Q2/Q3 orders 或 IT datacom book-to-bill 明显回落；Q2 organic sequential growth 低于管理层 `5-6%` 隐含路径；CCS 整合导致 Communications margin 明显低于 `29%`；AI rack 受电力、液冷、GPU/HBM 或客户验收推迟，订单无法按 NTM 确认。
+- 后续跟踪数据：2026Q2 revenue/EPS 是否超过指引上沿；Q2/Q3 orders、book-to-bill 和 IT datacom 占比；Communications、Harsh、ISS segment margin；CCS 收入和整合成本；operating cash flow、FCF、AR days、inventory days；1.6T OSFP/AEC、224G、CPC/flyover、rack power 和 fiber management 的客户量产信号。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务数据截至 2026Q1，发布日 2026-04-29；报告生成日 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Amphenol 2026Q1 results，发布于 2026-04-29：`https://investors.amphenol.com/news-and-events/news-details/2026/Amphenol-Reports-Record-First-Quarter-2026-Results/default.aspx`
+  - Amphenol 2026Q1 Form 10-Q：`https://www.sec.gov/Archives/edgar/data/820313/000110465926054128/aph-20260331x10q.htm`
+  - Amphenol 2025Q4 and FY2025 results，发布于 2026-01-28：`https://investors.amphenol.com/news-and-events/news-details/2026/Amphenol-Reports-Record-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx`
+  - Amphenol completes CCS acquisition，发布于 2026-01-12：`https://investors.amphenol.com/news-and-events/news-details/2026/Amphenol-Completes-Acquisition-of-CCS-Business-From-CommScope/default.aspx`
+  - Amphenol to acquire CommScope CCS，发布于 2025-08-04：`https://investors.amphenol.com/news-and-events/news-details/2025/Amphenol-Corporation-to-Acquire-Connectivity-and-Cable-Solutions-Business-From-CommScope/default.aspx`
+- 主要产品来源：
+  - Amphenol and NVIDIA MGX AI factory interconnect page：`https://www.amphenol-cs.com/connect/connecting-the-ai-factory-amphenol-and-nvidia-mgx.html`
+  - Amphenol OSFP Cable Assemblies：`https://www.amphenol-cs.com/product-series/osfp-cable-assemblies.html`
+  - Amphenol 224G High-Speed Solutions：`https://www.amphenol-cs.com/224g-high-speed-solutions`
+- 本地公司与行业资料：
+  - `公司调研/AI网络_光互联_连接器/APH_Amphenol安费诺_公司调研_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_高速连接器、背板与结构化布线_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AEC、DAC与高速铜缆_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_AI以太网交换系统与Fabric芯片_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 可作为补充口径，但主表使用 NTM。FY2026 收入若按 Q1 实际、Q2 指引和 H2 正常 ramp，基准大致对应 `$31-34B` 区间；NTM 因包含 2027Q1，基准高于 FY2026。
+  - 448G、3.2T、CPO/NPO、Open CPX、OCI/optical I/O、Rubin/MI400 后续平台属于重要远期期权；除非出现客户订单、量产交付和收入确认时间表，否则不进入 NTM 基准。
+- 主要限制：
+  - APH 不披露产品级 AI 收入、产品级 backlog、客户名单、交期和取消率；高速铜缆、高速 I/O、rack power 的产品收入和利润均为模型估算。
+  - 市场价格、估值倍数和目标价没有作为本报告经营价值传导证据。

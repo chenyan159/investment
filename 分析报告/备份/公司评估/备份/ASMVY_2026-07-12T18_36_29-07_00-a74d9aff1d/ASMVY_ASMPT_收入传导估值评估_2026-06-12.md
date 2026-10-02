@@ -1,0 +1,177 @@
+# 公司收入传导与价值传导评估：ASMPT（ASMVY）
+
+> 报告日期：2026-06-12  
+> 公司代号：ASMVY / 0522.HK  
+> 公司名称：ASMPT Limited  
+> 正式输出目录：`分析报告/公司评估/`  
+> 主口径：NTM，指 2026Q2-2027Q1 附近未来 12 个月。FY2026、FY2027、2028 TAM、长期 run-rate 只作补充，不替代 NTM 主表。  
+> 本报告只评估经营收入、利润、现金流和经营价值传导，不输出投资评级、目标价、股价区间、估值倍数判断，也不把金融市场价格作为经营传导证据。  
+> 本地资料边界：使用 `公司调研/封测_检测_计量_光罩/ASMVY_ASMPT_公司调研_2026-06-11.md`，以及 `行业调研/` 下先进封装、AI 芯片先进封装、HBM、800G/1.6T 光模块等正式行业资料；未读取、引用或继承 `特征量化/`、Signals、排序、回归、模型比较或下游评分资料。  
+> 数字口径：收入和产品贡献默认用美元；公司披露的利润、毛利率、订单和分部利润按 ASMPT 财报港元/美元口径并列；产品级收入、产品毛利和 AI 子集收入为研究估算，非公司逐项披露。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 经营窗口，即 2026Q2-2027Q1。补充口径只使用 FY2025 已披露基数、2026Q1 实际、2026Q2 指引、2028 TCB TAM 管理层目标和行业路线图作为校准，不把远期 TAM 直接纳入 NTM 基准。
+- 当前收入基准、指引和 run-rate：FY2025 继续经营收入 US$1.762bn，订单 US$1.857bn，年末 backlog US$792.9m；2026Q1 继续经营收入 US$507.9m、订单 US$727.0m、book-to-bill 1.43；2026Q2 收入指引 US$540m-600m，中点 US$570m。若 Q2 中点兑现，2026H1 收入约 US$1.078bn，已达 FY2025 全年收入约 61%。
+- 重要产品/业务线：TCB（C2S/C2W/HBM/AOR）、Photonics/1.6T/CPO-NPO、高精度 flip-chip/die attach/chiplet、Hybrid bonding、SEMI mainstream/power/wire-die、SMT Solutions（AI server/optical/SiP 及 China EV/auto/industrial）。
+- NTM 公司收入四情景：悲观 US$2.05bn-2.20bn；基准 US$2.35bn-2.55bn；乐观 US$2.70bn-3.05bn；极度乐观 US$3.30bn-3.80bn。相对 FY2025 绝对增量分别约 +US$0.29bn 至 +US$0.44bn、+US$0.59bn 至 +US$0.79bn、+US$0.94bn 至 +US$1.29bn、+US$1.54bn 至 +US$2.04bn。
+- 利润或 EBITDA 四情景：公司没有稳定披露 EBITDA，本报告使用调整后经营利润和调整后净利润。基准情景下集团毛利率约 40%-42%，调整后经营利润率约 10%-12%，调整后净利润约 HK$1.55bn-2.05bn；乐观情景需要 SEMI 高毛利 mix、TCB/photonics 交付和 SMT 规模同时改善，调整后净利润可到 HK$2.6bn-3.7bn。
+- 最大传导瓶颈：不是行业需求，而是订单到收入确认的执行链条，包括高端 TCB 精密部件、AOR/plasma 模块、客户厂务安装、客户验收、应用工程师支持、光子贴装良率和 SMT 战略评估期间的交付稳定性。
+- 最大利润率变量：SEMI mix。2026Q1 SEMI 调整后毛利率 46.4%，SMT 31.3%；TCB、photonics、advanced die bonding 占比上升可以把集团毛利率推向 40%+，但若高收入来自低毛利 SMT 或普通 wire/die bonders，收入上修不等于利润上修。
+- 最大现金流变量：backlog 转收入、存货和应收周转。订单强会先推高存货、安装成本和应收；若客户验收推迟，利润表和现金流会错位。
+- 可信度：基准为中高。收入锚主要来自 A/B 级证据：FY2025 分部收入、2026Q1 实际订单/收入、Q2 指引、年末 backlog、已披露 TCB 订单和客户项目。乐观为中，取决于 H2 2026 新订单持续性和交付能力。极度乐观为低到中，只能作为 NTM 上限，不是当前预期。
+
+当前最可能情景是基准偏乐观：ASMPT 的 AI 先进封装需求已经进入收入表和订单表，不是纯题材映射；但 NTM 基准不能把 2028 TCB TAM、CPO/NPO、HBM4E/16H 或 hybrid bonding 全额前置。经营价值传导的主线是：AI/HBM/chiplet/1.6T 需求上行 -> foundry/OSAT/IDM/HBM/光模块/EMS 扩产 -> TCB、die attach、photonics、SMT 设备订单 -> backlog 和安装验收 -> SEMI 高毛利 mix 和经营杠杆 -> 调整后利润和现金流改善。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| TCB：C2S/C2W/HBM/AOR | FY2025 TCB 为 AP 主要驱动；研究估算 FY2025 US$220m-300m，NTM 当前可收入化基数 US$350m-500m | FY2025 约 12%-17%；NTM 可到 15%-22% | 第一增长引擎；直接连接 AI GPU/ASIC、HBM4、chiplet CPU/HPC | A/B，部分 C | 进入基准。已有收入、订单、POR/sole supplier、repeat order、HBM4 订单和 Q1 分部订单 | HBM4 16H、AOR fluxless 扩大、2028 TCB TAM US$1.6bn 只作补充 |
+| Photonics / 1.6T / CPO-NPO | FY2025 收入公司未单列；Q1 2026 photonics 收入约 5 倍 YoY，研究估算 NTM 基数 US$160m-260m | NTM 约 7%-11% | 小基数高弹性；受益 800G/1.6T 光模块和 CPO/NPO | B/C | 1.6T/800G 进入基准；CPO/NPO 只小比例或乐观 | CPO/NPO 多客户量产、3.2T optical engine 属远期期权 |
+| 高精度 flip-chip / die attach / chiplet | 公司不单列；研究估算 NTM 基数 US$220m-330m | NTM 约 9%-13% | CoWoS/2.5D/HBM/embedded bridge 配套，需求面宽 | B/C | 进入基准，按已有 SEMI 收入和强订单折扣估算 | 面板级、玻璃基板、CoPoS 设备联动偏 2027 后 |
+| Hybrid bonding / ultra-fine pitch | 当前收入小，FY2025 有 buy-off/发运；研究估算 NTM 基数 US$40m-90m | NTM 约 2%-4% | 中期路线价值高，但 NTM 收入确定性低于 TCB | C/D | 不作为基准主驱动，只保守小比例纳入 | HBM4E/HBM5、SoIC 类 HVM、D2W/W2W 大规模导入 |
+| SEMI mainstream / power / wire-die / PMIC | FY2025 mainstream 约 70% 集团收入的一部分；研究估算 NTM US$420m-550m | NTM 约 17%-22% | 稳定收入和中国 OSAT/AI power 支撑，但技术溢价低于 TCB | A/B | 进入基准，但作为稳态或抵消项处理 | AI rack power package 高端化可进入乐观 |
+| SMT Solutions：AI server / optical / SiP / China EV / auto / industrial | FY2025 SMT US$754m；2026Q1 SMT US$233.5m、订单 US$417m；NTM 基数 US$950m-1.12bn，其中 AI server/optical/SiP 子集 US$420m-560m | FY2025 42.7%；NTM 约 40%-45% | 收入弹性大；利润率低于 SEMI；战略选项评估影响组合 | A/B | 全 SMT 进入基准，AI 子集作为正向 mix，auto/industrial 作为抵消项 | SMT 出售/合资/分拆不是经营收入基准，只影响组合和资本配置 |
+| NEXX / AAMI / discontinued 或已处置资产 | NEXX 已列为 discontinued operation；AAMI 已处置主要权益 | 不纳入继续经营主表 | 非核心 | A | 排除 NTM 基准继续经营收入 | 只在附录说明，不作为收入传导主线 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不评估 ASMPT 份额、收入确认、利润率或公司汇总。当前需求锚来自行业资料、客户扩产节奏、管理层指引隐含需求、订单强度和正常替换周期。绝对变化以 NTM 对应需求池或订单 run-rate 的方向性增减表示；相对预期以 2026Q1 订单、2026Q2 指引、FY2025 AP/TCB 基数和可见客户节奏为当前预期锚。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| TCB：C2S/C2W/HBM/AOR | ASMPT 管理层估计 TCB TAM 2027 >US$1bn、2028 US$1.6bn；2025 TCB 收入约 +146%；2025-12 至 2026-06 连续 C2S/C2W/AOR 订单；HBM4 12H 多客户订单 | TCB 需求仍增长但低于已定价路径；客户 HBM4/CoWoS/chiplet 扩产推迟，NTM 可服务需求池约 US$0.9bn-1.1bn | HBM3E/HBM4、C2S/C2W 正常扩产，NTM 需求池约 US$1.1bn-1.4bn | HBM4 12H/16H、C2W CPU/chiplet、AOR 订单加速，NTM 需求池约 US$1.4bn-1.8bn | TCB 成为多个 AI package/HBM 节点的短缺设备，NTM 需求池约 US$1.8bn-2.5bn | 相对 FY2025 TCB TAM 明显上行；对 ASMPT 是订单池扩大而非自动收入 | 基准符合当前预期；乐观高于当前预期；极度乐观为上限 | 正向：C2S POR、C2W repeat、HBM4 订单、>500 台 installed base。反证：客户多供应商、HB 替代、交付/验收瓶颈 |
+| Photonics / 1.6T / CPO-NPO | 800G 正放量，1.6T 进入规模导入；Q1 photonics 收入约 5 倍 YoY，1.6T bulk orders；CPO/NPO 仍 early | 800G/1.6T 订单延后，CPO/NPO 留在样机，NTM photonics equipment 需求仅小幅高于 2025 | 800G 继续、1.6T 初量产，需求维持高增但 CPO 贡献小 | 1.6T 光模块厂扩线快于预期，硅光/CPO early line 增加 | 1.6T 成为新建 AI 集群默认端口，CPO/NPO 多客户量产前置 | 对 ASMPT 对应设备需求从 FY2025 小基数提高到 NTM US$0.2bn 以上行业机会 | 基准略高于当前预期；乐观为显著超预期 | 正向：1.6T bulk orders、AI 网络升级。反证：CPO 标准/可靠性未定、模块厂自建自动化、光芯片瓶颈 |
+| 高精度 flip-chip / die attach / chiplet | CoWoS/2.5D、AI ASIC、HBM attach、embedded bridge 和 panel/fan-out 拉动；Q1 FC bookings 强 | CoWoS/HBM 其他瓶颈限制产线扩张，需求低于订单预期 | 先进封装扩产正常兑现，需求随 TCB/CoWoS 同步增长 | OSAT 第二供应链和 IDM/ASIC 多项目扩产，需求明显高于预期 | 后段组装成为先进封装产能瓶颈，客户提前锁设备 | NTM 需求从成熟后段恢复切到高精度 die placement 增量 | 基准符合；乐观高于 | 正向：2.5D package size 增大、FC strong bookings。反证：竞争多、客户多供、设备不如 TCB 稀缺 |
+| Hybrid bonding / ultra-fine pitch | FY2025 客户 buy-off/发运；行业 D2W/W2W HB 订单增强，但 2026 仍多为资格和 pilot | HB 量产推迟，NTM 仅 pilot/研发线 | 多客户 qualification 和小批量发运，收入小但需求明确 | HBM4E/SoIC/logic 3D 提前 early HVM，HB 设备订单明显增加 | HB 在 HBM/logic 多场景提前主流化，客户锁定产能 | 绝对需求从小基数增长，但 NTM 可确认收入低于 TCB | 基准仅小幅纳入；乐观/极度乐观代表远期提前 | 正向：客户 buy-off、行业 HB 订单增强。反证：良率窗口窄、AMAT+BESI/EVG/SUSS/TEL 竞争强 |
+| SEMI mainstream / power / wire-die / PMIC | 中国 OSAT 利用率、AI data center power management、power device 和传统后段替换周期 | 普通后段周期回落、价格竞争、非 AI 订单取消或推迟 | 中国 OSAT/IDM 稳定，power management 和普通 die/wire bonding 正常恢复 | AI rack power、PMIC、power package 扩产增强，带动中端设备上修 | AI power package 成为明显瓶颈，传统设备需求跟随扩产超预期 | 相对 FY2025 mainstream 低个位数到中个位数增长，乐观为双位数增长 | 基准符合当前预期 | 正向：Q1 wire/die bonders 订单强。反证：技术溢价低、国产替代、汽车/工业偏软 |
+| SMT Solutions：AI server / optical / SiP / China EV / auto / industrial | 2026Q1 SMT 订单 US$417m，创纪录；AI server、optical transceivers、China EV 拉动；SMT 毛利率约 31% | Q1 订单高基数后回落，auto/industrial 软，AI server 验收推迟 | Q1/Q2 订单正常转收入，AI server/光模块和 China EV 支撑 | AI server、光模块、SiP 产线全球扩张，战略评估不扰动客户 | AI server/optical 产线 capex 周期共振，SMT 高力/高灵活贴装明显供不应求 | 基准 NTM 需求支撑 US$1.0bn 左右 SMT 收入；乐观明显高于 FY2025 | 基准符合当前订单；乐观高于 | 正向：Q1 订单创纪录、AI server 大板/高力贴装。反证：竞争分散、毛利率低、战略评估可能扰动 |
+
+需求层结论：TCB 和 1.6T/photonics 的需求不是泛 AI 题材，而是已经体现在订单、客户项目和指引中的外部需求。Hybrid bonding、CPO/NPO、HBM4 16H 是重要远期期权，但 NTM 基准只能保守纳入已进入客户验证或订单路径的部分。
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些产品需求能进入 ASMPT NTM 收入表，以及当前可收入化基数；不预测增长、不判断利润率扩张。证据等级按收入表可确认性定义：A 为已披露收入/分部收入/正式指引；B 为订单/backlog/正式客户项目和明确交付时间表；C 为 design win、认证、产能规划或管理层可验证披露；D 为样品/测试/早期合作；E 为纯主题映射。可参与需求不等于可确认收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| TCB：C2S/C2W/HBM/AOR | FY2025 AP 收入 US$532.1m、TCB +146%；2026Q1 SEMI 订单 US$310m、收入 US$274m；C2S 19+15 台、AOR 2 台、C2W 4+8 台、HBM4 12H 多客户订单 | 直接 | 高毛利 SEMI；拉升 mix 和服务粘性 | US$280m-360m | US$380m-500m | US$520m-680m | US$750m-950m | 基准符合 Q1/Q2 run-rate 和公开订单；乐观高于当前交付路径 | A/B，AOR/16H 部分 C | 是 | 已在 AP/SEMI 收入、订单和指引中；POR/repeat order 支撑确认路径 | 基准主驱动；16H/AOR 大规模放量只进乐观/极度乐观 |
+| Photonics / 1.6T / CPO-NPO | FY2025 photonics 未单列，Q1 2026 photonics 收入约 5 倍 YoY；1.6T bulk orders；800G 已有历史订单 | 直接 | 中高毛利 SEMI；小基数高弹性 | US$110m-160m | US$160m-260m | US$300m-450m | US$500m-700m | 基准略高于 FY2025 run-rate；乐观取决于 1.6T 扩线 | B/C；CPO/NPO 多为 C/D | 是，但 CPO/NPO 只小比例 | Q1 收入和订单已可见；1.6T 有 bulk order | 800G/1.6T 进基准；CPO/NPO 大规模不进基准 |
+| 高精度 flip-chip / die attach / chiplet | Q1 2026 FC bookings 强；SEMI 收入和订单已披露；行业 CoWoS/2.5D 扩产 | 直接 | SEMI 中高毛利；竞争多于 TCB | US$170m-230m | US$220m-330m | US$360m-520m | US$600m-800m | 基准符合先进封装扩产和 SEMI 指引；乐观需要订单继续披露 | B/C | 是 | 分部收入、订单和客户扩产路径支持 | 基准纳入，但不把 CoWoS 总 capex 直接当收入 |
+| Hybrid bonding / ultra-fine pitch | FY2025 客户 buy-off/发运；第二代 HB 发展；未披露规模订单 | 直接 | 潜在高毛利，但当前利用率和研发支持成本高 | US$20m-40m | US$40m-90m | US$120m-240m | US$300m-500m | 基准低于题材预期；乐观/极度乐观是提前量产上限 | C/D | 小比例 | buy-off 和发运支持小额收入；缺少多客户 HVM 订单 | 不作为基准主线；大部分列乐观、极度乐观或附录跟踪 |
+| SEMI mainstream / power / wire-die / PMIC | FY2025 mainstream 约 70% 集团收入的一部分；Q1 wire/die bonders、power management 订单强；中国 OSAT 利用率 | 直接 | 中等毛利；价格竞争高于高端 AP | US$350m-430m | US$420m-550m | US$580m-700m | US$750m-950m | 基准接近当前 run-rate；乐观来自 AI power 和中国 OSAT | A/B | 是 | 已在 SEMI 分部收入和 Q1 订单中 | 基准作为稳态收入；不是核心 AI 稀缺性来源 |
+| SMT Solutions：AI server / optical / SiP / China EV / auto / industrial | FY2025 SMT US$754m；2026Q1 SMT 收入 US$233.5m、订单 US$417m；Q1 订单创纪录；Q2 指引 SMT 收入环比增 | 直接 | 毛利率约 31%-32%，低于 SEMI；规模弹性大 | US$780m-900m | US$950m-1.12bn | US$1.20bn-1.45bn | US$1.65bn-2.05bn | 基准符合 Q1 backlog 转收入；乐观需要订单保持高位 | A/B | 是 | 分部收入、订单、指引均可见 | 全 SMT 进入基准；AI 子集改善 mix，但普通 auto/industrial 仍是抵消项 |
+| NEXX / AAMI / discontinued 或已处置资产 | NEXX 为 discontinued；AAMI 已出售主要权益，仅保留投资权益 | 排除 | 不作为继续经营利润 | 0 | 0 | 0 | 0 | 低于题材映射 | A | 否 | 会计口径已排除继续经营 | 排除，不进入 NTM 主表 |
+
+排除项：客户总 capex、CoWoS 总产能、HBM 总收入、AI 光模块总市场、TCB 2028 TAM、SMT 潜在出售价值、AAMI 权益价值、NEXX 处置收益均不进入 NTM 基准收入。它们只能用于需求背景、远期期权或附录跟踪。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步可收入化基数出发，判断每个重要产品在 NTM 内对 ASMPT 的收入和利润贡献。收入贡献不是 TAM、客户预算或项目全周期金额；利润贡献用研究估算的毛利贡献、分部利润方向和利润率方向表达。公司未披露产品级毛利率，因此精确产品 EBIT 填“无法可靠量化”时说明原因。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| TCB：C2S/C2W/HBM/AOR | 悲观产品 | US$280m-360m | 毛利贡献仍高，但安装/验收延迟导致 SEMI 利润率回落；产品 EBIT 无法可靠量化 | SEMI GM 42%-44% | 低于当前订单和 Q2 SEMI 强度 | 只承认可数订单和已交付路径 | 保留为下行情景 | HBM4/CoWoS 推迟、客户多供、AOR 良率或精密部件供给 |
+| TCB：C2S/C2W/HBM/AOR | 基准产品 | US$380m-500m | 主要利润增量；支持 SEMI GM 45%-47% 和分部利润率中双位数 | 上行 | 符合当前预期 | FY2025 AP US$532.1m、TCB +146%；C2S/C2W/AOR/HBM4 订单；Q1 SEMI GM 46.4% | 保留基准 | 交付周期、客户验收、订单分季度确认 |
+| TCB：C2S/C2W/HBM/AOR | 乐观产品 | US$520m-680m | 毛利和经营杠杆同步改善；成为集团利润率上修核心 | 明显上行 | 高于当前预期，有客户特定证据 | HBM4 12H 多客户订单、C2W repeat、AOR 进入 qualification | 保留乐观 | 需要 H2 继续新增订单和供应链安装能力 |
+| TCB：C2S/C2W/HBM/AOR | 极度乐观产品 | US$750m-950m | 若产品 mix 和价格保持，利润非线性上修；否则只是收入上修 | 大幅上行 | 只代表 NTM 上限 | TCB TAM >US$1bn 2027、目标 35%-40% 份额 | 下移为上限，不作为基准 | 需要需求、份额、产能、验收和价格同时成立 |
+| Photonics / 1.6T / CPO-NPO | 悲观产品 | US$110m-160m | 小基数利润正向但不足以改变集团利润率 | 持平到小幅上行 | 低于当前 Q1 强势增长 | 800G/1.6T 订单只部分确认 | 保留悲观 | 1.6T 客户导入延迟、CPO 标准未定 |
+| Photonics / 1.6T / CPO-NPO | 基准产品 | US$160m-260m | 毛利率高于普通 SMT；对 SEMI mix 正向 | 上行 | 符合当前 Q1/Q2 信号 | Q1 photonics 收入约 5 倍 YoY，1.6T bulk orders | 保留基准 | 光学对准 throughput、客户良率、光芯片供给 |
+| Photonics / 1.6T / CPO-NPO | 乐观产品 | US$300m-450m | 小基数利润弹性大，若 1.6T 线体高利用率，SEMI GM 可上修 | 明显上行 | 高于当前预期 | 1.6T 从样品进入规模供货，AI 网络端口升级 | 保留乐观 | 模块厂自研产线、CPO/NPO 不确定 |
+| Photonics / 1.6T / CPO-NPO | 极度乐观产品 | US$500m-700m | 只有成为关键设备且良率通过时才有高利润质量 | 大幅上行 | 上限 | CPO/NPO 多客户量产、1.6T 成默认端口 | 移入附录/上限 | NTM 证据不足，多数 CPO 收入仍非基准 |
+| 高精度 flip-chip / die attach / chiplet | 悲观产品 | US$170m-230m | 需求存在但价格/份额竞争压低利润 | 持平到小幅下行 | 低于当前预期 | 只按成熟应用和现有 SEMI run-rate | 保留悲观 | 多供应商、客户自研或转向其他方案 |
+| 高精度 flip-chip / die attach / chiplet | 基准产品 | US$220m-330m | 稳定正向，支持 SEMI 规模效应 | 小幅上行 | 符合当前预期 | Q1 FC bookings 强；2.5D/embedded bridge 订单 pipeline | 保留基准 | 不能把 CoWoS 总扩产直接等同收入 |
+| 高精度 flip-chip / die attach / chiplet | 乐观产品 | US$360m-520m | 收入和利用率提高，利润质量中高 | 上行 | 高于当前预期 | foundry/OSAT 多点扩产、先进封装后段瓶颈 | 保留乐观 | 竞争使 ASP/mix 低于预期 |
+| 高精度 flip-chip / die attach / chiplet | 极度乐观产品 | US$600m-800m | 若和 TCB 组合采购，利润放大；否则收入质量低于 TCB | 上行 | 上限 | 后段组装设备成为瓶颈 | 下移为乐观上限 | 需要份额、交付和客户预算共振 |
+| Hybrid bonding / ultra-fine pitch | 悲观产品 | US$20m-40m | 研发和应用支持吞噬利润，利润贡献有限 | 下行或低位 | 低于市场题材预期 | 只承认已发运/小额 buy-off | 保留悲观 | HB HVM 推迟、竞争强 |
+| Hybrid bonding / ultra-fine pitch | 基准产品 | US$40m-90m | 小额正向；不改变集团利润率 | 持平到小幅上行 | 符合收入确认证据 | 客户 buy-off、第二代 HB 发运 | 保留但权重低 | 缺少多客户量产订单 |
+| Hybrid bonding / ultra-fine pitch | 乐观产品 | US$120m-240m | 若客户早期 HVM，利润质量改善，但需较高应用支持 | 上行 | 高于当前预期 | HBM4E/SoIC/D2W qualification 提前 | 下移为低可信乐观 | 证据等级 C/D，不能放入基准主线 |
+| Hybrid bonding / ultra-fine pitch | 极度乐观产品 | US$300m-500m | 高毛利期权，但 NTM 可信度低 | 大幅上行 | 远期期权提前 | HB 多客户 POR | 移入附录/仅作跟踪 | 任一核心环节缺证据即不能保留为 NTM |
+| SEMI mainstream / power / wire-die / PMIC | 悲观产品 | US$350m-430m | 低端价格竞争和取消/推迟压制利润 | 下行 | 低于当前预期 | 中国/OSAT 稳定性下降、普通后段周期弱 | 保留悲观 | 汽车/工业软、国产替代 |
+| SEMI mainstream / power / wire-die / PMIC | 基准产品 | US$420m-550m | 稳定毛利和服务收入，利润质量中等 | 稳定 | 符合当前预期 | Q1 wire/die bonders、power management 需求 | 保留基准 | 技术溢价低于 AP |
+| SEMI mainstream / power / wire-die / PMIC | 乐观产品 | US$580m-700m | 稼动率和规模效应改善，但毛利弹性不如 TCB | 小幅上行 | 高于当前预期 | AI data center power management、China OSAT 高利用率 | 保留乐观 | 不能把 AI power 需求放大为高端 TCB 利润率 |
+| SEMI mainstream / power / wire-die / PMIC | 极度乐观产品 | US$750m-950m | 收入大但利润率不必然大幅扩张 | 小幅上行 | 上限 | power package 成为瓶颈 | 下移为上限 | 低毛利和竞争限制利润弹性 |
+| SMT Solutions：AI server / optical / SiP / China EV / auto / industrial | 悲观产品 | US$780m-900m | SMT GM 30%-31%；收入转化慢，利润被 mix 和战略不确定压制 | 下行 | 低于 Q1 订单 implied run-rate | 只承认低端订单和正常替换 | 保留悲观 | auto/industrial 软、订单高基数、战略评估扰动 |
+| SMT Solutions：AI server / optical / SiP / China EV / auto / industrial | 基准产品 | US$950m-1.12bn | 规模正向但毛利率低于 SEMI；集团 GM 被稀释 | 稳定到小幅上行 | 符合当前预期 | FY2025 SMT US$754m；Q1 订单 US$417m、收入 US$233.5m | 保留基准 | 低毛利 pass-through，客户多供 |
+| SMT Solutions：AI server / optical / SiP / China EV / auto / industrial | 乐观产品 | US$1.20bn-1.45bn | SMT segment margin 可回到高个位数/低双位数，但集团 GM 稀释仍在 | 小幅上行 | 高于当前预期 | AI server 大板、高力贴装、光模块产线扩张 | 保留乐观 | 需要订单持续且战略评估不影响客户 |
+| SMT Solutions：AI server / optical / SiP / China EV / auto / industrial | 极度乐观产品 | US$1.65bn-2.05bn | 收入非线性，但除非 mix 高端化，否则利润弹性低于 SEMI | 收入上行，毛利率有限 | 上限 | AI server/optical/SiP capex 共振 | 下移为上限 | 多供应商市场、毛利低、执行扰动 |
+
+产品层结论：TCB 是收入和利润双重主线；photonics 是小基数高弹性；SMT 是收入弹性但利润质量较弱；hybrid bonding 是技术期权，NTM 不能前置太多；SEMI mainstream 是稳定器和抵消项，不应被包装成核心 AI alpha。
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为 ASMPT NTM 继续经营收入、毛利率、经营利润率、调整后净利润和自由现金流方向。汇总前已扣除产品之间重叠，不把 TCB TAM、光模块 TAM、HBM 市场规模或客户 capex 直接加总；NEXX、AAMI、SMT 潜在交易价值不纳入继续经营主表。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | US$2.05bn-2.20bn | 较 FY2025 +16%-25%；绝对增量 +US$0.29bn 至 +US$0.44bn | 低于当前 Q2 指引、Q1 订单和可见订单节奏；仍可增长但低于已定价经营路径 | 38.5%-40.0% | 7%-9% | EBITDA 无法可靠量化；调整后净利润约 HK$1.0bn-1.4bn | 存货和应收上升，FCF 转化偏弱或阶段性承压 | 中 | TCB/HBM/1.6T 验收推迟、SMT 订单回落、普通业务价格竞争、营运资本吸收现金 |
+| 基准公司 | US$2.35bn-2.55bn | 较 FY2025 +33%-45%；绝对增量 +US$0.59bn 至 +US$0.79bn | 接近当前 run-rate、Q2 指引中点、年末 backlog 和 Q1 高 B2B 的正常兑现 | 40.0%-42.0% | 10%-12% | EBITDA 无法可靠量化；调整后净利润约 HK$1.55bn-2.05bn | 经营利润改善，但高订单期 FCF 受存货、安装和应收拖累，中性偏正 | 中高 | 高端工具交付、客户验收、SMT 低毛利 mix、H2 订单是否维持 B2B >1 |
+| 乐观公司 | US$2.70bn-3.05bn | 较 FY2025 +53%-73%；绝对增量 +US$0.94bn 至 +US$1.29bn | 高于当前预期，且由 TCB、photonics、SMT AI server 多线驱动，不靠单一小基数 | 42.0%-44.0% | 13%-16% | EBITDA 无法可靠量化；调整后净利润约 HK$2.6bn-3.7bn | 若预收/回款跟上，FCF 明显改善；若交付前置，营运资本仍可能占用 | 中 | TCB 产能/安装服务、1.6T 线体良率、SMT 战略评估不扰动交付 |
+| 极度乐观公司 | US$3.30bn-3.80bn | 较 FY2025 +87%-116%；绝对增量 +US$1.54bn 至 +US$2.04bn | 显著高于当前预期；需要需求、ASMPT 份额、价格/mix、产能和执行同时突破 | 44.0%-47.0% | 17%-22% | EBITDA 无法可靠量化；调整后净利润约 HK$4.0bn-6.0bn | 高利润潜力强，但存货、安装、应收和客户验收会先放大波动 | 低到中 | 极高交付强度、客户预算同时释放、竞争未压价、HB/CPO/TCB 路线均有利 |
+
+公司层结论：基准情景已经是明显增长，不需要引入远期题材也能成立；乐观情景的关键不是“AI 市场更大”，而是可数 TCB/C2W/HBM4/1.6T/SMT 订单持续转为收入，并且高毛利 SEMI mix 比低毛利 SMT 收入增速更快。极度乐观不能只靠 TCB TAM 或单一客户订单成立，必须同时看到 H2 2026 订单、交付、验收、毛利率和营运资本质量共振。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。校准动作仅使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次：需求风险放第 3 节，收入确认风险放第 4 节，份额/价格/成本风险放第 5 节，公司组合风险放第 6 节，证据和可信度放本节。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2025 AP 收入 US$532.1m、TCB 收入约 +146%、TCB TAM 2028 US$1.6bn、目标份额 35%-40% | 需求、收入基数、产品贡献 | 提升 TCB 基准收入可信度；支撑 NTM US$380m-500m TCB 基准 | 高端 SEMI mix 正向 | 若订单转收入，利润和回款改善；若交付排队，存货先升 | 基准保留，乐观保留，2028 TAM 不前置 |
+| 2026Q1 继续经营订单 US$727m、收入 US$507.9m、B2B 1.43；Q2 收入指引 US$540m-600m | 公司汇总、执行可信度 | 支撑 NTM 公司 US$2.35bn-2.55bn 基准 | Q1 GM 39.5%，Q2 若 SEMI 强则 40%+ 可信 | 高订单会提高 backlog 和营运资本需求 | 基准保留；悲观不能写成需求崩塌，只能写为低于预期兑现 |
+| Q1 SEMI GM 46.4%、SMT GM 31.3%；SEMI 产品 mix 明显决定集团毛利 | 产品利润、公司利润 | 不直接提高收入，但改变收入质量 | TCB/photonics 上升提升毛利；SMT 收入过快稀释毛利 | 高毛利设备验收周期更长 | 乐观利润保留；低毛利收入上修不能自动进极度乐观利润 |
+| C2S 19+15 台订单、AOR 2 台、Q1 C2W 4 台、2026-06 C2W 8 台 repeat order | 收入基数、产品贡献 | 提升 TCB 可确认收入路径，B 级证据强 | 高端工具利润属性强 | 需安装、验收、客户产线 ready | TCB 基准保留，乐观保留；极度乐观仍需新增订单 |
+| HBM4 12H 多客户订单、HBM4 16H sampling、AOR fluxless qualification | 需求、远期期权 | 12H 支撑 NTM；16H/AOR 扩大偏乐观 | 若进入 POR，毛利率上修 | sampling 到量产存在时间差 | 12H 保留基准；16H/AOR 大规模移入乐观/附录 |
+| Photonics Q1 收入约 5 倍 YoY、1.6T bulk orders | 产品收入、利润 | 支撑 US$160m-260m 基准和 US$300m+ 乐观 | 小基数高毛利正向 | 良率、throughput、客户 ramp 决定兑现 | 基准保留，乐观保留；CPO/NPO 大规模仅作跟踪 |
+| SMT Q1 订单创纪录，AI server/optical/China EV 拉动 | 公司收入、组合风险 | 提升公司收入基准和乐观上限 | SMT 毛利率低于 SEMI，收入上修质量弱 | 大订单转收入会推高营运资本 | 基准保留；SMT 极度乐观收入下移为低利润质量上限 |
+| Hybrid bonding buy-off/发运，但缺少多客户 HVM 量化订单 | 收入基数、证据可信度 | 小额基准可纳入，大规模不可靠 | 初期应用支持成本高 | 资格认证和良率拉长收入确认 | 基准保守保留；乐观下移；极度乐观移入附录 |
+| NEXX discontinued、AAMI 主要权益处置、SMT 战略选项评估 | 公司组合、现金流 | NEXX/AAMI 不进继续经营收入；SMT 仍进经营基准 | 组合简化长期正向，但交易不等于经营利润 | 战略评估期间可能扰动客户和员工 | 非经营资产排除；SMT 战略事件仅作组合风险 |
+| 2025Q3 panel deposition tools 订单取消 | 收入确认、执行可信度 | 非核心订单可取消；不直接否定 TCB POR 订单 | 库存拨备和取消费影响单季利润 | 说明 backlog 不是现金 | 悲观保留；不重复惩罚 TCB、photonics 等高证据订单 |
+| 汽车/工业终端偏软、普通后段竞争和国产替代 | 产品需求、利润率 | 压制 SEMI mainstream 和部分 SMT | 普通产品 ASP/mix 下行 | 可能推迟普通订单 | 只作用于 mainstream/SMT，不重复压低 TCB 基准 |
+| 行业 AI capex、CoWoS/HBM、光模块需求可能低于预期 | 需求风险 | 会影响 TCB/photonics/SMT 新订单 | 高毛利产能利用率下降 | 订单和客户验收延后 | 作为悲观触发条件，不在基准重复惩罚 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入仍增长但低于当前订单/指引 implied path，利润率低于 40%+ 目标 | FY2025 backlog、Q1 B2B、Q2 指引使收入彻底下行概率有限 | Q3 2025 订单取消、普通业务软、SMT 低毛利、客户验收延迟 | 保留 | 下行情景，不是主情景 | 中 | 不把同一订单取消风险同时扣 TCB、SMT、公司利润三次 |
+| 基准 | Q2 指引和 Q1 订单正常兑现，TCB/photonics/SMT AI server 进入收入表 | A/B 证据强：分部收入、订单、backlog、指引、C2S/C2W/HBM4 订单 | Hybrid bonding/CPO/NPO 证据不足，SMT 毛利稀释 | 保留 | 最可能情景 | 中高 | 不因远期期权缺证据而压低已在收入表中的 TCB/SMT |
+| 乐观 | TCB、1.6T photonics、SMT AI server 多线高于当前预期，SEMI mix 提升 | C2W repeat、AOR、HBM4 多客户、1.6T bulk orders、Q1 订单高 | H2 新订单未验证，交付和验收能力可能不足 | 保留 | 有证据的超预期情景 | 中 | 不把行业 beta 直接替代公司 alpha；必须继续看 ASMPT 特定订单 |
+| 极度乐观 | NTM 收入和利润结构均显著高于当前预期，TCB/1.6T/HB/SMT 同时突破 | 2027 TCB TAM、35%-40% 份额目标、AI 封装和光互联需求强 | 任一核心环节缺证据：HB/CPO 量产、客户预算、产能、价格、现金流 | 下移 | NTM 上限和附录跟踪，不是当前预期 | 低到中 | 不把所有远期好事相加；TCB TAM、CPO、HB、SMT 分拆不得重复计入 |
+
+## 8. 结论
+
+- 最可能情景：基准偏乐观。NTM 收入最可能落在 US$2.35bn-2.55bn，若 H2 2026 订单继续高于收入且 SEMI mix 强，向 US$2.70bn 以上乐观区间切换。基准已经体现强增长，不需要把 2028 TAM 或 CPO/NPO 大规模量产提前。
+- NTM 收入结论：收入主增量来自 TCB、photonics/1.6T、SMT AI server/optical/SiP 和高精度 die attach。SEMI mainstream 和 China OSAT/power 管线提供稳态支撑，auto/industrial 和普通 SMT 是抵消项。
+- 利润/现金流结论：利润质量取决于 SEMI 高毛利 mix。若 TCB/photonics/advanced die bonding 高于 SMT 增速，集团毛利率可维持 40%-42% 并向 42%+ 走；若收入主要来自低毛利 SMT 或普通设备，收入增长会被 mix 稀释。现金流短期会被存货、安装和应收占用，不能只看订单增速。
+- 主要传导瓶颈：TCB 客户验收和产线 ready、AOR/fluxless 工艺成熟度、HBM4/CoWoS 客户扩产节奏、1.6T 光子贴装良率、SMT 战略评估期间客户和员工稳定性、普通业务价格竞争。
+- 乐观情景成立条件：Q2 实际收入接近或高于 US$570m 中点；Q2/Q3 订单继续接近或高于收入；新增 C2W/HBM4/AOR/1.6T 订单披露；SEMI GM 维持 mid-40s；SMT 订单正常转收入且 GM 不低于 31%-32%。
+- 极度乐观情景成立条件：2026H2 TCB 新订单继续加速，ASMPT 在 C2S/C2W/HBM4 多节点接近 35%-40% 目标份额；1.6T photonics 扩线从 bulk order 转为持续收入；HBM4 16H/AOR fluxless 或 hybrid bonding 在 NTM 内从 qualification 转 HVM；公司供应链、安装服务和营运资本没有拖累。
+- 悲观情景触发条件：Q2 收入低于指引下沿或 Q3 指引显示订单转收入延迟；H2 B2B 低于 1；TCB/HBM4/C2W 订单推迟或取消；SMT Q1 高订单未转收入；集团毛利率回落至 39% 以下；存货和应收显著快于收入增长。
+- 后续跟踪数据：Q2 2026 收入和订单；SEMI/SMT 分部收入、订单、GM 和 segment margin；TCB 台数和客户类型；HBM4 16H/AOR qualification 进展；1.6T photonics 是否继续收入高增；SMT 战略选项公告；backlog、book-to-bill、存货、应收和自由现金流。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务数据截至 ASMPT 2026Q1 业绩公告日 2026-04-22；新增 C2W TCB repeat order 截至 2026-06-08；本报告生成日 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - ASMPT 2026Q1 results announcement / press release / investor presentation：Q1 revenue US$507.9m、bookings US$727.0m、GM 39.5%、adjusted net profit HK$335.2m、Q2 revenue guidance US$540m-600m、SEMI/SMT segment metrics、TCB/photonics/SMT 订单描述。  
+    https://www.asmpt.com/en/investor-relations/news-events/asmpt-announces-2026-first-quarter-results/  
+    https://www.asmpt.com/site/assets/files/85233/asmpt_q1_2026_investor_presentation.pdf
+  - ASMPT 2025 annual results / Q4 2025 investor presentation：FY2025 revenue US$1.762bn、bookings US$1.857bn、backlog US$792.9m、AP revenue US$532.1m、TCB revenue +146%、TCB TAM 2028 US$1.6bn、target share 35%-40%、FY adjusted GM 38.3%、adjusted operating profit HK$699.4m、adjusted net profit HK$466.7m。  
+    https://www.asmpt.com/en/investor-relations/news-events/asmpt-announces-2025-annual-results/  
+    https://www.asmpt.com/site/assets/files/84483/asmpt_q4_2025_investor_presentation.pdf
+  - ASMPT TCB orders and strategic actions：2025-12-03 19 台 C2S TCB；2025-12-22 15 台 C2S TCB repeat/additional order；2026-02-05 2 台 ultrafine pitch C2W TCB with AOR；2026-06-08 8 台 C2W TCB repeat order；2026-01-21 SMT strategic options assessment。  
+    https://www.asmpt.com/en/investor-relations/news-events/asmpt-wins-new-orders-for-nineteen-chip-to-substrate-tcb-tools-to-serve-ai-chip-market/  
+    https://www.asmpt.com/en/investor-relations/news-events/asmpt-secures-additional-orders-for-fifteen-chip-to-substrate-thermo-compression-bonding-tools-driven-by-ai-tailwind/  
+    https://www.asmpt.com/en/investor-relations/news-events/asmpt-extends-technology-leadership-with-key-tcb-aor-chip-to-wafer-milestone/  
+    https://www.asmpt.com/en/news-center/press-releases/asmpt-secures-repeat-chip-to-wafer-tcb-orders-from-leading-logic-semiconductor-manufacturer/  
+    https://www.asmpt.com/en/investor-relations/news-events/asmpt-announces-assessment-of-strategic-options-for-smt-solutions-segment/
+- 本地公司和行业资料：
+  - `公司调研/封测_检测_计量_光罩/ASMVY_ASMPT_公司调研_2026-06-11.md`：用于分部收入、产品映射、订单与 backlog 交叉验证、竞争和风险框架。
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-06-11.md`：用于 TCB、hybrid bonding、advanced packaging equipment、BOM、客户替换成本和设备需求窗口。
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`：用于 AI accelerator 先进封装、CoWoS/2.5D、HBM、test、设备和材料传导。
+  - `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`：用于 HBM3E/HBM4/HBM4 16H、stacking、TCB/混合键合和 HBM 供需节奏。
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`：用于 800G/1.6T 光模块需求、CPO/NPO 时间表和光子封装设备传导。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - 2028 TCB TAM US$1.6bn 和 ASMPT 35%-40% 份额目标是远期管理层目标，用于乐观和极度乐观校准，不作为 NTM 基准收入。
+  - HBM4 16H、AOR fluxless、hybrid bonding HVM、CPO/NPO 多客户量产、CoPoS/面板级/玻璃基板均为远期期权或乐观上限，未进入基准主表。
+  - SMT strategic options 可能改变公司组合和资本配置，但在交易确定前不改变 NTM 继续经营收入基准。

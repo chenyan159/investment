@@ -1,0 +1,272 @@
+[
+  {
+    "key": "hbm",
+    "subject": "HBM与高带宽内存",
+    "status": "done",
+    "finishedAt": "2026-09-18 15:42:35",
+    "attempts": 1,
+    "old": "基本面/行业调研/结果/AI服务器_存储_芯片/备份/HBM-f54ca0293d_2026-09-18T15_16_02-07_00-f7fface190/行业调研_HBM与高带宽内存_2026-09-06.md",
+    "new": "基本面/行业调研/结果/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-09-18.md",
+    "metrics": {
+      "old": {
+        "characters": 32197,
+        "nonWhitespace": 29845,
+        "lines": 522,
+        "tableRows": 145,
+        "urls": 49,
+        "sha256": "5f24d8b799d32d0eda22f6ec0487a1b1a2f01d7d73b99e819fbbadd2435c5e78"
+      },
+      "new": {
+        "characters": 41570,
+        "nonWhitespace": 38070,
+        "lines": 663,
+        "tableRows": 210,
+        "urls": 38,
+        "sha256": "d59972845895b7deaf84ba7f2522b4e062b4ba689924214ebdd507929ba443cb"
+      }
+    }
+  },
+  {
+    "key": "memory",
+    "subject": "系统内存、SOCAMM与内存模组",
+    "status": "done",
+    "finishedAt": "2026-09-18 15:44:02",
+    "attempts": 1,
+    "old": "基本面/行业调研/结果/AI服务器_存储_芯片/备份/SOCAMM-01ac923628_2026-09-18T15_16_03-07_00-afa93abbcf/行业调研_系统内存、SOCAMM与内存模组_2026-09-06.md",
+    "new": "基本面/行业调研/结果/AI服务器_存储_芯片/行业调研_系统内存、SOCAMM与内存模组_2026-09-18.md",
+    "metrics": {
+      "old": {
+        "characters": 32759,
+        "nonWhitespace": 29470,
+        "lines": 508,
+        "tableRows": 130,
+        "urls": 46,
+        "sha256": "0dc9c308e392fa0b2b115e2da1c1443eaaf42fa08521b290270692eaebe726d5"
+      },
+      "new": {
+        "characters": 42055,
+        "nonWhitespace": 38708,
+        "lines": 623,
+        "tableRows": 193,
+        "urls": 37,
+        "sha256": "e8f9afcdc9dc3a351c5a85f934b9f7fcf1b57f0193491935afc6a162a9d17ddb"
+      }
+    }
+  },
+  {
+    "key": "ssd",
+    "subject": "企业级SSD与高速存储控制器",
+    "status": "done",
+    "finishedAt": "2026-09-18 15:39:53",
+    "attempts": 1,
+    "old": "基本面/行业调研/结果/AI服务器_存储_芯片/备份/SSD-a5ef964fd0_2026-09-18T15_16_04-07_00-252b43c235/行业调研_企业级SSD与高速存储控制器_2026-09-06.md",
+    "new": "基本面/行业调研/结果/AI服务器_存储_芯片/行业调研_企业级SSD与高速存储控制器_2026-09-18.md",
+    "metrics": {
+      "old": {
+        "characters": 44791,
+        "nonWhitespace": 42290,
+        "lines": 578,
+        "tableRows": 199,
+        "urls": 49,
+        "sha256": "f3acb68e1f91065c2edadf7e38f98a8c3fd14285324a8fcf6277bf709b195cff"
+      },
+      "new": {
+        "characters": 43868,
+        "nonWhitespace": 40593,
+        "lines": 529,
+        "tableRows": 190,
+        "urls": 41,
+        "sha256": "d76e582f55011821554daebf6ff4c4a37dc91470a6fe8cc9bcb8e8ff82af7c94"
+      }
+    }
+  },
+  {
+    "key": "wafer",
+    "subject": "存储晶圆制造",
+    "status": "done",
+    "finishedAt": "2026-09-18 15:36:20",
+    "attempts": 1,
+    "old": "基本面/行业调研/结果/半导体与电子制造_设备_材料_测试/备份/u146604dbe4_2026-09-18T15_16_05-07_00-a75ed3f595/行业调研_存储晶圆制造_2026-09-06.md",
+    "new": "基本面/行业调研/结果/半导体与电子制造_设备_材料_测试/行业调研_存储晶圆制造_2026-09-18.md",
+    "metrics": {
+      "old": {
+        "characters": 37348,
+        "nonWhitespace": 33540,
+        "lines": 559,
+        "tableRows": 159,
+        "urls": 33,
+        "sha256": "e232844fedc7bb163c39d9559e38aea9b275b45ef7b5d340771883f97ab091c6"
+      },
+      "new": {
+        "characters": 38506,
+        "nonWhitespace": 34881,
+        "lines": 564,
+        "tableRows": 193,
+        "urls": 34,
+        "sha256": "08d6a63e14f415c349947cdabd8603582f5d7dbae6a1232db6803837e925641a"
+      }
+    }
+  },
+  {
+    "key": "foundry",
+    "subject": "先进逻辑晶圆代工和封装",
+    "status": "done",
+    "finishedAt": "2026-09-18 15:39:56",
+    "attempts": 1,
+    "old": "基本面/行业调研/结果/半导体与电子制造_设备_材料_测试/备份/u8149177555_2026-09-18T15_16_06-07_00-e01ee71dc6/行业调研_先进逻辑晶圆代工和封装_2026-09-06.md",
+    "new": "基本面/行业调研/结果/半导体与电子制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-09-18.md",
+    "metrics": {
+      "old": {
+        "characters": 35236,
+        "nonWhitespace": 32301,
+        "lines": 533,
+        "tableRows": 150,
+        "urls": 43,
+        "sha256": "7ceb451fc8b4e35b5ea0adb968c647adc7d1484a867c0c829b3a2fbf38bdd708"
+      },
+      "new": {
+        "characters": 42231,
+        "nonWhitespace": 37210,
+        "lines": 587,
+        "tableRows": 191,
+        "urls": 31,
+        "sha256": "ef17c098714a24e1ec2eb180ad89138d2419c1d1c2764ed15d4df40ac62281f4"
+      }
+    }
+  },
+  {
+    "key": "gpu",
+    "subject": "商用AI加速芯片",
+    "status": "done",
+    "finishedAt": "2026-09-18 15:37:49",
+    "attempts": 1,
+    "old": "基本面/行业调研/结果/AI服务器_存储_芯片/备份/AI-6c93cd16b3_2026-09-18T15_16_08-07_00-3de701e4ee/行业调研_商用AI加速芯片_2026-09-06.md",
+    "new": "基本面/行业调研/结果/AI服务器_存储_芯片/行业调研_商用AI加速芯片_2026-09-18.md",
+    "metrics": {
+      "old": {
+        "characters": 31827,
+        "nonWhitespace": 30807,
+        "lines": 550,
+        "tableRows": 143,
+        "urls": 42,
+        "sha256": "5ba247ed20c167267ce29d704b18a8bfbfd349221da55fc6e17f846bccbf8d27"
+      },
+      "new": {
+        "characters": 41450,
+        "nonWhitespace": 37840,
+        "lines": 606,
+        "tableRows": 214,
+        "urls": 40,
+        "sha256": "91d9682c7b5feb7aa29bbeabd86c0fa7608cbe58e25beda679b5ea4cebf02966"
+      }
+    }
+  },
+  {
+    "key": "package",
+    "subject": "AI芯片先进封装",
+    "status": "done",
+    "finishedAt": "2026-09-18 15:43:17",
+    "attempts": 1,
+    "old": "基本面/行业调研/结果/AI服务器_存储_芯片/备份/AI-cd04b1440c_2026-09-18T15_16_09-07_00-21145e661d/行业调研_AI芯片先进封装_2026-09-06.md",
+    "new": "基本面/行业调研/结果/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-09-18.md",
+    "metrics": {
+      "old": {
+        "characters": 33123,
+        "nonWhitespace": 31089,
+        "lines": 550,
+        "tableRows": 149,
+        "urls": 37,
+        "sha256": "f4951898e7ba39f8109487d91b607b0577dfd0bb3e6a40152d478872449578ce"
+      },
+      "new": {
+        "characters": 34990,
+        "nonWhitespace": 34146,
+        "lines": 535,
+        "tableRows": 202,
+        "urls": 41,
+        "sha256": "ff59a194e5c582e5e49ebf9cec4416f32606855693a44de58e7958d6a047c895"
+      }
+    }
+  },
+  {
+    "key": "optics",
+    "subject": "800G/1.6T可插拔光模块",
+    "status": "done",
+    "finishedAt": "2026-09-18 15:41:07",
+    "attempts": 1,
+    "old": "基本面/行业调研/结果/AI网络_光互联_铜互联/备份/800G_1.6T-47ed2c3a8f_2026-09-18T15_16_10-07_00-dce3432b00/行业调研_800G_1.6T可插拔光模块_2026-09-06.md",
+    "new": "基本面/行业调研/结果/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-09-18.md",
+    "metrics": {
+      "old": {
+        "characters": 32125,
+        "nonWhitespace": 30283,
+        "lines": 424,
+        "tableRows": 119,
+        "urls": 42,
+        "sha256": "1bba349dbff25aa27bb3cabfe712b0ac87969c53a7fbdf2c348790523075836d"
+      },
+      "new": {
+        "characters": 39696,
+        "nonWhitespace": 36248,
+        "lines": 648,
+        "tableRows": 194,
+        "urls": 36,
+        "sha256": "322bb1cb9fb311c74fe8b75e109f95c45f39e066ca20300225d9b1f76f340278"
+      }
+    }
+  },
+  {
+    "key": "power",
+    "subject": "数据中心开关设备与变压器",
+    "status": "done",
+    "finishedAt": "2026-09-18 15:45:04",
+    "attempts": 1,
+    "old": "基本面/行业调研/结果/AI园区电力_机电_冷却/备份/u521fe67252_2026-09-18T15_16_11-07_00-ff93168e64/行业调研_数据中心开关设备与变压器_2026-09-06.md",
+    "new": "基本面/行业调研/结果/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-09-18.md",
+    "metrics": {
+      "old": {
+        "characters": 28667,
+        "nonWhitespace": 27513,
+        "lines": 390,
+        "tableRows": 83,
+        "urls": 42,
+        "sha256": "28ffa37b0aa89e469596c7bfd3892b57f1060261bdf4521bea284dcb77945856"
+      },
+      "new": {
+        "characters": 37747,
+        "nonWhitespace": 34089,
+        "lines": 540,
+        "tableRows": 200,
+        "urls": 38,
+        "sha256": "6a957fd25cee0c01c73040472c13b30c75ade623c4cf58fedf1b84f20a2fc3e5"
+      }
+    }
+  },
+  {
+    "key": "cooling",
+    "subject": "数据中心直液冷系统",
+    "status": "done",
+    "finishedAt": "2026-09-18 15:42:38",
+    "attempts": 1,
+    "old": "基本面/行业调研/结果/AI园区电力_机电_冷却/备份/u2c9fd236a9_2026-09-18T15_16_12-07_00-95bf40d372/行业调研_数据中心直液冷系统_2026-09-06.md",
+    "new": "基本面/行业调研/结果/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-09-18.md",
+    "metrics": {
+      "old": {
+        "characters": 32214,
+        "nonWhitespace": 30101,
+        "lines": 539,
+        "tableRows": 132,
+        "urls": 41,
+        "sha256": "cc70a733b91177fcaa0bd66f8286793483ddad21c5804c11f5ee26292ab26374"
+      },
+      "new": {
+        "characters": 39315,
+        "nonWhitespace": 36260,
+        "lines": 607,
+        "tableRows": 214,
+        "urls": 45,
+        "sha256": "c918d2da7058229356c65960008206bfe3cb9272c14dc0ab28ee5775e6775f6a"
+      }
+    }
+  }
+]

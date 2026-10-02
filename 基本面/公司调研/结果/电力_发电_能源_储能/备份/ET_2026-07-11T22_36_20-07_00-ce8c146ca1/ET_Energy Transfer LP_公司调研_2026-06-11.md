@@ -1,0 +1,390 @@
+# Energy Transfer LP（ET）公司调研：天然气管网、NGL出口与AI数据中心燃气供给再定价
+
+报告日期：2026-06-11  
+研究对象：Energy Transfer LP，NYSE: ET  
+正式分类目录：`公司调研/电力_发电_能源_储能/`  
+本地资料边界：仅使用 `基本面/行业调研/` 下与 AI 数据中心电力、自备发电、微电网、AI 机架功耗和数据中心建设规模相关的行业资料；未读取、引用或继承 `特征量化/`、`日度资料/` 或其他公司调研报告。  
+联网资料口径：优先使用 Energy Transfer 官方 2026Q1 结果、2026-05 投资者材料、2025 年各季度结果、SEC/IR 公告；市场估值使用 2026-06-11 盘中快照和公开统计页。
+
+## 0. 先给结论
+
+ET 不是 AI 芯片、服务器、电力设备或数据中心运营商。它是北美最大级别的中游能源基础设施 MLP，AI 相关性主要来自 **天然气到电力的燃料路径**：AI 数据中心需要更快上电，电网排队、变压器和开关设备交期拉长后，behind-the-meter 天然气发电、utility 专属燃气电厂和长约 firm gas transportation 成为 2026-2029 年重要供给路线。ET 的价值捕获不是每台 GPU 的高毛利零部件，而是每 MMBtu 的运输费、储存费、处理费、压缩/连接服务费和少量优化价差。
+
+最重要的变化是：ET 已把增长资本明确转向天然气网络。2026E 增长资本从此前约 `$5.0-5.5B` 上调到 `$5.5-5.9B`，官方说大部分用于增强天然气网络；2026E Adjusted EBITDA 指引从 `$17.45-17.85B` 上调到 `$18.2-18.6B`。2026-05 投资者材料披露，ET 已有 **`6+ Bcf/d` 已签约管输容量、加权平均合约期 `18 年`、预计 firm transportation fees `$25B+`**，其中包括 Oracle 数据中心约 `900 MMcf/d`、Nexus Hubbard 初始约 `150 MMcf/d`、Entergy Louisiana `250,000 MMBtu/d`、Oklahoma 四个新电厂负荷约 `300 MMcf/d`、Fermi America 初始约 `300,000 MMBtu/d`（需客户选择权）、Arkansas 数据中心 LOI 约 `150 MMcf/d` 等。这个披露让 ET 从传统“高分红中游”部分变成“AI 上电燃料路径”的间接受益标的。
+
+投资上，ET 当前仍应主要按 fee-based midstream 和 MLP 分配能力定价，而不是按 AI 成长股定价。Q1 2026 约 `90%` Adjusted EBITDA 来自 fee margin，天然气相关资产贡献约 `40%` Adjusted EBITDA，分部收入仍由 NGL、原油、Sunoco 燃料分销等大宗商品吞吐驱动。AI 数据中心相关收入当前占比估计仍低于 `1%`，但在已披露天然气 backlog 逐步投运后，2027-2029 年可能贡献 `$0.5-1.5B+/年` 的高可见度 fee revenue 和 `$0.3-1.0B+/年` EBITDA 级别增量，取决于费率、投运节奏、客户 FID 和许可。
+
+## 1. 公司整体业务、投资人认知和产业链位置
+
+### 1.1 业务定位
+
+ET 是公开交易的有限合伙企业，资产覆盖美国 `44` 个州，约 `140,000` 英里管道和相关能源基础设施。官方口径的核心业务包括：
+
+| 层级 | ET 业务 | 产业链位置 | 收入/利润性质 |
+|---|---|---|---|
+| 生产端到干线 | 天然气 gathering、处理、NGL 产出、压缩、井口连接 | 上游油气生产商到主干管网之间 | 处理费、采集费、部分商品价差 |
+| 天然气主干 | Intrastate/interstate 天然气运输与储存 | Permian、Haynesville、Marcellus/Utica、Eagle Ford 等到电厂、LNG、工业、数据中心 | firm transportation、reservation fee、storage fee，长约为主 |
+| NGL 链 | NGL 管输、分馏、储存、出口；Mont Belvieu、Nederland、Marcus Hook | 页岩气副产物到化工、燃料、出口市场 | 管输/分馏/装船费，少量营销价差 |
+| 原油链 | 原油管输、集输、终端、出口/内陆节点 | Permian/Bakken/加拿大原油到炼厂与出口 | 运输费、终端费，部分合资收益 |
+| 下游/权益 | Sunoco LP、SunocoCorp、USA Compression | 燃料分销、终端、压缩服务 | 分配现金流、合并报表影响大 |
+
+投资人眼中的 ET 通常是：大型、分散、现金流强、分配收益率高、税务结构为 MLP/K-1、资产负债表有杠杆但现金流覆盖能力较强的美国中游能源股。它不是纯天然气股，也不是纯油价 beta；官方 Q1 2026 材料显示 fee margin 约 `90%`，spread `0-5%`，commodity `5-10%`，因此短期 EBITDA 对商品价格敏感度低于上游 E&P，但对管输量、项目投运、融资成本、监管/许可和客户信用高度敏感。
+
+### 1.2 最近 3 年重大业务变动、转型和收购
+
+| 时间 | 事件 | 金额/规模 | 战略含义 |
+|---|---:|---:|---|
+| 2023-05 | 完成/推进 Lotus Midstream 收购 | 交易值约 `$1.45B`，含 `$900M` 现金和约 `44.5M` ET common units | 扩大 Permian 原油中游平台，增强 Midland/Cushing/Permian crude 连接 |
+| 2023-11 | 完成 Crestwood Equity Partners 合并 | 全股票交易，公告交易值约 `$7.1B`，含承担约 `$3.3B` 债务 | 强化 Williston、Delaware、Powder River 等 basin 暴露，扩大 gathering/processing 与 NGL 供应 |
+| 2024-07 | 完成 WTG Midstream 收购 | 最终对价约 `$2.275B` 现金 + `50.8M` ET units；WTG 带来约 `6,000+` 英里 gas gathering、多个处理厂、BANGL NGL 管线权益 | 明显加码 Midland Basin 天然气处理和 NGL 供给，增强后端 NGL 分馏/管输/出口协同 |
+| 2025-12 | 暂停 Lake Charles LNG 开发 | Lake Charles LNG 原规划约 `16.5 mtpa` LNG 出口项目 | 资本配置从高风险 LNG FID 转向更高确定性天然气管网 backlog；这是一次重要资本纪律信号 |
+| 2026-05 | 2026 指引上修，天然气/数据中心 backlog 明确化 | 2026E Adj. EBITDA `$18.2-18.6B`，growth capex `$5.5-5.9B`；签约管输容量 `6+ Bcf/d`、费用 `$25B+` | AI/数据中心、电厂、utility demand-pull 变成天然气管网扩建主线之一 |
+
+这三年 ET 的真实转型不是从能源公司转为 AI 公司，而是从“大型多商品中游平台”进一步转向 **Permian 天然气/NGL一体化 + demand-pull 天然气电力负荷 + 长约 fee backlog**。暂停 Lake Charles LNG 很关键：公司选择把资本投入更多中短期可合同化、可分段投运、风险/回报更好的天然气管线和负荷连接项目。
+
+### 1.3 最新股价、估值、利润率和财务健康
+
+市场快照：
+
+| 指标 | 数值 | 日期/时间 | 口径 |
+|---|---:|---|---|
+| 股价 | `$18.95` | 2026-06-11 19:17 UTC | 盘中/近实时快照 |
+| 市值 | `$65.21B` | 2026-06-11 | 盘中快照 |
+| Trailing PE | `15.79x` | 2026-06-11 | 价格/EPS `$1.20` |
+| Forward PE | `约 12.7x` | 2026-06-11 | StockAnalysis 统计页 |
+| PS | `约 0.71x` | 2026-06-11 | StockAnalysis 统计页 |
+| Forward PS | `约 0.58x` | 2026-06-11 | StockAnalysis 统计页 |
+| 年化分配 | `$1.35/unit` | 2026Q1 分配 `$0.3375` 年化 | 2026-05 公告 |
+| 分配收益率 | `约 7.1%` | 2026-06-11 | `$1.35 / $18.95` |
+| Q1 2026 收入增速 | `+32.1% YoY` | 2026Q1 | 收入 `$27.771B` vs `$21.020B` |
+| Q1 2026 毛利率 | `23.9%` | 2026Q1 | `(收入 - Cost of products sold) / 收入` |
+| Q1 2026 经营利润率 | `10.7%` | 2026Q1 | Operating income / revenue |
+| Q1 2026 净利率 | `4.5%` 归属合伙人；`7.1%` consolidated net income | 2026Q1 | MLP 有少数股东权益，需区分 |
+
+资产负债表：
+
+| 指标 | 2026-03-31 | 2025-12-31 | 评估 |
+|---|---:|---:|---|
+| 总资产 | `$147.482B` | `$141.286B` | 资产规模继续扩张，PP&E 为核心 |
+| Current assets | `$22.263B` | `$18.233B` | 商品库存/应收等随 Sunoco、NGL、原油业务波动 |
+| Current liabilities | `$19.043B` | `$14.955B` | 流动比率约 `1.17x`，中游 MLP 可接受但不是低杠杆资产负债表 |
+| PP&E net | `$104.042B` | `$102.142B` | 管网/终端/处理厂重资产属性强 |
+| Long-term debt, less current maturities | `$69.317B` | `$68.308B` | 绝对债务高，是估值折扣和利率敏感来源 |
+| Total equity | `$49.737B` | `$49.010B` | 权益基数稳定 |
+| Revolver 可用额度 | `$3.45B` | 2026-03-31 | 流动性充足 |
+| 2026-01 债券发行 | `$3.0B` senior notes | 2031/2036/2056 到期，票息 `4.55%/5.35%/6.30%` | 主要用于再融资，不是单纯扩杠杆 |
+
+财务健康结论：健康但不轻资产。ET 的核心安全垫来自 `$18B+` Adjusted EBITDA 指引、fee-based 合同结构、DCF 覆盖分配、长寿命资产和可用 revolver；主要风险来自约 `$69B+` 长债、高资本开支周期、监管许可、利率和 MLP 资本市场窗口。用 2026E Adjusted EBITDA 中点 `$18.4B` 粗算，long-term debt / EBITDA 约 `3.8x`，若计入当前债务和合并子公司复杂结构，经济杠杆接近中游行业可接受但需继续控制的区间。
+
+## 2. 最近五个财报季度：核心数字、订单/交期和业务拆分
+
+说明：ET 不披露传统制造业意义上的 backlog/bookings/B2B。本文把“订单与交期”定义为已披露的 long-term firm transportation、项目 FID、长期出口合同、处理/分馏/管输扩容项目和投运窗口；未披露取消率时只列出合约条件和 FID/LOI 风险。
+
+| 财报季度 | 总收入 / YoY | 归属合伙人净利 | Adj. EBITDA / YoY | DCF attributable to partners | 业务收入与分部 EBITDA | 订单/Backlog/交期 | AI数据中心相关收入占比 |
+|---|---:|---:|---:|---:|---|---|---|
+| 2026Q1（最新，2026-03-31） | `$27.771B`，`+32.1%` | `$1.254B`，EPS `$0.35` | `$4.937B`，`+20.5%` | `$2.704B`，`+17.2%` | 分部 EBITDA：Intrastate `$437M`；Interstate `$519M`；Midstream `$887M`；NGL/refined `$1.163B`；Crude `$869M`；SUN `$858M`；USAC `$188M`；All other `$16M`。收入：NGL/refined `$6.673B`、Crude `$7.758B`、Midstream `$3.044B`、SUN `$10.690B`。 | 2026E EBITDA 指引上调至 `$18.2-18.6B`；growth capex `$5.5-5.9B`；Oracle `~900 MMcf/d` 第一条 lateral 已流气；Nexus Hubbard `~150 MMcf/d` end-2026；Hugh Brinson Phase I/II Q4 2026/Q1 2027；Mustang Draw I full service 2026-06。 | 直接收入估计 `<1%`；但新增 backlog 中天然气/数据中心是最重要增量之一。 |
+| 2025Q4（2025-12-31） | `$25.320B`，`+29.6%` | `$928M`，EPS `$0.25` | `$4.182B`，vs 2024Q4 `$3.884B`，`+7.7%` | `$2.04B`，vs `$1.98B` | 分部 EBITDA：Intrastate `$355M`；Interstate `$523M`；Midstream `$720M`；NGL/refined `$1.078B`；Crude `$722M`；SUN `$646M`；USAC `$154M`；All other `-$16M`。NGL terminal volumes `1.639 MMbbl/d`，fractionation `1.177 MMbbl/d`，crude transport `7.256 MMbbl/d`。 | Lake Charles LNG 暂停，资本转向天然气管网；2026 初始指引 `$17.45-17.85B` EBITDA、growth capex `$5.0-5.5B`；Oracle 第一站 2026-01 开始供气；NGL exports Q4 `+12%`，crude transport `+6%` 创纪录。 | 仍极低；但数据中心和电厂天然气负荷开始进入 2026 backlog 表。 |
+| 2025Q3（2025-09-30） | `$19.954B`，`-3.9%` | `$1.02B`，EPS `$0.28` | `$3.838B`，vs `$3.959B`，`-3.1%`，主要受一次性项目影响 | `$1.90B`，vs `$1.99B` | 分部 EBITDA：Intrastate `$230M`；Interstate `$431M`；Midstream `$751M`；NGL/refined `$1.054B`；Crude `$746M`；SUN `$489M`；USAC `$160M`。Midstream gathered `21.581 BBtu/d`，Interstate transported `18.013 BBtu/d`。 | Oracle 三个数据中心约 `900 MMcf/d` 长约明确；Entergy Louisiana `250,000 MMBtu/d`；Bethel storage 扩容至 `12+Bcf`；Intrastate 从优化量转向长期第三方合同，transportation fees 增加但优化价差下降。 | 基本为零；AI负荷尚未形成可单独识别收入。 |
+| 2025Q2（2025-06-30） | `$19.242B`，`-7.2%` | `$1.16B`，EPS `$0.32` | `$3.87B`，vs `$3.76B`，`+2.9%` | `$1.96B`，vs `$2.04B` | 分部 EBITDA：Intrastate `$284M`；Interstate `$470M`；Midstream `$768M`；NGL/refined `$1.033B`；SUN `$454M`；USAC `$149M`；All other `-$24M`。Interstate transported `18.153 BBtu/d`，Midstream gathered `21.329 BBtu/d`，NGL transport `2.331 MMbbl/d`。 | Desert Southwest 初版 `1.5 Bcf/d`、`$5.3B`、Q4 2029；Hugh Brinson Phase II FID 后全线能力 `2.2 Bcf/d`；Bethel storage FID；Nederland Flexport 增加最高 `250 kbpd` NGL export capacity。 | 基本为零。 |
+| 2025Q1（2025-03-31） | `$21.020B` | `$1.323B`，EPS `$0.37` | `$4.098B`，vs `$3.88B`，`+5.6%` | `$2.307B`，vs `$2.36B` | 对应 2026Q1 的比较基准：Interstate transported `18.204 BBtu/d`，Midstream gathered `20.411 BBtu/d`，NGL fractionation `1.090 MMbbl/d`，NGL/refined terminal volumes约 `1.45 MMbbl/d`。 | growth capex `$955M`，maintenance `$165M`；进入 2025 年时主要增长仍是 Permian、NGL、原油和天然气传统负荷。 | 基本为零。 |
+
+关键观察：
+
+1. Q1 2026 是拐点季度：不是因为 AI 收入已经很大，而是因为数据中心/电厂天然气长约进入公开 backlog，并带动 2026 指引和 capex 上修。
+2. NGL/refined 产品业务目前仍是最大分部 EBITDA 来源，Q1 2026 分部 EBITDA `$1.163B`，占公司 consolidated Adj. EBITDA 约 `23.6%`。
+3. 天然气相关分部（Intrastate + Interstate + Midstream，加部分 USAC/All other）是未来增长主线，官方说天然气相关资产贡献约 `40%` Adjusted EBITDA。
+4. Sunoco/Parkland 合并使收入和少数股东利润波动更大，不能把 consolidated revenue 增速直接理解为 ET 母体同等质量增长。
+
+## 3. 2026 最新指引、收入占比和重点业务
+
+### 3.1 2026E Adjusted EBITDA 占比
+
+官方 2026E Adjusted EBITDA breakout：
+
+| 业务 | 2026E EBITDA 占比 | 以指引中点 `$18.4B` 估算 EBITDA | 主要增长/压力 |
+|---|---:|---:|---|
+| NGL & Refined Products | `24%` | `~$4.42B` | Permian NGL、fractionation、Nederland/Marcus Hook 出口、Frac IX、Lone Star/Gateway |
+| Natural Gas Inter & Intrastate Pipelines & Storage | `19%` | `~$3.50B` | Hugh Brinson、Oracle/Nexus/Entergy/电厂连接、Desert Southwest 前期、storage |
+| Midstream | `18%` | `~$3.31B` | Mustang Draw I/II、WTG/Crestwood 协同、Permian gathering/processing |
+| Crude Oil | `18%` | `~$3.31B` | Crude record volumes、Bayou Bridge、Southern Illinois Connector、Price River |
+| SUN、USAC & Other | `21%` | `~$3.86B` | Sunoco/Parkland、USAC compression、power-related small businesses |
+
+从“公司侧收入”看，NGL、Crude、Sunoco 相关商品收入会很大，但毛利率/EBITDA 质量不能直接按 revenue 排序。ET 更适合用 segment margin、Adjusted EBITDA、DCF 和项目费率衡量。
+
+### 3.2 2026 增长资本投向
+
+官方 2026E growth capital `$5.5-5.9B`（不含 SUN 与 USAC），按 2026-05 材料：
+
+| 资本投向 | 占比 | 主要项目 | 投资含义 |
+|---|---:|---|---|
+| Midstream | `~27%` | Mustang Draw I/II、Permian gathering、treating、compression、well connects | 供给端抓 Permian gas/NGL 增量 |
+| Intrastate Natural Gas Transportation | `~23%` | Hugh Brinson、data center expansions、Bethel storage、小 lateral/tie-in | 直接连接 Texas 电力/数据中心/LNG/工业需求 |
+| NGL & Refined Products | `~21%` | Nederland refrigerated storage、Frac IX、Lone Star Express、Sabina 2、Delaware Basin NGL looping、storage upgrades | 把 Permian NGL 从井口到出口/化工端闭环 |
+| Interstate | `~17%` | Desert Southwest、FGT optimization、Springerville Lateral、data center expansions、gas-fired generation facilities | 跨州供气与西南/佛州/电厂需求 |
+| Crude & All Other | `~12%` | Price River、Southern Illinois Connector、Bayou Bridge、optimization、gas-fired generation facilities | 原油与内部供电优化，AI相关性较低 |
+
+### 3.3 跳过或低优先级业务
+
+为保持 AI/高增长焦点，以下业务在后续产品级预测中低权重处理：
+
+| 业务/产品 | 为什么低权重 | 是否仍财务重要 |
+|---|---|---|
+| Sunoco 零售/燃料分销和 Parkland 整合 | 收入大但商品通过性强，AI 相关性弱，少数股东权益复杂 | 是，影响 consolidated revenue 和 cash distributions |
+| 传统 crude oil transport/terminal（不含新增 Bayou Bridge/DAPL/Southern Illinois） | 高现金流但增长更多来自常规原油吞吐和区域价差 | 是，Q1 2026 crude EBITDA `$869M` |
+| 传统 refined products pipeline | 稳定但不是 AI 基建瓶颈 | 中等 |
+| Lake Charles LNG | 2025-12 已暂停开发；仍可能有第三方投资兴趣，但不应作为 2026-2027 主线 | 暂时低 |
+| ET 自建 8 个 10MW 运营用天然气发电设施 | 对自身可靠性有帮助，绝对规模仅 `80MW` | 小 |
+
+### 3.4 重点和潜力小业务/小产品
+
+| 优先级 | 产品/项目 | 为什么不能漏掉 |
+|---|---|---|
+| 1 | 数据中心/电厂 firm natural gas transportation 与 last-mile lateral | AI 上电最直接相关，capex light、长约、reservation fees；披露容量和费用最清晰 |
+| 1 | Hugh Brinson Pipeline | Phase I `1.5 Bcf/d` sold out，Phase II `2.2 Bcf/d`，总资本约 `$2.7B`，Q4 2026/Q1 2027 投运，直接服务 Texas 负荷和数据中心/电厂增长 |
+| 1 | Natural gas storage：Bethel expansion | 工作气容量从约 `6 Bcf` 翻倍到 `12+ Bcf`，对电力负荷峰谷和 data center 可靠供气重要 |
+| 1 | Desert Southwest Expansion | `2.3 Bcf/d`、`$5.6B`、Q4 2029，虽长周期但对 Arizona/西南 high-tech/data center 供气战略重要 |
+| 2 | Mustang Draw I/II 处理厂 | 每座 `275 MMcf/d`，将 Permian gas 转化为可运输 gas 和 NGL feedstock，是后端 NGL/管输增长源头 |
+| 2 | NGL出口/分馏扩容：Frac IX、Lone Star、Delaware Basin looping、Nederland/Marcus Hook | 不是 AI，但当前现金流最大、订单/扩容清楚、Permian NGL 与出口需求确定性高 |
+| 3 | USAC compression 暴露 | ET 拥有 USAC GP 和约 `32%` units；天然气流量增长和电厂/数据中心供气会提升压缩需求，但 ET 母体价值捕获间接 |
+
+## 4. 高增长/关键产品和业务：当前收入贡献、重要性、紧急性和供需
+
+评分说明：1=低，5=极高。收入贡献为 ET 当前或未来 fee revenue / segment EBITDA 的估算，不等同于客户支付的天然气商品总额。
+
+| 关键业务/产品 | 当前对 ET 收入/EBITDA 贡献 | 收入增速 | AI基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价能力 | 证据和判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 数据中心/电厂 firm gas transportation、last-mile lateral、storage | 当前可识别 AI/data-center 直接收入估计 `<$100-200M/年` run-rate；已签约 `6+ Bcf/d` backlog 对应 `$25B+` 未来 fee | 当前低基数高增；2027-2029 可能 `50%+ CAGR` | 5 | 5 | 5 | 4 | Oracle `~900 MMcf/d`、Nexus `~150 MMcf/d`、Entergy `250k MMBtu/d`、Oklahoma `~300 MMcf/d`、Fermi/CloudBurst/AR 等；time-to-power 使 firm fuel path 成硬约束 |
+| Hugh Brinson Pipeline | 当前 `0`；2027 年中前后进入收入贡献；按 `$2.7B` capex 和 5-7x EBITDA multiple 粗估年 EBITDA `$385-540M` | 从 0 到数亿美元 | 5 | 5 | 4 | 4 | Phase I `1.5 Bcf/d` sold out；Phase II `2.2 Bcf/d`；Q4 2026/Q1 2027；DFW/Texas 市场和数据中心/电厂增长 |
+| Desert Southwest Expansion | 当前 `0`；一年前仍主要是许可/预订，不是收入 | 2029 才进入大收入 | 4 | 3 | 5 | 4 | `520` 英里、48 英寸、`2.3 Bcf/d`、最高 `$5.6B`、Q4 2029；Arizona high-tech/data center 需求，但许可和 ROW 风险高 |
+| Midstream Permian gas processing：WTG + Mustang Draw I/II | Q1 2026 Midstream revenue `$3.044B`、EBITDA `$887M`；Mustang Draw I/II 合计 `550 MMcf/d` 新处理能力 | 中高，Permian volumes + WTG | 3 | 4 | 4 | 3 | Q1 gathered volumes `21.680 BBtu/d` 创纪录；Mustang Draw I 2026-06 full service，II Q4 2026 |
+| NGL transportation/fractionation/export | Q1 2026 revenue `$6.673B`，EBITDA `$1.163B`；2026E EBITDA 约 `$4.4B` | 中高，Q1 NGL transport `+12%`、fractionation `+11%`、exports `+19%` | 1 | 3 | 4 | 4 | Mont Belvieu/Nederland/Marcus Hook/Frac IX/Lone Star/Gateway；非 AI，但现金流和 Permian 协同最强 |
+| Crude oil transport / Bayou Bridge / Southern Illinois / DAPL North | Q1 2026 revenue `$7.758B`，EBITDA `$869M`；crude transport `+8%` record | 中低到中 | 1 | 2 | 3 | 3 | 高现金流，但不属于 AI 基建主线；新增 Bayou Bridge、Southern Illinois 和 DAPL North 仍有项目弹性 |
+| USAC compression 暴露 | Q1 2026 USAC segment EBITDA `$188M` consolidated；ET 持有 GP 和约 `46M` units | 中，随 gas throughput 增长 | 2 | 3 | 4 | 3 | 压缩是供气链必需环节，AI 相关性间接，J-W Power acquisition 影响 2026 指引 |
+
+## 5. 一年后收入贡献三情景
+
+口径：一年后指 2027 年中附近 run-rate。官方未披露项目级收入时，采用以下假设：firm transportation fee `$0.30-0.80/MMBtu`，高价值长距/新建项目可更高；管线项目 EBITDA multiple `5-7x` 作为粗略回报锚；实际取决于 tariff、reservation fee、commodity retainage、合资权益和投运日期。
+
+| 产品/业务 | 基准情景：2027 年中收入/增速/评分 | 乐观情景 | 极度乐观情景 |
+|---|---|---|---|
+| 数据中心/电厂 firm gas transportation + laterals | 年化 fee revenue `$300-600M`；相对 2026 低基数 `+100%+`；重要性 5、紧急性 5、供需 4、溢价 4。Oracle 三站点、Nexus 初始量、Oklahoma 部分投运，AR/Fermi/CloudBurst仍部分待 FID。 | `$600M-1.0B`；Oracle 全量爬坡更快，Nexus/AR/新增州项目 FID，部分客户为交期支付高 reservation fee；供需 5、溢价 4。 | `$1.0-1.5B+`；6+ Bcf/d backlog 中更多项目提前投运/签 NTP，hyperscaler 继续抢 firm gas path；供需 5、溢价 5。 |
+| Hugh Brinson Pipeline | 2027 年中 Phase I/II 基本投运，年化 revenue `$450-700M`、EBITDA `$350-500M`；重要性 5、紧急性 5、供需 4、溢价 4。 | revenue `$700-900M`；backhaul `~1 Bcf/d` 利用率较快，DFW/utility/LNG hub 需求强；供需 5。 | revenue `$900M-1.2B`；backhaul 与数据中心/电厂追加需求同时拉满，压缩扩容提前；溢价 5。 |
+| Desert Southwest Expansion | 2027 年中 revenue `0` 或极小开发费；主要价值是签约/许可推进；重要性 4、紧急性 3、供需 5、溢价 4。 | formal FERC application、客户承诺提高，长交期 pipe/compression 锁定；仍几乎无收入。 | 可披露更多 anchor shipper/utility/data center 合同，资本市场提前重估，但收入仍在 2029 后。 |
+| Midstream Permian processing | 年化 revenue `$12-14B`，EBITDA `$3.4-3.8B`；Mustang Draw I/II 完整贡献，增速 `8-15%`；AI重要性 3、供需 4、溢价 3。 | EBITDA `$3.8-4.2B`；WTG synergies、高利用率、NGL价差改善；供需 4。 | EBITDA `$4.2B+`；Permian gas/NGL volume 超预期，处理和管输 bottleneck 化；溢价 4。 |
+| NGL transport/fractionation/export | 年化 revenue `$27-32B`，EBITDA `$4.6-5.0B`；增速 `5-12%`；AI重要性 1、供需 4、溢价 4。 | EBITDA `$5.0-5.6B`；Frac IX、Lone Star、Nederland/Marcus Hook 更快爬坡，出口溢价继续。 | EBITDA `$5.6B+`；全球 LPG/ethane 需求强、美国出口瓶颈持续，ET export/fractionation 定价权提升。 |
+| Crude oil projects | 年化 EBITDA `$3.2-3.6B`；增速 `0-8%`；AI重要性 1。 | `$3.6-4.0B`，Bayou Bridge/Southern Illinois/DAPL North 进展顺利。 | `$4.0B+`，加拿大/Permian crude flows 和 demand-pull 合约超预期。 |
+| USAC compression | ET consolidated USAC EBITDA contribution年化 `$0.8-0.9B`；增速来自 J-W Power、market rates、gas throughput。 | `$0.9-1.0B`。 | `$1.0B+`，data center/power gas load 带来压缩 fleet 紧缺。 |
+
+## 6. BOM、每 MW/rack/GPU/optical port 内容量和价格传导链
+
+### 6.1 ET 在 AI 基建 BOM 中的位置
+
+ET 不进入 GPU、HBM、光模块、交换机、机柜、电源模块、UPS 或液冷 BOM。它进入的是 **AI 园区能源 BOM 的燃气路径**：
+
+`Permian/Haynesville/其他 gas supply -> gathering/processing/compression -> intrastate/interstate pipeline -> storage -> lateral/meter -> onsite generator / utility gas plant / fuel cell -> substation / BESS / UPS -> data hall -> rack -> GPU/ASIC`
+
+ET 的收费层包括：
+
+1. Gathering/processing fee：从井口/处理厂拿 volume，剥离 NGL。
+2. Firm transportation reservation fee：客户为确定容量付费，通常比 interruptible service 更稳定。
+3. Variable transport / fuel retainage：随实际流量变化。
+4. Storage fee：季节性、峰谷、可靠性和调度价值。
+5. Lateral/tie-in / meter / compression：last-mile 连接、压缩和小型项目资本回收。
+6. NGL value chain fee：处理副产 NGL 后的管输、分馏、储存、出口。
+
+### 6.2 每 MW 的燃气和 ET 内容量
+
+工程换算：
+
+- `1 MW` 连续电功率 = `24 MWh/day`。
+- 天然气机组 heat rate 粗略 `7-9 MMBtu/MWh`，即 `1 MW` gross generation 需要约 `168-216 MMBtu/day`。
+- AI 数据中心若 `PUE=1.15-1.30`，每 `1 MW IT load` 需要约 `193-281 MMBtu/day` 天然气；基准用 `~216 MMBtu/day/MW IT`。
+- `1 Bcf/d` 约等于 `1,000,000 MMBtu/day`，可支持约 `4.6-6.0 GW` gross gas-fired generation，或约 `3.8-5.0 GW` IT load（PUE 1.2）。
+
+按 fee 口径估算 ET 内容量：
+
+| 项目 | 假设 | ET fee revenue 内容量 |
+|---|---:|---:|
+| 每 `1 MW IT` | `216 MMBtu/day`，transport/storage/lateral blended fee `$0.30-0.80/MMBtu` | `$23,700-63,100/MW-year` |
+| 每 `100kW rack` | `0.10 MW IT` | `$2,370-6,310/rack-year` |
+| 每 `160kW rack` | `0.16 MW IT` | `$3,790-10,100/rack-year` |
+| 每 `72 GPU` 高密 rack | 假设 `120kW/rack` | `$2,840-7,570/rack-year`，即 `$39-105/GPU-year` |
+| 每 GPU | 假设 `~600 GPU/MW IT` | `$40-105/GPU-year` |
+| 每 optical port | 假设 `0.6-1.4` 高速端口/GPU | `$29-175/port-year`，能源管输费仅是光端口价值的极薄间接层 |
+
+含义：AI 每 GPU 的天然气管输费非常小，不能把 ET 写成每 GPU 高内容量供应商。但当园区达到 `500MW-2GW`，薄层 fee 乘以巨大 MW 和 10-20 年合约期，就变成高确定性的数亿美元到十亿美元级收入池。
+
+### 6.3 已披露项目的 MW 等效
+
+| 合同/容量 | 气量 | 支撑 gross generation 粗估 | 支撑 IT load 粗估（PUE 1.2） | ET 年化 fee revenue 粗估 |
+|---|---:|---:|---:|---:|
+| Oracle data centers | `~900 MMcf/d` | `4.2-5.4 GW` | `3.5-4.5 GW` | `$99-263M/年`，按 `$0.30-0.80/MMBtu` |
+| Nexus Hubbard | `~150 MMcf/d` 初始 | `0.7-0.9 GW` | `0.6-0.75 GW` | `$16-44M/年` |
+| AR data center LOI | `~150 MMcf/d` | `0.7-0.9 GW` | `0.6-0.75 GW` | `$16-44M/年`，LOI 风险高 |
+| Entergy Louisiana | `250,000 MMBtu/d` | `1.2-1.5 GW` | `1.0-1.2 GW` | `$27-73M/年`；客户可增至 `1 Bcf/d` 则显著上修 |
+| Oklahoma power plant connections | `~300 MMcf/d` | `1.4-1.8 GW` | `1.2-1.5 GW` | `$33-88M/年` |
+| Fermi America | `~300,000 MMBtu/d` 初始 | `1.4-1.8 GW` | `1.2-1.5 GW` | `$33-88M/年`，subject to Fermi election |
+| Hugh Brinson capacity | `2.2 Bcf/d` west-to-east；`~1 Bcf/d` east-to-west potential | `10-13 GW` gross | `8.5-11 GW` IT equivalent | 项目 revenue 取决于 contracted tariff；按 capex回报估算比单纯 `$0.30-0.80` 更合理 |
+| Desert Southwest | `2.3 Bcf/d` | `10.6-13.7 GW` gross | `8.8-11.4 GW` IT equivalent | 2029 后贡献，2027 前主要是合同/许可价值 |
+
+### 6.4 价格传导链
+
+| 环节 | 成本/价格谁承担 | ET 捕获什么 | 价格传导能力 |
+|---|---|---|---|
+| Henry Hub/Waha/区域 gas commodity | generator / utility / hyperscaler 或 PPA 结构承担 | 仅少量 commodity/spread 暴露；主收入不是 gas price | 中低，ET 不是上游气价受益最大者 |
+| Firm transport reservation | 数据中心、utility、电厂、IPP 或其 fuel manager | 固定容量费、长期合同、take-or-pay 类现金流 | 高，尤其线路紧张和 time-to-power 急迫地区 |
+| Variable transport / fuel retainage | 随流量付费 | 可变费和 retained fuel | 中 |
+| Lateral/meter/compression | 客户或 ET capex 回收结构 | 小项目 capex + fee，通常长约绑定 | 高，last-mile location 具有局部垄断 |
+| Storage | 供气可靠性需求方 | storage fee、注采服务 | 高，AI/电厂需要可靠燃料库存和峰值供气 |
+| Power price / PPA | utility/IPP/data center | ET 不直接捕获电价，除非自有小型发电/附属业务 | 低 |
+
+## 7. 当前产能能力、采纳程度和认证/许可阶段
+
+| 产品/业务 | 当前产能/能力（美元计或物理量） | 供应链采纳程度 | 认证/许可阶段 |
+|---|---:|---|---|
+| 天然气管网总体 | `105,000+` 英里天然气 gathering/interstate/intrastate 管道；`57+ Bcf/d` throughput capacity；`~236 Bcf` storage | 已被 utility、电厂、LNG、工业和数据中心客户采用；服务约 `185` 个电厂 | 运营资产已有 FERC/州监管资质；新增项目逐项许可 |
+| 数据中心/电厂 signed capacity | `6+ Bcf/d` contracted pipeline capacity；`$25B+` expected firm transportation fees；18年加权平均期 | Oracle、Nexus、Entergy、Oklahoma power loads 等已公开；Fermi/CloudBurst/AR 部分仍有条件 | 客户合同、FID、FERC/州审批、air permit、lateral ROW 是关键 |
+| Hugh Brinson | Phase I `1.5 Bcf/d` sold out；Phase II `2.2 Bcf/d`；capex `~$2.7B` | 强，investment-grade counterparties；数据中心/电厂/DFW/LNG hub 均受益 | 建设中；Phase I Q4 2026，Phase II Q1 2027 |
+| Desert Southwest | `2.3 Bcf/d`，`520` 英里，48英寸，capex最高 `~$5.6B` | Arizona/西南 utility、high-tech、data center 需求明确，但长周期 | 2026-03 FERC pre-filing；2026Q4 计划 formal certificate application；2029Q4 in-service |
+| Springerville Lateral | `625 MMcf/d`，`125` 英里，30英寸，capex `~$600M` | 20年协议支持，替代两座煤电厂相关天然气发电 | Q4 2029 目标 |
+| FGT Phase IX / South Florida | Phase IX `525 MMcf/d`，Q4 2028；South Florida `230 MMcf/d`，Q1 2030 subject to conditions and FID | Florida load growth / power demand | FERC/项目条件 |
+| NGL系统 | NGL export capacity `1.4M+ bbl/d`；fractionation约 `1.2M bbl/d`；Frac IX `165 kbpd` Q4 2026 | 全球 LPG/ethane/化工/出口客户高度采用；Nederland ethane export agreements 多数延至 2041 | 运营资质成熟；扩容项目建设/客户合约 |
+| Permian processing | Mustang Draw I/II 各 `275 MMcf/d`；WTG assets | Permian producer volumes 支撑，和 ET downstream NGL 系统协同 | Mustang Draw I commissioning / 2026-06 full service；II Q4 2026 |
+
+## 8. 一年后产能能力、采纳程度和认证/许可三情景
+
+| 产品/业务 | 基准：2027 年中 | 乐观：2027 年中 | 极度乐观：2027 年中 |
+|---|---|---|---|
+| 数据中心/电厂 firm gas transport | `1.5-2.5 Bcf/d` 公开数据中心/电厂相关容量在服务或近服务；客户采纳为 Oracle/Nexus/Oklahoma/部分 utility；新增项目仍条件化 | `2.5-4.0 Bcf/d` 进入服务或 NTP，更多 hyperscaler/utility 签长约；Fermi/CloudBurst/AR 至少部分转正式 | `4.0 Bcf/d+` 快速合同化，ET 形成 Texas/Louisiana/Arizona firm fuel path 首选之一；价格/预付款更强 |
+| Hugh Brinson | Phase I/II 投运，`2.2 Bcf/d` west-to-east 能力；backhaul 开始贡献 | backhaul 和 small lateral 加速签约，data center/power 需求提升利用率 | 追加压缩/扩容讨论提前，Phase II 后续扩展进入规划 |
+| Desert Southwest | FERC formal application 完成/推进，长交期设备锁定；尚无收入 | anchor commitments 增加，stakeholder 风险下降 | 项目路线/客户/融资显著去风险，资本市场提前计入 2029+ EBITDA |
+| Natural gas storage | Bethel expansion 在建，可靠性价值提高但未完全贡献 | 更多数据中心/电厂燃气负荷绑定 storage service | 电力负荷管理使 storage fee 重估，新增 storage expansion 进入规划 |
+| Midstream processing | Mustang Draw I/II 完整运转，新增 `550 MMcf/d` processing ability | WTG/Permian utilization 更高，第三座/后续处理扩容推进 | Permian gas 过剩与电力/LNG/data center demand 同时拉动，处理/出管成为瓶颈 |
+| NGL出口/分馏 | Frac IX `165 kbpd` 投运；Lone Star/Delaware loop 部分贡献 | Nederland/Marcus Hook storage/chilling 与 ethane export 进一步锁约 | NGL export bottleneck 维持，ET 获取更高 terminal/storage fee |
+
+## 9. 基于订单积压和供给约束的未来一年业务增速
+
+### 9.1 订单积压推断
+
+ET 官方披露的最有价值 backlog 不是总金额的 EPC backlog，而是：
+
+- `6+ Bcf/d` contracted pipeline capacity；
+- `18 年` weighted average contract life；
+- `$25B+` expected firm transportation fees；
+- `~900 MMcf/d` Oracle data center supply；
+- `~150 MMcf/d` Nexus Hubbard initial volumes；
+- `250,000 MMBtu/d` Entergy Louisiana 20-year agreement；
+- `~300 MMcf/d` Oklahoma new power plant loads；
+- `2.2 Bcf/d` Hugh Brinson；
+- `2.3 Bcf/d` Desert Southwest；
+- NGL projects：Frac IX `165 kbpd`、Lone Star `90 kbpd+`、Delaware NGL loop `150 kbpd`、Sabina 2 up to `~70 kbpd`、Nederland/Marcus Hook storage/chilling。
+
+取消率/延迟判断：
+
+| 合同/项目类型 | 取消率推断 | 主要风险 |
+|---|---|---|
+| 已投运/建设中、long-term firm commitments | 低 | 客户信用、力 majeure、监管变更 |
+| Sold-out Hugh Brinson Phase I/II | 低到中低 | 施工、压缩设备、ROW、成本超支；客户多为 investment-grade |
+| Oracle/Nexus/Entergy/Oklahoma | 低到中 | 数据中心/电厂项目进度、air permit、地方政治、发电设备交期 |
+| AR LOI、Fermi election、CloudBurst FID、FGT South Florida conditions | 中高 | LOI/FID/客户选择权没有最终绑定 |
+| Desert Southwest/Springerville/FGT 远期项目 | 中 | FERC、州/地方许可、stakeholder、资本成本、客户需求变化 |
+
+### 9.2 未来一年增速三情景
+
+| 业务 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| Consolidated Adjusted EBITDA | 2026 指引 `$18.2-18.6B`；2027 年中 run-rate `+5-9%`，约 `$19.2-20.0B` | `+9-14%`，`$20.0-21.0B` run-rate | `+15%+`，`$21B+` run-rate，需 Hugh Brinson 快速贡献、NGL强、SUN/USAC顺利 |
+| Natural gas pipelines/storage | 2027 年中 run-rate `+12-20%` | `+20-30%` | `+30%+`，数据中心/电厂项目密集转服务 |
+| Midstream | `+8-15%` | `+15-22%` | `+22%+` |
+| NGL/refined products | `+5-12%` | `+12-20%` | `+20%+`，出口/分馏瓶颈持续 |
+| Crude oil | `0-8%` | `8-12%` | `12%+` |
+| AI/data center 直接相关 fee revenue | 从低基数到 `$300-600M/年` run-rate | `$600M-1.0B/年` | `$1.0B+` |
+
+判断：未来一年 ET 的整体增速不会像 AI 服务器、光模块或电力设备那样爆炸，因为基数太大。但天然气管网子业务可能明显快于公司整体，且现金流质量高于 commodity pass-through revenue。投资人真正要跟踪的不是总收入，而是天然气相关 Adjusted EBITDA、contracted capacity、投运 MMcf/d、firm fee revenue 和 capex-to-EBITDA multiple。
+
+## 10. 竞争格局、技术路线、替代方案和客户切换成本
+
+### 10.1 主要竞争对手
+
+| 赛道 | 主要竞争者 | ET 相对优势 | ET 劣势/风险 |
+|---|---|---|---|
+| 天然气管输/储存 | Kinder Morgan、Williams、Enbridge、TC Energy/DT Midstream、ONEOK、MPLX、Enterprise Products、regional pipelines、utilities | Texas/Permian/Louisiana footprint、intrastate + interstate + storage + NGL 一体化、existing ROW、large balance sheet | 项目多、监管风险大；一些区域不如 WMB/KMI/utility 本地网络深 |
+| Permian gathering/processing | Targa、Enterprise Products、ONEOK、MPLX、Kinetik、DT Midstream、private midstream | WTG/Crestwood/Lotus 后增强 Permian footprint；后端 NGL/fractionation/export 协同强 | Targa/EPD 在 NGL 和 Permian 也很强，竞争会压缩新项目回报 |
+| NGL fractionation/export | Enterprise Products、Targa、ONEOK、Phillips 66、MPLX、Energy Transfer | Mont Belvieu、Nederland、Marcus Hook、长约 export storage/chilling | EPD/Targa 规模和客户关系强，出口 capacity 竞争激烈 |
+| Crude/NGL long-haul | EPD、Plains、Enbridge、ONEOK、MPLX、Magellan assets、Kinder Morgan | 多 basin、终端、合资项目 | 原油增长不如天然气/电力主题强 |
+| Data center fuel/power path | Utilities/IPP（Entergy、AEP、Duke、Dominion、Vistra、Constellation、NextEra）、gas pipeline peers、onsite power developers | ET 能提供燃气路径，尤其 Texas/Louisiana/Permian | ET 不拥有完整发电/PPA stack，最终上电还受发电设备、变压器、许可限制 |
+
+### 10.2 ET 的新技术/新产品是否是未来主流
+
+ET 的“新产品”不是技术设备，而是商业结构和项目组合：
+
+1. **Data center firm gas supply / last-mile lateral**：2026-2027 会成为 AI 园区上电的主流补充路线之一，尤其在 Texas、Louisiana、Arizona、Oklahoma、Arkansas 等燃气资源和电力负荷增长交叉地区。它不会替代电网，而是与 utility interconnection、BESS、燃气电厂、fuel cell 和 PPA 混合。
+2. **Hugh Brinson 类 demand-pull pipeline**：很可能是未来几年美国天然气管网增长的主流项目形态：从 supply basin 到 high-growth load center，以长约锁定容量，以数据中心/电厂/工业/LNG 共同分摊需求。
+3. **Storage + firm transport + power plant connections**：AI 负荷需要高可靠供气，storage 的调峰价值会提升。这是 ET 相比只做单段管线的优势。
+4. **NGL一体化**：不是 AI 主线，但 Permian gas 增产会持续带来 NGL 处理、分馏、出口需求，是 ET 现金流基石。
+
+### 10.3 替代方案和风险
+
+| 风险/替代 | 对 ET 的影响 | 需要跟踪的反证指标 |
+|---|---|---|
+| 电网加速并网、flexible interconnection 成功 | 降低 onsite gas 和 dedicated gas plant 的必要性 | utility queue 缩短、data center 直接 grid power approval 增多 |
+| SOFC/fuel cell、核电、地热、长时储能替代燃气 | 长期压低燃气发电需求，但 SOFC 仍可能用天然气重整，短中期不完全负面 | Bloom/Oracle 项目交付、SMR/geothermal PPA 实际投运 |
+| 燃气排放许可/社区反对 | 直接拖慢 data center gas-to-power 项目 | air permit 延迟、NOx/CO2 规则收紧、地方诉讼 |
+| 数据中心 CapEx 下修或 GPU 利用率下降 | 使新增数据中心燃气负荷减少或延期 | hyperscaler capex guide、CoreWeave/Oracle backlog conversion、GPU租赁价格 |
+| FERC/ROW/州监管延误 | 影响 Desert Southwest、Springerville、FGT 等长周期项目 | FERC docket、open house 反对、route changes、cost inflation |
+| 气价/区域 basis 大幅上行 | 客户电力成本上升，部分项目改用其他能源 | Waha/Henry Hub basis、PPA价格、客户项目 IRR |
+| 竞争者抢签 anchor shipper | 降低 ET 新项目 utilization 或 tariff | KMI/WMB/EPD/ONEOK 等相似项目公告 |
+
+### 10.4 客户替换成本
+
+ET 在管线和储存上的客户替换成本高，原因是：
+
+- 物理连接不可替代：meter、lateral、compressor、interconnect、ROW 和 downstream delivery point 都是专用资产。
+- 时间成本高：AI 园区晚 `12-36` 个月上电，会损失 GPU/ASIC 折旧和云收入机会。
+- 合同周期长：ET 披露相关签约 capacity 加权平均 `18 年`，并以 firm transportation fees 为主。
+- 监管和许可路径稀缺：管线改线、空气许可、FERC/州审批和社区沟通无法快速复制。
+- 供气可靠性需要 portfolio：单一管线不如管网 + storage + multiple supply basin 可靠。
+
+替换成本不是绝对垄断。若客户仍处于 LOI/FID 前，utility/IPP、KMI/WMB/EPD/ONEOK/Enbridge、local gas distribution 或自建管线都可能竞争。一旦项目进入 firm transport + lateral + generation interconnect + financing package，切换成本会快速上升。
+
+## 11. 投资跟踪清单
+
+| 频率 | 指标 | 为什么重要 |
+|---|---|---|
+| 每季度 | ET natural gas segment EBITDA、intrastate/interstate/midstream volumes | 验证天然气增长是否真的跑赢公司整体 |
+| 每季度 | 已披露 data center / power plant MMcf/d 从 contract 到 in-service 的转换 | 这是 AI 暴露从叙事到收入的关键 |
+| 每季度 | 2026/2027 growth capex 是否继续上修、capex-to-EBITDA multiple | 防止为增长牺牲 ROIC |
+| 每季度 | DCF coverage、分配增长、债务/EBITDA、revolver liquidity | MLP 定价核心仍是分配安全 |
+| 项目事件 | Hugh Brinson 早流气、Q4 2026/Q1 2027 投运节点 | 2027 最重要单体天然气项目 |
+| 项目事件 | Oracle/Nexus/Entergy/Fermi/CloudBurst/AR 状态 | 数据中心/AI 直接暴露验证 |
+| 项目事件 | Desert Southwest FERC application、open house、stakeholder/route | 长期西南增长和 Arizona data center thesis |
+| 每季度 | NGL exports、fractionation utilization、Nederland/Marcus Hook contract extensions | 当前最大利润池和非 AI 现金流基石 |
+| 外部 | hyperscaler/Oracle/CoreWeave capex、data center power demand、air permits | 决定 gas-to-power 需求是否维持 |
+
+## 12. 主要来源
+
+官方公司资料：
+
+- Energy Transfer, Q1 2026 results and 2026 guidance, 2026-05-05: https://ir.energytransfer.com/news-releases/news-release-details/energy-transfer-reports-first-quarter-2026-results-and-updates
+- Energy Transfer, May 2026 Investor Presentation: https://energytransferpartners.gcs-web.com/static-files/d35393a7-5a6e-4411-86a0-02c6fc6bc19c
+- Energy Transfer, Q4 2025 results, 2026-02/2026-03: https://ir.energytransfer.com/news-releases/news-release-details/energy-transfer-reports-fourth-quarter-2025-results/
+- Energy Transfer, Q3 2025 results: https://ir.energytransfer.com/news-releases/news-release-details/energy-transfer-reports-third-quarter-2025-results/
+- Energy Transfer, Q2 2025 results: https://ir.energytransfer.com/news-releases/news-release-details/energy-transfer-reports-second-quarter-2025-results/
+- Energy Transfer, Q1 2025 results: https://ir.energytransfer.com/news-releases/news-release-details/energy-transfer-reports-first-quarter-2025-results/
+- Energy Transfer, Lake Charles LNG suspension, 2025-12-18: https://ir.energytransfer.com/news-releases/news-release-details/energy-transfer-announces-suspension-development-lake-charles/
+- Energy Transfer, WTG Midstream completion, 2024-07-15: https://ir.energytransfer.com/news-releases/news-release-details/energy-transfer-completes-acquisition-wtg-midstream
+- Energy Transfer, Crestwood completion, 2023-11-03: https://ir.energytransfer.com/news-releases/news-release-details/energy-transfer-completes-acquisition-crestwood
+- Energy Transfer, Lotus Midstream acquisition release: https://ir.energytransfer.com/node/42556/pdf
+
+市场与估值：
+
+- 2026-06-11 ET 盘中市场快照：price `$18.95`、market cap `$65.21B`、PE `15.79x`。
+- StockAnalysis ET valuation/statistics page（forward PE、PS、EV/EBITDA 等）：https://stockanalysis.com/stocks/et/statistics/
+- StockTitan ET financials page（FY2025 revenue、margin、debt summary，用于交叉检查）：https://www.stocktitan.net/financials/ET/
+
+项目内行业资料：
+
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+- `行业调研/AI园区电力_机电_冷却/行业调研_数据中心电力接入与高压变电_2026-06-11.md`
+- `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+- `行业调研/AI服务器_存储_芯片/行业调研_AI服务器整机与机架集成_2026-06-10.md`

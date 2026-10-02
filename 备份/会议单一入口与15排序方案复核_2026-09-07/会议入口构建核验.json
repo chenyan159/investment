@@ -1,0 +1,33 @@
+{
+  "checked_on": "2026-09-08",
+  "uniquePromptFiles": 1,
+  "checks": [
+    {
+      "conference": "DAC",
+      "promptFile": "基本面/行业调研/研究方法/会议调研方案.md",
+      "outputFileVisibleInCompiledPrompt": true,
+      "shapeValid": true
+    },
+    {
+      "conference": "FMS",
+      "promptFile": "基本面/行业调研/研究方法/会议调研方案.md",
+      "outputFileVisibleInCompiledPrompt": true,
+      "shapeValid": true
+    },
+    {
+      "conference": "RSS",
+      "promptFile": "基本面/行业调研/研究方法/会议调研方案.md",
+      "outputFileVisibleInCompiledPrompt": true,
+      "shapeValid": true
+    },
+    {
+      "conference": "Farnborough",
+      "promptFile": "基本面/行业调研/研究方法/会议调研方案.md",
+      "outputFileVisibleInCompiledPrompt": true,
+      "shapeValid": true
+    }
+  ],
+  "activeQueueWithdrawnReferences": 0,
+  "queueWrites": false,
+  "researchRuns": false
+}

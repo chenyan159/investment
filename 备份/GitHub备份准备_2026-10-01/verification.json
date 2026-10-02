@@ -1,0 +1,14 @@
+{
+  "Date": "2026-10-01",
+  "Root": "D:\\investment",
+  "RootGitInitialized": false,
+  "IgnoreChecksPassed": 24,
+  "RootIgnoreRuleCount": 17,
+  "CandidateFiles": 16186,
+  "CandidateMiB": 1503.52,
+  "CandidateFilesAtLeast50MiB": 0,
+  "RetainedPublishedAudioFiles": 7,
+  "TotalFiles": 34081,
+  "TotalMiB": 3848.12,
+  "CandidateSizeNote": "Raw file bytes only; .git metadata is omitted. No commit, clone, upload, or restore was performed."
+}

@@ -1,0 +1,327 @@
+{
+  "companies": 20,
+  "columns": 13,
+  "history_points": 60,
+  "scenario_midpoints": 120,
+  "source_iv_valid": 19,
+  "iv_missing": [
+    "HTHIY"
+  ],
+  "checks": [
+    {
+      "ticker": "NVDA",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "MSFT",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "MU",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "META",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "GOOGL",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "AMZN",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "AVGO",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "TSM",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "BABA",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "CRDO",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "ASML",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "HTHIY",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "NVT",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "EME",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "ADBE",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "TEL",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "APH",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "JBL",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "SNDK",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    },
+    {
+      "ticker": "ET",
+      "dated_quote_ok": true,
+      "pe_eps_scale_ok": true,
+      "formal_hash_ok": true,
+      "history_recalculated": 3,
+      "scenario_midpoints_checked": 6,
+      "iv_valid_or_documented_missing": true
+    }
+  ],
+  "added": [
+    "CRDO",
+    "HTHIY",
+    "NVT",
+    "EME"
+  ],
+  "removed": [
+    "NTAP",
+    "IBM",
+    "SMCI",
+    "BDC"
+  ],
+  "historical_source_changes": [],
+  "updated_pe_fields": [
+    {
+      "ticker": "NVDA",
+      "old_pe": 28.31,
+      "new_pe": 28.565773,
+      "old_forward_pe": 14.41,
+      "new_forward_pe": 14.4126
+    },
+    {
+      "ticker": "MSFT",
+      "old_pe": 27.42,
+      "new_pe": 27.543417,
+      "old_forward_pe": 20.86,
+      "new_forward_pe": 20.85624
+    },
+    {
+      "ticker": "MU",
+      "old_pe": 23.25,
+      "new_pe": 22.623158,
+      "old_forward_pe": 6.63,
+      "new_forward_pe": 6.629695
+    },
+    {
+      "ticker": "META",
+      "old_pe": 24.61,
+      "new_pe": 23.098587,
+      "old_forward_pe": 18.7,
+      "new_forward_pe": 18.698408
+    },
+    {
+      "ticker": "GOOGL",
+      "old_pe": 16.59,
+      "new_pe": 16.97382,
+      "old_forward_pe": 22.26,
+      "new_forward_pe": 22.259953
+    },
+    {
+      "ticker": "AVGO",
+      "old_pe": 46.42,
+      "new_pe": 46.956184,
+      "old_forward_pe": 18.79,
+      "new_forward_pe": 18.798065
+    },
+    {
+      "ticker": "TSM",
+      "old_pe": 32.2,
+      "new_pe": 32.465324,
+      "old_forward_pe": 19.86,
+      "new_forward_pe": 19.856693
+    },
+    {
+      "ticker": "BABA",
+      "old_pe": 24.7,
+      "new_pe": 25.44186,
+      "old_forward_pe": 11.78,
+      "new_forward_pe": 11.782668
+    },
+    {
+      "ticker": "CRDO",
+      "old_pe": 59.34,
+      "new_pe": 59.126762,
+      "old_forward_pe": 17.44,
+      "new_forward_pe": 17.444366
+    },
+    {
+      "ticker": "ASML",
+      "old_pe": 58.69,
+      "new_pe": 59.88643,
+      "old_forward_pe": 28.76,
+      "new_forward_pe": 28.759155
+    },
+    {
+      "ticker": "HTHIY",
+      "old_pe": 29.5,
+      "new_pe": 30.045044,
+      "old_forward_pe": 13.44,
+      "new_forward_pe": 13.44758
+    },
+    {
+      "ticker": "EME",
+      "old_pe": 23.51,
+      "new_pe": 24.098722,
+      "old_forward_pe": 20.53,
+      "new_forward_pe": 20.525461
+    },
+    {
+      "ticker": "TEL",
+      "old_pe": 20.05,
+      "new_pe": 20.086359,
+      "old_forward_pe": 15.86,
+      "new_forward_pe": 15.859204
+    },
+    {
+      "ticker": "APH",
+      "old_pe": 40.67,
+      "new_pe": 40.87437,
+      "old_forward_pe": 25.04,
+      "new_forward_pe": 24.845516
+    },
+    {
+      "ticker": "JBL",
+      "old_pe": 38.92,
+      "new_pe": 39.067753,
+      "old_forward_pe": 18.49,
+      "new_forward_pe": 18.494144
+    },
+    {
+      "ticker": "SNDK",
+      "old_pe": 23.94,
+      "new_pe": 23.58516,
+      "old_forward_pe": 6.66,
+      "new_forward_pe": 6.664246
+    },
+    {
+      "ticker": "ET",
+      "old_pe": 14.85,
+      "new_pe": 14.7483,
+      "old_forward_pe": 12.39,
+      "new_forward_pe": 12.389988
+    }
+  ],
+  "no_displayed_ranges": true
+}

@@ -1,0 +1,180 @@
+# 公司收入传导与价值传导评估：Ecolab（ECL）
+
+报告日期：2026-06-12  
+主口径：NTM 经营窗口，约为 2026-06-12 至 2027-06-11。  
+评估边界：只评估行业和产品需求向 Ecolab 可确认收入、可兑现利润、现金流和经营质量的传导，结论限于经营结果及传导链条。  
+资料边界：公司事实来自 `公司调研/半导体材料_化学品_基板/ECL_Ecolab_公司调研_2026-06-11.md` 与 Ecolab/SEC 最新公开披露；行业事实来自 `行业调研/` 下正式行业报告；未使用本方案排除的下游验证材料。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 公司经营传导。FY2026 指引、2027 run-rate、CoolIT 全年化和长期 Global High-Tech TAM 只作补充，不替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：Ecolab 2025 reported sales 为 **160.812 亿美元**；2026Q1 reported sales **40.661 亿美元**，同比 **+10%**，organic sales **+4%**；最新 TTM sales 约 **164.52 亿美元**。管理层 2026 指引为 reported sales **+9%-11%**、2026H2 organic sales **+6%-7%**、adjusted operating income margin 约 **19%**、adjusted EPS **8.43-8.63 美元**，该指引排除 pending CoolIT 影响。
+- 重要产品/业务线：核心 Global Water、Global High-Tech/Ovivo 半导体超纯水与回用、CoolIT direct-to-chip 液冷硬件、CaaS/3D TRASAR 数据中心流体服务、Institutional & Specialty、Pest Elimination、Life Sciences、Ecolab Digital。
+- NTM 公司收入四情景：悲观 **172-178 亿美元**；基准 **181-188 亿美元**；乐观 **189-198 亿美元**；极度乐观原始上限 **200-213 亿美元**，经证据校准后只作为乐观上限和附录跟踪。
+- 利润或 EBITDA 四情景：悲观 adjusted operating margin **17.5%-18.5%**、EBITDA 约 **41-45 亿美元**；基准 **18.8%-19.5%**、EBITDA 约 **46-50 亿美元**；乐观 **19.5%-20.3%**、EBITDA 约 **50-55 亿美元**；极度乐观 **20.2%-21.5%**、EBITDA 约 **55-61 亿美元**，但可信度低。
+- 最大传导瓶颈：CoolIT 交易尚未 close；NTM 主表只能纳入 Q3 2026 close 后的可确认 partial revenue，不能把 CoolIT 未来 12 个月销售额全额并入 Ecolab NTM。
+- 最大利润率变量：H2 energy surcharge 能否覆盖高个位数 commodity cost 上升；CoolIT 硬件 mix、并购摊销、融资利息、客户多供压价和 CaaS/3D TRASAR 服务 attach 是否抵消硬件毛利压力。
+- 最大现金流变量：Q1 2026 经营现金流 **4.459 亿美元**、CapEx **3.485 亿美元**；CoolIT 47.5 亿美元现金交易将使 pro forma leverage 接近 **3x net debt / adjusted EBITDA**，短期 FCF 转化率会受利息、整合、库存/应收和 One Ecolab 重组现金支出压制。
+- 可信度：公司基准情景为 **中高**；产品级 High-Tech/Ovivo 为 **中高**；CoolIT partial 并表为 **中**；CaaS/3D TRASAR 独立增量为 **中到低**，因为缺少 standalone 收入、attach rate 和客户合同披露。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 核心 Global Water，不含 High-Tech/Ovivo/CoolIT | 2025 Global Water fixed-currency sales **76.799 亿美元**；2026Q1 Water fixed sales **20.352 亿美元** | 约 45%-50%，视 High-Tech 剥离口径 | 公司最大收入层，工业水、食品饮料、Light/Heavy Water 和 Paper 构成稳定底盘 | A | 进入基准；按低到中个位数有机增长处理，Heavy Water/Paper 拖累单独处理 | 普通工业水处理不作为 AI 高弹性主线 |
+| Global High-Tech / Ovivo：半导体超纯水、回用、microelectronics/data center water | 公司披露 Global High-Tech 2026 pro forma 约 **15 亿美元**，含 Ovivo 和 pending CoolIT；Ovivo Electronics 2025E sales 约 **5 亿美元**，2026Q1 Water 受 Ovivo 贡献 **5pct** fixed-currency growth | pro forma 约 8%-9% | AI 芯片制造端水/厂务入口，收入证据强于主题映射 | A/B | 进入基准；半导体和数据中心 demand 强，但按项目确认和客户进度折扣 | 2027 HBM4/Rubin/advanced packaging 水回用项目加速 |
+| CoolIT direct-to-chip 液冷硬件：CDU、cold plate、liquid loop、rack manifold | Ecolab 当前并表收入为 **0**；CoolIT 预计未来 12 个月销售约 **5.5 亿美元**；交易预计 2026Q3 close | 并表前 0；NTM partial 约 1%-4% | AI 数据中心液冷硬件锚点，客户需求强但交易待完成 | B | 基准只纳入 Q3 close 后可确认 partial revenue；full run-rate 放补充口径 | 2027 full-year 并表、GB300/Rubin/ASIC rack 放量 |
+| CaaS / 3D TRASAR D2C / coolant health / facility water services | 当前嵌在 Water/Global High-Tech，standalone 无可靠披露；数据中心服务触达超过 1,000 个 data centers 的公司披露 | 无法可靠量化，估计低个位数 | 把硬件 installed base 转为 recurring 服务和水化学利润的关键 | C/D | 进入基准时只作为利润质量和服务 attach 假设，不重复计入收入 | 多年服务合同、coolant health 标准化、Water Quality IQ/Global Intelligence Center 接入 |
+| Global Institutional & Specialty | 2025 fixed sales **59.620 亿美元**；2026Q1 fixed sales **15.077 亿美元** | 约 36%-38% | 最大利润池之一，2026Q1 OI margin **23.0%** | A | 进入基准；低中个位数增长和高利润率支撑公司质量 | One Ecolab enterprise wallet share 扩张 |
+| Global Pest Elimination | 2025 fixed sales **12.192 亿美元**；2026Q1 fixed sales **3.101 亿美元** | 约 7%-8% | 高质量服务业务，增长稳定 | A | 进入基准；按高个位数 organic growth 处理 | Pest Intelligence 提升服务粘性 |
+| Global Life Sciences | 2025 fixed sales **7.061 亿美元**；2026Q1 fixed sales **2.009 亿美元** | 约 5% | 高质量成长业务，Q1 organic +11% | A | 进入基准；不是 AI 基建主线，但利润质量改善 | Bioprocessing、pharma water 和 contamination control 长期扩张 |
+| Ecolab Digital / Water Quality IQ / ECOLAB3D | 2026Q1 Digital sales **0.99 亿美元**，同比 **+24%**，年化约 **4 亿美元** | 约 2%-3%，嵌入各分部 | 软件、传感、订阅和远程监测提升服务粘性 | A/C | 进入基准但不重复加总；作为毛利和留存变量 | AI water intelligence 和跨站点水风险平台 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池，不判断 Ecolab 份额、收入确认、利润率或公司汇总。相对预期的锚为 Ecolab 2026 指引、2026Q1 业务读数、Ovivo 并表、CoolIT Q3 close 预期，以及项目内行业资料对 AI 数据中心液冷、冷却液/水处理、半导体 UPW 的 2026-2027 需求判断。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 核心 Global Water，不含 High-Tech/Ovivo/CoolIT | 2026Q1 Water organic +2%；Food & Beverage mid-single digit，Heavy Water/Paper 拖累 low-single digit | 工业生产、Paper、Basic Industries 继续弱，Water organic 接近 0%-2% | Food & Beverage 和 Light Water 正常兑现，Water organic 约 2%-4% | 新业务赢单和定价改善，Water organic 4%-6% | 核心工业周期同步修复，Water organic 6%+ | NTM 需求从低个位数到中个位数增长 | 基准符合当前预期 | 反证：Heavy Water/Paper 已显示拖累；不能把 AI 水处理景气扩到全部 Water |
+| Global High-Tech / Ovivo 半导体超纯水与回用 | Q1 Global High-Tech organic >20%；行业资料显示 advanced fab/HBM/packaging UPW/reuse 为 2026 高确定性方向 | Fab/HBM 项目延期，UPW/reuse 订单确认后移，需求仍增长但低于 high-tech 预期 | 半导体 UPW、water circularity、microelectronics data center water 维持强双位数需求 | HBM/advanced packaging 和水许可推动项目提前，需求高于指引隐含路径 | HBM4/Rubin/custom ASIC 投产周期前置，多个大 fab 水系统和回用项目同步加速 | NTM 需求增速悲观 +5%-12%，基准 +15%-25%，乐观 +25%-40%，极度 +40%+ | 基准略高于公司平均，但符合当前 High-Tech 披露 | 依据：Ovivo 收购、Q1 >20% organic；反证：项目施工和客户 qualification 12-36 个月 |
+| CoolIT direct-to-chip 液冷硬件 | 行业资料判断 2026 主线是单相 D2C cold plate + CDU + manifold/UQD；CoolIT NTM sales 约 5.5 亿美元 | GPU/电力/并网延迟或客户多供压价，D2C 项目后移 | GB200/GB300/MI350/TPU/Trainium 等使 D2C 成为高密 rack 默认路径，需求强增长 | GB300、Rubin early、MI400/custom ASIC 同步抢产能，CDU/冷板供给紧 | 多平台 2026 内提前锁单，D2C 从训练扩散到推理和 colo | 行业直液冷和服务需求池可为数十亿美元级，但 ECL 可捕获需另算 | 需求高于普通 HVAC，符合 AI 液冷强景气 | 反证：订单池不等于 Ecolab 收入；CoolIT 客户和 backlog 未逐项披露 |
+| CaaS / 3D TRASAR / coolant health | 行业资料显示冷却液、水处理、过滤、commissioning 成 rack acceptance 前置；Ecolab 已推出 D2C 3D TRASAR 和 CaaS | 客户先买硬件，服务 attach 低；水化学由本地水处理商或 EPC 打包 | 冲洗、过滤、水质监测进入多数高端项目 commissioning 清单 | 大客户把 coolant health、泄漏/腐蚀监测写入 SLA 或 O&M 标准 | 在线监测、fluid lifecycle 和多年服务合同成为高密液冷上电前置 | 行业流体/水处理/过滤服务池 NTM 约数十亿美元；ECL standalone 无可靠量化 | 基准为当前液冷扩散配套需求 | 依据：Ecolab 产品和行业资料；反证：缺少 standalone 订单、attach rate 和合同期限 |
+| Institutional & Specialty | Q1 fixed/organic sales +4%，Specialty 高个位数，I&S OI margin 23.0% | 餐饮/酒店客流弱，医院低毛利退出和商品成本拖累 | 低中个位数需求，pricing 和 new wins 支撑 | Quick service、food retail、hospitality 新客户超预期 | One Ecolab 显著扩大客户钱包份额 | NTM 需求 0%-6% | 基准符合当前预期 | 不是 AI 需求，不能因公司 AI 叙事上调 |
+| Pest Elimination | Q1 organic +7%，餐饮、food retail、healthcare 强 | 客户预算放缓，服务增长降至 3%-5% | 维持 6%-8% organic demand | Pest Intelligence 和 cross-sell 推动 8%-10% | 多行业数字 pest 标准化，10%+ | 约 +3%-10%+ | 基准符合当前预期 | 需求稳但公司规模小，不驱动公司非线性收入 |
+| Life Sciences | Q1 organic +11%；bioprocessing more than doubled | Pharma/bioprocessing 客户去库存或产能约束，需求回落至 4%-7% | 制药/个人护理和 bioprocessing 支撑 8%-12% | Bioprocessing 和 pharma water 继续加速，12%-16% | 生命科学质量控制平台快速扩张，16%+ | 约 +4%-16%+ | 基准略高于公司平均，符合 Q1 强读数 | 与 AI 基建弱相关，不能混入数据中心传导 |
+| Ecolab Digital | Q1 Digital sales +24% 至 0.99 亿美元 | 客户 IT/OT 集成慢，需求回落到高个位数 | 软件/硬件订阅维持 18%-25% | 水风险、数据中心水质和 I&S 数字工具加速 | AI water intelligence 成为跨站点标准 | 需求增速约 +10%-35%+ | 基准有 A 级销售证据 | 嵌入式数字收入不能重复加总 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些外部需求能进入 Ecolab NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入。CoolIT 在交易 close 前不是 Ecolab 报表收入；CoolIT 未来 12 个月销售额只能作为交易目标公司的收入锚，进入 Ecolab 基准需按 close 时间、交付和会计并表折扣。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 核心 Global Water，不含 High-Tech/Ovivo/CoolIT | 2025 Global Water fixed sales 76.799 亿美元；2026Q1 fixed sales 20.352 亿美元；organic +2% | 直接 | 服务/化学品/设备混合，利润率中等，项目和 commodity cost 影响大 | 65-70 亿美元 | 70-75 亿美元 | 75-80 亿美元 | 80 亿美元+ | 基准符合 Water 低中个位数增长预期 | A | 是 | Segment revenue 和 Q1 segment margin | 进入 NTM 基准，但不把 AI 数据中心需求全量映射到核心 Water |
+| Global High-Tech / Ovivo 半导体 UPW 和 microelectronics/data center water | 2026 pro forma Global High-Tech 约 15 亿美元；Ovivo 2025E sales 约 5 亿美元；Q1 Water 受 Ovivo 贡献 5pct | 直接 | UPW 项目+服务，增长快但项目 mix 会影响 margin | 12-14 亿美元 | 15-18 亿美元 | 18-22 亿美元 | 23 亿美元+ | 基准高于旧 run-rate，符合 Ovivo 并表和 Q1 >20% organic | A/B | 是 | 已披露交易、销售基数、Q1 High-Tech organic | 进入 NTM 基准；极度乐观需 fab 项目提前确认 |
+| CoolIT direct-to-chip 液冷硬件 | Ecolab 当前并表 0；CoolIT NTM sales 约 5.5 亿美元；expected Q3 2026 close | 直接但待 close | 硬件+工程；高增长，但 Ecolab reported profit 受摊销、利息和整合影响 | 0-2 亿美元 | 2.5-4.5 亿美元 | 4.5-7.0 亿美元 | 8.0 亿美元+ | 基准代表 Q3 close 后 partial 并表，不是全年化 | B | 是，但折扣 | Definitive agreement、target NTM sales、expected close | 基准只纳入 NTM 可确认 partial revenue；full-year run-rate 放附录 |
+| CaaS / 3D TRASAR / coolant health | 产品已发布，Ecolab 有 data center water/CaaS 触达；无 standalone revenue | 直接+嵌入 | 服务/软件/监测利润质量高于硬件，但 early adoption | 0-0.5 亿美元显性增量 | 0.5-1.5 亿美元，嵌入 Water/High-Tech | 1.5-3.0 亿美元，部分 standalone | 3 亿美元+ | 基准只作服务 attach 和 margin 支撑 | C/D | 部分进入 | 产品披露、数据中心触达、CoolIT 交叉销售逻辑 | 不重复加总；缺少订单披露时不能作为独立大额收入 |
+| Institutional & Specialty | 2025 fixed sales 59.620 亿美元；Q1 fixed sales 15.077 亿美元，OI margin 23.0% | 直接 | 高利润服务/耗材，pricing 强 | 59-61 亿美元 | 62-65 亿美元 | 65-68 亿美元 | 68 亿美元+ | 基准符合 2026 +4%-6% 需求 | A | 是 | Segment sales、Q1 organic +4% | 进入基准，是利润安全垫 |
+| Pest Elimination | 2025 fixed sales 12.192 亿美元；Q1 fixed sales 3.101 亿美元，organic +7% | 直接 | 服务毛利稳定，数字 pest intelligence 投入影响短期 margin | 12.5-13.0 亿美元 | 13.0-14.0 亿美元 | 14.0-15.0 亿美元 | 15 亿美元+ | 基准符合当前预期 | A | 是 | Segment sales 和 organic growth | 进入基准，小体量高质量 |
+| Life Sciences | 2025 fixed sales 7.061 亿美元；Q1 fixed sales 2.009 亿美元，organic +11% | 直接 | 高质量增长，Q1 OI margin 18.7% | 7.8-8.3 亿美元 | 8.5-9.5 亿美元 | 9.5-11.0 亿美元 | 11.0 亿美元+ | 基准略高于历史，符合 Q1 加速 | A | 是 | Segment sales、Q1 organic +11% | 进入基准，不作为 AI 数据中心收入 |
+| Ecolab Digital | Q1 sales 0.99 亿美元，+24%；年化约 4 亿美元 | 嵌入 | 软件/订阅支撑毛利和留存 | 4.0-4.5 亿美元 | 4.8-5.5 亿美元 | 5.5-7.0 亿美元 | 7 亿美元+ | 基准符合 annualized growth | A/C | 是但不加总 | 已披露 Digital sales；产品和远程监测平台 | 作为利润质量和服务粘性变量，不重复计入总收入 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，判断每个重要产品/业务线在 NTM 内对 Ecolab 可确认收入和可兑现利润的贡献。收入为公司层面 NTM 贡献或嵌入项；嵌入项不重复加总。利润贡献为经营利润或 adjusted EBITDA 方向性估计；缺少披露时写“无法可靠量化”。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 核心 Global Water | 悲观产品 | 65-70 亿美元 | OI 约 9.5-11.0 亿美元 | 下行 | 低于预期 | Heavy Water/Paper 继续拖累，commodity cost 传导慢 | 保留悲观 | 工业周期和纸业需求弱 |
+| 核心 Global Water | 基准产品 | 70-75 亿美元 | OI 约 11.0-12.5 亿美元 | 稳定到小幅上行 | 符合预期 | Q1 Water organic +2%，Food & Beverage 正常增长 | 保留基准 | Water margin 低于 I&S，成本上升会稀释 |
+| 核心 Global Water | 乐观产品 | 75-80 亿美元 | OI 约 12.5-14.0 亿美元 | 上行 | 高于预期 | pricing、Light Water、Food & Beverage 和服务效率改善 | 保留乐观 | 工业需求是否同步修复 |
+| 核心 Global Water | 极度乐观 | 80 亿美元+ | OI 14 亿美元+ | 明显上行 | 高于预期 | 工业水、食品饮料和 data center water 同时加速 | 下移为乐观上限 | 缺少非线性需求证据 |
+| Global High-Tech / Ovivo | 悲观产品 | 12-14 亿美元 | OI 无法可靠量化；项目 mix 稀释风险 | 稳定到下行 | 低于预期 | Fab 项目延迟、UPW 工程毛利受压 | 保留悲观 | 施工、qualification、水许可 |
+| Global High-Tech / Ovivo | 基准产品 | 15-18 亿美元 | OI margin 约 18%-22%，方向性估计 | 上行 | 符合当前 High-Tech 平台预期 | Q1 High-Tech organic >20%，Ovivo 并表 | 保留基准 | 项目收入确认节奏 |
+| Global High-Tech / Ovivo | 乐观产品 | 18-22 亿美元 | 利润率上行，服务和回用 attach 改善 | 上行 | 高于预期 | HBM/advanced packaging/fab water demand 加速 | 保留乐观 | 亚洲/美国 fab 客户 timing 不透明 |
+| Global High-Tech / Ovivo | 极度乐观 | 23 亿美元+ | 利润率明显上行 | 明显上行 | 大幅高于预期 | 多个大 fab/reuse 项目提前确认 | 下移为乐观上限 | NTM 内项目 commissioning 证据不足 |
+| CoolIT direct-to-chip 液冷硬件 | 悲观产品 | 0-2 亿美元 | 无法可靠量化；交易费用/利息为负贡献 | 下行 | 低于预期 | close 延迟或客户交付后移 | 保留悲观 | 监管、close、客户验收、库存 |
+| CoolIT direct-to-chip 液冷硬件 | 基准产品 | 2.5-4.5 亿美元 | adjusted EBITDA positive，但 Ecolab reported profit 受摊销/利息压制 | 中性到小幅上行 | 符合 Q3 close 后 partial 并表预期 | CoolIT NTM sales 5.5 亿美元；expected Q3 close | 保留基准 | 不能把 full NTM sales 全额并入 |
+| CoolIT direct-to-chip 液冷硬件 | 乐观产品 | 4.5-7.0 亿美元 | EBITDA 贡献显著，经营利润需扣摊销/整合 | 上行 | 高于预期 | GB300/Rubin/ASIC rack 交付强，CoolIT 客户需求可见 | 保留乐观 | 多供压价、产能、漏液责任 |
+| CoolIT direct-to-chip 液冷硬件 | 极度乐观 | 8 亿美元+ | 利润上行但无法可靠量化 | 明显上行 | 大幅高于预期 | close 顺利且 near full run-rate 确认 | 下移为乐观上限/附录 | NTM 时间窗口不足，客户和 backlog 披露不足 |
+| CaaS / 3D TRASAR / coolant health | 悲观产品 | 0-0.5 亿美元显性增量 | 无法可靠量化 | 无贡献到小幅上行 | 低于预期 | 客户只采购硬件，服务 attach 低 | 保留悲观 | standalone 合同缺失 |
+| CaaS / 3D TRASAR / coolant health | 基准产品 | 0.5-1.5 亿美元，嵌入 Water/High-Tech | 支撑毛利和续约，无法可靠量化 | 小幅上行 | 符合谨慎预期 | D2C 3D TRASAR、Water Quality IQ、Global Intelligence Center | 保留基准 | 不重复加总收入 |
+| CaaS / 3D TRASAR / coolant health | 乐观产品 | 1.5-3.0 亿美元 | 高服务/软件 mix 改善利润质量 | 上行 | 高于预期 | 大客户把 coolant health 写入 O&M/SLA | 保留乐观 | attach rate 未披露 |
+| CaaS / 3D TRASAR / coolant health | 极度乐观 | 3 亿美元+ | 高毛利 recurring，但无法可靠量化 | 明显上行 | 高于预期 | 多年服务合同标准化 | 下移为附录跟踪 | 缺少 NTM 合同证据 |
+| Institutional & Specialty | 悲观产品 | 59-61 亿美元 | OI 12.5-13.5 亿美元 | 稳定 | 低于预期 | 餐饮客流和医院退出拖累 | 保留悲观 | commodity cost |
+| Institutional & Specialty | 基准产品 | 62-65 亿美元 | OI 14.0-15.2 亿美元 | 上行 | 符合预期 | Q1 OI margin 23.0%，Specialty 高个位数增长 | 保留基准 | 需求非 AI，增长不应上修过度 |
+| Institutional & Specialty | 乐观产品 | 65-68 亿美元 | OI 15.2-16.5 亿美元 | 上行 | 高于预期 | New wins、value pricing、One Ecolab | 保留乐观 | 客流和客户预算 |
+| Institutional & Specialty | 极度乐观 | 68 亿美元+ | OI 16.5 亿美元+ | 明显上行 | 大幅高于预期 | wallet share 显著扩大 | 下移为乐观上限 | 缺少非线性需求来源 |
+| Pest Elimination | 悲观产品 | 12.5-13.0 亿美元 | OI 2.3-2.6 亿美元 | 稳定 | 低于预期 | 服务需求放缓，pest intelligence 投入 | 保留悲观 | 体量小 |
+| Pest Elimination | 基准产品 | 13.0-14.0 亿美元 | OI 2.6-3.0 亿美元 | 稳定到上行 | 符合预期 | Q1 organic +7% | 保留基准 | 投入影响短期 margin |
+| Pest Elimination | 乐观产品 | 14.0-15.0 亿美元 | OI 3.0-3.4 亿美元 | 上行 | 高于预期 | Food retail/restaurant/healthcare 增长 | 保留乐观 | 小业务，无法改写公司情景 |
+| Pest Elimination | 极度乐观 | 15 亿美元+ | OI 3.4 亿美元+ | 上行 | 高于预期 | Pest intelligence 标准化 | 下移为乐观上限 | 非核心增量 |
+| Life Sciences | 悲观产品 | 7.8-8.3 亿美元 | OI 1.3-1.5 亿美元 | 稳定 | 低于预期 | 客户去库存、capacity constraints | 保留悲观 | 与 AI 弱相关 |
+| Life Sciences | 基准产品 | 8.5-9.5 亿美元 | OI 1.6-1.9 亿美元 | 上行 | 符合预期 | Q1 organic +11%，bioprocessing 强 | 保留基准 | mix 和投资支出 |
+| Life Sciences | 乐观产品 | 9.5-11.0 亿美元 | OI 1.9-2.4 亿美元 | 上行 | 高于预期 | Pharma/bioprocessing new wins | 保留乐观 | 产能和客户节奏 |
+| Life Sciences | 极度乐观 | 11 亿美元+ | OI 2.4 亿美元+ | 明显上行 | 高于预期 | Bioprocessing 持续倍增 | 下移为乐观上限 | 一季强读数不能外推非线性 |
+| Ecolab Digital | 悲观产品 | 4.0-4.5 亿美元，嵌入不加总 | 无法可靠量化 | 稳定 | 低于预期 | IT/OT 集成放慢 | 保留悲观 | 非独立分部 |
+| Ecolab Digital | 基准产品 | 4.8-5.5 亿美元，嵌入不加总 | 支撑服务毛利和留存 | 上行 | 符合预期 | Q1 Digital +24% | 保留基准 | 不能重复计入收入 |
+| Ecolab Digital | 乐观产品 | 5.5-7.0 亿美元，嵌入不加总 | 软件/订阅 mix 支撑 OI | 上行 | 高于预期 | Water Quality IQ、remote monitoring | 保留乐观 | 商业化拆分未披露 |
+| Ecolab Digital | 极度乐观 | 7 亿美元+，嵌入不加总 | 高毛利但无法可靠量化 | 明显上行 | 高于预期 | AI water intelligence 跨站点标准化 | 移入附录 | 缺少 standalone NTM ARR 披露 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：汇总产品级贡献到 Ecolab NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向。汇总时已避免把 Digital、CaaS 和 Water 内部收入重复计算。CoolIT 只按 Q3 2026 close 后的 NTM partial 并表收入处理。绝对增速以最新 TTM sales 约 **164.52 亿美元** 为参照；相对预期以 2026 reported sales +9%-11%、2026H2 organic +6%-7%、adjusted OI margin 约 19% 和 CoolIT Q3 close 预期为参照。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 172-178 亿美元 | +4.6%-+8.2% | 低于当前预期：H2 pricing 未完全覆盖成本，CoolIT close 延迟或仅小额并表，High-Tech 项目确认慢 | 43.0%-44.0% | adjusted OI margin 17.5%-18.5% | EBITDA 约 41-45 亿美元；adjusted net income 约 22-24 亿美元 | FCF 为正但转化弱，CapEx、库存/应收、重组和交易费用压制 | 中 | commodity cost、CoolIT close、Water 项目 mix、Industrial/Paper 拖累 |
+| 基准公司 | 181-188 亿美元 | +10.0%-+14.3% | 符合当前预期：2026 指引正常兑现，Ovivo 全年贡献，CoolIT Q3 close 后 partial 并表 | 44.0%-45.0% | adjusted OI margin 18.8%-19.5% | EBITDA 约 46-50 亿美元；adjusted net income 约 24.5-26.5 亿美元 | FCF 稳定为正；交易后净债务/adjusted EBITDA 接近 3x，随后去杠杆 | 中高 | CoolIT partial 并表、High-Tech 项目确认、energy surcharge 执行 |
+| 乐观公司 | 189-198 亿美元 | +14.9%-+20.3% | 高于当前预期：High-Tech/Ovivo 强、CoolIT close 顺利且交付强、I&S/Life/Pest 同步好于预期 | 44.5%-45.8% | adjusted OI margin 19.5%-20.3% | EBITDA 约 50-55 亿美元；adjusted net income 约 26.5-29 亿美元 | FCF 改善但 working capital 和并购利息仍是扣项 | 中 | CoolIT 产能/验收、服务 attach、客户多供压价、项目现金转换 |
+| 极度乐观公司 | 200-213 亿美元 | +21.6%-+29.5% | 原始上限显著高于当前预期；需 CoolIT near full run-rate 并表、CaaS 快速服务化、High-Tech 项目提前确认且核心业务无拖累 | 45.0%-46.5% | adjusted OI margin 20.2%-21.5% | EBITDA 约 55-61 亿美元；adjusted net income 约 29-33 亿美元 | FCF 方向改善，但增长需要库存、产能、服务团队和整合投入 | 低 | NTM 内 close、交付、attach rate、利润质量和现金转换需同时突破；证据不足 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在其实际影响层级处理一次，避免重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 sales 40.661 亿美元、reported +10%、organic +4%、Digital +24%、Global High-Tech >20% | 公司汇总/产品需求 | 支撑基准收入高于 TTM run-rate | adjusted OI margin 16.7%，H2 需改善至全年约 19% | Q1 FCF 较低但 OCF 正常 | 基准保留 |
+| 2026 指引：reported sales +9%-11%、H2 organic +6%-7%、adjusted OI margin 约 19%、EPS 8.43-8.63 美元，不含 CoolIT | 公司汇总 | 作为当前预期主锚 | 约 19% OI margin 是基准利润锚 | 排除 CoolIT 的指引避免重复加总 | 基准保留 |
+| Ovivo 已 close，Q1 Water fixed sales 受 acquisition benefit 5pct；半导体 UPW 行业需求强 | 收入基数/产品贡献 | High-Tech/Ovivo 进入基准 | 项目 mix 可能短期稀释，但服务 attach 改善 | 项目现金流受 milestone 和施工节奏影响 | 基准保留，乐观保留 |
+| CoolIT definitive agreement、NTM sales 约 5.5 亿美元、Q3 close 预期 | 收入基数 | CoolIT partial 并表进入基准；全年 run-rate 不进 NTM 主表 | 目标公司高毛利不能直接等同 Ecolab reported profit，需扣摊销/利息/整合 | 交易新增 debt，pro forma leverage 接近 3x | 基准保留；极度乐观下移 |
+| CaaS/3D TRASAR 产品与超过 1,000 个 data center 触达 | 产品贡献/利润质量 | standalone 增量无法可靠量化，只能作为服务 attach | 若 attach 成立，高毛利服务改善利润质量 | 需要现场服务、实验室、远程监测和客户数据接入 | 基准保留为嵌入假设；极度乐观移入附录 |
+| 行业液冷需求强：D2C、CDU、冷却液、水处理、过滤和 commissioning 成高密 rack 验收条件 | 产品需求 | 支撑 CoolIT/CaaS 乐观需求 | 服务/监测优于普通硬件利润质量 | 行业需求不等于 Ecolab 份额 | 乐观保留；基准按收入证据折扣 |
+| 半导体 UPW 行业需求：先进 fab/HBM/advanced packaging 拉动 UPW/reuse，但 qualification 12-36 个月 | 产品需求/收入确认 | 支撑 Ovivo/High-Tech 基准和乐观 | 项目型工程可能压毛利，O&M/耗材改善毛利 | 项目延期和水许可影响确认 | 基准保留；极度乐观下移 |
+| Commodity costs 高个位数上升，energy surcharge 需要到 Q2 exit 才覆盖 dollar impact | 利润率 | 对收入无直接负面 | Q2/H2 毛利率核心变量 | 若 surcharge 滞后，FCF 和利润受压 | 悲观保留，基准保留但设约束 |
+| Heavy Water/Paper、Basic Industries 和普通工业周期拖累 | 产品需求 | 限制核心 Water 上修 | Water margin 低于 I&S，拖累混合 margin | 若客户库存/生产弱，应收和库存周转变差 | 在核心 Water 层处理一次，不重复惩罚公司整体 |
+| 客户多供、OCP 标准化和 OEM/JDM 压价 | 产品贡献 | 影响 CoolIT share/ASP，不影响行业需求本身 | 硬件毛利下行，服务 attach 是抵消项 | 可能增加库存、工程变更和保修成本 | 限制 CoolIT 极度乐观 |
+| 交易 close、监管、整合和债务融资风险 | 执行可信度/现金流 | close 延迟会减少 NTM 并表收入 | 利息、摊销和 integration cost 压制 reported profit | pro forma leverage 约 3x，回购空间下降 | 悲观保留；极度乐观下移 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | H2 pricing 不足、CoolIT close/确认延迟、High-Tech 项目慢，NTM revenue 172-178 亿美元 | 核心 I&S/Pest/Life 有稳定需求，Q1 reported +10% | commodity cost、Water mix、CoolIT 交易执行、工业周期 | 保留 | 悲观公司情景 | 中 | commodity cost 只在利润率层处理；CoolIT close 风险只在收入基数/执行层处理 |
+| 基准 | 2026 指引兑现、Ovivo/High-Tech 正常增长、CoolIT Q3 close 后 partial 并表，NTM revenue 181-188 亿美元 | 2026 指引、Q1 High-Tech >20%、Digital +24%、Ovivo 并表、CoolIT definitive agreement | CoolIT 仍未 close，CaaS standalone 缺少合同披露，H2 margin 改善需要执行 | 保留 | 最可能情景 | 中高 | 不把 CaaS/Digital/Water 内部收入重复加总 |
+| 乐观 | High-Tech、CoolIT、Life Sciences、Digital 同步强于基准，NTM revenue 189-198 亿美元 | 行业液冷需求强、CoolIT NTM sales 证据、3D TRASAR/CaaS 产品已发布、半导体 UPW 需求强 | 客户多供、产能、验收和项目时间表仍需验证 | 保留 | 乐观公司情景 | 中 | 行业需求强不能同时重复算作 CoolIT 份额和 CaaS 独立收入 |
+| 极度乐观 | CoolIT 接近 full run-rate 并表、CaaS 快速 recurring、核心业务无拖累，NTM revenue 200-213 亿美元 | D2C 液冷行业上行、Ecolab 服务网络、CoolIT/High-Tech 平台逻辑支持上限可能 | NTM 内 close、交付、attach rate、利润质量和现金转换同时成立的证据不足 | 下移 | 乐观上限和附录跟踪，不作为主表高可信经营情景 | 低 | 不能把 CoolIT full-year run-rate、CaaS 服务和 Digital 收入重复加总 |
+
+## 8. 结论
+
+- 最可能情景：**基准公司情景**。Ecolab 的传统服务/耗材底盘、I&S/Pest/Life Sciences 的稳定增长、Ovivo 并表和 Global High-Tech 强增长足以支撑 NTM revenue 进入 **181-188 亿美元** 区间；CoolIT 在 NTM 主口径中应按 Q3 2026 close 后 partial 并表处理，而不是直接把 **5.5 亿美元** target NTM sales 全年化加入。
+- NTM 收入结论：增量主要来自三层。第一是 2026 指引内的核心业务、pricing 和 productivity；第二是 Ovivo/High-Tech 从半导体和数据中心水需求中收入化；第三是 CoolIT close 后 partial 硬件并表。CaaS/3D TRASAR 目前更像利润质量和未来 recurring revenue 期权，基准不应重复加总。
+- 利润/现金流结论：基准 adjusted operating margin 约 **18.8%-19.5%**，明显高于 2026Q1 adjusted OI margin **16.7%**，核心取决于 H2 surcharge、productivity、I&S 高利润率和 higher-growth mix。自由现金流仍应为正，但交易融资、重组、库存/应收和 integration cost 会压制短期 FCF 转化率。
+- 主要传导瓶颈：CoolIT 的关键不是行业需求是否存在，而是 close 时间、客户验收、CDU/冷板/loop 交付、服务团队扩张，以及 Ecolab 是否能把硬件 installed base 转成 coolant health、3D TRASAR、flushing/filtration、多年服务合同。
+- 乐观情景成立条件：CoolIT 在 Q3 2026 顺利 close 且并表收入靠近 target run-rate；High-Tech/Ovivo 项目按期交付；I&S 和 Life Sciences 不被 commodity cost 或客户预算拖累；CaaS/3D TRASAR 至少在部分 hyperscaler/colo 项目形成明确 attach。
+- 极度乐观情景成立条件：CoolIT 在 NTM 内不只是 partial 并表，而是接近 full run-rate 且超额增长；Ecolab 在多个 hyperscaler/server OEM 中成为液冷硬件+水化学+服务标准供应商；CaaS 和 3D TRASAR 以多年合同绑定 installed base；核心 Water、I&S、Pest 和 Life Sciences 均不出现抵消性下滑。当前证据不足，校准后只作为乐观上限和附录跟踪。
+- 悲观情景触发条件：H2 energy surcharge 无法覆盖 commodity cost；CoolIT close 延迟或交易条件改变；客户 D2C 液冷部署因 field failure、漏液、并网或电力工程延迟而后移；半导体 fab/HBM/advanced packaging 项目延期；Water 基础业务和 Paper/Basic Industries 持续拖累。
+- 后续跟踪数据：2026Q2 sales、organic growth、gross margin 和 pricing/commodity bridge；Global High-Tech 中 microelectronics vs data center 拆分；CoolIT close 日期、并表收入、orders/backlog、毛利/EBITDA margin、working capital；CaaS/3D TRASAR/Water Quality IQ 的客户数、attach rate 和合同期限；net debt/adjusted EBITDA、利息成本、One Ecolab 重组现金支出。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Ecolab 2026Q1 截至 2026-03-31；Q1 earnings release 发布于 2026-04-28；CoolIT 交易公告 2026-03-20；Ovivo Electronics close 公告 2025-12-16；本报告写作与检索日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Ecolab 2026Q1 earnings release：Q1 sales **40.661 亿美元**、organic +4%、Digital sales **0.99 亿美元**、2026 sales/EPS/OI margin 指引、segment sales/margin。
+  - Ecolab 2026Q1 Form 10-Q：Q1 income statement、balance sheet、cash flow、cash **5.198 亿美元**、short-term debt **15.732 亿美元**、long-term debt **69.225 亿美元**、OCF **4.459 亿美元**、CapEx **3.485 亿美元**。
+  - Ecolab 2025 Annual Report：2025 sales **160.812 亿美元**；Global Water、I&S、Pest、Life Sciences segment sales 和 operating income。
+  - Ecolab CoolIT acquisition release / presentation：CoolIT target NTM sales 约 **5.5 亿美元**、expected Q3 2026 close、Global Water organic growth contribution、CDU/cold plate/liquid loop/rack manifold 产品锚、pro forma leverage 约 **3x**。
+  - Ecolab Ovivo Electronics close release：Ovivo Electronics 超纯水业务已 close，支持 semiconductor manufacturing、water circularity 和 Global High-Tech 平台。
+  - Ecolab 3D TRASAR D2C / CaaS product pages：D2C coolant concentration、temperature、pH、flow、corrosion/fouling/leakage risk monitoring、24/7 Global Intelligence Center 和 data center site-to-chip cooling management。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 official guide excluding CoolIT：reported sales +9%-11%、H2 organic +6%-7%、adjusted OI margin 约 19%、adjusted EPS 8.43-8.63 美元。
+  - CoolIT full-year supplemental run-rate：目标公司 NTM sales 约 5.5 亿美元；本报告 NTM 主表只纳入 Ecolab close 后可确认 partial revenue。
+  - Global High-Tech long-term option：Ecolab 投资者材料把 2026 pro forma Global High-Tech sales 列为约 15 亿美元，target growth >20%、OI margin target >20%；该口径为平台目标，不等同于 NTM 可确认增量。
+  - CaaS/3D TRASAR long-term option：若 coolant health、filtering、flushing、water quality 和 remote monitoring 被写入 hyperscaler/colo O&M 标准，可从硬件一次性收入转为 recurring service，但当前 standalone NTM revenue 无法可靠量化。
+- 主要项目内来源：
+  - `公司调研/半导体材料_化学品_基板/ECL_Ecolab_公司调研_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心风冷、冷水机组与HVAC_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体高纯水、气体与化学流体系统_2026-06-11.md`
+- 主要公开来源：
+  - Ecolab 2026Q1 earnings release: https://www.ecolab.com/news/2026/04/ecolab-delivers-accelerated-sales-growth-and-double-digit-eps-growth-reported-diluted-eps-1-52-adju
+  - Ecolab 2026Q1 Form 10-Q: https://www.sec.gov/Archives/edgar/data/31462/000110465926056737/ecl-20260331x10q.htm
+  - Ecolab 2025 Annual Report: https://s204.q4cdn.com/218790897/files/doc_financials/2025/ar/2025-Annual-Report.pdf
+  - Ecolab June 2026 Investor Presentation: https://s204.q4cdn.com/218790897/files/doc_presentations/2026/Jun/01/Ecolab-Investor-Presentation-June.pdf
+  - Ecolab to acquire CoolIT Systems: https://investor.ecolab.com/news/news-details/2026/Ecolab-to-Acquire-CoolIT-Systems-a-Global-Leader-in-Advanced-Liquid-Cooling-for-Next-Gen-AI-Data-Centers/default.aspx
+  - Ecolab CoolIT acquisition presentation: https://s204.q4cdn.com/218790897/files/doc_downloads/2026/03/Ecolab-to-Acquire-CoolIT-Systems.pdf
+  - Ecolab closes Ovivo Electronics acquisition: https://investor.ecolab.com/news/news-details/2025/Ecolab-Closes-Acquisition-of-Ovivos-Electronics-Ultrapure-Water-Business/default.aspx
+  - Ecolab 3D TRASAR for Direct-to-Chip Liquid Cooling: https://www.ecolab.com/offerings/3d-trasar-technology-for-direct-to-chip-liquid-cooling
+  - Ecolab Cooling-as-a-Service: https://www.ecolab.com/offerings/ecolab-cooling-as-a-service
+  - Ecolab strengthens integrated cooling program: https://investor.ecolab.com/news/news-details/2025/Ecolab-Strengthens-Integrated-Cooling-Program-for-Data-Centers/default.aspx

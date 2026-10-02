@@ -1,0 +1,56 @@
+[
+  {
+    "id": "01",
+    "exit_code": 0,
+    "output": "Formal prompt characters for file-run/sorting-independent-01-20260910-validation: 4944\nPrompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-10T09-28-11-593Z_file-run_sorting-independent-01-20260910-validation_prompt.md\nDry run does not call Codex.",
+    "record_type": "observed_excerpt"
+  },
+  {
+    "id": "02",
+    "exit_code": 0,
+    "output": "Working directory: D:\\drive\\Investment\nActive queue: D:\\drive\\Investment\\tools\\queue.jsonl\nDone archive: D:\\drive\\Investment\\tools\\queue.done.jsonl\nActive queue items: 0\nDone archive items: 853\nDry run does not call Codex.\nFormal prompt characters for file-run/sorting-independent-02-20260910-validation: 4469\nPrompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-10T09-29-55-214Z_file-run_sorting-independent-02-20260910-validation_prompt.md\nLatest prompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\latest_file-run_sorting-independent-02-20260910-validation_prompt.md\n",
+    "record_type": "tool_stdout"
+  },
+  {
+    "id": "06",
+    "exit_code": 0,
+    "output": "Working directory: D:\\drive\\Investment\nActive queue: D:\\drive\\Investment\\tools\\queue.jsonl\nDone archive: D:\\drive\\Investment\\tools\\queue.done.jsonl\nActive queue items: 0\nDone archive items: 853\nDry run does not call Codex.\nFormal prompt characters for file-run/sorting-independent-06-20260910-validation: 4654\nPrompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-10T09-29-55-499Z_file-run_sorting-independent-06-20260910-validation_prompt.md\nLatest prompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\latest_file-run_sorting-independent-06-20260910-validation_prompt.md\n",
+    "record_type": "tool_stdout"
+  },
+  {
+    "id": "07",
+    "exit_code": 0,
+    "output": "Working directory: D:\\drive\\Investment\nActive queue: D:\\drive\\Investment\\tools\\queue.jsonl\nDone archive: D:\\drive\\Investment\\tools\\queue.done.jsonl\nActive queue items: 0\nDone archive items: 853\nDry run does not call Codex.\nFormal prompt characters for file-run/sorting-independent-07-20260910-validation: 5312\nPrompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-10T09-29-55-717Z_file-run_sorting-independent-07-20260910-validation_prompt.md\nLatest prompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\latest_file-run_sorting-independent-07-20260910-validation_prompt.md\n",
+    "record_type": "tool_stdout"
+  },
+  {
+    "id": "N02",
+    "exit_code": 0,
+    "output": "Working directory: D:\\drive\\Investment\nActive queue: D:\\drive\\Investment\\tools\\queue.jsonl\nDone archive: D:\\drive\\Investment\\tools\\queue.done.jsonl\nActive queue items: 0\nDone archive items: 853\nDry run does not call Codex.\nFormal prompt characters for file-run/sorting-independent-N02-20260910-validation: 5402\nPrompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-10T09-29-55-980Z_file-run_sorting-independent-N02-20260910-validation_prompt.md\nLatest prompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\latest_file-run_sorting-independent-N02-20260910-validation_prompt.md\n",
+    "record_type": "tool_stdout"
+  },
+  {
+    "id": "N03",
+    "exit_code": 0,
+    "output": "Working directory: D:\\drive\\Investment\nActive queue: D:\\drive\\Investment\\tools\\queue.jsonl\nDone archive: D:\\drive\\Investment\\tools\\queue.done.jsonl\nActive queue items: 0\nDone archive items: 853\nDry run does not call Codex.\nFormal prompt characters for file-run/sorting-independent-N03-20260910-validation: 4611\nPrompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-10T09-29-56-212Z_file-run_sorting-independent-N03-20260910-validation_prompt.md\nLatest prompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\latest_file-run_sorting-independent-N03-20260910-validation_prompt.md\n",
+    "record_type": "tool_stdout"
+  },
+  {
+    "id": "N06",
+    "exit_code": 0,
+    "output": "Working directory: D:\\drive\\Investment\nActive queue: D:\\drive\\Investment\\tools\\queue.jsonl\nDone archive: D:\\drive\\Investment\\tools\\queue.done.jsonl\nActive queue items: 0\nDone archive items: 853\nDry run does not call Codex.\nFormal prompt characters for file-run/sorting-independent-N06-20260910-validation: 4603\nPrompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-10T09-29-56-499Z_file-run_sorting-independent-N06-20260910-validation_prompt.md\nLatest prompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\latest_file-run_sorting-independent-N06-20260910-validation_prompt.md\n",
+    "record_type": "tool_stdout"
+  },
+  {
+    "id": "09",
+    "exit_code": 0,
+    "output": "Working directory: D:\\drive\\Investment\nActive queue: D:\\drive\\Investment\\tools\\queue.jsonl\nDone archive: D:\\drive\\Investment\\tools\\queue.done.jsonl\nActive queue items: 0\nDone archive items: 853\nDry run does not call Codex.\nFormal prompt characters for file-run/sorting-independent-09-20260910-validation: 4195\nPrompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-10T09-29-56-724Z_file-run_sorting-independent-09-20260910-validation_prompt.md\nLatest prompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\latest_file-run_sorting-independent-09-20260910-validation_prompt.md\n",
+    "record_type": "tool_stdout"
+  },
+  {
+    "id": "N05",
+    "exit_code": 0,
+    "output": "Working directory: D:\\drive\\Investment\nActive queue: D:\\drive\\Investment\\tools\\queue.jsonl\nDone archive: D:\\drive\\Investment\\tools\\queue.done.jsonl\nActive queue items: 0\nDone archive items: 853\nDry run does not call Codex.\nFormal prompt characters for file-run/sorting-independent-N05-20260910-validation: 4609\nPrompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\2026-09-10T09-29-56-997Z_file-run_sorting-independent-N05-20260910-validation_prompt.md\nLatest prompt debug: D:\\drive\\Investment\\tools\\research-runner\\prompt-debug\\latest_file-run_sorting-independent-N05-20260910-validation_prompt.md\n",
+    "record_type": "tool_stdout"
+  }
+]

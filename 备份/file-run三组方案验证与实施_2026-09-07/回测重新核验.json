@@ -1,0 +1,449 @@
+{
+  "date": "2026-09-07",
+  "price_cutoff": "2026-09-04",
+  "universe_checks": 192,
+  "ranking_metric_checks": 56,
+  "unchanged_sorting_plans": [
+    {
+      "method": "01",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "02",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "03",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "04",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "05",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "06",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "07",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "08",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "09",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "10",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "11",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "12",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "13",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "14",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "15",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "16",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "17",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "N01",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "N02",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "N03",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "N04",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "N05",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "N06",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "E01",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "E02",
+      "unchanged_since_audit": true
+    },
+    {
+      "method": "E03",
+      "unchanged_since_audit": true
+    }
+  ],
+  "focus": {
+    "PENG": {
+      "return": "-0.3296205292671424215689554542",
+      "rank03": "1",
+      "rank05": "9",
+      "rank15": "160"
+    },
+    "SMCI": {
+      "return": "0.431308762508614389360107610",
+      "rank03": "84",
+      "rank05": "149",
+      "rank15": "3"
+    },
+    "MOD": {
+      "return": "-0.1691138608657389345827788055",
+      "rank03": "27",
+      "rank05": "113",
+      "rank15": "20"
+    },
+    "P": {
+      "return": "0.320461801091886276315784341",
+      "rank03": "104",
+      "rank05": "129",
+      "rank15": "127"
+    },
+    "SOMMY": {
+      "return": "0.248439415013095450316697789",
+      "rank03": "165",
+      "rank05": "130",
+      "rank15": "27"
+    },
+    "DELL": {
+      "return": "0.229205956778807024840128636",
+      "rank03": "4",
+      "rank05": "34",
+      "rank15": "144"
+    },
+    "HPE": {
+      "return": "0.100762026934959421866317761",
+      "rank03": "10",
+      "rank05": "40",
+      "rank15": "22"
+    }
+  },
+  "metrics": [
+    {
+      "list": "01",
+      "close_return": "0.024228287612601596",
+      "next_open_return": "0.015624830324431552"
+    },
+    {
+      "list": "02",
+      "close_return": "0.009994978792112634",
+      "next_open_return": "0.004424616506423351"
+    },
+    {
+      "list": "03",
+      "close_return": "-0.03264033667793843",
+      "next_open_return": "-0.058728424828559216"
+    },
+    {
+      "list": "04",
+      "close_return": "0.02333644926228902",
+      "next_open_return": "0.019700994503296095"
+    },
+    {
+      "list": "05",
+      "close_return": "-0.09443703158380137",
+      "next_open_return": "-0.1282188277897419"
+    },
+    {
+      "list": "06F",
+      "close_return": "0.0077038695781120785",
+      "next_open_return": "-0.02384973903365746"
+    },
+    {
+      "list": "06G",
+      "close_return": "-0.020260891151592433",
+      "next_open_return": "-0.06580295216686023"
+    },
+    {
+      "list": "06E",
+      "close_return": "-0.05971772791272413",
+      "next_open_return": "-0.10452641580763637"
+    },
+    {
+      "list": "07",
+      "close_return": "-0.023336006484766948",
+      "next_open_return": "-0.05921711152938518"
+    },
+    {
+      "list": "08",
+      "close_return": "-0.02934727877324441",
+      "next_open_return": "-0.056848660299415196"
+    },
+    {
+      "list": "09",
+      "close_return": "-0.047528040556406206",
+      "next_open_return": "-0.07825235240088582"
+    },
+    {
+      "list": "10",
+      "close_return": "-0.07381915593440037",
+      "next_open_return": "-0.10135722114964994"
+    },
+    {
+      "list": "11",
+      "close_return": "0.026232077517359086",
+      "next_open_return": "0.010063053227792492"
+    },
+    {
+      "list": "12",
+      "close_return": "-0.03247425554925053",
+      "next_open_return": "-0.07865362108262541"
+    },
+    {
+      "list": "13",
+      "close_return": "-0.09708835398043375",
+      "next_open_return": "-0.13200612739149586"
+    },
+    {
+      "list": "14",
+      "close_return": "-0.011450358416489061",
+      "next_open_return": "-0.03467089589436735"
+    },
+    {
+      "list": "15",
+      "close_return": "0.06630452726536631",
+      "next_open_return": "0.03974881996517858"
+    },
+    {
+      "list": "16",
+      "close_return": "-0.026923513259684947",
+      "next_open_return": "-0.06330844047094808"
+    },
+    {
+      "list": "17",
+      "close_return": "-0.02636427369874883",
+      "next_open_return": "-0.07106927211603435"
+    },
+    {
+      "list": "N01",
+      "close_return": "-0.01739808271840034",
+      "next_open_return": "-0.04817551660859939"
+    },
+    {
+      "list": "N02",
+      "close_return": "0.025857251917486647",
+      "next_open_return": "0.026622163320843027"
+    },
+    {
+      "list": "N03",
+      "close_return": "-0.07130337495659675",
+      "next_open_return": "-0.09878086897853787"
+    },
+    {
+      "list": "N04",
+      "close_return": "-0.03963191728624402",
+      "next_open_return": "-0.06997490016664194"
+    },
+    {
+      "list": "N05",
+      "close_return": "0.004816183526852852",
+      "next_open_return": "-0.012780897100309068"
+    },
+    {
+      "list": "N06",
+      "close_return": "-0.04004645791508588",
+      "next_open_return": "-0.09021027499125849"
+    },
+    {
+      "list": "E01",
+      "close_return": "0.03239735088570967",
+      "next_open_return": "0.011767424983654932"
+    },
+    {
+      "list": "E02",
+      "close_return": "-0.0036744368185337366",
+      "next_open_return": "-0.025132366803990277"
+    },
+    {
+      "list": "E03",
+      "close_return": "-0.03625655097617763",
+      "next_open_return": "-0.08654910986757193"
+    }
+  ],
+  "conference_checks": [
+    {
+      "conference": "DAC",
+      "ticker": "ATEYY",
+      "return": "-0.0621955649214761515367851286"
+    },
+    {
+      "conference": "DAC",
+      "ticker": "TER",
+      "return": "-0.1185193467995015837340015155"
+    },
+    {
+      "conference": "DAC",
+      "ticker": "KLAC",
+      "return": "-0.0551822246139706879380376968"
+    },
+    {
+      "conference": "DAC",
+      "ticker": "ONTO",
+      "return": "-0.1546758552766968900271765755"
+    },
+    {
+      "conference": "DAC",
+      "ticker": "LITE",
+      "return": "-0.0122674368689416222784121340"
+    },
+    {
+      "conference": "FMS",
+      "ticker": "MU",
+      "return": "0.059654397074872839342329894"
+    },
+    {
+      "conference": "FMS",
+      "ticker": "SNDK",
+      "return": "0.034233712869483978754721105"
+    },
+    {
+      "conference": "FMS",
+      "ticker": "ALAB",
+      "return": "0.020951863772533977100647702"
+    },
+    {
+      "conference": "FMS",
+      "ticker": "DELL",
+      "return": "0.120053047737420541869455162"
+    },
+    {
+      "conference": "FMS",
+      "ticker": "HPE",
+      "return": "-0.0662596286173951643699996506"
+    },
+    {
+      "conference": "RSS",
+      "ticker": "TER",
+      "return": "-0.1185193467995015837340015155"
+    },
+    {
+      "conference": "RSS",
+      "ticker": "NVDA",
+      "return": "0.039202429346271721504528187"
+    },
+    {
+      "conference": "Farnborough",
+      "ticker": "ETN",
+      "return": "-0.0557776918689646788907177237"
+    },
+    {
+      "conference": "Farnborough",
+      "ticker": "PH",
+      "return": "-0.0780734876495745906274290853"
+    },
+    {
+      "conference": "Farnborough",
+      "ticker": "RYCEY",
+      "return": "-0.0363983885095758306231923794"
+    }
+  ],
+  "calendar_source": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ETS2026-47",
+  "limitations": [
+    "July window is 39 return intervals, below 3 months.",
+    "Same frozen vendor history was recomputed, not newly acquired independent prices.",
+    "Conference mappings are purposive observations, not recommendation or causal backtests."
+  ],
+  "original_report_checks": {
+    "PENG03": {
+      "line": 152,
+      "fields": [
+        "1",
+        "PENG",
+        "Penguin Solutions",
+        "83.9",
+        "防守优先",
+        "39.3",
+        "20.0",
+        "19.3",
+        "0.0",
+        "0.0",
+        "2.0",
+        "2.2",
+        "1.2",
+        "核心结论：基准 NTM 收入约 2.13B，接近管理层 FY2026 Q4 隐含收入中点与 FY2027 收入约增长 30% 的早期框架转换结果…",
+        "-60M 至 0，仍被库存、应收和回款拖累",
+        "+27.5%/+33.9%",
+        "上行与已兑现经营基准互证，计正向确认",
+        "无独立未解释扣分",
+        "关键字段与两窗价格均可核验",
+        "无封顶",
+        "经营事实主扣反证；估值/FCF只进承载；价格只计独立确认",
+        "已兑现经营基准与价格/承载形成较强防线，主要防守缺口是利润与现金转换。"
+      ],
+      "path": "分析报告/公司排序/01_暂时有效_核心/03_反证惩罚_压力防守_原16/迭代版本/R03_2026-07-12_独立自洽版/02_排序结果.md"
+    },
+    "MOD02": {
+      "line": 166,
+      "fields": [
+        "17",
+        "MOD",
+        "Modine Manufacturing",
+        "80.2",
+        "100",
+        "100",
+        "75",
+        "95",
+        "25",
+        "65",
+        "82.9%（中高）",
+        "$3.20B 收入、$602M EBITDA、$140M–$190M FCF；A 级收入、B 级订单/LTA、firm schedul…",
+        "数据不足",
+        "N/A¹",
+        "N/A¹",
+        "65｜部分反映｜FPE 21.64×/P/S 4.08×/EV/EBITDA 30.11×",
+        "MOD_Modine_Manufacturing_收入传导估值评估_2026-07-12.md",
+        "未见硬冲突",
+        "> NTM 主窗口： 2026-07-13 至 2027-07-12，近似对应 FY2027Q2—FY2028Q1…",
+        "经营取评估、估值取主快照，不交叉补写",
+        "LTA 非 take-or-pay、供应问题、margin 尚未修复、CDU/软件部分依赖 C/D",
+        "8.3 最有信息量的后续反证：Data Centers 收入；FY2027Q2 起连续环增，NTM 路径约 $2.1B–$2.3B；Q…",
+        "硬桥梁、反证有关闭阈值、估值已部分反映",
+        "价格数据不足"
+      ],
+      "path": "分析报告/公司排序/01_暂时有效_核心/02_预期兑现概率_十二句话S02_原10/迭代版本/R10_2026-07-12_独立自洽版/02_排序结果.md"
+    },
+    "N03_same52_count": 148,
+    "N03_qualified_count": 8
+  },
+  "stale_endpoints": [
+    {
+      "ticker": "MICLF",
+      "actual_end_date": "2026-09-03"
+    }
+  ]
+}

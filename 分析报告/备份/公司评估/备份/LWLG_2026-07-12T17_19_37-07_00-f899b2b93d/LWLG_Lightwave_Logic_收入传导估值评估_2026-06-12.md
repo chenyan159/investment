@@ -1,0 +1,141 @@
+# 公司收入传导与价值传导评估：Lightwave Logic（LWLG）
+
+报告日期：2026-06-12（America/Los_Angeles）  
+NTM 主口径：2026Q2-2027Q1 / 未来 12 个月。  
+研究边界：本报告只使用 `公司调研/`、`行业调研/` 和必要外部公司披露/行业公开资料；未读取、引用或继承 `特征量化/`、Signals、回归、评分或排序资料。本文只评估经营收入、利润和现金流传导，不输出投资评级、目标价、股价区间或估值倍数判断。
+
+## 1. 一页结论
+- 主口径与补充口径：主表使用 NTM；FY2025、2026Q1、2026H2/2027 的量产准备和 2027+ 光 I/O / CPO 期权只作补充。LWLG 当前不是光模块、交换机或 AI 服务器收入公司，而是电光聚合物材料、聚合物调制器 IP、BEOL/PDK 和客户工程导入公司。
+- 当前收入基准、指引和 run-rate：最新已披露财务为 2026Q1 10-Q。2026Q1 net sales 为 29,167 美元，全部来自 licensing / royalty；2026Q1 未确认联合开发 NRE；TTM 收入约 243,105 美元。公司未给正式 NTM 收入指引，也未披露 backlog、bookings、客户采购金额或量产合同。
+- 重要产品/业务线：Perkinamine 电光聚合物材料/现有授权；200G/400G per lane 聚合物调制器；PDK/BEOL/foundry enablement；客户联合开发/NRE/milestone；QPIC/量子 PIC MOU 作为远期期权。
+- NTM 公司收入四情景：悲观 8-20 万美元；基准 30-140 万美元；乐观 300-1,100 万美元；极度乐观上限 1,250-3,200 万美元。极度乐观经证据校准后下移为“乐观上限/附录跟踪”，不是当前预期。
+- 利润或 EBITDA 四情景：除极度乐观上限的高额 upfront/milestone 情况外，NTM 大概率仍为明显经营亏损。2026Q1 单季经营亏损 672.5 万美元、经营现金流出 406.1 万美元；基准收入即使数倍增长，也不足以覆盖研发、G&A、foundry transfer、测试和客户支持费用。
+- 最大传导瓶颈：不是行业需求，而是从 Stage 3 / PDK / tape-out 转为可确认收入的路径。关键断点是客户 Stage 4、qualification、可靠性、良率、封装、foundry transfer、商业合同金额和收入确认。
+- 最大利润率变量：收入结构。如果收入来自 license / royalty / milestone，毛利率可很高；如果来自材料供应、客户验证支持和预量产工程服务，毛利率和现金流质量会低于纯 royalty。当前收入基数太小，历史 95%+ 毛利率不能直接外推为量产利润率。
+- 最大现金流变量：研发、人员、foundry/wafer、封装测试和客户支持投入增长，以及是否继续通过 ATM/股权融资补充现金。2026Q1 现金 7,510.3 万美元，短期流动性强，但经营现金流仍为负。
+- 可信度：基准情景中等；悲观中高；乐观中低；极度乐观低。
+
+## 2. 重要产品清单
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Perkinamine 电光聚合物材料 / 现有材料供应与授权 | 2026Q1 29,167 美元；TTM 约 24.31 万美元；FY2025 license/material 约 10.69 万美元 | 2026Q1 100% | 当前唯一可见商业收入锚；未来 royalty / material supply 的基础 | A/B：已确认收入、四年期材料供应和授权协议 | 进入基准，但只按小额现有合同和保守新增处理 | 若客户量产导入，可能形成高毛利材料/royalty，但 NTM 基准不能假设 |
+| Polymer modulator / 200G-400G per lane | 未披露量产收入；当前量产收入视为 0 | 0% | AI 光互联潜在核心产品；决定公司能否从材料/IP 进入客户 PIC/光引擎 | C：4 个 Stage 3 客户、Tower/GF/SilTerra PDK、tape-out/验证；尚无订单金额 | 不以量产收入进入基准；只允许少量 NRE/样品/验证收入 | 2027-2029 400G/lane、3.2T、CPO/NPO、光 I/O 期权 |
+| PDK / BEOL / foundry enablement | 未单独披露收入 | 0% 或不可拆 | 客户采用门票；把材料变成可 tape-out、可制造、可验证的流程 | C：Tower PH18、SilTerra/Luceda、GF/GDSFactory、PDK v1.1、high-volume foundry transfer | 作为收入确认前置条件进入基准逻辑；不单独假设大收入 | 若 PDK 成为某 foundry 标准选项，可能提升未来 royalty 概率 |
+| 客户联合开发 / NRE / milestone | FY2025 NRE 130,000 美元；2026Q1 NRE 为 0；Phase 2 200,000 美元取决于交付确认 | 2026Q1 0% | NTM 最可能出现收入台阶的来源之一，但非连续 recurring 收入 | B/C：正式 MOA/JDA、阶段性付款安排；客户接受和交付节奏仍不确定 | 小比例进入基准，需保守折扣；高额 milestone 只进乐观 | 若 Stage 3 进入 Stage 4，可成为 2027 volume ramp 入口 |
+| QPIC / 量子 PIC PDK MOU | 0 或未披露 | 0% | 非 AI 数据中心主线，当前更多是技术外延 | D：MOU / 早期合作 | 不进入 NTM 基准 | 移入附录跟踪；只有付费项目或客户验收后再考虑 |
+
+## 3. 产品需求四情景
+- 本步口径：本步只评估外部需求池，不判断 LWLG 份额、收入确认、利润率或公司汇总。需求单位采用最能解释各业务线的指标：AI 光收发器市场规模、800G/1.6T/3.2T 端口代际、200G/400G per lane 调制器设计导入、Stage 3/Stage 4 客户数、foundry PDK/tape-out 数、NRE/工程验证项目数。行业强需求不自动等于 LWLG 收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Perkinamine 电光聚合物材料 / 授权 | AI 光收发器 2026 约 260 亿美元；但 EOP 仍为新材料评估层；LWLG 当前仅有小额现有合同 | 只维持现有材料/授权最低需求；新增客户不付费 | 现有客户继续，小额样品/材料/NRE；无量产采购 | 1 个 lead customer 签新材料/授权或 milestone | 多客户把 EOP 纳入 2027 ramp 准备，出现最低采购/royalty | 从“几万美元/季度确认”到“百万美元级合同需求” | 基准=符合当前低收入预期；乐观/极度乐观=高于当前预期 | 行业需求强；反证是无 backlog、无客户名、无量产订单 |
+| Polymer modulator / 200G-400G per lane | 1.6T 进入 design-in；400G/lane 和 3.2T 多为样品/资格认证；EOP/SOH/TFLN/BTO 均在竞争 | Stage 3 客户测试延迟或转向 InP/SiPh/TFLN/BTO | Stage 3 原型、工程 tape-out、性能测试继续；不形成量产需求 | 至少 1 个客户进入 Stage 4 准备或关键 qualification milestone | 1 个以上客户在 NTM 内启动 2027 高容量 ramp 准备 | 0 个量产客户到 1-2 个 Stage 4 / pre-production 项目 | 基准=不提前纳入远期采用；乐观=明确客户加速 | 需求池存在；反证是成熟 EML/SiPh 仍可支撑 1.6T，客户换新材料成本高 |
+| PDK / BEOL / foundry enablement | Tower PH18、SilTerra/Luceda、GF/GDSFactory、PDK v1.1；2026H2 high-volume foundry transfer 是关键窗口 | foundry 产能和 tape-out cycle time 拉长，PDK 转移延迟 | 多 foundry 工程跑片、PDK 迁移、wafer-level poling/testing 继续 | PDK 返回稳定器件数据，客户可通过 PDK 设计 | PDK 成为某 foundry 客户标准或准标准选项 | 从内部/工程 PDK 到客户可复用 PDK | 基准=符合当前 2026H2 集成预期；乐观=明显快于预期 | 证据为公司公告和本地公司底稿；反证是 foundry cycle time、良率、可靠性 |
+| 客户联合开发 / NRE / milestone | 2025 有 13 万美元 NRE；2026Q1 NRE 为 0；Phase 2 20 万美元取决于完成和接受 | NRE 继续为 0 或仅现有最低确认 | 小额 NRE/样品/工程支持恢复 | 1 个 lead customer 支付 upfront、milestone 或多阶段 NRE | 多客户 milestone 或预量产准备费 | 0 到数百万美元的阶段性付款需求 | 基准=当前可见工程活动正常兑现；乐观=商业协议超预期 | NRE 是可收入化近路；反证是客户接受、交付和合同金额未披露 |
+| QPIC / 量子 PIC MOU | 量子 PIC 需求长期存在，但与 AI 数据中心 NTM 主线弱相关 | MOU 无付费项目 | 仅技术交流或 PDK 规划 | 出现小额付费 prototype / design 项目 | 特定量子客户小批量 prototype | 0 到 50-200 万美元上限 | 基准=不纳入；乐观=低可信期权 | MOU 不等于收入；应排除出 NTM 基准 |
+
+## 4. 可收入化暴露与收入基数
+- 本步口径：本步只判断哪些需求能进入 LWLG 的 NTM 收入表，以及当前可收入化基数；不预测增长和利润率。必须区分“可参与需求”和“可确认收入”。报告采用 A/B/C/D/E 收入表可确认性分级：A=已披露收入/财务指引；B=订单、正式合同、可验证客户项目和交付时间表；C=design win、客户认证、产能/管理层可验证披露；D=样品、测试、早期合作；E=主题相关或同业映射。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Perkinamine 电光聚合物材料 / 现有授权 | 2026Q1 29,167 美元；FY2025 license/material 106,855 美元；四年期材料供应和授权协议 | 直接 | 高毛利 license/material；量产前金额小 | 8-15 万美元 | 12-40 万美元 | 100-500 万美元 | 500-1,500 万美元 | 基准符合当前低 run-rate；乐观需新增协议 | A/B；新客户为 C | 是 | 已确认收入和现有合同；新客户只作乐观 | 基准主口径仅纳入现有合同和保守材料/授权；不得把 AI 光模块需求直接转成材料收入 |
+| Polymer modulator / 200G-400G per lane | 未披露量产收入；Stage 3、PDK、tape-out 为工程证据 | 直接但未收入化 | 若未来 royalty/IP 可高毛利；当前为研发/工程成本 | 0 | 0-50 万美元 | 100-400 万美元 | 500-1,500 万美元 | 基准不假设量产；乐观高于当前收入锚点 | C/D | 小比例，仅限 NRE/样品 | 4 个 Stage 3 客户、200G/400G 目标、foundry PDK | 不进入基准量产收入；只允许小额工程收入 |
+| PDK / BEOL / foundry enablement | 未单独披露收入；PDK v1.1 和 Tower/SilTerra/GF 是 enablement 证据 | 间接为主 | 作为 license/royalty 前置条件，单独收费不明 | 0 | 0-20 万美元 | 50-300 万美元 | 300-800 万美元 | 基准只作为收入化门槛，不作为大额收入 | C | 小比例/通常不单独进入 | PDK/tape-out/高产量 foundry transfer 是可验证披露 | 若无单独计费，汇总时不重复计算；主要提高乐观情景可信度 |
+| 客户联合开发 / NRE / milestone | FY2025 NRE 130,000 美元；2026Q1 NRE 0；Phase 2 200,000 美元条件性付款 | 直接 | NRE/milestone 毛利率不稳定；非 recurring | 0 | 0-40 万美元 | 100-400 万美元 | 400-1,000 万美元 | 基准符合当前“有工程活动但收入未确认”；乐观需明确客户接受/付款 | B/C | 是，但折扣纳入 | 正式 MOA/JDA、阶段交付和客户接受条件 | 进入基准的只是小额可确认工程款；大额 milestone 需合同/验收 |
+| QPIC / 量子 PIC MOU | MOU；无披露收入 | 间接/远期 | 早期 prototype，利润属性无法可靠量化 | 0 | 0 | 0-50 万美元 | 50-200 万美元 | 当前预期为 0 | D | 否 | 只有早期合作，无金额、客户交付和验收 | 移入附录跟踪，不进 NTM 基准 |
+
+## 5. 产品级收入和利润贡献
+- 本步口径：本步从第一步需求和第二步收入基数出发，判断每个重要产品在 NTM 内能贡献多少收入和利润。产品表是经营链条视角，不代表公司汇总可简单相加；公司汇总时去重处理 PDK、modulator、NRE、milestone、license/royalty 之间的重叠。不得把行业 TAM、客户总预算、AI 光模块市场规模或 CPO 项目总金额直接写成 LWLG 收入。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Perkinamine 材料 / 现有授权 | 悲观 | 8-15 万美元 | 毛利高但经营贡献几乎为零 | 毛利率高，经营利润率仍大幅负 | 低于 TTM 和当前正常兑现 | Q1 29,167 美元、现有授权 | 保留 | 现有合同之外无新客户收入 |
+| Perkinamine 材料 / 现有授权 | 基准 | 12-40 万美元 | 毛利数万至数十万美元，不覆盖费用 | 高毛利，小规模 | 符合当前低收入预期 | SEC 已确认收入、四年期授权 | 保留 | 年度收入仍小于单季研发费用的一小部分 |
+| Perkinamine 材料 / 现有授权 | 乐观 | 100-500 万美元 | 可显著改善毛利，但仍难覆盖全年 opex | 毛利率高，经营亏损收窄 | 明显高于当前 run-rate | lead customer 新协议、minimum royalty、milestone | 保留为乐观 | 需要客户名、金额、时间表和收入确认条款 |
+| Perkinamine 材料 / 现有授权 | 极度乐观 | 500-1,500 万美元 | 若以 license/royalty 为主，经营亏损明显收窄 | 高毛利，但未必转正 | 远高于当前预期 | 多客户或单一大客户预量产 | 下移 | 目前无大额合同、无 volume production |
+| Polymer modulator / 200G-400G lane | 悲观 | 0 | 纯研发成本，亏损扩大 | 利润率负向 | 低于工程转化预期 | Stage 3 不等于订单 | 保留 | 客户转向 InP、SiPh、TFLN、BTO 或内部方案 |
+| Polymer modulator / 200G-400G lane | 基准 | 0-50 万美元 | NRE/样品收入小，研发投入更大 | 毛利不稳定；经营贡献负 | 符合“验证而非量产” | 4 个 Stage 3 客户、200G/400G 目标 | 保留 | 良率、封装、可靠性、客户 qualification |
+| Polymer modulator / 200G-400G lane | 乐观 | 100-400 万美元 | milestone/NRE 可减亏，但非 recurring | 视合同结构而定 | 高于当前预期 | 至少 1 个客户进入 Stage 4 准备 | 保留 | 必须说明谁买、买什么、何时确认 |
+| Polymer modulator / 200G-400G lane | 极度乐观 | 500-1,500 万美元 | 早期 royalty/milestone 带来高弹性 | 若 license 占比高则改善显著 | 远高于当前预期 | 多客户 pre-production / 2027 ramp 准备 | 下移 | 无公开 Stage 4、无量产良率和成本目标 |
+| PDK / BEOL / foundry enablement | 悲观 | 0 | 只有成本，无直接收入 | 负向 | 低于当前 PDK 转移预期 | foundry cycle time 拉长 | 保留 | high-volume foundry transfer 延迟 |
+| PDK / BEOL / foundry enablement | 基准 | 0-20 万美元 | 主要体现为未来收入概率，不体现当期利润 | 单独利润无法可靠量化 | 符合当前工程导入 | Tower/GF/SilTerra/Luceda、PDK v1.1 | 保留 | 可能没有单独收费，不能重复计算 |
+| PDK / BEOL / foundry enablement | 乐观 | 50-300 万美元 | 若有 PDK/support fee，可减亏 | 取决于计费方式 | 高于当前披露 | 多个 tape-out、foundry-qualified rules | 保留 | 客户采用仍需器件数据和 qualification |
+| PDK / BEOL / foundry enablement | 极度乐观 | 300-800 万美元 | 高毛利 IP/support 可能性，但证据不足 | 可能改善 | 极高于当前预期 | PDK 成为某 foundry 标准选项 | 下移 | 当前只是 transfer / engineering，不是标准量产 |
+| 客户联合开发 / NRE / milestone | 悲观 | 0 | 无收入，费用继续支出 | 负向 | 低于当前工程活动预期 | 2026Q1 NRE 为 0 | 保留 | 客户接受或交付未完成 |
+| 客户联合开发 / NRE / milestone | 基准 | 0-40 万美元 | 只小幅缓冲现金流出 | 毛利不稳定 | 符合当前预期 | FY2025 NRE 13 万美元、Phase 2 20 万美元条件性安排 | 保留 | 交付和客户验收是收入确认 gate |
+| 客户联合开发 / NRE / milestone | 乐观 | 100-400 万美元 | 减亏明显但仍非持续利润 | 合同 mix 决定毛利 | 高于当前预期 | lead customer 付费开发或 milestone | 保留 | 不等于 volume royalty |
+| 客户联合开发 / NRE / milestone | 极度乐观 | 400-1,000 万美元 | 可使部分季度亏损显著收窄 | 若 upfront/milestone 占比高则高毛利 | 远高于当前预期 | 多阶段协议或多客户验收 | 下移 | 无金额、无客户名、无验收披露 |
+| QPIC / 量子 PIC | 悲观 | 0 | 无贡献 | 无法可靠量化 | 符合当前预期 | MOU | 保留 | 非 AI 数据中心 NTM 主线 |
+| QPIC / 量子 PIC | 基准 | 0 | 无贡献 | 无法可靠量化 | 符合当前预期 | MOU，无收入 | 排除 | 无付费项目 |
+| QPIC / 量子 PIC | 乐观 | 0-50 万美元 | 小额工程收入，影响不大 | 无法可靠量化 | 高于当前预期 | 需出现付费 prototype | 仅作跟踪 | 客户、金额、验收均缺失 |
+| QPIC / 量子 PIC | 极度乐观 | 50-200 万美元 | 对公司仍非核心 | 无法可靠量化 | 远高于当前预期 | 小批量 prototype | 移入附录 | 不是 AI 光互联主收入路径 |
+
+## 6. 公司收入和利润四情景
+- 本步口径：本步把产品级贡献合成为 LWLG NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。汇总时去重：PDK/foundry、modulator、NRE/milestone 和 license/royalty 是同一客户商业化链条的不同收入确认形态，不能逐项无约束相加。公司未披露正式收入指引和 backlog，因此“相对预期”主要相对 TTM 243,105 美元、Q1 annualized 116,668 美元、现有合同、已披露 MOA/PDK 进度和管理层商业化目标。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观 | 8-20 万美元 | 对 TTM 约 -67% 至 -18% | 低于当前 TTM 和小额现有合同正常兑现；只承认最低可确认授权/材料收入 | 80%-96%，但收入太小 | 无法可靠量化；预计亏损远大于收入 | 净亏损约 2,600-3,400 万美元 | 经营现金流持续流出，可能 1,800-3,000 万美元级 | 中高 | NRE 继续为 0、客户验证延迟、foundry/tape-out 周期拉长 |
+| 基准 | 30-140 万美元 | 对 TTM 约 +23% 至 +476% | 当前预期正常兑现：现有授权、小额材料/NRE、Stage 3 和 PDK 继续但无量产 | 75%-96%，视 NRE/material mix | 仍大幅为负；收入不足以覆盖研发和 G&A | 净亏损约 2,300-3,300 万美元 | 经营现金流仍为负；现金充足但继续消耗 | 中 | 从工程活动到可确认收入的节奏、客户接受、PDK 转移 |
+| 乐观 | 300-1,100 万美元 | 对 TTM 约 +1,134% 至 +4,425% | 明显高于当前 run-rate；需要 1 个 lead customer 签带金额的材料/授权/NRE/milestone | 65%-95% | 大概率仍为负，但亏损显著收窄 | 净亏损约 1,400-3,000 万美元 | 现金流仍负；upfront/milestone 可缓冲单季 burn | 中低 | 客户合同金额、Stage 3 到 Stage 4、可靠性/良率/封装 |
+| 极度乐观 | 1,250-3,200 万美元 | 对 TTM 约 +5,042% 至 +13,064% | 远高于当前预期；需求、公司捕获、利润质量和执行同时突破 | 55%-92% | 可能仍为负；若 license/upfront 高占比，接近 breakeven 上限 | 净亏损约 0-2,000 万美元；极端情况下单季可接近转正 | 仍需投入；若 upfront 大，可短期接近现金流平衡 | 低 | 缺少公开 Stage 4、量产订单、客户名、最低采购、royalty rate 和量产良率 |
+
+补充判断：LWLG 的收入增长百分比会因基数极小而失真。即使基准收入达到 100 万美元级，也只是证明工程/授权收入出现台阶，不等于公司已经成为 AI 数据中心量产供应商。经营价值传导的关键是收入质量：license/royalty/milestone 比材料样品或低价工程服务更有价值；但所有高质量收入都依赖客户把 Perkinamine / polymer modulator 锁进 PIC/PDK/光引擎并通过 qualification。
+
+## 7. 证据校准、反证和可信度
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。正向证据只能提升它实际影响的层级；反证只限制它实际影响的层级，不重复惩罚。市场价格、交易热度、市值或估值倍数不作为经营证据。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 29,167 美元，NRE 为 0 | 收入基数 / 产品贡献 | 压低基准收入上限，证明当前仍是小额 license/royalty | 历史高毛利率不可外推；收入太小 | 研发和 G&A 仍主导现金流 | 保留悲观和基准；乐观需合同证据 |
+| FY2025 NRE 130,000 美元、Phase 2 200,000 美元条件性付款 | 收入基数 | 支持基准纳入小额 NRE，但不能放大到百万级 | NRE 毛利不稳定 | 取决于交付和客户接受 | 保留基准小额 NRE |
+| 4 个 Fortune 500 / Fortune Global 500 客户处于 Stage 3 | 产品贡献 / 执行可信度 | 支持乐观的客户转化路径 | 若进入 royalty，可改善利润质量 | 需要 Stage 4 和 qualification | 保留乐观；极度乐观下移 |
+| Tower PH18、SilTerra/Luceda、GF/GDSFactory、PDK v1.1 | 收入基数 / 执行可信度 | 提高未来收入化概率，但不等于 NTM 收入 | PDK/IP 未来可高毛利 | 2026H2 transfer 和 tape-out 是关键 | 保留基准 enablement；仅作跟踪高额 PDK 收入 |
+| 行业 800G/1.6T/CPO 需求强 | 需求 | 支持第一步需求，不直接支持 LWLG 收入 | 不直接决定 LWLG 利润率 | 客户认证和替代技术决定捕获 | 保留需求强，但不自动上移收入 |
+| 竞争路线成熟：InP EML、SiPh、TFLN、BTO、大厂内部方案 | 产品贡献 | 限制 polymer modulator 的份额和速度 | 可能压低 royalty 议价 | 客户可能转向成熟路线 | 保留悲观反证；不重复惩罚 PDK |
+| 无 backlog、bookings、客户采购金额、量产合同 | 收入基数 | 限制基准和乐观收入可确认性 | 限制经营杠杆判断 | 现金 burn 仍靠融资和现金余额支持 | 保留基准低收入；极度乐观下移 |
+| 现金 7,510.3 万美元、无债务压力 | 公司组合 / 执行可信度 | 不直接创造收入 | 支持持续研发和客户支持 | 降低短期流动性风险 | 保留基准执行能力 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 只承认现有授权和最低可确认收入，NTM 8-20 万美元 | Q1 已确认 license/royalty；现金可支撑运营 | NRE 为 0、无 backlog、客户验证延迟 | 保留 | 悲观 | 中高 | 无 backlog 只惩罚收入确认，不再重复惩罚行业需求 |
+| 基准 | 现有授权 + 小额材料/NRE/工程支持，NTM 30-140 万美元 | A/B 级现有收入和正式 MOA；PDK/foundry 进展 | 无正式收入指引；Stage 3 不是订单 | 保留 | 基准 | 中 | Stage 3 风险只在收入化和执行层处理，不下修外部需求 |
+| 乐观 | 1 个 lead customer 签带金额的材料/授权/NRE/milestone，NTM 300-1,100 万美元 | 4 个 Stage 3 客户、多个 foundry/PDK、200G/400G 目标 | 无客户名、合同金额、交付窗口和 revenue recognition 条款 | 保留 | 乐观 | 中低 | 行业 beta 不能替代公司 alpha |
+| 极度乐观 | Stage 3 至少一个进入 Stage 4，多客户或预量产，NTM 1,250-3,200 万美元 | 需求池强、PDK v1.1、foundry transfer、客户管线 | 管理层仍把 volume commercial production 显著收入指向 2027；当前无量产订单 | 下移 | 乐观上限 / 附录跟踪 | 低 | 缺少 Stage 4 证据只下移极度乐观，不重复压低基准小额 NRE |
+
+## 8. 结论
+- 最可能情景：基准。LWLG 的 NTM 收入最可能仍是 30-140 万美元级，来自现有授权、少量材料、NRE、工程开发或 milestone，而不是 AI 数据中心量产收入。由于基数极低，收入同比或相对 TTM 的百分比增长会很大，但经营质量仍取决于是否出现客户可验证合同和收入确认。
+- NTM 收入结论：当前可确认 A/B 级基数很小；C 级 Stage 3、PDK 和 foundry 证据支持未来收入化概率，但不能直接进入基准量产收入。公司可参与的行业需求池很大，但当前可确认收入池很小。
+- 利润/现金流结论：NTM 大概率继续经营亏损和经营现金流流出。license/royalty/milestone 若出现，利润质量高；材料样品、工程服务和预量产支持的利润质量较低。2026Q1 现金 7,510.3 万美元降低短期流动性风险，但并不解决商业模式验证。
+- 主要传导瓶颈：Stage 3 到 Stage 4、客户 qualification、200G/400G lane 器件测试、长期可靠性、poling retention、Gen 4 encapsulation、foundry transfer、良率、封装、客户合同金额、收入确认条款。
+- 乐观情景成立条件：至少 1 个 lead customer 签署带 upfront、minimum royalty、milestone、NRE 或明确交付时间表的协议；Tower/GF/SilTerra tape-out 返回可公开验证的性能和可靠性数据；2026H2 PDK v1.1 high-volume foundry transfer 按计划推进。
+- 极度乐观情景成立条件：需求、公司捕获、利润质量和执行质量同时成立。具体包括至少 1 个 Stage 3 客户进入 Stage 4 / production ramp，多客户或大客户确认 2027 高容量生产准备，披露最低采购或 royalty，且量产良率、封装可靠性、成本目标和 foundry capacity 均可验证。
+- 悲观情景触发条件：Q2/Q3 2026 继续无 NRE 或新 license 收入；Stage 3 无客户推进；foundry transfer/tape-out 延迟；客户转向 InP/SiPh/TFLN/BTO/内部方案；PDK 数据未满足可靠性、温度、湿度、光照和封装要求。
+- 后续跟踪数据：Q2/Q3 2026 net sales 和 NRE；新材料供应/授权协议金额；Stage 3 到 Stage 4 进展；Tower/GF/SilTerra 200G/400G lane 测试数据；PDK v1.1 transfer 进度；客户 qualification、良率、封装可靠性、成本目标；现金、ATM/股权融资和经营现金流。
+
+## 附录：来源和补充口径
+- 经营数据日期：公司财务以 2026Q1 10-Q（截至 2026-03-31，提交日 2026-05-15）和 FY2025 10-K（提交日 2026-03-20）为准；行业资料以本地 `行业调研/` 2026-06-11 底稿和已核验外部公开资料为准。2026-05-27 之后可见 SEC/IR 信息主要为年度股东会和持股/融资类披露，未发现改变 NTM 经营收入基准的运营订单披露。
+- 主要收入、订单、指引和利润率来源：
+  - SEC 2026Q1 10-Q：`https://www.sec.gov/Archives/edgar/data/1325964/000155335026000087/lwlg_10q-033126.htm`
+  - SEC FY2025 10-K：`https://www.sec.gov/Archives/edgar/data/1325964/000107997326000348/lwlg_10k-123125.htm`
+  - Lightwave Logic Investor Relations / SEC filings：`https://www.lightwavelogic.com/investor-relations`；`https://www.lightwavelogic.com/sec-filings`
+  - Lightwave Logic / SilTerra / Luceda PDK：`https://www.lightwavelogic.com/press-releases/silterra-silicon-photonics-platform-enables-integration-of-lightwave-logic-high-speed-polymer-modulators-through-luceda-photonics-pdk`
+  - Tower PH18 development agreement：`https://www.stocktitan.net/news/LWLG/lightwave-logic-and-tower-semiconductor-announce-development-9kv0qq89i8kk.html`
+  - PDK v1.1 / high-volume foundry transfer：`https://www.stocktitan.net/news/LWLG/lightwave-logic-announces-availability-of-version-1-1-of-its-polymer-t0pp5hv9vpyw.html`
+  - Stage 3 customer update：`https://www.stocktitan.net/news/LWLG/lightwave-logic-inc-provides-update-on-commercial-pipeline-and-dd22sma75e0v.html`
+  - TrendForce AI optical transceiver 2026 market：`https://www.trendforce.com/presscenter/news/20260420-13017.html`
+  - LightCounting AI cluster optics 2026 risk/forecast：`https://www.lightcounting.com/newsletter/en/march-2026-ethernet-optics-382`
+  - OIF / Omdia 448Gbps signaling workshop PDF：`https://www.oiforum.com/wp-content/uploads/01-LHUF-OIF-400G-Workshop.pdf`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 不是主口径；NTM 跨 2026Q2-2027Q1。若 Q2/Q3 出现 NRE、license 或 milestone，FY2026 数字可能显著偏离 Q1 annualized，但仍需看是否 recurring。
+  - FY2027 以后，若 Stage 4、production ramp、minimum royalty 和客户量产 design-in 出现，LWLG 的收入弹性会明显大于 NTM 基准；当前只能作为远期期权。
+  - 3.2T、400G/lane、CPO/NPO、optical I/O、QPIC 目前都不能替代 NTM 主表。
+- 主要本地来源：
+  - `公司调研/AI网络_光互联_连接器/LWLG_Lightwave_Logic_公司调研_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_硅光材料、光子材料与电光聚合物_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_Optical Interposer与新型光引擎_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_LPO_LRO线性光模块_2026-06-11.md`

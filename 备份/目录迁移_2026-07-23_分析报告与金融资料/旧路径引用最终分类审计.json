@@ -1,0 +1,41 @@
+{
+  "verifiedAt": "2026-07-23T21:36:26.7226889-07:00",
+  "patterns": [
+    "D:\\drive\\Investment\\基本面\\分析报告",
+    "D:\\drive\\Investment\\基本面\\日度资料",
+    "D:/drive/Investment/基本面/分析报告",
+    "D:/drive/Investment/基本面/日度资料",
+    "基本面/分析报告",
+    "基本面/日度资料"
+  ],
+  "matchedFiles": 5861,
+  "classifiedHistoricalOrCompatibility": 5861,
+  "unexpectedActiveReferences": 0,
+  "categories": [
+    {
+      "reason": "备份与退出历史",
+      "count": 1490
+    },
+    {
+      "reason": "历史事实或研究结果",
+      "count": 864
+    },
+    {
+      "reason": "临时目录",
+      "count": 29
+    },
+    {
+      "reason": "迁移兼容说明",
+      "count": 1
+    },
+    {
+      "reason": "由历史报告派生的正文",
+      "count": 391
+    },
+    {
+      "reason": "执行历史",
+      "count": 3086
+    }
+  ],
+  "unexpected": []
+}

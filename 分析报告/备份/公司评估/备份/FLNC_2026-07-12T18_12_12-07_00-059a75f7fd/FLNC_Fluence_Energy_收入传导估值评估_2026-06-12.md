@@ -1,0 +1,153 @@
+# 公司收入传导与价值传导评估：Fluence Energy
+
+报告日期：2026-06-12  
+公司代号：FLNC  
+公司名称：Fluence Energy, Inc.  
+正式输出目录：`分析报告/公司评估/`  
+主口径：NTM，即从 2026-04-01 起未来 12 个月经营窗口；FY2026、FY2027 和长期 run-rate 只作补充。  
+资料边界：使用 `公司调研/`、`行业调研/` 和公司一手披露/公开行业资料校验；未读取、引用或继承 `特征量化/`、Signals、排序、回归、模型比较或旧公司评估结论。  
+
+## 1. 一页结论
+- 主口径与补充口径：主口径为 NTM 收入、毛利、调整后 EBITDA 和现金流传导；补充口径为 FY2026 指引、FY2027 上半年订单转换和数据中心远期期权。FLNC 的经营问题不是“储能行业是否增长”，而是 `backlog -> 交付/验收 -> 毛利 -> 现金回收` 能否在未来 12 个月顺利完成。
+- 当前收入基准、指引和 run-rate：FY2026Q2 收入 `4.649 亿美元`，FY2026H1 收入 `9.401 亿美元`；FY2026 指引维持 `32-36 亿美元`，中点 `34 亿美元`；因此 FY2026H2 需要确认约 `22.6-26.6 亿美元`。截至 2026-03-31，backlog `56 亿美元`，Energy Storage Products and Solutions contracted backlog `10.1GW`，pipeline `41.3GW / 147GWh`。
+- 重要产品/业务线：标准并网级 BESS 系统集成，Smartstack / domestic content 平台，AI 数据中心 BESS / 微电网接入，Services，Digital applications / Fluence IQ。Smartstack 和 AI 数据中心 BESS 是未来结构变量，但当前确认收入仍主要来自普通 utility-scale / IPP BESS backlog。
+- NTM 公司收入四情景：悲观 `31-34 亿美元`；基准 `37-41 亿美元`；乐观 `44-50 亿美元`；极度乐观 `55-63 亿美元`。相对当前预期，基准等于 FY2026 指引兑现后延续正常 backlog conversion；乐观需要 H2 FY2026 超预期交付和数据中心首批订单部分确认；极度乐观需要多个 hyperscaler / AI campus PO 在 NTM 内形成可交付收入。
+- 利润或 EBITDA 四情景：悲观 adjusted EBITDA `-0.4 亿至 0.2 亿美元`；基准 `1.3-2.2 亿美元`；乐观 `2.8-4.5 亿美元`；极度乐观 `5.5-8.0 亿美元`。利润弹性来自 adjusted gross margin 回到 `12-14%+`、服务/软件 attach、Smartstack 交付效率和费用杠杆；如果新增收入是低毛利硬件 pass-through，收入上修不会等比例变成利润。
+- 最大传导瓶颈：FY2026H2 大额交付、港口/物流、电芯/PCS/消防/并网验收、客户延期权、工作资本和库存周转。2026-03-31 存货 `7.642 亿美元`，H1 经营现金流 `-3.479 亿美元`，这说明收入确认前置备货压力很高。
+- 最大利润率变量：旧 backlog 毛利、美国 domestic content 成本/溢价、Smartstack 安装效率、项目 scope change、liquidated damages、客户压价、服务/软件 attach。FY2026Q2 GAAP gross margin `10.0%`、adjusted gross margin `11.1%`，H1 adjusted gross margin `8.3%`，尚未证明全年结构性高毛利。
+- 最大现金流变量：H2 inventory 转收入、deferred revenue 与客户预付款、letters of credit / working capital facility 使用、供应链融资、应收账款回收。FY2026H1 free cash flow 为 `-2.854 亿美元`，不能只看 `9 亿美元` liquidity。
+- 可信度：公司基准情景可信度为“中高”，因为 backlog、FY2026 指引、order intake 和项目 pipeline 明确；AI 数据中心收入的 NTM 可信度为“中”，极度乐观为“低到中”，因为 MSA 和参考架构不等于已签 PO、交付验收或利润。
+
+## 2. 重要产品清单
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 标准 Energy Storage Products and Solutions：Gridstack / Gridstack Pro / 普通 utility-scale BESS | FY2026H1 `8.845 亿美元`；FY2025 `约21.7 亿美元`；Q2 `4.336 亿美元` | FY2026H1 `94.1%` | 收入、backlog、交付和毛利主轴 | A/B | 进入基准；NTM 基准 `32-35 亿美元`，其中包含已签 backlog 转收入和新增非数据中心订单 | 长期受全球 BESS 和 grid-forming 需求上行支撑 |
+| Smartstack / U.S. domestic content 平台 | 未单独披露收入；已披露 first delivery substantial completion；当前并入 Energy Storage Products | 无法可靠量化 | 改善交付密度、安装效率、美国合规和未来项目毛利 | C | 作为产品 mix 和毛利变量进入基准；不单独加总收入，避免与标准 BESS / AI BESS 重复计算 | 若成为美国新增订单主平台，2027+ 可能提高毛利上限 |
+| AI 数据中心 BESS / microgrid / load smoothing | 2026-03-31 前已确认收入接近 `0`；已披露 2 个 hyperscaler MSA、预计 FY2026Q3 首单、数据中心 pipeline 上修 | 当前收入占比接近 `0%` | 最强增量期权，但尚未进入收入表 | C/D | 基准只折扣纳入 `1.5-3.5 亿美元`；乐观 `5-9 亿美元`；极度乐观 `10-16 亿美元` | 超过 NTM 的多客户标准设计、Vera Rubin / 800VDC 生态、AI factory 微电网 |
+| Services：长期运维、质保、维护、监控、备件和可用率支持 | FY2026H1 `5,185 万美元`；Q2 `2,936 万美元`；services AUM `6.3GW`，contracted backlog `7.7GW` | FY2026H1 `5.5%` | 利润质量、客户黏性和 installed base monetization | A/B | 进入基准；NTM 基准 `1.3-1.8 亿美元` | 随 deployed fleet、augmentation、availability 服务提高长期 run-rate |
+| Digital applications / Fluence IQ：Mosaic、Nispera | FY2026H1 `376 万美元`；Q2 `189 万美元`；digital AUM `22.9GW`，contracted backlog `14.4GW` | FY2026H1 `0.4%` | 小收入、高毛利、长期数据和交易优化入口 | A/B | 进入基准但金额小；NTM 基准 `800-1,500 万美元` | 若 ARR 扩张和第三方资产接入加速，2027+ 利润质量上修 |
+
+## 3. 产品需求四情景
+- 本步口径：只评估外部需求池，不评估 FLNC 份额、收入确认或利润率。需求单位以 BESS GW/GWh、AI 数据中心订单池、deployed fleet / AUM 为主。相对预期基准为：FY2026 公司指引、当前 backlog/pipeline、EIA/ACP/SEIA 对 2026 美国储能新增、以及本地行业报告对 AI 数据中心 UPS/BESS 订单池的口径。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 标准 Energy Storage Products and Solutions | 美国 2026 utility-scale battery planned additions `24GW`；SEIA Q1 2026 口径预计美国 BESS `70GWh / 35GW`，其中 utility-scale `62.4GWh / 20.2GW`；FLNC energy storage pipeline `41.3GW / 147GWh` | 美国项目延期、融资/许可/并网排队使 2026 实际交付低于计划；需求池仍增长但采购节奏低于当前预期 | 美国和全球 BESS 正常增长，utility-scale 和可再生并网继续拉动 2h/4h 系统；订单和交付按现有 backlog 节奏推进 | 数据中心、grid-forming、容量市场和可再生并网共同上修，客户提前锁定 2027 供应 | 供电约束使 BESS 从套利/备电转为上电瓶颈资产，多个地区出现非线性采购 | 美国 2026 planned battery storage `24GW`，较 2025 `15GW` 增加 `约9GW`；FLNC pipeline 较 FY2025 年末增加 `5.6GW / 25GWh` | 基准符合当前预期；乐观要求订单转化快于 EIA/SEIA 正常计划 | 依据：EIA、SEIA、ACP、FLNC backlog/pipeline；反证：battery project cancellation、interconnection 延期、system price 下行但订单不增 |
+| Smartstack / domestic content 平台 | Smartstack 已 substantial completion 首批交付；公司披露美国 domestic content offering access；Smartstack brochure/材料显示高密度和模块化交付 | 客户继续采用既有 Gridstack / 第三方系统，Smartstack 认证或现场施工优势不足 | 新增项目中逐步采用 Smartstack，作为密度、维护和国内供应链卖点 | 多个美国项目把 Smartstack / domestic content 写入设计，项目交付时间和毛利改善 | Smartstack 成为 AI/data center 与美国 BESS 项目标准平台，客户愿意为 time-to-power 和合规支付溢价 | 无法可靠量化；用项目数量、GWh 和毛利方向衡量 | 基准仅为 mix 改善，不是单独需求上修 | 依据：Q2 presentation、产品材料；反证：大客户仍选择 Tesla/Sungrow/CATL/BYD 或全栈电力商 |
+| AI 数据中心 BESS / microgrid / load smoothing | 本地行业口径：2026 全球数据中心 BESS 约 `50 亿美元`，AI 相关 UPS/BBU/BESS 订单池 `120-250 亿美元`；美国 AI 电力/UPS/BESS/配电 2026 `310-550 亿美元`；Siemens/NVIDIA/Fluence reference architecture 为 `100MW IT load / 136MW facility capacity` | AI campus 延期、utility 不承认 flexible connection、客户采用燃气/SOFC/传统 UPS 而非园区级 BESS | 2026 为 design-in 和首批 PO 年，少量项目进入采购和交付；BESS 用于 load smoothing、ride-through、peak shifting | 多个 hyperscaler 将 BESS 纳入标准设计，2h/4h BESS 和 EMS 作为 power-to-market 工具 | AI factory 上电瓶颈导致 BESS/EMS 从可选配套变成标准基础设施，需求池非线性上修 | 2026 需求池从接近传统 BESS 子项扩至 `50 亿美元+` data-center BESS 与 `120-250 亿美元` AI UPS/BBU/BESS 订单池 | 基准只是进入采购早期；乐观/极度乐观才代表超预期 | 依据：本地行业报告、Siemens 2026-06-01 reference design、Google/NERC 动态负载资料；反证：客户 CapEx 下修、GPU 利用率下滑、fire/insurance 限制 |
+| Services | FLNC services AUM `6.3GW`，contracted backlog `7.7GW`；deployed storage `7.4GW / 19.2GWh` | 项目 substantial completion 延迟，服务开始时间后移；客户压低服务 attach | 已部署和新交付项目带动服务 AUM 正常扩大 | 服务 attach 提高，客户为 availability / augmentation / warranty 付费 | 大客户把 Fluence 作为 fleet-level reliability partner，服务从运维变成数据中心 SLA 组成部分 | AUM 正常从 `6.3GW` 向 `7-8GW+` 过渡；极度乐观取决于新增 GWh 交付 | 基准符合 installed base 增长 | 依据：10-Q operating metrics；反证：客户自维、第三方 O&M、项目延期 |
+| Digital applications / Fluence IQ | Digital AUM `22.9GW`，contracted backlog `14.4GW`；Mosaic/Nispera 支持交易优化和 APM | 价格波动降低或客户内部软件替代，AUM 增长但 ARR 转化慢 | 随 storage/renewables AUM 正常增长，收入小幅扩张 | 高波动电力市场和 AI load flexibility 使 bidding/APM 价值提升 | Mosaic/Nispera 成为多资产、VPP 和 AI 数据中心 flexible load 优化平台 | FY2026H1 revenue `376 万美元`，NTM 需求可支持 `800-1,500 万美元`基准收入 | 基准为小额稳定增长；极度乐观仍多为远期期权 | 依据：10-Q revenue/AUM、Fluence product pages；反证：Digital pipeline 2026Q2 较 FY2025 年末下降 `10.2GW` |
+
+## 4. 可收入化暴露与收入基数
+- 本步口径：只判断哪些需求能进入 FLNC 的 NTM 收入表，以及当前收入锚点和证据等级；不预测增长和利润率。可参与需求不等于可确认收入。FY2026Q2 和 FY2026H1 分部收入来自公司 10-Q；backlog、pipeline、order intake、MSA 和 FY2026 指引来自公司 Q2 release / Q2 presentation。AI 数据中心在基准中只折扣纳入，因为 MSA 不是 PO，参考架构不是收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 标准 Energy Storage Products and Solutions | FY2026H1 products revenue `8.845 亿美元`；Q2 `4.336 亿美元`；backlog `56 亿美元`；products contracted backlog `10.1GW` | 直接收入 | 低到中毛利硬件/系统集成；利润取决于项目成本、定价、物流和 scope control | `27-30 亿美元` | `32-35 亿美元` | `37-41 亿美元` | `45-50 亿美元` | 基准符合 FY2026 指引和 backlog 转收入；乐观高于当前交付节奏 | A/B | 是 | 已确认收入、正式 FY2026 指引、RPO/backlog、订单 | NTM 主收入基数；公司汇总时作为核心 |
+| Smartstack / domestic content 平台 | 未单独披露收入；Q2 release 披露 Smartstack first delivery substantial completion、domestic content access | 直接但并入 products | 可能提高密度、物流效率、美国合规和毛利；也可能带来初期成本 | 无法可靠量化；只保留已并入 products 的交付 | 不单独加总；在 products 基准毛利中保守反映 | 可支撑 `3-8 亿美元` products mix 上修 | 若成为美国/AI 数据中心主平台，上限取决于订单 GWh | 符合当前“产品 mix 改善”预期，不是独立收入项 | C | 是，但只作为 mix，不单独加总 | first delivery、产品资料、domestic content 披露 | 进入基准作为利润/执行变量；不作为独立收入基数 |
+| AI 数据中心 BESS / microgrid / load smoothing | 2 个 hyperscaler MSA；预计 FY2026Q3 首单；data center pipeline 较 Q1 上修 `30%`；公司调研记录约 `12GWh` pipeline | 直接潜在收入；当前 revenue 接近 0 | 若为 Smartstack/高可靠系统，可高于普通 BESS；但 hyperscaler 议价强，低毛利 pass-through 风险高 | `0-1 亿美元` | `1.5-3.5 亿美元` | `5-9 亿美元` | `10-16 亿美元` | 基准略高于已确认收入但低于题材预期；乐观/极度乐观才反映 MSA 快速转 PO | C/D | 小比例进入基准 | MSA、Q3 order expectation、reference design；尚无公开 PO 金额和确认节奏 | NTM 小额折扣纳入；未签 PO 部分不得替代基准收入 |
+| Services | FY2026H1 `5,185 万美元`；Q2 `2,936 万美元`；AUM `6.3GW`，contracted backlog `7.7GW` | 直接收入 | 经常性更强，毛利质量高于硬件，但受质保和服务成本影响 | `0.9-1.2 亿美元` | `1.3-1.8 亿美元` | `2.0-2.6 亿美元` | `3.0-4.0 亿美元` | 基准高于 FY2026H1 run-rate，符合 deployed fleet 增长和 ARR 指引方向 | A/B | 是 | 10-Q revenue/AUM/backlog、FY2026 ARR 指引 | 进入基准，利润质量高于硬件 |
+| Digital applications / Fluence IQ | FY2026H1 `376 万美元`；Q2 `189 万美元`；digital AUM `22.9GW`，backlog `14.4GW` | 直接 SaaS / 软件收入 | 高毛利但当前金额小；收入确认随 subscription | `500-800 万美元` | `800-1,500 万美元` | `2,000-3,500 万美元` | `5,000 万美元+` | 基准符合当前 run-rate 小幅增长；极度乐观需 ARR/客户披露 | A/B | 是 | 10-Q revenue/AUM/backlog、Mosaic/Nispera 产品资料 | 进入基准但不改变 NTM 总收入；改变利润质量和长期可选性 |
+
+## 5. 产品级收入和利润贡献
+- 本步口径：从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内能贡献的收入和利润。利润贡献用 gross profit / adjusted EBITDA contribution 的经营方向表达；公司未披露产品级毛利时，不做虚假精确拆分。Smartstack 是平台 mix 变量，收入贡献已包含在标准 BESS 和 AI BESS 中，表内标注为“不单独加总”。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 标准 Energy Storage Products and Solutions | 悲观 | `27-30 亿美元` | gross profit `2.2-3.0 亿美元`，EBITDA 贡献有限 | GM `8-10%` | 低于 FY2026 指引隐含 H2 ramp | H1 revenue `8.845 亿美元`，H2 需大幅交付 | 保留为下行情景 | 项目延迟、scope change、固定价合同、物流、客户延期 |
+| 标准 Energy Storage Products and Solutions | 基准 | `32-35 亿美元` | gross profit `3.8-4.8 亿美元` | GM `11-13%` | 符合 FY2026 指引和 backlog conversion | backlog `56 亿美元`，YTD order intake `约20 亿美元` | 保留 | H2 FY2026 交付压力大，H1 adjusted GM 仅 `8.3%` |
+| 标准 Energy Storage Products and Solutions | 乐观 | `37-41 亿美元` | gross profit `5.0-6.2 亿美元` | GM `13-15%` | 高于当前预期 | order intake 加速、Smartstack、domestic content | 保留但需 Q3/Q4 验证 | 竞争压价、美国制造成本、供应链 |
+| 标准 Energy Storage Products and Solutions | 极度乐观 | `45-50 亿美元` | gross profit `7.0-8.5 亿美元` | GM `15-17%` | 显著高于当前预期 | backlog 继续上修且交付无瓶颈 | 下移为上限 | 需要非线性订单和顺畅验收，不可只靠 TAM |
+| Smartstack / domestic content 平台 | 悲观 | 不单独加总；只维持少量已交付项目 | 利润改善不明显，可能初期成本上升 | 中性到下行 | 低于产品 mix 预期 | first delivery 仍早期 | 保留 | 认证、安装、供应链、新平台爬坡 |
+| Smartstack / domestic content 平台 | 基准 | 不单独加总；支撑 products 内 `3-6 亿美元`项目 mix | 使 products GM 稳定在 `11-13%` | 小幅上行 | 符合当前预期 | first delivery、domestic content access | 保留 | 未披露独立收入和项目毛利 |
+| Smartstack / domestic content 平台 | 乐观 | 不单独加总；支撑 products 内 `6-10 亿美元` mix | 项目成本/安装效率改善，GM `+1-2pct` | 上行 | 高于当前预期 | 多项目采用 Smartstack | 保留但需订单证据 | 客户可能选择 Tesla/中国供应链/全栈电力商 |
+| Smartstack / domestic content 平台 | 极度乐观 | 不单独加总；成为 AI/data center 主要平台 | 若溢价存在，显著改善 gross profit | 上行明显 | 极高于当前预期 | AI reference design + hyperscaler standardization | 下移为乐观上限 | 需要客户标准化，不是已披露事实 |
+| AI 数据中心 BESS / microgrid / load smoothing | 悲观 | `0-1 亿美元` | 无法贡献利润，销售/工程投入先行 | 下行 | 低于 MSA 期待 | 没有公开 PO 金额 | 保留 | MSA 不转 PO，项目延期，客户改用燃气/SOFC/传统 UPS |
+| AI 数据中心 BESS / microgrid / load smoothing | 基准 | `1.5-3.5 亿美元` | gross profit `0.15-0.45 亿美元`；EBITDA 贡献小 | GM `10-13%` | 小幅高于已确认收入，低于题材热度 | 2 个 MSA、Q3 first order expectation、pipeline +30% | 保留但折扣 | 首单规模、交付窗口、消防/保险/utility 认证 |
+| AI 数据中心 BESS / microgrid / load smoothing | 乐观 | `5-9 亿美元` | gross profit `0.7-1.4 亿美元` | GM `13-16%` | 高于当前基准 | 至少 1 个 hyperscaler `1-3GWh` PO 并部分交付 | 保留为有证据的上行情景 | hyperscaler 议价强，可能压低毛利 |
+| AI 数据中心 BESS / microgrid / load smoothing | 极度乐观 | `10-16 亿美元` | gross profit `1.6-2.8 亿美元`；若服务/软件 attach，EBITDA 增量明显 | GM `15-18%` | 显著高于当前预期 | 多个 hyperscaler / AI campus PO，reference design 复制 | 下移为上限情景 | 需要需求、捕获、利润、执行同时成立 |
+| Services | 悲观 | `0.9-1.2 亿美元` | gross profit 稳定但不足以抵消硬件压力 | 稳定 | 低于 deployed fleet 正常转服务 | 项目 substantial completion 延迟 | 保留 | 客户延迟验收、自维、服务 attach 低 |
+| Services | 基准 | `1.3-1.8 亿美元` | EBITDA 贡献优于硬件；改善经营质量 | 上行 | 符合 AUM/backlog | AUM `6.3GW`，backlog `7.7GW` | 保留 | 质保成本、可用率承诺 |
+| Services | 乐观 | `2.0-2.6 亿美元` | 服务贡献成为稳定 EBITDA 层 | 上行 | 高于当前 run-rate | 交付高增 + attach 提升 | 保留 | 需要新项目按时 COD/substantial completion |
+| Services | 极度乐观 | `3.0-4.0 亿美元` | 明显提高利润质量 | 上行明显 | 远高于当前 | fleet-level SLA / data center service attach | 下移为乐观上限 | NTM 内服务开始时间受交付滞后 |
+| Digital applications / Fluence IQ | 悲观 | `500-800 万美元` | 利润小但高毛利 | 稳定 | 低于 ARR 叙事 | Digital pipeline 下滑 | 保留 | 客户内部优化软件、pricing 压力 |
+| Digital applications / Fluence IQ | 基准 | `800-1,500 万美元` | 高毛利但金额小 | 上行 | 符合 run-rate | Digital AUM `22.9GW`，Mosaic/Nispera | 保留 | 收入基数太小 |
+| Digital applications / Fluence IQ | 乐观 | `2,000-3,500 万美元` | 毛利贡献小幅增加 | 上行 | 高于当前 | 第三方资产 AUM、market volatility | 保留但不拉动公司收入 | SaaS 销售周期 |
+| Digital applications / Fluence IQ | 极度乐观 | `5,000 万美元+` | 高毛利可改善结构，但 NTM 证据不足 | 上行明显 | 远高于当前 | AI load flexibility / VPP 远期期权 | 移入附录/仅作跟踪 | 缺少 NTM 合同收入证据 |
+
+## 6. 公司收入和利润四情景
+- 本步口径：第一个表为公司 NTM 总收入和利润四情景。产品汇总已剔除重复计算：Smartstack 作为产品 mix 和利润率变量，不在标准 BESS 与 AI BESS 之外另加收入；AI 数据中心收入只纳入已披露 MSA/首单时间表可支持的折扣区间；Services/Digital 与 hardware revenue 分开。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `31-34 亿美元` | 较 TTM `25.85 亿美元`约 `+20%-32%` | 低于 FY2026 指引延伸口径；H2 FY2026 低端或不达指引 | `8-10%` | `-2% 至 0%` | adjusted EBITDA `-0.4 亿至 0.2 亿美元`；净亏损扩大或接近持平 | 负；库存和应收占用继续高 | 中 | H2 交付延迟、项目成本上修、MSA 不转 PO、库存无法转收入 |
+| 基准公司 | `37-41 亿美元` | 较 TTM 约 `+43%-59%` | 接近 FY2026 指引正常兑现 + FY2027H1 backlog 正常转换；AI 数据中心只小额折扣纳入 | `11-13%` | `1-3%` | adjusted EBITDA `1.3-2.2 亿美元`；净利润接近 breakeven 到小幅盈利 | 从负转中性或小幅正；取决于 H2 回款 | 中高 | 大额 backlog 转收入、毛利稳定、working capital 释放 |
+| 乐观公司 | `44-50 亿美元` | 较 TTM 约 `+70%-94%` | 高于当前预期；需要 FY2026H2 高端兑现且 FY2027H1 新单加速 | `13-15%` | `3-5%` | adjusted EBITDA `2.8-4.5 亿美元`；净利润 `0.5-1.8 亿美元` | 正；库存周转和客户预付款改善 | 中 | 数据中心首批 PO、Smartstack 交付效率、服务 attach |
+| 极度乐观公司 | `55-63 亿美元` | 较 TTM 约 `+113%-144%` | 显著高于当前预期；多个核心环节同时突破 | `15-18%` | `6-9%` | adjusted EBITDA `5.5-8.0 亿美元`；净利润 `2.5-4.5 亿美元` | 明显正，但项目备货使季度波动大 | 低到中 | hyperscaler 多 GWh PO、交付验收、PCS/电芯/消防、客户预付款和高毛利条款 |
+
+补充说明：
+
+| 项目 | 当前锚点 | NTM 基准解释 | 不纳入主口径的内容 |
+| --- | --- | --- | --- |
+| FY2026 指引 | Revenue `32-36 亿美元`，adjusted EBITDA `0.4-0.6 亿美元`，ARR `约1.8 亿美元` | 基准假设 FY2026H2 大额交付基本完成，FY2027H1 延续正常 backlog conversion | 不把 FY2027 全年或长期 run-rate 直接替代 NTM |
+| Backlog / RPO | 2026-03-31 backlog `56 亿美元`；FY2025 年末 backlog `53 亿美元`且当时预计 `55%-60%` 在 12 个月内确认 | 基准假设约 `28-31 亿美元`现有 backlog 在 NTM 内确认，其余来自新增订单、服务和软件 | 不把全部 backlog 当 NTM 收入 |
+| 数据中心 pipeline | 2 个 MSA、Q3 first order expectation、pipeline +30%；公司调研记录约 `12GWh` | 基准只承认 `1.5-3.5 亿美元`折扣收入，乐观和极度乐观才让 pipeline 大幅转收入 | 未披露客户、未签 PO、无交付窗口的项目不进基准 |
+| 利润质量 | FY2026Q2 GAAP GM `10.0%`，adjusted GM `11.1%`；FY2026H1 adjusted GM `8.3%` | 基准要求 H2 毛利恢复和费用杠杆，全年 adjusted EBITDA 指引兑现 | 不因收入增长自动假设 operating leverage |
+| 现金流 | FY2026H1 operating cash flow `-3.479 亿美元`，FCF `-2.854 亿美元`，存货 `7.642 亿美元` | 基准要求库存转收入和客户回款，FCF 从负转中性 | 不把 liquidity 当经营现金流质量 |
+
+## 7. 证据校准、反证和可信度
+- 本步口径：只校准前四步情景，不重新预测。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次：需求风险在需求层，收入确认风险在收入基数层，成本/利润风险在产品贡献层，组合与现金流风险在公司层。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 指引维持 `32-36 亿美元`，adjusted EBITDA `0.4-0.6 亿美元` | 公司汇总 | 支持基准收入不低于 FY2026 指引延伸口径 | 只支持全年低个位数 EBITDA，不支持高利润自动外推 | H2 需要强交付 | 基准保留 |
+| Backlog `56 亿美元`、YTD order intake `约20 亿美元` | 收入基数 | 支持标准 BESS 基准和乐观收入 | backlog 毛利未完全披露，不能自动上调利润 | 需要交付、验收和 LC/working capital 支持 | 基准保留，乐观保留 |
+| FY2026H1 revenue `9.401 亿美元` vs FY2026 guide | 公司执行 | H2 需确认 `22.6-26.6 亿美元`，形成执行压力 | 若赶工/物流/项目成本上升，GM 受压 | 存货和应收回收是关键 | 悲观保留，基准保留 |
+| FY2026Q2 adjusted GM `11.1%`，H1 adjusted GM `8.3%` | 产品利润 | Q2 改善支持收入兑现质量 | H1 低毛利限制极度乐观利润 | 若 H2 不恢复，EBITDA 指引有风险 | 基准保留；极度乐观下移为上限 |
+| 2 个 hyperscaler MSA、预计 FY2026Q3 首单 | 收入基数 / 产品贡献 | 支持 AI 数据中心 BESS 小额进入基准，上修乐观 | 未知价格和毛利，不能自动高毛利 | PO、交付窗口、消防/保险/utility 认证未公开 | 基准折扣保留；极度乐观下移为上限 |
+| Siemens/NVIDIA/Fluence reference architecture | 需求 / 执行可信度 | 提高 design-in 可信度，不等于收入 | 若 Smartstack 标准化可提高 mix，但当前未量化 | 有助于客户认证和方案复制 | 乐观保留；未签订单部分仅作跟踪 |
+| 美国 BESS 2026 计划新增 `24GW`，SEIA 预计美国 BESS `70GWh / 35GW` | 需求 | 支持标准 BESS 需求基准 | 市场增长不保证 FLNC 份额和毛利 | 并网和项目延期仍可压低确认收入 | 需求基准保留 |
+| AI 数据中心 UPS/BBU/BESS 2026 订单池 `120-250 亿美元` | 需求 | 支持数据中心 BESS 有真实需求池 | 订单池不等于 FLNC 收入，也不等于高毛利 | 需要客户 PO 和项目开工 | 需求乐观保留；收入基数不得上移 |
+| 存货 `7.642 亿美元`、H1 operating cash flow `-3.479 亿美元` | 公司现金流 | 若转收入顺利可支持 H2 ramp | 若滞销/变更，可能形成成本压力 | 最大工作资本风险 | 悲观保留；基准现金流可信度降为中高 |
+| Digital pipeline 较 FY2025 年末下降 `10.2GW` | 产品贡献 | 限制 Digital NTM 高增长 | 高毛利但收入小 | 不影响公司总收入，但影响长期软件叙事 | Digital 极度乐观移入附录 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | H2 交付或毛利低于当前预期，NTM 收入仅 `31-34 亿美元` | backlog 仍高，行业需求未崩 | H1 cash outflow、inventory 高、H2 交付压力、MSA 未转 PO | 保留 | 公司悲观下沿 | 中 | 项目延期只在收入确认层处理，不再重复惩罚需求池 |
+| 基准 | FY2026 指引正常兑现，NTM 收入 `37-41 亿美元`，AI 数据中心小额折扣进入 | FY2026 指引维持、backlog `56 亿美元`、order intake 加速、Q2 GM 改善 | H1 adjusted GM 低、现金流负、数据中心仍未披露 PO | 保留 | 最可能情景 | 中高 | AI 数据中心未确认收入只限制该产品，不压低普通 BESS backlog |
+| 乐观 | 标准 BESS 交付顺，Smartstack/domestic content 改善，数据中心首单部分确认，收入 `44-50 亿美元` | 两个 hyperscaler MSA、Q3 order expectation、Siemens reference design、BESS 行业需求强 | hyperscaler 价格/交付/认证未知，H2 execution still demanding | 保留 | 有证据的上行情景 | 中 | 客户压价只在利润率处理，不否定收入需求 |
+| 极度乐观 | 多个 AI/data center PO + 高毛利 + 顺畅执行，收入 `55-63 亿美元` | `12GWh` 量级 pipeline、AI power bottleneck、reference architecture | 任一核心环节缺明确 PO、交付窗口和毛利条款；H1 现金流压力 | 下移 | 作为 NTM 上限，不作为当前预期 | 低到中 | MSA 未转 PO 不重复打击标准 BESS 和 services |
+
+## 8. 结论
+- 最可能情景：基准，略偏向乐观的早期触发条件正在出现。FLNC 的 NTM 主收入应以 `37-41 亿美元`为中心，来源是普通 utility-scale / IPP BESS backlog 正常转收入、FY2026H2 指引兑现、Services 小幅扩张，以及 AI 数据中心首批订单的小额折扣贡献。
+- NTM 收入结论：标准 BESS 仍是收入主体，基准 `32-35 亿美元`；AI 数据中心 BESS 在基准中只给 `1.5-3.5 亿美元`，因为当前证据是 MSA、预计首单和 reference design，而不是已披露 PO 金额或 revenue schedule；Services 和 Digital 合计基准约 `1.4-2.0 亿美元`，对利润质量比对收入总量更重要。
+- 利润/现金流结论：基准 adjusted EBITDA `1.3-2.2 亿美元`，但现金流可信度低于收入可信度。原因是 H1 已经出现大额存货和经营现金流消耗，H2 若不能把库存转成确认收入和回款，即使 backlog 很高，经营价值也会被工作资本吃掉。
+- 主要传导瓶颈：第一，FY2026H2 交付强度；第二，项目毛利从 H1 `8.3%` adjusted GM 回到双位数；第三，AI 数据中心 MSA 是否转成公开 PO、GWh、交付时间表和毛利条款；第四，客户延期/验收和存货周转。
+- 情景切换条件：若 FY2026Q3 披露 hyperscaler 首单且金额/GWh/交付窗口明确，同时 Q3 revenue、adjusted GM 和 cash flow 同步改善，基准可上移到乐观；若 Q3 没有首单或 H2 revenue ramp 明显不足，乐观下移、基准靠近悲观；若多个 hyperscaler PO 在 NTM 内形成 `3-5GWh+` 可交付订单且毛利不低于公司平均，极度乐观才可保留为可执行上限。
+- 后续跟踪数据：FY2026Q3 revenue、adjusted GM、adjusted EBITDA、operating cash flow、inventory；hyperscaler first order 的金额/GWh/交付窗口/产品平台；backlog dollar/GW/GWh；Smartstack 项目数量和毛利信号；Services AUM、Digital AUM、ARR；data center pipeline 从 MSA 到 PO 的转化率；客户延期、取消和 warranty/safety 事件。
+
+## 附录：来源和补充口径
+- 经营数据日期：公司最新财务数据为 fiscal quarter ended 2026-03-31，披露日 2026-05-06；行业和本地数据主要截至 2026-06-11；本报告写作日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Fluence FY2026Q2 results press release / SEC Exhibit 99.1，2026-05-06：https://www.sec.gov/Archives/edgar/data/1868941/000186894126000014/flncq2fy26earningspressrel.htm
+  - Fluence FY2026Q2 10-Q，period ended 2026-03-31：https://www.sec.gov/Archives/edgar/data/1868941/000110465926056304/flnc-20260331x10q.htm
+  - Fluence Q2 FY2026 earnings presentation，2026-05：https://ir.fluenceenergy.com/static-files/18c4c9d6-6673-4352-bbd2-9ff500871e4c
+  - Fluence FY2025 10-K，filed 2025-11-25：https://www.sec.gov/Archives/edgar/data/1868941/000186894125000081/flnc-20250930.htm
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 公司正式指引：revenue `32-36 亿美元`，adjusted EBITDA `0.4-0.6 亿美元`，FY2026 年末 ARR `约1.8 亿美元`。
+  - NTM 基准不是简单使用 FY2026 全年，而是用 FY2026H2 required revenue `22.6-26.6 亿美元` + FY2027H1 backlog conversion / service expansion 估算。
+  - FY2027+ 远期期权包括：AI data center BESS 标准设计、多 hyperscaler PO、Smartstack 成为美国项目主平台、Digital / Fluence IQ 用于 flexible load 和 VPP。
+- 主要来源：
+  - `公司调研/电力_发电_能源_储能/FLNC_Fluence Energy_公司调研_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md`
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`
+  - EIA Today in Energy, 2026-02-20, U.S. planned 2026 utility-scale capacity additions including `24GW` battery storage：https://www.eia.gov/todayinenergy/detail.php?id=67205
+  - ACP / Wood Mackenzie U.S. Energy Storage Monitor, Q1 2026 release page：https://cleanpower.org/resources/u-s-energy-storage-monitor/
+  - SEIA Energy Storage Market Outlook Q1 2026：https://seia.org/research-resources/energy-storage-market-outlook-q1-2026/
+  - Siemens press release, 2026-06-01, NVIDIA DSX Vera Rubin NVL72 reference architecture with Fluence：https://press.siemens.com/global/en/pressrelease/siemens-and-partners-develop-reference-architecture-purpose-built-nvidia-ai-data
+  - Siemens AI workload infrastructure page：https://www.siemens.com/en-us/industries/data-centers/ai-workload-infrastructure-management/
+  - Fluence Gridstack Pro product page：https://fluenceenergy.com/gridstack-pro-energy-storage/
+  - Fluence Smartstack brochure：https://info.fluenceenergy.com/hubfs/Fluence-Smartstack_Brochure_BR-057-02-EN.pdf
+  - Fluence Mosaic product page：https://fluenceenergy.com/mosaic-intelligent-bidding-software/
+  - Fluence Nispera product page：https://fluenceenergy.com/nispera-energy-asset-performance-management-software/

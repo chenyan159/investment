@@ -1,0 +1,614 @@
+# 公司：UMC United Microelectronics Corporation（联华电子，NYSE: UMC / TWSE: 2303）全面尽调
+
+> 调研日期：2026-07-12（America/Los_Angeles）  
+> 股价及估值快照：2026-07-10 美股收盘；最新完整财报：2026Q1；最新经营预览：2026Q2 月营收合计，正式 2026Q2 财报计划于 2026-07-29 发布。  
+> 货币：除特别说明外，财务数字为新台币（NT$）；美元模型统一采用 **NT$31.5/US$**，仅用于可比估算。  
+> 研究边界：项目内只使用 `基本面/行业调研/` 的相关产业资料；未读取或复用既有公司报告，也未修改公司索引。
+
+## 核心结论
+
+1. **UMC 是“成熟/特殊制程纯晶圆代工龙头”，不是先进 AI GPU/ASIC 逻辑代工厂。** 2026Q1 全球晶圆代工份额约 **3.9%、排名第 4**；核心利润池是 22/28nm 及 BCD、eHV、eNVM、RFSOI、RF CMOS 等特殊制程。UMC 不生产 NVIDIA/Google/AWS 的先进节点计算裸片；其 AI 位置在控制/I/O、PMIC、电源、硅中介层、深沟槽电容（DTC）、硅光/TFLN 光子芯片及潜在 HBM base-control/edge-AI 集成层。
+2. **当前业绩改善是真实的，但“AI 数据中心收入”仍无法从报表单独识别。** 2026Q1 营收 **NT$610.38 亿，同比 +5.5%**；2026Q2 月营收合计 **NT$687.33 亿，环比 +12.6%、同比 +17.0%**。2026H1 营收 **NT$1,297.71 亿，同比 +11.3%**。但公司没有披露 AI 数据中心收入、backlog、bookings、B2B、交期或取消率；本报告估计 2026 年“可严格归为直接 AI 数据中心”的收入大致只占 **1%–4%**，远低于股价叙事隐含的权重。
+3. **22nm 是当前最可量化的增长引擎。** 2026Q1 22nm 单独占营收 **14%**，即约 **NT$85.45 亿/US$2.71 亿**，年化约 **US$10.9 亿**；年底预计累计超过 **50 家客户完成 tape-out**。管理层预计 2026H2 的 22nm logic + eHV 收入较 H1 **高十几位数增长**。这主要是 DDIC、网络、MCU、ISP、Wi-Fi 等，不能全部贴成 AI。
+4. **真正与 AI 基建最贴近的三条小业务仍处在不同成熟度：** DTC 硅中介层已经向主要客户出货，active interposer 正由多客户验证；12 英寸 iSiPP300 硅光处于风险生产/晶圆测试，PDK 1.0 目标 2027；HyperLight TFLN 的 6 英寸线已客户认证，但 UMC 8 英寸贡献仍是 2026 年底工程样片、2027Q2 风险生产窗口。新闻中的“高量产平台”不等于 UMC 已有大额 TFLN 收入。
+5. **供给紧张是结构性的，不是 UMC 全厂满载。** 外部数据显示 2026 年 AI PMIC 的 8 英寸 BCD 交期由 **21–26 周延至 35–40 周**，BMC 由 **11–16 周延至 21–26 周**；全球 8 英寸产能预计同比下降 **2.4%**。但 UMC 2026Q1 总利用率只有 **79%**，Q2 指引为 low-80%，因此“部分 BCD/RF 线紧张”与“公司总体仍有闲置能力”必须同时成立。
+6. **资产负债表健康，净现金和现金流为扩产提供缓冲。** 2026-03-31 现金 **NT$1,090.19 亿**，计息短债+长债约 **NT$700.6 亿**，净现金约 **NT$389.6 亿**；流动比率 **2.72x**，Q1 自由现金流约 **NT$88.3 亿**。主要财务风险不是偿债，而是新加坡 P3 爬坡折旧、汇率、低利用率和成熟节点价格竞争。
+7. **最大矛盾是估值。** 2026-07-10 ADS 收盘 **US$24.34**，市值约 **US$609.5 亿**，TTM PE **38.9x**、PS **8.10x**；第三方 2026-06-29 forward PE 约 **26.2x**。过去一年市值增长约 **219%**，当前倍数明显高于公司历史 3–5 年约 14–15x PE。市场已经从“高股息成熟代工”重估为“22nm + 12nm + AI 光互连/先进封装期权”，而这些期权的收入兑现多数在 2027 年以后。
+
+**投资判断：** UMC 的资产负债表和现有特殊制程业务质量优于典型成熟节点代工厂，但在 US$24.34/ADS 附近，投资回报高度依赖 22nm 持续高增长、8 英寸提价落地、P3 顺利吸收折旧，以及硅光/先进封装从验证转量产。若只按当前利润池估值，安全边际偏薄；若把它当 AI 基建标的，则必须接受“当前直接 AI 收入小、验证期长、竞争者已有更强量产记录”的事实。
+
+## 1. 公司整体业务、产业链位置与财务健康度
+
+### 1.1 公司做什么
+
+UMC 成立于 1980 年，是纯晶圆代工公司：客户完成芯片设计和 tape-out 后，UMC 提供晶圆制造、工艺平台、IP/PDK、良率爬坡，以及部分 2.5D/3D 集成和后段生态服务。公司拥有 **12 座量产晶圆厂、约 2 万名员工、月产能超过 40 万片 12 英寸等效晶圆**，所有工厂均具 IATF 16949 汽车质量体系认证。[UMC 2025 年报](https://www.umc.com/upload/media/08_Investors/Annual_Reports/annual_report_english_pdf/2025/2025AR_ENG_all.pdf)
+
+主要工艺/业务如下：
+
+| 业务层 | 核心平台与产品 | 主要终端 | UMC 的产业链位置 |
+|---|---|---|---|
+| 逻辑/混合信号 | 14/22/28/40/55/65nm 等；22ULP/ULL、28HPC/HPC+ | 网络、Wi-Fi、ISP、MCU、控制器、消费电子 | 成熟/特殊节点 wafer foundry；不承接 3/5nm AI 计算裸片 |
+| eHV 显示高压 | 28/22eHV；2026 年发布 14nm eHV FinFET PDK | OLED DDIC、premium smartphone display | OLED DDIC 代工强项；14eHV 是显示升级，不是数据中心 AI |
+| eNVM | eFlash、RRAM、MRAM；28HPC+ SuperFlash ESF4 | 汽车/工业 MCU、控制器、IoT | 把逻辑、模拟和嵌入式存储集成到单片 |
+| BCD/功率 | 0.5μm–55nm，最高 200V；Non-EPI/EPI/SOI | PMIC、DC-DC、LED driver、BMS、motor driver | AI 服务器 PMIC 的间接受益代工层；非功率模块/系统供应商 |
+| RF/RFSOI/化合物 | 130–40nm RFSOI、开发中 22nm；GaAs/GaN | RF switch、LNA、antenna tuner、PA、连接 | 5G/手机/卫星/无线连接特殊制程；AI 数据中心直接含量低 |
+| 先进封装/中介层 | TSI、TSV、DTC、active interposer、W2W hybrid bonding | edge AI、HPC、HBM base-control、RF 3D | 提供硅中介层/集成工艺，不是 CoWoS 全栈龙头 |
+| 硅光/TFLN | 12 英寸 iSiPP300、8 英寸 TFLN、6 英寸 Wavetek | 800G/1.6T/3.2T pluggable、coherent、CPO | PIC/光子芯片 foundry；尚处风险生产与客户导入期 |
+| Intel-UMC 12nm | 12FFC FinFET，美国 Arizona Fabs 12/22/32 | mobile、通信基础设施、networking、RF/国防 | 联合开发、美国制造；2027 才开始生产 |
+
+UMC 的真正优势不是单一最先进节点，而是：成熟良率、跨 8/12 英寸产线、特殊器件/高压/RF/eNVM PDK、长期客户验证、汽车质量认证和较低资本强度。其弱点是先进逻辑缺位、产品组合受消费/手机周期影响、成熟节点面对中国代工厂价格竞争。
+
+### 1.2 投资人心中的公司：从“高股息成熟代工”到“AI 期权股”
+
+历史上，投资者通常把 UMC 看作：
+
+- 退出先进节点军备竞赛后，以 22/28nm 和特殊制程维持现金流的成熟代工厂；
+- 资本开支低于先进逻辑龙头、资产负债表稳健、股息率较高，但长期增长和定价权有限；
+- 业绩受利用率、晶圆 ASP、NTD/USD 和消费/通信补库存周期驱动。
+
+2026 年的估值叙事发生明显变化：22nm 放量、新加坡 P3、Intel 12nm、DTC/active interposer、iSiPP300 和 HyperLight TFLN 被市场合并为“AI/网络新增长曲线”。这一转变解释了市值一年增长约 219%，但也形成错配：**现有营收仍主要来自成熟节点外围芯片，AI 光互连/先进封装多数尚未披露规模。**
+
+### 1.3 最近三年重大业务变化、转型与收购
+
+| 时间 | 重大变化 | 业务含义 | 收入阶段 |
+|---|---|---|---|
+| 2024-01 | 与 Intel 签署长期 12nm FinFET 联合开发协议，利用 Arizona 既有设备 | 以较低前期资本开支进入 12nm，并获得美国制造选项；目标 mobile、通信基础设施、networking | 2026 PDK/IP；2027 客户 tape-out，预计 2027 后期初始商用 |
+| 2024-05 | 发布 55nm RFSOI 3D IC/W2W 方案，面积缩小 >45% | 从单纯 RF 晶圆代工延伸到 3D 集成；后续已进入领先客户量产 | 已量产，但收入不披露 |
+| 2025-04 | 新加坡 Fab 12i P3 正式启用 | 第一期投资上限 US$50 亿、最终 30k 片/月 300mm；22/28nm 和供应链地域多元化 | 2026 量产爬坡；折旧先于满载收入 |
+| 2025-10 | 55nm BCD 平台就绪 | 补齐 Non-EPI/EPI/SOI 和 150V/AEC-Q100 能力，进入更高集成 PMIC | Non-EPI/SOI 可导入；EPI 预计 2026H2 量产 |
+| 2025-12 | 获得 imec iSiPP300 12 英寸硅光许可 | 进入可兼容 CPO 的 PIC 平台；已有数家新客户合作 | 2026–2027 风险生产，PDK 1.0 目标 2027 |
+| 2025-12 | 与 Polar Semiconductor 签 MOU | 探索美国 8 英寸高压、功率和传感器产能 | 仅 MOU，不应计入订单或产能 |
+| 2026-01 | 28HPC+ SuperFlash ESF4 AG1 完成全认证并发布量产 | 汽车控制器从 40nm 向 28nm 迁移；高可靠 eNVM | 已可量产，客户爬坡待观察 |
+| 2026-03 | 续签/扩展 Adeia 混合键合 IP；HyperLight/Wavetek/Jabil TFLN 合作 | 补齐 3D integration IP；打通 TFLN 晶圆到系统集成路径 | RF hybrid bonding 已量产；AI/TFLN 仍早期 |
+| 2026-05 | 发布 14nm eHV FinFET PDK | 相对 22nm eHV 功耗最多降 40%、面积最多降 35%；巩固高端 OLED DDIC | PDK/客户设计阶段；非 AI 重点 |
+
+**并购核查：** 2025 年及截至年报印刷日，公司没有完成或由董事会批准以发行新股进行的并购。过去三年的战略变化主要来自 **合作开发、技术许可和资本开支**，不是大型收购。[Intel-UMC 12nm 官方公告](https://www.umc.com/en/News/press_release/Content/corporate/20240125?country=63)；[新加坡 P3 官方公告](https://www.umc.com/en/News/press_release/Content/corporate/20250401)；[2025 年报](https://www.umc.com/upload/media/08_Investors/Annual_Reports/annual_report_english_pdf/2025/2025AR_ENG_all.pdf)
+
+### 1.4 产业链定位与市场份额
+
+AI 芯片价值链可简化为：架构/IP → fabless/IDM 设计 → 晶圆制造 → 先进封装/测试 → 模组/板卡 → 服务器/rack/数据中心。UMC 位于晶圆制造和部分硅中介层/3D 集成环节：
+
+- **不处于价值量最高的先进 AI compute die 环节。** 先进 GPU/ASIC/CPU 主要由 TSMC/Samsung/Intel 的 3–5nm 及先进封装承接。
+- **有机会承接“外围但必需”的芯片和结构。** 包括 PMIC/BCD、MCU/BMC/控制、网络/接口、DTC、中介层、PIC/TFLN、RF/connectivity。
+- 2026Q1 TrendForce 估计 UMC 晶圆代工收入 **US$19.3 亿、环比 -3.2%、份额 3.9%、全球第 4**。该季度 UMC 受 TV/PC 提前拉货而出货增加，但 8 英寸占比上升令 blended ASP 下降约 5%。[TrendForce 2026Q1 foundry 调查](https://www.trendforce.com/presscenter/news/20260612-13095.html)
+
+项目内行业研究也给出一致结论：特殊代工的 AI 紧张点集中在 SiPh PIC、SiGe/TIA/driver、BCD/HV BCD PMIC、GaN 和先进封装；通用成熟节点并非全面供不应求。参见[特种晶圆代工行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_特种晶圆代工_2026-07-10.md)与[先进逻辑晶圆代工和封装行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-07-10.md)。
+
+### 1.5 最新股价、估值与经营指标
+
+| 指标 | 数值 | 数据日期/口径 | 解读 |
+|---|---:|---|---|
+| NYSE ADS 收盘价 | **US$24.34** | 2026-07-10 收盘；盘后 US$24.41 | 1 ADS = 5 普通股；周末 7/12 无新收盘价 |
+| 市值 | **US$60.95bn** | 2026-07-10 | 一年 +218.7%；不能用普通股数再乘 ADS 价格 |
+| TTM PE | **38.90x** | 2026-07-10 | 显著高于历史 3–5 年约 14–15x |
+| Forward PE | **约 26.18x** | 第三方 2026-06-29 | 聚合商对 ADS/NTD EPS 口径差异大，仅作参照 |
+| PS | **8.10x** | 2026-07-10 TTM | 对成熟/特殊制程代工而言已包含较强增长预期 |
+| PB | **4.79x** | 2026-07-10 | 相比 2025 年末 1.70x 明显重估 |
+| TTM 营收 | **NT$2,407.33 亿，约 US$7.64bn** | 2025Q2–2026Q1 | 以 NT$31.5/US$ 换算 |
+| 2026Q1 营收增速 | **+5.5% YoY** | 截至 2026-03-31 | 已审计/正式季度口径 |
+| 2026H1 月营收增速 | **+11.28% YoY** | 截至 2026-06-30，未审计月营收 | 2026Q2 单季预览同比 +16.98% |
+| 2026 全年收入共识 | **约 +15.0%** | 第三方共识 2026-05-28 | NT$2,732.3 亿；高/低区间约 +24.5%/+6.0% |
+| TTM 毛利率 | **29.61%** | 2025Q2–2026Q1 重构 | 2025 全年为 29.0% |
+| TTM 营业利润率 | **18.88%** | 同上 | 比净利润率更能反映代工主业 |
+| TTM 归母净利率 | **20.82%** | 同上 | 被 2025Q3、2026Q1 投资收益抬高；不可视为核心利润率 |
+| 2025 年度现金股息对应毛收益率 | **约 1.70%** | 2026 AGM 批准 NT$2.60/普通股；1 ADS=5 股；按 NT$31.5/US$、7/10 股价测算，税前 | 因股价暴涨，已不再是高股息估值形态 |
+
+估值来源：[StockAnalysis 2026-07-10 比率页](https://stockanalysis.com/stocks/umc/financials/ratios/)、[市值页](https://stockanalysis.com/stocks/umc/market-cap/)、[FinanceCharts PE/forward PE](https://www.financecharts.com/compare/UMC/value/pe-ratio)。前瞻共识来自[StockAnalysis/S&P Global 共识页](https://stockanalysis.com/stocks/umc/forecast/)。
+
+### 1.6 资产负债表评估
+
+截至 2026-03-31：
+
+| 项目 | 数值 | 风险判断 |
+|---|---:|---|
+| 现金及现金等价物 | NT$1,090.19 亿 | 充裕 |
+| 流动资产 / 流动负债 | NT$2,164.4 亿 / NT$796.1 亿 | 流动比率 **2.72x**，短期偿债安全 |
+| 短期借款/债券 | NT$228.9 亿 | 可由现金覆盖 |
+| 长期借款/债券 | NT$471.7 亿 | 总计息债务约 NT$700.6 亿 |
+| 净现金 | **约 NT$389.6 亿** | 不含其他金融资产；若计入短期投资更强 |
+| 总负债 / 权益 | NT$1,932.0 亿 / NT$4,067.4 亿 | liabilities/equity 约 47%，结构稳健 |
+| 未来 12 个月银行贷款偿还 | NT$66.8 亿 | 仅约现金的 6.1% |
+| Q1 经营现金流 | NT$219.81 亿 | 正常覆盖资本开支 |
+| Q1 资本性现金支出 | 约 NT$131.6 亿 | 自由现金流约 **NT$88.3 亿** |
+| 存货 / 存货天数 | NT$386.5 亿 / 80 天 | 较 4Q25 增 3 天；需监控提前拉货后的库存回吐 |
+| 应收账款天数 | 50 天 | 较 4Q25 的 47 天略升，但不异常 |
+| 2026 Capex | **US$1.5bn** | 90% 投向 12 英寸；低于 2024/2023 的 US$2.9/3.0bn |
+
+**健康度：A−。** 债务不是主要风险，现金和经营现金流足以支持 US$15 亿年度 capex。扣分项是：P3 产能爬坡期折旧上升、NTD 升值对毛利率的敏感性、80 天库存、总体利用率仅 79%–low-80%，以及报表净利润被投资收益扰动。2026Q1 的净投资收益 **NT$49.97 亿**，令净利率达到 26.5%，但营业利润率只有 18.5%；估值应优先使用营业利润和正常化净利。[UMC 2026Q1 财报](https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2026/Q1_2026/UMC26Q1_report.pdf)
+
+## 2. 最新经营预览与最近五次正式财报
+
+### 2.1 2026Q2 未审计营收预览
+
+2026Q2 正式财报尚未发布，因此毛利率、应用/节点结构、出货量、利用率和净利润不能假装已知。已公布的月营收为：4 月 **NT$226.64 亿（+10.8% YoY）**、5 月 **NT$229.44 亿（+17.8%）**、6 月 **NT$231.25 亿（+22.9%）**；合计 **NT$687.33 亿，环比 +12.61%、同比 +16.98%**。这比 Q1 指引“出货 high-single digit、美元 ASP low-single digit 增长”所隐含的收入增长更强，但具体有多少来自出货、价格、产品组合或汇率要等 7 月 29 日。[UMC 月营收](https://www.umc.com/en/IR_Financial/monthly_sales_revenue)
+
+### 2.2 五次正式财报核心表
+
+> 订单字段说明：UMC 没有披露 backlog、bookings、B2B、标准交期或取消率。表内只列可验证代理指标；“ND”表示公司未披露，不能以利用率替代真实订单。
+
+| 财报季度 | 营收 / 增速 | 毛利率 / 营业率 / 归母净利率 | 出货 / 利用率 / blended ASP | 节点收入 | 应用收入结构（计算/通信/消费/其他） | 订单、交期、取消 | AI 数据中心收入 |
+|---|---|---|---|---|---|---|---|
+| **2026Q1** | **NT$610.38 亿 / US$19.3 亿**；QoQ -1.2%，YoY +5.5% | **29.2% / 18.5% / 26.5%**；归母净利 NT$161.71 亿，含 NT$49.97 亿投资收益 | 1,021k 片 12”eq，QoQ +2.7%；**79%**；ASP 下降 | 22/28nm 34%；其中 **22nm 14%**；40nm 18%，65nm 18% | **12% / 39% / 32% / 17%** | Backlog/Bookings/B2B/取消率 **ND**；Q2 出货 high-single 指引；部分 8”线接近满载但整体未满 | 官方 **ND**；模型严格口径约 **1%–4%**，主要为 DTC/包装、PMIC/控制及少量 photonics NRE，而非 GPU die |
+| **2025Q4** | **NT$618.10 亿 / US$19.7 亿**；QoQ +4.5%，YoY +2.4% | **30.7% / 19.8% / 16.3%**；净利 NT$100.55 亿 | 994k，环比近持平；**78%**；ASP firm/汇率和 mix 有利 | 22/28nm 36%；22nm >13%，QoQ **+31%**；全年 22nm **+93%** | **12% / 42% / 28% / 18%** | ND；Q1 出货平、ASP firm 指引；22nm tape-out pipeline 是主要正向代理 | ND；模型约 **1%–3%**；先进封装/SiPh 被列为 2026 后催化剂，尚未量化 |
+| **2025Q3** | **NT$591.27 亿 / US$19.4 亿**；QoQ +0.6%，YoY -2.2% | **29.8% / 18.8% / 25.3%**；净利 NT$149.82 亿，非经营收益抬高 | 1,000k，QoQ +3.4%；**78%**；ASP firm | 22/28nm 35%；22nm >10% | **12% / 42% / 29% / 17%** | ND；手机/笔电补库存；Q4 出货平指引 | ND；模型约 **<3%** |
+| **2025Q2** | **NT$587.58 亿 / US$20.1 亿**；QoQ +1.6%，YoY +3.4% | **28.7% / 18.4% / 15.2%**；净利 NT$89.03 亿；NTD 升值压毛利约 3ppt | 967k，QoQ +6.2%；**76%**；ASP firm | 22/28nm **40%**，绝对额/占比创当时纪录 | **11% / 41% / 33% / 15%** | ND；ISP、NAND controller、Wi-Fi、LCD controller 拉动；Q3 出货 low-single 指引 | ND；模型约 **<2%–3%** |
+| **2025Q1** | **NT$578.59 亿 / US$17.4 亿**；QoQ -4.2%，YoY +5.9% | **26.7% / 16.9% / 13.4%**；净利 NT$77.77 亿 | 910k；**69%**；一次性价格调整后 ASP 下降 | 22/28nm 37%；22nm QoQ **+46%** | **11% / 40% / 34% / 15%** | ND；Q2 出货 +5%–7% 指引；OLED DDIC、ISP、DTV、Wi-Fi、audio codec 增长 | ND；模型约 **<2%** |
+
+正式财报来源：[2026Q1](https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2026/Q1_2026/UMC26Q1_report.pdf)、[2025Q4](https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2025/Q4_2025/UMC25Q4_report.pdf)、[2025Q3](https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2025/Q3_2025/UMC25Q3_report.pdf)、[2025Q2](https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2025/Q2_2025/UMC25Q2_report.pdf)、[2025Q1](https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2025/Q1_2025/UMC25Q1_report.pdf)。
+
+### 2.3 应用业务收入重构
+
+UMC 只披露 wafer sales 的应用百分比，不披露应用毛利率；以下以总营收乘应用占比重构，可能与真实 wafer sales 分母有小差异。
+
+| 季度 | 计算收入 / QoQ | 通信收入 / QoQ | 消费收入 / QoQ | 其他收入 / QoQ（工业/汽车等） | 观察 |
+|---|---:|---:|---:|---:|---|
+| 2025Q1 | NT$63.6 亿 / 基期 | NT$231.4 亿 / 基期 | NT$196.7 亿 / 基期 | NT$86.8 亿 / 基期 | 消费占比高、利用率仅 69% |
+| 2025Q2 | NT$64.6 亿 / **+1.6%** | NT$240.9 亿 / **+4.1%** | NT$193.9 亿 / **-1.4%** | NT$88.1 亿 / **+1.6%** | 通信恢复，ISP/Wi-Fi/controller 拉动 |
+| 2025Q3 | NT$71.0 亿 / **+9.8%** | NT$248.3 亿 / **+3.1%** | NT$171.5 亿 / **-11.6%** | NT$100.5 亿 / **+14.1%** | 手机/笔电补库存，其他业务增加 |
+| 2025Q4 | NT$74.2 亿 / **+4.5%** | NT$259.6 亿 / **+4.5%** | NT$173.1 亿 / **+0.9%** | NT$111.3 亿 / **+10.7%** | 通信和其他达到五季高点 |
+| 2026Q1 | NT$73.2 亿 / **-1.3%** | NT$238.0 亿 / **-8.3%** | NT$195.3 亿 / **+12.9%** | NT$103.8 亿 / **-6.7%** | 消费反弹，通信季节性回落 |
+
+应用口径的局限很大：UMC 将 CPU、GPU、HDD controller、audio、WLAN 等放在“计算”，把 Ethernet/LAN/handset/broadband 放在“通信”，并没有“server”或“AI”类别。上述增速是按披露占比重构的环比值，不是公司报告分部增速；公司也不披露应用别毛利率。管理层在 Q1 电话会中明确表示 server exposure 处于客户链条的“两到三层之外”，不能从 12% 计算业务直接推出 AI 收入。[2026Q1 电话会文字记录](https://www.earningswhispers.com/transcript/UMC)
+
+### 2.4 节点收入、单片价值与利润率趋势
+
+2026Q1 的节点结构为：22/28nm **34%**、40nm **18%**、65nm **18%**、90nm **8%**、110/130nm **7%**、150/180nm **10%**、250/350nm **4%**、500nm 以上 **1%**。40nm 及以下合计 **52%**。
+
+- 22nm 单独占 14%，对应 **NT$85.45 亿/US$2.71 亿**；28nm 可由 34%-14% 近似为 20%，对应 **NT$122.08 亿/US$3.88 亿**。这是本报告少数可直接量化的产品平台收入。
+- 2026Q1 单季收入 US$19.3 亿 / 1,021k 片 12”等效出货，得到 **约 US$1,890/片 12”等效的混合实现收入**。它不是任何具体节点报价，但可用于总产能美元化的 sanity check。
+- 五季毛利率从 26.7% 升至 29%–31%，主要来自利用率从 69% 升至 78%–79%、22nm mix 和汇率/价格；尚未显示 AI 产品带来单独的结构性利润跃升。
+
+### 2.5 订单积压与交期：能知道什么、不能知道什么
+
+**不能知道：** UMC 没有公布 Backlog、Bookings、B2B（book-to-bill）、客户订单金额、标准 Lead time、取消率，也未更新早年新加坡多年度供货协议的剩余承诺。因此任何“订单爆满”“8%–10% 全面提价”都不能当官方数字。
+
+**可验证代理：**
+
+1. Q1 出货 +2.7%、利用率 79%；Q2 指引出货 high-single、利用率 low-80%，实际营收预览 +12.6%。需求在改善但公司总体未满载。
+2. 22nm Q1 达 14%，年底超过 50 家客户 tape-out；管理层预计 H2 22nm logic/eHV 较 H1 高十几位数增长，说明设计导入比总利用率更强。
+3. TrendForce 观察到 2026Q1 TV/PC 外围 IC 提前拉货，且客户为预期提价提前下单；这包含库存前置，不等于终端需求永久上移。
+4. 8 英寸 BCD/PMIC 出现行业性挤压：PMIC 交期预计从 21–26 周升至 **35–40 周**，BMC 从 11–16 周升至 **21–26 周**。但这是行业数据，不是 UMC 自身订单簿。[TrendForce 服务器零部件交期](https://www.trendforce.com/presscenter/news/20260415-13013.html)
+5. 全球 8 英寸产能 2026 年预计 -2.4%，平均利用率从 2025 年 75%–80% 升至 85%–90%；部分 foundry 通知价格上调 5%–20%。UMC 只确认会对部分新订单/新 wafer starts 做选择性调整，没有确认统一涨幅。[TrendForce 8 英寸调查](https://www.trendforce.com/presscenter/news/20260113-12877.html)
+
+## 3. 2026 年最新指引、收入结构与重点产品
+
+### 3.1 2026Q2 指引及完成度
+
+| 项目 | 2026Q1 财报给出的 Q2 指引 | 截至 2026-07-12 的验证 | 判断 |
+|---|---|---|---|
+| Wafer shipments | QoQ **high-single digit** | 正式出货量待 7/29 | 方向大概率达成 |
+| USD ASP | QoQ **low-single digit 增长** | 节点/尺寸 mix 待披露 | 不能用营收直接反推 |
+| 毛利率 | **约 30%** | 待披露 | 若 P3 折旧和 NTD 升值可控，有望接近 |
+| 利用率 | **low-80%** | 待披露 | 仍不是全厂满载 |
+| 2026 Capex | **US$1.5bn** | 未变；90% 为 12 英寸 | 资本纪律较强 |
+| 单季营收 | 公司不直接指引 | **NT$687.33 亿，QoQ +12.6%、YoY +17.0%** | 明显加速，但含 mix/FX/提前拉货 |
+
+### 3.2 最新收入占比及增长重点
+
+公司本质上只有一个可报告经营分部——晶圆制造；“各业务收入”只能用应用、节点和产品平台交叉近似：
+
+- **通信 39%（Q1 约 NT$238.0 亿）**：Q2 预计由 DDIC、networking、FPGA、ISP 反弹。这里包含最可能的 AI 网络/控制间接暴露，但也包含大量手机和连接芯片。
+- **消费 32%（约 NT$195.3 亿）**：Q1 Wi-Fi、DTV 拉动；Q2 MCU、LCD controller、power 产品继续。增长质量低于 22nm 专项，因为存在提前拉货与周期性补库存。
+- **其他 17%（约 NT$103.8 亿）**：工业/汽车等长周期特殊制程，稳定但不是 2026 AI 主线。
+- **计算 12%（约 NT$73.2 亿）**：口径混合，不能视作 AI。BMC/控制器可能在其中，先进 GPU 代工不在 UMC。
+- **22nm 14%（约 NT$85.45 亿）**：公司最明确、可量化且最侧重的增长平台；2025 全年 +93%，2026Q1 再创新高。
+- **22/28nm 合计 34%（约 NT$207.53 亿）**：是绝对利润池；新加坡 P3 主要服务该节点。
+
+### 3.3 产品/型号、阶段、增长和利润率交叉验证
+
+> “产品毛利率”均为研究模型的 foundry gross margin 区间，不是公司披露；UMC 不报告产品级毛利率。早期平台的实际毛利可能因低良率/NRE/折旧显著低于成熟平台。
+
+| 平台/产品 | 具体型号/工艺 | 2026 阶段与证据 | 2026 销售规模/增速判断 | 模型毛利率 | AI 相关性 |
+|---|---|---|---|---:|---|
+| **22nm logic/specialty** | 22ULP、22ULL、22eHV、networking、MCU、ISP、Wi-Fi | 量产；Q1 单独 14%；年底 >50 客户 tape-out | 年化约 US$10.9 亿；H2 logic+eHV 较 H1 高十几位数增长 | **35%–45%**；P3 爬坡初期偏下沿 | 中等；网络/控制/edge AI，非 compute die |
+| **28nm logic/eHV/eNVM** | 28HPC/HPC+、OLED DDIC、ISP、28 ESF4 AG1 | 大规模量产；28nm 由 Q1 mix 推算约 20% | Q1 年化约 US$15.5 亿；总体成熟，eNVM 是新增长点 | 32%–42% | 低至中；控制/接口，汽车为主 |
+| **BCD/PMIC** | 0.35μm–55nm；55 Non-EPI/EPI/SOI；最高 200V；0.153μm customized mobile PMIC | 8/12”量产；55nm 平台 ready，EPI 预计 H2 2026 量产 | 公司不拆分；模型 US$4.5–7.5 亿/年，+10%–20% | 32%–42% | **中高**；AI rack 电源外围最现实受益 |
+| **eNVM** | 28HPC+ SuperFlash ESF4 AG1、22 RRAM/MRAM、1Gb 22nm HDMRAM | ESF4 已完成 AG1 全认证并可量产；其他处开发/试产 | 模型 US$3.5–6.5 亿；+10%–20%，与 22/28nm 有重叠 | 35%–45% | 中低；MCU/BMC/控制平面，非 AI 加速器 |
+| **RFSOI/3D RF** | 130–40nm、40nm mmWave/FR3、开发中 22nm；55nm 3D RFSOI | 既有 RFSOI 已累计 >500 tape-outs、>380 亿颗；W2W hybrid bonding 已量产 | 模型 US$3.5–6.0 亿；高个位数至低双位数增长 | 35%–45% | 低；连接/卫星可受益，数据中心含量近零 |
+| **DTC/active interposer** | 400/1100nF/mm² DTC；TSV-middle active interposer；TSI | DTC 已向主要客户出货；active interposer 多客户验证；>10 包装客户、2026 年 >35 tape-outs（电话会） | 模型 US$0.5–1.2 亿；基数小、>30% 增长 | 25%–45% | **高**；但 UMC 只是 niche interposer，不是 CoWoS 主导者 |
+| **12” SiPh** | imec iSiPP300：microring、GeSi EAM、fiber interface、兼容 CPO | 风险生产/晶圆测试；PDK 1.0 目标 2027；数家客户、当前以 pluggable PIC 为主 | 2026 模型 <US$2,000–4,000 万，多为 NRE/风险晶圆 | 早期 **负至 20%**；规模化可 35%–50% | **高、但远期** |
+| **TFLN** | HyperLight TFLN Chiplet；6” Wavetek + 8” UMC；IMDD/coherent/CPO | 6”客户认证 HVM；8”工程样品 2026 年底、Hybrid-PIC 风险生产目标 2027Q2 | UMC 2026 增量模型 <US$1,000 万；新闻不能证明大额收入 | 早期负至 20%；成熟 35%–50% | **很高、验证风险也高** |
+| **Intel-UMC 12FFC** | 12nm FinFET；Arizona Fabs 12/22/32 | PDK/IP 2026、客户 tape-out 2027、初始商用预计 2027 后期 | 2026 产品收入约零；NRE 未分拆 | 初期低/负；成熟后 35%–45% | 中；network/高速接口有潜力，非领先 AI compute |
+| **GaN** | RF switch、RF PA、650V power | RF switch 已量产；PA/650V 从客户验证/试产向量产 | 模型 US$1,000–5,000 万；650V 尚不能计大收入 | 20%–40% | 中；未来 PSU/电源可用，但无 AI design win |
+| **14eHV FinFET** | 14nm OLED DDIC PDK | PDK 已发布，Fab12A 验证；较 22nm 功耗 -40%、面积 -35% | 2026 主要为设计导入，收入小 | 早期低、成熟后 35%–45% | 低；高端手机显示，不是数据中心 |
+
+技术/认证来源：[UMC 22nm 平台](https://www.umc.com/en/Product/technologies/Detail/22nm)、[55nm BCD 公告](https://www.umc.com/ja-JP/News/press_release/Content/technology_related/20251022)、[28nm ESF4 AG1 公告](https://www.umc.com/en/News/press_release/Content/technology_related/20260116)、[14eHV 公告](https://www.umc.com/en/News/press_release/Content/technology_related/20260514)、[iSiPP300 公告](https://www.umc.com/en/News/press_release/Content/technology_related/20251208)、[TFLN 制造合作](https://www.umc.com/en/News/press_release/Content/corporate/20260312)、[Jabil 系统合作](https://www.umc.com/en/News/press_release/Content/corporate/20260313)、[Adeia 混合键合](https://www.umc.com/en/News/press_release/Content/Partner/20260311)。
+
+### 3.4 AI 收入的三层拆分
+
+| 层级 | 包含内容 | 2026 收入判断 | 证据强度 |
+|---|---|---:|---|
+| **直接 AI 数据中心** | 已出货 DTC/interposer、可能的 server PMIC/BMC wafers、少量 PIC/TFLN NRE/风险晶圆 | **约总营收 1%–4%，US$0.08–0.35bn** | 低至中；公司没有单独披露，客户/项目金额匿名 |
+| **AI enabling/外围** | 22nm networking/control、BCD power、MCU/eNVM、连接/RF | **约 8%–18% 可被 AI/edge/网络需求部分拉动** | 中低；产品可用于 AI，但终端 mix 不明 |
+| **长期期权** | 12” SiPh/CPO、8” TFLN、active interposer/HBM base-control、multi-wafer hybrid bonding、Intel 12nm | 当前收入很小；2027–2029 才可能重要 | 技术路线真实，收入时点和客户采用不确定 |
+
+公司官网把 AI 对应技术列为 Logic/MS、2.5D/3D IC、BCD、RFSOI 和开发中的 silicon photonics；这是产品可服务市场的描述，不是收入披露。[UMC AI 市场页](https://www.umc.com/en/Application/markets/Index/artificial-intelligence)
+
+### 3.5 明确跳过/低优先级业务
+
+以下不是“没有收入”，而是因与 AI 基建低增长主线关系较弱，不进入后续逐产品三情景主模型：
+
+- 通用 DTV、DVD/STB、MP3/4、toy、smart card 等消费型老产品；
+- 90–350nm 通用 DDIC、audio codec、低端 LCD controller 和 generic analog；
+- 主要面向 premium smartphone display 的 14/22/28eHV（保留为高毛利现金流观察项，但不当 AI）；
+- 传统 handset RFSOI/RF front-end 主体（只保留 3D hybrid bonding/40nm mmWave 的技术价值）；
+- 汽车长周期控制器/传感器中与 AI 数据中心无直接关系的部分；
+- Polar 美国 8 英寸 MOU：尚无正式产能、订单或量产承诺；
+- 市场传闻的 UMC 3nm 或大规模 commodity memory foundry：管理层明确聚焦 12nm/特殊制程，没有官方项目，主模型按零处理。
+
+潜力小产品没有遗漏：28nm ESF4、22nm RRAM/MRAM、1Gb 22nm HDMRAM、55nm BCD EPI/SOI、40nm RFSOI FR3、22nm RFSOI、DTC 1500/2000nF/mm²、TSV-last、multi-wafer hybrid bonding、650V GaN 均放入观察清单或关键业务模型。
+
+## 4. 当前高增长/关键产品：收入贡献与 AI 基建价值
+
+### 4.1 评分口径
+
+以下五项均为 1–5 分：
+
+- **AI 重要性：** 1=与 AI 基建几乎无关；5=系统扩展必需且难以绕过。
+- **时间紧急性：** 1=三年以上可选；5=未来 12 个月就是客户部署瓶颈。
+- **供需紧张：** 1=明显过剩；5=交期显著延长/供不应求。评分针对该产品市场，不等于 UMC 自身满载。
+- **垄断/控制力：** 1=高度同质化；5=工艺、IP、认证或唯一供应形成强控制。
+- **溢价能力：** 1=只能跟随降价；5=可以持续涨价且不丢单。
+
+### 4.2 当前贡献评估
+
+> 除 22nm 单独收入外，UMC 不拆产品收入；其余均是以节点 mix、终端结构、技术阶段和同行产品强度推算的区间。业务之间有重叠，例如 22nm eNVM 同时属于 22nm 和 eNVM，**严禁把各行相加为总营收**。
+
+| 高增长/关键业务 | 当前年化/2026E 收入贡献（US$） | 当前增长 | AI 重要性 | 紧急性 | 供需紧张 | 控制力 | 溢价 | 核心判断 |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| **22nm logic + eHV/specialty** | **US$1.05–1.30bn**；Q1 精确年化约 US$1.09bn | 2025 +93%；2026H2 vs H1 高十几位数 | 3.0 | 3.5 | 3.0 | 3.5 | 3.0 | 当前最重要增长和利润池；UMC 在 22nm OLED DDIC 有独特位置，但网络/MCU 客户仍可转向其他成熟平台 |
+| **BCD/PMIC** | **US$0.45–0.75bn**；其中直接 AI/服务器模型约 US$0.03–0.10bn | +10%–20% | 4.0 | **5.0** | **4.5** | 2.5 | 3.5 | 2026 最现实 AI 受益；35–40 周 PMIC 交期是行业紧张，不代表 UMC 全部 BCD 已售罄 |
+| **eNVM/MCU/控制** | **US$0.35–0.65bn** | +10%–20% | 2.5 | 3.5 | 3.0 | 3.5 | 3.0 | ESF4 AG1 全认证提高粘性；AI 价值在 BMC/控制平面，主体仍为汽车/工业 |
+| **RFSOI/3D RF** | **US$0.35–0.60bn** | +8%–15% | 1.5 | 2.0 | 2.5 | **4.0** | 3.5 | >380 亿颗历史出货、W2W 产品量产构成真实 moat；数据中心 AI 含量很低 |
+| **DTC/active interposer/hybrid bonding** | **US$0.05–0.12bn** | >30%，小基数 | **5.0** | **5.0** | 行业 4.5；UMC 自身订单 2.5 | 2.5 | 3.0 | DTC 已出货、active interposer 多客户验证；有真实产品但不是 NVIDIA CoWoS 主供应链的已确认替代者 |
+| **12” SiPh + TFLN** | **US$0.00–0.04bn**；TFLN 对 UMC 2026 增量很可能 <US$10m | n.m. | **5.0** | 4.5 | 市场 4.0；UMC 产线 1.5 | 3.0 | 3.0 | 技术/合作真实，收入仍是 NRE/风险晶圆；PDK、良率、封装测试和客户量产是四道闸门 |
+| **Intel-UMC 12nm** | 产品收入约 **US$0**；NRE 未分拆 | n.m. | 3.0 | 2.0 | 1.0 | 3.0 | 2.5 | 美国制造和节点升级有战略价值，但 2027 后期才初始商用，不能支撑 2026 收入 |
+| **GaN RF/650V power** | **US$0.01–0.05bn** | 高增长、小基数 | 3.5 | 3.0 | 2.5 | 2.0 | 2.5 | RF switch 已量产；650V 尚处客户认证/试产，无公开 AI PSU design win |
+
+### 4.3 为什么“AI 重要”不等于“UMC 能赚到钱”
+
+AI 中介层、光互连和功率管理的系统重要性很高，但 UMC 收入需要同时满足：
+
+1. 终端架构采用该技术，例如 TFLN/CPO 不被低成本 EML、silicon photonics ring 或 LPO 方案延后；
+2. fabless/系统客户采用 UMC PDK，而不是 GF/Tower/TSMC/Intel/其他平台；
+3. UMC 完成 PDK、器件、良率、可靠性、光学测量和包装生态认证；
+4. UMC 获得量产 wafer allocation，而不只是开发费/MPW/risk wafer；
+5. 单位晶圆 ASP 和良率足以覆盖早期折旧、材料和测试成本。
+
+因此本报告对 DTC、SiPh/TFLN 给予高 AI 重要性，却对当前收入和垄断力保持低至中评分。
+
+## 5. 一年后收入贡献：基准、乐观、极度乐观三情景
+
+### 5.1 情景定义
+
+- **基准：** 22nm 按公司可见 pipeline 增长；8 英寸仅选择性提价；P3 正常爬坡；先进封装/硅光按公开认证节奏推进，没有未披露 hyperscaler 大单。
+- **乐观：** 22nm/P3 吸收顺利，BCD 紧张延续并涨价，DTC/active interposer 多个客户量产；SiPh/TFLN 提前获得可辨识小规模收入。
+- **极度乐观：** AI PMIC 长期缺货、UMC advanced packaging 获得 HBM/edge AI 大项目、TFLN/SiPh 跳过典型验证延迟、12nm 客户提前；这是低概率压力测试，不是目标价基础。
+
+收入窗口为 **截至 2027Q2 的未来 12 个月/2027H1 年化水平**，美元按 NT$31.5/US$。增长从当前区间中点计算，因此只是决策区间，不是会计预测。
+
+### 5.2 产品收入与五项能力三情景
+
+| 业务 | 情景 | 一年后收入贡献（US$） | 对当前增速 | AI 重要性 | 紧急性 | 供需紧张 | 控制力 | 溢价 | 必要条件 |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| **22nm** | 基准 | **1.40–1.60bn** | +20%–30% | 3 | 3 | 3 | 3.5 | 3 | H2 高十几位数增长兑现，P3 良率/折旧正常 |
+|  | 乐观 | **1.70–2.00bn** | +45%–65% | 3.5 | 4 | 4 | 3.5 | 3.5 | networking/MCU/eHV 多客户放量、ASP/mix 改善 |
+|  | 极度乐观 | **2.10–2.50bn** | +80%–110% | 4 | 5 | 4.5 | 4 | 4 | P3 快速满载且竞争者产能挤压；尚无订单证据支持 |
+| **BCD/PMIC** | 基准 | **0.65–0.85bn** | +10%–25% | 4 | 5 | 4 | 2.5 | 3.5 | PMIC 交期保持 30 周以上、55nm/EPI 按期爬坡 |
+|  | 乐观 | **0.85–1.15bn** | +40%–90% | 4.5 | 5 | 5 | 3 | 4 | 8”产能缺口、AI PMIC allocation、5%–10% 有效提价 |
+|  | 极度乐观 | **1.15–1.55bn** | +90%–160% | 5 | 5 | 5 | 3.5 | 4.5 | UMC 获得主要 AI 电源 IC 转单且无需求破坏 |
+| **eNVM/控制** | 基准 | **0.45–0.65bn** | 0%–30% | 2.5 | 3 | 3 | 3.5 | 3 | ESF4 客户开始量产，22nm eNVM tape-out 转收入 |
+|  | 乐观 | **0.60–0.80bn** | +20%–60% | 3 | 4 | 3.5 | 4 | 3.5 | 汽车控制和 BMC/edge controller 同时放量 |
+|  | 极度乐观 | **0.75–1.00bn** | +50%–100% | 3.5 | 4.5 | 4 | 4 | 4 | 28ESF4 快速替代 40nm，多个 AI 控制 design win |
+| **RFSOI/3D RF** | 基准 | **0.45–0.65bn** | 0%–35% | 1.5 | 2 | 2.5 | 4 | 3.5 | 40nm mmWave/FR3 和 3D RF 温和增长 |
+|  | 乐观 | **0.55–0.80bn** | +15%–65% | 2 | 3 | 3 | 4 | 4 | 5G/卫星/新连接项目放量 |
+|  | 极度乐观 | **0.70–1.00bn** | +45%–110% | 2.5 | 4 | 4 | 4.5 | 4 | 22nm RFSOI 提前采用且 W2W share 大幅提升 |
+| **先进封装/DTC** | 基准 | **0.12–0.20bn** | +90%–140% | 5 | 5 | 4 | 2.5 | 3 | 多客户验证中至少 2–3 个转小量量产 |
+|  | 乐观 | **0.20–0.40bn** | +190%–370% | 5 | 5 | 5 | 3 | 4 | active interposer/HBM base-control 出现主要客户 |
+|  | 极度乐观 | **0.40–0.70bn** | +470%–900% | 5 | 5 | 5 | 3.5 | 4.5 | UMC 成为第二来源平台且包装产能同步扩张 |
+| **SiPh/TFLN** | 基准 | **0.03–0.08bn** | n.m. | 5 | 4 | 3 | 3 | 2.5 | PDK/engineering sample 按期，主要仍为风险晶圆 |
+|  | 乐观 | **0.08–0.20bn** | n.m. | 5 | 5 | 4 | 3.5 | 3.5 | 800G/1.6T 客户完成模块认证并开始量产 |
+|  | 极度乐观 | **0.20–0.45bn** | n.m. | 5 | 5 | 5 | 4 | 4.5 | hyperscaler/模块商大规模采用，8”良率快速达标 |
+| **Intel 12nm** | 基准 | **0–0.03bn** | n.m. | 3 | 2 | 1 | 3 | 2 | PDK/IP 完成，主要为 NRE/试片 |
+|  | 乐观 | **0.03–0.08bn** | n.m. | 3.5 | 3 | 2 | 3.5 | 3 | 多客户 2027 tape-out，试产提前 |
+|  | 极度乐观 | **0.08–0.18bn** | n.m. | 4 | 4 | 3 | 4 | 3.5 | 初始商用提前到 2027H1；与官方“后期”节奏冲突，概率低 |
+| **GaN** | 基准 | **0.03–0.07bn** | +50%–130% | 3.5 | 3 | 2.5 | 2 | 2.5 | RF PA/650V 从 pilot 进入小量 |
+|  | 乐观 | **0.07–0.15bn** | +130%–400% | 4 | 4 | 3.5 | 2.5 | 3.5 | 获得 PSU/工业客户正式认证 |
+|  | 极度乐观 | **0.15–0.30bn** | +400%–900% | 4.5 | 5 | 4.5 | 3 | 4 | AI PSU design win + 6”/8”扩产；当前无公开证据 |
+
+**模型含义：** 基准情景中，未来一年公司增长仍主要由 22nm、周期恢复和 BCD 拉动；先进封装/光子收入即使翻倍，对 US$80–90 亿级公司营收仍小。只有乐观以上情景，AI 直接业务才会明显改变 mix。
+
+## 6. BOM、单位内容量、价格传导、当前产能与认证
+
+### 6.1 先说明“真实内容量”的公开边界
+
+UMC 是匿名客户的晶圆代工厂，未披露具体 hyperscaler、GPU、rack、光模块项目，也没有公开 die size、wafer quote、yield 或每台系统采用数量。因此不存在可审计的“每个 NVIDIA rack 已确认 UMC 含量”。下表给出两层信息：
+
+1. **真实物理位置：** 该工艺在系统 BOM 中究竟对应什么器件；
+2. **工程化可寻址 foundry value：** 用公开架构常见数量、晶圆面积/良率公式和代工报价区间做边界估算，绝不等同于 UMC 已获订单。
+
+标准化假设：**1MW IT load = 10 个 100kW rack；每 rack = 72 个 accelerator/GPU**。不同系统可相差数倍，读者应按实际 rack 功率和 GPU 数线性缩放。
+
+### 6.2 每 MW / rack / GPU / optical port 的物理 BOM 与 foundry value
+
+| UMC 相关业务 | BOM 中的真实器件/数量逻辑 | 每 MW 可寻址 UMC foundry value | 每 rack | 每 GPU | 每 optical port | 置信度/限制 |
+|---|---|---:|---:|---:|---:|---|
+| **22nm control/network** | 0–2 颗 BMC/MCU/board controller，加上可能的网络/时钟/接口 ASIC；每芯片通常 1 die | **US$0.1k–1.5k** | US$10–150 | US$0.1–2 | US$0–2 | 低；无公开 UMC 设计获胜，很多 BMC 在 28/40nm 或 IDM/其他 foundry |
+| **BCD/PMIC** | 每板/每 GPU 多路 DC-DC controller、hot-swap、telemetry、gate driver；rack 常见 20–100 颗相关 IC | **US$2k–12k** | US$0.2k–1.2k | US$3–15 | 不适用 | 中低；是整条 BCD foundry 含量，不代表全部由 UMC 制造 |
+| **eNVM/MCU** | BMC、security、firmware/management controller 内嵌存储；每 rack 1–数颗 | **US$0.05k–0.5k** | US$5–50 | <US$1 | 近零 | 低；AI 与汽车/工业 mix 无法拆分 |
+| **DTC/active interposer** | 每高端 accelerator package 可有 0–1 片 silicon interposer/bridge/DTC 结构；DTC 改善 power integrity | **US$4k–40k** | US$0.4k–4k | US$5–50 | US$0–5 | 低；UMC 未被确认承接主流 GPU interposer，本区间是可寻址而非获单 |
+| **SiPh/TFLN PIC** | 每 optical engine/port 通常 1 颗 PIC 或 modulator chiplet；模型采用每 rack 32–128 个 800G/1.6T 端口 | **US$1.6k–38k** | US$0.16k–3.84k | US$2–53 | **US$5–30** | 中低；器件结构真实，但 UMC 8”量产/客户 port 数尚未披露 |
+| **RFSOI/3D RF** | 手机/无线 RF switch、LNA、tuner；AI rack 仅可能有少量 service radio | 约 US$0–0.1k | US$0–10 | 近零 | 近零 | 高；结论是 AI rack 含量不重要 |
+| **Intel 12nm** | 潜在 network/control/high-speed interface die；2026 尚无产品 | **0** | 0 | 0 | 0 | 高；当前产品收入为零 |
+| **650V GaN** | 未来可能进入 PSU/PFC/DC-DC power stage；每 rack 0–数十 die | **US$0–2k** | US$0–200 | US$0–3 | 不适用 | 低；UMC 仍在客户认证/试产，无公开 AI PSU 获单 |
+
+### 6.3 晶圆到 rack 的价格传导链
+
+价格链为：
+
+**UMC 晶圆 ASP → gross dies/wafer × yield → fabless 裸片成本 → OSAT/先进封装和测试 → PMIC/模块/光模块售价 → board/server OEM → rack/CSP。**
+
+核心公式：
+
+`每颗良品 die 的 foundry cost = wafer ASP ÷（gross dies × final yield）`
+
+`每 rack UMC 可寻址含量 = 每颗良品 die cost × 每 rack 采用颗数`
+
+| 示例 | 研究假设（非 UMC quote） | 计算出的良品 die foundry cost | 价格传导含义 |
+|---|---|---:|---|
+| 22nm 300mm controller，die 约 50mm² | wafer US$3k–5k；gross dies 约 1,200；yield 85%–95% | **US$2.6–4.9/die** | 即使 wafer 涨 10%，一颗 controller 只增加约 US$0.3–0.5 |
+| 8” BCD PMIC，die 约 20mm² | wafer US$1k–2k；gross dies 约 1,250；yield 85%–95% | **US$0.84–1.88/die** | fabless 毛利受影响明显，但对百万美元级 rack BOM 很小 |
+| 300mm 大面积 interposer/DTC，die 约 500–800mm² | wafer/process US$4k–10k；gross dies 约 65–115；yield 60%–85% | **US$41–256/die** | 大 die/TSV/DTC 的良率和测试比名义 wafer ASP 更关键 |
+| 8” TFLN chiplet，die 约 20–50mm² | wafer/process US$3k–8k；gross dies 约 450–1,250；yield 50%–80% | **US$3–36/die** | 早期 optical yield、切割、耦合、测试可高于前道成本 |
+
+若一个 US$2m rack 中含 US$500 的 UMC 前道价值，UMC 晶圆 ASP 上调 10% 只使系统 BOM 增加约 US$50，即 **0.0025%**；所以 CSP 不会因 foundry 价格本身取消 AI rack，但 fabless/模块商会通过重新议价、缩减毛利或多来源采购传导压力。
+
+### 6.4 当前总产能的美元化
+
+2026Q2 公司计算最大产能为 **1,305k 片 12 英寸等效/季，即 5.22m 片/年**。用 2026Q1 混合实现收入约 US$1,890/片 12”等效估算：
+
+- 100% 理论年化收入能力约 **US$9.9bn**；
+- low-80% 利用率对应约 **US$8.0–8.5bn** 可实现年化收入；
+- 该估算假设节点/尺寸 mix 不变，不能替代产品别 wafer ASP。
+
+公司 Q2 产能表计算出 8 英寸线约 **1.102m 片/季、36.7 万片/月（原始 8”片数）**；因此 UMC 是 8 英寸大厂，但总体利用率仍未证明所有线供不应求。新加坡 P3 最终第一期设计产能 **30k 片 300mm/月**、投资上限 US$50 亿；官方只确认 2026 量产和最终设计能力，当前 P3 单独产能未正式披露。[SemiWiki 论坛转载的股东会渠道信息](https://semiwiki.com/forum/threads/12nm-program-with-intel-on-schedule-production-slated-for-2027-umc.25191/)称 P3 约 12k–13k 向 18k 片/月爬坡，只能作为低置信渠道信号，不能视为公司指引。
+
+### 6.5 各关键业务当前产能、采用和认证
+
+| 业务 | 当前美元产能能力（模型） | 供应链采用 | 当前认证/阶段 |
+|---|---:|---|---|
+| **22nm** | **US$1.4–1.8bn/年** | 量产；DDIC、networking、MCU 等，年底累计 >50 客户 tape-out | 成熟量产；P3 2026 爬坡；所有 fab IATF 16949 |
+| **BCD/PMIC** | **US$0.7–1.1bn/年**，与其他 8/12”产品共享 | 既有 PMIC 量产；AI PMIC 具体客户匿名 | 55nm Non-EPI/SOI ready；EPI 支持最高 150V、AEC-Q100 Grade 0，预计 2026H2 量产 |
+| **eNVM** | **US$0.5–0.8bn/年**，与 22/28nm 重叠 | 汽车/工业客户可开始 28nm 迁移 | 28 ESF4 已 AEC-Q100 Grade 1 全认证：-40–150°C、<12.5ns、>100k endurance、125°C >10 年 retention；32Mb macro peak yield 100% |
+| **RFSOI/3D RF** | **US$0.5–0.8bn/年** | >500 tape-outs、>380 亿颗累计出货；leading-customer W2W 产品量产 | 40nm mmWave 原型/2026 量产节奏；40RFSOI-FR3 已性能验证；22nm 开发中 |
+| **先进封装/DTC** | **US$0.10–0.25bn/年** | DTC 中介层已向主要客户出货；active interposer 多客户验证；RF W2W 量产 | Adeia hybrid-bonding IP 续期；400/1100nF/mm² 已出货；edge/HBM base-control 处验证 |
+| **12” SiPh** | **<US$0.05–0.10bn/年** 风险/小量能力 | 数家新客户；当前设计以 pluggable PIC 为主，CPO 更后期 | iSiPP300 技术许可；风险生产/晶圆测试；光学 metrology 建设中；PDK 1.0 目标 2027 |
+| **TFLN 6/8”** | 6”已有 HVM；UMC 8”可辨识收入能力 **<US$0.05bn/年** | HyperLight 客户认证 6”线；Jabil 做系统集成；8”采用待验证 | 8” waveguide process 已完成；工程样片目标 2026 年底；Hybrid-PIC 风险生产 2027Q2 |
+| **Intel 12nm** | **US$0** 量产能力（2026） | 设计生态/客户接洽，不披露客户 | PDK/IP 2026；customer tape-out 2027；初始商用 2027 后期 |
+| **GaN** | **US$0.03–0.08bn/年** | RF switch 已量产；PA/650V 客户验证/试产 | RF switch mass production；650V power/PA 尚未完成大规模客户认证 |
+
+先进封装和混合键合的产业背景参见项目内[先进封装设备与混合键合行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-07-10.md)；光子平台参见[硅光材料、光子材料与电光聚合物行业调研](../../行业调研/晶圆制造_设备_材料_测试/行业调研_硅光材料、光子材料与电光聚合物_2026-07-11.md)。
+
+## 7. 一年后产能、供应链采用与认证三情景
+
+> 美元产能是“若有订单且按假设 ASP/mix 可售出的年化 foundry revenue capacity”，并非订单。产品共享设备，不能相加。
+
+| 业务 | 基准：一年后产能/采用/认证 | 乐观：一年后产能/采用/认证 | 极度乐观：一年后产能/采用/认证 |
+|---|---|---|---|
+| **22nm** | **US$1.8–2.1bn**；P3 稳步爬坡，>50 tape-outs 中一批量产；利用率中高 80% | **US$2.2–2.6bn**；P3 接近当前规划的 18k/月渠道目标，多客户量产、ASP/mix 改善 | **US$2.7–3.2bn**；P3 向 30k/月最终能力快速推进且供不应求；需额外设备/客户承诺 |
+| **BCD/PMIC** | **US$0.9–1.3bn**；55nm EPI 完成量产认证，AI PMIC 占比提高 | **US$1.2–1.6bn**；8”长期紧张、12”BCD 迁移，多个 AI power 客户采用 | **US$1.6–2.1bn**；获取大规模转单并持续提价；受共享 8”产能约束 |
+| **eNVM** | **US$0.6–0.9bn**；ESF4 首批量产，22nm eNVM 继续 tape-out | **US$0.8–1.1bn**；多个汽车/工业客户从 40nm 迁移，BMC/edge design win | **US$1.1–1.4bn**；28ESF4 成为主流 second source、22RRAM/MRAM 提前量产 |
+| **RFSOI/3D RF** | **US$0.6–0.9bn**；40nm mmWave/FR3 量产，W2W 客户增加 | **US$0.8–1.1bn**；3D RF 被更多旗舰手机/卫星采用，22nm 完成关键验证 | **US$1.0–1.4bn**；22nm RFSOI 量产且 hybrid bonding share 明显提升 |
+| **先进封装/DTC** | **US$0.2–0.4bn**；1500/2000nF/mm²、TSV-last 完成 design/risk milestones；2–3 项目量产 | **US$0.4–0.7bn**；active interposer/HBM base-control 获主要客户；包装 tape-outs 转换率高 | **US$0.7–1.1bn**；UMC 成为 AI interposer second source；需要新增专用产线和 OSAT 协同 |
+| **12” SiPh** | **US$0.08–0.18bn**；PDK 1.0 发布、metrology 完成、pluggable 风险生产 | **US$0.18–0.40bn**；客户模块认证并进入小量 800G/1.6T；CPO 继续验证 | **US$0.40–0.70bn**；多家 Tier-1/ hyperscaler 放量、良率迅速成熟；当前证据不足 |
+| **TFLN** | **US$0.05–0.15bn**；8”工程样片完成、2027Q2 风险生产；Jabil 集成验证 | **US$0.15–0.35bn**；1.6T 模块量产、8”良率通过客户门槛 | **US$0.35–0.65bn**；800G/1.6T/3.2T 平台规模部署、CPO 采用；需高端光测和封装瓶颈同步解除 |
+| **Intel 12nm** | **US$0.05–0.15bn** 初始/风险能力；客户 tape-out，商用仍偏 2027H2 | **US$0.15–0.35bn**；多客户试产、Arizona 良率达到量产门槛 | **US$0.35–0.70bn**；商业量产提前并快速爬坡；时间上显著快于公开计划 |
+| **GaN** | **US$0.06–0.12bn**；650V/PA 完成至少一个客户认证 | **US$0.12–0.25bn**；工业/电源客户量产，Wavetek 扩产 | **US$0.25–0.45bn**；AI PSU design win + 多客户；需证明可靠性/成本优于成熟 Si/GaN 竞品 |
+
+**总公司产能约束：** 基准/乐观/极度乐观的一年后总 nameplate revenue capacity 分别约 **US$10.0–10.8bn / US$10.8–11.8bn / US$11.8–13.0bn**。极度乐观不是只靠利用率提高就能实现，必须同时有 P3 设备爬坡、产品 mix/ASP 上升和专用后段/光测扩容。
+
+## 8. 订单积压、供给与未来一年公司增速
+
+### 8.1 可验证“订单”项目表
+
+| 项目/客户链 | 已确认内容 | 订单金额/交付窗口 | 取消率/约束 | 可纳入模型的程度 |
+|---|---|---|---|---|
+| 新加坡 P3 多年度供货协议 | 2022 公告称客户签有 multi-year supply agreements 支持 22/28nm 新产能 | 金额、剩余 wafer commitment、客户名均未披露；2026 量产 | 违约/取消条款 ND | 中；说明早期有风险共担，不代表 2026 全部 30k/月已预订 |
+| 22nm 客户 pipeline | 年底累计 >50 客户完成 tape-out；DDIC、networking、MCU | 产品别金额和量产时间 ND；H2 logic/eHV 高十几位数增长 | tape-out 到量产仍有良率/终端需求风险 | 高；这是当前最可靠增长线索 |
+| DTC/interposer | 400/1100nF/mm² 已向“major customers”出货 | 客户名、金额、交付量 ND | AI/汽车/其他 mix ND | 中；确认有量产收入，但不能认定 NVIDIA/HBM 大单 |
+| Active interposer | 多客户验证，用于 edge computing/HBM base-control | 仍在 qualification/tape-out，金额 ND | 认证失败或架构改变 | 中低；基准仅计小量转换 |
+| HyperLight/Wavetek/Jabil | 6/8”TFLN foundry + data-center system integration | 无 purchase order 金额；8” 2026 年底工程样片、2027Q2 风险生产 | optical yield、模块认证、CPO/IMDD 路线风险 | 中低；合作真实，收入尚不可见 |
+| imec iSiPP300 | 技术许可、数家新客户 PIC、2026–27 风险生产 | 无订单金额；PDK 1.0 目标 2027 | PDK/PDV/光测/包装均可能延迟 | 中低 |
+| Intel 12nm | 长期合作；Arizona 生产 | 2027 tape-out/后期商用；合同金额未披露 | Intel fab execution、客户生态、竞争节点 | 中；战略明确但不贡献未来 12 个月主体收入 |
+| SST/Microchip ESF4 | 28HPC+ AG1 全认证、可用于客户设计 | 客户量产金额 ND | 汽车认证周期长 | 中 |
+| 2025 最大客户 A | 占 UMC 2025 营收约 **12%** | 客户匿名；市场报告常提 MediaTek/Novatek/Broadcom，但非官方确认 | 集中度和单客户库存调整风险 | 高；只用于集中度，不用于 AI 订单归属 |
+
+### 8.2 订单挤压的交叉判断
+
+| 证据 | 对需求的含义 | 对供给的含义 | 反证/保守解释 |
+|---|---|---|---|
+| 2026Q2 营收预览 +12.6% QoQ/+17.0% YoY | 广泛出货和 mix 改善强于 Q1 | 产能利用率应上升 | 可能包含 PC/TV 提前拉货、汇率和提价预期前置 |
+| PMIC 35–40 周、BMC 21–26 周 | AI power/control 的真实缺口 | 8” BCD allocation 紧 | 行业数据；未证明 UMC 自身所有客户同样交期 |
+| 全球 8”产能 -2.4%、利用率 85%–90% | 订单外溢和议价改善 | TSMC/Samsung 退坡带来结构缺口 | 中国新产能、终端疲弱可能限制实际涨价 |
+| UMC Q1 利用率 79%、Q2 low-80 | 明显复苏 | 仍有总体闲置能力 | 直接否定“全厂 sold out”叙事 |
+| 22nm >50 客户 tape-outs | 中期产品数和客户数增加 | P3 有吸收基础 | tape-out 不等于 wafer volume；部分产品会延期/取消 |
+| 部分 8”fab 接近 100%，日本 65/80nm 偏松 | 紧张高度分化 | 需要线别/工艺别调配 | 不能把局部满载外推为公司平均 |
+
+项目内[功率半导体与高压保护器件行业调研](../../行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-07-10.md)和[AI 服务器 CPU 与控制平面芯片行业调研](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器CPU与控制平面芯片_2026-07-10.md)也支持“AI power/BMC 局部紧、UMC 只是间接 foundry 暴露”的结论。
+
+### 8.3 取消率和 lead-time 模型假设
+
+由于公司不披露，未来一年模型采用：
+
+| 情景 | 新订单取消/延后假设 | 通用成熟节点交期 | AI BCD/PMIC 交期 | 价格 | 说明 |
+|---|---:|---:|---:|---:|---|
+| 基准 | **3%–6%** | 12–20 周 | 26–35 周 | blended +1%–3% | Q2 提前拉货在 H2 部分回吐；紧张集中在 power |
+| 乐观 | **1%–3%** | 16–24 周 | 35–45 周 | +3%–6% | 8” allocation 持续，22nm/P3 utilization 快升 |
+| 极度乐观 | **<2%** | 20–30 周 | >40 周 | +6%–10% | 需要行业缺口扩大；UMC 未确认传闻中的统一 8%–10% 涨价 |
+
+### 8.4 公司未来一年增速三情景
+
+历史基准：2025 全年营收 **NT$2,375.53 亿**；截至 2026Q2 的 trailing four-quarter 营收约 **NT$2,507.08 亿**。2026H1 已实现 NT$1,297.71 亿。
+
+| 指标 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| 2026Q3 / Q4 营收 | NT$695 / 725 亿 | NT$730 / 770 亿 | NT$760 / 820 亿 |
+| **2026 全年营收** | **NT$2,722.7 亿，+14.6%** | **NT$2,797.7 亿，+17.8%** | **NT$2,887.7 亿，+21.6%** |
+| 2027Q1 / Q2 营收 | NT$720 / 755 亿 | NT$800 / 840 亿 | NT$860 / 910 亿 |
+| **未来 12 个月营收（3Q26–2Q27）** | **NT$2,895 亿，+15.5%** | **NT$3,140 亿，+25.3%** | **NT$3,350 亿，+33.6%** |
+| 毛利率 | 29%–31.5% | 31%–34% | 34%–37% |
+| 总利用率 | 82%–87% | 88%–92% | 93%–97% |
+| 直接 AI 数据中心收入占比 | 2%–4% | 4%–7% | 7%–12% |
+| 主要驱动 | 22nm、Q2 base、BCD、温和价格/mix | P3 快爬、8”涨价、先进封装转量产 | 光子/封装大单、持续短缺、12nm 提前 |
+| 主要失败条件 | 提前拉货回吐、NTD 升值、P3 折旧 | 中国 mature-node 降价、客户认证延期 | 产能美元能力和认证节奏无法支持，概率最低 |
+
+基准 2026 年收入与 2026-05-28 第三方共识 NT$2,732 亿/+15.0% 接近。极度乐观的未来 12 个月 NT$3,350 亿约 US$106 亿，已经要求总 nameplate、ASP/mix 和利用率同步提升，不能只靠现有 1.305m 片/季产能。
+
+## 9. 竞争格局、技术主流性、替代风险与客户切换成本
+
+### 9.1 逐业务竞争
+
+| 业务 | 主要竞争对手 | UMC 优势 | 是否未来主流 | 替代方案/风险 | 客户切换成本 |
+|---|---|---|---|---|---|
+| **22/28nm logic/specialty** | TSMC、SMIC、Samsung、GlobalFoundries、Hua Hong | 成熟良率、22nm 与 28nm design compatibility、eHV/DDIC、P3 地域多元 | **是，长寿命节点**；但不是先进 AI compute 主流 | 中国价格竞争；客户留在 28/40nm；迁移到更先进 node | 中高：重新 port PDK/IP、mask、可靠性和良率，通常 12–24 个月；22/28nm NRE 模型 US$2m–8m |
+| **BCD/PMIC** | TSMC、Tower、VIS、GF、X-FAB、SMIC/Hua Hong；TI/Infineon/ST 等 IDM | 0.5μm–55nm、200/300mm、EPI/Non-EPI/SOI、eNVM 组合 | **是**；AI power density 提高使 BCD 长期重要 | GaN/SiC、digital power、IDM 内制；中国 foundry 扩产 | 高：高压 SOA、ESD、analog model、auto qual；商用 12–24 月、汽车 24–36 月 |
+| **eNVM** | TSMC、GF、Tower、Hua Hong、Samsung；Renesas/NXP/Infineon IDM | SST ESF4、少 mask、AG1 全认证；逻辑/模拟整合 | **是**，汽车/工业 MCU；AI 只是外围 | 外置 NOR、MRAM/RRAM、客户维持 40nm | 高：retention/endurance/functional safety，18–36 月 |
+| **RFSOI/3D RF** | GlobalFoundries、Tower、TSMC、Samsung、ST/Soitec 生态 | >380 亿颗历史出货、8/12”能力、W2W 面积 -45%、专利 | 5G/6G 多频段仍主流；AI 数据中心不是核心 | RF CMOS、GaAs、滤波/模组架构变化 | 高：RF model、封装 parasitic、射频认证，12–24 月 |
+| **DTC/active interposer/hybrid** | TSMC CoWoS/SoIC、Intel EMIB/Foveros、Samsung I-Cube/X-Cube、ASE、Amkor、Besi 生态 | 开放 TSI、DTC 已出货、foundry+specialty integration、Adeia IP | **技术主流，但 UMC 不是主导者** | organic bridge、glass substrate、其他 OSAT/interposer；客户留在完整生态龙头 | 很高：thermal/PI/SI/co-design、package qualification；18–36 月，NRE 可 US$5m–50m+ |
+| **12” SiPh** | GF Fotonix、Tower、TSMC、Intel、ST、AMF、Samsung；imec/AMF 生态 | 12” iSiPP300 + 8”经验、SOI/GeSi、先进封装协同 | pluggable PIC **主流**；CPO 时点不确定 | EML、InP、LPO、铜缆继续延伸；竞争者已有量产客户 | 很高：PDK/光学模型、fiber coupling、laser/package/test，24–48 月 |
+| **TFLN** | HyperLight 生态、Lightium/X-FAB、LIGENTEC、薄膜铌酸锂初创/IDM；传统 SiPh/InP | 6”认证线 + UMC 8”扩展 + Jabil system integration | 有望成为 1.6T+ 高性能方案，**尚非唯一主流** | EML、SiPh ring/MZM、InP；TFLN 键合、蚀刻、良率/成本 | 极高：器件+光模块+系统认证 24–48 月；平台 lock-in 强但尚未形成 UMC 垄断 |
+| **Intel-UMC 12nm** | TSMC N12/N16、GF 12LP/12LP+、Samsung 14nm、Intel 16、SMIC 14nm | 美国制造、利用现有设备降 capex、UMC 客户服务 | 12nm 是长期成本优化节点，**不是最先进 AI 主流** | 客户继续 16/22/28nm，或迁移更先进节点；Intel 执行风险 | 很高：FinFET IP/EDA/mask/qualification，24–36 月 |
+| **GaN** | TSMC/VIS、X-FAB、Episil、Innoscience、Navitas/PI/Renesas 等 | Wavetek RF/6”基础，与 UMC 客户/封装协同 | RF/高压 power 会增长，但竞争强 | Si superjunction、SiC、其他 GaN substrate/IDM | 高：reliability、dynamic Rds(on)、package/PSU 认证，18–36 月 |
+
+### 9.2 UMC 的垄断和定价能力到底多强
+
+- **最强：OLED DDIC eHV、长期 RFSOI 工艺/客户认证。** UMC 官方称其是 OLED DDIC foundry leader，并是当时唯一提供 22nm DDIC solution 的 foundry；这是产品局部优势，不应外推至所有 22nm。
+- **中等：22nm、eNVM、BCD。** PDK、IP、良率和汽车/高压认证提高切换成本，但 TSMC、GF、Tower、VIS、中国 foundry 都可提供替代，定价权依赖局部利用率。
+- **尚未形成：AI advanced packaging、12” SiPh/TFLN、Intel 12nm。** 技术路线和伙伴优质，但没有公开收入规模、客户项目和长期订单；当前更多是进入门票而非垄断。
+- **价格信号应按“选择性”理解。** 行业 8”报价可能上调 5%–20%，UMC 管理层只确认成本、能源、物流和产品组合促成 H2 调整，没有给统一数字，也没有披露客户接受率。
+
+### 9.3 技术是否会成为主流
+
+1. **22/28nm specialty：高确定性主流。** 适合模拟、RF、高压、I/O、控制和成本敏感 SoC，生命周期长；风险是增长率而不是技术消失。
+2. **BCD/PMIC：高确定性主流。** AI rack 功率密度上升使 power control 数量和复杂度增加；但价值可能由 IDM/fabless 获取，foundry 只能获得 wafer share。
+3. **DTC/interposer/hybrid bonding：高确定性方向。** HBM/2.5D/3D I/O 和 power integrity 需要更高集成；UMC 的问题是生态和客户份额，不是技术方向。
+4. **SiPh：高确定性增长，CPO 时点中等确定。** 800G/1.6T pluggable 已验证光互连需求，CPO 受可维护性、激光器、热、测试和标准影响，可能晚于市场叙事。
+5. **TFLN：性能路线有吸引力，量产经济性未完全验证。** >100GHz 带宽、低驱动电压/低损耗适合 1.6T+；但 LNOI wafer、键合/蚀刻、良率、封装/光测成本决定其能否取代成熟 SiPh/EML。
+6. **Intel 12nm：合理的成本/地域方案，但不是 AI leading edge。** 更适合 networking、RF、mixed signal、defense 和 cost-sensitive logic；AI 价值来自接口/控制而非 accelerator compute。
+
+项目内[SEMICON Southeast Asia 2026 会议信息](../../行业调研/产业背景/顶级会议信息/conference_update_semicon_southeast_asia_2026_2026-06-10.md)强调硅光/CPO 的量产瓶颈在 alignment、thermal、test 和 packaging，支持本报告不把“技术合作”直接映射成大额收入。
+
+### 9.4 主要风险
+
+| 风险 | 概率 | 冲击 | 监控指标 |
+|---|---|---|---|
+| **估值先透支** | 高 | 高 | PE/PS 与 22nm、GM、AI 收入兑现差距；股价对小幅 miss 极敏感 |
+| **AI 叙事与实际收入错配** | 高 | 高 | 是否首次披露 AI/packaging/SiPh 收入，是否出现客户项目/订单金额 |
+| **P3 折旧早于收入** | 中高 | 中高 | Q2/Q3 depreciation、利用率、GM；P3 单独月产量 |
+| **成熟节点中国价格竞争** | 高 | 中高 | 12” mature ASP、SMIC/Hua Hong utilization、UMC price/mix |
+| **提前拉货后库存修正** | 中高 | 中 | 2026H2 月营收、客户库存、UMC 80 天存货 |
+| **NTD 升值** | 中 | 中高 | 2Q25 升值曾压毛利约 3ppt；关注 USD/NTD 和 hedge |
+| **SiPh/TFLN/packaging 认证延期** | 高 | 中高 | PDK 1.0、engineering sample、risk production、metrology、首个量产客户 |
+| **Intel 12nm 执行/生态** | 中 | 中 | 2026 PDK/IP、2027 tape-out、Arizona yield、客户数量 |
+| **客户集中** | 中 | 中 | 最大客户 12%；任何核心客户库存/双供变化 |
+| **台湾地缘政治/能源水电** | 低频 | 极高 | 地缘局势、保险/物流、海外产能实际占比 |
+
+### 9.5 未来 12 个月最有用的验证清单
+
+1. **2026-07-29 Q2 财报：** 毛利率是否约 30%、利用率是否 low-80、收入 +12.6% 的量/价/mix 拆分。
+2. **22nm：** H2 是否较 H1 高十几位数增长；年底 >50 客户 tape-out 是否伴随实际 wafer revenue，而非只增加项目数。
+3. **8 英寸：** PMIC/BMC 交期是否维持 30 周以上；UMC 是否披露实际涨价、客户接受率和 8”利用率。
+4. **P3：** 从 pilot/初量产向 18k、最终 30k 片/月的爬坡速度；折旧对 GM 的净影响。
+5. **Advanced packaging：** >35 tape-outs 中多少在 2027 转量产；DTC/active interposer 是否首次形成可辨识收入。
+6. **SiPh：** 12” PDK 1.0、光学 metrology、客户模块认证、risk wafer 良率；是否出现可核实 Tier-1 客户。
+7. **TFLN：** 2026 年底工程样片、2027Q2 Hybrid-PIC risk production；Jabil/HyperLight 是否公布量产 port 数或订单。
+8. **Intel 12nm：** 2026 PDK/IP completion、2027 customer tape-outs；任何“3nm”传闻继续按零，除非官方变更路线。
+9. **55nm BCD / 650V GaN：** EPI H2 量产和客户资格；GaN 从 pilot 转量产是否有明确客户和容量。
+
+## 10. 投资结论与情景偏差
+
+### 10.1 质量评分
+
+| 维度 | 评分 | 结论 |
+|---|---:|---|
+| 资产负债表 | **A−** | 净现金、流动比率 2.72x、正 FCF；偿债风险低 |
+| 现有业务质量 | **B+** | 22/28nm、eHV、RFSOI、BCD 有工艺粘性；总体仍受成熟周期影响 |
+| 未来 12 个月增长可见性 | **B** | Q2/H1 已加速，22nm pipeline 清晰；backlog/B2B 不披露 |
+| 当前直接 AI 暴露 | **C−** | 产品相关性存在，收入占比小且匿名 |
+| AI 长期期权 | **B** | SiPh/TFLN/DTC/12nm 路线和伙伴真实；商业化/客户份额未证实 |
+| 垄断/定价权 | **B−** | eHV/RFSOI 局部强；整体竞争充分，提价依赖局部紧张 |
+| 估值安全边际 | **D** | 38.9x TTM PE、8.1x sales 已显著透支成熟 foundry 基准 |
+
+### 10.2 多空要点
+
+**多头必须证明：**
+
+- 2026Q2 强劲月营收不是一次性拉货，H2 仍有双位数增长；
+- 22nm/P3 带来的增量收入高于新增折旧，毛利率稳定在 30% 以上；
+- BCD/PMIC 局部短缺转为 UMC 可实现的价格和 wafer share，而非只利好中国/其他 foundry；
+- 先进封装、SiPh/TFLN 至少一条在 2027 从 NRE/风险晶圆跨入可量化量产；
+- 12nm 按期推进且带来美国客户，不只是技术展示。
+
+**空头只需发生其中一项：**
+
+- 需求回吐令利用率停在 low-80%，P3 折旧压制毛利；
+- 22nm 增长仍以非 AI DDIC/消费为主，市场却继续给 AI 倍数；
+- 中国成熟节点价格竞争抵消 8”提价；
+- SiPh/TFLN/CPO 认证延迟至 2028 以后；
+- 当前约 39x PE 向历史 14–15x 均值回归，即使利润继续增长也会有大幅估值压缩。
+
+### 10.3 最终判断
+
+UMC 是一家 **财务健康、工艺资产优质、处于业绩上行周期的特殊制程代工公司**。最可信的 12 个月逻辑是 22nm、BCD/PMIC、利用率恢复和 P3 产能吸收；最有想象力但证据不足的是 DTC/active interposer、12”SiPh/TFLN 和 Intel 12nm。
+
+在 2026-07-10 的 US$24.34/ADS、约 US$609.5 亿市值下，市场已经把相当一部分 2027–2029 期权提前资本化。**基准情景支持业务增长，不自动支持当前估值；乐观情景需要先进封装/光子业务出现可核实收入，极度乐观情景则需要同时突破认证、产能和客户采用三重约束。** 因此，UMC 更适合列为“高质量特殊制程 + AI 期权”的事件驱动观察标的，而不是把现有利润直接当成 AI 数据中心纯敞口。
+
+## 11. 研究方法、估算边界与资料索引
+
+### 11.1 估算边界
+
+- “官方”只指 UMC 财报、年报、官网产品/合作公告及合作方一手材料。
+- “行业”指 TrendForce、会议/技术资料；行业交期、利用率、价格区间不自动等于 UMC 自身数据。
+- “模型”均显式标注；产品收入区间有节点/产品重叠，不可求和。
+- AI 直接收入采用严格口径：只有可合理落到 AI data-center rack/network/power/package 的 foundry value；“可用于 AI”不等于“由 AI 拉动”。
+- BOM 只给物理器件位置和可寻址 foundry value；无公开客户 BOM/wafer quote/yield 的地方不伪造精确值。
+- 一年后预测是经营情景，不是目标价或投资建议。
+
+### 11.2 公司一手资料
+
+- [UMC 2026Q1 财报](https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2026/Q1_2026/UMC26Q1_report.pdf)
+- [UMC 2025Q4 财报](https://www.umc.com/upload/media/08_Investors/Financials/Quarterly_Results/Quarterly_2020-2029_English_pdf/2025/Q4_2025/UMC25Q4_report.pdf)
+- [UMC 2025 年报](https://www.umc.com/upload/media/08_Investors/Annual_Reports/annual_report_english_pdf/2025/2025AR_ENG_all.pdf)
+- [UMC 2026 月营收](https://www.umc.com/en/IR_Financial/monthly_sales_revenue)
+- [UMC 新加坡 Fab12i P3](https://www.umc.com/en/News/press_release/Content/corporate/20250401)
+- [Intel-UMC 12nm](https://www.umc.com/en/News/press_release/Content/corporate/20240125?country=63)
+- [UMC iSiPP300 12 英寸硅光](https://www.umc.com/en/News/press_release/Content/technology_related/20251208)
+- [HyperLight/UMC/Wavetek TFLN](https://www.umc.com/en/News/press_release/Content/corporate/20260312)
+- [HyperLight/UMC/Jabil 系统集成](https://www.umc.com/en/News/press_release/Content/corporate/20260313)
+- [Adeia/UMC hybrid bonding](https://www.umc.com/en/News/press_release/Content/Partner/20260311)
+- [UMC 14nm eHV](https://www.umc.com/en/News/press_release/Content/technology_related/20260514)
+- [SST/UMC 28nm ESF4 AG1](https://www.umc.com/en/News/press_release/Content/technology_related/20260116)
+- [UMC BCD 技术页](https://www.umc.com/en/Product/technologies/Detail/bcd)
+- [UMC 2.5D/3D package solution](https://www.umc.com/en/StaticPage/package_solution_development)
+- [UMC AI 市场映射](https://www.umc.com/en/Application/markets/Index/artificial-intelligence)
+
+### 11.3 行业、会议与估值资料
+
+- [TrendForce：2026Q1 全球晶圆代工排名与 UMC 份额](https://www.trendforce.com/presscenter/news/20260612-13095.html)
+- [TrendForce：2026 年 8 英寸供给、利用率与价格](https://www.trendforce.com/presscenter/news/20260113-12877.html)
+- [TrendForce：PMIC/BMC 交期与 AI server allocation](https://www.trendforce.com/presscenter/news/20260415-13013.html)
+- [StockAnalysis：2026-07-10 UMC 市值/PE/PS](https://stockanalysis.com/stocks/umc/financials/ratios/)
+- [FinanceCharts：forward PE 历史口径](https://www.financecharts.com/compare/UMC/value/pe-ratio)
+- [UMC 2026Q1 电话会文字记录：server exposure、定价、SiPh PDK 与包装 tape-out](https://www.earningswhispers.com/transcript/UMC)
+- [SemiWiki 论坛/股东会渠道：P3 爬坡和 12nm 时间表，仅作低置信验证](https://semiwiki.com/forum/threads/12nm-program-with-intel-on-schedule-production-slated-for-2027-umc.25191/)
+- [Intel Foundry 2026 aerospace/defense platform brief](https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2026-02/intel-foundry-adg-platform-brief.pdf)
+
+### 11.4 项目内行业资料（唯一使用的本地研究目录）
+
+- [特种晶圆代工](../../行业调研/晶圆制造_设备_材料_测试/行业调研_特种晶圆代工_2026-07-10.md)
+- [先进逻辑晶圆代工和封装](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-07-10.md)
+- [先进封装设备与混合键合](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-07-10.md)
+- [硅光材料、光子材料与电光聚合物](../../行业调研/晶圆制造_设备_材料_测试/行业调研_硅光材料、光子材料与电光聚合物_2026-07-11.md)
+- [功率半导体与高压保护器件](../../行业调研/AI园区电力_机电_冷却/行业调研_功率半导体与高压保护器件_2026-07-10.md)
+- [AI 服务器 CPU 与控制平面芯片](../../行业调研/AI服务器_存储_芯片/行业调研_AI服务器CPU与控制平面芯片_2026-07-10.md)
+- [SEMICON Southeast Asia 2026 会议信息](../../行业调研/产业背景/顶级会议信息/conference_update_semicon_southeast_asia_2026_2026-06-10.md)

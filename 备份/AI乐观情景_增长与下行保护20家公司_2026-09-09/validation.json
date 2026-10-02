@@ -1,0 +1,170 @@
+{
+  "asof": "2026-09-09",
+  "companies": 20,
+  "history_anchors_checked": 60,
+  "scenario_cells_checked": 120,
+  "common_expiry": "2026-10-16",
+  "calls_with_clean_iv": 20,
+  "checks": [
+    {
+      "ticker": "MU",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "ADBE",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "MSFT",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "NVDA",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "META",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "BABA",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "GOOGL",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "AMZN",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "ASML",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "TSM",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "AVGO",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "ET",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "SNDK",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "APH",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "TEL",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "JBL",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "NTAP",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "IBM",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "SMCI",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    },
+    {
+      "ticker": "BDC",
+      "report_hash_matches": true,
+      "close_date_matches": true,
+      "history_anchors_and_returns_pass": true,
+      "scenario_rebase_pass": true,
+      "clean_call_pass": true
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+# 公司收入传导与价值传导评估：United Microelectronics 联华电子（UMC）
+
+> 报告日期：2026-06-12（America/Los_Angeles）  
+> 公司代号：UMC  
+> 公司名称：United Microelectronics 联华电子  
+> 正式输出目录：`分析报告/公司评估/`  
+> 资料边界：使用 `公司调研/` 与 `行业调研/`，并用 UMC、SEC、BusinessWire 等公开一手资料核验最新经营数据；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较资料。  
+> 估算口径：主表均为 NTM，即 2026Q2-2027Q1。财务货币除特别注明外为新台币 NT$。本报告只做经营收入、利润和现金流传导，不做股价、估值倍数、目标价、评级或全公司排序。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 2026Q2-2027Q1；FY2026、FY2027、Intel 12nm、14nm eHV、硅光/TFLN 与混合键合只作补充或远期期权，除非已有 NTM 收入确认路径。
+- 当前收入基准、指引和 run-rate：UMC 2026Q1 收入 NT$61.04B，毛利率 29.2%，经营利润率 18.5%，产能利用率 79%，22/28nm 占晶圆收入 34%。2026Q2 管理层指引为晶圆出货 QoQ 高个位数增长、美元 ASP 低个位数增长、毛利率约 30%、利用率低 80% 区间、2026 capex US$1.5B。2026 年 4 月销售 NT$22.66B、5 月销售 NT$22.94B，4-5 月合计 NT$45.61B，显示 Q2 收入大概率高于 Q1 run-rate。
+- 重要产品/业务线：`22/28nm logic and specialty`、`28-65nm mixed-signal/HV/BCD/Smart Power`、`65nm 以上成熟长尾制程`、`SiPh/iSiPP300/TFLN 光子平台`、`28nm SuperFlash/eNVM 车规控制`、`14nm eHV / Intel 12nm / hybrid bonding 远期期权`。
+- NTM 公司收入四情景：悲观 NT$245-260B；基准 NT$270-285B；乐观 NT$295-315B；极度乐观 NT$330-360B。基准相对 2025Q2-2026Q1 近四季收入 NT$240.73B 增长约 12-18%，主要来自 Q2 指引兑现、低/中 80% 利用率、22/28nm 与 28-65nm mixed-signal/BCD 正常恢复。
+- 利润或 EBITDA 四情景：UMC 不披露 EBITDA 和产品利润率，故 EBITDA 无法可靠量化；用毛利率、经营利润率和净利润方向校准。基准毛利率约 29.5%-31.5%，经营利润率 18.5%-21%，NTM 净利润约 NT$48-58B。乐观要求 GM 32%-34%、OPM 22%-24.5%；极度乐观要求 GM 35%+ 且有明确 mix 与价格证据。
+- 最大传导瓶颈：UMC 的需求池不等于可确认收入。AI 数据中心需求主要通过 BCD/Smart Power、硅光/TFLN、控制器、车规/工业 eNVM 间接传导；GPU/ASIC 主 die、HBM 和高端 CoWoS 不由 UMC 主导。
+- 最大利润率变量：利用率从低 80% 进入中高 80% 时的固定成本吸收，以及 28-65nm BCD/HV/Smart Power、22nm specialty、SiPh/TFLN 是否带来 ASP/mix 上修。普通成熟节点若受供给过剩和价格竞争影响，会抵消 mix 改善。
+- 最大现金流变量：2026 capex US$1.5B。基准下自由现金流应保持正向但不激进扩张；若光子/BCD/12nm 订单需要新增客户专用产能，短期 FCF 会被 capex 和营运资本占用。
+- 可信度：基准为中高，因公司级收入、利用率、Q2 指引和 4-5 月销售为 A 级证据；乐观为中，需 BCD/22nm tape-out 转量产和 SiPh/TFLN 客户认证；极度乐观为低，因多个关键机会仍缺订单、LTA、客户名、价格和量产收入披露。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 22/28nm logic and specialty | 2026Q1 约 NT$20.75B；其中 22nm 约 NT$8.55B | 34% | 最大制程带；承载 DDIC、networking、MCU、控制器和部分 eNVM | A：已披露制程收入；C：50+ 22nm tape-out | 进入基准；NTM 基准 NT$92-100B | 若 22nm tape-out 快速转量产并带来 ASP/mix 上修，进入乐观 |
+| 28-65nm mixed-signal / HV / BCD / Smart Power | 2026Q1 28-40nm 与 40-65nm 合计约 NT$21.97B | 36% | AI rack 电源管理、PMIC、DrMOS、HV/BCD、工业和车规 mixed signal 的主要承载层 | A：制程收入；C：55nm BCD 平台与行业 BCD 需求线索 | 广义制程进入基准；AI PMIC 不单独作为大额基准 | BCD/AI power wall、8/12 英寸特色制程涨价和 LTA 是乐观来源 |
+| 65nm 以上成熟长尾制程 | 2026Q1 约 NT$18.31B | 30% | 稳定现金流，但受消费、工业、普通成熟节点价格和中国供给影响 | A：已披露制程收入 | 进入基准，但不作为成长主线 | 远期期权弱，更多是周期恢复或价格风险 |
+| SiPh / iSiPP300 / TFLN 光子平台 | 已有平台和合作公告；公司未披露单独收入 | 无法可靠量化；当前估计低个位数百分比以下 | AI 光互联、1.6T/3.2T、CPO/NPO 的弹性来源 | C：平台、客户合作、风险生产时间表；D：收入未披露 | 仅小额 NRE/小批量可进入基准；大规模量产不进基准 | 若 HyperLight/Wavetek/Jabil 项目通过 hyperscaler 模块认证，可进入乐观/极度乐观 |
+| 28nm SuperFlash/eNVM 车规控制 | 单独收入未披露，嵌在 22/28nm | 无法可靠量化 | 汽车、工业、边缘控制、BMC/MCU 安全与 OTA 存储 | C：28HPC+ ESF4 AG1 已 release to production 且有可靠性指标 | 不做单独加总；作为 22/28nm mix 改善进入基准小权重 | 车规/工业客户认证扩散后进入乐观 |
+| 14nm eHV / Intel 12nm / hybrid bonding | 2026Q1 14nm 及以下收入 0%；12nm 未披露量产收入 | 0 或无法可靠量化 | 显示驱动、区域化制造、chiplet/先进封装技术储备 | D/C：技术发布和合作；缺收入表、订单和客户量产 | 不进入 NTM 基准主口径 | 只列远期期权或极度乐观上限，必须等待客户 tape-out、pilot production、量产收入 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不评估 UMC 份额、收入确认、利润率或公司汇总。需求变化均相对当前需求锚，即 2026Q1 已披露结构、2026Q2 管理层指引、4-5 月销售 run-rate、行业对 AI power/optical/mature-node 复苏的当前预期。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 22/28nm logic and specialty | 2026Q1 占收入 34%；22nm 单独约 14%；公司称 2026 年底 50+ 客户完成 22nm tape-out；Q2 通信反弹 | NTM 需求仅略高于 Q1 run-rate，22nm tape-out 延后转量产，通信/消费补库存后放缓 | NTM 需求较 Q1 run-rate 增长约 8-15%，Q2 指引兑现，22/28nm 保持公司最大平台 | NTM 需求增长约 18-30%，networking、DDIC、MCU 和控制器客户转量产更快 | NTM 需求增长 35%+，22nm 与 Intel 12nm/区域化需求共振 | 年化需求池约 NT$85-135B | 悲观低于预期；基准符合；乐观高于；极度乐观显著高于 | 正向：22nm record、50+ tape-out、Q2 通信反弹。反证：22nm tape-out 只停留在设计，普通 28nm 价格竞争 |
+| 28-65nm mixed-signal / HV / BCD / Smart Power | 2026Q1 合计占收入 36%；55nm BCD 平台已发布；特种代工行业资料显示 AI PMIC/BCD 是 2026 确定性较高方向 | AI PMIC 需求推迟，普通消费/汽车 mixed-signal 无法抵消价格压力 | AI power 间接受益，BCD/HV 与 mixed signal 稳步增长；NTM 需求较 Q1 run-rate 增长约 10-20% | AI rack power、DrMOS、hot-swap、HV/BCD 客户拉动，需求增长约 25-40% | AI power wall 非线性上修，BCD/HV 供给趋紧并出现价格/mix 上修，需求增长 50%+ | 年化需求池约 NT$90-150B | 基准略高于当前 run-rate；乐观需要客户级订单 | 正向：55nm BCD、行业 BCD 紧张和 AI power wall。反证：IDM 自供、二供顺利、中国成熟节点价格压力 |
+| 65nm 以上成熟长尾制程 | 2026Q1 占收入 30%；应用分布受消费、工业、汽车、长尾模拟和 legacy 控制影响 | 消费补库结束、工业/汽车恢复慢，需求下降 5-10% | 需求大体持平到小幅增长，作为现金流底座 | 通信、工业和汽车同步改善，需求增长 5-12% | 只有在全行业成熟节点补库和区域化同时发生时增长 15%+ | 年化需求池约 NT$66-90B | 基准符合当前预期；极度乐观不应给高权重 | 正向：Q2 指引覆盖 8-inch 与 12-inch。反证：普通成熟节点供给过剩、价格竞争、客户多供 |
+| SiPh / iSiPP300 / TFLN 光子平台 | iSiPP300 12-inch SiPh 授权，2026/2027 risk production；TFLN 6/8-inch HVM 与 Jabil 数据中心规模部署合作 | 光模块客户认证延后，TFLN 仍停留小批和样品；NTM 需求池对 UMC 很小 | 800G/1.6T 光互联需求继续强，但 UMC 在 NTM 主要是 NRE、小批量、risk production | 1.6T 客户项目提前，小批量到量产验证收入开始显性化 | hyperscaler 明确采用 TFLN/SiPh，CPO/NPO 或 1.6T/3.2T 加速，需求池非线性上修 | UMC 可服务需求从 <NT$3B 到 NT$20B+ 上限 | 基准为小额；乐观及以上高于当前收入表预期 | 正向：Jabil/HyperLight/UMC/Wavetek、imec iSiPP300。反证：路线被 EML/InP/LPO 延长替代，良率/封装/耦合延迟 |
+| 28nm SuperFlash/eNVM 车规控制 | 28HPC+ ESF4 AG1 release to production；AEC-Q100 Grade 1、100K+ endurance、10 年数据保持 | 车规客户认证慢，NTM 内只贡献少量 design-in | 汽车/工业控制器需求稳定，作为 22/28nm mix 辅助增长 | OTA、安全、控制器和边缘设备带来更多客户导入 | 车规控制器平台快速从 40nm 转 28nm，UMC 得到多客户量产 | 单独需求无法可靠量化，嵌入 22/28nm | 基准符合；乐观需客户量产证据 | 正向：release to production 和可靠性指标。反证：车规周期长、客户迁移保守 |
+| 14nm eHV / Intel 12nm / hybrid bonding | 14nm eHV PDK 可用但 2026Q1 14nm 及以下收入为 0；Intel 12nm 和 Adeia hybrid bonding 为合作阶段 | NTM 需求仍为技术评估，收入为 0 或小额 NRE | 不作为 NTM 需求基准；14nm eHV 只看客户设计开始 | 少数客户 pilot、tape-out 或 NRE 进入收入表 | 12nm 或 14nm eHV 出现明确客户量产，hybrid bonding 有试产收入 | 0 到 NT$15B+ 上限，但大多在 NTM 后 | 基准排除；极度乐观只是上限 | 正向：技术发布和区域化需求。反证：无客户名、无量产、无收入确认时间表 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断需求中有多少能进入 UMC 的 NTM 收入表，以及当前可收入化基数；不预测增长，不判断利润率。UMC 可参与某个需求池不等于能在 NTM 确认收入。基准以 A/B 级收入表、指引、订单或清晰交付路径为主；C 级只小比例折扣纳入；D/E 级不进基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 22/28nm logic and specialty | 2026Q1 NT$20.75B，年化 NT$83.0B；其中 22nm 约 NT$8.55B/季 | 直接 | 中等到中高毛利；取决于 22nm mix、客户认证和 ASP | NT$84-90B | NT$92-100B | NT$102-112B | NT$118-135B | 基准符合 Q2 指引和 4-5 月 run-rate；乐观高于当前预期 | A/C | 是 | A：已披露制程收入和 Q2 指引；C：50+ tape-out 是未来收入前置指标 | 基准主口径，不能把全部 50+ tape-out 当 NTM 收入 |
+| 28-65nm mixed-signal / HV / BCD / Smart Power | 2026Q1 28-40nm + 40-65nm 合计 NT$21.97B，年化 NT$87.9B | 直接 | BCD/HV/Smart Power 若紧缺则高于普通成熟节点；普通 mixed signal 接近公司平均 | NT$88-94B | NT$98-106B | NT$110-122B | NT$128-150B | 基准略高于当前 run-rate；乐观需 BCD/AI PMIC 证据 | A/C | 是 | A：制程收入；C：55nm BCD 平台和行业 AI power 需求 | 广义制程进入基准；AI PMIC 只作为 mix 上修，不把行业 TAM 当公司收入 |
+| 65nm 以上成熟长尾制程 | 2026Q1 NT$18.31B，年化 NT$73.2B | 直接 | 中低到中等毛利，周期和价格压力更明显 | NT$70-76B | NT$70-78B | NT$78-84B | NT$84-92B | 基准符合当前预期；乐观只反映周期恢复 | A | 是 | 已披露制程收入，收入确认路径清楚 | 作为现金流底座进入基准，但不是成长核心 |
+| SiPh / iSiPP300 / TFLN 光子平台 | 未披露单独收入；iSiPP300 risk production 2026/2027；TFLN HVM 合作 | 直接但早期 | 初期受良率、测试、封装和认证拖累；成熟后可能高于普通成熟节点 | NT$0-1B | NT$1-3B | NT$4-8B | NT$12-20B | 基准只代表小额 NRE/小批量；乐观显著高于当前收入表 | C/D | 小额进入 | C：平台、客户合作和时间表；D：未披露订单和收入 | NTM 基准只保守纳入小额；大规模量产列乐观/极度乐观 |
+| 28nm SuperFlash/eNVM 车规控制 | 不单独披露；嵌在 22/28nm；2026-01 已 release to production | 直接但被制程口径包裹 | 车规/工业认证后毛利质量较好；放量慢 | 已包含于 22/28nm | 已包含于 22/28nm | 已包含于 22/28nm 上修 | 已包含于 22/28nm 上限 | 基准小幅改善 mix；不是单独收入池 | C | 不单独加总 | Release to production、AEC-Q100 Grade 1、可靠性指标；无单独订单 | 作为 22/28nm 的 mix 与可信度校准，不重复计算 |
+| 14nm eHV / Intel 12nm / hybrid bonding | 2026Q1 14nm 及以下收入 0；12nm/hybrid 未披露量产收入 | 直接但尚未收入化 | 初期利润率无法可靠量化；学习曲线和客户认证重要 | NT$0 | NT$0-1B | NT$2-5B | NT$8-15B | 基准低于或等于当前收入表，极度乐观只是 NTM 上限 | D/C | 否，除小额 NRE | 技术发布、合作和 PDK 不等于量产收入 | 不进基准主口径；移入附录和后续跟踪 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第三步需求和第四步收入基数出发，评估每个重要产品在 NTM 内能给 UMC 贡献多少收入和利润。UMC 不披露产品级毛利率、backlog、bookings、B2B 或客户订单，因此利润贡献用毛利贡献区间和利润率方向表达；产品经营利润无法可靠量化。表内收入为 NTM 可确认收入或可收入化贡献，汇总到公司时需扣除重复计算和被同一制程口径包裹的项目。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 22/28nm logic and specialty | 悲观 | NT$84-90B | 毛利约 NT$23-27B | 低于公司平均或接近平均 | 低于当前预期 | Q1 已有基数，但 tape-out 转量产慢 | 保留为悲观下沿 | 普通 28nm 价格竞争、客户补库结束、22nm 项目延迟 |
+| 22/28nm logic and specialty | 基准 | NT$92-100B | 毛利约 NT$28-33B | 接近公司平均到略高 | 符合当前预期 | Q1 34%、22nm record、Q2 指引和 4-5 月销售 | 保留 | 50+ tape-out 不能全部视为 NTM 收入 |
+| 22/28nm logic and specialty | 乐观 | NT$102-112B | 毛利约 NT$34-40B | 上行 | 高于当前预期 | 22nm 多客户从 tape-out 进入量产，networking/MCU/DDIC 同步 | 保留但需客户转量产证据 | 缺订单披露，22nm 份额可能被其他 foundry 分流 |
+| 22/28nm logic and specialty | 极度乐观 | NT$118-135B | 毛利约 NT$43-55B | 明显上行 | 显著高于当前预期 | 22nm、12nm 区域化和网络/控制器需求同时突破 | 下移为极度乐观上限 | 当前未见 12nm 量产收入或 LTA |
+| 28-65nm mixed-signal / HV / BCD / Smart Power | 悲观 | NT$88-94B | 毛利约 NT$24-29B | 接近公司平均或下行 | 低于当前预期 | Q1 制程基数存在，但 AI PMIC 订单不显性 | 保留 | BCD/HV 被 IDM/其他 foundry 抢份额，普通 mixed signal 价格下行 |
+| 28-65nm mixed-signal / HV / BCD / Smart Power | 基准 | NT$98-106B | 毛利约 NT$30-37B | 稳中略升 | 符合到略高于当前预期 | Q1 36%、55nm BCD、特种代工行业 AI power 需求 | 保留 | 55nm BCD 是平台发布，非已披露大额订单 |
+| 28-65nm mixed-signal / HV / BCD / Smart Power | 乐观 | NT$110-122B | 毛利约 NT$38-50B | 上行 | 高于当前预期 | AI rack power、PMIC、DrMOS、hot-swap/eFuse 需求带动 | 保留但需价格和客户证据 | 多供压价、8-inch/12-inch BCD 供给释放 |
+| 28-65nm mixed-signal / HV / BCD / Smart Power | 极度乐观 | NT$128-150B | 毛利约 NT$50-68B | 明显上行 | 显著高于当前预期 | BCD/HV 产能紧张、客户锁产能、ASP 上行 | 下移为上限 | 缺 UMC 特定 LTA、预付款、客户名和价格披露 |
+| 65nm 以上成熟长尾制程 | 悲观 | NT$70-76B | 毛利约 NT$15-20B | 下行 | 低于当前预期 | 收入基数 A 级，但需求易受周期影响 | 保留 | 普通成熟节点价格竞争、消费补库结束 |
+| 65nm 以上成熟长尾制程 | 基准 | NT$70-78B | 毛利约 NT$17-22B | 稳定 | 符合当前预期 | Q1 已披露收入，Q2 指引覆盖 8-inch | 保留 | 利润弹性弱，难以成为超预期来源 |
+| 65nm 以上成熟长尾制程 | 乐观 | NT$78-84B | 毛利约 NT$20-25B | 小幅上行 | 略高于预期 | 工业、汽车和消费同步恢复 | 保留但权重低 | 价格和利用率改善可能被其他节点吸收 |
+| 65nm 以上成熟长尾制程 | 极度乐观 | NT$84-92B | 毛利约 NT$23-30B | 小幅上行 | 高于预期但质量一般 | 全成熟节点供需回暖 | 下移为乐观上沿 | 低毛利/周期收入不能自动转化为高质量利润 |
+| SiPh / iSiPP300 / TFLN 光子平台 | 悲观 | NT$0-1B | 毛利无法可靠量化，可能接近 0 | 不确定 | 低于当前乐观叙事 | 只有平台和合作，没有收入披露 | 保留 | 客户认证、良率、耦合、测试和模块路线延后 |
+| SiPh / iSiPP300 / TFLN 光子平台 | 基准 | NT$1-3B | 毛利约 NT$0-1B | 初期不一定扩张 | 符合收入表谨慎预期 | iSiPP300 2026/2027 risk production，TFLN 合作 | 保留，小额进入 | NRE/小批不能外推为量产 |
+| SiPh / iSiPP300 / TFLN 光子平台 | 乐观 | NT$4-8B | 毛利约 NT$1-4B | 中期上行 | 高于当前预期 | HyperLight/Wavetek/Jabil 进入模块级客户验证 | 保留为乐观 | 需确认谁买、买什么、何时收入确认 |
+| SiPh / iSiPP300 / TFLN 光子平台 | 极度乐观 | NT$12-20B | 毛利约 NT$5-10B | 明显上行但爬坡风险高 | 显著高于当前预期 | hyperscaler 明确采用 TFLN/SiPh，1.6T/CPO 提前 | 下移为极度乐观上限 | 没有 UMC 披露的大额订单和产能锁定 |
+| 28nm SuperFlash/eNVM 车规控制 | 悲观 | 不单独加总；22/28nm 内部低权重 | 无法可靠量化 | 中性 | 低于预期 | 车规导入慢 | 移入 22/28nm 内处理 | 单独量化会重复计算 |
+| 28nm SuperFlash/eNVM 车规控制 | 基准 | 不单独加总；贡献 22/28nm mix | 无法可靠量化 | 小幅上行 | 符合谨慎预期 | AG1 release to production、可靠性指标 | 保留为校准因素 | 缺客户订单和收入披露 |
+| 28nm SuperFlash/eNVM 车规控制 | 乐观 | 不单独加总；推动 22/28nm 上沿 | 无法可靠量化 | 上行 | 高于当前预期 | 车规控制器、OTA、安全 MCU 转量产 | 保留为乐观因素 | 车规认证周期长 |
+| 28nm SuperFlash/eNVM 车规控制 | 极度乐观 | 不单独加总 | 无法可靠量化 | 上行但低可信 | 只作上限 | 多客户 28nm 车规控制平台迁移 | 移入附录 | 无法避免与 22/28nm 重复 |
+| 14nm eHV / Intel 12nm / hybrid bonding | 悲观 | NT$0 | NT$0 | 不适用 | 符合收入表 | 2026Q1 14nm 及以下收入 0 | 保留 | 技术发布不等于收入 |
+| 14nm eHV / Intel 12nm / hybrid bonding | 基准 | NT$0-1B | 约 NT$0 | 不适用或初期偏低 | 符合谨慎预期 | PDK/合作存在，但无量产收入 | 保留，小额 NRE | 无客户量产和收入确认路径 |
+| 14nm eHV / Intel 12nm / hybrid bonding | 乐观 | NT$2-5B | 毛利约 NT$0-2B | 不确定 | 高于当前预期 | 14nm eHV 客户设计或 12nm pilot 出现 | 下移为乐观上限 | 仍缺产品、客户、交付和价格 |
+| 14nm eHV / Intel 12nm / hybrid bonding | 极度乐观 | NT$8-15B | 毛利约 NT$2-6B | 初期不确定 | 显著高于当前预期 | Intel 12nm 或 14nm eHV 提前量产 | 移入附录/仅作跟踪 | 缺证据，不应进入公司极度乐观核心 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献合成为 UMC NTM 公司总收入、毛利率、经营利润率、净利润和自由现金流方向；不讨论市场定价。汇总时剔除重复计算：28nm eNVM 被包含在 22/28nm，BCD/HV 被包含在 28-65nm，14nm/12nm 若未收入化则不叠加到基准。绝对增速以 2025Q2-2026Q1 近四季收入 NT$240.73B 为基准。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | NT$245-260B | +2%-8% | 低于 Q2 指引隐含 run-rate；Q2 后需求放缓 | 27%-29% | 16%-18% | EBITDA 无法可靠量化；净利润约 NT$35-45B | 正向但收窄，营运资本和价格压力上升 | 中 | 通信/消费补库结束、成熟节点 ASP 走弱、BCD/SiPh 未转订单 |
+| 基准公司 | NT$270-285B | +12%-18% | 符合 Q2 指引、4-5 月销售 run-rate 和低/中 80% 利用率 | 29.5%-31.5% | 18.5%-21% | EBITDA 无法可靠量化；净利润约 NT$48-58B | 正向，capex US$1.5B 后仍有现金生成 | 中高 | 22/28nm 与 28-65nm 正常兑现，低证据机会保守处理 |
+| 乐观公司 | NT$295-315B | +23%-31% | 高于当前预期；需 H2 利用率中高 80% 和 ASP/mix 改善 | 32%-34% | 22%-24.5% | EBITDA 无法可靠量化；净利润约 NT$65-78B | 正向扩大，但若客户专用产能增加会占用 capex | 中 | BCD/Smart Power、22nm specialty 和 SiPh/TFLN 至少一项转为显性订单 |
+| 极度乐观公司 | NT$330-360B | +37%-50% | 显著高于当前预期；不是当前收入表主情景 | 35%-38% | 26%-30% | EBITDA 无法可靠量化；净利润约 NT$85-105B | 经营现金流强，但 capex、WIP 和应收占用明显增加 | 低 | 需求、公司捕获、价格/mix、良率、客户认证和执行必须同时突破 |
+
+公司汇总判断：
+
+- 基准收入不是把 AI 数据中心总 CapEx 或光模块市场直接折到 UMC，而是把已经收入化的 22/28nm、28-65nm 和 legacy 制程放在主表，再给 SiPh/TFLN、eNVM、14nm/12nm 小额或零权重。
+- 基准利润率没有假设大幅经营杠杆，因为 2026Q1 毛利率 29.2%、Q2 指引约 30%，公司仍处在恢复而非满载高定价阶段。
+- 乐观必须由产品 mix 证据支持：BCD/HV/Smart Power 价格或客户订单、22nm tape-out 转量产、SiPh/TFLN 模块级客户验证、利用率上到中高 80%。
+- 极度乐观不是所有好事相加。若没有 UMC 特定 LTA、预付款、客户名、产能锁定、量产收入和毛利率上修证据，应下移为乐观上限或附录跟踪。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节只校准前四步情景，不重新预测经营结果。正向证据必须说明提升的是需求、收入基数、产品贡献、公司利润还是执行可信度；反证只处理其实际影响层级，不重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q2 指引：出货高个位数增长、美元 ASP 低个位数增长、GM 约 30%、利用率低 80% | 公司收入、利润、执行可信度 | 把悲观下沿托高，支持基准 NT$270-285B | 支持 GM 29.5%-31.5%，但未证明 32%+ | 指引可验证，Q2 实际收入和毛利率是首要检查点 | 基准保留 |
+| 2026 年 4-5 月合计销售 NT$45.61B，5 月 YoY +17.78%，Jan-May +9.05% | 公司收入、需求 | 支持 Q2 收入约 NT$68B 附近的 run-rate | 月度销售不含毛利，不能直接上修利润率 | June 2026 月销售尚未发布，Q2 仍需完整财报确认 | 基准保留，乐观待证 |
+| 22nm revenue record，Q1 占收入约 14%，年底 50+ 客户 tape-out | 产品贡献、收入基数 | 支持 22/28nm 基准和乐观上沿 | 若转量产且 ASP/mix 好，可提升毛利率 | tape-out 到量产有时间差 | 基准保留；乐观保留 |
+| 28-65nm 合计 Q1 占 36%，55nm BCD 平台发布 | 产品贡献、利润率 | 支持 BCD/HV/Smart Power 的可参与需求 | 只有客户订单和价格证据才能显著上修 | 需客户认证、良率和交付 | 基准保留；极度乐观下移为上限 |
+| iSiPP300、TFLN、Jabil/HyperLight/Wavetek 合作 | 需求、收入基数、执行可信度 | 支持 SiPh/TFLN 从 E/D 上移到 C/D | 初期利润率不一定高，良率和测试影响大 | 需要模块级认证和量产收入确认 | 乐观保留；基准只小额保留 |
+| 28nm SuperFlash AG1 release to production | 产品 mix、执行可信度 | 支持 22/28nm mix 小幅改善 | 车规认证后毛利质量好，但放量慢 | 车规客户认证周期长 | 保留为 22/28nm 校准因素，不单独加总 |
+| 14nm eHV PDK 可用、Intel 12nm、hybrid bonding 合作 | 远期期权 | NTM 收入基数低或为 0 | 利润率无法可靠量化 | 需要客户 tape-out、pilot production、量产收入 | 移入附录/仅作跟踪 |
+| 普通成熟节点价格竞争和中国成熟产能 | 需求、价格、利润率 | 压制 65nm+ 和普通 28/40/55nm 收入上修 | ASP 下行会抵消利用率改善 | 若利用率跌回 70% 区间，现金流质量下降 | 悲观保留；不重复惩罚 SiPh/TFLN |
+| UMC 不披露 backlog、bookings、B2B、产品毛利率 | 可信度 | 限制乐观和极度乐观收入精度 | 限制产品利润贡献量化 | 需要后续用月销售、季度利用率、ASP 和毛利率验证 | 乐观可信度设为中，极度乐观设为低 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Q2 后需求放缓，NTM 收入 NT$245-260B，GM 27%-29% | Q1 基数、Q2 指引和 4-5 月销售使公司不太像深度衰退 | 成熟节点价格竞争、补库结束、SiPh/TFLN 延迟 | 保留 | 悲观下沿，但不作为主情景 | 中 | 成熟节点价格风险只在 65nm+ 和普通成熟节点处理，不重复压低 SiPh 技术期权 |
+| 基准 | Q2 指引兑现，低/中 80% 利用率，NTM 收入 NT$270-285B，GM 29.5%-31.5% | Q1 A 级财报、Q2 指引、4-5 月销售、22/28nm 和 28-65nm 收入基数 | SiPh/TFLN、14nm/12nm 缺量产收入；无 backlog 披露 | 保留 | 最可能情景 | 中高 | 缺 backlog 只限制上修，不重复扣减已披露收入基数 |
+| 乐观 | BCD/22nm/SiPh 至少一项转订单，NTM 收入 NT$295-315B，GM 32%-34% | 22nm 50+ tape-out、55nm BCD、iSiPP300、TFLN/Jabil 合作 | 缺 UMC 特定 LTA、客户名、价格和量产收入 | 保留 | 乐观情景，需 Q3-Q4 验证 | 中 | SiPh/TFLN 认证风险只限制光子平台，不压低已收入化 22/28nm |
+| 极度乐观 | 多环节同时突破，NTM 收入 NT$330-360B，GM 35%+ | AI power wall、1.6T/TFLN、区域化 12nm、22nm specialty 都有方向性证据 | 任一核心环节缺 UMC 特定收入证据；14nm/12nm 当前收入为 0 | 下移 | 极度乐观上限，不进基准 | 低 | 不把同一个“无订单披露”风险在所有产品重复惩罚；只用于限制极度乐观 |
+
+## 8. 结论
+
+- 最可能情景：基准。UMC 的 NTM 主线是成熟/特色制程从 2025 低利用率阶段恢复到低/中 80% 利用率，并由 22/28nm、28-65nm mixed-signal/HV/BCD 和长尾成熟节点共同贡献 NT$270-285B 收入。利润率大概率维持在 GM 29.5%-31.5%、OPM 18.5%-21%，不是高端先进逻辑式的暴利结构。
+- 乐观情景成立条件：2026Q2 实际收入接近或超过 NT$68-69B，Q3/Q4 利用率进入中高 80%；22nm tape-out 转量产；28-65nm 中 BCD/HV/Smart Power 价格或客户订单显性化；SiPh/TFLN 出现模块级或 hyperscaler 认证进展；毛利率站上 32% 且不是一次性汇率或非营业收益。
+- 极度乐观情景成立条件：AI rack 电源和光互联需求同时加速，UMC 具备明确客户、产品、交付、价格和量产路径；TFLN/SiPh 不是 PR 或样品，而是可确认收入；22nm 和 12nm/14nm 新平台同步贡献；利用率逼近高 80%/低 90%，ASP/mix 上行，GM 35%+ 有财报验证。
+- 悲观情景触发条件：Q2 出货或 ASP 低于指引、June 月销售明显低于 April/May、Q3 指引转弱；成熟节点价格竞争导致 ASP 下行；BCD/AI PMIC 只停留行业叙事；SiPh/TFLN 认证或良率延后；毛利率跌破 29% 且利用率回落到 70% 区间。
+- 后续跟踪数据：2026 年 6 月销售公告（UMC IR 日程显示预计 2026-07-06）、2026Q2 实际收入和毛利率、利用率、ASP、22nm tape-out 转量产披露、BCD/Smart Power 客户订单或价格证据、TFLN/SiPh 客户认证、Intel 12nm pilot/tape-out、14nm eHV 客户设计、capex 是否维持 US$1.5B 或因客户锁产能上修。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：最新公司财报为 UMC 2026Q1，发布日期 2026-04-29；最新月度销售为 2026 年 5 月销售，发布日期 2026-06-05；本报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - UMC 2026Q1/SEC Exhibit 99：收入 NT$61.04B、GM 29.2%、OPM 18.5%、22/28nm 34%、利用率 79%、Q2 指引、2026 capex US$1.5B。`https://www.sec.gov/Archives/edgar/data/1033767/000119312526188788/umc-ex99.htm`
+  - UMC May 2026 Sales：5 月销售 NT$22.94B、YoY +17.78%；Jan-May 销售 NT$106.65B、YoY +9.05%。`https://www.businesswire.com/news/home/20260605356210/en/UMC-Reports-Sales-for-May-2026`
+  - UMC IR Overview：2025 consolidated revenue NT$237.6B、GM 29.0%、OPM 18.5%、EPS NT$3.34；June 2026 sales announcement scheduled for 2026-07-06。`https://www.umc.com/en/IR/ir_overview`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 若 Q2 指引兑现且 H2 维持低/中 80% 利用率，全年收入中枢大致落在 NT$265-275B；若 BCD/22nm/SiPh 强于预期可上看 NT$285B+。这只是补充口径，不替代 NTM 主表。
+  - FY2027 更关键的变量是 22nm tape-out 是否转量产、TFLN/SiPh 是否通过模块和 hyperscaler 认证、Intel 12nm 是否有客户 pilot production、14nm eHV 是否从 PDK 进入客户产品。
+  - 远期期权：14nm eHV、Intel 12nm、hybrid bonding、CPO/NPO/optical I/O、TFLN 3.2T 和区域化供应链，不进入 NTM 基准主口径。
+- 主要来源：
+  - 本项目公司底稿：`公司调研/晶圆制造_前道设备/UMC_United Microelectronics 联华电子_公司调研_2026-06-11.md`
+  - 本项目行业底稿：`行业调研/晶圆制造_设备_材料_测试/行业调研_特种晶圆代工_2026-06-11.md`
+  - 本项目行业底稿：`行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-06-11.md`
+  - UMC 55nm BCD 平台公告，2025-10-22。`https://www.umc.com/en/News/press_release/Content/technology_related/20251022`
+  - UMC 授权 imec iSiPP300 硅光技术公告，2025-12-08。`https://www.umc.com/en/News/press_release/Content/technology_related/20251208`
+  - SST 与 UMC 28nm SuperFlash Gen 4 Automotive Grade 1 公告，2026-01-16。`https://www.umc.com/en/News/press_release/Content/technology_related/20260116`
+  - UMC 14nm eHV FinFET 公告，2026-05-14。`https://www.umc.com/en/News/press_release/Content/technology_related/20260514`
+  - HyperLight、UMC、Wavetek TFLN high-volume foundry production 合作，2026-03-12。`https://www.umc.com/en/News/press_release/Content/corporate/20260312`
+  - HyperLight、UMC、Jabil TFLN data-center scale deployment 合作，2026-03-13。`https://www.umc.com/en/News/press_release/Content/corporate/20260313`
+

@@ -1,0 +1,8 @@
+{
+  "price_origin": "Frozen raw daily prices collected 2026-09-04, no later trading session by 2026-09-05. Adjusted open = raw open * adjusted close / raw close.",
+  "peer_observations": "Repeated stock pairs are dependent; no binomial significance or 256k independent trials claim.",
+  "rank_method": "Both directions net wins; ties by wins then losses then ticker, fixed before inspecting this backtest. Other views are sensitivity only.",
+  "scenario_cautious_rating_included": 30,
+  "liquid_filter": "Diagnostic exclusion of PNK/OTC exchange or any zero-volume days; does not certify tradability of remaining names.",
+  "omitted_price_rows": "Six raw records lacked usable open/close/adj_close or positive prices; not fill-zero returns."
+}

@@ -1,0 +1,179 @@
+{
+  "scope": "Read-only production resolver; no queue creation, formal preparation or research execution.",
+  "rows": [
+    {
+      "subject": "TEL",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "CMI",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "AVGO",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "AMKR",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "CARR",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "HPE",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "NVDA",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "TSM",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "META",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "EME",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "POWL",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "MKSI",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "NVT",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "MU",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "ALAB",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "CRDO",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "LITE",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "ANET",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "GEV",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "BE",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "STX",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "WDC",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "NBIS",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    },
+    {
+      "subject": "CRWV",
+      "sourceDate": "2026-08-19",
+      "batchId": "cid-us-2026-08-19-24",
+      "sha256": "5F4AD0D0CC460D63450B7A192390E99836CABCC284916A7499A547503EE77663",
+      "passed": true
+    }
+  ],
+  "unbound": {
+    "subject": "MU",
+    "sourceDate": "2026-09-05",
+    "rejected": true,
+    "message": "company-investment-decision MU/2026-09-05 is not bound to a shared market snapshot batch in D:\\drive\\Investment\\tools\\research-runner\\company-investment-decision.batches.json"
+  }
+}

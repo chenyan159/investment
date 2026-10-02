@@ -1,0 +1,149 @@
+# 公司收入传导与价值传导评估：Lumentum（LITE）
+
+报告日期：2026-06-12  
+主口径：NTM，约 2026-06 至 2027-06 的未来 12 个月经营窗口。  
+评估边界：只评估行业需求如何传导为 Lumentum 可确认收入、利润、现金流和经营质量；不做全公司排序，不输出任何市场定价或评级结论。  
+资料边界：本报告使用 `公司调研/`、`行业调研/` 和外部公开一手/准一手资料；未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归、模型比较或排序结果。  
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM；FY2026 Q4 指引、FY2027 run-rate、OCS/CPO 多年订单和 $2B/quarter 长期目标只作为校准或附录，不替代 NTM。
+- 当前收入基准、指引和 run-rate：FY2026 Q3 收入 8.084 亿美元，Components 5.333 亿美元、Systems 2.751 亿美元；FY2026 Q4 指引收入 9.60-10.10 亿美元、非 GAAP 经营利润率 35.0%-36.0%；TTM 收入约 24.884 亿美元，Q4 指引中点年化 run-rate 约 39.4 亿美元。
+- 重要产品/业务线：高速 EML/InP 激光芯片和激光组件、800G/1.6T 云光模块/子系统、OCS 光路交换、CPO/SiPh 外部光源和 ELS/UHP/SHP、scale-across/DCI/相干与传统工业/低速业务。
+- NTM 公司收入四情景：悲观 32.0-36.5 亿美元；基准 39.5-44.5 亿美元；乐观 47.5-55.5 亿美元；极度乐观 61.0-72.0 亿美元。相对当前 TTM 分别约 +29%-47%、+59%-79%、+91%-123%、+145%-189%。
+- 利润或 EBITDA 四情景：悲观非 GAAP 经营利润约 8.0-11.0 亿美元；基准 12.2-16.0 亿美元；乐观 16.2-21.6 亿美元；极度乐观 23.2-30.2 亿美元。GAAP 净利润因可转债结算、SBC、摊销、税率和新产能投入无法可靠量化，方向上应为正。
+- 最大传导瓶颈：不是行业 AI 光互联需求是否存在，而是 EML/CW/UHP 激光产能、1.6T 良率、客户多源分配、OCS/CPO 收入确认时间和 ASP 下行能否被 mix 抵消。
+- 最大利润率变量：高毛利 laser chip/laser assembly、OCS、CPO/ELS 的占比，以及内部 fab 利用率；低毛利模块收入如果占比过高，会削弱收入上修对利润的传导。
+- 最大现金流变量：9M FY2026 经营现金流 3.884 亿美元、capex 2.845 亿美元，FCF 约 1.039 亿美元；NTM 现金流主要取决于库存、应收账款、资本开支和客户预付款/长协锁产能。
+- 可信度：基准为中高；悲观为中；乐观为中；极度乐观为低到中。极度乐观需要需求、公司捕获、利润质量和执行质量同时成立。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 高速 EML/InP 激光芯片与激光组件 | FY2026 Q3 Components 收入 5.333 亿美元，估计其中大部分来自 laser chip、laser assembly、data transport；NTM 可收入化基数约 16-20 亿美元 | Q3 Components 为 66.0%；该子线估计约 40%-50% | 公司利润质量核心；200G EML、CW、UHP/SHP 是 800G/1.6T、CPO、OCS 的瓶颈件 | A/B | 进入基准；400G/lane EML 仅小比例进入乐观/极度乐观 | 3.2T/400G per lane 大规模收入主要是 2027H2-2028 以后 |
+| 800G/1.6T 云光模块与子系统 | FY2026 Q3 Systems 收入 2.751 亿美元；10-Q 称 cloud transceiver 产品线 Q3 同比增量超过 1.37 亿美元；NTM 可收入化基数约 10-14 亿美元 | Q3 Systems 为 34.0%，其中 cloud transceivers 是主因 | 800G 当前放量，1.6T 2026 夏季开始量产出货，是 Systems 放量主线 | A/B | 进入基准；1.6T 上修进入乐观 | 3.2T 模块大规模收入不进 NTM 基准 |
+| OCS 光路交换 | FY2026 Q3 OCS 初期收入超过 2,500 万美元，9M FY2026 超过 3,800 万美元；OFC 材料披露 OCS backlog 4 亿美元以上、2H CY26 交付 | 当前占比低，但订单/利润弹性高 | 从展示转为订单和交付，可能改变 Systems 质量 | A/B | 进入基准，按交付节奏折扣；大规模多客户扩散进入乐观/极度乐观 | GPU Ethernet 大规模采用 OCS 仍属远期/上限 |
+| CPO/SiPh 外部光源、UHP/SHP/ELS | OFC 2026 披露 UHP multi-year backlog、现有 capacity 可支持 CY27 数亿美元 UHP 收入；NVIDIA 有多年度采购承诺和未来产能访问权 | 当前收入小，NTM 基准只纳入低到中个位亿美元 | 目前更多是 2027 弹性，利润属性优于普通模块 | B/C | 基准只小比例纳入；主要在乐观和极度乐观 | Scale-up CPO 首批出货预计 late CY27，超出 NTM 主窗口大部分 |
+| Scale-across/DCI、相干监测/调谐、传统工业/低速业务 | FY2026 Q3 Components 增长中 data transport、pump laser、narrow-linewidth laser assembly 有贡献；工业/legacy 未单独披露 | 估计 15%-25% | 现金流和客户结构稳定器；AI scale-across 有中等增量 | A/C | 进入基准但不作为主要上修引擎 | 1.6T coherent、multi-rail DCI 大规模化作为补充口径 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本步只评估外部需求池，不判断 Lumentum 份额、收入确认、利润率或公司总收入。当前需求锚来自公司 FY2026 Q3/Q4 指引、OFC 2026 产品与 backlog、TrendForce 2026 光模块和激光器产能数据，以及本项目行业调研中 800G/1.6T、激光器、CPO/OCS 需求池。需求强弱只和各产品当前预期比较。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 高速 EML/InP 激光芯片与激光组件 | TrendForce 预计 2026 年 EML+CW-DFB LD 月产能约 5,070 万颗；EML 前三 Lumentum/Broadcom/Mitsubishi 约 72%；Lumentum OFC 称 CY26 末 EML unit capacity 较 CY25 末增加 50%+ | 需求仍增长，但客户多源和 2026H2 扩产使 EML 紧缺缓解；200G EML ASP 开始回落 | 800G 持续拉货、1.6T 进入初量，200G EML/CW 需求符合当前短缺和 Q4 指引 | 1.6T 认证加速，400G/lane EML design-in 前置，客户长协锁产能 | 1.6T/3.2T 前置，EML 和 UHP 同时缺货，客户接受更高预付款和更长 LTA | 行业月产能从紧缺扩到 5,070 万颗；公司 capacity +50%+，但需求 lane CAGR 约 85% | 基准符合当前预期；乐观高于预期；极度乐观要求新增平台提前 | 依据：TrendForce、Lumentum OFC。反证：产能追上、低端 800G ASP 先跌、客户二供成功 |
+| 800G/1.6T 云光模块与子系统 | AI optical transceiver 市场 2025 年约 165 亿美元、2026 年约 260 亿美元；800G 为主流，1.6T 2026 导入 | GPU/ASIC 或数据中心电力延迟导致 800G 拉货低于 Q4 implied path；1.6T 认证慢 | 800G 继续主流，1.6T 夏季开始出货，需求大体符合公司 Q4 指引和行业 2026 高速光模块增长 | 1.6T 在新增高端 AI fabric 中提前成为默认，800G ASP 下行温和 | 1.6T 与 800G 同时短缺到 2027H1，3.2T 客户 qual 拉动提前订单 | 2026 AI 光模块总池 +57%+；1.6T 从导入转批量 | 基准符合预期；乐观需要客户 qual 和供应链信号 | 依据：行业调研、OFC 材料。反证：LightCounting/行业渠道若显示 800G 库存和 ASP 快速下滑 |
+| OCS 光路交换 | Lumentum OFC：OCS backlog 4 亿美元以上、2H CY26 交付，CY27 run-rate >10 亿美元；R300 300x300，R64 64x64 | 2H CY26 交付延迟，客户只把 OCS 用于少数测试或 Google-like 架构 | OCS backlog 主体按期收入化，1-2 个 hyperscaler 进入部署或扩容 | 新 multi-year OCS agreement 追加，多个客户把 OCS 纳入 scale-out/scale-across | GPU/ASIC fabric 也开始吸收 OCS，CY27 run-rate 明显高于 10 亿美元 | 从 FY2026 Q3 超 2,500 万美元单季收入到 2H CY26 4 亿美元 backlog 兑现 | 基准略高于当前收入 run-rate，但符合 backlog；乐观高于当前预期 | 依据：OFC backlog 和 10-Q OCS 初期收入。反证：网络控制、现场可靠性或客户部署窗口延迟 |
+| CPO/SiPh 外部光源、UHP/SHP/ELS | NVIDIA 多年度采购承诺和产能访问权；Lumentum OFC 展示 >1W 1310nm SHP、16-channel DWDM UHP ELS；UHP multi-year backlog | CPO 仍处 design-in，NTM 主要为样品和小量 UHP，收入低于市场期待 | Scale-out CPO 小规模收入化，UHP/ELS 低到中个位亿美元进入 NTM | CPO attach 和 NVIDIA/多个 hyperscaler 项目同步推进，CY27 数亿美元收入前置 | Scale-up CPO late CY27 之前提前，UHP/ELS 变成高端 switch 指定光源，收入非线性放大 | 当前小基数，到 CY27 multi-hundred-million UHP capacity 可见 | 基准只小幅纳入；乐观/极度乐观才体现弹性 | 依据：NVIDIA 合作、OFC。反证：CPO 可维护性、热、ELS 冗余或客户标准化延迟 |
+| Scale-across/DCI、相干监测/调谐、传统工业/低速业务 | Q3 管理层称 scale-across components、pump lasers 和 narrow linewidth laser assemblies 支持 mix；行业 scale-across/DCI 受 AI campus 带动 | AI DCI 增长低于预期，传统 telecom/industrial 抵消增长 | DCI/相干组件稳健增长，legacy 低增但不明显拖累 | AI campus/metro DCI 和 multi-rail 监测/调谐上修，抵消 legacy 周期 | 多园区 AI factory 和 1600ZR/coherent-lite 提前普及 | 绝对增量小于 EML/模块/OCS，但利润质量较好 | 基准符合当前预期；乐观是补充上修 | 依据：10-Q data transport、OFC scale-across 展示。反证：电信 capex 弱、传统工业低迷 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本步只判断外部需求中哪些能进入 Lumentum NTM 收入表，以及当前可收入化基数；不预测增长，不判断利润率。A 级为已披露收入/分部/指引，B 级为订单、backlog、正式合作或明确交付窗口，C 级为 design win、认证、产能规划，D/E 级不进 NTM 基准。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 高速 EML/InP 激光芯片与激光组件 | FY2026 Q3 Components 5.333 亿美元；10-Q 称 Components 增长主要来自 laser chip/laser assembly，且 200G lane shift 带动 ASP 小幅上升；OFC 称 laser chips backlog >2 years | 直接 | 高毛利、高利用率、强客户认证；但扩产后有 ASP 风险 | 11.5-14.0 亿美元 | 15.5-18.5 亿美元 | 20.5-25.5 亿美元 | 32.0-40.0 亿美元 | 悲观低于当前 Q4 implied run-rate；基准接近 Q4 run-rate 延续；乐观高于当前预期 | A/B | 是 | 已在收入表、产品口径、Q4 指引和 backlog 中可见 | 基准主口径；400G/lane 与 3.2T 只进入乐观/极度乐观 |
+| 800G/1.6T 云光模块与子系统 | FY2026 Q3 Systems 2.751 亿美元；10-Q 称 cloud transceiver 产品线 Q3 同比增量超过 1.37 亿美元；OFC 称 cloud transceiver backlog >1 year、1.6T volume shipments start this summer | 直接 | 模块毛利低于激光芯片，但早期 1.6T、垂直整合和客户认证有溢价 | 8.0-10.5 亿美元 | 10.5-13.0 亿美元 | 14.5-18.5 亿美元 | 23.5-31.0 亿美元 | 基准符合当前指引和 1.6T 初量；乐观需要 1.6T 份额提升 | A/B | 是 | 已有 Systems 收入、cloud transceiver 增量和 backlog | 进入基准；低端 800G ASP 压力在第三步处理 |
+| OCS 光路交换 | FY2026 Q3 OCS 收入 >2,500 万美元，9M >3,800 万美元；OFC 称 backlog >4 亿美元 2H CY26 交付，CY27 run-rate >10 亿美元 | 直接 | 系统级高附加值，客户锁定强；收入确认取决于部署和验收 | 2.0-3.5 亿美元 | 4.0-6.0 亿美元 | 7.5-11.0 亿美元 | 16.0-23.0 亿美元 | 基准高于历史收入但由 backlog 支撑；极度乐观为上限 | A/B | 是 | 已有确认收入和明确 backlog/交付窗口 | 基准折扣纳入；不能把 multi-billion agreement 全部放进 NTM |
+| CPO/SiPh 外部光源、UHP/SHP/ELS | NVIDIA 采购承诺/产能访问权；OFC：UHP multi-year backlog，existing capacity 可支持 CY27 multi-hundred-million UHP revenue，ELS 使机会约 2x | 直接 | 高毛利、战略性；但收入确认时间偏 2027，scale-up CPO 晚于 NTM 主窗口 | 0.5-1.2 亿美元 | 1.5-3.0 亿美元 | 4.0-7.5 亿美元 | 10.0-16.0 亿美元 | 基准只代表小规模收入化，不等于全部 CPO 机会 | B/C | 部分 | 正式合作和产能/订单强，但交付节奏不完全在 NTM | 小比例进基准；scale-up CPO 大部分列乐观/极度乐观 |
+| Scale-across/DCI、相干监测/调谐、传统工业/低速业务 | FY2025 Q4 Industrial Tech 5,660 万美元；FY2026 Q3 Components 中 data transport、pump lasers、narrow linewidth assemblies 有贡献；旧业务未单独披露 | 直接/间接 | 毛利结构混合；scale-across 高于传统工业，legacy 低增 | 7.0-9.5 亿美元 | 7.0-9.5 亿美元 | 6.5-8.5 亿美元 | 5.5-8.0 亿美元 | 基准是残余和稳定器；上限情景下相对占比下降 | A/C | 是 | 收入表可见，但子项需估算 | 进入基准；不作为主要增长引擎 |
+
+排除项：仅有 CPO/3.2T/optical I/O 题材、没有客户、交付时间、收入确认路径的机会，不进入 NTM 基准；客户总 capex、AI 光模块 TAM、NVIDIA/Google/Meta 总预算不直接作为 Lumentum 收入基数。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本步从第一步需求和第二步收入基数出发，评估每个重要产品在 NTM 内对公司收入、利润和现金流的贡献。表中产品收入区间不可机械取各自上限相加，公司汇总在第 6 节做重复计算、替代和组合校准。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 高速 EML/InP 激光芯片与激光组件 | 悲观产品 | 11.5-14.0 亿美元 | 经营利润贡献仍正，但 ASP/利用率下行，贡献率低于 Q3/Q4 run-rate | 毛利率回落 | 低于当前 Q4 隐含路径 | A/B 收入表、Components 仍增长 | 保留悲观，限制在 ASP 和产能利用率层级 | 扩产后客户压价、Broadcom/Coherent/Sumitomo/Mitsubishi 多源分流 |
+| 高速 EML/InP 激光芯片与激光组件 | 基准产品 | 15.5-18.5 亿美元 | 高于公司平均；是非 GAAP OM 31%-36% 的主支撑 | 维持高位或小幅改善 | 符合当前预期 | Q3 Components 5.333 亿美元，laser chip/assembly 为增长主因；laser backlog >2 years | 保留 | 200G EML ASP 下行速度、内部 fab 良率 |
+| 高速 EML/InP 激光芯片与激光组件 | 乐观产品 | 20.5-25.5 亿美元 | 高毛利增量明显，推动 GM/OM 上修 | 改善 | 高于当前预期 | CY26 capacity +50%+，1.6T、400G/lane design-in | 保留但要求客户 LTA 和交付证据 | 高端缺货若被低端模块 ASP 下滑抵消 |
+| 高速 EML/InP 激光芯片与激光组件 | 极度乐观产品 | 32.0-40.0 亿美元 | 非线性经营杠杆，若 mix 偏 UHP/400G EML，利润率显著扩张 | 大幅改善 | 明显高于预期，仅作上限 | 需求 lane CAGR、3.2T 前置、UHP/CPO 共同拉动 | 下移为上限，不进基准 | 产能、良率和客户多源必须同时突破 |
+| 800G/1.6T 云光模块与子系统 | 悲观产品 | 8.0-10.5 亿美元 | 正贡献但受 ASP 和测试/质保/库存拖累 | 走弱 | 低于当前预期 | Systems 已确认，但 ASP 压力可见 | 保留悲观 | 800G 库存修正、1.6T qual 延迟、低毛利 pass-through |
+| 800G/1.6T 云光模块与子系统 | 基准产品 | 10.5-13.0 亿美元 | 模块贡献低于激光芯片，但 1.6T 和垂直整合改善 mix | 稳定到小幅改善 | 符合当前预期 | Systems Q3 2.751 亿美元，cloud transceiver 增量明显，backlog >1 year | 保留 | 模块多源竞争、DSP/组件成本、良率爬坡 |
+| 800G/1.6T 云光模块与子系统 | 乐观产品 | 14.5-18.5 亿美元 | 1.6T 初期溢价带动利润，但须证明不是低毛利收入 | 改善 | 高于当前预期 | 1.6T volume shipments start this summer，客户认证扩大 | 保留 | 客户为何给 Lumentum 份额、买什么、何时确认需持续验证 |
+| 800G/1.6T 云光模块与子系统 | 极度乐观产品 | 23.5-31.0 亿美元 | 若 1.6T 短缺且高端份额大，可显著拉升利润；否则只是低毛利量 | 取决于 mix | 明显高于预期 | 1.6T 成新增高端默认，3.2T/400G lane 前置 | 下移为上限 | 低毛利模块不能自动变成高利润 |
+| OCS 光路交换 | 悲观产品 | 2.0-3.5 亿美元 | 利润贡献小于市场预期，因验收延迟或客户部署慢 | 不确定 | 低于 backlog 隐含 | 已有初期收入，但客户部署节奏未完全披露 | 保留悲观 | 控制软件、现场可靠性、客户网络架构是否复制 |
+| OCS 光路交换 | 基准产品 | 4.0-6.0 亿美元 | 高于普通模块，提升 Systems 质量 | 改善 | 符合 backlog 兑现路径 | 4 亿美元+ backlog 2H CY26 交付，Q3 25M+ 收入 | 保留 | 不能把 CY27 >$1B run-rate 全部提前 |
+| OCS 光路交换 | 乐观产品 | 7.5-11.0 亿美元 | 高毛利系统收入开始成为公司第二增长引擎 | 明显改善 | 高于当前收入 run-rate | 多年 multi-billion OCS agreement、R300/R64 量产路线 | 保留 | 新客户是否从 PoC 转量产 |
+| OCS 光路交换 | 极度乐观产品 | 16.0-23.0 亿美元 | 若成为 GPU/ASIC fabric 常用层，经营杠杆强 | 大幅改善 | 明显高于预期 | 新 scale-up use case、OCS unit CAGR >150% | 下移为上限 | Workload 适用性和 OCS 非 packet switch 限制 |
+| CPO/SiPh 外部光源、UHP/SHP/ELS | 悲观产品 | 0.5-1.2 亿美元 | 样品/小批收入，利润被 R&D 和扩产吸收 | 不明显 | 低于叙事预期 | 合作存在，但交付大多偏 2027 | 保留悲观 | CPO field service、热管理、ELS 冗余 |
+| CPO/SiPh 外部光源、UHP/SHP/ELS | 基准产品 | 1.5-3.0 亿美元 | 高毛利小基数，支撑 mix 但不是总收入主引擎 | 小幅改善 | 符合保守纳入 | NVIDIA 合作、UHP backlog、existing capacity CY27 数亿美元 | 保留 | 只纳入 NTM 可确认部分 |
+| CPO/SiPh 外部光源、UHP/SHP/ELS | 乐观产品 | 4.0-7.5 亿美元 | 高利润增量，对 OM 上修有明显作用 | 改善 | 高于当前预期 | CPO scale-out attach 提前，ELS 机会约 2x UHP | 保留 | 客户项目、交付时间、收入确认需明确 |
+| CPO/SiPh 外部光源、UHP/SHP/ELS | 极度乐观产品 | 10.0-16.0 亿美元 | 稀缺光源若绑定 CPO switch，利润率可显著高于公司平均 | 大幅改善 | 上限，不代表当前预期 | Scale-up CPO phase 1 是 scale-out 的 3x-4x | 下移为乐观上限/远期期权交界 | late CY27 之后机会不得提前进 NTM |
+| Scale-across/DCI、相干监测/调谐、传统工业/低速业务 | 悲观产品 | 7.0-9.5 亿美元 | 混合毛利，传统业务弱化现金流稳定性 | 稳定到走弱 | 符合或略低于当前 | 传统和 data transport 收入表可见 | 保留 | 电信/工业周期、客户 capex |
+| Scale-across/DCI、相干监测/调谐、传统工业/低速业务 | 基准产品 | 7.0-9.5 亿美元 | 稳定器，贡献固定成本吸收 | 稳定 | 符合当前 | DCI/long-haul 和 pump/narrow linewidth laser 受 AI scale-across 支撑 | 保留 | 增速不应被夸大 |
+| Scale-across/DCI、相干监测/调谐、传统工业/低速业务 | 乐观产品 | 6.5-8.5 亿美元 | 相对占比下降但绝对稳定，利润质量尚可 | 稳定 | 不作为主要上修 | Multi-rail C-OCM/WSS/iTLA 展示 | 保留 | 机会小于 EML/OCS/CPO |
+| Scale-across/DCI、相干监测/调谐、传统工业/低速业务 | 极度乐观产品 | 5.5-8.0 亿美元 | 被高增长业务稀释，相对重要性降低 | 稳定 | 不是极度乐观驱动 | 1600ZR/scale-across 是补充 | 仅作跟踪 | 若公司总收入极高，残余业务不是主要解释 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本步把产品贡献合成为公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利润和自由现金流方向；不讨论市场定价。汇总时检查了产品重叠、客户预算重复、OCS/CPO 交付时点、低毛利模块收入和传统业务抵消。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | 32.0-36.5 亿美元 | +29%-47% vs TTM 24.884 亿美元 | 低于 Q4 指引后续延续和当前 AI 光互联预期；Q4 可兑现但 FY2027 增速放缓 | 42%-45% | 25%-30% | 非 GAAP 经营利润 8.0-11.0 亿美元；EBITDA 约 9.5-13.0 亿美元；GAAP 净利润无法可靠量化 | 低到中度正 FCF，约 1-4 亿美元；库存和 capex 吸收利润 | 中 | 800G/EML ASP 下行、1.6T qual 延迟、OCS/CPO 后移、客户集中和库存 |
+| 基准公司 | 39.5-44.5 亿美元 | +59%-79% vs TTM | 接近 FY2026 Q4 指引中点年化后温和增长；高可信业务正常兑现，低证据机会折扣纳入 | 46%-50% | 31%-36% | 非 GAAP 经营利润 12.2-16.0 亿美元；EBITDA 约 13.5-18.0 亿美元；GAAP 净利润无法可靠量化 | 明显正 FCF，约 4-8 亿美元；但低于会计利润 | 中高 | 激光产能/良率、1.6T 放量、OCS 2H CY26 交付、应收和库存 |
+| 乐观公司 | 47.5-55.5 亿美元 | +91%-123% vs TTM | 高于当前预期；不是单一小基数项目，而是 EML、1.6T、OCS、UHP/ELS 同步 | 48%-52% | 34%-39% | 非 GAAP 经营利润 16.2-21.6 亿美元；EBITDA 约 17.5-23.5 亿美元；GAAP 净利润无法可靠量化 | 强正 FCF，约 7-13 亿美元；扩产 capex 仍拖累转换率 | 中 | 客户 LTA、模块 mix、高端激光 ASP、OCS 新客户、CPO 小量收入确认 |
+| 极度乐观公司 | 61.0-72.0 亿美元 | +145%-189% vs TTM | 显著高于当前预期；需要需求、份额、利润率和执行质量同时突破 | 50%-54% | 38%-42% | 非 GAAP 经营利润 23.2-30.2 亿美元；EBITDA 约 25.0-32.5 亿美元；GAAP 净利润无法可靠量化 | 高 FCF 潜力，约 9-18 亿美元；若新 fab 和库存投入过快则下移 | 低到中 | 产能与良率、客户不取消/不推迟、多源分流低、CPO/OCS 非线性收入、ASP 不快速回落 |
+
+汇总说明：FY2026 Q4 指引已经把公司推到约 39.4 亿美元年化 run-rate，因此基准不是从 TTM 线性外推，而是从 Q4 指引、Components/Systems run-rate、OCS backlog、laser backlog 和 FY2027 正常交付节奏合成。极度乐观没有把客户总 capex 或多年度采购承诺直接记为收入，只代表 NTM 可验证上限。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。正向证据必须指向需求、收入基数、产品贡献、公司利润或执行可信度；反证只处理一次，不把同一风险重复扣到多个层级。市场价格和估值不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q4 指引收入 9.60-10.10 亿美元、非 GAAP OM 35%-36% | 公司汇总 | 抬高 NTM 底座，支持基准 39.5-44.5 亿美元 | 明确支持 OM 高于 FY2025/FY2026 前期 | 若 Q4 按期兑现，客户和供给可见度增强 | 基准保留 |
+| FY2026 Q3 Components 5.333 亿美元、Systems 2.751 亿美元，分别 YoY +77.3%、+121.1% | 收入基数/产品贡献 | 支持 EML/laser 和 cloud transceiver 同时进入基准 | laser mix 和规模利用率支撑 GM | 但应收和库存随收入上升 | 基准保留 |
+| 10-Q：Q3 OCS 收入 >2,500 万美元、9M >3,800 万美元；OFC：OCS backlog >4 亿美元 2H CY26 交付 | 收入基数/执行 | OCS 从 C/D 级题材上移为 A/B 级基准 | Systems mix 改善，利润质量高于普通模块 | 交付、验收和客户网络部署决定现金 | OCS 基准保留，乐观保留 |
+| NVIDIA 多年度合作、$2B 资金、multibillion purchase commitment 和 capacity access | 需求/收入基数/执行 | 提高 UHP/ELS/CPO 和 advanced laser 需求可信度 | 高端激光 mix 改善 | 扩产资金和长协降低供给风险，但非独占 | CPO 基准小比例保留，乐观保留 |
+| TrendForce：2026 EML+CW-DFB LD 月产能 5,070 万颗，前三供应商 55%，EML 前三 72% | 需求/供给/竞争 | 证明需求池大，也提示扩产带来价格周期 | 供给集中利好短期毛利，2027 可能压 ASP | 若产能过快释放，库存和价格压力上升 | 基准保留；极度乐观下移为上限 |
+| 10-Q：cloud transceiver Q3 同比增量 >1.37 亿美元，但 ASP 下行部分抵消 | 产品贡献 | 模块收入进入基准 | ASP 已是明确反证，不能假设收入全部转为利润 | 库存/质保/测试可拖累 FCF | 模块基准保留，乐观需 mix 证据 |
+| 10-Q：两个客户 Q3 分别占 26% 和 12%，9M 占 24% 和 16% | 执行可信度/风险 | 客户拉货支持收入，但集中度提高下行情景敏感性 | 大客户议价可能压毛利 | 客户延迟/库存会快速传导到应收和存货 | 悲观保留；不在每个产品重复惩罚 |
+| 9M FY2026 OCF 3.884 亿美元、capex 2.845 亿美元；AR 和库存分别因高收入/备货增加 | 现金流 | 收入质量已经转正，但仍占用营运资本 | 高利润没有完全转化为 FCF | 扩产期 FCF 低于非 GAAP 利润 | FCF 可信度中；基准保留 |
+| CPO scale-up 首批出货预计 late CY27，部分超过 NTM | 收入确认 | CPO 远期机会不能全部进 NTM | 远期高毛利不能提前改善 NTM OM | 新 fab 和 ELS 先投入后产出 | 极度乐观下移；部分移入附录 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 收入仍增长但低于当前预期，NTM 约 31-36 亿美元 | Q4 指引和已确认收入使“断崖下滑”概率低 | 客户集中、ASP 下行、库存、OCS/CPO 延迟、capex 占用 | 保留 | 悲观公司：32.0-36.5 亿美元收入，OM 25%-30% | 中 | ASP/库存风险只在产品利润和公司现金流处理，不再重复压低需求池 |
+| 基准 | Q4 指引兑现后，FY2027 前三季正常增长，NTM 约 39-45 亿美元 | A/B 证据强：收入表、Q4 指引、Components/Systems 增长、OCS backlog、laser backlog、NVIDIA 合作 | 1.6T/OCS/CPO 节奏仍需假设，且公司不披露总 bookings | 保留 | 基准公司：39.5-44.5 亿美元收入，OM 31%-36% | 中高 | CPO 远期机会已折扣，不再用“CPO 未全面量产”惩罚 EML/模块基准 |
+| 乐观 | 多条产品线同步超预期，NTM 约 47-56 亿美元 | 1.6T 夏季出货、OCS multi-billion agreement、UHP/ELS 多年 backlog、客户锁产能 | 需要客户、产品、交付和价格同时更强；低毛利模块不能自动拉升利润 | 保留 | 乐观公司：47.5-55.5 亿美元收入，OM 34%-39% | 中 | 客户集中风险只作为兑现门槛，不和 ASP 风险重复扣减 |
+| 极度乐观 | 需求、公司捕获、利润率和执行同时突破，原上限约 64-78 亿美元 | $2B/quarter 长期目标、OCS >$1B CY27 run-rate、UHP/CPO capacity 和 3.2T 前置 | NTM 时间表不完整，scale-up CPO 偏 late CY27，新 fab 早期仍投入，产能/良率/多源同时约束 | 下移 | 极度乐观上限：61.0-72.0 亿美元收入，OM 38%-42%；超出部分移入附录/后续跟踪 | 低到中 | 远期 CPO/3.2T 只在附录跟踪，不反复压低当前 EML/OCS 证据 |
+
+## 8. 结论
+
+- 最可能情景：基准。NTM 收入最可能落在 39.5-44.5 亿美元，核心不是把 AI 光模块 TAM 直接给 Lumentum，而是 Q4 指引、EML/laser backlog、cloud transceiver backlog、OCS 4 亿美元以上 backlog 和 NVIDIA 高端激光合作共同形成的可收入化路径。利润上，非 GAAP OM 31%-36% 可维持，前提是 laser/OCS/CPO mix 能抵消普通模块 ASP 下行。
+- 乐观情景成立条件：1.6T 出货从夏季初量转为多个客户的规模采购；200G/400G EML、CW/UHP 激光继续紧缺；OCS backlog 按期交付且追加订单；CPO/ELS 在 CY27 收入前置；客户多源没有显著压低 Lumentum 份额。
+- 极度乐观情景成立条件：800G/1.6T 和高端激光同时供不应求，OCS 从少数客户扩散到多个 AI fabric，CPO scale-out 提前放量，UHP/ELS 成为 NVIDIA/多个 hyperscaler 高端 switch 的指定瓶颈件，内部 fab 与外包混合制造同时提升产能、良率和毛利率。
+- 悲观情景触发条件：FY2026 Q4 实际收入低于 9.60 亿美元或 FY2027 Q1 指引环比停滞；非 GAAP 毛利率跌破 45%；库存/应收继续上升但收入增速放缓；OCS 2H CY26 backlog 延迟；客户二供和 ASP 下行速度快于出货增长。
+- 后续跟踪数据：FY2026 Q4 实际收入与 FY2027 Q1 指引；Components 与 Systems 拆分；OCS backlog 剩余、交付和新增客户；laser chips/UHP backlog；1.6T 出货和客户认证；CPO/ELS 是否有明确 PO、交付和收入确认；存货、AR、capex、OCF/FCF；前两大客户收入占比变化。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：最新官方财报为 FY2026 Q3，季度截至 2026-03-28，发布日期 2026-05-05；Q4 FY2026 指引覆盖截至 2026-06 的季度；本报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Lumentum FY2026 Q3：收入 8.084 亿美元，GAAP GM 44.2%，非 GAAP GM 47.9%，GAAP OM 21.6%，非 GAAP OM 32.2%，Components 5.333 亿美元，Systems 2.751 亿美元，Q4 指引收入 9.60-10.10 亿美元、非 GAAP OM 35%-36%。来源：https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Third-Quarter-of-Fiscal-Year-2026-Financial-Results/default.aspx
+  - Lumentum FY2026 Q2：收入 6.655 亿美元，非 GAAP GM 42.5%，非 GAAP OM 25.2%，Components 4.437 亿美元，Systems 2.218 亿美元，Q3 指引 7.80-8.30 亿美元。来源：https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Second-Quarter-of-Fiscal-Year-2026-Financial-Results/default.aspx
+  - Lumentum FY2025 Q4/FY2025：Q4 收入 4.807 亿美元，Cloud & Networking 4.241 亿美元，占 88.2%；FY2025 收入 16.45 亿美元。来源：https://investor.lumentum.com/financial-news-releases/news-details/2025/Lumentum-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2025-Results/default.aspx
+  - Lumentum FY2026 Q3 10-Q：Q3 Components 增长主要来自 laser chip/laser assembly；cloud transceiver 产品线增量、OCS 初期收入、客户集中度、现金流和 capex。来源：https://www.sec.gov/Archives/edgar/data/1633978/000162828026030777/lite-20260328.htm
+  - NVIDIA/Lumentum 战略合作：NVIDIA 投资 20 亿美元，协议包含 multibillion purchase commitment 和 capacity access rights。来源：https://nvidianews.nvidia.com/news/nvidia-announces-strategic-partnership-with-lumentum-to-develop-state-of-the-art-optics-technology
+  - Lumentum OFC 2026 投资者材料：EML capacity +50% by end CY26 vs end CY25；OCS backlog 4 亿美元以上、2H CY26 交付、CY27 run-rate >10 亿美元；UHP/CPO/ELS 路线和 $2B/quarter 长期目标。来源：https://s21.q4cdn.com/377324469/files/doc_presentations/2026/2026-Lumentum-at-OFC_final.pdf
+  - Lumentum OFC 2026 产品发布：1.6T DR4 OSFP 400G differential EML、>1W 1310nm SHP laser、16-channel DWDM UHP laser。来源：https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Demonstrates-Industry-Leading-Technologies-and-Products-for-Scale-Out-Scale-Up-and-Scale-Across-AI-Infrastructure-at-OFC-2026/default.aspx
+  - TrendForce 2026-06-03：2026 年 EML+CW-DFB LD 月产能约 5,070 万颗，前三 Broadcom/Lumentum/Sumitomo 合计 55%，EML 前三 Lumentum/Broadcom/Mitsubishi 约 72%。来源：https://www.trendforce.com/presscenter/news/20260603-13077.html
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 Q4 是基准下限锚，不是全年预测：中点 9.85 亿美元，年化约 39.4 亿美元。
+  - OFC 材料中的 $2B/quarter、OCS >$1B CY27 run-rate、new UHP fab $5B annual revenue capacity 是长期目标或 capacity/run-rate，不作为 NTM 基准收入直接纳入。
+  - CPO scale-up late CY27、3.2T/400G-per-lane、new fab early 2028 ramp 主要列为乐观、极度乐观或附录跟踪。
+- 本项目内资料：
+  - `公司调研/AI网络_光互联_连接器/LITE_Lumentum_公司调研_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_800G_1.6T可插拔光模块_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_激光器、EML与光器件_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_CPO／NPO与交换侧光引擎_2026-06-11.md`
+  - `行业调研/AI网络_光互联_铜互联/行业调研_OCS光路交换_2026-06-11.md`
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`

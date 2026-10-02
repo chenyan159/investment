@@ -1,0 +1,788 @@
+# 公司：ASX ASE Technology Holding（日月光投控）全面尽调
+
+> 研究截止：2026-07-12（America/Los_Angeles）  
+> 股票：NYSE ADR，代码 ASX；每 1 ADS 代表 2 股台湾普通股  
+> 最新完整财报：2026Q1，2026-04-29 发布  
+> 财报后验证：2026Q2 营收快报，2026-07-09 发布；完整 Q2 损益和资产负债表尚未发布  
+> 金额：除特别说明外，财报数字为新台币；产品、市场和情景模型为美元  
+> 项目内资料边界：只使用基本面/行业调研下与先进封装、测试、HBM、基板、光互联相关的产业资料；未读取、引用或继承公司调研、日度资料、特征量化或其他项目目录中的研究内容。
+
+## 核心结论
+
+1. **ASE Technology Holding 不是单一“AI 封装股”，而是全球最大规模的 OSAT 平台加一块低毛利 EMS。** 2025 年集团收入 NT$645.4bn（约 $20.7bn），其中封装 48%、测试 11%、EMS 40%、其他 1%；ATM 封装测试业务收入 NT$389.2bn、毛利率 23.5%、营业利润率 11.3%，EMS 收入 NT$259.1bn、毛利率 9.1%、营业利润率 2.9%。到 2026Q1，ATM 已占集团收入 65%、营业利润 91%，利润结构正在快速向先进封装和测试倾斜。[A03]
+2. **真正改变估值框架的是 LEAP。** Leading-Edge Advanced Packaging and Testing 收入由 2024 年约 $0.6bn 增至 2025 年 $1.6bn，2026 年目标由 $3.2bn 上调至超过 $3.5bn，即至少增长 119%；其中约 75% 为封装、25% 为测试，测试中约 75% 是 wafer sort、25% 是 final test。2026Q2 ATM 营收同比增长 36.3%，并超过公司 Q1 指引上限，说明需求至少到 2026 年中仍在兑现，而非只有发布会叙事。[A02][A08]
+3. **ASE 是 AI 先进封装供应链的“压力释放阀”和二级整合平台，但不是 TSMC CoWoS 的替代垄断者。** TSMC 掌握逻辑晶圆、CoWoS 平台和头部客户主导权；ASE/SPIL 承接 wafer-on-substrate、bumping、先进组装、wafer sort、final test，并用 FOCoS、FOCoS-Bridge、VIPack、全流程 LEAP 建立自己的完整方案。它同时是 TSMC 的伙伴、外溢产能承接者和部分封装路线的竞争者。
+4. **订单强度高，但公司不披露 backlog。** 管理层明确称 LEAP 需求持续显著超过供给、产能有限、Q1 收入并非客户提前拉货造成，并将 2026 capex 从 $7.0bn 上调至 $8.5bn；Q1 ATM 工厂综合利用率约 80%，但该数字被正在安装、尚未产生收入的新 LEAP 线拉低。不能把这些证据改写成不存在的 dollar backlog、book-to-bill 或取消率。[A08][B01][B02]
+5. **供给约束的核心已从单一封装工序变成“组合良率 + 测试吞吐 + 厂房”。** 大尺寸 2.5D/3D 包体包含两颗或更多 compute die、8–12 个 HBM stack、interposer/RDL/bridge、高层 ABF、TCB/混合键合、TIM、package test 和 SLT。公司 Q1 明言设施和 wafer-sort 产能都紧，测试机由 2025Q1 的 6,686 台增至 2026Q1 的 7,585 台，增长 13.4%，同时 2026 年新增 $600m 设备投资大部分投向 LEAP、尤其 wafer sort。[A01][A08][L01]
+6. **高潜力小业务不能漏掉，但也不能提前资本化。** 重点期权包括：全流程 LEAP（2026 目标 $300m）、310×310mm 面板级 FOCoS/FOCoS-Bridge（官方计划 2027H1 生产）、CPO/硅光封装和 Known-Good Optical Engine 测试、USI 1.6T 光模块、EugenLight 800G/1.6T 光引擎与 ELSFP。CPO 管理层没有给出收入金额或时间，明确仍很早期；它是技术必需项，不是 2026 年主要利润项。[A08][P04][P05][P07]
+7. **资产负债表可以支撑扩张，但自由现金流已进入压力区。** 2026Q1 流动比率 1.15、可用授信 NT$419.4bn（约 $13.3bn）、净负债/权益 0.40；但 Q1 经营现金流 NT$36.4bn 低于固定资产现金支出 NT$44.1bn，TTM 自由现金流约 -$0.46bn。管理层预计 2026 资金缺口主要靠新增借款，2027 仍可能是更重的 capex 年。结论是“中等偏健康、扩张性承压”，不是财务困境，也不是轻资产高自由现金流模式。[A01][A08][M01]
+8. **估值已把相当多的 AI 上行提前计价。** 截至 2026-07-10 最近收盘，ASX 为 $42.66，市值约 $92.3bn；数据商口径 TTM PE 62.46x、forward PE 34.98x、PS 4.40x。过去 52 周股价上涨约 312%。按四个已披露季度 ADS 基本 EPS 简单相加约 $0.703，自算 PE 约 60.7x，与数据商略有口径差异。投资人现在买入的不是传统 10–15x 周期 OSAT，而是“2027 LEAP 再加速、毛利率上台阶、产能全部被吸收”的预期。[M01]
+9. **本报告的一年后情景：**以 2027 年化收入为口径，LEAP 基准/乐观/极度乐观分别为 $5.4bn/$6.3bn/$7.5bn；集团收入约 $27.7bn/$29.8bn/$32.5bn，相对本报告估算的 2026 年约 $25.0bn 增长 11%/19%/30%。概率权重 50%/35%/15% 时，集团收入约 $29.2bn、增长约 17%，LEAP 约 $6.0bn。极度乐观不是基准估值，应要求客户量产、良率、设备到位和机架交付同时兑现。
+10. **最终判断：公司质量强、行业位置稀缺、股票安全边际弱。** 业务层面的最强多头证据是 LEAP 目标上调、Q2 超指引、测试和厂房同步扩产、客户要求区域化产能；最强空头证据是无正式 backlog、capex 先于收入、CPO/FOPLP 尚早、台湾集中、客户和 foundry 依赖，以及 60x 以上 TTM PE。适合用季度里程碑验证，不适合只凭“先进封装短缺”无限外推。
+
+## 研究口径、证据等级与防重复规则
+
+### 证据等级
+
+| 等级 | 定义 | 本报告用途 |
+|---|---|---|
+| A | SEC/公司财报、公司官方产品页、客户官方公告 | 财务、产品规格、正式产能和量产阶段 |
+| B | Reuters、Taipei Times、TrendForce 正式研究、会议资料 | 行业供需、客户和竞争交叉验证 |
+| C | 供应链媒体、未署名渠道、报价传闻 | 只用于验证方向和情景，不当作确认订单 |
+| M | 本报告模型 | 单位内容量、未披露收入、订单覆盖、取消率和未来情景 |
+
+### 防重复规则
+
+- LEAP 总收入是父项；LEAP 封装、LEAP 测试是其拆分。
+- 全流程 LEAP、FOPLP 和 CPO 封装测试均是 LEAP 的潜在子集，不能与 LEAP 再相加。
+- USI AI 服务器/加速卡/电源/光模块属于 EMS；USI 光模块是 AI EMS 的子集。
+- “computing 应用收入”不等于 AI 收入；其中还包括服务器、PC、网络和其他计算产品。
+- CoWoS 是 TSMC 平台名称。ASE 的正式自有方案是 VIPack、FOCoS、FOCoS-Bridge、FOPoP、2.5D/3D、CPO；ASE 可承接 CoWoS 的部分外包工序，但不能把全部 CoWoS 价值归给 ASE。
+
+## 一、整体业务、投资人定位与产业链位置
+
+### 1.1 公司到底做什么
+
+ASE Technology Holding（日月光投控）由 ASE、SPIL（矽品）和 USI（环旭电子）等组成。其价值链横跨晶圆完成后的大部分后段制造，并继续向板卡、模块和系统装配延伸。[A07]
+
+晶圆厂/IDM → 前端工程测试 → wafer probe/sort → bumping/RDL → 2.5D/3D/FOCoS/SiP 封装 → final test/SLT → USI 板卡、光模块、电源与系统 EMS → 服务器/网络设备/终端客户。
+
+| 业务 | 主要内容 | 2026Q1 集团收入 | 2026Q1 占比 | 可见利润率 | AI 相关性 |
+|---|---|---:|---:|---:|---|
+| Packaging | wafer bump、flip chip、WLP、SiP、wire bond、FOCoS、2.5D/3D、基板整合 | NT$88.981bn | 51.2% | 未单拆；ATM GM 26.0% | 最高；AI accelerator/HBM/网络芯片先进封装 |
+| Testing | wafer sort/probe、KGD、final test、burn-in、系统级测试 | NT$21.041bn | 12.1% | 未单拆；复杂测试通常高于 ATM 平均 | 最高；HBM4、大功率 XPU、chiplet 使测试插入点增加 |
+| EMS/USI | 通信、计算、消费、工业、汽车板卡和模块，含 AI accelerator board、server board、HVDC/PDU、光模块 | NT$61.361bn | 35.3% | EMS GM 9.5%、OM 3.1% | 中等且上升；Q1 computing mix 升至 15% |
+| 其他/材料 | interconnect material、其他服务 | NT$2.279bn | 1.3% | 未单拆 | 间接 |
+
+数据来自公司 2026Q1 6-K；ATM 业务口径含集团内部交易，因此 ATM 的 NT$112.434bn 与集团封装加测试并不完全相等。[A01]
+
+### 1.2 投资人过去和现在如何看它
+
+| 阶段 | 市场心智 | 合理关注点 |
+|---|---|---|
+| 传统阶段 | 全球最大 OSAT、台湾半导体周期股、带股息；一半利润来自封测，一大块收入来自低毛利 EMS | 手机/PC 周期、利用率、汇率、金线/基板成本、capex |
+| 2024–2025 | TSMC CoWoS 产能外溢的受益者；先进封装和测试占比开始提高 | LEAP 收入、wafer-on-substrate、先进测试、客户份额 |
+| 2026 当前 | AI 后段制造“压力释放阀”、SPIL 的头部 GPU 客户关系、全流程封装测试平台、TSMC 之外的规模化补充 | 产能交付、良率、LEAP 2027 增量、定价、capex/FCF |
+| 估值隐含 | 从传统 OSAT 重估成 AI 基建关键瓶颈 | 任何产能延迟、客户二供、AI capex 放缓都会触发估值压缩 |
+
+2024 年 TrendForce 的前十大 OSAT 营收表中，ASE Holdings 以 $18.54bn 居首，占前十总营收近 45%；该口径包含集团 EMS，不应误写成纯 ATM 全球份额，但足以说明规模优势。[B05]
+
+### 1.3 最近三年的重大业务变化、转型与收购
+
+| 日期 | 事件 | 金额/产能事实 | 战略含义 |
+|---|---|---|---|
+| 2023-10 | USI 完成收购 TE Connectivity 汽车无线业务并整合为 Hirschmann Car Communication | 对价约 $71.5m；德国、匈牙利、中国制造布局 | EMS 从消费/通信向汽车连接和全球化扩展；不是 AI 主线，但降低单一终端依赖 [P15] |
+| 2024-08 | 收购 Infineon 的 Cavite（菲律宾）和 Cheonan（韩国）后段厂 | 约 1,200 名员工；五年供应安排，ASE 接管并可服务其他客户 | 以“厂房 + 锚定客户 + 长期供货”方式扩大汽车/功率封测，验证 IDM 外包趋势 [P14] |
+| 2025-02 | ASE Malaysia P5 启用 | 马来西亚面积由约 1.0m sq ft 扩至约 3.4m sq ft | 增加台湾以外封装测试弹性，服务 power、sensor、memory、汽车和部分先进需求 [P16] |
+| 2025-10 至 2026-05 | 收购 ADI Penang 680,000 sq ft 工厂并完成整合 | 原协议含长期供应和共同投资；ASE Malaysia 官方页显示 2026-05 已纳入集团 | 获取现成厂房、人员和 ADI 锚单，为非台湾高性能模拟/混合信号/数字封测扩容 [P13] |
+| 2025 全年 | LEAP 从试点变成可量化业务 | 2024 $0.6bn → 2025 $1.6bn；2025 占 ATM 约 13%；测试业务同比约 +36% | 公司利润结构由通用封装向 AI 先进封装和测试迁移 [A03][B01] |
+| 2026-01 | USI 子公司取得 EugenLight 控股权 | 对价未披露；EugenLight 有 800G/1.6T 光引擎、ELSFP、ITLA/OSA 能力 | 把 ASE 光电封装、USI 模块量产、EugenLight 光引擎拼成 NPO/CPO/机架光互联链条 [P09] |
+| 2026-03 至 05 | 高雄先进封装/测试密集扩产 | NT$17.8bn 两栋新楼；Renwu 联合项目投资 >NT$108.3bn、满产年产值约 NT$177.3bn；WUS 合作厂 113,000㎡、2029 完工 | 厂房、测试、基板/板厂和 161kV 电力同时布局，服务 2027–2029，而非只补一个季度 [P10][P11][P12] |
+| 2026-05 | 发布自动化 310×310mm panel line | FOCoS 2/2µm、FOCoS-Bridge 8/8µm，可用面积 96,100mm²；官方目标 2027H1 生产 | 为超大包体、材料利用率和成本下降建立 2027 期权；尚未证明 AI GPU 高量良率 [P04] |
+| 2026 全年 | 资本开支和产能战略切换 | capex $7.0bn → $8.5bn；集团推进 15 个新建/扩建项目 | 从“逐台加设备”转向整套 LEAP line、厂房和全球区域化供给，折旧与债务先上升 [A08][B03] |
+
+### 1.4 产业链位置：优势和依赖同时存在
+
+**优势：**
+
+- 全球最大 OSAT 规模、ASE 与 SPIL 双平台、完整测试 installed base。
+- 能把 package design、substrate、bump、RDL、assembly、wafer sort、final test 与 USI 系统制造串起来。
+- 头部客户验证和量产数据库形成 9–18 个月认证壁垒，完整切换通常需要 12–24 个月；项目内先进封装设备/混合键合研究也把 qualification、KGD、placement、overlay 和 rework 列为放量约束。[L03]
+- 台湾南部 foundry、基板、ATE、ODM 和光电生态密集，工程迭代速度快。
+- VIPack 不是单一工艺，而是 FOPoP、FOCoS、FOCoS-Bridge、FOSiP、TSV 2.5D/3D 和 CPO 六个支柱加 co-design 工具。[P01]
+
+**依赖：**
+
+- 先进逻辑 wafer、CoWoS 主平台和客户节奏仍由 TSMC/芯片设计商控制。
+- HBM、ABF substrate、先进设备和光学 KGD 均可能成为 ASE 无法自行解决的外部瓶颈。
+- ATM 前五大客户占 2026Q1 收入 43%，前十大 58%；EMS 前五大 64%、前十大 71%。[A01]
+- 台湾产能集中带来地震、水电、地缘和出口管制尾部风险。
+
+## 二、当前股价、估值、增长、利润率与资产负债表
+
+### 2.1 2026-07-12 估值快照
+
+2026-07-12 是周日，最新可交易价格采用 7 月 10 日常规时段收盘，不用盘后价。
+
+| 指标 | 最新值 | 日期/口径 | 解读 |
+|---|---:|---|---|
+| 股价 | $42.66 | 2026-07-10 16:00 ET 收盘；盘后 $42.98 | 过去 52 周约 +311.8%，AI 重估幅度很大 [M01] |
+| 市值 | $92.29bn | 数据商 2026-07-12 更新 | 直接按普通股/ADS 2:1 和收盘价交叉计算约 $93.6bn；差异来自有效流通/库存股口径 [M01][M02] |
+| Enterprise Value | $97.71bn | 2026-07-12 | 反映约 $4.5–4.8bn 净负债 [M01] |
+| TTM PE | 62.46x | 数据商口径 | 四个已披露季度 ADS basic EPS 合计约 $0.703，自算约 60.7x；应把数据商口径差异视为约 3% [M01] |
+| Forward PE | 34.98x | 2026-07-12，一致预期仅 2 位分析师 | 样本薄，不能当作高置信度市场共识 [M01] |
+| PS | 4.40x | TTM | 对传统 OSAT 很高，要求 LEAP mix 和利润率持续抬升 |
+| EV/EBITDA | 24.85x | TTM | 已接近高成长半导体平台估值，而非代工周期股 |
+| TTM 收入 | $20.98bn | 最近四个完整季度 | 同比约 +9.8% [M01] |
+| 最新完整季度收入增速 | +17.2% | 2026Q1，NT$口径 | ATM +29.7%，EMS -0.7% [A01] |
+| 最新营收快报增速 | +26.7% | 2026Q2，NT$口径；美元 +25.1% | ATM +36.3%；完整利润率待 7 月 30 日财报 [A02] |
+| TTM 毛利率 | 18.51% | 2025Q2–2026Q1 | 2026Q1 单季已升至 20.1% [M01][A01] |
+| TTM 营业利润率 | 8.74% | 同上 | 2026Q1 10.1% |
+| TTM 净利率 | 7.04% | 同上 | 2026Q1 8.15% |
+| 股息率 | 0.73% | 2026-07-12 | 当前投资逻辑已不是高股息 |
+
+**估值判断：**公司基本面正在加速，但股价对“2027 LEAP 至少 $5.4bn、ATM 毛利率持续高于历史区间、capex 最终产生高利用率”已有明显预期。若 2027 集团收入仅增长约 10%、ATM 毛利率停在 26% 附近，60x TTM PE 很难靠普通周期修复消化；若 LEAP 达 $6–7bn 且测试占比提高，forward PE 才有机会通过盈利而非股价下跌压缩。
+
+### 2.2 资产负债表与现金流健康度
+
+| 指标 | 2026-03-31 | 美元换算/趋势 | 判断 |
+|---|---:|---:|---|
+| 现金及现金等价物 | NT$87.811bn | $2.79bn | 较 2025 年末下降 NT$4.7bn |
+| 流动金融资产 | NT$26.141bn | $0.83bn | 合计可动用现金类约 $3.61bn |
+| 应收账款 | NT$126.007bn | $4.00bn | QoQ +0.8%，低于资产扩张速度 |
+| 存货 | NT$76.043bn | $2.41bn | QoQ +9.6%，而收入 QoQ -2.4%；新线和需求增长可解释，但需看 Q2 周转 |
+| 流动资产/流动负债 | NT$337.698bn/294.502bn | 营运资本约 $1.37bn | 流动比率 1.15，缓冲不厚 |
+| 固定资产 | NT$459.470bn | $14.57bn | QoQ +9.1%，重资产扩张已体现在账上 |
+| 总计息债务 | 约 NT$265.3bn | 约 $8.41bn | 公司电话会口径；gross debt/EBITDA 数据商约 2.0x |
+| 净负债/权益 | 0.40x | 2025 年末 0.46x | 尚可控，但 2026 借款将上升 |
+| 未用授信 | NT$419.386bn | $13.30bn | 远高于短期资金缺口，流动性充足 |
+| Q1 经营现金流 | NT$36.387bn | $1.15bn | 盈利现金化正常 |
+| Q1 固定资产现金支出 | NT$44.092bn | $1.40bn | 单季自由现金流约 -$0.24bn |
+| TTM 自由现金流 | — | 约 -$0.46bn | OCF $4.96bn、capex $5.42bn；2026 $8.5bn capex 会继续施压 [M01] |
+
+**健康度评分：3.5/5，中等偏健康、扩张性承压。**
+
+- **不会因为 2026 扩产立即出现偿债危机：**未用授信约 $13.3bn、ATM 盈利快速增长、利息保障倍数约 7.5x。
+- **但债务和折旧是现实成本：**管理层明确表示 2026 资金缺口主要由新增借款填补，且 2027 capex 更可能继续增长。[A08]
+- **最重要的资产负债表变量不是绝对债务，而是新 LEAP 线的收入爬坡。** 若 Q4 收入按计划开始、2027 利用率达到 85% 以上，新增折旧可被 mix 和价格覆盖；若 qualification 延迟两个季度，负自由现金流和净负债会同时扩大。
+- **库存风险目前为黄灯而非红灯。** Q1 库存增速快，但 Q2 集团/ATM 营收分别环比 +10.0%/+12.2%，说明至少部分库存和在制品已转为出货；完整 Q2 资产负债表仍需验证。
+
+## 三、最近五个完整财报季度与 2026Q2 财报后验证
+
+### 3.1 集团损益：五个完整季度
+
+| 财报季度 | 集团收入 NT$bn | YoY/QoQ | 毛利率 | 营业利润率 | 归母净利 NT$bn | 净利率 | 关键变化 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 2025Q1 | 148.153 | +11.6%/-8.7% | 16.8% | 6.5% | 7.554 | 5.1% | ATM 抵消淡季，LEAP/测试开始加速；汇率和节假日压制利润 |
+| 2025Q2 | 150.750 | +7.5%/+1.8% | 17.0% | 6.8% | 7.521 | 5.0% | ATM +19.0%，但新台币升值和 EMS 下滑限制利润 |
+| 2025Q3 | 168.569 | +5.3%/+11.8% | 17.1% | 7.8% | 10.870 | 6.4% | 测试机和 computing mix 继续上升；EMS 仍同比下降 |
+| 2025Q4 | 177.915 | +9.6%/+5.5% | 19.5% | 9.9% | 14.713 | 8.3% | ATM GM 跳升至 26.3%，LEAP、测试、利用率和汇率共同抬升 |
+| 2026Q1 | 173.662 | +17.2%/-2.4% | 20.1% | 10.1% | 14.148 | 8.15% | ATM 淡季逆势环增、LEAP mix 高；新线折旧已先于收入 |
+
+来源为公司各季度 SEC 6-K。[A01][A03][A04][A05][A06]
+
+### 3.2 各业务收入、增速和利润率
+
+| 财报季度 | Packaging NT$bn / YoY | Testing NT$bn / YoY | EMS 集团口径 NT$bn / YoY | ATM 收入 NT$bn / GM / OM | EMS 经营口径 NT$bn / GM / OM | ATM/EMS computing mix |
+|---|---:|---:|---:|---:|---:|---:|
+| 2025Q1 | 68.411 / +15.1% | 16.004 / +32.2% | 61.860 / +4.3% | 86.668 / 22.6% / 9.6% | 62.295 / 8.9% / 2.6% | 22% / 11% |
+| 2025Q2 | 73.659 / +17.2% | 16.612 / +31.6% | 58.374 / -7.1% | 92.565 / 21.9% / 9.5% | 58.770 / 9.4% / 2.6% | 24% / 11% |
+| 2025Q3 | 79.806 / +15.4% | 18.420 / +30.4% | 68.405 / -8.6% | 100.289 / 22.6% / 10.8% | 69.022 / 9.2% / 3.7% | 25% / 9% |
+| 2025Q4 | 86.465 / +23.0% | 20.863 / +32.8% | 68.555 / -7.7% | 109.707 / 26.3% / 14.7% | 68.991 / 9.0% / 2.8% | 25% / 11% |
+| 2026Q1 | 88.981 / +30.1% | 21.041 / +31.5% | 61.361 / -0.8% | 112.434 / 26.0% / 14.1% | 61.875 / 9.5% / 3.1% | 27% / 15% |
+
+**最清楚的结构变化：**
+
+- Packaging 与 Testing 连续五季实现两位数增长，2026Q1 分别达到 +30.1% 和 +31.5%。
+- 测试增长比集团收入稳定得多，验证 chiplet/HBM/高功率 XPU 的测试内容量增加。
+- EMS 2025Q2–Q4 连续负增长，但 2026Q1 computing mix 从 11% 升至 15%，公司称主要来自新 AI accelerator 产品；这意味着 EMS 总收入平淡掩盖了内部产品升级。[A08]
+- ATM 毛利率从 2025Q2 的 21.9% 升至 2026Q1 的 26.0%，利润弹性远大于收入增速；但其中也包含汇率、利用率和产品 mix，不应全部归因于定价。
+
+### 3.3 订单、交期、B2B、取消率与产能代理：公司披露和推断分开
+
+| 财报季度 | Backlog/Bookings/B2B | 交期/取消率 | 集团设备 capex | 测试机/打线机 | AI/leading-edge 收入占比估计 | 可验证的订单与产能信号 |
+|---|---|---|---:|---:|---:|---|
+| 2025Q1 | 未披露 | 未披露 | $892m | 6,686 / 25,222 | 约 5–8% | ATM +17.3%；测试 +32%；computing mix 升至 22% |
+| 2025Q2 | 未披露 | 未披露 | $992m | 6,797 / 25,156 | 约 6–9% | ATM +19%；测试机继续增加；先进需求抵消 EMS 下滑 |
+| 2025Q3 | 未披露 | 未披露 | $779m | 7,066 / 25,120 | 约 7–11% | ATM +16.9%；渠道称 flip-chip/wafer bumping 接近满载、客户预订产能 [C02] |
+| 2025Q4 | 未披露 | 未披露 | $733m | 7,359 / 25,001 | 约 9–13% | 2025 LEAP 达 $1.6bn；公司称 2026 需求显著超过供给 |
+| 2026Q1 | 未披露 | 未披露 | $1,003m | 7,585 / 24,926 | 约 13–18% | 综合利用率约 80%；LEAP/new line 安装压低表观利用率；设施和 wafer sort 均紧 |
+
+注：
+
+1. AI/leading-edge 占比是本报告根据全年 LEAP、季度 ramp、ATM computing 与 EMS AI accelerator mix 反推的区间，不是公司披露；LEAP 本身也可能含少量非 AI。
+2. 打线机数量缓慢下降而测试机快速增加，说明资本从传统 wire bond 向高复杂测试倾斜。
+3. 公司没有提供 backlog、book-to-bill、bookings、标准 lead time 或取消率。任何精确数字只能是模型，不得写成管理层披露。
+4. 对已完成 qualification 的 AI accelerator 项目，本报告估计未来 12 个月取消率约 0–5%，产能预订窗口约 2–4 个季度；对通用封装估计取消/调整率 5–10%。依据是高价值 wafer/HBM/package 的联合排程和切换成本，置信度为 M。
+
+### 3.4 2026Q2 营收快报：对 Q1 指引的第一次硬验证
+
+| 指标 | Q1 指引 | 2026Q2 实际 | 相对指引 |
+|---|---:|---:|---|
+| 集团收入 | QoQ +7% 至 +9% | NT$191.064bn，QoQ +10.0%，YoY +26.7%；$6.050bn | 超上限 1.0ppt |
+| ATM 收入 | QoQ +9% 至 +11% | NT$126.148bn，QoQ +12.2%，YoY +36.3%；$3.994bn | 超上限 1.2ppt |
+| 集团毛利率 | QoQ +20 至 +100bps | 尚未发布 | 不能用营收快报推算 |
+| ATM 毛利率 | 26% 至 27% | 尚未发布 | 7 月 30 日验证 |
+| EMS | YoY 至少 +10%，OM 接近 2025Q2 | 集团与 ATM 残差约 NT$64.9bn，约等于 YoY +10.5%，但不是正式 EMS 分部数 | 方向吻合，待完整财报 |
+
+Q2 快报是当前最重要的短期正证据：需求在新增产能尚未完全于 Q4 贡献前已超过收入指引。它仍不能证明毛利率、良率和自由现金流同步超预期。[A02]
+
+## 四、2026 最新指引、业务收入占比与重点产品
+
+### 4.1 2026Q1 业务 mix
+
+| 维度 | 2026Q1 mix | 与 2025Q1 对比 | 含义 |
+|---|---:|---:|---|
+| 集团 Packaging/Testing/EMS/Other | 51%/12%/36%/1% | 46%/11%/42%/1% | 高毛利 ATM 挤压低毛利 EMS 占比 |
+| ATM application：Communication/Computing/Other | 43%/27%/30% | 48%/22%/30% | computing 五个季度提高 5ppt |
+| ATM service：Bump/FC/WLP/SiP | 49% | 46% | 先进互连和 SiP mix 提升 |
+| ATM service：Wire bond | 24% | 28% | 传统业务占比下降，但绝对需求并未崩塌 |
+| ATM service：Testing | 19% | 18% | 测试增长快于 ATM，总量和价值量均上升 |
+| EMS application：Computing | 15% | 11% | 新 AI accelerator 产品拉动 |
+
+按 Q1 收入和 application mix 计算：
+
+- ATM computing 约 NT$30.36bn，约 $0.96bn；
+- EMS computing 约 NT$9.28bn，约 $0.29bn；
+- 两者合计约 $1.26bn，占集团 Q1 收入约 22.8%，但这不是纯 AI 收入。
+- 本报告估计 Q1 直接 AI/leading-edge 约 $0.7–1.0bn，占集团约 13–18%；全年因 LEAP 收入后置 Q4，2026 全年可能升至约 17–20%。
+
+### 4.2 2026 指引和公司资源倾斜
+
+| 项目 | 最新指引/事实 | 最重要的含义 |
+|---|---|---|
+| LEAP | 2026 超过 $3.5bn，较 2025 $1.6bn 至少 +119% | 集团最突出业务；约占本报告估算 2026 ATM 收入 22%、集团收入 14% |
+| LEAP 组成 | 75% packaging、25% test；test 内 75% wafer sort、25% final test | 对应约 $2.63bn packaging、$0.88bn test；wafer sort 约 $0.66bn |
+| Full-process LEAP | 2026 目标 $300m，收入主要在 Q4；多个客户要求产能 | 当前小、增长最快、最能提高 ASE 独立平台价值；也是最大 ramp/yield 风险 |
+| Mainstream ATM | 2026 维持约 13% 增长 | AI peripheral、传统先进封装、wire bond/汽车工业恢复共同支撑 |
+| 2026 capex | $8.5bn；新增 $0.9bn 厂房基础设施、$0.6bn 设备 | 设备大部分为 LEAP/wafer sort，更多为 2027 做准备 |
+| 2027 LEAP | 管理层称增量收入将高于 2026 年约 $1.9bn 的增量，但未给数 | $5.4bn 是按管理层语言推导的模型下沿，不是正式指引 |
+| CPO | 与 upstream foundry 和终端客户共同开发；先 packaging，后更复杂的 test；无收入数和时间 | 技术重要性高、当前财务贡献低 |
+| FOPLP | 自动 pilot line 正在 customer qualification；官方称 2027H1 生产 | 渠道称 2026 年末小量，报告基准仍采用更正式的 2027H1 |
+
+来源为 Q1 电话会和公司正式公告；电话会自动转录可能有文字错误，数值均与财报/媒体交叉核验。[A08][P04]
+
+### 4.3 产品与型号/平台地图
+
+| 业务 | 产品/平台 | 已公开规格或状态 | 2026 收入/利润率判断 |
+|---|---|---|---|
+| LEAP advanced packaging | wafer-on-substrate、bumping、flip chip、RDL、2.5D/3D、TSV、SiP | 2026 目标 >$3.5bn 的主体 | Packaging 子项约 $2.63bn；模型 GM 28–36%，取决于外包工序和良率 |
+| VIPack | FOPoP、FOCoS-CF/CL、FOCoS-Bridge、FOSiP、TSV 2.5D/3D、CPO | 六大支柱加 Integrated Design Ecosystem | 收入包含在 LEAP/通用 ATM，未单拆；设计绑定提高黏性 |
+| FOCoS | CF 2/2µm RDL；CL 可集成 ASIC+HBM；无需全尺寸硅 interposer | ADK 可使每轮 package planning/verification 时间缩短约 30–50% | AI ASIC/网络芯片的 CoWoS-like 替代/补充；模型 GM 28–38% [P02] |
+| FOCoS-Bridge | 已 qualification 的 70×78mm 包体可含 2 ASIC+8 HBM+8 bridges；TSV 版本 85×85mm test vehicle | bridge D2D edge density接近传统 organic flip-chip 约 200 倍；TSV 版本电阻/电感降 72%/50% | 大包体、高价值、小量先行；2026 财务未单拆 [P03] |
+| FOPoP | 纵向 fan-out PoP、PIC/controller/optics 集成 | 电路径缩短 3×、带宽密度最高 8×、6.4Tbps/unit、25→5pJ/bit | 更偏网络/硅光和移动高端封装；短期收入小于 FOCoS [P06] |
+| AI advanced test | front-end engineering、wafer sort/probe、KGD、final test、SLT | 测试机 7,585 台；Renwu 2027 两阶段投产；Singapore ramp 主要服务 AI test | 2026 LEAP test 约 $0.88bn；模型 GM 32–42%，高于 ATM 均值但未披露 |
+| Full-process LEAP | 从 bump/RDL 到 advanced package、sort/final 的 turnkey | 线体 tuning/qualification；2026 目标 $300m；多个客户请求 | Ramp GM 22–30%，稳态模型 30–40%；折旧先行 |
+| FOPLP | 310×310mm automated panel，FOCoS 2/2µm、Bridge 8/8µm | 可用面积 96,100mm²；官方 2027H1 production；ECTC 2026 发布 | 2026 工程/认证收入极小；初期 GM 20–30%，良率稳定后可 30–40% |
+| CPO/SiPh | >75×75mm CPO package、1.6/3.2T、EIC/PIC/FAU、double-side optical/electrical test | Demo <5pJ/bit；公司称 CPO 是 must-have 但仍早期 | 2026 < $50m 模型；先 packaging 后 test，稳态 GM 25–40% [P05][P17] |
+| USI AI compute | accelerator board、server motherboard、HVDC power supply/PDU、rack integration | EMS computing mix Q1 升至 15%；产品名/客户未单拆 | 2026 直接 AI EMS 模型 $0.7–1.2bn；GM 9–12% |
+| USI/EugenLight optics | USI 1.6T OSFP 2×DR4/DR8、3nm DSP、500m–2km；EugenLight 800G/1.6T engine、UHP ELSFP、400G LR4/ER4 OSA、ITLA | Vietnam 规划月产 100k 个 800G/1.6T SiPh transceiver；OFC 2026 展示 | 2026 模型 $0.05–0.15bn；module GM 10–18%，差异化 optical component 20–35% [P07][P08][P09] |
+| AI peripheral ATM | power management、connectivity、sensor、networking/communications chips 的封测 | 管理层称其抵消非 AI 某些软弱领域 | 2026 模型 $0.8–1.2bn；GM 25–32%，增长 20–35% |
+
+### 4.4 最重点业务与应明确跳过的低优先级业务
+
+**重点顺序：**
+
+1. LEAP advanced packaging；
+2. AI wafer sort/KGD/final test；
+3. full-process LEAP；
+4. FOCoS/FOCoS-Bridge 与 FOPLP；
+5. USI AI accelerator/server/HVDC；
+6. USI/EugenLight 800G/1.6T 光互联；
+7. CPO optical packaging/test；
+8. AI peripheral power/connectivity/sensor packaging。
+
+**本报告降低篇幅、但没有从财务模型删除的业务：**
+
+- 传统 wire-bond 封装：2026Q1 仍占 ATM 24%，需求回升但结构增速低于 LEAP；
+- 手机/传统通信封装：ATM communication 仍占 43%，但 mix 由 48% 下降；
+- EMS consumer 35%、communication 25%、automotive 9%、industrial 14% 的普通产品；
+- 普通低端 SiP、leadframe、成熟 RF/consumer module；
+- direct material 和低附加值 interconnect material；
+- 非 AI 汽车/工业恢复业务。它们是现金流和利用率底座，不是当前估值的主要增量来源。
+
+## 五、当前高增长或关键产品：收入贡献、增速与战略评分
+
+评分均为 1–5：5 表示对 AI 技术栈最关键、需求最紧急、供需最紧、最难替换或定价力最强。这里的“垄断力”指客户在一代产品周期内的不可替代程度，不表示法律或市场份额意义上的垄断。
+
+| 关键产品/业务 | 2026 收入贡献 | 2026 增速 | 模型毛利率 | AI 重要性 | 时间紧迫性 | 供需紧张 | 垄断/不可替代性 | 定价力 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| LEAP 总体（父项） | >$3.5bn | >+119% | 约 29–38% 混合模型 | 5 | 5 | 5 | 4 | 5 | 当前最核心增长引擎；公司供给上限而非需求决定收入 |
+| LEAP advanced packaging | 约 $2.63bn | 约 +119% | 28–36% | 5 | 5 | 5 | 4 | 5 | 大包体/HBM/RDL/bridge/on-substrate 是 AI accelerator 必需工序 |
+| LEAP AI test | 约 $0.88bn | 约 +119% | 32–42% | 5 | 5 | 5 | 4 | 4 | wafer sort 约 $0.66bn，设施和设备均紧；测试价值量增速可能高于芯片颗数 |
+| Full-process LEAP（LEAP 子项） | 约 $0.30bn | 新业务，至少翻倍级 | Ramp 22–30%；稳态 30–40% | 5 | 4 | 5 | 4 | 4 | 多客户请求，Q4 ramp；良率和折旧是主要风险 |
+| FOCoS/FOCoS-Bridge | 包含于 LEAP，模型 $0.25–0.60bn | +40–80% | 28–38% | 5 | 4 | 4 | 4 | 4 | 能绕开全尺寸 interposer 成本，适合 custom ASIC/HBM；客户 SKU 未披露 |
+| 310mm FOPLP（LEAP 子项） | < $0.05bn 工程/认证 | 不适用 | Ramp 20–30% | 4 | 3 | 3 | 3 | 3 | 2027 期权；panel 利用率优势明确，HVM 良率尚未证明 |
+| CPO/SiPh package + test（LEAP 子项） | < $0.05bn 模型 | 不适用 | 25–40% 稳态模型 | 4 | 2 | 2 | 3 | 3 | 技术 must-have、财务仍很早；先交换侧、后 XPU package |
+| USI AI compute/HVDC EMS | $0.7–1.2bn 模型 | +35–70% | 9–12% | 4 | 4 | 3 | 2 | 2 | 收入弹性高但 EMS 议价弱；AI accelerator board 是 Q1 computing mix 上升原因 |
+| USI/EugenLight optical（AI EMS 子项） | $0.05–0.15bn 模型 | 新 ramp | module 10–18%；差异化 engine/laser 20–35% | 4 | 4 | 4 | 2–3 | 3 | 月产 100k 的目标产能很大，真正约束是客户 qualification、光学良率和订单 |
+| AI peripheral ATM | $0.8–1.2bn 模型 | +20–35% | 25–32% | 3 | 4 | 3 | 3 | 3 | 易被忽略的小业务；power/connectivity/sensor 随每 rack 芯片数增加 |
+
+**为什么 ASE 没有 5/5 的“垄断力”：**
+
+- TSMC CoWoS、Amkor HDFO/SWIFT、JCET XDFOI、Intel EMIB/Foveros、Samsung I-Cube/X-Cube 都是替代或竞争路径。
+- 客户可以在下一代芯片导入二供，但无法在已经 tape-out、完成 SI/PI/thermal/test qualification 的一代产品中快速切换。
+- ASE 的护城河不是单一专利，而是规模、量产数据库、turnkey、SPIL/ASE 双平台、测试 installed base 和客户认证的组合。
+
+## 六、一年后收入贡献：基准、乐观与极度乐观
+
+### 6.1 情景定义
+
+“一年以后”采用 2027 年化收入/2027 财年近似口径。2026 基线是本报告根据 Q1、Q2 快报、公司全年 LEAP 指引和 H2 ramp 建模，不是公司完整年度指引。
+
+| 情景 | 核心假设 | 概率权重 |
+|---|---|---:|
+| 基准 | LEAP 2027 增量略高于 2026 的 $1.9bn；新增工具 Q4 到位、2027H1 正常 qualification；AI rack 电力/液冷造成部分交付时滞 | 50% |
+| 乐观 | 多个 full-process 客户按期、wafer sort 不再是硬约束、FOCoS/FOPLP 获至少两个高量客户、USI AI compute/optics 顺利放量 | 35% |
+| 极度乐观 | Rubin/custom ASIC/HBM4/1.6T/CPO 同时超预期；新线良率快速成熟；供需缺口 >20% 且价格溢价维持；没有机架验收瓶颈 | 15% |
+
+### 6.2 关键业务收入情景
+
+| 产品/业务 | 2026 基线 | 2027 基准 | 2027 乐观 | 2027 极度乐观 | 是否可与父项相加 |
+|---|---:|---:|---:|---:|---|
+| LEAP 总体 | >$3.5bn | $5.4bn，+54% | $6.3bn，+80% | $7.5bn，+114% | 父项 |
+| LEAP packaging | $2.63bn | $3.8bn，+45% | $4.4bn，+68% | $5.1bn，+94% | LEAP 拆分，不另加 |
+| LEAP test | $0.88bn | $1.6bn，+83% | $1.9bn，+117% | $2.4bn，+174% | LEAP 拆分，不另加 |
+| Full-process LEAP | $0.30bn | $0.80bn，+167% | $1.30bn，+333% | $2.00bn，+567% | LEAP 子项 |
+| FOCoS/FOCoS-Bridge | $0.25–0.60bn | $0.65bn | $1.05bn | $1.60bn | LEAP packaging 子项 |
+| FOPLP | < $0.05bn | $0.10bn | $0.35bn | $0.75bn | LEAP packaging 子项 |
+| CPO package/test | < $0.05bn | $0.08bn | $0.25bn | $0.60bn | LEAP 子项 |
+| USI AI compute/HVDC | $0.7–1.2bn | $1.4bn | $2.0bn | $2.8bn | EMS 独立父项 |
+| USI/EugenLight optical | $0.05–0.15bn | $0.30bn | $0.60bn | $1.10bn | AI EMS 子项 |
+| AI peripheral ATM | $0.8–1.2bn | $1.15bn | $1.40bn | $1.70bn | 多数在 mainstream ATM |
+
+**LEAP 基准 $5.4bn 的推导：**2025 $1.6bn → 2026 >$3.5bn，增量约 $1.9bn；管理层称 2027 增量会更强，但不提供正式数字。把 $1.9bn 仅作为下一年增量下沿，可得 $5.4bn。该数字是合理推导，不是公司指引。[A08]
+
+### 6.3 一年后战略评分
+
+下面每个向量依次为：重要性/紧迫性/供需紧张/不可替代性/定价力。
+
+| 产品/业务 | 基准 | 乐观 | 极度乐观 | 分数变化的触发因素 |
+|---|---|---|---|---|
+| LEAP advanced packaging | 5/5/4/4/4 | 5/5/5/4/5 | 5/5/5/4/5 | 大尺寸 package 数量、TSMC 外溢、ASP 与良率 |
+| AI test | 5/5/5/4/4 | 5/5/5/4/5 | 5/5/5/5/5 | HBM4/多 chiplet 测试时长、wafer sort utilization、final test 赢单 |
+| Full-process LEAP | 5/4/4/4/4 | 5/5/5/4/4 | 5/5/5/5/5 | 多客户 HVM、turnkey yield、全流程责任边界 |
+| FOCoS/Bridge | 5/4/4/4/4 | 5/5/5/4/4 | 5/5/5/5/5 | 高量 custom ASIC design-in、bridge/TSV 良率 |
+| FOPLP | 4/3/3/3/3 | 5/4/4/4/4 | 5/5/5/4/5 | 2027H1 HVM、panel warpage、客户完成量产认证 |
+| CPO package/test | 4/2/2/3/3 | 5/4/4/4/4 | 5/5/5/4/5 | 交换侧 CPO 端口放量、KGOE、可维修 FAU 与光电测试 |
+| USI AI compute/HVDC | 4/4/3/2/2 | 5/5/4/3/3 | 5/5/5/3/3 | accelerator board SKU、HVDC 机架导入、客户份额 |
+| USI/EugenLight optical | 4/4/4/2/3 | 5/5/5/3/4 | 5/5/5/4/4 | 100k/月产线良率、1.6T qualification、CPO/NPO design-in |
+| AI peripheral ATM | 3/4/3/3/3 | 4/4/4/3/3 | 4/5/4/4/4 | 每 rack 电源/连接/传感器内容量和供给集中度 |
+
+### 6.4 集团收入和利润情景
+
+| 指标 | 2026 模型 | 2027 基准 | 2027 乐观 | 2027 极度乐观 |
+|---|---:|---:|---:|---:|
+| ATM 收入 | 约 $15.7bn | $18.5bn | $20.0bn | $21.9bn |
+| EMS 收入 | 约 $9.0–9.3bn | $9.2bn | $9.8bn | $10.6bn |
+| 集团收入 | 约 $25.0bn | $27.7bn，+11% | $29.8bn，+19% | $32.5bn，+30% |
+| ATM 毛利率 | 约 26–28% H2 exit | 26.5–28.0% | 28–30% | 30–32% |
+| 集团毛利率 | 约 20–21% | 21–22% | 22–23.5% | 24–25.5% |
+| 集团净利率 | 约 8–9% | 8–9% | 9–10.5% | 11–12.5% |
+| 自由现金流 | 负或接近零 | 仍受 capex 压制 | 收入 ramp 开始覆盖 capex | 高利用率下明显转正 |
+
+概率加权集团收入约 $29.2bn，较 2026 模型增长约 17%；概率加权 LEAP 约 $6.0bn。模型没有给出目标价，因为 2027 capex、折旧、汇率和 forward EPS 的误差足以使单点估值失真。
+
+## 七、BOM、每 MW/每 rack/每 GPU/每 optical port 内容量与价格传导
+
+### 7.1 AI accelerator package BOM
+
+项目内先进封装行业基线给出的整包价值结构如下；这是完整 AI accelerator package 的 BOM，不是 ASE 全部可确认收入。[L01]
+
+| 完整 package 成本项 | BOM 占比模型 | ASE 可捕获环节 | 定价/风险 |
+|---|---:|---|---|
+| Logic compute die | 28–40% | 不销售 die；只做 KGD、assembly/test | 由 fabless/foundry 定价，报废价值极高 |
+| HBM 与 base die | 35–50% | 不销售 HBM；可做 stack/package test 和集成 | HBM 配套不足会闲置其他封装产能 |
+| Interposer/RDL/LSI/ABF substrate | 8–14% | FOCoS RDL、bridge、substrate design/采购、on-substrate | 大尺寸、高层、细线宽已认证产品紧；项目内基板/RDL 研究同样指向认证产能而非普通板材短缺 [L06] |
+| Bump/TCB/hybrid bonding/assembly | 4–8% | ASE 核心收入 | 良率、翘曲、返工决定毛利 |
+| Package test/SLT/thermal validation | 4–8% | ASE 核心收入 | test seconds、ATE channel、socket/thermal 是瓶颈 |
+| Lid/TIM/thermal interface | 2–5% | 可采购/集成 | 液冷、1kW+ package 提高规格 |
+
+若只看封装服务成本，项目内基线约为：interposer/RDL/bridge 24%、ABF substrate 18%、bump/bond/assembly 18%、underfill/EMC/TIM/lid 10%、inspection/package test/SLT 14%、yield loss/rework/scrap 9%、其余为制造费用与利润。由此可见，ASE 的利润不是材料加价，而是把组合良率、测试和交付风险变成服务费。
+
+### 7.2 真实单位内容量：先给范围，再给公式
+
+公司不披露每 GPU/rack/MW 的价格。下表使用项目内 package ASP、公开系统 GPU 数与功率、ASE 正式产品规格建立区间；它是可复核模型，不是假装精确的合同价。
+
+| 产品/业务 | 每 GPU/ASIC ASE 收入内容量 | 每 72-GPU rack | 每 1MW IT load | 每 optical port | 说明 |
+|---|---:|---:|---:|---:|---|
+| LEAP 外包局部工序 | $0.5k–2.0k | $36k–144k | $0.16m–1.20m | 不适用 | 只承接 bump、WoS 或单一 test stage |
+| LEAP advanced packaging | $3.0k–8.0k | $216k–576k | $0.96m–4.80m | 不适用 | 大尺寸 2.5D/3D、8–12 HBM；不含 logic/HBM 销售额 |
+| AI wafer sort/final/SLT | $0.8k–2.5k | $58k–180k | $0.26m–1.50m | 不适用 | HBM/KGD/高功率 package 多测试插入点 |
+| Full-process LEAP | $4.8k–12.5k | $346k–900k | $1.54m–7.50m | 不适用 | packaging+test turnkey，上限只适用于最高复杂度包体 |
+| FOCoS/FOPLP packaging | $2.5k–7.0k | $180k–504k | $0.80m–4.20m | 不适用 | panel 规模化后单位成本可降 10–25%，但初期良率可能抵消 |
+| CPO package + optical test | 不宜按 GPU；每 102.4T switch package 约 $5k–14k | 网络共享，不直接对应单 rack | 取决于网络拓扑 | 约 $80–220/1.6T 等效端口 | 假设 16×6.4T engine、64×1.6T 等效端口；ASE 捕获 advanced package+test |
+| USI 800G/1.6T pluggable module | 不适用 | 全模块 billings 约 $14k–144k | $0.06m–1.20m | $0.8k–2.0k 全模块；制造 value-add 约 $80–250 | 假设 18–72 ports/rack；客户拓扑差异最大 |
+| USI AI board/HVDC/PDU EMS | $0.5k–1.8k | $36k–130k | $0.18m–1.08m | 不适用 | 不含 GPU/HBM；含 accelerator board、server board、PDU/HVDC 分摊 |
+| AI peripheral ATM | $5–30/GPU 分摊 | $0.4k–2.2k | $2k–18k | 少量 networking chip package | power/connectivity/sensor 多颗、单颗内容量小 |
+
+**换算假设：**
+
+- 典型 AI rack 采用 72 个 GPU 当量。
+- 120–227kW/rack 对应每 MW 约 4.4–8.3 racks，即约 320–600 GPU；基准可用 500 GPU/MW。
+- Optical port 采用 1.6T 等效；18–72 ports/rack 是 scale-out 拓扑敏感范围，不代表所有 NVL72 标配。
+- 最高区间不能套用于成熟 custom ASIC 或仅承接单一工序的项目。
+
+### 7.3 光学子系统 BOM 与 ASE 可捕获比例
+
+项目内光互联行业基线把不含宿主 switch ASIC/XPU 的 CPO/NPO 光学子系统成本归一为 100：[L05]
+
+| CPO/NPO 成本项 | 占比 | ASE/USI 捕获能力 |
+|---|---:|---|
+| PIC + EIC die | 25% | ASE 不制造核心 die；可做 KGOE、EIC/PIC integration |
+| CW/ELS laser 与驱动 | 18% | EugenLight ELSFP/光源形成小规模进入点 |
+| FAU/connector/fiber array | 17% | USI/EugenLight 可组装、active alignment；核心部件仍需外购 |
+| Advanced package/bond/substrate | 15% | ASE 核心能力 |
+| Test/burn-in/rework/yield loss | 20% | ASE 核心潜力，且当前最大可变成本 |
+| Control/thermal/mechanical | 5% | USI 系统集成能力 |
+
+若 ASE+USI 同时赢得 package、optical test、module assembly，可触达 BOM 的约 35–55%；若只赢先进封装，约 15%；若 USI 以 principal 模式销售完整模块，会确认更高收入但毛利仍接近 EMS。
+
+### 7.4 USI AI board/HVDC 的系统 BOM 模型
+
+| 不含 accelerator/HBM 的板卡与电源 BOM | 份额模型 | 价格传导 |
+|---|---:|---|
+| High-layer PCB/accelerator board/server motherboard | 35% | 铜箔、玻纤、ABF-like high-speed material 和层数涨价传给 USI，再传 OEM |
+| HVDC conversion/PDU/power module | 25% | 功率器件、磁性件、铜材和效率规格决定 ASP |
+| Connector/cable/backplane | 15% | 224G/400G electrical 和高电流连接器短缺可溢价 |
+| Thermal/mechanical | 15% | cold plate、机箱、结构件；由 rack 功率密度驱动 |
+| Assembly/test/logistics | 10% | USI 主要 value-add；客户规模大、议价强 |
+
+### 7.5 价格传导链
+
+1. Hyperscaler/fabless 锁定 AI chip 数量、HBM 和 package 规格；
+2. foundry 分配 wafer/CoWoS/相关前段产能，并将部分后段工序外包；
+3. HBM、ABF、gold、substrate、设备和折旧成本传到 ASE；
+4. ASE 的长期服务安排可传导 gold、substrate 等材料波动；在供不应求时还可按良率风险、优先供货和产能承诺定价，而非只做成本加成。[B01]
+5. ASE/USI 将 package/test/board/module 成本传给芯片商、网络设备商和云客户；
+6. 云客户最终以 GPU/系统采购价和每 MW 资本开支吸收。
+
+2026-07 的渠道消息称 ASE 对部分 CoWoS/FOCoS-like advanced packaging 报价提高超过 20%，涉及美国大客户；ASE 未正式确认，因此本报告只把它作为“价格环境友好”的 C 级验证，不把 20% 直接计入基准收入。[C01]
+
+## 八、当前产能、供应链采用与认证阶段
+
+认证阶段定义：0 概念；1 demo；2 engineering sample/pilot；3 customer qualification；4 volume-qualified/小量产；5 多客户 HVM。
+
+| 产品/业务 | 2026 当前美元收入产能 | 利用/供需 | 采用阶段 | 已知认证/客户证据 | 最关键约束 |
+|---|---:|---|---:|---|---|
+| LEAP 总体 | 约 $3.5–3.8bn | 需求显著超过供给；新线 Q4 贡献 | 4–5 | 2025 已 $1.6bn；2026 指引 >$3.5bn | 厂房、整套 line、upstream foundry、良率 |
+| LEAP packaging | $2.7–3.0bn | 高；部分工序/客户满载 | 4–5 | SPIL 与 NVIDIA 公开合作；TSMC 外溢为渠道共识 | 大包体 RDL/WoS、ABF、组合良率 |
+| AI test | $0.9–1.0bn | wafer sort 与 facility 均紧 | 4–5 | Singapore AI test ramp；测试机一年 +13.4% | tester、probe/handler、thermal、program |
+| Full-process LEAP | $0.3–0.4bn | line 正在 tuning，收入 Q4 后置 | 3–4 | 多个客户请求；2026 目标 $300m | turnkey yield、责任边界、折旧 |
+| FOCoS/Bridge | $0.4–0.7bn 模型 | 中高 | 3–4 | 70×78mm package 已 qualified；TSV test vehicle 已公开 | 高量客户 SKU、bridge/KGD/warpage |
+| 310mm FOPLP | < $0.1bn | pilot，不可用传统 utilization 衡量 | 2–3 | automated pilot/customer qualification；官方 2027H1 production | panel warpage、tool ecosystem、HVM yield |
+| CPO package/test | < $0.1bn | R&D/pilot | 2–3 | >75×75mm demo；与 foundry+end customer 开发 | KGOE、FAU、光电联合测试、维修性 |
+| USI AI compute/HVDC | $1.0–1.5bn 可服务产能模型 | 中高；客户/产品未拆分 | 4 | Q1 AI accelerator 使 EMS computing mix 15% | 客户集中、低毛利、板材/电源器件 |
+| USI optical | 100k modules/月目标对应年化全模块货值约 $0.96–2.4bn；2026 revenue-ready 仅约 $0.2–0.6bn | 设备产能大于已验证订单 | 2–3 | OFC 2026 展示；1.6T 产品/实验室/assembly flow；渠道称客户 qualification | 光学良率、订单、DSP/PIC/laser、active alignment |
+| AI peripheral ATM | $1.0–1.5bn 模型 | 中高 | 4–5 | 管理层称需求抵消部分非 AI 疲弱 | 分散 SKU、客户不披露 |
+
+**重要的具体项目：**
+
+- Renwu testing cluster：投资超过 NT$108.3bn，满产预计年产值约 NT$177.3bn；Phase I 2027-04、Phase II 2027-10。项目由 ASE、WinWay、HTT 协同，但投资和产值不等于全部归属于 ASE，不能直接当公司收入。[P10]
+- Nanzih 两栋新楼：NT$17.8bn，2028Q2 完成；一栋为物流，一栋为 high-end packaging/test 和 system validation。[P11]
+- WUS 合作厂：113,000㎡、2029-09 完成，聚焦 FOCoS/FCBGA，配 161kV substation。[P12]
+- Reuters 报道集团 2026 年推进 15 个新建/扩建项目，含 ASE 6 个、SPIL 7 个和 Innolux 取得厂房；这些主要为 2029 及以后，不应全计入 2027 产能。[B03]
+- 美国：SPIL 与 Amkor 被 NVIDIA 正式列为 Arizona packaging/testing 合作伙伴；ASE 还在客户要求下评估 Arizona 投资。它证明客户区域化要求，但不是已确认 capex 或收入。[B03][B06]
+
+## 九、一年后产能与认证：三种情景
+
+### 9.1 美元收入产能与采用阶段
+
+| 产品/业务 | 基准：2027 产能/阶段 | 乐观：2027 产能/阶段 | 极度乐观：2027 产能/阶段 |
+|---|---|---|---|
+| LEAP 总体 | $5.5bn / 5；新增工具正常 ramp | $6.6bn / 5；多客户高利用率 | $8.0bn / 5；追加 capex、全年 90%+ 利用率 |
+| LEAP packaging | $3.9bn / 5 | $4.6bn / 5 | $5.4bn / 5 |
+| AI test | $1.7bn / 5；Renwu Phase I/新 wafer sort | $2.1bn / 5；wafer+final 同时放量 | $2.7bn / 5；高功率 SLT/多温测试成为硬瓶颈 |
+| Full-process LEAP | $1.0bn / 4 | $1.6bn / 4–5 | $2.4bn / 5 |
+| FOCoS/Bridge | $0.8bn / 4 | $1.3bn / 4–5 | $2.0bn / 5 |
+| FOPLP | $0.15bn / 3–4 | $0.50bn / 4 | $1.00bn / 4–5 |
+| CPO package/test | $0.12bn / 3 | $0.40bn / 3–4 | $0.90bn / 4 |
+| USI AI compute/HVDC | $2.0bn / 4 | $3.0bn / 4–5 | $4.2bn / 5 |
+| USI optical | $1.2bn revenue-ready / 4 | $2.2bn / 4–5 | $3.2bn / 5；需要第二线或外协 |
+| AI peripheral ATM | $1.4bn / 5 | $1.8bn / 5 | $2.2bn / 5 |
+
+产能为“在合理 ASP、良率和利用率下可确认的年收入”，不是设备原值，也不是公司公开 capacity guidance。USI optical 的全模块货值可能远高于制造 value-add；若合同采用客户供料，确认收入会明显低于表中 principal 模式。
+
+### 9.2 未来认证里程碑
+
+| 产品 | 基准里程碑 | 乐观里程碑 | 极度乐观里程碑 |
+|---|---|---|---|
+| Full-process LEAP | 2026Q4 首批量产、2027H1 两个以上稳定客户 | 2027H1 AI accelerator 全流程 HVM | 多个 GPU/custom ASIC 平台跨客户复制 |
+| FOCoS/Bridge | 现有 qualified vehicle 转一个高量 SKU | 两个 hyperscaler ASIC/网络 SKU | 成为 CoWoS-L/R 之外规模化第二路径 |
+| FOPLP | 2027H1 小量 production、2027H2 volume qualification | 2027H1 直接进入两客户 HVM | 2027 年即用于超大 AI accelerator package |
+| CPO | packaging qualification，test program 仍开发 | 交换侧 3.2/6.4T engine package 量产 | XPU optical I/O 提前至 2027 HVM |
+| USI 1.6T module | IEEE/客户互操作、reliability、volume acceptance | 多家云/网络客户重复订单 | 100k/月高利用率并扩第二线 |
+| EugenLight ELSFP/engine | top-tier module vendor 扩量 | NPO/CPO design-in | 成为 CPO 外置光源/engine 核心二供 |
+
+官方 panel line 口径是 2027H1 production；2026-06 股东会渠道口径称 2026 年末可开始量产。基准采用更保守且正式的 2027H1，乐观情景才采用 2026 年末小量。[P04][C03]
+
+## 十、订单积压、供给与未来一年业务增速
+
+### 10.1 公司为何不披露 backlog，以及如何替代验证
+
+OSAT 多按客户 forecast、wafer release、capacity reservation 和长期服务安排交付，并不一定像设备商一样披露固定 backlog。ASE 的客户、价格和 package SKU 高度保密；因此应使用“需求覆盖、客户项目、capex、利用率、设备到位、交付窗口、取消风险”六项代理，而不是编造 B2B。
+
+### 10.2 订单/渠道证据矩阵
+
+| 证据 | 事实 | 证据等级 | 对订单的含义 | 不能推出什么 |
+|---|---|---|---|---|
+| LEAP 指引上调 | $3.2bn → >$3.5bn | A | 2026 需求和可交付能力同时上调 | 不等于 backlog 恰好 $3.5bn |
+| Q2 超指引 | 集团/ATM QoQ +10.0%/+12.2% | A | 当前出货强于 4 月排程 | 不证明毛利率和订单没有提前 |
+| 需求超过供给 | CFO 称若无产能约束还有上行 | A/B | 2026 LEAP demand coverage >1x | 未给客户、金额或取消率 |
+| 非 pull-in | 管理层称有限产能无法承接投机拉货，Q1 收入扎实 | A（电话会） | 降低 Q1 虚假繁荣风险 | 不排除通用业务局部库存 |
+| Capex $8.5bn | 新增 $1.5bn，设备偏 wafer sort | A | 对 2027 客户 forecast 有较强可见度 | capex 本身不是订单 |
+| 多客户 full-process 请求 | 线体 tuning/qualification，2026 $300m | A | 订单漏斗真实、客户基数扩张 | qualification 不等于量产 PO |
+| SPIL/NVIDIA | NVIDIA 和 SPIL 公开合作，Reuters 称 SPIL 为主要供应商 | A/B | 头部 GPU 客户项目真实 | 未披露 ASE 收入份额 |
+| ADI Penang | 工厂收购加长期供货/共同投资 | A | 有锚定负载、降低空厂风险 | 主要是模拟/混合信号，不等于 AI LEAP |
+| 报价涨 >20% | 供应链称部分先进封装报价上调 | C | 支持供需紧和定价友好 | ASE 未确认，不能直接进基准模型 |
+| Flip-chip/bumping 满载、客户预订 | DIGITIMES 渠道 | C | 支持 H2 排程紧 | 不知道重复预订、取消或客户名 |
+| 100k/月 optical line | USI 正式产能目标 | A | 设备和厂房愿意投入 | 没有披露客户订单和利用率 |
+
+### 10.3 关键业务订单覆盖、交付窗口和取消率模型
+
+| 业务 | 2026 可交付产能 | 基准需求/产能覆盖 | 交付窗口 | 取消/下修率模型 | 置信度 |
+|---|---:|---:|---|---:|---|
+| LEAP 总体 | $3.5–3.8bn | 1.10–1.25× | 2026Q3–2027Q2 | 0–5% | 中高 |
+| AI test | $0.9–1.0bn | 1.15–1.35× | wafer sort 以季度预订；新工具 Q4/2027 | 0–4% | 中高 |
+| Full-process | $0.3–0.4bn | 1.2–1.6× 请求/可交付，但 qualification 可延迟 | 主要 2026Q4–2027H2 | 5–15% 延期，真正取消 0–5% | 中 |
+| FOCoS/Bridge | $0.4–0.7bn | 1.0–1.3× | design-in 后 9–18 个月 | 5–10% SKU 延期 | 中低 |
+| FOPLP | < $0.1bn | engineering demand >产能无意义 | 2027H1 后 | 20–35% 认证延期 | 低 |
+| CPO | < $0.1bn | 以 NRE/demo 为主 | 2027–2028 | 25–40% 量产延期 | 低 |
+| USI AI compute | $1.0–1.5bn | 0.9–1.2× | 2–4 季度 | 5–12% | 中低 |
+| USI optical | revenue-ready $0.2–0.6bn | 0.5–0.9×；当前更可能产能先于订单 | 2026H2 qualification、2027 ramp | 15–30% 延期/削量 | 低 |
+| AI peripheral | $1.0–1.5bn | 0.9–1.2× | 1–2 季度 | 5–10% | 中 |
+
+“覆盖”大于 1 说明需求/forecast 超过可交付产能，不是已签不可取消 backlog。极度乐观情景对应 LEAP 覆盖 >1.5×、AI test >1.6×，并要求客户为优先供货承担预付款或长期承诺。
+
+### 10.4 未来一年集团增速推导
+
+| 项目 | 2026 模型 | 2027 基准 | 2027 乐观 | 2027 极度乐观 |
+|---|---:|---:|---:|---:|
+| LEAP | $3.5bn | $5.4bn | $6.3bn | $7.5bn |
+| Mainstream ATM | 约 $12.2bn | $13.1bn | $13.7bn | $14.4bn |
+| ATM 合计 | $15.7bn | $18.5bn | $20.0bn | $21.9bn |
+| EMS | $9.0–9.3bn | $9.2bn | $9.8bn | $10.6bn |
+| 集团 | 约 $25.0bn | $27.7bn | $29.8bn | $32.5bn |
+| YoY | 约 +20% | +11% | +19% | +30% |
+
+**为什么 2027 基准增长低于 2026：**2026 同比基数仍包含 2025 较低 LEAP 和弱 EMS，且 Q2 已增长 26.7%；到 2027，LEAP 高基数、普通 ATM 增速正常化、EMS 低毛利业务占比仍大。只有 LEAP 超过 $6bn、USI AI 产品明显放量，集团才能继续接近 20% 增长。
+
+**反证条件：**
+
+- 2026Q3/Q4 ATM 收入低于公司排程或 LEAP 不再上调；
+- Q4 新线折旧上升但 ATM GM 低于 26%；
+- tester 数量增长、利用率或 test revenue 明显低于芯片/HBM 增长；
+- full-process $300m 目标未达且原因是 yield/qualification；
+- FOPLP 官方 H1 2027 量产再次推迟；
+- USI optical 100k/月只有设备、没有 volume acceptance；
+- 2027 capex 上升同时净负债/EBITDA超过 2x、自由现金流持续为负。
+
+## 十一、竞争格局、技术主流性、替代风险与客户切换成本
+
+### 11.1 分产品竞争
+
+| 业务 | 主要竞争者/替代路线 | ASE 优势 | ASE 弱点 |
+|---|---|---|---|
+| AI 2.5D/3D advanced package | TSMC CoWoS-S/L/R/SoIC、Samsung I-Cube/X-Cube、Intel EMIB/Foveros | 最大 OSAT 规模、SPIL、turnkey test、全球厂房、FOCoS | 缺少 leading-edge logic foundry 控制权；最先进客户仍优先 TSMC |
+| OSAT advanced package | Amkor HDFO/SWIFT、JCET XDFOI、PTI、其他台湾/中国 OSAT | 收入、客户和 tester installed base 最大 | Amkor 美国本地化、JCET 中国成本/政策、客户推动二供 |
+| FOCoS/Bridge | TSMC CoWoS-R/L、Intel EMIB、Amkor SWIFT/HDFO、JCET XDFOI | 无全尺寸 interposer、低成本、bridge/TSV、ADK | 高量旗舰 GPU design-in 的公开证据少 |
+| FOPLP | TSMC CoPoS、Samsung panel/advanced fan-out、PTI/PiFO、面板厂路线 | 310×310 自动化、与 FOCoS 设计规则衔接、最早 OSAT pilot | panel warpage/良率、设备标准未成熟；TSMC 客户平台更强 |
+| AI test | Amkor、KYEC、PTI、JCET、IDM/foundry 内部测试 | 7,585 testers、wafer sort 到 final turnkey、Singapore/Taiwan 扩张 | 高端 ATE 依赖 Advantest/Teradyne；客户可能自建 SLT |
+| CPO/SiPh package | TSMC COUPE/SoIC、Amkor、Intel、JCET，以及 foundry 自有封装 | ASE optical package、KGOE/test、USI module/EugenLight engine 可跨层协同 | CPO 量产设计多由 ASIC/foundry 定义；ASE 无 PIC/laser 核心 IP |
+| Optical module/engine | Innolight、Eoptolink、Coherent、Lumentum、Fabrinet、Foxconn/FIT、Jabil | USI design-to-HVM、全球 EMS、ASE advanced package、EugenLight component | 模块毛利低、客户压价、中国模块厂规模强、关键 DSP/PIC/laser 外购 |
+| AI server/board/HVDC EMS | Foxconn、Wistron、Quanta、Wiwynn、Jabil、Flex、Celestica | USI SiP/miniaturization、全球 27 locations、与 ASE package 协同 | 规模和 AI server 纯度不及头部 ODM；客户集中、利润率低 |
+
+### 11.2 哪些技术是未来主流
+
+| 技术 | 2026 判断 | 未来主流概率 | 时间判断 |
+|---|---|---:|---|
+| 大尺寸 2.5D + HBM3E/HBM4 + ABF + full test | 已量产、当前主路径 | 95% | 2026–2028 核心 |
+| Wafer sort/KGD/SLT 增量 | 已兑现 | 95% | 测试内容量增速高于芯片颗数 |
+| FOCoS/Bridge | 可量产的成本/尺寸补充路线 | 70–80% | 2026 custom/network，2027 更广 |
+| Full-process OSAT | 从分工外包向完整 turnkey 演进 | 70–85% | 2026Q4–2027 |
+| FOPLP/CoPoS | 方向正确、HVM 尚待验证 | 60–75% | 2027 验证、2028 更广泛 |
+| 交换侧 CPO | 已进入真实量产生态 | 75–90% | 2026–2027 |
+| XPU package 内 optical I/O | 技术必要但未普遍量产 | 30–50% | 更可能 2027H2–2029 |
+| Pluggable 800G/1.6T | 当前主流，不会立即被 CPO 淘汰 | 90% | 至少 2026–2028 并行增长 |
+
+项目内产业资料估计 2026 数据中心 AI advanced package 市场约 $18.4bn、2027 $29.3bn；更窄的 2.5D/3D AI accelerator 口径约 $14.84bn。项目内先进逻辑/封装研究和 Chiplet Summit 2026 更新都把 HBM、KGD、测试、翘曲和超大包体列为核心约束。ASE 2026 LEAP >$3.5bn 对应广义市场中的重要份额，但定义并不完全相同，不能机械计算市占率。[L01][L02][L07]
+
+### 11.3 替代风险
+
+1. **TSMC 内部扩产：**CoWoS/CoPoS 产能增加可减少外包比例，或只把低附加值 WoS/测试留给 OSAT。
+2. **Amkor 美国本地化：**Arizona 与客户/CHIPS 生态可拿到区域化 AI 项目；ASE 若 Arizona 决策慢，可能失去首代资格。
+3. **客户自建/多供：**hyperscaler custom ASIC 可从设计阶段安排 TSMC+ASE/Amkor 二供；成熟后压价。
+4. **EMIB/bridge/organic RDL 替代：**超大硅 interposer 不是唯一解；ASE FOCoS 是受益者，也是其他 bridge 路线竞争者。
+5. **测试效率提升：**BIST、adaptive test、parallelism 可使 test seconds 降 20–35%，抵消部分 HBM/chiplet 复杂度。[L04]
+6. **CPO 延期：**200G/400G electrical SerDes、ACC/retimer 和可插拔 1.6T 若继续改善，XPU optical I/O 可推迟 2–3 年。
+7. **FOPLP 量产失败：**panel warpage、颗粒、RDL uniformity 和设备标准若不达标，客户继续用 wafer 2.5D。
+8. **AI rack 瓶颈外移：**电力、液冷、网络、现场验收或 AI ROI 放缓会使完成封装的芯片形成库存。
+
+### 11.4 客户切换成本
+
+| 切换层级 | 需要重做的内容 | 时间/成本模型 | 切换难度 |
+|---|---|---|---|
+| 单一成熟工序二供 | process recipe、reliability、quality audit | 3–9 个月 | 中 |
+| Advanced package 平台 | floorplan、SI/PI、thermal、mask/RDL/interposer、substrate、test program | 9–18 个月；NRE 可达 $10–50m | 高 |
+| Full-process turnkey | 上述全部加 KGD、yield ownership、供应链和 final acceptance | 12–24 个月 | 很高 |
+| CPO optical engine/package | PIC/EIC/laser/FAU、firmware、thermal、optical test、现场维修 | 18–30 个月；宿主 ASIC 重做可超过 $100m | 极高 |
+| EMS board/module | BOM、AVL、SMT/test、物流、认证 | 6–12 个月 | 中；成熟后客户仍可二供 |
+
+切换成本带来“一代产品内”的定价权，但不会永久阻止下一代二供。供不应求越严重，客户越会在下一代推动开放标准和多源。
+
+## 十二、主要风险、催化剂和季度跟踪表
+
+### 12.1 风险排序
+
+| 风险 | 概率 | 影响 | 先行指标 |
+|---|---:|---:|---|
+| 估值压缩 | 高 | 高 | forward EPS 不上修、股价继续快于盈利 |
+| LEAP line/yield 延迟 | 中 | 极高 | full-process $300m、Q4 revenue、ATM GM |
+| Capex/借款/FCF | 高 | 高 | net debt、interest coverage、2027 capex |
+| TSMC 外包比例低于预期 | 中 | 高 | on-substrate mix、客户/项目、TSMC capacity |
+| 客户集中 | 中 | 高 | ATM top 5 43%、EMS top 5 64% |
+| 台湾地缘/自然灾害 | 低至中 | 极高 | 区域化产能、保险、客户迁移 |
+| AI rack 交付瓶颈 | 中 | 高 | hyperscaler capex、GPU inventory、power/cooling |
+| FOPLP/CPO 技术延迟 | 高 | 中 | qualification、HVM PO、yield、port shipments |
+| EMS 低毛利/光模块价格战 | 高 | 中 | EMS GM、optical ASP、客户集中 |
+| 汇率 | 高 | 中 | NTD/USD；2025Q2/Q3 已显示利润敏感度 |
+
+### 12.2 未来 12 个月催化剂
+
+| 时间 | 催化剂 | 有效证据 |
+|---|---|---|
+| 2026-07-30 | 2026Q2 完整财报 | ATM GM 26–27%、Q2 capex、LEAP/2027 更新，而非只看营收 |
+| 2026Q3 | Q4 新 LEAP/wafer-sort tools 部署 | tester 数、depreciation、客户 qualification |
+| 2026Q4 | Full-process LEAP ramp | 接近 $300m 全年目标、客户数、yield 和毛利 |
+| 2026Q4–2027Q1 | Panel line 小量/qualification | 官方是否仍维持 2027H1 production |
+| 2027H1 | LEAP 2027 正式数字 | 是否至少达到本报告基准 $5.4bn |
+| 2027H1 | Renwu Phase I、Singapore/Malaysia test | 实际收入和 utilization，而非建筑进度 |
+| 2026H2–2027H1 | USI 1.6T optical volume acceptance | 订单、客户、100k/月利用率、重复采购 |
+| 2027 | CPO package/test | 具体 switch/XPU 平台、端口量和收入，而非 demo |
+
+### 12.3 必须逐季更新的 15 个 KPI
+
+1. LEAP 全年收入指引及 packaging/test 75/25 是否变化；
+2. Full-process LEAP 收入、客户数、yield 和 utilization；
+3. ATM revenue、GM、OM 与汇率桥接；
+4. Testing revenue YoY 和 tester 数量；
+5. Wafer sort 与 final test mix；
+6. ATM computing application mix；
+7. EMS computing mix 和 AI accelerator 产品收入；
+8. 综合 utilization 与剔除新线后的 mature-line utilization；
+9. 设备 capex、facility capex、depreciation/revenue；
+10. 经营现金流、自由现金流、净负债/权益；
+11. Top 5/Top 10 客户集中度；
+12. FOPLP qualification/HVM 时间；
+13. USI optical 月产能的有效利用率和客户认证；
+14. CoWoS/FOCoS 报价、材料 pass-through 和取消/延期迹象；
+15. Q2 后每月集团与 ATM revenue 的同比/环比。
+
+## 十三、最终投资判断
+
+### 13.1 多头逻辑
+
+- LEAP 已从概念变成 $3.5bn 以上收入，并由测试、封装、全流程三个可验证层组成；
+- Q2 营收和 ATM 均超公司指引，当前需求没有明显断层；
+- SPIL/ASE 的客户、规模和测试 installed base 使其成为 TSMC 先进封装扩张不可忽略的外部协作方；
+- 测试、full-process、FOCoS/Bridge、panel、CPO、USI optical 提供从 2026 到 2029 的连续产品阶梯；
+- ATM 占集团收入和利润的比例上升，可使集团毛利率产生结构性改善。
+
+### 13.2 空头逻辑
+
+- 没有正式 backlog、bookings、取消率或客户收入拆分；市场容易把供需语言重复资本化；
+- $8.5bn capex、负自由现金流和新增借款意味着增长并非无成本；
+- 2027 LEAP $5.4bn 是推导，不是正式指引；full-process/FOPLP/CPO 均有良率和认证风险；
+- TSMC 控制最先进平台，ASE 的议价权受 upstream allocation 和客户二供限制；
+- ASX 已约 60–62x TTM PE、35x forward PE，股价一年上涨约 312%，好消息的边际价值下降。
+
+### 13.3 结论
+
+**公司基本面评级：强。股票当前风险收益：中性偏谨慎。**
+
+ASE Technology Holding 是 AI 先进封装、测试和系统制造中最完整的上市平台之一。其 2026 年收入加速有财报、Q2 快报、capex、测试机数量、客户关系和厂房项目共同佐证。最值得投资的不是“所有封装收入”，而是 LEAP packaging、wafer sort/KGD、full-process 和未来 optical packaging/test。
+
+但当前价格已要求公司从“全球最大 OSAT”进一步兑现为“高增长、高毛利、持续供不应求的 AI 制造平台”。基准情景下 2027 集团增长约 11%，不足以自动支持 60x TTM PE；乐观情景下 LEAP 达 $6.3bn、集团增长约 19%、ATM GM 28–30%，估值才更容易由盈利消化。实际投资应把 2026Q2 毛利率、Q4 full-process ramp、2027 LEAP 正式指引和自由现金流作为四个必须通过的关卡。
+
+## 十四、来源
+
+### 14.1 公司财报、电话会和市场数据
+
+- [A01：ASE 2026Q1 6-K，2026-04-29](https://www.sec.gov/Archives/edgar/data/1122411/000095010326006339/dp245865_6k.htm)
+- [A02：ASE 2026Q2 营收快报 6-K，2026-07-09](https://www.sec.gov/Archives/edgar/data/1122411/000095010326010427/dp249884_6k.htm)
+- [A03：ASE 2025Q4/全年 6-K，2026-02-05](https://www.sec.gov/Archives/edgar/data/1122411/000095010326001661/dp241159_6k.htm)
+- [A04：ASE 2025Q3 6-K](https://www.sec.gov/Archives/edgar/data/1122411/000095010325013870/dp236570_6k.htm)
+- [A05：ASE 2025Q2 6-K](https://www.sec.gov/Archives/edgar/data/1122411/000095010325009595/dp232391_6k.htm)
+- [A06：ASE 2025Q1 6-K](https://www.sec.gov/Archives/edgar/data/1122411/000095010325005459/dp228293_6k.htm)
+- [A07：ASE 2025 Form 20-F](https://www.sec.gov/Archives/edgar/data/1122411/000119312526135585/d50802d20f.htm)
+- [A08：ASE 2026Q1 earnings call 自动转录](https://earningscall.biz/e/nyse/s/asx/y/2026/q/q1)
+- [M01：StockAnalysis ASX statistics，2026-07-12 更新](https://stockanalysis.com/stocks/asx/statistics/)
+- [M02：Citi ADR，ORD:DR 2:1](https://depositaryreceipts.citi.com/adr/guides/pgm_dispabook.aspx?cusip=00215W100&pageId=15&subpageID=111)
+
+### 14.2 公司产品、产能、收购与客户
+
+- [P01：ASE VIPack 六大技术支柱](https://ase.aseglobal.com/VIPack/)
+- [P02：ASE FOCoS 产品与 ADK](https://ase.aseglobal.com/focos/)
+- [P03：FOCoS-Bridge，2 ASIC+8 HBM qualified package](https://www.aseglobal.com/press-room/focos-bridge)
+- [P04：ASE 310×310mm automated panel line，2026-05-26](https://ase.aseglobal.com/press-room/310x310/)
+- [P05：ASE CPO demo](https://ase.aseglobal.com/press-room/ase-demonstrates-cpo-for-ai-applications/)
+- [P06：ASE FOPoP](https://www.aseglobal.com/press-room/vipack-fopop/)
+- [P07：USI/EugenLight OFC 2026 产品](https://www.usiglobal.com/en/news/usi-eugenlight-showcase-optical-solutions-ofc-2026)
+- [P08：USI Vietnam 100k/月 800G/1.6T 产能计划](https://www.aseglobal.com/press-room/expansion-plan-for-second-plant-in-vietnam/)
+- [P09：USI 收购 EugenLight 控股权](https://www.usiglobal.com/en/news/usi-subsidiary-acquires-eugenlight-technologies)
+- [P10：ASE Renwu testing cluster](https://ase.aseglobal.com/press-room/ase-breaks-ground-on-new-renwu-plant-to-build-hi-tech-testing-cluster/)
+- [P11：ASE Kaohsiung NT$17.8bn 新设施](https://ase.aseglobal.com/press-room/ase-breaks-ground-on-new-high-tech-facility-in-kaohsiung/)
+- [P12：ASE 与 WUS 先进 AI 封装厂](https://ase.aseglobal.com/press-room/ase-and-wus-announce-strategic-expansion/)
+- [P13：ASE 与 ADI Penang 交易](https://www.aseglobal.com/press-room/ase-and-analog-devices-announce-strategic-collaboration/)
+- [P14：Infineon 向 ASE 出售 Cavite/Cheonan 后段厂](https://www.infineon.com/press-release/2024/infxx202402-061)
+- [P15：USI 2023 年报，Hirschmann 收购](https://www.usiglobal.com/files/images/csr/2023/Annual_Report/2023_Report_EN.pdf)
+- [P16：ASE Malaysia P5 扩张](https://www.aseglobal.com/press-room/asem-launch-p5)
+- [P17：ASE 2026 CPO/heterogeneous integration 技术报告](https://ase.aseglobal.com/blog/technology/scaling-ai-infrastructure-overcoming-interconnect-bottlenecks-via-cpo-and-hi/)
+
+### 14.3 行业、会议与渠道交叉验证
+
+- [B01：Taipei Times，2026 LEAP 供需与材料 pass-through](https://www.taipeitimes.com/News/biz/archives/2026/02/06/2003851840)
+- [B02：Taipei Times，Q1 后 capex/LEAP/full-process 指引](https://www.taipeitimes.com/News/biz/archives/2026/04/30/2003856469)
+- [B03：Reuters，15 个厂区项目、SPIL/NVIDIA、Arizona 评估](https://www.investing.com/news/stock-market-news/taiwans-ase-says-it-is-expanding-capacity-to-support-ai-demand-4757330)
+- [B05：TrendForce 2024 前十大 OSAT 排名](https://www.trendforce.com/presscenter/news/20250513-12577.html)
+- [B06：NVIDIA 美国制造与 SPIL/Amkor 合作](https://blogs.nvidia.com/blog/nvidia-manufacture-american-made-ai-supercomputers-us/)
+- [C01：TrendForce 渠道，ASE advanced packaging 报价据称上调 >20%](https://www.trendforce.com/news/2026/07/01/news-ase-reportedly-raises-advanced-packaging-quotes-by-more-than-20-in-latest-ai-driven-price-hike/)
+- [C02：DIGITIMES，ASE advanced packaging 产能/客户预订渠道](https://www.digitimes.com/news/a20251031PD246/ase-advanced-packaging-revenue-testing-2026.html)
+- [C03：TrendForce 渠道，FOPLP 2026 年末小量与 15 个项目](https://www.trendforce.com/news/2026/06/25/news-ase-targets-foplp-mass-production-by-end-2026-launches-15-expansion-projects-this-year-amid-ai-boom/)
+- [ECTC 2026：ASE 310mm panel 发布和大会参与](https://ase.aseglobal.com/press-room/310x310/)
+- [OFC 2026：USI/EugenLight 1.6T/optical engine/ELSFP 展示](https://www.usiglobal.com/en/news/usi-eugenlight-showcase-optical-solutions-ofc-2026)
+
+### 14.4 项目内相关行业资料
+
+- [L01：AI 芯片先进封装，2026-07-10](../../行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-07-10.md)
+- [L02：先进逻辑晶圆代工和封装，2026-07-10](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-07-10.md)
+- [L03：先进封装设备与混合键合，2026-07-10](../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-07-10.md)
+- [L04：HBM 与存储测试设备，2026-07-10](../../行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-07-10.md)
+- [L05：封装内光 I/O 与 Optical Chiplet，2026-07-10](<../../行业调研/AI网络_光互联_铜互联/行业调研_封装内光I-O与Optical Chiplet_2026-07-10.md>)
+- [L06：封装基板、中介层与 RDL，2026-07-10](../../行业调研/AI服务器_存储_芯片/行业调研_封装基板、中介层与RDL_2026-07-10.md)
+- [L07：Chiplet Summit 2026 更新](../../行业调研/产业背景/顶级会议信息/chiplet_summit_2026_update.md)
+
+> 限制声明：公司没有披露具体 AI 客户份额、各产品 ASP、良率、backlog、bookings、B2B、lead time、取消率、FOPLP/CPO 收入或 USI optical 客户订单。本文所有相关数字均已标为模型或渠道，不应与公司正式指引混用。下一次完整更新应以 2026-07-30 Q2 财报为起点。
+
+[A01]: https://www.sec.gov/Archives/edgar/data/1122411/000095010326006339/dp245865_6k.htm
+[A02]: https://www.sec.gov/Archives/edgar/data/1122411/000095010326010427/dp249884_6k.htm
+[A03]: https://www.sec.gov/Archives/edgar/data/1122411/000095010326001661/dp241159_6k.htm
+[A04]: https://www.sec.gov/Archives/edgar/data/1122411/000095010325013870/dp236570_6k.htm
+[A05]: https://www.sec.gov/Archives/edgar/data/1122411/000095010325009595/dp232391_6k.htm
+[A06]: https://www.sec.gov/Archives/edgar/data/1122411/000095010325005459/dp228293_6k.htm
+[A07]: https://www.sec.gov/Archives/edgar/data/1122411/000119312526135585/d50802d20f.htm
+[A08]: https://earningscall.biz/e/nyse/s/asx/y/2026/q/q1
+[M01]: https://stockanalysis.com/stocks/asx/statistics/
+[M02]: https://depositaryreceipts.citi.com/adr/guides/pgm_dispabook.aspx?cusip=00215W100&pageId=15&subpageID=111
+[P01]: https://ase.aseglobal.com/VIPack/
+[P02]: https://ase.aseglobal.com/focos/
+[P03]: https://www.aseglobal.com/press-room/focos-bridge
+[P04]: https://ase.aseglobal.com/press-room/310x310/
+[P05]: https://ase.aseglobal.com/press-room/ase-demonstrates-cpo-for-ai-applications/
+[P06]: https://www.aseglobal.com/press-room/vipack-fopop/
+[P07]: https://www.usiglobal.com/en/news/usi-eugenlight-showcase-optical-solutions-ofc-2026
+[P08]: https://www.aseglobal.com/press-room/expansion-plan-for-second-plant-in-vietnam/
+[P09]: https://www.usiglobal.com/en/news/usi-subsidiary-acquires-eugenlight-technologies
+[P10]: https://ase.aseglobal.com/press-room/ase-breaks-ground-on-new-renwu-plant-to-build-hi-tech-testing-cluster/
+[P11]: https://ase.aseglobal.com/press-room/ase-breaks-ground-on-new-high-tech-facility-in-kaohsiung/
+[P12]: https://ase.aseglobal.com/press-room/ase-and-wus-announce-strategic-expansion/
+[P13]: https://www.aseglobal.com/press-room/ase-and-analog-devices-announce-strategic-collaboration/
+[P14]: https://www.infineon.com/press-release/2024/infxx202402-061
+[P15]: https://www.usiglobal.com/files/images/csr/2023/Annual_Report/2023_Report_EN.pdf
+[P16]: https://www.aseglobal.com/press-room/asem-launch-p5
+[P17]: https://ase.aseglobal.com/blog/technology/scaling-ai-infrastructure-overcoming-interconnect-bottlenecks-via-cpo-and-hi/
+[B01]: https://www.taipeitimes.com/News/biz/archives/2026/02/06/2003851840
+[B02]: https://www.taipeitimes.com/News/biz/archives/2026/04/30/2003856469
+[B03]: https://www.investing.com/news/stock-market-news/taiwans-ase-says-it-is-expanding-capacity-to-support-ai-demand-4757330
+[B05]: https://www.trendforce.com/presscenter/news/20250513-12577.html
+[B06]: https://blogs.nvidia.com/blog/nvidia-manufacture-american-made-ai-supercomputers-us/
+[C01]: https://www.trendforce.com/news/2026/07/01/news-ase-reportedly-raises-advanced-packaging-quotes-by-more-than-20-in-latest-ai-driven-price-hike/
+[C02]: https://www.digitimes.com/news/a20251031PD246/ase-advanced-packaging-revenue-testing-2026.html
+[C03]: https://www.trendforce.com/news/2026/06/25/news-ase-targets-foplp-mass-production-by-end-2026-launches-15-expansion-projects-this-year-amid-ai-boom/
+[L01]: ../../行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-07-10.md
+[L02]: ../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进逻辑晶圆代工和封装_2026-07-10.md
+[L03]: ../../行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装设备与混合键合_2026-07-10.md
+[L04]: ../../行业调研/晶圆制造_设备_材料_测试/行业调研_HBM与存储测试设备_2026-07-10.md
+[L05]: <../../行业调研/AI网络_光互联_铜互联/行业调研_封装内光I-O与Optical Chiplet_2026-07-10.md>
+[L06]: ../../行业调研/AI服务器_存储_芯片/行业调研_封装基板、中介层与RDL_2026-07-10.md
+[L07]: ../../行业调研/产业背景/顶级会议信息/chiplet_summit_2026_update.md

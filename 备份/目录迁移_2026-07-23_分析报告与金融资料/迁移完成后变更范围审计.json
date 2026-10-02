@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-07-23T21:38:24.9414952-07:00",
+  "beforeCount": 6600,
+  "afterCount": 6597,
+  "allowedGeneratedMetadataRemovalCount": 3,
+  "unexpectedMissingCount": 0,
+  "extraCount": 0,
+  "changedCount": 399,
+  "unexpectedChangedCount": 0,
+  "changedByCategory": {
+    "analysis": 397,
+    "financialMaterials": 2
+  },
+  "allowedGeneratedMetadataRemovals": [
+    "分析报告|公司对比\\站点数据\\companies\\desktop.ini",
+    "分析报告|公司对比\\站点数据\\desktop.ini",
+    "分析报告|公司情景投资决策\\站点数据\\companies\\desktop.ini"
+  ],
+  "unexpectedMissing": [],
+  "extra": [],
+  "unexpectedChanged": []
+}

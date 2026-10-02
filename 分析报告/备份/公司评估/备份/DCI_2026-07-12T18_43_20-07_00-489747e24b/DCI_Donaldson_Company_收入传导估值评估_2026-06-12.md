@@ -1,0 +1,166 @@
+# 公司收入传导与价值传导评估：Donaldson Company（DCI）
+
+报告日期：2026-06-12。  
+主口径：NTM，即从 2026-06-12 往后 12 个月，近似 Donaldson FY2026 Q4 + FY2027 Q1-Q3。  
+资料边界：本报告只使用 `公司调研/`、`行业调研/` 下的正式资料，以及 Donaldson 官方财报、SEC 文件、Facet 交易材料和 Donaldson 官方产品页复核最新事实；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较资料。  
+评估边界：只评估需求、收入确认、利润和经营价值传导；不做全公司排序，不给投资评级，不判断股价区间，不做估值倍数判断。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主表使用 NTM 经营窗口；FY2026 指引、Facet FY2027 全年并表、数据中心液冷长期 run-rate 只作为补充口径。
+- 当前收入基准、指引和 run-rate：Donaldson FY2026 Q3 收入为 `9.951 亿美元`、同比 `+5.8%`；FY2026 前 9 个月收入为 `28.268 亿美元`、同比 `+4.3%`；公司最新 FY2026 organic sales 指引为 `+3%-5%`，Facet 只在 FY2026 Q4 贡献 `2500-3000 万美元`。按 FY2025 Q4 + FY2026 Q1-Q3 计算的 TTM 收入约 `38.08 亿美元`，Q3 单季年化约 `39.8 亿美元`。
+- 重要产品/业务线：Mobile Aftermarket、Mobile First-Fit、Industrial Filtration & Power Generation、Facet fuel/fluid filtration、D2C coolant filtration skid + PP100-HF、Life Sciences。
+- NTM 公司收入四情景：悲观 `38.5-39.5 亿美元`；基准 `40.5-41.5 亿美元`；乐观 `42.5-44.0 亿美元`；极度乐观 `45.5-47.5 亿美元`。
+- 利润或 EBITDA 四情景：悲观 EBITDA `6.9-7.3 亿美元`；基准 `7.6-8.0 亿美元`；乐观 `8.3-8.9 亿美元`；极度乐观 `9.5-10.5 亿美元`。基准利润质量主要来自 Mobile Aftermarket、Facet 高耗材占比和费用杠杆，不来自 AI 液冷收入大幅放量。
+- 最大传导瓶颈：D2C coolant filtration 从产品页到公司收入表之间缺少公开客户、订单、认证名单和交付节奏，不能把行业液冷过滤池直接转成 DCI 基准收入。
+- 最大利润率变量：Industrial Solutions Q3 FY2026 税前利润率降至 `13.4%`，低于去年同期 `18.1%`，主因 Power Generation 转产和客户定制造成运营低效；Facet 的高 EBITDA margin 能否抵消这一拖累，是 NTM 利润率核心变量。
+- 最大现金流变量：Facet 收购后新增约 `8.20 亿美元`债务和约 `900 万美元` FY2026 Q4 增量利息，短期压 EPS；但 Donaldson 资本开支轻，FY2026 adjusted FCF conversion 指引 `85%-95%`，现金流基准仍较稳。
+- 可信度：公司层面基准为中高；乐观为中；极度乐观为低。原因是 Mobile、Life Sciences、Facet 和 FY2026 指引有 A/B 级证据，D2C 液冷过滤只有产品和行业需求证据，缺少可确认订单。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Mobile Aftermarket replacement filters | FY2026 Q3 `4.976 亿美元`，年化约 `19.9 亿美元` | Q3 约 `50.0%` | 最大现金流和利润底座，复购属性强 | A | 进入基准主口径；按设备利用率、渠道份额和价格正常兑现 | 无需作为远期期权，已是现有主业 |
+| Mobile First-Fit：Off-Road + On-Road | FY2026 Q3 `1.323 亿美元`，年化约 `5.29 亿美元` | Q3 约 `13.3%` | 周期修复或下滑会影响收入增速，但利润质量低于 Aftermarket | A | 进入基准；Off-Road 温和恢复，On-Road 仍保守 | 无 |
+| Industrial Filtration & Power Generation（不含 Facet，D2C 单列） | Industrial FY2026 Q3 `2.817 亿美元`；IFS Q3 `2.371 亿美元` | Industrial Q3 `28.3%`；IFS Q3 `23.8%` | 工业空气、气体、液压、发电和数据中心间接受益；也是执行风险集中处 | A/B | 进入基准；但按低个位数到中个位数增长处理，利润率先保守修复 | AI 自备电与大型 power generation 项目若订单量化，可上移 |
+| Facet fuel/fluid filtration | CY2025 sales `1.08 亿美元`；FY2026 Q4 指引贡献 `2500-3000 万美元` | 全年并表后约 `3%` | 高毛利、高耗材、A&D/Power Generation/Backup Power & Data Centers 暴露 | B | 进入基准；NTM 按 `1.15-1.30 亿美元`收入贡献处理 | 若 data center backup power 与 A&D 同时放量，可进乐观/极度乐观 |
+| D2C coolant filtration skid + PP100-HF | 官方产品页和产品规格已披露；公司未披露收入、客户或订单；模型估算当前年化可能 `<3000 万美元` | 当前大概率 `<1%` | AI 数据中心最直接抓手，但证据停留在产品/行业需求层 | C/D | 不作为独立基准新增大额收入；基准只允许 `1000-3500 万美元`小额、且计入 Industrial 内部 | 若公开 hyperscaler/CDU/TCS design-in，可进入乐观；多客户标准件才进极度乐观 |
+| Life Sciences：Food & Beverage、Disk Drive、Microelectronics、Bioprocessing | FY2026 Q3 `8350 万美元`，年化约 `3.34 亿美元` | Q3 `8.4%` | 当前增速高，但 bioprocessing 曾有减值，需区分质量 | A | 进入基准；按 Food & Beverage、Disk Drive 拉动，bioprocessing 不激进外推 | Medica 膜和 bioprocessing 复苏只作乐观补充 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估每个产品/业务线的外部需求池，不评估 DCI 份额、收入确认或利润率。需求锚以管理层指引、FY2026 Q3 run-rate、行业资料中未来一年需求池、替换周期和客户资本开支节奏为基准。表内“绝对变化”指需求池相对当前需求锚的变化，不是 DCI 收入。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Mobile Aftermarket replacement filters | FY2026 Q3 Aftermarket `4.976 亿美元`，由车辆/设备利用率和渠道复购驱动 | 设备利用率下降、渠道去库存，需求低个位数下滑 | 中个位数增长，贴合 FY2026 Mobile 指引和 Q3 高个位数表现 | 高个位数到低双位数增长，矿山/工程/农业利用率同步上行 | 多区域补库存+价格兑现，需求 `+12%-18%` | 悲观 `-3%-0%`；基准 `+4%-7%`；乐观 `+8%-12%`；极度乐观 `+12%-18%` | 基准符合当前预期；乐观需设备利用率和渠道份额同时强 | Q3 增长来自利用率和 mix；反证是宏观下行、OEM 渠道低价替代 |
+| Mobile First-Fit：Off-Road + On-Road | Q3 Off-Road `1.040 亿美元`，On-Road `2830 万美元`；FY2026 指引 Off-Road 中个位数增、On-Road 低个位数降 | 工程/农业/卡车产量转弱，first-fit 下滑 | Off-Road 温和恢复，On-Road 持平到小降 | 北美/EMEA 工程机械和矿山需求改善 | 多区域设备换新周期提前，客户补库存 | 悲观 `-8%--3%`；基准 `0%-5%`；乐观 `+6%-10%`；极度乐观 `+12%-18%` | 基准基本符合指引 | 反证是 On-Road 指引仍弱，first-fit 周期属性高于 aftermarket |
+| Industrial Filtration & Power Generation | Industrial Q3 `2.817 亿美元`，IFS Q3 `2.371 亿美元`；Power Generation 订单强但转产低效 | 工业资本开支疲软，Power Generation 项目延后，dust collection/industrial gases 下滑 | IFS 低个位数增长，Power Generation 强但被工业气体/粉尘过滤抵消 | 发电、工业气体和数据中心备用电源项目同步改善 | AI 数据中心自备电、天然气/LNG、工业空气过滤大项目同时前置 | 悲观 `-5%-0%`；基准 `+2%-6%`；乐观 `+8%-15%`；极度乐观 `+20%-35%` | 基准符合当前收入锚，乐观需订单转收入 | Q3 Industrial 收入 `-0.6%`、利润率下行是反证；backlog 表述强但未量化 |
+| Facet fuel/fluid filtration | CY2025 sales `1.08 亿美元`；约 `70%` consumables，应用于 A&D、Power Generation、Backup Power & Data Centers | 航空/军工项目时点延后，整合扰动 | 高个位数 organic 增长，耗材稳定复购 | A&D 复苏、Power Generation 和 backup power 项目加速 | 航空、军工、发电和数据中心备电同时放量 | 悲观 `0%-5%`；基准 `+6%-10%`；乐观 `+15%-30%`；极度乐观 `+50%+` | 基准略高于普通工业但有交易材料支持 | 反证是收购价高、认证客户迁移和整合风险 |
+| D2C coolant filtration skid + PP100-HF | 行业资料给出未来 1 年 coolant filtration skid/滤芯/监测市场基准 `3-7 亿美元`，乐观 `7-12 亿美元`；Donaldson 已推出 D2C skid 和 PP100-HF | GB300/液冷项目延迟，过滤由系统商内置或使用二供，需求只小批量 | D2C 单相液冷成为高密 rack 主流，过滤/冲洗成为验收项，但项目仍分散 | CDU/TCS 标准化把高流量滤芯写入更多 RFP | 多个 hyperscaler/colo 将过滤包标准化，耗材复购提前启动 | 行业池悲观 `<3 亿美元`；基准 `3-7 亿美元`；乐观 `7-12 亿美元`；极度乐观 `12-20 亿美元` | 基准行业需求强于传统工业，但 DCI 捕获未证明 | 行业资料支持需求；反证是无 DCI 订单金额、客户名、认证名单 |
+| Life Sciences | Q3 `8350 万美元`、同比 `+12.7%`；FY2026 指引 Life Sciences `+9%-11%` | Food & Beverage/Disk Drive 放缓，bioprocessing 继续弱 | Food & Beverage 与 Disk Drive 保持高个位数到低双位数 | Disk Drive/microelectronics 叠加 Medica 膜扩展 | Bioprocessing 资本开支明显复苏，耗材和设备同时增长 | 悲观 `0%-5%`；基准 `+8%-14%`；乐观 `+20%-30%`；极度乐观 `+40%+` | 基准符合当前指引和 Q3 表现 | 反证是 FY2025 生物工艺相关资产减值，不能把长期生命科学叙事提前进基准 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断哪些需求能进入 DCI 的 NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入。第二步基准以 A/B 级收入表、分部收入、指引、订单/backlog 或正式交易证据为主；C/D 级机会不作为独立基准大额收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Mobile Aftermarket replacement filters | FY2026 Q3 `4.976 亿美元`，9M Aftermarket 增长由利用率驱动 | 直接 | 高复购、高渠道粘性、毛利好于 first-fit | `18.8-19.5 亿美元` | `19.9-20.8 亿美元` | `20.8-21.8 亿美元` | `22.0-23.0 亿美元` | 基准符合当前 run-rate；悲观低于 Q3 趋势 | A | 是 | 已披露业务线收入和同比增长 | NTM 公司收入和现金流核心底座 |
+| Mobile First-Fit：Off-Road + On-Road | Q3 Off-Road `1.040 亿美元`，On-Road `2830 万美元` | 直接 | first-fit 利润率通常低于 aftermarket，周期性更强 | `4.8-5.2 亿美元` | `5.2-5.8 亿美元` | `5.9-6.5 亿美元` | `6.7-7.2 亿美元` | 基准符合 FY2026 指引；乐观需设备周期修复 | A | 是 | 分部业务线披露 | 进入基准但不作为利润率扩张主因 |
+| Industrial Filtration & Power Generation（不含 Facet，D2C 单列） | Industrial Q3 `2.817 亿美元`；IFS Q3 `2.371 亿美元`；Q3 Industrial 利润率 `13.4%` | 直接，AI 备用电和工业项目为间接 | 项目型+耗材混合；执行差时利润率下压 | `9.5-10.2 亿美元` | `10.2-10.8 亿美元` | `11.0-12.0 亿美元` | `12.5-13.5 亿美元` | 基准接近当前 run-rate；乐观需订单转收入 | A/B | 是 | 分部收入、管理层 backlog 表述、Power Generation 信号 | 进入基准，利润率保守修复 |
+| Facet fuel/fluid filtration | CY2025 sales `1.08 亿美元`；FY2026 Q4 sales contribution `2500-3000 万美元` | 直接；data center backup power 属间接 | 约 `70%` consumables、约 `38%` EBITDA margin，高利润质量 | `1.05-1.15 亿美元` | `1.15-1.30 亿美元` | `1.35-1.60 亿美元` | `1.80-2.20 亿美元` | 基准等于交易材料正常兑现；极度乐观明显高于当前预期 | B | 是 | 完成收购、交易材料、Q3 指引 | 作为 NTM 增量进入基准，FY2027 全年并表是最大确定性新增收入 |
+| D2C coolant filtration skid + PP100-HF | 官方产品页披露 D2C skid；PP100-HF 规格披露；未披露收入或客户 | 直接，但目前可确认收入弱 | 初装 skid 中等毛利，滤芯耗材和服务更好 | `0-1000 万美元` | `1000-3500 万美元` | `4000-8000 万美元` | `1.0-1.8 亿美元` | 基准只作为小额上限；乐观/极度乐观才反映行业加速 | C/D | 有限制 | 产品页+行业需求；无客户/订单金额 | 不把行业池直接计入；基准仅小额纳入并计入 Industrial 内部，极度乐观需客户证据 |
+| Life Sciences | Q3 `8350 万美元`，9M `2.428 亿美元`，Q3 同比 `+12.7%` | 直接；Disk Drive/microelectronics 仅弱 AI 相关 | Food & Beverage/Disk Drive mix 较好，bioprocessing 资本品风险高 | `3.15-3.35 亿美元` | `3.40-3.70 亿美元` | `3.8-4.2 亿美元` | `4.8-5.5 亿美元` | 基准符合 FY2026 指引和 Q3；极度乐观依赖未验证复苏 | A | 是 | 分部收入、指引、10-Q 管理层解释 | 进入基准，但 bioprocessing 复苏不进基准 |
+
+排除项：普通 HVAC 空气过滤、低端通用 bag filter、未披露客户的 AI 主题映射收入、客户总数据中心 CapEx、冷板/CDU 全部价值量、项目总金额和行业 TAM，均不直接进入 DCI NTM 基准收入。
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从第一步需求和第二步收入基数出发，逐项判断 DCI 在 NTM 内能确认的收入和能留下的利润。表中收入为产品/业务线 NTM 收入贡献，利润贡献为经营利润或 EBITDA 方向性区间；D2C coolant filtration 为 Industrial 内部子集，公司汇总时去重。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Mobile Aftermarket | 悲观产品 | `18.8-19.5 亿美元` | 经营利润率仍高但规模杠杆下降 | 小幅下行 | 低于当前 Q3 趋势 | 需求来自设备利用率，若利用率下行则订单转弱 | 保留为悲观 | 渠道去库存、低端替代、宏观周期 |
+| Mobile Aftermarket | 基准产品 | `19.9-20.8 亿美元` | 经营利润贡献约 `4.0-4.4 亿美元` | 稳中小升 | 符合当前预期 | Q3 Aftermarket `4.976 亿美元`、同比 `+8.1%` | 保留 | 价格竞争和渠道库存 |
+| Mobile Aftermarket | 乐观产品 | `20.8-21.8 亿美元` | 经营利润贡献约 `4.4-4.8 亿美元` | 上行 | 高于当前预期 | 利用率、份额、价格同时兑现 | 保留但需后续订单/渠道验证 | 不是 AI 增量，成长弹性有限 |
+| Mobile Aftermarket | 极度乐观产品 | `22.0-23.0 亿美元` | 经营利润贡献约 `4.8-5.3 亿美元` | 明显上行 | 显著高于当前预期 | 多区域利用率和补库存同时发生 | 下移为乐观上限 | 缺少当前大规模补库存证据 |
+| Mobile First-Fit | 悲观产品 | `4.8-5.2 亿美元` | 利润贡献受低利用率拖累 | 下行 | 低于指引 | On-Road 指引弱、first-fit 周期性高 | 保留 | 工程/农业/卡车产量下行 |
+| Mobile First-Fit | 基准产品 | `5.2-5.8 亿美元` | 利润贡献温和，低于 aftermarket 质量 | 持平 | 符合指引 | Off-Road 中个位数恢复，On-Road 保守 | 保留 | first-fit 价格和 mix 弱于替换件 |
+| Mobile First-Fit | 乐观产品 | `5.9-6.5 亿美元` | 利润贡献小幅上行 | 小升 | 高于指引 | 设备周期恢复、建筑/矿业需求改善 | 保留 | 需要终端设备产量确认 |
+| Mobile First-Fit | 极度乐观产品 | `6.7-7.2 亿美元` | 利润贡献随产量上行 | 上行但非高质量 | 显著高于预期 | 多区域设备换新 | 下移为乐观上限 | 无公开订单显示大幅超预期 |
+| Industrial Filtration & Power Generation | 悲观产品 | `9.5-10.2 亿美元` | 经营利润率 `11%-13%` | 低位 | 低于当前预期 | Q3 Industrial 利润率 `13.4%`，转产低效 | 保留 | Power Generation 转产、客户定制、工业气体/粉尘过滤走弱 |
+| Industrial Filtration & Power Generation | 基准产品 | `10.2-10.8 亿美元` | 经营利润约 `1.4-1.6 亿美元` | 从低位修复 | 符合当前预期 | IFS 低个位数增长、backlog 表述强 | 保留 | backlog 未量化，长期 RPO 不显著 |
+| Industrial Filtration & Power Generation | 乐观产品 | `11.0-12.0 亿美元` | 经营利润约 `1.7-2.1 亿美元` | 修复至中高位 | 高于当前预期 | Power Generation、AI 备电、工业空气订单同步改善 | 保留但可信度中 | 需看到转产效率和毛利修复 |
+| Industrial Filtration & Power Generation | 极度乐观产品 | `12.5-13.5 亿美元` | 经营利润约 `2.3-2.7 亿美元` | 大幅上行 | 显著高于预期 | AI 自备电/发电过滤大项目放量 | 下移为乐观上限 | 项目型、订单未披露且可能低毛利 |
+| Facet fuel/fluid filtration | 悲观产品 | `1.05-1.15 亿美元` | EBITDA 约 `0.35-0.42 亿美元` | 高但被整合费用抵消 | 低于交易预期 | 认证和客户保留仍在整合期 | 保留 | 收购价高、客户迁移、整合风险 |
+| Facet fuel/fluid filtration | 基准产品 | `1.15-1.30 亿美元` | EBITDA 约 `0.43-0.50 亿美元` | 高于公司平均 | 符合交易材料 | CY2025 `1.08 亿美元` sales、`~38%` EBITDA margin、`~70%` consumables | 保留 | 利息和摊销短期压 EPS |
+| Facet fuel/fluid filtration | 乐观产品 | `1.35-1.60 亿美元` | EBITDA 约 `0.52-0.65 亿美元` | 上行 | 高于当前预期 | A&D/Power Generation/backup power 交叉销售 | 保留但需 FY2027 指引 | 产能和认证客户转移 |
+| Facet fuel/fluid filtration | 极度乐观产品 | `1.80-2.20 亿美元` | EBITDA 约 `0.70-0.90 亿美元` | 高位 | 显著高于预期 | 多终端同时强、耗材扩张 | 下移为乐观上限 | NTM 证据不足，不能只因 data center 备电题材上移 |
+| D2C coolant filtration skid + PP100-HF | 悲观产品 | `0-1000 万美元` | 对公司利润不可见 | 无明显影响 | 低于产品叙事 | 无客户/订单披露 | 保留 | 液冷项目延后或被系统商内置过滤替代 |
+| D2C coolant filtration skid + PP100-HF | 基准产品 | `1000-3500 万美元` | 初装+滤芯贡献小，毛利率可能高于普通工业但规模太小 | 小幅正向 | 略高于当前披露但不改变公司 | 官方 D2C skid 和 PP100-HF 产品；行业过滤池未来 1 年基准 `3-7 亿美元` | 保留为小额基准，不独立拉高公司 | 缺少 hyperscaler/CDU design-in 和订单金额 |
+| D2C coolant filtration skid + PP100-HF | 乐观产品 | `4000-8000 万美元` | 经营利润约 `1200-3000 万美元`，滤芯复购提升质量 | 上行 | 高于当前预期 | 进入 1-2 个大型液冷集成商或 colo 体系 | 保留但可信度中低 | 需要“谁买、何时确认、为何 DCI 捕获”证据 |
+| D2C coolant filtration skid + PP100-HF | 极度乐观产品 | `1.0-1.8 亿美元` | 经营利润约 `3500-8000 万美元` | 明显上行 | 显著高于当前预期 | 成为多个 CDU/TCS/FCS 标准过滤包 | 移入附录/乐观上限 | 任一客户、产能、认证、服务环节缺证据则不能留在 NTM 主情景 |
+| Life Sciences | 悲观产品 | `3.15-3.35 亿美元` | 利润率维持中低位 | 下行 | 低于指引 | bioprocessing 资本开支弱，Disk Drive 转弱 | 保留 | FY2025 减值反证 |
+| Life Sciences | 基准产品 | `3.40-3.70 亿美元` | 经营利润约 `0.30-0.40 亿美元` | 小幅改善 | 符合指引 | Q3 `+12.7%`，Food & Beverage 和 Disk Drive 强 | 保留 | mix 若转向低质量资本设备则风险上升 |
+| Life Sciences | 乐观产品 | `3.8-4.2 亿美元` | 经营利润约 `0.42-0.55 亿美元` | 上行 | 高于指引 | Disk Drive/microelectronics/Medica 同时贡献 | 保留但需订单 | 生物工艺复苏尚未充分验证 |
+| Life Sciences | 极度乐观产品 | `4.8-5.5 亿美元` | 利润大幅上行但需规模和 mix 同时改善 | 明显上行 | 显著高于预期 | Bioprocessing 资本开支重启并高质量复购 | 移入附录 | 过去减值使极度乐观缺乏 NTM 证据 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：汇总产品级贡献，去除 D2C 与 Industrial 的重复计算，按 NTM 公司总收入、毛利率、经营利润率、EBITDA、净利润和自由现金流方向评估经营传导。当前预期锚为 FY2026 organic sales `+3%-5%`、Facet Q4 `2500-3000 万美元`、FY2026 adjusted OM `15.8%-16.2%`、TTM 收入约 `38.08 亿美元`、Q3 年化约 `39.8 亿美元`。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `38.5-39.5 亿美元` | 约 `+1%-4%` vs TTM | 低于 FY2026 organic 指引延续和 Facet 全年化预期 | `33.0%-34.0%` | `14.5%-15.2%` | EBITDA `6.9-7.3 亿美元`；净利润 `3.9-4.3 亿美元` | FCF 低于基准，约 `3.3-3.9 亿美元` | 中 | Aftermarket 放缓、Industrial 转产低效持续、Facet 整合稀释、Life Sciences 放缓、D2C 无收入 |
+| 基准公司 | `40.5-41.5 亿美元` | 约 `+6%-9%` vs TTM | 基本符合当前 run-rate、FY2026 指引正常兑现和 Facet 全年并表 | `34.0%-35.0%` | `16.0%-16.5%` | EBITDA `7.6-8.0 亿美元`；净利润 `4.6-4.9 亿美元` | FCF 健康，约 `3.9-4.6 亿美元`，受利息/营运资本影响 | 中高 | Industrial margin 修复速度、Facet 整合和 D2C 可见订单不足 |
+| 乐观公司 | `42.5-44.0 亿美元` | 约 `+12%-16%` vs TTM | 高于当前预期，且不是单一小基数项目造成 | `34.8%-35.8%` | `16.8%-17.4%` | EBITDA `8.3-8.9 亿美元`；净利润 `5.1-5.6 亿美元` | FCF 上行，约 `4.5-5.2 亿美元` | 中 | 需要 Aftermarket 高个位数、Industrial 修复、Facet 超预期和 D2C/Power Gen 小额增量同时成立 |
+| 极度乐观公司 | `45.5-47.5 亿美元` | 约 `+20%-25%` vs TTM | 显著高于当前预期，需多个核心传导环节同时突破 | `35.8%-37.0%` | `18.0%-19.0%` | EBITDA `9.5-10.5 亿美元`；净利润 `6.0-6.8 亿美元` | FCF 明显上行，约 `5.4-6.5 亿美元` | 低 | D2C 过滤 `1 亿美元+`、Facet `1.8 亿美元+`、Industrial 高毛利修复、Life Sciences 高质量复苏都需证据；当前不具备主情景证据 |
+
+汇总检查：
+
+- D2C coolant filtration 是 Industrial Solutions 内部子集，公司汇总时不与 Industrial 重复相加。
+- Facet 是已完成收购的新增收入，但 FY2026 只有 Q4 部分贡献；NTM 可以按全年并表处理，仍需扣除利息和摊销对净利润的影响。
+- AI 数据中心液冷行业收入池很大，但 DCI 只有过滤 skid、滤芯、监测/服务的一小段可触达价值，且当前缺客户/订单证据。
+- 收入增长若来自低毛利项目型 Power Generation 或 first-fit，不能自动转换为利润率扩张；只有 Aftermarket、Facet consumables 和滤芯复购占比提升才改善利润质量。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：不重新预测经营结果，只校准前四步情景。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。同一风险只在实际影响层级处理一次，不重复惩罚。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q3 收入 `9.951 亿美元`、同比 `+5.8%`，前 9 个月 `28.268 亿美元`、同比 `+4.3%` | 公司汇总 | 支撑基准收入接近 `40.5-41.5 亿美元` | 支撑基准 OM 不低于 FY2026 指引 | 收入 run-rate 稳定 | 基准保留 |
+| FY2026 organic sales 指引 `+3%-5%`，Facet Q4 sales `2500-3000 万美元` | 公司汇总/Facet | 支撑 Facet 全年化进入 NTM 基准 | Facet FY2026 OM 影响不显著，但 FY2027 有望增厚 | 新债利息先压 EPS | 基准保留 |
+| Mobile Aftermarket Q3 `4.976 亿美元`、同比 `+8.1%` | 产品贡献 | 支撑最大收入底座 | 高 mix 支撑利润质量 | 替换件现金流强 | 基准保留，乐观保留 |
+| Industrial Solutions Q3 利润率 `13.4%`，去年同期 `18.1%` | 产品贡献/公司利润 | 不一定压收入，但限制利润兑现 | 明确压低工业利润率 | 转产和客户定制影响执行 | 悲观保留；基准利润率不激进 |
+| 10-Q 显示长期 remaining performance obligations 不显著 | 收入基数/执行可信度 | 限制把 backlog 直接资本化为 NTM 收入 | 限制规模杠杆假设 | 订单可见度低于重设备公司 | 乐观下移一档可信度 |
+| Facet CY2025 sales `1.08 亿美元`、EBITDA margin `~38%`、consumables `~70%` | 收入基数/利润 | 支撑 `1.15-1.30 亿美元` NTM 基准 | 改善 mix 和 EBITDA | 现金生成好但有收购债务 | 基准保留，乐观保留 |
+| Facet purchase price 高、整合和未发现负债风险 | 现金流/执行 | 不直接压需求，但可能影响兑现 | 摊销、利息和整合成本压净利 | ROIC 和现金流回收期风险 | 悲观保留；不重复压收入 |
+| Donaldson D2C coolant filtration skid 和 PP100-HF 产品已发布 | 需求/收入基数 | 支撑 D2C 小额基准和乐观上限 | 滤芯耗材有潜在高毛利 | 需要项目 qualification | 乐观保留，基准仅小额 |
+| 无 hyperscaler、CDU/TCS/OEM 客户名、PO 金额或认证名单 | 收入基数/执行可信度 | 限制 D2C 进入大额基准 | 限制高毛利复购假设 | 不足以确认 NTM 大额收入 | 极度乐观移入附录/乐观上限 |
+| 行业资料显示未来 1 年 coolant filtration skid/滤芯/监测市场基准 `3-7 亿美元`、乐观 `7-12 亿美元` | 需求 | 支撑外部需求池真实增长 | 过滤耗材和监测有高 ROIC 潜力 | 行业需求不等于 DCI 收入 | 需求乐观保留，收入基准不自动上移 |
+| Life Sciences Q3 `+12.7%`，但 FY2025 bioprocessing 相关减值 `6200 万美元` | 产品贡献/可信度 | 支撑基准增长 | mix 好才改善利润率 | 避免资本品复苏过度外推 | 基准保留，极度乐观移入附录 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | 收入 `38.5-39.5 亿美元`，OM `14.5%-15.2%` | Industrial 执行低效、D2C 订单不可见、Facet 整合风险真实存在 | Aftermarket 和 Life Sciences 当前仍强，Facet 已完成收购 | 保留 | 公司悲观情景 | 中 | Industrial 转产低效只在利润率层级处理，不再重复压 D2C 需求 |
+| 基准 | 收入 `40.5-41.5 亿美元`，OM `16.0%-16.5%` | Q3 run-rate、FY2026 organic 指引、Facet Q4 贡献、Aftermarket 强 | D2C 大额收入缺证据，Industrial margin 尚未完全修复 | 保留 | 公司基准情景 | 中高 | D2C 订单不可见只限制 D2C 独立上修，不否定 Mobile/Facet 基准 |
+| 乐观 | 收入 `42.5-44.0 亿美元`，OM `16.8%-17.4%` | Aftermarket 高个位数、Facet 高耗材、Power Generation backlog、液冷过滤行业池增长 | backlog 未量化，D2C 客户未披露，Life Sciences 质量需验证 | 保留 | 公司乐观情景 | 中 | 不能因 D2C 无客户而惩罚 Facet 或 Aftermarket |
+| 极度乐观 | 收入 `45.5-47.5 亿美元`，OM `18.0%-19.0%` | 多业务同向突破时理论上可达；行业液冷过滤池有高增速 | D2C 缺客户/订单，Facet 超高速缺证据，Industrial 项目型毛利不确定，Life Sciences 曾减值 | 下移 | 乐观上限/附录跟踪 | 低 | 同一个“AI 数据中心建设延迟”只限制 D2C/Power Gen，不重复压 Mobile Aftermarket |
+
+## 8. 结论
+
+- 最可能情景：基准公司情景。NTM 收入最可能落在 `40.5-41.5 亿美元`，较 TTM `38.08 亿美元`约增长 `6%-9%`。增长来源顺序是 Facet 全年并表、Mobile Aftermarket 正常复购、Life Sciences 正常增长、Industrial/Power Generation 温和修复；D2C coolant filtration 是小额增量和跟踪项，不是基准主驱动。
+- 利润/现金流结论：基准经营利润率约 `16.0%-16.5%`，EBITDA 约 `7.6-8.0 亿美元`，自由现金流保持健康但受 Facet 新债利息、收购整合和营运资本时点影响。利润质量改善必须来自 Aftermarket、Facet consumables、滤芯复购和 Industrial 执行修复，而不是单纯收入上修。
+- 主要传导瓶颈：D2C liquid cooling 过滤从行业需求到 DCI 收入之间至少有四个门槛：客户/系统认证、CDU/TCS/FCS 设计导入、可交付 skid/滤芯/服务包、耗材复购路径。当前只看到产品和行业需求，没有看到公开客户和订单金额。
+- 乐观情景成立条件：Aftermarket 维持高个位数增长；Industrial Power Generation 转产效率恢复并带动利润率回升；Facet FY2027 指引显示 `1.30 亿美元+`收入和高 EBITDA margin；D2C 过滤出现至少 1-2 个可验证的大型 CDU/TCS/OEM/colo design-in。
+- 极度乐观情景成立条件：D2C coolant filtration 在 NTM 内做到 `1 亿美元+`可确认收入，Facet 接近 `1.8 亿美元+`，Industrial 利润率恢复到高位，Life Sciences 高质量复苏，同时没有明显营运资本吞噬。当前证据不足，只能作为附录/跟踪上限。
+- 悲观情景触发条件：Aftermarket 增速转负或低个位数；Industrial Q4/FY2027 继续受转产和客户定制拖累；Facet Q4 低于 `2500 万美元`或 FY2027 增厚不明显；Life Sciences 增长来自低质量资本设备；D2C 产品停留在产品页而无客户/订单披露。
+- 后续跟踪数据：FY2026 Q4 Facet 实际 sales、FY2027 Facet 指引、Industrial Solutions 税前利润率、Power Generation 转产评论、D2C coolant filtration 客户/订单/认证、contract liabilities 和 backlog 是否量化、Aftermarket 独立渠道增长、Life Sciences 中 Food & Beverage/Disk Drive 与 bioprocessing 的 mix。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务数据截至 FY2026 Q3，即季度截至 2026-04-30，财报发布日 2026-06-02；本报告日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Donaldson FY2026 Q3 results：Q3 sales `9.951 亿美元`，adjusted EPS `1.06 美元`，adjusted OM `16.6%`，FY2026 organic sales 指引 `+3%-5%`，Facet Q4 sales `2500-3000 万美元`。
+  - Donaldson FY2026 Q3 Form 10-Q：9M sales `28.268 亿美元`，Mobile/Industrial/Life Sciences 分部收入与利润率，Facet 2026-05-04 后续事项、新债和长期 RPO 说明。
+  - Donaldson Facet acquisition presentation：Facet CY2025 sales `1.08 亿美元`，EBITDA margin `~38%`，consumables `~70%`，终端包括 aerospace & defense、power generation、backup power & data centers。
+  - Donaldson data center coolant filtration skid page 和 PP100-HF datasheet：D2C skid 面向 CDU/TCS；PP100-HF 相对 size 2 bag filter 表面积 `14.6x`、推荐流量 `1.4x`、DHC `3.5x`，规格包括 `1/2/5/10/20/40 micron`、最高温度 `82 C`、推荐更换压差 `35 psi`。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 补充：organic sales `+3%-5%`，Facet 仅贡献最后一季度 `2500-3000 万美元`，因此 FY2026 不是 Facet 全年化口径。
+  - FY2027 补充：Facet 全年并表会成为 reported growth 的确定性增量；但利息、摊销和整合费用会影响净利润传导。
+  - 长期远期期权：D2C coolant filtration 若进入多个 AI rack/CDU 标准 BOM，滤芯复购和在线监测可能改变 Industrial Solutions 增长质量；但在公开客户、订单和认证出现前，不进入 NTM 基准大额收入。
+- 主要来源：
+  - Donaldson FY2026 Q3 results, 2026-06-02: https://ir.donaldson.com/news/news-details/2026/Donaldson-Reports-Record-Third-Quarter-Fiscal-2026-Sales-and-Earnings/default.aspx
+  - Donaldson FY2026 Q3 10-Q, quarter ended 2026-04-30: https://s204.q4cdn.com/581939372/files/doc_financials/2026/q3/DCI-2026-04-30-10-Q.pdf
+  - Donaldson Q3 FY2026 earnings call transcript, 2026-06-02: https://s204.q4cdn.com/581939372/files/doc_financials/2026/q3/Q3-26_DCI_Transcript_02-June-2026.pdf
+  - Donaldson completes acquisition of Facet, 2026-05-04: https://ir.donaldson.com/news/news-details/2026/Donaldson-Completes-Acquisition-of-Facet-Filtration/default.aspx
+  - Donaldson to acquire Facet presentation, 2026-02-02: https://s204.q4cdn.com/581939372/files/doc_presentations/2026/Feb/02/Donaldson-Acquires-Facet-Presentation.pdf
+  - Donaldson D2C coolant filtration skid product page: https://info.donaldson.com/en-amer-data-centers.html
+  - Donaldson PP100-HF product data sheet: https://www.donaldson.com/content/dam/donaldson/compressed-air-and-process/literature/north-america/liquids/filter-elements/pp100-hf/PP100-HF-Absolute-Polypropyene-Elements.pdf
+  - 项目内公司资料：`公司调研/机电_冷却_工程_水处理_边缘工业AI/DCI_Donaldson_Company_公司调研_2026-06-11.md`
+  - 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_冷却液、水处理、过滤与制冷剂_2026-06-11.md`
+  - 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md`
+  - 项目内行业资料：`行业调研/AI园区电力_机电_冷却/行业调研_液冷小组件与流体控制_2026-06-10.md`

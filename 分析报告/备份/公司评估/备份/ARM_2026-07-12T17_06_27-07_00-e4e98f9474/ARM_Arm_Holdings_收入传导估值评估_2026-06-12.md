@@ -1,0 +1,154 @@
+# 公司收入传导与价值传导评估：Arm Holdings
+
+> 公司代号：ARM  
+> 公司名称：Arm Holdings plc  
+> 报告日期：2026-06-12  
+> 主口径：NTM，约未来 12 个月或未来 4 个季度。本文把 FY2026、FY2027、FY2028、长期 demand 和 run-rate 只作为补充校准，不替代 NTM 主表。  
+> 资料边界：本报告使用 `公司调研/AI计算芯片_EDA_IP_custom_ASIC/ARM_Arm_Holdings_公司调研_2026-06-11.md`、`行业调研/AI服务器_存储_芯片/` 与 `行业调研/产业背景/` 下相关行业资料，并用 Arm 官方 shareholder letter、SEC 6-K、Arm AGI CPU 产品页、Arm Total Design 页面、Meta/Arm 公告补充核验。未读取、引用或继承 `特征量化/`、Signals、结构化评分、回归或模型比较内容。  
+> 排除事项：本文不做全公司排序，不给投资评级，不判断股价区间，不用股价、P/E、P/S 或估值倍数作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 公司收入、利润和自由现金流传导；FY2027/FY2028 AGI CPU demand、长期 `$15B` silicon business 目标和远期 chiplet/AI infrastructure 机会只作补充或极度乐观校准。
+- 当前收入基准、指引和 run-rate：FY2026 收入 `$4.920B`，同比 `+23%`；royalty revenue `$2.613B`，同比 `+21%`；license and other revenue `$2.307B`，同比 `+25%`。Q4 FY2026 收入 `$1.490B`，Q1 FY2027 指引 `$1.26B +/- $50M`；ACV `$1.660B`，同比 `+22%`；RPO `$2.071B`，同比 `-7%`。
+- 重要产品/业务线：`License/CSS/Arm Total Design`、`核心非云 royalty`、`Cloud AI/Neoverse/DPU/SmartNIC royalty`、`Arm AGI CPU direct silicon`、`软件/工具/生态支持`。
+- NTM 公司收入四情景：悲观 `$5.25-5.70B`，基准 `$5.90-6.25B`，乐观 `$6.35-6.85B`，极度乐观 `$7.10-7.80B`。相对 FY2026 的绝对增量分别约 `$0.33-0.78B`、`$0.98-1.33B`、`$1.43-1.93B`、`$2.18-2.88B`。
+- 利润或 EBITDA 四情景：Arm 不披露 EBITDA 作为核心指引，本报告用 non-GAAP operating income / GAAP net income / FCF 方向替代。基准情景 non-GAAP operating income 约 `$2.45-2.85B`，GAAP 净利润大概率继续受 SBC、R&D 和 AGI CPU 前置投入压制；极度乐观只有在 license/CSS 与 royalty 同步强于预期时才允许利润率扩张，否则 AGI CPU 硬件收入会稀释毛利率。
+- 最大传导瓶颈：AGI CPU 从需求信号转收入确认，受 TSMC 3nm、DDR5、封装、测试、服务器/rack validation 和客户软件迁移约束；Cloud AI royalty 缺少端市场收入披露，无法机械按 AI capex 放大。
+- 最大利润率变量：高毛利 license/CSS/royalty mix 与 AGI CPU direct silicon 毛利的组合。如果新增收入主要来自 royalty/license，利润弹性强；如果新增来自初期 AGI CPU 硬件，收入弹性强但毛利和营运资本质量低于纯 IP。
+- 最大现金流变量：R&D、工程支持、PP&E/供应链预付款、AGI CPU 库存和验收周期。FY2026 non-GAAP FCF `$882M` 已改善，但 Q4 FCF 同比 `-7%`，说明硬件化和投入扩张会影响现金转化。
+- 可信度：基准为中高。公司总收入、license/royalty、ACV/RPO、指引和毛利率证据为 A 级；Cloud AI 端市场拆分和 AGI CPU ASP/产能爬坡为 B/C 级；远期 `$2B+` demand 和 `$15B` silicon business 目标不能直接进入 NTM 基准，只能小比例纳入或作为乐观/极度乐观校准。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| License / CSS / Arm Total Design | FY2026 license and other `$2.307B`；其中 Neoverse/CSS/cloud/networking license 本报告估计约 `$0.35-0.80B` | 46.9% 披露口径；CSS 子项无法可靠量化 | 决定未来 royalty rate、客户 tapeout 和 AI custom silicon 设计税 | A：license 总额；B：ACV/RPO；C：CSS 子项估算 | 进入基准，按 A/B 证据保守纳入 | Arm Total Design / chiplet marketplace 更大规模商业化偏 2027+ |
+| 核心非云 royalty：smartphone、edge AI、physical AI、auto/IoT | FY2026 royalty 总额 `$2.613B`；扣除 Cloud AI 估算后约 `$2.1-2.3B` | 约 43%-47%，估算 | 当前利润根基和现金流稳定器 | A：royalty 总额；C：端市场拆分 | 进入基准，按成熟 royalty 业务处理 | 机器人、汽车 AI 和端侧 AI royalty per chip 上修 |
+| Cloud AI / Neoverse / DPU / SmartNIC royalty | FY2026 data-center-related royalty 估计 `$0.30-0.50B`；Q4 data center royalty more than doubled YoY | 约 6%-10%，估算 | NTM 增量最强的 royalty 方向 | A：royalty 总额和 data center >2x 方向；C：金额拆分 | 小比例进入基准，乐观以上才放大 | Vera/Rubin、Graviton、Axion、Cobalt、Trainium/TPU/MTIA host/control 放量 |
+| Arm AGI CPU direct silicon | FY2026 约 `$0`；官方披露 FY2027/FY2028 customer demand `>$2B`，supply-backed outlook 约 `$1B`，FY2027 Q4 首批 production revenue 约 `$90-100M` | 0% 当前收入 | 改变商业模式的关键新品 | B：官方 demand/时间表；C：ASP、客户验收、供应链 | 基准只纳入小额 Q4 FY2027 收入；大部分进入乐观/极度乐观 | 若供应从 `$1B` 向 `>$2B` demand 靠拢，可成为 FY2028+ 主线 |
+| 软件/工具/生态支持：Performix、KleidiAI、firmware、compiler、开发系统 | 无法可靠量化，主要包含在 license and other / support 中 | 无法可靠量化 | 提高客户迁移、validation、续约和 AGI CPU 采用可信度 | C/D：产品与生态证据强，单独收入披露弱 | 不单列 NTM 收入，作为 license 与 AGI CPU 兑现条件 | 若 software/support 形成独立高价模块，进入 2027+ 跟踪 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估外部需求池，不判断 Arm 份额、收入确认和利润率。需求单位按最能解释业务的指标选择：license/CSS 用 ACV、RPO、CSS license/design win；royalty 用客户芯片出货、Armv9/CSS mix、云 CPU/DPU attach；AGI CPU 用 demand、supply-backed outlook、系统可订购和客户 validation。四情景均相对当前需求锚判断。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| License / CSS / Arm Total Design | ACV `$1.660B`，`+22%`；RPO `$2.071B`，`-7%`；Q3 FY2026 累计 21 个 CSS licenses / 12 家公司；Q4 继续签 next-gen CSS | CSS/design-win 节奏放缓，ACV 低双位数增长或 RPO 继续下滑 | ACV 维持约 `+18-25%`，license 大单正常波动，RPO 不再显著恶化 | AI custom silicon / chiplet 项目加速，CSS 大单和 Arm Total Design bundle 同时增强 | CSS/Total Design 成为多家 hyperscaler / custom ASIC 设计默认入口，ACV >`+35%` | 悲观：ACV 增量低于 `$0.2B`；基准：`+$0.25-0.40B`；乐观：`+$0.45-0.65B`；极乐观：`+$0.70B+` | 基准符合当前预期；乐观以上需要新 CSS/license 大单证据 | 正向：AI ASIC 复杂度、HBM/PCIe/CXL/IP 需求上升；反证：大客户自研 subsystem、license timing、RPO 下滑 |
+| 核心非云 royalty | FY2026 royalty `$2.613B`；Q4 royalty `$671M`，`+11%`；Armv9/CSS 提高 royalty per chip | 手机/消费和汽车/IoT 节奏低于预期，royalty 总增速落到低双位数 | smartphone/edge/auto 正常出货，Armv9/CSS mix 抬升抵消终端低增速 | premium Android、edge AI、auto/physical AI 共同推高 royalty per chip | 端侧 AI 换机、汽车/机器人和 Armv9/CSS 渗透同时上修 | 悲观：总 royalty 增量主要来自 cloud，非云几乎持平；基准：非云 `+$0.20-0.35B`；乐观：`+$0.35-0.55B`；极乐观：`+$0.55B+` | 基准到中高，绝对增长不等于爆发 | 正向：Armv9、Lumex/CSS、端侧 AI；反证：手机周期、客户压 royalty rate、RISC-V 低端替代 |
+| Cloud AI / Neoverse / DPU / SmartNIC royalty | Q4 data center royalty more than doubled YoY；top hyperscaler CPU compute share about 50%；行业侧显示 AI rack 对 host CPU/DPU/control plane 需求提升 | AI CPU/control attach 增长慢于预期，云厂自研把价值内部化，Arm royalty per unit 较低 | data center royalty 继续高于公司平均增速，但金额仍小于手机/edge royalty | Vera、Graviton、Axion、Cobalt、DPU/SmartNIC 和 custom ASIC control cores 同时放量 | agentic AI CPU capacity、DPU/AI NIC attach 和云 ASIC control plane 同时非线性上修 | 悲观：Cloud AI royalty 仅 `+$0.05-0.10B`；基准：`+$0.20-0.35B`；乐观：`+$0.35-0.60B`；极乐观：`+$0.70B+` | 基准为高于当前公司平均增速但不直接等同 AI capex | 正向：AI rack control plane；反证：Arm 不拿 GPU/HBM 主价值池，DPU/NIC royalty per chip 小 |
+| Arm AGI CPU direct silicon | FY2027/FY2028 customer demand `>$2B`；supply-backed outlook 约 `$1B`；Meta lead/co-developer；系统可从 Supermicro、Lenovo、Quanta、ASRock 订购 | 需求停留在 interest / evaluation，供应链或 validation 延迟，FY2027 Q4 低于 `$90M` | FY2027 Q4 首批 production revenue `$90-100M` 正常兑现，NTM 只贡献小额 | 供应、客户 qualification 和软件迁移进展快于预期，FY2028 visibility 上修 | supply-backed outlook 从 `$1B` 快速向 `>$2B` demand 靠拢，Meta/OpenAI/enterprise private AI 同时采用 | 悲观：`$0-50M`；基准：`$90-150M`；乐观：`$250-500M`；极乐观：`$500-900M` | 基准只允许小额收入；乐观以上为高证据门槛 | 正向：官方 demand、Meta、OEM 可订购；反证：3nm/DDR5/package/test、x86/NVIDIA/云厂自研竞争、客户冲突 |
+| 软件/工具/生态支持 | 22M+ developers、KleidiAI/PyTorch/vLLM/firmware/Performix 等生态；Arm Total Design 包含 commercial software/firmware support | 软件迁移不足，AGI CPU 只作为硬件试点 | 支撑客户迁移和 license续约，但不单独收入化 | 软件工具成为客户采用 AGI CPU / Neoverse 的关键条件，增强 license pricing | software/support 被产品化为高价值企业模块 | 无法可靠量化；以收入兑现可信度体现 | 基准为支撑项，不作为单独需求池放大 | 正向：生态深、迁移成本高；反证：客户自研优化栈、开源替代、单独收费能力弱 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断外部需求中哪些能进入 Arm NTM 收入表，以及当前可收入化基数。可参与需求不等于可确认收入；云厂 AI capex、GPU/HBM 订单、TPU/Trainium/MTIA 总预算和整机/rack 价值不得直接作为 Arm 收入。证据等级按收入表可确认性处理。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| License / CSS / Arm Total Design | FY2026 license and other `$2.307B`；Q4 `$819M`；ACV `$1.660B`；RPO `$2.071B` | 直接 | 高毛利 IP/license；R&D/FAE 前置 | `$2.35-2.60B` | `$2.70-2.95B` | `$3.00-3.35B` | `$3.45-3.80B` | 基准符合 Q1 指引和 ACV；乐观需 license 大单强于当前节奏 | A/B；CSS 子项 C | 是 | 已披露收入、ACV/RPO、CSS license 数量 | 进入 NTM 主口径；不把 chiplet TAM 直接计入 |
+| 核心非云 royalty | FY2026 royalty 总额 `$2.613B`，估计非云 `$2.1-2.3B` | 直接 | 增量毛利极高，现金流好 | `$2.05-2.30B` | `$2.35-2.60B` | `$2.60-2.85B` | `$2.85-3.05B` | 基准为正常兑现；乐观需 Armv9/CSS mix 和端侧 AI 同时上修 | A 总额；C 拆分 | 是 | royalty 已披露，端市场拆分需估算 | 进入 NTM 主口径，但不把端侧 AI 叙事机械放大 |
+| Cloud AI / Neoverse / DPU / SmartNIC royalty | Q4 data center royalty more than doubled；FY2026 related royalty 估计 `$0.30-0.50B` | 直接但金额低披露 | 高毛利 royalty，但 per chip 价值小于 GPU/网络硬件 | `$0.35-0.50B` | `$0.55-0.80B` | `$0.85-1.15B` | `$1.20-1.55B` | 基准高于当前公司平均增长；极乐观需多平台共振 | A 方向；C 金额 | 是，小比例 | data center royalty >2x、cloud CPU share、行业 CPU/control plane 需求 | 进入 NTM，但必须与核心 royalty 去重 |
+| Arm AGI CPU direct silicon | FY2026 约 `$0`；FY2027 Q4 expected `$90-100M` production revenue；FY2027/FY2028 demand `>$2B` | 直接 | 初期硬件毛利低于 IP，营运资本更重 | `$0-0.05B` | `$0.09-0.15B` | `$0.25-0.50B` | `$0.50-0.90B` | 基准只是首批收入；乐观/极乐观为 supply/validation 上修 | B/C | 是，小额 | 官方 demand、supply-backed outlook、OEM 可订购、Meta lead | 基准小额纳入；多数机会进乐观/极度乐观 |
+| 软件/工具/生态支持 | 单独收入无法可靠量化，主要嵌入 license/support | 间接 | 高毛利但收入披露弱 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 无法可靠量化 | 支撑收入确认可信度，不单独拉收入 | C/D | 否，单独不进入 | 产品页、生态和客户迁移证据，不等于单独收入 | 作为 license/AGI CPU 兑现条件，不单独加总 |
+| 排除项：GPU/HBM/整机/rack/云 AI 服务总收入 | NVIDIA GPU、HBM、整机、云服务和数据中心 capex 不是 Arm 收入 | 间接 | 不归 Arm | `$0` | `$0` | `$0` | `$0` | 不纳入当前预期 | E | 否 | 只有行业相关性，Arm 不捕获全额 | 排除；只作为需求背景 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从需求和收入基数出发，评估每个重要产品在 NTM 内对 Arm 的收入和利润贡献。金额为 NTM 区间或估算，非公司指引；产品级乐观不能机械相加为公司乐观，因为 license timing、royalty 滞后、AGI CPU 供应链和客户预算存在重叠。利润贡献以毛利率方向、non-GAAP operating leverage 和现金转化方向表达，无法可靠量化时明确说明。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| License / CSS / Arm Total Design | 悲观 | `$2.35-2.60B` | 高毛利但 R&D/FAE 吃掉部分杠杆 | non-GAAP operating leverage 弱 | 低于当前预期 | RPO 同比 `-7%`、license timing 风险 | 保留悲观 | 大单季度波动、客户自研 subsystem |
+| License / CSS / Arm Total Design | 基准 | `$2.70-2.95B` | 主要利润池之一，毛利接近公司平均 | 稳定到小幅改善 | 符合 ACV/指引/run-rate | FY2026 license `$2.307B`，ACV `+22%` | 保留基准 | RPO 绝对值未增长，CSS 子项未披露 |
+| License / CSS / Arm Total Design | 乐观 | `$3.00-3.35B` | 高增量毛利，经营杠杆较好 | 改善 | 高于当前预期 | AI ASIC、chiplet、CSS license 加速 | 保留乐观 | 需要明确大客户 license 或 ACV 再加速 |
+| License / CSS / Arm Total Design | 极度乐观 | `$3.45-3.80B` | 若不显著增加支持成本，利润率明显上修 | 明显改善 | 显著高于预期 | 多个 hyperscaler/custom ASIC 同时签大单 | 下移为极乐观上限 | 缺少 NTM 内可验证订单节奏 |
+| 核心非云 royalty | 悲观 | `$2.05-2.30B` | 增量毛利高但增长弱 | 稳定 | 低于当前预期 | Q4 royalty 仅 `+11%`，手机 tough comp | 保留悲观 | 手机/消费弱、royalty rate 压力 |
+| 核心非云 royalty | 基准 | `$2.35-2.60B` | 高现金转化，是公司利润底座 | 稳定 | 符合当前预期 | FY2026 royalty `+21%`，Armv9/CSS mix | 保留基准 | 端市场拆分不披露 |
+| 核心非云 royalty | 乐观 | `$2.60-2.85B` | 增量毛利强，现金流改善 | 小幅改善 | 高于当前预期 | premium Android、edge AI、auto/physical AI mix | 保留乐观 | 需要终端出货和 mix 同时强 |
+| 核心非云 royalty | 极度乐观 | `$2.85-3.05B` | 高毛利但非线性空间有限 | 小幅改善 | 明显高于预期 | 端侧 AI 换机和 auto/robotics 同步上修 | 下移为乐观上限 | 成熟业务不应按 AI 题材非线性放大 |
+| Cloud AI / Neoverse / DPU / SmartNIC royalty | 悲观 | `$0.35-0.50B` | 高毛利，但金额小 | 稳定 | 低于 AI 叙事预期 | 云厂自研和垂直整合吸收价值 | 保留悲观 | Arm 不拿 GPU/HBM/网络硬件主利润 |
+| Cloud AI / Neoverse / DPU / SmartNIC royalty | 基准 | `$0.55-0.80B` | 高毛利增量，带动 royalty mix | 改善 | 符合当前 Cloud AI 加速预期 | data center royalty >2x、top hyperscaler CPU share about 50% | 保留基准 | 端市场金额未披露，需保守折扣 |
+| Cloud AI / Neoverse / DPU / SmartNIC royalty | 乐观 | `$0.85-1.15B` | 经营杠杆强 | 明显改善 | 高于当前预期 | Vera、Graviton、Axion、Cobalt、DPU attach 上升 | 保留乐观 | 需要多平台客户出货验证 |
+| Cloud AI / Neoverse / DPU / SmartNIC royalty | 极度乐观 | `$1.20-1.55B` | 高毛利，可显著提升公司利润质量 | 明显改善 | 显著高于预期 | agentic AI CPU/control plane 需求非线性上修 | 保留为极乐观上限 | royalty per unit 低、客户议价、云厂内部化 |
+| Arm AGI CPU direct silicon | 悲观 | `$0-0.05B` | 利润贡献低或负，研发/供应链前置 | 稀释 | 低于当前预期 | validation 或供应链延迟 | 保留悲观 | 3nm、DDR5、package、test、软件迁移 |
+| Arm AGI CPU direct silicon | 基准 | `$0.09-0.15B` | 初期毛利低于 IP，净利润贡献有限 | 稀释 gross margin，小幅拖累 OPM | 符合 Q4 FY2027 首批收入 | 官方 `$90-100M` FY2027 Q4 production revenue | 保留基准 | 只是首批 revenue，不代表 run-rate |
+| Arm AGI CPU direct silicon | 乐观 | `$0.25-0.50B` | 毛利绝对额增加，但低于 IP 质量 | 混合：收入上修，毛利率可能小幅稀释 | 高于当前预期 | demand `>$2B`，systems 可订购，Meta lead | 保留乐观 | 必须有供应和客户验收 |
+| Arm AGI CPU direct silicon | 极度乐观 | `$0.50-0.90B` | 若 ASP/TCO 溢价成立，利润贡献上修；否则只拉收入 | 取决于硬件毛利 | 显著高于预期 | supply-backed outlook 向 `>$2B` demand 靠拢 | 下移为极乐观上限 | 不能把 `>$2B` FY27/FY28 demand 全部放入 NTM |
+| 软件/工具/生态支持 | 悲观 | 无法可靠量化，已含 license | 间接拖累 AGI CPU 采用 | 中性偏弱 | 低于预期 | 迁移工具不足 | 仅作跟踪 | 单独收入披露缺失 |
+| 软件/工具/生态支持 | 基准 | 无法可靠量化，已含 license | 提高续约和客户采用可信度 | 中性偏正 | 符合预期 | 22M+ developers、Arm software ecosystem | 保留为支撑项 | 无法单独确认收入 |
+| 软件/工具/生态支持 | 乐观 | 无法可靠量化，可能提升 license ASP | 间接提高利润率 | 改善 | 高于预期 | commercial software/firmware support、KleidiAI、PyTorch/vLLM 优化 | 仅作跟踪 | 需证明可单独收费 |
+| 软件/工具/生态支持 | 极度乐观 | 无法可靠量化 | 若形成企业模块，可成为高毛利增量 | 改善 | 显著高于预期 | enterprise/private AI migration tooling | 移入附录 | NTM 缺少单独收入证据 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节为公司层面 NTM 汇总，已经对产品之间的重叠进行去重：Cloud AI royalty 是 royalty 子集，软件/生态支持不单独加总，AGI CPU demand 只按 NTM 可确认收入纳入，客户 AI capex、整机、GPU、HBM、TPU/Trainium/MTIA 总价值均不直接进入 Arm 收入。相对当前预期的基准为 Q1 FY2027 指引 `$1.26B +/- $50M`、FY2026 revenue `$4.920B`、FY2026 growth `+23%`、ACV `+22%`、RPO `$2.071B` 和管理层对 royalty/license 约 `20%` 增长的隐含节奏。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$5.25-5.70B` | `+7-16%` vs FY2026；绝对增量 `$0.33-0.78B` | 低于 Q1 FY2027 指引隐含的约 `20%` 增长路径；license timing 和 royalty 放缓同时出现 | GAAP `96.5-97.5%`；non-GAAP `97.0-98.0%` | non-GAAP `35-40%`；GAAP `10-18%` | EBITDA 无法可靠量化；non-GAAP operating income `$1.85-2.25B`；GAAP 净利率受 SBC/R&D 压制 | FCF `$0.55-0.95B`，低于 FY2026 `$0.882B` 或仅小幅改善 | 中 | license 大单断档、Cloud AI royalty 只高增小基数、AGI CPU 延迟、R&D/硬件投入前置 |
+| 基准公司 | `$5.90-6.25B` | `+20-27%`；绝对增量 `$0.98-1.33B` | 当前预期正常兑现：Q1 指引达成，royalty/license 各约 `20%+` 增长，AGI CPU 小额首批收入 | GAAP `97.2-97.8%`；non-GAAP `97.8-98.3%` | non-GAAP `41-45%`；GAAP `18-25%` | EBITDA 无法可靠量化；non-GAAP operating income `$2.45-2.85B`；GAAP净利润较 FY2026 改善但不按收入线性放大 | FCF `$0.95-1.35B`，营运资本取决于 AGI CPU 供应链 | 中高 | AGI CPU 低毛利硬件化和 R&D 扩张限制利润率扩张；Cloud AI 拆分不透明 |
+| 乐观公司 | `$6.35-6.85B` | `+29-39%`；绝对增量 `$1.43-1.93B` | 高于当前预期，license/CSS、Cloud AI royalty、AGI CPU 至少两条线超预期 | GAAP `97.0-97.8%`；non-GAAP `97.5-98.3%`，AGI CPU 可能稀释 gross margin | non-GAAP `44-49%`；GAAP `23-30%` | EBITDA 无法可靠量化；non-GAAP operating income `$2.80-3.35B`；GAAP净利润改善 | FCF `$1.15-1.70B`，但供应链预付款可能拖累转化 | 中 | 需要 AGI CPU 供应/验收、ACV 再加速、data center royalty 不只是一次性 doubled |
+| 极度乐观公司 | `$7.10-7.80B` | `+44-59%`；绝对增量 `$2.18-2.88B` | 需求、公司捕获、利润质量和执行质量同时突破；不是单一 AGI CPU 订单 | GAAP `96.5-97.5%`；non-GAAP `97.0-98.0%`，若 IP mix 更强则上沿 | non-GAAP `46-52%`；GAAP `25-34%` | EBITDA 无法可靠量化；non-GAAP operating income `$3.30-4.00B`；GAAP净利润显著改善但低于 non-GAAP 弹性 | FCF `$1.35-2.10B`；若硬件 ramp 太快，现金流可能滞后收入 | 低到中 | 需要 AGI CPU supply-backed outlook 从约 `$1B` 向 `>$2B` demand 靠拢，并且 license/CSS 和 royalty 同时强于预期 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测，只校准前四步。校准动作只使用“保留、上移、下移、排除、移入附录、仅作跟踪”。同一风险只在实际影响层级处理一次：需求风险在第 3 节，收入确认风险在第 4 节，利润和执行风险在第 5-6 节，本节只说明其对情景位置的最终处理。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 revenue `$4.920B`，license `$2.307B`，royalty `$2.613B` | 收入基数 / 公司汇总 | 提供 A 级基准；支撑 NTM `$5.90-6.25B` | gross margin 97%+ 是利润质量核心 | 现金流基础好 | 保留基准 |
+| Q1 FY2027 指引 `$1.26B +/- $50M` 与 royalty/license 约 `20%` 节奏 | 公司汇总 | 约束基准不能低于正常 run-rate，也不能无证据上修 | Q1 non-GAAP opex `$760M` 限制短期 OPM | 高 R&D 投入继续 | 保留基准 |
+| ACV `$1.660B` `+22%`，RPO `$2.071B` `-7%` | License/CSS / 收入确认 | ACV 支撑 license demand；RPO 下滑限制极度乐观 | 大单若收入化，毛利高 | 订单到收入仍受交付/确认 timing | 基准保留；极度乐观下移为上限 |
+| Q4 data center royalty more than doubled | Cloud AI royalty / 产品贡献 | 支撑 Cloud AI royalty 高于公司平均增速 | royalty 增量毛利高 | 现金转化好 | 保留乐观，基准小比例纳入 |
+| 端市场 data center royalty 金额未披露 | 可收入化 / 可信度 | 限制把 AI capex 直接映射为 Arm 收入 | 不确定 mix 对利润率影响 | 需要后续披露验证 | 下移超额假设 |
+| AGI CPU demand `>$2B` FY2027/FY2028，supply-backed outlook 约 `$1B` | 需求 / 收入基数 | 支撑乐观和极度乐观，但 NTM 基准仅纳入小额 | 初期硬件毛利低于 IP | 供应链、库存、客户验收影响现金流 | 基准保留小额；大额上修仅在乐观/极度乐观 |
+| FY2027 Q4 production revenue `$90-100M` | 收入确认 | 是 AGI CPU NTM 基准纳入的主要依据 | 利润贡献有限 | 首批收入可验证执行 | 保留基准 |
+| Arm Total Design / chiplet ecosystem 扩张 | 需求 / 长期期权 | 支撑 license/CSS 乐观；NTM 仍需合同和收入确认 | 高毛利 | 工程支持消耗资源 | 乐观保留，部分移入附录 |
+| AGI CPU 与 licensee 竞合：NVIDIA/AWS/Google/Microsoft 同时是客户和潜在竞争者 | 产品贡献 / 执行 | 限制 AGI CPU 捕获率 | 可能压 ASP/毛利 | 客户采用节奏更慢 | 悲观保留；极度乐观下移 |
+| 3nm、DDR5、package、test、rack validation | 商业兑现 / 现金流 | 限制 AGI CPU 从 demand 到 revenue | 硬件成本压低毛利 | 预付款、库存、验收周期 | 只惩罚 AGI CPU，不重复惩罚 license/royalty |
+| 核心非云 royalty 的成熟属性 | 公司组合 | 稳定底座，但非线性有限 | 高毛利 | 现金流好 | 保留基准，极度乐观下移为乐观上限 |
+| 股票价格和估值倍数 | 排除项 | 不影响经营收入预测 | 不作为利润率证据 | 不作为执行证据 | 排除 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | license timing、royalty 增速和 AGI CPU 交付任一弱于当前预期时，公司收入低于约 `20%` 增长路径 | FY2026 基数高、现金和IP模型强，完全失速概率不高 | Q4 royalty `+11%`、RPO `-7%`、AGI CPU 硬件化延迟风险 | 保留 | `$5.25-5.70B`，利润率低于基准 | 中 | AGI CPU 供应链风险只处理在 AGI CPU/公司现金流，不再压低核心 royalty |
+| 基准 | 管理层指引、FY2026 run-rate、ACV 和 royalty/license 正常兑现 | FY2026 revenue `+23%`，ACV `+22%`，Q1 FY2027 指引中点 `$1.26B`，gross margin 97%+ | Cloud AI 金额拆分弱、AGI CPU 仅首批收入 | 保留 | `$5.90-6.25B`，non-GAAP OPM `41-45%` | 中高 | RPO 下滑不重复惩罚 royalty；只限制 license 极度乐观 |
+| 乐观 | Cloud AI royalty、CSS/license 和 AGI CPU 中至少两项强于当前预期 | data center royalty more than doubled；AGI CPU demand `>$2B`；系统可订购；AI control plane 需求强 | 端市场披露不足，AGI CPU 供应和客户验收仍未证明 | 保留 | `$6.35-6.85B`，利润率小幅到明显改善 | 中 | AI capex 只作为需求背景，不直接加到 Arm 收入 |
+| 极度乐观 | 需求、公司捕获、利润质量和执行质量同时突破 | ACV/CSS 大单、Cloud AI royalty 多平台共振、AGI CPU supply-backed outlook 上修 | 任一核心环节缺少 NTM 证据：AGI CPU supply、ASP、客户验收、license timing | 下移 | 保留为可验证上限 `$7.10-7.80B`，不是基准 | 低到中 | `>$2B` FY2027/FY2028 demand 不可全部放入 NTM；不把远期期权当收入 |
+
+## 8. 结论
+
+- 最可能情景：基准偏乐观。NTM 收入最可能落在 `$5.90-6.25B`，对应 FY2026 基数的 `+20-27%` 增长。收入质量仍以高毛利 license/royalty 为主，AGI CPU 对 NTM 收入的基准贡献小，但对中期叙事和 FY2028 visibility 很关键。
+- NTM 收入结论：Arm 的 NTM 收入上修空间来自三条线：第一，License/CSS/Arm Total Design 继续以 ACV 和大单驱动；第二，Cloud AI/Neoverse/DPU royalty 高于公司平均增速；第三，AGI CPU 在 FY2027 Q4 形成首批可确认收入。不能把 AI 数据中心 capex、GPU/HBM、TPU/Trainium/MTIA 总预算直接等同为 Arm 收入。
+- 利润/现金流结论：如果增量主要来自 royalty/license，non-GAAP operating margin 可维持或上修；如果增量主要来自 AGI CPU direct silicon，收入弹性会更强，但 gross margin、working capital 和 FCF 转化会弱于纯 IP。基准 non-GAAP operating income 约 `$2.45-2.85B`；FCF 方向为改善但不线性跟随收入。
+- 主要传导瓶颈：从“可参与需求”到“可确认收入”的瓶颈集中在 AGI CPU 供应链和客户 validation；从“收入”到“利润”的瓶颈集中在硬件毛利、R&D/FAE、SBC 和供应链营运资本；从“行业需求”到“公司捕获”的瓶颈集中在端市场收入拆分不透明和 licensee 竞合。
+- 乐观情景成立条件：Q1/Q2 FY2027 royalty 增长保持 `20%+`；data center royalty 继续高增而非一次性；ACV 继续 `20%+` 或更快；CSS license/shipping customers 增加；AGI CPU 首批 revenue 和 FY2028 supply visibility 上修。
+- 极度乐观情景成立条件：AGI CPU supply-backed outlook 从约 `$1B` 向 `>$2B` demand 靠拢；Meta/OpenAI/enterprise private AI/Cloudflare/SAP/F5/SK Telecom 等客户出现真实 production deployment；license/CSS 大单和 Cloud AI royalty 同时超预期；non-GAAP operating margin 不被硬件化显著稀释。
+- 悲观情景触发条件：Q1 FY2027 低于指引；royalty 增速回落到低双位数且 data center 不再 >2x；ACV 增速下滑或 RPO 继续明显恶化；AGI CPU FY2027 Q4 首批收入延后；R&D/PP&E/库存导致 FCF 明显低于 FY2026。
+- 后续跟踪数据：Q1/Q2 FY2027 revenue、license/royalty 分拆、ACV、RPO 及 12 个月确认比例、CSS license 数量、data center royalty 是否继续 more than double、AGI CPU supply-backed outlook、FY2027 Q4 AGI CPU revenue、Meta/OpenAI/SAP/Cloudflare/F5/SK Telecom 等客户部署证据、TSMC 3nm/DDR5/package/test 供给、non-GAAP operating margin、FCF。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司财务基准截至 FY2026 Q4 / 2026-03-31；Arm Q4/FY2026 shareholder letter 和新闻稿日期为 2026-05-06；本报告生成日期为 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Arm FY2026 Q4 shareholder letter / SEC 6-K：`https://www.sec.gov/Archives/edgar/data/1973239/000197323926000062/exhibit992fye26q431-marx26.htm`
+  - Arm Q4/FY2026 newsroom summary：`https://newsroom.arm.com/news/arm-q4-fye26-results`
+  - Arm Q3 FY2026 shareholder letter：`https://investors.arm.com/node/7826/html`
+  - Arm AGI CPU product page：`https://www.arm.com/products/cloud-datacenter/arm-agi-cpu`
+  - Arm Total Design product page：`https://www.arm.com/markets/cloud-ai/arm-total-design`
+  - Meta and Arm data center silicon partnership：`https://about.fb.com/news/2026/03/meta-partners-with-arm-to-develop-new-class-of-data-center-silicon/`
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026 revenue `$4.920B`、royalty `$2.613B`、license and other `$2.307B`、GAAP gross margin `97.5%`、non-GAAP gross margin `98.2%`、GAAP operating margin `18.3%`、non-GAAP operating margin `43.0%`、operating cash flow `$1.524B`、non-GAAP FCF `$0.882B`。
+  - Q4 FY2026 revenue `$1.490B`、license `$819M`、royalty `$671M`、ACV `$1.660B`、RPO `$2.071B`、cash and short-term investments `$3.601B`。
+  - Q1 FY2027 guidance revenue `$1.26B +/- $50M`、non-GAAP opex about `$760M`、non-GAAP diluted EPS `$0.40 +/- $0.04`。
+  - AGI CPU FY2027/FY2028 customer demand `>$2B`、supply-backed outlook 约 `$1B`、FY2027 Q4 first production revenue 约 `$90-100M`；长期 `$15B` silicon business 目标只作远期校准。
+- 主要项目内来源：
+  - `公司调研/AI计算芯片_EDA_IP_custom_ASIC/ARM_Arm_Holdings_公司调研_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI服务器CPU与控制平面芯片_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_EDA工具、接口IP与Chiplet IP_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md`
+  - `行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-06-10.md`
+  - `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md`
+- 主要排除项：`特征量化/`、Signals、排序结果、市场估值倍数、股价、目标价、投资评级、数据中心总 capex、GPU/HBM/整机/rack 总金额。

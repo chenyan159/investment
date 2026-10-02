@@ -1,0 +1,145 @@
+# 公司收入传导与价值传导评估：Powell Industries（POWL）
+
+报告日期：2026-06-12（美国太平洋时间）  
+最新公开经营数据：FY2026Q2，季度截至 2026-03-31，公告日 2026-05-04，10-Q filing 日 2026-05-05。  
+NTM 主口径：2026-04-01 至 2027-03-31，因公司最新 10-Q 截至 2026-03-31。  
+货币：美元。本文只评估经营收入、利润和现金流传导，不做金融市场定价、倍数或评级判断。
+
+## 1. 一页结论
+- 主口径与补充口径：主口径为 NTM，即未来 12 个月可确认收入、毛利、经营利润和现金流兑现。FY2027、FY2028、项目全周期、800VDC/SST、更多数据中心园区 phase 只作为补充口径或远期期权。
+- 当前收入基准、指引和 run-rate：FY2026Q2 收入 `2.966 亿美元`、同比 `+6%`，毛利率 `29.6%`，净利润 `4590 万美元`；FY2026H1 收入 `5.478 亿美元`、同比 `+5%`，经营现金流 `9480 万美元`。TTM 收入约 `11.321 亿美元`。公司未给精确 FY2026 收入/EPS 指引，但称 backlog 结构和 margin profile 支撑 FY2026，毛利率预计接近 FY2025 已实现水平。
+- 订单和收入可见度：FY2026Q2 新订单 `4.897 亿美元`，book-to-bill 约 `1.7x`；3/31 backlog `18 亿美元`，其中约 `11 亿美元`预计未来 12 个月确认为收入。Q2 期后新增 `>4 亿美元` data center mega order，不在 3/31 backlog 内，若计入 pro forma backlog 可超过 `22 亿美元`。
+- 重要产品/业务线：`Data center power package`（MV/LV switchgear、eHouse/PCR、controls）、`Electric utility / generation switchgear`、`LNG/O&G power modules`、`automation/SCADA/services`、`petrochemical/light rail/other legacy`、`800VDC/SST/DC switchgear optionality`。
+- NTM 公司收入四情景：悲观 `11.5-12.8 亿美元`；基准 `13.5-15.0 亿美元`；乐观 `16.0-18.0 亿美元`；极度乐观 `19.0-21.0 亿美元`。基准不是简单按行业增速外推，而是由 `11 亿美元`12 个月 backlog、service/book-and-ship、Q2 后大单的少量前期确认和正常执行共同支撑。
+- 利润或 EBITDA 四情景：悲观净利润约 `1.50-1.85 亿美元`；基准 `2.05-2.50 亿美元`；乐观 `2.70-3.40 亿美元`；极度乐观 `3.60-4.55 亿美元`。公司未披露 EBITDA 指引，本文用经营利润率和净利润口径表达。
+- 最大传导瓶颈：不是 AI 数据中心需求是否存在，而是 Powell 能否把大额 data center / utility / LNG backlog 按设计、采购、制造、FAT、发运、现场验收和 cost-to-cost 进度变成可确认收入。
+- 最大利润率变量：data center 与 utility 大项目的 price/mix、工程复用、工厂利用率、FAT/test bay 排程、断路器/继电器/铜等供应链、固定价合同成本估计和 change order。
+- 最大现金流变量：客户 milestone payment、contract liabilities、库存和关键长交期部件预采购、保函/LC、surety bond、retainage、扩产 capex 和项目延期。
+- 可信度：公司基准情景为 `中高`。订单、backlog、收入、毛利率、现金流和产品位置证据强；但 data center 大单确认节奏、产能爬坡、客户集中和项目型固定价合同仍需估算。
+
+## 2. 重要产品清单
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| Data center power package：MV/LV switchgear、eHouse/PCR、controls | 当前 data center revenue run-rate 估 `1.2-1.8 亿美元/年`；FY2026 已披露 data center awards `>5.5 亿美元` | 约 `11-16%` TTM 收入，backlog 占比明显高于 revenue | NTM 最大增量，直接解释 commercial & other industrial 高增和经营弹性 | B/C：订单为 B，收入拆分为估算 C | 进入基准，但按交付节奏折扣；期后 `>4 亿美元`订单只小比例进入 NTM | 多 phase campus、inside data center scope、更多 NeoCloud/hyperscaler AVL |
+| Electric utility / generation switchgear and substation control | FY2026Q2 revenue `8050 万美元`；6M revenue `1.498 亿美元`；3/31 backlog 约 `30%` 来自 electric utility | Q2 `27.1%`；年化约 `3.0-3.3 亿美元` | 数据中心并网、发电接入、电网更新共振，确定性高 | A/B：收入 A，backlog/mega utility order B | 进入基准主口径 | Generation-side projects、utility automation、substation control attach |
+| LNG/O&G power modules、industrial PCR/eHouse、offshore/nearshore modules | FY2026Q2 oil & gas ex-petro revenue `1.127 亿美元`；6M `2.106 亿美元`；3/31 backlog 约 `29%` 来自 O&G ex-petro | Q2 `38.0%`；年化约 `4.2-4.7 亿美元` | 最大现有收入池；非 AI 但支撑工厂利用率，也会占用 data center 产能 | A/B | 进入基准主口径，作为收入和产能组合的关键项 | LNG export / gas pipeline / gas-to-chemical 多年周期 |
+| Automation / SCADA / PowlSmart / Remsdaq / commissioning / spares | 未单独披露；结合公司产品页和调研估 `1.2-2.2 亿美元/年`，其中 Remsdaq 小基数 | 无法可靠精确量化；估 `10-19%`，部分嵌入项目收入 | 提高系统粘性、服务毛利和 data center / utility package attach | C：产品和收购披露明确，但收入拆分不足 | 基准仅纳入小比例 attach 和服务收入，不作为公司收入主拉动 | 微电网 EMS、PQM、数字孪生、长期服务合约 |
+| Petrochemical、light rail traction power、all other legacy | FY2026Q2 petrochemical `2760 万美元`、light rail `900 万美元`、all others `1230 万美元` | Q2 合计约 `16.5%` | 可能抵消成长业务；petrochemical 仍在 FY2023 大单消化后下行 | A | 进入公司汇总，但不作为成长主线 | Petrochemical cyclical recovery；traction DC 迁移到 AI DC 需要证据 |
+| 800VDC / SST / AI DC switchgear optionality | AI 数据中心相关收入接近 0；Powell 有 DC traction switchgear 产品，非 AI DC 主线 | 接近 0；light rail/DC product 与 AI 800VDC 不可等同 | 长期结构性期权，但 NTM 基准不可收入化 | D/E：产品能力有 D，AI DC 可收入化主要是 E | 不进入 NTM 基准；乐观/极度乐观只作上限或附录跟踪 | 800VDC sidecar、SST/MVSST、DC protection、HVDC microgrid |
+
+## 3. 产品需求四情景
+- 本步口径：本步只评估 Powell 相关产品或业务线的外部需求池，不评估公司份额、收入确认、利润率或公司总收入。需求强弱以该产品自身当前需求锚为基准，重点看 NTM 内客户预算、订单节奏、交付急迫性和采购前置程度。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| Data center power package：MV/LV switchgear、eHouse/PCR、controls | 行业资料显示 2026 主收入线仍是传统 AC/MV switchgear、eHouse、预制 power block；Powell FY2026 已披露 `>5.5 亿美元` data center awards | NTM 可见需求池约 `5.5-7.5 亿美元`，客户融资、permit、BTM fuel/gas 或施工节奏拉长 | NTM 可见需求池约 `8-11 亿美元`，已签订单和项目讨论正常推进 | `12-17 亿美元`，NeoCloud/hyperscaler 加速 BTM power island 与 MW block 下单 | `20 亿美元+`，多 phase GW campus、inside/outside power scope 同时推进 | 悲观较当前路径少 `2-4 亿美元`；乐观多 `3-7 亿美元`；极度多 `10 亿美元+` | 基准符合当前订单和 backlog；乐观/极度乐观高于当前预期 | 正证：Q1/Q2/期后 mega order；行业 switchgear/eHouse backlog 强。反证：BTM 项目 permit、燃气、融资和现场施工可能延后。 |
+| Electric utility / generation switchgear | FY2026Q2 utility revenue `8050 万美元`、6M `+23%`；3/31 backlog `30%` utility；行业中压 switchgear 基准需求 `+18-30%` | 电网客户采购仍在但项目排队、材料或公共事业预算放慢，需求增速降至低双位数 | utility distribution、generation 和 data center interconnection 同步推进，需求 `+15-30%` | generation / grid upgrade orders 增强，需求 `+35-55%` | utility、data center、发电厂同时抢定制设备，需求 `+70%+` | 基准新增订单池较当前 run-rate 增 `0.5-1.0 亿美元`；乐观多 `1.5-2.5 亿美元` | 基准略高于历史 run-rate，但符合 backlog | 正证：utility mega order、backlog 结构。反证：utility interconnection study 和监管审批可能使收入跨期。 |
+| LNG/O&G power modules、industrial PCR/eHouse | FY2026Q2 O&G ex-petro revenue `1.127 亿美元`，公司称 LNG/gas pipeline/gas-to-chemical 活跃 | LNG FID 或客户 NTP 推迟，需求接近当前 run-rate 或小幅下行 | LNG export、pipeline、offshore/nearshore modules 按当前节奏延续，需求 `+5-15%` | 美国 LNG 竞争优势和 gas-to-chemical 活动增强，需求 `+20-40%` | 多个大型 LNG/offshore/generation packages 同时落地，需求 `+50%+` | 悲观比当前少 `0.3-0.7 亿美元`；乐观多 `1.0-1.8 亿美元` | 基准符合管理层对 gas/LNG 的当前表述 | 正证：O&G revenue +11%，公司称 LNG multi-year buildout。反证：油气 capex 周期、客户项目 FID 与地缘风险。 |
+| Automation / SCADA / PowlSmart / Remsdaq / commissioning / spares | Remsdaq 收购后具备 SCADA/RTU；Powell 产品页披露 LV/MV/HV condition monitoring、asset management、PMS/ENMCS/SCADA | 客户仍主要采购硬件，需求池 `<0.8 亿美元`，attach 率低 | 作为 switchgear/eHouse/utility package 小比例 attach，需求池 `1.0-1.6 亿美元` | monitoring、PQM、SCADA、commissioning 成为大型项目标准项，需求 `1.7-2.5 亿美元` | BTM microgrid 与 data center power package 标准化，需求 `3.0 亿美元+` | 基准较当前小幅增加；乐观多 `0.7-1.2 亿美元` | 基准为辅助增量，不替代硬件主线 | 正证：AI 负载动态性和 BTM 微电网提高控制价值。反证：Remsdaq 小基数，北美导入和客户认证需要时间。 |
+| Petrochemical、light rail、all other legacy | FY2026Q2 petrochemical revenue `-37%`，light rail `-10%`；传统项目制需求非 AI 主线 | Petrochemical 大单消化继续拖累，需求池 `1.2-1.6 亿美元` | Legacy demand 稳定但低增，需求池 `1.5-2.1 亿美元` | Petrochemical cyclical inflection 和 traction projects 回暖，需求 `2.1-2.6 亿美元` | Petrochemical 和 traction 同时恢复，需求 `2.6-3.2 亿美元` | 悲观比当前少 `0.4-0.7 亿美元`；乐观多 `0.4-0.8 亿美元` | 基准低于成长业务，不上调叙事 | 正证：管理层称 petrochemical early inflection。反证：FY2023 大单完成后 backlog 下滑。 |
+| 800VDC / SST / AI DC switchgear optionality | 行业资料判断 2026 仍以 design-in、样品、小批量和标准冻结为主；Powell 未披露 AI 800VDC revenue | NTM 需求接近 0，只停留在讨论和样品 | 少量工程评估或客户认证，需求 `<1000 万美元` | 1-2 个 pilot / certification project，需求 `1000-4000 万美元` | 早期商业 PO 出现，需求 `7500 万-1.5 亿美元` | 基准基本无变化；乐观多 `1000-4000 万美元`；极度多 `7500 万美元+` | 不进入 NTM 基准 | 正证：NVIDIA、OCP、Schneider、Eaton 推动 800VDC。反证：安全、保护、消防、运维、客户标准未成熟。 |
+
+## 4. 可收入化暴露与收入基数
+- 本步口径：本步只判断外部需求中哪些能进入 Powell 的 NTM 收入表，以及当前可收入化基数是多少；不预测增长质量，不判断利润率。Powell 主要收入来自 custom-engineered distribution solutions 和长期项目，backlog 进入收入表仍受工程、采购、制造、测试、客户验收和 cost-to-cost 进度约束。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| Data center power package：MV/LV switchgear、eHouse/PCR、controls | Q2 C&I revenue `5440 万美元`；当前 data center revenue 估 `3000-4500 万美元/季`；FY2026 data center awards `>5.5 亿美元` | 直接 | 定制系统、工程、FAT 和 time-to-power 溢价，毛利率高于普通箱体但执行风险高 | `1.5-2.2 亿美元` | `2.5-3.5 亿美元` | `4.2-6.0 亿美元` | `7.0-8.5 亿美元` | 基准高于当前 revenue run-rate，但低于订单全额；符合订单分期确认 | B/C | 是，折扣纳入 | 订单 B；收入拆分 C；期后 `>4 亿美元`订单 NTM 只认少量工程/早期进度 | NTM 基准核心增量；不能把客户总项目金额直接当 Powell 收入 |
+| Electric utility / generation switchgear | FY2026Q2 revenue `8050 万美元`；6M revenue `1.498 亿美元`；3/31 backlog 中 utility `30%` | 直接 | 中压开关柜、保护、发电接入，margin 受项目 mix 和工程效率影响 | `2.85-3.30 亿美元` | `3.5-4.3 亿美元` | `4.8-6.0 亿美元` | `6.5-8.0 亿美元` | 基准高于 run-rate，符合 backlog 和 utility order | A/B | 是 | 已披露收入 A；backlog/utility mega order B | 基准主口径；需求和收入确认均强 |
+| LNG/O&G power modules、industrial PCR/eHouse | FY2026Q2 O&G ex-petro `1.127 亿美元`；6M `2.106 亿美元`；3/31 backlog 中 O&G ex-petro `29%` | 直接 | 大型模块和 PCR/eHouse 项目，利用率好但可能占用 data center 产能 | `3.6-4.3 亿美元` | `4.5-5.2 亿美元` | `5.5-6.5 亿美元` | `7.0 亿美元+` | 基准符合当前 run-rate 和管理层 LNG/gas 活跃表述 | A/B | 是 | 已披露收入 A；backlog B | 基准主口径；非 AI 但决定总收入和工厂负荷 |
+| Automation / SCADA / PowlSmart / Remsdaq / commissioning / spares | 未单独披露；Remsdaq、condition monitoring、asset management、SCADA/RTU 产品披露明确 | 直接附加 + 间接增强硬件粘性 | 软件/控制/服务毛利较好，收入基数小，attach 需要客户认证 | `0.7-1.1 亿美元` | `1.0-1.6 亿美元` | `1.7-2.5 亿美元` | `3.0-4.3 亿美元` | 基准只作为小额附加，不作为公司增速主引擎 | C | 部分进入 | 产品、收购和管理层资源投入明确；缺少收入拆分 | NTM 小比例纳入；大额 automation 只能进乐观/极度 |
+| Petrochemical、light rail、all other legacy | FY2026Q2 petrochemical `2760 万美元`、light rail `900 万美元`、all others `1230 万美元` | 直接 | 项目制、周期性、部分服务/配件毛利好但增长弱 | `1.25-1.60 亿美元` | `1.5-2.1 亿美元` | `2.1-2.6 亿美元` | `2.6-3.2 亿美元` | 基准接近当前低 run-rate；不因 AI 叙事上调 | A | 是 | 市场收入已披露 | 作为抵消项和稳定项纳入 |
+| 800VDC / SST / AI DC switchgear optionality | AI DC 收入未披露且接近 0；DC switchgear 目前主要 traction / other DC power conversion | 远期直接，NTM 多为间接 | 若商业化，保护/控制毛利可能高；但当前认证和客户路径不足 | `0` | `0-1000 万美元` | `1000-4000 万美元` | `7500 万-1.5 亿美元` | 基准不纳入；乐观代表小额 pilot 上限 | D/E | 否 | 产品能力 D；AI DC 收入确认路径 E | 移入附录/仅跟踪，不进入 NTM 基准收入 |
+
+## 5. 产品级收入和利润贡献
+- 本步口径：从第一步需求和第二步收入基数出发，估算每个重要产品/业务线在 NTM 内能给 Powell 贡献的收入和利润。Powell 不披露产品级利润率，表中利润贡献为毛利贡献和经营贡献方向估算；automation/services 可能嵌入硬件项目，产品行不可机械相加，公司汇总在第 6 节去重。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| Data center power package | 悲观 | `1.5-2.2 亿美元` | 毛利 `0.40-0.60 亿`；经营贡献 `0.15-0.35 亿` | 低于当前结构 | 低于当前预期 | 已有订单但确认慢 | 保留为下行情景 | BTM permit、燃气、施工、客户融资或项目排期延后 |
+| Data center power package | 基准 | `2.5-3.5 亿美元` | 毛利 `0.75-1.10 亿`；经营贡献 `0.45-0.75 亿` | 接近/略高于公司平均 | 正常兑现 | FY2026 data center awards `>5.5 亿美元`，Q2 后 `>4 亿美元`订单只小比例纳入 | 保留 | `>4 亿美元`订单大概率跨 FY2027-FY2028，不可全额 NTM |
+| Data center power package | 乐观 | `4.2-6.0 亿美元` | 毛利 `1.30-2.00 亿`；经营贡献 `0.85-1.40 亿` | 扩张 | 高于当前预期 | 追加 data center orders、工程复用、capacity reservation | 保留 | 多客户、多 phase 和交期仍需验证 |
+| Data center power package | 极度乐观 | `7.0-8.5 亿美元` | 毛利 `2.30-3.10 亿`；经营贡献 `1.60-2.30 亿` | 明显扩张但执行风险高 | NTM 上限 | 多个 100MW+ campus 同时锁产能，Powell 获 inside/outside power scope | 保留为低可信上限 | 单一大单不能自动外推；人员、FAT、供应链、现场验收限制 |
+| Electric utility / generation switchgear | 悲观 | `2.85-3.30 亿美元` | 毛利 `0.75-0.95 亿`；经营贡献 `0.35-0.55 亿` | 持平或下滑 | 低于预期 | 收入 A 级，但项目排期可能慢 | 保留 | utility study、regulatory approval、发电项目 NTP |
+| Electric utility / generation switchgear | 基准 | `3.5-4.3 亿美元` | 毛利 `1.00-1.30 亿`；经营贡献 `0.55-0.80 亿` | 接近公司平均 | 正常兑现 | 6M utility revenue `+23%`，3/31 backlog 中 utility `30%` | 保留 | data center 与 utility 争抢相同产能 |
+| Electric utility / generation switchgear | 乐观 | `4.8-6.0 亿美元` | 毛利 `1.45-2.00 亿`；经营贡献 `0.90-1.35 亿` | 小幅扩张 | 高于预期 | utility mega order、generation-side demand、data center interconnection | 保留 | 客户预算和设备交期能否同步 |
+| Electric utility / generation switchgear | 极度乐观 | `6.5-8.0 亿美元` | 毛利 `2.15-2.90 亿`；经营贡献 `1.45-2.05 亿` | 显著扩张 | 上限 | 电网、发电和数据中心 interconnection 同时拉动 | 保留为低可信上限 | 扩产和测试场必须同时突破 |
+| LNG/O&G power modules | 悲观 | `3.6-4.3 亿美元` | 毛利 `0.90-1.20 亿`；经营贡献 `0.40-0.70 亿` | 持平或下滑 | 低于预期 | O&G current run-rate 可见 | 保留 | LNG FID/NTP 推迟，固定价成本压力 |
+| LNG/O&G power modules | 基准 | `4.5-5.2 亿美元` | 毛利 `1.20-1.55 亿`；经营贡献 `0.70-0.95 亿` | 稳定 | 符合预期 | Q2 O&G ex-petro `+11%`，管理层称 LNG/gas active | 保留 | 占用 data center 产能；mix 若偏低毛利则拖累 |
+| LNG/O&G power modules | 乐观 | `5.5-6.5 亿美元` | 毛利 `1.60-2.15 亿`；经营贡献 `1.05-1.50 亿` | 小幅扩张 | 高于预期 | LNG export multi-year buildout，offshore/nearshore modules | 保留 | 项目大、客户排期长、交付跨期 |
+| LNG/O&G power modules | 极度乐观 | `7.0 亿美元+` | 毛利 `2.10 亿美元+`；经营贡献 `1.45 亿美元+` | 扩张但资本/执行压力上升 | 上限 | LNG、gas-to-chemical、offshore 同时增强 | 保留为低可信上限 | 与 data center/utility 共用产能，不能无限叠加 |
+| Automation / SCADA / services | 悲观 | `0.7-1.1 亿美元` | 毛利 `0.20-0.40 亿`；经营贡献 `0.05-0.20 亿` | 不明显 | 低于预期 | 现有产品可见但 attach 低 | 保留 | 客户只采购硬件；Remsdaq 北美导入慢 |
+| Automation / SCADA / services | 基准 | `1.0-1.6 亿美元` | 毛利 `0.35-0.65 亿`；经营贡献 `0.15-0.35 亿` | 小幅增厚 | 符合预期 | PowlSmart、SCADA/RTU、commissioning 与 package attach | 保留 | 收入披露不足，不能大额建模 |
+| Automation / SCADA / services | 乐观 | `1.7-2.5 亿美元` | 毛利 `0.70-1.15 亿`；经营贡献 `0.35-0.75 亿` | 增厚 | 高于预期 | BTM microgrid、PQM、remote monitoring 成为大型项目标准项 | 保留 | 软件/服务 attach 需要客户标准化 |
+| Automation / SCADA / services | 极度乐观 | `3.0-4.3 亿美元` | 毛利 `1.35-2.30 亿`；经营贡献 `0.85-1.65 亿` | 明显增厚 | 上限 | Powell 建立标准自动化层并形成后续服务 | 移入附录/跟踪上限 | 当前缺少量化 pipeline 和订阅披露 |
+| Petrochemical / light rail / legacy | 悲观 | `1.25-1.60 亿美元` | 毛利 `0.25-0.40 亿`；经营贡献 `0.05-0.20 亿` | 下滑 | 低于预期 | petrochemical revenue `-37%` | 保留 | FY2023 petrochemical 大单消化后缺新订单 |
+| Petrochemical / light rail / legacy | 基准 | `1.5-2.1 亿美元` | 毛利 `0.35-0.55 亿`；经营贡献 `0.15-0.30 亿` | 稳定偏低 | 符合预期 | Q2 market revenue A 级 | 保留 | 不是 AI 主线，不能上修 |
+| Petrochemical / light rail / legacy | 乐观 | `2.1-2.6 亿美元` | 毛利 `0.50-0.75 亿`；经营贡献 `0.25-0.45 亿` | 小幅改善 | 高于预期但非核心 | petrochemical early inflection、traction project recovery | 仅作辅助上行 | 项目制波动，订单证据不足 |
+| Petrochemical / light rail / legacy | 极度乐观 | `2.6-3.2 亿美元` | 毛利 `0.60-0.95 亿`；经营贡献 `0.35-0.60 亿` | 改善 | 上限 | 多个 legacy projects 同时恢复 | 保留为低可信上限 | 与高增长 data center/utility 共享产能，优先级可能低 |
+| 800VDC / SST / AI DC switchgear | 悲观 | `0` | `0` | 无 | 无 NTM 贡献 | 无 AI DC 收入证据 | 排除 | 不能把 traction DC 产品等同于 AI 800VDC |
+| 800VDC / SST / AI DC switchgear | 基准 | `0-1000 万美元` | 毛利 `0-300 万` | 不影响公司 | 不进入基准 | 只有产品能力和行业相关性 | 移入附录 | 缺客户、合同、时间表 |
+| 800VDC / SST / AI DC switchgear | 乐观 | `1000-4000 万美元` | 毛利 `300-1500 万` | 小幅增厚 | 低可信上行 | pilot、认证或小额 engineering PO | 仅作跟踪 | 2026 更多 design-in 而非 revenue |
+| 800VDC / SST / AI DC switchgear | 极度乐观 | `7500 万-1.5 亿美元` | 毛利 `2500-6500 万` | 可能增厚 | 极度上限 | 早期商业 PO + Powell 获得 DC protection/switchgear scope | 移入附录/低可信上限 | 任一核心环节缺证据则不能进入 NTM |
+
+## 6. 公司收入和利润四情景
+- 本步口径：本步把产品级贡献合成为 Powell NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。产品行存在市场/产品交叉和 automation/service embedded revenue，本表按 backlog、run-rate、订单确认节奏和产能约束去重，不机械相加。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `11.5-12.8 亿美元` | 较 TTM `+2-13%` | 低于当前 backlog/run-rate 隐含路径；只承认 3/31 backlog 中最确定部分和现有 run-rate | `26.5-28.5%` | `14.0-16.5%` | 净利润约 `1.50-1.85 亿美元` | 中性至小幅正；milestone inflow 被库存和项目延期抵消 | 中 | Data center/utility 订单确认慢，petrochemical 继续拖累，固定价项目成本和 SG&A/R&D 投入吞噬收入 |
+| 基准公司 | `13.5-15.0 亿美元` | 较 TTM `+19-33%` | 符合当前预期正常兑现；`11 亿美元`12 个月 backlog + service/book-and-ship + Q2 后大单少量确认 | `28.5-30.5%` | `17.0-20.0%` | 净利润约 `2.05-2.50 亿美元` | 正；但随大项目启动存在营运资本波动 | 中高 | 工程设计、FAT/test bay、关键部件、熟练工、客户验收和 cost-to-cost 节点 |
+| 乐观公司 | `16.0-18.0 亿美元` | 较 TTM `+41-59%` | 高于当前预期；data center/utility book-to-bill 维持 `>1.3x`，部分新增 capacity 和工程复用释放 | `30.0-32.5%` | `20.0-23.0%` | 净利润约 `2.70-3.40 亿美元` | 正但波动加大；客户预付款可改善，扩产和库存会占现金 | 中 | 新增订单需要更快 burn；传统业务不能明显挤占高毛利 data center/utility capacity |
+| 极度乐观公司 | `19.0-21.0 亿美元` | 较 TTM `+68-86%` | 显著高于当前预期；多个 data center / BTM / utility / LNG 传导环节同时突破 | `32.0-35.0%` | `23.0-26.0%` | 净利润约 `3.60-4.55 亿美元` | 不确定；利润强但 working capital、capex、保函和项目执行压力显著上升 | 低 | 必须同时满足客户预付款、产能爬坡、供应链、工程复用、现场验收和 margin expansion；单一订单不够 |
+
+## 7. 证据校准、反证和可信度
+- 本步口径：本步不重新预测经营结果，只校准前四步情景。正向证据只提升其影响层级；同一风险只在实际影响层级处理一次，不重复惩罚。市场定价不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 3/31 backlog `18 亿美元`，其中约 `11 亿美元`预计 12 个月确认 | 收入基数、公司汇总 | 支撑基准收入 `13.5-15.0 亿美元`，但不保证全部按期确认 | 支撑规模效应和正常毛利率 | backlog burn 依赖工程、采购、FAT、客户验收；延期会推迟现金收款 | 基准保留；悲观保留为延期情景 |
+| FY2026Q2 新订单 `4.897 亿美元`、book-to-bill `1.7x`，Q2 后 `>4 亿美元` data center order | 需求、收入基数、产品贡献 | 上修 data center 需求和 backlog 上限；NTM 只能小比例确认 | 若项目复杂且 price/mix 好，支持乐观毛利；若执行差则反噬 | 大单可能带来预付款，也可能带来库存、工程和保函压力 | 乐观保留；极度乐观保留为低可信上限 |
+| 毛利率 FY2025 `29.4%`、FY2026Q1 `28.4%`、FY2026Q2 `29.6%`；管理层称 backlog margin profile 支撑 FY2026 | 产品贡献、公司利润 | 不直接提高收入 | 支撑基准 GM `28.5-30.5%`；乐观需要 price/mix 和工程复用 | 稳定毛利提高现金利润，但项目 closeout 不可无限外推 | 基准毛利保留；乐观毛利需新增证据 |
+| Data center order 不是一次性主题映射，而是已披露订单 | 收入基数、可信度 | 允许 data center line 进入 NTM 基准，但需按确认节奏折扣 | 高复杂度 BTM / eHouse 可提高毛利上限 | 工程复杂度和客户时间表决定兑现 | 基准小比例纳入；乐观保留 |
+| `>4 亿美元` BTM project 约两年 burn、涉及 multi-division execution | 收入确认、执行 | 限制 NTM 极度收入，不允许全额纳入 | 若工程复用好可扩张；若进度错配会压低利润 | 需要人员、供应链、租赁空间、FAT 和现场协调 | 极度乐观下移为低可信上限，不进入基准 |
+| 产能扩张：Jacintoport、Ohio/Houston 租赁空间、可能 `7000万-1亿美元`更大扩产 | 执行可信度、现金流 | 支撑乐观收入可交付性，但 NTM 贡献有限 | 规模效应可能改善，但爬坡和人员成本先行 | capex、租赁、招聘、培训和供应链会占现金 | 乐观保留；极度乐观需后续验证 |
+| Petrochemical revenue `-37%`、legacy 项目制波动 | 公司组合 | 抵消 utility/data center 增长 | mix 若转差则拖累毛利 | 低毛利/低增业务占用资源 | 在 legacy 层级处理一次，不重复压低所有产品 |
+| 800VDC/SST 2026 仍以 design-in、pilot、标准冻结为主 | 需求、远期期权 | 不进入 NTM 基准收入 | 长期毛利可能高，但当前缺收入路径 | 需要安全、认证、客户标准和服务流程 | 移入附录、仅作跟踪 |
+| 固定价项目、liquidated damages、材料和劳动力估计 | 利润率、现金流 | 延期可推迟收入 | 成本估计错配会压低毛利；Q2 10-Q 已披露 LD exposure | 保函、surety、retainage 和 milestone timing 影响 FCF | 悲观保留；不重复惩罚需求层级 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | NTM 收入 `11.5-12.8 亿美元`，margin 低于当前结构，data center/utility 延期 | `11 亿美元`12 个月 backlog、现金强、book-to-bill 高 | 大单 burn 可能跨 2028；固定价项目、供应链和客户验收风险 | 保留 | 下行情景，不是主情景 | 中 | 项目延期只在收入确认/执行层级处理，不再重复压低外部需求 |
+| 基准 | NTM 收入 `13.5-15.0 亿美元`，GM `28.5-30.5%`，正常兑现 | A/B 级收入、订单、backlog、毛利率和现金流证据强 | data center 收入拆分需估算；Q2 后大单 NTM 确认节奏不确定 | 保留 | 最可能经营情景 | 中高 | 不把 800VDC/SST 远期期权纳入基准 |
+| 乐观 | NTM 收入 `16.0-18.0 亿美元`，data center/utility/LNG 同步增强，margin 小幅扩张 | Q2/期后 mega orders、capacity additions、price/mix、工程复用线索 | 需要新增订单或更快 burn，legacy 不能明显拖累 | 保留 | 上行情景 | 中 | 不把行业需求 beta 直接替代 Powell 可确认收入；必须有订单/客户/交付路径 |
+| 极度乐观 | NTM 收入 `19.0-21.0 亿美元`，多核心环节同时突破 | 多 phase BTM campus、客户预付款、Powell 进入更多 AVL、automation attach 提高 | 任一核心环节缺证据：产能、供应链、FAT、客户验收、margin 和 cash flow | 保留 | 低可信上限；800VDC/SST 部分移入附录跟踪 | 低 | 单一 `>4 亿美元`订单不能重复当作需求、收入、利润和执行四重正证 |
+
+## 8. 结论
+- 最可能情景：基准公司情景。Powell 的 NTM 经营主线是把 `18 亿美元`3/31 backlog、其中约 `11 亿美元`12 个月可确认 backlog、FY2026H1 高 bookings 和 Q2 后 `>4 亿美元` data center order 中的可确认部分，按工程节点转化为收入。合理基准为 NTM 收入 `13.5-15.0 亿美元`，毛利率 `28.5-30.5%`，经营利润率 `17.0-20.0%`，净利润约 `2.05-2.50 亿美元`。
+- 乐观情景成立条件：FY2026Q3/Q4 book-to-bill 继续 `>1.3x`；data center 与 utility 新订单继续强；Q2 后 `>4 亿美元`订单按两年左右 burn 正常推进并在 NTM 内贡献可见 revenue；Jacintoport、租赁空间和工程中心释放产能；price/mix 与工程复用抵消 SG&A/R&D 和供应链成本。
+- 极度乐观情景成立条件：同一 BTM/NeoCloud 客户或其他 hyperscaler 追加多 phase campus；Powell 获得 inside data center scope 或更多 direct end-client relationship；客户预付款锁产能；utility/generation、LNG 和 data center 不互相挤占产能；automation/SCADA/service attach 明显提升利润质量。
+- 悲观情景触发条件：FY2026Q3 book-to-bill 低于 `1.0-1.1x` 或 backlog 12 个月可确认金额下修；Q2 后 `>4 亿美元`订单 NTP、工程、燃气、permit 或客户融资延迟；毛利率跌破 `27%` 且不是一次性 mix；contract assets 上升但 milestone billing 不跟上；petrochemical/O&G 延期同时占用工厂资源。
+- 后续跟踪数据：FY2026Q3 orders/backlog/book-to-bill；data center backlog 占比和 revenue run-rate；`>4 亿美元`订单 burn schedule；utility/generation orders；gross margin 与 project closeout tailwind；SG&A/R&D 占收入；operating cash flow、contract liabilities、inventory、surety/LC；Jacintoport 和短期租赁空间投产；Remsdaq/SCADA attach；800VDC/SST 是否出现真实 AI DC 客户和 PO。
+
+## 附录：来源和补充口径
+- 经营数据日期：最新正式财务数据截至 2026-03-31；公告日 2026-05-04；10-Q filing 日 2026-05-05；本报告日期 2026-06-12。
+- 主要收入、订单、指引和利润率来源：
+  - Powell FY2026Q2 earnings release：Q2 revenue `2.966 亿美元`、gross margin `29.6%`、new orders `4.90 亿美元`、backlog `18 亿美元`、Q2 后 `>4 亿美元` data center order。
+  - Powell FY2026Q2 Form 10-Q：backlog 定义、`11 亿美元`未来 12 个月收入确认、市场收入拆分、contract assets/liabilities、LD exposure、cash flow、liquidity。
+  - Powell Q2 FY2026 earnings call transcript：capacity additions、`>4 亿美元`项目 burn、BTM complexity、customer/channel comments、price and supply chain comments。
+  - 本地公司调研：`公司调研/配电_电源_功率器件/POWL_Powell_Industries_公司调研_2026-06-11.md`。
+  - 本地行业调研：`行业调研/AI园区电力_机电_冷却/行业调研_数据中心开关设备与变压器_2026-06-10.md`、`行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md`、`行业调研_数据中心自备发电与微电网_2026-06-11.md`、`行业调研_中压直流、800VDC与固态变压器_2026-06-10.md`。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：
+  - FY2026H1 revenue `5.478 亿美元`，bookings `9.285 亿美元`，H1 book-to-bill 约 `1.70x`；这说明订单领先收入，但不等于 FY2026/FY2027 全额收入。
+  - Q2 后 `>4 亿美元` data center order 是最大单笔订单，但其 NTM 收入需按工程与两年左右 burn 处理，不能全额进入基准。
+  - 800VDC/SST 与 DC protection 是 2027-2028 远期期权；Powell 现有 DC switchgear/traction product 不能直接替代 AI 800VDC 收入证据。
+- 主要来源：
+  - Powell Industries Announces Second Quarter Fiscal 2026 Results, 2026-05-04：https://powellindustriesinc.gcs-web.com/news-releases/news-release-details/powell-industries-announces-second-quarter-fiscal-2026-results
+  - Powell Industries FY2026Q2 Form 10-Q, filed 2026-05-05：https://www.sec.gov/Archives/edgar/data/80420/000008042026000070/powl-20260331.htm
+  - Powell Industries FY2026Q1 Results, 2026-02-03：https://powellindustriesinc.gcs-web.com/news-releases/news-release-details/powell-industries-announces-first-quarter-fiscal-2026-results
+  - Powell Integrated Packaged Solutions：https://www.powellind.com/integrated-package-solutions
+  - Powell ANSI Metal-Clad Switchgear：https://www.powellind.com/ansi-metal-clad-switchgear
+  - Powell ANSI Metal-Enclosed Switchgear：https://www.powellind.com/ansi-metal-enclosed-switchgear
+  - Powell Digital Solutions & Automation：https://www.powellind.com/powell-digital-solutions-automation
+  - Powell DC Switchgear and Power Rectifiers：https://www.powellind.com/traction-power-equipment
+  - Powell Q2 FY2026 earnings call transcript, Benzinga, 2026-05-05：https://www.benzinga.com/insights/news/26/05/52292247/full-transcript-powell-industries-q2-2026-earnings-call
+- 资料边界：本报告未使用 `特征量化/`、Signals、结构化评分、回归结论、模型比较、公司排序、日度资料或市场定价作为经营价值传导证据；检索中出现的旧公司评估备份未作为本次报告来源。

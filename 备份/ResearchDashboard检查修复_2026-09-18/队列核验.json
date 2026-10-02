@@ -1,0 +1,57 @@
+[
+  {
+    "name": "AI产业链全局图谱与口径字典",
+    "status": "pending",
+    "attempts": 0,
+    "planId": "background-1",
+    "planVersion": "20260918_022108",
+    "promptFile": "基本面/行业调研/横向专题/AI产业链全局图谱与口径字典/研究方案/20260918_022108/研究方案_20260918_022108.md",
+    "expectedOutputFile": "基本面/行业调研/产业背景/AI产业链全局图谱与口径字典_2026-09-18.md",
+    "planHashMatches": true,
+    "outputAlreadyExists": false
+  },
+  {
+    "name": "AI产业链瓶颈与反证指标总表",
+    "status": "pending",
+    "attempts": 0,
+    "planId": "background-2",
+    "planVersion": "20260918_022108",
+    "promptFile": "基本面/行业调研/横向专题/AI产业链瓶颈与反证指标总表/研究方案/20260918_022108/研究方案_20260918_022108.md",
+    "expectedOutputFile": "基本面/行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-09-18.md",
+    "planHashMatches": true,
+    "outputAlreadyExists": false
+  },
+  {
+    "name": "全球AI需求与Token经济框架",
+    "status": "pending",
+    "attempts": 0,
+    "planId": "background-3",
+    "planVersion": "20260918_022108",
+    "promptFile": "基本面/行业调研/横向专题/全球AI需求与Token经济框架/研究方案/20260918_022108/研究方案_20260918_022108.md",
+    "expectedOutputFile": "基本面/行业调研/产业背景/全球AI需求与Token经济框架_2026-09-18.md",
+    "planHashMatches": true,
+    "outputAlreadyExists": false
+  },
+  {
+    "name": "数据中心建设规模",
+    "status": "pending",
+    "attempts": 0,
+    "planId": "background-4",
+    "planVersion": "20260918_022108",
+    "promptFile": "基本面/行业调研/横向专题/数据中心建设规模/研究方案/20260918_022108/研究方案_20260918_022108.md",
+    "expectedOutputFile": "基本面/行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-09-18.md",
+    "planHashMatches": true,
+    "outputAlreadyExists": false
+  },
+  {
+    "name": "头部AI芯片",
+    "status": "pending",
+    "attempts": 0,
+    "planId": "background-5",
+    "planVersion": "20260918_022109",
+    "promptFile": "基本面/行业调研/横向专题/头部AI芯片/研究方案/20260918_022109/研究方案_20260918_022109.md",
+    "expectedOutputFile": "基本面/行业调研/产业背景/行业调研_头部AI芯片全景与产能释放_2026-09-18.md",
+    "planHashMatches": true,
+    "outputAlreadyExists": false
+  }
+]

@@ -1,0 +1,387 @@
+# TSLA_Tesla 公司调研：从电动车龙头到“物理 AI + 储能 + 自主出行”平台（2026-06-11）
+
+报告日期：2026-06-11  
+公司：Tesla, Inc.  
+股票代号：TSLA  
+正式分类目录：`基本面/公司调研/机电_冷却_工程_水处理_边缘工业AI/`  
+资料边界：本次只使用 `基本面/行业调研/` 下相关产业资料、Tesla 官方 IR/SEC/产品资料、近半年外部会议/技术/媒体资料；未读取、引用或继承 `特征量化/`、`日度资料/` 或既有 TSLA 公司报告。  
+核心限制：Tesla 未披露分产品 backlog、Robotaxi 收入、FSD 递延收入拆分、Optimus 订单、AI 芯片成本和 AI 数据中心客户收入；本文对这些项目的美元规模均标注为估算或低置信度推断。
+
+## 0. 结论摘要
+
+1. **Tesla 仍是以汽车为现金流底盘、以能源储能为最可验证高增长、以 FSD/Robotaxi/Optimus/AI 芯片为估值期权的公司。** 2026Q1 收入 223.87 亿美元，其中汽车 162.34 亿美元（72.5%）、能源 24.08 亿美元（10.8%）、服务及其他 37.45 亿美元（16.7%）。当前已确认收入主要不是 AI 数据中心，而是车辆、储能、服务和软件。
+2. **投资人眼中的 TSLA 已经从“EV 车企”迁移到“physical AI 平台股”，但财务报表尚未完成迁移。** 2025 年公司称自己从 hardware-centric business 向 physical AI company 转型；2026Q1 指引又把 Cybercab、Tesla Semi、Megapack 3、Optimus 量产线、AI compute、半导体 research fab 同时列为 2026 年重点。
+3. **最能用财务数字验证的增长点是 Energy / Megapack，而不是 Optimus。** 2025 年储能部署 46.7GWh、同比 +49%，能源收入 127.71 亿美元、同比 +27%；2026Q1 储能部署 8.8GWh、能源收入 24.08 亿美元，同比 -12%，但能源毛利率升至 39.5%。Q1 下降更像交付节奏/产品切换与 2025Q4 高基数后的波动，不足以否定长期需求。
+4. **Tesla 面向 AI 数据中心的真实产品不是 GPU/光模块，而是 Megapack/BESS、grid-forming inverter、Autobidder/Powerhub 和“power-to-market”能力。** Tesla 在 ERCOT 大负荷工作组材料中把 Megapack 定位为 AI training load smoothing、LVRT、flexible grid connection、backup power；2MW/4MWh Megapack 2 XL 可实现 70%+ 高频功率波动削减，2h BESS 可作为 100MW 级数据中心的并网加速器。
+5. **FSD/Robotaxi 是最高毛利潜在业务，但当前收入仍小。** 2026Q1 Active FSD subscriptions 约 1.28 百万，按 99 美元/月粗算订阅 ARR 约 15.2 亿美元；Robotaxi 已在 Austin、Dallas、Houston 推进无监督运营/扩区，但没有单独收入披露。该业务的核心不在当季收入，而在可否把 900 万+累计车辆、AI4/AI5 硬件、Cybercab 和监管许可转成高利用率车队。
+6. **Optimus 是最大叙事、最低可验证收入。** 官方披露第一代 Optimus 量产线设计能力为 100 万台/年，Texas 二代线处于建设/准备阶段，但 2026-06-11 时点外部收入为 0，订单、ASP、良率、BOM 和客户认证均未披露。它应放在“极高上限、极低置信度”的期权层。
+7. **资产负债表很健康，但 2026 现金流会承压。** 2026Q1 现金及投资 447.4 亿美元，总债务/融资租赁约 92.3 亿美元，净现金约 355 亿美元；流动比率约 2.04。管理层在 Q1 call 指引 2026 CapEx 超 250 亿美元，并预计 2026 剩余时间为负 FCF，因此短期财务健康来自存量现金，不来自当年自由现金流。
+8. **估值高度提前反映 AI/机器人期权。** 2026-06-11 收盘/报价附近，TSLA 股价约 398-399 美元，市值约 1.50 万亿美元；P/E 约 366-374x，Forward P/E 约 177-200x，P/S 约 14.8x。以 TTM 净利率 3.9% 和 Q1 common net margin 2.1% 看，传统汽车/储能利润无法独立支撑当前估值。
+
+## 1. 公司整体业务、市场认知和产业链位置
+
+### 1.1 业务分层
+
+| 层级 | Tesla 业务 | 当前收入确认 | 投资人主要看点 | 是否 AI 数据中心直接供应链 |
+|---|---|---:|---|---|
+| 现金流底盘 | Model 3/Y、Cybertruck、汽车 leasing、监管积分 | 汽车收入，2026Q1 162.34 亿美元 | 工厂利用率、ASP、毛利率、区域需求、低价车型 | 否 |
+| 高增长硬件 | Megapack、Megablock、Powerwall、Solar、能源软件 | Energy revenue，2026Q1 24.08 亿美元 | 储能 GWh、Megapack 3、Houston/Shanghai/Lathrop 产能、毛利率 | 间接且最相关：BESS/并网/功率平滑 |
+| 软件与服务 | FSD subscription、Robotaxi、Supercharging、保险、维修、二手车 | Services and other + 部分 automotive deferred revenue | 高毛利软件、Robotaxi fleet、车队网络效应 | Robotaxi 需要 AI compute，但不是 DC 供应商收入 |
+| 物理 AI 期权 | Optimus humanoid robot、Cybercab、AI5/AI6、Cortex/Dojo、research fab | 当前几乎不单独确认外部收入 | 潜在 TAM、内部应用、制造扩展、芯片自研 | 公司是 AI compute 买方/自建方，不是外部 GPU/光模块供应商 |
+| 供应链纵向整合 | 4680、电池包、LFP、阴极材料、锂精炼、太阳能制造 | 降本/供给保障，少量内部或外部收入 | Pack constraint、FEOC/关税、本土供应 | 间接：电池与储能供给 |
+
+### 1.2 投资人心中的 Tesla
+
+| 视角 | 典型多头叙事 | 典型空头/谨慎叙事 | 当前事实校验 |
+|---|---|---|---|
+| EV 车企 | 仍有全球成本和制造规模优势，Robotaxi 会重估车辆平台 | 2025 全年汽车收入 -10%，交付 -9%，全球 EV 竞争加剧，BYD/中国车企压价 | 汽车仍贡献 70%+ 收入，但增长质量已经不如能源和服务 |
+| 储能平台 | Megapack 是 AI 数据中心/电网瓶颈的关键产品，能源毛利率已高于汽车 | BESS 竞争激烈，CATL/BYD/Sungrow/Fluence 等压价，项目制波动大 | 2026Q1 能源毛利率 39.5% 很强，但收入同比 -12%，不能只看单季 |
+| AI/Robotaxi | 900 万+累计车辆 + FSD 数据 + Cybercab 可复制低成本出行网络 | Waymo 等已经在多城市商业化，Tesla 监管、事故、服务运营能力仍需验证 | Tesla 已在 Texas 扩展无监督 Robotaxi，但收入未披露 |
+| Robotics | Optimus 若量产可打开制造/家庭/服务机器人巨大市场 | 当前未证明量产、可靠性、客户愿付价格、单位经济性 | 官方只有产线计划，没有外部订单和收入 |
+| AI chip/fab | AI5/AI6/Dojo/Research Fab 可解除长期芯片瓶颈 | 自建逻辑+内存+封装 fab 资本强度极高，容易拖累 FCF | 2026Q1 已指引 >250 亿美元 CapEx 和负 FCF |
+
+### 1.3 最近 3 年重大业务变动/转型/收购
+
+| 时间 | 事件 | 影响 |
+|---|---|---|
+| 2023-2024 | 全球 EV 价格战、Model 3/Y 成熟化、Cybertruck 投产但放量有限 | Tesla 从高毛利稀缺 EV 公司变成强制造能力但受价格竞争压制的车企 |
+| 2024-2025 | Megapack / Powerwall 部署快速增长，2025 储能部署 46.7GWh | Energy 成为最可验证第二增长曲线；毛利率持续改善 |
+| 2025-06 | Robotaxi service 启动并逐步去安全员/扩区 | 业务模型从卖车向 fleet-based software/service 迁移 |
+| 2025 | 完成 Model Y refresh、多版本 Model 3/Y rollout | 汽车产品线优化但不再主要依靠新增车型堆增长 |
+| 2025Q4-2026Q1 | 决定停产/收缩 Model S/X 并将 Fremont 空间转为 Optimus 产线 | 明确把传统高端车资源转向 robotics |
+| 2026Q1 | Cortex 2 online、AI5 inference processor final design completed、Research Fab groundbreaking | AI training/inference silicon 从外购算力扩展为自研/自建路线 |
+| 2026Q1 | Megapack 3、Cybercab、Tesla Semi、Optimus 量产线进入 2026 量产/安装窗口 | 2026 是产品线并行爬坡和 CapEx 高峰年 |
+| 2026Q1 | 投资 SpaceX common stock 20 亿美元；Q4 2025 后披露/讨论 xAI 相关投资 | 关联方/生态投资增加，战略上绑定 Musk AI/space 生态，但也增加治理和资本分配争议 |
+
+### 1.4 产业链位置
+
+Tesla 不在典型 AI 数据中心 GPU、HBM、光模块、交换机、液冷 CDU、UPS 头部设备商链条中。它更像四个位置的组合：
+
+1. **AI 数据中心电力边缘的 BESS 供应商**：Megapack/Megablock 可用于 AI load smoothing、LVRT、柔性并网、备用电源、需求响应。
+2. **端侧/边缘 physical AI 的终端平台商**：汽车、Robotaxi、Optimus 都是边缘推理设备，需要本地 AI inference + 云端训练。
+3. **AI compute 买方和自建方**：Cortex、Dojo、AI5/AI6、research fab 是内部能力建设，不是对外卖芯片。
+4. **电池和电力电子纵向整合商**：储能、车、充电和机器人共享电池包、电机、电驱、功率电子、软件和制造工程能力。
+
+项目内 `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md` 的关键规则是：不能把云 AI 收入、AI CapEx、供应商收入、数据中心租约、设备商订单简单相加。套到 TSLA：**Megapack 可以算 AI 数据中心电力/储能暴露；FSD/Robotaxi/Optimus 是 physical AI 应用层；AI5/Cortex/Dojo 是内部 CapEx 和能力，不应计作外部 AI 数据中心供应收入。**
+
+## 2. 最新股价、估值、利润率与资产负债表
+
+### 2.1 市场与估值快照
+
+| 指标 | 数值 | 日期/口径 | 来源与说明 |
+|---|---:|---|---|
+| 股价 | 398.30 美元收盘；399.15 美元附近报价 | 2026-06-11 美股收盘/当日网页报价 | StockAnalysis / FinanceCharts；不同实时源略有差异 |
+| 市值 | 约 1.50 万亿美元 | 2026-06-11；按 3.76B shares outstanding 近似 | StockAnalysis；SEC 10-Q 披露 2026-04-16 shares outstanding 约 3.756B |
+| Enterprise Value | 约 1.42 万亿美元 | 2026-06-11 | StockAnalysis |
+| Trailing P/E | 约 366-374x | 2026-06-11；不同数据商 EPS 口径略有差异 | FinanceCharts 366.19x；StockAnalysis 374.21x |
+| Forward P/E | 约 177-200x | 2026-06-11；卖方未来 EPS 估算口径 | StockAnalysis 177.22x；FinanceCharts 200x |
+| P/S | 约 14.77x | 2026-06-11 | StockAnalysis |
+| Forward P/S | 约 13.65x | 2026-06-11 | StockAnalysis |
+| 2026Q1 收入增速 | +16% YoY | 2026Q1 vs 2025Q1 | Tesla Q1 2026 10-Q/Update |
+| TTM 收入增速 | +2.3% YoY | TTM，更新至 2026Q1 | FullRatio / Sharadar |
+| 2026Q1 总毛利率 | 21.1% | 2026Q1 | Tesla Q1 2026 Update |
+| TTM gross margin | 19.1% | TTM，更新至 2026Q1 | FullRatio |
+| 2026Q1 common net margin | 2.1% | 477M / 22.387B | Tesla Q1 2026 Update |
+| TTM net margin | 3.9% | TTM，更新至 2026Q1 | FullRatio |
+| ROE / ROIC | 4.90% / 6.34% | TTM | StockAnalysis |
+
+估值含义：用传统车企或储能设备商利润口径看，TSLA 估值极高；市场本质上在支付 FSD/Robotaxi、Optimus、AI chip/fab、Megapack 成为 AI 电力基础设施标准件的期权价值。若这些期权无法在 2026-2027 年转成收入和毛利，当前估值对汽车/储能利润的容错很低。
+
+### 2.2 资产负债表和现金流健康度
+
+| 项目 | 2026Q1 | 解读 |
+|---|---:|---|
+| 现金、现金等价物和短期投资 | 447.4 亿美元 | 绝对现金很强，是 2026 高 CapEx 的缓冲 |
+| Total current assets | 697.5 亿美元 | 流动性充足 |
+| Total current liabilities | 341.4 亿美元 | 流动比率约 2.04，短债压力不大 |
+| Debt and finance leases, current | 14.47 亿美元 | 多为可控融资租赁/债务 |
+| Debt and finance leases, non-current | 77.82 亿美元 | 合计债务/融资租赁约 92.3 亿美元 |
+| Non-recourse debt / recourse debt | 90.17 亿 / 0.02 亿美元 | 大部分为非追索债务，母公司财务弹性较好 |
+| Total liabilities | 589.22 亿美元 | 相对股东权益 841.16 亿美元，杠杆不高 |
+| Net cash / investments after debt | 约 355 亿美元 | 足以覆盖一年高 CapEx，但不是无限资金 |
+| 2026Q1 operating cash flow | 39.37 亿美元 | 当季核心经营现金流正 |
+| 2026Q1 capex | 24.93 亿美元 | Q1 FCF 约 14.44 亿美元 |
+| 2026 CapEx 指引 | >250 亿美元 | Q1 call，意味着余下季度 capex 将大幅上行 |
+| 2026 余下 FCF 指引 | 管理层称会出现负 FCF | 战略投入期，短期现金流质量下降 |
+
+健康度判断：**资产负债表健康，现金很多，债务轻；但 2026 从“自我造血扩张”转入“高强度前置投资”阶段。** 如果 Megapack、Robotaxi、Cybercab、Optimus 或 AI silicon 任何一条大规模延迟，现金消耗和估值压力会同时出现。
+
+## 3. 最近五个财报季度：收入、利润率、订单/交期和 AI 暴露
+
+说明：Tesla 未披露传统 backlog/bookings/lead time/cancellation rate。下表用官方披露的 deliveries、production、inventory days、storage GWh、FSD subscriptions、管理层订单评论和项目线索做订单/供需推断。AI 数据中心收入占比仅指可识别/可推断的直接 AI DC 暴露，不把全公司 AI 叙事计入。
+
+| 财报期 | 总收入 / YoY | 汽车收入 / YoY / 毛利率 | Energy 收入 / YoY / 毛利率 | Services 收入 / YoY / 毛利率 | 交付/库存/储能/FSD | Backlog、交期、取消率推断 | AI 数据中心相关收入占比 |
+|---|---:|---:|---:|---:|---|---|---|
+| 2026Q1 | 223.87 亿美元 / +16% | 162.34 亿 / +16% / 21.1% | 24.08 亿 / -12% / 39.5% | 37.45 亿 / +42% / 9.2% | 生产 408,669；交付 358,810；库存 27 天；储能 8.8GWh；FSD 1.28M | 车：生产高于交付约 49.9k，库存升至 27 天，说明车端不是供不应求。Energy：部署同比下降但毛利强，管理层称 Megapack demand very strong，Houston Megapack 3 将投产。FSD：订阅创新高，Robotaxi 付费里程环比近翻倍但基数未披露。取消率未披露。 | 财务未披露；可确认直接收入低。若把 Megapack 数据中心项目计入，估计 0-5%，但低置信度 |
+| 2025Q4 | 249.01 亿 / -3% | 176.93 亿 / -11% / 20.4% | 38.37 亿 / +25% / 28.6% | 33.71 亿 / +18% / 8.8% | 生产 434,358；交付 418,227；库存 15 天；储能 14.2GWh；FSD 1.1M | 年末 backlog 高于近年；Energy 创纪录，Megapack deployments 创纪录；管理层提示 Energy backlog 强但 2026 可能受竞争/政策/关税压毛利。 | 非披露；Energy 中可能含数据中心/大负荷 BESS，但未拆 |
+| 2025Q3 | 280.95 亿 / +12% | 212.05 亿 / +6% / 17.0% | 34.15 亿 / +44% / 31.4% | 34.75 亿 / +25% / 10.5% | 生产 447,450；交付 497,099；库存 10 天；储能 12.5GWh；FSD 1.0M | 交付明显高于生产，受美国消费税抵免/区域拉动；库存低，车端短期需求强。Energy 继续高增。 | 低，主要是能源/软件间接暴露 |
+| 2025Q2 | 224.96 亿 / -12% | 166.61 亿 / -16% / 17.2% | 27.89 亿 / -7% / 30.3% | 30.46 亿 / +17% / 5.4% | 生产 410,244；交付 384,122；库存 24 天；储能 9.6GWh；FSD 0.9M | 车端承压，库存偏高；Q2 被公司表述为从 EV/renewable leader 转向 AI/robotics 的关键点。 | 低 |
+| 2025Q1 | 193.35 亿 / -9% | 139.67 亿 / -20% / 16.2% | 27.30 亿 / +67% / 28.8% | 26.38 亿 / +15% / 3.8% | 生产 362,615；交付 336,681；库存 22 天；储能 10.4GWh；FSD 0.8M | Model Y changeover 影响车端；Energy 高增且毛利改善；FSD/AI R&D 上升。 | 低 |
+
+五季度读法：
+
+- **汽车收入不是成长核心，但 Q1 2026 利润率改善明显。** 汽车毛利率从 2025Q1 的 16.2% 升至 2026Q1 的 21.1%，排除监管积分后从 12.5% 升至 19.2%。这说明 mix、成本、保修/关税一次性因素和价格策略短期有利，但生产高于交付提示需求仍需观察。
+- **Energy 是增长和毛利最好的已确认业务。** 五季度能源毛利率为 28.8%、30.3%、31.4%、28.6%、39.5%。Q1 2026 收入同比下降不能忽略，但毛利率达到历史高位，说明成本下降和产品 mix 强。
+- **Services and other 从低毛利负担转为有贡献业务。** 收入从 26.38 亿升至 37.45 亿美元，毛利率从 3.8% 升至 9.2%，受二手车、维修、Supercharging、insurance、Robotaxi/FSD 生态拉动。
+- **AI 数据中心收入不是财报主线。** Tesla 的 AI 数据中心暴露主要在 Megapack 作为 BESS / load smoothing / flexible interconnection，而不是芯片、网络或液冷供应。
+
+## 4. 2026Q1 指引、业务收入占比和重点产品
+
+### 4.1 2026Q1 收入占比
+
+| 业务 | 2026Q1 收入 | 占比 | YoY | 毛利率 | 重要性 |
+|---|---:|---:|---:|---:|---|
+| Automotive | 162.34 亿美元 | 72.5% | +16% | 21.1% | 最大收入底盘；估值弹性低于 AI/储能 |
+| Energy generation and storage | 24.08 亿美元 | 10.8% | -12% | 39.5% | 最可验证高毛利增长点；Megapack/Megablock 是 AI DC 相关核心 |
+| Services and other | 37.45 亿美元 | 16.7% | +42% | 9.2% | 车队规模化、Supercharging、二手车、保险、FSD/Robotaxi 间接体现 |
+| AI/Optimus/Robotaxi 单独分部 | 未披露 | n/a | n/a | n/a | 目前主要体现在 R&D、CapEx、服务收入和未来期权 |
+
+### 4.2 跳过或弱化的产品/业务
+
+| 产品/业务 | 跳过/弱化原因 | 仍需跟踪的例外 |
+|---|---|---|
+| Model S / Model X | 已进入停产/退出窗口，Fremont 产线转 Optimus | 高端车主服务和存量软件收入 |
+| Roadster | 仍为 design development，对 2026 收入无实质贡献 | 若形成品牌/技术展示，不作为收入模型 |
+| Residential solar | 当前收入披露中不突出，增长弹性弱于 Megapack | 若 Tesla 重新放大 solar + Powerwall + VPP |
+| Powerwall | 有增长但 AI 数据中心关联低，更多是住宅/VPP | VPP/Powerhub/Autobidder 软件生态 |
+| Cybertruck | 容量 >125k，但需求/毛利和 AI 关联弱 | 若作为 Robotaxi/Semi 技术共享平台 |
+| 普通 Supercharging | 服务收入重要，但不是 AI DC 主线 | V4 cabinet、Megacharger、Robotaxi fleet charging |
+| 普通 Model 3/Y | 仍是现金流核心，但不是高增长 AI 产品 | 低价车型、AI4/AI5 可升级性、FSD attach |
+
+### 4.3 重点产品和小业务清单
+
+| 优先级 | 产品/业务 | 当前状态 | 为什么不能漏 |
+|---|---|---|---|
+| A | Megapack / Megapack 3 / Megablock | Lathrop 40GWh、Shanghai 20GWh、Texas construction；Q1 2026 energy GM 39.5% | 已有收入、毛利、AI 数据中心电力痛点和产能扩张 |
+| A | FSD subscription + Robotaxi | FSD 1.28M active subs；Texas 无监督 Robotaxi 扩张 | 高毛利软件/服务，是估值最核心之一 |
+| A | Cybercab | Q1 2026 pilot/production start；volume production 2026 | Robotaxi 降本和车队规模化关键硬件 |
+| A | Optimus | Fremont 1M/year planned line、Texas second-gen line construction/prep | 当前收入为 0，但市场给了极高期权价值 |
+| A | AI5 / AI6 / Dojo 3 / Cortex 2 / Research Fab | Cortex 2 online；AI5 final chip design done；research fab groundbreaking | 决定 FSD/Optimus/Robotaxi 的算力成本和供应瓶颈 |
+| B | Tesla Semi + Megacharger | Nevada pilot/volume production 2026；public Megachargers 部署 | 商用车电动化与大功率充电基础设施潜在小基数增长 |
+| B | V4 Supercharging cabinets | Gigafactory New York 生产；3x power density、2x stalls vs V3 | Robotaxi/Semi/高速补能运营效率，服务网络壁垒 |
+| B | 4680 / LFP / lithium / cathode | LFP Nevada、lithium/cathode Texas ramp；battery pack 是 vehicle ramp limiting factor | 能否支撑车、储能、机器人、AI supply chain localization |
+
+## 5. 当前高增长/关键产品：收入贡献、增速、AI 重要性和供需
+
+评分：5 = 极强 / 极高；1 = 弱。收入贡献为 2026Q1 或当前 run-rate 估算。
+
+| 产品/业务 | 当前收入贡献 | 增速 | AI 基建重要性 | 时间紧急性 | 供需紧张 | 垄断/溢价 | 关键判断 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Megapack/Megablock/BESS | Energy 分部 Q1 24.08 亿美元；储能 8.8GWh；AI DC 直接收入未披露 | 2025 Energy +27%；2026Q1 -12%；储能 2025 +49%、Q1 -15% YoY | 4 | 5 | 4 | 3 | 对 AI DC 的价值在并网/功率平滑，不是 IT 算力；毛利率 39.5% 很强 |
+| FSD subscription | 1.28M active subs × $99/月 ≈ 15.2 亿美元 ARR；不含 upfront/deferred | Active subs +51% YoY；Q1 record net additions | 3 | 5 | 3 | 4 | 软件毛利高；监管和真实安全验证是瓶颈 |
+| Robotaxi/Cybercab | 当前收入未披露，估计极小；Robotaxi paid miles nearly doubled qoq | 低基数高增 | 3 | 5 | 3 | 3 | Waymo 已多城商业化；Tesla 优势是车辆成本和可扩展 fleet |
+| Optimus | 当前外部收入 0 | n/a | 2 | 4 | 2 | 2 | 供给和需求都未验证；最大期权但最低置信度 |
+| AI5/Dojo/Cortex/Research Fab | 外部收入 0；Q1 R&D 19.46 亿美元、CapEx 24.93 亿美元中部分用于 AI/infra | 投入高增 | 4 | 5 | 4 | 3 | 对 Tesla 内部 AI 成本/供应链关键；不是对外芯片收入 |
+| Tesla Semi + Megacharger | 当前收入未披露，pilot/early ramp | 低基数 | 1 | 3 | 3 | 2 | 更偏商用车/物流，不是 AI DC 主线 |
+| Model 3/Y + affordable trims | Automotive Q1 主要收入底盘 | Q1 automotive +16%，但 2025 annual -10% | 2 | 4 | 2 | 3 | 现金流和 FSD fleet 入口；不是高增长硬件本身 |
+
+## 6. 一年后产品收入预测：基准 / 乐观 / 极度乐观
+
+时间窗口：2027Q2 附近或 2026Q3-2027Q2 滚动。以下为研究估算，不是公司指引。
+
+| 产品/业务 | 2027 年中基准 | 2027 年中乐观 | 2027 年中极度乐观 | 主要反证 |
+|---|---:|---:|---:|---|
+| Megapack/Megablock/BESS | 年化收入 150-190 亿美元；储能 60-75GWh；毛利率 30-36% | 年化 200-280 亿；80-105GWh；毛利率 32-38% | 年化 300-380 亿；110-140GWh；毛利率 34-40% | Houston ramp 慢、BESS 价格战、项目并网延迟、关税/政策压毛利 |
+| AI 数据中心 Megapack 子场景 | 年化 10-25 亿美元 | 30-60 亿美元 | 70-120 亿美元 | Hyperscaler 采用竞争 BESS/UPS；utility 不认可 BESS 作为并网加速 |
+| FSD subscription | 1.6-1.9M subs；ARR 19-23 亿美元 | 2.2-2.6M；ARR 26-31 亿美元 | 3.0-3.8M；ARR 36-45 亿美元 | 安全事故、监管限制、用户 churn、竞争/价格下降 |
+| Robotaxi/Cybercab | 收入 2-7 亿美元；仍试点/多城早期 | 10-25 亿美元；10+ 州/城市扩张 | 30-60 亿美元；Cybercab 快速放量 | Waymo/监管领先、运营成本高、事故、车辆供给不足 |
+| Optimus | 0-5 亿美元，多数为内部部署/试产价值 | 10-30 亿美元，小批外部/内部规模化 | 50-100 亿美元，>10 万台级别 | 产线、手部/执行器、可靠性、客户 ROI、监管安全 |
+| AI5/AI compute/fab | 外部收入 0；但 CapEx/R&D 继续高 | 通过 FSD/Robotaxi/Optimus 降本体现 | 若 AI5/AI6 明显降低成本，软件服务毛利上修 | 芯片延期、良率低、依赖 NVIDIA/TSMC/Samsung/Micron 不变 |
+| Tesla Semi/Megacharger | 2-10 亿美元 | 10-30 亿美元 | 30-60 亿美元 | 电池包限制、车队 TCO 不足、充电设施慢 |
+
+## 7. BOM、单位内容量、价格传导链和产能
+
+### 7.1 Megapack / Megablock / BESS
+
+| 项目 | 当前信息 / 估算 |
+|---|---|
+| 官方/技术规格 | ERCOT 材料：Megapack 2 XL 为 2MW / 4MWh per unit，200MW / 400MWh per acre；Megablock 外部资料：4 个 Megapack 3 + 中压变压器 + switchgear，20MWh AC，25 年寿命，>10,000 cycles，91% round-trip efficiency，248MWh/acre，23% faster install，up to 40% lower construction cost |
+| 典型 BOM | LFP cells/modules 45-60%；inverter/PCS 10-15%；thermal/fire/enclosure 10-15%；transformer/switchgear/breaker 5-10%；BMS/EMS/Autobidder/controls 3-8%；installation/service/warranty 10-20% |
+| 价格传导链 | AI DC/utility 需要 MW/GW 快速接入 -> BESS 规格按 MW、MWh、响应时间、grid-forming、LVRT、消防认证确定 -> Tesla 报价由电芯、PCS、并网设备、软件和 EPC/服务构成 -> 电芯/铜/关税/ITC/国内制造影响 ASP 与毛利 |
+| 每 MW | 2h BESS：约 2MWh/MW；按 $250/kWh 全系统粗算约 50 万美元/MW；4h BESS 约 100 万美元/MW |
+| 每 rack | 若 AI rack 150kW、2h BESS：约 300kWh/rack，约 7.5 万美元/rack；若 250kW rack，约 500kWh/rack，约 12.5 万美元/rack |
+| 每 GPU | 若 72 GPU rack、150kW、2h BESS：约 4.17kWh/GPU，约 1,000 美元/GPU；该口径只用于设施侧 BESS 分摊，不是 GPU BOM |
+| 每 optical port | 直接内容量为 0；BESS 与 optical port 无直接绑定，只能通过 rack/MW 分摊 |
+| 当前产能能力 | 官方 Q1 2026：California Megapack 40GWh production，Shanghai Megapack 20GWh production，Texas Megapack construction；现有 Megapack 年化理论 60GWh，按 $220-280/kWh 对应 132-168 亿美元收入能力 |
+| 被供应链采纳 | Utility-scale BESS 已规模化；AI DC 场景处于 design-in/项目验证阶段。ERCOT 材料披露 Tesla Gigafactory Texas 130MW/260MWh data center Megapack system 与 125MW/250MWh ERCOT participating system；xAI Colossus 约 250MW 负载用于 AI load smoothing/demand response 线索 |
+| 认证/准入 | 重点不是芯片认证，而是 UL/NFPA/fire code、grid interconnection、IEEE 2800 ride-through、utility acceptance、项目消防和保险要求 |
+
+### 7.2 FSD / Robotaxi / Cybercab
+
+| 项目 | 当前信息 / 估算 |
+|---|---|
+| 产品内容 | FSD (Supervised) subscription、vehicle autonomy stack、Robotaxi fleet operations、Cybercab no steering wheel/pedals dedicated platform、insurance/service/charging |
+| 当前收入 | FSD active subscriptions 1.28M，按 $99/月约 15.2 亿美元 ARR；Robotaxi 收入未披露 |
+| BOM | 车端：AI4/AI5 computer、cameras、vehicle platform、battery pack、drive unit、interior、connectivity；云端：training compute、data pipeline、labeling/simulation、fleet ops；Robotaxi 额外包含 cleaning/charging/maintenance/depot |
+| 每 MW/rack/GPU/optical port | 不是数据中心部件。可按服务成本看：云端训练/推理 CapEx 分摊到每 subscription 或每 robotaxi mile，但公司未披露；不能可靠拆每 GPU |
+| 价格传导链 | 消费者 $99/月 FSD subscription 或 Robotaxi fare -> Tesla 软件/车队收入 -> AI training compute、vehicle depreciation、insurance/service/charging 成本 -> 高利用率时软件毛利扩张 |
+| 产能能力 | 受 AI4/AI5 可用车队、Cybercab production、监管城市、运营设施、Supercharger/Service footprint 限制 |
+| 供应链采纳 | 自有生态；外部客户不是硬件采购商，采纳指标是 FSD subscriptions、paid Robotaxi miles、监管批准城市、车辆利用率 |
+| 认证/准入 | 州/城市 robotaxi permit、事故/安全统计、保险、数据隐私、车辆符合 FMVSS 或豁免 |
+
+### 7.3 Optimus
+
+| 项目 | 当前信息 / 估算 |
+|---|---|
+| 产品内容 | General-purpose humanoid robot；Gen 3 为 mass-production 设计；Fremont S/X 空间计划 1M/year，Texas second-gen line 长期更大 |
+| 当前收入 | 外部收入 0 |
+| BOM | 执行器/电机/减速器 25-35%；结构件/关节/手部 15-25%；电池/电源 8-15%；AI compute/sensors/cameras 8-15%；线束/连接器/热管理 5-10%；装配/测试/质保 15-25%；软件训练与 fleet learning 不在单机 BOM 中 |
+| 每 MW/rack/GPU/optical port | 与 AI 数据中心无直接 BOM 对应。若用于工厂，充电负荷大约按单台 0.1-0.5kW 级运营功率估算；数据中心 GPU 只作为训练成本 |
+| 价格传导链 | 客户/内部工厂按人力替代 ROI 付费 -> Tesla robot ASP/lease/service -> 执行器、battery、AI board、sensors、manufacturing line 成本 -> 规模良率决定毛利 |
+| 产能能力 | 官方披露为产线设计/建设阶段，不等于当前产出；最大瓶颈是执行器、手部、软件可靠性、现场安全 |
+| 供应链采纳 | 当前以内测/内部部署为主；外部客户和认证未披露 |
+| 认证/准入 | 工厂安全、功能安全、UL/CE、职业安全、家庭/公共场景监管；尚未形成成熟认证路径 |
+
+### 7.4 AI5 / Dojo 3 / Cortex / Research Fab
+
+| 项目 | 当前信息 / 估算 |
+|---|---|
+| 产品内容 | Cortex 2 AI training cluster、Dojo 3/custom silicon、AI5 inference processor、Tesla-owned research fab |
+| 当前收入 | 对外收入 0；通过 FSD/Robotaxi/Optimus 成本和能力体现 |
+| 当前投入 | Q1 2026 R&D 19.46 亿美元，同比增长 38%，主要由 AI and other programs 推动；Q1 capex 24.93 亿美元，用于 AI/operational infrastructure/factory expansion 等 |
+| BOM | 高端逻辑 die、HBM/DRAM、先进封装、PCB/board、power/cooling、data center networking、software toolchain；具体 AI5/Dojo 3 参数和成本未披露 |
+| 每 MW/rack/GPU/optical port | Tesla 是算力消费方。若以 H100e equivalent 计，Q4 2025 披露 Texas Cortex 1 >100k H100e；Q1 2026 只披露 Cortex 2 online 和训练 workloads，未披露精确新增 GPU 等价数 |
+| 价格传导链 | FSD/Robotaxi/Optimus 需求 -> 训练/推理算力需求 -> NVIDIA/自研芯片/TSMC/Samsung/Micron/封装/电力冷却 CapEx -> 软件服务单位成本下降 |
+| 产能能力 | 受外部晶圆、HBM、封装、数据中心电力、液冷、EDA/IP 和内部设计能力约束 |
+| 认证/准入 | 半导体良率/可靠性、车规/机器人安全、数据中心运行可靠性；未披露外部客户认证 |
+
+## 8. 一年后产能、采纳和认证三情景
+
+| 产品/业务 | 基准：2027 年中 | 乐观：2027 年中 | 极度乐观：2027 年中 |
+|---|---|---|---|
+| Megapack/Megablock | 现有 60GWh + Houston 初步 ramp，年化可交付 70-85GWh；AI DC design-in 增加但收入占 Energy <15%；UL/fire/utility 认证按项目推进 | Houston 明显爬坡，总能力 90-110GWh；AI DC/large load 订单年化 30-60 亿美元；Megablock 成为部分大型项目标准块 | 总能力 120GWh+；AI DC BESS 成为多个 GW campus 的并网工具；2h/4h BESS 被 utility fast-track 程序显性采用 |
+| FSD/Robotaxi/Cybercab | FSD subs 1.6-1.9M；Robotaxi 仍以 Texas + 若干州为主；Cybercab 小规模量产 | FSD 2.2-2.6M；10+ 城市/州，Robotaxi fleet thousands 级；Cybercab 量产爬坡 | FSD 3M+；Robotaxi 服务显著扩张，fleet tens of thousands；Regulatory acceptance 明显改善 |
+| Optimus | Fremont 产线安装/低速爬坡，内部部署为主；外部认证少 | 1-10 万台级年化能力；先在 Tesla 工厂/少量工业客户试点 | 10 万台+ 年化产能可见；客户愿意按工时/lease 付费；安全认证路径成型 |
+| AI5/Dojo/Cortex/Research Fab | AI5 工程/车端导入准备，Cortex 2 稳定；research fab 仍早期 | AI5/AI6 进展使训练/推理成本下降；Dojo 3 进入更明确硬件路线 | 自研芯片显著减少外部 GPU 依赖；但仍难在一年内形成外部收入 |
+| Semi/Megacharger | Nevada 量产爬坡，服务少数 fleet 客户；Megachargers 点状部署 | 物流大客户订单、V4/Megacharger 规模扩大 | Semi 成为商用车小基数高增业务，Megacharger + Megapack 组合销售 |
+
+## 9. Backlog、供给和未来一年业务增速
+
+### 9.1 当前订单/供需证据
+
+| 业务 | 官方 backlog 披露 | 可用信号 | 当前结论 |
+|---|---|---|---|
+| 汽车 | 未披露；Q4 call 称年末 backlog 高于近年；Q1 transcript/媒体摘要称 Q1 backlog 为两年多最高 Q1 | Q1 生产 408,669，高于交付 358,810；库存 27 天 | 不宜判断为供不应求。订单改善与库存上升并存，需求仍受价格、利率、竞争、监管补贴影响 |
+| Energy / Megapack | 未披露金额；Q4 call 称 strong, globally diversified backlog；Q1 call 称 Megapack demand very strong | 2025 储能 46.7GWh；Q4 14.2GWh record；Q1 8.8GWh；现有产能 60GWh + Texas construction | 中长期供需偏紧，短期交付节奏波动。产能从 Lathrop/Shanghai/Houston 扩张决定 2027 增速 |
+| FSD / Robotaxi | 无 backlog；订阅即收入 | Active subs 1.28M；record net subs；Robotaxi paid miles nearly doubled | 需求来自软件 adoption，不受传统 backlog 限制；监管和安全是供给瓶颈 |
+| Optimus | 无外部订单披露 | 1M/year Fremont planned line，Texas line construction/prep | 当前是产能建设和技术验证，不是订单 backlog |
+| AI compute/chips | 内部需求，不披露订单 | >250 亿美元 2026 CapEx，research fab orders started | 内部算力/芯片供给紧张；不是外部订单收入 |
+
+### 9.2 未来一年业务增速三情景
+
+| 业务 | 基准 | 乐观 | 极度乐观 |
+|---|---:|---:|---:|
+| Automotive revenue | +0% 至 +8%；Model 3/Y trims、区域需求和 Cybercab/Semi 少量贡献抵消竞争压力 | +8% 至 +18%；affordable trims 和 fleet/Robotaxi 需求改善 | +20% 至 +35%；Cybercab/Semi 快速放量且 ASP/mix 不拖累 |
+| Energy revenue | +25% 至 +45%；60-75GWh 储能部署，Megapack 3 初步 ramp | +50% 至 +85%；Houston/Shanghai/Lathrop 同步高利用，AI DC 订单贡献 | +90% 至 +140%；Megablock 成为 AI DC / utility 标准化块，产能和订单都超预期 |
+| Services & Other revenue | +25% 至 +40%；Supercharging、服务、FSD subs 拉动 | +40% 至 +70%；Robotaxi 收入初步显性化 | +80% 至 +130%；Robotaxi fleet 成为可见收入分部 |
+| FSD software ARR | +25% 至 +50% | +70% 至 +110% | +130% 至 +200% |
+| Optimus revenue | 近 0 至 5 亿美元 | 10-30 亿美元 | 50-100 亿美元 |
+| 全公司 revenue | +10% 至 +22% | +25% 至 +45% | +50%+，需要 Energy + Robotaxi + Optimus 同时超预期 |
+
+## 10. 竞争格局、替代路径和客户替换成本
+
+### 10.1 Megapack / BESS
+
+| 维度 | 内容 |
+|---|---|
+| 主要竞争对手 | Fluence、CATL、BYD、Sungrow、Wärtsilä、Powin、LG Energy Solution、Samsung SDI、Saft、Schneider、Vertiv、Eaton、ABB、Hitachi Energy |
+| Tesla 优势 | AC integrated product、Megapack field record、Autobidder/Powerhub 软件、Supercharger/large-load 自用场景、Lathrop/Shanghai/Houston 产能、grid-forming 和快速响应材料 |
+| 风险/替代 | LFP cell 价格下行导致系统集成毛利被压；中国 BESS 厂商成本优势强；Fluence/Wärtsilä 软件和项目融资强；Schneider/Vertiv/Eaton 可把 UPS+BESS+switchgear+service 打包 |
+| 是否未来主流 | AI DC 需要 BESS/UPS/柔性负载是主流；Tesla Megapack 是否成为主流供应商取决于价格、交期、utility acceptance 和安全记录 |
+| 客户替换成本 | 中高。项目设计、消防、并网、EMS、保修和服务绑定后替换成本高；但新项目招标时竞争激烈 |
+
+### 10.2 FSD / Robotaxi / Cybercab
+
+| 维度 | 内容 |
+|---|---|
+| 主要竞争对手 | Waymo、Zoox、Baidu Apollo、Pony.ai、AutoX、Cruise 残余资产/合作、Uber/Lyft AV partners、Mobileye ecosystem |
+| Tesla 优势 | 巨大车辆 fleet、端侧 camera-only scale、制造成本、FSD subscription 数据、Cybercab 专用低成本平台、服务/充电网络 |
+| 风险/替代 | Waymo 在多城市运营和安全 case 上领先；Tesla 需要证明无监督安全、监管合规、运营质量和事故责任；camera-only 路线若遇到长尾场景或监管不认可会受限 |
+| 是否未来主流 | Autonomy/Robotaxi 是未来主流概率高；Tesla 路线是否主流仍需城市级安全和经济性验证 |
+| 客户替换成本 | 乘客替换成本低，可多平台；车主 FSD 生态锁定中高；城市监管切换成本高 |
+
+### 10.3 Optimus
+
+| 维度 | 内容 |
+|---|---|
+| 主要竞争对手 | Figure AI、Agility Robotics Digit、Apptronik Apollo、Boston Dynamics Atlas、1X NEO、Unitree、XPeng IRON、AgiBot/Fourier 等 |
+| Tesla 优势 | 量产制造经验、电池/电机/AI stack、内部工厂测试场、资金和品牌 |
+| 风险/替代 | 人形机器人未证明必须是最经济形态；AMR、机械臂、专用自动化设备可能替代；安全认证和客户 ROI 是硬门槛 |
+| 是否未来主流 | 人形通用机器人是高上限方向，但 2026 不是主流收入；工厂内部单任务自动化会先落地 |
+| 客户替换成本 | 初期低，客户会多家试点；一旦机器人进入工艺/工位/软件系统，替换成本上升 |
+
+### 10.4 AI5 / Dojo / 自研芯片
+
+| 维度 | 内容 |
+|---|---|
+| 主要替代 | NVIDIA GPU、AMD GPU、Google TPU/AWS Trainium/Meta MTIA 等云 ASIC、第三方 inference accelerators、外部云训练 |
+| Tesla 优势 | 需求自有、workload 垂直、车/机器人 edge inference 明确、成本/功耗可联合优化 |
+| 风险 | 自建芯片/fab 资本强度高；HBM/advanced packaging/EDA/良率受外部供应链约束；Dojo 方向曾有反复；短期可能仍依赖 NVIDIA |
+| 是否主流 | 自研 inference ASIC 对垂直平台会成为主流；自建 full-stack fab 对 Tesla 是极端纵向整合路径，不一定行业主流 |
+| 替换成本 | 对 Tesla 内部很高；一旦 AI5/AI6 进入车/机器人平台，换外部芯片成本极高 |
+
+### 10.5 汽车主业
+
+| 维度 | 内容 |
+|---|---|
+| 竞争对手 | BYD、Geely、SAIC、NIO/Xpeng/Li Auto、Toyota、Volkswagen、Hyundai/Kia、Ford、GM、Rivian、Lucid 等 |
+| Tesla 优势 | Model 3/Y 成本/制造、品牌、软件、充电网络、FSD optionality |
+| 风险 | 全球 EV 增长放缓、补贴下降、中国车企成本优势、欧洲/中国竞争、关税、利率和残值 |
+| 替换成本 | 消费者低，fleet 中等；FSD/充电生态可提高粘性 |
+
+## 11. 投资框架：哪些指标最该跟踪
+
+| 主题 | 最重要指标 | 上修信号 | 下修/反证信号 |
+|---|---|---|---|
+| Megapack / AI DC | 储能 GWh、Energy revenue、Energy GM、Houston ramp、Megablock 订单、AI data center BESS 客户名 | Energy GM 保持 >30%；储能部署年化 70GWh+；公开 AI DC / utility fast-track BESS 订单 | Energy GM 回落 <25%；Houston 延迟；BESS ASP 大跌；项目取消 |
+| Robotaxi | 无监督城市/州数量、paid miles、fleet size、事故率、Cybercab units、fare/revenue | 10+ 城市、事故率优于人类/Waymo对标、Cybercab 单位成本披露 | 重大事故、监管暂停、运营成本高、扩区慢 |
+| FSD software | Active paid subscribers、subscription churn、take rate、deferred revenue | >2M subs、订阅净增持续、海外审批 | churn 上升、价格下降、监管限制 |
+| Optimus | 实际产量、内部工位部署小时、外部客户、ASP、BOM、故障率 | 月产过千/万台，真实工厂任务 ROI 明确 | 发布延期、仍依赖遥操作、客户不付费 |
+| AI compute/chip | AI5/AI6 tape-out/vehicle deployment、Cortex cost、research fab milestones、CapEx/FCF | 自研芯片降低 inference cost，CapEx 与软件收入同步 | CapEx 激增但软件收入不显性，FCF 长期为负 |
+| 汽车 | Deliveries、inventory days、ASP、ex-credit auto GM、regional mix | 库存天数回到 10-15，auto GM ex-credit >18% | 库存 >30 天、降价、交付低于生产 |
+
+## 12. 综合判断
+
+Tesla 当前不是一家可以用 PE 或 P/S 简单判断便宜的公司。报表层面，它是：
+
+- 2026Q1 72.5% 收入来自汽车；
+- 最强毛利改善来自 Energy 和 automotive ex-credit margin；
+- 最强收入增速来自 Services and other；
+- 最强期权来自 Robotaxi/FSD/Optimus/AI chips；
+- 对 AI 数据中心最真实的当前产品是 Megapack/BESS，而不是芯片或服务器。
+
+如果只看未来 12 个月的可验证收入，**Megapack/Megablock + FSD subscription** 是最值得高权重跟踪的业务；如果看估值上限，**Robotaxi/Cybercab + Optimus + AI5/Research Fab** 决定市场愿意给 Tesla 多高的非汽车倍数。最大的投资风险是：公司在 2026 年用超过 250 亿美元 CapEx 同时推进六类新产线和 AI/fab 投入，但可确认收入仍主要由汽车和储能承担。换句话说，**Tesla 的 2026 不是收获年，而是重资本押注年；短期财务安全来自强资产负债表，长期估值安全来自这些押注能否在 2027-2028 转成高毛利收入。**
+
+## 13. 主要来源
+
+### 13.1 本地行业资料
+
+| 文件 | 用途 |
+|---|---|
+| `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md` | AI 产业链口径、不可重复计算规则、AI CapEx/订单/MW/rack 映射 |
+| `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md` | 2026-2027 美国 AI 数据中心建设规模、电力/UPS/BESS 订单池 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md` | BESS/UPS 对 AI dynamic power、并网、BOM、毛利率和市场规模的本地行业框架 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_DCIM、能控与AI工厂数字孪生_2026-06-10.md` | AI 工厂能控、workload-aware demand response、grid-interactive AI factory |
+| `行业调研/AI服务器_存储_芯片/行业调研_云厂自研AI ASIC_2026-06-10.md` | 自研 AI ASIC、HBM/封装/云厂芯片路线对 Tesla AI5/Dojo 的参照 |
+| `行业调研/AI服务器_存储_芯片/行业调研_AI边缘推理芯片_2026-06-11.md` | 物理 AI、车端/机器人边缘推理芯片和端云协同框架 |
+
+### 13.2 外部资料
+
+| 来源 | 日期 | 关键用途 |
+|---|---:|---|
+| Tesla Investor Relations, Q1 2026 Update, https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q1-2026-Update.pdf | 2026-04-22 | 五季度财务、Q1 2026 经营指标、产能、FSD/Robotaxi/AI5/Outlook |
+| Tesla 2026Q1 Form 10-Q, https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm | 2026-04 | 收入拆分、毛利率、R&D、现金流、资产负债表 |
+| Tesla Investor Relations, Q4/FY 2025 Update, https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q4-2025-Update.pdf | 2026-01-28 | 2025 全年转型、Energy/Optimus/Cortex/产能、2025 年财务 |
+| Tesla FY2025 Form 10-K, https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm | 2026-01 | 业务描述、2025 生产/交付/储能、现金与经营风险 |
+| Tesla Q1 2026 earnings call transcript, Investing.com, https://www.investing.com/news/transcripts/earnings-call-transcript-tesla-beats-q1-2026-eps-forecasts-stock-rises-93CH-4631008 | 2026-04-22 | CapEx >250 亿美元、负 FCF、Megapack demand、AI/Optimus/Robotaxi 管理层评论 |
+| Tesla Q4 2025 earnings call transcript, The Motley Fool, https://www.fool.com/earnings/call-transcripts/2026/01/28/tesla-tsla-q4-2025-earnings-call-transcript/ | 2026-01-28 | Model S/X 停产、Optimus 1M/year、Energy backlog、FSD paid customers |
+| ERCOT Large Load Working Group, Tesla Battery Storage Applications at Data Centers, https://www.ercot.com/files/docs/2025/05/15/11-Megapack-at-Data-Centers-_-ERCOT-LLWG_5.16.25_vShare.pdf | 2025-05 | Megapack 2XL 2MW/4MWh、AI load smoothing、LVRT、flex connection、Gigafactory Texas/xAI 案例 |
+| ESS News, Tesla unveils Megapack 3 and Megablock, https://www.ess-news.com/2025/09/09/tesla-unveils-new-generation-of-utility-scale-batteries-megapack-3-and-megablock/ | 2025-09-09 | Megapack 3 / Megablock 规格、Houston 50GWh 计划、20MWh AC、91% RTE、248MWh/acre |
+| E Source, Why batteries are essential for AI data center load management, https://www.esource.com/white-paper/why-are-batteries-becoming-essential-ai-data-center-load-management | 2026-03 | AI DC 2h BESS 成本/MW 与负载管理经济性 |
+| StockAnalysis TSLA statistics, https://stockanalysis.com/stocks/tsla/statistics/ | 2026-06-11 | 股价、市值、EV、forward PE、P/S、财务比率 |
+| FinanceCharts TSLA PE, https://www.financecharts.com/stocks/TSLA/value/pe-ratio | 2026-06-11 | 当日 PE、收盘价、TTM EPS |
+| FullRatio TSLA financials, https://fullratio.com/stocks/nasdaq-tsla/tesla | 2026-06 | TTM revenue、gross margin、net margin、TTM revenue growth |
+| IEA Global EV Outlook 2026, https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars | 2026 | 全球 EV 竞争、区域市场、中国车企扩张 |
+| The Verge, Waymo Premier, https://www.theverge.com/transportation/947974/waymo-premier-monthly-membership-perks-priority-cash-back | 2026-06-11 | Robotaxi 竞争格局、Waymo 城市扩张和商业化 |
+| Electrek, Tesla Optimus production/Fremont, https://electrek.co/2026/04/22/tesla-optimus-production-fremont-model-sx-line/ | 2026-04-22 | Optimus 产线和 Model S/X 转换的外部报道 |
+| Tesla support, FSD subscriptions, https://www.tesla.com/support/full-self-driving-subscriptions | 2026 | FSD $99/月订阅价格和产品说明 |

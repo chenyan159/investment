@@ -1,0 +1,21 @@
+﻿domain,subject,path,date,line_start,line_end,t3,t12,t24,note
+company,PENG,D:\drive\Investment\基本面\公司调研\AI服务器_存储_EMS\PENG_Penguin Solutions_公司调研_2026-07-11.md,2026-07-11,5,13,,,,利润现金分离；前九月CFO11.2m/净利润90.8m，非现金造假证据
+company,SMCI,D:\drive\Investment\基本面\公司调研\AI服务器_存储_EMS\SMCI_Super Micro Computer Inc_公司调研_2026-07-11.md,2026-07-11,11,17,,,,GPU内容占比不等于利润捕获；基准收入46–53B包含51.71B一致预期
+company,MU,D:\drive\Investment\基本面\公司调研\AI服务器_存储_EMS\MU_Micron_Technology_美光科技_公司调研_2026-08-19.md,2026-08-19,302,314,,,,每光口是经济分摊而非物理BOM；更新版仍需自行解释模板适用性
+company,P,D:\drive\Investment\基本面\公司调研\AI服务器_存储_EMS\P_Everpure_公司调研_2026-07-11.md,2026-07-11,529,531,,,,明确第二客户资格/小批量不计大额收入，不能批评完全忽略信息时钟
+company,SOMMY,D:\drive\Investment\基本面\公司调研\半导体材料_化学品_基板\SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-07-11.md,2026-07-11,11,16,,,,制药和农业、处置收益与持续利润均已研究，反驳所有非AI业务被忽略
+company,AEHR,D:\drive\Investment\基本面\公司调研\封测_检测_计量_光罩\AEHR_Aehr_Test_Systems_公司调研_2026-07-18.md,2026-07-18,12,18,,,,7/18已吸收130–150m FY27指引；名义产能超288m不等于需求
+company,MOD,D:\drive\Investment\基本面\公司调研\机电_冷却_工程_水处理_边缘工业AI\MOD_Modine_Manufacturing_公司调研_2026-07-31.md,2026-07-31,11,17,,,,7/31已识别可取消容量协议、毛利执行问题与未来两个季度重点
+company,WOLF,D:\drive\Investment\基本面\公司调研\配电_电源_功率器件\WOLF_Wolfspeed_公司调研_2026-07-12.md,2026-07-12,15,26,,,,供给过剩、负毛利、现金流、资本稀释明确存在
+company,ADBE,D:\drive\Investment\基本面\公司调研\云算力_IDC_AI软件平台\ADBE_Adobe_公司调研_2026-07-12.md,2026-07-12,294,299,,,,每MW等NA，自选seat/credit/workflow单位经济；233行明确不能略过成熟核心
+company,ORCL,D:\drive\Investment\基本面\公司调研\云算力_IDC_AI软件平台\ORCL_Oracle_Corporation_公司调研_2026-07-12.md,2026-07-12,9,13,,,,传统软件融资云扩张与资本结构、租赁承诺已有识别
+industry,数据中心电力接入与高压变电,D:\drive\Investment\基本面\行业调研\AI园区电力_机电_冷却\行业调研_数据中心电力接入与高压变电_2026-08-18.md,2026-08-18,17,19,point_annual_run_rate,point_annual_run_rate,point_annual_run_rate,人工核对正文口径；不同定义不等于篇内错误；仅本10份定向诊断样本，不外推77份比例
+industry,数据中心直液冷系统,D:\drive\Investment\基本面\行业调研\AI园区电力_机电_冷却\行业调研_数据中心直液冷系统_2026-08-18.md,2026-08-18,157,161,next_3m_revenue,next_12m_revenue,months_13_24_revenue,人工核对正文口径；不同定义不等于篇内错误；仅本10份定向诊断样本，不外推77份比例
+industry,HBM与高带宽内存,D:\drive\Investment\基本面\行业调研\AI服务器_存储_芯片\行业调研_HBM与高带宽内存_2026-08-18.md,2026-08-18,41,47,next_3m_revenue,next_12m_revenue,next_24m_cumulative,人工核对正文口径；不同定义不等于篇内错误；仅本10份定向诊断样本，不外推77份比例
+industry,AI-native存储与KV Cache基础设施,D:\drive\Investment\基本面\行业调研\AI服务器_存储_芯片\行业调研_AI-native存储与KV_Cache基础设施_2026-08-18.md,2026-08-18,60,66,next_3m_revenue,point_annual_run_rate,point_annual_run_rate,人工核对正文口径；不同定义不等于篇内错误；仅本10份定向诊断样本，不外推77份比例
+industry,CXL内存扩展与内存池化,D:\drive\Investment\基本面\行业调研\AI服务器_存储_芯片\行业调研_CXL内存扩展与内存池化_2026-08-18.md,2026-08-18,60,60,next_3m_revenue,next_12m_revenue,months_13_24_revenue,人工核对正文口径；不同定义不等于篇内错误；仅本10份定向诊断样本，不外推77份比例
+industry,AI集群调度与推理运行时,D:\drive\Investment\基本面\行业调研\AI服务器_存储_芯片\行业调研_AI集群调度与推理运行时_2026-08-18.md,2026-08-18,9,9,point_forward_12m_pool,point_forward_12m_pool,point_forward_12m_pool,人工核对正文口径；不同定义不等于篇内错误；仅本10份定向诊断样本，不外推77份比例
+industry,800G/1.6T可插拔光模块,D:\drive\Investment\基本面\行业调研\AI网络_光互联_铜互联\行业调研_800G_1.6T可插拔光模块_2026-08-18.md,2026-08-18,38,44,next_3m_revenue,next_12m_revenue,next_24m_cumulative,人工核对正文口径；不同定义不等于篇内错误；仅本10份定向诊断样本，不外推77份比例
+industry,HBM与存储测试设备,D:\drive\Investment\基本面\行业调研\晶圆制造_设备_材料_测试\行业调研_HBM与存储测试设备_2026-08-18.md,2026-08-18,64,69,next_3m_revenue,next_12m_revenue,point_forward_12m_pool,人工核对正文口径；不同定义不等于篇内错误；仅本10份定向诊断样本，不外推77份比例
+industry,机器人硬件,D:\drive\Investment\基本面\行业调研\机器人_硬件_零部件\行业调研_机器人硬件_2026-08-18.md,2026-08-18,34,41,next_3m_revenue,next_12m_revenue,months_13_24_revenue,人工核对正文口径；不同定义不等于篇内错误；仅本10份定向诊断样本，不外推77份比例
+industry,商业火箭与商业航天,D:\drive\Investment\基本面\行业调研\商业航天_火箭_卫星\行业调研_商业火箭与商业航天_2026-08-18.md,2026-08-18,3,5,point_annual_run_rate,point_annual_run_rate,point_annual_run_rate,人工核对正文口径；不同定义不等于篇内错误；仅本10份定向诊断样本，不外推77份比例

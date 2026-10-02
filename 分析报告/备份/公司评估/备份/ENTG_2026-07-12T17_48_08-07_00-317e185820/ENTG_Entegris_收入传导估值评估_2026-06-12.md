@@ -1,0 +1,182 @@
+# 公司收入传导与价值传导评估：Entegris
+
+报告日期：2026-06-12。  
+公司代号：ENTG。公司名称：Entegris。  
+主口径：NTM，指 2026Q2-2027Q1 附近的未来 12 个月经营窗口。  
+资料边界：只使用 `公司调研/`、`行业调研/` 中的正式资料，并用 Entegris IR、SEMI 等公开一手资料校验最新经营锚点；未读取、引用或继承 `特征量化/`、Signals、排序或回归资料。  
+重要限制：本文只评估需求到公司收入、利润、现金流和经营质量的传导，不给投资评级，不判断股价区间，不使用金融市场价格或估值倍数作为经营价值传导证据。
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM 收入、利润率、EBITDA/净利和自由现金流。FY2026、FY2027、长期 run-rate、MOR/EUV、HBM4、BSPDN、hybrid bonding 等只作为补充和情景切换条件，不能替代 NTM 主表。
+- 当前收入基准、指引和 run-rate：Entegris 2026Q1 净销售额为 **8.119 亿美元**，同比 **+5.0%**；2026Q2 公司指引为 **8.15-8.45 亿美元**，中点 **8.30 亿美元**；管理层在 Q1 电话会称按当时可见度，Q3 收入可较 Q2 指引中点再环比增长约 **+5%**，即约 **8.7 亿美元**。TTM ending 2026Q1 收入约 **32.35 亿美元**。
+- 重要产品/业务线：Advanced Purity Solutions, APS 的液体/气体过滤与 purification、FOUP/wafer handling、fluid handling/PFA/chemical delivery；Materials Solutions, MS 的 advanced deposition/ALD-CVD 前驱体、CMP slurries/pads/post-CMP clean、selective etch/formulated clean；跨产品线的 advanced packaging solutions；远期期权为 EUV metal oxide resist, MOR 相关 precursor/filter/delivery。
+- NTM 公司收入四情景：悲观 **32.5-33.8 亿美元**；基准 **34.5-36.0 亿美元**；乐观 **36.5-39.0 亿美元**；极度乐观 **40.0-43.5 亿美元**。基准等于 Q2 指引、Q3 可见度和 2026H2 先进逻辑/DRAM 正常兑现；乐观需要 WFE、fab construction、HBM/advanced packaging 和客户 POR 同步增强。
+- 利润或 EBITDA 四情景：悲观 adjusted EBITDA **8.3-9.2 亿美元**；基准 **9.5-10.2 亿美元**；乐观 **10.7-11.8 亿美元**；极度乐观 **12.5-14.2 亿美元**。利润传导的核心不是收入 beta，而是 APS 高毛利过滤/FOUP mix、MS 高端前驱体/CMP/clean mix、KSP/Colorado/工厂利用率和债务利息下降。
+- 最大传导瓶颈：公司 75% 左右收入与 MSI/wafer starts/unit-driven demand 相关，25% 左右与 WFE/fab construction/capex-driven demand 相关；因此 AI 芯片需求必须先变成 advanced logic、DRAM/HBM、NAND layer scaling 和 advanced packaging 的真实 wafer starts、工具安装、客户认证和材料 POR，才能进入 ENTG 收入。
+- 最大利润率变量：APS segment profit margin 已在 2026Q1 达 **29.1%**，MS segment profit margin 约 **22.0%**；利润率上修需要液体过滤、gas filtration、FOUP、advanced deposition、selective etch 和 CMP 的高端 mix 增长，同时新工厂稼动和制造网络优化抵消折旧、原材料和关税。
+- 最大现金流变量：2026Q1 operating cash flow **1.83 亿美元**，capex **0.415 亿美元**，自由现金流约 **1.42-1.44 亿美元**；全年 capex 指引 **2.50 亿美元**，低于 2025 年，若 EBITDA 和 working capital 正常，去杠杆路径可维持。若应收、库存和新厂 ramp 占用增加，FCF 会先弱于利润。
+- 可信度：基准为 **中高**。A 级证据来自分部收入、Q1 业绩、Q2 指引、Q3 可见度、segment profit、现金流和净杠杆；产品线拆分因公司不披露完整产品收入，主要是 B/C 级管理层披露和模型估算；MOR/EUV 和部分 advanced packaging 新品为 C/D 级，不能作为 NTM 基准主收入。
+
+## 2. 重要产品清单
+
+说明：当前收入基数为年化/NTM 可确认收入锚点区间，因 Entegris 不披露完整产品线收入，产品间存在部分应用重叠，不能机械相加。公司层面汇总在第 6 节用 MS/APS 分部去重。
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| 液体/气体过滤、purification、contamination control | `0.75-1.00B` | `23%-31%` | APS 最大高质量耗材池，先进节点和 HBM/DRAM 的污染控制核心 | B/C：APS 分部 A；液体过滤连续 record、gas filtration 增长为 B；产品收入为 C | 进入基准，按高个位数到低双位数增长处理 | 更高精度 POU filtration、MOR/EUV 过滤兼容 |
+| FOUP、wafer handling、reticle pods | `0.40-0.60B` | `12%-18%` | CapEx/fab construction 恢复弹性，Q1 FOUP 三年收入高点 | B/C：APS 分部 A；FOUP 三年高点和 Colorado qualification 为 B/C | 进入基准，但 2026 收入不前置过度，2027 ramp 更强 | 特殊 thin/thick/warped/heavy wafer carriers |
+| Fluid handling、PFA/chemical delivery components | `0.35-0.50B` | `11%-15%` | 新 fab chemical delivery 和 high-purity conveyance 配套，2025 低基数 | C：公司披露 capex-driven 业务改善，产品收入需估算 | 小比例进入基准，主要看 H2 fab construction | PFAS-free、高端 PFA/PVDF 组件 |
+| Advanced deposition / ALD-CVD 前驱体 | `0.35-0.55B` | `11%-17%` | GAA/N2、NAND 300 层、Mo/Ru/Co、DRAM/HBM4 材料强度提升 | B/C：MS 分部 A；advanced deposition 双位数增长为 B；产品规模为 C | 进入基准，是 MS 增量核心 | BSPDN、Ru/Mo 互连、new metal stack |
+| CMP slurries/pads/post-CMP clean | `0.45-0.70B` | `14%-22%` | CMC 资产核心，advanced logic、HBM、advanced packaging 和 hybrid bonding 平坦化/清洗 | B/C：MS 分部 A；CMP strength 管理层披露为 B；产品规模为 C | 进入基准，按高端 mix 和 wafer starts 正常增长 | Hybrid bonding surface prep、BSPDN CMP |
+| Selective etch / formulated clean chemistries | `0.25-0.40B` | `8%-12%` | 新材料、新金属、NAND 和 GAA 的选择性刻蚀/清洗关键 | B/C：MS 分部 A；selective etch 双位数增长为 B | 进入基准，但按客户 POR 节奏保守 | BSPDN/new metal clean |
+| Advanced packaging solutions 跨产品线 | 2025 约 `0.10B+/-`，2026 run-rate `0.12-0.16B` | `3%-5%` | 小基数高增速，连接 HBM/CoWoS/SoIC/hybrid bonding | C：管理层口径和产品 sampling/POR 线索 | 基准只纳入已可见小比例；汇总时作为应用 overlay，不能与 CMP/过滤/FOUP 重复相加 | HBM4、hybrid bonding、glass/TGV、panel-level |
+| EUV MOR precursor/filter/delivery | 当前 `<0.05B` | `<2%` | 可能改变 EUV 材料栈，但 2026 收入小 | C/D：JSR/Inpria cross-license 为 C；客户 HVM 收入仍 D | 不作为基准主增量，只保留已确认研发/样品和小量服务 | High-NA、DRAM/EUV、MOR HVM |
+| 其他成熟/主流节点材料、implant gases、普通搬运/包装 | `0.55-0.85B` | `17%-26%` | 稳定收入和周期抵消项 | A/C：分部收入可见，产品细项估算 | 进入基准但不赋予 AI 高增速 | 只作周期和竞争风险跟踪 |
+
+## 3. 产品需求四情景
+
+- 本步口径：本节只评估每个产品外部需求池相对当前需求锚的变化，不判断 Entegris 份额、收入确认或利润率。需求单位采用最能解释该产品的指标：MSI/wafer starts、WFE/fab construction、先进节点 wafer output、DRAM/HBM/NAND 层数、advanced packaging wafer/panel 过线量、客户 POR/qualification。当前需求锚包括 Entegris Q1/Q2/Q3 管理层可见度、SEMI 2026Q1 设备 billings、SEMI 300mm Fab Outlook、项目内行业资料对 HBM/CoWoS/先进封装和高纯流体系统的判断。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| 液体/气体过滤、purification | Unit-driven 业务约占公司 75%；2026Q1 unit-driven revenue 约 +7% YoY；液体过滤连续第三个 record quarter | MSI 增长低于中个位数，先进节点拉货放缓，需求 `-5% 到 +3%` | MSI mid-to-high single digit，先进逻辑/DRAM/HBM 正常，需求 `+7%-12%` | advanced logic、DRAM/HBM、NAND layer scaling 同时走强，需求 `+13%-25%` | 过滤规格升级和局部 allocation，需求 `+30%+` | NTM 外部过滤/净化需求约从 `$38-55B` 行业池基准向 `$55-78B` 乐观迁移 | 基准为符合当前预期；乐观高于当前预期 | Entegris Q1 liquid filtration record、SEMI billings +14%、300mm capex +25%；反证为高端节点 utilization 下行或客户二供压价 |
+| FOUP、wafer handling、reticle pods | Q1 FOUP 三年收入高点；capex-driven 业务约 25%；fab construction 改善 | 新 fab 工程延迟，FOUP/reticle pods 恢复失败，需求 `-10% 到 0%` | 300mm fab construction 正常推进，需求 `+8%-15%` | TSMC/美国/韩国/日本新 fab 工具安装加速，需求 `+18%-30%` | 新 fab pull-in、特殊 wafer carrier 供给紧，需求 `+35%+` | 绝对需求按 fab move-in 和 FOUP replacement 增长，2026H2 明显强于 Q1 | 基准符合当前预期；悲观低于当前预期 | Q1 FOUP 三年高点与 Colorado qualification 支持；反证为 fab construction 延期、OHT/automation 节奏推迟 |
+| Fluid handling、PFA/chemical delivery components | 2025 capex-driven revenue -7%，2026H2 预计随 WFE/fab construction 改善 | 化学品输送和 PFA 管阀订单延后，需求 `-8% 到 +2%` | WFE 和 fab construction 修复，需求 `+7%-13%` | 高纯化学品、slurry delivery 和新 fab rush orders 加速，需求 `+15%-25%` | PFA/高纯阀泵局部短缺，需求 `+30%-45%` | 半导体 flow control/fluid conveyance 行业 1 年基准 `+7%-13%`，乐观 `+15%-25%` | 基准符合当前预期 | 行业资料显示 chemical delivery/flow control 随 new fab 和 advanced packaging 放量；反证为 PFA 供给扩张后价格回落 |
+| Advanced deposition / ALD-CVD 前驱体 | Q1 advanced deposition 双位数增长；GAA/N2/NAND 300 层和 Mo/Ru/Co 材料强度提升 | GAA/N2/BSPDN 或 NAND layer scaling 延后，需求 `0%-5%` | 先进逻辑和 DRAM/NAND 正常，需求 `+12%-20%` | Mo/Ru/Co、N2/GAA、HBM4/DRAM 采用加快，需求 `+25%-40%` | 新金属/前驱体成为瓶颈，需求 `+50%+` | 外部需求表现为 ALD/CVD step count、前驱体用量和客户 POR 增加 | 基准符合当前预期，乐观需客户导入证据 | 管理层披露双位数增长；反证为客户材料路线改动、二供替代或良率窗口未通过 |
+| CMP slurries/pads/post-CMP clean | CMP consumables 持续强；advanced logic/HBM/advanced packaging 平坦化步骤增加 | Wafer starts 低于预期或客户降库存，需求 `0%-5%` | 高端 CMP 和 post-CMP clean 随先进节点稳增，需求 `+8%-15%` | Hybrid bonding、CoWoS、BSPDN 早期导入，需求 `+20%-35%` | CMP/post-CMP 成为 surface prep 瓶颈，需求 `+40%+` | 先进封装 CMP/post-CMP 行业 1 年基准约 `$0.20-0.32B` 子池，乐观 `$0.32-0.50B` | 基准符合当前预期；极度乐观为上限 | 项目内先进封装湿化学资料支持；反证为 CoWoS utilization 低于 85%、hybrid bonding 延后 |
+| Selective etch / formulated clean chemistries | Q1 selective etch 双位数增长；GAA/new metal/NAND/advanced logic 需求增加 | 新材料采用放慢，需求 `0%-5%` | 选择性刻蚀和清洗随新节点扩展，需求 `+10%-18%` | GAA/BSPDN/new metal clean 进入更多 POR，需求 `+20%-35%` | 高选择性清洗成为良率瓶颈，需求 `+40%+` | 绝对变化按客户 POR 和 process step count 增加，无法可靠量化 | 基准符合当前预期 | 管理层披露双位数增长；反证为客户 recipe 切换或国产高纯化学压价 |
+| Advanced packaging solutions | 2025 约 `0.10B+/-`；2026 多产品线 sampling/POR；HBM/CoWoS/SoIC 强 | CoWoS/HBM 拉货延后，需求 `+0%-15%` | HBM3E/CoWoS-L/SoIC 清洗、CMP、过滤正常增长，需求 `+25%-40%` | HBM4/CoWoS/SoIC 客户认证加速，需求 `+60%-100%` | HBM4/hybrid bonding 提前成为默认，需求 `+150%+` | 先进封装湿化学与表面处理材料 1 年基准 `19-26 亿美元`，乐观 `26-36 亿美元` | 基准偏高于普通半导体材料，但符合 AI 封装预期 | 反证为 HBM 合约价下跌且出货不增、CoWoS lead time 明显回落 |
+| EUV MOR precursor/filter/delivery | 2026-05 JSR/Inpria 非独家 cross-license；当前仍研发/early qualification | MOR 不进入客户 HVM，NTM 需求接近 `0` | 只保留研发/样品需求，需求小于 `$0.05B` 公司层可见机会 | 部分 DRAM/EUV 或 high-NA pilot 采用，需求小量显性化 | MOR 成为局部 HVM 路线，需求非线性上修 | NTM 绝对需求无法可靠量化；公司收入多为小量样品/服务 | 基准只作小额跟踪，乐观才进入收入上限 | Cross-license 是正向证据；反证为 CAR/dry resist 路线占优或 High-NA/HVM 推迟 |
+| 其他成熟/主流节点材料 | Mainstream logic 约三分之一收入相关，utilization 75%-80%，恢复 mixed | 消费/成熟节点价格和 utilization 走弱，需求 `-5% 到 0%` | 低个位数恢复，需求 `+0%-5%` | AI 周边、power management、成熟 fab 稳定，需求 `+5%-10%` | 成熟节点大范围补库存，需求 `+10%+` | 绝对变化更多体现为抵消项，无法可靠量化 | 基准不应因 AI 题材自动上修 | 管理层明确 mainstream mixed；风险只在公司组合层处理，不重复惩罚 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：本节只判断外部需求中哪些能在 NTM 进入 Entegris 收入表，以及当前可收入化基数。公司能参与 HBM、CoWoS、GAA、N2 或 MOR 需求，不等于能在未来 12 个月确认收入。A 级证据为分部收入、财务指引和已确认收入；B 级为订单/backlog/客户项目和管理层明确交付节奏；C 级为 design win、qualification、产能规划和管理层可验证披露；D/E 级不进入基准主收入。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| 液体/气体过滤、purification | APS 2026Q1 收入 `463.6M`；液体过滤连续第三个 record quarter；gas filtration 增长；产品年化估算 `0.75-1.00B` | 直接进入 APS 收入 | 高毛利、耗材复购、客户 POR 粘性强 | `0.78-0.88B` | `0.90-1.05B` | `1.05-1.25B` | `1.25-1.45B` | 基准符合当前预期；乐观高于当前预期 | A for APS；B for product trend；C for line revenue | 是 | 已在收入表和管理层披露中可见，先进节点需求支撑 | 基准主线，NTM 收入确认路径清楚 |
+| FOUP、wafer handling、reticle pods | APS 收入表可见；Q1 FOUP 三年收入高点；Colorado 2026 qualification、2027 ramp | 直接进入 APS 收入 | 中高毛利，CapEx/fab construction 弹性强但项目节奏波动 | `0.38-0.48B` | `0.50-0.65B` | `0.65-0.85B` | `0.85-1.00B` | 基准符合 Q1 恢复；极度乐观只是上限 | A/B/C | 是 | Q1 已在收入表体现，后续取决于 fab construction 和客户资格认证 | 进入基准，但不把 Colorado 2027 ramp 全部前置 |
+| Fluid handling、PFA/chemical delivery components | APS 中 capex-driven 产品；2025 弱、2026H2 订单改善；产品年化估算 `0.35-0.50B` | 直接进入 APS 收入 | 项目/组件混合，利润率低于高端过滤但高端 PFA 有溢价 | `0.32-0.42B` | `0.43-0.56B` | `0.56-0.75B` | `0.75-0.95B` | 基准略低于乐观行业需求，符合保守确认 | A for APS；B/C for order trend | 是，小比例 | CapEx-driven revenue 增长路径可见，但订单未量化 | 基准纳入，乐观需 WFE/fab construction 兑现 |
+| Advanced deposition / ALD-CVD 前驱体 | MS 2026Q1 收入 `351.1M`；advanced deposition 双位数增长；产品年化估算 `0.35-0.55B` | 直接进入 MS 收入 | 高技术壁垒，高纯前驱体和 delivery，客户 recipe 绑定 | `0.34-0.42B` | `0.45-0.62B` | `0.62-0.80B` | `0.80-1.00B` | 基准符合当前 MS 增长；乐观需新材料 POR | A/B/C | 是 | 已在 MS 收入和 Q1 双位数增长中可见 | 基准核心，GAA/NAND/DRAM 贡献增量 |
+| CMP slurries/pads/post-CMP clean | MS 收入表可见；CMC 平台；CMP consumables strength；产品估算 `0.45-0.70B` | 直接进入 MS 收入 | 高客户切换成本，毛利受配方、pad、post-clean mix 影响 | `0.45-0.55B` | `0.55-0.75B` | `0.75-0.95B` | `0.95-1.20B` | 基准符合当前预期；极度乐观需 hybrid bonding/BSPDN 提前 | A/B/C | 是 | 已在收入表和管理层披露中可见 | 基准主线；先进封装增量仅按可确认部分纳入 |
+| Selective etch / formulated clean chemistries | MS 收入表可见；selective etch chemistries 双位数增长；产品估算 `0.25-0.40B` | 直接进入 MS 收入 | 高端配方利润率较好，普通清洗受竞争影响 | `0.22-0.30B` | `0.32-0.46B` | `0.46-0.65B` | `0.65-0.80B` | 基准符合当前预期 | A/B/C | 是 | Q1 双位数增长，客户新节点需求可见 | 进入基准，但不用行业 TAM 直接外推 |
+| Advanced packaging solutions | 管理层披露 2025 约 `0.10B+/-`；2026 多产品线 sampling/POR | 直接但跨 MS/APS，和 CMP/clean/filter/FOUP 重叠 | 小基数、高增速、较高服务/配方粘性 | `0.10-0.13B` | `0.14-0.20B` | `0.20-0.32B` | `0.32-0.50B` | 基准略高于当前 run-rate，但规模小；乐观高于当前预期 | C | 是，但汇总去重 | 管理层已量化约 2025 收入，NTM 有客户 sampling 到 POR 路径 | 进入基准的只是去重后小额增量，不与 CMP/过滤重复 |
+| EUV MOR precursor/filter/delivery | 2026-05 JSR/Inpria cross-license；当前收入小，产品未披露 HVM | 可参与，但 NTM 可确认收入有限 | 潜在高毛利，但验证和路线风险高 | `0-0.02B` | `0-0.03B` | `0.05-0.12B` | `0.12-0.25B` | 基准只作小额跟踪；乐观才高于当前预期 | C/D | 否，除已确认小额样品/服务 | 有 IP/合作入口但无客户 HVM 时间表和收入披露 | 移入附录/乐观上限，不作为基准主收入 |
+| 其他成熟/主流节点材料与搬运 | MS/APS 剩余收入，mainstream logic mixed | 直接进入收入 | 利润率较低或周期性更强，主要是抵消项 | `0.65-0.80B` | `0.60-0.75B` | `0.65-0.80B` | `0.70-0.85B` | 符合或略低于当前预期 | A/C | 是 | 收入表已包含，但不赋予 AI 高增速 | 作为公司汇总的稳定和抵消项 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：本节从需求和收入基数出发，评估每个重要产品在 NTM 内对 Entegris 的收入和利润贡献。表中产品收入贡献为产品线可见收入池，不可机械相加；advanced packaging 为应用 overlay，汇总时必须在 MS/APS 内去重。利润贡献以 adjusted segment profit/经营利润方向表示，因公司不披露产品级毛利，无法可靠精确到 GAAP 产品净利。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| 液体/气体过滤、purification | 悲观产品 | `0.78-0.88B` | 调整后分部利润约 `0.20-0.25B` | 低于 APS 当前高位 | 低于当前预期 | MSI 下修、客户库存或二供压价 | 保留悲观 | 液体过滤不再创新高，高端节点 utilization 下行 |
+| 液体/气体过滤、purification | 基准产品 | `0.90-1.05B` | `0.27-0.33B` | 维持高位或小幅改善 | 符合当前预期 | Q1 record、gas filtration 增长、APS margin 29.1% | 保留基准 | 产品收入估算为 C 级，不应过度精确 |
+| 液体/气体过滤、purification | 乐观产品 | `1.05-1.25B` | `0.33-0.42B` | 上行 | 高于当前预期 | N2/DRAM/HBM 和新 fab 同步拉动 | 保留乐观 | 客户多供限制价格 |
+| 液体/气体过滤、purification | 极度乐观产品 | `1.25-1.45B` | `0.42-0.52B` | 明显上行 | 显著高于当前预期 | 局部 allocation、客户为良率和交期付溢价 | 保留为上限 | 需要需求、供给、定价同时成立 |
+| FOUP、wafer handling、reticle pods | 悲观产品 | `0.38-0.48B` | `0.07-0.11B` | 下行 | 低于当前预期 | Fab construction 推迟 | 保留悲观 | Colorado qualification/ramp 延后 |
+| FOUP、wafer handling、reticle pods | 基准产品 | `0.50-0.65B` | `0.12-0.18B` | 稳中上行 | 符合当前预期 | Q1 三年收入高点，WFE/fab construction 改善 | 保留基准 | CapEx 类收入确认节奏较单位驱动业务滞后 |
+| FOUP、wafer handling、reticle pods | 乐观产品 | `0.65-0.85B` | `0.18-0.26B` | 上行 | 高于当前预期 | 新 fab 工具安装和 300mm ramp 加速 | 保留乐观 | 价格竞争和区域采购 |
+| FOUP、wafer handling、reticle pods | 极度乐观产品 | `0.85-1.00B` | `0.26-0.33B` | 明显上行 | 显著高于当前预期 | 特殊 wafer carrier 和 reticle pods 局部紧缺 | 下移为上限 | 2026 资格认证时间不支持全部进入基准 |
+| Fluid handling、PFA/chemical delivery components | 悲观产品 | `0.32-0.42B` | `0.05-0.09B` | 下行 | 低于当前预期 | 化学品输送项目延后 | 保留悲观 | 新 fab 工程进度和 PFA 成本 |
+| Fluid handling、PFA/chemical delivery components | 基准产品 | `0.43-0.56B` | `0.09-0.14B` | 稳定 | 符合当前预期 | CapEx-driven revenue 2026 余下季度改善 | 保留基准 | 产品级订单未量化 |
+| Fluid handling、PFA/chemical delivery components | 乐观产品 | `0.56-0.75B` | `0.14-0.22B` | 上行 | 高于当前预期 | New fab rush orders、高端 PFA/PVDF AVL | 保留乐观 | 二供后价格回落 |
+| Fluid handling、PFA/chemical delivery components | 极度乐观产品 | `0.75-0.95B` | `0.22-0.31B` | 明显上行 | 显著高于当前预期 | 多区域 fab 同步下单，高纯组件紧缺 | 下移为上限 | 低毛利工程/组件不能自动转高利润 |
+| Advanced deposition / ALD-CVD 前驱体 | 悲观产品 | `0.34-0.42B` | `0.07-0.10B` | 持平或下行 | 低于当前预期 | 客户新材料 POR 延迟 | 保留悲观 | 单一前驱体被竞争对手拿下 |
+| Advanced deposition / ALD-CVD 前驱体 | 基准产品 | `0.45-0.62B` | `0.11-0.17B` | 小幅上行 | 符合当前预期 | Advanced deposition 双位数增长、GAA/NAND/DRAM 材料强度 | 保留基准 | 产品收入规模需估算 |
+| Advanced deposition / ALD-CVD 前驱体 | 乐观产品 | `0.62-0.80B` | `0.17-0.25B` | 上行 | 高于当前预期 | Mo/Ru/Co、N2/GAA、HBM4/DRAM 导入加快 | 保留乐观 | 客户二供和材料路线变化 |
+| Advanced deposition / ALD-CVD 前驱体 | 极度乐观产品 | `0.80-1.00B` | `0.25-0.35B` | 明显上行 | 显著高于当前预期 | 新金属前驱体局部短缺，客户锁定供给 | 保留为低可信上限 | 需客户 POR 与供给紧缺同时成立 |
+| CMP slurries/pads/post-CMP clean | 悲观产品 | `0.45-0.55B` | `0.09-0.13B` | 下行 | 低于当前预期 | Wafer starts 和 advanced packaging 过线量不足 | 保留悲观 | 客户降库存，国产 CMP 价格竞争 |
+| CMP slurries/pads/post-CMP clean | 基准产品 | `0.55-0.75B` | `0.14-0.22B` | 稳中上行 | 符合当前预期 | CMP strength、CMC 平台、advanced logic/HBM | 保留基准 | Advanced packaging 重叠需去重 |
+| CMP slurries/pads/post-CMP clean | 乐观产品 | `0.75-0.95B` | `0.22-0.31B` | 上行 | 高于当前预期 | Hybrid bonding/post-CMP clean 认证加速 | 保留乐观 | 2026 hybrid bonding 大规模收入仍需折扣 |
+| CMP slurries/pads/post-CMP clean | 极度乐观产品 | `0.95-1.20B` | `0.31-0.44B` | 明显上行 | 显著高于当前预期 | BSPDN、hybrid bonding 和 CoWoS 同步推高平坦化需求 | 下移为上限 | 不是所有先进封装材料都由 ENTG 捕获 |
+| Selective etch / formulated clean chemistries | 悲观产品 | `0.22-0.30B` | `0.04-0.07B` | 下行 | 低于当前预期 | 新材料采用延后 | 保留悲观 | 普通清洗价格竞争 |
+| Selective etch / formulated clean chemistries | 基准产品 | `0.32-0.46B` | `0.07-0.13B` | 上行 | 符合当前预期 | Selective etch 双位数增长 | 保留基准 | 缺产品线收入披露 |
+| Selective etch / formulated clean chemistries | 乐观产品 | `0.46-0.65B` | `0.13-0.21B` | 上行 | 高于当前预期 | GAA/new metal clean 和 NAND 清洗需求增加 | 保留乐观 | 客户 recipe 和验证周期 |
+| Selective etch / formulated clean chemistries | 极度乐观产品 | `0.65-0.80B` | `0.21-0.28B` | 明显上行 | 显著高于当前预期 | 高选择性清洗成为良率瓶颈 | 保留为上限 | 需要多个客户 POR 同时成立 |
+| Advanced packaging solutions | 悲观产品 | `0.10-0.13B` | `0.02-0.04B` | 小幅下行 | 低于当前预期 | Sampling 未转 POR | 保留悲观 | HBM/CoWoS 延期 |
+| Advanced packaging solutions | 基准产品 | `0.14-0.20B` | `0.04-0.07B` | 上行 | 符合当前预期 | 2025 `0.10B+/-` 收入锚，2026 继续增长 | 保留基准但汇总去重 | 与 CMP/clean/filter/FOUP 重叠 |
+| Advanced packaging solutions | 乐观产品 | `0.20-0.32B` | `0.07-0.12B` | 上行 | 高于当前预期 | HBM4/CoWoS/SoIC 客户认证加速 | 保留乐观 | 客户采用时间表 |
+| Advanced packaging solutions | 极度乐观产品 | `0.32-0.50B` | `0.12-0.20B` | 明显上行 | 显著高于当前预期 | HBM4/hybrid bonding 提前成为默认 | 下移为低可信上限 | 不能把行业先进封装高增长等同公司收入 |
+| EUV MOR precursor/filter/delivery | 悲观产品 | `0-0.02B` | 接近 `0` | 无影响 | 符合低收入预期 | MOR 未进入 HVM | 保留悲观 | 路线竞争 |
+| EUV MOR precursor/filter/delivery | 基准产品 | `0-0.03B` | 接近 `0` | 无明显影响 | 符合当前预期 | Cross-license 只证明入口，不证明收入 | 下移/仅作跟踪 | D 级收入路径 |
+| EUV MOR precursor/filter/delivery | 乐观产品 | `0.05-0.12B` | `0.02-0.05B` | 小幅上行 | 高于当前预期 | DRAM/EUV 或 high-NA pilot 小量导入 | 保留乐观 | 客户 HVM 时间表 |
+| EUV MOR precursor/filter/delivery | 极度乐观产品 | `0.12-0.25B` | `0.05-0.12B` | 高但低可信 | 显著高于当前预期 | MOR 成为局部关键层路线 | 移入附录/上限 | 任一核心环节缺证据，不能进入 NTM 基准 |
+| 其他成熟/主流节点材料与搬运 | 悲观产品 | `0.65-0.80B` | `0.10-0.16B` | 下行 | 低于当前预期 | Mainstream logic 利用率和价格弱 | 保留悲观 | 消费电子和成熟节点周期 |
+| 其他成熟/主流节点材料与搬运 | 基准产品 | `0.60-0.75B` | `0.12-0.18B` | 稳定 | 符合当前预期 | Mainstream mixed，作为组合抵消项 | 保留基准 | 不因 AI 题材自动上修 |
+| 其他成熟/主流节点材料与搬运 | 乐观产品 | `0.65-0.80B` | `0.14-0.21B` | 小幅上行 | 小幅高于当前预期 | Power/data-center ancillary demand | 保留乐观 | 价格竞争 |
+| 其他成熟/主流节点材料与搬运 | 极度乐观产品 | `0.70-0.85B` | `0.16-0.24B` | 小幅上行 | 高于当前预期但非主线 | 成熟节点补库存 | 下移为普通乐观 | 不具备高端材料非线性利润弹性 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：本节把产品级贡献按 MS/APS 分部去重合成公司 NTM 总收入、毛利率、经营利润率、EBITDA/净利和自由现金流方向。汇总时不把 advanced packaging overlay 与 CMP、clean、filter、FOUP 重复相加，不把 MOR/EUV 远期期权并入基准，不把 AI 数据中心 CapEx、GPU/HBM TAM 或客户总预算直接当作 Entegris 收入。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `32.5-33.8 亿美元` | vs TTM `+0%-4%`，vs 2025 `+2%-6%` | 低于 Q2 指引/Q3 可见度；Q2 低端或 Q3 环比无法 +5% | `44.5%-46.0%` | GAAP `15.0%-17.0%`；adjusted `20.5%-22.5%` | adjusted EBITDA `8.3-9.2 亿美元`；GAAP净利 `2.4-3.2 亿美元` | FCF `3.6-4.5 亿美元`，去杠杆变慢 | 中 | Fab construction 延后、mainstream mixed 拖累、产品 mix 低于预期、新厂利用率不足 |
+| 基准公司 | `34.5-36.0 亿美元` | vs TTM `+7%-11%`，vs 2025 `+8%-13%` | 符合 Q2 中点、Q3 约 `8.7 亿美元`可见度，H2 正常季节性和 unit-driven 增长 | `46.0%-47.2%` | GAAP `17.0%-18.8%`；adjusted `22.5%-24.0%` | adjusted EBITDA `9.5-10.2 亿美元`；GAAP净利 `3.8-4.8 亿美元` | FCF `4.8-6.0 亿美元`，净杠杆向约 `3.0x`推进 | 中高 | 产品线收入拆分缺披露，capex-driven 收入确认有滞后 |
+| 乐观公司 | `36.5-39.0 亿美元` | vs TTM `+13%-21%`，vs 2025 `+14%-22%` | 高于当前预期；不仅 Q3 兑现，还需 Q4/Q1 高端产品继续上修 | `47.0%-48.5%` | GAAP `18.8%-21.0%`；adjusted `24.0%-26.0%` | adjusted EBITDA `10.7-11.8 亿美元`；GAAP净利 `5.0-6.5 亿美元` | FCF `5.8-7.2 亿美元`，去杠杆明显超计划 | 中 | Advanced logic、DRAM/HBM、WFE/fab construction、APS/MS 高端 mix 必须同步成立 |
+| 极度乐观公司 | `40.0-43.5 亿美元` | vs TTM `+24%-34%`，vs 2025 `+25%-36%` | 显著高于当前预期；多个高端产品线进入供给紧张和价格/mix 上修 | `48.5%-50.0%` | GAAP `21.0%-23.5%`；adjusted `26.0%-28.5%` | adjusted EBITDA `12.5-14.2 亿美元`；GAAP净利 `7.0-9.0 亿美元` | FCF `7.5-9.5 亿美元`，但 working capital 可能先上升 | 低 | 必须同时满足 HBM4/Rubin/MI400/custom ASIC pull-in、new fab 加速、产品 POR 成功、制造利用率上升和客户价格接受 |
+
+汇总校验：
+
+- 基准收入拆分：MS 约 `15.2-16.5 亿美元`，APS 约 `19.5-20.5 亿美元`，分部抵消约 `-0.1 亿美元`，公司合计 `34.5-36.0 亿美元`。
+- 悲观场景不是“行业没有长期空间”，而是 NTM 内 Q2/Q3 节奏、订单确认、客户利用率或 capex-driven 出货低于管理层当前路径。
+- 极度乐观场景不是把全部好消息相加；它要求 demand、company capture、profit quality 和 execution 同时突破。MOR/EUV、glass/TGV、full-scale hybrid bonding 等远期期权不能单独支撑极度乐观公司情景。
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：本节不重新预测经营结果，只校准前四步情景。正向证据只提升其实际影响的层级；反证只在其影响层级处理一次，避免重复惩罚。校准动作只使用：保留、上移、下移、排除、移入附录、仅作跟踪。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| 2026Q1 收入 `811.9M`、同比 `+5%`，Q2 指引中点 `830M` | 公司汇总 | 支撑基准收入 `34.5-36.0B`，但不支持直接跳到乐观 | Q1 GM `46.9%` 支撑基准 GM | Q1 FCF 强，支持去杠杆 | 基准保留 |
+| Q3 当前可见度为 Q2 中点环比约 `+5%` | 公司汇总/执行 | 若兑现，NTM 基准可信度提高；若不兑现，基准下沿受压 | 利用率提高有助 operating leverage | Q3 订单转收入是执行检查点 | 基准保留；Q3 不达标则下移 |
+| APS 液体过滤 record、FOUP 三年高点、gas filtration 增长 | 产品贡献 | 提升 APS 基准和乐观可信度 | APS margin `29.1%` 支撑利润质量 | 耗材复购改善现金质量 | 基准/乐观保留 |
+| MS advanced deposition 和 selective etch 双位数增长，CMP 仍强 | 产品贡献 | 支撑 MS 高端产品基准 | 高端 mix 支撑 segment profit | 新材料 POR 成功可减少价格竞争 | 基准保留 |
+| SEMI Q1 2026 equipment billings `36.55B`，YoY `+14%`；300mm 2026 spending `142B`，YoY `+25%` | 需求 | 支撑 WFE/fab construction 和高纯系统需求 | 需求强不自动上修公司 margin，需 mix 和利用率 | CapEx-driven 收入滞后于设备订单 | 需求基准保留，乐观仅在公司订单兑现后保留 |
+| Advanced packaging 2025 `0.10B+/-`，2026 sampling/POR | 收入基数/产品贡献 | 基准可纳入小额增量；不能与 CMP/过滤重复相加 | 高端配方利润好但规模小 | 客户认证时间影响收入确认 | 基准保留但汇总去重 |
+| JSR/Inpria MOR cross-license | 远期期权/收入基数 | 提升可参与需求，不足以形成 NTM 基准收入 | 潜在高毛利，但未商业化 | 需要客户 HVM、材料路线和资格认证 | 移入附录/仅作跟踪 |
+| Colorado、KSP 和制造网络优化 | 利润率/执行 | 2026 收入贡献有限，2027 更明显 | 利用率和成本改善支撑 GM，但新厂折旧/qualification 也拖累 | 影响 FCF 和 capex | 基准保留，极度乐观不前置 |
+| Mainstream logic mixed、成熟节点价格竞争 | 公司组合 | 限制公司收入上修，不重复压低高端产品需求 | 压低普通材料和流体件 margin | 库存和应收可能恶化 | 在公司组合层处理一次 |
+| 客户二供、中国本土替代、出口管制 | 份额/价格 | 主要影响成熟/区域业务和部分高端产品份额 | 可能压价格和毛利 | 可能增加本地化成本和资格认证 | 在产品级/区域层处理一次 |
+| 净债务约 `3.3B`、净杠杆 `3.6x`，年底目标约 `3.0x` | 现金流/执行 | 不影响需求，但影响资本配置和利息负担 | 利息费用压 GAAP 净利 | FCF 去杠杆是经营质量核心 | 基准保留，若 FCF 弱则公司利润情景下移 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | Q2/Q3 节奏不达、capex-driven 出货延后、mainstream mixed 拖累，收入 `32.5-33.8B` | 仍有先进节点和过滤需求支撑，不是结构性衰退 | 若 Q2 指引兑现且 Q3 +5% 可见度兑现，悲观概率下降 | 保留 | 悲观公司情景 | 中 | Mainstream logic mixed 只在公司组合层处理，不再重复惩罚每个高端产品 |
+| 基准 | Q2/Q3 正常兑现，unit-driven 和 capex-driven 逐步改善，收入 `34.5-36.0B` | A 级分部收入、Q2 指引、Q3 可见度、Q1 FCF；B 级产品趋势 | 产品线收入拆分缺披露，advanced packaging/MOR 部分为 C/D | 保留 | 最可能情景 | 中高 | 产品收入估算误差不再在公司汇总重复扣减，汇总已按 MS/APS 去重 |
+| 乐观 | WFE/fab construction、advanced logic、DRAM/HBM、advanced packaging 同步上修，收入 `36.5-39.0B` | SEMI 上修、液体过滤 record、FOUP 高点、MS 双位数产品增长 | 必须证明谁买、买什么、何时确认；不能只用行业景气 | 保留 | 乐观上行情景 | 中 | AI CapEx 只作为需求层正向，不直接当作公司收入 |
+| 极度乐观 | 多条产品线局部供不应求，收入 `40.0-43.5B`，利润率显著上修 | HBM4/Rubin/MI400/ASIC、新 fab 和高端材料 POR 若同步成立 | 任何一个环节缺证据都会降为乐观上限；MOR/EUV 不足以支撑 | 下移 | 低可信上限/附录跟踪 | 低 | MOR/EUV、glass/TGV、hybrid bonding 远期期权不能与 advanced packaging 基准重复相加 |
+
+## 8. 结论
+
+- 最可能情景：基准。Entegris 的 NTM 经营路径最可能是 **34.5-36.0 亿美元收入、46.0%-47.2% 毛利率、adjusted EBITDA 9.5-10.2 亿美元、FCF 4.8-6.0 亿美元**。这表示 Q2 指引正常兑现、Q3 约 +5% 可见度大体兑现、APS 高纯过滤/FOUP 和 MS 前驱体/CMP/clean 保持高端 mix，但不假设 MOR/EUV 或 full-scale hybrid bonding 提前变成大收入。
+- 利润/现金流结论：利润质量好于普通项目型设备/工程商，原因是过滤、purification、前驱体、CMP、selective clean 都有客户认证和耗材复购属性；但 GAAP 净利仍受利息、amortization 和新工厂利用率影响。现金流的经营价值在于 capex 从 2025 高位回落、Q1 FCF 已强、净杠杆有机会向约 3.0x 走，但这要求 H2 收入和 working capital 不失控。
+- 主要传导瓶颈：行业需求到 ENTG 收入必须经过四个关口：先进逻辑/DRAM/HBM/NAND/advanced packaging 真实 wafer starts；客户 POR/qualification；产能和本地化供应；收入确认节奏。最容易误判的是把 GPU/HBM/CoWoS 总需求直接映射成 ENTG 收入，或者把 advanced packaging overlay 与 CMP/过滤/FOUP 重复计算。
+- 乐观情景成立条件：Q2 靠近高端或高于高端，Q3 环比约 +5% 兑现；液体过滤继续 record；FOUP/fluid handling 随 fab construction 继续回升；advanced deposition/selective etch/CMP 维持双位数或接近双位数增长；advanced packaging run-rate 从 `0.10B+/-` 向 `0.15-0.20B+` 走；毛利率不低于 47% 附近。
+- 极度乐观情景成立条件：HBM4/Rubin/MI400/TPU/Trainium/custom ASIC 导致先进逻辑、DRAM/HBM 和 advanced packaging 同时 pull-in；Entegris 的过滤、前驱体、CMP/clean、FOUP/wafer handling 全部成为客户良率或供应瓶颈；客户接受更高 ASP/mix；新工厂 ramp 不拖累利润；FCF 仍能去杠杆。缺任一条件，就应降为乐观上限。
+- 悲观情景触发条件：Q2 落在低端且 Q3 不实现约 +5% 顺序增长；液体过滤 record 中断；FOUP/fluid handling 再度下滑；毛利率回落到 44%-45%；advanced packaging 仍停留在 `0.10B` 附近；净杠杆无法向约 3.0x 改善；或客户 fab construction/advanced node ramp 延后。
+- 后续跟踪数据：Q2 实际收入和 GM；Q3 指引或实际收入是否接近约 `8.7 亿美元`季度收入节奏；MS/APS segment profit margin；liquid filtration、gas filtration、FOUP 评论；advanced deposition/selective etch/CMP 评论；advanced packaging run-rate；capex-driven revenue；Taiwan/Korea/memory 客户拉货；净债务、净杠杆、FCF、working capital；MOR/EUV 客户验证是否从 license 变成 pilot revenue。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：公司最新已披露季度为截至 2026-03-28 的 2026Q1，披露日 2026-04-30；报告日期为 2026-06-12。NTM 估算以 2026Q2 指引、Q3 可见度和 2026H2-2027Q1 正常经营窗口为主。
+- 主要收入、订单、指引和利润率来源：Entegris Q1 2026 earnings release；Entegris Q1 2026 earnings transcript；Entegris Q4 2025 earnings release；Entegris JSR/Inpria EUV MOR cross-license release；Entegris 公司调研 `公司调研/半导体材料_化学品_基板/ENTG_Entegris_公司调研_2026-06-11.md`。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2026 收入不单独替代 NTM；FY2027 只用于判断 Colorado/KSP、HBM4、advanced packaging 和 MOR/EUV 的后续跟踪。MOR/EUV、glass/TGV、full-scale D2W hybrid bonding 属于远期期权或低可信 NTM 上限。
+- 主要来源：
+  - Entegris Q1 2026 earnings release: `https://investor.entegris.com/news/news-details/2026/Entegris-Reports-Results-for-First-Quarter-of-2026/default.aspx`
+  - Entegris Q1 2026 earnings release PDF: `https://s205.q4cdn.com/144974603/files/doc_financials/2026/q1/ENTG_Q126_Earnings_Release.pdf`
+  - Entegris Q1 2026 earnings transcript, The Motley Fool: `https://www.fool.com/earnings/call-transcripts/2026/04/30/entegris-entg-q1-2026-earnings-transcript/`
+  - Entegris Q4 2025 earnings release: `https://investor.entegris.com/news/news-details/2026/Entegris-Reports-Results-for-Fourth-Quarter-of-2025/default.aspx`
+  - Entegris and JSR/Inpria EUV MOR cross-license, 2026-05-26: `https://investor.entegris.com/news/news-details/2026/Entegris-and-JSR-CorporationInpria-Corporation-Announce-Non-Exclusive-Cross-Licensing-to-EUV-Lithography/default.aspx`
+  - SEMI Q1 2026 equipment billings, 2026-06-04: `https://www.semi.org/en/semi-press-release/semi-reports-global-semiconductor-equipment-billings-increased-14-percent-year-over-year-in-q1-2026`
+  - SEMI 300mm Fab Outlook, 2Q 2026 update: `https://www.semi.org/en/products-services/market-data/300mm-fab-outlook`
+  - SEMI materials market 2025, 2026-05-12: `https://www.prnewswire.com/news-releases/global-semiconductor-materials-market-revenue-reaches-record-73-2-billion-in-2025--semi-reports-302768700.html`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_先进封装湿化学与表面处理材料_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_半导体高纯水、气体与化学流体系统_2026-06-11.md`
+  - `行业调研/晶圆制造_设备_材料_测试/行业调研_AI芯片前道制造设备_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_HBM与高带宽内存_2026-06-11.md`
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI芯片先进封装_2026-06-11.md`

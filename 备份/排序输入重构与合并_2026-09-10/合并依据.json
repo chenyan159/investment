@@ -1,0 +1,1863 @@
+{
+  "source_comparison": "D:\\drive\\Investment\\备份\\16份排序结果横评_2026-09-09\\交集与选择及历史核验.json",
+  "comparison_sha256": "0de9a0d16b37477e6a7763567906cb384984936b7a15e809a21afbbae6ccfd7d",
+  "focus_pairs": [
+    {
+      "a": "01",
+      "b": "04",
+      "n_a": 30,
+      "n_b": 30,
+      "overlap": 19,
+      "union": 41,
+      "jaccard": 0.4634146341463415,
+      "shared": [
+        "ADBE",
+        "AEP",
+        "ASGLY",
+        "BABA",
+        "DKILY",
+        "DOV",
+        "DTE",
+        "ET",
+        "FLNC",
+        "GFS",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "MU",
+        "NVDA",
+        "PLAB",
+        "PNR",
+        "SMCI",
+        "VISN"
+      ],
+      "a_only": [
+        "ACLS",
+        "ASML",
+        "CRDO",
+        "EME",
+        "HPE",
+        "HUBB",
+        "MKSI",
+        "SKHY",
+        "SNDK",
+        "ST",
+        "TEL"
+      ],
+      "b_only": [
+        "ALLE",
+        "AMZN",
+        "BDC",
+        "CAMT",
+        "KLIC",
+        "NOK",
+        "NVMI",
+        "QCOM",
+        "SANM",
+        "TDY",
+        "TSM"
+      ]
+    },
+    {
+      "a": "E04-B",
+      "b": "E05-B",
+      "n_a": 30,
+      "n_b": 30,
+      "overlap": 24,
+      "union": 36,
+      "jaccard": 0.6666666666666666,
+      "shared": [
+        "ADBE",
+        "AMAT",
+        "AVGO",
+        "CLS",
+        "DELL",
+        "EME",
+        "ETN",
+        "FN",
+        "GOOGL",
+        "HPE",
+        "LRCX",
+        "META",
+        "MOD",
+        "MSFT",
+        "MU",
+        "NTAP",
+        "NVDA",
+        "PNR",
+        "SNDK",
+        "STX",
+        "TEL",
+        "TSM",
+        "VST",
+        "WDC"
+      ],
+      "a_only": [
+        "BDC",
+        "CARR",
+        "DOV",
+        "ENS",
+        "GNRC",
+        "ST"
+      ],
+      "b_only": [
+        "CRDO",
+        "HUBB",
+        "ORCL",
+        "QCOM",
+        "SKHY",
+        "VRT"
+      ]
+    },
+    {
+      "a": "E04-A",
+      "b": "E05-A",
+      "n_a": 30,
+      "n_b": 30,
+      "overlap": 21,
+      "union": 39,
+      "jaccard": 0.5384615384615384,
+      "shared": [
+        "ADBE",
+        "AMZN",
+        "AVGO",
+        "BDC",
+        "CLS",
+        "CRDO",
+        "DOV",
+        "EME",
+        "ENS",
+        "GOOGL",
+        "HPE",
+        "META",
+        "MSFT",
+        "MU",
+        "NTAP",
+        "NVDA",
+        "PNR",
+        "QCOM",
+        "TEL",
+        "TSM",
+        "VRT"
+      ],
+      "a_only": [
+        "COHR",
+        "ETN",
+        "FLEX",
+        "FN",
+        "HUBB",
+        "JBL",
+        "KLAC",
+        "LRCX",
+        "PLAB"
+      ],
+      "b_only": [
+        "ALLE",
+        "CSCO",
+        "DELL",
+        "FTV",
+        "ORCL",
+        "SNDK",
+        "ST",
+        "VST",
+        "WDC"
+      ]
+    },
+    {
+      "a": "E06-A",
+      "b": "E06-B",
+      "n_a": 30,
+      "n_b": 30,
+      "overlap": 22,
+      "union": 38,
+      "jaccard": 0.5789473684210527,
+      "shared": [
+        "AAON",
+        "AMPX",
+        "APLD",
+        "BE",
+        "CC",
+        "CRWV",
+        "FCEL",
+        "FLNC",
+        "INTC",
+        "IREN",
+        "LWLG",
+        "MXL",
+        "NBIS",
+        "NVTS",
+        "ORCL",
+        "PH",
+        "POET",
+        "RKLB",
+        "SITM",
+        "SMCI",
+        "TE",
+        "WOLF"
+      ],
+      "a_only": [
+        "AEHR",
+        "AMZN",
+        "ASML",
+        "CBRS",
+        "COHR",
+        "DELL",
+        "GOOGL",
+        "HPE"
+      ],
+      "b_only": [
+        "AAOI",
+        "AXTI",
+        "COHU",
+        "MKSI",
+        "OKLO",
+        "SMR",
+        "TSLA",
+        "VSH"
+      ]
+    },
+    {
+      "a": "N02",
+      "b": "E06-B",
+      "n_a": 30,
+      "n_b": 30,
+      "overlap": 16,
+      "union": 44,
+      "jaccard": 0.36363636363636365,
+      "shared": [
+        "AAOI",
+        "AMPX",
+        "APLD",
+        "BE",
+        "CRWV",
+        "FCEL",
+        "IREN",
+        "LWLG",
+        "NBIS",
+        "NVTS",
+        "OKLO",
+        "ORCL",
+        "POET",
+        "SMCI",
+        "SMR",
+        "WOLF"
+      ],
+      "a_only": [
+        "ADBE",
+        "ALAB",
+        "AVGO",
+        "CBRS",
+        "CRDO",
+        "DELL",
+        "GEV",
+        "GOOGL",
+        "MU",
+        "NVDA",
+        "SKHY",
+        "SNDK",
+        "SPACEX",
+        "VRT"
+      ],
+      "b_only": [
+        "AAON",
+        "AXTI",
+        "CC",
+        "COHU",
+        "FLNC",
+        "INTC",
+        "MKSI",
+        "MXL",
+        "PH",
+        "RKLB",
+        "SITM",
+        "TE",
+        "TSLA",
+        "VSH"
+      ]
+    },
+    {
+      "a": "02",
+      "b": "N03",
+      "n_a": 30,
+      "n_b": 30,
+      "overlap": 10,
+      "union": 50,
+      "jaccard": 0.2,
+      "shared": [
+        "ADBE",
+        "ALAB",
+        "ANET",
+        "AVGO",
+        "CRDO",
+        "MU",
+        "NVDA",
+        "SNDK",
+        "TSM",
+        "VRT"
+      ],
+      "a_only": [
+        "AEP",
+        "AMZN",
+        "BABA",
+        "BWXT",
+        "CDNS",
+        "CSCO",
+        "DELL",
+        "ET",
+        "FTV",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "ORCL",
+        "PNR",
+        "QCOM",
+        "SMCI",
+        "SNPS",
+        "ST",
+        "VST",
+        "WDC"
+      ],
+      "b_only": [
+        "AAOI",
+        "CIEN",
+        "CLS",
+        "COHR",
+        "EME",
+        "ETN",
+        "FN",
+        "GNRC",
+        "HPE",
+        "JBL",
+        "KEYS",
+        "KLIC",
+        "LITE",
+        "MCHP",
+        "MKSI",
+        "MTSI",
+        "NVT",
+        "ONTO",
+        "SKHY",
+        "SMTC"
+      ]
+    },
+    {
+      "a": "07",
+      "b": "N06",
+      "n_a": 30,
+      "n_b": 30,
+      "overlap": 15,
+      "union": 45,
+      "jaccard": 0.3333333333333333,
+      "shared": [
+        "ALAB",
+        "AMD",
+        "AVGO",
+        "CLS",
+        "COHR",
+        "CRDO",
+        "CRWV",
+        "IREN",
+        "LITE",
+        "MOD",
+        "MRVL",
+        "MU",
+        "NBIS",
+        "NVDA",
+        "VRT"
+      ],
+      "a_only": [
+        "ADBE",
+        "ANET",
+        "DELL",
+        "EME",
+        "ETN",
+        "FIX",
+        "FN",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "SMCI",
+        "SNDK",
+        "STX",
+        "TSM",
+        "WDC"
+      ],
+      "b_only": [
+        "AAOI",
+        "AEHR",
+        "AMPX",
+        "APLD",
+        "BE",
+        "CAMT",
+        "MTSI",
+        "NVTS",
+        "OKLO",
+        "ONTO",
+        "POET",
+        "RKLB",
+        "RMBS",
+        "SITM",
+        "TSEM"
+      ]
+    },
+    {
+      "a": "02",
+      "b": "N05",
+      "n_a": 30,
+      "n_b": 30,
+      "overlap": 20,
+      "union": 40,
+      "jaccard": 0.5,
+      "shared": [
+        "ADBE",
+        "ANET",
+        "AVGO",
+        "BABA",
+        "CRDO",
+        "DELL",
+        "ET",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "MU",
+        "NVDA",
+        "ORCL",
+        "PNR",
+        "QCOM",
+        "SMCI",
+        "SNDK",
+        "ST",
+        "TSM",
+        "VRT"
+      ],
+      "a_only": [
+        "AEP",
+        "ALAB",
+        "AMZN",
+        "BWXT",
+        "CDNS",
+        "CSCO",
+        "FTV",
+        "SNPS",
+        "VST",
+        "WDC"
+      ],
+      "b_only": [
+        "ACLS",
+        "ASML",
+        "ATKR",
+        "CLS",
+        "FLNC",
+        "GEV",
+        "HTHIY",
+        "POWL",
+        "SKHY",
+        "TEL"
+      ]
+    }
+  ],
+  "view_pairs": [
+    {
+      "a": "04",
+      "b": "06F",
+      "c3": {
+        "n_a": 3,
+        "n_b": 3,
+        "overlap": 3,
+        "union": 3,
+        "jaccard": 1.0,
+        "shared": [
+          "ADBE",
+          "MU",
+          "VISN"
+        ],
+        "a_only": [],
+        "b_only": []
+      },
+      "c6": {
+        "n_a": 8,
+        "n_b": 9,
+        "overlap": 3,
+        "union": 14,
+        "jaccard": 0.21428571428571427,
+        "shared": [
+          "ADBE",
+          "MU",
+          "VISN"
+        ],
+        "a_only": [
+          "AEP",
+          "ALLE",
+          "DKILY",
+          "DOV",
+          "DTE"
+        ],
+        "b_only": [
+          "BABA",
+          "BDC",
+          "ET",
+          "MSFT",
+          "PNR",
+          "ST"
+        ]
+      },
+      "y3": {
+        "n_a": 0,
+        "n_b": 0,
+        "overlap": 0,
+        "union": 0,
+        "jaccard": null,
+        "shared": [],
+        "a_only": [],
+        "b_only": []
+      },
+      "y6": {
+        "n_a": 0,
+        "n_b": 0,
+        "overlap": 0,
+        "union": 0,
+        "jaccard": null,
+        "shared": [],
+        "a_only": [],
+        "b_only": []
+      },
+      "research3": null,
+      "research6": null
+    },
+    {
+      "a": "02",
+      "b": "06E",
+      "c3": {
+        "n_a": 7,
+        "n_b": 7,
+        "overlap": 2,
+        "union": 12,
+        "jaccard": 0.16666666666666666,
+        "shared": [
+          "ADBE",
+          "MU"
+        ],
+        "a_only": [
+          "BABA",
+          "MSFT",
+          "PNR",
+          "SMCI",
+          "ST"
+        ],
+        "b_only": [
+          "CLS",
+          "COHR",
+          "FLEX",
+          "MRVL",
+          "P"
+        ]
+      },
+      "c6": {
+        "n_a": 11,
+        "n_b": 11,
+        "overlap": 3,
+        "union": 19,
+        "jaccard": 0.15789473684210525,
+        "shared": [
+          "ADBE",
+          "BABA",
+          "MU"
+        ],
+        "a_only": [
+          "AVGO",
+          "ET",
+          "MSFT",
+          "NVDA",
+          "PNR",
+          "SMCI",
+          "ST",
+          "TSM"
+        ],
+        "b_only": [
+          "AAOI",
+          "CLS",
+          "COHR",
+          "FLEX",
+          "FLNC",
+          "MRVL",
+          "P",
+          "VISN"
+        ]
+      },
+      "y3": {
+        "n_a": 0,
+        "n_b": 0,
+        "overlap": 0,
+        "union": 0,
+        "jaccard": null,
+        "shared": [],
+        "a_only": [],
+        "b_only": []
+      },
+      "y6": {
+        "n_a": 0,
+        "n_b": 0,
+        "overlap": 0,
+        "union": 0,
+        "jaccard": null,
+        "shared": [],
+        "a_only": [],
+        "b_only": []
+      },
+      "research3": null,
+      "research6": null
+    },
+    {
+      "a": "06G",
+      "b": "07-收入",
+      "c3": {
+        "n_a": 6,
+        "n_b": 16,
+        "overlap": 5,
+        "union": 17,
+        "jaccard": 0.29411764705882354,
+        "shared": [
+          "AVGO",
+          "CLS",
+          "CRDO",
+          "MU",
+          "NVDA"
+        ],
+        "a_only": [
+          "SMCI"
+        ],
+        "b_only": [
+          "ANET",
+          "DELL",
+          "ETN",
+          "FIX",
+          "FN",
+          "LITE",
+          "SNDK",
+          "STX",
+          "TSM",
+          "VRT",
+          "WDC"
+        ]
+      },
+      "c6": {
+        "n_a": 10,
+        "n_b": 19,
+        "overlap": 8,
+        "union": 21,
+        "jaccard": 0.38095238095238093,
+        "shared": [
+          "AMD",
+          "AVGO",
+          "CLS",
+          "CRDO",
+          "MU",
+          "NVDA",
+          "SNDK",
+          "TSM"
+        ],
+        "a_only": [
+          "AMZN",
+          "SMCI"
+        ],
+        "b_only": [
+          "ANET",
+          "COHR",
+          "DELL",
+          "ETN",
+          "FIX",
+          "FN",
+          "LITE",
+          "MRVL",
+          "STX",
+          "VRT",
+          "WDC"
+        ]
+      },
+      "y3": {
+        "n_a": 0,
+        "n_b": 0,
+        "overlap": 0,
+        "union": 0,
+        "jaccard": null,
+        "shared": [],
+        "a_only": [],
+        "b_only": []
+      },
+      "y6": {
+        "n_a": 0,
+        "n_b": 0,
+        "overlap": 0,
+        "union": 0,
+        "jaccard": null,
+        "shared": [],
+        "a_only": [],
+        "b_only": []
+      },
+      "research3": {
+        "n_a": 15,
+        "n_b": 19,
+        "overlap": 8,
+        "union": 26,
+        "jaccard": 0.3076923076923077,
+        "shared": [
+          "AMD",
+          "AVGO",
+          "CLS",
+          "CRDO",
+          "MU",
+          "NVDA",
+          "SNDK",
+          "TSM"
+        ],
+        "a_only": [
+          "AAOI",
+          "ALAB",
+          "AMZN",
+          "META",
+          "MSFT",
+          "NBIS",
+          "SMCI"
+        ],
+        "b_only": [
+          "ANET",
+          "COHR",
+          "DELL",
+          "ETN",
+          "FIX",
+          "FN",
+          "LITE",
+          "MRVL",
+          "STX",
+          "VRT",
+          "WDC"
+        ]
+      },
+      "research6": {
+        "n_a": 15,
+        "n_b": 19,
+        "overlap": 8,
+        "union": 26,
+        "jaccard": 0.3076923076923077,
+        "shared": [
+          "AMD",
+          "AVGO",
+          "CLS",
+          "CRDO",
+          "MU",
+          "NVDA",
+          "SNDK",
+          "TSM"
+        ],
+        "a_only": [
+          "AAOI",
+          "ALAB",
+          "AMZN",
+          "META",
+          "MSFT",
+          "NBIS",
+          "SMCI"
+        ],
+        "b_only": [
+          "ANET",
+          "COHR",
+          "DELL",
+          "ETN",
+          "FIX",
+          "FN",
+          "LITE",
+          "MRVL",
+          "STX",
+          "VRT",
+          "WDC"
+        ]
+      }
+    },
+    {
+      "a": "06G",
+      "b": "07-现金",
+      "c3": {
+        "n_a": 6,
+        "n_b": 12,
+        "overlap": 5,
+        "union": 13,
+        "jaccard": 0.38461538461538464,
+        "shared": [
+          "AVGO",
+          "CLS",
+          "CRDO",
+          "MU",
+          "NVDA"
+        ],
+        "a_only": [
+          "SMCI"
+        ],
+        "b_only": [
+          "EME",
+          "ETN",
+          "FIX",
+          "FN",
+          "SNDK",
+          "TSM",
+          "VRT"
+        ]
+      },
+      "c6": {
+        "n_a": 10,
+        "n_b": 20,
+        "overlap": 7,
+        "union": 23,
+        "jaccard": 0.30434782608695654,
+        "shared": [
+          "AVGO",
+          "CLS",
+          "CRDO",
+          "MU",
+          "NVDA",
+          "SNDK",
+          "TSM"
+        ],
+        "a_only": [
+          "AMD",
+          "AMZN",
+          "SMCI"
+        ],
+        "b_only": [
+          "ANET",
+          "COHR",
+          "DELL",
+          "EME",
+          "ETN",
+          "FIX",
+          "FN",
+          "META",
+          "MRVL",
+          "MSFT",
+          "STX",
+          "VRT",
+          "WDC"
+        ]
+      },
+      "y3": {
+        "n_a": 0,
+        "n_b": 1,
+        "overlap": 0,
+        "union": 1,
+        "jaccard": 0.0,
+        "shared": [],
+        "a_only": [],
+        "b_only": [
+          "ADBE"
+        ]
+      },
+      "y6": {
+        "n_a": 0,
+        "n_b": 1,
+        "overlap": 0,
+        "union": 1,
+        "jaccard": 0.0,
+        "shared": [],
+        "a_only": [],
+        "b_only": [
+          "ADBE"
+        ]
+      },
+      "research3": {
+        "n_a": 15,
+        "n_b": 21,
+        "overlap": 9,
+        "union": 27,
+        "jaccard": 0.3333333333333333,
+        "shared": [
+          "AVGO",
+          "CLS",
+          "CRDO",
+          "META",
+          "MSFT",
+          "MU",
+          "NVDA",
+          "SNDK",
+          "TSM"
+        ],
+        "a_only": [
+          "AAOI",
+          "ALAB",
+          "AMD",
+          "AMZN",
+          "NBIS",
+          "SMCI"
+        ],
+        "b_only": [
+          "ADBE",
+          "ANET",
+          "COHR",
+          "DELL",
+          "EME",
+          "ETN",
+          "FIX",
+          "FN",
+          "MRVL",
+          "STX",
+          "VRT",
+          "WDC"
+        ]
+      },
+      "research6": {
+        "n_a": 15,
+        "n_b": 21,
+        "overlap": 9,
+        "union": 27,
+        "jaccard": 0.3333333333333333,
+        "shared": [
+          "AVGO",
+          "CLS",
+          "CRDO",
+          "META",
+          "MSFT",
+          "MU",
+          "NVDA",
+          "SNDK",
+          "TSM"
+        ],
+        "a_only": [
+          "AAOI",
+          "ALAB",
+          "AMD",
+          "AMZN",
+          "NBIS",
+          "SMCI"
+        ],
+        "b_only": [
+          "ADBE",
+          "ANET",
+          "COHR",
+          "DELL",
+          "EME",
+          "ETN",
+          "FIX",
+          "FN",
+          "MRVL",
+          "STX",
+          "VRT",
+          "WDC"
+        ]
+      }
+    }
+  ],
+  "old_01_04_top30_overlap": 14,
+  "historical_window": "2026-07-13 close / 2026-07-14 adjusted open to 2026-09-04 latest available adjusted close",
+  "historical": [
+    {
+      "list_id": "01",
+      "method_name": "风险调整赔率",
+      "top30_return": "0.024228287612601596",
+      "top30_next_open_return": "0.015624830324431552",
+      "rank_ic": "0.13459125681577735",
+      "top30_actual_winner30": "9",
+      "top30_positive": "15",
+      "top30_median": "-0.0021341601690045005",
+      "old_result": "D:/drive/Investment/分析报告/公司排序/01_暂时有效_核心/01_风险调整赔率_十二句话S03_原11/迭代版本/R10_2026-07-12_独立自洽版/02_排序结果.md",
+      "old_version": "R10_2026-07-12_独立自洽版",
+      "top3_return_contributors": [
+        {
+          "ticker": "SMCI",
+          "return": "0.4313087625086145",
+          "old_rank": "21"
+        },
+        {
+          "ticker": "ATKR",
+          "return": "0.3126582167611822",
+          "old_rank": "20"
+        },
+        {
+          "ticker": "PSIX",
+          "return": "0.2582349687533858",
+          "old_rank": "8"
+        }
+      ],
+      "mean_excluding_top3": "-0.01019827109796794633333333333",
+      "old_top30": [
+        "ET",
+        "ST",
+        "NDSN",
+        "DTE",
+        "QCOM",
+        "DCI",
+        "PNR",
+        "PSIX",
+        "NVT",
+        "HPE",
+        "IBM",
+        "BDC",
+        "DELL",
+        "CC",
+        "GNRC",
+        "JBL",
+        "ETN",
+        "TEL",
+        "ENS",
+        "ATKR",
+        "SMCI",
+        "DHR",
+        "ADBE",
+        "BELFB",
+        "ALLE",
+        "AEP",
+        "JCI",
+        "FIX",
+        "EME",
+        "FLEX"
+      ],
+      "width_sensitivity": {
+        "10": {
+          "close": "0.0153294135775482117",
+          "open": "-0.00265437249342269449713539305"
+        },
+        "20": {
+          "close": "0.01648022030744378095",
+          "open": "0.007986510836485605187217223365"
+        },
+        "30": {
+          "close": "0.0242282876126015983",
+          "open": "0.01562483032443153084925276223"
+        }
+      }
+    },
+    {
+      "list_id": "04",
+      "method_name": "极简基准兑现",
+      "top30_return": "0.02333644926228902",
+      "top30_next_open_return": "0.019700994503296095",
+      "rank_ic": "0.18673195344925808",
+      "top30_actual_winner30": "10",
+      "top30_positive": "14",
+      "top30_median": "-0.0188537325632394",
+      "old_result": "D:/drive/Investment/分析报告/公司排序/02_暂时有效_辅助/04_极简基准兑现_迭代实验_原06/迭代版本/R23_2026-07-12_独立自洽版/02_排序结果.md",
+      "old_version": "R23_2026-07-12_独立自洽版",
+      "top3_return_contributors": [
+        {
+          "ticker": "ATKR",
+          "return": "0.3126582167611822",
+          "old_rank": "25"
+        },
+        {
+          "ticker": "MSFT",
+          "return": "0.2804437511842264",
+          "old_rank": "11"
+        },
+        {
+          "ticker": "PSIX",
+          "return": "0.2582349687533858",
+          "old_rank": "15"
+        }
+      ],
+      "mean_excluding_top3": "-0.005601609586300879222222222222",
+      "old_top30": [
+        "NTAP",
+        "PNR",
+        "VISN",
+        "TDY",
+        "TEL",
+        "ET",
+        "QCOM",
+        "VST",
+        "NVDA",
+        "DELL",
+        "MSFT",
+        "SANM",
+        "AEP",
+        "LIN",
+        "PSIX",
+        "MMM",
+        "FIX",
+        "ADI",
+        "DOV",
+        "FTV",
+        "NTNX",
+        "DHR",
+        "HPE",
+        "BDC",
+        "ATKR",
+        "TMO",
+        "IBM",
+        "CMI",
+        "CDNS",
+        "ENS"
+      ],
+      "width_sensitivity": {
+        "10": {
+          "close": "0.0194206805853384451",
+          "open": "0.00165664363569186138743364868"
+        },
+        "20": {
+          "close": "0.01590812024074274605",
+          "open": "0.001435498796329024937472053475"
+        },
+        "30": {
+          "close": "0.02333644926228902203333333333",
+          "open": "0.01970099450329611093693213790"
+        }
+      }
+    },
+    {
+      "list_id": "02",
+      "method_name": "预期兑现概率",
+      "top30_return": "0.009994978792112634",
+      "top30_next_open_return": "0.004424616506423351",
+      "rank_ic": "0.10755703550986084",
+      "top30_actual_winner30": "10",
+      "top30_positive": "16",
+      "top30_median": "0.0121798879547003",
+      "old_result": "D:/drive/Investment/分析报告/公司排序/01_暂时有效_核心/02_预期兑现概率_十二句话S02_原10/迭代版本/R10_2026-07-12_独立自洽版/02_排序结果.md",
+      "old_version": "R10_2026-07-12_独立自洽版",
+      "top3_return_contributors": [
+        {
+          "ticker": "SMCI",
+          "return": "0.4313087625086145",
+          "old_rank": "3"
+        },
+        {
+          "ticker": "MSFT",
+          "return": "0.2804437511842264",
+          "old_rank": "7"
+        },
+        {
+          "ticker": "NTNX",
+          "return": "0.2325243762051321",
+          "old_rank": "29"
+        }
+      ],
+      "mean_excluding_top3": "-0.02386768615313310676666666667",
+      "old_top30": [
+        "ADBE",
+        "DTE",
+        "SMCI",
+        "ENS",
+        "HTHIY",
+        "CARR",
+        "MSFT",
+        "ASMVY",
+        "TEL",
+        "VST",
+        "BDC",
+        "GNRC",
+        "IBM",
+        "VECO",
+        "CEG",
+        "HPE",
+        "MOD",
+        "VSH",
+        "EME",
+        "DCI",
+        "APH",
+        "MU",
+        "FLNC",
+        "AAOI",
+        "DHR",
+        "MSI",
+        "LFUS",
+        "EQIX",
+        "NTNX",
+        "APD"
+      ],
+      "width_sensitivity": {
+        "10": {
+          "close": "0.0608514688550986485",
+          "open": "0.05454730069524802771167634743"
+        },
+        "20": {
+          "close": "0.0053938662476177586",
+          "open": "0.002446287184502303435869946155"
+        },
+        "30": {
+          "close": "0.009994978792112637243333333333",
+          "open": "0.004424616506423381176370889617"
+        }
+      }
+    },
+    {
+      "list_id": "06F",
+      "method_name": "双源三视图",
+      "top30_return": "0.0077038695781120785",
+      "top30_next_open_return": "-0.02384973903365746",
+      "rank_ic": "0.07095020752516074",
+      "top30_actual_winner30": "8",
+      "top30_positive": "15",
+      "top30_median": "-0.00033435965836900103",
+      "old_result": "D:/drive/Investment/分析报告/公司排序/02_暂时有效_辅助/06_双源三视图_原01/迭代版本/R03_2026-07-12_独立自洽版/02_排序结果.md",
+      "old_version": "R03_2026-07-12_独立自洽版",
+      "top3_return_contributors": [
+        {
+          "ticker": "SMCI",
+          "return": "0.4313087625086145",
+          "old_rank": "27"
+        },
+        {
+          "ticker": "P",
+          "return": "0.3204618010918865",
+          "old_rank": "6"
+        },
+        {
+          "ticker": "ORCL",
+          "return": "0.20708534957813285",
+          "old_rank": "16"
+        }
+      ],
+      "mean_excluding_top3": "-0.02695332688278784218518518519",
+      "old_top30": [
+        "QCOM",
+        "ON",
+        "SANM",
+        "TEL",
+        "GOOGL",
+        "P",
+        "IESC",
+        "APH",
+        "LFUS",
+        "Q",
+        "CEG",
+        "VIAV",
+        "KEYS",
+        "MCHP",
+        "BELFB",
+        "ORCL",
+        "COHU",
+        "ADI",
+        "ASMIY",
+        "ADBE",
+        "MU",
+        "NVDA",
+        "SKHY",
+        "BESIY",
+        "CRDO",
+        "RMBS",
+        "SMCI",
+        "DSCSY",
+        "SITM",
+        "TER"
+      ],
+      "width_sensitivity": {
+        "10": {
+          "close": "0.008444848434786867",
+          "open": "-0.01712083996693937525008983944"
+        },
+        "20": {
+          "close": "0.00779169297793688155",
+          "open": "-0.01668774353859180937397731390"
+        },
+        "30": {
+          "close": "0.007703869578112070366666666667",
+          "open": "-0.02384973903365747532879647195"
+        }
+      }
+    },
+    {
+      "list_id": "06G",
+      "method_name": "双源三视图",
+      "top30_return": "-0.020260891151592433",
+      "top30_next_open_return": "-0.06580295216686023",
+      "rank_ic": "-0.05412947942381251",
+      "top30_actual_winner30": "9",
+      "top30_positive": "13",
+      "top30_median": "-0.05810820273069685",
+      "old_result": "D:/drive/Investment/分析报告/公司排序/02_暂时有效_辅助/06_双源三视图_原01/迭代版本/R03_2026-07-12_独立自洽版/02_排序结果.md",
+      "old_version": "R03_2026-07-12_独立自洽版",
+      "top3_return_contributors": [
+        {
+          "ticker": "SMCI",
+          "return": "0.4313087625086145",
+          "old_rank": "8"
+        },
+        {
+          "ticker": "AEHR",
+          "return": "0.2681565185731798",
+          "old_rank": "22"
+        },
+        {
+          "ticker": "AXTI",
+          "return": "0.22156164304442183",
+          "old_rank": "28"
+        }
+      ],
+      "mean_excluding_top3": "-0.05662420958051813025925925926",
+      "old_top30": [
+        "POET",
+        "MU",
+        "SMR",
+        "IREN",
+        "FCEL",
+        "BE",
+        "OKLO",
+        "SMCI",
+        "APLD",
+        "LWLG",
+        "CBRS",
+        "CRDO",
+        "NVDA",
+        "BESIY",
+        "NBIS",
+        "VICR",
+        "RKLB",
+        "TE",
+        "SKHY",
+        "ALAB",
+        "NVTS",
+        "AEHR",
+        "VECO",
+        "MRAM",
+        "AMD",
+        "AMPX",
+        "TER",
+        "AXTI",
+        "LITE",
+        "DSCSY"
+      ],
+      "width_sensitivity": {
+        "10": {
+          "close": "0.0322843303906310424",
+          "open": "-0.00720409291920492913109960323"
+        },
+        "20": {
+          "close": "-0.0295767617069122476",
+          "open": "-0.0693455246573922716442434061"
+        },
+        "30": {
+          "close": "-0.02026089115159244623333333333",
+          "open": "-0.06580295216686021360293006747"
+        }
+      }
+    },
+    {
+      "list_id": "06E",
+      "method_name": "双源三视图",
+      "top30_return": "-0.05971772791272413",
+      "top30_next_open_return": "-0.10452641580763637",
+      "rank_ic": "-0.1171381195236416",
+      "top30_actual_winner30": "6",
+      "top30_positive": "11",
+      "top30_median": "-0.09237496462382265",
+      "old_result": "D:/drive/Investment/分析报告/公司排序/02_暂时有效_辅助/06_双源三视图_原01/迭代版本/R03_2026-07-12_独立自洽版/02_排序结果.md",
+      "old_version": "R03_2026-07-12_独立自洽版",
+      "top3_return_contributors": [
+        {
+          "ticker": "SMCI",
+          "return": "0.4313087625086145",
+          "old_rank": "8"
+        },
+        {
+          "ticker": "AEHR",
+          "return": "0.2681565185731798",
+          "old_rank": "24"
+        },
+        {
+          "ticker": "SKHY",
+          "return": "0.16179844377384334",
+          "old_rank": "23"
+        }
+      ],
+      "mean_excluding_top3": "-0.09825168749027267248148148148",
+      "old_top30": [
+        "CRDO",
+        "ALAB",
+        "NBIS",
+        "AAOI",
+        "TE",
+        "SITM",
+        "BE",
+        "SMCI",
+        "IREN",
+        "SNDK",
+        "VICR",
+        "MRAM",
+        "POET",
+        "LWLG",
+        "SMR",
+        "ENPH",
+        "RKLB",
+        "AOSL",
+        "OKLO",
+        "APLD",
+        "CBRS",
+        "FCEL",
+        "SKHY",
+        "AEHR",
+        "WOLF",
+        "MXL",
+        "ARM",
+        "PENG",
+        "AMD",
+        "MU"
+      ],
+      "width_sensitivity": {
+        "10": {
+          "close": "0.0014195024703413265",
+          "open": "-0.04455764864857340018513020692"
+        },
+        "20": {
+          "close": "-0.05343855891075892705",
+          "open": "-0.09390366057975647943402673365"
+        },
+        "30": {
+          "close": "-0.05971772791272415056666666667",
+          "open": "-0.1045264158076363394746654833"
+        }
+      }
+    },
+    {
+      "list_id": "07",
+      "method_name": "未来收入台阶",
+      "top30_return": "-0.023336006484766948",
+      "top30_next_open_return": "-0.05921711152938518",
+      "rank_ic": "0.05470085180262052",
+      "top30_actual_winner30": "7",
+      "top30_positive": "12",
+      "top30_median": "-0.02548442534846245",
+      "old_result": "D:/drive/Investment/分析报告/公司排序/02_暂时有效_辅助/07_未来收入台阶_原07/迭代版本/R03_2026-07-12_独立自洽版/02_排序结果.md",
+      "old_version": "R03_2026-07-12_独立自洽版",
+      "top3_return_contributors": [
+        {
+          "ticker": "DELL",
+          "return": "0.22920595677880717",
+          "old_rank": "26"
+        },
+        {
+          "ticker": "ORCL",
+          "return": "0.20708534957813285",
+          "old_rank": "3"
+        },
+        {
+          "ticker": "SKHY",
+          "return": "0.16179844377384334",
+          "old_rank": "22"
+        }
+      ],
+      "mean_excluding_top3": "-0.04808036832125156048148148148",
+      "old_top30": [
+        "VST",
+        "CLS",
+        "ORCL",
+        "AVGO",
+        "NVDA",
+        "AAON",
+        "GEV",
+        "PWR",
+        "MU",
+        "SANM",
+        "AAOI",
+        "EME",
+        "SNDK",
+        "CRWV",
+        "IREN",
+        "ETN",
+        "LITE",
+        "APH",
+        "AMD",
+        "PENG",
+        "AMAT",
+        "SKHY",
+        "COHR",
+        "FLEX",
+        "NVT",
+        "DELL",
+        "MRVL",
+        "CMI",
+        "VRT",
+        "GNRC"
+      ],
+      "width_sensitivity": {
+        "10": {
+          "close": "-0.0233999790575243025",
+          "open": "-0.04961181221404385608869888737"
+        },
+        "20": {
+          "close": "-0.01254903416264830545",
+          "open": "-0.04438085729204549468544833966"
+        },
+        "30": {
+          "close": "-0.0233360064847669591",
+          "open": "-0.05921711152938520040531797387"
+        }
+      }
+    },
+    {
+      "list_id": "N02",
+      "method_name": "反证闭环与尾部生存",
+      "top30_return": "0.025857251917486647",
+      "top30_next_open_return": "0.026622163320843027",
+      "rank_ic": "0.2750115291755962",
+      "top30_actual_winner30": "9",
+      "top30_positive": "18",
+      "top30_median": "0.02517213280903355",
+      "old_result": "D:/drive/Investment/分析报告/公司排序/06_候选新方案_待验证/N02_反证闭环与尾部生存/迭代版本/R02_2026-07-12_独立自洽版/02_排序结果.md",
+      "old_version": "R02_2026-07-12_独立自洽版",
+      "top3_return_contributors": [
+        {
+          "ticker": "MSFT",
+          "return": "0.2804437511842264",
+          "old_rank": "6"
+        },
+        {
+          "ticker": "HTHIY",
+          "return": "0.1909995686024346",
+          "old_rank": "13"
+        },
+        {
+          "ticker": "CEG",
+          "return": "0.16247831401075108",
+          "old_rank": "26"
+        }
+      ],
+      "mean_excluding_top3": "0.005251700878784730814814814815",
+      "old_top30": [
+        "ADBE",
+        "MSI",
+        "TEL",
+        "NTAP",
+        "LIN",
+        "MSFT",
+        "ET",
+        "MMM",
+        "PNR",
+        "DHR",
+        "NDSN",
+        "QCOM",
+        "HTHIY",
+        "VISN",
+        "ENS",
+        "ALLE",
+        "IBM",
+        "TMO",
+        "HOCPY",
+        "RYCEY",
+        "DD",
+        "JCI",
+        "SHECY",
+        "ECL",
+        "ABBNY",
+        "CEG",
+        "DCI",
+        "TDY",
+        "DOV",
+        "KEYS"
+      ],
+      "width_sensitivity": {
+        "10": {
+          "close": "0.064348610384840545",
+          "open": "0.06885414694585186420708906171"
+        },
+        "20": {
+          "close": "0.04450653337879011995",
+          "open": "0.0534640546934878685531327705"
+        },
+        "30": {
+          "close": "0.0258572519174866604",
+          "open": "0.02662216332084301787564240701"
+        }
+      }
+    },
+    {
+      "list_id": "N03",
+      "method_name": "预期差增量与证据升级",
+      "top30_return": "-0.07130337495659675",
+      "top30_next_open_return": "-0.09878086897853787",
+      "rank_ic": "-0.0031908688929278683",
+      "top30_actual_winner30": "5",
+      "top30_positive": "9",
+      "top30_median": "-0.08042111233903275",
+      "old_result": "D:/drive/Investment/分析报告/公司排序/06_候选新方案_待验证/N03_预期差增量与证据升级/迭代版本/R02_2026-07-12_独立自洽版/02_排序结果.md",
+      "old_version": "R02_2026-07-12_独立自洽版",
+      "top3_return_contributors": [
+        {
+          "ticker": "BDC",
+          "return": "0.19577543736402236",
+          "old_rank": "9"
+        },
+        {
+          "ticker": "CEG",
+          "return": "0.16247831401075108",
+          "old_rank": "17"
+        },
+        {
+          "ticker": "ADBE",
+          "return": "0.1556741210713215",
+          "old_rank": "23"
+        }
+      ],
+      "mean_excluding_top3": "-0.09826033782014805870370370370",
+      "old_top30": [
+        "MU",
+        "PENG",
+        "TSLA",
+        "TT",
+        "ASX",
+        "APLD",
+        "UMC",
+        "BWXT",
+        "BDC",
+        "SITM",
+        "RYCEY",
+        "ADI",
+        "SNDK",
+        "CARR",
+        "GFS",
+        "ACLS",
+        "CEG",
+        "ECL",
+        "AAOI",
+        "AAON",
+        "ABBNY",
+        "ACMR",
+        "ADBE",
+        "AEP",
+        "ALAB",
+        "ALLE",
+        "AMAT",
+        "AMD",
+        "AMKR",
+        "AMPX"
+      ],
+      "width_sensitivity": {
+        "10": {
+          "close": "-0.0585062757437881835",
+          "open": "-0.08458819362896277148558601128"
+        },
+        "20": {
+          "close": "-0.06333830982715180025",
+          "open": "-0.0912124054125525766506616281"
+        },
+        "30": {
+          "close": "-0.07130337495659675483333333333",
+          "open": "-0.09878086897853786425091671703"
+        }
+      }
+    },
+    {
+      "list_id": "N06",
+      "method_name": "超高增长与多倍价值",
+      "top30_return": "-0.04004645791508588",
+      "top30_next_open_return": "-0.09021027499125849",
+      "rank_ic": "0.07281183029053523",
+      "top30_actual_winner30": "5",
+      "top30_positive": "11",
+      "top30_median": "-0.05989321805604715",
+      "old_result": "D:/drive/Investment/分析报告/公司排序/06_候选新方案_待验证/N06_超高增长与多倍价值/迭代版本/R02_2026-07-12_独立自洽版/02_排序结果.md",
+      "old_version": "R02_2026-07-12_独立自洽版",
+      "top3_return_contributors": [
+        {
+          "ticker": "ATEYY",
+          "return": "0.2421785640674865",
+          "old_rank": "29"
+        },
+        {
+          "ticker": "DELL",
+          "return": "0.22920595677880717",
+          "old_rank": "24"
+        },
+        {
+          "ticker": "LITE",
+          "return": "0.1472433468384322",
+          "old_rank": "4"
+        }
+      ],
+      "mean_excluding_top3": "-0.06740820759767787792592592593",
+      "old_top30": [
+        "AVGO",
+        "MU",
+        "SNDK",
+        "LITE",
+        "NVDA",
+        "VICR",
+        "ALAB",
+        "ANET",
+        "AMD",
+        "SIMO",
+        "BESIY",
+        "ASMIY",
+        "CRDO",
+        "ASMVY",
+        "AMAT",
+        "CLS",
+        "LRCX",
+        "VECO",
+        "SANM",
+        "APH",
+        "ONTO",
+        "VRT",
+        "MRVL",
+        "DELL",
+        "TSEM",
+        "MTSI",
+        "TER",
+        "MPWR",
+        "ATEYY",
+        "SITM"
+      ],
+      "width_sensitivity": {
+        "10": {
+          "close": "-0.023899473371138371",
+          "open": "-0.07195281586753082058118902696"
+        },
+        "20": {
+          "close": "-0.0695661749873241807",
+          "open": "-0.1127785538093103151125080368"
+        },
+        "30": {
+          "close": "-0.04004645791508589446666666667",
+          "open": "-0.09021027499125847625537896497"
+        }
+      }
+    },
+    {
+      "list_id": "09",
+      "method_name": "弹性成长",
+      "top30_return": "-0.047528040556406206",
+      "top30_next_open_return": "-0.07825235240088582",
+      "rank_ic": "0.09724011881832735",
+      "top30_actual_winner30": "6",
+      "top30_positive": "11",
+      "top30_median": "-0.0748391515348465",
+      "old_result": "D:/drive/Investment/分析报告/公司排序/03_观察_待更新/09_弹性成长_原02/迭代版本/R09_2026-07-12_独立自洽版/02_排序结果.md",
+      "old_version": "R09_2026-07-12_独立自洽版",
+      "top3_return_contributors": [
+        {
+          "ticker": "NTNX",
+          "return": "0.2325243762051321",
+          "old_rank": "4"
+        },
+        {
+          "ticker": "DELL",
+          "return": "0.22920595677880717",
+          "old_rank": "3"
+        },
+        {
+          "ticker": "LITE",
+          "return": "0.1472433468384322",
+          "old_rank": "26"
+        }
+      ],
+      "mean_excluding_top3": "-0.07536351468572436822222222222",
+      "old_top30": [
+        "PENG",
+        "AMD",
+        "DELL",
+        "NTNX",
+        "HPE",
+        "MICLF",
+        "SIMO",
+        "ANET",
+        "SNDK",
+        "ASX",
+        "ALAB",
+        "NVDA",
+        "CRDO",
+        "QCOM",
+        "ACMR",
+        "VISN",
+        "NTAP",
+        "CLS",
+        "VST",
+        "AVGO",
+        "VRT",
+        "STM",
+        "ONTO",
+        "TXN",
+        "SHECY",
+        "LITE",
+        "MPWR",
+        "DCI",
+        "MCHP",
+        "CBRS"
+      ],
+      "width_sensitivity": {
+        "10": {
+          "close": "0.0027528312869907626",
+          "open": "-0.02323268299539787390495295138"
+        },
+        "20": {
+          "close": "-0.03555861990557840445",
+          "open": "-0.0641615219451769451373847459"
+        },
+        "30": {
+          "close": "-0.04752804055640621573333333333",
+          "open": "-0.0782523524008858129087091025"
+        }
+      }
+    },
+    {
+      "list_id": "N05",
+      "method_name": "市场状态自适应双阶段",
+      "top30_return": "0.004816183526852852",
+      "top30_next_open_return": "-0.012780897100309068",
+      "rank_ic": "0.20613148685673985",
+      "top30_actual_winner30": "10",
+      "top30_positive": "16",
+      "top30_median": "0.01987739023633755",
+      "old_result": "D:/drive/Investment/分析报告/公司排序/06_候选新方案_待验证/N05_市场状态自适应双阶段/迭代版本/R02_2026-07-12_独立自洽版/02_排序结果.md",
+      "old_version": "R02_2026-07-12_独立自洽版",
+      "top3_return_contributors": [
+        {
+          "ticker": "MSFT",
+          "return": "0.2804437511842264",
+          "old_rank": "28"
+        },
+        {
+          "ticker": "DELL",
+          "return": "0.22920595677880717",
+          "old_rank": "4"
+        },
+        {
+          "ticker": "BDC",
+          "return": "0.19577543736402236",
+          "old_rank": "15"
+        }
+      ],
+      "mean_excluding_top3": "-0.02077554220449890044444444444",
+      "old_top30": [
+        "VST",
+        "TSM",
+        "APH",
+        "DELL",
+        "ALLE",
+        "HUBB",
+        "HPE",
+        "NVDA",
+        "UMC",
+        "SANM",
+        "DCI",
+        "SNDK",
+        "TEL",
+        "AVGO",
+        "BDC",
+        "PNR",
+        "MKSI",
+        "AJNMY",
+        "ETN",
+        "NTAP",
+        "HTHIY",
+        "DKILY",
+        "TT",
+        "EME",
+        "TMO",
+        "CRDO",
+        "ADBE",
+        "MSFT",
+        "MOD",
+        "PENG"
+      ],
+      "width_sensitivity": {
+        "10": {
+          "close": "0.0474629460852058699",
+          "open": "0.02363115506756681932488324408"
+        },
+        "20": {
+          "close": "0.0182724748409109952",
+          "open": "-0.00641846084255982275697248017"
+        },
+        "30": {
+          "close": "0.004816183526852853933333333333",
+          "open": "-0.01278089710030906811391172181"
+        }
+      }
+    }
+  ]
+}

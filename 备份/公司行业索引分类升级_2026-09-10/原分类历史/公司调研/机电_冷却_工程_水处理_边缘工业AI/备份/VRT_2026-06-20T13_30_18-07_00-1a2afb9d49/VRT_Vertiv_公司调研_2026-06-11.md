@@ -1,0 +1,390 @@
+# VRT Vertiv 公司调研 2026-06-11
+
+报告日期：2026-06-11（America/Los_Angeles）  
+研究对象：Vertiv Holdings Co，NYSE: VRT  
+资料边界：项目内只使用 `基本面/行业调研/` 下的行业与 AI 产业资料，并读取 `公司调研/公司索引.md` 确认目录归属；未读取、引用或继承 `特征量化/`、`日度资料/` 或既有公司报告。外部资料优先使用 Vertiv IR、年报、财报 PDF、SEC XBRL companyfacts、公司产品页、并购公告、会议/技术资料，其次使用行情与第三方行业资料交叉验证。  
+核心结论：Vertiv 是 AI 数据中心“电力 + 热管理 + 预制化交付 + 服务”的关键基础设施供应商，不是 GPU/服务器公司。当前市场把它当作 AI capex 的物理层龙头之一：收入确认跟随 MW/rack 交付，订单能见度来自 Q4 2025 披露的 `$15.0B` backlog，但 Q1 2026 起公司未继续披露新的季度 backlog，因此 2026-2027 的超额收益要靠 backlog 转收入、产能扩张、液冷/电力新产品毛利和大客户继续下单来验证。
+
+## 1. 公司整体业务、产业链定位与投资人认知
+
+### 1.1 公司做什么
+
+Vertiv 的业务是给数据中心、通信网络和商业/工业关键设施提供连续运行所需的物理基础设施。2025 年年报中，公司产品与服务覆盖：
+
+| 层级 | Vertiv 主要产品/品牌 | AI 数据中心相关性 |
+|---|---|---|
+| Critical Power / 电力 | Liebert UPS、AC/DC power management、低/中压 switchgear、busbar、PowerBar、rack PDU/Geist、PowerDirect 50V DC、800VDC portfolio、EnergyCore BESS | 高。AI rack 上电、ride-through、并网、削峰、功率质量和 commissioning 的核心设备 |
+| Thermal Management / 热管理 | Liebert 冷却、CoolChip CDU 121/600/2300、direct-to-chip 液冷、rear-door/sidecar、heat rejection、Energy Labs、ThermoKey（拟收购） | 高。GB200/GB300/Rubin/MI400 类 100kW+ rack 的交付前提 |
+| Integrated Solutions / 预制化与白区 | OneCore、360AI reference designs、prefab modular、e-house/skid、racks/cabinets、Great Lakes、BMarko | 高。把 power/cooling/rack/security/control 做成可复制 MW block |
+| Services / 软件与服务 | Vertiv Services、Electrical Reliability Services、PurgeRite fluid management、Environet/monitoring、remote monitoring、acceptance testing、consulting、spares | 高且更偏长期。AI 液冷和电力系统需要调试、冲洗、监控、维护和 SLA |
+| 低增长/非核心 | 单相小 UPS、传统 telecom DC power、普通 KVM/Avocent、低密商业/工业、低密风冷改造、基础机柜/basic PDU | 与 AI 主题弱；本报告只在收入底盘中考虑，不作为重点增长驱动 |
+
+2025 年收入按区域和产品/服务口径拆分如下：总收入 `$10.23B`，其中 Americas `$6.39B`/`62%`，Asia Pacific `$2.02B`/`20%`，EMEA `$1.82B`/`18%`；产品收入 `$8.21B`/`80%`，服务与备件 `$2.02B`/`20%`。2026Q1，产品收入 `$2.09B`、同比 `+29.8%`，服务与备件 `$0.56B`、同比 `+31.4%`，说明服务并不是慢业务，AI 液冷和电力系统运维正提高服务 attach。
+
+### 1.2 投资人眼中的 Vertiv
+
+市场把 Vertiv 当作 AI 数据中心 capex 的“卖铲子”公司，核心逻辑有四条：
+
+1. AI rack 从传统 `8-30kW/rack` 升到 GB200/GB300 的约 `120-155kW/rack`，2027 Rubin/MI400/Trainium3/TPU 可能推向 `180-300kW/rack`，长期讨论 `500kW-1MW`。这直接提高 UPS、PDU、busway、CDU、liquid-ready rack、BESS、monitoring 和 service 的单位价值。
+2. 电力和液冷是 2026-2028 数据中心交付硬瓶颈。项目内行业资料把电力接入/变压器/switchgear、rack-scale 服务器/液冷/现场验收、MEP/预制化列为 2026 年关键约束。
+3. Vertiv 同时有 power、thermal、rack、prefab、services，不只是单点部件商。客户买的是 time-to-power、time-to-revenue 和 uptime，而不是单个 UPS 或 CDU。
+4. 估值已经按高增长龙头定价。截至 2026-06-11，VRT 股价约 `$297.88`，市值约 `$116.8B`，TTM PE 约 `75x`，forward PE 约 `43-45x`，P/S 约 `10-11x`。这个估值要求公司在 2026-2027 持续把 backlog 高质量转为收入和现金流。
+
+### 1.3 最近 3 年重大业务变化、转型和收购
+
+| 时间 | 事件 | 战略含义 |
+|---|---|---|
+| 2023-2024 | 管理层强化执行、价格-成本、营运资本和数据中心导向；AI 数据中心需求开始进入订单与毛利 | 从传统 critical infrastructure 转为 AI 数据中心物理层高增长平台 |
+| 2024-2025 | 与 NVIDIA GB200/GB300 NVL72 参考设计绑定，推出 360AI、GB300 reference architecture、SimReady/Omniverse 相关资产 | 获得未来 2-3 代 AI compute 平台的 power/cooling 可见度；客户设计阶段进入 |
+| 2025-08 | 完成约 `$200M` 收购 Great Lakes Data Racks & Cabinets | 补白区 racks/cabinets、AI-ready rack enclosure 和集成能力 |
+| 2025-12 | 完成约 `$1.0B` 收购 PurgeRite | 补 specialized fluid management：液冷冲洗、流体洁净度、维护、commissioning，是液冷从设备到服务的关键拼图 |
+| 2026-02/03 | 获 Moody's `Baa3`、S&P `BBB-` 投资级；发行 `$2.1B` senior unsecured notes，设立 `$2.5B` revolver，偿还 term loan/ABL | 资产负债表升级，支持扩产和并购；融资成本和流动性优于中小冷却/电力公司 |
+| 2026-03 | 宣布收购 ThermoKey S.p.A. | 补 heat rejection / heat-exchange，强化 facility loop、dry cooler、air-cooled condenser、liquid cooling heat rejection |
+| 2026-04 | 收购 BMarko Structures | 补 custom-engineered structural fabrication、预制化 enclosure 和 AI factory block 交付能力 |
+| 2026 | Q1 指引上调，全年 sales guide 从 `$13.25-13.75B` 上修到 `$13.5-14.0B` | Q4 2025 订单爆发之后，Q1 开始验证 backlog 转收入与产能扩张 |
+
+### 1.4 产业链位置
+
+Vertiv 位于 AI 基础设施链条的工程能源层和系统硬件层：
+
+`AI GPU/ASIC 路线 -> rack power density -> 电力/UPS/PDU/busway/BESS -> liquid cooling/CDU/heat rejection -> prefab MW block -> commissioning/service/DCIM -> data center revenue recognition`
+
+它不直接拿 GPU、HBM、光模块或服务器整机的最大 BOM，但决定很多 AI rack 是否能按期上电、散热、验收和稳定运行。对客户而言，Vertiv 的价值来自四种短缺：电力短缺、液冷现场能力短缺、预制化/MEP 交付短缺、运维服务短缺。
+
+## 2. 当前估值、收入增速、利润率和资产负债表
+
+### 2.1 行情与估值快照
+
+| 指标 | 数值 | 日期/口径 | 备注 |
+|---|---:|---|---|
+| 股价 | `$297.88` | 2026-06-11，Google Finance / web finance 快照 | 日内区间约 `$283.40-298.66` |
+| 市值 | `$116.8B` | 2026-06-11，按行情快照 | Google Finance 同日显示约 `$114.4B`，因价格时点不同略有差异 |
+| TTM 收入 | `$10.843B` | 2025 FY + 2026Q1 - 2025Q1 | 官方披露复算 |
+| TTM 净利润 | `$1.558B` | 2025 FY + 2026Q1 - 2025Q1 | 官方/SEC XBRL 复算 |
+| TTM PE | `~75.0x` | 市值 / TTM 净利润 | 与 Google/StockAnalysis `~74-75x` 接近 |
+| Forward PE | `~43.7x` | StockAnalysis 2026-06-11 附近 | Yahoo 同期约 `45.45x`，口径为 NTM EPS |
+| P/S | `~10.3-10.8x` | StockAnalysis / 自算 | 自算用 `$116.8B / $10.843B = 10.77x` |
+| Forward P/S | `~7.6x` | StockAnalysis | 反映 2026 指引收入增速 |
+| 2026 指引收入 | `$13.5-14.0B` | Q1 2026 上调指引 | 中点 `$13.75B`，同比 FY2025 `+34%` |
+| 2026 organic growth | `29-31%` | Q1 2026 上调指引 | M&A 贡献约 `4%`，FX 贡献小 |
+| 最新季度毛利率 | `37.7%` | 2026Q1，SEC XBRL：收入 `$2.6495B`、成本 `$1.6498B` | 毛利 `$999.7M` |
+| TTM 毛利率 | `37.2%` | 2025 FY + 2026Q1 - 2025Q1 | FY2025 毛利率 `36.3%`，Q1 已改善 |
+| TTM 净利率 | `14.4%` | 自算 | 2026Q1 净利率 `14.7%` |
+| 2026 adj. operating margin 指引 | `22.8-23.8%` | Q1 2026 上调指引 | 中点 `23.3%`，同比 FY2025 `+290bps` |
+
+估值判断：VRT 已不是低估值工业股，而是高估值 AI 物理层龙头。估值能继续扩张的条件是：`$15B` backlog 的毛利不被大客户/固定价/关税侵蚀；Q2-Q4 2026 继续上修；2027 orders 不因 AI capex 纪律或数据中心并网延迟而下修。
+
+### 2.2 资产负债表健康度
+
+| 指标 | 2026Q1 | 2025YE | 判断 |
+|---|---:|---:|---|
+| 现金及等价物 | `$2.151B` | `$1.728B` | 现金充足，Q1 FCF 强 |
+| 应收账款 | `$3.149B` | `$3.109B` | 随订单和收入放大，需跟踪大客户付款周期 |
+| 存货 | `$1.835B` | `$1.457B` | 为 2026 backlog 转化和扩产做库存；若订单放缓会形成风险 |
+| 流动资产 | `$7.985B` | `$6.820B` | 流动性强 |
+| 流动负债 | `$5.343B` | `$4.407B` | deferred revenue 增加是客户预付款/合同负债信号 |
+| 当前递延收入 | `$2.462B` | `$1.815B` | 比 2025YE 增加 `$647M`，支持订单能见度 |
+| 长期债务 | `$2.922B` | `$2.913B` | 债务绝对值稳定 |
+| 总资产 | `$13.400B` | `$12.212B` | 并购与营运资产上升 |
+| 总负债 | `$9.155B` | `$8.271B` | 负债率高但可管理 |
+| 股东权益 | `$4.245B` | `$3.941B` | 盈利积累改善 |
+| 净杠杆 | `~0.2x` | `~0.5x` | 管理层披露，已非常低 |
+| Q1 经营现金流 / adj. FCF | `$767M / $653M` | Q1 2026 | FCF conversion >140%，但全年管理层目标约 90% |
+| 2026 adj. FCF 指引 | `$2.1-2.3B` | Q1 2026 指引 | 足以覆盖扩产 capex、服务并购和债务成本 |
+
+财务健康度：强。风险不是偿债，而是高增长期的交付和营运资本。Q1 2026 存货增加、capex 提升、deferred revenue 大增，都是扩产和 backlog 转收入的表现；若 2026H2 订单放缓，存货与固定产能会放大利润波动。
+
+## 3. 最新和最近 4 次财报：五个季度横向表
+
+说明：公司从 Q1 2026 起没有披露新的具体季度 backlog/order 数字；最新可核验 backlog 是 2025Q4 `$15.0B`。Q1 2026 的订单与交期判断使用指引上调、deferred revenue、产能扩张和行业资料推断。
+
+| 财报季度 | 收入 | 同比/有机 | 地区收入结构 | 产品/服务 | 调整后经营利润率 | 净利润 | 订单/Backlog/Book-to-bill | AI 数据中心相关收入占比估算 |
+|---|---:|---|---|---|---:|---:|---|---|
+| 2026Q1 | `$2.650B` | 总收入 `+30.1%`；organic `+22.6%` | Americas `$1.814B`/`68.5%`，APAC `$0.514B`/`19.4%`，EMEA `$0.321B`/`12.1%` | 产品 `$2.091B`/`78.9%`，服务 `$0.558B`/`21.1%` | `20.8%`，同比 `+430bps` | `$390M` | 未披露新 backlog；Q4 2025 已披露 `$15.0B` backlog；Q1 指引上调，deferred revenue 升至 `$2.462B` | broad data center `75-85%`；AI/high-density 估算 `40-55%` |
+| 2025Q4 | `$2.880B` | 总收入 `+22.7%`；organic `+19%` | Americas `$1.886B`/`65.5%`，APAC `$0.492B`/`17.1%`，EMEA `$0.502B`/`17.4%` | 产品 `$2.309B`/`80.2%`，服务 `$0.571B`/`19.8%` | `23.2%`，同比 `+170bps` | `$446M`（FY 减前三季度推算） | organic orders `+252% YoY`、`+117% QoQ`；book-to-bill `~2.9x`；backlog `$15.0B`，同比 `+109%`、环比 `+57%` | broad data center `75-85%`；AI/high-density 估算 `45-60%`，订单端更高 |
+| 2025Q3 | `$2.676B` | 总收入 `+29%`；organic `+28%` | Americas `$1.712B`/`64.0%`，APAC `$0.520B`/`19.4%`，EMEA `$0.444B`/`16.6%` | 产品/服务未在本表逐项披露；FY 结构显示产品约 80% | `22.3%`，同比 `+220bps` | `$399M` | organic orders `+60% YoY`、`+20% QoQ`；book-to-bill `~1.4x`；backlog `$9.5B` | broad data center `70-82%`；AI/high-density 估算 `35-50%` |
+| 2025Q2 | `$2.638B` | 总收入 `+35%` | Americas `$1.602B`/`60.7%`，APAC `$0.560B`/`21.2%`，EMEA `$0.476B`/`18.0%` | 产品/服务未在本表逐项披露；FY 结构显示产品约 80% | `18.5%`，同比 `-110bps`，受关税/供应链转换/执行效率影响 | `$324M` | organic orders `+15% YoY`、`+11% QoQ`；book-to-bill `~1.2x`；backlog `$8.5B` | broad data center `68-80%`；AI/high-density 估算 `30-45%` |
+| 2025Q1 | `$2.036B` | 总收入 `+24%`；organic `+25%` | Americas `$1.185B`/`58.2%`，APAC `$0.447B`/`22.0%`，EMEA `$0.404B`/`19.8%` | 产品/服务未在本表逐项披露；FY 结构显示产品约 80% | `16.5%`，同比 `+130bps` | `$165M` | orders `+13% YoY`、`+21% QoQ`；book-to-bill `~1.4x`；backlog `$7.9B`，较 2024YE `+10%` | broad data center `65-78%`；AI/high-density 估算 `25-40%` |
+
+五季核心变化：
+
+- 收入从 2025Q1 `$2.04B` 到 2026Q1 `$2.65B`，TTM 收入 `$10.84B`；增长主要由 Americas 数据中心驱动。
+- Americas 占比从 2025Q1 `58.2%` 升到 2026Q1 `68.5%`，这是 VRT 2025-2026 最重要的 mix 变化。
+- 调整后经营利润率从 2025Q1 `16.5%` 提升到 2025Q4 `23.2%`，2026Q1 仍有 `20.8%`；Q2 2025 是关税与执行效率低点。
+- backlog 从 2025Q1 `$7.9B`、Q3 `$9.5B` 到 Q4 `$15.0B`，Q4 是订单拐点。Q1 2026 不披露新 backlog，不能把 `$15B` 机械顺延为 Q1 backlog，但 Q1 deferred revenue 上升和全年指引上调支持需求未明显走弱。
+- AI 数据中心收入占比没有官方披露，本报告用产品/地区/订单和行业资料估算。更严谨的口径是：当前确认收入中 AI high-density 还不是 100%，但新增订单和 backlog 的 AI 暴露显著高于历史收入。
+
+## 4. 2026 最新指引、收入占比和重点业务
+
+### 4.1 2026 指引
+
+| 项目 | 2026 指引 | 中点 | 同比 FY2025 |
+|---|---:|---:|---:|
+| Net sales | `$13.5-14.0B` | `$13.75B` | `+34%` |
+| Organic net sales growth | `29-31%` | `30%` | 大幅高于传统工业设备 |
+| Adjusted operating profit | `$3.14-3.26B` | `$3.20B` | `+53%` |
+| Adjusted operating margin | `22.8-23.8%` | `23.3%` | `+290bps` |
+| Adjusted diluted EPS | `$6.30-6.40` | `$6.35` | `+51%` |
+| Adjusted FCF | `$2.1-2.3B` | `$2.2B` | `+17%` |
+| Q2 2026 sales guide | `$3.25-3.45B` | `$3.35B` | `+27%` YoY |
+| Q2 2026 adjusted operating margin guide | `20.7-21.7%` | `21.2%` | `+270bps` YoY |
+
+公司最侧重的业务不是单一产品，而是 `converged physical infrastructure`：把电力、冷却、机柜、预制化、控制和服务做成标准化 AI capacity block。2026 的收入增速最突出来自 Americas、数据中心、AI high-density power/thermal、服务和收购补强的白区/液冷服务。
+
+### 4.2 2026 收入占比：官方披露与本报告估算
+
+| 口径 | 2026Q1 已披露/估算占比 | 增长 | 说明 |
+|---|---:|---:|---|
+| Americas | `68.5%` | 总收入 `+53.1%`，organic `+44.3%` | 最大增长引擎，AI/hyperscale/colo 暴露最高 |
+| APAC | `19.4%` | 总收入 `+14.9%`，organic `+12.0%` | 印度和亚洲其他地区强，中国较弱 |
+| EMEA | `12.1%` | 总收入 `-20.3%`，organic `-29.4%` | 2026H2 管理层预期修复，但当前拖累 |
+| Products | `78.9%` | `+29.8%` | UPS、switchgear、busway、PDU、cooling、CDU、racks、modular |
+| Services & spares | `21.1%` | `+31.4%` | 调试、维护、流体管理、监控、备件，AI 液冷后服务价值上升 |
+| Broad data center 暴露 | 估算 `75-85%` | 高于公司平均 | 官方不披露；基于产品、客户和地区增速推断 |
+| AI/high-density data center 暴露 | 2026Q1 确认收入估算 `40-55%`；新增订单/新增 backlog 估算 `55-70%` | 显著高于公司平均 | 官方不披露；Q4 orders 暴增、GB200/GB300 reference design、liquid cooling 和 power 订单支持该判断 |
+
+### 4.3 产品和型号梳理：重点、跳过和不能漏的小产品
+
+| 产品/业务 | 对应产品/型号/能力 | 2026 重要性 | 是否重点 |
+|---|---|---|---|
+| 高功率 UPS / critical power | Liebert EXL S1 `250/300-1250kW`，Trinergy，APM/EXM 系列，旁路柜、STS、switchgear、busbar | AI hall 仍需要集中 UPS/电力保护；Liebert EXL S1 支持 Dynamic Online 最高约 `99%` 效率和动态电网支持 | 重点 |
+| Rack PDU / busway / rack power | Geist/PowerIT rack PDU，PowerBar/busbar，PowerDirect 50V DC，800VDC portfolio | GB200/GB300 约 `120-155kW/rack`，PDU/busway/50V/800VDC 进入验收门槛 | 重点 |
+| Liquid cooling / CDU | CoolChip CDU family `70-2300kW`，CoolChip CDU 121/600/2300，direct-to-chip、rear-door、liquid-to-liquid/air | GB200/GB300/Rubin/MI400 的主线；CDU 121 可匹配单 GB300 NVL72 rack 约 `121kW` 热负载，2300 提供 `2.3MW` 级能力 | 重点 |
+| Fluid management service | PurgeRite：flush、fill、filter、fluid quality、液冷 commissioning | 液冷从设备销售转服务和 recurring revenue；泄漏/污染/气泡/水质是 2026 真实瓶颈 | 重点，小而关键 |
+| Heat rejection / heat exchange | ThermoKey dry cooler、air-cooled condenser、heat exchanger（拟收购） | facility warm-water loop 和高密散热的设施侧瓶颈；不是冷板但决定是否能把热排出去 | 重点，小而关键 |
+| Prefab / OneCore / BMarko | Vertiv OneCore `10MW-250MW+`，本地资料提到 `12.5MW/50MW/125MW/250MW` block；BMarko 结构预制化 | 客户用 MW block 缩短工期、FAT、现场安装；大项目愿为 schedule 付费 | 重点 |
+| Racks/cabinets | Great Lakes racks/cabinets，liquid-ready rack，white space integration | 单 rack 价值从传统几千美元升到高密 `4-18万美元`，若含 RDHx/智能锁/传感可更高 | 重点 |
+| EnergyCore BESS / grid interactive | EnergyCore Grid BESS，CPower VPP 合作 | BESS 从备电转为接入加速、VPP、负载平滑和并网工具；2026 小但 2027 弹性大 | 潜力小业务 |
+| DCIM/monitoring/control | Environet、Unify、远程监控、DCIM/EPMS/BMS 接口 | 当前收入占比不大，但绑定 power/cooling/service 后毛利和切换成本高 | 潜力小业务 |
+| 传统 telecom DC power | NetSure、通信网络电源 | 稳定但非 AI 高增长主线 | 跳过 |
+| 普通 commercial/industrial | 低密 UPS、普通工业 cooling | 增长慢，与 AI 相关弱 | 跳过 |
+| KVM/IT management | Avocent、KVM、serial console | 必要但不是 AI capex 主要矛盾 | 跳过 |
+| 低密风冷/普通机柜/basic PDU | 传统 room cooling、basic PDU、普通 rack | 有底盘收入但低毛利、易竞争 | 跳过 |
+
+## 5. 高增长/关键产品当前收入贡献、增速、供需和定价权
+
+下表为本报告估算，不是公司官方分部披露。基准以 2026 指引中点 `$13.75B` 为锚，结合 2025 产品/服务结构、Q1 地区增速、收购、产品资料和项目内行业单位价值量做分配。
+
+| 关键产品/业务 | 2026E 收入贡献估算 | 当前收入增速 | AI 基建重要性 | 时间紧急性 | 供需紧张程度 | 垄断/溢价能力 |
+|---|---:|---:|---|---|---|---|
+| Critical power：UPS/switchgear/busway/rack PDU/50V | `$5.8-6.6B` | `+25-40%` | 最高。没有 power path 无法上电/验收 | 最高，2026 已在订单中兑现 | 高。switchgear、UPS、busway、PDU、工程交付均紧 | 中高。不是垄断，Schneider/Eaton/ABB/Siemens/Legrand 强；但客户认证和服务网络给 Vertiv 溢价 |
+| Thermal/liquid cooling：CDU、D2C、heat rejection、facility cooling | `$3.5-4.4B` | `+35-55%`；液冷子项更高 | 最高。100kW+ rack 的交付前提 | 最高，GB200/GB300/Rubin 绑定 | 高。CDU、泵阀、快接、现场冲洗、heat rejection 是瓶颈 | 中高。Vertiv/Schneider/Eaton/nVent/Modine/CoolIT 竞争，但 end-to-end 与 NVIDIA reference design 有溢价 |
+| Integrated solutions：OneCore、prefab、racks/cabinets、BMarko/Great Lakes | `$1.2-1.8B` | `+35-65%` | 高。客户把 AI capacity 变成可复制 MW block | 高，time-to-power 直接影响 GPU 折旧和云收入 | 高。工厂预制产能、FAT、运输、现场接口紧 | 中。普通 container 易竞争，AI liquid-ready MW block 有差异化 |
+| Services/fluid/DCIM/commissioning | `$2.3-2.7B` | `+20-35%`；PurgeRite/液冷服务更高 | 高。液冷和电力系统不是一次性交付，长期服务决定 uptime | 高，commissioning 是收入确认瓶颈 | 中高。OT+IT+液冷服务人才短缺 | 高。安装基数、备件、SLA、流体数据和客户现场数据带来粘性 |
+| EnergyCore BESS / grid-interactive / VPP | 当前确认收入估算 `$0.2-0.5B`，多嵌在 power 项目内 | `+40-100%` 小基数 | 中高，尤其电网约束区域 | 2026 design-in，2027 更紧急 | 中高。BESS cell 不缺，但数据中心认证、PCS/EMS、utility 接口紧 | 中。Tesla/Fluence/Schneider/Eaton/ABB 竞争强，Vertiv 优势在 data center power integration |
+| 800VDC / HVDC sidecar / future high-density power | 当前收入 `<$0.2B`，更多是 design-in | 小基数高增 | 2027+ 关键，不是 2026 主收入 | 中高，2026H2 RFP/认证窗口 | 当前是认证瓶颈，不是量产瓶颈 | 中高潜力。若进入 NVIDIA/Rubin Ultra/Kyber 或 hyperscaler 标准，溢价高 |
+
+## 6. 一年后产品收入贡献三情景
+
+时间口径：未来一年指 2026-06 至 2027-06 的滚动收入/订单能力，不等同 FY2027 全年。收入预测按公司层面从 2026 指引 `$13.75B` 出发，叠加 Q4 2025 backlog、产能扩张和行业需求。
+
+| 产品/业务 | 基准情景：一年后收入贡献 | 乐观情景：一年后收入贡献 | 极度乐观情景：一年后收入贡献 | 重要性/时间紧急性变化 | 供需与定价判断 |
+|---|---:|---:|---:|---|---|
+| Critical power | `$7.0-7.8B`，同比 `+20-30%` | `$8.0-9.0B`，同比 `+35-45%` | `$9.5-10.8B`，同比 `+55%+` | 仍是最高；电力接入和 rack power 继续是瓶颈 | 基准仍紧；乐观出现产能 reservation；极度情景下 UPS/busway/rPDU/50V 电力链加价和预付款增多 |
+| Thermal/liquid cooling | `$4.8-5.8B`，同比 `+30-45%` | `$6.0-7.5B`，同比 `+55-75%` | `$8.0-10.0B`，同比 `+90%+` | 2027 Rubin/MI400 把 180-250kW rack 推为常态 | CDU、fluid service、heat rejection 供不应求；极度情景下 liquid cooling/service 毛利上修 |
+| Integrated prefab/racks/OneCore | `$1.8-2.4B`，同比 `+30-45%` | `$2.6-3.4B`，同比 `+60-90%` | `$4.0-5.5B`，同比 `+120%+` | AI capacity block 从产品发布进入客户 RFP | 工厂预制能力和 BMarko/Great Lakes 整合是瓶颈；极度情景下客户为工期付 premium |
+| Services/fluid/DCIM | `$3.0-3.4B`，同比 `+20-30%` | `$3.6-4.2B`，同比 `+35-55%` | `$4.8-6.0B`，同比 `+75%+` | installed base 扩大后服务更关键 | PurgeRite、commissioning、monitoring、spares 的高毛利和粘性上升 |
+| BESS/VPP/grid interactive | `$0.5-0.9B` | `$1.0-1.8B` | `$2.5-4.0B` | 若 utility 接受 flexible load/BESS 作为接入工具，紧急性上升 | 项目制，收入确认取决于客户融资、许可和 interconnection |
+| 800VDC/HVDC | `$0.3-0.8B` | `$1.0-2.0B` | `$3.0-5.0B` | 2027 是认证/首批规模收入窗口 | 极度情景需要 Rubin Ultra/Kyber/1MW rack 或 hyperscaler 标准提前落地 |
+
+公司总收入情景：
+
+| 情景 | 2026-06 至 2027-06 运行收入能力 | 对应增长 | 关键前提 |
+|---|---:|---:|---|
+| 基准 | `$16-18B` 年化能力 | 比 2026 指引中点 `+16-31%` | `$15B` backlog 平稳转收入，Q4 2025 超大订单不取消，capacity expansion 按计划 |
+| 乐观 | `$19-21B` 年化能力 | `+38-53%` | 2026H2 新订单仍强，liquid cooling/power capex 继续上修，EMEA 修复 |
+| 极度乐观 | `$23-26B` 年化能力 | `+67-89%` | Rubin/MI400/Trainium3/TPU/GB300 同时拉货，客户用预付款锁 Vertiv 产能，BESS/OneCore/800VDC 提前放量 |
+
+## 7. BOM、单位价值量、价格传导和当前产能能力
+
+### 7.1 每 MW 价值量
+
+项目内 MEP 与预制化资料给出的 AI data center facility-heavy CapEx 为 `$10-22M/MW`，all-in CapEx 约 `$38-65M/MW`。Vertiv 主要覆盖 facility-heavy 的电气、机械、控制、预制化和服务，不覆盖 GPU/服务器本体。
+
+| 每 IT MW 项目 | 行业成本区间 | Vertiv 可触达内容 | Vertiv 可触达收入估算 |
+|---|---:|---|---:|
+| 电气：UPS、MV/LV、busway、PDU、switchgear、BESS interface | `$4.0-9.0M/MW` | UPS、switchgear、busway、rPDU、50V/800VDC、EnergyCore、监控 | `$1.0-3.5M/MW`，若成套供货可更高 |
+| 机械：chiller/dry cooler、DLC loop、CDU、泵阀、水处理 | `$2.5-6.0M/MW` | CDU、heat rejection、facility cooling、PurgeRite fluid service | `$0.8-2.5M/MW` |
+| 控制/消防/漏液/安全/commissioning | `$1.0-2.5M/MW` | DCIM/monitoring、leak detection、服务、acceptance testing | `$0.2-0.8M/MW` |
+| 预制化 premium / OneCore / e-house / skid | 增量 `3-15%` 或嵌入上述项目 | OneCore、BMarko、Great Lakes、factory FAT | `$0.3-1.5M/MW` |
+| 合计 Vertiv addressable | 不应与行业成本简单相加 | 取决于客户是否选 Vertiv 端到端 | 常见 `$2-6M/MW`；端到端/高密/紧缺项目可到 `$6-10M/MW+` |
+
+### 7.2 每 rack / 每 GPU / 每 optical port 内容量
+
+| 单位 | 真实内容量估算 | Vertiv 直接/间接暴露 | 说明 |
+|---|---:|---|---|
+| 传统 enterprise rack `5-20kW` | Vertiv 可触达 `$2k-15k/rack` | PDU、小 UPS、基础 cooling、KVM/monitoring | 不是重点 |
+| 高密风冷/混合 rack `20-60kW` | Vertiv 可触达 `$20k-120k/rack` | rPDU、busway tap、cooling、containment、monitoring | enterprise AI / retrofit |
+| GB200/GB300 级 `100-150kW/rack` | Vertiv 可触达 `$150k-700k/rack` | UPS/PDU/busway 分摊、CDU、liquid-ready rack、服务、控制；若含 facility loop 与 heat rejection 分摊可更高 | 行业资料显示 D2C 液冷单 rack 附加值约 `$80k-300k`，含 facility loop 可 `$200k-800k/rack` |
+| Rubin/MI400/Helios `180-250kW/rack` | Vertiv 可触达 `$300k-1.2M/rack` | 更高容量 CDU、800V design-in、heat rejection、预制化、服务 | 2027 主弹性 |
+| 每 GPU：NVL72 72 GPU rack | Vertiv 可触达约 `$2k-15k/GPU` | 由 rack 级 power/cooling/facility 分摊 | 低口径只分摊 rack CDU/液冷；高口径含 UPS/配电/heat rejection/服务 |
+| 每 optical port | 直接 Vertiv 内容量 `0` | 间接 `$10-80/port`，仅按网络机柜供电/冷却/机柜分摊 | Vertiv 不卖光模块/光芯片；不要把 optical port revenue 误算给 Vertiv |
+
+### 7.3 BOM 拆分与价格传导链
+
+| 产品链 | BOM/成本拆分 | 价格传导机制 |
+|---|---|---|
+| 模块化 UPS / Liebert EXL S1 | 功率电子/整流逆变 `30-40%`；电池柜 `20-35%`；开关/旁路/铜/母线 `10-20%`；控制/监控 `5-10%`；机柜/散热 `5-10%`；安装调试 `10-20%` | backlog 固定价会承压；铜/电子元件/关税通过 price-cost、reservation fee、expedite fee 部分转嫁 |
+| Rack PDU / busway / power distribution | copper/aluminum busbar、breakers、connectors、metering、embedded firmware、enclosure、测试认证 | 高密 SKU、客户指定件、lead time 和 commissioning 数据包提高溢价；basic PDU 容易降价 |
+| CDU / liquid cooling | 泵/换热器/阀/VFD/控制器 `20-35%`；冷板/流体件/金属件 `20-35%`；传感/泄漏/过滤 `5-15%`；机柜/结构 `10-20%`；现场调试/服务 `10-20%` | 以 time-to-power、泄漏风险、认证、服务 SLA 定价，不只是材料成本加成 |
+| Fluid management | 人工/设备、冲洗过滤、冷却液、传感测试、维护合同 | 宕机风险极高，客户愿为洁净度、泄漏率、SLA、响应速度付费；PurgeRite 提高服务毛利 |
+| BESS / EnergyCore / VPP | battery rack `35-50%`；PCS/inverter `12-20%`；EMS/VPP `5-10%`；transformer/switchgear `8-15%`；fire/HVAC/enclosure `8-15%`；EPC `10-20%` | 项目 IRR、并网提前时间、电网服务收益和 ITC 决定价格；软件/VPP 毛利高 |
+| OneCore / prefab MW block | e-house/enclosure、UPS/switchgear/busway、CDU/loop、controls、FAT、运输、现场连接 | 通过节省工期、降低现场返工、统一责任边界定价；大客户可压价但愿意锁定合格供应商 |
+
+### 7.4 当前产能与被供应链采纳程度
+
+| 项目 | 当前能力/采纳 | 认证/导入状态 |
+|---|---|---|
+| 公司总交付能力 | 2026 sales guide `$13.5-14.0B`；Q1 2026 capex `$112.6M`，全年 capex 从历史 `2-3%` sales 提升到 `3-4%` sales | backlog 与 deferred revenue 支撑收入能见度；产能瓶颈更多是特定 SKU、服务人员和预制工厂 |
+| Power/UPS/PDU | Liebert、Geist、E+I/Anord Mardix 等长期在数据中心使用 | 大型数据中心客户认证成熟；新变量是 50V/800VDC 和 high-density rack power |
+| Liquid cooling/CDU | CoolChip CDU 121/600/2300；GB300/NVIDIA reference architecture；PurgeRite 补服务 | direct-to-chip、CDU、液冷服务进入规模导入；OCP/云厂互操作和泄漏率仍需持续验证 |
+| OneCore/prefab | OneCore 面向 `10MW-250MW+`，本地资料提到 `12.5MW` 标准 block 路线；BMarko 增强 structural prefab | 2026 是客户导入和工厂扩产期；若进入 hyperscaler 标准 RFP，会快速放大 |
+| EnergyCore BESS/CPower | EnergyCore Grid + CPower VPP 合作，目标是 grid-interactive data centers | 2026 是项目功能和 utility 接口验证期，不是所有数据中心标配 |
+| 800VDC | 公司披露 800VDC power infrastructure portfolio 支持 NVIDIA Kyber/Rubin Ultra，部分产品目标 2026H2 可用 | 2026 主要看 reference design、UL/IEC、安全 SOP、客户 pilot；大规模收入更偏 2027-2028 |
+
+## 8. 一年后产能、认证和采纳三情景
+
+| 产品/业务 | 基准：2027-06 | 乐观：2027-06 | 极度乐观：2027-06 |
+|---|---|---|---|
+| 公司总收入/产能 run-rate | `$16-18B` 年化；capex 和并购整合支持 backlog 转收入 | `$19-21B` 年化；重点 SKU 排产充足，EMEA 修复 | `$23-26B` 年化；客户预付款锁产能，power/thermal/prefab 同步扩产 |
+| UPS/PDU/busway/critical power | 产能可覆盖 `$7-8B` 年化收入；客户认证成熟 | `$8-9B`，高密 SKU 和 switchgear/busway 继续紧 | `$10B+`，大客户用 reservation/expedite fee 锁关键电力链 |
+| Liquid cooling/CDU/fluid | `$4.8-5.8B`；CoolChip + PurgeRite 服务 attach 提升 | `$6-7.5B`；GB300/Rubin 项目将 CDU、冲洗、过滤写入标准包 | `$8-10B`；CDU 和服务成为最短板，毛利上修 |
+| OneCore/prefab/racks | `$1.8-2.4B`；BMarko/Great Lakes 整合，更多 RFP | `$2.6-3.4B`；12.5/50MW block 标准化 | `$4-5.5B`；1GW campus 将 Vertiv block 写入批量模板 |
+| BESS/VPP | `$0.5-0.9B`，项目制 | `$1.0-1.8B`，utility 接受 BESS/flexible load | `$2.5-4.0B`，BESS 变成接入加速器和电网服务标准项 |
+| 800VDC/HVDC | `$0.3-0.8B`，部分 pilot 转小批量 | `$1-2B`，Rubin/MI400 新建 hall 提前采用 | `$3-5B`，1MW rack/800VDC 标准提前落地 |
+
+## 9. 基于订单积压和供给的未来一年业务增速预测
+
+### 9.1 已披露订单事实
+
+- 2025Q1 backlog `$7.9B`，book-to-bill `~1.4x`。
+- 2025Q2 backlog `$8.5B`，book-to-bill `~1.2x`。
+- 2025Q3 backlog `$9.5B`，book-to-bill `~1.4x`。
+- 2025Q4 organic orders `+252% YoY`、`+117% QoQ`，book-to-bill `~2.9x`，backlog `$15.0B`，同比 `+109%`。
+- 2026Q1 未披露新的 backlog/order 数字，但 sales guide 上调到 `$13.5-14.0B`，adjusted operating profit guide 上调到 `$3.14-3.26B`，deferred revenue 升到 `$2.462B`，说明 Q4 大单并未在 Q1 出现明显撤单信号。
+
+### 9.2 交期、取消率和渠道验证推断
+
+| 维度 | 判断 |
+|---|---|
+| Backlog 覆盖率 | `$15.0B` backlog 相当于 2026 指引中点 `$13.75B` 的 `1.09x`，但 backlog 有多年交付，不等同当年收入 |
+| 订单质量 | Q4 订单由 Americas、hyperscale/colo、AI infrastructure 驱动；产品与区域广泛，但大客户集中度风险上升 |
+| Lead time | 电力链、switchgear、UPS、busway、CDU、液冷冲洗、预制模块均有长交期；行业资料显示电网 interconnection 可达 24/36/48+ 月，关键电力设备和 MEP 是项目节奏瓶颈 |
+| 取消率 | 公司未披露取消率；本报告估算 2026 AI/hyperscale 已锁定项目取消率低于普通工业订单，基准 `3-7%`，乐观 `<3%`，压力情景 `8-15%` |
+| backlog 转收入风险 | 不是需求不足，而是产能、field service、客户 site readiness、并网、液冷验收、固定价合同毛利 |
+
+### 9.3 未来一年业务增速
+
+| 情景 | 收入增速预测 | 订单/供给假设 | 利润率假设 | 风险 |
+|---|---:|---|---|---|
+| 基准 | 未来一年收入 `+25-32%`，年化能力 `$16-18B` | Q4 2025 backlog 稳步转收入；2026 orders YoY 正增长但回归正常；产能扩张按计划 | adj. operating margin `23-24%`，FCF conversion `80-95%` | Q1 起不披露 backlog，外部验证难度上升；EMEA 修复低于预期 |
+| 乐观 | `+35-45%`，年化能力 `$19-21B` | 2026H2 继续出现大客户 multi-MW / multi-GW power+cooling 订单；liquid cooling attach 超预期 | margin `24-26%`，services/liquid cooling mix 改善 | 供应商和现场服务跟不上，导致收入递延 |
+| 极度乐观 | `+50-65%+`，年化能力 `$23-26B` | GB300/Rubin/MI400/Trainium3/TPU 同时拉货；客户预付款锁 Vertiv power/thermal/prefab 产能；BESS/800VDC 提前 | margin `26%+`，但工作资本和 capex 压力上升 | 市场已高估，任何大客户 capex 延期会引发估值压缩 |
+
+## 10. 竞争格局、替代方案和客户切换成本
+
+### 10.1 主要竞争对手
+
+| 层级 | 主要竞争对手 | Vertiv 相对位置 |
+|---|---|---|
+| 端到端 critical infrastructure | Schneider Electric、Eaton、ABB、Siemens、Legrand、nVent、Rittal、Delta、Huawei Digital Power | Vertiv 在 power + thermal + service + data center focus 上很强；Schneider/Eaton/ABB/Siemens 在电气生态和软件也强 |
+| UPS / power | Schneider/APC、Eaton、ABB、Socomec、Riello、Huawei、Delta、Mitsubishi、Kohler | 头部之一，数据中心服务网络和 Liebert 品牌强；不是垄断 |
+| Rack PDU / busway | Legrand/Raritan/Server Technology/Starline、Schneider、Eaton/Tripp Lite、nVent、Panduit、Rittal、Delta | Vertiv/Geist/E+I/Anord Mardix 有组合优势；Legrand/Starline 在 busway/rPDU 很强 |
+| Liquid cooling/CDU | Schneider/Motivair、Eaton/Boyd、nVent、Modine/Airedale、CoolIT/Ecolab、Delta、STULZ、Rittal、Danfoss、Parker、Submer、LiquidStack | Vertiv 是系统平台商；冷板/UQD 关键小件不一定由 Vertiv 独占，需要生态合作 |
+| Heat rejection/HVAC | JCI/York、Carrier、Trane、Daikin、Modine、STULZ、Munters、EVAPCO、Alfa Laval | ThermoKey 补强后更完整，但传统 HVAC 巨头仍强 |
+| Prefab/MEP | Schneider、ABB、Siemens、Rittal、Flex、Delta、PCX、TAS Energy、Compass/Aligned 自建，EPC/MEP 承包商 | Vertiv OneCore + BMarko 是差异化方向；项目执行和工厂产能决定竞争力 |
+| DCIM/controls | Schneider EcoStruxure/ETAP/AVEVA、Eaton Brightlayer、Siemens、ABB Ability、Honeywell/Johnson Controls、Sunbird、Nlyte | Vertiv 硬件 attached software 有优势，但 hyperscaler 自研会限制外部 DCIM 上限 |
+
+### 10.2 新技术是否主流
+
+| 技术/产品 | 是否主流 | 对 Vertiv 的意义 |
+|---|---|---|
+| Single-phase direct-to-chip + CDU + warm-water loop | 2026-2027 主流 | Vertiv 最核心受益方向 |
+| 48/50V ORv3/HPR rack power | 2026 主流 | PowerDirect、PDU、busway、UPS 与 rack power 协同 |
+| 800VDC / +-400V sidecar | 2026 design-in，2027-2028 有望放量 | 高弹性但不能提前全额收入化 |
+| BESS/VPP/grid-interactive data center | 2026 项目化，2027 可加速 | 若 utility 接受，EnergyCore + CPower 打开新收入池 |
+| Two-phase liquid cooling / immersion | 2026 非主流，2027+ 高端试点 | 对 Vertiv 是机会也是替代风险；若客户转向专门两相/浸没厂商，传统 CDU 受挤压 |
+| Hyperscaler 自研 DCIM/电力/冷却控制 | 已存在 | 外部供应商必须卖硬件绑定、服务、接口和认证，而不是纯软件 |
+
+### 10.3 替代风险
+
+1. **客户多供应商化。** Hyperscaler 不会让 Vertiv 单一垄断 power/cooling。Schneider、Eaton、ABB、Legrand、nVent、Modine、CoolIT、Delta 都会分份额。
+2. **OCP 标准化压价。** UQD、Cold Plate Base Spec、ORv3/HPR、800VDC 若快速标准化，普通硬件毛利会被压缩；Vertiv 需要靠系统集成、服务和可靠性保留溢价。
+3. **客户自研或 ODM 内化。** Google/Microsoft/AWS/Meta 有自有设施控制和 rack design 能力，可能把部分 DCIM、power management、cooling optimization 内化。
+4. **AI capex 周期。** 如果 2026H2 云厂 capex 下修、GPU 利用率不及预期、NeoCloud 融资收紧，VRT 高估值会先压缩。
+5. **并网/许可导致收入递延。** 客户有 GPU/订单但 site power 不 ready，Vertiv 设备可能延后发货或 revenue recognition。
+6. **固定价合同和关税。** Q2 2025 已显示关税、供应链迁移和执行效率会压 margin；大 backlog 如果价格条款不好，会成为毛利风险。
+
+### 10.4 客户切换成本
+
+切换成本高，但不是不可替代。
+
+| 环节 | 切换成本 | 原因 |
+|---|---|---|
+| UPS/switchgear/busway | 高 | 认证、保护协调、维护、备件、现场服务、故障责任 |
+| Liquid cooling/CDU/fluid | 高 | 泄漏风险、压降/流量、液体洁净度、commissioning、SLA |
+| Rack PDU/机柜 | 中 | 标准化较强，但高密 rack、盲插、液冷接口和安全认证提高切换成本 |
+| DCIM/monitoring/service | 高 | 资产模型、告警、工单、BMS/EPMS/CMDB 集成和历史运行数据 |
+| Prefab MW block | 高 | 标准设计、工厂 FAT、运输接口、现场施工流程和融资模型绑定 |
+
+## 11. 投资判断框架：看什么，不看什么
+
+### 11.1 最重要的 8 个跟踪指标
+
+1. Q2/Q3 2026 是否恢复披露或间接验证 orders/backlog；若不披露，看 deferred revenue、capex、库存、客户预付款和 guide。
+2. 2026 年收入指引是否继续上修，尤其 Q3/Q4 是否超过 `$14B` 年收入中点。
+3. Americas organic growth 是否维持高位，EMEA 是否在 2026H2 修复。
+4. Adjusted operating margin 是否稳定在 `23%+`，price-cost 是否继续正向。
+5. Liquid cooling/CDU、PurgeRite 服务、ThermoKey heat rejection 是否进入收入和毛利。
+6. OneCore/预制化 MW block 是否有公开大客户、标准 block 和产能 reservation。
+7. 800VDC 是否出现具体客户试点、UL/IEC、安全 SOP、2027 RFP。
+8. 云厂和 NeoCloud capex 是否继续强，尤其 Microsoft/Google/Amazon/Meta/Oracle/CoreWeave 的 AI data center 承诺和实际上电。
+
+### 11.2 我对 VRT 的基准判断
+
+Vertiv 当前基本面很强：收入增速、利润率、现金流、backlog 和资产负债表同时改善；AI 数据中心从主题变成订单，Q4 2025 `$15B` backlog 是真实拐点。公司最有价值的地方不是“卖液冷概念”，而是进入客户 power/cooling/rack/service 的责任链，帮助客户把 AI capacity 转成可上电、可验收、可运维的 MW。
+
+但股票风险也很清楚：估值已经反映非常强的 2026-2027 执行，且 Q1 2026 后缺少新的公开 backlog 数字，市场会更依赖指引和管理层描述。如果 2026H2 大客户 capex、data center interconnection、liquid cooling acceptance 或 margin 任一环节出问题，VRT 的估值压缩会比普通工业股更剧烈。
+
+## 12. 资料来源
+
+### 12.1 项目内行业资料
+
+| 本地资料 | 使用位置 |
+|---|---|
+| `行业调研/AI园区电力_机电_冷却/行业调研_数据中心UPS与电池储能_2026-06-11.md` | UPS、BESS、BBU、800VDC、每 MW 和 BOM 口径 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_数据中心直液冷系统_2026-06-10.md` | CDU、冷板、UQD、液冷 rack、毛利和供给瓶颈 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_数据中心低压配电、PDU与母线槽_2026-06-10.md` | PDU、busway、PowerDirect、800VDC、竞争格局 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_机柜级供电与服务器电源架构_2026-06-10.md` | 50V ORv3/HPR、power shelf、BBU、rack power 单位价值 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_机柜、围护结构与物理安防_2026-06-11.md` | 高密机柜、液冷 ready rack、智能锁/传感、每 rack 价值 |
+| `行业调研/AI园区电力_机电_冷却/行业调研_数据中心土建、MEP与预制化交付_2026-06-10.md` | facility-heavy CapEx、MEP、预制化、OneCore/MW block |
+| `行业调研/产业背景/AI产业链瓶颈与反证指标总表_2026-06-10.md` | 电力、液冷、MEP、AI demand 的硬瓶颈和反证指标 |
+| `行业调研/产业背景/AI产业链全局图谱与口径字典_2026-06-11.md` | AI 产业链分层、公司映射、口径边界 |
+
+### 12.2 外部公开资料
+
+| 来源 | 链接 |
+|---|---|
+| Vertiv Q1 2026 results press release | https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-First-Quarter-with-Diluted-EPS-Growth-of-136-Adjusted-Diluted-EPS-Growth-of-83-Raises-Full-Year-Guidance/default.aspx |
+| Vertiv Q1 2026 results presentation PDF | https://s205.q4cdn.com/554782763/files/doc_financials/2026/q1/Vertiv-First-Quarter-2026-Results-Presentation.pdf |
+| Vertiv Q4/FY2025 results press release | https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Fourth-Quarter-with-Organic-Orders-Growth-of-252-and-Diluted-EPS-Growth-of-200-Adjusted-Diluted-EPS-37/default.aspx |
+| Vertiv Q4 2025 results presentation PDF | https://s205.q4cdn.com/554782763/files/doc_financials/2025/q4/Vertiv_Fourth-Quarter-2025-Results-Presentation.pdf |
+| Vertiv 2025 Annual Report PDF | https://s205.q4cdn.com/554782763/files/doc_financials/2025/ar/Vertiv-2025-Annual-Report.pdf |
+| Vertiv Q3 2025 results | https://investors.vertiv.com/news/news-details/2025/Vertiv-Reports-Strong-Third-Quarter-Results-including-Organic-Orders-60-Diluted-EPS-122-Adjusted-EPS-63-Raises-2025-Guidance/default.aspx |
+| Vertiv Q2 2025 results | https://investors.vertiv.com/news/news-details/2025/Vertiv-Reports-Strong-Orders-Sales-and-EPS-Growth-Raises-Full-Year-Guidance/default.aspx |
+| Vertiv Q1 2025 results | https://investors.vertiv.com/news/news-details/2025/Vertiv-Reports-Strong-First-Quarter-2025-Results/default.aspx |
+| Vertiv 2026 Investor Conference presentation | https://s205.q4cdn.com/554782763/files/doc_presentations/2026/05/19/Vertiv-2026-Investor-Conference_May-19-2026.pdf |
+| Vertiv OneCore product page | https://www.vertiv.com/en-emea/products-catalog/facilities-enclosures-and-racks/integrated-solutions/vertiv-onecore-prefabricated-hybrid-built-data-center/ |
+| Vertiv 360AI / GB300 reference architecture | https://www.vertiv.com/en-us/insights/articles/educational-articles/vertivs-partnership-with-nvidia-on-gb300-nvl72-for-ai-infrastructure-acceleration/ |
+| Vertiv CoolChip CDU product page | https://www.vertiv.com/en-us/products-catalog/thermal-management/high-density-solutions/vertiv-coolchip-cdu/ |
+| Vertiv CoolChip CDU 2300 | https://www.vertiv.com/en-us/products-catalog/thermal-management/high-density-solutions/vertiv-coolchip-cdu-2300/ |
+| Vertiv Liebert EXL S1 UPS | https://www.vertiv.com/en-us/products-catalog/critical-power/uninterruptible-power-supplies-ups/liebert-exl-s1/ |
+| Vertiv EnergyCore Grid BESS | https://www.vertiv.com/en-us/products-catalog/critical-power/battery-energy-storage-system-bess/vertiv-energycore-grid-battery-energy-storage-system/ |
+| Vertiv + CPower collaboration | https://www.vertiv.com/en-us/about/news-and-events/corporate-news/2026/vertiv-and-cpower-collaborate-to-help-data-centers-accelerate-interconnection-and-unlock-value-from-energy-assets/ |
+| Great Lakes acquisition | https://www.vertiv.com/en-us/about/news-and-events/corporate-news/vertiv-completes-acquisition-of-great-lakes-data-racks--cabinets/ |
+| PurgeRite acquisition | https://www.vertiv.com/en-us/about/news-and-events/corporate-news/vertiv-completes-acquisition-of-purgerite-expanding-leadership-in-liquid-cooling-services/ |
+| ThermoKey acquisition announcement | https://www.vertiv.com/en-us/about/news-and-events/corporate-news/2026/vertiv-to-acquire-thermokey-expanding-heat-rejection-portfolio-for-converged-physical-infrastructure/ |
+| BMarko acquisition | https://www.vertiv.com/en-us/about/news-and-events/corporate-news/2026/vertiv-acquires-bmarko-structures-to-expand-capacity-for-manufactured-and-converged-infrastructure-solutions/ |
+| StockAnalysis VRT statistics | https://stockanalysis.com/stocks/vrt/statistics/ |
+| Google Finance VRT | https://www.google.com/finance/quote/VRT:NYSE |
+

@@ -1,0 +1,150 @@
+# 公司收入传导与价值传导评估：Oracle Corporation（ORCL）
+
+报告日期：2026-06-12  
+主口径：NTM 经营窗口，近似 Oracle FY2027（截至 2027-05-31 的未来 12 个月）。  
+资料边界：使用 `公司调研/`、`行业调研/` 和公开一手资料核验；未读取、引用或继承 `特征量化/`、Signals、排序、回归或模型比较。  
+重要限制：本报告只评估收入、利润和经营价值传导，不输出目标价、投资评级、排序或市场估值倍数；金融市场价格不作为经营价值传导证据。  
+
+## 1. 一页结论
+
+- 主口径与补充口径：主口径为 NTM/FY2027 经营窗口；FY2028、Stargate 项目全周期、Rubin/MI450 后续扩容、Project Jupiter 全周期和 Oracle Health AI 新系统只作为远期期权或校准因素。
+- 当前收入基准、指引和 run-rate：Oracle FY2026 总收入 `$67.357B`，同比 `+17%`；FY2026 Q4 收入 `$19.184B`，年化 run-rate 约 `$76.7B`；Oracle 确认 FY2027 总收入指引 `$90B`，相当于较 FY2026 约 `+34%`。Q1 FY2027 指引为总收入 `+27-29%`、cloud revenue `+58-64%`。
+- 重要产品/业务线：`OCI IaaS / AI Supercluster`、`Core Database / Software license & support`、`Cloud Applications / SaaS`、`Multicloud Database / AI Database`、`Hardware + Services / legacy offset`、`Project Jupiter / onsite power execution enabler`。
+- NTM 公司收入四情景：悲观 `$80-85B`；基准 `$88-92B`；乐观 `$94-100B`；极度乐观 `$103-112B`，其中极度乐观经校准后只保留为乐观上限和附录跟踪，不作为主判断。
+- 利润或 EBITDA 四情景：利润弹性弱于收入弹性。FY2026 non-GAAP operating income `$28.9B`、non-GAAP operating margin 约 `42.9%`；NTM 基准假设 non-GAAP operating margin `40-43%`，GAAP operating margin 约 `29-32%`。FCF 仍是主要压力，FY2026 FCF 为 `-$23.686B`。
+- 最大传导瓶颈：不是需求，而是 RPO 和 AI 合同向可确认 OCI IaaS 收入转化的物理路径，包括 GPU/rack 交付、电力、液冷、网络、数据中心 commissioning、客户验收和折旧吸收。
+- 最大利润率变量：AI IaaS 的利用率、reserved cluster 价格、客户预付款/客户供硬件比例、电费、GPU 折旧、网络和存储 attach，以及高毛利数据库/应用收入在总收入中的占比。
+- 最大现金流变量：资本支出峰值、Oracle 计划 FY2027 约 `$40B` 融资、客户预付款和 customer-supplied hardware 合计 `$75B` 对净现金流出的抵消程度。
+- 可信度：基准为中高；悲观为中；乐观为中；极度乐观为低到中，因需求和订单证据强，但 NTM 内全部兑现需要多个执行环节同时顺利。
+
+## 2. 重要产品清单
+
+| 产品/业务线 | 当前收入基数 | 占公司收入 | 重要性 | 证据等级 | NTM 纳入结论 | 远期期权 |
+| --- | ---: | ---: | --- | --- | --- | --- |
+| OCI IaaS / AI Supercluster | FY2026 Cloud Infrastructure `$18.101B`；Q4 `$5.787B`，年化 `$23.1B` | `26.9%` | NTM 第一增量来源，RPO 和 AI capacity 主要传导口 | A/B | 进入基准；按实际上电、客户验收和期间确认折扣 | Rubin/GB300/GB300 NVL、MI450/Helios、更多 GW 级 AI factory |
+| Core Database / Software license & support | FY2026 Software revenue `$24.474B` | `36.3%` | 高毛利现金牛，支撑融资和客户锁定 | A | 进入基准；按稳定续费、云迁移和 license 转订阅处理 | AI Database 26ai、Vector Search、Autonomous AI Lakehouse 对旧数据库客户再货币化 |
+| Cloud Applications / SaaS | FY2026 Cloud Applications `$15.888B` | `23.6%` | 稳定增长、利润质量高，低于 OCI 弹性但高于 legacy | A | 进入基准；按 `10-20%` NTM 增长处理 | Fusion/NetSuite AI agents、Oracle Health AI patient care system |
+| Multicloud Database / AI Database | 不单独披露；包含在 cloud/software 中；Q4 官方披露 Multicloud AI Database `+404%` | 无法可靠量化；不可与 OCI/software 机械相加 | 改变数据库收入结构和云入口，利润属性优于普通 IaaS | B/C | 作为 cloud/software 内部 mix driver 进入基准；不作为独立公司收入加总项 | 在 AWS/Azure/GCP 内成为企业 Oracle DB 默认迁移路径 |
+| Hardware + Services / legacy offset | FY2026 Hardware `$3.105B` + Services `$5.789B`，合计 `$8.894B` | `13.2%` | 抵消项和实施支撑，不是高增主线 | A | 进入基准，但按低增或小幅下滑处理 | Exadata/Cloud@Customer 作为数据库云迁移附着，不作为独立高增 |
+| Project Jupiter / onsite power execution enabler | 无独立可确认收入；影响 OCI capacity 可用性 | 不适用 | 影响 RPO 转收入速度和现金流，不是客户收入产品 | B/C | 不进入独立收入基准；只影响 OCI 执行概率 | Bloom up to `2.8GW`、Project Jupiter up to `2.45GW` 若按期交付可提高 2027 后 OCI 上限 |
+
+## 3. 产品需求四情景
+
+- 本步口径：只评估外部需求池和客户预算强弱，不判断 Oracle 份额、收入确认、利润率或公司合计。需求强弱相对 Oracle 当前预期锚点判断：FY2027 总收入 `$90B` 指引、Q1 FY2027 cloud revenue `+58-64%` 指引、FY2026 Q4 OCI IaaS `$5.787B` run-rate、RPO `$638B`、OpenAI/Stargate 和多云数据库官方进展。
+
+| 产品/业务线 | 当前需求锚 | 悲观需求 | 基准需求 | 乐观需求 | 极度乐观需求 | 绝对变化 | 相对预期判断 | 依据/反证 |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
+| OCI IaaS / AI Supercluster | FY2026 IaaS `$18.101B`；Q4 run-rate `$23.1B`；RPO `$638B`；large AI contracts 中 prepaid / customer-supplied hardware `$75B` | AI capacity 需求仍增长，但上电慢，NTM 需求只支持 `$30B` 左右 IaaS run-rate | 需求支持 OCI IaaS NTM `$37-42B`，基本匹配 FY2027 `$90B` 总收入路径 | 额外 reserved clusters、AI labs 和企业推理需求提前，需求支持 `$43-50B` | 多个 GW 项目和新增客户预算同时提前，需求支持 `$50B+`，但大量属于 NTM 上限 | 相对 FY2026 IaaS 增量约 `$12-35B+` 的需求池 | 悲观低于预期；基准符合预期；乐观/极度高于预期 | 正向：RPO、OpenAI 4.5GW、GB200 racks 早期运行。反证：电力、液冷、GPU、commissioning、AI 租价和客户集中 |
+| Core Database / Software support | FY2026 Software revenue `$24.474B`，成熟续费和核心数据库负载 | 云迁移拖累 license，客户优化支出，需求池 `-5%` 到持平 | 续费稳定，云迁移部分替代 on-prem，需求基本持平 | AI Database、Exadata、合规和高可用需求提高续约和迁移 | 企业 AI 数据治理把 Oracle DB 重新变为 AI 数据层，需求加速但多为中长期 | NTM 需求变化约 `-$1.5B` 到 `+$2.5B` | 基准为稳定兑现，不因 AI 叙事自动上调 | 正向：数据库替换成本极高。反证：Postgres/Aurora/Snowflake/Databricks 和 license 优化 |
+| Cloud Applications / SaaS | FY2026 Cloud Apps `$15.888B`，同比 `+11%`；Q4 `$4.126B`，同比 `+10%` | 企业应用预算放缓，Oracle Health 整合拖累，需求增速低个位数 | Fusion/NetSuite/行业应用正常续约，需求增速约 `10-15%` | AI agent、ERP/HCM/SCM 自动化提高 attach 和 seat expansion | AI apps 成为主要 upsell，Oracle Health AI 恢复双位数增长 | NTM 需求增量约 `$0.5-7B` | 基准略高于当前 Q4 run-rate；乐观需 AI 付费证据 | 正向：SaaS 续费、流程锁定。反证：Workday/SAP/Salesforce/Microsoft 竞争和医疗实施周期 |
+| Multicloud Database / AI Database | 官方披露 Multicloud AI Database Q4 `+404%`；AWS/Azure/GCP 均有官方产品路径 | 客户试点多、生产迁移慢，需求只在低基数增长 | 金融、零售、通信、政府客户把部分 Exadata/Autonomous 迁至三大云，需求快速但基数小 | 三大云区域扩张带动生产迁移，数据库和 AI 数据层需求明显高于预期 | 多云 Oracle DB 成为核心系统上云默认路径，新增预算从 DB modernization 和 AI data governance 同时来 | 无法可靠量化；可用低个位数十亿美元需求池估算 | 基准为“内部 mix 上修”，不是独立公司收入上修 | 正向：三大云官方合作、低延迟/同数据中心部署。反证：无单独收入披露、迁移周期长 |
+| Hardware + Services / legacy offset | FY2026 合计 `$8.894B`；主要为硬件、实施和支持 | 客户减少普通实施服务，硬件替换延后 | 低增或小幅下滑，随 Exadata/Cloud@Customer 有局部支撑 | AI/数据库迁移项目带来更多实施和 Exadata attach | 大型行业云和医院系统迁移拉动，但利润质量仍弱于软件 | NTM 需求约 `-$1B` 到 `+$2B` | 不应作为 OCI 高增长替代证据 | 正向：Exadata/Cloud@Customer attach。反证：Services 低利润、项目型收入不可外推 |
+| Project Jupiter / onsite power | Bloom/Oracle up to `2.8GW`；Project Jupiter up to `2.45GW` fuel cell microgrid | 许可、燃气、燃料电池交付或运行可靠性拖慢 OCI capacity | 部分改善 time-to-power，支持 OCI 基准上电计划 | 电力路径被验证，降低多地项目排队风险 | 成为可复制 AI campus 模板，显著提前多个大项目 | 不直接产生 Oracle 客户收入；影响 OCI 收入确认时点 | 基准为执行支撑；极度乐观多在 FY2028+ | 正向：官方 MSA 和项目公告。反证：GW 级 SOFC 运维、燃气和服务寿命仍需验证 |
+
+## 4. 可收入化暴露与收入基数
+
+- 本步口径：只判断需求中哪些能进入 Oracle NTM 收入表，以及当前可收入化基数。RPO、客户总预算、GW 容量和项目总投资不能直接等同于 NTM 收入；只有 A/B 级已披露收入、RPO/合同、正式客户项目和清楚交付路径才进入基准。交叉产品如 Multicloud Database 和 AI Database 只作为 cloud/software 内部 mix driver，不和 OCI、software 机械相加。
+
+| 产品/业务线 | 当前收入锚点 | 直接/间接 | 利润属性 | 悲观基数 | 基准基数 | 乐观基数 | 极度乐观上限 | 相对当前预期 | 证据等级 | 是否进入基准 | 纳入依据 | NTM 纳入结论 |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| OCI IaaS / AI Supercluster | FY2026 IaaS `$18.101B`，Q4 `$5.787B`；RPO `$638B`；Q1 cloud guide `+58-64%` | 直接 | 收入高增但资本密集；毛利受折旧、电费、GPU 残值和利用率影响 | `$30-35B` | `$37-42B` | `$43-50B` | `$50-60B` | 基准符合 FY2027 `$90B` 路径；悲观低于指引；乐观高于指引 | A/B | 是 | 已披露 IaaS 收入、RPO、Q1/FY2027 指引、OpenAI/Stargate 项目 | 基准主口径；RPO 只按 NTM 交付折扣纳入 |
+| Core Database / Software support | FY2026 Software revenue `$24.474B` | 直接 | 高毛利、高续费、低资本强度；部分被 cloud migration 重分类 | `$22.5-24.0B` | `$23.5-25.0B` | `$24.5-26.0B` | `$25.5-27.0B` | 基准为稳定兑现；不因 AI 自动上调 | A | 是 | 已披露 software revenue，数据库续费和替换成本强 | 进入基准；主要是利润质量支撑 |
+| Cloud Applications / SaaS | FY2026 Cloud Apps `$15.888B`，Q4 `$4.126B` | 直接 | 高毛利订阅，AI attach 增量初期成本低于 IaaS | `$16.5-17.5B` | `$17.5-19.0B` | `$19.5-22.0B` | `$22.0-25.0B` | 基准略高于 FY2026 run-rate；乐观需 AI attach 付费 | A | 是 | 已披露 SaaS 收入；Fusion/NetSuite/Oracle Health 客户粘性 | 进入基准；但不是主要超预期来源 |
+| Multicloud Database / AI Database | 官方披露 Q4 Multicloud AI Database `+404%`，但未披露收入额；AWS/Azure/GCP 产品路径明确 | 直接，但与 OCI/software 重叠 | 数据库服务和 Exadata/Autonomous 属性，利润率方向高于普通 GPU IaaS | 无法可靠量化；估算低个位数十亿美元 | 作为 `$2.5-5B` 内部收入池/增量驱动处理，不单独加总 | `$5-8B` 内部收入池/增量驱动 | `$8-12B` 内部收入池/上限 | 基准是 mix 改善，不是公司总收入独立加法 | B/C | 是，折扣后进入 | 官方多云合作、产品 GA/扩区、Q4 `+404%` 增速；但缺收入额 | 进入基准作为 cloud/software 内部 driver；禁止重复计算 |
+| Hardware + Services / legacy offset | FY2026 Hardware `$3.105B`，Services `$5.789B` | 直接/辅助 | 硬件毛利和服务项目利润低于软件；可支撑云迁移但质量一般 | `$7.0-8.0B` | `$7.5-9.0B` | `$9.0-10.5B` | `$10.5-12.0B` | 基准为低增或平稳；不参与高弹性叙事 | A | 是 | 已披露收入表项目 | 进入基准作为抵消项和实施支撑 |
+| Project Jupiter / onsite power | 无 Oracle 客户收入披露；Bloom initial `1.2GW` contracted、MSA up to `2.8GW`；Jupiter up to `2.45GW` | 间接 | 改善 time-to-power；本身消耗资本和能源成本 | `$0` 独立收入 | `$0` 独立收入 | `$0` 独立收入 | `$0` 独立收入 | 不应作为独立收入基数 | B/C | 否 | 能源/电力项目是 OCI revenue enabler，而非 Oracle 对外销售产品 | 不进入 NTM 收入基数；只进入执行可信度校准 |
+
+## 5. 产品级收入和利润贡献
+
+- 本步口径：从需求和可收入化基数出发，评估每条业务在 NTM 内贡献的收入、利润质量和现金流方向。Oracle 不披露产品级毛利率、AI IaaS 毛利、Multicloud Database 单独收入或客户级收入，因此产品利润贡献用方向性和证据等级表达；无法可靠量化处明确标注。下表中 Multicloud Database / AI Database 为交叉项，不能与 OCI/software/company total 机械加总。
+
+| 产品/业务线 | 情景 | NTM 收入贡献 | 利润贡献 | 利润率方向 | 相对预期判断 | 关键证据 | 情景校准 | 最大约束/反证 |
+| --- | --- | ---: | ---: | --- | --- | --- | --- | --- |
+| OCI IaaS / AI Supercluster | 悲观 | `$30-35B` | 无法可靠量化；增收但折旧、电费和上电延迟吞噬利润 | 毛利率/经营利润率低于公司结构 | 低于 FY2027 `$90B` 隐含路径 | FY2026 IaaS `$18.101B`、Q4 `$5.787B`、RPO `$638B` | 保留为下行情景 | 电力/GPU/液冷/网络/验收延期，AI 租价下跌 |
+| OCI IaaS / AI Supercluster | 基准 | `$37-42B` | 无法可靠量化；对 operating income 有正贡献，但 FCF 仍承压 | 收入高增、毛利率低于软件，利用率改善部分抵消折旧 | 符合当前指引 | Q1 cloud `+58-64%`、large AI contracts、客户预付款/供硬件 `$75B` | 保留 | RPO 期限结构不披露，客户集中和 capex 峰值 |
+| OCI IaaS / AI Supercluster | 乐观 | `$43-50B` | 无法可靠量化；若 reserved pricing 和利用率强，经营杠杆明显改善 | 毛利率方向改善，但仍低于数据库软件 | 高于当前预期 | RPO Q4 环比 `+$85B`，Stargate `>5GW` under development，GB200 racks 早期运行 | 保留 | 需要多个站点按期上电，且 GPU cloud 价格不快速下行 |
+| OCI IaaS / AI Supercluster | 极度乐观 | `$50-60B` | 只有在客户预付款、硬件供给、利用率和电力同时突破时才显著上修 | 收入非线性，利润不自动非线性 | 显著高于当前预期 | 多 GW 项目、Project Jupiter、GB300/Rubin 供应链 | 下移为乐观上限/附录跟踪 | NTM 时间表过紧，执行和资本约束不足以支持全部进入基准 |
+| Core Database / Software support | 悲观 | `$22.5-24.0B` | 高利润池仍存在，但 license 下滑和云迁移重分类拖累 | 利润率高但收入低于预期 | 低于当前 run-rate | FY2026 Software `$24.474B` | 保留 | 客户优化 license、Postgres/Aurora 替代、新项目转云而非 license |
+| Core Database / Software support | 基准 | `$23.5-25.0B` | 稳定贡献主要经营利润和现金流 | 高毛利、现金流强 | 符合预期 | 核心系统替换成本、续费、Exadata/RAC/Autonomous 生态 | 保留 | 增长弱，不应作为总收入高增来源 |
+| Core Database / Software support | 乐观 | `$24.5-26.0B` | 利润贡献优于收入贡献，mix 改善 | 小幅上行 | 高于预期 | Multicloud Database 和 AI Database 带动数据库迁移 | 保留 | 单独收入披露不足，不能把产品发布当收入 |
+| Core Database / Software support | 极度乐观 | `$25.5-27.0B` | 高毛利上修，但规模不如 OCI | 明显改善 | 高于预期 | AI Database 26ai、AI Vector Search、Autonomous AI Lakehouse | 下移为乐观上限 | 企业数据库迁移周期通常超过 NTM |
+| Cloud Applications / SaaS | 悲观 | `$16.5-17.5B` | 仍为正，但 Oracle Health 和企业预算拖累 | 稳定/略下 | 低于预期 | FY2026 Cloud Apps `$15.888B`、Q4 growth `+10%` | 保留 | SAP/Workday/Salesforce/Microsoft 竞争，医疗实施慢 |
+| Cloud Applications / SaaS | 基准 | `$17.5-19.0B` | 高质量 recurring 利润，支撑公司利润率 | 稳定 | 符合预期 | Fusion/NetSuite 续费、AI 功能渐进 attach | 保留 | AI agent monetization 仍需生产 ROI |
+| Cloud Applications / SaaS | 乐观 | `$19.5-22.0B` | ARPU 和 attach 提升，利润率方向改善 | 改善 | 高于预期 | AI Agent Studio、ERP/HCM/SCM 数据闭环、Oracle Health AI 指引 | 保留 | AI 功能可能提升留存多于当期收入 |
+| Cloud Applications / SaaS | 极度乐观 | `$22.0-25.0B` | 若 Health AI 和 workflow agents 同时商业化，利润上修 | 改善明显 | 显著高于预期 | 新 AI patient care system、行业云数据资产 | 下移为乐观上限 | 医疗监管、实施和替换周期限制 NTM 兑现 |
+| Multicloud Database / AI Database | 悲观 | 无法可靠量化；仅低基数增长，含在 cloud/software | 高利润属性，但对公司利润影响小 | 中性 | 低于叙事预期 | 产品官方存在但收入额未披露 | 保留 | 试点转生产慢，客户保留现有云原生数据库 |
+| Multicloud Database / AI Database | 基准 | 无法可靠量化；估算 `$2.5-5B` 内部收入池/增量驱动，不单独加总 | 高毛利 mix 改善，对 OCI 普通 IaaS 毛利有缓冲 | 改善 | 符合预期 | Database@Azure/AWS/Google Cloud，Q4 `+404%` | 保留 | 收入基数和区域产能未披露 |
+| Multicloud Database / AI Database | 乐观 | 无法可靠量化；`$5-8B` 内部收入池/增量驱动 | 利润质量优于 GPU pass-through | 改善明显 | 高于预期 | 金融、政府、零售核心系统多云迁移 | 保留 | 低延迟、合规和迁移认证周期 |
+| Multicloud Database / AI Database | 极度乐观 | 无法可靠量化；`$8-12B` 内部上限 | 高利润上限，但 NTM 可信度低 | 明显改善 | 显著高于预期 | 三大云成为 Oracle DB 新入口 | 下移为附录跟踪 | 缺单独收入、客户项目量化和 NTM 时间表 |
+| Hardware + Services / legacy offset | 悲观 | `$7.0-8.0B` | 低毛利项目和服务下降，对利润拖累 | 下降 | 低于预期 | FY2026 Hardware `$3.105B`、Services `$5.789B` | 保留 | 服务项目下滑、低利润实施减少 |
+| Hardware + Services / legacy offset | 基准 | `$7.5-9.0B` | 小幅正贡献或中性 | 稳定/略下 | 符合预期 | Exadata、Cloud@Customer、咨询实施需求 | 保留 | 不能把硬件收入当 AI rack 对外销售 |
+| Hardware + Services / legacy offset | 乐观 | `$9.0-10.5B` | 利润改善有限 | 稳定 | 略高于预期 | 数据库云迁移、行业云项目 attach | 保留 | 项目型收入不可持续 |
+| Hardware + Services / legacy offset | 极度乐观 | `$10.5-12.0B` | 利润贡献仍弱于软件 | 稳定/略升 | 高于预期但质量一般 | 大型医院/政府/行业云迁移 | 下移为乐观上限 | 低毛利业务不能驱动公司质量非线性上修 |
+
+## 6. 公司收入和利润四情景
+
+- 本步口径：把产品级贡献合成为公司 NTM 总收入、毛利率、经营利润率、净利润和自由现金流方向。先以 Oracle FY2027 总收入 `$90B` 指引为基准，再对 OCI 交付、多云数据库、SaaS、软件现金牛和 legacy offset 做合成。毛利率为 GAAP 近似口径；经营利润率以 non-GAAP operating margin 为主，并在文字中说明 GAAP 和现金流压力。Multicloud Database / AI Database 不与 OCI/software 重复加总。
+
+| 情景 | NTM 公司收入 | 绝对增速 | 相对预期 | 毛利率 | 经营利润率 | EBITDA/净利润 | 自由现金流方向 | 可信度 | 主要经营瓶颈 |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | --- | --- | --- |
+| 悲观公司 | `$80-85B` | `+19-26%` | 低于 FY2027 `$90B` 指引约 `$5-10B` | `59-62%` | non-GAAP `37-40%`；GAAP 约 `27-30%` | non-GAAP 净利润约 `$20-22B`；无法可靠量化 EBITDA | FCF 深度为负，可能 `-$20B` 到 `-$35B` | 中 | OCI 上电慢、AI IaaS 利用率/价格弱、capex 和利息先于收入确认 |
+| 基准公司 | `$88-92B` | `+31-37%` | 基本符合 FY2027 指引和 Q1 cloud 指引 | `61-64%` | non-GAAP `40-43%`；GAAP 约 `29-32%` | non-GAAP 净利润约 `$23-24B`，接近 EPS `$8.05` 指引隐含 | FCF 仍为负或接近修复，取决于客户预付款和 capex 节奏 | 中高 | RPO 期限结构、数据中心 commissioning、折旧和融资成本 |
+| 乐观公司 | `$94-100B` | `+40-48%` | 高于当前指引约 `$4-10B`，且不是单一小基数项目 | `63-66%` | non-GAAP `42-45%`；GAAP 约 `31-34%` | non-GAAP 净利润约 `$24.5-27B`；无法可靠量化 EBITDA | FCF 改善但未必转正；若预付款/客户供硬件继续扩大则接近 breakeven | 中 | 多个 AI site 按期上电、reserved pricing 稳定、高毛利 DB mix 提升 |
+| 极度乐观公司 | `$103-112B` | `+53-66%` | 显著高于当前预期；经校准后为乐观上限/附录跟踪 | `64-68%` | non-GAAP `44-47%`；GAAP 约 `33-36%` | non-GAAP 净利润约 `$27-31B`；无法可靠量化 EBITDA | 仍可能为负，除非客户预付款、客户供硬件和利用率同时超预期 | 低到中 | 需求、公司捕获、利润质量和执行质量必须同时突破，任何一环缺证据即下移 |
+
+## 7. 证据校准、反证和可信度
+
+- 本步口径：只校准前四步情景，不重新预测经营结果。正向证据必须明确影响需求、收入基数、产品贡献、公司利润或执行可信度；同一风险只在实际影响层级处理一次。市场价格、估值倍数、短期股价反应不作为经营反证。
+
+| 校准因素 | 影响层级 | 影响收入 | 影响利润率 | 影响现金流/执行 | 情景处理 |
+| --- | --- | --- | --- | --- | --- |
+| FY2026 Q4 RPO `$638B`，Q4 环比 `+$85B` | 收入基数/执行可信度 | 提高 OCI 和 cloud revenue 可见度，但不能全部进入 NTM | 中性到正向；取决于合同价格、硬件供给和利用率 | 正向提升融资可见度，但若交付慢会递延收入 | 基准保留；乐观保留；极度乐观只作上限 |
+| Large AI contracts 中 prepaid / customer-supplied hardware `$75B` | 现金流/执行可信度 | 降低 Oracle 自行采购硬件压力，提高 RPO 可执行性 | 对毛利率影响双向：降低资本压力，但可能减少硬件价值捕获 | 正向，缓解 FY2027 融资和 capex 压力 | 基准可信度上调到中高；不直接上调收入 |
+| FY2027 revenue guide `$90B` 和 Q1 cloud `+58-64%` | 公司汇总 | 给基准公司收入提供 A 级锚点 | 支持 non-GAAP EPS `$8.05`，但不保证 FCF | 执行仍取决于数据中心建设 | 基准保留 |
+| FY2026 FCF `-$23.686B`、FY2027 约 `$40B` 融资计划 | 现金流/公司利润质量 | 不直接否定需求，但限制可持续扩张速度 | 折旧、利息和电力成本限制 OCI 利润穿透 | 负向，是最大现金流变量 | 悲观保留；乐观需要现金流改善证据 |
+| OpenAI/Stargate Oracle 4.5GW、`>5GW` under development、GB200 racks 早期运行 | 需求/收入基数/执行 | 支持 AI capacity 需求和 OCI 收入路径 | 若 reserved utilization 高，利润改善 | 增强项目真实性；仍需分期上电 | 乐观保留；极度乐观部分下移 |
+| Bloom/Oracle up to `2.8GW`、Project Jupiter up to `2.45GW` | 执行可信度 | 间接支持 OCI capacity 交付，不是独立收入 | 电力成本和可靠性影响 IaaS margin | 正向降低 grid interconnection 风险，但 SOFC GW 级运维仍需验证 | 只作用于 OCI 执行，不重复惩罚需求 |
+| Multicloud AI Database Q4 `+404%`，AWS/Azure/GCP 官方路径 | 产品贡献/利润质量 | 提高数据库云迁移和高毛利 mix 上限 | 正向，优于普通 GPU IaaS pass-through | 执行依赖区域、合规和企业迁移周期 | 基准作为 mix driver；极度乐观下移 |
+| Software/SaaS 当前增速明显低于 OCI | 公司组合 | 防止把全公司增速等同于 OCI 增速 | 正向稳定利润，但会稀释收入弹性 | 现金流好于 IaaS | 公司乐观不能只靠 OCI 小口径外推 |
+| AI 租价/利用率和客户集中风险 | 产品贡献/现金流 | 若租价下跌或利用率不足，OCI 收入和 RPO 转化变弱 | 折旧固定，利润率下行更快 | 负向；可能触发 FCF 深负 | 悲观触发条件；不重复用于需求层级 |
+
+| 情景 | 原始判断 | 正向证据 | 反证 | 校准动作 | 校准后位置 | 可信度 | 不得重复惩罚的风险 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 悲观 | OCI 交付慢、公司收入 `$80-85B`，低于 FY2027 指引 | RPO `$638B` 和 Q1 cloud guide 表明需求并未崩塌 | FCF 深负、capex/融资、上电和验收延迟、AI 租价下行 | 保留 | 下行情景，不是主情景 | 中 | 电力/GPU 延迟只在收入确认和执行层处理，不再重复压低外部需求 |
+| 基准 | FY2027 revenue `$88-92B`，接近公司 `$90B` 指引 | A 级收入、Q1 指引、RPO、IaaS Q4 run-rate、software/SaaS 基盘 | RPO 期限结构、产品级毛利和客户集中未披露 | 保留 | 主情景 | 中高 | 资本开支压力只压现金流和利润质量，不直接否定收入需求 |
+| 乐观 | 收入 `$94-100B`，OCI、多云数据库和 SaaS AI attach 均高于基准 | RPO Q4 `+$85B`、prepaid/customer hardware `$75B`、Stargate 和多云 DB 证据 | 多个执行环节必须同步顺利；legacy/software 增速不能同步极化 | 保留 | 上行情景 | 中 | Multicloud Database 与 OCI/software 不重复加总 |
+| 极度乐观 | 收入 `$103-112B`，需求、捕获、利润和执行均突破 | 多 GW AI projects、Bloom/Project Jupiter、Multicloud `+404%`、AI Database product line | NTM 内缺完整上电、客户收入、产品级毛利和现金流证据；部分属于 FY2028+ | 下移 | 乐观上限 / 附录跟踪 | 低到中 | Project Jupiter 和 Stargate 全周期机会不得同时作为 NTM 基准收入和远期期权重复计入 |
+
+## 8. 结论
+
+- 最可能情景：基准。Oracle NTM 最可能收入区间为 `$88-92B`，基本对应 FY2027 `$90B` 指引。经营价值传导不是“AI 题材带来估值上修”，而是 `RPO / AI contracts -> 数据中心和 GPU capacity -> OCI IaaS 期间收入 -> 利用率和数据库 attach -> operating income / FCF`。
+- NTM 收入结论：OCI IaaS 是主要增量，NTM 可确认收入基准约 `$37-42B`；Cloud Applications/SaaS 基准 `$17.5-19.0B`；Software/Core Database 基准 `$23.5-25.0B`；Hardware + Services 基准 `$7.5-9.0B`。Multicloud Database / AI Database 是高质量 mix driver，不独立与上述项目重复加总。
+- 利润/现金流结论：利润质量分化。数据库和 SaaS 仍提供高毛利、低资本强度的现金流；OCI AI capacity 提供收入高增但压低 FCF 和资本回报可见度。FY2026 FCF `-$23.686B` 说明 NTM 经营价值不能只看收入，必须看客户预付款、客户供硬件、利用率、折旧和融资成本。
+- 主要传导瓶颈：最大瓶颈是可确认 OCI 收入，而不是客户需求。RPO `$638B` 是强证据，但只有在 GPU/rack、网络、液冷、电力、site commissioning、客户验收和期间确认顺利时才进入 NTM 收入表。
+- 乐观情景成立条件：Q1/Q2 FY2027 OCI IaaS 继续高于 `80-90%` 增速；RPO 继续环比增长或至少高比例转收入；Stargate/Abilene/Project Jupiter 相关站点按期上电；prepaid/customer-supplied hardware 继续扩大；Multicloud Database 从低基数高增长变成数十亿美元收入池。
+- 极度乐观情景成立条件：多个 GW 级 AI capacity 在 NTM 内提前上电，GB200/GB300/Rubin 或 AMD/其他二供供给不受限，AI reserved pricing 稳定，高毛利数据库/AI Database attach 同步提高，同时 FY2027 FCF 路径明显好于 FY2026。当前证据不足以把极度乐观放入主情景。
+- 悲观情景触发条件：OCI IaaS 从 Q4 `+93%` 迅速降到 `<60%`；RPO 不再增长且未转收入；关键项目延期超过两个季度；AI 租价连续下跌且利用率无改善；FY2027 融资或 capex 压力超过客户预付款缓冲；Oracle 需以更低价格重新谈判大客户 AI capacity。
+- 后续跟踪数据：OCI IaaS 季度收入和增速、RPO 环比和期限结构、prepaid/customer-supplied hardware 金额、FY2027 capex/融资/FCF、Stargate/Abilene/Project Jupiter 上电进度、GB200/GB300/Rubin/MI450 供给、Multicloud Database region 数和收入披露、Cloud Apps AI attach、Oracle Health AI 商业化进度。
+
+## 附录：来源和补充口径
+
+- 经营数据日期：Oracle FY2026 Q4/FY2026 全年披露日期为 2026-06-10；本报告日期为 2026-06-12；行业底稿主要为 2026-06-10 至 2026-06-11 项目内正式资料。
+- 主要收入、订单、指引和利润率来源：Oracle FY2026 Q4 results。核心数据包括 FY2026 total revenue `$67.357B`、Q4 revenue `$19.184B`、FY2026 cloud revenue `$33.989B`、FY2026 IaaS `$18.101B`、FY2026 cloud applications `$15.888B`、RPO `$638B`、FY2026 operating cash flow `$31.977B`、capex `$55.663B`、FCF `-$23.686B`、FY2027 revenue guidance `$90B`、FY2027 non-GAAP EPS guidance `$8.05`。
+- FY2026、FY2027、长期 run-rate 或远期期权补充：FY2027 是 NTM 主口径；FY2028+ 的 Stargate 全周期、Rubin/MI450、Project Jupiter 全周期、Oracle Health AI 全面替换、Autonomous AI Lakehouse 大规模数据平台化，只作为乐观上限或附录跟踪。
+- 项目内正式资料：
+  - `公司调研/云算力_IDC_AI软件平台/ORCL_Oracle Corporation_公司调研_2026-06-12.md`：用于识别 ORCL 业务线、RPO、OCI、数据库和多云业务框架；分部金额以 Oracle 官方披露重新核验。
+  - `行业调研/AI服务器_存储_芯片/行业调研_AI云算力外包和NeoCloud与AI数据中心运营商_2026-06-11.md`：用于 AI cloud/NeoCloud、reserved cluster、RPO、AI factory、租价/利用率和反证指标。
+  - `行业调研/产业背景/行业调研_AI数据中心建设规模与产业链订单映射_2026-06-11.md`：用于 AI 数据中心建设规模、电力和资本开支向收入确认的约束。
+  - `行业调研/AI网络_光互联_铜互联/行业调研_开放Scale-up互联_2026-06-11.md`：用于 OCI/AMD Helios、开放互联、网络供给和 AI rack 交付约束。
+  - `行业调研/AI园区电力_机电_冷却/行业调研_数据中心自备发电与微电网_2026-06-11.md`：用于 Bloom/Oracle、Project Jupiter、自备发电和 time-to-power 约束。
+- 主要公开一手来源：
+  - Oracle FY2026 Q4 results, 2026-06-10: https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Record-Q4-and-FY-2026-Results-Driven-by-Cloud-Infrastructure--Cloud-Applications/default.aspx
+  - OpenAI Stargate advances with 4.5 GW partnership with Oracle, 2025-07-22: https://openai.com/index/stargate-advances-with-partnership-with-oracle/
+  - Oracle and Amazon Web Services strategic partnership / Oracle Database@AWS, 2024-09-09: https://www.oracle.com/news/announcement/ocw24-oracle-and-amazon-web-services-announce-strategic-partnership-2024-09-09/
+  - Microsoft and Oracle Oracle Database@Azure, 2023-09-14: https://investor.oracle.com/investor-news/news-details/2023/Microsoft-and-Oracle-Expand-Partnership-to-Deliver-Oracle-Database-Services-on-Oracle-Cloud-Infrastructure-in-Microsoft-Azure/default.aspx
+  - Oracle Database@Google Cloud GA, 2024-09-09: https://www.googlecloudpresscorner.com/2024-09-09-Oracle-and-Google-Cloud-Announce-the-General-Availability-of-Oracle-Database-Google-Cloud
+  - Bloom Energy and Oracle up to 2.8GW partnership, 2026-04-13: https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-and-Oracle-Expand-Strategic-Partnership-to-Deploy-up-to-2-8-GW-to-Accelerate-AI-Infrastructure-Build-Out/default.aspx
+  - Oracle / BorderPlex / Bloom Project Jupiter, 2026-04-27: https://www.oracle.com/news/announcement/oracle-borderplex-and-bloom-energy-to-power-project-jupiter-with-fuel-cell-technology-2026-04-27/
+  - Oracle Autonomous AI Lakehouse, 2025-10-14: https://www.oracle.com/news/announcement/ai-world-oracle-introduces-autonomous-ai-lakehouse-2025-10-14/
+  - Oracle AI Vector Search product page: https://www.oracle.com/database/ai-vector-search/
+
