@@ -144,6 +144,7 @@ function renderRunner(runner) {
     ? `并发 ${valueOrDash(runner.concurrency)} · 已运行 ${formatDurationSeconds(runner.uptimeSeconds)}`
     : `并发设置 ${valueOrDash(runner.concurrency)} · runner 当前未运行`;
   setText("runner-detail", detail);
+  setText("runner-model", `启动配置：${runner.configuredModel || "—"} · 默认 ${runner.defaultReasoningEffort || "—"} · SDK ${runner.sdkVersion || "—"}`);
   const input = document.querySelector("#concurrency-input");
   if (document.activeElement !== input && Number.isInteger(runner.concurrency)) input.value = runner.concurrency;
   renderRunnerToggle(runner);
@@ -181,6 +182,7 @@ function renderQueue(queue) {
     (row) => primaryCell(row.displayName || row.subject, row.subject),
     (row) => row.domain,
     (row) => queueStatusLabel(row.status),
+    (row) => row.reasoningEffort || "—",
     (row) => formatPlanVersion(row.planVersion),
   ]);
   toggle("active-tasks-empty", !queue.items?.length);
@@ -271,14 +273,15 @@ function renderForecast(eta, quota) {
   } else {
     setText("eta-mean", "暂不可用");
     setText("eta-p90", "暂不可用");
-    setText("forecast-note", eta.reason === "concurrency_zero_or_unknown" ? "并发为 0 或未知，无法估算完成时间。" : "等待足够数据。");
+    setText("forecast-note", eta.reason === "concurrency_zero_or_unknown" ? "并发为 0 或未知，无法估算完成时间。" : eta.reason === "model_history_unavailable" ? `暂无 ${eta.model} 对应推理强度的耗时样本，完成时间暂不可估算。` : "等待足够数据。");
   }
+  setText("quota-threshold-label", `预计触及已用 ${quota.thresholdPercent ?? 95}% 暂停阈值`);
   setText("quota-projected", quota.available && Number.isFinite(quota.projectedAtFinishRemainingPercent)
     ? `${quota.projectedAtFinishRemainingPercent}%`
-    : "—");
+    : quota.available ? "未校准" : "暂不可用");
   setText("quota-threshold-time", quota.available && quota.estimatedThresholdAt
     ? formatDate(quota.estimatedThresholdAt)
-    : "不会由当前队列耗尽");
+    : quota.blocked ? "已达到暂停阈值" : quota.available ? "暂不可估算" : "暂不可用");
 }
 
 function renderQuota(quota) {
@@ -288,9 +291,9 @@ function renderQuota(quota) {
     document.querySelector("#quota-meter").style.width = "0%";
     return;
   }
-  setText("quota-remaining", `${quota.primaryRemainingPercent}%`);
+  setText("quota-remaining", Number.isFinite(quota.primaryRemainingPercent) ? `${quota.primaryRemainingPercent}%` : "未知");
   document.querySelector("#quota-meter").style.width = `${clamp(quota.primaryRemainingPercent, 0, 100)}%`;
-  setText("quota-detail", `已用 ${quota.primaryUsedPercent}% · ${quota.resetCredits ?? "—"} 次重置 · ${formatDate(quota.resetsAt)} 重置`);
+  setText("quota-detail", `已用 ${Number.isFinite(quota.primaryUsedPercent) ? quota.primaryUsedPercent + "%" : "未知"} · ${quota.resetCredits ?? "—"} 次重置 · ${formatDate(quota.resetsAt)} 重置`);
 }
 
 function renderAnomalies(anomalies) {

@@ -36,6 +36,7 @@
             <strong id="runner-pid" class="kpi-value compact">—</strong>
           </div>
           <p id="runner-detail" class="kpi-detail">等待状态</p>
+          <p id="runner-model" class="kpi-detail">等待模型配置</p>
         </article>
         <article class="kpi-card">
           <div class="kpi-label">Active Queue</div>
@@ -66,7 +67,7 @@
         <div class="controls-row">
           <label class="field">
             <span>目标并发</span>
-            <input id="concurrency-input" type="number" min="0" max="128" step="1" value="12" inputmode="numeric">
+            <input id="concurrency-input" type="number" min="0" max="128" step="1" value="10" inputmode="numeric">
           </label>
           <button id="validate-button" class="button button-secondary" type="button">Validate</button>
           <button id="runner-toggle-button" class="button button-primary" type="button" disabled>启动 Runner</button>
@@ -108,7 +109,7 @@
             <div class="forecast-item"><span>平均完成时间</span><strong id="eta-mean">—</strong></div>
             <div class="forecast-item"><span>保守完成时间</span><strong id="eta-p90">—</strong></div>
             <div class="forecast-item"><span>完成时预计剩余 quota</span><strong id="quota-projected">—</strong></div>
-            <div class="forecast-item"><span>预计触及剩余 1%</span><strong id="quota-threshold-time">—</strong></div>
+            <div class="forecast-item"><span id="quota-threshold-label">预计触及额度暂停阈值</span><strong id="quota-threshold-time">—</strong></div>
           </div>
           <p id="forecast-note" class="panel-footnote">等待足够数据</p>
         </section>
@@ -124,7 +125,7 @@
         </div>
         <div class="table-wrap active-tasks-wrap" tabindex="0" aria-label="活动任务列表，可滚动查看全部任务">
           <table>
-            <thead><tr><th>任务</th><th>Domain</th><th>状态</th><th>方案版本</th></tr></thead>
+            <thead><tr><th>任务</th><th>Domain</th><th>状态</th><th>推理强度</th><th>方案版本</th></tr></thead>
             <tbody id="active-tasks-table-body"></tbody>
           </table>
         </div>

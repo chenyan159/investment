@@ -68,7 +68,7 @@ test("running summary returns every row with the newest tasks first", () => {
   assert.equal(result.items[1].planVersion, null);
 });
 
-test("quota summary exposes remaining percentages for current and projected usage", () => {
+test("quota summary retains live percentages without reusing an old model token calibration", () => {
   const result = summarizeQuota({
     quota: { primaryUsedPercent: 68, secondaryUsedPercent: 20, blocked: false },
     eta: { estimatedRemainingTokens: 214_363_951 },
@@ -79,8 +79,11 @@ test("quota summary exposes remaining percentages for current and projected usag
   });
   assert.equal(result.primaryUsedPercent, 68);
   assert.equal(result.primaryRemainingPercent, 32);
-  assert.equal(result.projectedAtFinishUsedPercent, 78);
-  assert.equal(result.projectedAtFinishRemainingPercent, 22);
+  assert.equal(result.thresholdPercent, 95);
+  assert.equal(result.projectedAtFinishUsedPercent, null);
+  assert.equal(result.projectedAtFinishRemainingPercent, null);
+  assert.equal(result.estimatedThresholdAt, null);
+  assert.equal(result.forecastReason, "quota_conversion_uncalibrated");
 });
 
 test("completed summary calculates duration, token and attempt statistics", () => {
@@ -150,6 +153,24 @@ test("ETA is unavailable at concurrency zero without changing queue state", () =
   assert.equal(result.estimatedRemainingTokens, 7_500_000);
 });
 
+test("ETA excludes another model or reasoning effort and reports insufficient samples", () => {
+  for (const profile of [{ model: "gpt-6-astra", reasoningEffort: "high" }, { model: "gpt-6.1-sol", reasoningEffort: "high" }]) {
+    const sample = doneItem("old", 2, 100);
+    sample.tokenUsage.attempts[0].formal = profile;
+    const result = estimateCompletion({ active: [{ domain: "company", status: "pending", reasoningEffort: "max" }], allDone: [sample], currentRunDone: [sample], concurrency: 30, now });
+    assert.equal(result.available, false);
+    assert.equal(result.reason, "model_history_unavailable");
+    assert.equal(result.estimatedRemainingTokens, 7_500_000);
+  }
+});
+
+test("quota missing usage is unknown and never predicts exhaustion safety", () => {
+  const result = summarizeQuota({ quota: { primaryUsedPercent: null }, currentRunDone: [], now });
+  assert.equal(result.primaryRemainingPercent, null);
+  assert.equal(result.estimatedThresholdAt, null);
+  assert.equal(result.projectedAtFinishRemainingPercent, null);
+});
+
 function doneItem(subject, minutes, tokens, attempts = 1) {
   const started = new Date("2026-07-17T00:00:00Z");
   const finished = new Date(started.getTime() + minutes * 60_000);
@@ -164,6 +185,7 @@ function doneItem(subject, minutes, tokens, attempts = 1) {
     finishedAt: finished.toISOString(),
     archivedAt: finished.toISOString(),
     outputFile: `out/${subject}.md`,
-    tokenUsage: { total: { totalTokens: tokens } },
+    reasoningEffort: "max",
+    tokenUsage: { total: { totalTokens: tokens }, attempts: [{ formal: { model: "gpt-6.1-sol", reasoningEffort: "max" } }] },
   };
 }

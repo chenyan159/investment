@@ -22,7 +22,7 @@ export const DASHBOARD_PORT = parseInteger(
   4319,
   { min: 1, max: 65535 },
 );
-export const DEFAULT_RUNNER_CONCURRENCY = 12;
+export { DEFAULT_CONCURRENCY as DEFAULT_RUNNER_CONCURRENCY } from "../runtime-config.mjs";
 export const MAX_RUNNER_CONCURRENCY = 128;
 export const STATE_REFRESH_MS = 5_000;
 export const QUOTA_REFRESH_MS = 60_000;
@@ -35,8 +35,6 @@ export const RECENT_ITEM_LIMIT = 8;
 export const RECENT_ANOMALY_LIMIT = 8;
 export const RUNNING_VISIBLE_ROW_LIMIT = 10;
 
-// Empirical local planning baseline. It affects estimates only, never scheduling.
-export const ESTIMATED_FULL_WINDOW_TOKENS = 2_143_639_512;
 
 function parseInteger(raw, fallback, { min, max }) {
   if (raw === undefined || raw === null || String(raw).trim() === "") return fallback;

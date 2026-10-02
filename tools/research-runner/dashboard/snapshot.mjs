@@ -4,7 +4,6 @@ import { createHash } from "node:crypto";
 
 import {
   DONE_QUEUE_PATH,
-  ESTIMATED_FULL_WINDOW_TOKENS,
   LOCK_PATH,
   LOG_PATH,
   PROJECT_ROOT,
@@ -14,8 +13,12 @@ import {
   RECENT_ITEM_LIMIT,
   RUNNING_VISIBLE_ROW_LIMIT,
 } from "./config.mjs";
+import { CODEX_MODEL, DEFAULT_CONCURRENCY } from "../runtime-config.mjs";
+import { DEFAULT_REASONING_EFFORT } from "../queue-store.mjs";
+import { QUOTA_USAGE_THRESHOLD } from "../quota-control.mjs";
 
-const DEFAULT_DURATION_MINUTES = 30;
+const sdkPackagePath = new URL("../node_modules/@openai/codex-sdk/package.json", import.meta.url);
+
 const DEFAULT_P90_MINUTES = 45;
 const DEFAULT_TOKENS = 7_500_000;
 // Require explicit marker syntax so legitimate prose such as "still TBD" is not flagged.
@@ -50,7 +53,7 @@ export function buildDashboardSnapshot({ quota = null, now = new Date() } = {}) 
   const doneStats = summarizeDone(done, currentRunDone);
   const runningStats = summarizeRunning(running, now);
   const anomalyStats = summarizeAnomalies(logs);
-  const concurrency = Number.isInteger(control?.concurrency) ? control.concurrency : null;
+  const concurrency = Number.isInteger(control?.concurrency) ? control.concurrency : DEFAULT_CONCURRENCY;
   const eta = estimateCompletion({
     active,
     allDone: done,
@@ -66,6 +69,9 @@ export function buildDashboardSnapshot({ quota = null, now = new Date() } = {}) 
   return {
     generatedAt: now.toISOString(),
     runner: {
+      configuredModel: CODEX_MODEL,
+      defaultReasoningEffort: DEFAULT_REASONING_EFFORT,
+      sdkVersion: readJsonCached(sdkPackagePath)?.version ?? null,
       status,
       pid: lock?.pid ?? null,
       pidAlive: runnerAlive,
@@ -130,6 +136,7 @@ export function summarizeQueue(active, currentRunDone = []) {
       displayName: item.displayName || item.subject,
       status: item.status,
       planVersion: item.planVersion || null,
+      reasoningEffort: item.reasoningEffort || DEFAULT_REASONING_EFFORT,
     })),
   };
 }
@@ -259,12 +266,21 @@ export function estimateCompletion({ active, allDone, currentRunDone, concurrenc
 
   for (const item of blocking) {
     const domain = item.domain || "unknown";
-    const currentItems = currentByDomain.get(domain) || [];
-    const historyItems = historyByDomain.get(domain) || [];
+    const currentItems = (currentByDomain.get(domain) || []).filter((sample) => matchesRuntime(sample, item));
+    const historyItems = (historyByDomain.get(domain) || []).filter((sample) => matchesRuntime(sample, item));
     const source = currentItems.length >= 3 ? currentItems : historyItems;
     if (currentItems.length >= 3) usedCurrentRunData = true;
     const durationStats = numericStats(validDurations(source));
-    const mean = durationStats?.average ?? DEFAULT_DURATION_MINUTES;
+    if (!durationStats) {
+      return {
+        available: false,
+        complete: false,
+        reason: "model_history_unavailable",
+        model: CODEX_MODEL,
+        estimatedRemainingTokens: estimateRemainingTokens(blocking, allDone, currentRunDone),
+      };
+    }
+    const mean = durationStats.average;
     const p90 = durationStats?.p90 ?? Math.max(DEFAULT_P90_MINUTES, mean * 1.35);
     const elapsed = item.status === "running"
       ? Math.max(0, now.getTime() - itemTimeMs(item, ["startedAt", "updatedAt"])) / 60_000
@@ -403,18 +419,8 @@ export function summarizeQuota({ quota, eta, runnerAlive, runStartMs, currentRun
   }
   const used = quota.primaryUsedPercent;
   const remaining = Number.isFinite(used) ? Math.max(0, 100 - used) : null;
-  const remainingEstimate = eta?.estimatedRemainingTokens || 0;
-  const projectedUsed = Number.isFinite(used)
-    ? Math.min(100, used + (remainingEstimate / ESTIMATED_FULL_WINDOW_TOKENS) * 100)
-    : null;
-  const projectedRemaining = Number.isFinite(projectedUsed) ? Math.max(0, 100 - projectedUsed) : null;
-  const runTokens = sum(currentRunDone.map(totalTokens).filter(Number.isFinite));
-  const elapsedHours = runStartMs ? Math.max((now.getTime() - runStartMs) / 3_600_000, 0) : 0;
-  const tokensPerHour = runnerAlive && elapsedHours > 0 ? runTokens / elapsedHours : 0;
-  const tokensUntilThreshold = Number.isFinite(used)
-    ? Math.max(0, ((99 - used) / 100) * ESTIMATED_FULL_WINDOW_TOKENS)
-    : 0;
-  const hoursUntilThreshold = tokensPerHour > 0 ? tokensUntilThreshold / tokensPerHour : null;
+  // Subscription quota is not a fixed token budget. The former Astra calibration
+  // cannot predict Sol usage; retain live percentages without fabricating forecasts.
   return {
     available: true,
     loading: false,
@@ -422,16 +428,15 @@ export function summarizeQuota({ quota, eta, runnerAlive, runStartMs, currentRun
     primaryUsedPercent: used,
     primaryRemainingPercent: Number.isFinite(remaining) ? round(remaining, 1) : null,
     secondaryUsedPercent: quota.secondaryUsedPercent,
-    thresholdPercent: 99,
+    thresholdPercent: QUOTA_USAGE_THRESHOLD,
     resetsAt: quota.resetsAt || null,
     resetCredits: quota.resetCredits ?? null,
     checkedAt: quota.checkedAt || null,
-    projectedAtFinishUsedPercent: Number.isFinite(projectedUsed) ? round(projectedUsed, 1) : null,
-    projectedAtFinishRemainingPercent: Number.isFinite(projectedRemaining) ? round(projectedRemaining, 1) : null,
-    estimatedThresholdAt: hoursUntilThreshold !== null
-      ? new Date(now.getTime() + hoursUntilThreshold * 3_600_000).toISOString()
-      : null,
-    estimatedTokensPerHour: tokensPerHour > 0 ? Math.round(tokensPerHour) : null,
+    projectedAtFinishUsedPercent: null,
+    projectedAtFinishRemainingPercent: null,
+    estimatedThresholdAt: null,
+    estimatedTokensPerHour: null,
+    forecastReason: "quota_conversion_uncalibrated",
   };
 }
 
@@ -458,12 +463,19 @@ function estimateRemainingTokens(active, allDone, currentRunDone) {
     .filter((item) => ["pending", "running", "retry_pending"].includes(item.status))
     .map((item) => {
       const domain = item.domain || "unknown";
-      const current = currentByDomain.get(domain) || [];
-      const history = historyByDomain.get(domain) || [];
+      const current = (currentByDomain.get(domain) || []).filter((sample) => matchesRuntime(sample, item));
+      const history = (historyByDomain.get(domain) || []).filter((sample) => matchesRuntime(sample, item));
       const source = current.length >= 3 ? current : history;
       const tokens = source.map(totalTokens).filter(Number.isFinite);
       return tokens.length ? average(tokens) : DEFAULT_TOKENS;
     })));
+}
+
+function matchesRuntime(sample, item) {
+  const formalTurns = (sample.tokenUsage?.attempts || []).map((attempt) => attempt.formal).filter(Boolean);
+  const effort = item.reasoningEffort || DEFAULT_REASONING_EFFORT;
+  return formalTurns.length > 0 && formalTurns.every((turn) =>
+    turn.model === CODEX_MODEL && (turn.reasoningEffort || sample.reasoningEffort) === effort);
 }
 
 function remainingDuration(mean, p90, elapsed, conservative) {
