@@ -1,0 +1,938 @@
+{
+  "createdAt": "2026-10-02T08:34:17.857Z",
+  "selectionRule": "Exclude previous 30 and active queue; require company report; round-robin categories, oldest or missing scenario report first",
+  "excluded": [
+    "SPCX",
+    "CRWV",
+    "ALAB",
+    "MSFT",
+    "OKLO",
+    "MU",
+    "SNDK",
+    "TSM",
+    "CRDO",
+    "ADBE",
+    "TSLA",
+    "NBIS",
+    "RKLB",
+    "AMZN",
+    "IREN",
+    "GEV",
+    "LITE",
+    "GOOGL",
+    "VRT",
+    "AMD",
+    "MRVL",
+    "LIN",
+    "AVGO",
+    "CBRS",
+    "COHR",
+    "NVDA",
+    "ANET",
+    "BABA",
+    "ORCL",
+    "EQIX"
+  ],
+  "selected": [
+    {
+      "subject": "AMBA",
+      "displayName": "Ambarella",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "businessTags": "低功耗视觉AI SoC、CVflow架构、视频与多传感器处理",
+      "industrySubjects": "AI边缘推理芯片；工业机器视觉与精密感知",
+      "listingNote": "Nasdaq；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\AMBA_Ambarella_公司调研_2026-09-21.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "CLS",
+      "displayName": "Celestica Inc",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\CLS_Celestica_Inc_公司调研_2026-09-21.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "APH",
+      "displayName": "Amphenol 安费诺",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\APH_Amphenol_安费诺_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "PCRHY",
+      "displayName": "Panasonic Holdings 松下控股",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "MEGTRON低损耗覆铜板与多层电路材料；集团另含电池、家电及工业业务",
+      "industrySubjects": "AI高多层PCB、低损耗覆铜板与铜箔",
+      "listingNote": "美国OTC非保荐ADR；需券商支持；使用PCRHY而非旧PCRFY；2026-09-18新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\PCRHY_Panasonic_Holdings_松下控股_公司调研_2026-09-22.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "ACLS",
+      "displayName": "Axcelis Technologies",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\ACLS_Axcelis_Technologies_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "AEHR",
+      "displayName": "Aehr Test Systems",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\AEHR_Aehr_Test_Systems_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "ALGM",
+      "displayName": "Allegro MicroSystems",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "磁性电流/位置传感、电机驱动、安全电源IC",
+      "industrySubjects": "功率半导体与高压保护器件；工业机器视觉与精密感知",
+      "listingNote": "Nasdaq；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\ALGM_Allegro_MicroSystems_公司调研_2026-09-22.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "SBGSY",
+      "displayName": "Schneider Electric 施耐德",
+      "category": "配电_电源系统_电气设备",
+      "businessTags": "配电、UPS、控制、能管与热管理集成能力",
+      "industrySubjects": "数据中心开关设备与变压器；数据中心UPS与电池储能；数据中心直液冷系统；DCIM、能控与AI工厂数字孪生",
+      "listingNote": "美国OTC ADR；需券商支持；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\SBGSY_Schneider_Electric_施耐德_公司调研_2026-09-22.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "CCJ",
+      "displayName": "Cameco",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "铀资源、转化/燃料服务及Westinghouse技术与服务股权",
+      "industrySubjects": "数据中心自备发电与微电网；核燃料循环与浓缩服务",
+      "listingNote": "NYSE；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\CCJ_Cameco_公司调研_2026-09-22.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "ITT",
+      "displayName": "ITT",
+      "category": "热管理_流体_水处理",
+      "businessTags": "工业泵阀、流体处理、高可靠连接器、振动与运动部件",
+      "industrySubjects": "液冷小组件与流体控制；高速连接器、背板与结构化布线",
+      "listingNote": "NYSE；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\热管理_流体_水处理\\ITT_ITT_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "EME",
+      "displayName": "EMCOR Group",
+      "category": "工程建设_机电安装",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\工程建设_机电安装\\EME_EMCOR_Group_公司调研_2026-09-26.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "CGNX",
+      "displayName": "Cognex",
+      "category": "机器人_工业自动化_智能硬件",
+      "businessTags": "工业机器视觉、读码、视觉算法与OneVision部署平台",
+      "industrySubjects": "工业机器视觉与精密感知；仓储物流机器人与自动化系统",
+      "listingNote": "Nasdaq；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\CGNX_Cognex_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "ASTS",
+      "displayName": "AST SpaceMobile",
+      "category": "航空航天_卫星_高可靠系统",
+      "businessTags": "大型相控阵天线、卫星蜂窝链路、专用ASIC与运营商集成",
+      "industrySubjects": "低轨卫星通信、直连手机与地面终端",
+      "listingNote": "Nasdaq；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\ASTS_AST_SpaceMobile_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "NET",
+      "displayName": "Cloudflare",
+      "category": "云算力_IDC_边缘云",
+      "businessTags": "全球边缘网络、Workers计算、应用交付、连接与零信任安全",
+      "industrySubjects": "网络安全、身份权限与AI治理；AI集群调度与推理运行时；边缘云、应用交付与无服务器计算",
+      "listingNote": "NYSE；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\NET_Cloudflare_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "CRM",
+      "displayName": "Salesforce",
+      "category": "企业软件_数据平台",
+      "businessTags": "客户关系管理、Agentforce、Data 360、Slack与企业工作流",
+      "industrySubjects": "企业AI与Agent工作流软件；数据平台、数据库与AI数据软件",
+      "listingNote": "NYSE；2026-09-18新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\企业软件_数据平台\\CRM_Salesforce_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "PANW",
+      "displayName": "Palo Alto Networks",
+      "category": "网络安全_身份权限_治理",
+      "businessTags": "网络/云安全、Cortex、安全运营与身份权限平台",
+      "industrySubjects": "网络安全、身份权限与AI治理",
+      "listingNote": "Nasdaq；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\网络安全_身份权限_治理\\PANW_Palo_Alto_Networks_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "ARM",
+      "displayName": "Arm Holdings",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\ARM_Arm_Holdings_公司调研_2026-09-21.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "DELL",
+      "displayName": "Dell Technologies",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\DELL_Dell_Technologies_公司调研_2026-09-21.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "BDC",
+      "displayName": "Belden",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\BDC_Belden_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "TTMI",
+      "displayName": "TTM Technologies",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "高多层/高密度PCB、RF微波组件、航空航天认证与复杂互连制造",
+      "industrySubjects": "高速连接器、背板与结构化布线；封装基板、中介层与RDL；AI高多层PCB、低损耗覆铜板与铜箔",
+      "listingNote": "Nasdaq；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\TTMI_TTM_Technologies_公司调研_2026-09-22.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "ACMR",
+      "displayName": "ACM Research",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\ACMR_ACM_Research_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "AMKR",
+      "displayName": "Amkor Technology",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\AMKR_Amkor_Technology_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "ADI",
+      "displayName": "Analog Devices",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "模拟信号链、数据转换、电源管理、汽车与工业",
+      "industrySubjects": "功率半导体与高压保护器件；工业机器视觉与精密感知",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\ADI_Analog_Devices_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "ABBNY",
+      "displayName": "ABB Ltd",
+      "category": "配电_电源系统_电气设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\ABBNY_ABB_Ltd_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "LEU",
+      "displayName": "Centrus Energy",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "铀浓缩离心机与HALEU生产能力、核许可与工艺经验",
+      "industrySubjects": "数据中心自备发电与微电网；核燃料循环与浓缩服务",
+      "listingNote": "NYSE；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\LEU_Centrus_Energy_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "SPXC",
+      "displayName": "SPX Technologies",
+      "category": "热管理_流体_水处理",
+      "businessTags": "冷却塔、干式/绝热排热、空气管理及专用检测设备",
+      "industrySubjects": "数据中心风冷、冷水机组与HVAC；数据中心直液冷系统",
+      "listingNote": "NYSE；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\热管理_流体_水处理\\SPXC_SPX_Technologies_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "FIX",
+      "displayName": "Comfort Systems USA",
+      "category": "工程建设_机电安装",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\工程建设_机电安装\\FIX_Comfort_Systems_USA_公司调研_2026-09-26.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "EMR",
+      "displayName": "Emerson Electric",
+      "category": "机器人_工业自动化_智能硬件",
+      "businessTags": "过程控制、测量仪表、控制阀、工业软件与测试自动化",
+      "industrySubjects": "DCIM、能控与AI工厂数字孪生；工业自动化控制、工业机器人与协作机器人",
+      "listingNote": "NYSE；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\EMR_Emerson_Electric_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "CW",
+      "displayName": "Curtiss-Wright",
+      "category": "航空航天_卫星_高可靠系统",
+      "businessTags": "核级泵阀、反应堆控制/仪控、高可靠嵌入式计算及飞行系统",
+      "industrySubjects": "数据中心自备发电与微电网；运载火箭、航天器与空间基础设施",
+      "listingNote": "NYSE；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\CW_Curtiss-Wright_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "APLD",
+      "displayName": "Applied Digital",
+      "category": "云算力_IDC_边缘云",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\APLD_Applied_Digital_公司调研_2026-09-26.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "DDOG",
+      "displayName": "Datadog",
+      "category": "企业软件_数据平台",
+      "businessTags": "指标/日志/追踪、应用性能、LLM可观测性与自动化运维",
+      "industrySubjects": "AI Fabric网络操作系统与遥测软件；AI集群调度与推理运行时；数据平台、数据库与AI数据软件；云与AI应用可观测性、运维自动化",
+      "listingNote": "Nasdaq；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\企业软件_数据平台\\DDOG_Datadog_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "CRWD",
+      "displayName": "CrowdStrike",
+      "category": "网络安全_身份权限_治理",
+      "businessTags": "终端安全、云安全、身份安全、安全运营",
+      "industrySubjects": "网络安全、身份权限与AI治理",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\网络安全_身份权限_治理\\CRWD_CrowdStrike_公司调研_2026-09-26.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "CDNS",
+      "displayName": "Cadence Design Systems",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\CDNS_Cadence_Design_Systems_公司调研_2026-09-21.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "FLEX",
+      "displayName": "Flex Ltd",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\FLEX_Flex_Ltd_公司调研_2026-09-21.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "AAOI",
+      "displayName": "Applied Optoelectronics",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\AAOI_Applied_Optoelectronics_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "SOMMY",
+      "displayName": "住友化学 Sumitomo Chemical",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\SOMMY_住友化学_Sumitomo_Chemical_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "AEIS",
+      "displayName": "Advanced Energy Industries",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\AEIS_Advanced_Energy_Industries_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "ASMVY",
+      "displayName": "ASMPT",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\ASMVY_ASMPT_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "ON",
+      "displayName": "onsemi",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "功率半导体、SiC、图像传感、汽车与工业",
+      "industrySubjects": "功率半导体与高压保护器件；工业机器视觉与精密感知",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\ON_onsemi_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "ATKR",
+      "displayName": "Atkore",
+      "category": "配电_电源系统_电气设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\ATKR_Atkore_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "ET",
+      "displayName": "Energy Transfer LP",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\ET_Energy_Transfer_LP_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "AAON",
+      "displayName": "AAON",
+      "category": "热管理_流体_水处理",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\热管理_流体_水处理\\AAON_AAON_公司调研_2026-09-26.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "IESC",
+      "displayName": "IES Holdings",
+      "category": "工程建设_机电安装",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\工程建设_机电安装\\IESC_IES_Holdings_公司调研_2026-09-26.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "FANUY",
+      "displayName": "FANUC 发那科",
+      "category": "机器人_工业自动化_智能硬件",
+      "businessTags": "CNC、伺服、工业机器人本体与长期维护生态",
+      "industrySubjects": "工业自动化控制、工业机器人与协作机器人",
+      "listingNote": "美国OTC ADR；需券商支持；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\FANUY_FANUC_发那科_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "PL",
+      "displayName": "Planet Labs",
+      "category": "航空航天_卫星_高可靠系统",
+      "businessTags": "高频地球观测星座、历史影像、光谱/高分辨率能力与地理数据平台",
+      "industrySubjects": "地球观测、遥感数据与空间信息服务",
+      "listingNote": "NYSE；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\PL_Planet_Labs_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "DLR",
+      "displayName": "Digital Realty",
+      "category": "云算力_IDC_边缘云",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\云算力_IDC_边缘云\\DLR_Digital_Realty_公司调研_2026-09-26.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "DT",
+      "displayName": "Dynatrace",
+      "category": "企业软件_数据平台",
+      "businessTags": "应用性能监控、日志与追踪、AI可观测性、生产诊断与运维自动化",
+      "industrySubjects": "云与AI应用可观测性、运维自动化",
+      "listingNote": "NYSE；2026-09-18新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\企业软件_数据平台\\DT_Dynatrace_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "INTC",
+      "displayName": "Intel Corporation 英特尔",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\INTC_Intel_Corporation_英特尔_公司调研_2026-09-21.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "FN",
+      "displayName": "Fabrinet",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\FN_Fabrinet_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "BELFB",
+      "displayName": "Bel Fuse Inc",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\BELFB_Bel_Fuse_Inc_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "AJNMY",
+      "displayName": "味之素 Ajinomoto",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\AJNMY_味之素_Ajinomoto_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "AMAT",
+      "displayName": "Applied Materials",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\AMAT_Applied_Materials_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "ASX",
+      "displayName": "ASE Technology Holding",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\ASX_ASE_Technology_Holding_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "STM",
+      "displayName": "STMicroelectronics",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "功率半导体、MCU、传感器、汽车与工业",
+      "industrySubjects": "功率半导体与高压保护器件；服务器BMC、MCU与嵌入式控制",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\STM_STMicroelectronics_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "ETN",
+      "displayName": "Eaton Corporation",
+      "category": "配电_电源系统_电气设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\ETN_Eaton_Corporation_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "PSIX",
+      "displayName": "Power Solutions International",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\PSIX_Power_Solutions_International_公司调研_2026-09-26.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "CARR",
+      "displayName": "Carrier Global",
+      "category": "热管理_流体_水处理",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\热管理_流体_水处理\\CARR_Carrier_Global_公司调研_2026-09-26.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "MYRG",
+      "displayName": "MYR Group",
+      "category": "工程建设_机电安装",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\工程建设_机电安装\\MYRG_MYR_Group_公司调研_2026-09-26.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "ROK",
+      "displayName": "Rockwell Automation",
+      "category": "机器人_工业自动化_智能硬件",
+      "businessTags": "PLC/PAC控制、工业运动、安全控制、制造软件与OT集成",
+      "industrySubjects": "DCIM、能控与AI工厂数字孪生；工业自动化控制、工业机器人与协作机器人",
+      "listingNote": "NYSE；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\ROK_Rockwell_Automation_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "RDW",
+      "displayName": "Redwire",
+      "category": "航空航天_卫星_高可靠系统",
+      "businessTags": "空间电源/展开结构、航天部件、在轨制造与自主系统",
+      "industrySubjects": "运载火箭、航天器与空间基础设施",
+      "listingNote": "NYSE；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\航空航天_卫星_高可靠系统\\RDW_Redwire_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "NOW",
+      "displayName": "ServiceNow",
+      "category": "企业软件_数据平台",
+      "businessTags": "企业工作流、CMDB、权限/审计、流程编排与Agent落地",
+      "industrySubjects": "企业AI与Agent工作流软件",
+      "listingNote": "NYSE；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\企业软件_数据平台\\NOW_ServiceNow_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "MCHP",
+      "displayName": "Microchip Technology",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\MCHP_Microchip_Technology_公司调研_2026-09-21.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "HPE",
+      "displayName": "惠普企业",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\HPE_惠普企业_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "CIEN",
+      "displayName": "Ciena Corporation",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\CIEN_Ciena_Corporation_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "APD",
+      "displayName": "Air Products and Chemicals",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\APD_Air_Products_and_Chemicals_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "ASMIY",
+      "displayName": "ASM International",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\ASMIY_ASM_International_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "ATEYY",
+      "displayName": "Advantest",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\ATEYY_Advantest_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "TXN",
+      "displayName": "德州仪器",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "模拟芯片、电源管理、嵌入式处理、汽车与工业",
+      "industrySubjects": "功率半导体与高压保护器件；服务器BMC、MCU与嵌入式控制",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\TXN_德州仪器_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "HUBB",
+      "displayName": "Hubbell",
+      "category": "配电_电源系统_电气设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\HUBB_Hubbell_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "AEP",
+      "displayName": "American Electric Power",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\AEP_American_Electric_Power_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "DCI",
+      "displayName": "Donaldson Company",
+      "category": "热管理_流体_水处理",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\热管理_流体_水处理\\DCI_Donaldson_Company_公司调研_2026-09-26.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "PWR",
+      "displayName": "Quanta Services",
+      "category": "工程建设_机电安装",
+      "businessTags": "输配电工程、并网、机电施工、项目交付",
+      "industrySubjects": "数据中心电力接入与高压变电；数据中心土建、MEP与预制化交付",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\工程建设_机电安装\\PWR_Quanta_Services_公司调研_2026-09-26.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "SMCAY",
+      "displayName": "SMC",
+      "category": "机器人_工业自动化_智能硬件",
+      "businessTags": "气动/电动执行器、精密阀、真空抓取及温控设备",
+      "industrySubjects": "液冷小组件与流体控制；半导体设备子系统与真空/RF/流体模块；人形机器人与关键执行部件",
+      "listingNote": "美国OTC ADR；需券商支持；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\SMCAY_SMC_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "PLTR",
+      "displayName": "Palantir Technologies",
+      "category": "企业软件_数据平台",
+      "businessTags": "Ontology业务本体、AIP、权限控制与复杂业务部署",
+      "industrySubjects": "企业AI与Agent工作流软件；数据平台、数据库与AI数据软件",
+      "listingNote": "Nasdaq；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\企业软件_数据平台\\PLTR_Palantir_Technologies_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "MXL",
+      "displayName": "MaxLinear",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\MXL_MaxLinear_公司调研_2026-09-21.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "JBL",
+      "displayName": "Jabil Inc",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\JBL_Jabil_Inc_公司调研_2026-10-01.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "CSCO",
+      "displayName": "Cisco Systems",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\CSCO_Cisco_Systems_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "ASGLY",
+      "displayName": "AGC Inc",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\ASGLY_AGC_Inc_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "ASML",
+      "displayName": "ASML Holding NV",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\晶圆制造_前道设备\\ASML_ASML_Holding_NV_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "BESIY",
+      "displayName": "BE Semiconductor",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\封测_检测_计量_光罩\\BESIY_BE_Semiconductor_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "AOSL",
+      "displayName": "Alpha and Omega Semiconductor",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\功率半导体_电源管理_传感器\\AOSL_Alpha_and_Omega_Semiconductor_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "MIELY",
+      "displayName": "三菱电机 Mitsubishi Electric",
+      "category": "配电_电源系统_电气设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\配电_电源系统_电气设备\\MIELY_三菱电机_Mitsubishi_Electric_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "AMPX",
+      "displayName": "Amprius Technologies",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\电力_发电_能源_储能\\AMPX_Amprius_Technologies_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "DKILY",
+      "displayName": "Daikin Industries",
+      "category": "热管理_流体_水处理",
+      "businessTags": "暖通空调、冷水机组、制冷剂、氟化学",
+      "industrySubjects": "数据中心风冷、冷水机组与HVAC；冷却液、水处理、过滤与制冷剂",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\热管理_流体_水处理\\DKILY_Daikin_Industries_公司调研_2026-09-26.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "SYM",
+      "displayName": "Symbotic",
+      "category": "机器人_工业自动化_智能硬件",
+      "businessTags": "仓储机器人、路径调度、托盘/箱件处理和系统集成",
+      "industrySubjects": "仓储物流机器人与自动化系统",
+      "listingNote": "Nasdaq；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\机器人_工业自动化_智能硬件\\SYM_Symbotic_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "SNOW",
+      "displayName": "Snowflake",
+      "category": "企业软件_数据平台",
+      "businessTags": "云数据执行引擎、权限治理、数据共享与AI数据平台",
+      "industrySubjects": "数据平台、数据库与AI数据软件",
+      "listingNote": "NYSE；2026-09-10新增登记",
+      "companyReport": "基本面\\公司调研\\结果\\企业软件_数据平台\\SNOW_Snowflake_公司调研_2026-09-26.md",
+      "latestScenarioDate": null
+    },
+    {
+      "subject": "QCOM",
+      "displayName": "Qualcomm",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI计算芯片_EDA_IP_custom_ASIC\\QCOM_Qualcomm_公司调研_2026-09-21.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "MRAM",
+      "displayName": "Everspin Technologies",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI服务器_存储_EMS\\MRAM_Everspin_Technologies_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-08"
+    },
+    {
+      "subject": "GLW",
+      "displayName": "Corning",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\AI网络_光互联_连接器\\GLW_Corning_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    },
+    {
+      "subject": "AXTI",
+      "displayName": "AXT Inc",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": "",
+      "companyReport": "基本面\\公司调研\\结果\\电子材料_化学品_基板_PCB\\AXTI_AXT_Inc_公司调研_2026-09-22.md",
+      "latestScenarioDate": "2026-09-09"
+    }
+  ]
+}

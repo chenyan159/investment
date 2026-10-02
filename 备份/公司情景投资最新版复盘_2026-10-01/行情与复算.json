@@ -1,0 +1,400 @@
+{
+  "reportDate": "2026-09-26",
+  "informationCutoff": "2026-10-01 America/Los_Angeles",
+  "retrievedAtUTC": "2026-10-02 04:24:25 UTC",
+  "endQuoteAt": "2026-10-01 16:00 America/New_York",
+  "convention": "Regular-session raw close price return; excludes dividends, taxes and costs. Friday baseline is not an executable Saturday price. Monday-open comparison is illustrative, not a strategy backtest.",
+  "sessionCount": 4,
+  "rows": [
+    {
+      "ticker": "ADBE",
+      "source": "https://stockanalysis.com/stocks/adbe/history/",
+      "currency": "USD",
+      "securityUnit": "share",
+      "baselineCloseDate": "2026-09-25",
+      "baselineClose": 235.47,
+      "firstRegularSessionAfterReport": "2026-09-28",
+      "firstOpen": 229.72,
+      "dailyCloses": [
+        {
+          "date": "2026-09-28",
+          "close": 231.01
+        },
+        {
+          "date": "2026-09-29",
+          "close": 233.17
+        },
+        {
+          "date": "2026-09-30",
+          "close": 239.94
+        },
+        {
+          "date": "2026-10-01",
+          "close": 241.28
+        }
+      ],
+      "closeToCloseReturnPct": 2.4674056143033196,
+      "firstOpenToEndReturnPct": 5.032213129026641,
+      "lastSessionReturnPct": 0.5584729515712317
+    },
+    {
+      "ticker": "ALAB",
+      "source": "https://stockanalysis.com/stocks/alab/history/",
+      "currency": "USD",
+      "securityUnit": "share",
+      "baselineCloseDate": "2026-09-25",
+      "baselineClose": 364.62,
+      "firstRegularSessionAfterReport": "2026-09-28",
+      "firstOpen": 356.32,
+      "dailyCloses": [
+        {
+          "date": "2026-09-28",
+          "close": 351.31
+        },
+        {
+          "date": "2026-09-29",
+          "close": 357.84
+        },
+        {
+          "date": "2026-09-30",
+          "close": 355.97
+        },
+        {
+          "date": "2026-10-01",
+          "close": 356.42
+        }
+      ],
+      "closeToCloseReturnPct": -2.2489166803795646,
+      "firstOpenToEndReturnPct": 0.02806466097891036,
+      "lastSessionReturnPct": 0.12641514734388348
+    },
+    {
+      "ticker": "CRDO",
+      "source": "https://stockanalysis.com/stocks/crdo/history/",
+      "currency": "USD",
+      "securityUnit": "share",
+      "baselineCloseDate": "2026-09-25",
+      "baselineClose": 210.97,
+      "firstRegularSessionAfterReport": "2026-09-28",
+      "firstOpen": 206.12,
+      "dailyCloses": [
+        {
+          "date": "2026-09-28",
+          "close": 192.67
+        },
+        {
+          "date": "2026-09-29",
+          "close": 192.35
+        },
+        {
+          "date": "2026-09-30",
+          "close": 194.79
+        },
+        {
+          "date": "2026-10-01",
+          "close": 210.17
+        }
+      ],
+      "closeToCloseReturnPct": -0.37920083424184403,
+      "firstOpenToEndReturnPct": 1.964874830195984,
+      "lastSessionReturnPct": 7.895682529904002
+    },
+    {
+      "ticker": "CRWV",
+      "source": "https://stockanalysis.com/stocks/crwv/history/",
+      "currency": "USD",
+      "securityUnit": "share",
+      "baselineCloseDate": "2026-09-25",
+      "baselineClose": 87.59,
+      "firstRegularSessionAfterReport": "2026-09-28",
+      "firstOpen": 86.21,
+      "dailyCloses": [
+        {
+          "date": "2026-09-28",
+          "close": 85.07
+        },
+        {
+          "date": "2026-09-29",
+          "close": 85.93
+        },
+        {
+          "date": "2026-09-30",
+          "close": 87.12
+        },
+        {
+          "date": "2026-10-01",
+          "close": 88.57
+        }
+      ],
+      "closeToCloseReturnPct": 1.1188491836967573,
+      "firstOpenToEndReturnPct": 2.737501449947799,
+      "lastSessionReturnPct": 1.6643709825527875
+    },
+    {
+      "ticker": "MSFT",
+      "source": "https://stockanalysis.com/stocks/msft/history/",
+      "currency": "USD",
+      "securityUnit": "share",
+      "baselineCloseDate": "2026-09-25",
+      "baselineClose": 516.17,
+      "firstRegularSessionAfterReport": "2026-09-28",
+      "firstOpen": 505.47,
+      "dailyCloses": [
+        {
+          "date": "2026-09-28",
+          "close": 509.22
+        },
+        {
+          "date": "2026-09-29",
+          "close": 508.96
+        },
+        {
+          "date": "2026-09-30",
+          "close": 512.9
+        },
+        {
+          "date": "2026-10-01",
+          "close": 512.8
+        }
+      ],
+      "closeToCloseReturnPct": -0.6528856771993774,
+      "firstOpenToEndReturnPct": 1.4501355174391994,
+      "lastSessionReturnPct": -0.019496977968413987
+    },
+    {
+      "ticker": "MU",
+      "source": "https://stockanalysis.com/stocks/mu/history/",
+      "currency": "USD",
+      "securityUnit": "share",
+      "baselineCloseDate": "2026-09-25",
+      "baselineClose": 1082.28,
+      "firstRegularSessionAfterReport": "2026-09-28",
+      "firstOpen": 1075.98,
+      "dailyCloses": [
+        {
+          "date": "2026-09-28",
+          "close": 1053.98
+        },
+        {
+          "date": "2026-09-29",
+          "close": 1065.08
+        },
+        {
+          "date": "2026-09-30",
+          "close": 1065.11
+        },
+        {
+          "date": "2026-10-01",
+          "close": 1097.39
+        }
+      ],
+      "closeToCloseReturnPct": 1.396126695494715,
+      "firstOpenToEndReturnPct": 1.989813937062035,
+      "lastSessionReturnPct": 3.0306728882462997
+    },
+    {
+      "ticker": "OKLO",
+      "source": "https://stockanalysis.com/stocks/oklo/history/",
+      "currency": "USD",
+      "securityUnit": "share",
+      "baselineCloseDate": "2026-09-25",
+      "baselineClose": 38.04,
+      "firstRegularSessionAfterReport": "2026-09-28",
+      "firstOpen": 37.2,
+      "dailyCloses": [
+        {
+          "date": "2026-09-28",
+          "close": 37.11
+        },
+        {
+          "date": "2026-09-29",
+          "close": 37.11
+        },
+        {
+          "date": "2026-09-30",
+          "close": 37.02
+        },
+        {
+          "date": "2026-10-01",
+          "close": 36.14
+        }
+      ],
+      "closeToCloseReturnPct": -4.994742376445838,
+      "firstOpenToEndReturnPct": -2.849462365591404,
+      "lastSessionReturnPct": -2.377093462992985
+    },
+    {
+      "ticker": "SNDK",
+      "source": "https://stockanalysis.com/stocks/sndk/history/",
+      "currency": "USD",
+      "securityUnit": "share",
+      "baselineCloseDate": "2026-09-25",
+      "baselineClose": 1777.8,
+      "firstRegularSessionAfterReport": "2026-09-28",
+      "firstOpen": 1736.64,
+      "dailyCloses": [
+        {
+          "date": "2026-09-28",
+          "close": 1712.89
+        },
+        {
+          "date": "2026-09-29",
+          "close": 1729.76
+        },
+        {
+          "date": "2026-09-30",
+          "close": 1739.89
+        },
+        {
+          "date": "2026-10-01",
+          "close": 1787.69
+        }
+      ],
+      "closeToCloseReturnPct": 0.5563055461806687,
+      "firstOpenToEndReturnPct": 2.9395844849824826,
+      "lastSessionReturnPct": 2.747300116674034
+    },
+    {
+      "ticker": "SPCX",
+      "source": "https://stockanalysis.com/stocks/spcx/history/",
+      "currency": "USD",
+      "securityUnit": "share",
+      "baselineCloseDate": "2026-09-25",
+      "baselineClose": 148.68,
+      "firstRegularSessionAfterReport": "2026-09-28",
+      "firstOpen": 148.49,
+      "dailyCloses": [
+        {
+          "date": "2026-09-28",
+          "close": 145.47
+        },
+        {
+          "date": "2026-09-29",
+          "close": 149.24
+        },
+        {
+          "date": "2026-09-30",
+          "close": 150.86
+        },
+        {
+          "date": "2026-10-01",
+          "close": 148.07
+        }
+      ],
+      "closeToCloseReturnPct": -0.41027710519236926,
+      "firstOpenToEndReturnPct": -0.2828473297865286,
+      "lastSessionReturnPct": -1.8493967917274423
+    },
+    {
+      "ticker": "TSM",
+      "source": "https://stockanalysis.com/stocks/tsm/history/",
+      "currency": "USD",
+      "securityUnit": "ADS (1 ADS = 5 ordinary shares)",
+      "baselineCloseDate": "2026-09-25",
+      "baselineClose": 450.61,
+      "firstRegularSessionAfterReport": "2026-09-28",
+      "firstOpen": 448.39,
+      "dailyCloses": [
+        {
+          "date": "2026-09-28",
+          "close": 452.88
+        },
+        {
+          "date": "2026-09-29",
+          "close": 456.94
+        },
+        {
+          "date": "2026-09-30",
+          "close": 456.19
+        },
+        {
+          "date": "2026-10-01",
+          "close": 459.2
+        }
+      ],
+      "closeToCloseReturnPct": 1.9063047868445038,
+      "firstOpenToEndReturnPct": 2.4108476995472694,
+      "lastSessionReturnPct": 0.6598127972993639
+    },
+    {
+      "ticker": "SPY",
+      "source": "https://stockanalysis.com/etf/spy/history/",
+      "currency": "USD",
+      "securityUnit": "share",
+      "baselineCloseDate": "2026-09-25",
+      "baselineClose": 771.35,
+      "firstRegularSessionAfterReport": "2026-09-28",
+      "firstOpen": 768.35,
+      "dailyCloses": [
+        {
+          "date": "2026-09-28",
+          "close": 765.61
+        },
+        {
+          "date": "2026-09-29",
+          "close": 764.2
+        },
+        {
+          "date": "2026-09-30",
+          "close": 762.63
+        },
+        {
+          "date": "2026-10-01",
+          "close": 763.99
+        }
+      ],
+      "closeToCloseReturnPct": -0.9541712581837003,
+      "firstOpenToEndReturnPct": -0.5674497299407832,
+      "lastSessionReturnPct": 0.17833025189148977
+    },
+    {
+      "ticker": "QQQ",
+      "source": "https://stockanalysis.com/etf/qqq/history/",
+      "currency": "USD",
+      "securityUnit": "share",
+      "baselineCloseDate": "2026-09-25",
+      "baselineClose": 744.5,
+      "firstRegularSessionAfterReport": "2026-09-28",
+      "firstOpen": 740.46,
+      "dailyCloses": [
+        {
+          "date": "2026-09-28",
+          "close": 736.53
+        },
+        {
+          "date": "2026-09-29",
+          "close": 737.93
+        },
+        {
+          "date": "2026-09-30",
+          "close": 739.77
+        },
+        {
+          "date": "2026-10-01",
+          "close": 742.03
+        }
+      ],
+      "closeToCloseReturnPct": -0.33176628609805636,
+      "firstOpenToEndReturnPct": 0.21203035950625448,
+      "lastSessionReturnPct": 0.3055003582194349
+    }
+  ],
+  "micronCalculations": {
+    "originalFY27RevenueB": 210.4,
+    "originalFY27OptimisticRevenueB": 247.29,
+    "oldQ4ManagementGuideMidB": 50,
+    "oldQ4ManagementGuideUpperB": 51,
+    "actualQ4RevenueB": 54.229,
+    "newQ1FY27RevenueGuideMidB": 61.5,
+    "newQ1RevenueGuideHalfRangeB": 1.5,
+    "Q4vsOldManagementGuideMidPct": 8.457999999999988,
+    "Q4vsOldManagementGuideUpperPct": 6.331372549019609,
+    "Q1GuideAnnualizedB": 246,
+    "guideAnnualizedVsOriginalFY27BasePct": 16.92015209125475,
+    "guideAnnualizedVsOriginalFY27OptimisticPct": -0.5216547373529057,
+    "originalFY27CapexB": 47,
+    "newH1FY27CapexGuideB": 25,
+    "impliedFY27CapexLowerBoundaryB": 50,
+    "note": "Quarterly annualization is a run-rate consistency check, not realized FY27 revenue or an unconditional floor. Full-year capex >50B is conditional on management's H1 ~25B and higher H2 outlook. The original model's economic net capex and management's capex outlook require reconciliation of leases, subsidies and cash timing before treating the difference as a comparable forecast error."
+  }
+}

@@ -18,18 +18,20 @@
 
 本机直接使用 `D:\investment` 作为 [chenyan159/investment](https://github.com/chenyan159/investment) 的工作目录，Git 历史保存在根目录的 `.git/` 中。日常编辑、运行和提交都在同一个目录完成。
 
-先检查改动，确认需要保存的文件已经写完，再提交和上传：
+先检查改动，确认需要保存的文件已经写完，再运行更新脚本（需要 PowerShell 7 和 Git）：
 
 ```powershell
 git -C D:/investment status --short
-git -C D:/investment add -A
-git -C D:/investment commit -m "Update investment research"
-git -C D:/investment push
+pwsh -NoProfile -NonInteractive -ExecutionPolicy Bypass -File D:/investment/tools/update-github.ps1
 ```
 
-文件修改后需要提交并推送才会出现在 GitHub；目前没有设置定时上传。多电脑使用时，开始工作前在工作区干净的情况下运行 `git pull --ff-only`，结束工作后提交并推送。
+脚本从自身位置定位项目根目录，可以从任意目录调用。它收录新增、修改、删除和移动，遵守现有 Git 排除规则；有变化才提交，每次都尝试上传已有的未推送提交。可用 `-Message "说明"` 自定义提交说明。
 
-本机 `tools/site` 仍保留独立的网站发布仓库，指向 `chenyan159/projectananta-research`，只记录 `docs/` 发布包。在该子目录运行 Git 命令会操作网站发布仓库；整个项目的提交应从根目录执行，或像上面一样明确使用 `git -C D:/investment`。网站源码由根目录仓库正常跟踪，网站发布操作见 [DEPLOYMENT.md](tools/site/DEPLOYMENT.md)。
+成功时会显示 `SUCCESS` 并核验 GitHub 提交与本地一致。退出码 `0` 表示更新完成；`1` 表示失败，已创建的本地提交会保留，修复网络、登录或远端分歧后可重跑；`2` 表示提交已上传，但执行期间又产生了本地变化，应等文件写入完成后重跑。脚本不会自动拉取、合并、重置、强制推送或启动研究程序；请避免与其他任务同时执行 Git 提交。
+
+目前没有设置定时上传。多电脑使用时，开始工作前在工作区干净的情况下运行 `git pull --ff-only`，结束工作后运行更新脚本。Git 保存文件；空目录和被排除的内容不随仓库上传。
+
+本机 `tools/site` 仍保留独立的网站发布仓库，指向 `chenyan159/projectananta-research`，只记录 `docs/` 发布包。在该子目录运行 Git 命令会操作网站发布仓库；整个项目的更新使用上面的脚本。网站源码由根目录仓库正常跟踪，网站发布操作见 [DEPLOYMENT.md](tools/site/DEPLOYMENT.md)。
 
 ## 在其他电脑使用
 

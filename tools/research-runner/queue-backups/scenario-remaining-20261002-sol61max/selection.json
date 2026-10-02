@@ -1,0 +1,936 @@
+{
+  "createdAt": "2026-10-02T16:39:19.072Z",
+  "sourceDate": "2026-10-02",
+  "selected": [
+    {
+      "subject": "SNPS",
+      "displayName": "Synopsys",
+      "category": "AI计算芯片_EDA_IP_custom_ASIC",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "NTAP",
+      "displayName": "NetApp",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "P",
+      "displayName": "Everpure",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "PENG",
+      "displayName": "Penguin Solutions",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "RMBS",
+      "displayName": "Rambus",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "SANM",
+      "displayName": "Sanmina Corporation",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "SIMO",
+      "displayName": "Silicon Motion Technology",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "SKHY",
+      "displayName": "SK hynix Inc",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "SMCI",
+      "displayName": "Super Micro Computer Inc",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "STX",
+      "displayName": "Seagate Technology",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "WDC",
+      "displayName": "WesternDigital",
+      "category": "AI服务器_存储_EMS",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "LWLG",
+      "displayName": "Lightwave Logic",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "MTSI",
+      "displayName": "MACOM Technology Solutions",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "NOK",
+      "displayName": "诺基亚",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "POET",
+      "displayName": "POET Technologies",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "SITM",
+      "displayName": "SiTime Corporation",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "SMTC",
+      "displayName": "Semtech Corporation",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "TEL",
+      "displayName": "TE Connectivity",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "VIAV",
+      "displayName": "VIAVI Solutions",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "VISN",
+      "displayName": "Vistance Networks",
+      "category": "AI网络_光互联_连接器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "CC",
+      "displayName": "The Chemours Company",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "DD",
+      "displayName": "DuPont de Nemours",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "DHR",
+      "displayName": "Danaher Corporation",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "生命科学、生物工艺、诊断、精密分析；沿用项目研究分类",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "ENTG",
+      "displayName": "Entegris",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "HOCPY",
+      "displayName": "HOYA Corporation",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "光罩、精密光学、医疗与视力保健",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "MMM",
+      "displayName": "3M",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "MTRN",
+      "displayName": "Materion",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "Q",
+      "displayName": "Qnity Electronics",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "ROG",
+      "displayName": "Rogers Corporation",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "SHECY",
+      "displayName": "Shin-Etsu Chemical 信越化学",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "SMTOY",
+      "displayName": "住友电工 Sumitomo Electric Industries",
+      "category": "电子材料_化学品_基板_PCB",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "DSCSY",
+      "displayName": "DISCO",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "GFS",
+      "displayName": "GlobalFoundries",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "ICHR",
+      "displayName": "Ichor Holdings",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "KLAC",
+      "displayName": "KLA Corporation",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "LRCX",
+      "displayName": "Lam Research",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "MKSI",
+      "displayName": "MKS Inc",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "NVMI",
+      "displayName": "Nova Ltd",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "TOELY",
+      "displayName": "Tokyo Electron",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "TSEM",
+      "displayName": "Tower Semiconductor",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "UCTT",
+      "displayName": "Ultra Clean Holdings",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "UMC",
+      "displayName": "United Microelectronics 联华电子",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "VECO",
+      "displayName": "Veeco Instruments",
+      "category": "晶圆制造_前道设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "CAMT",
+      "displayName": "Camtek",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "COHU",
+      "displayName": "Cohu Inc",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "FORM",
+      "displayName": "FormFactor",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "IMOS",
+      "displayName": "ChipMOS Technologies 南茂科技",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "KEYS",
+      "displayName": "Keysight Technologies",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "KLIC",
+      "displayName": "Kulicke Soffa",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "MICLF",
+      "displayName": "Mycronic AB",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "NDSN",
+      "displayName": "Nordson",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "精密点胶、装配设备、检测、医疗耗材",
+      "industrySubjects": "先进封装设备与混合键合；半导体检测量测设备",
+      "listingNote": ""
+    },
+    {
+      "subject": "ONTO",
+      "displayName": "Onto Innovation",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "PLAB",
+      "displayName": "Photronics",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "TDY",
+      "displayName": "Teledyne Technologies",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "TER",
+      "displayName": "Teradyne",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "TMO",
+      "displayName": "Thermo Fisher Scientific",
+      "category": "封测_检测_计量_光罩",
+      "businessTags": "科学仪器、分析检测、生命科学服务",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "DIOD",
+      "displayName": "Diodes Incorporated",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "IFNNY",
+      "displayName": "Infineon Technologies AG 英飞凌科技",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "LFUS",
+      "displayName": "Littelfuse",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "电路保护、熔断器、功率器件、工业与汽车",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "MPWR",
+      "displayName": "Monolithic Power Systems",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "MRAAY",
+      "displayName": "Murata Manufacturing",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "MLCC、被动元件、通信模块、电源与传感",
+      "industrySubjects": "MLCC与高端陶瓷电容；机柜级供电与服务器电源架构",
+      "listingNote": ""
+    },
+    {
+      "subject": "NVTS",
+      "displayName": "Navitas Semiconductor",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "POWI",
+      "displayName": "Power Integrations",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "ST",
+      "displayName": "Sensata Technologies",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "TTDKY",
+      "displayName": "TDK Corporation",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "被动元件、磁性材料、传感器、电池",
+      "industrySubjects": "MLCC与高端陶瓷电容；工业机器视觉与精密感知",
+      "listingNote": ""
+    },
+    {
+      "subject": "VSH",
+      "displayName": "Vishay Intertechnology",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "WOLF",
+      "displayName": "Wolfspeed",
+      "category": "功率半导体_电源管理_传感器",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "NVT",
+      "displayName": "nVent Electric",
+      "category": "配电_电源系统_电气设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "POWL",
+      "displayName": "Powell Industries",
+      "category": "配电_电源系统_电气设备",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "VICR",
+      "displayName": "Vicor Corporation",
+      "category": "配电_电源系统_电气设备",
+      "businessTags": "模块化电源、功率转换、封装工艺",
+      "industrySubjects": "机柜级供电与服务器电源架构",
+      "listingNote": ""
+    },
+    {
+      "subject": "BE",
+      "displayName": "Bloom Energy",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "BWXT",
+      "displayName": "BWX Technologies",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "CAT",
+      "displayName": "Caterpillar Inc",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "发电机组、发动机、工程机械、矿业机械、金融服务",
+      "industrySubjects": "数据中心自备发电与微电网",
+      "listingNote": ""
+    },
+    {
+      "subject": "CEG",
+      "displayName": "Constellation Energy",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "CMI",
+      "displayName": "Cummins Inc",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "DTE",
+      "displayName": "DTE Energy Company",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "ENPH",
+      "displayName": "Enphase Energy",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "ENS",
+      "displayName": "EnerSys",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "ETR",
+      "displayName": "Entergy Corporation",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "FCEL",
+      "displayName": "FuelCell Energy",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "FLNC",
+      "displayName": "Fluence Energy",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "GNRC",
+      "displayName": "Generac Holdings",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "HTHIY",
+      "displayName": "Hitachi Ltd",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "RYCEY",
+      "displayName": "Rolls-Royce Holdings",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "SMR",
+      "displayName": "NuScale Power",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "TE",
+      "displayName": "T1 Energy Inc",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "VST",
+      "displayName": "Vistra Corp",
+      "category": "电力_发电_能源_储能",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "DOV",
+      "displayName": "Dover Corporation",
+      "category": "热管理_流体_水处理",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "ECL",
+      "displayName": "Ecolab",
+      "category": "热管理_流体_水处理",
+      "businessTags": "水处理、清洁与卫生服务、流体化学、热管理",
+      "industrySubjects": "冷却液、水处理、过滤与制冷剂；数据中心直液冷系统",
+      "listingNote": ""
+    },
+    {
+      "subject": "JCI",
+      "displayName": "Johnson Controls",
+      "category": "热管理_流体_水处理",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "MOD",
+      "displayName": "Modine Manufacturing",
+      "category": "热管理_流体_水处理",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "PH",
+      "displayName": "Parker-Hannifin",
+      "category": "热管理_流体_水处理",
+      "businessTags": "流体控制、运动控制、航空航天部件",
+      "industrySubjects": "液冷小组件与流体控制；运载火箭、航天器与空间基础设施",
+      "listingNote": ""
+    },
+    {
+      "subject": "PNR",
+      "displayName": "Pentair plc",
+      "category": "热管理_流体_水处理",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "TT",
+      "displayName": "Trane Technologies",
+      "category": "热管理_流体_水处理",
+      "businessTags": "",
+      "industrySubjects": "",
+      "listingNote": ""
+    },
+    {
+      "subject": "ALLE",
+      "displayName": "Allegion plc",
+      "category": "机器人_工业自动化_智能硬件",
+      "businessTags": "门禁、物理安防、建筑智能硬件",
+      "industrySubjects": "机柜、围护结构与物理安防",
+      "listingNote": ""
+    },
+    {
+      "subject": "FTV",
+      "displayName": "Fortive Corporation",
+      "category": "机器人_工业自动化_智能硬件",
+      "businessTags": "测量仪表、工业诊断、检测软件",
+      "industrySubjects": "工业机器视觉与精密感知；工业自动化控制、工业机器人与协作机器人",
+      "listingNote": ""
+    },
+    {
+      "subject": "MSI",
+      "displayName": "Motorola Solutions",
+      "category": "机器人_工业自动化_智能硬件",
+      "businessTags": "关键通信、视频安防、指挥调度软件",
+      "industrySubjects": "机柜、围护结构与物理安防",
+      "listingNote": ""
+    },
+    {
+      "subject": "YASKY",
+      "displayName": "Yaskawa Electric 安川电机",
+      "category": "机器人_工业自动化_智能硬件",
+      "businessTags": "伺服驱动、电机、运动控制、机器人与机电整合",
+      "industrySubjects": "数据中心风冷、冷水机组与HVAC；工业自动化控制、工业机器人与协作机器人；人形机器人与关键执行部件",
+      "listingNote": "美国OTC ADR；需券商支持；2026-09-10新增登记"
+    },
+    {
+      "subject": "IBM",
+      "displayName": "International Business Machines",
+      "category": "企业软件_数据平台",
+      "businessTags": "企业软件、主机、混合云、咨询实施",
+      "industrySubjects": "企业AI与Agent工作流软件；数据平台、数据库与AI数据软件",
+      "listingNote": ""
+    },
+    {
+      "subject": "META",
+      "displayName": "Meta Platforms",
+      "category": "企业软件_数据平台",
+      "businessTags": "广告推荐、数字分发、AI应用、智能硬件",
+      "industrySubjects": "广告推荐、搜索与数字分发",
+      "listingNote": ""
+    },
+    {
+      "subject": "NTNX",
+      "displayName": "Nutanix",
+      "category": "企业软件_数据平台",
+      "businessTags": "虚拟化、混合云管理、存储软件、AI基础设施软件",
+      "industrySubjects": "AI集群调度与推理运行时；数据平台、数据库与AI数据软件",
+      "listingNote": ""
+    }
+  ],
+  "covered": [
+    "LEU",
+    "JBL",
+    "ASML",
+    "BESIY",
+    "MIELY",
+    "AMPX",
+    "DKILY",
+    "SYM",
+    "SNOW",
+    "QCOM",
+    "MRAM",
+    "GLW",
+    "AXTI",
+    "SPCX",
+    "VRT",
+    "MU",
+    "ADBE",
+    "ALAB",
+    "LITE",
+    "TSM",
+    "MSFT",
+    "CRDO",
+    "GEV",
+    "AMZN",
+    "SNDK",
+    "CRWV",
+    "RKLB",
+    "NBIS",
+    "TSLA",
+    "IREN",
+    "GOOGL",
+    "AMD",
+    "MRVL",
+    "CBRS",
+    "LIN",
+    "AMBA",
+    "ANET",
+    "NVDA",
+    "CLS",
+    "APH",
+    "EQIX",
+    "BABA",
+    "OKLO",
+    "ACLS",
+    "ORCL",
+    "AEHR",
+    "PCRHY",
+    "ALGM",
+    "SBGSY",
+    "AVGO",
+    "ITT",
+    "CCJ",
+    "EME",
+    "CGNX",
+    "BDC",
+    "NET",
+    "COHR",
+    "DELL",
+    "CRM",
+    "PANW",
+    "TTMI",
+    "SPXC",
+    "ACMR",
+    "ADI",
+    "FIX",
+    "EMR",
+    "ABBNY",
+    "ARM",
+    "AMKR",
+    "CDNS",
+    "CRWD",
+    "CW",
+    "DDOG",
+    "APLD",
+    "FLEX",
+    "AAON",
+    "FANUY",
+    "AEIS",
+    "ASTS",
+    "ET",
+    "BELFB",
+    "ATKR",
+    "ON",
+    "PL",
+    "INTC",
+    "FN",
+    "DLR",
+    "AJNMY",
+    "DT",
+    "AMAT",
+    "IESC",
+    "PSIX",
+    "ASX",
+    "MYRG",
+    "ROK",
+    "NOW",
+    "HPE",
+    "STM",
+    "ETN",
+    "RDW",
+    "APD",
+    "AAOI",
+    "CARR",
+    "ASMVY",
+    "ATEYY",
+    "ASMIY",
+    "CIEN",
+    "HUBB",
+    "TXN",
+    "DCI",
+    "AEP",
+    "MCHP",
+    "PWR",
+    "SMCAY",
+    "ASGLY",
+    "CSCO",
+    "MXL",
+    "AOSL",
+    "PLTR",
+    "SOMMY"
+  ]
+}
