@@ -115,23 +115,6 @@
         </section>
       </div>
 
-      <section class="panel" aria-labelledby="active-tasks-title">
-        <div class="panel-heading">
-          <div>
-            <p class="section-kicker">ACTIVE TASKS</p>
-            <h2 id="active-tasks-title">活动任务与研究方案版本</h2>
-          </div>
-          <span id="active-tasks-summary" class="metric-caption">—</span>
-        </div>
-        <div class="table-wrap active-tasks-wrap" tabindex="0" aria-label="活动任务列表，可滚动查看全部任务">
-          <table>
-            <thead><tr><th>任务</th><th>Domain</th><th>状态</th><th>推理强度</th><th>方案版本</th></tr></thead>
-            <tbody id="active-tasks-table-body"></tbody>
-          </table>
-        </div>
-        <p id="active-tasks-empty" class="empty-state hidden">当前没有活动任务。</p>
-      </section>
-
       <section class="panel" aria-labelledby="running-title">
         <div class="panel-heading">
           <div>
@@ -159,7 +142,7 @@
           <span id="completed-summary" class="metric-caption">—</span>
         </div>
         <div id="completed-stats" class="stat-strip"></div>
-        <div class="table-wrap">
+        <div class="table-wrap completed-table-wrap" tabindex="0" aria-label="最近完成的30个任务，可滚动查看">
           <table>
             <thead><tr><th>最近完成</th><th>Domain</th><th>方案版本</th><th>耗时</th><th>Attempt</th><th>Tokens</th></tr></thead>
             <tbody id="completed-table-body"></tbody>

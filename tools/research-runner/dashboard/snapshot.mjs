@@ -11,6 +11,7 @@ import {
   QUEUE_PATH,
   RECENT_ANOMALY_LIMIT,
   RECENT_ITEM_LIMIT,
+  RECENT_COMPLETED_LIMIT,
   RUNNING_VISIBLE_ROW_LIMIT,
 } from "./config.mjs";
 import { CODEX_MODEL, DEFAULT_CONCURRENCY } from "../runtime-config.mjs";
@@ -201,7 +202,7 @@ export function summarizeDone(allDone, currentRunDone) {
       .sort((a, b) => b.count - a.count || a.domain.localeCompare(b.domain)),
     latest: [...(currentRunDone.length ? currentRunDone : allDone)]
       .sort((a, b) => itemTimeMs(b, ["archivedAt", "finishedAt"]) - itemTimeMs(a, ["archivedAt", "finishedAt"]))
-      .slice(0, RECENT_ITEM_LIMIT)
+      .slice(0, RECENT_COMPLETED_LIMIT)
       .map((item) => ({
         id: item.id,
         domain: item.domain,
@@ -305,6 +306,24 @@ export function estimateCompletion({ active, allDone, currentRunDone, concurrenc
   };
 }
 
+export function countMarkdownH1(text) {
+  let fence = null;
+  let count = 0;
+  for (const line of text.split(/\r?\n/)) {
+    const marker = line.match(/^ {0,3}(`{3,}|~{3,})(.*)$/);
+    if (fence) {
+      if (marker && marker[1][0] === fence.char && marker[1].length >= fence.length && !marker[2].trim()) fence = null;
+      continue;
+    }
+    if (marker) {
+      fence = { char: marker[1][0], length: marker[1].length };
+      continue;
+    }
+    if (/^ {0,3}#(?:[ \t]+|$)/.test(line)) count += 1;
+  }
+  return count;
+}
+
 export function auditCompletedOutputs(items) {
   const signature = items.map((item) => {
     const outputPath = resolveOutputPath(item.outputFile);
@@ -352,7 +371,7 @@ export function auditCompletedOutputs(items) {
         directories.add(path.dirname(outputPath));
         const content = fs.readFileSync(outputPath);
         const text = content.toString("utf8");
-        row.h1Count = text.split(/\r?\n/).filter((line) => line.startsWith("# ")).length;
+        row.h1Count = countMarkdownH1(text);
         row.placeholderCount = [...text.matchAll(PLACEHOLDER_PATTERN)].length;
         row.hash = createHash("sha256").update(content).digest("hex");
         if (row.bytes <= 0) row.problems.push("empty");

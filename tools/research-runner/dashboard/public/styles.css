@@ -220,18 +220,8 @@ h2 { margin-bottom: 0; font-size: 19px; letter-spacing: -0.02em; }
 .stat-chip strong { display: block; margin-top: 3px; font-size: 17px; }
 
 .table-wrap { overflow-x: auto; }
-.active-tasks-wrap {
-  max-height: 420px;
-  overflow-y: auto;
-  scrollbar-gutter: stable;
-}
-.active-tasks-wrap th {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background: #121923;
-  box-shadow: 0 1px 0 var(--line-soft);
-}
+.completed-table-wrap { max-height: 480px; overflow-y: auto; scrollbar-gutter: stable; overscroll-behavior: contain; }
+.completed-table-wrap th { position: sticky; top: 0; z-index: 1; background: #121923; box-shadow: 0 1px 0 var(--line-soft); }
 .running-table-wrap { overscroll-behavior: contain; }
 .running-table-wrap.is-scrollable {
   overflow-y: auto;

@@ -177,19 +177,7 @@ function renderQueue(queue) {
     (row) => formatNumber(row.byStatus.retry_pending || 0),
     (row) => formatNumber(row.byStatus.failed || 0),
   ]);
-  setText("active-tasks-summary", `共 ${queue.active} 项 · 按队列顺序`);
-  renderTable("active-tasks-table-body", queue.items || [], [
-    (row) => primaryCell(row.displayName || row.subject, row.subject),
-    (row) => row.domain,
-    (row) => queueStatusLabel(row.status),
-    (row) => row.reasoningEffort || "—",
-    (row) => formatPlanVersion(row.planVersion),
-  ]);
-  toggle("active-tasks-empty", !queue.items?.length);
-}
 
-function queueStatusLabel(status) {
-  return ({ pending: "待运行", running: "运行中", retry_pending: "待重试", failed: "失败", done: "已完成" })[status] || status || "未记录";
 }
 
 function formatPlanVersion(version) {
@@ -239,7 +227,7 @@ function renderCompleted(completed) {
   setText("completed-count", formatNumber(completed.currentRun));
   const averageMinutes = completed.duration?.average;
   setText("completed-detail", `${formatMinutes(averageMinutes)} 平均 · ${formatTokens(completed.totalTokens)} tokens`);
-  setText("completed-summary", `展示最近 ${Math.min(completed.latest.length, 8)} · archive ${formatNumber(completed.archiveTotal)}`);
+  setText("completed-summary", `展示最近 ${completed.latest.length} · archive ${formatNumber(completed.archiveTotal)}`);
   renderStatChips("completed-stats", [
     ["本轮完成", completed.currentRun],
     ["平均", formatMinutes(completed.duration?.average)],

@@ -32,6 +32,7 @@ export const IDLE_EXIT_MS = parseInteger(
   { min: 0, max: 1440 },
 ) * 60_000;
 export const RECENT_ITEM_LIMIT = 8;
+export const RECENT_COMPLETED_LIMIT = 30;
 export const RECENT_ANOMALY_LIMIT = 8;
 export const RUNNING_VISIBLE_ROW_LIMIT = 10;
 

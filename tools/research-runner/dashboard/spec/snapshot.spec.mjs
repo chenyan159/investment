@@ -5,6 +5,7 @@ import assert from "node:assert/strict";
 
 import {
   estimateCompletion,
+  countMarkdownH1,
   summarizeAnomalies,
   summarizeDone,
   summarizeQueue,
@@ -189,3 +190,9 @@ function doneItem(subject, minutes, tokens, attempts = 1) {
     tokenUsage: { total: { totalTokens: tokens }, attempts: [{ formal: { model: "gpt-6.1-sol", reasoningEffort: "max" } }] },
   };
 }
+
+test("heading audit ignores Python comments inside Markdown fences", () => {
+  assert.equal(countMarkdownH1("# Report\n```python\n# comment\n```\n## Details"), 1);
+  assert.equal(countMarkdownH1("# Report\n~~~~python\n# comment\n~~~\n# still code\n~~~~\n# Duplicate"), 2);
+  assert.equal(countMarkdownH1("# First\n# Second"), 2);
+});
