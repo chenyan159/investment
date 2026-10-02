@@ -9,11 +9,22 @@
 
 ## 发布
 
+以下命令用于本机独立的网站发布仓库 `chenyan159/projectananta-research`。整个研究项目由根目录的 `chenyan159/investment` 仓库管理；从该仓库新克隆的目录没有本机的网站 `.git` 指针，需要先配置发布仓库。发布前先核对 Git 工作目录和远端，避免把发布提交送到研究项目仓库。
+
 ```powershell
 cd "D:\investment\tools\site"
+$siteRoot = (Get-Location).Path.Replace('\', '/')
+$gitRoot = git rev-parse --show-toplevel
+if ($LASTEXITCODE -ne 0 -or $gitRoot -ne $siteRoot) {
+    throw "请先配置 tools/site 的独立网站发布仓库。"
+}
+$origin = git remote get-url origin
+if ($LASTEXITCODE -ne 0 -or $origin -ne 'https://github.com/chenyan159/projectananta-research.git') {
+    throw "当前远端不是预期的网站发布仓库。"
+}
 npm run pages:prepare
 git status --short
-git add .
+git add -- docs
 git commit -m "Update research dashboard"
 git push
 ```

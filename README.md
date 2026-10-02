@@ -14,6 +14,23 @@
 
 先阅读根目录 [AGENTS.md](AGENTS.md)，进入子目录后遵守该目录的说明。研究方案以现行入口为准，历史报告保留其原始日期和含义。
 
+## 版本管理
+
+本机直接使用 `D:\investment` 作为 [chenyan159/investment](https://github.com/chenyan159/investment) 的工作目录，Git 历史保存在根目录的 `.git/` 中。日常编辑、运行和提交都在同一个目录完成。
+
+先检查改动，确认需要保存的文件已经写完，再提交和上传：
+
+```powershell
+git -C D:/investment status --short
+git -C D:/investment add -A
+git -C D:/investment commit -m "Update investment research"
+git -C D:/investment push
+```
+
+文件修改后需要提交并推送才会出现在 GitHub；目前没有设置定时上传。多电脑使用时，开始工作前在工作区干净的情况下运行 `git pull --ff-only`，结束工作后提交并推送。
+
+本机 `tools/site` 仍保留独立的网站发布仓库，指向 `chenyan159/projectananta-research`，只记录 `docs/` 发布包。在该子目录运行 Git 命令会操作网站发布仓库；整个项目的提交应从根目录执行，或像上面一样明确使用 `git -C D:/investment`。网站源码由根目录仓库正常跟踪，网站发布操作见 [DEPLOYMENT.md](tools/site/DEPLOYMENT.md)。
+
 ## 在其他电脑使用
 
 ```sh
@@ -36,6 +53,6 @@ npm --prefix tools/site ci
 
 仓库保留研究成果、方案、必要数据、源码、配置和依赖锁文件。`node_modules`、`tmp`、`_work`、缓存、日志和网站构建发布副本由 [.gitignore](.gitignore) 排除；不因排除而删除本地工具依赖。
 
-`tools/site/public/data` 暂时保留，其中包含原始音频清理后仍需保存的发布资产。旧的 `tools/site/.git` 指针不属于本仓库；网站源码在本仓库中作为普通文件保存。
+`tools/site/public/data` 暂时保留，其中包含原始音频清理后仍需保存的发布资产。本机 `tools/site/.git` 指针不随本仓库上传或克隆；网站源码在本仓库中作为普通文件保存。其他电脑可以构建和预览网站，发布到现有站点前需另行配置网站发布仓库。
 
 历史报告中的部分本地绝对链接不能直接在 GitHub 网页打开，可通过对应目录定位文件。敏感凭据和登录状态不随仓库分发，需要在每台电脑上单独配置。
