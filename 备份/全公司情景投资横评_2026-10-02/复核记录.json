@@ -1,0 +1,37 @@
+{
+  "verified_at_utc": "2026-10-03T05:16:36.734232+00:00",
+  "research_baseline": "2026-10-02",
+  "index_companies": 221,
+  "source_reports": 221,
+  "scenario_rows": 884,
+  "selected_companies": 20,
+  "selected_scenario_rows": 80,
+  "missing_companies": [],
+  "extra_companies": [],
+  "source_reports_changed": [],
+  "price_return_formula_checks": "884 rows / 1768 endpoints passed",
+  "annual_return_formula_checks": "884 rows / 1768 endpoints passed",
+  "published_return_rounding_checks": "passed using displayed price and percentage precision",
+  "max_published_return_difference_percentage_points": 0.3358504958047206,
+  "csv_counts": {
+    "全公司四情景复算.csv": {
+      "rows": 884,
+      "unique_tickers": 221
+    },
+    "重点20家公司比较.csv": {
+      "rows": 80,
+      "unique_tickers": 20
+    }
+  },
+  "checked_local_links": 594,
+  "broken_local_links": [],
+  "snapshot_security_incompatibility": [
+    "TOELY"
+  ],
+  "input_hashes": {
+    "基本面\\公司调研\\公司索引.md": "42c78cbf589e447f435c0166181c003c7ab9fbcc0590faec7784c3f2464495c7",
+    "金融资料\\每日金融数据\\每日金融数据_2026-10-02.md": "c542bbf0bfd245728b2291941b04e82006d6e3452f0973753084a42e0d0fc3ad",
+    "分析报告\\公司情景投资决策\\研究方案\\研究方案_20261002_002635.md": "e66a472d249b5e4c7cfcdcfcd74b2c311e10c650eea04f2e528206b2f5fdc5b4"
+  },
+  "scope_limit": "No independent full audit of all source-model operating, capital or terminal assumptions; primary-source checks are selective."
+}
