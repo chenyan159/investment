@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-02",
+  "companies": [
+    {
+      "ticker": "ADBE",
+      "role": "折价现金流"
+    },
+    {
+      "ticker": "NVDA",
+      "role": "核心成长"
+    },
+    {
+      "ticker": "MU",
+      "role": "周期进攻"
+    },
+    {
+      "ticker": "TEL",
+      "role": "工业成长底盘"
+    },
+    {
+      "ticker": "PNR",
+      "role": "水业务修复"
+    },
+    {
+      "ticker": "DOV",
+      "role": "现金工业底盘"
+    },
+    {
+      "ticker": "AVGO",
+      "role": "客户项目成长"
+    },
+    {
+      "ticker": "MSFT",
+      "role": "质量平台"
+    },
+    {
+      "ticker": "APH",
+      "role": "连接成长"
+    },
+    {
+      "ticker": "ST",
+      "role": "利润及资本修复"
+    },
+    {
+      "ticker": "SPXC",
+      "role": "工业冷却成长"
+    },
+    {
+      "ticker": "SBGSY",
+      "role": "电气系统成长"
+    },
+    {
+      "ticker": "VISN",
+      "role": "特殊经营修复"
+    },
+    {
+      "ticker": "BABA",
+      "role": "中国平台与资本验证"
+    },
+    {
+      "ticker": "QCOM",
+      "role": "利润池替代"
+    },
+    {
+      "ticker": "ET",
+      "role": "收益基础设施；含分配年化12.6%至16.6%"
+    },
+    {
+      "ticker": "CMI",
+      "role": "工业动力底盘"
+    },
+    {
+      "ticker": "CRM",
+      "role": "现金与降债"
+    },
+    {
+      "ticker": "FTV",
+      "role": "流程及工具现金"
+    },
+    {
+      "ticker": "PSIX",
+      "role": "小盘动力卫星"
+    }
+  ]
+}
