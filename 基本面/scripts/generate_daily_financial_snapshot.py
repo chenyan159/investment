@@ -868,7 +868,13 @@ def build_report(
     stale_count = sum(1 for row in rows if row.price_date != latest_price_date)
     run_date_text = run_date.isoformat()
     if latest_price_date == run_date_text and latest_price_count >= max(1, total // 2):
-        top_note = f"主要价格数据已覆盖洛杉矶运行日 {run_date_text}；个别股票如滞后或quote无时间戳已在备注标记。"
+        stale_rows = [row for row in rows if row.price_date != run_date_text]
+        top_note = f"洛杉矶运行日 {run_date_text} 的价格覆盖 {latest_price_count}/{total}。"
+        if stale_rows:
+            stale_details = "、".join(f"{row.ticker}（{row.price_date}）" for row in stale_rows[:12])
+            if len(stale_rows) > 12:
+                stale_details += f"等 {len(stale_rows)} 家"
+            top_note += f"数据源尚未更新至运行日：{stale_details}；使用各自最新可得价格，明细保留实际日期。"
     elif common_price_date != run_date_text and latest_price_date == run_date_text:
         top_note = (
             f"洛杉矶运行日为 {run_date_text}，但只有 {latest_price_count} 家公司的价格日期等于运行日；"
