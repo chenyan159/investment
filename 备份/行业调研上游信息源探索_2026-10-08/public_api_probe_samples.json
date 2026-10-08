@@ -1,0 +1,51 @@
+{
+  "observed_date": "2026-10-08",
+  "timezone": "America/Los_Angeles",
+  "scope": "Read-only public API probes; selected response fields only, not full raw archives or production collector validation",
+  "probes": [
+    {
+      "source": "https://boards-api.greenhouse.io/v1/boards/coreweave/jobs?content=true",
+      "result": "JSON response received without credentials",
+      "job_posts_count": 316,
+      "sample": {
+        "id": 4700651006,
+        "title": "Data Center Commissioning/Quality Manager",
+        "updated_at": "2026-10-07T09:50:36-07:00",
+        "absolute_url": "https://coreweave.com/careers/job?4700651006&board=coreweave&gh_jid=4700651006"
+      },
+      "limits": "One snapshot, job posts are not hires or net additions; updated_at is not original publication date"
+    },
+    {
+      "source": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+      "result": "JSON response received without credentials",
+      "catalogVersion": "2026.10.04",
+      "dateReleased": "2026-10-04T18:52:56.0635Z",
+      "count": 1734,
+      "limits": "Catalog update date is distinct from each vulnerability dateAdded; KEV is not the universe of vulnerabilities"
+    },
+    {
+      "source": "https://api.usaspending.gov/api/v2/awards/last_updated/",
+      "result": "JSON response received without credentials",
+      "last_updated": "10/07/2026"
+    },
+    {
+      "source": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+      "method": "POST, read-only query",
+      "request_filters": {
+        "keywords": ["Rocket Lab"],
+        "award_type_codes": ["A", "B", "C", "D"],
+        "time_period": [{"start_date": "2026-01-01", "end_date": "2026-10-08"}]
+      },
+      "limit": 3,
+      "sample": {
+        "Award ID": "80KSC023FA107",
+        "Recipient Name": "ROCKET LAB USA INC",
+        "Award Amount": 51598522.0,
+        "Awarding Agency": "National Aeronautics and Space Administration",
+        "Start Date": "2023-03-29",
+        "generated_internal_id": "CONT_AWD_80KSC023FA107_8000_80KSC022DA107_8000"
+      },
+      "limits": "Award-level time filtering can return old awards; current award amounts must not be reported as new 2026 revenue or orders"
+    }
+  ]
+}
