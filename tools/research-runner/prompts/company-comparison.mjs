@@ -5,6 +5,7 @@ export function buildCompanyComparisonFormalPrompt(item, domain, outputContract)
   const sourcePrompt = readResearchPlan(item);
   const replaced = sourcePrompt
     .replaceAll(domain.placeholder, item.subject)
+    .replaceAll("【公司股票代号】", item.subject)
     .replaceAll("<公司A股票代号>", item.subject);
   return `${replaced.trim()}\n\n${buildOutputInstruction(outputContract)}`;
 }
