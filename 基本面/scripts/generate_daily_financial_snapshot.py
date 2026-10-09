@@ -44,6 +44,7 @@ ADR_RATIO_OVERRIDES = {
 KNOWN_ADR_OR_ADS = {
     "ABBNY",
     "AJNMY",
+    "ARGX",
     "ARM",
     "ASGLY",
     "ASMIY",
@@ -53,6 +54,7 @@ KNOWN_ADR_OR_ADS = {
     "ATEYY",
     "BABA",
     "BESIY",
+    "BNTX",
     "DSCSY",
     "HOCPY",
     "IFNNY",
