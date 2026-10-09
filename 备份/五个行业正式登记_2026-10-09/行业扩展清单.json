@@ -1,0 +1,269 @@
+{
+  "date": "2026-10-09",
+  "purpose": "五个行业扩展登记与首轮行业任务",
+  "industryCount": 5,
+  "selectedCompanyCount": 28,
+  "newCompanyCount": 24,
+  "reusedCompanyCount": 4,
+  "groups": [
+    {
+      "subject": "核酸药物与免疫治疗",
+      "category": "生物医药_核酸药物_免疫治疗",
+      "id": "industry-expand-20261009-immune",
+      "companies": [
+        {
+          "ticker": "MRNA",
+          "displayName": "Moderna 莫德纳",
+          "businessTags": "mRNA疫苗与治疗平台",
+          "listing": "Nasdaq",
+          "alreadyIndexed": false,
+          "companyCategory": "生物医药_核酸药物_免疫治疗"
+        },
+        {
+          "ticker": "BNTX",
+          "displayName": "BioNTech",
+          "businessTags": "mRNA肿瘤免疫、疫苗与其他肿瘤治疗平台；集团收入不可全归于mRNA",
+          "listing": "Nasdaq ADS",
+          "alreadyIndexed": false,
+          "companyCategory": "生物医药_核酸药物_免疫治疗"
+        },
+        {
+          "ticker": "ALNY",
+          "displayName": "Alnylam Pharmaceuticals",
+          "businessTags": "RNAi药物与商业化治疗产品",
+          "listing": "Nasdaq",
+          "alreadyIndexed": false,
+          "companyCategory": "生物医药_核酸药物_免疫治疗"
+        },
+        {
+          "ticker": "IONS",
+          "displayName": "Ionis Pharmaceuticals",
+          "businessTags": "RNA靶向、反义核酸药物；自营产品与合作授权",
+          "listing": "Nasdaq",
+          "alreadyIndexed": false,
+          "companyCategory": "生物医药_核酸药物_免疫治疗"
+        },
+        {
+          "ticker": "ARGX",
+          "displayName": "argenx",
+          "businessTags": "抗体免疫治疗、FcRn平台与VYVGART；严重自身免疫病",
+          "listing": "Nasdaq ADS",
+          "alreadyIndexed": false,
+          "companyCategory": "生物医药_核酸药物_免疫治疗"
+        },
+        {
+          "ticker": "KYTX",
+          "displayName": "Kyverna Therapeutics",
+          "businessTags": "自身免疫病CAR-T细胞治疗；临床与商业化阶段须分开",
+          "listing": "Nasdaq",
+          "alreadyIndexed": false,
+          "companyCategory": "生物医药_核酸药物_免疫治疗"
+        }
+      ]
+    },
+    {
+      "subject": "会员制零售、食品零售与折扣零售",
+      "category": "零售_会员制_食品_折扣渠道",
+      "id": "industry-expand-20261009-retail",
+      "companies": [
+        {
+          "ticker": "COST",
+          "displayName": "Costco Wholesale 好市多",
+          "businessTags": "会员制仓储、商品销售与会员费",
+          "listing": "Nasdaq",
+          "alreadyIndexed": false,
+          "companyCategory": "零售_会员制_食品_折扣渠道"
+        },
+        {
+          "ticker": "WMT",
+          "displayName": "Walmart 沃尔玛",
+          "businessTags": "综合零售、电商、会员制仓储、广告与履约服务",
+          "listing": "Nasdaq",
+          "alreadyIndexed": false,
+          "companyCategory": "零售_会员制_食品_折扣渠道"
+        },
+        {
+          "ticker": "BJ",
+          "displayName": "BJ's Wholesale Club Holdings",
+          "businessTags": "会员制仓储、食品与日用商品",
+          "listing": "NYSE",
+          "alreadyIndexed": false,
+          "companyCategory": "零售_会员制_食品_折扣渠道"
+        },
+        {
+          "ticker": "KR",
+          "displayName": "The Kroger Co. 克罗格",
+          "businessTags": "食品超市、生鲜、私人品牌与零售数据",
+          "listing": "NYSE",
+          "alreadyIndexed": false,
+          "companyCategory": "零售_会员制_食品_折扣渠道"
+        },
+        {
+          "ticker": "TJX",
+          "displayName": "The TJX Companies",
+          "businessTags": "服饰、家居与品牌折价零售",
+          "listing": "NYSE",
+          "alreadyIndexed": false,
+          "companyCategory": "零售_会员制_食品_折扣渠道"
+        }
+      ]
+    },
+    {
+      "subject": "财产险、特色险与再保险",
+      "category": "保险_财产险_特色险_再保险",
+      "id": "industry-expand-20261009-insurance",
+      "companies": [
+        {
+          "ticker": "PGR",
+          "displayName": "The Progressive Corporation",
+          "businessTags": "个人及商业车险等财产责任险、核保与理赔",
+          "listing": "NYSE",
+          "alreadyIndexed": false,
+          "companyCategory": "保险_财产险_特色险_再保险"
+        },
+        {
+          "ticker": "TRV",
+          "displayName": "The Travelers Companies",
+          "businessTags": "商业及个人财产责任险",
+          "listing": "NYSE",
+          "alreadyIndexed": false,
+          "companyCategory": "保险_财产险_特色险_再保险"
+        },
+        {
+          "ticker": "CB",
+          "displayName": "Chubb Limited",
+          "businessTags": "全球财产责任险、特色险；集团另有寿险",
+          "listing": "NYSE",
+          "alreadyIndexed": false,
+          "companyCategory": "保险_财产险_特色险_再保险"
+        },
+        {
+          "ticker": "WRB",
+          "displayName": "W. R. Berkley Corporation",
+          "businessTags": "商业特色险与再保险",
+          "listing": "NYSE",
+          "alreadyIndexed": false,
+          "companyCategory": "保险_财产险_特色险_再保险"
+        },
+        {
+          "ticker": "RNR",
+          "displayName": "RenaissanceRe Holdings",
+          "businessTags": "财产、责任与特色再保险、第三方资本管理",
+          "listing": "NYSE",
+          "alreadyIndexed": false,
+          "companyCategory": "保险_财产险_特色险_再保险"
+        }
+      ]
+    },
+    {
+      "subject": "智能机器人与自主作业装备",
+      "category": "工业自动化_机器人_感知",
+      "id": "industry-expand-20261009-robotics",
+      "companies": [
+        {
+          "ticker": "FANUY",
+          "displayName": "FANUC 发那科",
+          "businessTags": "工业机器人、CNC与伺服",
+          "listing": "美国OTC ADR",
+          "alreadyIndexed": true,
+          "companyCategory": "机器人_工业自动化_智能硬件"
+        },
+        {
+          "ticker": "YASKY",
+          "displayName": "Yaskawa Electric 安川电机",
+          "businessTags": "工业机器人、伺服与运动控制",
+          "listing": "美国OTC ADR",
+          "alreadyIndexed": true,
+          "companyCategory": "机器人_工业自动化_智能硬件"
+        },
+        {
+          "ticker": "SYM",
+          "displayName": "Symbotic",
+          "businessTags": "仓储机器人与自动化系统",
+          "listing": "Nasdaq",
+          "alreadyIndexed": true,
+          "companyCategory": "机器人_工业自动化_智能硬件"
+        },
+        {
+          "ticker": "TSLA",
+          "displayName": "Tesla",
+          "businessTags": "Optimus人形机器人观察样本；汽车与能源业务单独归属",
+          "listing": "Nasdaq",
+          "alreadyIndexed": true,
+          "companyCategory": "机器人_工业自动化_智能硬件"
+        },
+        {
+          "ticker": "AVAV",
+          "displayName": "AeroVironment",
+          "businessTags": "无人机、巡飞弹、自主系统及反无人机等；集团其他国防业务分开",
+          "listing": "Nasdaq",
+          "alreadyIndexed": false,
+          "companyCategory": "航空航天_卫星_高可靠系统"
+        },
+        {
+          "ticker": "KTOS",
+          "displayName": "Kratos Defense & Security Solutions",
+          "businessTags": "喷气无人机、无人系统与相关推进技术；另有太空及国防电子业务",
+          "listing": "Nasdaq",
+          "alreadyIndexed": false,
+          "companyCategory": "航空航天_卫星_高可靠系统"
+        },
+        {
+          "ticker": "DE",
+          "displayName": "Deere & Company 迪尔",
+          "businessTags": "农机、精准农业与自主作业；集团另有建筑林业设备和金融服务",
+          "listing": "NYSE",
+          "alreadyIndexed": false,
+          "companyCategory": "机器人_工业自动化_智能硬件"
+        },
+        {
+          "ticker": "AGCO",
+          "displayName": "AGCO Corporation",
+          "businessTags": "农业机械、PTx精准技术、农机改造与作业自动化",
+          "listing": "NYSE",
+          "alreadyIndexed": false,
+          "companyCategory": "机器人_工业自动化_智能硬件"
+        }
+      ]
+    },
+    {
+      "subject": "固体废物处理、回收与资源化",
+      "category": "环境服务_固废_回收_资源化",
+      "id": "industry-expand-20261009-waste",
+      "companies": [
+        {
+          "ticker": "WM",
+          "displayName": "Waste Management WM",
+          "businessTags": "废物收集、处置、回收与资源化；集团另有医疗废物服务",
+          "listing": "NYSE",
+          "alreadyIndexed": false,
+          "companyCategory": "环境服务_固废_回收_资源化"
+        },
+        {
+          "ticker": "RSG",
+          "displayName": "Republic Services",
+          "businessTags": "废物、回收与环境服务",
+          "listing": "NYSE",
+          "alreadyIndexed": false,
+          "companyCategory": "环境服务_固废_回收_资源化"
+        },
+        {
+          "ticker": "WCN",
+          "displayName": "Waste Connections",
+          "businessTags": "北美固废收集、转运、处置与回收",
+          "listing": "NYSE；加拿大双重上市同一公司仅计一次",
+          "alreadyIndexed": false,
+          "companyCategory": "环境服务_固废_回收_资源化"
+        },
+        {
+          "ticker": "CWST",
+          "displayName": "Casella Waste Systems",
+          "businessTags": "区域固废、回收与资源管理",
+          "listing": "Nasdaq",
+          "alreadyIndexed": false,
+          "companyCategory": "环境服务_固废_回收_资源化"
+        }
+      ]
+    }
+  ]
+}
