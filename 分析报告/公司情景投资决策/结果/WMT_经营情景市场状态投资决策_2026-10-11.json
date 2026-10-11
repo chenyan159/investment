@@ -1,0 +1,57 @@
+{
+  "ticker": "WMT",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T07:36:04-07:00",
+  "reference_price": {
+    "value": 111.35,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-01-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        112.2,
+        112.2
+      ],
+      "target_price": [
+        57.1,
+        68.5
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        158.0,
+        158.0
+      ],
+      "target_price": [
+        96.5,
+        112.6
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        189.5,
+        189.5
+      ],
+      "target_price": [
+        125.5,
+        144.8
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        225.0,
+        225.0
+      ],
+      "target_price": [
+        160.4,
+        183.3
+      ],
+      "evidence": "weak"
+    }
+  }
+}
