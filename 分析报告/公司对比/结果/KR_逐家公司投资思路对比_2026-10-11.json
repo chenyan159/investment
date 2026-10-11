@@ -1,0 +1,137 @@
+{
+  "ticker": "KR",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:08:18-07:00",
+  "reference_price": {
+    "value": 61.64,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-02-02",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        59.36,
+        59.36
+      ],
+      "target_price": [
+        44.51,
+        53.89
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        89.01,
+        89.01
+      ],
+      "target_price": [
+        87.8,
+        102.37
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        113.74,
+        113.74
+      ],
+      "target_price": [
+        121.48,
+        140.02
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        139.12,
+        139.12
+      ],
+      "target_price": [
+        159.91,
+        182.58
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "positive",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "WMT",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "当前价格优先KR；WMT食品竞争力更强，但正常兑现回报不足以补偿39倍盈利起点。"
+    },
+    {
+      "peer": "COST",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "当前价格优先KR；COST会员壁垒与财务底线更优，但基准价格年化仅2%—6%。"
+    },
+    {
+      "peer": "BJ",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "要求稳健现金及当前基准赔率时KR优先；追求会员扩店成长且验证新州续费时BJ优先。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "食品防御及当期自由现金流偏好选KR；能够承担AI资本兑现风险并追求平台右尾时选AMZN。"
+    },
+    {
+      "peer": "TJX",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "当前新资金优先KR；TJX资本效率更好，但正常化估值与可选消费敏感度使基准赔率落后。"
+    },
+    {
+      "peer": "AJNMY",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "需要食品消费现金及美元防御时KR优先；追求高规格封装材料利润池并接受较长验证期时AJNMY优先。"
+    },
+    {
+      "peer": "DOV",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "可承担工业周期且追求现金质量与成长组合时DOV优先；需要食品需求防御时KR优先。"
+    },
+    {
+      "peer": "ECL",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "当前风险调整后的新资金优先KR；ECL服务壁垒更强，但估值及并购回报要求吞噬基准回报。"
+    },
+    {
+      "peer": "CB",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "跨行业稳健核心仓优先CB的资本回报与证据质量；KR可作为食品消费敞口补充，回报弹性较高但现金验证较弱。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "追求长期平台复利且能承受AI资本回报验证时MSFT优先；需要当前现金和食品防御时KR优先。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "追求先进制造瓶颈增长且接受地缘尾部时TSM优先；避免该尾部并配置必需消费现金时KR优先。"
+    }
+  ]
+}
