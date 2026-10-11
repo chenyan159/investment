@@ -1,0 +1,57 @@
+{
+  "ticker": "WOLF",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T08:12:33-07:00",
+  "reference_price": {
+    "value": 30.61,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-06-30",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        0.0,
+        0.0
+      ],
+      "target_price": [
+        0.0,
+        0.0
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        3.73,
+        3.73
+      ],
+      "target_price": [
+        2.47,
+        6.23
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        44.73,
+        44.73
+      ],
+      "target_price": [
+        39.55,
+        49.9
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        77.12,
+        77.12
+      ],
+      "target_price": [
+        77.12,
+        85.42
+      ],
+      "evidence": "weak"
+    }
+  }
+}
