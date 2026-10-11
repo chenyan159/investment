@@ -1,0 +1,143 @@
+{
+  "ticker": "SPCX",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:09:24-07:00",
+  "reference_price": {
+    "value": 162.57,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        13.29,
+        13.29
+      ],
+      "target_price": [
+        5.83,
+        10.42
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        74.98,
+        74.98
+      ],
+      "target_price": [
+        59.75,
+        84.13
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        159.61,
+        159.61
+      ],
+      "target_price": [
+        153.19,
+        217.45
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        290.33,
+        290.33
+      ],
+      "target_price": [
+        325.29,
+        465.14
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "RKLB",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "相同高风险航天逻辑下SPCX的成熟交付、净流动性及突破回报更强，RKLB现价难成为便宜替代"
+    },
+    {
+      "peer": "ASTS",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "纯D2D高风险右尾且星座验收成功时ASTS更有弹性；重视既有现金流和发射自给时SPCX优先"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "看好云和连接但要求基准正回报时AMZN优先，SPCX仅补充快速复用与轨道平台期权"
+    },
+    {
+      "peer": "CRWV",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "只押专业GPU云且融资持续开放时CRWV赔率更优；重视融资韧性和航天连接复用时SPCX更合适"
+    },
+    {
+      "peer": "RDW",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "仅在重复订单与现金回收确认时优先RDW制造小仓；强调平台控制力和既有商业规模时SPCX更强"
+    },
+    {
+      "peer": "CW",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "资本保全和高可靠设备现金复利优先CW，但现价基准回报不高且SPCX突破上限更大"
+    },
+    {
+      "peer": "APH",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "同一AI建设趋势中APH基准回报、现金转化与多客户分散更优，SPCX保留轨道平台独有期权"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "获取AI基础设施利润优先NVDA，其多客户利润兑现和基准／乐观回报更强，无需SPCX多个新平台同时成功"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "云需求与平台变现的稳健承载优先GOOGL，仍有少量SPCX间接权益但不等于直接轨道右尾"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健企业AI和可验证每股现金复利优先MSFT，SPCX只在航天／移动／轨道多平台突破维度独有"
+    },
+    {
+      "peer": "META",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "现金来源和广告AI兑现优先META，明确追求航天／Mobile非线性并接受更大左尾时才选SPCX"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "跨GPU和ASIC路线捕获制造利润优先TSM，接受台湾风险后基准回报及已实现盈利更扎实"
+    }
+  ]
+}
