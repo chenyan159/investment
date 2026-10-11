@@ -1,0 +1,57 @@
+{
+  "ticker": "COST",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T07:35:58-07:00",
+  "reference_price": {
+    "value": 946.92,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-10-11",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        960,
+        960
+      ],
+      "target_price": [
+        560,
+        657
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        1247,
+        1247
+      ],
+      "target_price": [
+        1004,
+        1131
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "business_price": [
+        1416,
+        1416
+      ],
+      "target_price": [
+        1284,
+        1457
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        1642,
+        1642
+      ],
+      "target_price": [
+        1590,
+        1791
+      ],
+      "evidence": "weak"
+    }
+  }
+}
