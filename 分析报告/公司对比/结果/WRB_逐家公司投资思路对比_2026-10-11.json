@@ -1,0 +1,131 @@
+{
+  "ticker": "WRB",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:06:08-07:00",
+  "reference_price": {
+    "value": 71.91,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        63.58,
+        63.58
+      ],
+      "target_price": [
+        42.39,
+        50.87
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        89.02,
+        89.02
+      ],
+      "target_price": [
+        83.08,
+        94.95
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        102.61,
+        102.61
+      ],
+      "target_price": [
+        102.61,
+        116.3
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        119.53,
+        119.53
+      ],
+      "target_price": [
+        127.5,
+        143.44
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "CB",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "CB当前基准赔率及全球风险分散更好，稳健保险新增资金优先CB，WRB作为特色险补充。"
+    },
+    {
+      "peer": "TRV",
+      "relation": "direct_competitor",
+      "verdict": "comparable",
+      "reason": "两者基准含息回报接近，WRB专业承保更集中，TRV保证险和个人险重启带来更高右尾但更多验证风险。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "偏好较快赔款反馈且相信车险份额扩张时PGR优先，偏好特色商业险并规避个人车险利润正常化风险时WRB优先。"
+    },
+    {
+      "peer": "RNR",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "容忍巨灾波动且追求更高风险资本赔率时RNR优先，要求较低灾害集中风险的特色险底仓时WRB优先。"
+    },
+    {
+      "peer": "CAT",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "在当前价格与基准经营路径下WRB的价格回报更好，CAT须更强发电利润和持续稀缺性验证才能弥补估值要求。"
+    },
+    {
+      "peer": "EME",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "稳健基准价格资金倾向WRB，看好实物建设增长并能承担施工回款及人工容量风险时EME优先。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "强调当前基准价格缓冲时WRB略优，强调经常现金可见度且接受较低预期回报时WM优先。"
+    },
+    {
+      "peer": "RSG",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "当前以基准赔率配置时WRB优先，RSG的服务稳定和许可壁垒尚未补足现价较低的正常回报区间。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "追求软件平台增长且接受AI资本投入风险时MSFT优先，配置较低AI需求关联的特色险资产时WRB优先。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "追求可靠机制的高弹性且能承担客户预算、信用及较深回撤时NVDA优先，稳健保险风险预算下WRB更适配。"
+    }
+  ]
+}
