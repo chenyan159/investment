@@ -1,0 +1,149 @@
+{
+  "ticker": "APLD",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:47:52-07:00",
+  "reference_price": {
+    "value": 23.68,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        0,
+        0
+      ],
+      "target_price": [
+        0,
+        0
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        7.6,
+        7.6
+      ],
+      "target_price": [
+        9.4,
+        18.7
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        11.04,
+        11.04
+      ],
+      "target_price": [
+        23.4,
+        33.5
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        12.85,
+        12.85
+      ],
+      "target_price": [
+        39.1,
+        52.0
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "DLR",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "稳健设施资金DLR优先，APLD只在建设事件弹性占优，DLR当前基准价格收益也有限。"
+    },
+    {
+      "peer": "EQIX",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "EQIX在可检验经营、基准赔率和资本保全上优于APLD，成熟IDC核心资金优先。"
+    },
+    {
+      "peer": "IREN",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "高风险进攻资金IREN的基准和右尾赔率优先，APLD长租期限占优但不足抵消现价负基准收益。"
+    },
+    {
+      "peer": "NBIS",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "许可、可提款融资及经济股本核清后进攻资金NBIS优先；未核清前两者均不作稳健核心。"
+    },
+    {
+      "peer": "CRWV",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "高风险AI基础设施资金CRWV的条件回报优先，但两者同有融资毁损且不是独立分散敞口。"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "同一OCI扩张逻辑ORCL的基准回报、平台现金和预算选择权优于APLD。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "稳健AI核心资金MSFT优先，业务现金、选择权与基准赔率均优于APLD。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "NVDA的已实现盈利、资本效率及基准赔率优先，APLD工程弹性不足取代核心价值链卡位。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "数据中心建设预算中VRT现金转换和基准赔率优于APLD，但其现价低端回报也有限。"
+    },
+    {
+      "peer": "ETN",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "稳健电力敞口ETN优先；若要求高基准回报两者均等待，APLD只在融资闭合且明显降价后作小仓补充。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "可接受台湾及跨境政策风险的核心资金TSM优先，其制造卡位与资本效率强于APLD。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "全市场机会成本ADBE的每股现金与固定倍数回报优于APLD，前提是核心创意订阅未被AI结构替代。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "资本保全与稳健复利LIN优先，APLD里程碑弹性更高但现价不足补偿毁损风险。"
+    }
+  ]
+}
