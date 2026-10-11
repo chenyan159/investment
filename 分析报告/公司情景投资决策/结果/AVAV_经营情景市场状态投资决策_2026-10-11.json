@@ -1,0 +1,57 @@
+{
+  "ticker": "AVAV",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T08:24:30-07:00",
+  "reference_price": {
+    "value": 137.11,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-04-30",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        130.77,
+        130.77
+      ],
+      "target_price": [
+        35.59,
+        49.52
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        326.7,
+        326.7
+      ],
+      "target_price": [
+        155.76,
+        191.18
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        550.11,
+        550.11
+      ],
+      "target_price": [
+        284.25,
+        343.57
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        818.43,
+        818.43
+      ],
+      "target_price": [
+        464.13,
+        594.36
+      ],
+      "evidence": "weak"
+    }
+  }
+}
