@@ -1,0 +1,57 @@
+{
+  "ticker": "PGR",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T07:35:54-07:00",
+  "reference_price": {
+    "value": 217.43,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        125.55,
+        125.55
+      ],
+      "target_price": [
+        102.94,
+        121.65
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        240.3,
+        240.3
+      ],
+      "target_price": [
+        241.79,
+        277.61
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        323.18,
+        323.18
+      ],
+      "target_price": [
+        373.36,
+        421.53
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        376.62,
+        376.62
+      ],
+      "target_price": [
+        477.2,
+        533.34
+      ],
+      "evidence": "weak"
+    }
+  }
+}
