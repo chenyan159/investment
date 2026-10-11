@@ -1,0 +1,57 @@
+{
+  "ticker": "SNPS",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T07:35:51-07:00",
+  "reference_price": {
+    "value": 509.99,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-10-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        489,
+        489
+      ],
+      "target_price": [
+        202,
+        263
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        947,
+        947
+      ],
+      "target_price": [
+        632,
+        748
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        1083,
+        1083
+      ],
+      "target_price": [
+        790,
+        955
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        1311,
+        1311
+      ],
+      "target_price": [
+        1117,
+        1316
+      ],
+      "evidence": "weak"
+    }
+  }
+}
