@@ -1,0 +1,155 @@
+{
+  "ticker": "CRWV",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:07:38-07:00",
+  "reference_price": {
+    "value": 82.08,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        0,
+        0
+      ],
+      "target_price": [
+        0,
+        0.8
+      ],
+      "evidence": "weak"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        36.12,
+        36.12
+      ],
+      "target_price": [
+        36.12,
+        77.07
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        441.11,
+        441.11
+      ],
+      "target_price": [
+        493.14,
+        649.24
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        559.09,
+        559.09
+      ],
+      "target_price": [
+        687.65,
+        880.48
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "negative",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "NBIS",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若优先已兑现规模及更小的15%净价压力相对折损，CRWV观察仓更合适；若客户预款、许可、贷款均落实且接受原高收入路径，NBIS基准条件赔率更好。"
+    },
+    {
+      "peer": "IREN",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "在后续批次接受、额外资金和自有设施利用率落实时，IREN同18倍锚基准赔率优于修正后的CRWV；若优先已经兑现的规模而只做小仓观察，则CRWV更合适。"
+    },
+    {
+      "peer": "ORCL",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "正常兑现配置标准下，ORCL的数据库与应用现金及正基准回报优于修正后的CRWV，虽然OCI长租和融资风险使它也不能当作无风险资产。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "以可持续AI核心配置为标准，AMZN的AWS与自研芯片、零售广告现金来源优于CRWV单一重资本融资结构；CRWV只保留更高右尾弹性。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "GOOGL的搜索现金、TPU和分销能力提供更可靠的AI投资资金与成本控制，稳健配置优先；CRWV的高杠杆右尾不能替代现金底座。"
+    },
+    {
+      "peer": "AVGO",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "AVGO已经实现高自由现金流并能从客户ASIC替代中获利，风险调整成长配置优于CRWV；其信用承诺和客户集中仍须单独审查。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "稳健企业AI核心优先MSFT但应控制当前偏满估值；若只追求GPU云放量右尾并能承受融资失效，CRWV小仓更合适。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "同一AI算力需求逻辑下，NVDA生态和已实现盈利现金流提供更强风险调整载体，核心配置优先；CRWV仅在高风险右尾目标下补充。"
+    },
+    {
+      "peer": "APLD",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "APLD普通股须越过项目债和高成本优先资本，现价基准交易价值低于买价且仍暴露CRWV信用，优先CRWV的条件性进攻价值。"
+    },
+    {
+      "peer": "VRT",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "希望保留AI基础设施敞口而减少GPU资产融资风险时选VRT，但当前估值缓冲有限；追求高右尾并接受资本毁损风险时选CRWV。"
+    },
+    {
+      "peer": "TSM",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "TSM可跨GPU和ASIC设计赢家取得制造利润，经营现金与竞争壁垒更强，核心配置优于CRWV；台湾地缘风险限制其绝对优势。"
+    },
+    {
+      "peer": "ADBE",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "正常兑现与资金机会成本标准下，ADBE扣SBC后的现金流、较低买入倍数和正基准回报优于CRWV；创意付费留存是此优先裁决的必要条件。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健资本保全和组合分散标准下，PGR的定价能力、正常化承保利润及股息优于CRWV融资反身性，尽管其AI右尾弹性明显较小。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "防御性现金与低融资风险需求选WM但宜有更好价格；当前若只追求AI高弹性而容忍全损路径，CRWV小仓更有赔率。"
+    }
+  ]
+}
