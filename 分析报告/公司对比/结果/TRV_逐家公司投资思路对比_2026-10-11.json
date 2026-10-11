@@ -1,0 +1,131 @@
+{
+  "ticker": "TRV",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:50:13-07:00",
+  "reference_price": {
+    "value": 368.75,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        243,
+        243
+      ],
+      "target_price": [
+        192,
+        233
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        452,
+        452
+      ],
+      "target_price": [
+        433,
+        490
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        575,
+        575
+      ],
+      "target_price": [
+        599,
+        671
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        650,
+        650
+      ],
+      "target_price": [
+        758,
+        840
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "CB",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "稳健保险核心配置优先CB，其分散业务、较低正常化买价倍数与更高基准回报胜出，TRV仅在保证险及高ROE暴露上作为补充。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若投资车险份额扩张和家庭客户右尾则优先PGR，若偏好商业险分散及较少依赖当前车险高利润则选择TRV并争取更低买价。"
+    },
+    {
+      "peer": "WRB",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "若优先低买价倍数及较大保险上行空间则选择TRV，若优先分散特色承保和较浅模型回撤则WRB可替代。"
+    },
+    {
+      "peer": "RNR",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若愿承担更集中巨灾及续保软市风险以换取更高基准与右尾回报则优先RNR，若要求较分散净风险则优先TRV。"
+    },
+    {
+      "peer": "PWR",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "同日买价下稳健资金优先TRV，PWR的真实电力增长被较高估值抵消且施工现金风险更高。"
+    },
+    {
+      "peer": "FIX",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "若追求AI施工增长且容忍客户集中、预付款回落及深回撤则优先FIX，若要求保险资本稳定性及较低估值波动预算则优先TRV。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "同日买价下基准收益导向的新资金优先TRV，LIN的工业合同壁垒虽强但现价回报偏薄且项目资本仍需兑现。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若投资AI平台与软件工作流扩张则优先MSFT，若优先近期可分配现金和较低资本投入则优先TRV，二者不能在各维度全面互替。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "同日买价下新资金优先TRV，COST会员复利证据更强但较高估值使基准价格回报不足以胜出。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "同日买价下稳健新资金优先TRV，WM现金需求较稳但债务与维护资本负担使其基准价格回报不占优。"
+    }
+  ]
+}
