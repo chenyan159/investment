@@ -1,0 +1,57 @@
+{
+  "ticker": "RSG",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T08:33:33-07:00",
+  "reference_price": {
+    "value": 216.88,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        204.41,
+        204.41
+      ],
+      "target_price": [
+        128.25,
+        148.5
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        293.87,
+        293.87
+      ],
+      "target_price": [
+        223.2,
+        252.31
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "business_price": [
+        349.47,
+        349.47
+      ],
+      "target_price": [
+        288.51,
+        323.13
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        383.02,
+        383.02
+      ],
+      "target_price": [
+        341.51,
+        379.45
+      ],
+      "evidence": "weak"
+    }
+  }
+}
