@@ -1,0 +1,57 @@
+{
+  "ticker": "IONS",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T07:59:10-07:00",
+  "reference_price": {
+    "value": 45.28,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        18.91,
+        18.91
+      ],
+      "target_price": [
+        8.68,
+        10.95
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        70.34,
+        70.34
+      ],
+      "target_price": [
+        62.06,
+        78.63
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        159.79,
+        159.79
+      ],
+      "target_price": [
+        159.79,
+        194.37
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        241.64,
+        241.64
+      ],
+      "target_price": [
+        241.64,
+        295.01
+      ],
+      "evidence": "weak"
+    }
+  }
+}
