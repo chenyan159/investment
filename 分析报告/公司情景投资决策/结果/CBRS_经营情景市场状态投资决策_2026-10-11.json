@@ -1,0 +1,57 @@
+{
+  "ticker": "CBRS",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T07:35:29-07:00",
+  "reference_price": {
+    "value": 164.17,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        17,
+        17
+      ],
+      "target_price": [
+        16,
+        17
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        96,
+        96
+      ],
+      "target_price": [
+        80,
+        106
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        236,
+        236
+      ],
+      "target_price": [
+        235,
+        321
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        353,
+        353
+      ],
+      "target_price": [
+        397,
+        531
+      ],
+      "evidence": "weak"
+    }
+  }
+}
