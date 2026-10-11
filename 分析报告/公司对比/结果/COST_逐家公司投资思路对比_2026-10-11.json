@@ -1,0 +1,137 @@
+{
+  "ticker": "COST",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:43:57-07:00",
+  "reference_price": {
+    "value": 946.92,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-10-11",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        960,
+        960
+      ],
+      "target_price": [
+        560,
+        657
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        1247,
+        1247
+      ],
+      "target_price": [
+        1004,
+        1131
+      ],
+      "evidence": "strong"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        1416,
+        1416
+      ],
+      "target_price": [
+        1284,
+        1457
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        1642,
+        1642
+      ],
+      "target_price": [
+        1590,
+        1791
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "mixed",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "WMT",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "消费会员纯度、净现金与本次基准定价下COST优先；若WMT资本回报支持FY30持续32—36倍正常EPS定价，WMT回报优先，不能机械压低其倍数。"
+    },
+    {
+      "peer": "BJ",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "在愿意承担新区域复制风险的会员增长资金中，BJ以较低经营倍数和更高基准／右尾回报优先；追求最高续费与净现金质量仍选COST。"
+    },
+    {
+      "peer": "KR",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "接受食品经营修复和法律付款风险、以正常现金收益为目标时KR优先；若要求高质量自然客流与较少事件风险，COST优先。"
+    },
+    {
+      "peer": "TJX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "Marmaxx成交恢复且正常利润率维持时，TJX较低倍数与较高基准回报胜；未验证前COST的食品客流与续费更可靠。"
+    },
+    {
+      "peer": "AMZN",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "愿意以资本回报验证换取云与广告增长时AMZN优先；以消费会员防御和即时自给现金为主时COST优先。"
+    },
+    {
+      "peer": "BABA",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "能承担中国监管、ADS与汇率风险且云投资回报验证时，BABA的右尾及基准赔率优先；美元防御型资金优先COST。"
+    },
+    {
+      "peer": "SYM",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "常规资金优先COST：SYM基准价格回报仍为负且左尾极深；仅在门店验收、客户分散和现金回报兑现后才构成进攻替代。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "愿意承担AI资本效率风险的长期核心增长资金优先MSFT，基准与右尾回报明显高于COST；消费防御和资本轻度则COST占优。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "comparable",
+      "reason": "两者基准收益均不突出且无全面压制；长协工业防御选LIN，会员需求与更强净现金选COST，新增资金均需价格纪律。"
+    },
+    {
+      "peer": "WM",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "防御现金流资金在医疗修复、CapEx回落且债务受控时可优先WM；若这些未验证或看重净现金，COST优先，WM基准下沿亦非正回报。"
+    },
+    {
+      "peer": "PGR",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "能接受赔付周期且正常化综合成本约92%仍兑现时，PGR含息赔率优先；需要消费会员稳定性、避免保险左尾时COST优先。"
+    }
+  ]
+}
