@@ -1,0 +1,137 @@
+{
+  "ticker": "ARGX",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:59:48-07:00",
+  "reference_price": {
+    "value": 825.03,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        225,
+        225
+      ],
+      "target_price": [
+        140,
+        170
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        1445,
+        1445
+      ],
+      "target_price": [
+        1040,
+        1265
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        2235,
+        2235
+      ],
+      "target_price": [
+        1770,
+        2300
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "reestimate",
+      "business_price": [
+        2940,
+        2940
+      ],
+      "target_price": [
+        2555,
+        3260
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "ALNY",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "稳健药企资金优先ALNY：有硬临床结局与商业现金流，现价相对基准DCF溢价较小；ARGX更高毛利和较短观察窗不足以抵消集中度与估值溢价。"
+    },
+    {
+      "peer": "IONS",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "重视商业兑现和融资安全优先ARGX；若能承受2028现金低点并验证TRYNGOLZA扩量、债务偿付，则IONS的低买价和右尾更优。"
+    },
+    {
+      "peer": "KYTX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "现金生成和可持续持有优先ARGX；只有接受近零左尾、SPS注册与gMG随机验证及大额融资稀释时，KYTX才是更高弹性的里程碑小仓。"
+    },
+    {
+      "peer": "BNTX",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "基准经营现金和当前回报优先ARGX；若要分散神经免疫单药风险且愿等待2028—2029肿瘤随机结局，BNTX现金与多资产期权更合适。"
+    },
+    {
+      "peer": "MRNA",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "现价下优先ARGX：已盈利主业与基准正回报胜过MRNA融资、合作权益分成及即使突破仍仅有限涨幅的组合。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "优先现金分散、降低单项临床风险可选DHR；追求免疫药利润池扩张与现价赔率则ARGX更优，DHR并非已证实的ARGX瓶颈供应商。"
+    },
+    {
+      "peer": "TMO",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "新增资金优先ARGX：TMO客户分散但当前基准年化接近零，负债与制造资本投入消耗股东现金，未显示更优的同趋势价格赔率。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "一般核心配置优先MSFT：企业续约、渠道与多来源现金减少单药和临床跳跃风险，基准年化相近；ARGX仅作为非AI风险补充。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "现金价值贴近现价、分散单药风险优先GOOGL；若看重较高基准年化且限制AI资本承诺敞口，则选ARGX小仓，须接受更高DCF溢价。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "同等进攻风险预算优先NVDA：现价低于其基准DCF、基准年化与商业利润兑现更强；AI已过度集中或不愿承担客户信用支持时以ARGX补充。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "保留消费复购和低临床风险优先COST；新增资金追求基准回报优先ARGX，COST高倍数及低个位数年化不支持无条件替代。"
+    }
+  ]
+}
