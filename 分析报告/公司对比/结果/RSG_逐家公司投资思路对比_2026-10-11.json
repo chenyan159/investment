@@ -1,0 +1,143 @@
+{
+  "ticker": "RSG",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:46:52-07:00",
+  "reference_price": {
+    "value": 216.88,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        204.41,
+        204.41
+      ],
+      "target_price": [
+        128.25,
+        148.5
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        293.87,
+        293.87
+      ],
+      "target_price": [
+        223.2,
+        252.31
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        349.47,
+        349.47
+      ],
+      "target_price": [
+        288.51,
+        323.13
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        383.02,
+        383.02
+      ],
+      "target_price": [
+        341.51,
+        379.45
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "negative",
+    "upside_potential": "negative",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "WM",
+      "relation": "direct_competitor",
+      "verdict": "comparable",
+      "reason": "RSG经营与资本路径较平稳，WM的工程现金释放更大但医疗整合及杠杆更重，现价综合吸引力相近。"
+    },
+    {
+      "peer": "WCN",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "同赛道正常兑现下WCN提供更高基准年化回报及更明显资本开支回落，现价新资金优先WCN，并持续核查环境支付。"
+    },
+    {
+      "peer": "CWST",
+      "relation": "direct_competitor",
+      "verdict": "target_preferred",
+      "reason": "RSG的现金自给、处置分散度和悲观资本保全显著优于CWST，现价稳健配置优先RSG，CWST的较大右尾仍属许可和整合条件。"
+    },
+    {
+      "peer": "ECL",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "偏重成熟防御及现金确定性时RSG优先，认可CoolIT整合和跨客户付费平台时ECL上行更大，但两者现价基准赔率均有限。"
+    },
+    {
+      "peer": "DD",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "正常兑现的新资金更偏DD，其当前正常经营倍数及基准回报优于RSG，RSG在需求稳定和非产品周期防御上占优。"
+    },
+    {
+      "peer": "CC",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "要求本金保全和稳定现金时RSG优先，能承受债务、诉讼及接近全损左尾的专项进攻资金才偏CC，其高回报不是同风险替代。"
+    },
+    {
+      "peer": "CMI",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "CMI已商业化的电源增长、较低正常经营倍数和更高基准回报使增长配置优先CMI，RSG保留抗卡车及客户资本周期的优势。"
+    },
+    {
+      "peer": "CAT",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "CAT现价的基准交易回报为负且金融与设备周期暴露更大，RSG在现价基准收益和防御用途上优先，CAT仅在更强电源路径下取得右尾优势。"
+    },
+    {
+      "peer": "LIN",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "LIN在长约、资本配置及现价基准回报上略优于RSG，成熟复利新资金优先LIN，但其项目资本和国际风险仍需核查。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "重视资产负债表和会员确定性时COST占优，重视当前估值及非零售防御时RSG占优，两者现价都不足以成为高赔率核心首选。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "企业复利及增长预算优先MSFT，其同价日基准年化较高且软件入口已付费，RSG的组合价值在于减少AI资本周期共振。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "追求可靠机制下的高右尾且能承受AI买方资本周期时NVDA优先，要求生活需求防御和较低经营波动时RSG更合适。"
+    }
+  ]
+}
