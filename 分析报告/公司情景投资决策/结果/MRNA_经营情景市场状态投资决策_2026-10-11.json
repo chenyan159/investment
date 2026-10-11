@@ -1,0 +1,57 @@
+{
+  "ticker": "MRNA",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T07:35:44-07:00",
+  "reference_price": {
+    "value": 225,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        6.39,
+        6.39
+      ],
+      "target_price": [
+        4,
+        8
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        16.25,
+        16.25
+      ],
+      "target_price": [
+        16,
+        24
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        80.86,
+        80.86
+      ],
+      "target_price": [
+        70,
+        110
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        134.12,
+        134.12
+      ],
+      "target_price": [
+        160,
+        245
+      ],
+      "evidence": "weak"
+    }
+  }
+}
