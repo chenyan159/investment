@@ -1,0 +1,131 @@
+{
+  "ticker": "ALNY",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T11:12:43-07:00",
+  "reference_price": {
+    "value": 232.68,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "adopt",
+      "business_price": [
+        82,
+        82
+      ],
+      "target_price": [
+        75,
+        85
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "adopt",
+      "business_price": [
+        350,
+        350
+      ],
+      "target_price": [
+        334,
+        398
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "adopt",
+      "business_price": [
+        499,
+        499
+      ],
+      "target_price": [
+        545,
+        638
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "review": "adopt",
+      "business_price": [
+        680,
+        680
+      ],
+      "target_price": [
+        811,
+        942
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "positive",
+    "base_valuation": "mixed",
+    "upside_potential": "positive",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "mixed"
+  },
+  "comparisons": [
+    {
+      "peer": "IONS",
+      "relation": "direct_competitor",
+      "verdict": "conditional",
+      "reason": "要求已商业化现金兑现时优先ALNY；只有接受2028年前后融资及多项目注册风险、专门追求右尾时才优先IONS。"
+    },
+    {
+      "peer": "MRNA",
+      "relation": "alternative",
+      "verdict": "target_preferred",
+      "reason": "在225美元买价及已核实商业权益下优先ALNY，MRNA连突破区间也仅给出有限正回报，尚不能以未批准肿瘤资产解释当前市值。"
+    },
+    {
+      "peer": "BNTX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "要求近期经营自给与商业增长时优先ALNY；重视净现金保护且愿等待2028—2029年肿瘤随机验证时选BNTX。"
+    },
+    {
+      "peer": "ARGX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "现有产品利润质量优先ARGX，估值受损与TTR扩散赔率优先ALNY；若ARGX后继资产延长收费寿命并支持18—22倍持续定价，其基准回报与ALNY相当并可优先配置。"
+    },
+    {
+      "peer": "KYTX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "普通成长仓优先ALNY；只有接受近乎全损、至少约一倍新增稀释并专押SPS注册与gMG随机验证时，KYTX才是更高弹性的进攻载体。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "value_chain",
+      "verdict": "conditional",
+      "reason": "低临床事件风险的分散配置优先DHR；在现价且追求TTR收入到股东现金的成长赔率时优先ALNY。"
+    },
+    {
+      "peer": "TMO",
+      "relation": "value_chain",
+      "verdict": "target_preferred",
+      "reason": "在当前价格且追求药物商业成长回报时优先ALNY，TMO基准交易回报弱且并购债务与现金转化约束更大；不据此否定TMO的客户分散优势。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "按稳健核心仓标准优先MSFT，其多业务现金及客户切换成本优于ALNY；ALNY适合作为独立的生物医药进攻补充。"
+    },
+    {
+      "peer": "GOOGL",
+      "relation": "opportunity_cost",
+      "verdict": "conditional",
+      "reason": "若AI资本支出兑现可持续自由现金流则稳健配置优先GOOGL；若重视未来两年经营现金自给及较轻资本负担，则优先ALNY的小额成长敞口。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "target_preferred",
+      "reason": "在当前价格且要求基准回报及上行空间时优先ALNY，COST的现金韧性更强但高估值压低回报，不承担ALNY的临床风险者仍应等待COST更好买价。"
+    }
+  ]
+}
