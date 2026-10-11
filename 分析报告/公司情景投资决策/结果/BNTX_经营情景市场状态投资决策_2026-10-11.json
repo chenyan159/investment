@@ -1,0 +1,57 @@
+{
+  "ticker": "BNTX",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T08:45:02-07:00",
+  "reference_price": {
+    "value": 96.96,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        58,
+        58
+      ],
+      "target_price": [
+        54,
+        61
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        100,
+        100
+      ],
+      "target_price": [
+        90,
+        109
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        203,
+        203
+      ],
+      "target_price": [
+        181,
+        225
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "business_price": [
+        357,
+        357
+      ],
+      "target_price": [
+        315,
+        400
+      ],
+      "evidence": "weak"
+    }
+  }
+}
