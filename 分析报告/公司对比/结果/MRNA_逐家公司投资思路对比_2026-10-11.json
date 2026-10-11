@@ -1,0 +1,131 @@
+{
+  "ticker": "MRNA",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T10:46:22-07:00",
+  "reference_price": {
+    "value": 225.0,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2030-12-31",
+  "scenarios": {
+    "bear": {
+      "review": "revise",
+      "business_price": [
+        4.94,
+        7.84
+      ],
+      "target_price": [
+        0,
+        10
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "review": "revise",
+      "business_price": [
+        14.85,
+        17.65
+      ],
+      "target_price": [
+        13,
+        25
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "review": "revise",
+      "business_price": [
+        79.44,
+        82.28
+      ],
+      "target_price": [
+        79,
+        118
+      ],
+      "evidence": "weak"
+    },
+    "breakthrough": {
+      "review": "revise",
+      "business_price": [
+        132.71,
+        135.53
+      ],
+      "target_price": [
+        181,
+        257
+      ],
+      "evidence": "weak"
+    }
+  },
+  "views": {
+    "near_term_delivery": "mixed",
+    "long_term_compounding": "mixed",
+    "base_valuation": "negative",
+    "upside_potential": "negative",
+    "downside_resilience": "mixed",
+    "relative_attractiveness": "negative"
+  },
+  "comparisons": [
+    {
+      "peer": "BNTX",
+      "relation": "direct_competitor",
+      "verdict": "peer_preferred",
+      "reason": "癌症商业化期权配置优先BNTX：经营企业价值要求远低于MRNA且资金更充裕；MRNA仅在黑色素瘤随机III期成熟度占优。"
+    },
+    {
+      "peer": "ALNY",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "商业化核酸药物配置优先ALNY：已有收入和经营现金流，基准年化与右尾均优于现价MRNA，但患者采用与净价仍须验证。"
+    },
+    {
+      "peer": "IONS",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "有批准产品的高弹性配置优先IONS：较低买价承载更好的基准与乐观回报，但需承担2028偿债、支付放量和疗法替代风险。"
+    },
+    {
+      "peer": "ARGX",
+      "relation": "alternative",
+      "verdict": "peer_preferred",
+      "reason": "免疫治疗质量与本金韧性优先ARGX，MRNA的肿瘤机制不同但现价赔率更差；ARGX自身基准估值亦偏满，不据此无条件建仓。"
+    },
+    {
+      "peer": "KYTX",
+      "relation": "alternative",
+      "verdict": "conditional",
+      "reason": "仅在能承受归零及显著融资稀释的里程碑小仓标准下优先KYTX的右尾；若要求随机确证成熟度和资金跑道，MRNA证据更强，但225美元仍不买入。"
+    },
+    {
+      "peer": "TMO",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "分散生物医药预算和资本保全优先TMO，真实多客户现金流胜过MRNA单药风险；658美元的基准回报较低，应按TMO自身价格纪律配置。"
+    },
+    {
+      "peer": "DHR",
+      "relation": "value_chain",
+      "verdict": "peer_preferred",
+      "reason": "生物工艺产业趋势和韧性配置优先DHR，能分散临床赢家风险；其现价基准回报有限，仍需订单与合理买价，而非将MRNA成功全部映射为DHR订单。"
+    },
+    {
+      "peer": "MSFT",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "组合平台复利优先MSFT：已有盈利和多业务现金支持，基准年化优于MRNA；AI资本负担和DCF溢价使其仍需分批与资本效率验证。"
+    },
+    {
+      "peer": "NVDA",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "有盈利基础的进攻仓优先NVDA：基准与右尾回报及商业证据胜过现价MRNA；仍须核验万亿美元收入路径的客户预算、供给和回款。"
+    },
+    {
+      "peer": "COST",
+      "relation": "opportunity_cost",
+      "verdict": "peer_preferred",
+      "reason": "本金韧性和经营可检验性优先COST，MRNA现价也没有更好的突破赔率；COST高估值令其非进攻首选，优先关系不等于现价强买。"
+    }
+  ]
+}
