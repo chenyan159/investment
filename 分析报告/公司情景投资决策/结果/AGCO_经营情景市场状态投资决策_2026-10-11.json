@@ -1,0 +1,57 @@
+{
+  "ticker": "AGCO",
+  "research_date": "2026-10-11",
+  "information_cutoff": "2026-10-11T08:32:28-07:00",
+  "reference_price": {
+    "value": 103.28,
+    "date": "2026-10-09",
+    "currency": "USD"
+  },
+  "target_date": "2029-12-31",
+  "scenarios": {
+    "bear": {
+      "business_price": [
+        39,
+        39
+      ],
+      "target_price": [
+        24,
+        31
+      ],
+      "evidence": "medium"
+    },
+    "base": {
+      "business_price": [
+        183,
+        183
+      ],
+      "target_price": [
+        157,
+        183
+      ],
+      "evidence": "medium"
+    },
+    "bull": {
+      "business_price": [
+        244,
+        244
+      ],
+      "target_price": [
+        228,
+        278
+      ],
+      "evidence": "medium"
+    },
+    "breakthrough": {
+      "business_price": [
+        289,
+        289
+      ],
+      "target_price": [
+        289,
+        370
+      ],
+      "evidence": "weak"
+    }
+  }
+}
